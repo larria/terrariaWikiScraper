@@ -1,0 +1,112 @@
+{{exclusive|1.4.2.3}}
+{{for|{{tr|Moon Lord}}后的{{tr|launcher}}|{{tr|Celebration Mk2}}}}
+[[File:CelebrationMK10.png|450px|thumb|Celebrationmk10 [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+
+'''Celebrationmk10'''（也被称为庆典{{tr|world}}、十周年{{tr|world}}）是一个[[{{tr|Secret world seeds}}]]。它用于庆祝[[《{{tr|Terraria}}》]]的十周年纪念日：2021 年 5 月 16 日。
+
+下列{{tr|seeds}}可用于生成 Celebrationmk10 {{tr|world}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld / Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|celebrationmk10}}|{{code|05162011}}|{{code|5162011}}|{{code|05162021}}|{{code|5162021}}}}
+
+== 世界生成更改 ==
+=== 总览 ===
+* {{tr|spawn point}}会位于{{tr|world}}的其中一个[[{{tr|Ocean}}]]，这意味着通常在{{tr|world}}中间三分之一出现的[[{{tr|NPC spawning}}|{{tr|spawn}}]]会改为在{{tr|world}}的左右各六分之一的区域内。
+* 名为 Andrew 的[[{{tr|Guide}}]]、名为 Whitney 的[[{{tr|Steampunker}}]]、名为 Yorai 的[[{{tr|Princess}}]]，和名为 Amanda 的[[{{tr|Party Girl}}]]以及一只安哥拉[[{{tr|Town Bunny}}]]也会一起生成，同时会立即开始一场[[{{tr|party}}]]。
+* 大部分的{{tr|world}}都刷了[[{{tr|paint}}]]：[[{{tr|Dungeon}}]]是深粉色；[[{{tr|Living Tree}}]]、[[{{tr|Pyramid}}]]和[[{{tr|Floating Island}}]]上的[[{{tr|Cloud}}]]是粉色；[[{{tr|Jungle Temple}}]]的{{tr|tiles}}是紫色，{{tr|walls}}是蓝绿色；所有[[{{tr|Sand Blocks}}]]、[[{{tr|Plant}}#{{tr|Grass}}|{{tr|grass}}]]、{{tr|surface}}[[物体]]是蓝绿色。
+* [[{{tr|Living Trees}}]]的数量很多，甚至比 [[{{tr|drunk world}}]] 还多。
+* {{tr|chests}}里的物品总是具有“最佳”[[{{tr|modifier}}]]{{source code ref|v=1.4.4.4|method=Terraria.WorldGen.ImproveAllChestContents}}。
+** {{tr|Accessories}}会拥有以下 +4 属性的{{tr|modifiers}}之一：[[{{tr|Lucky}}]]、[[{{tr|Menacing}}]]、[[{{tr|Quick}}]]、[[{{tr|Warding}}]]。
+** {{tr|Weapons}}会根据其伤害类型拥有属性提升最多的{{tr|modifiers}}。可能的{{tr|modifier}}有：
+*** [[{{tr|melee weapons}}]]：[[{{tr|Legendary}}]]、[[{{tr|Godly}}]]、或[[{{tr|Ruthless}}]]。
+*** [[{{tr|ranged weapons}}]]：[[{{tr|Unreal}}]]、[[{{tr|Demonic}}]]、或{{tr|Ruthless}}。
+*** [[{{tr|Magic weapons}}|{{tr|magic}}]]和[[{{tr|summon weapons}}]]：[[{{tr|Mythical}}]]、{{tr|Demonic}}、或{{tr|Ruthless}}。
+* 一半的[[{{tr|Underground Cabin}}]]的{{tr|tiles}}与{{tr|walls}}被[[{{tr|Rainbow Brick}}]]代替，另一半的刷上了斜向的彩虹图案{{tr|paint}}。
+* [[{{tr|Glowing Mushroom biome}}]]被刷了{{tr|paint}}，其中[[{{tr|Giant Glowing Mushroom}}]]被漆成彩虹色，[[{{tr|Mushroom grass}}]]被漆成随机的同一种颜色。
+* [[{{tr|Gem Trees}}]]更加常见，类似 {{tr|drunk world}}。
+* 所有{{tr|Floating Islands}}具有{{tr|Hallowed grass}}和一个[[{{tr|Hallowed Water Fountain}}]]。
+* [[{{tr|Boulder trap}}]]中的部分[[{{tr|Boulder}}]]被替换为[[{{tr|Bouncy Boulder}}]]或[[{{tr|Life Crystal Boulder}}]]。
+* [[{{tr|the Aether}}]]{{tr|biome}}附近的{{tr|Water}}池被替换为[[{{tr|Shimmer}}]]池。
+* [[{{tr|Enchanted Sword Shrine}}]]的最大数量翻倍，但单个剑冢的生成几率减半。首个剑冢除外，它必定生成。
+* [[{{tr|Lava Charm}}]]生成在{{tr|chest}}中的几率由 {{chance|1/20}} 提升至 {{chance|1/15}}。<!-- Also applies to Get fixed boi-->
+* [[{{tr|Water Walking Boots}}]]生成在{{tr|chest}}的几率由 {{chance|1/10}} 提升至 {{chance|1/7}}。<!-- Also applies to Get fixed boi-->
+
+=== {{tr|Desert}} ===
+* [[{{tr|Desert}}]]不会生成通常的入口，而是由一个[[{{tr|Pyramid}}]]取代。
+* {{tr|Pyramid}}中的{{tr|chest}}在拥有通常物品之外总是会额外包含一套[[{{tr|Pharaoh's set}}]]。
+* [[{{tr|Underground Desert}}]]的洞穴更小。
+
+== 其他更改 ==
+* 两种独特的[[{{tr|enemies}}]]可以在此{{tr|seed}}中生成：
+** [[{{tr|Jungle Mimic}}]]可以在{{tr|Hardmode}}下的{{tr|Jungle}}生成。
+** [[{{tr|Golden Slime}}]]有 {{chance|1/180}} 几率代替常规[[{{tr|Slimes}}|{{tr|slime}}]]生成。
+* [[{{tr|Fairies}}]]在{{tr|Cavern layer}}的生成几率更高。{{source code ref|v=1.4.4.5|method=Terraria.NPC.SpawnNPC}}所有{{tr|Fairies}}有 {{chance|5/6}} 的几率是[[{{tr|Pink Fairy}}]]。{{source code ref|v=1.4.4.5|method=Terraria.NPC.SpawnNPC/Terraria.GameContent.Events.MysticLogFairiesEvent.TrySpawningFairies|t=原本的 {{chance|1/3}} 几率作为{{tr|Pink Fairy}}生成 + （{{chance|2/3}} 几率作为其他颜色生成 × {{chance|3/4}} 几率由其他颜色变为{{tr|Pink Fairy}}）= {{chance|5/6}} 几率。}}后面这一效果不适用于 [[{{tr|Get fixed boi}}]] {{tr|worlds}}。
+* [[{{tr|Mimic}}]]的生成几率更高。{{source code ref|v=1.4.4.5|method=Terraria.NPC.SpawnNPC}}
+* 当掉落[[{{tr|Heart}}]]和[[{{tr|Star}}]]时，它们会随机以普通{{tr|variant}}或季节性{{tr|variant}}出现，每种{{tr|variant}}出现的几率相同（{{chance|1/3}}）。{{source code ref|v=1.4.4.9|method=Terraria.Item.NewItem}}
+* 所有{{tr|Fallen Star}}{{tr|projectiles}}（包括[[{{tr|Star Cannon}}]]发射的，但不包括[[{{tr|Super Star Shooter}}]]）都是粉色的。
+* 每个{{tr|night}}发生[[{{tr|Blood Moon}}]]的几率由 {{chance|1/9}} 提高至 {{chance|1/6}}。
+* 发生[[{{tr|Party}}]]的几率由每个{{tr|dawn}}时 {{chance|1/10}} 提升至 {{chance|1/7}}。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.BirthdayParty.NaturalAttempt}}
+* [[{{tr|Rod of Discord}}]]的掉落几率由 {{chance|1/500}} 提高至 {{chance|1/100}}。
+* [[{{tr|Firefly}}]]和[[{{tr|Butterflies}}]]更常见。{{source code ref|v=1.4.3.6|method=Terraria.NPC.setFireflyChance}}
+* 从[[{{tr|Treasure Bag}}]]获得[[{{tr|developer item}}]]的几率翻倍，由 {{chance|1/16}} 提高到 {{chance|1/8}}。不过，{{tr|Developer sets}}仍然只能由{{tr|Hardmode bosses}}（[[{{tr|Queen Slime}}]]除外）的{{tr|Treasure Bags}}中获得。{{source code ref|v=1.4.4.5|method=Terraria.Player.TryGettingDevArmor / Terraria.Player.OpenBossBag}}
+* [[{{tr|Meteor Shower}}]]发生的几率由 {{chance|1/10}} 提升至 {{chance|1/5}}，{{tr|night}}具有提高的[[{{tr|Fallen Star}}]]刷新率的几率由 {{chance|1/3}} 提升至 {{chance|1/2}}。{{source code ref|v=1.4.4.9|method=Terraria.Star.NightSetup}}
+* 背景中生成更多[[{{tr|Ambient entities}}#{{tr|Cloud}}|{{tr|clouds}}]]，其中的更多具有特殊形状。
+* 初始 {{tr|NPCs}}（[[{{tr|Steampunker}}]]、[[{{tr|Princess}}]]、[[{{tr|Party Girl}}]]、[[{{tr|Town Bunny}}]]）的入住条件被移除。{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateTime_SpawnTownNPCs / Terraria.WorldGen.GenerateWorld|t=相关的 world generation pass 叫做 <code>Guide</code>。}}若他们被杀死，他们在条件未满足时可以重生（例如，{{tr|Steampunker}}可以在未打败[[{{tr|mechanical boss}}]] 时重生）。不过他们重生仍然需要空闲的{{tr|house}}。
+* 所有非[[{{tr|Evil biome}}|{{tr|evil}}]]{{tr|tree}}都是[[{{tr|Trees}}#{{tr|Vanity trees}}|{{tr|Vanity Tree}}]]，且所有{{tr|tree}}（包括{{tr|evil trees}}）都以彩虹的样式被涂上了{{tr|paint}}。
+* 大部分 [[{{tr|bosses}}]]（包括[[{{tr|Celestial Pillars}}]]和 {{tr|bosses}} 的{{tr|minions}}，但不包括[[{{tr|Leech}}]]、[[{{tr|Servant of Cthulhu}}]]、[[{{tr|King Slime}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Plantera}}]]、[[{{tr|Golem}}]]、[[{{tr|Betsy}}]]、[[{{tr|Lunatic Cultist}}]]和[[{{tr|Moon Lord}}]]）比正常情况下更小。
+* [[{{tr|Traveling Merchant}}]]总是比正常情况额外出售 2 个{{tr|items}}。
+* [[{{tr|Princess}}]]会出售稀有{{tr|items}}：
+** [[{{tr|Slime Staff}}]]
+** [[{{tr|Heart Lantern}}]]
+** [[{{tr|Flask of Party}}]]
+** [[{{tr|Sandstorm in a Bottle}}]]（在[[{{tr|Desert}}]]中时）
+** [[{{tr|Terragrim}}]]（在[[{{tr|Blood Moon}}]]期间）
+** [[{{tr|Pirate Staff}}]]（{{tr|Hardmode}}下，在击败[[{{tr|Pirate Invasion}}]]后，以下[[{{tr|moon phase}}]]期间：{{moons|1|2}}）
+** [[{{tr|Discount Card}}]]（{{tr|Hardmode}}下，在击败{{tr|Pirate Invasion}}后，以下{{tr|moon phase}}期间：{{moons|3|4}}）
+** [[{{tr|Lucky Coin}}]]（{{tr|Hardmode}}下，在击败{{tr|Pirate Invasion}}后，以下{{tr|moon phase}}期间：{{moons|5|6}}）
+** [[{{tr|Coin Gun}}]]（{{tr|Hardmode}}下，在击败{{tr|Pirate Invasion}}后，以下{{tr|moon phase}}期间：{{moons|7|8}}）
+* [[{{tr|Wizard Hat}}]]会提供一个额外[[{{tr|minion}}|{{tr|minion slot}}]]。
+* 玩家死亡时会爆出{{tr|confetti}}，并发出（也出现于 [[{{tr|The Constant}}]] {{tr|seed}}中的）《{{tr|Don't Starve}}》的受伤音效之一。
+* [[{{tr|Palm Tree}}]]平均{{tr|wood}}掉落量变为 3 倍（每格{{tr|tree}}掉落 2–4 个对应{{tr|wood}}）。
+* [[{{tr|Sand Block}}]]、[[{{tr|Hardened Sand Block}}]]、和[[{{tr|Sandstone Blocks}}]]总是会在放置时被涂上[[{{tr|Cyan Paint}}]]。
+
+== 生成世界时 ==
+* 所有生成描述和{{tr|tips}}都变为粉色。
+* 会播放[[{{tr|Music}}#{{tr|Underground Hallow}}|{{tr|Underground Hallow music}}]]。
+
+== 世界图标 ==
+Celebrationmk10 世界的{{tr|The world icon}}是一棵系有蝴蝶结的[[{{tr|Pink Sakura tree}}]]。
+
+<gallery>
+File:IconCorruptionAnniversary.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonAnniversary.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionAnniversary.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonAnniversary.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== 备注 ==
+* 由于部分{{tr|invasion}}机制的运作方式，诸如[[{{tr|Goblin Army}}]]一类的{{tr|invasion}}仅会在初始的海滩[[{{tr|spawn point}}]]附近发生。和普通{{tr|worlds}}不同，位于[[{{tr|NPCs}}|{{tr|Town NPCs}}]] 附近不会使得{{tr|invasion enemies}}在玩家周围生成。
+* [[{{tr|Goblin Scout}}]]与[[{{tr|King Slime}}]]会在距离海滩{{tr|spawn point}}三分之一个{{tr|world}}以外的地方生成，这意味着他们会在{{tr|world}}中心和另一侧{{tr|ocean}}生成。
+
+== 小贴士 ==
+* {{tr|spawn point}}位于{{tr|Ocean}}可能会使得玩家位于{{tr|Jungle}}一侧时让早期的游戏更加困难。不过，在{{tr|Jungle}}一侧生成会更容易找到[[{{tr|the Aether}}]]。
+
+== 花絮 ==
+* Celebrationmk10 {{tr|seed}}中初始生成的其中三名 {{tr|NPC}} 的名字是三名 [[Re-Logic]] 成员的名字：[[Redigit]]（Andrew）、[[Cenx]]（Whitney）和[[Yoraiz0r]]（Yorai）。
+* 和大部分其他{{tr|secret seeds}}不同， Celebrationmk10 种子被视作数字，因此前面可以加上任意数量的 0（例：<code>000005162011</code>）。此外，许多其它的字符串也会无意中生成这一{{tr|secret seed}}（由于{{wikipedia|Cyclic redundancy check|CRC-32 算法}}的使用{{source code ref|v=1.4.3.6|method=Terraria.IO.WorldFileData.SetSeed}}），例如（区分大小写）：
+: {{dotlist|<code>Thirst of dress</code>|<code>engineer governor reproduction</code>|<code>inform Representative yorai</code>}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Pre-Hardmode bosses}}和{{tr|Queen Slime}}的{{tr|Treasure Bags}}不再掉落[[{{tr|developer items}}]]。
+** 现在[[{{tr|Glowing Mushroom biome}}]]也会被漆成彩虹色。
+** [[{{tr|the Aether}}]]{{tr|biome}}附近的{{tr|Water}}池被替换为[[{{tr|Shimmer}}]]池。
+** 生成世界时，所有文本变为粉色，且会播放[[{{tr|Music}}#{{tr|Underground Hallow}}|{{tr|Underground Hallow}}{{tr|music}}]]。
+** 世界生成时生成的{{tr|The Party Girl}}现在名为“Amanda”。
+** 可能还有其他未记录的改动。}}
+{{history|Desktop 1.4.2.3|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=Celebrationmk10}}

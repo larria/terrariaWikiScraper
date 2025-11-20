@@ -1,0 +1,458 @@
+{{exclusive|1.4.4}}
+[[File:Dontdigupworld.png|450px|thumb|{{tr|Don't dig up}} [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+[[File:Don't dig up generation screen.png|450px|thumb|{{tr|Don't dig up}} {{tr|worlds}}的生成界面。]]
+
+'''{{tr|Don't dig up}}''' 是一个[[{{tr|Secret world seeds}}|{{tr|secret world seed}}]]。它将通常的游戏进程上下反转了，玩家会从[[{{tr|Underworld}}]]开始并一路向上。世界生成在源代码中被称为 <code>remixWorldGen</code>{{source code ref|v=1.4.4.9|field=Terraria.WorldGen.remixWorldGen}}，因此此{{tr|seed}}也被称为 '''Remix'''。
+
+下列{{tr|seeds}}可被用于生成 Don't dig up {{tr|world}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|don't dig up}}|{{code|dont dig up}}|{{code|dontdigup}}}}
+
+== 世界生成更改 ==
+=== 地层 ===
+此{{tr|world}}中，{{tr|layers}}的机制被反转，这意味着玩家会在[[{{tr|Underground}}]]{{tr|layer}}遭遇[[{{tr|Cavern}}]]{{tr|layer}}的内容（例如{{tr|Cavern}}[[{{tr|quest fish}}]]可以在{{tr|underground layer}}捉到；[[{{tr|Jungle Temple}}]]会在[[{{tr|Surface}}]]{{tr|layer}}出现）。
+
+{{tr|layers}}之间边界的高度也改变了：依照[[{{tr|Depth Meter}}]]的读数，从{{tr|world}}顶端开始，[[{{tr|Surface}}]]和[[{{tr|Underground}}]]{{tr|layers}}的分界线位于世界纵向位置的约 30% 处，而{{tr|Underground}}和[[{{tr|Cavern}}]]{{tr|layers}}的分界线位于世界纵向位置的约 50%–60% 处。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Biomes.TerrainPass.ApplyPass}}
+
+从{{tr|world}}顶部开始，玩家会依次遇到以下{{tr|layers}}：
+
+==== {{tr|Space}} ====
+* [[{{tr|Floating Island}}]]会以世界中的[[{{tr|Evil biome}}]]为主题，{{tr|structures}}用[[{{tr|Flesh Block}}]]或[[{{tr|Lesion Block}}]]搭建而成，岛上放置了一个[[{{tr|The Crimson}}]]或[[{{tr|The Corruption}}]][[{{tr|Water Fountain}}]]。{{tr|loot}}与正常{{tr|Floating Island}}相同。
+* 如果玩家到达足够高的地方，就可以离开顶部[[世界边界]]；这样做会杀死玩家并显示下列独特的[[{{tr|death message}}]]之一：
+** ''“{{gameText|DeathText.Space_1|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Space_2|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Space_3|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Space_4|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Space_5|x_0=&lt;{{tr|Player name}}&gt;|x_1=&lt;{{tr|world name}}&gt;}}”''
+
+==== {{tr|Surface}} ====
+* {{tr|The surface}}被{{tr|world}}的[[{{tr|evil biome}}]]完全覆盖，具有极高的[[{{tr|NPC spawning}}|{{tr|spawn rate}}]]。邪恶[[{{tr|Snow biome}}]]和[[{{tr|Desert}}]]{{tr|biomes}}会在其通常的位置出现。
+* 由于没有太阳，{{tr|The surface}}一直是黑暗的，[[{{tr|biome backgrounds}}]]被替换为类似[[{{tr|space}}]]的星空。
+* {{tr|Gravity}}更弱，就像玩家处于[[{{tr|Featherfall potion}}]]的作用下一样，同时也不会受到摔落{{tr|damage}}。
+* [[{{tr|Jungle Temple}}]]位于{{tr|surface}}，在{{tr|Crimson world}}中被漆成红色，而在{{tr|Corruption world}}中则被漆成紫色。[[{{tr|Dungeon}}]]也会被漆成相同的颜色。
+* [[{{tr|Living Tree}}]]仍然存在，但不带叶子，且数量更多。
+** [[{{tr|Living Wood Chest}}]]被[[{{tr|Ebonwood Chest}}]]/[[{{tr|Shadewood Chest}}]]（取决于{{tr|world evil}}）替代。
+** {{tr|Living Tree}}的竖直和水平通道都更多且更长，往往更容易连接到其他{{tr|living tree}}。
+
+==== {{tr|Underground}} ====
+* 此{{tr|layer}}在[[{{tr|NPC spawning}}|生成{{tr|enemies}}]]、[[{{tr|fishing}}]]、和掉落[[{{tr|souls}}]]时算作{{tr|Cavern layer}}。
+* 它包含诸如[[{{tr|Underground Jungle}}]]、[[{{tr|Underground Desert}}]]、和[[{{tr|Ice biome}}]]等{{tr|biomes}}。
+* 在这一{{tr|layer}}，{{tr|Lava}}会替换大多数的{{tr|water}}。和常规{{tr|worlds}}不同，{{tr|Ice Biome}}也会包含{{tr|lava}}，而{{tr|Underground Desert}}中''不会''包含{{tr|lava}}。
+* {{tr|The Underground Desert}}仅会在此{{tr|layer}}生成{{tr|background walls}}。
+
+==== {{tr|Cavern}} ====
+* 这一{{tr|layer}}模拟了正常{{tr|world}}中的[[{{tr|Surface}}]]{{tr|layer}}，包含在{{tr|surface}}中找到的{{tr|plants}}和特征，例如[[{{tr|Trees}}]]、[[{{tr|Mushroom}}]]、和{{tr|water}}，且会发生[[{{tr|Weather}}]]{{tr|events}}。它包含了大多数的{{tr|surface biomes}}，包括[[{{tr|Desert}}]]和[[{{tr|Snow biome}}]]，以及它们所对应的特征和{{tr|enemies}}，例如[[{{tr|Oasis}}]]地点。
+** “椭圆形”的{{tr|Underground Desert}}的底部仍然会在此出现，但包含{{tr|water}}而非{{tr|lava}}，且缺少{{tr|background walls}}。
+* 这一{{tr|layer}}在[[{{tr|NPC spawning}}|生成 {{tr|NPCs}}]] 时有 50% 的时候被视作{{tr|Ocean}}。这意味着所有原先生成于{{tr|Ocean}}的{{tr|enemies}}、{{tr|critters}}、和[[{{tr|Angler}}]]能在此处生成，但其{{tr|natural spawn rate}}降低了 50%。
+** 见[[#其他|下方]]获取详细的{{tr|Ocean biome}}条件。
+* [[{{tr|Fireflies}}]]会在 {{time|4:30 AM}} 和 {{time|7:30 PM}} 之间生成。
+
+===== {{tr|Glowing Mushroom layer}} =====
+* 此“{{tr|layer}}”位于{{tr|Cavern layer}}，处于{{tr|Underworld}}上方。
+* 此{{tr|layer}}完全由{{tr|Glowing Mushroom biome}}组成。除了{{tr|Glowing Mushroom tiles}}，还带有[[{{tr|Stone Block}}]]和一些早期[[{{tr|ores}}]]。这里会生成[[{{tr|Demon Eye}}]]和[[{{tr|Zombie}}]]等[[{{tr|Surface}}]]{{tr|enemies}}。
+
+==== 地狱 ====
+* 游戏开始时，玩家会生成在{{tr|Underworld}}中央的“岛”上。该岛屿被[[{{tr|ash forest}}]]完全覆盖，且不会生成[[{{tr|Hellstone}}]]。
+* 在{{tr|world}}中央 24% 生成的{{tr|enemies}}只有[[{{tr|Lava Slime}}]]和[[{{tr|Mimic}}]]（在{{tr|pre-Hardmode}}只掉落[[{{tr|Surface}}]]和[[{{tr|Underground}}]]{{tr|loot}}）。
+* 通常的{{tr|Underworld}}结构生成、{{tr|enemies}}等等内容会在离开中央区域后重新生成。
+* {{tr|Underworld}}的[[{{tr|Pots}}]]可能包含[[{{tr|Rope}}]]和[[{{tr|Fallen Stars}}]]。
+* {{tr|Underworld}}中的{{tr|Ash trees}}被[[{{tr|Shaking}}]]时有 {{chance|mode=p|23826/672000}} 的几率掉落 20–40 个{{tr|Ropes}}。
+
+=== 其他 ===
+* [[{{tr|Ocean}}]]{{tr|biome}}会被{{tr|evil biomes}}覆盖，这意味着在{{tr|world surface}}两侧原本的{{tr|Ocean}}结构若不净化，则不再会被视作{{tr|Ocean}}。
+** 对于 {{tr|NPC spawning}}这一目的，{{tr|Ocean biome}}也可以在{{tr|Cavern layer}}附近找到（除了{{tr|world}}中部的 14%：从世界中心向两侧各 7%）。确切的垂直范围为：上边界为{{tr|Underground and Cavern layers}}的分界线向下 200 格，下边界为{{tr|world}}底部向上 200 格。这一区域有 50% 几率被视为{{tr|Ocean}}，余下 50% 几率被视为{{tr|surface}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+** 见下方[[#{{tr|Fishing}}|{{tr|Fishing}}]]章节获取对于{{tr|fishing}}这一目的的{{tr|Ocean biome}}条件。
+* {{tr|Minecart tracks}}生成量提高 50%。
+* [[{{tr|Marble Cave}}]]、[[{{tr|Granite Cave}}]]、[[{{tr|Glowing Mushroom biome}}]]、和[[{{tr|Spider Nest}}]]会生成于{{tr|Underground layer}}。
+* [[{{tr|Ice biome}}]]会延伸到{{tr|Glowing Mushroom}}{{tr|layer}}顶部，[[{{tr|Underground Desert}}]]会延伸到{{tr|Cavern layer}}。
+* [[{{tr|Underground Jungle}}]]会延伸到{{tr|Glowing Mushroom layer}}内，并将其替换。
+* [[{{tr|Meteorite biome}}]]依旧会生成于{{tr|Surface}}。
+
+=== 邪恶生物群落 ===
+* 整个{{tr|surface}}被转化为{{tr|evil tiles}}，最多转化到{{tr|surface}}以下 3 格。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.FinishRemixWorld}}
+** {{tr|The evil biome}}[[{{tr|Chasms}}|{{tr|chasms}}]]会延伸到这一范围以下。
+* {{tr|The evil biome}}会覆盖{{tr|world}}每一侧约 1/7 的区域。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld}}
+{| class="terraria lined" style="text-align:center"
+! rowspan=2 | {{tr|World size}}
+! colspan=4 | 区域边界位置
+|-
+! 西部边界（格）
+! 东部边界（格）
+! 西部边界（[[{{tr|Compass}}|英尺]]）
+! 东部边界（[[{{tr|Compass}}|英尺]]）
+|-
+! 小
+| 602
+| 3597
+| 2996'
+| 2994'
+|-
+! 中
+| 916
+| 5483
+| 4568'
+| 4566'
+|-
+! 大
+| 1202
+| 7197
+| 5996'
+| 5994'
+|}
+
+=== {{tr|Hardmode}}转化 ===
+在击败[[{{tr|Wall of Flesh}}]]时，通常的“V”型的转化不会发生，而是发生下列转化：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack}}
+* {{tr|the Hallow}}会替换{{tr|world}}一侧的{{tr|evil biome}}的一部分，必定位于{{tr|Dungeon}}对侧（即：和{{tr|Jungle}}同一侧）。
+** 上边界为{{tr|surface and underground layer}}的分界线（0 英尺）。对于每一列{{tr|tiles}}，边界的高度会随机改变 -1、0、或 +1 格。
+** 下边界为底部真正[[世界边界]]向上 10 格。
+** 基于水平范围，转化分为两个部分：
+*** 第一部分的宽度为{{tr|world}}的 1/7。在这一范围内，所有可被转化的{{tr|tiles}}都会被转化为其{{tr|Hallowed counterpart}}。
+*** 第二部分的宽度为{{tr|world}}的 1/14，从第一部分向外延伸。在这一范围内，仅有{{tr|Corruption}}/{{tr|Crimson tiles}}会被转化为其{{tr|Hallowed counterpart}}。
+** [[{{tr|Grasses|link=y}}#{{tr|Corrupt Jungle grass}}|{{tr|Corrupt}}/{{tr|Crimson Jungle grass}}]]和[[{{tr|Mushroom grass}}]]不会被转化。
+* 不会生成新的{{tr|evil biome}}。
+* 在{{tr|tile}}转化后会进行通常的[[{{tr|Hardmode|link=y}}#{{tr|Wall}}替换|{{tr|Wall}}替换]]。
+
+下方为不同{{tr|world sizes}}中、{{tr|Dungeon}}在不同侧时的转化区域边界表。<!--
+-->{{#vardefine:maxTilesX-small|4200}}<!--
+-->{{#vardefine:maxTilesX-medium|6400}}<!--
+-->{{#vardefine:maxTilesX-large|8400}}
+{| class="terraria lined" style="text-align:center"
+|-
+! rowspan="3" | {{tr|World size}}
+! colspan="4" | 区域边界位置（格）{{footnote|从左侧真正[[世界边界]]算起。}}
+! colspan="1" & rowspan="3" | 总计[[{{tr|Compass}}|英尺]]长度
+|-
+! colspan="2" | {{tr|Dungeon}}位于左侧
+! colspan="2" | {{tr|Dungeon}}位于右侧
+|-
+! {{ht|第一部分|{{tr|world}}的 1/7}}
+! {{ht|总计|两个部分（{{tr|world}}的 1/7+1/14）}}
+! {{ht|第一部分|{{tr|world}}的 1/7}}
+! {{ht|总计|两个部分（{{tr|world}}的 1/7+1/14）}}
+|-
+! 小
+| {{#expr:floor({{#var:maxTilesX-small}}*(1-1/7))}}
+| {{#expr:floor({{#var:maxTilesX-small}}*(1-1/7-1/14))}}
+| {{#expr:floor({{#var:maxTilesX-small}}*1/7)}}
+| {{#expr:floor({{#var:maxTilesX-small}}*(1/7+1/14))}}
+| {{#expr:floor(({{#var:maxTilesX-small}}/2-{{#var:maxTilesX-small}}*(1/7+1/14))*2)}}'
+|-
+! 中
+| {{#expr:floor({{#var:maxTilesX-medium}}*(1-1/7))}}
+| {{#expr:floor({{#var:maxTilesX-medium}}*(1-1/7-1/14))}}
+| {{#expr:floor({{#var:maxTilesX-medium}}*1/7)}}
+| {{#expr:floor({{#var:maxTilesX-medium}}*(1/7+1/14))}}
+| {{#expr:floor(({{#var:maxTilesX-medium}}/2-{{#var:maxTilesX-medium}}*(1/7+1/14))*2)}}'
+|-
+! 大
+| {{#expr:floor({{#var:maxTilesX-large}}*(1-1/7))}}
+| {{#expr:floor({{#var:maxTilesX-large}}*(1-1/7-1/14))}}
+| {{#expr:floor({{#var:maxTilesX-large}}*1/7)}}
+| {{#expr:floor({{#var:maxTilesX-large}}*(1/7+1/14))}}
+| {{#expr:floor(({{#var:maxTilesX-large}}/2-{{#var:maxTilesX-large}}*(1/7+1/14))*2)}}'
+|}
+
+==== 被转化的{{tr|tiles}} ====
+下方为{{tr|Hardmode}}转化期间被转化的{{tr|tiles}}列表。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack / Terraria.WorldGen.Convert}}
+{{itemlist/options|width=17.5em}}{{options/set|item|scale=0.8}}<!-- Settings on [[Solutions]]-->
+{{transclude|{{tr|Solutions}}#{{tr|Blue Solution}}}}
+{{itemlist/options|reset}}{{options/reset|item}}
+
+== 其他更改 ==
+=== 武器进度 ===
+许多{{tr|weapons}}在游戏进程中的位置互相调换了。这意味着它们会更换彼此的获得方式，且属性被改变以匹配当前的游戏进度。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults1 / Terraria.Item.SetDefaults2 / Terraria.Item.SetDefaults3 / Terraria.Item.SetDefaults4 / Terraria.Item.SetDefaults5}}{{options/set|rare|cate=no}}
+
+; [[{{tr|Magic Dagger}}]]、[[{{tr|Wand of Sparking}}]]、和[[{{tr|Wand of Frosting}}]]
+* {{tr|The Magic Dagger}}可在[[{{tr|Chest}}]]中找到，或在[[{{tr|Third Quarter}}]]期间于[[{{tr|Skeleton Merchant}}]]处购买。
+** {{tr|Damage}}由 {{iteminfo|Magic Dagger|damage}} 降低至 14。
+** {{tr|Use time}}由 {{iteminfo|Magic Dagger|usetime}} 提升至 15。
+** {{tr|Mana cost}}由 {{iteminfo|Magic Dagger|mana}} 降低至 5。
+** 不再[[{{tr|autofire}}]]。
+** {{tr|Rarity}}由 {{iteminfo|Magic Dagger|rare}} 降低至 {{rare|1}}。
+** [[{{tr|Value}}]]由 {{iteminfo|Magic Dagger|buy}} 降低至 {{sc|10}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Magic Dagger|sell}} 降低至 {{sc|2}}。
+* {{tr|The Wand of Sparking}}掉落自{{tr|Hardmode}}下的[[{{tr|Mimics}}]]。
+** {{tr|Damage}}由 {{iteminfo|Wand of Sparking|damage}} 提升至 40。
+** {{tr|Use time}}由 {{iteminfo|Wand of Sparking|usetime}} 降低至 10。
+** {{tr|Mana cost}}由 {{iteminfo|Wand of Sparking|mana}} 提升至 6。
+** [[{{tr|Velocity}}]]由 {{iteminfo|Wand of Sparking|velocity}} 提升至 12。
+** 造成[[{{tr|Hellfire}}]]而非[[{{tr|On Fire!}}]]。
+** 能够{{tr|autofire}}。
+** {{tr|Rarity}}由 {{iteminfo|Wand of Sparking|rare}} 提升至 {{rare|4}}。
+** {{tr|Value}}由 {{iteminfo|Wand of Sparking|buy}} 提升至 {{gc|25}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Wand of Sparking|sell}} 提升至 {{gc|5}}。
+* 这也影响[[{{tr|Wand of Frosting}}]]，因为它由{{tr|Wand of Sparking}}制作而来：
+** {{tr|Damage}}由 {{iteminfo|Wand of Frosting|damage}} 提升至 40。
+** {{tr|Use time}}由 {{iteminfo|Wand of Frosting|usetime}} 降低至 10。
+** {{tr|Mana cost}}由 {{iteminfo|Wand of Frosting|mana}} 提升至 6。
+** {{tr|Velocity}}由 {{iteminfo|Wand of Frosting|velocity}} 提升至 12。
+** 造成[[{{tr|Frostbite}}]]而非[[{{tr|Frostburn}}]]。
+** 能够{{tr|autofire}}。
+** {{tr|Rarity}}由 {{iteminfo|Wand of  Frosting|rare}} 提升至 {{rare|4}}。
+** {{tr|Value}}由 {{iteminfo|Wand of  Frosting|buy}} 提升至 {{coin|25gc 25sc}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Wand of  Frosting|sell}} 提升至 {{coin|5gc 5sc}}。
+
+; [[{{tr|Keybrand}}]]和[[{{tr|Katana}}]]
+* {{tr|The Keybrand}}由[[{{tr|Traveling Merchant}}]]出售。
+** {{tr|Damage}}由 {{iteminfo|Keybrand|damage}} 降低至 15。
+** {{tr|Rarity}}由 {{iteminfo|Keybrand|rare}} 降低至 {{rare|1}}。
+** {{tr|Value}}由 {{iteminfo|Keybrand|buy}} 降低至 {{gc|10}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Keybrand|sell}} 降低至 {{gc|2}}。
+* {{tr|The Katana}}掉落自[[{{tr|Rusty Armored Bones}}]]、[[{{tr|Hell Armored Bones}}]]、和[[{{tr|Blue Armored Bones}}]]。
+** {{tr|Damage}}由 {{iteminfo|Katana|damage}} 提升至 150。
+** {{tr|Use time}}由 {{iteminfo|Katana|usetime}} 降低至 15。
+** {{tr|Critical strike chance}}由 {{iteminfo|Katana|crit}} 提升至 33%。
+** {{tr|Rarity}}由 {{iteminfo|Katana|rare}} 提升至 {{rare|8}}。
+** {{tr|Value}}由 {{iteminfo|Katana|buy}} 提升至 {{gc|20}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Katana|sell}} 提升至 {{gc|4}}。
+
+; [[{{tr|KO Cannon}}]]和[[{{tr|Chain Knife}}]]
+** {{tr|The KO Cannon}}掉落自[[{{tr|Cave Bat}}]]。
+** {{tr|Damage}}由 {{iteminfo|KO Cannon|damage}} 降低至 18。
+** {{tr|Use time}}由 {{iteminfo|KO Cannon|usetime}} 降低至 25。
+** {{tr|Knockback}}由 {{iteminfo|KO Cannon|kb}} 降低至 5。
+** 不再{{tr|autofire}}。
+* {{tr|The Chain Knife}}掉落自[[{{tr|Clown}}]]。
+** {{tr|Damage}}由 {{iteminfo|Chain Knife|damage}} 提升至 60。
+** {{tr|Use time}}由 {{iteminfo|Chain Knife|usetime}} 降低至 15。
+** 能够{{tr|autofire}}。
+** {{tr|Rarity}}由 {{iteminfo|Chain Knife|rare}} 提升至 {{rare|4}}。
+** {{tr|Value}}由 {{iteminfo|Chain Knife|buy}} 提升至 {{coin|17gc 50sc}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Chain Knife|sell}} 提升至 {{coin|3gc 50sc}}。
+
+; [[{{tr|Ice Bow}}]]和[[{{tr|Snowball Cannon}}]]:
+* {{tr|The Ice Bow}}可在[[{{tr|Frozen Chest}}]]和[[{{tr|Frozen Crate}}]]/[[{{tr|Boreal Crate}}]]中找到，或在{{tr|pre-Hardmode}}期间掉落自[[{{tr|Ice Mimic}}]]。
+** {{tr|Damage}}由 {{iteminfo|Ice Bow|damage}} 降低至 8。
+** {{tr|Use time}}由 {{iteminfo|Ice Bow|usetime}} 提升至 17。
+** {{tr|Rarity}}由 {{iteminfo|Ice Bow|rare}} 降低至 {{rare|1}}。
+** {{tr|Value}}由 {{iteminfo|Ice Bow|buy}} 降低至 {{gc|10}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Ice Bow|sell}} 降低至 {{gc|2}}。
+* {{tr|The Snowball Cannon}}在{{tr|Hardmode}}下掉落自[[{{tr|Ice Mimic}}]]。
+** {{tr|Damage}}由 {{iteminfo|Snowball Cannon|damage}} 提升至 22。
+** {{tr|Use time}}由 {{iteminfo|Snowball Cannon|usetime}} 降低至 6。
+** 有 50% 几率[[省下弹药]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.PickAmmo}}
+** {{tr|Rarity}}由 {{iteminfo|Snowball Cannon|rare}} 提升至 {{rare|5}}。
+** {{tr|Value}}由 {{iteminfo|Snowball Cannon|buy}} 提升至 {{gc|25}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Snowball Cannon|sell}} 提升至 {{gc|5}}。
+
+; [[{{tr|Bubble Gun}}]]和[[{{tr|Aqua Scepter}}]]
+* {{tr|The Bubble Gun}}可在[[{{tr|Dungeon}}]]中的[[{{tr|Locked Gold Chest}}]]，或[[{{tr|Golden Lock Box}}]]中找到。
+** {{tr|Damage}}由 {{iteminfo|Bubble Gun|damage}} 降低至 5。
+** 具有 20 [[{{tr|armor penetration}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+** {{tr|Rarity}}由 {{iteminfo|Bubble Gun|rare}} 降低至 {{rare|2}}。
+** {{tr|Value}}由 {{iteminfo|Bubble Gun|buy}} 降低至 {{coin|8gc 75sc}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Bubble Gun|sell}} 降低至 {{coin|1gc 75sc}}。
+* {{tr|The Aqua Scepter}}掉落自[[{{tr|Duke Fishron}}]]。
+** {{tr|Damage}}由 {{iteminfo|Aqua Scepter|damage}} 提升至 90。
+** {{tr|Use time}}由 {{iteminfo|Aqua Scepter|usetime}} 降低至 10。
+** 现在使用局部{{tr|immunity frames}}，每次击中施加 12 局部{{tr|immunity frames}}。
+** {{tr|Rarity}}由 {{iteminfo|Aqua Scepter|rare}} 提升至 {{rare|8}}。
+** {{tr|Value}}由 {{iteminfo|Aqua Scepter|buy}} 提升至 {{gc|25}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Aqua Scepter|sell}} 降低至 {{gc|5}}。
+
+; [[{{tr|Unholy Trident}}]]和[[{{tr|Flower of Fire}}]]
+* {{tr|The Unholy Trident}}可在[[{{tr|Shadow Chest}}]]和[[{{tr|Obsidian Lock Box}}]]中找到。
+** {{tr|Damage}}由 {{iteminfo|Unholy Trident|damage}} 降低至 42。
+** {{tr|Mana cost}}由 {{iteminfo|Unholy Trident|mana}} 降低至 9。
+** {{tr|Rarity}}由 {{iteminfo|Unholy Trident|rare}} 降低至 {{rare|3}}。
+** {{tr|Value}}由 {{iteminfo|Unholy Trident|buy}} 降低至 {{coin|12gc 50sc}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Unholy Trident|sell}} 降低至 {{coin|2gc 50sc}}。
+* {{tr|The Flower of Fire}}掉落自[[{{tr|Red Devil}}]]。
+** {{tr|Damage}}由 {{iteminfo|Flower of Fire|damage}} 提升至 85。
+** {{tr|Use time}}由 {{iteminfo|Flower of Fire|usetime}} 降低至 12。
+** 造成[[{{tr|Hellfire}}]]而非[[{{tr|On Fire!}}]]。
+** {{tr|Rarity}}由 {{iteminfo|Flower of Fire|rare}} 提升至 {{rare|6}}。
+** {{tr|Value}}由 {{iteminfo|Flower of Fire|buy}} 提升至 {{gc|50}}。
+*** 作为结果，{{tr|sell value}}由 {{iteminfo|Flower of Fire|sell}} 提升至 {{gc|10}}。{{options/reset|rare}}
+
+=== 环境 ===
+* {{tr|The world}}在持续的{{tr|night}}状态下。
+** 可以在{{tr|world}}的{{tr|surface}}看到这一点。
+** {{tr|Cavern layer}}的生成中，{{tr|day and night}}的{{tr|enemies}}/{{tr|critters}}的生成率对半平分。
+** 部分活动仍然遵循[[{{tr|day and night cycle}}]]，例如：
+*** [[{{tr|NPC}}]]在{{tr|daytime}}期间会在{{tr|town}}中四处走动和对话，在{{tr|night}}期间会待在其{{tr|house}}中。
+*** [[{{tr|Angler}}]]在{{tr|dawn}}提供新的{{tr|fishing quest}}。
+*** 随机的 {{tr|boss}} 生成和{{tr|events}}发生遵循常规的{{tr|day and night cycle}}。手动的{{tr|event}}召唤也遵循{{tr|day and night cycle}}。
+* [[{{tr|Lava}}]]现在会对玩家造成 200 {{tr|base contact damage}}，[[{{tr|On Fire!}}]][[{{tr|debuff}}]]的持续时间延长为 10.5 / {{expert|21}} / {{master|26.25}} {{tr|seconds}}。此外，{{tr|enemies}}不再会收到来自{{tr|lava}}的直接{{tr|contact damage}}，只会受到 3 {{tr|seconds}}的{{tr|On Fire!}}{{tr|debuff}}。
+* [[{{tr|Flesh Block}}]]和[[{{tr|Lesion Block}}]]现在算作可产生其对应{{tr|evil biome}}的{{tr|blocks}}。它们现在也可用[[{{tr|Biome Sight Potion}}]]看到。
+* [[{{tr|Lihzahrd Brick}}]]不再算作产生{{tr|Jungle Biome}}的{{tr|block}}。
+* 掉落的[[{{tr|Fallen Star}}]]{{tr|items}}不再在{{tr|day}}消失。
+** 从天上落下的{{tr|Fallen Stars}}能够伤害玩家，且在{{tr|impact}}时不再作为{{tr|item}}掉落。
+* 所有位于{{tr|surface}}以下的{{tr|tiles}}的更新速率快 66%，常规{{tr|worlds}}中位于地上的更新也会在{{tr|surface}}以下发生（见[[{{tr|Plants|link=y}}#生长|{{tr|Plants}} § 生长]]）。{{tr|Grass}}也可以在任何高度自然蔓延。
+
+=== 钓鱼 ===
+* 在[[{{tr|Space}}]]{{tr|fishing}}时，玩家从不被视为在[[{{tr|Corruption}}]]和[[{{tr|Crimson}}]]{{tr|biomes}}。
+* 当在{{tr|surface}}的[[{{tr|Ocean}}]]{{tr|fishing}}时，{{tr|fishing}}尝试仅有 {{chance|1/3}} 几率被视为在{{tr|Ocean}}中。
+* {{tr|The Underground layer}}在{{tr|fishing}}时会算作{{tr|Cavern layer}}。
+* 另一方面，{{tr|The Cavern layer}}会算作{{tr|Underground layer}}。
+** 在此{{tr|layer}}中{{tr|fishing}}时，{{tr|fishing}}尝试有 {{chance|1/2}} 几率被视为{{tr|surface}}尝试。
+*** 如果尝试被视为{{tr|surface}}尝试，则有 {{chance|1/3}} 的几率被视为{{tr|Ocean}}尝试。
+
+=== 事件 ===
+* [[{{tr|Slime Rain}}]]不会发生。
+* [[{{tr|Solar Eclipse}}]]仍然能发生，在开始时显示[[{{tr|status message}}]]''“{{gameText|LegacyMisc.106}}”''。
+** {{tr|The event}}仅影响{{tr|Cavern layer}}和整个{{tr|Underworld}}。它不会影响真正的{{tr|surface}}。
+
+=== {{tr|Enemies}} ===
+[[File:StarSlimesandPots.gif|thumb|玩家摧毁内含带有{{tr|Fallen Star}}的{{tr|slime}}的{{tr|pot}}，身后跟随着其他带有{{tr|Fallen Star}}的{{tr|slime}}。]]
+
+; [[{{tr|Slimes}}]]
+* 其[[{{tr|bonus drop}}]]有 {{chance|1/3}} 几率被替换为一个[[{{tr|Fallen Star}}]]。
+* 有时会在打破[[{{tr|Pots}}]]时从中生成。这些{{tr|slimes}}总是带有{{tr|Fallen Star}}。
+* 在下方条件满足时，{{tr|Slimes}}被杀死时有 {{chance|1/200}} 几率生成[[{{tr|King Slime}}]]：{{source code ref|v=1.4.4.9|method=Terraria.NPC.DoDeathEvents}}
+** {{tr|The King Slime}}在当前{{tr|world}}中尚未被击败，且当前没有{{tr|King Slime}}存活。
+** {{tr|The player}}对它造成过伤害。
+** 世界中至少一名玩家的{{tr|health}}高于 140，且{{tr|defense}}高于 8。
+
+; [[{{tr|Lava Slime}}]]
+* 死亡时不生成{{tr|lava}}。
+* 掉落[[{{tr|Gel}}]]。
+* 掉落[[{{tr|Slime Staff}}]]，几率为 {{chance|1/8000}} / {{expert|{{chance|1/5600}}}}。
+* {{tr|Damage}}由 15 降低至 7。
+* {{tr|Defense}}由 10 降低至 2。
+* {{tr|Max health}}由 50 降低至 25。
+* {{tr|Coins drop}}由 {{coin|1sc 20cc}} 降低至 {{cc|25}}。
+* 行为和大部分{{tr|surface slimes}}相同。
+
+; [[{{tr|Mimics}}]]（{{tr|pre-Hardmode}}）
+* 掉落[[{{tr|Band of Regeneration}}]]、[[{{tr|Magic Mirror}}]]、[[{{tr|Cloud in a Bottle}}]]、[[{{tr|Hermes Boots}}]]、[[{{tr|Mace}}]]、和[[{{tr|Shoe Spikes}}]]。
+* {{tr|Damage}}由 80 降低至 30。
+* {{tr|Defense}}由 30 降低至 12。
+* {{tr|Max health}}由 500 降低至 300。
+* {{tr|Coins drop}}由 {{gc|10}} 降低至 {{gc|2}}。
+
+; [[{{tr|Ice Mimic}}]]（{{tr|pre-Hardmode}}）
+* 掉落[[{{tr|Ice Boomerang}}]]、[[{{tr|Ice Blade}}]]、[[{{tr|Ice Skates}}]]、[[{{tr|Ice Bow}}]]、[[{{tr|Blizzard in a Bottle}}]]、[[{{tr|Flurry Boots}}]]、和[[{{tr|Toy Sled}}]]。
+* 和{{tr|pre-Hardmode}}的{{tr|Mimics}}具有相同的属性更改。
+
+; [[{{tr|Eater of Souls}}]]、[[{{tr|Devourer}}]]、和[[{{tr|Crimera}}]]
+* {{tr|Size, damage, defense, max health, and coins drop}}提升 30%。{{source code ref|name=NPC_SetDefaults|v=1.4.4.9|method=Terraria.NPC.SetDefaults}}
+* {{tr|Eater of Souls and Crimera}}的{{tr|movement speed}}提高，并持续冲向玩家。
+
+; [[{{tr|Wraith}}]]
+* {{tr|Size, damage, defense, max health, and coins drop}}提升 20%。<ref name="NPC_SetDefaults"/>
+
+; [[{{tr|Face Monster}}]]
+* {{tr|Size, damage, defense, max health, and coins drop}}提升 10%。<ref name="NPC_SetDefaults"/>
+* {{tr|Movement speed}}提高。
+
+; [[{{tr|Prismatic Lacewing}}]]
+* 可以在{{tr|Cavern layer}}中的{{tr|Hallow biomes}}中于一天中的任何时间生成。在{{tr|the Hallow}}以外释放时不会消失。
+
+=== {{tr|Boss}} ===
+* 原本仅能在{{tr|night}}召唤的 {{tr|Bosses}} 可在任何时间召唤，且从不会因时间变为{{tr|daytime}}而消失或暴怒。例如，[[{{tr|Skeletron}}]]可在任何时间召唤，且不会在 {{time|4:30 AM}} 和 {{time|7:30 PM}} 之间暴怒。
+; [[{{tr|Deerclops}}]]
+* 仅能在位于{{tr|surface layer}}的[[{{tr|Snow biome}}]]自然生成，而''不会''在可见到{{tr|Blizzard}}视觉效果的{{tr|Cavern layer}}生成。
+; [[{{tr|Empress of Light}}]]
+* 只要她位于{{tr|Surface}}以下，就不受{{tr|day and night cycle}}影响，且不会暴怒。
+** 不过，她在到达{{tr|surface}}时会立即暴怒。
+** 在暴怒时，她会遵循通常的行为，如果在未暴怒时没有受到过伤害，就会在{{tr|nighttime}}消失。
+** 因此，在{{tr|surface}}的{{tr|night}}期间召唤{{tr|Empress of Light}}会导致她立即消失。
+
+=== 盔甲 ===
+* [[{{tr|Ash Wood armor}}]]
+** 每个{{tr|set}}部件仅提供 1 点{{tr|defense}}（总计 3 点）。
+** {{tr|The armor}}的{{tr|set bonus}}降低 64% 的{{tr|lava damage}}（由 200 降低至 72），而非 50%。{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update}}
+
+=== {{tr|NPCs}} ===
+* [[{{tr|Tax Collector}}]]代替[[{{tr|Guide}}]]作为起始 {{tr|NPC}}。
+* 禁用了 {{tr|The NPC}} [[{{tr|Happiness}}]] 系统，价格修正系数将固定为 100%，并且移除了对话窗口中的“{{gameText|UI.NPCCheckHappiness}}”选项。
+** [[{{tr|Pylons}}]]在被出售时无视{{tr|Happiness}}条件。这意味着要使它们能够出售，只需要在商贩 {{tr|NPC}} 附近有另一个 {{tr|NPC}}，且他们不在[[{{tr|evil biome}}]]中即可。
+* [[{{tr|Dryad}}]]不再出售任何[[{{tr|Thrown Powder}}]]。
+** 仍然能通过对应的{{tr|Mushroom}}制作{{tr|Vicious Powder or Vile Powder}}，并通过[[{{tr|Shimmer}}|{{tr|Shimmer}}嬗变]]获得{{tr|Purification Powder}}。
+* [[{{tr|Steampunker}}]]不再出售[[{{tr|Clentaminator}}]]或任何[[{{tr|solutions}}]]。
+** 仍然可以从另一个{{tr|world}}将其带来。
+* [[{{tr|Truffle}}]]不再出售[[{{tr|Dark Blue Solution}}]]。他的{{tr|house}}仍然需要位于{{tr|surface Glowing Mushroom biome}}。
+
+=== {{tr|Items}} ===
+* 数个{{tr|biome pylons}}的{{tr|biome}}改变：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.TeleportPylonsSystem.DoesPylonAcceptTeleportation}}
+** [[{{tr|Forest Pylon}}]]不能在{{tr|surface}}以上，而是需要位于{{tr|Cavern layer}}以下，且距离底部真正[[世界边界]]至少 350 格（距离可见世界边界约 310 格）。
+** [[{{tr|Mushroom Pylon}}]]有一个额外需求：需要距离底部真正世界边界 200 格（即不位于[[{{tr|the Underworld}}]]中）。
+** [[{{tr|Ocean Pylon}}]]可以位于任何地方，只要满足下列条件即可：
+*** 不在[[{{tr|Space}}]]中（<65% 高度；见[[{{tr|Space|link=y}}#{{tr|Notes}}|{{tr|Space}} § {{tr|Notes}}]]）。
+*** 不在[[{{tr|underground}}]]{{tr|layer}}。
+*** 不在{{tr|world}}中部 14% 内。
+*** 距离底部真正[[世界边界]]至少 350 格（距离可见世界边界约 310 格）。
+* [[{{tr|Ash Wood Bow}}]]
+** {{tr|Damage}}由 10 降低至 6。
+** {{tr|Use time}}由 25 提升至 29。
+* [[{{tr|Ash Wood Hammer}}]]
+** {{tr|Damage}}由 9 降低至 4。
+** {{tr|Hammer power}}由 45% 降低至 35%。
+* [[{{tr|Ash Wood Sword}}]]
+** {{tr|Damage}}由 13 降低至 8。
+** {{tr|Use time}}由 17 提升至 23。
+
+== 生成世界时 ==
+* 《{{tr|Terraria}}》 {{tr|logo}} 会旋转至上下颠倒。
+* {{tr|The background}}会变为[[{{tr|Space}}]]的星空{{tr|background}}。
+* 会播放[[{{tr|Music}}#{{tr|Corruption}}|{{tr|Corruption music}}]]，无论{{tr|world evil}}是什么。
+
+== 世界图标 ==
+Don't dig up {{tr|world}}的{{tr|The world icon}}是一棵[[{{tr|Ash Tree}}]]。
+<gallery>
+File:IconCorruptionRemix.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonRemix.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionRemix.png|{{tr|Hardmode}}{{tr|Corruption}}{{tr|world icon}}。
+File:IconHallowCrimsonRemix.png|{{tr|Hardmode}}{{tr|Crimson}}{{tr|world icon}}。
+</gallery>
+
+== 小贴士 ==
+{{main|指南:Don't dig up}}
+
+* 利用好[[{{tr|Pylons}}]]和互相重叠的{{tr|biomes}}可以为建设新{{tr|town}}空出可用的{{tr|pylon}}。推荐在天然的[[{{tr|Minecart Track}}]]附近建造{{tr|town}}。
+** {{tr|The NPC Happiness}}系统被禁用意味着无需记住偏好的{{tr|biomes}}和邻居。
+** 要记住{{tr|Forest Pylon}}无法在{{tr|Surface}}使用，也无法在那里生效（无论是净化所处位置，还是远离{{tr|evil biome}}建造{{tr|town}}都无效）。不过，它可以在{{tr|Cavern layer}}使用。
+** 需要使用放置在{{tr|surface}}的[[{{tr|Teleporter}}]]，或是{{tr|Ocean Pylon}}（远离{{tr|evil biome}}的{{tr|town}}或用充足的[[{{tr|Sunflower}}]]抵消{{tr|evil biome}}均可），亦或是诸如位于{{tr|Glowing Mushroom biome}}的人工的{{tr|biome}}岛上的{{tr|town}}来直接传送到{{tr|Surface}}。由于此{{tr|seed}}中{{tr|Ocean Pylon}}检测的运作方式，除了{{tr|world}}中部的14%，它可以在{{tr|surface}}的任何位置生效；不过在{{tr|surface}}的大部分区域内不会出售此{{tr|pylon}}，需要从其他地方将其带来。
+* [[{{tr|Rope}}]]更加有用，无论是建造前往{{tr|surface}}的“直达电梯”还是从{{tr|Pylons}}处向上快速到达更高的{{tr|biomes}}深处。
+** 在向上挖掘隧道时要非常小心，因为{{tr|Surface}}下方的{{tr|layer}}包含大量的[[{{tr|lava}}]]和[[{{tr|Lava Trap}}]]。失误一次就会导致{{tr|lava}}流下隧道，直达隧道底部。此外，还要当心[[{{tr|Silt Block}}]]、[[{{tr|Sand Block}}]]等{{tr|blocks}}。若支持它们的{{tr|solid block}}被采掘掉，它们会落下并让上方的大量{{tr|lava}}流下。应当点亮周围区域，并注意当前正在采掘的物块。
+* 在尝试前往{{tr|Floating Islands}}时推荐使用[[{{tr|Grappling Hook}}]]、[[{{tr|Gladiator armor}}]]套装、或[[{{tr|Cobalt Shield}}]]；被{{tr|knockback}}会导致玩家向上空飞起的速度过快，使得几乎为零的{{tr|gravity}}的下拉能力无法阻止玩家，这会导致玩家被推到{{tr|world}}顶部，而后死亡。大量的[[{{tr|Harpies}}]]生成会进一步加大这一风险。
+* 由于较低的{{tr|surface gravity}}，[[{{tr|extra jump}}]]{{tr|accessories}}和[[{{tr|Shield of Cthulhu}}]]可以用来在{{tr|surface}}上快速移动，从而在极早期、有能力击败{{tr|enemies}}前就能探索整个{{tr|surface}}。这也可以在{{tr|map}}上标记出{{tr|world}}的生成以辅助探索。若再加上[[{{tr|Rocket Boots}}]]或[[{{tr|Featherfall Potion}}]]，这一过程就不再会过于繁琐。
+* 由于整个{{tr|surface}}都被[[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]覆盖，在[[{{tr|Hardmode}}]]开始后{{tr|the world}}可能会快速被这些{{tr|biome}}吞没。 
+** 通过用 3×3 的隧道包围[[{{tr|housing}}]]和[[{{tr|pylons}}]]的方式来保护它们，以防止 [[{{tr|NPCs}}]] 被强制搬离可能是个好方法。
+** 不过，即使在{{tr|Hardmode}}之前，一些因素也会使得防止蔓延更简单。
+*** 除{{tr|Hardmode}}前通过地下的草的有限传播和比通常更深的{{tr|evil biome}}{{tr|chasm}}外，世界上的纯净区域基本上是一个矩形。相较于通常情况下的斜向条状区域，这使得挖掘隔离带更容易了，可以直接按上下左右的直线挖掘而不需要妥协于被保护区域的形状。 
+**** [[{{tr|Digging Molecart}}]]很适合用来在{{tr|surface}}下方挖掘水平隧道。可以将挖掘操作重复一次，第二次挖掘位置位于第一次的隧道下方，以使得{{tr|Minecart Tracks}}能阻挡[[{{tr|vines}}]]（两条轨道之间不应有会被侵染的{{tr|block}}，且至少距离一个{{tr|tile}}远，从而在算上轨道后产生至少三个{{tr|tile}}宽的间隙。
+**** 在世界边缘挖掘竖直的通道后，可以在通道的一侧放置{{tr|rope}}以便宜且简单地阻挡[[{{tr|thorny bushes}}]]。
+*** 在{{tr|Hardmode}}开始时，{{tr|The Hallow}}会替换世界一侧已经是{{tr|corrupt}}/{{tr|Crimson}}的区域，且不会有新的区域被{{tr|evil biome}}侵染。
+**** 这并不会立即降低{{tr|world}}的总体纯净度。
+**** {{tr|The Hallow}}总是会和{{tr|Jungle}}出现在同一侧，而{{tr|Hallow}}无法向{{tr|Jungle}}蔓延。
+**** 和普通{{tr|world}}中不同，即使是在{{tr|pre-Hardmode}}，侵染性{{tr|biomes}}的位置也是完全可预测的，这意味着只需在{{tr|pre-Hardmode}}用隔离带阻隔开现有的{{tr|Corruption}}/{{tr|Crimson}}。
+* 由于在{{tr|world}}中起始位于[[{{tr|Underworld}}]]中具有较弱{{tr|enemy}}生成的地方，建立{{tr|town}}来将这些生成变为{{tr|critters}}相对很容易。虽然{{tr|The Underworld}}独有的{{tr|critters}}在玩家至少击败一个 {{tr|evil biome boss}}（以能够制作[[{{tr|Lavaproof Bug Net}}]]）前无法捕捉，但{{tr|gem critters}}也会以可观的频率生成，使得它们在游戏早期是不错的{{tr|coin}}来源。一旦能获得[[{{tr|Hellstone}}]]，各种{{tr|Underworld critters}}就也可作为易得的{{tr|fishing bait}}的来源。
+** 或者，玩家在获得[[{{tr|Golden Bug Net}}]]（每个{{tr|quest}} {{chance|1/80}} 几率）后就能跳过 {{tr|bosses}} 的过程。
+* [[{{tr|The Aether}}]]{{tr|biome}}周围具有纯净的{{tr|Stone Block}}环，但最外层的{{tr|Stone Block}}会被侵染。这有助于在{{tr|pre-Hardmode}}定位此{{tr|biome}}。
+** 找到{{tr|The Aether}}之后，可以用[[{{tr|Magic Conch}}]]和[[{{tr|Teleporter}}]]来快速前往。{{tr|Cavern Pylon or Ocean Pylon}}（若在{{tr|cavern layer}}中）也可以用来快速旅行，因为纯净的{{tr|stone block}}环足够宽，{{tr|NPCs}} 可以在环内居住，但由于{{tr|evil biomes}}会阻止 {{tr|NPCs}} 出售{{tr|pylons}}，需要提前购买{{tr|pylons}}。
+* 在所有具有进度调换的{{tr|weapons}}中，[[{{tr|Unholy Trident}}]]和[[{{tr|Aqua Scepter}}]]在对应游戏阶段中极其强力。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|
+** 修复了 Don't dig up / [[Get fixed boi]] {{tr|seeds}}中，[[{{tr|town NPCs}}]] 在有效的[[{{tr|Ocean Pylon}}]]地区中不出售{{tr|Ocean Pylon}}的问题。
+** 修复了[[{{tr|Truffle}}]]仍然会在 Don't dig up / Get fixed boi {{tr|seeds}}中出售[[{{tr|Dark Blue Solution}}]]的问题。}}
+{{history|Desktop 1.4.4.8.1|修复了在 1.4.4.8 中产生的{{tr|Ocean Pylon}}在 Don't dig up / Get fixed boi {{tr|world}}中无法使用的问题。}}
+{{history|Desktop 1.4.4.8|
+** 修复了在 Don't dig up / Get fixed boi {{tr|seed}}中被{{tr|lava}}杀死的[[{{tr|Blue Slime}}]]算入有效的{{tr|King Slime}}生成的问题。不过，如果玩家此前击中过它们，{{tr|lava}}击杀就依然有效。
+** 修复了 Don't dig up / Get fixed boi {{tr|seed}}中的{{tr|underworld}}内有 1 格厚的层生成错误的{{tr|enemies}}的问题。
+** 修复了 Don't dig up / Get fixed boi {{tr|seed}}中[[{{tr|Fertilizer}}]]在{{tr|Underworld}}中不生效的问题。
+** 修复了 Don't dig up / Get fixed boi {{tr|seed}}中{{tr|Ocean Pylon}}在部分{{tr|Ocean}}区域不生效的问题。
+** {{tr|Pre-Hardmode}}[[{{tr|Mimics}}]]获得下列改动：
+*** {{tr|Health}}由 270 提升至 300。
+*** {{tr|Defense}}由 16 降低至 12。
+** 为{{tr|King Slime}}生成添加了进度检测，以阻止在第一天就为未准备好的玩家生成。这将和普通{{tr|worlds}}中的[[{{tr|Slime Rain}}]]条件类似。}}
+{{history|Desktop 1.4.4.7|修复了 Don't dig up / Get fixed boi {{tr|seeds}}中未经玩家交互而被[[{{tr|lava}}]]杀死的[[{{tr|slimes}}]]也能召唤[[{{tr|King Slime}}]]的问题。不过，先击中过{{tr|the slime}}，而后由{{tr|lava}}造成击杀仍然会让{{tr|King Slime}}生成。}}
+{{history|Desktop 1.4.4.6|
+** 修复了[[{{tr|Ice Golem}}]]、[[{{tr|Angry Nimbus}}]]、和[[{{tr|Rainbow Slime}}]]在 Don't dig up {{tr|seed}}中的生成不可靠的问题。它们现在应当正常地在{{tr|rain}}/{{tr|blizzards}}期间生成。
+** 修复了在 Don't dig up / Get fixed boi {{tr|seed}}中{{tr|Fertilizer}}不会对特定{{tr|Underground layers}}中的{{tr|trees}}生效的问题。}}
+{{history|Desktop 1.4.4.5|
+** 修复了导致[[{{tr|Wall of Flesh}}]]的掉落有时会在{{tr|world}}转化为[[{{tr|Hardmode}}]]时消失的问题。这个问题在 Don't dig up / Get fixed boi {{tr|worlds}}以外极少出现。
+** 修复了极其罕见的[[{{tr|Jungle Temple}}]]在 Don't dig up / Get fixed boi {{tr|Seed}}中不生成的问题。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=Don't dig up}}

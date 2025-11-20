@@ -1,0 +1,80 @@
+{{exclusive|Secret world seeds}}
+{{redirect|Not the bees!|“{{tr|Not the Bees!}}”{{tr|achievement}}|{{tr|Achievements}}}}
+[[File:Ntb medium.png|thumb|450px|Not the bees [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+[[File:Not the bees seed generation screen.jpg|thumb|450px|Not the bees {{tr|world}}的生成界面。]]
+
+'''Not the bees''' 是一个[[{{tr|Secret world seed}}]]。它会生成一个由{{tr|bee}}为主题的{{tr|biome}}和与{{tr|bee}}相关的物品及结构主导的世界。
+
+下列{{tr|seeds}}可用于生成 Not the bees {{tr|world}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|not the bees}}|{{code|not the bees!}}|{{code|notthebees}}}}
+
+== 更改 ==
+* 大部分世界被替换为[[{{tr|Jungle}}]]，[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]和[[{{tr|Honey Blocks}}]]大量出现。见[[#被替换的图格|下方]]获取被替换的图格的完整列表。
+** 因此，不同于普通游玩过程，玩家将在{{tr|Jungle}}中出生。
+* 在生成世界时的所有描述均为“{{gameText|UI.WorldGenEasterEgg_GeneratingBees}}”。
+** 生成这个种子世界的时间也非常长。这可能是由于（普通的）{{tr|world}}先被生成，而后{{tr|world}}中的地形才被转换。
+* 初始[[{{tr|NPC}}]]是[[{{tr|Merchant}}]]而不是[[{{tr|Guide}}]]。他会像通常一样在[[{{tr|Jungle}}]]中出售[[{{tr|Furnace}}]]。
+* [[{{tr|Larva}}]]常常会在[[{{tr|Bee Hive}}]]外生成。
+* [[{{tr|Dungeon}}]]被[[{{tr|Paint}}]]为橙色，[[{{tr|Jungle Temple}}]]被{{tr|paint}}为绿色。
+* [[{{tr|Water Chest}}]]和[[{{tr|tree}}]]可以生成在[[{{tr|Honey}}]]中，且[[{{tr|Fallen Log}}]]可以生成在任何{{tr|surface tile}}上。
+* 进入{{tr|hardmode}}时，新生成的两条斜向的{{tr|biome}}会将所有[[{{tr|Hive|link=y}}|{{tr|Hive blocks}}]]分别相应替换为[[{{tr|Ebonstone Block}}]]、[[{{tr|Crimstone Block}}]]或[[{{tr|Pearlstone Block}}]]，所有[[{{tr|Crispy Honey Block}}]]会分别被相应替换为[[{{tr|Hardened Ebonsand Block}}]]、[[{{tr|Hardened Crimsand Block}}]]或[[{{tr|Hardened Pearlsand Block}}]]。注意这只会影响初始的这次替换，这三种{{tr|biome}}并不会向{{tr|Hive blocks}}或{{tr|Crispy Honey Blocks}}蔓延。
+
+=== 被替换的图格 ===
+* 绝大多数的[[{{tr|water}}]]都被[[{{tr|honey}}]]替代，只有[[{{tr|Floating Island}}]]上、[[{{tr|Dungeon}}]]中、或[[{{tr|Ocean}}]]{{tr|biome}}之下的[[{{tr|Cavern}}]]{{tr|layer}}中的除外。
+* 所有[[{{tr|Forest Tree}}]]、[[{{tr|Living Wood}}]]、[[{{tr|Leaf Block}}]]和[[{{tr|Vines}}]]都被其对应的{{tr|Jungle}}变体替代，{{tr|Floating Island}}上的除外。
+** 罕见情况下，生成在{{tr|Floating Island}}生成所需最低高度以上的部分世界也不会被转换，使得山顶上某条水平线以上仍然是{{tr|Dirt Block}}。 
+* 所有{{tr|Stone Block}}形态的[[{{tr|gems}}]]会被{{tr|Crispy Honey Blocks}}替代。不过，放置的{{tr|gems}}仍然会生成。
+* 所有[[{{tr|Slush Block}}]]都被[[{{tr|Honey Block}}]]替代。
+* 所有[[{{tr|Dirt Block}}]]都被[[{{tr|Mud Block}}]]替代，{{tr|Floating Island}}上的除外。
+* [[{{tr|Caverns}}]]{{tr|lava layer}}之上的所有类型的[[{{tr|Grass}}]]都被[[{{tr|Jungle Grass}}]]替代，{{tr|lava layer}}之下的都被[[{{tr|Mushroom Grass}}]]替代。任何暴露在外的[[{{tr|Mud Block}}]]也会生长出对应的{{tr|grass}}。
+** 因此，在{{tr|lava layer}}中原有的{{tr|Jungle}}所在处会有一个巨大的[[{{tr|Glowing Mushroom biome}}]]。
+* {{tr|lava layer}}之上的所有[[{{tr|Stone blocks}}]]、[[{{tr|Granite blocks}}]]、[[{{tr|Marble blocks}}]]、[[{{tr|Ice blocks}}]]和[[{{tr|Snow blocks}}]]都被{{tr|Hive blocks}}替代，{{tr|lava layer}}之下的则被{{tr|Crispy Honey Block}}替代。
+** [[{{tr|Ebonsand Block}}]]、[[{{tr|Ebonsandstone Block}}]]、[[{{tr|Hardened Ebonsand Block}}]]、[[{{tr|Purple Ice Block}}]]、[[{{tr|Crimsand Block}}]]、[[{{tr|Crimsandstone Block}}]]、[[{{tr|Hardened Crimsand Block}}]]和[[{{tr|Red Ice Block}}]]也类似。
+* 只有[[{{tr|Ocean}}]]{{tr|biome}}中的[[{{tr|Sand Block}}]]被{{tr|Honey Block}}替代。
+** 类似地，只有{{tr|Ocean}}{{tr|biome}}中的[[{{tr|Hardened Sand Block}}]]和[[{{tr|Sandstone Block}}]]被[[{{tr|Hive|link=y}}|{{tr|Hive block}}]]替代。
+* 会生成在[[{{tr|Ebonstone Block}}]]或[[{{tr|Crimstone Block}}]]20 格（40 英尺）之内的所有[[{{tr|Jungle Grass}}]]和[[{{tr|Mud Block}}]]会被转化为[[{{tr|Corrupted Grass}}]]或[[{{tr|Crimson Grass}}]]以及[[{{tr|Dirt Block}}]]。
+* 在[[{{tr|Ocean}}]]之下，[[{{tr|Cavern}}]]{{tr|layer}}中的{{tr|lava}}层以上部分中，[[{{tr|Mud Block}}]]会被转化为[[{{tr|Snow Blocks}}]]或[[{{tr|Ice Blocks}}]]。上半部分的会被转化为{{tr|Ice Blocks}}，下半部分的会被转化为{{tr|Snow Blocks}}。
+* 在{{tr|world}}的大约下半部分中的[[{{tr|Copper Ore}}]]、[[{{tr|Tin Ore}}]]、[[{{tr|Iron Ore}}]]和[[{{tr|Lead Ore}}]]被[[{{tr|Dirt Block}}]]替代。
+* 在{{tr|world}}的大约下半部分中的[[{{tr|Silt Blocks}}]]和[[{{tr|Clay Blocks}}]]会被替换为{{tr|Stone Blocks}}。
+
+=== 缺失的内容 ===
+* 不会生成[[{{tr|Oasis}}]]和[[{{tr|glowing moss biome}}]]。
+* 不会生成[[{{tr|Campsites}}]]、[[{{tr|Gemstone Caves}}]]、[[{{tr|Moss Chambers}}]]和[[{{tr|Thin Ice Patches}}]]。
+* 不会生成[[{{tr|Lava traps}}]]和[[{{tr|Geysers}}]]。
+* 不会生成使用[[{{tr|Active Stone Block}}]]的[[{{tr|Boulder traps}}]]，使用[[{{tr|Actuator}}]]的{{tr|Boulder traps}}依旧会生成。
+* 不会生成[[{{tr|Shell Pile}}]]和[[{{tr|Moss}}]]。
+
+== 世界图标 ==
+Not the Bees {{tr|world}}的{{tr|The world icon}}是一棵被[[{{tr|Bee}}]]环绕的[[{{tr|Jungle tree}}|{{tr|Rich Mahogany}}]]。
+
+<gallery widths="120px">
+File:IconCorruptionNotTheBees.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonNotTheBees.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionNotTheBees.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonNotTheBees.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== 小贴士 ==
+{{main|指南:Not the bees}}
+
+* 游戏早期能获得的[[{{tr|Stone Block}}]]很少，因此建议从[[{{tr|Merchant}}]]处购买[[{{tr|Wooden Arrow}}]]和[[{{tr|Furnace}}]]。
+* [[{{tr|Snow Flinx}}]]仍然可以在世界两侧，生成[[{{tr|Snow Blocks}}]]和[[{{tr|Ice Block}}]]的地下深处找到（因为此处和{{tr|Snow}}相关的{{tr|tiles}}数量足以生成{{tr|Ice Biome}}）。[[{{tr|Deerclops}}]]也可以在此区域被召唤。
+
+== 花絮 ==
+* 短语“Not the bees”引用了来源于 2006 年的恐怖电影{{维基百科|The Wicker Man (2006 film)|The Wicker Man|t=异教徒|b=y}}的迷因（梗）：“[https://knowyourmeme.com/memes/not-the-bees NOT THE BEES!]”
+* 也有一个[[{{tr|achievement}}]] 名为“Not the Bees!”（{{tr|Not the Bees!}}）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了 {{code|notthebees}} 作为此{{tr|seed}}的别名。
+** [[{{tr|Spider Nest}}]]现在可在此{{tr|seed}}中生成。
+** 所有种类的[[{{tr|fish}}]]现在应当都能被捕捉。
+** 现在应当能 100% 完成[[{{tr|Bestiary}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=Not the bees}}

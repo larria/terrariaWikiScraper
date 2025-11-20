@@ -1,0 +1,1706 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch
+| patchname = Journey's End（{{tr|Journey's End}}）
+| release = 5/16/2020
+| ref = {{forums thread|there-back-again-a-summary-of-journeys-end.87997|1.4 Summary and Changelog}}
+}}
+{{toc limit|2|right=yes}}
+
+'''1.4.0.1''' 更新名为'''{{tr|Journey's End}}'''，是在 2020 年 5 月 16 日发布的大更新。<ref>{{forums thread|prepare-to-embark-on-journeys-end.87442|Prepare to Embark on Journey's End}} {{small|2020 年 4 月 13 日}}</ref>此次发布发生在''{{tr|Terraria}}'' 9 周年之际，游戏最初是在 2011 年 5 月 16 日发布的。[[{{tr|Re-Logic}}]] 的工作人员已经声明它是''{{tr|Terraria}}''的最后一次大功能更新。
+
+在 2019 年 6 月 10 日之前，一直宣称此更新将作为 1.3.6 发布。<ref>{{forums thread|re-logic-announces-terraria-journeys-end-at-e3.80018|Re-Logic Announces Terraria: Journey's End at E3!}} {{small|2019 年 6 月 10 日}}</ref>
+
+== 增加 ==
+=== 主要功能 ===
+* 添加了全新的世界和人物难度模式：[[{{tr|Journey Mode}}]]，可对游戏方式前所未有的控制。它提供了独特的能力，比如物品复制、天气控制、{{tr|spawn rate}}和难度{{tr|sliders}}等等。
+* 添加了[[{{tr|Master Mode}}]]，这是新的最高难度，超过了{{tr|Expert mode}}。用更高难度的挑战来测试你的技能，并能从各个 {{tr|boss}} 那拿到一些独特的奖励。
+* 添加了两个全新的 [[{{tr|bosses}}]] 供发掘和挑战：[[{{tr|Queen Slime}}]]和[[{{tr|Empress of Light}}]]。
+* 添加了[[{{tr|Bestiary}}]]，这是一本百科全书，收录了你一路上遇到的[[{{tr|enemies}}]]、[[{{tr|NPCs}}|盟友]]和[[{{tr|critters}}]]。
+* 添加了[[{{tr|Golf}}]]，这是种新的娱乐消遣，适合在杀怪之余用来休闲放松。
+* 添加了[[{{tr|Windy Day}}]]{{tr|weather}}，以及相关的各种环境效果，甚至还有一些[[{{tr|enemies}}]]。
+* 添加了城镇[[{{tr|Pylons}}]]和 [[{{tr|Happiness}}|{{tr|NPC Happiness}}]]，这将城镇系统扩展到有能力在世界各处的城镇之间建立起传送网络。
+* 添加了隐藏的[[{{tr|Luck}}]]系统。
+
+=== {{tr|Menu}}/UI ===
+* 正式添加[[{{tr|Texture Pack}}]]支持，现在它在主菜单中有自己的选项。
+* 为雷蛇（Razer）、海盗船（Corsair）、罗技（Logitech）的硬件添加了 RGB 照明支持
+* 添加了[[{{tr|Block Swap}}]]，此机制让玩家可以直接用新[[{{tr|blocks}}]]替换掉原本存在的，不需要先将其挖掉。作为附加奖励，这还允许直接交换{{tr|Chests}}和{{tr|Dressers}}同时保持其内装物品不受影响！
+* {{tr|Terraria}}现在有了一系列全新的开场屏幕图片和一个开场动画。
+* 添加了彻底大改过的人物和世界创建菜单。
+* 添加了 [[{{tr|boss health bar}}]]。
+* 添加了[[{{tr|Emote Commands}}]]和{{tr|menu}}。
+* 生成世界的过程中加载屏幕上添加了信息性的帮助文本。
+* 添加了两个新的生命条/{{tr|Mana}}条样式选项。
+* 添加了许多新的小地图边框选项。
+* 添加了推荐成就图标来引导玩家。
+* 为制作{{tr|workbench}}添加了一个新的成就。
+
+=== 环境氛围 ===
+* 天空中添加了各种环境{{tr|background objects}}。
+* 第一次打败 {{tr|boss}} 或{{tr|invasion}}后增加了新的庆祝事件。作为{{tr|Terraria}}玩家是何等幸运！
+* 添加了[[{{tr|graveyard}}]]迷你{{tr|biome}}。
+* 添加了不常见的[[{{tr|thunderstorm}}]]{{tr|ambient weather}}。
+* 添加了发生[[{{tr|Meteor Shower}}|{{tr|meteor showers}}]]的可能，这会大大提高[[{{tr|Fallen Star}}|{{tr|falling star}}]]的掉落率。
+* 天空中添加了新的{{tr|falling star}}动画。
+* 给玩家的角色添加了根据情况需要眨眼、闭眼、眯眼的能力。
+
+=== 世界生成过程和{{tr|Biomes}} ===
+* 添加了数十张新[[{{tr|Biomes}}|{{tr|biome}}]]{{tr|backgrounds}}。
+* [[{{tr|Underground Desert}}]]现在有一些结构上的变化、新的战利品和各种新的威胁。
+* 给{{tr|Underground Desert houses}}添加了新{{tr|paintings}}，由测试人员完成！
+* 添加了[[{{tr|Oasis}}]]{{tr|minibiomes}}。
+* 添加了{{tr|Oasis}}蕨类植物。
+* 添加了[[{{tr|Cattail}}|{{tr|cattails}}]]。
+* 添加了[[{{tr|Lilypad}}|{{tr|lilypads}}]]。
+* 添加了新的{{tr|desert palm tree}}样式。
+* 给{{tr|Granite}}、{{tr|Marble}}、{{tr|Living Tree}}和{{tr|Desert}}{{tr|biomes}}各自添加了相应的新瓦砾堆。
+* 给长草的{{tr|cave}}添加了[[{{tr|Vines}}|{{tr|flower vines}}]]。
+* 给[[{{tr|Jungle}}]]、[[{{tr|The Crimson}}]]、[[{{tr|The Corruption}}]]、和[[{{tr|The Hallow}}]]添加了自然生长的花。
+* 添加了自然生长的高花。
+* 添加了小片花地、矿脉、以及其他{{tr|surface}}[[{{tr|Biomes}}|微{{tr|biomes}}]]。
+* 给[[{{tr|Dungeon}}]]添加了各种新的构造更改。
+* 添加了大量新的地图屏幕背景。
+* 添加了几种新的{{tr|glowing moss}}{{tr|biome}}变体。
+* 世界生成过程中添加了几种新的[[{{tr|traps}}]]。
+* 添加了几种新的月亮外观变化。
+* 添加了一些新的稀有贝壳品种以及[[{{tr|Shell Pile}}]]。
+* 添加了{{tr|sea oats}}。
+* 身处[[{{tr|Ocean}}]]时新加了一张独特的{{tr|underground layer}}{{tr|background}}。
+* 添加了新的{{tr|mushroom biome}}植物。
+* 添加了{{tr|seaweed plants}}，它会在海底生长。
+* 更新了[[{{tr|Ocean}}]]{{tr|biome}}，添加了一些新的变化。
+* 添加了{{tr|Underground}}[[{{tr|Gem trees}}|{{tr|Gem Trees}}]]。
+* 添加了{{tr|Hardmode Desert Chest}}和{{tr|Biome Key}}。
+* 添加了[[{{tr|Trees|link=y}}#{{tr|Vanity trees}}|{{tr|Yellow Willow}}]]和[[{{tr|Trees|link=y}}#{{tr|Vanity trees}}|{{tr|Sakura Trees}}]]。
+* 添加了各种[[{{tr|Fruits}}]]，可以通过摇晃树木获取。
+
+=== [[{{tr|Music}}]] ===
+* 添加了全新的标题主题曲：《{{tc/music|Journey's End}}》。
+* 添加了《[[{{tc/music|Windy Day}}]]》主题曲。
+* 添加了《{{tc/music|Space Day}}》主题曲。
+* 添加了《{{tc/music|Ocean Night}}》主题曲。
+* 添加了《{{tc/music|Town Day}}》和《{{tc/music|Town Night}}》主题曲。
+* 添加了《{{tc/music|Storm}}》主题曲。
+* 添加了《{{tc/music|Slime Rain}}》主题曲。
+* 添加了《[[{{tc/music|Graveyard}}]]》主题曲。
+* 添加了《{{tc/music|Underground Jungle}}》主题曲。
+* 添加了《地表夜间丛林》主题曲。
+* 添加了《[[{{tc/music|Duke Fishron}}]]》{{tr|boss}} 主题曲。
+* 添加了《{{tc/music|Morning Rain}}》主题曲。
+* 添加了《{{tc/music|Morning Rain}}》主题曲。
+* 添加了《{{tc/music|Underground Desert}}》主题曲。
+* 添加了《[[{{tc/music|Empress of Light}}]]》主题曲。
+* 添加了《[[{{tc/music|Queen Slime}}]]》主题曲。
+* 为所有新引入的曲子添加了相应的{{tr|music boxes}}。
+* 添加了来自已取消的《Terraria Otherworld（泰拉瑞亚：异界）》的曲子。
+* 姗姗来迟，来自 Xenon 和 DJ Sniper 的{{tr|Terraria}}音乐比赛获胜曲目已经实现为{{tr|music box}}！
+
+=== {{tr|Enemies}}和{{tr|Critters}} ===
+* 添加了两个新的[[{{tr|hardmode}}]] {{tr|bosses}}：[[{{tr|Empress of Light}}]]和[[{{tr|Queen Slime}}]]。
+* 添加了两个新的{{tr|mini-bosses}}：[[{{tr|Blood Eel}}]]和[[{{tr|Dreadnautilus}}]]。
+* 添加了几个[[{{tr|Blood Moon}}]]{{tr|fishing enemies}}。
+* 添加了一些[[{{tr|Windy Day}}]]{{tr|enemies}}。
+* 一些其他{{tr|enemies}}添加进入几个不同{{tr|biomes}}，比如{{tr|Mushroom}}和{{tr|Underground}}。
+* 添加了[[{{tr|Gnome}}]]。
+* 添加了野外友好[[{{tr|Fairies}}]]，以及{{tr|fairy}}原木。
+* 添加了[[{{tr|Fairies|link=y}}#{{tr|Crafting}}|{{tr|Fairy Jar}}]]。
+* 添加了十几种新{{tr|critters}}。
+* 添加了几种[[{{tr|Underworld}}]]{{tr|critters}}。
+* 添加了[[{{tr|Gold Goldfish}}]]和其他几个[[{{tr|Gold Critters}}]]。
+* 添加了[[{{tr|Crystal Slime}}]]
+
+=== {{tr|NPCs}} 和{{tr|Pylons}} ===
+* 添加了[[{{tr|Golfer}}]] {{tr|NPC}}。
+* 添加了[[{{tr|Zoologist}}]] {{tr|NPC}}。
+* 添加了基于所在地和共同生活者的 [[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|NPC Happiness}}]]系统。
+* 添加了{{tr|Town}}[[{{tr|Pylons}}]]，这是在已建立的城镇之间进行运输的简便方法。
+* 添加了[[{{tr|Town Cat}}|{{tr|Cat}}]]、[[{{tr|Town Dog}}|{{tr|Dog}}]]、和[[{{tr|Town Bunny}}|{{tr|Bunny}}]]{{tr|Town Pet NPCs}}。
+* 添加了新的对话和名字，并移除了一些可能的 NPC 名字。
+
+=== {{tr|Fishing}} ===
+* 添加了[[{{tr|Blood Moon}}]]{{tr|fishing}}，这是一种充满了{{tr|new enemies}}和新奖励的危险消遣。
+* 添加了[[{{tr|Oasis}}]]{{tr|fishing}}和许多来源于此的新物品，比如{{tr|fishing rod}}。
+* 添加了两种新{{tr|Oasis Quest Fish}}。
+* 添加了新的[[{{tr|Fishing}}|{{tr|Lava Fishing}}]]方法并大幅扩充了{{tr|Lava Fishing}}的战利品池。
+* 添加了用于{{tr|fishing}}的[[{{tr|Chum Bucket}}]]。
+* 添加了{{tr|Ice}}、{{tr|Oasis}}、{{tr|Lava}}、和{{tr|Ocean}}[[{{tr|Crates}}]]。
+
+=== 装备和物品 ===
+* 添加了[[{{tr|Zenith}}]]，终极之剑，庆祝你从始至终的旅程。
+* 将[[{{tr|Celebration MK2}}]]添加到{{tr|Moon Lord}}的掉落池，它是[[{{tr|Celebration}}]]的改进替代版本，而后者现在由[[{{tr|Party Girl}}]]在打败[[{{tr|Golem}}]]后出售。
+* 添加了[[{{tr|Super Star Shooter}}]]，它是{{tr|hardmode}}的[[{{tr|Star Cannon}}]]。
+* 添加了一类全新的召唤武器：[[{{tr|Whips}}]]。
+* 添加了[[{{tr|Hallowed armor}}|{{tr|Hallowed Summoner Helmet}}]]。
+* 添加了十几个新的{{tr|accessory}}制品。
+* 添加了[[{{tr|Step Stool}}]]。
+* 添加了特殊{{tr|crafting recipes}}，只能在{{tr|Graveyards}}存在的[[{{tr|Ecto Mist}}]]那制作。
+* 多名 {{tr|NPCs}} 在位于[[{{tr|Graveyard}}]]内时会出售特殊商品。
+* （重新）添加了[[{{tr|Zapinator}}]]，并且现在有两种不同颜色的版本。
+* 添加了一些具有基本音乐功能的乐器，并对[[{{tr|The Axe}}]]的音调的增加了一些控制。
+* 添加了若干“{{tr|Amber}}”物品以匹配其他[[{{tr|Gems}}|{{tr|Gem}}]]的{{tr|crafting recipes}}。
+* 添加了[[{{tr|Finch Staff}}]]和若干其他新{{tr|summon weapons}}。
+* 添加了若干种{{tr|new Rocket}}。
+* 添加了[[{{tr|Wings}}|{{tr|Fledgling Wings}}]]。
+* （重新）添加了[[{{tr|Luminite Drills}}|{{tr|Lunar Drills}}]]，现在已经重新调整过平衡，和{{tr|Lunar Pickaxes}}相比既有优点又有缺点。
+* 添加了[[{{tr|Dirt Bomb}}]]和{{tr|Sticky Dirt Bombs}}。
+* 添加了[[{{tr|Tungsten Bullet}}]]，这样{{tr|Tungsten worlds}}也能制作{{tr|ammo}}了。
+* 添加了[[{{tr|Sergeant United Shield}}]]。
+* 添加了[[{{tr|Jousting Lance}}]]。
+* 添加了若干种{{tr|other new swords}}。
+* 添加了各种[[{{tr|kites}}]]。
+* 向游戏中添加了超过 50 种新{{tr|food and drink items}}。
+* 添加了[[{{tr|Paper Airplanes}}]]。
+* {{tr|Underground Desert}}战利品中添加了 9 种{{tr|new items}}。
+** 添加了[[{{tr|Storm Spear}}]]。
+** 添加了[[{{tr|Dunerider Boots}}]]。
+** 添加了[[{{tr|Snake Charmer's Flute}}]]。
+** 添加了[[{{tr|Ancient Chisel}}]]。
+* 添加了[[{{tr|Football}}|{{tr|Footballs}}]]。
+* 还有更多{{tr|weapons}}、{{tr|accessories}}、和其他有用的工具！
+* {{tr|Golf}}相关装备：
+** 添加了几种不同用途的[[{{tr|Golf Clubs}}]]，具有不同的视觉效果。
+** 添加了不同颜色的[[{{tr|Golf Balls}}]]。
+** 添加了[[{{tr|Golf Tee}}]]和[[{{tr|Golf Cup}}]]。
+** 添加了[[{{tr|Golf Whistle}}]]。
+** 添加了[[{{tr|Country Club set}}|{{tr|Country Club}}{{tr|Vanity}}套装]]。
+** 添加了{{tr|Golf Chest}}。
+** 添加了[[{{tr|Golf Cart Keys}}|{{tr|Golf Cart Mount}}]]。
+** 添加了[[{{tr|Golf Trophies}}]]。
+** 添加了若干{{tr|Golf Paintings}}。
+** 添加了新的[[{{tr|Lawn Mower}}|{{tr|Lawnmower}}]]和修剪草坪防止又长出高草的能力（为了更好地打高尔夫，显然）
+** 添加了[[{{tr|Arrow Signs}}]]，并且箭头可以指向不同方向。
+
+=== {{tr|Furniture}}和{{tr|Blocks}} ===
+* 添加了[[{{tr|Void Vault}}]]和[[{{tr|Void Bag}}]]。
+* 添加了一些受风影响的{{tr|furniture}}。
+* 添加了一些新的{{tr|bricks}}/{{tr|walls}}来搭配之前缺少对应物{{tr|bricks}}/{{tr|walls}}的那些{{tr|ores}}或{{tr|blocks}}。
+* 添加了 8 套新的全套{{tr|furniture}}和配套的{{tr|blocks}}。
+* 添加了一组可放置的{{tr|walls}}，我们统称为“{{tr|Ecto Walls}}”，特别是有超过 50 种之前只在世界生成过程中产生的墙的可制作版本。
+* 添加了一种方法，可以制作可放置版本的嵌有{{tr|Gem}}的{{tr|Stone Blocks}}和{{tr|walls}}，而它们通常只出现于世界生成过程中。
+* [[{{tr|Moss}}]]现在可以用[[{{tr|paint scraper}}]]来收割成为{{tr|item}}。
+* {{tr|Moss}}现在会蔓延到[[{{tr|Gray Brick}}]]上，也可以放置上去，可以造出长苔藓的{{tr|Brick}}了！
+* 添加了大量新{{tr|banners}}，包括{{tr|new enemies}}和一些没有{{tr|banners}}的旧{{tr|enemy}}。
+* 添加了一些装饰性的梁柱。
+* 添加了[[{{tr|Paintings|link=y}}#来自{{tr|Graveyard}}中的{{tr|Painter}}|{{tr|Graveyard Paintings}}]]和若干其他基于{{tr|Graveyard}}的{{tr|furniture}}和{{tr|block items}}。
+* 添加了新[[{{tr|Statues}}]]。
+* 添加了莫名大量的[[{{tr|toilets}}]]。
+* 添加了若干新{{tr|lava}}主题{{tr|decorative items}}。
+* 添加了若干{{tr|new biome}}主题{{tr|torches}}：{{tr|Desert}}、{{tr|Coral}}、{{tr|Corrupt}}、{{tr|Crimson}}、{{tr|Hallowed}}和{{tr|Jungle}}。
+* {{tr|New biome torches}}现在会从相应{{tr|biomes}}的{{tr|pot}}中掉落。
+* 添加了相匹配的{{tr|campfires}}来搭配这些{{tr|new torches}}。
+* 添加了两种新的换水喷泉。
+* 添加了两种新的[[{{tr|Monoliths}}]]。
+* 添加了盆栽室内树。
+* 添加了一些新的电路相关物品。
+* 添加了[[{{tr|Truffle Worm}}]][[笼子|笼]]和大多数{{tr|new critters}}的笼。
+* 添加了最后一种漆色。
+
+=== {{tr|Vanity}}套装、宠物、和{{tr|Mounts}} ===
+* 添加了十几种新的[[{{tr|vanity}}]]套装。
+* 添加了若干新的基于头发和帽子的{{tr|vanity items}}。
+* 添加了若干动物耳朵和尾巴{{tr|vanity items}}。
+* 添加了若干新{{tr|vanity accessories}}。
+* 添加了三种新[[{{tr|dye}}]]。
+* 添加了二十多种{{tr|new hairstyles}}。
+* 添加了最后一批[[{{tr|Developer items}}|{{tr|Developer}}]]{{tr|vanity sets}}。
+* 添加了十多种新[[{{tr|pets}}]]。
+* 添加了十多种新[[{{tr|mounts}}]]。
+* 添加了[[{{tr|Minecarp}}]]、[[{{tr|Digging Molecart}}]]和很多其他{{tr|vanity}}版{{tr|Minecart}}。
+
+== 更改 ==
+=== UI、菜单、选项、和生活品质 ===
+* 游戏现在默认会以无边框窗口模式启动，并且会尝试自动检测正确分辨率。
+* 现在玩家选择屏幕上的人物在选中时会动画处理。
+*现在启动游戏应当会在你的存盘文件夹中为{{tr|texture packs}}自动生成 ResourcePacks 文件夹。
+* 主菜单会在每一“天”过去时显示一张新背景。
+* 世界创建菜单能为你生成随机世界名。
+* 改善了玩家和世界菜单中的{{tr|Cloud}}开/关按钮的可见性，这样更加清晰。
+* 尝试删除收藏的人物时的 UI 反馈得以改进。
+* 玩家/世界菜单中，移除了存档没有多到需要滚动时的滚动条。
+* 现在菜单设置中有一个按钮可以立即应用分辨率更改。
+* 死亡屏幕现在有个计时器显示重生所需的时间，并且你也可以在死亡状态下退出游戏了。在主菜单上，计时器依然会继续倒计时，如果在其激活状态下重新进入游戏，那么你依然会是死亡状态。
+* 现在你可以在{{tr|Dresser}}处更改角色的眼睛和皮肤颜色。
+* 添加了一个设置选项，让你可以切换是用按住向下还是按一下向下来激活{{tr|Hovering Wings}}。对{{tr|Gamepad}}影响特别明显。
+* 如果在游戏最小化到任务栏上时发生了各种事情，现在它会闪烁。这类事情包括承受伤害、出生、或{{tr|worldgen}}结束。
+* 现在地图上有个图标显示你的世界生成点和当前的床生成点。
+* 玩家、{{tr|NPC}}、{{tr|Boss Icons}}，还有一些其他图标，现在在地图上都会有白色描边来提高可见性。
+* 新增了双击地图可以做出标记让其他玩家看到的功能。
+* 队友姓名现在以更易于阅读的方式显示在屏幕上。
+* 聊天时按住退格键能更快地删除文本。
+* 现在在单人模式中也能聊天，以便使用表情或者查看过往的世界讯息。
+* 现在，你可以复制/粘贴{{tr|sign}}上的文字，其中还会包含换行。
+* {{tr|Quick Stack}}现在会优先考虑{{tr|Piggy Banks}}、{{tr|Safes}}、{{tr|Defender's Forge}}、{{tr|Void Vault}}、以及移动{{tr|Money Trough}}和{{tr|Void Bag}}。
+* {{tr|Quick Stack}}到附近{{tr|chests}}的有效范围增加了 25%。
+* 不再能将收藏的[[{{tr|Money Trough}}|{{tr|Money Troughs}}]]放置在它们自己内部。
+* 在{{tr|inventory}}内物品的鼠标悬停文本下加了一个蓝色的框来提高文本的可读性。此功能有一个选项，可在需要时将其关闭。
+* 当前选择的配方现在有个金色的高亮显示。
+* 当前活动{{tr|hotbar}}栏位现在在打开{{tr|inventory}}时会变亮。
+* {{tr|Paint}}、[[{{tr|Actuator}}|{{tr|Actuators}}]]、和[[{{tr|Ale}}]]现在可以放置在{{tr|Ammo Slots}}中。
+* 整理{{tr|inventory}}时现在会尝试将{{tr|ammo}}放进空闲的{{tr|Ammo slots}}中。
+* 整理{{tr|inventory}}会尝试将{{tr|coin slots}}按序排列。
+* 现在[[{{tr|Music Boxes}}]]录制成功时会发出声音作为指示。
+* 现在可以将{{tr|Music Boxes}}放置到{{tr|vanity slot}}中来聆听之。
+* [[{{tr|Buffs}}|{{tr|Buff}}]]持续时间计时器显示现在会向上取整而非向下取整。
+* 扩展并改进了{{tr|Camera mode}}中的{{tr|Biome}}视觉设置。
+* 添加了一个选项，允许减小[[{{tr|minimap}}]]的大小。
+* 现在{{tr|Gamepad}}和键盘/鼠标上都有一个选项设置来激活/取消{{tr|Tile}}网格叠加。
+* UI 缩放比例现在可以设置为低到 50%，最大则可到 200%。
+* 默认{{tr|cursor}}现在有个白色描边，但你依然可以在选项中更改此设置。
+* 解锁{{tr|Achievements}}时现在有个音效了。
+* 如果有人在存盘的时候尝试退出游戏，游戏依然会尽量尝试完成存盘动作，这应当能够预防大量存盘损坏问题。
+* 多人模式独立服务器现在会每 10 分钟保存一次，而非每天早上保存。
+* 独立服务器现在会防止 PC 在不活动时进入睡眠而停止服务器运行。
+* {{tr|Gamepad}}相关更改：
+**更改了{{tr|Gamepad}}上 LT 和 RT 按钮在{{tr|inventory}}菜单中的导航方式。如果你持续按下同一个按钮，就会完整循环遍历，而之前的 LT 和 RT 单独都只能将你送到 UI 的不同部分。
+** 现在“键位绑定”设置中有一个{{tr|Gamepad}}选项用来更改光标在{{tr|inventory}}中移动的速度，选项名叫“Interface Movement Delay（界面移动延迟）”。
+** 添加了改进的{{tr|Gamepad}}按钮选项，可以删除 {{tr|NPCs}} 的房屋状态。
+** 在配置文件中添加了一个选项来完全禁用{{tr|Gamepad}}支持（针对拥有自己的定制{{tr|Gamepad}}设置而无法与我们的设置一起使用的用户）。
+** 当使用{{tr|Gamepad}}的“从{{tr|inventory}}使用”功能时，它会立即使用诸如{{tr|potions}}或{{tr|magic mirrors}}等消耗性物品。
+** 在{{tr|Gamepad}}上，在手持前一个制作出来的物品时尝试制作另一个物品会将前一个物品放进{{tr|inventory}}以腾出手来。
+** {{tr|Gamepad}}上的快速制作不再会那么快速地制作物品了，以防止意外塞满{{tr|inventory}}或多制作了物品。
+** 使用{{tr|Gamepad}}时，只有玩家附近的 {{tr|NPCs}} 才会显示名称，而非屏幕上的所有 {{tr|NPC}} 都显示。
+
+=== 世界生成过程和{{tr|Biomes}} ===
+* 大幅优化了世界生成速度。
+* 不同{{tr|biomes}}中的很多种{{tr|natural background walls}}现在都能可交换地被{{tr|Clentaminator}}转化。有几种{{tr|Jungle backgrounds}}可被转化，但无法清除回{{tr|Jungle wall}}，只能变成{{tr|stone wall}}。之前，它们完全不受[[{{tr|Clentaminator}}]]影响。
+* 大幅更改了{{tr|worldgen}}中{{tr|deserts}}的布局和频率，它们应该会更大但不那么常见，并且会有更自然的沙丘。
+* [[{{tr|Ice biome}}|{{tr|Ice Biome}}]]现在应该会在距离初始出生点更远的地方生成，并且形状更窄。之前它们是梯形的，现在它们是倾斜远离出生点的。
+* {{tr|Natural underground minecart tracks}}现在更长且配置更有趣。
+* {{tr|worldgen}}中[[{{tr|Glowing Mushroom biome}}|{{tr|Underground Mushroom}}]]现在会更大，并且进行了重新设计。
+* 更新了{{tr|mushroom tree}}的树冠和一些{{tr|underground mushroom}}背景墙。
+* 改进了[[{{tr|Marble Cave}}|{{tr|Marble Biome}}]]{{tr|walls}}的生成方式，不再那么“方”了。
+* 被感染的{{tr|biomes}}中的冰锥现在会使用此{{tr|biome}}的颜色而非蓝色。
+* 雨水现在会使用落入的{{tr|biome}}的水颜色。
+* {{tr|chest}}上限从 1000 提升至 8000。
+* 日益复杂的世界生成过程导致{{tr|Underground Cabins}}更常出现破损及塞满家具，作为应对，提升了{{tr|cabin}}中{{tr|paintings}}的生成几率来让找到它们的难度回到合理范围。
+*不像其他背景前的草那样，在草墙/花墙前面长出来的草也会开花。
+* [[{{tr|Sunflower}}]]现在会阻止{{tr|Hallow}}的蔓延。
+* 现在{{tr|worldgen}}中会生成{{tr|Critter statues}}。
+* [[{{tr|Chests}}|{{tr|Wood chest}}]]现在有几率包含一组{{tr|wood}}。
+* 添加了一个系统，它会填补上{{tr|worldgen}}中{{tr|naturally generated}}的{{tr|walls}}上那些很小的孔洞，让背景墙的外观更美观。
+* {{tr|{{tr|Sandstorms}}}}现在明显少了，特别是在游戏早期。
+* 降低了{{tr|Mighty Wind}}的强度，现在它对你的推力下降了。
+* 下雨的情况略微少了一点。
+
+=== 美术改进和视觉效果 ===
+* 以下内容已经重绘外观/润饰：
+** [[{{tr|Hallowed armor}}]]在视觉上完全重制，另外现在还有了个[[{{tr|Ancient Hallowed Armor}}]]版本来使用旧样式。
+** [[{{tr|Skyware furniture}}]]{{tr|set}}。
+** 所有云朵背景的美工，还包括添加了一些外观很熟悉的云……
+** [[{{tr|Golem}}]]、[[{{tr|Queen Bee}}]]、和[[{{tr|Everscream}}]]已经重绘外观。
+** [[{{tr|Eye Patch}}]]、[[{{tr|Goggles}}]]、[[{{tr|0x33's Aviators}}]]和{{tr|Glasses}}的{{tr|item icons}}，这样它们在{{tr|inventory}}会更容易看到。
+** [[{{tr|Harpy}}]]、[[{{tr|Mummies}}|{{tr|Mummy}}]]、和[[{{tr|Wolf}}]]{{tr|enemies}}已经重绘外观。
+** [[{{tr|Goblin Army}}|{{tr|Goblin Invasion}}]]{{tr|enemies}}已经重绘外观。
+** [[{{tr|Dungeon}}]]{{tr|Skeletons}}已经重绘外观。
+** [[{{tr|Truffle}}]] {{tr|NPC}} 已经重绘外观。
+** 许多以前颜色不对的{{tr|Biome}}{{tr|wood}}版本的{{tr|furniture items}}都已经改的更加独特了。
+** {{tr|Spikes}}
+** 不同{{tr|biome}}中的几十种背景碎石堆。
+** 很多树的树冠外观。
+** 在天空可见的{{tr|The Lunar Invasion}}行星。
+** {{tr|Hardmode}}{{tr|Dungeon Chests}}。
+* 更微妙的一点：由于对玩家的{{tr|armor}}动画进行了修订，因此游戏中所有胸部的{{tr|armor}}和{{tr|vanity}}服装都已经对应调整，更改范围从几个像素到一些彻底修订（比如牛仔和{{tr|Pixie}}套装）。
+* 让[[{{tr|Jack 'O Lantern}}]]（{{tr|tile}}）和[[{{tr|Jack 'O Lantern Launcher}}|{{tr|explosive Jack 'O Lanterns}}]]不再使用相同的外观。
+* 调整了几十种{{tr|wall item}}的图标，现在绝大多数{{tr|wall items}}的尺寸都一致。
+* {{tr|Food}}、{{tr|Drinks}}、和{{tr|Potions}}现在都会由玩家手持，并改进了吃/喝的动画。
+* 多种之前不会显示头发的{{tr|hat}}现在会显示头发了！
+* [[{{tr|Treasure Bags}}|{{tr|Boss Treasure Bags}}]]现在看起来更加光彩夺目，有助于人们在战斗后找到它们。
+* [[{{tr|Fallen Star}}|{{tr|Fallen Stars}}]]坠落期间的动画和其物品的美工都进行了大改。
+* 改进了[[{{tr|Eater of Worlds}}]]和[[{{tr|The Destroyer}}|{{tr|Destroyer}}]]视觉上生成进入世界的方式。
+* 现在，许多{{tr|worm enemies}}都在其头部外观的文件名下添加了卷曲姿态的外观。
+* {{tr|Nebula}}的着色器现在稍微不那么粉了，并且其中的{{tr|enemies}}具有脉动效果来让它们在视觉上更加突出。
+* 所有之前没有视觉外观效果的跳跃瓶现在都有了在玩家身上可见的外观选项。
+* {{tr|Lunar Armor sets}}若只穿着一件时不再会失去一些视觉亮度。单件的亮度现在和穿着全套时这一部件的亮度是一样的。
+* [[{{tr|Elf Copter}}]]、[[{{tr|Santa-NK1}}]]、和[[{{tr|Everscream}}]]的{{tr|projectiles}}亮度和可见性有所提升。
+* [[{{tr|Queen Bee}}]]的{{tr|stinger projectile}}外观加大，更加容易看到。
+* 环境夜间光照会因{{tr|moon phase}}而异。
+* 现在夜空中的星星更多了。
+* 重新设计了召唤师的目标锁定图标。
+
+=== 游戏玩法 ===
+* 打到[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]的最后分别会解锁[[{{tr|Halloween}}]]和[[{{tr|Christmas}}]]，持续一个游戏日。
+* 游戏中{{tr|Halloween events}}的开始日期现在是 10 月 10 日。
+* [[{{tr|Tombstones}}|{{tr|Gravestones}}]]现在会显示死亡日期。
+* [[{{tr|Difficulty}}|{{tr|Hardcore}}]]模式中死亡的 {{tr|NPCs}} 现在会掉落{{tr|Gravestones}}。
+* [[{{tr|Desert Fossil}}]]现在可以用任意{{tr|pickaxe power}}的工具或用{{tr|bombs}}来采挖。但是它变得很脆弱，因此采挖时相邻的{{tr|fossil blocks}}可能会破裂，从而导致你能挖到的{{tr|ore}}少掉一些。
+* 基于{{tr|Desert Fossil}}的装备现在弱了一些，因为它可以更快得到。
+* 有大量物品最大堆叠数有所提高。
+* 现在只要还没关掉商店窗口，买下的物品可以全款“退货”。
+* 现在用{{tr|Axe}}敲击树有时可能会掉落东西。
+* 对整个游戏中的卖出价格进行了广泛复查，从而提高了卖出价的一致性。其中特别是包括了应当有卖出价而没有的物品、掉落自同意来源的物品之间卖出价的一致性，等等。
+* 偷了你的钱的[[{{tr|Expert Mode}}]]{{tr|enemies}}现在会保存在这个区域中，当你返回时会重新生成。你可以在地图上看到它们的位置以及它们身上有多少钱。
+* [[{{tr|Titan Glove}}]]及其制品现在会给所有{{tr|Melee Weapons}}（以及{{tr|Whips}}！）加上[[{{tr|autoswing}}]]能力。
+* 现在{{tr|Celestial Pillar fragment}}掉落量在[[{{tr|Expert Mode}}]]中会随着玩家数量而缩放。
+* {{tr|Wood Crates}}、{{tr|Iron Crates}}、和{{tr|Gold Crates}}掉落的{{tr|ore}}品质随{{tr|crate}}的级别而递增。例如，{{tr|Wood Crates}}只会掉落{{tr|Copper}}/{{tr|Tin}}/{{tr|Iron}}/{{tr|Lead}}。
+* 所有{{tr|fishing crates}}都有[[{{tr|Wall of Flesh}}]]前和{{tr|Wall of Flesh}}后两个版本。{{tr|Wall of Flesh}}前的版本不包含[[{{tr|Hardmode ores}}|{{tr|Hardmode Ores}}]]。
+* {{tr|Gold Crates}}现在有机会掉落[[{{tr|Life Crystals}}]]和[[{{tr|Enchanted Swords}}]]。
+* {{tr|Dungeon Crates}}现在可能包含{{tr|Books}}。
+* [[{{tr|Flower Boots}}]]现在包含在[[{{tr|Jungle Crate}}]]的{{tr|loot pool}}中。
+* {{tr|Penguin}}和{{tr|Turtle}}[[{{tr|Pets}}]]现在很罕见地可以从相应的{{tr|Biome crates}}中得到。
+* 你现在可以在{{tr|Dungeon}}中钓到[[{{tr|Alchemy Table}}]]。
+* [[{{tr|Angler}}]]现在有对话会告诉你已经在他那里完成了多少个任务。
+* {{tr|Angler}}的{{tr|Quest rewards}}是现在有更高可能给你{{tr|Info Accessories}}。另外，除非你已经拥有了所有{{tr|Info Accessories}}，否则他给的{{tr|Accessories}}不会和你{{tr|inventory}}中已有的重复。
+* {{tr|Coral Blocks}}已经彻底重绘外观，并且不再作为{{tr|Angler}}的奖励。取而代之的是，它们现在是可制作的。
+* [[{{tr|Pirate Map}}]]和[[{{tr|Snow Globe}}]]{{tr|items}}现在可以堆叠到 20。
+* 全面修改了[[{{tr|Guide}}]]的帮助对话，添加了到{{tr|Lunar Invasion}}为止一路上内容的提示和技巧、引见了从 1.1 开始所有新 {{tr|NPCs}}、替换了过时的信息、并将一些之前有错误的话带回正轨。
+* 游戏现在会检测你是否已经静止/AFK 一段时间了，并会避免在你身上生成{{tr|worms}}。
+* 现在必须先砍掉[[{{tr|Cactus}}|{{tr|Cacti}}]]才能破坏下面的{{tr|sand}}，就像[[{{tr|trees}}]]那样。
+* 除了[[{{tr|Blood Moon}}|{{tr|Blood Moons}}]]或[[{{tr|Solar Eclipse}}|{{tr|Eclipses}}]]期间之外，大多数非{{tr|Dungeon}}/{{tr|Invasion}}{{tr|enemies}}应当不再会开门。
+* [[{{tr|Doors}}]]现在会在你接近时自动打开。可以在设置中开关此选项。
+* 如果正面被其他东西堵住，门就会试着往另外一边打开。
+* 现在门前面的冰锥在开门时会折断。其他地面上的碎石亦是如此。
+* [[{{tr|Geyser|link=y}}|{{tr|Geyser}}]]{{tr|traps}}现在只要踩上去就会引爆。
+* 现在在[[{{tr|Hardmode}}]]之前可以用[[{{tr|Vile Powder}}|{{tr|Vile powder}}]]和[[{{tr|Vicious Powder}}]]来传播相应的{{tr|biome}}。
+* [[{{tr|Meteorite}}]]、[[{{tr|Crimtane Ore}}]]、和[[{{tr|Demonite Ore}}]]现在在{{tr|Metal Detector}}中的优先级要高于[[{{tr|Gold Ore}}]]/[[{{tr|Platinum Ore}}]]。
+* [[{{tr|Pumpkin Moon}}]]现在对于能生成的总 {{tr|boss}} 数量的限制更加保守，以减少严重服务器性能问题。
+* [[{{tr|Moon Lord}}]]现在掉落[[{{tr|Super Healing Potion}}|{{tr|Super Healing Potions}}]]而非[[{{tr|Greater Healing Potion}}]]。
+* 现在抓在{{tr|platform}}平台或{{tr|minecart track}}上时要抓到其他地方更加容易了。
+* 隐身或不可见的玩家现在不再具有鼠标悬停文字或{{tr|health bars}}。
+* 现在一些较常见的{{tr|Pumpkin}}和{{tr|Frost Moon}}{{tr|enemies}}的{{tr|banner}}掉落要求更多击杀数。
+* 如果玩家已经下落足够远到要承受{{tr|fall damage}}时被{{tr|enemy}}击中并被击退，就会重置{{tr|fall damage}}。
+* [[{{tr|Party Girl}}]]不在的时候不再会发生[[{{tr|Party}}|{{tr|Parties}}]]。下次自然开始{{tr|party}}时记得和她聊聊！
+* [[{{tr|Butterflies}}]]和[[{{tr|Fireflies}}]]不再会在下雨或大风时生成。
+* 现在如果{{tr|spawn point}}被{{tr|blocks}}所覆盖，玩家可以在其上或下若干格生成，而不是直接摧毁这些{{tr|blocks}}，以此来提高生成点建筑的灵活度。
+* 受感染的{{tr|Ice}}和{{tr|Hardened Sand Blocks}}现在可以用来制作一些{{tr|biome torches}}。
+* [[{{tr|Acorn}}|{{tr|Acorns}}]]现在会[[{{tr|autoswing}}|自动使用]]。
+* 使用{{tr|Smart Cursor}}来种植[[{{tr|Pumpkin seeds}}]]现在只会替换掉完全长成的[[{{tr|Pumpkin}}]]。
+* {{tr|The Temple Raider}}{{tr|achievement}}现在应当是在打开锁上的神庙大门时解锁，而非破坏[[{{tr|Lihzahrd Bricks}}]]时。
+* 会反射攻击的{{tr|Enemies}}（大[[{{tr|Mimics}}]]、{{tr|Solar}}[[{{tr|Selenian}}]]）现在在反射的时候会发出独特的声音。
+* 降低了[[{{tr|Vortex Beater}}]]、[[{{tr|Sniper Rifle}}]]和[[{{tr|Solar Eruption}}]]的音量。
+* 移除了[[{{tr|Vortex Beater}}]]、[[{{tr|Last Prism}}]]和[[{{tr|Charged Blaster Cannon}}]]的嘶嘶声。
+
+=== {{tr|NPCs}}、{{tr|Critters}}、和{{tr|Enemies}} ===
+* [[{{tr|Antlion Swarmer}}]]和[[{{tr|Antlion Charger}}]]现在会有大小不一的各种版本，并且强度也有所不同。
+* {{tr|statues}}所生成的[[{{tr|Jellyfish}}]]和[[{{tr|Granite Golem}}]]现在掉落物品的频率有所降低，并且降低了其中一些掉落物的卖出价。
+* [[{{tr|Granite Elemental}}]]不再能穿墙。
+* 降低了{{tr|Granite Golem}}死亡音效的音量。
+* [[{{tr|Crimslime}}|{{tr|Crimslimes}}]]现在会造成[[{{tr|Darkness}}]]并会掉落[[{{tr|Blindfold}}]]。
+* [[{{tr|Giant Cursed Skull}}]]现在会造成[[{{tr|Cursed}}|{{tr|Curse}}]]并会掉落[[{{tr|Nazar}}]]。
+* [[{{tr|Jungle}}]]中的[[{{tr|Bee}}|{{tr|Beehive Bees}}]]现在会同时瞄准{{tr|enemies}}和{{tr|player}}。
+* 食人花类的[[{{tr|enemies}}]]不再能通过挖掉它们所附着的{{tr|block}}来将其杀死。
+* [[{{tr|Clown}}]]现在更加危险，并会投掷[[{{tr|Chattering Teeth Bomb}}]]。
+* 很多之前在打败[[{{tr|Wall of Flesh}}]]后就会停止生成的[[{{tr|enemies}}]]现在即使在[[{{tr|Hardmode}}]]中也能以降低过的速率来继续生成。
+* 一些没有{{tr|banner}}的“{{tr|minion}}”{{tr|enemies}}现在受其创造者的{{tr|banner}}效果影响（比如[[{{tr|Mothron}}|{{tr|Baby Mothron}}]]和[[{{tr|Mothron Banner}}]]）。
+* {{tr|Enemies}}被杀死时有更高几率掉落额外金钱。
+* {{tr|Enemies}}在[[{{tr|Blood Moons}}]]期间会掉落额外的金钱。
+* [[{{tr|Eater of Worlds}}]]现在有更多体节，在[[{{tr|Expert Mode}}]]还要再多一些。
+* [[{{tr|King Slime}}]]现在更难用[[{{tr|ropes}}]]来打败了。
+* [[{{tr|Plantera}}]]的{{tr|Tentacles}}现在在{{tr|Expert Multiplayer}}中有生命值缩放了。
+* [[{{tr|Brain of Cthulhu}}]]的[[{{tr|Creeper}}|{{tr|Creepers}}]]现在在{{tr|Expert Multiplayer}}中有生命值缩放了。
+* {{tr|Expert}}{{tr|Brain of Cthulhu}}和其{{tr|Creepers}}现在随着服务器上存在的玩家数量增加而提高{{tr|knockback}}抗性，最终会变得完全免疫{{tr|knockback}}。
+* {{tr|Expert}}[[{{tr|Skeletron Prime}}]]现在旋转时移动得更快。
+* [[{{tr|Old One's Army}}]]现在在{{tr|multiplayer}}中有一些{{tr|Expert}}缩放。
+* [[{{tr|Martian Saucer}}]]在{{tr|normal mode}}中不再有第二阶段，其{{tr|turrets}}全部被摧毁后就直接死亡了。
+* 现在每次{{tr|invasion}}中得{{tr|Martian Saucers}}少了一些，并且连锁生成的可能性也降低了。
+* {{tr|Martian Saucers}}现在发射的死亡光束能穿透{{tr|blocks}}。但是，它们速度变慢了并且其光束也更容易躲避。
+* 几个[[{{tr|Martian Invasion}}]]掉落物现在会从常规火星怪身上掉落，降低了{{tr|Martian Saucer}}掉落池的随机性。
+* 在{{tr|expert mode}}中[[{{tr|Golem}}]]的攻击会随着玩家数量增加而变得更加积极，并且要战胜它的难度也略高了一些。
+* {{tr|Golem}}现在在离开{{tr|jungle}}或出现在{{tr|surface}}上时会变得暴怒。
+* [[{{tr|Moon Lord}}]]的{{tr|Phantasmal Death Ray}}现在会穿透它与玩家之间的{{tr|blocks}}。
+* [[{{tr|Frog}}]]现在会游泳了。
+* [[{{tr|Explosive Bunny}}|{{tr|Explosive Bunnies}}]]现在可以释放为{{tr|critters}}并且会爆炸。
+* [[{{tr|Enchanted Nightcrawler}}]]现在会在{{tr|meteor showers}}期间自然生成。
+* [[{{tr|Gold Critters}}]]现在更加罕见。
+
+=== 装备、{{tr|Armor}}、和{{tr|Weapons}} ===
+* {{tr|The Ruler}}的功能效果现在始终可以由玩家打开或关闭。{{tr|The Ruler item}}现在可以作为武器使用，并且依然用在{{tr|crafting recipes}}中。
+* {{tr|The Breathing Reed}}和{{tr|Umbrella}}现在可以用作武器，并且依然可以用于其原始用途。
+* {{tr|The Throwing}}子类已经于{{tr|Ranged}}类型合并。之前的{{tr|Thrown weapons}}现在造成{{tr|Ranged damage}}。
+* [[{{tr|Shortswords}}]]现在可以用在所有方向上，类似于{{tr|spear}}，不再只是向前方。
+* [[{{tr|Titanium armor}}|{{tr|Titanium Armor}}]]现在有了新{{tr|set bonus}}，{{tr|Shadow Dodge}}被重新定位成{{tr|Holy Protection}}，作为[[{{tr|Hallowed armor}}|{{tr|Hallowed Armor}}]]的新{{tr|Set Bonus}}。
+* [[{{tr|Medusa Head}}]]和[[{{tr|Charged Blaster Cannon}}]]进行了深度重设计，在战斗中应当会更有效。
+* 其他一些武器进行了适度重设计来提高其有效性，包括但不限于：[[{{tr|Magic Missile}}]]、[[{{tr|Flamelash}}]]、[[{{tr|Rainbow Rod}}]]、[[{{tr|Poison Staff}}|{{tr|Poison}}]]和[[{{tr|Venom Staff}}]]、[[{{tr|Staff of Earth}}]]、和[[{{tr|Heat Ray}}]]。
+* 大量其他{{tr|weapon}}、{{tr|armor}}、{{tr|tool}}和{{tr|accessory}}调整，其中一些很小，另一些较小。更多信息，请参考平衡性更改章节。
+* {{tr|Vanity Accessory slots}}现在只能容纳具有视觉外观效果的{{tr|accessories}}。
+* [[{{tr|Gravity Globe}}]]现在可以在半空中触发。
+* [[{{tr|Tiki Armor}}]]、[[{{tr|Pygmy Necklace}}]]、和[[{{tr|Hercules Beetle}}]]现在只要打败了{{tr|Plantera}}即可购买，无需携带{{tr|Pygmy Staff}}。
+* {{tr|Blessed Apple}}现在只掉落自{{tr|Unicorns}}，但掉落率要高于之前。
+* [[{{tr|Cenx's set}}|{{tr|Cenx's Tiara}}]]现在在她的两个开发者套装捆绑掉落包中都有。
+* [[{{tr|0x33's Aviators}}]]现在掉落自{{tr|Master mode}}{{tr|Eye of Cthulhu}}。
+* [[{{tr|Arkhalis}}]]现在掉落自{{tr|Arkhalis}}开发者套装捆绑掉落包内。
+
+=== {{tr|Blocks}}和{{tr|Furniture}} ===
+* 升级了[[{{tr|Mannequin}}|{{tr|Mannequins}}]]，它们现在有了可交互的{{tr|inventory}}，允许放入诸如{{tr|wing}}这样的可见{{tr|accessories}}，并且还提供了对{{tr|dye}}的支持。现在还能对它们上漆，并且只要它们的{{tr|inventory}}非空就不会被摧毁。
+* {{tr|Weapon Racks}}现在可以上漆。也可以将{{tr|fish}}放在{{tr|Weapon Racks}}上进行展示。
+* 玩家现在可以坐在{{tr|chairs}}、{{tr|sofas}}、{{tr|thrones}}、{{tr|benches}}上，还可以躺倒在床上睡觉。躺床上睡觉会加快时间流逝速度。如果是在{{tr|multiplayer}}中，那么时间只在所有玩家都睡觉时才会加快流逝。
+* [[{{tr|Goblin Statues}}]]、[[{{tr|Eyeball Statues}}]]、[[{{tr|Hornet Statues}}]]、[[{{tr|Imp Statues}}]]、和[[{{tr|Corrupt Statues}}]]现在接上电路后会生成{{tr|enemies}}。
+* 现在可以制作{{tr|Ice Chests}}，并且它和{{tr|Frozen Chest}}的名称进行了互换来匹配家具的一致性。
+* {{tr|Living Wood Chests}}、{{tr|Skyware Chests}}、和{{tr|Lihzahrd Chests}}现在可制作。
+* {{tr|Temple traps}}现在要求更高的{{tr|pickaxe power}}才能采挖，以防止过早得到它们。
+* 更改了以下套装中的{{tr|light sources}}的光线颜色，这样每个套装都使用一致的照明：{{tr|Marble}}、{{tr|Pearlwood}}、红木、{{tr|Spooky}}、{{tr|Steampunk}}、{{tr|Palm Wood}}、{{tr|Ebonwood}}、{{tr|Shadewood}}、{{tr|Glass}}、{{tr|Living Wood}}、和{{tr|Frozen}}。{{tr|Ebonwood}}套装中的{{tr|Candelabra}}重绘了外观以在视觉上匹配更新后的颜色。
+* {{tr|Bewitching Table}}现在会生成光线，因为它一直都点着蜡烛。
+* [[{{tr|Water Candle}}]]和[[{{tr|Peace Candle}}]]现在可以通过电路来点亮或熄灭，其{{tr|buff}}也会跟着切换开关。
+* 现在随着时间推移海滩上会生成[[{{tr|Shell Pile}}|{{tr|Shells}}]]和[[{{tr|Starfish}}]]。
+* [[{{tr|Cloud}}|{{tr|Cloud Blocks}}]]现在能防止{{tr|fall damage}}。
+* {{tr|Campfires}}在熄灭后也不再提供{{tr|buff}}。
+* 用{{tr|Smart Cursor}}放置{{tr|Minecart tracks}}会比生成比之前更智能更干净的{{tr|tracks}}。
+* {{tr|The Stone Slab}}的融合方式不对，这导致它无法漂亮地与大多数其它{{tr|block}}合用，此问题已得以修正。但是，我们听取了你们的担忧，添加了一种{{tr|Stone Accent Slab}}块，其功能和旧的{{tr|Stone Slab}}相同。
+* {{tr|Dynasty Wood}}现在和其他{{tr|tile}}能更好地融合。
+* 诸如{{tr|Waterfall blocks}}、{{tr|Confetti blocks}}等特殊{{tr|glass blocks}}现在可以更好地与其他{{tr|tiles}}融合。
+* 被感染的{{tr|Hardened Sands}}现在可以和{{tr|regular Hardened Sand}}一样制作成{{tr|glass}}。
+* {{tr|Statues}}现在可以面朝两个方向了。
+* {{tr|Bone Blocks}}现在挖掉后会变回{{tr|Bones}}，可以制作成其他东西或用[[{{tr|Bone Wand}}]]再放置成{{tr|Bone Blocks}}。
+* {{tr|Staff of Regrowth}}不再会在{{tr|stone}}上放置{{tr|moss}}，因为现在可以通过其他手段得到{{tr|moss}}。
+* {{tr|Ammo Box}}现在使用时会有一个{{tr|shotgun}}拉枪栓的音效。
+
+== 平衡性调整 ==
+=== {{tr|Bosses}} ===
+; [[{{tr|Moon Lord}}]]
+* {{tr|Moon Lord}}的攻击模式稍作调整以使其更加一致，因为随着时间推移，不同眼睛会逐渐变得不同步，从而导致更加随机的战斗（并非有意如此）。此外，前额的眼睛睁开的时间略有增加。
+* {{tr|Moon Lord}}的{{tr|Phantasmal Death Ray}}现在会穿透它和玩家之间的{{tr|blocks}}。
+* {{tr|Moon Lord}}的战斗期间不再会生成{{tr|Enemies}}，除非是在多人模式中在他半径之外生成。
+* 现在即使你在{{tr|Moon Lord}}的死亡动画期间死掉，他也会掉落下战利品。
+
+; [[{{tr|Golem}}]]
+* 在{{tr|expert mode}}中{{tr|Golem}}的攻击会随着玩家数量增加而变得更加积极，并且要战胜它的难度也略高了一些。
+* {{tr|Golem}}现在在离开{{tr|jungle}}或出现在{{tr|surface}}上时会变得暴怒。
+
+; [[{{tr|Plantera}}]]
+* {{tr|Plantera Tentacles}}现在在{{tr|Expert Multiplayer}}中有生命值缩放了。
+
+; [[{{tr|Skeletron Prime}}]]
+* {{tr|Expert Skeletron Prime}}现在在旋转时移动速度更快。
+
+; [[{{tr|Brain of Cthulhu}}]]
+* {{tr|Expert}}{{tr|Brain of Cthulhu}}和其{{tr|Creepers}}现在随着服务器上存在的玩家数量增加而提高{{tr|knockback}}抗性，最终会变得完全免疫{{tr|knockback}}。
+* {{tr|Brain of Cthulhu}}的{{tr|Creepers}}现在在{{tr|Expert Multiplayer}}中有生命值缩放了。
+
+; [[{{tr|Eater of Worlds}}]]
+* {{tr|Eater of Worlds}}现在有更多体节，在{{tr|Expert Mode}}还要再多一些。
+
+; [[{{tr|King Slime}}]]
+* {{tr|King Slime}}现在更难用[[{{tr|ropes}}]]来打败了。
+
+; [[{{tr|Martian Saucer}}]]
+* 低于{{tr|expert}}难度的{{tr|Martian Saucer}}不再有第二阶段，其{{tr|turrets}}全部被摧毁后就直接死亡了。
+* 现在每次{{tr|invasion}}中得{{tr|Martian Saucers}}少了一些，并且连锁生成的可能性也降低了。
+* {{tr|Martian Saucers}}现在发射的死亡光束能穿透{{tr|blocks}}。但是，它们速度变慢了并且其光束也更容易躲避。
+
+=== {{tr|Enemies}} ===
+; [[{{tr|Crimslime}}]]：
+* 现在会造成{{tr|darkness debuff}}并掉落{{tr|Blindfolds}}
+
+; [[{{tr|Crimson Axe}}]]
+* 现在会造成{{tr|Cursed debuff}}
+
+; [[{{tr|Giant Cursed Skull}}]]
+* 现在会通过接触和{{tr|projectile}}造成{{tr|Cursed debuff}}，并会掉落{{tr|Nazars}}
+
+; [[{{tr|Tomb Crawler}}]]
+* 头部的{{tr|Damage}}由 16 降低至 14
+* 身体和尾巴的{{tr|Damage}}由 10 降低至 7
+* 生命值由 50 降低至 40
+* 尺寸缩小
+* 正常情况下，同一时刻应当只会有 1 只{{tr|Tomb Crawler}}生成
+
+; [[{{tr|Sand Slime}}]]
+* {{tr|Damage}}由 10 提升至 15
+* 生命值由 40 提升至 50
+* {{tr|Knockback}}乘数由 0.8 降低至 0.7
+* 现在只会在{{tr|Underground Desert}}中作为不常见{{tr|enemies}}生成
+
+; [[{{tr|Flying Fish}}]]
+* 金钱掉落价值由 90 {{tr|Copper coin}}提升至 3 {{tr|Silver coin}}
+* {{tr|Flying Fish}}现在在下雨天稍微少见了一点
+
+; [[{{tr|Clown}}]]
+* {{tr|Damage}}由 50 提升至 60
+* {{tr|Defense}}由 20 提升至 25
+* 生命值由 400 提升至 800
+* {{tr|Knockback}}乘数由 0.4 降低至 0.2
+* 它们现在的攻击速度更快
+* {{tr|Happy Bombs}}现在会在靠近玩家时爆炸
+* 它们现在也会投掷{{tr|Chattering Teeth Bombs}}
+
+; [[{{tr|Etherian Lightning Bug}}]]
+* {{tr|Projectile damage}}由 20 提升至 100（注：这实际上是个偶然的占位用数值。它对{{tr|Eternia Crystal}}造成 1 伤害，并且可能对大多数玩家造成的也是同样的伤害）
+
+; [[{{tr|Hoplite}}]]
+* {{tr|Javelin Damage}}由 48 降低至 36
+
+; [[{{tr|Angry Tumbler}}]]
+* 防御由 10 降低至 6
+* 最高速度从 4 降低到 3
+* 金钱掉落价值由 1.3 {{tr|Silver coin}}降低至 1 {{tr|Silver coin}}
+
+; 投掷{{tr|Bone}}的[[{{tr|Skeletons}}]]
+
+* {{tr|Projectile Damage}}由 80 降低至 60（仅限{{tr|Expert}}）
+
+; 其他
+* {{tr|Purple Slimes}}、{{tr|Red Slimes}}、{{tr|Yellow Slimes}}、和{{tr|Black Slimes}}现在每个都会额外多掉 1-3个{{tr|gel}}
+* 食人花类的{{tr|enemies}}不再能通过挖掉它们所附着的{{tr|block}}来将其杀死
+* {{tr|Umbrella Slime}}的金钱掉落价值由 25 {{tr|Copper coin}}提升至 1 {{tr|Silver coin}}
+* {{tr|Granite Elemental}}不再能穿墙。
+* {{tr|Jungle}}中的{{tr|Beehive Bees}}现在会同时瞄准{{tr|enemies}}和{{tr|player}}（不包括{{tr|Queen Bee}}）
+
+=== {{tr|Armor}} ===
+; [[{{tr|Ninja armor}}]]
+* 现在不提供{{tr|throwing}}加成，改为每个部件都有全局 3% {{tr|damage}}和 3% {{tr|critical chance}}加成
+* {{tr|New Set bonus}}：20% {{tr|movement speed}}
+
+; [[{{tr|Gladiator armor}}]]
+* {{tr|Helmet}}、{{tr|Breastplate}}、和{{tr|Leggings}}的{{tr|defense}}各提升 1
+
+; [[{{tr|Fossil armor}}]]
+* {{tr|Fossil Helmet}}的{{tr|defense}}由 3 降低至 2
+* {{tr|Fossil Plate}}的{{tr|defense}}由 6 降低至 4
+* {{tr|Fossil Greaves}}的{{tr|defense}}由 4 降低至 2
+* 套装中每个组件现在都有 3% {{tr|Ranged critical chance}}
+* {{tr|New Set bonus}}：20% 几率不消耗{{tr|ammo}}
+* 现在因为{{tr|Desert Fossil}}采挖的更改而更早就可用
+
+; [[{{tr|Green Cap}}]]
+* {{tr|Defense}}由 0 提升至 2
+
+; [[{{tr|Night Vision Helmet}}]]
+* {{tr|Defense}}由 2 提升至 4
+
+; [[{{tr|Cactus armor}}]]
+* {{tr|Cactus Breastplate}}的{{tr|defense}}由 2 降低至 1
+
+; [[{{tr|Forbidden armor}}]]
+* 作为套装整体来说此套装维持不变，但来自{{tr|Forbidden Robes}}和{{tr|Forbidden Treads}}的收益已被平均分配，现在各给予 40 {{tr|mana}}和 +1 {{tr|Minion}}数。
+
+; [[{{tr|Titanium armor}}]]
+* {{tr|New Set Bonus}}：{{tr|Titanium Barrier}}
+* 攻击{{tr|enemies}}时，{{tr|titanium shards}}会累积并在你周围旋转
+* 这些{{tr|shards}}会对近距离的{{tr|enemies}}造成伤害并造成{{tr|knockback}}。
+* 防御性地使用它们来维持{{tr|enemies}}远离，或者大胆地使用它们来制造额外伤害。
+
+; [[{{tr|Hallowed armor}}]]
+* {{tr|New Set Bonus}}：{{tr|Holy Protection}}
+* 以{{tr|Shadow Dodge}}为大多数用户所熟知，{{tr|Hallowed armor set}}之前基于属性的{{tr|set bonus}}已经替换为对伤害的定期免疫。
+* 在攻击{{tr|enemy}}时你会得到{{tr|buff}}。如果在{{tr|buff}}期间有{{tr|enemy}}击中你，你将得到很短暂的攻击免疫。
+* 在此免疫时间段结束后，必须经过至少 30 秒才能再次激活此免疫{{tr|buff}}。
+
+; [[{{tr|Squire armor}}]]
+* {{tr|Squire's Great Helm}}和{{tr|Squire's Greaves}}的防御各提高 1
+* {{tr|Squire's Great Helm}}的治疗效果降低 50%
+
+; [[{{tr|Chlorophyte armor}}]]
+* {{tr|Chlorophyte Mask}}的防御由 25 降低至 20
+* 现在当你穿着{{tr|the Chlorophyte Mask}}时，{{tr|Chlorophyte}}套的{{tr|set bonus}}会额外给出 5% 伤害减免
+
+; [[{{tr|Turtle armor}}]]
+* {{tr|Set bonus}}现在有 15% {{tr|Damage Reduction}}
+* {{tr|Set bonus}}的{{tr|Thorns damage}}现在是原来的两倍
+
+; [[{{tr|Spectre armor}}]]（用{{tr|Mask}}）：
+* {{tr|Set bonus}}的{{tr|projectiles}}现在会造成 100% 原始伤害而非 50%
+* 决定有多少新{{tr|projectiles}}会随时间生成的“恢复率”由 150 提升至 250
+
+; [[{{tr|Spooky armor}}]]
+* 整体防御由 27 提升至 30，每件都提升了 1 防御
+* {{tr|Spooky Breastplate}}现在给予 +2 {{tr|Minion}}数而非 +1
+* {{tr|Spooky Leggings}}现在提高 20% {{tr|movement speed}}
+
+; [[{{tr|Valhalla Knight armor}}]]
+* 套装的总防御力提高 4，但也重新分配过
+* {{tr|Valhalla Knight's Helm}}的{{tr|defense}}由 14 提升至 20
+* {{tr|Valhalla Knight's Breastplate}}的{{tr|defense}}由 30 降低至 24
+* {{tr|Valhalla Knight's Greaves}}的{{tr|defense}}由 20 提升至 24
+* {{tr|Valhalla Knight's Breastplate}}的治疗效果降低 50%
+
+; [[{{tr|Nebula armor}}]]
+* 治疗强化效果现在是 3 生命值/秒而非 5，而现在最高可能值则是 9 生命值/秒
+
+; [[{{tr|Solar Flare armor}}]]
+* {{tr|Solar Helmet}}的{{tr|critical chance}}{{tr|bonus}}由 17% 提升至 26%
+* {{tr|Solar Breastplate}}的{{tr|melee damage}}{{tr|bonus}}由 22% 提升至 29%
+* 套装的每个组件现在都有 1 生命值/秒的生命再生
+* 现在不再是充能后有 30% {{tr|damage reduction}}，改为随时都有 12% {{tr|damage reduction}}，而在充能激活时额外再有 20% {{tr|damage reduction}}。在实践中，由于这两个值是相乘的，因此大致上相当于之前的 30%。
+* 护盾充能之间的间隔缩短了 1 秒
+
+; [[{{tr|Stardust armor}}]]
+* {{tr|Stardust Guardian}}现在具有更强悍和更激进的攻击，并且无须指示就会自动攻击。与某个动漫的所有相似之处纯属巧合。
+
+=== {{tr|Melee Weapons}} ===
+; [[{{tr|Shortswords}}]]
+* {{tr|Shortswords}}现在可以用在所有方向上，不仅限于向前
+* {{tr|Gold Shortsword}}的{{tr|damage}}由 11 提升至 12
+
+; [[{{tr|Flails}}]]
+* {{tr|Flails}}现在具有全新的行为以及几种不同的功能模式。
+* 如果你点击并按住鼠标按钮，它们会快速挥动，产生较低的{{tr|knockback}}并在周围小范围圈子内快速击打。
+* 如果你点击并正常使用它们，则它们就会像过去使用时那样向前飞射出，但移动速度会比过去快得多。在这种模式下它们所造成的伤害会翻倍。
+* 最后，如果在它们向前射出飞到半空中时单击鼠标，它们会突然掉下并停留在地面上。这可以像{{tr|Spiky Ball}}一样作为静止的伤害性障碍物用在向你走来的{{tr|enemies}}身上。
+* 对一些{{tr|flails}}进行了属性调整以适应此新设置，例如让射程稍微长一些或者短一些，但整体上说，它们都应当比之前表现得更好。
+
+; [[{{tr|Cactus Sword}}]]
+* 伤害由 9 降低至 8
+* {{tr|Use time}}由 25 提升至 32
+* {{tr|Knockback}}由 5 降低至 4.5
+
+; [[{{tr|Trident}}]]
+* {{tr|Damage}}由 11 提升至 14
+* {{tr|Knockback}}由 5 提升至 6
+* 手持时可在水中不受限制地移动
+
+; [[{{tr|Chain Knife}}]]
+* {{tr|Damage}}由 11 提升至 12
+
+; [[{{tr|Enchanted Sword}}]]
+* {{tr|Damage}}由 24 降低至 23
+* {{tr|Use time}}由 18 提升至 21
+* {{tr|Knockback}}由 5.25 降低至 4.25
+
+; [[{{tr|Falcon Blade}}]]
+* {{tr|Damage}}由 30 降低至 25
+* {{tr|Use time}}由 15 提升至 20
+
+; [[{{tr|Light's Bane}}]]
+* 大小缩放比例由 1.1 提升至 1.4（让它变大了）
+
+; [[{{tr|Amazon}}]]
+* {{tr|Damage}}由 20 降低至 18
+* {{tr|Crafting}}：{{tr|Stingers}}需求由 2 提升至 12
+* {{tr|Crafting}}：{{tr|Jungle Spores}}需求由 3 提升至 9
+
+; [[{{tr|Bee Keeper}}]]
+* {{tr|Damage}}由 26 降低至 24
+* {{tr|Use time}}由 20 提升至 22
+* {{tr|Knockback}}由 5.3 降低至 5
+* 不再{{tr|autoswing}}
+
+; [[{{tr|Muramasa}}]]
+* {{tr|Damage}}由 19 提升至 21
+
+; [[{{tr|Fiery Greatsword}}]]
+* {{tr|Use time}}由 34 降低至 30
+
+; [[{{tr|Breaker Blade}}]]
+* {{tr|Damage}}由 39 提升至 43
+* {{tr|Use time}}由 30 降低至 29
+* 得到了一个特殊机制，对生命值超过 90% 的{{tr|enemies}}会造成双倍伤害
+
+; [[{{tr|Cobalt Sword}}]]
+* 并未更改，但特意在这里列出以确保没有疏忽。{{tr|Cobalt Sword}}之前的{{tr|damage}}比它应当具有的伤害高得多，但我们现在用它作为新的基准来将其他{{tr|swords}}与其进行比较
+
+; [[{{tr|Palladium Sword}}]]
+* {{tr|Damage}}由 41 提升至 45
+
+; [[{{tr|Mythril Sword}}]]
+* {{tr|Damage}}由 44 提升至 49
+
+; [[{{tr|Orichalcum Sword}}]]
+* {{tr|Damage}}由 47 提升至 50
+* {{tr|Use time}}由 26 降低至 25
+
+; [[{{tr|Adamantite Sword}}]]
+* {{tr|Damage}}由 50 提升至 56
+* {{tr|Use time}}由 27 降低至 26
+
+; [[{{tr|Titanium Sword}}]]
+* {{tr|Damage}}由 52 提升至 58
+* {{tr|Use time}}由 26 降低至 25
+
+; [[{{tr|Phasesabers}}]]（全部）：
+* {{tr|Damage}}由 41 提升至 42
+* {{tr|Use time}}由 25 降低至 20
+
+; [[{{tr|Beam Sword}}]]
+* {{tr|Use time}}由 15 提升至 20（不影响{{tr|Projectile}}冷却时间）
+
+; [[{{tr|Fetid Baghnakhs}}]]
+* {{tr|Damage}}由 70 降低至 60
+* {{tr|Use time}}由 7 提升至 8
+* 只能从提升的{{tr|melee speed}}属性得到 25% 收益
+
+; [[{{tr|Anchor}}]]
+* {{tr|Damage}}由 30 提升至 55
+* {{tr|Use time}}由 30 降低至 20
+
+; [[{{tr|Format:C}}]]
+* {{tr|Damage}}由 29 提升至 35
+
+; [[{{tr|Gradient}}]]
+* {{tr|Damage}}由 34 提升至 44
+
+; [[{{tr|Chik}}]]
+* {{tr|Damage}}由 39 降低至 38
+
+; [[{{tr|Amarok}}]]
+* {{tr|Damage}}由 43 提升至 47
+
+; [[{{tr|Hel-Fire}}]]
+* {{tr|Damage}}由 41 提升至 45
+
+; [[{{tr|Excalibur}}]]
+* {{tr|Damage}}由 57 提升至 66
+* {{tr|Use time}}由 25 降低至 20
+
+; [[{{tr|Brand of the Inferno}}]]
+* {{tr|Damage}}由 44 提升至 85
+
+; [[{{tr|Sleepy Octopod}}]]
+*粉碎攻击造成的伤害从 2 倍提高至 3 倍
+
+; [[{{tr|Code 2}}]]
+* {{tr|Damage}}由 47 提升至 54
+
+; [[{{tr|Chlorophyte Claymore}}]]
+* {{tr|Damage}}由 75 提升至 80
+
+; [[{{tr|True Night's Edge}}]]
+* {{tr|Damage}}由 90 提升至 105
+
+; [[{{tr|Psycho Knife}}]]
+* 注意：功能大改让此武器变得类似于升级的{{tr|Fetid Baghnakhs}}。它保持了其隐身奖励。
+* {{tr|Damage}}由 70 提升至 85
+* {{tr|Use time}}由 20 降低至 8
+* 只能从提升的{{tr|melee speed}}属性得到 33% 收益
+
+; [[{{tr|Keybrand}}]]
+* {{tr|Damage}}由 70 提升至 85
+* 现在根据{{tr|enemy}}的受伤害程度最多能多造成 150% 伤害
+
+; [[{{tr|Kraken}}]]
+* {{tr|Damage}}由 90 提升至 95
+* 现在有 10% {{tr|critical chance}}
+
+; [[{{tr|Scourge of the Corruptor}}]]
+* 每次发射的平均生成{{tr|projectiles}}数由 2.3 提升至 2.66
+
+; [[{{tr|Golem Fist}}]]
+* {{tr|Damage}}由 76 提升至 90
+
+; [[{{tr|Christmas Tree Sword}}]]
+* {{tr|Projectile}}已经完全大改。它不再是发射一颗{{tr|ornament}}，而是发射几颗球形{{tr|ornaments}}和一颗星星{{tr|ornament}}，它们会在原地悬浮停留几秒然后掉落到地面上。
+* 现在会{{tr|autoswing}}
+
+; [[{{tr|Daybreak}}]]
+* 技术上说这是个 {{tr|bug}}，修正了如果你的攻击秒杀了目标则{{tr|Daybreak}}不会散播其{{tr|debuff}}的问题。现在即使你秒杀了目标，它也会将{{tr|debuff}}散播到附近的{{tr|enemies}}身上
+
+=== {{tr|Ranged Weapons}} ===
+; [[{{tr|Bone Javelin}}]]
+* 由于其级别属于较早期，{{tr|Damage}}由 29 降低至 20
+
+; [[{{tr|The Bee's Knees}}]]
+* {{tr|Damage}}由 26 降低至 23
+* {{tr|Use time}}由 23 提升至 24
+
+; [[{{tr|Handgun}}]]
+* {{tr|Use time}}由 12 降低至 10
+
+; [[{{tr|Hellwing Bow}}]]
+* {{tr|Damage}}由 20 提升至 22
+* {{tr|Use time}}由 14 降低至 13
+* {{tr|Knockback}}由 5 提升至 5.5
+
+; [[{{tr|Clockwork Assault Rifle}}]]
+* 伤害由 19 降低至 17
+
+; [[{{tr|Cobalt Repeater}}]]/[[{{tr|Palladium Repeater}}]]/[[{{tr|Mythril Repeater}}]]/[[{{tr|Orichalcum Repeater}}]]/[[{{tr|Adamantite Repeater}}]]/[[{{tr|Titanium Repeater}}]]
+* {{tr|Use time}}降低了 1
+
+; [[{{tr|Marrow}}]]
+* {{tr|Damage}}由 40 提升至 50
+
+; [[{{tr|Ice Bow}}]]
+* {{tr|Damage}}由 46 降低至 39
+* {{tr|Use time}}由 21 降低至 16
+* 现在会{{tr|auto-fire}}
+* 注：尽管伤害降低了，但整体上说这把弓变强了，虽然它相对于{{tr|Marrow}}这样的弓而言更受防御力影响。更改主要是为了在不同的弓之间引入变化。
+
+; [[{{tr|Daedalus Stormbow}}]]
+* {{tr|Damage}}由 43 降低至 38
+* 使用{{tr|Holy arrows}}、{{tr|Unholy arrows}}、{{tr|Hellfire arrows}}、或{{tr|Jester's arrows}}时，平均发射 2.66 支箭，而非正常的平均 3.33 支{{tr|arrows}}
+
+; [[{{tr|Dart Pistol}}]]
+* {{tr|Damage}}由 28 提升至 33
+
+; [[{{tr|Dart Rifle}}]]
+* {{tr|Damage}}由 52 提升至 62
+
+; [[{{tr|Toxikarp}}]]
+* {{tr|Use time}}由 14 降低至 10
+
+; [[{{tr|Hallowed Repeater}}]]
+* {{tr|Damage}}由 43 提升至 53
+* {{tr|Use time}}由 19 降低至 16
+
+; [[{{tr|Flamethrower}}]]
+* {{tr|Damage}}由 27 提升至 35
+* {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 15% {{tr|damage}}惩罚
+
+; [[{{tr|Phantom Phoenix}}]]
+* {{tr|Damage}}由 24x2 提升至 32x2
+* {{tr|Use time}}由 20 降低至 18
+* 现在每 3 次射击就会发射凤凰{{tr|projectile}}而非 4 次。
+
+; [[{{tr|Chlorophyte Shotbow}}]]
+* 每次射击的平均箭支数由 2.7 降低至 2.33
+
+; [[{{tr|Venus Magnum}}]]
+* {{tr|Damage}}由 38 提升至 50
+
+; [[{{tr|Grenade Launcher}}]]
+* {{tr|Use time}}由 30 降低至 20
+
+; [[{{tr|Rocket Launcher}}]]
+* {{tr|Damage}}由 50 降低至 45
+* 如果直接命中单个目标则造成 2 倍伤害
+
+; [[{{tr|Proximity Mine Launcher}}]]
+* 地雷静止时造成 3 倍伤害，若还在移动则只会造成正常伤害
+* {{tr|Use time}}由 40 提升至 50
+* 缩减了你能同时拥有的活动地雷数量
+
+; [[{{tr|Piranha Gun}}]]
+* 现在会射出 3 条{{tr|Piranhas}}，可以攻击相同或不同的目标
+* 单条{{tr|Piranhas}}的撕咬频率略有降低，但三条{{tr|Piranhas}}能造成的总{{tr|DPS}}现在要高得多。
+
+; [[{{tr|Pulse Bow}}]]
+* {{tr|Damage}}由 65 提升至 85
+* {{tr|Use time}}由 22 降低至 20
+* 每个命中目标的{{tr|Damage reduction}}由 10% 提升至 20%
+
+; [[{{tr|Stynger}}]]
+* 如果直接命中单个目标则造成 2 倍伤害（仅适用于一开始的{{tr|bolt}}，碎片不算）
+
+; [[{{tr|Celebration}}]]
+* {{tr|Damage}}由 65 降低至 25（注：{{tr|Rocket damage}}非常高并且会加上来。即使是{{tr|Rocket I}}也能造成 40 伤害，所以实际上即使用最差的{{tr|rocket}}伤害降低也是从 105 到 65）
+* 移除了 10% {{tr|Critical chance}}的加成
+* 现在由{{tr|Party Girl}}在{{tr|Golem}}后出售
+
+; [[{{tr|Elf Melter}}]]
+* {{tr|Damage}}由 40 提升至 60
+* {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 15% {{tr|damage}}惩罚
+
+; [[{{tr|S.D.M.G.}}]]
+* {{tr|Damage}}由 77 提升至 85
+* 不消耗{{tr|ammo}}的几率由 50% 提升至 66%
+
+=== {{tr|Magic Weapons}} ===
+; [[{{tr|Wand of Sparking}}]]
+* {{tr|damage}}由 8 提升至 14
+* {{tr|Use time}}由 28 降低至 26
+* 造成{{tr|On Fire!}}{{tr|debuff}}的几率由 33% 提升至 50%
+* 现在有 10% {{tr|critical chance}}
+
+; [[{{tr|Magic Missile}}]]
+* {{tr|Projectile}}速度更快并且在停止控制后会自动制导
+* 撞击时会发生拥有中等范围伤害的爆炸
+* {{tr|Use time}}由 17 提升至 18
+* {{tr|Mana Cost}}由 10 提升至 12
+
+; [[{{tr|Flamelash}}]]
+* {{tr|Projectile}}速度更快并且在停止控制后会自动制导
+* 现在会穿透并且可以命中第二次。第二次命中后会发生拥有中等范围伤害的爆炸
+* {{tr|Damage}}由 40 降低至 36
+* {{tr|Use time}}由 20 提升至 30
+* {{tr|Mana Cost}}由 12 提升至 18
+
+; [[{{tr|Frost Staff}}]]
+* {{tr|Use Time}}由 20 降低至 16
+* {{tr|Mana cost}}由 14 降低至 12
+
+; [[{{tr|Cursed Flames}}]]
+* {{tr|Damage}}由 36 提升至 50
+* {{tr|Use time}}由 20 降低至 15
+* {{tr|Mana cost}}由 12 降低至 9
+* 相关：参见{{tr|Cursed Inferno buff}}
+
+; [[{{tr|Flower of Frost}}]]
+* {{tr|Damage}}由 55 提升至 60
+* {{tr|Use time}}由 20 降低至 12
+* {{tr|Mana cost}}由 17 降低至 11
+* {{tr|Frostburn}}几率由 50% 提升至 100%
+
+; [[{{tr|Crystal Storm}}]]
+* {{tr|Damage}}由 25 提升至 32
+* {{tr|Mana cost}}由 4 提升至 5
+
+; [[{{tr|Poison Staff}}]]
+* 注意：之前，因为穿透免疫帧从而每次射击所发出的所有{{tr|projectile}}对于每一个目标都只会有其中一发命中，从而损失了大量伤害。我们已经实现了一个允许''全部''{{tr|projectiles}}命中目标的系统，大幅改善了其类{{tr|shotgun}}功能。但是，为了抵消平衡这个收益，必须将它的属性降低一些。但总体而言它现在应当是更强了。
+* {{tr|Damage}}由 48 降低至 43
+* 每发{{tr|projectile}}所能击中的{{tr|enemies}}由 4 个降低到 3 个
+* {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 25% {{tr|damage}}惩罚
+* {{tr|Projectiles}}的射程现在是有限的了
+
+; [[{{tr|Crystal Vile Shard}}]]
+* {{tr|Damage}}由 19 提升至 25
+* {{tr|projectiles}}停留（以及造成伤害）的持续时间提升了约 70%
+
+; [[{{tr|Clinger Staff}}]]
+* {{tr|Clinger flames}}的高度增加了 50%
+* 不再有命中限制
+* 现在能造成{{tr|Cursed Inferno debuff}}（相关：参见{{tr|Cursed Inferno buff}}）
+* 现在能造成{{tr|critical hits}}
+
+; [[{{tr|Medusa Head}}]]
+* 此武器现在不再是蓄能式的，而是改为引导式的，其射程也大大缩短了。
+* 引导时，它会由玩家手持在前方。如果{{tr|enemies}}存在，它就不会发射且不会消耗{{tr|mana}}。
+* 如果有{{tr|enemies}}在射程内，它会不断攻击附近的{{tr|enemies}}，每次攻击都会消耗{{tr|mana}}。
+* 每次攻击最多可以命中 3 个目标（不额外消耗{{tr|mana}}）
+* {{tr|Damage}}现在设置为 40
+* {{tr|Mana cost}}已从 18 降低至 15，但是现在每秒可以触发最多 4 次，从而提高了它消耗{{tr|mana}}的速度
+
+; [[{{tr|Sky Fracture}}]]
+* {{tr|Mana cost}}由 14 提升至 17
+
+; [[{{tr|Spirit Flame}}]]
+* {{tr|Use time}}由 30 降低至 22
+* {{tr|Mana cost}}由 18 降低至 14
+
+; [[{{tr|Rainbow Rod}}]]
+* {{tr|Projectile}}速度更快并且在停止控制后会自动制导
+* 现在能穿透并能命中最多 3 次。
+* 撞击时有中等距离的范围伤害
+* {{tr|Damage}} 74 -> 50
+* {{tr|Use time}}由 18 提升至 25
+* {{tr|Mana Cost}} 18 -> 21
+* 现在能接触{{tr|tiles}}而不爆炸。
+
+; [[{{tr|Unholy Trident}}]]
+* {{tr|Use Time}}由 22 降低至 17
+* {{tr|Mana cost}}由 25 降低至 19
+
+; [[{{tr|Tome of Infinite Wisdom}}]]
+* {{tr|Damage}}由 24 提升至 32
+* {{tr|Use Time}}由 30 降低至 25
+
+; [[{{tr|Venom Staff}}]]
+* 注：已经进行了和{{tr|Poison Staff}}一样的大修。在实际使用中应当有了大幅改进，但需要进行属性削弱来进行抵消。可以先试用下再做出判断！ :)
+* {{tr|Damage}}由 63 降低至 44
+* 每发{{tr|projectile}}所能击中的{{tr|enemies}}由 7 个降低到 5 个
+* {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 25% {{tr|damage}}惩罚
+* 现在{{tr|projectiles}}有消失射程了，要比{{tr|Poison Staff}}的射程长50%。
+
+; [[{{tr|Wasp Gun}}]]
+* 注：表面上看这是削弱了，但它是用“打击数”为代价换来了总伤害，实际上会大幅提高{{tr|Wasp Gun}}的{{tr|DPS}}。{{tr|Wasps}}虽然少了，但伤害增加了。
+* {{tr|Damage}}由 21 提升至 31
+* {{tr|Use time}}由 11 提升至 18
+** {{tr|Wasps}}现在只会反弹/穿透 3 次而非 4 次
+* 每次施法释放的{{tr|Wasps}}数量：降低至平均 3 只
+* {{tr|Mana cost}}由 6 提升至 10
+
+; [[{{tr|Nettle Burst}}]]
+* {{tr|Damage}}由 28 提升至 35
+* {{tr|Mana cost}}由 10 提升至 12
+
+; [[{{tr|Spectre Staff}}]]
+* {{tr|Damage}}由 72 降低至 65
+* 每个{{tr|projectile}}现在能够命中最多 3 次，而非仅能一次
+* {{tr|Mana cost}}由 11 提升至 15
+
+; [[{{tr|Staff of Earth}}]]
+* 实际伤害基本不变，但现在列出的是它的“{{tr|max speed}}”伤害而非“低速”伤害。
+* 现在有 20% {{tr|critical chance}}
+* {{tr|Mana Cost}}由 15 提升至 18
+* {{tr|Use time}}由 40 降低至 24
+* {{tr|Projectile speed}}大大提升，因此有着更好的射程、更难降到维持最大伤害所需的最小阈值以下
+
+; [[{{tr|Heat Ray}}]]
+* 注：在这一级别上有太多“完全穿透”的武器了，但没有足够多的单目标高伤害武器。对{{tr|Heat Ray}}进行了更改以避免与{{tr|Shadowbeam Staff}}和{{tr|Staff of Earth}}之间出现冗余，并且为此职业增加了多样性。
+* {{tr|Damage}}由 55 提升至 80
+* {{tr|Use time}}由 16 降低至 10
+* 不再能穿透并命中多个{{tr|enemies}}
+
+; [[{{tr|Bat Scepter}}]]
+* 每次施法平均{{tr|Bats}}由 2 提升至 2.5
+* {{tr|Mana cost}}由 3 提升至 6
+
+; [[{{tr|Charged Blaster Cannon}}]]
+* 此武器依然是充能的，但现在在充能过程中也会持续发射。
+* 在充能的第一秒内会发射 6 发单目标的弹丸，每个都能造成 100 {{tr|base damage}}（从原本的 50 提升而来）
+* 在接下来的二秒钟内，会发射 3 发完全穿透射击冲击波，每发都能造成 250 {{tr|base damage}}（从原本的 100 提升而来）
+* 之后，它会发射激光束，这与原本的实现是一样的
+* 你也可以不充能快速发射弹丸。这些弹丸的发射频率要远高于之前的实现。
+* 充能的{{tr|mana cost}}并未改变，但是，由于发射频率大幅提高了，快速开火就自然会消耗更多{{tr|mana}}。
+
+; [[{{tr|Nebula Blaze}}]]
+* {{tr|Use time}}由 15 降低至 12
+* {{tr|Mana cost}}由 18 降低至 12
+
+=== 召唤物 ===
+* 召唤的{{tr|minions}}现在会根据你的当前装备和{{tr|damage buffs}}动态调整其伤害。
+* 一些（尽管不是全部）召唤现在使用它们自己的无敌计时系统。实际上，这意味着它们不再会因为最大化{{tr|enemy}}的无敌帧时间而干扰其他武器的使用。所有受影响的{{tr|minions}}的自有计时器都设置为尽可能匹配其更改前的{{tr|DPS}}，但对比 1.3.5 的{{tr|DPS}}和 1.4 的{{tr|DPS}}还是预期会有一些改变的。整体上说，和更改前的表现相比，虽然有一些轻微的{{tr|DPS}}损失或增加，但整体表现上上还是值得的。受此变更影响的{{tr|minions}}例子有：
+** {{tr|Slime Staff}}
+** {{tr|Spider Staff}}
+** {{tr|Pirate Staff}}
+** {{tr|Optic Staff}}
+** {{tr|Raven Staff}}
+** {{tr|Deadly Sphere Staff}}
+** {{tr|Stardust Dragon Staff}}
+** 一些新召唤物也利用了此系统
+
+; [[{{tr|Imp Staff}}]]
+* {{tr|Damage}}由 21 降低至 17
+* 大幅提高了发射频率
+
+; [[{{tr|Raven Staff}}]]
+* {{tr|Damage}}由 37 提升至 55
+* 飞行速度翻倍
+
+; [[{{tr|Rainbow Crystal Staff}}]]
+* {{tr|Damage}}由 150 降低至 80
+* 修正了精度问题，提高了火花爆炸的速度。应该会比之前更容易造成更大伤害。
+
+=== {{tr|Ammo}} ===
+* {{tr|Arrows}}和{{tr|Thrown ranged weapons}}不再有几率掉落为物品供重用
+
+; [[{{tr|Bone Arrow}}]]：
+* 现在能穿透一次
+
+; [[{{tr|Chlorophyte Arrow}}]]：
+* 不再穿透目标
+* {{tr|Projectile speed}}有所提升
+* 现在可以反弹多次，并且如果附近有目标位于射程内，它就会“智能反弹”到目标身上
+* 反弹之后的{{tr|arrows}}只会造成 66% {{tr|damage}}
+
+; [[{{tr|Holy Arrow}}]]：
+* {{tr|Falling Stars}}不再能穿透并击中第二个目标
+* {{tr|Falling Stars}}现在造成 50% 原始{{tr|damage}}而非 100%
+
+; [[{{tr|Nano Bullet}}]]：
+* {{tr|Damage}}由 10 提升至 15
+* {{tr|Nanites}}的价格上涨
+
+; [[{{tr|Venom Bullet}}]]：
+* {{tr|Damage}}由 14 提升至 15
+* 相关：参见{{tr|Venom buff}}
+* {{tr|Vial of Venom}}的价格上涨
+
+; [[{{tr|Venom Arrow}}]]：
+* {{tr|Damage}}由 17 提升至 19
+* 相关：参见{{tr|Venom buff}}
+* {{tr|Vial of Venom}}的价格上涨
+
+; [[{{tr|Crystal Dart}}]]：
+* {{tr|Damage}}由 15 提升至 17
+
+; [[{{tr|Cursed Dart}}]]：
+* {{tr|Damage}}由 9 提升至 10
+* 相关：参见{{tr|Cursed Inferno buff}}
+
+; [[{{tr|Ichor Dart}}]]：
+* {{tr|Damage}}由 10 提升至 12
+
+=== {{tr|Accessories}}、{{tr|Hooks}}、和{{tr|Mounts}} ===
+* 现在佩戴多个{{tr|Celestial Stone}}衍生物不再能够得到叠加收益了
+* 除了先前的{{tr|Confusion}}效果外，{{tr|Brain of Confusion}}现在还提供了 1/6 几率避免{{tr|enemy attacks}}。在避免攻击时，你还会得到一个临时{{tr|buff}}，给予 20% {{tr|critical chance}}，持续几秒钟，在此期间你不再能够再次避免攻击。
+* {{tr|Titan Glove}}及其制品现在会给所有{{tr|Melee Weapons}}（以及{{tr|Whips}}！）加上{{tr|autoswing}}能力
+
+* 整个游戏中所有{{tr|Wing}}的平衡性进行了非常大的调整。
+* 除了少数例外，同一级别的{{tr|wings}}能力应当大致上相同。例外的那些一般是特别容易得到或者特别难以得到的。
+* 不幸的是，很难共享{{tr|wings}}的确切属性，部分原因是改了数十种{{tr|wings}}，而且它们的属性并不能很容易地转译成简单易读的属性数值。
+* 最佳的概述就是，有十多种{{tr|wings}}强化了，而{{tr|Leaf Wings}}和{{tr|Frozen Wings}}因为太强而进行了能力削弱。
+* 其他主要说明：
+* {{tr|Butterfly Wings}}和{{tr|Bee Wings}}现在要{{tr|Mech Bosses}} 之后才会掉落，但它们的能力也相应地增强了。
+* 之前，从{{tr|Wall of Flesh}}到{{tr|Golem}}之间的大多数{{tr|wings}}能力都是非常相似，所以没有太多理由去进行升级。现在这部分{{tr|wings}}已经分散开来了，随着游戏进程，{{tr|wing}}的能力稳定地逐步增强。
+
+* {{tr|Shrimpy Truffle}}现在在雨中时也会给予{{tr|speed}}和{{tr|damage}}加成。
+* {{tr|Basilisk Mount}}现在有{{tr|double jump}}
+
+; [[{{tr|Bat Hook}}]]
+* 拉入速度由 16 降低至 13（这是把玩家拉向{{tr|hook}}的速度）
+* 发射{{tr|speed}}由 15.5 降低至 13.5
+
+; [[{{tr|Thorn Hook}}]]
+* 拉动速度由 11 提升至 12
+* 发射{{tr|speed}}由 15 提升至 16
+
+; [[{{tr|Lunar Hook}}]]
+* 拉动速度由 13 提升至 16
+* 发射{{tr|speed}}由 16 提升至 18
+
+=== {{tr|Tools}}和{{tr|Mining}} ===
+* 所有{{tr|axes}}、{{tr|hamaxes}}、{{tr|chainsaws}}和其他有{{tr|axe}}功能的{{tr|tools}}，砍树速度都提高了 20%
+* 现在所有{{tr|drills}}和{{tr|chainsaws}}的挖掘速度都比它们的非机械对应物更快，但有效范围更短。另外，优化的挖掘负载在{{tr|pickaxes}}/{{tr|axes}}上依然会表现更好，但{{tr|drills}}和{{tr|chainsaws}}在非优化负载上会更快
+* {{tr|Desert Fossil}}现在可以用任意{{tr|pickaxe power}}的工具或用{{tr|bombs}}来采挖。但是，它很脆弱，因此采挖时相邻的{{tr|fossil blocks}}可能会破裂，从而导致你能挖到的{{tr|ore}}少掉一些。
+* 基于{{tr|Desert Fossil}}的装备现在弱了一些，因为它可以更快得到。
+* {{tr|Hellforges}}现在需要{{tr|Demonite Pickaxe}}或更高才能打破。它们现在在{{tr|Underworld}}中时还能保护其下方的{{tr|tiles}}不被破坏。这在{{tr|Underworld}}外不适用。
+
+; [[{{tr|Cactus Pickaxe}}]]
+* {{tr|Use Time}}由 16 降低至 15
+* 伤害由 5 降低至 4
+
+; [[{{tr|Bone Pickaxe}}]]
+* 采矿力由 50 提升至 55
+
+; [[{{tr|Reaver Shark}}]]
+* 采矿力由 100 降低至 59
+
+; [[{{tr|Laser Drill}}]]
+* 射程由 10 提升至 11
+* {{tr|Use time}}由 7 降低至 6
+* 不再具有{{tr|axe}}的功能
+
+=== {{tr|Buffs}}、{{tr|Debuffs}}、和{{tr|Potions}} ===
+* 大量{{tr|Buff Potions}}的持续时间都有所延长，很多都翻倍了
+* {{tr|The Well Fed}}{{tr|buff}}被划分为三个级别，最低级别的和原本的一样，最高级别的则是原本的 2 倍效果
+* 游戏内的所有食物，包括 50 多个{{tr|new Food items}}，都对其持续时间和级别进行了调整，让食物的奖励和食物的获取难度更加一致。短持续时间的{{tr|foods}}可能会拥有更高的级别，而长持续时间的食物也可能会是较低的级别。寻找最适合自己的方案！
+* {{tr|Well Fed}}{{tr|Buff}}现在会给予{{tr|mining speed bonus}}
+* {{tr|Invisibility Potion}}现在有个额外的好处，会将{{tr|enemy}}的{{tr|spawn rates}}降低 20%
+* {{tr|Restoration Potions}}不在恢复{{tr|mana}}值，但能多恢复 10 生命值，一共能恢复 90，并且引发的{{tr|Potion Sickness}}时间较短，现在只有 45 秒
+* {{tr|Sharpening Station}}的{{tr|Armor Piercing}}{{tr|bonus}}已经由 4 提升至 12
+
+* {{tr|Cursed Inferno Debuff}}的{{tr|damage per second}}由 12 提升至 24，{{tr|debuff}}的{{tr|player}}和{{tr|enemy}}的版本都一样
+* {{tr|Ghoul}}、{{tr|Clinger}}、和{{tr|Spazmatism}}的{{tr|Cursed Inferno}}的{{tr|duration}}有所缩短，以减轻对玩家的威胁
+* 此{{tr|debuff}}的所有其他来源都是应当接收改进后的伤害
+
+* {{tr|Venom Debuff}}的{{tr|damage per second}}由 12 提升至 30，{{tr|debuff}}的{{tr|player}}和{{tr|enemy}}的版本都一样
+* {{tr|Pygmy Staff}}和{{tr|Queen Spider Staff}}的{{tr|Venom}}持续时间缩短，抵消其强化后的效力
+* {{tr|Black Recluse}}和{{tr|Sand Poacher}}的{{tr|Venom}}{{tr|duration}}有所缩短，以减轻对玩家的威胁
+* 此{{tr|debuff}}的所有其他来源都是应当接收改进后的伤害
+
+=== {{tr|Fishing}} ===
+* {{tr|Bait}}更有可能被消耗掉
+* 非常高的{{tr|fishing power}}的收益现在有所降低
+* {{tr|Fishing Power}}在{{tr|Blood Moons}}期间会变成 1.1 倍
+* 现在钓鱼时{{tr|Swordfish}}不那么常见了
+* 现在钓鱼时{{tr|Golden Carp}}不那么常见了
+* {{tr|Biome Crates}}现在必然会掉一个{{tr|chest item}}，而不是过去那样只是有时会掉
+* {{tr|Dungeon Crates}}现在总是会掉落一个{{tr|Golden Lock box}}
+* 现在{{tr|Jungle Crates}}的掉落池中包括{{tr|Flower Boots}}
+* {{tr|Wood Crates}}、{{tr|Iron Crates}}、和{{tr|Gold Crates}}掉落的{{tr|ore}}品质随{{tr|crate}}的级别而递增。例如，{{tr|Wood Crates}}只会掉落{{tr|Copper}}/{{tr|Tin}}/{{tr|Iron}}/{{tr|Lead}}。
+* {{tr|Penguin}}和{{tr|Turtle Pets}}现在可以偶而自它们相应的{{tr|Biome crates}}中得到
+* 所有{{tr|fishing crates}}现在都分{{tr|Wall of Flesh}}前和{{tr|Wall of Flesh}}后的版本。{{tr|Wall of Flesh}}前的版本不包含{{tr|Hardmode Ores}}。
+* {{tr|Gold Crates}}现在有机会掉落{{tr|Life Crystals}}和{{tr|Enchanted Swords}}
+
+=== 掉落 ===
+* {{tr|Amber}}现在在{{tr|Fossils}}中略微常见了一点，并且可以在{{tr|Underground Desert}}中自然生成
+* {{tr|Angler}}的{{tr|Quest rewards}}是现在有更高可能给你{{tr|Info Accessories}}。另外，除非你已经拥有了所有{{tr|Info Accessories}}，否则他给的{{tr|Accessories}}不会和你{{tr|inventory}}中已有的重复。
+* {{tr|Basic Dye materials}}现在制作时会得到 2 个那种{{tr|dye}}而非 1 个
+* 打破{{tr|pot}}时出现{{tr|Coin Portal}}的几率已经减半
+* {{tr|Enemies}}被杀死时有更大几率额外掉落一定量金钱
+* {{tr|Enemies}}在{{tr|Blood Moons}}期间会掉落额外的金钱
+* {{tr|Golden Keys}}现在自{{tr|enemies}}和{{tr|pots}}中的掉落会更加频繁，{{tr|Dungeon Slimes}}略微常见了一些
+* {{tr|Gold Critters}}现在更加罕见
+* {{tr|statues}}生成的{{tr|Jellyfish}}和{{tr|Granite Golems}}现在掉落物品的频率更低，并且其中一些凋落物的卖价降低了
+* {{tr|Lava Charms}}现在只能在{{tr|lava layer}}中的{{tr|chests}}内找到，但是现在{{tr|Lava Fishing}}提供了它们的第二个可再生来源。
+* {{tr|Mandible Blade}}现在可由{{tr|Antlion Swarmers}}掉落
+* {{tr|Moon Lord}}现在掉落{{tr|Super Healing Potions}}而非{{tr|Greater Healing Potions}}
+* {{tr|Mushroom Grass Seed}}掉落率由 1/50 提升至 1/40
+* {{tr|Nature's Gifts}}现在在{{tr|the Jungle}}中的生成频率略有提高
+* {{tr|Picksaw}}现在有 ¼ 几率作为其他掉落物的额外掉落物掉落自{{tr|Golem}}，而不再作为主掉落池的一部分。对于{{tr|Expert Treasure Bags}}，这个掉落率是 33%。
+* [[{{tr|Rod of Discord}}]]在{{tr|Expert mode}}中的掉落率现在是 1/400
+* {{tr|Strange Plants}}不再在{{tr|worldgen}}中生成，并且在{{tr|Hardmode}}之前不会出现
+* {{tr|chests}}中的{{tr|Throwing Knives}}出现时一堆的数量更大了。
+* {{tr|Water Walking Boots}}现在有 1/10 几率出现在{{tr|Water Chests}}中，而非过去的 1/15
+* 多种{{tr|Martian Invasion}}掉落物现在会掉落自常规火星怪而非{{tr|Martian Saucers}}，这降低了{{tr|Martian Saucer}}掉落池的随机性
+
+=== 其他 ===
+* {{tr|The Nurse}}现在随着游戏进程会逐步提高治疗的价格
+* 现在你每打败一个 {{tr|boss}} {{tr|Town NPCs}} 就会跟着变强一点
+* {{tr|Sandstorms}}现在明显少见了，特别是在游戏早期
+* 降低了{{tr|Mighty Wind}}的强度
+* 下雨略微少见了点
+* {{tr|Dungeon Spike}}的{{tr|damage}}由 40 提升至 60，并造成{{tr|Bleeding}}效果
+* {{tr|Temple Wooden Spike}}的{{tr|damage}}由 60 提升至 80，并造成{{tr|Bleeding}}效果
+* {{tr|Gem Torches}}和{{tr|Rainbow Torches}}现在每轮制作能得到 10 个{{tr|torches}}而非 3 个
+* {{tr|Glowsticks}}和{{tr|Torches}}现在能堆叠到 999
+* 所有{{tr|Bombs}}、{{tr|Grenades}}、和{{tr|Dynamite}}现在都能堆叠到 99
+* {{tr|Ore Bars}}现在能堆叠到 999
+* {{tr|Alchemy Seeds}}和{{tr|Plants}}现在能堆叠到 999
+* {{tr|Tissue Samples}}和{{tr|Shadow Scales}}现在能堆叠到 999
+* {{tr|Pirate Map}}和{{tr|Snow Globe}}{{tr|items}}现在能堆叠到 20
+* 提高了 {{tr|boss}} 金钱掉落的一致性
+* 对整个游戏中的卖出价格进行了广泛复查，从而提高了卖出价的一致性。其中特别是包括了应当有卖出价而没有的物品、掉落自同一来源的物品之间卖出价的一致性、借助制作来完成低买高买从而得到无限金钱、等等。
+
+== {{tr|Bug}} 修正 ==
+=== 游戏和战斗 ===
+* 修正了{{tr|Copper Bows}}和{{tr|Tin Bows}}对于{{tr|prefixes}}被视为{{tr|Melee weapons}}的问题。
+* 修正了在斜坡{{tr|minecart track}}上发射{{tr|Tome of Infinite Wisdom}}会导致页面向各个方向发射的问题。
+* 修正了在{{tr|Drill Mount}}上时使用{{tr|Tome of Infinite Wisdom}}的右键点击功能会几乎立即耗光所有{{tr|mana}}的问题。
+* 修正了一个漏洞，即{{tr|Hardcore}}人物在光标上持有{{tr|Rod of Discord}}时死于{{tr|Chaos State}}的话会导致下一个使用的人物还会继承这把{{tr|Rod of Discord}}。
+* 修正了{{tr|Solar Eruption}}的剑刃最后一节实际上不会造成伤害的问题。
+* 增加了保护措施来防止一个非常罕见的 {{tr|bug}}，该 {{tr|bug}} 会导致{{tr|Solar Eruption debuff}}杀死其使用者。
+* 修正了{{tr|Halloween}}基于生命值的掉落率中的一个疏忽，这会导致{{tr|Bladed Gloves}}和{{tr|Bloody Machete}}在{{tr|Expert}}中过于罕见。
+* 修正了超高的{{tr|melee speed}}阈值会破坏诸如{{tr|Sky Dragon's Fury}}等武器的行为的问题。
+* 死亡状态下不再能使用{{tr|Sniper Scopes}}和{{tr|Binoculars}}。
+* {{tr|Staff of Regrowth}}不再破坏{{tr|rocks}}和其他碎石。
+* 修正了可以在使用某些引导武器时还能切换到其他武器并使用之的问题。
+* 修正了某些引导武器和工具在玩家石化之后依然继续维持使用状态的问题。
+* 修正了在使用有冷却时间的{{tr|projectile sword}}之后用数字键切换到另一个{{tr|hotbar}}栏位会导致此栏位中的{{tr|consumable}}被删掉 1 个的问题。
+* 修正了一些{{tr|damage type}}不一致的问题，包括{{tr|projectiles}}造成的{{tr|damage type}}错误、{{tr|weapons}}错误地接受/不接受伤害类型套装或药水的奖励、暴击率未正确应用、等等。
+* 修正了一些边缘情况，诸如{{tr|mount damage}}或{{tr|Shield of Cthulhu}}{{tr|dashing}}不会记录在{{tr|DPS meter}}上之类。
+* 修正了拥有两种猛冲技能并且在猛冲中途移除其中一个可能会意外使猛冲距离加倍的问题。
+* 修正了另一个类似的问题，即在{{tr|dash}}中途移除{{tr|dash accessory}}会阻止{{tr|Hermes boots}}及同类物品让你进入奔跑状态，直到你重新将{{tr|dash accessory}}放回去。
+* 修正了一些涉及{{tr|Flower Boots}}的问题。
+* 修正了使用{{tr|Sandstorm in a Bottle}}之后立即向不同{{tr|block}}发射多个{{tr|grappling hooks}}会让人物无限来回旋转的问题。
+* 修正了若干{{tr|wings}}（{{tr|Fin wings}}、{{tr|Bat wings}}、{{tr|Mothron wings}}）的加速度有问题的问题。
+* 修正了{{tr|Spore Sac}}只在靠近{{tr|blocks}}才会起作用而靠近{{tr|platforms}}不起作用的问题。
+* 修正了戴着{{tr|Neptune's Shell}}的玩家可能因为将头伸入水中而死的问题，因为只淹没头部不足以让你变成{{tr|merman}}，但足以让你淹死。
+* 修正了{{tr|Cloud in a Bottle}}和{{tr|wings}}之间的行为方式和其他跳跃瓶不一致的问题。
+* 修正了鲨鱼牙项链和{{tr|Banner Buff}}不适用于各种非典型攻击的问题。
+* 修正了{{tr|Stopwatch}}在某些{{tr|mounts}}上有时不会正确显示玩家速度（比如坐着{{tr|Slime Mount}}下落）的问题。
+* 修正了在{{tr|rope}}上侧向移动时会被{{tr|Stopwatch}}视为 0 {{tr|MPH}} 的问题。
+* 修正了一些{{tr|wings}}即使在{{tr|vanity slots}}中也会发光的问题。
+* 修正了一些提高放置范围的加成（{{tr|Toolbelt}}、{{tr|Builder Potion}}）不能正确叠加的问题。
+* {{tr|Mime Mask}}现在正确地被视为{{tr|vanity helmet}}了。
+* 修正了某些自动攻击（比如{{tr|Sentries}}或{{tr|Chlorophyte Armor}}）会攻击无敌的{{tr|enemies}}（比如{{tr|Dungeon Spike Balls}}或{{tr|Blazing Wheels}}）的问题。
+* 修正了一些{{tr|Shroomite}}和{{tr|Chlorophyte}}{{tr|armor bonuses}}不会叠加的问题。
+* 修正了应用于{{tr|Snowball}}相关攻击的攻击类型上的{{tr|armor bonuses}}的一些不一致问题。
+* 修正了{{tr|Frost Armor}}/{{tr|Necro Armor}}会因为是穿在{{tr|vanity}}/{{tr|normal armor slots}}和是否和另一套混穿而发出不一致的特殊{{tr|armor}}音效的问题。
+* 修正了（或者至少让它变得更难利用）用{{tr|Slime Mount}}和{{tr|Target Dummies}}来避免伤害的漏洞。
+* 修正了{{tr|flying mounts}}会随着时间非常缓慢地提升高度的问题。
+* 修正了{{tr|flying mounts}}能会穿过下置平台下降的问题。
+* 修正了你坐着{{tr|Drill Containment Unit}}时不能使用{{tr|Quick Buff}}的问题。
+* 修正了骑着{{tr|Slime Mount}}从水中跳出时可以额外来一次{{tr|double jump}}的问题。
+* 修正了一个矿车问题，即直接延伸进入{{tr|conveyor belts}}的矿车轨道可能会导致{{tr|minecart}}脱轨的问题。
+* 修正了在快速移动的{{tr|minecarts}}中有时会跳跃失败的问题。
+* 修正了放置在水下斜坡块上的{{tr|Lightning Sentries}}会沉入地下的问题。
+* 修正了{{tr|Queen Spider Sentry}}无法借助{{tr|Sentry}}强化装备拥有多个召唤物的问题。
+* 可能修正了{{tr|Smart Cursor}}在世界最边缘可能会不断失效的问题。
+* 修正了{{tr|Smart Select}}对{{tr|Extractinator}}不会提示{{tr|Desert Fossil}}的问题。
+* 修正了{{tr|Smart Select}}可能会优先选择没有{{tr|flares}}的{{tr|Flare Gun}}而非一组{{tr|Glowsticks}}的问题。
+* 修正了在世界边缘攀爬绳索会导致镜头从玩家身上移开的问题。
+* 修正了一个与 {{tr|hoik}} 有关的问题，即使用{{tr|grapple}}和{{tr|ropes}}可能会导致镜头完全将玩家甩在身后的问题。
+* 修正了用{{tr|binoculars}}或{{tr|sniper rifles}}查看{{tr|buff furniture}}（{{tr|Campfires}}、{{tr|Heart Lanterns}}）会给予相应{{tr|buff}}的问题。
+* 修正了一些不同类型{{tr|platforms}}所需的{{tr|crafting stations}}相关的制作不一致问题。现在大部分都是{{tr|by hand}}制作的，少数需要特殊制作站。
+* 修正了一大堆{{tr|furniture sets}}和{{tr|crafting station}}之间的不一致问题。
+* 修正了反射的{{tr|projectiles}}对玩家造成{{tr|debuffs}}的不一致问题，它们根本就不应当会造成{{tr|debuffs}}。
+* 修正了一些用了{{tr|Warmth Potion}}而基于寒冷的攻击未受保护之间的不一致问题。
+* 修正了前一个{{tr|flask}}处于激活状态时喝下新的{{tr|Flask}}会移除前一个{{tr|flask buff}}但不会给予新{{tr|buff}}的问题。
+* 降低了利用{{tr|portals}}和{{tr|fall damage}}来免疫 {{tr|bosses}} 和其他威胁的效率。
+* 修复了臭名昭著的无限钓鱼线漏洞。
+* 修正了在钓鱼收线时切换物品会导致此物品被没收的问题。
+* 修正了{{tr|Angler Quest rewards}}在 150 个{{tr|Quests}}之后降低了品质的问题。
+* 添加了一些保护措施，以防止传送到其他{{tr|biomes}}后音乐音轨依然悄悄在后台继续播放的问题。
+* {{tr|The Kraken Yoyo}}现在应当也能给予{{tr|Robbing the Grave}}{{tr|achievement}}。
+* （再次）修正了可能会因为传送出{{tr|Underground Mushroom Biome}}而得到{{tr|Funkytown achievement}}的问题。
+* 修正了{{tr|Pad Thai}}会发出饮用声而非进食声的音频问题。
+* 修正了一些{{tr|wall items}}的放置速度比其他{{tr|wall items}}慢得多得问题。
+* 修正了手持一个{{tr|item}}时打开{{tr|Money Trough}}会使用此物品同时打开{{tr|the Money Trough}}的问题。
+* 修正了 4k 和非 4k 分辨率游戏之间的一些细微不一致问题。
+* 修正了拾取大量{{tr|coins}}会得到正确数量的钱但屏幕上显示的钱数不正确的问题。
+* 修正了{{tr|large worlds}}中位于{{tr|ocean}}内的{{tr|spawn points}}会不断重置自身的问题。
+
+==== {{tr|Reverse Gravity}} ====
+* （再次）修正了{{tr|reverse gravity}}时{{tr|Celestial Pillar shields}}会飞上天的问题。
+* 修正了按 UP 来翻转重力会导致玩家从{{tr|flying mounts}}上下来。现在，骑在{{tr|mounts}}上时根本不会翻转重力。
+* 修正了一个{{tr|reverse gravity}}问题，即漂浮的{{tr|Piggy Bank}}的鼠标悬停检测方向错误。
+* 修正了一个{{tr|reverse gravity}}的问题，即{{tr|Blizzard Staff}}类的{{tr|weapons}}会朝你瞄准的方向收敛。
+* 修正了一个{{tr|reverse gravity}}问题，即玩家会卡在锤击过的{{tr|platforms}}上。
+* 修正了禁戒套装的环在{{tr|reverse gravity}}状态下未能正确翻转的问题。
+* 修正了一个{{tr|reverse gravity}}问题，即一些{{tr|weapons}}不会随玩家翻转。
+* 修正了一个{{tr|reverse gravity}}问题，即{{tr|cobwebs}}无法正确减慢逆转后的玩家。
+
+==== {{tr|Camera Mode}} ====
+* 显著改进/修正了{{tr|Camera mode}}捕捉{{tr|Celestial backgrounds}}/{{tr|shaders}}和{{tr|weather effects}}的方式。
+* 修正了一些{{tr|projectiles}}不会出现在相机截图中的问题。
+* 修正了{{tr|waterfalls}}和其他类似的视觉效果未出现在{{tr|Camera mode}}图像中的问题。
+* 修正了{{tr|Stardust Guardian}}在相机截图中出现在玩家前面的问题。
+* 修正了捕捉相机截图时一些诸如{{tr|Pressure Plates}}之类的{{tr|tiles}}会绘制在错误的图层中的问题。
+
+=== {{tr|World}}、{{tr|Background}}、和{{tr|Worldgen}} ===
+* 极大地改进了{{tr|sky island}}{{tr|house}}/{{tr|furniture}}的生成过程，修正了会生成没有{{tr|furniture}}或{{tr|doors}}的{{tr|house}}的问题。
+* 修正了在{{tr|worldgen}}中{{tr|cobwebs}}有时候会删除自然生成的{{tr|wires}}的问题
+* 改进了{{tr|worldgen}}中对损坏或漂浮的{{tr|chests}}的防错和检测，这类{{tr|chest}}会无法打破甚至可能会损坏世界文件。
+* 修正了{{tr|worldgen}}中的一个问题，即{{tr|Mushroom Cabins}}中{{tr|mushrooms}}会占据和其他{{tr|furniture}}相同的位置，者往往会破坏它们。
+* 修正了一个次要的{{tr|worldgen}}怪异之处，即可能会在{{tr|Dungeon}}楼梯的边缘处生成单格{{tr|platform}}
+* 修正了一处笔误，这会导致{{tr|underground chests}}中{{tr|Titan Potions}}的生成机会被取代，改而拥有两倍于预期数量的{{tr|Water Walking Potions}}和{{tr|Dangersense Potions}}。
+* 当达到{{tr|sign}}生成限制时最后一个{{tr|Sign}}的行为现在问题较少了。
+* 修正了{{tr|Campfire minibiomes}}使用“玩家放置的”{{tr|dirt walls}}的问题
+* 修正了自然生成的{{tr|Statue traps}}可能没有{{tr|statue}}的问题
+* 修正了{{tr|Gold Chests}}在{{tr|Cavern layer}}中无法在{{tr|Underground Cabins}}外生成的问题
+* 修正了绝大多数会生成没有{{tr|detonator}}地下爆破采矿{{tr|minibiomes}}的情况
+* 修正了{{tr|minecart tracks}}可能会在{{tr|Life Crystals}}和{{tr|Chests}}上生成的问题
+* 修正了{{tr|Crimson Vines}}可能会在无法生存的地方并在玩家接近它们时自发断裂的问题
+* 修正了{{tr|Hardmode world}}生成过程可能会用异常背景墙填充山洞的问题
+* 修正了{{tr|worldgen}}过程中的一些问题，这些问题最终会导致海滩太小，尤其是在右侧或太靠近{{tr|Jungle}}时
+* 修正了{{tr|worldgen}}中的一个罕见问题，其中海滨会吞噬一部分{{tr|Dungeon}}，有时甚至会包括{{tr|the Old Man}}
+* 修正了{{tr|worldgen}}中{{tr|Dungeon}}的一个微妙问题，即生成在{{tr|Dungeon}}下面的{{tr|Marble}}/{{tr|Granite biomes}}会让一些{{tr|Dungeon Bricks}}维持在{{tr|the Dungeon}}生成之前的形状
+* 修正了{{tr|worldgen}}中有时{{tr|Sky Lakes}}会优先于{{tr|regular Sky Islands}}考虑的问题
+* 修正了臭名昭著的“醉酒{{tr|Dungeon}}”问题，即{{tr|worldgen}}会让{{tr|Dungeon}}高高突出地面
+* 修正了{{tr|worldgen}}中有时会在世界中生成另一种{{tr|world evil}}对应的替换版本的问题
+* 修正了{{tr|Demon altar}}/{{tr|Crimson Altars}}会在{{tr|ocean}}边缘扎堆大量生成的问题
+* 修正了长久以来在{{tr|worldgen}}中会出现“高{{tr|Oceans}}”的问题
+* 修正了在{{tr|worldgen}}中{{tr|Queen Bee}}的{{tr|hive}}本应满是天然{{tr|honeyfalls}}但实际并未起作用的问题
+* 修正了{{tr|Corrupt}}/{{tr|Crimson Chasms}}在{{tr|Dungeon}}上生成并阻塞了其入口的问题
+* 修正了会在生成点附近生成大量{{tr|underground sand}}导致玩家立即受{{tr|desert biome}}影响的问题
+* 修正了世界不会使用所有可用背景变体的问题
+* 大大改进了{{tr|the Temple}}的{{tr|Golem}}房间生成的方式，以降低无法进入的可能性
+* 修正了{{tr|Lihzahrd Altars}}有时可能会生成在可破坏的{{tr|spikes}}和{{tr|traps}}上的问题
+* 改进了{{tr|worldgen}}以降低{{tr|the Temple}}的大门被{{tr|Lihzahrd Blocks}}堵住的可能
+* 修正了有时通往{{tr|the Temple}}的走廊会充满{{tr|mud}}而非{{tr|Lihzahrd Walls}}的问题
+* 修正了不同操作系统会看到了略有不同的世界种子结果的问题，但我们必须密切关注此问题是否重现
+* 加大了{{tr|Sky Islands}}距离生成点所要求的最小距离，以防止出生在空岛上。
+* 部分修复了多个{{tr|Crimson Caverns}}会互相重叠生成导致其中的{{tr|Crimson Heart}}太容易到达的问题。现在即使出现这种情况这些{{tr|Crimson Heart}}也应当被封在{{tr|Crimstone}}中。
+* 修正了一个非常罕见的问题，即{{tr|pyramid}}的入口和长草的山洞重叠会导致整个{{tr|pyramid}}塞满了草
+* 修正了蔓延的{{tr|biomes}}在{{tr|Underground Desert walls}}上会感染远大于正常范围的问题
+* 修正了在{{tr|Slime Rain}}中途退出游戏会重置其持续时间的问题
+* 修正了退出正在{{tr|Slime Rain}}的世界然后进入一个没有{{tr|Slime Rain}}的世界时关于{{tr|Slime Rain}}结束的讯息的问题
+* 修正了{{tr|Corruption}}始终优先于{{tr|Crimson}}，即使{{tr|Crimson}}拥有更多{{tr|blocks}}亦是如此的问题
+* 修正了背景云在{{tr|ocean}}中“难以置信地低”的视觉问题
+* 修正了在{{tr|the Underworld}}背景底部可以看到黑色边框的背景问题
+* 修正了一些{{tr|the Underground layer}}边缘处天空底部黑条的问题
+* 修正了{{tr|the underground layer}}的背景墙的顶边会在屏幕上而非屏幕外闪烁为可见的问题
+
+=== 视觉/外观问题 ===
+* 修正了{{tr|Space Creature Costume}}的一些问题
+* 修正了{{tr|Rain coat}}的一些外观问题
+* 移除了穿着{{tr|female Snow Coat}}挥舞武器时的一些杂散像素
+* 移除了{{tr|the Eater of Worlds Mask}}上的一个蓝色杂散像素
+* 修正了一些染色过的{{tr|Old One's Army armors}}也会让你的{{tr|backpacks}}和{{tr|capes}}染色的问题
+* 修正了一些{{tr|Old One's Army armors}}无法正确染色或会保留玩家默认服装颜色的问题
+* 修正了女性角色即使戴着手套手持盾牌也能看到手的图层问题。
+* 修正了各种和{{tr|cape}}相关的透明度问题，这样总体上说应该会让{{tr|Capes}}观感更佳
+* 修正了和{{tr|Shields}}与{{tr|Capes}}彼此之间相对绘制/图层的大量问题，并大幅改进了其实现方式。
+* 修正了一个解决难度高得出奇的问题，即{{tr|Jim's Leggings}}上有一个{{tr|cape}}与某些其他{{tr|vanity items}}（比如{{tr|the Mermaid Adornment}}）搭配不佳。
+* 修正了{{tr|Valhalla Knight's Helm}}和{{tr|Tam O' Shanter}}在移动时会笨拙地晃动的问题。
+* 修正了{{tr|Vortex Armor}}有奇怪的波动效果的视觉问题
+* 修正了{{tr|Kimono}}会出现在{{tr|Shoes accessories}}前面的视觉问题
+* 修正了戴着{{tr|Lamia Tail}}/{{tr|Mermaid Tail}}的玩家即使在没有脚的情况下仍然会以某种方式穿着{{tr|boots}}的视觉问题
+* 修正了{{tr|blindfolds}}会在玩家头发之上而非之下绘制的问题
+* 修正了对面部{{tr|accessories}}和{{tr|familiar wig}}的{{tr|dye}}无法正确显示在玩家的地图头像图标上的问题
+* 修正了{{tr|Twilight Hair Dye}}只在同时用了{{tr|Armor Twilight Dye}}时看起来才正确的问题
+* 修正了一些{{tr|armors}}（Aaron的、{{tr|Vortex}}、{{tr|Nebula}}、{{tr|Obsidian}}）的腰部出现一条难看的问题图形的问题
+* 修正了{{tr|Shield of Cthulhu}}在{{tr|dash}}时图形上会轻微切断的问题
+* 修正了一些各种动画帧中和腰带{{tr|accessories}}在玩家身上显示相关的问题
+* 动画{{tr|accessories}}现在在不再会在暂停时继续动画
+* 修正了穿上全套{{tr|Lunar Armor}}会导致{{tr|Party Hair Dye}}生成过量{{tr|confetti}}的问题
+* 修正了{{tr|Master Ninja Gear}}、{{tr|Tabi}}、和{{tr|Black belt}}产生的烟雾对{{tr|dye}}产生奇怪反应的问题
+* 修正了{{tr|Forbidden Armor}}的{{tr|set bonus}}可能会产生大量火花喷射的问题
+* 修正了当你移动时头部{{tr|accessories}}在地图上可能会偏移和轻微抖动的视觉问题
+* 修正了当骑着某些{{tr|mounts}}时玩家的头在地图上显示在错误位置的问题
+* {{tr|Scutlix Mount}}在召唤时不再产生{{tr|Honey}}效果
+* 修正了在{{tr|mounts}}时{{tr|backpacks}}和其他这类东西绘制在不正确高度的问题
+* 修正了{{tr|Slime Mount}}绘制偏移半个像素的问题
+* 修正了几百种坏掉、不可见、根本不显示{{tr|dye}}的{{tr|Pet}}/{{tr|Dye}}组合，最著名的是{{tr|Zephyr Fish}}和任何{{tr|Hades Dye}}
+* 修正了{{tr|Keybrand}}在挥舞时并不真正在你手中的问题
+* 修正了朝某些方向发射时{{tr|Betsy's Wrath}}会悬浮在玩家的手之外的视觉问题
+* 修正了玩家使用{{tr|Magic Daggers}}时向后挥舞它的问题
+* 修复了部分{{tr|magic weapons}}会在一边移动一边使用时在{{tr|player}}的手中抖动的视觉问题
+* 修复了一个与在抓住{{tr|platforms}}时举起然后使用{{tr|weapons}}有关的视觉问题
+* 降低了几率，并希望修复了在{{tr|Last Prism}}中使用{{tr|Last Prism}}时最常见的视觉灰尘错误，旋转的白色十字会漂浮在某个位置
+* 修复了一个{{tr|sprite}}问题，该问题导致一部分{{tr|Crimson and Underground background walls}}在水平移动时不能流畅地循环
+* 移除了一些{{tr|surface}}{{tr|Crimson background}}中的杂散像素
+* 修复了迷幻/复古光效下{{tr|blocks}}在{{tr|Underworld}}极暗的区域中根本不可见的问题
+* 修复了{{tr|Meteorite}}{{tr|Martian Platforms}}的发光部分在被锤击时不会改变位置以匹配的问题
+* 移除了一个会在{{tr|Goldfish Bowl}}中闪烁的杂散像素
+* 移除了{{tr|Pumpkin Doors}}上的杂散像素
+* 修正了{{tr|Pumpkin Blocks}}丢失若干像素的问题
+* 修改了{{tr|Waterleaf}}发芽的{{tr|sprite}}以使其更容易看见
+* 修正了站在{{tr|pianos}}上或在其上放置{{tr|items}}时显得它们在漂浮的{{tr|sprite}}问题
+* 修复了一个很小以至于几乎没人注意到的问题，即{{tr|Ancient Manipulator}}的发光效果偏离中心几像素
+* 修复了{{tr|Goblin Tinkerer}}的{{tr|sprite}}看起来看起来模糊/扭曲的问题
+* 修复了一些双足敌人行走动画略微有些不连贯的{{tr|sprite}}问题
+* 修正了一些非常细小的杂散像素漂浮在{{tr|Crimson Axe enemies}}附近的问题
+* 修复了处在小水坑中的{{tr|Celestial Pillars}}会显示在水坑后面的问题
+* 修正了{{tr|Tortoise}}型的{{tr|enemies}}会略微陷入地面的视觉问题
+* 修复了若干小的{{tr|sprite}}问题：像素未使用正确的 2x2 格式
+* 现在即使是屋顶处于屏幕之外，雪也不会落入房屋内
+* 改进了在{{tr|Underworld}}附近出现异常红色闪烁的问题
+* 修复了瀑布会穿过{{tr|thin ice}}的问题
+* 修复了{{tr|player}}在{{tr|Blood Moon}}期间进入{{tr|underground}}中会破坏本次游戏剩余时间的{{tr|Blood Moon}}着色器效果这一视觉问题
+* 修复了鱼线在{{tr|Money Trough}}前方，但鱼竿却画在后面的分层问题
+* 修复了一个 UI 重叠问题，即{{tr|Dresser}}的名称和{{tr|Shirt}}标志会相互重叠
+* 修复了标尺 UI 跟随游戏界面大小而非 UI 比例一同放大缩小的问题
+* 修复了“挖掘方块时候方块振动”选项一段时间不起作用的问题
+* 修复了{{tr|Dryad's Blessing}}叶子会在某些光效中变黑的问题
+
+=== {{tr|Block}}和{{tr|Furniture}} ===
+* 保护了支撑着{{tr|Locked Temple Door}}的{{tr|blocks}}，防止其被破坏后留下一个悬空的{{tr|door}}
+* 落下的{{tr|sand}}和其他掉落{{tr|tiles}}如不能作为{{tr|tiles}}落地，则掉落为{{tr|items}}供拾取
+* 修复了{{tr|Meteorite ore}}使用{{tr|Spelunker Potion}}会奇怪的闪光并变透明的问题
+* 修复了一个问题：你可以致动掉落性的{{tr|blocks}}，使得{{tr|block}}掉落，然后再在这些位置放置{{tr|furniture}}，仍可部分致动
+* 修复了在多人游戏中掉落的{{tr|blocks}}漂浮在空中的问题
+* 修复了{{tr|Marble blocks}}与{{tr|doors}}融合的问题
+* 修正了朝左和朝右的被锤击的{{tr|blocks}}和其对放置于附近的{{tr|torches}}的不连续的行为
+* 修复了{{tr|Crystal Blocks}}与其他{{tr|blocks}}不正常融合的问题
+* 修复了若干种半{{tr|blocks}}放置于一列其他{{tr|block}}所产生的图像问题
+* 修复了{{tr|Desert Fossil}}不对{{tr|Spelunker Potion}}起反应的问题
+* 修复了树枝下的{{tr|blocks}}无法被锤击或致动的问题
+* 修复了可在面向右但不能在面向左的斜坡{{tr|blocks}}上放置{{tr|torches}}的问题
+* 修复了{{tr|Luminite Brick}}边缘不正确导致其无法正常融合的问题
+* 修复了一些与{{tr|Team Blocks}}有关的问题，这些问题源于不再使用的机制
+* 修复了使用{{tr|explosives}}立刻摧毁{{tr|moss}}不会掉落{{tr|stone}}的问题
+* 修复了{{tr|Drill Mount}}可以锤击其他情况下无法锤击的{{tr|tiles}}，如{{tr|Traps}}这一问题
+* 修复了未经锤击的{{tr|dirt blocks}}被已锤击的{{tr|dirt blocks}}在两边包围时显示不正确的视觉问题
+* 修复了{{tr|Rainbow Bricks}}被锤击时失去彩虹效果的问题
+* 修复了大块放置的{{tr|spikes}}中心会变黑的问题
+* 不同种类的{{tr|cloud blocks}}现在可互相融合
+* 修复了斜坡形态的{{tr|Rain}}/{{tr|Snow Clouds}}在角处不会下雨/下雪的问题
+* 修复了一处极为稀有的崩溃问题：{{tr|meteorites}}可落入神庙中，摧毁暴露于{{tr|surface}}的{{tr|Lihzahrd Bricks}}
+* 修复了斜坡样的{{tr|Inactive Stone blocks}}会在下次进入{{tr|world}}时变回非斜坡状态的问题
+* 修复了将{{tr|Eternia Crystal}}放置于生成点后在{{tr|Old One's Army event}}期间内重生会破坏{{tr|crystal}}的问题
+* 修复了{{tr|ice}}钟乳石离正确位置有一定距离的问题
+* 修复了站在{{tr|chest}}下特定高度处会使你打开它后立刻关闭的问题
+* 修复了部分{{tr|chests}}的鼠标控制区域相比其他的小得多的问题
+* 修复了部分{{tr|Dressers}}不适用快速堆叠到附近的箱子的问题
+* 修复了将电线连接至{{tr|Lanterns}}基部只能部分而非全部关闭之的问题
+* 修复了在各种形状的被锤击的{{tr|block}}的侧面和底部放置{{tr|Teal Pressure Pads}}时出现的一些异常
+* 修复了{{tr|Lamp Post}}对房屋来说不是有效照明的问题
+* 将地图鼠标悬停文本添加到许多没有它们的{{tr|tiles}}中，包括{{tr|Geysers, Wire Bulbs, and Enchanted Nightcrawler Cages}}
+* 修正了一些画得太低/太偏的{{tr|tiles}}，例如一些{{tr|clocks, chandeliers, Green mushrooms, and chairs}}。
+* 修复了一个可以把{{tr|trap door}}放在身上的问题
+* 修复了大量{{tr|furniture items}}无法放置在楼梯和平台交叉处的问题
+* 修复了可以使用{{tr|actuators}}提前打破[[{{tr|Lihzahrd Altar}}]]的问题
+* {{tr|Sunflowers}}现在可以放置在{{tr|walls}}的前面
+* 修复了{{tr|Gravestones and Jungle Plants}}在下方{{tr|block}}被致动时不被摧毁的问题
+* 修复了{{tr|armors}}的{{tr|Mannequins}}复制法
+* 修复了{{tr|torches}}直接插在{{tr|door}}上方的{{tr|blocks}}上的情况下开{{tr|door}}时火把会“晃动”的问题
+* 修复了{{tr|campfires}}可被关闭，浸入水中，然后再在水底重新亮起和多人模式中{{tr|water}}打开/关闭{{tr|campfires}}行为的不稳定性问题
+* 修复了一个很难碰见的问题，当将大量{{tr|Christmas Trees}}放置于不同灯光水平下时会导致其中一部分发光的问题
+* 修复了一个{{tr|tile}}问题，{{tr|gravestones}}在下方的{{tr|block}}被锤击后无法摧毁
+* {{tr|Strange Plants}}现在应该会在{{tr|Metal Detector}}上显示出来
+* 修复了{{tr|Jungle and Mushroom Plants}}会在被致动的{{tr|mud}}上继续生长，导致其{{tr|items}}立刻落下并处于待收集状态的问题
+* 修复了游戏中大量{{tr|platforms}}被打破时产生错误的灰尘的问题
+* 修复了仅有部分{{tr|pots}}中的炼金{{tr|herbs}}可被{{tr|smart cursor}}替换为新{{tr|seeds}}的问题
+* 修复了一处多人游戏问题，打开{{tr|trap door}}使其与楼梯重叠将使楼梯的该部分永久不可见，直到服务器重置
+* 修复了{{tr|Pink Prickly Pear}}花即使在感染变种的{{tr|cacti}}上也总是绿的的问题
+* 修复了一处与{{tr|item frames}}相关的重复崩溃问题
+* 修复了一处与{{tr|teleporters}}相关的重复崩溃问题
+* 修复了一处与{{tr|doors}}相关的重复崩溃问题
+* 修复了一个可能很严重的当将{{tr|furniture}}放置于{{tr|Ice Blocks}}顶部然后离开{{tr|world}}时出现的{{tr|world}}崩溃问题
+* 修复了无法将{{tr|block}}放置于单个孤立背景{{tr|wall}}上的问题
+* 修复了{{tr|Dungeon Tile walls}}的一个视觉问题，该问题使{{tr|Dungeon Tile walls}}看起来像是实心的{{tr|walls}}没有完全填满
+* 修复了{{tr|Green, Blue, and Pink Dungeon walls}}被摧毁时产生{{tr|dirt}}对应的灰尘的问题
+* 修复了{{tr|Underground Desert Walls}}容易持续被相反的感染性{{tr|biome}}重复感染的问题
+* 修复了{{tr|Player}}放置的{{tr|Obsidian Brick Walls}}比自然生成的{{tr|Obsidian Brick Walls}}暗得多的问题
+* 修复了{{tr|Marble Walls}}的框架问题，该问题导致其具有不需要的线条
+* 修复了{{tr|Mushroom Wall}}对于{{tr|housing}}无效的问题
+* 修复了{{tr|Bone Walls}}有时过大且分层不正确的视觉问题
+* 修复了{{tr|Iron Fences and Sails}}不被认作有效的{{tr|housing walls}}的问题
+* 修复了一处与{{tr|wall}}有关的问题，该问题导致{{tr|Luminite Walls}}之上若有{{tr|block}}则前者角落处会消失
+* 修复了带有{{tr|torches}}的{{tr|backwalls}}会被一击摧毁，即使本需要多于一次锤击才能被摧毁的问题
+* 修复了{{tr|Smart Cursor}}会试图在{{tr|Wall of Flesh}}前摧毁{{tr|Demon Altars}}后方的{{tr|wall}}，但反而击中{{tr|altar}}，造成伤害的问题。现在不会以这些{{tr|walls}}为目标。
+* 修复了{{tr|Deep Sky Blue paint}}在部分{{tr|tiles}}实际上是深绿色的问题
+* 修复了被油漆的{{tr|grass blocks}}不总是能正确的将油漆传播到附着的{{tr|tall grass, flowers and vines}}的不一致情况
+* 修复了若干与{{tr|waterfalls}}和斜坡{{tr|blocks}}相关的问题
+* 修复了{{tr|water}}会持续被重叠在{{tr|minecart track}}上的{{tr|lava}}破坏的问题。在这种情况下，{{tr|Obsidian}}（和{{tr|Honey}}/{{tr|Crispy Honey}}）现在会适当形成，破坏轨道
+* 修复了从斜坡上流下的{{tr|waterfalls}}有时会穿过一个{{tr|block}}从另一边出来的问题
+* 修复了特定{{tr|items}}无法像看起来应当那样放置于{{tr|Weapon Racks}}上的不一致问题
+* 修复了{{tr|The Grand Design}}无法被放入{{tr|Item Frames}}的问题
+* 修复了放置太多{{tr|torches}}会使得一处住所因缺少有效空间而变为无效的问题
+* 修复了{{tr|houses}}本来空间足够，但在{{tr|plants}}从装饰的{{tr|clay pot}}中长出来后空间就不够了的问题
+
+=== {{tr|NPCs}} 和{{tr|Enemies}} ===
+* 修复了与{{tr|Duck Statues}}有关的臭名昭著的漏洞。不不不，我们没有移除{{tr|Ducks}}。你们这群人的脑子真是不好使。（No, we did not remove Ducks. You people are silly.）
+* 修复了{{tr|statues}}生成的{{tr|Bunnies}}在{{tr|party}}期间不戴上{{tr|Party Hats}}的问题
+* 修复了可将{{tr|critters}}释放入实心块的问题，这糟透了
+* 修复了{{tr|Lucky Coin}}和其升级品对{{tr|Statue}}生成的{{tr|enemies}}仍然有效的多人模式漏洞
+* 修复了大量{{tr|enemy}} AI 从{{tr|statues}}中生成时会离开，因其不在自己对应的{{tr|biome}}的问题
+* {{tr|Town NPCs}} 不再会粗鲁的行走于{{tr|Dynasty Tables}}上
+* 修复了若干 NPC 无法正确被{{tr|King Statues}}/{{tr|Queen Statues}}召唤的问题
+* 修复了{{tr|Bubble Block houses}}不可靠，NPC 会搬出来的问题
+* 修复了 NPC 行走于{{tr|blocks}}正上方的{{tr|platform}}上面时会在{{tr|platform}}上面上下弹跳的问题，但仅在向左走才如此
+* 改进了与大量站在家具前方的 NPC 交谈时不需要的双重交互问题
+* 修复了打开房间门会因占用太多空间而使得 NPC 的房屋无效化的问题
+* 修复了{{tr|Real Estate Agent achievement}}在最后一位 NPC 是被解救而非搬入时不能解锁的问题
+* 修复了穿上{{tr|Frost Armor}}的{{tr|Frostburn}}也会应用在友方 NPC 的攻击上的问题。还修复了穿着{{tr|Frost Armor}}会使得{{tr|Pirate}}的{{tr|attacks}}对你的 NPC 造成{{tr|Frostburn}}的问题。
+* 修复了当敌怪接近安全的居住在房屋中的 NPC 所在房屋时 NPC会开始恐慌并逃离的问题（看向{{tr|the Guide}}）
+* 修复了{{tr|Tax Collector}}从地图底部掉出但不死亡的问题
+* 修复了 NPC 的房屋旗帜在半物块上时无法传送回家的问题
+* 修复了 NPC 可能走进死角并卡住后快速旋转的问题
+* 修复了{{tr|Tax Collector}}喜欢{{tr|parties}}的问题。显然是 OOC 了。
+* 修复了{{tr|Traveling Merchant}}在附近{{tr|surface}}被{{tr|minecart tracks}}覆盖时永远不会前来的问题
+* 修复了{{tr|Nurse}}会卡在水中并无限治疗自己防止溺死的问题
+* {{tr|NPCs}} 不再会对隐身状态下的你发表情
+* {{tr|King Slime}}不再快速传送并蹲死亡玩家的出生点
+* 修复了{{tr|King Slime}}有时太大的多人模式问题
+* 修正了{{tr|King Slime}}的{{tr|minions}}在{{tr|underground}}会掉落{{tr|Soul of Light}}或{{tr|Soul of Night}}的漏洞。
+*修复了在召唤出{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}后继续破坏暗影珠/猩红之心会再召唤出一只的问题
+* 如果她的{{tr|Larvae}}被破坏时周围没人（包括世界生成时的液体设置），{{tr|Queen Bee}}应该不再会被召唤出来并攻击你
+* 修复了{{tr|Flying Dutchmen}}的各个部分会在离玩家不同距离时消失，导致其有时自发死亡的问题
+* 修复了{{tr|Goblin Summoners}}不会像其他{{tr|Goblins}}那样让入侵音乐持续播放的问题
+* 修复了逃离暴怒的{{tr|Skeletron Prime}}可能导致其消失的问题
+* 修复了{{tr|Twins}}的{{tr|map icons}}相互混淆的问题
+* 改进了{{tr|Lihzahrd Altar}}放置的位置和{{tr|Golem}}在其上方生成的位置，降低了其生成时卡在天花板中使得将其打败更加困难的发生几率
+* 修正了{{tr|Pumpking}}在{{tr|radar}}上算作 3 个{{tr|enemies}}的问题
+* 为{{tr|Ancient Vision}}添加了死亡效果，这样其被击杀时就不会简单的消失
+* 修复了受仇恨影响的{{tr|Cultist music}}在很远的地方就会播放的问题
+* 修复了{{tr|Chlorophyte Leaf Crystal}}会持续毫无作用地对着{{tr|Celestial Sigil}}发射并意外杀死附近的{{tr|Cultist}}的问题
+* 修复了孤立的{{tr|Antlion sand balls}}降落在{{tr|Dungeon}}里并阻止{{tr|Cultists}}生成的问题
+* 修复了逐个一击杀死被动的{{tr|Cultists}}不会将其激怒的问题
+* 更改了{{tr|meteor}}的生成方式，如此一来便不会落到{{tr|Cultists}}祭拜的位置并阻止其生成
+* 功能上改进了“{{tr|Cultist}}生成区域”，以除去一些小的地牢入口会阻止{{tr|Cultists}}生成的稀有情况
+* 修复了{{tr|Celestial Pillars}}会生成在天空中很高的位置的罕见问题
+* 修复了{{tr|Celestial Invasion enemies}}不会在一大片铺满玩家放置的墙的区域生成的问题
+* 修复了一个更加常见的问题：{{tr|Celestial Pillars}}每次加载世界时都会陷入地面多一点点
+* 修复了如果你在{{tr|Moon Lord}}的中部击杀其额头上的眼睛，则其{{tr|Phantasmal Death Ray}}会持续发射的问题
+* 修复了{{tr|Dripplers and Ravens}}无法穿过{{tr|platforms}}下降的问题
+* 修复了{{tr|Red Pigrons}}无法生成在{{tr|Crimson Ice}}中的问题
+* 修复了{{tr|Mothron}}常在午夜消失的多人模式问题
+* 修复了爬墙的{{tr|the Possessed}}会在日食期间蹲死亡玩家的出生点的问题
+* 修复了{{tr|Antlions}}会生成在{{tr|background}}是{{tr|sandstone}}的任何地方的问题
+* 修复了{{tr|Pirate Parrots}}无法穿过{{tr|platforms}}的问题
+* 修复了{{tr|conveyor belts}}覆盖{{tr|biome spawns}}的问题
+* 修复了{{tr|platforms}}会干涉自然{{tr|biome spawns}}的问题
+* 修复了{{tr|Rainbow Slimes}}无法生成在{{tr|Hallow Blocks}}上，尽管其只能生成于{{tr|the Hallow}}的问题。它们现在常见多了。
+* 修复了{{tr|Angry Tumblers}}会将你杀死在{{tr|the desert}}，然后从数百格远的地方一直追踪你，并在生成点再次攻击你的问题
+* 修复了{{tr|Lost Girl}}可掉落{{tr|coins}}但{{tr|Nymph}}不行的问题。这也适用于{{tr|Slimer}}以及若干其他变换形态的{{tr|enemies}}。
+* 修复了可变换形态的{{tr|enemies}}（{{tr|Spiders, Slimer, Lost Girl}}）专家模式中在拾取金钱后变换形态会丢失金钱的问题
+* 修复了{{tr|Clown and Skeleton Merchant}}不是{{tr|rare enemies}}的问题
+* 修复了{{tr|Goblin Warriors}}和若干其他相似的{{tr|enemies}}会从 3 格高的通道地面掉下去的问题
+* 修复了一些四足敌怪在跑进特定的死胡同中时会穿过{{tr|blocks}}落下去的问题
+* 修复了两只同种的{{tr|worm enemies}}会在二者中间显示一个单独的{{tr|health bar}}并显示二者平均{{tr|health}}的问题
+* 修复了{{tr|Wall Creepers and Granite Golems}}使用错误音效的问题
+* 修正了{{tr|Demons}}会发出声音而{{tr|Voodoo Demons}}不会的问题。
+* 修复了爬墙的{{tr|enemies}}可被造成{{tr|confusion}}但表现却不似如此的问题
+* 修复了{{tr|Bone Javelins}}击中{{tr|enemy}}但未引发随时间而造成伤害的效果，而是对下一个敌怪造成该效果的问题
+* 修正了{{tr|Sroller}}的碰撞框偏离中心的问题
+* 修复了{{tr|Drakanians}}不掉落{{tr|Drakomire Rider banner}}的问题
+* 修复了{{tr|Angry Tumblers}}视觉上会被绘制在{{tr|doors}}和被致动的{{tr|blocks}}后面导致难以看见它们的问题
+* 修复了{{tr|Stardust Cells}}有时候异常地大的问题
+* 修复了{{tr|Stardust Cells}}无法穿过{{tr|platforms}}的问题
+* 修复了{{tr|Solar Selenians}}不在{{tr|Tally Counter}}上显示的问题
+* 修复了大{{tr|zombies}}稍有陷入地面的视觉问题
+* 修复了{{tr|enemy}}弓箭手在{{tr|Confused}}状态下会以高速逃离的问题
+* 修复了爬墙的{{tr|Blood Crawlers and Sand Poachers}}的碰撞框偏离中心的问题
+* 修复了{{tr|Wither beasts}}在多人模式中受攻击时有时会失同步且消失的问题
+* 修复了"{{tr|Ghost Mode}}"下的{{tr|Old One's Army}}{{tr|enemies}}会导致不寻常的水波的问题
+
+=== {{tr|Projectiles}}、{{tr|Pets}}、和{{tr|Minions}} ===
+* 修复了过多的{{tr|Possessed Hatchets}}和特定{{tr|Minions}}会导致{{tr|Possessed Hatchets}}大量堆叠的问题
+* 修复了{{tr|Flame Trap}}的{{tr|flames}}会攻击到{{tr|Flame Trap}}后方、下方和上方的目标的问题
+* 修复了特定{{tr|projectiles}}会导致{{tr|Striking Moment}}发生两次的问题
+* 修复了{{tr|Seedler nuts}}会得到{{tr|Magic Quiver}}的{{tr|arrow speed bonus}}的问题
+* 修复了{{tr|Chain Guillotine}}的碰撞箱奇形怪状的问题
+* 修复了{{tr|Yoyos}}在水中时可能卡在{{tr|blocks}}之间的问题
+* 修复了{{tr|Yoyos}}在高{{tr|melee speeds}}时表现越来越不稳定的问题，最终导致它们完全断裂并无法使用
+* 修复了{{tr|Daybreak and Bone Javelin Spears}}在{{tr|Flying Dutchman}}后面错误叠加的问题
+* 修正了如果你的攻击一击杀死目标，{{tr|Daybreak}}不会传播其{{tr|debuff}}的问题。现在即使攻击一击杀死目标，也会将{{tr|debuff}}传播给附近的敌人。
+* 修正了一个{{tr|multiplayer}}问题，即{{tr|Dart Traps projectiles}}无法正确激活{{tr|Portal Turrets}}
+* {{tr|Nimbus Rod}}和{{tr|Crimson Rod projectiles}}现在更不可能穿过{{tr|blocks}}
+* 修复了{{tr|Book of Skulls projectile}}在高光情况下过度闪烁的问题
+* 修复了与{{tr|Ice Rod}}导致极大地掉帧的一个问题
+* 修复了{{tr|Vampire Knives}}靠在{{tr|wall}}上时不会开火的问题
+* 修复了{{tr|Falling Stars}}会穿过{{tr|conveyor belts}}并最终嵌入{{tr|dirt}}中的问题
+* 修复了投掷大量{{tr|Spelunker Glowsticks}}会为每个{{tr|glowstick}}产生各自的闪光，最终使宝藏闪光太多的问题
+* 修复了{{tr|Fungi Bulb}}的{{tr|projectiles}}在{{tr|Expert}}模式中行为奇怪，且不太有效的问题
+* 修复了{{tr|Stardust Dragon}}会离开屏幕边缘并消失的问题
+* 修复了{{tr|Stardust Dragon}}的头与其他部分的排列顺序错误的图层问题
+* 修复了{{tr|Spider Minions}}算作的{{tr|minion}}数少于 1 的问题
+* 修复了{{tr|Pirate Minions}}落在后面时不能跟上，且总的来说很愚蠢的问题
+* 改进了{{tr|Spider Minion and Spider Pet}}处理一格高的{{tr|walls}}的方法，防止它们原地发抖
+* 可能修复了一个稀有的问题：{{tr|flying Pygmy minions}}在攻击{{tr|enemy}}时浸入{{tr|lava}}会变成一条黑色的直线
+* 修复了{{tr|minions}}会用身体切割若干种{{tr|tiles}}，如{{tr|cobweb}}或{{tr|grass}}的问题
+* 修复了{{tr|Companion Cube}}会在狭窄的走廊里不断跳跃的问题
+* 修复了{{tr|Old One's Army pets}}以一定角度浮空时边缘和缩放都很粗糙的视觉问题
+* 修复了{{tr|Tiki Mask pet}}浸入水中时剧烈抖动的问题
+* 修复了{{tr|Cursed Sapling Pet}}通过{{tr|item}}进行召唤时不会显示{{tr|dyes}}的问题
+
+=== {{tr|Inventory}}、{{tr|Menu}}、和{{tr|Tooltips}}/文本 ===
+* 修复了{{tr|Shroomite Breastplate}}的提升 13% {{tr|ranged damage}}的效果没有在{{tr|Tooltips}}中列出的问题
+* 修复了{{tr|Paladin's Shield}}有对击退免疫的效果，但{{tr|Tooltips}}中并未指出这一点的问题
+* 修复了{{tr|Spider Armor}}的{{tr|Tooltips}}给出了错误的伤害提升百分比的问题
+* 修复了{{tr|Suspicious Looking Tentacle}}没有使用"{{tr|Expert}}"专属的标签和{{tr|rarity color}}的问题
+* 在整个游戏中修复和解释了数以百计的其他{{tr|item}}和{{tr|armor}}的{{tr|tooltips}}以给予更详细的数字或解释，并使用了更具一致性的术语
+* 修复了一系列不正确/不一致的{{tr|item rarities}}，当然为超过 5000 件{{tr|items}}划分{{tr|item rarities}}是一种困难的科学，不一致性的存在是一种必然
+* 在整个游戏中修复了一系列错别字，拼写错误，空格和标点问题，还润色了一般的{{tr|tooltip}}，对白还有文本
+* 分别重命名{{tr|Snowfall}}和{{tr|Sandfall}}为事实上的“{{tr|Snowfall Blocks}}”还有“{{tr|Sandfall Blocks}}”
+* 修复了大量{{tr|projectiles}}拥有不正确命名，在它们杀死{{tr|player}}时会展示它们的内部命名ID的问题
+* {{tr|Coins}}现在只会在使用者拥有{{tr|Coin Gun}}时展示它们的伤害
+* 修复了一些合成钱币的复杂问题，包括{{tr|coin}}在快速堆叠进{{tr|Piggy Banks}}时会消失的问题
+* 修复了即使在从{{tr|Coin slots}}中快速堆叠被禁用时，从{{tr|inventory}}快速堆叠{{tr|Coins}}仍然被允许的问题
+* 修复了{{tr|Etherian mana}}可以在{{tr|invasions}}之间被大量地储存在{{tr|chests}}里的问题
+* 修复了游戏中当关闭{{tr|inventory}}时频繁地自动地默认定位到{{tr|Hotbar 9}}的问题
+* 修复了右键拿起一个单独的收藏物品时会移除它的{{tr|favorite status}}的问题
+* 修复了{{tr|players}}可以将{{tr|large gems}}放入{{tr|trash}}槽以防止在死亡时丢失它们的问题
+* 修复了放置{{tr|Music Box}}或{{tr|Fish Bowl}}时会暂时地禁用一些{{tr|inventory}}功能的问题，这是来自它们也是{{tr|equipment}}的副作用
+* 修复了重命名{{tr|chests}}时信息{{tr|accessory}}图标消失的问题
+* 修复了左侧边栏按钮具有异常间距的问题
+* 修复了 {{tr|PVP}} 按钮和{{tr|Dye slots}}之间略有重叠的问题、
+* 修复了打开{{tr|chests}}可能会造成信息{{tr|accessory}}图标移动的问题
+* 修复了{{tr|Hardened Sand}}是一种{{tr|crafting material}}但不显示为{{tr|Material}}的问题，并且使被感染的{{tr|Hardened Sands}}也能制作为{{tr|Glass}}了
+* 修正了{{tr|Glass Clocks}}有两个{{tr|recipes}}的问题
+* 修复了{{tr|Tax Collector's set}}被两个不同的 {{tr|NPC}} 出售的问题
+* 修复了{{tr|Tin Hammer}}不能被{{tr|reforge}}的问题
+* 修复了在{{tr|inventory}}满时关闭{{tr|inventory}}会导致{{tr|weapons}}丢失{{tr|prefix}}的问题
+* 修复了{{tr|weapons}}会生成一个不可见的临时{{tr|prefix}}的问题，主要现象是它们的{{tr|rarity color}}会和正常的不同，直到{{tr|world}}被重新加载
+* 修复了{{tr|Hermes Boots}}在{{tr|Normal mode}}处于第六位{{tr|accessory slot}}时会以某种方式放出{{tr|dash}}的声音，即使没有{{tr|dash}}
+* 修复了第六位{{tr|accessory slot}}的{{tr|dye}}在普通模式下会偶尔作用于其它{{tr|accessory}}的问题
+* 修复了{{tr|Dresser}} UI 界面仅显示通用{{tr|hair}}而不是当前{{tr|hair}}的问题
+* 修复了当死亡时获得{{tr|achievements}}，在其上点击时，游戏不会展示{{tr|achievement menu}}
+* 现在应该更难双重绑定键盘输入并锁定菜单，但已经这样做的人仍然需要删除或修改输入配置文件来修复这个问题
+* 修复了当{{tr|player}}手持{{tr|torch}}退出{{tr|world}}时会导致{{tr|player menu}}中的角色也手持火把的问题
+* 修复了当自动暂停打开时角色游玩时间不会增加的问题
+* 修复了允许创建过于长的角色名称的问题
+* 修复了{{tr|Achievement}}分类按钮没有音效的问题
+* 修复了当{{tr|background}}可见时，{{tr|Celestial backgrounds}}会在退出后在{{tr|main menu}}上额外维持一段时间的问题
+* 修复了一个恼人的声音问题，涉及角色创建滑块在鼠标悬停在它们上面时发出重复的噪音，或者根本没有声音
+* 修复了视差设置会持续地重设到 99% 而非 100% 这个臭名昭著的小问题
+* 修复了当移动 {{tr|NPC}} 并且拿着{{tr|tool}}时会同时显示 {{tr|NPC}} 的头和{{tr|tool cursor}}的问题
+* 修复了{{tr|Angler}}不会说大部分对白的问题
+* 修复了{{tr|multiplayer}}下{{tr|Angler}}的对白根本不会列出{{tr|world name}}的问题
+* 修复了一些不一致或不准确的{{tr|Fishing Quest}}对白的文本问题
+* 修复了 {{tr|NPC}} 在{{tr|Crimson worlds}}提及{{tr|Corruption/Demon Altars}}的一些持续问题
+* 修复了按住shift键点击{{tr|item}}放入{{tr|Guide}}或{{tr|Goblin Tinkerer}}的特殊{{tr|slots}}不会发出声音的问题
+* 修复了特殊文本代码（物品图标和颜色）在{{tr|chest}}的文本中不会工作的问题
+* 改进了聊天中换行符和文本颜色的一些问题
+* 修复了聊天时，如果在按下最后一个键后立即按 Enter 键，则会在发送消息后再次使用该键，导致有时会激活{{tr|Potions or Mounts}}等热键的问题
+* 修复了在{{tr|Banner Buff}}上移动鼠标而近乎极多的{{tr|banners}}会以丑陋的方式切断文本的问题
+* 修复了一些导致{{tr|minimap}}和其他 UI 元素重叠并允许同时点击两个按钮的 UI 比例/分辨率问题
+* 改进了 UI 如何为拥有小显示器的人缩放的问题，防止其切断底部的 UI
+* 修复了尝试打开漂浮在{{tr|chest}}上的{{tr|Money Trough}}时始终打开{{tr|chest}}的问题
+* 修复了{{tr|Soul items}}和{{tr|Yoraiz0r's Scowl/Spell}}的{{tr|item}}鼠标悬停文本在{{tr|item}}上方非常高的问题
+* 修复了在 Linux 系统中，某些特定输入会被视为重复输入，并在游戏中做出无意义行为的问题
+* 修复了按 alt+ tab 键退出游戏后，在屏幕上移动光标会听到游戏中的设置选项上发出可闻的咔哒声的问题
+
+=== 崩溃和其他非常严重的问题 ===
+* 添加了针对{{tr|Chests}}在最初世界生成时生成在{{tr|Bee Larvae}}的保护机制，这种生成最初会导致世界生成时的立刻崩溃
+* 可能修复了一个 Mac 独有的崩溃问题，游玩大约 15-20 {{tr|minutes}}时有可能崩溃
+* 修复了几十个世界生成时卡住/崩溃的问题，并连续几天运行数千次世界生成以捕获尽可能多的问题
+* 修复了一个潜在的崩溃问题，如果您开始生成一个世界然后收到 Steam 邀请，尝试加入该邀请通常会使您的世界崩溃，或者有其他混乱的副作用，例如向您展示部分生成的世界
+* 修复了在重力反转状态下使用{{tr|Life Drain}}时潜在的崩溃问题
+* 修复了在某些世界杀死{{tr|Wall of Flesh}}时发生的与{{tr|achievement}}相关的崩溃
+* 修复了若将人物命名为 “.”或“..” 可能导致游戏存档文件夹被直接删除的严重问题
+* 修复了 Mac 的专用服务器文件没有正确安装的问题
+* 修复了一个罕见的崩溃，涉及{{tr|Giant Tortoises}}不能很好地处理倾斜的{{tr|tile}}
+* 修复了一个崩溃问题，如果您没有 Captures（截图） 文件夹，尝试通过游戏中的按钮访问 Captures 文件夹会导致游戏崩溃
+
+=== {{tr|Multiplayer}} ===
+* 修复了一个服务器问题，在达到服务器最大容量后，即使有人离开，也没有人可以加入服务器
+* 修复了一个服务器问题，将密码设置为包含一个或两个引号会阻止用户加入
+* 在尝试通过 Steam 加入多人游戏会话时，创建一个新角色不会再让你在游戏结束后回到单人游戏菜单
+* 改进并有望修复多人游戏中所有人，尤其是{{tr|King Slime and Eater of Worlds}}的 Boss 袋不会掉落的问题
+* 修复了加入服务器的玩家看不到一些已存在的{{tr|projectiles}}的问题
+* 修复了一个多人游戏的问题，当一个新{{tr|player}}加入游戏时，被抓在墙上的{{tr|player}}会经常从墙上掉下来
+* 修复了{{tr|Bee Mount}}不与服务器同步其悬停状态，导致其他{{tr|player}}不寻常的视觉问题的错误
+* 修复了在多人游戏中，在上方放置{{tr|block}}、用{{tr|Staff of Regrowth}}收割、用{{tr|seeds}}替换或者以其他方式收割炼金{{tr|herbs}}不能产生所有预期的{{tr|seeds and herbs}}的问题
+* 修复了一个多人游戏的问题，在打开陷阱门时，放置在陷阱门上方的{{tr|Signs}}会复制且表现怪异
+* 修复了一个长期存在的多人游戏问题，即如果{{tr|signs and gravestones}}是在该会话中创建的，则不会为其他玩家显示鼠标悬停文本
+* 修复了一个多人游戏的问题，{{tr|Frost Legion}}完成标志没有在服务器上正确设置，这阻止了玩家从{{tr|Clothier}}处购买特殊帽子
+* 修复了一个多人游戏的问题，{{tr|Ghost}}形态的{{tr|Hardcore players}}在其他{{tr|player}}处不会正确更新
+* 修复了一个多人游戏的问题，站在{{tr|platform}}上的{{tr|critters}}在{{tr|night}}会持续掉下再传送回{{tr|platform}}上面
+* 修复了一个多人游戏的问题，{{tr|players}}无法看见别人挥舞{{tr|Old One's Army sentry staves}}
+* 修复了一个多人游戏的问题，{{tr|Brand of the Inferno}}的特殊动画效果和声音不会展示给其他{{tr|players}}
+* 修复了一个多人游戏的问题，{{tr|Vilethorn}}型的{{tr|weapons}}的声音不会播放给其他{{tr|players}}
+* 修复了一个多人游戏的问题，打破特定类型的{{tr|blocks}}不发出声音效果
+* 修复了{{tr|player sensors}}在{{tr|multiplayer}}不发出声音的问题
+* 修复了一个多人游戏的问题，{{tr|Dungeon Guardian and Skeletron}}不会咆哮
+* 修复了一个多人游戏的问题，恰好只挥舞一次{{tr|Solar Eruption}}声音不会播放给其他{{tr|players}}
+* 修复了在{{tr|Multiplayer servers}}时若干视觉和音频上关于{{tr|Sky Fracture}}的同步
+* 修复了游戏中聊天玩家头上的文本无法正确地 UI 比例同步缩放的问题
+* 修复了在多人游戏中{{tr|Portal Gun Stations}}和{{tr|Portal Guns}}不发出声音的问题
+* 修复了多人游戏中{{tr|Portal Gun portals}}被射入未加载区块时无法正常工作的问题
+* 修复了一个多人游戏的问题，其中{{tr|Portal Gun portals}}可能相互重叠并导致不一致的行为
+* 修复了死亡的{{tr|Hardcore}}角色可以查看地图的漏洞
+* 修复了一个多人游戏的问题，在 PVP 中由莫洛托夫造成的{{tr|On Fire!}}不正常起作用
+* 修复了一个问题，在 PVP 中被{{tr|Inferno Potion}}杀死会宣布你被杀人者手中的任何东西杀死，比如{{tr|cell phone}}
+* 修复了一些与{{tr|Solar Armor}}爆炸相关的 PVP 不同步问题
+
+=== {{tr|Gamepad}} {{tr|Bugs}} 和功能问题 ===
+* 修复了在使用{{tr|Gamepad}}时{{tr|Stylist}}的菜单不明确显示你正在选择哪种发型的问题
+* 修正了使用{{tr|Gamepad}}时一些与{{tr|grapple}}有关的不准确的屏幕按钮帮助文本
+* 修复了使用{{tr|Gamepad}}切换回键盘和鼠标时，锁定图标会卡住的问题
+* 修复了一个问题，如果{{tr|player}}在使用{{tr|Gamepad}}时抓到{{tr|minecart track}}上，尝试使用{{tr|minecart}}会射出另一个{{tr|hook}}并让他们挂在两者之间
+* 修复了屏幕上的{{tr|Gamepad}}放大/缩小文本使用相反按钮的问题
+* 修复了一个按 A 进入某些子菜单会无意中切换其他子菜单中的设置的{{tr|Gamepad}}设置问题，
+* 修复了使用{{tr|Gamepad}}时{{tr|Trash}}按钮没有任何反应的问题
+* 修复了在使用{{tr|Gamepad}}时，在{{tr|rope}}上采矿使{{tr|player}}的采矿距离变短的问题
+* 修复了在某些菜单中输入文本时从{{tr|Gamepad}}到键盘/鼠标来回切换会输入“虚化”字母的问题
+* 修复了如果您打开可见的房屋图标然后切换到键盘/鼠标，您在使用{{tr|Gamepad}}时无法再次关闭它们的问题
+* 改进了一些关于瞄准{{tr|blocks}}时的与{{tr|torches and pickaxes}}有关的{{tr|Gamepad}}{{tr|Smart Select}}机制
+
+{{patchlist}}
+
+== 备注 ==
+* 尽管 [[Re-Logic]] 将此版本称为“1.4.0.1”，但他们实际上将{{tr|Terraria}}的可执行文件的版本标记为 1.4.0.0。“[[1.4.0.2]]”发行版也是如此。
+
+== {{tr|Trivia}} ==
+* 发布 [[1.3.5.3]] 和发布 1.4.0.1 之间的间隔天数是 1,117 天，是{{tr|Terraria}}两次更新之间间隔最长的。相比之下，[[1.0|游戏发布]]和 [[1.2.4.1]] 的发布之间间隔是 1,096 天。
+* 此更新还保持着单次更新添加最多物品的记录，添加了 1,113 个物品，超过了 [[1.2]] 的 1,010 种。
+* 根据{{tr|sprite}}图片列表，第一个添加的物品是[[{{tr|Celebration Mk2}}]]，然后是[[{{tr|Spider furniture}}]]。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.4.0.1}}

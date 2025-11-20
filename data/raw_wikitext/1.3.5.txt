@@ -1,0 +1,71 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| release = 4/19/2017
+| ref = {{forums thread|pc-1-3-5-is-live.56657|PC 1.3.5 is Live!}}
+}}
+{{tocright}}
+
+'''1.3.5''' 更新了语言翻译、4K 分辨率支持、UI 比例和新的[[{{tr|furniture}}]]。
+
+== 特性 ==
+* 对以下的[[设置#语言|语言]]进行了更好的本地化:
+** 德语
+** 意大利语
+** 法语
+** 西班牙语
+** 俄语 (新增)
+** 简体中文 (新增)
+** 巴西葡萄牙语 (新增)
+** 波兰语 (新增)
+* 大大提高了游戏渲染效果，而且游戏现在支持在 1080P 及以上分辨率运行
+* 在游戏的设置菜单中增加了用以调节界面缩放和UI比例的滑块。
+* 将大部分原处于主菜单的[[{{tr|settings}}]]移动到设置菜单的下级菜单中。
+* 现在新生成世界的地牢中会摆放着新的家具。
+* 添加了一套水晶家具，而且扩展了别的[[{{tr|Furniture sets}}]]。
+* 增添了[[Re-Logic#Arkhalis|Arkhalis]]和[[Leinfors]]的开发者盔甲。
+* 被玩家手动安排到房间的 NPC 复活后会回到曾被安排的那个房间
+* 提高了游戏在 Mac OS X和 Linux 系统上的稳定性
+* 提高了很多东西的视觉效果。
+* 改变复古[[照明模式]]的连贯性。
+* 不可用的房间现在有了新的错误提示。
+
+== 修正 ==
+* 修复了设置按钮与盔甲图标重合的 {{tr|BUG}}
+* 修复了[[{{tr|Sand Poacher}}]]和[[{{tr|Granite Golem}}]]的名称错误显示的 {{tr|BUG}}
+* 修复了[[{{tr|Banners (enemy)}}]]所添加的{{tr|BUFF}}在状态栏会超出屏幕边界的 {{tr|BUG}}
+* 修复了反手手套和女性角色的盾牌配件的图片
+* 修复了[[{{tr|Sparky}}]]等稀有绘画作品不会正常生成的 {{tr|BUG}}
+* 修复了一种会使多人游戏崩溃的 {{tr|BUG}}
+* 修复了鼠标悬浮文本框会在设置和镜头菜单中一直处于光标下方的 {{tr|BUG}}
+* 修复了一个导致在 Linux 上生成世界会崩溃的 {{tr|BUG}}
+* 修正了一些 {{tr|NPC}} 对话中的小小语法错误
+* 修复了某个崩溃问题
+* 修复了[[{{tr|Trapped Granite Chest}}|{{tr|Granite}}]]和[[{{tr|Trapped Meteorite Chest}}]]被破坏时会掉落不正确物品的 {{tr|BUG}}
+* 修复了[[{{tr|Vortex Monolith}}]]售价过低的 {{tr|BUG}}
+* 修复了在聊天中将{{tr|items}}匹配上不合理的{{tr|prefix}} ID 就会崩溃的问题
+* 修复了[[{{tr|Pumpkin Shirt}}]]和[[{{tr|Robot Shirt}}]]在装备时腿会消失的 {{tr|BUG}}
+* 修复了[[{{tr|Defender's Forge}}]]从下面打开时会立即关闭的 {{tr|BUG}}
+* 修复了{{tr|Terraria}}失焦时感应不到的问题
+* 修复了[[{{tr|the Grand Design}}]]和[[{{tr|Multicolor Wrench}}]]使用时的发光
+* 修复了为服务器自动创建世界总是使用相同种子的问题
+* 修复了[[{{tr|Platinum Candelabra}}]]在其他物体上不正确的放置
+* 修复了[[{{tr|Goblin Tinkerer}}]]比设计的小一号的问题
+* 修复了由[[{{tr|Stoned}}]]引发的[[{{tr|Death}}|{{tr|death messages}}]]的很长一段时间以来的损坏问题
+* 修复了[[{{tr|Wall Creeper}}]]在溅血功能关闭时还会掉落血污的问题
+* 修复了[[{{tr|Xeno Staff}}]]的卖价，现在与其他{{tr|Martian loot}}一致了
+* 修复了鼠标滑过地图上的{{tr|chests and dressers}}发生的崩溃问题
+* 修正了{{tr|settings button}}和第六个{{tr|accessory dye slot}}重合的问题
+* 修复了[[{{tr|Corruption Thorny Bush}}|{{tr|Corrupt Thorns}}]]几乎不会生成的问题
+* 修复了与{{tr|platform}}/{{tr|block}}交互相关的若干问题
+* 修复了{{tr|dirt}}柱子有时似乎在[[{{tr|Underground Desert}}]]上方的问题
+* 可能修复了[[{{tr|Achievements}}|马拉松奖牌得主]]导致掉帧的问题
+* {{tr|Platforms}}（来自[[1.2.4.1]]及以上版本的）损坏时现在会发出粒子特效
+* 虚拟键盘在游戏手柄不使用时不再会出现
+* 使用[[{{tr|Quick Heal}}]]来使用{{tr|restoration potions}}现在可正确的造成{{tr|mana sickness}}
+* {{tr|Defender's Forge}}现在边缘高亮
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+{{language info|en=1.3.5}}

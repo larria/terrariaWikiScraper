@@ -1,0 +1,37 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 5/31/2016
+| ref = {{forums thread|pc-1-3-1-1-hotfix.44359|PC 1.3.1.1 Hotfix}}
+}}
+{{tocright}}
+
+'''1.3.1.1''' 补丁是一次小更新，修复了若干 {{tr|bug}}，添加了跳帧选项，并使所有液体和{{tr|logic sensors}}都允许远程传送。
+
+== 生活品质 ==
+* 所有的液体 & {{tr|logic sensors}}（除“玩家出入上方”）现在都允许远程传送。
+* *为那些在 [[1.3.1]] 中出现性能问题的高端 PC 添加了第三个跳帧选项（当前的“关闭”被重命名为“不明显”，而 [[1.3]] 中的旧“关闭”被重新命名为“关闭”）。
+
+== 修复 ==
+* 修复了液体在游戏重启前都冻结在空中的问题。
+* 修复了手柄说明卡在虚拟键盘说明上面的问题。
+* 修复了两个复制漏洞。
+* 修复了[[{{tr|cannon}}]]被非玩家实体触发时不发射{{tr|cannonballs}}的问题。
+* 修复了一处小的“逻辑感应器（玩家出入上方）”的错误显示（每个方向都有 1 个像素太小）。
+* 修复了游戏摇杆选项中不正确的文本 ("Thumbstick Hotbar / "Thumbstick Cursor Snap" 应作 "DPad Hotbar" & "DPad Cursor Snap")。
+* 修复了训练假人可能会进入永久不可见的{{tr|corruption}}状态的问题。
+* 修复了游戏启动时在点击键盘按键前所有鼠标点击都不会被检测到的问题。
+* 修复了许多[[{{tr|furniture}}]]被放置于平台楼梯上时立刻被摧毁的问题。
+* 修复了若干与[[{{tr|Geyser|link=y}}|{{tr|Geyser}}]]放置有关的问题。
+* 修复了如果背景被禁用则粒子不会在捕捉模式中绘出的问题。
+* 修正了{{tr|the Guide}}的帮助提示未能正确确认[[{{tr|Demolitionist}}]]和[[{{tr|Goblin Tinkerer}}]]的问题。
+* 修正了{{tr|Grasshopper Statue}}没有{{tr|recipe}}的问题。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.1.1}}

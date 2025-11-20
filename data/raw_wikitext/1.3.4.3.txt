@@ -1,0 +1,37 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 11/18/2016
+| ref = {{forums thread|1-3-4-is-live.51316/page-24#post-1137417|1.3.4.3 修补程序}}
+}}
+
+'''1.3.4.3''' 补丁主要忙于修复 {{tr|bug}}。
+
+== 新添加 ==
+* 所有的 DD2（《地牢守护者 2》的英文简写）防御武器现在都可以有[[{{tr|Modifier}}]]啦！
+
+== {{tr|Bug}} 修复 ==
+* 可能修复了聊天不能正确的阻止{{tr|player}}移动和杂项设置的问题
+* 修复了智能光标无法正确放置{{tr|pumpkin seeds}}的问题
+* 修复了若干种{{tr|melee weapons}}在离目标极远的地方会导致掉帧的问题
+* 修复了[[{{tr|Betsy's Wings}}]]下降时意外发出弱光的问题
+* 修复了[[{{tr|Pumpkin seeds}}]]无法在摧毁上一个的前提下相邻放置的问题
+* 修复了 [[Config.json|filterPriorityThreshold]] config 设置在每一次未来更新时都重置的问题（抱歉！）
+* 修复了在某些高度使用[[{{tr|Eternia Crystal Stand}}]]时自伤性的爆炸不连续发生的问题
+* 修复了两个崩溃问题
+* 修复了[[{{tr|Luminite Bullet}}]]穿过{{tr|town npcs}} 时发光的问题
+* 修复了[[{{tr|Love Potion}}]] & [[{{tr|Stink Potion}}]]在多人模式中无法正确地对他人使用的问题
+* 修复了{{tr|magic weapons}}打到{{tr|enemies}}时造成{{tr|melee damage}}（站在{{tr|enemy}}正上方时）的罕见问题……
+* 将“[[{{tr|Skeletron}}]]已经醒来”修改为"{{tr|Skeleton}}已经醒来！"（召唤时）
+* 修复了[[{{tr|Sand Slime}}]]单人模式不出现，多人模式不同步的问题
+* 修复了某个 Linux/Mac 服务器崩溃问题
+* 修复了 3 级的[[{{tr|Old One's Army}}]]没有正确的[[{{tr|Eternia Crystal}}]]{{tr|health}}分配的问题
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.4.3}}

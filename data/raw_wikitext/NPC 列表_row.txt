@@ -1,0 +1,26 @@
+<includeonly>{{#invoke:Npcinfo|getInfo| id = {{{npcid|}}} }}
+|-
+| {{{npcid|}}}
+| {{{image|}}}
+| {{{name|}}}
+| {{#or:{{{life|}}}|{{#var:na}} }}
+| {{#or:{{{damage|}}}|{{#var:na}}}}
+| {{#or:{{{defense|}}}|{{#var:na}}}}
+| {{#or:{{{knockback|}}}|{{#var:na}}}}
+| {{{ai|}}}
+| {{#or:{{{money|}}}|{{#var:na}}}}
+| {{#if:{{{environment|}}}|{{#lstmaptemp:{{{environment|}}}|npc_infobox/environment|/|&#32;/&#32;}}|{{#var:na}}}}
+| {{#switch:1
+    |{{#dplvar:_npcinfo_townNPC}}=Town NPC
+    |{{#dplvar:_npcinfo_projectileNPC}}=Projectile
+    |{{#dplvar:_npcinfo_critter}}=Critter
+    |{{#dplvar:_npcinfo_friendly}}=Friendly
+    |#default=Enemy 
+  }}
+</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=List of NPCs/row}}
+</noinclude>

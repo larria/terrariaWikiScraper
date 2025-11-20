@@ -1,0 +1,19 @@
+{{float file box|<p>[[File:NPC Flag.png]] &nbsp; [[File:NPC Flag2.png]]</p><p>[[File:Pet NPC Flag.png]] &nbsp; [[File:Pet NPC Flag2.png]]</p>|{{tr|NPC Flag}}}}
+
+'''{{tr|NPC Flag}}'''指示了旗帜上的 [[ {{tr|NPC}}]] 所居住的[[{{tr|house}}]]，它们只有在激活[[{{tr|house}}#{{tr|housing menu}}|{{tr|Housing menu}}]]时才可见。可以通过{{tr|housing menu}}将 {{tr|NPC Flag}}放入任何适合的{{tr|house}}。{{key|open}}可以移除{{tr|house}}中的旗帜，以便重新分配{{tr|house}}。如果一间{{tr|house}}暂时不适合，旗帜不一定会出现。但如果{{tr|house}}被摧毁了，旗帜会寻找最近的适合{{tr|house}}或消失。在[[{{tr|night}}]]，{{tr|NPC}} 会站在{{tr|house}}中 {{tr|NPC Flag}}的下方位置。
+
+自发入住的 {{tr|NPC}} 会有一面红旗（{{eil|Town pets}}除外，它们会使用紫色旗帜）。在{{eversions|1.3.5.2}}中，如果玩家主动给 {{tr|NPC}} 分配{{tr|house}}，旗帜会带有金边，这表明如果当前居住在{{tr|house}}里的 {{tr|NPC}} 死亡，后续到来的相同 {{tr|NPC}} 会入住同一{{tr|house}}。因此，只有在{{tr|house}}被摧毁或 {{tr|NPC}} 被重新分配时，有金色边框的 {{tr|NPC Flag}}才会消失。
+
+== 历史 ==
+{{history|Desktop 1.3.5.2|
+** {{tr|player}}手动分配的{{tr|Town NPCs}} 的 {{tr|NPC Flag}}现在会有金色边框。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.5|手动分配至一间{{tr|house}}的 {{tr|NPCs}} 被杀死时，后续到来的相同 {{tr|NPC}} 会试图入住同一{{tr|house}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+{{language info|en=NPC flag}}

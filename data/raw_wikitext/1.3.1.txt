@@ -1,0 +1,145 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 电路与机械更新
+| release = 5/22/2016
+| ref = {{forums thread|1-3-1-mechanics-and-controller-support.43643|1.3.1 : Mechanics and Controller Support!}}
+}}
+{{tocright}}
+
+'''1.3.1'''，又称'''电路与机械更新'''，添加了大量的[[{{tr|wire}}|电路]]相关物品以及手柄支持。
+
+== 特性 ==
+* 添加了基于 Xinput 的手柄支持。
+* 添加了[[{{tr|Inventory}}]]整理。
+* [[{{tr|Dart Trap}}]]以及丛林神庙的[[{{tr|Trap}}]]现在可以被锤击，每次旋转 90 度。
+* 添加了智能交互，使得与 [[{{tr|NPC}}]] 交谈、开[[{{tr|Door}}]]以及使用物品变得更加容易。
+* [[{{tr|Cannon}}]] （包括[[{{tr|Bunny Cannon}}]]，[[{{tr|Confetti Cannon}}]]以及[[{{tr|Snowball Launcher}}]]）现在可以使用电路控制开炮了。
+* 升级了[[{{tr|Smart Cursor}}]]，使其能与更多物品交互。
+
+== 生活质量改善 ==
+* 更改了在同一{{tr|tile}}上的不同颜色的{{tr|wire}}外观，现在它们看起来更好辨别了。
+* 更改了超过 1800 个外观图像。
+* 优化了{{tr|tile}}实体的 NET 信息（[[{{tr|target dummies}}]]，[[{{tr|item frames}}]]）。
+* 更新了设置菜单并且添加了新的设置选项。
+* 添加了[[{{tr|large gem}}]]在玩家头上的显示。
+* 改进了在斜坡上使用近战武器的判定。
+* 现在可以从{{tr|inventory}}中直接使用建筑类[[{{tr|accessories}}]]，并像信息类{{tr|accessories}}一样开关其效果。
+* 为信息图标添加了边框（更加清楚明了！）。
+* 改进了按键绑定选项，现在可以绑定鼠标 3/4/5 键了。
+
+== 物品 ==
+* 添加了[[{{tr|Logic Gate}}]] （逻辑和，逻辑与，逻辑或，逻辑非，逻辑异或，逻辑非异或）。
+* 添加了[[{{tr|Logic Gate Lamp}}]]。（开，关，故障）
+* 添加了[[{{tr|Logic Sensor}}]]。（白天，夜晚，玩家）
+* 添加了[[{{tr|Liquid Sensor}}]]。（{{tr|water}}，{{tr|lava}}，{{tr|honey}}，任意）
+* 添加了[[{{tr|Conveyor Belt}}]]。
+* 添加了[[{{tr|The Grand Design}}]]。
+* 添加了[[{{tr|Yellow Wrench}}]]。
+* 添加了[[{{tr|Junction Box}}]]。
+* 添加了[[{{tr|Mechanical Lens}}]]。
+* 添加了 [[{{tr|Announcement Box}}]]。
+* 添加了[[{{tr|Actuation Rod}}]]。
+* 添加了[[{{tr|Team Block}}]]和[[{{tr|Team Platform}}]]。
+* 添加了[[{{tr|Static Hook}}]]。
+* 添加了[[{{tr|Presserator}}]]。
+* 添加了[[{{tr|Engineering Helmet}}]]。
+* 添加了[[{{tr|Companion Cube}}]]。
+* 添加了[[{{tr|Gem Lock}}]]。（7 种）
+* 添加了[[{{tr|Large Amber}}]]。
+* 添加了[[{{tr|Weighted Pressure Plate}}]]。（4 种颜色）
+* 添加了[[{{tr|Wire Bulb}}]]。
+* 添加了 12 种新的[[{{tr|critter}}]][[{{tr|statues}}]]。
+* 添加了 [[{{tr|Portal Gun Station}}]]。
+* 添加了[[{{tr|Trapped Chest}}]]。
+* 添加了[[{{tr|Teal Pressure Pad}}]]。
+* 添加了几种{{tr|enemy}}雕像。
+* 添加了[[{{tr|Angler Tackle Bag}}]]。
+* 添加了[[{{tr|Geyser}}]]{{tr|Trap}}。
+* 添加了[[{{tr|Bone Campfire}}]]。
+* 添加了[[{{tr|Ultra Bright Campfire}}]]。
+* 添加了[[{{tr|Multicolored Wrench}}]]。
+* 修改了[[{{tr|Medusa Head}}]]，伤害从 28 增加至 45，{{tr|mana}}消耗由 8 增加至 10，现在仅在{{tr|Hardmode}}下才能获得该物品了。
+
+== 其它 ==
+* 雕像生成的小动物现在不可捕捉。
+* 大大提高了[[{{tr|Duke Fishron}}]]的脱战半径。
+* [[{{tr|Medusa}}]]现在不能够石化她头上的玩家了。
+* [[{{tr|Medusa}}]]现在只会在[[{{tr|Hardmode}}]]下生成了。
+* 基于竞赛结果，为[[{{tr|Painter}}]]，[[{{tr|Wizard}}]]和[[{{tr|Skeleton Merchant}}]]加入了新的名字。
+* [[{{tr|Bee Hive}}]]现在可以在[[{{tr|Jungle}}]]中被发现了——不要蜜蜂！
+* 降低了[[{{tr|Solar Eruption}}]]的音效声音。
+* [[{{tr|Torch}}]]现在可以放置在[[{{tr|Actuator}}|被致动]]的{{tr|tile}}上了。
+* [[{{tr|Slime}}]]现在不能穿过一格高的空隙了。
+* 现在不能对[[{{tr|Target Dummy}}]]进行吸血了。
+* 添加了新的[[{{tr|Character styles}}]]。
+
+== {{tr|Bug}} 修复 ==
+* 修复了在特定情况下，处于[[{{tr|Wet}}]]状态下会隐藏[[{{tr|Frostbite}}]]的剩余时间的问题。
+* 修复了[[{{tr|Desert Spirit}}]]的碰撞箱，以匹配其外观大小。
+* 修复了具有多个{{tr|segments}}的 {{tr|NPCs}} 无法正确处理击杀/交互的问题。
+* 修复了[[{{tr|music boxes}}]]开启时不发出{{tr|note}}的问题。
+* 修复了[[{{tr|Crimson Grass}}]]会传播到[[{{tr|Sunflowers}}]]下的问题。
+* 修复了[[{{tr|Tally Counter}}]]不显示使用{{tr|mounts}}或特殊攻击击中的{{tr|enemy}}的信息的问题。
+* 修复了{{tr|player}}腿部的皮肤颜色在处于潜行时和身体其余部分不匹配的问题。
+* 修复了[[{{tr|Seedler}}]]不会由[[{{tr|Treasure Bags}}]]掉落的问题。
+* 修复了流行的{{tr|NPC}}{{tr|Housing}}漏洞（“无限{{tr|NPC}}数量房屋”）。
+* 修复了射手的生命吸取 {{tr|bug}}。
+* 修复了[[{{tr|Paint Sprayer}}]]在部分它不应向{{tr|blocks}}喷漆的情况下这样做的问题（如：放置物体后，其下方的草变成{{tr|dirt}}时）。
+* 修复了处于{{tr|underground}}的边缘无法生成{{tr|Dungeon}}/{{tr|Underground Desert}}{{tr|enemy}}的问题。
+* 修复了直接传送到{{tr|Pressure Plate}}上方时无法正确激活它的问题。
+* 修复了{{tr|Town NPC}}的{{tr|melee weapons}}在黑暗中极其明亮的问题。
+* 修复了[[{{tr|Crimson Heart (item)}}|{{tr|Crimson Heart}}]]无法在{{tr|platforms}}上站立/滚动的问题。
+* 修复了{{tr|tile}}实体在世界清除过程中没有被正确清除的问题。
+* 修复了[[{{tr|Crystal Storm}}]]的{{tr|projectile}}无法反弹的问题。
+* 修复了{{tr|cursor}}位于没有自定义名称的{{tr|chests}}上方时，不显示其悬浮图标的问题。
+* 修复了[[{{tr|Wooden Boomerang}}]]在斜坡附近时无法使用的问题。
+* 修复了[[{{tr|Wall of Flesh}}]]会在[[{{tr|Underworld}}]]上方行进并拖走所有玩家的问题。
+* 修复了{{tr|multiplayer}}下[[{{tr|Martian Saucer}}]]会具有隐形/无法击中的部分的问题。
+* 修复了[[{{tr|Martian Probe}}]]无法在应当触发[[{{tr|Martian Invasions}}]]的情况下触发的问题。
+* [[{{tr|Harpies}}]]和[[{{tr|Antlion Swarmers}}]]不再会游泳。
+* 修复了[[{{tr|Dressers}}]]会被爆炸摧毁的问题。
+* 修复了[[{{tr|Gi}}]]和[[{{tr|Kimono}}]]的腿部显示外观性别相反的问题。
+* 修复了[[{{tr|Ancient Light}}]]和[[{{tr|Detonating Bubble}}|{{tr|Fishron Bubbles}}]]没有在[[{{tr|Expert Mode}}]]中出现的问题。
+* 修复了[[{{tr|Moon Charm}}|{{tr|Werewolf}}]]的音效在被用作时装时出错的问题。
+* 修复了[[{{tr|Tax Collector}}]]的部分特殊对话没有使用的问题。
+* 修复了无限飞行时间漏洞。
+* 修复了{{tr|Martian Saucers}}在{{tr|invasion}}期间思念其母星从而直接离开的问题。
+* 修复了使用{{tr|wire}}操纵[[{{tr|Trap Door}}]]时会产生不同步的问题。
+* 修复了 L 形房屋漏洞。
+* 修复了{{tr|minecarts}}能够击中无敌{{tr|enemies}}的问题。
+* 修复了多个有关自动暂停和{{tr|inventory}}管理的 {{tr|bugs}}。
+* {{tr|Demon Altars}}应当不再产生“无法摧毁的”{{tr|pots}}。
+* 修复了在特定情况下罕见出现的“{{tr|character}}无法重生”的问题。
+* 修复了在{{tr|Underworld}}中，{{tr|background}}会穿过完全没有点亮的{{tr|wall}}绘制的问题。
+* 修复了[[{{tr|solar pickaxe}}]]所使用的[[{{tr|Glow mask}}]]。
+* 修复了{{tr|wall of flesh}}在{{tr|singleplayer}}中特定情况下不会生成的问题。
+* 修复了大部分情况下，在玩家跳跃后雪的下落不自然的问题。
+* 修复了[[{{tr|paintball gun}}]]和[[{{tr|Happy grenades}}]]不能造成暴击的问题。
+* 修复了[[{{tr|Titanium Armor}}]]和[[{{tr|Black Belt}}]]的闪避对于{{tr|Moon Lord}}不生效的问题。
+* 修复了动态的{{tr|tile}}在接触半砖时动画停止的问题。
+* 修复了又一个复制漏洞。
+* 修复了罕见情况下，被更改过的{{tr|worlds}}在（击败{{tr|Wall of Flesh}}后）释放远古之魂阶段时卡住的问题。
+* 修复了[[{{tr|Chlorophyte Ore}}]]对{{tr|jungle}}的保护没有达到本应有的效果的问题。
+* 修复了在{{tr|inventory}}右键装备时不提供装备它的{{tr|achievements}}的问题。
+* 修复了[[{{tr|paladin's shield}}]]的友军保护加成没有正确生效的问题。
+* 修复了{{tr|guide}}的帮助文本中的大小写问题。
+* 修复了[[{{tr|star in a bottle}}]]{{tr|buff}}不生效的问题。
+* {{tr|Brain of Cthulhu}}和{{tr|Eater of Worlds}}现在会正确地在杀死所有附近的玩家后/玩家离开{{tr|the biome}}后消失。
+* 修复了罕见情况下，[[{{tr|nurse}}]]不会治愈所有{{tr|debuffs}}的问题。
+* 修复了其它玩家通过使用爆炸物伤害自己时会弹出两个伤害数字的问题。
+* 修复了在总体设置中关闭小地图时，“全屏地图”按钮会开启黑屏的问题。
+* 修复了{{tr|players}}在过于接近{{tr|workbenches}}时无法骑上坐骑的问题。
+* 修复了[[{{tr|Actuator}}|致动]][[{{tr|gemspark blocks}}]]时的问题。
+* 修复了[[{{tr|Mudstone Brick}}]]的名称错误（泥石块）。
+* 在[[{{tr|Lihzahrd altars}}]]下方的{{tr|Tiles}}在击败[[{{tr|golem}}]]前不再能够被致动。
+* 修复了在移除光源时，黑暗中会产生暂时性的光洞的问题。
+* 修复了价值低于 5 {{tr|copper}}的物品（[[{{tr|Empty Bullet}}]]）总是以 1 {{tr|copper}}卖出，即使以堆叠卖出也如此的问题。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.1}}

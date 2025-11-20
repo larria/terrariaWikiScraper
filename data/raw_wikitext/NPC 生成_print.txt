@@ -1,0 +1,47 @@
+<includeonly><!--
+
+// register localization information
+-->{{l10n/register|npc_spawning-print|en<!--
+	-->|hovertext_spawnrate=Spawn rate<!--
+	-->|hovertext_maxspawns=Max spawns<!--
+-->}}<!--
+
+-->{{l10n/register|npc_spawning-print|zh<!--
+	-->|hovertext_spawnrate={{tr|Spawn rate}}<!--
+	-->|hovertext_maxspawns={{tr|Max spawns}}<!--
+-->}}<!--
+
+-->{{#if:{{{1|}}}|<!--
+
+-->{{#fornumargs:k|columnid|{{#ifexpr:{{#var:k}}>1|<!--
+	--><td><!--
+	-->{{#iferror:{{#ifexpr:{{#var:columnid}}+1={{#var:k}}|<!--
+
+		// spawn rate
+		-->{{#vardefine:sprate_this|{{#expr:floor({{#var:sprate_base{{#var:columnid}}}}*{{#var:{{{1}}}_sprate|1}})}}}}<!--
+		--><span title="{{l10n|npc_spawning-print|hovertext_spawnrate}}"><!--
+			-->{{chance|mode=f|1/{{#var:sprate_this}}}}<!--
+			-->{{#ifexpr:{{#var:sprate_this}}<{{#var:sprate_limit}}|{{footnote|name=spawnratecap}}}}<!-- display the note about the cap if this spawn rate is below the limit
+		--></span><!--
+		--><br/><!--
+
+		// max spawns
+		-->{{#vardefine:maxsp_this|{{#expr:floor({{#var:maxsp_base{{#var:columnid}}}}*{{#var:{{{1}}}_maxsp|1}})}}}}<!--
+		--><span title="{{l10n|npc_spawning-print|hovertext_maxspawns}}"><!--
+			-->{{#var:maxsp_this}}<!--
+			-->{{#ifexpr:{{#var:maxsp_this}}>{{#var:maxsp_limit}}|{{footnote|name=maxspawnscap}}}}<!-- display the note about the cap if this max spawns is above the limit
+		--></span><!--
+
+	-->|{{#var:columnid}}}}|{{#var:columnid}}}}<!-- end of ifexpr, end of iferror
+	--></td><!--
+-->}}}}<!-- end of ifexpr, end of fornumargs
+
+-->}}<!-- end of if
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=NPC spawning/print}}
+</noinclude>

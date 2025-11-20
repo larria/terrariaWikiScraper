@@ -1,0 +1,327 @@
+{{patch infobox
+| versions = desktop-console-oldgen-mobile-switch-tmodloader
+| patchname = 添加
+| release = 2/13/2014
+| ref = [http://web.archive.org/web/20160602200031/http://www.terrariaonline.com/threads/terraria-1-2-3.132539/ {{tr|Terraria}} 1.2.3!]
+}}
+{{tocright}}
+
+'''1.2.3''' 版本是''{{tr|Terraria}}'' 在 2014 年中的第一个更新。它添加了大量的功能，实行了一些游戏改变，并修复了大量的问题。
+
+== 特性与机制 ==
+* 现在能命名[[{{tr|chest}}]]了。
+* 添加游玩中的设置菜单。
+* 添加了环境声音选项。
+* 保存并退出现在在设置菜单里。
+* 增加了视差和音量设置条。
+* 游戏现在会加载所保存的分辨率，甚至会保存是否使用了窗口最大化。
+* [[{{tr|Reforging}}]]一件{{tr|item}}的价格从 50% 降低到 33%。
+* 现在可以把[[{{tr|platform}}]]用[[{{tr|hammer}}]]转变为[[{{tr|stair}}]]。
+* 加入了横贯地图的电路支持。
+* 更新[[{{tr|Robe}}]]的贴图。
+* 更新[[{{tr|Music Box}}]]的贴图。现在每个{{tr|Music Box}}都有它们各自的设计。
+* 音乐符号现在来自{{tr|Music Box}}。
+* 更新了[[{{tr|Cobalt Shield}}]]，[[{{tr|Obsidian Shield}}]]，和[[{{tr|Paladin's Shield}}]]的贴图。
+* 现在可以在[[{{tr|wall}}]]上放置[[{{tr|switch}}]]和[[{{tr|lever}}]]了。
+* {{tr|accessories}}现在可以在角色上显示，这可以关闭或打开。
+* 现在可以穿戴[[{{tr|wings}}]]作为[[{{tr|vanity}}]]了。
+* [[{{tr|Wings}}]]现在能被染色。
+* [[{{tr|Dyes}}]]现在可以堆叠了。
+* [[{{tr|water bucket}}]]现在可以堆叠了。
+* [[{{tr|Ore}}]]现在能够堆叠至 999。
+* 现在能在[[{{tr|dresser}}]]换衣服。
+* 添加了对 Ctrl+Z，X，C，和 V（分别是清除，剪切，复制和粘贴）的支持。
+* 添加了对 Shift+Insert, Shift+Delete, Ctrl+Insert（分别是粘贴，剪切，和复制）的支持。
+* 加入了无需重置敲击计数即可挖掘多个{{tr|tiles}}的能力。
+* 放置方块数限制提高到 65536 块。
+* 增加了[[{{tr|cactus}}]]实体.
+* 增加了各个[[{{tr|biome}}]]特定的石块变体。
+* 可以在任何草上放置[[{{tr|sapling}}]]。
+* 降低了[[{{tr|campfire}}]]和[[{{tr|heart lantern}}]]恢复的效果。
+* [[{{tr|Ancient Shadow armor}}]]的掉落几率略微下调。
+* 多核光照加入了设置菜单。
+* 加入动物的音效。
+* 加入瀑布和岩浆瀑布的音效。
+* [[{{tr|Birds}}]]现在更有可能在白天生成。每一种都有几首歌曲可唱。
+* 现在当鼠标在界面菜单中的文本上悬停时，文本会变成黄色。
+* 更换 Tree 9 的图像。
+* 现在{{tr|player}}在有 {{tr|Boss}} 活着的多人游戏中死亡后有更长的死亡时间冷却。
+* 当鼠标悬停在地图上的深色图块上的时候不再提示他们的类型。
+* 加入倒置的斜坡。
+* 倒置的斜坡现在在新世界生成。
+* 使用[[{{tr|Mana Potion}}]]现在会给{{tr|player}}一个根据其剩余时间降低{{tr|player}}魔法{{tr|damage}}的{{tr|Debuff}}。
+* 所有的{{tr|Mana Potion}}拥有更高的堆叠了。
+* [[{{tr|Spelunker potion}}]]不再使矿石发光。这使得矿石不能出现在地图上。
+* {{tr|Spelunker potion}}现在使矿石在屏幕上被染成金色。
+* [[{{tr|Hunter potion}}]]药水不再使危险源发光。{{tr|enemy}}会被着上红色出现，友好生物会以绿色出现。
+* 下雨的几率略微下调。
+* [[{{tr|Pyramid}}]]现在更加常见了。
+* [[{{tr|Waterleaf}}]]现在只在雨中出现。
+* [[{{tr|Life Crystal}}]]不再在地牢中生成。
+
+== 新{{tr|item}} ==
+* 添加了[[{{tr|Shadow Paint}}]]，[[{{tr|Brown Paint}}]]，和[[{{tr|Negative Paint}}]]。
+* 加入了[[{{tr|Team Dye}}]]: 根据加入的队伍改变颜色。
+* 加入了[[{{tr|Beetle Shell}}|甲虫盔甲]]。有两种不同的胸甲类型，一种提供{{tr|melee}}攻击而另一种提供{{tr|melee defense}}。
+* 加入了[[{{tr|Beetle Husk}}]]来制作[[{{tr|Beetle Shell}}|甲虫盔甲]] - 由石巨人掉落.
+* 加入了[[{{tr|Beetle Wings}}]]。
+* 加入了[[{{tr|Shroomite Digging Claw}}]]。
+* 加入了[[{{tr|Gemspark Block}}]]。
+* 加入了[[{{tr|Gemspark Block}}]]{{tr|waterfalls}}。
+* 加入了[[{{tr|Womannequin}}]]。
+* 加入了[[{{tr|Painter}}]]的若干种壁纸。
+* 现在可以用{{tr|cogs}}{{tr|craft}}动画{{tr|steampunk}}{{tr|tile}}集。
+* 加入了若干种新的{{tr|weapon racks}}，可在[[{{tr|Sawmill}}]]处制作。
+* 所有 {{tr|boss}} 现在都有几率掉落[[{{tr|Boss Mask}}]]。
+* 加入了[[{{tr|Waterfall Wall}}]]和[[{{tr|Lavafall Wall}}]]。这些物品可使用[[{{tr|Crystal Ball}}]]和{{tr|glass}}在{{tr|water or lava}}附近制作。
+* [[{{tr|Merchant}}]]现在出售[[{{tr|bug Net}}]]。
+* 现在可以用[[{{tr|bug Net}}]]捕捉和释放部分{{tr|critters}}
+* 现在可以将{{tr|critters}}放在{{tr|cage}}中。
+* 加入了[[{{tr|Crimson Seeds}}]]。
+* 加入了 8 种新{{tr|crafting stations}}。
+* 超过 100 种新[[{{tr|furniture}}]]加入了现存的图格集。
+* 加入了[[{{tr|Heavy Workbench}}]]。
+* 加入了[[{{tr|Copper Plating}}]]、[[{{tr|Stone Slab}}]]和[[{{tr|Sandstone Slab}}]]。它们均在[[{{tr|Heavy Workbench}}]]处制作。
+* 加入了[[{{tr|Venom Staff}}]]。
+* 加入了[[{{tr|Super Mana Potion}}]]。
+
+== 新 NPC ==
+* 加入了[[{{tr|Stylist}}]] NPC（祝贺 Ripsand！）- 出售稀有的{{tr|hair dye}}，更改发型和头发颜色。（生成于{{tr|spider caves}}）。她也会出售新发型！（感谢 Omnir）
+* 加入了 20 种新的友好[[{{tr|critters}}]]。
+* 加入了[[{{tr|Traveling Merchant}}]]。一旦有至少两位 NPC 在场，他就会随机出现并呆上一天。他的{{tr|inventory}}总是随机的，并呈现他花时间冒险所得到的物品。他可以售卖超过 30 种不同物品。
+
+== {{tr|Hardmode}}平衡性更改 ==
+* 大大提高了[[{{tr|Biome Key Mold}}]]的掉率。
+* [[{{tr|Ice Golem}}]]现在掉落[[{{tr|Frost Core}}]]，可用于与[[{{tr|Hallowed Bar}}]]一起制作[[{{tr|Frost Armor}}]]。
+* [[{{tr|Pickaxe Axe}}]]现在制作时需要来自三个{{tr|Mechanical boss}} 的魂各 1 个。
+* [[{{tr|Drax}}]]现在需要每种 boss 的魂来制作。
+* {{tr|Plantera bulbs}}在 3 个{{tr|Mech bosses}} 全被打败后才会生成。
+* 现在在[[{{tr|Plantera}}]]被打败前无法召唤{{tr|Golem}}。
+* {{tr|mech boss}} 现在略微增强。
+* [[{{tr|Golem}}]]{{tr|life, defense, and damage}}略微增加。
+* {{tr|Golem}}现在可以穿墙。
+* 当玩家在{{tr|Golem}}正上方或正下方时，它会发射两道激光。
+* 增加了[[{{tr|Golem Fist}}]]的{{tr|damage and knockback}}。
+* 增加了神庙 {{tr|boss}} 房间的大小。
+* [[{{tr|Wasp Gun}}]]{{tr|damage}}增加 3。
+* [[{{tr|Golden Shower}}]]{{tr|debuff }}降低至 10 {{tr|seconds}}。
+* {{tr|Golden Shower}}现在仅能穿透 5 个目标，造成的伤害也略微减少。
+* [[{{tr|Autohammer}}]]仅当击败[[{{tr|Plantera}}]]后才能购买。
+* [[{{tr|Mushroom Spear}}]]现在仅在至少击败一个{{tr|Mech bosses}} 后才能获得。
+* [[{{tr|Mushroom Spear}}]]卖出价格增加。
+* [[{{tr|Hammush}}]]现在仅在至少击败一个[[{{tr|hardmode}}]] boss 后才能获得。
+* [[{{tr|Soul}}]]现在卖出价格降低。
+* [[{{tr|Gungnir}}]]现在卖出价格降低。
+* [[{{tr|Hammush}}]]卖出价格增加。
+* [[{{tr|Poison Staff}}]]和[[{{tr|Frost Staff}}]]造成更少的{{tr|damage}}。
+* [[{{tr|Chlorophyte}}]]变得稍微罕见一点，生长也慢了一点。
+* [[{{tr|Leaf crystal}}]]伤害略微增加，设计速度提高。
+* [[{{tr|Rod of Discord}}]]现在消耗 20% 而非 25%生命值。
+* [[{{tr|Rod of Discord}}]]{{tr|debuff}}现在持续 8s 而非 10s。
+* 略微加强[[{{tr|Shotgun}}]]、[[{{tr|Marrow}}]]、和[[{{tr|Ice Bow}}]]。
+* 略微提高[[{{tr|Repeater}}]]的{{tr|damage}}。
+* 提高了[[{{tr|Terra Blade}}]]、[[{{tr|True Excalibur}}]]和[[{{tr|True Night's Edge}}]]的伤害。
+* [[{{tr|Terra Blade}}]]、[[{{tr|True Excalibur}}]]、和[[{{tr|True Night's Edge}}]]发射激光速率加大。
+* [[{{tr|Rainbow Rod}}]]造成更多伤害。
+* [[{{tr|Rainbow Gun}}]]的彩虹现在持续 10 秒。
+* 提高了[[{{tr|Unholy Trident}}]]的使用速度。
+* 降低了[[{{tr|Chlorophyte Bullet}}]]的伤害。
+* 新{{tr|Hardmode}}{{tr|ore}}生成的稍微少了一点，并且稍微地更加难以制作.
+* [[{{tr|Palladium Pickaxe}}]]不再能采挖[[{{tr|Adamantite Ore}}]]和[[{{tr|Titanium Ore}}]]了。
+* [[{{tr|Meteor Head}}]]一旦进入[[{{tr|Hardmode}}]]就不再掉落战利品。
+* 提升了[[{{tr|Lost Girl}}]]的生成率。
+* [[{{tr|Corrupt grass}}]]、[[{{tr|Crimson grass}}]]、和[[{{tr|Hallowed grass}}]]{{tr|wall}}蔓延得更远了。
+* [[{{tr|Frostburn}}]]{{tr|debuff}}现在会随时间造成更多伤害。
+* 加入了[[{{tr|Spectre Mask}}]]和[[{{tr|Spectre}}]]{{tr|damage set bonus}}。
+* {{tr|Spectre Hood}}现在会使用更多{{tr|mana}}而非降低。
+* [[{{tr|Retinazer}}]]发射激光更加缓慢， 并且造成的伤害更低一些。
+* [[{{tr|North Pole}}]]现在造成更少伤害，且{{tr|projectiles}}有了上限。
+* 提升了[[{{tr|Scourge of the Corruptor}}]]的{{tr|damage}}。
+
+== {{tr|Pre-Hardmode}}平衡性更改 ==
+* {{tr|Lesser mana potions}}不再能够制作，而是总由{{tr|the merchant}}售卖。
+* [[{{tr|Tim}}]]现在更加常见。
+* 将[[{{tr|Bee Gun}}]]的{{tr|damage}}提升 1。
+* [[{{tr|Nature's Gift}}]]现在略微更加常见。
+* 提高了{{tr|gem staves}}的[[{{tr|mana}}]]消耗。
+* 稍微降低了高级别{{tr|gem staves}}的伤害。
+* 降低了[[{{tr|Magic Dagger}}]]和[[{{tr|Bee Gun}}]]的价值。
+
+== 优化 ==
+* 通过从运行中直接复制{{tr|tile}}数据的方式，略微提升了世界加载速度。
+* {{tr|Terraria}}存储世界的方式更加高效。平均大小是原来的 20%。
+* 光照不再在服务器上加载，节省下 50 mb 内存。
+* 加速了从一个离线世界切换至另一个时的世界清理速度。
+* 优化了光照代码，以优化性能。
+* 优化了雨水性能。
+* 加速了{{tr|Rain Cloud}}的代码并让其更好地绘制。
+* 降低了 75% 到 85% {{tr|tiles}}的纯代码数据使用。
+* 地图绘制更改为随着时间推移进行而非在绘制时锁定机器。
+* 地图绘制速度更快，保存的文件缩小了 60%。
+* 将图格显示更改为实时，以避免在世界加载时完成此事。
+* 移除了来自{{tr|tiles and walls}}的运算开支。{{tr|Light mode}} 0/1 现在运行速度提高了 15%。
+* 检查世界对齐的速度大幅提升。
+* 检查世界对齐并入世界加载。减少了大量开支。
+* 略微加速了水体移动的代码。5-10%。
+
+== 修复问题 ==
+* {{tr|Pumpkin Moon and Frost Moon}}现在可在使用{{tr|Snowman pet}}时开始。
+* 游戏现在在世界生成阶段的最后会检查是否有{{tr|Lihzahrd altar}}。
+* 泰拉瑞亚的窗口上方另有窗口时鼠标不再相应。
+* 在 Boss 已经出现之后再次使用 Boss {{tr|summoning items}} 不会消耗。
+* 修复了太多{{tr|Waterfalls}}会使游戏崩溃的问题。
+* 修复了与{{tr|mana stars}}在多人模式中不掉落有关的问题。
+* 修复了在非{{tr|hardmode}}世界中击败{{tr|hardmode}} {{tr|boss}} 后会生成大量 {{tr|NPCs}} 的问题。
+* 提炼现在有小概率给出一定量的钱而非消耗 2 个{{tr|blocks}}。
+* {{tr|The Golem}}的邪恶计划不再被平台挫败。
+* {{tr|Invasions}}现在能生成在附近有友好 NPC 的任何地方而非仅能生成在世界中心。
+* {{tr|the twins}}不再会在另一个还活跃时消失。
+* {{tr|Destroyer}}掉落物现在会在离玩家最近的体节出出现。
+* 修复了{{tr|Sugar Cookie}}笔误。
+* {{tr|Frost Moon}}的所有波数现在在警告中正确的使用"{{tr|Flocko}}"。
+* 上方有{{tr|chests}}的{{tr|Boulders}}不再会在{{tr|boulder}}受击时使游戏崩溃。
+* {{tr|Red Stucco}}不再传播{{tr|corruption}}。
+* {{tr|Piggy Bank and Safe}}现在在{{tr|Quick Stacking}}时可以正确堆叠{{tr|coins}}。
+* 更改了{{tr|damage}}/{{tr|tooltips}}的生成方式，如此一来{{tr|weapons}}可得到完整的以百分比计的{{tr|damage boost}}而非因精确度的浮动失去一点。
+* {{tr|Nurse}}不再会收费和移除{{tr|the potion}}的冷却、{{tr|Heart Lantern}}、和{{tr|Campfire buff}}。
+* 修复了移动大量水可能导致部分水滞空的问题。
+* 修复了{{tr|Ancient Cobalt armor}}部件没有{{tr|critical strike chance}}的问题。
+* 修复了未激活的{{tr|tiles}}可被黏附的问题。
+* 修复了骑着{{tr|mount}}时{{tr|wings}}显示的位置太高的问题，同时让{{tr|hoverboard}}在骑着{{tr|mount}}时不显示。
+* 修复了{{tr|sign bubbles}}在{{tr|reverse gravity}}下出现在错误位置的问题。
+* 修复了两个玩家漂浮的问题，这种问题 使得玩家和所站的表面之间的距离异常的大。
+* 修复了离开{{tr|honey}}有水声和粒子的问题。
+* 修复了{{tr|featherfall potion}}在[[{{tr|reverse gravity}}]]时无效的问题。
+* 修复了与雨声有关的小问题。
+* 修复了混用{{tr|Ancient Cobalt armor}}和{{tr|Jungle armor}}的部件时不会得到{{tr|set bonus}}的问题。
+* 现在当它生效时可以在物品的工具提示上看到{{tr|archery buff}}的伤害增强。
+* 修复了{{tr|blizzard staff}}当站在地狱底部时可以向上射击的问题。
+* 修复了{{tr|Queen Bee}}会卡在{{tr|tiles}}中无法移动的漏洞。
+* 修复了{{tr|Crimsand}}{{tr|deserts}}不会让水呈现红色的问题。
+* {{tr|Mechanical Glove}}仅提升{{tr|melee damage}}。
+* 修复了装备{{tr|Clothier Voodoo Doll}}时不能用{{tr|projectiles}}（{{tr|bows}} / {{tr|guns}} / {{tr|thrown items}} / {{tr|spears}} / {{tr|flails}}，等等）伤害{{tr|the Clothier}}的问题。
+* 修复了一个{{tr|gun}}发射的子弹射速不正确的问题。
+* 修复了在{{tr|dirt layer}}中点以下时{{tr|spawn rates}}比任何地方的预期值都高的问题。
+* 修复了没有真正死亡的 NPC（如{{tr|Slimer, Mother Slime, Corrupt Slime}}）会在变形（奄奄一息）时掉落{{tr|hearts and mana stars}}的问题。
+* 修复了玩家可以通过摧毁{{tr|Prime Cannon}}手而非{{tr|Skeletron Prime}}自身来打败{{tr|Skeletron Prime}}的问题。
+* 修复了{{tr|heart crystals}}可以生成在不可靠区域的问题。
+* 修复了{{tr|Skeletron hand hook}}无法像游戏中其他{{tr|hooks}}那样附着在{{tr|tiles}}上。
+* 修复了{{tr|info accessories}}在查看空白{{tr|sign}}时显示信息而查看有文字的{{tr|signs}}时不显示的问题。
+* 修复了编辑{{tr|signs}}时按数字键会改变选中的{{tr|item}}的问题。
+* 修复了{{tr|health bars}}实际上全满时显示为空的问题。
+* 修复了暂停游戏时尘埃会变得越来越大的问题。
+* 改进了{{tr|Dryad}}的世界状态对话。
+* {{tr|chests}}中的{{tr|Coins}}现在会在存入或快速堆叠时以最佳方式堆叠。
+* 修复了{{tr|fairy bell}}在多人模式中无法正确同步的问题。
+* 修复了{{tr|fairy bell}}生成的{{tr|fairy}}颜色不保存/加载的问题。
+* 修复了{{tr|Shadewood Bow}}不能{{tr|reforge}}的问题。
+* 修复了{{tr|Restoration Potion}}的{{tr|rarity}}比[{{tr|Mana Potion}}和{{tr|Healing Potion}}的{{tr|rarity}}低的问题（尽管它们是同级的）。
+* 修复了世界生成中可能会生成单组数量超过上限的{{tr|Restoration potions}}的问题。
+* 修复了{{tr|platinum candle}}在非-rgb 照明模式下不发光的问题。
+* 修复了{{tr|piranha gun}}会追逐无敌{{tr|enemies}}（{{tr|blazing wheels and dungeon flails}}）的问题。
+* 修复了{{tr|nurse}}收费移除{{tr|water candle debuff}}的问题。
+* 修复了{{tr|the North Pole projectile}}可以获得足够的重力速度穿过{{tr|blocks}}的问题。
+* 使得{{tr|Frozen debuff}}不再隐藏{{tr|armor}}。
+* 当全屏地图打开时，不再能与其他内容互动。
+* 修复了{{tr|hoverboard}}的问题：可以在{{tr|reverse gravity}}情况下在空中行走。
+* 加入了未实现的{{tr|crimson}}怪物声音。
+* 修复了与{{tr|gravity}}有关的整体问题：不把部分实体算作{{tr|half blocks}}。
+* 修复了{{tr|reverse gravity}}下在{{tr|water}}中无法跳跃的问题。
+* 修复了特定种类的帽子在{{tr|reversed gravity}}下戴起来很奇怪的问题。
+* 修复了{{tr|rune robe}}粒子在{{tr|reverse gravity}}下出现在玩家头上的问题。
+* 修复了{{tr|chat bubbles}}在{{tr|reverse gravity}}下显示“错误”的问题。
+* 修复了{{tr|Water Fountain}}的图格表，以移除将其开启时消失的两个物块。（{{tr|Jungle}}/{{tr|Snow biomes}}）。
+* 修复了{{tr|blazing wheels}}没有放置到图格中的问题。
+* 修复了{{tr|Crimsand Blocks}}无法从{{tr|Sandgun}}射出的问题（加入了{{tr|crimsand}}友方{{tr|projectile}}）。
+* 修复当玩家拥有超过 21000{{pc}} 后{{tr|Merchant}}不会生成的问题。
+* 修复了不能用[[{{tr|Dirt Rod}}]]拾起{{tr|crimson grass}}和{{tr|hallowed grass}}的问题。
+* 修复了土球（{{tr|Dirt Rod}}形成的射弹）在水中剧烈摇晃的问题。
+* 修复了{{tr|dungeon guardian}}仍会试图造成 9999 点{{tr|damage}}（并因此而获益）的问题。
+* 修复了{{tr|flesh block walls}}被摧毁时不会返还物品的问题。
+* 修复了{{tr|gingerbread man}}死亡后脚部碎块会变成{{tr|yeti}}头的问题。
+* 修复了试图用{{tr|reverse gravity}}移动 NPC 时用了相反的屏幕高度位置的问题。
+* 修复了{{tr|Brain of Cthulhu}}不会让{{tr|dryad}}生成或停止谈论{{tr|chasms}}的问题。
+* 修复了{{tr|guide}}在改变了相应按键设置的情况下依然显示按 ESC 打开{{tr|inventory}}的问题。
+* 修复了{{tr|chests}}可以被放置在不好的位置的问题（例如世界生成时的{{tr|ice blocks}}或斜坡{{tr|tiles}}上）。
+* 修复了一个{{tr|hooks}}试图附着到其中有液体的{{tr|blocks}}时会坏掉的问题。
+* {{tr|Flocko}} & {{tr|Elf Copter}}现在在{{tr|dawn}}时可正确地跑走。
+* 召唤{{tr|Golem}}现在会正确地只用一个{{tr|Power Cell}}。
+* 标题屏幕音乐现在若从另一个{{tr|Music Box}}播放可以正确捕捉了。
+* 修复了地下（备选）（Alternate Underground）[[{{tr|Music Box}}]]中的笔误。（被拼成了 'Alternate Undeground'）
+* 修复了在打开自动暂停时特定{{tr|armor}}（{{tr|robes}} / {{tr|werewolf}} / 人鱼）的视觉效果不应用的问题。
+* {{tr|Necro Armor}}现在在{{tr|tooltip}}提供正确的远程加成。
+* 在人鱼形态中触碰熔岩将不再迫使玩家离开水面并重新获得人鱼形态。
+* 从{{tr|Honey}}传送至{{tr|Water}}不再会使玩家继续缓慢移动，如同仍旧在{{tr|honey}}中一样。
+* 修复了{{tr|Guide}}可能在没有任何[[{{tr|Lens}}]]时谈论其制作的问题。
+* 修复了{{tr|Guide}}会在{{tr|Crimson}}的世界里谈论{{tr|Shadow Orb}}和{{tr|Corruption}}的问题。
+* 修复了{{tr|Guide}}会一直谈论{{tr|Shadow Orb}}直到{{tr|Skeletron}}（而非{{tr|Eater of Worlds}} / {{tr|Brain of Cthulhu}}）被打败的问题。
+* 修复了{{tr|Dryad}}在{{tr|Crimson}}世界中会在{{tr|purification powder}}的建议中提到{{tr|the Corruption}}的问题。
+* 修复了在{{tr|reverse gravity}}时用{{tr|sniper scope}}/{{tr|Binoculars}}缩放垂直方向会相反的问题。
+* 'Down' 按钮在{{tr|reverse gravity}}羽落情况下现在正确地发挥和 'Down' 按钮在无{{tr|reverse gravity}}羽落时一样的作用。
+* 修复了{{tr|Crimson hearts}}在小地图中可能被叫做{{tr|shadow orbs}}的问题。
+* {{tr|Rod of Discord}}现在在重力快速翻转时正常发挥作用。
+* 修复了在{{tr|the Underworld}}中移除{{tr|wall}}不会更新地图的问题。
+* 修复了特定{{tr|items}}使用{{tr|flame dye}}时不可见的问题。
+* 使用{{tr|Rod of Discord}}会释放所有{{tr|grapples}}。
+* 修复了{{tr|Steampunker}}对话中关于{{tr|the Pirate}}的笔误。
+* 使用{{tr|teleporter}}会释放所有{{tr|grapples}}。
+* 现在如果在{{tr|water}}中的同时接触{{tr|lava}}，脱离{{tr|lava}}时能正确的扑灭着火的{{tr|Debuff}}。
+* 修复了{{tr|merman}} / {{tr|werewolf}}的形态转换在隐身时可见的问题。
+* 修复了玩家在{{tr|merman}}形态时{{tr|wing items}}显示在玩家背上的问题。
+* 修复了{{tr|pirate captains}}的身体被分割为五个头部的问题。
+* 修复了{{tr|robe}}在使用{{tr|items}}时会降低身体动画位置的问题。
+* 修复了{{tr|hydra staff}}在{{tr|reverse gravity}}状态下的精确度。
+* 修复了{{tr|Starfury}}作为{{tr|melee weapon}}却能获得{{tr|magic}}{{tr|prefixes}}的问题。
+* 修复了{{tr|Starfury projectiles}}是{{tr|magic}}而非{{tr|melee}}的问题（不再会触发{{tr|Spectre set}}的效果中的{{tr|magic}}暴击效果）。
+* 修复了可将{{tr|campfire}}放置在{{tr|water}}中的问题。
+* 修复了和在自动暂停中移动物品相关的漏洞。
+* 修复了落下的{{tr|Sand}}无法将斜坡物块变回原状的问题。
+* 修复了{{tr|Mannequins}}上不会绘制{{tr|robe}}底部的问题。
+* 修复了{{tr|skeletron hand hook}}会发出{{tr|melee enchantments}}光线的问题。
+* {{tr|Golem and plantera}}现在会掉落钱（每个15 {{tr|gold}}）。
+* 修复了{{tr|Staff of Earth}}的{{tr|boulders}}在水中时会向下穿过{{tr|tiles}}的问题。
+* 修复了{{tr|magma stone}}火焰粒子应用于{{tr|问题 net}}身上的问题。
+* 当光标停留在地图上时{{tr|Crimson Hearts}}现在有正确的名称。
+* 修复了{{tr|Princess robe}}缺少底部的问题。
+* 修复了混沌{{tr|elementals}}可在困难模式前生成的问题。
+* 修复了{{tr|shadow dodge buff}}作为{{tr|buff}}列表中的最后一项时不会被移除的漏洞。
+* 修复了可以投掷{{tr|torches}}以无消耗地激活{{tr|hotbar items}}的漏洞。
+* 修复了由于{{tr|demon altar}}死亡时没有讯息的问题。
+* 穿戴{{tr|Frost Armor}}不再给予{{tr|Spiky Ball Traps}}{{tr|Frostburn debuffs}}。
+* {{tr|Spear traps}}会在接近陷阱时消失不见，无论其是否被激活。
+* 对{{tr|Enemy}}的攻击所触发的{{tr|Spectre set}}的治疗特效不再会对友方 {{tr|NPCs}} 生效。
+* 在水下奔跑不再导致{{tr|Suffocation debuff}}不停闪烁。
+* {{tr|Dark Mummy}}和{{tr|Pixie}}不再会同时掉落两个状态保护{{tr|accessories}}。100% 时间都是如此。
+* {{tr|Ancient Cobalt gear}}不再会同时掉落胸甲和护腿。
+* 现在当将光标在地图上停在{{tr|Crimson Altar}}时它会显示出来。
+* 修复了{{tr|Spectre Staff}}会试图追逐离开地图顶部的{{tr|Wyvern}}的问题。
+* 修复了{{tr|Crimson Axe}}不会掉落{{tr|Nazar}}的问题。
+* 修复了{{tr|Crimtane}}的名字在将光标悬浮于地图上方时不显示的问题。
+* 修复了{{tr|trap darts}}受{{tr|frost armor}}影响的问题。
+* {{tr|Thorns potion}}现在正确地需要{{tr|worm tooth}}来制作。
+* 修复了{{tr|Ice Torch}}被扔在地上时不发光的问题。
+* 修复了{{tr|the wisp}}在水中崩溃的问题。
+* 修复了{{tr|frost moon}}波数的显示文字（{{tr|Elf Zombie}}改为{{tr|Zombie Elf}}）。
+* 修复了一个会导致地图重复绘制已绘制区域的问题。
+* 修复了{{tr|Nymph Banner}}笔误。
+* 修复了摧毁上面放有{{tr|chest}}的{{tr|teleporter}}时的崩溃。
+* 修复了导致{{tr|Bezoars}}由{{tr|Steampunker}}（178）而非{{tr|Moss Hornet}}（176）掉落的笔误。
+* 修复了{{tr|platinum candle}}无法右击的问题。
+* 修复了最小化游戏时的崩溃。
+* 修复了{{tr|torch}}复制的问题。
+* {{tr|North Pole}}不再能穿墙发射。
+* 修复了与[[{{tr|Christmas Hook}}]]有关的问题。
+* [[{{tr|Extractinator}}]]现在一次消耗 1 个{{tr|block}}（问题修复）
+
+* [[{{tr|Golem}}]]和[[{{tr|Plantera}}]]现在会在所有玩家都被杀后逃走消失。
+* 修复了[[{{tr|Turtle armor}}]]可用于对[[{{tr|Dungeon Guardian}}]]造成巨量伤害的问题。该问题此前已解决，但由于重置了{{tr|Dungeon Guardian}}的 AI，因此漏洞仍有效。{{tr|Turtle armor damage}}现在降低至 1，和其他攻击一样。
+
+== {{tr|Trivia}} ==
+* [[{{tr|Scourge of the Corruptor}}]]的{{tr|damage}}增加在官方补丁备注中出现了两次，尽管措辞略有不同。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.2.3}}

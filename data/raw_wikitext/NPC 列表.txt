@@ -1,0 +1,25 @@
+本列表包含一可排序的[[《{{tr|Terraria}}》]]中的'''NPC 列表'''。这包括了[[{{tr|NPCs}}|{{tr|town NPCs}}]]、[[{{tr|enemies}}]]和[[{{tr|critter}}]]。
+
+注意：ID 76 / 146 / 408 / 547 没有被使用。
+{{npc infobox/tablestart}}
+{{#invoke:ListOfNPCs|main}}
+{{npc infobox/tableend}}
+== 独有的 {{tr|NPC}} ==
+{{#vardefine:na|{{na|-}}}}
+{| class="terraria lined sortable align-center"
+! ID !! class="unsortable" | 图像 !! 名称 !! data-sort-type="number" | 最大生命值 !! data-sort-type="number" | {{tr|Damage}} !! data-sort-type="number" | {{tr|Defense}} !! data-sort-type="number" | [[{{tr|Knockback}}]]抗性 !! [[{{tr|AI}}]] !! data-sort-type="number" | [[{{tr|Coins}}]]掉落量 !! {{tr|Environment}} !! {{tr|Type}}
+|-
+{{#invoke:CargoQuery|main
+|q?tables=NPCs
+|q?fields=npcid,name,image,life,damage,defense,knockback,ai,money,environment
+|q?where=npcid IS NOT NULL and npcid >1000
+|q?groupBy=npcid
+|q?orderBy=npcid
+|q?limit=200
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+[[Category:NPC| ]]
+
+{{language info|en=List of NPCs}}

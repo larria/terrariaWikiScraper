@@ -1,0 +1,106 @@
+{{patch infobox
+| versions = desktop-console-oldgen-mobile-switch-tmodloader
+| size = 300px
+| patchname = 修补程序
+| release = 5/15/2014
+| ref = [http://web.archive.org/web/20160604213658/http://www.terrariaonline.com/threads/1-2-4-1-changelog.145100/ 1.2.4.1 更新日志]
+}}
+{{tocright}}
+
+'''1.2.4.1''' 补丁加入了一些丢失的{{tr|recipes}}并修复了大量 {{tr|bug}}，是 1.2 版本的最后一次更新。
+
+{{icon/desktop}}此版本作为“Angler's Delight”（渔夫的快乐）自 2024 年 12 月 26 日起在 Steam 上永久提供。<ref>{{forums thread|terraria-state-of-the-game-december-2024.140081|{{tr|Terraria}}游戏状态 - 2024 年 12 月}} {{small|{{date|2024|12|26}}}}</ref><!-- The name "Angler's Delight" is not mentioned in the forums post. It can only be seen in Steam. -->可以通过右击游戏库中的“{{tr|Terraria}}”，选择“属性...”，然后选择“测试版”来访问它。
+
+== 新添加 ==
+* 现在可以制作[[{{tr|Steampunk Candle}}]]。
+* 添加了[[{{tr|Glass Chest}}]]。
+* 添加了[[{{tr|Cactus Platform}}]]和[[{{tr|Cactus Table}}|{{tr|Table}}]]。
+* [[{{tr|Spooky Dresser}}|{{tr|Spooky Wood Dresser}}]]现在可以获得。
+* 添加了遗漏的[[{{tr|Boreal Wood}}]]武器。
+* [[{{tr|Traveling Merchant}}]]现在随机出售[[{{tr|Animal Skins}}]]。
+* [[{{tr|Elf Hat}}|{{tr|Elf vanity}}]]现在可以在[[{{tr|Frost Moon}}]]期间掉落于[[{{tr|Zombie Elf}}]]。
+* [[{{tr|Golden Grandfather Clock}}]]现在可正确的从[[{{tr|Pirate Invasion}}]]中掉落。
+* [[{{tr|Obsidian Chest}}]]的{{tr|recipes}}现在可以正常生效，[[{{tr|Dungeon Chest}}]]现在有了{{tr|recipes}}。
+
+== {{tr|Bug}} 修复 ==
+* [[{{tr|Pumpkin Dresser}}]]现在正确地使用[[{{tr|Pumpkin}}]]来制作。
+* 修复了[[{{tr|Ebonwood Clock}}]]需要{{tr|wood}}而非[[{{tr|Ebonwood}}]]来制作的 {{tr|Bug}}。
+* 修复了[[{{tr|Sapphire Staff}}]]需要[[{{tr|Silver Ore}}]]而非[[{{tr|Silver Bar}}]]来制作的 {{tr|Bug}}。
+* [[{{tr|Cooked Fish}}]]和[[{{tr|Cooked Shrimp}}]]将在[[{{tr|Cooking Pot}}]]而不是[[{{tr|Furnace}}]]上制作。
+* 修复了当你右键点击{{tr|inventory}}中的物品时的{{tr|crafting}}漏洞。
+* 修复了[[{{tr|Flipper Potion}}]]的语法问题。
+* 修复了[[{{tr|Merchant}}]]姓名的笔误。
+* [[{{tr|Zephyr Fish}}]]现在有了正确的{{tr|tooltip}}。
+* 修复了“Wyverntail”（[[{{tr|Wyverntail}}]]）被错名为“Whyverntail”的 {{tr|Bug}}。
+* 现在使用其他语言时也会显示[[{{tr|Angler}}]]的{{tr|quests}}。但文本依然是英语……很快就会进行翻译。
+* 修正了电路系统不会正确激活[[{{tr|Doors}}]]、[[{{tr|Music Box}}]]、和[[{{tr|Fountain}}]]的 {{tr|bug}}。
+* 修复了{{tr|Smart Cursor}}打开时铺墙不会忽略门柱的 {{tr|bug}}。
+* 让{{tr|Smart Cursor}}在放置[[{{tr|Minecart Track}}]]时更加智能。
+* 修复了玩家离开{{tr|Minecart}}时还会保持旋转的 {{tr|Bug}}。
+* 修复了坐[[{{tr|Minecart}}]]时用[[{{tr|Booster Track}}]]可以加速到极高速度的 {{tr|Bug}}。
+* 现在放置[[{{tr|Minecart Track}}]]时可以转向。
+* [[{{tr|Booster Track}}]]和[[{{tr|Minecart Track}}]]交叉点不能够再那么快的激活。
+* [[{{tr|Pressure Plate Track}}]]在某些设置下不再会变成普通的轨道。
+* 修复了部分{{tr|cloaks}}会绘制在[[{{tr|Minecart}}]]上方的问题。
+* [[{{tr|Flairon}}]]的链子若离玩家较远回来的会更快。若链子仍然追不上玩家，那它会直接消失。
+* 修复了装备[[{{tr|Rocket Boots}}]]后站定，按住跳跃按键时[[{{tr|Wings}}|{{tr|Wing}}]]飞行时间无限的 {{tr|Bug}}。
+* 修复了[[{{tr|Palm Wood}}]]和[[{{tr|Boreal Wood}}]]与其他{{tr|wood}}类型不会相融合的 {{tr|Bug}}。
+* 修复了[[{{tr|Palm Wood}}]]和[[{{tr|Boreal Wood}}]]不挡光的 {{tr|Bug}}。
+* 修复了[[{{tr|Palm Wood}}]]{{tr|weapons}}没法得到{{tr|prefixes}}的 {{tr|Bug}}。
+* 修复了当[[{{tr|Lamp Posts}}]]关闭时会发出蓝光的 {{tr|bug}}。
+* 修复了网络代码中的漏洞。
+* [[{{tr|Sail}}]]现在每个 50 铜币。
+* [[{{tr|Mediumcore}}]]/[[{{tr|Hardcore}}]]死后会正确掉落{{tr|items}}了。
+** 修复了在游戏控制中按下“重置为默认”时将{{tr|quick mana}}按键重置为 M 而非 J 的问题。
+* 修复了穿着[[{{tr|Bee armor}}]]时玩家的手会在头后面绘制的 {{tr|bug}}。
+* [[{{tr|Living Fire Block}}]]掉进[[{{tr|lava}}]]后现在不会消失。
+* [[{{tr|Anchor}}]]{{tr|weapon}}现在离玩家太远时会返回玩家处。
+* 修复了在某些情况下使用[[{{tr|Anchor}}]]会让游戏崩溃的 {{tr|Bug}}。
+* 修复了在{{tr|multiplayer}}中[[{{tr|hardmode}}]][[{{tr|dungeon}}]]{{tr|casters}}会发射不止 1 发{{tr|projectile}}的 {{tr|bug}}。
+* 修复了离开世界时[[{{tr|Hornet Staff}}]]、[[{{tr|Imp Staff}}]]、和[[{{tr|Slime Staff}}]]的{{tr|minion buff}}不消失的 {{tr|bug}}。
+* [[{{tr|Ocean}}]]{{tr|enemies}}现在会在{{tr|hybrid biome}}的{{tr|oceans}}上生成，这同样适用于沉睡[[{{tr|Angler}}]]。
+* 修复了沉睡[[{{tr|Angler}}]]被{{tr|enemies}}攻击时会缓慢在{{tr|tile}}上移动的 {{tr|Bug}}。
+* 修复了[[{{tr|High Test Fishing Line}}]]{{tr|accessory}}无效的 {{tr|Bug}}，它现在会保证让鱼线不会断裂。
+* 修复了在拉断鱼线的同时尝试使用[[{{tr|Fishing Pole}}]]可以让{{tr|bobber}}再次出现的 {{tr|Bug}}。
+* 修复了死亡时{{tr|fishing}}{{tr|bobber}}不会消失的 {{tr|Bug}}。
+* 修复了[[{{tr|Truffle Worm}}]]没召唤[[{{tr|Duke Fishron}}]]也会消失的问题。
+* 修正了在拉线时试图使用多个[[{{tr|Truffle Worm}}]]会出现多个{{tr|Duke Fishrons}}的 {{tr|bug}}。
+* 现在一次只能召唤一个[[{{tr|Duke Fishron}}]]。
+* 修复了[[{{tr|Duke Fishron}}]]死后不掉落[[{{tr|Greater Healing Potion}}]]的 {{tr|Bug}}。
+* 所有的[[{{tr|Duke Fishron}}]]武器现在都卖 5 金的[[{{tr|coin}}]]。这也会提高其{{tr|reforge}}费用。
+* 回退了关于玩家漂浮的一个修复。现在{{tr|Platform}}电梯又可以用了。
+* 修复了当鼠标在玩家附近干燥区域中时不会选中[[{{tr|glowstick}}]]的 {{tr|bug}}。
+* 现在可以将[[{{tr|Fishing Rod}}]]、[[{{tr|Rod of Discord}}]]、和[[{{tr|Coin Gun}}]]放置在[[{{tr|Weapon Rack}}]]上了。
+* {{tr|Topaz}}[[{{tr|Gemspark Block}}]]现在发黄光而非紫光。
+* [[{{tr|Turtle Armor}}]]和[[{{tr|Spider armor}}]]现在可以正常被染色了。
+* 修复了把[[{{tr|Team Dye}}]]用在[[{{tr|Flying Carpet}}]]上会导致游戏崩溃的问题。
+* [[{{tr|Crimson Axe Banner}}]]现在拥有新的（修复后的）外观。
+* [[{{tr|Mannequin}}]]和[[{{tr|Womannequin}}]]有了新的{{tr|item icon}}。
+* 修复了[[{{tr|Ebonwood Clock}}]]和[[{{tr|Shadewood Clock}}]]的混淆。
+* 现在将[[{{tr|Paint Sprayer}}]]与[[{{tr|Brick Layer}}]]或[[{{tr|Portable Cement Mixer}}]]一起使用能以恰当的速度放置东西了。
+* 修复了[[{{tr|Frost Moon}}]]第 14 和19 波中的“Santa-NK1”（[[{{tr|Santa-NK1}}]]）错写为“Santank”的 {{tr|bug}}。
+* 修正了加载玩家后有时在其[[{{tr|buff}}]]之间有空白的 {{tr|bug}}。
+* [[{{tr|Frost armor}}]]现在受击时可正确播放特殊声音。
+* [[{{tr|Coralstone Block}}]]可在地图上显示。
+* 使用所有的{{tr|summoning weapons}}现在都需要 10 [[{{tr|Mana}}]]，这使得它们可以得到{{tr|Mythical}}[[{{tr|prefix}}]]。
+* 修复了刚刚召唤出来的[[{{tr|minion}}]]有时会消失的 {{tr|Bug}}。
+* 修复了[[{{tr|Optic Staff}}]]的{{tr|The Twins minion}}对会不均匀产生且无法重新召唤的 {{tr|Bug}}。
+* 修复了[[{{tr|tree}}]]在{{tr|biome}}[[{{tr|Wooden Fence}}]]后面不生长的 {{tr|Bug}}。
+* 右键单击打开[[{{tr|chest}}]]、[[{{tr|Piggy Bank}}]]、或[[{{tr|Safe}}]]时现在不会一并拿起{{tr|cursor}}所在位置的物品。
+* 击打[[{{tr|Flesh Block}}]]现在有嘎吱嘎吱的声音。
+* 修复了挥舞[[{{tr|coin}}]]可以造成伤害的 {{tr|bugs}}。
+
+== 对应版本 ==
+* 所有{{console version|short}} — [[{{tr|Console 1.07}}]] + [[{{tr|Console 1.08}}]]
+* {{icon|ios}}/{{icon|google play}} — [[{{tr|Mobile 1.2.11212}}]]
+* {{icon|amazon}} — [[{{tr|Mobile 1.2.11981}}]]
+* {{icon|windows phone}} — [[{{tr|Mobile 1.2.4}}]]
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.2.4.1}}

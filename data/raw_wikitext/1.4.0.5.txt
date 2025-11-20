@@ -1,0 +1,120 @@
+{{patch infobox
+| versions = desktop-console-mobile
+| patchname = 修补程序
+| release = 6/4/2020
+}}
+
+'''1.4.0.5''' 是 2020 年 6 月 4 日发布在[[{{tr|Desktop version}}]]上的一次热修复更新。
+
+== 崩溃修复与性能改进 ==
+* [[{{tr|Multiplayer}}]]服务器对于虚假连接尝试的检测更加严格。
+* 为幻彩灯效（chroma）外设相关的崩溃增加了一些错误处理办法。
+* 为“Spritebatch”增加了一些错误处理办法来避免崩溃。
+* 为使用 Alt+Tab 切屏时增加了一些错误处理办法来避免某些与声效有关的崩溃。
+* 放置在非{{tr|solid block}}上的[[{{tr|Chests}}]]和类似的{{tr|furniture}}应当不再导致崩溃。
+* 修复了可能导致 Linux 用户崩溃的文件命名错误。
+* 修复了切屏时有时可能导致崩溃的问题。
+* 修复了和[[{{tr|Potion of Return}}]]有关的在坐下/睡觉时的崩溃问题。
+* 修复了在[[{{tr|Sandstorm}}]]中使用[[{{tr|Magic Conch}}]]引起的罕见错误。
+* 修复了由于试图加载已损坏的世界而导致的崩溃，甚至连损坏检测系统也被损坏。
+* 修复了世界保存在主机中和游戏时发生的某个错误。
+* 修复了世界加载的某个错误。
+* 修复了用“开服并开始游戏”加载损坏的世界会导致服务器开启流程卡住的问题。
+* 增加了针对名为 “.” 的字符以及导致文件删除的类似名称的进一步保护。
+* RGB/外部设备支持的错误日志条目现在正确表明它们是正常消息，而不是错误。它们还包含一条消息，告诉您可以禁用它们。
+
+== 新增/改动 ==
+* 加入了一个滚动式的世界备份系统以增强世界文件损坏时备份的可靠性。默认状态下，在之前的备份基础上会有 1 个额外的备份文件，这一数值最多可增加至 9。这一数值可用 [[{{tr|config.json}}]] 或 serverconfig.txt 中的“WorldRollbacksToKeep”设定更改。
+* [[{{tr|Torch God}}]]现在加入了{{tr|Terraria}}。
+* 添加了一个能提供新的侧边栏选项设置的[[{{tr|Torch God's Favor}}|物品]]，该设置会自动将放置的火把转换为当前生物群落类型的火把。
+* [[{{tr|Black Slime}}]]和[[{{tr|Blue Jellyfish}}]]现在有几率在[[{{tr|Hardmode}}]]中生成以完成[[{{tr|Bestiary}}]]。
+* [[{{tr|Dungeon}}]] [[{{tr|fishing}}]]的战利品现在优先于其他与地牢[[{{tr|biome}}]]重叠的生物群落。
+* [[{{tr|Fishing}}]]所需的[[{{tr|bait}}]]现在优先选择[[{{tr|ammo}}]]栏中的鱼饵。
+* 技术性上是一个修复：修复了已经存在很久的代码错误，它导致[[{{tr|Crate Potion}}]]具有完全错误的{{tr|recipe}}。现在它需要[[{{tr|Amber}}]]、[[{{tr|Moonglow}}]]、[[{{tr|Shiverthorn}}]]、和[[{{tr|Waterleaf}}]]来制作。
+* [[{{tr|Truffle}}]]现在喜欢居住在[[{{tr|Glowing Mushroom biome}}]]中（而不是保持中立）。
+* {{tr|Forest}}[[{{tr|Pylon}}]]现在也可以在{{tr|sky}}中使用。
+* [[{{tr|Flying Dutchman}}]]现在会在击杀一次后解锁它的[[{{tr|Bestiary}}]]。
+* 在[[{{tr|Golem}}]]被击败前[[{{tr|Lihzahrd}}]]的机械[[{{tr|Traps}}]]不再能被炸弹破坏。
+* [[{{tr|Pirate Invasion}}]]进行过第一次后将不再那么常见。
+* [[{{tr|Explosive Trap}}]]引爆现在应该更有效地处理大量物品掉落，并尝试保存[[{{tr|Mediumcore}}]]物品掉落。
+* 将[[{{tr|Empress of Light}}]]的[[{{tr|Emote}}]]快捷文本更改为“eol”以匹配其它 {{tr|boss}} {{tr|emotes}}。
+* 更改了[[{{tr|Obsidian Toilet}}]]和其它{{tr|Obsidian}}{{tr|furniture}}间制作配方不一致的问题。
+* 更改了[[{{tr|Crimtane Brick}}]]的制作配方的不一致问题，制作它比制作[[{{tr|Demonite Brick}}]]的消耗更大。
+
+== 错误修复 ==
+* 修复了玩家无法在某些计算机上正常移动的问题。
+* 修复了[[{{tr|Slap Hand}}]]的一个伤害问题。
+* 修复了在 [[{{tr|PvP}}]] 中使用[[{{tr|Jousting Lance}}]]时不计算动能伤害的问题。
+* 修复了一条{{tr|death message}}中的名词/动词使用问题。
+* 修复了[[{{tr|Souls in a Bottle}}]]不算作有效{{tr|light source}}的问题。
+* 修复了[[{{tr|Gravedigger's Shovel}}]]不以相同速度采掘中心{{tr|block}}的问题。
+* 修复了[[{{tr|Toy Tank}}]]{{tr|mount}}高度过高的问题。
+* 修复了部分物品的[[{{tr|tooltip}}]]。
+* 修复了部分{{tr|Town Happiness}}度文本的标点问题。
+* 修复了[[{{tr|Haemorrhaxe}}]]物品尺寸不正确地导致它穿过{{tr|block}}掉落的问题。
+* 修复了大部分[[{{tr|Demon Eye}}]]的{{tr|variants}}不能向下穿过{{tr|platforms}}的问题。
+* 修复了[[{{tr|Finch Staff}}|{{tr|Finch}}]]有时不能向下穿过{{tr|platforms}}的问题。
+* 修复了{{tr|Ocean}}[[{{tr|Pylon}}]]会在它无法使用的地下售卖的问题。
+* 修复了在购物时可以替换掉[[{{tr|Discount Card}}]]的问题。
+* 修复了导致部分[[{{tr|enemies}}]]无法具有尺寸变化的问题。
+* [[{{tr|Clay Pot}}]]不再会在放置于底部为斜面的{{tr|block}}上时立即被破坏。
+* 修复了菜单渐入显示的偏差问题。
+* 修复了[[{{tr|Jungle Temple}}]]的{{tr|doors}}无法到达的世界生成问题。
+* [[{{tr|Buff}}]]效果现在应当会正确在受 {{tr|NPC}} 平滑影响的{{tr|enemies}}上保留。
+* {{tr|Chaos Elementals}}和{{tr|Worms}}不再受 {{tr|NPC}} 平滑影响。
+* 修复了和[[{{tr|King Slime}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Golem}}]]、[[{{tr|Wall of Flesh}}]]和传送的[[{{tr|caster}}]]有关的 {{tr|NPC}} 平滑问题。
+* 修复了在[[{{tr|Portal Gun}}]]的{{tr|portals}}中的[[{{tr|Town NPC}}]] 会奇怪地四处漂浮的 {{tr|NPC}} 平滑问题。
+* 改进了在生成/传送时的 {{tr|NPC}} 平滑问题。
+* [[{{tr|Town NPC}}]] 现在在{{tr|multiplayer}}下不再会因 {{tr|NPC}} 平滑回到其{{tr|house}}。
+* 默认的 [[{{tr|NPC}}]] 平滑范围由 1000 降低至 300。
+* 修复了生长在[[{{tr|Mowed grass}}]]上的[[{{tr|trees}}]]不掉落[[{{tr|acorn}}]]的问题。
+* 修复了随机性导致显示的[[{{tr|fishing}}|{{tr|fishing power}}]]剧烈变化的问题。
+* 修复了{{tr|mowed grass}}和[[{{tr|biome spread}}]]的不一致性。
+* 修复了[[{{tr|Dungeon}}]]的陷坑会在{{tr|surface}}生成的问题。
+* 整改了（[[{{tr|Journey mode}}]]）{{tr|Duplication menu}}中部分{{tr|Christmas}}装饰物的分组。
+* 对[[{{tr|Bestiary}}]]中不一致的[[{{tr|Critter}}]]/[[{{tr|Gold Critter}}]]顺序进行了重新排序。
+* [[{{tr|Piranha Gun}}|{{tr|Mechanical Piranha}}]]现在返回更快，玩家不再能甩掉它们。
+* 现在如果 {{tr|NPCs}} 拾取了超过 999 个{{tr|Platinum Coin}}，它们会掉落不超过 999 个[[{{tr|Platinum Coin}}]]的堆叠。
+* 修复了{{tr|Fishing}}[[{{tr|Crates}}]]中部分新物品（大部分为{{tr|pets}}）在{{tr|Multiplayer}}下不掉落的问题。
+* 修复了[[{{tr|Sky Dragon's Fury}}]]和[[{{tr|Tome of Infinite Wisdom}}]]无法[[{{tr|autoswing}}|自动使用]]右键攻击的问题。
+* 修复了[[{{tr|Tome of Infinite Wisdom}}]]使用右键攻击时能够浪费[[{{tr|mana}}]]的问题。
+* 修复了[[{{tr|Giant Flying Fox}}]]的[[{{tr|Bestiary}}]]条目背景。
+* 修复了[[{{tr|Light Lamia}}]]的{{tr|Bestiary}}条目不显示它们生成于{{tr|Hallow Desert}}的问题。
+* 修复了每秒帧数显示会随 UI 尺寸设置更改而移动的问题。
+* [[{{tr|Duke Fishron}}]]和[[{{tr|Dreadnautilus}}]]现在会在当前目标玩家死亡/传送走时正确地将另一个玩家作为目标
+* 修复了[[{{tr|Coral}}]]和[[{{tr|Seashell}}]]与它们的{{tr|tile}}放置预览不对应的问题。
+* [[{{tr|Flails}}]]不再能在被[[{{tr|Cursed}}]]/[[{{tr|Stoned}}]]/[[{{tr|Frozen}}]]等等情况下继续旋转。
+* {{tr|mowed grass}}现在会在接触[[{{tr|lava}}]]时变为{{tr|dirt}}。
+* [[{{tr|Tavernkeep}}]]不再会在其商店满时出售[[{{tr|Pylon}}]]。
+* [[{{tr|Happy Grenade}}]]现在在{{tr|Multiplayer}}下接触玩家时会正确地爆炸并造成伤害。
+* 修复了部分非常高的帽子会在玩家的脚部显示像素的视觉问题。
+* 修复了部分背部的{{tr|accessories}}/{{tr|vanity}}在人物选择菜单中的显示错误。
+* 修复了[[{{tr|Gem Trees}}]]和[[{{tr|Vanity Trees}}]]无法阻止其下方的{{tr|tiles}}被[[{{tr|hammer}}]]击的问题。
+* 修复了在特定情况下[[{{tr|buff}}]]顺序不会正确重新计算，留下空位的问题。
+* 修复了部分飞行{{tr|critters}}只在部分情况下会计入[[{{tr|Bestiary}}]]的问题。
+* 修复了[[{{tr|Wet Bomb}}|{{tr|liquid bomb}}]]能够破坏它们本不能破坏的{{tr|tiles}}的问题。
+* 修复了世界生成时{{tr|sand traps}}会在{{tr|furniture}}上方生成的问题。
+* {{tr|Invasion}}警示信息不再会（在[[{{tr|Journey mode}}]]中）时间定格时刷屏。
+* 修复了召唤[[{{tr|Snake Charmer's Flute}}]]的蛇绳的玩家退出服务器时，蛇绳永远不会消失的问题。
+* 修复了[[{{tr|Dirt Bomb}}]]在半砖上爆炸时不产生{{tr|dirt}}的问题。
+* 修复了部分下落的{{tr|blocks}}落在被[[{{tr|Actuator}}|致动]]的半砖上会自我复制的问题。
+* 修复了吉他和斗篷以奇怪的形式装备的视觉问题。
+* 修复了[[{{tr|Shield of Cthulhu}}]]的免疫时间会重置已经存在的伤害免疫时间，导致玩家更快受伤的问题。
+* 修复了[[{{tr|Gato Egg}}|{{tr|Gato}}]]{{tr|Pet}}的小像素错误。
+* 修复了[[{{tr|Santa Claus}}]]拥有[[{{tr|Traveling Merchant}}]]的派对话语而非他自己的话语的问题。
+* 修复了[[{{tr|Encumbering Stone}}]]使玩家无法拾取[[{{tr|Mana Cloak}}]]的{{tr|Stars}}的问题。
+* 修复了[[{{tr|Large Volcano}}]]{{tr|decorative item}}的一个帧图动画小错误。
+* 修复了人物的头发在[[{{tr|On Fire!}}|着火]]的时候不像身体其它部位一样发光的不一致问题。
+* 修复了{{tr|Ranged weapon}}能获得两种不同的{{tr|Deadly}}[[{{tr|modifier}}]]的问题。
+* 修复了[[{{tr|Golf Cup}}]]会对服务器中所有玩家发出{{tr|wire}}信号的问题。
+* 通过阻止玩家在睡觉时{{tr|fishing}}的方式修复了部分相关问题。
+* 修复了有关[[{{tr|Wet Bomb}}]]的一些问题。
+* 修复了其中一个{{tr|Forest backgrounds}}的像素问题。
+* 新的{{tr|fences}}现在会允许[[{{tr|trees}}]]生长。
+* {{tr|Gem Trees}}现在也会在后方有天然{{tr|cavern}}{{tr|wall}}时生长。
+* 修复了部分[[{{tr|buff}}]]图标中包含白色而非透明色的问题。
+
+{{patchlist}}
+
+{{desktop versions}}
+{{language info|en=1.4.0.5}}

@@ -1,0 +1,83 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 7/2/2015
+| ref = {{forums thread|1-3-0-3-changes.21980|1.3.0.3 的改动}}
+}}
+{{tocright}}
+
+'''1.3.0.3''' 补丁添加了若干新 Config.json {{tr|settings}}。
+
+== 功能 ==
+* 当在商店{{tr|inventory}}中使用左 shift 时，现在会有一个正在出售物品的指示器。
+* 你现在可以通过按下左 shift 键在你的{{tr|chest and the inventory}}间快速转移{{tr|item}}。
+* {{tr|Stardust Guardian}}现在可用{{tr|vanity pet dye}}染色（享受创造的乐趣吧！）。
+* 尚未见过的区域现在在{{tr|camera mode}}中呈现黑色。
+* 添加了名为 'Highlight New Items（高亮新物品）' 的一般性设置选项，默认启用，会将拾取进入{{tr|inventory}}中的任何新{{tr|item}}标为高亮。
+* 捆绑{{tr|multiplayer}}以求好运和稳定性*。
+* 如果错误发生在服务器上，你现在应该可以更轻松地报告错误。
+* 最终 {{tr|boss}} 的{{tr|leech debuff}}已被大修……(涉及剧透，省略)。
+* 你不再能将{{tr|torches}}放在本不应该放置在的{{tr|tiles}}上（{{tr|metal bars}}，等等）。
+* 旧的和{{tr|corrupt worlds}}现在会以红色的名字标注在世界列表中。
+* {{tr|Martian Drone}}的{{tr|health}}提升至 500。
+
+== 新 config 选项 ==
+* 添加了若干种 [[Config.json {{tr|settings}}]]：
+** "UseSmartWallReplacement"，默认启用。若将其关闭，则建筑时的自动墙壁替换将被禁用。
+** "UseSmartCursorForCommonBlocks"，默认关闭。若将其启用，则 1.2.4 的智能物块放置将被重新启用。
+** "DisableLeftShiftTrashCan"，默认关闭。若将其启用，则 Quicktrash（快速丢弃）将被完全禁用。
+** "HidePasswords"，默认关闭。若将其启用，则客户端的所有密码以星号(*) 形式出现。
+** "ThickMouseEdges"，默认关闭。若将其启用，则鼠标会有很厚的边框，其颜色则为"ThickMouseEdgesPackedColor"的颜色。
+
+== {{tr|Bug}} 修正 ==
+* 修正了在{{tr|multiplayer}}得不到‘{{tr|event}}’{{tr|achievements}}的问题。（“{{tr|You can do it!}}”、“{{tr|It's Hard!}}”、“{{tr|No Hobo}}”等等）
+* 修复{{tr|Truffle Worm}}不会生成的问题
+* 修正了在{{tr|glowing mushroom biome}}中死后重生时不再会得到“{{tr|Funkytown}}”{{tr|achievement}}的问题。
+* 修复了{{tr|Gypsy Robe}}底部的性别倾向。
+* 修正了{{tr|Daybreak}}、{{tr|Stardust Dragon}}和{{tr|Stardust Cell Staff}}的金钱价值
+* 修复了若干服务器崩溃问题（{{tr|portals}}, {{tr|lunar shields}}）
+* 修复了大量{{tr|attack}}方式并未在服务器侧同步的问题（{{tr|unicorn mount}}、{{tr|slime mount}}、{{tr|solar dash}}、SoC（Shield of Cthulhu，即{{tr|Shield of Cthulhu}}）猛冲、等等）
+* 修正了如果禁用所有过滤器后{{tr|achievements menu}}滑动条挂在屏幕顶部的问题
+* 修复了{{tr|Armed Eskimo Zombies}}不会溅落其正确血污的问题
+* 修复了{{tr|traps}}可暴击的问题
+* 修复了{{tr|banners}}可被放置于关闭的{{tr|trap doors}}下的问题
+* 修复了对最大堆叠数为 1 的{{tr|items}}和{{tr|inventory}}中的{{tr|coins}}的{{tr|Quick stack}}
+* 修复了快速堆叠吞{{tr|coins}}的问题
+* 修复了 LookForColorTiles 中的崩溃
+* 修复了某些情况下网络同步过多的问题
+* 修复了{{tr|Team Dye}}错误的堆叠
+* 修复了{{tr|developer equipment}}从非{{tr|hardmode bosses}} 处掉落的问题
+* 修复了保存旧世界时的崩溃
+* 修复了封禁无效的问题（与端口有关……）
+* 修复了 {{tr|Loki's dye}}缺失通常的{{tr|developer}}的{{tr|tooltip}}的问题
+* 修复了{{tr|Staff of Regrowth}}的{{tr|Moss}}生长特性在{{tr|multiplayer}}中不起作用的问题
+* 修正了当你将鼠标悬停在信息图标上时引导武器停止使用的问题
+* 修复了让你能够得到比用掉的更多的{{tr|arrows}}的{{tr|Phantasm arrows}}漏洞
+* 修复了{{tr|Horseman's blade}}在对抗{{tr|Lunar invasion enemies}}时不召唤南瓜的问题
+* 修复了与{{tr|Item Frames}}有关的欺骗性 {{tr|bug}}
+* 修复了选中{{tr|favorite item}}时无法将{{tr|item}}移出{{tr|Item Frame}}的 {{tr|bug}}
+* 修复了 Config.json 的 "FrameSkip（跳帧）"相比游戏中写反了的 {{tr|bug}}
+* 修复了{{tr|Nymph}}在[[{{tr|Lifeform Analyzer}}]]上没有[[{{tr|rarity}}]]的问题。
+* 修正了{{tr|Srollers}}会造成非预期的超高伤害的问题
+* 修正了{{tr|Developer armor}}{{tr|wings}}的花费
+* 修复了指向{{tr|Frozen Campfire}}最右侧{{tr|tile}}时显示{{tr|Ichor Campfire}}的图标的问题
+* 修复了{{tr|Bee gun}}无法暴击的问题
+* 修复了{{tr|Torch}}的复制 {{tr|bug}}
+* 修复了多人游戏中若干失同步问题
+* 修复了{{tr|world and player}}名字中若含有若干字符，则会导致崩溃和使用云存档与收藏时的奇怪行为的问题。
+* 修复了损坏的配置文件会导致崩溃的问题。
+* 修复了单人游戏中可邀请{{tr|players}}进入先前的游戏的问题。
+* 修复了从游戏外加入游戏会导致显示出一个不可取消的加入窗口的问题。
+* 修复了密码框有时不显示的问题。
+* 在全屏模式下设置分辨率现在可以正确应用。
+* 修复了众多潜在的多人模式漏洞
+* 修复了玩家可以通过非正常手段进入所谓“难度 3”的问题。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.0.3}}

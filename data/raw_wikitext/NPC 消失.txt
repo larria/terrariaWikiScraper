@@ -1,0 +1,30 @@
+所有不是[[{{tr|NPC}}|城镇 {{tr|NPCs}}]] 的 {{tr|NPCs}} 在离开玩家一个特定最大距离之外时都会遭遇到消失。
+
+世界中的所有玩家都有两个以自身为中心的矩形区域来管理这个过程。外部的矩形，在此称其为活跃区域，尺寸为 504 格宽 283.5 格高，即一个 1920×1080 的屏幕在两个方向上都乘以 4.2 之后的宽度和高度。<!-- The size 1920x1080 remains regardless of what resolution actually is on effect now. -->当处于此区域外时，只要不是 {{tr|boss}} 或一些特殊的东西（比如{{tr|worm head}}），它就会即刻消失。当处于此矩形区域内部时，具有消失能力的 {{tr|NPCs}} 会被视为对玩家活跃，并会在[[NPC 生成|生成 {{tr|NPCs}}]] 时计入考量。要注意，处于活跃状态并不会让 {{tr|NPC}} 豁免消失。
+
+内部的矩形，在此称其为计时区域，相当小，尺寸为 120 格宽 67.5 格高，等于 1920×1080 屏幕区域加上实体的大小。当 {{tr|NPC}} 在此区域之外时，一个计时器就开始倒计时一段时间（默认是 750 {{tr|ticks}}，{{tick}}或者说 12.5 秒，但有大量例外）；当它走到零时，NPC 就会消失，无论其是否计为活跃。重新进入玩家的计时区域会重置此计时器，这意味着留在此区域内的{{tr|NPCs}} 永远不会消失。只要其头部维持活跃状态，如[[{{tr|Eater of Worlds}}]]这样的大型实体的体节就不受这些计时器的限制。
+
+<!--Every player has two rectangles centered around themselves which is related to whether a despawnable NPC will despawn. These are the Active rectangle (greatly larger than screen), and Timer rectangle (not very large).
+
+When a despawnable NPC is inside one of the Timer rectangles of players, it won't despawn at all. When it is outside all player's Timer rectangles, its dying timer will be started until it goes inside a Timer rectangle and resets the timer. The timer counts down from 12.5s (750 ticks, each tick being 1/60 second)
+
+When a despawnable NPC is inside a player's Active rectangle, it is counted as active for the player and it will be counted when the game [[NPC Spawning|spawning NPCs]].
+
+On following occasions will a despawnable NPC despawn:
+
+* The NPC is not active for any player and it is not a part of a larger Monster (such as boss with multiple parts, the worms' parts, etc.)
+
+* The timer has counted to zero. (Which causes a bug that makes a boss with multiple sections will sometimes partly despawn, such as [[Skeletron]])
+
+The information of rectangles' sizes:
+
+* Active rectangle: 504*283.5 blocks (the 1920*1080 screen multiplied with 4.2*4.2) (much larger than the spawning rectangle, which is 168*94)
+
+* Timer rectangle: 120*67.5 blocks (the 1920*1080 screen plus the monster's size, a bit smaller than safe zone in [[NPC Spawning|spawning mechanics]])-->
+{{Game mechanics}}
+
+<noinclude>
+[[Category:NPC]]
+</noinclude>
+
+{{language info|en=NPC despawning}}

@@ -1,0 +1,14 @@
+<includeonly><!--
+
+-->{{#iferror:{{#expr:{{{bait|}}}}}||<!-- do not display anything if we can't process the bait field -->
+<nowiki/>
+{{!}}-
+{{!}} {{item|id={{{itemid|}}}|showid=n|note2={{gameText|GameUI.BaitPower|x_0={{{bait|}}}}}}}
+{{!}} {{chance|1/{{#expr:1+{{{bait|}}}/6 round 3}}}}
+{{!}} {{chance|1/{{#expr:2+{{{bait|}}}/6 round 3}}}}<!--
+
+-->}}<!--
+
+--></includeonly><noinclude>{{formatting subpage}}
+{{language info|en=Bait/bait power row}}
+</noinclude>

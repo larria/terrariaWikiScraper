@@ -1,0 +1,120 @@
+<includeonly><!--
+
+// register localization info:
+-->{{l10n/register|bosses-box|en
+|strategies=For elaborate strategies on defeating $bossname$, including [[weapon]] and [[arena]] recommendations, see $strategies$.
+|default_strategies=[[Guide:$bossname_en$ strategies]]
+|music_label=Music:&#32;
+|music_link=Music
+}}<!--
+-->{{l10n/register|bosses-box|de
+|strategies=Für ausführliche Strategien und Waffen- und Arena-Empfehlungen bezüglich des Kampfes mit <esc>{{tr|$bossname$}}</esc> siehe $strategies$.
+|default_strategies=<esc>[[Leitfaden:{{#replace:{{tr|$bossname_en$}}| |-}}-Strategien]]</esc>
+|music=Musik:&#32;
+|music_link=Musik
+}}<!--
+-->{{l10n/register|bosses-box|fr
+|strategies=Pour des stratégies élaborées pour vaincre <esc>{{bossnamealt|$bossname$|le}}</esc>, incluant des recommandations d'[[arme]] et d'[[arène]], voir $strategies$.
+|default_strategies=<esc>[[Guide:Stratégies {{bossnamealt|$bossname_en$|de}}]]</esc>
+|music_label=Musique :&#32;
+|music_link=Musique
+}}<!--
+-->{{l10n/register|bosses-box|pt
+|strategies=Para estratégias elaboradas em como derrotar <esc>{{bossnamealt|$bossname$|le}}</esc>, incluindo recomendações de [[armas]] e [[arena]], veja $strategies$.
+|default_strategies=<esc>[[Guia:Estratégias para {{bossnamealt|$bossname_en$|de}}]]</esc>
+|music_label=Música: &#32;
+|music_link=Música
+}}<!--
+-->{{l10n/register|bosses-box|vi
+|strategies=Để xem các chiến thuật giết <esc>{{tr|$bossname$}}</esc>, bao gồm [[Weapons/vi|Vũ khí]] và [[Arena/vi|Arena]], hãy xem $strategies$.
+|default_strategies=<esc>[[Guide:$bossname_en$ strategies/vi|Hướng dẫn: Chiến thuật đánh {{tr|$bossname_en$}}]]</esc>
+|music=Nhạc:&#32;
+|music_link=Music/vi
+}}<!--
+-->{{l10n/register|bosses-box|zh
+|strategies=关于打败<esc>{{tr|$bossname$}}</esc>的详细策略，包括[[{{tr|weapon}}]]和[[{{tr|arena}}]]的建议，参见$strategies$。
+|default_strategies=[[指南:<esc>{{tr|$bossname_en$}}</esc>攻略]]
+|music_label=音乐：
+|music_link=音乐
+}}<!--
+
+--><div style="height: 0px;overflow:hidden;margin-top: 0.5em">
+=== {{tr|{{{name|}}}}} ===
+</div><!-- invisible heading (anchor for linking/toc)
+
+-->{{#vardefine:image_filename|{{{imagealt|{{{name|}}}.{{#if:{{{animated|}}}|png|gif}}}}}}}<!-- 
+-->{{#vardefine:image_width|{{min|{{#imgw:{{#var:image_filename}}}}|170}}}}<!-- image max width 170px
+-->{{#vardefine:image_height|{{min|{{#imgh:{{#var:image_filename}}}}|200}}}}<!-- image max height 200px
+-->{{#vardefine:image_size|{{#var:image_width}}}}<!-- 
+-->{{#if:{{#var:image_height}}|{{#vardefine:image_size|{{#var:image_size}}x{{#var:image_height}}}}}}<!-- 
+-->{{#if:{{#var:image_size}}|{{#vardefine:image_size|{{!}}{{#var:image_size}}px}}}}<!-- 
+
+-->{{infocard|<!--
+	-->|name={{tr|{{{name|}}}}} {{#iferror:{{eicons|{{{name|}}}}}}}<!--
+	-->|intro=<!--
+		-->{{infocard/box|css=padding:0 10px|<!--
+			-->{{#if:{{bool|{{{notrophy|}}}}}|<!-- nothing -->|{{{trophy|[[File:{{{name|}}} Trophy.png|link={{{name|}}} Trophy]]}}}&#32;}}<!--
+			-->''{{l10n|bosses-box|strategies<!--
+				-->|$bossname$={{{strategiesname|{{{name|}}}}}}<!--
+				-->|$strategies$={{{strategies|{{l10n|bosses-box|default_strategies|$bossname_en$={{{name|}}}}}}}}<!--
+			-->}}''<!--
+		-->}}<!--
+	-->|imagealt=<div style="padding: 20px 15px; text-align: center; background:{{{color|#DDD}}}">[[File:{{#var:image_filename}}|link={{tr|{{{name|}}}|link=y}}{{#var:image_size}}]]</div><!--
+	-->|size=200px<!--
+	-->|card_a=<!--
+	-->|a={{{summoned|}}}<!--
+	-->{{#vardefine:pagetitle_for_bossmusic|{{#if:{{langList|isOffWiki|{{lang|}}}}|{{tr|{{{name|}}}|link=y}}|{{{name|}}}}}}}<!-- use the EN page for on-wiki languages
+	-->{{#if:{{#dpl:title={{#var:pagetitle_for_bossmusic}}|uses=Template:Boss music|noresultsheader=1}}||<!--
+		-->{{#vardefine:bossbox:music|{{#or:<!--
+			// get the first unnamed parameter of the {{boss music}} transclusion on the boss's page
+			// there may be multiple transclusions of {{boss music}}, so limit it to the first one
+			-->{{#lstelem:{{#dpl:title={{#var:pagetitle_for_bossmusic}}|include={boss music}:1|secseparators=₪}}|₪|1}}<!--
+		-->|<!--
+			// the transclusion of {{boss music}} no first unnamed parameter
+			-->{{ifexists|File:Music-{{{name|}}}.mp3|{{{name|}}}}}<!--
+		-->}}}}<!--
+		-->{{#if:{{#var:bossbox:music}}|<!--
+			--><div class=outro><br/><small><!--
+				-->{{sound|{{l10n|bosses-box|music_label}}[[{{l10n|bosses-box|music_link}}#{{tr|{{#var:bossbox:music}}}}|{{tr|{{#var:bossbox:music}}}}]]|Music-{{#var:bossbox:music}}.mp3|nofallback=y}}<!--
+			--></small></div><!--
+		-->}}<!--
+	-->}}<!--
+	-->|text={{{1|}}}<!--
+-->}}
+{{-}}</includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Template for displaying a boss box; uses {{tl|infocard}}.
+
+== Parameters ==
+; name
+Name of the boss
+
+; notrophy
+Suppress the trophy in front of the strategies link
+
+; trophy
+Custom trophy, should be used like this: <code>[[File:''&lt;trophy&gt;''.png|link=''&lt;trophy&gt;'']]</code>
+
+; strategies
+Custom link after the "''... recommendations, see ''"
+
+; color
+Background color of the image
+
+; animated
+Displayed image is <code>Animated <nowiki>{{{name}}}</nowiki>.gif</code> by default. Use <code>animated=n</code> to change it to <code><nowiki>{{{name}}}</nowiki>.png</code>
+
+; imagealt
+Completely customized image
+
+; summoned
+Text beneath the image
+
+; 1st unnamed parameter
+Main description text
+
+{{language info|en=Bosses/box}}
+</noinclude>

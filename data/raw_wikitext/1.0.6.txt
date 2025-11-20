@@ -1,0 +1,189 @@
+{{patch infobox
+| release = 8/9/2011
+| ref = [https://web.archive.org/web/20160604213708/http://www.terrariaonline.com/threads/1-0-6-changelog.50278/ 1.0.6 更新日志]
+}}
+{{tocright}}
+
+<!-- DO NOT PUT FUTURE UPDATES HERE, IT'S CALLED VERSION "HISTORY" FOR A REASON
+ READ the list of additions before you add something you think you found! You're likely not the first.
+ Also, PLEASE STANDARDIZE THE WIKI, do not copy directly from the Steam news/forums on updates!
+ Please keep the lists in alphabetical order (where-ever possible).
+ List the patch-notes in the following order:
+ New Additions (New Features -> New Items -> New Enemies -> New NPCs) -> Changes -> Bug Fixes -> New Bugs -> Terraria Wiki Notes -->
+'''1.0.6''' 补丁引入了很多新机制、平衡了很多物品。同时添加了很多装饰性的（和一些功能性的）{{tr|furniture}}。
+
+== 新添加 ==
+=== 新物品 ===
+* [[{{tr|Ale}}]]
+* [[{{tr|Statue}}|{{tr|Armor Statue}}]]
+* [[{{tr|Barrel}}]]
+* [[{{tr|Bathtub}}]]
+* [[{{tr|Bench}}]]
+* [[{{tr|Blue Banner}}]]
+* [[{{tr|Bookcase}}]]
+* [[{{tr|Bowl}}]]
+* [[{{tr|Bowl of Soup}}]]
+* [[{{tr|Candelabra}}]]
+* [[{{tr|Chinese Lantern}}]]
+* [[{{tr|Cooking Pot}}]]
+* [[{{tr|Dresser}}]]
+* [[{{tr|Goblin Battle Standard}}]]
+* [[{{tr|Golden Key}}]]
+* [[{{tr|Grandfather Clock}}]]
+* [[{{tr|Green Banner}}]]
+* [[{{tr|Jungle Spores}}]]
+* [[{{tr|Keg}}]]
+* [[{{tr|Lamp Post}}]]
+* [[{{tr|Loom}}]]
+* [[{{tr|Mug}}]]
+* [[{{tr|Obsidian Brick Wall}}]]
+* [[{{tr|Piano}}]]
+* [[{{tr|Pink Vase}}]]
+* [[{{tr|Red Banner}}]]
+* [[{{tr|Safe}}]]
+* [[{{tr|Shadow Chest}}]]
+* [[{{tr|Shadow Key}}]]
+* [[{{tr|Skull Lantern}}]]
+* [[{{tr|Tattered Cloth}}]]
+* [[{{tr|Throne}}]]
+* [[{{tr|Tiki Torch}}]]
+* [[{{tr|Toilet}}]]
+* [[{{tr|Trash Can}}]]
+* [[{{tr|Yellow Banner}}]]
+
+=== 新敌怪 ===
+* [[{{tr|Blazing Wheel}}]]
+* [[{{tr|Dungeon Slime}}]]
+* [[{{tr|Goblin Scout}}]]
+* [[{{tr|Spike Ball}}]]
+
+<!--
+Move "New Features" into "Changes" and vise-versa as you see fit.
+Add links where ever possible,
+and try to keep each entry as short as possible while keeping all of the important info.
+-->
+== 新功能 ==
+* [[{{tr|Critical Hit}}]] - 现在你有小概率对敌人造成额外伤害。
+* [[{{tr|Damage Types}}]] - 伤害现在进一步分为近战、远程和魔法伤害。这将会适用于若干系统，比如[[{{tr|buff}}]]、[[{{tr|debuff}}]]。物品会在它的工具提示显示它会造成何种伤害，你可以借此了解什么工具会被什么增益影响。
+<!--interface-->
+* 物品栏的[[{{tr|Inventory}}#{{tr|Trash Can}} (1 {{tr|slot}})|垃圾桶]]{{tr|slot}}，位于在物品栏的右下角。把物品放在这一格以摧毁它。然而，直到你再在这一格中放入一个物品之前，它会保留其中的物品，这样你就可以追回你扔掉的上一个物品。Shift+右键点击一个物品就能快速将它列入垃圾桶。
+* 使用[[{{tr|Storage items}}]]时添加了“强夺全部”“存放全部”和[[{{tr|Quick Stack}}]]功能。
+* [[{{tr|Inventory}}#{{tr|Hotbar}} (10 {{tr|slots}})|{{tr|Hotbar}}]]现在会分别显示对应的按键了。
+* 如果你按住了 Shift 键，右键点击物品栏中的[[{{tr|accessory}}]]或[[{{tr|armor}}]]就能自动装备它。
+* 现在不再能在[[{{tr|inventory}}]]的{{tr|slots}}缝隙间丢出物品了。
+* 现在一部分[[{{tr|Tools}}]]（主要是[[{{tr|pickaxe}}]]），会在工具提示里告诉你它可以挖掘什么。比如“可挖掘[[{{tr|Meteorite}}]]”。
+* 现在有四个[[{{tr|ammo}}]]栏，可以将{{tr|Ammo}}放在此处以节省[[{{tr|inventory}}]]。[[{{tr|Weapons}}]]会优先从这些格中使用弹药，在它们空了之后才会使用{{tr|inventory}}中的。
+* 放着{{tr|ranged weapon}}的[[{{tr|Hotbar}}]]{{tr|slots}}现在在上面会正确显示所用[[{{tr|ammo}}]]的数量了。
+* 现在在[[{{tr|inventory}}]]中有一把锁的图标，点击一下的话将禁止你使用点击来切换热键栏，你只能使用 0~9 键或鼠标滚轮来切换选择的物品。
+* [[{{tr|Hotkeys}}]]现在可以用于在{{tr|inventory}}打开时更改选择的物品。
+* [[{{tr|Shops}}]]现在能将[[{{tr|items}}]]卖回给你。按住 Shift 点击{{tr|items}}会自动将其出售。
+* 现在你可以通过按 {{key|Esc}} 来清空你的[[{{tr|chat}}]]{{tr|message}}。
+<!--options-->
+* 新增了一个选项，用以禁用[[{{tr|Settings}}#界面|拾取时的弹出文字]]。
+* 添加了使用[[{{tr|Grappling Hook}}]]/[[{{tr|Ivy Whip}}]]的热键（默认{{tr|hotkey}}为 {{key|E}}）。
+<!--gameplay-->
+* 你现在会根据距离你上次受伤的时间长短来决定你回复[[{{tr|health}}]]的速度。时间过得越长，你回复得越快。
+* [[{{tr|Mana}}]]现在会根据你的{{tr|mana}}池中有多少{{tr|mana}}来回复。你当前拥有的{{tr|mana}}越多，回复的就越快。它在站立不动时也会比移动中回复的更快。
+* 现在在创建角色的时候可以选择三种不同的难度：
+** 软核：死亡时掉落[[{{tr|coins}}]]，最大生命值和最大魔力值不变。
+** 中核：死亡时掉落[[{{tr|items}}]]，最大生命值和最大魔力值不变。
+** 硬核：死亡时掉落所有物品并删除你的角色。死亡时你会变成[[{{tr|Ghost}}]]，直到你登出前无法与这个世界互动。
+* 放置[[{{tr|background walls}}]]更加简单了，因为 1 格大的洞现在可以自动填充。
+<!--character creation-->
+* 添加了 19 种新[[{{tr|hairstyles}}]]。
+* 你可以选择使用男性或女性的角色语音。
+* 选择[[{{tr|hairstyle}}]]时，你可以通过点击右键来逆向循环发型选择。
+<!--misc-->
+* 增加了几个随机[[{{tr|Title messages}}|游戏副标题]]。副标题会显示在窗口模式的游戏标题边。
+<!--sounds-->
+* [[{{tr|The Corruption}}]]现在有了新音乐。
+* 以下行动/事件有了新的音效：
+** 和 [[{{tr|NPC}}]] 进行交谈
+** 当[[{{tr|Mana}}]]完全回复时（同时会在玩家周围出现紫色的星星）
+** 使用[[{{tr|Water Bolt}}]]、[[{{tr|Flamelash}}]]、和[[{{tr|Flower of Fire}}]]时
+** 开始[[{{tr|Drowning}}|{{tr|drown}}]]时
+* 一些音效有了几个随机可选项（比如挥剑），以此使之富有变化。
+
+== 更改 ==
+<!--items-->
+* 更新了[[{{tr|Wooden Table}}]]、[[{{tr|Door}}]]和[[{{tr|Workbench}}]]的外观。
+* 降低了[[{{tr|Glowstick}}]]的价格，同时提升了它的亮度。
+* [[{{tr|Coins}}]]现在在移动时会发出闪光轨迹。
+* 降低了[[{{tr|Jungle Rose}}]]的掉落率，且现在不再用于[[{{tr|craft}}]]。
+* [[{{tr|Jungle Spores}}]]代替了[[{{tr|Jungle Rose}}]]原来在[[{{tr|recipes}}]]中的作用。
+* [[{{tr|Grappling Hook}}]]和[[{{tr|Ivy Whip}}]]不再能不断射出了——你必须等待上一钩钩中或返回之后才能再次发射。
+* [[{{tr|Suspicious Looking Eye}}]]现在偶尔会在[[{{tr|Chest}}]]中被发现了。
+* [[{{tr|Flamelash}}]]、[[{{tr|Sunfury}}]]和[[{{tr|Flower of Fire}}]]不再掉落了，它们现在只能在[[{{tr|The Underworld}}]]中的[[{{tr|Shadow Chest}}]]内开出。
+* [[{{tr|Dark Lance}}]]不再出现在[[{{tr|Golden Chest}}]]中，而是出现在[[{{tr|The Underworld}}]]的{{tr|Shadow Chests}}中。
+* [[{{tr|Ash}}]]和[[{{tr|Mud}}]]在被放置和摧毁时不再会由于重力而落下了。
+* [[{{tr|Hellstone}}]]不再发光，而且更稀有了。现在它们在[[{{tr|The Underworld}}]]中被采掘时还会生成[[{{tr|lava}}]]。
+* [[{{tr|Cacti}}]]不再造成[[{{tr|knockback}}]]了，这使得跑过[[{{tr|Desert}}]]时受到的困扰少了些。
+* 削弱了治疗型[[{{tr|potions}}]]的效果，且在使用后会给予玩家[[{{tr|Potion Sickness}}]][[{{tr|debuff}}]]。
+* 更改了[[{{tr|Flails}}]]的机制——现在直到你松开鼠标前它们都不会返回了，而且可以在移动中使用。
+* 所有放置的[[{{tr|background walls}}]]现在都可以作为[[{{tr|house}}]]的建筑材料（甚至[[{{tr|Dirt Wall}}|{{tr|Dirt}}]]和[[{{tr|Dungeon Wall}}]]也是如此）。
+* 现在不能同时装备两个相同类型的[[{{tr|accessories}}]]了。
+* [[{{tr|Fish Bowl}}]]现在需要[[{{tr|Bottled Water}}]]制作，而不是[[{{tr|Bottle}}]]。
+* 重做了以下[[{{tr|armors}}]]的属性值，使其更适应不同的玩法：
+** [[{{tr|Meteor armor}}]]
+** [[{{tr|Molten armor}}]]
+** [[{{tr|Shadow armor}}]]
+** [[{{tr|Necro armor}}]]
+** [[{{tr|Jungle armor}}]]
+* [[{{tr|Flower of Fire}}]]现在造成更高的伤害，但同时会花费更多[[{{tr|mana}}]]。
+* [[{{tr|Band of Starpower}}]]现在使你的[[{{tr|mana}}]]上限提升 20 点，但不再提升魔力回复速度了。
+* [[{{tr|Orb of Light (item)}}|{{tr|Orb of Light}}]]的移动速度慢了些，亮度降低了 35%。它现在被视为一项增益，会显示持续时间且可以被玩家手动移除。
+* 提高了[[{{tr|Magic Missile}}]]的移动速度。现在你松开鼠标时会发射射弹，而不是使其直接消失。
+* [[{{tr|Flamelash}}]]现在会在你松开鼠标时发射射弹，而不是使其直接消失。
+* [[{{tr|Meteor armor}}]]和[[{{tr|Molten armor}}]]不再发光了。
+* 略微提高了[[{{tr|Starfury}}]]造成的伤害，提高了[[{{tr|mana}}]]消费，且更改了机制使其可以在地下使用——如果星星在[[物块]]内部生成，那么它在第一次穿出物块前都可以无视物块前进，之后则会正常被物块阻挡。
+* [[{{tr|Minishark}}]]现在有 33% 的几率不消耗[[{{tr|ammo}}]]。这项改动使它的弹药消耗率降低了一些。
+* 提高了[[{{tr|Flintlock Pistol}}]]和[[{{tr|Musket}}]]造成的伤害。
+* [[{{tr|mana}}]]条现在是蓝色的了。获得生命值的弹出文字现在是绿色的了。
+* 角色创建界面中，Misc（其他）选项被重命名为 Shoes（鞋子）。
+* 优化了寻找图格边界的算法，这使得世界加载得更快了。
+* 现在[[{{tr|Underground Jungle}}]]会生成更多的[[{{tr|Gem}}]]。
+* 改变了[[{{tr|Underworld}}]]中的建筑的生成方式。现在它们很少会全部由[[{{tr|Obsidian}}|{{tr|Obsidian Brick}}]]构成，且高度更高了。
+* [[{{tr|Underground Jungle}}]]现在以[[{{tr|Mud Wall}}]]作为背景墙。
+* [[{{tr|Dungeon}}]]不再会在[[{{tr|Ocean}}]]中生成了。
+* 现在[[{{tr|Desert}}]]稍微会离世界中心远一些了。
+* [[{{tr|Dungeon}}]]中的[[{{tr|Spike}}]]更多了，且光照减少了。
+* [[{{tr|the Underworld}}]]中的[[{{tr|Ash}}]]之间的小块[[{{tr|lava}}]]出现得更频繁了，这项改动使得采集[[{{tr|Hellstone}}]]更有挑战性。
+* 一些事物不再会在[[{{tr|Dungeon}}]]中生成了，它们应该生成在不是地牢的区域。
+* 使用生命和魔力[[{{tr|Potion}}]]的[[{{tr|Hotkeys}}]]现在会正确地消耗{{tr|Mana and Healing}}[[{{tr|Potion}}]]了。
+* 改变了一部分界面中栏位的颜色：
+**[[{{tr|Inventory}}]]的栏位改为蓝色。
+** 装备栏的栏位改为绿色。
+** [[{{tr|Crafting}}]]菜单的栏位改为紫色。
+** [[{{tr|NPC}}|商店]]的栏位改为棕色。
+** [[{{tr|Piggy Bank}}]]和[[{{tr|Safe}}]]的栏位改为粉色。
+* 现在新获得的物品会优先出现在[[{{tr|inventory}}]]的右下方而不是左上方。
+* [[{{tr|Hammers}}]]和[[{{tr|axes}}]]挖掘得更快了。锤现在能以大约两倍于挖掘其他物块的速度挖掘墙。
+* 现在你可以在被[[{{tr|Cobweb}}]]困住的时候摧毁它们了。
+* 更新了[[{{tr|Night's Edge}}]]和[[{{tr|Dark Lance}}]]的图像。
+* [[{{tr|use time}}]]的{{tr|tooltip}}文本“很快”现在最多可以指{{tr|use time}}为 20 的所有{{tr|items}}。其他使用时间也相应进行了调整：
+** “很快”现在指 9–20 而非 of 9–15。
+** “快”现在指 21–25 而非 16–20。
+** “普通”现在指 25–30 而非 21–25。
+** “慢”现在指 31–35 而非 26–30。
+** “很慢”现在指 36–45 而非 31–40。
+** “极慢”现在指 46–55 而非 41–50。
+** “蜗牛”现在指 ≥56 而非 ≥51。
+: 因此，一些物品现在纸面上的速度更快了，但实际上速度并没有变。
+
+== {{tr|Bug}} 修复 ==
+* [[{{tr|Bottled Water}}]]不再能在{{tr|lava}}边合成了。
+* [[{{tr|Night Owl Potion}}]]现在能正确生效了。
+* 当[[{{tr|Piggy Bank}}]]下方的桌子因其下方的物块被移除而掉落时不再会悬浮在空中了。
+* 修正了提升近战速度的物品的算法公式，现在它们能正确使玩家造成更多伤害了。
+* [[{{tr|Cacti}}]]不再会在生长时摧毁[[{{tr|blocks}}]]了。
+* 修正了一些拼写错误和某些工具提示中“%”的位置。
+
+== {{tr|Terraria Wiki notes}} ==
+* 许多[[{{tr|potions}}]]的持续时间从 2 分钟提升至 5 分钟。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.0.6}}

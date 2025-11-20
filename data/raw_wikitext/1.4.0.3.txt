@@ -1,0 +1,77 @@
+{{patch infobox
+| versions = desktop-console-mobile
+| patchname = 修补程序
+| release = 5/20/2020
+}}
+
+'''1.4.0.3''' 是在 2020 年 5 月 20 日发布的[[{{tr|Desktop Version}}]]小更新。
+
+== 新增/改动 ==
+* 火把不再会降低玩家的总[[luck|幸运值]]。
+* 大幅提升[[{{tr|Prismatic Lacewing}}]]的刷出速度。
+* [[{{tr|Angry Dandelion}}]]有几率掉落[[{{tr|Daybloom}}]]。
+* 只需击杀一只[[{{tr|Betsy}}]]就会将[[{{tr|Bestiary}}]]中的进度加满，与其他主要 [[{{tr|boss}}]] 保持一致。
+* [[{{tr|Zenith}}]]现在需要[[{{tr|Bee Keeper}}]]来合成。
+* [[{{tr|Shiverthorn}}]]的生长速度有所减缓，但开花速度加倍。
+* [[{{tr|Waterleaf}}]]在雨中加速生长，[[{{tr|Blinkroot}}]]在地下加速生长，[[{{tr|Fireblossom}}]]在地狱加速生长。
+* 世界生成时会出现更多[[{{tr|Blinkroot}}]]，且所有草药都有可能在世界生成时“生长”。
+* [[Owl|猫头鹰]]减少鸣叫。
+* 修改了大量艺术资源，大部分只是微调，但有一些作了实质性变更，例如{{tr|Molten}}[[{{tr|weapons}}|{{tr|weapons}}]]和[[{{tr|tools}}]]，[[{{tr|Clentaminator}}]]和[[{{tr|S.D.M.G.}}]]
+* [[{{tr|Tombstones}}]]会被[[{{tr|Dangersense Potion}}]]感知到。
+* [[{{tr|Dungeon Guardian}}]]和[[{{tr|Old Man}}]]也会在[[{{tr|Skeletron}}]]解锁后解锁，先前的解锁方法依然保留，这是为了确保玩家能解锁它们。
+* 添加一项 [[config.json]] 设置，名为"DisableIntenseVisualEffects"（“禁用激烈的视觉效果”），可以禁用雷暴天气中的闪电。在接到反馈后也可能会包括其他机制。
+
+== 崩溃修复及性能改进 ==
+* 修复了土耳其语（可能还有其他语言）电脑上可能出现的严重的世界生成问题及其他崩溃问题。
+* 遇到文件权限导致的崩溃的用户会看到更新过的错误信息，给予更多说明（文件权限问题是因为电脑不允许 Terraria 创建及修改存档文件，这通常会使游戏在创建/保存世界和人物时崩溃）
+* 修复声音未正确初始化时不会禁用声音的问题，这应该会修复一些初始化时出现的崩溃
+* 优化了[[{{tr|Mannequin}}]]和[[Hat Rack|{{tr|Hat Rack}}]]，降低其性能开销
+* 添加了一些保护，避免在[[{{tr|Camera mode}}]]下截大截图时崩溃
+* 减少[[{{tr|Multiplayer}}]]中[[{{tr|liquid}}]]移动的限制，这应该会使服务器中同时可以有更多液体在流动
+* 改善多人模式服务器处理液体同步的方法
+* 添加了新的多人模式中平滑 [[NPC]] 的代码，可以通过 config.json 中名为"MultiplayerNPCSmoothingRange"（“多人模式 NPC 平滑范围”）的设置调节，如果 NPC 在小于这个范围内移动（默认值 1000 像素），NPC 会被平滑地移动到其下一个位置（将值改为 0 可以禁用此设置）
+* 队伍名称板不会再在满血时显示生命值，以改善多人模式性能
+* 在 config.json 中添加名为"TeamNameplateDistance"（队伍名称板距离）的设置，使用户可以缩减渲染队伍名称的范围，默认值 2000。降低同屏队伍名称板数量可以在多人模式游戏中改善性能，建议按需使用
+
+== 错误修复 ==
+* 修复世界菜单中的种子按钮仍然隐藏的漏洞
+* 修复玩家的死亡计时有时会非常长的问题。现在最长时间限制为 30 秒。这会回溯性地修复那些死亡计时非常长的游戏角色
+* 修复特定用户无法在 1.4 的主菜单中使用鼠标左键的问题
+* 修复[[{{tr|Minions}}]]在反转重力时会被召唤在错误位置的问题
+* 修复召唤状态图标在反转重力时会被显示在错误位置的问题
+* 修复位于修剪过的神圣[[{{tr|grass}}]]上的[[{{tr|Hallow Tree}}]]会掉落普通[[{{tr|wood}}]]的问题
+* 修复钱币闪光不出现的问题
+* 修复[[{{tr|Gold Seahorse}}]]被识别为[[{{tr|cage}}|{{tr|Seahorse Cage}}]]的问题
+* 修复某些[[{{tr|Goblin}}]]卡在门里或陷进地里的问题
+* 修复丛林裤的轮廓问题
+* 修复[[{{tr|flail}}]]链条在骑乘时渲染出错的问题
+* 修复同时装配[[{{tr|Moon Lord Legs}}]]和[[{{tr|Frog Leg}}]]会使腿消失的问题
+* 修复在作战时仍能使用[[{{tr|Step Stool}}]]的问题
+* 修复[[{{tr|Stylist}}]]专属发型在随机生成角色时可能出现的问题
+* 修复 [[NPC]] 不喜欢邻居带来的影响比恨邻居的影响更大的问题
+* 修复可以同时召唤多个[[{{tr|Queen Slime}}]]的问题
+* 修复开始游戏时[[{{tr|Texture Pack}}]]不生效的问题
+* 修复在旅程模式、睡觉或使用日晷加速时间时有些视觉效果没有加速的问题
+* [[{{tr|Titanium armor}}]]的加成不再会由[[{{tr|Target Dummy}}]]触发
+* 修复服务端试图通过 serverconfig.txt 生成特定种子时游戏崩溃的问题
+* 修复关闭拾取文本且使用[[{{tr|Sonar Potion}}]]会删除获得的物品的问题
+* 修复[[{{tr|Obsidian Sink}}]]使用[[{{tr|Hellstone}}]]而非[[{{tr|Obsidian}}]]的问题
+* 修复服务端 config.txt 中世界路径选项在自动创建时被忽略的问题
+* 修复[[{{tr|Hooks}}]]和[[{{tr|Mounts}}]]在[[{{tr|Mediumcore}}]]中死亡后仍然可用的问题
+* 修复三叉戟的移动对[[{{tr|minecarts}}]]的影响
+* 修复玩家死亡时垂钓任务图标消失的问题
+* 修复[[{{tr|Key of Light}}]]/[[{{tr|Key of Night}}]]召唤出的[[{{tr|mimics}}]]残留下宝箱格子的问题
+* 修复双足翼龙战利品掉落率只有预期值一半的问题
+* 修复[[{{tr|Depth Meter}}]]在使用移动镜头的物品时展示错误高度的生物群落的问题
+* [[{{tr|Cool Whip}}]]的雪花不再攻击[[{{tr|critters}}]]或瞄准假人
+* 修复冷鞭的雪花在玩家死亡或退出时不消失的问题
+* 修复[[吃得好|吃得极好]]{{tr|buff}}不产生[[{{tr|Ranged damage}}]]的问题
+* 修复[[{{tr|Ocean}}]]生物在海洋下的洞穴内生成的问题
+* 修复[[{{tr|Lava Lamp}}]]无法放在桌子上的问题
+* 修复[[{{tr|Mini Minotaur}}]]在飞行时动画错误的问题
+* 修复 NPC [[NPC#{{tr|Happiness}}|幸福度]]文本中的若干语法及拼写错误
+
+{{patchlist}}
+
+{{Desktop versions}}
+{{language info|en=1.4.0.3}}

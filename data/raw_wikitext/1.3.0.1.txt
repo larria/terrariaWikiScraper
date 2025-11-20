@@ -1,0 +1,377 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = {{tr|Terraria}} 1.3
+| release = 6/30/2015
+| ref = {{forums thread|1-3-changelog.20617|1.3 Changelog}}
+}}
+{{tocright}}
+
+'''1.3.0.1''' 更新（通常简称为 '''1.3'''） 往游戏里添加了大量的新{{tr|item}}、NPC、主要 [[{{tr|bosses}}]] 和[[{{tr|events}}]]、全新的[[{{tr|Expert}}]]世界模式和大量重大游戏机制与界面方面的更新。游戏的大量现有元素也已针对平衡和游戏流程进行了调整。1.3 的设计宗旨是“更好”，而不是单纯地为了增加物品数量而增加——但是它确实包括 800 多个新物品，其中大多数已从官方更新日志中省略，供玩家发现。
+
+== 特性与机制 ==
+* 改进了[[{{tr|Town NPC}}]]。他们现在可以闲坐、避敌、社交、避免待在{{tr|chest}}旁边以及反击威胁！
+* 开关[[{{tr|Chests}}]]现在有动画了。
+* 现在可以[[指南:建立 Steam 多人游戏|通过 Steam]] 加入多人游戏。
+* 现在可通过 Steam 来进行云端存储。
+* [[{{tr|Achievements}}]]现在在 Steam 上和游戏里可用。
+* 改进了角色选择菜单，以展示更多的角色信息。
+* 现在可以按 {{key|F1}} 切换[[{{tr|Camera Mode}}]]。这允许在游戏中拍摄更大的屏幕截图。
+* 骑乘时的能力已得到增强——现在可以在骑乘[[{{tr|mount}}]]时钓鱼和攻击。
+* 添加了禁用“[[{{tr|Blood and Gore}}]]”的选项。
+* 现在可以在[[{{tr|underground}}]]发现[[{{tr|Skeleton Merchant}}]]。他会向在正确时间遇见他的人售卖一些独特的物品。 
+* 角色创建时可以选择一些新的外观选项。
+* 敌怪[[{{tr|Banners (enemy)}}|{{tr|Banners}}]]现在可以增强玩家对抗同种敌怪的能力。
+* 世界现可记录杀怪数，在每 50 个同种敌人被杀时奖励{{tr|banner}}。
+* 服务器会宣布杀死每 50 只同种敌怪的玩家。
+* 当用聊天栏聊天时，可以用 Alt + 左键 单击一件物品来将其显示在聊天中。
+* [[{{tr|angler}}]]现在总会奖励一定量的钱。
+* 现在可以右键单击[[{{tr|bed}}]]以取消已设置的出生点。
+* 现在每隔 5 个任务而非 10 个就可拿到[[{{tr|fishing}}]]奖励。
+* 现在死亡时游戏会显示掉落的{{tr|coin}}数量。
+* 玩家的最后死亡地点现在显示在地图上，有助于找回丢失的金钱和/或物品。
+* [[{{tr|Strange Plant}}]]现可被发现并交付给[[{{tr|Dye Trader}}]]以换取[[{{tr|dye}}]]奖励。
+* 信息配饰现在只需放在物品栏内（而无需放在配饰栏内）即可提供信息。周围的玩家也可以看到这些信息。
+* [[{{tr|Dresser}}]]现在可以当箱子用。点击{{tr|dresser}}仍旧会打开颜色更改菜单。
+* 现在可以用角色的个人存储中所有的钱来买东西。这包含了物品栏、[[{{tr|Piggy Bank}}]]和[[{{tr|Safe}}]]里的钱。
+* 现在可以锤击陷阱以改变开火方向。
+* 现在删除世界或角色会将其移到回收站，而不是永久删除。（仅限 Windows 系统）
+* 添加了[[{{tr|Minecart}}]]、[[{{tr|Mount}}]]、[[{{tr|Pet}}]]和[[{{tr|Grappling Hook}}]]{{tr|slots}}。
+* [[{{tr|Bosses}}]] 现在在小地图上有图标显示。 
+* 呼吸条和[[{{tr|lava}}]]免疫条会在头顶上出现。
+* 添加了用 Alt + 左键 单击来收藏物品的功能。收藏的物品不能被快速丢弃、快速堆叠以及快速存放。
+* 增添了一个物品栏旁边的按钮——一键堆叠至附近的箱子。这让物品栏的管理更加方便了。
+* 如果{{tr|chest}}内有空格，那么快速堆叠可以占用新的格子。
+* 全面改进了染色系统，改善了所有染料的总体外观。
+* 为制作菜单的切换按键添加了新的图形。
+* 智能光标现在也可用于[[{{tr|Paintbrush}}]]、[[{{tr|Paint Roller}}]]、[[{{tr|Paint Scraper}}]]、[[{{tr|Buckets}}]]、[[{{tr|Alchemy}}]]、[[{{tr|Acorn}}]]与[[{{tr|Actuator}}]]。
+* 如果现在使用智能光标适当放置平台，平台将自动放置为楼梯。
+* 现在当光标在智能光标模式下悬停时在可交互的{{tr|tile}}上时，可以右键单击来进行交互。
+* [[{{tr|Dryad}}]]有时会咏唱，让她脚下的地面发光，树叶在身边以圆圈的样子浮动。如果玩家在圈子里，就会得到[[{{tr|Dryad's Blessing}}]]{{tr|buff}}，增加 8 点防御。
+
+== {{tr|Expert mode}} ==
+* 现在可以在世界创建菜单开启[[{{tr|Expert mode}}]]。这会触发一系列改动，它们均被设计用于为玩家提供更难的挑战和更好的奖励。部分改动如下：
+* 在 {{tr|boss}} 战中死亡后的重生时间延长。
+* 在{{tr|multiplayer}}下，[[{{tr|Boss}}]] 的生命值会随玩家数量变化。
+* 较弱的{{tr|enemies}}随玩家进度推进会获得属性加成，此加成从[[{{tr|Hardmode}}]]开始。
+* [[{{tr|death}}]]时会掉落 75% 的{{tr|coins}}，而非一半。
+* {{tr|Enemies}}能够拾取钱币并试图逃走，杀死它们可以取回钱币。
+* {{tr|enemies}}有小几率在城镇中生成。
+* 一些普通{{tr|enemies}}拥有新的 AI。
+* {{tr|Bosses}}拥有新的 AI。
+* {{tr|Bosses}} 会掉落[[{{tr|Treasure Bags}}]]，其中包含强力的[[专家独有物品]]，用于奖励敢于挑战的玩家。
+* [[{{tr|Pots}}]]在打破时会掉落更多物品。
+* 一些冰雪主题的{{tr|enemies}}在击中玩家时有几率冻结玩家。
+* [[{{tr|Quests}}]]的奖励包含更多钱币。
+* [[{{tr|Bat}}]]有几率施加新的[[{{tr|Feral Bite}}]]{{tr|debuff}}。此{{tr|debuff}}会提高{{tr|player}}的{{tr|damage}}但降低玩家的[[生命再生]]。此{{tr|debuff}}也会对玩家随机施加其它{{tr|debuffs}}。
+* 自然生命再生降低，玩家拥有[[{{tr|Well Fed}}]]{{tr|buff}}时才会回到正常值。
+* [[{{tr|Vampire Knives}}]]和[[{{tr|Spectre Hood}}]]的治疗效果相较[[{{tr|Classic Mode}}]]中更弱。
+* {{tr|Defense}}属性比{{tr|Classic mode}}中更有效。
+
+== {{tr|Events}} ==
+* 入侵{{tr|Events}}现在拥有进度条，显示玩家距离完成事件的进度。
+* 添加了新的随机发生的[[{{tr|Slime Rain}}]]{{tr|event}}。
+* 更新[[{{tr|Goblin Invasion}}]]{{tr|event}}的视觉效果，且在{{tr|Hardmode}}中加入了一个新的{{tr|mini boss}}：[[{{tr|Goblin Summoner}}]]。
+* [[{{tr|Pirate Invasion}}]]加入了一个新的{{tr|mini boss}}：[[{{tr|Flying Dutchman}}]]。
+* [[{{tr|Blood Moon}}]]拥有新的视觉效果和新的{{tr|enemies}}。
+* [[{{tr|Solar Eclipse}}]]现在可以用[[{{tr|Solar Tablet}}]]来召唤。此{{tr|event}}也添加了新的{{tr|enemies}}和奖励。
+* 新的[[{{tr|Martian Madness}}]]{{tr|event}}可以在击败[[{{tr|Golem}}]]后发生。
+* 玩家击败{{tr|Golem}}后，[[{{tr|Cultist}}]]会在{{tr|Dungeon}}门口生成。击败它们会让末日降临。
+
+== {{tr|Crafting}} ==
+* 可以用打开的[[{{tr|chest}}]]中的材料制作物品，无需将它们移入{{tr|inventory}}中。
+* 加入了用于制作{{tr|potion}}的[[{{tr|Alchemy Table}}]]，它有几率降低制作[[{{tr|potion}}]]的花费。
+* 每次制作[[{{tr|Wooden Arrow}}]]会产出 10 根而不是 5 根。购买它的费用降低至 {{cc|5}}。
+* 现在可以制作[[{{tr|Bone Platform}}]]。
+* 制作[[{{tr|Greater Healing Potion}}]]的消耗降低。
+* 制作[[{{tr|Holy Water}}]]略微更简单。
+* 现在可以制作诅咒、恶魔、寒霜、灵液和超亮[[{{tr|Living Fire Block}}]]。
+* 现在可以制作[[{{tr|Gender Change Potion}}]]。
+* 现在可以制作[[{{tr|Wormhole Potion}}]]。此{{tr|potion}}允许玩家点击地图上同团队的其他玩家来传送到其所在位置。
+* 现在可以制作[[{{tr|Honeyfall Block}}]]和[[{{tr|Honeyfall Walls}}]]。
+* 现在可以制作[[{{tr|Chlorophyte Brick}}]]和[[{{tr|Chlorophyte Brick Wall}}]]。
+* 现在可以制作[[{{tr|Crimtane Brick}}]]和[[{{tr|Crimtane Brick Walls}}]]。
+* 现在可以制作[[{{tr|Shroomite Plating}}]]和[[{{tr|Shroomite Plating Walls}}]]。
+* [[{{tr|Beenade}}]]现在可被制作。
+* [[{{tr|Water Candle}}]]现在可被制作。
+* 现在可以制作[[{{tr|Crispy Honey Block}}]]。
+* 现在可以制作[[{{tr|Sunplate Block}}]]和[[{{tr|Disc Wall}}]]。
+* 现在可以制作[[{{tr|Key of Light}}]]和[[{{tr|Key of Night}}]]。
+* 加入了[[{{tr|Pink Gel}}]]以及数个能用它制作的物品。
+* 现在可以制作[[{{tr|Magic Water Dropper}}]]。
+* 现在可以制作[[{{tr|Meteorite Brick}}]]、[[{{tr|Meteorite Brick Wall}}]]和[[{{tr|Meteorite Brick}}#{{tr|Used in}}|{{tr|furniture}}]]。
+* 现在可以制作[[{{tr|Smooth Granite Block}}#{{tr|Used in}}|{{tr|Granite}}]]和[[{{tr|Smooth Marble Block}}#{{tr|Used in}}|{{tr|Marble}}]]{{tr|furniture}}。
+* [[{{tr|Martian Conduit Plating}}#{{tr|Used in}}|{{tr|Martian Furniture}}]]现在可被制作。
+* 现在可以制作[[{{tr|Enchanted Nightcrawler}}]]。
+* 降低了[[{{tr|Meteorite Armor}}]]的制作花费。
+* 现在[[{{tr|Space Gun}}]]只需要[[{{tr|Meteorite Bar}}]]来制作。
+* 现在制作[[{{tr|Crimtane Bar}}]]和[[{{tr|Demonite Bar}}]]需要 3 个{{tr|ore}}。
+* 现在可以制作用于测试每秒伤害的[[{{tr|Target Dummy}}]]。
+* [[{{tr|Avenger Emblem}}]]现在使用任一徽章和全部 3 种{{tr|Hardmode}} {{tr|boss}} [[{{tr|souls}}]]制作。
+* [[{{tr|Neptune's Shell}}]]不再能被制作，改为由[[{{tr|Creature from the Deep}}]]掉落。
+* 降低了[[{{tr|Rainbow Rod}}]]、[[{{tr|Fairy Bell}}]]和[[{{tr|Magical Harp}}]]的制作花费。
+* [[{{tr|Broken Hero Sword}}]]不再用于制作[[{{tr|Terra Blade}}]]。
+* 现在可以制作[[{{tr|Spectre Bar}}]]。
+* 现在可以制作[[{{tr|Fireplace}}]]和[[{{tr|Chimney}}]]。
+* 现在[[{{tr|Phasesaber}}]]需要在[[{{tr|Mythril Anvil}}]]处制作。
+
+== 杂项 ==
+* 部分{{tr|enemies}}在死亡时有独特音效（如[[{{tr|vulture}}]]）。
+* [[{{tr|Platform}}]]现在可堆叠至 999 个。
+* 掉落的物品现在会在达到物品上限后消失。
+* 新的{{tr|town NPC}}：[[{{tr|Tax Collector}}]]会在向[[{{tr|Tortured Soul}}]]撒[[{{tr|Purification Powder}}]]后加入。
+* 现在可以将{{tr|platform}}通过制作来变回其原材料。
+* {{tr|Corrupt}}和{{tr|Crimson Trees}}现在会掉落{{tr|Acorns}}。
+* [[{{tr|Coins}}]]现在拥有动画效果。
+* 在石堆（以及大部分自然生成的[[物体]]）上放置物品时会自动摧毁它们。
+* {{tr|solid blocks}}和{{tr|trees}}被采掘时会显示裂痕。
+* 现在可以将光标悬浮在[[{{tr|signs}}]]上来阅读，而无需点击它们。
+* 重做了{{tr|liquid}}的网络代码，以在[[{{tr|multiplayer}}]]下减少卡顿。
+* 现在[[{{tr|Pot}}]]会基于种类掉落更多[[{{tr|coins}}]]。
+* 每击败一个 [[{{tr|boss}}]] 和[[{{tr|invasion}}]]，{{tr|Pots}}就会多掉落 10% 的钱币。
+* [[{{tr|Living Wood Chest}}]]现在总是包含[[{{tr|Living Wood Wand}}]]和[[{{tr|Leaf Wand}}]]。
+* 骑乘[[{{tr|Fuzzy Carrot}}|{{tr|Bunny Mount}}]]时免疫{{tr|fall damage}}。
+* [[{{tr|Copper Ore}}]]、[[{{tr|Iron Ore}}]]、[[{{tr|Silver Ore}}]]和[[{{tr|Gold Ore}}]]现在拥有新的材质。
+* [[{{tr|Plantera}}]]掉落[[{{tr|The Axe}}]]的几率由 {{chance|1/200}} 增加至 {{chance|1/50}}
+* [[{{tr|Voodoo Demon}}]]现在生成更频繁。
+* 现在有几率生成金色[[{{tr|Critters}}]]，可以卖到 10 {{tr|gold coins}}的价格。
+* [[{{tr|Event}}]]{{tr|enemies}}在{{tr|event}}结束后会逃跑。
+* [[{{tr|NPC}}]] 的材质只会在进入屏幕后加载。
+* 现在将窗口的分辨率设置为超过最大值时会尝试维持原有的屏幕宽高比（例：2560×1440 不再会降低至 1920×1200，而是 1920×1080）。
+* 优化了[[{{tr|Rain}}]]。
+* [[{{tr|Bee}}]]现在可以下降穿过平台。
+* 现在使用智能光标放置{{tr|wall}}时会正确地被打开的{{tr|door}}阻挡。
+* [[{{tr|Undead Miner}}]]现在有几率掉落[[{{tr|Mining Helmet}}]]。
+* 如果玩家需要它的帽子，[[{{tr|Tim}}]]的生成率会提高。
+* [[{{tr|Critters}}]]现在拥有售价。
+* 提升了[[{{tr|Well Fed}}]]{{tr|buff}}的持续时间。
+* 当[[{{tr|Water Candle}}]]{{tr|debuff}}生效时，[[{{tr|Wyverns}}]]的生成几率更高。
+* 修复了[[{{tr|Wyvern}}]]和[[{{tr|Destroyer}}]]的生命条问题。
+* 如果玩家的最大生命值大于 5 颗心，玩家重生时会拥有一半的生命值。
+* [[{{tr|Painter}}]] {{tr|NPC}}现在会在 8 个 {{tr|NPC}}存在后入住，而不是 4 个。
+* [[{{tr|Party Girl}}]] {{tr|NPC}}现在会在 14 个 {{tr|NPC}}存在后入住，而不是 8 个。
+* [[{{tr|Dye Trader}}]] {{tr|NPC}}现在只会在击败任意一个{{tr|pre-Hardmode}}的 {{tr|boss}} 后入住。
+* 更改了[[{{tr|Town NPC}}]] 的生成顺序，更加重要的会先生成。
+* 现在[[{{tr|Chlorophyte}}]]能生长为更大的矿脉。
+* 现在[[{{tr|Life Fruit}}]]能更靠近地生成。
+* [[{{tr|King slime}}]]能够穿过平台。
+* 改善了{{tr|minion}}的攻击 AI。
+* 当[[{{tr|Water Candle}}]]{{tr|debuff}}生效时，[[{{tr|Unicorn}}]]的生成几率更高。
+* 部分{{tr|Underworld}}掉落略微更常见。
+* [[{{tr|Angry Nimbus}}]]的生成几率更高。
+* 现在能找到{{tr|Crimson}}、{{tr|Corruption}}和{{tr|Hallowed}}[[{{tr|Mimic}}]]。
+* [[{{tr|Spider}}]]能够穿过平台。
+* 玩家不再能在[[{{tr|frozen}}]]时[[{{tr|Hooks}}|抓]]住{{tr|block}}。
+* {{tr|Sky biome}}的[[{{tr|quest fish}}]]不再能在{{tr|surface}}找到。
+* 降低了在{{tr|sky}}中成功[[{{tr|fishing}}]]所需的{{tr|water}}{{tr|tile}}数。
+* [[{{tr|Hornet}}]]和行走的{{tr|enemies}}不再会在玩家潜行时射击。
+* 重新设计了[[{{tr|Underground Cabin}}]]。
+* 打破{{tr|pot}}后有几率生成[[{{tr|Coin Portal}}]]。
+* 减缓了[[{{tr|Blinkroot}}]]的生长。
+* 加快了[[{{tr|Daybloom}}]]的生长。
+* 加快了[[{{tr|Shiverthorn}}]]的生长。
+* [[{{tr|Deathweed}}]]现在也会在[[{{tr|full moon}}]]时绽放。
+* [[{{tr|Fireblossom}}]]现在会在傍晚绽放。
+* 在{{tr|Clay Pots}}中长出杂草所需的时间更长。
+* 生成的[[{{tr|Meteorites}}]]矿脉更大。
+* 在[[{{tr|multiplayer}}]]下由其他玩家造成的伤害数字相比正常数字更淡。
+* [[{{tr|Flask}}]]的效果现在持续 20 分钟，且死亡后仍然存在。
+* 增加了稀有{{tr|hardmode}}[[{{tr|dungeon}}]]{{tr|enemies}}的生成率。
+* [[{{tr|Necromancer}}]]在受到攻击时传送的几率更低。
+* [[{{tr|Frost Armor}}]]现在可用[[{{tr|Titanium Bar}}]]和[[{{tr|Adamantite Bar}}]]制作，而不是[[{{tr|Hallowed Bar}}]]。
+* [[{{tr|Chlorophyte}}]]现在可以回退[[{{tr|The Corruption}}|{{tr|Corruption}}]]或[[{{tr|The Crimson}}|{{tr|Crimson}}]]的蔓延。它也可以将附近的{{tr|dirt}}转化为{{tr|mud}}。
+* 现在装备栏拥有显示栏位用途的图标。
+* [[{{tr|Duke Fishron}}]]现在会在玩家离开{{tr|Ocean}}后被激怒。
+* [[{{tr|Pygmy Staff}}|{{tr|Pygmy}}]]现在有几率造成[[{{tr|poisoned}}]]和[[{{tr|venom}}]]。
+* {{tr|Pygmies}}的攻击范围更大，且第一个投掷的{{tr|projectile}}总是会穿透而不是被卡住。
+* [[{{tr|King Slime}}]]现在在玩家离开其攻击范围超过 5 秒后会传送。
+
+== {{tr|Items}} ==
+* 总共添加了超过 800 个新物品。
+* 添加了新的坐骑，如[[扰脑器]]、[[{{tr|Blessed Apple}}]]和[[{{tr|Shrimpy Truffle}}]]。
+* 在{{tr|Hardmode}}下，可在[[{{tr|Crimson}}]]、[[{{tr|The Corruption}}]]和[[{{tr|The Hallow}}]]通过{{tr|fishing}}获得新的强大物品（[[{{tr|Bladetongue}}]]、[[{{tr|Toxikarp}}]]和[[{{tr|Crystal Serpent}}]]）。
+* 现在所有 2×2 大小的物品可以放置在{{tr|table}}上。
+* 物品的堆叠大小现在更加统一。
+* [[{{tr|Minecarts}}|{{tr|Wooden Minecart}}]]现在是默认{{tr|minecart}}。
+* 加入了数种[[{{tr|Yoyo}}]]、{{tr|String}}[[{{tr|accessories}}]]和[[{{tr|counterweight}}]]。
+* 部分物品的{{tr|sprite updated}}。
+* 添加了许多种新的{{tr|banners}}。
+* 极大改进了[[{{tr|Staff of Regrowth}}]]。
+* 增加了{{tr|Wrenches}}和{{tr|Wire Cutters}}的范围。
+* 略微增加了[[{{tr|Musket}}]]的伤害。
+* {{tr|Titanium Armor}}的无敌效果现在只会每 30 秒触发一次。
+* {{tr|Adamantite Armor}}的{{tr|defense}}增加 4。
+* [[{{tr|Honeyed Goggles}}]]的掉落几率显著提升。
+* [[{{tr|Whoopie Cushion}}]]的掉落几率提升。
+* [[{{tr|Bug net}}]]的买价改为 {{sc|50}}。
+* 显著提高了[[{{tr|Magic Quiver}}]]的速度加成。
+* 增加了{{tr|Spider Turret}}、{{tr|Crimson Rod}}和{{tr|Nimbus Rod}}的持续时间。
+* {{tr|Chests}}包含{{tr|Recall Potions}}的几率更高。
+* 现在可以制作[[{{tr|Sticky Dynamite}}]]和[[{{tr|Bouncy Dynamite}}]]。
+* 现在在{{tr|Dungeon}}中可以找到[[{{tr|Sparky}}]]{{tr|Painting}}。愿 Sparky Doo 安息。
+* 显著降低了[[{{tr|Molotov Cocktail}}]]造成的伤害。
+* [[{{tr|Bottled Water}}]]堆叠上限提升为 999。
+* 改善了{{tr|Spider Minion}}的 {{tr|AI}}。它们现在会更好地附着于{{tr|enemies}}和跟随玩家。
+* 现在购买[[{{tr|Fountains}}]]需要 {{gc|4}}，且在{{tr|Witch Doctor}}入住后就可购买。
+* [[{{tr|Recall Potion}}]]的{{tr|recipe}}现在需要{{tr|Daybloom}}而不是{{tr|Deathweed}}。
+* [[{{tr|Specular Fish}}]]现在更容易钓上。
+* {{tr|Bait}}现在能够使用更多次。
+* 增加了[[{{tr|Snowball Launcher}}]]和[[{{tr|Snowball Cannon}}]]的{{tr|damage}}和{{tr|knockback}}。
+* [[{{tr|Ice Blade}}]]的伤害略微增加。
+* [[{{tr|Jungle Armor}}]]和[[{{tr|Ancient Cobalt Armor}}]]的{{tr|critical hit chance}}加成增加。
+* [[{{tr|Ice Rod}}]]更便宜，且生成的{{tr|Ice Block}}的持续时间更长。
+* {{tr|Mana potions}}更便宜且堆叠数量更高。
+* {{tr|Shadow Chests}}现在包含一件新物品（[[{{tr|Hellwing Bow}}]]）。
+* 添加了数种新的{{tr|fishing quest}}奖励
+* 现在可以在[[{{tr|Ice Biome}}]]钓上{{tr|Specular Fish}}。
+* 现在在各个{{tr|biomes}}中可钓上对应{{tr|biome}}的[[{{tr|crate}}]]。
+* {{tr|Wooden Chests}}现在包含数个新物品。
+* 现在可制作[[{{tr|Web Rope}}]]和[[{{tr|Silk Rope}}]]。
+* [[{{tr|Snow Balls}}]]现在造成更高伤害。
+* [[{{tr|Boomerangs}}]]现在与{{tr|tile}}的碰撞箱更小。
+* 降低了[[{{tr|Dynamite}}]]的价格。
+* [[{{tr|Jungle Bats}}]]、[[{{tr|Ice Bats}}]]和[[{{tr|Giant Bats}}]]现在会掉落[[{{tr|Depth Meter}}]]。
+* [[{{tr|Mother Slime}}]]、[[{{tr|Snow Flinx}}]]、[[{{tr|Undead Viking}}]]和[[{{tr|Armored Viking}}]]现在会掉落[[{{tr|Compass}}]]。
+* [[{{tr|Beach Ball}}]]现在由{{tr|Party Girl}}售卖。
+* 增强了[[{{tr|Ice Boomerang}}]]和[[{{tr|Ice Blade}}]]。
+* [[水母（鱼饵）|小{{tr|Jellyfish}}]]现在有售价。
+* [[{{tr|Goodie Bags}}]]开出[[{{tr|Rotten Eggs}}]]的几率降低。
+* [[{{tr|Pinky}}]]掉落[[{{tr|Slime Staff}}]]的几率增加。
+* {{tr|Lesser Restoration Potions}}现在改为[[{{tr|Restoration Potions}}]]。
+* [[{{tr|Solidifier}}]]现在会由{{tr|King Slime}}掉落。
+* [[{{tr|Gold Ring}}]]现在会由{{tr|Pirate Invasion}}掉落。
+* 增加了[[{{tr|Uzi}}]]的掉落率。
+* [[{{tr|Sniper Rifle}}]]造成更高伤害，攻击速度增加。
+* [[{{tr|Venus Magnum}}]]攻击速度增加。
+* [[{{tr|Invisibility Potions}}]]现在在不攻击时会提供完全隐形效果，并降低[[{{tr|aggro}}]]。
+* [[{{tr|Adamantite Forge}}]]和[[{{tr|Titanium Forge}}]]现在有动画效果。
+* [[{{tr|Dye Vat}}]]现在有动画效果。
+* {{tr|crates}}现在可被放置。
+* [[{{tr|Grubby}}]]现在会从{{tr|Jungle Plants}}中生成，且可用作{{tr|bait}}。
+* [[{{tr|Star in a Bottle}}]]现在会给予{{tr|Mana Regeneration}}{{tr|buff}}。
+* [[{{tr|Extractinators}}]]现在可从{{tr|Crates}}中获得。
+* 现在可在{{tr|platforms}}上放置{{tr|torch}}。
+* 显著提高了[[{{tr|Antlion Mandible}}]]的掉落几率。
+* 提高了[[{{tr|Mining Potion}}]]的持续时间。
+* [[{{tr|Sickle}}]]现在全年售卖。
+* {{tr|Dryad}}现在会售卖[[{{tr|Planter Boxes}}]].
+* {{tr|Cobalt}}、{{tr|Obsidian}}、{{tr|Mythril}}、{{tr|Adamantite}}以及{{tr|Mythril}}和{{tr|Adamantite Brick}}具有新的材质。
+* 增强了[[{{tr|Fire Gauntlet}}]]。
+* 增强了[[{{tr|Ice Sickle}}]]，并提高了其掉落率。
+* 提高了大部分{{tr|Hardmode Dungeon}}{{tr|items}}的掉落率。
+* {{tr|Hardmode Dungeon}}{{tr|enemies}}有 {{chance|1/7}} 的几率在错误的{{tr|wall}}前生成。
+* {{tr|Dungeon Spirit}}的生成几率略微提高。
+* {{tr|Frost Hydra}}和{{tr|Spider Turret}}现在可放置在平台上。
+* [[{{tr|Biome Chests}}]]的[[{{tr|Biome Keys}}|钥匙]]现在会直接掉落，而不是掉落[[{{tr|Biome Key Molds}}|模具]]。{{tr|Biome Chests}}只能在击败{{tr|Plantera}}后打开。
+* 加入了[[{{tr|Fallen Tuxedo}}]]，会由{{tr|Clothier}}在{{tr|Blood Moon}}期间售卖。
+* {{tr|Campfires}}现在可以被开启和关闭。
+* [[{{tr|Lihzahrd Furnace}}]]现在必定在每个{{tr|Jungle Temple chest}}中出现。
+* [[{{tr|Steampunk Wings}}]]现在可获得。
+* 增强了[[{{tr|Staff of Earth}}]]。
+* 增强了[[{{tr|Golem Fist}}]]。
+* 增强了[[{{tr|Christmas Tree Sword}}]]。
+* 增强了[[{{tr|Flamelash}}]]。
+* 增强了[[{{tr|Spectre Staff}}]]。
+* 增强了[[{{tr|Flower Pow}}]]。
+* 增强了[[{{tr|Frost Staff}}]]。
+* 增强了[[{{tr|Trident}}]]。
+* 增强了[[{{tr|KO Cannon}}]]。
+* 增强了[[{{tr|Flower of Frost}}]]。
+* 增强了[[{{tr|Flower of Fire}}]]。
+* 增强了[[{{tr|Keybrand}}]]。
+* 增强了[[{{tr|Magnet Sphere}}]]。
+* 增强了[[{{tr|Possessed Hatchet}}]]。
+* [[{{tr|Razorblade Typhoon}}]]消耗的{{tr|mana}}增加。
+* {{tr|Flamelash}}和{{tr|Flower of Fire}}消耗的{{tr|mana}}降低。
+* [[{{tr|Ice Rod}}]]的{{tr|blocks}}现在会打滑。
+* {{tr|Hardmode Ore}}制作的{{tr|sword}}和[[{{tr|Excalibur}}]]现在能够[[{{tr|autoswing}}]]，且造成的伤害提高 15%。
+* 增强了{{tr|Chlorophyte}}制作的{{tr|sword}}。
+* {{tr|Bait}}可以放置在{{tr|ammo slot}}中。
+
+== {{tr|Music}} ==
+* [[{{tr|Pirate Invasion}}]]现在拥有新的曲目。
+* [[{{tr|The Underworld}}]]现在拥有新的曲目。
+* [[{{tr|Goblin Invasion}}]]现在拥有新的曲目。
+* 添加了[[{{tr|Martian Madness}}]]的曲目。
+* 添加了[[{{tr|Lunar Event}}]]的曲目
+* 添加了最终 {{tr|Boss}} 的曲目。
+
+== 氛围 ==
+* 世界生成过程中添加了若干种{{tr|new mini biomes}}
+* 添加了新{{tr|biome}}：[[{{tr|Underground Desert}}]]。
+* 重做了[[{{tr|Liquid}}]]的视觉效果。
+* 现在可生成[[{{tr|Floating Island}}#{{tr|Floating Lake}}|{{tr|Floating Lake}}]]。
+* 为[[{{tr|Glass Kiln}}]]加入了光效。
+* {{tr|Slimes}}中可能包含物品，在它们死亡时会掉落。（[[{{tr|Slime}}#额外掉落|额外掉落]]）
+* 在{{tr|Crimson world}}中击败{{tr|Wall of Flesh}}时，其掉落物会生成在{{tr|Crimtane Bricks}}中。
+* {{tr|Accessory}}{{tr|dyes}}现在也适用于它们发出的粒子效果。
+* 更改了玩家的动画，降低了其弹性。
+* {{tr|Trees}}现在可同时掉落{{tr|acorns}}和木头（而不是二者择一）。
+* {{tr|Palm tree}}的树梢现在会掉落{{tr|Acorns}}。
+* {{tr|The Crimson}}现在拥有与{{tr|The Corruption}}相对应的{{tr|plant}}与物品：{{tr|Vicious Mushrooms}}、{{tr|Vicious Powder}}和{{tr|Crimtane Thorns}}。
+* 游戏默认的{{tr|cavern}}{{tr|parallax}}现在是 60 而不是 0。
+* {{tr|NPCs}} 不再会爬上楼梯进入另一间房屋。
+* 每种[[{{tr|Goblins}}]]现在拥有各自独特的[[血污 ID|血污]]效果。
+* 改善了 {{tr|NPC}} 的图像。
+* [[{{tr|Pigrons}}]]现在有更多种类。
+* [[{{tr|Sunflowers}}]]现在会在夜间发光，并提供“[[{{tr|Happy}}]]”{{tr|buff}}，能够降低{{tr|enemies}}生成率并增加移动速度。
+* 小地图上的头像现在大小固定（与地图缩放大小无关）。
+* {{tr|Fountain}}的{{tr|sprite updated}}。
+* {{tr|Marble}}和{{tr|Granite}}{{tr|biomes}}可在地下发现。
+* [[{{tr|Dirt Rod}}]]更便宜，移动的{{tr|dirt block}}现在可穿过{{tr|blocks}}。
+* {{tr|Ice Biome}}中加入了{{tr|Pine tree}}变体种类。
+* 世界生成过程中，{{tr|Jungle}}中会生成小片的{{tr|Honey}}，{{tr|Ice Biome}}中会生成小片的[[{{tr|Thin Ice}}]]。
+* 世界生成过程中加入了废弃矿车轨道。
+* 世界生成过程中加入了多种新的{{tr|walls}}。
+* 世界中会有滴落的{{tr|water}}、{{tr|honey}}和{{tr|lava}}。它们也可以使用[[{{tr|Magic Droppers}}]]放置。
+
+== {{tr|Bug}} 修复 ==
+修复了之前版本中的大部分 {{tr|bug}}，甚至是 1.3 本身的 {{tr|bug}}。以下为不完全列表：
+
+* 修复了[[{{tr|chandeliers}}]]在[[{{tr|Underground cabin}}]]里生成时就已经被点亮的 {{tr|Bug}}。
+* 修复了{{tr|KO Cannon}}可从雕像生成的敌怪身上掉落的 {{tr|Bug}}。
+* 修复了[[{{tr|Herb}}]]可放在花盆中的{{tr|Herb}}之上的 {{tr|Bug}}。
+* 修复了{{tr|Herb}}只有一半像素的视觉问题。
+* [[{{tr|Angler Vest}}]]现在可以在玩家手上正确显示了。
+* 穿[[{{tr|Pharaoh's Robe}}]]的人物的手可以正确显示了。
+* 修复了连续射出{{tr|projectile}}时直接对准射击者的中心射击会让游戏崩溃的 {{tr|Bug}}。
+* 修复了[[{{tr|Skyware Workbench}}]]需要在{{tr|Glass Kiln}}制作的 {{tr|Bug}}。
+* 修复了射击的{{tr|NPCs}}朝左走的比朝右慢的 {{tr|Bug}}。
+* 修复了玩家的长发在玩家隐形时也会显示的 {{tr|Bug}}。
+* 修复了蠕虫死亡时不出现血污的 {{tr|Bug}}。
+* 修复了可以用电线以快于预期的速度从{{tr|statue}}生成[[{{tr|Heart}}]]或敌怪的 {{tr|Bug}}。 
+* 修复了在世界最右侧使用[[{{tr|Rod of Discord}}]]会让游戏崩溃的 {{tr|Bug}}。
+* 修复了蠕虫以滑稽的姿势上坡的 {{tr|Bug}}。
+* 现在当游戏暂停时，动态光源会停留。
+* 修复了{{tr|Piranha Statues}}在世界生成时无法正常生成的 {{tr|Bug}}。
+* 修复了床不完全显示的 {{tr|Bug}}。
+* 修复了几种笼子不正确显示的 {{tr|Bug}}。
+* 修复了{{tr|Skeletron Prime}}的炸弹在多人游戏中爆炸不造成伤害的 {{tr|Bug}}。
+* 修复了飞镖和长矛机关在{{tr|Singleplayer}}下的玩家{{tr|ranged}}数据中得到伤害与暴击加成的 {{tr|Bug}}。
+* 修复了{{tr|Broken Armor}}的持续时间在 1.2 中从 2 分钟重新改为 5 分钟的问题。
+* 修复了将光标悬停在史莱姆和南瓜床上时会显示错误的物品图标的 {{tr|Bug}}。
+* 修复了保存世界时{{tr|Ice Rod}}的{{tr|block}}会产生泥土的 {{tr|Bug}}。
+* 修复了来自地牢的{{tr|Blue Slab Walls}}被玩家放置时不被视作有效房屋墙的 {{tr|Bug}}。
+* 修复了“{{tr|Stylist}}是否被救出”没有被保存在世界里的 {{tr|Bug}}。
+* 修复了当开关的目标放置点无效时开关会挂到树上的 {{tr|Bug}}。
+* 修复了在创造世界过程中生成树时服务器可能崩溃的 {{tr|Bug}}。
+* 修复了由{{tr|Obsidian}}制成的家具（包括床、沙发、梳妆台和钢琴）会被熔岩摧毁的 {{tr|Bug}}。
+* 修复了墙上的{{tr|levers}}在墙被摧毁后浮空的 {{tr|Bug}}。
+* 修复了特定的物块坡度的组合可能让玩家浮空的 {{tr|Bug}}。
+* 修复了当人物跑向相反的楼梯时会直接跑上楼梯的 {{tr|Bug}}。
+* 修复了锤击为倾斜的破坏性物块（[[{{tr|Sand block}}]]、[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]）无法伤害玩家的 {{tr|Bug}}。
+* 修复了{{tr|Deep Cyan Paint}}在某些图格上不能正常显示的 {{tr|Bug}}。
+* 修复了激发陷阱时可能会让游戏崩溃的 {{tr|Bug}}。
+* 修复了多人游戏客户端中有时无法更新生成的{{tr|chlorophyte ores}}的 {{tr|Bug}}/漏洞。
+* 修复了{{tr|projectile}}在重置到初始时没有重置动画的 {{tr|Bug}}。
+* 修复了行走时身体动画落后于腿一帧的 {{tr|Bug}}。
+* 修复了“defeated golem（已击败{{tr|Golem}}）”参数会被继承进新生成的世界的 {{tr|Bug}}。
+
+以及更多……
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+{{language info|en=1.3.0.1}}

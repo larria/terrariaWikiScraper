@@ -1,0 +1,40 @@
+{{exclusive|1.4.4}}
+{{item infobox | boxwidth = 23em<!-- buff name is quite long -->
+| auto = 5130
+| buff = Blessing of the Moon<!-- automatic buff doesn't work here because of the non-standard buff name -->
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Lilith's Necklace}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Mounts}}|坐骑召唤]]物品，可以召唤一匹'''{{tr|Wolf}}'''{{tr|mount}}。与其他坐骑召唤物品不同，{{tr|Lilith's Necklace}}会将{{tr|player}}变身为{{tr|mount}}。它可以被[[{{tr|dye}}]]，而且一些{{tr|vanity item}}在变身后依旧可见，但是一些[[{{tr|accessories}}]]不能使用，例如[[{{tr|wings}}]]。{{tr|Lilith's Necklace}}有 {{chance|1/30}} / {{expert|{{chance|1/25}}}} 的概率掉落自[[{{tr|Wolf}}]]。新创建的名为“Wolfpet”或“Wolf Pet”（区分大小写）的[[{{tr|Journey Mode}}]]人物会自动获得这一物品。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UICharacterCreation.SetupPlayerStatsAndInventoryBasedOnDifficulty}}
+	
+== 备注 ==
+* 虽然它不能使用大部分{{tr|movement accessories}}，例如{{tr|wings}}、[[{{tr|boots}}]]或者[[{{tr|Flying Carpet}}]]，但是{{tr|Wolf}}可以使用任何可提供[[{{tr|extra jump}}]]的{{tr|accessories}}。像[[{{tr|Magiluminescence}}]]之类可以提供加速度的{{tr|Item}}仅能在使用此{{tr|mount}}时可增加减速的加速度。
+* {{tr|The Wolf}}在一小段加速后可到达最大的奔跑速度为 {{mph|48}}。此{{tr|mount}}体积比其他陆地{{tr|mounts}}小，仅需要占据 3 {{tr|tile}}高的空间，相较于[[{{tr|Blessed Apple}}|{{tr|Unicorn Mount}}]]需要占据 5 {{tr|tile}}高。
+* 在变身为{{tr|The Wolf}}后使用{{tr|whip}}进行攻击，{{tr|whip}}的攻击范围看似会略大一些。这是因为在变身后{{tr|whip}}的挥舞从{{tr|The Wolf}}的头部位置开始而非原本玩家手部所在位置，这将{{tr|whip}}的攻击范围向外位移了一些。
+[[File:Wolf whipping.gif|thumb|center|狼坐骑挥舞皮鞭产生的攻击范围位移]]
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+
+== 花絮 ==
+* {{tr|Lilith's Necklace}}参考了 [[Redigit]] 和 [[Cenx]] 的女儿，Lilith。<ref>[https://twitter.com/Cennxx/status/1554117962222735367 Lilith starts first grade today. 😭] {{small|{{date|2022|08|01}}}}</ref><ref>[https://twitter.com/Cennxx/status/1608820227101577216 My beautiful little Wolfpet (Lilith) turns 7 today! Kids make time too real and it needs to slow down!] {{small|{{date|2022|12|30}}}}</ref>添加此物品的原因是 Lilith 对狼非常着迷。<ref>[https://twitter.com/Cennxx/status/1549839282768150528 No it was for our daughter who is obsessed with wolves. :)] {{small|{{date|2022|07|20}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4.1|略微降低了最大速度、加速度、和跳跃速度。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Lilith's Necklace}}

@@ -1,0 +1,65 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 7/13/2015
+| ref = {{forums thread|1-3-0-5.25621|1.3.0.5}}
+}}
+{{tocright}}
+
+'''1.3.0.5''' 补丁修复了若干 bug。
+
+== 改动 ==
+* 添加了[[{{tr|Celestial Sigil}}]]，[[{{tr|Moon Lord}}|最终 {{tr|boss}}]]的{{tr|summoning item}}。({{tr|craftable}})
+* [[{{tr|Moon Bite}}]]持续时间在[[{{tr|Expert Mode}}]]中缩短 1 秒，{{tr|normal mode}}中则缩短 3 秒。
+* [[{{tr|Living Leaf Wall}}]]现在对于[[{{tr|housing}}]]来说是安全的!
+* 轻微地强化了[[{{tr|Phantasm}}]]。（它真的出问题了！）
+* [[{{tr|Martian Probe}}]]{{tr|rarity}}在[[{{tr|Space}}|{{tr|Sky Biome}}]]中降低（仍比最初高）
+* [[{{tr|Martian Probe}}]]现在可显示于[[{{tr|Lifeform Analyzer}}]]。
+* [[{{tr|Vortex Fragment}}]]和[[{{tr|Nebula Fragment}}]][[{{tr|weapons}}]]平衡重做以符合它们经历的一些 bug 修复。
+* [[{{tr|Portal Gun}}]]{{tr|bolt}}的速度变为原来的四倍，这样你就不可能比之跑得更快了。
+* [[{{tr|Eater of Worlds}}]]{{tr|expert mode}}下的[[{{tr|Vile Spit}}]]{{tr|damage}}减少。
+* 来自[[{{tr|spikes}}]]的{{tr|Damage}}现在有独立于其他效果的免疫检查。
+
+== 新 config 选项 ==
+* 添加了 [[{{tr|Config.json}}]] {{tr|setting}} "ReverseUpDownForArmorSetBonuses"，默认关闭。若将其启用，则[[{{tr|Stardust armor}}]]和[[{{tr|Vortex armor}}]]会使用 UP 键而非 DOWN 键激活{{tr|set bonuses}}。
+
+== 修复 ==
+* 修复了所有{{tr|chests}}的[[{{tr|Quick Stack}}]]不更新{{tr|recipes}}列表的问题。
+* 修复了"[[{{tr|Distorted}}]]"{{tr|debuff}}定住玩家而非改变其移动模式的问题。
+* 修复了[[{{tr|Cute Fishron}}]]和[[{{tr|Unicorn Mount}}]]缺少{{tr|tooltips}}的问题。
+* 修复了 [[1.3.0.3]] 和更早期版本的世界在某些情况下无法正常载入的问题。
+* 修复了可在悬停于{{tr|inventory}}最下面一排的{{tr|item slots}}之间时使用物品的问题。
+* 修复了[[{{tr|Drill Containment Unit}}]]的挖矿行为导致[[{{tr|multiplayer}}]]中不必要的延迟的问题。
+* 修复了[[{{tr|Cultist}}]]的仪式阻止[[{{tr|Martian Probe}}]]生成的问题。
+* 可能修复了[[{{tr|Stardust Dragon}}]]的失同步问题。
+* 修复了[[{{tr|Solar Tablet}}]]在罕见情况下可在{{tr|pre-hardmode}}、夜晚或{{tr|solar eclipse}}中使用的问题。
+* 修复了部分[[{{tr|Banners (enemy)}}]]名称。
+* 修复了[[{{tr|Dryad}}]]庇护[[{{tr|buff}}]]会降低 npc 的{{tr|defense}}而非增加之的问题（和 npc 无{{tr|buff}}时却有{{tr|dryad's ward}}的{{tr|defense}}的问题）
+* 修复了一个（极为稀有的）bug：可击中的{{tr|projectiles}}在鼠标悬停时显示 HP。
+* 修复了[[{{tr|Portal Gun}}]]的{{tr|portals}}不允许{{tr|players}}传送至非实心{{tr|platforms}}附近的位置。
+* 修复了[[{{tr|Cosmic Car Key}}|{{tr|Cosmic Car}}]]的暗影尾迹发光不会消散的问题。
+* 修复了[[{{tr|Hades Dye}}]]/[[{{tr|Loki's Dye}}]]造成奇怪表现的问题。
+* 修复了与{{tr|portal gates}}}相关的反常行为。
+* 修复了一个稀有的光照相关的崩溃问题。
+* 修复了消失的[[{{tr|Goblin Scout}}]]不再出现的问题。
+* 修复了[[{{tr|Vortex Fragment}}|{{tr|vortex}}]]{{tr|weapons}}不与{{tr|ranged damage or knockback}}挂钩的问题。
+* 修复了使得你将不在{{tr|coin slot}}或{{tr|hotbar}}中的[[{{tr|coin}}]]{{tr|quick stack}}至其他{{tr|chests}}中的 bug。
+* 修复了手持[[{{tr|pet}}]]{{tr|items}}不会显示装备页面的 bug。
+* 修复了[[{{tr|Torch}}]]欺骗性 bug
+* 修复了所有在墙上的{{tr|spider}}的碰撞框。
+* 修复了多人模式中变成[[{{tr|Mimic}}#特殊种类|大{{tr|mimics}}]]的{{tr|chests}}会阻止放在同一位置的{{tr|chest}}被摧毁的问题。
+* 修复了'[[{{tr|Moon Lord}}|最终 boss]] 飞上天的 bug。
+* 修复了[[{{tr|Seedler}}]]{{tr|projectiles}}不算做{{tr|melee}}/得不到{{tr|flask}}效果的问题。同时也修复了它无法通过[[{{tr|plantera}}]][[{{tr|treasure bags}}]]获得的 bug。
+* 修复了[[{{tr|Hoplite}}]]{{tr|enemy javelins }}在单人模式中会显示{{tr|flask}}的视觉效果这一问题。
+* 修复了[[{{tr|Wall of Flesh}}]]拴住[[{{tr|The Hungry}}]]的血管变为不可见的问题。
+* 修正了[[{{tr|Lunar Hook}}]]至少要有 1 个钩子钩住之后才能自由使用的问题。
+* 修复了游戏暂停时可打开[[{{tr|Money Trough}}]]的问题。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.0.5}}

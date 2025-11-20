@@ -1,0 +1,13 @@
+<includeonly>{{#invoke: npcinfo | getInfo | id = {{{npcid|}}} }}
+|-
+| {{{npcid|}}}
+| {{eil|{{{nameraw|}}}|link={{{page|}}}}}{{#vardefine:namesub|{{#dplvar:_npc_infobox:{{lang}}:npcnamesub:{{{npcid|}}}}}}}{{#if:{{#var:namesub}}|<br/>{{note|paren=y|{{tr|{{#var:namesub}}}}}}}}{{#vardefine:namenote|{{#dplvar:_npc_infobox:{{lang}}:npcnamenote:{{{npcid|}}}}}}}{{#if:{{#var:namenote}}|<br/>{{note|paren=y|small=y|{{#var:namenote}}}}}}
+| {{{image|}}}
+| {{#if:{{#dplvar:_npcinfo_internalName}}|<code>{{#dplvar:_npcinfo_internalName}}</code>}}
+</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=NPC IDs/row}}
+</noinclude>

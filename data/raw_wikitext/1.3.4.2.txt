@@ -1,0 +1,38 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 11/17/2016
+| ref = {{forums thread|1-3-4-is-live.51316/page-18#post-1136177|1.3.4.2 修补程序}}
+}}
+
+'''1.3.4.2''' 补丁将{{tr|texture packs}}添加为{{tr|experimental feature}}，并修复了若干 {{tr|bug}}。
+
+== 新添加 ==
+* 添加了{{tr|experimental feature}}：现在支持[[{{tr|Texture Pack}}]]啦！只需编辑你的 [[config.json]] 文件，然后将 <code>UseExperimentalFeatures</code> 设置为 “true” 即可。
+
+== {{tr|Bug}} 修复 ==
+* 修复了[[{{tr|Pumpkin}}]]被附近的{{tr|items}}或{{tr|projectiles}}击中时被切断的问题。
+* 修复了城镇 [[{{tr|NPC}}]] 可能会在使用非英语语言加载地图时消失的问题。
+* 修复了[[{{tr|Celestial Pillar}}]]加载不正确，导致立刻消失并死亡的问题。
+* 修复了[[{{tr|Drill Containment Unit}}]]可在[[{{tr|Creative Shock}}]]时使用的问题。
+* 修复了昏迷的[[{{tr|Tavernkeep}}]] & 沉睡的[[{{tr|Angler}}]]不在[[{{tr|Lifeform Analyzer}}]]中显示的问题。
+* 修复了[[{{tr|Tavernkeep}}]]意外生成在水中的问题。
+* 修复了[[{{tr|Stardust armor}}]]光亮过强的问题。
+* 修复了新的[[{{tr|accessories}}]]上面的{{tr|tooltip}}把{{tr|minion damage}}说成是根本不存在的{{tr|sentry damage}}的问题。
+* 修复了大量输入问题。
+* 修复了聊天中的{{tr|item}}链接！
+* 修复了[[{{tr|Stardust Cell Staff}}]]{{tr|minion}}的攻击偶尔会沾到{{tr|town NPCs}} 和[[{{tr|Eternia Crystal}}]]上的问题。
+* 修复了{{tr|Old One's army}}的传送门不发光的问题。
+* 修复了[[{{tr|weapon}}]]无法在聊天时使用的问题。
+* 修复了[[{{tr|Defender's Forge}}]]打开时会丢失的问题。
+* 修复了{{tr|Monk's Bushy Brow Bald Cap}}说的是“{{tr|attack speed}}”而非“{{tr|melee attack speed}}”的问题。
+* 修复了{{tr|Tavernkeep}}仍将{{tr|Eternia crystals}}叫做“上古”{{tr|crystals}}的问题。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.4.2}}

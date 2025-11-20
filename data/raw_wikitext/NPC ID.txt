@@ -1,0 +1,57 @@
+<div class="ajaxHide">
+__FORCETOC__
+{{main|数据 ID}}
+此页面包含有[[《{{tr|Terraria}}》]]游戏代码中用于索引[[{{tr|enemies}}]]、[[{{tr|critters}}]]、和友好{{tr|town NPCs}}（其他处称作“[[{{tr|NPCs}}]]”）的 '''{{tr|NPC IDs}}''' 的可排序列表。此信息对于研究性目的或开发诸如[[{{tr|Mod}}]]和[[{{tr|map viewers}}]]之类的第三方软件会很有用。
+
+{{tr|The NPC IDs}} 76、146、和 547 未被使用。{{tr|The ID}} 408 被用于{{tr|Flow Invader}}的{{tr|minion}}/{{tr|projectile}}：[[File:NPC 408.png]]。
+
+== ID 列表 ==
+</div>
+{{npc infobox/namedb-{{lang|}}}}<!-- loading db for local lang, used in /row -->
+{| class="terraria sortable cellborder" style="text-align:center"
+! data-sort-type="number" | ID !! 名称 !! class="unsortable" | 图像 !! 内部名称
+{{#invoke:CargoQuery|main
+|q?tables=NPCs
+|q?fields= _pageName=page, npcid, nameraw, image
+|q?groupBy=npcid
+|q?orderBy=npcid
+|q?where=npcid IS NOT NULL
+|q?limit=1000
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+<div class="ajaxHide">
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了 {{tr|IDs}} 670–687。
+** 更改了 {{tr|ID}} 669：现在被[[{{tr|Stinkbug}}]]使用，而非未使用的 {{tr|NPC}}：<code>[[DeerclopsLeg]]</code>。}}
+{{history|Desktop 1.4.3|添加了 {{tr|IDs}} 668–669。}}
+{{history|Desktop 1.4.2.3|添加了 {{tr|IDs}} 667。}}
+{{history|Desktop 1.4.2.2|添加了 {{tr|IDs}} 665–666。}}
+{{history|Desktop 1.4.1|添加了 {{tr|IDs}} 663–664。}}
+{{history|Desktop 1.4.0.2|添加了 {{tr|ID}} 662。}}
+{{history|Desktop 1.4.0.1|添加了 {{tr|IDs}} 580–661。}}
+{{history|Desktop 1.3.4|添加了 {{tr|IDs}} 547–579。}}
+{{history|Desktop 1.3.3|添加了 {{tr|IDs}} 541–546。}}
+{{history|Desktop 1.3.2|添加了 {{tr|ID}} 540。}}
+{{history|Desktop 1.3.0.1|添加了 {{tr|IDs}} 378–539。}}
+{{history|Desktop 1.2.4|添加了 {{tr|IDs}} 369–377。}}
+{{history|Desktop 1.2.3|添加了 {{tr|IDs}} 353–368。}}
+{{history|Desktop 1.2.2|添加了 {{tr|IDs}} 331–352。}}
+{{history|Desktop 1.2.1|添加了 {{tr|IDs}} 301–330。}}
+{{history|Desktop 1.2.0.3|添加了 {{tr|IDs}} 297–300。}}
+{{history|Desktop 1.2|添加了 {{tr|IDs}} 147–296 和 −18 至 −65。}}
+{{history|Desktop 1.1.1|添加了 {{tr|IDs}} 142–146。}}
+{{history|Desktop 1.1|
+** 添加了 {{tr|IDs}} 74–141。
+** 添加了 {{tr|IDs}} −1 至 −17。这些 {{tr|NPCs}} 此前没有任何 {{tr|ID}}。}}
+{{history|Desktop 1.0.6|添加了 {{tr|IDs}} 70–73。}}
+{{history|Desktop 1.0.5|添加了 {{tr|IDs}} 59–69。}}
+{{history|Desktop 1.0.4|添加了 {{tr|IDs}} 46–58。}}
+{{history|Desktop 1.0.3|添加了 {{tr|IDs}} 44–45。}}
+{{history|Desktop-Release|{{tr|Introduced IDs}} 1–43。}}
+</div>
+{{category|Data IDs}}
+{{category|NPCs| }}
+
+{{language info|en=NPC IDs}}

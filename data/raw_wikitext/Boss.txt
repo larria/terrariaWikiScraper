@@ -1,0 +1,544 @@
+'''{{tr|Bosses}}''' 是富有攻击性且强韧的[[{{tr|enemies}}]]，向玩家提出了重大挑战。打败 {{tr|bosses}} 通常有助于以某种方式推进游戏，例如为玩家提供更高等级的{{tr|pickaxe}}所需的新材料。每个 {{tr|Boss}} 都有其特定的途径召出。例如，绝大多数 {{tr|bosses}} 都有相应的[[{{tr|summoning items}}]]，可以在特定条件下用其手工触发 {{tr|Boss}} 的生成，而另一些 {{tr|Boss}} 则会在玩家以特定方式与环境交互之后出现。[[{{tr|Event}}]] {{tr|bosses}} 只会在他们相应的事件中出现并在事件结束时离开。也存在{{tr|mini Boss}}，只在特殊事件中出现，表现出与许多正常 {{tr|Boss}} 相同的难度。它们的生命值范围很广：在{{tr|Classic Mode}}中，从 1,000 到 145,000 不等。
+
+绝大多数 {{tr|bosses}} 与{{tr|mini Boss}}  可以穿过所有类型的[[{{tr|block}}]]，除了[[{{tr|King Slime}}]]、{{eil|Queen Slime}}、{{eil|Lepus}}、{{eil|Turkor the Ungrateful}}的身体、和{{eil|Flying Dutchman}}。
+
+对于所有非事件 {{tr|Boss}}，除了{{eil|Lunatic Cultist}}外, 都会在 {{tr|Boss}} 将要生成或已经生成时出现[[{{tr|status message}}]]。在 {{tr|Boss}} 出现时，会播放其特定的主题[[{{tr|music}}]]。在事件期间，{{tr|Boss}} 与{{tr|mini Boss}} 可以多次出现且不会有明确的讯息。在诸如[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]和{{eil|Old One's Army}}这样的波次性事件中，在每一波开始时出现的状态讯息可以指示某个 {{tr|Boss}} 或{{tr|mini Boss}} 是否会出现。打败非事件 {{tr|Boss}} 会收到一条祝贺信息和若干奖励物品。
+
+在{{eversions|1.3.0.1}}上，{{tr|bosses}} 会出现在[[{{tr|minimap}}]]上，各自有其{{tr|map icon}}。在{{eversions|1.4.0.1}}上，屏幕上会出现一个 [[{{tr|Boss health bar}}]]（如果有多个 {{tr|boss}}，则只会显示最近一次攻击的 {{tr|boss}} 的生命值）。然而，在{{old-gen console version}}上，{{tr|bosses}} 依然会显示为表示{{tr|enemy}}的标准紫色圆点。
+
+== {{tr|Pre-Hardmode bosses}} ==
+这些是玩家会遭遇到的第一批 Boss。通常，打败这其中的 Boss 会给予玩家推进游戏进程所必须的物品与材料，最终导向[[{{tr|Hardmode}}]]。虽然有 8 个[[{{tr|pre-Hardmode}}]]的 {{tr|bosses}}，但同一个世界中只能生成其中 7 个，因为[[{{tr|Eater of Worlds}}]]是包含[[{{tr|the Corruption}}]]的世界所独有的，而[[{{tr|Brain of Cthulhu}}]]是包含[[{{tr|the Crimson}}]]的世界所独有的。（假设玩家并未在同一个世界中放置另一种代换邪恶（例如，通过来自另一世界的种子或 {{eicons|1.4.0.1}} 使用在{{tr|Hardmode}}中购买自[[{{tr|Dryad}}]]的种子）也未使用{{eil|Drunk world|secret seed}}）。
+
+{{:{{BASEPAGENAME}}/box
+|name=King Slime
+|summoned=用{{item|Slime Crown}}召唤
+|
+'''[[{{tr|King Slime}}]]'''是个巨型蓝色[[{{tr|slime}}]]，拥有 {{formatnum:{{npcinfo|King Slime|lifeMax}} / {{expert|{{npcinfo|King Slime|lifeMax_e}}}} / {{master|{{npcinfo|King Slime|lifeMax_m}}}}}} 生命值。它可由[[{{tr|Slime Crown}}]]召出、或在{{eil|Slime Rain}}事件中击杀 150 只（如果已被击杀过，则为 75 只）史莱姆之后出现、也有很小概率完全自主的出现在地图的靠外的三分之一范围内。与所有会自然生成的敌怪一样，站在放置的[[{{tr|Water Candle}}]]附近或处在[[{{tr|Battle Potion}}]]的效果下时{{tr|King Slime}}有更大的几率生成。
+
+在{{eversions|1.3.0.1|short}}中，{{tr|King Slime}}在被困住或玩家脱离其接触范围太远时可以传送到玩家处。
+
+打败{{tr|King Slime}}并不会得到能够推进游戏进程的物品，但是在[[{{tr|Expert Mode}}]]之外它会掉落一[[{{tr|Coin}}|{{tr|Gold Coin}}]]、一件（{{expert|或两件}}）[[{{tr|Ninja clothes}}]]组件、以及若干件{{tr|slime}}相关物品之一。
+
+在[[{{tr|Expert Mode}}]]（以及[[{{tr|Master Mode}}]]）中，{{tr|King Slime}}能召唤[[{{tr|Spiked Slime}}]]，后者的行为类似于[[{{tr|Spiked Jungle Slime}}]]和[[{{tr|Spiked Ice Slime}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Eye of Cthulhu
+|summoned=用{{item|Suspicious Looking Eye}}召唤
+|
+'''[[{{tr|Eye of Cthulhu}}]]'''是个巨大的眼球，拥有 {{formatnum:{{npcinfo|Eye of Cthulhu|lifeMax}} / {{expert|{{npcinfo|Eye of Cthulhu|lifeMax_e}}}} / {{master|{{npcinfo|Eye of Cthulhu|lifeMax_m}}}}}} 生命值。只要{{tr|world}}中至少有一名玩家拥有 200 或更多{{tr|HP}}、[[{{tr|defense}}]]超过 10，且有 3 个或更多 [[{{tr|NPC}}]] 住进房子，那么在每个[[{{tr|night}}]]开始时就有 {{chance|1/3}} 的几率生成它。这种情况会持续到首次打败它为止。它也可以在夜间使用[[{{tr|Suspicious Looking Eye}}]]来进行召唤。如果在夜晚结束时未被玩家打败，它会向上移动并消失。它可能是部分玩家面对的第一个 {{tr|Boss}}。它会穿过[[{{tr|block}}]]，并生成[[{{tr|Servant of Cthulhu}}]]。
+
+在[[{{tr|Expert Mode}}]]（和[[{{tr|Master Mode}}]]）中，{{tr|Eye of Cthulhu}}在第二阶段时会进行连锁冲刺，在其生命值低下时会更频繁使用此攻击。连锁冲刺攻击也会以同样的方式扩大攻击性。这导致当它的生命值非常低时几乎是持续不断地以高速度冲刺。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Eater of Worlds
+|animated=n
+|summoned=用{{item|Worm Food}}召唤，或者破坏 3 个[[{{tr|Shadow Orb}}]]
+|
+'''[[{{tr|Eater of Worlds}}]]'''是只巨大的{{tr|worm}}，在{{eversions|1.4.0.1}}上一共有 {{formatnum:{{#expr:67*{{npcinfo|Eater of Worlds Body|lifeMax}}}} / {{expert|{{#expr:72*{{npcinfo|Eater of Worlds Body|lifeMax_e}}}}}} / {{master|{{#expr:72*{{npcinfo|Eater of Worlds Body|lifeMax_m}}}}}}}} 生命值，在{{eversions|1.4.0.1|invert=y}}上则是 {{formatnum:{{#expr:floor(50*{{npcinfo|14|hp}})}}}} 生命值。每打破三个[[{{tr|Shadow Orb}}]]或使用[[{{tr|Worm Food}}]]之后它就会生成。在[[{{tr|the Corruption}}]]的[[{{tr|chasms}}]]中能找到{{tr|Shadow Orbs}}，周围被[[{{tr|Ebonstone}}]]包围。需要有 65% 或更高[[{{tr|pickaxe power}}]]的[[{{tr|Pickaxe}}]]才能挖的动[[{{tr|Ebonstone}}]]，不过可以借助[[{{tr|Explosives (class)}}|{{tr|explosives}}]]或[[{{tr|Purification Powder}}]]来通过。一旦进入射程，用[[{{tr|Hammer}}]]或爆炸物就能摧毁{{tr|Shadow Orbs}}。{{tr|Eater of Worlds}}只能在{{tr|The Corruption}}中召唤，且能在一天中的任何时间召唤。如果企图逃离{{tr|the Corruption}}，它就会逃走并消失。
+
+{{tr|Eater of Worlds}}是大型的[[{{tr|Worm AI}}|{{tr|worm}}类]]敌怪，能够穿透图格，并且它是由很多节所组成的，被切断时每段都能独立攻击。要打败它，每一段都需要缩减到 2 个体节以下（可能的最小段只包含一个头部和一个尾部而没有体节）才能击杀这一段。由于{{tr|corrupted}}装备非常有用，在拥有{{tr|the Corruption}}而非[[{{tr|the Crimson}}]]的世界中，这很可能是第二个面对的 {{tr|Boss}}。
+
+{{tr|Eater of Worlds}}是游戏中[[{{tr|Shadow Scale}}]]的唯一来源，同时它还会掉落大量[[{{tr|Demonite Ore}}]]。{{tr|Demonite Ore}}可以以每 99 个约 {{sell expr|Demonite Ore|*99 round -4}} 的售价出售，因此严格来说，此 {{tr|boss}} 是游戏中{{tr|pre-hardmode}}最适合刷的 {{tr|boss}}。
+
+在[[{{tr|Expert Mode}}]]中，此 {{tr|Boss}} 能朝玩家发射名为[[{{tr|Vile Spit}}]]的暗绿色的射弹，和另一个{{tr|Corruption}}环境特有的{{tr|enemy}}[[{{tr|Corruptor}}]]所发射的很相似。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Brain of Cthulhu
+|summoned=用{{item|Bloody Spine}}召唤，或破坏 3 个[[{{tr|Crimson Heart}}]]
+|
+'''[[{{tr|Brain of Cthulhu}}]]'''是个巨大的飞行大脑，只有 {{formatnum:{{npcinfo|Brain of Cthulhu|lifeMax}} / {{expert|{{npcinfo|Brain of Cthulhu|lifeMax_e}}}} / {{master|{{npcinfo|Brain of Cthulhu|lifeMax_m}}}}}} 生命值，是所有 {{tr|boss}} 中生命值总量最少的。每打破三个[[{{tr|Crimson Heart}}]]或使用[[{{tr|Bloody Spine}}]]后它就会生成。在[[{{tr|The Crimson}}]]的{{tr|chasms}}中能找到{{tr|Crimson Hearts}}，周围被[[{{tr|Crimstone}}]]包围。用处理[[{{tr|Ebonstone Block}}|{{tr|Ebonstone}}]]同样的方法就可以通过[[{{tr|Crimstone}}]]。不过，某些包含{{tr|Crimson Hearts}}的这小片地方可能会生成为开放式的。一旦进入射程，用[[{{tr|Hammer}}]]或者任何[[{{tr|explosives (class)}}]]就能摧毁{{tr|Crimson Hearts}}。{{tr|Brain of Cthulhu}}只能在{{tr|the Crimson}}中召唤，但在一天中的任何时间都可以召唤。
+
+{{tr|Brain of Cthulhu}}有两个形态。在第一形态中，{{tr|Brain of Cthulhu}}本身不受伤害，周围漂浮着[[{{tr|Creeper}}]]。所有{{tr|Creeper}}全部被杀掉后，{{tr|Brain of Cthulhu}}进入第二形态，会疯狂传送且移动速度大大加快。第二形态的{{tr|Brain of Cthulhu}}通过冲撞玩家的方式攻击，类似于[[{{tr|Eye of Cthulhu}}]]的第二形态那样。和大多数其他 {{tr|Boss}} 不同，{{tr|Brain of Cthulhu}}不免疫[[{{tr|knockback}}]]。
+
+{{tr|Brain of Cthulhu}}是游戏中[[{{tr|Tissue Sample}}]]（除了在与其战斗时出现的{{tr|Creepers}}外）的唯一来源，并且会掉落大量[[{{tr|Crimtane Ore}}]]，它们分别是{{tr|Corruption items}}[[{{tr|Shadow Scale}}]]和[[{{tr|Demonite Ore}}]]的{{tr|Crimson}}对应物。
+
+在[[{{tr|Expert Mode}}]]下，在{{tr|Brain of Cthulhu}}的第二阶段中，它会创造自身的幻象并冲向玩家。{{tr|Brain of Cthulhu}}的{{tr|HP}}越少，幻象看起来就越像是真实的{{tr|Brain of Cthulhu}}。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Queen Bee
+|summoned=用{{item|Abeemination}}召唤或者破坏其{{item|Larva}}
+|
+'''[[{{tr|Queen Bee}}]]'''是只巨大的{{tr|bee}}，有 {{formatnum:{{npcinfo|Queen Bee|lifeMax}} / {{expert|{{npcinfo|Queen Bee|lifeMax_e}}}} / {{master|{{npcinfo|Queen Bee|lifeMax_m}}}}}} 生命值。她是通过摧毁其[[{{tr|larva}}]]来召唤的，{{tr|larva}}位于[[{{tr|Underground Jungle}}]]中的[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]内，被封闭在[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]的墙里。也可以在[[{{tr|Jungle}}]][[{{tr|biome}}]]中的任意位置使用[[{{tr|Abeemination}}]]来召唤。她是游戏中[[{{tr|Bee Wax}}]]的唯一来源。
+
+{{tr|Queen Bee}}时而冲向玩家，时而悬停在玩家上方同时生成[[{{tr|bee}}]]并左右移动发射{{tr|stingers}}。在[[{{tr|Expert Mode}}]]中，随着她承受的伤害越来越多，向玩家冲锋的频率也会越来越快。
+
+打败{{tr|Queen Bee}}后[[{{tr|Witch Doctor}}]]才会出现；除此之外，在主要意义上说打败她不会真正推进游戏进程，但是能提供一些对之后的 {{tr|Boss}} 战（如[[{{tr|Wall of Flesh}}]]）很有帮助的好东西。这类武器之一是[[{{tr|Beenade}}]]，用在{{tr|Wall of Flesh}}的战斗中极其有效。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Skeletron
+|animated=n
+|summoned=通过激活{{tr|Old Man}}的诅咒，或通过{{item|Clothier Voodoo Doll}}杀死[[{{tr|Clothier}}]]召唤
+|
+'''[[{{tr|Skeletron}}]]'''是一个大型骷髅头，有 {{formatnum:{{npcinfo|Skeletron|lifeMax}} / {{expert|{{npcinfo|Skeletron|lifeMax_e}}}} / {{master|{{npcinfo|Skeletron|lifeMax_m}}}}}} 生命值，还有两只手。最初可通过在[[{{tr|night}}]]与[[{{tr|Dungeon}}]]入口处的[[{{tr|Old Man}}]] [[{{tr|NPC}}]] 对话并激活他的诅咒来召唤出它，之后可通过在{{tr|night}}装备[[{{tr|Clothier Voodoo Doll}}]]杀死[[{{tr|Clothier}}]]来召唤。{{tr|Skeletron}}时而用手攻击玩家，时而进行旋转攻击。虽然并非必须，可以攻击打掉它的手来让战斗变得简单些。如果在夜晚结束前未能打败它，{{tr|Skeletron}}会获得极高的{{tr|defense}}并高速向玩家旋转，造成极高伤害（通常能一击秒杀玩家），直到所有玩家死亡或它被击败。
+
+打败[[{{tr|Skeletron}}]]会阻止[[{{tr|Dungeon Guardian}}]]生成，允许玩家进入{{tr|Dungeon}}。
+
+在[[{{tr|Expert Mode}}]]中，在{{tr|Skeletron}}的手被摧毁之前，它的头部对伤害有更好的抵抗力。一旦它的手被摧毁，{{tr|Skeletron}}就会开始向玩家发射自动制导的{{tr|skulls}}。{{tr|Skeletron}}的速度也会更快。它的手能造成[[{{tr|Slow}}]] [[{{tr|debuff}}]]，而头部能造成[[{{tr|Bleeding}}]]。如果玩家被头部旋转攻击打到，{{tr|Skeletron}}可以“昏眩锁定”玩家，这是一种致命的情况，只能通过高机动性来逃脱， 比如用[[{{tr|Hooks}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Deerclops
+|summoned=用{{item|Deer Thing|icons=n}}召唤
+|
+'''[[{{tr|Deerclops}}]]'''是只大型直立独眼鹿，有 {{formatnum:{{npcinfo|Deerclops|lifeMax}} / {{expert|{{npcinfo|Deerclops|lifeMax_e}}}} / {{master|{{npcinfo|Deerclops|lifeMax_m}}}}}} 生命值。任何时间在[[{{tr|Snow biome}}]]中用[[{{tr|Deer Thing}}]]可召唤出它。或者，它也可以在{{tr|world}}中任意玩家具有至少 9 {{tr|defense}}或 200 {{tr|health}}时，在[[{{tr|Blizzard}}]]期间的{{tr|midnight}}自然生成。如果在{{tr|world}}中已经击败过{{tr|Deerclops}}，自然生成的几率仅有 {{chance|1/4}}。{{tr|The Deerclops}}兼具近距离攻击和{{tr|projectile}}攻击，以应对各种距离的玩家。{{tr|The Deerclops}}也会在玩家距离太远时免疫所有伤害。虽然它正常情况下无法穿过{{tr|solid blocks}}，但当玩家在它上方过高处时，它也可以向上穿过{{tr|solid blocks}}。
+
+如果所有玩家都死亡了或者附近没有玩家，{{tr|the Deerclops}}会四处游荡而非立即消失。如果附近没有玩家，从{{tr|Deerclops}}生成开始，经过了游戏内一天后（现实的 24 分钟）它就会消失。退出并重新进入世界后它也会消失。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Wall of Flesh
+|summoned=通过在[[{{tr|Guide}}]]存活时，将{{item|Guide Voodoo Doll}}扔进{{tr|lava}}来召唤
+|
+'''[[{{tr|Wall of Flesh}}]]'''是一堵高耸的墙，跨越整个屏幕高度。它有 {{formatnum:{{npcinfo|Wall of Flesh|lifeMax}} / {{expert|{{npcinfo|Wall of Flesh|lifeMax_e}}}} / {{master|{{npcinfo|Wall of Flesh|lifeMax_m}}}}}} 生命值。它是通过在[[{{tr|Guide}}]]存活时将[[{{tr|Guide Voodoo Doll}}]]扔进[[{{tr|lava}}]]池来召唤的。它是{{tr|pre-Hardmode}}的最终 {{tr|boss}}，打败它会不可逆地在此世界中启用[[{{tr|Hardmode}}]]。它会掉落若干强力物品，其中肯定会掉落一把[[{{tr|Pwnhammer}}]]，可以用来打破[[{{tr|Demon Altar}}]]和[[{{tr|Crimson Altar}}]]，以生成推进游戏进行的各种[[{{tr|Hardmode ores}}]]。
+
+一但召唤{{tr|Wall of Flesh}}，玩家立刻会受到[[{{tr|Horrified}}]][[{{tr|debuff}}]]的影响而无法逃离战斗——一旦尝试这么做就会受到来自[[{{tr|The Tongue}}]]的严重伤害，如果玩家尝试传送离开的话就会直接死亡，并且{{tr|the debuff}}不会移除，直到玩家或者{{tr|Wall of Flesh}}被杀死。{{tr|Wall of Flesh}}会横扫过地图，其 HP 降低后会移动的更快。必须在其到达地图尽头之前完成击杀，否则它会消失，同时{{tr|Underworld}}中所有活着的玩家会立即死亡。另外，{{tr|Wall of Flesh}}的眼睛会发射激光，随着承受伤害增加发射频率也会加快；它的嘴里会喷出[[{{tr|Leech}}]]来追逐玩家，另外还有一种称为{{tr|The Hungry}}的小嘴附着在它身上，同样会朝着玩家移动并造成伤害。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|the Wall of Flesh}}随着生命值下降其移动速度会大大提升，最终甚至会超越玩家骑上[[{{tr|Bunny Mount}}]]的移动速度。{{tr|The Hungry}}会快速重生，从而似乎能为{{tr|Wall of Flesh}}本身挡下攻击，并且它们自身也能造成重大伤害。{{tr|the Wall of Flesh}}移动得越快则{{tr|The Hungry}}重生得越快，玩家就必须更加专注于制造伤害以及在移动穿过恰当的地形。
+}}
+
+== {{tr|Hardmode bosses}} ==
+[[{{tr|Hardmode}}]] {{tr|bosses}} 要比之前的 {{tr|bosses}} 强得多。
+
+{{:{{BASEPAGENAME}}/box
+|name=Queen Slime
+|animated=n
+|summoned=用{{item|Gelatin Crystal|icons=n}}召唤
+|
+'''[[{{tr|Queen Slime}}]]'''是个巨型的{{tr|slime}}，有 {{formatnum:{{npcinfo|Queen Slime|lifeMax}} / {{expert|{{npcinfo|Queen Slime|lifeMax_e}}}} / {{master|{{npcinfo|Queen Slime|lifeMax_m}}}}}} 生命值。在{{tr|Hardmode}}一开始就可以与之战斗，可用在[[{{tr|Underground Hallow}}]]中找到的[[{{tr|Gelatin Crystal}}]]召唤。这是个可选的 {{tr|boss}} 战，在面对[[{{tr|mechanical bosses}}]] 之前这是个可以挑战的小鸿沟，提供了装备升级和其他{{tr|items}}。她和[[{{tr|pre-Hardmode}}]]的[[{{tr|King Slime}}]]极为相似，并且是游戏中所提供的两个{{tr|Hallowed bosses}} 之一。随着承受伤害，她会生成[[{{tr|Crystal Slime}}]]、[[{{tr|Bouncy Slime}}]]、和[[{{tr|Heavenly Slime}}]]来帮助自己。其第一形态拥有和{{tr|King Slime}}类似的攻击模式，十分简单，但第二阶段却更具威胁性，因为{{tr|boss}} 开始在空中飞行，从上方发射和{{tr|projectiles}}。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=The Twins
+|trophy=[[File:Spazmatism Trophy.png|link={{tr|Spazmatism Trophy|link=y}}]]&#32;[[File:Retinazer Trophy.png|link={{tr|Retinazer Trophy|link=y}}]]
+|summoned=用{{item|Mechanical Eye}}召唤
+|
+'''[[{{tr|The Twins}}]]'''是一对自动化的[[{{tr|Eye of Cthulhu}}]]。它们作为两个单独的实体存在，分别称为'''{{tr|Retinazer}}'''和'''{{tr|Spazmatism}}'''，前者有 {{formatnum:{{npcinfo|Retinazer|lifeMax}} / {{expert|{{npcinfo|Retinazer|lifeMax_e}}}} / {{master|{{npcinfo|Retinazer|lifeMax_m}}}}}} 生命值，后者有 {{formatnum:{{npcinfo|Spazmatism|lifeMax}} / {{expert|{{npcinfo|Spazmatism|lifeMax_e}}}} / {{master|{{npcinfo|Spazmatism|lifeMax_m}}}}}} 生命值。{{tr|The Twins}}是用[[{{tr|Mechanical Eye}}]]在{{tr|night}}召唤的。值得注意的是，和{{tr|Eye of Cthulhu}}不同，它们在第二形态中会得到[[{{tr|defense}}]]。
+
+两只眼球有着不同的战斗风格。{{tr|Retinazer}}专注于用{{tr|Death Lasers}}射击玩家，就像[[{{tr|Destroyer}}]]的[[{{tr|Probes}}]]那样。一旦达到 40% 生命值，它就会转变为第二形态，其瞳孔会替换为激光炮。在这个形态中，它会以超快的速度发射激光，有时候开火频率就像[[{{tr|Megashark}}]]一样快。
+
+另一只眼球{{tr|Spazmatism}}专注于撞击玩家与发射{{tr|cursed flames}}。一旦达到 40% 生命值，它就会转变为第二形态，就像是{{tr|Eye of Cthulhu}}的第二形态的机械版本。他所造成的伤害会大幅提升，其火焰会更加持续，就像是喷射[[{{tr|Cursed Flames}}]]的[[{{tr|Flamethrower}}]]，而且火焰依然会对玩家造成[[{{tr|Cursed Inferno}}]]{{tr|debuff}}。最后被摧毁的那只眼球会掉落所有战利品。
+
+在击败[[{{tr|The Twins}}]]后，它们会掉落[[{{tr|Hallowed Bar}}]]和[[{{tr|Souls of Sight}}]]，二者均可用于制作多种{{tr|armor and weapons}}。如果在{{tr|daytime}}前未能将其击杀，{{tr|The Twins}}会逃离战斗，然后消失。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|Retinazer}}会更快地发射{{tr|lasers}}，而{{tr|Spazmatism}}在其第二形态下会更快速地冲锋。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=The Destroyer
+|animated=n
+|trophy=[[File:Destroyer Trophy.png|link={{tr|Destroyer Trophy|link=y}}]]
+|summoned=用{{item|Mechanical Worm}}召唤
+|
+'''[[{{tr|The Destroyer}}]]'''是个巨大的机械化[[{{tr|Eater of Worlds}}]]，拥有 {{formatnum:{{npcinfo|The Destroyer|lifeMax}} / {{expert|{{npcinfo|The Destroyer|lifeMax_e}}}} / {{master|{{npcinfo|The Destroyer|lifeMax_m}}}}}} 生命值。很多玩家认为它是最容易的{{tr|Hardmode}} {{tr|boss}}，哪怕他有第二高的生命值。虽然它与它在困难模式之前的对应物{{tr|Eater of Worlds}}很相似，二者还是有一些关键不同：它不会断开成更小的片段、如果空间足够它的身体上会射出激光、以及在体节受伤时放出[[{{tr|Probe}}]]来攻击。
+
+制作并使用[[{{tr|Mechanical Worm}}]]可以召唤出{{tr|The Destroyer}}，在任何地方都可以，但只能在夜间出现。{{tr|The Destroyer}}会发射{{tr|Death Lasers}}，在失去生命值后攻击速度会加快。建议使用能造成多段伤害的武器，如[[{{tr|Flails}}]]、[[{{tr|Daedalus Stormbow}}]]、和[[{{tr|Demon Scythe}}]]，因为它们能同时击中{{tr|The Destroyer}}的多个部分。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|The Destroyer}}的头部可以造成高达 {{expert|{{npcinfo|134|damage|expert}}}} / {{master|{{npcinfo|134|damage|master}}}} 的伤害，如果玩家被正面击中直接就要残掉。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Skeletron Prime
+|summoned=用{{item|Mechanical Skull}}召唤
+|
+'''[[{{tr|Skeletron Prime}}]]'''是[[{{tr|Skeletron}}]]的武器化机械变体，光是头部就有 {{formatnum:{{npcinfo|Skeletron Prime|lifeMax}} / {{expert|{{npcinfo|Skeletron Prime|lifeMax_e}}}} / {{master|{{npcinfo|Skeletron Prime|lifeMax_m}}}}}} 生命值。取代两只手的是钳、激光枪、锯、和炮。这些肢体和头部加在一起，{{tr|Skeletron Prime}}有 {{formatnum:{{sum|{{npcinfo|Skeletron Prime|lifeMax}}|{{npcinfo|Prime Cannon|lifeMax}}|{{npcinfo|Prime Vice|lifeMax}}|{{npcinfo|Prime Saw|lifeMax}}|{{npcinfo|Prime Laser|lifeMax}}}} / {{expert|{{sum|{{npcinfo|Skeletron Prime|lifeMax_e}}|{{npcinfo|Prime Cannon|lifeMax_e}}|{{npcinfo|Prime Vice|lifeMax_e}}|{{npcinfo|Prime Saw|lifeMax_e}}|{{npcinfo|Prime Laser|lifeMax_e}}}}}} / {{master|{{sum|{{npcinfo|Skeletron Prime|lifeMax_m}}|{{npcinfo|Prime Cannon|lifeMax_m}}|{{npcinfo|Prime Vice|lifeMax_m}}|{{npcinfo|Prime Saw|lifeMax_m}}|{{npcinfo|Prime Laser|lifeMax_m}}}}}}}} 生命值。不过，就像{{tr|Skeletron}}那样，只要打败头部即可。在同一个世界中{{tr|Skeletron Prime}}可以想召几次就几次，只需制作并使用[[{{tr|Mechanical Skull}}]]，但只能在夜间召唤。它比前任要更加灵活，经常飞出屏幕，这使得瞄准它变得更加困难。值得一提的是当它的头部旋转时，其[[{{tr|defense}}]]会由 24 点翻倍到 48点，这与{{tr|Skeletron}}不同，后者在旋转时{{tr|defense}}会降为 0。
+
+{{tr|Skeletron Prime}}被击败时会掉落[[{{tr|Hallowed Bar}}]]和[[{{tr|Souls of Fright}}]]，二者均可用于制作多种盔甲与工具。和{{tr|Skeletron}}一样，如果在夜晚结束前未能将其击杀，它会旋转并将玩家作为目标，通常会一击把玩家干掉，然后消失。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|Skeletron Prime}}在其旋转攻击期间移动速度明显加快，类似于[[{{tr|Skeletron}}]]。<span id{{=}}"pc"></span> <!-- This supports easy anchor links to this section, do not remove -->
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Plantera
+|summoned=通过摧毁{{item|Plantera's Bulb}}来召唤
+|
+'''[[{{tr|Plantera}}]]'''是巨大的花朵，有 {{formatnum:{{npcinfo|Plantera|lifeMax}} / {{expert|{{npcinfo|Plantera|lifeMax_e}}}} / {{master|{{npcinfo|Plantera|lifeMax_m}}}}}} 生命值。打败三个[[{{tr|Mechanical Boss}}]] 之后可以在[[{{tr|Underground Jungle}}]]找到[[{{tr|Plantera's Bulb}}]]，将其摧毁可以召唤出她来。如果玩家离开{{tr|Underground Jungle}}，{{tr|Plantera}}就会“暴怒”，其各项属性会大幅增强。
+
+{{tr|Plantera}}有两个阶段。在第一阶段，她会用蔓藤状的爪钩攀附在[[{{tr|block}}|{{tr|solid block}}]]上并发射种子（最终是{{tr|Poison Seeds}}）。在第二阶段，{{tr|Plantera}}的速度有所提升，并会更主动地向玩家移动。她还会释放大量连接在其主体上的“{{tr|Plantera's Tentacle}}”{{tr|minions}}。 
+
+在{{eil|Expert Mode}}中，{{tr|the seeds}}可以穿过墙壁，并有轻微的自动制导能力，并且在第二阶段中，每个{{tr|hook}}会连接着额外的{{tr|Plantera's Tentacles}}（每个上面有 3 根），总计增加 9 根{{tr|tentacles}}。
+
+一旦{{tr|Plantera}}被打败，[[{{tr|Dungeon}}]]会自动生成更强的{{tr|Hardmode}}[[{{tr|enemies}}]]，比如[[{{tr|Paladin}}]]，另外还会掉落更多不同种类的掉落物。另外，{{tr|Crimson, Corruption and Hallow}}的蔓延速度会减半。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Golem
+|summoned=用{{item|Lihzahrd Power Cell}}在{{item|Lihzahrd Altar}}召唤
+|
+'''[[{{tr|Golem}}]]'''是个大型 {{tr|boss}}，加起来一共有 {{formatnum:{{sum|{{npcinfo|Golem Head|lifeMax}}|{{npcinfo|Golem Body|lifeMax}}|{{npcinfo|Right Golem Fist|lifeMax}}|{{npcinfo|Left Golem Fist|lifeMax}}}}}} / {{expert|{{formatnum:{{sum|{{npcinfo|Golem Head|lifeMax_e}}|{{npcinfo|Golem Body|lifeMax_e}}|{{npcinfo|Right Golem Fist|lifeMax_e}}|{{npcinfo|Left Golem Fist|lifeMax_e}}}}}}}} / {{master|{{formatnum:{{sum|{{npcinfo|Golem Head|lifeMax_m}}|{{npcinfo|Golem Body|lifeMax_m}}|{{npcinfo|Right Golem Fist|lifeMax_m}}|{{npcinfo|Left Golem Fist|lifeMax_m}}}}}}}} 生命值。它是通过在[[{{tr|Jungle Temple}}]]中[[{{tr|Lihzahrd Altar}}]]处使用[[{{tr|Lihzahrd Power Cell}}]]来召唤的。为了进入{{tr|the Jungle Temple}}，必须打败{{tr|Plantera}}来得到[[{{tr|Temple Key}}]]。
+
+{{tr|Golem}}有两个阶段。在第一阶段中，它的两个拳头和头部是可攻击状态，和[[{{tr|Skeletron}}]]一样，摧毁拳头不是必要的，但摧毁了会有所帮助。一旦头部的生命值耗尽，它会飞起来同时发射火球与{{tr|eye beams}}，身体则开放为可攻击状态。在这个阶段，身体会跳来跳去并疯狂的用拳头猛击。打败身体即打败{{tr|Golem}}。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Duke Fishron
+|summoned=通过在[[{{tr|Ocean}}]]{{tr|biome}}中用{{item|Truffle Worm}}作为{{tr|bait}}钓鱼来召唤
+|
+'''[[{{tr|Duke Fishron}}]]'''是鲨-猪-龙的杂交体，有 {{formatnum:{{npcinfo|Duke Fishron|lifeMax}} / {{expert|{{npcinfo|Duke Fishron|lifeMax_e}}}} / {{master|{{npcinfo|Duke Fishron|lifeMax_m}}}}}} 生命值。在[[{{tr|Ocean}}]]中以[[{{tr|Truffle Worm}}]]为[[{{tr|bait}}]]{{tr|fishing}}即可召唤出它。只要玩家进入了[[{{tr|Hardmode}}]]，就可以召唤它，不过推荐之后再和它战斗。
+
+在第一阶段，{{tr|Duke Fishron}}会试图冲撞玩家五次，接着发射爆炸泡泡或召唤{{tr|Sharknados}}。在第二阶段，{{tr|Duke Fishron}}双眼放光，伤害与防御都有强化。冲撞攻击依旧不变，但不再直接向玩家发射泡泡，而是快速绕圈飞行，将泡泡放的到处都是。{{tr|Duke Fishron}}在这一阶段不再召唤{{tr|Sharknados}}，而是改为召唤更大的{{tr|Cthulhunados}}。这些旋风停留在原地的时间比{{tr|Sharknados}}更长。
+
+在[[{{tr|Expert mode}}]]中，当{{tr|Duke Fishron}}的生命值低到 15%（{{expert|{{#expr:floor(0.15*{{npcinfo|Duke Fishron|hp|expert}})}}}} / {{master|{{#expr:floor(0.15*{{npcinfo|Duke Fishron|hp|master}})}}}}）以下时，他会进入第三阶段。在这个阶段中屏幕会变暗。{{tr|Duke Fishron}}变得不可见，只能看到他发光的眼睛。他会传送并数次试图高速撞击玩家，然后再次传送。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Empress of Light
+|summoned=通过击杀{{item|Prismatic Lacewing|icons=n}}来召唤
+|
+'''[[{{tr|Empress of Light}}]]'''是个[[{{tr|Hallow}}]]主题的 {{tr|boss}}，有 {{formatnum:{{npcinfo|Empress of Light|lifeMax}} / {{expert|{{npcinfo|Empress of Light|lifeMax_e}}}} / {{master|{{npcinfo|Empress of Light|lifeMax_m}}}}}} 生命值。可以通过击杀[[{{tr|Prismatic Lacewing}}]]来召唤她，并且她是游戏中出现的两个{{tr|Hallowed bosses}}之一。和{{tr|This boss}} 战斗是可选的。但是，如果玩家在她可用时立刻与其战斗，将会面临巨大的陡增难度和众多攻击模式。在白天也可以与此 {{tr|boss}} 战斗，这会让她“暴怒”，其攻击力会被大大提高到秒杀级别，但如果在 100% 伤害都是在白天造成的，则会掉落[[{{tr|Terraprisma}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Lunatic Cultist
+|trophy=[[File:Lunatic Cultist Trophy.png|link={{tr|Lunatic Cultist Trophy}}]]
+|summoned=通过击杀[[{{tr|Dungeon}}]]入口处的所有{{item|Cultists|image=CultistAnimation.gif/Blue Cultist Archer.png|scale=0.75|icons=n}}来召唤
+|
+'''[[{{tr|Lunatic Cultist}}]]'''是个相对较小的 {{tr|boss}}，有 {{formatnum:{{npcinfo|Lunatic Cultist|lifeMax}} / {{expert|{{npcinfo|Lunatic Cultist|lifeMax_e}}}} / {{master|{{npcinfo|Lunatic Cultist|lifeMax_m}}}}}} 生命值。在打败[[{{tr|Golem}}]]和[[{{tr|Skeletron}}]]后在[[{{tr|Dungeon}}]]入口处会出现四个[[{{tr|cultists}}]]，全部杀死即可召唤出它。打败{{tr|Lunatic Cultist}}后，[[{{tr|Lunar Events}}]]就会开始。
+
+{{tr|Lunatic Cultist}}的攻击会随着逐渐失去生命值而变得更加强力。{{tr|Lunatic Cultist}}会在周围随机飞行，循环使用几种攻击：发射火球、造出向玩家发射闪电的球、发射会向四周射出寒冰碎片的巨大雪花、发射{{tr|shadowflames}}、一连两次发射五枚可破坏的射弹。{{tr|Lunatic Cultist}}还会制造假分身，假分身受到伤害时会召唤[[{{tr|Phantasm Dragon}}]]。如果在存在{{tr|Phantasm Dragon}}的情况下玩家继续对这些分身造成伤害，就会改为召唤[[{{tr|Ancient Vision}}]]。如果太长时间没有攻击真正的{{tr|Lunatic Cultist}}也会导致召唤[[{{tr|Phantasm Dragon}}]]或[[{{tr|Ancient Vision}}]]。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|Lunatic Cultist}}还会随着其他攻击同时生成[[{{tr|Ancient Doom}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Moon Lord
+|animated=n
+|summoned=用{{item|Celestial Sigil|icons=n}}或者打败[[{{tr|Celestial Pillars}}]]来召唤
+|
+'''[[{{tr|Moon Lord}}]]'''是''{{tr|Terraria}}''的最终 {{tr|boss}}，并且会掉落大多数游戏末期物品。他还会掉落[[{{tr|Luminite}}]]，这种[[{{tr|ore}}]]可用于制作许多末期[[{{tr|armor}}]]套装和[[{{tr|tools}}]]。打败[[{{tr|Lunar Event}}]]中的全部四个[[{{tr|Celestial Pillars}}]]或使用[[{{tr|Celestial Sigil}}]]都可以召唤出他。他总共拥有 {{formatnum:{{#expr:{{npcinfo|Moon Lord's Head|lifeMax}}+{{npcinfo|Moon Lord's Core|lifeMax}}+2*{{npcinfo|Moon Lord's Hand|lifeMax}}}}}} / {{expert|{{formatnum:{{#expr:{{npcinfo|Moon Lord's Head|lifeMax_e}}+{{npcinfo|Moon Lord's Core|lifeMax_e}}+2*{{npcinfo|Moon Lord's Hand|lifeMax_e}}}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|Moon Lord's Head|lifeMax_m}}+{{npcinfo|Moon Lord's Core|lifeMax_m}}+2*{{npcinfo|Moon Lord's Hand|lifeMax_m}}}}}}}}  生命值，是游戏中生命值最高的 {{tr|boss}}。
+
+{{tr|Moon Lord}}有两只手和一个头，都需要攻击其上的眼睛才能杀掉，在被杀掉会放出无敌的[[{{tr|True Eye of Cthulhu}}]]。当三只眼睛都被摧毁后，{{tr|Moon Lord's core}}会在他胸口打开，接下来必须将其摧毁才能打败此 {{tr|boss}}。
+
+{{tr|Moon Lord's hands}}一次发射两发能自动寻的的{{tr|projectiles}}，以及召唤幻影版的{{tr|True Eye of Cthulhu}}并将其抛向玩家。{{tr|Moon Lord}}顶上的眼睛会偶尔发射{{tr|Phantasmal Deathray}}，它会扫过整个屏幕。它对玩家来说非常致命，但可以通过快速的移动来避开。当{{tr|True Eyes of Cthulhu}}被释放之后，它们原本所在的地方就能造成较低的{{tr|contact damage}}。{{tr|True Eyes of Cthulhu}}会停留{{tr|Moon Lord}}附近并继续和之前一样攻击，但造成的伤害会有所降低。
+
+击败{{tr|Moon Lord}}的{{tr|Worlds}}会在{{tr|world}}选择菜单中获得金色边框。
+}}
+
+== {{tr|Event bosses}} ==
+[[{{tr|Event}}]] {{tr|bosses}} 归类为[[#备注|{{tr|mini-bosses}}]]，[[{{tr|Celestial Pillars}}]]除外。大部分{{tr|event bosses}} 在单个{{tr|event}}中能够生成多次。
+
+{{:{{BASEPAGENAME}}/box
+|name=Dark Mage
+|strategies=[[{{tr|Dark Mage}}#{{tr|tips}}|{{tr|Dark Mage}} § {{tr|Tips}}]]和[[指南:{{tr|Old One's Army}}攻略]]
+|summoned={{tr|Event}}可用{{item|Eternia Crystal|icons=n}}启动
+|
+'''[[{{tr|Dark Mage}}]]'''是{{tr|mini-boss}}，出现在[[{{tr|Old One's Army}}]]一级[[{{tr|Events}}|{{tr|event}}]]的最后一波。它有三种攻击，从向玩家投掷{{tr|dark energy}}，到召唤治疗附近{{tr|enemies}}的符文或在身边召唤多个[[{{tr|Old One's Skeleton}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Ogre
+|strategies=[[{{tr|Ogre}}#{{tr|Tips}}|{{tr|Ogre}} § {{tr|Tips}}]]和[[指南:{{tr|Old One's Army}}攻略]]
+|summoned={{tr|Event}}可用{{item|Eternia Crystal|icons=n}}启动
+|
+'''[[{{tr|Ogre}}]]'''是{{tr|mini-boss}}，出现在[[{{tr|Old One's Army}}]]二级[[{{tr|Events}}|{{tr|event}}]]的最后一波。{{tr|The mini-boss}}有三种攻击，包括向目标投掷会造成{{tr|Oozed}}{{tr|debuff}}的鼻涕、跳到空中在落地时造成伤害性震波、以及将它的大棒挥向面前的敌人。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Betsy
+|imagealt=Animated Betsy.gif
+|strategies=[[{{tr|Betsy}}#{{tr|Tips}}|{{tr|Betsy}} § {{tr|Tips}}]]和[[指南:{{tr|Old One's Army}}攻略]]
+|summoned={{tr|Event}}可用{{item|Eternia Crystal|icons=n}}启动
+|
+'''[[{{tr|Betsy}}]]'''是出现在[[{{tr|Old One's Army}}]]三级[[{{tr|Events}}|{{tr|event}}]]最后一波的 {{tr|boss}}。{{tr|wyvern}}的攻击方式类似于[[{{tr|Duke Fishron}}]]，朝玩家猛冲并喷涂火焰流。她同样有不同的攻击方式，朝目标发射火球以及在身边召唤两只[[{{tr|Etherian Wyvern}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Flying Dutchman
+|imagealt=Animated Flying Dutchman.gif
+|strategies=[[{{tr|Flying Dutchman}}#{{tr|Tips}}|{{tr|Flying Dutchman}} § {{tr|Tips}}]]
+|summoned={{tr|Event}}可用{{item|Pirate Map}}启动
+|
+'''[[{{tr|Flying Dutchman}}]]'''是[[{{tr|Pirate Invasion}}]]的{{tr|mini-boss}}。它会在{{tr|invasion}}完成 65% 之后无限生成。它会生成各种{{tr|Pirate enemies}}来攻击玩家，并且有四座会发射{{tr|cannonballs}}的大炮，必须先摧毁这些大炮之后才能干掉它，类似于{{tr|the Martian Saucer}}。在入侵结束之后，{{tr|Flying Dutchman}}并不会消失，但如果在结束时它并没有找到战斗目标就会自爆。可以同时出现多条{{tr|Flying Dutchman}}。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Mourning Wood
+|strategies=[[{{tr|Mourning Wood}}#{{tr|Tips}}|{{tr|Mourning Wood}} § {{tr|Tips}}]]和[[指南:{{tr|Pumpkin Moon}}攻略]]
+|summoned={{tr|Event}}可用{{item|Pumpkin Moon Medallion}}启动
+|
+'''[[{{tr|Mourning Wood}}]]'''是在[[{{tr|Pumpkin Moon}}]]期间出现的{{tr|mini-boss}}。它会朝玩家发射能穿透{{tr|blocks}}的火焰{{tr|projectiles}}。它还会从头上吐出火焰尖刺，火焰尖刺能在地面上停留一会儿，在接触时造成火焰伤害。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Pumpking
+|imagealt=Animated Pumpking.gif
+|strategies=[[{{tr|Pumpking}}#{{tr|Tips}}|{{tr|Pumpking}} § {{tr|Tips}}]]和[[指南:{{tr|Pumpkin Moon}}攻略]]
+|summoned={{tr|Event}}可用{{item|Pumpkin Moon Medallion}}启动
+|
+'''[[{{tr|Pumpking}}]]'''是[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]中的第二个也是最后一个{{tr|mini-boss}}。它拥有两个可以挥舞并向玩家发射{{tr|projectiles}}的带有镰刀的手臂，类似于{{tr|Skeletron}}。它在多种攻击模式中循环切换，从向玩家挥刀到发射火焰尖刺，可以用它作为头部的南瓜上刻着的脸谱来区分。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Everscream
+|strategies=[[{{tr|Everscream}}#{{tr|Tips}}|{{tr|Everscream}} § {{tr|Tips}}]]和[[指南:{{tr|Frost Moon}}攻略]]
+|summoned={{tr|Event}}可用{{item|Naughty Present}}启动
+|
+'''[[{{tr|Everscream}}]]'''是个出现在[[{{tr|Frost Moon}}]][[{{tr|event}}]]中的{{tr|mini-boss}}。它的攻击方式会在发射{{tr|pine needle projectiles}}和往地上丢下会爆成碎块的弹跳装饰品之间切换。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Santa-NK1
+|strategies=[[{{tr|Santa-NK1}}#{{tr|Tips}}|{{tr|Santa-NK1}} § {{tr|Tips}}]]和[[指南:{{tr|Frost Moon}}攻略]]
+|summoned={{tr|Event}}可用{{item|Naughty Present}}启动
+|
+'''[[{{tr|Santa-NK1}}]]'''是在[[{{tr|Frost Moon}}]][[{{tr|event}}]]中出现的{{tr|mini-boss}}。它的攻击方式是用机枪朝玩家快速发射{{tr|bullets}}、发射带着降落伞从天而降的{{tr|presents}}以及向玩家射出穿透{{tr|block}}的{{tr|rockets}}。在第二阶段中，他的脸会消失，露出一张机械脸。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Ice Queen
+|strategies=[[{{tr|Ice Queen}}#{{tr|Tips}}|{{tr|Ice Queen}} § {{tr|Tips}}]]和[[指南:{{tr|Frost Moon}}攻略]]
+|summoned={{tr|Event}}可用{{item|Naughty Present}}启动
+|
+'''[[{{tr|Ice Queen}}]]'''是[[{{tr|Frost Moon}}]][[{{tr|event}}]]中出现的第三个也是最终的 {{tr|mini-Boss}}。她的攻击包括快速旋转向多个方向快速射出{{tr|ice bolts}}，以及朝玩家发射多重{{tr|Frost Wave}}。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Martian Saucer
+|strategies=[[{{tr|Martian Saucer}}#{{tr|Tips}}|{{tr|Martian Saucer}} § {{tr|Tips}}]]
+|summoned={{tr|Event}}可通过让{{item|Martian Probe|scale=0.75|icons=n}}在探测到玩家后逃脱来启动
+|
+'''[[{{tr|Martian Saucer}}]]'''是在[[{{tr|Martian Madness}}]]{{tr|event}}中生成的大型{{tr|flying mini-boss}}。最初生成时，它的上方安装了四个炮塔，且它会在三种攻击中循环：发射一连串激光、发射自动制导{{tr|rockets}}、或试图从底部发射大型激光来试图干掉玩家。在{{tr|Expert Mode}}中，它具有第二阶段，会在炮塔全部被干掉时开始，此时它会快速追逐玩家，并迅速发射激光。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Solar Pillar
+|animated=n
+|notrophy=yes
+|strategies=[[指南:{{tr|Lunar Events}}攻略#{{tr|Solar Pillar}}|指南:{{tr|Lunar Events}}攻略]]
+|summoned={{tr|Event}}可通过打败{{item|Lunatic Cultist|scale=0.75|icons=n}}来开启
+|
+'''[[{{tr|Solar Pillar}}]]'''是在打败[[{{tr|Lunatic Cultist}}]]之后开始的[[{{tr|Lunar Events}}]]期间出现的四个 {{tr|boss}} 之一。
+
+当 4 个[[{{tr|Celestial Pillars}}]]全部被打败后，[[{{tr|Moon Lord}}]]将会出现。
+
+{{tr|The Solar Pillar}}自身通过喷出[[{{tr|Solar Fragment (NPC)}}|{{tr|fireballs}}]]来攻击玩家。它生成的{{tr|enemies}}主要使用{{tr|melee}}风格的攻击。
+
+{{tr|The Solar Pillar}}最初被一个大型的无敌护盾包围。在至少杀死 100 个它的{{tr|enemies}}后，护盾会消散，允许玩家直接攻击它。
+
+{{tr|Solar Pillar}}会生成以下{{tr|enemies}}：
+* [[{{tr|Selenian}}]]
+* [[{{tr|Drakanian}}]]
+* [[{{tr|Corite}}]]
+* [[{{tr|Sroller}}]]
+* [[{{tr|Crawltipede}}]]
+* [[{{tr|Drakomire}}]]
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Nebula Pillar
+|animated=n
+|notrophy=yes
+|strategies=[[指南:{{tr|Lunar Events}}攻略#{{tr|Nebula Pillar}}|指南:{{tr|Lunar Events}}攻略]]
+|summoned={{tr|Event}}可通过打败{{item|Lunatic Cultist|scale=0.75|icons=n}}来开启
+|
+'''[[{{tr|Nebula Pillar}}]]'''是在打败[[{{tr|Lunatic Cultist}}]]之后开始的[[{{tr|Lunar Events}}]]期间出现的四个 {{tr|boss}} 之一。
+
+当 4 个[[{{tr|Celestial Pillars}}]]全部被打败后，[[{{tr|Moon Lord}}]]将会出现。
+
+{{tr|The Nebula Pillar}}自身不会攻击玩家。它生成的{{tr|enemies}}主要使用{{tr|magic}}风格的攻击。
+
+{{tr|The Nebula Pillar}}最初被一个大型的无敌护盾包围。在至少杀死 100 个它的{{tr|enemies}}后，护盾会消散，允许玩家直接攻击它。
+
+{{tr|Nebula Pillar}}会生成以下敌怪：
+* [[{{tr|Nebula Floater}}]]
+* [[{{tr|Brain Suckler}}]]
+* [[{{tr|Predictor}}]]
+* [[{{tr|Evolution Beast}}]]
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Vortex Pillar
+|animated=n
+|notrophy=yes
+|strategies=[[指南:{{tr|Lunar Events}}攻略#{{tr|Vortex Pillar}}|指南:{{tr|Lunar Events}}攻略]]
+|summoned={{tr|Event}}可通过打败{{item|Lunatic Cultist|scale=0.75|icons=n}}来开启
+|
+'''[[{{tr|Vortex Pillar}}]]'''是在打败[[{{tr|Lunatic Cultist}}]]之后开始的[[{{tr|Lunar Events}}]]期间出现的四个 {{tr|boss}} 之一。
+
+当 4 个[[{{tr|Celestial Pillars}}]]全部被打败后，[[{{tr|Moon Lord}}]]将会出现。
+
+{{tr|The Vortex Pillar}}自身通过在玩家上方开启传送门，生成两个{{tr|Alien Hornets}}或一道闪电来攻击。它生成的{{tr|enemies}}主要使用{{tr|ranged}}风格的攻击。
+
+{{tr|The Vortex Pillar}}最初被一个大型的无敌护盾包围。在至少杀死 100 个它的{{tr|enemies}}后，护盾会消散，允许玩家直接攻击它。
+
+{{tr|Vortex Pillar}}会生成以下敌怪：
+* [[{{tr|Vortexian}}]]
+* [[{{tr|Alien Queen}}]]
+* [[{{tr|Alien Hornet}}]]
+* [[{{tr|Alien Larva}}]]
+* [[{{tr|Storm Diver}}]]
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Stardust Pillar
+|animated=n
+|notrophy=yes
+|strategies=[[指南:{{tr|Lunar Events}}攻略#{{tr|Stardust Pillar}}|指南:{{tr|Lunar Events}}攻略]]
+|summoned={{tr|Event}}可通过打败{{item|Lunatic Cultist|scale=0.75|icons=n}}来开启
+|
+'''[[{{tr|Stardust Pillar}}]]'''是在打败[[{{tr|Lunatic Cultist}}]]之后开始的[[{{tr|Lunar Events}}]]期间出现的四个 {{tr|boss}} 之一。
+
+当 4 个[[{{tr|Celestial Pillars}}]]全部被打败后，[[{{tr|Moon Lord}}]]将会出现。
+
+{{tr|The Stardust Pillar}}自身通过召唤额外{{tr|enemies}}来攻击。它生成的{{tr|enemies}}主要使用{{tr|summon}}风格的攻击。
+
+{{tr|The Stardust Pillar}}最初被一个大型的无敌护盾包围。在至少杀死 100 个它的{{tr|enemies}}后，护盾会消散，允许玩家直接攻击它。
+
+{{tr|Stardust Pillar}}会生成以下敌怪：
+* [[{{tr|Star Cell}}]]
+* [[{{tr|Flow Invader}}]]
+* [[{{tr|Twinkle Popper}}]]
+* [[{{tr|Twinkle Popper}}|{{tr|Twinkle}}]]
+* [[{{tr|Stargazer}}]]
+* [[{{tr|Milkyway Weaver}}]]
+}}
+
+== {{tr|Secret world seed}}独有 {{tr|boss}} ==
+{{:{{BASEPAGENAME}}/box
+|name=Mechdusa
+|animated=n
+|trophy=
+|summoned=用{{item|Ocram's Razor|icons=n}}召唤
+|
+'''[[{{tr|Mechdusa}}]]'''是一个玩笑性质的 {{tr|boss}}，外观为三个[[{{tr|mechanical bosses}}]] 的结合体。它只能在 [[{{tr|Get fixed boi}}]] {{tr|world}}中使用[[{{tr|Ocram's Razor}}]]来召唤。
+}}
+
+== {{eversions|Ocram|short=y|nl=y}}独有 {{tr|boss}} ==
+{{:{{BASEPAGENAME}}/box
+|name=Ocram
+|summoned=用{{item|Suspicious Looking Skull|icons=n}}召唤
+|
+'''[[{{tr|Ocram}}]]'''是个存在于{{eversions|Ocram}}''{{tr|Terraria}}''的 {{tr|Boss}}。通常认为它是这些版本中最难的 {{tr|boss}}。用[[{{tr|Suspicious Looking Skull}}]]可以将其召出。此{{tr|boss}}的攻击方式是朝玩家冲锋，发射连串激光并召唤[[{{tr|Servant of Ocram}}]]。在它受到了足够的伤害后，会切换到第二阶段，从而提高攻击频率和攻击伤害。此外，它会在更靠近玩家的地方开始攻击。
+}}
+
+== {{eversions|Lepus|short=y|nl=y}}独有 {{tr|bosses}} ==
+{{:{{BASEPAGENAME}}/box
+|name=Lepus
+|imagealt=Lepus.png
+|notrophy=yes
+|summoned=用{{item|Suspicious Looking Egg|icons=n}}召唤
+|
+'''[[{{tr|Lepus}}]]'''是个{{eversions|Lepus}}''{{tr|Terraria}}''独有的{{tr|Easter}}主题 {{tr|boss}}，体型巨大、长得像兔子。用[[{{tr|Easter}}]]期间[[{{tr|Corrupt Bunnies}}]]和[[{{tr|Diseaster Bunny}}|{{tr|Diseaster Bunnies}}]]掉落的[[{{tr|Suspicious Looking Egg}}]]可以将其召出。{{tr|Lepus}}自身死亡时也会掉落{{tr|Suspicious Looking Egg}}。{{tr|Lepus}}会下两种类型的{{tr|Easter}}蛋：小的蛋会孵出{{tr|Diseaster Bunnies}}，大的蛋会孵出另一个弱一些的{{tr|Lepus}}。玩家可以对这些蛋造成伤害并在其孵化之前将其摧毁。由原来的那只{{tr|Lepus}}所下的大蛋中孵出的{{tr|Lepus}}最多可以有 5 只，有了 5 只之后就不会再下大的蛋。只有最后存在的那只{{tr|Lepus}}会掉落物品，其掉落物包括{{tr|Suspicious Looking Egg}}、[[{{tr|Egg Cannon}}]]、和[[{{tr|Boots of Ostara}}]]。
+}}
+
+{{:{{BASEPAGENAME}}/box
+|name=Turkor the Ungrateful
+|imagealt=Turkor the Ungrateful.png
+|notrophy=yes
+|summoned=用{{item|Cursed stuffing|icons=n}}在{{tr|Pet Turkey}}处于活动状态时召唤
+|
+'''[[{{tr|Turkor the Ungrateful}}]]'''是{{eversions|Turkor the Ungrateful}}''{{tr|Terraria}}''所独有的[[{{tr|Thanksgiving}}]]主题 {{tr|boss}}。在激活[[{{tr|Pet Turkey}}]]的情况下可以用[[{{tr|Cursed Stuffing}}]]将其召出。其掉落物包括[[{{tr|Horn o' Plenty}}]]和一些[[{{tr|Feather}}]]。
+}}
+
+== 备注 ==
+* Boss 的分类依如下方式确定：
+** {{tr|Bosses}}：在[[《{{tr|Terraria}}》]]的源代码中 <code>boss = true</code>；
+** {{tr|Mini-bosses}}：其他会掉落{{tr|trophy}}的角色。
+* {{tr|bosses}} 将要生成时出现的[[{{tr|status messages}}]]如下：
+** [[{{tr|Eye of Cthulhu}}]]：''“{{gameText|LegacyMisc.9}}”''
+** [[{{tr|Eater of Worlds}}]]和[[{{tr|Brain of Cthulhu}}]]：打破第一个[[{{tr|Shadow Orb}}]]/[[{{tr|Crimson Heart}}]]后是''“{{gameText|LegacyMisc.10}}”''，打破第二个后是''“{{gameText|LegacyMisc.11}}”''。打破第三个产生的是标准的召唤讯息。
+** [[{{tr|The Destroyer}}]]：''“{{gameText|LegacyMisc.28}}”''
+** [[{{tr|The Twins}}]]：''“{{gameText|LegacyMisc.29}}”''
+** [[{{tr|Skeletron Prime}}]]：''“{{gameText|LegacyMisc.30}}”''
+** [[{{tr|Mechdusa}}]]：''“{{gameText|LegacyMisc.108}}”''
+** [[{{tr|Moon Lord}}]]：''“{{gameText|LegacyMisc.52}}”''
+* 从 [[1.2.3]] 版本开始，对于在更早版本中生成的世界，如果玩家在升级前就已在其中打败所有{{tr|Mechanical Boss}}，这些 {{tr|Boss}} 不会被视为已打败；例如[[{{tr|Plantera's Bulb}}]]不会出现，而[[{{tr|Steampunker}}]]也不会到来。
+* 目前游戏中有 <!--
+-->{{sum|18<!--all platforms-->|1<!--1.4.4-->|1<!--1.4.3-->|2<!--1.4-->|8<!--1.3-->|3<!--1.3.4-->|3<!--Ocram, Lepus, Turkor-->}} 种不同/独特的 {{tr|bosses}}（<!--
+-->{{eicons|1.4.0.1}} {{sum|18<!--all platforms-->|1<!--1.4.4-->|1<!--1.4.3-->|2<!--1.4-->|8<!--1.3-->|3<!--1.3.4-->}} 种 / <!--
+-->{{eicons|Ocram|not=Lepus}} {{sum|18<!--all platforms-->|1<!--Ocram-->}} 种 / <!--
+-->{{eicons|Lepus}} {{sum|18<!--all platforms-->|3<!--Ocram, Lepus, Turkor-->}} 种)。
+* [[{{tr|Torch God}}]]在[[{{tr|Bestiary}}]]中可以使用敌方Boss筛选器筛选。
+* 一些[[{{tr|enemy}}]]特别难打败，但并不被归类为 {{tr|boss}}。
+
+== 成就 ==
+{{achievement|name=Slayer of Worlds}}
+{{achievement|name=Eye on You}}
+{{achievement|name=Worm Fodder}}
+{{achievement|name=Mastermind}}
+{{achievement|name=Sting Operation}}
+{{achievement|name=Boned}}
+{{achievement|name=Still Hungry}}
+{{achievement|name=It's Hard!}}
+{{achievement|name=Torch God}}
+{{achievement|name=Like a Boss}}
+{{achievement|name=Just Desserts}}
+{{achievement|name=Gelatin World Tour}}
+{{achievement|name=Buckets of Bolts}}
+{{achievement|name=The Great Southern Plantkill}}
+{{achievement|name=Temple Raider}}
+{{achievement|name=Lihzahrdian Idol}}
+{{achievement|name=Fae Flayer}}
+{{achievement|name=Fish Out of Water}}
+{{achievement|name=Obsessive Devotion}}
+{{achievement|name=Star Destroyer}}
+{{achievement|name=Champion of Terraria}}
+{{achievement|name=Slippery Shinobi}}
+{{achievement|name=Walk the Plank}}
+{{achievement|name=Tin-Foil Hatter}}
+{{achievement|name=Baleful Harvest}}
+{{achievement|name=Ice Scream}}
+{{achievement|name=Sticky Situation}}
+{{achievement|name=Mecha Mayhem}}
+{{achievement|name=An Eye For An Eye}}
+{{achievement|name=Slimer}}
+{{achievement|name=Challenge Accepted}}
+{{achievement|name=Ophthalmologist}}
+{{achievement|name=Bona Fide}}
+{{achievement|name=Ride The Worm}}
+{{achievement|name=Exterminator}}
+{{achievement|name=Back for Second}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了[[{{tr|Mechdusa}}]]。}}
+{{history|Desktop 1.4.3|添加了[[{{tr|Deerclops}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Queen Slime}}]]和[[{{tr|Empress of Light}}]]。
+** [[{{tr|Martian Saucer}}]]在内部不再视为是 {{tr|boss}}。}}
+{{history|Desktop 1.3.4|加入[[{{tr|Dark Mage}}]]、[[{{tr|Ogre}}]]和[[{{tr|Betsy}}]]。}}
+{{history|Desktop 1.3.0.5|加入[[{{tr|Celestial Sigil}}]]，用于召唤[[{{tr|Moon Lord}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Lunatic Cultist}}]]和{{tr|Moon Lord}}。
+** [[{{tr|Pirate Invasion}}]]、[[{{tr|Martian Madness}}]]和[[{{tr|Lunar Events}}]]有新的{{tr|Mini-bosses}}。
+** 所有常规 Boss 在[[{{tr|Expert Mode}}]]中都变得更加困难，同时掉落新物品。}}
+{{history|Desktop 1.2.4|加入[[{{tr|Duke Fishron}}]]。}}
+{{history|Desktop 1.2.3.1|
+** 假如存在其他 Boss，[[{{tr|Mechanical Bosses}}]] 不再会随机生成（依然可以手工召唤多个 Boss）。
+** 如果没有玩家在地面上，不会生成[[{{tr|Hardmode}}]] {{tr|bosses}}。}}
+{{history|Desktop 1.2.3|
+** 各种 {{tr|Boss}} 变更 和/或 {{tr|Bug}} 修正。
+** {{tr|Mechanical Bosses}} 现在难度轻微提升。
+** 在 {{tr|Boss}} 已经出现之后再次使用 {{tr|Boss}} [[{{tr|summoning items}}]] 不再会将其浪费掉。
+** 修正了在非{{tr|Hardmode world}}中杀掉{{tr|Hardmode}} {{tr|Boss}} 可能会让很多 [[{{tr|NPC}}]] 生成的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.1.2|[[{{tr|Plantera}}]]和[[{{tr|Destroyer}}]]有一些变更。}}
+{{history|Desktop 1.2.1.1|{{tr|Mechanical Bosses}} 不再会于[[{{tr|Pumpkin Moon}}]]期间生成。}}
+{{history|Desktop 1.2.1|{{tr|Hardmode}}下{{tr|mechanical boss}} 的{{tr|summoning item}}掉落几率降低。}}
+{{history|Desktop 1.2.0.3|
+** [[{{tr|Hardmode}}]]中，[[{{tr|The Crimson}}|{{tr|Crimson}}]]、[[{{tr|The Corruption}}|{{tr|Corruption}}]]、和[[{{tr|The Hallow}}|{{tr|Hallow}}]]的蔓延速度现在改为在击杀{{tr|Plantera}}之后变慢，而非击杀任意{{tr|Mechanical Boss}}之后。
+** 轻微提高击杀任一[[{{tr|Mechanical Boss}}]] 后发生[[{{tr|Solar Eclipse}}]]的几率。}}
+{{history|Desktop 1.2|
+** 添加了 4 个 {{tr|Boss}}：[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Queen Bee}}]]、[[{{tr|Plantera}}]]、和[[{{tr|Golem}}]]。
+** 每个 {{tr|Boss}} 都有罕见几率会[[掉落]]一个可放置的 {{tr|Boss}} [[{{tr|trophy}}]]。
+** {{tr|Hardmode bosses}} 有机会自行生成，以帮助玩家推进游戏进程。
+** 现有的{{tr|Hardmode}} {{tr|bosses}} 现在造成的伤害轻微降低，他们的{{tr|health}}也已调低。}}
+{{history|Desktop 1.1|添加了 4 个 {{tr|bosses}}：[[{{tr|Wall of Flesh}}]]、[[{{tr|The Twins}}]]、[[{{tr|The Destroyer}}]]、和[[{{tr|Skeletron Prime}}]]。}}
+{{history|Desktop 1.0.4|添加了[[{{tr|King Slime}}]]。}}
+{{history|Desktop-Release|引入[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]和[[{{tr|Skeletron}}]]。}}
+{{history|Mobile 1.3.0.7|移除了[[{{tr|Lepus}}]]和[[{{tr|Turkor the Ungrateful}}]]。}}
+{{history|Mobile 1.1.6255|添加了{{tr|Turkor the Ungrateful}}。}}
+{{history|Mobile 1.1.91|引入{{tr|Lepus}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+[[Category:{{tr|Boss NPCs}}| ]]
+
+{{language info|en=Bosses}}

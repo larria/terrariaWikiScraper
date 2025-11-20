@@ -1,0 +1,376 @@
+{{#vardefine:hate_icon|[[File:PvP (No Team) (on).png|18x18px|link=]]}}
+{{#vardefine:love_icon|[[File:Heart.png|18x18px|link=]]}}
+{{options/set|item|small=y|class=mirror}}{{eicons/options|small=y}}{{itemlist/options|width=10em}}
+{| class="terraria sortable" width="100%" style="font-size: var(--font-size-s)"
+|-
+! rowspan="3" | {{tr|NPC}}
+! colspan="2" rowspan="2" | {{tr|Biome}}偏好{{source code ref|v=1.4.0.5|name=npcprefs|method=Terraria.GameContent.Personalities.AllPersonalitiesModifier.ModifyShopPrice}}
+! colspan="4" | 关系<ref name="npcprefs" />
+|-
+! colspan="2" | 内部
+! colspan="2" | 外部
+|-
+! 喜欢 / {{#var:love_icon}} 喜爱
+! 反感 / {{#var:hate_icon}} 讨厌
+! 喜欢 / {{#var:love_icon}} 喜爱
+! 反感 / {{#var:hate_icon}} 讨厌
+! 被……所喜欢 / {{#var:love_icon}} 喜爱
+! 被……所反感 / {{#var:hate_icon}} 讨厌
+|-
+| rowspan="2" | {{item|Guide}}
+| rowspan="2" | {{item|Forest}}
+| rowspan="2" | {{item|Ocean}}
+| {{item|Clothier}}
+| '''{{item|Painter}} {{#var:hate_icon}}'''
+| '''{{item|Truffle}} {{#var:love_icon}}'''
+| '''{{item|Pirate}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Zoologist}}
+| {{item|Steampunker}}
+| {{item|Witch Doctor}}
+| {{item|Tavernkeep}}
+|- class=topline
+| rowspan="2" | {{item|Merchant}}
+| rowspan="2" | {{item|Forest}}
+| rowspan="2" | {{item|Desert}}
+| {{item|Golfer}}
+| '''{{item|Angler}} {{#var:hate_icon}}'''
+| '''{{item|Tax Collector}} {{#var:love_icon}}'''
+| '''{{item|Golfer}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Nurse}}
+| {{item|Tax Collector}}
+| {{item|Wizard}}
+| {{item|Party Girl}}
+|- class=topline
+| rowspan="3" | {{item|Zoologist}}
+| rowspan="3" | {{item|Forest}}
+| rowspan="3" | {{item|Desert}}
+| '''{{item|Witch Doctor}} {{#var:love_icon}}'''
+| '''{{item|Arms Dealer}} {{#var:hate_icon}}'''
+| '''{{item|Party Girl}} {{#var:love_icon}}'''
+| '''{{item|Nurse}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Golfer}}
+| rowspan="2" | {{item|Angler}}
+| {{item|Guide}}
+| rowspan="2" | {{item|Cyborg}}
+|- class=topline
+| {{item|Golfer}}
+|- class=topline
+| rowspan="3" | {{item|Golfer}}
+| rowspan="3" | {{item|Forest}}
+| rowspan="3" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| '''{{item|Angler}} {{#var:love_icon}}'''
+| '''{{item|Merchant}} {{#var:hate_icon}}'''
+| '''{{item|Wizard}} {{#var:love_icon}}'''
+| '''{{item|Dryad}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Painter}}
+| rowspan="2" | {{item|Pirate}}
+| {{item|Merchant}}
+| rowspan="2" | {{item|Arms Dealer}}
+|- class=topline
+| {{item|Zoologist}}
+| {{item|Zoologist}}
+|- class=topline
+| rowspan="3" | {{item|Nurse}}
+| rowspan="3" | {{item|The Hallow}}
+| rowspan="3" | {{item|Snow biome}}
+| '''{{item|Arms Dealer}} {{#var:love_icon}}'''
+| '''{{item|Zoologist}} {{#var:hate_icon}}'''
+| '''{{item|Arms Dealer}} {{#var:love_icon}}'''
+| {{item|Clothier}}
+|- class=topline
+| rowspan="2" | {{item|Wizard}}
+| {{item|Dryad}}
+| rowspan="2" | {{item|Merchant}}
+| rowspan="2" | {{item|Witch Doctor}}
+|- class=topline
+| {{item|Party Girl}}
+|- class=topline
+| rowspan="2" | {{item|Tavernkeep}}
+| rowspan="2" | {{item|The Hallow}}
+| rowspan="2" | {{item|Snow biome}}
+| '''{{item|Demolitionist}} {{#var:love_icon}}'''
+| '''{{item|Dye Trader}} {{#var:hate_icon}}'''
+| '''{{item|Demolitionist}} {{#var:love_icon}}'''
+| '''{{item|Angler}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Goblin Tinkerer}}
+| {{item|Guide}}
+| {{item|Pirate}}
+| {{item|Stylist}}
+|- class=topline
+| rowspan="3" | {{item|Party Girl}}
+| rowspan="3" | {{item|The Hallow}}
+| rowspan="3" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| '''{{item|Wizard}} {{#var:love_icon}}'''
+| '''{{item|Tax Collector}} {{#var:hate_icon}}'''
+| {{item|Painter}}
+| {{item|Nurse}}
+|- class=topline
+| '''{{item|Zoologist}} {{#var:love_icon}}'''
+| rowspan="2" | {{item|Merchant}}
+| {{item|Angler}}
+| rowspan="2" | {{item|Steampunker}}
+|- class=topline
+| {{item|Stylist}}
+| {{item|Tax Collector}}
+|- class=topline
+| rowspan="2" | {{item|Wizard}}
+| rowspan="2" | {{item|The Hallow}}
+| rowspan="2" | {{item|Ocean}}
+| '''{{item|Golfer}} {{#var:love_icon}}'''
+| '''{{item|Cyborg}} {{#var:hate_icon}}'''
+| '''{{item|Party Girl}} {{#var:love_icon}}'''
+| '''{{item|Cyborg}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Merchant}}
+| {{item|Witch Doctor}}
+| {{item|Nurse}}
+| {{item|Steampunker}}
+|- class=topline
+| rowspan="2" | {{item|Demolitionist}}
+| rowspan="2" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| rowspan="2" | {{item|Ocean}}
+| '''{{item|Tavernkeep}} {{#var:love_icon}}'''
+| {{item|Arms Dealer}}
+| '''{{item|Tavernkeep}} {{#var:love_icon}}'''
+| '''{{item|Arms Dealer}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Mechanic}}
+| {{item|Goblin Tinkerer}}
+| {{item|Angler}}
+| {{item|Tax Collector}}
+|- class=topline
+| rowspan="2" | {{item|Goblin Tinkerer}}
+| rowspan="2" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| rowspan="2" | {{item|Jungle}}
+| '''{{item|Mechanic}} {{#var:love_icon}}'''
+| '''{{item|Stylist}} {{#var:hate_icon}}'''
+| '''{{item|Mechanic}} {{#var:love_icon}}'''
+| '''{{item|Stylist}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Dye Trader}}
+| {{item|Clothier}}
+| {{item|Tavernkeep}}
+| {{item|Demolitionist}}
+|- class=topline
+| rowspan="3" | {{item|Clothier}}
+| rowspan="3" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| rowspan="3" | {{item|The Hallow}}
+| '''{{item|Truffle}} {{#var:love_icon}}'''
+| '''{{item|Mechanic}} {{#var:hate_icon}}'''
+| rowspan="3" | {{item|Guide}}
+| '''{{item|Mechanic}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Tax Collector}}
+| rowspan="2" | {{item|Nurse}}
+| {{item|Goblin Tinkerer}}
+|- class=topline
+| {{item|Truffle}}
+|- class=topline
+| rowspan="2" | {{item|Dye Trader}}
+| rowspan="2" | {{item|Desert}}
+| rowspan="2" | {{item|Forest}} 
+| {{item|Arms Dealer}}
+| '''{{item|Pirate}} {{#var:hate_icon}}'''
+| '''{{item|Stylist}} {{#var:love_icon}}'''
+| rowspan="2" | '''{{item|Tavernkeep}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Painter}}
+| {{item|Steampunker}}
+| {{item|Goblin Tinkerer}}
+|- class=topline
+| rowspan="3" | {{item|Arms Dealer}}
+| rowspan="3" | {{item|Desert}}
+| rowspan="3" | {{item|Snow biome}}
+| '''{{item|Nurse}} {{#var:love_icon}}'''
+| '''{{item|Demolitionist}} {{#var:hate_icon}}'''
+| '''{{item|Nurse}} {{#var:love_icon}}'''
+| '''{{item|Zoologist}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Steampunker}}
+| rowspan="2" | {{item|Golfer}}
+| rowspan="2" | {{item|Dye Trader}}
+| {{item|Demolitionist}} 
+|- class=topline
+| {{item|Mechanic}}
+|- class=topline
+| rowspan="3" | {{item|Steampunker}}
+| rowspan="3" | {{item|Desert}}
+| rowspan="3" | {{item|Jungle}}
+| '''{{item|Cyborg}} {{#var:love_icon}}'''
+| {{item|Dryad}}
+| {{item|Arms Dealer}}
+| {{item|Guide}}
+|- class=topline
+| rowspan="2" | {{item|Painter}}
+| {{item|Wizard}}
+| rowspan="2" | {{item|Cyborg}}
+| rowspan="2" | {{item|Dye Trader}}
+|- class=topline
+| {{item|Party Girl}}
+|- class=topline
+| rowspan="3" | {{item|Dryad}}
+| rowspan="3" | {{item|Jungle}}
+| rowspan="3" | {{item|Desert}}
+| {{item|Witch Doctor}}
+| '''{{item|Golfer}} {{#var:hate_icon}}'''
+| '''{{item|Painter}} {{#var:love_icon}}'''
+| {{item|Nurse}}
+|- class=topline
+| rowspan="2" | {{item|Truffle}}
+| rowspan="2" | {{item|Angler}}
+| {{item|Witch Doctor}}
+| rowspan="2" | {{item|Steampunker}}
+|- class=topline
+| {{item|Truffle}}
+|- class=topline
+| rowspan="3" | {{item|Painter}}
+| rowspan="3" | {{item|Jungle}}
+| rowspan="3" | {{item|Forest}}
+| '''{{item|Dryad}} {{#var:love_icon}}'''
+| {{item|Truffle}}
+| {{item|Golfer}}
+| rowspan="3" | '''{{item|Guide}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Party Girl}}
+| rowspan="2" | {{item|Cyborg}}
+| {{item|Dye Trader}}
+|- class=topline
+| {{item|Steampunker}}
+|- class=topline
+| rowspan="2" | {{item|Witch Doctor}}
+| rowspan="2" | {{item|Jungle}}
+| rowspan="2" | {{item|The Hallow}}
+| {{item|Dryad}}
+| '''{{item|Truffle}} {{#var:hate_icon}}'''
+| '''{{item|Zoologist}} {{#var:love_icon}}'''
+| '''{{item|Truffle}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Guide}}
+| {{item|Nurse}}
+| {{item|Dryad}}
+| {{item|Wizard}}
+|- class=topline
+| rowspan="2" | {{item|Stylist}}
+| rowspan="2" | {{item|Ocean}}
+| rowspan="2" | {{item|Snow biome}}
+| '''{{item|Dye Trader}} {{#var:love_icon}}'''
+| '''{{item|Goblin Tinkerer}} {{#var:hate_icon}}'''
+| {{item|Party Girl}}
+| '''{{item|Goblin Tinkerer}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Pirate}}
+| {{item|Tavernkeep}} 
+| {{item|Cyborg}}
+| {{item|Pirate}}
+|- class=topline
+| rowspan="3" | {{item|Angler}}
+| rowspan="3" | {{item|Ocean}}
+| rowspan="3" | {{item|Desert}}
+| {{item|Demolitionist}}
+| rowspan="3" | '''{{item|Tavernkeep}} {{#var:hate_icon}}'''
+| '''{{item|Golfer}} {{#var:love_icon}}'''
+| '''{{item|Merchant}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Party Girl}}
+| rowspan="2" | '''{{item|Pirate}} {{#var:love_icon}}'''
+| {{item|Zoologist}}
+|- class=topline
+| {{item|Tax Collector}}
+| {{item|Dryad}}
+|- class=topline
+| rowspan="2" | {{item|Pirate}}
+| rowspan="2" | {{item|Ocean}}
+| rowspan="2" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| '''{{item|Angler}} {{#var:love_icon}}'''
+| '''{{item|Guide}} {{#var:hate_icon}}'''
+| {{item|Stylist}}
+| '''{{item|Dye Trader}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Tavernkeep}}
+| {{item|Stylist}}
+| {{item|Cyborg}}
+| {{item|Golfer}}
+|- class=topline
+| rowspan="2" | {{item|Mechanic}}
+| rowspan="2" | {{item|Snow biome}}
+| rowspan="2" | {{item|Underground}}<br>{{item|Cavern}}<br>{{item|The Underworld}}
+| '''{{item|Goblin Tinkerer}} {{#var:love_icon}}'''
+| '''{{item|Clothier}} {{#var:hate_icon}}'''
+| '''{{item|Goblin Tinkerer}} {{#var:love_icon}}'''
+| '''{{item|Clothier}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Cyborg}}
+| {{item|Arms Dealer}}
+| {{item|Demolitionist}}
+| {{item|Tax Collector}} 
+|- class=topline
+| rowspan="3" | {{item|Tax Collector}}
+| rowspan="3" | {{item|Snow biome}}
+| rowspan="3" | {{item|The Hallow}}
+| '''{{item|Merchant}} {{#var:love_icon}}'''
+| '''{{item|Santa Claus}} {{#var:hate_icon}}'''
+| {{item|Clothier}}
+| '''{{item|Party Girl}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Party Girl}}
+| {{item|Demolitionist}}
+| rowspan="2" | {{item|Angler}}
+| '''{{item|Santa Claus}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Mechanic}} 
+| {{item|Merchant}}
+|- class=topline
+| rowspan="3" | {{item|Cyborg}}
+| rowspan="3" | {{item|Snow biome}}
+| rowspan="3" | {{item|Jungle}}
+| {{item|Steampunker}}
+| '''{{item|Wizard}} {{#var:hate_icon}}'''
+| '''{{item|Steampunker}} {{#var:love_icon}}'''
+| '''{{item|Wizard}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Pirate}}
+| rowspan="2" | {{item|Zoologist}}
+| rowspan="2" | {{item|Mechanic}}
+| rowspan="2" | {{item|Painter}}
+|- class=topline
+| {{item|Stylist}}
+|- class=topline
+| {{item|Santa Claus}}
+| {{item|Snow biome}} {{#var:love_icon}}
+| {{item|Desert}} {{#var:hate_icon}}
+|无
+| '''{{item|Tax Collector}} {{#var:hate_icon}}'''
+|无
+| '''{{item|Tax Collector}} {{#var:hate_icon}}'''
+|- class=topline
+| rowspan="2" | {{item|Truffle}}
+| rowspan="2" | {{item|Glowing Mushroom biome}}
+| rowspan="2" |无
+| '''{{item|Guide}} {{#var:love_icon}}'''
+| '''{{item|Witch Doctor}} {{#var:hate_icon}}'''
+| '''{{item|Clothier}} {{#var:love_icon}}'''
+| '''{{item|Witch Doctor}} {{#var:hate_icon}}'''
+|- class=topline
+| {{item|Dryad}}
+| {{item|Clothier}}
+| {{item|Dryad}}
+| {{item|Painter}} 
+|- class=topline
+| {{item|Princess}}
+| 无
+| 无
+| 喜爱所有人 {{#var:love_icon}}
+| 无
+| 被所有人所喜欢
+| 无
+|}<!--
+-->{{options/reset|item}}{{eicons/options|reset}}{{itemlist/options|reset}}<!--
+--><noinclude><!--
+-->{{language info|en=NPCs/preferences}}<!--
+--></noinclude><!--
+--><references />

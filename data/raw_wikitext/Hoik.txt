@@ -1,0 +1,208 @@
+{{#ev:youtube|bi335VOnBZw|350|right|YouTube 上对 {{tr|hoiks}} 的介绍|frame}}
+{{dablink|{{tr|See also}}：[http://forums.terraria.org/index.php?threads/hoik-guide-rapid-player-npc-etc-transport-using-only-sloped-tiles.1656/ HOIK! <nowiki>[Guide]</nowiki> - Rapid Player/NPC/Etc Transport Using Only Sloped Tiles]}}
+
+'''{{tr|Hoik}}'''是锯齿状的一系列[[{{tr|Hammers}}|斜坡]][[{{tr|blocks}}]]，在中文社区也常称作“半砖”，它可以在长距离内快速地移动实体。
+
+{{note|small=y|paren=y|译注：英文页面中对斜坡有两种不同称呼：sloped tile（斜坡{{tr|tile}}）和 sloped block（斜坡{{tr|block}}）。sloped tile 包括锤击成斜坡的方形{{tr|block}}和锤击成楼梯的{{tr|platform}}；sloped block 只包括锤击成斜坡的方形{{tr|block}}。在 {{tr|Hoik}} 运输系统中用于移位实体的 sloped block 在英文社区中也称为“tooth”（牙齿），此处使用中文社区更常见的“半砖”对应。后文出现的“斜坡{{tr|tile}}”对应 sloped tile，“斜坡{{tr|block}}”对应 sloped block，“半砖”对应 tooth。}}
+
+当{{tr|character}}外观和斜坡{{tr|block}}共用空间时，玩家会立即被移位数个{{tr|tiles}}，这一移位的方向是可预测的。通过一系列有计划地放置的带形状{{tr|block}}，实体将能够被快速地向任何方向长距离移动。水平速度很容易达到每秒 60 或 120 {{tr|tile}}，而竖直速度为每秒 180 {{tr|tile}}，这比许多“合法”的旅行方式都要快得多。
+
+{{tr|Hoiks}} 最常用于快速{{nslink|Guide|旅行}}。它也使得创造无法使用正常游戏特性制造，或用正常特性制造不现实的各种[[{{tr|mechanisms}}]]变得可能，例如快速的二进制计数器。
+
+{{tr|Hoiks}} 自从[[《{{tr|Terraria}}》]]的 [[1.2]] 版本以来就能使用（此版本引入了斜坡{{tr|tiles}}），但其对玩家的功能最初被视为被利用的漏洞。自从 {{eil|1.3}} 版本以来，[[Re-Logic]] 官方承认 {{tr|Hoiks}} 作为游戏“机制”<ref name="cenxhoikdiscord1"/>，这意味着它们不再视为可能会在将来版本中被修复的意外特性，且其功能将在未来继续留在游戏中。<ref name="cenxhoikdiscord2"/>
+
+由 <span class=plainlinks>[https://forums.terraria.org/index.php?members/zerogravitas.96/ ZeroGravitas]</span> 发布的一个{{forums thread|hoik-guide-rapid-player-npc-etc-transport-using-only-sloped-tiles.1656|论坛帖子}}使得 {{tr|Hoik}} 这一术语及其功能在《{{tr|Terraria}}》玩家中流传开来，不过在这之前也有不那么广为人知的利用此功能的方式。此篇文章中的大部分内容都是基于 ZeroGravitas 的研究。
+
+== 《{{tr|Terraria}}》中的移位 ==
+{{tr|Hoiks}} 基于游戏的移位系统。当检测到有{{tr|block}}和实体重叠时，实体将会被移位以解决重叠。对于斜坡{{tr|blocks}}，移位方向取决于由斜坡在{{tr|tile}}中的方向。
+
+游戏会遵循以下规则来决定移位方向：
+* 如果斜坡向上，（若头顶没有{{tr|blocks}}）将实体直接向上移动。
+* 如果斜坡向下，（若脚底没有{{tr|blocks}}）将实体直接向下移动。
+* 如果上述两种情况都被（分别由上方和下方的{{tr|block}}）阻挡，则将实体向侧面（斜坡所朝方向）移动，并无视侧面的任何{{tr|solid blocks}}。
+* 例外：对于在脚的高度的{{tr|blocks}}，向上的移位总是首选。但若有{{tr|block}}正好处于头顶（或按下 {{key|down}}）则会避免这样做。
+
+右侧的图表可视化了这种行为。此图表由通过[[{{tr|Actuator}}|致动]]斜坡{{tr|blocks}}，使其在玩家外观后方激活。在每种情况下，玩家初始都位于中间的 2 个[[{{tr|Glass Block}}]]上。此图表等效显示了将方形的{{tr|tile}}（在玩家后方）[[{{tr|hammer}}|{{tr|hammer}}击]]成所显示的形状的前后变化。
+[[File:Displacement diagram.jpg|thumb|right|500px|可用 {{tr|Hoik}} 的情况由彩色高亮显示。]]
+{{options/set|item|mode=image|maxsize=14px|nolink=y}}
+* 完整的移位，对于创建 {{tr|hoiks}} 有帮助：
+** 竖直移位：{{item|'B' Statue|B}} = 向上 3 {{tr|tile}}，{{item|'D' Statue|D}} = 向上 2 {{tr|tile}}。
+** 水平移位：{{item|'G' Statue|G}} = 向右 2 {{tr|tile}}，{{item|'I' Statue|I}} = 向右 1 {{tr|tile}}，{{item|'K' Statue|K}} = 向右 1 {{tr|tile}}，{{item|'O' Statue|O}} = 向右 2 {{tr|tile}}。
+* 不完全移位的例子，对于创建 {{tr|hoiks}} 无帮助：{{item|'A' Statue|A}}、{{item|'C' Statue|C}}、{{item|'E' Statue|E}}；卡住：{{item|'H' Statue|H}}、{{item|'J' Statue|J}}；无效果：{{item|'L' Statue|L}}、{{item|'P' Statue|P}}；只上升 1 {{tr|tile}}，无法串联向之后的{{tr|hoik}} 设置：{{item|'F' Statue|F}}、{{item|'M' Statue|M}}、{{item|'N' Statue|N}}。
+* 在玩家后方或侧面的任意位置的方形{{tr|blocks}}/半个{{tr|tiles}}没有效果。
+{{options/reset|item}}
+''{{tr|Terraria}}''每一{{tr|tick}}{{tick}}检测碰撞。因此，将数个此种移位连接在一起——每次移位将玩家送到另一个斜坡{{tr|tile}}上——就能够创建一条能够每{{tr|tick}}移位实体一次（即每秒移位 60 次）的“轨道”。这是 {{tr|hoik}} 的一个典型例子。
+{{-}}
+
+== 乘坐 {{tr|Hoik}} ==
+可以通过将玩家的外观放置在第一个半砖前的方式来进入{{tr|hoik}}。这可以通过下列方式完成：
+* 走进锤击成“半个”的方形{{tr|block}}或[[{{tr|platform}}]]。
+* 致动第一个半砖，站在它前方，然后重新激活它。
+* 在第一个半砖的竖直侧放置一个楼梯状{{tr|platform}}、未激活的半砖、或未激活的{{tr|platform}}。游戏的碰撞检测将无视相邻的水平表面。
+* 用[[{{tr|Teleporter}}]]传送到第一个半砖上。
+* 建造另一个将玩家移位到半砖上的 {{tr|hoik}}。
+* 在部分情况下，[[{{tr|Hooks}}]]也可用。
+
+== 竖直 {{tr|Hoik}} 示例 ==
+{{options/set|item|mode=image|maxsize=16px|nolink=y}}
+=== 向上 ===
+[[File:Hoik examples upwards.jpg|thumb|right|750px|向上的 {{tr|hoiks}} 示例。]]
+[[File:Hoik examples upwards (clean).jpg|thumb|right|750px|向上的 {{tr|hoiks}} 示例，去除网格和接线。]]
+
+{{item|'1' Statue|1}}  走上台阶触发的标准电梯。每{{tr|tick}}向上移位 3 {{tr|tiles}}。
+
+{{item|'2' Statue|2}}  用楼梯{{tr|platform}}触发的 {{tr|hoik}} 电梯。
+
+{{item|'3' Statue|3}}  可以在任何一段进入的电梯。要通过楼梯{{tr|platforms}}（并避免[[{{tr|fall damage}}]])，需要在下落时按住 {{key|down}}。
+
+{{item|'4' Statue|4}}  通过致动斜坡{{tr|tile}}来进入。
+
+{{item|'5' Statue|5}}  通过致动第一个半砖触发。
+
+{{item|'6' Statue|6}}  分段式电梯（每次点击上升一段）。对于在两个{{tr|tile}}宽的[[{{tr|hellevator}}]]中的双向使用，必须致动所有半砖。如果在三个{{tr|tile}}宽的竖井中使用，只需致动每个进入点的第一个半砖。
+
+{{item|'7' Statue|7}}  半砖间隔变种：可以留出一个{{tr|tile}}的间隔（如帮助调整准确的开始和结束点）。一个{{tr|tile}}的间隔不能连续使用，否则实体的头部会在第三个半砖上卡住。
+
+{{item|'8' Statue|8}}  半砖宽度变种：向上穿过完全实心的{{tr|block}}行是可能的（最多 2 个{{tr|tile}}厚）。这可以用于将[[{{tr|water}}]]、[[{{tr|lava}}]]、或 [[{{tr|NPCs}}]] 固定在某处。
+
+{{item|'9' Statue|9}}  这一 {{tr|hoik}} 可以通过经过入口或在向左走时按住 {{key|up}} 来进入。
+{{-}}
+=== 向下及双向 ===
+[[File:Hoik examples downwards.jpg|thumb|right|750px|向下及双向的 {{tr|hoiks}} 示例。]]
+[[File:Hoik examples downwards (clean).jpg|thumb|right|750px|向下及双向的 {{tr|hoiks}} 示例，去除网格和接线。]]
+
+; 向下
+
+{{item|'1' Statue|10}}{{item|'0' Statue|10}} 按住 {{key|down}} 缓慢向右穿过楼梯{{tr|platform}}。在边缘仍然要持续按住 {{key|down}}（否则玩家将走到第一个半砖上）。
+
+{{item|'1' Statue|11}}{{item|'1' Statue|11}} 可以在半途进入的 {{tr|hoik}}（暂时没有已知的方式能够不致动首个半砖就能穿过向下的 {{tr|hoik}}，像上方图表中的 {{item|'9' Statue|9}} 一样）。
+
+{{item|'1' Statue|12}}{{item|'2' Statue|12}} 从左侧进入。使用天花板和未激活的斜坡{{tr|block}}触发。类似于向上的 {{tr|hoiks}}，半砖之间能够只有 1 个{{tr|tile}}的竖直间隔，但不能连续使用，且首个间隔必须为 2 {{tr|tiles}}高。
+
+{{item|'1' Statue|13}}{{item|'3' Statue|13}} 除了所有半砖正下方的一行{{tr|tiles}}，其他所有{{tr|tile}}都可以填上{{tr|block}}。
+
+{{item|'1' Statue|14}}{{item|'4' Statue|14}} 使用{{tr|Actuator}}触发。首个半砖下方可以放置{{tr|block}}/{{tr|platform}}，并被致动。首个半砖下方必须为 1 个{{tr|tile}}的间隔，否则玩家只会踩到下一层。
+
+; 双向
+
+{{item|'1' Statue|15}}{{item|'5' Statue|15}} 激活[[{{tr|Switch}}]]来向上/下移动。被致动的向上的半砖（和触发用半砖）允许穿过 2 个{{tr|tile}}宽的竖井进行双向移动。
+
+{{item|'1' Statue|16}}{{item|'6' Statue|16}} 标准的三个{{tr|tile}}宽的双向 {{tr|hoik}}。向下移位会将实体放置在最下方的{{tr|platform}}上。
+
+{{item|'1' Statue|17}}{{item|'7' Statue|17}} 四个{{tr|tile}}宽的竖井，使得两条双向的 {{tr|hoik}} 完全互相独立。
+{{-}}
+
+== 水平 {{tr|Hoik}} 示例 ==
+虽然此处给出的示例中实体均为从左向右移动，反转其布置就可以让实体从右向左移动。只要实体位于 {{tr|Hoik}} 轨道内，除了半砖以外的所有{{tr|tile}}都没有影响。因此穿过完全为实心的地面的水平轨道是可行的。
+
+[[File:Hoik examples horizontal.jpg|thumb|right|750px|水平的 {{tr|hoik}} 示例。]]
+[[File:Hoik examples horizontal (clean).jpg|thumb|right|750px|水平的 {{tr|hoik}} 示例，去除网格和接线。]]
+
+=== 顶部（靠天花板） ===
+所有实体沿着天花板移动，因此无需地板。使用{{tr|Actuator}}触发的方式占地更小，因此首先展示。
+
+{{item|'A' Statue|A}} 腰部高度半砖变种，1 {{tr|tile}}/{{tr|tick}}。
+
+{{item|'B' Statue|B}} 头部高度变种，2 {{tr|tile}}/{{tr|tick}}。致动触发。
+
+{{item|'C' Statue|C}} 头部高度，2 {{tr|tile}}/{{tr|tick}}。使用楼梯{{tr|platform}}向上移位触发。
+
+{{item|'D' Statue|D}} 腰部高度变种，1 {{tr|tile}}/{{tr|tick}}。台阶向上移位触发（可以使用任意长度的向上电梯，只需最后一步将玩家的头部完全靠到天花板上即可）。
+
+=== 底部（靠地板） ===
+所有实体沿着地板移动，因此无需天花板（除了特定的触发例子）。
+
+{{item|'E' Statue|E}} 脚部高度变种，2 {{tr|tile}}/{{tr|tick}}。在到达楼梯{{tr|platform}}前按住 {{key|down}} 来触发（否则会从顶部走过）。
+
+{{item|'F' Statue|F}} 腰部高度半砖，1 {{tr|tile}}/{{tr|tick}}。使用未激活的斜坡{{tr|block}}触发。直接走向它即可触发，因为上方的{{tr|block}}阻止走上顶部。
+
+{{item|'G' Statue|G}} 腰部高度变种，1 {{tr|tile}}/{{tr|tick}}。致动半砖触发。腰部高度要比脚部高度要更好，因为脚部高度会将外观向上推（除非有天花板阻挡）因而需要更精准的定位。
+
+{{item|'H' Statue|H}} 双向，脚部高度，2 {{tr|tile}}/{{tr|tick}}。两侧都可自动触发，只需走向它即可。
+{{item|'I' Statue|I}} 双向，脚部高度，2 {{tr|tile}}/{{tr|tick}}。两侧的触发区域没有天花板，因此触发时需要按住 {{key|down}}，否则玩家将走上顶部。
+{{options/reset|item}}
+{{-}}
+
+== 和其他旅行方式的对比 ==
+{{item|Minecart}}
+* {{tr|Hoiks}} 的最高速度更高，且几乎瞬间就能达到：普通{{tr|Minecart}}速度为 48.4 {{tr|tiles}}/秒；{{tr|Hoik}} 的速度为 60 或 120 {{tr|tiles}}/秒。
+* {{tr|hoiks}} 轨道不太灵活，且本质上不是双向的（双向 {{tr|hoik}} 是可能的，但更加繁琐）。
+* 很难在 {{tr|hoik}} 运行半途中脱离（但若没有天花板的情况下，玩家能够随时离开底部 {{tr|hoik}}）。
+
+{{item|Rope}}
+* {{tr|Hoiks}} 的最高速度更高，且几乎瞬间就能达到：{{tr|Rope}}的上升速度为 30.75 {{tr|tiles}}/秒，下降速度为 38.25 {{tr|tiles}}/秒；竖直 {{tr|hoik}} 在两个方向上的速度均为 180 {{tr|tiles}}/秒。
+* 然而在此速度下，很难在不设置分隔的情况下在正确位置脱离。
+* 需要自行建造中途的进入和脱离点。
+* {{tr|A hoik}} 的前景{{tr|blocks}}可能会阻挡空间。
+
+{{item|Teleporter}}
+* {{tr|Hoiks}} 无需任何花费，且在任何游戏进度下都能使用。
+* 使用 {{tr|hoik}} 不会让玩家消失，因此 [[{{tr|NPCs}}]] 不会被自动归位。
+* {{tr|Hoiks}} 无需很长的，可能干扰其他设备的{{tr|wire}}路径。
+* {{tr|Teleporters}}在几乎所有情况下都更快。
+* 使用 {{tr|hoik}} 会消除动量，因为每次移位都算作和{{tr|tile}}碰撞，因此跑步/{{tr|Minecart}}速度无法在目的地继承。
+* 在长距离内建造 {{tr|hoik}} 极其繁琐，尤其是建造双向旅行 {{tr|hoik}} 时。
+* {{tr|Hoiks}} 不太灵活。
+
+== {{tr|Item}} {{tr|Hoiks}} ==
+<!-- the information from the forums thread linked below can be included here -->
+掉落的{{tr|items}}也可以被 {{tr|hoik}} 移动（即因为和斜坡{{tr|blocks}}重叠而被移位）。虽然{{tr|item}}运输比玩家和生物运输限制更大，但仍然有许多常见的使用情景，如高效的农场（例：自动化[[{{tr|Fallen Star}}]]农场），或是用于[[{{tr|event}}]]的[[{{tr|Heart}}]]/[[{{tr|Mana Star}}]]运输器。
+
+参见此（英文）论坛帖子以更深入阅读：{{forums thread|item-hoiks-guide-video-move-seperate-drops-trawl-fallen-stars-and-more.4140|Item Hoiks! - <nowiki>[Guide + Video]</nowiki> Move & Seperate Drops, Trawl Fallen Stars and More...}}
+
+值得注意的是，当想要使用 {{tr|Hoik}} 移动的物品在屏幕外时，它并不会被 {{tr|Hoik}} 移动。若想要 {{tr|Hoik}} 正常工作，被 {{tr|Hoik}} 移动的物品必须处于屏幕内。
+
+== {{tr|Hoiks}} 的其他用途 ==
+{{tr|Hoiks}}——虽然经常用于物品、{{tr|enemy}}、或玩家运输——也有其他的实用用途，例如单向{{tr|walls}}，{{tr|enemy}}陷阱，以及更多。这些用途通常会包括一种或数种用于其他用途的 {{tr|Hoiks}} 的组合。
+
+=== 水平单向墙 ===
+[[File:Horizontal One-way Wall.gif|thumb|200px|使用{{tr|platforms}}创造水平单向墙。]]
+
+* 当 1 个或更多楼梯[[{{tr|Platforms}}]]按列放置在{{tr|block}}一面时可以创建单向墙。这一单向墙可以被任何实体使用，而玩家在穿过单向墙时则需要按下 {{key
+|down}}。{{tr|Enemies}}必须在向他们下方的目标行进时才能使用这种 {{tr|Hoik}}。
+* 这种方式创造的单向墙能被[[{{tr|Minecarts}}]]使用。
+{{-}}
+
+=== 竖直单向墙 ===
+[[File:Vertical One-way Wall.gif|thumb|120px|用{{tr|platforms}}创建竖直的{{tr|platforms}}。]]
+
+* 可以通过使用至少一个底部{{tr|platform}}（锤击{{tr|platform}} 3 次）来创造一个可以将实体从数行{{tr|block}}下方移动到上方的单向墙。这最多允许向上穿过 3 行{{tr|block}}。不过，部分{{tr|enemies}}可能会无法穿过特定安排的{{tr|block}}寻路。
+{{-}}
+
+=== 兼容{{tr|Mount}}的门 ===
+[[File:Mount Compatible Doorway.gif|thumb|在门上方两侧使用单向墙 {{tr|hoik}} 建造的兼容{{tr|Mount}}的门。]]
+
+* 一种[[{{tr|Skeletron}}]]前的可让[[{{tr|Mounts}}]]通过的门，可以通过在门上方两侧都放置水平单向 {{tr|Hoik}} 来实现。这提供了除了使用[[{{tr|Tall Gate}}]]或是[[{{tr|Mechanisms}}]]（如[[{{tr|Actuator}}]]和[[{{tr|Pressure Plates}}]]）以外的方法，且无需击败[[{{tr|Skeletron}}]]就能使用。这对所有大小的{{tr|mount}}都有效，但较大的{{tr|Mounts}}会需要在门上方放置更多的水平单向 {{tr|Hoik}}。
+** 使用此方式建造的兼容{{tr|Mount}}的门和[[{{tr|Smart Doors}}]]功能不兼容，必须先手动开启{{tr|door}}才能骑乘{{tr|mount}}进入。
+{{-}}
+
+=== {{tr|Hoik Engines}} ===
+[[File:Hoik Engine.gif|thumb|{{tr|A hoik}}{{tr|engine}}示例。]]
+
+* 可以使用自循环的 {{tr|hoik}} 来建造[[{{tr|Skeletron}}]]前的{{tr|wire}}[[{{tr|engine}}]]，也是更快的[[{{tr|Timers}}]]。它可以使用在探索时找到的{{tr|wires and Pressure Plates}}来建造。这对于想要刷[[{{tr|Statues}}]]生成的生物或物品的玩家来说很有用。
+** 这一{{tr|engine}}可以被{{tr|players}}、{{tr|NPCs}}、和部分{{tr|enemies}}激活。
+** 当被玩家使用时，它会持续地快速将玩家在相反方向间移动。相较于其他{{tr|engine}}，由此种移动产生的视觉效果可能并不理想或可取，因为某些玩家可能对快速移动或闪烁的色彩较为敏感。''请谨慎使用。''
+{{-}}
+
+=== {{tr|Block Swap}}{{tr|Platform}} {{tr|Hoiks}} ===
+[[File:Platform hoik 2.gif|thumb|一排用[[{{tr|Block Swap}}]]产生的不正常{{tr|platforms}}组成的 {{tr|hoik}}。]]
+
+* 用{{tr|platforms}}对[[{{tr|Hammers}}|朝下的斜坡{{tr|block}}]]进行[[{{tr|Block Swap}}]]会产生奇怪的，无法使用的{{tr|platforms}}，它们会具有类似 {{tr|hoik}} 的性质。这可以用于建造能够自由触发的 {{tr|hoik}} 线路，无需[[{{tr|actuators}}]]或[[{{tr|wire}}]]。
+{{-}}
+
+== {{tr|Notes}} ==
+* 如果玩家使用[[{{tr|Echo Block}}]]建造 {{tr|hoik}}，视觉上会显示为他们在空气中高速移动。
+* 普通的 {{tr|hoiks}} 可以被玩家、[[{{tr|enemies}}]]、[[{{tr|NPCs}}]]、[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]，和不可见的[[{{tr|Target Dummy}}]]实体使用。
+** 骑乘[[{{tr|Mount}}]]玩家也可以使用 {{tr|hoiks}}，这也包括[[{{tr|Minecart}}]]。由于{{tr|mount}}会增加玩家外观的大小，半砖之间的间隔也需要相应做出调整。
+* 在{{mobile version}}中，{{tr|hoiks}} 可能不会像预期的那样将玩家移位。{{verify}}
+* 部分 {{tr|hoiks}} 在玩家移动速度过快时可能不会生效。
+
+== 参考 ==
+{{reflist|refs=
+<ref name=cenxhoikdiscord1>[https://cdn.discordapp.com/attachments/504236851654033422/563821169049075737/2019-04-05-21-21-35.png Cenx' message] in #terraria-chat-1 on the [https://www.discord.gg/terraria official Terraria discord server] {{small|Apr 5, 2019}}</ref>
+<ref name=cenxhoikdiscord2>[https://cdn.discordapp.com/attachments/504236851654033422/563822982703742979/2019-04-05-21-25-31.png Cenx' message] in #terraria-chat-1 on the [https://www.discord.gg/terraria official Terraria discord server] {{small|Apr 5, 2019}}</ref>
+}}
+
+{{Game mechanics}}
+
+{{language info|en=Hoik}}

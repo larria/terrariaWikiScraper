@@ -1,0 +1,115 @@
+{{patch infobox
+| versions = desktop-console-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 7/9/2015
+| ref = {{forums thread|terraria-1-3-0-4-is-live-changelog-included.24197|{{tr|Terraria}} 1.3.0.4 发布——包含更新日志}}
+}}
+{{tocright}}
+
+'''1.3.0.4''' 补丁修复了大量的 {{tr|bug}}，进行了若干多人模式改进。
+
+== 更改 ==
+* 除了修复了[[{{tr|Medusa}}]]的视线，她现在在石化玩家时会发出声音和粒子。
+* [[{{tr|Cactus Dresser}}]]和[[{{tr|Pumpkin Dresser}}]]现在都需要[[{{tr|Sawmill}}]]来制作。
+* [[骷髅法师旗]]和[[{{tr|Spider Banner}}]]已重新命名，以准确反映它们在战斗中提供的[[{{tr|buff}}]]是针对哪种敌怪。
+* 死前未被任何玩家击中的[[{{tr|Enemies}}]]不再计入计数（即，死于{{tr|Lava}}池的{{tr|enemy}}不计）。
+* 掉落[[{{tr|banner}}]]时，现在会给最后击中敌怪的玩家，而非距离最近的玩家。
+* “[[{{tr|Achievements}}|{{tr|Dye Hard}}]]”现在真的需要所有{{tr|the equipment slots}}都有[[{{tr|dye}}]]了，而非只要{{tr|armor slots}}/{{tr|accessory slots}}。
+* 在修复了[[{{tr|Phantasm}}]]（见下方）之外，还对其进行了进一步的削弱。
+* [[{{tr|Vortex Beater}}]]被略微增强。
+* [[{{tr|Mothron Wings}}]]现在可获得了，在[[{{tr|Plantera}}]]被打败后掉落自[[{{tr|Mothron}}]]。
+* 在[[{{tr|dye plant}}]]的洞穴探险修复（见下方）之外，[[{{tr|Strange Plants}}]]应当更常见了。
+* 如果终点位于同一屏幕区域，则传送不应再使屏幕变黑。
+* 根据所做的对传送和速度的若干修复，持有[[{{tr|Portal Gun}}]]时的最大掉落速度已经变为原来三倍！
+* 除去[[{{tr|Martian Probe}}]]的修复（见下方）之外，{{tr|Martian Probes}}不再能在接近世界中心处生成，且生成几率降低。
+* 自然发生[[{{tr|Solar Eclipse}}]]的几率降低。
+* 添加了 [[Config.json]] {{tr|settings}} “UseSmartAxeAfterSmartPickaxe”，默认关闭。若将其启用，则智能{{tr|Pickaxe}}的优先级会在智能{{tr|Axe}}之上（对于可进行两种挖掘的{{tr|item}}来说）。
+* [[{{tr|Red's Throw}}]] & [[{{tr|Valkyrie Yoyo}}]]现在均获取于{{tr|Red's set}}和{{tr|Lazure's sets}}中，其属性被重新平衡。
+* [[{{tr|Yoraiz0r's Spell}}]]不再算作{{tr|vanity item}}。（这并不是 {{tr|bug}}）
+* [[{{tr|Bloody Spine}}]]现在配方中需要 30 个[[{{tr|Vicious Powder}}]]。
+* 你现在无法从[[{{tr|Moon Lord}}|最终 {{tr|boss}}]] 的怒气中逃离。
+* [[{{tr|Server}}|专用服务器]]现在可以使用 -forcepriority 登录，以覆盖服务器设置文件的进程优先级。
+* 专用服务器现在又可以使用 -ip 来设定其本地 IP 地址了。
+
+== 优化 ==
+* 聊天文本现在在字符串长度为 0 时应当不会再显示。
+* 减少了 Steam 呼叫计数.（应当解决了大部分多人模式中的掉帧问题) 
+* 对取消加入游戏进程做出改进。
+* 降低了多人模式中部分信息包的大小。
+
+== 修复 ==
+* 修正了[[{{tr|Pinky}}]]不会出现在[[{{tr|Lifeform Analyzer}}]]上的问题。
+* 修正[[{{tr|Banner}}]]对近战打击（{{tr|swords}}、{{tr|flails}}、{{tr|axes}}、{{tr|pickaxes}}，等等）不生效的问题。
+* 修复了在多人模式中使用[[{{tr|Solar Tablet}}]]并不会将其消耗的问题。
+* 修复了由[[{{tr|Minecart}}]]生成的[[{{tr|Minecart Track}}|{{tr|tracks}}]]会将路径上的[[{{tr|wire}}]]移除的问题。
+* 修正在多人模式中放置{{tr|banners}}时某些{{tr|banners}}会变成其他{{tr|banners}}的问题。
+* 修复了一个（几乎没被注意到的）{{tr|bug}}：若玩家在多人模式中站定，你可能会看见他们多走一会。
+* 修复了{{tr|cultists}}可在最终 {{tr|boss}} 生成时重生的 {{tr|bug}}。
+* 修正了[[{{tr|Sticky Dynamite}}]]的{{tr|tooltip}}。
+* [[{{tr|Red's Wings}}]]不再让你 “noclip”（穿过{{tr|blocks}}飞行）。
+* 修复了[[{{tr|Fireplace}}]]对于[[{{tr|house}}]]而言不计为有效的光源的问题。
+* 修正了[[{{tr|Frost Moon}}]]/[[{{tr|Pumpkin Moon}}]]在{{tr|multiplayer}}中你超过 ~32000 点后进度条逆增长的问题。
+* 修复了[[{{tr|Tax Collector}}]]多人模式中不收集钱的问题。
+* 修复了[[{{tr|Eye of Cthulhu}}]]在普通模式中造成的伤害太高的问题。
+* 修正了导致地图变黑的问题以及一些与此相关的问题。
+* 修复了可以得到第 6 个{{tr|accessory slot}}已被解锁的新人物的问题。
+* 修正了{{tr|walls}}在相机模式快照下边框不正确的问题。
+* 修复了[[{{tr|Electrified}}]]{{tr|debuff}}可被右键取消的问题。
+* 修复了若干[[{{tr|minimap}}]]中的头部和玩家头部之间的不一致。
+* 修正了若干与{{tr|item tooltips}}有关的笔误。
+* 修复了[[{{tr|Expert Mode}}]]中{{tr|enemy}}发射的可破坏{{tr|projectiles}}缩放比例的问题。
+* 修复了[[{{tr|Solar Flare armor}}|{{tr|Solar shield}}]]的绘制，即使你已经死亡。
+* 修复了特定物品即使在你受到严重群体控制（{{tr|Stoned}}{{note|small=y|paren=y|Stoned，别名 petrified}}、{{tr|frozen}}、等等）依然可以继续使用的问题。
+* 修正了[[{{tr|Skyware Sink}}]]需要[[{{tr|Living Loom}}]]来制作的问题。
+* 修复了{{tr|worms}}在多人模式在死后会把漂浮的头部留下的 {{tr|bug}}（希望如此！）
+* 修复了使用智能光标时的非常稀有的“出界”崩溃问题。
+* 修正了[[{{tr|Shadow Orbs}}]]错误地在[[{{tr|Crimson}}]]世界中生成的问题。
+* 修复[[{{tr|Expert mode}}]]中怪捡起{{tr|coins}}时附近{{tr|items}}消失的问题。
+* 修复了[[{{tr|Familiar Wig}}]]需要{{tr|hair dye}}才能对其应用普通染料的问题。
+* 修复了{{tr|enemies}}被较弱而有较高盔甲穿透的攻击击中时消失的问题（{{tr|boss}} 不掉落战利品袋）。
+* 修复了[[{{tr|Martian Saucer}}]]和[[{{tr|Flying Dutchman}}]]有不可见、不受伤害的部分的问题。
+* 修复了从钓鱼得到的物品无法由高亮系统高亮的问题。
+* 修复了[[{{tr|Fireblossom}}]]开花时无法猛烈发光的问题。
+* 修正了某些[[{{tr|achievements}}]]在{{tr|multiplayer}}中无法获取的问题（现在应该能全部得到了）。
+* 修复了[[{{tr|Bee Keeper}}]]和{{tr|Beetle Might}}在假人上产生效果的问题。
+* 修正了“快速堆叠至附近的宝箱上”在旧的或者装了 Mod 的世界中可能吞掉东西的问题。
+*修正了{{tr|Solar}}[[{{tr|debuff}}]]会蔓延至友方 {{tr|NPC}} 并杀死他们的问题。
+* 修复了高速度允许玩家穿墙的问题。
+* 修正了[[{{tr|Target Dummy}}]]在[[{{tr|Multiplayer}}]]中不可见的问题。
+* 修正了{{tr|fishing achievements}}在 Steam 上未计算或在启动时被重置的问题。
+* 修复了在重命名[[{{tr|chest}}]]时回城会锁定控件直至重启的问题。
+* 修正了猛冲和绳索之间奇怪的交互。
+* 修正了[[{{tr|Phantasm}}]]导致意外高[[{{tr|damage}}]]的 {{tr|bug}}。
+* 修复了[[{{tr|Dye plant}}]]在{{tr|spelunker}}效果下不发光的问题。
+* 修复了[[{{tr|Booster Track}}]]多人模式中无法切换方向的问题。
+* 修复了[[{{tr|Medusa}}]]石化视线之外的玩家的问题。
+* 修复了[[{{tr|Corite}}]]不会朝着无法触及的玩家冲刺的问题。
+* 修复了[[{{tr|Vortex Pillar}}]]和[[{{tr|Lightning Vortex}}]]在无效的地方生成的问题。
+* 修复了[[{{tr|Martian Probe}}]] / [[{{tr|Cultist}}]]在有重要事情发生之时生成的问题（{{tr|boss}} 战、{{tr|invasions}}）
+* 修复了大量变种 {{tr|NPC}} 不掉落旗帜/不计入计数的问题。
+* 修复了[[{{tr|Goblin Archer}}]]不计入计数/不掉落旗帜的问题。
+* 修复了处于{{tr|reverse Gravity}}状态下{{tr|Anti-Gravity Hook}}的控制也逆转了的问题。
+* 修复了[[{{tr|Extractinator}}]]的物品掉落在{{tr|reverse Gravity}}情况下显得很奇怪的问题。
+* 修复了[[{{tr|Moon Lord}}|最终 {{tr|boss}}]] 的身体部分不显示名称的问题。
+* 修复了对于非英语用户[[{{tr|Plantera}}]]的标志信息不会被触发的问题。
+* 修复了在罕见且不走运的情况下无法离开{{tr|settings menu}}的问题。
+* 修复了{{tr|parallax}}未正确加载的问题。
+* 修复了“让{{tr|blocks}}落在门上”的复制 {{tr|bug}}。
+* 修复了{{tr|cultists}}在多人模式中少见的陷入门中的问题。
+* 修复了下落{{tr|blocks}}未将已致动的图格计算在内的问题。
+* （可能）修复了[[{{tr|Treasure Bag}}]]死后消失的问题。
+* 修复了[[{{tr|Portal Gun}}]]的右击可在{{tr|camera mode}}中生效的问题。
+* 修复了粗光标点属于内边缘而不是外边缘的问题。
+* 修复了[[{{tr|Stardust Dragon}}]]大小超出常理的问题。
+* 修复了{{tr|enemies}}以[[{{tr|hardcore}}]]玩家的鬼魂为目标的问题。
+* 修复了{{tr|Martian Probe}}会探测到它上方的玩家的问题。
+* 修复了其他聊天标签错误。
+
+{{patchlist}}
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.3.0.4}}

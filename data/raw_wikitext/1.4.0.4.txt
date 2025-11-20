@@ -1,0 +1,46 @@
+{{patch infobox
+| versions = desktop-console-mobile
+| patchname = 修补程序
+| release = 5/23/2020
+}}
+
+'''1.4.0.4''' 是在 2020 年 5 月 23 日发布的[[{{tr|Desktop Versions}}]]的一个小更新。
+
+== 崩溃修复与性能改进 ==
+* 做了一些优化以提升游戏表现
+* 修复了一些内存管理上的问题
+* 修复了[[{{tr|Lighting mode}}|非彩色模式]]下[[{{tr|lighting}}|光源]]导致崩溃的问题
+* 添加了一个服务器配置设置“slowliquids（缓慢的液体）”，该设置将最大移动液体/快速沉降条件恢复为 1.3.5.3 的设置，默认为关闭。启用此选项将减少可以同时移动的液体量，但可能会减少延迟。
+* 修复了载入特定世界的崩溃问题
+* 修复了 Linux 上[[{{tr|Solar Pillar}}]]怪物的[[{{tr|bestiary}}]]页面崩溃的问题
+
+== 漏洞修复 ==
+* 修复了{{tr|Team Nameplates}}位置错误的问题
+* 修复了{{tr|Team Nameplates}}不再显示受伤的队友的生命值的问题
+* 修复了[[{{tr|multiplayer}}]]服务器可以运行并允许{{tr|players}}加入损坏的世界文件的问题
+* 修复了[[{{tr|Sticky Grenade}}]]，[[{{tr|Sticky Bomb}}]]和[[{{tr|Sticky Dynamite}}]]不总是有粘性的问题
+* 修复了[[{{tr|Block Swap}}]]并替换{{tr|tiles}}时可能保持它们破裂性质的问题
+* 修复了{{tr|Mana}}[[{{tr|Star}}]]掉落率只有正常掉落率的约 20% 的问题
+* 有斜坡阻挡时，“宠物”按钮不再能使玩家浮空并抚摸[[{{tr|NPCs}}#{{tr|Pets}}|{{tr|Town Pet}}]]
+* 修复了在[[{{tr|Journey mode}}]]角色上，[[{{tr|Collector's Edition}}]]的[[{{tr|Carrot}}]]覆盖[[{{tr|Magic Mirror}}]]的问题
+* 修复了[[{{tr|Traveling Merchant}}]]和[[{{tr|Skeleton Merchant}}]]意外地拥有 {{tr|NPC}} [[{{tr|Happiness}}]]的问题
+* 修复了[[{{tr|Enchanted Sundial}}]]造成 FPS 严重下降的问题
+* 修复了[[{{tr|NPC}}]]不正确地坐在[[{{tr|Dynasty Chair}}]]上的问题
+* 修复了很多非血污的物体会被血/血污相关设置隐藏的问题
+* 修复了一些{{tr|Hardmode}}[[{{tr|Dungeon}}]]中的[[{{tr|enemies}}]]在动画中略微进入地板的问题
+* 修复了[[{{tr|Digging Molecart}}]]会挖掘它不应摧毁的{{tr|tiles}}的问题
+* 修复了玩家的地图边框不能正确适配边框颜色的问题
+* 修复了[[{{tr|Lunatic Devote}}|邪教徒旗帜]]和[[{{tr|Red Potion}}]]没有所需研究数量的问题
+* 修复了[[{{tr|Explosives}}]]被记为 [[{{tr|PvP}}]] {{tr|damage}}，导致当玩家被它杀死时不会掉落[[{{tr|coins}}]]的问题
+* 修复了许多[[{{tr|tooltip}}]]的小错误
+* 修复了[[{{tr|Ninja armor}}]]的{{tr|tooltip}}中的一些统一性问题
+* 更新了[[{{tr|Invisibility Potion}}]]的{{tr|tooltip}}
+* 修复了[[{{tr|Bowl of Soup}}]]的{{tr|sprite}}问题
+* 修复了地图顶部全都被{{tr|platform}}覆盖时，会使得[[{{tr|meteor}}]]无法{{tr|spawn}}的问题
+* 修复了一些情况下文本随机获得新行的问题
+
+{{patchlist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.4.0.4}}

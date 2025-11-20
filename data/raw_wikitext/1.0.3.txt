@@ -1,0 +1,61 @@
+{{patch infobox
+| release = 6/2/2011
+| ref = [https://web.archive.org/web/20160604213713/http://www.terrariaonline.com/threads/1-0-3-change-log.19653/ 1.0.3 更新日志]
+}}
+{{tocright}}
+
+== 新添加 ==
+=== 新物品 ===
+* [[{{tr|Black Lens}}]]
+* [[{{tr|Jungle armor}}]]
+* [[{{tr|Sunglasses}}]]
+* [[{{tr|Wizard Hat}}]]
+
+=== 新敌怪 ===
+* [[{{tr|Undead Miner}}]]
+* [[{{tr|Tim}}]]
+
+== 更改 ==
+* 提供额外{{tr|defense}}的{{tr|Set bonus}}现在会正确地和工具提示中所述的数值一致了。
+* 优化了所有{{tr|armor}}的{{tr|inventory icons}}。
+* 优化了所有{{tr|armor}}的图像。
+* 更改了所有{{tr|armor sets}}的图像。
+* 减少了[[{{tr|Molten armor}}]]所提供的总{{tr|defense}}。
+* [[{{tr|Meteor armor}}]]的{{tr|set bonus}}会将[[{{tr|Space Gun}}]]的{{tr|mana cost}}变为 0。
+* 提升了几个{{tr|magic items}}的伤害。
+* [[{{tr|Demolitionist}}]]现在也会在玩家的{{tr|inventory}}中有[[{{tr|Sticky Bomb}}]]和[[{{tr|Grenade}}]]时到达了。
+* 更改了所有[[{{tr|Skeleton}}]]的图像。
+* [[{{tr|Guide}}]]现在拥有受击效果和死亡效果了，他现在会被敌对 {{tr|NPC}} 杀死。
+* {{tr|Trees}}接触到[[{{tr|The Corruption}}]]时将被腐化而不再直接被摧毁了。同时，新的{{tr|corrupt trees}}被净化时也会被还原。
+* 建立服务器[[{{tr|server}}]]不需要显卡支持了。在控制台输入 {{code|help}} 以获取服务器指令列表。
+* 增强了对客户端方面的多人游戏的安全性，这有助于针对修改出来的（broken）{{tr|character}}文件。
+* 现在客户端中有“开服并游玩”选项了，一旦建立，这就会自动连接到你自己的服务器世界。
+* 客户端现在可以连接除了 7777 以外的端口了。
+* [[{{tr|Slime}}]]在{{tr|multiplayer games}}中会更好地被同步了。
+* [[{{tr|Accessories}}]]现在会在玩家间正确地同步了。
+* 于客户端中增加了{{code|-join}}、{{code|-port}}和{{code|-pass}} [[命令行参数]]来启用自动加入服务器。
+* 在窗口模式下可以调整屏幕大小了。
+* 在全屏模式下可以在“选项”菜单中调整分辨率了。
+* 服务器现在会在另一个单独的进程 TerrariaServer.exe 中运行，可以在{{tr|Terraria}}文件夹中找到这个程序。
+* 服务器的最大人数现在可以自定义设置到最多 255 人了。
+* 移除了{{tr|Cobalt Armor}}并代之以{{tr|Jungle Armor}}，但它又在 1.1 中作为{{tr|hardmode armor}}重新加入。
+
+== {{tr|Bug}} 修正 ==
+* 使用 alt+enter 组合键来切换全屏模式不再会打开聊天窗口了。
+* 修复了几个会导致游戏在世界生成过程中崩溃的 {{tr|bugs}}。
+* 修复了一个当玩家把他们的重生点设置在世界边缘时会导致他们卡在“正在接收图格数据”界面的 {{tr|bug}}。
+* 修复了一个阻止[[{{tr|Jungle Seeds}}]]掉落的 {{tr|bug}}。
+* 修正了一个 {{tr|bug}}，它使得服务器将本应是{{tr|lava}}的{{tr|liquid}}发送成{{tr|water}}。
+* 现在使用[[{{tr|Cloud in a Bottle}}]]会正确地重置摔落距离。
+* 玩家不再能在触碰世界顶端时反复进行{{tr|double jump}}。
+* 游戏在尝试连接一个不存在或未开服的服务器时不再崩溃。
+
+== 新 {{tr|bug}} ==
+* [[{{tr|Suspicious Looking Eye}}]]和[[{{tr|Worm Food}}]]在在线游戏中无法正确工作。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.0.3}}

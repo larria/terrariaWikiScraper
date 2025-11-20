@@ -1,0 +1,77 @@
+<includeonly><!--
+
+// register localization info
+-->{{l10n/register|ai-row|en
+|show_npcs=Show $count$ NPCs
+}}<!--
+-->{{l10n/register|ai-row|de
+|show_npcs=$count$ NPCs anzeigen
+}}<!--
+-->{{l10n/register|ai-row|fr
+|show_npcs=Afficher les $count$ PNJs
+}}<!--
+-->{{l10n/register|ai-row|zh
+|show_npcs=显示 $count$ 个 NPC
+}}<!--
+
+
+// eicons
+-->{{#ifeq:{{{eicons|}}}|n|<!-- nothing -->|<!--
+	-->{{#vardefine:ai_eicons|&#32;{{#iferror:{{eicons|small=y|{{{eicons|{{#dplreplace:{{{1|}}}|/\s+AI$/|}}}}}}}}}}}<!-- default: strip " AI" from $1
+-->}}<!--
+
+// list of npcs
+-->{{#vardefine:ai_na|}}<!-- reset var
+-->{{#if:{{{3|}}}|<!--
+	// manual
+	-->{{#vardefine:ai_npcs|{{{3}}}}}<!--
+-->|<!--
+	// automatic
+	-->{{#vardefine:ai_npcs|<!--
+		-->{{#invoke:CargoQuery|list<!--
+            -->| q?tables = NPCs<!--
+			-->| q?fields = nameraw<!--
+			-->| q?groupBy = nameraw<!--
+			-->| q?where = ai="{{{1|}}}"<!--
+			-->| q?limit = 200<!--
+			-->| delimiter = , <!--
+		-->}}<!--
+	-->}}<!--
+	// ($add is a comma-separated list)
+	-->{{#vardefine:ai_npcs|{{#lstuniq:{{#lstjoin:{{#var:ai_npcs}}|,|{{{add|}}}|,|,}}|,|,}}}}<!-- merge them into the automatically generated ones and remove duplicates
+	-->{{#vardefine:_|{{#lstmap:{{{remove|}}}|,|@@@|<esc>{{#vardefine:ai_npcs|{{#lstrm:@@@|{{#var:ai_npcs}}|,|,}}}}</esc>}}}}<!-- remove unwanted, accidental results (those specified in $remove)
+	-->{{#if:{{#lstcnt:{{#var:ai_npcs}}|,}}||<!-- if list of NPCs is empty
+		-->{{#vardefine:ai_na|{{{4|{{na}}}}}}}<!-- set var that suppresses other output and outputs "{{na}}" instead
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:ai_npcs_cnt|{{#lstcnt:{{#var:ai_npcs}}|,}}}}<!-- count NPCs
+
+// output
+-->
+{{!}}- {{#if:{{#var:ai_anchor_{{tr|{{{1|}}}}}}}||id="{{tr|{{{1|}}}}}" {{#vardefine:ai_anchor_{{tr|{{{1|}}}}}|set}}}}<!-- set anchor, only once per page (to skip e.g. the duplicate "Unknown") -->
+{{!}} {{{id|{{autoinc|ai_table_rowID|start=0}}}}}
+{{!}} {{ifexists|{{tr|{{{1|}}}|link=y}}|[[{{tr|{{{1|}}}|link=y}}|{{tr|{{{1|}}}}}]]|{{tr|{{{1|}}}}}}}{{#var:ai_eicons}}<!-- name of the ai and eicons -->
+{{!}} {{{2|}}}<!-- description -->
+{{!}} style="max-width: 450px;" {{!}}<!-- list of npcs
+
+-->{{#var:ai_na|<!-- print {{na}} if there was no result
+	-->{{#vardefine:ai_collapse|{{bool|{{{collapse|{{#ifexpr:{{#var:ai_npcs_cnt}}>35|y}}}}}}}}}<!--
+	-->{{#if:{{#var:ai_collapse}}|{{collapse top|{{l10n|ai-row|show_npcs|$count$={{#var:ai_npcs_cnt}}}}}}}}<!--
+	--><div class="dotlist"><ul><!--
+	-->{{#listmap:list={{#var:ai_npcs}}|sortmode=sort|sortoptions=ncs asc|insep=,|outsep=|token=@@@|pattern=<li><esc>{{eil|@@@}}</esc></li>}}<!-- print sorted list of npcs
+	--></ul></div><!--
+	-->{{#if:{{#var:ai_collapse}}|{{collapse bottom}}}}<!--
+-->}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+Prints a row for the main table. Put the name of the AI as the first unnamed parameter and the description as the second. The first column, the ID, is incremented and printed automatically, but you can use the <code>id</code> parameter to manually set the content of the first column. The automatic ID will not be incremented for that row. The last column, the NPCs of that AI, is generated automatically as well, using [[mw:Extension:Cargo|cargo]]. You can add NPCs by passing a comma-separated list in the <code>add</code> parameter or overwrite it completely by passing a comma-separated list of NPCs as the third unnamed parameter. Unwanted NPCs can be removed by passing a comma-separated list in the <code>remove</code> parameter. Lists that contain more than 35 NPCs will automatically be wrapped in a collapsible box; set <code>collapse=n</code> to prevent this behavior and <code>collapse=y</code> to enforce it. If there are no NPCs set for the last column at all, then {{tl|code=y|na}} will be displayed there, which can be overridden with the fourth unnamed parameter.
+
+The name of the AI is linked automatically if the target page exists. {{tl|eicons}} are appended automatically as well, based on the AI name (e.g. "Etherian Lightning Bug" for "Etherian Lightning Bug AI"). Override those by specifying a target eicons page using the parameter <code>eicons</code> (e.g. <code>eicons=Old One's Army</code>) and prevent eicons entirely by setting <code>eicons=n</code>.
+
+Moreover, the table row has its HTML <code>id</code> attribute set to the AI name, e.g. <code>Demon Eye AI</code>. This facilitates linking to individual rows, like so: <code><nowiki>[[AI#Demon Eye AI]]</nowiki></code>.
+
+{{language info|en=AI/row}}
+</noinclude>

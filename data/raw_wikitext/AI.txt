@@ -1,0 +1,149 @@
+{{notice|在{{tr|Terraria Wiki}} 中，术语“{{tr|NPCs}}”一般是指[[{{tr|NPCs}}|{{tr|Town NPCs}}]]；但是，出于本文的目的，这里它包括了[[{{tr|enemies}}]]和[[{{tr|critters}}]]。}}
+
+'''AI'''（'''人工智能（artificial intelligence）'''）指的是 NPC 展现的行为模式。例如，[[{{tr|Caster AI}}]] 总是传送、射击三次、停顿三秒，然后再次传送。知道敌怪所使用的 AI 能为战斗带来优势，因为能知道敌怪在给定情况下会如何攻击或反应。
+
+另外，为某些 NPC 添加了额外的 AI，比如{{tr|surface}}[[{{tr|slimes}}]]的非进攻性模式、[[{{tr|Eater of Souls}}]]的于玩家周遭盘旋、[[{{tr|Wandering Eye}}]]的加速、以及某些[[{{tr|Fighter AI}}]] {{tr|enemies}}的远程攻击。
+
+在游戏代码中并未给 {{tr|AI}} 命名。所以在这里为它们命名以帮助在 {{tr|wiki}} 中区分它们。大多数 {{tr|AI}} 名称是基于观察到的行为（比如{{tr|Flying AI}}）、{{tr|NPC}} 分组（比如{{tr|Slime AI}}）、或第一个实现此 {{tr|AI}} 的 {{tr|NPC}}（比如{{tr|Demon Eye AI}}）。
+
+有 125 种不同的 AI 类型：
+{| class="terraria lined"
+! width="45px" | ID
+! 名称
+! width="45%" | 描述
+! {{tr|NPCs}}
+{{/row|No AI|不移动。}}
+{{/row|Slime AI|朝一个方向跳跃，在斜坡上会滑下，在水中会漂浮，如果受到伤害或是在夜间则跟随玩家。另一方面，{{tr|Grasshoppers}}，会逃离附近的玩家。|remove=Slime}}
+{{/row|Demon Eye AI|飞行、跟随玩家，以弧形从墙上弹回。}}
+{{/row|Fighter AI|会行走、跳过洞、跟随玩家。它会首先尝试在垂直高度上与玩家对齐。如果没能接触到目标，会退后一点，然后再次尝试。它是《{{tr|Terraria}}》中最常见的 {{tr|AI}}。|add=Spectral Elemental, Diseaster Bunny}}
+{{/row|Eye of Cthulhu AI|在试图停留在玩家上方与召唤[[{{tr|Servant of Cthulhu}}]]之间交替，偶尔会冲向玩家。当生命值低下时会旋转，并开始只会冲向玩家。永远看着玩家。}}
+{{/row|Flying AI|飞行、看着玩家、跟随玩家。|add=Dragon Hornet, Servant of Ocram}}
+{{/row|Worm AI|在地面（和/或空气）中挖掘、穿透物块、跟随玩家。{{tr|Truffle Worm}}则改为逃离玩家。|add=Arch Wyvern}}
+{{/row|Passive AI|半随机行走，跳过坑洞。<br/>在 1.3 更新中，所有城镇 NPC 都能与玩家交谈，并会彼此交谈。每个城镇 NPC 在{{tr|enemy}}接近时都有不同的武器来进行防御。}}
+{{/row|Caster AI|对玩家施放魔法、保持静止、三次施法后传送，如果坠落也会传送。如果受到伤害会停止施法，然后如果放任不管就会传送。}}
+{{/row|Spell AI|直线向玩家移动，能穿透物块。由{{tr|casters}}使用。}}
+{{/row|Cursed Skull AI|试图向着玩家或围绕玩家漂移，在接触到玩家后经常会保持在刚好够不着的距离。|add=Dragon Skull}}
+{{/row|Head AI|试图保持在玩家上方，旋转并偶尔向玩家移动。在白天时会暴怒}}
+{{/row|Skeletron Hand AI|跟随{{tr|the Skeletron head}}，拍打、挥舞、并试图伤害玩家。}}
+{{/row|Plant AI|朝玩家伸出一根{{tr|vine}}、看着玩家。如果未扎根于{{tr|block}}则直接死亡。|add=Dragon Snatcher}}
+{{/row|Bat AI|断断续续地飞向玩家。|add=Arch Demon}}
+{{/row|King Slime AI|朝玩家跳跃，受到伤害时释放[[{{tr|Blue Slime}}]]。{{eicons|1.3.0.1}}当无法接触玩家时传送至玩家处；在[[{{tr|Expert mode}}]]中受到伤害时释放[[{{tr|Spiked Slime}}]]。}}
+{{/row|Swimming AI|来回游动，当玩家在水中时会向玩家移动。{{tr|Goldfish}}、{{tr|Gold Goldfish}}和{{tr|Pupfish}}除外。|add=Orca}}
+{{/row|Vulture AI|站立不动，直到它受到伤害或玩家进入 AI 周边 5 格范围内。随后的行为与{{tr|Flying AI}} 类似。}}
+{{/row|Jellyfish AI|来回漂动，玩家在水中时一下一下小喷发地向玩家移动。}}
+{{/row|Antlion AI|看着玩家，能爬上压在身上的物块，向附近的玩家射出落[[{{tr|sand}}]]。|add=Albino Antlion}}
+{{/row|Spike Ball AI|在拴于枢轴上的链条一端做圆周摆动。}}
+{{/row|Blazing Wheel AI|顺着墙、地板、关闭的门移动。}}
+{{/row|Hovering AI|类似于{{tr|Fighter AI}}，但以漂浮于地面上替代跳跃。|remove=Ghost|add=Ghost (enemy){{!}}Ghost<!-- fix incorrect link -->, Spectral Gastropod}}
+{{/row|Flying Weapon AI|不受重力与图格碰撞机制影响。旋转若干次，随后直接朝着玩家而来。任何伤害都会打断其攻击并迫使其再次旋转。|remove=Enchanted Sword|add=Enchanted Sword (NPC){{!}}Enchanted Sword<!-- fix incorrect link -->, Shadow Hammer}}
+{{/row|Bird AI|站立不动，玩家靠近后飞走。会避开墙与障碍物，当行进路线上有此类物体时会改变行进方向。}}
+{{/row|Mimic AI|站立不动，直到玩家靠近或攻击，随后以不同高度飞跃向玩家。}}
+{{/row|Unicorn AI|在移动时慢慢加速、跳过障碍物。}}
+{{/row|Wall of Flesh AI|附带着肉墙图像的{{tr|Wall of Flesh Mouth}}。水平穿越整个世界。带着二个与其共享生命值的{{tr|Wall of Flesh Eyes}}一起生成。}}
+{{/row|Wall of Flesh Eye AI|绑定到一个实体、看着玩家、发射射弹。受到的总伤害越大，发射的越多。}}
+{{/row|The Hungry AI|类似于{{tr|Plant AI}}，但附着于一个实体。}}
+{{/row|Retinazer AI|时而试图停留在玩家斜上方并缓慢发射射弹，时而试图停留在玩家旁边并非常快速地发射射弹。}}
+{{/row|Spazmatism AI|时而向玩家发射射弹并停留在玩家旁边，时而冲向玩家。}}
+{{/row|Skeletron Prime Head AI|与 {{tr|Head AI}} 相同。}}
+{{/row|Prime Saw AI|偶尔冲向玩家，暴怒时径直向玩家冲来。}}
+{{/row|Prime Vice AI|偶尔冲向玩家，暴怒时非常快速地冲锋。}}
+{{/row|Prime Cannon AI|向上发射{{tr|bombs}}，暴怒时直接向着玩家发射。}}
+{{/row|Prime Laser AI|向玩家发射射弹，暴怒时非常快速地射击。}}
+{{/row|The Destroyer AI|与{{tr|worm AI}} 类似，除了能从身体与尾部发射射弹以及不能在空气中“飞行”。它也会释放[[{{tr|Probe}}]]。}}
+{{/row|Snowman AI|向着玩家又跳又跑而来，类似于{{tr|Fighter AI}}。}}
+{{/row|Tortoise AI|稍微爬行，随后向玩家飞跃。在水中的时候会无限地向着玩家飞跃。}}
+{{/row|Spider AI|能够在背景墙上攀爬，并能穿过平台。仅用于在墙上攀爬时。当没有墙时，列出的这些敌怪无缝转变为使用{{tr|Fighter AI}} 的相应步行变体。}}
+{{/row|Herpling AI|高高跳起并试图落在玩家身上。它们在半空中时能够扫射两侧。}}
+{{/row|Lost Girl AI|当受到伤害、被致移动、或玩家靠太近时变成[[{{tr|Nymph}}]]。}}
+{{/row|Queen Bee AI|时而试图停留在玩家上方同时向下发射射弹或放出[[{{tr|bee}}]]，时而快速来回冲锋。}}
+{{/row|Flying Fish AI|直冲玩家飞来。}}
+{{/row|Golem Body AI|每隔几秒就朝着玩家方向跳跃、发射激光。}}
+{{/row|Golem Head AI|绑定到一个实体。}}
+{{/row|Golem Fist AI|飞向玩家，击中时飞回。}}
+{{/row|Free Golem Head AI|试图来回飞行、朝玩家发射{{tr|projectiles}}。}}
+{{/row|Angry Nimbus AI|试图停留在玩家正上方，并向下发射{{tr|projectiles}}。}}
+{{/row|Spore AI|remove=Spore|add=Plantera{{!}}Spore|在跟随玩家的同时向下漂移，接触时摧毁。}}
+{{/row|Plantera AI|攀附在附近的物块上、追逐玩家、发射射弹与四处弹跳的{{tr|spiky balls}}。}}
+{{/row|Plantera's Hook AI|在钩住物块之前简单地向前移动。}}
+{{/row|Plantera's Tentacle AI|行为与{{tr|Plant AI}} 十分类似，只是绑定于一个特定实体。}}
+{{/row|Brain of Cthulhu AI|不受重力与图格碰撞机制影响，在第一形态时偶尔传送。当所有{{tr|Creepers}}都被杀掉后，开始迅速传送并向玩家移动。}}
+{{/row|Creeper AI|围绕一个实体、向玩家冲锋。}}
+{{/row|Dungeon Spirit AI|直冲玩家而来并获得冲力。发射出偏蓝色的粒子。}}
+{{/row|Mourning Wood AI|朝着玩家移动、停下并直接向玩家发射射弹。}}
+{{/row|Pumpking AI|与{{tr|Head AI}} 十分相似。带着二个{{tr|Pumpking Scythes}}一起生成。}}
+{{/row|Pumpking Scythe AI|与{{tr|Skeletron Hand AI}} 非常相似。}}
+{{/row|Ice Queen AI|飞来飞去，发射大片冰雪{{tr|projectiles}}形成弹幕。}}
+{{/row|Santa-NK1 AI|在地面上移动、停止移动并发射许多不同种类的{{tr|projectiles}}。}}
+{{/row|Elf Copter AI|试图围绕玩家飞行，当它们在视野内时快速地发射子弹。}}
+{{/row|Flocko AI|以高速飞向玩家。}}
+{{/row|Firefly AI|慢慢向任意方向飞行、偶尔发光。}}
+{{/row|Butterfly AI|慢慢向任意方向飞行。}}
+{{/row|Passive Worm AI|顺着地面移动，短暂停留，然后继续移动。会避开墙，当碰到一面墙时会向另一个方向移动。}}
+{{/row|Snail AI|表现的类似于{{tr|Passive Worm AI}}，但会爬上墙而非走开。它可以在天花板上移动，但在此过程中可能会掉下来。}}
+{{/row|Duck AI|在水面上游泳，在陆地上行走。当玩家在附近时会飞走，但只在游泳时飞走。飞行一会儿后会落地。|add=Mallard Duck}}
+{{/row|Duke Fishron AI|冲撞玩家多次，随后召唤实体。在第二形态时，环形飞行并召唤实体。}}
+{{/row|Detonating Bubble AI|飞过空中，追逐玩家，在一定时间后消失。如果成功击中玩家则爆炸并造成伤害。}}
+{{/row|Sharkron AI|按照弧形路径移动，接触到墙或玩家时死亡。}}
+{{/row|Bubble Shield AI|由[[{{tr|Martian Officer}}]]创建，吸收所有伤害。}}
+{{/row|Tesla Turret AI|由[[{{tr|Martian Engineer}}]]在地上构筑。}}
+{{/row|Corite AI|穿过物块，冲向玩家。}}
+{{/row|Rider AI|包括{{tr|Rider}}和相应的{{tr|mount}}，如果二者之一被摧毁另一个依然保持继续攻击。}}
+{{/row|Martian Saucer AI|在玩家周围飞行，向正下方发射{{tr|Death Ray}}，仅当四个{{tr|turrets}}全部被摧毁后才会受到伤害。}}
+{{/row|Moon Lord Core AI|定位在玩家背后，在{{tr|Moon Lord's head}}与手都被打败之前是无法伤害的。}}
+{{/row|Moon Lord Hand AI|游移在玩家的左侧与右侧、张开又合上、发射{{tr|Phantasmal Spheres}}、{{tr|Phantasmal Eyes}}、和{{tr|Phantasmal Bolts}}。生命值耗尽时会生成{{tr|True Eye of Cthulhu}}。}}
+{{/row|Moon Lord Head AI|飞在玩家上方，发射{{tr|Phantasmal Deathray}}和随后的{{tr|Phantasmal Bolts}}，被打败时生成{{tr|True Eye of Cthulhu}}。}}
+{{/row|Martian Probe AI|漂浮在恒定的高度上，当玩家到达附近时变红并飞走，如果它离开屏幕则触发[[{{tr|Martian Madness}}]]事件。}}
+{{/row|True Eye of Cthulhu AI|在{{tr|Moon Lord}}周围飞行，向玩家发射{{tr|Phantasmal Sphere}}、{{tr|Phantasmal Deathray}}、{{tr|Phantasmal Eye}}和{{tr|Phantasmal Bolts}}。}}
+{{/row|Moon Leech Clot AI|从玩家身上前往{{tr|Moon Lord's head}}，如果成功到达嘴部，可以为{{tr|Moon Lord}}恢复 1000 HP。}}
+{{/row|Lunatic Devotee AI|从不移动，全部被击杀则使[[{{tr|Lunatic Cultist}}]]生成。}}
+{{/row|Lunatic Cultist AI|在玩家周围传送，发射{{tr|shadow fireballs}}、{{tr|ice mist}}、{{tr|fireballs}}和闪电球。创建自己的分身并召唤[[{{tr|Phantasm Dragon}}]]和[[{{tr|Ancient Vision}}]]，被打败则触发{{tr|Lunar events}}。}}
+{{/row|Star Cell/Brain Suckler AI|eicons=Star Cell|在玩家周围飞行，缓慢飘向玩家。通常会粘在玩家身上。}}
+{{/row|Ancient Vision AI|在玩家周围飞行，不受重力与{{tr|tile}}碰撞机制影响。}}
+{{/row|Biome Mimic AI|玩家接近前处于被动状态。通过跳跃、快速猛冲、跳到空中并砸向玩家来攻击，忽略{{tr|block}}碰撞。在{{tr|Expert Mode}}中，周期性地“关闭”同时变得免疫伤害且反弹{{tr|projectiles}}。}}
+{{/row|Mothron AI|穿过{{tr|blocks}}飞行，扑向玩家，偶尔生下{{tr|Mothron Egg}}。}}
+{{/row|Mothron Egg AI|不会移动，一会儿后孵出[[{{tr|Baby Mothron}}]]。}}
+{{/row|Baby Mothron AI|从[[{{tr|Mothron Egg}}]]孵出，飞行，扑向玩家。}}
+{{/row|Granite Elemental AI|漂向玩家。在专家模式中受伤时掉到地面上。}}
+{{/row|Target Dummy AI|静止不动，受到伤害时微向后倒并回弹。}}
+{{/row|Flying Dutchman AI|漂浮在玩家左右，4 门大炮全部被摧毁后被击败。}}
+{{/row|Celestial Pillar AI|在原地上下浮动，打败 100 个其{{tr|event enemies}}之后才能伤到它。4 个全部打败之后触发生成{{tr|Moon Lord}}。}}
+{{/row|Mini Star Cell AI|保持静止，最终成长为全尺寸的[[{{tr|star cell}}]]。}}
+{{/row|Flow Invader AI|漂浮在玩家附近，召唤 3 个环绕其身的{{tr|minions}}，向玩家发射{{tr|projectiles}}。}}
+{{/row|Nebula Floater AI|漂浮在玩家附近，召唤 3 个环绕其身的{{tr|minions}}，冲向玩家并在发射激光的同时传送。}}
+{{/row|Unknown|如果玩家距离较远，则快速滚向玩家，否则缓慢接近然后发射[[{{tr|Solar Flare}}]]。}}
+{{/row|Solar Fragment AI|从[[{{tr|Solar Pillar}}]]的顶部生成。生出后向上射出并逐渐落向地面，接触到{{tr|blocks}}或玩家时摧毁。|remove=Solar Fragment|add=Solar Fragment (NPC){{!}}Solar Fragment<!-- fix incorrect link -->}}
+{{/row|Ancient Light AI|由[[{{tr|Lunatic Cultist}}]]发射，一次五个，散射。}}
+{{/row|Ancient Doom AI|由[[{{tr|Expert Mode}}]]中的[[{{tr|Lunatic Cultist}}]]生成，在被打败/召唤时呈十字形发射 4 个{{tr|projectiles}}。}}
+{{/row|Sand Elemental AI|漂浮在玩家周围、向玩家移动、并偶尔放出三个“{{tr|sandnados}}”。受到伤害越多就变得越快。}}
+{{/row|Sand Shark AI|隐藏在沙（及其各种变体）下，偶尔向玩家猛冲。}}
+{{/row|Unknown|具有本 AI 的 {{tr|NPC}} 会直接消失。|<!-- blank for $3 -->|未实现的 NPC (547)<!-- override {{na}} -->}}
+{{/row|Eternia Crystal AI|保持静止、被[[{{tr|Old One's Army}}]]怪作为目标、当其生命值降为 0 时终止{{tr|Old One's Army}}[[{{tr|event}}]]。|remove=Eternia Crystal|add=Eternia Crystal (NPC){{!}}Eternia Crystal<!-- fix incorrect link -->}}
+{{/row|Mysterious Portal AI|生出{{tr|Etherian enemies}}。}}
+{{/row|Attacker AI|eicons=Old One's Army|朝[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]移动并攻击，如果无法触及水晶会漂浮穿透物块。}}
+{{/row|Flying Attacker AI|eicons=Old One's Army|飞在[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]上方，停顿， 随后俯冲攻击。随后重复此循环。}}
+{{/row|Dark Mage AI|慢慢朝着[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]移动。偶尔召唤多个{{tr|Old One's Skeletons}}围绕自身并治疗{{tr|enemies}}。}}
+{{/row|Betsy AI|AI 的行为类似于{{tr|Duke Fishron AI}}。发射{{tr|fireballs}}，少数时候用火焰吐息扫过水晶。}}
+{{/row|Etherian Lightning Bug AI|AI 的行为类似于{{tr|Hovering AI}}。朝它下方反复发射闪电。}}
+{{/row|Fairy AI|向着玩家移动，如果附近没有{{tr|treasure}}则漂浮在玩家周围，如果探测到附近的{{tr|treasure}}就向其移动，然后等待着玩家走到附近，位于{{tr|treasure}}顶部时消失。}}
+{{/row|Windy Balloon AI|生成时附着在一个实体上，伴随附着的实体上下浮动，如果所附着的实体死亡，它会迅速向上飞，如果撞上{{tr|block}}就会死亡。}}
+{{/row|Dragonfly AI|一阵阵地向随机方向飞行，如果玩家靠近则以很快的速度飞走。}}
+{{/row|Ladybug AI|在缓慢向任意方向飞行和在地面上来回行走之间切换。}}
+{{/row|Water Strider AI|在水面上滑行，在地面上跳动。}}
+{{/row|Dreadnautilus AI|在向玩家发射{{tr|blood projectiles}}、冲向玩家并在玩家周围旋转、和召唤[[{{tr|Blood Squid}}|{{tr|Blood Squids}}]]之间循环切换。}}
+{{/row|Seahorse AI|一阵阵地向随机方向游泳。}}
+{{/row|Angry Dandelion AI|不会移动，朝附近的玩家发射{{tr|projectiles}}，但只能顺着风向发射。}}
+{{/row|Empress of Light AI|悬浮在比玩家略高的位置，在多种{{tr|projectile attacks}}和向玩家冲锋之间循环。在生命值剩下一半时会消失再重新出现，并开始更快地在攻击间循环。在白天会暴怒。}}
+{{/row|Queen Slime AI|在跳动、跳起压向玩家、发射{{tr|Regal Gel}}之间循环切换。在剩下一半生命值时长出翅膀，并开始飞向玩家的位置，发射{{tr|Regal Gel}}并且在处于玩家上方时会试图压向玩家。受伤害时会生成{{tr|Crystal Slimes}}、{{tr|Heavenly Slimes}}、和{{tr|Bouncy Slimes}}。}}
+{{/row|Pirate's Curse AI|漂向玩家，会穿透{{tr|blocks}}。}}
+{{/row|Deerclops AI|走向玩家、跳过空隙，当玩家靠近时就召唤{{tr|ice spikes}}，否则投掷{{tr|debris}}，偶尔会咆哮。玩家死亡后并不会消失，直至游戏中过去了 1 天。在[[{{tr|Expert Mode}}]]中会定期召唤{{tr|Shadow Hands}}。}}
+{{/row|DeerclopsLeg AI|eicons=Deerclops|之前被未使用的 <code>[[DeerclopsLeg]]</code> {{tr|NPC}} 所使用。除非绑定到活动的{{tr|Deerclops}}上，否则会立刻消失；绑定状态下，它会吸附在{{tr|Deerclops}}的脚上并随着移动上下摆动。尽管此 {{tr|NPC}} 已经移除，但其 {{tr|AI}} 代码依然保留在游戏中。}}
+{{/row|id=124|Old Shaking Chest AI|挂名，未使用；[[{{tr|Old Shaking Chest}}]]使用{{tr|Slime AI}}。}}
+{{/row|Clumsy Balloon Slime AI|类似于{{tr|Windy Balloon AI}}。}}
+{{/row|id={{na}}|Lepus AI|像[[{{tr|King Slime}}]]一样跳跃、在地面上时生成实体。}}
+{{/row|id={{na}}|Ocram AI|飞来飞去，生成{{tr|minions}}，发射{{tr|lasers}}，并且向玩家冲锋。}}
+{{/row|id={{na}}|Turkor the Ungrateful AI|身体不会移动；头部向玩家冲刺。偶尔会生成更多头部。|Turkor the Ungrateful}}
+|}
+
+{{Game mechanics}}
+
+{{language info|en=AI}}

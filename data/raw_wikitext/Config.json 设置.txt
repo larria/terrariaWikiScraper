@@ -1,0 +1,165 @@
+{{exclusive|desktop=y|mobile=y}}
+[[File:UseExperimentalFeatures in config.png|right]]
+
+'''Config.json''' 是由''{{tr|Terraria}}''创建的文件，主要用于存储通过''{{tr|Terraria}}''的[[{{tr|settings}}]]菜单修改的设置。
+
+Config.json 默认存储在下列位置之一：
+* Windows：<code>%USERPROFILE%\Documents\My Games\Terraria</code>
+* Mac：<code>~/Library/Application support/Terraria</code>
+* Linux：<code>$HOME/.local/share/Terraria</code>
+* Android：<code>/sdcard/Android/data/com.and.games505.TerrariaPaid</code> 或 <code>/storage/emulated/0/Android/data/com.and.games505.TerrariaPaid</code>
+* iOS：<code>浏览 > 我的（设备名） > Terraria</code>
+
+== 隐藏设置 ==
+{{experimental|section=y}}
+除了存储游戏内菜单的设置外，config.json 允许玩家更改尚未添加到游戏菜单的某些设置。更改这些设置需要完全退出''{{tr|Terraria}}''，打开 config.json 文件，编辑想更改的设置，然后保存 config.json 文件并启动''{{tr|Terraria}}''。
+
+=== 游戏玩法 ===
+{| class="terraria lined" width="100%"
+! width=220 | Key 名
+! 默认值
+! 描述
+|-
+| {{code|UseExperimentalFeatures}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，会启用[[:Category:{{tr|Experimental features}}|{{tr|experimental features}}]]。目前没有{{tr|experimental features}}。
+|-
+| {{code|UseSmartCursorForCommonBlocks}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，会为普通{{tr|block}}类型激活[[{{tr|Smart Cursor}}]]（[[1.2.4]] 版本的智能{{tr|block}}放置会被重新启用）。
+|-
+| {{code|SettingsUnlock_WorldEvil}}
+| <code>false</code>
+| 击败[[{{tr|Wall of Flesh}}]]后会将此项设为 <code>true</code>。此设置曾被用来决定玩家是否可以在{{tr|world}}创建菜单中选择{{tr|world evil}}，它在 [[1.4.0.1]] 中被弃用。
+|-
+| {{code|UnlockMusicSwap}}
+| <code>false</code>
+| 进入[[{{tr|Drunk world}}]]后会将此项设为 <code>true</code>。决定玩家是否可以在[[{{tr|Party Girl}}]]处切换[[{{tr|Music|link=y}}#Otherworld|{{tr|Otherworldly music}}]]。
+|}
+
+=== 视觉 ===
+{| class="terraria lined" width="100%"
+! width=220 | Key 名
+! 默认值
+! 描述
+|-
+| {{code|MultiplayerNPCSmoothingRange}}
+| <code>300</code>
+| 在[[{{tr|multiplayer}}]]下，对以像素为单位的范围内的 {{tr|NPC}} 移动进行平滑处理。
+|-
+| {{code|TeamNameplateDistance}}
+| <code>2000</code>
+| {{tr|multiplayer}}下{{tr|team}}成员名称渲染的距离（单位：像素）。如果设为 <code>0</code> 或以下，它们完全不会渲染。
+|-
+| {{code|WaterfallDrawLimit}}
+| <code>1000</code>
+| {{tr|waterfall}}能够显示的最大高度（单位：像素）。
+|-
+| {{code|DisableIntenseVisualEffects}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，[[{{tr|Thunderstorm}}]]时闪电的闪烁效果会被禁用。
+|-
+| {{code|SettingDontScaleMainMenuUp}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，标题界面不会随垂直分辨率而缩放（这是 [[1.4.0.1]] 更新前的行为）。
+|-
+| {{code|FilterLimit}}
+| <code>16</code>
+| 同一时间能开启的最大滤镜数。
+|-
+| {{code|FilterPriorityThreshold}}
+| <code>"VeryLow"</code>
+| 可以被设为<code>"VeryLow"</code>、<code>"Low"</code>、<code>"Medium"</code>、<code>"High"</code>、或<code>"VeryHigh"</code>。比设定等级低级的滤镜不会被渲染。
+|-
+| {{icon/desktop}} {{code|Support4K}}
+| <code>true</code> {{note|paren=y|small=y|在大部分设备上}}
+| 此项被设为 <code>true</code> 时，图像选项中的 4K 分辨率变为可用。
+|}
+
+=== 其他 ===
+{| class="terraria lined" width="100%"
+! width=220 | Key 名
+! 默认值
+! 描述
+|-
+| {{code|WorldRollbacksToKeep}}
+| <code>2</code>
+| 此项被设为 <code>2</code> 或更高时，将启用回滚世界备份。
+|-
+| {{code|SettingBlockGamepadsEntirely}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，无视手柄的控制输入。
+|-
+| {{icon/desktop}} {{code|KeyFavoriteModifier}}
+| <code>"LeftAlt"</code>
+| 设定收藏物品时（除了{{key|use}}以外）还需一同按下的按键。必须为可用的 XNA 按键代码。
+|-
+| {{icon/desktop}} {{code|FlashIconForEvents}}
+| <code>"All"</code>
+| 游戏最小化时，特定情况下会使游戏的任务栏图标闪烁：
+* <code>"Damage"</code>：玩家受到伤害
+* <code>"SpawnOrDeath"</code>：玩家死亡或重生
+* <code>"WorldGen"</code>：完成{{tr|world}}生成
+* <code>"All"</code>：上方任意一项
+* <code>"None"</code>: {{na}} {{note|paren=y|禁用此功能}}
+|-
+| {{icon/desktop}} {{code|CloudSavingDefault}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，新的世界和玩家文件会默认开启云存档。
+|-
+| {{icon/desktop}} {{code|ThrottleWhenInactive}}
+| <code>true</code>
+| 此项被设为 <code>true</code> 时，在游戏窗口不活跃时，游戏只会每 20 毫秒进行一次更新。
+|-
+| {{icon/desktop}} {{code|UseRazerRGB}}
+| <code>true</code>
+| 此项被设为 <code>false</code> 时，会禁用雷蛇（Razer）设备的光效支持。
+|-
+| {{icon/desktop}} {{code|UseCorsairRGB}}
+| <code>true</code>
+| 此项被设为 <code>false</code> 时，会禁用海盗船（Corsair）设备的光效支持。
+|-
+| {{icon/desktop}} {{code|UseLogitechRGB}}
+| <code>true</code>
+| 此项被设为 <code>false</code> 时，会禁用罗技（Logitech）设备的光效支持。
+|-
+| {{icon/desktop}} {{code|UseSteelSeriesRGB}}
+| <code>true</code>
+| 此项被设为 <code>false</code> 时，会禁用赛睿（SteelSeries）设备的光效支持。
+|-
+| {{icon/desktop}} {{code|RGBUpdatesPerSecond}}
+| <code>45.0</code>
+| 光效每秒的更新次数。
+|-
+| {{icon/desktop}} {{code|QuickLaunch}}
+| <code>false</code>
+| 此项被设为 <code>true</code> 时，在主菜单会跳过即时加载（JIT loading）。
+|}
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|添加了 WorldRollbacksToKeep。}}
+{{history|Desktop 1.4.0.3|添加了 DisableIntenseVisualEffects、MultiplayerNPCSmoothingRange、和 TeamNameplateDistance。}}
+{{history|Desktop 1.4.0.1|
+** [[{{tr|Texture Packs}}]]和[[{{tr|World Seeds}}]]不再需要通过 UseExperimentalFeatures 启用。
+** 添加了 UnlockMusicSwap、SettingDontScaleMainMenuUp、SettingBlockGamepadsEntirely、FlashIconForEvents、ThrottleWhenInactive、RGBUpdatesPerSecond、UseRazerRGB、UseCorsairRGB、和 UseLogitechRGB。
+** 移除了 RunningAchievementEnabled。}}
+{{history|Desktop 1.3.5.3|添加了 RunningAchievementEnabled。}}
+{{history|Desktop 1.3.5|添加了 Support4K。}}
+{{history|Desktop 1.3.4.3|修复了 FilterPriorityThreshold 在每次（版本）更新中都会重置的问题。}}
+{{history|Desktop 1.3.4.2|添加了{{tr|Texture Pack}}支持，需通过 UseExperimentalFeatures 启用。}}
+{{history|Desktop 1.3.4|添加了 UseExperimentalFeatures，它可以启用{{tr|World Seeds}}。}}
+{{history|Desktop 1.3.3|添加了 FilterLimit 和 FilterPriorityThreshold。}}
+{{history|Desktop 1.3.2|添加了 SettingsUnlock_WorldEvil。}}
+{{history|Desktop 1.3.1|
+** 大部分此前是隐藏的{{tr|config settings}}现在被加入了游戏菜单中。
+** 添加了 QuickLaunch。}}
+{{history|Desktop 1.3.0.8|添加了 KeyFavoriteModifier。}}
+{{history|Desktop 1.3.0.5|添加了 ReverseUpDownForArmorSetBonuses。}}
+{{history|Desktop 1.3.0.4|添加了 UseSmartAxeAfterSmartPickaxe。}}
+{{history|Desktop 1.3.0.3|添加了 UseSmartWallReplacement、UseSmartCursorForCommonBlocks、DisableLeftShiftTrashCan、HidePasswords、ThickMouseEdges。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+
+{{language info|en=Config.json settings}}

@@ -1,0 +1,458 @@
+{{exclusive|desktop=y}}
+[[File:Razer Chroma Support.mp4|thumb|right|370px|在宣布支持 Razer Chroma 的贴子中展示的视频。<ref name="chroma-support"/>]]
+
+[[《{{tr|Terraria}}》]]具有内置的 '''RGB''' 光效，对支持的{{维基百科|Razer Inc.|Razer|t=雷蛇}}、{{维基百科|Logitech|t=罗技}}、{{维基百科|Corsair Gaming|Corsair|t=美商海盗船}}、和{{维基百科|SteelSeries|t=赛睿}}外置设备生效。
+
+必须安装对应厂商的光效软件，才能让这些效果生效（如：-{zh-cn:雷云（Razer Synapse）/幻彩（Razer Chroma）;zh-tw:Razer Synapse/Razer Chroma;}-、Logitech G Hub、Corsair iCUE、或 SteelSeries Engine）。
+
+== 效果列表 ==
+=== 背景 ===
+大部分背景效果有两种版本：一种供“高细节”外部设备使用，如键盘；另一种供“低细节”外部设备使用，如鼠标、耳机和小键盘。
+
+在下表中，较后列出的效果优先级更高。当多个效果一同激活时，那些不透明的效果会遮挡任何之前的效果。例如，{{tr|Rain}}效果会在大部分效果之上显示，因为它是透明的，但{{tr|Blizzard}}效果（在下表中较后列出，且不透明）将会覆盖它。
+
+{| class="terraria lined sortable"
+! 识别码
+! 出现条件
+! 透明
+! 演示
+|-
+! colspan=4 | 基础层
+|-
+| {{tr|Sky}}
+| 玩家位于[[{{tr|Space}}]]{{tr|layer}}或{{tr|world}}处于[[{{tr|Day and night cycle}}|{{tr|nighttime}}]]
+| align=center | {{no}}
+| [[Image:RGB Sky.gif]]
+|-
+| {{tr|Surface}}
+| 玩家位于[[{{tr|Surface}}]]{{tr|layer}}，且后方没有[[{{tr|Dirt Wall}}]]、[[{{tr|Cave Wall}}]]、或[[{{tr|Rocks Wall}}]]（任何种类，天然的和玩家放置的）。<ref name="dirt-walls"/>
+| align=center | {{no}}
+| [[Image:RGB Surface.gif]]
+|-
+| {{tr|Vines}}
+| 玩家位于[[{{tr|Surface}}]]{{tr|layer}}且后方有[[{{tr|Dirt Wall}}]]、[[{{tr|Cave Wall}}]]、或[[{{tr|Rocks Wall}}]]（任何种类，天然的和玩家放置的）。<ref name="dirt-walls"/>
+| align=center | {{no}}
+| [[Image:RGB Vines.gif]]
+|-
+| {{tr|Underground}}
+| 玩家位于[[{{tr|Underground}}]]{{tr|layer}}
+| align=center | {{no}}
+| [[Image:RGB Underground.gif]]
+|-
+| {{tr|Caverns}}
+| 玩家位于[[{{tr|Cavern}}]]{{tr|layer}}
+| align=center | {{no}}
+| [[Image:RGB Caverns.gif]]
+|-
+| {{tr|Magma}}
+| 玩家位于[[{{tr|Cavern}}]]{{tr|layer}}，且距离{{tr|world}}底部 400 个{{tr|tiles}}以内
+| align=center | {{no}}
+| [[Image:RGB Magma.gif]]
+|-
+| {{tr|Underworld}}
+| 玩家位于[[{{tr|Underworld}}]]
+| align=center | {{no}}
+| [[Image:RGB Underworld.gif]]
+|-
+! colspan=4 | {{tr|Biomes}}层
+|-
+| {{tr|Surface Desert}}
+| 玩家位于[[{{tr|Desert}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Desert.gif]]
+|-
+| {{tr|Surface Jungle}}
+| 玩家位于[[{{tr|Jungle}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Jungle.gif]]
+|-
+| {{tr|Surface Ocean}}
+| 玩家位于[[{{tr|Ocean}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Ocean.gif]]
+|-
+| {{tr|Surface Snow}}
+| 玩家位于[[{{tr|Snow biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Snow.gif]]
+|-
+| {{tr|Surface Mushroom}}
+| 玩家位于[[{{tr|Glowing Mushroom biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Mushroom.gif]]
+|-
+| {{tr|Underground Mushroom}}
+| 玩家位于[[{{tr|Glowing Mushroom biome}}|{{tr|Underground Glowing Mushroom biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Mushroom.gif]]
+|-
+| {{tr|Underground Corruption}}
+| 玩家位于[[{{tr|Underground Corruption}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Corruption.gif]]
+|-
+| {{tr|Underground Crimson}}
+| 玩家位于[[{{tr|Underground Crimson}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Crimson.gif]]
+|-
+| {{tr|Underground Hallow}}
+| 玩家位于[[{{tr|Underground Hallow}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Hallow.gif]]
+|-
+| {{tr|Underground Jungle}}
+| 玩家位于[[{{tr|Underground Jungle}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Jungle.gif]]
+|-
+| {{tr|Underground Ice}}
+| 玩家位于[[{{tr|Ice biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Ice.gif]]
+|-
+| {{tr|Underground Desert}}
+| 玩家位于[[{{tr|Underground Desert}}]]
+| align=center | {{no}}
+| [[Image:RGB Underground Desert.gif]]
+|-
+| {{tr|Surface Hallow}}
+| 玩家位于[[{{tr|Hallow}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Hallow.gif]]
+|-
+| {{tr|Surface Crimson}}
+| 玩家位于[[{{tr|Crimson}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Crimson.gif]]
+|-
+| {{tr|Surface Corruption}}
+| 玩家位于[[{{tr|Corruption}}]]
+| align=center | {{no}}
+| [[Image:RGB Surface Corruption.gif]]
+|-
+| {{tr|Hive}}
+| 玩家在任何[[{{tr|Hive Wall}}]]前方
+| align=center | {{no}}
+| [[Image:RGB Hive.gif]]
+|-
+| {{tr|Meteorite}}
+| 玩家位于[[{{tr|Meteorite (biome)}}|{{tr|Meteorite biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Meteorite.gif]]
+|-
+| {{tr|Temple}}
+| 玩家后方有自然生成的[[{{tr|Lihzahrd Brick Wall}}]]
+| align=center | {{no}}
+| [[Image:RGB Temple.gif]]
+|-
+| {{tr|Dungeon}}
+| 玩家位于[[{{tr|Dungeon}}]]
+| align=center | {{no}}
+| [[Image:RGB Dungeon.gif]]
+|-
+| {{tr|Granite}}
+| 玩家在任何[[{{tr|Granite Wall}}]]前方
+| align=center | {{no}}
+| [[Image:RGB Granite.gif]]
+|-
+| {{tr|Marble}}
+| 玩家在任何[[{{tr|Marble Wall}}]]前方
+| align=center | {{no}}
+| [[Image:RGB Marble.gif]]
+|-
+| {{tr|Gem Cave}}
+| 玩家在天然的{{$|Gemstone Wall}}前方
+| align=center | {{no}}
+| [[Image:RGB Gem Cave.gif]]
+|-
+| {{tr|Shimmer}}
+| 玩家位于[[{{tr|Aether}}]]
+| align=center | {{no}}
+| [[Image:RGB Shimmer.gif]]
+|-
+| {{tr|Corrupt Ice}}
+| 玩家位于{{tr|corrupt}}[[{{tr|Ice biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Corrupt Ice.gif]]
+|-
+| {{tr|Crimson Ice}}
+| 玩家位于{{tr|crimson}}[[{{tr|Ice biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Crimson Ice.gif]]
+|-
+| {{tr|Hallow Ice}}
+| 玩家位于{{tr|hallow}}[[{{tr|Ice biome}}]]
+| align=center | {{no}}
+| [[Image:RGB Hallow Ice.gif]]
+|-
+| {{tr|Corrupt Desert}}
+| 玩家位于{{tr|corrupt}}[[{{tr|Desert}}]]
+| align=center | {{no}}
+| [[Image:RGB Corrupt Desert.gif]]
+|-
+| {{tr|Crimson Desert}}
+| 玩家位于{{tr|crimson}}[[{{tr|Desert}}]]
+| align=center | {{no}}
+| [[Image:RGB Crimson Desert.gif]]
+|-
+| {{tr|Hallow Desert}}
+| 玩家位于{{tr|hallow}}[[{{tr|Desert}}]]
+| align=center | {{no}}
+| [[Image:RGB Hallow Desert.gif]]
+|-
+! colspan=4 | {{tr|Events}}和{{tr|bosses}}层
+|-
+| {{tr|Pumpkin Moon}}
+| [[{{tr|Pumpkin Moon}}]]正在进行
+| align=center | {{no}}
+| [[Image:RGB Pumpkin Moon.gif]]
+|-
+| {{tr|Blood Moon}}
+| [[{{tr|Blood Moon}}]]正在进行，且[[{{tr|Pumpkin Moon}}]]/[[{{tr|Frost Moon}}]]并未发生
+| align=center | {{no}}
+| [[Image:RGB Blood Moon.gif]]
+|-
+| {{tr|Frost Moon}}
+| [[{{tr|Frost Moon}}]]正在进行
+| align=center | {{no}}
+| [[Image:RGB Frost Moon.gif]]
+|-
+| {{tr|Solar Eclipse}}
+| [[{{tr|Solar Eclipse}}]]正在进行
+| align=center | {{no}}
+| [[Image:RGB Solar Eclipse.gif]]
+|-
+| {{tr|Solar Pillar}}
+| {{tr|Player}}在距离[[{{tr|Solar Pillar}}]]中心 4000 {{tr|pixels}}（250 {{tr|tiles}}）以内
+| align=center | {{no}}
+| [[Image:RGB Solar Pillar.gif]]
+|-
+| {{tr|Nebula Pillar}}
+| {{tr|Player}}在距离[[{{tr|Nebula Pillar}}]]中心 4000 {{tr|pixels}}（250 {{tr|tiles}}）以内
+| align=center | {{no}}
+| [[Image:RGB Nebula Pillar.gif]]
+|-
+| {{tr|Vortex Pillar}}
+| {{tr|Player}}在距离[[{{tr|Vortex Pillar}}]]中心 4000 {{tr|pixels}}（250 {{tr|tiles}}）以内
+| align=center | {{no}}
+| [[Image:RGB Vortex Pillar.gif]]
+|-
+| {{tr|Stardust Pillar}}
+| {{tr|Player}}在距离[[{{tr|Stardust Pillar}}]]中心 4000 {{tr|pixels}}（250 {{tr|tiles}}）以内
+| align=center | {{no}}
+| [[Image:RGB Stardust Pillar.gif]]
+|-
+| {{tr|Eye of Cthulhu}}
+| [[{{tr|Eye of Cthulhu}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Eye of Cthulhu.gif]]
+|-
+| {{tr|King Slime}}
+| [[{{tr|King Slime}}]]存活
+| align=center | {{no}}
+| [[Image:RGB King Slime.gif]]
+|-
+| {{tr|Goblin Army}}
+| [[{{tr|Goblin Army}}]]激活
+| align=center | {{no}}
+| [[Image:RGB Goblin Army.gif]]
+|-
+| {{tr|Eater of Worlds}}
+| [[{{tr|Eater of Worlds}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Eater of Worlds.gif]]
+|-
+| {{tr|Brain of Cthulhu}}
+| [[{{tr|Brain of Cthulhu}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Brain of Cthulhu.gif]]
+|-
+| {{tr|Queen Bee}}
+| [[{{tr|Queen Bee}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Queen Bee.gif]]
+|-
+| {{tr|Skeletron}}
+| [[{{tr|Skeletron}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Skeletron.gif]]
+|-
+| {{tr|Wall of Flesh}}
+| [[{{tr|Wall of Flesh}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Wall of Flesh.gif]]
+|-
+| {{tr|Frost Legion}}
+| [[{{tr|Frost Legion}}]]激活
+| align=center | {{no}}
+| [[Image:RGB Frost Legion.gif]]
+|-
+| {{tr|Queen Slime}}
+| [[{{tr|Queen Slime}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Queen Slime.gif]]
+|-
+| {{tr|The Twins}}
+| [[{{tr|Retinazer}}]]或[[{{tr|Spazmatism}}]]存活
+| align=center | {{no}}
+| [[Image:RGB The Twins.gif]]
+|-
+| {{tr|Destroyer}}
+| [[{{tr|The Destroyer}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Destroyer.gif]]
+|-
+| {{tr|Skeletron Prime}}
+| [[{{tr|Skeletron Prime}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Skeletron Prime.gif]]
+|-
+| {{tr|Pirate Invasion}}
+| [[{{tr|Pirate Invasion}}]]激活
+| align=center | {{no}}
+| [[Image:RGB Pirate Invasion.gif]]
+|-
+| {{tr|Plantera}}
+| [[{{tr|Plantera}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Plantera.gif]]
+|-
+| {{tr|Golem}}
+| [[{{tr|Golem}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Golem.gif]]
+|-
+| {{tr|Empress of Light}}
+| [[{{tr|Empress of Light}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Empress of Light.gif]]
+|-
+| {{tr|Old One's Army}}
+| [[{{tr|Old One's Army}}]]激活
+| align=center | {{no}}
+| [[Image:RGB Old One's Army.gif]]
+|-
+| {{tr|Martian Madness}}
+| [[{{tr|Martian Madness}}]]激活
+| align=center | {{no}}
+| [[Image:RGB Martian Madness.gif]]
+|-
+| {{tr|Lunatic Cultist}}
+| [[{{tr|Lunatic Cultist}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Lunatic Cultist.gif]]
+|-
+| {{tr|Duke Fishron}}
+| [[{{tr|Duke Fishron}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Duke Fishron.gif]]
+|-
+| {{tr|Deerclops}}
+| [[{{tr|Deerclops}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Deerclops.gif]]
+|-
+| {{tr|Moon Lord}}
+| [[{{tr|Moon Lord}}]]存活
+| align=center | {{no}}
+| [[Image:RGB Moon Lord.gif]]
+|-
+! colspan=4 | {{tr|Weather}}层
+|-
+| {{tr|Rain}}
+| [[{{tr|Rain}}]]
+| align=center | {{yes}}
+| [[Image:RGB Rain.gif]]
+|-
+| {{tr|Blizzard}}
+| [[{{tr|Blizzard}}]]
+| align=center | {{no}}
+| [[Image:RGB Blizzard.gif]]
+|-
+| {{tr|Sandstorm}}
+| [[{{tr|Sandstorm}}]]
+| align=center | {{no}}
+| [[Image:RGB Sandstorm.gif]]
+|-
+| {{tr|Slime Rain}}
+| [[{{tr|Slime Rain}}]]
+| align=center | {{yes}}
+| [[Image:RGB Slime Rain.gif]]
+|-
+! colspan=4 | 警告层
+|-
+| {{tr|Drowning}}
+| 玩家的{{tr|breath}}条小于其最大值
+| align=center | {{yes}}
+| [[Image:RGB Drowning.gif]]
+|-
+| 快捷键绑定
+| 快捷键绑定菜单栏打开
+| align=center | {{yes}}
+| [[Image:RGB Keybinds.gif]]
+|-
+| {{tr|Lava}}指示
+| 玩家在[[{{tr|lava}}]]中
+| align=center | {{no}}
+| [[Image:RGB Lava Indicator.gif]]
+|-
+| {{tr|Moon Lord}}生成提示
+| {{tr|Moon Lord}}生成倒计时激活
+| align=center | {{no}}
+| [[Image:RGB Moon Lord Spawn.gif]]
+|-
+! colspan=4 | 重要警告层
+|-
+| 低{{tr|health}}
+| 玩家存活，{{tr|health}}低于 50% 时，背包中有治疗药水，<br/>且没有[[{{tr|Potion Sickness}}]]。{{key|heal}} 的绑定键位每半秒会闪烁一次。
+| align=center | {{yes}}
+| [[Image:RGB Low Life.gif]]
+|-
+| {{tr|Death}}
+| 玩家死亡
+| align=center | {{no}}
+| [[Image:RGB Death.gif]]
+|-
+! colspan=4 | {{tr|Menu}}层
+|-
+| 基础
+| 标题界面
+| align=center | {{no}}
+| [[Image:RGB Surface.gif]]
+|-
+| {{tr|Surface Mushroom}}
+| 标题界面，生成 [[drunk world]] 时
+| align=center | {{no}}
+| [[Image:RGB Surface Mushroom.gif]]
+|}
+
+== SteelSeries Engine 事件 ==
+《{{tr|Terraria}}》还支持使用 SteelSeries Engine，添加和玩家的{{tr|life}}，{{tr|mana}}和{{tr|breath}}百分比相关的事件。
+
+== 隐藏设置 ==
+[[Config.json]] 包含一些隐藏的 RGB 相关设置：
+* <code>UseRazerRGB</code>、<code>UseLogitechRGB</code>、<code>UseCorsairRGB</code>、和<code>UseSteelSeriesRGB</code>可用于启用/禁用对特定的厂商外设的支持。
+* <code>RGBUpdatesPerSecond</code> 控制 RGB 的每秒刷新次数。默认值是 45。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了[[{{tr|Deerclops}}]]和[[{{tr|Aether}}]]的{{tr|background}}效果。}}
+{{history|Desktop 1.4.2.2|修复了赛睿支持遵循 <code>UseLogitechRGB</code> 设置而非 <code>UseSteelSeriesRGB</code> 设置的问题。}}
+{{history|Desktop 1.4.1|添加了对赛睿外设和 SteelSeries Engine 事件的支持。}}
+{{history|Desktop 1.4.0.5|RGB 相关的错误日志条目限制会正确地显示出它们是普通的信息而非错误。它也会包含一条提示可将 RGB 禁用的信息。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+
+{{info request|
+* config.json 的隐藏颜色配置
+* 特定按键的高亮效果/高亮颜色
+}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="chroma-support">{{forums thread|razer-chroma-support.57662|Razer Chroma Support}} {{small|{{date|2017|5|12}}}}</ref>
+{{source code ref|v=1.4.4.2|name=dirt-walls|method=Terraria.GameContent.RGB.CommonConditions.Depth.IsPlayerInFrontOfDirtWall}}
+}}
+
+{{Game mechanics}}
+
+{{language info|en=RGB}}

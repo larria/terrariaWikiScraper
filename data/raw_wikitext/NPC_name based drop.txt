@@ -1,0 +1,13 @@
+{{eicons|Resource Pack}}当检查基于名字的 {{tr|NPC drops}}时，所需的 {{tr|NPC}} 名字是硬编码的字符串。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterTownNPCDrops}}因此，游戏的翻译和[[{{tr|Resource Pack}}]]都会影响基于名字的{{tr|item}}掉落：<!--
+-->{{#switch:{{tr|{{BASEPAGENAME}}}}<!--
+-->|{{tr|{{npcinfo|22|name}}}}=如果名字 <code>{{gameText|GuideNames.Andrew|lang=en}}</code> 被翻译或更改成别的东西，{{tr|the Guide}}就无法掉落[[{{tr|Green Cap}}]]；如果{{tr|Resource Pack}}将{{tr|Guide}}的任何可用名字改成 <code>{{gameText|GuideNames.Andrew|lang=en}}</code>，他将会在那个名字被选中时掉落{{tr|Green Cap}}。<!--
+-->|{{tr|{{npcinfo|178|name}}}}=如果名字 <code>{{gameText|SteampunkerNames.Whitney|lang=en}}</code> 被翻译或更改成别的东西，{{tr|the Steampunker}}就无法掉落[[{{tr|Ivy}}]]；如果{{tr|Resource Pack}}将{{tr|Steampunker}}的任何可用名字改成 <code>{{gameText|SteampunkerNames.Whitney|lang=en}}</code>，她将会在那个名字被选中时掉落{{tr|Ivy}}。<!--
+-->|{{tr|{{npcinfo|227|name}}}}=如果名字 <code>{{gameText|PainterNames.Jim|lang=en}}</code> 被翻译或更改成别的东西，{{tr|the Painter}}就无法掉落[[{{tr|Jim's Cap}}]]；如果{{tr|Resource Pack}}将{{tr|Painter}}的任何可用名字改成 <code>{{gameText|PainterNames.Jim|lang=en}}</code>，他将会在那个名字被选中时掉落{{tr|Jim's Cap}}。<!--
+-->|{{tr|{{iteminfo|867|name}}}}=如果名字 <code>{{gameText|GuideNames.Andrew|lang=en}}</code> 被翻译或更改成别的东西，{{tr|Green Cap}}就无法由[[{{tr|Guide}}]]掉落；如果{{tr|Resource Pack}}将{{tr|Guide}}的任何可用名字改成 <code>{{gameText|GuideNames.Andrew|lang=en}}</code>，他将会在那个名字被选中时掉落{{tr|Green Cap}}。<!--
+-->|{{tr|{{iteminfo|4372|name}}}}=如果名字 <code>{{gameText|SteampunkerNames.Whitney|lang=en}}</code> 被翻译或更改成别的东西，{{tr|Ivy}}就无法由[[{{tr|Steampunker}}]]掉落；如果{{tr|Resource Pack}}将{{tr|Steampunker}}的任何可用名字改成 <code>{{gameText|SteampunkerNames.Whitney|lang=en}}</code>，她将会在那个名字被选中时掉落{{tr|Ivy}}。<!--
+-->|{{tr|{{iteminfo|5290|name}}}}=如果名字 <code>{{gameText|PainterNames.Jim|lang=en}}</code> 被翻译或更改成别的东西，{{tr|Jim's Cap}}就无法由[[{{tr|Painter}}]]掉落；如果{{tr|Resource Pack}}将{{tr|Painter}}的任何可用名字改成 <code>{{gameText|PainterNames.Jim|lang=en}}</code>，他将会在那个名字被选中时掉落{{tr|Jim's Cap}}。<!--
+-->}}<!--
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=NPCs/name based drop}}
+</noinclude>

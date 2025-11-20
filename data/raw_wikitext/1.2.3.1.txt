@@ -1,0 +1,83 @@
+{{patch infobox
+| versions = desktop-console-oldgen-mobile-switch-tmodloader
+| patchname = 修补程序
+| release = 2/18/2014
+| ref = [http://web.archive.org/web/20160325164205/http://www.terrariaonline.com/threads/1-2-3-1-changelog.133396/ 1.2.3.1 Changelog]
+}}
+{{tocright}}
+
+'''1.2.3.1''' 补丁修复了一大批 {{tr|bug}}，其中很多都跟 1.2.3 更新有关。
+
+== 平衡性变化 ==
+* [[{{tr|Spectre Hood}}]]不会再提高{{tr|mana}}使用量了。
+* 使得推进[[{{tr|Frost moon}}]]波数略微容易了一些。
+* 使得部分{{tr|frost moon}}怪物射击频率降低，伤害减少。
+
+== 修复 Bug ==
+* 修复了裸露手臂有时盖在一部分时装上面的问题。
+* 修复了[[{{tr|autopause}}]]在{{tr|Chest}}（告示牌编辑也有点问题）重命名方面表现糟糕的问题。
+* 修复了[[{{tr|Brick Layer}}]]和[[{{tr|portable Cement Mixer}}]]在放置物品时不减少堆叠数量的问题。
+* 修复了在世界加载时前缀无法正常设置的问题。
+* 修复了钱币在[[{{tr|Quick Stack}}]]时会消失的问题。
+* 修复了可以用[[{{tr|Quick Stack}}]]刷钱的问题。
+* 修复了以非英语英语开始专用服务器时的崩溃。
+* 修复了[[{{tr|Team Dye}}]]和{{tr|Capes}}一起用会导致崩溃的问题。
+* 修复了地图无法正确绘制[[{{tr|Fireblossom}}]]的问题。
+* 修复了地图把[[{{tr|Water Candle}}]]显示为[[{{tr|Band of Regeneration}}]]的问题。
+* 修复了导致旧版本的地图升级后消失的问题。
+* 修复了[[{{tr|Chest}}]]不能够在 2x1 {{tr|tile}}上放置的问题。原来右侧必须有一个实心{{tr|tile}}才能放置{{tr|chest}}。
+* 修正了几个错别字。
+* 修复了游戏中的选项地图控制部分不像常规控件那样阻止输入的问题。
+* 修复了[[{{tr|Hardcore}}]]角色死后无法打开菜单的问题。
+* 修复了打开带有标志的{{tr|chest}}会锁定{{tr|inventory}}的问题。
+* 修复了在不符合物品售卖要求时，[[{{tr|stylist}}]]的售卖列表上会有一个空位的问题。
+* 修复了[[{{tr|Magnet Sphere}}]]施加{{tr|Venom}}而[[{{tr|Venom Staff}}]]没有施加的问题。
+* 修复了[[{{tr|Familiar Wig}}]]和消失的头发之间的问题。
+* 添加了[[{{tr|Butterfly Bottle}}]]的{{tr|recipes}}。
+* 修复了[[{{tr|Cage}}|{{tr|critter}}{{tr|cages}}]]无动画的问题。
+* 由于图层问题，盾牌和斗篷不能再同时显示。
+* [[{{tr|Gemspark Block}}]]现在作为{{tr|items}}掉落在世界中时会正确发光。
+* 修复了隐藏的{{tr|accessories}}仍然应用其{{tr|dye}}颜色的错误（如果{{tr|wings}}处于隐藏状态但在空中时仍然应用它）。
+* 一次只能装备一对{{tr|wings}}。
+* 不应露出头发的面部{{tr|accessories}}不再露出头发。
+* 修复了[[{{tr|Cthulhu}}]]游戏中的拼写错误。
+* [[{{tr|Mechanical bosses}}]] 在另一{{tr|Mechanical bosses}} 存活时不再随机生成。您仍然可以手动召唤多个{{tr|Mechanical bosses}}。
+* 如果没有玩家在地面上，{{tr|Hardmode}}{{tr|Mechanical bosses}} 将不再生成。
+* 修正了将{{tr|Empty Bucket}}放到{{tr|Mannequin}}上会消耗掉它的问题。
+* 修正了将东西放置到{{tr|Mannequin}}会开始使用玩家物品的变通延迟问题。
+* [[{{tr|Traveling Merchant}}]]不再会在{{tr|lava}}中生成。
+* 修复了获救的 {{tr|NPCs}} 没有任何名字的问题。
+* 修复了[[{{tr|Super Mana Potion}}]]的{{tr|recipe}}。现在可以正确地制造出 15 瓶{{tr|Super Mana Potion}}。
+* 修正了[[{{tr|Stylist}}]]的名字 Esmeralda，去掉了末尾多余的空格。
+* [[{{tr|Platinum coins}}]]现在能够堆叠到 999。
+* 修复了多人游戏中{{tr|tiles}}可能无法正确更新的问题。
+* 修复了[[{{tr|torches}}]]能够被放置在斜坡的错误侧面的问题（这使得它们留在空中）。
+* 修复了{{tr|altars}}、{{tr|pots}}和{{tr|chests}}错误地生成的问题。
+* 修复了[[{{tr|Ice Brick}}]]不与{{tr|snow}}边缘混合的问题。
+* 修复了[[{{tr|Fairy Bell}}]]造成的增益效果破坏快速增益功能的问题。
+* 宝箱不再会在[[{{tr|multiplayer}}]]中失去它们的名字。
+* 修复了当玩家骑着{{tr|mount}}走进天花板时会掉进{{tr|tiles}}的问题。
+* 修复了[[{{tr|Cogs}}]]可能被[[{{tr|Steampunker}}]]商店中的其他物品覆盖的问题。
+* 修复了当你用鼠标右键单击从商店购买物品时{{tr|prefixes}}会丢失的问题。
+* 修复了在反向重力时，长头发会在玩家脚上前部的问题。
+* 修复了[[{{tr|Palladium Pickaxe}}]]和[[{{tr|Palladium Drill}}]]会提示可以开采[[{{tr|Adamantite Ore}}]]和[[{{tr|Titanium Ore}}]]，而实际情况不再如此的问题。
+* [[{{tr|Arcane Rune Wall}}]]现在可用于{{tr|housing}}。
+* 修复了当你穿着提供最大{{tr|mana}}的{{tr|armor}}时，显示{{tr|mana}}的染发效果会使头发变成粉红色的问题。
+* 修复了[[{{tr|capes}}]]在安装时无法正确显示的问题。
+* 修复了在某些世界地图不会被保存的问题。
+* 修复了[[{{tr|Blue Moon}}]]和[[{{tr|Harpoon}}]]在玩家附近有隐形命中框的问题。
+* 修复了使用[[{{tr|flower of frost}}]]时[[{{tr|frostburn}}]]不会在 pvp 中产生的问题。
+* 修复了在放置[[{{tr|lever}}]]后会立即被破坏的问题。
+* 修复了[[{{tr|Queen Statue}}]]和[[{{tr|King Statue}}]]不会传送{{tr|stylist}}和{{tr|traveling merchant}}的问题。
+* 修复了上了油漆的{{tr|tiles}}不会在地图上正确显示的问题。
+* 修复了[[{{tr|Steampunk Work Bench}}]]无法制作的问题。
+* 修复了你可以同时让[[{{tr|Fairy Bell}}]]和其它[[{{tr|light pets}}]]出现的问题。
+* 修复了论坛上指出的一些语言问题。
+* 修复了[[{{tr|Extendo Grip}}]]让你打开箱子后会立即再次关闭它的问题。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+
+{{language info|en=1.2.3.1}}

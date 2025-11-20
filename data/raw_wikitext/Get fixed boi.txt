@@ -1,0 +1,168 @@
+{{exclusive|1.4.4}}
+{{about|也被称为“天顶”（Zenith）的{{tr|the secret world seed}}|游戏末期的{{tr|melee weapon}}|{{tr|Zenith}}}}
+[[File:Getfixedboiworld.png|450px|thumb|Get fixed boi [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+
+'''Get fixed boi''' 是一个[[{{tr|Secret world seeds}}]]。它结合了许多其他{{tr|secret world seeds}}的特性。它也被 [[Re-Logic]] 在更新日志和源代码中称为 '''Everything'''{{source code ref|v=1.4.4.9|field=Terraria.WorldGen.everythingWorldGen}} 和 '''Zenith'''{{source code ref|name=zenithWorld|v=1.4.4.9|field=Terraria.Main.zenithWorld}}。
+
+下列{{tr|seeds}}可用于生成 Get fixed boi {{tr|world}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|get fixed boi}}|{{code|getfixedboi}}}}
+
+== 从其他{{tr|seeds}}处继承的特征 ==
+=== [[Drunk world]] ===
+* 此{{tr|seed}}包含了两种[[{{tr|Evil biome}}]]。
+* [[{{tr|Party Girl}}]]是最初生成的 {{tr|NPCs}} 之一。
+* 在此{{tr|Seed}}中独有的{{tr|items}}，如[[{{tr|Moon Lord Legs}}]]和[[{{tr|Red Potion}}]]，可以在{{tr|chests}}中生成。
+* [[{{tr|Dungeon}}]]会在某棵[[{{tr|Living Tree}}]]下生成。
+* [[{{tr|Jungle}}]]和[[{{tr|Snow biome}}]]生成在世界的同一侧。
+* 同一级别的两种[[{{tr|Ores}}]]都能生成。
+* [[{{tr|Living Mahogany Tree}}]]可以在{{tr|Underground}}的任何位置生成，而非仅是{{tr|Jungle}}。
+* [[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]变得更大。
+* [[{{tr|Party Girl}}]]有将{{tr|music}}改为[[{{tr|Terraria: Otherworld}}]]{{tr|music}}的选项。
+
+=== [[Not the bees]] ===
+* [[{{tr|Larva}}]]和[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]在世界各处生成。{{tr|Bee Hives}}更大。
+* {{tr|Underground layer}}中的大部分{{tr|tiles}}被替换成和{{tr|bee}}相关的{{tr|tiles}}，上半部分被[[{{tr|Hive|link=y}}|{{tr|Hive}}]]替换，下半部分被[[{{tr|Crispy Honey Block}}]]替换。
+** 和 Not the bees {{tr|seed}}一样，{{tr|the Hive}}层不会影响到[[{{tr|Jungle}}]]，而{{tr|Crispy Honey Block}}层在{{tr|Jungle}}变为[[{{tr|Glowing Mushroom biome}}]]。
+* [[{{tr|Underground}}]]{{tr|layer}}中的所有[[{{tr|water}}]]被[[{{tr|Honey}}]]替代。
+
+=== [[For the worthy]] ===
+* [[{{tr|Trees}}]]和[[{{tr|Pot}}]]可能会掉落点燃的{{tr|bombs}}。
+* 大部分 [[{{tr|boss}}]] 和{{tr|enemies}}保留 For the Worthy {{tr|seed}}中的难度更改。
+** [[{{tr|Prime Cannon}}]]发射的{{tr|Bombs}}不会破坏{{tr|blocks}}。
+* {{tr|Enemies}}的大小会有所浮动。
+* {{tr|Water}}池可能会被替换为{{tr|lava}}。
+* 挖掘[[{{tr|Ash Block}}]]有时会引起临近的{{tr|Ash Blocks}}坍塌（受{{tr|gravity}}影响），与[[{{tr|Silt}}]]相似。此行为与[[{{tr|Cracked Dungeon Bricks}}]]的行为非常类似。
+* 所有的[[{{tr|Chests}}]]（{{tr|Dungeon}}中的{{tr|Chests}}除外）都有 {{chance|1/45}} 几率包含一个[[{{tr|Angel Statue}}]]而非原本的第一个、也是通常情况下最有价值的物品。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.AddBuriedChest}}
+* {{tr|players}}掉落的[[{{tr|Tombstone}}]]会造成伤害。
+* [[{{tr|Boulder}}]]在破碎时会分裂为 2-4 个{{tr|Mini Boulders}}，造成 75% {{tr|base damage}}。
+* [[{{tr|Black Recluse}}]]和[[{{tr|Jungle Creeper}}]]的{{tr|Web Spit projectiles}}在消失时会在 13×13 的矩形范围内随机放置[[{{tr|Cobweb}}]]。
+* 玩家在击败[[{{tr|Skeletron}}]]前无法看到[[{{tr|Wire}}]]。
+* {{tr|Crispy Honey Blocks}}在接触时会造成[[{{tr|Burning}}]]，在被采掘时放出[[{{tr|lava}}]]。
+* 所有[[{{tr|Floating Islands}}]]都是{{tr|Corrupt}}/{{tr|Crimson}}的，且所有{{tr|Skyware chests}}被替换为{{tr|Locked Golden Chests}}。它们需要用[[{{tr|Golden Key}}]]解锁。
+* 此{{tr|The seed}}会将[[{{tr|Difficulty}}#世界模式|{{tr|world difficulty}}]]提高一级。{{tr|Classic worlds}}视为{{tr|Expert worlds}}，{{tr|Expert}}视为{{tr|Master}}，{{tr|Master}}视为“{{gameText|UI.Legendary}}”。这也让更高难度的{{tr|loot}}能够掉落（如[[{{tr|Treasure Bags}}]]能在{{tr|Classic}} Get fixed boi {{tr|worlds}}中掉落）。
+
+=== [[Celebrationmk10]] ===
+* [[{{tr|Princess}}]]和[[{{tr|Steampunker}}]]在最初生成的 {{tr|NPCs}} 之中。
+* [[{{tr|Princess}}]]会出售稀有{{tr|items}}。
+* [[{{tr|Glowing Mushroom biome}}]]会被漆成彩虹色。
+* 一场[[{{tr|Party}}]]会在世界创生时开始。
+* [[{{tr|Hearts}}]]和[[{{tr|Stars}}]]会有总和{{chance|2/3}}、分别{{chance|1/3}}的概率，以其季节性变种生成。
+* [[{{tr|Underground Cabin}}]]会被漆成彩虹色。
+* [[{{tr|Pyramid}}]]{{tr|chests}}包含[[{{tr|Pharaoh's set}}]]以及[[{{tr|Sandstorm in a Bottle}}]]或[[{{tr|Flying Carpet}}]]两者之一。
+* [[{{tr|Jungle Mimic}}]]和[[{{tr|Golden Slime}}]]能够生成。
+* 玩家死亡时会迸发出{{tr|confetti}}。
+* 在[[{{tr|the Aether}}]]{{tr|biome}}附近会生成[[{{tr|Shimmer}}]]池。
+* 和 Celebrationmk10 {{tr|seed}}不同，{{tr|chest items}}不会保证有好的[[{{tr|modifier}}]]。
+* [[{{tr|Blood Moon}}]]发生几率由 {{chance|1/9}} 提升至 {{chance|1/6}}。
+* [[{{tr|Rod of Discord}}]]的掉落几率由 {{chance|1/500}} 提升至 {{chance|1/100}}。
+* [[{{tr|Wizard Hat}}]]会提供一个额外[[{{tr|minion slot}}]]。
+* [[{{tr|Traveling Merchant}}]]会比普通情况多出售 1 件{{tr|item}}（不同于会多出售 2 件{{tr|item}}的 Celebrationmk10）。{{source code ref|v=1.4.4.9|method=Terraria.Chest.SetupTravelShop}}
+
+=== [[The Constant]] ===
+* [[{{tr|The Constant}}]] {{tr|seed}}中的[[{{tr|Hunger}}]]机制被移植了过来。
+** 不过，{{tr|debuffs}}的{{tr|duration}}由 {{duration|300}} 提升至 {{duration|480}}。
+* 在黑暗中停留时间过长，会使{{tr|the player}}受到{{tr|damage}}。
+* 在 The Constant 中能找到的皱曲洞穴能够生成（但比 {{tr|The Constant}} {{tr|seed}}中的生成频率低）。
+* 当玩家死亡时，会播放来自《{{tr|Don't Starve}}》人物的受伤音效。和 {{tr|The Constant}} {{tr|seed}}不同，玩家受伤时不会播放这些音效，仅在死亡时播放。
+* 玩家接触或砍伐[[{{tr|Cacti}}]]时会受到伤害。
+
+=== [[Don't dig up]] ===
+* {{tr|player}}会在[[{{tr|Underworld}}]]中生成。
+* 保留此{{tr|seed}}对{{tr|Underworld}}的变更（包括更少的[[{{tr|lava}}]]、更多的[[{{tr|Ash tree}}]]，等等）。
+* {{tr|world}}各层次的顺序在此{{tr|seed}}中保持不变。
+* [[{{tr|Tax Collector}}]]是最初生成的 {{tr|NPCs}} 之一。
+* 取消了 {{tr|The NPC}} [[{{tr|Happiness}}]]系统，价格修正系数将固定为 100%，并且移除了对话窗口中的“{{gameText|UI.NPCCheckHappiness}}”按钮。
+* 会启用[[Don't dig up#武器进度调换|武器进度调换]]。
+* {{tr|The surface}}有着更低的{{tr|gravity}}，如果{{tr|players}}离开地图的上方便会死亡。 
+* [[{{tr|Fallen Stars}}]]在{{tr|day}}不会消失。
+** 天然的{{tr|Falling Stars}}在撞击时不会掉落{{tr|Fallen Stars}}，且能够伤害玩家。
+* 夜间的 {{tr|bosses}} 可以在一天中的任何时间生成，且不会因为时间变化而消失。
+* [[{{tr|Lava}}]]现在会对玩家造成 200 点{{tr|contact damage}}，[[{{tr|On Fire!}}]][[{{tr|debuff}}]]的持续时间延长为 10.5 {{tr|seconds}}。除此之外，{{tr|enemies}}不再会受到来自{{tr|lava}}的直接{{tr|contact damage}}，而是仅受到 3 {{tr|seconds}}的{{tr|On Fire!}}{{tr|debuff}}。
+* 若尚未击败[[{{tr|King Slime}}]]，{{tr|Slimes}}被杀死时有 {{chance|1/200}} 的几率生成它。{{source code ref|v=1.4.4.6|method=Terraria.NPC.DoDeathEvents}}
+* [[{{tr|Slime Rain}}]]不会发生。{{source code ref|v=1.4.4.9|method=Terraria.Main.StartSlimeRain}}
+* 只要[[{{tr|Empress of Light}}]]位于{{tr|Surface}}以下，就不受{{tr|day and night cycle}}影响。
+** 不过，她在{{tr|surface}}上时会立即暴怒。在暴怒时，她会遵循通常的行为，会在{{tr|nighttime}}消失。
+
+=== [[No traps]] ===
+* 部分{{tr|Life Crystals}}被[[{{tr|Life Crystal Boulder}}]]替代。
+* 生成的{{tr|traps}}的数量显著增加。
+* [[{{tr|Bouncy Boulder}}]]{{tr|trap}}变种能替代[[{{tr|Boulder trap}}]]生成，[[{{tr|Gas Trap}}]]会在{{tr|chests}}中生成。
+* 大部分{{tr|Chests}}都是[[{{tr|Trapped Chest}}]]，包括在[[{{tr|Underground Cabin}}]]和[[{{tr|Pyramid}}]]中的。
+* [[{{tr|TNT Barrel}}]]能够生成，在[[{{tr|Jungle Temple}}]]中尤其多。
+
+== 其他更改 ==
+=== 常规 ===
+* [[{{tr|Diva Slime}}]]是最初生成的 {{tr|NPCs}} 之一。
+* 最初生成的 {{tr|NPCs}} 具有下列名字：{{source code ref|v=1.4.4.6|method=Terraria.WorldGen.GenerateWorld}}
+** {{tr|The Tax Collector}}总是名为 Andrew，这个名字原本是[[{{tr|Guide}}]]的。
+*** 当{{tr|Tax Collector}}名为 Andrew 时，其基础[[{{tr|defense}}]]会被改为 200。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_007_TownEntities}}
+** {{tr|The Steampunker}}总是名为 Whitney。
+** {{tr|The Party Girl}}总是名为 Amanda。
+** {{tr|The Princess}}总是名为 Yorai。
+** {{tr|The Diva Slime}}总是名为  Slimestar。
+* {{tr|Crispy Honey Blocks}}会在{{tr|Underworld}}上方的{{tr|Glowing Mushroom biome}}层中到处生成。
+* 真正{{tr|surface}}同时包含两种{{tr|evil biomes}}，各占据{{tr|world}}的一半；{{tr|world}}两侧各 1/7 也被转化为不同的{{tr|evil biomes}}。
+* 当世界创建时开始的那场[[{{tr|Party}}]]结束时，所有 [[{{tr|NPCs}}]]（[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]、和[[{{tr|Skeleton Merchant}}]]除外）都会被杀死。此外，{{tr|Party Girl, Princess, and Diva Slime}}的解锁状态被重置。{{tr|The Tax Collector}}的解锁状态不会被重置。{{source code ref|v=1.4.4.9|method=Terraria.Main.DoUpdateInWorld}}
+** {{tr|The Steampunker}}无法重生，因为她的生成不依赖解锁状态，而是需要击败任意{{tr|mechanical boss}}。{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+** 这场派对的内部名称为{{code|PartyOfDoom}}（死亡派对/末日派对）。
+* [[{{tr|Living Tree}}]]、[[{{tr|Jungle Temple}}]]、和[[{{tr|Pyramid}}]]被漆成红色或紫色。
+* 在击败[[{{tr|Skeletron}}]]前，[[{{tr|Angry Bones}}]]、[[{{tr|Dark Caster}}]]、[[{{tr|Cursed Skull}}]]、和[[{{tr|Dungeon Slime}}]]不掉落任何{{tr|loot}}（由于 {{tr|drunk world seed}}的{{tr|Dungeon}}改动，这些{{tr|enemies}}可在击败{{tr|Skeletron}}前遇见）。杀死它们也不会增加[[{{tr|Tally Counter}}]]、[[{{tr|Banners (enemy)}}|{{tr|banners}}]]、和[[{{tr|Bestiary}}]]的计数，甚至也不会解锁其{{tr|Bestiary entries}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.NPCLoot}}<!-- This is technically also applied in For the worthy (Main.getGoodWorld), but these enemies can never spawn pre-Skeletron there. -->
+* {{tr|world}}生成时，会播放[[{{tr|Music}}#OW Space|{{tr|Otherworldly Space music}}]]。
+* [[{{tr|Hellbat}}]]和[[{{tr|Lava Bat}}]]死亡时滴落{{tr|lava}}。
+* [[{{tr|Floating Island}}]]上会分别生成[[{{tr|Flesh Block}}]]和[[{{tr|Lesion Block}}]]（取决于其生成在{{tr|world}}的哪一侧）。
+
+=== 机械 Boss ===
+* 加入了一个新 {{tr|boss}}，[[{{tr|Mechdusa}}]]。它需要使用[[{{tr|Ocram's Razor}}]]召唤，这是合成三只[[{{tr|Mechanical Bosses}}]]的{{tr|summoning items}}所得到的{{tr|item}}。此 {{tr|boss}} 在流程上代替了{{tr|Mechanical Bosses}}。
+** [[{{tr|the Twins}}]]、[[{{tr|Skeletron Prime}}]]的所有部位、和来自[[{{tr|the Destroyer}}]]的[[{{tr|Probe}}]]的{{tr|maximum health}}降低了 20%。{{source code ref|v=1.4.4.6|method=Terraria.NPC.getZenithSeedAdjustmentsBeforeEverything}}
+** 来自{{tr|the Destroyer}}的{{tr|Probes}}具有更好的机动性。{{source code ref|v=1.4.4.7|method=Terraria.NPC.AI_005_EaterOfSouls}}
+
+=== 月亮领主 ===
+* 每次[[{{tr|Phantasmal Deathray}}]]攻击后，[[{{tr|Moon Lord}}]]会从其头部的眼睛喷发出 30 个{{item|Moon Boulder|s|link=}}。{{source code ref|name=NPC.AI|v=1.4.4.7|method=Terraria.NPC.AI}}这些{{tr|boulders}}行为类似[[{{tr|Bouncy Boulder}}]]，会在{{tr|solid blocks}}上反弹，并且能存在相对较长的时间。不过，其速度要远比{{tr|Bouncy Boulder}}快。
+
+== 星星小游戏 ==
+在世界生成过程中，{{tr|the cursor}}被替换为[[{{tr|Moon phase}}#Moon styles|微笑的{{tr|moon}}]]，玩家可以移动它。背景中会出现大量的{{tr|Falling stars}}，它们会与{{tr|moon}}碰撞。每次击中时，会发出“喵”的音效，并且隐藏的分数会增加 1 分。随着分数的获得，颜色变得更加明亮，类似于 [[{{tr|The Constant}}]] 中的屏幕{{tr|shader}}效果也变得更强。
+
+这一分数会提高{{tr|world}}中将生成的特定物体和结构的数量。每点分数会将数量增加 0.1%，上限为 20%（即 200 次击中）。{{source code ref|v=1.4.4.6|method=Terraria.WorldGen.GenerateWorld|t=游戏会将基础数量乘以 <code>1 + (击中的{{tr|star}}÷200)×0.2</code>，其中 <code>击中的{{tr|star}}÷200</code> 上限为 1。}}这包括：
+* [[{{tr|Life Crystal}}]]
+* [[{{tr|Statues}}]]
+* [[{{tr|Underground Cabin}}]]外的[[{{tr|Chests}}]]
+* [[{{tr|Gemstone Cave}}]]
+* [[{{tr|Pot}}]]
+* [[{{tr|Traps}}]]和[[{{tr|TNT Barrel}}]]
+
+== 世界图标 ==
+Get fixed boi {{tr|world}}的{{tr|world icon}}是一棵不断闪烁且异常的{{tr|tree}}，会显示多个版本的普通{{tr|tree icon}}，有不同的颜色组合。
+
+<gallery>
+File:IconEverythingAnimated.png|{{tr|World icon}}
+</gallery>
+
+== 小贴士 ==
+{{main|指南:Get fixed boi}}
+* 此{{tr|seed}}有意地被设计为远比 [[For the worthy]] 更难，只建议通关过游戏的玩家游玩此{{tr|world}}。
+* 玩家应当利用好第一天，收集{{tr|materials}}并从{{tr|NPCs}}处购买{{tr|items}}很关键。{{tr|Wood}}是必需品，因为它在{{tr|world}}中出现的数量很少。
+* 在进行游戏流程之前，以及游戏流程期间应当查找充足的攻略。大部分在普通的''{{tr|Terraria}}''流程中有效的事情在此{{tr|seed}}中应当避免或仅是不奏效。
+* 探索时使用[[{{tr|Mushroom Platform}}]]和[[{{tr|ropes}}]]对移动力有很大帮助。
+
+== 花絮 ==
+* 此{{tr|seed}}的特性在代码中由{{tr|world}}的不同属性控制。默认情况下，用{{tr|world seed}}创建 Get fixed boi {{tr|world}}时，所有{{tr|secret seed world}}属性都会被设为 true，包括似乎和所有此{{tr|seed}}的特殊机制有关的 {{code|zenithWorld}}<ref name="zenithWorld"/> 属性。不过，许多独有的机制使用其他的{{tr|world}}属性作为其条件，例如：
+**  {{code|remixWorld}}{{source code ref|v=1.4.4.9|field=Terraria.Main.remixWorld}}（[[{{tr|Don't dig up}}]] 属性）和 {{code|getGoodWorld}}{{source code ref|v=1.4.4.9|field=Terraria.Main.getGoodWorld}}（[[{{tr|For the worthy}}]] 属性）决定了是否能生成[[{{tr|Mechdusa}}]]，{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnMechQueen}}，以及[[{{tr|Moon Lord}}]]是否使用{{tr|Moon Boulder}}攻击。<ref name="NPC.AI"/>
+** {{code|remixWorld}} 和 {{code|drunkWorld}}{{source code ref|v=1.4.4.9|field=Terraria.Main.drunkWorld}}（[[Drunk world]] 属性）决定了动画{{tr|world icon}}的显示。
+** {{code|remixWorld}} 和 {{code|dontStarveWorld}}{{source code ref|v=1.4.4.9|field=Terraria.Main.dontStarveWorld}}（[[{{tr|The Constant}}]] 属性）决定了[[{{tr|hunger}}]]{{tr|debuffs}}的{{tr|duration}}。
+** {{code|zenithWorld}} 属性仅决定{{tr|mechanical bosses and Probes}}的属性是否[[#机械 Boss|被调整]]。
+{{float file box|[[File:IconEverything.png|link=]] [[File:IconHallowEverything.png|link=]]|不正常的 Get fixed boi {{tr|worlds}}的{{tr|The tree icon}}。}}
+* 在游戏文件中，{{tr|Get fixed boi worlds}}还有两个额外的{{tr|world icons}}，显示为上下颠倒的{{tr|tree}}。这些{{tr|icons}}在正常游玩过程中无法看到，且仅能在编辑过的{{tr|world}}中出现（如：使用[[{{tr|Map viewers}}|{{tr|map editors}}]]）——它们只出现在启用了 {{code|zenithWorld}} 属性，但禁用了 {{code|drunkWorld}} 和/或 {{code|remixWorld}} 属性的{{tr|world}}上。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.Elements.AWorldListItem.GetIcon / Terraria.GameContent.UI.Elements.AWorldListItem.GetIconElement}}
+* {{tr|seed}}的名称来源于一封辱骂信。<ref>[https://twitter.com/loki_isp/status/1572323543328722944 Our team finds inspiration in many ways.]</ref>在另一封来自于同个愤怒的玩家的辱骂信中的一句话“broke ass game ass”在开发期间被当作了{{tr|seed}}，但在游戏发布前被更改了，因为 Redigit 不希望鼓励孩子们过度使用“ass”（屁股）这一词。<ref>[https://twitter.com/Demilogic/status/1572326995626803203 It was "Broke Ass Game Ass" all through development, but I felt like I shouldn't be encouraging children to type "ass" so much.]</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=Get fixed boi}}

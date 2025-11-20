@@ -1,0 +1,106 @@
+{{patch infobox
+| release = June 10, 2011
+| ref = [https://web.archive.org/web/20160604212229/http://www.terrariaonline.com/threads/1-0-4-change-log.25667/ 1.0.4 更新日志]
+}}
+{{tocright}}
+
+== 新添加 ==
+=== 新物品 ===
+* [[{{tr|Archaeologist's suit}}]]
+* [[{{tr|Thread}}|{{tr|Black Dye}}]]
+* [[{{tr|Bunny Hood}}]]
+* [[{{tr|Fish Bowl}}]]
+* [[{{tr|Gold Crown}}]]
+* [[{{tr|Goldfish (Item)}}|{{tr|Goldfish}}]]
+* [[{{tr|Thread}}|{{tr|Green Dye}}]]
+* [[{{tr|Hero's set}}]]
+* [[{{tr|Leather}}]]
+* [[{{tr|Ninja set}}]]
+* [[{{tr|Plumber's set}}]]
+* [[{{tr|Red Hat}}]]
+* [[{{tr|Robe}}]]
+* [[{{tr|Robot Hat}}]]
+* [[{{tr|Summer Hat}}]]
+* [[{{tr|Tuxedo set}}]]
+
+=== 新敌怪 ===
+* [[{{tr|Cave Bat}}]]
+* [[{{tr|Corrupt Bunny}}]]
+* [[{{tr|Corrupt Goldfish}}]]
+* [[{{tr|Dr. Bones}}]]
+* [[{{tr|Harpy}}]]
+* [[{{tr|Jungle Bat}}]]
+* [[{{tr|Jungle Slime}}]]
+* [[{{tr|Piranha}}]]
+* [[{{tr|Snatcher}}]]
+* [[{{tr|The Groom}}]]
+
+=== 新 Boss ===
+* [[{{tr|King Slime}}]]
+
+=== 新 NPC ===
+* [[{{tr|Bunny}}]]
+* [[{{tr|Clothier}}]]
+* [[{{tr|Goldfish (NPC)}}|{{tr|Goldfish}}]]
+
+== 新功能 ==
+* [[{{tr|Social Slot}}]] - 任何可装备的物品（[[{{tr|Armor}}]]或[[{{tr|Vanity Item}}]]）现在可以放置在社交栏来改变你的角色的形象而不改变套装奖励或属性增益。
+
+== 更改 ==
+* 你现在可以将[[{{tr|Jungle Rose}}]]扎在你的头发里。
+* 一些工具提示中缺少“修饰语句”的物品现在增加了修饰语句（[[{{tr|Breathing Reed}}]]、[[{{tr|Grappling Hook}}]]、[[{{tr|Jungle Rose}}]]）。
+* {{tr|Ammo}}现在在它们的工具提示里标注为“{{tr|Ammo}}”了；不提供任何属性增益的可装备物品现在在它们的工具提示里标注为“时装”了；使用于任何配方里的物品现在会标注为“材料”，同样在他们的工具提示里。
+* [[{{tr|Wizard Hat}}]]现在提供 2 [[{{tr|Defense}}]]。
+* [[{{tr|Empty Bucket}}]]现在提供 1 [[{{tr|Defense}}]]。
+* [[{{tr|Dungeon Brick}}]]现在需要至少{{tr|Nightmare Pickaxe}}才能采集，除非靠近重生点，在那它们可以被任何镐所挖掘。
+* 削弱了[[{{tr|Phoenix Blaster}}]]的属性值，以此与其他与它同等级的物品相平衡。
+* 减少了[[{{tr|Gem}}]]、[[{{tr|Mushroom}}]]和[[{{tr|Bottle}}]]的卖价。
+* 岩石层以上的[[{{tr|Hellforge}}]]可以用任意[[{{tr|Hammer}}]]移动，而以下的则要求有 60% 或更强{{tr|hammer power}}的{{tr|hammer}}。
+* [[{{tr|Angel Statue}}]]现在更加罕见。
+* 提升了[[{{tr|Eater of Worlds}}]]的生命值、防御力和伤害，使与它的战斗更加困难。
+* {{tr|Hornets}}在飞行时不再看上去像是要翻倒的样子了。
+* [[{{tr|Undead Miner}}]]更强了。
+* 降低了[[{{tr|Tim}}]]的生成率。
+* 玩家现在在重生后有 1 秒的无敌时间。
+* [[{{tr|Jungle}}|{{tr|Surface Jungles}}]]现在可以生成在地表的泥上了。{{tr|Jungle trees}}现在会自动生长（鉴于{{tr|acorns}}不能放置在{{tr|jungle grass}}上）。
+* {{tr|Chasms}}现在不再出现得那么频繁了，但永远会有一个暗影珠。
+* 视觉上，泥现在会和土而不是石头混合过渡，这使得{{tr|Jungles}}看上去更自然了。
+* {{tr|Jungle plants}}现在会在水下生长。
+* 增强了对客户端方面的安全性。
+* 名称大于 20 个字符的玩家现在会被服务器踢出。
+* 增加了一些基本的反破坏行为保护。
+* 在客户端增加了 {{code|-host}} 命令行参数。
+* 优化了服务器计时，这应该有助于减少延迟。
+* 新增了几条命令行和配置选项。它们罗列于 ''serverconfig.txt'' 文件中。
+* 现在服务器会在崩溃前输出 ''crashlog.txt''，让玩家可以更详细地报告漏洞。
+* 现在客户端会在崩溃前输出 ''client-crashlog.txt''，让玩家可以更详细地报告漏洞。
+* 屏幕分辨率现在拥有最小 800x600 和最大 1920x1200 的限制。
+* 新增了“自动暂停”选项，游戏会在玩家与 NPC 交谈或打开{{tr|inventory}}时暂停。此选项默认关闭。
+* 新增了“自动保存选项”，游戏将会每 10 分钟自动保存。此选项默认开启。
+* 如果当前世界崩溃，会提示玩家加载备份的世界。
+* 现在会检查世界文件是否被正确加载。
+* 尝试通过 ''Terraria.exe'' 启动游戏会显示消息提示你应该通过 Steam 启动，而不再是毫无理由地什么也不做。这个调整很可能是为了抵制盗版。
+* 退出选择端口界面现在会播放正确的音效了。
+* 设置选项现在在所有分辨率下都会正确地居中显示了。
+* 重排的设置菜单。现在将视频相关的设置归为独立一个菜单。
+* “Tink”音效现在听起来更沉闷了。
+
+== {{tr|Bug}} 修复 ==
+* 吃/喝的动画现在会正确地播放了。
+* [[Re-Logic]]的启动画面在各种分辨率下都会正确缩放了。
+* 单单选择召唤物品不再会直接召唤相应敌怪了。
+* 修复了一个会导致客户端在多人模式中尝试召唤一个NPC，随后崩溃的漏洞。
+* 提升了敌怪的最小生成距离，以确保在高分辨率下也不会在可见范围内生成敌怪。
+* 敌怪的生成速率因最小生成距离的改变而也被调整了。
+* 敌怪的射弹被玩家摧毁时不再掉落心或魔力星了。
+* [[{{tr|Water Candle}}]]的刷怪率提升效果现在会在玩家持着它时也正确生效了。
+
+== 新Bug ==
+* 如果玩家装备了[[{{tr|Robe}}]]，又在跳跃时使用武器，玩家的腿部会从长袍的侧边穿出。
+* [[{{tr|The Groom}}]]永远不会生成。这意味着无法在正常游戏过程中获得[[{{tr|Top Hat}}]]。
+
+== 参考 ==
+{{reflist}}
+
+{{Desktop versions}}
+{{language info|en=1.0.4}}

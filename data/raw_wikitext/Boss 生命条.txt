@@ -1,0 +1,26 @@
+{{exclusive|1.4.0.1}}
+{{redirect|{{tr|Boss}}条|&nbsp;{{tr|boss health}}|{{tr|Bosses}}}}
+{{float file box|[[File:Eye of Cthulhu boss health bar.png|350px]]|[[{{tr|Eye of Cthulhu}}]]的{{tr|health bar}}。}}
+
+当一名[[{{tr|player}}]]在 [[{{tr|Boss}}]] 范围内时，一条代表 {{tr|Boss}} [[{{tr|health}}]]的{{tr|health bar}}会出现在{{eicons|desktop=y}}屏幕底部/{{eicons|mobile=y}}[[{{tr|minimap}}]]下方。当玩家附近有多个 {{tr|Boss}} 时，只会显示离玩家最近的 {{tr|Boss}} 的{{tr|health}}。{{source code ref|v=1.4.4.6|method=Terraria.GameContent.UI.BigProgressBar.BigProgressBarSystem.TryFindingNPCToTrack}}
+
+== 备注 ==
+* 由多个部分组成的 {{tr|Boss}}（例如[[{{tr|Golem}}]]）会共用一个{{tr|health bar}}。
+* 所有 4 个[[{{tr|Celestial Pillar}}]]都有 2 条{{tr|health bar}}，一条对应其护盾，一条对应其{{tr|health}}。护盾条会覆盖在{{tr|health bar}}上。
+
+== 花絮 ==
+* {{tr|boss health bar}}左侧的小图标是对应 {{tr|Boss}} 的{{tr|map icon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在会在{{tr|health bar}}的中间位置显示 {{tr|Boss}} 的{{tr|health}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Boss health bar}}
