@@ -1,0 +1,49 @@
+{{item infobox
+| auto = 756
+| idprojectile = 130, 131
+| listcat = spears
+| tags = Vendor / hardmode / vendor:Truffle
+}}
+[[File:Mushroom Spear (demo).gif|frame|{{tr|Mushroom Spear}}的动画。]]
+
+'''{{tr|Mushroom Spear}}'''是个[[{{tr|Hardmode}}]]的[[{{tr|Spears}}|{{tr|spear}}]]，可以在至少击败一只[[{{tr|mechanical bosses}}]] 后以 {{iteminfo|Mushroom Spear|buy}} 的价格购买自[[{{tr|Truffle}}]]。使用时，它会通过在{{tr|spear}}的尖端位置的半空中召唤出七枚旋转的{{tr|mushroom projectiles}}的方式，来延展{{tr|spear}}的攻击范围。{{tr|mushroom projectiles}}会造成{{tr|spear}}{{tr|base damage}}的 {{chance|1/3}}，不会造成任何[[{{tr|knockback}}]]。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.AI_019_Spears}}虽然{{tr|mushroom projectiles}}看上去会逐渐消失，但是它们总会造成完整的{{tr|damage}}。如果它们在射出后没有击中任何{{tr|enemy}}，它们会在 {{duration|64 ticks}}后消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为<code>aiStyle == 30</code> 。{{tr|projectiles}}的<code>alpha</code>字段将增加 4 每{{tr|tick}}({{tick|noref|short}})，直到达到最大值 255。}}
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|mushroom projectiles}}本身没有“{{tr|piercing}}”能力，因此它们在击中一个{{tr|enemy}}后就会消失。
+* 在使用过程中，{{tr|mushroom projectiles}}会出现在{{tr|spears}}的尖端。因此，如果玩家在使用时后退，它们就会“堆叠”在一起，如果玩家在前进，它们就会散开。
+
+== 小贴士 ==
+* 如果玩家装备了[[{{tr|Frost Armor}}]]和/或[[{{tr|Magma Stone}}]]（或者它们的任何升级物），那么{{tr|Mushroom Spear}}本身和它发出的{{tr|Mushroom}}都可以产生照明作用；这使得使用{{tr|Mushroom Spear}}来探索地下或周围的洞穴十分有用，因为旋转的{{tr|Mushroom}}能够穿透墙壁。
+** 它也能用来收获[[{{tr|Glowing Mushroom}}]]农场中的{{tr|mushrooms}}。
+* 因为发出的旋转{{tr|Mushroom}}具有穿墙机制，因此{{tr|Mushroom Spear}}可以穿墙打击任何敌人，而不需要消耗[[{{tr|mana}}]]或者[[{{tr|ammo}}]]，也不需要{{tr|cooldown}}。
+* {{tr|mushroom projectiles}}生成后可以存在比一秒钟略多的时间，意味着即使收回了长矛也能继续对敌人造成伤害。
+* {{tr|Mushroom}}射弹并没有[[{{tr|knockback}}]]，所以{{tr|enemy}}可以直接穿过它们。因此，它们不能够作为阻挡{{tr|enemies}}的有效屏障。
+
+== 花絮 ==
+* {{tr|mushroom spear}}造成的{{tr|damage}}在所有{{tr|spears}}中排名第四，仅次于[[{{tr|Obsidian Swordfish}}]]、[[{{tr|Gungnir}}]]、和[[{{tr|North Pole}}]]。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|
+** 现在仅当三个{{tr|Mechanical bosses}} 之一被击败后才会出售。
+** {{tr|Buy}}/{{tr|sell value}}从 {{gc|45}} / {{gc|9}} 提升至 {{gc|70}} / {{gc|14}}。}}
+{{history|Desktop 1.2.0.3|现在可{{tr|reforge}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spears}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-main = yes
+| show-meleeother = yes
+}}
+
+{{language info|en=Mushroom Spear}}

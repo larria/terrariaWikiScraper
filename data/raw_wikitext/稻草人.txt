@@ -1,0 +1,134 @@
+{{npc infobox
+| auto = 305
+| image = Scarecrow 6.gif
+| type = Enemy
+| environment = Pumpkin Moon
+| damage =
+| defense =
+| life =
+| knockback =
+| debuff = Weak
+| debuffchance = 10%
+| debuffduration = {{modes|1|2|2.5}} 分
+| Heart|1|25%
+| :note: |在靠后的波数中物品掉率更高&nbsp;{{source code ref|v=1.4.0.5|name=pmdrops|{{code|Terraria.GameContent.ItemDropRules.ItemDropDatabase.cs}} 中的 {{code|RegisterBoss_PumpkinMoon()}} 方法}}|
+| :group:start|会掉落下列 3 个物品之一&nbsp;<ref name="pmdrops"/>|-------------
+| Scarecrow Hat|1|{{modes|0.28-3.33%|0.48-3.33%}}
+| Scarecrow Shirt|1|{{modes|0.28-3.33%|0.48-3.33%}}
+| Scarecrow Pants|1|{{modes|0.28-3.33%|0.48-3.33%}}
+| :group:end|-------|---------
+| shownpcid = no
+| cargo = no | cargodrops = y
+}}
+
+'''{{tr|Scarecrow}}'''是种[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|enemy}}]]，可在[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]期间生成。部分{{tr|Scarecrows}}仅能蹦跳，其他的则遵循普通的[[{{tr|Fighter AI}}]]。{{tr|Scarecrows}}有几率造成[[{{tr|Weak}}]][[{{tr|debuff}}]]。
+
+其物品掉落率随着其所在的波数线性增加（第 1 波中的掉落率最低，第 15 波最高）。{{source code ref|v=1.4.4.9}}打败{{tr|Scarecrow}}还会给{{tr|Pumpkin Moon}}的进程增加 1 点 / {{expert|2 点}} / {{master|2.5 点}} 。
+
+{{tr|Scarecrow}}及其变种需要 150 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/healthBlock/damageBlock/defenseBlock/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Knockback Resistance}}
+{{npc infobox
+| auto = 305
+| image = Scarecrow 1.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 306
+| image = Scarecrow 2.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 307
+| image = Scarecrow 3.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 308
+| image = Scarecrow 4.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 309
+| image = Scarecrow 5.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 310
+| image = Scarecrow 6.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 311
+| image = Scarecrow 7.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 312
+| image = Scarecrow 8.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 313
+| image = Scarecrow 9.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+{{npc infobox
+| auto = 314
+| image = Scarecrow 10.gif
+| type = Enemy
+| environment = Pumpkin Moon
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* 虽然会对玩家造成[[{{tr|Weak}}]]，但它却不能掉落[[{{tr|Vitamins}}]]。
+
+== 花絮 ==
+* 两种{{tr|scarecrows}}似乎穿着[[{{tr|Guy Fawkes Mask}}]]。
+** 这些变体似乎是画在{{tr|banner}}上的版本。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|
+** {{tr|Scarecrows Banner}}/{{tr|Bestiary}}解锁所需数量从 200 降低至 150，以反映其在{{tr|Pumpkin Moons}}中更少的数量。
+** 所有{{tr|Scarecrow}}的{{tr|Bestiary Entries}}现在共享{{tr|kill count}}，而非使用 10 个独立的{{tr|kill counts}}，并且会同时解锁。}}
+{{history|Desktop 1.4.4|{{tr|Master Mode}}中每次击杀时，给予的{{tr|Pumpkin Moons}}波次点数从 2 增加至 2.5。}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Pumpkin Moon Enemies
+| show-main=yes
+}}
+{{Master Template Characters
+| show-event=yes
+}}
+
+{{language info|en=Scarecrow}}

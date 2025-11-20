@@ -1,0 +1,168 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3541
+| sounduse = Item 15.wav
+| idprojectile = 632, 633
+| tags = drop / bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Last Prism (demo).gif|frame|right|对一群[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]使用{{tr|The Last Prism}}。]]
+
+{{redirect|棱镜|{{tr|Empress of Light}}掉落的{{tr|summon weapon}}|{{tr|Terraprisma}}}}
+
+'''{{tr|Last Prism}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Moon Lord}}]]后的[[{{tr|magic weapon}}]]，它会发射数根彩色光线，随着充能这些光束会汇聚成一束集中的光束。它会造成大量伤害，拥有游戏中最高的基础{{DPS}}之一，但代价为迅速消耗[[{{tr|mana}}]]。{{tr|The Last Prism}}有 {{chance|2/9}} 的概率掉落自[[{{tr|Moon Lord}}]]。
+
+{{tr|The Last Prism}}会投射出六道分别独立造成伤害的彩虹色光束，它们会逐渐旋转，随着旋转加快它们会汇聚成一道集中的光束。这个过程需要 3.365 秒，此时每根光束都会继续造成武器的全额{{tr|base damage}}。完全汇聚的光束造成三倍{{tr|weapon}}{{tr|base damage}}，或每击 {{#expr:{{iteminfo|Last Prism|damage}}*3}} {{tr|damage}}。和大部分穿透攻击不同，此武器每秒能打击 12 次（每 5 {{tr|ticks}}{{tick}}一次）。随着光束汇聚，{{tr|The mana}}会指数型增加。
+
+由于其高{{tr|mana cost}}（每秒 {{#expr:{{iteminfo|Last Prism|mana}}*12}} {{tr|mana}}；完全充能时每秒消耗 12 次{{tr|mana}}，每次消耗 {{iteminfo|Last Prism|mana}}{{tr|mana}}），玩家将难以维持光束超过 5–6 秒钟。推荐搭配[[{{tr|Mana Flower}}]]、[[{{tr|Magic Cuffs}}]]、[[{{tr|Nebula armor}}]]和大量[[{{tr|Super Mana Potion}}]]来使用{{tr|Last Prism}}。
+
+其最佳[[{{tr|modifier}}]]是'''{{tr|Mythical}}'''或'''{{tr|Masterful}}'''。{{tr|Last Prism}}不受{{tr|attack speed}}加成，意味着{{tr|Mythical}}提供 +5% {{tr|critical strike chance}}而{{tr|Masterful}}降低{{tr|mana cost}}。
+
+== 备注 ==
+* {{tr|The Last Prism}}在未聚焦的情况下消耗的{{tr|mana}}明显较少。如果不需要集中光束，比如面对大型或大群[[{{tr|enemies}}]]时，可以考虑用短暂持续的方式发射。
+* 在持续发射时，{{tr|the Last Prism}}的瞄准是以扫动的方式进行的，因此转动速度有所降低。
+* 由于汇聚的光束的快速打击，在使用汇聚光束攻击{{tr|enemies}}时，[[{{tr|Spectre Hood}}]]的[[{{tr|lifesteal}}]]{{tr|set bonus}}可能无法产生治疗球。
+* 光束会在持续使用 1 分钟后停止发射，但会继续消耗{{tr|mana}}。
+* 在视觉上，光束可能会有一部分穿过{{tr|blocks}}，但它实际上无法穿过{{tr|blocks}}。由于其碰撞体积，光束有可能对 2 格厚的墙后方的目标造成伤害，但这一特性没有什么实际用途。
+
+== 小贴士 ==
+* 使用[[{{tr|Mana Flower}}]]（或其升级物之一）搭配[[{{tr|Super Mana Potion}}]]是能够长时间发射激光的最简单方法，但是会面临[[{{tr|Mana Sickness}}]]的问题。对于每秒消耗超过 60 {{tr|mana}}的武器，{{tr|Super Mana Potions}}引发的{{tr|Mana Sickness}}也会将{{tr|damage}}减少超过 40%，但是若将{{tr|mana cost}}控制在阈值之下，{{tr|Mana Sickness}}仅会削弱{{tr|player}} 12% 的{{tr|damage}}输出。
+** 这就是{{tr|Masterful}}{{tr|modifier}}低{{tr|mana cost}}的实用之处。因为{{tr|Last Prism}}每秒消耗 12 次{{tr|mana}}，应通过{{tr|mana}}减耗效果将其{{tr|mana cost}}降低至 5 或更低，这对于{{tr|Masterful}}需要 41% {{tr|mana}}减耗，而对于{{tr|Mythical}}则需要 46% 减耗。例如，{{tr|Mana Flower}}，[[{{tr|Chlorophyte Headgear}}]]，[[{{tr|Dark Artist's Robes}}]]和[[{{tr|Clairvoyance}}]]可达到 42% {{tr|mana}}减耗且可自动使用{{tr|Super Mana Potions}}，但是{{tr|Mythical Last Prism}}就必须需要第二个{{tr|Mana Flower accessory}}。
+* 虽然{{tr|Super Mana Potions}}是使用{{tr|Last Prism}}最方便的方法，但是还有其他方法通过使用更多的措施而避免{{tr|Mana Sickness}}以获得更高的{{tr|damage}}：
+** 可以将[[{{tr|1 Second Timer}}]]和{{tr|enemies}}[[{{tr|statues}}]]相连，并使用[[{{tr|minions}}]]或[[{{tr|traps}}]]/[[{{tr|lava}}]]杀死它们。然后玩家就可以使用[[{{tr|Celestial Magnet}}]]或其升级来持续拾取[[{{tr|Star}}|{{tr|mana Stars}}]]。推荐使用[[{{tr|Skeleton}}]]、[[{{tr|Crab}}]]、[[{{tr|slimes}}]]和其他{{tr|health values}}较低且移动性不佳的{{tr|enemies}}{{tr|Statues}}。
+*** 对于[[{{tr|Nebula armor}}]]特别有用，这会在击杀{{tr|enemy}}时进一步获得{{tr|damage}}、{{tr|life}}再生和{{tr|mana}}再生加成。
+** 也可以站在[[{{tr|Spike}}]]上使用[[{{tr|Magic Cuffs}}]]（或[[{{tr|Celestial Cuffs}}]]）来近乎无限制地发射光束。若再使用[[{{tr|Celestial Stone}}]]，这会导致极慢的{{tr|health}}损失，慢到玩家可以用[[{{tr|potions}}]]进行恢复。虽然这对于很多快速移动的 {{tr|bosses}} 不太有效，但可以用于诸如[[{{tr|Old One's Army}}]]这样的{{tr|event}}。
+* 当搭配{{tr|Nebula armor}}，一个{{tr|enemy statue}}刷怪场（提供[[{{tr|buffs}}]]），强化{{tr|magic}}的[[{{tr|accessories}}]]和合适的战斗场地时，就可能在[[{{tr|Pumpkin Moon}}]]中得到 250000 的得分。[[{{tr|Frost Moon}}]]中也能达成类似的效果。
+* 当有了{{tr|enemy statue}}刷怪场后，通过拾取{{tr|enemies}}掉落的{{tr|Stars}}就能近乎无限地使用{{tr|Last Prism}}。[[{{tr|Star Statue}}]]也对此有所帮助。虽然接触{{tr|Spikes}}会造成[[{{tr|Bleeding}}]][[{{tr|debuff}}]]，但可通过配带[[{{tr|Adhesive Bandage}}]]火其升级物来改进。
+* 搭配{{tr|Nebula armor}}、{{tr|a Mana Flower}}、[[{{tr|Crystal Ball}}]]的{{tr|buff}}和[[{{tr|Magic Power Potion}}]]时，可在{{tr|Last Prism}}的 60 秒使用时间限制结束之前击败[[{{tr|Moon Lord}}]]。
+* {{tr|Last Prism}}在开阔区域最为好用，因为其光束无法穿过{{tr|solid blocks}}。另一件由{{tr|Moon Lord}}掉落的{{tr|magic weapon}}，[[{{tr|Lunar Flare}}]]，更加适合狭窄空间。
+
+== 花絮 ==
+<!-- Do not add any "might be a reference to" or "this weapon looks like" items. They will be removed. -->
+* {{tr|The Last Prism}}的光束拥有和[[{{tr|Phaseblade}}]]和[[{{tr|Phasesaber}}]]一样的音效。
+* 此物品可以被视为[[{{tr|Charged Blaster Cannon}}]]的升级物，二者都有高{{DPS}}的光束。
+** 汇聚的光束和[[{{tr|Moon Lord}}]]和[[{{tr|True Eye of Cthulhu}}]]发射的[[{{tr|Phantasmal Deathray}}]]很相似。
+* {{tr|The Last Prism}}曾经具有''[[{{tr|Terraria}}]]''所有武器中最高的总体{{DPS}}，但它现在被[[{{tr|Zenith}}]]超过了。
+** 不过，它仍然具有游戏中最高的{{tr|magic}}{{DPS}}，对单个[[{{tr|Target Dummy}}]]能够达到接近 15000 的 {{DPS}}。
+* 如果角色的名字是下面列出的名字之一，光束会变成各种不同的颜色，这是''{{tr|Terraria}}''众多测试者的名字。命名为“Random”也会将颜色随机化。同样的效果也适用于来自[[{{tr|Empress of Light}}]]掉落的{{tr|weapon}}。（[[{{tr|Kaleidoscope}}]]除外）。
+: {| class="mw-collapsible mw-collapsed terraria sortable" style="min-width: 10em;"
+|+ 名字列表
+! 名字 !! 颜色
+|-
+| Acamaeda || 绿/黄/橙
+|-
+| Aeroblop || 绿/黄
+|-
+| Alchemystics || 粉/蓝/浅蓝
+|-
+| Antithesis || 紫/蓝
+|-
+| [[Re-Logic#Arkhayla|Arkhalis]] || 粉/蓝
+|-
+| Aurora3500 || 绿/深绿
+|-
+| Bame || 紫/黄
+|-
+| [[Cenx]] || 绿/粉
+|-
+| Criddle || 橙/红/粉/紫
+|-
+| [[Crowno]] || 紫/蓝
+|-
+| Darkhalis || 粉/蓝
+|-
+| Darthkitten || 白/红
+|-
+| darthmorf || 深红/黑
+|-
+| Devalaous || 紫/蓝/浅蓝
+|-
+| Discipile || 青/黑
+|-
+| Doylee || 红/粉/蓝
+|-
+| Ghostar || 白/蓝
+|-
+| Grox The Great || 浅蓝/绿
+|-
+| Jaxrud || 黄/绿
+|-
+| Jenosis || 紫/蓝/浅蓝
+|-
+| Kazzymodus || 绿
+|-
+| Khaios || 深绿/黑
+|-
+| [[Lazure]] || 浅蓝/蓝/粉
+|-
+| [[Leinfors]] || 紫/蓝
+|-
+| Loki || 红/黑
+|-
+| ManaUser || 蓝/浅蓝/绿
+|-
+| Mid || 深红/粉/紫
+|-
+| Nike Leon || 橙/红
+|-
+| Nimbus || 紫/黑
+|-
+| ppowersteef || 蓝/黑
+|-
+| RBrandon || 红/黑
+|-
+| [[{{tr|Redigit}}]] || 蓝
+|-
+| Serenity || 粉/白
+|-
+| Sigma || 黄/橙/红
+|-
+| Suweeka || 蓝/浅蓝/绿
+|-
+| teiull || 紫/蓝/绿/黄
+|-
+| Tsuki || 粉
+|-
+| Unit One || 蓝/浅蓝/绿/黄
+|-
+| Vulpes Inculta || 紫/蓝
+|-
+| W1K || 紫/蓝
+|-
+| Waze3174 || 蓝/浅蓝/绿/黄
+|-
+| Xman101 || 绿/白
+|-
+| [[{{tr|Yoraiz0r}}]] || 粉
+|-
+| Zoomo || 紫
+|}	
+* 在 [[1.4.4]] 前，{{tr|the Last Prism}}的最佳{{tr|modifier}}是{{tr|Godly}}或{{tr|Demonic}}，因为它之前的[[{{tr|knockback}}]]力为 0。
+<!--
+Do not add any "might be a reference to" or "this weapon looks like" items. They will be removed.
+-->
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在具有占位的{{tr|knockback}}值，允许它获得更好的{{tr|modifiers}}。
+** 当玩家名字是 Bame、Nimbus 或 teiull 时添加了独特的光束颜色。}}
+{{history|Desktop 1.4.0.5|当玩家名字是 Discipile 时添加了独特的光束颜色。}}
+{{history|Desktop 1.4.0.1|当玩家名字是 Cenx、Crowno、Lazur、Jaxrud、Acamaeda、Alchemystics、Antithesis、Aurora3500、Criddle、Darthkitten、darthmorf、Jenosis、Kazzymodus、Khaios、Loki、ManaUser、Mid、ppowersteef、RBrandon、Redigit、Serenity、Sigma、Unit One、Vulpes Inculta、Waze3174、Xman101、或 Zoomo 时添加了独特的光束颜色。}}
+{{history|Desktop 1.3.4.1|修复了在{{tr|Multiplayer}}中使用{{tr|Last Prism}}时静默崩溃的问题。}}
+{{history|Desktop 1.3.0.4|当玩家名字是 Grox the Great 时添加了独特的光束颜色。}}
+{{history|Desktop 1.3.0.3|当玩家名字是 Suweeka、W1K 或 Random 时添加了独特的光束颜色。}}
+{{history|Desktop 1.3.0.2|当玩家名字是  Nike Leon 时添加了独特的光束颜色。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Last Prism}}

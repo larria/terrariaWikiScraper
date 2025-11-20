@@ -1,0 +1,13 @@
+下方是'''造成近战击打的{{tr|item}}列表'''。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_OwnerOnlyCode / Terraria.Player.ItemCheck_MeleeHitNPCs}}''近战击打''指的是在{{tr|item}}的使用动画中，{{tr|item}}的{{tr|hitbox}}碰撞实体时造成的伤害。
+
+注意部分{{tr|items}}也拥有[[{{tr|projectile}}]]攻击，这些{{tr|projectiles}}不被视为“近战击打”。
+__FORCETOC__
+== 列表 ==
+{{itemlist/options|width=18em|class=terraria}}<!--
+-->{{#af_template:itemlist|{{#af_map:{{#invoke:Melee hit items|go}}|item|{{item|{{{item}}}|maxsize=50x50px|wrap=y}}}}}}<!--
+-->{{itemlist/options|reset}}
+
+== 参考 ==
+{{reflist}}
+
+{{language info|en=List of items that deal melee hits}}

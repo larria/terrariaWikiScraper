@@ -1,0 +1,110 @@
+'''{{tr|Flails}}'''是以有限地远程方式使用的[[{{tr|weapons}}]]，且造成的是[[{{tr|melee weapons}}|{{tr|melee damage}}]]。{{tr|A Flail}}是由链条和通过链条连接到玩家的物体组成的，且分为两种类型：投掷和发射。
+
+其最佳[[{{tr|Modifiers}}|{{tr|modifier}}]]通常是'''{{tr|Godly}}'''或'''{{tr|Demonic}}'''，二者都能将平均伤害输出提高相同数量。
+
+== 类型 ==
+{{weapon type count}}{{tr|Flails}}有两类：投掷和发射。
+
+=== 投掷 ===
+[[File:Ball O' Hurt (demo).gif|alt=Thrown flail in use (1.4).|frame|{{eicons|1.4.0.1}} 使用中的{{tr|thrown flail}}。]]
+[[File:Ball O' Hurt (demo) (old).gif|alt=Thrown flail in use (pre-1.4).|frame|{{eicons|1.4.0.1|invert=y}} 使用中的{{tr|thrown flail}}。]]
+
+在{{eversions|1.4.0.1}}中，{{tr|thrown flails}}具有和其他武器不同的特殊机制。按住 {{key|use}} 会让{{tr|flail}}在玩家周围快速挥舞，造成{{tr|flail}}的（在其{{tr|tooltip}}中显示的）{{tr|base damage}}的 60%。在此状态下放开 {{key|use}} 会将{{tr|flail}}向{{tr|cursor}}位置发射，造成全额{{tr|base damage}}，并无限穿透{{tr|enemies}}。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}在{{tr|flail}}丢出后，再次按住 {{key|use}} 会让{{tr|flail}}突然掉落到地上并停留，且只要 {{key|use}} 一直被按下，停留的{{tr|flail}}就会对{{tr|enemies}}造成{{tr|flail}}的一半{{tr|base damage}}。
+
+在{{eversions|1.4.0.1|invert=y}}中，{{tr|thrown flails}}有着特殊的物理特性，允许玩家在不重新发射的情况下持续挥舞它们。按下{{key|use}}时，投出的{{tr|flails}}会极大地受重力影响，使得它们很适合于从上方进行攻击。但是，通过在抛出时按住{{key|use}}，玩家可以执行更强力的投掷，让{{tr|flail}}飞的更远。抛出的{{tr|flails}}会在墙上反弹，但在飞出和返回时都能穿透多个{{tr|enemies}}。
+{{-}}
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | 来源
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}} AND usetime BETWEEN '35' AND '80'
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+=== 发射 ===
+[[File:Chain Knife (demo).gif|alt=使用中的发射{{tr|flail}}。|thumb|使用中的发射{{tr|flail}}。]]
+
+发射{{tr|flails}}没有{{tr|thrown}}{{tr|flails}}的物理特性，也不能通过按住攻击按钮来回挥舞。然而，它们通过快速开火和不受重力影响（[[{{tr|Anchor}}]]除外）来弥补以上内容。这通常会让发射{{tr|flails}}更容易瞄准，尤其是向上时，并赋予它们更高的潜在伤害。发射{{tr|flail}}不是平滑的伸拉然后摆回，而是以固定的速度延伸，直到撞到{{tr|block}}或{{tr|enemy}}，亦或者到达其最大长度，然后以稍快的固定速度缩回。
+
+大多数发射{{tr|flails}}都能[[自动开火]]，这使得它们在短距离内非常有效。易受击退的{{tr|Enemies}}可以轻易被[[{{tr|knockback}}]]，而诸如 [[{{tr|bosses}}]] 这样免疫击退的{{tr|enemies}}会被快速开火的{{tr|flail}}迅速造成大量伤害。
+{{-}}
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | 来源
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}} AND usetime BETWEEN '10' AND '34'
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 备注 ==
+* {{eicons|1.4.0.1}} 技术上来说，{{tr|thrown flails}}的实际{{tr|base damage}}是本 wiki 上所记录的{{tr|base damage}}的一半。在{{tr|item tooltip}}中列出的伤害是实际{{tr|base damage}}的两倍。{{source code ref|v=1.4.3.6|field=Terraria.ID.ItemID.Sets.ToolTipDamageMultiplier}}例如，[[{{tr|Sunfury}}]]的{{tr|base damage}}为 {{iteminfo|Sunfury|damage}}，而其实际{{tr|base damage}}是 {{#expr:{{iteminfo|Sunfury|damage}}/2}}。
+* [[{{tr|Piranha Gun}}]]和[[{{tr|Harpoon}}]]类似于发射{{tr|flails}}，但造成的是{{tr|ranged damage}}。
+* {{tr|Thrown flails}}不受[[{{tr|Feral Claws}}]]及其升级物所给予的{{tr|autoswing}}影响，除非{{tr|flail}}达到其最大射程并自动收回。
+
+== 小贴士 ==
+* {{eicons|1.4.0.1|invert=y}} {{tr|Thrown flails}}可用于同时攻击玩家两侧的{{tr|enemies}}，方法是抛出{{tr|the flail}}后不放开{{key|use}}键，在球体达到最大射程即将返回之际面向相反方向，这会让球飞到另外一侧，然后就可以重复以上过程。此外，按住按键且不移动会让{{tr|flail}}的球体部分落到地上，对行走、飞行、挖掘时碰到它的{{tr|enemies}}造成伤害，在对付[[{{tr|Worm AI}}|{{tr|worms}}]]时特别有效。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 旋转{{tr|flails}}时的{{tr|Knockback}}由正常{{tr|knockback}}的 25% 提升至 35% 
+** 旋转{{tr|flails}}现在每秒最多击中 4 次而非 3次。已经能每秒击中 4 次的{{tr|Flails}}现在会提升至每秒 5 次。}}
+{{history|Desktop 1.4.0.5|在玩家处于[[{{tr|Cursed}}]]、[[{{tr|Frozen}}]]、或[[{{tr|Stoned}}]]时应当不再会持续旋转。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Mace}}]]、[[{{tr|Flaming Mace}}]]、和[[{{tr|Drippler Crippler}}]]。
+** 更改了{{tr|flails}}战斗风格。
+** 重新平衡了各种{{tr|flails}}。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Chain Guillotines}}]]。}}
+{{history|Desktop 1.2.4|添加了[[{{tr|Anchor}}]]和[[{{tr|Flairon}}]]。}}
+{{history|Desktop 1.2|添加了[[{{tr|Chain Knife}}]]、[[{{tr|Flower Pow}}]]、[[{{tr|Golem Fist}}]]、[[{{tr|KO Cannon}}]]、和[[{{tr|The Meatball}}]]。}}
+{{history|Desktop 1.1|添加了[[{{tr|Dao of Pow}}]]。}}
+{{history|Desktop 1.0.6|引入，带有[[{{tr|Ball O' Hurt}}]]、[[{{tr|Blue Moon}}]]、和[[{{tr|Sunfury}}]]。}}
+{{history|Console 1.0.750.0|添加了[[{{tr|Chain Guillotines}}]]。}}
+{{history|Console 1.07|添加了[[{{tr|Anchor}}]]和[[{{tr|Flairon}}]]。}}
+{{history|Console 1.02|添加了[[{{tr|Chain Knife}}]]、[[{{tr|Flower Pow}}]]、[[{{tr|Golem Fist}}]]、[[{{tr|KO Cannon}}]]、和[[{{tr|The Meatball}}]]。}}
+{{history|Console-Release|引入，带有[[{{tr|Ball O' Hurt}}]]、[[{{tr|Blue Moon}}]]、[[{{tr|Dao of Pow}}]]、和[[{{tr|Sunfury}}]]。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Flails}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{all versions}}
+[[Category:连枷| ]]
+
+{{language info|en=Flails}}

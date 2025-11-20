@@ -1,0 +1,168 @@
+{{npc infobox|boxwidth=24em
+| auto = 222
+| idprojectile = 719
+| image = Queen Bee.gif
+| image2 = Queen Bee (old).gif
+| type = Boss
+| environment = Bee Hive (biome)
+| environment2 = Jungle
+| environment3 = Underground Jungle
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|22|44|66}} {{note|small=y|paren=y|{{tr|stinger}}}}{{source code ref|v=1.4.0.5|name=qbai|method=Terraria.NPC.AI|t=在 <code>aiStyle == 43</code> 代码段中。注意{{tr|Queen Bee}}的若干属性数据，包括{{tr|damage}}和{{expert|{{tr|defense}}}}，都是硬编码在此处的。}}
+| defense = {{modes|8|8–28 {{note|small=y|paren=y|取决于生命值}}<ref name="qbai"/>}}
+| debuff = Poisoned
+| debuffchance = {{modes|33.33%|100%}}
+| debuffduration = {{modes|10 {{tr|seconds}}|2–20 {{tr|seconds}}|2.5–25 {{tr|seconds}}}} {{note|small=y|paren=y|{{tr|stinger}}}}<br/>{{modes|expertonly=y|expert=2–8 {{tr|seconds}} {{note|small=y|paren=y|contact}}|master=2.5–10 {{tr|seconds}} {{note|small=y|paren=y|{{tr|contact}}}}}}
+
+|:group:start|总是会掉落以下 3 件{{tr|items}}之一| @normal
+| Bee Gun|1|33% @normal
+| Bee Keeper|1|33% @normal
+| The Bee's Knees|1|33% @normal
+|:group:end|--------------------------------------------------------|------------------------
+|:group:start|可能会掉落以下 4 件{{tr|items}}之一| @normal
+| Hive Wand|1|33% @normal
+| Bee Hat|1|11% @normal
+| Bee Shirt|1|11% @normal
+| Bee Pants|1|11% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Honey Comb|1|33% @normal
+| Nectar|1|6.7% @normal
+| Honeyed Goggles|1|5% @normal
+| Beenade|10–30| 75% @normal
+| Bee Wax|16–26|100% @normal
+| Bottled Honey|5–15|100%
+| Queen Bee Mask|1|14.29% @normal
+| Queen Bee Trophy|1|10%
+| Treasure Bag (Queen Bee)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Hive Pack|1|100% #expert
+  |:group:start|以下三个物品会掉落其中之一|3 #expert
+  | Bee Gun|1|33% #expert
+  | Bee Keeper|1|33% #expert
+  | The Bee's Knees|1|33% #expert
+  |:group:end|-----------------------------------|
+  | Hive Wand|1|100% #expert
+  |:group:start|总是会掉落以下 3 件{{tr|items}}之一|3 #expert
+  | Bee Hat|1|33% #expert
+  | Bee Shirt|1|33% #expert
+  | Bee Pants|1|33% #expert
+  |:group:end|-----------------------------------|
+  | Honey Comb|1|33% #expert
+  | Nectar|1|11% #expert
+  | Honeyed Goggles|1|11% #expert
+  | Beenade|10–29|100% #expert
+  | Bee Wax|{{expert|17–29}}|100% #expert
+  | Queen Bee Mask|1|14.29% #expert
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|10]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Sparkling Honey|1|{{master|25%}} @master
+| Queen Bee Relic|1|{{master|100%}} @master
+
+| imageother = Map Icon Queen Bee.png
+| imageothercaption = Map Icon
+
+| soundkilled = 
+| sound0 = NPC Killed 66.wav
+| soundcaption0 = 击杀 {{eicons|1.4.4|small=y}}
+| sound1 = NPC_Killed_1.wav 
+| soundcaption1 = 击杀 {{eicons|1.4.4|invert=y|small=y}}
+| sound2 = Item 173.wav
+| soundcaption2 = 召唤 {{eicons|1.4.4|small=y}}
+| sound3 = Item 17.wav
+| soundcaption3 = {{tr|Stinger}}
+| sound4 = Zombie 125.wav
+| soundcaption4 = 冲刺 {{eicons|1.4.4|small=y}}
+| sound5 = Roar 0.wav
+| soundcaption5 = 召唤/<br/>冲刺 {{eicons|1.4.4|invert=y|small=y}}
+}}
+{{flavor text|统治丛林蜂巢的女王。|image=Map Icon Queen Bee.png}}
+
+{{tr|Queen Bee}}是一个[[{{tr|pre-Hardmode}}]]的 [[{{tr|boss}}]]。召唤她需要在[[{{tr|Underground Jungle}}]]破坏[[{{tr|Larva}}]]，也可以在[[{{tr|Jungle}}]]使用[[{{tr|abeemination}}]]召唤。她能造成[[{{tr|Poisoned}}]]{{tr|debuff}}。
+
+{{boss music|Boss 5|Boss 1 (Otherworldly)}}
+
+== 攻击 ==
+{{tr|Queen Bee}}有三种不同的攻击模式：
+
+* 她会将自己调整到和玩家处于同一水平线并来回飞动三次试图撞击玩家。
+* 飞到玩家上方悬停并召唤[[{{tr|bees}}]](在{{tr|expert mode}}中能召唤出更大的)来攻击玩家，这段时间它会召唤 6、12 或 18 只蜜蜂。
+* 和[[{{tr|hornets}}]]一样, 它会快速向玩家发射{{tr|stingers}}攻击。这段时间它会变换自己的位置保证自己悬停在玩家上方。
+
+在{{eil|Expert Mode}}中，{{tr|Queen Bee}}的血量越少，攻击速度越快。
+
+{{Eicons|1.4.0.1}} 如果不在[[{{tr|Underground Jungle}}]]里，{{tr|Queen Bee}}会暴怒，她的行动更具侵略性，并以更快的速度冲锋，发射{{tr|stingers}}。
+
+当在{{tr|surface}}[[{{tr|Jungle}}]]战斗时，{{tr|Queen Bee}}仍然会进入暴怒状态，但是这种暴怒状态相比在其它{{tr|surface biome}}中没有那么具有侵略性，例如[[{{tr|Ocean}}]]。
+
+== {{tr|Notes}} ==
+* {{tr|Queen Bee}}在远离{{tr|player}}时不会消失，而是会继续向玩家移动。<!-- Need confirmation whether this applies to all versions. -->
+** 这意味着在战斗中使用[[{{tr|Magic Mirrors}}]]或其他传送物品{{tr|Queen Bee}}会追踪{{tr|player}}，无论玩家和她相距多远，而且几乎是以暴怒的状态杀死玩家。
+** 在{{tr|multiplayer}}，如果所有当前与{{tr|Queen Bee}}战斗的{{tr|players}}都死亡了并且同时有其他玩家还存活，{{tr|Queen Bee}}会追逐剩余的玩家即使他们在数以百计的{{tr|blocks}}以外，并且会在当前的目标死亡后将仇恨转移到其他玩家身上。
+*** 唯一使 {{tr|boss}} 消失的方法除了杀死它就是世界上所有玩家同时死亡。
+* 在[[{{tr|Expert Mode}}]]中，{{tr|Queen Bees}}的冲刺速度和次数都会增加。
+**在低血量下，{{tr|Queen Bee}}在改变攻击方式之前可以连续进行六次攻击。
+* 类似[[{{tr|Pot}}]]，{{tr|larva}}可以被任何的伤害性武器击破，因此像[[{{tr|Orichalcum armor}}]]的套装效果或是[[{{tr|Star Cloak}}]]等许多效果都可以击破{{tr|larva}}，导致{{tr|Queen Bee}}意外生成。
+** {{tr|larva}}在丛林中存留到游戏后期是特别常见的情况，此时它有可能被任何屏幕上的弹幕击中，即使在物块后面。如果在游戏早期使用[[{{tr|Whips}}]]，也有可能打破物块后面的东西。
+* 在{{eversions|1.4.0.1}}，从{{tr|Queen Bee}}自身或[[{{tr|Bee Hive}}]]还有挖掘[[{{tr|Hive|link=y}}|{{tr|Hive block}}]]生成的{{tr|Bees}}也会瞄准其它{{tr|enemies}}，并伤害它们或从它们处受到伤害。当有至少一只{{tr|Bee}}存活，{{tr|Queen Bee}}就也会从其它{{tr|enemies}}处受伤或伤害它们。然而{{tr|Queen Bee}}只会瞄准玩家。
+* 一旦{{tr|Queen Bee}}被击败，如果有空房子，[[{{tr|Witch Doctor}}]][[{{tr|NPC}}]]就会生成。
+* {{tr|Bees}}不会掉落[[{{tr|Soul of Light}}]]、[[{{tr|Soul of Night}}]]、{{eil|Biome Keys|epage=Biome Key Molds|invert=y}}或{{eil|Biome Key Mold|s}}。
+* 在[[{{tr|Multiplayer}}]]中，{{tr|Queen Bee}}似乎并不在玩家死亡时消失，并且会一直追着他们回到生成点。
+* [[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]偶尔会大到足以容纳 2 个[[{{tr|Larvae}}]]。如果玩家正在使用诸如[[{{tr|Water Bolt}}]]这样的弹跳武器，需要警惕第二只{{tr|Larva}}，以免被新召唤出来的第二只{{tr|Queen Bee}}盯上。
+* {{tr|Queen Bee}}可以召唤的{{tr|Bees}}数量不是无限的，最多只能存在 173 只{{tr|Bees}}。
+
+== {{tr|Achievement}} ==
+{{achievement|name=Sting Operation}}
+
+== {{tr|Tips}} ==
+{{Strategies}}
+* {{tr|Bee Hives}}中天然存在的[[{{tr|Honey}}]]可用于制作[[{{tr|Bottled Honey}}]]或在战斗中提供{{tr|health regeneration}}。不过，站在{{tr|Honey}}中会减缓玩家的速度。
+* {{tr|Bee}}造成的{{tr|damage}}很小，但是很烦，因为它们能推动玩家。如果玩家没有[[{{tr|Cobalt Shield}}]]或[[{{tr|Obsidian Shield}}]]来避免[[{{tr|knockback}}]]，可以用任意[[{{tr|Hooks}}]]来将{{tr|player}}锚定在物块上。
+** 在{{tr|Classic difficulty}}中，旋转[[{{tr|Flails}}]]足以在{{tr|bee}}碰触{{tr|player}}之前杀死任何靠近的{{tr|bees}}。
+** 如果其他{{tr|enemies}}比玩家更接近{{tr|bees}}，{{tr|bees}}会优先攻击它们，因此{{tr|bees}}会被雕像生成的敌怪或其他被困住的敌怪分散注意力。
+** 在{{tr|Expert}}和{{tr|Master Mode}}下，{{tr|bees}}会变得很强，如果忽视它们，玩家会很容易被杀死。
+** [[{{tr|Lightning Aura sentry summons}}]]还有[[{{tr|Explosive Trap sentry summons}}]]可以很容易地在玩家靠近{{tr|bees}}时杀死它们。
+* {{tr|Queen Bee}}可以成为很好的[[{{tr|coins}}]]来源，每次可获得{{npcinfo|Queen Bee|value}}，召唤起来也相当简单。
+* {{eicons|Bee armor|not=1.4.1}}打败{{tr|Queen Bee}}获得的蜂蜡可以让召唤师职业的玩家制作[[{{tr|Bee armor}}]]，这是唯一一套{{tr|pre-Hardmode}}召唤师护甲。
+** {{eicons|1.4.1}}注重使用鞭子的召唤师职业玩家，[[{{tr|Obsidian armor}}]]是更好的选择。
+* 当{{tr|Queen Bee}}的冲刺速度足够快时，如果玩家在{{tr|Queen Bee}}靠近时用{{tr|Shield of Cthulhu}}朝着与她相同的方向冲刺，玩家会在冲刺结束时与她接触，这样玩家会在{{tr|Queen Bee}}身上弹反而不受伤害。
+* 对于{{tr|ranged players}}，任何{{tr|bow}}搭配{{tr|piercing arrows}}（如[[{{tr|Jester's Arrow}}]]）都可以快速清理召唤出来的{{tr|bees}}。
+
+== {{tr|Trivia}} ==
+{{float file box|[[File:Queen Bee concept art.png|120px]]|早期概念图}}
+* {{tr|Queen Bee}}在所有{{tr|pre-Hardmode}} {{tr|boss}} 中掉落物种类是最多，为 15 种。此外，在所有 {{tr|boss}} 中，她拥有第二多的掉落物种类，仅次于[[{{tr|Plantera}}]]（一个同样来自[[{{tr|Underground Jungle}}]]的 {{tr|boss}}）的 16 种。
+* {{eicons|1.4.1.2|invert=y}}奇怪的是，尽管能造成{{tr|Poisoned debuff}}，但{{tr|Queen Bee}}本身并不对其免疫。
+* 虽然很罕见，但如果{{tr|Queen Bee}}在一个[[{{tr|Mechanical Bosses}}]]被杀后被击败，还是有可能从{{tr|Queen Bee}}那里获得{{eil|Yelets}}。
+* {{tr|Queen Bee}} 1.2 的概念艺术看起来与实际的图像有很大的不同，与最终的图像相比更像是一只[[{{tr|Hornet}}]]。
+* {{eicons|1.4.4|invert=y}}{{tr|Queen Bee}}是一个世界中唯一一个不能被无数次战斗的 {{tr|boss}}，因为她的召唤物是不可再生的。不管是{{tr|Bee hive}}中的{{tr|larva}}还是制作召唤物所需的蜂巢物块都是有限的。
+** 但是，{{eversions|1.4.4|short=y}}独有的[[{{tr|Bottomless Honey Bucket}}]]和[[{{tr|Shimmer}}]]允许玩家制作无限的蜂蜜块和蜂巢块。
+* {{tr|Queen Bee}}是拥有独家音乐的 7 个 {{tr|boss}} 之一，其他分别是[[{{tr|Queen Slime}}]]、[[{{tr|Empress of Light}}]]、[[{{tr|Moon Lord}}]]、[[{{tr|Plantera}}]]、[[{{tr|Duke Fishron}}]]和[[{{tr|Deerclops}}]]。
+** 然而，{{eversions|Ocram|short=y}}独占 {{tr|boss}} [[{{tr|Ocram}}]]使用了她的音乐。在{{Mobile version}}的旧版本更新上，以及前主机版本上，[[{{tr|Eye of Cthulhu}}]]也使用了她的音乐。这使得她成为唯一一个拥有独家音乐，但其音乐在其他版本都不独占的 {{tr|boss}}。
+{{bestiary|article=}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|现在她有自己的冲刺和{{tr|death}}音效。}}
+{{history|Desktop 1.4.1.2|现在对[[{{tr|Poisoned}}]]{{tr|debuff}}免疫。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprites updated.}}
+** 现在离开{{tr|underground jungle}}会愤怒。
+** 现在在{{tr|Master mode}}会掉落[[{{tr|Sparkling Honey}}]]。
+** 现在在{{tr|Master mode}}会掉落[[{{tr|Queen Bee Relic}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在有几率掉落[[{{tr|The Bee's Knees}}]]。
+** [[{{tr|Honey Comb}}]]现在独立掉落，几率为 {{chance|1/3}}。}}
+{{history|Desktop 1.2.4|添加了新掉落物。}}
+{{history|Desktop 1.2.3|修正了{{tr|Queen Bee}}会卡在{{tr|tiles}}中无法移动的漏洞。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-main = yes
+| show-boss = yes
+}}
+
+{{language info|en=Queen Bee}}

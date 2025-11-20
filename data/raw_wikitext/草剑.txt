@@ -1,0 +1,61 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 190
+| debuff = Poisoned / 7 / 25%
+| listcat = Broadswords
+}}
+[[File:Blade of Grass (demo).gif|frame|{{tr|The Blade of Grass}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Skeleton}}]]并造成[[{{tr|Poisoned}}]][[{{tr|debuffs}}]]，每次挥舞产生{{tr|projectiles}}。注意{{tr|projectiles}}会以{{tr|Skeleton}}为目标且仅穿透两个{{tr|enemies}}。]]
+
+'''{{tr|Blade of Grass}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|Swords}}|{{tr|sword}}]]。挥舞时，它会发射小的、绿色的{{tr|Leaf Blade}}{{tr|projectile}}，轨迹呈圆形向上飞行，在后方留下作为视觉效果的叶片粒子。{{tr|The Leaf Blade projectile}}可以穿过[[{{tr|blocks}}]]但会在接触[[{{tr|lava}}]]时被摧毁、造成 25% {{tr|weapon}}{{tr|damage}}（{{#expr:floor({{iteminfo|Blade of Grass|damage}}*0.25)}} {{tr|base damage}}）、具有 20 [[{{tr|armor penetration}}]]、追踪 9.375 格内的{{tr|enemies}}、并能穿透两个{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Projectile.AI_152_SuperStarSlash / Terraria.Player.ItemCheck_Shoot}}{{tr|The sword}}及其{{tr|projectiles}}在击中时均有 {{chance|1/4}} 几率造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]，持续 7 秒。{{source code ref|v=1.4.4.9|method=Terraria.Player.StatusToNPC / Terraria.Projectile.StatusToNPC}}
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Blade of Grass|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Blade of Grass|expectedrows=2}}
+
+== 花絮 ==
+* 此{{tr|weapon}}的名称（Blade of Grass）是一个双关语：单片草叶也被称为“a blade of grass”。
+* 在 1.2 更新前，{{tr|Blade of Grass}}像是把草锯齿武士刀（[[File:Blade of Grass (pre-1.2).png|30px]]）。它参考了传说中的日本剑{{维基百科|Kusanagi|草薙の剣|t=草薙剑}}（字面意思是“割草之剑”）。
+<!-- No, this is not a reference to Finn's Grass Sword from the American animated television series "Adventure Time." That episode aired 3 years AFTER Terraria introduced the Blade of Grass. -->
+
+== 历史 ==
+{{history|Desktop 1.4.4.3|修复了{{tr|Blade of Grass}}的{{tr|Leaf Blade}}不造成{{tr|Poisoned}}的问题。}}
+{{history|Desktop 1.4.4|
+** {{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Blade of Grass (old).png|30px|link=]]。
+** 添加了在挥舞时发射的向上旋转的叶片{{tr|projectile}}。
+** {{tr|Damage}}由 28 降低至 18。
+** {{tr|Use time}}由 30 降低至 20。
+** {{tr|knockback}}由 3 提升至 4.5。
+** {{tr|Crafting recipe}}现在需要 3 个[[{{tr|Vine}}]]，[[{{tr|Jungle Spore}}]]消耗量由 12 个提升至 15 个。}}
+{{history|Desktop 1.3.0.1|现在只需要 12 个{{tr|Stingers}}而非 15 个。}}
+{{history|Desktop 1.2|{{tr|Sprite updated.}}旧外观为：[[File:Blade of Grass (pre-1.2).png|30px|link=]]。}}
+{{history|Desktop 1.1|
+** 制作不再需要[[{{tr|Silver Broadsword}}]]。
+** {{tr|Spore}}的要求由 20 个降低至 12 个。{{tr|Stinger}}的要求由 20 个降低至 15 个。}}
+{{history|Desktop 1.0.6|会造成{{tr|Poisoned debuff}}，{{tr|ingredients}}从 40 个[[{{tr|Jungle Rose}}]]改为 20 个{{tr|Jungle Spores}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在只需要 12 个{{tr|Stingers}}而非 15 个。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|现在只需要 12 个{{tr|Stingers}}而非 15 个。（{{icon|ps4}}）}}
+{{history|Console 1.02|外观更新为与{{tr|Desktop}} 1.2 一致。}}
+{{history|Console-Release|{{tr|Introduced}}，具有{{tr|Desktop}} 1.1 中的机制与{{tr|recipes}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|外观更新为与{{tr|Desktop}} 1.2 一致。}}
+{{history|Mobile 1.1.5536|
+** 制作不再需要{{tr|Silver Broadsword}}。
+** {{tr|Spore}}的要求由 20 个降低至 12 个。{{tr|Stinger}}的要求由 20 个降低至 15 个。}}
+{{history|Mobile-Release|{{tr|Introduced}}，具有{{tr|Desktop}} 1.0.6.1 中的机制。}}
+{{history|3DS-Release|Introduced=y|{{tr|Introduced}}，具有{{tr|Desktop}} 1.1 中的机制、{{tr|recipes}}、和外观。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Blade of Grass}}

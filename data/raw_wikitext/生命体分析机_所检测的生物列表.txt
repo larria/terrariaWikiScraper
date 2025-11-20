@@ -1,0 +1,119 @@
+<!--
+
+// AUTOMATIC DATA
+// (see below for manual adjustments)
+
+// get information about all NPCs that have a rarity!=0:
+-->{{#vardefine:npcrarity_data|{{#loop:i|{{npcinfo/minId}}|{{#expr:{{npcinfo/maxId}}-{{npcinfo/minId}}+1}}|<!-- iterate over all NPC IDs
+	-->{{#ifeq:{{#var:i}}|375||<!-- edge case fix: skip TruffleWormDigger
+		-->{{#invoke:Npcinfo|getInfo|id={{#var:i}}}}<!-- get info
+		-->{{#ifeq:{{#or:{{#dplvar:_npcinfo_rarity}}|0}}|0||<!-- if rarity != 0 then store:
+			-->{{#var:i}}₪<!-- id
+			-->{{#dplvar:_npcinfo_rarity}}₪<!-- rarity
+			-->{{#switch:1|{{#dplvar:_npcinfo_townNPC}}|{{#dplvar:_npcinfo_friendly}}=is town npc}}<!-- is town npc?
+		-->%%}}<!--
+	-->}}<!--
+-->}}}}<!--
+
+// get NPC IDs of all critters
+-->{{#vardefine:npcrarity_critters|{{#invoke:Npcinfo/idSets|getSet|CountsAsCritter}}}}<!--
+
+// extract critters from base data
+-->{{#vardefine:npcrarity_data_critters|{{#listfilter:<!--
+	-->|list={{#var:npcrarity_data}}<!--
+	-->|insep=%%|outsep=%%<!--
+	-->|fieldsep=₪|token=@@,,<!-- split npc data element on ₪, use first one
+	-->|pattern=<esc>{{#if:{{#lstfnd:@@|{{#var:npcrarity_critters}}|,}}|keep|remove}}</esc><!-- if NPC ID is an ID of a critter, then extract
+-->}}}}<!--
+
+// remove critters from base data
+-->{{#vardefine:npcrarity_data|{{#listfilter:<!--
+	-->|list={{#var:npcrarity_data}}|insep=%%<!--
+	-->|remove={{#var:npcrarity_data_critters}}|removesep=%%<!--
+	-->|outsep=%%<!--
+-->}}}}<!--
+
+// extract town NPCs from base data
+-->{{#vardefine:npcrarity_data_townNPCs|{{#listfilter:<!--
+	-->|list={{#var:npcrarity_data}}<!--
+	-->|insep=%%|outsep=%%<!--
+	-->|fieldsep=₪|token=,,@@<!-- split npc data element on ₪, use last one
+	-->|pattern=<esc>{{#if:@@|keep|remove}}</esc><!-- if "is town npc" field exists, then extract
+-->}}}}<!--
+
+// remove town NPCs from base data
+// remaining base data is then only enemies
+-->{{#vardefine:npcrarity_data_enemies|{{#listfilter:<!--
+	-->|list={{#var:npcrarity_data}}|insep=%%<!--
+	-->|remove={{#var:npcrarity_data_townNPCs}}|removesep=%%<!--
+	-->|outsep=%%<!--
+-->}}}}<!--
+
+
+// output
+--><div class="ajaxHide">
+此页面列出类所有'''[[{{tr|Lifeform Analyzer}}]]所检测的生物'''。
+
+此数据从《[[{{tr|Terraria}}]]》的源代码自动生成，但可以在此页面上进行手工调整。
+</div><!--
+
+-->{{options/snap|item|snapshot:lifeform_analyzer}}<!--
+-->{{options/set|item|mode=table|icons=n|wrap=y|class=block aligncenter textleft|maxsize=100x100px}}<!--
+
+// MANUAL DATA
+-->{{#dplvar:set<!--
+	// format:
+	   |npcrarity_row:<NPC name>|<custom table row>
+	   |npcrarity_rows:<enemies/critters/town npcs>|<custom table rows for the respective table>
+	-->|npcrarity_row:Blood Eel Head|{{!}} {{item|Blood Eel}} {{!}}{{!}} {{npcinfo|Blood Eel|rarity}}<!--
+-->}}<!--
+
+// output tables
+-->{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria ajaxForceTerraria sortable"
+! colspan=2 | {{tr|Enemies}}
+! {{tr|Rarity}}
+{{#listmap:list={{#var:npcrarity_data_enemies}}|insep=%%|fieldsep=₪|token=##,@@,|pattern=<esc>{{#vardefine:npcrarity_row:npcname|{{npcNameFromId|##}}}}
+|-
+{{#or:{{#dplvar:npcrarity_row:{{#var:npcrarity_row:npcname}}}}|
+{{!}} {{item|{{#var:npcrarity_row:npcname}}}} {{!}}{{!}} @@
+}}</esc>|outsep=}}
+|-
+{{#dplvar:npcrarity_rows:enemies}}
+|}
+{{flexend|item}}
+{{flexstart|alignitems=flex-start|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+{| class="terraria ajaxForceTerraria sortable"
+! colspan=2 | {{tr|Critters}}
+! {{tr|Rarity}}
+{{#listmap:list={{#var:npcrarity_data_critters}}|insep=%%|fieldsep=₪|token=##,@@,|pattern=<esc>{{#vardefine:npcrarity_row:npcname|{{npcNameFromId|##}}}}
+|-
+{{#or:{{#dplvar:npcrarity_row:{{#var:npcrarity_row:npcname}}}}|
+{{!}} {{item|{{#var:npcrarity_row:npcname}}}} {{!}}{{!}} @@
+}}</esc>|outsep=}}
+|-
+{{#dplvar:npcrarity_rows:critters}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria ajaxForceTerraria sortable"
+! colspan=2 | {{tr|NPCs}}
+! {{tr|Rarity}}
+{{#listmap:list={{#var:npcrarity_data_townNPCs}}|insep=%%|fieldsep=₪|token=##,@@,|pattern=<esc>{{#vardefine:npcrarity_row:npcname|{{npcNameFromId|##}}}}
+|-
+{{#or:{{#dplvar:npcrarity_row:{{#var:npcrarity_row:npcname}}}}|
+{{!}} {{item|{{#var:npcrarity_row:npcname}}}} {{!}}{{!}} @@
+}}</esc>|outsep=}}
+|-
+{{#dplvar:npcrarity_rows:town npcs}}
+|}
+{{flexend|item}}
+{{flexend}}
+{{flexend}}<!--
+
+-->{{options/restore|item|snapshot:lifeform_analyzer}}
+
+{{category|Pages to transclude}}
+{{language info|en=Lifeform Analyzer/List of detected creatures}}

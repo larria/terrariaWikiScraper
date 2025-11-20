@@ -1,0 +1,457 @@
+{{float file box|[[File:Mana.png|{{tr|Mana}}]]|{{tr|Mana}}|width=45}}
+'''{{tr|Mana}}'''是玩家使用[[{{tr|magic weapons}}]]或[[{{tr|summon weapons}}]]（[[{{tr|whips}}]]除外）时所消耗的资源。每种{{tr|magic and summon weapon}}都有特定的{{tr|mana cost}}，使用时会消耗玩家的{{tr|mana}}。当玩家的{{tr|mana}}完全耗尽时，{{tr|magic or summon weapon}}就无法再次使用，直到再生出了此武器的{{tr|mana cost}}。
+
+类似于玩家的[[{{tr|Health}}]]，{{tr|the player}}的当前{{tr|mana}}供应和容量由一个度量条表示：显示在屏幕右上边缘处的一列蓝色的星星，每颗{{tr|star}}代表 20 {{tr|mana}}。只要玩家不在使用{{tr|Mana}}，它就会自动再生；如果玩家站定不动它会更快再生，再生速度还会根据玩家当前的总{{tr|mana}}值而有一个速率加成：玩家拥有的{{tr|mana}}越多，它就会越快再生。
+
+每个人物都会以 20 {{tr|mana capacity}}（{{tr|mana}}条上一颗星星）开局。用[[{{tr|Mana Crystal}}]]可以将{{tr|player}}的{{tr|mana capacity}}永久性提升 20，为{{tr|mana}}条添上另一颗星星。这最多可以进行 9 次，加上一开始的那 1 颗星星，一共会有 10 颗星星，代表 200 {{tr|mana}}。
+
+在{{eversions|1.4.0.1}}中，玩家可以通过[[{{tr|settings}}]]中的“生命和魔力样式”选项来更改[[#{{tr|Health and mana}}条样式|{{tr|mana}}条的样式]]。具有横条样式时，{{tr|mana}}计会显示为位于{{tr|health}}计下方的分隔为多个小部分的蓝色横条，每个部分代表 20 {{tr|mana}}。
+
+可以通过各种[[{{tr|armor}}]]和[[{{tr|accessories}}]]来进一步提高{{tr|mana capacity}}。具有{{tr|Arcane}}[[{{tr|modifier}}]]的{{tr|accessories}}也会将玩家的{{tr|maximum mana capacity}}提高 20。最大可达到 400 {{tr|mana}}，或总共 20 颗星星。
+
+一旦{{tr|mana regeneration}}完全完成、玩家再次达到最大{{tr|mana}}，会播放一个“叽”的音效 {{sound||MaxMana.wav}}，人物外观上也会短暂地呈现一个蓝色闪光效果。
+
+== 增强装备 ==
+要更频繁地使用消耗{{tr|mana}}的{{tr|weapons}}，某些物品可以增加最大{{tr|mana}}值或降低{{tr|mana cost}}。由于{{tr|mana regeneration}}起作用的方式，只要玩家注意维持当前{{tr|mana}}值在某些阈值之上，这些物品也能有效提高{{tr|mana regeneration}}速率。
+
+也有会提高{{tr|mana cost}}的{{tr|modifiers}}。
+
+{| class="terraria lined sortable"
+! {{tr|Item}}
+! data-sort-type=number | 最大{{tr|mana}}增加
+! data-sort-type=number | {{tr|Mana cost}}
+! 备注
+|-
+| {{item|Magic Hat}}
+| 60（3 {{tr|star}}）（{{tr|set bonus}}）
+| {{note|-}}
+| {{tr|magic damage and magic critical strike chance}}各提高 6%。
+|-
+| {{item|Amethyst Robe}}
+| 20（1 {{tr|star}}）
+| -5%
+|
+|-
+| {{item|Topaz Robe}}
+| 40（2 {{tr|stars}}）
+| -7%
+|
+|-
+| {{item|Sapphire Robe}}
+| 40（2 {{tr|stars}}）
+| -9%
+|
+|-
+| {{item|Emerald Robe}}
+| 60（3 {{tr|stars}}）
+| -11%
+|
+|-
+| {{item|Ruby Robe}}
+| 60（3 {{tr|stars}}）
+| -13%
+|
+|-
+| {{item|Amber Robe}}
+| 60（3 {{tr|stars}}）
+| -13%
+|
+|-
+| {{item|Diamond Robe}}
+| 80（4 {{tr|stars}}）
+| -15%
+|
+|-
+| {{item|Jungle Hat}} / {{item|Ancient Cobalt Helmet}}
+| data-sort-value=40 | 40（2 {{tr|stars}}）{{eicons|1.3.0.1}} /<br/>20（1 {{tr|star}}）{{eicons|1.3.0.1|invert=y}}
+| -16%（{{tr|set bonus}}）
+| {{tr|magic critical strike chance}}提高 6%。
+|-
+| {{item|Jungle Shirt}} / {{item|Ancient Cobalt Leggings}}
+| 20（1 {{tr|star}}）
+| -16%（{{tr|set bonus}}）
+| {{tr|magic damage}}提高 6%。
+|-
+| {{item|Jungle Pants}} / {{item|Ancient Cobalt Breastplate}}
+| 20（1 {{tr|star}}）
+| -16%（{{tr|set bonus}}）
+| {{tr|magic critical strike chance}}提高 6%。
+|-
+| {{item|Cobalt Hat}}
+| 40（2 {{tr|stars}}）
+| -14%（{{tr|set bonus}}）
+| {{tr|magic damage}}提高 10%、{{tr|magic critical strike chance}}提高 9%。
+|-
+| {{item|Palladium Headgear}}
+| 60（3 {{tr|stars}}）
+| {{note|-}}
+| {{tr|magic damage and magic critical strike chance}}各提高 9%。
+|-
+| {{item|Mythril Hood}}
+| 60（3 {{tr|stars}}）
+| -17%（{{tr|set bonus}}）
+| {{tr|magic damage}}提高 15%。
+|-
+| {{item|Orichalcum Headgear}}
+| 80（4 {{tr|stars}}）
+| {{note|-}}
+| {{tr|magic critical strike chance}}提高 18%。
+|-
+| {{item|Adamantite Headgear}}
+| 80（4 {{tr|stars}}）
+| -19%（{{tr|set bonus}}）
+| {{tr|magic damage and magic critical strike chance}}各提高 12%。
+|-
+| {{item|Titanium Headgear}}
+| 100（5 {{tr|stars}}）
+| {{note|-}}
+| {{tr|magic damage}}提高 16%、{{tr|magic critical strike chance}}提高 7%。
+|-
+| {{item|Forbidden Robes}}
+| 40（2 {{tr|stars}}）
+| {{note|-}}
+|
+|-
+| {{item|Forbidden Treads}}
+| 40（2 {{tr|stars}}）
+| {{note|-}}
+| {{tr|magic damage}}提高 10%。
+|-
+| {{item|Apprentice's Hat}}
+| {{note|-}}
+| -10%
+| {{tr|magic damage}}提高 10%。
+|-
+| {{item|Hallowed Headgear}}
+| 100（5 {{tr|stars}}）
+| -20%（{{tr|set bonus}}）{{eicons|1.4.4|invert=y}}
+| {{tr|magic damage and magic critical strike chance}}各提高 12%。
+|-
+| {{item|Chlorophyte Headgear}}
+| 80（4 {{tr|stars}}）
+| -17%
+| {{tr|magic damage}}提高 16%。
+|-
+| {{item|Spectre Mask}}
+| 60（3 {{tr|stars}}）
+| -13%
+| {{tr|magic damage and magic critical strike chance}}各提高 10%。
+|-
+| {{item|Dark Artist's Robes}}
+| {{note|-}}
+| -15% {{eicons|1.4.1}}
+| {{tr|magic damage}}提高 10%。
+|-
+| {{item|Nebula Helmet}}
+| 60（3 {{tr|stars}}）
+| -15%
+| {{tr|magic damage and critical strike chance}}各提高 7%。
+|-
+| {{item|Spectral Headgear|icons=n}} {{eicons|1.3.0.1|invert=y}}
+| 120（6 {{tr|stars}}）
+| {{note|-}}
+| {{tr|magic damage and magic critical strike chance}}各提高 15%。
+|-
+| {{item|Spectral Subligar|icons=n}} {{eicons|1.3.0.1|invert=y}}
+| 30（1½ {{tr|star}}）
+| {{note|-}}
+| {{tr|magic damage}}提高 10%。
+|-
+| {{item|Band of Starpower}}
+| 20（1 {{tr|star}}）
+| {{note|-}}
+|
+|-
+| {{item|Mana Regeneration Band}}
+| 20（1 {{tr|star}}）
+| {{note|-}}
+| 增加{{tr|mana regeneration}}速率。
+|-
+| {{item|Magic Cuffs}}
+| 20（1 {{tr|star}}）
+| {{note|-}}
+| 受到伤害时恢复{{tr|mana}}。
+|-
+| {{item|Celestial Cuffs}}
+| 20（1 {{tr|star}}）{{eicons|1.4.1}}
+| {{note|-}}
+| 受到伤害时恢复{{tr|mana}}。扩大魔力星的拾取范围。
+|-
+| {{item|Nature's Gift}}
+| {{note|-}}
+| -6%
+|
+|-
+| {{item|Mana Flower}}
+| {{note|-}}
+| -8%
+| 自动使用{{tr|Mana Potions}}。
+|-
+| {{item|Magnet Flower}}
+| {{note|-}}
+| -8%
+| 自动使用{{tr|Mana Potions}}。扩大魔力星的拾取范围。
+|-
+| {{item|Arcane Flower}}
+| {{note|-}}
+| -8%
+| 自动使用{{tr|Mana Potions}}。{{tr|enemies}}将不太可能瞄准玩家。
+|-
+| {{item|Mana Cloak}}
+| {{note|-}}
+| -8%
+| 自动使用{{tr|Mana Potions}}。收到伤害后会使星星坠落。收集{{tr|star}}会恢复{{tr|mana}}。
+|-
+| {{item|Crystal Ball}}
+| 20（1 {{tr|star}}）
+| -2%
+| {{eicons|1.4.4|invert=y}}持续 10 分钟。/{{eicons|1.4.4}}持续直到{{tr|death}}。+5% {{tr|magic damage}}、+2% {{tr|magic critical strike chance}}。
+|-
+| 任何拥有[[{{tr|Arcane}}]][[{{tr|modifier}}]]的{{tr|accessory}}
+| 20（1 {{tr|star}}）
+| {{note|-}}
+|
+|-
+| 拥有[[{{tr|Mystic}}]]/[[{{tr|Adept}}]]/[[{{tr|Masterful}}]]{{tr|modifier}}的{{tr|Weapon}}]]
+| {{note|-}}
+| -15%
+|
+|-
+| 拥有[[{{tr|Celestial}}]]/[[{{tr|Manic}}]]/[[{{tr|Mythical}}]]{{tr|modifier}}的{{tr|Weapon}}
+| {{note|-}}
+| -10%
+|
+|-
+| 拥有[[{{tr|Inept}}]]/[[{{tr|Taboo}}]]{{tr|modifier}}的{{tr|Weapon}}
+| {{note|-}}
+| +10%
+|
+|-
+| 拥有[[{{tr|Intense}}]]{{tr|modifier}}的{{tr|Weapon}}
+| {{note|-}}
+| +15%
+|
+|-
+| 拥有[[{{tr|Ignorant}}]]/[[{{tr|Furious}}]]{{tr|modifier}}的{{tr|Weapon}}
+| {{note|-}}
+| +20%
+|
+|}
+
+== 恢复{{tr|mana}} ==
+{{redirect|Mana regeneration|{{tr|the buff}}|{{tr|Mana Regeneration Potion}}}}
+
+{{tr|Mana}}在不使用时会自行再生，直到达到玩家的当前最大值。
+
+自然再生速率会受玩家是否在移动中、和{{tr|character}}当前有多少{{tr|mana}}所影响。这个公式用于惩罚轻率地使用{{tr|mana}}——如果所有{{tr|mana}}都被用光，玩家在停止移动或使用{{tr|potion}}之前就会''几乎完全无{{tr|mana}}再生''。相反，当玩家停止移动（包括站立不动或在使用[[{{tr|hooks}}]]静止不动）并在{{tr|weapon}}每次使用间等待直到{{tr|mana}}回满，{{tr|mana}}会以最快可能速度回复。因此，佩戴能增加最大{{tr|mana}}值的物品也能提高玩家的回复速度，因为每次使用{{tr|weapon}}会消耗更少百分比的{{tr|maximum mana}}，从而为玩家提供更高的{{tr|mana regeneration}}乘数。
+
+但是，在消耗任何量的{{tr|mana}}之后，{{tr|mana}}会有一小段时间不会再生，这意味着玩家必须停止施法一小段时间来再生{{tr|mana}}。再生的冷却时间从停止消耗{{tr|mana}}那一刻开始计算，因此施放如[[{{tr|Magic Missile}}]]或[[{{tr|Flamelash}}]]一类的{{tr|weapon}}时会从它开始施放就立刻开始计算冷却，无论{{tr|projectile}}被维持存在多长时间。
+
+有多个物品可以用于再生{{tr|mana}}：
+{| class="terraria lined sortable"
+! {{tr|Item}}
+! data-sort-type=number | 立刻恢复{{tr|mana}}
+! 备注
+|-
+| {{item|Mana Crystal}}
+| 20
+| 还可将最大{{tr|mana}}提高 20。单个人物最多可以使用 9 次（直到达到固定上限 200）。
+|-
+| {{item|Lesser Mana Potion}}
+| 50
+|
+|-
+| {{item|Mana Potion}}
+| 100
+|
+|-
+| {{item|Greater Mana Potion}}
+| 200
+|
+|-
+| {{item|Super Mana Potion}}
+| 300
+|
+|-
+| {{item|Lesser Restoration Potion}}
+| 50
+| 和大多数其他消耗性治疗物品共享冷却时间。
+|-
+| {{item|Restoration Potion}}
+| 100 {{eicons|1.4.0.1|invert=y}}
+| 和大多数其他消耗性治疗物品共享冷却时间。
+仅在{{eversions|1.4.0.1|invert=y}}中恢复{{tr|Mana}}。
+|-
+| {{item|Mana Regeneration Potion}}
+| {{note|-}}
+| 增加{{tr|mana regeneration}}，持续 8 分钟。
+|-
+| {{item|Mana Regeneration Band}}
+| {{note|-}}
+| 装备时，{{tr|mana}}增加 20，并和当前剩余{{tr|mana}}量正相关地提高{{tr|mana regeneration}}速率。
+|-
+| {{item|Magic Cuffs}}
+| {{note|-}}
+| 装备时，{{tr|mana}}增加 20 并在受伤害时回复{{tr|mana}}。
+|-
+| {{item|Mana Booster}}
+| {{note|-}}
+| 提供{{tr|the Mana Nebula buff}}，无视当前{{tr|mana}}使用或剩余{{tr|mana}}，持续恢复{{tr|mana}}（每层能提供每秒 10 {{tr|mana}}回复）。效果最多可叠加三次。
+|-
+| {{item|Star}}
+| 100
+| 当玩家不具有满{{tr|mana}}时由[[{{tr|enemies}}]]或[[{{tr|pots}}]]掉落，或通过激活[[{{tr|Star Statue}}]]生成。
+|-
+| {{item|Star Statue}}
+| {{note|-}}
+| 激活时生成一个{{tr|Star}}。
+|-
+| {{item|Celestial Magnet}}
+| {{note|-}}
+| 装备时，扩大{{tr|Stars}}的拾取范围。
+|-
+| {{item|Magnet Flower}}
+| {{note|-}}
+| 自动使用{{tr|Mana Potions}}。扩大{{tr|Stars}}的拾取范围。
+|-
+| {{item|Celestial Cuffs}}
+| {{note|-}}
+| 装备时，{{tr|mana}}增加 20，在受伤时回复{{tr|mana}}并且扩大{{tr|Stars}}的拾取范围。
+|-
+| {{item|Celestial Emblem}}
+| {{note|-}}
+| 装备时，提高{{tr|magic damage}}并且扩大{{tr|star}}的拾取范围。
+|-
+| {{item|Star in a Bottle}}
+| {{note|-}}
+| 当放在附近时，提高{{tr|mana regeneration}}。在{{eversions|1.4.4}}中，还会减少{{tr|mana regeneration}}延迟。
+|-
+| {{item|Arcane Crystal}}
+| {{note|-}}
+| 略微减少{{tr|mana regeneration}}延迟和提高{{tr|mana regeneration}}速度。
+|}
+
+=== 技术性信息 ===
+{{exclusive|1.4.4.9|section=y}}
+{{tr|The mana regeneration}}和[[{{tr|health regeneration}}]]的机制类似——也有每{{tr|tick}}{{tick}}根据{{tr|mana regeneration}}速度而提高的{{tr|mana}}计数器。当计数器到达 120 或以上时，它会降低 120 并将{{tr|mana}}增加 1。因此，1 点{{tr|mana regeneration}}速度等同于每秒（恢复）0.5 {{tr|mana}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateManaRegen / Terraria.Player.Update}}
+
+默认情况下，玩家的{{tr|mana}}并不会总是处于再生状态：在玩家使用了消耗{{tr|mana}}的物品后，会应用{{tr|mana regeneration}}延迟。这一延迟会被设置为一个特定的数，由下方公式计算（在计算后向上取整）：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update|t=如果玩家在穿着[[{{tr|Meteor armor}}]]时使用[[{{tr|Space Gun}}]]、[[{{tr|Gray Zapinator}}]]、或[[{{tr|Orange Zapinator}}]]，则不会应用这一延迟。}}
+<math>\mathit{魔力再生延迟} = 0.7\times\left(\left(1-\frac{\mathit{当前魔力}}{\mathit{最大魔力}}\right)\times 240 + 45 \right)</math>
+
+{{tr|The mana regeneration}}延迟默认情况下每{{tr|tick}}降低 1。特定效果会提高这一值：
+{| class="terraria lined"
+! 影响因素 !! 值
+|-
+| 不移动<br/>''或''<br/>[[{{tr|Mana Regeneration}}]]
+| +1
+|-
+| [[{{tr|Arcane Crystal}}]]
+| +0.05
+|-
+| [[{{tr|Mana Regeneration Band}}]]
+| +1
+|-
+| [[{{tr|Star in a Bottle}}]] 
+| +0.5
+|}
+
+此外，如果激活了{{tr|Mana Regeneration buff}}，若{{tr|mana regeneration}}延迟大于 20，它将会被设为 20。
+
+只要{{tr|mana regeneration}}延迟达到 0，就会由以下公式计算得出{{tr|mana regeneration}}速度：
+
+<math>\mathit{魔力再生速度} = \left(\frac{\mathit{最大魔力}}{3}+1+\mathit{静止奖励}+\mathit{奥术水晶奖励}+\mathit{魔力再生奖励}\right)\times\mathit{再生因数}\times1.15</math><!--
+
+Pre-1.4.4 formula: 
+<math>\mathit{Mana\ regeneration\ rate} = \left(\frac{\mathit{maximum\ mana}}{7}+1+\mathit{stationary\ bonus}+\mathit{mana\ regen\ bonus}\right)\times\mathit{regen\ factor}\times1.15</math>
+
+Star in a Bottle only provides +2 mana regen bonus.
+
+Other values are the same.
+
+-->
+* 当玩家不移动或具有{{tr|Mana Regeneration buff}}时，<math>\mathit{静止奖励} = \frac{\mathit{最大魔力}}{3}</math>；否则它为 0。
+* 当玩家使用了{{tr|Arcane Crystal}}后，<math>\mathit{奥术水晶奖励} = \frac{\mathit{最大魔力}}{50}</math>；否则它为 0。
+* <math>\mathit{魔力再生奖励}</math> 默认为 0。特定效果会提高这一值：
+{| class="terraria lined"
+! 影响因素 !! 值
+|-
+| [[{{tr|Mana Regeneration Band}}]]
+| +25
+|-
+| [[{{tr|Star in a Bottle}}]]
+| +10
+|}
+* <math>\mathit{再生因数} = \frac{\mathit{当前魔力}}{\mathit{最大魔力}}\times0.8+0.2</math>。如果激活了[[{{tr|Mana Regeneration}}]]{{tr|buff}}，它将会被设为 1。
+
+和所有其他{{tr|mana}}再生方法不同，[[{{tr|Nebula armor}}]]的[[{{tr|Mana Nebula}}]]会周期性地再生固定量的{{tr|mana}}，无视{{tr|mana regeneration}}延迟。存在{{tr|Nebula}}计数器，每{{tr|tick}}会增加等同于{{tr|Mana Nebula}}堆叠层数数量的值。当计数器达到 6 后，它会降低 6 并将{{tr|mana}}增加 1。
+
+=== 备注 ===
+* {{tr|Mana}}恢复效果不会超过玩家的最大{{tr|mana}}值，并且任何超过最大值的{{tr|mana}}恢复都会损失掉。因此，建议在按下{{tr|mana potion}}热键时要小心，避免浪费地过度使用{{tr|mana}}恢复物品。
+* {{tr|Restoration potions}}（同样能恢复[[{{tr|Health}}]]），与所有其他生命回复物品共享同一个名为[[{{tr|Potion Sickness}}]]的物品冷却。此冷却时长为 60 秒，在此{{tr|consumable item}}被使用时开始。在此期间玩家不能再使用这些物品。这可以防止玩家通过不断消耗物品来打通危险区域或{{tr|enemies}}。
+** “纯”{{tr|mana}}恢复物品没有这个限制——甚至还有一个之前提到过的[[{{tr|Mana Flower}}]]物品允许自动使用{{tr|mana potions}}以维持持续消耗{{tr|mana}}。如果愿意支付{{tr|potions}}的开销，玩家''可能''会尝试连续发射魔法攻击。请记住，消耗“纯”{{tr|mana}}恢复物品会触发[[{{tr|Mana Sickness}}]]{{tr|debuff}}。虽然这并不会阻止玩家使用更多{{tr|mana potions}}，但它''会''在短时间内削弱魔法伤害输出。如果使用{{tr|Mana Flower}}，请考虑用[[{{tr|Magic Power Potion}}]]来抵消魔法伤害的减少。
+* 一般而言，应当聚焦于减少{{tr|mana cost}}的装备而非提高最大{{tr|mana}}的装备，特别是在使用低{{tr|mana cost}}的武器时。例如{{tr|Mythical}}[[{{tr|Razorpine}}]]的{{tr|mana cost}}在使用[[{{tr|Spectre Mask}}]]和[[{{tr|Dark Artist's Robes}}]]时可以由 4 降低至 2，而这两装备还同时提供大量攻击性{{tr|magic}}加成。这在功能上等价于将最大{{tr|mana}}加倍。
+
+=== 小贴士 ===
+* 布置连接了[[{{tr|Timer}}]]的[[{{tr|Star Statues}}]]可以帮助使用{{tr|magic}}的玩家在 [[{{tr|boss}}]] 战或刷怪之类有时间准备战斗场所的情况下得到更好的魔法发射速率。[[{{tr|Crystal Ball}}]]在这种情况也会很有帮助。
+* 如果玩家想要依靠消耗{{tr|mana}}的{{tr|weapons}}进行正常探索，他们应该记住如何最好地回复{{tr|mana}}，即使是在分心时也是如此。为了达成最大量的{{tr|mana regeneration}}，玩家应当练习了解发射之间的时间把控，以及何时表明他们已经完全回满{{tr|mana}}的声音会出现，（这样他们可以卡在那个时刻发出下一次攻击，）并尝试在{{tr|mana}}开始回复时保持静止。可以在诸如玩家的[[{{tr|home}}]]之类安全的位置练习发射，直到他们适应了其{{tr|mana}}再生的方式。
+
+== {{tr|Health and mana}}条样式 ==
+{{transclude|{{tr|Health}}#{{tr{{!}}Health and mana}}条样式|clr=y}}
+
+== 成就 ==
+{{achievement|name=Topped Off}}
+{{achievement|name=Maxed Out}}
+
+== 小贴士 ==
+* 最大{{tr|Mana}}的硬性上限为 400。装备特定的装备时，有可能在不使用任何{{tr|Mana Crystals}}而达到此数值。
+:* {{eversions|1.3.0.1}}
+:: {{itemlist|class=terraria|width=14em
+|{{item|Titanium Headgear}}
+|{{item|Hallowed Headgear|note=(替代{{tr|Titanium Headgear}})|wrap=y}}
+|{{item|Diamond Robe}}
+|{{item|Forbidden Treads}}
+|{{item|Clairvoyance}}
+|{{item|Band of Starpower|note2=(Arcane)}}
+|{{item|Mana Regeneration Band|note2=({{tr|Arcane}})}}
+|{{item|Celestial Cuffs|note2=（{{tr|Arcane}}）}}
+|{{item|Magic Cuffs|note2=({{tr|Arcane}})}}
+}}
+:* {{eversions|1.3.0.1|invert=y}}
+:: {{itemlist|class=terraria|width=14em
+|{{item|Spectral Headgear|icons=n}}
+|{{item|Diamond Robe}}
+|{{item|Spectral Subligar|icons=n}}
+|{{item|Clairvoyance}}
+|{{item|Band of Starpower|note2=(Arcane)}}
+|{{item|Mana Regeneration Band|note2=({{tr|Arcane}})}}
+|{{item|Magic Cuffs|note2=({{tr|Arcane}})}}
+|另外两个{{tr|Arcane accessories}}
+}}
+:: 这甚至能将最大{{tr|mana}}提升到 410。
+
+== 花絮 ==
+* {{tr|mana}}完全回复时播放的声音同样也用于提示[[{{tr|Starfury}}]]、[[{{tr|Ice Blade}}]]、[[{{tr|Enchanted Sword (item)}}|{{tr|Enchanted Sword}}]]、和[[{{tr|Chlorophyte Claymore}}]]的{{tr|projectile}}冷却时间结束。{{source code ref|v=1.3.5.3|method=Terraria.Player.ItemCheck}}在{{eversions|1.4.4|invert=y}}中，这还包括[[{{tr|Frostbrand}}]]、[[{{tr|Beam Sword}}]]、和[[{{tr|Chlorophyte Saber}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|base mana regeneration}}速率（在移动时，且不使用{{tr|Mana Regeneration Potion}}时的再生量）现在变为原先的两倍以上。
+** 静止时，和/或使用{{tr|Mana Regeneration Potion}}时的{{tr|The mana regeneration bonus}}降低了 1/3。这一降低量和{{tr|base mana regeneration}}速率的增加量完全相同，因此在{{tr|mana regeneration}}总量上来说没有净增加。
+** 使用{{tr|Mana Regeneration Potion}}/静止时的玩家应当和之前具有相同的{{tr|mana regeneration}}，但最低的{{tr|mana regeneration}}速率被大量提高了，使得{{tr|Mana Regeneration Potion}}/静止不再占游玩的主导地位。}}
+{{history|Desktop 1.4.0.1|添加了两种新的{{tr|mana}}样式选项。}}
+{{history|Desktop 1.2.3.1| {{tr|Spectre Hood}}不再提高{{tr|Mana cost}}了。}}
+{{history|Desktop 1.2.3|
+** {{tr|Spectre Hood}}现在会提高 20% {{tr|Mana Cost}}而非降低，并且不再增加额外{{tr|mana}}了
+** 引入了新的{{tr|Spectre Hood}}变体：{{tr|Spectre Mask}}，会降低 13% {{tr|Mana Cost}}并且会提高 60 最大{{tr|mana}}（3 颗{{tr|Stars}}）。}}
+{{history|Desktop 1.2|新人物会以基础{{tr|Mana}}开局。}}
+{{history|Desktop 1.0.6.1|修正了当玩家只有 0 基础{{tr|mana}}时{{tr|Mana}}不会再生的 {{tr|bug}}。}}
+{{history|Desktop 1.0.6|
+** {{tr|Mana}}现在会根据玩家的{{tr|mana}}池中有多少{{tr|mana}}来回复。当前拥有的{{tr|mana}}越多，回复的就越快。它在站立不动时也会比移动中回复的更快。
+** {{tr|Mana}}条由紫色变为蓝色，同时大多数相关物品也是如此。
+** 当其回满时会有一个音效表示，人物会发出带有“哔”声的小闪光。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Mana}}

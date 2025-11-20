@@ -1,0 +1,80 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1121
+| tags = drop / bag loot / treasure bag loot
+| listcat = magic guns
+}}
+{{drop infobox|style=clear:right}}
+[[File:Bee Gun (demo).gif|frame|{{tr|Bee Gun}}攻击[[{{tr|Target Dummies}}]]和[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Bee Gun}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|Magic gun}}]]，有 {{chance|1/3}} 的概率掉落自[[{{tr|Queen Bee}}]]。使用时，其会发射一连串{{tr|Bee projectiles}}，自动追踪[[{{tr|enemies}}]]，可穿透两次{{tr|enemies}}或在[[{{tr|blocks}}]]上反弹三次，且有 {{chance|1/2}} 的概率造成 1 点额外{{tr|damage}}。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The Bee projectiles}}持续 10 {{tr|seconds}}且当接触[[{{tr|water}}]]或[[{{tr|lava}}]]时消失。
+* 装备{{eil|Hive Pack}}时，所有{{tr|Bee projectiles}}都有 {{chance|1/2}} 几率被转化为{{tr|Giant Bee projectiles}}，它们造成 1–3 额外伤害，具有 {{knockback|0.5|full=y|class=}}的[[{{tr|knockback}}]]，能够穿透{{tr|enemies}}或在{{tr|solid blocks}}上反弹总共 4 次，飞行速度显著更快，并持续 11 秒。{{source code ref|v=1.4.3.6|method=Terraria.Player.beeType / Terraria.Player.beeDamage / Terraria.Player.beeKB / Terraria.Projectile.SetDefaults|t=虽然实际上{{tr|Giant Bees}}的{{tr|knockback}}为 <code>0.5 + ''{{tr|Bee knockback}}'' × 1.1</code>，但所有普通{{tr|Bees}}都具有 0 {{tr|knockback}}，使得 1.1 倍的乘数永远没有实际效果。}}
+* {{tr|The Bee Gun}}每次发射 1–3 {{tr|Bee projectiles}}，且有两次独立的 {{chance|1/6}} 概率额外发射一只{{tr|bee}}。若装备{{tr|Hive Pack}}，则额外有 {{chance|1/3}} 的概率再发射一只{{tr|bee}}，这使每次发射的{{tr|bee}}增加至 1-4 只。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot}}
+{{options/set|chance|reduce=no}}<!-- using the same denominator for all fractions makes comparisons easier -->
+: {| class="terraria lined align-center"
+! rowspan=2 | {{tr|bee}}<br/>数量
+! colspan=2 | 概率
+|-
+! 常规
+! 使用 {{item|Hive Pack|icons=no|maxsize=x23px}}
+|-
+| 1 || {{chance|75/324}} || {{chance|50/324}}
+|-
+| 2 || {{chance|105/324}} || {{chance|95/324}}
+|-
+| 3 || {{chance|108/324}} || {{chance|107/324}}
+|-
+| 4 || {{chance|33/324}} || {{chance|58/324}}
+|-
+| 5 || {{chance|3/324}} || {{chance|13/324}}
+|-
+| 6 || {{na}} || {{chance|1/324}}
+|}
+{{options/reset|chance}}
+: 期望来看，{{tr|the Bee Gun}}每次使用发射 {{formatnum:{{#expr:(1*1/3 + 2*1/3 + 3*1/3 + 1*1/6 + 1*1/6) round 2}}}} 个{{tr|Bee projectiles}}，装备{{tr|hive pack}}则增加至 {{formatnum:{{#expr:(1*1/3 + 2*1/3 + 3*1/3 + 1*1/6 + 1*1/6 + 1*1/3) round 2}}}}。
+
+== 成就 ==
+{{achievement|name=Not the Bees!}}
+
+== 小贴士 ==
+* {{tr|The Bee Gun}}提供了强大的群体控制能力，尤其是在狭小空间中将{{tr|bees}}直接射向{{tr|enemies}}时（例如[[{{tr|Dungeon}}]]中）。
+* 由于此{{tr|weapon}}较低的{{tr|damage}}和较快的发射频率，其应当搭配提供[[{{tr|armor penetration}}]]的物品使用，例如{{eil|Shark Tooth Necklace}}
+* 与大部分{{tr|magic weapons}}不同，{{tr|the Bee Gun}}从[[{{tr|Mana Regeneration Potion}}]]中获益比从[[{{tr|Mana Potion}}]]中更多。因为此{{tr|the weapon}}发射持续存在的{{tr|projectile}}可在{{tr|player}}{{tr|mana}}再生期间造成{{tr|damage}}，{{tr|Mana Potions}}不足以支撑其快速的{{tr|mana cost}}且将会由于[[{{tr|Mana Sickness}}]]的叠加使得伤害输出降低。
+
+== 花絮 ==
+* {{tr|the Bee Gun}}不会受[[{{tr|Bee armor}}]]加成，虽然有与此相关的[[{{tr|achievement}}]]。
+
+== 另见 ==
+* [[{{tr|Wasp Gun}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在具有占位的{{tr|knockback}}值，允许它获得更好的{{tr|modifiers}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** {{tr|Sell value}}由 {{gc|3}} 降低至 {{gc|2}}。}}
+{{history|Desktop 1.3.0.3|修复了无法造成[[{{tr|Critical hit}}]]的问题。}}
+{{history|Desktop 1.2.4|
+** {{tr|Damage}}由 8 提升至 9。
+** {{tr|Mana usage}}由 6 降低至 5。}}
+{{history|Desktop 1.2.3|
+** {{tr|Damage}}由 7 提升至 8。
+** {{tr|Sell value}}由 {{gc|7}} 降低至 {{gc|3}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Bee Gun}}

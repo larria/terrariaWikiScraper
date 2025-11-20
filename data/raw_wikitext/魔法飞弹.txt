@@ -1,0 +1,94 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 113
+| listcat = wands
+| tags = bag loot
+| sound1 = Item 10.wav
+| soundcaption1 = 碰撞
+}}
+{{drop infobox|style=clear:right}}
+[[File:Magic Missile (demo).gif|thumb|450px|{{tr|The Magic Missile}}攻击[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]和[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Magic Missile}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|wand}}]]。使用时，它会发射一枚{{tr|magic missile}}，按住 {{key|use}} 键时可随{{tr|cursor}}移动。若拖拽时松开 {{key|use}} 键，{{tr|missile}}会沿当前方向发射。若{{tr|cursor}}释放时固定不动，它会直线远离{{tr|player}}发射。释放后，{{tr|missile}}自动追踪附近的[[{{tr|enemies}}]]，当接触{{tr|enemy}}或[[{{tr|solid block}}]]时，它会产生小型爆炸。{{tr|Magic Missile}}有 {{chance|1/7}} 的概率从[[{{tr|Dungeon}}]]内[[{{tr|Gold Chest}}#{{tr|Dungeon}}|{{tr|Locked Gold Chests}}]]中找到，且有 {{chance|1/7}} 的概率从{{eil|Golden Lock Box}}中获得。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Magic Missile|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|mana}}]]{{tr|cost}}仅用于初始施法。维持和导向{{tr|the missile}}没有额外的{{tr|mana cost}}，玩家在控制它时就会再生{{tr|mana}}。
+* {{tr|The Magic Missile}}的{{tr|projectile}}击中时造成 8 {{tr|ticks}}{{tick}}[[{{tr|global invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* 释放之后，{{tr|projectile}}可追踪 50 {{tr|tiles}}半径内的目标。{{source code ref|name=magicmissiles|v=1.4.4.9|method=Terraria.Projectile.AI_009_MagicMissiles}}
+* 当{{tr|the projectile}}被破坏时，其会产生以碰撞点为中心的 8×8 {{tr|tile}}方形范围的爆炸。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* {{tr|The Magic Missile}}可以穿过[[{{tr|water}}]]和[[{{tr|honey}}]]发射（不像另一个武器[[{{tr|Flamelash}}]]）并且也不会被{{tr|liquids}}减速。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+
+== 小贴士 ==
+* {{tr|Magic Missile}}的{{tr|The projectiles}}可以受控穿过一格宽的缝隙。
+* 因为{{tr|the missile}}会发光且可控，此{{tr|weapon}}是不错的探索工具。
+
+== 花絮 ==
+* {{tr|Magic Missile}}{{tr|spell}}最早在 1974 年出现于奇幻角色扮演桌游《''{{wikipedia|lang=en|Dungeons & Dragons|龙与地下城（Dungeons & Dragons）}}''》中，之后出现在无数的出版物中。
+** 在《''龙与地下城（Dungeons & Dragons）''》中，{{tr|the magic missile}}{{tr|spell}}总是会击中目标，在《''[[{{tr|Terraria}}]]''》则用{{tr|weapon}}的追踪能力表示。
+* 以前，在{{mobile version}}上，{{tr|the missile}}可以发射多次，叠加成可以秒杀大多数{{tr|enemies}}的{{tr|projectile}}。
+
+== 另见 ==
+* [[{{tr|Flamelash}}]]
+* [[{{tr|Rainbow Rod}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 27 提升至 35。}}
+{{history|Desktop 1.4.1|
+** {{tr|Use time}}由 18 提升至 22。
+** {{tr|Mana cost}}由 12 提升至 14。}}
+{{history|Desktop 1.4.0.1|
+** 彻底改版：
+*** 释放后{{tr|Projectile}}会{{tr|homes}}导向{{tr|enemies}}，并且撞击时会产生小范围的爆炸。
+*** {{tr|Projectile}}的移动速度快得多了。
+*** {{tr|Projectile}}{{tr|Sprite updated}}。
+*** [[{{tr|Use time}}]]由 17 提升至 18。
+*** {{tr|Mana cost}}由 10 提升至 12。}}
+{{history|Desktop 1.3.3|现在用于制作[[{{tr|Sky Fracture}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在会出现在有 {{chance|1 in 6}} 的概率出现在[[{{tr|Dungeon Crate}}]]中的[[{{tr|Golden Lock Box}}]]内。
+** 伤害由 23 提升至 27。
+** 击退由 5.5 提升至 7.5。}}
+{{history|Desktop 1.2.3|
+** 伤害由 22 提升至 23。
+** 击退由 5 提升至 5.5。}}
+{{history|Desktop 1.2|{{tr|Sprite updated.}}，旧{{tr|sprite}}是[[File:Magic Missile (old).png|link=]]。}}
+{{history|Desktop 1.0.6|
+** {{tr|Sprite updated.}}旧的外观是 [[File:Magic Missile (pre-1.0.6).png|link=]]。
+** 伤害由 32 降低至 22。
+** 施法所需的[[{{tr|Mana}}]]由 16 降低至 10。
+** {{tr|projectile}}的速度提升了。<!-- or weapon usage? There is only "Magic Missile is now quicker" -->
+** 鼠标按键放开后{{tr|Projectile}}会继续移动，而非消失。}}
+{{history|Desktop 1.0.5|{{tr|Mana cost}}由18 降低至 16。}}
+{{history|Desktop 1.0.3|{{tr|Damage}}由 30 提升至 32。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 伤害由 23 提升至 27。
+** 击退由 5.5 提升至 7.5。}}
+{{history|Console 1.06|
+** 伤害由 22 提升至 23。
+** 击退由 5 提升至 5.5。}}
+{{history|Console 1.02|{{tr|Sprite updated.}}}}
+{{history|Console-Release|Introduced=y|连同属性和外观从{{tr|Desktop}} 1.0.6 引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|
+** 伤害由 22 提升至 23。
+** 击退由 5 提升至 5.5。}}
+{{history|Mobile 1.2.6508|{{tr|Sprite updated.}}}}
+{{history|Mobile-Release|Introduced=y|连同属性和外观从{{tr|Desktop}} 1.0.6 引入。}}
+{{history|3DS-Release|Introduced=y|连同属性和外观从{{tr|Desktop}} 1.2.3 引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Magic Missile}}

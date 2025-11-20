@@ -1,0 +1,68 @@
+{{item infobox
+| auto = 198
+| name = Phaseblades
+| imagealt = [[File:Phaseblade.gif|link=]]
+| damage = {{#vardefineecho:phaseblades-damage|@@@@ {{eicons|1.4.4|small=y}} / 21 {{eicons|1.4.1|invert=y|small=y}}}}
+| use = @@@@ {{eicons|1.4.4|small=y}} / {{ut|25}} {{eicons|1.4.4|invert=y|small=y}}
+| idshow = 198–203, 4258
+| cargo = no
+}}<!--
+
+store each phaseblade to cargo:
+-->{{item infobox/options|view=void}}<!--
+-->{{item infobox| auto = 198 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 199 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 200 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 201 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 202 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 203 | damage = {{#var:phaseblades-damage}} | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 4258 | listcat = Broadswords }}
+{{dablink|不要和[[{{tr|hardmode}}]]中的[[{{tr|Phasesaber}}]]混淆，后者由{{tr|Phaseblade}}制作而来。}}
+
+[[File:Blue Phaseblade (demo).gif|thumb|245px|使用{{tr|Blue Phaseblade}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Phaseblade}}'''是一种[[{{tr|pre-hardmode}}]]的[[{{tr|broadsword}}]]。它有{{eicons|Orange Phaseblade}} 7 / {{eicons|Orange Phaseblade|invert=y}} 6 种颜色不同但是属性相同的种类，其颜色取决于制造它时所使用的[[{{tr|gem}}]]的颜色。所有的{{tr|Phaseblade}}在挥动时都会发出微弱的光。
+
+[[{{tr|Phasesaber}}]]是[[{{tr|hardmode}}]]中{{tr|Phaseblade}}的升级版，由{{tr|Phaseblade}}直接制作而来。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE %Phaseblade|expectedrows=13}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Phaseblade|expectedrows=13}}
+
+== 小贴士 ==
+* 在 [[PvP]] 中，不同颜色的{{tr|Phaseblade}}可以用于区分不同的队伍。
+* 虽然所有种类的{{tr|Phasesaber}}属性均相同，但{{tr|Purple Phaseblade}}通常是最容易也是最快能被制造的{{tr|Phasesaber}}，因为它的制作材料[[{{tr|Amethyst}}]]是最常见的[[{{tr|gem}}]]。
+
+== 花絮 ==
+* 无论是这把武器的外观还是它挥动时的音效都与美国史诗太空歌剧{{wikipedia|Star Wars|《星球大战》}}中的{{wikipedia|lightsaber|能量光剑}}有惊人的相似之处。而制造陨石光剑和晶光刃时的宝石和水晶碎块则更加印证了这一点：它们暗喻了制造光剑时所使用的材料，[http://starwars.wikia.com/wiki/Kyber_crystal 凯伯水晶]。
+* 由于游戏中并没有所谓的“{{tr|Meteorite sword}}”，且制作{{tr|Phaseblade}}时需要{{tr|Meteorite Bars}}，{{tr|Phaseblade}}可以被看作[[{{tr|Meteorite}}]]层次的{{tr|ore sword}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 伤害由 25 提升至 26。
+** {{tr|Usetime}}由 25 降低至 18。}}
+{{history|Desktop 1.4.1|{{tr|all phaseblades}}造成的{{tr|damage}}从 21 增加到了 25。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Orange Phaseblade}}。}}
+{{history|Desktop 1.3.0.1|制作配方现在只需要 15 个[[{{tr|Meteorite bar}}]]而非 20 个。}}
+{{history|Desktop 1.1|可以用来制作[[{{tr|Phasesaber}}]]了。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|制作配方现在只需要 15 个[[{{tr|Meteorite bar}}]]而非 20 个。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|制作配方现在只需要 15 个[[{{tr|Meteorite bar}}]]而非 20 个。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，使用的是{{tr|Desktop}} 1.3.0.1 中的{{tr|crafting recipe}}。}}
+{{history|Mobile 1.3.0.7|制作配方现在只需要 15 个[[{{tr|Meteorite bar}}]]而非 20 个。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Gems}}
+{{Meteorite}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Phaseblades}}

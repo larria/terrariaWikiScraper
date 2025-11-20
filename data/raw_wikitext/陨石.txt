@@ -1,0 +1,64 @@
+{{item infobox
+| pickreq = 50
+| type = Ore
+| debuff = Burning
+| auto = 116
+| width = 1 | height = 1
+| tags = drop / plunder / plunder:Meteorite (biome)
+}}
+{{drop infobox|style=clear:right}}
+{{about|{{tr|ore}}|{{tr|biome}}|{{tr|Meteorite (biome)}}}}
+
+'''{{tr|Meteorite}}'''是一种在[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}坠落地点]]采集的[[{{tr|ore}}]]。坠落地点不是在世界生成时就产生的，而是在游戏过程中满足特定[[{{tr|Meteorite (biome)}}#条件|条件]]后产生。挖掘{{tr|Meteorite}}至少需要[[{{tr|Tungsten Pickaxe}}]]。 {{icon|desktop|console|old-gen|mobile}} 此外，[[{{tr|Meteor Head}}]]在[[{{tr|pre-Hardmode}}]]也会有 2% 的概率掉落 1 {{tr|Meteorite}}。
+
+坠落地点可以在任何地方产生，并附有表示{{tr|event}}的{{tr|message}}。制作[[{{tr|Meteorite Bar}}]]需要{{tr|Meteorite}}。
+
+与{{tr|Meteorite blocks}}接触，会导致{{tr|player}}被施加[[{{tr|Burning}}]][[{{tr|debuff}}]]，除非{{tr|player}}装备了[[{{tr|Obsidian Skull}}]]{{tr|accessory}}或其升级，或者是使用[[{{tr|Obsidian Skin Potion}}]]。可以在没有这些防御的情况下采集{{tr|Meteorite}}，{{tr|ore}}在开采后是安全的。
+
+任何存在至少 {{eicons|1.4.0.1}} 75 / {{eicons|1.2.4.1|not=1.4.0.1}} 50 / {{eicons|1.2.4.1|invert=y}} 23 {{tr|Meteorite blocks}}的区域（例如天然坠落点）都会变成[[{{tr|Meteorite biome}}]]，这里会生成[[{{tr|Meteor Head}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Meteorite|expectedrows=2}}
+
+== 备注 ==
+* [[{{tr|Water}}]]/[[{{tr|Honey}}]]不会阻止{{tr|Meteorite}}对{{tr|player}}造成{{tr|damage}}。
+* {{tr|Meteorite}}、[[{{tr|Hellstone}}]]、和[[{{tr|Obsidian}}]]是唯三名字里没有 “矿” 的{{tr|ores}}。
+* {{eicons|1.4.0.1}} {{tr|Meteorite}}在{{tr|hardmode}}之前无法被[[{{tr|Explosives (class)}}]]摧毁。
+* [[{{tr|Spelunker}}]]{{tr|buff}}和[[{{tr|Dangersense}}]]{{tr|buff}}都可以高亮{{tr|Meteorite}}。同时使用它们时，其高亮会叠加。
+** 玩家装备[[{{tr|Obsidian Skull}}]]或其升级，或是具有[[{{tr|Obsidian Skin}}]]{{tr|buff}}时，{{tr|Dangersense}}{{tr|buff}}不再会高亮显示{{tr|Meteorite}}。
+
+== 小贴士 ==
+* 将{{tr|Meteorite}}制作成[[{{tr|Meteorite Bars}}]]可获得的收益比直接卖掉同比例数量的{{tr|Meteorite}}获得的利润高 133%。
+* 将任意{{tr|Block}}放置于{{tr|player}}与{{tr|Meteorite block}}之间，将不会受到{{tr|damage}}。用一层类似[[{{tr|Sand}}]]的{{tr|gravity block}}可以有效地消除挖掘{{tr|Meteorite}}时的大部分危险。
+* 如果{{tr|player}}放置了 {{eicons|1.4.0.1}} 75 / {{eicons|1.2.4.1|not=1.4.0.1}} 50 / {{eicons|1.2.4.1|invert=y}} 23 以上的{{tr|Meteorite}}，就会创造一个人造{{tr|Meteorite biome}}，所有生成的{{tr|enemy}}都会替换为{{tr|Meteor Heads}}。
+* 尽管[[{{tr|Water}}]] / [[{{tr|Honey}}]]不能阻止来自{{tr|Meteorite blocks}}的{{tr|damage}}，但它们可以清除[[{{tr|Meteor Head}}]]有几率造成的[[{{tr|On Fire!}}]][[{{tr|debuffs}}]]，这意味着在{{tr|Meteorite biome}}开采{{tr|Meteorite}}时，它们仍是有用的。
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在{{tr|Meteorite}}在[[{{tr|Hardmode}}]]中可被[[{{tr|Explosives (class)}}]]摧毁。}}
+{{history|Desktop 1.4.0.2|{{tr|Meteorite}}无法被[[{{tr|Explosives (class)}}]]摧毁了。}}
+{{history|Desktop 1.4.0.1|  
+** {{tr|Meteorite}}无法被[[{{tr|Dynamite}}]]和[[{{tr|Bombs}}]]摧毁了。
+** 添加了{{tr|Meteorite}}坠落时的{{tr|Background Effect}}。
+** 现在在[[{{tr|Metal Detector}}]]中的优先级比{{tr|Gold and Platinum}}高。 
+** 现在要创造人工{{tr|biome}}需要 75 个{{tr|Meteorites}}而非 50 个。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|item texture}}从 [[File:Meteorite (old).png]] 更改为了 [[File:Meteorite.png]]。
+** {{tr|block texture}}从 [[File:Meteorite (placed) (pre-1.3.0.1).png]] 更改为了 [[File:Meteorite (placed).png]].}}
+{{history|Desktop 1.2|
+** 接触陨石不再会触发{{tr|invincibility frames}}，而是会受到[[{{tr|Burning}}]]减益。
+** {{tr|stack limit}}从 250 增加到了 999。
+** 加快了挖掘速度。例如[[{{tr|Nightmare Pickaxe}}]]现在只需敲击 2 下就能挖掘{{tr|Meteorite}}，而非 4 下。}}
+{{history|Desktop 1.0.5|现在可以发光了。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Meteorite}}
+{{Master Template Consumables
+| show-ore = yes
+}}
+
+{{language info|en=Meteorite}}

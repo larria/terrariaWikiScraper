@@ -1,0 +1,60 @@
+'''{{tr|Darts}}'''作为[[{{tr|Blowpipe}}]]、[[{{tr|Blowgun}}]]、[[{{tr|Dart Pistol}}]]和[[{{tr|Dart Rifle}}]]的[[{{tr|ammo}}]]。
+
+== 类型 ==
+{{#dplvar:set<!--
+	set contents of the "Properties" column below<!--
+   -->|darts-source:Seed|{{tr|inventory}}中有[[{{tr|Blowpipe}}]]或[[{{tr|Blowgun}}]]时破坏植被。<!--
+	-->|darts-properties:Seed|没有特殊属性。<!--
+	-->|darts-properties:Crystal Dart|不受{{tr|gravity}}影响，弹射/穿透 6 次，会试图弹射向{{tr|enemy}}。<!--
+	-->|darts-properties:Cursed Dart|造成[[{{tr|Cursed Inferno}}]]。飞行过程中会朝下方的[[{{tr|enemies}}]]滴落{{tr|Cursed Flames}}，造成额外伤害。<!--
+	-->|darts-properties:Ichor Dart|造成[[{{tr|Ichor (debuff)}}|{{tr|Ichor}}]]。在空中分裂为 2-5 个{{tr|projectiles}}。<!--
+	-->|darts-properties:Poison Dart|造成[[{{tr|Poisoned}}]]。<!--
+-->}}
+{{weapon type count|darts}}<!-- need first unnamed parameter for transclusion -->
+
+{| class="terraria sortable lined align-center"
+! colspan=2 | {{tr|Name}}
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! style="line-height:1.3;"<!-- this table doesn't look very good with a tall header --> | [[{{tr|Velocity}}#extraUpdates|{{tr|Total Velocity}}<br/>乘数]]
+! data-sort-type=number | {{tr|Knockback}}
+! {{tr|Hardmode}}
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | {{tr|Sell}}
+! {{tr|Source}}
+! 属性
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=itemid
+|template=:Darts/row
+}}
+|}
+
+== 备注 ==
+* {{eicons|1.4.4}} 所有发射{{tr|dart}}的{{tr|weapon}}会受到[[{{tr|Shroomite Helmet}}]]的{{tr|damage boost}}。
+* {{eicons|1.4.4|invert=y}} 虽然发射{{tr|dart}}的{{tr|weapon}}会受到[[{{tr|ranged weapon}}]]通用的属性加成，但在更加具体的对于[[{{tr|gun}}]]、[[{{tr|launcher}}]]和[[{{tr|bow}}]]/[[{{tr|repeater}}]]的加成中（例如[[{{tr|shroomite armor}}]]的{{tr|helmet}}加成），它们并不会被视作[[{{tr|bullet}}]]、[[{{tr|rocket}}]]或是[[{{tr|arrow}}]]。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced Cursed Dart}}、{{tr|Ichor Dart}}和{{tr|Crystal Dart}}。}}
+{{history|Desktop 1.2|{{tr|Introduced Poison Dart}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced Seed}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced Cursed Dart}}、{{tr|Ichor Dart}}和{{tr|Crystal Dart}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced Cursed Dart}}、{{tr|Ichor Dart}}和{{tr|Crystal Dart}}。（{{icon/ps4}}）}}
+{{history|Console 1.02|{{tr|Introduced Poison Dart}}。}}
+{{history|Console-Release|{{tr|Introduced Seed}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced Seed}}、{{tr|Poison Dart}}、{{tr|Cursed Dart}}、{{tr|Ichor Dart}}和{{tr|Crystal Darts}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced Cursed Dart}}、{{tr|Ichor Dart}}和{{tr|Crystal Dart}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced Poison Dart}}。}}
+{{history|Mobile-Release|{{tr|Introduced Seed}}。}}
+{{history|3DS-Release|{{tr|Introduced Seed and Poison Dart}}。}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+{{all versions}}
+
+[[Category:{{tr|Darts}}| ]]
+{{language info|en=Darts}}

@@ -1,0 +1,37 @@
+{{item infobox
+| auto = 2375
+| tags = fishing / quest rewards
+}}
+
+'''{{tr|Tackle Box}}'''是个[[{{tr|accessory}}]]，能够降低[[{{tr|Fishing}}]]时消耗[[{{tr|bait}}]]的几率。它是作为完成 [[{{tr|Angler}}]] [[{{tr|NPC}}]] 的{{tr|Fishing}}{{tr|quest}}的奖励得到的，几率是 {{chance|1/40}}{{source code ref|v=1.4.3.6|name=angler|method=Terraria.Player.GetAnglerReward|t=注意，真实的基础掉落率实际上要略低于 {{chance|1/40}}，因为在此物品之前额外判定了许多其他奖励。真实的掉落率还会受其他因素的影响，相关的深入讨论参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]。}}，并与已经完成的任务数量和其他因素有关（细节参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]）。
+
+{{tr|Tackle Box}}的效果和{{eil|Angler Tackle Bag}}或{{eil|Lavaproof Tackle Bag}}不叠加。
+
+在{{eversions|1.4.0.1}}中，如果在{{tr|inventory}}或任何一个[[{{tr|Storage items}}#{{tr|Portable Storage}}|{{tr|Portable Storages}}]]中已经有{{tr|Tackle Box}}，{{tr|the Angler}}就不会将其作为奖励发给玩家。但是，如果玩家的{{tr|inventories}}中已经有了[[{{tr|High Test Fishing Line}}]]、[[{{tr|Angler Earring}}]]、''和''{{tr|Tackle Box}}（或者由它们所制作出来的{{tr|accessory}}之一，即{{tr|Angler Tackle Bag}}或{{tr|Lavaproof Tackle Bag}}），他就能再重复给你{{tr|Tackle Box}}。<ref name="angler"/>
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Tackle Box|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Tackle Box|expectedrows=2}}
+
+== 备注 ==
+* 平均而言，{{tr|the Tackle Box}}会让任何给定{{tr|bait}}能够多持续一次抛竿。''完整细节参见[[{{tr|Bait power}}]]。''
+* 有两种{{tr|bait items}}不受{{tr|the Tackle Box}}影响：
+** [[{{tr|Truffle Worm}}]]总是会消耗掉。
+** [[{{tr|Gold Worm}}]]被消耗掉的几率总是固定为 {{chance|1/20}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|The Angler}}不再会给你重复的{{tr|informational accessories}}，除非你已经全部拥有。}}
+{{history|Desktop 1.3.1|用于制作[[{{tr|Angler Tackle Bag}}]]。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Tackle Box}}

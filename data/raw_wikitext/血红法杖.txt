@@ -1,0 +1,49 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4269
+| tags = minion / drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Sanguine Staff (demo).gif|frame|right|召唤三只{{tr|Sanguine Bats}}攻击[[{{tr|Shark}}]]。]]
+
+'''{{tr|Sanguine Staff}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Sanguine Bat}}'''{{tr|minion}}。它会在玩家和锁定的目标之间以椭圆形的轨迹飞行。{{tr|Sanguine Bats}}呈半圆形分布在{{tr|player}}头部周围，一旦附近无{{tr|enemy}}，它会立即回到玩家身旁。{{tr|Sanguine Staff}}有 {{chance|1/2}} / {{expert|{{chance|1/1}}}} 的概率掉落自[[{{tr|Dreadnautilus}}]]。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|The Sanguine Bat}}在击中目标和返回{{tr|player}}的途中无限穿透。
+* {{tr|The Sanguine Bat}}击中{{tr|enemy}}造成 -1 {{tr|tick}}{{tick}}[[{{tr|local invincibility frame}}]]并且仅在每一次攻击周期开始时重置其{{tr|local invincibility frame}}，这意味着{{tr|bat}}不能在一次攻击周期中击中同一目标多次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.AI_156_StartAttack}}
+* 无论目标距离多远，{{tr|Sanguine Bats}}的一次攻击周期（从离开{{tr|player}}身旁至返回）均为 {{duration|66 ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_156_Think}}
+* {{tr|The Sanguine bats}}最远可锁定距离 62.5 {{tr|tile}}的{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_156_TryAttackingNPCs}}
+* {{tr|Sanguine Bats}}移动时会留下红色残影。
+* 如果使用[[{{tr|Critter Shampoo}}]]染色，大部分普通和渐变[[{{tr|dyes}}]]对于{{tr|bat}}的颜色影响很小。由于{{tr|bat}}的发光，部分通过[[{{tr|Strange Plant}}]]交易来的{{tr|dyes}}的颜色会和实际有区别（比如{{tr|Reflective Gold Dye}}会使它们变成亮橘色，{{tr|Negative Dye}}会使它们完全变黑）。{{tr|Bright Dye}}会正常生效，因为它们会完全覆盖{{tr|bat}}的颜色。
+* {{tr|Sanguine Bats}}会发出微弱的红光。
+
+== 小贴士 ==
+* 和[[{{tr|Blade Staff}}]]与[[{{tr|Terraprisma}}]]类似，{{tr|Sanguine Staff}}的精准移动、跟踪攻击和固定的空闲停留位置使得它是对抗高速 {{tr|boss}}和对群控制的理想选择。
+* {{tr|the Sanguine Staff}}的高{{tr|base damage}}和适中的{{tr|attack speed}}与[[{{tr|Firecracker}}]]伤害倍率配合相当好。
+
+== 花絮 ==
+* 其英文名称（Sanguine Staff）中的 ''{{wiktionary|Sanguine}}'' 是一个形容词，意为“血红色”。它源于拉丁文 ''{{wiktionary|sanguis}}''，意思是“血”。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|knockback}}从 8 降低到 3。
+** 修复了当玩家距离攻击目标很近时{{tr|sanguine bat}}一次攻击会多次对单个目标造成伤害的 {{tr|bug}}。}}
+{{history|Desktop 1.4.1|
+** 掉落几率由 {{chance|1/5}} 提升至 {{chance|1/2}} / {{expert|{{chance|1/1}}}}。
+** {{tr|Attack duration}}由 60 提升至 66。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Sanguine Staff}}

@@ -1,0 +1,76 @@
+{{legacy nav tab}}
+{{exclusive|Spider Fang}}
+{{item infobox
+| auto = 2366
+| idprojectile = 377, 378, 379
+| debuff = Acid Venom
+| debuffduration = {{duration|rawseconds=2–4}}
+| debuffchance = 100%
+| sound1 = Item 46.wav
+| soundcaption1 = 召唤
+| sound2 = Item 17.wav
+| soundcaption2 = {{gameText|ProjectileName.SpiderEgg}}
+| tags = sentry/ hardmode
+}}
+{{dablink|不要与[[{{tr|Spider Staff}}]]，一种{{tr|minion summon weapon}}混淆。}}
+[[File:Queen Spider Staff (demo).gif|right|thumb|{{tr|The Queen Spider Staff}}的攻击。]]
+
+'''{{tr|Queen Spider Staff}}'''是一个[[{{tr|Hardmode}}]][[{{tr|sentry}}]][[{{tr|summon weapon}}]]。{{sentry note}}{{tr|The Spider Turret}}每秒向{{tr|enemies}}发射一个短距离的{{tr|Spider Eggs}}，它能够弹跳、翻滚、且受到{{tr|gravity}}影响极大。{{tr|Spider Eggs}}本身不造成{{tr|damage}}，在击中{{tr|enemies}}或者经过 1 秒后，它们会破开并生成 2–4 个{{tr|Baby Spiders}}攻击{{tr|enemies}}。{{tr|Baby Spiders}}会在击中{{tr|enemy}}时消失，造成{{tr|damage}}并施加[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]，持续 2–4 秒。如果范围内没有{{tr|enemies}}，{{tr|Baby Spiders}}在消失前会持续存在 5 秒。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+
+{{tr|The Spider Turret}}能够在屏幕上任何区域被召唤，即使{{tr|block}}将所选地点与玩家分隔。它需要[[{{tr|blocks}}]]或[[{{tr|platforms}}]]以放置。
+
+{{modifier|summon}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Queen Spider Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Spider Egg projectiles}}在破开时会生成 2 或 3 个{{tr|Baby Spiders}}，且有 {{chance|1/5}} 额外再生成 1 个{{tr|Baby Spider}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+** 这意味着每个{{tr|Spider Egg}}平均可生成 2.7 只{{tr|Baby Spiders}}。
+** 由于每个{{tr|Spider Egg}}能生成 2—4 个{{tr|Baby Spiders}}，{{tr|the Spider Turret}}每次发射的伤害是所列出的{{tr|base damage}}的 2—4 倍。
+* {{tr|The Queen Spider}}最远可锁定距离 62.5 {{tr|tile}}的{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=其相关部分是 <code>aiStyle == 53</code> 代码段。通过检查{{tr|enemy}}与{{tr|queen spider}}的水平距离和垂直距离之和是否小于 62.5 {{tr|tile}}来测量距离。}}
+* {{tr|The Baby Spider projectiles}}可追踪半径 125 {{tr|tiles}}内的{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=其相关部分是 <code>aiStyle == 63</code> 代码段。}}
+* 从{{tr|Spider Egg projectiles}}生成的{{tr|The Baby Spiders}}''不会''攀爬{{tr|walls}}，这和[[{{tr|Spider Staff}}|{{tr|Spider minions}}]]不同。
+* 和所有{{tr|sentries}}一样，召唤{{tr|the Queen Spider Staff}}不会影响玩家的{{tr|minion}}数量。
+
+== 小贴士 ==
+* {{tr|Queen Spider Staff}}对于不进入{{tr|cave}}和房间进行清理很有帮助，只需穿墙召唤它即可。
+* 由于[[{{tr|Spider Fang}}]]是[[{{tr|Black Recluse}}]]的常见掉落物（50% / {{expert|90%}} 几率），所以{{tr|Queen Spider Staff}}相对容易获得，且能很好地帮助度过[[{{tr|Hardmode}}]]早期。
+* 和{{eil|Tavernkeep's sentries|{{tr|Tavernkeep}}售卖的{{tr|sentry weapons}}}}不同，{{tr|Queen Spider Staff}}在{{eil|Old One's Army}}{{tr|event}}期间能够利用{{tr|sentry capacity bonuses}}的优势，因为它不消耗{{eil|Etherian Mana}}。
+* {{tr|Queen Spider Staff}}的售价为 {{iteminfo|Queen Spider Staff|sell}}，而其{{tr|materials}}售价总和仅有 {{coin|{{recipes/extract|result=Queen Spider Staff|mode=ingredients-sell}}}}。这使得售卖{{tr|Queen Spider Staff}}而非{{tr|Spider Fang}}是赚钱的好方法。
+
+== 花絮 ==
+* 它是仅有的不使用任何{{tr|buffs}}或{{tr|bonus}}就能造成{{tr|Acid Venom}}的四种{{tr|weapons}}之一。其他的为[[{{tr|Spider Staff}}]]、[[{{tr|Pygmy Staff}}]]、和[[{{tr|Venom Staff}}]]。
+* 它是仅有的可以通过制作获得的哨兵类召唤武器
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Acid Venom}}的{{tr|duration}}由 4–6 秒降低至 2–4 秒。}}
+{{history|Desktop 1.3.4.4|
+** 修复了不受最大{{tr|sentry}}数量系统影响的问题。
+** 修复了攻击[[{{tr|Worm AI}}|{{tr|Worm}}]]{{tr|enemies}}时不断变换目标的问题。}}
+{{history|Desktop 1.3.4|现在视为{{tr|Sentry}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Damage}}由 19 增加至 21。}}
+{{history|Desktop 1.2.4.1|现在需要 10 {{tr|mana}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|现在视为{{tr|Sentry}}。}}
+{{history|Console 1.0.933.1|{{tr|Damage}}由 19 增加至 21。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Damage}}由 19 增加至 21。（{{icon/ps4}}）}}
+{{history|Console 1.08|{{tr|Introduced}}，消耗 10 {{tr|mana}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Damage}}由 19 增加至 21。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}，消耗 10 {{tr|mana}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，同步直到{{tr|Desktop}} 1.3.0.1 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spider Fang}}
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Queen Spider Staff}}

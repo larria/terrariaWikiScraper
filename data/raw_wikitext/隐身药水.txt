@@ -1,0 +1,64 @@
+{{item infobox
+| type = Potion
+| auto = 297
+| tooltip = {{etext|@@@@|e=1.4.0.4|small=y}}<br/>{{etext|隐身|e=1.4.0.1|invert=y|small=y}}
+| buffduration = {{etext|@@@@|e=1.4.0.1|small=y}}<br/>{{etext|{{duration|120}}|e=1.4.0.1|invert=y|small=y}}
+| tags = loot
+}}
+{{redirect|隐身}}
+
+'''{{tr|Invisibility Potion}}'''是一种[[{{tr|buff potion}}]]， 使用后会给予'''{{tr|Invisibility}}'''[[{{tr|buff}}]]，这会使玩家隐身。{{potionlength|{{etext|{{duration|180}}|e=1.4.0.1}} / {{etext|{{duration|120}}|e=1.4.0.1|invert=y}}}}
+
+{{eicons|1.3.0.1}} 使用{{tr|Invisibility Potion}}会使玩家变得不可见，包括[[{{tr|armor}}]]和[[{{tr|vanity items}}]]，还有[[{{tr|mount}}]]。在隐身期间，玩家的[[{{tr|Aggro}}]]数据会被降低，这意味着{{tr|enemies}}较不可能瞄准玩家，并且只要玩家处于隐身状态，它们就不会发射{{tr|ranged attacks}}。隐身状态下的玩家如果做出攻击行为会暂时取消隐身，此{{tr|buff}}在玩家承伤后会被完全取消。放置或破坏{{tr|blocks}}也会取消隐身。[[{{tr|multiplayer}}]]中，{{tr|minimap}}上玩家的头仍然对非敌方玩家可见。{{eicons|1.4.0.1}}使用此{{tr|potion}}会降低{{tr|enemy}}生成速率 20%。
+
+{{eicons|1.3.0.1|invert=y}}使用{{tr|Invisibility Potion}}会使玩家的{{tr|sprite}}变得不可见，但是[[{{tr|accessories}}]]和[[{{tr|armor}}]]仍然保持可见。使用默认服饰的玩家，可以要么通过不装备所有{{tr|items}}，要么使用[[{{tr|Familiar set}}]]，来变得完全隐身。这对[[{{tr|Enemy}}]]没有任何作用，但是在 [[{{tr|PvP}}]] 中，敌方玩家就看不见没有装备任何{{tr|items}}的隐身玩家了。然而，敌方玩家仍能看见隐身玩家的名字标签。
+
+{{tr|Invisibility}}在飞行时不会隐藏[[{{tr|wings}}]]，也不会隐藏由{{tr|armor}}或其他{{tr|items}}发出的任何光线或粒子效果，例如由[[{{tr|sprinting accessories}}]]发出的烟雾效果和由[[{{tr|Beetle armor}}]]产生的{{tr|beetles}}，仍然会展示。[[{{tr|Minions}}]]、[[{{tr|pets}}]]和[[{{tr|light pet}}]]仍然会保持可见。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Invisibility Potion|expectedrows=1}}
+
+== {{tr|Tips}} ==
+* 此{{tr|potion}}在捕捉会逃离玩家的{{tr|critters}}时十分有用，特别是[[{{tr|Truffle Worm}}]]，因为它们通常会快速地掘地逃走。
+* 它对在游戏极早期在海洋中掠夺{{tr|water chests}}也很有用。
+* 在建造大型建筑、{{tr|fishing}}或探索洞穴时，它对于躲开{{tr|enemies}}是很有用的。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.4|{{tr|Tooltip}}从“给予{{tr|Invisibility}}”变更为“隐身并降低敌人的生成速度”。}}
+{{history|Desktop 1.4.0.1|
+** 现在有了降低敌怪生成速率 20% 的效果。
+** {{tr|Duration}}从 2 提升到 3 分钟。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 机制变更：
+*** 隐藏{{tr|armor and vanity items}}
+*** 为使用者提供{{tr|aggro}}降低效果。
+*** 在攻击时暂时失效。受伤时完全取消。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相同。 ({{icon/xbox one}})}}
+{{history|Console 1.0.750.0|({{icon/ps4}})
+** {{tr|Sprite updated}}至与{{tr|Desktop}} 1.3.0.1 相同。
+** 机制变更：
+*** 隐藏{{tr|armor and vanity items}}
+*** 为使用者提供{{tr|aggro}}降低效果。
+*** 在攻击时暂时失效。受伤时完全取消。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}并与{{tr|Desktop}} 1.3.0.1 一致。}}
+{{history|Mobile 1.4.0.5.0|
+** {{tr|Tooltip}}从“给予{{tr|Invisibility}}”变更为“隐身并降低敌人的生成速度”。
+** 现在有了降低敌怪生成速率 20% 的效果。
+** {{tr|Duration}}从 2 提升到 3 分钟。}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Sprite updated}}至与{{tr|Desktop}} 1.3.0.1 相同。
+** 机制变更：
+*** 隐藏{{tr|armor and vanity items}}
+*** 为使用者提供{{tr|aggro}}降低效果。
+*** 在攻击时暂时失效。受伤时完全取消。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{language info|en=Invisibility Potion}}

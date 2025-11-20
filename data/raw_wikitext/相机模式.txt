@@ -1,0 +1,84 @@
+{{exclusive|desktop=y|mobile=y}}
+[[File:Camera Mode Location.png|frame|{{tr|housing icon}}旁边的{{tr|Camera mode}}。]]
+[[File:Camera Mode Menu.png|thumbnail|{{tr|Camera Mode}}{{tr|menu}}。]]
+
+'''{{tr|Camera Mode}}'''是一种在 [[1.3.0.1]] 中引入到{{desktop version}}的特殊模式，用于为''[[{{tr|Terraria}}]]''世界截图，提供额外的控制来捕捉[[{{tr|Minimap}}]]或屏幕选定区域的图像。按{{key|F1}}或点击[[{{tr|inventory}}]]中{{tr|Armor dye slots}}上方的相机图标来激活{{tr|Camera Mode}}，这会将游戏界面替换为一个专门的截图界面。当{{tr|Camera Mode}}激活时，鼠标控制用于构图，而玩家既不能建造也不能使用物品，但用数字键来使用[[{{tr|hotbar}}]]上的物品或按{{key|esc}}会取消{{tr|Camera Mode}}。
+
+{{tr|Camera Mode}}不会发现世界中未显示的部分，会将其呈现为与正常小地图上未探索区域类似的黑色条带。
+
+{{tr|Camera Mode}}在{{mobile version}}的{{tr|Terraria}}中也存在，尽管并不能完全正常运行（图像并未存储到任何地方去，有时候甚至会让游戏彻底卡住），但仍可以通过插上键盘并在游戏中按 {{key|F1}} 来访问它。
+
+== 功能 ==
+=== [[File:Camera Mode Take Screenshot.png]] 截图 ===
+这是{{tr|Camera Mode}}所提供的最基本的工具，截图会截取屏幕的全尺寸图片。用此功能截下的屏幕图片中界面是被隐藏掉的。所生成的图像与可视窗口的尺寸相同，意味着如果调整了游戏窗口的大小，生成的图像大小也会改变。
+
+=== [[File:Camera Mode Take Snapshot.png]] 快照 ===
+[[File:Camera Mode Frame.png|thumbnail|边框模式。]]
+{{tr|Camera Mode}}的主要功能是能够通过使用边框功能捕捉屏幕的选定区域：
+* [[File:Camera Mode Pin Frame.png|22px]]使用'''{{gameText|LegacyInterface.69}}'''，左键点击和右键点击来设置矩形捕捉区域的两个对角，捕捉区域会以白色突出显示。 
+* [[File:Camera Mode Set Frame.png|22px]] '''{{gameText|LegacyInterface.70}}'''允许玩家拖动边缘来扩展边框。 
+* [[File:Camera Mode Reset Frame.png|22px]] '''{{gameText|LegacyInterface.78}}'''会完全删除边框。 
+* '''{{gameText|LegacyInterface.67}}'''会生成边框范围内的完成图像。也可以在[[{{tr|minimap}}]]上设置边框，可以通过按 {{key|M}} 或选择 '''{{gameText|LegacyInterface.108}}''' 功能来进入{{tr|minimap}}。
+
+=== [[File:Camera Mode Open Folder.png]] 打开文件夹 ===
+快照和截图都存在 <code>Captures</code> 文件夹中，可以通过“'''{{gameText|LegacyInterface.110}}'''”功能来进入。这功能只在窗口模式下才有效。
+* 在 Windows Vista 及之后上，是 <code>%USERPROFILE%\Documents\My Games\Terraria\Captures</code>
+** 在 Windows XP上，是 <code>%USERPROFILE%\My Documents\My Games\Terraria\Captures</code>
+* 在 Mac 上，打开 Finder 并按上方的“Go”。然后按“Go to folder...”。输入 <code>~/Library/Application Support/Terraria/Captures</code>
+* 在 Linux 上，是 <code>$XDG_DATA_HOME/Terraria/Captures</code>
+** 通常是 <code>~/.local/share/Terraria</code>
+
+=== [[File:Camera Mode Settings.png]] 设置 ===
+[[File:1.4 camera mode settings.jpeg|thumb|{{tr|Camera mode}}设置窗口。]]
+在拍照之前，可以选择几个选项来修改相机的输出。
+* '''{{gameText|LegacyInterface.74}}'''：拍大于屏幕的快照时，图像整合会将其压缩成单个连续图像，在此期间完成的图像将会“缩小”。禁用此功能会生成一个包含多个精密副本的文件夹，玩家需要在外部图像编辑器中拼接这些副本。这个过程完成地也比较慢，但会生成捕获区域的 1:1 副本。
+* '''{{gameText|LegacyInterface.75}}'''：如果禁用，最终图像将不包含{{tr|player}}、任何[[{{tr|pets}}]]、[[{{tr|projectiles}}]]、[[{{tr|minions}}]]、[[{{tr|NPC}}]] 或[[{{tr|Enemy}}|{{tr|enemies}}]]。
+* '''{{gameText|LegacyInterface.76}}'''：如果禁用，最终图像将显示在透明背景上。
+* '''{{gameText|LegacyInterface.77}}'''：设置菜单底部的十三个{{tr|biome}}图标允许更改显示的{{$|biome background}}和水色；例如[[{{tr|the Crimson}}]]的图片可以包含[[{{tr|The Hallow}}]]亮紫色水和鲜艳明快的[[{{tr|tree}}]]背景。此背景将应用于整个图像，即使它跨越多个{{tr|biomes}}。
+
+{| class="terraria"
+! 滤镜 !! 描述
+|-
+| [[File:Biome filter runner.png]] 默认 || 显示玩家当前所处{{tr|biome}}的背景和水色。
+|-
+| [[File:Biome filter forest.png]] [[{{tr|Forest}}]] || 显示当前{{tr|Forest background}}和蓝色的{{tr|water}}。
+|-
+| [[File:Biome filter corruption.png]] [[{{tr|The Corruption}}]] || 显示当前{{tr|Corruption background}}和紫色的{{tr|water}}。
+|-
+| [[File:Biome filter jungle.png]] [[{{tr|Jungle}}]] || 显示当前{{tr|Jungle background}}和青绿色的水。
+|-
+| [[File:Biome filter hallow.png]] [[{{tr|The Hallow}}]] || 显示当前{{tr|Hallow background}}和品红色的水。
+|-
+| [[File:Biome filter snow.png]] [[{{tr|Snow biome}}]] || 显示当前{{tr|Snow biome background}}和浅蓝色的水。
+|- 
+| [[File:Biome filter desert.png]] [[{{tr|Desert}}]] || 显示当前{{tr|Desert background}}和蓝绿色的水。
+|-
+| [[File:Biome filter underground.png]] [[{{tr|Underground}}]] || 总是显示世界左侧的{{tr|Forest background}}（由于 {{tr|bug}}）和[[{{tr|Underground}}]]层的深蓝色水。
+|-
+| [[File:Biome filter cavern.png]] [[{{tr|Cavern}}]] || 总是显示世界左侧的{{tr|Forest background}}和[[{{tr|Cavern}}]]层中的暗紫色水。
+|-
+| [[File:Biome filter crimson.png]] [[{{tr|The Crimson}}]] || 显示当前{{tr|Crimson background}}和粉红的水色。
+|-
+| [[File:Biome filter underground desert.png]] [[{{tr|Underground Desert}}]] || 显示当前{{tr|Desert background}}和[[{{tr|Underground Desert}}]]的黄色水。
+|-
+| [[File:Biome filter ocean.png]] [[{{tr|Ocean}}]] || 显示当前{{tr|Ocean background}}和蓝色的{{tr|water}}。
+|-
+| [[File:Biome filter glowing mushroom.png]] [[{{tr|Glowing Mushroom biome}}]] || 显示当前{{tr|surface Glowing Mushroom background}}和深蓝色的水。 
+屏幕截图会设置为黑暗中，就像在真正的{{tr|surface Glowing Mushroom biome}}中那样。
+|}
+
+== 备注 ==
+* 如果在开启有风环境的情况下截取过大的截图，很可能会导致游戏崩溃，特别是若同时显示超过 9000 个给定类型的动态{{tr|tile}}（例如{{tr|pylons}}、{{tr|relics}}或其他会对风有反应的{{tr|tile}}）时。
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|添加了截取大尺寸屏幕截图时的崩溃保护。}}
+{{History|Desktop 1.4.0.1|改造了{{tr|biome}}滤镜图标。添加了 4 种新滤镜。}}
+{{history|Desktop 1.3.0.6|现在如果玩家手持[[{{tr|Mechanism}}]]{{tr|item}}则可以拍摄[[{{tr|wiring}}]]的照片。}}
+{{history|Desktop 1.3.0.4|修复了导致[[{{tr|walls}}]]在快照中无法正确构图的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.3|未探索的区域现在将会显示为黑色。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|引入，但功能不完全。}}
+
+{{Game mechanics}}
+
+{{language info|en=Camera Mode}}

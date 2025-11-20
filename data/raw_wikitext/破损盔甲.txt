@@ -1,0 +1,63 @@
+{{buff infobox
+| auto = 36
+|Armor Polish|Armor Bracing|Ankh Charm|Ankh Shield
+}}
+
+'''{{tr|Broken Armor}}'''是一种会导致玩家{{tr|defense}}减半的[[{{tr|debuff}}]]。
+
+此{{tr|The debuff}}可以通过装备[[{{tr|Armor Polish}}]]、[[{{tr|Armor Bracing}}]]、或则[[{{tr|Ankh Shield}}]]或[[{{tr|Ankh Charm}}]]来避免。
+
+== 原因 ==
+=== 来自{{tr|enemy}} ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+|-
+| {{item|mode=table|class=block aligncenter textleft|Armored Skeleton}}
+| 2 / {{expert|4}} {{tr|minutes}}
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Blue Armored Bones}}
+| 10 / {{expert|20}} {{tr|seconds}}
+| {{chance|1/2}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Brain of Cthulhu|size=100px}}
+| {{expert|16.25-32.5}} {{tr|seconds}}
+| {{expert|{{chance|1/8}}}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Creeper}}
+| {{expert|16.25-32.5}} {{tr|seconds}}
+| {{expert|{{chance|1/24}}}}
+|}
+
+=== 其他 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+|-
+|{{item|Red Potion|mode=table}}
+| 1 / {{expert|2}} / {{master|3}} / 小时
+| {{chance|1/1}}
+|}
+
+== 备注 ==
+* 同时拥有[[{{tr|Withered Armor}}]]{{tr|debuff}}和本{{tr|debuff}}并不会让人的防御力变成 0，因为这两个{{tr|debuffs}}的防御衰减是乘算叠加的，结果是降低 75% 防御而非以为的 100%。{{source code ref|v=1.4.3.6|method=Terraria.Player.Update}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|来自{{tr|Armored Skeletons}}的持续时间由 5 降低至 2 {{tr|minutes}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Broken Armor}}

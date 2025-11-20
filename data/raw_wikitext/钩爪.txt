@@ -1,0 +1,449 @@
+{{about|工具类别|{{tr|the crafting material}}|{{tr|Hook (crafting material)}}}}
+{{redirect|{{tr|Skeletron Hand}}|{{tr|the boss}} 的部位|{{tr|Skeletron}}}}
+{| style="float:right"
+|colspan=2|[[File:Grappling Hook Usage (demo).gif|frame|使用{{tr|Topaz Hook}}。注意在已经钩住的情况下使用{{tr|hook}}将会解除钩住状态。]]
+|-
+|valign=top|[[File:Multi-Hook Example.png|thumb|right|300px|多钩，比如{{tr|Slime Hook}}，允许更灵活的移动。]]
+|style="width:0"|[[File:Grappling Hook (demo).gif|thumb|105px|{{tr|The Grappling Hook}}用在[[{{tr|Platform}}]]上。]]
+|}
+
+'''{{tr|Hooks}}'''是一类有助于玩家穿越地形的[[{{tr|tool}}]]。使用时，{{tr|Hooks}}会发射链条来钩住表面或[[{{tr|platform}}]]并将玩家拉向它。{{tr|Hooks}}是一种必不可少的工具，针对地形高度限制提供了显著自由还可以快速移动，并且经常是玩家获得的第一个主要的机动性工具。有各种各样的{{tr|Hooks}}贯穿游戏全程（参见下表）。
+
+{{key|grapple}}热键会激活装备在玩家{{tr|equipment slot}}中的{{tr|Hooks}}，或者{{tr|inventory}}中的第一个{{tr|Hooks}}（按自左向右、自上向下的顺序），而不要求它在玩家的[[{{tr|Inventory}}#热键栏（10 栏位）|{{tr|hotbar}}]]中。
+
+几个高级别的{{tr|Hook}}，如{{tr|Ivy Whip}}，允许玩家同时抓住多个表面。如果人物抓住了一个表面，然后第二次射出{{tr|the Hook}}，会从玩家处伸出另一根链条而不会移动第一根。抓住第二个表面后，玩家会被悬挂在半空中，位于两个表面之间的中间位置。这让玩家在建筑期间更自由，或者可用于穿过危险区域，比如[[{{Tr|lava}}]]和[[{{tr|Meteorite}}]]上方。
+
+{{eicons|1.4.1}}所有[[{{tr|Journey Mode}}]]{{tr|characters}}在出生时，{{tr|inventory}}中都会带有一个基本的{{tr|Grappling Hook}}。
+
+== 类型 ==
+{{tr|Hooks}}的射程、[[{{tr|velocity}}]]、可展开的钩子数量、和可同时保持钩住的钩子数量各不相同。
+
+* 所有制作得到的{{tr|Hooks}}都是在[[{{tr|Iron Anvil}}]]或[[{{tr|Lead Anvil}}]]处制作的，{{tr|the Lunar Hook}}例外，它在[[{{tr|Ancient Manipulator}}]]制作。
+* 大部分钩爪牵引速度为{{mph|11 pixels}}，除了{{tr|Bat Hook}}（{{mph|14 pixels}}），{{tr|Thorn Hook}}（{{mph|12 pixels}}）和{{tr|Lunar Hook}}（{{mph|16 pixels}}）。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetGrapplingForces}}
+* 在已经钩住表面的情况下再次发射时，单钩会立即脱离。
+* 没有同时钩定能力的多钩（{{tr|Dual Hook}}以及{{eversions|1.3.0.1|invert=y|short=y}}中的{{tr|the Fish Hook}}）可以在第一根链条未钩住表面前发射第二根链条，但第二根链条钩住时第一根链条会脱离。
+* 多钩则仅当前一根链条已钩住或完全缩回后才能再次发射。{{tr|Dual Hook}}、{{tr|Web Slinger}}、和{{tr|Lunar Hook}}是例外，可以非常迅速地发射；发射的速度几乎能和玩家按按钮一样快。
+
+=== 困难模式之前 ===
+{{options/set|item infobox|view=table|cols=item2cells-anchor/col:source/col:reach/velocity/col:hooks/col:latch/sell/rarity/projectile/col:notes|item2cells:nolink=true|extargs=nolink}}
+{| class="sortable terraria lined align-center" id="Hooks-Pre-Hardmode-table"
+|- style="line-height: 1.25;"
+! colspan=2 | 物品
+! class="unsortable" | 来源
+! 射程<br/><small>({{tr|tiles}})</small>
+! 爪钩速度
+! 爪钩数量
+! 钩锁
+! data-sort-type=number | 售价
+! [[{{tr|Rarity}}]]
+! 射弹
+! class="unsortable" | 备注
+{{item infobox | auto = 84 | type = Tool | tags = Hooks / buyable / vendor:Goblin Tinkerer
+| col:source = 制作：{{recipes/extract|result=Grappling Hook|nostation=y}}<br/>或[[{{tr|Goblin Tinkerer}}]]({{iteminfo|Grappling Hook|buy}})
+| col:reach = 18.75
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 1236 | type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Amethyst Hook|nostation=y}}
+| col:reach = 18.75
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 4759
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = [[{{tr|Zoologist}}]] ({{iteminfo|Squirrel Hook|buy}})
+| col:reach = 19
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+* 可以抓住[[{{tr|tree}}]]
+}}
+{{item infobox | auto = 1237 | type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Topaz Hook|nostation=y}}
+| col:reach = 20.625
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 1238| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Sapphire Hook|nostation=y}}
+| col:reach = 22.5
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 1239| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Emerald Hook|nostation=y}}
+| col:reach = 24.375
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 1240| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Ruby Hook|nostation=y}}
+| col:reach = 26.25
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 4257| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Amber Hook|nostation=y}}
+| col:reach = 27.5
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 1241| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Diamond Hook|nostation=y}}
+| col:reach = 29.125
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+{{item infobox | auto = 939| type = Tool | tags = Hooks / loot
+| col:source = {{item|Web Covered Chest|s|showid=n}}
+| col:reach = {{etext|22.625|e=1.4.3.3}}<br/>{{etext|15.625|e=1.4.3.3|invert=y}}
+| col:hooks = 8
+| col:latch = 同时
+| col:notes =
+* 可以快速连续发射所有{{tr|hook}}，无论第一个{{tr|hook}}是否有钩中{{tr|block}}。这使得它有别于大多数同时类的{{tr|hooks}}。
+* {{eicons|1.4.3.3|invert=y}}拥有所有{{tr|hooks}}中最短的{{tr|range}}。
+}}
+{{item infobox | auto = 1273| type = Tool | tags = Hooks / drop / treasure bag loot
+| col:source = [[{{tr|Skeletron}}]] (12.24% / {{expert|33.33%}})
+| col:reach = 21.875
+| col:hooks = 2
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 2585| type = Tool | tags = Hooks / drop / treasure bag loot
+| col:source = [[{{tr|King Slime}}]] (33.33% / {{expert|50%}})
+| col:reach = 18.75
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 2360| type = Tool | tags = Hooks / quest rewards
+| col:source = [[{{tr|Angler}}]] (1.7%)
+| col:reach = 25
+| col:hooks = 2
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 185| type = Tool | tags = Hooks
+| col:source = 制作：{{recipes/extract|result=Ivy Whip|nostation=y}}
+| col:reach = 28
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 1800
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = {{item|Goodie Bag|s|showid=n}} (0.66%)
+| col:reach = 31.25
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+* 牵引速度为{{mph|14 pixels}}，而非大部分{{tr|hooks}}的{{mph|11 pixels}}。
+* 拥有所有{{tr|hooks}}中第二快的牵引速度。
+}}
+{{item infobox | auto = 1915| type = Tool | tags = Hooks / bag loot
+| col:source = {{item|Present|s|showid=n}} (0.63%)
+| col:reach = 25
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+}}
+|}
+
+=== 困难模式 ===
+{| class="terraria sortable lined align-center" id="Hooks-Hardmode-table"
+! colspan=2 | 物品
+! class="unsortable" | 来源
+! 射程<br/><small>({{tr|tiles}})</small>
+! 爪钩速度
+! 爪钩数量
+! 钩锁
+! data-sort-type=number | 售价
+! [[{{tr|Rarity}}]]
+! 射弹
+! class="unsortable" | 备注
+{{item infobox | auto = 437
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = [[{{tr|Mimic}}]]{{eicons|1.3.0.1|3ds=y}} (16.67%)<br/>{{eicons|1.3.0.1|invert=y|3ds=n}} (14.29%)
+| col:reach = 27.5
+| col:hooks = 2
+| col:latch = 独特
+| col:notes =
+* 末端发光（红和浅蓝）。
+* 可以快速连续发射 2 次。
+* 可以发射两个{{tr|hook}}，但同一时间只能有一个钩锁。
+}}
+{{item infobox | auto = 4980
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = [[{{tr|Queen Slime}}]] (33.33% / {{expert|50%}})
+| col:reach = 30
+| col:hooks = 1
+| col:latch = 单独
+| col:notes =
+* 传送{{tr|player}}至钩锁处。
+* 不能穿过物块传送{{tr|player}}。
+}}
+{{item infobox | auto = 3021 | type = Tool | tags = Hooks / hardmode / drop / treasure bag loot
+| col:source = [[{{tr|Plantera}}]] (10%)
+| col:reach = 30
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+* 牵引速度为{{mph|12 pixels}}，而非大部分{{tr|hooks}}的{{mph|11 pixels}}。
+* 拥有所有{{tr|hooks}}中第三快的牵引速度。
+}}
+{{item infobox | auto = 3022 | type = Tool | tags = Hooks / hardmode / drop
+| col:source = [[{{tr|Hallowed Mimic}}]] (25%)
+| col:reach = 30
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+* 链条和末端发光。
+}}
+{{item infobox | auto = 3023 | type = Tool | tags = Hooks / hardmode / drop
+| col:source = [[{{tr|Corrupt Mimic}}]] (20%)
+| col:reach = 30
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 3020 | type = Tool | tags = Hooks / hardmode / drop
+| col:source = [[{{tr|Crimson Mimic}}]] (20%)
+| col:reach = 30
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 2800
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = [[{{tr|Martian Madness}}]][[{{tr|event}}]]中的大部分{{tr|enemy}} (0.13%)
+| col:reach = 31.25
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+* {{tr|player}}会保持在距离钩锁处 12 {{tr|tiles}}的位置，在任何方向上都是如此。
+* 允许{{tr|player}}围绕着钩锁处旋转。
+* 链条和末端发光。
+}}
+{{item infobox | auto = 1829 | type = Tool | tags = Hooks / hardmode / drop
+| col:source = [[{{tr|Mourning Wood}}]] (2.86% – 20% / {{expert|5% – 20%}})<ref>每波的详细{{tr|drop rates}}：{{pumpkin moon item drop rates|1/5|fromwave=6|towave=20}} 参见[[{{tr|Pumpkin Moon#Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]获取更多信息。</ref>
+| col:reach = 34.375
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+}}
+{{item infobox | auto = 1916 | type = Tool | tags = Hooks / hardmode / drop
+| col:source = [[{{tr|Everscream}}]] (3.46% – 10.37% / {{expert|6.22% – 31.11%}})<ref>每波的详细{{tr|drop rates}}：{{frost moon item drop rates|14/15 * 1/3|fromwave=4|towave=20}} 参见[[{{tr|Frost Moon#Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]获取更多信息。</ref>
+| col:reach = 34.375
+| col:hooks = 3
+| col:latch = 同时
+| col:notes =
+* 链条和末端发光。
+}}
+{{item infobox | auto = 3572
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = 制作：{{recipes/extract|result=Lunar Hook|nostation=y}}
+| col:reach = 34.375
+| col:hooks = 4
+| col:latch = 同时
+| col:notes =
+* 于[[{{tr|Ancient Manipulator}}]]制作。
+* 链条和末端发光。
+* 每个{{tr|hook}}发出各自的光。
+* 可以快速连续发射所有{{tr|hook}}，无论第一个{{tr|hook}}是否有钩中{{tr|block}}。这使得它有别于大多数同时类的{{tr|hooks}}。
+* 牵引速度为{{mph|16 pixels}}，而非大部分{{tr|hooks}}的{{mph|11 pixels}}。
+* 拥有所有{{tr|hooks}}中最快的牵引速度。
+}}
+{{item infobox | auto = 3623
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = [[{{tr|Steampunker}}]] ({{iteminfo|Static Hook|buy}})
+| col:reach = 37.5
+| col:hooks = 2
+| col:latch = 独特
+| col:notes =
+* 可以发射两个{{tr|hook}}，但同一时间只能有一个钩锁。
+* 与其他{{tr|hooks}}不同，并不会牵引玩家。
+* {{tr|Player}}可以调整他们与钩锁处的距离。
+* {{tr|Player}}不会在钩住不同的位置时移动。
+* 拥有所有{{tr|hooks}}中最长的{{tr|range}}。
+}}
+|}{{options/reset|item infobox}}
+
+== 备注 ==
+*多个钩爪可以同时使用（装备一种手持另外一种），最大出钩数量取决于两者之最，出钩速度和射程取决于射出的钩爪，但是[[{{tr|Dual Hook}}]]会清除所有的钩爪。
+*某些钩爪可以视为光源。
+[[File:Glowing Hooks comparison.png|thumb|400px|某些{{tr|Hooks}}所提供的亮光：{{tr|Dual Hook}}的蓝色端、{{tr|Dual Hook}}的红色端、{{tr|Christmas Hook}}、{{tr|Illuminant Hook}}、{{tr|Anti-Gravity Hook}}和{{tr|Lunar Hook}}各端（分别为{{tr|Solar}}端、{{tr|Vortex}}端、{{tr|Nebula}}和{{tr|Stardust}}端）。这个截图中除了{{tr|hooks}}之外没有其他{{tr|light sources}}。]]
+[[File:Gravity Hook (demo).gif|frame|right|{{tr|The Anti-Gravity Hook}}不像其他{{tr|hooks}}，允许使用者绕着擒抱点旋转。]]
+[[File:Static Hook (demo).gif|frame|使用中的{{tr|The Static Hook}}，在抓住新位置时会维持使用者的位置不变，并允许使用者随意来回移动。]]
+[[File:Hook_Boost.gif|frame|用{{tr|hooks}}来瞬间加速到冲刺速度。]]
+[[File:Hook of Dissonance (demo).gif|frame|运作中的{{tr|The Hook of Dissonance}}，传送玩家。]]
+* {{tr|The Squirrel Hook}}抓在{{tr|Palm Trees}}上时有时会自动脱开。
+* {{eicons|1.4.0.1|invert=y}}只用一个钩子钩住[[{{tr|platform}}]]或轨道会将玩家拉到{{tr|platform}}''内''，意味着玩家随后再次射出钩子总是会击中这个{{tr|platform}}。如果发生了这种情况，玩家必须跳起以松开钩子。
+* 当装备了[[{{tr|Rocket Boots}}]]或[[{{tr|Wings}}]]时，一旦{{tr|hooks}}钩住了某些东西就会立刻重置人物的飞行时间，这也适用于允许在空中多连跳物品，比如[[{{tr|Cloud in a Bottle}}]]或[[{{tr|Cloud in a Balloon}}]]。
+* 所有{{tr|Hooks}}（[[{{tr|Hook of Dissonance}}]]除外）都能保持附着在表面上持续 10 分钟（游戏内[[{{tr|time}}]]为 10 小时），然后会自动脱离。
+** {{eicons|1.4.0.1}}仅有的例外——{{tr|Hook of Dissonance}}——仅能保持附着 2 分钟 30 秒（游戏内[[{{tr|time}}]]为 2 小时 30 分钟），而后会自动脱离。
+* 玩家可以在抓住表面的同时从其[[{{tr|Inventory}}]]中移除{{tr|hooks}}并保持抓住的状态，直到他们跳跃、使用另一个{{tr|Hooks}}、或自动脱离为止，即使{{tr|Hooks}}已经不在他们的{{tr|Inventory}}中也是如此。
+* 通过[[{{tr|Inventory}}#热键栏（10 栏位）|{{tr|hotbar}}]]使用时，多钩可以更快地重新射出，只需要前一根链条完全伸展即可。
+* {{icon/3DS}} 当玩家第一次获得{{tr|hook}}时，会弹出一个小教程框来告诉玩家如何使用它。
+* 试图在斜坡上使用{{tr|hooks}}经常会导致玩家抓住他们所站立的{{tr|block}}，因为技术上说他们是处于此{{tr|the block}}内的。
+* 使用{{tr|hooks}}会取消{{tr|mount buff}}。{{tr|The mount}}不会再出现，除非玩家再次启动{{tr|buff}}。
+* 玩家不能用{{tr|Hook of Dissonance}}传送通过玩家正常就无法穿过的洞。
+* 用{{key|jump}}键取消钩住的{{tr|hook}}会导致一个持续时间减半的跳跃，除非当前正在移动或者按住了{{key|down}}键，这种情况下不会发生跳跃。
+
+== 成就 ==
+{{achievement|name=Hold on Tight!}}
+
+== 小贴士 ==
+* 当装备了[[{{tr|sprinting accessories}}]]时，钩子抓住表面所提供的爆发速度可以用于瞬间将玩家加速到冲刺速度。用[[{{tr|Unicorn Mount}}|{{tr|Unicorn}}]]和[[{{tr|Basilisk Mount}}]]的冲锋能力（虽然需要额外的输入来重新激活{{tr|mount}}）也可以做到这点，用{{tr|Anti-Gravity Hook}}也能，但它会将玩家往反方向加速。
+* 在用[[{{tr|Wings}}]]飞行时，可以用[[{{tr|Ice Rod}}]]来提供钩抓所需的{{tr|blocks}}，反复在空中重置飞行时间。
+* 钩在{{tr|block}}上的人物对重力和[[{{tr|knockback}}]]免疫。在危险的位置，比如[[{{tr|lava}}]]附近，钩在地面上可以保证不会在受到{{tr|enemy}}伤害时掉进去。
+** 玩家还可以利用向地面射出{{tr|hook}}所提供免疫重力能力来防止[[{{tr|fall damage}}]]。
+* 同时钩抓的多钩对于复杂的操纵很有用。如果想要快速移动时，单独钩抓的多钩可以更快的移动，因为它们能立即将玩家抛过间隙，而不会自动将他们吊在半空中。
+* 可以快速连续发射的{{tr|Hooks}}（[[{{tr|Dual Hook}}]]、[[{{tr|Web Slinger}}]]、[[{{tr|Fish Hook}}]]、等等）在坠落时提供了更高的安全性。如果第一根钩子没有钩住表面，其他链条能提供额外的机会来避免{{tr|fall damage}}。
+* 如果玩家抓住[[{{tr|door}}]]，并在悬挂的同时打开它，玩家会以极快的速度（如果快速连续执行，最高可达 50 mph）飞过门，前提是他们处于适合穿过门的位置。用[[{{tr|Actuator}}]]可以达到同样的效果。如果在{{tr|door}}的另一侧有[[{{tr|Frozen Slime Block}}]]，这个速度会得以保留，并可用于在天桥上非常快速地移动等各种用途。
+** 此效果不适用于[[{{tr|Static Hook}}]]或[[{{tr|Anti-Gravity Hook}}]]，它们不会拉动玩家。
+** {{eicons|1.4.0.1}}[[{{tr|Smart Doors}}]]设置，让门在玩家要通过时会自动打开，这让这个方法变得方便得多，因为玩家只需要按住{{key|left}}或者{{key|right}}就能开门。
+** 在{{versions|old-gen=y|3ds=y}}上，当玩家接近时{{tr|doors}}会自动打开，所以这就更容易进行了。
+* 用{{tr|Anti-Gravity Hook}}钩住并进行绕圈移动时，{{tr|mana}}和{{tr|health}}会像玩家站立不动一样再生。它也提供了一种快速躲避的方法，即使在降低移动速度的效果（比如来自{{eil|Vortex armor}}的特殊能力）作用下也是如此。
+* 如果有足够的空间，{{tr|The Anti-Gravity Hook}}对于躲避像[[{{tr|Mothron}}]]这样的快速{{tr|enemies}}非常有效。
+* 用{{tr|the Anti-Gravity hook}}可以非常快速的攀爬光滑的墙壁，快速按下{{key|grapple}}键并按住{{key|up}}键，同时保持鼠标位于屏幕中间的上方略偏右处。
+* 右键点击{{tr|inventory}}中的{{tr|hooks}}会自动将其装备到{{tr|hooks slot}}中。
+
+== 花絮 ==
+* 在游戏文件中，{{tr|hooks}}的{{tr|sprites}}被分为[[{{tr|Chain IDs}}|{{tr|chain}}]]{{tr|sprites}}和[[{{tr|Projectile IDs}}|{{tr|projectile}}]]{{tr|sprites}}。
+* {{tr|Hooks}}曾经准备设计为能抓到[[{{tr|tree}}]]上。但是，后来此功能被取消了，因为 [[Redigit]] 发现它“以令人讨厌的方式干扰了游戏过程”。<ref>https://forums.terraria.org/index.php?threads/terrarias-8th-anniversary-ask-redigit-and-cenx.79731/page-7#post-1765746</ref>这个功能后来被添加成为{{tr|the Squirrel Hook}}的独特功能。
+* {{tr|Fish Hook}}是一个文字游戏，使用现实生活中的{{tr|fishing tool}}术语来表示具有相同外观的{{tr|hooks}}。
+* {{tr|Grappling Hook}}的工具提示，''{{itemTooltip|84}}（{{itemTooltip|84|lang=en}}）''，是对{{wikipedia|Mortal Kombat|《真人快打（Mortal Kombat）》}}中的{{wikipedia|Scorpion (Mortal Kombat)|蝎子（Scorpion）}}的标志性话语的引用。
+** 但是，没有任何{{tr|hooks}}能够以任何方式抓住实体并拉过来。
+* {{tr|the Lunar Hook}}的工具提示''{{itemTooltip|3572}}（{{itemTooltip|3572|lang=en}}）''可能参考了台词“You want the moon? Just say the word and I'll throw a lasso around it and pull it down.”它来自 {{wikipedia|George Bailey (It's a Wonderful Life)|乔治·贝礼（George Bailey）}}，1946 年美国圣诞幻想剧情电影{{wikipedia|It's a Wonderful Life|《风云人物（It's a Wonderful Life）》}}的主角。
+* {{tr|The Bat Hook}}很可能参考了 {{wikipedia|DC Comics|DC 漫画}}中虚构的超级英雄{{wikipedia|Batman|蝙蝠侠}}，他使用的{{tr|grappling hook}}能非常快地拉起，通常将他拉到壁架上。
+* {{tr|The Web Slinger}}（Web Slinger）很可能参考了{{wikipedia|Marvel Comics|漫威（Marvel）漫画}}中虚构的超级英雄{{wikipedia|Spider-Man|蜘蛛侠}}，因为他有吊在网上来强化移动的能力，经常被称为“Web Slinger（吊网者）”。
+* {{tr|the Squirrel Hook}}的{{tr|The tooltip}}''{{#explode:{{gameText|ItemTooltip.SquirrelHook}}|<br/>|1}}''可能参考了{{wikipedia|Adventure Time|《探险活宝（Adventure Time）》}}中的“Up A Tree”这一集，在这集里， Finn 爬上一棵树去拿飞盘，结果碰到了一只说了这句台词的松鼠。
+* 当使用{{tr|the Lunar Hook}}时，发射的颜色总是遵循以下顺序：首先是橙色（{{tr|Solar}}），第二个是绿色（{{tr|Vortex}}），第三个是粉色（{{tr|Nebula}}），最后是蓝色（{{tr|Stardust}}）。
+** 由于{{tr|the Lunar Hook}}总是遵循这种模式，所以可以在不同的钩子中循环（即，发射它们但不要钩住任何物体）并用想要的颜色抓住物体。因此，也可以同时有四根同类型钩子（四根{{tr|Solar}}、{{tr|Nebula}}、{{tr|Vortex}}、或{{tr|Stardust}}钩子）在外面。
+* {{tr|The Candy Cane Hook}}的售价可与[[{{tr|Hardmode}}]]{{tr|hooks}}相媲美，尽管它只是个[[{{tr|pre-Hardmode}}]]的{{tr|hooks}}。他也是少数能在{{tr|pre-Hardmode}}就得到的具有{{iteminfo|Candy Cane Hook|rare}}{{tr|rarity}}的物品。
+* {{tr|The Thorn Hook}}类似于[[{{tr|Plantera's Hook}}]]的缩影版。
+* 如果玩家在已经钩住的情况下切换{{tr|Hooks}}，这现存的钩子会保持前一个{{tr|hooks}}的外观。但是，重新射出钩子会更新外观。
+* 如果从一个有较多钩子的旧{{tr|hooks}}切换到具有较少钩子的{{tr|hooks}}，新钩子会首先替换第一个射出的钩子，但随后将始终替换老的钩子。这是非常不稳定的，会导致很奇怪的效果，比如同时有两个{{tr|Static Hooks}}处于钩抓状态。这也可能导致玩家同时拥有{{tr|Anti-Gravity hooks}}和{{tr|Static Hooks}}，这么做会非常不靠谱。
+* {{tr|The Static Hook}}有{{iteminfo|Static Hook|rare}}{{tr|rarity}}，尽管只要打败一个[[{{tr|Mechanical Bosses}}]] 后就可以获得它了。它也是拥有这个{{tr|rarity}}的物品中唯一可以购买到的。
+* 考虑到{{tr|Thorn Hook}}和三个{{tr|Biome Mimic hooks}}（{{tr|the Illuminant Hooks, Tendon Hooks and Worm Hooks}}）的属性相同，有可能起初{{tr|the Thorn Hook}}被设计为掉落自[[{{tr|Jungle Mimic}}]]。
+* {{tr|The ivy whip}}是唯一被叫作{{tr|whip}}的{{tr|grappling hook}}。它和{{eil|Whips}}{{tr|weapon type}}无关。
+
+== 历史 ==
+{{history|Desktop 1.4.3.3|{{tr|Web Slinger}}的射程提高 25%。}}
+{{history|Desktop 1.4.1|所有{{tr|Journey Mode}}人物现在都拥有基本的{{tr|Grappling Hook}}。}}
+{{history|Desktop 1.4.0.3|修正了[[{{tr|Difficulty}}#{{tr|Mediumcore}}|{{tr|Mediumcore}}]]模式下死亡后依然可以使用{{tr|Hooks}}的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|introduced=1|patched=1|
+** 引入{{tr|Squirrel Hooks and Amber Hooks and the Hook of Dissonance}}。
+** 钩在{{tr|platform}}上后，玩家若释放后继钩爪不再会持续抓在平台上并被卡住。
+** {{tr|Bat Hook}}的拉近速度由 16 降低至 13。
+** {{tr|Bat Hook}}的发射{{tr|speed}}由 15.5 降低至 13.5。
+** {{tr|Thorn Hook}}的拉近速度由 11 提升至 12。
+** {{tr|Thorn Hook}}的发射速度由 15 提升至 16。
+** {{tr|Lunar Hook}}的拉近速度由 13 提升至 16。
+** {{tr|Lunar Hook}}的发射速度由 16 提升至 18。}}
+{{history|Desktop 1.3.2|[[{{tr|Gem}}|{{tr|gem hook}}]]的{{tr|sprites updated}}。}}
+{{history|Desktop 1.3.1|{{tr|Introduced the Static Hook}}。}}
+{{history|Desktop 1.3.0.5|修正了{{tr|Lunar Hook}}至少要有一个钩子钩住之后才能自由使用的问题。}}
+{{history|Desktop 1.3.0.4|修正了处于[[{{tr|Gravitation Potion}}|{{tr|reverse Gravity}}]]状态下{{tr|Anti-Gravity hook}}的控制也逆转了的问题。}}
+{{history|Desktop 1.3.0.1|introduced=1|patched=1|
+** 引入了{{tr|Worm Hooks}}、{{tr|Tendon Hooks}}、{{tr|Illuminant Hooks}}、{{tr|Thorn Hooks}}、{{tr|Anti-Gravity Hooks}}、和{{tr|Lunar Hooks}}
+** 调整抓钩机制：
+*** 给了{{tr|Hooks}}专用的装备栏和染料栏，并且不再能够从物品栏发射。
+*** {{tr|Fish Hook}}改为同时钩抓。
+*** 现在不能在{{tr|frozen}}状态下钩抓了。}}
+{{history|Desktop 1.2.4|{{tr|Introduced Slime Hooks and Fish Hooks}}。}}
+{{history|Desktop 1.2.3|
+** 修正了一个{{tr|hooks}}试图附着到其中有液体的{{tr|blocks}}时会坏掉的 {{tr|bug}}。
+** 使用[[{{tr|Rod of Discord}}]]或[[{{tr|Teleporter}}]]现在会释放所有{{tr|grapples}}。}}
+{{history|Desktop 1.2.2|{{tr|Introduced Candy Cane hooks and Christmas Hooks}}。}}
+{{history|Desktop 1.2.1.2|{{tr|Bat Hook}}现在会正确掉落自[[{{tr|Goodie Bag}}]]。}}
+{{history|Desktop 1.2.1|引入了{{tr|Bat Hook}}和{{tr|Spooky Hook}}。}}
+{{history|Desktop 1.2|introduced=1|patched=1|
+** 引入{{tr|Gem hooks}}（{{tr|Amethyst hooks, Topaz hooks, Sapphire hooks, Emerald hooks, Ruby hooks, and Diamond hooks}}）、{{tr|Web Slinger}}、和{{tr|Skeletron Hand}}。
+** {{tr|Ivy Whip}}的{{tr|recipe}}有所改变，不再需要{{tr|Grappling Hook}}。}}
+{{history|Desktop 1.1|introduced=1|patched=1|
+** {{tr|Introduced the Dual Hook}}。
+** {{tr|Grappling Hook}}现在可以从[[{{tr|Goblin Tinkerer}}]]处以 {{gc|2}} 购买。
+** {{tr|Ivy Whip}}的{{tr|recipe}}有所改变，需要的[[{{tr|Jungle Spores}}]]由 15 降低至 12 个。}}
+{{history|Desktop 1.0.6|
+** 添加了{{tr|Grapple}}[[热键]]（默认热键是 {{key|E}}）。
+** 不再能一次抛出多个{{tr|hooks}}。
+** 移除了 60 秒后自动解开的特性。
+** {{tr|Ivy Whip}}的{{tr|recipe}}有所改变，现在需要 15 个[[{{tr|Jungle Spores}}]]而非 30 个[[{{tr|Jungle Rose}}]]。}}
+{{history|Desktop 1.0.4|添加了{{tr|Grappling Hook}}的[[{{tr|tooltip}}]]。}}
+{{history|Desktop-Release|引入了{{tr|Grappling Hook}}和{{tr|Ivy Whip}}。}}
+{{history|Console 1.0.1372.5|{{tr|Introduced the Static Hook}}。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=1|patched=1|({{icon/ps4}})
+** 引入了{{tr|Worm Hooks}}、{{tr|Tendon Hooks}}、{{tr|Illuminant Hooks}}、{{tr|Thorn Hooks}}、{{tr|Anti-Gravity Hooks}}、和{{tr|Lunar Hooks}}
+** {{tr|Gem hook}}的外观更新为与{{tr|Desktop}} 1.3.2 一致。
+** 调整抓钩机制：
+*** 给了{{tr|Hooks}}专用的装备栏和染料栏，并且不再能够从物品栏发射。
+*** {{tr|Fish Hook}}改为同时钩抓。
+*** 现在不能在{{tr|frozen}}状态下钩抓了。}}
+{{history|Console 1.07|{{tr|Introduced Slime hook and Fish Hooks}}。}}
+{{history|Console 1.06|现在使用{{tr|Rod of Discord or Teleporter}}会释放所有{{tr|grapples}}。}}
+{{history|Console 1.04|{{tr|Introduced Candy Cane Hook and Christmas Hooks}}。}}
+{{history|Console 1.02|introduced=1|patched=1|
+** {{tr|Introduced}}{{tr|the Gem hooks, Bat Hooks and Spooky Hooks, Web Slinger, and Skeletron Hand}}。
+** {{tr|The Ivy Whip}}的{{tr|crafting recipe}}中不再使用{{tr|Grappling Hook}}。}}
+{{history|Console-Release|{{tr|Introduced}}{{tr|Grappling hooks and Dual Hooks and the Ivy Whip}}。}}
+{{history|Switch 1.0.1096.2|{{tr|Gem hook}}{{tr|sprites updated}}为与{{tr|Desktop 1.3.2}} 一致。}}
+{{history|Switch 1.0.895.9|{{tr|Introduced the Static Hook}}。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=1|patched=1|
+** 引入{{tr|Static Hook, Squirrel Hook, Amber Hook, and the Hook of Dissonance}}。
+** {{tr|Gem hook}}的外观更新为与{{tr|Desktop}} 1.3.2 一致。
+** 钩在{{tr|platform}}上后，玩家若释放后继钩爪不再会持续抓在平台上并被卡住。
+** {{tr|Bat Hook}}的拉近速度由 16 降低至 13。
+** {{tr|Bat Hook}}的发射{{tr|speed}}由 15.5 降低至 13.5。
+** {{tr|Thorn Hook}}的拉近速度由 11 提升至 12。
+** {{tr|Thorn Hook}}的发射速度由 15 提升至 16。
+** {{tr|Lunar Hook}}的拉近速度由 13 提升至 16。
+** {{tr|Lunar Hook}}的发射速度由 16 提升至 18。}}
+{{history|Mobile 1.3.0.7|introduced=1|patched=1|
+** 引入了{{tr|Worm Hooks}}、{{tr|Tendon Hooks}}、{{tr|Illuminant Hooks}}、{{tr|Thorn Hooks}}、{{tr|Anti-Gravity Hooks}}、和{{tr|Lunar Hooks}}
+** 调整抓钩机制：
+*** 给了{{tr|Hooks}}专用的装备栏和染料栏，并且不再能够从物品栏发射。
+*** {{tr|Fish Hook}}改为同时钩抓。
+*** 现在不能在{{tr|frozen}}状态下钩抓了。}}
+{{history|Mobile 1.2.11212|introduced=1|
+** {{tr|Introduced}}{{tr|Slime Hooks, Fish Hooks, Candy Cane Hooks, and Christmas Hooks}}。
+** 使用{{tr|Rod of Discord}}或{{tr|Teleporter}}现在会释放所有{{tr|grapples}}。}}
+{{history|Mobile 1.2.6508|introduced=1|patched=1|
+** {{tr|Introduced}}{{tr|the Gem hooks, Bat Hooks and Spooky Hooks, Web Slinger, and Skeletron Hand}}。
+** {{tr|The Ivy Whip}}的{{tr|crafting recipe}}中不再使用{{tr|Grappling Hook}}。}}
+{{history|Mobile 1.1.5536|introduced=1|patched=1|
+** {{tr|Introduced the Dual Hook}}。
+** {{tr|Grappling Hook}}现在可以从{{tr|Goblin Tinkerer}}处以 {{gc|2}} 购买。}}
+{{history|Mobile-Release|{{tr|Introduced Grappling Hook and Ivy Whip}}。}}
+{{history|3DS-Release|引入到{{tr|Desktop 1.2.1}} 为止所加入的所有{{tr|hooks}}以及{{tr|Christmas Hook}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-hook = yes
+}}
+
+[[Category:工具物品|*]]
+{{all versions}}
+
+{{language info|en=Hooks}}

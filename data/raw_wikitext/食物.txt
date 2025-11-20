@@ -1,0 +1,456 @@
+{{see also|{{tr|Fruits}}}}
+
+'''{{tr|Food}}'''物品是[[{{tr|buff}}]][[{{tr|potions}}]]，会给予[[{{tr|Well Fed}}]]、[[{{tr|Plenty Satisfied}}]]、或[[{{tr|Exquisitely Stuffed}}]]{{tr|buffs}}。它们可以被放置在{{eil|Plate}}上，并在 {{eil|The Constant}} {{tr|seed}}中取消{{eil|Hunger}}{{tr|debuff}}。由[[{{tr|statue}}]]生成的{{tr|enemies}}永远不会掉落{{tr|Food}}。{{source code ref|v=1.4.3.6|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase}}
+
+{{tr|Food}}总体上也包含饮料，例如{{eil|Lemonade}}和{{eil|Milkshake}}。不过，[[{{tr|Ale}}]]、{{eil|Sake}}、和{{eil|Wiesnbräu}}不被视为{{tr|food items}}，因为它们提供不同的{{tr|buffs}}，且不会取消 {{tr|The Constant}} 的{{tr|Hunger debuff}}。尽管如此，{{tr|Ale and Sake}}仍然能被放置在{{tr|Plates}}上。
+__FORCETOC__
+== 可制作的食物和饮料 ==
+{{options/set|item|small=y|wrap=y}}{{recipes
+|result = Bowl of Soup/Pumpkin Pie/Cooked Fish/Cooked Marshmallow/Cooked Shrimp/Grub Soup/Bunny Stew/Escargot/Golden Delight/Grilled Squirrel/Roasted Bird/Roasted Duck/Sauteed Frog Legs/Seafood Dinner/Star Fruit/Lobster Tail/Apple Juice/Grape Juice/Lemonade/Frozen Banana Daiquiri/Froggle Bunwich/Monster Lasagna/Peach Sangria/Pina Colada/Tropical Smoothie/Bloody Moscato/Smoothie of Darkness/Prismatic Punch/Fruit Juice/Fruit Salad/Teacup/Carton of Milk/Sashimi/Shucked Oyster
+|expectedrows = 77
+|header-result = 食物 / 饮料
+|header-ingredients = {{tr|Ingredients}}
+|col-D-1 = {{tr|Effects}}
+|col-D-2 = {{tr|Duration}}
+|col-D-3 = {{tr|Icon}}
+|result-index-Golden Delight = a
+|a-row-col-D-1 = [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+|a-row-col-D-2 = 48 {{tr|minutes}}
+|a-row-col-D-3 = [[File:Exquisitely Stuffed.png|link=]]
+|result-index-Grape Juice = b
+|b-row-col-D-1 = [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+|b-row-col-D-2 = {{nowrap|16 {{tr|minutes}}}}
+|b-row-col-D-3 = [[File:Exquisitely Stuffed.png|link=]]
+|result-index-Seafood Dinner = c
+|c-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|c-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>14 {{tr|minutes}}}}
+|c-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Cooked Shrimp = d
+|d-row-col-D-1 = {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}} <br/> {{nowrap|{{eicons|1.4.0.1|invert=y}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+|d-row-col-D-2 = {{nowrap|10 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|3 {{tr|minutes}} {{eicons|1.4.0.1|invert=y}}}}
+|d-row-col-D-3 = {{nowrap|class=block|css=margin-bottom: 2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y}}}}
+|result-index-Sashimi = e
+|e-row-col-D-1 = {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}} <br/> {{nowrap|{{eicons|1.4.0.1|invert=y}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+|e-row-col-D-2 = {{nowrap|8 {{tr|minutes}} {{eicons|1.4.0.1}}}} {{nowrap|3 {{tr|minutes}} {{eicons|1.4.0.1|invert=y}}}}
+|e-row-col-D-3 = {{nowrap|class=block|css=margin-bottom: 2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y}}}}
+|result-index-Bowl of Soup = f
+|f-row-col-D-1 = {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}} <br/> {{nowrap|{{eicons|1.4.0.1|invert=y}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+|f-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>8 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|10 {{tr|minutes}} {{eicons|1.4.0.1|invert=y}}}}
+|f-row-col-D-3 = {{nowrap|class=block|css=margin-bottom: 2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y}}}}
+|result-index-Pumpkin Pie = g
+|g-row-col-D-1 = {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}} <br/> {{nowrap|{{eicons|1.4.0.1|invert=y}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+|g-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>8 {{tr|minutes}} {{eicons|1.4.0.1}}}} {{nowrap|15 {{tr|minutes}} {{eicons|1.4.0.1|invert=y}}}}
+|g-row-col-D-3 = {{nowrap|class=block|css=margin-bottom: 2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y}}}}
+|result-index-Escargot = v
+|v-row-col-D-1 = [[{{tr|Plenty Satisfied}}]] ({{gameText|BuffDescription.WellFed2}})
+|v-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|v-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Grub Soup = h
+|h-row-col-D-1 = [[{{tr|Plenty Satisfied}}]] ({{gameText|BuffDescription.WellFed2}})
+|h-row-col-D-2 = {{nowrap|14 {{tr|minutes}}}}
+|h-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Roasted Duck = i
+|i-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|i-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|i-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Sauteed Frog Legs = j
+|j-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|j-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|j-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Lobster Tail = k
+|k-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|k-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|k-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Prismatic Punch = q
+|q-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|q-row-col-D-2 = {{nowrap|20 {{tr|minutes}}}}
+|q-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Apple Juice = l
+|l-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|l-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|l-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Bunny Stew = m
+|m-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|m-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|m-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Grilled Squirrel = n
+|n-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|n-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|n-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Roasted Bird = o
+|o-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|o-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|o-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Cooked Fish = p
+|p-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|p-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>8 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|3 {{tr|minutes}} {{eicons|1.4.0.1|invert=y}}}}
+|p-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Frozen Banana Daiquiri = r
+|r-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|r-row-col-D-2 = {{nowrap|15 {{tr|minutes}}}}
+|r-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Bloody Moscato = s
+|s-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|s-row-col-D-2 = {{nowrap|20 {{tr|minutes}}}}
+|s-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Fruit Juice = t
+|t-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|t-row-col-D-2 = {{nowrap|15 {{tr|minutes}}}}
+|t-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Fruit Salad = u
+|u-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|u-row-col-D-2 = {{nowrap|25 {{tr|minutes}}}}
+|u-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Lemonade = w
+|w-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|w-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|w-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Peach Sangria = x
+|x-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|x-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|x-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Piña Colada = y
+|y-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|y-row-col-D-2 = {{nowrap|20 {{tr|minutes}}}}
+|y-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Smoothie of Darkness = z
+|z-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|z-row-col-D-2 = {{nowrap|20 {{tr|minutes}}}}
+|z-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Tropical Smoothie = aa
+|aa-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|aa-row-col-D-2 = {{nowrap|20 {{tr|minutes}}}}
+|aa-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Ale = ab
+|ab-row-col-D-1 = [[{{tr|Tipsy}}]]（{{gameText|BuffDescription.Tipsy}}）
+|ab-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>2 {{tr|minutes}}}}
+|ab-row-col-D-3 = [[File:Tipsy.png|link=]]
+|result-index-Teacup = ac
+|ac-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|ac-row-col-D-2 = {{nowrap|<span style{{=}}"display:none">0</span>5 {{tr|minutes}}}}
+|ac-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Cooked Marshmallow = ad
+|ad-row-col-D-1 = [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+|ad-row-col-D-2 = {{nowrap|10 {{tr|minutes}}}}
+|ad-row-col-D-3 = [[File:Well Fed.png|link=]]
+|result-index-Monster Lasagna = ae
+|ae-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|ae-row-col-D-2 = {{nowrap|8 {{tr|minutes}}}}
+|ae-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+|result-index-Froggle Bunwich = af
+|af-row-col-D-1 = [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+|af-row-col-D-2 = {{nowrap|6 {{tr|minutes}}}}
+|af-row-col-D-3 = [[File:Plenty Satisfied.png|link=]]
+}}
+
+== 不可制作的{{tr|foods and drinks}} ==
+{| class="sortable terraria lined"
+|-
+! 食物/饮料 !! {{tr|Source}} !! {{tr|Effect}} !! {{tr|Duration}} !! {{tr|Buff icon}}
+|-
+| {{item|Apple}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Forest tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Apricot}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Forest tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Banana}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Ocean}}]]{{tr|biome}}中的任意类型[[{{tr|Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Blackcurrant}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Corrupt tree}}]]和[[{{tr|Corrupt Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Blood Orange}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Crimson tree}}]]和[[{{tr|Crimson Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Cherry}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Boreal tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Coconut}}
+| 掉落自[[{{tr|Shaking}}]]{{tr|Ocean}}{{tr|biome}}中的任意类型[[{{tr|Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Dragon Fruit}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Hallowed tree}}]]和[[{{tr|Hallowed Palm tree}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 5 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Elderberry}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Corrupt tree}}]]和[[{{tr|Corrupt Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Grapefruit}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Forest tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Lemon}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Forest tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Mango}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Jungle tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Peach}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Forest tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Pineapple}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Jungle tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Plum}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Boreal tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Pomegranate}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Ash tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Rambutan}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Crimson tree}}]]和[[{{tr|Crimson Palm tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Star Fruit}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Hallowed tree}}]]和[[{{tr|Hallowed Palm tree}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 5 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Spicy Pepper}}
+| 掉落自[[{{tr|Shaking}}]][[{{tr|Ash tree}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Apple Pie}}
+| {{percent|0.67%}} 几率掉落自[[{{tr|Chaos Elemental}}]]、[[{{tr|Illuminant Bat}}]]、和[[{{tr|Illuminant Slime}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 16 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Bacon}}
+| {{percent|6.67%}} 几率掉落自[[{{tr|Pigron}}]]，或 {{percent|2.5%}} 几率掉落自[[{{tr|Pigronata}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 24 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Banana Split}}
+| {{percent|2%}} 几率掉落自[[{{tr|Antlion}}]]、[[{{tr|Antlion Charger}}]]、[[{{tr|Antlion Swarmer}}]]、[[{{tr|Giant Antlion Charger}}]]和[[{{tr|Giant Antlion Swarmer}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 10 分钟
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|BBQ Ribs}}
+| {{percent|4.76%}} 几率掉落自[[{{tr|Skeleton Commando}}]]、[[{{tr|Skeleton Sniper}}]]、和[[{{tr|Tactical Skeleton}}]]，或 {{percent|14.29%}} 几率掉落自[[{{tr|Paladin}}]]。 
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 24 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Burger}}
+| {{percent|1%}} 几率掉落自[[{{tr|Eater of Souls}}|{{tr|Eaters of Souls}}]]和[[{{tr|Crimera}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 8 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Carton of Milk}}
+| {{percent|0.67%}} 几率掉落自所有[[{{tr|Skeleton}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 20 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Chicken Nugget}}
+| {{percent|2%}} 几率掉落自[[{{tr|Harpy}}|{{tr|Harpies}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 14 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Chocolate Chip Cookie}}
+| {{percent|1.33%}} 几率掉落自[[{{tr|Gastropod}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 20 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Coffee}}
+| {{percent|10%}} 几率掉落自[[{{tr|Bone Lee}}]]，或 {{percent|3.33%}} 几率掉落自[[{{tr|Man Eater}}]]、[[{{tr|Snatcher}}]]、和[[{{tr|Angry Trapper}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 10 分钟
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Cream Soda}}
+| {{percent|1.43%}} 几率掉落自[[{{tr|Cursed Skull}}]]，或 {{percent|2.86%}} 几率掉落自[[{{tr|Giant Cursed Skull}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 16 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Fried Egg}}
+| {{percent|3.33%}} 几率掉落自[[{{tr|Wall Creeper}}]]、[[{{tr|Black Recluse}}]]、和[[{{tr|Sand Poacher}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 14 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Fries}}
+| {{percent|2%}} 几率掉落自[[{{tr|Flying Fish}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 10 分钟
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Grapes}}
+| {{percent|2.5%}} 几率掉落自[[{{tr|Derpling}}]]和[[{{tr|Giant Flying Fox}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 16 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Hotdog}}
+| {{percent|3.33%}} 几率掉落自[[{{tr|Bone Serpent}}]]和[[{{tr|Red Devil}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 12 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Ice Cream}}
+| {{percent|0.67%}} 几率掉落自[[{{tr|Ice Slime}}]]、[[{{tr|Ice Bat}}]]、和[[{{tr|Spiked Ice Slime}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 14 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Milkshake}}
+| {{percent|1.33%}} 几率掉落自[[{{tr|Icy Merman}}|{{tr|Icy Mermen}}]]和[[{{tr|Ice Tortoise}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 16 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Nachos}}
+| {{percent|3.33%}} 几率掉落自[[{{tr|Sand Sharks}}]]和[[{{tr|Angry Tumbler}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 16 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Pizza}}
+| {{percent|2%}} 几率掉落自[[{{tr|Medusa}}]]和[[{{tr|Hoplite}}]]。
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 8 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Potato Chips}}
+| {{percent|1.33%}} 几率掉落自[[{{tr|Salamander}}]]、[[{{tr|Giant Shelly}}]]、和[[{{tr|Crawdad}}]]。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 25 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Shrimp Po' Boy}}
+| {{percent|2%}} 几率掉落自[[{{tr|Shark}}]]和[[{{tr|Crab}}]]。
+| [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）
+| 18 {{tr|minutes}}
+| [[File:Plenty Satisfied.png|link=]]
+|-
+| {{item|Shucked Oyster}}
+| 打开钓到的[[{{tr|Oyster}}]]得到。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 5 {{tr|minutes}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Spaghetti}}
+| {{percent|2%}} 几率掉落自[[{{tr|Granite Golem}}]]和[[{{tr|Granite Elemental}}]]。 
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 8 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Steak}}
+| {{percent|10%}} 几率掉落自[[{{tr|Undead Miner}}]]、{{percent|1%}} 几率掉落自[[{{tr|The Possessed}}]]。 
+| [[{{tr|Exquisitely Stuffed}}]]（{{gameText|BuffDescription.WellFed3}}）
+| 16 {{tr|minutes}}
+| [[File:Exquisitely Stuffed.png|link=]]
+|-
+| {{item|Christmas Pudding}}
+| 从[[{{tr|Present}}]]中得到，几率为 {{percent|3.60%}}。
+| {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Exquisitely Stuffed}}]] ({{gameText|BuffDescription.WellFed3}})}}<br/>{{nowrap|{{eicons|1.4.0.1|invert=y|3ds=n}} [[{{tr|Well Fed}}]] ({{gameText|BuffDescription.WellFed}})}}
+| {{nowrap|<span style{{=}}"display:none">0</span>4 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|15 {{tr|minutes}} {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+| {{nowrap|class=block|css=margin-bottom: 2px|[[File:Exquisitely Stuffed.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+|-
+| {{item|Gingerbread Cookie}}
+| 从[[{{tr|Present}}]]中得到，几率为 {{percent|3.60%}}。
+| {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Exquisitely Stuffed}}]] ({{gameText|BuffDescription.WellFed3}})}}<br/>{{nowrap|{{eicons|1.4.0.1|invert=y|3ds=n}} [[{{tr|Well Fed}}]] ({{gameText|BuffDescription.WellFed}})}}
+| {{nowrap|<span style{{=}}"display:none">0</span>4 {{tr|minutes}} {{eicons|1.4.0.1}}}} {{nowrap|15 {{tr|minutes}} {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+| {{nowrap|class=block|css=margin-bottom: 2px|[[File:Exquisitely Stuffed.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+|-
+| {{item|Sugar Cookie}}
+| 从[[{{tr|Present}}]]中得到，几率为 {{percent|3.60%}}。
+| {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Exquisitely Stuffed}}]] ({{gameText|BuffDescription.WellFed3}})}}<br/>{{nowrap|{{eicons|1.4.0.1|invert=y|3ds=n}} [[{{tr|Well Fed}}]] ({{gameText|BuffDescription.WellFed}})}}
+| {{nowrap|<span style{{=}}"display:none">0</span>4 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|15 {{tr|minutes}} {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+| {{nowrap|class=block|css=margin-bottom: 2px|[[File:Exquisitely Stuffed.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+|-
+| {{item|Marshmallow}}
+| 购买自住在[[{{tr|Snow biome}}]]中的[[{{tr|Merchant}}]]。<br/>只在{{eversions|1.4.0.1}}中才是{{tr|consumable}}。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 1 {{tr|minute}}
+| [[File:Well Fed.png|link=]]
+|-
+| {{item|Pad Thai}}
+| 有时由[[{{tr|Traveling Merchant}}]]出售。
+| {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}}<br/>{{nowrap|{{eicons|1.4.0.1|invert=y|3DS=n}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+| {{nowrap|<span style{{=}}"display:none">0</span>8 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|4 {{tr|minutes}} {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+| {{nowrap|class=block|css=margin-bottom：2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+|-
+| {{item|Pho}}
+| 有时由[[{{tr|Traveling Merchant}}]]出售。
+| {{nowrap|{{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]]（{{gameText|BuffDescription.WellFed2}}）}}<br/>{{nowrap|{{eicons|1.4.0.1|invert=y|3DS=n}} [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）}}
+| {{nowrap|10 {{tr|minutes}} {{eicons|1.4.0.1}}}} <br/> {{nowrap|7 {{tr|minutes}} {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+| {{nowrap|class=block|css=margin-bottom：2px|[[File:Plenty Satisfied.png|link=]] {{eicons|1.4.0.1}}}}{{nowrap|class=block|[[File:Well Fed.png|link=]] {{eicons|1.4.0.1|invert=y|3DS=n}}}}
+|-
+| {{item|Joja Cola}}
+| 它有 {{chance|1/8}} 的几率作为代替[[{{tr|junk}}]]被钓上。
+| [[{{tr|Well Fed}}]]（{{gameText|BuffDescription.WellFed}}）
+| 2 {{tr|minute}}
+| [[File:Well Fed.png|link=]]
+|}{{options/reset|item}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+[[Category:{{tr|Potion items}}| ]]
+[[Category:食物物品| ]]
+
+{{language info|en=Food}}

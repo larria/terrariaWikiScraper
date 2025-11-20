@@ -1,0 +1,70 @@
+{{exclusive|1.4.4}}
+{{infobox wrapper
+|{{item infobox
+| auto = 5212
+| id = 5212（红）, 5300（蓝）
+| name = Macaws
+| imagealt = [[File:Scarlet Macaw.png|link=|Scarlet Macaw item sprite]] [[File:Blue Macaw.png|link=|Blue Macaw item sprite]]
+| cargo = no
+}}
+|{{npc infobox
+| auto = 671
+| id = 671 (红), 672 (蓝)
+| name = Macaws
+| namesub =
+| imagealt = [[File:Scarlet Macaw.png|link=]] [[File:Blue Macaw.png|link=]]
+| imageother = Scarlet Macaw (flying).gif/Blue Macaw (flying).gif
+| imageothercaption = 飞行状态
+| type = Critter
+| environment = Jungle
+| sound1 = Zombie 126.wav, Zombie 127.wav, Zombie 128.wav
+| soundcaption1 = Idle
+| cargo = no
+}}
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view=void
+| auto = 671
+| type = Critter
+| environment = Jungle
+}}<!--
+-->{{npc infobox | view=void
+| auto = 672
+| type = Critter
+| environment = Jungle
+}}<!--
+-->{{item infobox | view=void
+| auto = 5300
+}}<!--
+-->{{item infobox | view=void
+| auto = 5212
+}}
+
+'''{{tr|Scarlet Macaws}}'''和'''{{tr|Blue Macaws}}'''是一类[[{{tr|critters}}]]，会在[[{{tr|Jungle}}]]中的[[{{tr|daytime}}]]期间生成。
+
+{{critter info|plural=y
+|cagename=[[{{tr|Scarlet Macaw Cage}}]] / [[{{tr|Blue Macaw Cage}}]]3
+|statuename=[[{{tr|Macaw Statue}}]]
+}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Scarlet Macaw/Blue Macaw|expectedrows=3}}
+
+== 花絮 ==
+* {{tr|The Scarlet Macaw}}、{{tr|Blue Macaw}}、[[{{tr|Gray Cockatiel}}]]、[[{{tr|Owl}}]]、[[{{tr|Toucan}}]]、和[[{{tr|Yellow Cockatiel}}]]是仅有的无法被制作为[[{{tr|food}}]]的{{tr|bird}}类{{tr|critters}}。
+* {{wikipedia|Scarlet Macaw|{{tr|Scarlet Macaw}}}}和{{tr|Blue Macaw}}(类似于{{wikipedia|blue-and-yellow macaw|黄蓝金刚鹦鹉}})是鹦鹉科的成员，是新热带地区特有的，常被当作宠物饲养。
+{{bestiary|Scarlet Macaw|Blue Macaw}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Macaws}}

@@ -1,0 +1,36 @@
+{{exclusive|1.2.3}}
+__NOTOC__
+{{item infobox
+| name = Dynasty Walls
+| type = Wall
+| imagealt = [[File:White Dynasty Wall.png]] [[File:Blue Dynasty Wall.png]]<li>[[File:White Dynasty Wall (placed).png]] [[File:Blue Dynasty Wall (placed).png]]</li>
+| imagebreak = yes
+| auto = 2263
+| id = 2263–2264
+| idwall = 142–143
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 2263 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 2264 | type = Wall}}
+
+'''{{tr|White Dynasty Wall}}'''和'''{{tr|Blue Dynasty Wall}}'''是由[[{{tr|Traveling Merchant}}]]所出售的[[{{tr|Dynasty Wood}}]]制作的[[{{tr|background Walls}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=LIKE % Dynasty Wall|expectedrows=2| link=n}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Dynasty Wall|expectedrows=2}}
+
+== 历史 ==
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Dynasty Walls}}

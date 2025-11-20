@@ -1,0 +1,51 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4764
+| listcat = Boomerangs
+| tags = drop / loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Shroomerang (demo).gif|frame|right|用{{tr|Shroomerang}}攻击。注意它会在到达最大范围时穿透{{tr|enemies}}。]]
+
+'''{{tr|Shroomerang}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|boomerang}}]]，有 {{chance|1/40}} 几率掉落自[[{{tr|Spore Bat}}]]。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Shroomerang|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Shroomerang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 23.67 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Shroomerang}}返回玩家时的最高速度为 {{mph|9 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 小贴士 ==
+* 该武器的射程与[[{{tr|Ice Boomerang}}]]近似但伤害更低，并且也是稀有掉落物。{{tr|Ice Boomerang}}更容易找到，是更好的替代品。
+
+== 花絮 ==
+* 英文名 ''Shroomerang'' 是由单词 ''mushroom''（{{tr|mushroom}}）和 ''boomerang''（{{tr|boomerang}}）组合而成。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|damage}}由 14 提升至 23。
+** {{tr|Use time}}由 15 提升至 20。
+** {{tr|drop rate}}由 1/100 提升至 1/40。
+** 现在用于制作[[{{tr|Trimarang}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|现在用于制作[[{{tr|Trimarang}}]]。}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|现在用于制作[[{{tr|Trimarang}}]]。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Shroomerang}}

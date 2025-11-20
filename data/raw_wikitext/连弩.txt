@@ -1,0 +1,55 @@
+'''{{tr|Repeaters}}'''是一种[[{{tr|Hardmode}}]]的[[{{tr|ranged weapons}}]]，发射[[{{tr|arrows}}]]作为[[{{tr|ammunition}}]]。它们通常被认为是[[{{tr|bows}}]]的升级版，只有像[[{{tr|Tsunami}}]]、{{eil|Eventide}}或{{eil|Phantasm}}这样的后期{{tr|bows}}比它们表现得更好。与大多数{{tr|bows}}不同，所有{{tr|Repeaters}}都有[[{{tr|autofire}}]]的能力。
+
+所有{{tr|repeaters}}都可以从[[{{tr|Archery Potion}}]]、[[{{tr|Magic Quiver}}]]及其升级物、以及[[{{tr|Shroomite Headgear}}]]的加成中受益。特别地，[[{{tr|Stake Launcher}}]]也可以得到[[{{tr|Rifle Scope}}]]及其升级物提供的缩放效果。
+
+{{modifier|ranged|plural=y}}
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|{{tr|Autofire}}|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | 来源
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 花絮 ==
+* {{tr|Repeater}}（repeater）与（现实生活中的）{{维基百科|repeating crossbow|t=连弩}}非常相似。
+
+== 另见 ==
+* [[{{tr|Bows}}]]
+* [[{{tr|Guns}}]]
+
+== 历史 ==
+{{history|Desktop 1.2.3|略微增加了所有{{tr|Repeaters}}的伤害。}}
+{{history|Desktop 1.2.1|添加了{{tr|Stake Launcher}}。}}
+{{history|Desktop 1.2|
+** 添加了{{tr|Palladium Repeaters}}、{{tr|Orichalcum Repeaters}}以及{{tr|Titanium Repeaters}}。
+** 添加了{{tr|Chlorophyte Shotbow}}。
+** {{tr|Hallowed Repeater}}{{tr|Recipe}}更改。}}
+{{history|Desktop 1.1|{{tr|Introduced}}{{tr|Cobalt Repeaters}}、{{tr|Mythril Repeaters}}、{{tr|Adamantite Repeaters}}以及{{tr|Hallowed Repeaters}}。}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+[[Category:{{tr|Repeaters}}| ]]
+
+{{language info|en=Repeaters}}

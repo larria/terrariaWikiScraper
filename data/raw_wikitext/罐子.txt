@@ -1,0 +1,295 @@
+{{naturalgen only}}
+{{item infobox
+| type = Background object
+| idtile = 28
+| listcat = Naturally generated
+| rare =
+| placeable =
+| cargo = no
+| allversions = yes
+}}
+[[File:Coin portal.png|thumb|[[{{tr|Underworld}}]]中的{{tr|Coin Portal}}。]]
+{{about|{{tr|the naturally generated}}的{{tr|pots}}（它们在使用{{tr|weapons}}接触时会被摧毁）|{{tr|the craftable}}的{{tr|pots}}|{{tr|Clay Pot}}|and|{{tr|Cooking Pot}}}}
+
+'''{{tr|Pots}}'''是一种在世界创造时生成在在随机区域中的常见{{tr|items}}。当使用任何[[{{tr|weapon}}]]或[[{{tr|tool}}]]打破时，它们会掉落[[{{tr|coins}}]]或随机的{{tr|items}}。{{tr|Pots}}不能被捡起，不会重新生成，甚至使用{{eil|Ecto Mist}}也不能重新制作。
+
+== 打破后 ==
+=== {{eversions|1.4.0.1}} ===
+在打破{{tr|Pot}}之后，游戏会依据以下流程来决定结果：{{source code ref|v=1.4.2.3|method=WorldGen.CheckPot}}
+* 有很小几率会生成一个'''{{tr|Coin Portal}}'''而不是普通掉落物。{{tr|Coin Portal}}是一个会存在一小段时间的金色圆形，在消失前总共会放出 5-15 {{gc}}，每次一个。{{tr|Coin Portal}}生成的几率取决于{{tr|Pot}}的类型以及最接近它的{{tr|player}}的[[{{tr|luck}}]]。若生成，则流程结束。
+:{| class="terraria" style="text-align:center;"
+|-
+! 图像 !! {{tr|Pot}}{{tr|type}} !! {{tr|Coin Portal}}的生成几率
+|-
+| {{item|Forest Pots|mode=image}} || [[{{tr|Forest}}]]{{tr|Pots}} || 1/500
+|-
+| {{item|Tundra Pots|mode=image}} || [[{{tr|Tundra}}]]{{tr|Pots}} || 1/461
+|-
+| {{item|Jungle Pots|mode=image}} || [[{{tr|Jungle}}]]{{tr|Pots}} || 1/400
+|-
+| {{item|Dungeon Pots|mode=image}} || [[{{tr|Dungeon}}]]{{tr|Pots}} || 1/384
+|-
+| {{item|Underworld Pots|mode=image}} || [[{{tr|Underworld}}]]{{tr|Pots}} || 1/365
+|-
+| {{item|Corruption Pots|mode=image}}<br/>{{item|Crimson Pots|mode=image}} || [[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]{{tr|Pots}} || 1/365
+|-
+| {{item|Spider Cave Pots|mode=image}} || [[{{tr|Spider Cave}}]]{{tr|Pots}} || 1/272
+|-
+| {{item|Pyramid Pots|mode=image}} || [[{{tr|Pyramid}}]]{{tr|Pots}} || 1/125
+|-
+| {{item|Lihzahrd Pots|mode=image}} || [[{{tr|Lihzahrd}}]]{{tr|Pots}} || 1/250 {{note|（{{tr|hardmode}}）|small=y}} / 1/500 {{note|（{{tr|Pre-hardmode}}）|small=y}}
+|-
+| {{item|Marble Pots|mode=image}} || [[{{tr|Marble Cave}}]]{{tr|Pots}} || 1/375
+|-
+| {{item|Underground Desert Pots|mode=image}} || [[{{tr|Underground Desert}}]]{{tr|Pots}} || 1/461
+|}
+* 如果{{tr|Pot}}位于天然{{tr|dungeon walls}}前方且低于{{tr|surface}}{{tr|layer}}，有 {{chance|1/35}} 的几率掉落{{item|Golden Key}}。若掉落，则流程结束。
+* 如果玩家正在游玩{{tr|secret world seed}} [[{{tr|for the worthy}}]]，有 {{chance|1/4}} 的几率掉落一个点燃的[[{{tr|bomb}}]]。若掉落，则流程结束。
+* {{chance|1/45}}（{{expert|{{chance|2/45}}}}）的几率掉落一瓶[[{{tr|potion}}]]。若掉落，则流程结束。可能的{{tr|potions}}种类随深度变化：
+:{| class="terraria"
+|-
+! '''[[{{tr|Surface}}]]''' !! '''[[{{tr|Underground}}]]''' !! '''[[{{tr|Cavern}}]]''' !! '''[[{{tr|Underworld}}]]'''
+|- style="vertical-align:top;"
+| style="padding: 0 0.5em;" |<!--surface-->
+{{item|id=292|showid=no}} (1/10)
+
+{{item|id=298|showid=no}} (1/10)
+
+{{item|id=299|showid=no}} (1/10)
+
+{{item|id=290|showid=no}} (1/10)
+
+{{item|id=2322|showid=no}} (1/10)
+
+{{item|id=2324|showid=no}} (1/10)
+
+{{item|id=2325|showid=no}} (1/10)
+
+{{item|id=2350|showid=no}} (3/10)
+| style="padding: 0 0.5em;" |<!--underground-->
+{{item|id=289|showid=no}} (1/11)
+
+{{item|id=298|showid=no}} (1/11)
+
+{{item|id=299|showid=no}} (1/11)
+
+{{item|id=290|showid=no}} (1/11)
+
+{{item|id=303|showid=no}} (1/11)
+
+{{item|id=291|showid=no}} (1/11)
+
+{{item|id=304|showid=no}} (1/11)
+
+{{item|id=2322|showid=no}} (1/11)
+
+{{item|id=2329|showid=no}} (1/11)
+
+{{item|id=2350|showid=no}} (2/11)
+| style="padding: 0 0.5em;" |<!--cavern-->
+{{item|id=296|showid=no}} (1/15)
+
+{{item|id=295|showid=no}} (1/15)
+
+{{item|id=299|showid=no}} (1/15)
+
+{{item|id=302|showid=no}} (2/15)
+
+{{item|id=303|showid=no}} (1/15)
+
+{{item|id=305|showid=no}} (1/15)
+
+{{item|id=304|showid=no}} (1/15)
+
+{{item|id=297|showid=no}} (1/15)
+
+{{item|id=301|showid=no}} (1/15)
+
+{{item|id=2322|showid=no}} (1/15)
+
+{{item|id=2323|showid=no}} (1/15)
+
+{{item|id=2327|showid=no}} (1/15)
+
+{{item|id=2329|showid=no}} (1/15)
+
+{{item|id=2350|showid=no}} (1/15)
+| style="padding: 0 0.5em;" |<!--underworld-->
+{{item|id=296|showid=no}} (1/14)
+
+{{item|id=295|showid=no}} (1/14)
+
+{{item|id=293|showid=no}} (1/14)
+
+{{item|id=288|showid=no}} (1/14)
+
+{{item|id=294|showid=no}} (1/14)
+
+{{item|id=297|showid=no}} (1/14)
+
+{{item|id=304|showid=no}} (1/14)
+
+{{item|id=305|showid=no}} (1/14)
+
+{{item|id=301|showid=no}} (1/14)
+
+{{item|id=302|showid=no}} (1/14)
+
+{{item|id=300|showid=no}} (1/14)
+
+{{item|id=2323|showid=no}} (1/14)
+
+{{item|id=2326|showid=no}} (1/14)
+
+{{item|id=4870|showid=no}} (1/5) （可能会与上述的任何{{tr|potion}}一同掉落）
+<br/>
+|}
+
+* <li value="4"> 在[[{{tr|multiplayer}}]]中，有 {{chance|1/30}} 的几率掉落 1 瓶{{item|Wormhole Potion|icons=n}}。若掉落，则流程结束。</li>
+* 生成由 0 到 6 <!-- 专家模式中为 (-1) 到 5，不过这区别不大，(-1) 的效果与 6 相同 -->（闭区间）之间的一个随机的整数 <code>S</code>，然后：
+** 如果 <code>S</code> 是 '''0'''：如果最接近该{{tr|pot}}的{{tr|player}}的{{tr|health}}未满，掉落 1 个{{item|Heart}}，然后有 50% 的几率再掉落 1 个。在[[{{tr|Expert Mode}}]]下，会有两次额外的 50% 几率再掉落 1 个{{item|Heart}}。因此在{{tr|Expert mode}}中，有 1/8 的几率掉落 1 个{{item|Heart}}，3/8 的几率掉落 2 个{{item|Heart}}，3/8 的几率掉落 3 个{{item|Heart}}，以及 1/8 的几率掉落 4 个{{item|Heart}}。
+*** 如果最接近的玩家{{tr|health}}满，但拥有少于 20 个（任意类型的）[[{{tr|torches}}]]：以下方所示的情况掉落{{tr|torches}}。
+*** 否则，以下方所示的情况掉落{{tr|coins}}。
+** 如果 <code>S</code> 是 '''1''' 则掉落[[{{tr|torches}}]]，掉落数量请见下表。注意如果{{tr|pot}}在{{tr|liquid}}中，{{tr|torches}}会被 {{item|Glowstick}} 代替；如果{{tr|pot}}是{{tr|Tundra Pot}}，则会掉落{{item|Sticky Glowstick}}。
+::{| class="terraria"
+! {{tr|Pot}}的{{tr|type}}/位置 !! {{tr|Torch}}{{tr|Type}} !! 数量
+|-
+| {{na}} / [[{{tr|Hallow}}]] || {{item|id=4387|showid=no}} || 4-12 ({{expert|5-18}})
+|-
+| {{item|Corruption Pots|mode=image}} / [[{{tr|Corruption}}]] || {{item|id=4385|showid=no}} || 4-12 ({{expert|5-18}})
+|-
+| {{item|Crimson Pots|mode=image}} / [[{{tr|Crimson}}]] || {{item|id=4386|showid=no}} || 4-12 ({{expert|5-18}})
+|-
+| {{item|Jungle Pots|mode=image}} / {{na}} || {{item|id=4388|showid=no}} || 4-12 ({{expert|5-18}})
+|-
+| {{item|Tundra Pots|mode=image}} / {{na}} || {{item|id=974|showid=no}} || 2-6 ({{expert|3-12}})
+|-
+| {{item|Underground Desert Pots|mode=image}} / {{na}} || {{item|id=4383|showid=no}} || 4-12 ({{expert|5-18}})
+|}
+** 如果 <code>S</code> 是 '''2'''：掉落 10-20 个[[{{tr|ammo}}]]。默认类型为 {{item|Wooden Arrow}}。在{{tr|Surface layer}}或{{tr|Underground layer}}时，它有 50% 的几率被{{item|Shuriken|note=（{{tr|Pre-Hardmode}}）}} / {{item|Grenade|note=（{{tr|Hardmode}}）}}替代。然后，如果位于[[{{tr|Underworld}}]]，它会被{{item|Hellfire Arrow}}替代，否则，在{{tr|Hardmode}}中，它会被{{item|Unholy Arrow}}或{{item|Silver Bullet}}（在包含{{tr|silver}}的世界中）/ {{item|Tungsten Bullet}}（在包含{{tr|tungsten}}的世界中）（{{tr|Arrow}}或{{tr|Bullet}}的几率各为 50%）。
+** 如果 <code>S</code> 是 '''3'''：掉落 1 个{{item|Lesser Healing Potion}}或{{item|Healing Potion}}（在{{tr|Underworld}}中或{{tr|Hardmode}}下）。在{{tr|Expert Mode}}，有 1/3 的几率额外掉落 1 个。
+** 如果 <code>S</code> 是 '''4'''：如果{{tr|Pot}}是{{tr|Desert Pot}}，掉落 1-4 （{{expert|1-7}}）个{{item|Scarab Bomb}}。
+*** 否则，如果{{tr|Pot}}在{{tr|underground layer}}或以下，掉落 1-4 （{{expert|1-7}}）个普通{{item|Bomb}}。
+*** 若以上条件都不满足，以下方所示的情况掉落{{tr|Rope}}。
+** 如果 <code>S</code> 是 '''5'''：如果{{tr|pot}}不在{{tr|Underworld layer}}，且处于{{tr|pre-Hardmode}}，掉落 20-40 个{{item|Rope}}。
+*** 否则，以下方所示的情况掉落{{tr|coins}}。
+** 如果 <code>S</code> 是 '''6'''（和所有其它尝试失败时）：{{tr|pot}}会掉落{{tr|coins}}。掉落量会极大地受位置和类型影响。所有{{tr|pots}}会至少掉落 {{coin|80}} 到 {{coin|360}}，然后游戏会施加下列奖励以得出总掉落量：
+::{| class="terraria"
+! 情况
+! {{tr|coin}}倍数
+|-
+| {{tr|Pot}}位于{{tr|surface}}
+| {{red|50%}}
+|-
+| {{tr|Pot}}位于{{tr|cavern layer}}以上
+| {{red|75%}}
+|-
+| {{tr|Pot}}位于{{tr|world}}底部的 250 个{{tr|tiles}}以内
+| {{green|125%}}
+|-
+| 25% 几率
+| {{green|105% - 110%}}
+|-
+| 12.5% 几率
+| {{green|110% - 120%}}
+|-
+| 8.33% 几率
+| {{green|120% - 140%}}
+|-
+| 6.25% 几率
+| {{green|140% - 180%}}
+|-
+| 5% 几率
+| '''{{green|150% - 200%}}'''
+|-
+| [[{{tr|Expert Mode}}]]
+| '''{{green|250%}}'''
+|-
+| [[{{tr|Expert Mode}}]]，25% 几率
+| {{green|125%}}
+|-
+| [[{{tr|Expert Mode}}]]，33.33% 几率
+| {{green|150%}}
+|-
+| [[{{tr|Expert Mode}}]]，25% 几率
+| {{green|175%}}
+|-
+| 每击败下列列表中的一个，则重复一次此步骤：[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]] / [[{{tr|Brain of Cthulhu}}]]、[[{{tr|Skeletron}}]]、[[{{tr|The Destroyer}}]]、[[{{tr|The Twins}}]]、[[{{tr|Skeletron Prime}}]]、[[{{tr|Plantera}}]]、[[{{tr|Queen Bee}}]]、[[{{tr|Golem}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Goblin Invasion}}]]、[[{{tr|Frost Legion}}]]
+| {{green|110%}}
+|-
+|}
+::{| class="terraria" style="text-align:center;"
+|-
+! 图像 !! {{tr|Pot Type}} !! {{tr|coin}}倍数
+|-
+| {{item|Forest Pots|mode=image}} || [[{{tr|Forest}}]]{{tr|Pots}} || 100%
+|-
+| {{item|Tundra Pots|mode=image}} || [[{{tr|Tundra}}]]{{tr|Pots}} || {{green|125%}}
+|-
+| {{item|Jungle Pots|mode=image}} || [[{{tr|Jungle}}]]{{tr|Pots}} || {{green|175%}}
+|-
+| {{item|Dungeon Pots|mode=image}} || [[{{tr|Dungeon}}]]{{tr|Pots}} || {{green|190%}}
+|-
+| {{item|Underworld Pots|mode=image}} || [[{{tr|Underworld}}]]{{tr|Pots}} || '''{{green|210%}}'''
+|-
+| {{item|Corruption Pots|mode=image}}<br/>{{item|Crimson Pots|mode=image}} || [[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]{{tr|Pots}} || {{green|160%}}
+|-
+| {{item|Spider Cave Pots|mode=image}} || [[{{tr|Spider Cave}}]]{{tr|Pots}} || '''{{green|350%}}'''
+|-
+| {{item|Pyramid Pots|mode=image}} || [[{{tr|Pyramid}}]]{{tr|Pots}} || '''{{green|1000%}}'''
+|-
+| {{item|Lihzahrd Pots|mode=image}} || [[{{tr|Lihzahrd}}]]{{tr|Pots}} || '''{{green|400%}}''' {{note|（{{tr|Hardmode}}）|small=y}} / 100% {{note|（{{tr|Pre-Hardmode}}）|small=y}}
+|-
+| {{item|Marble Pots|mode=image}} || [[{{tr|Marble Cave}}]]{{tr|Pots}} || '''{{green|200%}}'''
+|-
+| {{item|Underground Desert Pots|mode=image}} || [[{{tr|Underground Desert}}]]{{tr|Pots}} || {{green|125%}}
+|}
+
+== 备注 ==
+* {{tr|items}}的掉落量在{{eil|Expert Mode}}下更多。
+* {{tr|Pots}}在不同{{tr|layer}}之间的分布量约为以下值：{{tr|Surface}}为 4%，{{tr|Underground}}为 20%，{{tr|Cavern}}为 62%，{{tr|Underworld}}为 14%。
+
+== 花絮 ==
+* 一个{{tr|pot}}所掉落的最少{{tr|item}}为 {{coin|40}}。
+* {{eicons|1.4.0.1}} 击败所有 {{tr|bosses}} 和{{tr|events}}后，一个{{tr|Expert Mode}}下、处于{{tr|Underworld layer}}的[[{{tr|Jungle Temple}}]]{{tr|Pot}}最多可掉落 {{coin|{{#expr:floor(360 * 1.1 * 1.2 * 1.4 * 1.8 * 2 * 2.5 * 1.25 * 1.5 * 1.75 * (1.1^11) * (4) * 1.25)}}}}。这是一个{{tr|Pot}}所能掉落的最多{{tr|coins}}。
+
+== 图库 ==
+<gallery>
+File:Pots.png|（点击放大）所有{{tr|pot}}变种。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|coin portals}}的生成几率减半。}}
+{{history|Desktop 1.3.0.1|introduced=y|patched=y|
+** 引入了{{tr|Coin Portals}}。
+** {{tr|Pots}}现在会基于其{{tr|type}}掉落更多{{tr|coins}}，且每击败一个 {{tr|boss}} 和{{tr|invasion}}就额外掉落 10%。}}
+{{history|Desktop 1.2.4|修复了有加成生效时，{{tr|pots}}不会掉落[[{{tr|Heart}}]]或[[{{tr|Star}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|修复了{{tr|altars}}、{{tr|pots}}、{{tr|chests}}会以不正确的状态生成的 {{tr|bug}}。}}
+{{history|Desktop 1.2|现在{{tr|pot}}的外观和打破音效在不同[[{{tr|biomes}}]]中有区别。}}
+{{history|Desktop 1.0.5|
+** 图像亮度增加，提升可见性。
+** 战利品现在根据[[{{tr|layer}}]]有所不同。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|introduced=y|patched=y|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|patched=y|（{{icon/ps4}}）
+** 引入了{{tr|Coin Portals}}。
+** {{tr|Pots}}现在会基于其{{tr|type}}掉落更多{{tr|coins}}，且每击败一个 {{tr|boss}} 和{{tr|invasion}}就额外掉落 10%。}}
+{{history|Console 1.02|现在{{tr|pot}}的外观和打破音效在不同{{tr|biomes}}中有区别。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.4.0.5.0|{{tr|coin portals}}的生成几率减半。}}
+{{history|Mobile 1.3.0.7|introduced=y|patched=y|
+** 引入了{{tr|Coin Portals}}。
+** {{tr|Pots}}现在会基于其{{tr|type}}掉落更多{{tr|coins}}，且每击败一个 {{tr|boss}} 和{{tr|invasion}}就额外掉落 10%。}}
+{{history|Mobile 1.2.6508|现在{{tr|pot}}的外观和打破音效在不同{{tr|biomes}}中有区别。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Pot}}

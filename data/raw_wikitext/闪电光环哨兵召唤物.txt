@@ -1,0 +1,121 @@
+{{exclusive|Tavernkeep}}
+{{item infobox
+| imagealt = [[File:Lightning Aura Rod.png|link=]] [[File:Lightning Aura Cane.png|link=]] [[File:Lightning Aura Staff.png|link=]]
+| stack = 1
+| type = Weapon
+| damage = {{note|small=y|paren=y|每级各不相同}}
+| damagetype = Summon
+| knockback = {{iteminfo|3829|knockback}}
+| use = {{iteminfo|3829|use}}
+| velocity = {{iteminfo|3829|velocity}}
+| tooltip = {{itemTooltip|3829}}
+| research = {{iteminfo|3829|research}}
+| rare =
+| cargo = no
+}}
+
+'''{{tr|Lightning Aura Rod}}、{{tr|Cane}}、和{{tr|Staff}}'''是特殊的[[{{tr|summon weapons}}#{{tr|Tavernkeep}}的{{tr|sentries}}|{{tr|sentry summon weapons}}]]。{{sentry note|name={{tr|Lightning Aura}}|plural=y}}每个{{tr|Lightning Aura sentry}}都包含以基座为中心的 9 格半径的圆圈，在{{tr|enemies}}经过其中时会反复对其造成伤害。在[[{{tr|Tavernkeep}}]]处，{{tr|Lightning Aura Rod}}的售价为 {{iteminfo|Lightning Aura Rod|buy}}，{{tr|Lightning Aura Cane}}的售价为 {{iteminfo|Lightning Aura Cane|buy}}，而{{tr|Lightning Aura Staff}}的售价为 {{iteminfo|Lightning Aura Staff|buy}}。
+
+{{tr|Lightning Aura weapons}}会完全无视{{tr|enemy}}的[[{{tr|defense}}]]，这是通过将{{tr|enemy}}的原本{{tr|defense}}（即{{tr|defense}}被特定[[{{tr|debuffs}}]]降低前）的一半加至{{tr|weapon}}的{{tr|damage}}来实现的。{{source code ref|v=1.4.3.6|name=damage|method=Terraria.Projectile.Damage}}例如，{{tr|The Lightning Aura Staff}}总会对{{tr|enemy}}造成约 {{iteminfo|Lightning Aura Staff|damage}} {{tr|damage}}，无论其{{tr|defense}}数值。这和[[{{tr|armor penetration}}]]不同，且在后者之前计算，使得伤害进一步提高。此外，{{tr|Lightning Aura}}只能从[[{{tr|whip}}]]上获得 50% 的{{tr|summon tag damage}}加成。
+
+{{tr|Lightning Aura Rod}}在任何时候都能购买，{{tr|Lightning Aura Cane}}在击败任意[[{{tr|Mechanical Boss}}]] 后可购买，{{tr|Lightning Aura Staff}}在击败[[{{tr|Golem}}]]后可购买。三个不同版本的武器的效果类似，但拥有不同的数据，其中{{tr|Lightning Aura Staff}}是最昂贵的也是最强大的。
+
+直到[[{{tr|Old One's Army}}]][[{{tr|event}}]]成功完成后才能在此{{tr|event}}以外使用这些{{tr|weapons}}。在任意{{tr|difficulty}}下成功完成{{tr|event}}后就能允许玩家在{{tr|event}}之外使用{{tr|Rod}}、{{tr|Canes}}、和{{tr|Staff}}。
+
+在{{tr|the Old One's Army event}}期间，可以收集[[{{tr|Etherian Mana}}]]，这可以放置多个{{tr|Lightning Auras}}，维持至{{tr|the event}}结束。{{tr|Etherian Mana}}不能在{{tr|the event}}之外使用。
+
+{{tr|Lightning Aura sentries}}可受[[{{tr|Monk armor}}]]和[[{{tr|Shinobi Infiltrator armor}}]]的{{tr|set bonuses}}强化，这会提高它们的攻击频率并允许它们造成[[{{tr|critical hit}}]]。这些武器会具有固定的 {{chance|1/6}}（{{tr|Monk armor}}）或 {{chance|1/4}}（{{tr|Shinobi Infiltrator armor}}）{{tr|critical strike chance}}。这一{{tr|critical strike}}是和（来自[[{{tr|Morning Star}}]]或[[{{tr|Kaleidoscope}}]]的）{{tr|summon tag critical strike chance}}分开计算的，意味着这两个{{tr|critical strike chances}}是两个独立事件而非加算的值。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}{{tr|The Shinobi Infiltrator armor}}也会增加{{tr|Lightning Aura}}的光环的大小。
+
+对于{{tr|rod}}和{{tr|cane}}，其最佳[[{{tr|modifiers}}]]是'''{{tr|Mythical}}'''、'''{{tr|Furious}}'''、或'''{{tr|Godly}}'''。
+
+对于{{tr|staff}}，{{lcfirst:{{modifier|summon}}}}
+
+== {{tr|Tier}} ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| namesub = {{tr|Tier 1}}
+| auto = 3829
+| sound1 = Dd2 lightning aura zap 0.wav, Dd2 lightning aura zap 1.wav, Dd2 lightning aura zap 2.wav, Dd2 lightning aura zap 3.wav
+| soundcaption1 = 光环电击
+| tags = buy/sentry/dd2/vendor:Tavernkeep
+}}
+|{{item infobox
+| namesub = {{tr|Tier 2}}
+| auto = 3830
+| sound1 = Dd2 lightning aura zap 0.wav, Dd2 lightning aura zap 1.wav, Dd2 lightning aura zap 2.wav, Dd2 lightning aura zap 3.wav
+| soundcaption1 = 光环电击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+}}
+|{{item infobox
+| namesub = {{tr|Tier 3}}
+| auto = 3831
+| sound1 = Dd2 lightning aura zap 0.wav, Dd2 lightning aura zap 1.wav, Dd2 lightning aura zap 2.wav, Dd2 lightning aura zap 3.wav
+| soundcaption1 = 光环电击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Lightning Aura Rod/Lightning Aura Cane/Lightning Aura Staff|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Lightning Aura Rod/Lightning Aura Cane/Lightning Aura Staff|expectedrows=3}}
+
+== 备注 ==
+* 完成任何难度的[[{{tr|Old One's Army}}]]时，会在完成{{tr|event}}所在的{{tr|world}}和完成它的{{tr|character}}上都设置一项隐藏属性。任何进入了这个{{tr|world}}的{{tr|characters}}，包括新创建的，随后都能在任意世界中使用{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。而完成了{{tr|event}}的{{tr|character}}也能在任意{{tr|world}}中使用{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。
+* 虽然{{tr|Lightning Aura}}能够被放置在其他{{tr|Tavernkeep's sentries}}旁，但无法将另一个{{tr|Tavernkeep's sentry}}放置在已经存在的{{tr|Lightning Aura}}的半径内。因此，在集中放置多种{{tr|sentries}}时，{{tr|Lightning Auras}}应当最后放置。
+* {{tr|The Lightning Aura}}的最大半径为 9 格，最顶端的“球体”为基座上方第 10 格。如果在低于 10 格的空间内召唤（被{{tr|blocks or platforms}}阻挡），{{tr|Lightning Aura}}会缩小，最少缩小到半径 3 格，而球体位于基座上方第 4 格。{{source code ref|v=1.4.3.6|name=ai|method=Terraria.Projectile.AI_137_LightningAura}}
+** 如果玩家穿着[[{{tr|Shinobi Infiltrator armor}}]]，半径会增加 4 格，即最大 13 格、最小 7 格。<ref name="ai"/>
+* {{tr|The Lightning Aura}}需要从球体到在其半径内的任意{{tr|enemy}}之间有清晰视线才可对它们造成伤害。在低于 10 格的位置召唤{{tr|Lightning Aura}}会导致其球体位于{{tr|block}}内，从而使得其大部分攻击范围无效，不过此时它仍然能伤害正下方的{{tr|enemies}}。虽然[[{{tr|platforms}}]]会减少{{tr|Lightning Aura}}的范围，它们不会阻挡视线，使得{{tr|The Lightning Aura}}能正常工作。
+* [[{{tr|Dungeon Guardian}}]]和其他任何具有超过 999 {{tr|defense}}的{{tr|enemy}}不会受{{tr|Lightning Aura}}的{{tr|defense}}补偿能力影响，这会使得{{tr|Lightning Aura}}的伤害正常地被降低。<ref name="damage"/>
+* {{tr|The Lightning Aura}}在攻击后具有 {{duration|30 ticks}}的冷却。如果玩家穿着[[{{tr|Monk armor}}]]或{{tr|Shinobi Infiltrator armor}}，这一冷却会缩短到 {{duration|25 ticks}}。<ref name="ai"/>
+* 由于部分敌对{{tr|projectiles}}技术上是具有 1 {{tr|health}}的{{tr|enemies}}（如[[{{tr|Chaos Ball}}]]），如果它们碰巧飞入{{tr|Lightning Aura}}的范围，它们就会被摧毁。
+
+== 小贴士 ==
+* {{tr|The Lightning Aura}}的范围和频繁的攻击对于有多{{tr|segment}}的{{tr|enemies}}（如[[{{tr|worm}}]]）很有效。
+* [[{{tr|Old One's Army}}]]{{tr|event}}中，放置在[[{{tr|Mysterious Portal}}]]附近的{{tr|Lightning Aura sentry}}能够在 {{tr|tier 1}}的{{tr|enemies}}接近{{tr|Eternia Crystal}}前杀死或极大幅度削弱它们，使得 {{tr|tier 1 event}}更加简单。
+* {{tr|Lightning Aura sentry}}会发光，因此它在探索洞穴时用来定位未探索的部分时很有用。尝试将其放置在实心区域不会消耗[[{{tr|mana}}]]，因此它们可以频繁地探测未探索的区域中的{{tr|caverns}}。[[{{tr|Binoculars}}]]或相似物品对于扩展被光亮标出的区域很有用。
+* {{tr|Lightning Aura sentry}}可以被移位。这一行为会使得{{tr|sentry}}被放置在狭窄的有斜坡的隧道中（例如[[{{tr|Underground Desert}}]]中的那些）时产生有趣的移动，最终可能使得{{tr|sentry}}离预想的位置较远、在墙壁内、或是完全在屏幕外。
+
+== 花絮 ==
+* {{tr|The Lightning Aura Rod}}具有所有{{tr|summon weapons}}中最低的{{tr|base damage}}。在它引入前，[[{{tr|Slime Staff}}]]具有最低的{{tr|base damage}}。
+
+== 图库 ==
+{{flexstart}}
+[[File:Lightning Aura Rod (demo).gif|none|frame|使用中的{{tr|Lightning Aura Rod}}。]]
+[[File:Lightning Aura Cane (demo).gif|none|frame|使用中的{{tr|Lightning Aura Cane}}。]]
+[[File:Lightning Aura Staff (demo).gif|none|frame|使用中的{{tr|Lightning Aura Staff}}。]]
+{{flexend}}
+[[File:Lightning Aura (displacement).gif|none|thumb|{{tr|Lightning Aura sentry}}被转移。]]
+
+== 另见 ==
+* {{dd2 link|Lightning Aura}}
+* [[{{tr|Flameburst sentry summons}}]]
+* [[{{tr|Explosive Trap sentry summons}}]]
+* [[{{tr|Ballista sentry summons}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 分别将{{tr|cane}}和{{tr|staff}}所需的[[{{tr|defender medals}}]]由 25 和 100 降低到 15 和 60。
+** 由于它拥有高额的攻击频率与穿透{{tr|armor}}的能力，只会受到 50% 的[[{{tr|whip}}]]标记伤害奖励。
+** 现在具有占位的{{tr|knockback}}值，允许它获得更好的{{tr|modifiers}}。
+** {{tr|Staves}}现在有更具提示性的{{tr|tooltip}}，以解释它们的伤害原理（简单来说它无视{{tr|defense}}）。
+** {{tr|Lightning Aura sentry summons}}现在用于通过[[{{tr|shimmer}}]]制作各自级别的[[{{tr|flameburst sentry summons}}]]。}}
+{{history|Desktop 1.3.4.4|
+** 修复了它会因其下方无法触及的{{tr|enemy}}而发出声音的问题。
+** 修复了{{tr|turrets}}在生成在{{tr|platforms}}上后掉落穿过它们的问题。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Lightning Aura sentry summons}}

@@ -1,0 +1,43 @@
+{{exclusive|1.3.0.1}}
+{{buff infobox
+| auto = 189
+| effects = 减 25 生命值<small>每四分之一秒</small><br/>无法回复生命
+| tooltip = {{getBuffInfo|189|tooltip}}
+}}
+'''{{tr|Daybroken}}'''是一种[[{{tr|debuff}}]]，会使{{tr|enemy}}持续受伤害达 5 秒。{{tr|Daybroken}}可以由[[{{tr|Solar Eruption}}]]和[[{{tr|Daybreak}}]]造成。{{tr|Daybreak}}还能够将这个{{tr|debuff}}叠加 8 次，在此过程中造成伤害。
+
+== 起因 ==
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! {{tr|Duration}}
+! 几率
+|-
+{{debuff source|Daybreak}}
+{{debuff source|Solar Eruption}}
+|}
+
+== 免疫的 NPC ==
+{{immunities|Daybroken}}
+
+== {{tr|Notes}} ==
+* 死于该{{tr|debuff}}的{{tr|enemy}}会把{{tr|debuff}}移至其他{{tr|enemy}}身上，当玩家被包围时，它会变得有用。
+
+== {{tr|Trivia}} ==
+* 尽管这个减益效果被称为{{tr|Daybroken}}，但它实际上是由{{tr|Solar Eruption}}和{{tr|Daybreak}}两种武器共同施加的。
+* 1.4.3之前的这个{{tr|debuff}}的工具提示把 inc'''i'''nerated 拼错为"inc'''e'''nerated"。
+* 破晓没有合适的{{tr|debuff}}图标，因为它永远不会应用在玩家身上。它使用[[{{tr|Stardust Dragon}}]]的增益图标的作为占位符。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.3|修复了工具提示中的拼写错误。}}
+{{history|Desktop 1.3.0.4|修复了{{tr|Daybroken}}{{tr|debuff}}会传到友方 {{tr|NPC}} 身上导致他们死亡的漏洞。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{language info|en=Daybroken}}

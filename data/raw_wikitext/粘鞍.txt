@@ -1,0 +1,58 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2430
+| tags = drop / treasure bag loot
+}}
+{{drop infobox|style=clear:right}}
+{{redirect|{{tr|Slime Mount}}|“{{tr|Slime}}”的其他用法|{{tr|Slime (disambiguation)}}}}
+[[File:Player Riding A Slime.png|right|thumb|玩家骑上{{tr|Slime Mount}}]]
+[[File:Slimy Saddle (demo).gif|frame|{{tr|A player}}在[[{{tr|Target Dummy}}]]上弹跳。]]
+
+'''{{tr|Slimy Saddle}}'''是个[[{{tr|Mount}}|{{tr|Mount}}召唤]]{{tr|item}}。使用时，它会召唤一个友方'''{{tr|Slime Mount}}'''。此{{tr|Slime}}能提供更高的跳跃高度（21 格）和{{tr|movement speed}}（20 [[{{tr|mph}}]]）、[[{{tr|fall damage}}]]减半、允许漂浮在[[{{tr|water}}]]面上、并能通过按住{{key|jump}}键连续自动跳跃。在{{eversions|1.3.0.1}}上，在骑着这个{{tr|mount}}时落在[[{{tr|enemies}}]]头上会对它们造成 40 点{{tr|summon damage}}（不考虑[[防御力]]）并会让玩家再次弹起。由于此伤害，{{tr|the Slime Mount}}被视为是[[{{tr|minion}}]]，并且能受益于增加[[{{tr|Summon damage}}|召唤物伤害]]的效果。{{tr|Slimy Saddle}}有 {{chance|1/4}} 的几率掉落自[[{{tr|King Slime}}]]，{{eil|Expert Mode}}下则有 {{chance|1/2}} 的几率掉落于{{tr|King Slime}}的[[{{tr|Treasure Bag}}]]中。
+
+== 备注 ==
+* {{tr|The Slime Mount}}并不会受益于[[{{tr|Banners (enemy)}}|{{tr|banners}}]]的[[{{tr|critical strike chance}}]]奖励。
+* {{tr|The Slime Mount}}的伤害是不变的（即，不受通常的 ±15% 随机化影响），因此它对于在游戏中进行{{tr|enemy defense}}测试非常有用。
+* 允许玩家进行[[{{tr|Extra jump}}|{{tr|double jumps}}]]的{{tr|Item}}会在骑乘{{tr|Slime Mount}}时生效。
+* 用{{tr|Slime Mount}}对{{tr|enemy}}造成伤害会将玩家的无敌时间重置为 6 {{tr|ticks}}{{tick}}（1/10 {{tr|second}}），意味着他们不会在跳到{{tr|enemy}}身上后立即承受伤害。同时，要注意受到伤害的{{tr|enemy}}也会得到 10 {{tr|ticks}}无敌时间。{{source code ref|v=1.4.4.9|method=Player.JumpMovement}}
+* 在骑着{{tr|slime}}时，玩家以两倍正常垂直速度移动。注意{{eil|Stopwatch}}和{{eil|Goblin Tech}}依然会显示常规速度。
+* [[{{tr|Lucky Horseshoe}}]]及其升级物和[[{{tr|wings}}]]能在骑乘此{{tr|mount}}时下避免{{tr|fall damage}}。
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+
+== 小贴士 ==
+* {{eicons|1.3.0.1}} 由于{{tr|Slime Mount}}会从[[{{tr|Target Dummies}}]]身上反弹，因此可能可以用它们和此{{tr|Mount}}来制造电梯。
+* 玩家可以通过骑乘{{tr|the Slimy Saddle}}来轻松地从大型[[{{tr|水}}]]体底部移动到水面上，因为{{tr|the Slime Mount}}会漂浮到顶部。{{tr|The Slime Mount}}在{{tr|lava}}上也会漂浮，但玩家需要[[{{tr|Obsidian Skin Potion}}]]或[[{{tr|Lava Charm}}]]避免{{tr|lava damage}}。
+* 双倍垂直速度会极其有用，例如，可以高速沿[[{{tr|hellevator}}]]下行，也可以以此来躲避{{tr|attacks}}。
+* [[{{tr|Hooks}}|钩]]上墙并在中途激活{{tr|mount}}，明亮的离子效果会前进约 16 格，从而揭示出洞穴和贵重物品。结合放大的叠加[[{{tr|Minimap}}|地图]]，这是早期探索{{tr|underground}}的好方法。请注意，要在钩抓的同时激活{{tr|the mount}}，在激活点需要有足够容纳{{tr|mount}}出现的空间。把这种方法在竖直方向上使用，可以让玩家在{{tr|surface}}找到[[{{tr|Enchanted Sword Shrine}}]]。
+* 持续地在{{tr|harpies}}身上跳跃，是在不使用{{tr|gravitation potion or platforms}}的情况下找到更多{{tr|floating islands}}的一种可行的方法。
+
+[[File:Slimy Saddle (boost) (demo).gif|frame|在结束时不使用{{tr|the Slime Mount}}和使用它以获得额外高度的对比。]]
+* 在[[{{tr|Rocket Boots}}]]的飞行时间马上结束前使用{{tr|the Slime Mount}}会将玩家额外向上推进几格。
+* 在起跳后立即使用{{tr|Slime Mount}}会比骑乘着它起跳略高。
+** 这意味着如果解除坐骑，跳跃，立即重新骑乘，然后在跳跃的顶点重复，高度会有显著的提高。例如，使用[[{{tr|Sandstorm in a Balloon}}]]时，这种方法可以使跳跃高度到达 96 {{tr|tile}}，而一直骑着时只有 67 {{tr|tile}}；增加高度 43% 。
+* 如果{{tr|the Slime Mount}}在漂浮于水面上时跳跃，它可能会在半空中再次跳跃从而导致{{tr|double jump}}。注意这有轻微的不一致。
+* {{tr|The Slime Mount}}可以用作对于{{tr|enemies}}和 [[{{tr|bosses}}]] 的有效伤害来源。
+** 它用来对抗诸如[[{{tr|Eye of Cthulhu}}]]这样的游戏早期 {{tr|bosses}} 非常有用，因为它可以大大减少受到来自于它们的接触伤害的可能。然而，这可能会导致快速爬升，从而暴露在死于[[{{tr|fall damage}}]]的威胁下。另外，由于{{tr|Slime}}的垂直移动速度很高，{{tr|boss}} 可能会因为距离太大而消失。
+** [[Template:{{tr|Worms}}|{{tr|Worm}}状{{tr|enemies}}]]，尤其是[[{{tr|Eater of Worlds}}]]，可以在天花板较低的空间内非常高效地进行战斗。
+* {{tr|Players}}可以在漂浮于水面之上时[[{{tr|fishing}}]]。
+
+== 花絮 ==
+* {{tr|The Slimy Saddle}}是少数几种有着{{rare|8}}[[{{tr|rarity}}]]的[[{{tr|pre-Hardmode}}]]的{{tr|items}}之一（还有所有其他{{tr|pre-Hardmode mounts}}）。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|现在可以在{{tr|enemies}}身上弹跳来造成伤害。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Slimy Saddle}}

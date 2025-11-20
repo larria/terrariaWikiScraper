@@ -1,0 +1,183 @@
+{{item infobox
+| type = Grab bag/Furniture/Crate
+| width = 2
+| height = 2
+| tooltip = {{icon/desktop|small=y}} @@@@ /<br/>{{icon/console|small=y}} L2 来打开 ({{icon/ps|small=y}}) /<br/> LT 来打开 ({{icon/xb1|small=y}}) /<br/>{{icon/mobile|small=y}} 双击来打开 /<br/>{{eicons|1.3.0.1|invert=y|small=y}} 使用来打开
+| auto = 2335
+| tags = fished
+}}
+
+'''{{tr|Iron Crate}}'''是一种[[{{tr|pre-Hardmode}}]]的[[{{tr|crate}}]]，可通过在任何[[{{tr|biome}}]]任何[[高度]][[{{tr|fishing}}]]获得的中级{{tr|crate}}。它[[{{tr|Hardmode}}]]的对应物是{{eil|Mythril Crate}}。
+
+== 掉落 ==
+{{options/set|item|wrap=y}}
+
+=== {{eversions|1.4.0.1}} ===
+{{loot
+
+|:group:start|1|
+  | Falcon Blade||456/7500
+  | Tartar Sauce||24/500
+  | Sailfish Boots||6384/150000
+  | Tsunami in a Bottle||4.04%<!-- exact: 121296/3000000 = 2527/62500 -->
+  | Ginger Beard||1/25
+|:group:end|-----------------|-
+
+| Gold Coin|5–10|1/4
+
+|:group:start|12–21|1/6
+  | Copper Ore||
+  | Tin Ore||
+  | Iron Ore||
+  | Lead Ore||
+  | Silver Ore||
+  | Tungsten Ore||
+|:group:end|-----------------|-
+
+|:group:start|4–7|5/24
+  | Copper Bar||
+  | Tin Bar||
+  | Iron Bar||
+  | Lead Bar||
+  | Silver Bar||
+  | Tungsten Bar||
+|:group:end|-----------------|-
+
+|:group:start|2–4|1/4
+  | Obsidian Skin Potion||
+  | Spelunker Potion||
+  | Hunter Potion||
+  | Gravitation Potion||
+  | Mining Potion||
+  | Heartreach Potion||
+  | Calming Potion||
+  | Flipper Potion||
+|:group:end|-----------------|-
+
+|:group:start|5–15|1/2
+  | Healing Potion||
+  | Mana Potion||
+|:group:end|-----------------|-
+
+|:group:start|2–4|
+  | Journeyman Bait||1/3
+  | Master Bait||1/6
+|:group:end|-----------------|-
+
+}}
+
+* {{tr|ores}}和{{tr|bars}}物品只会掉落其中一种，不会同时掉落{{tr|ore}}''和''{{tr|bars}}。上表将{{tr|ores}}和{{tr|bars}}各自单独列了一行，这只是为了读起来方便。{{tr|ore}}或{{tr|bars}}的掉落几率为 {{chance|3/8}}。
+* {{:Crates/lootnote|article=an|五|二
+|Falcon Blade/Tartar Sauce/Sailfish Boots/Tsunami in a Bottle/Ginger Beard
+|Gold Coin
+|Copper Ore/Tin Ore/Iron Ore/Lead Ore/Silver Ore/Tungsten Ore
+|Copper Bar/Tin Bar/Iron Bar/Lead Bar/Silver Bar/Tungsten Bar
+|Obsidian Skin Potion/Spelunker Potion/Hunter Potion/Gravitation Potion/Mining Potion/Heartreach Potion/Calming Potion/Flipper Potion
+}}
+
+=== {{eversions|1.4.0.1|invert=y}} ===
+{{options/set|item|class=block|css=margin:2px auto}}
+{{flexstart|alignitems=top|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Pre-Hardmode}}
+|-
+! 物品 !! 数量 !! 几率
+|-
+| class=noline | {{item|Ginger Beard}}
+| rowspan="3" | 1
+| class=noline | {{chance|1 in 25}}
+|-
+| class=noline | {{item|Tartar Sauce}}
+| class=noline | {{chance|1 in 21}}
+|-
+| {{item|Falcon Blade}}
+| {{chance|1 in 16}}
+|-
+| {{item|Copper Bar}}{{item|Iron Bar}}{{item|Silver Bar}}{{item|Gold Bar}}{{item|Tin Bar}}{{item|Lead Bar}}{{item|Tungsten Bar}}{{item|Platinum Bar}}
+| 6–14
+| {{chance|1 in 4}}
+|-
+| {{item|Obsidian Skin Potion}}{{item|Spelunker Potion}}{{item|Hunter Potion}}{{item|Gravitation Potion}}{{item|Mining Potion}}{{item|Heartreach Potion}}{{item|Calming Potion}}{{item|Flipper Potion}}
+| 1–3
+| {{chance|1 in 4}}
+|-
+| {{item|Healing Potion}}{{item|Mana Potion}}
+| 5–15
+| {{chance|1 in 2}}
+|-
+| {{item|Gold Coin}}
+| 5–10
+| {{chance|1 in 4}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Hardmode}}
+|-
+! 物品 !! 数量 !! 几率
+|-
+| class=noline | {{item|Ginger Beard}}
+| rowspan="3" | 1
+| class=noline | {{chance|1 in 25}}
+|-
+| class=noline | {{item|Tartar Sauce}}
+| class=noline | {{chance|1 in 21}}
+|-
+| {{item|Falcon Blade}}
+| {{chance|1 in 16}}
+|-
+| {{item|Copper Bar}}{{item|Iron Bar}}{{item|Silver Bar}}{{item|Gold Bar}}{{item|Tin Bar}}{{item|Lead Bar}}{{item|Tungsten Bar}}{{item|Platinum Bar}}
+| 6–14
+| {{chance|1 in 12}}
+|-
+| {{item|Cobalt Bar}}{{item|Mythril Bar}}{{item|Adamantite Bar}}{{item|Palladium Bar}}{{item|Orichalcum Bar}}{{item|Titanium Bar}}
+| 5–13
+| {{chance|1 in 6}}
+|-
+| {{item|Obsidian Skin Potion}}{{item|Spelunker Potion}}{{item|Hunter Potion}}{{item|Gravitation Potion}}{{item|Mining Potion}}{{item|Heartreach Potion}}{{item|Calming Potion}}{{item|Flipper Potion}}
+| 1–3
+| {{chance|1 in 4}}
+|-
+| {{item|Healing Potion}}{{item|Mana Potion}}
+| 5–15
+| {{chance|1 in 2}}
+|-
+| {{item|Gold Coin}}
+| 5–10
+| {{chance|1 in 4}}
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Iron Crate|expectedrows=1}}
+
+== 花絮 ==
+* {{tr|Falcon Blade}}、{{tr|Tartar Sauce}}和{{tr|Ginger Beard}}仅可通过打开{{tr|Iron}}和{{tr|Mythril Crates}}得到。
+* {{tr|Iron Crates}}可在天然带有[[{{tr|Lead Ore}}]]的世界中获得。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 掉落{{tr|ores}}的量由 18–29 降低至 12–21。
+** 掉落{{tr|bars}}的量从 6–9 降低至 4–7。}}
+{{history|Desktop 1.4.0.1|
+** 不再掉落[[{{tr|Hardmode}}]]{{tr|items}}，哪怕在已打败[[{{tr|Wall of Flesh}}]]的世界中亦是如此。
+** 重新调整了掉落表，这样[[{{tr|Wooden Crate}}]]、{{tr|Iron Crate}}、和[[{{tr|Golden Crates}}]]现在按照{{tr|crate}}的级别掉落不同金属。}}
+{{history|Desktop 1.3.0.1|现在可放置。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在可放置。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|现在可放置。（{{icon|ps4}}）}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|Desktop 1.4.0.1}} 中的功能和变更。}}
+{{history|Mobile 1.3.0.7|现在可放置。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Iron Crate}}

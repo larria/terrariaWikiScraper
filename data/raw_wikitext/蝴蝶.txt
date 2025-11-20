@@ -1,0 +1,127 @@
+{{infobox wrapper
+|{{npc infobox
+| auto = 356
+| imagealt = [[File:Julia Butterfly.gif|link=]] [[File:Monarch Butterfly.gif|link=]] [[File:Purple Emperor Butterfly.gif|link=]] [[File:Red Admiral Butterfly.gif|link=]]<br/>[[File:Sulphur Butterfly.gif|link=]] [[File:Tree Nymph Butterfly.gif|link=]] [[File:Ulysses Butterfly.gif|link=]] [[File:Zebra Swallowtail Butterfly.gif|link=]]
+| type = Critter
+| environment = Forest
+}}
+|{{npc infobox
+| auto = 444
+| image = Gold Butterfly.gif
+| type = Critter
+| environment = Forest
+}}
+|{{npc infobox
+| auto = 653
+| image = Hell Butterfly.gif
+| type = Critter
+| environment = The Underworld
+}}
+}}
+
+'''{{tr|Butterflies}}'''是在白天出没于[[{{tr|Forests}}]]的[[{{tr|critter}}]]。可以用[[{{tr|Bug Net}}]]捕捉它们（{{eil|Hell Butterfly|nolink=y}}除外）并放入{{tr|the inventory}}中带走，或制作成[[{{tr|Butterfly Jar}}]]。它们也可以用作[[{{tr|Bait}}]]来[[{{tr|Fishing}}]]。
+
+'''{{eil|Hell Butterfly|nolink=y}}'''会在{{tr|daytime}}于[[{{tr|the Underworld}}]]中生成，或在摧毁[[{{tr|wild grass plants}}|{{tr|wild Ash grass plants}}]]时生成。它只能使用{{eil|Lavaproof Bug Net}}或{{eil|Golden Bug Net}}捕捉。试图用普通的[[{{tr|Bug Net}}]]捕捉{{tr|Hell Butterfly}}不会奏效，玩家会受到 1{{nbsp}}{{tr|damage}}并受到[[{{tr|On Fire!}}]]，持续 {{duration|5}} / {{expert|{{duration|10}}}} / {{master|{{duration|12.5}}}}。{{source code ref|v=1.4.4.6|method=Terraria.Player.ItemCheck_CatchCritters}}
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/rarity/sell/baitpower/makenpcid/col:notes}}
+{| class="terraria sortable lined align-center"
+! colspan=2 | {{tr|Butterfly}}
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! data-sort-type="number" style="line-height: 1.25" | [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! 备注
+{{item infobox | auto = 2891 | cargo = no<!-- cargo store on its own page --> | cols = item2cells/rarity/sell/baitpower/makenpcid/col:notes | col:notes = align=left {{!}}
+* 低{{tr|spawn rate}}。}}
+{{item infobox | auto = 2001}}
+{{item infobox | auto = 1994}}
+{{item infobox | auto = 1995}}
+{{item infobox | auto = 1996}}
+{{item infobox | auto = 1998}}
+{{item infobox | auto = 1999 | col:notes = align=left {{!}}
+* 低{{tr|spawn rate}}。}}
+{{item infobox | auto = 1997}}
+{{item infobox | auto = 2000}}
+{{item infobox | auto = 4845 | col:notes = align=left {{!}}
+* 只能用[[{{tr|Lavaproof Bug Net}}]]或[[{{tr|Golden Bug Net}}]]捕捉。
+* 可以用于在[[{{tr|lava}}]]中钓鱼。
+* 白天在[[{{tr|the Underworld}}]]中生成。
+* 罕见地在摧毁[[{{tr|wild grass plants}}|{{tr|wild Ash grass plants}}]]时生成。}}
+|}<!--
+-->{{options/restore|item|snapshot}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE %Butterfly|expectedrows=13}}
+
+== 备注 ==
+* {{tr|Butterflies}}/{{tr|Stinkbugs}}的生成几率在每天{{tr|dusk}}（{{time|7:30 PM}}），或者每次加载{{tr|world}}时，都会被设为随机值，以使它们每天的生成率不同。在 {{eil|Celebrationmk10}} {{tr|worlds}}中，它们会变得更加常见。有关生成的详细信息，参见下文。
+{{collapse top|详细信息}}
+* 在每天{{tr|dusk}}（{{time|7:30 PM}}），或者每次加载{{tr|world}}时，{{tr|Butterflies}}和{{eil|Stinkbug}}的生成几率会被设为随机值。下方为详细信息：{{source code ref|v=1.4.4.6|method=Terraria.NPC.setFireFlyChance / Terraria.Main.UpdateTime_StartNight / Terraria.IO.WorldFile.LoadWorld}}
+** 对于{{tr|Butterflies}}和{{tr|Stinkbugs}}，有两个参数：<code>butterflyChance</code>，{{tr|Butterflies}}的生成几率；和 <code>stinkBugChance</code>，{{tr|Stinkbugs}}的生成几率。：
+: 这些参数以以下方式设置：
+:* {{eversions|1.4.4}}:
+::* 首先，{{chance|1/3}} 几率：<code>butterflyChance</code> = 999999（等效为阻止它们生成），<code>stinkBugChance</code> = 1–13，然后有 {{chance|1/5}} 的几率将 <code>stinkBugChance</code> 设为 999999。
+:::* 若上述 {{chance|1/3}} 的几率失败，则 <code>stinkBugChance</code> = 999999，<code>butterflyChance</code> = 1–20，然后有 {{chance|1/5}} 的几率将 <code>butterflyChance</code> 设为 999999。
+:::* 这等效地使得一天内只能生成{{tr|Butterflies}}或{{tr|Stinkbugs}}，而非两者均有。
+::* 然后，若是 [[{{tr|Celebrationmk10}}]] {{tr|world}}，<code>butterflyChance</code> 除以 2。若除后的值低于 1，则将其设为 1。
+:* {{eversions|1.4.4|invert=y}}:{{source code ref|old=y|v=1.3.5.3|method=Terraria.NPC.setFireFlyChance}}
+::* 首先，<code>butterflyChance</code> = 1–24。
+::* 然后，有 {{chance|1/3}} 的几率将 <code>butterflyChance</code> 设为 999999。
+: 在设定这些参数后，它们会被用于[[{{tr|NPC spawning}}|生成]]。注意下方几率仅和对应{{tr|critter}}相关，仅供参考，它们没有考虑其他的生成：{{source code ref|v=1.4.4.6|method=Terraria.NPC.SpawnNPC}}
+:* {{tr|Butterflies}}仅能在{{tr|daytime}}、不在下[[{{tr|rain}}]]、玩家位于{{tr|surface}}且不处于{{eil|Graveyard}}中、且[[{{tr|wind}}|{{tr|wind speed}}]]低于 20 {{mph}} 时生成。
+::* 有 <code>butterflyChance</code> 的几率生成一只{{tr|Butterfly}}，然后有两次独立的 {{chance|1/4}} 几率额外生成一只{{tr|Butterfly}}。
+:::* 作为结果，它们能以 1–3 个为一组出现。
+* 对于{{eil|Hell Butterfly|ies|nolink=y}}，它们不使用上述的生成机制。它们总是能在{{tr|daytime}}期间于[[{{tr|the Underworld}}]]生成，每次生成一只。
+{{collapse bottom}}
+{{float file box|float=none|width=fit-content|title=可以生成{{tr|Hell Butterfly and Lavafly}}的植被
+| {{flexstart|style=column-gap: 5px; row-gap: 10px|justify=center|alignitems=bottom}}<!--
+-->[[File:Tiles 637 0.png|link=]]<!--
+-->[[File:Tiles 637 1.png|link=]]<!--
+-->[[File:Tiles 637 2.png|link=]]<!--
+-->[[File:Tiles 637 3.png|link=]]<!--
+-->[[File:Tiles 637 4.png|link=]]<!--
+-->[[File:Tiles 637 5.png|link=]]<!--
+-->[[File:Tiles 637 6.png|link=]]<!--
+-->[[File:Tiles 637 7.png|link=]]<!--
+-->[[File:Tiles 637 8.png|link=]]<!--
+-->[[File:Tiles 637 9.png|link=]]<!--
+-->[[File:Tiles 637 10.png|link=]]<!--
+-->{{flexend}}
+| {{tr|Ash grass plants}}{{note|paren=y|[[{{tr|Tile IDs}}|{{tr|tile ID}}]] 637}}
+}}
+* 摧毁{{tr|Ash grass plants}}时，有 {{chance|1/100}} 的几率生成{{tr|Hell Butterfly}}或{{eil|Lavafly}}。仅当附近总计存在不超过 7 只其他{{tr|Hell Butterflies and Lavaflies}}时才能生成。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.KillTile_DropBait}}
+
+== 小贴士 ==
+* 新玩家在大量{{tr|Butterflies}}生成的日子里应当多加注意，因为它们可以卖到很高的价格。一天就可以轻松赚取超过 {{gc|10}}。
+
+== 花絮 ==
+{{bestiary|Butterfly|Hell Butterfly|Butterfly-alias={{tr|Butterflies}}}}
+
+== 另见 ==
+* [[{{tr|Prismatic Lacewing}}]]，行为类似于{{tr|butterflies}}的 {{tr|boss}} {{tr|summoning}}{{tr|critter}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|提高了{{tr|Butterfly}}日的几率（<code>butterflyChance</code> 由 1–24 改为 1–20）。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Hell Butterfly}}。
+** {{tr|Butterflies}}现在会主动尝试避开靠近它们的{{tr|enemies}}。
+** 提高了{{tr|Butterfly}}日的几率（<code>butterflyChance</code> 被设为 999999 由 {{chance|1/3}} 降低至 {{chance|1/4}}）。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Gold Butterfly}}。}}
+{{history|Desktop 1.2.4|现在可用作{{tr|bait}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|
+** 添加了{{tr|Hell Butterfly}}。}}
+{{history|Mobile 1.3.0.7|添加了{{tr|Gold Butterfly}}。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Butterflies}}

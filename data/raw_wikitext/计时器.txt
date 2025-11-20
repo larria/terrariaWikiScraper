@@ -1,0 +1,103 @@
+{{item infobox
+| name = Timers
+| imagealt = [[File:1 Second Timer.png|link=]] [[File:3 Second Timer.png|link=]] [[File:5 Second Timer.png|link=]] [[File:1 2 Second Timer.png|link=]] [[File:1 4 Second Timer.png|link=]]</li><li>[[File:1 Second Timer (placed).gif|link=]] [[File:3 Second Timer (placed).gif|link=]] [[File:5 Second Timer (placed).gif|link=]] [[File:1 2 Second Timer (placed).gif|link=]] [[File:1 4 Second Timer (placed).gif|link=]]</li>
+| imagebreak = yes
+| type = Mechanism/Furniture
+| auto = 583
+| width = 1 | height = 1
+| tooltip =
+| value =
+| idshow = 583–585, 4484, 4485
+| cargo = no
+}}
+{{float file box|[[File:Timers.png]]|停用(上排)和激活(下排)状态的{{tr|Timer}}。}}
+
+'''{{tr|Timer}}'''是一种可以周期性向其他{{tr|mechanism}}发送激活信号的[[{{tr|mechanism}}]]。总共有五种不同种类的{{tr|timer}}，它们发送信号的间隔不同：'''{{tr|5 Second Timer}}'''、'''{{tr|3 Second Timer}}'''、'''{{tr|1 Second Timer}}'''、'''{{eil|1/2 Second Timer|nl=y}}'''和'''{{eil|1/4 Second Timer|nl=y}}'''。
+
+{{tr|timer}}必须被放置以发挥作用；它们需要放置在[[{{tr|block}}]]或[[{{tr|platform}}]]上。按{{key|open}}可以切换{{tr|timer}}的开关。{{tr|Timer}}也可以使用其他能够激活{{tr|mechanism}}的{{tr|item}}激活或关闭。例如，用[[{{tr|wire}}]]连接的[[{{tr|Switch}}]]可以将{{tr|timer}}打开或关闭。同一电路上的多个{{tr|timer}}也会重复互相开启或关闭。
+
+在{{eversions|1.4.1|3ds=y}}中，可以从[[{{tr|Mechanic}}]]处购买{{tr|timer}}。
+
+== 种类 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/idtile-sortbysubid/tooltip/buy/sell}}
+{| class="terraria lined sortable"
+! colspan=2 | 计时器 !! [[{{tr|Tile ID}}]]!!{{tr|Tooltip}} !! 买价 !! 售价
+{{item infobox
+| auto = 583
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| buy = @@@@ {{eicons|1.4.1|small=y}} / {{cc|50}} {{icon/3ds|small=y}}
+| tags = buy / vendor:Mechanic / vendorversion:{{eversions|1.4.1|raw=y|delimit=-}}-3ds
+}}
+{{item infobox
+| auto = 584
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| buy = @@@@ {{eicons|1.4.1|small=y}} / {{cc|50}} {{icon/3ds|small=y}}
+| tags = buy / vendor:Mechanic / vendorversion:{{eversions|1.4.1|raw=y|delimit=-}}-3ds
+}}
+{{item infobox
+| auto = 585
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| buy = @@@@ {{eicons|1.4.1|small=y}} / {{cc|50}} {{icon/3ds|small=y}}
+| tags = buy / vendor:Mechanic / vendorversion:{{eversions|1.4.1|raw=y|delimit=-}}-3ds
+}}
+{{item infobox
+| auto = 4484
+| image = 1 2 Second Timer.png
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| tags = buy / vendor:Mechanic
+}}
+{{item infobox
+| auto = 4485
+| image = 1 4 Second Timer.png
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| tags = buy / vendor:Mechanic
+}}
+|}{{item infobox/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE % Second Timer|expectedrows=6}}
+
+== 备注 ==
+* 如果{{tr|timer}} A 激活了同样激活间隔的{{tr|timer}} B ，B 会在 A 之前激活（因而在 A 能发出讯号前将其关闭）。
+** 这使得很多{{tr|timers}}能被连为一个“{{tr|timer}}串”，激活电路之前有更大延迟。正常情况下，只有一串{{tr|timer}}中的最后一个会持续重复；{{tr|timer}}串能够通过让最后一个{{tr|timer}}来关闭第一个的方式来重复结合起来的总延迟（并阻止最后一个{{tr|timer}}持续触发）。
+* 退出{{tr|world}}然后重进会使所有{{tr|timers}}重置为关闭状态。
+* 将[[{{tr|statue}}|{{tr|Crab statue}}]]或[[{{tr|statue}}|{{tr|Bird statue}}]]与{{tr|pressure plate}}组合为“螃蟹引擎”或“鸟引擎”，可以做到与{{tr|timer}}类似的效果，但间隔更短。
+* 放置的{{tr|Timers}}被视作[[{{tr|background object}}]]，所以它们不会阻挡任何生物通过。
+
+== 小贴士 ==
+* {{eicons|1.4.1}} {{tr|1 Second Timer}}的买价（{{iteminfo|1 Second Timer|buy}}）低于用于制作它的 10 [[{{tr|Gold Bar}}]]（{{sell expr|Gold Bar|*10}}）或 10 [[{{tr|Platinum Bar}}]]（{{sell expr|Platinum Bar|*10}}）的售价。因此，出售{{tr|bars}}并购买{{tr|timer}}比使用它们制作{{tr|timer}}更划算。
+
+== 花絮 ==
+* {{eicons|1.4.4}} {{tr|1 Second Timer}}、{{tr|3 Second Timer}}、和{{tr|5 Second Timer}}无法被[[{{tr|Shimmer}}]]{{tr|decraft}}，因为它们可以从[[{{tr|Mechanic}}]]处购买，并被{{tr|decraft}}为[[{{tr|Watches}}]]，且进一步{{tr|decraft}}为[[{{tr|bars}}]]，从而利用它们获得大量{{tr|bars}}或[[{{tr|coins}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.1|所有{{tr|timer}}现在都能从{{tr|Mechanic}}处购买。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced}} 1/2 秒和{{tr| 1/4 Second timer}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprites updated}}，对应{{tr|Desktop}} 1.3.0.1。 （{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprites updated}}，对应{{tr|Desktop}} 1.3.0.1。 （{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}} 1/2 秒和{{tr| 1/4 Second timer}}。}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Sprites updated}}，对应{{tr|Desktop}} 1.3.0.1。
+** 不再由{{tr|Mechanic}}出售。
+** 重新加入了{{tr|crafting recipes}}。}}
+{{history|Mobile 1.2.6508|
+** 现在由{{tr|Mechanic}}出售。
+** 不再能被{{tr|craft}}。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，可从{{tr|Mechanic}}处购买。}}
+
+{{wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+{{language info|en=Timers}}

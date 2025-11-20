@@ -1,0 +1,15 @@
+<includeonly><!--
+
+-->{{#vardefine:duration|{{#expr:floor(({{iteminfo|id={{{itemid}}}|field=buffTime|raw=y}}-1)/3600)}}}}<!--
+-->{{#vardefine:buffid|{{iteminfo|id={{{itemid}}}|field=buffType|raw=y}}}}<!--
+
+-->
+|-
+| {{item|id={{{itemid}}}|showid=n}}
+| {{buff|id={{#var:buffid}}|link=|note2={{#ifexpr:{{#var:duration}}|{{duration|{{#var:duration}}*60}}|{{duration|rawminutes=0}}}}}}
+| align=center | {{max|{{#expr:{{#var:duration}}*{{#var:factor_{{#var:buffid}}|0}}}}|{{#var:factor_{{#var:buffid}}}}}}<!-- stack is never lower than the factor (factor variables are defined on the base page [[Poo]])
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+{{language info|en=Poo/row}}
+</noinclude>

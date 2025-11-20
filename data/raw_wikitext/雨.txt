@@ -1,0 +1,192 @@
+[[File:BiomeBannerRain.png|center]]
+{{quotation|[[{{tr|Painter}}|{{tr|The Painter}}]]|{{gameText|LegacyDialog.256}}}}
+
+'''{{tr|Rain}}'''是一个[[{{tr|event}}]]，在其{{tr|duration}}内会影响所有{{tr|surface}}[[{{tr|biomes}}]]。每场{{tr|Rain event}}都是随机发生的<ref>见[[#发生|下方]]获取细节</ref>且总是持续游戏内的 24 [[{{tr|time}}|小时]]（现实中的 24 分钟），经过[[{{tr|Day and night cycle}}|{{tr|day and night}}]]。当玩家在下{{tr|Rain}}期间位于[[{{tr|Snow biome}}]]中时，它会以'''{{tr|Blizzard}}'''的形式呈现，导致降雪量增加。
+
+{{tr|Rain}}主要具有美学上的效果，仅在[[{{tr|surface}}]]上可见：它会显示{{tr|Rain}}/{{tr|Blizzard}}的图像效果，降低环境的日光/月光，增加{{tr|cloud}}量，且会改变[[{{tr|Music Box (Rain)}}|{{tr|music}}]]。不过，它也有一些功能上的效果。
+
+{{tr|The event}}会生成部分普通{{tr|enemy}}的{{tr|variants}}，但也有一些独特的[[{{tr|enemies}}]]，且特定的[[{{tr|critters}}]]的行为会有所不同。部分有趣的效果包括[[{{tr|Rain Coat Zombie}}|{{tr|Zombies}}穿{{tr|rain coats}}]]，[[{{tr|Umbrella Slime}}|打{{tr|umbrellas}}的{{tr|slimes}}]]，和[[{{tr|Goldfish (NPC)}}|{{tr|Goldfish}}]]用尾鳍悠闲地在地面行走（游泳的{{tr|Goldfish}}能够离开{{tr|water}}行走，而行走的{{tr|Goldfish}}也会在地面生成）。
+
+在{{eversions|1.3.0.1}}中，{{tr|Rain}}有三种不同的变化：'''{{gameText|GameUI.LightRain}}'''、普通的{{gameText|GameUI.Rain}}、和'''{{gameText|GameUI.HeavyRain}}'''。雨下得越大，日光就越暗，而{{tr|Heavy Rain}}则会导致可观的变暗。这些变化只是视觉上的，可以被[[{{tr|Weather Radio}}]]检测到，且在一场降雨期间可能会改变多次。
+
+在{{eversions|1.4.0.1}}中，发生{{tr|Rain}}的几率可以通过杀死[[{{tr|Ladybug}}]]来提升{{source code ref|v=1.4.3.6|method=Terraria.NPC.LadyBugKilled}}。
+
+{{tr|Rain}}不会产生新的[[{{tr|water}}]]{{tr|tiles}}，也不会使得现存的{{tr|water}}面上升，它也对[[{{tr|lava}}]]或[[{{tr|honey}}]]{{tr|tiles}}没有任何效果。
+
+其他效果包括以下内容：
+* 在{{tr|rain}}期间，在所有{{tr|liquid}}中具有 +20% [[{{tr|Fishing Power}}]]的{{tr|bonus}}。
+* [[{{tr|Waterleaf}}]]开花。
+* [[{{tr|Worm}}]]会频繁地在[[{{tr|Forest}}]][[{{tr|biomes}}]]中生成。
+* [[{{tr|NPCs}}]]会待在他们的[[{{tr|house}}]]中，就像在[[{{tr|night}}]]一样。
+* {{eicons|1.4.0.1}} 玩家{{tr|character}}在{{tr|Blizzards}}中的室外时会眯眼。
+
+== 发生 ==
+{{tr|Rain}}不能被手动触发，它总是会随机发生。不过，在{{eil|{{tr|Journey Mode}}#{{tr|Weather}}|Journey Mode}}中，{{tr|Rain}}可以通过能力菜单自由控制。
+
+发生几率会在每{{tr|tick}}{{tick}} 1/475,200 至约 1/345,600 间不规律地浮动。在游戏内的一整天中，下{{tr|Rain}}的几率在 18.2% 至 25% 之间。这等同于{{tr|Rain}}每 4 至 5.5 游戏日会发生一次，即现实时间的 1 小时 36 分钟至 2 小时 12 分钟。
+
+在[[{{tr|world}}]]生成后，{{tr|Rain}}发生的几率会立即被设置为 18.2%，且在接下来的 2 分钟 24 秒至 24 分钟内不会浮动。<ref>{{source code ref|v=1.4.3.6|noref=y|method=Terraria.Main.UpdateTime}} 在此方法中有三种条件下会引用 <code>StartRain()</code> 方法。导致几率浮动的第二种条件需求变量 <code>cloudBGactive</code> 为正。此变量会在世界生成时被设置为一个随机的负值，且每{{tr|tick}}增加。</ref>
+
+杀死普通的{{eil|Ladybug|s}}或者使用它们[[{{tr|fishing}}]]会将每{{tr|tick}}发生{{tr|Rain}}的几率增加 1/86400。这一几率提升持续 30 秒，且多个{{tr|Ladybugs}}会使{{tr|duration}}叠加到至多 300 秒{{source code ref|v=1.4.3.6|method=Terraria.Main.UpdateTime}}。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Flying Fish}}<!--
+			-->|{{item|Umbrella Slime}}<!--
+			-->|{{item|Raincoat Zombie|note2=（{{tr|night}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Blizzards}}期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Deerclops|note2=（稀有）|size=*0.35}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Angry Nimbus|note2=（不常见）}}<!--
+			-->|{{item|image=Rainbow Slime.gif|Rainbow Slime|note2=（{{tr|The Hallow}}，稀有）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Hardmode Blizzards}}期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ice Golem|note2=（稀有）|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Raincoat Zombie}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rain Hat}}<!--
+			-->|{{item|Rain Coat}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Umbrella Slime}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Umbrella Hat}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Flying Fish}}]]：|class=last|<!--
+			-->{{dotlist<!--
+			-->|{{item|Fries}}<!--
+			-->|{{item|Rain Song}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Deerclops}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Eye Bone}}<!--
+			-->|{{item|Eyebrella}}<!--
+			-->|{{item|Radio Thing}}<!--
+			-->|{{item|Pew-matic Horn}}<!--
+			-->|{{item|Weather Pain}}<!--
+			-->|{{item|Houndius Shootius}}<!--
+			-->|{{item|Lucy the Axe}}<!--
+			-->|{{item|Deerclops Mask}}<!--
+			-->|{{item|Deerclops Trophy}}<!--
+			-->|{{item|Treasure Bag (Deerclops)|Treasure Bag|note2=（仅[[{{tr|Expert Mode}}]]）}}<!--
+			-->|{{item|Bone Helm|note2=（仅[[{{tr|Expert Mode}}]]）}}<!--
+			-->|{{item|Deerclops Eyeball|note2=（仅[[{{tr|Master Mode}}]]）}}<!--
+			-->|{{item|Deerclops Relic|note2=（仅[[{{tr|Master Mode}}]]）|size=*0.75}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Angry Nimbus}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Nimbus Rod}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Rainbow Slime}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rainbow Brick}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Ice Golem}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ice Feather}}<!--
+			-->|{{item|Frost Core}}<!--
+			-->|{{item|Frost Staff}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|{{tr|Music}}}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Rain)| {{sound|track=Rain}} |icons=no}}<!--
+			-->|{{item|Music Box (Morning Rain)| {{sound|track=Morning Rain}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->|{{item|Otherworldly Music Box (Rain)| {{sound|track=Rain (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+[[File:Blizzard (demo).gif|thumb|{{tr|blizzard}}的视觉效果。]]
+
+* 普通的[[{{tr|Snow Biome}}]]怪在{{tr|Blizzard}}期间会继续生成。
+* {{tr|Rain}}会妨碍到[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]，因为它会生成额外的{{tr|enemies}}，从而让某些来自那些{{tr|event}}的{{tr|enemies}}变得更加稀有。
+* 如果{{tr|Rain}}和{{tr|Blood Moon}}同时发生，{{tr|walking Goldfish}}依然会变为[[{{tr|Corrupt Goldfish}}]]，它不像普通{{tr|goldfish}}那样能在雨中直立行走。
+* {{eil|Weather Radio}}会探测到{{tr|surface}}是否正在下雨（无论玩家位置在哪）。
+* 降雨动画会被[[{{tr|block}}]]挡住。这对于[[{{tr|waterleaf}}]]的开花并没有影响，但却会防止[[{{tr|worm}}]]的生成。
+* 如果[[{{tr|Windy Day}}]]和常规以上的{{tr|Rain}}一起发生，就会造成[[{{tr|Thunderstorm}}]]。
+
+== {{tr|Trivia}} ==
+* 曾经有一种“雨水累积”的机制，会让雨水淹没坑洞、地堡以及其他类似的结构，然后玩家就必须构建系统来处理积水。<ref>https://forums.terraria.org/index.php?threads/terrarias-8th-anniversary-ask-redigit-and-cenx.79731/page-7#post-1765746</ref>但是，由于未知的原因，该机制后来被废弃了。
+* {{icon/desktop}}在窗口模式时离开屏幕的话{{tr|Rain}}的动画会停止（不像其他动画）。
+* 当同时下雨和下雪时，雪的动画会停止，但雨的动画不会。
+* [[{{tr|Rain Cloud}}]]块会导致下雨效果，但这与下雨时间完全无关，并且纯粹只是美学上的效果。
+* 如果{{tr|Rain}}和[[{{tr|Blood Moon}}]]同时发生，{{tr|Rain}}会呈现红色。
+* {{icon/old-gen}} 如果在下雨期间退到标题屏幕，背景中会显出雾来。即使进入新的世界然后再次退出后依然会这样。要想移除此效果，需要关闭游戏。
+* 在旧的移动版和{{Icon/old-gen console}} [[{{tr|Old-gen console version}}]]中，Morning Rain 音乐是[[{{tr|Tutorial}}]]独有的。此后，它作为晨雨音乐实现到了{{Desktop version}}中。
+
+== {{tr|See also}} ==
+* [[{{tr|Sandstorm}}]]
+* [[{{tr|Slime Rain}}]]
+* [[{{tr|Thunderstorm}}]]
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|
+** 添加了 Morning Rain 音乐，当上午 4:30 到上午 7:30 下雨时播放。
+** 添加了[[{{tr|Thunderstorm}}]]及其独有的音乐，当{{tr|Rain}}和[[{{tr|Windy Day}}]]一起发生时发生。
+** {{tr|Rain}}变得稍微更加不常见了。
+** {{tr|Rain}}现在会呈现和它下着的{{tr|biome}}中的水一样的颜色。}}
+{{history|Desktop 1.3.4|
+** 修复了在{{tr|Blizzard}}时屏幕的边缘变色的问题。
+** [[{{tr|Space}}]]{{tr|biome}}现在不会下雨了。
+** 现在在{{tr|Blizzard weather event}}激活时有新的独特环境音效。}}
+{{History|Desktop 1.3.3.3|
+** 修复了[[{{tr|Snow Block}}]]有时在{{tr|Blizzard}}有时不出现的问题。 
+** 改善了{{tr|Blizzard}}时一些机器的表现。}}
+{{history|Desktop 1.3.3|
+** {{tr|Blizzard}}现在有了可见的效果。
+** 修复了[[{{tr|liquid}}]]和{{tr|rain}}的音效会在游戏窗口不活跃的时候继续播放的问题。}}
+{{history|Desktop 1.2.4|{{tr|Rain}}现在在[[{{tr|Blood Moon}}]]期间会变红。}}
+{{history|Desktop 1.2.3|
+** 修复了一些有关{{tr|rain}}音效的小问题。
+** 优化{{tr|rain}}的表现。
+** 稍微减少了下雨的概率。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|同步变化到了{{tr|Desktop}} 1.3.3 和 1.3.4 。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|同步变化到了{{tr|Desktop}} 1.3.3 和 1.3.4 。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+
+{{Events}}
+
+[[Category:随机事件]]
+{{language info|en=Rain}}

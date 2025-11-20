@@ -1,0 +1,58 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1122
+| tags = hardmode / drop / bag loot
+| listcat = Boomerangs
+}}
+{{drop infobox|style=clear:right}}
+[[File:Possessed Hatchet (demo).gif|frame|正在使用{{tr|the Possessed Hatchet}}的玩家。注意{{tr|the homing}}能力。]]
+[[File:Possessed Hatchet (penetrate).gif|frame|和其他{{tr|boomerangs}}不同，{{tr|Possesed Hatchet}}的击中数有限。]]
+
+'''{{tr|Possessed Hatchet}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|Boomerangs}}|{{tr|boomerang}}]]，有 {{chance|1/7}} 几率掉落自[[{{tr|Golem}}]]。投出后，它会自动导向 50 格<!-- 800 pixels -->以内的[[{{tr|enemies}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}当附近没有{{tr|enemies}}时，它会在飞行 25 格后返回玩家处。和大部分{{tr|boomerangs}}不同，玩家无需等待{{tr|Possessed Hatchets}}返回即可投出更多的{{tr|Possessed Hatchets}}，同时投出的{{tr|Possessed Hatchets}}数量没有限制。{{penetrate|auto=182}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}这和大部分{{tr|boomerangs}}不同，后者在返回时可以击中无限数量的{{tr|enemies}}。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|The Possessed Hatchet}}会自动追踪所有[[{{tr|worm enemies}}]]的尾部{{tr|segment}}。
+* 和所有{{tr|homing weapons}}一样，在 [[{{tr|PvP}}]] 期间{{tr|the Possessed Hatchet}}不会自动追踪玩家。
+* 如果玩家在{{tr|Possessed Hatchet}}被投出时死亡，{{tr|Possessed Hatchet}}会悬浮在死亡地点处，玩家重生后它会返回玩家处。
+
+== 小贴士 ==
+* {{tr|The Possessed Hatchet}}对抗[[{{tr|Crawltipede}}]]相当有效，因为它总是会瞄准其尾部。
+
+== 花絮 ==
+* 虽然很像{{tr|axe}}，它并不能用来砍[[{{tr|tree}}]]。
+<!-- Please do not add the claim that the Possessed Hatchet is a reference to the Hell's Retriever/Redeemer from the Call of Duty: Black Ops 2's Zombies map "Mob of the Dead". It is no less than 8 months older than Black Ops 2, and not everything that is in any way similar is a reference. As per the [[trivia rules]], any non-obvious reference *must* be backed by a developer's statement anyway. Additions in this regard have been reverted in the past and will be reverted again. -->
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** 掉落率由 {{chance|1/8}} 提升至 {{chance|1/7}}，因为[[{{tr|Picksaw}}]]现在是单独掉落的了。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 90 降低至 80。
+** {{tr|Use time}}由 14 降至 13。
+** 现在可以快速连续投掷。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 伤害由 90 降低至 80。
+** {{tr|Use time}}由 14 降至 13。
+** 现在可以快速连续投掷。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 伤害由 90 降低至 80。
+** {{tr|Use time}}由 14 降至 13。
+** 现在可以快速连续投掷。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Possessed Hatchet}}

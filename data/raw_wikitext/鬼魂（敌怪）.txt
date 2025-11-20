@@ -1,0 +1,47 @@
+{{npc infobox|boxwidth=18em
+| auto = 316
+| image = Ghost (enemy).gif
+| type = Undead Enemy
+| environment = Graveyard
+| allversions = yes<!-- necessary because the infobox checks {{eversions|Ghost}}, which *is* platform-exclusive (DCOM) -->
+}}
+{{dablink|不要与[[{{tr|Hardcore}}]]{{tr|player}}死亡后变成的[[{{tr|Ghost}}]]形态相混淆。}}
+
+'''{{tr|Ghost}}'''是一个[[{{tr|enemy}}]]，在[[{{tr|Halloween}}]]期间于[[{{tr|Cavern}}]]或[[{{tr|Underground}}]][[{{tr|layer}}]]生成的。
+
+在{{eversions|1.4.0.1}}中，{{tr|Ghost}}无论任何时间都会在[[{{tr|Graveyard}}]][[{{tr|mini-biome}}]]生成。当{{tr|player}}破坏[[{{tr|Tombstones}}]]后也会生成{{tr|Ghost}}。
+
+{{tr|Ghost}}的行为与[[{{tr|Wraith}}]]相似，会在地面上徘徊，并穿过实体{{tr|blocks}}来接触{{tr|player}}。{{tr|Ghost}}要想到达{{tr|player}}处，必须有实体{{tr|blocks}}来供其穿过，否则他们将一直在地面上徘徊。
+
+== {{tr|Notes}} ==
+* 当{{tr|Tombstone}}被摧毁时，若{{tr|world}}上已有的{{tr|ghost}}不足两只且下列条件之一被满足，那么即有 {{chance|1/2}} 的几率生成一只{{tr|Ghost}}：{{source code ref|v=1.4.2.3|method=Terraria.WorldGen.CheckSign}}
+** 此时处于[[{{tr|nighttime}}]]。
+** {{tr|player}}处于{{tr|Graveyard biome}}。
+** {{tr|Tombstone}}被放置于[[{{tr|surface}}]]{{tr|layer}}以下。
+* 如果{{tr|ghost}}在打破{{tr|Tombstone}}时生成，并且没有合适的屏幕外地面以供{{tr|ghost}}生成，{{tr|ghost}}可能将在屏幕内，甚至直接在{{tr|player}}身边生成。
+
+== {{tr|Tips}} ==
+* 通常无法穿墙攻击的{{tr|weapons}}能够穿过墙来攻击{{tr|Ghosts}}——这让[[{{tr|spears}}]]和[[{{tr|whips}}]]变得尤其有效。这两种武器对付成群的{{tr|Ghost}}十分有效，因为他们可以一次攻击多个{{tr|enemy}}。
+* 在{{eil|Journey Mode}}中，即使{{tr|enemy}}的生成率被设置为 0 倍，开采{{tr|Tombstones}}仍可能导致{{tr|Ghost}}产生。
+
+== {{tr|Trivia}} ==
+{{bestiary|Ghost}}
+
+== {{tr|History}} ==
+{{history|desktop 1.4.1|{{tr|damage}}从 18 降至 15，{{tr|defense}}从 8 降至 4，最大{{tr|health}}从 70 降低至 50，{{tr|knockback}}抗性从 40% 提高至 50%。}}
+{{history|Desktop 1.4.0.2|{{tr|Ghost}}的生成几率下降，更改了允许它们生成的条件、降低了生成的最大数量。}}
+{{history|Desktop 1.4.0.1|现在{{tr|Ghost}}会出现在[[{{tr|Graveyard}}]][[{{tr|mini-biome}}]]，并且会在[[{{tr|Tombstones}}]]被破坏时生成。}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应{{tr|banner}}了。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在会掉落它自己的相应{{tr|banner}}了。（{{icon/xboxone}}）}}
+{{history|Console 1.0.750.0|现在会掉落它自己的相应{{tr|banner}}了。（{{icon/ps4}}）}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Ghost (enemy)}}

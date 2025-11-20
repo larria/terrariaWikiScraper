@@ -1,0 +1,162 @@
+{{item infobox
+| imagealt = [[File:Copper Coin.gif|link=]] [[File:Silver Coin.gif|link=]] [[File:Gold Coin.gif|link=]] [[File:Platinum Coin.gif|link=]]
+| auto = 71
+| name = Coins
+| placeable = yes
+| width = 1 | height = 1
+| damage =
+| velocity =
+| sell = <!-- blank -->
+| sound1 = Coin 0.wav, Coin 1.wav, Coin 2.wav, Coin 3.wav, Coin 4.wav
+| soundcaption1 = 拾取
+| id =
+| idprojectile =
+| idtile =
+| tags = drop / loot / bag loot
+| cargo = no
+}}
+{{for|获取{{tr|coin}}的技巧|指南:赚钱}}
+{{quotation|[[{{tr|Wizard}}]]|{{gameText|LegacyDialog.148}}}}
+
+'''{{tr|Coins}}'''是[[《{{tr|Terraria}}》]]中主要的流通货币。它们主要用于与 [[{{tr|NPC}}]] 交易，但也可以作为[[{{tr|ammunition}}]]供[[{{tr|Coin Gun}}]]使用。{{tr|Terraria}}中的货币包括四种用不同金属制成的{{tr|coins}}：'''{{tr|Copper Coins}}'''、'''{{tr|Silver Coins}}'''、'''{{tr|Gold Coins}}'''和'''{{tr|Platinum Coins}}'''。
+
+{{tr|Coins}}可以通过杀死[[{{tr|enemies}}]]、和 {{tr|NPCs}} 交互，或在多种形式的战利品中获得。虽然{{tr|coins}}使用的是“{{tr|Copper}}”、“{{tr|Silver}}”、“{{tr|Gold}}”、“{{tr|Platinum}}”四种材质，但它们和对应种类的[[{{tr|ore}}]]无关，也不能被它们制作。
+
+{{tr|enemy}}掉落的{{tr|coin}}数量会由游戏代码中的固定数值计算，外加一些随机变量。参看 [[NPC 掉落#{{tr|Coin}}掉落|NPC 掉落 § {{tr|coin}}掉落]]获取更多信息。
+
+== 类型 ==
+{{options/set|item infobox|view=table|imagemode=placed|cols=col:animatedcoin/item2cells-anchor-nolink/stack/imageplaced/idtile/damage/velocity/projectile2cells}}
+{| class="terraria lined align-center"
+! colspan=3 | {{tr|Coin}}
+! 最大堆叠
+! 放置状态
+! [[{{tr|Tile ID}}]]
+! 伤害
+! {{tr|Velocity}}
+! colspan=2 | {{tr|Projectile}}
+{{item infobox | auto = 71 | sell = <!--nothing--> | tags = drop / loot / bag loot / plunder
+| col:animatedcoin = {{item|nolink=yes|mode=image|ext=gif|Copper Coin}}
+}}
+{{item infobox | auto = 72 | sell = <!--nothing--> | tags = drop / loot / bag loot / plunder
+| col:animatedcoin = {{item|nolink=yes|mode=image|ext=gif|Silver Coin}}
+}}
+{{item infobox | auto = 73 | sell = <!--nothing--> | tags = drop / loot / bag loot / plunder
+| col:animatedcoin = {{item|nolink=yes|mode=image|ext=gif|Gold Coin}}
+}}
+{{item infobox | auto = 74 | sell = <!--nothing--> | tags = drop / loot / bag loot / plunder
+| col:animatedcoin = {{item|nolink=yes|mode=image|ext=gif|Platinum Coin}}
+}}
+|}{{options/reset|item infobox}}
+
+== 储存 ==
+在{{tr|player}}的{{tr|inventory}}中，{{tr|coins}}有它们自己的特殊{{tr|slots}}，不过也可以把它们移入其它普通的{{tr|inventory slots}}中。
+* 如果可能的话，拾取的、用 {{key|shift}} 放入或从[[{{tr|storage item}}]]取出的{{tr|coin}}会自动结合成更高面额的{{tr|coin}}。
+** 例如，如果{{tr|player}}拾取了 {{sc|100}}，则他的[[{{tr|inventory}}]]中会拥有 {{gc|1}}。
+** 类似地，持有 {{sc|96}} 的{{tr|player}}又拾取了 {{sc|15}} 后，会拥有 {{coin|1gc11sc}}。
+* {{eicons|1.4.0.1}} 使用“快速堆叠至附近宝箱”会将{{tr|coins}}自动储存到附近的[[{{tr|Piggy Bank}}]]、[[{{tr|Money Trough}}]]、[[{{tr|Chester}}]]、[[{{tr|Safe}}]]、和[[{{tr|Defender's Forge}}]]（以上统称为“钱罐”）中，并结合为最高面额。
+* 在如[[{{tr|chest}}]]的{{tr|storage item}}处使用“{{tr|Quick Stack}}”或“快速堆叠至附近宝箱”功能会将{{tr|coins}}像其它物品一样处理，且不会从{{tr|player}}的{{tr|coin slot}}移动{{tr|coin}}。
+* 然而，''手动''将{{tr|coin}}移入{{tr|storage item}}时，它们''不会''自动结合；如果{{tr|storage item}}中没有足够的空间，部分{{tr|coin}}会留在{{tr|player}}的手中或{{tr|coin slot}}中。堆叠数为 100 的{{tr|coin}}需要手动制作为高面额的{{tr|coin}}（另请见下方关于“存放全部”的警示）。
+* 在游戏早期，获得钱罐之前，{{tr|coin}}可能需要被储存在{{tr|chest}}中。“存放全部”功能虽然会移动{{tr|coin}}，但如果按下它时{{tr|chest}}已经满了，如果不存在对应面额的{{tr|coin}}堆叠，更高面额的{{tr|coin}}可能会消失。
+* {{eicons|1.3.0.1}} 在与 [[{{tr|NPC}}]] 交易时，{{tr|coin}}可以直接从{{tr|player}}的钱罐中支付。
+
+== 死亡时掉落 ==
+* 在{{tr|Classic}}（{{tr|Softcore}}{{eicons|1.4.0.1|invert=y|3ds=n|small=y}}）[[{{tr|difficulty}}]]（默认）下，{{tr|player}}[[{{tr|death}}]]时，所有堆叠的{{tr|coin}}的一半 / {{expert|四分之三}} / {{master|全部}} 会掉落，向最接近的整数{{tr|coin}}值取整。例如，如果{{tr|player}}拥有占一个堆叠的 {{gc|1}}，它会直接掉落。如果{{tr|player}}拥有 {{gc|10}}，则会掉落 5 / {{expert|8}} / {{master|10}} {{item|Gold Coin|mode=image}}。
+* 在{{tr|player}}于{{eil|Mediumcore}}或{{eil|Hardcore}}{{tr|difficulty}}中死亡时会掉落所有{{tr|coin}}，无论{{tr|player}}以何种方式死亡。
+* 被{{tr|player}}持有的[[{{tr|weapon}}]]杀死''不会''导致{{tr|Softcore}}下的{{tr|player}}掉落{{tr|coin}}，即使他刚刚受到过{{tr|enemy}}的伤害。
+** 这包括不小心用[[{{tr|Explosives (class)}}]]自杀。
+* 意外死亡，如[[{{tr|fall damage}}]]或[[{{tr|Chaos State}}]]''会''导致{{tr|coin}}掉落。
+* {{tr|player}}自己的{{tr|projectile}}被{{tr|enemy}}反弹（如{{eil|Selenian}}）杀死{{tr|player}}时会导致{{tr|coin}}掉落。
+* 在{{eil|Expert Mode}}中，{{tr|enemies}}能够拾取由{{tr|player}}或{{tr|enemy}}掉落的{{tr|coin}}。如果此{{tr|enemy}}消失，它们的位置会保存在地图上，且会在那一区域重新生成。这一效果仅在拾取{{tr|coin}}量大于 {{coin|10sc}}<!-- Fairly certain this is the minimum, if someone else has a more accurate count, do change this. --> 时生效。持有{{tr|coin}}的{{tr|enemy}}会有闪烁效果，闪烁的颜色对应它持有的最高价值的{{tr|coin}}。在{{eversions|1.4.0.1}}中，记录的位置在[[{{tr|minimap}}]]会用{{tr|coin}}图标标出，将光标悬停在图标上 {{icon|desktop}} / 点击图标 {{icon|mobile}} 会显示{{tr|enemy}}所持{{tr|coin}}的准确数值。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=Copper Coin/Silver Coin/Gold Coin/Platinum Coin|expectedrows=6}}
+
+=== 用于 ===
+{{recipes|ingredient=Copper Coin/Silver Coin/Gold Coin/Platinum Coin|expectedrows=6}}
+
+== 备注 ==
+{{float file box|[[File:Coin portal.png|70px|center]]|width=190px|{{eicons|Coin Portal}} {{tr|player}}站在[[{{tr|Underworld}}]]中的[[{{tr|coin portal}}]]旁。[[射弹 ID]]：518}}
+* {{icon|desktop|console|mobile|3DS}} {{tr|coin}}会标出其伤害值（用于[[{{tr|Coin Gun}}]]），且被标为{{tr|ammo}}。
+* 打破[[{{tr|Pot}}]]时有很小的几率出现{{eil|Coin Portal}}。
+* 大部分[[{{tr|slimes}}]]除了掉落其本身的{{tr|coin}}外，{{tr|coin}}也有小概率作为{{eil|Bonus drops}}出现。
+* [[{{tr|Coin Pile}}]]有时可以在[[{{tr|Pyramid}}]]中，或是在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]中的{{eil|Campsite}}伴随[[{{tr|Campfire}}]]和[[{{tr|background object}}]]找到。
+* 被扔进[[{{tr|Shimmer}}]]中时，{{tr|coins}}会消失，并提供给玩家[[{{tr|Coin Luck}}]]。
+
+== 小贴士 ==
+* 在[[{{tr|Journey Mode}}]]中可以研究{{tr|Coins}}。虽然耗时较长，{{tr|player}}可以复制 {{cc|t=100}}，逐渐升高面额，直到达到 {{pc|100}}。
+** 一种更好的方法是，先研究[[{{tr|Gold Bar}}]]或[[{{tr|Platinum Bar}}]]，然后以每堆 9999 个的形式卖出。
+
+== 花絮 ==
+* {{eicons|1.3.0.1}} {{tr|Copper}}、{{tr|Silver}}和{{tr|Gold Coin}}是仅有的最大堆叠为 100 的物品。
+* 由于[[{{tr|Underworld}}]]的[[{{tr|pots}}]]数量众多，因此{{eil|Coin Portal}}常常会在此处生成。
+* {{eicons|1.4.4}} 由于[[{{tr|portable storage}}]]中的{{tr|coin}}能够用于交易，{{tr|player}}一次能够花费的最大{{tr|coin}}数量为 <span title=“{{formatnum:{{#expr:9999*(40*3+50+4)}}}} 个{{tr|Platinum Coins}}”>{{formatnum:{{#expr:9999*(40*3+50+4)}}}}</span> {{pc}}（[[{{tr|Piggy Bank}}]]/{{eil|Money Trough}}中 40 叠 + [[{{tr|Safe}}]]中 40 叠 + {{eil|Defender's Forge}}中 40 叠 + [[{{tr|inventory}}]]中 54 叠，每叠为 {{pc|9999}}）。然而，如果计入{{tr|player}}能够从地面拾取{{tr|coin}}的能力，这一数据理论上为无限大。这可以通过用极高效率的刷怪场使{{tr|player}}拾取{{tr|coin}}的速度高于花费的速度来达成。
+* 取决于版本，{{tr|coin}}可能会拥有{{tr|sell value}}。
+** {{icon|desktop}} {{tr|Coins}}没有{{tr|sell value}}
+** {{icon|console|mobile|3DS}} {{tr|Coins}}拥有等同于其堆叠数量的{{tr|sell value}}，但无法被出售。有趣的是，这意味着它们的内部{{tr|buy value}}是它们本身价值的 5 倍（即购买 {{gc|1}} 需要 {{gc|5}}）。{{verify|对于{{tr|Mobile and Console}}来说，可能已经不再是这样。}}
+** {{icon|old-gen}} 在{{icon/wiiu}} Wii U 和 {{icon/xbox360}} Xbox 版本中{{tr|coin}}可以被售出，不过这么做并没有什么用处。
+* {{eicons|1.3.0.1}} 取决于其价值，{{tr|coin}}的大小会有所不同。{{tr|Platinum Coin}}是尺寸最大的{{tr|coin}}（14×16 像素）；{{tr|Gold Coins}}的宽度少了 2 像素，为 12×16 像素；{{tr|Silver Coins}}的为 12×14 像素；而{{tr|Copper Coins}}最小，为 12×12 像素。
+* 一个{{tr|Platinum Coin}}等于 1,000,000 个{{tr|Copper Coins}}。
+** 根据一个[[{{tr|World size}}|{{tr|world}}]]内的空间大小，可以知道这一数量的{{tr|coin}}需要占多大空间：放置这一数量的{{tr|Copper Coins}}会占据{{tr|Large world}} 4.9% 的区域，{{tr|Medium world}} 8.6% 的区域，{{eicons|1.3.0.1|old-gen=y}} {{tr|Small}} / {{icon/3ds}} 扩大{{tr|world}}的 19.8%，或{{icon/3ds}} 普通世界的 63.4%。
+* 购买所有 {{tr|NPC item}}需要以下数量的{{tr|coin}}：（但{{eil|Happiness|{{tr|NPC happiness}}}}可能会增加或降低这些值）
+** {{icon/desktop}} {{coin|27|18|73|74}}1150 [[file:Defender_Medal.png|22px]]{{verify}}
+** {{icon/console}} {{coin|22|81|31|24}}{{verify}}
+** {{icon/mobile}} {{coin|23|1|16|59}}{{verify}}
+** {{icon|3DS|old-gen}} 未知{{verify}}
+* {{eicons|1.3.0.1}} 虽然{{tr|coin}}因为能被[[{{tr|Coin Gun}}]]发射而被视为[[{{tr|ammunition}}]]，但它们正常情况下并不能被放置在[[{{tr|Inventory}}#{{tr|Ammo slots}}|{{tr|ammunition slot}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.2|修复了下落的{{tr|coin}}不能掉在其它放置的{{tr|coins}}上方的问题。}}
+{{history|Desktop 1.4.1|不再能够被放置在{{tr|furniture}}上。}}
+{{history|Desktop 1.4.0.2|不再拥有{{tr|sell value}}}}。
+{{history|Desktop 1.4.0.1|
+** 现在仅在{{tr|inventory}}中拥有{{tr|Coin Gun}}时会显示伤害。
+** 掉落时不再发光。}}
+{{history|Desktop 1.3.0.1|
+** 拾取{{tr|coin}}时有新的音效。
+** 所有{{tr|coin}}都拥有新的动画和外观。
+** 现在可以用你的人物收纳中的所有钱来购买物品——包括你的[[{{tr|inventory}}]]、[[{{tr|Piggy Bank}}]]、和[[{{tr|Safe}}]]中的钱。
+** 打破[[{{tr|Pot}}]]时，[[{{tr|Coin Portal}}]]有几率代替[[{{tr|Pot}}]]的普通战利品生成，放出 5-15 个{{tr|Gold Coins}}。}}
+{{history|Desktop 1.2.4.1|修复了{{tr|coin}}在挥舞时能造成伤害的 {{tr|bug}}。}}
+{{history|Desktop 1.2.4|{{tr|Coins}}现在可被放置。}}
+{{history|Desktop 1.2.3.1|
+** {{tr|Platinum Coin}}的最大堆叠由 100 增加至 999。
+** 修复了{{tr|coin}}在使用[[{{tr|Quick Stack}}]]时会消失的 {{tr|bug}}。
+** 修复了[[{{tr|Quick Stack}}]]的复制{{tr|coin}}漏洞。}}
+{{history|Desktop 1.2.3|
+** {{tr|Piggy Bank and Safe}}现在在[[{{tr|Quick Stack}}]]时可以正确堆叠{{tr|coins}}。
+** 修复了[[{{tr|Merchant}}]]在{{tr|player}}拥有超过 21,000 个{{tr|Platinum Coins}}时不会生成的 {{tr|bug}}。}}
+{{history|Desktop 1.2.0.3|
+** 不再能被出售。
+** 修复了导致{{tr|coin}}消失而不是转化为更高面额的{{tr|coin}}的 {{tr|bug}}。
+** 死亡时（{{tr|Hotbar}}中）手持的{{tr|coin}}现在会正确掉落。
+** 现在掉落的{{tr|coin}}在互相邻近时会自动堆叠。}}
+{{history|Desktop 1.2.0.2|修复了丢弃{{tr|coin}}的复制漏洞。}}
+{{history|Desktop 1.2|
+** 有时[[{{tr|Quick Stack}}]]不会正确地堆叠{{tr|coin}}，会导致{{tr|coin}}丢失。
+** {{tr|coin}}不再能被卖给 [[{{tr|NPCs}}]]。
+** 现在向[[{{tr|Extractinator}}]]中放入[[{{tr|Slush}}]]或[[{{tr|Silt}}]]时有几率获得{{tr|coin}}。
+** 你不再能通过将{{tr|item}}放入{{tr|trash}}的方式合成{{tr|item}}或钱了。}}
+{{history|Desktop 1.1.1|
+** 死亡时拿在光标上的{{tr|Coins}}也会正确掉落了。
+** 修复了在[[{{tr|multiplayer}}]]下导致[[{{tr|Chests}}]]中堆叠的{{tr|coin}}丢失的问题。}}
+{{history|Desktop 1.0.6|加入了闪烁和光照效果。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 更新了{{tr|Platinum Coin}}的外观。旧外观为[[{{tr|File:Platinum Coin (mobile).png}}]]，此外观为{{tr|mobile version}}独有。
+** 拾取{{tr|coin}}时有新的音效。
+** 所有{{tr|coin}}都拥有新的动画和外观。
+** 现在可以用你的人物收纳中的所有钱来购买物品——包括你的{{tr|inventory}}、{{tr|Piggy Bank}}、和{{tr|Safe}}中的钱。
+** 打破[[{{tr|Pot}}]]时，{{tr|Coin Portal}}有几率代替{{tr|Pot}}的普通战利品生成，放出 5-15 个{{tr|Gold Coins}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+[[Category:物品]]
+
+{{language info|en=Coins}}

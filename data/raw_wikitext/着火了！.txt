@@ -1,0 +1,207 @@
+{{buff infobox
+| auto = 24
+| effects = -4 {{tr|health}}<small>/秒</small><br/>停止{{tr|health regeneration}}
+|Obsidian Skin Potion|Water|Water Bucket|Molten armor
+}}
+{{distinguish|{{tr|Burning}}}}
+
+'''{{tr|On Fire!}}'''是一种防止生命再生并使受影响的 [[{{tr|NPC}}]] 或玩家每秒损失 4 生命值的[[{{tr|debuff}}]]。当{{tr|enemy}}受{{eil|Oiled}}时，会变为每秒损失 29 [[生命值]]。
+
+此{{tr|debuff}}可以通过跳入[[{{tr|Water}}]]中或将[[{{tr|Water Bucket}}]]倒在玩家头上来取消。[[{{tr|Obsidian Skin Potion}}]]也能在其效果持续时间中也能给予对此{{tr|debuff}}的免疫能力。{{eicons|1.4.1}} 穿着[[{{tr|Molten armor}}]]能免疫此{{tr|debuff}}。
+
+== 原因 ==
+=== 来自环境 ===
+{| class="terraria"
+! 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|Lava}}
+| 7 / {{expert|14}} 秒
+| 100%
+| 28 / {{expert|56}}
+|}
+
+=== 来自玩家 ===
+{| class="terraria sortable"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+{{debuff source|Wand of Sparking}} || 2-12
+{{debuff source|Volcano}} || 12
+{{debuff source|Molotov Cocktail}} || 12-24
+|-
+| {{item|mode=table|Imp Staff|image=Imp Minion.png}}
+| 3–6 {{tr|seconds}}
+| 100%
+| 12-24
+|-
+{{debuff source|Molten Pickaxe}} || 12
+{{debuff source|Molten Hamaxe}} || 12
+{{debuff source|Flaming Arrow}} || 12
+{{debuff source|Flare|5–10 {{tr|seconds}}|100%}} || 20-40
+{{debuff source|Blue Flare|5–10 {{tr|seconds}}|100%}} || 20-40
+{{debuff source|Flower of Fire}} || 20
+{{debuff source|Flamarang}} || 12
+{{debuff source|Flamelash}} || 16-32
+{{debuff source|Flaming Mace}} || 8-12
+{{debuff source|Sunfury}} || 12
+|-
+| {{item|mode=table|Flamethrower}} {{eicons|1.4.4|invert=y}}
+| 20 秒
+| 100%
+| 80
+|-
+| {{item|mode=table|Elf Melter}} {{eicons|1.4.4|invert=y}}
+| 20 秒
+| 100%
+| 80
+{{debuff source|Cascade}} || 4-16
+|-
+| {{item|mode=table|Hel-Fire}} {{eicons|1.4.4|invert=y}}
+| 3-8 秒
+| 100%
+| 12-32
+|-
+| {{item|mode=table|Inferno Fork}} {{eicons|1.4.4|invert=y}}
+| 8-15 {{tr|seconds}}
+| 100%
+| 32-60
+|-
+| {{item|mode=table|Butcher's Chainsaw|note2=（{{tr|sparks}}）}} {{eicons|1.4.4|invert=y}}
+| 0.5-3 {{tr|seconds}}
+| 33%
+| 2-12
+|-
+| {{item|mode=table|Fire Gauntlet}} {{eicons|1.4.1|invert=y}}
+| 2-6 {{tr|seconds}}
+| 100%
+| 8-24
+|-
+| {{item|mode=table|Magma Stone}} {{eicons|1.4.1|invert=y}}
+| 2–6 {{tr|seconds}}
+| 100%
+| 8-24
+|-
+| {{item|mode=table|Flask of Fire}}
+| 3–6 {{tr|seconds}}
+| 100%
+| 12-24
+|-
+| {{item|mode=table|Flameburst Tower|note2=({{tr|rod}})}}
+| 3-5 秒
+| 33.33%
+| 12-20
+|}
+
+=== 来自{{tr|enemy}} ===
+{| class="terraria sortable"
+! 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|Meteor Head}}
+| 7 / {{expert|14}} / {{master|17.5}} 秒
+| {{chance|1/3}}
+| 28 / {{expert|56}} / {{master|70}}
+|-
+| {{item|Skeleton Archer|note2=（[[{{tr|Flaming Arrow}}|{{tr|Arrow attack}}]]）}}
+| 7 / {{expert|14}} / {{master|17.5}} 秒
+| {{chance|1/3}}
+| 28 / {{expert|56}} / {{master|70}}
+|-
+| {{item|Pirate Crossbower|note2=（[[{{tr|Flaming Arrow}}|{{tr|Arrow attack}}]]）}}
+| 7 / {{expert|14}} / {{master|17.5}} 秒
+| {{chance|1/3}}
+| 28 / {{expert|56}} / {{master|70}}
+|-
+| {{item|Elf Archer|note2=([[{{tr|Flaming Arrow}}|{{tr|Arrow attack}}]])}}
+| 7 / {{expert|14}} / {{master|17.5}} 秒
+| {{chance|1/3}}
+| 28 / {{expert|56}} / {{master|70}}
+|-
+| {{item|Hell Armored Bones|size=60px}}
+| 10 / {{expert|20}} / {{master|25}} {{tr|seconds}}
+| {{chance|1/2}}
+| 40 / {{expert|80}} / {{master|100}}
+|-
+| {{item|Diabolist|note2=({{tr|Fireball attack}})|size=60px}}
+| 8–15 / {{expert|16–30}} / {{master|20-37.5}} {{tr|seconds}}
+| {{chance|1/1}}
+| 32–60 / {{expert|64–120}} / {{master|80-150}}
+|-
+| {{item|Fire Imp|note2=（[[{{tr|Burning Sphere}}]]{{tr|attack}}）}}
+| 7 / {{expert|14}} / {{master|17.5}} 秒
+| {{chance|1/3}}
+| 28 / {{expert|56}} / {{master|70}}
+|-
+| {{item|Betsy|size=70px|note2=（{{tr|Breath attack}}）}}
+| 7-10 / {{expert|14-20}} / {{master|17.5-25}} {{tr|seconds}}
+| {{chance|1/1}}
+| 28-40 / {{expert|56-80}} / {{master|70-100}}
+|-
+|{{item|Golem|note2=({{tr|Fireball attack}})|size=70px}}
+| 5-7 / {{expert|10-14}} / {{master|15-21}} {{tr|seconds}}
+| {{chance|1/2}}
+| 20-28 / {{expert|40-56}} / {{master|60-84}}
+|-
+| {{item|Lunatic Cultist|size=35px|note2=({{tr|Fireball attack}})}}
+| 0.5–2.5 / {{expert|1–5}} / {{master|1.25-6.25}} {{tr|seconds}}
+| {{chance|1/1}}
+| 2–10 / {{expert|4–20}} / {{master|5-25}}
+|}
+
+=== 其他 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|Red Potion}}
+|
+| 1 / {{expert|2}} / {{master|3}} {{tr|hours}}
+| {{chance|1/1}}
+| 14400 / {{expert|28800}} / {{master|43200}}
+|-
+| {{item|Flame Trap}} 
+|
+| 20 秒
+| {{chance|1/1}}
+| 80
+|}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities|On Fire!}}
+
+== 备注 ==
+* 就对玩家的可用来源而言，{{tr|On Fire!}}[[{{tr|debuff}}]]是最容易施加给对手的。
+
+== 花絮 ==
+* {{tr|The debuff}}的图标似乎画的是[[{{tr|Guide Voodoo Doll}}]]。
+* 这是唯一一个名字中带有感叹号的[[{{tr|debuff}}]]。[[{{tr|Happy!}}]]、[[{{tr|Panic!}}]]和[[{{tr|Ballista Panic!}}]]在名字中也有感叹号，但它们是[[{{tr|Buff}}]]而非{{tr|debuffs}}。
+
+== 另见 ==
+* [[{{tr|Shadowflame}}]]
+* [[{{tr|Cursed Inferno}}]]
+* [[{{tr|Frostburn}}]]
+* [[{{tr|Hellfire}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|大多数能够造成{{tr|On Fire!}}的[[{{tr|Hardmode}}]]{{tr|items}}改为造成[[{{tr|Hellfire}}]]。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再造成基于百分比的伤害。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=On Fire!}}

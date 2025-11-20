@@ -1,0 +1,45 @@
+{{item infobox
+| auto = 1146
+| pickreq = 210% {{eicons|1.4.0.1|small=y}}
+| type = Block/Mechanism
+| width = 1 | height = 1
+| debuff = Poisoned
+| debuffduration = {{duration|rawseconds=10 / {{expert|20}} / {{master|25}}}}
+| tags = plunder / hardmode
+| idprojectile = 184
+}}
+
+'''{{tr|Super Dart Trap}}'''是一种出现在[[{{tr|Jungle Temple}}]]之中的[[{{tr|trap}}]]，其也会罕见地生成在{{tr|Jungle Temple}}的门外。当它被[[{{tr|wire}}|通电]]时, 会发射一个飞镖。{{tr|Super Dart Trap}}不需要任何[[{{tr|ammunition}}]]，但是拥有内置的{{eicons|1.3.0.1}} 3.33 / {{eicons|1.3.0.1|invert=y}} 3 秒的冷却时间。{{tr|darts}}造成 80 / {{expert|160}} / {{master|240}} {{tr|damage}}{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle / Terraria.Projectile.Damage}}并且对玩家附加造成 15 / {{expert|30}} / {{master|37.5}} {{tr|seconds}}[[{{tr|Poisoned}}]]（对 [[{{tr|NPCs}}]]、[[{{tr|enemies}}]]、和[[{{tr|critters}}]]则造成 40 {{tr|damage}}和 15 {{tr|seconds}}{{tr|Poisoned}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.StatusNPC / Terraria.Projectile.StatusPlayer}}
+
+{{eicons|1.3.1}} {{tr|Super Dart Traps}}可以通过[[{{tr|hammer}}|锤击]]来旋转 90°。
+
+{{eicons|1.4.0.1|invert=y}} 与[[{{tr|Lihzahrd Brick}}]]不同，挖掘{{tr|Super Dart Trap}}不需要使用[[{{tr|Picksaw}}]]。
+
+== 备注 ==
+* 和[[{{tr|Dart Trap}}]]一样，{{tr|dart}}会造成[[{{tr|invincibility frame}}]]，发射一竖列的{{tr|dart}}在同时只有一个可以击中同一目标。
+* {{tr|Super Dart Trap}}可以跨越与其正前方与其毗连的一个方块发射{{tr|dart}}。
+* {{tr|Super Dart Trap}}发射的{{tr|dart}}的飞行速度和持续时间和普通的{{tr|Dart Trap}}的相同——飞行时间为 60 秒，以每秒 45 个方块的速度，飞镖飞行的最大范围为 2700 个方块；在击中方块的时候飞镖会被破坏。
+
+== 花絮 ==
+* {{tr|Super Dart Trap}}的图像看起来很像非写实的石头脑袋。包含这样的脑袋的{{tr|Traps}}从嘴里射出毒镖，是流行文化中的常见情形，比如{{wikipedia|Indiana Jones (franchise)|《夺宝奇兵》}}系列电影。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|打败[[{{tr|Golem}}]]之前，不再可以被[[{{tr|Explosives (class)|}}]]破坏了。}}
+{{history|Desktop 1.4.0.1|现在需要[[{{tr|Picksaw}}]]或更好的镐才能挖掘。}}
+{{history|Desktop 1.3.1|
+** 外观更新。旧外观是：[[File:Super Dart Trap (old).png]]。
+** 现在可以通过锤击来旋转90度。}}
+{{history|Desktop 1.2.3|修复了一个使其会受到[[{{tr|Frost armor}}]]的效果影响的漏洞。}}
+{{history|Desktop 1.2.1|现在会正确绘制{{tr|Super Dart Trap}}后的背景墙了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Traps}}
+{{Wiring}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+{{language info|en=Super Dart Trap}}

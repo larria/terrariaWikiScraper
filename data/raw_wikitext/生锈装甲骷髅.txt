@@ -1,0 +1,93 @@
+{{npc infobox | boxwidth= 21.5em
+| auto = 269
+| name = Rusty Armored Bones
+| namesub =
+| image = Rusty Armored Bones.gif
+| type = Undead Enemy
+| environment = Dungeon
+| damage =
+| defense =
+| life =
+| knockback =
+| debuff = Bleeding
+| debuffchance = 33%
+| debuffduration = {{modes|10|20|25}} 秒
+| debuff2 = Slow
+| debuffchance2 = 33% {{note|paren=y|仅当[[{{tr|Bleeding}}]]未被触发时}}
+| debuffduration2 = {{modes|5|10|12.5}} 秒
+| Adhesive Bandage|1|{{modes|1%|2%}}
+| Wisp in a Bottle|1|{{modes|0.25%|0.5%}}
+| Magnet Sphere|1|{{modes|0.33%|0.67%}}
+| Keybrand|1|{{modes|0.5%|1%}}
+| Morning Star|1|{{modes|0.5%|1%}}
+| Bone Feather|1|0.22%
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲时
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+
+'''{{tr|Rusty Armored Bones}}'''是[[{{tr|Hardmode}}]][[{{tr|Plantera}}]]之后的{{tr|enemy}}，在[[{{tr|Plantera}}]]被击败后生成。与[[{{tr|Angry Bones}}]]相似，它们以多种形态出现，遵循战士AI，攻击几下之后可以打开门，并且不受[[{{tr|Poisoned}}]]与[[{{tr|Venom}}]][[{{tr|debuff}}]]的影响。
+
+{{dungeon brick walls|Slab}}
+
+{{tr|Rusty Armored Bones}}往往生成在有[[{{tr|Dungeon Brick Wall}}|{{tr|Slab Wall}}]]的地牢区域。它们也会生成在地牢的其他区域，但几率大大降低。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[NPC IDs|NPC ID]]
+! colspan=2 | 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 269
+| image = Rusty Armored Bones 1.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 270
+| image = Rusty Armored Bones 2.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 271
+| image = Rusty Armored Bones 3.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 272
+| image = Rusty Armored Bones 4.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* 在{{eil|Don't dig up}}和{{eil|Get fixed boi}}世界中，{{tr|Rusty Armored Bones}}将掉落[[{{tr|Katana}}]]而不是[[{{tr|Keybrand}}]]。
+* 尽管可以造成{{tr|Slow}}{{tr|debuff}}，{{tr|Rusty Armored Bones}}并不会掉落[[{{tr|Fast Clock}}]]。
+* 对于[[{{tr|banner}}]]，所有变体共享击杀数。
+
+== {{tr|Trivia}} ==
+{{bestiary}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|{{tr|Bone Feather}}的掉落率从 1/450 提高到 1/300。}}
+{{history|Desktop 1.4.0.1|
+** 现在会掉落[[{{tr|Morning Star}}]]。
+** {{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|现在可以掉落专属的旗帜。}}
+{{History|Desktop 1.2|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+{{language info|en=Rusty Armored Bones}}

@@ -1,0 +1,88 @@
+{{item infobox
+| name = Fish Bowls
+| imagealt = [[File:Fish Bowl.png|link=]] [[File:Gold Fish Bowl.png|link=]] [[File:Pupfish Bowl.png|link=]] [[File:Lava Serpent Bowl.png|link=]]
+| type = Furniture
+| autoswing = {{iteminfo|Fish Bowl|autoswing}}
+| stack = {{iteminfo|Fish Bowl|stack}}
+| placeable = yes
+| width = 2 | height = 2
+| use = {{iteminfo|Fish Bowl|usetime}}
+| rare =
+| research = {{iteminfo|Fish Bowl|sacrifices}}
+| cargo = no
+}}
+
+'''{{tr|Fish Bowl}}'''、'''{{tr|Gold Fish Bowl}}''' {{eicons|Gold Fish Bowl|small=y}}、'''{{tr|Pupfish Bowl}}''' {{eicons|Pupfish Bowl|small=y}}和'''{{tr|Lava Serpent Bowl}}''' {{eicons|Lava Serpent Bowl|small=y}} 是一类装饰性[[{{tr|furniture}}]]{{tr|items}}。{{tr|Fish Bowl}}和{{tr|Gold Fish Bowl}}也可兼做可穿戴{{tr|items}}，并可装备于{{tr|player}}的{{tr|helmet slot}}。
+
+{{tr|Fish Bowls}}放置于{{tr|helmet vanity slot}}时仅有视觉效果；但若放置于{{tr|head armor slot}}，则会像玩家在[[{{tr|water}}]]中那样显示[[{{tr|breath meter}}]]，且时间足够长后玩家会[[{{tr|drown}}]]并[[{{tr|Death}}]]。呼吸辅助如[[{{tr|Breathing Reed}}]]或[[{{tr|Gills Potion}}]]可允许玩家正常呼吸。
+
+{{tr|Fish, Gold Fish and Pupfish Bowls}}为制作而来，但{{tr|Lava Serpent Bowl}}则有 {{chance|39/200}} 的几率发现于[[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]中。
+
+== 类型 ==
+{{infobox wrapper | direction = row | float = left
+|{{item infobox
+| imagealt = <ul class="infobox-block"><li><ul class="infobox-inline"><li>[[File:Fish Bowl.png|link=|Fish Bowl item sprite]]</li><li>[[File:Fish Bowl (placed).gif|link=|Fish Bowl placed]]</li></ul></li><li><ul class="infobox-inline"><li>[[File:Fish Bowl (equipped).png|link=|Fish Bowl equipped]]</li><li>[[File:Fish Bowl (equipped) female.png|link=|Fish Bowl equipped (female)]]</li></ul></li></ul>
+| type = Furniture
+| auto = 250
+| width = 2 | height = 2
+}}
+|{{item infobox
+| imagealt = <ul class="infobox-block"><li><ul class="infobox-inline"><li>[[File:Gold Fish Bowl.png|link=|Gold Fish Bowl item sprite]]</li><li>[[File:Gold Fish Bowl (placed).gif|link=|Gold Fish Bowl placed]]</li></ul></li><li><ul class="infobox-inline"><li>[[File:Gold Fish Bowl (equipped).png|link=|Gold Fish Bowl equipped]]</li><li>[[File:Gold Fish Bowl (equipped) female.png|link=|Gold Fish Bowl equipped (female)]]</li></ul></li></ul>
+| type = Furniture
+| auto = 4275
+| width = 2 | height = 2
+}}
+|{{item infobox
+| type = Furniture
+| auto = 4398
+| width = 2 | height = 2
+}}
+|{{item infobox
+| type = Furniture
+| auto = 4880
+| width = 2 | height = 2
+| tags = bag loot
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE %ish Bowl|expectedrows=3|link=no}}
+
+== 备注 ==
+* 在{{eversions|1.4.0.1|short=y}}上，装备[[{{tr|Neptune's Shell}}]]时，佩戴{{tr|Fish Bowl}}会激活[[{{tr|Merfolk}}]]外观，但不激活{{tr|buff}}。但是在{{eversions|1.4.0.1|invert=y|short=y}}不会。
+* {{eicons|1.3.0.1|invert=y}} 处于放置状态时，使用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]破坏{{tr|Fish Bowl}}时不会掉落，因此一旦将其放置就无法回收。但是可以通过破坏其下方的{{tr|blocks}}来回收{{tr|Fish Bowl}}。
+
+== 小贴士 ==
+* {{tr|Fish Bowl}}的售价是 {{iteminfo|Fish Bowl|sell}}，而出售它的组件可以获得 {{coin|{{#vardefineecho:_total_value|{{recipes/extract|mode=ingredients-sell|result=Fish Bowl}}}}}}（少了{{coin|{{#vardefineecho:_diff_value|{{sell expr|raw=y|Fish Bowl|-{{#var:_total_value}}}}}}}} / {{sell expr|raw=y||{{#var:_diff_value}}/|Fish Bowl|*100 round 2}}%）。
+
+== 花絮 ==
+* {{tr|Fish Bowl}}在[[{{tr|Blood Moon}}]]期间不会变红。
+* {{tr|Gold Fish Bowl}}的{{tr|tooltip}}，''“{{itemTooltip|4275}}”''，是对不明确名称的引用，该含义可能表示金鱼缸或盛有金鱼的鱼缸。
+* {{tr|Lava}}蛇似乎是仍然活着的[[{{tr|Bone Serpent}}]]，因为在[[{{tr|Bestiary}}]]条目中提及了它们具有{{tr|obsidian}}鳞片：''“{{gameText|Bestiary_FlavorText.npc_BoneSerpentHead}}”''
+* {{tr|Lava Serpent Bowl}}的{{tr|tooltip}}（“不，不能套在头上”）是参考了{{tr|Fish Bowl}}和{{tr|Gold Fish Bowl}}都可以作为{{tr|helmet}}佩戴的事实。不清楚为何这一点要被单独指出，因为即使是填充了{{tr|water}}的{{tr|bowls}}对玩家来说仍然很危险（考虑到装备在{{tr|armor slot}}中时会溺水这一点），这可能只是一个玩笑，因为{{tr|lava}}显然是更危险的那一个。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 加入{{tr|Gold Fish Bowl}}、{{tr|Pupfish Bowl}}和{{tr|Lava Serpent Bowl}}。
+** 佩戴{{tr|Fish Bowl}}现在会激活{{tr|the Merfolk buff}}。}}
+{{history|Desktop 1.3.2|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2.3|
+** 现在可放置。
+** {{tr|Sprite updated.}}
+** 现在只需要一只{{tr|Goldfish}}，而非 2 只。}}
+{{history|Desktop 1.0.6|制作需要[[{{tr|Bottled Water}}]]而非[[{{tr|Bottle}}]]。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-vanity = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Fish Bowls}}

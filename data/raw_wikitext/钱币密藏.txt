@@ -1,0 +1,227 @@
+{{infobox wrapper
+|{{item infobox
+| name = {{tr|Small Coin Stashes}}
+| type = Background object
+| imagealt = [[File:Small Copper Coin Stash.png|{{tr|Small Copper Coin Stash}}|link=]] [[File:Small Silver Coin Stash.png|{{tr|Small Silver Coin Stash}}|link=]] [[File:Small Gold Coin Stash.png|{{tr|Small Gold Coin Stash}}|link=]]
+| width = 2
+| height = 1
+| rare =
+| stack =
+| idtile = 185 (16–18)
+| listcat = Naturally generated
+| cargo = no
+}}
+|{{item infobox
+| name = {{tr|Large Coin Stashes}}
+| type = Background object
+| imagealt = [[File:Large Copper Coin Stashes.png|{{tr|Large Copper Coin Stash}}|link=]] [[File:Large Silver Coin Stashes.png|{{tr|Large Silver Coin Stash}}|link=]] [[File:Large Gold Coin Stashes.png|{{tr|Large Gold Coin Stash}}|link=]]
+| width = 3
+| height = 2
+| rare =
+| stack =
+| idtile = 186 (4–6)
+| listcat = Naturally generated
+| cargo = no
+}}
+}}
+{{distinguish|{{tr|Coin Piles}}}}
+
+'''{{tr|Coin Stashes}}'''（或'''密藏'''）是极其罕见的{{tr|background items}}，被破坏时会掉落中等到大量的[[{{tr|coin}}]]。有两种{{tr|coin stashes}}：2×1 的小袋，常常生成在[[{{tr|Pyramid}}]]中但也能生成在[[{{tr|underground}}]]和[[{{tr|cavern}}]]中；和 3×2 的大袋（看上去是撒在了岩石上），只能生成在{{tr|underground and cavern}}。
+
+每个密藏都包含同种的{{tr|coin}}，但其数量可能超过 99 个{{tr|coins}}。例如，{{tr|Copper Coin stash}}可能会包含 200 个{{tr|coins}}，等同于提供 2 {{tr|Silver Coins}}。''见[[#{{tr|Notes}}|{{tr|Notes}}]]章节获取确切的{{tr|coins}}数量和几率。''
+
+它们的罕见度随着{{tr|coin}}价值的上升而提高，[[{{tr|Gold Coins}}]]是最罕见的。没有[[{{tr|Platinum Coin}}]]密藏。
+
+和部分其他自然生成的物体不同，{{tr|Coin Stashes}}''不能''在{{eil|Ecto Mist}}中制作，但可以通过[[{{tr|Rubblemaker}}]]用{{tr|coins}}放置。
+
+== 备注 ==
+* 见下方获取每种{{tr|Coin Stash}}的确切{{tr|coins}}掉落量和几率，以及对应的平均{{tr|coin value}}。表中的每一行都视为一个独立事件。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.Check2x1 / Terraria.WorldGen.Check3x2}}
+{{flexstart|alignitems=start|style=gap: var(--layout-gap);}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Small Copper Coin Stash.png|link=]]<br/>{{tr|Small Copper Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 10–99
+|-
+| {{chance|1/1}} || 20–99
+|-
+| {{chance|2/3}} || 10–99
+|-
+| {{chance|2/3}} || 20–99
+|-
+| {{chance|1/2}} || 10–99
+|-
+| {{chance|1/2}} || 20–99
+|-
+| {{chance|1/3}} || 10–99
+|-
+| {{chance|1/3}} || 20–99
+|-
+| {{chance|1/4}} || 10–99
+|-
+| {{chance|1/4}} || 20–99
+|-
+| {{chance|1/5}} || 10–99
+|-
+| {{chance|1/5}} || 20–99
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor((10+99+20+99)/2+2/3*(10+99+20+99)/2+1/2*(10+99+20+99)/2+1/3*(10+99+20+99)/2+1/4*(10+99+20+99)/2+1/5*(10+99+20+99)/2)}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Small Silver Coin Stash.png|link=]]<br/>{{tr|Small Silver Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 10–99
+|-
+| {{chance|1/2}} || 20–99
+|-
+| {{chance|1/3}} || 30–99
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor(100*((10+99)/2+1/2*(20+99)/2+1/3*(30+99)/2))}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Small Gold Coin Stash.png|link=]]<br/>{{tr|Small Gold Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 1–5
+|-
+| {{chance|1/2}} || 2–5
+|-
+| {{chance|1/3}} || 3–5
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor(10000*((1+5)/2+1/2*(2+5)/2+1/3*(3+5)/2))}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Large Copper Coin Stashes.png|link=]]<br/>{{tr|Large Copper Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 20–99
+|-
+| {{chance|1/1}} || 30–99
+|-
+| {{chance|1/1}} || 40–99
+|-
+| {{chance|2/3}} || 20–99
+|-
+| {{chance|2/3}} || 30–99
+|-
+| {{chance|2/3}} || 40–99
+|-
+| {{chance|1/2}} || 20–99
+|-
+| {{chance|1/2}} || 30–99
+|-
+| {{chance|1/2}} || 40–99
+|-
+| {{chance|1/3}} || 20–99
+|-
+| {{chance|1/3}} || 30–99
+|-
+| {{chance|1/3}} || 40–99
+|-
+| {{chance|1/4}} || 20–99
+|-
+| {{chance|1/4}} || 30–99
+|-
+| {{chance|1/4}} || 40–99
+|-
+| {{chance|1/5}} || 20–99
+|-
+| {{chance|1/5}} || 30–99
+|-
+| {{chance|1/5}} || 40–99
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor((20+99+30+99+40+99)/2+2/3*(20+99+30+99+40+99)/2+1/2*(20+99+30+99+40+99)/2+1/3*(20+99+30+99+40+99)/2+1/4*(20+99+30+99+40+99)/2+1/5*(20+99+30+99+40+99)/2)}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Large Silver Coin Stashes.png|link=]]<br/>{{tr|Large Silver Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 10–99
+|-
+| {{chance|1/2}} || 20–99
+|-
+| {{chance|1/3}} || 30–99
+|-
+| {{chance|1/4}} || 40–99
+|-
+| {{chance|1/5}} || 50–99
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor(100*((10+99)/2+1/2*(20+99)/2+1/3*(30+99)/2)+1/4*(40+99)/2+1/5*(50+99)/2)}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{|class="terraria lined"
+! colspan=2 | [[File:Large Gold Coin Stashes.png|link=]]<br/>{{tr|Large Gold Coin Stash}}
+|-
+! 几率 !! 数量
+|-
+| {{chance|1/1}} || 1–6
+|-
+| {{chance|1/2}} || 2–6
+|-
+| {{chance|1/3}} || 3–6
+|-
+| {{chance|1/4}} || 4–6
+|-
+| {{chance|1/5}} || 5–6
+|-
+! 平均{{tr|coin value}}
+| {{coin|{{#expr:floor(10000*((1+6)/2+1/2*(2+6)/2+1/3*(3+6)/2+1/4*(4+6)/2+1/5*(5+6)/2))}}}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+== 图库 ==
+<gallery>
+File:Copper Coin Stash.png|玩家发现{{tr|Copper Coins stash}}。
+File:Copper Coin Stash 2.png|玩家发现{{tr|large Copper Coin stash}}。
+File:Copper Coin Stash 3.png|另一种{{tr|large Copper Coin stash}}。
+File:Silver Coin Stash.png|玩家发现{{tr|Silver Coins stash}}。
+File:Silver Coin Stash 2.png|玩家发现{{tr|large Silver Coin stash}}。
+File:Silver Coin Stash 3.png|另一种{{tr|large Silver Coin stash}}。
+File:Gold Coin Stash.png|玩家发现{{tr|Gold Coins stash}}
+File:Gold Coin Stash 2.png|玩家发现{{tr|large Gold Coin stash}}。
+File:Gold Coin Stash 3.png|另一种{{tr|large Gold Coin stash}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|large stashes}}的{{tr|sprites updated.}}}}
+{{history|Desktop 1.3.0.1|所有密藏的{{tr|sprites updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{all versions}}
+
+[[Category:背景物体物品]]
+
+{{language info|en=Coin Stashes}}

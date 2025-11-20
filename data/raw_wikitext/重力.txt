@@ -1,0 +1,97 @@
+{{about|[[{{tr|Game mechanic}}]]|{{tr|buff}}|{{tr|Gravity (buff)}}}}
+
+'''{{tr|Gravity}}'''对玩家施加一个恒定向下的加速度，影响垂直速度和达到最大下落速度的时间。默认的{{tr|Gravity}}加速度是 {{mph|90 tiles}} 每秒{{source code ref|v=1.4.4.9|method=Terraria.Player.defaultGravity}}，能达到 {{mph|37.5 tiles}}{{source code ref|v=1.4.4.9|method=Terraria.Player.update}} 的最大下落速度<!-- gravity = 0.4 tile/tick^2; maxFallSpeed = 10 tile/tick -->。某些因素可能会同时修正{{tr|Gravity}}和最大下落速度，导致增加或减少它们的影响效果。
+
+== 倍率 ==<!-- maxFallSpeed = ticks/s; gravity = ticks/s -->
+<section begin="modifiers" />{{options/snap|item|gravity-modifiers}}{{options/set|item|mode=table|wrap=y}}
+{| class="terraria lined"
+! colspan="2" | 来源 !! 效果
+|-
+| || [[{{tr|Space}}]] || 玩家越接近地图顶端{{tr|gravity}}越低，最低降到默认{{tr|gravity}}的 25%，在 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]] 世界中最低降到默认{{tr|gravity}}的 10%。<!-- min gravity = 0.1 / 0.04 -->
+|-
+| {{item|Water}} || rowspan="2" | 最大下落速度变成默认的 50%，{{tr|gravity}}变成默认的 20%。<!-- maxFallSpeed = 5; gravity = 0.2 -->
+|-
+| {{item|Lava}}
+|-
+| {{item|Honey}} || 最大下落速度变成默认的 30%，{{tr|gravity}}变成默认的 25%。<!-- maxFallSpeed = 3; gravity = 0.1 -->
+|-
+| {{item|Shimmer}}|| {{tr|gravity}}变成默认的 37.5%。<!-- gravity = 0.15 -->
+|-
+| {{item|Distorted}} || 最大下落速度提高 {{mph|0.375 tiles}}。完全移除{{tr|gravity}}。<br/>垂直速度由玩家的当前垂直速度和水平位置决定。
+|-
+| {{item|Shimmering}} || 最大下落速度变成当前的 90%，{{tr|gravity}}变成当前的 90%。
+|-
+| {{item|Merfolk (buff)|Merfolk|mode=table|wrap=y|note=（水中）}} || 最大下落速度变成默认的 75%，{{tr|gravity}}变成默认的 70%。<!--  maxFallSpeed = 7; gravity = 0.3 -->
+|-
+| {{item|Featherfall}} || rowspan="2" | 最大下落速度和{{tr|gravity}}均变成当前的 33.33%（按住 {{key|up}} 时为 10%）。<br/>按住 {{key|down}} 时没有效果。<!-- gravity = 0.13 / 0.04 / 0.4; maxFallSpeed = 3.33 / 1 / 10 -->
+|-
+| {{item|Djinn's Curse}}
+|-
+| {{item|Slimy Saddle|mode=table}} || rowspan="2" | 最大下落速度变成默认的 200%。<!-- maxFallSpeed = 20 -->
+|-
+| {{item|Gelatinous Pillion}}
+|-
+| {{item|Trident|mode=table|wrap=y|note=（水中）}} || {{eicons|1.4.0.1}}最大下落速度变成默认的 60%，重力变成默认的 62.5%（按住{{key|up}}时，最大下落速度变成默认的 20%，重力变成默认的 25%）。<!-- maxFallSpeed = 6 / 2; gravity = 0.25 / 0.1 -->
+|-
+| {{item|Portal Gun|mode=table}} || 最大下落速度变成默认的 350%。<!-- maxFallSpeed = 35 -->
+|}{{options/restore|item|gravity-modifiers}}<section end="modifiers" />
+
+=== {{tr|Space}} ===
+计算{{tr|gravity}}倍率的公式为：<code>倍率 = (x - 偏移 - 60) * 因数1/因数2</code>。因此，最终结果会位于 0.25 至 1 之间（在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中为 0.1 至 1）。下方为参数的含义：{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update}}
+* <code>x</code> 等于玩家与{{tr|world}}顶部边界的距离（单位为{{tr|tile}}）。
+* <code>偏移</code> 由[[{{tr|world size}}]]决定，{{tr|large world}}为 20，{{tr|medium world}}约为 15，{{tr|small world}}为 10。
+* <code>因数1</code> 指世界是否是 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]]。普通{{tr|world}}为 6，上述{{tr|world}}为 1。
+* <code>因数2</code> 等于{{tr|world}}[[{{tr|Surface}}]]（0 英尺）至{{tr|world}}顶部边界的距离。
+
+== {{tr|Reverse gravity}} ==
+{{float file box|width=400px|
+{{flexstart|justify=center|style=row-gap:5px}}
+{{flexstart|item|order=2}}[[File:Gravity example (reversed).png|386px|{{tr|reversed gravity}}下的{{tr|Forest}}场景]]{{flexend|item}}<!-- the reversed image should be first in the DOM so that it's displayed by search engines etc. -->
+{{flexstart|item|order=1}}[[File:Gravity example (normal).png|386px|正常{{tr|gravity}}下的{{tr|Forest}}场景]]{{flexend|item}}
+{{flexend}}
+|{{tr|character}}、[[{{tr|Squirrel}}]]、和[[{{tr|Guide}}]]在[[{{tr|Forest}}]]中。<br/>上：正常{{tr|gravity}}，下：{{tr|reverse gravity}}。
+}}
+
+通过使用[[{{tr|Gravitation Potion}}]]或装备{{eil|Gravity Globe}}，玩家会获得逆转{{tr|gravity}}的能力。按下 {{key|up}} 键会逆转玩家的{{tr|gravity}}，玩家会向上“坠落”而非向下。在[[{{tr|multiplayer}}]]下，这只会影响使用{{tr|item}}的玩家。{{tr|Gravity}}可以通过同一按键再次改回正常，且可以（在{{tr|Gravitation Potion}}的{{tr|buff}}激活或装备{{tr|Gravity Globe}}时）无花费、无冷却地自由切换。
+
+{{tr|reverse gravity}}时值得注意的特性如下：
+* 逆转{{tr|gravity}}会重置玩家的[[{{tr|Fall damage}}|下落距离]]。可以在落地前快速地逆转{{tr|gravity}}来避免在长下落中受到{{tr|fall damage}}。
+* 在逆转{{tr|gravity}}时碰到{{tr|map}}顶部不会使玩家受到伤害，而是会使得{{tr|gravity}}变回正常。这不会重置[[{{tr|wings}}]]和[[{{tr|Rocket Boots}}]]的飞行计时器。
+* [[{{tr|Wisp in a Bottle}}]]，及其控制，在{{tr|reverse gravity}}下会保持颠倒。
+* {{tr|reverse gravity}}时可以[[{{tr|Fishing}}]]，{{tr|fishing bobber}}会向上“坠落”到{{tr|water}}中。
+
+在{{tr|reverse gravity}}时也有如下限制：
+* [[{{tr|Mounts}}]]无法被召唤。
+* [[{{tr|Platforms}}]]不会阻止玩家向上“坠落”，玩家会直接穿过它们。
+* [[{{tr|Wings}}]]不能进行滑翔。
+* 不能打{{eil|Golf}}；玩家甚至无法进行挥杆。
+* {{eil|Kites}}可以使用但仍会保持原有的朝向。
+* 不能进入{{eil|Shimmering}}；玩家接触{{tr|Shimmer}}时{{tr|gravity}}会恢复正常。
+
+== 另见 ==
+* [[{{tr|Fall damage}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** （再次）修复了{{tr|Celestial Pillar shields}}在{{tr|reverse gravity}}下会飞上天空的问题。
+** 修复了在按下 UP 键逆转{{tr|Gravity}}时会使玩家的{{tr|flying mounts}}解除的问题。现在，在乘坐{{tr|mounts}}时无法{{tr|reverse gravity}}。
+** 修复了{{tr|reverse gravity}}时漂浮的{{tr|Piggy Bank}}的鼠标悬停检测方向错误的问题。
+** 修复了{{tr|reverse gravity}}时{{tr|Blizzard Staff}}类的{{tr|weapons}}会朝玩家瞄准的方向的相反方向汇聚的问题。
+** 修复了{{tr|reverse gravity}}时玩家会卡在锤击过的{{tr|platforms}}上的问题。
+** 修复了{{tr|Forbidden armor}}的环在{{tr|reverse gravity}}状态下未能正确翻转的问题。
+** 修复了{{tr|reverse gravity}}时一些{{tr|weapons}}不会随玩家翻转的问题。
+** 修复了{{tr|cobwebs}}无法正确减慢{{tr|reverse gravity}}时的玩家的问题。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Gravity}}

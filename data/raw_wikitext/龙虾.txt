@@ -1,0 +1,98 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 494
+| id = 494, 495
+| imagealt = [[File:Crawdad.gif|link=]] [[File:Crawdad Blue.gif|link=]]
+| environment = Cavern
+| damage2 = <br/>{{modes|wrap=no<!--
+	-->|{{#expr:floor({{npcinfo|Crawdad|damage}}*1.5*1.25)}}<!-- Classic
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|{{tr|claw attack}}}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters / Terraria.NPC.GetMeleeCollisionData|t={{tr|Claw attack}}持续 20 {{tr|tick}}，并会扩大{{tr|enemy}}的{{tr|hitbox}}。在前 5 {{tr|ticks}}，{{tr|damage}}是{{tr|base damage}}×1.5，但在此过程中{{tr|enemy}}不会开始{{tr|claw attack}}动画，并且它的{{tr|hitbox}}不会改变，如果{{tr|player}}的移动速度不是很快，应该不会碰到{{tr|enemy}}的{{tr|hitbox}}。在剩下的 15 {{tr|ticks}}中，{{tr|hitbox}}被放大，并且{{tr|damage}}变为{{tr|base damage}}×1.5×1.25，即这里显示的{{tr|damage}}。}}
+| Potato Chips|1|1.33%
+| Depth Meter|1|1.25%
+| Compass|1|1.23%
+| Rally|1|{{chance|6241/160000|mode=p}}
+| sound1 = Zombie 47.wav
+| soundcaption1 = Idle
+| cargo = no | cargodrops = yes
+}}<!--
+
+Store information about 2 variants to Cargo:
+-->{{npc infobox | view = void
+| auto = 494
+| image = Crawdad.gif
+| environment = Cavern
+| damage2 = <br/>{{modes|wrap=no<!--
+	-->|{{#expr:floor({{npcinfo|Crawdad|damage}}*1.5*1.25)}}<!-- Classic
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|{{tr|claw attack}}}}
+}}<!--
+-->{{npc infobox | view = void
+| auto = 495
+| image = Crawdad Blue.gif
+| environment = Cavern
+| damage2 = <br/>{{modes|wrap=no<!--
+	-->|{{#expr:floor({{npcinfo|Crawdad|damage}}*1.5*1.25)}}<!-- Classic
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|Crawdad|damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|{{tr|claw attack}}}}
+}}
+{{float file box|[[File:Crawdad2.gif]]<br/>[[File:Crawdad Blue2.gif]]|{{tr|Crawdad}}的{{tr|claw attack}}。|width=100px}}
+
+'''{{tr|Crawdads}}'''是一种[[{{tr|pre-hardmode}}]]的[[{{tr|enemies}}]]，可在[[{{tr|Cavern}}]][[{{tr|layer}}]]中生成。它具有两种不同颜色的{{tr|variants}}，它们都具有相同的属性和行为。{{tr|Crawdad}}的行为类似[[{{tr|Crab}}]]，不过它行动更快，会在地面行走并跳向距离足够近的玩家。它也能够不受阻碍地在[[{{tr|water}}]]中行动。当{{tr|Crawdads}}在玩家旁时，它会使用爪子攻击，造成较高伤害。
+
+{{tr|Crawdads}}的生成非常独特，因为其生成与另外两个{{tr|enemies}}有关：[[{{tr|Giant Shelly}}]]和[[{{tr|Salamander}}]]。在这三个{{tr|enemies}}中，一个{{tr|world}}只会生成其中两种，使得最后一种不可获取。{{tr|Crawdads}}永远不会在一个既有{{tr|Giant Shelly}}又有{{tr|Salamanders}}的{{tr|world}}中生成。这一点已被[[{{tr|Bestiary}}]]的进度（在其中两种{{tr|enemy}}解锁后，缺失的那种{{tr|enemy}}也会解锁）和{{$|banner||enemy}}获取（三种{{tr|enemies}}的{{tr|banners}}中的任意两种可用于制作缺失的那种的{{tr|banners}}）考虑到。
+
+== 备注 ==
+* 仅当下列条件满足时{{tr|Crawdad}}才能施展爪子攻击：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters}}
+** 它没有在竖直移动（即不在跳跃或下落）。
+** 其位置在[[{{tr|surface}}]]{{tr|layer}}以下。如果它在{{tr|surface layer}}以上，则它只能在{{tr|night}}施展爪子攻击。
+
+== 花絮 ==
+* 在现实生活中，crawdad（此{{tr|enemies}}的英文名）也被称为{{维基百科|crayfish|t=小龙虾}}，这是一种小型的淡水龙虾。和''{{tr|Terraria}}''中的{{tr|crawdads}}不同，现实生活中的小龙虾的体长通常仅略长于半英尺（约 15.24 厘米），因而不会对人类造成很大的威胁。
+* {{tr|Crawdad}}的空闲和受伤音效来自于[https://wiki.teamfortress.com/wiki/Team_Fortress_2 《军团要塞 2》（Team Fortress 2）]的一个官方小电影：[https://www.youtube.com/watch?v=GLlLQ3LmZWU&t=549s 《Expiration Date.》]
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Salamander}}/{{tr|Giant Shelly}}/{{tr|Crawdad}}这三种{{tr|banners}}中的任意两种都可用于制作剩余的那种。}}
+{{history|Desktop 1.4.0.1|现在有 {{chance|1/75}} 几率掉落[[{{tr|Potato Chips}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Crawdad}}

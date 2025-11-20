@@ -1,0 +1,17 @@
+<includeonly><!--
+-->{{#ifexpr:{{{1}}} < 50|{{item|mode=image|Gold Ore}} {{item|mode=image|Platinum Ore}}|<!--
+-->{{#ifexpr:{{{1}}} < 55|{{item|mode=image|Meteorite}}|<!--
+-->{{#ifexpr:{{{1}}} < 65|{{item|mode=image|Crimtane Ore}} {{item|mode=image|Demonite Ore}} {{item|mode=image|Obsidian}}|<!--
+-->{{#ifexpr:{{{1}}} < 100|{{item|mode=image|Hellstone}} {{item|mode=image|Ebonstone Block}} {{item|mode=image|Crimstone Block}}|<!--
+-->{{#ifexpr:{{{1}}} < 110|{{item|mode=image|Dungeon Bricks|ext=gif}} {{item|mode=image|Cobalt Ore}} {{item|mode=image|Palladium Ore}}|<!--
+-->{{#ifexpr:{{{1}}} < 150|{{item|mode=image|Mythril Ore}} {{item|mode=image|Orichalcum Ore}}|<!--
+-->{{#ifexpr:{{{1}}} < 200|{{item|mode=image|Adamantite Ore}} {{item|mode=image|Titanium Ore}}|<!--
+-->{{#ifexpr:{{{1}}} < 210|{{item|mode=image|Chlorophyte Ore}}|<!--
+-->{{#ifexpr:{{{1}}} >= 210|{{item|mode=image|Lihzahrd Brick}}}}}}}}}}}}}}}}}}}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Pickaxes/tier}}
+</noinclude>

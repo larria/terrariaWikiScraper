@@ -1,0 +1,148 @@
+{{exclusive|Old One's Army}}
+{{npc infobox| tabs = no
+| namenote =
+| auto = 576
+| idprojectile = 670,676
+| image = Ogre.gif
+| type = Boss
+| environment = Old One's Army
+| life =
+| damage =
+| defense =
+| debuff = Oozed
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.DD2OgreSpit}}}}
+| debuffduration = 15 {{tr|seconds}} {{source code ref|v=1.4.0.5|name=spitai|method=Terraria.Projectile.Kill}}
+| sound1 = Dd2 ogre attack 0.wav, Dd2 ogre attack 1.wav, Dd2 ogre attack 2.wav
+| soundcaption1 = 攻击
+| sound2 = Dd2 ogre roar 0.wav, Dd2 ogre roar 1.wav, Dd2 ogre roar 2.wav
+| soundcaption2 = 咆哮
+| sound3 = Dd2 ogre ground pound.wav
+| soundcaption3 = 地面重击
+| sound4 = Dd2 ogre spit.wav
+| soundcaption4 = 唾沫
+| imageother = Map Icon Ogre.png
+| imageothercaption = Map Icon
+| shownpcid = no
+}}
+{{quotation|[[{{tr|Party Girl}}|{{tr|The Party Girl}}]]|{{gameText|PartyGirlSpecialText.AfterDD2Tier1}}}}
+
+'''{{tr|Ogre}}'''是一个[[{{tr|Hardmode}}]]的小 [[{{tr|boss}}]]，在[[{{tr|Old One's Army}}]][[{{tr|event}}]]中生成于 2 级的第 7 波和 3 级的第 5 和 6 波中。他速度缓慢但却强大。
+
+== 行为 ==
+这个小 [[{{tr|boss}}]] 有几种不同的攻击：
+* 从远距离攻击，{{tr|the Ogre}}将向目标投掷一个[[File:Ogre Spit.png|link=]] '''{{tr|Ogre Spit}}'''。虽然它只会伤害所击中的目标，但在与{{tr|tiles}}接触时它会对附近的所有玩家造成'''{{tr|Oozed}}'''{{tr|debuff}}，显著降低他们的速度。
+* 当目标在附近时，{{tr|the Ogre}}偶尔会跳到空中并在落地时造成冲击波，在地面上造成各方向上推进约十格的区域伤害，造成高伤害（120 / {{expert|160}} / {{master|240}}）和高击退。
+* 最后一种攻击是简单的挥舞大棒，这只在目标在{{tr|the Ogre}}正前方时他才会这么做。这种攻击能造成超高伤害（2 级中是 {{modes|{{#expr:floor({{npcinfo|576|damage}}*1.75)}} / {{expert|{{#expr:floor({{npcinfo|576|damage|expert}}*1.75)}}}} / {{master|{{#expr:floor({{npcinfo|576|damage|master}}*1.75)}}}}}}，3 级中是 {{modes|{{#expr:floor({{npcinfo|577|damage}}*1.75)}} / {{expert|{{#expr:floor({{npcinfo|577|damage|expert}}*1.75)}}}} / {{master|{{#expr:floor({{npcinfo|577|damage|master}}*1.75)}}}}}}）和超高击退，建议玩家保持距离。
+
+== {{tr|Variants}} ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/drops}}
+{| class="terraria lined align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Drops}}
+<section begin="npc infobox"/>{{npc infobox
+| auto = 576
+| image = Ogre.png
+| imagesize = *0.8
+| type = Boss
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|{{#expr:floor({{npcinfo|576|damage}}*1.75)}}|{{#expr:floor({{npcinfo|576|damage|expert}}*1.75)}}|{{#expr:floor({{npcinfo|576|damage|master}}*1.75)}}}} {{note|small=y|paren=y|大棒挥舞}} {{source code ref|v=1.4.0.5|name=clubswing|method=Terraria.NPC.GetMeleeCollisionData}}<br/>{{modes|120|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2OgreStomp}}}}<br/>{{modes|80|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2OgreSpit}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_107_ImprovedWalkers}}
+| Creeper Egg|1|{{modes|20%|25%}}
+| Ogre Mask|1|14.29%
+| Ogre Trophy|1|10%<!-- the Tier 2 Ogre does NOT drop the Ogre's Club - only the Tier 3 Ogre does. -->
+|:group:start |可能会掉落以下 2 件{{tr|items}}之一|2
+| Huntress's Buckler|1|{{modes|16.66%|25%}}
+| Monk's Belt|1|{{modes|16.66%|25%}}
+|:group:end|----|----
+|:group:start |可能会掉落以下 5 件{{tr|items}}之一&nbsp;{{source code ref|v=1.4.0.5|name=ogredrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterDD2EventDrops}}| 2
+| Tome of Infinite Wisdom|1|{{modes|10%|20%}}
+| Phantom Phoenix|1|{{modes|10%|20%}}
+| Brand of the Inferno|1|{{modes|10%|20%}}
+| Sleepy Octopod|1|{{modes|10%|20%}}
+| Ghastly Glaive|1|{{modes|10%|20%}}
+|:group:end|----|----
+}}<section end="npc infobox"/>
+{{npc infobox
+| auto = 577
+| image = Ogre.png
+| imagesize = *0.8
+| type = Boss
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|{{#expr:floor({{npcinfo|577|damage}}*1.75)}}|{{#expr:floor({{npcinfo|577|damage|expert}}*1.75)}}|{{#expr:floor({{npcinfo|577|damage|master}}*1.75)}}}} {{note|small=y|paren=y|大棒挥舞}} <ref name="clubswing"/><br/>{{modes|120|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2OgreStomp}}}}<br/>{{modes|80|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2OgreSpit}}}} <ref name="ai"/>
+| Creeper Egg|1|10%
+| Ogre Mask|1|7.14%
+| Ogre Trophy|1|10%
+| Ogre's Club|1|{{master|25%}} @master
+| Ogre Relic|1|{{master|100%}} @master
+|:group:start | {{eicons|1.4.4}}可能会掉落以下 2 件{{tr|items}}之一&nbsp;<ref name="ogredrops"/>|2
+| Huntress's Buckler|1|8.33%
+| Monk's Belt|1|8.33%
+|:group:end|----|----
+|:group:start |可能会掉落以下 5 件{{tr|items}}之一&nbsp;<ref name="ogredrops"/>|5
+| Tome of Infinite Wisdom|1|5%
+| Phantom Phoenix|1|5%
+| Brand of the Inferno|1|5%
+| Sleepy Octopod|1|5%
+| Ghastly Glaive|1|5%
+|:group:end|----|----
+}}
+|}
+{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* {{tr|the Ogre}}的挥棒攻击可以对装备有[[{{tr|Shields}}]]的玩家造成轻微{{tr|knockback}}。
+* 在 3 级中，大棒挥舞在{{tr|Master Mode}}内可以秒杀玩家，因为其伤害高达 {{master|{{#expr:floor({{npcinfo|577|damage|master}}*1.75)}}}}。这很可能是{{tr|Old One's Army event}}中所有{{tr|the enemies}}单次攻击所能造成的最高伤害，甚至超过了[[{{tr|Betsy}}]]的所有攻击。
+
+== 小贴士 ==
+* 躲避{{tr|the Ogre}}的跳跃攻击最简单的方法是在其落地前跳起或停留在空中。但要确保你的跳跃高度已经增强过（通过{{tr|wings}}其他移动{{tr|accessories}}），否则你仍然会受到伤害。
+**躲避其跳跃攻击的另一个简单方法是在[[{{tr|Space}}]]中与{{tr|the Old One's Army}}战斗，在那里极低的重力将使跳跃高度延长到极大。这使得很容易在他落地前走开。
+** 在与{{tr|the Ogre}}战斗时使用离开地面的{{tr|platform}}并不太明智，因为他跳起时可能会跳到所述平台上。尽管挥击的粒子效果是从地面上出现的，但{{tr|the Ogre}}的挥击碰撞框依然被他带到了更高的高度。
+* '''{{tr|Oozed}}'''[[{{tr|debuff}}]]并不会影响未接触地面的{{tr|flying}}[[{{tr|Mounts}}]]的速度，因此，在战斗时使用[[{{tr|Cosmic Car Key}}]]非常有用。
+* {{tr|The ogre}}有非常强大的近距离攻击，因此当你与其战斗时应当使用{{tr|ranged weapons}}。
+* 装备着[[{{tr|Yoyo Bag}}]]时使用[[{{tr|Yoyo}}]]是一种非常有效地击杀{{tr|the Ogre}}的方法。
+* 重要的是在它到达传送门和[[{{tr|Eternia Crystal}}]]的中点之前对其造成高伤害，因为随后它就会开始瞄准{{tr|the crystal}}。它的鼻涕球在这个阶段也能击中玩家。
+* {{tr|The Ogre}}可以很容易地被操纵，从而使其躲避其鼻涕球和大棒挥舞攻击变得比较容易。
+
+== 花絮 ==
+* 在{{tr|Terraria}}的游戏文件中{{tr|The Ogre}}有一个[[{{tr|Expert mode}}]][[{{tr|Treasure Bag}}]]，但目前是[[{{tr|unobtainable}}]]的，因为{{tr|The Ogre}}并不会真正掉落它。
+* {{tr|The Ogre}}只在 3 级中才会掉落[[{{tr|Master Mode}}]]独有的[[{{tr|Ogre's Club}}]]{{tr|item}}——2 级不会掉落。这与[[{{tr|Dark Mage}}]]相反，后者会在 1 级''和'' 3 级中掉落{{tr|Master Mode}}独有的[[{{tr|Dark Mage's Tome}}]]。
+* 除了{{tr|the Master Mode}}独有掉落物[[{{tr|Ogre Trophy}}]]和[[{{tr|Creeper Egg}}]]外，{{tr|the Ogre}}的所有战利品掉落都'''不受'''[[{{tr|Luck}}]]影响，这与大多数不常见战利品掉落不同。因此，它们将始终以所列掉落率掉落。<ref name="ogredrops"/>
+** {{tr|The Master Mode}}独有的掉落物（{{tr|the Ogre's Club}}和[[{{tr|Ogre Relic}}]]）以及{{tr|the Ogre Trophy}}''受''{{tr|Luck}}影响，与其他同类物品一样。但是，{{tr|the Creeper Egg}}''只''在 3 级中''受''{{tr|Luck}}影响，2 级中''不受''影响。
+* {{wikipedia|ogre|{{tr|ogre}}（Ogre）}}是一种传说中的怪物，通常被描绘为一种巨大、丑陋的人形生物，吃普通人类，尤其是婴儿和儿童。在神话中，{{tr|ogres}}通常被描绘为非人地高大、有不成比例的大头、毛发浓密、肤色异常、食欲旺盛、身体强壮。
+{{bestiary}}
+
+== 图库 ==
+<gallery>
+DD2 Teaser 6.gif|{{tr|An Ogre}}把它的所有攻击都用了一次，干掉了玩家。
+</gallery>
+
+== 另见 ==
+* {{dd2 link|Ogres|{{tr|Ogres}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 不再掉落{{tr|Squire's Shield and Apprentice's Scarf}}。
+** 将 {{tr|Tier 2 Ogre}}掉落一件武器的几率由 33% 提升至 50%。在{{tr|Expert}}/{{tr|Master mode}}，此几率由 50% 提升至 100%。
+** {{tr|Tier 3 Ogres}}现在也有更高几率掉落武器，由 1/6 提升至 1/4。}}
+{{history|Desktop 1.4.1|现在会像其他主 {{tr|bosses}} 一样在第一次被打败后正确地完成其[[{{tr|Bestiary}}]]条目填充。}}
+{{history|Desktop 1.4.0.1|添加了[[{{tr|Relic}}]]掉落和特殊[[{{tr|Ogre's Club}}|{{tr|pet}}]]。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Ogre}}

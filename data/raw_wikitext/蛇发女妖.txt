@@ -1,0 +1,85 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 480
+| image = Medusa.gif
+| imageother = Medusa Stare.gif
+| imageothercaption = {{tr|Medusa attack}}
+| environment = Marble Cave
+| debuff = Stoned
+| debuffduration = 1–4 seconds
+| Pizza|1|2%
+| Medusa Head|1|4%
+| Pocket Mirror|1|{{modes|2.5%|5%}}
+| sound1 = NPC Killed 17.wav
+| soundcaption1 = 石化
+| hardmode = yes
+}}
+[[File:Medusa (demo).gif|frame|{{tr|Medusa}}将玩家石化。]]
+{{dablink|不要与[[{{tr|Mechdusa}}]]，{{tr|secret world seed}}独有的 {{tr|boss}} 相混淆。}}
+
+'''{{tr|Medusa}}'''是一个[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，可在[[{{tr|Marble Cave}}]]附近找到。她是{{tr|movement speed}}相对较快的近战{{tr|enemy}}，且具有通过凝视施加[[{{tr|Stoned}}]][[{{tr|debuff}}]]的独特能力。此{{tr|debuff}}会对玩家造成 20 / {{expert|40}} / {{master|60}} 伤害{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}并将玩家变为石头。
+* 玩家在此{{tr|debuff}}期间无法移动或使用{{tr|items}}，类似于[[{{tr|Frozen}}]]{{tr|debuff}}。
+* 免除{{tr|Fall damage}}的{{tr|accessories}}被禁用，[[{{tr|fall damage}}]]提高，且产生{{tr|fall damage}}的最小距离降低。
+{{tr|Medusa}}的蛇发（以及她本人）吐出红色舌头，同时伴随着特殊的声音和粒子效果是{{tr|debuff}}的触发时机，并在石化到来前给玩家作出提示。玩家可以通过在动画完成前背对着{{tr|Medusa}}，或让{{tr|Medusa}}的视线被{{tr|solid blocks}}阻挡来避免被石化。
+
+{{tr|Medusa}}的[[{{tr|health}}]]越少，她的{{tr|movement speed}}就越快，类似于[[{{tr|Mummies}}]]。她的{{tr|movement speed}}会由满{{tr|health}}时的 {{mph|1.5 pixels}} 至死亡前的 {{mph|3.5 pixels}} 线性提升。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters|t=其速率（像素每{{tr|tick}}）的公式为 <code>1.5 + (1 - {{tr|health}}百分比) * 2</code>，其中<code>{{tr|health}}百分比</code>是 1 至 0 间的小数。}}
+
+{{Lifeform Analyzer note|她}}
+
+== 备注 ==
+* 被{{tr|Stoned}}时，玩家仍然能使用[[{{tr|recovery potions}}]]，如[[{{tr|Healing Potion}}]]。
+* 若在被{{tr|Stoned}}时正在使用[[{{tr|Hooks}}]]或骑乘[[{{tr|Minecart}}]]，这些状态会被解除，玩家会下落。
+* {{tr|world}}中同一时间只能生成一个{{tr|Medusa}}，除非使用了[[{{tr|Medusa Statue}}]]。
+* 在罕见的情况下，天然生成的{{tr|Medusa Statue}}会和有效的[[{{tr|trap}}]]重叠，使得{{tr|statue}}可被激活。这使得{{tr|trap}}激活时，{{tr|Medusa}}能在[[{{tr|pre-Hardmode}}]]生成，不过它们只会掉落[[{{tr|Medusa Banner}}]]。
+
+== 小贴士 ==
+* 被{{tr|Stoned debuff}}影响的时候是非常危险的：即使{{tr|fall damage}}没有杀死玩家，几秒钟的眩晕也足够让[[{{tr|Hoplite}}]]、[[{{tr|Cave Bat}}]]、[[{{tr|Giant Bat}}]]、以及其他[[{{tr|cavern}}]]{{tr|enemies}}杀死玩家。
+** 请提防{{tr|caverns}}中大而垂直的区域（特别是在[[{{tr|Underground Jungle}}]]和{{tr|player}}制造的[[{{tr|hellevator}}]]中），尤其是附近有{{tr|Marble Cave}}时。原本从中坠落能造成的{{tr|fall damage}}就能轻松杀死即便是游戏末期的玩家。
+* 注意使用大部分{{tr|weapons}}攻击{{tr|Medusa}}时都会让玩家转向她。在她处于攻击范围内之前最好不要与其交战，或使用非常精准的[[{{tr|ranged weapon}}]]，这样就可以通过眩晕锁定使得她无法攻击。
+* 建议在攻击其他{{tr|enemies}}时背朝{{tr|Medusa}}。
+* [[{{tr|Yoyos}}]]、[[{{tr|Magic Missile}}]]、和[[{{tr|Flying Knife}}]]是应对{{tr|Medusa}}的优秀{{tr|weapons}}，因为它们可以从后方或转角处，在{{tr|Medusa}}的视线外进行攻击。[[{{tr|White String}}]]会将{{tr|yoyos}}的触及范围延伸 4 或 5 格。
+** 讽刺的是，[[{{tr|Medusa Head}}]]也是应对{{tr|Medusa}}的优秀{{tr|weapons}}，因为玩家可以在面向另一侧时使用其“凝视”攻击。
+* 即使被{{tr|Stoned}}时，使用[[{{tr|Featherfall Potion}}]]仍然能保护玩家免受{{tr|fall damage}}。
+
+== 花絮 ==
+* 在{{维基百科|Greek mythology|希腊神话}}中，美杜莎/{{tr|Medusa}}（Medusa）是一个{{维基百科|Gorgon|戈耳工}}怪物，通常被描述为头发被活毒蛇代替的带翼人类女性，看到她的脸的人都会变成石头。
+* 单词 ''{{wiktionary|marble}}''（大理石）、''{{wiktionary|Medusa}}''（美杜莎/蛇发女妖）、和 ''{{wiktionary|hoplite}}''（（古希腊）重装步兵）都源自希腊，而在''[[{{tr|Terraria}}]]''中，{{tr|Medusas}}和[[{{tr|Hoplite}}]]都在[[{{tr|Marble Cave}}]]中生成。
+* {{tr|Medusa and the Hoplite}}的对应{{$|banners||enemy}}上都没有呈现出对应{{tr|enemy}}的图像。{{tr|The Medusa and Hoplite Banners}}分别呈现了带有希腊风格图案的蛇和骷髅。
+* 虽然有相似的名称，{{tr|Medusa}}和[[{{tr|Mechdusa}}]]没有任何关系。
+{{bestiary|article=}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** [[{{tr|Pocket Mirror}}]]{{tr|drop rate}}提升至 1/40。{{tr|Expert}}{{tr|drop rate}}提升至 1/20。
+** [[{{tr|Medusa Head}}]]{{tr|drop rate}}提升至 1/25。}}
+{{history|Desktop 1.4.0.1|
+** 现在可被[[{{tr|Lifeform Analyzer}}]]探测到。
+** 现在掉落[[{{tr|Pizza}}]]。}}
+{{history|Desktop 1.3.3|现在有几率掉落[[{{tr|Pocket Mirror}}]]。}}
+{{history|Desktop 1.3.1|
+** {{tr|Health}}由 200 提升至 400。
+** {{tr|Defense}}由 10 提升至 20。
+** 不再石化她上方的玩家。
+** 现在是[[{{tr|Hardmode}}]]独有的，不过仍然可通过激活{{tr|Medusa Statues}}在{{tr|pre-Hardmode}}生成，但不掉落战利品。}}
+{{history|Desktop 1.3.0.4|
+** 现在需要未阻挡的视线才能石化，以阻止隐藏的或屏幕外的{{tr|Medusa}}将玩家石化。
+** 现在在尝试石化时会发出声音和粒子。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|
+** {{tr|Health}}由 200 提升至 400。
+** {{tr|Defense}}由 10 提升至 20。
+** 不再石化她上方的玩家。
+** 现在是[[{{tr|Hardmode}}]]独有的，不过仍然可通过激活{{tr|Medusa Statues}}在{{tr|pre-Hardmode}}生成，但不掉落战利品。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Medusa}}

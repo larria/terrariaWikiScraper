@@ -1,0 +1,60 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Block
+| auto = 3272
+| imagealt = [[File:Hardened Sand Block.png|link=]] [[File:Hardened Ebonsand Block.png|link=]] [[File:Hardened Crimsand Block.png|link=]] [[File:Hardened Pearlsand Block.png|link=]]
+| name = {{tr|Hardened Sand Blocks}}
+| id = 3272, 3274, 3275, 3338
+| idtile = 397, 398, 399, 402
+| cargo = no
+}}
+
+'''{{tr|Hardened Sand Block}}'''是[[{{tr|block}}]]的一种，和[[{{tr|Sandstone Block}}]]一起构成了[[{{tr|Underground Desert}}]][[{{tr|biome}}]]。它看起来类似于[[{{tr|Sand Block}}]]，但有不同的纹理并且颜色略有不同。不像{{tr|sand}}，它不受重力影响。和所有基于{{tr|sand}}的{{tr|blocks}}一样，它有[[{{tr|The Corruption}}|{{tr|Corruption}}]]、[[{{tr|The Crimson}}|{{tr|Crimson}}]]、和[[{{tr|The Hallow}}|{{tr|Hallowed}}]]对应物：分别是'''{{tr|Hardened Ebonsand}}'''、'''{{tr|Hardened Crimsand}}'''、和'''{{tr|Hardened Pearlsand}}'''。
+
+== 类型 ==
+{{options/set|item|mode=table|nolink=y|icons=n}}
+{{item infobox/options|view=table|imagemode=placed|cols=item2cells-nolink/imageplaced/idtile}}
+{| class="terraria lined align-center"
+|-
+! colspan=2 | {{tr|Item}}
+! 放置状态
+! [[{{tr|Tile IDs}}|{{tr|Tile ID}}]]
+|-
+{{item infobox | auto = 3272 | type = Block | tags = plunder}}
+{{item infobox | auto = 3274 | type = Block | tags = plunder}}
+{{item infobox | auto = 3275 | type = Block | tags = plunder}}
+{{item infobox | auto = 3338 | type = Block | tags = plunder / hardmode}}
+|}{{options/reset|item infobox}}{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=Hardened Sand Block/Hardened Ebonsand Block/Hardened Crimsand Block/Hardened Pearlsand Block|expectedrows=4}}
+
+=== 用于 ===
+{{recipes|cate=no|ingredient=Hardened Sand Block/Hardened Ebonsand Block/Hardened Crimsand Block/Hardened Pearlsand Block|expectedrows=13}}
+
+== 备注 ==
+* 在[[{{tr|Hardmode}}]]中，{{tr|Hardened Sand Block}}是一种“可腐化”的{{tr|block}}，可以被转化为腐化版本的{{tr|Hardened Ebonsand}}、{{tr|Hardened Crimsand}}、和{{tr|Hardened Pearlsand}}，并将{{tr|corrupted biome}}蔓延至邻近的可腐化{{tr|blocks}}上。
+* 装备了[[{{tr|Dunerider Boots}}]]的玩家站在任意类型的{{tr|Hardened Sand Block}}上时能够跑的更快。
+
+== 花絮 ==
+* 在 [[1.4.0.1]] 之前，{{tr|Hardened Sand Blocks}}在{{tr|tooltip}}中并不带有{{tr|Material}}标签，因此无法放在[[{{tr|Guide}}]]的菜单栏位中来查看它可用于哪些{{tr|crafting recipes}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|现在可用[[{{tr|Solidifier}}]]制作。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|tooltip}}中引入{{tr|Material}}标签。
+** 添加了各种[[{{tr|Hardened Sand Walls}}]]和{{tr|biome}}[[{{tr|Torches}}]]的{{tr|crafting recipes}}。
+** 被感染的{{tr|Hardened Sands}}现在可以和{{tr|regular Hardened Sand}}一样制作成{{tr|glass}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{-}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Hardened Sand Blocks}}

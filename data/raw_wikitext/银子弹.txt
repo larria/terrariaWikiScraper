@@ -1,0 +1,55 @@
+{{item infobox
+| auto = 278
+| tags = buy / loot / vendor:Arms Dealer
+}}
+[[File:Silver Bullet (demo).gif|thumb|500px|使用中的银子弹，注意其对[[{{tr|Werewolves}}]]造成了3倍伤害。]]
+
+'''{{tr|Silver Bullets}}'''是一种由[[{{tr|guns}}]]使用的[[{{tr|bullet}}]]。它比[[{{tr|Musket Balls}}]]多造成 2 伤害，且略微更快。
+
+{{tr|Silver Bullets}}可从[[{{tr|Arms Dealer}}]]处以每个 {{iteminfo|Silver Bullet|buy}} 的价格购买，或者说每 1000 个 {{buy expr|Silver Bullet|*1000}} 的价格。在[[{{tr|pre-Hardmode}}]]期间，它仅在[[{{tr|Blood Moon}}]]期间（{{eicons|Tungsten Bullet}} 且仅限有[[{{tr|Silver}}]]的{{tr|worlds}}中）被出售，在{{tr|Hardmode}}开始后则总是可用。它们也可以在{{tr|Hardmode}}的[[{{tr|Pot}}]]中代替[[{{tr|Wooden Arrow}}]]被找到、在[[{{tr|Shadow Chest}}]]中找到，或用{{tr|Silver Bars}}制作。
+
+{{alt ore|Tungsten Bullet|eil=y}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Silver Bullet|expectedrows=1}}
+
+== 备注 ==
+* {{eicons|1.4.4}}{{tr|Silver Bullets}}对[[{{tr|Werewolves}}]]造成 3 倍伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{eicons|1.4.0.1|invert=y}} 虽然大多数的{{tr|metal items}}都可以用其{{tr|ore}}代用品制作，但{{tr|Silver Bullets}}并不能由[[{{tr|Tungsten Bar}}]]制作而来。在任何{{tr|world}}中，{{tr|Silver}}都可以通过将[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]、或[[{{tr|Desert Fossil}}]]放入[[{{tr|Extractinator}}]]中的方法得到，也可以作为[[{{tr|Crates}}]]和[[{{tr|Slimes}}|{{tr|Slime}}]]的{{tr|bonus drops}}而获得。
+* 在 {{eil|Drunk world}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中（其中{{tr|Silver and Tungsten}}都会存在），{{tr|the Arms Dealer}}会根据进入{{tr|world}}中两种{{tr|ore}}哪一种较多来出售对应的{{tr|bullet}}。这在{{tr|world}}每次被重新打开时都会重置。
+
+== 小贴士 ==
+* 用从{{tr|Arms Dealer}}处购买而来的{{tr|Musket Balls}}制作{{tr|Silver Bullets}}，成本比直接购买{{tr|Silver Bullets}}要略高一些（''如果''能够直接购买的话）：
+** 在基础价格时（不考虑{{eil|Happiness|NPC happiness}}），{{tr|silver bar}}可以卖出 {{Sell expr|Silver Bar}}，购买 70 个{{tr|musket balls}}需要花费 {{Buy expr|Musket Ball|*70}}。直接购买 70 个{{tr|silver bullets}}会花掉 {{Buy expr|Silver Bullet|*70}}。  
+** 在基础价格时，15 个{{tr|silver bars}}可以卖出 {{Sell expr|Silver Bar|*15}}，购买 999 个{{tr|musket balls}}需要花费 {{Buy expr|Musket Ball|*999}}，而直接购买 999 个{{tr|silver bullets}}需要花掉 {{Buy expr|Silver Bullet|*999 }}。如此一来，直接购买可以省下 {{Buy expr |Musket Ball| *999 + |Silver Bar| * 15 /5 - | Silver Bullet|*999 }}，正好是制作一次所需要的花费。
+** 当{{tr|NPC happiness}}最高时（买价乘以 75%，卖价则乘以 133%），15 个{{tr|silver bars}}可以卖出 {{Sell expr|Silver Bar|*15 * 1.33|round=1}}，购买 999 个{{tr|musket balls}}则需要花费 {{Buy expr|Musket Ball|*999 * 0.75|round=0}}，而直接购买{{tr|silver bullets}}需要花掉 {{Buy expr|Silver Bullet|*999 * 0.75|round=0}}。如此一来，直接购买可以省下 {{Buy expr |Musket Ball| *999 *0.75 + |Silver Bar| * 15 /5 * 1.33 - | Silver Bullet|*999 * 0.75 |round=0}}。
+* 也就是说，在{{tr|Hardmode}}前，需要在[[{{tr|Blood Moon}}]]期间才能购买{{tr|the Silver Bullets}}，而此时{{tr|Arms Dealer}}可能会离得非常远。即使是在他处于{{tr|happiness}}''最高''的状态下，{{tr|player}}在 999 个{{tr|ammo}}上多花的钱也不会多于 {{sc|60}}，若玩家要升级从[[{{tr|Pot}}]]等处收集来的{{tr|musket balls}}花费就更少了。
+
+== 花絮 ==
+* {{eicons|1.4.4}}{{tr|Silver Bullets}}飞行时会发出白色粒子，在碰撞后造成十字型小爆炸（这是纯视觉效果），可能来源自某些神话中银器所具有的神圣性。
+* {{eicons|1.4.4|invert=y}} 尽管民间传说认为{{tr|Silver Bullets}}对{{tr|Werewolves}}有杀伤作用，但在游戏中并非如此。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 内部[[{{tr|Projectile IDs}}]] 由 14 改为 981。
+** 现在对[[{{tr|Werewolf}}|{{tr|Werewolves}}]]造成 3 倍伤害。}}
+{{history|Desktop 1.4.0.1|在含有[[{{tr|Tungsten Ore}}]]的世界中，{{tr|the Arms Dealer}}现在会出售{{tr|Tungsten Bullet}}而非{{tr|the Silver Bullet}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.0.6|{{tr|Silver bullets}}不再拥有蓝色{{tr|rarity}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Bullets}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Silver Bullet}}

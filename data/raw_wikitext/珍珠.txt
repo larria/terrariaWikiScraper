@@ -1,0 +1,52 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4414
+| name = Pearls
+| imagealt = [[File:White Pearl.png|link=]] [[File:Black Pearl.png|link=]] [[File:Pink Pearl.png|link=]]
+| sell =
+| showids = no
+| cargo = no
+}}
+
+'''{{tr|Pearls}}'''是一种[[{{tr|crafting material}}]]，可以通过打开[[{{tr|Oyster}}]]获得，并只能用于制作[[{{tr|Luck Potions}}]]。三种{{tr|pearls}}拥有不同的{{tr|rarities}}，更稀有的可以做出更加强力的{{tr|potion}}。除此之外，[[{{tr|Pink Pearl}}]]在被扔进[[{{tr|shimmer}}]]时也可以变成[[{{tr|Galaxy Pearl}}]]。{{tr|The player}}从每个{{tr|Oyster}}中只能获得一个{{tr|Pearl}}，获得几率总计为 {{chance|1/5}}。
+
+== 类型 ==
+{{options/set|item|icons=n}}{{options/set|item infobox|view=table|cols=item2cells-anchor-nolink/sell/col:chance}}
+{| class="terraria sortable lined align-center"
+! colspan=2 | {{tr|Pearl}}
+! 卖出价
+! 从{{tr|Oyster}}中掉落的几率
+{{item infobox | auto = 4412 | tags = loot / Bag loot
+| col:chance = {{chance|28/225}}
+}}
+{{item infobox | auto = 4413 | tags = loot / Bag loot
+| col:chance = {{chance|14/225}}
+}}
+{{item infobox | auto = 4414 | tags = loot / Bag loot
+| col:chance = {{chance|1/75}}
+}}
+|}{{options/reset|item infobox}}{{options/reset|item}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE % Pearl|expectedrows=3}}
+
+== 小贴士 ==
+* 将{{tr|Black Pearl}}和{{tr|Pink Pearl}}制作成[[{{tr|Luck Potions}}]]总是比直接卖出它们获利更多。计入其他{{tr|materials}}，这样做可以分别将它们的{{tr|sell value}}提高 {{sell expr|Luck Potion|-|Black Pearl|-|Bottled Water|-|Waterleaf|-|Ladybug}} 和 {{sell expr|Greater Luck Potion|-|Pink Pearl|-|Bottled Water|-|Waterleaf|-|Ladybug}}。
+* 玩家应当把第一个{{tr|Pink Pearl}}制作为[[{{tr|Galaxy Pearl}}]]而不是[[{{tr|Greater Lucky Potion}}]]。由于{{tr|Pink Pearl}}非常罕见，获取永久性效果更加有益。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Pink Pearl}}现在可以借助[[{{tr|shimmer}}]]制作为[[{{tr|Galaxy Pearl}}]]。}}
+{{history|Desktop 1.4.3.3|
+** {{tr|Black Pearl}}的{{tr|sell value}}从 {{gc|5}} 降低至 {{gc|3}}。
+** {{tr|Pink Pearl}}的{{tr|sell value}}从 {{gc|25}} 降低至 {{gc|15}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-drop = yes
+}}
+
+{{language info|en=Pearls}}

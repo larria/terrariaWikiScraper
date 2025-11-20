@@ -1,0 +1,78 @@
+{{infobox wrapper|direction=row
+|{{npc infobox
+| auto = 69
+| image = Antlion.gif
+| image2 = Antlion (old).png
+| environment = Desert/Underground Desert
+| Banana Split|1|2%
+| Antlion Mandible|{{inline block|css=line-height:inherit|1–2 {{eicons|1.3.0.1}}<br/>1 {{eicons|1.3.0.1|invert=y}}}}| 33.3% {{eicons|1.3.0.1}}<br/>14.29% {{eicons|1.3.0.1|invert=y}}
+| idprojectile = 31
+| sound1 = Item 5.wav
+| soundcaption1 = 攻击
+}}
+|{{npc infobox
+| variant = yes
+| name = Albino Antlion
+| image2 = <!-- prevent automatic display of "old" image -->
+| damage = 10 {{note|small=y|paren=y|{{gameText|ProjectileName.SandBallFalling}}}} <br/>10 {{note|small=y|paren=y|{{tr|contact}}}}
+| life = 45
+| defense = 6
+| banner = yes
+| money = {{cc|60}}
+| Antlion Mandible|1|14.29%
+| idprojectile = 31
+| id = 1001
+}}
+}}
+
+'''{{tr|Antlion}}'''是一种[[{{tr|enemy}}]]，可在{{tr|day}}出现于[[{{tr|Desert}}]]，也会在任意时间出现于[[{{tr|Underground Desert}}]]。它会头部伸出地面保持静止，当玩家进入它的视线时，它每 3.33 秒会向玩家发射一个{{tr|Sand Ball projectiles}}{{source code ref|v=1.4.2.3|method=Terraria.NPC.AI}}。它只能以向上的角度发射{{tr|projectiles}}（左右各约 45 度角范围内），因此从低处接近的玩家通常在其射击范围之外。{{tr|Sand Balls}}在击中物体时会变为[[{{tr|Sand Blocks}}]]，且会在地面上堆积，类似于[[{{tr|Sandgun}}]]发射的{{tr|projectiles}}。
+
+在{{eversions|Albino Antlion}}中，还会出现其{{tr|variant}}'''{{tr|Albino Antlion}}'''。
+
+== 备注 ==
+* 因为{{tr|Antlion}}会造出{{tr|Sand Blocks}}用于攻击，所以{{tr|sand}}是可再生资源，虽然再生的非常慢。
+* 如果面对着向上的斜坡，{{tr|Antlions}}会缓慢向着玩家爬升。在所有版本上它们都会如此做，这样会防止它们被掩埋。
+* {{tr|The Antlion}}的{{tr|head}}是唯一会承受/造成伤害的部位。因此，瞄准其身体的{{tr|projectiles}}会直接穿透过去。同样，接触{{tr|the Antlion}}的身体的玩家也不会承受伤害。
+
+== 花絮 ==
+* {{tr|Antlion}}基于现实中的{{维基百科|antlion|t={{tr|Antlion}}}}幼虫，它会挖出沙坑来作为其它昆虫的陷阱。{{tr|antlion}}幼虫会向逃跑的猎物扔沙子，让受害者翻落到饥饿的{{tr|antlion}}幼虫所在的坑中央。幼虫长大后，看起来和[[{{tr|Antlion Swarmer}}]]很相似。
+** 由于{{tr|Underground Desert}}中大量存在的{{tr|Antlion enemies}}，以及其漏斗状的入口，可以认为{{tr|Underground Desert}}实际上是一座大型的{{tr|Antlion}}巢穴。
+* {{tr|NPC ID}} 所对应的图像只包含其头部。其身体并非以数字 ID 方式储存，而是用名字：{{code|AntlionBody.xnb}}。
+* {{tr|Antlion}}所发射的{{tr|Sand Ball projectiles}}不会伤害其他{{tr|enemies}}，但{{tr|projectiles}}生成的落沙则可以。
+* “Antlion”普遍被错误地发音为“antillion”，但由于它是基于那种昆虫的，因此可以推论应该像那种昆虫的名称一样发音为“ant-lion”。
+* 这是除玩家之外仅有的两种或三种可以在世界上放置{{tr|block}}的生物之一（另一种是[[{{tr|Snow Balla}}]]，还有一个有争议的[[{{tr|Wall of Flesh}}]]。）
+* {{eicons|Albino Antlion}}{{tr|The Albino Antlion}}是唯一的和原{{tr|enemy}}（除了[[{{tr|Banners (enemy)}}|{{tr|Banner}}]]以外）具有完全相同的属性和掉落物的独有{{tr|variant}}{{tr|enemy}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在有几率掉落{{tr|Banana Split}}。
+** 修复了孤立的{{tr|Antlion sand balls}}会落在{{tr|Dungeon}}里并阻止{{tr|Cultists}}生成的问题
+** 修复了{{tr|Antlions}}会生成在{{tr|background}}是{{tr|sandstone}}的任何地方的问题。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在可能一次掉落最多 2 个{{tr|Antlion Mandibles}}。几率由 {{chance|1/7}} 提升至 {{chance|1/3}}。
+** {{tr|Sprite updated.}}
+** 现在有新的音效。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.1|
+** {{tr|Antlion Mandible}}的掉落率由 {{chance|1 in 10}} 提升到 {{chance|1 in 7}}。
+** 射弹伤害由 20 降至 10。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|添加了来自{{tr|Desktop}} 1.3.0.1 的新音效。移除了{{tr|Albino Antlion}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|添加了来自{{tr|Desktop}} 1.3.0.1 的新音效。移除了{{tr|Albino Antlion}}。（{{icon|ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|移除了{{tr|Albino Antlion}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Antlion}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Antlion}}

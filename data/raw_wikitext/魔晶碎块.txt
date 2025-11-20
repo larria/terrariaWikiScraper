@@ -1,0 +1,49 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3051
+| sounduse = Item 101.wav
+| idprojectile = 493, 494
+| tags = hardmode / Drop
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Crystal Vile Shard (demo).gif|framed|{{tr|The Crystal Vile Shard}}攻击[[{{tr|Target Dummies}}]]。注意它能够穿{{tr|walls}}。]]
+
+{{distinguish|{{tr|Crystal Shard}}}}
+
+'''{{tr|Crystal Vile Shard}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|wand}}]]，有 {{chance|1/4}} 的概率掉落自[[{{tr|Hallowed Mimic}}]]。使用时，它会从{{tr|player}}位置延展出{{tr|crystal spike}}，{{tr|crystal spike}}可穿过[[{{tr|blocks}}]]并无限穿透[[{{tr|enemies}}]]。它还具有 10 点[[{{tr|armor penetration}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* 在使用后，{{tr|Crystal Vile Shard}}总是会生成 7-8 个杆部{{tr|projectiles}}，以及一个头部{{tr|projectile}}。头部造成 125% 基础伤害和{{tr|knockback}}（{{#expr:floor({{iteminfo|Crystal Vile Shard|damage}}*1.25)}} 基础伤害和 {{#expr:{{iteminfo|Crystal Vile Shard|knockback}}*1.25}} 基础{{tr|knockback}}（{{knockback|{{#expr:{{iteminfo|Crystal Vile Shard|knockback}}*1.25}}}}））。{{source code ref|v=1.3.5.3|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle {{=}}{{=}} 4</code> 代码段。}}每个{{tr|projectile}}的长度为两个{{tr|tiles}}，因此此武器具有 16-18 个{{tr|tiles}}。
+
+== 小贴士 ==
+* 它可被认为是[[{{tr|Vilethorn}}]]的上位和[[{{tr|Nettle Burst}}]]的下位。
+* 由于此{{tr|weapon}}相对较低的基础伤害，它会严重受到{{tr|enemy}}{{tr|defense}}的影响。事先附加上[[{{tr|Ichor (debuff)}}|{{tr|Ichor}}{{tr|debuff}}]]可以在一定程度上辅助输出，但还是建议寻找其它武器作为替代。
+* 它的连续击退可以定住部分{{tr|enemies}}，这在一定程度上能够补偿其较近的攻击距离和较低的伤害。
+* {{tr|The Crystal Vile Shard}}对于多体节的{{tr|enemies}}（如[[{{tr|The Destroyer}}]]或[[{{tr|Wyvern}}]]）极为有效，因为它能无限{{tr|piercing}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在拥有 10 点{{tr|armor penetration}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 19 提升至 25。
+** {{tr|projectiles}}停留（以及造成伤害）的持续时间提升了约 70%。}}
+{{history|Desktop 1.3.4.4|修复了{{tr|projectiles}}错误地导致{{tr|liquid}}产生波纹的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Crystal Vile Shard}}

@@ -1,0 +1,391 @@
+<div class="ajaxHide">
+{{for|其他制作得到的类{{tr|brick}}而又未正式归类为{{tr|bricks}}的{{tr|blocks}}|制作出的{{tr|Blocks}}}}
+
+'''{{tr|Bricks}}'''是一类通常有矩形图案的[[{{tr|block}}]]。所有{{tr|Bricks}}在其名称中都有“砖”这个字（不过，[[{{tr|Mudstone Brick}}]]在{{eversions|1.3.1|invert=y|3ds=n}}上叫做{{tr|Mudstone Block}}）。大多数{{tr|bricks}}在[[{{tr|Furnace}}]]或[[{{tr|Work Bench}}]]处制作，但还有一些只能靠探索发现。所有类型的{{tr|brick}}都不受诸如[[{{tr|Grass}}]]的生长或[[{{tr|evil biome}}]]的[[{{tr|Biome spread}}|蔓延]]之类的环境效果影响，[[{{tr|Gray Brick}}]]例外，它上面可能会长出[[{{tr|moss}}]]。出售给 [[{{tr|NPC}}]] 时，任何{{tr|bricks}}都是无价值的。
+
+</div>
+{| class="terraria sortable"
+! width="20%" | {{tr|Brick}}
+! width="10%" | 外观
+! width="20%" | 来源
+! width="10%" | 可被[[爆炸物]]摧毁
+! width="60%" | {{tr|Notes}}
+|-
+| {{item|Gray Brick}}
+| align=center | [[File:Gray Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Gray Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Red Brick}}
+| align=center | [[File:Red Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Red Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Sandstone Brick}}
+| align=center | [[File:Sandstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Sandstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于[[{{tr|Pyramid}}]]找到并掠夺。
+|-
+| {{item|Snow Brick}}
+| align=center | [[File:Snow Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Snow Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 放置时会导致下雪。
+|-
+| {{item|Ice Brick}}
+| align=center | [[File:Ice Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Ice Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Mudstone Brick}}
+| align=center | [[File:Mudstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Mudstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于一些[[{{tr|Jungle Shrine}}]]找到并掠夺。
+|-
+| {{item|Iridescent Brick}}
+| align=center | [[File:Iridescent Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Iridescent Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于一些[[{{tr|Jungle Shrine}}]]找到并掠夺。
+|-
+| {{item|Copper Brick}}
+| align=center | [[File:Copper Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Copper Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Shelf¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Tin Brick}}
+| align=center | [[File:Tin Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Tin Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Shelf¦%'}}
+| align=center | {{yes}}
+| 可以于一些[[{{tr|Jungle Shrine}}]]找到并掠夺。
+|-
+| {{item|Iron Brick}}
+| align=center | [[File:Iron Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Iron Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Lead Brick}}
+| align=center | [[File:Lead Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Lead Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Silver Brick}}
+| align=center | [[File:Silver Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Silver Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Tungsten Brick}}
+| align=center | [[File:Tungsten Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Tungsten Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Gold Brick}}
+| align=center | [[File:Gold Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Gold Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于一些[[{{tr|Jungle Shrine}}]]找到并掠夺。
+|-
+| {{item|Platinum Brick}}
+| align=center | [[File:Platinum Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Platinum Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ebonstone Brick}}
+| align=center | [[File:Ebonstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Ebonstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Crimstone Brick}}
+| align=center | [[File:Crimstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Crimstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Demonite Brick}}
+| align=center | [[File:Demonite Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Demonite Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于围住[[{{tr|Wall of Flesh}}]]掉落品的框处找到并掠夺，仅限于[[{{tr|The Corruption}}|{{tr|Corruption}}]]世界。
+|-
+| {{item|Crimtane Brick}}
+| align=center | [[File:Crimtane Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Crimtane Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于围住[[{{tr|Wall of Flesh}}]]掉落品的框找到并掠夺，仅限于[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界。
+|-
+| {{item|Meteorite Brick}}
+| align=center | [[File:Meteorite Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Meteorite Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Obsidian Brick}}
+| align=center | [[File:Obsidian Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Obsidian Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+| 可以于[[{{tr|Underworld}}]]找到并掠夺。
+|-
+| {{item|Hellstone Brick}}
+| align=center | [[File:Hellstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Hellstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 可以于[[{{tr|Underworld}}]]找到并掠夺。对无防护的玩家造成[[{{tr|Burning}}]]的{{tr|debuff}}。
+|-
+| {{item|Pearlstone Brick}}
+| align=center | [[File:Pearlstone Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Pearlstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Cobalt Brick}}
+| align=center | [[File:Cobalt Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Cobalt Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Mythril Brick}}
+| align=center | [[File:Mythril Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Mythril Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Chlorophyte Brick}}
+| align=center | [[File:Chlorophyte Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Chlorophyte Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Luminite Brick}}
+| align=center | [[File:Luminite Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Luminite Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+
+| {{item|Heavenforge Brick}}
+| align=center | [[File:Heavenforge Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Heavenforge Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Lunar Rust Brick}}
+| align=center | [[File:Lunar Rust Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Lunar Rust Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Astra Brick}}
+| align=center | [[File:Astra Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Astra Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Dark Celestial Brick}}
+| align=center | [[File:Dark Celestial Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Dark Celestial Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Mercury Brick}}
+| align=center | [[File:Mercury Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Mercury Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Star Royale Brick}}
+| align=center | [[File:Star Royale Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Star Royale Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Cryocore Brick}}
+| align=center | [[File:Cryocore Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Cryocore Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Cosmic Ember Brick}}
+| align=center | [[File:Cosmic Ember Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Cosmic Ember Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Rainbow Brick}}
+| align=center | [[File:Rainbow Brick (placed).gif|link=]]
+| 掉落自[[{{tr|Rainbow Slime}}]]。
+| align=center | {{yes}}
+| 在黑暗中发光，并随着时间推移循环变换颜色，可以将此效果传给[[{{tr|waterfall}}]]。
+|-
+| {{item|Aetherium Brick}}
+| align=center | [[File:Aetherium Brick (placed).png|link=]]
+| {{recipes/extract|where=result='Aetherium Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Lava Moss Brick}}
+| align=center | [[File:Lava Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Lava Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+| 在黑暗中会像它的原材料[[{{tr|Lava Moss}}]]一样发光。
+|-
+| {{item|Krypton Moss Brick}}
+| align=center | [[File:Krypton Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Krypton Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|在黑暗中会像它的原材料[[{{tr|Krypton Moss}}]]一样发光。
+|-
+| {{item|Xenon Moss Brick}}
+| align=center | [[File:Xenon Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Xenon Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|在黑暗中会像它的原材料[[{{tr|Xenon Moss}}]]一样发光。
+|-
+| {{item|Argon Moss Brick}}
+| align=center | [[File:Argon Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Argon Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|在黑暗中会像它的原材料[[{{tr|Argon Moss}}]]一样发光。
+|-
+| {{item|Neon Moss Brick}}
+| align=center | [[File:Neon Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Neon Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|在黑暗中会像它的原材料[[{{tr|Neon Moss}}]]一样发光。
+|-
+| {{item|Helium Moss Brick}}
+| align=center | [[File:Helium Moss Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Helium Moss Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|在黑暗中会像它的原材料[[{{tr|Helium Moss}}]]一样发光，并在整个彩虹光谱内循环变色。
+|-
+| {{item|Blue Brick}}
+| align=center | [[File:Blue Brick (placed).png|link=]]
+| 掠夺自蓝[[{{tr|Dungeon}}]]。
+| align=center | {{no}}
+| 要[[{{tr|Nightmare Pickaxe}}]]或[[{{tr|Deathbringer Pickaxe}}]]才能采挖，除非接近{{tr|spawn point}}。
+|-
+| {{item|Green Brick}}
+| align=center | [[File:Green Brick (placed).png|link=]]
+| 掠夺自绿[[{{tr|Dungeon}}]]。
+| align=center | {{no}}
+| 要[[{{tr|Nightmare Pickaxe}}]]或[[{{tr|Deathbringer Pickaxe}}]]才能采挖，除非接近{{tr|spawn point}}。
+|-
+| {{item|Pink Brick}}
+| align=center | [[File:Pink Brick (placed).png|link=]]
+| 掠夺自粉[[{{tr|Dungeon}}]]。
+| align=center | {{no}}
+| 要[[{{tr|Nightmare Pickaxe}}]]或[[{{tr|Deathbringer Pickaxe}}]]才能采挖，除非接近{{tr|spawn point}}。
+|-
+| {{item|Cracked Blue Brick}}
+| align=center | [[File:Cracked Blue Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Cracked Blue Brick'}}
+| align=center | {{yes}}
+| 在蓝[[{{tr|Dungeon}}]]中自然生成。可以被摧毁，但不会掉落其对应的{{tr|item}}形式。像[[{{tr|Sand Blocks}}]]一样受{{tr|gravity}}影响。
+|-
+| {{item|Cracked Green Brick}}
+| align=center | [[File:Cracked Green Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Cracked Green Brick'}}
+| align=center | {{yes}}
+| 在绿[[{{tr|Dungeon}}]]中自然生成。可以被摧毁，但不会掉落其对应的{{tr|item}}形式。像[[{{tr|Sand Blocks}}]]一样受{{tr|gravity}}影响。
+|-
+| {{item|Cracked Pink Brick}}
+| align=center | [[File:Cracked Pink Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Cracked Pink Brick'}}
+| align=center | {{yes}}
+| 在粉[[{{tr|Dungeon}}]]中自然生成。可以被摧毁，但不会掉落其对应的{{tr|item}}形式。像[[{{tr|Sand Blocks}}]]一样受{{tr|gravity}}影响。
+|-
+| {{item|Lihzahrd Brick}}
+| align=center | [[File:Lihzahrd Brick (placed).png|link=]]
+| 掠夺自[[{{tr|Jungle Temple}}]]。
+| align=center | {{no}}
+| 要[[{{tr|Picksaw}}]]才能采挖。
+|-
+| {{item|Solar Brick}}
+| align=center | [[File:Solar Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Solar Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Nebula Brick}}
+| align=center | [[File:Nebula Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Nebula Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Stardust Brick}}
+| align=center | [[File:Stardust Brick (placed).png|link=]]
+|  {{recipes/extract|withresult=y|where=result='Stardust Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Vortex Brick}}
+| align=center | [[File:Vortex Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Vortex Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Copper Brick}}
+| align=center | [[File:Ancient Copper Brick (placed).png|link=]]
+|{{recipes/extract|withresult=y|where=result='Ancient Copper Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Silver Brick}}
+| align=center | [[File:Ancient Silver Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Silver Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Gold Brick}}
+| align=center | [[File:Ancient Gold Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Gold Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Obsidian Brick}}
+| align=center | [[File:Ancient Obsidian Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Obsidian Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Hellstone Brick}}
+| align=center | [[File:Ancient Hellstone Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Hellstone Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Cobalt Brick}}
+| align=center | [[File:Ancient Cobalt Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Cobalt Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Mythril Brick}}
+| align=center | [[File:Ancient Mythril Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Mythril Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Blue Brick}}
+| align=center | [[File:Ancient Blue Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Blue Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Green Brick}}
+| align=center | [[File:Ancient Green Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Green Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+| {{item|Ancient Pink Brick}}
+| align=center | [[File:Ancient Pink Brick (placed).png|link=]]
+| {{recipes/extract|withresult=y|where=result='Ancient Pink Brick' AND ings NOT LIKE '%Wall¦%'}}
+| align=center | {{yes}}
+|-
+|}
+
+<div class="ajaxHide">
+
+== 另见 ==
+* {{item|Palladium Column}}，[[{{tr|Palladium Ore}}]]的{{tr|brick}}类对应物。
+* {{item|Bubblegum Block}}，[[{{tr|Orichalcum Ore}}]]的{{tr|brick}}类对应物。
+* {{item|Titanstone Block}}，[[{{tr|Titanium Ore}}]]的{{tr|brick}}类对应物。
+* {{item|Adamantite Beam}}，[[{{tr|Adamantite Ore}}]]的{{tr|brick}}类对应物。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了 14 种新{{tr|bricks}}。
+** 所有基于{{tr|ore}}的{{tr|bricks}}，制作的比例由 1:1 变为 1:5（1 {{tr|ore}} + 5 {{tr|blocks}} {{=}} 5 {{tr|bricks}}）。
+** {{tr|Pearlstone Brick}}的{{tr|recipe}}更改为与{{tr|Ebonstone}} / {{tr|Crimstone Brick}}一致，制作时使用 2 个{{tr|Pearlstone Blocks}}而非 1 个{{tr|Pearlstone Block}}与 1 个{{tr|Pearlsand}}。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|New bricks}}：{{tr|Iron Brick}}、{{tr|Lead Brick}}、{{tr|Crimstone Brick}}、和{{tr|Lunar Bricks}}。}}
+{{history|Desktop 1.3.1|{{tr|Mudstone Block}}已重命名为{{tr|Mudstone Brick}}。}}
+{{history|Desktop 1.3.0.1|添加了新{{tr|bricks}}：{{tr|Crimtane Brick}}、{{tr|Meteorite Brick}}、{{tr|Chlorophyte Brick}}、{{tr|Luminite Brick}}。}}
+{{history|Desktop 1.2|
+** 大多数{{tr|bricks}}都有了新的、独特的纹理。
+** 添加了新{{tr|bricks}}：{{tr|Sandstone Brick}}、{{tr|Tin Brick}}、{{tr|Tungsten Brick}}、{{tr|Platinum Brick}}、{{tr|Ice Brick}}、{{tr|Ebonstone Brick}}、{{tr|Lihzahrd Brick}}和{{tr|Rainbow Brick}}。}}
+{{history|Desktop 1.1.1|添加了{{tr|Snow Brick}}。}}
+{{history|Desktop 1.1|添加了新{{tr|bricks}}：{{tr|Demonite Brick}}、{{tr|Cobalt Brick}}、{{tr|Mythril Brick}}、{{tr|Pearlstone Brick}}、{{tr|Mudstone Block}}和{{tr|Iridescent Brick}}。}}
+{{history|Desktop-Release|{{tr|Introduced}}了{{tr|Gray Brick}}、{{tr|Red Brick}}、{{tr|Copper Brick}}、{{tr|Silver Brick}}、{{tr|Gold Brick}}、{{tr|Obsidian Brick}}、{{tr|Hellstone Brick}}、{{tr|Blue Brick}}、{{tr|Green Brick}}和{{tr|Pink Brick}}。}}
+
+
+{{Master Template Tiles
+| show-bricks = yes
+}}</div>
+
+{{category|Brick items| }}
+
+{{language info|en=Bricks}}

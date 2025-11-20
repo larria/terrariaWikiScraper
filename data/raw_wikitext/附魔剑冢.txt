@@ -1,0 +1,110 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerEnchantedSwordShrine.png|center]]
+{{float file box|width=12em|title=石中剑<br/>{{tr|Background Objects}}|[[File:Tiles 187 17.png]]|此{{tr|background object}}会位于{{tr|Enchanted Sword Shrine}}的中心。}}
+
+'''{{tr|Enchanted Sword Shrines}}'''是一种特殊地形，会在{{tr|surface}}下方生成一个小洞穴。它有 {{chance|1/3}} 的几率生成一道 1 格宽的直通洞穴顶部的竖井。洞穴的{{tr|background}}由[[{{tr|Flower Wall}}]]组成，中间有一座小土山，两边有[[{{tr|water}}]]。在土山的顶部有石中剑[[{{tr|Objects}}|{{tr|background object}}]]。被摧毁时，它有 {{chance|1/50}} 的几率掉落[[{{tr|Terragrim}}]]，否则会掉落[[{{tr|Enchanted Sword}}]]。
+
+{{tr|The Enchanted Sword Shrine}}会生成在世界外侧三分之二处的[[{{tr|surface}}]]或[[{{tr|underground}}]]{{tr|layers}}中的[[{{tr|dirt}}]]或[[{{tr|stone}}]]地形里面。世界中可能会生成多个{{tr|Enchanted Sword Shrines}}。世界大小越大，{{tr|Enchanted Sword Shrines}}的生成几率越高，但并不保证一定会生成。
+
+== 生成几率 ==
+在[[{{tr|Map size}}|{{tr|small world}}]]中，会尝试生成 1 至 2 次{{tr|Enchanted Sword Shrines}}；中世界中则为 1 至 3 次；大世界中则为 2 至 4 次。每次生成{{tr|Enchanted Sword Shrines}}有 {{chance|1/2}} 的几率成功。以下表格展示了特定数量的{{tr|Enchanted Sword Shrines}}在不同大小的世界中生成的几率。
+{{flexstart|alignitems=start}}
+{{flexstart|item}}
+{| class="terraria"
+|+ {{tr|Small worlds}}
+! 剑冢数量 !! 几率
+|-
+| 0 || {{chance|reduce=n|2/6}}
+|-
+| 1 || {{chance|reduce=n|3/6}}
+|-
+| 2 || {{chance|1/6}}
+|-
+| colspan=2 class=topline | ''平均：0.83''
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria"
+|+ {{tr|Medium worlds}}
+! 剑冢数量 !! 几率
+|-
+| 0 || {{chance|3/14}}
+|-
+| 1 || {{chance|reduce=n|6/14}}
+|-
+| 2 || {{chance|reduce=n|4/14}}
+|-
+| 3 || {{chance|1/14}}
+|-
+| colspan=2 class=topline | ''平均：1.21''
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria"
+|+ {{tr|Large worlds}}
+! 剑冢数量 !! 几率
+|-
+| 0 || {{chance|3/28}}
+|-
+| 1 || {{chance|9/28}}
+|-
+| 2 || {{chance|reduce=n|10/28}}
+|-
+| 3 || {{chance|5/28}}
+|-
+| 4 || {{chance|1/28}}
+|-
+| colspan=2 class=topline | ''平均：1.71''
+|}
+{{flexend|item}}
+{{flexend}}
+
+== 备注 ==
+* 虽然在正常游戏中几乎总是在限制内，{{tr|Enchanted Sword Shrine}}的竖井最多只能向上 1000 个{{tr|tile}}高。
+* {{tr|Enchanted Sword Shrine}}只会罕见地生成在{{tr|surface layer}}下方，最多只会位于{{tr|underground layer}}中 100 格的位置。
+* 虽然{{tr|Enchanted Sword Shrines}}仅在{{eversions|1.3.0.1}}中存在，{{tr|Enchanted Swords}}{{tr|background object}}在所有版本下都可能在世界中散布。
+* {{tr|Enchanted Sword Shrine}}有时会以不寻常的方式生成：
+** 竖井直接通到{{tr|surface}}，非常容易发现。甚至还可能通到[[{{tr|Living Tree}}]]顶部。
+** {{tr|Enchanted Sword Shrine}}本身有时会直接生成在{{tr|surface}}上，没有竖井。
+** 在罕见情况下，竖井的顶端会生成在地下超过 10 格深的位置。
+** {{tr|Enchanted Sword Shrine}}自身可能会生成为部分或全部被[[{{tr|Corrupt}}]]/[[{{tr|Crimson}}]]化。但是，总是会至少有部分竖井是{{tr|dirt}}或未被腐化的{{tr|grass}}。
+** 如果生成在{{tr|surface}}的突出遮盖物下方，竖井会从空中通过。
+
+== 小贴士 ==
+* 竖井可以使用能穿过{{tr|block}}下落的发光微粒发现。
+** 有许多武器能够生成这种类型的微粒，如[[{{tr|Dark Lance}}]]、[[{{tr|Starfury}}]]、[[{{tr|Jester's Arrow}}]]、[[{{tr|Meteor Staff}}]]、[[{{tr|Solar Eruption}}]]、[[{{tr|Zenith}}]]、[[{{tr|Flying Dragon|link=y}}|{{tr|Flying Dragon}}]]、[[{{tr|Flamelash}}]]或各种[[{{tr|explosives (class)}}]]。
+** 部分{{tr|enemy}}的{{tr|projectiles}}也会揭露竖井，如[[{{tr|Goblin Sorcerer}}]]发射的{{tr|projectile}}。
+** 除此之外，召唤部分[[{{tr|mount}}]]时也会提供短暂存在的发光微粒。如果时机正确的话，在落地前激活/解除{{tr|mount}}会让发光微粒向下飞 5-7 个{{tr|tile}}。
+** 能够在玩家按下方向时移动的[[{{tr|light pet}}]]（如[[{{tr|Wisp in a Bottle}}|{{tr|Wisp}}]]{{tr|pet}}，如[[#图库|下方]]图库所示）可以在按下 {{key|down}} 时寻找竖井。
+** [[{{tr|Clentaminator}}]]也可以用于提供光源，但是玩家应当小心别在不想要的地方散播{{tr|biome}}。
+* {{tr|The background object}}在被摧毁时会直接生成物品。因此，玩家可以强行退出游戏来读取之前的存档，重复步骤直至获得想要的物品。
+* 由于世界生成的改动，在不同版本的''[[{{tr|Terraria}}]]''中的[[{{tr|world seeds}}]]并不能通用，因此使用旧版本中包含{{tr|Enchanted Sword Shrine}}的{{tr|seed}}在当前版本创建世界时，并不能保证包含{{tr|Enchanted Sword Shrine}}。如果在网上寻找这样的{{tr|seed}}，记得留意其游戏版本。
+
+== 图库 ==
+<gallery widths="200" heights="200">
+File:Enchanted Sword Shrine map view.png|{{tr|Enchanted Sword Shrine}}的地图视图。
+File:Enchanted Sword Shrine Shaft.png|使用[[{{tr|light pet}}]]寻找竖井。
+File:Shaftless Enchanted Sword Shrine.png|一座在{{tr|surface}}的{{tr|Enchanted Sword Shrine}}，没有竖井。
+File:Living tree sword shrine.jpg|在{{tr|Living Tree}}底部附近的{{tr|Enchanted Sword Shrine}}。
+File:Enchanted Sword Biome.png|{{tr|Enchanted Sword Shrine}}的外观。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.1|在{{tr|world}}中生成的几率变为 2 倍。}}
+{{history|Desktop 1.4.0.1|
+** 掉落的[[{{tr|Arkhalis}}]]被[[{{tr|Terragrim}}]]替代。
+** {{tr|The background object}}总是为石中{{tr|enchanted sword}}，并会掉落{{tr|sword}}。
+** 每个世界中不再保证出现特定数量的{{tr|Enchanted Sword Shrine}}。
+** {{tr|Enchanted Sword Shrine}}不再保证生成竖井，几率降低为 33%。
+** {{tr|Enchanted Sword Shrine}}不再能在{{tr|storage item}}上方生成，且不再会有其它结构在其上方生成。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Biomes}}
+
+[[Category:宝藏室]]
+
+{{language info|en=Enchanted Sword Shrine}}

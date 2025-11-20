@@ -1,0 +1,146 @@
+{{legacy nav tab}}
+{{item infobox
+| name = Biome Chests
+| imagealt =
+<p>[[File:Locked Jungle Chest.png|{{tr|placed Locked Jungle Chest}}|link=]] [[File:Locked Corruption Chest.png|{{tr|placed Locked Corruption Chest}}|link=]] [[File:Locked Crimson Chest.png|{{tr|placed Locked Crimson Chest}}|link=]] [[File:Locked Hallowed Chest.png|{{tr|placed Locked Hallowed Chest}}|link=]] [[File:Locked Ice Chest.png|{{tr|placed Locked Ice Chest}}|link=]] [[File:Locked Desert Chest.png|{{tr|placed Locked Desert Chest}}|link=]]</p>
+<p>[[File:Jungle Chest.png|{{tr|placed Jungle Chest}}|link=]] [[File:Corruption Chest.png|{{tr|placed Corruption Chest}}|link=]] [[File:Crimson Chest.png|{{tr|placed Crimson Chest}}|link=]] [[File:Hallowed Chest.png|{{tr|placed Hallowed Chest}}|link=]] [[File:Ice Chest.png|{{tr|placed Ice Chest}}|link=]] [[File:Desert Chest.png|{{tr|placed Desert Chest}}|link=]]</p>
+| type = Furniture/Storage
+| auto = 1528
+| width = 2 | height = 2
+| hardmode = yes
+| id = 1528–1532, 4712
+| idtile = {{iteminfo|Jungle Chest|tile id}}（18–27），{{iteminfo|Desert Chest|tile id}}（12, 13）
+| cargo = no
+}}
+{{redirect|{{tr|Ice Chest}}|{{tr|Ice biome}}的{{tr|Underground Cabins}}中生成的|{{tr|Frozen Chest}}}}
+
+'''{{tr|Biome Chests}}'''是[[{{tr|Hardmode}}]][[{{tr|Chests}}]]，可在[[{{tr|Dungeon}}]]中找到。除其他杂项{{tr|item}}外，每个{{tr|Chests}}还包含一种特定的稀有而强力的{{tr|weapon}}。虽然在创建{{tr|world}}时就放置了{{tr|Biome Chests}}，但它们最初是被锁定的，只能用对应的[[{{tr|Biome Key}}]]打开，而后者只能在[[{{tr|Hardmode}}]]中得到。
+
+在一个特定的{{tr|world}}中只会产生五个{{tr|Biome Chests}}（每种{{tr|Biome}}一个）。每个都代表着在当前{{tr|world}}中发现的[[{{tr|biome}}]]。虽然总共有六种类型的{{tr|Biome Chests}}，但一个{{tr|world}}仅会包含一个[[{{tr|evil biome}}]]{{tr|chest}}——[[{{tr|Crimson}}]]或[[{{tr|Corruption}}]]变种之一，具体取决于该{{tr|world}}包含哪个{{tr|biome}}。
+
+要打开{{tr|Biome Chests}}，需要进行以下步骤：
+
+# 杀死[[{{tr|Plantera}}]]解除{{tr|Biome Key}}的诅咒，使钥匙可被使用。如果尚未杀死[[{{tr|Plantera}}]]，则{{tr|Biome Keys}}的{{tr|tooltip}}会显示为''“{{gameText|LegacyTooltip.59}}”''。
+# 通过杀死对应{{tr|biome}}中的[[{{tr|enemies}}]]来获得对应的{{tr|Biome Key}}。
+# 返回{{tr|the Dungeon}}，为钥匙找到对应的{{tr|Chest}}。
+
+== 类型 ==
+{{options/set|item|icons=n}}
+{| class="terraria"
+! {{tr|Chest}}
+! {{tr|Key}}
+! 内容
+|-
+| {{item|Jungle Chest|link=|showid=y}} || {{item|Jungle Key}} || {{item|Piranha Gun}}
+|-
+| {{item|Corruption Chest|link=|showid=y}} || {{item|Corruption Key}} || {{item|Scourge of the Corruptor}}
+|-
+| {{item|Crimson Chest|link=|showid=y}} || {{item|Crimson Key}} || {{item|Vampire Knives}}
+|-
+| {{item|Hallowed Chest|link=|showid=y}} || {{item|Hallowed Key}} || {{item|Rainbow Gun}}
+|-
+| {{item|Ice Chest|link=|showid=y}} || {{item|Frozen Key}} || {{item|Staff of the Frost Hydra}}
+|-
+| {{item|Desert Chest|link=|showid=y}} || {{item|Desert Key}} || {{item|Desert Tiger Staff}}
+|}{{options/reset|item}}<!--
+
+// store loot data to cargo:
+-->{{loot|style=display:none|item=Jungle Chest
+| Piranha Gun|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+-->{{loot|style=display:none|item=Corruption Chest
+| Scourge of the Corruptor|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+-->{{loot|style=display:none|item=Crimson Chest
+| Vampire Knives|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+-->{{loot|style=display:none|item=Hallowed Chest
+| Rainbow Gun|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+-->{{loot|style=display:none|item=Ice Chest
+| Staff of the Frost Hydra|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+-->{{loot|style=display:none|item=Desert Chest
+| Desert Tiger Staff|1|100%
+| Remnants of Devotion|1|1/2
+}}<!--
+
+-->
+根据{{tr|chests}}所在的高度，其中还包含一些一般物品：
+
+* [[{{tr|Chests|link=y}}#{{tr|Surface loot}}|{{tr|Surface}}]]
+* [[{{tr|Gold Chest|link=y}}#{{tr|Underground}}|{{tr|Underground}}]]
+* [[{{tr|Gold Chest|link=y}}#{{tr|Cavern}}|{{tr|Caverns}}]]
+
+最后，它们有 {{chance|1/2}} 几率包含[[{{tr|Remnants of Devotion}}]]{{tr|painting}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Jungle Chest/Corruption Chest/Crimson Chest/Hallowed Chest/Ice Chest/Desert Chest|expectedrows=6}}
+
+=== 用于 ===
+{{recipes|ingredient=Jungle Chest/Corruption Chest/Crimson Chest/Hallowed Chest/Ice Chest/Desert Chest|expectedrows=6}}
+
+== 备注 ==
+* 由于{{tr|the Desert Chest}}是在 [[1.4.0.1]] 中加入的，因此在此之前生成的{{tr|worlds}}只会有四个{{tr|Biome Chests}}。
+* 在 [[{{tr|Drunk world}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中会同时包含{{tr|Crimson Chest and Corruption Chests}}。
+
+== 成就 ==
+{{achievement|name=Big Booty}}
+
+== 小贴士 ==
+* {{tr|Biome Key}}极端稀有（掉落率为 {{chance|1/2500}}），很可能需要杀几千只{{tr|enemies}}才能拿到一把。如果装备和时间允许，可以在对应{{tr|biome}}建造一个[[指南:刷{{tr|Biome Keys or Key Molds}}|{{tr|Biome Key}}农场]]来更快获取钥匙。
+
+== 花絮 ==
+* 在各个{{tr|Chest}}中发现的{{tr|weapons}}对应了四个职业。[[{{tr|Vampire Knives}}]]和[[{{tr|Scourge of the Corruptor}}]]对应[[{{tr|melee}}]]、[[{{tr|Piranha Gun}}]]对应[[{{tr|ranged}}]]、[[{{tr|Rainbow Gun}}]]对应[[{{tr|magic}}]]、以及[[{{tr|Staff of the Frost Hydra}}]]和[[{{tr|Desert Tiger Staff}}]]对应[[{{tr|Summoning weapons}}]]。
+* 在[[{{tr|Mobile}} 1.3.0.7]] 前，在{{mobile version}}中{{tr|Ice Chests}}可以在{{tr|pre-Hardmode}}作为[[{{tr|Heart Shrine}}]]的一部分获得。
+* {{tr|Crimson Chest}}在电子游戏[[《{{tr|Don't Starve Together}}》]]中以“显眼箱子”（Conspicuous Chest）作为{{tr|crossover}}的一部分出现。
+
+== 另见 ==
+* {{dts link|Conspicuous Chest|显眼箱子}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|introduced=y|patched=y|
+** {{tr|Sprites updated.}}旧外观为：[[File:Jungle Chest (old).png|link=]] [[File:Corruption Chest (old).png|link=]] [[File:Crimson Chest (old).png|link=]] [[File:Hallowed Chest (old).png|link=]] [[File:Ice Chest (old).png|link=]]
+** {{tr|Introduced the Desert Chest}}。
+** “{{tr|Frozen Chest}}”重命名为“{{tr|Ice Chest}}”。}}
+{{history|Desktop 1.3.1|
+** {{tr|Sprites updated.}}旧外观为：[[File:Jungle Chest (pre-1.3.1).png|link=]] [[File:Corruption Chest (pre-1.3.1).png|link=]] [[File:Crimson Chest (pre-1.3.1).png|link=]] [[File:Hallowed Chest (pre-1.3.1).png|link=]] [[File:Ice Chest (pre-1.3.1).png|link=]]
+** 现在用于制作[[{{tr|Trapped Chests}}|{{tr|Trapped Biome Chests}}]]。}}
+{{history|Desktop 1.3.0.1|现在掉落{{tr|Biome Keys}}而非{{tr|Biome Key Molds}}。{{tr|Biome Chests}}只能在击败{{tr|Plantera}}后打开。}}
+{{history|Desktop 1.2.1|{{tr|Biome keys}}现在可以用稀有的{{tr|Hardmode}}掉落物制作。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.3.1 一致。
+** 现在用于制作{{tr|Trapped Biome Chests}}。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|
+** 现在掉落{{tr|Biome Keys}}而非{{tr|Biome Key Molds}}。
+** {{tr|Biome Chests}}只在{{tr|Plantera}}被打败后才能打开。}}
+{{history|Console 1.02|{{tr|Introduced}}，并{{tr|craftable}}。}}
+{{history|Switch 1.0.895.9|
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.3.1 一致。
+** 现在用于制作{{tr|Trapped Biome Chests}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|patched=y|
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.4.0.1 一致。
+** {{tr|Introduced the Desert Chest}}。
+** “{{tr|Frozen Chest}}”重命名为“{{tr|Ice Chest}}”。
+** 现在用于制作{{tr|Trapped Biome Chests}}。}}
+{{history|Mobile 1.3.0.7|
+** 现在掉落{{tr|Biome Keys}}而非{{tr|Biome Key Molds}}。
+** {{tr|Biome Chests}}只在{{tr|Plantera}}被打败后才能打开。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}，并{{tr|craftable}}。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Biome Chests}}
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Biome Chests}}

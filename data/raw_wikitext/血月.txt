@@ -1,0 +1,384 @@
+[[File:BiomeBannerBloodMoon.png|center]]
+{{quotation|[[{{tr|Guide}}]]|{{gameText|LegacyDialog.170}}}}
+{{flavor text|{{gameText|LegacyMisc.8}}}}
+
+'''{{tr|Blood Moon}}'''是一个[[{{tr|event}}]]，会在整个[[{{tr|night}}]]（由下午{{nbsp}}7:30 到早上{{nbsp}}4:30）期间发生，只影响[[{{tr|surface}}]]{{tr|layer}}。
+
+{{tr|Blood Moons}}的发生伴随着[[{{tr|status message}}]]“{{gameText|LegacyMisc.8}}”。世界中所有的[[{{tr|water}}]]，包括位于{{tr|underground}}的，以及[[{{tr|rain}}]]和[[{{tr|Moon phase}}|{{tr|moon}}]]本身都会在此{{tr|event}}期间变为血红色。{{eicons|1.3.0.1}} 玩家位于{{tr|surface layer}}时，屏幕上会应用一层红色的滤镜。
+
+{{tr|The event}}会带来新的更危险的{{tr|enemies}}，也会改变它们的行为和生成条件（见[[#{{tr|Enemies}}|下方]]）。
+
+{{eicons|1.4.0.1}} {{tr|Blood Moon}}期间，在[[{{tr|Beds}}|{{tr|bed}}]]睡觉以加速时间的能力也会被禁用。此外，玩家的[[{{tr|Fishing Power}}]]会增加到 1.1 倍，不过{{tr|fishing}}也会带来新的{{tr|enemies}}。
+
+== 条件 ==
+要让{{tr|Blood Moon}}自然发生，必须满足以下条件{{source code ref|v=1.4.3.6|method=Terraria.Main.UpdateTime_StartNight}}： 
+* 它只会在世界中至少有一名玩家具有超过 120 永久最大[[{{tr|health}}]]时发生。
+* 它只能在[[{{tr|moon phase}}]]不是[[{{tr|new moon}}]]的{{tr|nights}}发生。
+* 如果[[{{tr|Eye of Cthulhu}}]]将会在那一{{tr|night}}生成，它就不会发生。
+** 满足以上条件后，{{tr|a Blood Moon}}有 {{chance|1/9}} 的几率发生。（在 [[Celebrationmk10]] 世界中为 {{chance|1/6}}）
+
+{{eicons|1.4.0.1}} {{tr|A Blood Moon}}可以用[[{{tr|Bloody Tear}}]]在{{tr|night}}手动触发，且无需满足以上条件。
+
+{{tr|Blood Moon}}是否会自然发生是在每个{{tr|night}}的{{ht|{{tr|dusk}}|下午 7:30}}时分决定的。每天夜晚有相等的几率发生{{tr|Blood Moon}}，且即使上个{{tr|night}}曾发生过{{tr|Blood Moon}}，其发生几率也不会改变。有可能连续发生四次或以上的{{tr|Blood Moon}}，且相对地，即使经过数个游戏内周后{{tr|Blood Moon}}也不一定会发生。
+
+== 内容 ==
+{{item/options|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard|class=compact small|type=biome|text=<!--
+	-->{{infocard/mainheading|角色}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em}}<!--
+		-->{{infocard/box|title=任何时间：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|The Groom}}<!--
+			-->|{{item|The Bride}}<!--
+			-->|{{item|Blood Zombie}}<!--
+			-->|{{item|Drippler}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|The Corruption}}|{{tr|Corruption}}]]世界：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corrupt Bunny}}<!--
+			-->|{{item|Corrupt Goldfish}}<!--
+			-->|{{item|Corrupt Penguin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vicious Bunny}}<!--
+			-->|{{item|Vicious Goldfish}}<!--
+			-->|{{item|Vicious Penguin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wandering Eye Fish}}<!--
+			-->|{{item|Zombie Merman}}<!--
+            -->|{{item|Surly Slime}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Clown|size=*0.5}}<!--
+			-->|{{item|Chattering Teeth Bomb}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自在[[{{tr|Hardmode}}]]中[[{{tr|Fishing}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hemogoblin Shark}}<!--
+			-->|{{item|Blood Eel|size=*0.5}}<!--
+			-->|{{item|Dreadnautilus|size=*0.5}}<!--
+			-->|{{item|Blood Squid}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+-->{{infocard/mainheading|独特掉落}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em}}<!--
+		-->{{infocard/box|title={{$|Banners||enemy}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|The Groom Banner}}<!--
+                        -->|{{item|The Bride Banner}}<!--
+			-->|{{item|Corrupt Bunny Banner}}<!--
+			-->|{{item|Corrupt Goldfish Banner}}<!--
+			-->|{{item|Corrupt Penguin Banner}}<!--
+			-->|{{item|Blood Zombie Banner}}<!--
+			-->|{{item|Drippler Banner}}<!--
+                        -->|{{item|Vicious Bunny Banner}}<!--
+			-->|{{item|Vicious Goldfish Banner}}<!--
+			-->|{{item|Vicious Penguin Banner}}<!--
+			-->|{{item|Wandering Eye Fish Banner}}<!--
+			-->|{{item|Zombie Merman Banner}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]{{tr|Banners}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Clown Banner}}<!--
+			-->|{{item|Hemogoblin Shark Banner}}<!--
+			-->|{{item|Blood Eel Banner}}<!--
+			-->|{{item|Dreadnautilus Banner}}<!--
+			-->|{{item|Blood Squid Banner}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Corrupt Bunny}}|{{tr|Corrupt Bunnies}}]]和[[{{tr|Vicious Bunny}}|{{tr|Vicious Bunnies}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bunny Hood}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Corrupt Penguin}}|{{tr|Corrupt Penguins}}]]和[[{{tr|Vicious Penguin}}|{{tr|Vicious Penguins}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Pedguin's set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Windy Day}}]]中的[[{{tr|Corrupt Bunny}}|{{tr|Corrupt Bunnies}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corrupt Bunny Kite}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Windy Day}}]]中的[[{{tr|Vicious Bunny}}|{{tr|Vicious Bunnies}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Bunny Kite}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|the Groom}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Top Hat}}<!--
+			-->|{{item|Brain}}<!--
+			-->}}<!--
+		-->}}<!--
+                -->{{infocard/box|title={{eicons|1.4.4|invert=y}}来自任意{{tr|Enemy}}或 {{tr|NPC}} {{note|(仅在[[{{tr|Hardmode}}]]中掉落)|small=y}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|KO Cannon}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Dreadnautilus}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sanguine Staff}}<!--
+			-->|{{item|Blood Moon Monolith}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Hemogoblin Shark}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Thorn}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Blood Eel}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Drippler Crippler}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|The Bride}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wedding Veil}}<!--
+			-->|{{item|Wedding Dress}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自任意{{tr|Blood Moon Enemy}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bloody Tear}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自任意钓鱼钓到的{{tr|Blood Moon Enemy}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Chum Bucket}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Hemogoblin Shark}}和{{eil|Blood Eel}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Haemorrhaxe}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Wandering Eye Fish}}和{{eil|Zombie Merman}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Rain Bow}}<!--
+			-->|{{item|Vampire Frog Staff}}<!--
+			-->|{{item|Chum Caster}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Drippler}}和{{eil|Blood Zombie}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Money Trough}}<!--
+			-->|{{item|Shark Tooth Necklace}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Clown}}]] {{note|(仅限[[{{tr|Hardmode}}]])|small=y}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bananarang}}<!--
+			-->|{{item|Trifold Map}}<!--
+			-->|{{item|KO Cannon|note2=(只在{{eicons|1.4.4}})}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[植物]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Deathweed Seeds}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Advanced Combat Techniques}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Clothier}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Mime Mask}}<!--
+			-->|{{item|Fallen Tuxedo Shirt}}<!--
+			-->|{{item|Fallen Tuxedo Pants}}<!--
+			-->|{{item|George's set}}<!--
+			-->|{{item|Fabulous set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Zoologist}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Full Moon Squeaky Toy|note=([[{{tr|Hardmode}}]])}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dryad}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vile Powder|note=(如果世界具有的是[[{{tr|The Corruption}}|{{tr|Corruption}}]])|wrap=y}}<!--
+			-->|{{item|Corrupt Seeds|note=(如果世界具有的是[[{{tr|The Corruption}}|{{tr|Corruption}}]])|wrap=y}}<!--
+			-->|{{item|Corrupt Grass Wall|note=(如果世界具有的是[[{{tr|The Corruption}}|{{tr|Corruption}}]])|wrap=y}}<!--
+			-->|{{item|Vicious Powder|note=(如果世界具有的是[[{{tr|The Crimson}}|{{tr|Crimson}}]])|wrap=y}}<!--
+			-->|{{item|Crimson Seeds|note=(如果世界具有的是[[{{tr|The Crimson}}|{{tr|Crimson}}]])|wrap=y}}<!--
+			-->|{{item|Crimson Grass Wall|note=(如果世界具有的是[[{{tr|The Crimson}}|{{tr|Crimson}}]])|wrap=y}}<!--
+			-->|{{item|Sparkly Wings|note=(如果世界是[[{{tr|Hardmode}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Arms Dealer}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Silver Bullet}}<!--
+			-->|{{item|Tungsten Bullet}}<!--
+			-->}}<!--
+		-->}}<!--		
+		-->{{infocard/box|title=来自[[{{tr|Dye Trader}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bloodbath Dye}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Cyborg}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rocket II}}<!--
+			-->|{{item|Cluster Rocket II}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Merchant}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Throwing Knife}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Evil Presence}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Steampunker}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Purple Solution|note=(如果世界具有的是[[{{tr|The Corruption}}|{{tr|Corruption}}]])|wrap=y}}<!--
+			-->|{{item|Red Solution|note=(如果世界具有的是[[{{tr|The Crimson}}|{{tr|Crimson}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Skeleton Merchant}}：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Slap Hand|note=([[{{tr|Hardmode}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em}}<!--
+		-->{{infocard/box|css=margin: 0 0.25em 0.5em;flex:1 1 auto|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Eerie)|mode=image}} {{sound|track=Eerie}}<!--
+			-->|{{item|Otherworldly Music Box (Eerie)|mode=image}} {{sound|track=Eerie (Otherworldly)}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+-->}}<!--
+-->{{item/options|reset}}{{dotlist/options|reset}}
+
+== 影响 ==
+[[File:Blood Moon rain.png|thumb|right|{{tr|Blood Moon}}期间的红雨]]
+
+=== {{tr|Enemies}} ===
+* 在{{tr|surface}}的{{tr|enemies}}[[{{tr|NPC spawning}}#{{tr|Spawn Rates}}|{{tr|spawn rate}}]]有所提高。有几率生成{{eil|Drippler|s}}、{{eil|Blood Zombie|s}}、[[{{tr|The Groom}}]]、{{eil|The Bride}}、和[[{{tr|Clown}}]]（如果在[[{{tr|Hardmode}}]]中）。{{tr|Enemies}}不仅会更快地生成，并且能同时存在于屏幕上的数量也会高于正常。无论何种环境这都有效，比如说，[[{{tr|The Corruption}}]]和[[{{tr|The Crimson}}]]的{{tr|enemies}}也可以比平常更大群。
+* {{tr|Enemies}}甚至可以在 [[{{tr|NPC}}]] 和他们的[[{{tr|house}}]]附近生成，这些地方通常会压制{{tr|enemy}}的生成。在此{{tr|event}}期间，玩家放置的[[{{tr|wall}}]]也不一定安全。
+* [[{{tr|Zombie}}]]和它们的同行能开[[{{tr|Door}}]]。
+* [[{{tr|Goldfish}}]]变为[[{{tr|Corrupt Goldfish}}]]/{{eil|Vicious Goldfish}}、[[{{tr|Bunnies}}]]变为[[{{tr|Corrupt Bunny}}]]/{{eil|Vicious Bunny}}、以及[[{{tr|Penguin}}]]变为[[{{tr|Corrupt Penguin}}]]/{{eil|Vicious Penguin|s}}。从[[{{tr|Statue}}]]中生成的那些也会是{{tr|Corrupt}}/或毒{{eicons|1.3.0.1|small=y}}的，并且在{{tr|Blood Moon}}结束后它们并不会恢复为常规的{{tr|Goldfish}}或{{tr|Bunnies}}。如果在{{tr|event}}期间正在[[{{tr|rain}}|下雨]]，变化的{{tr|Goldfish}}将在地面上扑腾，而非行走。
+
+=== 出售的{{tr|items}} ===
+* [[{{tr|Merchant}}]]会出售[[{{tr|Throwing Knives}}]]。
+* [[{{tr|Arms Dealer}}]]会出售[[{{tr|Silver Bullet}}]]（在{{eversions|1.4.0.1}}中，仅当世界上存在{{tr|silver}}时），以及如果存在{{tr|tungsten}}，还有{{eil|Tungsten Bullet|s}}（[[{{tr|Pre-Hardmode}}]]。在[[{{tr|Hardmode}}]]中，[[{{tr|Arms Dealer}}]]总是会出售{{tr|Silver Bullets}}或{{tr|Tungsten Bullets}}{{eicons|1.4.0.1}}）。
+* [[{{tr|Clothier}}]]会出售[[{{tr|Mime Mask}}]]、{{eil|Fallen Tuxedo Shirt}}和{{eil|Fallen Tuxedo Pants}}。
+** 在{{eversions|George's set}}上，他还会向男性玩家出售[[{{tr|George's set}}]]、向女性玩家出售[[{{tr|Fabulous set}}]]。
+* [[{{tr|Dryad}}]]停止出售[[{{tr|Purification Powder}}]]、[[{{tr|Sunflower}}]]、和[[{{tr|Grass Seeds}}]]。
+** 如果世界是带着[[{{tr|the Corruption}}]]创建的（''或者''她在{{tr|Hardmode}}中位于{{tr|Graveyard}}内），她会出售[[{{tr|Vile Powder}}]]和[[{{tr|Corrupt Seeds}}]]。
+** 如果世界是带着[[{{tr|the Crimson}}]]创建的（''或者''她在{{tr|Hardmode}}中位于{{tr|Graveyard}}内），她会出售{{eil|Vicious Powder}}和[[{{tr|Crimson Seeds}}]]。
+** 在{{eversions|Sparkly Wings}}上，她还会在[[{{tr|Hardmode}}]]中出售[[{{tr|Sparkly Wings}}]]。
+* [[{{tr|Painter}}]]会出售[[{{tr|Paintings}}|{{tr|Evil Presence}}]]{{tr|paintings}}。
+* [[{{tr|Dye Trader}}]]出售[[{{tr|Bloodbath Dye}}]]。
+* [[{{tr|Steampunker}}]]会在存在[[{{tr|the Corruption}}]]时出售[[{{tr|Purple Solution}}]]、在[[{{tr|the Crimson}}]]存在时出售[[{{tr|Red Solution}}]]，而非[[{{tr|Green Solution}}]]。
+* [[{{tr|Cyborg}}]]会出售[[{{tr|Rocket II}}]]{{tr|ammunition}}。
+* [[{{tr|Skeleton Merchant}}]]在[[{{tr|Hardmode}}]]会出售{{eil|Slap Hand}}。
+
+=== 其他影响 ===
+* [[{{tr|Deathweed}}]]会开花。{{tr|Blood moons}}（在{{eversions|1.3.0.1|short}}上还有[[{{tr|Full Moon}}]]）是仅有的你能从{{tr|Deathweed}}收获[[{{tr|Deathweed Seeds}}]]的时间（除非用[[{{tr|Staff of Regrowth}}]]来收割）。
+* 大多数 [[{{tr|NPC}}]] 对此{{tr|event}}都有他们独特的评论话语。
+* [[{{tr|Zoologist}}]] {{eicons|1.4.0.2}} {{tr|NPC}} 不管{{tr|moon phase}}如何都会转化为狐人形态。
+* {{eicons|1.4.0.1}} [[{{tr|Fishing Power}}|{{tr|Fishing power}}]]变为 1.1 倍，可以提供一些独特的物品并生成独特的{{tr|enemies}}，包括[[{{tr|Dreadnautilus}}]]。
+** 通过在{{tr|The Blood Moon}}期间[[{{tr|fishing}}]]生成的{{tr|enemies}}不能够以其他的常规方式生成，这些{{tr|enemies}}掉落的独特物品是在{{tr|The Blood Moon}}[[{{tr|event}}]]中[[{{tr|fishing}}]]的主要收获。能够被直接钓上来的独特物品仅有[[{{tr|Advanced Combat Techniques}}]]。
+* 视觉效果：
+** 几乎所有的水都会变红，包括[[{{tr|Rain}}|雨水]]。例外：{{tr|The Ocean}}不会完全变红，但会受到屏幕滤镜的影响。
+** {{eicons|1.3.0.1}} 还会有一个红色滤镜应用到屏幕上，将所有实体和灯光的颜色转为红色和紫色阴影。 
+** 这也会影响许多武器的{{tr|projectile}}的颜色。
+** 放置的[[{{tr|Living Cursed Fire Block}}]]会变成黄色，让其有了独特的效果。
+** 通常是蓝色的{{tr|The Glowing Mushroom Biome}}会具有红色着色器（shader），这让它看起来呈粉紫色。
+
+== {{tr|Achievements}} ==
+{{achievement|name=Bloodbath}}
+{{achievement|name=Red Moon Rises}}
+
+== 备注 ==
+* {{tr|The Blood Moon}}对{{tr|enemy}}{{tr|spawn rates}}的影响和[[{{tr|Water Candle}}]]与[[{{tr|Battle Potion}}]]叠加。
+* {{tr|Blood Moon}}只影响{{tr|surface}}以上的{{tr|spawn rates}}。{{tr|surface}}以下的{{tr|Spawn rates}}维持不变。{{source code ref|v=1.4.0.5|{{code|Terraria.NPC.cs}} 中的 {{code|SpawnNPC()}} 函数}}
+* 是否会发生{{tr|Blood Moon}}是在每天{{ht|黄昏|下午 7:30}}时确定的。
+* 每次夜幕降临都有均等的几率发生{{tr|Blood Moon}}，并不会因为前一个{{tr|night}}是{{tr|Blood Moon}}而有所改变。有可能会连续发生四次甚至更多次{{tr|Blood Moons}}，相反地，游戏内一段持续很多个星期的时长内也不一定就会出现{{tr|Blood Moon}}。
+* 在[[{{tr|multiplayer}}]]游戏中，用时间调整服务器命令（dawn、noon、dusk、midnight）不会触发{{tr|Blood Moon}}的检测，因此反复用“dusk”并不会强制{{tr|Blood Moon}}发生。
+* [[{{tr|Ocean}}]][[{{tr|biome}}]]中的{{tr|Water}}不会变红，即使所有其他存在于各{{tr|biomes}}中的{{tr|water}}都会。然而，蓝色的{{tr|water}}依然会受到红色着色器的影响，使其呈现紫色。
+* 如果玩家愿意，他们可以通过召唤[[{{tr|Pumpkin Moon}}]]或[[{{tr|Frost Moon}}]]来取消{{tr|Blood Moon}}。
+* {{tr|A Blood Moon}}可以在[[{{tr|Pirate Invasion}}]]中途发生。{{tr|The invasion}}会继续直到结束，然后{{tr|the Blood Moon}}开始。{{tr|A Blood Moon}}也能在[[{{tr|Slime Rain}}]]期间发生。
+* {{tr|Blood Moons}}的发生频率高于[[{{tr|Solar Eclipse}}]]，因为每天都有 {{chance|1/20}} 几率发生{{tr|Solar Eclipses}}（当符合标准时）。
+* 如果{{tr|Blood Moon}}和[[{{tr|Moon phase}}|{{tr|Full Moon}}]]重合，[[{{tr|Werewolf}}|{{tr|Werewolves}}]]会以更高的频率生成，而非{{tr|Zombies}}，但特殊{{tr|Zombies}}依然会生成。
+* 类似于[[{{tr|Solar Eclipse}}]]，一旦进入[[{{tr|Hardmode}}]]中，{{tr|a Blood Moon}}会提升[[{{tr|Truffle Worms}}]]的{{tr|the spawn rate}}。
+* 玩家不能通过睡觉来加快{{tr|Blood Moon}}。
+* 破晓时，所有未被杀死的特殊{{tr|enemies}}都会试图逃离屏幕。<!-- Needs comfirmation - conclusion drawn from personal obervation. -->
+
+== 小贴士 ==
+{{strategies|指南:防御事件}}
+* 只需要在门前放一个{{tr|a block}}就能防止{{tr|zombies}}打开门。
+* 如果玩家看到血月正在升起的通知而装备又不足以打败它，应当尽快进入[[{{tr|underground}}]]。进到室内并不会得救，站在外面更不会。{{tr|The Blood Moon}}为{{tr|enemies}}提供了危险的能力，例如开门。
+* 虽然{{tr|the Blood Moon}}通常被视为致命的事件，但仍可以享受该事件。一旦玩家达到了最大生命值并得到了良好的武器和装备，这些新{{tr|enemies}}就不会构成严重威胁，尤其是如果已经[[指南:基地防御|备好基地]]时。正如{{tr|Tavernkeep}}所说：“{{gameText|BartenderChatter.Chatter_16}}”
+*{{eicons|1.4.0.2}}{{tr|The Blood Moon}}中很适合使用带有[[{{tr|Cursed Inferno}}]]{{tr|debuff}}的武器。从 1.4.1 开始，它的伤害有明显提升，并且大多数{{tr|Blood Moon enemies}}的速度很快，意味着你比正常游戏需要进行更多躲闪，从而让{{tr|Cursed Inferno}}（带着它那随着时间推移造成的伤害）变得更加有用。
+
+== {{tr|Trivia}} ==
+* 在现实中，{{tr|Moon}}在{{wikipedia|lang=en|Lunar eclipse|月食}}期间会呈现红色，有时被称为“{{tr|Blood Moon}}”。当阳光通过大气进入阴影时，由于通过空气的光量，{{tr|Moon}}会呈现红/橙色。这和给予日出日落这种颜色的是相同的现象。
+* 当 2014 年 4 月 14 日发生真正的{{tr|Blood Moon}}时，在官方{{tr|Terraria}}论坛上开玩笑地发布了一个警告。<ref>[http://web.archive.org/web/20160603021926/http://www.terrariaonline.com/threads/the-blood-moon-is-rising.139357/ www.terrariaonline.com → Forums → News → Dev Blog → thread: The Blood Moon is Rising...]</ref>
+* 在{{tr|a Blood Moon}}期间，除[[{{tr|Party Girl}}]]和{{eil|Princess}}外所有女性 [[{{tr|NPC}}]] 都会使用比正常情况更烦燥或更过激的对话。这是暗指现实生活中的一些女性会由于{{wikipedia|lang=en|premenstrual syndrome|经前综合征}}而变得易怒或过激的事实，{{wikipedia|lang=en|menstrual cycle|月经周期}}和现实中的月相周期都是大约 28 天。
+** 女性玩家角色并不受此影响——玩家与 {{tr|NPC}} 之间所有对话在{{tr|blood moons}}时都是正常的，并不会通过 {{tr|NPC}} 来暗示玩家变得更烦躁。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在在{{tr|Blood moon}}时钓鱼有几率钓出[[{{tr|Surly Slime}}]]。}}
+{{history|Desktop 1.4.0.1|
+**{{tr|Blood moon}}现在会提高{{tr|fishing power}}。
+** 添加了[[{{tr|Chum Bucket}}]]，这个物品能提高{{tr|fishing power}}。
+** 添加了 5 个{{tr|new enemies}}：[[{{tr|Blood Eel}}]]、[[{{tr|Zombie Merman}}]]、[[{{tr|Wandering Eye Fish}}]]、[[{{tr|Hemogoblin Shark}}]]和[[{{tr|Dreadnautilus}}]]。
+** {{tr|Enemies}}在{{tr|Blood Moons}}期间会掉落额外的金钱。
+** 现在可以用{{tr|Bloody Tear}}{{tr|summoning item}}来召唤。
+}}
+{{history|Desktop 1.3.0.6|[[{{tr|Dryad}}]]现在在[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|world}}中会出售[[{{tr|Vicious Powder}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 引入了[[{{tr|The Bride}}]]、[[{{tr|Blood Zombie}}]]和[[{{tr|Drippler}}]]，包括它们的[[{{tr|drops}}]]和[[{{tr|banner}}]]。
+** 改进了氛围。
+** 引入了[[{{tr|Skeleton Merchant}}]]，并且在{{tr|Blood Moon}}之夜中会出售[[{{tr|Slap Hand}}]]。
+** [[{{tr|Clothier}}]]在{{tr|Blood Moon}}之夜中会出售[[{{tr|Fallen Tuxedo Shirt}}]]和[[{{tr|Fallen Tuxedo Pants}}]]。}}
+{{history|Desktop 1.2.4|[[{{tr|Rain}}|下雨]]不再会取消{{tr|Blood Moon}}，并且现在会落下血雨。}}
+{{history|Desktop 1.2|
+** 在此{{tr|event}}期间[[{{tr|water}}]]现在会变为血红色。
+** [[{{tr|KO Cannon}}]]现在有几率在此{{tr|event}}中掉落自{{tr|enemies}}。
+**生成自[[{{tr|statue}}]]的[[{{tr|Bunnies}}]]/[[{{tr|Goldfish}}]]不再会在{{tr|Blood Moon}}期间掉落[[{{tr|coins}}]]。}}
+{{history|Desktop 1.1|{{tr|Blood Moon}}的几率从之前的 1/7 几率降低至 1/9。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+{{all versions}}
+[[Category:随机事件]]
+
+{{language info|en=Blood Moon}}

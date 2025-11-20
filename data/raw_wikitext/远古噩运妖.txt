@@ -1,0 +1,41 @@
+{{expert mode only}}
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| image = Ancient Doom.gif
+| auto = 523
+| type = Projectile NPC
+| environment = Dungeon entrance
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|60|180|402}} {{note|small=y|paren=y|{{gameText|ProjectileName.AncientDoomProjectile}}}}
+| idprojectile = 593
+| sound1 = Item 11.wav
+| soundcaption1 = 爆炸
+| hardmode = yes
+| expertonly = yes
+}}
+
+'''{{tr|Ancient Doom}}'''是一个[[{{tr|projectile NPC}}]]，由[[{{tr|Lunatic Cultist}}]]在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]下的一种攻击召唤。此攻击只会在 {{tr|boss}} 低于 50% {{tr|maximum health}}时出现。
+
+{{tr|The Ancient Doom}}最初保持静止且仅在{{tr|contact}}时造成伤害。不过，如果它未被摧毁，在 {{duration|420ticks}}后它会分裂为四个以十字方向飞行的“{{tr|Prophecy's End}}”{{tr|projectiles}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 101</code> 代码段。}}这些{{tr|projectiles}}无法被{{tr|weapons}}摧毁，且造成极高的伤害（尤其是在{{tr|Master Mode}}下）。
+
+== 花絮 ==
+* 尽管它拥有的是[[{{tr|Zombie}}]]或者各种[[{{tr|Slimes}}|{{tr|Slime}}]]的受伤音效，但它的击杀音效用的都是[[{{tr|Ghost (enemy)}}|{{tr|Ghost}}]]或[[{{tr|Wraith}}]]的。 
+** 遵循这种模式，具有不同的受伤音效和击杀音效的另外两种{{tr|enemies}}是[[{{tr|Possessed Armor}}]]和[[{{tr|Mimics}}]]。
+
+== 另见 ==
+* {{eil|Ancient Light}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Ancient Doom}}

@@ -1,0 +1,56 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5395
+| type = Block
+| debuff = Stinky / 3
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Poo}}'''是一种装饰性[[{{tr|block}}]]，可在任意等级的[[{{tr|Well Fed}}]]生效期间，通过坐在[[{{tr|Toilet}}]]上获得。产出{{tr|Poo}}会取消{{tr|food buff}}，所掉落的{{tr|blocks}}数量会随着{{tr|buff}}类型及其剩余{{tr|duration}}改变。一次可获得的最高{{tr|Poo}}数量为 141 个，来自{{tr|buff}}剩余时间为 {{duration|floor(({{iteminfo|Golden Delight|buffTime|raw=y}}-1)/3600)*60}}的[[{{tr|Golden Delight}}]]。
+
+放置后，苍蝇视觉效果会持续在其周围逐渐出现和消失。苍蝇的数量会根据区域内的{{tr|Poo blocks}}的数量改变。此外，{{tr|Poo}}会对所有站在其上的玩家造成 3 秒的[[{{tr|Stinky}}]]。在踩上{{tr|Poo}}时也会产生吧唧声。落在{{tr|Poo}}上不会造成[[{{tr|fall damage}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Poo|expectedrows=2}}
+
+== 备注 ==
+* 如果对{{tr|Poo}}使用[[{{tr|Echo Coating}}]]，只有{{tr|block}}本身受到影响。苍蝇视觉效果仍然可见。
+* {{tr|Poo}}产生所需的时间是随机的，但平均为 {{duration|600 ticks}}。{{source code ref|name=trytopoop|v=1.4.4.9|method=Terraria.Player.TryToPoop}}
+* {{tr|Poo blocks}}的掉落数量等同于{{tr|food buff}}的剩余{{tr|duration}}（单位为分钟，向下取整，但不会少于 1）乘以{{tr|buff}}的因数（{{item|mode=image|size=22px|Well Fed}} 1、{{item|mode=image|size=22px|Plenty Satisfied}} 2、或{{item|mode=image|size=22px|Exquisitely Stuffed}} 3）。<ref name="trytopoop"/>下表列出了每个{{tr|food item}}产生的{{tr|Poo}}的''可能的最大''数量。
+{{collapse top simple|显示表格|隐藏表格}}
+<!--
+-->{{#vardefine:factor_26|1}}<!-- Well Fed
+-->{{#vardefine:factor_206|2}}<!-- Plenty Satisfied
+-->{{#vardefine:factor_207|3}}<!-- Exquisitely Stuffed
+-->{{options/set|item|icons=n}}
+{| class="terraria lined sortable"
+! {{tr|Food item}} !! {{tr|Food buff}} /<br/>最大{{tr|duration}} !! {{tr|Poo blocks}}数量
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=TRIM(itemid)=itemid
+|q?where=buffs HOLDS "Well Fed" OR buffs HOLDS "Plenty Satisfied" OR buffs HOLDS "Exquisitely Stuffed"
+|template=:{{BASEPAGENAME}}/row
+}}
+|}{{options/reset|item}}
+{{collapse bottom simple}}
+
+== 小贴士 ==
+* 可以将{{tr|Poo}}用在[[{{tr|Hellevator}}]]底部来避免死于[[{{tr|fall damage}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|现在会掉落自[[{{tr|Jungle Mimic}}]]。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Poo}}

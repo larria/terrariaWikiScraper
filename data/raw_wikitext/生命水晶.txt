@@ -1,0 +1,84 @@
+{{item infobox
+| auto = 29
+| type = Permanent booster
+| hheal = 20
+| width = 2 | height = 2
+| idtile = 12
+| tags = plunder / bag loot
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Heart}}
+
+'''{{tr|Life Crystal}}'''是一种[[{{tr|Consumables|link=y}}#{{tr|Permanent boosters}}|{{tr|permanent booster}}]]{{tr|item}}，使用后它会永久性地将{{tr|player}}的最大[[{{tr|health}}]]增加 20，即在{{tr|health}}条中增加一颗红色{{tr|heart}}，同时也恢复 20{{nbsp}}{{tr|health}}。
+
+每名玩家最多总共能够使用 15 个{{tr|Life Crystal}}，提升 300 点永久{{tr|health}}值上限（15 颗{{tr|heart}}）。加上玩家初始的 100 点永久{{tr|health}}值上限（5 颗{{tr|heart}}），总共可获得 400 点永久{{tr|health}}值上限（20 颗{{tr|heart}}）。这时无法再使用更多的{{tr|Crystal Heart}}，并且尝试使用不会消耗{{tr|item}}。
+
+{{tr|Life Crystals}}可以在[[{{tr|Underground}}]]{{tr|layer}}及以下的位置天然生成于任意区域，不过它们较为不常见。除了{{old-gen}}版本以外，它们不能在[[{{tr|The Underworld}}]]或[[{{tr|Dungeon}}]]中找到。{{eicons|1.4.0.1}}它们也有 {{chance|1/15}} 的几率掉落自[[{{tr|Golden Crate}}]]或[[{{tr|Titanium Crate}}]]。
+
+在{{tr|world}}变为[[{{tr|Hardmode}}]]，并且通过使用{{tr|Crystal Hearts}}达到最多 400 点{{tr|health}}值后，[[{{tr|Life Fruit}}]]能够用来进一步增加{{tr|health}}值上限，达到最多 500 点{{tr|health}}（20 个{{tr|Life Fruits}}）。
+
+{| class="terraria lined" style="font-size:90%; line-height:1.4;"
+! colspan=2 style="font-size:110%;" | 使用{{tr|Life Crystals}}后
+|-
+| align=center | '''未使用：''' <br/><small>（100 点{{tr|Health}}值）</small> || {{hp|100}}
+|-
+| align=center | '''使用 1 个：''' <br/><small>（120 点{{tr|Health}}值）</small> || {{hp|120}}
+|-
+| align=center | '''使用 15 个：''' <br/><small>（400 点{{tr|Health}}值）</small> || {{hp|400}}
+|}
+
+[[File:Two heart crystals.png|right|thumb|300px|两个{{tr|Life Crystals}}在[[{{tr|Glowing Mushroom biome}}]]中相邻生成。]]
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Life Crystal|expectedrows=5}}
+
+== 备注 ==
+* [[{{tr|World size}}|{{tr|Small world}}]]中最多可生成 {{#expr:floor(4200*1200*2e-5)}} 个{{tr|Life Crystals}}、[[{{tr|World size}}|{{tr|Medium world}}]] {{#expr:floor(6400*1800*2e-5)}} 个、[[{{tr|World size}}|{{tr|Large world}}]] {{#expr:floor(8400*2400*2e-5)}} 个。{{source code ref|v=1.4.1.2|method=Terraria.WorldGen.GenerateWorld}}有时一些{{tr|Life Crystal}}会生成失败，导致{{tr|world}}中的{{tr|Life Crystal}}数量比最大数量略少，但是总数不会超过最大数量。
+* {{tr|The Life Crystal}}不是传统意义上的[[{{tr|healing potion}}]]，因为它只会在未达到 400 最大{{tr|health}}时恢复[[{{tr|health}}]]。
+* 有部分特定{{tr|event}}需要达到某个{{tr|health}}阈值后才会发生。参见[[{{tr|Health}}#{{tr|Notes}}|{{tr|Health}} § {{tr|Notes}}]]获取详细信息。
+
+== 成就 ==
+{{achievement|name=Heart Breaker}}
+
+== 小贴士 ==
+* 在达到 400{{nbsp}}{{tr|health}}之后，多余的{{tr|Life Crystals}}可以出售掉来换[[{{tr|coins}}]]，或者用来制作[[{{tr|Heart Lantern}}]]。
+* 一种简单地寻找{{tr|Life Crystals}}的方法为使用[[{{tr|Spelunker Potion}}]]，因为它们会被[[{{tr|Buffs}}|{{tr|Spelunker buff}}]]高亮显示。
+* [[{{tr|Underground Jungle}}]]是寻找{{tr|Life Crystals}}的好地方，因为这里有很大的开阔空间。[[{{tr|Ice biome}}]]或[[{{tr|Glowing Mushroom biome}}]]是危险度较低的备选。
+
+== 花絮 ==
+* {{tr|Life Crystals}}可以被认为是[[{{tr|Mana Crystal}}]]的{{tr|health}}{{tr|counterpart}}。
+* {{tr|Life Crystals}}是少数明显借鉴了[[{{tr|Stone Block}}]]外观的{{tr|tiles}}，即使是在当前版本中也如此。其它曾是这样的{{tr|blocks}}，如 [[1.2]] 之前的[[{{tr|Ebonstone Block}}]]/[[{{tr|Pearlstone Block}}]]，或者所有 {{eil|1.3.0.1}} 前的{{tr|ores}}，最终都获得了{{tr|sprites}}重制。
+** [[{{tr|Repaired Mana Crystal}}]]也借鉴了{{tr|the Stone Block}}的{{tr|sprite}}，但因为它是在 {{eil|1.3.0.1}} 后引入的，因此这可能是为了与{{tr|Life Crystal}}相一致做出的决定。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** [[{{tr|Metal Detector}}]]探测的{{tr|value}}从 800 降低至 550，使之低于[[{{tr|Hardmode}}]][[{{tr|ores}}]]。
+** 现在用于制作[[{{tr|Repaired Life Crystal}}]]。
+** 现在用于借助[[{{tr|shimmer}}]]制作[[{{tr|Vital Crystal}}]]。}}
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Panic Necklace}}]]。}}  
+{{history|Desktop 1.4.0.1|现在有 {{chance|1/15}} 的几率在通过[[{{tr|fishing}}]]获得的{{tr|Golden Crate}}和{{tr|Titanium Crate}}中找到。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧外观是[[File:Life Crystal (old).png|link=]]。}}
+{{history|Desktop 1.2.3|
+** 修复了{{tr|Life Crystals}}会在非实心区域生成的 {{tr|bug}}。
+** {{tr|Life Crystals}}不再在{{tr|Dungeon}}或{{tr|Underworld}}中生成。}}
+{{history|Desktop 1.2.1.2|现在可用于制作{{tr|Heart Lantern}}。}}
+{{history|Desktop 1.2.0.2|不再会在[[{{tr|Thin Ice}}]]上生成。}}
+{{history|Desktop 1.2|现在用[[{{tr|pickaxe}}]]收集而非[[{{tr|hammer}}]]。}}
+{{history|Desktop 1.1|现在能以 {{coin|1gc 50sc}}的价格卖出。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|因为{{tr|Life Fruit}}的引入，{{tr|hearts}}现在都是红色的，{{tr|health}}值大于等于 220 时，{{tr|hearts}}变得更小，像其它版本一样。金色的{{tr|hearts}}表示{{tr|Life Fruit}}。}}
+{{history|Mobile 1.1.5536|现在能用来达到最大 400 点的{{tr|health}}上限，而不是之前的 200 点。{{tr|health}}值大于等于 220 时，{{tr|hearts}}通过现存的心上的金色层来表示（就像{{tr|player}}已经使用了[[{{tr|Life Fruit}}]]）。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Life Crystal}}

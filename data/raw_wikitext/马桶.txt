@@ -1,0 +1,74 @@
+{{item infobox
+| imagealt = [[File:Toilet.png|link=]]
+| type = Furniture / Mechanism
+| stack = {{iteminfo|358|stack}}
+| placeable = yes
+| width = 1 | height = 2
+| sell = {{iteminfo|Toilet|sell}}<br/>{{iteminfo|Golden Toilet|sell}} （{{tr|Golden Toilet}} / <!--{{iteminfo|Diamond Toilet|sell}}-->{{tr|Diamond Toilet}}）
+| autoswing = yes
+| consumable = yes
+| use = {{iteminfo|358|useTime}}
+| research = 1
+| tooltip = {{itemTooltip|4100}} </i>（{{tr|Cactus Toilet}}）<i><br/>{{itemTooltip|4731}} </i>（{{tr|Terra Toilet}}）
+| idtile = 15, 497
+| cargo = no
+}}
+[[File:Toilet (demo).gif|thumb|{{tr|Toilet}}被[[{{tr|Switch}}]]和[[{{tr|wire}}]]激活。]]
+[[File:Placed Toilets.png|framed|{{tr|Placed}}的{{tr|Toilets}}。点击图片以查看各行的简介。]]
+
+'''{{tr|Toilets}}'''是可被放置在地面上的[[{{tr|furniture}}]]物品。它们与[[{{tr|chairs}}]]相似，并且可被计算为 [[{{tr|NPC}}]] [[{{tr|house}}]]需求中的舒适物品。如果和[[{{tr|Work Bench}}]]或[[{{tr|Table}}]]放置在一起，还能形成较小的多重制作域。但只有（普通）{{tr|Toilet}}和{{tr|Golden Toilet}}被认为是有效的[[{{tr|crafting station}}]]（相当于{{tr|chair}}）。
+
+{{eicons|1.4.4}}{{tr|Toilets}}也是一种可以被[[{{tr|wire}}]]激活的[[{{tr|mechanisms}}]]。当它们被激活时，就像在喷出排泄物。这只是装饰性的纯视觉效果，地面上的排泄物几秒后就会消失。有任何等级的[[{{tr|Well Fed}}]]激活时，坐在它们上面就能产生[[{{tr|Poo}}]]。掉落的{{tr|Poo}}的数量基于{{tr|buff}}的等级和{{tr|duration}}。
+
+目前共有 {{eicons|1.4.4}} 45 / {{eicons|1.4.0.1|invert=y}} 2 种马桶。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|showresultid=y|result=LIKE %Toilet|expectedrows=41|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE %Toilet|expectedrows=2}}
+
+== 不可制作的马桶 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/col:notes}}
+{| class="terraria lined"
+|-
+! colspan=2 | {{tr|Toilet}} !! {{tr|Notes}}
+{{item infobox| auto = 1705 | type = Furniture | tags = drop
+| col:notes = 掉落自[[{{tr|Pirate Invasion}}]]期间的[[{{tr|pirates}}]]。可卖出 {{iteminfo|1705|sell}}。
+}}
+|}{{item infobox/options|reset}}
+
+== 备注 ==
+* {{eicons|1.4.0.1}}类似于[[{{tr|chairs}}]]，对{{tr|toilets}}按下 {{key|open}} 可以坐在上面。坐在除了{{tr|Golden Toilet}}以外的任何{{tr|Toilet}}上时，玩家的[[{{tr|Fishing Power}}]]会提高 5。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetFishingConditions}}
+* （普通）{{tr|Toilet}}和{{tr|Golden Toilet}}对于{{tr|crafting station}}而言相当于{{tr|chair}}。
+
+== 花絮 ==
+* {{eicons|1.4.0.1}}游戏中可获得几种“玩笑性质的”马桶，其中最值得注意的是{{tr|Terra Toilet}}和{{tr|Diamond Toilet}}，其特点为制作成本非常高。
+
+* {{tr|Terra Toilets}}不能被[[{{tr|Shimmer}}]]拆解为原材料，这是因为1.4.4.8之前的[[{{tr|The Jungle Mimic}}]]会掉落{{tr|Terra Toilets}}，防止玩家过早得到[[{{tr|Broken Hero Sword}}]]。
+
+*{{tr|Terra Toilet}}是游戏中唯一一个需要用{{tr|Toilet}}{{tr|craft}}的{{tr|Toilet}},也是唯一一个可以用于{{tr|craft}}的{{tr|Toilet}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Terra Toilets}}不再掉落自[[{{tr|Jungle Mimic}}]]。}}
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Ash Wood Toilet, Balloon Toilet and Reef Toilets}}。
+** 现在坐在{{tr|toilet}}上会提高{{tr|Fishing Power}}。}}
+{{history|Desktop 1.4.2.3|{{tr|Terra Toilets}}现在会掉落自{{tr|Jungle Mimics}}。}}
+{{history|Desktop 1.4.0.5|{{tr|Obsidian Toilet}}现需要 4 个[[{{tr|Obsidian}}]]和 2 个[[{{tr|Hellstone}}]]制作，而不只是 6 个[[{{tr|Obsidian Brick}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Bamboo Toilet}}、{{tr|Blue Dungeon Toilet}}、{{tr|Bone Toilet}}、{{tr|Boreal Wood Toilet}}、{{tr|Cactus Toilet}}、{{tr|Crystal Toilet}}、{{tr|Diamond Toilet}}、{{tr|Dynasty Toilet}}、{{tr|Ebonwood Toilet}}、{{tr|Flesh Toilet}}、{{tr|Frozen Toilet}}、{{tr|Glass Toilet}}、{{tr|Granite Toilet}}、{{tr|Green Dungeon Toilet}}、{{tr|Honey Toilet}}、{{tr|Lesion Toilet}}、{{tr|Lihzahrd Toilet}}、{{tr|Living Wood Toilet}}、{{tr|Marble Toilet}}、{{tr|Martian Toilet}}、{{tr|Meteor Toilet}}、{{tr|Mushroom Toilet}}、{{tr|Nebula Toilet}}、{{tr|Obsidian Toilet}}、{{tr|Palm Wood Toilet}}、{{tr|Pearlwood Toilet}}、{{tr|Pink Dungeon Toilet}}、{{tr|Pumpkin Toilet}}、{{tr|Rich Mahogany Toilet}}、{{tr|Sandstone Toilet}}、{{tr|Shadewood Toilet}}、{{tr|Skyware Toilet}}、{{tr|Slime Toilet}}、{{tr|Solar Toilet}}、{{tr|Spider Toilet}}、{{tr|Spooky Toilet}}、{{tr|Stardust Toilet}}、{{tr|Steampunk Toilet}}、{{tr|Terra Toilet}}、和{{tr|Vortex Toilet}}。
+** 现在{{tr|Players}}可以坐在{{tr|toilets}}上。
+** 可通过[[{{tr|wire}}]]激活并制造一个幽默的喷出排泄物的视觉效果。}}
+{{history|Desktop 1.2.0.3|添加了{{tr|Golden Toilet}}。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Toilets}}

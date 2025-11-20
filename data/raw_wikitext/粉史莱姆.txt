@@ -1,0 +1,96 @@
+{{npc infobox
+| auto = -4
+| image = Pinky.gif
+| type = Slime
+| environment = Forest/Underground/Cavern/Jungle/Slime Rain
+| Gel|1–2|100% {{eicons|Pink Gel|invert=y}} @normal
+| Pink Gel|25–50|100%
+| Slime Staff|1|{{modes|1%|1.4%}}
+|:group:start|{{tr|Bonus drop}}：在{{tr|slime}}的体内可以看到<br/>这些只会掉落其中之一|---------
+|bonusdrop:Swiftness Potion|1|1/560
+|bonusdrop:Ironskin Potion|1|1/560
+|bonusdrop:Spelunker Potion|1|1/560
+|bonusdrop:Mining Potion|1|1/560
+|bonusdrop:Recall Potion|1|3/1120
+|bonusdrop:Wormhole Potion|1|3/1120
+|bonusdrop:Torch|5–10|1/320
+|bonusdrop:Bomb|2–6|1/320
+|bonusdrop:Rope|20–45|1/320
+|bonusdrop:Heart|1|1/320
+|bonusdrop:Copper Ore|3–13|1/640
+|bonusdrop:Tin Ore|3–13|1/640
+|bonusdrop:Iron Ore|3–13|1/640
+|bonusdrop:Lead Ore|3–13|1/640
+|bonusdrop:Tungsten Ore|3–13|1/640
+|bonusdrop:Silver Ore|3–13|1/640
+|bonusdrop:Gold Ore|3–13|1/640
+|bonusdrop:Platinum Ore|3–13|1/640
+|bonusdrop:Copper Coin|50–99|1/240
+|bonusdrop:Silver Coin|20–99|1/240
+|bonusdrop:Gold Coin|1–2|1/240
+|:group:end|---------|---------
+}}
+
+'''{{tr|Pinky}}'''是一种稀有[[{{tr|Slime}}]]，偶尔在[[{{tr|Forest}}]][[{{tr|biome}}]]、[[{{tr|Jungle}}]]以及[[{{tr|Underground}}]]和[[{{tr|Cavern}}]][[地层|层]]中生成，很难发现。虽然它的大小很小，但{{tr|Pinky}}的[[生命值]]和[[{{tr|defense}}|防御力]]比几乎所有其他[[{{tr|pre-Hardmode}}]]的{{tr|slimes}}都要高，但它的伤害和[[击退]]都是游戏中最低的之一。它也是{{eil|Pink Gel}}的唯一来源。
+
+{{Royal Gel note|Pinky}}
+
+{{slime bonus drops}}
+
+{{Lifeform Analyzer note}}{{tr|The Pinky}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的{{tr|banner}}，而非通常的 50 击杀。
+
+== 备注 ==
+* {{tr|Pinky}}有 {{chance|1/180}} 的几率取代以下列表中的{{tr|Slime}}生成：{{source code ref|v=1.4.4.9|method=Terraria.NPC.SetDefaultsFromNetId|field=Terraria.ID.NPCID&#46;NetIdMap}}{{#arraydefine:slimes|1,-3,-6,-7,-8,-9,-10|,}}
+{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:slimes|
+|@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}
+}}
+{{itemlist/end}}
+* 不像其他{{tr|Slimes}}，它有 {{chance|1/100}} / {{expert|{{chance|1/70}}}} 几率掉落[[{{tr|Slime Staff}}]]。
+* {{eicons|Windy Day}} 在[[{{tr|Windy Day}}]]期间，{{tr|Pinky}}连在[[{{tr|Windy Balloon}}]]上生成。
+
+== 成就 ==
+{{achievement|name=Pretty in Pink}}
+{{achievement|name=Gelatin World Tour}}
+{{achievement|name=Slimer}}
+
+== 小贴士 ==
+* 尝试寻找{{tr|Pinky}}的最佳时机是{{eil|Slime Rain}}[[{{tr|event}}]]期间，因为{{tr|Slimes}}的{{tr|spawn rate}}大大增加了。
+* 它所掉落的大量[[{{tr|coins}}|金钱]]使其在游戏早期成为一个非常有价值的{{tr|enemy}}，尤其是对于吸引[[{{tr|Merchant}}]]前来城镇而言。
+* {{eicons|Pink Gel}} {{tr|Pinky}}掉落的{{tr|The Pink Gel}}还可用于制作[[{{tr|Pink Torch}}]]。这又能制作成[[{{tr|Peace Candle}}]]。此物品在游戏早期可能会很有用，因为它能降低{{tr|enemy}}{{tr|spawn rate}}。
+* 因为{{tr|Pinky}}是最小的{{tr|Slime}}，在像[[{{tr|Underground}}]]之类的黑暗区域中用[[{{tr|Hunter Potion}}]]对于寻找或探测它们会非常有用。
+
+== 花絮 ==
+* {{tr|Pinky}}的击退抗性和{{eil|Golden Slime|Golden Slime}}并列游戏中最低，甚至比没有翅膀的[[{{tr|Slimer}}]]还要脆弱两倍。
+** {{tr|Pinky and the Golden Slime}}是游戏中仅有的在{{eil|Master Mode}}中拥有负{{tr|knockback resistance}}的{{tr|enemies}}。
+{{bestiary|article=}}
+:* 这里提到的它吃掉钱的习惯体现在其掉落的大量{{tr|coins}}上。
+
+== 历史 ==
+{{history|Desktop 1.3.0.4|现在会正确地作为一种稀有生物出现在[[{{tr|Lifeform Analyzer}}]]中。}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落新引入的{{tr|Pink Gel}}。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|
+** 现在有几率掉落[[{{tr|Slime Staff}}]]。}}
+{{history|Desktop 1.0.5|现在能浮在液体上，并且在接触[[水|水面]]时不会发出溅水的声音。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 现在会掉落新引入的{{tr|Pink Gel}}。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Console-Release|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.0.5 引入。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** 现在会掉落新引入的{{tr|Pink Gel}}。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Mobile-Release|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.0.5 引入。}}
+{{history|3DS-Release|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.0.5 引入。}}
+
+{{Slimes}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Pinky}}

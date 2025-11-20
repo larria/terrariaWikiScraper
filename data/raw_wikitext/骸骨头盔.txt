@@ -1,0 +1,41 @@
+{{exclusive|1.4.3}}
+{{expert mode only}}
+{{item infobox
+| auto = 5100
+| idprojectile = 964
+| tags = Treasure Bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Bone Helm (demo).gif|frame|{{tr|The Bone Helm}}攻击[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Bone Helm}}'''是一件[[{{tr|Expert Mode}}]]的[[{{tr|Accessories}}]]，可以从[[{{tr|Deerclops}}]]掉落的[[{{tr|Treasure Bag}}]]中获得。装备时，它会召唤{{tr|Shadow Hand projectile}}来攻击[[{{tr|enemies}}]]。{{tr|Shadow Hands}}会在离{{tr|enemies}}一段距离处生成，然后飞向它们，穿过路径上的任何物体，包括{{tr|block}}。它们的飞行行为和{{tr|Deerclops}}战斗中的{{tr|Shadow Hands}}相同，会直线飞行或者在飞行时尖锐地转弯。
+
+每个{{tr|Shadow Hand}}具有 18 {{tr|base damage}}和 20 [[{{tr|armor penetration}}]]。它最多可以穿透 2 个{{tr|enemies}}，在击中第三个时消失，并且{{tr|projectile}}每穿透一个{{tr|enemy}}，下一击就会有 15% 的{{tr|damage}}惩罚。{{source code ref|v=1.4.3.6|method=Terraria.Player.SpawnHallucination / Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* {{tr|The Bone Helm}}应对 {{tr|tier 1}}的[[{{tr|Old One's Army}}]]很有效，因为{{tr|Shadow Hands}}可以穿透许多{{tr|enemies}}，并且会以[[{{tr|Etherian Wyvern}}]]为目标。
+* 和其他被动攻击的{{tr|accessories}}一样，它在进行轻松的任务，如[[{{tr|Fishing}}]]或挂机刷怪时很有用。
+
+== 花絮 ==
+* 它是第三件被动攻击{{tr|accessory}}，其它两件为[[{{tr|Volatile Gelatin}}]]和[[{{tr|Spore Sac}}]]。所有这些物品都是{{tr|Expert Mode}}独有，但只有{{tr|Bone Helm}}能在[[{{tr|pre-Hardmode}}]]获得。
+* 虽然是一件{{tr|accessory}}，{{tr|Bone Helm}}的{{tr|sprite}}会覆盖在玩家的{{tr|helmet slot}}中的任何物品。
+* 其{{tr|tooltip}}参考了《[[{{tr|Don't Starve Together}}]]》中，{{iwlink|dts|Willow}}对{{tr|Bone Helm}}的检查话语。
+
+== 另见 ==
+* {{dts link}}
+
+== 历史 ==
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Bone Helm}}

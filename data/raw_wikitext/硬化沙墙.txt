@@ -1,0 +1,52 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| name = Hardened Sand Walls
+| imagealt = <p>[[File:Hardened Sand Wall.png|{{tr|Hardened Sand Wall}}的{{tr|item sprite}}]] [[File:Hardened Ebonsand Wall.png|{{tr|Hardened Ebonsand Wall}}的{{tr|item sprite}}]] [[File:Hardened Crimsand Wall.png|{{tr|Hardened Crimsand Wall}}的{{tr|item sprite}}]] [[File:Hardened Pearlsand Wall.png|{{tr|Hardened Pearlsand Wall}}的{{tr|item sprite}}]]</p><li><p>[[File:Hardened Sand Wall (placed).png|放置状态的{{tr|Hardened Sand Wall}}]] [[File:Hardened Ebonsand Wall (placed).png|放置状态的{{tr|Hardened Ebonsand Wall}}]]</p><p>[[File:Hardened Crimsand Wall (placed).png|放置状态的{{tr|Hardened Crimsand Wall}}laced]] [[File:Hardened Pearlsand Wall (placed).png|放置状态的{{tr|Hardened Pearlsand Wall}}]]</p></li>
+| imagebreak = yes
+| auto = 3340
+| id = 3340–3343, 5375
+| idwall = 216–219 ([[{{tr|Unsafe wall}}]]), 304–307 ([[{{tr|Safe wall}}]]) {{eicons|1.4.0.1|small=y}}
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 3340 }}<!--
+-->{{item infobox | view = void | auto = 3341 }}<!--
+-->{{item infobox | view = void | auto = 3342 }}<!--
+-->{{item infobox | view = void | auto = 3343 }}<!--
+-->{{item infobox | view = void | auto = 5375 }}
+
+'''{{tr|Hardened Sand Wall}}'''、'''{{tr|Hardened Ebonsand Wall}}'''、'''{{tr|Hardened Crimsand Wall}}'''和'''{{tr|Hardened Pearlsand Wall}}'''是一类[[{{tr|background walls}}]]，可作为[[{{tr|Unsafe wall}}]]发现于[[{{tr|Underground Desert}}]]。{{tr|Underground Deserts}}默认生成的是普通的{{tr|Hardened Sand Wall}}，但分别可在暴露于[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]和[[{{tr|Hallow}}]]的情况下转换为相应的版本。转化后的{{tr|Hardened Sand Walls}}还可以进一步扩散这种转化。参见[[{{tr|Biome spread}}#{{tr|Background Walls}}|{{tr|biome spread}}]]以获取更多信息。不安全的{{tr|Hardened Sand Walls}}在被摧毁时不会掉落为{{tr|items}}，只能通过制作的方法获得。被{{tr|player}}所放置的{{tr|walls}}会被作为[[{{tr|safe wall}}]]处理。
+
+'''{{eil|nl=y|Treacherous Hardened Sand Wall}}'''是用于放置不安全的{{tr|Hardened Sand Wall}}的{{tr|item}}。它们在视觉上一致，可以通过将{{tr|Hardened Sand Wall}}扔进{{eil|Shimmer}}的方法获得。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE %Hardened % Wall|expectedrows=5}}
+
+=== 用于 ===
+{{recipes|ingredient=%Hardened % Wall|expectedrows=5}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|the Treacherous Hardened Sand Wall}}。
+** {{tr|Hardened Sand Wall}}现在用于借助[[{{tr|shimmer}}]]制作{{tr|the Treacherous Hardened Sand Wall}}。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|crafting recipes}}。}}
+{{history|Desktop 1.3.1|{{tr|Inventory}}{{tr|sprites updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced}}，但{{tr|unobtainable}}。}}
+{{history|Console 1.4.4|添加了{{tr|Treacherous Hardened Sand Wall}}。}}
+{{history|Console 1.4.0.5.4.1|添加了{{tr|crafting recipes}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced}}{{verify}}，但无法制作，使用来自{{tr|Desktop}} 1.3.1 的{{tr|sprites}}。（{{icon/xboxone}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced}}{{verify}}，但无法制作，使用来自{{tr|Desktop}} 1.3.1 的{{tr|sprites}}。（{{icon/ps4}}）}}
+{{history|Switch 1.4.4|添加了{{tr|Treacherous Hardened Sand Wall}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}{{verify}}，但无法获得。}}
+{{history|Mobile 1.4.4|添加了{{tr|Treacherous Hardened Sand Wall}}。}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|crafting recipes}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced}}，但{{tr|unobtainable}}。}}
+
+{{Shimmering Exclusive Items}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Hardened Sand Walls}}

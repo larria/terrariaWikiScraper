@@ -1,0 +1,56 @@
+{{item infobox
+| name = Stained Glass
+| type = Wall
+| imagealt = 
+<p>[[File:Purple Stained Glass.png]] [[File:Yellow Stained Glass.png]] [[File:Yellow Stained Glass (old).png]] [[File:Blue Stained Glass.png]] [[File:Green Stained Glass.png]]</p>
+<p>[[File:Red Stained Glass.png]] [[File:Red Stained Glass (old).png]] [[File:Multicolored Stained Glass.png]] [[File:Multicolored Stained Glass (old).png]] [[File:Orange Stained Glass.png]]</p>
+<li><p>[[File:Purple Stained Glass (placed).png]] [[File:Yellow Stained Glass (placed).png]] [[File:Blue Stained Glass (placed).png]]</p><p>[[File:Green Stained Glass (placed).png]] [[File:Red Stained Glass (placed).png]] [[File:Multicolored Stained Glass (placed).png]]</p>
+<p>[[File:Orange Stained Glass (placed).png]]</p></li>
+| imagebreak = yes
+| auto = 1267
+| sell = {{eicons|1.4.3.3}}：<br/>{{iteminfo|Purple Stained Glass|sell}}（紫）<br/>{{iteminfo|Yellow Stained Glass|sell}}（黄）<br/>{{iteminfo|Blue Stained Glass|sell}}（蓝）<br/>{{iteminfo|Green Stained Glass|sell}}（绿）<br/>{{iteminfo|Multicolored Stained Glass|sell}}（五彩）<br/>{{iteminfo|Red Stained Glass|sell}}（红）<br/>{{iteminfo|Orange Stained Glass|sell}}（橙)<br/>{{eicons|1.4.3.3|invert=y}}：{{sc|5}} (所有)
+| id = 1267-1272, 4260
+| idwall = 88-93, 241
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 1267 }}<!--
+-->{{item infobox | view = void | auto = 1268 }}<!--
+-->{{item infobox | view = void | auto = 1269 }}<!--
+-->{{item infobox | view = void | auto = 1270 }}<!--
+-->{{item infobox | view = void | auto = 1271 }}<!--
+-->{{item infobox | view = void | auto = 1272 }}<!--
+-->{{item infobox | view = void | auto = 4260 }}
+
+'''{{tr|Stained Glass}}'''是一系列的用[[{{tr|gems}}]]和[[{{tr|Glass Wall}}]]制作而来的[[{{tr|walls}}]]。它们可以发挥普通{{tr|Glass Wall}}的作用，还可以根据其颜色改变射来的阳光的颜色。{{tr|Multicolored Stained Glass}}会使阳光在光谱的颜色中循环变幻，就像[[{{tr|Rainbow Brick}}]]一样，只不过更暗。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|cate=force|link=no|result=LIKE % Stained Glass|expectedrows=7}}
+
+== {{tr|Tips}} ==
+* {{eicons|1.4.3.3|invert=y}} 相较于直接卖{{tr|gems}}，把{{tr|gems}}做成{{tr|Stained Glass}}后再卖掉的利润更高，因为它的材料价格相较更低。
+* 一种能让前景[[{{tr|glass}}]]看起来像{{tr|Stained Glass}}的简单方法是将玻璃[[{{tr|Paint}}|漆]]成深色 。
+
+== {{tr|Trivia}} ==
+* [[{{tr|Diamond}}]]是唯一没有对应{{tr|Stained Glass}}的宝石，可能是因为它是白色的。
+* 尽管[[{{tr|amber}}]]有自己对应的{{tr|Stained Glass}}，它并不在{{tr|Multicolored Stained Glass}}的配方里。这可能是因为{{tr|Orange Stained Glass}}在 {{eil|1.4.0.1}} 才被引入，而{{tr|Multicolored Stained Glass}}在 [[1.2]] 就被加入了。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.3.3|所有种类的{{tr|Stained Glass}}的{{tr|sell price}}降低。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Orange Stained Glass}}。}}
+{{history|Desktop 1.3.1|{{tr|Inventory sprites updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Inventory}}{{tr|sprites updated}}，对应{{tr|Desktop}} 1.3.1。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Inventory}}{{tr|sprites updated}}，对应{{tr|Desktop}} 1.3.1。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Gems}}
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Stained Glass}}

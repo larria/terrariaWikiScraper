@@ -1,0 +1,83 @@
+[[File:Black Belt (demo).gif|right|frame|玩家使用[[{{tr|Black Belt}}]]{{tr|dodge}}来自[[{{tr|Skeleton}}]]的攻击。]]
+
+'''{{tr|Dodge}}'''是消除[[{{tr|damage}}]]的效果。它会将玩家受伤时通常会施加的负面影响完全地无效化，这包括伤害本身、[[{{tr|knockback}}]]、和任何新施加的[[{{tr|debuffs}}]]。一些{{tr|items}}提供在受伤时激活{{tr|dodge}}的几率（或必定激活）。
+
+几乎所有伤害来源都可以被{{tr|dodge}}，包括[[{{tr|enemy}}]]攻击，如[[{{tr|thorny bushes}}]]、[[{{tr|traps}}]]、或[[{{tr|lava}}]]等环境危险，以及[[{{tr|fall damage}}]]。来自{{tr|debuffs}}的{{tr|Damage}}和其他间接伤害来源无法被{{tr|dodge}}。
+
+== 来源 ==
+{{options/set|item|mode=table}}
+{| class="terraria lined"
+! colspan="2" | 来源 !! {{tr|Dodge}}几率
+|-
+| {{item|Brain of Confusion|note2=（无[[{{tr|Cerebral Mindtrick}}]]{{tr|debuff}}时）}} || {{chance|1/6}}
+|-
+| {{item|Black Belt}}
+| rowspan=2 | {{chance|1/10}}
+|-
+| {{item|Master Ninja Gear}}
+|-
+| {{item|Holy Protection}}
+| rowspan=2 | {{tr|buff}}激活时必定触发
+|-
+| {{item|Shadow Dodge}}
+|}{{options/reset|item}}
+
+== 例外 ==
+部分伤害来源是不可{{tr|dodge}}的：{{tr|dodge}}效果不会触发，玩家会正常受到来自这些攻击的伤害（和其他负面影响）。
+
+=== {{tr|Enemy}}攻击 ===
+{{exclusive|1.4.4|section=y}}
+以下{{tr|enemy}}的部分或所有攻击不可{{tr|dodge}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.IsDamageDodgeable / Terraria.Projectile.IsDamageDodgable}}
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria lined"
+! colspan=2 | {{tr|enemy}} !! 不可{{tr|dodge}}的攻击
+|-
+| {{item|Skeleton}}
+|
+* 尝试打开[[{{tr|Tall Gate}}]]时的所有攻击
+|-
+| {{item|Dungeon Guardian|size=30px}}
+|
+* 所有攻击
+|-
+| {{item|Empress of Light|size=60px}}
+|
+* {{tr|daytime}}时的{{tr|contact damage}}
+* 伤害不少于 9999 的{{tr|projectile}}（即{{tr|enrage}}状态下的{{tr|projectile}}）
+|}{{options/reset|item}}
+
+=== 其他 ===
+* [[{{tr|Drowning}}]]
+* 造成持续伤害的[[{{tr|Debuffs}}]]，如[[{{tr|On Fire!}}]]
+* 试图逃离[[{{tr|Wall of Flesh}}]]（[[{{tr|Horrified}}]]）
+* [[{{tr|Chaos State}}]]激活时使用[[{{tr|Rod of Discord}}]]
+
+== 备注 ==
+* 进行{{tr|dodge}}会提供 {{duration|80 ticks}}所有类型的[[{{tr|invincibility frame}}]]。装备[[{{tr|Cross Necklace}}]]{{tr|or its upgrades}}时，{{tr|Invincibility frame}}时长提升至 {{duration|120 ticks}}。
+* 反弹伤害的效果（[[{{tr|Thorns}}]]{{tr|buff}}、[[{{tr|Turtle armor}}]]、和[[{{tr|Cactus armor}}]]）在攻击被{{tr|dodge}}时依然会正常触发。
+* {{tr|Black Belt}}/{{tr|Master Ninja Gear}}和{{tr|Brain of Confusion}}的{{tr|dodge}}优先级高于{{tr|Holy Protection}}。如果在{{tr|Holy Protection buff}}激活时，这些{{tr|items}}成功地产生了{{tr|dodge}}，则此{{tr|buff}}会被保留以应对下次受击。{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}
+* 来自[[{{tr|Paladin's Shield}}]]和[[{{tr|Companion Cube}}]]{{tr|buffs}}的伤害可以被{{tr|dodge}}。
+
+== 小贴士 ==
+* 来自{{tr|Brain of Confusion}}的闪避几率与来自{{tr|Black Belt or Master Ninja Gear}}的闪避几率可以叠加，最终闪避几率约为 {{chance|1/4}}。<!-- 1/10 (Black Belt dodge success) + 9/10*1/6 (Black Belt dodge fail, Brain of Confusion dodge success) -->不过，{{tr|The Black Belt and Master Ninja Gear}}无法叠加。
+** （平均）每四次攻击消除一次的能力在{{tr|defense}}不足以无效化高伤害的情况下非常有帮助，例如[[{{tr|Master Mode}}]]。对于高速移动或者发射大量{{tr|projectiles}}的 [[{{tr|bosses}}]]，这也会让战斗变得显著更容易。
+
+== 花絮 ==
+* 在 [[{{tr|PvP}}]] 中，尽管会正常受到{{tr|damage}}（和其他负面影响），{{tr|dodge}}来自其他玩家的攻击仍然会触发视觉效果。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** “一击必杀”的攻击现在不能通过{{tr|dodge}}效果来避免了。
+** 在普通{{tr|Skeletons}}试图打开{{tr|Tall Gate}}时，其伤害无法被{{tr|dodge}}效果所{{tr|dodge}}。}}
+{{history|Desktop 1.4.1|修正了被{{tr|dodge}}的攻击依然会对玩家造成{{tr|debuff}}的问题。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Brain of Confusion}}现在提供{{tr|dodge}}效果。
+** 移除了{{tr|Shadow Dodge}}；其效果现在由{{tr|Holy Protection}}提供。}}
+{{history|Desktop 1.2|{{tr|Introduced}}{{tr|Shadow Dodge, Black Belt, and Master Ninja Gear}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Dodge}}

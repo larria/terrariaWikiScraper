@@ -1,0 +1,99 @@
+<includeonly><!--
+
+-->{{#vardefine:cvh:anchor|{{{anchor|{{{v|}}}}}}}}<!--
+-->{{#if:{{#var:cvh:anchor}}||<!-- if there is neither $anchor nor $v
+	-->{{#forargs:v-|_|version|<!-- then get the version from the first $v-<platform> parameter
+			-->{{#vardefine:cvh:anchor|{{#var:cvh:anchor|{{#var:version}}}}}}<!--
+	-->}}<!--
+-->}}<!--
+--><tr id="{{#var:cvh:anchor}}"><!--
+
+--><td><!--
+	-->{{#if:{{{v|}}}|<!--
+		-->{{#lstmaptemp:{{{platform|}}}|icon|/|&thinsp;}} <b>{{{v}}}</b><!--
+	-->|<!--
+		// iterate over all parameters starting with "v-"
+		-->{{#lstsep:{{#forargs:v-|platform|version|{{#if:{{#var:version}}|<!--
+			// print platform icons and platform version, platform icons might be multiple (e.g. if the parameter name is "$v-ps3-xbox360")
+			-->{{#lstmaptemp:{{#var:platform}}|icon|-|&thinsp;}} <b>{{#var:version}}</b><!--
+		-->¤‡}}}}|¤‡|<br/>}}<!-- #lstsep to remove the trailing "<br/>"
+	-->}}<!--
+	-->{{#if:{{{name|}}}|{{note|block=y|small=y|{{{name}}}}}}}<!--
+--></td><!--
+
+--><td><!--
+	-->{{#if:{{{date|}}}|<!--
+		-->{{ucfirst:{{date|date={{{date}}}}}}}<!--
+		-->{{#or:{{{rawref|}}}|{{#if:{{{ref|}}}|{{#tag:ref|{{{ref}}}}}}}}}<!--
+	-->|<!--
+		// there is no $date, so there are likely multiple dates
+		-->{{#if:{{{ref|}}}|<!--
+			// store the name and content of the $ref for later use
+			-->{{#vardefine:commonref_name|cvh{{#vardefineecho:_cvh:counter|{{#expr:{{#var:_cvh:counter}}+1}}}}}}<!--
+			-->{{#vardefine:commonref_content|{{{ref}}}}}<!--
+		-->}}<!--
+		// iterate over all parameters starting with "date-"
+		-->{{#lstsep:{{#forargs:date-|platform|date|{{#if:{{#var:date}}|<!--
+			// print platform icons and platform date, platform icons might be multiple (e.g. if the parameter name is "$date-ps3-xbox360")
+			-->{{#lstmaptemp:{{#var:platform}}|icon|-|&thinsp;}} {{ucfirst:{{date|date={{#var:date}}}}}}<!--
+			// if there is a specific $rawref or $ref for this platform, print it
+			-->{{#if:{{{rawref-{{#var:platform}}|}}}{{{ref-{{#var:platform}}|}}}|<!--
+				-->{{#or:{{{rawref-{{#var:platform}}|}}}|{{#tag:ref|{{{ref-{{#var:platform}}|}}}}}}}<!--
+			-->|<!--
+				// otherwise, print the $rawref or $ref for all platforms
+				-->{{#or:{{{rawref|}}}|{{#if:{{{ref|}}}|<!--
+					-->{{#tag:ref|{{#var:commonref_content}}|name={{#var:commonref_name}}}}<!--
+					-->{{#vardefine:commonref_content|}}<!-- only put the ref content in the first <ref>, reuse the ref afterwards
+				-->}}}}<!--
+			-->}}<!--
+		-->¤‡}}}}|¤‡|<br/>}}<!-- #lstsep to remove the trailing "<br/>"
+	-->}}<!--
+--></td><!--
+
+--><td><!--
+	-->{{#if:{{{note|}}}|<i>{{{note}}}</i>}}<!--
+	-->{{#if:{{{changes|}}}|<!-- the linebreaks here are necessary because {{collapse top/bottom}} (which transclude a table) would break otherwise -->
+{{{changes|}}}
+}}<!--
+--></td><!--
+
+--></tr><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+It takes multiple parameters:
+
+{| class="terraria"
+! Name !! Description
+|-
+| {{code|anchor}} || Name of the anchor for this table row. Defaults to the value of the {{code|$v}} parameter, so it is unnecessary in most cases.
+|-
+| {{code|v}} || Name of the update, i.e. version number.
+|-
+| {{code|platform}} || The mobile platforms on which the update was released, separate multiple with a slash ({{code|/}}). See [[Template:Icon#All valid icons|Template:Icon]] for all recognized platform names.
+|-
+| {{code|name}} || "Trivial name" of the update, e.g. "Hotfixes". Will be displayed in small gray text.
+|-
+| {{code|date}} || Date of the release, in the format {{code|YYYY/MM/DD}}, e.g. "{{#time:Y/m/d}}".
+|-
+| {{code|ref}} || Link to a source for the release date, e.g. via {{tl|code=y|forums thread}}.
+|-
+| {{code|rawref}} || Custom wikitext for the reference, will not be wrapped in a <code>&lt;ref&gt;</code> tag like {{code|$ref}}. Can be used, for instance, if there are multiple references. Takes precedence over {{code|$ref}}, should both be specified.
+|-
+| {{code|note}} || Text that will be displayed in italics at the top of the "Changes" cell.
+|-
+| {{code|changes}} || Details about the update. Should be wrapped in {{tl|code=y|collapse top}}/{{tl|code=y|collapse bottom}}, unless there are only a few sentences.
+|}
+
+It is possible that an update was released under different names or on different dates on the different platforms. To reflect this, append the platform name(s) to the {{code|$v}}, {{code|$date}}, {{code|$ref}}, and {{code|$rawref}} parameters with a hyphen, i.e. <code>$v-&lt;platform&gt;</code>, <code>$date-&lt;platform&gt;</code>, etc. The platform names must be valid as per [[Template:Icon#All valid icons|Template:Icon]], and multiple are to be separated with another hyphen. If the non-platform-specific {{code|$v}} or {{code|$date}} parameters are specified, then the respective platform-specific ones have no effect.
+
+例如：若更新“1.4.49550 (301272)”于 2024 年 3 月 13 日发布，则使用如下代码：
+<pre>
+| v = 1.4.49550 (301272)
+| date = 2024/03/13
+| ref = {{taptap thread|517376440937743245|(相关的 TapTap 贴子）}}
+</pre>
+
+{{zh only}}
+</noinclude>

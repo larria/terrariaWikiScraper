@@ -1,0 +1,193 @@
+{{exclusive|Tortured Soul}}
+{{npc infobox|boxwidth=18em
+| auto = 441
+| type = NPC
+| environment = The Underworld/Valid house
+| Classy Cane|1|12.5%
+| imageother = Map Icon Tax Collector.png
+| imageothercaption = Map Icon
+| hardmode = yes
+}}
+[[File:Tax Collector (purified).gif|frame|玩家用[[{{tr|Purification Powder}}]]净化了[[{{tr|Tortured Soul}}]]。|326x326px]]
+
+'''{{tr|Tax Collector}}'''是个[[{{tr|Hardmode}}]] [[{{tr|NPC}}]]，他向其他入住[[{{tr|House}}]]的 {{tr|NPCs}} 收税来为玩家赚取[[{{tr|coins}}]]。最初遇见时，他是[[{{tr|Tortured Soul}}]]（一个稀有[[{{tr|Underworld}}]][[{{tr|enemy}}]]）。对其使用[[{{tr|Purification Powder}}]]后，它会变成{{tr|the Tax Collector}}。如果{{tr|Tortured Soul}}被杀死，它之后仍能重生；如果{{tr|Tax Collector NPC}} 被杀死，只要有空余[[{{tr|house}}]]，他会在一段时间后再次入住。
+
+当{{tr|the Tax Collector}}在场时，现实中的每分钟（游戏中的每小时）能从每个住在{{tr|House}}中的 {{tr|npc}} 身上收取 {{cc|50}}（包括{{tr|the Tax Collector}}本身，但不包括[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]、[[{{tr|Skeleton Merchant}}]]、和{{eil|town pets}}）。{{tr|Tax Collector}}会将这些资金存起来，上限为 {{gc|25}}。这些数值在 {{eil|Celebrationmk10}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中会翻倍（即每个 {{tr|NPC}} {{sc|1}} 和 {{gc|50}} 上限）。{{source code ref|v=1.4.4.9|method=Terraria.Player.CollectTaxes}}和他对话能查看当前存款数额，并有提款的选项。在{{eversions|1.4.0.1}}中，他的税款上限（以及他目前的资金''和''他每分钟收多少钱）随着他的当前[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|happiness}}]]而变化；因此，每分钟他收的钱在 {{coin|33cc}} 到 {{coin|66cc}} 之间，而其钱数上限则是 {{coin|16.6666gc}} 到 {{coin|33.3333gc}} 之间。{{source code ref|v=1.4.0.5|method=Terraria.Main.GUIChatDrawInner|t=注意税额转换为浮点数之后再除以当前[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|happiness}}价格调整系数]]，然后再截断为整数；因此，举个例子，{{coin|25gc}} 除以 {{red|'''150%'''}} 价格修正系数，由于截断，会得到 {{coin|16.6666gc}}。}}
+
+和其他{{tr|town NPCs}} 不同，{{tr|the Tax Collector}}免疫[[{{tr|lava}}]]，这很可能是因为他由{{tr|Tortured Soul}}转化而来。{{source code ref|v=1.4.4.9|method=Terraria.NPC.Collision_LavaCollision}}
+
+{{tr|The Tax Collector}}会用他的[[{{tr|Classy Cane}}|{{tr|cane}}]]攻击附近的{{tr|enemy}}来自卫。
+
+== {{tr|Living preferences}} ==
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{NPC shimmered form|Tax Collector|male}}
+{{-}}
+== 备注 ==
+* 在有 20 个{{tr|town NPCs}} 的常规{{tr|world}}中，{{tr|the Tax Collector}}每分钟能收到 {{sc|10}}，游戏中每一天能收 {{gc|2.40}}。
+* {{tr|The Tax Collector}}是 {{eil|Don't dig up}} {{tr|worlds}}的起始 {{tr|NPC}}，也是 {{eil|Get fixed boi}} {{tr|worlds}}的起始 {{tr|NPCs}} 之一。
+* 其资金随时可以被提取，没有最小存款额要求。
+* 当{{tr|the Tax Collector}}得到了最大存款额时，他就不再收税了，直到玩家将钱取走。
+* 使用[[{{tr|Enchanted Sundial}}]]而流逝的时间也计入他收的税额中。
+* 使用{{eil|Journey Mode}}{{tr|time menu}}经过的{{tr|time}}也计入他收的税额中。
+* [[{{tr|Multiplayer}}]]中，每个玩家赚取的税收是独立维护的，提取并不会影响到其他玩家的收益。
+* {{tr|The Tax Collector}}能用[[{{tr|King Statue}}]]传送。
+* 他不会参加{{eil|Party|s}}，甚至不会戴上{{tr|party hat}}。但是，他却仍然可能举办{{tr|a party}}。
+* {{tr|The Tax Collector}}在从{{tr|Tortured Soul}}变回自身时会维持着对他造成的[[{{tr|debuffs}}]]，以及他（在[[{{tr|Expert Mode}}]]）之前所捡起来的所有掉落的{{tr|coin}}。
+
+== 小贴士 ==
+* 搜索{{tr|a Tortured Soul}}时，确保已经取消所有{{tr|minions}}，这样它们就不会将它杀死。注意，如果{{tr|minions}}意外把{{tr|Tortured Soul}}杀掉了，它会像任何其他{{tr|enemy}}一样重生。
+* 在首次前往击杀[[{{tr|Wall of Flesh}}]]时带上一些[[{{tr|Purification Powder}}]]，能让玩家几乎在刚开始{{tr|Hardmode}}时就立即招募{{tr|Tax Collector}}，甚至还要早于返回{{tr|surface}}或破坏[[{{tr|altars}}]]。
+* 在游戏进程的大部分时间中，让{{tr|Tax Collector}}的{{tr|happiness}}最大化的唯一方法是将他和[[{{tr|the Merchant}}]]和[[{{tr|Party Girl}}]]一起放到{{tr|the Snow Biome}}中；不幸的是，这会让这两个 {{tr|NPC}} 都变得不快乐。在更后期，可以用{{eil|Princess}}代替{{tr|Party Girl}}。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.365}}”
+* “{{gameText|LegacyDialog.366}}”
+* “{{gameText|LegacyDialog.369}}”
+* “{{gameText|LegacyDialog.368}}”
+* “{{gameText|LegacyDialog.364}}”
+* “{{gameText|LegacyDialog.367}}”
+
+'''[[{{tr|Merchant}}]]存在时：'''
+* “{{gameText|LegacyDialog.374|x_Merchant=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|LegacyDialog.372|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|LegacyDialog.371|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''[[{{tr|Demolitionist}}]]存在时：'''
+* “{{gameText|LegacyDialog.373|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+'''[[{{tr|Rain}}|下雨]]时 {{eicons|1.4.0.1|small=y}}：'''
+* “{{gameText|TaxCollectorSpecialText.Rain1}}”
+* “{{gameText|TaxCollectorSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|TaxCollectorSpecialText.Storm1}}”
+* “{{gameText|TaxCollectorSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|TaxCollectorSpecialText.Windy1}}”
+* “{{gameText|TaxCollectorSpecialText.Windy2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|TaxCollectorSpecialText.Graveyard1}}”
+* “{{gameText|TaxCollectorSpecialText.Graveyard2}}”
+
+'''当{{tr|player}}点击“收集”并收到钱时：'''
+* “{{gameText|LegacyDialog.380}}”
+* “{{gameText|LegacyDialog.381}}”
+* “{{gameText|LegacyDialog.382}}”
+* “{{gameText|LegacyDialog.383}}”
+
+'''当{{tr|player}}点击“收集”且没有钱可收时：'''
+* “{{gameText|LegacyDialog.390}}”
+* “{{gameText|LegacyDialog.391}}”
+* “{{gameText|LegacyDialog.392}}”
+* “{{gameText|LegacyDialog.393}}”
+* “{{gameText|LegacyDialog.394}}”
+* “{{gameText|LegacyDialog.395}}”
+* “{{gameText|LegacyDialog.396}}”
+* “{{gameText|LegacyDialog.397}}”
+* “{{gameText|LegacyDialog.398}}”
+* “{{gameText|LegacyDialog.399}}”
+* “{{gameText|LegacyDialog.400}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_TaxCollector.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_TaxCollector.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_TaxCollector.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_TaxCollector.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_TaxCollector.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_TaxCollector.HateCrowded}}”
+
+'''在[[{{tr|Snow biome}}]]中时：'''
+* “{{gameText|TownNPCMood_TaxCollector.LikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在[[{{tr|the Hallow}}]]中时：'''
+* “{{gameText|TownNPCMood_TaxCollector.DislikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_TaxCollector.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Merchant}}]]时：'''
+* “{{gameText|TownNPCMood_TaxCollector.LoveNPC|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''靠近[[{{tr|Party Girl}}]]时：'''
+* “{{gameText|TownNPCMood_TaxCollector.LikeNPC|x_NPCName=&lt;{{tr|Party Girl}}的名字&gt;}}”
+
+'''靠近[[{{tr|Demolitionist}}]]时：'''
+* “{{gameText|TownNPCMood_TaxCollector.DislikeNPC|x_NPCName=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Mechanic}}]]时：'''
+* “{{gameText|TownNPCMood_TaxCollector.DislikeNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+
+'''靠近[[{{tr|Santa Claus}}]]时：'''
+* “{{gameText|TownNPCMood_TaxCollector.HateNPC|x_NPCName=&lt;{{tr|Santa Claus}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_TaxCollector.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Tax Collector}}参考了{{维基百科|Charles Dickens|t=查尔斯·狄更斯}}的故事{{维基百科|b=y|A Christmas Carol|t=圣诞欢歌}}中的艾比尼泽·斯克鲁奇（Ebenezer Scrooge）。斯克鲁奇是个贪婪、暴躁的老人，拄着拐杖、戴着大礼帽、络腮胡、还驼背。{{tr|The Tax Collector}}的很多话语都参考了此故事。此外，这也是他喜欢{{tr|the Snow biome}}、不喜欢{{tr|Christmas}}并讨厌{{tr|Santa Claus}}的原因。
+** [[{{tr|Guide}}]]的话语：“{{gameText|GuideChatter.Chatter_1|x_TaxCollector=&lt;{{tr|Tax Collector}}的名字&gt;}}”参考了斯克鲁奇在见证了自己未来的死亡后改过自新。
+** 他的话语“{{gameText|LegacyDialog.400}}”参考了斯克鲁奇被三个圣诞精灵所拜访，一夜之间改变了主意的情节。
+** 他对[[{{tr|The Party Girl}}]]的评价：“{{gameText|TownNPCMood_TaxCollector.LikeNPC|x_NPCName=&lt;{{tr|Party Girl}}的名字&gt;}}”以及[[{{tr|credits}}]]动画中与[[{{tr|Santa Claus}}]]和好的情节，可见他最后与斯克鲁奇一样改变了自己。
+** {{tr|The Tax Collector}}不参加{{eil|Party}}{{tr|event}}，不会换上{{tr|party hat}}；这可能是另一处对斯克鲁奇的引用，因为他也不庆祝{{tr|Party}}。
+{{float file box|[[File:Tax Collector (without hat).png]]&emsp;[[File:Tax Collector (without hat) (Shimmered).png]]|不戴帽子的{{tr|Tax Collector}}<br/>（左侧：常规；右侧：[[#{{tr|Shimmered form}}|{{tr|Shimmered form}}]]）}}
+::* 虽说如此，{{tr|the Tax Collector}}在游戏文件中仍有不戴帽子的外观。
+* {{tr|The Tax Collector}}的备选名字全部都是著名的美国政治家，其中大多数都曾担任总统或副总统。
+* 他的很多话都参考了使用十进制单位之前的英国货币的口语名称，比如{{维基百科|shilling|t=先令}}。
+* 话语“{{gameText|LegacyDialog.372|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”可能是引用了后末日虚构小说{{维基百科|b=y|Metro 2033|t=地铁 2033}}，其中{{tr|ammo}}被用作货币。不过，更有可能是{{tr|the Arms Dealer}}暗中威胁要射杀{{tr|the Tax Collector}}而非付钱，而{{tr|Tax Collector}}并不明白其中含义。
+* 话语“{{gameText|LegacyDialog.371|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”是个含糊的性暗指。
+* 话语“{{gameText|LegacyDialog.398}}”是指[[{{tr|Slimes}}]]很容易击杀，从它们身上赚钱也很容易。
+* {{tr|Tax Collector}}有一句未被使用的话语：“{{gameText|LegacyDialog.370}}”。
+* 除了[[{{tr|Princess}}]]以外，{{tr|Tax Collector}}喜欢或喜爱的 {{tr|NPC}} 都不喜欢或讨厌他。
+* 最不快乐时，{{tr|the Tax Collector}}只会保存以数字 6 构成的{{tr|coins}}数。“野兽数”（“野兽”指圣经启示录中的地狱怪物）是 666。考虑到{{tr|Tax Collector}}的描述他去过地狱并返回，这似乎表明和 6 之间的联系并非偶然。
+* 他在{{tr|graveyard}}中说的话语“{{gameText|TaxCollectorSpecialText.Graveyard1}}”参考了本杰明·富兰克林（Benjamin Franklin）的名言“我们的新宪法现已建立，一切似乎都承诺它将持久；但是，在这个世界上，除了死亡和税收之外，没有什么是确定的。”（Our new Constitution is now established, everything seems to promise it will be durable; but, in this world, nothing is certain except death and taxes.）
+* 话语“{{gameText|LegacyDialog.365}}”是指 {{tr|NPC}} 总是开关{{tr|doors}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在能保存最多 25 {{tr|Gold Coin}}，而非 10。
+** 现在于 [[{{tr|Celebrationmk10}}]]（和 [[{{tr|Get fixed boi}}]]）{{tr|worlds}}中的税收翻倍。}}
+{{history|Desktop 1.4.1|修正了{{tr|Tax Collector}}名为“Agnew”的几率要两倍于其他名字的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|添加了基于他的[[{{tr|happiness}}]]级别而改变其{{tr|coin}}收集速率和最大{{tr|coin}}存储量的特性。}}
+{{history|Desktop 1.3.1|修正{{tr|Tax Collector}}不会使用他的某些聊天对话的问题。}}
+{{history|Desktop 1.3.0.4|现在在[[{{tr|Multiplayer}}]]也能正确给[[{{tr|coins}}|钱]]了。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.1096.2|修正了{{tr|Tax Collector}}有几率被取名为“TaxCollectorNames.Name_20”的 {{tr|bug}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Tax Collector}}

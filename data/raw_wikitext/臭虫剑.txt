@@ -1,0 +1,49 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5129
+| listcat = Broadswords
+| debuff = Stinky / 5
+| sound1 = Item 16.wav
+| soundcaption1 = 击中实体
+}}
+[[File:Flymeal (demo).gif|right|frame|对[[{{tr|Guide}}]]使用{{tr|The Flymeal}}。]]
+
+'''{{tr|Flymeal}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|sword}}]]，具有能够伤害友方 [[{{tr|NPCs}}]] 的独特能力。它还会造成 5 秒的[[{{tr|Stinky}}]][[{{tr|debuff}}]]，不过这只有视觉上的效果。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Flymeal|expectedrows=2}}
+
+== 备注 ==
+* 在造成{{tr|damage}}时，{{tr|Flymeal}}会发出[[{{tr|Whoopie Cushion}}]]的放屁音效。
+* {{tr|Flymeal}}完全无视{{tr|town NPC}} 的[[{{tr|defense}}]]，且会对[[{{tr|Nurse}}]]造成双倍伤害（{{#expr:floor({{iteminfo|Flymeal|damage}}*2)}} {{tr|base damage}}）。{{source code ref|v=1.4.4.4|method=Terraria.Player.ProcessHitAgainstNPC}}后者很可能是为了应对她的自我治疗能力而设计的。
+* 能让玩家造成[[{{tr|debuffs}}]]的{{tr|Armor sets}}、{{tr|accessories}}、和[[{{tr|flasks}}]]可以与{{tr|Flymeal}}一起使用，以向 {{tr|NPCs}} 造成这些{{tr|debuffs}}。
+* 和[[{{tr|Rotten Egg}}]]不同，{{tr|Flymeal}}不能伤害[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]。
+
+== 小贴士 ==
+* 制作{{tr|The Flymeal}}应当只是为了获得伤害或杀死{{tr|town NPCs}} 可靠方式（和{{tr|Rotten Eggs}}或[[{{tr|lava}}]]不同，它不消耗且不会破坏[[{{tr|furniture}}]]），其用途包括：
+** 让挡住[[{{tr|Chests}}]]或[[{{tr|Beds}}]]且自己不移动走的 {{tr|NPCs}} 强制位移。
+** 杀死 {{tr|NPCs}} 以获得其独特掉落（例如[[{{tr|Guide}}]]的[[{{tr|Green Cap}}]]或[[{{tr|Mechanic}}]]的[[{{tr|Combat Wrench}}]]）。
+* 尽管[[{{tr|Platinum Broadsword}}]]可以是{{tr|The Flymeal}}的组成物，后者的{{tr|damage and knockback}}要低于前者，它们的{{tr|attack speed}}则相同。只想要提高伤害的玩家在有更好的替代品前不应当制作{{tr|Flymeal}}。
+** {{tr|The Flymeal}}的{{tr|ingredients}}总计可卖出 {{coin|{{recipes/extract|mode=ingredients-sell|result=Flymeal|ingredient=Gold Broadsword}}}}（使用[[{{tr|Gold Broadsword}}]]）{{coin|{{recipes/extract|mode=ingredients-sell|result=Flymeal|ingredient=Platinum Broadsword}}}}（使用{{tr|Platinum Broadsword}}），而{{tr|sword}}本身可卖出 {{iteminfo|Flymeal|sell}}。因此，保留{{tr|ingredients}}将更加有利可图。
+
+== 花絮 ==
+* {{tr|The Flymeal}}和{{tr|Rotten Egg}}共用了{{tr|tooltip}}''“{{#explode:{{itemTooltip|5129}}|<br/>|0}}”''。
+* {{tr|The tooltip}}''{{#explode:{{itemTooltip|5129}}|<br/>|1}}''参考了现实生活中的{{维基百科|Pentatomidae|臭虫}}，它们遇险或被压碎时会产生闻起来像{{维基百科|Coriander|芫荽（香菜）}}的化学物质。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Flymeal}}

@@ -1,0 +1,32 @@
+<includeonly>
+{{!-}}
+{{!}} {{item|{{{1|}}}|ext={{#if:{{{gif|}}}|gif}}}}
+{{!}} {{#if:{{{2|}}}|{{{2|}}}|{{recipes/extract|result={{{1|}}}}}}}
+{{!}} {{{3|}}}
+{{!}} {{#vardefine:imagestr|{{image|{{trim|{{{1|}}}}} (equipped).{{#if:{{{gifequipped|}}}|gif|png}}}}}}{{#var:imagestr|{{no}}}}{{#if:{{{ref|}}}|{{#tag:ref||name="{{trim|{{{ref|}}}}}"}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Outputs a table row for the second table of [[Movement Accessories]].
+
+{| class=terraria lined
+! colspan=2 | Parameters
+|-
+| 1 || Item name
+|-
+| 2 || Source; uses {{tl|recipes/extract}} if left empty
+|-
+| 3 || Unique Effect
+|-
+| gif || if not empty, will set <code>ext=gif</code> for {{tl|item}}
+|-
+| gifequipped || if not empty, will use <code>.gif</code> as the file extension for the equipped image
+|-
+| ref || refname.
+|}
+
+{{language info|en=Movement Accessories/row2}}
+</noinclude>

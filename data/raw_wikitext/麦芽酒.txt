@@ -1,0 +1,50 @@
+{{item infobox
+| type = Potion / Ammunition
+| auto = 353
+| buy = @@@@ {{eicons|Tavernkeep|small=y}}
+| tags = vendor / vendor:Tavernkeep
+}}
+{{float file box|[[File:Ale Held.png]]|{{eicons|1.3.4}} 手持的{{tr|Ale}}}}
+{{quotation|[[{{tr|Tavernkeep}}]]|{{gameText|BartenderChatter.Chatter_1}}}}
+
+'''{{tr|Ale}}'''是一种[[{{tr|potion}}]]，可以给予{{tr|player}} 2 分钟的[[{{tr|Tipsy}}]][[{{tr|debuff}}]]，提升{{tr|melee damage}}但会降低{{tr|player}}的[[{{tr|defense}}]]。它可以在[[{{tr|Keg}}]]制作，或以每个 {{iteminfo|Ale|buy}} 的价格从{{eil|Tavernkeep}}处购买。
+
+{{tr|The Tipsy debuff}}有以下效果：
+{{transclude|{{tr|Tipsy}}|section=effects}}
+
+{{eil|Ale Tosser}}使用{{tr|Ale}}作为[[{{tr|ammunition}}]]。
+
+{{on plate|article=no|food=no}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Ale|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Ale|expectedrows=2}}
+
+== 小贴士 ==
+* {{tr|Ale}}的售价为 {{iteminfo|Ale|sell}} 且只需要[[{{tr|Mug}}]]制作，其只需要 1 块[[{{tr|Glass}}]]，即每个只需要 2 块[[{{tr|Sand Block}}]]制作。因此，如果用于制作{{tr|Ale}}，每 2 块{{tr|Sand Block}}的价值为 {{iteminfo|Ale|sell}} 。故制作{{tr|Ale}}为出售{{tr|Sand Block}}，而无需添加其它材料的最有利益的方式。
+* 由于[[{{tr|Tipsy}}]]是一个{{tr|debuff}}，它会被[[{{tr|Nurse}}]]移除。重复饮用{{tr|Ale}}和在{{tr|Nurse}}处治疗的步骤是快速获得{{tr|The Frequent Flyer}}[[{{tr|achievement}}]]的一种方法。
+
+== 另见 ==
+* [[{{tr|Sake}}]]
+* {{eil|Wiesnbräu}}
+
+== 历史 ==
+{{history|Desktop 1.3.4|
+** 现在由[[{{tr|Tavernkeep}}]]出售。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|现在用于制作[[{{tr|Molotov Cocktail}}]]。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-buff = yes
+}}
+
+{{language info|en=Ale}}

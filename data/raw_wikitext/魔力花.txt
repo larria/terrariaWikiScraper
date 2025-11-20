@@ -1,0 +1,46 @@
+{{item infobox
+| auto = 555
+}}
+
+'''{{tr|Mana Flower}}'''是个[[{{tr|pre-Hardmode}}]]的[[{{tr|accessory}}]]，可减少 8% 的[[{{tr|mana}}]]消耗，并允许在{{tr|mana}}耗尽时自动使用玩家[[{{tr|inventory}}]]中任意的{{tr|mana}}回复[[{{tr|potions}}]]。{{tr|Mana Flower}}可与其他减少{{tr|mana}}消耗的{{tr|items}}叠加，包括[[{{tr|Nature's Gift}}]]。它需要在[[{{tr|Tinkerer's Workshop}}]]处制作。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Mana Flower|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Mana Flower|expectedrows=3}}
+
+== 备注 ==
+* 位于{{tr|inventory}}前列（从上到下，从左到右）的{{tr|mana}}回复药剂会优先被使用，无论其回复的魔力多少。
+* {{tr|Mana Flower}}会使用同时恢复{{tr|health}}和{{tr|mana}}的综合性药水，但在[[{{tr|Potion Sickness}}]]{{tr|debuff}}状态下则不会使用。
+* {{tr|Mana Flower}}会在使用的{{tr|item}}消耗的{{tr|mana}}高于现存的{{tr|mana}}时触发。按顺序来说，是先使用了{{tr|potion}}，然后使用了{{tr|item}}，再消耗了{{tr|mana}}。{{source code ref|v=1.4.0.5|method=Terraria.Player.ItemCheck_PayMana}}
+
+== 小贴士 ==
+* 只要有一定数量的{{tr|mana restoration potions}}在玩家的{{tr|inventory}}，装备{{tr|Mana Flower}}后就可有效地连续使用[[{{tr|magic weapons}}]]。与使用任何{{tr|mana potion}}相同，它会导致[[{{tr|Mana Sickness}}]]这种[[{{tr|debuff}}]]，降低伤害的百分比初始为 25%（当减益持续时间为 5 秒时），每五分之一秒降低 1%，在伤害降低量达到 0% 时结束。该{{tr|debuff}}可累计减少最多50% {{tr| magic damage}}，总计持续 10 秒。正因如此，[[{{tr|Celestial Cuffs}}]]可能更适合用于恢复{{tr|mana}}。
+* 也许点击{{key|mheal}}[[{{tr|hotkey}}]]来快速回复{{tr|mana}}也是个不错的选择。不过这样一来，虽然空出一个{{tr|accessory slot}}，但是减少魔力消耗的效果就得不到了。
+* {{tr|The Mana Flower}}价格比{{tr|Nature's Gift}}和{{tr| Mana Potion}}分别的价格合起来还要高。因此，多余的{{tr| Nature's Gift}}应该被制作为{{tr|Mana Flowers}}以获取最大利润（每个约 50 银币）。
+
+== 花絮 ==
+* 虽然{{tr|Mana Flower}}由[[{{tr|Mana Potion}}]]制作而来，但其{{tr|sprite}}显示的却是[[{{tr|Greater Mana Potion}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Arcane Flower}}]]、[[{{tr|Magnet Flower}}]]和[[{{tr|Mana Cloak}}]].}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}旧的外观是 [[File:Mana Flower (old).png|20px]]。}}
+{{history|Desktop 1.1.1|{{tr|Sell value}}由 {{sc|3}} 提升至 {{gc|1}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon|ps4}}）}}
+{{history|Console-Release|Introduced=y|伴随着{{tr|Desktop}} 1.1.1 的相应机制引入。}}
+{{history|Mobile 1.1.5536|Introduced=y|伴随着{{tr|Desktop}} 1.1.1 的相应机制引入。}}
+{{history|3DS-Release|Introduced=y|伴随着{{tr|Desktop}} 1.1.1 的相应机制引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-main = yes
+| show-combatacc = yes
+}}
+
+{{language info|en=Mana Flower}}

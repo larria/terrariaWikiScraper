@@ -1,0 +1,40 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars -->
+|-
+| {{{image}}}
+| {{item|mode=text|{{{name|}}}|id={{{itemid|}}}|class=alignleft block}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| {{#or:{{{velocity|}}}|{{#dplvar:_na}}}}
+| {{#if:{{{usetime|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{usetime|}}}+1}}|<!-- if not is_number($usetime)
+		-->{{#dplreplace:{{{usetime|}}}|\(({{#dplvar:_uts}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "use time" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{usetime|}}}}}<br/>{{note|small=y|block=y|({{use time|{{{usetime|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#if:{{{knockback|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{knockback|}}}+1}}|<!-- if not is_number($knockback)
+		-->{{#dplreplace:{{{knockback|}}}|\(({{#dplvar:_kbs}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "knockback" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{knockback|}}}}}<br/>{{note|small=y|block=y|({{knockback|{{{knockback|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#if:{{{critical|}}}|<!--
+	-->{{percent|<!--
+		-->{{#dplreplace:{{{critical|}}}|/ \/ /|&#32;/<br/>}}<!--
+		-->{{#if:{{#pos:{{{critical|}}}|%}}||%}}<!--
+	-->}}<!--
+-->}}
+| {{#if:{{{autoswing|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{#if:{{{hardmode|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{#or:{{{sell|}}}|{{#dplvar:_na}}}}
+</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=List of ranged weapons/row}}
+</noinclude>

@@ -1,0 +1,49 @@
+{{item infobox
+| type = Potion
+| stack = @@@@ {{eicons|1.3.0.1|small=y}} / 30&thinsp;{{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 126
+| listcat = Potion ingredients
+}}
+
+'''{{tr|Bottled Water}}'''是站在[[{{tr|sink}}]]或[[{{tr|water}}]]边用[[{{tr|Bottle}}]][[{{tr|by hand}}]]制作的。制作{{tr|Bottled Water}}不会使{{tr|water}}面降低。制作这个{{tr|item}}不需要站在{{tr|water}}里，你只需要像靠近其它[[{{tr|crafting station}}]]一样靠近{{tr|water}}即可。
+
+一个常见的错误是试着在{{tr|water}}上像使用[[{{tr|Bucket}}]]一样使用{{tr|bottle}}，这是不起作用的。你必须站在{{tr|water}}边打开合成菜单（默认：{{key|esc}}）。
+
+{{tr|use}}{{tr|Bottled Water}}时能够立即恢复 20 [[{{tr|Health}}]]并且触发[[{{tr|Potion Sickness}}]][[{{tr|debuff}}]]。使用{{tr|Bottled Water}}不会返还空{{tr|Bottle}}。{{tr|Bottled Water}}也是用于{{tr|craft}}许多其它[[{{tr|Potions}}]]的{{tr|material}}。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Bottled Water|expectedrows=1}}
+
+=== {{tr|Used in}} ===
+{{recipes|ingredient=Bottled Water|expectedrows=84}}
+
+== {{tr|Notes}} ==
+* 像其他任何制作站一样，{{tr|player}}只需靠近[[水槽]]或一格[[水]]即可，并不需要进入水中。
+** 此外，瓶装水只能制作，无法像[[水桶]]一样在水体上使用[[玻璃瓶]]。
+* 饮用瓶装水并不会返还玻璃瓶。
+
+== {{tr|Achievements}} ==
+{{achievement|name=Unusual Survival Strategies}}
+
+== {{tr|Trivia}} ==
+* 尽管是一瓶看似普通的水，水瓶被饮用后仍会造成[[药水疾病]][[Debuffs|{{tr|debuff}}]]。
+* 在{{tr|Zapinator}}被移除之前，这个[[{{tr|Item ID}}]]原本是属于[[{{tr|Zapinator}}]]的。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|堆叠上限从30提高到999。}}
+{{history|Desktop 1.2|引入了药剂。}}
+{{history|Desktop 1.0.6|
+** 不能再站在[[熔岩]]附近来制作。
+** 现在使用它将会触发[[药水疾病]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+{{language info|en=Bottled Water}}

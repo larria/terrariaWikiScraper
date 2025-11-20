@@ -1,0 +1,69 @@
+{{legacy nav tab}}
+{{see also|{{tr|Pygmy Necklace}}}}
+{{item infobox
+| auto = 1157
+| debuff = Acid Venom / {{duration|rawseconds=5–10}} / 100%
+| tags = minion / drop/ hardmode / bag loot
+| idprojectile = 191, 192, 193, 194, 195
+}}
+{{drop infobox|style=clear:right}}
+[[File:Pygmy Staff (demo).gif|frame|使用中的{{tr|The Pygmy Staff}}。]]
+
+'''{{tr|The Pygmy Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Pygmy}}'''[[{{tr|minion}}]]。它会向附近的[[{{tr|enemies}}]]投掷长矛，会施加 5–10 {{tr|seconds}}[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]，且不能穿透{{tr|enemies}}或穿过[[{{tr|blocks}}]]。{{tr|The Pygmy Staff}}有 {{chance|1/4}} / {{expert|{{chance|1/2}}}} 的几率掉落自[[{{tr|Plantera}}]]。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|The Pygmy minions}}每 0.5 {{tr|seconds}}投掷一次长矛。
+* {{tr|The pygmy minions}}能锁定 50 {{tr|tile}}范围内的{{tr|enemies}}，且当它们距离{{tr|player}}超过 62.5 格时会自动返回{{tr|player}}身旁。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_026|t=每个{{tr|minion}}具有名为 <code>minionPos</code> 的内部变量，这表示它所占据{{tr|minion slot}}的栈位，从 0 开始。{{tr|Pygmy minions}}的基础检测范围（50 {{tr|tiles}}）和仇恨范围（62.5 {{tr|tiles}}）会增加 <code>minionPos</code> 乘 2.5 {{tr|tiles}}。例如，一个 <code>minionPos = 2</code> 的{{tr|a pygmy}}将能够锁定 55 {{tr|tiles}}范围内的{{tr|enemies}}且会在距离{{tr|player}}超过 67.5 {{tr|tile}}时返回{{tr|player}}身旁。}}
+* {{tr|The pygmy minions}}会试图瞄准其目标的前方，通过其目标当前位置与速度预判它 {{duration|20 ticks}} 后的位置。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_026}}
+** 只有当其目标预期位置在它们水平方向上 28.125 {{tr|tile}}以内时，它们才能向目标发射{{tr|spears}}。
+* {{tr|The pygmy spears}}以 {{mph|22 pixels}} 的速度发射并且在受重力影响前可行进 {{duration|20 ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.AI_001}}
+
+== 花絮 ==
+* 每次召唤{{tr|pygmy}}时，召唤出的{{tr|pygmy}}会拥有四种可能的{{tr|sprite}}之一，但它们在功能上是完全相同的。
+* {{tr|Pygmy}}可以通过站在、坐在或挂在矛上飞行来赶上快速移动的玩家。
+* 在现实生活中，{{wikipedia|pygmy people|矮人（pygmy people）}}这一术语主要用于一些平均身高相对较低的民族。主要包含{{wikipedia|African Pygmies|非洲俾格米人（African Pygmies）}}（一类起源于{{wikipedia|刚果盆地（Congo Basin）}}、营采集和狩猎生活的部落）等。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|pygmy}}的{{tr|damage}}由 34 增加到 40 。
+** {{tr|Pygmy spear}}现在速度稍快了。
+** {{tr|pygmy}}现在会尝试预判移动目标。
+** {{tr|Pygmy spear}}现在总是施加[[{{tr|Acid Venom}}]]，而不再施加[[{{tr|poisoned}}]]。
+** {{tr|pygmy}}返回玩家时移动速度更快。}}
+{{history|Desktop 1.4.1|
+** {{tr|Projectile speed}}提升 50%。
+** 索敌范围增加了 40%.}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Acid Venom}}的{{tr|duration}}由 10-20 秒降低至 5-10 秒。
+** {{tr|Item and minion}}的{{tr|sprites updated.}}
+** {{tr|Minion}}的{{tr|spear}}{{tr|sprite updated.}}
+** {{tr|Minion}}的{{tr|spear}}不再能够穿透。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Pygmies}}现在有几率施加{{tr|Poisoned}}和{{tr|Venom}}。
+** {{tr|pygmy}}现在有更大的射程，第一根被投出的{{tr|spear}}具有穿刺能力而不会被挡住。}}
+{{history|Desktop 1.2.4.1|现在重新需要 10 {{tr|mana}}。}}
+{{history|Desktop 1.2.4|
+** {{tr|Mana cost}}由 10 降低至 0。
+** {{tr|damage}}由 29 增加至 34。}}
+{{history|Desktop 1.2.3|{{tr|damage}}由 27 增加至 29。}}
+{{history|Desktop 1.2.1|{{tr|damage}}由 25 增加至 27。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-main = yes
+| show-summon = yes
+}}
+
+{{language info|en=Pygmy Staff}}

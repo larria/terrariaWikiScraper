@@ -1,0 +1,281 @@
+{{exclusive|desktop=y}}
+
+'''{{tr|Resource Packs}}'''是附加文件，允许玩家自定义游戏的{{tr|sprites}}贴图、[[{{tr|music}}]]、音效和翻译。
+
+== 安装{{tr|Resource Pack}} ==
+[[File:Resource Packs menu.png|thumb|right|360px|{{tr|The Resource Packs menu}}。]]
+{{tr|Resource Packs}}可以通过将其放置在 <code>ResourcePacks</code> 文件夹中来安装，或通过 Steam 创意工坊下载安装，此时它们会自动安装和更新。
+
+<code>ResourcePacks</code> 文件夹可以通过按游戏内的{{tr|Resource Packs menu}}中的“{{gameText|LegacyInterface.110}}”选项来访问。此文件夹是在启动游戏时生成的。
+* 在 Windows Vista 及之后上，是 <code>%USERPROFILE%\Documents\My Games\Terraria\ResourcePacks</code>
+** 在 Windows XP 上，是 <code>%USERPROFILE%\My Documents\My Games\Terraria\ResourcePacks</code>
+* 在 Mac 上，打开 Finder 并按上方的“Go”。然后按“Go to folder...”。输入 <code>~/Library/Application Support/Terraria/ResourcePacks</code>
+* 在 Linux 上，是 <code>$XDG_DATA_HOME/Terraria/ResourcePacks</code>
+** 通常是 <code>~/.local/share/Terraria</code>
+
+已安装的{{tr|Resource Packs}}可以在 [[创意工坊中心]] 中启用，或者在主菜单中选择“{{gameText|UI.ResourcePacks}}”选项，在这里可以将资源包在“可用包”和“已启用包”之间移动。
+
+== 创建{{tr|Resource Pack}} ==
+=== 内容 ===
+{{tr|Resource packs}}必须有 <code>pack.json</code> 文件，否则，游戏无法识别它。它还可以包含一个 <code>icon.png</code> 文件，用来显示在{{tr|Resource Packs}}菜单。有效的 <code>pack.json</code> 文件大概是下面这样：<syntaxhighlight lang="json">
+{
+	"Name": "包名称",
+	"Author": "作者",
+	"Description": "这里放置对包的简要描述，可以用 \n 来输入换行",
+	"Version": {
+		"major": 1,
+		"minor": 0
+	}
+}
+</syntaxhighlight>
+
+==== 示例文件夹结构 ====
+* <code>包名</code>
+** <code>icon.png (可选)</code>
+** <code>pack.json</code>
+** <code>Content</code>
+***<code>Images</code>
+**** <code>Acc_Back_1.png</code>
+*** <code>Localization</code>
+**** <code>en-US_Content.json</code>
+*** <code>Music</code>
+**** <code>Music_77.ogg</code>
+*** <code>Sounds</code>
+****<code>Player_Killed.xnb</code>
+
+==== 图像 ====
+图像放在资源包的 <code>Content/Images</code> 文件夹下。它们必须使用和默认图像相同的文件名（除了 <code>png</code> 扩展名）和画布尺寸。默认的《{{tr|Terraria}}》图像位于：
+* 对于 Windows 的 Steam 版本，是<code>C:\Program Files (x86)\Steam\steamapps\common\Terraria\Content\Images</code>。
+* 对于 Linux 的 Steam 版本，是<code>~/.steam/steam/steamapps/common/Terraria/Content/Images</code>
+* 对于 macOS 的 Steam 版本，<code>Library/'Application Support'/Steam/steamapps/common/Terraria/Terraria.app/Contents/MacOS/Content/Images</code>.
+* 对于 GOG 版本，是<code>C:\GOG Games\Terraria\Content\Images</code>。
+** 对 Mac 用户的提示：要打开或查看 Terraria.app 的内容，右键点击并选择“Show Package Contents”
+
+这些默认图像保存为<code>xnb</code> 文件扩展名。可以用 [https://forums.terraria.org/index.php?threads/tconvert-extract-content-files-and-convert-them-back.61706/ TConvert] 来将默认 xnb 图像提取为 png 文件以供查看、编辑、和保存。
+
+==== 音乐 ====
+[[音乐]]文件放在资源包的 <code>Content/Music</code> 文件夹下。它们可以是 <code>wav</code>、<code>mp3</code> 或 <code>ogg</code> 格式。
+
+{| class="mw-collapsible mw-collapsed terraria" style="min-width: 15em;"
+|+ {{tr|Music IDs}} 列表
+|-
+| align=center |
+{| class="terraria sortable"
+! 名称 !! 曲名<br/>{{note|small=y|paren=y|译注：曲名中英文详细信息参见[[音乐]]页面。}}
+|-
+| Music_1 || Overworld Day
+|-
+| Music_2 || Eerie
+|-
+| Music_3 || Night
+|-
+| Music_4 || Underground
+|-
+| Music_5 || Boss 1
+|-
+| Music_6 || Title（经典）
+|-
+| Music_7 || Jungle
+|-
+| Music_8 || Corruption
+|-
+| Music_9 || The Hallow
+|-
+| Music_10 || Underground Corruption
+|-
+| Music_11 || Underground Hallow
+|-
+| Music_12 || Boss 2
+|-
+| Music_13 || Boss 3
+|-
+| Music_14 || Snow
+|-
+| Music_15 || Space Night
+|-
+| Music_16 || Crimson
+|-
+| Music_17 || Boss 4
+|-
+| Music_18 || Alt Overworld Day
+|-
+| Music_19 || Rain
+|-
+| Music_20 || Ice
+|-
+| Music_21 || Desert
+|-
+| Music_22 || Ocean Day
+|-
+| Music_23 || Dungeon
+|-
+| Music_24 || Plantera
+|-
+| Music_25 || Boss 5
+|-
+| Music_26 || Temple
+|-
+| Music_27 || Eclipse
+|-
+| Music_28 || Rain（环境）
+|-
+| Music_29 || Mushroom
+|-
+| Music_30 || Pumpkin Moon
+|-
+| Music_31 || Alt Underground
+|-
+| Music_32 || Frost Moon
+|-
+| Music_33 || Underground Crimson
+|-
+| Music_34 || The Towers
+|-
+| Music_35 || Pirate Invasion
+|-
+| Music_36 || Hell
+|-
+| Music_37 || Martian Madness
+|-
+| Music_38 || Lunar Boss
+|-
+| Music_39 || Goblin Invasion
+|-
+| Music_40 || Sandstorm
+|-
+| Music_41 || Old One's Army
+|-
+| Music_42 || Space Day
+|-
+| Music_43 || Ocean Night
+|-
+| Music_44 || Windy Day
+|-
+| Music_45 || Wind（环境）
+|-
+| Music_46 || Town Day
+|-
+| Music_47 || Town Night
+|-
+| Music_48 || Slime Rain
+|-
+| Music_49 || Day Remix
+|-
+| Music_50 || Journey's Beginning（带 Re-Logic 介绍）
+|-
+| Music_51 || Journey's Beginning
+|-
+| Music_52 || Storm
+|-
+| Music_53 || Graveyard
+|-
+| Music_54 || Underground Jungle
+|-
+| Music_55 || Jungle Night
+|-
+| Music_56 || Queen Slime
+|-
+| Music_57 || Empress of Light
+|-
+| Music_58 || Duke Fishron
+|-
+| Music_59 || Morning Rain
+|-
+| Music_60 || Alt Title
+|-
+| Music_61 || Underground Desert
+|-
+| Music_62 ||（异界版）Rain
+|-
+| Music_63 ||（异界版）Day
+|-
+| Music_64 ||（异界版）Night
+|-
+| Music_65 ||（异界版）Underground
+|-
+| Music_66 ||（异界版）Desert
+|-
+| Music_67 ||（异界版）Ocean
+|-
+| Music_68 ||（异界版）Mushroom
+|-
+| Music_69 ||（异界版）Dungeon
+|-
+| Music_70 ||（异界版）Space
+|-
+| Music_71 ||（异界版）Underworld
+|-
+| Music_72 ||（异界版）Snow
+|-
+| Music_73 ||（异界版）Corruption
+|-
+| Music_74 ||（异界版）Underground Corruption
+|-
+| Music_75 ||（异界版）Crimson
+|-
+| Music_76 ||（异界版）Underground Crimson
+|-
+| Music_77 ||（异界版）Ice
+|-
+| Music_78 ||（异界版）Underground Hallow
+|-
+| Music_79 ||（异界版）Eerie
+|-
+| Music_80 ||（异界版）Boss 2
+|-
+| Music_81 ||（异界版）Boss 1
+|-
+| Music_82 ||（异界版）Invasion
+|-
+| Music_83 ||（异界版）The Towers
+|-
+| Music_84 ||（异界版）Lunar Boss
+|-
+| Music_85 ||（异界版）Plantera
+|-
+| Music_86 ||（异界版）Jungle
+|-
+| Music_87 ||（异界版）Wall of Flesh
+|-
+| Music_88 ||（异界版）Hallow
+|-
+| Music_89 || Journey's End
+|-
+| Music_90 || Deerclops
+|-
+| Music_91 || Aether
+|}
+|}
+
+==== 音效 ====
+音效文件放在资源包的 <code>Content/Sounds</code> 文件夹下。它们应当是 <code>xnb</code> 格式。
+
+==== 本地化 ====
+本地化文件放在资源包的 <code>Content/Localization</code> 文件夹下。它们可以是 <code>csv</code> 或 <code>json</code> 格式。
+
+== 备注 ==
+{{float file box|[[File:DefaultResourcePackIcon.png]]|{{tr|Resource Packs}}的默认图标。}}
+
+* 如果{{tr|Resource Pack}}中没有 <code>icon.png</code>，将改用默认的占位图标。
+{{-}}
+== 另见 ==
+* {{forums thread|100652|The Ultimate Guide To Content Creation And Use For The Terraria Workshop}}（{{small|{{date|2021|03|29}}}}），这是 [[Leinfors]] 写的关于创建资源包的深入指南。
+
+== 历史 ==
+{{history|Desktop 1.4.2.1|
+** 修正了用来替换音乐曲目的 MP3 不会循环播放的问题。
+** 修正了替换的音乐曲目明显比正常曲目响的问题。
+** 修正了替换的音乐曲目在 Mac（可能还有 Linux，未经确认）上不起作用的问题。
+** 修正了一个阻止资源包更改标题栏讯息的问题。
+** 修正了一个导致资源包中 XNB 资源不能正常工作的读取问题。}}
+{{history|Desktop 1.4.2|
+** 重命名为{{tr|Resource Packs}}。
+** 添加了 Steam 创意工坊集成，允许通过 Steam 下载和分享{{tr|Resource Packs}}。
+** 功能扩展为包括语言和音乐替换。}}
+{{history|Desktop 1.4.0.3|修正了若不重新启动游戏则{{tr|Texture Packs}}对{{tr|tiles}}无效的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|Introduced=y|作为{{tr|Texture Packs}}正式引入，并且现在可以通过主菜单中的一个选项来访问。}}
+{{history|Desktop 1.3.4.2|Introduced=y|作为{{tr|experimental feature}}引入。}}
+
+{{Game mechanics}}
+
+{{language info|en=Resource Pack}}

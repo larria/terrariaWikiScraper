@@ -1,0 +1,76 @@
+{{exclusive|Empty Dropper}}
+{{item infobox
+| imagealt = [[File:Magic Water Dropper.png|link=]] [[File:Magic Lava Dropper.png|link=]] [[File:Magic Honey Dropper.png|link=]] [[File:Magic Sand Dropper.png|link=]]
+| type = Tool/Crafting material
+| stack = {{iteminfo|3182|stack}}
+| consumable = Yes
+| rare = {{rare|0}}
+| use = {{iteminfo|3182|useTime}}
+| sell = {{iteminfo|3182|sell}}
+| idtile = 373 ({{tr|Water}}), 374 ({{tr|Lava}}), <br/>375 ({{tr|Honey}}), 461 ({{tr|Sand}})
+| cargo = no
+| tag = hardmode
+}}
+[[File:Magic Dropper (demo).gif|thumb|所有四种放置的{{tr|magic droppers}}。]]
+
+'''{{tr|Magic Droppers}}'''是用于放置“液滴”的[[{{tr|Hardmode}}]]物品——创造在天花板上滴下液体的效果。一旦放置，它们会永久性地显示间歇滴落的效果。此效果是纯视觉的，没有功能用途。{{tr|Magic Droppers}}是用[[{{tr|Empty Dropper}}]]和[[{{tr|Water}}]]、[[{{tr|Lava}}]]、[[{{tr|Honey}}]]、或用任何[[{{tr|Sand Block}}|{{tr|Sand}}]]在[[{{tr|Crystal Ball}}]]附近制作。
+
+{{tr|Magic Droppers}}可以放置在{{tr|block}}的底部，此过程会消耗掉此{{tr|item}}。{{tr|Droplets}}可以通过用[[{{tr|pickaxe}}]]开采的方式移除，但这样做不会掉落任何{{tr|item}}。
+
+在世界生成的过程中也会在随机区域中自然生成液滴。它们会在上方有相应液体的天花板下生成，就好像液体“渗漏”一般。天然液滴和玩家放置的版本一样可以挖掉，并且在被挖掉之前一样会无限地滴落。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE Magic % Dropper|expectedrows=4|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE Magic % Dropper|expectedrows=4}}
+
+== 备注 ==
+[[File:Dripping Lava on Full Map.jpg|thumb|250px|{{tr|map}}上显示的“{{tr|Dripping Lava}}”。]]
+
+* 自然生成的和玩家放置的{{tr|droplets}}都会在[[{{tr|minimap}}]]上显示：
+: {| class = "terraria lined"
+! 类型 !! 颜色{{source code ref|v=1.4.4.5|method=Terraria.Map.MapHelper.GetMapTileXnaColor / Terraria.Map.MapHelper.Initialize}} !! 地图物体名称
+|-
+| {{tr|Magic Water Dropper}}
+| style="text-align:center" | {{color box|rgb(9, 61, 191)}}
+| {{gameText|MapObject.DrippingWater}}
+|-
+| {{tr|Magic Lava Dropper}}
+| style="text-align:center" | {{color box|rgb(253, 32, 3)}}
+| {{gameText|MapObject.DrippingLava}}
+|-
+| {{tr|Magic Honey Dropper}}
+| style="text-align:center" | {{color box|rgb(255, 156, 12)}}
+| {{gameText|MapObject.DrippingHoney}}
+|-
+| {{tr|Magic Sand Dropper}}
+| style="text-align:center" | {{color box|rgb(212, 192, 100)}}
+| {{gameText|MapObject.SandFlow}}
+|}
+* {{tr|Droplet}}以随机速度下落。
+* {{tr|Lava}}滴不会伤害玩家。
+* 只有{{tr|lava}}滴才会发光。
+* 对下面带有{{tr|droplets}}的{{tr|block}}进行[[{{tr|Block Swap}}|{{tr|Block-swapping}}]]并不会摧毁{{tr|droplet tile}}。
+
+== 历史 ==
+{{history|Desktop 1.3.3|添加了{{tr|the Magic Sand Dropper}}。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Liquid Sensor}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|添加了{{tr|the Magic Sand Dropper}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.1096.2|添加了{{tr|the Magic Sand Dropper}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|the Magic Sand Dropper}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Magic Droppers}}

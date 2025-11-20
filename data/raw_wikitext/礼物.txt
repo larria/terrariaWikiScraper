@@ -1,0 +1,139 @@
+{{christmas only}}
+{{item infobox
+| auto = 1869
+| imagebreak = yes
+| type = Grab bag / Furniture
+| width = 1 | height = 1
+| tags = Drop
+| tooltip = {{icon/desktop}} @@@@<br/>{{icon/xbox}} 按 LT 打开<br/>{{icon/playstation}} 按 R1 打开<br/>{{icon/wiiu}} 按 ZR 打开<br/>{{icon/switch}} 按 ZL 打开<br/>{{icon/mobile|small=y}} 双击打开<br/>{{icon/3DS}} 点击以打开{{tr|present}}！
+}}
+
+'''{{tr|Presents}}'''是一种[[{{tr|grab bag}}]]游戏物品，有{{chance|1/13}}的几率掉落于[[{{tr|Christmas}}]]({{eicons|1.3.0.1|old-gen=y}} 12.15-12.31 / {{eicons|1.3.0.1|invert=y|old-gen=n}} 12.1-1.15)期间生成的任何[[{{tr|enemy}}]]（雕像生成的除外）。就像其他的摸彩袋一样，它们可以通过在玩家[[{{tr|inventory}}]]中单击{{key|open}}打开。{{tr|Presents}}可在任何时间，包括圣诞节之外的时间，打开。
+
+{{eicons|1.3.0.1|old-gen=y}} {{tr|Presents}}在玩家的{{tr|inventory}}中时总是蓝色的，不过放置后则会是随机颜色的。
+
+在{{eversions|1.2.2|invert=y}}，旧的[[File:Blue Present.png]]蓝色的、[[File:Green Present.png]]绿色的和[[File:Yellow Present.png]]黄色的{{tr|Presents }}仍然存在但无法放置。最初，由[[{{tr|Present Mimic}}]]掉落的{{tr|Presents}}可被放置，但在此之后会消失。它们不再掉落，但在{{3DS}}中尚未移除。若希望获取更多信息，参见[[{{tr|Present (furniture)}}]]。
+__TOC__
+{{-}}
+
+== 旧的礼物 ==
+{{exclusive|1.2.2|invert=y|section=y}}
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| type = Grab bag
+| auto = 599
+| tooltip = 试着打开{{tr|present}}！
+| allversions = no
+}}
+{{item infobox
+| type = Grab bag
+| auto = 600
+| tooltip = 试着打开{{tr|present}}！
+| allversions = no
+}}
+{{item infobox
+| type = Grab bag
+| auto = 601
+| tooltip = 试着打开{{tr|present}}！
+| allversions = no
+}}
+}}
+
+== 掉落 ==
+=== {{eversions|1.2.2|short}} ===
+{{tr|Presents}}总是只掉落一件物品，除了掉落[[{{tr|Red Ryder}}]]的时候，那时会跟着[[{{tr|Musket Ball}}]]一起掉落；且三个[[{{tr|vanity}}]]{{tr|sets}}一定是整套出现的。{{source code ref|v=1.4.0.5|{{code|Terraria.Player.cs}}中的{{code|OpenPresent()}}函数。}}
+<!--
+The chance values in this table are taken from the Desktop 1.4.0.5 source code, Terraria.Player.openPresent.cs.
+They are displayed using {{#expr:}} to ensure the highest level of precision.
+-->
+{{loot|item=Present
+
+|:custom:Snow Globe:{{item|Snow Globe|note2=({{tr|Hardmode}}专属)}}|1|{{#expr:1/15}}
+| Coal|1|{{percent|{{#expr:1/30}}}}<br/>{{percent|{{#expr:(14*1)/(15*30)}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Dog Whistle|1|{{percent|{{#expr:{{#expr:(29*1)/(30*400)}}}}}}<br/>{{percent|{{#expr:(14*29*1)/(15*30*400)}}}} {{note|paren=y|{{tr|Hardmode}}}}
+
+|:group:start||{{percent|{{#expr:(29*399*1)/(30*400*150)}}}}<br/>{{percent|{{#expr:(14*29*399*1)/(15*30*400*150)}}}} {{note|paren=y|{{tr|Hardmode}}}}
+  | Red Ryder|1|
+  |:custom:Musket Ball:
+:+ {{item|Musket Ball}}|30–60|
+|:group:end|-----------------|-
+
+| Candy Cane Sword|1|{{percent|{{#expr:(29*399*149*1)/(30*400*150*150)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*1)/(15*30*400*150*150)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Candy Cane Pickaxe|1|{{percent|{{#expr:(29*399*149*149*1)/(30*400*150*150*150)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*1)/(15*30*400*150*150*150)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Candy Cane Hook|1|{{percent|{{#expr:(29*399*149*149*1)/(30*400*150*150*150)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*1)/(15*30*400*150*150*150)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Fruitcake Chakram|1|{{percent|{{#expr:(29*399*149*149*149*149*1)/(30*400*150*150*150*150*150)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*1)/(15*30*400*150*150*150*150*150)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Hand Warmer|1|{{percent|{{#expr:(29*399*149*149*149*149*149*1)/(30*400*150*150*150*150*150*150)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*1)/(15*30*400*150*150*150*150*150*150)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Toolbox|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*1)/(30*400*150*150*150*150*150*150*300)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*1)/(15*30*400*150*150*150*150*150*150*300)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Reindeer Antlers|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*1)/(30*400*150*150*150*150*150*150*300*40)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*1)/(15*30*400*150*150*150*150*150*150*300*40)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Holly|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*1)/(30*400*150*150*150*150*150*150*300*40*10)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*1)/(15*30*400*150*150*150*150*150*150*300*40*10)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Mrs. Claus set|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Parka set|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Tree set|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Snow Hat|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Ugly Sweater|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*5)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Christmas Pudding|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Sugar Cookie|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Gingerbread Cookie|1|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*1*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Eggnog|1–3|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*6*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*8)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*6*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*8)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Star Anise|20–40|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*6*7*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*8*9)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*6*7*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*8*9)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Pine Tree Block|20–49|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Candy Cane Block|20–49|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+| Green Candy Cane Block|20–49|{{percent|{{#expr:(29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}<br/>{{percent|{{#expr:{{#expr:(14*29*399*149*149*149*149*149*149*299*39*9*14*6*7*8*1)/(15*30*400*150*150*150*150*150*150*300*40*10*15*7*8*9*3)}}}}}} {{note|paren=y|{{tr|Hardmode}}}}
+
+}}
+
+=== {{eversions|1.2.2|invert=y}} ===
+{{loot|cargo=no
+
+| Snow Globe|1|1/14
+| Candy Cane Block|1|{{chance|4/7}}<br/>{{chance|7/14}} {{note|paren=y|{{tr|Hardmode}}}}
+| Green Candy Cane Block|1|{{chance|3/7}}
+
+}}
+
+== {{tr|Notes}} ==
+* 任何最大{{tr|health}}多于 1 点，造成多于 0 点{{tr|damage}}的{{tr|enemy}}且掉落[[{{tr|coins}}]]的{{tr|enemies}}都有几率掉落{{tr|Present}}。{{source code ref|v=1.3.5.3|{{code|NPC.cs}}中的{{code|NPCLoot()}}函数。}} 如此一来，由[[{{tr|statues}}]]生成的{{tr|enemies}}、{{eil|Old One's Army}}和[[{{tr|Lunar Events}}]]中的{{tr|enemy}}和带翅膀的[[{{tr|Slimer}}]]永远都不会掉落{{tr|Presents}}。
+* {{eicons|1.3.0.1}} {{tr|Presents}}可以像[[{{tr|furniture}}]]那样放置。每次放置时{{tr|Present}}的颜色都会随机改变。
+* 若掉落的是{{tr|vanity set}}，则会一次性掉落三件。每一件都不会单独掉落。
+
+== {{tr|Tips}} ==
+* {{tr|Presents}}可以在[[{{tr|events}}]]期间相当容易的刷，比如[[{{tr|Solar Eclipse}}]]，其间会生成许多{{tr|enemies}}。
+
+== {{tr|Trivia}} ==
+* {{icon/mobile}} 在 1.1.1 {{tr|Christmas update}}后，{{tr|presents}}错误的掉落几乎所有物品。<ref>{{forums thread|best-thing-you-have-ever-got-from-presents.6680|Best thing you have ever got from presents}} {{small|Dec 8, 2014}}</ref> 该错误已被修复。
+* 放置的{{tr|Present}}的其中一种外观和旧的{{tr|Green Present item}}颜色相同。
+
+== {{tr|See also}} ==
+* [[{{tr|Party Present}}]]
+* [[{{tr|Naughty Present}}]]
+* [[{{tr|Goodie Bag}}]]
+
+== {{tr|History}} ==
+{{history|Desktop 1.2.3|[[{{tr|Present Mimic}}]]现在仅在[[{{tr|Christmas}}]]期间掉落{{tr|presents}}。}}
+{{history|Desktop 1.2.2|
+** 不再掉落{{tr|Blue Present, Green Present, and Yellow Present}}([[{{tr|Item IDs}}]] 599-601) 。玩家存储或物品栏中仍存的物品不会发生改变。
+** {{tr|Enemies}}现在掉落"{{tr|Present}}" ({{tr|Item ID}} 1869) 而非先前的{{tr|Blue, Green, and Yellow Presents}}。
+** 现在可堆叠。
+** 现在可放置，且放置后有 8 种不同颜色。
+** {{tr|Presents}}现在有大量可能的掉落品(之前只有[[{{tr|Candy Cane Block}}]]、[[{{tr|Green Candy Cane Block}}]]或[[{{tr|Snow Globe}}]]。)}}
+{{history|Desktop 1.1.1|{{tr|Introduced.}}}}
+{{history|Console 1.04|{{tr|Presents}}现在可堆叠、可放置。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11587|[[{{tr|Present Mimic}}]]现在仅在[[{{tr|Christmas}}]]期间掉落{{tr|presents}}，如同其他[[{{tr|enemies}}]]那样；且会掉落正确的那种{{tr|Present}}。}}
+{{history|Mobile 1.2.11212|
+** {{tr|Present Mimics}}现在掉落[[{{tr|Present (furniture)}}]]，一种出 bug 的{{tr|Presents}}。
+** {{tr|Presents}}现在有大量可能的掉落品(之前只有[[{{tr|Candy Cane Block}}]]、[[{{tr|Green Candy Cane Block}}]]或[[{{tr|Snow Globe}}]]。)}}
+{{history|Mobile 1.1.5|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+{{language info|en=Present}}

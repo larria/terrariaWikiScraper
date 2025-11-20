@@ -1,0 +1,66 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars
+
+-->{{#if:{{{1|}}}|
+{{!-}}
+{{!}} <!-- weapon:
+	-->{{item|mode=table|wrap=y|{{{1|}}}}}<!--
+	-->{{#if:{{{ref|}}}|&#32;{{#tag:ref||name={{{ref|}}}}}}}
+{{!}} <!-- minions:
+	-->{{#if:{{iteminfo|{{{statweapon|{{{1|}}}}}}|summon}}|<!--
+		-->{{#if:{{{minion|}}}|<!--
+			-->{{#vardefine:_minionname|{{#rreplace:{{{minion|}}}|@@@@|<!--
+				// "auto" minion name:
+				-->{{iteminfo|{{{statweapon|{{{1|}}}}}}|buff}}<!--
+			-->}}}}<!--
+			-->{{item|nolink=y|icons=n|{{#var:_minionname}}|image={{{minionimage|{{#var:_minionname}} (minion).gif}}}}}<!--
+		-->|{{#if:{{{sentry|}}}|<!--
+			-->{{#vardefine:_sentryname|{{#rreplace:{{{sentry|}}}|@@@@|<!--
+				// "auto" sentry name:
+				-->{{projectileNameFromId|{{iteminfo|{{{statweapon|{{{1|}}}}}}|projectile id}}}}<!--
+			-->}}}}<!--
+			-->{{item|nolink=y|icons=n|{{#var:_sentryname}}|image={{{sentryimage|{{#var:_sentryname}} (sentry).gif}}}}}<!--
+		-->}}}}<!--
+	-->}}
+{{!}} <!-- damage:
+	-->{{#or:<!--
+		-->{{#cargo_query:tables=Items|fields=damage|where=name="{{{statweapon|{{{1|}}}}}}" AND damage IS NOT NULL|group by=itemid|default=}}<!--
+	-->|<!--
+		-->{{iteminfo|{{{statweapon|{{{1|}}}}}}|damage}}<!--
+	-->}}
+{{!}} <!-- source:
+	-->{{weapon type cargo|{{{1|}}}|{{#rreplace:{{#if:{{{2|}}}|{{{2|}}}|@@@@}}|@@@@|<!--
+		(using Extension:ParserPower's {{#or:}} instead of the awkward {{#if:}} in the line above would be better, but that is currently impossible due to ParserPower's problems since MediaWiki 1.37)
+		-->{{#dplvar:_crafted}}<!-- "Crafted: "
+		-->{{#if:{{bool|{{{craftinglb|{{#ifexpr:{{recipes/count|result={{{statweapon|{{{1|}}}}}}}}>1|y}}}}}}}|<br/>}}<!-- linebreak after "Crafted: " is useful for recipes with version differences, which span multiple lines
+		-->{{recipes/extract|result={{{statweapon|{{{1|}}}}}}|withresult={{bool|{{{craftingwr|}}}}}}}<!--
+	-->}}}}
+{{!}} <!-- notes:
+	-->{{{3|}}}
+}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{| class="terraria"
+! Parameter !! Description
+|-
+| <code>1</code> || Name of the weapon.
+|-
+| <code>2</code> || Source of the weapon. If not passed or left empty, the weapon's crafting recipe will be printed. Any instance of the string <code>@@@@</code> will also be replaced by the crafting recipe. This data will also be stored to a cargo table for display on weapon subtype pages, like [[Boomerangs]] or [[Spears]].
+|-
+| <code>3</code> || Additional notes.
+|-
+| <code>ref</code> || Name of a <code>&lt;ref&gt;</code> tag that will be appended to the weapon's name. Define the content of the tag in a <code>&lt;ref name="''&lt;name&gt;''"&gt; ''&lt;ref text&gt;'' &lt;/ref&gt;</code> in the <code>refs</code> parameter of {{tl|reflist}}.
+|-
+| <code>craftinglb</code> || Set it to <code>y</code> to print a linebreak after "Crafting: " in the "Source" column. This will be done automatically if the recipe contains multiple variants.
+|-
+| <code>craftingwr</code> || Set it to <code>y</code> to display the crafting result for recipes in the "Source" column. This is intended for the [[Ranged weapons#Consumables|consumable ranged weapons]], which are usually crafted in stacks of multiple items.
+|-
+| <code>statweapon</code> || Use this parameter to define a base weapon for weapon groups like [[Phaseblades]]. That weapon will be used as the base for the damage and crafting columns.
+|}
+
+{{language info|en=Melee weapons/row}}
+</noinclude>

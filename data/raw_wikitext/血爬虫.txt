@@ -1,0 +1,75 @@
+{{npc infobox
+| auto = 239
+| id = 239 (地面), 240 (在墙上)
+| image = Blood Crawler (ground).gif
+| imageother = Blood Crawler.gif
+| imageothercaption = 在墙上
+| environment = The Crimson
+| ai = {{tr|Fighter AI}} {{note|small=y|paren=y|地面}}<br/>{{tr|Spider AI}} {{note|small=y|paren=y|墙上}}
+| Vertebra|1|33.33%
+| Tentacle Spike|1|0.19%
+| Monster Meat|1|0.07%
+| sound1 = Zombie 24.wav, Zombie 25.wav
+| soundcaption1 = 空闲
+| cate = no
+| cargo = no
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view = void
+| auto = 239
+| image = Blood Crawler (ground).gif
+| environment = The Crimson
+| Vertebra|1|33.33%
+| Tentacle Spike|1|0.19%
+| Monster Meat|1|0.07%
+| cate = force
+}}<!--
+-->{{npc infobox | view = void
+| auto = 240
+| image = Blood Crawler.gif
+| environment = The Crimson
+| Vertebra|1|33.33%
+| Tentacle Spike|1|0.19%
+| Monster Meat|1|0.07%
+| cate = force
+}}
+[[File:Site-logo-crimson.png|frame|right|在官方论坛展示的{{tr|Blood Crawler}}（{{tr|Crimson}}式样）]]
+
+'''{{tr|Blood Crawler}}'''是[[{{tr|The Crimson}}]]的一种常见[[{{tr|enemy}}]]。除了能在地面上行走外，它还能在[[{{tr|wall}}]]上爬行。
+
+== 备注 ==
+* {{tr|Blood Crawler}}在{{tr|background walls}}前的{{tr|block}}上[[{{tr|NPC spawn}}|{{tr|spawn}}]]的频率是六倍，{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}<!-- 3/4 (or 6/8) vs. 1/8 -->因此它们在{{tr|The Crimson}}的[[{{tr|chasms}}]]中比在地表更容易遇到。
+* 像所有的{{tr|spider}}一样，{{tr|Blood Crawler}}不能穿过垂直的 2 格高的{{tr|Block}}。
+
+== 花絮 ==
+* {{tr|Blood Crawler}}与现实生活中的蜘蛛有很大的区别:
+** {{tr|Blood Crawler}}可以掉落[[{{tr|Vertebrae}}]]，虽然在现实中蜘蛛是{{维基百科|invertebrate|无脊椎动物}}。
+** 它看上去只有 2 只眼睛，但实际上蜘蛛有 8 只眼睛。
+*** 然而，在{{tr|Official Terraria Forums}}艺术作品中，它们似乎有两只大眼睛（在游戏中的{{tr|sprite}}上看到）和六只小眼睛，这样总共就有了八只眼睛。
+* {{tr|The Blood Crawler}}可能是基于{{维基百科|tick|蜱}}，一种微型的寄生节肢动物，靠吸食其他较大动物（包括人类）的血液生活。
+* 和{{tr|Face Monster}}一样，它缺少一个直接的[[{{tr|The Corruption}}]]变体。
+{{bestiary}}
+:* 尽管{{tr|Bestiary}}中如此说明，但与其他{{tr|spider}}相比，{{tr|Blood Crawler}}的 [[{{tr|AI}}]] 中并不存在这样一种特别的协同行为。
+
+== 历史 ==
+{{history|Desktop 1.4.4|[[{{tr|Monster Meat}}]]{{tr|drop rate}}由 1/1000 降低至 1/1500。在[[{{tr|The Constant}}|{{tr|Don't Starve seeds}}]]中，{{tr|drop rate}}由 1/200 降低至 1/500。}}
+{{history|Desktop 1.4.3|现在会掉落[[{{tr|Tentacle Spike}}]]和{{tr|Monster Meat}}。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.4.0.1|修复了爬墙的{{tr|Blood Crawlers}}的{{tr|hitbox}}偏离中心的问题}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spiders}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Blood Crawler}}

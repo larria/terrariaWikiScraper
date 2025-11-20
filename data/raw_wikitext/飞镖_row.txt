@@ -1,0 +1,34 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars -->
+|-
+| {{item|{{{name|}}}|image={{{name|}}}.png|id={{{itemid|}}}|mode=table|class=alignleft block}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| {{#or:{{formatnum:{{{velocity|}}}}}| data-sort-value=0 {{!}} 0 }}
+| {{#expr:{{getProjectileInfo|{{iteminfo|{{{itemid|}}}|shoot}}|extraUpdates}}+1}}
+| {{#if:{{{knockback|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{knockback|}}}+1}}|<!-- if not is_number($knockback)
+		-->{{#dplreplace:{{{knockback|}}}|\(({{#dplvar:_kbs}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "knockback" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{knockback|}}}}}<br/>{{note|small=y|block=y|({{knockback|{{{knockback|}}}}})}}<!-- 
+	-->}}<!--
+-->|<!--
+	-->data-sort-value=0 {{!}} 0<br/>{{note|small=y|block=y|({{knockback|0}})}}<!--
+-->}}
+| {{#if:{{{hardmode|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{#or:{{{sell|}}}|{{cc|0}}}}
+| align=left {{#if:{{#dplvar:darts-source:{{{name|}}}}}|<!--
+	-->{{!}}{{#dplvar:darts-source:{{{name|}}}}}<!--
+-->|<!--
+	-->{{#if:{{recipes/exist|result={{{name|}}}}}|style="white-space:nowrap;"<!-- wrapping makes crafting information unreadable -->{{!}}{{#dplvar:_crafted}}<br/>{{recipes/extract|result={{{name|}}}|withresult=y|sep=<br/>}}}}<!--
+-->}}
+| align=left | {{#dplvar:darts-properties:{{{name|}}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Darts/row}}
+</noinclude>

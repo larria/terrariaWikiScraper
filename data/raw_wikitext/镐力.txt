@@ -1,0 +1,292 @@
+'''{{tr|Pickaxe power}}'''是[[{{tr|Pickaxe}}]]或[[{{tr|Drills}}|{{tr|Drill}}]]拥有的力量大小。它决定了玩家在打破{{tr|block}}之前会对其造成多少损坏。一些{{tr|blocks}}会立刻被打破，而其他{{tr|blocks}}以低{{tr|Pickaxe power}}无法开采。{{tr|Pickaxe power}}在每次挥舞的[[{{tr|use time}}]]方面对于[[{{tr|mining speed}}]]属性''没有影响''，但低{{tr|Pickaxe power}}通常会导致每个{{tr|block}}需要多次打击，降低单位时间清除{{tr|block}}的速率，并会造成此{{tr|Pickaxe}}整体上更慢的印象。
+
+== 影响 ==
+=== 游戏中 ===
+{| class="terraria align-center" id="in-game-table"
+! rowspan=2 | {{tr|Block}}
+! rowspan=2 | HP
+! colspan=13 | {{tr|Pickaxe}}需要敲击的次数<br/>（要求的最小{{tr|pickaxe power}}）
+|-
+! {{item|mode=image|Copper Pickaxe}}<br/>(35)
+! {{item|mode=image|Iron Pickaxe}}<br/>(40)
+! {{item|mode=image|Silver Pickaxe}}<br/>(45)
+! {{item|mode=image|Tungsten Pickaxe}}<br/>(50)
+! {{item|mode=image|Gold Pickaxe}}<br/>(55)
+! {{item|mode=image|Nightmare Pickaxe}}<br/>(65)
+! {{item|mode=image|Deathbringer Pickaxe}}<br/>(70)
+! {{item|mode=image|Molten Pickaxe}}<br/>(100)
+! {{item|mode=image|Cobalt Pickaxe}}<br/>(110)
+! {{item|mode=image|Mythril Pickaxe}}<br/>(150)
+! {{item|mode=image|Pickaxe Axe}}<br/>(200)
+! {{item|mode=image|Picksaw}}<br/>(210)
+! {{item|mode=image|Luminite Pickaxes}}<br/>(225)
+|-
+| {{item|Dirt Block}}<ref name = "grass">如果{{tr|block}}上有长[[{{tr|grass}}]]或[[{{tr|moss}}]]，就会吸收掉对此{{tr|block}}的第一击（参见[[{{tr|Pickaxe power}}#机制]]，第 5 步。）这样所有{{tr|pickaxes}}所需的打击次数都会加 1。</ref><br/>{{item|Sand Block}}<br/>{{item|Clay Block}}<br/>{{item|Mud Block}}<ref name = "grass"/><br/>{{item|Silt Block}}<br/>{{item|Ash Block}}<br/>{{item|Snow Block}}<br/>{{item|Slush Block}}<br/>{{item|Hardened Sand Block}}<br/>{{item|Spike}}（{{eicons|1.4.0.1}}）<br/>{{item|Wooden Spike}}（{{eicons|1.4.0.1}}）|| 50%
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+|-
+| {{item|Stone Block}}<ref name = "grass"/><br/>{{item|Ebonsand Block}}<br/>{{item|Gold Ore}}<br/>{{item|Gray Brick}}<ref name = "grass"/><br/>所有这里未列出的{{tr|blocks}} || 100%
+| 3
+| 3
+| 3
+| 2
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+|-
+| {{item|Meteorite}} || 100%
+| {{na}}
+| {{na}}
+| {{na}}
+| 2
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+|-
+| {{item|Demonite Ore}}<ref name = ":2"/><br/> {{item|Crimtane Ore}}<ref name = ":2"/> || 100%
+| 3<ref name = ":2">如果{{tr|Pickaxe Power}} < 55%，{{tr|Demonite Ore}}和{{tr|Crimtane Ore}}只在海拔高于 0 英尺时才能采挖。</ref>
+| 3<ref name = ":2"/>
+| 3<ref name = ":2"/>
+| 2<ref name = ":2"/>
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+|-
+| {{item|Obsidian}} || 100%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{eicons|1.4.3.3}} 2<br/>{{eicons|1.4.3.3|invert=y}} {{na}}
+| 2
+| 2
+| 1
+| 1
+| 1
+| 1
+| 1
+| 1
+|-
+| {{item|Ebonstone Block}}<br/>{{item|Pearlstone Block}}<br/>{{item|Hellstone}}<br/>{{item|Crimstone Block}}<br/> || 200%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 4
+| 3
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+|-
+| {{item|image=Blue Brick.png/Green Brick.png/Pink Brick.png|Dungeon Bricks}}<ref name = ":3"/> || 200%
+| 6<ref name = ":3">如果{{tr|Pickaxe Power}}{{eicons|1.4.3.3}}小于 100% /{{eicons|1.4.3.3|invert=y}}小于 65%，则只在海拔高于 0 英尺时或以世界初始出生点为中心的 30% 世界宽度内才能采挖{{tr|Dungeon Bricks}}。</ref>
+| 5<ref name = ":3"/>
+| 5<ref name = ":3"/>
+| 4<ref name = ":3"/>
+| 4<ref name = ":3"/>
+| 4
+| 3
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+|-
+| {{item|Cobalt Ore}}<br/>{{item|Palladium Ore}} || 200%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 2
+| 2
+| 2
+| 1
+| 1
+| 1
+|-
+| {{item|Tombstone|s}} || 300%
+| 9
+| 8
+| 7
+| 6
+| 6
+| 5
+| 5
+| 3
+| 3
+| 2
+| 2
+| 2
+| 2
+|-
+| {{item|Mythril Ore}}<br/>{{item|Orichalcum Ore}} || 300%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 3
+| 2
+| 2
+| 2
+| 2
+|-
+| {{item|Adamantite Ore}}<br/>{{item|Titanium Ore}} || 400%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 3
+| 2
+| 2
+| 2
+|-
+| {{item|Spike}}（{{eicons|1.4.0.1|invert =y}}）<br/>{{item|Wooden Spike}}（{{eicons|1.4.0.1|invert =y}}） || 400%
+| 12
+| 10
+| 9
+| 8
+| 8
+| 7
+| 6
+| 4
+| 4
+| 3
+| 2
+| 2
+| 2
+|-
+| {{item|Lihzahrd Brick}} || 400%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 2
+| 2
+|-
+| {{item|Chlorophyte Ore}} || 500%
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| 3
+| 3
+| 3
+|}
+
+{{reflist}}
+
+=== 机制 ===
+每个{{tr|tile}}一开始时是 0 损坏量。每当{{tr|tile}}被[[{{tr|Tools}}#{{tr|Pickaxes}}和{{tr|Drills}}|{{tr|pickaxe}}]]击打时，它的损坏量就会增加，具体的增加量计算如下：
+# <code>damageIncrease = 0</code>
+# 如果符合以下条件之一，<code>damageIncrease = 100</code>：
+#* 此{{tr|The tile}}是任意一种[[{{tr|Objects}}|{{tr|background plant}}或{{tr|mushroom}}]]。
+#* 此{{tr|The tile}}是任意一种{{tr|Thorns}}，例如{{tr|Corruption Thorns}}、{{tr|Crimson Thorns}}、{{tr|Jungle Thorns}}。
+#* 此{{tr|tile}}是任意一种[[{{tr|Moss}}]]植株。
+#* 此{{tr|The tile}}是任意一种[[{{tr|Vine}}]]。
+#* 此{{tr|The tile}}是任意一种[[{{tr|Torch}}]]。
+#* 此{{tr|The tile}}是任意一种[[{{tr|Ropes}}|{{tr|Rope}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Ambient objects}}|{{tr|Ambient object}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Thin Ice}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Dyes}}#{{tr|Basic Dyes}}|{{tr|Dye Plant}}]]或[[{{tr|Strange Plant}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Book}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Herbs}}|{{tr|Herb}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Coin Pile}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Leaf Block}}]]或[[{{tr|Mahogany Leaf Block}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Pumpkin Seed}}]]。
+#* 此{{tr|The tile}}是[[{{tr|Crystal Shard}}]]。
+# 将{{tr|Pickaxe Power}}加到伤害增加量上，某些{{tr|tiles}}有{{tr|Pickaxe Power}}缩放，具体如下：
+#* <code>damageIncrease = damageIncrease + Pickaxe Power * 2</code>，对于{{item|Dirt Block}}、{{item|Clay Block}}、{{item|Sand Block}}、{{item|Hardened Sand Block}}、{{item|Ash Block}}、{{item|Mud Block}}、{{item|Silt Block}}、{{item|Slush Block}}、和{{item|Snow Block}}。
+#* <code>damageIncrease = damageIncrease + Pickaxe Power / 2</code>对于{{item|Ebonstone Block}}、{{item|Crimstone Block}}、{{item|Pearlstone Block}}、{{item|Hellstone}}、{{item|Cobalt Ore}}、{{item|Palladium Ore}}、和所有{{item|image=Blue Brick.png/Green Brick.png/Pink Brick.png|Dungeon Brick}}。
+#* <code>damageIncrease = damageIncrease + Pickaxe Power / 3</code>，对于{{item|Mythril Ore}}、{{item|Orichalcum Ore}}。
+#* <code>damageIncrease = damageIncrease + Pickaxe Power / 4</code>，对于{{item|Adamantite Ore}}、{{item|Titanium Ore}}、{{item|Spike}}、{{item|Wooden Spike}}、和{{item|Lihzahrd Brick}}。
+#* <code>damageIncrease = damageIncrease + Pickaxe Power / 5</code>，对于{{item|Chlorophyte Ore}}。
+#* <code>damageIncrease = damageIncrease + Pickaxe Power</code>，对于所有其他未列出的{{tr|blocks}}，即{{item|Stone Block}}、{{item|Red Brick}}、等等。
+# 如果符合以下条件之一，<code>damageIncrease = 0</code>：
+#* {{tr|Pickaxe power}}低于 210%，并且此{{tr|tile}}是{{item|Lihzahrd Brick}}或{{item|Lihzahrd Altar}}。
+#* {{tr|Pickaxe power}}低于 200%，并且此{{tr|the tile}}是{{item|Chlorophyte Ore}}。
+#* {{tr|Pickaxe power}}低于 150%，并且此{{tr|tile}}是{{item|Adamantite Ore}}或{{item|Titanium Ore}}。
+#* {{tr|Pickaxe power}}低于 110%，并且此{{tr|tile}}是{{item|Mythril Ore}}或{{item|Orichalcum Ore}}。
+#* {{tr|Pickaxe power}}低于 100%，并且此{{tr|tile}}是{{item|Cobalt Ore}}或{{item|Palladium Ore}}。
+#* {{tr|Pickaxe power}}低于 65%，并且此{{tr|tile}}是{{item|Ebonstone Block}}、{{item|Crimstone Block}}、{{item|Pearlstone Block}}、{{item|Hellstone}}、{{item|Obsidian}}、或{{item|Desert Fossil}}。
+#* {{tr|Pickaxe power}}低于 65%，并且此{{tr|tile}}是{{item|image=Blue Brick.png/Green Brick.png/Pink Brick.png|Dungeon Brick}}而且不在世界中央 30% 范围内。
+#* {{tr|Pickaxe power}}低于 55%，并且此{{tr|tile}}是{{item|Demonite Ore}}或{{item|Crimtane Ore}}且在{{tr|surface}}以下。
+#* {{tr|Pickaxe power}}低于 50%，并且此{{tr|tile}}是{{item|Meteorite}}。
+# 如果此{{tr|tile}}是任意一种{{tr|Grass block}}或{{tr|Moss block}}，且 <code>damageAmount + damageIncrease >= 100</code>，则 <code>damageIncrease = 0</code>。
+一旦{{tr|tile}}的损坏量累积到 100，此{{tr|tile}}会被摧毁。请注意，{{tr|tile}}被击打后未被摧毁并不意味着它就毫无变化，有可能有其他改变，例如，{{tr|Grass block}}会变为普通的{{tr|Dirt Block}}。
+
+== 备注 ==
+* {{eversions|Laser Drill|short}}中，{{tr|players}}能获得的最高{{tr|pickaxe power}}为 230%，通过使用[[{{tr|Laser Drill}}]]。{{eversions|Laser Drill|short|invert=y}}中，{{tr|players}}能获得的最高{{tr|pickaxe power}}为 210%，通过使用[[{{tr|Picksaw}}]]。两者都能用于挖掘[[{{tr|Lihzahrd Brick}}]]。
+* {{icon/old-gen}}如果{{tr|player}}的{{tr|pickaxe power}}足够高，他们可以只用 1 次击打挖掘像{{tr|Grass}}和{{tr|Moss}}这样的{{tr|block}}，而不是 2 次击打。
+
+== 花絮 ==
+* [[{{tr|Gravedigger's Shovel}}]]可以挖掘{{tr|blocks}}，但不具有{{tr|pickaxe power}}。所有它能挖掘的{{tr|blocks}}，都需要 2 次击打才能挖掘。
+
+== 历史 ==
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+
+{{language info|en=Pickaxe power}}

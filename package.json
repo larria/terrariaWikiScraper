@@ -1,0 +1,11 @@
+{
+    "name": "terraria-scraper",
+    "version": "1.0.0",
+    "scripts": {
+        "cargo": "node scraper.js",
+        "map": "node step1_get_map.js",
+        "text": "node step2_dump_text.js",
+        "start": "node main.js",
+        "clean": "rm -rf ./data"
+    }
+}

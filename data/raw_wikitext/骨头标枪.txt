@@ -1,0 +1,57 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3378
+| debuff = Penetrated / 15 / 100%
+}}
+[[File:Bone Javelin (demo).gif|frame|{{tr|Bone Javelins}}抛向[[{{tr|Target Dummy}}]]。注意一旦有更多{{tr|javelins}}刺上之后，随时间推移造成的伤害会因此而提高。]]
+
+'''{{tr|Bone Javelin}}'''是用[[{{tr|Sturdy Fossil}}]]制成的[[{{tr|consumable Ranged weapons}}|{{tr|ranged weapon}}]]。当击中[[{{tr|enemy}}]]时，它会插在{{tr|enemy}}身上并造成'''{{tr|the Penetrated}}'''[[{{tr|debuff}}]]，造成每秒 3 点伤害，持续 15 秒。每个{{tr|enemy}}身上最多可被刺上六根{{tr|Bone Javelins}}，造成总共每秒 18 点伤害。{{source code ref|v=1.4.4.9|field=Terraria.Projectile._javelinsMax6|method=Terraria.Projectile.Damage / Terraria.Projectile.StatusNPC / Terraria.NPC.UpdateNPC_BuffApplyDOTs / Terraria.Projectile.AI|t=在 <code>Terraria.Projectile.AI</code> 中相关的部分在 <code>aiStyle == 113</code> 代码块中。}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Bone Javelin|expectedrows=1}}
+
+== 备注 ==
+* 尽管基础伤害可以通过[[{{tr|Armor}}]]、[[{{tr|Accessory}}|{{tr|accessories}}]]、和[[{{tr|Buffs}}]]来增强，但单个{{tr|Bone Javelin}}的持续伤害依然会是每秒 3 点伤害。
+* {{tr|Bone Javelins}}似乎对[[{{tr|Granite Golem}}]]有种奇怪的效果。当{{tr|Granite Golem}}交叉双臂变得不受伤害时，所有{{tr|Bone Javelins}}会立刻消失，但当{{tr|Granite Golem}}的不受伤害状态消退时，它会受到多次 1 伤害。这可能是因为随时间造成的伤害是通过负[[{{tr|health regeneration}}]]来造成，而{{tr|Granite Golem}}在变得不受伤害时没有重置其{{tr|regeneration}}属性。
+
+== 小贴士 ==
+* {{tr|The Bone Javelin}}对于[[{{tr|pre-Hardmode}}]]中的 {{tr|boss}} 战是种非常好的辅助武器，甚至在得到了更好的武器之后依然如此。由于{{tr|Penetrated debuff}}最多可以叠加 6 层，先射中 6 发再切换到有更高 {{DPS}} 的主武器会最大化伤害输出。
+
+== 花絮 ==
+* {{tr|The Penetrated debuff}}永远无法作用到玩家身上，因此它没有单独的{{tr|debuff icon}}，而是用[[{{tr|Distorted}}]]{{tr|debuff}}的图标来代替。
+* {{tr|Bone Javelins}}类似于[[{{tr|Daybreak}}]]，都会扎在{{tr|enemy}}身上并造成叠加伤害{{tr|debuff}}。
+
+== 免疫的 NPC ==
+{{immunities|Penetrated}}
+
+== 另见 ==
+* [[{{tr|Javelin}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 29 降低至 20。
+** 现在会制作出 20 个而非 15 个。
+** {{tr|Damage type}}从{{tr|Throwing}}改为{{tr|Ranged}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Fossils}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Bone Javelin}}

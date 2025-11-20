@@ -1,0 +1,166 @@
+{{npc infobox
+| auto = 35
+| idprojectile = 270#expert
+| environment = Dungeon entrance+Night
+| type = Boss
+| damage2 = <br/>1000 {{note|small=y|paren=y|在[[{{tr|day}}]]期间}}
+| defense = {{modes|{{npcinfo|Skeletron Head|defense}}|{{npcinfo|Skeletron Head|defense|expert}}，每只存活的手 + 25}}<br/>{{modes|{{#expr:{{npcinfo|Skeletron Head|defense}}-10}}|{{#expr:{{npcinfo|Skeletron Head|defense}}-10}}，每只存活的手 +25}} {{note|small=y|paren=y|旋转时}}<br/>9999 {{note|small=y|paren=y|在{{tr|day}}期间}}
+| debuff = Bleeding | debuffmode = expert
+| debuffchance = 100%
+| debuffduration = {{expert|6–10 {{tr|seconds}}}}
+
+| Healing Potion|5–15|100% {{eicons|1.4.3.3}}
+| Lesser Healing Potion|5–15|100% {{eicons|1.4.3.3|invert=y}}
+| Skeletron Mask|1|14.29% @normal
+| Skeletron Hand|1|12.24% @normal
+| Book of Skulls|1|10.5% @normal
+| Skeletron Trophy|1|10%
+| Chippy's Couch|1|14.29%
+| Treasure Bag (Skeletron)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Bone Glove|1|100% #expert
+  |:group:start|必定掉落下列 3 种物品之一|3 #expert
+  | Skeletron Mask|1|33% #expert
+  | Skeletron Hand|1|33% #expert
+  | Book of Skulls|1|33% #expert
+  |:group:end|-----------------------------------|
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin}}掉落|5]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Possessed Skull|1|{{master|25%}} @master
+| Skeletron Relic|1|{{master|100%}} @master
+
+| imageother = Map Icon Skeletron.png
+| imageothercaption = Map Icon
+| sound1 = Roar 0.wav
+| soundcaption1 = 进入旋转阶段
+}}
+{{npc infobox|boxwidth=19em
+| auto = 36
+| image = Skeletron Hand (NPC).png
+| type = Boss Part
+| environment = Dungeon entrance+Night
+| debuff = Slow | debuffmode = expert
+| debuffchance = 50%
+| debuffduration = {{expert|1–2 {{tr|seconds}}}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.BONED_Description}}|，|1}}}}}}
+{{dablink|不要与[[{{tr|Skeleton}}]]，可在{{tr|underground}}发现的{{tr|enemy}}，或是[[{{tr|Skeletron Prime}}]]，{{tr|Skeletron}}的{{tr|Hardmode}}版本相混淆。}}
+
+'''{{tr|Skeletron}}'''是一个[[{{tr|Pre-Hardmode}}]]的 [[{{tr|boss}}]]。玩家在进入[[{{tr|Dungeon}}]]之前必须击败{{tr|Skeletron}}，击败{{tr|Skeletron}}可以让所有玩家在该世界获得任意进出{{tr|Dungeon}}区域的权限。击败它也可以使[[{{tr|Clothier}}]] [[{{tr|NPC}}]] 在有空余[[{{tr|Housing}}]]的时候入住。
+
+如果玩家在击杀{{tr|Skeletron}}之前尝试进入{{tr|Dungeon}}，[[{{tr|Dungeon Guardian}}]]会在玩家进入 0 [[{{tr|Depth Meter}}|深度]]以下地区时生成<ref>注意需要玩家的头低于 0 {{tr|depth}}。[[{{tr|Depth Meter}}]]测量的是玩家的脚的深度，而玩家有 3 {{tr|tiles}}高，{{tr|Dungeon Guardians}}只会在{{tr|Depth Meter}}显示“3′ {{tr|Underground}}”或更低时才会开始生成。</ref>，它通常只需要一击就能击杀玩家，造成 1000 伤害。另外，击杀{{tr|Dungeon Guardian}}不会使玩家获得进出[[{{tr|Dungeon}}]]的权限，因此要（安全地）进入{{tr|Dungeon}}，击败{{tr|Skeletron}}是必需的。
+
+{{boss music|Boss 1|Boss 1 (Otherworldly)}}
+
+== 召唤 ==
+在[[{{tr|night}}]]与在{{tr|Dungeon}}入口的[[{{tr|Old Man}}]]交谈可以召唤{{tr|Skeletron}}，在选择''“{{gameText|LegacyInterface.50}}”''选项后他就会变成{{tr|Skeletron}}。如果玩家在{{tr|day}}和{{tr|Old Man}}交谈，他会告诉玩家在{{tr|night}}再来。每个{{tr|night}}都能召唤一次{{tr|Skeletron}}，因为{{tr|Old Man}}直到{{tr|dawn}}才会重生。当玩家具有低于 300 最大[[{{tr|health}}]]和/或 10 [[{{tr|defense}}]]时，{{tr|Old Man}}会认为玩家太弱，不足以解除他的诅咒，不过他仍然会提供召唤{{tr|Skeletron}}的选项。
+
+{{tr|Skeletron}}可以以此种方式重复召唤，直到它被击败。一旦它被击败，{{tr|Old Man}}的诅咒就会解除并不再出现。[[{{tr|Clothier}}]] [[{{tr|NPCs}}|{{tr|NPC}}]] 会入住，他和{{tr|Old Man}}有明显相似。只要有一间空的{{tr|house}}，他就会搬入{{tr|town}}里。在玩家获得[[{{tr|Clothier Voodoo Doll}}]]后，就可以重复召唤{{tr|Skeletron}}。装备此{{tr|accessory}}后，会允许玩家杀死{{tr|Clothier}}，在{{tr|night}}如此做会召唤{{tr|Skeletron}}。在{{tr|day}}杀死他不会有任何效果。
+
+== 行为 ==
+{{tr|Skeletron}}是一个巨大的漂浮骷髅头，拥有两只独立的手。其所有的部位都可以穿过[[{{tr|blocks}}]]，并尝试接触玩家以造成伤害。所有的部位都可以被分别击杀，但是击杀{{tr|Skeletron}}只需要击败它的头部。
+
+{{tr|Skeletron}}会在两种攻击方式之间交替切换：
+# 头部保持在上方飞行，用手击打玩家。
+# 头部旋转，接触时造成较高伤害，但在此攻击期间其{{tr|defense}}会降低 10 （{{tr|Classic Mode}}中下降到 {{#expr:{{npcinfo|Skeletron Head|defense}}-10}}）。
+
+在整场战斗期间，{{tr|Skeletron}}会在这两个阶段间规律切换，第一阶段持续约 13.33 秒，第二阶段持续约 6.67 秒。每次进入第二阶段时，它会发出{{sound|[[Media:Roar_0.wav|吼声]]|Roar_0.wav|nofallback=y}}。
+
+如果玩家太长时间没有杀死它，当[[{{tr|dawn}}]]到来时，{{tr|Skeletron}}的行为会变得和[[{{tr|Dungeon Guardian}}]]一样，进行头部旋转攻击，具有极高的{{tr|damage}}和{{tr|defense}}，这通常会快速地杀死它附近的任何玩家。{{tr|Skeletron}}会保持这一形态直到死亡或消失，即使玩家直到下一个{{tr|dusk}}不死亡也一样。在这一形态下杀死{{tr|Skeletron}}仍然算作击败它。
+
+=== 专家模式 ===
+{{tr|Skeletron}}在{{eil|Expert Mode}}下具有额外属性：
+* 其头部的{{tr|The defense}}每有一只手就会增加 25，使得其初始总{{tr|defense}}为 {{#expr:{{npcinfo|Skeletron Head|defense|expert}}+25+25}}。击败一只手后，这会降低为 {{#expr:{{npcinfo|Skeletron Head|defense|expert}}+25}}，击败两只手后最终降低至 {{npcinfo|Skeletron Head|defense|expert}}。
+** 在旋转时，其{{tr|defense}}也只会降低至 {{#expr:{{npcinfo|Skeletron Head|defense|expert}}+25+25-10}} / {{#expr:{{npcinfo|Skeletron Head|defense|expert}}+25-10}}。仅当两只手都被击败后，才会像{{tr|Classic Mode}}中一样降低至 {{#expr:{{npcinfo|Skeletron Head|defense|expert}}-10}}。
+* 手的挥舞频率提高 50%，且速度提高 16%。
+<!-- UNSURE ABOUT THIS ONE -->
+** 此外，手在攻击完成后会更快地回到头部旁。
+* 头部在不旋转时 的加速度更高，速度更快。
+* 旋转攻击的速度提高 233%。此外，这在以下情况下会进一步提高：
+** 击败一只手后提高 5%，击败两只手后则提高 10%。
+** 如果玩家的距离远于 9.375 {{tr|tiles}}，每超过这一阈值 3.125 {{tr|tiles}}，其{{tr|speed}}就会乘以 1.1，上限为 37.5 {{tr|tile}}远时的 2.6 倍速度。
+* 一旦其中一只手被击败，或头部的{{tr|health}}低于 75%（{{#expr:{{npcinfo|Skeletron Head|hp|expert}}*0.75}}），头部就会开始向玩家发射自动追踪的{{tr|skulls}}，它们会在接触{{tr|solid block}}时消失。它每隔约 1.33 秒发射一个{{tr|skull}}，在两只手都被击败后频率翻倍到每隔约 0.67 秒发射一个。它在旋转攻击时会停止发射{{tr|skull}}。
+* {{tr|Skeletron}}在面对多个玩家时移动更快，且具有更好的 [[{{tr|AI}}]]。因此，它也能够在旋转时用{{tr|knockback}}定住玩家，若玩家无法逃离（如使用[[{{tr|Hooks}}]]）就几乎能立即杀死他们。
+* {{tr|Skeletron}}能够造成[[{{tr|debuffs}}]]：手能造成[[{{tr|Slow}}]]，头部能造成[[{{tr|Bleeding}}]]。
+
+== 备注 ==
+[[File:Oldman.jpg|thumb|132x132px|在{{tr|Dungeon}}的{{tr|Old Man}}。]]
+
+* {{tr|The Old Man}}可以被杀死。不过，这不算作杀死{{tr|Skeletron}}，{{tr|Old Man}}仍会重生。
+* 如果玩家没能击败{{tr|Skeletron}}，{{tr|The Old Man}}会在下个{{tr|dawn}}时重生。
+* 在{{tr|night}}结束后杀死{{tr|Skeletron}}仍算作击败它，也将允许玩家安全进入{{tr|Dungeon}}。
+* 若玩家在{{tr|day}}死亡，{{tr|Skeletron}}的{{tr|defense and damage}}会重置为正常数值。
+
+== 成就 ==
+{{achievement|name=Boned}}
+
+== 小贴士 ==
+{{strategies}}
+<!-- PLEASE ADD STRATEGIES AT THE STRATEGY PAGE: Guide:Skeletron strategies, INSTEAD OF HERE -->
+
+* 直到击败[[{{tr|Golem}}]]，击败{{tr|Skeletron}}才是推进游戏进程所必需的。开始[[{{tr|Lunar Events}}]]所需的[[{{tr|Cultists}}]]只会在击败{{tr|Golem}}和{{tr|Skeletron}}后生成。不过，在{{tr|pre-Hardmode}}跳过{{tr|Skeletron}}会缺少有价值的{{tr|Dungeon loot}}，也无法获得[[{{tr|Mechanic}}]]、[[{{tr|Safe}}]]以及{{eil|Void Vault}}。
+* 不要用[[{{tr|Slime Mount}}]]在{{tr|Skeletron}}的头部上弹跳太多次，因为离它太远会导致它消失。此外，[[{{tr|Space}}]]中的低{{tr|gravity}}会导致几乎无法绕过{{tr|Skeletron}}下落回去。
+** 虽说如此，{{tr|Slime Mount}}在战斗期间仍然是很有用的{{tr|tool}}，也是玩家被{{tr|Skeletron}}的头部的旋转攻击困住时的一种逃脱方法。
+* 任何能反弹的{{tr|weapon}}（{{eicons|1.4.0.1|invert=y}}如{{tr|Dungeon}}中的[[{{tr|Water Bolt}}]]）都很有用。
+* 当有[[{{tr|Multiplayer}}|多名玩家]]时，推荐将[[{{tr|spawn point}}]]设置在{{tr|Dungeon}}附近，因此若玩家死亡他们就能快速地重新加入战斗。
+* 虽然{{tr|Skeletron}}（在{{eversions|1.4.1|invert=y}}中）免疫许多[[{{tr|debuffs}}]]，它在任何版本中都不免疫[[{{tr|Frostburn}}]]。
+* 推荐首先攻击手，因为杀死它们会使得在战斗的剩余时间内轻松躲避{{tr|Skeletron}}。
+** 这在{{eil|Expert Mode}}中几乎是必须的，因为每有一只手存活，{{tr|Skeletron}}就会获得 25 {{tr|defense}}。
+** 若在[[{{tr|Minecart}}]]上移动得足够快会使得手消失。
+* 在{{tr|Expert Mode}}中，若玩家持续向不同方向移动，大部分自动追踪的{{tr|skulls}}都将无法击中玩家；此外也注意它们无法穿过{{tr|tiles}}。
+* 在{{tr|Expert Mode}}中，推荐使用[[{{tr|yoyo}}]]或{{tr|flail}}，以及在头顶用{{tr|block}}设置一道保护屏障。
+
+== 花絮 ==
+* 假设玩家高 5 英尺 9½ 英寸（1.76 米），{{tr|Skeletron}}的头就有 11 英尺（3.35 米）高，8 英尺（2.43 米）宽。手则是 10 英尺（3 米）高，7 英尺（2 米）宽。
+* 在游戏的开发期间时，保护[[{{tr|Dungeon}}]]的曾是{{tr|Skeletron Heads}}，但若它被杀死就会算作击败了{{tr|Skeletron}}。因此[[{{tr|Dungeon Guardian}}]]被引入以保护{{tr|Dungeon}}。
+* {{tr|Skeletron}}的头和{{tr|Dungeon Guardian}}很像。
+* 算上{{tr|Skeletron}}的双手的{{tr|health}}，它的{{tr|health}}要比{{eil|Expert Mode}}下的[[{{tr|Wall of Flesh}}]]还高。
+* {{tr|Skeletron}}是游戏内唯一一个没有必然掉落物的 [[{{tr|boss}}]]（不算[[{{tr|Healing Potion}}]]、{{tr|Expert Mode}}的{{eil|Treasure Bag}}、和[[{{tr|Master Mode}}]]的{{eil|Relics}}）。
+* 在{{eversions|1.3.0.1}}中，{{tr|Old Man}}有{{tr|health bar}}，但在{{eversions|1.3.0.1|invert=y}}中没有。
+* 在''{{tr|Terraria}}''和''[[{{tr|Edge of Space}}]]''的{{tr|crossover}}预告片中，{{tr|Skeletron}}变成了一个叫做“Omegatron”的 {{tr|boss}}。
+* {{tr|Skeletron}}（Skeletron）的名称和{{维基百科|Masters of the Universe|t=决胜时空战区|b=y}}系列中的主要反派{{维基百科|Skeletor|t=幽灵王}}很像。
+* {{tr|Skeletron}}的手臂和手部的关节间会喷出{{tr|Blood}}，可能在暗示它们被切断了。从{{tr|lore}}中看，事实就是这样。
+[[File:Skeletron cloud.png|thumb|right|{{tr|The Skeletron}}形状的{{tr|cloud}}。]]
+* 在{{eversions|1.4.0.1}}中，{{tr|background}}中偶尔能看到{{tr|Skeletron}}形状的[[{{tr|Ambient entities|link=y}}#稀有云|{{tr|cloud}}]]。
+* 在''{{tr|Terraria}}''的[[{{tr|Desktop-Release}}|首个正式版]]中，{{tr|Wall of Flesh}}尚未引入，{{tr|Skeletron}}曾是游戏的最终 {{tr|boss}}。
+* 它是两个需要某个{{tr|town}} [[{{tr|NPC}}]] 存活才能召唤的 {{tr|boss}} 之一，另一个是{{tr|Wall of Flesh}}。
+* {{tr|Skeletron}}手臂的外观图文件被命名为<code>Arm_Bone</code>（手臂骨）。类似地，[[{{tr|Skeletron Prime}}]]手臂的外观图文件被命名为<code>Arm_Bone_2</code>。
+* 在游戏的早期版本，{{tr|Skeletron}}的各个部分受到来自远程武器的伤害增加。{{verify}}
+* {{lore|[[{{tr|Dryad}}]]们扯下了[[{{tr|Cthulhu}}]]的部分{{tr|skeleton}}，一个诅咒导致了{{tr|Dungeon}}的所有居民变成了不死族。}}
+{{bestiary|article=}}
+:* “前暴君”指的是[[{{tr|Cthulhu}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.3.3|现在掉落[[{{tr|Healing Potion}}]]而非[[{{tr|Lesser Healing Potion}}]]。}}
+{{history|Desktop 1.4.1|不再免疫[[{{tr|On Fire!}}]]、[[{{tr|Cursed Inferno}}]]、[[{{tr|Venom}}]]、[[{{tr|Shadowflame}}]]、[[{{tr|Celled}}]]、或[[{{tr|Daybroken}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Skeletron Relic}}]]，{{tr|Master Mode}}独有的掉落，作为类似[[{{tr|trophy}}]]的物品。
+** 添加了[[{{tr|Possessed Skull}}]]，{{tr|Master Mode}}独有的掉落，会召唤迷你{{tr|Skeletron}}{{tr|pet}}。
+** 添加了[[{{tr|Chippy's Couch}}]]，参考了同名的 Youtube 用户/主播。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.4.3|修复了召唤时的错误[[{{tr|status messages}}|{{tr|status message}}]]（曾是“Skeleton has awoken”而非“Skeletron has awoken”）。}}
+{{history|Desktop 1.3.0.1|{{tr|Expert mode}}中添加了新 {{tr|AI}} 和{{tr|Treasure Bag}}。}}
+{{history|Desktop 1.2.1.2|现在当使用{{tr|Clothier Voodoo Doll}}时会从{{tr|the Clothier}}身上生成{{tr|Skeletron}}。}}
+{{history|Desktop 1.2|
+** 可以被[[{{tr|Clothier Voodoo Doll}}]]重新召唤。
+** 具有额外的{{tr|item}}掉落（此前只掉落{{tr|Lesser Healing Potions and coins}}）。}}
+{{history|Desktop 1.0.6|
+** {{tr|Head health}}由 5000 降低至 4400，但{{tr|damage}}由 30 提升至 32。
+** 手{{tr|health}}由 800 降低至 600，{{tr|defense}}由 18 降低至 14，{{tr|damage}}由 25 降低至 20。}}
+{{history|Desktop 1.0.5|
+** {{tr|Head health}}由 6000 降低至 5000，{{tr|defense}}由 12 降低至 10，{{tr|damage}}由 35 降低至 30。
+** 手{{tr|health}}由 1200 降低至 800，{{tr|damage}}由 30 降低至 25。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Skeletron}}

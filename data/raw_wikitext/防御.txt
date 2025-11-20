@@ -1,0 +1,469 @@
+{{legacy nav tab}}
+{{float file box|[[File:Defense.png|link=]]|{{eicons|1.3.0.1}}<br/>游戏内的{{tr|defense}}图标。}}
+
+'''{{tr|Defense}}'''是一个决定每次击中时受到的[[{{tr|damage}}]]的改变量的属性。正值的{{tr|defense}}属性会''降低''受到的伤害，而负值的{{tr|defense}}会''提高''受到的伤害。对一个实体造成的{{tr|damage}}总是至少为 1，无论{{tr|defense}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.StrikeNPC / Terraria.Main.CalculateDamageNPCsTake / Terraria.Main.CalculateDamagePlayersTake}}{{footnote|唯一例外为当玩家的[[{{tr|multiplayer}}]]队友装备了[[{{tr|Paladin's Shield}}]]时。此时若玩家正常情况下会从一次攻击中受到 1 {{tr|damage}}，但该次{{tr|damage}}被装备{{tr|Paladin's Shield}}的队友分摊，则该玩家会受到 0 伤害。}}
+
+[[{{tr|player}}]]的{{tr|Defense}}可以通过穿上[[{{tr|armor}}]]和[[{{tr|accessories}}]]来提升，并且可以通过各种[[{{tr|buffs}}]]/[[{{tr|debuff}}]]暂时增加/降低；玩家的{{tr|defense}}总是为正值，其{{tr|defense}}不能被降低到 0 以下。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+
+非玩家实体（[[{{tr|enemies}}]]、[[{{tr|critters}}]]、[[{{tr|town NPCs}}]]，等等）也拥有{{tr|defense}}属性，但它只能被实体自身的机制所改变。部分{{tr|items}}具有[[#{{tr|Armor penetration}}|{{tr|armor penetration}}]]效果，这会使其在伤害计算时等效地无视实体的部分{{tr|defense}}。
+
+有一些形式的伤害不可能通过{{tr|Defense}}来减免。例如[[{{tr|Cursed Inferno}}]]这样的持续伤害性[[{{tr|Debuffs}}]]或在[[{{tr|water}}]]中[[{{tr|drowning}}]]所造成的伤害。但是，[[{{tr|lava}}]]造成的伤害''可以''通过{{tr|defense}}来降低。
+
+== 玩家 ==
+{{tr|Defense}}对伤害进行直接减少，即，伤害是每一击都会被减掉一个固定量（与之相对的是乘算的[[{{tr|damage reduction}}]]，它按百分比减少伤害且是在{{tr|defense}}生效后计算的）。它会在通用的 {{percent|±15%}} 伤害随机化之后进行计算。
+
+公式如下：{{source code ref|v=1.4.4.9|method=Terraria.Main.CalculateDamagePlayersTake}}
+
+<math>\text{净伤害} = \lfloor \text{攻击伤害} - \text{防御} \cdot f \rfloor</math>
+
+系数 <math display="inline">f</math> 取决于[[{{tr|world difficulty}}]]：0.5 / {{expert|0.75}} / {{master|1}}。
+
+=== 范例 ===
+{{options/set|note|block=y|small=y}}
+{| class="terraria lined sortable align-center"
+! rowspan=2 | {{tr|Attack damage}}
+! rowspan=2 | {{tr|Defense}}
+! colspan=3 | 净{{tr|damage}}
+|-
+! [[File:Classic mode icon.png|14px|link=|{{tr|Classic Mode}}]] {{tr|Classic}}
+! [[File:Expert mode icon.png|14px|link=|{{tr|Expert Mode}}]] {{tr|Expert}}
+! [[File:Master mode icon.png|14px|link=|{{tr|Master Mode}}]] {{tr|Master}}
+|-
+| 40 || 20
+| '''30'''{{note| ⌊40 − 20 × 0.5⌋ }}
+| '''25'''{{note| ⌊40 − 20 × 0.75⌋ }}
+| '''20'''{{note| ⌊40 − 20 × 1⌋ }}
+|-
+| 40 || 30
+| '''25'''{{note| ⌊40 − 30 × 0.5⌋ }}
+| '''17'''{{note| ⌊40 − 30 × 0.75⌋ }}
+| '''10'''{{note| ⌊40 − 30 × 1⌋ }}
+|-
+| 75 || 20
+| '''65'''{{note| ⌊75 − 20 × 0.5⌋ }}
+| '''60'''{{note| ⌊75 − 20 × 0.75⌋ }}
+| '''55'''{{note| ⌊75 − 20 × 1⌋ }}
+|-
+| 75 || 30
+| '''60'''{{note| ⌊75 − 30 × 0.5⌋ }}
+| '''52'''{{note| ⌊75 − 30 × 0.75⌋ }}
+| '''45'''{{note| ⌊75 − 30 × 1⌋ }}
+|}{{options/reset|note}}
+
+=== 备注 ===
+* 由于公式中的系数 <math display="inline">f</math> 更大，{{tr|Defense}}在更高的[[{{tr|World difficulty}}|{{tr|difficulties}}]]下会更有效。不过，{{tr|enemies}}造成的{{tr|damage}}通常也会更高，从而减少了获益程度。事实上，{{tr|defense}}的有效性提高通常不足以抵消{{tr|damage}}的提高，玩家仍然会受到更高的{{tr|damage}}。
+** 例如，{{tr|Expert Mode}}下大部分{{tr|enemies}}的{{tr|damage}}是{{tr|Classic Mode}}下的两倍，而玩家的{{tr|defense}}有效性仅提高至 1.5 倍。因此，在同样{{tr|defense}}时，相较于{{tr|Classic Mode}}，玩家受到{{tr|enemies}}的{{tr|damage}}会提高超过两倍。具体来说，假设玩家拥有 50 {{tr|defense}}（如穿着[[{{tr|Adamantite armor}}]]，使用{{tr|Adamantite Helmet}}）时被[[{{tr|Giant Bat}}]]击中：
+*** 在{{tr|Classic Mode}}下，{{tr|Giant Bat}}的 45 {{tr|damage}}被降低 25，玩家受到 20 {{tr|damage}}（⌊45 − 50 × 0.5⌋）。
+*** 在{{tr|Expert Mode}}下，{{tr|the Giant Bat}}的 90 {{tr|damage}}被降低 38，玩家受到 52 {{tr|damage}}（⌊90 − 50 × 0.75⌋）。这是{{tr|Classic Mode}}下{{tr|damage}}的 2.6 倍。
+* 在 [[{{tr|PvP}}]] 中，虽然实际受到的{{tr|damage}}是用上述公式计算的，但触发某些{{tr|set bonuses}}时使用的{{tr|damage}}值（[[{{tr|Beetle Might}}]]的提高速度和[[{{tr|Spectre Hood}}]]的[[{{tr|lifesteal}}]]）会以系数 <math display="inline">f</math> 为 0.5 计算：{{source code ref|v=1.4.4.9|method=Terraria.Main.CalculateDamagePlayersTakeInPVP}}
+: <math>\text{伤害值} = \left\lfloor \text{攻击伤害} - \text{防御} \times 0.5 \right\rfloor</math>
+: 换言之，当在[[{{tr|Expert Mode}}]]或以上启用 [[{{tr|PvP}}]] 时，这些{{tr|set bonuses}}会如同{{tr|world}}处于[[{{tr|Classic Mode}}]]下一样计算{{tr|damage}}。
+
+== 非玩家实体 ==
+非玩家实体和玩家一样有{{tr|defense}}属性，但它们在{{tr|Expert Mode or Master Mode}}中并不会从{{tr|defense}}上得到更多保护。它们总是会将伤害以{{tr|defense}}的 50% 改变：
+
+<math>\text{净伤害} = \left\lfloor \text{攻击伤害} - \frac{\text{防御}}{2} \right\rfloor</math>
+
+和玩家一样，{{tr|defense}}会在通用的 {{percent|±15%}} 伤害随机化之后进行计算。 
+
+=== 范例 ===
+{{options/set|item|icons=n|wrap=y|maxsize=35x35px}}
+{| class="terraria lined align-center"
+! colspan=2 rowspan=2 | 目标
+! colspan=2 | 净{{tr|damage}}
+|-
+! style="font-weight:normal" | {{item|Gold Broadsword|size=40px|note2={{iteminfo|Gold Broadsword|damage}} {{tr|damage}}}}
+! style="font-weight:normal" |{{item|Meowmere|size=40px|note2={{iteminfo|Meowmere|damage}} {{tr|damage}}}}
+|-
+| {{item|mode=table|Green Slime|note2={{npcinfo|Green Slime|defense}} {{tr|defense}}}}
+| '''{{#expr:{{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Green Slime|defense}}/2}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Green Slime|defense}} ÷ 2⌋ }}
+| '''{{#expr:{{iteminfo|Meowmere|damage}}-{{npcinfo|Green Slime|defense}}/2}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Green Slime|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Chaos Elemental|note2={{npcinfo|Chaos Elemental|defense}} {{tr|defense}}}}
+| '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:{{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Chaos Elemental|defense}}/2}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+| '''{{#expr:{{iteminfo|Meowmere|damage}}-{{npcinfo|Chaos Elemental|defense}}/2}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Paladin|note2={{npcinfo|Paladin|defense}} {{tr|defense}}}}
+| '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:{{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Paladin|defense}}/2}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Paladin|defense}} ÷ 2⌋ }}
+| '''{{#expr:{{iteminfo|Meowmere|damage}}-{{npcinfo|Paladin|defense}}/2}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Paladin|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Sharkron|note2={{npcinfo|372|defense}} {{tr|defense}}}}
+| '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:{{iteminfo|Gold Broadsword|damage}}-{{npcinfo|372|defense}}/2}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|372|defense}} ÷ 2⌋ }}
+| '''{{#expr:{{iteminfo|Meowmere|damage}}-{{npcinfo|372|defense}}/2}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|372|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Eye of Cthulhu|[[{{tr|Eye of Cthulhu}}]]<br/>{{note|paren=y|small=y|{{tr|Expert Mode}}，低{{tr|health}}}}<br/>−30 {{tr|defense}}|image=Eye of Cthulhu (Phase 2).png|class=multi-line}}
+| '''{{#expr:{{iteminfo|Gold Broadsword|damage}}-(-30/2)}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − (−30) ÷ 2⌋ }}
+| '''{{#expr:{{iteminfo|Meowmere|damage}}-(-30/2)}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − (−30) ÷ 2⌋ }}
+|}{{options/reset|item|icons=n}}
+
+== 强化 ==
+{{options/set|item|icons=no}}
+
+=== 盔甲和配饰 ===
+玩家的{{tr|Defense}}数值可以通过装备[[{{tr|armor}}]]和[[{{tr|accessories}}]]来提升。{{tr|Armor}}通常由三个{{tr|items}}组成，如果三个组件配齐，会给予额外的奖励，即{{tr|Set Bonus}}，可能会进一步提高{{tr|Defense}}。一些{{tr|accessories}}给予了直接的{{tr|defense}}增强（参见下表），但所有{{tr|accessories}}都可以{{tr|reforge}}上提高{{tr|defense}}的[[{{tr|modifier}}]]。
+
+''有关每件{{tr|armor}}的详细{{tr|defense}}信息，参见[[{{tr|Armor}}]]。''
+
+{{flexstart|alignitems=start|style=gap: var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria sortable"
+! {{tr|Item}}
+! {{tr|Accessory defense}}
+{{#af_pipeline:
+<!-- fetch list of accessories that grant defense from cargo -->
+{{#invoke:CargoQuery|afExport
+| q?tables = Items
+| q?fields = name, defense
+| q?where = type HOLDS "accessory" AND defense IS NOT NULL
+}}
+<!-- Manual additions to the automatic list are here: -->
+| {{#af_merge:{{{prev}}}|{{#af_list:
+
+ {{#af_object: name= Moon Charm | defense= 3 | text= &#32;{{note|paren=y|仅限[[{{tr|night}}]]期间}} }}
+|{{#af_object: name= Moon Shell | defense= 3 | text= &#32;{{note|paren=y|仅限[[{{tr|night}}]]期间}} }}
+|{{#af_object: name= Moon Stone | defense= 4 | text= &#32;{{note|paren=y|仅限[[{{tr|night}}]]期间}} }}
+|{{#af_object: name= Sun Stone | defense= 4 | text= &#32;{{note|paren=y|仅限[[{{tr|day}}]]期间}} }}
+|{{#af_object: name= Celestial Shell | defense= 4 | text= &#32;{{note|paren=y|[[{{tr|day}}]]期间}}<br/>7 {{note|paren=y|[[{{tr|night}}]]期间}} }}
+
+}}}}
+<!-- sort by defense -->
+| {{#af_keysort:{{{prev}}}|defense}}
+<!-- print each row -->
+| {{#af_foreach:{{{prev}}}||item|<nowiki/>
+{{!}}-
+{{!}} {{item|{{#af_get:{{{item}}}|name}}}}
+{{!}} {{#af_get:{{{item}}}|defense}}{{#af_get:{{{item}}}|text}}
+}}
+}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria sortable"
+! {{tr|Modifier}}
+! {{tr|Defense}}
+|-
+| {{tr|Hard}}
+| 1
+|-
+| {{tr|Guarding}}
+| 2
+|-
+| {{tr|Armored}}
+| 3
+|-
+| {{tr|Warding}}
+| 4
+|}
+{{flexend|item}}
+{{flexend}}
+
+=== 增益和减益 ===
+[[{{tr|Buffs}}]]和[[{{tr|debuffs}}]]可以暂时改变玩家或者{{tr|enemy}}的{{tr|defense}}。{{tr|enemies}}的{{tr|defense}}无法被增加，只能被降低。
+
+{{flexstart|alignitems=start|style=gap: var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria sortable"
+! {{tr|Buff}}
+! {{tr|Buff defense}}
+|-
+| {{item|Well Fed}}
+| 2
+|-
+| {{item|Plenty Satisfied}}
+| 3
+|-
+| {{item|Exquisitely Stuffed}}
+| 4
+|-
+| {{item|The Bast Defense}}
+| 5
+|-
+| {{item|Dryad's Blessing}}
+| 8
+|-
+| {{item|Ironskin}}
+| 8
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria sortable"
+! {{tr|Debuff}}
+! {{tr|Debuff defense}}
+|-
+| {{item|Tipsy}}
+| −4
+|-
+| {{item|Weak}}
+| −4
+|-
+| {{item|Ichor (debuff)|Ichor}}
+| −15 {{note|paren=y|仅限{{tr|players}}}}
+|-
+| {{item|Broken Armor}}
+| {{percent|−50%}}
+|-
+| {{item|Withered Armor}}
+| {{percent|−50%}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+=== 其他 ===
+这些其他效果能够提高玩家的{{tr|defense}}。
+
+{| class="terraria sortable"
+! {{tr|Item}}
+! {{tr|Defense}}
+|-
+| {{item|Aegis Fruit}}
+| 4 {{note|paren=y|永久}}
+|-
+| {{item|Brand of the Inferno}}
+| 20 {{note|paren=y|防守时}}
+|-
+| {{item|Sergeant United Shield}}
+| 20 {{note|paren=y|防守时}}
+|}{{options/reset|item}}
+
+== {{tr|Armor penetration}} ==
+{{exclusive|Armor penetration|section=y}}
+{{options/set|item|wrap=y|mode=table|icons=n}}
+'''{{tr|Armor penetration}}'''是个隐藏的玩家属性，决定了在对实体造成伤害时等效忽略其{{tr|Defense}}的数量。这一属性仅对非玩家实体生效；它在 [[{{tr|PvP}}]] 中没有效果。它是通过增加造成的{{tr|damage}}的方式来工作的，这一增量由以下方式决定：{{source code ref|v=1.4.4.9|method=Terraria.NPC.checkArmorPenetration}}
+
+* 如果玩家的总{{tr|armor penetration}}''大于''{{tr|the enemy}}的{{tr|defense}}且{{tr|enemy}}的{{tr|defense}}为正值，伤害会增加{{tr|the enemy}}的{{tr|defense}}的一半。这意味着将等效地无视{{tr|enemy}}的全部{{tr|defense}}（因为对{{tr|enemy}}的伤害会减免等同于其{{tr|defense}}的一半——见[[#{{tr|Enemies}}|上方]]）。
+* 如果玩家的总{{tr|armor penetration}}''低于''或''等于''{{tr|the enemy}}的{{tr|defense}}（或{{tr|enemy}}的{{tr|defense}}为负值），伤害会增加{{tr|armor penetration}}数值的一半。这意味着将等效无视在几乎为零和{{tr|enemy}}全部{{tr|defense}}之间的量的{{tr|defense}}，取决于确切数值。
+
+{{note|见[[#范例 3|下方]]获取示例。}}
+
+所有下方的{{tr|armor penetration}}数值都可互相叠加，且在伤害计算中的所有小数都向下取整。
+
+以下{{tr|debuffs}}会在计算对受影响的实体造成的伤害时提高{{tr|armor penetration}}：
+{| class="terraria"
+! colspan=2 | {{tr|Debuff}}
+! {{tr|Armor penetration}}
+|-
+| {{item|Ichor (debuff)|Ichor}}
+| 15
+|-
+| {{item|Betsy's Curse}}
+| 40
+|}
+
+以下物品提供{{tr|armor penetration}}：
+
+{| class="terraria sortable"
+! colspan=2 | {{tr|Item}}
+! {{tr|Armor penetration}}
+{{#af_pipeline:
+<!-- fetch list of items that grant armor penetration from cargo -->
+{{#invoke:CargoQuery|afExport
+| q?tables = Equipinfo
+| q?fields = itemid, armorPenetration
+| q?where = armorPenetration IS NOT NULL
+}}
+<!-- Manual additions to the automatic list are here: -->
+| {{#af_merge:{{{prev}}}|{{#af_list:
+
+ {{#af_object: itemid= {{itemIdFromName|Sharpening Station}} | armorPenetration= 12 | text= &#32;{{note|paren=y|仅当手持[[{{tr|melee weapon}}]]时}} }}
+|{{#af_object: itemid= {{itemIdFromName|Hive Pack}} | armorPenetration= 5 | text= &#32;{{note|paren=y|仅限[[{{tr|Wasp Gun}}]]}} }}
+
+}}}}
+<!-- sort by armorPenetration -->
+| {{#af_keysort:{{{prev}}}|armorPenetration}}
+<!-- print each row -->
+| {{#af_foreach:{{{prev}}}||item|<nowiki/>
+{{!}}-
+{{!}} {{item|id={{#af_get:{{{item}}}|itemid}}|showid=n}}
+{{!}} {{#iferror:{{#expr:{{#af_get:{{{item}}}|armorPenetration}}}}}}{{#af_get:{{{item}}}|text}}<!-- #expr removes the '+' in front of the automatic values -->
+}}
+}}
+|}
+
+此外，某些武器和{{tr|accessories}}的{{tr|projectiles}}有自己的{{tr|armor penetration}}属性，它们对{{tr|enemy}}造成伤害时，该属性会被加到玩家的{{tr|armor penetration}}上：{{source code ref|v=1.4.2.1|method=Terraria.Projectile.Damage}}
+
+{| class="terraria"
+! colspan=2 | {{tr|Item}}
+! {{tr|Armor penetration}}
+|-
+| {{item|Blade Staff}}
+| 25
+|-
+| {{item|Dark Harvest|note=（“{{tr|Reaping}}”）}}
+| 50
+|-
+| {{item|Cool Whip|note=({{tr|snowflake}})}}
+| 30
+|-
+| {{item|Light's Bane|note=(黑暗斩切)}}
+| 5
+|-
+| {{item|Blade of Grass|note=({{tr|projectile}})}}
+| 20
+|-
+| {{item|Muramasa|note=(斩切)}}
+| 5
+|-
+| {{item|Bone Glove}}
+| 25
+|-
+| {{item|Crystal Vile Shard}}
+| 10
+|-
+| {{item|Nettle Burst}}
+| 10
+|-
+| {{item|Wasp Gun}}
+| 10
+|-
+| {{item|Star Cloak|note=及其升级物}}
+| 25
+|-
+| {{item|Arkhalis}}
+| 20
+|-
+| {{item|Weather Pain}}
+| 10
+|-
+| {{item|Flamethrower}}
+| 15
+|-
+| {{item|Elf Melter}}
+| 15
+|}{{options/reset|item}}
+
+=== 范例 ===
+{{#vardefine:AP|{{tr|Armor penetration}}}}
+{| class="terraria lined align-center"
+! {{tr|Enemy}} !! {{tr|Player}}<br/>{{#var:AP}} !! !! 提高的伤害 !! 解释
+|-
+| align=left rowspan=2 | {{item|Green Slime|note2=0 {{tr|defense}}}}
+| 0 || → || 0
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为 {{#var:AP}}/2
+|-
+| 10 || → || 0
+| align=left | {{#var:AP}} > {{tr|defense}}，因此提高量为{{tr|defense}}/2
+|-
+| style="text-align:left" rowspan=3 | {{item|Chaos Elemental|note2=30 {{tr|defense}}}}
+| 0 || → || 0
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 0% {{tr|defense}}）
+|-
+| 10 || → || 5
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 {{percent|5/15}} {{tr|defense}}）
+|-
+| 40 || → || 15
+| align=left | {{#var:AP}} > {{tr|defense}}，因此提高量为{{tr|defense}}/2（无视 {{percent|15/15}} {{tr|defense}}）
+|-
+| align=left rowspan=4 | {{item|Sharkron|mode=image|style=margin-bottom:0.5em}}<br/>{{item|Sharkron|note2=100 {{tr|defense}}|mode=text}}
+| 5 || → || 2
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 {{percent|2/50}} {{tr|defense}}）
+|-
+| 10 || → || 5
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 {{percent|5/50}} {{tr|defense}}）
+|-
+| 40 || → || 20
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 {{percent|20/50}} {{tr|defense}}）
+|-
+| 100 || → || 50
+| align=left | {{#var:AP}} ≤ {{tr|defense}}，因此提高量为{{#var:AP}}/2（无视 {{percent|50/50}} {{tr|defense}}）<br/>{{note|paren=y|small=y|这是理论示例，因为保持 100 {{#var:AP}}虽然是可能的但是不实用。}}
+|}
+
+== 最高防御 ==
+{{options/set|item|wrap=y|icons=n}}
+
+最高可能{{tr|defense}}可以通过使用以下章节中的设置来达成：
+
+=== 困难模式之前 ===
+最大可能{{tr|defense}}是 75 / {{expert|77}} / {{master|81}}：
+
+{{infocard|text={{flexstart|style=margin:-1.25em;}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Armor}}{{note|paren=y|small=y|25 {{tr|defense}}}}|<!--
+	-->{{itemlist|width=11em<!--
+		-->|{{inline block|style=line-height:1.5;|{{item|Molten Helmet}}}}<!--
+		-->|{{item|Molten Breastplate}}<!--
+		-->|{{item|Molten Greaves}}<!--
+	-->}}<!--
+-->}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Accessories}}{{note|paren=y|small=y|25 / {{expert|27}} / {{master|31}} {{tr|defense}}}}|<!--
+	-->{{itemlist|width=11em<!--
+		-->|{{item|Cobalt Shield}}<!--
+		-->|{{item|Obsidian Shield}}<!--
+		-->|{{item|Obsidian Skull}}<!--
+		-->|{{item|Shackle}}<!--
+        -->|{{item|mode=text|Accessory|任何[[{{tr|accessory}}]]}}或{{item|Shield of Cthulhu|note=（{{tr|Expert}}/{{tr|Master}}）}}<!--
+		-->|{{item|mode=text|Accessory|任何[[{{tr|accessory}}]]|note=（{{tr|Master}}）}}<!--
+	-->}}
+* 所有{{tr|accessories}}都使用{{tr|Warding}}[[{{tr|modifiers}}]]
+}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Buffs}} {{note|paren=y|small=y|25 {{tr|defense}}}}|<!--
+	-->{{itemlist|width=11em<!--
+		-->|{{item|Ironskin}}<!--
+		-->|{{item|Exquisitely Stuffed}}<!--
+		-->|{{item|Dryad's Blessing}}<!--
+		-->|{{item|The Bast Defense}}<!--
+	-->}}
+}}<!--
+
+-->{{flexend}}}}
+
+=== {{tr|Hardmode}} ===
+最大可能{{tr|defense}}是 190 / {{expert|200}} / {{master|208}}：
+
+{{infocard|text={{flexstart|style=margin:-1.25em;}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Armor}} {{note|paren=y|small=y|82 {{tr|defense}}}}|<!--
+	-->{{itemlist|width=14em<!--
+		-->|{{inline block|style=line-height:1.5;|{{item|Solar Flare Helmet}}或{{item|Hallowed Mask}}}}<!--
+		-->|{{item|Solar Flare Breastplate}}<!--
+		-->|{{item|Valhalla Knight's Greaves}}<!--
+	-->}}<!--
+-->}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Accessories}}{{note|paren=y|small=y|59 / {{expert|69}} / {{master|77}} {{tr|defense}}}}|<!--
+	-->{{itemlist|width=11em<!--
+		-->|{{item|Hero Shield}}<!--
+		-->|{{item|Flesh Knuckles}}<!--
+		-->|{{item|Berserker's Glove}}<!--
+		-->|{{item|Celestial Shell}}<!--
+		-->|{{item|Frozen Shield}}<!--
+		-->|{{item|Paladin's Shield|note=({{tr|Expert/Master}})}}<!--
+		-->|{{item|Ankh Shield|note=({{tr|Master}})}}<!--
+	-->}}
+* 在[[{{tr|night}}]]，未浸入[[{{tr|water}}]]中时
+* 所有{{tr|accessories}}都使用{{tr|Warding}}[[{{tr|modifiers}}]]
+}}<!--
+
+-->{{infocard/box|style=margin:1em;|title={{tr|Buffs}} {{note|paren=y|small=y|25 {{tr|defense}}}}|<!--
+	-->{{itemlist|width=11em<!--
+		-->|{{item|Ironskin}}<!--
+		-->|{{item|Exquisitely Stuffed}}<!--
+		-->|{{item|Dryad's Blessing}}<!--
+		-->|{{item|The Bast Defense}}<!--
+	-->}}
+}}<!--
+
+-->{{infocard/box|style=margin:1em;|title=其他{{note|paren=y|small=y|24 {{tr|defense}}}}|<!--
+	    -->用{{item|maxsize=40px|Brand of the Inferno}}或{{item|Sergeant United Shield}}防守<br /><!--
+        -->使用{{item|Aegis Fruit}}<!--
+-->}}<!--
+
+-->{{flexend}}}}<!--
+
+-->{{options/reset|item}}
+
+== 另见 ==
+* [[{{tr|Damage reduction}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|非玩家实体现在可以拥有负值的{{tr|defense}}属性。此前，负值的{{tr|defense}}会被设为 0。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{language info|en=Defense}}

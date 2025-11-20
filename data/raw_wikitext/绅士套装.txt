@@ -1,0 +1,66 @@
+{{exclusive|1.4.3}}
+{{item infobox
+| type = Vanity / Set
+| rare = {{setinfo|head=Gentleman's Beard, Gentleman's Long Beard, Gentleman's Magnificent Beard|Gentleman's set|rare}}<!-- the beards are accessories, so the automatic {{setinfo}} doesn't work with them -->
+| buy = {{iteminfo|Gentleman's Beard|buy}}<!-- display the "(set)" note: -->{{setinfo|2=buy}}
+| sell = {{setinfo|head=Gentleman's Beard, Gentleman's Long Beard, Gentleman's Magnificent Beard|Gentleman's set|sell}}
+}}
+
+'''{{tr|Gentleman's set}}'''是一套[[{{tr|vanity items}}]]，由'''{{tr|Gentleman's Beard}}'''、'''{{tr|Gentleman's Long Beard}}'''、'''{{tr|Gentleman's Magnificent Beard}}'''、'''{{tr|Gentleman's Vest}}'''、和'''{{tr|Gentleman's Trousers}}'''组成。{{tr|Gentleman's Vest}}和{{tr|Gentleman's Trousers}}可以制作，而{{tr|Gentleman's Beard}}可以在[[{{tr|Stylist}}]]处以 {{iteminfo|Gentleman's Beard|buy}} 的价格购买。
+
+装备于{{tr|accessory slot}}时，{{tr|Gentleman's Beard}}会随时间自然生长。在装备胡须 12 分钟后，此{{tr|item}}每秒有 {{chance|1/9}} 的几率生长。<ref>{{tr|Gentleman's Beard}}每{{tr|tick}}（{{tick|noref|short}}）都有 {{chance|1/540}} 的几率生长，这等价于每{{tr|second}} {{chance|1/9}} 的几率。</ref>{{source code ref|v=1.4.4.2|method=Terraria.Player.ApplyWilsonBeard}}此生长不受[[{{tr|Day and night cycle}}|时间加速]]的影响，在胡须装备于{{tr|vanity slot}}时也不会生长。{{tr|Gentleman's Beard}}还会根据玩家的发色改变颜色。长的{{tr|Gentleman's Beard}}可以被制作回短的版本。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 5104
+| tags = vendor / vendor:Stylist
+}}
+|{{item infobox
+| auto = 5105
+}}
+|{{item infobox
+| auto = 5106
+}}
+|{{item infobox
+| auto = 5102
+}}
+|{{item infobox
+| auto = 5103
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE Gentleman's %|cate=force|expectedrows=5}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE Gentleman's % Beard|link=no|expectedrows=3}}
+
+== 花絮 ==
+* {{tr|This set}}参考了电子游戏《{{iwlink|dts|Don't Starve}}》中的{{iwlink|dts|Wilson}}。
+* 各种胡须的{{tr|tooltip}}参考了《{{tr|Don't Starve}}》中，{{iwlink|dts|Wickerbottom|薇克巴顿}}对{{iwlink|dts|Beard Hair|胡须}}的检查话语。
+
+== 另见 ==
+* [[{{tr|Firestarter's set}}]]
+* {{dts link|Wilson}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Gentleman's Beard}}现在可以被制作回其先前的阶段：
+*** {{tr|The Gentleman's Magnificent Beard}}现在可以被制作为{{tr|the Gentleman's Long Beard}}和{{tr|the Gentleman's Beard}}。
+*** {{tr|The Gentleman's Long Beard}}现在可以被制作为{{tr|the Gentleman's Beard}}。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-vanity = yes
+}}
+
+{{language info|en=Gentleman's set}}

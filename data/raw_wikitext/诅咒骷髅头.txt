@@ -1,0 +1,109 @@
+{{npc infobox
+| auto = 34
+| image = Cursed Skull.gif
+| image2 = Cursed Skull (old).png
+| type = Undead Enemy
+| type2 = Flying Enemy
+| environment = Dungeon
+| debuff = Cursed
+| debuffchance = 33%
+| debuffduration = {{modes|{{duration|4}}|{{duration|8}}|{{duration|10}}}}
+| Nazar|1|{{modes|1%|2%}}
+| Cream Soda|1|1.43%
+|:group:start| 总是会掉落以下四件物品之一 | @normal
+| Bone|1–3|97.09% <!-- 249/250 * 99/100 * 64/65  =  788832/812500 --> @normal
+| Golden Key|1|1.52% <!-- 249/250 * 99/100*1/65  =  24651/1625000 --> @normal
+| Tally Counter|1|1% <!-- 249/250 * 1/100  = 0.996% --> @normal
+| Bone Wand|1|0.4% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Bone|{{modes|expertonly=y|2–6}}|{{modes|expertonly=y|100%}} #expert
+| Golden Key|1|1.52% #expert
+| Tally Counter|1|1% #expert
+| Bone Wand|1|0.4% #expert
+| cargodrops = no
+}}<!--
+
+The drops being grouped in Classic Mode but not in Expert and Bones having different rates
+and quantities is too convoluted for proper Cargo database storage. Therefore, the drops in
+the infobox above are only for display and we use the invisible infobox below for storing the
+drops to Cargo.
+-->{{npc infobox | view = void
+| auto = 34
+| cargo = no | cargodrops = yes
+| Nazar|1|{{modes|1%|2%}}
+| Cream Soda|1|1.43%
+| Bone|{{modes|1–3|2–6}}|{{modes|97.09%|100%}}
+| Golden Key|1|1.52%
+| Tally Counter|1|1%
+| Bone Wand|1|0.4%
+}}<!--
+
+-->{{npc infobox
+| variant = yes
+| image = Dragon Skull.gif
+| image2 = Dragon Skull (old).gif
+| name = Dragon Skull
+| type = Undead Enemy
+| type2 = Flying Enemy
+| damage = 20
+| life = 75
+| defense = 8
+| money = {{coin|1gc}}
+| Golden Key|1|1.5% @normal
+| Bone|1–3|98.5% @normal
+| Nazar|1|1% @normal
+| id = 1012
+}}
+
+'''{{tr|Cursed Skull}}'''（以及在{{eversions|Dragon Skull|short}}上的'''{{tr|Dragon Skull}}'''）是一种只出现在[[{{tr|Dungeon}}]]中的飞行[[{{tr|enemy}}]]。它类似于[[{{tr|Meteor Head}}]]，有高伤害、低速度、以及穿过{{tr|tiles}}的能力。它缓慢漂浮向玩家，偶尔会停下来转圈漂浮一会，然后突然冲向前攻击，类似于[[{{tr|Eye of Cthulhu}}]]。当击中玩家时，{{tr|the Cursed Skull}}有相当大几率会施加[[{{tr|Cursed}}]][[{{tr|debuff}}]]。这使得玩家无法使用{{tr|items}}，包括[[{{tr|Weapons}}]]、[[{{tr|Potions}}]]、和[[{{tr|Grappling Hook}}]]，使得很难避免进一步伤害。
+
+它们更有可能出现在{{tr|Dungeon}}中有[[{{tr|Dungeon Brick Wall}}|{{tr|Brick Walls}}]]的区域内。
+
+== 小贴士 ==
+* {{tr|Cursed Skulls}}可以被{{tr|melee weapons}}透过墙攻击到。像[[{{tr|Spear}}]]这样长距离武器会比较好用。然而，这可能导致掉落物被卡在墙里，超出玩家够得着的范围。
+* {{tr|Cursed Skulls}}和{{tr|Dragon Skulls}}会很罕见地掉落超过 3/{{expert|6}} 个[[{{tr|Bone}}]]。
+* {{tr|Cursed Skulls}}是一种用来刷[[{{tr|Nazar}}]]非常有效的{{tr|enemies}}，因为它们比其他一些同样掉落{{tr|nazar}}的{{tr|enemies}}生成得更多。这要优先在[[{{tr|Pre-Hardmode}}]]中完成，因为在[[{{tr|Hardmode}}]]中会更难得到。
+
+== 花絮 ==
+* 打败{{tr|Plantera}}后，会生成一种类似的{{tr|enemy}}：[[{{tr|Giant Cursed Skull}}]]。
+* 这个{{tr|enemies}}很可能是指《塞尔达传说》系列中的[https://zelda.fandom.com/wiki/bubble bubbles]（泡泡）{{tr|enemies}}。
+* 它是被做成玩具的若干{{tr|enemies}}之一。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Cream Soda}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落[[{{tr|Tally Counter}}]]。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|
+** 外观更新。
+** 现在会掉落[[{{tr|Nazar}}]]。}}
+{{history|Desktop 1.0.6|
+** 现在会施加[[{{tr|Cursed}}]][[{{tr|debuff}}]]。
+** 不再对[[{{tr|knockback}}]]免疫。
+** 现在会掉落 1-3 个[[{{tr|Bone}}]]或，更加罕见地，[[{{tr|Golden Key}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Sprite updated.}}旧的外观是 [[File:Cursed Skull (old).png]]。
+** 移除了火焰动画。
+** 现在接触水面时不再会发出溅水的声音。
+** 现在能穿墙。
+** 生命值由 30 提升至 40。
+** 伤害由 25 提升至 35。
+** 防御由 30 降低至 6。
+** 名称由{{tr|Burning Skull}}改为{{tr|Cursed Skull}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|移除{{tr|Dragon Skull}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|移除{{tr|Dragon Skull}}。（{{icon|ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|移除{{tr|Dragon Skull}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-main = yes
+| show-common = yes
+}}
+
+{{language info|en=Cursed Skull}}

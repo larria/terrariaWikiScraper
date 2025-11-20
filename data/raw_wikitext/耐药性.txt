@@ -1,0 +1,76 @@
+{{buff infobox
+| auto = 21
+| duration = {{duration|60}} {{note|paren=y|会被某些物品缩短}}
+| tooltip = @@@@ {{sic}}
+}}
+
+'''{{tr|Potion Sickness}}'''是个[[{{tr|debuff}}]]，随便什么时候，只要玩家使用了治疗物品就会产生。它能防止玩家在{{tr|debuff}}结束前再次使用任何治疗物品。装备[[{{tr|Philosopher's Stone}}]]或[[{{tr|Charm of Myths}}]]能将其持续时间缩短 25%。二者同时装备并不会让效果叠加。
+
+对于几乎所有治疗物品，{{tr|the Potion Sickness}}{{tr|debuff}}持续 60 秒，在此之后可以使用另一个治疗物品。
+
+== 原因 ==
+=== 来自物品 ===
+{| class="terraria lined" id="Potion-Sickness-table"
+! 来源
+! 持续时间
+|-
+| {{item|Bottled Water}}
+| rowspan="11" | {{duration|60}}
+|-
+| {{item|Bottled Honey}}
+|-
+| {{item|Eggnog}}
+|-
+| {{item|Lesser Healing Potion}}
+|-
+| {{item|Healing Potion}}
+|-
+| {{item|Greater Healing Potion}}
+|-
+| {{item|Super Healing Potion}}
+|-
+| {{item|Honeyfin}}
+|-
+| {{item|Wiesnbräu}}
+|-
+| {{item|Horn o' plenty}}
+|-
+| {{item|Lesser Restoration Potion}}
+|-
+| {{item|Restoration Potion}}
+| {{eicons|1.4.0.1}} {{duration|45}}<br/>{{eicons|1.3.0.1|invert=y}} {{duration|60}}
+|-
+|{{item|Mushroom}}
+| {{eicons|1.4.1}} {{duration|30}}<br/>{{eicons|1.4.1|invert=y}} {{duration|60}}
+|-
+| {{item|Strange Brew}}
+| 40–70 {{tr|seconds}}
+|}
+
+== 备注 ==
+* 由于效果的限制时间是向下取整的，如果{{tr|potion sickness}}的剩余时间是 0.9 秒或更少，会显示为 0 秒，总的来说，这使它看起来好像持续了 61 秒。这一点适用于所有有时间限制的效果。
+
+== 花絮 ==
+* {{tr|The debuff}}使用的是[[{{tr|Lesser Healing Potion}}]]在 [[1.3.0.1]] 之前的{{tr|sprite}}。
+* 它通常是玩家碰上的第一个{{tr|debuff}}。
+* ''{{tr|Potion Sickness}}（Potion Sickness）''是用 ''{{wikipedia|lang=en|motion sickness|motion sickness（晕车）}}''玩的文字游戏。
+* {{eicons|1.3.0.1}}[[{{tr|Restoration Potion}}]]、{{eicons|1.4.1}}[[{{tr|Mushroom}}]]、和{{eicons|1.4.4}}[[{{tr|Strange Brew}}]]是仅有的三种造成的{{tr|Potion Sickness debuff}}时间短于 60 秒的{{tr|consumables}}。
+
+== 另见 ==
+* [[{{tr|Mana Sickness}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|[[{{tr|Strange Brew}}]]现在会造成不定时长的{{tr|Potion Sickness}}，在 40 秒到 70 秒之间。}}
+{{history|Desktop 1.2.3|
+** [[{{tr|Nurse}}]]不再能移除{{tr|Potion Sickness}}。
+** [[{{tr|Goldfish}}]]现在是可释放的，不再是可食用以恢复 20 生命值的了。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Potion Sickness}}

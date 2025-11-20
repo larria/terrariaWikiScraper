@@ -1,0 +1,19 @@
+<!--
+
+// Recipe data is registered at Recipes/Water/register.
+
+
+-->{{recipes|cate=force|nostation=y|title=<span style="display: inline-block;vertical-align:middle;">{{item|Water}}<br/>'''''或'''''<br/>{{item|Sink}}</span>|station=Water|expectedrows={{#expr:<!--
+	-->2<!-- 1.3.5.3
+	-->+3<!-- 1.4.0.1
+-->}}}}<!--
+-->{{recipes|cate=force|nostation=y|title={{item|Crystal Ball}}'''和'''<span style="display: inline-block;vertical-align:middle;">{{item|Water}}<br/>'''''或'''''<br/>{{item|Sink}}</span>|station=Crystal Ball and Water|expectedrows=4}}<!--
+-->{{recipes|cate=force|nostation=y|title={{item|Sky Mill}}'''和'''<span style="display: inline-block;vertical-align:middle">{{item|Water}}<br/>'''''或'''''<br/>{{item|Sink}}</span>|station=Sky Mill and Water|expectedrows=1}}<!--
+
+--><noinclude>
+[[Category:{{tr|Recipes}}|{{tr|Water}}]]
+
+{{language info|en=Recipes/Water}}
+</noinclude>
+[[Category:水或水槽|*]]
+[[Category:水晶球和水或水槽|*]]

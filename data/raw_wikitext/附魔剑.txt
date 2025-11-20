@@ -1,0 +1,79 @@
+{{infobox wrapper|
+{{item infobox
+| auto = 989
+| damage = @@@@ {{eicons|1.4.0.1|small=y}} / 18 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.0.1|small=y}}<br/>{{ut|18}} {{eicons|1.4.0.1|invert=y|small=y}}
+| knockback = @@@@ {{eicons|1.4.0.1|small=y}}<br/>{{kb|5.25}} {{eicons|1.4.0.1|invert=y|small=y}}
+| velocity = @@@@ {{eicons|1.3.0.1|small=y}} / 9 {{eicons|1.3.0.1|invert=y|small=y}}
+| sound1 = Item 8.wav
+| soundcaption1 = {{gameText|ProjectileName.EnchantedBeam}}
+| sound2 = MaxMana.wav
+| soundcaption2 = 射弹冷却完毕
+| listcat = Broadswords / Projectile melee
+| tags = loot
+}}
+|{{drop infobox|Enchanted Sword|style=clear:right}}
+}}
+{{about|{{tr|the melee weapon}}|同名{{tr|the enemy}}|{{tr|Enchanted Sword (NPC)}}}}
+
+'''{{tr|Enchanted Sword}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|Swords}}|{{tr|sword}}]]，在挥舞时会定期发射{{tr|Enchanted Beam}}{{tr|projectile}}。{{tr|projectile}}不消耗[[{{tr|ammunition}}]]或[[{{tr|mana}}]]，造成和{{tr|sword}}相同的伤害，不受重力影响，且会在击中{{tr|enemies}}或实心[[{{tr|block}}]]时消散。{{tr|sword}}及其{{tr|projectiles}}都会产生发出大量的光的滞留的粒子。
+
+{{float file box|width=188px|title=石中剑背景物体|[[File:Enchanted Sword comparison.png]]|垃圾（左）和石中{{tr|Enchanted Sword}}（右）。只有右侧的那种有几率掉落{{tr|Enchanted Sword}}。}}
+
+可以通过摧毁“石中{{tr|The Enchanted Sword}}”[[{{tr|background object}}]]来获得{{tr|The Enchanted Sword}}，该{{tr|background object}}可以在{{tr|underground}}的随机地点和{{eil|Enchanted Sword Shrine|s}}中找到。摧毁该背景物体有{{eicons|1.4.0.1}} {{chance|49/50}} / {{eicons|1.3.0.1|invert=y}} 100% 几率掉落{{tr|Enchanted Sword}}。在{{eversions|1.4.0.1}}中，{{tr|the Enchanted Sword}}也分别有 {{chance|1/30}} 和 {{chance|1/15}} 几率从[[{{tr|Golden Crate}}]]和[[{{tr|Titanium Crate}}]]中获得。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Enchanted Sword|expectedrows=1}}
+
+== 备注 ==
+[[File:Enchanted Sword (demo).gif|framed|{{tr|Enchanted Sword}}被用于攻击[[{{tr|Target Dummy}}]]。]]<!-- this is down here and not up in the intro in order to not mess up the positioning of the {{float file box}} -->
+[[File:Enchanted Sword Biome.png|200px|thumb|{{tr|Enchanted Sword Shrine}}中的石中{{tr|enchanted sword}}{{tr|background object}}。]]
+
+* {{tr|Enchanted Beam projectile}}的（发射）默认冷却为 {{duration|{{iteminfo|Enchanted Sword|useTime|raw=y}} ticks}}（{{tr|modifier}}带来的攻速加成会减少冷却）。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults1 / Terraria.Player.ItemCheck_OwnerOnlyCode}}
+** 在{{tr|Enchanted Beam}}充能完毕后，会有微弱的粒子效果和{{sound|[[{{tr|Media:MaxMana.wav}}|{{tr|mana}}恢复声]]|MaxMana.wav|nofallback=y}}提醒玩家。
+* [[{{tr|Melee speed}}]]会影响{{tr|Enchanted Beam}}的[[{{tr|velocity}}]]，但不会改变其{{tr|cooldown}}时间。
+* {{eicons|1.4.0.1}}少见地，一个{{tr|World}}中可能不会生成任何{{tr|Enchanted Sword Shrine}}。这种情况下，除了创建新{{tr|world}}以外，玩家只能通过{{tr|fishing}}获取{{tr|Golden Crate}}或{{tr|Titanium Crate}}来获得{{tr|Enchanted Sword}}。
+* {{eicons|1.4.0.1}}“垃圾”{{tr|background object}}永远不会在{{tr|Enchanted Sword Shrines}}中出现，但它仍然可能在{{tr|underground}}的随机位置生成。
+* 获得自{{tr|crate}}的{{tr|Enchanted Sword}}永不会有[[{{tr|modifier}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.OpenFishingCrate}}
+
+== 小贴士 ==
+* 如果能在游戏早期获得，{{tr|Enchanted Sword}}可以作为一把强大的早期武器，以其较高的伤害和实用的{{tr|projectile}}领先于其它{{tr|Pre-Hardmode}}的{{tr|melee weapon}}。
+* 如果想要获得{{tr|Enchanted Sword}}以制作{{eil|Zenith}}，创建一个新{{tr|world}}并从{{tr|Enchanted Sword Shrines}}中获取它会比开{{tr|fishing}}{{tr|crates}}更加有效率。
+** 也可以使用[[{{tr|World Seed}}]]来保证能找到{{tr|Enchanted Sword Shrine}}，只需要确保游玩的游戏版本和{{tr|seed}}所处版本相同即可。
+
+== 花絮 ==
+* 插在石中的剑的概念起源于 12 或 13 世纪由法国诗人 {{wikipedia|Robert de Boron}} 创作的诗歌{{wikipedia|Merlin (poem)|《梅林（Merlin）》}}，诗中亚瑟王是仅有的能从石头中拔出剑的人。类似的主题此后在其它媒体媒介中也有出现。在动作冒险游戏系列{{wikipedia|The Legend of Zelda|《塞尔达传说（The Legend of Zelda）》}}中，（{{wikipedia|A Link to the Past|《众神的三角力量（A Link to the Zelda）》}}）一作的大师之剑（Master Sword）也需要被从基座上拔出，且需要在数把赝品之中找到真剑。此外，大师之剑也能发射剑状光束，但只在其持有者{{wikipedia|Link (The Legend of Zelda)|林克（Link）}}生命值满时可以。
+* 它可以被视作[[{{tr|Enchanted Boomerang}}]]的{{tr|counterpart}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** 现在用于制作[[{{tr|Zenith}}]]。
+** {{tr|Damage}}由 24 降低至 23。
+** {{tr|Use time}}由 18 提升至 21。
+** {{tr|Knockback}}由 5.25 降低至 4.25。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|autoswing}}]]。
+** {{tr|Damage}}由 18 提升至 24。
+** {{tr|Projectile velocity}}由 9 提升至 9.5。
+** 现在能在其自己独特的{{tr|mini-biome}}中找到（此前只能在随机的平常位置找到）。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}} 
+{{history|Mobile 1.4.0.5.0|添加了来自{{tr|Desktop}} 1.4.0.1 中的改动。}}
+{{history|Mobile 1.3.0.7|添加了来自{{tr|Desktop}} 1.3.0.1 中的改动。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Enchanted Sword}}

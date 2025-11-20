@@ -1,0 +1,65 @@
+{{legacy nav tab}}
+{{exclusive|Spider Fang}}
+{{item infobox
+| auto = 2551
+| tags = Minion / hardmode
+| idprojectile = 390, 391, 392
+| debuff = Acid Venom
+| debuffduration = {{duration|rawseconds=2–4}}
+| debuffchance = 100%
+}}
+{{dablink|不要与另一个{{tr|sentry summon weapon}}，[[{{tr|Queen Spider Staff}}]]相混淆。}}
+[[File:Spider Staff (demo).gif|400px|thumb|使用中的{{tr|The Spider Staff}}。注意它不会被{{tr|walls}}阻挡。]]
+
+'''{{tr|Spider Staff}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Spider}}'''[[{{tr|minion}}]]。它会跑向[[{{tr|enemies}}]]并抓住它们，抓住时反复造成{{tr|damage}}，且会施加 2-4 {{tr|seconds}}[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]。它可以攀附在[[{{tr|background walls}}]]上且可以跳很高。
+
+{{modifier|summon}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Spider Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Spider Staff}}在三种视觉效果上不同{{tr|spider minions}}之间循环召唤。第一只{{tr|minion}}是{{tr|Venom Spider}}，第二只是{{tr|Jumper Spider}}，第三只是{{tr|Dangerous Spider}}，第四只又是{{tr|Venom Spider}}，以此类推。这三种在功能上是完全相同的。
+** 每只{{tr|spider minion}}具有 {{duration|20 ticks}} 内部攻击冷却，使得它们每秒最多可击中{{tr|enemy}} 3 次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Projectile.AI_026|t=造成伤害时，{{tr|the spider minion}}的 <code>localAI[1]</code> 被设为 20，且每{{tr|tick}}减少 1 直到它达到 0。当其 <code>localAI[1]</code> 大于 0 时，{{tr|The spider}}的碰撞箱会禁用，所以它仅能每 20 {{tr|ticks}}（{{duration|20 ticks}}）击中一次{{tr|enemies}}。}}
+** 每只{{tr|spider minion}}造成 15 [[{{tr|static invincibility frame}}]]，作用于此类型{{tr|spider}}。意味着数个同类型的{{tr|spider}}每秒将会被限制为 4 次击中。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+*** 所以第 4、5 和 6 只{{tr|spider}}攻击{{tr|enemy}}将不能与前 3 只保持相同的击中频率，每只{{tr|spider}}每秒仅能增加一次击中。因此，{{tr|spider}}的最大击中次数为具有 6 个{{tr|spider minion}}时的每秒 12 次。
+*** 例如 3 只{{tr|spider}}每秒将会击中{{tr|enemy}} 9 次，但 6 只{{tr|spider}}每秒则只能击中 12 次； 11 只{{tr|spider}}每秒仅能击中 12 次。
+*** 仅有 3 只{{tr|spider minions}}时，其{{tr|invincibility frames}}其实不会发挥作用，因为其内部攻击冷却时间长于其{{tr|invincibility frame}}的持续时间。
+* {{tr|The spider minions}}可以瞄准 50 {{tr|tile}}范围内的{{tr|enemy}}，且若距离{{tr|player}}超过 87.5 {{tr|tile}}，就会自动返回{{tr|player}}身旁。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_026|t=每个{{tr|minion}}有一个名为 <code>minionPos</code> 的内部变量，这表示它占据{{tr|minion}}栏位的位置，从 0 开始。{{tr|spider minion}}的基础检测（50 {{tr|tile}}）和攻击范围（87.5 {{tr|tile}}）将会增加 <code>minionPos</code> * 2.5 {{tr|tiles}}。例如，一个 <code>minionPos = 2</code> 的{{tr|spider}}将能够瞄准 55 {{tr|tiles}}的{{tr|enemies}}且若距离超过 92.5 {{tr|tile}}才会返回{{tr|player}}身旁。}}
+
+== 小贴士 ==
+* {{tr|The Spider Staff}}在刚进入{{tr|Hardmode}}时可以很容易获得，因为在开始{{tr|Hardmode}}前大部分玩家可能已经找到了[[{{tr|Spider Cave}}]]，只需要回到那里并杀死在{{tr|Hardmode}}下生成的[[{{tr|Black Recluse}}]]。
+* 如果多个{{tr|spiders}}附着到同一个会受击退的{{tr|enemy}}上，{{tr|enemy}}通常会被推离玩家，但有时蜘蛛反而会将{{tr|enemy}}推向{{tr|player}}。
+
+== 花絮 ==
+* 第二种蜘蛛，{{tr|Jumper Spider}}，很像{{wikipedia|Brachypelma hamorii|墨西哥红膝狼蛛}}，第三种蜘蛛，{{tr|Dangerous Spider}}，很像{{wikipedia|Latrodectus|黑寡妇蜘蛛}}。
+* {{tr|The staff}}的外观似乎是一只四条腿的{{tr|spider}}。
+* 它和[[{{tr|Queen Spider Staff}}]]是仅有的在击败任一[[{{tr|Mechanical Bosses}}]] 前就能造成{{tr|Acid Venom}}{{tr|debuff}}的武器。
+* 与现实世界的没有翅膀的{{tr|spider}}不同的是，{{tr|spider minion}}在没有{{tr|background wall}}的地方跟随处于空中的玩家时，会展开翅膀飞行。
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|现在召唤{{tr|Spiders}}时会尝试按顺序召唤不同样式的{{tr|spiders}}，而不是随机召唤。}}
+{{history|Desktop 1.4.0.1|每个{{tr|Spiders}}现在算作一个{{tr|minion}}。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 25 提升至 26。
+** {{tr|Knockback}}从 2 提升至 3。
+** 每个{{tr|spider}}现在算作 0.75 个{{tr|minion}}。}}
+{{history|Desktop 1.2.4.1|现在需要 10 {{tr|mana}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.08|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+		
+== 参考 == 
+{{reflist}}
+
+{{Spider Fang}}
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Spider Staff}}

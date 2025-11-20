@@ -1,0 +1,54 @@
+{{exclusive|1.4.4}}
+{{expert mode only}}
+{{item infobox
+| type = Permanent booster
+| auto = 5289
+| hardmode = yes
+| idprojectile = 591
+}}
+
+{{float file box<!--
+-->|title={{tr|Minecart boost}}[[{{tr|Toggles}}|{{tr|Toggle}}]]<!--
+	-->|{{inline block|css=width:50%;line-height:2|[[File:Minecart Normal.png|link=]]<br/>关}}<!--
+	-->{{inline block|css=width:50%;line-height:2|[[File:Minecart Boosted.png|link=]]<br/>开}}<!--
+-->|title2={{mobile}}按钮{{tr|icons}}<!--
+	-->|{{inline block|css=width:50%;line-height:2|[[File:Minecart Disable (mobile).png|link=]]<br/>设为关闭}}<!--
+	-->{{inline block|css=width:50%;line-height:2|[[File:Minecart Boost (mobile).png|link=]]<br/>设为开启}}<!--
+-->}}
+
+'''{{tr|Minecart Upgrade Kit}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|permanent booster}}]]{{tr|item}}，可永久为所有[[{{tr|Minecarts}}]]解锁强化，包括{{tr|speed boost}}、移动时额外[[{{tr|defense}}]]、和激光攻击。它在使用时还会掉落一个[[{{tr|Mechanical Cart}}]]。{{tr|Minecart Upgrade Kit}}只能通过将[[{{tr|Mechanical Wheel Piece}}]]、[[{{tr|Mechanical Wagon Piece}}]]、和[[{{tr|Mechanical Battery Piece}}]]相结合获得，这些{{tr|item}}来自[[{{tr|Expert Mode}}]]下[[{{tr|mechanical bosses}}]] 的[[{{tr|Treasure Bag|link=y}}#{{tr|The Twins}}|{{tr|Treasure Bags}}]]。
+
+{{tr|The minecart boost}}可以通过[[{{tr|equipment slot}}|{{tr|equipment menu}}]]中{{tr|minecart slot}}处的[[{{tr|Toggles}}|{{tr|toggle}}]]来切换开关状态。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Minecart Upgrade Kit|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The minecart boost}}有下列好处：
+** {{tr|The minecart}}的最大速度增加至 {{mph|75 tiles|mode=full}}，其加速度增加至 22.5{{nbsp}}图格/秒²（{{mph|22.5 tiles}}/秒）。{{source code ref|v=1.4.4.9|method=Terraria.Mount.get_Acceleration / Terraria.Mount.get_DashSpeed / Terraria.Mount.get_RunSpeed}}
+** 当乘坐{{tr|minecart}}时，玩家会获得随着{{tr|minecart}}的当前速度增加而增加的[[{{tr|defense}}]]{{tr|boost}}：静止时 +2，最高为在最大速度时的 +7 {{tr|Defense}}。{{source code ref|v=1.4.4.9|method=Terraria.Mount.UpdateEffects}}
+** {{tr|The minecart}}获得自动瞄准{{tr|Minecart}}前方约 45 度角范围内所有{{tr|enemies}}的{{tr|laser attack}}，造成 60 {{tr|base damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Mount.CastSuperCartLaser}}
+** {{tr|Minecart}}在[[{{tr|Minecarts|link=y}}#{{tr|Damage and knockback}}|撞击{{tr|enemies}}]]时造成的伤害提升 87.5%–100%。<!-- factor at top speed: 1.875, at standstill (theoretically): 2.0 -->
+* 在后继使用时，{{tr|the Minecart Upgrade Kit}}每次都会给玩家一个{{tr|Mechanical Cart}}。{{tr|Minecart boost}}在首次使用该{{tr|item}}后就永久可用。
+
+== 花絮 ==
+* {{tr|Minecart Upgrade Kit}}提供的{{tr|The minecart boost}}和 [[1.4.4]] 前{{tr|Mechanical Cart}}的效果相同。
+* 当从旧版本更新至 1.4.4 或更高版本时，{{tr|inventory or equipment slot}}中有（来自 1.4.4 前的）{{tr|Mechanical Cart}}的{{tr|characters}}会自动解锁{{tr|the Minecart boost}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Deserialize}}
+* 界面上的{{tr|toggles}}很像[[{{tr|Deactivated Probe}}]]{{tr|item}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Minecart Upgrade Kit}}

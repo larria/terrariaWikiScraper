@@ -1,0 +1,132 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 3102
+| tags = Informational / drop
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Metal Detector}}'''是一个[[{{tr|informational accessory}}]]，能够告知玩家附近的有价值的物体，如[[{{tr|ores}}]]、[[{{tr|chests}}]]、或[[{{tr|Life Crystal}}]]。它有 {{chance|1/2}} / {{expert|100%}} 的几率掉落自稀有[[{{tr|Cavern}}]][[{{tr|enemy}}]][[{{tr|Nymph}}]]。
+
+{{tr|metal detector}}会具体显示探测到的{{tr|item}}种类（例如''“{{gameText|GameUI.OreDetected|x_0=[[{{tr|Chlorophyte Ore}}]]}}”''）。 当检测到多个贵重{{tr|item}}时，只显示具有最高价值的{{tr|item}}。类似于大多数的[[{{tr|informational items}}]]，{{tr|Metal Detector}}不会显示探测到的物体的位置或方向。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Metal Detector|expectedrows=1}}
+
+== 物体价值 ==
+能检测到的{{tr|tiles}}如下。{{tr|metal detector}}将显示最具有价值的{{tr|item}}材料的名称。
+{{flexstart|alignitems=start}}{{item/options|icons=no}}
+{| class="terraria sortable lined" style="margin-right:1em"
+|-
+! 图格 !! 价值{{source code ref|v=1.4.4.6|method=Terraria.Main.SetTileValue}}
+|-
+|{{item|Pot|note=（任意）}} || 100
+|-
+|{{item|Sturdy Fossil}} || 150
+|-
+|{{item|Desert Fossil}} || 150
+|-
+|{{item|Copper Ore}} || 200
+|-
+|{{item|Tin Ore}} || 210
+|-
+|{{item|Iron Ore}} || 220
+|-
+|{{item|Lead Ore}} || 230
+|-
+|{{item|Silver Ore}} || 240
+|-
+|{{item|Tungsten Ore}} || 250
+|-
+|{{item|Gold Ore}} || 260
+|-
+|{{item|Platinum Ore}} || 270
+|-
+|{{item|Demonite Ore}} || 300
+|-
+|{{item|Crimtane Ore}} || 310
+|-
+|{{item|Meteorite}} || 400
+|-
+|{{item|Chest|note=（任意）}} || 500
+|-
+|{{item|Dead Man's Chest}} || 500
+|-
+|{{item|Trapped Chest|note=（任意）}} || 500
+|-
+|{{item|Life Crystal}} || 550
+|-
+|{{item|Life Crystal Boulder}} || 550
+|-
+|{{item|Repaired Mana Crystal}} || 550
+|-
+|{{item|Cobalt Ore}} || 600
+|-
+|{{item|Palladium Ore}} || 610
+|-
+|{{item|Mythril Ore}} || 620
+|-
+|{{item|Orichalcum Ore}} || 630
+|-
+|{{item|Adamantite Ore}} || 640
+|-
+|{{item|Titanium Ore}} || 650
+|-
+|{{item|Gelatin Crystal}} || 675
+|-
+|{{item|Chlorophyte Ore}} || 700
+|-
+|{{item|Strange Plant}} || 750
+|-
+|{{item|Glow Tulip}} || 760
+|-
+|{{item|Life Fruit}} || 810
+|}
+{{flexend}}{{item/options|reset}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* {{tr|The Metal Detector}}会检测以玩家为中心，{{buff area}} 区域内的宝藏。
+* 它不会显示探测到的{{tr|Chest}}的具体类型。
+
+== 小贴士 ==
+* [[{{tr|Spelunker Potion}}]]或[[{{tr|Magic Lantern}}]]与{{tr|The Metal Detector}}的组合使用效果会很好，因为它们还将额外显示{{tr|blocks}}所在的位置。
+** 除此之外，它们还能补充揭示{{tr|The Metal Detector}}不能显示的一些{{tr|blocks}}的存在，例如[[{{tr|gems}}]]；亦或是在你探测到高价值{{tr|ores}}的同时，在{{tr|The Metal Detector}}之外，向你展示一些低阶价值的{{tr|ores}}。
+* 由于[[{{tr|Crystal Heart}}]]和[[{{tr|Life Fruit}}]]的更高{{tr|blocks}}价值，因此建议即便并不再需要这些东西，也应当继续收集它们，防止它们妨碍对那些其他有价值对象的显示。
+* 如果难以找到不常见的{{tr|ore}}或其他{{tr|item}}（例如[[{{tr|Adamantite Ore}}]]或[[{{tr|Strange Plant}}]]），有一个小技巧可以帮助缩小其位置的搜索范围。保持竖直方向上位置不变，向左或右走，直至不再能够探测到正在寻找的{{tr|the item}}，然后标记所在的位置。向相反方向做相同的事。站在两个标记点的中点处，然后向下寻找。你很有可能找到你的目标。
+** 这在使用[[{{tr|Compass}}]]或[[{{tr|Depth Meter}}]]时会更简单，因为当你处在{{tr|the metal detector}}的范围边缘时，你可以计算出具体所处的深度或海拔高度。
+*** 举例来说，如果你现在位于向东 1618 {{tr|feet}}的位置，附近最有价值的物体是{{tr|ore}}，但在 1622 {{tr|feet}}的地方，附近有一个{{tr|chest}}，你就可以知道{{tr|chest}}在你右侧 170 {{tr|feet}}处（或者说是向东 1790 {{tr|feet}}处）。这意味着你可以直接前往此地，而所寻找的目标就在你的正上方或正下方，大大减少了所要搜寻的范围。
+** 另一个方法是，如果你正在 1080p 下游玩，可以用[[{{tr|Binoculars}}]]、[[{{tr|Sniper Rifle}}]]或[[{{tr|Rifle Scope}}]]或其变体进行缩放，并与[[{{tr|Spelunker Potion}}]]搭配使用。
+*** 举例来说，如果正在寻找[[{{tr|Life Fruit}}]]的话，需要四处移动，直到消息“在附近发现{{tr|Life Fruit}}”出现。然后使用这些{{tr|items}}并寻找可见区域的每一部分。这可以大大降低找到{{tr|Life Fruits}}所需要花费的时间。
+
+== 花絮 ==
+* 尽管能被{{tr|Metal Detector}}探测到，但{{tr|Life Fruit}}、{{tr|Sturdy Fossils}}、{{tr|Strange Plants}}和{{tr|pots}}都不是金属制品。
+* 虽然{{tr|the tooltip}}如此，但它实际上可以探测到{{tr|ores}}以外的物体。
+* 尽管[[{{tr|Hellstone}}]]是[[{{tr|pre-Hardmode}}]]最强的{{tr|ore}}，但它并不能被探测到，其中的原因很可能是它只在[[{{tr|The Underworld}}]]内自然生成。其他有价值的{{tr|items}}，例如[[{{tr|gems}}]]，也不能被探测到。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Gelatin Crystals}}现在可以被探测到。
+** {{tr|Life Crystals}}的价值从 800 降低至 550。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Desert Fossils}}、{{tr|Trapped Chests}}和{{tr|Strange Plants}}现在可以被探测到。
+** {{tr|Meteorite}}的价值从 300 增加至 400。
+** {{tr|Demonite and Crimtane Ore}}的价值从 310/320 降低至 300/310。
+** {{tr|Gold and Platinum Ore}}的价值从 400/410 降低至 260/270。
+** {{tr|Sturdy Fossils}}的价值从 350 降低至 150。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Metal Detector}}

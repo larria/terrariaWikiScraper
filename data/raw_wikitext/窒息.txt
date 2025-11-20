@@ -1,0 +1,61 @@
+{{buff infobox
+| auto = 68
+| effects = 每秒 -20 {{tr|health}}
+}}
+
+'''{{tr|Suffocation}}'''是一个[[{{tr|debuff}}]]，会在玩家陷入掉落的[[{{tr|Sand}}]]、[[{{tr|Silt}}]]或[[{{tr|Slush}}]]中时施加。[[{{tr|Drowning}}]]不会施加此{{tr|debuff}}。伤害数字会像其它持续伤害的{{tr|debuff}}一样弹出。
+[[File:Suffocation (demo).gif|thumb|right|{{tr|suffocation}}的效果。注意在被击中后频繁跳出的 5 {{tr|damage}}。]]
+
+== 起因 ==
+=== 来自环境 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+|-
+| {{item|mode=table|class=block aligncenter textleft|Sand Block}}
+| 直到玩家离开{{tr|Sand Blocks}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Ebonsand Block}}
+| 直到玩家离开{{tr|Ebonsand Blocks}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Pearlsand Block}}
+| 直到玩家离开{{tr|Pearlsand Blocks}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Crimsand Block}}
+| 直到玩家离开{{tr|Crimsand Blocks}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Silt Block}}
+| 直到玩家离开{{tr|Silt Blocks}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Slush Block}}
+| 直到玩家离开{{tr|Slush Blocks}}
+|}
+
+=== 来自自己 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+|-
+| {{item|mode=table|class=block aligncenter textleft|Red Potion}}
+| 1 / {{expert|2}} / {{master|3}} 小时
+| 1/1 (100%)
+|}
+
+== {{tr|Notes}} ==
+* 只有上方列出的{{tr|blocks}}会造成{{tr|Suffocation}}；其它{{tr|blocks}}（如在玩家头上生成的[[{{tr|Obsidian}}]]）则完全无害。
+** 玩家身体的任何一部分在上方列出的{{tr|block}}中困住时都会导致{{tr|Suffocation}}。
+* 如果玩家正在游玩[[{{tr|Secret world seeds}}]] For the Worthy，{{tr|Ash Block}}被挖掘时有几率像受重力影响一般掉落，但玩家被其困住时并不会获得{{tr|Suffocation}}{{tr|debuff}}。
+
+== {{tr|History}} ==
+{{history|Desktop 1.2.3|在水下跑步时不再会不停出现短暂持续的{{tr|Suffocation}}{{tr|debuff}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{language info|en=Suffocation}}

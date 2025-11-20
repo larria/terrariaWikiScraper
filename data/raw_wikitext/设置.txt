@@ -1,0 +1,1145 @@
+{{exclusive|desktop=y|3ds=y|mobile=y|console=y}}
+
+'''{{tr|Settings}}'''是一系列游戏玩法选项，可以在游戏的主菜单、暂停菜单（{{icon/3ds}}）、或是[[{{tr|inventory}}]]界面（{{icon|desktop|console|mobile}}）找到。
+
+== {{desktop version|nolink=y}} ==
+{{collapse top}}
+=== 常规 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = {{tr|Autosave}}
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:autosave|
+* '''开'''：在游玩中，后台每 10 分钟保存一次{{tr|world and character}}数据。{{source code ref|v=1.4.4.9|method=Terraria.Main.DoUpdate_AutoSave}}
+* '''关'''：仅在使用“保存并退出”选项时保存。
+: 注意无论此项{{tr|settings}}如何，游戏总是会在{{tr|character}}死亡时自动保存{{tr|character}}数据；在{{tr|multiplayer}}下，游戏每 5 分钟会保存一次{{tr|character}}数据，{{tr|server}}每 10 分钟会保存一次{{tr|world}}数据。
+
+将{{tr|Autosave}}设为开（默认）的好处为能够保留玩家的进度，以防游戏崩溃或停电，无需担心手动保存。部分玩家可能会喜欢将此项设为关，以防潜在的改变世界的错误出现，或是想要在世界内做实验且不改变它，而后将世界返回到之前的状态。}}
+}}
+{{/row
+| name = {{tr|Autopause}}
+| options = 开 / 关
+| default = 关
+| description = 仅限{{tr|singleplayer}}，此设置会在开启[[{{tr|inventory}}]]时暂停游戏。这可能会很有用，玩家可以在无需担心被攻击或[[{{tr|breath meter}}|{{tr|drowning}}]]的情况下整理{{tr|inventory}}。不过，{{tr|autopause}}开时，玩家无法从{{tr|inventory}}中直接[[{{tr|placement}}|{{tr|place}}]]{{tr|items}}，也无法直接从{{tr|inventory}}使用可使用的物品。注意，独立于此设置（且也仅限{{tr|singleplayer}}）的是，也可以通过任何切出''{{tr|Terraria}}''程序的方法来暂停游戏，例如使用 {{wikipedia|Alt-Tab}} 热键或 {{wikipedia|Windows key|Windows 键}}功能。
+}}
+{{/row
+| name = 地图<ref name="title"/>
+| options = 已启用 / 已禁用
+| default = 已启用
+| description = [[{{tr|Minimap}}]]可以被启用或禁用。禁用{{tr|Minimap}}可以提升在旧设备上的性能，但极度不推荐这样做，因为以{{tr|Minimap}}关闭的状态游玩意味着玩家无法使用[[{{tr|Pylons}}]]或[[{{tr|Wormhole Potion}}]]。
+}}
+{{/row
+| name = 密码<ref name="title"/>
+| options = 可见 / 隐藏
+| default = 可见
+| description = {{#vardefineecho:commondesc:passwords|设为隐藏时，输入到游戏窗口的密码字符（例如用于登入[[{{tr|Multiplayer}}]]游戏时的）会显示为星号（*）。}}
+}}
+|-
+! colspan=3 | 缩放子菜单<ref name="ingame"/>
+|-
+{{/row
+| name = 缩放
+| options = 100%-200%（变化）
+| default = 100%
+| description = 允许缩放游戏世界，以看到更多细节。玩家能够缩小到的最大值取决于他们的屏幕分辨率。
+}}
+{{/row
+| name = 用户界面比例
+| options = 50%-200%（变化）
+| default = 不同
+| description = 允许玩家增加其界面的大小，在更高分辨率下方便查看。
+}}
+|-
+! colspan=3 |
+|-
+{{/row
+| name = 激活套装奖励<ref name="ingame"/>
+| options = 上 / 下
+| default = 下
+| description = {{#vardefineecho:commondesc:activate-set-bonuses|大部分{{tr|armor}}的{{tr|set bonuses}}都是被动的，意味着它们总是开启。部分{{tr|armor sets}}具有可以通过双击 {{key|up}} 或 {{key|down}} 激活的{{tr|bonus}}（取决于此{{tr|setting}}）。注意：站在{{tr|platform}}上时双击 {{key|down}} 可能会使玩家落下{{tr|platform}}。}}
+}}
+{{/row
+| name = 智能门<ref name="ingame"/>
+| options = 已启用 / 仅限游戏手柄 / 已禁用
+| default = 已启用
+| description = 启用时，玩家在走向[[{{tr|doors}}]]和[[{{tr|Tall Gate}}]]时会自动打开、关闭它们。设为仅限游戏手柄时，只有玩家在使用手柄时才会如此。
+}}
+{{/row
+| name = 悬停控制
+| options = 按住 / 点击
+| default = 按住
+| description = 设置为按住时，玩家需要按住 {{key|down}} 和 {{key|jump}} 以使用其[[{{tr|wings}}]]的悬停能力。设置为点击时，悬停通过按下 {{key|down}} 键启用，通过在飞行时按下 {{key|up}} 来停止。
+}}
+|}
+
+=== 界面 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 拾取提示
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:pickup-text|决定玩家拾取物品时是否显示描述文本。其用途在于玩家无需持续检查{{tr|inventory}}以了解拾取了什么，不过这一文本可能会使部分玩家感到厌烦，因为它在游玩时会遮盖住{{tr|character}}的部分图像。[[{{tr|Sonar Potion}}]]在此设置设为关时等同于没有效果。}}
+}}
+{{/row
+| name = 事件进度条
+| options = 开 / 关 / 定时
+| default = 开
+| description = {{#vardefineecho:commondesc:event-progress-bar|
+* '''开'''：显示指示事件完成百分比的进度条。
+* '''关'''：隐藏进度条。
+* '''定时'''：显示进度条，但如果几秒内没有{{tr|enemies}}被杀死时会自动隐藏。在有{{tr|enemies}}被杀死时重新出现。}}
+}}
+{{/row
+| name = 放置预览
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:placement-preview|决定是否预览[[{{tr|furniture}}]]的放置位置。这可以用于确定{{tr|furniture}}放置的精确位置，无需在放置位置错误时取走重新放置。}}
+}}
+{{/row
+| name = 突出显示新物品
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:highlight-new-items|决定新拾取的物品在{{tr|inventory}}中是否高亮显示。这有助于快速定位获得的物品。高亮显示会在{{tr|cursor}}在高亮显示的物品上方悬停后或{{tr|inventory}}关闭后消失。}}
+}}
+{{/row
+| name = 图格网格
+| options = 开 / 关
+| default = 关
+| description = {{#vardefineecho:commondesc:tile-grid|如果玩家静止，在{{tr|cursor}}附近显示 5 {{tr|tile}}宽的网格以更精确地放置{{tr|blocks}}。}}
+}}
+{{/row
+| name = 游戏手柄说明
+| options = 开 / 关
+| default = 开
+| description = 在屏幕上显示使用手柄如何进行各种操作。
+}}
+{{/row
+| name = 小地图边框
+| options = 默认/女武神/复古/树叶/枝叶/石金/棍棒/混合/金色
+| default = 默认
+| description = {{#vardefineecho:commondesc:minimap-border|在 9 种[[{{tr|Minimap|link=y}}#小地图样式|小地图样式]]间循环。这只有装饰作用，不会影响{{tr|minimap}}的功能。}}
+}}
+{{/row
+| name = 地图比例<ref name="ingame"/>
+| options = 50%-100%
+| default = 100%
+| description = 调整右上角{{tr|minimap}}的大小。
+}}
+{{/row
+| name = 生命和魔力样式
+| options = 经典 / 精致 / 水平条
+| default = 精致
+| description = {{#vardefineecho:commondesc:health-and-mana-style|更改[[{{tr|health}}]]和[[{{tr|mana}}]]的用户界面显示。}}只有经典样式具有{{tr|health}}的数值化显示。<!-- This is not true for Console and Mobile, so we don't include it in commondesc -->
+}}
+{{/row
+| name = 悬停文本框<ref name="ingame"/>
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:hover-text-boxes|在{{tr|item tooltips}}、[[{{tr|Sign}}]]悬停文本及其他文本的后方添加一个暗蓝色的框。}}
+}}
+|}
+
+=== 图像 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 转到全屏/转到窗口模式
+| description = 切换全屏和窗口模式。
+}}
+|-
+! colspan=3 | 分辨率子菜单
+|-
+{{/row
+| name = 全屏分辨率
+| options = 变化
+| default = 不同
+| description = 设置全屏模式使用的分辨率。在切换回窗口模式后会适用于窗口模式，但窗口的大小仍然会影响分辨率。更高的分辨率使得游戏看起来更平滑，但会降低性能。注意虽然分辨率会影响{{tr|character}}的“缩放”（即影响游戏界面的边界），它只能在设备的最大屏幕分辨率允许范围内调整。<ref>[http://web.archive.org/web/20150618103844/http://www.terrariaonline.com/threads/zooming-out-the-view.130607/ "Zooming out" the view?] {{small|{{date|2014|01|23}}}}</ref>这意味着具有高最高分辨率的屏幕比低最高分辨率的屏幕能提供更远的缩放，即使这可能需求第三方软件来让''{{tr|Terraria}}''适用极高的分辨率值。<ref>例：[https://romsteady.blogspot.no/2011/05/terraria-trainerresolution-launcher.html RomTerraria], [https://1.bp.blogspot.com/-2BIkIUdZYyw/UoRVwNgDZSI/AAAAAAAAAGY/3bOZQuyAJTg/s1600/Terraria-5760x1080.jpg 图像]</ref>
+}}
+{{/row
+| name = 无边框窗口<ref name="title"/>
+| options = 已启用 / 已禁用
+| default = 已禁用
+| description =将窗口分辨率设置为适应屏幕，并移除标题栏和窗口边框。这一设置在使用、切换多个显示器时可能很有用。
+}}
+|-
+! colspan=3 |
+|-
+{{/row
+| name = [[{{tr|Parallax}}]]
+| options = 0-100
+| default = 60
+| description = {{#vardefineecho:commondesc:parallax|更改[[{{tr|biome background}}]]图像相对玩家移动而滚动的幅度。更高的数值使得背景移动幅度更大，从而创造更明显的 3D 深度效果。更低的数值使得背景更加静止。}}
+}}
+{{/row
+| name = 跳帧
+| options = 开/隐蔽/关
+| default = 隐蔽
+| description =
+跳帧会跳过不必要的帧以改善性能，并减少在[[{{tr|Multiplayer}}]]下的不同步问题。<ref>{{forums thread|pc-1-3-1-1-hotfix.44359|PC 1.3.1.1 Hotfix}} {{small|{{date|2016|05|31}}}}</ref>
+* '''开'''：启用由 XNA（开发''{{tr|Terraria}}''的编程环境）提供的默认跳帧功能。
+* '''隐蔽'''：[[{{tr|Redigit}}]] 在 [[1.3]] 和 [[1.3.1]] 间开发的调整过的自定义跳帧，用于每秒能够显示高于 60 帧（60 FPS）的显示器和设备。
+* '''关'''：Redigit 最初的自定义跳帧，从''{{tr|Terraria}}''最初的测试版起就存在。
+}}
+{{/row
+| name = 照明
+| options = 彩色/白光/复古/迷幻
+| default = 彩色
+| description = {{#vardefineecho:commondesc:lighting|更改[[{{tr|lighting mode}}]]。}}
+}}
+{{/row
+| name = 质量
+| options = 自动 / 高 / 中 / 低
+| default = 自动
+| description = {{#vardefineecho:commondesc:quality|切换低、中、高、或自动照明质量。<ref>照明设置仅决定照明的类型，这一质量设置决定实际的渲染质量。</ref>更高的质量视觉效果更好，但在部分设备上可能会降低性能。设为“自动”时，在游玩时会按照设备的性能（每秒帧数）来持续更改质量设置。}}
+}}
+{{/row
+| name = 背景
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:backgrounds|切换[[{{tr|biome background}}]]的开关。将其设为关闭可能会在较差的设备上改善性能。}}
+}}
+{{/row
+| name = {{tr|Blood and Gore}}
+| options = 开 / 关
+| default = 开
+| description = {{#vardefineecho:commondesc:blood-and-gore|
+切换{{tr|blood and gore}}效果。关闭时，被杀死的实体会冒出一股烟。这还包括在动画中产生血粒子的物体，例如[[{{tr|Demon Eye}}]]和[[{{tr|Skeletron}}]]。骨架和机械实体仍然会在被杀死时爆出身体部件。有暗示性的[[{{tr|Nurse}}]]话语“{{gameText|LegacyDialog.55}}”也会被移除。
+
+玩家可能会希望将{{tr|Blood and Gore}}关闭以降低视觉上的拥挤，让游戏内不会到处散落{{tr|enemy}}部件。在涉及到较为年幼的玩家时关闭这一设置也可能更加适合。}}
+}}
+{{/row
+| name = 采矿晃动<ref name="title"/>
+| options = 已启用 / 已禁用
+| default = 已启用
+| description = {{#vardefineecho:commondesc:miners-wobble|切换是否显示{{tr|block}}视觉效果：{{tr|block}}没有完全被摧毁时会有膨胀收缩的动画，持续四分之一秒。见[[{{tr|Settings|link=y}}#{{tr|Notes}}|{{tr|Notes}}]]。}}
+}}
+{{/row
+| name = {{tr|Heat Distortion}}<ref name="ingame"/>
+| options = 已启用 / 已禁用
+| default = 已启用
+| description = {{#vardefineecho:commondesc:heat-distortion|切换在[[{{tr|Underworld}}]]和[[{{tr|Desert}}]]中可见的{{tr|heat distortion}}效果。}}
+}}
+{{/row
+| name = 暴风雨效果<ref name="ingame"/>
+| options = 已启用 / 已禁用
+| default = 已启用
+| description = {{#vardefineecho:commondesc:storm-effects|切换在[[{{tr|Blizzard}}]]和[[{{tr|Sandstorm}}]]期间可见的屏幕效果。}}
+}}
+{{/row
+| name = 水波质量<ref name="ingame"/>
+| options = 关 / 低 / 中 / 高
+| default = 已启用
+| description = {{#vardefineecho:commondesc:waves-quality|
+增加/减少水面和水下的水波质量：
+* '''低'''：被动的水体摇动；不会有物体与其交互。
+* '''中'''：{{tr|Players}}和大部分 {{tr|NPCs}}（以及其他物体，包括[[{{tr|Magic Water Dropper}}|从天花板落下的水滴]]）会在穿过{{tr|water}}时产生涟漪。 
+* '''高'''：{{tr|Projectiles}}也会创造涟漪，且涟漪会在墙壁上反弹。<ref>{{forums thread|new-water-physics-coming-soon.50222/page-2#post-1113636|New Water Physics, Coming Soon!}}, reply by Skiphs {{small|{{date|2016|10|11}}}}</ref>}}
+
+此设置在复古或迷幻照明设置下没有效果。
+}}
+{{/row
+| name = 有风环境
+| options = 已启用 / 已禁用
+| default = 已启用
+| description = {{#vardefineecho:commondesc:windy-environment|切换会受[[{{tr|wind}}]]影响的{{tr|items}}的“被风吹动”的视觉效果。}}
+}}
+|}
+
+=== 音量 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 音乐
+| options = 0%-100%
+| default = 100%
+| description = {{#vardefineecho:commondesc:music|控制[[{{tr|music}}]]的音量。}}
+}}
+{{/row
+| name = 音效
+| options = 0%-100%
+| default = 100%
+| description = {{#vardefineecho:commondesc:sound|控制诸如使用{{tr|items}}/{{tr|weapons}}、{{tr|liquids}}飞溅、使用界面、杀死{{tr|enemies}}/{{tr|players}}等等音效的音量。}}
+}}
+{{/row
+| name = 环境
+| options = 0%-100%
+| default = 100%
+| description = {{#vardefineecho:commondesc:ambient|控制偶尔产生的环境背景音的音效，如[[{{tr|lava}}]]翻腾，{{tr|Rain}}/{{tr|Blizzard}}/{{tr|Sandstorm}}、{{tr|NPC}} 环境音效（如[[{{tr|Bird}}]]鸣）、[[{{tr|waterfall}}]]，等等。}}
+}}
+|}
+
+=== 光标 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 光标颜色
+| options = HSL（色相，饱和度，亮度）
+| default = {{color box|#ff325f}} #ff325f
+| description = 玩家的{{tr|cursor}}的颜色。
+}}
+{{/row
+| name = 边框颜色
+| options = HSLA（色相，饱和度，亮度，透明度）
+| default = {{color box|#40404040}} #40404040
+| description = 玩家的{{tr|cursor}}边框的颜色。
+}}
+{{/row
+| name = {{tr|Smart Cursor}}模式
+| options = 切换 / 长按
+| default = 切换
+| description = {{#vardefineecho:commondesc:smart-cursor-mode|
+更改[[{{tr|Smart Cursor}}]]激活的方式。
+* '''切换'''：{{tr|Smart Cursor}}会在按下所绑定的按键（默认为 {{key|左 Ctrl}}）一次后激活，再次按下后取消。
+* '''长按'''：{{tr|Smart Cursor}}仅在长按所绑定的按键时激活。}}
+}}
+{{/row
+| name = {{tr|Smart Cursor}}优先级
+| options = {{tr|Pickaxe}} → {{tr|Axe}} / {{tr|Axe}} → {{tr|Pickaxe}}
+| default = {{tr|Pickaxe}} → {{tr|Axe}}
+| description = {{#vardefineecho:commondesc:smart-cursor-priority|
+更改使用{{tr|Smart Cursor}}时，手持{{tr|pickaxe}}时的目标优先级。
+* '''{{tr|Pickaxe}} → {{tr|Axe}}'''：{{tr|The cursor}}总是以最近的{{tr|tree}}为目标，无论所朝方向。仅在范围内没有{{tr|tree}}时才会以{{tr|blocks}}为目标。
+* '''{{tr|Axe}} → {{tr|Pickaxe}}'''：{{tr|The cursor}}会以朝向处的{{tr|block}}为目标。如果范围内没有{{tr|block}}，则以最近的{{tr|tree}}为目标。}}
+}}
+{{/row
+| name = 智能放置物块
+| options = 到光标 / 已禁用
+| default = 已禁用
+| description = {{#vardefineecho:commondesc:smart-block-placement|
+* '''到光标'''：开启{{tr|Smart Cursor}}时，{{tr|Blocks}}从{{tr|Smart Cursor}}的目标位置向{{tr|cursors}}位置放置。
+* '''已禁用'''：在{{tr|cursor}}位置放置{{tr|Blocks}}，行为与禁用{{tr|Smart Cursor}}时相同。}}
+}}
+{{/row
+| name = 锁定优先级
+| options = 视线最清晰 / 目标最接近
+| default = 视线最清晰
+| description = {{#vardefineecho:commondesc:lock-on-priority|
+决定[[{{tr|Lock On}}]]选取目标的方式：
+* '''视线最清晰'''：基于视野选取{{tr|Enemies}}。被实心物体阻挡视线，无法被玩家触及的{{tr|Enemies}}优先度较低。此设置在{{tr|Dungeon}}和其他有许多阻挡物的位置很有用。这一设置有时会导致最远的{{tr|enemy}}被选为目标。
+* '''目标最接近'''：最接近玩家的{{tr|enemy}}会被选为目标，无视{{tr|tiles}}干预。这一设置在平坦开阔的区域很有用。}}
+}}
+|}
+
+=== 控件 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 激活{{tr|Set Bonuses}}<ref name="title"/>
+| options = 下 / 上
+| default = 下
+| description = 设置为“上”时，可激活的{{tr|set bonus}}能力通过双击 {{key|up}} 而非 {{key|down}} 触发。
+}}
+{{/row
+| name = 左 Shift 快速丢弃<ref name="title"/>
+| options = 已启用 / 已禁用
+| default = 已禁用
+| description = 允许玩家在{{tr|inventory}}菜单中按住 {{key|lshift}} 并左击物品将其快速放入{{tr|Trash slot}}。如果设为禁用，则使用 {{key|左 Ctrl}} 并左击。
+}}
+{{/row
+| name = 按键绑定
+| default = {{na}}
+| description = 开启按键绑定菜单，玩家可以为键盘和鼠标或游戏手柄更改不同游戏控制的绑定按键。见[[{{tr|game controls}}]]获取详细描述。 
+}}
+|}
+
+=== 语言 ===
+{| class="terraria lined"
+! 语言
+|-
+| {{gameText|Language.English}}
+|-
+| {{gameText|Language.German}}
+|-
+| {{gameText|Language.Italian}}
+|-
+| {{gameText|Language.French}}
+|-
+| {{gameText|Language.Spanish}}
+|-
+| {{gameText|Language.Russian}}
+|-
+| {{gameText|Language.Chinese}}
+|-
+| {{gameText|Language.Portuguese}}
+|-
+| {{gameText|Language.Polish}}
+|}
+{{collapse bottom}}
+
+== {{versions|console|mobile|nolink=y}} ==
+{{collapse top}}
+=== 设置 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 所有设置
+| options = 重置
+| description = 重置所有设置选项到默认值。
+}}
+{{/row
+| name = {{tr|Autosave}}
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:autosave}}
+}}
+{{/row
+| name = {{tr|Autopause}}
+| options = 从不 / 菜单 / {{tr|Inventory}} & {{tr|Menus}}
+| default = {{tr|Menus}}
+| description = 只在{{tr|singleplayer}}生效。
+* '''{{tr|Menus}}'''：在非{{tr|inventory menu}}中时暂停{{tr|game}}（例如{{tr|settings}}）。
+* '''{{tr|Inventory}}&{{tr|Menus}}'''：在任意{{tr|menu}}中时暂停{{tr|game}}。
+}}
+{{/row
+| name = {{tr|Map}}
+| options = 开 / 关
+| default = 开
+| description = 开关[[{{tr|minimap}}]]。只能在标题界面更改。在{{mobile version}}中，对于低 RAM 的设备，该选项可能会永久禁用。
+}}
+{{/row
+| name = 语言
+| options = 法语 / 西班牙语 / 俄语 / 巴西葡萄牙语 / 英语 / 德语 / 意大利语
+| default = 不同
+| description = 设置游戏语言。
+}}
+|}
+
+=== 布局 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 界面布局
+| description = 允许玩家在掌机、全屏和分屏模式下调整大多数 UI 元素的位置，以及整体 UI 比例。
+}}
+{{/row
+| name = 事件进度条
+| options = 关 / 定时 / 开
+| default = 开
+| description = {{#var:commondesc:event-progress-bar}}
+}}
+{{/row
+| name = 小地图边框
+| options = {{tr|Default}} / {{tr|Stone Gold}} / 枝叶 / {{tr|Leaf}} / 复古 / 女武神 / 金色 / 混合 / 棍棒
+| default = 默认
+| description = {{#var:commondesc:minimap-border}}
+}}
+{{/row
+| name = {{tr|Minimap}}尺寸
+| options = 小 / 大
+| default = {{icon/console}} 大 / {{icon/mobile}} 小
+| description = 调整[[{{tr|minimap}}]]的尺寸。
+}}
+{{/row
+| name = 生命和魔力样式
+| options = 经典 / 精致 / 水平条
+| default = 精致
+| description = {{#var:commondesc:health-and-mana-style}}
+}}
+{{/row
+| name = {{tr|Hotbar}}方向
+| options = 竖直 / 水平
+| default = {{icon/console}} 水平 / {{icon/mobile}} 竖直
+| description = {{tr|Hotbar}}的方向。“水平”为一排 10 {{tr|slots}}，而“竖直”为两排 5 {{tr|slots}}。
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = 安全区域
+| description = 打开能让玩家调整 UI 安全区域的菜单。
+}}
+{{/row
+| name = 页面模式
+| options = 折叠，展开和关闭 / 展开和关闭 / 折叠和关闭 / 仅展开
+| default = 折叠，展开和关闭
+| description = UI 界面循环的模式。
+}}
+{{/row
+| name = 拾取提示
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:pickup-text}}
+}}
+{{/row
+| name = 突出显示新物品
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:highlight-new-items}}
+}}
+{{/row
+| name = {{icon/mobile}} 密码
+| options = 隐藏 / 可见
+| default = 可见
+| description = {{#var:commondesc:passwords}}
+}}
+{{/row
+| name = 工具提示背景
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:hover-text-boxes}}
+}}
+{{/row
+| name = 物品工具提示渐隐
+| options = 0s-15s
+| default = 3s
+| description = 决定选中{{tr|inventory}}中的物品后，显示的{{tr|tooltips}}多久会淡去。
+}}
+{{/row
+| name = 工具提示渐隐
+| options = 0s-15s
+| default = 1s
+| description = 决定选中{{tr|hotbar}}中的物品后，显示的物品名多久会淡去。
+}}
+{{/row
+| name = {{icon/console}} 分屏方向
+| options = 并排 / 上下
+| default = 上下
+| description =
+}}
+|}
+
+=== 图像 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = {{tr|Lighting Mode}}
+| options = 彩色 / 迷幻
+| default = 彩色
+| description = {{#var:commondesc:lighting}}
+}}
+{{/row
+| name = 背景
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:backgrounds}}
+}}
+{{/row
+| name = {{tr|Blood and Gore}}
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:blood-and-gore}}
+}}
+{{/row
+| name = 屏幕效果
+| options = 开 / 关
+| default = 开
+| description = 开关屏幕遮罩效果（如[[{{tr|Blood Moon}}]]或[[{{tr|Graveyard}}]]效果）。与 {{desktop version}} 不同，这并未绑定至{{tr|lighting mode}}。
+}}
+{{/row
+| name = 采矿晃动
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:miners-wobble}}
+}}
+{{/row
+| name = 有风环境
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:windy-environment}}
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = 视差
+| options = 0%-100%
+| default = 60%
+| description = {{#var:commondesc:parallax}}
+}}
+{{/row
+| name = {{icon/mobile}} 帧率显示
+| options = 开 / 关
+| default = 关
+| description = 在屏幕底部中间显示游戏的帧率，当前增强的液体图格数目，以及视觉特效质量（0-100%）。
+}}
+{{/row
+| name = {{icon/mobile}} 帧率上限
+| options = 30 / 60
+| default = 60
+| description = 将游戏帧率限制为最多 30 或 60 帧每秒。
+}}
+{{/row
+| name = 视觉特效质量
+| options = 自动 / 高 / 中 / 低
+| default = 自动
+| description = {{#var:commondesc:quality}}
+}}
+{{/row
+| name = 水波质量
+| options = 关 / 低 / 中 / 高
+| default = 高
+| description = {{#var:commondesc:waves-quality}}
+}}
+|-
+! colspan=3 | 纹理质量子菜单
+|-
+{{/row
+| name = {{icon/mobile}} UI 质量
+| options = 低 / 高
+| default = 高
+| description = 控制 UI 元素的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 角色质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[NPC 列表|{{tr|NPCs}}]]的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 射弹质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[{{tr|Projectile IDs}}|{{tr|projectiles}}]]的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 背景质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[{{tr|biome backgrounds}}]]的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 血污质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[{{tr|Gore IDs}}|{{tr|gore}}]]的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 发光质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[{{tr|Glow Mask IDs}}|{{tr|glow masks}}]]的纹理质量。
+}}
+{{/row
+| name = {{icon/mobile}} 环境质量
+| options = 低 / 高
+| default = 高
+| description = 控制[[{{tr|blocks}}]]和[[{{tr|background walls}}]]的纹理质量。
+}}
+|}
+
+=== 音效 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 音乐
+| options = 0%-100%
+| default = 75%
+| description = {{#var:commondesc:music}}
+}}
+{{/row
+| name = 音效
+| options = 0%-100%
+| default = 100%
+| description = {{#var:commondesc:sound}}
+}}
+{{/row
+| name = 环境
+| options = 0%-100%
+| default = 75%
+| description = {{#var:commondesc:ambient}}
+}}
+|}
+
+=== 控件 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 放置预览
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:placement-preview}}
+}}
+{{/row
+| name = 图格网格
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:tile-grid}}
+}}
+{{/row
+| name = 智能放置物块
+| options = 开 / 关
+| default = 关
+| description =
+}}
+{{/row
+| name = 移动摇杆瞄准
+| options = 开 / 关
+| default = 开
+| description =
+}}
+{{/row
+| name = {{icon/mobile}} 自动挥舞
+| options = 开 / 关
+| default = 开
+| description = 启用时，会为所有[[{{tr|weapons}}]]启用[[{{tr|autoswing}}]]。
+}}
+{{/row
+| name = 左摇杆跳跃模式
+| options = 禁用左摇杆跳跃 / 双击跳跃 / 轻触跳跃 / 上滑跳跃
+| default = {{icon/console}} 禁用 / {{icon/mobile}} 双击
+| description =
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = {{tr|Smart Cursor}}模式
+| options = 切换 / 长按
+| default = 切换
+| description = {{#var:commondesc:smart-cursor-mode}}
+}}
+{{/row
+| name = {{tr|Smart Cursor}}优先级
+| options = {{tr|Axe}} / {{tr|Pickaxe}}
+| default = {{tr|Pickaxe}}
+| description = {{#var:commondesc:smart-cursor-priority}}
+}}
+{{/row
+| name = 锁定优先级
+| options = 目标最接近 / 视线最清晰
+| default = 视线最清晰
+| description = {{#var:commondesc:lock-on-priority}}
+}}
+|}
+<!--Item Type Defaults reset-->
+
+=== 触摸 ===
+此菜单只在 {{switch}} 或 {{mobile}} 中可用。
+
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 触摸控制
+| description = 在玩家使用触摸输入时，打开一个允许玩家调整 UI 元素布局的菜单。
+}}
+{{/row
+| name = {{icon/mobile}} 触摸控制简介
+| options = 简介 1 / 简介 2 / 简介 3 / 简介 4
+| default = 简介 1
+| description =
+}}
+{{/row
+| name = 放大镜
+| options = 开 / 关
+| default = 开
+| description = 放置物块时，在玩家光标附近显示放大的世界一隅。
+}}
+{{/row
+| name = 捏合缩放世界
+| options = 开 / 关
+| default = 开
+| description = 启用时，玩家可以捏合屏幕以放大或缩小。
+}}
+{{/row
+| name = 捏合缩放地图
+| options = 开 / 关
+| default = 开
+| description = 启用时，玩家可以捏合屏幕以打开全屏[[{{tr|minimap}}]]。
+}}
+{{/row
+| name = 双击手势
+| options = 开 / 关
+| default = {{icon/switch}} 关 / {{icon/mobile}} 开
+| description = 启用双击{{tr|inventory}}里的{{tr|item}}来实现某种操作，如拆分堆叠或装备{{tr|items}}。
+}}
+{{/row
+| name = 触摸光标颜色
+| description = 使用触摸时，玩家的{{tr|cursor}}的主颜色以及边框的颜色。
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = {{icon/mobile}} 自动选择模式
+| options = 按住 / 切换
+| default = 按住
+| description =
+}}
+{{/row
+| name = {{icon/mobile}} 瞄准敏感度
+| options = 50%-150%
+| default = 100%
+| description =
+}}
+{{/row
+| name = {{icon/mobile}} 瞄准模式切换
+| options = 总瞄准并使用 / 依据物品类型 / 对于所有物品 / 总仅瞄准
+| default = 依据物品类型
+| description =
+}}
+{{/row
+| name = {{icon/mobile}} 智能光标切换
+| options = 总关闭 / 总开启 / 依据物品类型 / 对于所有物品
+| default = 依据物品类型
+| description =
+}}
+|}
+
+=== 手柄 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 手柄绑定
+| description = 打开能让玩家调整手柄按键绑定的菜单。
+}}
+{{/row
+| name = 方案
+| options = 简化 / 高级 / Redigit 之选 / 习惯
+| default = Redigit 之选
+| description = 使用的控制方案。修改按键绑定会自动将之设置为习惯。
+}}
+{{/row
+| name = 交换肩键和 Triggers 按键
+| options = 开 / 关
+| default = 关
+| description = 交换肩键和 Triggers 按键的功能
+}}
+{{/row
+| name = 自动堆叠
+| options = 开 / 关
+| default = 开
+| description = 自动将制作、购买等等的物品放进玩家的[[{{tr|inventory}}]]中而非手中。
+}}
+{{/row
+| name = 手柄光标颜色
+| description = 使用手柄时，玩家的{{tr|cursor}}的主颜色以及边框的颜色。
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = 控制横幅
+| options = 开 / 关
+| default = 开
+| description = 启用时，屏幕下方会显示一个展示使用手柄控制游戏的横幅。
+}}
+{{/row
+| name = Nav. 重复延时
+| options = 0.05s-1s
+| default = 0.4s
+| description = 在光标移动至另一个 UI 元素之前的初始延迟。
+}}
+{{/row
+| name = Nav. 重复率
+| options = 0.05s-0.5s
+| default = 0.1s
+| description = 移动至另一个 UI 元素之前的延迟。
+}}
+{{/row
+| name = 瞄准敏感度
+| options = 50%-150%
+| default = 100%
+| description =
+}}
+{{/row
+| name = 栅格捕捉
+| options = 开 / 关
+| default = 关
+| description =
+}}
+{{/row
+| name = 瞄准模式切换
+| options = 依据物品类型 / 对于所有物品 / 总仅瞄准 / 总是瞄准和使用
+| default = 对于所有物品
+| description =
+}}
+{{/row
+| name = 智能光标切换
+| options = 总关闭 / 总开启 / 依据物品类型 / 对于所有物品
+| default = 依据物品类型
+| description =
+}}
+|}
+
+=== 键盘 & 鼠标 ===
+此菜单在 {{switch}} 上不可用，因为其缺乏键盘和鼠标支持。
+
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = {{tr|Autosave}}
+| options = 开 / 关
+| default = 开
+| description = 打开能让玩家调整键盘和鼠标的按键绑定的菜单。
+}}
+{{/row
+| name = Esc. 键
+| options = {{tr|Inventory}} / {{tr|Menu}}
+| default = {{tr|Inventory}}
+| description = 决定退出键的功能。
+}}
+{{/row
+| name = 快速丢弃
+| options = Ctrl + 点击 / Shift + 点击
+| default = Ctrl + 点击
+| description = 用于快速丢弃物品的按键组合。
+}}
+{{/row
+| name = 双击手势
+| options = 开 / 关
+| default = 开
+| description = 启用双击{{tr|inventory}}里的{{tr|item}}来实现某种操作（这通常被分配给 {{key|open}}），如拆分堆叠或装备{{tr|items}}。
+}}
+{{/row
+| name = 鼠标光标颜色
+| description = 使用鼠标时，玩家的{{tr|cursor}}的主颜色以及边框的颜色。
+}}
+|-
+! colspan=3 | 高级子菜单
+|-
+{{/row
+| name = 智能光标切换
+| options = 依据物品类型 / 对于所有物品 / 总关闭 / 总开启
+| default = 依据物品类型
+| description =
+}}
+|}
+{{collapse bottom}}
+
+== {{old-gen console version|nolink=y}} ==
+{{collapse top}}
+=== 控件 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 使用快捷方式
+| options = 开 / 关
+| default = 关
+| description = 启用时，十字键的每个方向可与一种物品绑定，替换先前的图格网格开关。
+}}
+{{/row
+| name = 备选抓钩模式
+| options = 开 / 关
+| default = 关
+| description = 交换跳跃和抓钩
+}}
+{{/row
+| name = 备选手柄布局
+| options = 开 / 关
+| default = 关
+| description = 交换{{tr|Grapple}}/{{tr|Jump}}，与上一个{{tr|Item}}和使用下一个{{tr|Item}}行动。
+}}
+|}
+
+=== 设置 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = {{tr|Autosave}}
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:autosave}}
+}}
+{{/row
+| name = 拾取提示
+| options = 开 / 关
+| default = 开
+| description = {{#var:commondesc:pickup-text}}
+}}
+{{/row
+| name = {{tr|Gravitation}}翻转
+| options = 世界 / 角色
+| default = 世界
+| description = 决定在[[{{tr|Gravitation Potion}}|{{tr|reverse gravity}}]]状态下，是整个世界还是仅玩家翻转。
+}}
+|-
+! colspan=3 | 音量子菜单
+|-
+{{/row
+| name = 音效
+| options = 0–20
+| default = 20
+| description = {{#var:commondesc:sound}}
+}}
+{{/row
+| name = 音乐
+| options = 0–20
+| default = 15
+| description = {{#var:commondesc:music}}
+}}
+|}
+
+{{collapse bottom}}
+
+== {{3DS version|nolink=y}} ==
+{{collapse top}}
+=== 音效选项 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 音效
+| options = 开 / 关
+| default = 开
+| description = 开关游戏音效。
+}}
+{{/row
+| name = 音乐
+| options = 开 / 关
+| default = 开
+| description = 开关[[{{tr|music}}]]。
+}}
+|}
+
+=== {{tr|Multiplayer}}选项 ===
+此子菜单只在处于[[{{tr|Multiplayer}}]]游戏时可用。 
+
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 广播状态
+| options = 开 / 关
+| default = 关
+| description = 让游戏可以被其他 3DS 系统发现。只能由会话主机来改变。
+}}
+{{/row
+| name = PvP
+| options = 开 / 关
+| default = 关
+| description = 切换玩家的 [[PvP]] 状态.
+}}
+{{/row
+| name = 团队
+| options = 无 / 红 / 绿 / 蓝 / 黄
+| default = 无
+| description = 控制玩家所在的团队。
+}}
+|}
+
+=== 游戏玩法选项 ===
+{| class="terraria lined" width="100%"
+! width="200px" | 设置
+! width="130px" | 默认
+! 描述
+{{/row
+| name = 保存提醒
+| options = 开 / 关
+| default = 开
+| description = 如果游戏已经 15 分钟没存档则在下屏的右上角显示一个 SD 卡图标。点击此图标会自动保存游戏并让图标消失。
+}}
+{{/row
+| name = 拾取提示
+| options = 开 / 关
+| default = 开
+| description = 决定是否显示描述玩家拾起的物品的弹出文本。
+}}
+{{/row
+| name = 制作人员名单
+| description = 显示游戏制作人员名单。
+}}
+|}
+{{collapse bottom}}
+
+== 备注 ==
+[[File:Miner's Wobble.gif|frame|启用中的“采矿晃动”效果。]]
+
+* {{icon/desktop}} 跳帧设置会改变[[{{tr|DPS Meter}}]]的输出。
+
+== 花絮 ==
+* {{icon/desktop}} 在 [[1.2.3]] 前，开启{{tr|autopause}}时，在使用[[{{tr|weapon}}]]或[[{{tr|tool}}]]时进入{{tr|inventory}}菜单并点选物品会导致它卡住，并在离开{{tr|inventory}}时将其丢下（除非玩家在{{tr|inventory}}外右键点击丢下物品）。如果所选的是{{tr|consumable item}}，它将被使用。此 {{tr|bug}} 与治疗物品的互动较为独特；它们仍然能治疗玩家，但不会造成[[{{tr|Potion Sickness}}]]。[[1.2]] 尝试了修复此问题，但它仍然能通过使用能{{tr|autoswing}}的{{tr|tool or weapon}}触发。
+
+== 另见 ==
+其他类型的{{tr|settings}}包括：
+* {{eil|Config.json 设置}}
+* {{eil|Camera Mode}}
+* [[{{tr|Difficulty}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|修复了许多非血污物品被[[#图像|溅血效果设置]]隐藏的问题。}}
+{{history|Desktop 1.4.0.1|
+** 移除多核照明。
+** 动画{{tr|accessories}}不再自动暂停时播放动画。}}
+{{history|Desktop 1.3.5|引入了多种专业翻译的语言。}}
+{{history|Desktop 1.3.3.2|采矿晃动现在可以切换开和关了。}}
+{{history|Desktop 1.3.3|
+** 修正了 Gamepad 设置中的滑块在拖动时未被“锁定”的问题。
+** 引入了采矿晃动。}}
+{{history|Desktop 1.3.0.4|修复了在罕见且不走运的情况下无法离开{{tr|settings menu}}的问题。修正了{{tr|parallax}}未正确加载的问题。}}
+{{history|Desktop 1.2.4.1|
+** 让{{tr|Smart Cursor}}在[[{{tr|Minecart Track}}]]时更加智能。
+** 修复了智能光标打开时铺墙不会忽略门柱的 {{tr|bug}}。
+** 修复了在游戏控制中按下“重置为默认”时将{{tr|quick mana}}按键重置为 M 而非 J 的问题。
+** 修复了当鼠标在玩家附近干燥区域中时不会选中{{tr|glowsticks}}的 {{tr|bug}}（{{tr|Auto Select}}）。}}
+{{history|Desktop 1.2.4|
+** 添加了{{tr|Smart Cursor}}。这可以通过控制来切换，并且有一个界面选项。{{tr|Smart Cursor}}让挖掘、砍树、放置、及打破变得更快更容易。
+** 快速治疗更改为用最合适的治疗物品而非第一件治疗物品。}}
+{{history|Desktop 1.2.3.1|
+** 修复了{{tr|Autopause}}在{{tr|Chest}}重命名时表现不佳（以及{{tr|sign}}编辑时也有一点）的 {{tr|bug}}。
+** 修正了游戏中选项里地图控制部分未像常规控制那样阻塞输入的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** 添加了游戏内设置菜单。
+** 现在有环境音效的选项。保存并退现在出现在设置菜单中。
+** 为视差和音量设置添加了滑块。
+** 为视差和音量设置添加了滑块。
+** 选项菜单中添加了多核照明。
+** 现在将鼠标悬停在界面菜单中的文本上时文本会变为黄色。
+** 修正了当你暂停游戏时尘埃会变得越来越多的 {{tr|bug}}。
+** 修正了即使你更改了按键后[[{{tr|guide}}]]也依然会告诉你按 Esc 打开{{tr|inventory}}的 {{tr|bug}}。
+** 修正了在打开自动暂停时特定{{tr|armor}}（{{tr|robes}} / {{tr|werewolf}} / 人鱼）的视觉效果不应用的 {{tr|bug}}。
+** 修正了和在自动暂停中移动物品相关的漏洞。}}
+{{history|Desktop 1.2.0.1|配置设置会被重设为默认，以修复和从过往版本加载错误配置相关的问题。}}
+{{history|Desktop 1.2|
+** 添加[[{{tr|Minimap}}|{{tr|Map}}]] - “M”已重新映射为地图功能。
+** “J”现在是{{tr|mana}}使用的默认按键。}}
+{{history|Desktop 1.1.2|
+** {{tr|Terraria}}已被翻译为德语、意大利语、法语、以及西班牙语。
+** {{tr|Terraria}}现在支持标音字母（accented letter）和多种键盘布局。
+** 第一次运行时，{{tr|Terraria}}会询问使用哪种语言。这可以在选项菜单中更改。}}
+{{history|Desktop 1.0.1|
+** 通过退回按钮离开{{tr|settings menu}}应该不会崩溃了。
+** 添加了跳帧开关，这可以解决一些高端电脑上速度缓慢的问题。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{info request|Missing descriptions for Console/Mobile settings.}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="ingame">仅在游戏内可用。</ref>
+<ref name="title">仅在主菜单可用。</ref>
+}}
+
+{{Game mechanics}}
+
+{{language info|en=Settings}}

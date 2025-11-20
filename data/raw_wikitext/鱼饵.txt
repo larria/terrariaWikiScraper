@@ -1,0 +1,140 @@
+'''{{tr|Bait}}'''是[[{{tr|fishing}}]]所必需的一组{{tr|items}}。抛出[[{{tr|Fishing Poles}}|{{tr|fishing pole}}]]时，玩家的[[{{tr|inventory}}]]中必须有至少一件{{tr|bait item}}，否则无法捕到任何东西。没有{{tr|bait}}时，{{tr|Fishing poles}}也会抛出鱼线，但不会有“上钩”也不会有渔获。{{tr|The bait item}}只在玩家收线且捕到渔获时才会消耗掉。抛出鱼线或者收线但没有渔获时不会消耗{{tr|bait}}。即使玩家收线且确实钓到{{tr|fish}}，也只是有一定几率会消耗掉{{tr|bait}}。
+
+有很多{{tr|items}}可以作为{{tr|Bait}}，不同类型的{{tr|bait}}需要用不同方式获取：
+
+* 大多数无脊椎[[{{tr|critters}}]]（昆虫、{{tr|scorpions, snails, worms}}）都可以用作{{tr|bait}}，必须用[[{{tr|Bug Net}}]]、{{eil|Lavaproof Bug Net}}、或{{eil|Golden Bug Net}}捕捉。
+** [[{{tr|Truffle Worm}}]]较为独特，它仅用于召唤[[{{tr|Duke Fishron}}]]。它不能用于普通{{tr|fishing}}。
+** {{eil|Magma Snail}}、{{eil|Hell Butterfly}}、和{{eil|Lavafly}}只能用{{tr|Lavaproof Bug Net}}或{{tr|Golden Bug Net}}来捕捉。当作为{{tr|bait}}使用时，它们具有让玩家能在[[{{tr|lava}}]]中钓鱼的特殊属性。
+* [[{{tr|Jellyfish (bait)}}|蓝、绿、{{tr|Pink Jellyfish}}]]{{tr|bait items}}和[[{{tr|Jellyfish}}]]{{tr|enemies}}无关。它们自身是通过{{tr|fishing}}得到的。
+{{drop infobox|collapsed=y|Apprentice Bait|title={{tr|Apprentice Bait}}的来源}}
+{{drop infobox|collapsed=y|Journeyman Bait|title={{tr|Journeyman Bait}}的来源|style=clear:right}}
+{{drop infobox|collapsed=y|Master Bait|title={{tr|Master Bait}}的来源|style=clear:right}}
+* '''{{tr|Apprentice Bait}}'''、'''{{tr|Journeyman Bait}}'''、'''{{tr|Master Bait}}'''来自于完成[[{{tr|Angler}}]] [[{{tr|NPC}}]] {{tr|quests}}的奖励，或来自于[[{{tr|Crate}}]]。{{tr|Master Bait}}亦掉落自{{eil|Jungle Mimic|s}}。
+
+== 类型 ==
+{{weapon type count|bait}}<!-- need first unnamed parameter for transclusion -->
+{{options/set|item|small=y|showid=y}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Bait}}
+! {{tr|Bait power}}
+! {{tr|Rarity}}
+! {{tr|Sell value}}
+! 研究
+{{options/set|item infobox|view=table|cols=item2cells-anchor-nolink/baitpower/rarity/sell/sacrifices}}
+<!-- This page is transcluded on [[Ammunition items]]. The data of the following three items shouldn't be stored to cargo there, only here on this page. Similarly, the categories from the three items should only apply to this page, not [[Ammunition items]]. -->
+{{item infobox|cargo=<includeonly>no</includeonly>|cate=<includeonly>no</includeonly>|auto=2674|tags=bag loot}}
+{{item infobox|cargo=<includeonly>no</includeonly>|cate=<includeonly>no</includeonly>|auto=2675|tags=bag loot}}
+{{item infobox|cargo=<includeonly>no</includeonly>|cate=<includeonly>no</includeonly>|auto=2676|tags=bag loot / drop}}<!--
+-->{{options/reset|item infobox}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName,name,itemid,bait,rare,sell,research,imagefile
+|q?where={{#var:wtcount:where_total}} AND name NOT IN ("Apprentice Bait", "Journeyman Bait", "Master Bait")
+|q?groupBy=itemid
+|q?orderBy=name
+|template=:{{tr|Bait}}/row
+}}<!-- For a non-dynamic, static table (for language wikis which do not have an article for every item yet), see [[Bait/static]] -->
+|}{{options/reset|item}}
+
+== {{tr|Bait power}} ==
+{{tr|Bait power}}影响渔获的品质（细节信息和其他影响因素参见[[{{tr|Fishing}}]]），也影响在成功钓起渔获物时{{tr|Bait}}物品被消耗掉的几率：高{{tr|bait power}}意味着低消耗几率。
+
+用于确定{{tr|bait}}是否会被消耗掉的公式如下：{{source code ref|name=pickbait|v=1.4.4.9|method=Terraria.Player.ItemCheck_CheckFishingBobber_PickAndConsumeBait}}<br/>
+<math>\text{消耗几率} = \frac{1}{1 + \text{鱼饵力} / 6}</math>，其中<code>鱼饵力</code>是物品所列{{tr|bait power}}去掉百分号之后的数值（例如，对于{{tr|Apprentice Bait}}是 {{iteminfo|Apprentice Bait|bait|raw=y}}）。
+
+{{equipinfo/list|accTackleBox|format=itemname-linked-pretty}}对{{tr|bait}}消耗几率有积极影响。装备了其中任何一件（它们不叠加）时，公式如下：<br/>
+<math>\text{消耗几率} = \frac{1}{2 + \text{鱼饵力} / 6}</math>
+
+下表列出了一些{{tr|bait items}}的示例几率：
+{{options/set|item|mode=table}}
+{| class="terraria lined"
+! rowspan=2 colspan=2 | {{tr|Bait}}类型 !! colspan=2 | 消耗几率
+|-
+! 常规 !! 加上{{tr|Tackle Box}} {{note|small=y|paren=y|或升级物}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=itemid, bait
+|q?where=bait IN (5, 10, 25, 40, 50)<!-- one item each with these bait powers will be displayed --> AND name != 'Gold Worm'<!-- Gold Worm is exempt from Tackle Box upgrade -->
+|q?groupBy=bait
+|q?orderBy=bait
+|template=:{{BASEPAGENAME}}/bait power row
+}}
+|}{{options/reset|item}}
+
+例如，可以看出，具有 5% {{tr|bait power}}的{{tr|item}}平均可以持续 {{#expr:1+5/6 round 3}} 次抛竿。无论{{tr|bait power}}多少，{{tr|The Tackle Box}}及其升级物总是会将此数值加 1。
+
+[[{{tr|Truffle Worm}}]]和[[{{tr|Gold Worm}}]]不受此影响。<ref name="pickbait"/>{{tr|Truffle Worms}}总是会被消耗掉，而{{tr|Gold Worms}}有着固定的 {{chance|1/20}} 消耗几率，不受{{tr|Tackle Box}}及其升级物影响。
+
+== 备注 ==
+* 在[[{{tr|surface}}]]摧毁[[{{tr|background object}}]]时有几率生成[[{{tr|Worm}}]]、[[{{tr|Grasshopper}}]]、和[[{{tr|Jungle}}]]{{tr|baits}}（[[{{tr|Buggy}}]]、[[{{tr|Grubby}}]]、和[[{{tr|Sluggy}}]]）（见下表）。如果世界上现存{{tr|bait critters}}的数量已经达到上限，那么就不会生成更多。三种{{tr|Jungle baits}}共用 8 的总上限。
+{| class="terraria lined mw-collapsible" id="bait-table-brokentiles-critterspawns"
+|+ style="white-space:nowrap;" | 从被破坏的{{tr|tile}}生成的{{tr|Critter}}
+! {{tr|Critter}}
+! 矮草/植物
+! 高草/植物
+! [[{{tr|Ambient objects}}|{{tr|Dirt pile}}和{{tr|rock piles}}]]
+! 生成限制
+|-
+| {{item|Worm|s}}
+| 每{{tr|tile}} {{chance|1/400}} 几率 || 每{{tr|tile}} {{chance|1/200}} 几率 || 每{{tr|tile}} {{chance|1/6}} 几率 || align=center | 5
+|-
+| {{item|Grasshopper|s}}
+| 每{{tr|tile}} {{chance|1/100}} 几率 || 每{{tr|tile}} {{chance|1/50}} 几率 || || align=center | 5
+|-
+| {{item|mode=image|Grubby}} {{item|mode=image|Sluggy}} {{item|mode=image|Buggy}} [[{{tr|Jungle}}]]{{tr|baits}}
+| 在{{tr|Jungle}}中每图格 {{chance|1/80}} 几率 || 在{{tr|Jungle}}中每图格 {{chance|1/40}} 几率 || || align=center| 总共 8
+|}
+* 如果玩家的物品栏里有多份{{tr|bait item}}，会按照左上到右下的顺序使用，因此，会首先使用最靠上的那排中最靠左的那个{{tr|bait}}物品。
+* {{tr|Bait}}和[[{{tr|ammunition}}]]有一些共通特性：
+** 所有{{tr|bait items}}都能放在{{tr|inventory}}中的{{tr|ammunition slots}}内。
+** 可用的{{tr|bait items}}数量会显示在放在{{tr|hotbar}}上的{{tr|fishing poles}}旁边。
+: 但是，{{tr|bait}}的消耗不受[[{{tr|ammo conservation}}]]影响。
+* 下[[{{tr|rain}}]]时，[[{{tr|Worm}}]]的{{tr|spawn rate}}会提高。
+* [[{{tr|Fireflies}}]]的{{tr|spawn rate}}是在每天{{tr|night}}开始时随机确定的。{{source code ref|v=1.3.5.3|method=Terraria.Main.UpdateTime}}因此，在某些晚上会碰到大群{{tr|Fireflies}}，而其他夜晚则生成得很少。它们在[[{{tr|Moon phase}}|{{tr|new moon}}]]会倾向于生成特别大量。
+** 下{{tr|rain}}期间不会生成{{tr|Fireflies}}。
+* 用{{eil|Ladybug|s}}作为{{tr|bait}}算作击杀它，会给玩家带来坏[[{{tr|Luck}}]]。它也会提高下雨的几率。{{source code ref|v=1.4.3.6|method=Terraria.NPC.LadyBugKilled|t=详情参见[[{{tr|Ladybug}}|主页面]]。}}
+* {{eicons|1.3.1}}由[[{{tr|Statue}}]]生成的[[{{tr|Critter}}]]''不能''用任何[[{{tr|Bug Net}}]]捕捉，因此{{tr|Statue}}对收集{{tr|bait}}没有帮助。
+* {{eicons|1.4.0.1}}穿着[[{{tr|Flower Boots}}]]时，摧毁花草后生成{{tr|critter}}的几率会大大降低。
+
+== 小贴士 ==
+* {{eil|Guide To Critter Companionship}}有助于收集{{tr|baits}}。
+* 使用{{tr|Ladybugs}}作为{{tr|bait}}可能是有益的。虽然“击杀”两只{{tr|ladybugs}}所带来的{{tr|fishing power}}降低（平均大约是 -30% {{tr|fishing power}}）超过了下雨所带来的 +20% 加成，但只有前两只{{tr|ladybugs}}会降低玩家的{{tr|luck}}（其余的只是刷新了惩罚的持续时间），但它们全都会刷新下雨几率提高状态的持续时间，因此可以持续使用{{tr|ladybugs}}作为{{tr|bait}}直到开始下雨。{{tr|Rain}}至少会持续 8 分钟（平均持续约 20 分钟），而击杀{{tr|ladybugs}}带来的坏{{tr|luck}}只需要 3 分钟就会消失。
+* {{tr|Fishing}}本身也是得到{{tr|bait}}的可行方法：使用[[{{tr|Crate Potion}}]]和[[{{tr|Sonar Potion}}]]，并放弃诸如[[{{tr|Bass}}]]之类的常见渔获物，则从{{tr|crates}}中得到的{{tr|the Angler Bait}}一般会比用掉的更多，这样有着 50% {{tr|bait power}}（因此也更耐用）的{{tr|Master Bait}}会很快取代所有其他种类的{{tr|bait}}。
+** 但是，在[[{{tr|Forest}}]]、[[{{tr|Jungle}}]]、或[[{{tr|Hallow}}]]{{tr|biomes}}中收集{{tr|bait critters}}相当容易。具体选择取决于{{tr|biome}}和一天中的时间。
+*** 可以用数排种上[[{{tr|Jungle Grass Seeds}}]]的[[{{tr|Mud Block}}]]作为农场，它们会长出可产生{{tr|Jungle bait critters}}的{{tr|background plants}}。注意同时可存在的{{tr|Jungle bait critters}}上限为 8 个。
+* 影响{{tr|critter}}的[[{{tr|spawn rate}}]]和生成上限的因素有许多都和影响敌对[[{{tr|enemy}}]]的相同，因此[[{{tr|Water Candle}}]]、{{eil|Peace Candle}}、[[{{tr|Battle Potion}}]]、[[{{tr|Calming Potion}}]]、[[{{tr|Sunflower}}]]都会影响{{tr|critter}}的生成。因此，在尝试刷{{tr|critters}}时，建议使用{{tr|Battle Potion}}，以及手持或在附近放置{{tr|Water Candle}}。
+** 所有情况下，附近的 [[{{tr|NPCs}}]] 都会提高{{tr|critters}}按对于[[{{tr|enemies}}]]的比例。如果附近有足够多 {{tr|npc}}，甚至会完全压制{{tr|enemy}}的{{tr|spawns}}，这导致{{tr|critters}}成为唯一能够生成的生物。
+*** 在[[{{tr|Underworld}}]]中或者在{{eil|Expert Mode}}时，即使附近有很多 {{tr|NPCs}}，{{tr|enemies}}依然有可能会偶尔生成。
+** {{eil|Flower Boots}}是刷{{tr|bait}}的绝佳手段。它对于所有其上长出的{{tr|plants}}适合于生成{{tr|critters}}的[[{{tr|grass}}]]都有效——常规的、{{tr|Jungle}}的、和{{tr|Hallowed}}的。可以通过穿着{{tr|Flower Boots}}跑过草地，然后脱掉{{tr|Flower Boots}}并破坏花朵来刷{{tr|Bait}}。这有点慢，但它仍然是唯一一种能不依赖于自然{{tr|critter}}生成而按需产生{{tr|bait}}的方法。
+
+==== {{tr|Fireflies}}和{{tr|Lightning Bugs}} ====
+* [[{{tr|Fireflies}}]]在[[{{tr|night}}]]生成。它们会倾向于聚集在{{tr|Forest biome}}中的 {{tr|NPC}} [[{{tr|house}}]] 附近，并且常常会大量生成。在{{tr|The Hallow}}中，它们会被更高级的[[{{tr|Lightning Bugs}}]]所取代。其 {{iteminfo|Firefly|bait}} 的{{tr|bait power}}是不太大，但对于早期{{tr|fishing}}是足够了，而且相对来说也很丰富。
+* {{tr|The Fireflies}}的{{tr|spawn rate}}可以通过在天空中足够高到看不见地面的地方搭建{{tr|platform}}来提高。由于不会生成地面{{tr|critters}}，就会生成更多{{tr|Fireflies}}。要注意，附近有 {{tr|NPC houses}}会有帮助。
+* [[{{tr|Wings}}]]能大大加快捕捉萤火虫的工作。没有的话，相互连接的{{tr|platforms}}网络也能达到目的。
+
+==== {{tr|Worms}} ====
+* 花一个雨天时间在 {{tr|NPCs}} 周围走动能得到大量{{tr|Worms}}。
+* {{tr|Worms}}无法爬上{{tr|tile}}，会卡在一格深的洞里。标准放置的物块是正方形的，对它们来说就是完美的陷阱。通过在一片平坦区域末端的一个洞里收集，在一个下雨天可能能够抓到几十只。注意洞必须至少有 2 格宽才能让玩家站进去并挥舞{{tr|Bug Net}}。
+
+== 花絮 ==
+* 三种{{tr|bait}}的名称基于手工业行会的三个等级：学徒（Apprentice）、熟手（Journeyman）（或 fellow（研究员））、和大师（Master）（有时用 grandmaster（同样译为大师））。
+* {{tr|Master Bait}}（Master Bait）这个名字和 ''masturbate''（自慰）一词是双关语。在钓鱼行业这是个常见笑话，在现实中被许多渔夫、鱼饵店、以及大量钓饵教程所使用。<ref>{{wiktionary|master baiter|master baiter - Wiktionary, the free dictionary}}</ref>据 [[{{tr|Redigit}}]] 称，将这个笑话添加到[[《{{tr|Terraria}}》]]中是 [[{{tr|Cenx}}]] 的主意。<ref>[https://forums.terraria.org/index.php?profile-posts/464892/load-previous&before=1717887561 Master Bait was her idea]（[https://forums.terraria.org/index.php?profile-posts/464892 个人资料贴子]的回复）{{small|{{date|2024|06|08}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.2.3|{{tr|Master Bait}}现在会掉落自[[{{tr|Jungle Mimic}}]]。}}
+{{history|Desktop 1.4.0.1|添加了 14 个新{{tr|bait items}}，包括{{tr|Ladybugs}}、{{tr|Dragonflies}}、{{tr|Water Striders}}、{{tr|Maggots}}、和{{tr|Underworld critters}}。}}
+{{history|Desktop 1.3.0.1|
+** 鱼饵现在可以存放在弹药栏内。
+** {{tr|Apprentice bait}}、{{tr|Journeyman bait}}、{{tr|Master bait}}现在拥有新的外观。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{all versions}}
+
+{{language info|en=Bait}}

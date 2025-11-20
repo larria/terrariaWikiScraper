@@ -1,0 +1,46 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4326
+| type = Furniture
+| width = 1 | height = 1
+}}
+
+'''{{tr|Plate}}'''是一种可放置的[[{{tr|decorative}}]][[{{tr|furniture}}]]。放置时，玩家可以通过按 {{key|open}} 键在其上放置或拿下[[{{tr|Food and drink potions}}|{{tr|food}}]]。
+
+虽然通常不被算作食物，但[[{{tr|Ale}}]]、{{eil|Sake}}和[[{{tr|Eggnog}}]]可以放到盘子中。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Plate|expectedrows=1}}
+
+== 放置的{{tr|food items}} ==
+{{#vardefine:itemnamelist|{{#lstmap:{{#invoke:Iteminfo/idSets|getSet|IsFood}}|,|@@|<esc>{{itemNameFromId|@@|lang=en}}</esc>|\n}}}}<!-- get all item IDs in ItemID.Sets.IsFood and convert them to item names -->
+{{#vardefine:itemnamelist|{{#listfilter:list={{#var:itemnamelist}}|insep=\n|outsep=\n|remove=Apple Pie Slice}}}}<!-- remove item names (comma-separated) -->
+{{#vardefine:itemnamelist|{{#listsort:list={{#var:itemnamelist}}|insep=\n|outsep=\n|token=@@@@|pattern=<esc>{{tr|@@@@}}</esc>|sortoptions=alpha}}}}<!-- sort item names in the current wiki language -->
+{| class="terraria lined"
+! {{tr|Food item}} !! 放置状态
+{{#lstmap:{{#var:itemnamelist}}|\n|@@@@|<esc><nowiki/>
+|-
+| {{item|@@@@|icons=n}}
+| {{item|@@@@|mode=image|nolink=y|maxsize=x30px|image=@@@@ (on Plate).png}}
+</esc>|}}
+|}
+
+== 图库 ==
+<gallery widths=200px>
+File:Placed Food Items.png|装在{{tr|plate}}里的各种{{tr|food items}}外观。
+File:Plate-on-table.png|两个放在{{tr|work bench}}上的{{tr|plates}}，分别盛着[[{{tr|spaghetti}}]]和[[{{tr|burger}}]]。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.2|现在可在{{tr|plates}}上放置{{tr|food items}}。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Plate}}

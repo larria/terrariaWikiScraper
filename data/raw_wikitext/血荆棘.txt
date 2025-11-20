@@ -1,0 +1,51 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4270
+| sounduse = Item 60.wav
+| tags = drop / hardmode
+| listcat = Wall-piercing weapons
+}}
+{{float file|[[File:Blood Thorn (demo).gif|framed|right|{{tr|The Blood Thorn}}攻击[[{{tr|Target Dummies}}]]。注意其穿墙能力。]]}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Blood Thorn}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|magic weapon}}]]，使用时会召唤三簇穿透性的{{tr|Blood Thorn projectiles}}，它们会从实心[[{{tr|block}}]]和[[{{tr|platform}}]]中迸发，伤害{{tr|player}}{{tr|cursor}}附近的[[{{tr|enemies}}]]。它有 {{chance|1/8}} 的概率掉落自[[{{tr|Hemogoblin Shark}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{penetrate|auto=756|article=A|name={{tr|Blood Thorn projectile}}}}它在击中时造成 25 {{tr|ticks}}{{tick}}的[[{{tr|local invincibility frame}}]]，且会在消失前滞留 {{duration|35ticks}}（35 {{tr|ticks}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.AI_157_SharpTears}}
+** 因此，一簇{{tr|Blood Thorn projectile}}只能击中单个目标两次。
+* {{tr|Blood Thorn projectiles}}会从{{tr|cursor}}附近圆形范围内随机的{{tr|solid blocks}}或{{tr|platforms}}上生长出来。
+** 如果某个{{tr|solid block}}阻挡了{{tr|the player}}和{{tr|the cursor}}之间的视线，那么{{tr|projectiles}}会改为从阻挡点的圆形范围内被召唤出来，并朝向{{tr|cursor}}。
+** 如果在{{tr|cursor}}周围的圆形区域内没有实心有效{{tr|block}}（例如{{tr|player}}位于半空中，并瞄准半空中的一个点），则它们会改为从{{tr|player}}{{tr|hitbox}}中被召唤出来。
+** {{tr|Blood Thorn projectiles}}不能从{{tr|background blocks}}（例如[[{{tr|Smoke Block}}]]或[[{{tr|Bubble}}]]）或[[{{tr|Actuator}}]]{{tr|block}}中被召唤。不过，它可以被召唤在[[{{tr|liquids}}]]中。
+* 在内部，{{tr|Blood Thorn}}具有 {{iteminfo|Blood Thorn|useTime}} 的 <code>[[useTime]]</code>，以及 {{iteminfo|Blood Thorn|useAnimation}} 的 <code>[[useAnimation]]</code>，使得其每次按下 {{key|use}} 键会发射 {{#expr:{{iteminfo|Blood Thorn|useAnimation}}/{{iteminfo|Blood Thorn|useTime}}}} 根荆棘。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults5}}
+
+== 小贴士 ==
+* 由[[{{tr|Ice Rod}}]]召唤的{{tr|Ice Blocks}}可作为{{tr|Blood Thorns}}的产生处。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 略微增加了{{tr|thorns}}的大小。
+** 现在{{tr|Thorns}}的持续时间延长 40%。
+** 现在{{tr|Thorns}}可以从范围内的{{tr|platforms}}上生长出来。
+** 每个{{tr|projectile}}现在可以造成 4 次而非 3 次伤害。
+** 修复了非预期的每次{{tr|Blood Thorn}}击中目标时会导致{{tr|damage}}丢失的 {{tr|bug}}。此前，每次击中目标时{{tr|projectile}}的伤害会下降 30%。}}
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 29 提升至 34。
+** {{tr|Use time}}由 21 提升至 33，以避开{{tr|invincibility frames}}且降低{{tr|mana}}消耗速度。
+** 每个{{tr|projectile}}现在可以造成 3 次而非 2 次伤害。
+** {{tr|Invincibility frame}}由 10 {{tr|ticks}}的[[{{tr|global invincibility frame}}]]改为 25 {{tr|ticks}}的[[{{tr|local invincibility frame}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Blood Thorn}}

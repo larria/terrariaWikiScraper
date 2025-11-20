@@ -1,0 +1,415 @@
+{{infobox wrapper|direction=row
+|{{item infobox
+| imagealt = [[File:Bunny Cage.png|link=]] [[File:Bird Cage.png|link=]] [[File:Worm Cage.png|link=]]
+| type = Furniture
+| placeable = yes
+| width = 6
+| height = 3
+| use = {{iteminfo|Bunny Cage|use}}
+| rare = {{iteminfo|Bunny Cage|rare}}
+| stack = {{iteminfo|Bunny Cage|stack}}
+| sell = {{iteminfo|Bunny Cage|sell}}
+| idtile = 275-281, 285-286, 296-299, 309-310, 339, 391-394, 413, 619
+| consumable = yes
+| cargo = no
+}}
+|{{item infobox
+| imagealt = [[File:Gold Bunny Cage.png|link=]] [[File:Gold Bird Cage.png|link=]] [[File:Gold Worm Cage.png|link=]]
+| name = Gold Cages
+| type = Furniture
+| placeable = yes
+| width = 6
+| height = 3
+| use = {{iteminfo|Gold Bunny Cage|use}}
+| rare = {{iteminfo|Gold Bunny Cage|rare}}
+| stack = {{iteminfo|Gold Bunny Cage|stack}}
+| sell = {{iteminfo|Gold Bunny Cage|sell}}
+| idtile = 358-359, 360-364, 414
+| consumable = yes
+| cargo = no
+}}
+}}
+
+'''{{tr|Cages}}'''是可放置的装饰性[[{{tr|furniture}}]]{{tr|items}}，会显示动态的[[{{tr|critters}}]]。用[[{{tr|Bug Net}}]]、{{eil|Lavaproof Bug Net}}或{{eil|Golden Bug Net}}捕获的{{tr|critter}}和[[{{tr|Terrarium}}]]结合在一起可以制作成{{tr|cage}}。
+
+'''{{tr|Gold cages}}''' {{eicons|1.3.0.1}} 是内装{{tr|gold critters}}的{{tr|regular cages}}。它们的卖出价是每个 {{iteminfo|Gold Bunny Cage|sell}}。除了卖出价外，它们和{{tr|regular cages}}一样。
+
+{{tr|Cages}}是{{tr|background furniture}}，其上无法放置任何东西，它们也不能互相叠放。在{{eversions|1.4.4}}中，{{tr|cages}}可以堆叠，并且可以像{{tr|platforms}}那样站在其上方。
+
+所有{{tr|cages}}的尺寸都是 6 格宽 3 格高或 3 格宽 2 格高，并且是部分透明的。
+
+在{{eversions|Shimmer}}中，{{tr|cages}}可以通过扔进[[{{tr|shimmer}}]]的方式转换回其制作{{tr|ingredients}}。
+
+在{{eversions|Shimmer|invert=y}}中，{{tr|Cages}}不能打开、打破、或逆向制作回其材料，因此一旦{{tr|critter}}制作成{{tr|cage}}，这个特定的{{tr|critter}}就不再能够释放。
+
+目前有{{eicons|1.4.4}} 63 / {{eicons|1.4.4|invert=y}} 17 种{{tr|cages}}，其中{{eicons|1.4.0.1}} 10 种是金的。
+
+== 制作 ==
+[[File:Placed Bunnies.gif|frame]]
+[[File:Placed Gemstone Bunnies.gif|frame]]
+[[File:Placed Birds.gif|frame]]
+[[File:Placed Squirrels.gif|frame]]
+[[File:Placed Gemstone Squirrels.gif|frame]]
+[[File:Placed Ducks.gif|frame]]
+[[File:Placed Macaws.gif|frame]]
+[[File:Placed Scorpions.gif|frame]]
+[[File:Placed Cockatiels.gif|frame]]
+[[File:Placed Toucan.gif|frame]]
+[[File:Placed Grebe.gif|frame]]
+[[File:Placed Seagull.gif|frame]]
+[[File:Placed Penguin.gif|frame]]
+[[File:Placed Worms.gif|frame]]
+[[File:Placed Jungle Bugs.gif|frame]]
+[[File:Placed Grasshoppers.gif|frame]]
+[[File:Placed Snails.gif|frame]]
+[[File:Placed Frogs.gif|frame]]
+[[File:Placed Mice.gif|frame]]
+[[File:Placed Rat.gif|frame]]
+[[File:Placed Stinkbug.gif|frame]]
+[[File:Placed Maggot.gif|frame]]
+
+=== 配方 ===
+==== {{tr|Regular Critters}} ====
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE % Cage|resultnot=LIKE Gold % Cage|expectedrows=47|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+==== {{tr|Gold Critters}} {{eicons|1.3.0.1}} ====
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE Gold % Cage|expectedrows=10|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 动作模式 ==
+在笼中的{{tr|critter}}的行为可由其动作模式描述。此模式虽然似乎是随机的，但实际上是基于一定的规则和几率。{{source code ref|v=1.4.3.2|method=Terraria.Main.AnimateTiles_CritterCages}}这些在下面以可视化的形式呈现。 
+
+=== {{item|Bunny Cage|nolink=y}} ===
+{{tr|Bunny Cages}}占据了 6×3 的空间。
+{{diagram
+|GIF_4|_|_|_|_|_|_|_|_|_|_|_|GIF_0|_|_|_|_|_|_|#
+|I|_|↑|_|_|_|_|_|_|_|_|_|_|_|I|_|↑|_|_|_|_|_|_|#
+|I|_|⑥|_|_|_|_|GIF_2|_|_|_|_|I|_|③|_|_|_|_|_|_|#
+|↓|_|I|_|_|,|-|     |←|.|_|_|↓|_|I|_|_|_|_|_|_|#
+|FRM11|←|-|'|_|     |_|`|④|-|FRM_0|-|②|→|GIF_1|#
+|     |_|_|_|_|_|_|_|_|_|_|_|     |_|_|_|     |#
+|     |-|⑦|.|_|GIF_3|_|,|-|→|     |←|-|-|     |#
+|↑|_|I|_|_|`|→|     |-|'|_|_|↑|_|I|_|_|_|_|_|_|#
+|`|⑤|'|_|_|_|_|     |_|_|_|_|`|①|'|_|_|_|_|_|_|#
+|FRM_0 = [[File:tiles_275_0.png|link=]]{{note|block=y|small=y|持续 0.5 - 15 秒}}
+|FRM_0_rows = 3
+|FRM11 = [[File:tiles_275_11.png|link=]]{{note|block=y|small=y|持续 0.5 - 15 秒}}
+|FRM11_rows = 3
+|GIF_0 = [[File:tiles_275_0.gif|link=]]{{note|block=y|small=y|眨眼（右）}}
+|GIF_1 = [[File:tiles_275_1.gif|link=]]{{note|block=y|small=y|摆动耳朵}}
+|GIF_1_rows = 3
+|GIF_2 = [[File:tiles_275_2.gif|link=]]{{note|block=y|small=y|跳到左侧}}
+|GIF_2_rows = 3
+|GIF_3 = [[File:tiles_275_3.gif|link=]]{{note|block=y|small=y|跳到右侧}}
+|GIF_3_rows = 3
+|GIF_4 = [[File:tiles_275_4.gif|link=]]{{note|block=y|small=y|眨眼（左）}}
+|① = {{nowrap|{{note|small=y|1 / 3}}}}
+|①_class = no-border
+|①_cols = 1
+|② = {{nowrap|{{note|small=y|2 / 21}}}}
+|②_class = no-border
+|②_cols = 1
+|③ = {{nowrap|{{note|small=y|8 / 21}}}}
+|③_class = no-border
+|③_cols = 1
+|④ = {{nowrap|{{note|small=y|4 / 21}}}}
+|④_class = no-border
+|④_cols = 1
+|⑤ = {{nowrap|{{note|small=y|1 / 3}}}}
+|⑤_class = no-border
+|⑤_cols = 1
+|⑥ = {{nowrap|{{note|small=y|12 / 21}}}}
+|⑥_class = no-border
+|⑥_cols = 1
+|⑦ = {{nowrap|{{note|small=y|2 / 21}}}}
+|⑦_class = no-border
+|⑦_cols = 1
+}}
+
+=== {{item|Squirrel Cage|nolink=y}}、{{item|Red Squirrel Cage|nolink=y}} ===
+{{tr|Squirrel Cages}}占据了 6×3 的空间。
+
+{{diagram
+|_|_|GIF_4|_|_|_|_|_|_|_|_|_|_|_|GIF_0|_|_|#
+|_|_|I|_|↑|_|_|_|_|_|_|_|_|_|_|_|I|_|↑|_|_|#
+|_|_|I|_|⑥|_|_|_|_|GIF_2|_|_|_|_|I|_|③|_|_|#
+|_|_|↓|_|I|_|_|,|-|     |←|.|_|_|↓|_|I|_|_|#
+|,|-|FRM_9|←|-|'|_|     |_|`|②|-|FRM_0|-|.|#
+|⑤|_|     |_|_|_|_|_|_|_|_|_|_|_|     |_|①|#
+|`|→|     |-|⑦|.|_|GIF_3|_|,|-|→|     |←|'|#
+|_|_|↑|_|I|_|_|`|→|     |-|'|_|_|↑|_|I|_|_|#
+|_|_|⑵|_|⑴|_|_|_|_|     |_|_|_|_|⑧|_|④|_|_|#
+|_|_|I|_|↓|_|_|_|_|_|_|_|_|_|_|_|I|_|↓|_|_|#
+|_|_|GIF_5|_|_|_|_|_|_|_|_|_|_|_|GIF_1|_|_|#
+|_|_|↑|_|I|_|_|_|_|_|_|_|_|_|_|_|↑|_|I|_|_|#
+|_|_|`|⑶|'|_|_|_|_|_|_|_|_|_|_|_|`|⑨|'|_|_|#
+|FRM_0 = [[File:tiles_276_0.png|link=]]{{note|block=y|small=y|持续 0.5 - 15 秒}}
+|FRM_0_rows = 3
+|FRM_9 = [[File:tiles_276_9.png|link=]]{{note|block=y|small=y|持续 0.5 - 15 秒}}
+|FRM_9_rows = 3
+|GIF_0 = [[File:tiles_276_0.gif|link=]]{{note|block=y|small=y|眨眼（右）}}
+|GIF_1 = [[File:tiles_276_1.gif|link=]]{{note|block=y|small=y|洗脸（右）}}
+|GIF_2 = [[File:tiles_276_2.gif|link=]]{{note|block=y|small=y|跑到左侧}}
+|GIF_2_rows = 3
+|GIF_3 = [[File:tiles_276_3.gif|link=]]{{note|block=y|small=y|跑到右侧}}
+|GIF_3_rows = 3
+|GIF_4 = [[File:tiles_276_4.gif|link=]]{{note|block=y|small=y|眨眼（左）}}
+|GIF_5 = [[File:tiles_276_5.gif|link=]]{{note|block=y|small=y|洗脸（右）}}
+|① = {{nowrap|{{note|small=y|1 / 3}}}}
+|①_class = no-border
+|①_cols = 1
+|② = {{nowrap|{{note|small=y|2 / 21}}}}
+|②_class = no-border
+|②_cols = 1
+|③ = {{nowrap|{{note|small=y|8 / 21}}}}
+|③_class = no-border
+|③_cols = 1
+|④ = {{nowrap|{{note|small=y|4 / 21}}}}
+|④_class = no-border
+|④_cols = 1
+|⑤ = {{nowrap|{{note|small=y|1 / 3}}}}
+|⑤_class = no-border
+|⑤_cols = 1
+|⑥ = {{nowrap|{{note|small=y|8 / 21}}}}
+|⑥_class = no-border
+|⑥_cols = 1
+|⑦ = {{nowrap|{{note|small=y|2 / 21}}}}
+|⑦_class = no-border
+|⑦_cols = 1
+|⑧ = {{nowrap|{{note|small=y|1 / 5}}}}
+|⑧_class = no-border
+|⑧_cols = 1
+|⑨ = {{nowrap|{{note|small=y|4 / 5}}}}
+|⑨_class = no-border
+|⑨_cols = 1
+|⑴ = {{nowrap|{{note|small=y|4 / 21}}}}
+|⑴_class = no-border
+|⑴_cols = 1
+|⑵ = {{nowrap|{{note|small=y|1 / 5}}}}
+|⑵_class = no-border
+|⑵_cols = 1
+|⑶ = {{nowrap|{{note|small=y|4 / 5}}}}
+|⑶_class = no-border
+|⑶_cols = 1
+}}
+
+=== {{item|Mallard Duck Cage|nolink=y}}、{{item|Duck Cage|nolink=y}} ===
+{{tr|Duck Cages}}占据了 6×3 的空间。
+
+{{diagram
+|_|_|_|_|_|_|,|②|.|_|_|_|_|_|_|_|_|_|,|①|.|_|_|_|,|②|.|#
+|_|_|_|_|_|_|I|_|↓|_|_|_|_|_|_|_|_|_|↓|_|I|_|_|_|↓|_|I|#
+|_|_|_|_|_|_|FRM16|←|-|-|GIF_1|←|③|-|FRM_0|-|④|→|GIF_0|#
+|_|,|-|-|③|-|     |_|_|_|     |_|_|_|     |_|_|_|     |#
+|_|I|_|_|_|_|     |-|.|_|     |←|.|_|     |←|⑥|-|     |#
+|_|I|_|_|_|_|↑|_|I|_|I|_|_|_|_|_|I|_|↑|_|I|_|_|_|_|↑|_|#
+|_|I|_|_|_|_|⑤|_|⑧|_|⑦|_|_|_|_|_|⑦|_|⑧|_|⑤|_|_|_|_|I|_|#
+|_|↓|_|_|_|_|I|_|↓|_|I|_|_|_|_|_|I|_|I|_|↓|_|_|_|_|I|_|#
+|GIF_3|←|④|-|FRM12|_|`|→|GIF_2|_|`|-|FRM_4|_|_|_|_|I|_|#
+|     |_|_|_|     |_|_|_|     |_|_|_|     |-|③|-|-|'|_|#
+|     |-|⑥|→|     |-|③|→|     |-|-|→|     |_|_|_|_|_|_|#
+|I|_|↑|_|_|_|I|_|↑|_|_|_|_|_|_|_|_|_|↑|_|I|_|_|_|_|_|_|#
+|`|②|'|_|_|_|`|①|'|_|_|_|_|_|_|_|_|_|`|②|'|_|_|_|_|_|_|#
+|FRM_0 = [[File:tiles_277_0.png|link=]]{{note|block=y|small=y|持续 0.75 - 45 秒}}
+|FRM_0_rows = 3
+|FRM_4 = [[File:tiles_277_4.png|link=]]{{note|block=y|small=y|持续 0.75 - 45 秒}}
+|FRM_4_rows = 3
+|FRM12 = [[File:tiles_277_12.png|link=]]{{note|block=y|small=y|持续 0.75 - 45 秒}}
+|FRM12_rows = 3
+|FRM16 = [[File:tiles_277_16.png|link=]]{{note|block=y|small=y|持续 0.75 - 45 秒}}
+|FRM16_rows = 3
+|GIF_0 = [[File:tiles_277_0.gif|link=]]{{note|block=y|small=y|梳理羽毛（右）}}
+|GIF_0_rows = 3
+|GIF_1 = [[File:tiles_277_1.gif|link=]]{{note|block=y|small=y|走到右侧}}
+|GIF_1_rows = 3
+|GIF_2 = [[File:tiles_277_2.gif|link=]]{{note|block=y|small=y|走到左侧}}
+|GIF_2_rows = 3
+|GIF_3 = [[File:tiles_277_3.gif|link=]]{{note|block=y|small=y|梳理羽毛（左）}}
+|GIF_3_rows = 3
+|① = {{nowrap|{{note|small=y|1 / 3}}}}
+|①_class = no-border
+|①_cols = 1
+|② = {{nowrap|{{note|small=y|4 / 5}}}}
+|②_class = no-border
+|②_cols = 1
+|③ = {{nowrap|{{note|small=y|1 / 9}}}}
+|③_class = no-border
+|③_cols = 1
+|④ = {{nowrap|{{note|small=y|10 / 27}}}}
+|④_class = no-border
+|④_cols = 1
+|⑤ = {{nowrap|{{note|small=y|5 / 27}}}}
+|⑤_class = no-border
+|⑤_cols = 1
+|⑥ = {{nowrap|{{note|small=y|1 / 5}}}}
+|⑥_class = no-border
+|⑥_cols = 1
+|⑦ = {{nowrap|{{note|small=y|1 / 30}}}}
+|⑦_class = no-border
+|⑦_cols = 1
+|⑧ = {{nowrap|{{note|small=y|1 / 18}}}}
+|⑧_class = no-border
+|⑧_cols = 1
+}}
+
+=== {{item|Bird Cage|nolink=y}}、{{item|Blue Jay Cage|nolink=y}}、{{item|Cardinal Cage|nolink=y}} ===
+{{tr|Bird Cages}}占据了 6×3 的空间。
+
+{{diagram
+|_|_|,|⑤|.|_|_|_|GIF_1|_|_|_|,|①|.|_|_|_|_|_|_|#
+|_|_|↓|_|I|_|_|_|     |_|_|_|↓|_|I|_|_|_|_|_|_|#
+|_|_|FRM_6|-|⑥|→|     |-|-|→|FRM_0|-|②|→|FRM_1|#
+|_|_|     |_|_|_|_|_|_|_|_|_|     |_|_|_|     |#
+|_|_|     |←|-|-|GIF_0|←|③|-|     |←|-|-|     |#
+|_|_|↑|`|⑦|.|_|_|     |_|_|,|④|'|↑|_|_|_|_|_|_|#
+|GIF_5|_|_|↓|_|_|     |_|_|↓|_|_|GIF_3|_|_|_|_|#
+|     |_|GIF_4|_|_|_|_|_|GIF_2|_|     |_|_|_|_|#
+|     |_|     |→|FRM14|←|     |_|     |_|_|_|_|#
+|_|_|↑|_|     |_|     |_|     |_|↑|_|_|_|_|_|_|#
+|_|_|`|-|-|-|⑩|-|     |-|⑨|-|-|-|'|_|_|_|_|_|_|#
+|_|_|_|_|_|_|_|_|I|_|↑|_|_|_|_|_|_|_|_|_|_|_|_|#
+|_|_|_|_|_|_|_|_|⑧|_|I|_|_|_|_|_|_|_|_|_|_|_|_|#
+|_|_|_|_|_|_|_|_|↓|_|I|_|_|_|_|_|_|_|_|_|_|_|_|#
+|_|_|_|_|_|_|_|_|GIF_6|_|_|_|_|_|_|_|_|_|_|_|_|#
+
+|FRM_0 = [[File:tiles_279_0.png|link=]]{{note|block=y|small=y|持续 0.5 - 45 秒}}<!-- Right -->
+|FRM_0_rows = 3
+|FRM_1 = [[File:tiles_279_1.png|link=]]{{note|block=y|small=y|持续至少 15 秒<ref>之后，每一{{tr|tick}}都有几率离开此状态，此几率会随时间从 0 开始提升，在 300 秒后达到最大值：每{{tr|tick}} {{chance|1/3}}。</ref>}}
+|FRM_1_rows = 3
+|FRM_6 = [[File:tiles_279_6.png|link=]]{{note|block=y|small=y|持续 0.5 - 45 秒}}<!-- Left -->
+|FRM_6_rows = 3
+|FRM14 = [[File:tiles_279_14.png|link=]]{{note|block=y|small=y|持续 1/12 - 10 秒}}<!-- Ground -->
+|FRM14_rows = 3
+
+|GIF_0 = [[File:tiles_279_0.gif|link=]]{{note|block=y|small=y|向左飞行}}<!-- Frame 0 2-5 6, 5 ticks -->
+|GIF_0_rows = 3
+|GIF_1 = [[File:tiles_279_1.gif|link=]]{{note|block=y|small=y|向右飞行}}<!-- Frame 6 7-10 0, 5 ticks -->
+|GIF_1_rows = 3
+|GIF_2 = [[File:tiles_279_2.gif|link=]]{{note|block=y|small=y|从右侧飞行到地面}}<!-- Frame 0 2 3 13 14, 5ticks -->
+|GIF_2_rows = 3
+|GIF_3 = [[File:tiles_279_3.gif|link=]]{{note|block=y|small=y|从地面起飞到右侧}}<!-- Frame 14 16-18 0, 5 ticks -->
+|GIF_3_rows = 3
+|GIF_4 = [[File:tiles_279_4.gif|link=]]{{note|block=y|small=y|从左侧飞行到地面}}<!-- Frame 6 11 12 13 14, 5 ticks -->
+|GIF_4_rows = 3
+|GIF_5 = [[File:tiles_279_5.gif|link=]]{{note|block=y|small=y|从地面起飞到左侧}}<!-- Frame 14 4-5 6, 5 ticks -->
+|GIF_5_rows = 3
+|GIF_6 = [[File:tiles_279_6.gif|link=]]{{note|block=y|small=y|啄食}}<!-- Frame 14 15 14, 10 ticks -->
+
+|① = {{nowrap|{{note|small=y|1 / 3}}}}
+|①_class = no-border
+|①_cols = 1
+|② = {{nowrap|{{note|small=y|2 / 9}}}}
+|②_class = no-border
+|②_cols = 1
+|③ = {{nowrap|{{note|small=y|8 / 27}}}}
+|③_class = no-border
+|③_cols = 1
+|④ = {{nowrap|{{note|small=y|4 / 27}}}}
+|④_class = no-border
+|④_cols = 1
+|⑤ = {{nowrap|{{note|small=y|43 / 54}}}}
+|⑤_class = no-border
+|⑤_cols = 1
+|⑥ = {{nowrap|{{note|small=y|1 / 9}}}}
+|⑥_class = no-border
+|⑥_cols = 1
+|⑦ = {{nowrap|{{note|small=y|5 / 54}}}}
+|⑦_class = no-border
+|⑦_cols = 1
+|⑧ = {{nowrap|{{note|small=y|361 / 400}}}}
+|⑧_class = no-border
+|⑧_cols = 1
+|⑨ = {{nowrap|{{note|small=y|1 / 20}}}}
+|⑨_class = no-border
+|⑨_cols = 1
+|⑩ = {{nowrap|{{note|small=y|19 / 400}}}}
+|⑩_class = no-border
+|⑩_cols = 1
+}}
+
+=== {{item|Worm Cage|nolink=y}} ===
+{{tr|Worm Cages}}占据了 3×2 的空间。
+
+{{diagram
+|,|→|GIF_0|-|②|→|GIF_1|-|.|#
+|③|_|     |_|_|_|     |_|④|#
+|`|-|     |←|①|-|     |←|'|#
+
+|GIF_0 = [[File:tiles_310_0.gif|link=]]{{note|block=y|small=y|“0” 字形蠕动<ref name="wormspeed">每 0.5 - 91/60 {{tr|seconds}}，更新当前动画帧的几率仅为 {{chance|1/4}}。因此，平均来说，每一个动画帧都会持续 121/30 {{tr|seconds}}。</ref>}}<!--frame 0-8-->
+|GIF_0_rows = 3
+|GIF_1 = [[File:tiles_310_1.gif|link=]]{{note|block=y|small=y|“8” 字形蠕动<ref name="wormspeed"/>}}<!--frame 9-18-->
+|GIF_1_rows = 3
+
+|① = {{nowrap|{{note|small=y|1 / 2}}}}
+|①_class = no-border
+|①_cols = 1
+|② = {{nowrap|{{note|small=y|1 / 2}}}}
+|②_class = no-border
+|②_cols = 1
+|③ = {{nowrap|{{note|small=y|1 / 2}}}}
+|③_class = no-border
+|③_cols = 1
+|④ = {{nowrap|{{note|small=y|1 / 2}}}}
+|④_class = no-border
+|④_cols = 1
+}}
+
+
+=== {{item|Penguin Cage|nolink=y}} ===
+{{tr|A Penguin Cage}}会占据 6×3 的空间。其中的{{tr|The Penguin}}会随机遵循以下模式：
+* 从{{tr|cage}}的一头移动到另一头。
+* 短暂地上下点头。
+* 原地眨眼。
+* 向左右看。
+
+=== {{item|Scorpion Cage|nolink=y}}、{{item|Black Scorpion Cage|nolink=y}} ===
+{{tr|A Scorpion Cage}}会占据 6×3 的空间。其中的{{tr|The Scorpion}}会随机遵循以下模式：
+* 从{{tr|the cage}}的一头跑到另一头
+* 藏在沙子里
+* 用蝎尾戳几次空气
+* 挥舞蝎尾
+* 夹螯钳
+
+=== {{item|Snail Cage|nolink=y}}、{{item|Glowing Snail Cage|nolink=y}}、{{item|Magma Snail Cage|nolink=y}} ===
+{{tr|A Snail Cage}}占据 2x3 空间，其中的{{tr|The Snail}}会随机遵循以下模式：
+* 躲在它的壳里
+* 试图爬到{{tr|cage}}的顶上，但失败，又掉下来了。
+* 成功地沿着{{tr|cage}}爬了一整圈
+
+== 备注 ==
+*  [[{{tr|Butterfly}}|{{tr|Butterflies}}]]、[[{{tr|Dragonfly}}|{{tr|Dragonflies}}]]、[[{{tr|Firefly}}|{{tr|Fireflies}}]]、[[{{tr|Lavafly}}|{{tr|Lavaflies}}]]、[[{{tr|Lightning Bug}}]]和[[{{tr|Faeling}}]]必须和[[{{tr|Bottle}}]]组合来造出瓶装版本，而非使用[[{{tr|Terrarium}}]]。[[{{tr|Bottled Water}}]]可以和[[{{tr|Goldfish}}]]或[[{{tr|Pupfish}}]]组合来制造[[{{tr|Fish Bowls}}]]，或和[[{{tr|Jellyfish (bait)}}|{{tr|fished Jellyfish}}]]组合来制造[[{{tr|Jellyfish Jar}}]]。装在瓶子里的发光昆虫可以用作[[{{tr|House}}|{{tr|housing}}]]的有效[[{{tr|light sources}}]]。
+
+== 小贴士 ==
+* {{tr|Terrariums}}里的{{tr|Gold critters}}出售价格和没装进去的一样，所以应该更倾向于直接卖出不装进{{tr|Terrarium}}的动物。
+* 一些有卖出价的{{tr|critters}}放进{{tr|Terrarium}}后会变得无卖出价。
+
+== 花絮 ==
+* {{tr|Gold Critters}}的笼子有独特的{{tr|sprite}}，顶和底都是金色的。{{tr|Gem Critters}}类似，有银色的顶和底。
+* 在[[{{tr|Minimap}}|{{tr|map}}]]上，当鼠标悬停其上时，{{tr|the Red Squirrel Cage}}会错误地显示“{{tr|Orange Squirrel Cage}}”文字。
+* {{tr|Penguin Cage}}中的{{tr|The Penguin}}的{{tr|sprite}}更像是[[{{tr|Fish (item)}}|{{tr|Penguin}}]]{{tr|pet}}而非用于制作它的{{tr|the Penguin}}。这可能是因为分辨率限制导致很难在{{tr|cage}}的边框内绘制出一只正常的{{tr|penguin}}。
+* {{tr|The Truffle Worm Cage}}的{{tr|tooltip}}是{{gameText|ItemTooltip.TruffleWormCage}}，暗示着[[{{tr|Truffle Worm}}]]非常难抓。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Yellow Cockatiel Cages}}、{{tr|Gray Cockatiel}}、{{tr|Toucan Cages}}、{{tr|Stinkbug Cages}}、{{tr|Blue Macaw Cages}}和{{tr|Scarlet Macaw Cages}}。
+** {{tr|Critter Cages}}现在可以堆叠放置，生物也可以站在上方，类似{{tr|platforms}}。}}
+{{history|Desktop 1.4.0.3|修正了[[{{tr|Gold Seahorse}}|{{tr|Gold Seahorses}}]]被抓住后变成{{tr|Seahorse Cages}}的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Amber Bunny Cage}}、{{tr|Amber Squirrel Cage}}、{{tr|Amethyst Bunny Cage}}、{{tr|Amethyst Squirrel Cage}}、{{tr|Diamond Bunny Cage}}、{{tr|Diamond Squirrel Cage}}、{{tr|Emerald Bunny Cage}}、{{tr|Emerald Squirrel Cage}}、{{tr|Ruby Bunny Cage}}、{{tr|Ruby Squirrel Cage}}、{{tr|Sapphire Bunny Cage}}、{{tr|Sapphire Squirrel Cage}}、{{tr|Topaz Bunny Cage}}、{{tr|Topaz Squirrel Cage}}、{{tr|Ladybug Cage}}、{{tr|Seahorse Cage}}、{{tr|Grebe Cage}}、{{tr|Turtle Cage}}、{{tr|Jungle Turtle Cage}}、{{tr|Maggot Cage}}、{{tr|Magma Snail Cage}}、{{tr|Owl Cage}}、{{tr|Rat Cage}}、{{tr|Truffle Worm Cage}}、{{tr|Gold Ladybug Cage}}、{{tr|Gold Seahorse Cage}}和{{tr|Gold Water Strider Cage}}。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Grubby Cage}}、{{tr|Sluggy Cage}}、{{tr|Buggy Cage}}、{{tr|Red Squirrel Cage}}、{{tr|Enchanted Nightcrawler Cage}}、{{tr|Gold Bird Cage}}、{{tr|Gold Bunny Cage}}、{{tr|Gold Frog Cage}}、{{tr|Gold Grasshopper Cage}}、{{tr|Gold Mouse Cage}}、{{tr|Gold Squirrel Cage}}和{{tr|Gold Worm Cage}}。}}
+{{history|Desktop 1.2.3.1|修正了非动画的{{tr|critter cages}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|添加了来自 PS4 的 1.0.750.0 更新的{{tr|recipes}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|Grubby Cage}}、{{tr|Sluggy Cage}}、{{tr|Buggy Cage}}、{{tr|Red Squirrel Cage}}、{{tr|Enchanted Nightcrawler Cage}}、{{tr|Gold Bird Cage}}、{{tr|Gold Bunny Cage}}、{{tr|Gold Frog Cage}}、{{tr|Gold Grasshopper Cage}}、{{tr|Gold Mouse Cage}}、{{tr|Gold Squirrel Cage}}和{{tr|Gold Worm Cage}}。（{{icon|ps4}}）}}
+{{history|Console 1.08|添加了{{tr|the Mallard Duck Cage}}。}}
+{{history|Console 1.07|引入了{{tr|Desktop 1.2.3}} 中除{{tr|Mallard Duck Cage}}外的所有{{tr|Cages}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|引入{{tr|Desktop 1.2.3}} 中的所有{{tr|cages}}。}}
+{{history|3DS-Release|引入{{tr|Desktop 1.2.3}} 中的所有{{tr|cages}}。}}
+
+{{info request|缺少 1.4 的{{tr|cages}}放置后的动画和大小。}}
+
+{{Master Template Furniture
+| show-main = yes
+| show-other = yes
+}}
+
+{{language info|en=Cages}}

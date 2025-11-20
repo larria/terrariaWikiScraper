@@ -1,0 +1,129 @@
+{{infobox wrapper
+|{{item infobox
+| type = Block
+| name = Moss
+| auto = 4349
+| imagealt = [[File:Green Moss.png|link=]] [[File:Brown Moss.png|link=]] [[File:Red Moss.png|link=]] [[File:Blue Moss.png|link=]] [[File:Purple Moss.png|link=]]
+| id = 4349–4353
+| idtile = 179–183（在[[{{tr|Stone Block}}]]上）/ 512–516（在[[{{tr|Gray Brick}}]]上）
+| cargo = no
+}}
+|{{item infobox
+| type = Block
+| name = Glowing Moss
+| auto = 4377
+| imagealt = [[File:Lava Moss.png|link=]] [[File:Krypton Moss.png|link=]] [[File:Xenon Moss.png|link=]] [[File:Argon Moss.png|link=]] [[File:Neon Moss.png|link=]] [[File:Helium Moss.png|link=]]
+| id = 4354, 4377–4389, 5127, 5128
+| idtile = 381, 534, 536, 539, 625, 627（在[[{{tr|Stone Block}}]]上）/ 517, 535, 537, 540, 626, 628（在[[{{tr|Gray Brick}}]]上）
+| cargo = no
+}}
+|{{item infobox
+| name = Mossy Walls
+| type = Wall
+| auto = 4496
+| imagealt = <p>[[File:Green Mossy Wall.png|link=]] [[File:Brown Mossy Wall.png|link=]] [[File:Red Mossy Wall.png|link=]] [[File:Blue Mossy Wall.png|link=]] [[File:Purple Mossy Wall.png|link=]]</p><li><p>[[File:Green Mossy Wall (placed).png|link=]] [[File:Brown Mossy Wall (placed).png|link=]] [[File:Red Mossy Wall (placed).png|link=]]</p><p>[[File:Blue Mossy Wall (placed).png|link=]] [[File:Purple Mossy Wall (placed).png|link=]]</p></li>
+| imagebreak = yes
+| id = 4496–4500
+| idwall = 256–260
+| cargo = no
+}}
+}}<!--
+store mossy walls to cargo
+-->{{item infobox/options|view=void}}<!--
+-->{{item infobox|auto = 4496| type = Wall}}<!--
+-->{{item infobox|auto = 4497| type = Wall}}<!--
+-->{{item infobox|auto = 4498| type = Wall}}<!--
+-->{{item infobox|auto = 4499| type = Wall}}<!--
+-->{{item infobox|auto = 4500| type = Wall}}<!--
+-->{{item infobox/options|reset}}
+
+'''{{tr|Moss}}'''是一种长在[[{{tr|Stone Block}}]]上的类[[{{tr|grass}}]][[{{tr|plant}}]]。它有{{eicons|1.4.4}} 11 / {{eicons|1.3.0.1|invert=y}} 5 种不同的{{tr|variant}}。{{tr|Mossy stone}}相比于干净的石头需要多敲一下才能打破。如果其所在的{{tr|Stone Block}}[[{{tr|Biome spread}}|转化]]成[[{{tr|Ebonstone}}]]、[[{{tr|Crimstone}}]]、或[[{{tr|Pearlstone}}]]，则{{tr|Moss}}就会被摧毁。
+
+在{{eversions|1.4.0.1}}中，可以用[[{{tr|Paint Scraper}}]]或[[{{tr|Spectre Paint Scraper}}]]收集{{tr|moss}}绒毛，它们有 {{chance|1/9}} 几率会作为{{tr|item}}掉落，其余的则像往常一般消失。{{source code ref|v=1.4.2|method=Terraria.Player.PlaceThing_PaintScrapper}}收集的{{tr|moss}}可以放置在{{tr|Stone Blocks}}和[[{{tr|Gray Brick}}]]上，或用于制作{{tr|mossy walls}}。
+
+总共有 5 种{{tr|regular moss}}：{{tr|Green Moss, Brown Moss, Red Moss, Blue Moss, and Purple Moss}}。对于给定地图，地图的每个三分之一部分中会出现一种{{tr|regular moss}}（每个世界会有三种{{tr|variants}}）。它们可随机出现在洞穴地面或者拥有相应{{tr|mossy wall}}的[[{{tr|moss chamber}}]]内。
+
+{{tr|Glowing mosses}}是特殊的{{tr|moss}}{{tr|variants}}，会发出明亮的光。这包括{{tr|Lava Moss, Krypton Moss, Xenon Moss, Argon Moss, Neon Moss, and Helium Moss}}。{{eicons|Lava Moss}}{{tr|Lava Moss}}可以在[[{{tr|Caverns}}]]的[[{{tr|lava}}]]{{tr|layer}}中成片找到。{{eicons|1.4.0.1}}{{tr|Krypton Moss, Xenon Moss, Argon Moss, and Neon Moss}}会在[[{{tr|glowing moss biome}}]]生长，比任何其他{{tr|moss}}区域更大，每个{{tr|world}}中仅会包含这些类型中的一种。最多会有两个（[[{{tr|World size}}|{{tr|small world}}]]）/ 三个（[[{{tr|World size}}|{{tr|medium world}}]]）/ 四个（[[{{tr|World size}}|{{tr|large world}}]]）{{tr|glowing moss biomes}}生成在{{tr|Cavern layer}}中，大多都在{{tr|lava layers}}以上，但不会在[[{{tr|spawn point}}]]区域下方。{{eicons|1.4.4}}{{tr|Helium Moss}}不会天然生成，而可通过将其他{{tr|Glowing Moss}}丢入[[{{tr|Shimmer}}]]的方式获得。
+
+在{{eversions|1.4.4}}中，在{{tr|world}}中没有天然生成的{{tr|mosses}}可以通过将任何{{tr|Glowing Moss}}放入[[{{tr|Extractinator}}]]（产生{{tr|regular mosses}}）或[[{{tr|Chlorophyte Extractinator}}]]（产生所有{{tr|variants}}的{{tr|moss}}）的方式获得。
+
+== 类型 ==
+{{item infobox/options|view=table|imagemode=placed|cols=item2cells-anchor-nolink\imageplaced\:{{tr|Moss}}/Placed on bricks|colsep=\}}
+{| class="terraria lined align-center"
+! rowspan=2 colspan=2 | 类型 !! colspan=2 | 放置于
+|-
+! {{item|Stone Block}} !! {{item|Gray Brick|note=({{eicons|1.4.0.1}})}}
+{{item infobox| type = Block | auto = 4349 | cargo = <includeonly>no</includeonly><!-- do not store to cargo when transcluded (page is transcluded on [[Plants]]) --> }}
+{{item infobox| type = Block | auto = 4350 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4351 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4352 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4353 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4354 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4377 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4378 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 4389 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 5127 | cargo = <includeonly>no</includeonly> }}
+{{item infobox| type = Block | auto = 5128 | cargo = <includeonly>no</includeonly> }}
+|}{{item infobox/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE % Moss|expectedrows=5|link=no}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Moss|expectedrows=5}}
+
+== 备注 ==
+* [[{{tr|Strange Plant}}]]能生长在覆盖{{tr|moss}}的{{tr|stone blocks}}上。
+* 一旦种下，{{tr|Moss}}就会在暴露的[[{{tr|Stone Block}}]]和 {{eicons|1.4.0.1}} [[{{tr|Gray Brick}}]]上缓慢蔓延，任何深度均如此（包括在地面以上）。如果玩家无法弄到[[{{tr|Paint Scraper}}]]来收集{{tr|moss}}，则可以从现有的{{tr|moss}}处建造石头“桥”来让{{tr|moss}}长过来。
+* {{eicons|1.2.4.1|not=1.4.0.1}} 在任何高度上对{{tr|stone blocks}}使用[[{{tr|Staff of Regrowth}}]]都可以让{{tr|moss}}长出。{{tr|moss}}的类型取决于最接近的{{tr|moss}}。因此，人们可以让{{tr|lava Moss}}从{{tr|the cavern}}中的{{tr|lava layers}}一路蔓延至{{tr|the surface}}。
+
+== 花絮 ==
+* {{tr|glowing mosses}}的[[{{tr|tooltip}}]]，<i>{{itemTooltip|4377}}</i>，是 {{wikipedia|Morris Travers}} 说的话，他是一名英国化学家，和 {{wikipedia|William Ramsay|William Ramsay 爵士}}合作发现了{{wikipedia|xenon|氙}}、{{wikipedia|neon|氖}}、和{{wikipedia|krypton|氪}}。
+* {{tr|The glowing mosses}}的颜色和这些气体在现实中于{{wikipedia|gas-discharge lamp|气体放电灯}}中发出的实际颜色并不完全一致。
+** 氩会产生类似粉色的颜色，但其色度的精准度值得商榷。
+** 氦通常有偏红的橘色光。不过，在游戏中所用的颜色可能参考了太阳（氦（helium）的名称也来源于希腊语 ''helios'' （太阳））会发出包含整个可见光谱的光，因此此{{tr|moss}}会在这一光谱中循环。
+** 氪产生的正确颜色为白色。{{tr|Krypton Moss}}的绿色可能参考了{{wikipedia|Kryptonite|氪星石（Kryptonite）}}，一种在包含{{wikipedia|Superman|超人（Superman）}}这一角色的故事中出现的虚构材料。在这些故事中，氪星石是一种类似水晶的材料，来自于超人的母星：氪星，能削弱这一星球上的（前）居民。它通常被呈现为亮绿色，和{{tr|moss}}类似。
+** 氖（Neon）会发出类似氦的橘红色光，不过其他颜色的基于气体的灯光也通常会被叫做“霓虹灯”（Neon）。
+** 虽然氙能产生亮蓝色，但其色度的精准度同样值得商榷。
+* {{tr|Xenon Moss, Neon Moss, Krypton Moss, and Lava Moss}}的颜色很像[[{{tr|Lunar Fragments}}]]。
+
+== 图库 ==
+<gallery>
+File:Moss Chamber.jpg|长着{{tr|Green Moss}}的{{tr|small moss chamber}}，有与之对应的背景墙，{{tr|moss}}已经蔓延到外面的石头上。
+File:Large Krypton Moss cave.png|大型{{tr|Krypton Moss}}洞。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Neon Moss and Helium Moss}}。
+** {{tr|Glowing mosses}}现在可用于制作{{tr|bricks}}和[[{{tr|Fishing Bobbers}}]]。}}
+{{history|Desktop 1.4.2|修正了{{tr|moss}}在服务器上时并不总是使用正确帧的问题。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Fire Moss}}更名为{{tr|Lava Moss}}。
+** 添加了{{tr|Krypton Moss}}、{{tr|Xenon Moss}}、和{{tr|Argon Moss}}。
+** {{tr|Mosses}}现在有了物品形式，并可以用[[{{tr|Paint Scraper}}]]来收集了。
+** {{tr|Mosses}}现在可以制作成{{tr|Moss Walls}}，反向亦可。
+** {{tr|Moss}}现在可以放置在{{tr|Gray Bricks}}上并会在其上蔓延。
+** 所有{{tr|mosses}}都有了正式名称。
+** [[{{tr|Staff of Regrowth}}]]不再能在裸露的石头上放置{{tr|moss}}。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Fire Moss}}。
+** {{tr|Staff of Regrowth}}现在可以在裸露的石头上放置{{tr|moss}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|Desktop 1.4.0.1}} 中的所有功能和变更。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{Shimmering Exclusive Items}}
+
+{{language info|en=Moss}}

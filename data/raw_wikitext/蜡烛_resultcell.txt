@@ -1,0 +1,18 @@
+<includeonly><!--
+
+Water Candle (item ID 148), Peace Candle (item ID 3117), and Shadow Candle (item ID 5322) have their own articles with cargo storage; they must not be stored here a second time
+-->{{#switch:{{{resultid|}}}|148|3117|5322=@@@@|#default={{item infobox
+| auto = {{{resultid|}}}
+| type = Furniture /  Light Source
+| width = 1
+| height = 1
+| view = item
+| nolink = true
+| imageinfo = no
+}}}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Candles/resultcell}}
+</noinclude>

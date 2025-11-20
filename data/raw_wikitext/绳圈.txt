@@ -1,0 +1,28 @@
+{{item infobox
+| name = Rope Coils
+| imagealt = [[File:Rope Coil.png]] [[File:Vine Rope Coil.png]] [[File:Silk Rope Coil.png]] [[File:Web Rope Coil.png]]
+| type = Consumable
+| auto = 985
+| id = 985, 3079 3005, 3080
+| idprojectile = 171, 475, 505, 506
+}}
+
+'''{{tr|Rope Coils}}'''是{{tr|player}}抛出的消耗性移动{{tr|item}}，以受到重力影响的弧形中行进，直到击中一个{{tr|blocks}}。在接触时，将放置一个垂直的十条[[{{tr|Rope}}]]，从接触点开始下降，直到绳子用完或与下面的另一个{{tr|blocks}}接触。一旦就位，由绳圈制造的绳是普通的绳{{tr|item}}，可以攀爬，与其他放置的绳索一起扩展并用[[{{tr|pickaxe}}]]回收。
+
+如果抛出的绳圈撞击已经放置的绳的顶部，它将自动延伸现有的绳。如果绳圈由于障碍物而不能延伸低于十个{{tr|blocks}}，则多余的绳将作为{{tr|item}}掉落。如果绳圈根本不能伸展，多余的绳将作为绳圈{{tr|item}}掉落。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|link=n|cate=force|showresultid=1|result=LIKE %Rope Coil|expectedrows=4|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.0.1|引入了{{tr|Silk Rope}}、{{tr|Web Rope}}和{{tr|Vine Rope}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+{{language info|en=Rope Coils}}

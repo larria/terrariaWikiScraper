@@ -1,0 +1,50 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| type = Potion
+| auto = 4870
+| tags = loot
+}}
+{{float file box
+|title=传送门外观
+|{{inline block|css=width:50%;line-height:2.5|[[File:Return Portal Entrance.gif]]<br/>入口}}{{inline block|css=width:50%;line-height:2.5|[[File:Return Portal Exit.gif]]<br/>出口}}
+|title2={{tr|Minimap icons}}
+|{{inline block|css=width:50%;line-height:2.5|[[File:Map Return Portal Entrance.png]]<br/>入口}}{{inline block|css=width:50%;line-height:2.5|[[File:Map Return Portal Exit.png]]<br/>出口}}
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Potion of Return}}'''是一种[[{{tr|potion}}]]，它能将玩家传送回[[{{tr|spawn point}}]]（类似[[{{tr|Recall Potion}}]]），此外还会在使用{{tr|potion}}的位置生成一个出口传送门。{{tr|spawn point}}处会生成一个入口传送门，对其按下 {{key|open}} 按键可以将玩家传送回使用{{tr|potion}}的位置。传送门只能使用一次，且会在使用后消失。除了制作以外，{{tr|Potion of Return}}还可以在[[{{tr|the Underworld}}]]中的[[{{tr|Shadow Chest}}]]和[[{{tr|Pot}}]]中找到。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Potion of Return|expectedrows=}}
+
+== 备注 ==
+[[File:Return Portal Multiplayer.png|thumb|right|来自另一玩家的入口（左侧）和出口（右侧）传送门。]]
+
+* 同一世界同时只能存在一个出口传送门。如果在使用传送门前使用了第二个{{tr|Potion of Return}}，第一个出口传送门会消失。
+* 该传送门会在{{tr|player}}退出世界时消失，因此并不能保留至下一次游玩。
+* 传送门的出入口都会显示在[[{{tr|minimap}}]]上。然而，不像[[{{tr|pylons}}]]，传送门并不能在{{tr|minimap}}中点击使用。
+* 在[[{{tr|Multiplayer}}]]中，每个{{tr|player}}只能使用自己的传送门，不过他们仍然能看到他人的传送门。来自其他玩家的传送门几乎是透明的。
+
+== 小贴士 ==
+* 一般而言，传送门用于往返距{{tr|Spawn Point}}很远地方时非常有用。比如，在探索过程中回去清理满满当当的[[{{tr|inventory}}]]和存放一些[[{{tr|consumables}}]]。
+* 它用于对付那些对[[{{tr|biome}}]]没有需求的 [[{{tr|boss}}]] 特别有用，比如[[{{tr|Moon Lord}}]]：消耗{{tr|potion}}回到[[{{tr|Nurse}}]]处治疗，并能快速返回战斗中。
+* 如果{{tr|player}}被{{tr|enemies}}包围或发现自己正身处逆境之中，{{tr|use}}{{tr|Potion}}并在一小会后返回会很有用。这会让{{tr|enemies}}在{{tr|player}}重新返回之前消失，这在较高[[{{tr|Difficulty}}]]下非常有效。
+
+== 花絮 ==
+* 该{{tr|item}}的{{tr|tooltip}}''{{#explode:{{itemTooltip|4870}}|<br/>|-1}}''，是对许多{{wikipedia|public transit|公共交通}}系统的致敬，特别是那些像公交车，飞机或火车票之类会提及“往返”字眼的票纸。
+* 出入口的{{tr|sprites}}稍有不同，出口的传送门的{{tr|sprite }}轮廓较浅并向外螺旋，而入口的则似乎向内螺旋。
+[[File:Void Bag spoiler.png|thumb|测试版本中[[{{tr|Void Bag}}]]的传送门。]]
+* 入口传送门很像来自测试版本的旧截图中[[{{tr|Void Bag}}]]的传送门{{tr|sprite}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|修复了在坐/睡觉时和{{tr|Potion of Return}}相关的崩溃问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+{{language info|en=Potion of Return}}

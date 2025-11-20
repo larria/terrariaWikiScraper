@@ -1,0 +1,115 @@
+{{for|{{tr|underground biomes}}中呈现的类墙{{tr|background}}纹理|{{tr|Biome backgrounds}}#{{tr|Underground backgrounds}}}}
+
+[[File:Wall Reference.svg|thumb|250px]]
+[[File:Wall Placing Example.png|thumb|300px|一个人物正在{{tr|house}}中放置{{tr|walls}}。]]
+
+'''{{tr|Background walls}}'''，或者就单叫'''{{tr|walls}}'''，是指在[[{{tr|biome backgrounds}}]]上创建背景的{{tr|tiles}}。{{tr|Walls}}会隐藏在所有其他东西（比如[[{{tr|block}}]])之后。一些{{tr|walls}}会在[[{{tr|world}}]]创建时天然生成，在某些{{tr|biomes}}（比如[[{{tr|Underground Jungle}}]]）中非常丰富。它们和{{tr|blocks}}与[[{{tr|liquids}}]]一样是''{{tr|Terraria}}''世界的主要组成部分。可以用[[{{tr|hammer}}]]或{{$|explosives||class}}来移除{{tr|Walls}}。
+
+== 安全墙和不安全墙 ==
+放置的{{tr|walls}}总是被视为“安全”或“不安全”中的一类：
+
+* '''{{tr|Safe walls}}'''会阻止[[{{tr|enemies}}]][[{{tr|NPC spawning}}|生成]]在其前方（但并不会对它们的通过有任何阻碍），且一个建筑物必须要有基本完整的安全墙背景才能符合成为 [[{{tr|House}}|{{tr| NPC house}}]]的资格，或允许使用[[{{tr|Bed}}]]来改变玩家的[[{{tr|spawn point}}]]。
+** 绝大多数玩家放置的{{tr|walls}}都被视为是安全的。
+** 部分自然生成的{{tr|walls}}也被视为安全的（例：在[[{{tr|Pyramid}}]]等结构中）。
+* '''{{tr|Unsafe walls}}'''不会阻止{{tr|enemies}}生成，且无法用于{{tr|housing}}。
+** 它们有一个怪异之处，就是必须从边缘位置（即，相邻的空间是没有墙的）开始移除，这对于爆炸物来说就意味着爆破半径内必须存在墙的边缘。
+** 大部分自然生成的{{tr|walls}}都被视为是不安全的。
+** 通过[[{{tr|biome spread}}]]或[[{{tr|Clentaminator}}]]/{{eil|Terraformer}}转化而来的{{tr|Walls}}也被视为是不安全的，即使它们此前是安全的。
+** 极少数的物品能够让玩家放置{{tr|unsafe walls}}。<ref name="player-unsafewalls"/>
+
+总体来说没有区分{{tr|safe walls}}和{{tr|unsafe walls}}的方法。许多类型的放置的{{tr|background walls}}能够同时以安全和不安全状态存在，且视觉上相同。摧毁一面{{tr|wall}}并替换它就能保证它是安全的（除非玩家使用的是少数放置{{tr|unsafe walls}}的物品中的一种<ref name="player-unsafewalls"/>）。
+
+只有放置的{{tr|walls}}会被视为安全或不安全。作为物品形态存在的{{tr|Walls}}没有安全和不安全之分。
+
+== 类型 ==
+=== 制作出的墙 ===
+这些{{tr|walls}}是由玩家用各种[[{{tr|crafting material}}]]制作而成的。
+{{ajax|制作出的墙}}
+
+=== 买来的墙 ===
+这些{{tr|walls}}是从不同的 [[{{tr|NPCs}}]] 处购买得来的。
+{{ajax|买来的墙}}
+
+=== 收集得来的墙 ===
+这些{{tr|walls}}可以在探索[[{{tr|world}}]]时从不同地方收集得到。其中大多数也可以通过制作得到。
+{{ajax|天然存在的墙}}
+
+=== 转化来的墙 ===
+这些{{tr|wall}}通常由[[{{tr|biome spread}}]]创造。也可以通过[[{{tr|Clentaminator}}]]或{{eil|Terraformer}}喷洒[[{{tr|Solution}}]]来制造，在{{eversions|1.4.0.1}}上，它们也能通过制作或购买（{{tr|natural Mushroom Wall}}例外）得到。在{{eversions|1.4.0.1|invert=y}}上，{{tr|the Clentaminator}}是玩家制造这些{{tr|wall}}的唯一途径。
+{{ajax|转化来的墙}}
+
+== 备注 ==
+[[File:Underground-Cavern Border.jpg|thumb|[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]层的背景是不可移除的[[{{tr|biome background}}]]，它并不是由{{tr|wall tiles}}构成的。]]
+* [[{{tr|Dirt Wall}}]]通常会完全覆盖[[{{tr|Underground}}]]零深度以上的背景（''参见[[地层]]，[[{{tr|Depth Meter}}]]''）。在这个区域中放置新的{{tr|walls}}需要首先从顶部（[[{{tr|Surface}}]]）或底部（零深度）拆掉现有{{tr|walls}}，这可能是一项艰巨的任务。或者，可以用[[爆炸物]]摧毁现有的{{tr|wall}}。
+* 在低于零的[[深度]]下，地图的背景通常不再被实际的{{tr|wall tiles}}所覆盖，尽管可能难以从视觉上区分，因为这些深度上的{{tr|biome}}背景可能具有相似的外观。在这里玩家可以自由地放置{{tr|Walls}}。
+* [[{{tr|Torch}}]]和一些其他[[{{tr|furniture}}]]{{tr|items}}可以直接放置在{{tr|background walls}}上，而无需在它们下方有[[{{tr|blocks}}]]。
+* 大多数{{tr|walls}}都没有[[{{tr|coin}}]][[{{tr|value}}]]，哪怕是用稀有{{tr|materials}}制作得到。{{tr|Stained glass}}和购买自[[{{tr|Painter}}]]的{{tr|wallpaper}}例外。
+* {{tr|Walls}}似乎拥有自己的[[{{tr|placement}}]]层。
+
+== 另见 ==
+* [[{{tr|Data IDs}}#{{tr|Wall IDs}}|{{tr|Wall IDs}}]]
+* [[物块]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|通过{{tr|Ecto Mist}}让一些之前无法得到的墙类型变得可制作了。}}
+{{history|Desktop 1.3.1|大多数{{tr|wall}}的{{tr|inventory}}外观更新。目前尚不知包括哪些。}}
+{{history|Desktop 1.3.0.5|
+** {{tr|Living leaf walls}}现在对{{tr|housing}}有效}}
+{{history|Desktop 1.3.0.4|修正了{{tr|walls}}在相机模式快照下边框不正确的问题。}}
+{{history|Desktop 1.3.0.1|
+** 修正 {{tr|Bug}}：{{tr|The Blue Slab Wall}}现在如果是由玩家放置的则对{{tr|housing}}有效。
+** 添加了{{tr|Honeyfall wall}}、{{tr|Granite wall}}、{{tr|Smooth Granite wall}}、{{tr|Marble wall}}、{{tr|Smooth Marble wall}}、{{tr|Chlorophyte Brick wall}}、{{tr|Shroomite Plating wall}}、{{tr|Martian Conduit wall}}、{{tr|Luminite Brick wall}}、{{tr|Meteorite Brick wall}}、和{{tr|Crimtane Brick walls}}。
+** 很多{{tr|naturally generated}}的{{tr|walls}}有了新的外观。
+** 现在你可以将{{tr|walls}}放在彼此前面。}}
+{{history|Desktop 1.2.4.1|
+** {{tr|The Sail}}现在花费{{cc|50}}而非免费。
+** 修正了一个影响放置的[[{{tr|Tin Plating Wall}}]]（[[:File:Tin_Plating_Wall_(placed).png#Licensing|查看]]）的 {{tr|bug}}。}}
+{{history|Desktop 1.2.4|
+** 添加了由[[{{tr|Gemspark Block}}]]、[[{{tr|Palm Wood}}]]、[[{{tr|Boreal Wood}}]], 1.2.3 的[[{{tr|Heavy Work Bench}}]]制作产品、和[[{{tr|Glass}}]]+[[{{tr|Confetti}}]]制作而成的{{tr|wall}}。
+** {{tr|The Pirate}}现在出售[[{{tr|Sail}}]]。
+** 添加了两种天然{{tr|cave walls}}（7 和 8）。[[{{tr|Gems}}|{{tr|Gemstone Cave}}]]和{{tr|Moss}}洞墙进行了大改。
+** {{tr|The Metal Fence}}分解为{{tr|Lead}}和{{tr|Iron}}两种变体。
+** {{tr|The Lavafall Wall}}和{{tr|Waterfall Wall}}现在和大多数其他墙一样制作。
+** 喷过漆的{{tr|walls}}在地图上正确显示了。}}
+{{history|Desktop 1.2.3|添加了[[{{tr|Dynasty Walls}}]]、[[{{tr|Lavafall Wall}}]]、[[{{tr|Waterfall Wall}}]]、更多{{tr|Wallpaper}}，以及[[{{tr|Portable Cement Mixer}}]]以实现更高效的墙壁放置。}}
+{{history|Desktop 1.2.2|现在可以从[[{{tr|Painter}}]]处购买十种新的被称为[[{{tr|Wallpaper}}]]的节日主题的{{tr|wall}}。}}
+{{history|Desktop 1.2.1|修正了一个导致墙没有不同边框的问题。添加了[[{{tr|Pumpkin Wall}}]]、[[{{tr|Hay Wall}}]]、和[[{{tr|Spooky Wood Wall}}]]。}}
+{{history|Desktop 1.2.0.3|
+** 添加了{{tr|Lihzahrd Wall}}。
+** 现在你可以制作{{tr|living wood walls}}了。
+** 雪粒不再会生成在背景墙上。}}
+{{history|Desktop 1.2|
+** [[{{tr|Torch}}]]现在可以直接[[{{tr|place}}]]在{{tr|walls}}上。
+** 每种{{tr|brick wall}}现在都有其独特的纹理。
+** 添加了若干种新{{tr|wall}}。}}
+{{history|Desktop 1.1.1|添加了[[{{tr|Snow Brick Wall}}]]、[[{{tr|Candy Cane Wall}}]]、[[{{tr|Green Candy Cane Wall}}]]}}
+{{history|Desktop 1.1|添加了[[{{tr|Glass Wall}}]]、[[{{tr|Planked Wall}}]]、[[{{tr|Mythril Brick Wall}}]]、[[{{tr|Cobalt Brick Wall}}]]、[[{{tr|Mudstone Brick Wall}}]]、[[{{tr|Iridescent Brick Wall}}]]和[[{{tr|Pearlstone Brick Wall}}]]。}}
+{{history|Desktop 1.0.6.1|现在自动放置来填上小缝隙的{{tr|Walls}}现在能正确从{{tr|player}}的[[{{tr|Inventory}}]]中消耗掉了。}}
+{{history|Desktop 1.0.6|当放置{{tr|background walls}}时，一格大的洞现在会自动填上。}}
+
+== 脚注 ==
+{{reflist|refs=
+<ref name="player-unsafewalls">以下{{tr|walls}}在被玩家放置时视为不安全的：{{comma/start}}<!--
+-->{{comma/item|{{eil|Infested Spider Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Blue Brick Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Blue Slab Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Blue Tiled Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Pink Brick Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Pink Slab Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Pink Tiled Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Green Brick Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Green Slab Wall}}}}<!--
+-->{{comma/item|{{eil|Cursed Green Tiled Wall}}}}<!--
+-->{{comma/item|{{eil|Treacherous Sandstone Wall}}}}<!--
+-->{{comma/item|{{eil|Treacherous Hardened Sand Wall}}}}<!--
+-->{{comma/item|{{eil|Forbidden Lihzahrd Brick Wall}}}}<!--
+-->{{comma/end}}。</ref>
+}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+[[Category:墙物品| ]]
+
+{{language info|en=Background walls}}

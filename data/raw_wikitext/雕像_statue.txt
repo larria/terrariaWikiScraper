@@ -1,0 +1,40 @@
+<includeonly><!--
+
+-->{{#switch:{{{1|}}}<!--
+
+-->|anchors on={{#dplvar:set|anchor|y}}<!--
+-->|anchors off={{#dplvar:set|anchor}}<!--
+
+-->|#default=<!--
+	// item ID of the statue
+	-->{{#vardefine:_statue_id|{{itemIdFromName|{{{1}}} Statue|lang=en}}}}<!-- 
+	// set an anchor, if enabled
+	-->{{#if:{{bool|{{{anchor|{{#dplvar:anchor}}}}}}}|{{anchor|{{{1}}} Statue}}}}<!--
+	// display statue
+	-->{{nowrap|<!--
+		-->{{#ifeq:{{{1|}}}|Mushroom|<!--
+			-->[[File:Mushroom Statue activation and deaction Animated.gif|Activation and deactivation animation of the Mushroom Statue|link=]]&nbsp;<!--
+			-->[[File:Mushroom Statue (placed).png|Mushroom Statue placed|link=]]<!--
+		-->|<!--
+			-->[[File:{{{1}}} Statue (placed).png|{{{1}}} Statue placed|link=]]<!--
+		-->}}<!--
+		-->&nbsp;<!--
+		-->{{item infobox<!--
+			-->| auto = {{#var:_statue_id}}<!--
+			-->| type = Furniture<!--
+			-->| width = 2 | height = 3<!--
+			-->| tags = Plunder / Mechanism<!--
+			-->| cargo = {{{cargo|}}}<!--
+			-->| view = item<!--
+			-->| nolink = y<!--
+			-->| t = {{{2|}}}<!--
+			-->| imageinfo = no<!--
+		-->}}<!--
+	-->}}<!--
+-->}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Statues/statue}}
+</noinclude>

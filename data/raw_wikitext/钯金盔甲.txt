@@ -1,0 +1,102 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Armor/Set
+| imagebreak = yes
+| buff = Rapid Healing
+| buffduration = {{duration|5}} {{note|paren=y|击中{{tr|enemy}}后}}
+| hardmode = yes
+}}
+
+'''{{tr|Palladium armor}}'''是一套[[{{tr|Hardmode}}]][[{{tr|armor}}]]，由'''{{tr|Palladium Breastplate}}'''和'''{{tr|Palladium Leggings}}'''组成，同时提供三种头部部件：'''{{tr|Palladium Mask}}'''、'''{{tr|Palladium Helmet}}'''和'''{{tr|Palladium Headgear}}''', 分别提供{{tr|melee}}、{{tr|ranged}}和{{tr|magic}}类型加成。制作一套完整盔甲（含一件头部）总共需要 54 块{{tr|Palladium Bar}}（162 个{{tr|Palladium Ore}}）。制作全部五件则需要 78 块{{tr|Palladium Bar}}（234 个{{tr|Palladium Ore}}）。
+
+{{alt ore|Cobalt armor}}
+
+装备全套{{tr|set}}提供下列效果：
+<tabber>
+|-|使用{{tr|Mask}}=
+* +32 {{tr|defense}}
+* +17% {{tr|melee damage}}
+* +3% {{tr|critical strike chance}}
+* +12% {{tr|melee speed}}
+|-|使用{{tr|Helmet}}=
+* +23 {{tr|defense}}
+* +14% {{tr|ranged damage}}
+* +12% {{tr|ranged}} {{tr|critical strike chance}}
+|-|使用{{tr|Headgear}}=
+* +21 {{tr|defense}}
+* +14% {{tr|magic damage}}
+* +12% {{tr|magic}} {{tr|critical strike chance}}
+* +60 最大{{tr|mana}}
+</tabber>
+* 击中{{tr|enemy}}会获得持续 5 秒的'''{{tr|Rapid Healing}}'''[[{{tr|buff}}]]，提供 2 生命每秒的固定[[{{tr|health regeneration}}]]。
+** 后续击中会刷新{{tr|duration}}。即使卸下{{tr|armor}}，增益效果也不会取消。
+** 作为固定{{tr|health regeneration}}效果，它独立于常规恢复机制运作。这也使得该恢复效果可无视[[{{tr|Bleeding}}]][[{{tr|debuff}}]]。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| hardmode = yes
+| auto = 1208
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1209
+}}
+}}
+{{-}}
+
+=== 头盔种类 ===
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| hardmode = yes
+| auto = 1205
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1206
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1207
+}}}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=Palladium Breastplate/Palladium Leggings/Palladium Headgear/Palladium Helmet/Palladium Mask|expectedrows=5}}
+
+== 备注 ==
+* 套装奖励增益可通过玩家的[[{{tr|minion}}]]攻击触发，且在攻击[[{{tr|critters}}]]或[[{{tr|Target Dummy}}]]时也能触发。
+
+== 小贴士 ==
+* 相较于[[{{tr|Adamantite armor}}]]的近战版本，{{tr|Palladium armor}}的近战版本仍有优势。其防御力比{{tr|Adamantite armor}}低 18 点，因此玩家每次受击会多承受 9 / {{expert|14}} / {{master|18}} 点伤害。而只要玩家受击间隔小于 4.5 / {{expert|7}} / {{master|9}} 秒（即{{tr|Adamantite armor}}可减免伤害所需的恢复时间），使用{{tr|Palladium armor}}的实际生存能力反而更强。
+* {{tr|Rapid Healing}}{{tr|buff}}可与[[{{tr|Life Drain}}]]的{{tr|buff}}效果叠加。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 治疗类套装奖励效果由 6 点降至 4 点。
+** {{tr|Palladium Mask}}近战伤害加成由8%提升至12%。
+** {{tr|Palladium Headgear}}魔法伤害加成由 7% 提升至 9%。
+** {{tr|Palladium Headgear}}魔法暴击率由 7% 提升至 9%。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated}}。}}
+{{history|Desktop 1.2.3|
+** 各头部部件的{{tr|bars}}需求由 10 块增至 12 块。
+** {{tr|Palladium Breastplate}}的{{tr|bars}}需求由 20 块增至 24 块。
+** {{tr|Palladium Leggings}}的{{tr|bars}}需求由 15 块增至 18 块。}}
+{{history|Desktop 1.2.1|更新女性{{tr|sprite}}。}}
+{{history|Desktop 1.2|{{tr|Introduced}}。}}
+{{history|Console 1.02|{{tr|Introduced}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}。}}
+{{history|Mobile 1.2.11964|[[{{tr|Dragon armor}}]]、[[{{tr|Spectral armor}}]]及[[{{tr|Titan armor}}]]现可通过[[{{tr|Orichalcum armor}}]]、{{tr|Palladium}}或[[{{tr|Titanium armor}}]]部件制作。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}。}}
+{{history|3DS-Release|{{tr|Introduced}}。}}
+
+{{Palladium}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Palladium armor}}

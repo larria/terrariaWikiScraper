@@ -1,0 +1,50 @@
+{{exclusive|1.2.3}}
+{{infobox wrapper|
+{{item infobox
+| namesub = {{eicons|1.4.0.1}}
+| imageoldalt = <!-- old sprite is in the other infobox -->
+| auto = 2268
+| tags = buy / vendor:Traveling Merchant
+}}
+|{{item infobox
+| auto = 2268
+| imagealt = [[File:Pho (old).png]]
+| namesub = {{eicons|Pho|not=1.4.0.1}}
+| tooltip = {{tcext|buff|Minor improvements to all stats}}
+| duration = 420
+| idbuff = 26
+| value = 5000
+| research = <!-- pre-1.4.0.1 versions have no research -->
+| tags = buy / vendor:Traveling Merchant
+| cargo = no
+}}
+}}
+
+'''{{tr|Pho}}'''是一个[[{{tr|Food}}|{{tr|food item}}]]，可从[[{{tr|Traveling Merchant}}]]处购买。它能提供 {{eicons|1.4.0.1}} [[{{tr|Plenty Satisfied}}]] / {{eicons|Pho|not=1.4.0.1}} [[{{tr|Well Fed}}]][[{{tr|buff}}]]。{{potionlength|{{eicons|1.4.0.1}} {{iteminfo|Pho|buff duration}} / {{eicons|Pho|not=1.3.0.1}} {{duration|420}}}}
+
+== 花絮 ==
+* {{wikipedia|Phở|越南河粉（Phở）}}是一种越南汤面，由肉汤、米线、一些香草和肉组成。
+* Pho 在英语中读作：{{ipa|fʌ, foʊ|before={{wikipedia|American English|美式英语}}}}，{{ipa|fɜː|before={{wikipedia|British English|英式英语}}}}，{{ipa|fɑː|before=加拿大口语}}；{{ipa|fəː˧˩˧|vi|listen=https://upload.wikimedia.org/wikipedia/commons/b/be/Ph%E1%BB%9F.oga}}。
+* 其{{tr|sprite}}展示的是汤的表面，绿色蔬菜和装饰菜堆在中间；它并没有展示通常用于装它的深碗。
+* 其英文{{tr|tooltip}}（Pho sho...）参考了简单的短语“for sure（当然了）”<ref>{{wiktionary||English Wiktionary|英语 Wiktionary}} 中的 {{wiktionary|for sure}} 和 {{wiktionary|fo sho}}</ref>。
+
+== 历史 ==
+{{history|Desktop 1.4.4|购买{{tr|price}}和{{tr|sell value}}分别从 {{sc|50}} / {{sc|10}} 提升至 {{sc|75}} / {{sc|15}}。}}
+{{history|Desktop 1.4.0.1|
+** 现在提供{{tr|Plenty Satisfied buff}}而非{{tr|Well Fed}}。
+** {{tr|Buff duration}}由 15 分钟降低至 10 分钟。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Buff}}持续时间从 7 分钟提升到 15 分钟。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Pho}}

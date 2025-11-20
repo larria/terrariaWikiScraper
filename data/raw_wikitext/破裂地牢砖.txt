@@ -1,0 +1,69 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper|
+{{item infobox
+| type = Brick
+| auto = 4238
+| idprojectile = 736
+}}
+{{item infobox
+| type = Brick
+| auto = 4239
+| idprojectile = 737
+}}
+{{item infobox
+| type = Brick
+| auto = 4240
+| idprojectile = 738
+}}
+}}
+
+'''{{tr|Cracked Dungeon Bricks}}'''可以在[[{{tr|Dungeon}}]]中发现，或者在[[{{tr|Heavy Work Bench}}]]用[[{{tr|Dungeon Bricks}}]]制造。制造出的{{tr|Cracked Dungeon Bricks}}和自然生成的拥有相同的表现，并且在被破坏时不会掉落物品。
+
+{{tr|Cracked Dungeon Bricks}}和[[{{tr|Thin Ice}}]]与[[{{tr|Sand}}]]有着相似的表现，但也有所区别。如果玩家跳上、走过、[[{{tr|Hooks}}|钩住]]、用[[{{tr|pickaxe}}]]挖掘、或用[[{{tr|projectile}}]]击中{{tr|Cracked Dungeon Bricks}}，目标{{tr|block}}本身以及一些紧邻的{{tr|Cracked Dungeon Bricks}}可能会坠落并在撞上实体地面后被摧毁，同样不会掉落任何物品。不同于普通的{{tr|Dungeon Bricks}}，{{tr|Cracked Dungeon Bricks}}可以被任何{{tr|pickaxe}}挖掘。
+
+破坏{{tr|Dungeon}}内自然生成的{{tr|Cracked Dungeon Bricks}}可能会显露出隐藏通道，让玩家可以前往{{tr|Dungeon}}的其他区域，这些区域在没有合适的{{tr|tool}}时无法用其他手段进入。如果玩家无法挖掘{{tr|Dungeon Bricks}}，若想到达一些重要的区域，那这通常需要破坏{{tr|Cracked Dungeon Bricks}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result= LIKE Cracked % Brick|expectedrows=3|link = n}}
+
+== 破坏 ==
+当玩家用{{tr|pickaxe}}挖掘、钩住、用足够的速度撞上、用{{tr|Grenade}}炸到、或用{{tr|projectile}}击中{{tr|Cracked Dungeon Bricks}}时，它们会被破坏。{{tr|Cracked Dungeon Bricks}}被其他坠落的{{tr|Cracked Dungeon Bricks}}撞到时也有 50% 的几率被破坏。
+
+=== 玩家碰撞 ===
+每个{{tr|tick}}{{tick}}，游戏将执行以下步骤来摧毁任何附近的{{tr|Cracked Dungeon Bricks}}：
+# 在发生碰撞前，游戏会检测玩家在 X 轴和 Y 轴的移动速度是否超过每{{tr|Tick}} 2-12像素。
+# 如果满足这个情况，游戏会检测玩家所站的{{tr|block}}是否为{{tr|Cracked Dungeon Bricks}}且允许底部成为斜坡（即，没有悬挂的{{tr|banners}}或{{tr|furniture}}），然后会确认如果这里没有{{tr|blocks}}，玩家会位于哪里。
+# 从这个（假设没有{{tr|blocks}}后的）位置开始，游戏会检测此位置的玩家脚下是否有上方没有{{tr|tile}}的{{tr|Cracked Dungeon Bricks}}。
+# 如果满足这个情况，游戏会破坏所有以玩家的{{tr|hitbox}}为中心，前后各 24 像素范围内的（上方没有{{tr|tile}}的）{{tr|Cracked Dungeon Bricks}}，以及下方的数个{{tr|Cracked Dungeon Bricks}}（最多 2 格）。
+
+=== 手榴弹 ===
+所有游戏中的{{tr|grenades}}会破坏半径约 8 格内的所有{{tr|Cracked Dungeon Bricks}}。这使得{{tr|grenades}}，特别是[[{{tr|Sticky grenade}}]]，成为移除大片{{tr|Cracked Dungeon Bricks}}的理想方式。
+
+=== 摧毁 ===
+当一个{{tr|Cracked Dungeon Brick}}被破坏时，它周围的 7 个{{tr|Cracked Dungeon Bricks}}各有 {{chance|1/6}} 的几率破碎（正上方的那格除外，它有 {{chance|1/3}} 的几率被摧毁）。
+
+== 备注 ==
+* {{tr|Cracked Dungeon Bricks}}在[[{{tr|Dangersense Potion}}]]的效果下会被高亮显示。
+* 地面的{{tr|Cracked Dungeon Bricks}}可能会掩盖一个充满[[{{tr|Spike}}]]或{{tr|water}}的矩形房间，所以在探索{{tr|Dungeon}}时要额外小心，这也使前面提到的{{tr|Dangersense Potion}}更有价值。
+* 与{{tr|singleplayer}}相比，{{tr|Cracked Dungeon Bricks}}在{{tr|multiplayer}}下被破坏的数量要少得多，这让玩家需要花费更多时间去挖掘被堵住的道路，但这也稍微降低了[[{{tr|Traps}}#{{tr|Spike}}坑|{{tr|Spike}}坑]]的危险。
+* 使用[[{{tr|mount}}]]来增大玩家的{{tr|hitbox}}可能会让踩坏{{tr|Cracked Dungeon Bricks}}更容易。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 稍微减少了{{tr|Dungeon}}中{{tr|Cracked Dungeon Bricks}}的数量
+** 现在可以被{{tr|projectiles}}破坏。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Traps}}
+{{Master Template Tiles
+| show-bricks = yes
+}}
+
+{{language info|en=Cracked Dungeon Bricks}}

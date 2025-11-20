@@ -1,0 +1,61 @@
+{{legacy nav tab}}
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2364
+| debuff = Poisoned / {{duration|rawseconds=4–7}} / 100%
+| tags = minion
+| sound1 = Item 17.wav
+| soundcaption1 = {{tr|Hornet Stinger}}
+| idprojectile = 373, 374
+}}
+[[File:Hornet Staff (demo).gif|frame|用{{tr|the Hornet Staff}}召唤{{tr|Hornet minion}}来攻击[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Hornet Staff}}'''是个[[{{tr|pre-Hardmode}}]]的[[{{tr|summon weapon}}]]，可召唤一只'''{{tr|Hornet}}'''[[{{tr|minion}}]]。它会在[[{{tr|enemies}}]]上方盘旋，发射{{tr|stingers}}，可施加 4-7 {{tr|seconds}}的[[{{tr|Poisoned}}]][[{{tr|debuff}}]]，并且不能穿透。
+
+其最佳[[{{tr|modifiers}}]]是'''{{tr|Mythical}}'''、'''{{tr|Furious}}'''或'''{{tr|Godly}}'''。取整之后这些{{tr|modifiers}}所提供的{{tr|damage}}加成和{{tr|the Ruthless modifier}}相同，均从 12 提升到 14。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Hornet Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Hornet Stinger}}发射频率为平均每 {{duration|45 ticks}}一次。当装备{{eil|Hive Pack}}时，则会降低至平均每 {{duration|35 ticks}}一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_062|t={{tr|Hornet}}的 AI[1] 每{{tr|tick}}加 1–3 ，意味着平均每{{tr|tick}}其会加 2 。其阈值为 90，装备{{tr|Hive Pack}}时则为 70，所以平均每两次攻击间的冷却为 90/(2)=45 或 70/(2)=35 {{tr|ticks}}。}}
+* {{tr|The Hornet minions}}可以锁定最远距离{{tr|player}} 125 格的{{tr|enemy}}。{{source code ref|name=aistyle62|v=1.4.4.9|method=Terraria.Projectile.AI_062}}
+** 对于{{tr|player}}标记的{{tr|enemy}}，此检测范围会增加至 187.5 格。
+* 若{{tr|Hornet minions}}距离{{tr|player}}超过 62.5 格，它们会先返回{{tr|player}}身侧再继续{{tr|attack}}。<ref name="aistyle62"/>
+* {{tr|The Hornet Stingers}}的移动速度为 {{mph|10 pixels}}。<ref name="aistyle62"/>
+
+== 小贴士 ==
+* {{tr|The Hornet minion}}有不错的单体伤害，但其攻击不够精准。它在对抗缓慢的{{tr|enemy}}（例如 [[{{tr|Deerclops}}]]）表现最佳，或者将配合其他{{tr|minion}}。
+
+== 另见 ==
+* [[{{tr|Hornet}}]]
+* [[{{tr|Nectar}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|
+** {{tr|Sprites updated.}}
+** {{tr|Sell value}}由 {{gc|1}} 降低至 {{sc|70}}。}}
+{{history|Desktop 1.4.4|{{tr|The Hive Pack}}现在会将{{tr|Hornet Staff}}{{tr|minion}}的开火频率提高约 30%。}}
+{{history|Desktop 1.4.1.2|{{tr|Damage}}由 11 提升至 12。}}
+{{history|Desktop 1.4.1|{{tr|Damage}}由 9 提升至 11。}}
+{{history|Desktop 1.2.4.1|
+** 添加了 10 {{tr|mana}}的要求。
+** 修正了离开世界时{{tr|minion buff}}不会消失的 {{tr|bug}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，需要 10 {{tr|mana}}。}}
+{{history|Console 1.08|{{tr|Introduced}}，需要 10 {{tr|mana}}。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}，需要 10 {{tr|mana}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Hornet Staff}}

@@ -1,0 +1,89 @@
+{{npc infobox
+| auto = 285
+| idprojectile = 291,292
+| namesub =
+| image = Diabolist.png
+| type = Undead Enemy
+| environment = Dungeon
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| debuff = On Fire!
+| debuffchance = 100% {{note|paren=y|{{tr|projectile}}}}
+| debuffduration = {{modes|8–15|16–30}} {{tr|seconds}}
+| Inferno Fork|1|{{modes|5%|9.75%}}
+| sound1 = Item 20.wav
+| soundcaption1 = 攻击
+| sound2 = Item 74.wav
+| soundcaption2 = {{tr|Fireball explosion}}
+| hardmode = yes
+}}
+
+'''{{tr|Diabolist}}'''是个[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，可以在[[{{tr|Hardmode Dungeon}}]]中找到。{{tr|Diabolists}}的{{tr|attack}}方式是发射可以穿透[[{{tr|blocks}}]]的炽热{{tr|magic bolts}}。它们的{{tr|magic bolts}}会爆炸，制造一片大范围火焰，持续 {{duration|230 ticks}}，并在{{tr|contact}}时造成巨量{{tr|damage}}，{{tr|magic bolts}}本身和这片区域都会施加[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。{{tr|Diabolists}}被击中后会传送到{{tr|screen}}上不同的位置。
+
+{{dungeon brick walls|Tiled}}
+
+{{tr|Diabolist}}往往生成在有[[{{tr|Dungeon Brick Wall}}|{{tr|Tiled Wall}}]]的地牢区域。它们也会生成在地牢的其他区域，但几率大大降低。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Knockback Resistance}}
+{{npc infobox
+| auto = 285
+| imagealt = [[File:Red Diabolist.png|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|128|192}} {{note|small=y|paren=y|{{tr|ranged}}}}
+}}
+{{npc infobox
+| auto = 286
+| imagealt = [[File:White Diabolist.png|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|128|192}} {{note|small=y|paren=y|{{tr|ranged}}}}
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* {{tr|Diabolists}}只能传送到{{tr|solid blocks}}上。如果没有可传送的位置，它们会保持在原地。
+* 它们只有在{{tr|solid block}}上停留时才会传送。
+
+== 小贴士 ==
+* 由于{{tr|Diabolist}}的攻击可以穿透{{tr|solid blocks}}，因此躲避起来并不是一个有用的选择。
+* 能粘在{{tr|enemies}}身上的{{tr|Weapons}}非常有用，因为它们能在传送后保持在{{tr|Diabolist}}身上。[[{{tr|Piranha Gun}}]]、{{eil|Daybreak}}和{{eil|Bone Javelin|s}}都是可选项。
+* 单次攻击{{tr|damage}}高的武器在对付{{tr|Diabolist}}时更为有效。一次发射多个{{tr|projectile}}的武器也有可能可以在{{tr|Diabolist}}传送前对其造成多次{{tr|damage}}。
+* 追踪武器和[[{{tr|minions}}]]可以在{{tr|Diabolist}}传送后仍会追踪它们。
+* 和其他{{tr|caster AI}}一样，{{tr|Diabolists}}不会传送到距离玩家脚下 4 {{tr|blocks}}以内或者超过 20 {{tr|blocks}}以外的任何地方，不会传送到被{{tr|lava}}覆盖的{{tr|blocks}}上，需要至少 2 格{{tr|solid blocks}}（或{{tr|platforms}}）并且有 2×3 的可用空间用于传送，如果持续受到伤害，它就不会进行{{tr|attack}}。基于以上事实，如果它们能{{tr|spawn}}/传送到的任何地方都放置连接{{tr|Spiky Ball Traps}}的{{tr|Pressure Plate}}，可以建造一个安全的{{tr|Dungeon}}{{tr|farm}}。
+
+== 花絮 ==
+{{bestiary|Red Diabolist|alias={{tr|Diabolist}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落它自己的相应旗帜了。
+** [[{{tr|Inferno Fork}}]]的掉落几率从 2.5% 增加至 5%。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Casters}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Diabolist}}

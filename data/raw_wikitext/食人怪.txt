@@ -1,0 +1,68 @@
+{{npc infobox
+| auto = 43
+| image = Man Eater.gif
+| image2 = Man Eater (old).png
+| environment = Underground Jungle
+| Coffee|1|3.33%
+|:group:start|以下三件{{tr|item}}只会掉落其一|---------
+| Ancient Cobalt Helmet|1|0.33%
+| Ancient Cobalt Breastplate|1|0.33%
+| Ancient Cobalt Leggings|1|0.33%
+|:group:end|---------|---------
+| Vine|1|{{modes|50%|100%}}
+|custom|{{item|Man Eater Kite|note=（在[[{{tr|Windy Day}}]]）|wrap=y}}|4%
+}}
+
+'''{{tr|Man Eater}}'''是一个[[{{tr|enemy}}]]，仅在[[{{tr|Underground Jungle}}]][[{{tr|biome}}]]出现，外观和行为和地表的[[{{tr|Snatcher}}]]几乎相同。{{tr|Man Eaters}}生成时是锚定在{{tr|blocks}}上的，有着可伸长的茎秆，茎秆顶端有个钳子。茎秆本身是被动组件，可以安全地穿过去而不会受到伤害；只有钳子才会造成伤害或受到伤害。
+
+== 备注 ==
+* {{tr|The Man Eater}}和[[{{tr|Snatchers}}]]有以下区别：
+** {{tr|The Man Eater}}的体色是棕色/略带桃色的藤蔓，而{{tr|Snatcher}}的藤蔓是绿色的。{{tr|Man Eater}}的“头部”的颚上也带有一些红。
+** {{tr|Man Eaters}}掉落[[{{tr|Vine}}]]和[[{{tr|Ancient Cobalt armor}}]]，而{{tr|Snatchers}}不掉落这些。
+** {{tr|Man Eaters}}能将其茎秆伸长的量大约是{{tr|Snatchers}}的两倍。
+** {{tr|Snatchers}}在{{tr|surface Jungle}}生成，而{{tr|Man Eaters}}在{{tr|Underground Jungle}}生成。
+
+== 小贴士 ==
+* 用诸如[[{{tr|Sunfury}}]]之类的武器将其[[{{tr|On Fire!}}|点燃]]后，它们不规则的移动方式可能会让其用光亮将隐藏的洞穴显现出来。
+* 即使玩家看起来不在{{tr|Man Eater}}的射程内，也应当要小心，因为它们可以拉长其茎秆从而迅速提升其触及范围。
+* {{eicons|1.3.3|invert=y}} 挖掉{{tr|Man Eater}}所扎根的{{tr|block}}会直接杀掉它；但是，这种处死{{tr|Man Eater}}的方法永远不会产生任何{{tr|items}}掉落。
+
+== 花絮 ==
+* 虽然{{tr|Man Eaters}}的藤蔓颜色不是绿色而是棕色，它们仍掉落绿色的{{tr|vine}}。
+* 根据 [[{{tr|NPC IDs}}|{{tr|IDs}}]]，{{tr|Man Eater}}是游戏的官方发布版本中最后一个添加的 {{tr|NPC}}。
+* 根据[[{{tr|Bestiary}}]]，{{tr|Man Eater}}会在吃够人肉后像茧一般蜕变成[[{{tr|Angry Trapper}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Coffee}}]]和[[{{tr|Man Eater Kite}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.3|所附着的{{tr|block}}不再能被摧毁了。}}
+{{history|Desktop 1.3.0.1|[[{{tr|Vine}}]]的{{tr|drop rate}}由 33.33% 提升至 50%。}}
+{{history|Desktop 1.2.3|修复了[[{{tr|Ancient Cobalt Leggings}}]]总是会和[[{{tr|Ancient Cobalt Helmet}}]]一起掉落的 {{tr|bug}}，这让此物品实际上的{{tr|drop rate}}变为 {{chance|1/150}}。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|
+** {{tr|Vine}}的{{tr|drop rate}}由 25% 提升至 33.33%。
+** {{tr|Health}}由 130 降低至 110。
+** {{tr|Damage}}由 42 降低至 34。
+** {{tr|Defense}}由 18 降低至 10。
+** 现在被杀死时有几率掉落[[{{tr|Ancient Cobalt armor}}]]。}}
+{{history|Desktop 1.1|{{tr|Damage}}由 45 降低至 42。}}
+{{history|Desktop 1.0.6|
+** {{tr|Health}}由 200 降低至 130。
+** {{tr|Damage}}由 60 降低至 45
+** {{tr|Man Eaters}}现在在{{tr|tiles}}上方绘制而非在其后方。
+** 它们现在会随机伸展其茎秆，而非仅在玩家快速移动时。}}
+{{history|Desktop 1.0.5|
+** {{tr|Man Eaters}}不再掉落[[{{tr|Jungle armor}}]]，后者现在由玩家制作。
+** 它们现在能穿过{{tr|blocks}}，免疫{{tr|knockback}}，且不再在被击中时伸展茎秆。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Man Eater}}

@@ -1,0 +1,96 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Grab bag
+| auto = 3093
+| tags = loot
+}}
+
+'''{{tr|Herb Bag}}'''是一种消耗性的[[{{tr|grab bag}}]]类型的物品，可用 {{key|open}} 键打开。它包含 2–5 种不同的[[{{tr|herbs}}]]和[[{{tr|seeds}}]]，且以 2–8 个的形式堆叠而成。{{tr|Herb Bags}}可在[[{{tr|Chests}}#{{tr|Surface}}{{tr|loot}}|{{tr|Surface Chests}}]]中找到。
+
+== 掉落 ==
+{{loot
+
+| Daybloom|2–40|21.698%<!-- exact: 1050253/4840416 -->
+| Moonglow|2–40|21.698%
+| Blinkroot|2–40|21.698%
+| Waterleaf|2–40|21.698%
+| Deathweed|2–40|21.698%
+| Fireblossom|2–40|21.698%
+| Shiverthorn|2–40|21.698%
+| Daybloom Seeds|2–40|21.698%
+| Moonglow Seeds|2–40|21.698%
+| Blinkroot Seeds|2–40|21.698%
+| Waterleaf Seeds|2–40|21.698%
+| Deathweed Seeds|2–40|21.698%
+| Fireblossom Seeds|2–40|21.698%
+| Shiverthorn Seeds|2–40|21.698%
+
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Herb Bag|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=Herb Bag|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Herb Bag}}可在{{tr|Surface Chests}}中以 1–4 个堆叠的形式出现，但数量更高的堆叠数更为罕见。如果一个箱子里有任何数量的{{tr|Herb Bag}}，那么只有一个的几率是 84%，有两个的几率是 12.33%，有三个的几率是 3.33%，有四个的几率是 0.33%。
+* 打开{{tr|Herb Bag}}时，{{source code ref|v=1.4.1.2|method=Terraria.Player.OpenHerbBag}}特定数量的堆数将会被决定，每一堆都会选定一种物品和堆叠数。堆数最开始介于 2 和 4 之间，但有 {{chance|1/3}} 的几率再次增多一个：
+{{options/set|chance|reduce=n}}
+: {| class="terraria align-center"
+! 堆数 !! 几率
+|-
+| 2 || {{chance|2/9}}
+|-
+| 3 || {{chance|3/9}}
+|-
+| 4 || {{chance|3/9}}
+|-
+| 5 || {{chance|1/9}}
+|}
+: 平均堆数是 3.33。
+
+: 对于每一堆来说，这 14 种可能的物品有相同的几率出现，且同种物品能够被多于一堆选中。每种物品开始时堆叠数是 2-4，但随后有 {{chance|1/3}} 的几率再将堆叠数增加 1-4：
+: {| class="terraria align-center"
+! 每一堆的大小 !! 几率
+|-
+| 2 || {{chance|8/36}}
+|-
+| 3 || {{chance|9/36}}
+|-
+| 4 || {{chance|10/36}}
+|-
+| 5 || {{chance|3/36}}
+|-
+| 6 || {{chance|3/36}}
+|-
+| 7 || {{chance|2/36}}
+|-
+| 8 || {{chance|1/36}}
+|}
+: 每一堆平均堆叠数是 3.83。
+{{options/reset|chance}}
+* 从一只{{tr|Herb Bag}}中能够获取到的物品最大数目是 40（一共 5 堆，每一堆的堆叠数都是 8），而最小数目是 4（一共 2 堆，每一堆的堆叠数都是 2 ）。物品的平均数量是 12.78。
+
+== 小贴士 ==
+* {{tr|Herb Bag}}是[[{{tr|pre-Hardmode}}]]早期获得草药最好的方法，尤其是在[[{{tr|Expert Mode}}]]/[[{{tr|Master Mode}}]]，因为一些{{tr|seeds}}所在的{{tr|biomes}}{{tr|enemies}}更为强大。
+
+== 花絮 ==
+* 袋子的外观展示了一株{{tr|Daybloom}}、一株{{tr|Moonglow}}和一株{{tr|Waterleaf}}，而靠后的位置则似乎有一株{{tr|Fireblossom}}。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-other = yes
+}}
+
+{{language info|en=Herb Bag}}

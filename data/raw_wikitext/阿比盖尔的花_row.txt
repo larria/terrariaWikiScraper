@@ -1,0 +1,14 @@
+<includeonly>
+|-
+| {{{1|}}}
+| {{#expr:floor({{iteminfo|Abigail's Flower|damage}} * (1 + ({{{1|}}}-1) * 0.55))}}
+| {{#expr:floor({{iteminfo|Abigail's Flower|damage}} * (1 + ({{{1|}}}-1) * 1.3))}}
+| {{#expr:3 + floor(({{{1|}}}-1) / 2)}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage|noref=y}}
+
+{{language info|en=Abigail's Flower/row}}
+</noinclude>

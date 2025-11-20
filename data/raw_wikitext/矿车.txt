@@ -1,0 +1,292 @@
+{{legacy nav tab}}
+{{item infobox
+| imagealt = [[File:Minecart.png|link=]] [[File:Mechanical Cart.png|link=]] [[File:Digging Molecart.png|link=]]
+| type = Mount summon
+| rare =
+| research = {{iteminfo|2343|sacrifices}}
+| cargo = no
+| sound1 = Item 53.wav
+| soundcaption1 = 撞击{{tr|track}}
+| sound2 = Item 55.wav
+| soundcaption2 = 制动
+| sound3 = Item 56.wav
+| soundcaption3 = 反弹
+| tags = bag loot
+}}
+[[File:Minecart (demo).gif|thumb|乘坐{{tr|minecart}}的玩家。]]
+
+'''{{tr|Minecarts}}'''是允许玩家在[[{{tr|Minecart Track}}]]上行进的[[{{tr|mounts}}]]。当玩家靠近{{tr|Minecart Track}}时，按下 {{key|mount}} 或在轨道上某一点按下 {{key|open}} 键将会召唤{{tr|Minecart}}，玩家会自动进入{{tr|Minecart}}。一旦进入，方向键 {{key|right}} 和 {{key|left}} 就可以加速、减速或反转{{tr|Minecart}}的运动。如果没有按下任何键并且没有碰到障碍物，{{tr|Minecart}}将保持当前的速度和方向。按下 {{key|jump}} 可以使{{tr|Minecart}}“跳起”。
+
+除了[[{{tr|Hooks}}]]以外，[[{{tr|Weapon}}]]和[[{{tr|Tool}}]]以及大多数其它物品都可以在乘坐{{tr|Minecart}}时使用。{{tr|The Minecart}}会对它撞到的[[{{tr|enemies}}]]造成[[{{tr|damage}}]]和[[{{tr|Knockback}}]]，速度越快，这一效果越强（''见[[#{{tr|Damage and knockback}}|下方]]获取细节''）。
+
+如果要离开{{tr|Minecart}}（这会使得{{tr|Minecart}}消失），玩家可以使用{{tr|Hooks}}、按下 {{key|mount}} {{tr|hotkey}}，或取消[[{{tr|Buff}}]]（{{buffduration|nomaintext=y|eversions=1.3.0.1}}）。如果玩家跳出{{tr|track}}、落在{{tr|block}}上，并试图左右移动，{{tr|Minecart}}也会消失。
+
+默认情况下，会为玩家生成{{tr|Wooden Minecart}}。可以通过在玩家{{tr|inventory}}中的{{tr|Minecart}}[[{{tr|equipment slot}}]]中装备其他{{tr|Minecart items}}来覆盖它。对应的[[{{tr|dye}}]]栏允许对{{tr|Minecart}}进行染色。
+
+使用[[{{tr|Minecart Upgrade Kit}}]]会显著提高所有{{tr|Minecarts}}的速度，使其获得攻击附近{{tr|enemies}}的激光，并在移动时提高玩家的[[{{tr|defense}}]]。这一{{tr|boost}}效果在使用此物品后永久可用，不过可以使用{{tr|minecart slot}}旁{{tr|probe icon}}的[[{{tr|toggle}}]]来切换开关。
+
+== 类型 ==
+有 27 种不同类型的{{tr|Minecarts}}。
+{{options/set|item infobox|view=table|cols=item2cells-anchor/imagebuff/mount/tooltip/col:source/rarity/sell/col:notes|item2cells:nolink=true|extargs=nolink}}{{options/set|item|icons=no}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Minecart}}
+! class="unsortable" | {{tr|Buff}}
+! class="unsortable" | {{tr|Mount}}
+! {{tr|Tooltip}}
+! class="unsortable" | {{tr|Source}}
+! data-sort-type=number | {{tr|Rarity}}
+! class="unsortable" | {{tr|Sell value}}
+! class="unsortable" | 备注
+|-
+| {{item|mode=table|Wooden Minecart|image=Wooden Minecart (mount).png|link=|anchor=y}}
+| [[File:Wooden Minecart (buff).png|{{tr|Wooden Minecart}}|link=]]
+| [[File:Wooden Minecart (mount).png|{{tr|Wooden Minecart}}|center|link=]]
+| {{note|-|small=y}}
+| 未装备{{tr|Minecart}}时，在{{tr|Minecart Track}}附近按下 {{key|mount}} （或对其按下 {{key|open}}）。
+| {{na}}
+| {{na}}
+| 
+* 这是默认{{tr|Minecart}}。它无法作为{{tr|item}}获得，只会在未装备{{tr|Minecart}}时出现。
+|-
+{{item infobox | auto = 2343
+| col:source = {{itemsource|id=2343}}
+}}
+{{item infobox | auto = 3353 | idbuff = 167 | tags = Minecart / hardmode
+| col:source = 通过使用[[{{tr|Minecart Upgrade Kit}}]]获得。
+| col:notes =
+* [[{{tr|Expert Mode}}]]独有。
+}}
+{{item infobox | auto = 4066 | idbuff = 209 | tags = Minecart / loot
+| col:source = {{itemsource|id=4066}}
+}}
+{{item infobox | auto = 4067 | idbuff = 211 | tags = Minecart / Quest rewards
+| col:source = 从[[{{tr|Angler}}]]处作为{{tr|quest}}奖励获得。
+| col:notes =
+* 在{{tr|water}}中不减速（但也不会获得{{tr|speed}}加成）。
+}}
+{{item infobox | auto = 4426 | idbuff = 221 | tags = Minecart / loot
+| col:source = {{itemsource|id=4426}}
+| col:notes =
+* 具有翅膀扇动的动画。
+}}
+{{item infobox | auto = 4427 | idbuff = 223 | tags = Minecart / loot
+| col:source = {{itemsource|id=4427}}
+}}
+{{item infobox | auto = 4428 | idbuff = 225 | tags = Minecart / drop / hardmode
+| col:source = {{itemsource|id=4428}}
+}}
+{{item infobox | auto = 4429 | idbuff = 227 | tags = Minecart / loot
+| col:source = {{itemsource|id=4429}}
+}}
+{{item infobox | auto = 4443 | idbuff = 229 | tags = Minecart / loot
+| col:source = {{itemsource|id=4443}}
+| col:notes =
+* 提供 7 秒的{{tr|lava}}免疫。
+** 此效果和[[{{tr|Lava Charm}}]]、[[{{tr|Molten Charm}}]]、[[{{tr|Magma Skull}}]]、[[{{tr|Molten Skull Rose}}]]、[[{{tr|Lava Waders}}]]、和[[{{tr|Terraspark Boots}}]]{{tr|accessories}}叠加，最高为 49 秒。
+* 在低速和静止时从其眼部散发紫色发光微粒。
+}}
+{{item infobox | auto = 4450 | idbuff = 232 | tags = Minecart / loot
+| col:source = {{itemsource|id=4450}}
+| col:notes =
+* 发出很微弱的光。
+}}
+{{item infobox | auto = 4451 | idbuff = 234 | tags = Minecart
+| col:source = {{itemsource|id=4451}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4452 | idbuff = 236 | tags = Minecart
+| col:source = {{itemsource|id=4452}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4453 | idbuff = 238 | tags = Minecart
+| col:source = {{itemsource|id=4453}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4454 | idbuff = 240 | tags = Minecart
+| col:source = {{itemsource|id=4454}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4455 | idbuff = 242 | tags = Minecart
+| col:source = {{itemsource|id=4455}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4456 | idbuff = 244 | tags = Minecart
+| col:source = {{itemsource|id=4456}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4467 | idbuff = 246 | tags = Minecart
+| col:source = {{itemsource|id=4467}}
+| col:notes =
+* 不断闪烁。
+}}
+{{item infobox | auto = 4468 | idbuff = 248 | tags = Minecart
+| col:source = {{itemsource|id=4468}}
+}}
+{{item infobox | auto = 4469 | idbuff = 250 | tags = Minecart / drop / hardmode
+| col:source = {{itemsource|id=4469}}
+| col:notes =
+* 留下彩虹轨迹。跳跃时喵喵叫。
+* 制动时生成彩虹粒子。
+}}
+{{item infobox | auto = 4470 | idbuff = 252 | tags = Minecart / vendor / vendor:Party Girl
+| col:source = {{itemsource|id=4470}}
+| col:notes =
+* 留下多彩轨迹。玩家会手持三个不断上下浮动的气球，类似于[[{{tr|Bundled Party Balloons}}]]。
+}}
+{{item infobox | auto = 4471 | idbuff = 254 | tags = Minecart / drop / hardmode
+| col:source = {{itemsource|id=4471}}
+| col:notes =
+* 旗帜在移动时随风飘动，速度增加时飘动幅度增大。
+}}
+{{item infobox | auto = 4472 | idbuff = 256 | tags = Minecart / hardmode / vendor / vendor:Steampunker
+| col:source = {{itemsource|id=4472}}
+| col:notes =
+* 散发出烟雾微粒，很像火车的烟雾。
+** 烟雾会基于使用的[[{{tr|dye}}]]变色。
+* 轮子的旋转很像火车轮子。
+}}
+{{item infobox | auto = 4745 | idbuff = 270 | tags = Minecart
+| col:source = {{itemsource|id=4745}}
+}}
+{{item infobox | auto = 4763 | idbuff = 272 | nolink = false | cargo = no <!-- has its own page with Cargo storage -->
+| col:source = {{itemsource|id=4763}}
+| col:notes =
+* 在玩家前方创建{{tr|Tracks}}。
+** 玩家的{{tr|Inventory}}中必须有{{tr|Minecart Tracks}}。
+* 挖掘玩家前方的{{tr|block}}。
+** 玩家的{{tr|Inventory}}中必须有{{tr|pickaxe}}或{{tr|drill}}。
+* 仅当[[{{tr|Bestiary}}]]填写至少 35%（{{b entries|35%|entries}}）时出售。
+}}
+{{item infobox | auto = 5125 | idbuff = 338 | tags = Minecart
+| col:source = {{itemsource|id=5125}}
+| col:notes =
+* 跳跃及离开轨道时发出放屁的声音和微粒效果。
+}}
+{{item infobox | auto = 5288 | idbuff = 346 | tags = Minecart / hardmode
+| col:source = {{itemsource|id=5288}}
+| col:notes =
+* 跳跃及离开轨道时发出放屁的声音和微粒效果。
+* 制动时生成独特的绿色粒子。
+}}
+|}{{options/reset|item infobox}}{{options/reset|item}}
+
+== 速度 ==
+除了{{tr|Wooden Minecart}}（玩家未装备{{tr|Minecart}}时提供的默认{{tr|Minecart}}）和{{tr|the Digging Molecart}}以外，所有{{tr|Minecart variants}}都拥有相同的最大速度和加速度。{{source code ref|v=1.4.4.9|method=Terraria.Mount.Initialize / Terraria.Player.HorizontalMovement}}
+
+{| class="terraria lined"
+! 类型
+! {{tr|Max speed}}
+! 加速度
+! 达到{{tr|max speed}}用时
+|-
+| {{item|Other Minecarts|image=Minecart (mount).png/Meowmere Minecart (mount).png|nolink=y}}
+| {{mph|{{mountinfo|Minecart|max speed|raw=y}} tiles|mode=full}}
+| {{mountinfo|Minecart|acceleration}}{{nbsp}}{{tr|tiles}}/{{tr|second}}²<br/><small>({{mph|{{mountinfo|Minecart|acceleration}} tiles}}/{{tr|second}})</small>
+| {{mountinfo|Minecart|time till max speed}}
+|-
+| {{item|Wooden Minecart|image=Wooden Minecart (mount).png|nolink=y|icons=n}}
+| {{mph|{{mountinfo|Wooden Minecart|max speed|raw=y}} tiles|mode=full}}
+| {{mountinfo|Wooden Minecart|acceleration}}{{nbsp}}{{tr|tiles}}/{{tr|second}}²<br/><small>({{mph|{{mountinfo|Wooden Minecart|acceleration}} tiles}}/{{tr|second}})</small>
+| {{mountinfo|Wooden Minecart|time till max speed}}
+|-
+| {{item|Digging Molecart|image=Digging Molecart (mount).png|icons=n}}
+| {{mph|{{mountinfo|Digging Molecart|max speed|raw=y}} tiles|mode=full}}
+| {{mountinfo|Digging Molecart|acceleration}}{{nbsp}}{{tr|tiles}}/{{tr|second}}²<br/><small>({{mph|{{mountinfo|Digging Molecart|acceleration}} tiles}}/{{tr|second}})</small>
+| {{mountinfo|Digging Molecart|time till max speed}}
+|-
+| {{item|Minecart Upgrade Kit|note2=（{{tr|Minecart boost}}开启时的所有{{tr|Minecarts}}）|icons=n}}
+| {{mph|75 tiles|mode=full}}
+| 22.5{{nbsp}}{{tr|tiles}}/{{tr|second}}²<br/><small>({{mph|22.5 tiles}}/{{tr|second}})</small>
+| 3.33 {{tr|seconds}}
+|}
+
+== {{tr|Damage and knockback}} ==
+{{tr|Minecart}}撞击实体时造成的接触[[{{tr|damage}}]]和[[{{tr|knockback}}]]是基于撞击瞬间的速度的。在[[{{tr|Hardmode}}]]下，伤害会提高 1.5 倍，在[[{{tr|Expert Mode}}]]及以上还会再提高 1.5 倍。{{tr|Wooden Minecart}}比其他{{tr|Minecart}}造成更低伤害，而{{tr|Minecart Upgrade Kit}}会提高伤害。
+
+下表列出了伤害公式和最大速度时的伤害。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.GetMinecartDamage}}所有小数向下取整。变量 <math>s_p</math> 是{{tr|Minecart}}的总速度潜能：<math>s_p = \frac{ \text{当前速度} }{ \text{最高速度} }</math>
+
+{| class="terraria lined"
+! rowspan=2 | {{tr|Type}}
+! rowspan=2 | {{tr|Damage}}
+! colspan=2 | {{tr|max speed}}时{{tr|Damage}}
+|-
+! {{tr|Pre-Hardmode}}
+! {{tr|Hardmode}}
+|-
+| {{item|Other Minecarts|image=Minecart (mount).png/Meowmere Minecart (mount).png/Digging Molecart (mount).png|nolink=y}}
+| <math>25 + 55 * s_p</math>
+| 80 / {{expert|{{#expr:floor(80*1.5)}}}}
+| {{#expr:floor(80*1.5)}} / {{expert|{{#expr:floor(80*1.5*1.5)}}}}
+|-
+| {{item|Wooden Minecart|image=Wooden Minecart (mount).png|nolink=y|icons=n}}
+| <math>15 + 30 * s_p</math>
+| 45 / {{expert|{{#expr:floor(45*1.5)}}}}
+| {{#expr:floor(45*1.5)}} / {{expert|{{#expr:floor(45*1.5*1.5)}}}}
+|-
+| {{item|Minecart Upgrade Kit|note2=（{{tr|Minecart boost}}开启时的所有{{tr|Minecarts}}）|icons=n}}
+| <math>50 + 100 * s_p</math>
+| 150 / {{expert|{{#expr:floor(150*1.5)}}}}
+| {{#expr:floor(150*1.5)}} / {{expert|{{#expr:floor(150*1.5*1.5)}}}}
+|}
+
+{{tr|Minecarts}}能造成[[{{tr|critical strike}}]]。其几率等于玩家的{{tr|melee, ranged, and magic critical strike chances}}中的最高值。
+
+{{tr|The knockback}}公式为：<math>10 + 40 * s_p</math>。最大速度时，所有{{tr|Minecarts}}造成 {{knockback|50|full=y|class=}}的{{tr|knockback}}。
+
+=== 范例 ===
+* 在[[{{tr|Classic Mode}}]]、[[{{tr|pre-Hardmode}}]]，乘坐{{tr|Amethyst Minecart}}以 {{mph|20}} 撞击{{tr|enemy}}会造成以下结果：
+** {{tr|Damage}}：
+*: <math>\left\lfloor 25 + 55 * \frac{ 20 \mathrm{\ mph} }{ 66 \mathrm{\ mph} } \right\rfloor = \left\lfloor 25 + 55 * \frac{10}{33} \right\rfloor = 41</math>
+** {{tr|Knockback}}：
+*: <math>\left\lfloor 10 + 40 * \frac{ 20 \mathrm{\ mph} }{ 66 \mathrm{\ mph} } \right\rfloor = \left\lfloor 10 + 40 * \frac{10}{33} \right\rfloor = 22</math>
+
+* 在[[{{tr|Expert Mode}}|{{tr|Expert}}]]/[[{{tr|Master Mode}}]]、[[{{tr|Hardmode}}]]，乘坐{{tr|Wooden Minecart}}以 {{mph|42}} 撞击{{tr|enemy}}会造成以下结果：
+** {{tr|Damage}}：
+*: <math>\left\lfloor \left( 15 + 30 * \frac{ 42 \mathrm{\ mph} }{ 51 \mathrm{\ mph} } \right) * 1.5 * 1.5 \right\rfloor = \left\lfloor \left( 15 + 30 * \frac{14}{17} \right) * 1.5 * 1.5 \right\rfloor = 89</math>
+** {{tr|Knockback}}：
+*: <math>\left\lfloor 10 + 40 * \frac{ 42 \mathrm{\ mph} }{ 51 \mathrm{\ mph} } \right\rfloor = \left\lfloor 10 + 40 * \frac{14}{17} \right\rfloor = 42</math>
+
+== 成就 ==
+{{achievement|name=Vehicular Manslaughter}}
+
+== 花絮 ==
+[[File:Minecarp.gif|thumb|{{tr|Minecarp}}的最初预告片。]]
+* 按下 {{key|mount}} 时发射的{{tr|hooks}}的外观很像[[{{tr|Grappling Hook}}]]。
+* {{tr|Minecarp}}（Minecarp）的名称是结合了词语''{{tr|Minecart}}（Minecart）''和''{{维基百科|Carp|t=鲤鱼}}''的复合词。
+** 其{{tr|tooltip}}参考了展示它的最初预告。
+* 虽然所有[[{{tr|Large Gems}}]]的外观都不同，所有{{tr|Gem Minecarts}}除了颜色和{{tr|gem}}的细节以外看上去都几乎一样。
+<!-- Please do not add any trivia about DanTDM or the "coffin dance" meme here, it will be removed unless sourced from a developer -->
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Fart Kart and Terra Fart Kart}}。
+** 添加了[[{{tr|Minecart Upgrade Kit}}]]。
+*** {{tr|Mechanical Cart}}不再具有特殊效果。此前，其属性和{{tr|Minecart Upgrade Kit}}强化后的{{tr|minecarts}}相同。
+** {{tr|Minecarts}}现在在更高的{{tr|difficulties}}中造成更多的{{tr|damage}}，造成更高的{{tr|knockback}}，且通常来说更可能让玩家在不受到伤害的情况下碰撞{{tr|enemies}}。}}
+{{history|Desktop 1.4.0.3|修复了在{{tr|minecart}}中使用[[{{tr|Trident}}]]时会影响{{tr|minecart}}的移动的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|添加了 22 种新{{tr|variants}}。}}
+{{history|Desktop 1.3.0.1|
+** 现在可装备，可[[{{tr|dye}}|染色]]，并拥有{{tr|sell value}}。
+** 添加了 2 种新{{tr|variants}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+[[Category:铁砧或铅砧]]
+[[Category:铁砧或铅砧和灵雾]]
+
+{{language info|en=Minecarts}}

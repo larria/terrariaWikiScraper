@@ -1,0 +1,62 @@
+{{infobox wrapper
+|{{item infobox
+| auto = 2004
+}}
+|{{npc infobox
+| auto = 358
+| image = Lightning Bug.gif
+| type = Critter
+| environment = The Hallow/Night
+}}
+}}
+{{distinguish|Etherian Lightning Bug}}
+
+'''{{tr|Lightning Bugs}}'''是一种无害的[[{{tr|critters}}]]，会在[[{{tr|night}}]]期间生成在[[{{tr|Hallowed grass}}]]{{tr|blocks}}上。{{critter info|cagename=[[{{tr|Lightning Bug in a Bottle}}]]|statuename=[[{{tr|Firefly Statue}}]]}}
+
+其常规{{tr|counterpart}}为[[{{tr|Firefly}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Lightning Bug|expectedrows=3}}
+
+== 备注 ==
+* {{tr|Fireflies}}/{{tr|Lightning Bugs}}的生成几率每天{{tr|dusk}}({{time|7:30 PM}})，或者每次加载{{tr|world}}时，都会被设为随机值，以使它们每天晚上的生成率不同。在{{eil|Celebrationmk10}}世界中，它们会变得更加普遍。有关生成的详细信息，参见下文。
+{{collapse top|详细信息}}
+* 在每天{{tr|dusk}}（{{time|7:30 PM}}），或者每次加载{{tr|world}}时，{{tr|Fireflies}}/{{tr|Lightning Bugs}}的生成几率会被设为随机值。下方为详细信息：{{source code ref|v=1.4.4.6|method=Terraria.NPC.setFireFlyChance / Terraria.Main.UpdateTime_StartNight / Terraria.IO.WorldFile.LoadWorld}}
+** 对于{{tr|Fireflies}}/{{tr|Lightning Bugs}}，有三个相关参数：{{code|fireFlyChance}}，附近没有[[{{tr|town NPCs}}]] 时它们的生成几率；{{code|fireFlyFriendly}}，附近有{{tr|town NPCs}} 时它们的生成几率；以及 {{code|fireFlyMultiple}}，同时生成多个的几率。
+: 这些参数以以下方式设置：
+:* 首先，{{chance|1/9}} 几率：{{code|fireFlyChance}} = 5–9，{{code|fireFlyFriendly}} = 1–3，{{code|fireFlyMultiple}} = 3–7。
+::* 如果失败，则 {{chance|1/3}} 几率：{{code|fireFlyChance}}、{{code|fireFlyFriendly}}、{{code|fireFlyMultiple}}均设为 999999（等效地阻止它们生成）。
+::* 如果两个都失败了，则：{{code|fireFlyChance}} = 10–59，{{code|fireFlyFriendly}} = 2–14，{{code|fireFlyMultiple}} = 6–29。
+:* 然后，若是 [[Celebrationmk10]] {{tr|world}}，{{code|fireFlyChance}} 除以 2。若除后的值低于 1，则将其设为 1。
+: 在设定这些参数后，它们会被用于[[{{tr|NPC spawning}}|生成]]。注意下方几率仅和对应{{tr|critter}}相关，仅供参考，它们没有考虑其他的生成：{{source code ref|v=1.4.4.6|method=Terraria.NPC.SpawnNPC}}
+:* {{tr|Fireflies}}/{{tr|Lightning Bugs}}仅能在{{tr|night}}、玩家位于{{tr|surface}}且不处于{{eil|Graveyard}}中、且[[{{tr|wind}}|{{tr|wind speed}}]]低于 20 {{mph}} 时生成。
+::* {{tr|Fireflies}}会在普通[[{{tr|grass}}]]和两种[[{{tr|mowed grass}}]]上生成，而{{tr|Lightning Bugs}}会在[[{{tr|Hallowed grass}}]]上生成。
+::* 取决于玩家是否在[[{{tr|town}}]]中，有 {{code|1/fireFlyChance}} 或 {{code|1/fireFlyFriendly}} 几率生成一只{{tr|Firefly}}/{{tr|Lightning Bug}}。而后，有四次独立的 {{code|1/fireFlyMultiple}} 几率额外生成一只。作为结果，它们能以 1–5 个为一组出现。
+:* 虽然似乎和{{tr|Fireflies}}很相似，但{{eil|Lavafly|ies}}使用略微不同的生成机制：{{source code ref|v=1.4.4.6|method=SpawnNPC_SpawnLavaBaitCritters}}
+::* 它们仅在{{tr|night}}于[[{{tr|Underworld}}]]中生成。总是会生成一只{{tr|Lavafly}}，而后则有四次独立的 {{code|1/fireFlyMultiple}} 几率额外生成一只{{tr|Lavafly}}。作为结果，它们能以 1–5 个为一组出现。
+{{collapse bottom}}
+
+== 小贴士 ==
+* 和{{tr|Fireflies}}一样，由于其每个{{tr|night}}能获得的数量较大，它们作为{{tr|bait}}很有用。注意{{tr|Lightning Bugs}}仅在[[{{tr|The Hallow}}]]生成，这意味着它们是[[{{tr|Hardmode}}]]独有的。
+** 不过，如果{{tr|The Hallow}}在{{tr|pre-Hardmode world}}中被创建，它们仍会生成。这使得它们成为了生成的仅有的 {{tr|NPC}}。
+
+== 花絮 ==
+* 虽然似乎{{tr|Lightning Bug}}是{{tr|Firefly}}版的{{eil|Enchanted Nightcrawler}}（都具有 {{iteminfo|Lightning Bug|bait}} 的{{tr|bait power}}和类似的颜色变化），它''不能''被{{tr|craft}}，这和{{tr|Enchanted Nightcrawler}}不同。
+* 在现实生活中，''{{wiktionary|lightning bug}}''（{{tr|lightning bug}}）只是{{wikipedia|firefly|萤火虫}}的别名，而非独立的一种昆虫。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.1|现在可用于制作{{tr|Firefly Statues}}。}}
+{{history|Desktop 1.2.4|现在可用作{{tr|bait}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.07|现在可用作{{tr|bait}}。}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}，可用作{{tr|bait}}。}}
+{{history|3DS-Release|{{tr|Introduced}}，可用作{{tr|bait}}。}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Lightning Bug}}

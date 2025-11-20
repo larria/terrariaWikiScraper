@@ -1,0 +1,103 @@
+<includeonly><!--
+// register localization information:
+-->{{l10n/register|projectile_iframe_table|en<!--
+	-->|iframetype:global=Global<!--
+	-->|iframetype:static=Static<!--
+	-->|iframetype:local=Local<!--
+-->}}<!--
+-->{{l10n/register|projectile_iframe_table|zh<!--
+	-->|iframetype:global=全局<!--
+	-->|iframetype:static=静态<!--
+	-->|iframetype:local=局部<!--
+-->}}<!--
+
+-->{{#vardefine:_pid|{{{id|{{{1|}}}}}}}}<!--
+-->{{#vardefine:iframe_type|<!--
+	-->{{{type|<!--
+		if( static = true )
+		-->{{#if:{{bool|{{getProjectileInfo|{{#var:_pid}}|usesIDStaticNPCImmunity|raw=y}}}}<!--
+			-->|{{l10n|projectile_iframe_table|iframetype:static}}<!--
+		else if( local = true )
+			-->|{{#if:{{bool|{{getProjectileInfo|{{#var:_pid}}|usesLocalNPCImmunity|raw=y}}}}<!--
+				-->|{{l10n|projectile_iframe_table|iframetype:local}}<!--
+				else
+				-->|{{l10n|projectile_iframe_table|iframetype:global}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->}}}<!--
+-->}}<!--
+-->{{#vardefine:iframe_length|<!--
+	-->{{#if:{{{length|}}}<!--
+	Use manual value if there is any.
+	-->|{{{length}}}<!--
+	Otherwise, automatically set length stat
+	-->|{{#switch:{{#var:iframe_type}}<!--
+		-->|{{l10n|projectile_iframe_table|iframetype:static}}={{getProjectileInfo|{{#var:_pid}}|idStaticNPCHitCooldown|raw=y}}<!--
+		-->|{{l10n|projectile_iframe_table|iframetype:local}}={{getProjectileInfo|{{#var:_pid}}|localNPCHitCooldown|raw=y}}<!--
+		-->|#default=10<!-- default global length: 10 ticks
+		-->}}<!--
+	-->}}<!--
+-->}}<!--
+--><tr><!--
+	--><td>{{#var:_pid}}</td><!--
+	--><td align="center">[[File:{{getProjectileInfo|{{#var:_pid}}|image}}{{#if:{{{size|}}}|{{!}}{{{size}}}px}}]]</td><!--
+	--><td>{{getProjectileInfo|{{#var:_pid}}|name}}</td><!--
+	--><td>{{#var:iframe_type}}</td><!--
+	--><td><!--
+	-->{{#switch:{{#var:iframe_type}}<!--
+		Length of local invincibility is affected by extraUpdates.
+		-->|{{l10n|projectile_iframe_table|iframetype:local}}={{#ifexpr:{{#var:iframe_length}}=-1<!--
+			-->|-1<!-- Do not calculate if already -1 (outputs incorrect value when extraUpdates>0)
+				Each tick:
+				for (i=0; i<1+extraUpdates; i++)
+				{
+					if(HitCooldown>0)
+					{
+						HitCooldown--;
+					}
+				}
+				So the actual invincibility frame length should be calculated like this:
+			-->|{{#expr:ceil({{#var:iframe_length}}/({{getProjectileInfo|{{#var:_pid}}|extraUpdates|raw=y}}+1))}}<!--
+			-->}}<!--
+		-->|#default={{#var:iframe_length}}<!-- only local invincibility is affected by extraUpdates.
+	-->}}<!--
+	--></td><!--
+	--><td>{{{penetrate|{{{p|<!--
+			-->{{#ifeq:{{getProjectileInfo|{{#var:_pid}}|penetrate|raw=y}}|-1<!--
+				-->|{{infinity}}<!--penetrate=-1: infinite pierce
+				-->|{{getProjectileInfo|{{#var:_pid}}|penetrate|raw=y}}<!-- penetrate>1: limited pierce
+			-->}}<!--
+		-->}}}}}}<!--
+	--></td><!--
+	--><td>{{{note|{{{2|}}}}}}</td><!--
+--></tr><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+== Parameters==
+; id or first unnamed parameter
+The id of the projectile. Projectile info is automatically retrieved with presented id with {{tl|getProjectileInfo}}.
+
+; size
+Resize the image of projectile (<code>size</code>px).
+
+; type
+The type of [[invincibility frame]] the projectile applies. Register localization info for invincibility type on this page.
+
+; length
+The length of invincibility frame applied on hit. Automatically determined and calculated if invincibility frame type is static or local. 
+* For static: equals to <code>idStaticNPCHitCooldown</code>
+* For local: calculated with <code>localNPCHitCooldown</code> and <code>extraUpdates</code>:
+: <math>\text{Invinciblity frame}=\left\lceil\frac{\textit{localNPCHitCooldown}}{\textit{extraUpdates}+1}\right\rceil</math>
+: Directly displays <code>-1</code> if <code>localNPCHitCooldown = -1</code>, since some of these have non-default <code>extraUpdates</code> value.
+* For global: displays <code>10</code> if no length parameter is presented.
+
+; penetrate or p
+The <code>penetrate</code> stat of the projectile. Displays {{tl|infinity}} if the value is <code>-1</code>.
+
+; note or second unnamed parameter
+Write notes here.
+
+{{language info|en=List of projectiles that apply invincibility frames/row}}
+</noinclude>

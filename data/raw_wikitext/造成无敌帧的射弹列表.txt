@@ -1,0 +1,170 @@
+{{info request|
+* 需要检查造成全局无敌的{{tr|projectiles}}的属性是否正确。
+** 具体来说，来自[[{{tr|spears}}]]、[[{{tr|drills}}]]、[[{{tr|chainsaws}}]]、和[[{{tr|Chlorophyte Jackhammer}}]]的{{tr|projectiles}}。
+}}
+
+以下为会造成一类[[{{tr|invincibility frame}}]]的{{tr|projectiles}}的列表，包括施加{{tr|invincibility frame}}的长度和{{tr|projectile}}的穿透数。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.Damage}}
+
+__TOC__
+
+== 备注 ==
+* 对于造成{{tr|static invincibility}}的{{tr|projectiles}}，无敌的长度等于{{tr|projectiles}}的 <code>idStaticNPCHitCooldown</code> 属性。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.idStaticNPCHitCooldown}}
+* 对于造成{{tr|local invincibility}}的{{tr|projectiles}}，无敌的长度由 <code>localNPCHitCooldown</code> 和 <code>[[extraUpdates]]</code> 属性决定。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.localNPCHitCooldown / Terraria.Projectile.extraUpdates}}
+** <code>localNPCHitCooldown</code> 有两个特殊值：<code>-1</code> 和 <code>-2</code>。
+*** 如果 <code>localNPCHitCooldown</code> 是 -1，就意味着被{{tr|projectile}}伤害的实体会对那个特定{{tr|projectile}}永久免疫；该实体永远无法再次被那个特定{{tr|projectile}}伤害。换言之，一个{{tr|projectile}}仅能伤害单个实体一次。
+*** 如果 <code>localNPCHitCooldown</code> 是 -2，关于{{tr|local invincibility}}的机制会被无视。{{tr|projectile}}会改为遵循穿透{{tr|projectiles}}的通常行为，在{{tr|projectiles}}可穿透且伤害到实体时对其造成 10 {{tr|ticks}}{{tick}}的{{tr|global invincibility frames}}。
+** 如果 <code>localNPCHitCooldown</code> 不是负值，实际无敌长度（单位：{{tr|ticks}}；下方表格中显示的数据即为此值）可由该公式计算：{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Update}}
+: <math>\text{无敌帧}=\left\lceil\frac{\textit{localNPCHitCooldown}}{\textit{extraUpdates}+1}\right\rceil</math>
+* {{tr|projectile}}的 <code>penetrate</code> 属性决定了它能伤害多少个目标。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.penetrate}}在{{tr|projectile}}对目标造成伤害后，其 <code>penetrate</code> 属性会减少 1，{{tr|projectile}}会在 <code>penetrate</code> 到达 0 时消失。{{footnote|注意部分{{tr|projectiles}}可能有其他导致{{tr|projectile}}消失的条件，即使它没有击中这么多目标。}}因此：
+** <code>penetrate = n</code> 代表{{tr|projectile}}总共可击中 <code>n</code> 个目标。
+** <code>penetrate = -1</code> 代表无限的击中数（在下表中以 {{infinity}} 无穷大符号表示）。
+** <code>penetrate = 1</code> 代表{{tr|projectile}}会在击中一个目标时消失。这类{{tr|projectile}}被视为“非穿透”的，通常不会造成任何{{tr|invincibility frame}}。此外，使用{{tr|global or static invincibility}}的{{tr|projectiles}}在 <code>penetrate</code> 的值达到 <code>1</code> 时不再会造成{{tr|invincibility frame}}。
+*** 然而，以下“非穿透”{{tr|projectiles}}（<code>penetrate = 1</code>）会对击中的实体造成{{tr|global invincibility}}（见下方表格获取具体值）。这些{{tr|projectiles}}本身不受{{tr|invincibility frames}}影响，但产生的无敌会阻止其他“穿透”{{tr|projectiles}}造成伤害。<!--projectiles that use global immunity while penetrate=1:
+-->{{#arraydefine:global-notInList|16,246,249,286,424,425,426,634,635|,}}
+{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:global-notInList||@@@|
+{{itemlist/item|{{item|icons=no|nolink=y|{{projectileinfo|@@@|name}}|image={{projectileinfo|@@@|image}}}}}}
+}}
+{{itemlist/end}}
+
+== 列表 ==
+<!--
+/* Do not translate these arrays. Scroll down to translate notes and table header */
+
+Automatically create lists of projectile ids with penetrate
+-->{{#arraydefine:autoGlobalList<!--
+	-->|{{#loop:pid<!--
+	-->| 1<!--
+	-->| {{projectileinfo||count}}<!--
+	-->|<!--
+		-->{{#if:{{bool|{{projectileinfo|{{#var:pid}}|friendly|raw=y}}}}<!-- only friendly projectiles
+
+				only penetrate>1 or =-1
+			-->|{{#ifexpr:({{projectileinfo|{{#var:pid}}|penetrate|raw=y}}!=1)<!--
+				Manually exclude [[Hooks]] (ai=7), [[pets]], and [[light pets]] (ai=11, 90, 124, 144, or 174), [[Explosive Trap]] sentry (ai=138):
+			-->and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=7)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=11)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=26)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=90)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=124)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=138)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=144)and({{projectileinfo|{{#var:pid}}|aiStyle|raw=y}}!=174)<!--
+				Not using local or static immunity
+				-->|{{#if:{{bool|{{projectileinfo|{{#var:pid}}|usesLocalNPCImmunity|raw=y}}}}{{bool|{{projectileinfo|{{#var:pid}}|usesIDStaticNPCImmunity|raw=y}}}}<!--
+					-->||{{#var:pid}},<!--
+				-->}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->}}<!--
+-->|,}}<!--
+-->{{#arraydefine:autoLocalList<!--
+	-->|{{#loop:pid<!--
+	-->| 1<!--
+	-->| {{projectileinfo||count}}<!--
+	-->|<!--
+		-->{{#if:{{bool|{{projectileinfo|{{#var:pid}}|usesLocalNPCImmunity|raw=y}}}}|{{#var:pid}},}}<!--
+	-->}}<!--
+-->|,}}<!--
+-->{{#arraydefine:autoStaticList<!--
+	-->|{{#loop:pid<!--
+	-->| 1<!--
+	-->| {{projectileinfo||count}}<!--
+	-->|<!--
+		-->{{#if:{{bool|{{projectileinfo|{{#var:pid}}|usesIDStaticNPCImmunity|raw=y}}}}|{{#var:pid}},}}<!--
+	-->}}<!--
+-->|,}}<!--
+remove trailing empty element caused by final loop
+-->{{#arrayunique:autoGlobalList}}<!--
+-->{{#arrayunique:autoLocalList}}<!--
+-->{{#arrayunique:autoStaticList}}<!--
+Manually exclude projectiles not accepted by Terraria.Projectile.Damage (return statement):<!--
+-->{{#arraydefine:global-return|18,72,86,87,226,378,613,650,882,888,895,896,439,444,500,653,1018,460,633,600,601,602,535,651,831,970,1007|,}}<!--
+Manually exclude other projectiles. Most projectiles do not deal damage.
+-->{{#arraydefine:manualExclude|10,11,145,146,147,148,149,463,535,586,651,655,739,740,741,742,743,744,745,746,747,748,749,750,751,752,820,995,1015,1016,1017,1019,1020,423,434,598,614,636|,}}<!--
+Connect all lists together
+-->{{#arrayunion:unionList|autoGlobalList|global-notInList|autoLocalList|autoStaticList}}<!--
+Remove excluded projectiles to produce final list.
+-->{{#arraydiff:finalList|unionList|global-return|manualExclude}}<!--
+
+Add info that cannot be automatically retrieved:
+
+Resize images if needed:
+{{#vardefine:size_id|number}}
+
+Projectiles with global immunity != 10:
+-->{{#vardefine:length_311|7}}<!--Candy Corn
+-->{{#vardefine:length_409|6}}<!--Typhoon
+-->{{#vardefine:length_443|8}}<!--Electrosphere
+-->{{#vardefine:length_514|1}}<!--Nail (friendly)
+-->{{#vardefine:length_582|7}}<!--Mechanic's Wrench
+-->{{#vardefine:length_595|5}}<!--Arkhalis
+-->{{#vardefine:length_632|5}}<!--Last Prism Laser
+-->{{#vardefine:length_659|5}}<!--Spirit Flame
+-->{{#vardefine:length_735|5}}<!--Terragrim
+-->{{#vardefine:length_902|7}}<!--Combat Wrench
+-->{{#vardefine:length_927|4}}<!--Starlight
+Projectiles that use global immunity while penetrate=1 (from global-notInList):
+-->{{#vardefine:length_16|8}}<!--Magic Missile
+-->{{#vardefine:length_246|7}}<!--Stynger
+-->{{#vardefine:length_249|7}}<!--Stynger Shrapnel
+-->{{#vardefine:length_286|5}}<!--Explosive Bullet
+-->{{#vardefine:length_424|5}}<!--Meteor 1
+-->{{#vardefine:length_425|5}}<!--Meteor 2
+-->{{#vardefine:length_426|5}}<!--Meteor 3
+-->{{#vardefine:length_634|5}}<!--Nebula Blaze
+-->{{#vardefine:length_635|5}}<!--Nebula Blaze Ex
+Projectiles with manually set local immunity frames in Terraria.Projectile.Damage
+-->{{#vardefine:length_611|6}}<!--Solar Eruption
+-->{{#vardefine:length_612|6}}<!--Solar Explosion
+-->{{#vardefine:length_617|8}}<!--Nebula Arcanum
+-->{{#vardefine:length_618|20}}<!--Nebula Arcanum Subshot
+-->{{#vardefine:length_638|-1}}<!--Luminite Bullet
+-->{{#vardefine:length_639|-1}}<!--Luminite Arrow
+-->{{#vardefine:length_640|-1}}<!--Luminite Arrow Trail
+-->{{#vardefine:length_642|10}}<!--Lunar Portal Laser
+-->{{#vardefine:length_645|-1}}<!--Lunar Flare
+-->{{#vardefine:length_656|8}}<!--Ancient Storm (friendly)
+-->{{#vardefine:length_661|8}}<!--Onyx Blaster
+-->{{#vardefine:length_856|8}}<!--Stellar Tune
+-->{{#vardefine:length_857|10}}<!--First Fractal
+-->{{#vardefine:length_864|10}}<!--Enchanted Dagger
+-->{{#vardefine:length_866|-1}}<!--Sergeant United Shield
+
+/* Translate the following */
+
+Notes for projectiles
+-->{{#vardefine:note_22|在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中<br/>改为 {{#expr:floor(12/({{projectileinfo|22|extraUpdates}}+1))+12mod({{projectileinfo|22|extraUpdates}}+1)}} {{tr|ticks}}的{{tr|local invincibility frame}}。}}<!--Water Stream
+-->{{#vardefine:note_39|未使用。曾被 [[1.0.5]] 中下落的[[{{tr|Mud Block}}]]使用。}}<!--Mud Ball
+-->{{#vardefine:note_132|未使用。曾被 [[1.4.4]] 前的[[{{tr|Terra Blade}}]]使用。}}<!--Terra Beam
+-->{{#vardefine:note_156|未使用。曾被 [[1.4.4]] 前的[[{{tr|True Excalibur}}]]使用。}}<!--Light Beam
+-->{{#vardefine:note_181|[[{{tr|The Bee's Knees}}]]生成的该射弹总击中数为 2。}}<!--Bee
+-->{{#vardefine:note_387|不造成伤害，使得{{tr|invincibility frame}}没有用处。}}<!--Retanimini
+-->{{#vardefine:note_419|不造成伤害，使得{{tr|invincibility frame}}没有用处。}}<!--Firework Fountain Yellow
+-->{{#vardefine:note_420|不造成伤害，使得{{tr|invincibility frame}}没有用处。}}<!--Firework Fountain Red
+-->{{#vardefine:note_421|不造成伤害，使得{{tr|invincibility frame}}没有用处。}}<!--Firework Fountain Blue
+-->{{#vardefine:note_422|不造成伤害，使得{{tr|invincibility frame}}没有用处。}}<!--Firework Fountain Rainbow
+-->{{#vardefine:note_607|未使用。}}<!--Solar Flare
+-->{{#vardefine:note_611|还会造成 4 {{tr|ticks}}的{{tr|global invincibility frame}}。}}<!--Solar Eruption
+-->{{#vardefine:note_612|还会造成 4 {{tr|ticks}}的{{tr|global invincibility frame}}。}}<!--Solar Explosion
+-->{{#vardefine:note_624|未使用。曾被 [[1.4.0.1]] 前的[[{{tr|Stardust armor}}]]的{{tr|set bonus}}使用。}}<!--Starburst
+-->{{#vardefine:note_832|未使用。}}<!--Desert Tiger
+-->{{#vardefine:note_857|[[{{tr|Unobtainable}}]]。}}<!--First Fractal
+
+-->
+{| class="terraria lined sortable"
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]]
+! colspan=2 class="unsortable" | {{tr|Projectile}}
+! 类型
+! data-sort-type="number" | 时间{{footnote|{{tr|Invincibility frames}}（单位：{{tr|ticks}}）}}
+! data-sort-type="number" | 击中{{footnote|总击中数}}
+! 备注
+{{#arrayprint:finalList|
+|@@@@|
+{{/row|@@@@|size={{#var:size_@@@@}}|length={{#var:length_@@@@}}|note={{#var:note_@@@@}}}}
+}}<!-- Manually add projectiles with special rules and traits
+-->{{/row|479|length=10|p=-1|note=仅在分裂前造成{{tr|invincibility frame}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001}}}}
+{{/row|715|length=10|p=-1|note={{tr|Red rocket}}；发射 {{duration|20ticks}}后。{{source code ref|name=Celebrationmk2|v=1.4.4.9|method=Terraria.Projectile.AI_075 / Terraria.Projectile.AI_147_Celeb2Rocket}}}}
+{{/row|716|length=10|p=-1|note={{tr|Red rocket}}；发射 {{duration|20ticks}}后。<ref name="Celebrationmk2"/>}}
+{{/row|717|length=10|p=-1|note={{tr|Red rocket}}；发射 {{duration|20ticks}}后。<ref name="Celebrationmk2"/>}}
+{{/row|718|length=10|p=-1|note={{tr|Red rocket}}；发射 {{duration|20ticks}}后。<ref name="Celebrationmk2"/>}}
+|}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{language info|en=List of projectiles that apply invincibility frames}}

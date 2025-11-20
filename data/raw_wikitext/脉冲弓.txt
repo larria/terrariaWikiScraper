@@ -1,0 +1,54 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| auto = 2223
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 65 {{eicons|Pulse Bow|not=1.4.0.1|small=y}}
+| use = @@@@ {{eicons|1.4.0.1|small=y}} /<br/> {{ut|22}} {{eicons|Pulse Bow|not=1.4.0.1|small=y}}
+| idprojectile = 357
+| tags  = Vendor/hardmode/ vendor:Traveling Merchant
+| listcat = Bows
+}}
+[[File:Pulse Bow (demo).gif|frame|right|使用{{tr|Pulse Bow}}{{tr|attack}}[[{{tr|Target Dummy}}]]。注意反弹会减少{{tr|pulse bolt}}穿透的{{tr|enemy}}。]]
+
+'''{{tr|Pulse Bow}}'''是一把特殊的[[{{tr|Hardmode}}]][[{{tr|bow}}]]，可以[[{{tr|auto-fire}}]]并发射高射速发光蓝色箭矢；后者不受重力影响，可穿透[[{{tr|enemies}}]]和反弹，并可在消散前飞行 3.5 秒（大约相当于 480 格）。此{{tr|projectile}}总计可穿透或反弹 5 次，在第六次时消失。每次反弹均会导致穿透数减一，反之亦然。类似于其他{{tr|bows}}和[[{{tr|repeater}}]]，它可以将任意类型的[[{{tr|arrow}}]]用作[[{{tr|ammunition}}]]。不过，{{tr|Pulse Bow}}会将各种类型的{{tr|arrow}}转化为它自己独特的{{tr|bolt}}。除了{{tr|damage}}值上的属性，不同的{{tr|arrow}}提供的效果都不会生效。{{tr|Pulse Bow}}有大小为 {{iteminfo|Pulse Bow|crit}} 的[[{{tr|critical strike chance}}]]而非通常的 4%。
+
+它可以在[[{{tr|Traveling Merchant}}]]处以 {{iteminfo|Pulse Bow|buy}} 的价格购买。在{{eversions|1.4.4}}中，它可以在击败所有[[{{tr|mechanical bosses}}]]后购买；而在{{eversions|Pulse Bow|not=1.4.4}}中，它可以在击败[[{{tr|Plantera}}]]后购买。
+
+{{eicons|1.3.0.1}} {{tr|The Traveling Merchant}}在世界进入困难模式后会使用它进行自卫。
+
+{{modifier|ranged}}
+
+== 备注 ==
+* 每次反弹或穿透{{tr|enemy}}都会将{{tr|projectile}}的{{tr|base damage}}降低 10%。{{source code ref|v=1.4.0.5|method=Terraria.Projectile.HandleMovement}}例如，若配合[[{{tr|Wooden Arrow}}]]使用，则在五次反弹/穿透敌怪后，仅能造成 {{eicons|1.4.0.1}} {{#vardefineecho:dmg_1.4|{{#expr:floor(({{iteminfo|Pulse Bow|damage}}+{{iteminfo|Wooden Arrow|damage}})*0.9^5)}}}} / {{eicons|Pulse Bow|not=1.3.0.1}}<!-- Pulse Bow's damage is different pre-1.4.0.1; Wooden Arrows' damage is different pre-1.3.0.1 --> {{#vardefineecho:dmg_1.3|{{#expr:floor((65+4)*0.9^5)}}}} 点{{tr|base damage}}（最初伤害的 {{eicons|1.4.0.1}} {{percent|{{#var:dmg_1.4}}/{{iteminfo|Pulse Bow|damage}}}} / {{eicons|Pulse Bow|not=1.3.0.1}} {{percent|{{#var:dmg_1.3}}/65}}）。
+* {{tr|Pulse Bow}}与其他弓的机制有很大不同。虽然它消耗{{tr|arrows}}，但它的{{tr|projectile}}看上去像是由[[{{tr|magic weapon}}]]发射的，因为它们能散发出发光粒子效果、会反弹、能穿透{{tr|enemy}}、会在半空中消散且无视重力和[[{{tr|liquids}}]]。
+
+== 小贴士 ==
+* 其穿透和反弹能力使其在封闭地形，如[[{{tr|Dungeon}}]]中非常有用。
+* 若以正确角度射出，则{{tr|Pulse Bow}}的{{tr|projectiles}}可反弹穿过一格厚的墙。这似乎会在{{tr|projectile}}以 40 至 50 度的角度击中物块时发射，且在先在另一表面反弹的情况下更容易发生。这个有用的技巧可用于在很多情况下攻击屏障下的{{tr|enemies}}。
+* 由于{{tr|Pulse Bow}}会取消附加的{{tr|arrow}}的效果，因此{{tr|damage}}在选择箭矢种类方面是唯一需要考虑的因素。最高的{{tr|base damage}}，{{eicons|1.4.0.1}} {{#expr:{{iteminfo|Pulse Bow|damage}}+{{iteminfo|Venom Arrow|damage}}}} / {{eicons|Pulse Bow|not=1.4.0.1}}<!-- Pulse Bow's damage is different pre-1.4.0.1; Venom Arrows' damage is different pre-1.4.0.1 --> {{#expr:65+17}}，可搭配[[{{tr|Venom Arrow}}]]来实现。
+* [[{{tr|Endless Quiver}}]]会正常起作用，允许{{tr|Pulse Bow}}无限发射箭矢。
+* 此{{tr|weapon}}与[[{{tr|Stake Launcher}}]]极为相似，二者均可发射不受重力影响的穿透性{{tr|projectiles}}，适合在平坦区域承担群体控制的任务。
+** 在{{eversions|Pulse Bow|not=1.4.0.1}}中，二者的 {{DPS}} （配合{{tr|Venom Arrows}}）大致相当，但{{tr|Pulse Bow}}受[[{{tr|Archery Potion}}]]影响，因此可进一步提高伤害，但{{tr|Stake Launcher}}则不能。
+* 当{{tr|Pulse Bow}}向被[[{{tr|Hammers}}|锤击]]过的斜坡发射时，{{tr|projectile}}会沿着斜坡向上前进，而非从其上弹开，并且在斜坡尽头以相同入射角射出。{{tr|projectile}}爬坡的高度也是有限的。
+
+== 花絮 ==
+* {{tr|Pulse Bow}}的配色方案与[[{{tr|Shroomite}}]]装备类似。
+* {{eil|1.4.0.1}} 的更新日志说每次击中的伤害惩罚变为 20%（而非 10%）。但这并未生效。
+* {{tr|The Pulse Bow}}拥有游戏中所有{{tr|bows}}中所列出的最高的{{tr|base damage}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 85 降低至 80。
+** 现在在击败所有 3 个{{tr|mechanical bosses}}后出售，而非在{{tr|Plantera}}后才出售。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 65 提升至 85。
+**{{tr|Use time}}由 22 降低至 20。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Pulse Bow}}

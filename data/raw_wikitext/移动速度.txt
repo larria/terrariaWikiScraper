@@ -1,0 +1,846 @@
+'''{{tr|Movement speed}}'''是玩家的[[属性点|属性数据]]之一，影响其四处移动的速度。很多特性都会影响{{tr|movement speed}}，诸如[[{{tr|Movement Accessories}}]]、[[{{tr|Wings}}]]、[[{{tr|Mounts}}]]、[[{{tr|Minecarts}}]]和[[{{tr|Liquids}}]]，以及某些[[{{tr|Buffs}}]]、[[{{tr|Debuffs}}]]、[[{{tr|Armor}}]]和其他一些诸如[[{{tr|Ice Blocks}}]]和[[{{tr|Cobweb}}]]等危险物。{{tr|Movement speed}}可以分解为水平{{tr|movement}}和垂直{{tr|movement}}，前者是受大多数影响来源影响最大的部分，而后者主要受[[{{tr|Wings}}]]和[[{{tr|Movement Accessories}}]]影响。
+
+== {{tr|Horizontal movement}} ==
+所有人物开始时的{{tr|horizontal movement speed}}都是 {{mph|15|tiles_text}}（[[{{tr|Stopwatch}}]]所显示）。在移动时，{{tr|character}}会自动爬上一格高的突起或小山，并且{{tr|horizontal movement speed}}不会受此影响（攀爬金字塔状地形的速度和打个隧道穿过去的速度是一样的）。这些值忽略了从站立位置开始加速所需的一小点时间。
+
+{{tr|Horizontal movement speed}}可以进一步分解为两个单独的速度属性：''移动速度''和''冲刺速度''。大多数{{tr|horizontal movement}}的影响来源只会影响''移动速度''，但其中某些——最明显的是{{tr|wings}}和[[{{tr|Sprinting accessories}}]]也会影响''冲刺速度''。两个属性中较高的那个决定了玩家的{{tr|maximum horizontal movement speed}}。拥有较高的''冲刺速度''会导致玩家在接近或达到{{tr|maximum horizontal movement speed}}时出现{{tr|dust}}效果并有音效。
+
+{{eicons|1.4.0.1|invert=y}}{{tr|Horizontal movement speed}}的上限是 1.6 倍{{tr|base speed}}，或 +60%。
+
+* 无论有没有加速{{tr|accessories}}，[[{{tr|Hooks}}]]都以恒定的速度拉动玩家。玩家的{{tr|movement speed}}加成越多，{{tr|hook}}所能提供的速度加成就越不明显。
+<!--
+Formulas for future reference
+Effect (% increase) = moveSpeed additive * 100, for instance, 5% if the moveSpeed additive is 0.05 from "this.moveSpeed += 0.05f;"
+Velocity (tiles/sec) = Effect * 11.36 / 100
+Velocity (miles/hour) = Effect * 15 / 100
+Velocity (pixels/tick) = Effect * 3 / 100
+-->
+=== {{tr|Move speed}} ===
+{| class="terraria align-center" id="Move-speed-table"
+! 对象
+! 效果<br/>（提升百分比）
+! 速度<br/>（英里/小时）
+! 速度<br/>（格/秒）
+! 速度<br/>（{{tr|pixels}}/{{tr|tick}}{{tick}}）
+|-
+! colspan="5" | 基础
+|-
+| ''无''
+| +0%
+| 15
+| 11.36
+| 3
+|-
+! colspan="5" | {{tr|Armor}}
+|-
+| {{item|Orichalcum Mask}}
+| +7%
+| +1.05
+| +0.798
+| +0.21
+|-
+| {{item|Orichalcum Helmet}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Cobalt Helmet}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Beetle Scale Mail}}
+| +6%
+| +0.9
+| +0.684
+| +0.18
+|-
+| {{item|Gi}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Adamantite Leggings}}
+| +5%
+| +0.75
+| +0.57
+| +0.15
+|-
+| {{item|Chlorophyte Greaves}}
+| +5%
+| +0.75
+| +0.57
+| +0.15
+|-
+| {{item|Titanium Leggings}}
+| +6%
+| +0.9
+| +0.684
+| +0.18
+|-
+| {{item|Beetle Leggings}}
+| +6%
+| +0.9
+| +0.684
+| +0.18
+|-
+| {{item|Hallowed Greaves}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Frost Leggings}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Spectre Pants}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Cobalt Leggings}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Nebula Leggings}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Vortex Leggings}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Orichalcum Leggings}}
+| +11%
+| +1.65
+| +1.254
+| +0.33
+|-
+| {{item|Shroomite Leggings}}
+| +12%
+| +1.8
+| +1.368
+| +0.36
+|-
+| {{item|Solar Flare Leggings}}
+| +15%
+| +2.25
+| +1.71
+| +0.45
+|-
+| {{item|Squire's Greaves}}
+| +15%
+| +2.25
+| +1.71
+| +0.45
+|-
+| {{item|Huntress's Pants}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Monk's Pants}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Red Riding Leggings}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Crystal Assassin Pants}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Spooky Leggings}} {{eicons|1.4.0.1}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Valhalla Knight's Greaves}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Moon Lord Legs}}
+| +25%
+| +3.75
+| +2.85
+| +0.75
+|-
+| {{item|Shinobi Infiltrator's Pants}}
+| +30%
+| +4.5
+| +3.408
+| +0.9
+|-
+| {{item|Shadow armor}} / {{item|Ancient Shadow armor}}：全套{{eicons|1.4.4}}
+| colspan="4" | ×1.15
+|-
+| {{item|Shadow armor}} / {{item|Ancient Shadow armor}}：全套{{eicons|1.4.4|invert=y}}
+| +15%
+| +2.25
+| +1.71
+| +0.45
+|-
+| {{item|Adamantite armor|image=Adamantite armor Helmet.png}}：用{{tr|Helmet}}的全套
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Hallowed armor|image=Hallowed armor Mask.png}}: 用{{tr|Mask}}的全套{{tr|set}}{{eicons|1.4.0.1|invert=y}}
+| +27%
+| +4.8
+| +2.85
+| +0.96
+|-
+| {{item|Vortex armor}}：全套，隐身时
+| colspan="4" | ×0.3
+|-
+! colspan="5" | [[{{tr|Accessories}}]]
+|-
+| {{item|Aglet}}
+| +5%
+| +0.75
+| +0.57
+| +0.15
+|-
+| {{item|Soaring Insignia}}
+| +7.5%
+| +1.125
+| +0.855
+| +0.225
+|-
+| {{item|Lightning Boots}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Frostspark Boots}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Terraspark Boots}}
+| +8%
+| +1.2
+| +0.912
+| +0.24
+|-
+| {{item|Anklet of the Wind}}
+| +10%
+| +1.5
+| +0.798
+| +0.3
+|-
+| {{item|Magiluminescence}}
+| colspan="4" | ×1.15
+|-
+| {{item|Ice Skates|note2={{tr|or its upgrades}}}}（在[[{{tr|Ice Block}}]]上）
+| colspan="4" | ×1.25
+|-
+| {{item|Flying Carpet}}（使用中）
+| colspan="4" | ×1.5
+|-
+| {{item|Dunerider Boots}}（在[[{{tr|Sand}}]]上）
+| colspan="4" | ×1.75
+|-
+! colspan="5" | [[{{tr|Buffs}}]]
+|-
+| {{item|Werewolf (buff)}}
+| +5%
+| +0.75
+| +0.57
+| +0.15
+|-
+| {{item|Well Fed}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Sugar Rush}}
+| +20%
+| +3
+| +2.28
+| +0.6
+|-
+| {{item|Happy!}}
+| +21%
+| +3.15
+| +2.386
+| +0.63
+|-
+| colspan="5" | <small><sup>{{tr|Happy!}}还会对{{tr|buff}}列表中位于其左侧的所有{{tr|buff}}施加 1.1 倍的倍率。</sup></small>
+|-
+| {{item|Swiftness}}
+| +25%
+| +3.75
+| +2.85
+| +0.75
+|-
+| {{item|Plenty Satisfied}}
+| +30%
+| +4.5
+| +3.408
+| +0.9
+|-
+|{{item|Exquisitely Stuffed}}
+| +40%
+| +6
+| +4.56
+| +1.2
+|-
+| {{item|Panic!}}
+| +100%
+| +15
+| +11.4
+| +3
+|-
+! colspan="5" | [[{{tr|Blocks}}]]
+|-
+| {{item|Asphalt Block}}
+| colspan="4" | ×3.5
+|-
+! colspan="5" | [[{{tr|Debuffs}}]]
+|-
+| {{item|Weak}}
+| -10%
+| -1.5
+| -1.14
+| -0.3
+|-
+| {{item|Chilled}}
+| colspan="4" | ×0.75
+|-
+| {{item|Burning}}
+| colspan="4" | ×0.5
+|-
+| {{item|Slow}}
+| colspan="4" | ×0.5
+|-
+| {{item|Oozed}}
+| colspan="4" | ×0.33
+|-
+| {{item|Dazed|note2=（{{tr|Unobtainable}}）}}
+| colspan="4" | ×0.33
+|-
+! colspan="5" | [[{{tr|Modifiers}}]]
+|-
+| {{tr|Brisk}}
+| +1%
+| +0.15
+| +0.114
+| +0.03
+|-
+| {{tr|Fleeting}}
+| +2%
+| +0.3
+| +0.228
+| +0.06
+|-
+| {{tr|Hasty}}
+| +3%
+| +0.45
+| +0.342
+| +0.09
+|-
+| {{tr|Quick}}
+| +4%
+| +0.6
+| +0.456
+| +0.12
+|-
+! colspan="5" | [[{{tr|Weapon}}]]
+|-
+| {{item|Psycho Knife}}
+| colspan="4" | ×0.5
+|-
+| {{item|Brand of the Inferno}} / {{item|Sergeant United Shield}} （按下 {{key|open}} 键）
+| colspan="4" | ×0.33
+|}
+<!--
+From an old version of the page, needs recalculating
+
+! colspan="4" | 最大可能值
+|-
+| style="text-align:right" | '''无{{tr|buff}}：'''
+| '''+67%'''
+| '''+7.611'''
+| '''+15.222'''
+|-
+| style ="text-align:right" | '''有两个{{tr|buffs}}（{{tr|Well Fed}}、{{tr|Swiftness}}）：'''
+| '''+89%'''
+| '''+12.723 '''
+| '''+25.446'''
+|-
+| style ="text-align:right" | '''有两个{{tr|buff}}且全部都是{{tr|quick}}前缀（用过[[{{tr|Demon Heart}}]]）：'''
+| '''+136%'''
+| '''+15.449'''
+| '''+30.899'''
+
+-->
+
+* {{tr|Modifiers}}只能应用到{{tr|accessories}}上。有 5 / {{expert|6}} / {{master|7}} 个可以拥有这些{{tr|modifiers}}的{{tr|accessories}}，意味着可以 +20% / {{expert|+24%}} / {{master|+28%}} 水平速度。每次只能应用这些{{tr|modifiers}}之一。（参见：[[{{tr|Reforging}}]]）
+* 所有倍率都是在加算效果''之后''计算的。例如，穿戴{{tr|Anklet of the Wind}}（+10%）和{{tr|Magiluminescence}}（×1.15）会提供总计 +26.5% 的加成，而非 +25%。
+
+=== {{tr|Sprint speed}} ===
+{| class="terraria align-center" id="Sprint-speed-table"
+! 对象
+! {{tr|Sprint speed}}<br/>（英里/小时）
+! {{tr|Sprint speed}}<br/>（格/秒）
+! {{tr|Sprint speed}}<br/>（{{tr|pixels}}/{{tr|tick}}{{tick}}）
+|-
+| 以下全没有
+| 15
+| {{mph|15|tiles}}
+| 3
+|-
+! colspan="4" | 低优先级
+|-
+| {{item|Hermes Boots}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Spectre Boots}}
+| 30
+| {{mph|30|tiles}}
+|6
+|-
+| {{item|Amphibian Boots}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Dunerider Boots}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Flurry Boots}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Sailfish Boots}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Hellfire Treads}}
+| 30
+| {{mph|30|tiles}}
+| 6
+|-
+| {{item|Lightning Boots}}
+| 33.75
+| {{mph|33.75|tiles}}
+| 6.75
+|-
+| {{item|Frostspark Boots}}
+| 33.75
+| {{mph|33.75|tiles}}
+| 6.75
+|-
+| {{item|Terraspark Boots}}
+| 33.75
+| {{mph|33.75|tiles}}
+| 6.75
+|-
+! colspan="4" | 低优先级加成（加成以上效果）
+|-
+| {{item|Vortex armor}}：全套，隐身时
+| colspan="3" | ×0.3
+|-
+! colspan="4" | 中优先级
+| [[{{tr|wings}}]]
+| colspan="3" | ？？？（依据不同{{tr|Wings}}变化，且仅在速度高于低优先级时，且竖直速度不为0时使用）
+|-
+! colspan="4" | 中优先级加成（加成以上效果）
+|-
+| {{item|Dunerider Boots}}（在{{tr|sand}}上）
+| colspan="3" | ×1.75
+|-
+| {{item|Magiluminescence}}
+| colspan="3" | ×1.15
+|-
+| {{item|Shadow armor}} / {{item|Ancient Shadow armor}}：全套{{eicons|1.4.4}}
+| colspan="3" | ×1.15
+|-
+! colspan="4" | 高优先级
+|-
+| {{item|Chilled}}
+| colspan="3" | 等于移动速度。
+|-
+| {{item|Psycho Knife}}
+| colspan="3" | 等于移动速度。
+|}
+* 由于{{tr|boots}}是设定{{tr|sprint speed}}而非提高它，叠加多个{{tr|boot}}{{tr|accessories}}不会进一步提高{{tr|sprint speed}}。实际上，玩家的{{tr|accessory slots}}中位于最下方的那个{{tr|boot}}会决定{{tr|sprint speed}}。例如，若玩家在{{tr|Lightning Boots}}（34 mph）下方装备了{{tr|Hermes Boots}}（30 mph），他将具有 30 mph 的{{tr|sprint speed}}而非 34 mph。这不适用于{{tr|wings}}，因为同时只能装备一个{{tr|wings}}。
+
+=== 加速度 ===
+{| class="terraria align-center" id="Sprint-speed-table"
+! 对象
+! 加速度<br/>（英里/小时）
+! 加速度<br/>（格/秒）
+! 加速度<br/>（{{tr|pixels}}/{{tr|tick}}{{tick}}）
+|-
+| 以下全没有
+| 0.4
+| {{mph|0.4|tiles}}
+| 0.08
+|-
+! colspan="4" | 加成
+|-
+| [[{{tr|Move speed}}]]
+| colspan="3" | ×{{tr|Move speed}}/3（{{tr|pixels}}/{{tr|tick}}{{tick}}）
+|-
+| {{item|Soaring Insignia}}
+| colspan="3" | ×1.75
+|-
+| {{item|Magiluminescence}}（垂直速度为0时）
+| colspan="3" | ×1.75
+|-
+| {{item|Shadow armor}} / {{item|Ancient Shadow armor}}：全套{{eicons|1.4.4}}
+| colspan="3" | ×1.75
+|-
+| {{item|Dunerider Boots}}（在{{tr|sand}}上）
+| colspan="3" | ×1.75
+|-
+| {{item|Ice Skates|note2={{tr|or its upgrades}}}}（在{{tr|Ice Block}}上）
+| colspan="3" | ×3.5
+|}
+* 加速度仅适用于{{tr|horizontal movement}}，此外，当{{tr|Move speed}}＜{{tr|horizontal movement speed}}＜{{tr|Sprint speed}}时，加速度需×0.2适用。
+
+=== 减速度 ===
+{| class="terraria align-center" id="Sprint-speed-table"
+! 对象
+! 减速度<br/>（英里/小时）
+! 减速度<br/>（格/秒）
+! 减速度<br/>（{{tr|pixels}}/{{tr|tick}}{{tick}}）
+|-
+| 以下全没有
+| 1
+| {{mph|1|tiles}}
+| 0.2
+|-
+! colspan="4" | 加成
+|-
+| {{item|Soaring Insignia}}
+| colspan="3" | ×1.75
+|-
+| {{item|Magiluminescence}}（垂直速度为0时）
+| colspan="3" | ×1.75
+|-
+| {{item|Shadow armor}} / {{item|Ancient Shadow armor}}：全套{{eicons|1.4.4}}
+| colspan="3" | ×1.75
+|-
+| {{item|Dunerider Boots}}（在{{tr|sand}}上）
+| colspan="3" | ×1.75
+|}
+* 减速度仅适用于{{tr|horizontal movement}}。
+
+== 垂直移动 ==
+=== 向上移动 ===
+在处理垂直向上移动时，有两个量会发挥作用：''{{tr|jump duration}}''<!-- jumpHeight -->和 ''{{tr|jump speed}}''<!-- jumpSpeed -->。它们共同决定了''{{tr|jump reach}}''，即{{tr|character}}通过一次跳跃可上升的最大格数。所有{{tr|character}}的{{tr|base jump duration}}为 15，{{tr|base jump speed}}为 5.01{{source code ref|name=Update|v=1.4.4.9|method=Terraria.Player.Update}}，使其基础{{tr|jump reach}}为 {{jump reach}} 格。
+
+[[{{tr|Terraria}}|《{{tr|Terraria}}》]]中的跳跃分为两个阶段：首先，{{tr|character}}会匀速上升，然后上升速率逐渐降低直至停止，这时候就达到了跳跃的最高点。
+* 第一个阶段持续 {{code|{{tr|jump duration}} + 1}} {{tr|ticks}}{{tick}}，即对于初始{{tr|characters}}是 16 {{tr|ticks}}（0.267 {{tr|seconds}}），但松开 {{key|jump}} 键会使其提前终止——因此，为了获得最大可能的{{tr|jump reach}}，{{key|jump}} 键必须在第一阶段全程保持按下。此阶段的速度等于{{tr|jump speed}}（以{{tr|pixel}}/{{tr|tick}}为单位）减去[[{{tr|gravity}}]]（[[{{tr|Space}}]]{{tr|layer}}以下的默认值为 0.4），即对于初始{{tr|character}}是 17.2875 格/秒；在跳跃一开始时就会立刻得到此速度，直到第一阶段结束时才会改变。
+* 第二阶段开始于{{tr|jump duration}}耗尽之后：正常情况下{{tr|character}}此时只受重力影响，这会使其速度线性降低。此阶段会在玩家速度降低至零时结束，此时就达到了跳跃的最高点。
+
+可以看出，虽然{{tr|jump duration}}会影响{{tr|character}}克服重力向上移动的时间，但{{tr|jump speed}}决定了{{tr|character}}在上升过程中的速度。
+
+基于此，只要给定了{{tr|jump duration}}、{{tr|jump speed}}、和{{tr|gravity}}，就能计算{{tr|jump reach}}：
+
+<math>\text{跳跃高度} = (\text{跳跃持续时间}+1) \times (\text{跳跃速度}-\text{重力})   +   \dfrac{\text{重力}}{2} \times (\dfrac{\text{跳跃速度}}{\text{重力}}-1)^2 </math>
+<!-- raw formula:  (jump duration+1) * (jump speed-gravity)   +   (gravity/2) * (jump speed/gravity - 1)² -->
+
+此处的两个加数分别代表了上述的跳跃的两个阶段。
+
+所有{{tr|characters}}的{{tr|base jump reach}}可以通过将默认值代入公式来确定。
+
+<math>\text{基础跳跃高度} = (15+1) \times (5.01-0.4)   +   \dfrac{0.4}{2} \times (\dfrac{5.01}{0.4}-1)^2   \approx   100.33</math>
+<!-- raw formula:   (15+1) * (5.01-0.4)   +   (0.4/2) * (5.01/0.4 - 1)²  ≈  100.33 -->
+
+结果值以像素为单位，除以 16 即可得到格数：
+
+<math>\text{基础跳跃高度}_{\text{格}} = \dfrac{100.33}{16} \approx 6.27 </math>
+<!-- raw formula:   100.33 / 16 ≈ 6.27 -->
+
+==== 强化 ====
+下表列出了所有对{{tr|jump duration}}和/或{{tr|jump speed}}有影响的项目。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateJumpHeight/Terraria.Player.ApplyEquipFunctional}}同一行内的项目不会互相叠加。
+{{options/set|item|wrap=y|showid=n}}
+{| class="terraria lined"
+! 项目 !! {{tr|Jump duration}} !! {{tr|Jump speed}} !! 最终{{tr|jump reach}}{{footnote|假定处于默认{{tr|gravity}}，且除了每一行的项目外并无其他{{tr|boosts}}生效（使用上面的公式处理多重{{tr|boosts}}）。增加的比例是相对于{{tr|base jump reach}}（{{jump reach}} 格而言的）。}}
+|-
+| {{item|Balloons|image={{equipinfo/list|jumpBoost|format=itemname|lang=en|sep=.png/}}.png}}
+| 20 || 6.51
+| {{jump reach|20|6.51}} 格（+{{percent|({{jump reach|20|6.51}}/{{jump reach}}-1)}}）
+|-
+| {{equipinfo/list|empressBrooch|format=dotlist}}
+| {{na}} || +1.8
+| {{jump reach|2=5.01+1.8}} 格（+{{percent|({{jump reach|2=5.01+1.8}}/{{jump reach}}-1)}}）
+|-
+{{#lstmap:{{equipinfo/list|jumpSpeedBoost|sep=&}}|&|@@@@|<esc>
+|-
+| {{item|id=@@@@}}
+| {{na}} || +{{#vardefineecho:boost|{{equipinfo|id=@@@@|stat=jumpSpeedBoost}}}}
+| {{jump reach|2=5.01+{{#var:boost}}}} 格（+{{percent|({{jump reach|2=5.01+{{#var:boost}}}}/{{jump reach}}-1)}}）</esc>|}}
+|-
+| {{equipinfo/list|moonLordLegs|format=dotlist}}
+| +1 || +1.8
+| {{jump reach|15+1|5.01+1.8}} 格（+{{percent|({{jump reach|15+1|5.01+1.8}}/{{jump reach}}-1)}}）
+|-
+| {{item|Werewolf (buff)}}（{{dotlist/options|css=display:inline}}{{equipinfo/list|wolfAcc|format=dotlist}}{{dotlist/options|reset}}）
+| +2 || +0.2
+| {{jump reach|15+2|5.01+0.2}} 格（+{{percent|({{jump reach|15+2|5.01+0.2}}/{{jump reach}}-1)}}）
+|-
+| {{item|Step Stool|note=（使用时）}}
+| +5 || {{na}}
+| {{jump reach|15+5}} 格（+{{percent|({{jump reach|15+5}}/{{jump reach}}-1)}}）
+|-
+| 在{{item|Honey Block|s}}上{{note|block=y|small=y|paren=y|在所有其他效果之后应用}}
+| ×0.1 || ×0.4
+| {{jump reach|15/10|5.01/5}} 格（{{percent|({{jump reach|15/10|5.01/5}}/{{jump reach}}-1)}}）
+|-
+| {{item|Dazed|note2=（{{tr|Unobtainable}}）}}{{note|block=y|small=y|paren=y|在所有其他效果之后应用}}
+| ×0.2 || ×0.5
+| {{jump reach|15/5|5.01/2}} 格（{{percent|({{jump reach|15/5|5.01/2}}/{{jump reach}}-1)}}）
+|}{{options/reset|item}}<!--
+-->{{#vardefine:jump_durations|
+20 <!-- Shiny Red Balloon -->
++0 <!-- Soaring Insignia -->
++0 <!-- Frog Leg -->
++0 <!-- Amphibian Boots -->
++0 <!-- Frog Flipper -->
++0 <!-- Frog Gear -->
++0 <!-- Frog Webbing -->
++1 <!-- Moon Lord Legs -->
+}}<!--
+-->{{#vardefine:jump_speeds|
+6.51 <!-- Shiny Red Balloon -->
++1.8 <!-- Soaring Insignia -->
++1.6 <!-- Frog Leg -->
++1.6 <!-- Amphibian Boots -->
++1.6 <!-- Frog Flipper -->
++1.6 <!-- Frog Gear -->
++1.6 <!-- Frog Webbing -->
++1.8 <!-- Moon Lord Legs -->
+}}
+可能的最大{{tr|jump reach}}是 {{jump reach|{{#var:jump_durations}}|{{#var:jump_speeds}}}} 格（总计 +{{percent|(({{jump reach|{{#var:jump_durations}}|{{#var:jump_speeds}}}})/{{jump reach}}-1)}}），可通过装备{{tr|Shiny Red Balloon, Soaring Insignia, Frog Leg, Amphibian Boots, Frog Flipper, Frog Webbing, Frog Gear, and the Moon Lord Legs}}来达成。
+
+==== 多重跳 ====
+{{main|{{tr|Extra jump}}}}
+
+通常来说，{{tr|character}}只能进行一次跳跃，必须先再次站在物体表面才能再次按下 {{key|jump}} 键使得{{tr|character}}上升。然而，某些{{tr|items}}给予了在空中再次跳跃的能力，此跳跃在功能上与上述普通跳跃相同。这些{{tr|items}}各自为其跳跃设定了单独的{{tr|jump duration}}。
+
+=== 向下移动 ===
+{{main|{{tr|Gravity}}}}
+
+{{tr|Characters}}向下坠落时以 30 格/{{tr|second}}² 恒定加速，但下落速度的上限是 37.5 格/{{tr|second}}（或 {{mph|37.5 tiles}}）。然而，这两个值可能会被某些{{tr|items}}、[[{{tr|buffs}}]]、和环境因素修改。
+
+== {{tr|Liquid}}移动 ==
+[[{{tr|Liquids}}]]（[[{{tr|water}}]]、[[{{tr|lava}}]]、[[{{tr|honey}}]]、和{{eil|Shimmer}}）相较于空气对各个方向上的运动都有减慢效果。
+* 注意需要{{eil|Chromatic Cloak}}才能在{{tr|shimmer}}中正常移动。
+* {{eicons|1.4.0.1}}手持[[{{tr|Trident}}]]会提高在{{tr|water and lava}}中的机动性。
+* 部分{{tr|items}}在激活时会让玩家获得“无视{{tr|liquids}}”的能力。这一能力会让玩家在{{tr|water, lava, and honey}}中的''水平''移动如同在空气中移动一般。垂直移动仍然会正常受这些{{tr|liquids}}影响。{{source code ref|v=1.4.4.9|field=Terraria.Player.ignoreWater}}这些{{tr|item}}是：[[{{tr|Black Spot}}]]、[[{{tr|Fishron Wings}}]]、[[{{tr|Flipper Potion}}]]、[[{{tr|Hardy Saddle}}]]、[[{{tr|Minecarp}}]]、[[{{tr|Shrimpy Truffle}}]]、和[[{{tr|Superheated Blood}}]]。<!--
+ Player base speed = 3.
+-->{{#vardefine:pptToMph|{{#expr:216000/42240}}}}<!--Pixel/tick to Miles/hour
+-->{{#vardefine:pptToTps|{{#expr:60/16}}}}<!--Pixel/tick to Tiles/second-->
+{| class="terraria lined" id="Medium-movement-table"
+! rowspan=2 | {{tr|Liquid}}
+! rowspan=2 | 倍率
+! colspan=2 | 水平速度
+! colspan=4 | 垂直移动<br/>（未计算倍率影响）
+|-
+! {{mph}}
+! 图格/秒
+! {{tr|Gravity}}{{source code ref|v=1.4.4.9|field=Terraria.Player.gravity}}
+! 最大掉落速度{{source code ref|v=1.4.4.9|field=Terraria.Player.maxFallSpeed}}{{footnote|将此列中的速度值乘以第二列中对应的倍率来计算实际的掉落速度。}}
+! {{tr|Jump duration}}{{source code ref|v=1.4.4.9|field=Terraria.Player.jumpHeight}}
+! {{tr|Jump speed}}{{source code ref|v=1.4.4.9|field=Terraria.Player.jumpSpeed}}
+|-
+| ''无{{tr|liquid}}''<ref name="Update"/>
+| ×1
+| {{#vardefineecho:baseMph|{{#expr:3*{{#var:pptToMph}} round 2}}}}
+| {{#vardefineecho:baseTps|{{#expr:3*{{#var:pptToTps}}}}}}
+| 0.4
+| {{#expr:10*{{#var:pptToMph}} round 2}} {{tr|mph}}<!--Do not use {{mph}} as this is not the speed displayed by Stopwatch. Same for values below
+maxFallSpeed (10) × conversion factor (pptToMph)-->
+| 15
+| 5.01
+|-
+| [[{{tr|Water}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.WaterCollision / Terraria.Player.Update}}
+| ×0.5<br/>×1（[[{{tr|Merfolk}}]]、手持[[{{tr|Trident}}]]、或拥有无视{{tr|liquid}}能力）
+| {{#expr:{{#var:baseMph}}*0.5}}
+| {{#expr:{{#var:baseTps}}*0.5}}
+| 0.2<br/>0.3（{{tr|Merfolk}}）<br/>0.25（手持{{tr|Trident}}）<br/>0.1（手持{{tr|Trident}}并按住 {{key|up}}）
+| {{#expr:5*{{#var:pptToMph}} round 2}} {{tr|mph}}<br/>{{#expr:7*{{#var:pptToMph}} round 2}} {{tr|mph}}（{{tr|Merfolk}}）<br/>{{#expr:6*{{#var:pptToMph}} round 2}} {{tr|mph}}（手持{{tr|Trident}}）<br/>{{#expr:2*{{#var:pptToMph}} round 2}} {{tr|mph}}（手持{{tr|Trident}}并按住 {{key|up}}）
+| 30<br/>25（手持{{tr|Trident}}）
+| 6.01<br/>5.51（手持{{tr|Trident}}）
+|-
+| [[{{tr|Lava}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.WaterCollision / Terraria.Player.Update}}
+| ×0.5<br/>×1（{{tr|Merfolk}}、手持{{tr|Trident}}、或拥有无视{{tr|liquid}}能力）<!-- Merfolk cannot be triggered by lava, but can be triggered by having [[breath meter]]. e.g. equip [[Fish Bowl]] -->
+| {{#expr:{{#var:baseMph}}*0.5}}
+| {{#expr:{{#var:baseTps}}*0.5}}
+| 0.2<br/>0.3（{{tr|Merfolk}}）
+| {{#expr:5*{{#var:pptToMph}} round 2}} {{tr|mph}}<br/>{{#expr:7*{{#var:pptToMph}} round 2}} {{tr|mph}}（{{tr|Merfolk}}）
+| 30
+| 6.01
+|-
+| {{eil|Shimmer}}{{source code ref|v=1.4.4.9|method=Terraria.Player.ShimmerCollision / Terraria.Player.Update}}
+| ×0.375
+| {{#expr:{{#var:baseMph}}*0.375}}
+| {{#expr:{{#var:baseTps}}*0.375}}
+| 0.15
+| {{#expr:10*{{#var:pptToMph}} round 2}} {{tr|mph}}
+| 23
+| 5.51
+|-
+| [[{{tr|Honey}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.HoneyCollision / Terraria.Player.Update}}
+| ×0.25<br/>×1（拥有无视{{tr|liquid}}能力）
+| {{#expr:{{#var:baseMph}}*0.25}}
+| {{#expr:{{#var:baseTps}}*0.25}}
+| 0.1
+| {{#expr:3*{{#var:pptToMph}} round 2}} {{tr|mph}}
+| 15
+| 5.01
+|}
+
+当{{tr|Merfolk}}未激活且玩家没有无视{{tr|liquid}}能力时，[[{{tr|minecarts}}]]在{{tr|liquids}}中还有额外的{{tr|speed}}倍率：在{{tr|water and lava}}中为 0.5×，在{{tr|honey and shimmer}}中为 0.25×。此倍率和上表中的倍率乘算叠加。<ref name="Update"/>
+* 注意{{tr|Minecarp}}会为玩家提供无视{{tr|liquid}}能力，因此这些倍率不适用于它。
+
+此外，[[{{tr|Stopwatch}}]]处理{{tr|liquids}}中的{{tr|speed}}的方式和玩家移动不同。在不同情况下，测量的{{tr|speed}}会被施加某些倍率。{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawInfoAccs}}这也意味着在{{tr|liquids}}中移动时{{tr|Stopwatch}}可能会给出错误的读数。
+
+{| class="terraria lined"
+! 条件
+! [[{{tr|Water}}]]、[[{{tr|lava}}]]、和[[{{tr|shimmer}}]]
+! [[{{tr|Honey}}]]
+|-
+! style="text-align:left" | [[{{tr|Merfolk}}]]未激活<br/>且没有无视{{tr|liquid}}能力
+| 1×
+| 1×
+|-
+! style="text-align:left" | {{tr|Merfolk}}激活<br/>或玩家拥有无视{{tr|liquid}}能力
+| 0.5×
+| 0.25×
+|}
+
+== 粘性移动 ==
+有两种“粘性”{{tr|tile}}：[[{{tr|Cobweb}}]]和[[{{tr|Honey Block}}]]。接触它们会显著降低玩家的{{tr|movement}}。
+
+当接触这些{{tr|tiles}}时：{{source code ref|v=1.4.4.9|method=Terraria.Player.StickyMovement}}
+* 若{{tr|horizontal speed}}超过 {{#expr:0.75*{{#var:pptToMph}} round 2}} {{tr|mph}}，则应用 ×0.85 的{{tr|horizontal speed}}倍率；否则，将应用 ×0.6 的{{tr|horizontal speed}}倍率。
+* 应用倍率前的最大{{tr|horizontal speed}}为 {{#expr:1*{{#var:pptToMph}} round 2}} {{tr|mph}}。
+* 若{{tr|vertical speed}}向上，则应用 ×0.96 的垂直速度倍率；否则，将应用 ×0.3 的垂直速度倍率。
+* 应用倍率前的最大{{tr|vertical speed}}为：向上 {{#expr:5*{{#var:pptToMph}} round 2}} {{tr|mph}}，向下 {{#expr:1*{{#var:pptToMph}} round 2}} {{tr|mph}}。
+
+== 最大化速度 ==
+{{itemlist/options|class=terraria}}{{options/set|item|icons=n}}
+=== 水平速度 ===
+在{{eversions|1.4.3}}中，由[[{{tr|Stopwatch}}]]测得的最大可能{{tr|horizontal speed}}为 {{mph|279}}，通过使用下列{{tr|items}}/{{tr|buffs}}，并遵循下方流程达成：
+
+# 装备所有下列{{tr|items}}，并施加除了[[{{tr|Panic!}}]]和[[{{tr|Happy!}}]]以外的所有{{tr|buffs}}。
+# 触发{{tr|Panic!}}{{tr|buff}}，然后进入跑道区域并获得{{tr|Happy! buff}}。确保在所有影响{{tr|movement speed}}的{{tr|buff}}中，{{tr|Happy! buff}}在最右侧的{{tr|buff slot}}。
+<!-- 
+The actual max speed achieved by these items is 271.385 mph, however your acceleration is so high that in a single tick your speed exceeds this maximum, it's unclear which max speed should be given in the page
+
+虽然[[{{tr|Trident}}]]的工具提示中写的是“增加移动能力”，在水中使用以上配置并将{{tr|Moon Charm}}换为{{tr|Moon Shell}}时，它不会影响最大速度。 
+
+此外，[[{{tr|Mighty Wind}}]]{{tr|debuff}}仅影响加速度，不影响最大速度。
+
+进一步地，[[{{tr|Frozen Slime Block}}]]会随机地增加或降低速度。测试中观察到的最高速度为 {{mph|298}}。 
+-->
+
+; {{tr|Items and buffs}}：
+
+{{itemlist|width=24em
+|{{item|Cobalt Helmet}}
+|{{item|Gi}}
+|{{item|Shinobi Infiltrator's Pants}}
+|{{item|Anklet of the Wind|note2=（[[{{tr|Quick}}]]）}}
+|{{item|Moon Charm|note2=（{{tr|Quick}}，在[[{{tr|night}}]]）}}
+|{{item|Frostspark Boots|note2=（{{tr|Quick}}）}}
+|{{item|Lightning Boots|note2=（{{tr|Quick}}）}}
+|{{item|Magiluminescence|note2=（{{tr|Quick}}）}}
+|{{item|Soaring Insignia|note2=（{{tr|Quick}}）}}
+|{{item|Terraspark Boots|note2=（{{tr|Quick}}）}}
+|{{item|Panic Necklace|note2=（获得[[{{tr|Panic!}}]]{{tr|buff}}后换下）}}
+|{{item|Asphalt Block|s|note2=（跑道）}}
+|{{item|Exquisitely Stuffed|note2=（来自某些[[{{tr|food}}]]{{tr|items}}）}}
+|{{item|Happy!|note2=（来自[[{{tr|Sunflower}}]]）}}
+|{{item|Sugar Rush|note2=（来自[[{{tr|Slice of Cake}}]]）}}
+|{{item|Swiftness|note2=（来自[[{{tr|Swiftness Potion}}]]）}}
+}}
+
+=== 垂直速度 ===
+在{{eversions|1.4.4}}中，最大可能稳定上升速度（即上升时速度保持恒定）为 {{mph|382}}，由以下{{tr|items}}达成。注意{{tr|Celestial Starboard}}的加速效果在完成提速后要解除，否则速度将被限制在 {{mph|255}}。
+<!-- 旧版本的最大上升速度：
+* 1.4.2 至 1.4.3.6 之间：306 mph；不停用{{tr|Celestial Starboard}}的加速会将速度限制在 205 mph
+（这些版本中，{{tr|Frog Leg}}无法与任何其升级叠加）
+{{itemlist|class=terraria|width=15em
+|{{item|Moon Lord Legs}}
+|{{item|Celestial Starboard}}
+|{{item|Frog Leg}}
+|{{item|Moon Charm|note2=（在{{tr|night}}）}}
+|{{item|Shiny Red Balloon}}
+|{{item|Soaring Insignia}}
+}}
+* 1.4.0.1 至 1.4.1.2 之间：320 mph；不停用{{tr|Celestial Starboard}}的加速会将速度限制在 214  mph
+（这些版本中，仅有{{tr|Amphibian Boots}}可与{{tr|Frog Leg}}及其升级叠加）
+{{itemlist|class=terraria|width=15em
+|{{item|Moon Lord Legs}}
+|{{item|Amphibian Boots}}
+|{{item|Celestial Starboard}}
+|{{item|Frog Leg}}
+|{{item|Moon Charm|note2=（在{{tr|night}}）}}
+|{{item|Shiny Red Balloon}}
+|{{item|Soaring Insignia}}
+}}-->
+{{itemlist|class=terraria|width=15em
+|{{item|Moon Lord Legs}}
+|{{item|Amphibian Boots}}
+|{{item|Celestial Starboard}}
+|{{item|Frog Flipper}}
+|{{item|Frog Gear}}
+|{{item|Frog Leg}}
+|{{item|Frog Webbing}}
+|{{item|Soaring Insignia}}
+}}
+对于最高瞬时速度，使用同上的配置，在达到最高速度后骑乘{{item|Gelatinous Pillion}}。这会短暂地将速度提升到超过 {{mph|720}}。不过，通过使用{{item|Inner Tube}}，玩家理论上可以达成无限大的速度。
+
+最大下落速度为 {{mph|179}}，通过手持{{item|Portal Gun}}达成。{{itemlist/options|reset}}{{options/reset|item}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Movement speed}}

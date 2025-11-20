@@ -1,0 +1,37 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Potion
+| auto = 2997
+| tags = Drop /Bag loot
+}}
+
+'''{{tr|Wormhole Potion}}'''是种让玩家在[[{{tr|Multiplayer}}]]中能直接传送至其他队友所在位置的[[{{tr|potion}}]]，只需要在全屏[[{{tr|minimap}}|{{tr|map}}]]（按{{key|map}}键可进入）上选择其他玩家的玩家图标即可。只能传送到同一[[{{tr|Multiplayer}}#团队|团队]]的玩家处，并且传送会以[[{{tr|status message}}]]来宣告。如果玩家禁用了{{tr|minimap}}则无法使用{{tr|Wormhole Potions}}。
+
+{{tr|Wormhole Potions}}会掉落自[[{{tr|Pot}}]]和[[{{tr|slimes}}]]，但仅限于在{{tr|multiplayer}}中。注意{{tr|potion}}的掉落并不要求其他玩家在线，所以只需要选择{{tr|multiplayer}}并作为主机开始游戏即可收集此{{tr|potions}}。{{tr|Wormhole Potions}}也可以在{{tr|singleplayer}}世界中制作。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Wormhole Potion|expectedrows=1}}
+
+== 小贴士 ==
+* 它对于{{tr|multiplayer}} [[{{tr|boss}}]] 战非常有用，尤其是对于那些限制在特定位置的，比如与[[{{tr|Wall of Flesh}}]]的战斗。死亡的{{tr|players}}在重生后可以通过传送至 {{tr|boss}} 附近的另一个玩家处来快速重新加入战斗。
+* 它是唯一能在[[{{tr|Shimmering}}]]下使用的物品，或许是因为其使用机制不需要通过左键或右键。
+
+== 花絮 ==
+* {{tr|The Wormhole Potion}}曾经被添加到{{mobile}}中，很可能是为了测试，但随后很快又移除了。从[[{{tr|Mobile 1.3.0.7}}]] 起，它在{{tr|Mobile}}上永久合法地可用了。
+* [[1.3.0.3]] 之前，{{tr|the Wormhole Potion}}在内部名叫 {{code|UnityPotion}}。<!-- Source: ItemID.cs v1.3.0.2 -->
+* 从 [[1.4.4]] 开始，{{tr|the Wormhole Potion}}在[[{{tr|Void Bag}}]]内时也可使用。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在需要 3 份{{tr|Bottled Waters}}而非 1 份，制作出 3 份{{tr|Potions}}而非 1 份。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Wormhole Potion}}

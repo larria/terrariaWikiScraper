@@ -1,0 +1,51 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1313
+| idprojectile = 837,270
+| tags = drop / bag loot
+| listcat = magic weapons / spell books
+}}
+{{drop infobox|style=clear:right}}
+[[File:Book of Skulls (demo).gif|frame|right|{{tr|The Book of Skulls}}正在攻击[[{{tr|Target Dummies}}]]和[[{{tr|Skeleton}}]]。注意{{tr|projectile}}转向{{tr|enemy}}，并在撞击{{tr|blocks}}时消失。]]
+
+'''{{tr|Book of Skulls}}'''是一个[[{{tr|pre-Hardmode}}]]，[[{{tr|Skeletron}}]]后的[[{{tr|spell book}}]]，其有 {{chance|36/343}} / {{expert|{{chance|1/3}}}} 的概率掉落自[[{{tr|Skeletron}}]]。使用时，其发射低速移动的{{tr|skull projectiles}}，它会追踪[[{{tr|enemies}}]]，可以穿透两次且在击中第三次时消散，不能穿透[[{{tr|blocks}}]]，发出相当程度的光。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The skulls}}可以追踪其 18.75 {{tr|tile}}范围内的{{tr|enemy}}，且持续追踪其目标直至相距超过 62.5 {{tr|tile}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001|t=距离是{{wikipedia|taxicab distance}}，即通过将骷髅头与{{tr|enemy}}之间的水平和垂直距离之和相加来测量的。}}
+** 锁定一个目标后，在当前目标死亡或消失之前，{{tr|the skulls}}无法锁定其他{{tr|enemy}}。
+* {{tr|The skulls}}最大速度为 {{mph|3.5 pixels}}。
+* {{tr|The skulls}}击中时造成 10 {{tr|tick}}{{tick}}[[{{tr|global invincibility frame}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Skulls}}现在会追踪{{tr|enemies}}。以前，发射后它们会短暂地部分转向最近的{{tr|player}}（包括施法者），无论敌人是否存在，以及是否启用了[[PvP]]。如果最近的{{tr|player}}在它们正后方，它们则不会转身，而如果施法者按下任何移动键，它们也会转身。
+** {{tr|Sell price}}从 {{gc|1}} 升高到 {{coin|1gc 50sc}}。
+** 内部射弹 ID 从 270 变更至 837。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|damage}}从 28 升高到 29。
+** 法力消耗从 22 降低到 18。
+** {{tr|Velocity}}从 4 降低到 3.5。}}
+{{history|Desktop 1.2.3|
+**{{tr|damage}}从 35 降到 28。
+** 法力消耗从 12 升高到 22。
+** {{tr|Knockback}}从 6 降低到 3.5。
+** {{tr|Use time}}从 25 升高到 26。
+** 穿刺次数从 3 次变为 2 次（也就是说在第三次被击中时消失）。}}
+{{history|Desktop 1.2.0.3|可以被重铸了}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Book of Skulls}}

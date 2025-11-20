@@ -1,0 +1,127 @@
+{{christmas only}}[[File:BiomeBannerFrostLegion.png|center]]
+{{dablink|不要与有类似主题的[[{{tr|event}}]][[{{tr|Frost Moon}}]]相混淆。}}
+{{quotation|[[File:Emote Town Princess.gif|link=]] [[{{tr|Princess}}]]|{{gameText|PrincessChatter.Chatter_7}}}}
+{{flavor text|{{gameText|LegacyMisc.7}}|image = Bestiary Frost Legion.png}}
+[[File:Frost Legion Battle.png|thumb|{{tr|The Frost Legion}}在[[{{tr|Snow biome}}]]中攻击玩家。]]
+{{float file box|[[File:Extra 7.png]]|进度条图标}}
+
+'''{{tr|Frost Legion}}'''是一个[[{{tr|Hardmode}}]][[{{tr|invasion}}]][[{{tr|event}}]]，会使得独特的{{tr|snowman}}[[{{tr|enemies}}]]代替常规{{tr|enemies}}生成。{{tr|Frost Legion}}不会自然发生，而是用[[{{tr|Snow Globe}}]]手工召唤。
+
+在{{tr|event}}开始后，{{tr|Frost Legion}}会从{{tr|world}}的随机一侧始发（由下列两个[[{{tr|status messages}}]]之一提示：''“{{gameText|LegacyMisc.5}}”''/''“{{gameText|LegacyMisc.6}}”''）并向[[{{tr|world spawn point}}]]移动。{{tr|status message}}''“{{gameText|LegacyMisc.7}}”''会在{{tr|Frost Legion}}到达了{{tr|world spawn point}}时显示。{{tr|Event enemies}}仅能在{{tr|Frost Legion}}的位置附近或在{{tr|town}} [[{{tr|NPCs}}]] 附近生成。''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节。''
+
+{{tr|Frost Legion}}在击杀足够多来自它的{{tr|enemies}}后即完成。在{{eversions|1.3.0.1}}中，会显示进度条来展示{{tr|event}}进度。
+
+击败{{tr|Frost Legion}}至少一次会满足[[{{tr|Santa Claus}}]] [[{{tr|NPCs}}|{{tr|NPC}}]] 入住的条件。
+
+== 召唤 ==
+如果{{tr|world}}中至少有一名[[{{tr|player}}]]拥有至少 200 最大[[{{tr|health}}]]，就可以用[[{{tr|Snow Globe}}]]来手工召唤{{tr|Frost Legion}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseEventItems}}如果没有玩家满足此条件或已经有{{tr|invasion event}}激活，{{tr|Snow Globe}}将没有效果且不会被消耗。
+* 尽管{{tr|the Snow Globe}}只能在[[{{tr|Hardmode}}]]的[[{{tr|Christmas}}]]期间获得，但它可以在任何时间、任何{{tr|world}}使用，包括[[{{tr|pre-Hardmode}}]]的{{tr|world}}。
+
+== 完成 ==
+{{tr|Frost Legion event}}在击杀足够多来自此{{tr|event}}的{{tr|enemies}}后即完成。{{tr|The status message}}''“{{gameText|LegacyMisc.4}}”''会在{{tr|event}}完成时显示。
+
+所需击杀数和{{tr|event}}开始时{{tr|world}}中具有至少 200 {{tr|maximum health}}的玩家数量成正比，可以通过下方公式计算：
+: <math>\text{击杀数}=80+40\times\text{玩家数量}</math>
+
+例如：
+* 在{{tr|singleplayer}}中，所需击杀数为 <math>80+40\times1=120</math>。
+* 在[[{{tr|multiplayer}}]]中有 8 个满足条件的玩家时，所需击杀数为 <math>80+40\times8=400</math>。
+* 一次{{tr|invasion}}的最高击杀数为 {{formatnum:{{#expr:80+40*255}}}}（255 个玩家）。
+
+所有来自{{tr|Frost Legion}}的{{tr|enemies}}均算作 1 次击杀。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+	-->{{infocard/box|title={{tr|Enemies}}：|<!--
+		-->{{dotlist<!--
+			-->|{{item|Mister Stabby}}<!--
+			-->|{{item|Snowman Gangsta}}<!--
+			-->|{{item|Snow Balla}}<!--
+		-->}}<!--
+	-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自所有{{tr|enemies}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Snow Block}}<!--
+			--->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Boss 3)| {{sound|track=Boss 3}} |icons=no}}<!--
+			-->|{{item|Otherworldly Music Box (Invasion)| {{sound|track=Invasion (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+    
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 一旦{{tr|the Frost Legion}}被打败，[[{{tr|Santa Claus}}]] [[{{tr|NPC}}]] 将变为可用。[[{{tr|Clothier}}]]开始出售[[{{tr|Balla Hat}}]]和[[{{tr|Gangsta Hat}}]]，[[{{tr|Traveling Merchant}}]]开始出售{{tr|paintings}}[[{{tr|Acorns|link=y}}|{{tr|Acorns}}]]、[[{{tr|Cold Snap}}]]、[[{{tr|Cursed Saint}}]]、[[{{tr|The Season}}]]、和[[{{tr|Snowfellas}}]]。
+* 平均来说，{{tr|event}}期间生成的{{tr|snowman}}中有 1/7 是{{tr|Snow Balla}}、2/7 是{{tr|Snowman Gangsta}}、4/7 是{{tr|Mister Stabby}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+* {{tr|The Frost Legion}}和其他[[{{tr|invasion}}]]{{tr|events}}一样拥有下列特性：
+** 提示{{tr|invasion}}开始的{{tr|status message}}（''“{{gameText|LegacyMisc.5}}”''/''“{{gameText|LegacyMisc.6}}”''）在[[{{tr|world size}}|{{tr|small or medium}}]]{{tr|worlds}}内显示一次，在[[{{tr|world size}}|{{tr|large}}]]{{tr|worlds}}内显示两次。
+** [[{{tr|Death}}]]或退出{{tr|world}}不会结束{{tr|invasion}}，也不会影响{{tr|invasion}}的进度。
+** 当前{{tr|invasion}}的类型、进度、和所需击杀数会在退出{{tr|world}}时保存。
+*** 因此，当{{tr|invasion}}发生时没有阻止它的方法。
+** {{tr|Frost Legion}}激活时，{{tr|Town}} [[{{tr|NPCs}}]] 无法{{tr|respawn}}。
+** {{tr|invasions}}开始于左侧或右侧[[世界边界]]并以每{{tr|tick}}{{tick}} 1 格的速度移动到{{tr|world}}[[{{tr|spawn point}}]]处（或者说每秒 60 格；{{eicons|1.3.0.1}}此速度受时间速度影响，例如：[[{{tr|Journey Mode}}]]时间滑条、[[{{tr|Enchanted Sundial}}]]、[[入睡]]）。{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateInvasion}}假设{{tr|world spawn point}}位于{{tr|world}}的水平中心，{{tr|invasions}}在{{tr|small, medium, and large}}[[{{tr|world size}}]]内分别需要 {{#expr:4200/2/60 round 0}}、{{#expr:6400/2/60 round 0}}、和 {{#expr:8400/2/60 round 0}} 秒才能到达{{tr|spawn point}}。
+** 玩家必须不低于{{tr|surface}}以下 67.5 格且位于{{tr|invasion}}位置的水平方向（两侧）187.5 格以内才能生成{{tr|invasion enemies}}。此种情况下，来自{{tr|Frost Legion}}的{{tr|enemies}}会完全覆盖当前环境中其他的[[{{tr|NPC spawning}}|{{tr|enemy}}生成]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+*** 如果{{tr|invasion}}到达了{{tr|world}}水平中心的 5 格以内的位置，则当玩家位于任何{{tr|town NPC}} 水平方向（两侧）187.5 格以内时也可以通过水平范围检测。{{tr|The town NPC}} 的垂直位置不会被检测。此种情况下，来自{{tr|Frost Legion}}的{{tr|enemies}}只有 {{chance|2/3}} 几率覆盖其他{{tr|enemy}}生成。
+** {{tr|An invasion}}不会阻止大多数其他{{tr|events}}发生（如[[{{tr|Blood Moon}}]]、[[{{tr|Solar Eclipse}}]]、或{{tr|night}}的随机 [[{{tr|Boss}}]] 生成）。不过，非 {{tr|boss enemy}}的生成仍然可能被{{tr|invasion enemy}}生成覆盖。
+
+== 成就 ==
+{{achievement|name=Do You Want to Slay a Snowman?}}
+
+== 小贴士 ==
+* {{tr|The Snowmen}}无法穿过普通的[[{{tr|platform}}]]上跳下来。
+* 虽然{{tr|the snowmen}}单独来看要比{{tr|goblins}}强得多，但它们中没有{{tr|casters}}或飞行怪。使用合适的{{tr|equipment}}及牢固的基地，打败它们会很简单。另一方面，这一{{tr|event}}不太有利可图，其最大吸引力是{{tr|Santa Claus}}。虽说如此，它们仍是用[[{{tr|Coin Ring}}]]和[[{{tr|Slime Staff}}]]来刷钱的绝佳目标。
+* {{tr|The Frost Legion}}倾向于到处留下放置的[[{{tr|Snow Block}}]]。可能最好是在玩家的基地一定距离以外进行战斗，避免事后还要“清理”。
+* {{tr|The Snowmen}}被视为是{{tr|cold-themed}}{{tr|enemies}}，因此[[{{tr|Warmth Potion}}]]有助于降低{{tr|event}}期间受到的伤害。
+* {{tr|Snow Blocks}}的天然储量在一个世界中是有限的。然而，{{tr|the Snowmen}}会掉落它们，使其成为可再生资源。{{tr|singleplayer}}的{{tr|Frost Legion}}平均会掉落 900 块{{tr|Snow Blocks}}（每多一名玩家会多出 450 块），还要算上它们在战斗中丢出的那些。
+* 如果在[[{{tr|Christmas}}]]期间与其战斗，则（单个）玩家就有不错的几率能从{{tr|snowmen}}掉落的[[{{tr|Presents}}]]中得到又一个[[{{tr|Snow Globe}}]]。
+* 通过更改玩家设备的日期和时间设置可以在正常的{{tr|Christmas}}时间限制之外得到{{tr|presents}}（从而得到{{tr|Snow Globe}}）。
+* {{eicons|1.4.1}}到达[[{{tr|Frost Moon}}]]的第 15 波会解锁一个游戏日的{{tr|Christmas}}（无论日期），从而让玩家能刷{{tr|Presents}}以获得{{tr|Snow Globe}}。
+
+== 花絮 ==
+{{float file box|[[File:Exploding Snowman.gif|link=]]|{{tr|Exploding Snowman}}的{{tr|sprite}}}}
+* {{tr|The Frost Legion}}是游戏中拥有最少的{{tr|item drop}}数的[[{{tr|invasion}}]]{{tr|events}}，仅会掉落{{tr|Snow Blocks}}。
+* 在游戏资源中可以看到第四种{{tr|Snowman}}外观，在头上装着{{tr|dynamite}}。但它在游戏中并未用到。
+** [[1.2]] 的更新记录中说{{tr|the Frost Legion}}又回来了，现在有另一名成员，因此当时可能已经考虑要加入它。
+** 另外，在 [[1.3.5]] 更新中，尚未使用的{{tr|Exploding Snowman}}的外观和许多其他{{tr|enemies}}的一同被重新绘制了。
+* {{tr|The Achievement}}“[[{{tr|Do You Want to Slay a Snowman?}}]]”（Do You Want to Slay a Snowman?）是拿 2013 年迪士尼的动画电影{{维基百科|b=y|Frozen (2013 film)|Frozen|t=冰雪奇缘}}中的著名歌曲{{维基百科|b=y|Do You Want to Build a Snowman?|t=你想不想堆雪人？}}开了个玩笑。
+*“{{tr|Snowman}}”（Snowman）是帮派成员（gangster）的俚语说法，所以{{tr|Frost Legion}}的{{tr|enemies}}有着黑帮匪徒的主题。
+
+== 历史 ==
+{{history|Desktop 1.3.5|所有{{tr|enemy}}的{{tr|sprites updated}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Mister Stabby}}、{{tr|Snow Balla}}、和{{tr|Snowman Gangsta}}现在都会掉落各自相应的{{tr|enemy banners}}。}}
+{{history|Desktop 1.1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Mister Stabby}}、{{tr|Snow Balla}}、和{{tr|Snowman Gangsta}}现在都会掉落各自相应的{{tr|enemy banners}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Mister Stabby}}、{{tr|Snow Balla}}、和{{tr|Snowman Gangsta}}现在都会掉落各自相应的{{tr|enemy banners}}。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Enemy sprites}}更新为与{{tr|Desktop 1.3.5}} 一致。}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|{{tr|Mister Stabby}}、{{tr|Snow Balla}}、和{{tr|Snowman Gangsta}}现在都会掉落各自相应的{{tr|enemy banners}}。}}
+{{history|Mobile 1.2.10061|[[{{tr|Santa}}]]现在需要打败了{{tr|the Frost Legion}}之后才会生成。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+{{Master Template Characters
+| show-event = yes
+}}
+[[Category:召唤的事件]]
+
+{{language info|en=Frost Legion}}

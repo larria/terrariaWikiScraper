@@ -1,0 +1,39 @@
+{{exclusive|desktop=y|console=y|mobile=y|3DS=y}}
+
+[[File:Lock on (demo).gif|thumb|300px|用[[{{tr|Gradient}}]]对[[{{tr|Mimic}}]]使用{{tr|Lock on}}功能。]]
+
+'''锁定'''或者说'''目标锁定'''是一种允许玩家自动瞄准[[{{tr|enemies}}]]、[[{{tr|boss}}]]、和[[{{tr|critters}}]]的机制。
+
+== 行为 ==
+[[File:Combat Targeting.png|frame|'''左图：'''黄色的三角表示将会被瞄准的{{tr|enemy}}。<br/> '''右图：'''{{tr|The enemy}}已被锁定。]]
+锁定在{{eversions|console=y|mobile=y|3ds=y}}上是始终处于启用状态的。在{{desktop version}}上，当使用恰当的手柄时会自动启用它。
+
+=== 锁定目标 ===
+* {{icon|desktop|console|3ds}} 玩家可以用在[[{{tr|game controls}}|设置]]中指定给{{icon|desktop|console}}“{{gameText|LegacyMenu.231}}”/ {{icon/3ds}}“锁定目标”的按键（默认是 {{g|x}} / [[File:PS4 Square.png|square|30px|link=]] / [[File:Switch Y.png|30px|link=]] ）来锁定目标。再按一次此按键可以停止瞄准或切换目标。
+* {{icon/mobile}} 可以按锁定按钮（[[File:Mobile Lock On button.png|34px|link=]]）来锁定目标，再按一次可以停止瞄准或切换目标。
+
+当 {{tr|NPC}} 被瞄准后，会有三个黄色箭头环绕着它，从此时起，玩家的所有攻击都会直接针对它。{{icon/3ds}} 如果瞄准的 {{tr|NPC}} 走出屏幕，会有两个箭头指向它。
+
+{{icon|desktop|console|mobile}} 可以用“锁定优先级”设置来改变潜在目标的排序方式。''最清楚地线''将根据玩家的视线来瞄准最接近光标的 {{tr|NPC}}。''最近的目标''会瞄准最接近玩家的 {{tr|NPC}}，而不管其间是否存在阻隔{{tr|tiles}}。
+
+== 备注 ==
+* {{tr|Enemy Caster}}的[[:Category:{{tr|Spell AI NPCs}}|{{tr|spells}}]]可以作为目标进行瞄准。
+
+== 小贴士 ==
+* 锁定是对{{versions|mobile|3ds|nl=y}}的小屏幕尺寸的有益补偿。
+** 这在使用需要精确瞄准的武器，诸如[[{{tr|Yoyos}}]]、[[{{tr|Ranged weapons}}]]、或[[{{tr|Magic weapons}}]]时，会特别有用，让 {{wikipedia|lang=en|Strafing（gaming）|扫射（strafing）}}（一边开火一边躲避）变得非常轻松。
+* 在[[{{tr|Expert Mode}}]][[{{tr|Brain of Cthulhu}}]]战中，在第二阶段，自动瞄准会一直瞄着真正的那个大脑。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.3.1 引入。}}
+{{history|Switch 1.0.895.9|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.3.1 引入。}}
+{{history|Mobile 1.3.0.7.3|改善了当帧率（FPS）低于 50 时的响应情况，从而大大减少了指向光标的未命中射击。}}
+{{history|Mobile 1.3.0.7|移除了自动锁定。}}
+{{history|Mobile 1.1.5536|引入，带有自动锁定。}}
+{{history|3DS 1.05|修正了一些武器上的各种锁定问题。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+
+{{language info|en=Lock on}}

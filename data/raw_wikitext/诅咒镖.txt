@@ -1,0 +1,37 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3010
+| debuff = Cursed Inferno / 3–6 {{tr|seconds}} / 100%
+| idprojectile = 478, 480
+| hardmode = yes
+}}
+[[File:Cursed Dart (demo).gif|right|framed|从[[{{tr|Dart Pistol}}]]射出的{{tr|Cursed Darts}}攻击[[{{tr|Target Dummies}}]]。注意落下的{{tr|cursed flames}}。]]
+
+'''{{tr|Cursed Dart}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|dart}}]]。飞行过程中，其会产生{{tr|cursed flames}}，{{tr|cursed flames}}下落并停留在[[{{tr|blocks}}]]上，持续存在 {{duration|120ticks}}后消失。{{tr|The cursed flames}}造成{{tr|Cursed Dart}} 80% 的{{tr|damage}}和 50% 的[[{{tr|knockback}}]]。{{source code ref|name=ai|v=1.4.4.9|method=Terraria.Projectile.AI_001}} {{penetrate|name=火焰|auto=480}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}飞镖与火焰击中时均会施加 3–6 {{tr|seconds}}[[{{tr|Cursed Inferno}}]][[{{tr|debuff}}]]。
+
+它是[[{{tr|Crimson}}]]的[[{{tr|Ichor Dart}}]]的[[{{tr|Corruption}}]]{{tr|counterpart}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Cursed Dart|expectedrows=1}}
+
+== 备注 ==
+* 产生{{tr|flame}}的间隔在 {{duration|6ticks}}和 {{duration|19ticks}}之间随机选定。<ref name="ai"/>
+* 最初，{{tr|Cursed Dart}}可以在消失之前持续 {{duration|300ticks}}。在生成{{tr|cursed flame projectile}}后，若{{tr|Cursed Dart}}的剩余持续时间超过 {{duration|40ticks}}，则会将其减少 {{duration|20ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001 / Terraria.Projectile.SetDefaults}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** {{tr|Damage}}由 10 降低至 9。}}
+{{history|Desktop 1.4.0.1|{{tr|Damage}}由 9 提升至 10。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} （{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} （{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Cursed Dart}}

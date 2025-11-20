@@ -1,0 +1,69 @@
+{{item infobox
+| auto = 539
+| type = Block / Mechanism
+| width = 1| height = 1
+| debuff = Poisoned / 10
+| sound1 = item 17.wav
+| soundcaption1 = 发射飞镖
+| idprojectile = 98
+| tags = plunder
+}}
+[[File:Dart Trap (demo).gif|thumb|right|{{tr|Dart Trap}}对玩家造成伤害并导致[[{{tr|Poisoned}}]]。]]
+
+
+'''{{tr|Dart Trap}}'''是一种自然生成在[[{{tr|Cavern}}]]{{tr|layer}}和[[{{tr|Dungeon}}]]的[[{{tr|trap}}]]。当被[[{{tr|wire}}]]触发时，它会发射一支{{tr|dart}}，并且不消耗任何[[{{tr|ammunition}}]]。它的两次发射之间有着{{eicons|1.3.0.1}} 3{{nbsp}}1/3 秒 / {{eicons|1.3.0.1|invert=y}} 3 秒的冷却。{{tr|darts}}造成 40 / {{expert|80}} / {{master|120}} 伤害{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle / Terraria.Projectile.Damage}} 并且对玩家导致 10 / {{expert|20}} / {{master|25}}秒的[[{{tr|Poisoned}}]]（对 [[{{tr|NPCs}}]]、[[{{tr|enemies}}]]、和[[{{tr|critters}}]]造成 20 {{tr|damage}}和 10 秒{{tr|Poisoned}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.StatusNPC / Terraria.Projectile.StatusPlayer}}
+
+{{eicons|1.3.1}} {{tr|Dart Traps}}被[[{{tr|hammer}}]]击后会旋转 90°。
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Dart Trap|expectedrows=1}}
+
+== 备注 ==
+* 从{{tr|Dart Traps}}中射出的{{tr|Darts}}造成穿透伤害，并且在敌怪身上触发 1/6 秒（10 {{tr|ticks}}{{tick}}）长的[[{{tr|invincibility frame}}]]。如果一个敌怪在这段时间内被多个飞镖击中，它只会承受来自一个飞镖的伤害。在{{tr|Dart Traps}}间保留 8 {{tr|tiles}}的间距可以保证每发飞镖都造成伤害。
+* {{eicons|1.3.0.1}} 因为{{tr|Dart Traps}}有 200 {{tr|ticks}}{{tick|short}} （3.33 秒，或者 3{{nbsp}}1/3 秒）的冷却，[[{{tr|1 Second Timer}}]]只能每 4 秒触发一次射击。
+** {{eicons|1.3.0.1|invert=y}} 因为 3 秒的冷却，{{tr|1 Second Timer}}只能每 3 秒触发一次射击。
+* {{tr|Darts}}以每秒 45 {{tr|tiles}}（60 {{mph}}）的速度飞行最多 60 秒，当它们被物块阻挡时就会破碎。因此一个{{tr|Dart Traps}}拥有最多 2,700 {{tr|tiles}}范围。
+* {{tr|Darts}}在[[{{tr|water}}]]中以 1/2 的速度飞行，在[[{{tr|honey}}]]中以 1/4 的速度飞行。
+* {{tr|Dart Trap}}可以越过它面前的一个方块射击。
+* 为了使用收集到的{{tr|Dart Traps}}，玩家必须将它和一个触发[[{{tr|mechanism}}]]连线，这会对它发送一个信号。
+
+== 小贴士 ==
+* 高难度下，新角色可以轻易地被{{tr|Dart Traps}}杀死，因为它的高伤害和{{tr|debuff}}持续时间。
+* 只需稍作规划, 你就可以利用飞镖陷阱来快速地[[{{tr|Gardening}}|收割]]整片[[{{tr|Mushroom}}]]/[[{{tr|Glowing Mushroom}}]]/[[{{tr|Vile Mushroom}}]]/[[{{tr|Underground Jungle}}]]/[[{{tr|Herb}}]][[{{tr|指南: 建造一个农场}}|农场]]（种在土壤中）。
+* 将手中的物品切换到[[{{tr|Hotbar}}]]中有关电路的物品，比如{{tr|Dart Traps}}或者[[{{tr|Wrench}}]]，所有的[[{{tr|wire}}]]将会以红、蓝、黄、绿线的形式显示在屏幕上，包括自然生成的压力板、飞镖，和连接两者的电路。
+** 当然，带上[[{{tr|Mechanical Lens}}]]或者[[{{tr|The Grand Design}}]]允许玩家可以不拿上有关电路的物品就能看到电线并突出暗处的电线。
+* {{tr|Dart Traps}}被致动后仍能发射飞镖。使用[[{{tr|actuator}}]]，可以把一个{{tr|Dart Traps}}放置在另一个{{tr|Dart Traps}}后面发射，这样后面的飞镖就不会撞上前面的机关。
+* 放置在 153 方块以外的{{eil|Teal Pressure Pad}} 可以用于制造一个连续发射的机械，并且发射间隔正是它的最大开火速率。使用这个循环机器，机关可以持续开火直到玩家登出游戏（或者被终止循环）。
+* 多个{{tr|Dart Traps}}可以用{{tr|Teal Pressure Pads}}连接在一起，在一个狭小的空间内制作出非常精确的循环时钟电路（对于处于[[{{tr|honey}}]]中的陷阱很有用）。因为{{tr|Dart Traps}}很常见，它们以很高地频率激活[[{{tr|statues}}]]或者其他机关。
+* 七个 {{eil|1/2 Second Timer|s}} 组合在一起可以提供 3.5 秒的间隔，差不多和 3.33 秒一样。
+
+== 花絮 ==
+*  飞镖机关的材质类似于一个非写实化的石头脑袋。在流行文化中（例如《印第安纳琼斯》这一类型的电影），这种石头脑袋外形，从嘴里射出飞镖的机关很常见。 
+* 飞镖机关是[[{{tr|Hardmode}}]]之前能够重复使用的两种机关之一，还有一种是[[喷泉（机关）|喷泉]]。
+
+== 另见 ==
+*[[{{tr|Super Dart Trap}}]]
+* {{eil|Venom Dart Trap}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在用于合成[[{{tr|Venom Dart Trap}}]]。}}
+{{history|Desktop 1.3.1|
+** 外观更新，旧外观为[[File: Dart Trap (old).png]]
+** 可以在锤击后旋转 90°。}}
+{{history|Desktop 1.3.0.3|修复了陷阱可能暴击的问题。}}
+{{history|Desktop 1.2|堆叠上限从 250 提升到 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Wiring}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+{{language info|en=Dart Trap}}

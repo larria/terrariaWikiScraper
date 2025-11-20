@@ -1,0 +1,123 @@
+{{exclusive|Old One's Army}}
+{{npc infobox| tabs = no
+| namenote =
+| auto = 564
+| image = Dark Mage.gif
+| type = Boss
+| environment = Old One's Army
+| idprojectile = 673, 674, 675
+| life =
+| damage =
+| defense =
+| sound1 = Dd2 dark mage attack 0.wav, Dd2 dark mage attack 1.wav, Dd2 dark mage attack 2.wav
+| soundcaption1 = {{gameText|ProjectileName.DD2DarkMageBolt}}
+| sound2 = Dd2 dark mage cast heal 0.wav, Dd2 dark mage cast heal 1.wav, Dd2 dark mage cast heal 2.wav
+| soundcaption2 = 治疗施法
+| sound3 = Dd2 dark mage heal impact 0.wav, Dd2 dark mage heal impact 1.wav, Dd2 dark mage heal impact 2.wav
+| soundcaption3 = 治疗效果
+| sound4 = Dd2 dark mage summon skeleton 0.wav, Dd2 dark mage summon skeleton 1.wav, Dd2 dark mage summon skeleton 2.wav
+| soundcaption4 = 召唤<br/>{{tr|Old One's Skeleton}}
+| imageother = Map Icon Dark Mage.png
+| imageothercaption = Map Icon
+| shownpcid = no
+}}
+{{quotation|[[{{tr|Witch Doctor}}]]|{{gameText|WitchDoctorSpecialText.AfterDD2Tier1}}}}
+
+'''{{tr|Dark Mage}}'''是[[{{tr|Old One's Army}}]][[{{tr|event}}]]中的[[{{tr|mini-boss}}]]，生成在{{tr|tier 1}} 的第 5 波和{{tr|tier 3}} 的第 4 到第 6 波中。
+
+== 行为 ==
+{{tr|Dark Mage}}漂浮在地面上方，它会随机选择三种攻击：
+* {{tr|The Dark Mage}}召唤[[File:Dark Energy.png|link=]]'''{{gameText|ProjectileName.DD2DarkMageBolt}}'''，直接向玩家投掷，造成 80 / {{expert|160}} / {{master|240}} 伤害。
+* {{tr|The Dark Mage}}召唤一个大型符文，然后会生成一大片光芒，治疗在其 62.5 格范围内的大多数{{tr|enemies}}（要求拥有至少 30 最大生命值、造成至少 1 伤害、且不是{{tr|Dark Mage}}），恢复最多 500 生命值。{{source code ref|v=1.4.0.5|name=runeai|{{code|Terraria.Projectile.cs}} 中的 {{code|AI()}} 方法（under {{code|<nowiki>aiStyle == 133</nowiki>}}）}}
+* {{tr|The Dark Mage}}开始念诵，并会出现一个[[File:Dark Sigil.png|41px|link=]]'''{{gameText|ProjectileName.DD2DarkMageHeal}}'''。在片刻之后，会从中出现[[{{tr|Old One's Skeleton}}]]。如果世界上有超过 200 个{{tr|NPC}}，则无法进行此攻击。
+
+== {{tr|Variants}} ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/drops}}
+{| class="terraria lined align-center nowrap cellborder item-noborder"
+|-
+! [[NPC IDs|NPC ID]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Drops}}
+<section begin="npc infobox"/><!--for Guide:Old One's Army strategies-->{{npc infobox
+| auto = 564
+| image = Dark Mage.gif
+| type = Boss
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2DarkMageBolt}}}} {{source code ref|v=1.4.0.5|name=dmg|method=Terraria.NPC.AI_109_DarkMage}}
+| War Table|1|{{modes|50%|100%}}
+| War Table Banner|4|{{modes|50%|100%}}
+| Dark Mage Mask|1|14.29%
+| Dark Mage Trophy|1|10%
+| Dark Mage's Tome |1| {{master|25%}} @master
+|:group:start |可能会掉落以下 2 件{{tr|items}}之一| 2
+| Squire's Shield|1|{{modes|25%|50%}}
+| Apprentice's Scarf|1|{{modes|25%|50%}}
+|:group:end|----|----
+|:group:start |可能会掉落以下 2 件{{tr|items}}之一&nbsp;{{source code ref|v=1.4.0.5|name=drops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterDD2EventDrops}}| 2
+| Dragon Egg|1|{{modes|16.67%|25%}}
+| Gato Egg|1|{{modes|16.67%|25%}}
+|:group:end|----|----
+}}<section end="npc infobox"/>
+{{npc infobox
+| auto = 565
+| image = Dark Mage.gif
+| type = Boss
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2DarkMageBolt}}}} <ref name="dmg"/>
+| War Table|1|{{modes|12.5%|25%}}
+| War Table Banner|4|{{modes|12.5%|25%}}
+| Dark Mage Mask|1|7.14%
+| Dark Mage Trophy|1|10%
+| Dark Mage's Tome |1| {{master|25%}} @master
+| Dark Mage Relic | 1 | {{master|100%}} @master
+|:group:start |可能会掉落以下 2 件{{tr|items}}之一| 2
+| Squire's Shield|1|{{modes|25%|50%}}
+| Apprentice's Scarf|1|{{modes|25%|50%}}
+|:group:end|----|----
+|:group:start |可能会掉落以下 2 件{{tr|items}}之一&nbsp;<ref name="drops"/>| 2
+| Dragon Egg|1|8.33%
+| Gato Egg|1|8.33%
+|:group:end|----|----
+}}
+|}
+{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* {{tr|The Dark Mage}}将持续重生，直到级别 1 的第 5 波达到 99%。这使得拥有{{tr|pre-Hardmode}}后期或更高级别的装备的玩家可以刷它。
+* 就像其他{{tr|Old One's Army}}的成员一样，{{tr|the Dark Mage}}免疫[[{{tr|Teleporter}}]]和[[{{tr|Lava}}]]，并且[[{{tr|Trap}}]]伤害只会承受一半。
+* {{tr|The Dark Mage}}被限制为悬停在地面上方一点。它不能向上飞，但它召唤的{{tr|skeletons}}可以。
+* 这个小 [[{{tr|boss}}]] 会掉落两个宠物蛋：[[{{tr|Gato Egg}}]]和[[{{tr|Dragon Egg}}]]；不过，[[{{tr|Ogre}}]]会掉落{{tr|light pet}}[[{{tr|Creeper Egg}}]]。
+
+== {{tr|Trivia}} ==
+* 级别 1 中的{{tr|Dark Mage}}掉落的{{tr|pet}}是所有由{{tr|enemies}}掉落的{{tr|pet item}}中掉落率最高的之一。仅次于掉落自[[{{tr|Dungeon Guardian}}]]的[[{{tr|Bone Key}}]]。
+* 在{{eversions|1.4.0.1}}中，{{tr|the War Table}}、{{tr|War Table Banner}}、{{tr|Dragon Egg}}、和{{tr|Gato Egg}}'''不受'''[[{{tr|Luck}}]]影响，这与大多数不常见战利品掉落不同。因此，它们会始终按所列掉落率掉落。<ref name="drops"/>
+* {{tr|The Dark Mage}}不能治疗自己、{{tr|other Dark Mages}}、或{{tr|Moon Lord}}。
+* 如果一个 {{tr|boss}} 进入第二阶段然后被{{tr|Dark Mage}}完全治疗，{{tr|the boss}} 依然会停留在当前阶段中（诸如{{tr|Santa-NK1}}、{{tr|Plantera}}、和{{tr|Queen Slime}}是例外，会在被完全治疗后转换为第一形态）。
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Dark Mages|{{tr|Dark Mages}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可以掉落[[{{tr|Squire's Shield}}]]和[[{{tr|Apprentice's Scarf}}]]。}}
+{{history|Desktop 1.4.1|现在会像其他主 {{tr|bosses}} 一样在第一次被打败后正确地完成其[[{{tr|Bestiary}}]]条目填充。}}
+{{history|Desktop 1.4.0.1|添加了[[{{tr|Relic}}]]掉落和特殊[[{{tr|Dark Mage's Tome}}|{{tr|mount}}]]。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Dark Mage}}

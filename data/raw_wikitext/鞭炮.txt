@@ -1,0 +1,57 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4912
+| debuff = Hellfire / 4
+| debuffchance = 100%
+| idprojectile = 913, 918
+| sound1 = Item 153.wav
+| soundcaption1 = 甩鞭
+| sound2 = Item 14.wav
+| soundcaption2 = {{tr|Explosion}}
+| listcat = whips
+| tags = drop / treasure bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+{{dablink|不要与[[{{tr|Flamelash}}]]，一种[[{{tr|pre-hardmode}}]]的[[{{tr|Magic weapons}}]]相混淆。}}
+{{for|被移除的{{tr|weapon}}|{{tr|Firecracker (mobile)}}}}
+[[File:Firecracker (demo).gif|frame|right|{{tr|Firecracker}}攻击[[{{tr|target dummies}}]]。]]
+
+'''{{tr|Firecracker}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|Whips}}|{{tr|whip}}]]。{{whip note|penalty=33%}}
+
+{{tr|The Firecracker}}还会对所有击中的目标造成[[{{tr|Hellfire}}]]{{tr|debuff}}，持续 4 秒。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.StatusNPC}}当[[{{tr|minions}}]]或[[{{tr|sentry}}]]攻击被{{tr|Firecracker}}标记的{{tr|enemy}}时，会产生小爆炸，对{{tr|enemy}}造成{{tr|minions}}或{{tr|sentry}}伤害的 2.75 倍伤害。爆炸也会对附近的{{tr|enemies}}造成 1.75 倍伤害。每次打击只能对一个{{tr|enemy}}施加标记，并且直到{{tr|enemy}}再次被打击前标记不会再次出现。{{tr|Firecracker}}有 {{chance|1/4}} 的概率由[[{{tr|Wall of Flesh}}]]掉落。
+
+{{modifier|whip}}如果被{{tr|Firecracker}}标记的{{tr|enemies}}能够被{{tr|minions or sentries}}频繁地攻击，'''{{tr|Light}}'''也是可选项。
+
+== 小贴士 ==
+* 不同于其他的{{tr|whip}}，{{tr|Firecracker}}舍弃了{{tr|summon tag damage}}而换取特殊的命中效果。其效果十分特别，因为其伤害基于{{tr|minion}}的{{tr|base damage}}以及其自身的攻击速度，而不是{{tr|minion}}的攻击速度。这使其在积极进攻时比[[{{tr|Cool Whip}}]]更有潜力，但和[[{{tr|Spinal Tap}}]]或[[{{tr|Snapthorn}}]]等{{tr|whip}}不同，它不会提供持续性的{{tr|damage}}{{tr|bonus}}。
+* 此{{tr|whip}}可以使大部分{{tr|minion}}达到很高{{DPS}}。然而，其相对较近的距离和{{tr|summoner}}总体上的低[[{{tr|defense}}]]使得将其作为主武器使用时对技术要求更高。
+* 由于其独特的标记伤害倍增效果，此{{tr|whip}}在击败[[{{tr|Moon Lord}}]]后仍然有用。
+* 它和其它击中时会暂时增加{{tr|melee speed}}的{{tr|whip}}（例如[[{{tr|Snapthorn}}]]和[[{{tr|Durendal}}]]）搭配极佳，因为更高的{{tr|attack speed}}意味着它可以更频繁地施加标记。
+* {{tr|Firecracker}}在挥舞时会产生光亮，可以用来透过墙壁发现矿洞和{{tr|ore}}。
+* 因为{{tr|Firecracker}}的效果会将造成的伤害倍乘，而非提供加算的标记伤害提升，它搭配具有高{{tr|base damage}}的{{tr|minions}}时最为有效。它与[[{{tr|Desert Tiger Staff}}]]、[[{{tr|Abigail's Flower}}]]和[[{{tr|Stardust Dragon Staff}}]]搭配时尤其有效，因为这些{{tr|weapon}}拥有根据投入的{{tr|minion slot}}数量提高{{tr|minion}}的伤害的独特能力。
+** 相对地，攻击频繁而{{tr|base damage}}较低的{{tr|minions}}（例如[[{{tr|Blade Staff}}|{{tr|Enchanted Dagger}}]]）和此{{tr|whip}}配合较差。
+
+== 花絮 ==
+* {{维基百科|Firecracker|t=鞭炮}}是一种起源于中国的小型爆炸物，主要用于产生很大的响声与亮光，常被用于庆祝假期或节日。
+* {{tr|The weapon}}名称“Firecracker”和其能力是个文字游戏：此{{tr|weapon}}用火（''fire''）制成，且作为{{tr|whip}}也能发出响亮的抽动声（''cracking'' sound）；{{tr|Firecracker}}（''firecracker''）能爆炸，且也会发出响亮的声音。{{note|small=y|paren=y|译注：中文名也可以视为双关：“鞭炮”与“{{tr|whip}}”。}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 造成[[{{tr|Hellfire}}]]而非[[{{tr|On Fire!}}]]。
+** 伤害由 40 降至 37。}}
+{{history|Desktop 1.4.1.2|将爆炸伤害倍率由 3 倍{{tr|minion base damage}}降低至 2.75 倍。}}
+{{history|Desktop 1.4.1|攻击范围略微增加。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Whips}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Firecracker}}

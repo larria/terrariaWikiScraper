@@ -1,0 +1,56 @@
+{{infobox wrapper
+|{{item infobox
+| type = Potion
+| auto = 189
+| tags = Bag loot
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Mana Potion}}'''使用时恢复 100 点[[{{tr|mana}}]]。它们偶尔能从[[{{tr|Iron Crate}}]]中得到。
+
+使用任何{{tr|Mana Potion}}（[[{{tr|Super Mana Potion}}|超级]]、[[{{tr|Greater Mana Potion}}|强效]]、普通或[[{{tr|Lesser Mana Potion}}|弱效]]）都会触发[[{{tr|Mana Sickness}}]]{{tr|debuff}}。
+
+使用{{tr|Mana Potions}}不会激活[[{{tr|Potion Sickness}}]]{{tr|debuff}}。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Mana Potion|expectedrows=1}}
+
+=== {{tr|Used in}} ===
+{{recipes|ingredient=Mana Potion|expectedrows=2}}
+
+== {{tr|Notes}} ==
+* {{tr|Equip}}[[{{tr|Mana Flower}}]]使玩家能够在{{tr|mana}}耗尽时自动使用{{tr|Mana Potions}}。
+* 使用 2 个[[{{tr|Lesser Mana Potion}}]]能够恢复 100 {{tr|mana}}，但是因为{{tr|Mana Sickness}}{{tr|debuff}}，这样效率较差。
+
+== {{tr|Trivia}} ==
+* 虽然{{tr|Mana Potion}}被用来制作[[{{tr|Mana Flower}}]]，但是{{tr|Mana Flower}}的外观有着[[{{tr|Greater Mana Potion}}]]的形状和两条黄线。
+
+== {{tr|History}} ==
+{{history|version=desktop|Desktop 1.3.0.1|
+** 外观更新。
+** 价值由 500 降低至 250。
+** 不再在[[{{tr|Restoration Potion}}]]的配方中被使用。
+** 在[[{{tr|Mana Sickness}}]][[{{tr|debuff}}]]存在时每多喝一瓶{{tr|Mana Potion}}，{{tr|debuff}}时间延长 5 秒，{{tr|magic damage}}降低最多 50%。}}
+{{history|Desktop 1.2.3|
+** 使用任何{{tr|Mana Potion}}都会激活[[{{tr|Mana Sickness}}]][[{{tr|debuff}}]]。
+** 堆叠上限由 25 提升至 50。}}
+{{history|Desktop 1.2|
+** 堆叠上限由 50 降低至 25。
+** 卖出价由 {{cc|50}} 升至 {{sc|1}}。}}
+{{history|Desktop 1.1|
+** 堆叠上限从 30 提升至 50。
+** 卖出价由 {{sc|2}} 降至 {{cc|50}}.}}
+{{history|Desktop 1.0.6.1|{{tr|Mana}}恢复量由 200 点降至 100 点。}}
+{{history|Desktop 1.0.6|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.0.5|{{tr|Sprite updated.}}}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|version=console|Console-Release|{{tr|Introduced.}}}}
+{{history|version=mobile|Mobile-Release|{{tr|Introduced.}}}}
+{{history|version=3DS|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+{{language info|en=Mana Potion}}

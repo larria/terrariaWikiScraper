@@ -1,0 +1,54 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper | direction = row
+|{{item infobox
+| name = Bamboo stalk
+| type = Background object
+| imagealt = [[File:Tree (Bamboo).png|link=|x160px]]
+| stack =
+| placeable =
+| rare =
+| idtile = 571
+| cargo = no
+}}
+|{{item infobox
+| type = Block
+| auto = 4564
+| tags = plunder / loot / bag loot
+}}
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Bamboo}}'''是一种可放置的[[{{tr|block}}]]，可通过使用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]采伐自然生长在[[{{tr|Jungle}}]]{{tr|biome}}中的{{tr|Bamboo stalks}}的方式获取。它也可以在[[{{tr|Jungle Crate}}]]和[[{{tr|Bramble Crate}}]]中找到。{{tr|Bamboo}}可以用于制作[[{{tr|Bamboo furniture}}|相应主题的{{tr|furniture}}]]、{{tr|blocks}}、和{{tr|walls}}。
+
+{{tr|Bamboo stalks}}生长在[[{{tr|surface}}]]以上浸没于较浅的[[{{tr|water}}]]或[[{{tr|Shimmer}}]]（多于 1 格深，但不多于 5 格深{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.PlaceBamboo}}）中的[[{{tr|Jungle grass}}]]上。类似于大多数[[{{tr|plants}}]]，它们不能在[[{{tr|wall}}]]（包括[[{{tr|Glass Wall}}]]和[[{{tr|fences}}]]）前方生长。但与大多数其他{{tr|plants}}不同的是，{{tr|Bamboo}}可以随时间不断长大，并且长大需要的时间很长。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Bamboo|expectedrows=4}}
+
+=== 用于 ===
+{{recipes|ingredient=Bamboo|expectedrows=23}}
+
+== 备注 ==
+[[File:Bamboo Plant.png|thumb|三根{{tr|Bamboo stalk}}生长在浅水中的{{tr|Jungle grass}}。]]
+* 通过把{{tr|Jungle grass}}种在适量{{tr|water or Shimmer}}下的方式，可以在{{tr|Jungle biome}}外种植{{tr|Bamboo}}。
+* 和大部分其他{{tr|plants}}不同，{{tr|Bamboo stalks}}不会继承其生长在的{{tr|tiles}}的[[{{tr|paints}}]]或[[{{tr|coatings}}]]。
+
+== 花絮 ==
+* 根据 [[{{tr|Leinfors}}]] 的说法，{{tr|Bamboo}}在计划中最初由[[{{tr|Traveling Merchant}}]]售卖，而非自然生长。<ref>[https://www.reddit.com/r/Terraria/comments/twxgfj/was_bamboo_originally_planned_to_be_sold_by_the/i3p5bft/ Was Bamboo originally planned to be sold by the Traveling Merchant?], reply by Leinfors {{small|{{date|2022|04|06}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Bamboo}}

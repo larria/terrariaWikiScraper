@@ -1,0 +1,63 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| imagealt = [[File:Dusty Rawhide Saddle.png]] [[File:Royal Gilded Saddle.png]] [[File:Black Studded Saddle.png]]
+| type = Mount summon
+| use = {{iteminfo|4785|use time}}
+| rare = {{iteminfo|4785|rare}}
+| value = {{iteminfo|4785|value|raw=y}}
+| buy = y
+| research = {{iteminfo|4785|sacrifices}}
+| id = 4785–4787
+| cargo = no
+}}
+{{about|用来召唤三种马匹坐骑的物品||鞍}}
+
+'''{{tr|Dusty Rawhide Saddle}}'''，'''{{tr|Royal Gilded Saddle}}'''和'''{{tr|Black Studded Saddle}}'''分别是可用于召唤'''{{tr|Painted Horse Mount}}'''，'''{{tr|Majestic Horse Mount}}'''和'''{{tr|Dark Horse Mount}}'''的[[{{tr|mount}}]]召唤物品。它们以每个 {{iteminfo|Royal Gilded Saddle|buy}}的价格，在至少完成[[{{tr|Bestiary}}]]上 30% ({{b entries|30%|entries}})后由[[{{tr|Zoologist}}]]出售。这三种鞍功能相同。一旦达到较高的速度，它们就可以对沿途的[[{{tr|enemies}}]]造成伤害。
+
+== 种类 ==
+{{item/options|set|nolink=y|showid=y|icons=n}}<!--
+-->{{item infobox/options|view=table|cols=item2cells-anchor-nolink/mount/buff/bufftip}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Saddle}}
+! width=110px<!-- a bit cramped otherwise --> | {{tr|Mount}}
+! {{tr|Buff}}
+! {{tr|Buff }}提示
+{{item infobox
+| auto = 4785
+| tags = buy / vendor:Zoologist
+}}
+{{item infobox
+| auto = 4786
+| tags = buy / vendor:Zoologist
+}}
+{{item infobox
+| auto = 4787
+| tags = buy / vendor:Zoologist
+}}
+|}<!--
+-->{{item infobox/options|reset}}{{item/options|reset}}
+
+=={{tr| Notes}} ==
+* 马的最高奔跑速度是 {{mountinfo|Painted Horse Mount|max speed}}, 可在 3.2 秒后达到。{{source code ref|v=1.4.1.2|method=Terraria.Mount.SetAsHorse}}
+* 当超过 {{mph|28.125 tiles}}，马就会对沿途的[[{{tr|enemies}}]]和[[{{tr|critters}}]]造成{{tr|damage}}，就像[[{{tr|Unicorn}}]]和[[{{tr|Goat Skull}}|山羊]]坐骑一样。它们会造成 30 基础[[{{tr|summon damage}}]]且造成大小为 7 的[[{{tr|knockback}}]]({{knockback|7}})。{{source code ref|v=1.4.1.2|method=Terraria.Player.HorizontalMovement}}
+* 骑马时无跳跃疲劳。
+* 使用鞍时，马会在一阵轻烟中现身。
+
+=={{tr| Achievements }}==
+{{achievement|name=The Cavalry}}
+
+=={{tr|Tips}}==
+* 马最好用于在无障碍的延伸过地图的长平台上移动。这可以在不用担心减速的情况下一直维持最大速度。
+
+=={{tr|History}}==
+{{history|Desktop 1.4.1|最高速度从每秒 30 {{tr|tile}}提升到了每秒 33.75 {{tr|tile}}。}}
+{{history|Desktop 1.4.0.1|加入了{{tr|Dusty Rawhide Saddle}}，{{tr|Royal Gilded Saddle}}和{{tr|Black Studded Saddle}}。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+{{language info|en=Saddles}}

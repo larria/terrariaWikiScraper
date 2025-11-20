@@ -1,0 +1,108 @@
+{{item infobox
+| name = Biome Keys
+| type = Key
+| imagealt = [[File:Biome Keys.gif|link=]]
+| auto = 1533
+| tooltip =
+| sounduse = Unlock.wav
+| id = 1533–1537, 4714
+| hardmode = yes
+| cargo = no
+}}
+
+'''{{tr|Biome Keys}}'''是[[{{tr|Hardmode}}]]的{{tr|item}}，用于打开[[{{tr|Dungeon}}]]中的[[{{tr|Biome Chest}}]]，开启{{tr|chest}}需要消耗{{tr|key}}。尽管在[[{{tr|Plantera}}]]被击败前无法开启{{tr|chest}}，但{{tr|key}}却可以在[[{{tr|Hardmode}}]]的任何时候掉落。在{{eversions|Biome Key Molds|invert=y}}中，每把{{tr|key}}都有 {{chance|1/2500}} 的几率从各自[[{{tr|biome}}]]中的[[{{tr|enemy}}]]处掉落。在{{eversions|Biome Key Molds}}，{{tr|key}}不会直接掉落，而必须由[[{{tr|Biome Key Molds}}]]制作而来。
+
+任何处于{{tr|biome}}中且会掉落[[{{tr|coins}}]]的[[{{tr|enemy}}]]杀死后都有可能掉落{{tr|key}}，而不仅仅是本{{tr|biome}}专属的{{tr|enemy}}才会掉落。此外，处于[[{{tr|Biome}}#{{tr|Hybrid biomes}}|{{tr|hybrid biomes}}]]中的{{tr|enemy}}有机会掉落多种{{tr|Biome Keys}}。{{tr|biome}}是由玩家目前所在的{{tr|biome}}决定的，而不是被杀死的{{tr|enemy}}所在的{{tr|biome}}。
+
+{{eicons|1.3.0.1}} 任何在击败{{tr|Plantera}}之前掉落的{{tr|Biome Keys}}的工具提示显示为''“{{gameText|LegacyTooltip.59}}”''，且在击败{{tr|Plantera}}之前无法打开对应的[[{{tr|Biome Chest}}]]。不过这些“被诅咒”的{{tr|key}}在已经击败{{tr|Plantera}}的世界中仍然可以使用。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-nolink/tooltip/col:chest/col:content}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Item}}
+! {{tr|Tooltip}}
+! {{tr|Chest type}}
+! {{tr|Chest}}内容
+{{item infobox | type = Key | auto=1533
+| col:chest = {{item|Jungle Chest}}
+| col:content = {{item|Piranha Gun}}
+}}
+{{item infobox | type = Key | auto=1534
+| col:chest = {{item|Corruption Chest}}
+| col:content = {{item|Scourge of the Corruptor}}
+}}
+{{item infobox | type = Key | auto=1535
+| col:chest = {{item|Crimson Chest}}
+| col:content = {{item|Vampire Knives}}
+}}
+{{item infobox | type = Key | auto=1536
+| col:chest = {{item|Hallowed Chest}}
+| col:content = {{item|Rainbow Gun}}
+}}
+{{item infobox | type = Key | auto=1537
+| col:chest = {{item|Ice Chest|link=|class=multi-line|[[{{tr|Ice Chest}}]] {{eicons|1.4.0.1|small=y}}<br/>[[{{tr|Ice Chest}}|{{tr|Frozen Chest}}]] {{eicons|1.4.0.1|invert=y|small=y}}}}
+| col:content = {{item|Staff of the Frost Hydra}}
+}}
+{{item infobox | type = Key | auto=4714
+| col:chest = {{item|Desert Chest}}
+| col:content = {{item|Desert Tiger Staff}}
+}}
+|}{{item infobox/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE % key|expectedrows=5}}
+=== 用于 ===
+{{recipes|ingredient=Jungle Key/Corruption Key/Crimson Key/Hallowed Key/Frozen Key/Desert Key|expectedrows=6}}
+
+== 备注 ==
+* 由于[[{{tr|Critters}}]]或下列{{tr|enemy}}不会掉落[[{{tr|coins}}]]，因此不会掉落{{tr|Biome Key}}：{{tr|Hardmode}}期间的[[{{tr|Meteor Head}}]]、由[[{{tr|Statue}}#功能性雕像|{{tr|statue}}]]生成的{{tr|enemy}}、[[{{tr|Old One's Army}}]]{{tr|enemies}}、大部分 [[{{tr|boss}}]] 仆从、或任何生成自{{eil|Lunar Events}}中的{{eil|Celestial Pillar}}的{{tr|enemy}}。
+
+== 成就 ==
+{{achievement|name=Big Booty}}
+
+== 小贴士 ==
+{{for|获得{{tr|Biome Keys}}和{{tr|Key Mold}}的详细提示|指南:刷{{tr|Biome Keys}}或{{tr|Key Mold}}}}
+* 让大量{{tr|enemy}}在特定{{tr|biome}}生成是刷{{tr|key}}/{{tr|Key Mold}}的一个有效办法。某些[[{{tr|Events}}]]和某些 [[{{tr|boss}}]] 战特别适合这一点。
+* 将玩家的[[{{tr|spawn point}}]]/[[指南:基地|基地]]放在一个{{tr|biome}}内可以增加获得{{tr|Biome Keys}}的机会，因为玩家的基地旁会有大量的{{tr|enemy}}死亡。这对于[[{{tr|Snow biome}}]]和[[沙漠]]特别有效，因为它们比其他{{tr|biome}}危险性要低的多。
+
+== 花絮 ==
+* 虽然在有[[{{tr|Corruption}}]]的{{tr|world}}中没有{{tr|Crimson Chest}}，从人工的[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|biome}}中获得{{tr|Crimson Keys}}也是可能的，反之亦然。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Biome Keys}}现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Biome Chests}}]]。}}
+{{history|Desktop 1.4.0.3|{{tr|Corruption, Jungle, and Hallowed Key}}的外观更新。旧外观为：[[File:Corruption Key (old).png|link=]] [[File:Jungle Key (old).png|link=]] [[File:Hallowed Key (old).png|link=]]}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Desert Key}}。
+** {{tr|Frozen Key}}的{{tr|tooltip}}由 "Unlocks a Frozen Chest in the dungeon" 变为 "Unlocks an Ice Chest in the dungeon"。}}
+{{history|Desktop 1.3.0.1|
+** 不再可制作。
+** 现在又可掉落自{{tr|enemies}}。
+** 不再掉落自[[{{tr|Meteor Head}}]]。
+** 玩家不再能在击败[[{{tr|Plantera}}]]前打开{{tr|Biome Chests}}。}}
+{{history|Desktop 1.2.1|不再掉落自{{tr|enemies}}，而是用{{tr|Biome Key Molds}}制作而来。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 不再可制作。
+** 现在又可掉落自{{tr|enemies}}。
+** 不再掉落自[[{{tr|Meteor Head}}]]。
+** 玩家不再能在击败{{tr|Plantera}}前打开{{tr|Biome Chests}}。}}
+{{history|Console 1.02|{{tr|Introduced}}，由{{tr|Biome Key Molds}}制作而来。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Ice Chests}}不再在[[{{tr|Heart Shrine}}]]中生成，因为此结构已被移除。
+** 不再可制作。
+** 现在又可掉落自{{tr|enemies}}。
+** 不再掉落自{{tr|Meteor Heads}}。
+** 玩家不再能在击败{{tr|Plantera}}前打开{{tr|Biome Chests}}。}}
+{{history|Mobile 1.2.11212|{{tr|Ice Chests}}现在会在{{tr|Heart Shrines}}中生成（包含不同的{{tr|loot}}）。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}，由{{tr|Biome Key Molds}}制作而来。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Biome Chests}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Biome Keys}}

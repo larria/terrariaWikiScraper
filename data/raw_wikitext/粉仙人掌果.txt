@@ -1,0 +1,41 @@
+{{item infobox
+| auto = 1113
+| imagebreak = yes
+| placeable = no <!-- using "|idtile=..." automatically sets "|placeable=yes", which is not true for this item -->
+| idtile = 227 (6)
+| tags = plunder
+}}
+
+'''{{tr|Pink Prickly Pear}}'''是一种[[{{tr|Dye}}#{{tr|Basic Dyes}}|{{tr|dye material}}]]，长在普通或{{tr|Hallowed}}[[{{tr|Cactus}}]]顶上，有时也会出现在{{tr|Corrupted or Crimson Cactus}}顶上。它只能用[[{{tr|pickaxe}}]]、[[{{tr|drill}}]]或[[{{tr|Explosives (class)}}|{{tr|explosives}}]]来收割。其唯一用途是{{tr|craft}}[[{{tr|Pink Dye}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Pink Prickly Pear|expectedrows=2}}
+
+== 备注 ==
+* {{eicons|1.4.0.1}} 尽管{{tr|Pink Prickly Pears}}有{{tr|Corruption}}/{{tr|Crimson}}/{{tr|Hallow}}{{tr|variants}}，但它们只能在普通或{{tr|Hallowed Cactus}}上生长，其余两种{{tr|variants}}只能通过{{tr|biome}}变化产生（例：[[{{tr|biome spread}}]]或[[{{tr|solutions}}]]）。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.plantDye}}
+
+== 花絮 ==
+* 虽然{{tr|Pink Prickly Pears}}在{{3DS version}}中可以以放置形态出现，但破坏它们永远不会生成{{tr|item}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated}}。旧的{{tr|sprite}}：[[File:Pink Prickly Pear (old).png|link=]]
+** 添加了{{tr|Corruption, Crimson and Hallow}}变体的{{tr|block sprite}}
+** 现在生成 2 个[[{{tr|Pink Dye}}]]而非 1 个。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|引入{{tr|tile}}，但未与{{tr|item}}关联。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Dye Materials}}
+{{Master Template Consumables
+| show-material = yes
+}}
+
+{{language info|en=Pink Prickly Pear}}

@@ -1,0 +1,134 @@
+{{legacy nav tab}}
+{{item infobox
+| imagebreak = yes
+| type = Armor/Set
+| hardmode = yes
+}}
+
+'''{{tr|Shroomite armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的{{tr|ranged}}[[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Shroomite Breastplate}}'''和'''{{tr|Shroomite Leggings}}'''、以及三个不同的头部件：'''{{tr|Shroomite Headgear}}'''、'''{{tr|Shroomite Mask}}'''、和'''{{tr|Shroomite Helmet}}'''组成，对使用特定类型[[{{tr|ammunition}}]]的{{tr|ranged weapons}}提供{{tr|bonuses}}。制作包含一个头部件的全套{{tr|set}}共需要 54 个[[{{tr|Shroomite Bar}}]]（810 个[[{{tr|Glowing Mushroom}}]]和 270 个[[{{tr|Chlorophyte Ore}}]]）。制作所有五个部件共需要 78 个{{tr|Shroomite Bars}}（1170 个{{tr|Glowing Mushrooms}}和 390 个{{tr|Chlorophyte Ore}}）。
+
+装备全套{{tr|set}}时提供如下效果：
+<tabber>
+|-|使用{{tr|Shroomite Headgear}}=
+* +{{getSetInfo|Shroomite armor|defense|note=n}} [[{{tr|defense}}]]
+* +13% [[{{tr|ranged damage}}]]
+* [[{{tr|bows}}]]和[[{{tr|repeaters}}]]（发射[[{{tr|arrows}}]]或[[{{tr|Stake}}]]的{{tr|weapons}}）的{{tr|damage}} ×1.15<ref name="multiplicative-increase"/>
+|-|使用{{tr|Shroomite Mask}}=
+* +{{getSetInfo|Shroomite armor|defense|note=n}} [[{{tr|defense}}]]
+* +13% [[{{tr|ranged damage}}]]
+* [[{{tr|guns}}]]（发射[[{{tr|bullets}}]]或[[{{tr|Candy Corn}}]]的{{tr|weapons}}）的{{tr|damage}} ×1.15<ref name="multiplicative-increase"/>
+|-|使用{{tr|Shroomite Helmet}}=
+* +{{getSetInfo|Shroomite armor|defense|note=n}} [[{{tr|defense}}]]
+* +13% [[{{tr|ranged damage}}]]
+* 特定{{tr|ranged weapons}}（不是{{tr|bows or guns}}的非{{tr|consumable}}{{tr|ranged weapons}}）的{{tr|damage}} ×1.15<ref name="multiplicative-increase"/>
+</tabber>
+* +25% {{tr|ranged}}[[{{tr|critical strike chance}}]]
+* +20% [[{{tr|ammo conservation}}]]
+* +12% [[{{tr|movement speed}}]]
+* 玩家在移动时会留下深蓝色拖影
+* 站定不动且不使用任何{{tr|items}}会让玩家快速进入[[{{tr|stealth}}]]，这会使其变得几乎不可见，且在玩家不使用任何{{tr|item}}时阻止[[{{tr|Fighter AI}}]] 和[[{{tr|Flying AI}}]] 的{{tr|enemies}}向玩家发射[[{{tr|projectiles}}]]。{{tr|Stealth}}是逐渐激活的，这一过程需要 {{duration|{{#expr:1/0.015}}ticks}}，在这期间玩家会获得数项线性提升至以下值的属性变化：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.GetWeaponKnockback}}
+** +60% {{tr|ranged damage}}
+** +10% {{tr|ranged critical strike chance}}
+** −750 [[{{tr|aggro}}]]
+** +50% {{tr|ranged}}[[{{tr|knockback}}]]
+
+{{tr|Stealth mode}}会在骑乘[[{{tr|Mounts}}|{{tr|mount}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}、或受到伤害{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}时取消。{{tr|Stealth mode}}也会在玩家开始移动时逐渐消失（''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节''）。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| hardmode = yes
+| auto = 1549
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1550
+}}
+}}
+{{-}}
+
+=== {{tr|Helmet}}种类 ===
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| hardmode = yes
+| auto = 1546
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1547
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1548
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Shroomite Breastplate/Shroomite Leggings/Shroomite Headgear/Shroomite Helmet/Shroomite Mask|expectedrows=5}}
+
+== 备注 ==
+[[File:Invisible Player.png|thumb|被[[{{tr|Wisp in a Bottle}}|{{tr|Wisp}}]]照亮的一个隐身{{tr|player}}。]]
+
+* {{tr|Shroomite Helmet}}会强化所有既不用{{tr|arrows}}/{{tr|Stakes}}也不用{{tr|bullets}}/{{tr|Candy Corn}}作为{{tr|ammunition}}的非消耗{{tr|ranged weapons}}（例如，[[{{tr|launchers}}]]、[[{{tr|Star Cannon}}]]、[[{{tr|Flamethrower}}]]、[[{{tr|Dart Rifle}}]]等等），或不使用{{tr|ammunition}}的{{tr|ranged weapons}}（例如，[[{{tr|Harpoon}}]]、[[{{tr|Paintball Gun}}]]、[[{{tr|Toxikarp}}]]、和[[{{tr|Piranha Gun}}]]）。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetWeaponDamage}}
+** 唯一例外为[[{{tr|Coin Gun}}]]。由于其伤害属性为 0，它不能获得此{{tr|damage bonus}}。
+* 对使用特定{{tr|ammunition type weapon}}的 1.15 倍伤害提升是在所有其他{{tr|armor set}}、[[{{tr|accessories}}]]、和[[{{tr|buffs}}]]计算''之后''应用的。所以{{tr|Shroomite}}头部件提供比它们的[[{{tr|tooltips}}]]所说的更多的伤害提升。总体的效果为除去头部件本身后，{{tr|ranged damage bonuses}}的效果变为 1.15 倍。例如，[[{{tr|Ranger Emblem}}]]会等效地将{{tr|ranged damage}}提高 17.25% 而非 15%。
+* 头部件的{{tr|damage}}提升仅适用于发射对应类型{{tr|ammunition}}的''{{tr|weapons}}''。{{tr|ammunition items}}的伤害不受此影响。
+* {{tr|Shroomite armor}}的{{tr|stealth mode}}无法与[[{{tr|Psycho Knife}}]]的{{tr|stealth mode}}叠加。如果同时使用这些{{tr|items}}，玩家仅能获得{{tr|Psycho Knife}}的{{tr|stealth mode}}带来的属性变化，因为它的优先级最高。
+** 仅有的例外为{{tr|knockback bonus}}，只要在{{tr|stealth mode}}下就总是会获得它。例如，使用{{tr|Psycho Knife}}和{{tr|Shroomite armor}}时，玩家在{{tr|stealth mode}}下会同时具有 +100% {{tr|melee knockback}}和 +50% {{tr|ranged knockback bonus}}。尽管如此，这在实际战斗中用处不大。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetWeaponKnockback}}
+* [[{{tr|NPCs}}]] 不会尝试与{{tr|stealth mode}}下的玩家“对话”（即发出[[{{tr|emotes}}]]）。{{source code ref|v=1.4.4.9|property=Terraria.Player.CanBeTalkedTo}}
+* 使用{{tr|item}}会暂停进入{{tr|stealth mode}}的过程，但不会重置它。当{{tr|item}}的使用动画结束后，再经过 {{duration|5 ticks}}后这一过程会继续。
+* {{tr|Stealth mode}}会在玩家开始移动后快速消失，取决于玩家的{{tr|movement speed}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}例如，以恒定的 {{mph|2 pixels}} 的速度移动时，完全退出{{tr|stealth mode}}需要 {{duration|floor(1/(0.0075*2)) ticks}}<!-- +0.0075 every tick multiplied by velocity, going from 0 to 1 -->，而以 {{mph|10 pixels}} 的速度移动时仅需要 {{duration|floor(1/(0.0075*10)) ticks}}就会退出。<!-- Note that this is not entirely accurate because the acceleration from standstill to those velocity values is not accounted for. This is only meant to demonstrate that the time to leave stealth mode depends on move speed. -->
+* 使用[[{{tr|Rod of Discord}}]]、[[{{tr|Hook of Dissonance}}]]、或[[{{tr|Rod of Harmony}}]]不会取消{{tr|stealth mode}}。
+
+== 小贴士 ==
+* 此{{tr|armor set}}与[[{{tr|Sniper Rifle}}]]配合得很好，因为{{tr|stealth}}将进一步提高{{tr|Sniper Rifle}}的优势——{{tr|damage and critical strike chance}}。使用正确的配装，每次射击将造成超过 1000 伤害，可以在一击之内杀死大部分非 {{tr|boss}} {{tr|enemies}}。
+* 由于{{tr|stealth mode}}会在玩家受到伤害后取消，且玩家需要停止攻击才能重新进入{{tr|stealth}}，因此这一{{tr|bonus}}在需要承受伤害或使用骗伤装置时无效。
+* 此{{tr|set}}并不能让玩家真的隐身，因为{{tr|armor}}会发出深蓝色。出于 [[{{tr|PvP}}]] 目的，考虑将[[{{tr|Familiar set}}]]与{{tr|Shroomite armor}}搭配使用，并取消可见的[[{{tr|accessories}}]]。这样，{{tr|stealth}}激活时，玩家可以彻底对其它玩家不可见。
+** 使用[[{{tr|Invisibility Potion}}]]也是个可选替代，但玩家以任何方式受伤时{{tr|buff}}就会消失，使{{tr|Shroomite armor}}是更加持久的选择。
+* 穿使用了[[{{tr|Silver Dye}}]]的{{tr|Shroomite Mask}}可以让玩家的头部很像裂开的{{tr|skull}}。
+* 由于许多[[{{tr|launchers}}]]具有低{{tr|base damage}}且其部分强度来源于{{tr|ammo}}的高{{tr|base damage}}，{{tr|Shroomite Helmet}}常常要劣于[[{{tr|Hallowed armor}}|{{tr|Hallowed Helmet}}]]或[[{{tr|Adamantite armor}}|{{tr|Adamantite Mask}}]]，它们对{{tr|weapon and ammunition damage}}均有提高。
+* 如果不使用这套盔甲的隐身效果，将{{tr|Shroomite Leggings}}换成[[{{tr|Mythril Greaves}}]]或{{eil|Red Riding Leggings}}可以提升{{tr|ranged}} {{DPS}}（使用{{tr|Mythril Greaves}}时会比全套的蘑菇矿盔甲低 7 [[{{tr|defense}}]]；使用{{tr|Red Riding Leggings}}时还会提高{{tr|minion damage}}）。将{{tr|Shroomite Breastplate}}换成[[{{tr|Red Riding Dress}}]]可以提供几乎相同的{{tr|ranged}} {{DPS}} 和[[{{tr|ammo conservation}}]]并且可以另外提升 25% {{tr|minion damage}}。
+* 一些[[{{tr|Dye}}]]的组合可以让{{tr|character}}外观在[[{{tr|night}}]]几乎不可见：
+<gallery>
+File:Shroomite armor with Black Dye.png|[[{{tr|Black Dye}}]]
+File:Shroomite armor with Blue and Silver Dye.png|[[{{tr|Blue and Silver Dye}}]]
+File:Shroomite armor with Frost armor and Red Dye.png|左侧：没有{{tr|dye}}的[[{{tr|Frost armor}}]]；右侧：[[{{tr|Red Dye}}]]
+File:Shroomite armor with Red and Black Dye.png|[[{{tr|Red and Black Dye}}]]
+File:Shroomite armor with Red and Black Dye at night.png|{{tr|night}}时的{{tr|Red and Black Dye}}
+</gallery>
+
+== 花絮 ==
+* {{tr|Shroomite Armor}}是唯一一套不同头部件均提供相同的{{tr|defense}}的{{tr|armor}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Shroomite Helmet}}现在会将它的效果应用至任意不被{{tr|gun or bow}}的{{tr|helmets}}影响的发射{{tr|ranged projectile}}的{{tr|weapon}}上。这包括例如{{tr|Dart Guns}}、{{tr|Flamethrowers}}以及{{tr|Star Cannons}}等。这些武器现在被称为“特定”{{tr|weapons}}。
+* 修复了被任何{{tr|Shroomite}}头部件影响的{{tr|weapons}}所显示的伤害比应有的高 1 的{{tr|tooltip}}显示 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprites updated.}}
+** {{tr|Shroomite Breastplate}}将正确地在它的{{tr|tooltip}}中显示 +13% {{tr|ranged damage}}。}}
+{{history|Desktop 1.2.2|将{{tr|stealth mode}}下的{{tr|ranged damage bonus}}由 50% 提升至 60%，且{{tr|aggro}}降低由 600 提升至 750。}}
+{{history|Desktop 1.2.1.2|
+** {{tr|Flame Wings}}和{{tr|Frozen Wings}}也会在{{tr|stealth}}时褪色了。
+** 根据{{tr|stealth}}的效果和相距的距离，一些{{tr|enemies}}不再会追逐玩家。
+** {{tr|Shroomite armor}}使用{{tr|items}}时不再取消{{tr|stealth}}。}}
+{{history|Desktop 1.2.1|女性版本的外观更新。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="multiplicative-increase">这并不是错误。这个提升是乘算应用的，会在其他所有伤害提升计算完毕后应用。</ref>
+}}
+
+{{Shroomite}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Shroomite armor}}

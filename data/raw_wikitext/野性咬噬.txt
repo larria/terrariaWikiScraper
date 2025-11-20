@@ -1,0 +1,93 @@
+{{Expert Mode only}}
+{{exclusive|1.3.0.1}}
+{{buff infobox
+| auto = 148
+| effects = 增加{{tr|damage}}，但是会减少{{tr|life regeneration}}并随机造成其他{{tr|debuff}}
+}}
+
+{{tr|Feral Bite}}是一种[[{{tr|debuff}}]]，可以在[[{{tr|Expert Mode}}]]中被[[{{tr|Bat}}]]（10％ 几率）或[[{{tr|Duke Fishron}}]]（33％ 几率）击中时造成。它会使玩家{{tr|damage}}提高 20％，但会降低玩家的[[{{tr|life regeneration}}]]，并且可能会随机造成[[{{tr|darkness}}]]、[[{{tr|cursed}}]]、[[{{tr|Confused}}]]、[[{{tr|Slow}}]]、[[{{tr|Weak}}]]或者[[{{tr|Silenced}}]]{{tr|debuff}}。
+
+== 来由 ==
+=== 来自敌怪 ===
+{| class="terraria"
+! colspan=2 | 来自
+! 持续时间
+! 几率
+|-
+| {{item|mode=table|class=block aligncenter textleft|Cave Bat}}
+| 30–90 秒
+| {{chance|1/10}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Jungle Bat}}
+| 30–90 秒
+| {{chance|1/10}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Giant Bat}}
+| 30–90 秒
+| {{chance|1/10}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Spore Bat}}
+| 30–90 秒
+| {{chance|1/10}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Giant Flying Fox}}
+| 30–90 秒
+| {{chance|1/10}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Duke Fishron|size=80px}}
+| 3–10 秒
+| {{chance|1/3}}
+|}
+
+
+== 减益 ==
+当玩家身上存在{{tr|Feral Bite}}{{tr|debuff}}状态的时候，每帧有 1/1200 的几率感染 6 种{{tr|debuff}}中的一个。假如玩家在每秒 60 帧的情况下运行游戏，每秒有 1/20 的几率感染{{tr|debuff}}（大约 1-20 秒）。
+
+{| class="terraria"
+! colspan=2 | {{tr|debuff}}
+! 持续时间
+! 几率
+|-
+| {{item|mode=table|class=block aligncenter textleft|Darkness}}
+| 1.8-3 秒
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Cursed}}
+| 0.45-0.75 秒
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Confused}}
+| 0.9-1.5 秒
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Slow}}
+| 2.1-3.5 秒
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Weak}}
+| 3-5 秒
+| {{chance|1/6}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Silenced}}
+| 0.6-1 秒
+| {{chance|1/6}}
+|}
+
+== 小贴士 ==
+* {{tr|Feral Bite}}在第一眼看上去好像是一个无关紧要的[[{{tr|debuff}}]]，但其随机产生的{{tr|debuff}}会对玩家造成巨大的伤害。[[{{tr|Confused}}]]和[[{{tr|Cursed}}]]{{tr|debuff}}会让玩家措手不及，特别是玩家没有意识到身上有{{tr|Feral Bite}}{{tr|debuff}}的时候。
+* 装备[[{{tr|Ankh Charm}}]]或[[{{tr|Ankh Shield}}]]不会抵消{{tr|Feral Bite}}{{tr|debuff}}本身，但可以抵消它产生的{{tr|debuff}}，使它成为了一个“伪{{tr|debuff}}”。
+
+== 花絮 ==
+* 在代码中，{{tr|Feral Bite}}被称作<code>Rabies</code>，即[https://zh.wikipedia.org/wiki/%E7%8B%82%E7%8A%AC%E7%97%85 狂犬病]，一种真实存在的会感染动物和人类的疾病。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{language info|en=Feral Bite}}

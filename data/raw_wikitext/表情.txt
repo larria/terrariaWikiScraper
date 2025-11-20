@@ -1,0 +1,899 @@
+{{exclusive|1.3.0.1}}
+[[File:Player emoting.gif|thumb|140px|right|一名玩家使用了{{tr|pickaxe}}{{tr|emote}}。]]
+[[File:NPC emote interaction.gif|thumb|140px|[[{{tr|Arms Dealer}}]]和[[{{tr|Nurse}}]]用{{tr|emotes}}进行互动。]]
+
+'''{{tr|Emotes}}'''是出现在实体上方的聊天气泡中的暂时性的小动图。它们可以被玩家、[[{{tr|Town NPCs}}]]、和[[{{tr|enemies}}]]使用。
+
+== 用法 ==
+[[File:Fully unlocked Emotes Window.png|200px|thumb|right|{{desktop version}}中的完整解锁的表情符号窗口。]]
+
+=== 玩家 ===
+表情符号窗口可让玩家轻松地使用任何已经解锁的{{tr|emote}}。大部分{{tr|emote}}是默认解锁的，但部分{{tr|emote}}需要其相关的 [[{{tr|boss}}]] 或[[{{tr|event}}]]被击败。
+
+{{icon|desktop}} 可以通过按下位于{{tr|inventory}}右下角的 [[File:Emotes icon.png|20px|link=]] 来开启表情符号窗口。
+
+{{icon|mobile}} 可以通过按下 [[File:Chat.png|20px|link=]] [[{{tr|chat}}]]{{tr|menu}}中的 [[File:Emotes icon.png|20px|link=]] 来开启表情符号窗口。
+
+玩家也可以通过{{tr|chat}}[[{{tr|commands}}]]使用{{tr|emote}}。所有{{tr|emotes}}都有相关联的{{tr|command}}，无论{{tr|emote}}是否在表情符号窗口中被解锁，这一{{tr|command}}均可被使用。
+
+另外：
+* {{eil|Lucy the Axe}}在说话时会让玩家使用“Lucy the Axe”{{tr|emote}}。
+* {{eil|Hunger}}在进入下一阶段时，会让玩家使用“Peckish”、“Hungry”、或“Starving”{{tr|emote}}。
+
+=== {{tr|Town NPCs}} ===
+非{{tr|pet}}的{{tr|town NPCs}} 会随机使用{{tr|emote}}。虽然所选的{{tr|emote}}似乎是随机的，它实际上受到所处环境的影响：
+{{transclude|{{tr|NPCs}}/{{tr|emotes}}}}
+
+他们也会用{{tr|emote}}来和其他{{tr|NPCs}}“交流”。玩家在 {{tr|NPC}} 前使用{{tr|emote}}时也会得到他们的回应。
+
+=== {{tr|Enemies}} ===
+仅有的能使用{{tr|emote}}的{{tr|enemy}}是[[{{tr|Kobold}}]]，在冲锋时会使用“Alert”表情。
+
+== {{tr|emotes}}列表 ==
+=== {{gameText|UI.EmoteCategoryGeneral}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+|-
+| 0
+| Emotion Love
+| <code>{{gameText|EmojiCommand.EmotionLove}}</code>
+| [[File:Emote Emotion Love.gif|link=]]
+|-
+| 1
+| Emotion Anger
+| <code>{{gameText|EmojiCommand.EmotionAnger}}</code>
+| [[File:Emote Emotion Anger.gif|link=]]
+|-
+| 2
+| Emotion Cry
+| <code>{{gameText|EmojiCommand.EmotionCry}}</code>
+| [[File:Emote Emotion Cry.gif|link=]]
+|-
+| 3
+| Emotion Alert
+| <code>{{gameText|EmojiCommand.EmotionAlert}}</code>
+| [[File:Emote Emotion Alert.gif|link=]]
+|-
+| 15
+| Emote Laugh
+| <code>{{gameText|EmojiCommand.EmoteLaugh}}</code>
+| [[File:Emote Emote Laugh.gif|link=]]
+|-
+| 136
+| Emote Happiness
+| <code>{{gameText|EmojiCommand.EmoteHappiness}}</code>
+| [[File:Emote Emote Happiness.gif|link=]]
+|-
+| 94
+| Emote Eating
+| <code>{{gameText|EmojiCommand.EmoteEating}}</code>
+| [[File:Emote Emote Eating.gif|link=]]
+|-
+| 16
+| Emote Fear
+| <code>{{gameText|EmojiCommand.EmoteFear}}</code>
+| [[File:Emote Emote Fear.gif|link=]]
+|-
+| 135
+| Emote Anger
+| <code>{{gameText|EmojiCommand.EmoteAnger}}</code>
+| [[File:Emote Emote Anger.gif|link=]]
+|-
+| 134
+| Emote Sadness
+| <code>{{gameText|EmojiCommand.EmoteSadness}}</code>
+| [[File:Emote Emote Sadness.gif|link=]]
+|-
+| 137
+| Emote Wink
+| <code>{{gameText|EmojiCommand.EmoteWink}}</code>
+| [[File:Emote Emote Wink.gif|link=]]
+|-
+| 138
+| Emote Scowl
+| <code>{{gameText|EmojiCommand.EmoteScowl}}</code>
+| [[File:Emote Emote Scowl.gif|link=]]
+|-
+| 139
+| Emote Silly
+| <code>{{gameText|EmojiCommand.EmoteSilly}}</code>
+| [[File:Emote Emote Silly.gif|link=]]
+|-
+| 17
+| Emote Note
+| <code>{{gameText|EmojiCommand.EmoteNote}}</code>
+| [[File:Emote Emote Note.gif|link=]]
+|-
+| 87
+| Emote Confused
+| <code>{{gameText|EmojiCommand.EmoteConfused}}</code>
+| [[File:Emote Emote Confused.gif|link=]]
+|-
+| 88
+| Emote Kiss
+| <code>{{gameText|EmojiCommand.EmoteKiss}}</code>
+| [[File:Emote Emote Kiss.gif|link=]]
+|-
+| 89
+| Emote Sleep
+| <code>{{gameText|EmojiCommand.EmoteSleep}}</code>
+| [[File:Emote Emote Sleep.gif|link=]]
+|-
+| 91
+| Emote Run
+| <code>{{gameText|EmojiCommand.EmoteRun}}</code>
+| [[File:Emote Emote Run.gif|link=]]
+|-
+| 92
+| Emote Kick
+| <code>{{gameText|EmojiCommand.EmoteKick}}</code>
+| [[File:Emote Emote Kick.gif|link=]]
+|-
+| 93
+| Emote Fight
+| <code>{{gameText|EmojiCommand.EmoteFight}}</code>
+| [[File:Emote Emote Fight.gif|link=]]
+|-
+| 8
+| Debuff Poison
+| <code>{{gameText|EmojiCommand.DebuffPoison}}</code>
+| [[File:Emote Debuff Poison.gif|link=]]
+|-
+| 9
+| Debuff Burn
+| <code>{{gameText|EmojiCommand.DebuffBurn}}</code>
+| [[File:Emote Debuff Burn.gif|link=]]
+|-
+| 10
+| Debuff Silence
+| <code>{{gameText|EmojiCommand.DebuffSilence}}</code>
+| [[File:Emote Debuff Silence.gif|link=]]
+|-
+| 11
+| Debuff Curse
+| <code>{{gameText|EmojiCommand.DebuffCurse}}</code>
+| [[File:Emote Debuff Curse.gif|link=]]
+|-
+| 14
+| Misc Tree
+| <code>{{gameText|EmojiCommand.MiscTree}}</code>
+| [[File:Emote Misc Tree.gif|link=]]
+|-
+| 100
+| Misc Fire
+| <code>{{gameText|EmojiCommand.MiscFire}}</code>
+| [[File:Emote Misc Fire.gif|link=]]
+|-
+| 146
+| Peckish
+| <code>{{gameText|EmojiCommand.Peckish}}</code>
+| [[File:Emote Peckish.gif|link=]]
+|-
+| 147
+| Hunger
+| <code>{{gameText|EmojiCommand.Hungry}}</code>
+| [[File:Emote Hungry.gif|link=]]
+|-
+| 148
+| Starving
+| <code>{{gameText|EmojiCommand.Starving}}</code>
+| [[File:Emote Starving.gif|link=]]
+|}
+
+=== {{gameText|UI.EmoteCategoryRPS}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+|-
+| 36
+| RPS Scissors
+| <code>{{gameText|EmojiCommand.RPSScissors}}</code>
+| [[File:Emote RPS Scissors.gif|link=]]
+|-
+| 37
+| RPS Rock
+| <code>{{gameText|EmojiCommand.RPSRock}}</code>
+| [[File:Emote RPS Rock.gif|link=]]
+|-
+| 38
+| RPS Paper
+| <code>{{gameText|EmojiCommand.RPSPaper}}</code>
+| [[File:Emote RPS Paper.gif|link=]]
+|-
+| 33
+| RPS Win Scissors
+| <code>{{gameText|EmojiCommand.RPSWinScissors}}</code>
+| [[File:Emote RPS Win Scissors.gif|link=]]
+|-
+| 34
+| RPS Win Rock
+| <code>{{gameText|EmojiCommand.RPSWinRock}}</code>
+| [[File:Emote RPS Win Rock.gif|link=]]
+|-
+| 35
+| RPS Win Paper
+| <code>{{gameText|EmojiCommand.RPSWinPaper}}</code>
+| [[File:Emote RPS Win Paper.gif|link=]]
+|}
+
+=== {{gameText|UI.EmoteCategoryItems}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+|-
+| 7
+| Item Ring
+| <code>{{gameText|EmojiCommand.ItemRing}}</code>
+| [[File:Emote Item Ring.gif|link=]]
+|-
+| 73
+| Item Life Potion
+| <code>{{gameText|EmojiCommand.ItemLifePotion}}</code>
+| [[File:Emote Item Life Potion.gif|link=]]
+|-
+| 74
+| Item Mana Potion
+| <code>{{gameText|EmojiCommand.ItemManaPotion}}</code>
+| [[File:Emote Item Mana Potion.gif|link=]]
+|-
+| 75
+| Item Soup
+| <code>{{gameText|EmojiCommand.ItemSoup}}</code>
+| [[File:Emote Item Soup.gif|link=]]
+|-
+| 76
+| Item Cooked Fish
+| <code>{{gameText|EmojiCommand.ItemCookedFish}}</code>
+| [[File:Emote Item Cooked Fish.gif|link=]]
+|-
+| 131
+| Item Beer
+| <code>{{gameText|EmojiCommand.ItemBeer}}</code>
+| [[File:Emote Item Beer.gif|link=]]
+|-
+| 77
+| Item Ale
+| <code>{{gameText|EmojiCommand.ItemAle}}</code>
+| [[File:Emote Item Ale.gif|link=]]
+|-
+| 78
+| Item Sword
+| <code>{{gameText|EmojiCommand.ItemSword}}</code>
+| [[File:Emote Item Sword.gif|link=]]
+|-
+| 79
+| Item Fishing Rod
+| <code>{{gameText|EmojiCommand.ItemFishingRod}}</code>
+| [[File:Emote Item Fishing Rod.gif|link=]]
+|-
+| 80
+| Item Bug Net
+| <code>{{gameText|EmojiCommand.ItemBugNet}}</code>
+| [[File:Emote Item Bug Net.gif|link=]]
+|-
+| 81
+| Item Dynamite
+| <code>{{gameText|EmojiCommand.ItemDynamite}}</code>
+| [[File:Emote Item Dynamite.gif|link=]]
+|-
+| 82
+| Item Minishark
+| <code>{{gameText|EmojiCommand.ItemMinishark}}</code>
+| [[File:Emote Item Minishark.gif|link=]]
+|-
+| 83
+| Item Cog
+| <code>{{gameText|EmojiCommand.ItemCog}}</code>
+| [[File:Emote Item Cog.gif|link=]]
+|-
+| 84
+| Item Tombstone
+| <code>{{gameText|EmojiCommand.ItemTombstone}}</code>
+| [[File:Emote Item Tombstone.gif|link=]]
+|-
+| 85
+| Item Goldpile
+| <code>{{gameText|EmojiCommand.ItemGoldpile}}</code>
+| [[File:Emote Item Goldpile.gif|link=]]
+|-
+| 86
+| Item Diamond Ring
+| <code>{{gameText|EmojiCommand.ItemDiamondRing}}</code>
+| [[File:Emote Item Diamond Ring.gif|link=]]
+|-
+| 90
+| Item Pickaxe
+| <code>{{gameText|EmojiCommand.ItemPickaxe}}</code>
+| [[File:Emote Item Pickaxe.gif|link=]]
+|-
+| 132
+| Item Defender Medal
+| <code>{{gameText|EmojiCommand.ItemDefenderMedal}}</code>
+| [[File:Emote Item Defender Medal.gif|link=]]
+|-
+| 126
+| Party Present
+| <code>{{gameText|EmojiCommand.PartyPresent}}</code>
+| [[File:Emote Party Present.gif|link=]]
+|-
+| 127
+| Party Balloons
+| <code>{{gameText|EmojiCommand.PartyBalloons}}</code>
+| [[File:Emote Party Balloons.gif|link=]]
+|-
+| 128
+| Party Cake
+| <code>{{gameText|EmojiCommand.PartyCake}}</code>
+| [[File:Emote Party Cake.gif|link=]]
+|-
+| 129
+| Party Hats
+| <code>{{gameText|EmojiCommand.PartyHats}}</code>
+| [[File:Emote Party Hats.gif|link=]]
+|-
+| 149
+| Lucy the Axe
+| <code>{{gameText|EmojiCommand.LucyTheAxe}}</code>
+| [[File:Emote Lucy The Axe.gif|link=]]
+|}
+
+=== {{gameText|UI.EmoteCategoryBiomesAndEvents}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+|-
+| 22
+| Biome Space
+| <code>{{gameText|EmojiCommand.BiomeSky}}</code>
+| [[File:Emote Biome Sky.gif|link=]]
+|-
+| 23
+| Biome Forest
+| <code>{{gameText|EmojiCommand.BiomeOtherworld}}</code>
+| [[File:Emote Biome Otherworld.gif|link=]]
+|-
+| 24
+| Biome Jungle
+| <code>{{gameText|EmojiCommand.BiomeJungle}}</code>
+| [[File:Emote Biome Jungle.gif|link=]]
+|-
+| 25
+| Biome Crimson
+| <code>{{gameText|EmojiCommand.BiomeCrimson}}</code>
+| [[File:Emote Biome Crimson.gif|link=]]
+|-
+| 26
+| Biome Corruption
+| <code>{{gameText|EmojiCommand.BiomeCorruption}}</code>
+| [[File:Emote Biome Corruption.gif|link=]]
+|-
+| 27
+| Biome Hallow
+| <code>{{gameText|EmojiCommand.BiomeHallow}}</code>
+| [[File:Emote Biome Hallow.gif|link=]]
+|-
+| 28
+| Biome Desert
+| <code>{{gameText|EmojiCommand.BiomeDesert}}</code>
+| [[File:Emote Biome Desert.gif|link=]]
+|-
+| 29
+| Biome Beach
+| <code>{{gameText|EmojiCommand.BiomeBeach}}</code>
+| [[File:Emote Biome Beach.gif|link=]]
+|-
+| 30
+| Biome Underground
+| <code>{{gameText|EmojiCommand.BiomeRocklayer}}</code>
+| [[File:Emote Biome Rocklayer.gif|link=]]
+|-
+| 31
+| Biome Underworld
+| <code>{{gameText|EmojiCommand.BiomeLavalayer}}</code>
+| [[File:Emote Biome Lavalayer.gif|link=]]
+|-
+| 32
+| Biome Snow
+| <code>{{gameText|EmojiCommand.BiomeSnow}}</code>
+| [[File:Emote Biome Snow.gif|link=]]
+|-
+| 18
+| Event Blood Moon
+| <code>{{gameText|EmojiCommand.EventBloodmoon}}</code>
+| [[File:Emote Event Bloodmoon.gif|link=]]
+|-
+| 19
+| Event Solar Eclipse
+| <code>{{gameText|EmojiCommand.EventEclipse}}</code>
+| [[File:Emote Event Eclipse.gif|link=]]
+|-
+| 20
+| Event Pumpkin Moon
+| <code>{{gameText|EmojiCommand.EventPumpkin}}</code>
+| [[File:Emote Event Pumpkin.gif|link=]]
+|-
+| 21
+| Event Frost Moon
+| <code>{{gameText|EmojiCommand.EventSnow}}</code>
+| [[File:Emote Event Snow.gif|link=]]
+|-
+| 99
+| Event Meteor
+| <code>{{gameText|EmojiCommand.EventMeteor}}</code>
+| [[File:Emote Event Meteor.gif|link=]]
+|-
+| 4
+| Weather Rain
+| <code>{{gameText|EmojiCommand.WeatherRain}}</code>
+| [[File:Emote Weather Rain.gif|link=]]
+|-
+| 5
+| Weather Lightning
+| <code>{{gameText|EmojiCommand.WeatherLightning}}</code>
+| [[File:Emote Weather Lightning.gif|link=]]
+|-
+| 6
+| Weather Rainbow
+| <code>{{gameText|EmojiCommand.WeatherRainbow}}</code>
+| [[File:Emote Weather Rainbow.gif|link=]]
+|-
+| 95
+| Weather Sunny
+| <code>{{gameText|EmojiCommand.WeatherSunny}}</code>
+| [[File:Emote Weather Sunny.gif|link=]]
+|-
+| 96
+| Weather Cloudy
+| <code>{{gameText|EmojiCommand.WeatherCloudy}}</code>
+| [[File:Emote Weather Cloudy.gif|link=]]
+|-
+| 97
+| Weather Storming
+| <code>{{gameText|EmojiCommand.WeatherStorming}}</code>
+| [[File:Emote Weather Storming.gif|link=]]
+|-
+| 98
+| Weather Blizzard
+| <code>{{gameText|EmojiCommand.WeatherSnowstorm}}</code>
+| [[File:Emote Weather Snowstorm.gif|link=]]
+|}
+
+=== {{gameText|UI.EmoteCategoryTownNPCs}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+|-
+| 101
+| Town Merchant
+| <code>{{gameText|EmojiCommand.TownMerchant}}</code>
+| [[File:Emote Town Merchant.gif|link=]]
+|-
+| 102
+| Town Nurse
+| <code>{{gameText|EmojiCommand.TownNurse}}</code>
+| [[File:Emote Town Nurse.gif|link=]]
+|-
+| 103
+| Town Arms Dealer
+| <code>{{gameText|EmojiCommand.TownArmsDealer}}</code>
+| [[File:Emote Town Arms Dealer.gif|link=]]
+|-
+| 104
+| Town Dryad
+| <code>{{gameText|EmojiCommand.TownDryad}}</code>
+| [[File:Emote Town Dryad.gif|link=]]
+|-
+| 105
+| Town Guide
+| <code>{{gameText|EmojiCommand.TownGuide}}</code>
+| [[File:Emote Town Guide.gif|link=]]
+|-
+| 106
+| Town Oldman
+| <code>{{gameText|EmojiCommand.TownOldman}}</code>
+| [[File:Emote Town Oldman.gif|link=]]
+|-
+| 107
+| Town Demolitionist
+| <code>{{gameText|EmojiCommand.TownDemolitionist}}</code>
+| [[File:Emote Town Demolitionist.gif|link=]]
+|-
+| 108
+| Town Clothier
+| <code>{{gameText|EmojiCommand.TownClothier}}</code>
+| [[File:Emote Town Clothier.gif|link=]]
+|-
+| 109
+| Town Goblin Tinkerer
+| <code>{{gameText|EmojiCommand.TownGoblinTinkerer}}</code>
+| [[File:Emote Town Goblin Tinkerer.gif|link=]]
+|-
+| 110
+| Town Wizard
+| <code>{{gameText|EmojiCommand.TownWizard}}</code>
+| [[File:Emote Town Wizard.gif|link=]]
+|-
+| 111
+| Town Mechanic
+| <code>{{gameText|EmojiCommand.TownMechanic}}</code>
+| [[File:Emote Town Mechanic.gif|link=]]
+|-
+| 112
+| Town Santa
+| <code>{{gameText|EmojiCommand.TownSanta}}</code>
+| [[File:Emote Town Santa.gif|link=]]
+|-
+| 113
+| Town Truffle
+| <code>{{gameText|EmojiCommand.TownTruffle}}</code>
+| [[File:Emote Town Truffle.gif|link=]]
+|-
+| 114
+| Town Steampunker
+| <code>{{gameText|EmojiCommand.TownSteampunker}}</code>
+| [[File:Emote Town Steampunker.gif|link=]]
+|-
+| 115
+| Town Dye Trader
+| <code>{{gameText|EmojiCommand.TownDyeTrader}}</code>
+| [[File:Emote Town Dye Trader.gif|link=]]
+|-
+| 116
+| Town Party Girl
+| <code>{{gameText|EmojiCommand.TownPartyGirl}}</code>
+| [[File:Emote Town Party Girl.gif|link=]]
+|-
+| 117
+| Town Cyborg
+| <code>{{gameText|EmojiCommand.TownCyborg}}</code>
+| [[File:Emote Town Cyborg.gif|link=]]
+|-
+| 118
+| Town Painter
+| <code>{{gameText|EmojiCommand.TownPainter}}</code>
+| [[File:Emote Town Painter.gif|link=]]
+|-
+| 119
+| Town Witch Doctor
+| <code>{{gameText|EmojiCommand.TownWitchDoctor}}</code>
+| [[File:Emote Town Witch Doctor.gif|link=]]
+|-
+| 120
+| Town Pirate
+| <code>{{gameText|EmojiCommand.TownPirate}}</code>
+| [[File:Emote Town Pirate.gif|link=]]
+|-
+| 121
+| Town Stylist
+| <code>{{gameText|EmojiCommand.TownStylist}}</code>
+| [[File:Emote Town Stylist.gif|link=]]
+|-
+| 122
+| Town Traveling Merchant
+| <code>{{gameText|EmojiCommand.TownTravellingMerchant}}</code>
+| [[File:Emote Town Travelling Merchant.gif|link=]]
+|-
+| 123
+| Town Angler
+| <code>{{gameText|EmojiCommand.TownAngler}}</code>
+| [[File:Emote Town Angler.gif|link=]]
+|-
+| 124
+| Town Skeleton Merchant
+| <code>{{gameText|EmojiCommand.TownSkeletonMerchant}}</code>
+| [[File:Emote Town Skeleton Merchant.gif|link=]]
+|-
+| 125
+| Town Tax Collector
+| <code>{{gameText|EmojiCommand.TownTaxCollector}}</code>
+| [[File:Emote Town Tax Collector.gif|link=]]
+|-
+| 130
+| Town Tavernkeep
+| <code>{{gameText|EmojiCommand.TownBartender}}</code>
+| [[File:Emote Town Bartender.gif|link=]]
+|-
+| 140
+| Town Golfer
+| <code>{{gameText|EmojiCommand.TownGolfer}}</code>
+| [[File:Emote Town Golfer.gif|link=]]
+|-
+| 141
+| Town Zoologist
+| <code>{{gameText|EmojiCommand.TownBestiaryGirl}}</code>
+| [[File:Emote Town Bestiary Girl.gif|link=]]
+|-
+| 142
+| Town Zoologist Fox
+| <code>{{gameText|EmojiCommand.TownBestiaryGirlFox}}</code>
+| [[File:Emote Town Bestiary Girl Fox.gif|link=]]
+|-
+| 145
+| Town Princess
+| <code>{{gameText|EmojiCommand.TownPrincess}}</code>
+| [[File:Emote Town Princess.gif|link=]]
+|}
+
+=== {{gameText|UI.EmoteCategoryCritters}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+! 解锁条件
+|-
+| 12
+| Critter Bee
+| <code>{{gameText|EmojiCommand.CritterBee}}</code>
+| [[File:Emote Critter Bee.gif|link=]]
+|-
+| 13
+| Critter Slime
+| <code>{{gameText|EmojiCommand.CritterSlime}}</code>
+| [[File:Emote Critter Slime.gif|link=]]
+|-
+| 61
+| Critter Zombie
+| <code>{{gameText|EmojiCommand.CritterZombie}}</code>
+| [[File:Emote Critter Zombie.gif|link=]]
+|-
+| 62
+| Critter Bunny
+| <code>{{gameText|EmojiCommand.CritterBunny}}</code>
+| [[File:Emote Critter Bunny.gif|link=]]
+|-
+| 63
+| Critter Butterfly
+| <code>{{gameText|EmojiCommand.CritterButterfly}}</code>
+| [[File:Emote Critter Butterfly.gif|link=]]
+|-
+| 67
+| Critter Spider
+| <code>{{gameText|EmojiCommand.CritterSpider}}</code>
+| [[File:Emote Critter Spider.gif|link=]]
+|-
+| 68
+| Critter Bird
+| <code>{{gameText|EmojiCommand.CritterBird}}</code>
+| [[File:Emote Critter Bird.gif|link=]]
+|-
+| 69
+| Critter Mouse
+| <code>{{gameText|EmojiCommand.CritterMouse}}</code>
+| [[File:Emote Critter Mouse.gif|link=]]
+|-
+| 70
+| Critter Goldfish
+| <code>{{gameText|EmojiCommand.CritterGoldfish}}</code>
+| [[File:Emote Critter Goldfish.gif|link=]]
+|-
+| 72
+| Critter Skeleton
+| <code>{{gameText|EmojiCommand.CritterSkeleton}}</code>
+| [[File:Emote Critter Skeleton.gif|link=]]
+|-
+| 64
+| Critter Goblin
+| <code>{{gameText|EmojiCommand.CritterGoblin}}</code>
+| [[File:Emote Critter Goblin.gif|link=]]
+| [[{{tr|Goblin Army}}]]被击败
+|-
+| 66
+| Critter Snowman
+| <code>{{gameText|EmojiCommand.CritterSnowman}}</code>
+| [[File:Emote Critter Snowman.gif|link=]]
+| [[{{tr|Frost Legion}}]]被击败
+|-
+| 65
+| Critter Pirate
+| <code>{{gameText|EmojiCommand.CritterPirate}}</code>
+| [[File:Emote Critter Pirate.gif|link=]]
+| [[{{tr|Pirate Invasion}}]]被击败
+|-
+| 71
+| Critter Martian
+| <code>{{gameText|EmojiCommand.CritterMartian}}</code>
+| [[File:Emote Critter Martian.gif|link=]]
+| [[{{tr|Martian Madness}}]]被击败
+|}
+
+=== {{gameText|UI.EmoteCategoryBosses}} ===
+{| class="terraria sortable"
+! width="45px" | ID
+! 名称
+! {{tr|Command}}
+! 图像
+! 解锁条件
+|-
+| 39
+| Boss Eye of Cthulhu
+| <code>{{gameText|EmojiCommand.BossEoC}}</code>
+| [[File:Emote Boss EoC.gif|link=]]
+| [[{{tr|Eye of Cthulhu}}]]被击败
+|-
+| 40
+| Boss Eater of Worlds
+| <code>{{gameText|EmojiCommand.BossEoW}}</code>
+| [[File:Emote Boss EoW.gif|link=]]
+| [[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]被击败
+|-
+| 41
+| Boss Brain of Cthulhu
+| <code>{{gameText|EmojiCommand.BossBoC}}</code>
+| [[File:Emote Boss BoC.gif|link=]]
+| [[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]被击败
+|-
+| 51
+| Boss King Slime
+| <code>{{gameText|EmojiCommand.BossKingSlime}}</code>
+| [[File:Emote Boss King Slime.gif|link=]]
+| [[{{tr|King Slime}}]]被击败
+|-
+| 150
+| Boss Deerclops
+| <code>{{gameText|EmojiCommand.BossDeerclops}}</code>
+| [[File:Emote Boss Deerclops.gif|link=]]
+| [[{{tr|Deerclops}}]]被击败
+|-
+| 42
+| Boss Queen Bee
+| <code>{{gameText|EmojiCommand.BossQueenBee}}</code>
+| [[File:Emote Boss Queen Bee.gif|link=]]
+| [[{{tr|Queen Bee}}]]被击败
+|-
+| 43
+| Boss Skeletron
+| <code>{{gameText|EmojiCommand.BossSkeletron}}</code>
+| [[File:Emote Boss Skeletron.gif|link=]]
+| [[{{tr|Skeletron}}]]被击败
+|-
+| 44
+| Boss Wall of Flesh
+| <code>{{gameText|EmojiCommand.BossWoF}}</code>
+| [[File:Emote Boss WoF.gif|link=]]
+| [[{{tr|Wall of Flesh}}]]被击败
+|-
+| 144
+| Boss Queen Slime
+| <code>{{gameText|EmojiCommand.BossQueenSlime}}</code>
+| [[File:Emote Boss Queen Slime.gif|link=]]
+| [[{{tr|Queen Slime}}]]被击败
+|-
+| 45
+| Boss The Destroyer
+| <code>{{gameText|EmojiCommand.BossDestroyer}}</code>
+| [[File:Emote Boss Destroyer.gif|link=]]
+| [[{{tr|The Destroyer}}]]被击败
+|-
+| 46
+| Boss Skeletron Prime
+| <code>{{gameText|EmojiCommand.BossSkeletronPrime}}</code>
+| [[File:Emote Boss Skeletron Prime.gif|link=]]
+| [[{{tr|Skeletron Prime}}]]被击败
+|-
+| 47
+| Boss The Twins
+| <code>{{gameText|EmojiCommand.BossTwins}}</code>
+| [[File:Emote Boss Twins.gif|link=]]
+| [[{{tr|The Twins}}]]被击败
+|-
+| 48
+| Boss Plantera
+| <code>{{gameText|EmojiCommand.BossPlantera}}</code>
+| [[File:Emote Boss Plantera.gif|link=]]
+| [[{{tr|Plantera}}]]被击败
+|-
+| 49
+| Boss Golem
+| <code>{{gameText|EmojiCommand.BossGolem}}</code>
+| [[File:Emote Boss Golem.gif|link=]]
+| [[{{tr|Golem}}]]被击败
+|-
+| 50
+| Boss Duke Fishron
+| <code>{{gameText|EmojiCommand.BossFishron}}</code>
+| [[File:Emote Boss Fishron.gif|link=]]
+| [[{{tr|Duke Fishron}}]]被击败
+|-
+| 143
+| Boss Empress of Light
+| <code>{{gameText|EmojiCommand.BossEmpressOfLight}}</code>
+| [[File:Emote Boss Empress of Light.gif|link=]]
+| [[{{tr|Empress of Light}}]]被击败
+|-
+| 52
+| Boss Lunatic Cultist
+| <code>{{gameText|EmojiCommand.BossCultist}}</code>
+| [[File:Emote Boss Cultist.gif|link=]]
+| [[{{tr|Lunatic Cultist}}]]被击败
+|-
+| 53
+| Boss Moon Lord
+| <code>{{gameText|EmojiCommand.BossMoonmoon}}</code>
+| [[File:Emote Boss Moonmoon.gif|link=]]
+| 被打败的[[{{tr|Moon Lord}}]]
+|-
+| 54
+| Boss Mourning Wood
+| <code>{{gameText|EmojiCommand.BossMourningWood}}</code>
+| [[File:Emote Boss Mourning Wood.gif|link=]]
+| [[{{tr|Mourning Wood}}]]被击败
+|-
+| 55
+| Boss Pumpking
+| <code>{{gameText|EmojiCommand.BossPumpking}}</code>
+| [[File:Emote Boss Pumpking.gif|link=]]
+| [[{{tr|Pumpking}}]]被击败
+|-
+| 56
+| Boss Everscream
+| <code>{{gameText|EmojiCommand.BossEverscream}}</code>
+| [[File:Emote Boss Everscream.gif|link=]]
+| [[{{tr|Everscream}}]]被击败
+|-
+| 57
+| Boss Ice Queen
+| <code>{{gameText|EmojiCommand.BossIceQueen}}</code>
+| [[File:Emote Boss Ice Queen.gif|link=]]
+| [[{{tr|Ice Queen}}]]被击败
+|-
+| 58
+| Boss Santa-NK1
+| <code>{{gameText|EmojiCommand.BossSantank}}</code>
+| [[File:Emote Boss Santank.gif|link=]]
+| [[{{tr|Santa-NK1}}]]被击败
+|-
+| 59
+| Boss Flying Dutchman
+| <code>{{gameText|EmojiCommand.BossPirateship}}</code>
+| [[File:Emote Boss Pirateship.gif|link=]]
+| [[{{tr|Pirate Invasion}}]]被击败
+|-
+| 60
+| Boss Martian Saucer
+| <code>{{gameText|EmojiCommand.BossMartianship}}</code>
+| [[File:Emote Boss Martianship.gif|link=]]
+| [[{{tr|Martian Saucer}}]]被击败
+|-
+| 133
+| Event Old Ones Army
+| <code>{{gameText|EmojiCommand.EventOldOnesArmy}}</code>
+| [[File:Emote Event Old Ones Army.gif|link=]]
+| 任意{{tr|tier}}的[[{{tr|Old One's Army}}]]被击败
+|}
+
+== 备注 ==
+* 在有[[{{tr|Corruption}}]]的世界中，[[{{tr|Brain of Cthulhu}}]]的{{tr|the emote}}会在击败[[{{tr|Eater of Worlds}}]]后于{{tr|Emotes}}窗口中解锁，反之亦然。
+
+== 花絮 ==
+* {{tr|the Twins}}{{tr|emote}}中只会显示[[{{tr|Retinazer}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.3|添加了 4 个新{{tr|emotes}}。}}
+{{history|Desktop 1.4.2.2|添加了“Item Ale”{{tr|emote}}到表情符号窗口中。}}
+{{history|Desktop 1.4.1|添加了 1 个新{{tr|emotes}}。}}
+{{history|Desktop 1.4.0.5|“[[{{tr|Empress of Light}}|Empress of Light]]”{{tr|emote}}的{{tr|command}}现在是“eol”，以匹配其他 {{tr|boss emote}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了 11 个新{{tr|emotes}}。
+** 添加了表情符号窗口，以及每个{{tr|Emotes}}的{{tr|command}}。}}
+{{history|Desktop 1.3.4|添加了 4 个新{{tr|emotes}}。}}
+{{history|Desktop 1.3.2|添加了 4 个新{{tr|emotes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+{{Game mechanics}}
+
+{{language info|en=Emotes}}

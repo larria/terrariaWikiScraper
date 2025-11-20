@@ -1,0 +1,46 @@
+{{item infobox
+| type = Key
+| tooltip = @@@@ {{eicons|1.3.0.1|small=y}} <br/>打开一个{{tr|Gold Chest}} {{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 327
+| tags = drop / loot
+| sounduse = Unlock.wav
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Golden Keys}}'''用于打开[[{{tr|Dungeon}}]]中的[[{{tr|Locked Gold Chest}}]]，以及在{{tr|Dungeon}}[[{{tr|fishing}}]]所得到的{{eil|Golden Lock Box}}，还用于从{{eil|Old Shaking Chest}}中释放{{eil|Elder Slime}}。{{tr|Golden Key}}在使用时会被消耗掉，因此每次解锁都额外需要一把{{tr|Golden Key}}。
+
+{{tr|Golden Keys}}可以通过如下方式获得：
+* 在[[{{tr|Dungeon}}]]中没上锁的普通[[{{tr|Chest}}]]内找到。
+* 击杀[[{{tr|Dungeon Slime}}]]（100% 几率）。
+* 击杀任意其他{{tr|Dungeon enemy}}，不包括[[{{tr|Dungeon|link=y}}#{{tr|Hardmode}}{{tr|Plantera}}后的{{tr|Dungeon}}|{{tr|Plantera}}后的{{tr|enemies}}]]（{{chance|24651/1625000|mode=p}} 几率{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterMiscDrops}}）。
+* 打破{{tr|Dungeon}}中的[[{{tr|Pot}}]]（{{chance|1/35}}{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.SpawnThingsFromPot}} 几率（{{eicons|1.4.0.1}}）/ {{chance|1/40}} 几率（{{eicons|1.4.0.1|invert=y}}））。
+__NOTOC__
+== 备注 ==
+* 在{{mobile version}}中，要打开{{tr|a Gold Chest}}，玩家的[[{{tr|inventory}}]]中必须有{{tr|Golden Key}}，然后点击{{tr|locked Gold Chest}}。
+* 当{{tr|Chest}}生成在{{tr|Dungeon}}入口时，有可能在打败{{tr|Skeletron}}之前就得到{{tr|Golden Key}}。
+
+== 成就 ==
+{{achievement|name=Dungeon Heist}}
+
+== 另见 ==
+* [[{{tr|Shadow Key}}]]
+* [[{{tr|Biome Keys}}]]
+* [[{{tr|Temple Key}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|从[[{{tr|pot}}]]的{{tr|Drop rate}}由 {{chance|1/40}} 提升至 {{chance|1/35}}。}}
+{{history|Desktop 1.3.1|外观和{{tr|tooltip}}更新。旧的外观是 [[File:Golden Key (old).png|12px]]。}}
+{{history|Desktop 1.2|不再为打开[[{{tr|Floating Island}}]]上的{{tr|chests}}所需。}}
+{{history|Desktop 1.1|提升了从{{tr|Dungeon enemies}}（{{chance|1/75}} 提升至 {{chance|1/65}}）和{{tr|Pots}}（{{chance|1/45}} 提升至 {{chance|1/40}}）获得{{tr|Golden Keys}}的几率。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Gold}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Golden Key}}

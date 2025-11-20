@@ -1,0 +1,29 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1256
+| tags = loot / bag loot
+| idprojectile = 243, 244, 245
+}}
+{{drop infobox|style=clear:right}}
+[[File:Crimson Rod (demo).gif|frame|{{tr|Crimson Rod}}的{{tr|rain cloud}}攻击[[{{tr|Target Dummy}}]]。注意雨滴能够穿透{{tr|enemies}}且不能够穿透墙体。]]
+{{distinguish|{{tr|Rod of Discord}}}}
+
+'''{{tr|Crimson Rod}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|Magic weapons}}]]，向{{tr|cursor}}位置发射一朵淡红色{{tr|rain cloud}}，向下倾泄的红色{{tr|droplets}}伤害下方的[[{{tr|enemies}}]]。一次使用可放置一朵{{tr|cloud}}{{tr|projectile}}且不会穿越地形，在到达目标位置前碰到任何墙体都会停下来。放置后，{{tr|cloud}}将会存在 5 {{tr|minute}}，类似于[[{{tr|Nimbus Rod}}]]的{{tr|cloud}}。此外，其覆盖范围相当狭窄，这使得{{tr|Crimson Rod}}在开阔地带很难用于对抗敏捷的{{tr|enemy}}，并且对付快速移动的敌人时效果不佳。{{tr|droplets}}可以穿透一个{{tr|enemy}}，在碰到第二个{{tr|enemy}}或者[[{{tr|solid block}}]]后就会消失。
+
+{{tr|The Crimson Rod}}有 {{chance|1/5}} 的概率通过摧毁[[{{tr|the Crimson}}]]中的[[{{tr|Crimson Heart}}]]获得或 {{chance|1/5}} 的概率从[[{{tr|Crimson Crate}}]]和[[{{tr|Hematic Crate}}]]中获得，后者是在{{tr|crimson}}中[[{{tr|Fishing}}]]获得的。
+
+{{modifier|magicnokb}}注意，因为{{tr|Crimson Rod}}的{{tr|summon}}方式与{{tr|sentry}}相类似，因此{{tr|mana usage}}通常来说不会成为问题；而对速度的{{tr|boosts}}只影响重新召唤出{{tr|rain cloud}}的速度，而不影响{{tr|rain cloud}}落下雨滴的速度。
+
+== 备注 ==
+* 将{{tr|cloud}}直接生成在一格方块厚度的地板上可以让雨穿过方块，击中下方的{{tr|enemies}}。
+* {{tr|Blood Rain}}{{tr|projectile}}击中{{tr|enemy}}时会造成 10 {{tr|ticks}}{{tick}}[[{{tr|static invincibility frame}}]]。
+* {{tr|cloud}}每 11 {{tr|ticks}}生成 1 滴雨滴，即每秒产生 5.45 滴雨滴。{{source code ref|name=ai|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为<code>aiStyle {{=}}{{=}} 45</code>代码段。}}
+* 雨滴在{{duration|{{projectileinfo|245|timeLeft}} ticks}}后消失，<ref name="ai"/> 这使它们可下落的最大距离为 {{#expr:(5<!-- velocity of the raindrop projectiles: 5 pixels per tick -->*{{projectileinfo|245|timeLeft}}+{{projectileinfo|245|height}})/16<!-- 16 pixels in a tile -->}} {{tr|tiles}}。
+
+== 小贴士 ==
+* {{tr|Crimson Rod}}在一些面对大片敌人的[[{{tr|Event}}]]中特别有用，比如[[{{tr|Goblin Army}}]]和[[{{tr|Blood Moon}}]]，因为大量的{{tr|enemy}}意味着通常会有{{tr|enemy}}被击中。
+* 大型目标，特别是 [[{{tr|bosses}}]]，可以被雨滴以极高的频率击中数次。
+* 此{{tr|weapon}}的低{{tr|base damage}}可以通过手持[[{{tr|melee weapon}}]]并使用[[{{tr|Sharpening Station}}]]来提升。
+** 这可与极高的攻击频率结合，使得{{tr|the Crimson Rod}}独自击杀{{tr|bosses}}快于其他大部分{{tr|magic weapons}}。
+* 雨滴是与{{tr|cloud}}首次生成时确定的，且此后不会改变。这允许使用一套具有高{{tr|damage modifiers}}的[[{{tr|loadout}}]]来获得高伤害的{{tr|cloud}}，再搭配一套防御性或高暴击的{{tr|loadout}}并使用另一个{{tr|weapon}}。
+* 将{{tr|cloud}}靠着墙放置有助于它造成{{tr|damage}}，因为很多{{tr|enemy}}在撞到的墙

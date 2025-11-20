@@ -1,0 +1,251 @@
+{{npc infobox
+| tabs = no
+| auto = 21
+| idprojectile = 471
+| image = Skeleton.gif
+| image2 = Skeleton (old).png
+| type = Undead Enemy
+| environment = Cavern
+| damage =
+| defense =
+| life =
+| knockback =
+| money =
+| Hook|1|4%
+| Carton of Milk|1|0.67%
+| Ancient Iron Helmet|1|1%
+| Ancient Gold Helmet|1|0.5%
+| Bone Sword|1|0.49%
+| Skull|1|0.2%
+| Bone|1-3|90% {{icon/3DS|small=y}} @normal
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+{{dablink|不要与 [[{{tr|boss}}]] [[{{tr|Skeletron}}]]和[[{{tr|敌怪}}]][[{{tr|Armored Skeleton}}]]相混淆。}}
+
+'''{{tr|Skeletons}}'''是一类[[{{tr|pre-hardmode}}]]的[[{{tr|enemies}}]]，在[[{{tr|Cavern}}]]{{tr|layer}}生成。它们遵循[[{{tr|Fighter AI}}]] 且能够打开[[{{tr|doors}}]]。在{{eversions|1.4.0.1}}中，它们在[[{{tr|Blood Moon}}]]期间才能打开{{tr|door}}。[[{{tr|Skeleton Statue}}]]可以生成{{tr|Regular Skeletons}}。
+
+在{{eil|Expert Mode}}中，部分{{tr|Skeletons}}能够投掷{{tr|bones}}。[[{{tr|Bone Skeleton Statue}}]]可以在任何{{tr|difficulty}}下生成{{tr|Regular Bone Throwing Skeletons}}。
+
+== 种类 ==
+{{npc infobox/tablestart}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist/moneyBlock}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[NPC IDs|NPC ID]]
+! colspan=2 | 种类
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+! {{tr|Coins}}
+{{npc infobox
+| auto = 21
+| image = Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 449
+<!--| expertonly = no (can be spawned by Bone Skeleton Statue) -->
+| image = Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+| damage2 = <br/>{{modes|30|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.SkeletonBone}}}}{{source code ref|name=bonedamage|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters / Terraria.Projectile.Damage|t={{tr|Bone}}在计算对玩家造成的伤害时，{{tr|base damage}}先乘以{{tr|difficulty}}系数，再额外乘以 2。}}
+}}
+{{npc infobox
+| auto = -46
+| imagealt = [[File:Skeleton.gif|{{#expr:30*0.9 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = -47
+| imagealt = [[File:Skeleton.gif|{{#expr:30*1.1 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 201
+| image = Headache Skeleton.gif
+| 
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 450
+| image = Headache Skeleton.gif
+| expertonly = yes
+| type = Undead Enemy
+| environment = Cavern
+| damage2 = <br/>{{modes|30|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.SkeletonBone}}}}<ref name="bonedamage"/>
+}}
+{{npc infobox
+| auto = -48
+| imagealt = [[File:Headache Skeleton.gif|{{#expr:34*0.93 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = -49
+| imagealt = [[File:Headache Skeleton.gif|{{#expr:34*1.07 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| image = Misassembled Skeleton.gif
+| auto = 202
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 451
+| expertonly = yes
+| image = Misassembled Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+| damage2 = <br/>{{modes|30|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.SkeletonBone}}}}<ref name="bonedamage"/>
+}}
+{{npc infobox
+| auto = -50
+| imagealt = [[File:Misassembled Skeleton.gif|{{#expr:34*0.87 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = -51
+| imagealt = [[File:Misassembled Skeleton.gif|{{#expr:34*1.13 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 203
+| image = Pantless Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 452
+
+| expertonly = yes
+| image = Pantless Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+| damage2 = <br/>{{modes|30|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.SkeletonBone}}}}<ref name="bonedamage"/>
+}}
+{{npc infobox
+| auto = -52
+| imagealt = [[File:Pantless Skeleton.gif|{{#expr:34*0.85 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = -53
+| imagealt = [[File:Pantless Skeleton.gif|{{#expr:34*1.15 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+|-
+! colspan=10 | [[{{tr|Halloween}}]]独有种类
+{{npc infobox
+| auto = 322
+| image = Top Hat Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 323
+| image = Astronaut Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = 324
+| image = Alien Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* 当常规{{tr|Skeleton}}（[[{{tr|NPC IDs}}|ID]] 21）尝试打开[[{{tr|Tall Gate}}]]时，它们的攻击不能被[[{{tr|dodge}}]]效果所闪避。{{source code ref|v=1.4.4.9|method=Terraria.NPC.IsDamageDodgeable|t=这可能是输入错误导致的。这种能力应当被给予白天时的[[{{tr|Skeletron}}]]。}}
+
+== 花絮 ==
+* {{tr|Skeletons}}在游戏中以超过 50 种不同的形式出现：
+{{collapse top|其他{{tr|skeleton}}主题{{tr|enemy}}列表}}
+{{options/set|item|wrap=y|maxsize=45px}}
+{{itemlist|width=16em
+|{{item|Angry Bones}}
+|{{item|Armored Skeleton}}
+|{{item|Armored Viking}}
+|{{item|Blue Armored Bones}}
+|{{item|Bone Lee}}
+|{{item|Cursed Skull}}
+|{{item|Dark Caster}}
+|{{item|Diabolist}}
+|{{item|Dragon Skull}}
+|{{item|Dungeon Guardian}}
+|{{item|Giant Cursed Skull}}
+|{{item|Hell Armored Bones}}
+|{{item|Hoplite}}
+|{{item|Old One's Skeleton}}
+|{{item|Necromancer}}
+|{{item|Ragged Caster}}
+|{{item|Rune Wizard}}
+|{{item|Rusty Armored Bones}}
+|{{item|Skeleton Archer}}
+|{{item|Skeleton Commando}}
+|{{item|Skeleton Merchant}}
+|{{item|Skeleton Sniper}}
+|{{item|Skeletron Prime}}
+|{{item|Skeletron|image=Skeletron Head.png}}
+|{{item|Spore Skeleton}}
+|{{item|Tactical Skeleton}}
+|{{item|Tim}}
+|{{item|Undead Miner}}
+|{{item|Undead Viking}}
+|{{item|Vampire Miner}}
+}}
+{{options/reset|item}}
+{{collapse bottom}}
+* 在游戏代码中，{{tr|Astronaut Skeleton}}（Astronaut Skeleton）的内部名称被错误拼写为<code>SkeletonAstonaut</code>。{{source code ref|v=1.4.4.9|constant=Terraria.ID.NPCID.SkeletonAstonaut}}
+* {{tr|Skeleton}} [[1.0.3]] 之前的{{tr|head sprite}}仍然用在游戏中的[[{{tr|Skull Lantern}}]]和[[{{tr|Mechanical Skull}}]]{{tr|items}}上。
+{{float file box|[[File:Skeleton (original).gif]]|{{tr|Skeleton}} [[1.0.3]] 之前的{{tr|sprite}}。}}
+* {{tr|Skeleton Banner}}看起来也是根据{{tr|the Skeleton}} [[1.0.3]] 之前的外观设计的。
+*  {{tr|Skeleton}}掉落[[{{tr|Carton of Milk}}]]可能是因为牛奶一类的{{wikipedia|dairy products|乳制品}}富含{{wikipedia|calcium|钙元素}}，而这是一种对于骨骼形成来说极为重要的化学元素。
+* {{tr|The Alien Skeleton}}的外观可能参考了 1996 年的美国科幻喜剧电影{{Wikipedia|Mars Attacks!|《火星人玩转地球（Mars Attack!）》}}。 
+{{bestiary
+|Skeleton
+|Top Hat Skeleton|Top Hat Skeleton-alias={{tr|Halloween Skeleton}}
+}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|在常规骷髅尝试打开[[{{tr|Tall Gate}}]]时，其伤害无法被[[{{tr|dodge}}]]效果所闪避。}}
+{{history|Desktop 1.4.0.1|
+** 所有{{tr|variants}}现在能够掉落[[{{tr|Carton of Milk}}]]。
+** 所有{{tr|variants}}仅能在[[{{tr|Blood Moon}}]]期间，或罕见地在[[{{tr|Graveyard}}]]中打开[[{{tr|doors}}]]或[[{{tr|Tall Gate}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Regular Skeleton, Headache Skeleton, Misassembled Skeleton, and Pantless Skeleton}}的{{tr|sprites updated}}，旧外观为[[File:Skeleton (old).png|link=]] [[File:Headache Skeleton (old).png|link=]] [[File:Misassembled Skeleton (old).png|link=]] [[File:Pantless Skeleton (old).png|link=]]。}}
+{{history|Desktop 1.2.1|添加了[[{{tr|Halloween}}]]{{tr|variants}}。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|
+** 引入{{tr|Headache Skeleton, Misassembled Skeleton and Pantless Skeleton}}{{tr|variants}}。
+** 现在有几率掉落{{tr|Ancient Iron Helmet, Ancient Gold Helmet, Bone Sword}}和/或{{tr|Skull}}。}}
+{{history|Desktop 1.0.3|
+** 掉落{{tr|Hook}} 的几率从 {{chance|1/30}} 变成了 {{chance|1/25}}。
+** {{tr|Sprite updated.}}旧外观为 [[File:Skeleton (original).gif|link=]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Skeleton}}

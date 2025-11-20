@@ -1,0 +1,66 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3269
+| sound1 = NPC Killed 17.wav
+| soundcaption2 = 攻击
+| idprojectile = 535, 536
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Medusa Head (demo).gif|frame|right|使用{{tr|The Medusa Head}}攻击[[{{tr|Mimics}}]]。]]
+
+'''{{tr|Medusa Head}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|Magic weapons}}]]，可以连续发射近距离的黄色光束，每秒最多发射四次，每次发射攻击{{tr|player}}周围小半径内最多三名[[{{tr|enemies}}]]。在每次击中时消耗 {{iteminfo|Medusa Head|mana}} [[{{tr|mana}}]]，且与击中{{tr|enemies}}的数量无关。若无{{tr|enemy}}在范围内时，则不消耗{{tr|mana}}。{{tr|The Medusa Head}}有 {{chance|1/25}} 的概率掉落自[[{{tr|Medusa}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* 在内部，{{tr|Medusa Head}}具有 {{iteminfo|Medusa Head|reuseDelay}} 的 <code>[[reuseDelay]]</code>，在每次开火间添加了 {{iteminfo|Medusa Head|reuseDelay}} {{tr|tick}}{{tick}}（{{duration|{{iteminfo|Medusa Head|reuseDelay}} ticks}}）的冷却。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults4}}
+* {{tr|Medusa Head}}不会对{{tr|enemy}}造成[[{{tr|Stoned}}]]减益，尽管{{tr|Medusa}}会。
+* {{tr|Medusa Head}}的中心点不是在举起的头颅上，而是在玩家的躯干前面、脸下面。因此，一些看起来会被作为目标的{{tr|enemy}}可能不会受到影响。此外，{{tr|Medusa Head}}与目标之间需要有最少两格空间让攻击“通过”并击中目标，这就导致了在狭窄的垂直隧道中释放向上或向下的攻击时，由于攻击起始点偏离了隧道中心位置因而会被墙壁挡住的情况。
+* 该武器的攻击有时会完全忽略靠近墙壁或者斜坡的{{tr|enemy}}，即使玩家与{{tr|enemy}}之间没有障碍物。这种情况在诸如[[{{tr|Green Slime}}]]等小型{{tr|enemy}}身上更常见。
+* {{tr|Medusa Head}}在 [[{{tr|PvP}}]] 中无法锁定其他{{tr|player}}。
+
+== 小贴士 ==
+* {{tr|Medusa Head}}的高频小范围攻击，让它成为了清除围绕着玩家的{{tr|enemy}}或者是不瞄准就杀怪的有力武器。不过，鉴于它仅可作用于有限个目标，它在对付[[{{tr|worm enemies}}]]或 {{tr|bosses}} 时，还是要比那些真正有穿透效果的武器略逊一筹的。
+* 考虑到{{tr|Medusa Head}}能造成区域伤害，它在诸如[[{{tr|Pirate Invasion}}]]和[[{{tr|Goblin Invasion}}]]这样的[[{{tr|events}}]]中可以大显身手。
+* {{tr|Medusa Head}}向周围不可见{{tr|enemy}}发射的射线，可以指示出其位置。
+* 鉴于同{{tr|Medusa}}战斗的危险性，得到{{tr|Medusa Head}}的最稳妥的方式是建造[[{{tr|Statues}}]]刷怪场。不过，由于雕像会降低掉落率，这需要相当耗费时间才能获得{{tr|Medusa Head}}；即使是三雕像刷怪场也可能耗费现实世界里超过一个小时的时间。
+
+== 花絮 ==
+* {{tr|Medusa Head}}发源于希腊神话中{{wikipedia|Perseus|珀尔修斯}}的传说，他被{{wikipedia|Polydectes|波吕得克忒斯}}要求杀死{{wikipedia|Gorgon|戈尔工}}三姐妹中的{{wikipedia|Medusa|美杜莎}}，并带回她的头颅。在此之后，珀尔修斯用它把海怪{{wikipedia|Cetus (mythology)|赛特斯}}变成了石头，进而救下了{{wikipedia|Andromeda (mythology)|安德洛莫达}}。
+* 使用时，{{tr|Medusa}}和其头上的毒蛇会伸出舌头，她的眼睛会开始闪烁。
+* 当在斜坡上骑乘[[{{tr|Minecart}}]]时，若使用{{tr|Medusa Head}}，这颗头看上去就会是凭空漂浮着的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Drop rate}}从 {{chance|1/50}} 增加至 {{chance|1/25}}。}}
+{{history|Desktop 1.4.1|作用范围增加 25%。}}
+{{history|Desktop 1.4.0.1|
+** 现在{{tr|Medusa Head}}不再需要充能，而是改为引导使用，且射程大幅缩短。当{{tr|enemy}}进入范围时，它会持续攻击附近的{{tr|enemy}}，每次攻击消耗{{tr|mana}}。每秒最多攻击 4 次，每次攻击最多命中 3 个目标。若范围内无{{tr|enemy}}则不会发射，也不消耗魔力。
+*** 此前，按住{{key|use}}键可为{{tr|Medusa Head}}充能最多3秒，每秒消耗 15 {{tr|mana}}（最高消耗 45 {{tr|mana}}）。达到 3 秒满充能或提前松开{{key|use}}键时，武器会释放并攻击50格范围内所有{{tr|enemy}}（但不能穿透{{tr|solid blocks}}）。伤害值取决于充能时长：充能 1 秒造成双倍伤害，满充能 3 秒造成三倍伤害。
+** {{tr|Damage}}由 45 降低至 40。
+** {{tr|Mana cost}}由 10 增加至 15。}}
+{{history|Desktop 1.3.1|
+** {{tr|Damage}}伤害从 28 提升至 45。
+** {{tr|Mana cost}}从 4 增加至 10。
+** 现在仅能在{{tr|Hardmode}}中获得，因为{{tr|Medusas}}不再生成在[[{{tr|pre-Hardmode}}]]。
+** 现在可以获得{{tr|Mythical}}{{tr|modifier}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|
+** {{tr|Damage}}伤害从 28 提升至 45 。
+** {{tr|Mana cost}}从 4 增加至 10。
+** 现在仅能在{{tr|Hardmode}}中获得，因为{{tr|Medusas}}不再生成在[[{{tr|pre-Hardmode}}]]
+** 现在可以获得{{tr|Mythical}}{{tr|modifier}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|引入电脑版 1.3.1 至 1.4.0.1 的更新。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Medusa Head}}

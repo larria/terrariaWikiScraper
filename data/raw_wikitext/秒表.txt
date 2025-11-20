@@ -1,0 +1,35 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3099
+| tags = informational / buyable / vendor:Traveling Merchant
+}}
+
+'''{{tr|Stopwatch}}'''是一个能够显示{{tr|player}}准确速度的[[{{tr|Informational accessories}}]]，例如：{{nowrap|"{{gameText|GameUI.Speed|x_0=34}}"}}（英里每小时）。它可以从[[{{tr|Traveling Merchant}}]]那里以 {{iteminfo|Stopwatch|buy}} 的价格购买。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Stopwatch|expectedrows=1}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* 在''[[{{tr|Terraria}}]]''中，英里每小时（mph）和{{tr|Tile}}每秒的转换倍率为 11/15 (0.7333...)；相反地，{{tr|tile}}每秒与英里每小时的转换倍率为 15/11 (1.363636...)。举个例子：[[{{tr|Minecart}}]]的最大速度为 66{{nbsp}}mph，即为 {{mph|66|tiles_text}}。
+** 这些信息来自于''{{tr|Terraria}}''的源代码。{{tr|player}}“像素每嘀嗒{{tick}}”的内部速度乘以<code>216000/42240</code>（{{wikipedia|hard-coded|硬编码}}）就得到了显示的“英里每小时”的速度。{{source code ref|v=1.4.0.5|method=Terraria.Main.DrawInfoAccs}}此分数的分子代表了以嘀嗒为单位的 1 小时：每秒 60 嘀嗒{{tick|short}}，乘以每小时 3600 秒=216000 嘀嗒。分母则代表了以像素为单位的 1 英里：每{{tr|tile}} 16 像素，乘以每英尺 1/2 {{tr|tile}}，再乘以每英里 5280 英尺=42240 像素。此分数的倒数<code>42240/216000</code>代表了“英里每小时”与“像素每嘀嗒”的转换倍率。1 像素每嘀嗒等于 1/16 {{tr|tile}}（1 {{tr|tile}}为 16 像素）每 1/60 秒（1 秒为 60 嘀嗒{{tick|short}}），因此“英里每小时”和“{{tr|tile}}每秒”的转换倍率如下：<code>{{nowrap|(42240/16)/(216000/60)}} = 2640/3600 = 11/15</code>。
+* 当跑步或乘坐[[{{tr|Minecart}}]]时，秒表只会显示当前水平速度。当做抛体运动时（如跳跃，飞行等），所显示的是各方向合速度的值。
+* 当{{tr|player}}沿着[[{{tr|Rope}}]]水平移动时，无论{{tr|player}}移动速度是多少，都会显示“{{gameText|GameUI.Speed|x_0=0}}”。
+
+== 历史 ==
+{{history|Desktop 1.3.3.1|修正了未正确显示[[{{tr|liquids}}]]中的速度的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Stopwatch}}

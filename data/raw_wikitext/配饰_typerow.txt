@@ -1,0 +1,55 @@
+<includeonly><!--
+-->{{#vardefine:subtype-accs:item|{{{1|}}}}}<!--
+-->
+{{!}}-
+{{!}} <!-- item -->{{item|{{#var:subtype-accs:item}}|wrap=y}}
+{{!}} <!-- source -->{{{3|{{itemsource|{{#var:subtype-accs:item}}|sep=<hr class{{=}}"incell-border"/>}}}}}
+{{!}} <!-- effects 
+	-->{{{2|<!--
+		-->{{#invoke:Iteminfo|getInfo|id={{itemIdFromName|{{#var:subtype-accs:item}}}}|prefix=subtype-accs:iteminfo_}}<!--
+		--><ul><!--
+		-->{{#ifexpr:{{#dplvar:subtype-accs:iteminfo_defense}}|<!--
+			--><li>{{l10n|getEquipInfo|stat_statDefense|$data1$={{#dplvar:subtype-accs:iteminfo_defense}}}}</li><!--
+		-->}}<!--
+		-->{{#ifexpr:{{#dplvar:subtype-accs:iteminfo_lifeRegen}}|<!--
+			--><li>{{l10n|getEquipInfo|stat_lifeRegen|$data1$={{#expr:{{#dplvar:subtype-accs:iteminfo_lifeRegen}}/2}}}}</li><!--
+		-->}}<!--
+		--></ul><!--
+		-->{{equipinfo/lua|{{#var:subtype-accs:item}}|list=y}}<!--
+	-->}}}
+{{!}} <!-- pre-hardmode 
+	-->{{#if:{{{hardmodeonly|}}}|{{#if:{{bool|{{{hardmodeonly|}}}}}|{{no}}|{{yes}}}}|<!--
+		-->{{#if:{{#cargo_query:tables=Items|fields=hardmode|where=name="{{#var:subtype-accs:item}}" and type HOLDS "accessory"|no html}}|{{no}}|{{yes}}}}<!--
+	-->}}
+{{!}} <!-- equipped image 
+	-->{{#vardefine:imagestr|{{{image|{{image|{{#var:subtype-accs:item}} (equipped).{{#if:{{{gif|}}}|gif|png}}}}}}}}}<!--
+	-->{{#var:imagestr|{{no}}}}<!--
+	-->{{#if:{{{ref|}}}|{{#tag:ref||name="{{trim|{{{ref|}}}}}"}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Used for printing a table row on the different accessory type pages, like [[Movement Accessories]], [[Informational Accessories]], etc.
+
+{| class=terraria lined
+! colspan=2 | Parameters !! Default if omitted
+|-
+| 1 || Accessory name || {{na}}
+|-
+| 2 || Effects || {{tl|equipinfo/lua|list{{=}}y}}
+|-
+| 3 || Source || {{tl|itemsource}}
+|-
+| hardmodeonly || Obtainable pre-Hardmode;<br/>y/yes for {{tl|no}}, n/no for {{tl|yes}} || Data from cargo
+|-
+| ref || Reference name || {{na}}
+|-
+| gif || Use the gif version of the equipped image || {{na}}
+|-
+| image || Custom wikitext for the equipped image || {{na}}
+|}
+
+{{language info|en=Accessories/typerow}}
+</noinclude>

@@ -1,0 +1,58 @@
+{{item infobox
+| type = Light source
+| auto = 282
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = Vendor / Drop /Loot / vendor:Merchant / vendor:Skeleton Merchant
+}}
+{{drop infobox|style=clear:right}}
+[[File:Glowstick (demo).gif|235px|frame|{{tr|Glowsticks}}使用中。]]
+
+'''{{tr|Glowstick}}'''是一种[[{{tr|consumable}}]][[{{tr|Light sources}}|{{tr|light source}}]]，可以手持或者投掷到相当的距离，并在水下也能生效，但不能像[[{{tr|Torch}}]]那样[[{{tr|place}}]]在墙或者地面上（但[[{{tr|Sticky Glowstick}}]]会粘在它们被抛到的表面上）。抛出后，{{tr|Glowsticks}}会发光很长一段时间，并且在 5 分钟后有 {{chance|1/3}} 几率可回收。{{tr|Glowsticks}}可以在[[{{tr|Night}}]]从[[{{tr|Merchant}}]]处以每根 {{iteminfo|Glowstick|buy}} 的价格购买，或者在除[[{{tr|Full Moon}}]]外的任何[[{{tr|moon phase}}]]的{{tr|day}}从[[{{tr|Skeleton Merchant}}]]处以 {{iteminfo|Glowstick|buy}} 的价格购买。{{tr|Glowsticks}}以 100% 掉落率掉落自[[{{tr|Jellyfish}}|{{tr|Blue}}]]、[[{{tr|Jellyfish}}|{{tr|Pink}}]]、和[[{{tr|Green Jellyfish}}]]，{{eicons|1.4.4}}以及[[{{tr|Flying Fish}}]]和[[{{tr|Raincoat Zombie}}]]。{{tr|Glowsticks}}在[[{{tr|Pots}}]]和[[{{tr|Chest}}]]中也常会出现。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Glowstick|expectedrows=2}}
+
+== 不可制作的 ==
+{| class="terraria"
+|-
+! 名称 !! 获取：
+|-
+|{{item|Spelunker Glowstick}} || 由[[{{tr|Skeleton Merchant}}]]出售
+|-
+|{{item|Fairy Glowstick}} || 由[[{{tr|Zoologist}}]]出售
+|}
+
+== 备注 ==
+* 使用{{tr|Glowsticks}}（即，选定{{tr|glowstick}}后按{{key|use}}键）会将其抛出。它们并''不是''通过按{{key|throw}}键抛出的；试图这么做会把[[{{tr|Inventory}}|整组]]全部扔掉，而这一组{{tr|Glowsticks}}在脱离玩家后只会行进几格。
+* 抛出后，如果玩家退出此世界，{{tr|Glowsticks}}会消失。
+
+== 小贴士 ==
+* 在向正下方挖掘时{{tr|The Glowstick}}可以用作移动{{tr|light source}}，因为当它下面的{{tr|blocks}}被挖走后它会继续随着玩家一起落下。
+* 与{{tr|torches}}不同，{{tr|Glowsticks}}可以从远处扔过去来照亮一个区域。这也使得它很适合于在[[{{tr|The Torch God}}]][[{{tr|event}}]]期间用来照亮地下区域。
+* 就像{{tr|boomerangs}}一样，如果以正确的角度投掷，{{tr|a Glowstick}}可以穿过 1 格厚的墙。
+* 由于能在水下起作用，它们可作为{{tr|torches}}的优质廉价替代品。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Fairy Glowstick}}]]。
+** {{tr|Stack limit}}从 99 提升至 999。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Bouncy Glowstick}}]]和[[{{tr|Spelunker Glowstick}}]]。}}
+{{history|Desktop 1.2.4.1|修正了当鼠标在玩家附近处于干燥区域时{{tr|glowsticks}}不会被选定的 {{tr|bug}}（[[{{tr|Auto Select}}]]）。}}
+{{history|Desktop 1.0.6|
+** 购买与卖出的价格由 {{cc|20}} / {{cc|4}} 降低至 {{cc|10}} / {{cc|2}}。
+** 亮度提升。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Glowstick}}

@@ -1,0 +1,63 @@
+{{exclusive|1.4.0.1}}
+[[File:BiomeBannerThunderstorm.png|center]]
+[[File:Thunderstorm lake.gif|alt=|thumb|300x300px|{{tr|thunderstorm}}对环境造成的影响。]]
+{{quotation|[[{{tr|Dryad}}]]|“{{gameText|DryadSpecialText.Storm1}}”}}
+
+'''{{tr|Thunderstorms}}'''是一种少见的{{tr|event}}，在[[{{tr|wind}}]]速达到 20 {{tr|mph}} 且降雨量达到 50% 时开始，直至风速降至 16 {{tr|mph}} 或降雨量降至 40% 时结束。本质上，它其实就是[[{{tr|Rain}}]]和[[{{tr|Windy Day}}]]两种{{tr|events}}的结合。 
+
+{{tr|Thunderstorms}}保留了下雨的所有效果，包括下雨时会生成的[[{{tr|enemies}}]]，以及在[[{{tr|Snow biome}}]]会造成{{tr|Blizzards}}。不过，{{tr|Windy Day}}的敌怪不会生成，也不会有其特殊物品掉落。
+
+偶尔，闪电会在屏幕上制造出闪光，动画结束后还会有雷声。{{tr|Thunderstorms}}时风速显著增加，让树叶下落的超级快。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+    -->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Thunderbolt}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Storm)|{{sound|track=Storm}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->|{{item|Otherworldly Music Box (Rain)| {{sound|track=Rain (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+    
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* {{tr|Lightning}}仅仅是视觉效果，不会劈中玩家。
+* 地表[[{{tr|Snow biome}}|{{tr|Snow}}]]、[[{{tr|The Corruption}}|{{tr|Corruption}}]]和[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|biomes}}的背景音乐不会因{{tr|Thunderstorm}}而发生改变。
+** {{tr|Thunderstorm}}时，如果在[[{{tr|Desert}}]]发生了[[{{tr|Sandstorm}}]]将会播放{{tr|Sandstorm}}的音乐。
+* [[{{tr|NPC}}]] 在{{tr|Thunderstorms}}时有特殊对话。
+** 不过和[[{{tr|Guide}}]]所说的不同，{{tr|Thunderstorms}}时不会有特殊敌怪生成，{{tr|lightning}}也不会造成损害。
+* [[{{tr|Weather Radio}}]]能侦测到{{tr|Thunderstorms}}。
+* 有一个[[Config.json 设置|{{tr|experimental features}}]]能关闭{{tr|lightning}}的动画效果。
+
+== 花絮 ==
+* 在早期{{mobile version}}中，相似的{{tr|lightning}}效果会在下雨时出现，但并无雷声。
+
+== 历史 ==
+{{history|Desktop 1.4.4.4|修复了{{tr|Thunderstorm}}/{{tr|lightning}}在游戏时间被加速后变得非常快，导致每秒帧数下降和具有潜在危害性的频繁闪光的问题。}}
+{{history|Desktop 1.4.4|[[{{tr|Painter}}]]现在会在{{tr|Thunderstorms}}期间出售[[{{tr|Thunderbolt}}]]。}}
+{{history|Desktop 1.4.0.3|添加了一项能消除{{tr|lightning}}的[[Config.json 设置|{{tr|experimental feature}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+
+{{Events}}
+
+[[Category:随机事件]]
+
+{{language info|en=Thunderstorm}}

@@ -1,0 +1,40 @@
+{{item infobox
+| type = Potion
+| auto = 303
+| buffduration = {{etext|@@@@|e=1.4.0.1|small=y}}<br/>{{etext|{{duration|240}}|e=1.4.0.1|invert=y|small=y}}
+| tags = loot
+}}
+
+'''{{tr|Archery Potion}}'''是种在喝下后会给予'''{{tr|Archery}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。此{{tr|buff}}会将发射[[{{tr|arrow}}]]的武器的[[伤害]]提高 {{eicons|1.4.4}} 10% / {{eicons|1.4.4|invert=y}} 20%，还能将[[{{tr|velocity}}]]提高 20%。{{potionlength|{{etext|{{duration|480}}|e=1.4.0.1}} / {{etext|{{duration|240}}|e=1.4.0.1|invert=y}}}}
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Archery Potion|expectedrows=1}}
+
+== 备注 ==
+* 与其他{{tr|items}}不同，它直接将{{tr|bows}}和{{tr|repeaters}}的总伤害增加了 {{eicons|1.4.4}} 10% / {{eicons|1.4.4|invert=y}} 20%，换句话说，它和其他增强（包括来自[[{{tr|Shroomite armor}}|{{tr|Shroomite Headgear}}]]和[[{{tr|Magic Quiver}}]]的伤害增强）是相乘的。
+* 虽然其{{tr|tooltip}}说提高仅限于{{tr|bow}}的伤害，但它实际上提高的是{{tr|bow}}或{{tr|repeater}}与{{tr|the ammo}}的组合伤害。{{source code ref|v=1.4.0.5|method=Terraria.Player.PickAmmo}}
+* 在{{eversions|1.4.0.1|short=y}}上，它也会影响[[{{tr|Stake Launcher}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Bow}}的伤害加成从 1.2x 降低至 1.1x。}}
+{{history|Desktop 1.4.0.1|
+**{{tr|duration}}由 4 提升至 8 {{tr|minutes}}。
+** 现在也影响{{tr|the Stake Launcher}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated}}。旧{{tr|sprite}}为：[[File:Archery_Potion_(old).png|20px]]。}}
+{{history|Desktop 1.2.3|现在当它生效时可以在物品的工具提示上看到{{tr|archery buff}}的伤害增强。}}
+{{history|Desktop 1.0.6|现在会增强{{tr|arrow}}的速度和伤害 20% 而非 15%。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-buff = yes
+}}
+
+{{language info|en=Archery Potion}}

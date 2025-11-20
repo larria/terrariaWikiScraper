@@ -1,0 +1,49 @@
+{{item infobox
+| type = Potion
+| auto = 2324
+| buffduration = @@@@ {{eicons|1.4.4|small=y}}<br/>{{duration|480}} {{eicons|1.4.4|invert=y|small=y}}
+| tags = loot / bag loot
+}}
+
+'''{{tr|Calming Potion}}'''是个在喝下后会给予'''{{tr|Calm}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。此{{tr|buff}}会将[[{{tr|enemy}}]]的{{tr|spawn rate}}降低{{eicons|1.4.4}} 39% / {{eicons|1.3.0.1|invert=y}} 17%，并且屏幕上同时存在的{{tr|enemies}}的最大数量减少{{eicons|1.4.4}} 40% / {{eicons|1.3.0.1|invert=y}} 20%。{{potionlength|{{eicons|1.4.4}} {{iteminfo|Calming Potion|buffduration}} / {{eicons|1.4.4|invert=y}} {{duration|480}}}}
+	
+除了通过制作获得，{{tr|Calming Potions}}还可以在[[{{tr|pot}}]]、[[{{tr|chests}}]]和[[{{tr|crates}}]]中找到。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Calming Potion|expectedrows=1}}
+
+== 备注 ==
+* 此{{tr|buff}}不能降低[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]或[[{{tr|Frost Legion}}]][[{{tr|events}}]]期间的{{tr|enemy spawn rates}}。 
+* {{tr|calm buff}}能够与[[{{tr|Peace Candle}}]]提供的{{tr|buff}}以及[[{{tr|Sunflower}}]]的[[{{tr|Happy!}}]]{{tr|buff}}叠加，更大程度上降低{{tr|enemy}}[[{{tr|spawn rate}}]]。
+* [[{{tr|Battle Potion}}]]拥有相反的{{tr|effect}}。
+
+== 小贴士 ==
+* 如果玩家想要开启[[{{tr|Dungeon}}]]中[[{{tr|chest}}]]并且已经有了足够数量的[[{{tr|Golden Keys}}]]，可以在进入前使用该药水。
+* 尽管它对与 [[{{tr|boss}}]] 战斗没有直接帮助，但在对付像是[[{{tr|Queen Bee}}]]或[[{{tr|Wall of Flesh}}]]等所在{{tr|biomes}}往往有会使得战斗更加困难的大量{{tr|enemy}}{{tr|spawns}}的 {{tr|boss}} 时，它能够派上用场。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将{{tr|spawn rate}}减少从 23% 增加至 39% ，并将最大敌怪数减少从 30% 增加至 40%。
+** {{tr|Duration}}由 8 {{tr|minutes}}提升至 12 {{tr|minutes}}。}}
+{{history|Desktop 1.4.0.1|将{{tr|buff tooltip}}从“降低{{tr|enemy}}侵略性”更改为“降低敌人生成速度”。}}
+{{history|Desktop 1.3.0.1|
+** 将{{tr|spawn rate}}减少从 17% 增加至 23% ，并将最大敌怪数减少从 20% 增加至 30%。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated.}}（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated.}}（{{icon|ps4}}）}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，{{tr|sprite updated}}以符合电脑版 [[1.3.0.1]]。}}
+{{history|Mobile 1.3.0.7|{{tr|Sprite updated.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Calming Potion}}

@@ -1,0 +1,82 @@
+{{exclusive|1.3.0.1}}
+
+'''{{tr|Ghouls}}'''是[[{{tr|Hardmode}}]][[{{tr|Underground Desert}}]]和[[{{tr|Desert}}]]中的[[{{tr|enemies}}]]，遵循[[{{tr|Fighter AI}}]]（行为类似于[[{{tr|Zombie}}]]）。普通{{tr|Ghouls}}生成在普通{{tr|Underground Desert}}中，{{tr|Tainted Ghoul}}生成在[[{{tr|Crimson}}]]{{tr|Underground Desert}}，{{tr|Vile Ghoul}}生成在[[{{tr|Corrupted}}]]{{tr|Underground Desert}}，{{tr|Dreamer Ghoul}}生成在[[{{tr|Hallowed}}]]{{tr|Underground Desert}}。
+
+== 种类 ==
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 524
+| image = Ghoul.gif
+| environment = Underground Desert
+| Ancient Cloth|1|10%
+| sound1 = Zombie 55.wav, Zombie 56.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+|{{npc infobox
+| auto = 525
+| image = Vile Ghoul.gif
+| environment = Underground Desert+Underground Corruption
+| debuff = Cursed Inferno
+| debuffchance = 100%
+| debuffduration = {{modes|{{duration|7}}|{{duration|14}}|{{duration|17.5}}}}
+| Cursed Flame|1-3|33.3%
+| Dark Shard|1|6.67%
+| Ancient Cloth|1|10%
+| sound1 = Zombie 55.wav, Zombie 56.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+|{{npc infobox
+| auto = 526
+| image = Tainted Ghoul.gif
+| environment = Underground Desert+Underground Crimson
+| debuff = Ichor
+| debuffchance = 100%
+| debuffduration = {{modes|{{duration|7}}|{{duration|14}}|{{duration|17.5}}}}
+| Ichor|1-3|33.3%
+| Dark Shard|1|6.67%
+| Ancient Cloth|1|10%
+| sound1 = Zombie 55.wav, Zombie 56.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+|{{npc infobox
+| auto = 527
+| image = Dreamer Ghoul.gif
+| environment = Underground Desert+Underground Hallow
+| debuff = Confused
+| debuffchance = 100%
+| debuffduration = {{modes|{{duration|14}}|{{duration|28}}|{{duration|35}}}}
+| Light Shard|1|6.67%
+| Ancient Cloth|1|10%
+| sound1 = Zombie 55.wav, Zombie 56.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+}}
+
+== 小贴士 ==
+* {{tr|Hallow}}和{{tr|Corruption}}/{{tr|Crimson}}的不同变种会造成不同{{tr|debuff}}，这会造成很大的危险，即便{{tr|player}}使用[[{{tr|Plantera}}]]前的{{tr|equipment}}也是如此。但是，只要小心行事，这些困难都可以轻松避开。
+
+== 花絮 ==
+* {{维基百科|ghoul|{{tr|ghoul}}}}在许多游戏中都是很平常的{{tr|enemy}}，它很符合''[[{{tr|Terraria}}]]''中的{{tr|Desert biomes}}。{{tr|Ghouls}}最初可以追溯到阿拉伯的以沙漠中的旅人的血肉为食，并且亵渎埋于地下的坟墓的妖怪的故事。
+* 似乎{{tr|Corruption}}/{{tr|Crimson}}和{{tr|Hallow}}版的{{tr|Ghouls}}都有液体从下巴滴落，然而普通{{tr|Ghouls}}则没有。
+** 这被其[[{{tr|Bestiary}}]]条目所证实。
+* 奇怪的是，{{tr|Ghouls}}对它们造成的{{tr|debuff}}并不免疫，{{tr|Dreamer Ghoul}}除外。
+{{bestiary|Ghoul|Vile Ghoul|Tainted Ghoul|Dreamer Ghoul}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|不再掉落 1–3 个[[{{tr|Ancient Cloth}}]]而只掉落 1 个。将掉率从 6.67% 提升至 10%。}}
+{{history|Desktop 1.3.3|现在会掉落[[{{tr|Ancient Cloth}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Ghouls}}

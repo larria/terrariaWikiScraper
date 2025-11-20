@@ -1,0 +1,44 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4879
+| type = Grab bag
+| tags = bag loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Obsidian Lock Box}}'''是一个[[{{tr|Grab bags}}]]类型的物品，必定可以从[[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]中获得。它总是包含正常情况下发现于[[{{tr|Underworld}}]]中上锁的[[{{tr|Shadow Chest}}]]内的稀有物品。打开它需要玩家物品栏中有一把[[{{tr|Shadow Key}}]]，后者可以在[[{{tr|Dungeon}}]]中的[[{{tr|Gold Chest}}]]或者[[{{tr|Golden Lock Box}}]]里找到。
+
+== 掉落 ==
+{{loot
+
+|:group:start|1|
+  | Dark Lance||1/5
+  | Sunfury||1/5
+  |:custom:Flower of Fire<!--Do not storage Unholy Trident to cargo-->:{{item|Flower of Fire|note2=（在普通{{tr|worlds}}中）}}<br/>{{item|Unholy Trident|note2=（在 [[don't dig up]] 和 [[get fixed boi]] {{tr|worlds}}中）}}||1/5
+  | Flamelash||1/5
+  | Hellwing Bow||1/5
+|:group:end|-----------------|-
+
+| Treasure Magnet|1|1/5
+
+}}
+
+== 小贴士 ==
+* {{tr|The Obsidian Lock Box}}可以卖出 {{iteminfo|Obsidian Lock Box|sell}}，但其中的每个{{tr|item}}都可以卖出 {{iteminfo|Dark Lance|sell}}。因此，将其打开并卖出其中包含的物品，可以比卖出{{tr|The Obsidian Lock Box}}至少多赚<!-- separate 1/5 chance for Treasure Magnet unaccounted for, hence "at least" --> {{percent|{{sell expr|raw=y|Dark Lance|/|Obsidian Lock Box}}}}。
+
+== 另见 ==
+* {{item|Golden Lock Box}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|所有{{tr|items}}的掉落几率均从 {{chance|1/6}} 提升至 {{chance|1/5}}。}}
+{{history|Desktop 1.4.3.3|[[{{tr|Journey Mode}}]]中的研究数量由 10 降低至 5。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Obsidian Lock Box}}

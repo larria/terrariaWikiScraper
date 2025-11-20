@@ -1,0 +1,47 @@
+{{exclusive|1.4.4}}
+{{infobox wrapper
+|{{item infobox | boxwidth = 18em
+| auto = 5350
+}}
+|{{npc infobox | boxwidth = 18em
+| auto = 677
+| image = Faeling.gif
+| type = Critter
+| environment = Aether
+}}
+}}
+
+'''{{tr|Faeling}}'''是一种飞行[[{{tr|critters}}]]，会在[[{{tr|Aether}}]]中自然生成。大部分接触[[{{tr|Shimmer}}]]的{{tr|critter}}也会被嬗变成{{tr|Faeling}}。{{tr|Faelings}}能够穿过[[{{tr|blocks}}]]，且如果玩家离得太近，它们就会试图飞离玩家。
+
+{{critter info|nostatue=y|cagename=[[{{tr|Faeling in a Bottle}}]]}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Faeling|expectedrows=1}}
+
+== 备注 ==
+* 当不存在{{tr|Faelings}}时，玩家进入{{tr|the Aether}}时会立即无视 {{tr|NPC spawn rate}}生成 2–5 只{{tr|Faelings}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnFaelings}}
+* 当一叠[[{{tr|critter}}]]{{tr|items}}被丢入{{tr|Shimmer}}来生成{{tr|Faelings}}时，一次最多只会嬗变 50 个{{tr|items}}。{{tr|transmutation}}后，堆叠中剩余的部分会向上浮起并可重新拾起。{{source code ref|v=1.4.4.9|method=Terraria.Item.GetShimmered}}
+* {{tr|Faelings}}自身、[[{{tr|Party Bunny}}]]、[[{{tr|Gold Worm}}]]、[[{{tr|Gem Bunny}}]]、和[[{{tr|Gem Squirrel}}]]是仅有的在[[{{tr|Shimmer Transmutation}}]]过程中不会被嬗变为{{tr|Faelings}}的{{tr|critters}}。
+** [[{{tr|Gold Worm}}]]会嬗变为[[{{tr|Gummy Worm}}]]。
+** 各种[[{{tr|Gem Bunnies}}]]和[[{{tr|Gem Squirrel}}]]会被嬗变为对应的{{tr|gems}}。
+** 行走的[[{{tr|Goldfish}}]]和[[{{tr|Gold Goldfish}}]]在被少量{{tr|Shimmer}}部分浸没时，不会被嬗变为{{tr|Faelings}}。不过，在不下{{tr|rain}}时，或者通过某种方法把它们转化为其游泳形态后，它们会和大部分{{tr|critter}}一样被嬗变。
+
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Faeling}}

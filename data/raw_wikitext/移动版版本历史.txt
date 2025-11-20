@@ -1,0 +1,1920 @@
+{{update|t=y}}
+__FORCETOC__
+{{exclusive|mobile=y|nocat=y}}
+{{about|[[{{tr|Terraria}}]][[{{tr|Mobile version}}]]的所有更新|电脑版更新列表|电脑版版本历史|主机版更新列表|主机版版本历史|3DS版更新列表|3DS版版本历史|未来电脑版的更新|即将推出的新功能|移动版词条|移动版|心动版版本历史|移动中国版/心动版版本历史}}
+
+此页列出了[[《{{tr|Terraria}}》]]的各种'''{{tr|Mobile version}}'''的更新。
+
+{{3DS}} 和 {{switch version}} 是主机版和移动版的混合，两者都有自己的更新路径。 见[[3DS版版本历史]]和[[主机版版本历史]]分别获取更新的完整列表。
+
+注： 尽管 {{icon/google play}} Google Play 和 {{icon/amazon}} 亚马逊商店销售的版本都可以在 {{icon/android}} 安卓设备上运行，但它们拥有不同的更新路径（每个更新的发布日期不同），因此它们的版本号是单独列出的。
+
+== 更新日志 ==
+=== 1.3 之后 ===
+__FORCETOC__
+{| class="terraria lined mw-collapsible" style="width:100%"
+!版本
+!发布时间
+!更改
+
+{{/row
+| v = 1.4.4.9.6 (Build 1284)
+| platform = googleplay
+| name = 修补程序
+| date-googleplay = 2024/10/22
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+* 满足API目标级别要求的小更新。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.9.5 (Build 1081)
+| platform = ios/googleplay/amazon
+| name = 修补程序
+| date-ios-googleplay = 2023/10/02
+| date-amazon = 2023/10/03
+| ref = {{forums thread|129594|Terraria 1.4.4.9.5 - Console & Mobile Fixes Out Today}} {{small|{{date|2023|10|02}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+修复了多人游戏在持有物品时离开宝箱然后交换物品栏时崩溃的问题。
+修复了在尝试填充物品栏时崩溃的问题，方法是右键单击以仅获取一个重复的物品（而不是堆叠），然后将其放入物品框中。
+
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.9.2 (Build 1015)
+| platform = ios/googleplay/amazon
+| name = 修补程序
+| date = 2023/05/02
+| ref = {{forums thread|118217|Terraria State of the Game - March 2023}} {{small|{{date|2023|03|30}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+;添加/修改
+* 改进了背景放大和缩小的方式。
+* 大规模的内部系统升级，为跨平台游戏做准备，带来最新的API和Xbox后端的巨大返工。
+
+; Bug 修复
+* 修复了连续创建两个小世界后游戏崩溃的问题。
+* 修复了以太巨石不发光的问题。
+* 修复了海洋洞穴中的海草不可见的问题。
+* 修复了某些 iOS 用户无法托管多人游戏会话的问题。
+* 修复了在死亡后立即退出世界时，虚荣饰品会从玩家选择屏幕上消失的问题。
+
+{{collapse bottom}}
+}}
+{{/row
+| v = 1.4.4.9.1 (Build 994)
+| platform = ios
+| name = 修补程序
+| date = 2022/12/19
+| changes = 修复了 iOS 16 上本地[[{{tr|Multiplayer}}]]的问题。
+}}
+
+{{/row
+| v = 1.4.4.9 (Build 993)
+| platform = ios/googleplay/amazon
+| name = 修补程序
+| date-ios-googleplay = 2022/11/30
+| date-amazon = 2022/12/13
+| ref = {{forums thread|114357/post-2832196|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|11|30}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''查看 [[1.4.4.6]]、[[1.4.4.7]]、[[1.4.4.8]]、[[1.4.4.8.1]] 和 [[1.4.4.9]] 页面以查看完整的更改列表。''
+
+;添加/修改
+* 在{{tr|Settings}}中添加了调整鼠标滚轮灵敏度的选项。 
+
+; Bug 修复
+* 修复了当玩家在“get fixed boi”世界中死亡，然后试图加载“the constant”世界时会发生崩溃的问题。
+* 修复了当玩家退出大世界后加载小世界会发生崩溃的问题。
+* 修复了在{{tr|Multiplayer}}中，玩家可以在击败 {{tr|boss}} 后看到并拾取多个{{tr|Treasure Bags}}的问题。
+* 修复了{{tr|Nurse}}不会治疗玩家的问题。
+* 修复了{{tr|party hats}}有时会在{{tr|NPC}}所在图层的后面，而非前面的问题。
+* 修复了“{{tr|Helium Moss Fishing Bobber}}”不会再{{tr|Inventory}}中显示彩虹效果的问题。
+* 修复了“{{tr|Slime gun}}”和“{{tr|Water gun}}”不会显示它们的射弹效果的问题。
+* 修复了“{{tr|Extendo Grip}}”不会增加拾取/放置范围的问题。
+* 修复了{{tr|Shimmer}}瀑布不会正常显示的问题。
+* 修复了玩家在多人游戏中不能跳过{{tr|Old One's Army}}波次间的冷却时间的问题。
+* 修复了 NPC 处于{{tr|Shimmer}}状态时，NPC 的页面图标不会更新的问题。
+* 修复了{{tr|Town Slimes}}的派对帽在 NPC 的对话界面会偏离的问题。
+* 修复了在多人游戏中，由{{tr|Axe of Regrowth}}重新种植的橡实不会正常显示的问题。
+* 修复了“史莱姆大分裂”成就不会正确触发的问题。
+* 修复了切换输入法时，一些{{tr|tooltips}}不会更新的问题。
+* 修复了{{tr|Nurse}}会治疗“{{tr|Peckish}}”{{tr|debuff}}的问题。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.5 (Build 977)
+| platform = ios/googleplay/amazon
+| name = 修补程序
+| date-ios-googleplay = 2022/10/27
+| date-amazon = 2022/11/01
+| ref = {{forums thread|114357/post-2807459|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|10|27}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''查看 [[1.4.4.2]]、[[1.4.4.3]]、[[1.4.4.4]] 和 [[1.4.4.5]] 页面以查看完整的更改列表。''
+
+; Bug 修复
+* 修复了{{tr|Expert mode}}下的多人游戏中，在没有召唤{{tr|Solar Eclipse}}的情况下会消耗{{tr|Solar Tablet}}的问题。
+* 修复了在多人模式中，房主不能使用{{tr|Shellphone}}传送到“出生点”的问题。
+* 修复了当手柄使用“简化”控制方案时，在{{tr|inventory}}研究物品会崩溃的问题。
+* 修复了{{tr|Dreadnautilus}}不会{{tr|spawn}}{{tr|squids}}的问题。
+* 修复了{{tr|Rubblemaker}}界面中部分材料会重叠的问题。
+* 修复了多人游戏中{{tr|Goblin Army}}会被{{tr|Peddlers Stash}}召唤的问题。
+* 修复了{{tr|rope}}在与{{tr|platforms}}相交时会显示在前面的问题。
+* 修复了{{tr|Light's Bane}}的视觉效果会显示成绿色而不是紫色的问题。
+* 修复了嵌入式图标会从 get fixed boi 世界的生成文本中丢失的问题。
+* 修复了用触摸控制和手柄控制游玩时，{{tr|Spectrum Kite}}的{{tr|tooltip}}不会更新的问题。
+* 修复了用触摸控制和手柄控制游玩时，{{tr|Guide books}}的{{tr|tooltip}}不会更新的问题。
+* 修复了游戏有时会在转换{{tr|Hardmode}}的中途停止的问题。
+* 修复了饥荒的效果着色器无法应用在世界生成中的 UI 的问题。
+* 修复了{{tr|Health}}条与{{tr|Mana}}条的{{tr|tooltip}}重叠的小问题。
+* 修复了玩家在制作时或与制作的物品交换时或捡起物品时不能丢弃物品的问题。
+* 修复了玩家无法解锁{{icon|ps}}PlayStation的“Appease the Volcano Gods”奖杯的问题。
+* 修复了在某些情况下玩家无法保存地图数据的问题
+* 修复了含有省略符号的玩家和世界的名字不会在多次游戏会话中保持收藏的问题。
+* 修复了世界名字带有撇号（ ' ）的世界会显示出损坏的视觉效果的问题。
+* 修复了{{tr|Skeletron}}在 Get fixed boi 世界中无法在白天被召唤的问题。
+* 修复了当按钮放得太近时信息附件文本会移动的问题。
+* 修复了当按住合成按钮时会自动跳转到合成下一个物品的问题。
+* 修复了自然蔓延的腐化感染丛林时不是转换而是破坏的问题。
+* 修复了地表层与地下层之间的过渡显示为黑色的问题。
+* 修复了当聊天框开启时，铅笔图标会在屏幕上浮动的问题。
+* 修复了{{tr|The Rotted Fork}}、{{tr|Gungnir}}以及{{tr|Dark Lance}}在反重力效果下视觉效果发生错误的问题。
+* 修复了 NPC 对话图标不会更新以显示他们的{{tr|shimmer}}形态的问题。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.1 (Build 967)
+| platform = ios/googleplay
+| name = 修补程序
+| date = 2022/10/03
+| ref = {{forums thread|114357/post-2786200|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|10|03}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''查看[[1.4.4.1]]页面以查看完整的更改列表。''
+
+; 增加/更改
+* 现在创建新人物时的默认选项是“{{tr|Classic}}”而非“{{tr|Journey}}”
+
+; Bug 修复
+* 修复了在“Celebrationmk10”世界中，将{{tr|Guide Voodoo Doll}}扔进{{tr|lava}}池会杀死{{tr|Guide}}但不会{{tr|spawn}}{{tr|Wall of Flesh}}的问题。
+* 修复了部分小动物{{tr|cages}}的图形故障问题。
+* 修复了在{{tr|Multiplayer}}中，部分{{tr|items}}在掉入{{tr|Shimmer}}时不会正确转换的问题。
+* 修复了{{tr|Shellphone}}不会传送玩家，和不会在制作时显示{{tr|tooltip}}的问题
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4 (Build 960)
+| platform = ios/googleplay/amazon
+| name = 爱的付出<br/>（等同于{{Desktop}}[[1.4.4]]）
+| date-ios-googleplay = 2022/09/28
+| date-amazon = 2022/10/06
+| ref = {{forums thread|114357|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|09|28}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''查看[[1.4.4]]页面以查看完整的更改列表。''
+
+; {{tr|Mobile}}独有更新
+* 新增了物品栏视角移动的选项，有三种位置：自动/总是/从不
+* 添加了{{tr|coin}}和{{tr|ammo slots}}图标，以确保清晰。
+* 世界生成时的加载进度条现在具有不透明的背景
+* 为手柄添加了{{tr|Auto Select}}的切换键, 以匹配触摸输入时原有的按键。
+* 更新了取消坐骑和电路的控制的标题文本。
+* 更新了{{tr|Void Bag}}中的新{{tr|items}}的突出显示的效果。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.3.2.3 (Build 891)
+| platform = stadia
+| date-stadia = 2022/05/31
+| name = [[1.4.1]]–[[1.4.3]] 同步更新<br/>（等同于{{Desktop}}[[1.4.3.2]]）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 常规
+* 光标的颜色可以自定义 - 允许使用期待已久的彩虹光标！
+* 制作人员清单现在可以直接从主界面访问
+* 在“设置”中，您现在可以在折叠，展开和关闭默认值和其它页面模式之间进行选择
+; 改进
+* UI 更易于从“设置”进行配置
+* 我们在 Stadia 上为怪物图鉴、制作和复制菜单添加了过滤器，并改进了现有的过滤器和搜索机制
+* 现在，您可以重置每个设置页面，而无需重置所有内容
+* 加入可游玩的教程到 Stadia
+* 在“设置”中，自动选择可以改为切换或按住
+* 自动选择的物品现在也将显示在{{tr|hotbar}}中的额外栏位中
+{{collapse bottom}}
+}}
+
+
+{{/row
+| v-ios-googleplay-amazon = 1.4.3.2.3 (Build 887)
+| date-ios-googleplay = 2022/05/23
+| date-amazon = 2022/05/30
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 更改​
+* 在移动设备上添加输入锁定，以改进游戏处理控制器和键盘鼠标的方式，而无需在输入模式之间来回切换。
+* 界面编辑器经过改进，布局更加人性化。
+; 修复
+* 修复了多人游戏中无法打开“{{tr|the Grand Design}}”和“{{tr|Multicolor Wrench}}”弹出式菜单的问题。
+* 修复了以下问题：如果用户有 3 个页面组（每个角一个）且 UI 缩放设置为最小值，则“设置”中的 UI 缩放滑块将变为不可见且不可用。
+* 修复了每次游戏从手持设备变为对接设备时，任天堂 Switch 上的安全区域设置都会重置为默认值的问题，反之亦然。
+* 修复了某些用户在使用手柄和特定 UI 页面设置时无法导航到{{tr|inventory}}的快捷丢弃的问题。
+* 修复了将游戏更新到最新 1.4.3.2 版本后天气锁定在特定状态的问题。
+* 修复了{{tr|Princess}}在没有名字的情况下生成的问题。
+* 修复了{{tr|Spinal Tap}}无法正确击中敌人的问题，当玩家穿着{{tr|Obsidian Armor}}时，这个问题尤其明显。
+* 修复了{{tr|Abigail's Flower}}召唤的仆从不会对敌人造成伤害的问题，除非它碰到敌人。
+* 修复了玩家无法从染料商处购买团队染料的问题。
+* 修复了允许玩家复制人体模型与女性人体模型或帽架中物品的漏洞。
+* 修复了允许玩家在不消耗材料的情况下制作无限的物品的漏洞。
+* 修复了部分玩家在通过床设置重生点后无法加入世界的问题。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.3.2.2（Build 876）
+| platform = ios/googleplay
+| date = 2022/05/05
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* {{tr|Inventory}}页面可以垂直移动（这样做也会移动小地图，以便两者始终处于同一级别）。
+* {{tr|Inventory}}页面可以水平移动到右侧，但只能移动到与右侧页面组不冲突的位置。
+* 虚拟控件编辑器现在包括 2 个按钮，用户可以添加这些按钮以打开{{tr|Inventory}}和{{tr|Settings}}。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.3.2.1（Build 873）
+| platform = googleplay
+| date = 2022/04/29
+| name = 修补程序
+| changes =
+修复了有关 Chomebook 鼠标和键盘支持的问题。
+}}
+
+{{/row
+| v = 1.4.3.2.0（Build 863）
+| platform = ios/googleplay/amazon
+| date-ios-googleplay = 2022/04/27
+| date-amazon = 2022/05/16
+| ref = {{forums thread|terraria-1-4-1-1-4-3-out-now-on-console-mobile.111809|Terraria 1.4.1 - 1.4.3 Out Now on Console & Mobile!}} {{small|{{date|2022|04|27}}}}
+| name = [[1.4.1]]–[[1.4.3]]同步更新<br/>（等同于{{Desktop}} [[1.4.3.2]]）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 常规
+* 光标的颜色可以自定义 - 允许使用期待已久的彩虹光标！
+* 制作人员清单现在可以直接从主界面访问
+* 在“设置”中，您现在可以在折叠，展开和关闭默认值和其它页面模式之间进行选择
+* 键盘和鼠标现在正式支持在移动设备上！
+
+; 改进
+* UI 更易于从“设置”进行配置
+* 触摸控件已针对多个菜单进行了优化，例如制作，制作指南，重铸，商店，构建工具，布线和过滤器
+* 我们在移动设备上为怪物图鉴、制作和复制菜单添加了过滤器，并改进了现有的过滤器和搜索机制
+* 现在，您可以重置每个设置页面，而无需重置所有内容
+* 加入可游玩的教程到移动设备
+* 在“设置”中，自动选择可以改为切换或按住
+* 自动选择的物品现在也将显示在{{tr|hotbar}}中的额外栏位中
+* 智能光标能够与自动选择一起使用
+
+; 修复
+* 修复了某些物体在重力反转下定位不正确的问题
+* 修复了某些文本编辑字段（如{{tr|Chest}}）接受无限个字符的小问题
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.3（Build 598）
+| platform = stadia
+| date = 2021/03/18
+| name =  Stadia 最初发布
+}}
+
+{{/row
+| v = 1.4.0.5.2.1（Build 543）
+| platform = googleplay
+| date = 2020/12/04
+| name = 修补程序
+}}
+
+{{/row
+| v = 1.4.0.5.2（Build 537）
+| platform = ios/googleplay/amazon
+| date-ios-googleplay = 2020/12/01
+| date-amazon = 2020/12/02
+| ref = {{forums thread|changelog-for-mobile-terraria-v1-4-0-5-2-build-537-patch-notes-and-known-issues.100893|Changelog for Mobile Terraria v1.4.0.5.2 Build 537 Patch notes and known issues}} {{small|{{date|2020|12|01}}}}
+| name =  修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复 Bug
+* 可以通过召唤仆从瞄准敌人攻击
+* 现在可以将食物放在盘子上
+* 目标锁定不再也目标抓取方向
+* 现在可以在目标锁定打开时放置物块
+* 修复一些崩溃错误和潜在的数据丢失情况
+* 房主放置的晶塔现在可以在本地多人游戏中正常使用
+* 房主在多人游戏中放置的人体模型和帽架现在可以进行交互
+* 修复部分物品可以在社交装备槽位装备的问题
+* 智能光标现在可以检测到返回药水
+* 返回药水的传送门现在显示在地图上
+* 彩纸炮现在正确发射彩纸
+* 草药现在将正常开花
+* 全部拿走在虚空保险库中正常工作
+* 和平蜡烛现在可以关闭
+* 水晶门和木门在低质量设置上不再缺少像素
+* 液体填充整个屏幕时不再透明
+* 高帽子不再在低质量设置上引起视觉故障
+* 修复泰拉棱镜和星辰守卫上的染料问题
+* 修复玩家和玩家选择列表中神圣板甲斗篷上的染料问题
+* 修复许多其他照明和发光视觉故障
+* 重复的射弹不再出现在玩家列表中
+* 改进了首次游戏创建新玩家和世界的流程
+* 捏合缩放字符现在与屏幕中心正确居中
+* 在地图上捏合缩放和滚动不再导致意外延迟
+* 多体节的风筝在召唤{{tr|ballistas}}时正确显示
+* 某些设备的指纹扫描仪不再收起列表游戏 UI
+* 拆分堆栈不再收起列表在其他 UI 下与游戏手柄
+* 聊天窗口现在在设置中更改时会尊重自下而上选项
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.1（Build 514）
+| platform = ios/googleplay/amazon
+| date-ios-googleplay = 2020/11/03
+| date-amazon = 2020/11/10
+| ref = {{forums thread|changelog-for-mobile-1-4-0-5-1-build-514-build-notes-and-live-issues.99808|Changelog for Mobile 1.4.0.5.1 Build 514 Build Notes and Live Issues}} {{small|{{date|2020|11|03}}}}
+| name =  修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复 Bug
+* 瞄准杆和游戏手柄上{{tr|zenith}}的射程现在扩展到了屏幕的整个尺寸。
+* 当教程打开时，游戏通知现在按预期显示在世界中。
+* {{tr|skeletron}}的诅咒现在可以在多人游戏中由房主激活。
+* 自动暂停现在有三个设置，默认值为菜单，仅适用于单人游戏中的玩家。
+** 自动暂停：从不 - 自动暂停从不打开。
+** 自动暂停：菜单 -（默认）所有全屏菜单在单人游戏的后台暂停游戏。
+** 自动暂停：物品栏和菜单 - 打开物品栏和所有全屏菜单将在单人游戏的后台暂停游戏。
+* {{tr|Eternia Crystals}}可以激活{{tr|Old One's Army}}。
+* 游戏在 Re-Logic 徽标和主菜单之间启动得更快。
+* 当旅程角色试图进入非旅程世界时，警告文本不再离开屏幕。
+* {{tr|Tavernkeep}}出售的{{tr|pylons}}在错误的地方！它们现在根据游戏进度正确定位。
+* 使用任何液体炸弹或液体火箭不再导致游戏卡顿。
+* 正确数量的房屋插槽现在显示在游戏中。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.0（Build 508）
+| platform = ios/googleplay/amazon
+| date-ios-googleplay = 2020/10/20
+| date-amazon = 2020/10/23
+| ref = {{forums thread|taking-the-journey-on-the-road-terraria-journeys-end-launches-on-mobile-today.98696/|Taking the Journey on the Road：Terraria Journey's End Launches on Mobile Today!}} {{small|{{date|2020|10|20}}}}
+| name = 1.4.0.5 & 1.3.1 到 1.3.5 同步更新<br/>（等同于{{Desktop}}[[1.4.0.5]]）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;新增功能！除了旅程结束的新增内容之外，1.3.1-1.3.5 更新中的所有泰拉瑞亚内容都在这里！
+:这包括：
+:布线、逻辑门、{{tr|Sensors}}和{{tr|the Grand Design}}大改
+:沙漠、沙尘暴和暴风雪大改
+:{{tr|Party}}事件
+:{{tr|Old One's Army}}事件
+:还有更多！
+
+; 移动版特有增加 / 更改
+:新照明模式：彩色照明 - 此照明模式可在移动液体时提供更鲜艳的色彩和更平滑的照明效果以及更平滑的水效果（“涟漪”效果尚未出现 - 计划在发布后修补程序中使用）
+:水平与垂直{{tr|Hotbar}}切换
+:修改了游戏手柄映射，以考虑各种旅程结束的控件 - 也调整了默认值！
+:UI 更改以考虑旅程结束功能（例如[[{{tr|journey mode}}]]）
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.9（Build 390）
+| platform = ios/googleplay/amazon
+| date-ios-googleplay = 2020/04/28
+| date-amazon = 2020/04/29
+| ref = {{forums thread|mobile-terraria-1-3-0-7-9-is-now-live-修复-for-controller-customization-update.87947/|Mobile Terraria 1.3.0.7.9 is Now Live：修复 for Controller + Customization Update!}} {{small|{{date|2020|04|28}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;新功能
+* 在控制器中添加了一个名为“手柄按键绑定”的新设置选项。
+** 如果您的控制器尚未在游戏系统中设置绑定，但在您的设备上检测到并且游戏可以看到它，则您现在应该能够绑定按键以使您能够使用游戏手柄玩游戏。
+** 游戏在游戏手柄上运行所需的按键绑定
+*** 控制轴，即：
+**** 左摇杆，右摇杆，十字键
+*** 四个功能按键，即：
+**** A/B/X/Y 或叉键/圆键/正方键/三角键
+*** 两个肩键，即：
+**** LB/RB 或 L1/R1
+*** 打开设置按钮，即：
+**** 菜单或选项
+
+; 修复 Bug
+* 修复！iOS 控制器支持按下摇杆的操作！
+* 修复当物品栏已满且钱币无法分割时，打开 NPC 商店/{{tr|Hairdresser}}/{{tr|Reforge}}时崩溃的问题。
+* 修复！{{tr|Modifiers}}不会在从梳妆台拿出时消失
+* 修复！楼梯不再显示在楼顶上
+* 修复！将图形质量更改为“高”和“低”时出现的小图形故障
+* 修复！主界面的[[日夜更替#花絮|太阳/月亮]]可以再次拖动
+* 修复！现在，拖动太阳会使背景根据太阳的位置向左或向右移动
+* 修复！{{tr|Signs}}和墓碑不再干扰多人聊天通知或阻止打开聊天
+* 修复！控制器横幅可见性设置（不在会话之间保存）
+* 修复！连接到 Android 8 及更低版本的 PS4 V2 控制器运行得更好。
+* 修复！部分{{tr|items}}显示得太大，无法进行触摸控制
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.8.1（Build 384）
+| platform = googleplay
+| date = 2020/04/07
+| ref = {{forums thread|youve-got-the-touch-youve-got-the-power-controller-customization-update-hits-mobile-terraria-today.87000/page-4#post-1932493|You've got the Touch, You've got the Power! Controller & Customization Update hits Mobile Terraria Today!}} {{small|{{date|2020|04|07}}}}
+| name = 修补程序
+| changes =
+修复游戏在没有连接游戏手柄时识别出游戏手柄的错误。
+}}
+
+{{/row
+| v = 1.3.0.7.8（Build 380）
+| platform = ios/googleplay
+| date = 2020/04/06
+| ref = {{forums thread|youve-got-the-touch-youve-got-the-power-controller-customization-update-hits-mobile-terraria-today.87000/|You've got the Touch, You've got the Power! Controller & Customization Update hits Mobile Terraria Today!}} {{small|{{date|2020|04|06}}}}
+| name = 控制器和定制更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 新更改
+;; 可完全客制化的控制
+* 允许重新映射任何现有的控件
+** 点击按键绑定选项中的控件，然后点击要重新映射的按键，会将选定的控件给该按钮。
+** 将无法在摇杆上运行的操作更改为摇杆的按键，会清除该操作原有的按键和该摇杆原有的操作，反之亦然。
+** 正方键只允许作缩放控制
+
+* 能够移动可用控制空间中的所有按钮
+** 移动仅限于预定义的“控件”空间，您可以在“编辑界面”屏幕上看到该空间。
+** 当拖动到控件空间之外时，按钮将变为红色，如果在释放时为红色，则将被删除。
+* 能够在控制空间中重新定位设置和清单按钮。还能够移动物品栏页面选项卡。
+** 物品栏和设置按钮可以四处移动，但被锁定在 UI 的默认一侧。
+** 物品栏页面选项卡（收藏，PVP，设备等）可以垂直或水平旋转，并且可以在控制空间内移动。
+* 从顶部按键列表向下拖动对应的按键或选择按键在空白位置点击以添加其他按键。
+* 能够重叠按键
+** 图层顺序取决于按键添加到控件空间的顺序
+** 重叠设置中最后放置的按钮将位于顶部。
+* 能够撤消/重做一系列更改到特定的配置文件
+** 更改任何设置或菜单将清除撤消历史记录
+
+;;控制配置文件
+* 能够通过配置文件下拉列表设置多达4个唯一的控制设置配置文件
+* 能够从绑定调色板中添加循环配置文件按钮。
+** 只有将“循环配置文件”按钮添加到控制区域的配置文件才会被游戏中的配置文件按钮激活，因此，如果您在 1、2 和 3 上有一个周期配置文件按钮，它将仅在这三者之间循环，而不显示 4。
+* 能够重命名每个配置文件，并在循环时将其显示在游戏中
+* 能够从设置菜单中选择活动配置文件，而无需添加周期配置文件按钮
+
+;;其他设置
+* 捏合缩放开/关
+** 影响世界和地图
+* 聊天顺序自上而下/自下而上
+* 密码收起列表/可见
+** 使用密码键盘并在主机框中收起列表密码文本
+** 屏幕键盘在键入时仍将逐个字符显示，因此不完全安全！
+* 智能光标关闭时瞄准灵敏度滑块
+** 瞄准和使用模式：按项目类型（默认），全局所有人，始终仅瞄准，始终瞄准和使用
+** 智能光标模式：按项目类型（默认）、“全部全局”、“始终关闭”、“始终”
+
+;;控制器支持
+* 添加了对蓝牙/MFI 兼容游戏手柄的支持。
+** 没有兼容控制器的详尽列表，但是，支持蓝牙的Xbox One和PlayStation 4游戏手柄确实运行良好。
+
+* 能够在控制器上重新绑定大多数操作
+** 这可以通过设置中的“控制器”选项卡进行访问，并允许彻底重新映射。
+** 某些“默认”操作由系统设置，当窗口超过控制屏幕时。（主菜单，NPC对话，发型师，梳妆台）
+** 辅助摇杆的一些绑定用于移动和瞄准，允许您在主摇杆绑定到菜单导航时在菜单中移动或瞄准
+
+* 添加了四个默认控制器设置：
+** 简化 - 适用于较新或较年轻的玩家
+推荐的其他设置：
+摇杆跳跃：向上点击或滑动
+自动摆动：开
+** 高级 - 适用于经验丰富的泰拉瑞恩人
+** 控制台 - 适用于习惯于在 Xbox One/PS4/Switch 上玩游戏的用户
+** 定制（制作自己的！）
+
+;;其他控制器设置
+* 导航延迟滑块：加快或减慢物品栏导航
+* 交换肩膀和触发器： 此更改 [保持] 键
+* 在 Xbox 控制器上更改 LB 到 LT
+* 更改 L1 至 L2 Dualshock 4 控制器
+* 瞄准灵敏度滑块：连接控制器且智能光标关闭时的附加设置
+* 瞄准和使用模式：按项目类型（默认），全局为所有人，始终仅瞄准，始终瞄准和使用
+* 智能光标模式：按项目类型（默认），全局所有，始终关闭，始终打开
+
+;;修订后的菜单
+* 玩家创建菜单已修订，现在提供角色预览
+* 世界创建菜单也进行了修订，以匹配玩家创建
+* 发型师窗口现在是游戏中的弹出窗口
+* 梳妆台窗口现在是游戏中的弹出窗口
+
+;错误修复
+* 无法再将非装备物品放入装备槽中
+* 一些罕见的崩溃
+* 改进了抓斗杆的准确性
+* 如果无法访问多人游戏，游戏将超时
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.7（Build 289）
+| platform = ios/googleplay/amazon
+| date = 2019/11/07
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/post-1834823|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|11|07}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 修复阻止玩家在低规格设备上进入游戏的问题。（黑屏错误）
+* 修复某些设备上将UI图形从低到高时的崩溃
+* 修复了在某些设备上将图形设置设置为低质量时显示视觉伪影的图形问题（灰色条错误）
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = 1.3.0.7.6
+| v-ios = 1.3.0.7.6（Build 286）
+| v-googleplay-amazon = 1.3.0.7.6（Build 285）
+| platform = ios/googleplay/amazon
+| date = 2019/11/06
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/#post-1834438|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|11|06}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;新功能
+* 在安卓设备上，后退按钮现在可以在主菜单屏幕上正确导航，现在将在玩游戏时打开设置，而不是打开物品栏
+; Bugs 修复​
+* 显著改善了低质量时 NPC 的视觉质量，同时仍保持了设置对性能的好处
+* 修复一些问题，当尝试制作/检查制作硬化的沙子变体与指南
+* 修复NPC在高设置下看起来模糊
+* 修复最大玩家滑块以在退出多人游戏托管屏幕时重置
+* 启用家长控制时修复亚马逊设备上的权限问题
+* 修复从在线选项卡中删除专用服务器的问题，该问题导致它们在重新启动游戏时重新出现
+* 修复导致机械师扳手在其他 NPC 同时出现在屏幕上时无法显示的问题
+* 修复可疑的触手描述的省略号，该描述有4个点而不是3个点...
+* 修复门的顶部在低设置下显示不正确
+* 修复传统控件的问题，以及它们如何与虾松露坐骑和Celestial Shell一起工作
+* 修复负色绘画导致轮廓不正确的问题
+* 修复在高质量和低质量设置下应用于宠物，轻便宠物和各种抓钩类型的染料的许多问题
+** 请记住，其中许多将在视觉上与PC 1.3.0.7匹配，而不是PC 1.3.5.3，因此目前版本之间可能存在预期的差异
+* 修复一些边缘情况，当直接从箱子中装备染料时，而不是将染料拖入物品栏中，当以极其具体的步骤执行时可能导致崩溃或丢失物品
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.5（Build 277）
+| platform = ios/googleplay/amazon
+| date-ios = 2019/10/02
+| date-googleplay = 2019/10/03
+| date-amazon = 2019/10/14
+| rawref-ios = <ref name="forums-82436">{{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/post-1822671|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|10|03}}}}</ref>
+| rawref-googleplay = <ref name="forums-82436"/>
+| ref-amazon = {{forums thread|mobile-terraria-1-3-launches-on-amazon-today.83480/|Mobile Terraria 1.3 Launches on Amazon Today!}} {{small|{{date|2019|10|14}}}}
+| name = 修补程序<br/>{{icon|amazon}} Reset and 1.3 Update + Hot修复
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; New Features and 更改
+* 添加了新的图形选项部分来调整纹理质量，这允许您将许多纹理设置为低质量或高质量。使用低质量纹理可显著降低游戏所需的 RAM 量。这可能会对低端设备的稳定性产生重大影响。
+** 游戏启动后，游戏还将根据可用RAM最好地选择低/高纹理，如果您在游戏过程中遇到随机崩溃，我们建议您尝试在设置中设置为低纹理
+请注意，高/低质量预计不会对FPS/性能产生有意义的影响 - 只会增强稳定性。
+* 改进了游戏的整体稳定性，因此在 RAM 较低的设备上，您应该会看到更少的问题/崩溃。也就是说，可能仍有一些案件尚未解决，因此请随时报告 [https://support.505games.com/en/support/home HERE].
+* ''注意：此更新将最低iOS版本提高到iOS10，任何以前下载了1.3，但由于低于最低规格而无法玩（崩溃等）的玩家现在可以通过“更新”他们的游戏回到1.2版本来“返回”1.2。
+** 这仅适用于这种情况下的玩家（iOS 10），除此之外不支持“交换版本”。
+** 这样做是因为即使使用新的图形设置，也无法使游戏在这种旧/低规格设备上稳定。我们希望您首先拥有一个可玩的游戏 - 因此，如果您的1.3不稳定，您可以选择降级到1.2。
+** 如果您选择这样做，您将看到一个窗口：“下载此应用程序的旧版本？只需点击“下载”即可将游戏降级到1.2。
+* 在困难模式转换进行时添加了一个新指标
+** 该团队注意到一个潜在问题，即计划的自动保存和硬模式转换可能同时发生，因此已正确确定优先级。
+** 如果正在进行世界保存，则困难模式转换将在保存世界数据完成后开始，因此您可能会看到指示器在一段时间内保持0%
+** 此指标既存在于游戏中，也存在于您在世界完成之前退出世界。
+* 为了解决在游戏中禁用/启用地图数据时导致地图数据重置的问题，我们从游戏中禁用了地图启用/禁用设置。现在，这只能在主菜单屏幕中使用。
+* 为了纠正星尘/星云翅膀交换悬停的问题，我们更新了这些翅膀和涡旋翅膀的平衡以匹配1.3.1，虽然这不符合我们通常的意图，以保持平衡到1.3.0.7，我们决定这将是最好的。
+
+； bug修复
+* 修复一个问题，导致一些地图工作之前的。2 hotfix现在被识别
+** 请记住，我们不能提供支持的地图修改以任何方式以外的游戏的能力，我们鼓励谨慎从非官方来源下载地图时，因为我们不能预测使用这些地图时可能出现的问题
+修复Temple Key工作时突出显示{{sic}}
+* 修复能够拖回第6个配件/染料/虚荣槽在正常模式时，你应该只能在专家模式添加项目到这些槽
+* 在硬核游戏中作为幽灵死亡时修复按钮处于启用状态。这引起了混乱，因为你不能使用它们。
+* 修复遗留1.3.0.7。PC的问题，导致肉墙不再产卵，如果你进入主菜单，你正在战斗
+* 修复魔法导弹不正常的行为与自动摆动启用
+* 修复崩溃时，撞倒了一个梳妆台，而使用它来改变你的衣服
+* 修复梳妆台“改变”按钮的一些问题
+* 修复一个问题，导致游戏回到主菜单时输入错误的密码，当加入多人游戏
+* 可能修复一个问题导致崩溃时切换到一个更小的世界后，你退出一个更大的世界在同一会话
+* 可能修复一个问题，可能导致硬模式转换在某些情况下不完成预期
+* 修复在平板电脑上，如果你把控制靠得太近，就会出现非常罕见的重叠
+* 修复一个问题，当复制在游戏文件夹超过100个世界或玩家
+* 注意:我们目前不建议超过100个世界或玩家（每个），因为如果你这样做了，一些将不会显示在列表中，直到一些被删除!
+* 修复许多问题，会导致项目创建修饰符，但然后失去修饰符
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.4（Build 100267）
+| platform = googleplay
+| date = 2019/09/19
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/#post-1816684|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|09|19}}}}
+| name = 修补程序
+| changes =
+修复一个Google Play在安卓设备上的许可证检查问题。
+}}
+
+{{/row
+| v = 1.3.0.7.3（Build 100260）
+| platform = ios/googleplay
+| date-ios = 2019/09/12
+| date-googleplay = 2019/09/17
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/#post-1814482|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|09|12}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+； 新功能
+* 在FPS低于50或节奏不均衡的情况下提高战斗瞄准反应能力，这将大大减少指向光标的射击失误
+* 调整了钱槽不是自动摆动，因为它不打算是
+
+； bug修复
+* 修复在某些情况下，当手持移动杆时，导致跳跃按钮无法正常使用的问题。如果你喜欢混合和匹配跳跃方法，这将使跳墙和探索更容易!
+* 修复一个问题，导致Yoyos显示所有互动按钮在禁用状态，而强制设置在Aim Only在一些Android设备上
+* 修复大量的问题与Android 10和Vulkan API交互-这些导致内存泄漏和运行Android 10的设备崩溃
+* 修复当你有一个宠物，它会在你加入一个世界时发出声音，这是一个非常具体的崩溃
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.2（Build 100257）
+| platform = ios/googleplay
+| date = 2019/09/09
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436/#post-1813424|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|09|09}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+； 新功能
+* 在左摇杆上添加了全新的跳跃选项（在设置中找到——&gt;，你现在可以将跳转模式设置为以下任何一种：**双击（默认）-双击左摇杆来触发跳跃/飞行动作。这与Mobile 1.3版本的默认值相匹配。
+** 单点-单点左摇杆来触发跳跃/飞行动作。新旧之间的完美中间地带。
+** 向上滑动（遗产）-任何向上移动左摇杆触发跳跃/飞行动作。这与Mobile 1.2中的默认值相匹配。
+** 禁用-没有办法从左摇杆触发跳跃/飞行动作。对于那些喜欢跳转按钮。
+* 为了给设置菜单中的跳跃选项腾出空间，“教程开/关”设置已移至界面。
+* 增加了一个选项，使自动摇摆的大多数武器
+** 这是默认关闭的，以保持与预期的核心设计的游戏-自动摇摆是一个武器属性绑定到特定的武器。
+** 这位于设置;游标。
+** 要注意的是，为了避免游戏玩法中可能出现的重大破坏，我们排除了一小部分道具（如绳子圈、投掷的连枷、魔镜等）。这些项目的自动摆动导致了意想不到的问题。
+* 修正了一些物品/武器的“瞄准和使用”和“智能光标”的默认值。
+** 由于在设置中添加了可选的自动摆动，我们决定修改每种武器的默认值以获得更好的体验。
+** 这不会影响您手动设置的工具/武器的任何设置。
+** 如果你想尝试新的默认值，你可以在设置中恢复它——通用;光标，请注意，此时没有确认!
+* 世界现在将显示红色，如果他们不兼容当前版本的移动Terraria。我们不建议使用非1.3.0.7兼容版本制作的世界，也不应该试图使用以任何方式改变的世界-因为即使是最轻微的更改/修改都可能导致意想不到的问题
+* 新的专用移动服务器的PC应用程序可与此更新。每个运行基于pc的专用服务器的移动Terraria应该更新到这个最新版本。
+； bug修复
+* 修复当玩家在库存或快捷栏中突出显示Lihzahrd Power Cell时，导致生成魔像困难的问题
+* 修复一个导致Biome chest不能被Biome Keys打开的问题，如果玩家在他们的库存或快捷栏中突出显示它们
+* 修复一个1.3.0.7遗留问题，导致火星疯狂不正确产卵在某些情况下（例如，立即使用魔镜/不在世界的正确地点，和更多）
+* 修复许多允许复制项目的漏洞
+** 修复一个漏洞，导致指南分发免费物品……
+** 修复一些其他可能的漏洞
+* 修复许多问题，影响了DedServer.dat文件，导致播放器崩溃时点击在线标签
+** 虽然这个问题是修复，我们想建议玩家不要尝试和加入服务器不是在同一个版本。
+** 同样，我们建议不要使用第三方应用程序加入服务器（包括那些运行tshock），因为这些不支持的游戏方法。
+** 因此，对于使用第三方应用程序时遇到的任何问题，我们将无法提供支持。
+** 如果你仍然遇到问题，一个解决办法是删除DedServer.dat文件，注意这将删除你的在线保存的服务器列表，所以你将不得不再次输入他们的信息使用“添加”按钮。
+* 修复重复物品的图标消失在快捷栏（即你有2个木头堆栈在2个快捷栏插槽，但只能看到一个堆栈的图标）
+* 修复最喜欢的高光移到设备的一边，当这不是故意的
+* 修复一个问题与Phasesabers造成不稳定/崩溃的多人游戏
+* 修复Phasesabers在制作指南列表中没有正确出现
+* 修复“诱饵力量”的信息不是通过本地化，而是总是在英语和其他杂项。未以所选/预期语言显示的字符串。
+* 修复许多问题可能会导致游戏计时器不增加，当玩角色/世界
+* 修复一个俄罗斯和巴西葡萄牙语的问题，导致世界地位永远不会显示，一旦你点击“状态”在森林女神的对话框
+* 修复Sunstone和Moonstone的工具提示在小型设备上以西班牙语显示
+* 修复一个问题，可能导致世界保存被覆盖的在线世界
+* 修复一个问题，在线服务器不会告诉连接用户，当服务器已满。一个新的windows server.exe已经上传，您可以在源代码下载它。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7.1（Build 100244）
+| platform = ios/googleplay
+| date = 2019/08/29
+| ref = {{forums thread|terraria-mobile-1-3-post-launch-hot修复-build-notes.82436|Terraria Mobile 1.3 Post-Launch Hot修复 Build Notes}} {{small|{{date|2019|08|29}}}}
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+； 新功能
+* 改进了左侧操纵杆飞行控制，你现在可以只使用左侧操纵杆悬停，并恢复飞行，而无需再次点击它!
+** 作为一个例子，你现在可以双击并按住飞行，如果你想暂时暂停，比如躲避激光，你可以移动左杆向左/向右/向下，然后再次向上滑动以恢复飞行
+** 它也应该是现在更容易触发持续飞行，但更多的改进是在未来!
+** 想要了解实际情况，请查看这个视频:Imgur
+* 修改了[[tooltip]]淡出时间选项，允许即时淡出，所以你可以点击并按住查看工具提示。
+** 要启用此功能，请在设置菜单中将工具提示淡出设置为0。
+** 注意:还有1秒的褪色时间。
+； bug修复
+* 改进了不同情况下的多人游戏性能，请记住不同的设备可能会看到或多或少的显著改进。
+** 当屏幕上出现大量炮弹/敌人时，提高了性能。
+** 当屏幕上有大量玩家时，提高了性能。
+** 一般照明/灰尘颗粒改进。
+* 和更多!
+::虽然这些都集中在多人游戏，你可能会看到单人游戏的改进。
+*修复许多问题与旧的构建非常老的礼物。
+*修复多人游戏的世界图标总是显示正确时，主机服务器是在Hardmode。
+*修复教程消息相互重叠。
+*修复一个极其罕见的bug，它会导致一个世界被另一个覆盖，如果你在完美的时机离开游戏，主机离开游戏。
+*修复一个导致致动器显示在电线后面的问题。
+*修复抓钩教程可以触发，即使你没有装备抓钩。
+*修复在使用狙击步枪时出现光标跳跃的特殊情况。
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.3.0.7（Build 100237）
+| platform = ios/googleplay
+| date = 2019/08/27
+| rawref = <ref>{{forums thread|mobile-terrarians-assemble-mobile-1-3-launches-today.82197|Mobile Terrarians Assemble! Mobile 1.3 Launches Today!}} {{small|{{date|2019|08|27}}}}</ref><ref>{{forums thread|terraria-mobile-1-3-release-date-revealed.82046|Terraria Mobile 1.3 Release Date Revealed!}} {{small|{{date|2019|08|13}}}}</ref><ref>Status Update：Mobile and Switch https://forums.terraria.org/index.php?threads/terraria-1-3-status-update-mobile-switch.70015/</ref><ref name=path>The path ahead https://forums.terraria.org/index.php?threads/the-path-ahead-major-news-updates-for-console-mobile.47156/</ref>
+| name = 重做和1.3更新<br/>（等同于{{Desktop}}[[1.3.0.7]]）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 所有{{Desktop}}[[1.3.0.1|1.3]]的改动同步到游戏中。
+* UI 完全重新设计。
+* （不影响游戏性）重置：移动版{{tr|Terraria}}的代码将基于 Unity 中重写的{{console version}} ，而非原始的引擎。（依然兼容旧版本的存档文件）。<ref name=path>The path ahead https://forums.terraria.org/index.php?threads/the-path-ahead-major-news-updates-for-console-mobile.47156/</ref>
+* 最低系统配置要求改变：移动设备至少需要 1{{nbsp}}GB 的运行内存和iOS 8.0及以上/Android 4.3及以上。
+* All entities now have their intended stats and functionality, based on the Desktop 1.3.0.7 version. This includes, but is not limited to:
+** Only weapons that have [[autoswing]] by design can now autoswing.
+** [[Boss]] nerfs present in current Mobile has been removed.
+** [[Drax]] no longer appears in [[Shadow Chest]]s.
+** [[Day]]/Night cycles are now as designed.
+* All {{old-gen}}/{{3DS}}-exclusive content has been removed entirely. The following items have been replaced (if the player had them in the inventory, storage items, or placed):
+** Console/Mobile exclusive [[Banners (enemy)|mob banners]] should now be changed into their matching "normal" enemy banner
+** [[Tizona]]: [[Chlorophyte Claymore]]
+** [[Tonbogiri]]: [[Chlorophyte Partisan]]
+** [[Vulcan Repeater]]: [[Chlorophyte Shotbow]]
+** [[Sharanga]]: [[Hellwing Bow]]
+** [[Spectral Arrow]]s: [[Hellfire Arrow]]s
+** [[Vulcan Bolt]]s: [[Chlorophyte Arrow]]s
+** [[Egg Cannon]]: {{gc|1}}
+** [[Heart Arrow]]: {{cc|50}}
+** [[Holy Hand Grenade]]: 5 [[Dynamite]]
+** [[Roman candle]]: [[Fireworks Box]]
+** [[Sparkly Wings]]: [[Cenx's Wings]]
+** [[Dragon armor]]: [[Chlorophyte armor|Chlorophyte Mask/Plate Mail/Greaves]]
+** [[Spectral armor]]: [[Chlorophyte armor|Chlorophyte Headgear/Plate Mail/Greaves]]
+** [[Titan armor]]: [[Chlorophyte armor|Chlorophyte Helmet/Plate Mail/Greaves]]
+** [[Alpine Hat]]/[[Lederhosen]]/[[Dirndl Blouse]]/[[Festive Top Hat]]/[[Lederweste]]/[[Oktober Locks]]/[[Dirndl Skirt]]: {{gc|1}} each
+** [[Boots of Ostara]]: [[Cloud in a Bottle]]
+** [[Valentine Ring]]: [[Band of Regeneration]]
+** [[Hero's set]]/[[Plumber's set]]: Match PC color scheme
+** All {{old-gen}}/{{mobile}}-exclusive pets: [[Gold Bunny]] each
+** [[Ocram Trophy]]: {{gc|10}}
+** [[Ocram Mask]]: {{gc|10}} <ref name=mask> Although it was announced that all existing Ocram Masks will be removed and replaced with {{gc|10}}, obtaining one on the [[Mobile version]] is impossible as they were never added in the first place </ref>
+** [[Souls of Blight]]: {{gc|5}}
+** [[Suspicious Looking Skull]]: {{gc|28}}
+** [[Horn o' plenty]]: 30 [[Greater Healing Potion]]s each
+** [[Wiesnbräu]]: {{coin|995}}
+** [[Strange Looking Tombstone]]: normal [[Tombstone]]
+** [[Biome Key Molds]]: Respective [[Biome Keys]]
+{{collapse bottom}}
+}}
+
+|}
+
+=== 1.3 之前 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 版本
+! 发布时间
+! 更改
+
+{{/row
+| anchor = ios 1.2.12785
+| platform = ios/googleplay/amazon
+| v-ios-googleplay = 1.2.12785
+| date-ios-googleplay = 2016/08/03
+| v-amazon = 1.2.12801
+| date-amazon = 2016/10/20
+| name = “关键问题”更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 关键修复
+;Amazon
+* 从备份更新中添加了额外的保存位和新的备份功能。
+* 现在支持新的 Fire TV Stick（第 2 代）。
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.12773
+| platform = ios/googleplay/amazon/winphone
+| v-ios = 1.2.12773
+| v-googleplay = 1.2.12772
+| v-winphone = 1.2.4.3
+| date-ios-googleplay-winphone = 2016/07/25
+| v-amazon = 1.2.12000
+| date-amazon = 2016/07/16
+| ref = http://forums.terraria.org/index.php?threads/mobile-terraria-fixes.47002/
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;Amazon
+* 为所有非 Amazon 设备提供支持，请注意，你的设备依然需要满足最小 RAM（1GB）和系统（Ice Cream Sandwich OS 4.0.2或更高）要求才能工作。
+;Windows Phone
+* 基于 Win10 的设备现在应该可以工作。
+* 返回对 RAM 小于 1GB 的设备的支持，'''但是'''，请注意这些设备无法保证稳定的性能。我们认为让你有机会玩一款可能不稳定的游戏总比完全没有机会好。
+* 为角色和世界添加了额外的保存栏位，以及备份存档的功能
+;Bug 修复
+* 修复了[[{{tr|Egg Cannon}}]]的伤害范围不正确的问题。
+* 修复了破坏时[[{{tr|Fancy Dishes}}]]，会不正确地获得{{tr|Fancy Dishes}}的问题。
+* 修复了可以同时召唤多个[[{{tr|Light Pet}}]]的问题。
+* 修复了[[{{tr|Tattered Fairy Wings}}]]不能散发黄色光芒的问题。
+* 修复了[[{{tr|Demon altar}}]]可以在[[{{tr|dungeon}}]]生成。
+* 修复了水不能通过[[{{tr|Player}}]]开启的门的问题。
+* 修复[[{{tr|Alchemy Station}}]]的错误材质。
+* 修复了[[{{tr|Phoenix Blaster}}]]可以自动挥舞。
+* 修复了[[{{tr|Arctic Diving Gear}}]]的错误售价。
+* 修复了[[{{tr|Player}}]]在击败[[{{tr|Plantera}}]]前就可以通过传送进入[[{{tr|Jungle Temple}}]]的问题。
+* 修复了当游戏开始时[[{{tr|North Pole}}]]生成的{{tr|Projectiles}}会自动发射的问题。
+* 修复了[[{{tr|Confetti Wall}}]]和[[{{tr|Midnight Confetti Wall}}]]不能预期工作的问题。
+* 修复了{{tr|Pet mini minotaur}}不能通过使用[[{{tr|Tartar Sauce}}]]召唤的问题。
+* 修复了使用[[{{tr|North Pole}}]]时崩溃的问题。
+* 修复了[[{{tr|Beenade}}]]可以用于PVP的问题。
+* 修复了一些[[{{tr|Pets}}]]不能正常召唤的问题。
+* 修复了[[{{tr|Possessed Hatchet}}]]无法在玩家的死亡地点留存的问题。
+* Fix for the "[[{{tr|Jack 'O Lantern Launcher}}]]" flips downwards when it is pointed vertically 90 degrees upward.
+* Fix for Player fails to use the potions placed in the inventory bar.
+* Fix for Game name '[[{{tr|Terraria}}]]' appears to be misaligned in main menu.
+* 修复了命名为"Andrew"的[[{{tr|NPC}}]] [[{{tr|guide}}]]不能在死亡时掉落[[{{tr|Green Cap}}]]的问题。
+* Fix for The item "[[{{tr|Horn o' plenty}}]]" fails to function as intended.
+* Fix for iOS - The game crashed upon opening the inventory（Note- upon rebooting, it was discovered that the cloud world was nowhere to be found）.
+* Fix for Player fails to get 'Bait' as a reward while using any Crates.
+* Fix for Player is unable to place '[[{{tr|Platinum Candle}}]]' over '[[{{tr|Table}}]]' and '[[{{tr|Work Bench}}]]'.
+* Fix for A number of random Game Crash issues that have been addressed with this update.
+* Fix for Game crashes as [[{{tr|Merchant}}]] icon appears inside the house.
+* Fix for 玩家 is unable to access the cloud characters and world.
+* Fix for Game crashes on accessing mini map.
+* Fix for NPC guide named 'Andrew' fails to drop the item '[[{{tr|Green Cap}}]]' upon death.
+* Fix for Text 'Yes' overlaps on the 'Auto Equip’ option.WINDOWS PHONE（released last week）.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.12715
+| platform = ios/googleplay
+| v-ios-googleplay = 1.2.12715
+| date-ios = 2016/06/16
+| date-googleplay = 2016/06/17
+| ref = http://forums.terraria.org/index.php?threads/expanded-save-slots-backup-function-is-here-for-ios-and-google-play.44852/
+| name = 备份更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;Additions
+* Added extra save slots.
+** Characters：Players will now have access to 6 Local and 6 Cloud save slots.
+** Worlds：Players will now have access to 6 Local and 3 Cloud save slots.
+* Added new backup function for worlds and characters.
+** This will allow players to make a copy of any existing local or cloud file to any other open cloud or local save slot that they have. For example：*** Local - Local
+*** Local - Cloud
+*** Cloud - Local
+;Bug fixes
+* Fix for [[{{tr|Stylist}}]] inventory overlaps on 'Stylsit Quote' window.
+* Fix for The item "[[{{tr|Warmth Potion}}]]" is not functioning as intended.
+* Fix for Enemy health does not get affected by [[{{tr|Land Mine}}]].
+* Fix for '[[{{tr|Eye of Cthulhu}}]]' fails to spawn '[[{{tr|Servant of Cthulhu}}|{{tr|Cthulhu Servant}}]]'
+* Fix for Only 1st variant of [[{{tr|Angry Bones}}|{{tr|Angry Bone}}]] drops the bone.
+* Fix for Spear trap fires a spear headed projectile in opposite direction.
+* Fix for [[{{tr|Frost Legion}}]] enemies fails to face towards player while attacking.
+* Fix for [[{{tr|Player}}]] unable to catch gold fish using bug net.
+* Fix for [[{{tr|Soul of Sight}}]] and [[{{tr|Soul of Blight}}]] count appears to be incorrect for the item Titan Leggings.
+* Fix for [[{{tr|Adamantite Bar}}]] or [[{{tr|Titanium Bar}}]] count appears to be incorrect for the item '[[{{tr|Tizona}}]]'.
+* Fix for Twin Minion pair disappears from the world.
+* Fix for Item '[[{{tr|Staff of the Frost Hydra}}]]' fails to summon '[[{{tr|Frost Hydra}}]]'.
+* Fix for Tooltip Message is not present for '[[{{tr|Honey Dispenser}}]]'.
+* Fix for Precision aim for Dirt Rod fails to function.
+* Fix for 玩家 flips back and forth while using any weapon or bow in opposite direction.
+* Fix for 'Settings' Text appears in English instead of native language of device in pause menu.
+* Fix for Game crashes on exiting game using back button.
+* Fix for Message for the item '[[{{tr|Bed}}]]' fails to appear when obstructed.
+* Fix for Tooltip Message is not present for '[[{{tr|Steampunk Boiler}}]]'.
+* Fix for Message 'Wave 1' fails to appear for 'Frost Moon' event.
+* Fix for The '[[{{tr|Magic Mirror}}]]' teleport the user instantly.
+* Fix for The auto-swing animation of [[{{tr|Terra blade}}]] in [[{{tr|multiplayer}}]] is missing.
+* Fix for Game Freezes on performing Power button interrupt and as well as call interrupt.
+* Fix for Tiny Eaters from the item "[[{{tr|Scourge of the Corruptor}}]]" harm critters.
+* Fix for Game freezes on 'Low Battery' interrupt.
+* Fix for Game crashes on creating character using the voice key.
+* Fix for Game crashes when user taps on pause button, while following certain STR.
+* Fix for [[{{tr|Water Gun}}]] fails to inflicts dripping animation on [[{{tr|NPC}}]], critters, enemies and other players.
+* Fix for Close Button does not function in Cloud save and Local save Confirmation Message.
+* Fix for [[{{tr|Christmas}}]]期间 event the following items Krampus Horn, Grinch Finger and Bluegreen wallpapers are not present in [[{{tr|painter}}]] inventory.
+* Fix for During the Christmas event the item '[[{{tr|Festive Top Hat}}]]' is not present in [[{{tr|Clothier}}]]'s inventory.
+* Fix for In Russian Language Version text is overlapping on the back button.
+* Fix for '[[{{tr|Inferno Potion}}]]' animation fails to stop after pausing the game.
+* Fix for Glitch is observed on tapping in 'Enter Name' and 'Enter World Name' text box.
+* Fix for Player is unable to delete the first character entered in the 'Enter name' screen.
+* Fix for The Alignment of '[[{{tr|Candy Cane Sword}}]]' appears to be incorrect.
+* Fix for Moga & Logitech controller 'Auto Equip' button overlaps on the 'Controller' screen.
+* Fix for Arcane Rune Wall Fails to function as intended.
+* Fix for D pad fails to function for character "Gender" selection.
+* Fix for Potion fails to consume while using an weapon.
+* Fix for NVIDIA SHIELD Player is unable to buy an item with the NPC using 'A' button in D-PAD.
+* Fix for Tooltip Message is not present for '[[{{tr|Staff of Regrowth}}]]'.
+* Fix for The chain link of golem fist appears to be detached while using.
+* Fix for fish quest counter not incrementing.
+* Fix for issue with catching quest fish.
+* Fix for grappling hooks not connecting to [[{{tr|mine cart}}]] tracks.
+* Fix for placing a torch prioritizes tiles over walls.
+* Fix for Fire imp spawn rate by 20%.
+* Fix for Mine cart particles.
+* Fix for bugnet collision.
+* Fix for Eye of Cthulhu having incorrect music.
+* Fix for [[{{tr|Wyvern}}]] and bosses should not despawn anymore when going out of the sceen.
+* Fix for Duplicate [[{{tr|Angler}}]] NPCS are seen in the world.
+* Fix for Incorrect tooltip is displayed for the item [[{{tr|Mining Potion}}]].
+* Fix for [[{{tr|Excalibur}}]] image is truncated at the Tizona crafting popup.
+* Fix for Raven grant buff disappears from the world.
+* Fix for Pygmies grant buff disappears from the world.
+* Fix for Angler NPC is not present in both Normal and Expanded world.
+* Fix for Game crashes when a player select 'Keyboard Erase' button in 'Create Character' or 'Create World' screen.
+* Fix for Ingredients Images are overlapped for the item [[{{tr|vulcan Repeater}}]].
+* Fix for Ingredients Images are overlapped for the item [[{{tr|Tonbogiri}}]].
+* Fix for [[{{tr|Optic Staff}}]] buff disappears from the world.
+* Fix for Tooltip Message is not present for 'Bone Welder '.
+* Fix for The NPC 'Angler' is observed inside the sand .
+* Fix for Tooltip message fails to appear for the item 'Fez'.
+* Fix for The item '[[{{tr|Sniper Rifle}}]]' appears to be truncated.
+* Fix for Glitch observed when player using 'North Pole'.
+* Fix for Instruction Text still appears after the completion of [[{{tr|Tutorial}}]].
+* Fix for Pop-up fails to appear while deleting the character.
+* Fix for Game crashes on selecting 'Create Character' in cloud save.
+* Added 120 missing Tooltip messages.
+* Fix for knockbacks for non-melee weapons together with certain gloves.
+* Fix for crash when buying hair type or hair color from the stylist menu.
+* Fix for opening world map when pressing dpad down in stylist shop.
+* Fix for Cloud saving is accessible without an internet connection.
+* Fix for [[{{tr|Pressure Plates}}]] sometimes not showing up correctly.
+* Fix for crash on [[{{tr|Santa-NK1}}]] bullets in multiplayer.
+* Fix for a few issues with projectiles in multiplayer.
+* Fix for Game freeze while defeating event bosses in multiplayer mode.
+* Fix for Tooltip message appears twice for the following items.
+* Fix for Tooltip message appears for the item '[[{{tr|Cactus Door}}]]'
+* Fix for Third Cloud character fails to load.
+* Fix for Create character option appears to be truncated.
+* Fix for Character movement appears in equipment section.
+* Fix for NPC stylist's inventory appears to be out of screen on iPhone 4S.
+* Fix for Game crashes while deleting cloud world.
+* Fix for removing passcode string from Tutorial menus.
+* Fix for Incorrect stats appears for the item [[{{tr|Raven Staff}}]].
+* Fix for Incorrect melee damage appears for the item '[[{{tr|Enchanted Sword（item）}}|{{tr|Enchanted Sword}}]]'.
+* Fix for [[{{tr|Bottled Water}}]] count appears to be incorrect for the item "[[{{tr|Holy Hand Grenade}}]]".
+* Fix for Incorrect spelling is observed for the item '[[{{tr|Marshmallow on a Stick}}]]'.
+* Fix for Incorrect tooltip “33% chance to not consume ammo highly inaccurate” appears for the item '[[{{tr|Gatligator}}]]'.
+* Fix for Incorrect quote is displayed for the NPC "Demolitionist".
+* Fix for Text mismatch appears for the Clothier NPC quote.
+* Fix for Incorrect text '15 minute duration' appears in tooltip for the item 'Sugar Cookie'.
+* Fix for Incorrect text 'You must defeat Plantera first' appears when player tries to summon golem without 'Lihzahrd Power Cell'.
+* Fix for The Item "wine glass" changes to item "chest".
+* Fix for Incorrect item '[[{{tr|Sky Blue Flower}}]]' is obtained on destroying 'chalice'.
+* Fix for The Alignment of 'Christmas Tree Sword' appears to be incorrect.
+* Fix for Incorrect item '[[{{tr|Bowl}}]]' is obtained on destroying '[[{{tr|Glass Bowl}}]]'.
+* Fix for Multiple jar is observed for the item '[[{{tr|Monarch Butterfly Jar}}]]'.
+* Fix for The item '[[{{tr|Honey Candle}}]]' is missing in the crafting slot.
+* Fix for Crafting image for the item '[[{{tr|Suspicious Looking Eye}}]]' is truncated.
+* Fix for Player is unable to craft the item "[[{{tr|Purple thread}}]]" .
+* Fix for Image for the item '[[{{tr|bookcase}}]]' is missing in the crafting slot.
+* Fix for [[{{tr|Grenade Launcher}}]] shoots the rocket like a [[{{tr|Rocket Launcher}}]].
+* Fix for Living fire block is now able to be 掉落自any enemy killed in [[{{tr|underworld}}]]（hell）in [[{{tr|hardmode}}]].
+* Fix for Orange Bloodroot fails to spawn in [[{{tr|Underground}}]] and [[{{tr|Cavern Layer}}]].
+* Fix for Player can switch item while using the item '[[{{tr|Ice Blade}}]]'.
+* Fix for Graphical glitch appears on placing certain items on 'Weapon Rack'.
+* Fix for The selling price of the item '[[{{tr|KO Cannon}}]]' appears to be incorrect.
+* Incorrect stats appears for the item '[[{{tr|Cutlass}}]]'.
+* Fix for Incorrect text '15 minute duration' and '20 minute duration' appears in tooltip for the item '[[{{tr|Flask of Venom}}]]'.
+* Fix for Incorrect text '15 minute duration' appears in tooltip for the item '[[{{tr|Sugar Cookie}}]]'.
+* Tin and Lead bars are not available as loots in [[{{tr|chest}}]].
+* Incorrect tooltip “Teleports to the position of the cursor” appears for the item '[[{{tr|Rod of Discord}}]]'.
+* Water fails to flow when 玩家 opens the door-
+* The item “[[{{tr|Philosopher's Stone}}]]” doesn’t work as intended.
+* 玩家 is teleported into golem temple before defeating [[{{tr|plantera}}]].
+* Back button fails to function on Enter world name screen.
+* [[{{tr|Crimson Altar}}]] is present in the other [[{{tr|biome}}]].
+* Text ‘Yes’ overlaps on the ‘Auto Equip’ option.
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.2.11983
+| platform = amazon
+| date = 2016/06/16
+| ref = http://forums.terraria.org/index.php?threads/terraria-mobile-amazon-update.42218/
+| name = 兼容性更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Kindle Fire HD 2012 Devices, with Ice Cream Sandwich OS 4.0.2 and above, now supported in this update.
+* 1st gen Kindle Fire tablets（2011）and non-HD 2nd gen Fire tablets（2012）are not supported（insufficient RAM and/or no Bluetooth support）.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = windows phone 1.2.4.3
+| platform = amazon/winphone
+| v-amazon = 1.2.11981
+| v-winphone = 1.2.4.3
+| date = 2016/06/08
+| ref = http://forums.terraria.org/index.php?threads/console-and-mobile-news-windows-phone-fix-incoming-and-more.44431/
+| name = 内容更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Added all [[1.2.3]] and [[1.2.4]] content for Amazon.
+* Added 'expanded worlds'（4200x1200, equivalent to small worlds on PC）.
+* Added a new Cloud save system（Amazon only）.
+** Requires a Google account with access to Google Drive.
+* All bug fixes and changes from [[{{tr|Easter}}]] Update 2016.
+* Fix for 常规 crash issue on Windows Phone.
+* Fix for crash issue specific to Microsoft Lumia 640.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.11971
+| platform = ios/googleplay
+| v-ios = 1.2.11971
+| v-googleplay = 1.2.11979
+| date = 2016/04/20
+| ref = http://forums.terraria.org/index.php?threads/mobile-hotfix-ios-google-play.42696/
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 修复了由[[{{tr|萤火虫}}]]和闪电引发的bug。
+* 修改了[[{{tr|Tizona剑}}]]的制作配方。
+* 修复了[[{{tr|仆从}}]]在没有[[{{tr|魔力}}]]后会消失的问题。
+* 修复了[[{{tr|彩虹枪}}]]的彩虹在5秒而不是10秒消失的问题。
+* 修复了[[{{tr|蜘蛛盔甲}}]]的工具提示不正确的问题。
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.11964
+| platform = ios/googleplay
+| v-ios = 1.2.11964
+| v-googleplay = 1.2.11965
+| date = 2016/03/23
+| ref = http://forums.terraria.org/index.php?threads/terraria-mobile-easter-update-expanded-worlds-more.41313/
+| name = [[{{tr|复活节}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;Additions
+* Added 'expanded worlds'（4200x1200, equivalent to small worlds on PC）.
+* Added auto-equip function that can now be toggled on/off from the menu.
+;Bug fixes
+* Android Billing fixes（Try & Buy version should 不再require a WiFi connection to work properly）.
+* Improvements to world generation.
+* [[{{tr|Tizona}}]], [[{{tr|Tonbogiri}}]], and [[{{tr|Vulcan Repeater}}]] accept [[{{tr|Titanium}}]] in their recipes.
+* [[{{tr|Dragon Armor}}]], [[{{tr|Spectral Armor}}]], and [[{{tr|Titan armor}}]] accept [[{{tr|Palladium}}]], [[{{tr|Orichalcum}}]], or [[{{tr|Titanium armor}}]] pieces in their recipes.
+* Fixed crash that covered 9% of total crash reports.
+* Fix for tool tip for [[{{tr|Tackle Box}}]] & [[{{tr|Chain Gun}}]].
+* Fix for a unique death message for [[{{tr|Angler}}]].
+* Fix Tooltip Message is not present for '[[{{tr|Razorpine}}]]'.
+* Fix for Tooltip Message is not present for '[[{{tr|Venom Staff}}]]'.
+* Fix for Price amount fails to appear for the item '[[{{tr|Hair Dye Remover}}]]'.
+* Fix for Tooltip Message is not present for '[[{{tr|Paint Sprayer}}]]'.
+* Fix for Tooltip Message is not present for '[[{{tr|Portable Cement Mixer}}]]'.
+* Fix for Tooltip message is not present for the items 'sparkly wings' and '[[{{tr|Festive Wings}}]]'.
+* Fix for Incorrect price amount '5 gold coins' appear for the item '[[{{tr|Speed Hair Dye}}]]'.
+* Fix for Solid blocks placed over the spawn point fails to destroy.
+* Fix for Incorrect color appears for [[{{tr|Mana crystal}}]].
+* Fix for Incorrect color appears for the item '[[{{tr|Life Crystal}}]]' during regenerating.
+* Fix for '[[{{tr|Queen Spider}}]]' fails to attack the enemy while summoned in the wall.
+* Fix for Placed [[{{tr|Blue Dungeon Chest}}]] is shown as [[{{tr|Pink Dungeon Chest}}]].
+* Fix for Shrimp fish is caught in [[{{tr|lava}}]].
+* Fix for Placed Pink Dungeon chest is shown as Green Dungeon chest.
+* Fix for [[{{tr|Purification Powder}}]] fails to shatter shadow orbs.
+* Fix for [[{{tr|Truffle Worm}}]] fails to move when dropped.
+* Fix for [[{{tr|baby Truffle}}]] is observed to be walking above the ground.
+* Fix for The critter 'Firefly' does not emit light.
+* Fix for Tooltip Message is not present for '[[{{tr|Glass Kiln}}]]'.
+* Fix for Tooltip Message is not present for '[[{{tr|Minecart}}]]'.
+* Fix for Tooltip Message is not present for 'Flesh cloning vat'.
+* Fix for Multiple 'back' button observed on 'Enter world name' screen.
+* Fix for The item '[[{{tr|Water Gun}}]]' has no description.
+* Fix for The Alignment of 'Sawtooth Shark' appears to be incorrect.
+* Fix for crash 'The application is missing required entitlement com.apple.developer.icloud-
+services'（9%）.
+* Fix for Tooltip Message is not present for '[[{{tr|Ice Machine}}]]'.
+* Fix for [[{{tr|Travelling Merchant}}]]'s icon is missing from shop menu.
+* Fix for Tooltip Message is not present for 'Brick Layer'.
+* Fix for Glitch is observed when 玩家 equips the item 'Twin Mask'.
+* Fix for The item '[[{{tr|Gravitation Potion}}]]' is not working as intended.
+* Fix for Incorrect ranged damage appears for the item '[[{{tr|Vulcan Repeater}}]]'
+* Fix for [[{{tr|Bee Wings}}]] does not function as intended.
+* Fix for The selling price of the item 'Fart in a Jar' appears to be incorrect.
+* Fix for '[[{{tr|Magic Mirror}}]]' fails to function when player uses other item simultaneously.
+* Fix for Incorrect color appears for the item 'Life Crystal' during regenerating.
+* Fix for Incorrect color appears for Mana crystal.
+* Fix for Tooltip Message is not present for 'Living Loom'.
+* Fix for Tooltip message is not present for the item 'Angler earring'.
+* CNR for Duplicate Angler [[{{tr|NPC}}]] are seen in the world.
+* CNR for Game name 'Terraria' appears to be misaligned in main menu.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.11587
+| platform = ios/googleplay
+| v-ios = 1.2.11587
+| v-googleplay = 1.2.11580
+| date = 2016/02/08
+| ref = http://forums.terraria.org/index.php?threads/mobile-fixes-update-and-changelog.40149/
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Fixed：[[{{tr|Discount Card}}]] not working.
+* Fixed：[[{{tr|Animal Skins}}]] producing [[{{tr|Iron Pickaxe}}]] when removed from walls.
+* Fixed：[[{{tr|Beetle armor}}]] not giving the proper set bonus.
+* Fixed：[[{{tr|Beetle armor}}]] set bonus read "Minion damage +".
+* Fixed：[[{{tr|Pre-Hardmode}}]] Crimson not converting grass or trees, only spreads on dirt blocks（Galaxy S4, Lollipop 5.0.1）. Related, planting Crimson Seeds on grass will use the seed without producing Crimson.
+* Fixed：Ultrabright [[{{tr|Torch}}]] from [[{{tr|Traveling Merchant}}]] don’t produce light when held, and when you free them, the item doesn’t drop.
+* Fixed：[[{{tr|Rain}}]] becomes fast when using touchscreen on point placing or precision aim window.
+* Fixed：Swapping between items sends out multiple flails or harpoons.
+* Fixed：[[{{tr|Chinese Lantern}}]] cannot be 购买自[[{{tr|Merchant}}]].
+* Fixed：Old credits displaying.
+* Fixed：[[{{tr|Ocean}}]] biome detection.
+* Fixed：Non-Ocean fish catches in Ocean.
+* Fixed：[[{{tr|Fishing}}]] in [[{{tr|lava}}]] or [[{{tr|honey}}]]. Handle situations where DetermineFishingCatch may return null（e.g. fishing in [[{{tr|lava}}]]）.
+* Fixed：When fish catch is determined（now done only once whenever the bobber reels, not multiple times when the fishing rod is cast）.
+* Fixed：When [[{{tr|Sonar Potion}}]] message appears and disappears.
+* Fixed：[[{{tr|Bait}}]] usage, now correctly only used when reeling in, instead of when the fish catch is determined.
+* Fixed：[[{{tr|Solar Eclipse}}]] enemies not properly targetting enemies.
+* Fixed：Missing hit effect for [[{{tr|Worm}}]].
+* Fixed：[[{{tr|Vile Powder}}]] fails to turn [[{{tr|Penguin}}]] to [[{{tr|Corrupt Penguin}}]].
+* Fixed：Able to summon a pirate/frost invasion once.
+* Fixed：Players and NPC/enemies cannot move down through platform stairs.
+* Fixed：Correct [[{{tr|Flare Gun}}]] tooltip info（damage, crit chance）.
+* Fixed：[[{{tr|Stylist}}]] NPC inventory dialog box appears on the game menu.
+* Fixed：[[{{tr|Heart Crystal}}]] spawn in [[{{tr|Dungeon}}]].
+* Fixed：Changed trap damage to enemy scaling由 1/3 降低至 66%.
+* Fixed：[[{{tr|Living Loom}}]] fails to appear in the chests of [[{{tr|Living Tree}}]].
+* Fixed：[[{{tr|Eater of Worlds}}]] drops.
+* Fixed：Drops for [[{{tr|Duke Fishron}}]]：Fixed [[{{tr|Potion}}]] drop, and now drops [[{{tr|Greater Healing Potion}}]] instead of [[{{tr|Lesser Healing Potion}}]].
+* Fixed：Unintended drops and boss defeated messages for [[{{tr|Skeletron Prime}}]] arms.
+* Fixed：Mana [[{{tr|Hair Dye}}]] color issue（color overflow when >200 mana）.
+* Fixed：Effect of [[{{tr|Fishron Wings}}]] negating slowdown in [[{{tr|water}}]].
+* Fixed：[[{{tr|Cursed Hammer}}]]/[[{{tr|Shadow Hammer}}]] drops, now correctly drops hardmode [[{{tr|bars}}]] instead of random items.
+* Fixed：[[{{tr|Angler}}]] quest reward item：[[{{tr|Anchor}}]]（weapon）-> [[{{tr|Wall Anchor}}]]（decorative）.
+* Fixed：Player sprite rotation issue when using [[{{tr|Magic Mirror}}]] on a diagonal [[{{tr|Minecart Track}}]].
+* Fixed：[[{{tr|Silt}}]]/[[{{tr|Slush}}]] blocks being consumed twice when used on [[{{tr|Extractinator}}]].
+* Fixed：[[{{tr|Frankenstein}}]], [[{{tr|Swamp Thing}}]] enemies not appearing or not targeting 玩家 [[{{tr|Solar Eclipse}}]]期间。
+* Fixed：[[{{tr|Grasshopper}}]] being unkillable（friendly flag was set but never unset）.
+* Fixed：Made gore effect of hearts during valentine a little bit less.
+* Fixed：Removed ability to summon multiple [[{{tr|Wisp in a Bottle}}]] at once.
+* Fixed：Removed summon check on [[{{tr|Pirate Staff}}]] that prevented summoning more than one Pirate minion at a time.
+* Fixed：Pirate minion draw pos.
+* Fixed：Drawing offsets for Spider minions.
+* Fixed：[[{{tr|Swordfish}}]] price fixed.
+* Fixed：Downscaled UI scale of [[{{tr|Reaver Shark}}]] to properly fit in its item slot.
+* Fixed：Added [[{{tr|Extendo Grip}}]] to [[{{tr|Traveling Merchant}}]] shop, now that it is functional.
+* Fixed：Removed [[{{tr|buff}}]] times listed on [[{{tr|Minion}}]] and [[{{tr|Pet}}]] summon items（these are supposed to last infinitely）.
+* Fixed：[[{{tr|Spectre armor}}]] mask string（EN only）.
+* Fixed：[[{{tr|Angler}}]] never being considered saved, causing issues like the Angler respawning on the beach if killed after moving in, and things like [[{{tr|Mechanic's Rod}}]] becoming unavailable.
+* Fixed：Issue report：[[{{tr|Queen Bee}}]] AI in multiplayer would chase faraway players who teleported away.
+* Fixed：Issue report：[[{{tr|Plantera's Bulb}}]] growing when only one [[{{tr|Mechanical Boss}}]] was defeated, instead of all three.
+* Fixed：Recipe for [[{{tr|Pressure Plate Track}}]] would not be properly discovered with any [[{{tr|Pressure Plate}}]].
+* Fixed：Being able to place [[{{tr|Jack 'O Lantern}}]] and [[{{tr|Music Box}}]] on [[{{tr|table}}]].
+* Fixed：Game spawning heart particles for [[{{tr|lovestruck}}]] enemies [[{{tr|Valentine's Day}}]]期间 event even when the game was paused.
+* Fixed：Implement correct [[{{tr|Robe}}]] drawing on [[{{tr|Mannequin}}]]; slight refactoring of related code for player.
+* Fixed：[[{{tr|Fish Bowl}}]] is a placeable item.
+* Fixed：[[{{tr|Fishing}}]] power of Fiberglass [[{{tr|Fishing Pole}}]] from 25% to 27% to match PC version.
+* Fixed：Issue allowing invalid text characters in player or world names. Sanitized input string for character creation in case invalid characters appear in the middle（could happen with foreign language/iOS builds）.
+* Fixed：Game crashes on creating a character in Chinese language.
+* Fixed：[[{{tr|Hardmode}}]] [[{{tr|crimson}}]] enemy drop：Should be [[{{tr|Meat Grinder}}]]（crafting station）, not Meat Grinder（hammer）; latter's name should be [[{{tr|Flesh Grinder}}]].
+* Fixed：Removed [[{{tr|Music Box}}]] from [[{{tr|Wizard}}]] shop（unsupported item）.
+* Fixed：Music Box lookup tables for new Music Box items to prevent issues where destroying placed Music Boxes would drop random items.
+* Fixed：Draw held items and fishing rods at the right position when held while mounted. Don't draw [[{{tr|Hoverboard}}]] while mounted, that just looks weird and wrong.
+* Fixed：Players being able to bring out multiple [[{{tr|Anchor}}]] weapons at once（functions like boomerangs）.
+* Fixed：[[{{tr|Slimer}}]] and [[{{tr|Slimeling}}]] were not spawning once their 'parent' enemies died.
+* Partial fix：[[{{tr|Timer}}]] lack feedback, so textures are now brighter and highlighting is removed.
+* Updated localization in English. Fixed name of [[{{tr|Flesh Grinder}}]] hammer（was Meat Grinder）and added tooltip for [[{{tr|Naughty Present}}]]（"Summons the Frost Moon"）.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = google 1.2.11333
+| platform = googleplay
+| v = 1.2.11333
+| date = 2016/01/05
+| name = 修补程序
+| changes =
+iOS版本中的许多游戏玩法修复和改进，尽管iOS和Android上仍然存在一些错误。
+}}
+
+{{/row
+| anchor = ios 1.2.11328
+| platform = ios
+| v = 1.2.11328
+| date = 2015/12/18
+| ref = http://forums.terraria.org/index.php?threads/terraria-mobile-bugs-issues-status.37778/
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* This build includes critical fixes for Cloud access on iOS 7 devices. You will be able to access your cloud characters and cloud worlds. However due to all the additional content in 1.2.4 world save files will have to be converted to local saves. This only applies to iOS7, iOS8+ users will be able to continue to save their worlds to the Cloud.
+* If you are using iOS8 or above please ensure that iCloud Drive is enabled in order to access Cloud saves. To do this go to Settings > iCloud > iCloud Drive and toggle it on. You should see your saves after.
+* Several gameplay fixes and improvements.
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.2.4.2
+| platform = winphone
+| date = 2015/12/10
+| name = 修补程序
+| changes =
+小错误和崩溃修复。
+}}
+
+{{/row
+| anchor = ios 1.2.11212
+| platform = ios/googleplay/winphone
+| v-ios-googleplay = 1.2.11212
+| v-winphone = 1.2.4
+| date = 2015/12/09
+| ref = http://forums.terraria.org/index.php?threads/console-and-mobile-updates-eta.37123/
+| name = 1.2.4更新<br/>（[[1.2.4.1]] PC equivalent）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+All content from [[{{tr|Desktop version}}]] up to [[1.2.4]], including：* [[{{tr|Fishing}}]]
+* [[{{tr|Duke Fishron}}]]
+* [[{{tr|Travelling Merchant}}]], [[{{tr|Stylist}}]] and [[{{tr|Angler}}]]
+* [[{{tr|Frost Moon}}]]
+* [[{{tr|Mount}}]]
+* [[{{tr|Minecart}}]]
+* [[{{tr|Banner}}]] kill count mechanic introduced.
+* Updated sprites
+* Much more...
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.10299
+| platform = ios/googleplay/amazon
+| v-ios = 1.2.10299
+| date-ios = 2015/10/01
+| v-googleplay-amazon = 1.2.10333
+| date-googleplay = 2015/08/25
+| date-amazon = 2015/09/02
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 优化了[[{{tr|多人游戏}}]]和修复bug
+* 修复了bug
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.10061
+| platform = ios/googleplay/amazon
+| v-ios = 1.2.10061
+| v-googleplay = 1.2.10177
+| date-ios-googleplay = 2015/08/21
+| v-amazon = 1.2.17028
+| date-amazon = 2015/08/20
+| ref = http://forums.terraria.org/index.php?threads/mobile-terraria-news-update-fixes-faqs.27230/
+| name = 调整更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;Balance changes
+* [[{{tr|Day and night cycle}}]] are now longer once entering [[{{tr|Hardmode}}]]（same length as PC）
+* Day and night cycles are now longer when an [[{{tr|event}}]] is occurring（[[{{tr|Solar Eclipse}}]], [[{{tr|Pumpkin Moon}}]], and all invasions）
+* [[{{tr|Enemies}}]] overall are stronger than before
+* [[{{tr|Blood Moon}}]] is more aggressive, spawning more enemies
+* [[{{tr|Eye of Cthulhu}}]] has been slightly nerfed, does a little bit less damage in phase 2.
+** [[{{tr|Servants of Cthulhu}}]] have a higher chance to drop a recovery [[{{tr|heart}}]].
+* [[{{tr|Goblin Invasion}}]] are more likely to spawn in pre-Hardmode and less likely in Hardmode.
+* [[{{tr|Queen Bee}}]] has been buffed（more health, slightly higher defense and damage）
+* [[{{tr|Jungle Temple}}]] [[{{tr|traps}}]] can now only be mined using [[{{tr|Picksaw}}]], unlike the PC Edition.
+* [[{{tr|Lihzahrd Power Cell}}]] drop chance increased from 1/100（1%）to 1/50（2%）
+* [[{{tr|Golem}}]] has more defense
+* [[{{tr|Meteorite}}]] are now slightly smaller in size, causing less destruction.
+* [[{{tr|Solar Eclipse}}]] [[{{tr|event}}]] now has a higher chance to spawn（over time）
+* [[{{tr|Mushroom Spear}}]] buy price has been changed to {{gc|70}}
+* [[{{tr|Cutlass}}]] has been slightly nerfed（does less damage）
+* [[{{tr|Pumpkin Moon}}]] event has been buffed in both damage and health.（Defence was not changed）
+* Changed the starting items, now a player starts with a [[{{tr|Wooden Sword}}]] instead of a [[{{tr|Copper Broadsword}}]]
+
+;Interface/mechanics changes
+* Auto-aim has been 改进
+* Auto-aim is now available when playing with a controller（ie Fire TV and Moga）
+* Zooming is disabled as long as you are using a virtual joystick, hopefully causing less accidental zoom-ins.
+* Player now emits a dark blue light if they have no light pets active.
+* Added extra-fast crafting, will now craft doubles after ~5 seconds
+* [[{{tr|Rope}}]] climbing has been 改进
+* Jumping has been 改进 - should fix the bug where a player could go through a 2.5（5 Meter）block gap.
+* Quick Grapple has been 改进（quick grapple：slide from center of the screen to a direction, it automatically uses a grappling [[{{tr|hook}}]] in your inventory）
+* [[{{tr|Smart Cursor}}]] has been 改进
+* Tweaked the way recipes are discovered. Discovery of [[{{tr|Crafting station}}]] made faster, thus allowing easier access to advanced crafting items.
+* Tweaked the way [[{{tr|biome}}]] get recognized, resulting in better biome switches.
+
+;Minor changes taken from PC [[1.3]]
+* [[{{tr|Chlorophyte}}]] is able to turn corrupted/bloody grass into [[{{tr|grass}}]] and [[{{tr|dirt}}]] into [[{{tr|mud}}]]
+* [[{{tr|Sunflower}}]] give off light during the night, and in dark places
+* [[{{tr|Pinky}}]] now has a higher chance to drop [[{{tr|Slime Staff}}]]
+
+;Bug fixes
+* Fixed bug where [[{{tr|waterfall}}]] animations were twice as fast as intended（Pre-Hardmode）
+* Fixed bug where [[{{tr|Ice Bat}}]] would drop [[{{tr|Frost Staff}}]]
+* Fixed bug where [[{{tr|minimap}}]] would not display the correct colors
+* Fixed bug where [[{{tr|Heart Crystal}}]] would give off the incorrect sounds when struck, but not destroyed
+* Fixed bug with [[{{tr|Smart Cursor}}]] where it would not go by default to the tree center
+* Fixed bug where [[{{tr|Ranged Weapons}}]] would fire too slowly if 玩家 was not using auto-aim
+* Fixed bug where the 玩家的 shirt was incorrectly rendered when first booting up the game
+* Fixed bug where placing [[{{tr|Torch}}]] would instantly destroy them
+* Smart Cursor 不再targets Torches and [[{{tr|Rope}}]]
+* [[{{tr|Armor}}]] 不再should auto-equip into [[{{tr|vanity}}]] slots upon crafting or picking up
+* Fixed bug where [[{{tr|Cursed Sapling}}]] was not being 掉落自[[{{tr|Mourning Wood}}]]
+* Fixed bug where [[{{tr|Pirate Captain}}]], when killed, would show five heads as gore instead of body parts
+* Fixed bug where [[{{tr|NPC}}]] icons on the minimap would be really small when >2800 blocks（5600 Meters）from 玩家
+* Fixed bug where [[{{tr|Pirate Map}}]] would drop everywhere in the world Post [[{{tr|Plantera}}]]. Now it can only be found near [[{{tr|Ocean}}]]
+* Fixed bug where item stats would not correctly reset when switching tabs
+* [[{{tr|Jungle Temple}}]] Door is 不再breakable using [[{{tr|Dynamite}}]] or [[{{tr|Holy Hand Grenade}}]]
+* Fixed bug where screen would flicker red when other players would receive damage in [[{{tr|multiplayer}}]], now only effects 玩家 with the map open
+* Network code has been 改进
+* Fixed incident where [[{{tr|Turtle Armor}}]] could instantly destroy the Dungeon Guardian
+* Fixed crash bug related to putting [[{{tr|chest}}]] on [[{{tr|Boulder}}]]
+* Fixed a bug related to enemies and biome recognition - [[{{tr|Plantera}}]] should 不再enrage while still in [[{{tr|Jungle}}]]
+* Fixed bug where [[{{tr|Mannequin}}]] were not properly rendered
+* Fixed crash related to MOGA controller support
+* Fixed bug where, when a player had [[{{tr|vanity}}]] items equiped, the shown defense was incorrect
+* Fixed bug where [[{{tr|Goblin Scout}}]] and [[{{tr|King Slime}}]] never meet the requirements to spawn
+* Searches faster for local network games（every 4 seconds instead of 10 seconds）
+* Fixed memory leak on android devices
+* Fixed small memory leak related to the display of NPC names, they could occasionally change names
+* Fixed issue where iCloud would backup too many files
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.8631
+| platform = ios/googleplay
+| v-ios = 1.2.8631
+| date-ios = 2015/06/01
+| v-googleplay = 1.2.8798
+| date-googleplay = 2015/05/26
+| rawref = <ref name="Critical Fix">http://forums.terraria.org/index.php?threads/mobile-terraria-critical-fixes-updates-thread.17160/</ref>
+| name = “关键问题”更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Fixed keyboard issue that prevented users from naming characters and worlds on some devices
+* Now auto-saves every 2 minutes
+* [[{{tr|Pearlstone Brick}}]] 不再spreads [[{{tr|The Hallow}}|{{tr|Hallow}}]]
+* Fixed bug where items equipped by client players were not synced correctly
+* Fixed bug where crafting ingredients were visible after leaving the crafting tab
+* Fixed stutter when saving a cloud-stored game
+* [[{{tr|Lihzahrd Door}}]] can 不再be destroyed by [[{{tr|explosives（class）}}|{{tr|explosives}}]] to enter [[{{tr|Jungle Temple}}]] early
+* Fixed issue with [[{{tr|paint}}]]ing
+* Many more fixes
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.2.8498
+| platform = ios
+| v = 1.2.8498
+| date = 2015/05/04
+| rawref = <ref name="Critical Fix"/>
+| name = “关键问题”更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+This build fixes critical issues where characters and worlds would not load and/or crash. In order to help you make up for lost time, players will receive a gift to compensate for potential data loss：300 [[{{tr|Wood}}]], 50 [[{{tr|Iron Bar}}]], 50 [[{{tr|Gel}}]], 200 [[{{tr|Obsidian}}]], 200 [[{{tr|Hellstone}}]], 200 [[{{tr|Gold Ore}}]], and 30 [[{{tr|Gold Coin}}]].
+
+In addition, we have the following bug fixes：
+* Fixed bug where ingredients were rendered too large
+* Fixed issue where certain enemies would never spawn like [[{{tr|Paladin}}]], [[{{tr|Corruptor}}]], [[{{tr|Floaty Gross}}]], and a few others.
+* Fixed issue where NPC spawning window was too big This should make the spawn behavior a lot better.
+* Fixed issue where hearts were incorrectly rendered on some devices
+* Fixed issue where Crimson enemies never would drop the soul of night
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.2.7899
+| platform = googleplay
+| date = 2015/04/09
+| name = 修补程序
+| changes =
+修复更多错误。
+}}
+
+{{/row
+| anchor = ios 1.2.7901
+| platform = ios/googleplay
+| v-ios = 1.2.7901
+| date-ios = 2015/04/20
+| v-googleplay = 1.2.7642
+| date-googleplay = 2015/03/26
+| ref = http://forums.terraria.org/index.php?threads/mobile-terraria-easter-content-bugfixes-galore.15185
+| name 新增[[1.2]]
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; Additions
+* 添加了蓝色和绿色[[{{tr|染料}}]]（因为这是泄露文件，所以导致它们没有加入Google Play版的[[1.2]]版本中）
+
+;Changes
+* [[{{tr|Ocram}}]] is a bit more difficult to fight
+* Lowered [[{{tr|Mummy}}]] spawn chance in [[{{tr|Pyramid}}]] in Pre-Hardmode
+* [[{{tr|Hardmode}}]] spawn rate increased slightly
+
+;Fixes
+* Fixed crash for android 2.3 users
+* Fixed issue where [[{{tr|accessories}}]] weren't being drawn
+* Fixed rendering of [[{{tr|Jack 'O Lantern}}]]
+* Fixed issue where 'hot-using' an item would use it twice instead of once
+* [[{{tr|NPC}}]] moving-in code fixed, [[{{tr|Truffle}}]] [[{{tr|NPC}}]] should move in quicker
+* Crafting now recognizes when it should use [[{{tr|Lead Bar}}]] or [[{{tr|Iron Bar}}]]
+* Crafting now recognizes correctly which type of [[{{tr|Wood}}]] it should use（Prior to this, you could convert any wood into normal wood, by crafting it into a fence, then crafting the fence into normal wood）
+* Fixed crash on suspension while in crafting screen
+* [[{{tr|Golem}}]] now has correct values for health & damage
+* [[{{tr|Holiday Bauble}}]] has a chance to spawn from a cut down [[{{tr|Tree}}]]
+* Fixed [[{{tr|Drill}}]]：Mythril, Palladium, Orichalcum, Titanium, Chlorophyte only being able to be used with Auto-Aim
+* Fixed issue where sell prices might not update correctly
+* Fixed issue where 1.2 items were not [[{{tr|reforge}}]]able（Google Play & iOS）
+* Fixed [[{{tr|multiplayer}}]] issues：No HUD displayed as client, [[{{tr|Dye}}]] were not correctly synced
+* Fixed rare crash when returning from suspension
+* Fixed crashes related to suspending the game
+* Fixed bug where you were able to craft certain items that shouldn't be available
+* Fixed various bugged projectiles
+* Tweaked snow particles
+* Misc small performance improvements
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.2.6787
+| platform = googleplay
+| date = 2015/01/13
+| name = 修补程序
+| changes =
+修复更多错误。
+}}
+
+{{/row
+| v = 1.2.6715
+| platform = googleplay
+| date = 2014/12/10
+| name = 修补程序
+| changes =
+修复安卓设备可能出现的崩溃现象和其他错误。
+}}
+
+{{/row
+| anchor = ios 1.2.6508
+| platform = ios/googleplay/amazon/winphone
+| v-ios = 1.2.6508
+| v-googleplay = 1.2.6667
+| date-ios-googleplay = 2014/12/03
+| v-amazon = 1.2.7122
+| date-amazon = 2015/01/12
+| v-winphone = 1.2.0
+| date-winphone = 2014/12/22
+| ref = http://forums.terraria.org/index.php?threads/terraria-1-2-for-mobile.6367/
+| name = [[1.2]] Update<br/>（[[1.2.1.2]] PC equivalent）
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Over 1000 new items（including 30+ new [[{{tr|block}}]] types）
+* Over 100 new [[{{tr|enemies}}]]
+* 4 new [[{{tr|boss}}]]：[[{{tr|Brain of Cthulhu}}]], [[{{tr|Queen Bee}}]], [[{{tr|Plantera}}]], [[{{tr|Golem}}]]
+* [[{{tr|Pumpkin Moon}}]]
+* 15 new [[{{tr|pet}}]]
+* 8 more [[{{tr|NPC}}]]
+* Create a new world to experience brand new [[{{tr|biome}}]] & updates to old ones
+* New [[{{tr|events}}]], [[{{tr|music}}]], and weather
+* Many items now stack to 999
+* Bigger [[{{tr|chest}}]]（+4 Slots）
+* Tons of other improvements
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.6255
+| platform = ios/googleplay/amazon
+| v-ios = 1.1.6255
+| v-googleplay = 1.1.6299
+| v-amazon = 1.1.6292
+| date = 2014/11/06
+| ref = http://forums.terraria.org/index.php?threads/mobile-thanksgiving-update-coming-november-6th.4626/
+| name = [[{{tr|感恩节}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+[[{{tr|Thanksgiving}}]] [[{{tr|seasonal event}}]]：* [[{{tr|Turkor the Ungrateful}}]] [[{{tr|Boss}}]]
+* [[{{tr|Turkey Pet}}]]
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.6014
+| v = 1.1.6014
+| platform = ios
+| date = 2014/10/01
+| name = 修补程序
+| changes =
+紧急修复。
+}}
+
+{{/row
+| anchor = ios 1.1.5933
+| platform = ios/googleplay/amazon
+| v-ios = 1.1.5933
+| date-ios = 2014/09/22
+| v-googleplay = 1.1.5960
+| date-googleplay = 2014/09/23
+| v-amazon = 1.1.5934
+| date-amazon = 2014/09/17
+| name = [[{{tr|十月啤酒节}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* [[{{tr|Oktoberfest}}]] [[{{tr|seasonal event}}]]：[[{{tr|Merchant}}]] and [[{{tr|Clothier}}]] sell traditional Oktoberfest items
+* Minor bug fixes.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = Windows Phone 1.0.0.0
+| v = 1.0.0.0
+| platform = winphone
+| date = 2014/09/12
+| ref = http://web.archive.org/web/20160602204737/http://www.terrariaonline.com/threads/terraria-lands-on-windows-phone-today.165153/
+| name = Windows Phone最初发布
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* 300+ crafting recipes - [[{{tr|weapon}}]], [[{{tr|armor}}]], [[{{tr|potion}}]], and more
+* 25+ [[{{tr|block}}]] types
+* 80+ [[{{tr|enemies}}]]
+* 8+ [[{{tr|boss}}]]
+* Over a dozen [[{{tr|biome}}]]
+* Dynamic [[{{tr|water}}]] & [[{{tr|lava}}]], [[{{tr|day}}]]/[[{{tr|night}}]] cycle
+* 10+ [[{{tr|NPC}}]] to meet and recruit to your [[{{tr|house}}]]
+* Kill [[{{tr|Wall of Flesh}}]] and change your world to [[{{tr|Hardmode}}]] to experience new enemies and biomes
+* Use [[{{tr|Pwnhammer}}]] to destroy [[{{tr|Demon Altar}}]] and create new [[{{tr|ore}}]]
+* Xbox Live leaderboards & achievements
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.5833
+| v = 1.1.5833
+| platform = ios
+| date = 2014/09/11
+| ref = http://web.archive.org/web/20160602204745/http://www.terrariaonline.com/threads/update-notes-9-4-2014.164017/
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Expanded language support
+* Made [[{{tr|Ocram}}]] slightly more difficult
+* Fixed bug where Ocram didn’t spawn enough minions
+* Fixed glitch where you could ignore Ocram's damage by using the spike blocks
+* Ocram gained a bit more health
+* Fixed [[{{tr|Tinkerer's Workshop}}]] glitch
+* Fixed [[{{tr|Clockwork Assault Rifle}}]] not working as intended
+* Added boss [[{{tr|music}}]]
+* Added [[{{tr|snow biome}}]] music
+* Fixed issue where underground music would not play
+* Tweaked various loot tables
+* Overall a bit less loot and sometimes lower spawn chance
+* Tweaked the drop rate of [[{{tr|Soul of Night}}]] / [[{{tr|Soul of Light}}|{{tr|Light}}]]
+* Fixed [[{{tr|Rainbow Rod}}]] not having a projectile
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.5536
+| platform = ios/googleplay/amazon
+| v-ios = 1.1.5536
+| date-ios = 2014/08/27
+| v-googleplay-amazon = 1.1.5822
+| date-googleplay = 2014/09/04
+| date-amazon = 2014/09/01
+| ref = http://web.archive.org/web/20160602204748/http://www.terrariaonline.com/threads/terraria-hardmode-for-google-play-is-out-now-changelog.163978/
+| name = [[{{tr|困难模式}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Enabled & unlocked all [[{{tr|Hardmode}}]] content.
+* Added missing textures for some hardmode content.
+* Added autoaim feature.
+* Added loot tables
+** Dragon Skull
+** Dragon Hornet
+** Dragon Snatcher
+** Albino Antlion
+** Shadow Mummy
+** Spectral Mummy
+** Shadow Slime
+** Cursed Hammer
+** Shadow Hammer
+** Arch Wyvern
+** Spectral Elemental
+** Spectral Gastropod
+* Changed loot tables：** Mimic
+*** Compass item removed（not functional）
+*** Gained Light Disc drop
+** Toxic Sludge
+*** Drops more gel than before
+** Arch Demon
+*** Gained chance to drop Crystal Shards
+*** Gained higher chance to drop demon scythe
+*** Gained a very small chance（0.2%）to drop Crystal Storm
+** Corrupter & Eater of Souls
+*** Gained hard to farm vile powder
+** Digger & Giant Worm
+*** Gained summoning item for worms pet
+** All skeleton enemies
+*** Gained chance to drop bones
+** Dark Caster
+*** Gained chance to drop a Golden key（5% chance）
+** Cursed Skull
+*** Gained chance to drop a Golden key（5% chance）
+* Made certain enemies more rare and stronger（mini-mini bosses）
+** Arch Demon
+** Dragon Skull
+** Dragon Hornet
+** Dragon Snatcher
+** Shadow Mummy
+** Spectral Mummy
+** Spectral Elemental
+** Spectral Gastropod
+* All hardmode bosses are tweaked to be more mobile friendly
+** Adjustments on damage, defense and life stats
+* When in hardmode, day & night progress at the normal speed, compared to prehardmode twice as fast
+* Re-balanced the amount of ore being spawned in the world
+* Souls of night / light 常规ly drop a lot more to make it easier for the casual gamer to craft the good items
+* Corruption & hallow spreading is significantly nerfed, now only spreads at 1/8th of the normal speed
+* Tweaked spawnrate & maximum number of monsters
+** Overall lower spawnrate compared to PC version
+** The spawnrate goes up based on time & character development
+* Certain hardmode NPCs don’t spawn before you’re ready, giving new players time to gear up.
+* Crafting changes：** Mana star now only needs 5 fallen stars instead of 10
+** Reduced the amount of fallen stars being spawned each night by half
+** Added Dragon Breastplate
+** Added Dragon Greaves
+** Added Dragon Mask
+** Added Titan Helmet
+** Added Titan Mail
+** Added Titan Leggings
+** Added Spectral Headgear
+** Added Spectral Armor
+** Added Spectral Subligar
+** Added Tizona
+** Added Tonbogiri
+** Added Sharanga
+** Added Vulcan Repeater
+* Fixed dozens of bugs
+* Fixed piggy bank duping glitch
+* Made most items stack to 999 instead of 250
+* Added worms pet
+** Uses various sound bites from the worms series
+* Added old lady
+** Based on the worms series, walks slowly
+* New tombstone
+** Now uses a worm series tombstone when you die with the worms pet active
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.935
+| v = 1.1.935
+| platform = ios
+| date = 2014/05/22
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Fixed [[{{tr|minimap}}]] bug where shows a black screen（however, when changing worlds still showing minimaps from previous world）
+* Fixed a bug where ingredient chart shows above and hides the ingredients to craft
+* Fixed a rare bug where holding the new 4 items, the game could crash when pausing
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.933
+| v = 1.1.933
+| platform = ios
+| date = 2014/05/17
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Changed App icon to default
+* Added 4 items（used to be unobtainable）：[[{{tr|Old Walking Stick}}]], [[{{tr|Suspicious Looking Apple}}]], [[{{tr|Holy Hand Grenade}}]] and [[{{tr|Strange Looking Tombstone}}]] .
+* Added 2 pets（used to be unobtainable）：[[{{tr|Old Lady}}]] and [[{{tr|Worm Pet}}|{{tr|Worm}}]].
+* Corrected message when dying on lava shows "[Player] didn't bounce." incorrectly.
+* Fixed issue were some users on iOS 5.1 could not launch the game.
+* Additional minor bug fixes and optimization
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.91
+| platform = ios/googleplay/amazon
+| v-ios = 1.1.91
+| date-ios = 2014/03/27
+| v-googleplay-amazon = 1.1.92
+| date-googleplay = 2014/03/25
+| date-amazon = 2014/03/18
+| name = [[{{tr|复活节}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Added [[{{tr|Lepus}}]] [[{{tr|boss}}]], summoned by [[{{tr|Suspicious Looking Egg}}]], which are 掉落自[[{{tr|Corrupt Bunnies}}]] during Easter season.
+* [[{{tr|Soul of Might}}]] obtainable from [[{{tr|Lepus}}]]（Drops 3, 1% chance, not listed in change log）
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.9
+| platform = ios/googleplay
+| v-ios = 1.1.9
+| date-ios = 2014/03/08
+| v-googleplay = 1.1.92
+| date-googleplay = 2014/03/22
+| name = [[{{tr|St. Patrick's Day}}|{{tr|St. Patrick's}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Added [[{{tr|Rainbow Piece}}]] that drop from the sky.
+* Added O'Fyffe, a [[{{tr|pet}}]], summoned using [[{{tr|Pot o' Gold}}]].
+* Additional Bug Fixes.
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.1.8
+| v = 1.1.8
+| platform = ios/googleplay/amazon
+| date-ios = 2014/02/06
+| date-googleplay-amazon = 2014/02/13
+| name = [[{{tr|Valentine's Day}}|{{tr|Valentine}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Added [[{{tr|Broken Heart}}]], which summons Cupid [[{{tr|pet}}]]
+* Added [[{{tr|Heart Arrow}}]]
+* Added [[{{tr|Valentine Ring}}]], available during Valentine's season
+* World Map now available. Zoom out to view it and zoom in to go back to your character.<sup>*Google Play changelog only</sup>
+* Additional bug fixes
+* Added all [[{{tr|Hardmode}}]] content<sup>（Unobtainable）</sup>
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = Google 1.0.6
+| v = 1.0.6
+| platform = googleplay
+| date = 2013/12/19
+| name = 修补程序
+| changes =
+错误修复。
+}}
+
+{{/row
+| anchor = ios 1.1.5
+| platform = ios/googleplay
+| v-ios = 1.1.5
+| date-ios = 2013/12/05
+| v-googleplay = 1.0.5
+| date-googleplay = 2013/12/12
+| name = [[{{tr|圣诞节}}]]更新
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Added [[{{tr|Elfa}}]] pet, summoned using [[{{tr|Holiday Bauble}}]].
+* [[{{tr|Presents}}]] [[{{tr|Christmas}}]]期间 season.
+* Create a new world to discover new [[{{tr|Pet}}]].
+* Various bug fixes, including multiplayer sync issue while fighting [[{{tr|Wall of Flesh}}]].
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = Amazon 1.0.2
+| v = 1.0.2
+| platform = amazon
+| date = 2013/11/27
+| name = 修补程序
+| changes =
+
+}}
+
+{{/row
+| anchor = Google 1.0.2
+| v = 1.0.2
+| platform = googleplay
+| date = 2013/10/03
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+* Corrected issue when placing [[{{tr|bed}}]].
+* Optimized Magnifying Glass.
+* When a [[{{tr|player}}]] is spawning inside [[{{tr|block}}]], 玩家 will now spawn on top instead of blowing up the house.
+* [[{{tr|Crystal Heart}}]] are now destroyable with a [[{{tr|pickaxe}}]]
+* More [[{{tr|Shadow Orb}}]] spawned on world creation
+* 改进 [[{{tr|sword}}]] speeds（ex：Muramasa）
+* [[{{tr|Demon Altar}}]] icon now shows up in the crafting menu if it is a required [[{{tr|crafting station}}]].
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = ios 1.0.1
+| v = 1.0.1
+| platform = ios/googleplay
+| date = 2013/09/25
+| name = 修补程序
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+;Android
+* Fixed several crashes related to 玩家 moving to the edge of world
+* Fixed issue with sawmill items not being able to craft
+* Fixed issue with speaking to the bound mechanic causing sometimes a crash
+* Fixed issue with ammo count not being shown in the crafting tab
+* Only the closest NPC will now show the chat bubble
+* Tweaked the way magnifying glass behaves, now always stays on screen and moves to the side when necessary
+* Added a text cursor to text boxes where needed
+* When a player is spawning inside blocks, 玩家 will now spawn on top instead of blowing up the house.
+* The bound NPCs now will always spawn correctly instead of being in tiles.
+* Crystal Hearts are now destroyable with a pickaxe as well
+* More shadow orbs are being spawned when a world is created
+* Fixed issue with crafting button sometimes appear half its size
+* Fixed issue with sword speeds（ex：muramasa）
+* Fixed issue where the background wasn't draw in the magnifying glass when trying to use it near the edge of the screen
+* If a potion is being used, the game will automatically switch back to its previous item
+* Multiple accessories are now being blocked from being worn
+* Fixed issue with dragon skulls being invisible
+* Fixed issue with oceans being empty on world generation
+* Fixed issue with certain recipes not being unlocked
+* Higher chance of spawning rotten chunks and a small chance for vile powder to be dropped the giant worm
+* Fixed corruption of save files
+* Timers can now be bought from the mechanic
+* Demon Altar icon now shows up in the crafting menu if it is a required crafting station
+* Fixed a crash related to the gravitation potion
+* Optimized performance when using the magnifying glass
+* Fixed bug with goggle crafting
+* Selling coins is not possible anymore
+* Fixed bug related to pet buff icon
+* Fixed Bed Placement bug
+;iOS
+* Piggy bank and safe now work correctly
+* NPC head's don't disappear anymore when 玩家 is in the crafting tab
+* Fixed several crashes related to 玩家 moving to the edge of world
+* Fixed issue with Sawmill items not being able to be crafted
+* Fixed issue where speaking to the Bound Mechanic sometimes caused a crash
+* Fixed issue with ammo count not being shown in the crafting tab
+* Only the closest NPC will now show the chat bubble
+* Tweaked the way magnifying glass behaves, now always stays on screen and moves to the side when necessary
+* Added a text cursor to text boxes where needed
+* When a player is spawning inside blocks, 玩家 will now spawn on top instead of blowing up the house.
+* The bound NPCs now will always spawn correctly instead of being in tiles.
+* Crystal Hearts are now destroyable with a pickaxe as well
+* More shadow orbs are being spawned when a world is created
+* Fixed issue with crafting button sometimes appear half its size
+* Fixed issue with sword speeds（ex：muramasa）
+* Fixed issue where the background wasn't draw in the magnifying glass when trying to use it near the edge of the screen
+* If a potion is being used, the game will automatically switch back to its previous item
+* Multiple accessories are now being blocked from being worn
+* Fixed issue with dragon skulls being invisible
+* Fixed issue with oceans being empty on world generation
+* Fixed issue with certain recipes not being unlocked
+* Higher chance of spawning rotten chunks and a small chance for vile powder to be dropped the giant worm
+* Fixed corruption of save files
+* Timers can now be bought from the mechanic
+* Demon Altar icon now shows up in the crafting menu if it is a required crafting station
+* Fixed a crash related to the gravitation potion
+* Optimized performance when using the magnifying glass
+* Fixed bug with goggle crafting
+* Selling coins is not possible anymore
+* Fixed bug related to pet buff icon
+{{collapse bottom}}
+}}
+
+{{/row
+| anchor = Mobile-Release
+| platform = ios/googleplay/amazon
+| v-ios-googleplay = 1.0.0
+| date-ios = 2013/08/29
+| date-googleplay = 2013/09/13
+| v-amazon = 1.0.1
+| date-amazon = 2013/11/07
+| name = 最初发布
+| changes =
+
+}}
+
+|}
+
+== 参考 ==
+{{Reflist}}
+
+[[Category:历史]]
+{{#description2:Version history and release information by Terraria Wiki}}
+{{language info|en=Mobile version history}}

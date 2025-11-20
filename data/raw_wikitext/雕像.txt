@@ -1,0 +1,784 @@
+{{item infobox
+| imagealt = [[File:Heart Statue.png|link=]] &nbsp; [[File:Skeleton Statue.png|link=]] &nbsp; [[File:Boomerang Statue.png|link=]] &nbsp; [[File:'H' Statue.png|link=]]&nbsp; [[File:'1' Statue.png|link=]]
+| type = Furniture
+| rare = {{iteminfo|Armor Statue|rare}}
+| placeable = yes
+| stack = {{iteminfo|Armor Statue|stack}}
+| consumable = true
+| width = 2
+| height = 3
+| use = {{iteminfo|Armor Statue|useTime}}
+| sell = {{iteminfo|Armor Statue|sell}}
+| research = 1
+| idtile = {{iteminfo|Armor Statue|tile id}} (普通{{tr|Statue}}), {{iteminfo|'A' Statue|tile id}} (文字{{tr|Statue}}), {{iteminfo|Mushroom Statue|tile id}} ({{tr|Mushroom Statue}}), {{iteminfo|Boulder Statue|tile id}} ({{tr|Boulder Statue}})
+| listcat = Plunder items / Mechanism items
+| cargo = no
+}}
+{{quotation|[[{{tr|Merchant}}]]|{{gameText|LegacyDialog.21}}}}
+
+'''{{tr|Statues}}'''是[[{{tr|furniture}}]]{{tr|items}}。一共有 117 种不同的{{tr|statues}}：25 种[[装饰]]{{tr|statues}}、36 种文字与数字{{tr|statues}}和 56 种在连接到[[{{tr|wire}}]]并激活后具备效果的功能[[{{tr|mechanism}}]]（26 个敌对的、22 个被动的、8 个其他类型的）。取决于具体{{tr|statue}}，在激活时它可能会生成[[{{tr|enemies}}]]、掉落[[{{tr|item}}]]、或将一个 [[{{tr|NPC}}]] 传送至{{tr|statue}}的位置。大多数{{tr|statues}}[[{{tr|placed}}|摆放]]在[[{{tr|underground}}]]的各个区域（最常见的是在[[{{tr|Dungeon}}]]和[[{{tr|Underground Cabin}}]]中，还有[[{{tr|Cavern}}]]层）不过{{tr|Angel Statues}}也出现在[[{{tr|Chest}}]]中。和所有{{tr|furniture}}一样，可以用[[{{tr|pickaxe}}]]收集它们。
+
+== {{tr|Functional statues}} ==
+{{see also|指南:电路}}
+56 种{{tr|functional statues}}可以进一步分为 3 个子类型：26 种{{tr|enemy statues}}、22 种{{tr|critter statues}}和 8 种{{tr|other statues}}。这些{{tr|statues}}可以[[{{tr|wired}}|连接到电路]]并激活之以生成[[{{tr|enemies}}]]、掉落{{tr|items}}、或传送随机 [[{{tr|NPC}}]] 到其位置。{{tr|Statue}}生成的{{tr|enemies}}不会掉落[[{{tr|coins}}]]，但会掉落它们通常会掉落的{{tr|items}}（[[{{tr|Food}}]]{{tr|item}}除外，它们无法由{{tr|statue}}生成的{{tr|enemies}}掉落），其掉落几率会乘上一个固定的系数。不过，它们会计入{{$|banner||enemy}}的计数，玩家每达成 50 次击杀就会获得对应的{{tr|banner}}；它们也会掉落[[{{tr|Heart}}]]和[[{{tr|Star}}]]，可以潜在地提供备用的{{tr|health and mana}}的来源。在[[{{tr|Underground Cabin}}]]中找到的{{tr|Statues}}可能会被连接到[[{{tr|Pressure Plates}}]]，有可能会轻易地生成能够杀死游戏早期的玩家的{{tr|enemies}}。
+
+在{{eversions|1.4.0.1}}中，大部分{{tr|statue}}生成的{{tr|enemies}}仅会在玩家对它们造成过伤害的情况下掉落战利品。如果它们仅被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、和/或[[{{tr|lava}}]]的伤害杀死，则不会掉落任何战利品。
+
+''有关适用于{{tr|functional statues}}的限制，参见[[#生成限制|生成限制（下文）]]。''
+
+=== {{tr|Enemy statues}} ===
+在{{eversions|1.3.0.1}}中，部分类型的{{tr|enemy statues}}可能会生成已接线的[[{{tr|Pressure Plate}}]]，形成[[{{tr|statue trap}}]]。{{source code ref|v=1.4.4.9|field=Terraria.WorldBuilding.GenVars.StatuesWithTraps}} 如果其他类型的{{tr|statues}}恰好和其他{{tr|traps}}重叠，它们可能意外地连接上{{tr|Pressure Plates}}。
+<section begin="functional enemy statues" />{{options/set|item|small=y}}{{:Statues/statue|anchors on}}<!-- the formatting subpages here need to be called like ":Statues/statue" explicitly, because this page is transcluded on [[Guide:Enemy farming]] -->
+{{-}}<!-- needed for transclusion -->
+{| class="terraria lined"
+|+ {{tr|Spawn enemies}}
+|-
+! {{tr|Statue}}
+! {{tr|Enemy}}
+! 系数<ref>掉落几率降低系数。实际物品掉落几率可以通过将原几率乘以此系数来计算。如果无系数，则掉落几率不变。{{source code ref|v=1.4.3.6|field=Terraria.ID.NPCID.Sets&#46;StatueSpawnedDropRarity|noref=y}}</ref>
+! 备注
+|-
+| {{:Statues/statue|Armed Zombie}}
+| {{item|Armed Zombie|wrap=y}}
+| 0.2
+|
+* 被[[{{tr|traps}}]]或[[{{tr|lava}}]]杀死时''会''掉落物品。
+|-
+| {{:Statues/statue|Bat}}
+| {{item|Cave Bat}}
+| {{eicons|1.4.0.1}} 0.2<br/>{{eicons|1.4.0.1|invert=y}} {{na}}
+|
+* {{tr|Cave Bats}}在[[{{tr|Expert mode}}]]中可造成[[{{tr|Feral Bite}}]]减益。
+* {{eicons|1.3.0.1}}可出现于[[{{tr|statue trap}}]]。
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Blood Zombie}}
+| {{item|Blood Zombie}}
+| 0.05
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Bone Skeleton}}
+| {{item|Skeleton|note=（[[{{tr|Expert mode}}]]种类）|wrap=y}}
+| 0.2
+|
+* {{eicons|1.3.0.1}}可出现于[[{{tr|statue trap}}]]。
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Chest}}
+| {{item|Mimic}}
+| 0
+|
+* 不会掉落战利品。
+* 生成的{{tr|Mimics}}类似于当前[[{{tr|biome}}]]所对应的{{tr|Chest}}类型。
+* {{tr|Chest Statues}}在[[{{tr|Pre-Hardmode}}]]中依然能够生成{{tr|Mimics}}。
+|-
+| {{:Statues/statue|Corrupt}}（{{eicons|1.4.0.1}}）
+| {{item|Eater of Souls}}
+| 0.05
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Crab}}
+| {{item|Crab}}
+| {{na}}
+|
+* {{eicons|1.3.0.1}}可出现于[[{{tr|statue trap}}]]。
+* 不会掉落物品。
+* 可用于制作[[指南:{{tr|Wiring}}#引擎|{{tr|Crab}}引擎]]。
+|-
+| {{:Statues/statue|Drippler}}
+| {{item|Drippler}}
+| 0.05
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Eyeball}}（{{eicons|1.4.0.1}}）
+| {{item|Demon Eye}}
+| 0.05
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Goblin}}（{{eicons|1.4.0.1}}）
+| {{item|Goblin Scout}}
+| 0.01
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Granite Golem}}
+| {{item|Granite Golem}}
+| 0.2
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Harpy}}
+| {{item|Harpy}}
+| 0.05
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Hoplite}}
+| {{item|Hoplite}}
+| 0.05
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Hornet}}（{{eicons|1.4.0.1}}）
+| {{item|Hornet}}
+| 0.05
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Imp}}（{{eicons|1.4.0.1}}）
+| {{item|Fire Imp}}
+| 0.05
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Jellyfish}}
+| {{item|Blue Jellyfish}}
+| {{eicons|1.4.0.1}} 0.2<br/>{{eicons|1.4.0.1|invert=y}} {{na}}
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Medusa}}
+| {{item|Medusa}}
+| 0.05
+|
+* [[{{tr|Pre-Hardmode}}]]也可以生成，但不会掉落战利品。
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Pigron}}
+| {{item|Pigron|note=（任何）|wrap=y|ext=gif}}
+| 0.05
+|
+* 不会掉落[[{{tr|Bacon}}]]。
+* [[{{tr|Pre-Hardmode}}]]也可以生成，但不会掉落战利品。
+* 需要有 6 {{tr|tile}}宽 3 {{tr|tile}}高的区域才能生成（否则只会产生一股轻烟）。
+* 生成的颜色随机。
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Piranha}}
+| {{item|Piranha}}
+| {{eicons|1.4.0.1}} 0.2<br/>{{eicons|1.4.0.1|invert=y}} {{na}}
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Shark}}
+| {{item|Shark}}
+| {{eicons|1.4.0.1}} 0.2<br/>{{eicons|1.4.0.1|invert=y}} {{na}}
+|
+* 需要有 7 {{tr|tile}}宽 3 {{tr|tile}}高的区域才能生成（否则只会产生一股轻烟）。
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Skeleton}}
+| {{item|Skeleton}}
+| {{eicons|1.4.0.1}} 0.2<br/>{{eicons|1.4.0.1|invert=y}} {{na}}
+|
+* {{eicons|1.4.0.1}}被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Slime}}
+| {{item|Blue Slime}}
+| {{na}}
+|
+* {{eicons|1.3.0.1}}可出现于[[{{tr|statue trap}}]]。
+* 可用于创建无敌机制来防御重伤害攻击。
+* 被[[{{tr|traps}}]]或[[{{tr|lava}}]]杀死时''会''掉落物品。
+|-
+| {{:Statues/statue|Undead Viking}}
+| {{item|Undead Viking}}
+| 0.25
+|
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Unicorn}}
+| {{item|Unicorn}}
+| 0.05
+|
+* [[{{tr|Pre-Hardmode}}]]也可以生成，但不会掉落战利品。
+* 需要有 6 {{tr|tile}}宽 3 {{tr|tile}}高的区域才能生成（否则只会产生一股轻烟）。
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|-
+| {{:Statues/statue|Wall Creeper}}
+| {{item|Wall Creeper}}
+| {{na}}
+|
+* 不会掉落物品。
+|-
+| {{:Statues/statue|Wraith}}
+| {{item|Wraith}}
+| 0.05
+|
+* [[{{tr|Pre-Hardmode}}]]也可以生成，但不会掉落战利品。
+* 被[[{{tr|traps}}]]、[[{{tr|NPCs}}]]、及[[{{tr|lava}}]]杀死时不会掉落物品。
+|}{{options/reset|item}}<section end="functional enemy statues" />
+
+=== {{tr|Critter statues}} ===
+* {{eicons|1.3.1}} 由{{tr|statues}}所生成的[[{{tr|Critter}}]]不能用[[{{tr|Bug Net}}]]、{{eil|Lavaproof Bug Net}}、或[[{{tr|Golden Bug Net}}]]捕捉。尝试这么做会导致{{tr|critter}}在一阵轻烟中消失。
+* 所有{{tr|critter statues}}都在{{item|Heavy Work Bench|icons=n}}处制作。另外，在{{eversions|Ecto Mist|short=y}}上还需要[[{{tr|Ecto Mist}}]]。
+{{options/set|item|small=y}}
+{| class="terraria lined"
+|+生成{{tr|Critters}}
+|-
+! {{tr|Statue}}
+! {{tr|Critter}}
+! {{tr|Recipe}}
+! 备注
+|-
+| {{:Statues/statue|Bird}}
+| {{item|Bird}}<br/>{{item|Cardinal}}<br/>{{item|Blue Jay}}
+| {{:Statues/critter statue recipe|Bird}}
+|
+* 可用于制作[[指南:{{tr|Wiring}}#引擎|{{tr|Bird}}引擎]]。
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Bird}}。
+|-
+| {{:Statues/statue|Buggy}}
+| {{item|Grubby|icons=n}}<br/>{{item|Sluggy|icons=n}}<br/>{{item|Buggy|icons=n}}
+| {{:Statues/critter statue recipe|Buggy}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Buggy}}。
+|-
+| {{:Statues/statue|Bunny}}
+| {{item|Bunny}}
+| {{:Statues/critter statue recipe|Bunny}}
+|
+* [[{{tr|Blood Moon}}]]期间生成的{{tr|Bunnies}}会直接变为[[{{tr|Corrupt Bunny}}|{{tr|Corrupt Bunnies}}]]或[[{{tr|Vicious Bunny}}|{{tr|Vicious Bunnies}}]]。
+** {{tr|Corrupt Bunnies}}和{{tr|Vicious Bunnies}}不计入[[#{{tr|Spawn limits}}|{{tr|spawn limit}}]]，且能正常掉落战利品。
+* 在 {{eil|For the worthy}} 世界种子中生成的{{tr|Bunnies}}会变为[[{{tr|Explosive Bunny}}]]，但它们爆炸时并'''不会'''造成伤害。
+|-
+| {{:Statues/statue|Butterfly}}
+| {{item|Any Butterfly|Butterfly|note=（任何）|wrap=y}}
+| {{:Statues/critter statue recipe|Butterfly}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Sulphur Butterfly}}。
+|-
+| {{:Statues/statue|Cockatiel}}
+| {{item|Yellow Cockatiel}}<br/>{{item|Gray Cockatiel}}
+| {{:Statues/critter statue recipe|Cockatiel}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Yellow Cockatiel}}。
+|-
+| {{:Statues/statue|Dragonfly}}
+| {{item|Any Dragonfly|Dragonfly|note=（任何）|wrap=y|icons=n}}
+| {{:Statues/critter statue recipe|Dragonfly}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Black Dragonfly}}。
+|-
+| {{:Statues/statue|Duck}}
+| {{item|Duck}}<br/>{{item|Mallard Duck}}
+| {{:Statues/critter statue recipe|Duck}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Duck}}。
+|-
+| {{:Statues/statue|Firefly}}
+| {{item|Firefly}}<br/>{{item|Lightning Bug}}
+| {{:Statues/critter statue recipe|Firefly}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Firefly}}。
+|-
+| {{:Statues/statue|Fish}}
+| {{item|Goldfish|image=Goldfish swimming.png}}
+| {{:Statues/critter statue recipe|Fish}}
+|
+* 在[[{{tr|rain}}|下雨]]时，{{tr|Goldfish}}会开始行走，忽略生成限制。
+* [[{{tr|Blood Moon}}]]期间生成的{{tr|Goldfish}}会直接变为[[{{tr|Corrupt Goldfish}}]]或[[{{tr|Vicious Goldfish}}]]。
+** {{tr|Corrupt Goldfish}}和{{tr|Vicious Goldfish}}不计入[[#{{tr|Spawn limits}}|{{tr|spawn limit}}]]。
+|-
+| {{:Statues/statue|Frog}}
+| {{item|Frog}}
+| {{:Statues/critter statue recipe|Frog}}
+|
+|-
+| {{:Statues/statue|Grasshopper}}
+| {{item|Grasshopper}}
+| {{:Statues/critter statue recipe|Grasshopper}}
+|
+|-
+| {{:Statues/statue|Macaw}}
+| {{item|Scarlet Macaw}}<br/>{{item|Blue Macaw}}
+| {{:Statues/critter statue recipe|Macaw}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Scarlet Macaw}}。
+|-
+| {{:Statues/statue|Mouse}}
+| {{item|Mouse}}
+| {{:Statues/critter statue recipe|Mouse}}
+|
+|-
+| {{:Statues/statue|Owl}}
+| {{item|Owl|icons=n}}
+| {{:Statues/critter statue recipe|Owl}}
+|
+|-
+| {{:Statues/statue|Penguin}}
+| {{item|Penguin}}<br/>{{item|Penguin|Blue Penguin|image=Penguin blue.png}}
+| {{:Statues/critter statue recipe|Penguin}}
+|
+* [[{{tr|Blood Moon}}]]期间生成的{{tr|Penguins}}会直接变为[[{{tr|Corrupt Penguin}}]]或[[{{tr|Vicious Penguin}}]]。
+** {{tr|Corrupt Penguins}}和{{tr|Vicious Penguins}}不计入[[#{{tr|Spawn limits}}|{{tr|spawn limit}}]]，且正常掉落战利品。
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Penguin}}。
+|-
+| {{:Statues/statue|Scorpion}}
+| {{item|Scorpion}}<br/>{{item|Black Scorpion}}
+| {{:Statues/critter statue recipe|Scorpion}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Scorpion}}。
+|-
+| {{:Statues/statue|Seagull}}
+| {{item|Seagull|icons=n}}
+| {{:Statues/critter statue recipe|Seagull}}
+|
+|-
+| {{:Statues/statue|Snail}}
+| {{item|Snail|note=(80%)|wrap=y}}<br/>{{item|Glowing Snail|note=(20%)|wrap=y}}
+| {{:Statues/critter statue recipe|Snail}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Snail}}。
+|-
+| {{:Statues/statue|Squirrel}}
+| {{item|Squirrel}}
+| {{:Statues/critter statue recipe|Squirrel}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Squirrel}}。
+|-
+| {{:Statues/statue|Toucan}}
+| {{item|Toucan}}
+| {{:Statues/critter statue recipe|Toucan}}
+|
+|-
+| {{:Statues/statue|Turtle}}
+| {{item|Turtle|icons=n}}<br/>{{item|Jungle Turtle|icons=n}}
+| {{:Statues/critter statue recipe|Turtle}}
+|
+* {{eil|Shimmer}}{{tr|decraft}}时产生{{item|Turtle|icons=n}}。
+|-
+| {{:Statues/statue|Worm}}
+| {{item|Worm}}
+| {{:Statues/critter statue recipe|Worm}}
+|
+|}
+
+=== {{tr|Other statues}} ===
+{{tr|King Statue and Queen Statues}}只能传送当前存活且已被救出的 {{tr|NPCs}}。
+
+{{options/reset|item}}
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ 传送 {{tr|NPC}}
+|-
+! {{tr|Statue}}
+! 效果
+|-
+| {{:Statues/statue|King}}
+| 传送随机男性 [[{{tr|NPC}}]] 至{{tr|statue}}的位置。
+|-
+| {{:Statues/statue|Queen}}
+| 传送随机女性 [[{{tr|NPC}}]] 至{{tr|statue}}的位置。
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Drop items}}
+|-
+! {{tr|Statue}}
+! {{tr|Drops}}
+|-
+| {{:Statues/statue|Bomb}}
+| {{item|Bomb}}
+|-
+| {{:Statues/statue|Heart}}
+| {{item|Heart}}
+|-
+| {{:Statues/statue|Star}}
+| {{item|Star}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Other effects}}
+|-
+! {{tr|Statue}}
+! 效果
+|-
+| {{:Statues/statue|Mushroom}}
+| 在{{eversions|1.3.0.1}}中会发出类似于[[{{tr|Mushroom grass}}]]的蓝色光芒。<br/> ''（对于 {{tr|NPC}} [[{{tr|house}}]]而言不是有效的[[{{tr|light source}}]]。）''
+|-
+| {{:Statues/statue|Boulder}}
+| 生成一个[[{{tr|Boulder}}]]，和玩家所能放置的那种完全一样。只能在{{tr|blocks}}的下表面放置。<br/>可制作：{{recipes/extract|result=Boulder Statue}}
+|-
+| {{:Statues/statue|Bast|[[{{tr|Bast Statue}}]]|cargo=no}}<!-- Cargo stored on its own page -->
+| 向其附近的玩家提供[[{{tr|The Bast Defense}}]][[{{tr|buff}}]]，给予 +5 {{tr|defense}}。
+|-
+| {{:Statues/statue|Angel}}
+| 有时出现于[[{{tr|chests}}]]中。<br/>在{{eversions|1.4.4|short=y}}中，在丢入[[{{tr|Shimmer}}]]中时变为[[{{tr|Aether Monolith}}]]，<!--{{eicons|1.4.2.3}}-->且可以由[[{{tr|Jungle Mimic}}]]掉落，后者仅生成于 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}。
+|}
+{{flexend|item}}
+{{flexend}}
+
+== {{tr|Decorative statues}} ==
+{{tr|Decorative Statues}}没有任何功能，仅作为装饰使用。它们一般以放置状态出现在[[{{tr|underground}}]]。三种{{tr|Lihzahrd statues}}只出现在[[{{tr|Jungle Temple}}]]中，是仅有的看上去不是由石头制作而成的{{tr|statues}}。{{tr|The Armor Statue}}也能在{{recipes/extract|result=Armor Statue|mode=station}}处用 {{recipes/extract|result=Armor Statue|nostation=y}}制作而成。
+{{itemlist|width=13em|css=margin-bottom:0.75em;|class=terraria
+|{{:Statues/statue|Anvil}}
+|{{:Statues/statue|Armor}}
+|{{:Statues/statue|Axe}}
+|{{:Statues/statue|Boomerang}}
+|{{:Statues/statue|Boot}}
+|{{:Statues/statue|Bow}}
+|{{:Statues/statue|Cross}}
+|{{:Statues/statue|Gargoyle}}
+|{{:Statues/statue|Gloom}}
+|{{:Statues/statue|Hammer}}
+|{{:Statues/statue|Pickaxe}}
+|{{:Statues/statue|Pillar}}
+|{{:Statues/statue|Pot}}
+|{{:Statues/statue|Potion}}
+|{{:Statues/statue|Reaper}}
+|{{:Statues/statue|Shield}}
+|{{:Statues/statue|Spear}}
+|{{:Statues/statue|Sunflower}}
+|{{:Statues/statue|Sword}}
+|{{:Statues/statue|Tree}}
+|{{:Statues/statue|Woman}}
+|{{:Statues/statue|Lihzahrd}}
+|{{:Statues/statue|Lihzahrd Guardian}}
+|{{:Statues/statue|Lihzahrd Watcher}}
+}}{{:Statues/statue|anchors off}}
+
+== {{tr|Text statues}} ==
+这些是在{{recipes/extract|result='A' Statue|mode=station}}处制作的，每个需要 {{recipes/extract|result='A' Statue|nostation=y}}。
+{{itemlist|width=12em|css=margin-bottom:0.75em;|class=terraria
+|{{:Statues/statue|'A'}}
+|{{:Statues/statue|'B'}}
+|{{:Statues/statue|'C'}}
+|{{:Statues/statue|'D'}}
+|{{:Statues/statue|'E'}}
+|{{:Statues/statue|'F'}}
+|{{:Statues/statue|'G'}}
+|{{:Statues/statue|'H'}}
+|{{:Statues/statue|'I'}}
+|{{:Statues/statue|'J'}}
+|{{:Statues/statue|'K'}}
+|{{:Statues/statue|'L'}}
+|{{:Statues/statue|'M'}}
+|{{:Statues/statue|'N'}}
+|{{:Statues/statue|'O'}}
+|{{:Statues/statue|'P'}}
+|{{:Statues/statue|'Q'}}
+|{{:Statues/statue|'R'}}
+|{{:Statues/statue|'S'}}
+|{{:Statues/statue|'T'}}
+|{{:Statues/statue|'U'}}
+|{{:Statues/statue|'V'}}
+|{{:Statues/statue|'W'}}
+|{{:Statues/statue|'X'}}
+|{{:Statues/statue|'Y'}}
+|{{:Statues/statue|'Z'}}
+|{{:Statues/statue|'0'}}
+|{{:Statues/statue|'1'}}
+|{{:Statues/statue|'2'}}
+|{{:Statues/statue|'3'}}
+|{{:Statues/statue|'4'}}
+|{{:Statues/statue|'5'}}
+|{{:Statues/statue|'6'}}
+|{{:Statues/statue|'7'}}
+|{{:Statues/statue|'8'}}
+|{{:Statues/statue|'9'}}
+}}
+
+== 生成限制 ==
+[[File:Statue Spawn Limit Diagram (small).png|right|frame|在此范围内的实体计入生成限制中。]]
+功能性{{tr|statues}}有两种类型的生成限制：输入冷却和数量上限。
+
+一个{{tr|statue}}所占据的所有 6 格（2×3）均可用作{{tr|wire}}输入，{{tr|statue}}会在被激活后进入冷却时段。在这一冷却期间，来自任何[[{{tr|Mechanisms}}|{{tr|trigger}}]]（[[{{tr|Switch}}]]、[[{{tr|Timers}}]]、[[{{tr|Pressure Plates}}]]）的激活均会被忽视。
+* 在{{eversions|1.3.0.1}}中，所有输入都互相共享冷却。
+* 在{{eversions|1.3.0.1|invert=y}}中，输入之间的冷却各自独立被检查。
+
+若在特定范围内已经存在一定数量的该实体，则激活生成类{{tr|statue}}并'''不'''会产生出{{tr|item}}/角色。范围的边界是圆形的，以{{tr|statue}}的生成点为中心。
+
+{| class="terraria lined" style="text-align:center"
+|-
+! rowspan="2" | {{tr|Statue}}类型
+! colspan="3" | 生成限制
+|-
+! 输入冷却{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle}}
+! 数量上限{{source code ref|v=1.4.4.9|method=Terraria.NPC.MechSpawn / Terraria.Item.MechSpawn}}
+! 到范围边界的距离（D）
+|-
+| rowspan="3" | {{tr|Enemy and critter statues}}
+| rowspan="3" | {{duration|30ticks}}
+| 3
+| 12.5 格（200 像素）
+|-
+| 6
+| 37.5 格（600 像素）
+|-
+| 10
+| {{tr|world}}中的任何位置
+|-
+| rowspan="3" | [[{{tr|Bomb Statue}}]]、[[{{tr|Heart Statue}}]]、和[[{{tr|Star Statue}}]]
+| rowspan="3" | {{duration|600ticks}}
+| 3
+| 18.75 格（300 像素）
+|-
+| 6
+| 50 格（800 像素）
+|-
+| 10
+| {{tr|world}}中的任何位置
+|-
+| [[{{tr|King Statue}}]]和[[{{tr|Queen Statue}}]]
+| {{duration|300ticks}}
+| {{na}}
+| {{na}}
+|-
+| [[{{tr|Boulder Statue}}]]
+| {{duration|900ticks}}
+| {{na}}
+| {{na}}
+|}
+
+* ''例：''如果在 200 像素范围内已经存在 3 只或更多只[[{{tr|Bunny}}]]，那么激活[[{{tr|Bunny Statue}}]]就不会生成{{tr|Bunny}}。
+
+在[[{{tr|Blood Moon}}]]期间由{{tr|Bunny Statues}}、{{tr|Fish Statues}}和{{tr|Penguin Statues}}所生成的生物会直接变为其{{tr|evil}}形态。[[{{tr|Corrupt Bunny}}]]、[[{{tr|Corrupt Goldfish}}]]、和[[{{tr|Corrupt Penguin}}]]（及其{{tr|Crimson counterpart}}）{{tr|enemies}}不计入{{tr|spawn limits}}中。在[[{{tr|rain}}]]中开始行走的{{tr|Goldfish}}和 {{eil|For the worthy}} 世界中由{{tr|Bunny Statues}}生成的{{tr|Explosive Bunnies}}亦是如此。另一个例外是[[{{tr|Bomb Statue}}]]，因为[[{{tr|Bombs}}]]可以互相堆叠成一组，每组最多可以有 {{etext|9999|e=1.4.4}} / {{etext|99|e=1.3.0.1|invert=y}}个，而每一堆只计为单个实体。
+
+{{tr|Bunny statues}}和{{tr|Squirrel statues}}在{{tr|Cavern town}}会生成常规{{tr|critters}}而非{{tr|Gem Critters}}。
+
+== 备注 ==
+* 所有功能和装饰{{tr|statues}}（除了[[{{tr|Turtle Statue}}]]、[[{{tr|Owl Statue}}]]、[[{{tr|Boulder Statue}}]]、[[{{tr|Bast Statue}}]]和{{tr|Lihzahrd Statues}}外）都有几率在{{tr|underground}}和[[{{tr|Underground Cabin}}]]里以放置状态出现。
+* 根据[[{{tr|world size}}]]不同，每种{{tr|statues}}在世界中预放置的数量最多为 2、3 或 4 个。{{tr|Underground Cabins}}中则能包含更多。
+* 预放置的[[{{tr|Slime Statue}}]]、[[{{tr|Bat Statue}}]]、[[{{tr|Skeleton Statue}}]]和[[{{tr|Crab Statue}}]]一定是[[{{tr|statue trap}}|{{tr|trap}}]]。
+* 尽管名称那么叫，但{{tr|Armor Statue}}并不能用于展示{{tr|armor}}。相反，{{tr|armor}}是用[[{{tr|Mannequin}}]]和[[{{tr|Womannequin}}]]展示的。
+* 生成的{{tr|enemies}}不会掉落特定{{tr|biome}}或{{tr|event}}所特有的{{tr|items}}。
+* [[{{tr|Blood Moon}}]]期间生成的{{tr|Bunnies}}和{{tr|Goldfish}}有一些特殊的特征：
+** [[{{tr|Corrupt Bunny}}]]/[[{{tr|Vicious Bunny}}]]和[[{{tr|Corrupt Goldfish}}]]/[[{{tr|Vicious Goldfish}}]]的生成没有任何限制；因此，有可能从{{tr|statue}}中生成数以百计的{{tr|Corrupt Bunnies}}/{{tr|Vicious Bunnies}}，这使其成为刷[[{{tr|Bunny Hood}}]]的好办法。
+**{{icon|oldgen}}{{tr|Corrupt Bunnies}}和{{tr|Corrupt Goldfish}}会掉落[[{{tr|KO Cannon}}]]，这使得它在[[{{tr|Pre-Hardmode}}]]即可获得。
+* {{eicons|1.3.0.1|invert=y}} 如果只用一种[[{{tr|wire}}]]颜色，每个{{tr|statue}}最多可以连接三个独立的[[{{tr|1 Second Timer}}]]，每秒可以生成三次。用上全部三种{{tr|wire}}颜色，{{tr|statue}}的六个{{tr|tile}}全都可以连接到单独的{{tr|timers}}，使得每秒可能生成六次。虽然还有{{tr|Enemy spawn limits}}会起作用，但如果{{tr|enemies}}一生成时就直接被杀掉（例如，用了[[{{tr|lava}}]]或者持续激活的[[{{tr|trap}}]]），每次激活都会成功生成一个{{tr|enemy}}。{{verify}}
+* {{icon|oldgen}}{{verify}} {{icon|3DS}}将两个或三个 {{tr|1 second timers}}用不同颜色的{{tr|wire}}连接到同一个{{tr|tile}}中会导致更多生成，但需要安排{{tr|timer}}激活的时间。如果{{tr|timers}}之间的周期过分接近，它们会互相覆盖。但是，如果用上全部三种颜色的{{tr|wire}}，只需要两个{{tr|1 Second Timer}}即可每秒内就激活单个{{tr|statue}}的全部六格从而得到每秒六次生成。
+
+== 小贴士 ==
+* 若在{{tr|lava}}中生成弱{{tr|enemies}}，使用 1/2 秒[[{{tr|timer}}]]最有效率。这和{{tr|lava}}杀死它们的速度大致相同，意味着杀死它们的速度和其生成的速度相同。
+* [[{{tr|Metal Detector}}]]可通过探测[[{{tr|Underground Cabin}}]]中的[[{{tr|chest}}]]来间接助力于寻找{{tr|statues}}（{{tr|Underground Cabin}}中经常会有{{tr|statues}}生成）。注意{{tr|Hardmode ores}}、[[{{tr|Life Crystal}}]]、和[[{{tr|Life Fruit}}]]拥有比{{tr|chests}}更高的优先级，使得在{{tr|hardmode}}中如此寻找更困难。
+** {{tr|Spelunker potions}}也可用于达成同样效果。
+* 在{{eil|Slime Rain}}{{tr|event}}中由{{tr|Slime Statue}}所生成的{{tr|Slimes}}也能帮助增加召唤[[{{tr|King Slime}}]]所需的数目。
+* {{eicons|1.3.0.1|invert=y}} 可以从{{tr|Bunny Statue}}捕捉[[{{tr|Bunnies}}]]并制作成[[{{tr|Explosive Bunny}}|{{tr|Explosive Bunnies}}]]（否则如果从[[{{tr|Pirate}}]] {{tr|NPC}} 处购买就需要 {{iteminfo|Explosive Bunny|buy}}）。
+* {{eicons|1.3.0.1|invert=y}}可以通过在打败[[{{tr|Plantera}}]]后将{{tr|Chest Statue}}或{{tr|Shark Statue}}放置在[[{{tr|Dungeon}}]]中的方式来刷[[{{tr|Ectoplasm}}]]（以及钱）。因为只有杀死{{tr|health}}高于 100 的{{tr|enemies}}时才有几率生成掉落{{tr|Ectoplasm}}的[[{{tr|Dungeon Spirit}}]]。
+* 一些{{tr|statues}}生成的{{tr|enemies}}被杀死时，若玩家的当前生命值和{{tr|mana}}不满，就相应会掉落[[{{tr|Heart}}]]及[[{{tr|Mana Star}}]]；如果在玩家的战斗场地附近将{{tr|the statues}}和{{tr|a timer}}与{{tr|lava}}安装好，这就能够相当稳定地提供{{tr|mana}}和{{tr|hearts}}。在{{eversions|1.4.0.1}}中，很多由{{tr|statue}}生成的{{tr|enemies}}不会掉落{{tr|Hearts/Stars}}，但{{tr|the Crab, Wall Creeper, and Slime}}依然会，并且它们都能被快速击杀。
+** 一方面，这绕过了{{tr|Heart Statue}}和{{tr|Star Statue}}对附近生成物的严格限制；但另一方面，{{tr|hearts}}和{{tr|stars}}不会提前生成，只在玩家低于相应最大值时才会生成。
+* {{tr|Boulder Statues}}可以用于创建悬浮的物体。放下{{tr|Boulder Statue}}，然后使用[[{{tr|Block Swap}}]]将悬挂{{tr|statue}}的{{tr|blocks}}换为受重力影响的{{tr|blocks}}（[[{{tr|Sand Block}}]]、[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]，等等），然后在这些{{tr|block}}上放置需要的物体（如[[{{tr|furniture}}]]），然后移除{{tr|Boulder Statue}}。这会让受重力影响的{{tr|blocks}}下落，而放置在其上的物体会留在半空中。
+* 由于{{eil|Life Drain}}的效果对{{tr|statue}}{{tr|enemies}}也生效，玩家可以建造一个坑，坑内用任意[[{{tr|Timers}}]]不断生成{{tr|enemies}}以在 {{tr|boss}} 战期间恢复{{tr|health}}。
+
+== 花絮 ==
+* {{tr|The Pillar Statue}}是唯一没有底座的{{tr|statue}}。此外，由于柱子本来就通常用石头制成，这让它的名称有点冗余：{{tr|pillar}}的{{tr|statue}}就只是个普通的{{tr|pillar}}。
+* {{tr|The Shield Statue}}放置时有着类似于[[{{tr|Cobalt Shield}}]]的设计。
+{{float file box|[[File:Unimplemented Statues.png]]|[[1.3.2]] 更新中引入的两个未实现的{{tr|statue}}。}}
+* {{tr|The Corrupt Statue}}没有[[{{tr|The Crimson}}|{{tr|Crimson}}]]对应物。
+* {{eicons|1.3.2}}{{tr|Seagull Statues}}和{{tr|Owl Statues}}的{{tr|Tile}}外观图是在 [[1.3.2]] 时就加进游戏文件的，但能放置出它们的{{tr|item}}一直到 [[1.4.0.1]] 才得以实现。
+* {{eicons|1.4.0.1|invert=y}} 可以通过将{{tr|Duck Statues}}放在水里来绕过其生成限制，因为游泳的{{tr|Duck}}不计入限制中。可以利用这点来最大化 {{tr|NPC}} 数，这意味着无法再生成新 {{tr|NPC}}。这可以让某些 {{tr|boss}} 战变得更容易。
+* 关于{{tr|Angel Statue}}的{{tr|Trivia}}：
+** 在 [[1.1]] 更新之前，{{tr|the Angel Statue}}既不能放置也不能卖出，并且在游戏中没有任何明确的用途。它是用在游戏中的一个笑话主题，其无用的性质被 [[{{tr|NPC}}]] 所提及，尽管在 [[1.4.4]] 之后它终于被赋予了一个用途。
+*** [[{{tr|Redigit}}]] 确认了它原本是打算用作{{tr|double jump}}{{tr|item}}，但在后来的游戏开发过程中被[[{{tr|Cloud in a Bottle}}]]所取代。<ref>[https://twitter.com/Demilogic/status/1252363177053917184 Fun fact: The Angel Statue was originally going to be the jump item before cloud in a bottle. Took me hours to sprite so I left it in.]</ref>
+** {{tr|The Angel Statue}}有五个不同的{{tr|item IDs}}，但所有这五种{{tr|statues}}在物品栏里会互相堆叠起来。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Cockatiel, Macaw, and Toucan statues}}。
+** {{tr|Angel Statue}}现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Aether Monolith}}]]。}}
+{{history|Desktop 1.4.3.3|现在在世界生成过程中，{{tr|Heart Statues and Star Statues}}出现的几率是其他{{tr|statues}}的两倍。}}
+{{history|Desktop 1.4.2.3|{{tr|Angel Statues}}现在会掉落自[[{{tr|Mimics|link=y}}#特殊种类|{{tr|Jungle Mimics}}]]。}}
+{{history|Desktop 1.4.1|现在所有{{tr|statues}}都能在所有世界中生成了，无论世界难度如何；移除了{{tr|Armed Zombie Statue}}和{{tr|the Bone Skeleton Statue}}的{{tr|Expert Mode}}/{{tr|Master Mode}}独占性。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Statue}}生成的{{tr|enemies}}现在需要某种形式的玩家伤害才会掉落其掉落物（哪怕最后一击是由{{tr|lava}}、{{tr|traps}}等完成的）。
+** 两个未使用的{{tr|statue textures}}现在可获得了，分别叫{{tr|the Seagull Statue}}和{{tr|the Owl Statue}}。
+** {{tr|statues}}生成的{{tr|Jellyfish}}和{{tr|Granite Golems}}现在掉落物品的频率更低。
+** {{tr|statue}}生成的{{tr|Pigron}}不再掉落{{tr|Bacon}}。
+** {{tr|Corrupt Statue}}、{{tr|Eyeball Statue}}、{{tr|Goblin Statue}}、{{tr|Hornet Statue}}、{{tr|Imp Statue}}现在会生成相应的{{tr|enemies}}。
+** 现在在世界生成过程中会生成{{tr|Critter statues}}。
+** 现在需要附近有[[{{tr|Ecto Mist}}]]才能制作{{tr|Critter statues}}。}}
+{{history|Desktop 1.3.4.1|修正了[[{{tr|Tavernkeep}}]]对{{tr|the King Statue}}没反应的问题。}}
+{{history|Desktop 1.3.2|
+** 添加了两个新的未使用的{{tr|statue textures}}。
+** {{tr|statues}}生成的行走[[{{tr|Goldfish}}]]不再能被{{tr|bug nets}}捕捉。}}
+{{history|Desktop 1.3.1.1|修正了{{tr|Grasshopper Statue}}没有{{tr|recipe}}的问题。}}
+{{history|Desktop 1.3.1|
+** 添加了一些{{tr|Critter statues}}：{{tr|Buggy}}、{{tr|Butterfly}}、{{tr|Duck}}、{{tr|Firefly}}、{{tr|Frog}}、{{tr|Grasshopper}}、{{tr|Mouse}}、{{tr|Penguin}}、{{tr|Scorpion}}、{{tr|Snail}}、{{tr|Squirrel}}、和{{tr|Worm}}。
+** 所有{{tr|critter statues}}现在可制作。
+** 添加了一些{{tr|Enemy statues}}：{{tr|Armed Zombie}}、{{tr|Blood Zombie}}、{{tr|Bone Skeleton}}、{{tr|Drippler}}、{{tr|Granite Golem}}、{{tr|Harpy}}、{{tr|Hoplite}}、{{tr|Medusa}}、{{tr|Pigron}}、{{tr|Undead Viking}}、{{tr|Unicorn}}、{{tr|Wall Creeper}}、和{{tr|Wraith}}。
+** 由{{tr|statues}}所生成的{{tr|Critters}}不再能用{{tr|bug nets}}捕捉（除了行走[[{{tr|Goldfish}}]]外）。
+** {{tr|new statues}}所生成的{{tr|enemies}}的掉落率是除以 4 的。
+** 由{{tr|new statues}}生成的一些{{tr|enemy}}在被{{tr|traps}}或{{tr|environment}}杀死时不会掉落任何东西。
+** 一些由新{{tr|statues}}生成的{{tr|enemies}}在白天是非进攻性的。
+** 旧{{tr|statue}}{{tr|sprites updated.}}}}
+{{collapse top|放置的和物品{{tr|statues}}外观（1.3.1 前）}}
+; 功能性<!--
+Follows the categorization in 1.3.1 version.
+Angel, Corrupt, Eyeall, Goblin, Hornet, Imp, and Mushroom Statues were decorative statues on this version. -->
+{{itemlist/start|style=terraria|width=18em}}
+{{:Statues/old sprite|Bat|1.3.1}}
+{{:Statues/old sprite|Bird|1.3.1}}
+{{:Statues/old sprite|Bomb|1.3.1}}
+{{:Statues/old sprite|Bunny|1.3.1}}
+{{:Statues/old sprite|Chest|1.3.1}}
+{{:Statues/old sprite|Crab|1.3.1}}
+{{:Statues/old sprite|Fish|1.3.1}}
+{{:Statues/old sprite|Heart|1.3.1}}
+{{:Statues/old sprite|Jellyfish|1.3.1}}
+{{:Statues/old sprite|King|1.3.1}}
+{{:Statues/old sprite|Piranha|1.3.1}}
+{{:Statues/old sprite|Queen|1.3.1}}
+{{:Statues/old sprite|Shark|1.3.1}}
+{{:Statues/old sprite|Skeleton|1.3.1}}
+{{:Statues/old sprite|Slime|1.3.1}}
+{{:Statues/old sprite|Star|1.3.1}}
+{{itemlist/end}}
+; {{tr|Decorative}}
+{{itemlist/start|style=terraria|width=18em}}
+{{:Statues/old sprite|Angel|1.3.1}}
+{{:Statues/old sprite|Anvil|1.3.1}}
+{{:Statues/old sprite|Armor|1.3.1}}
+{{:Statues/old sprite|Axe|1.3.1}}
+{{:Statues/old sprite|Boomerang|1.3.1}}
+{{:Statues/old sprite|Boot|1.3.1}}
+{{:Statues/old sprite|Bow|1.3.1}}
+{{:Statues/old sprite|Corrupt|1.3.1}}
+{{:Statues/old sprite|Cross|1.3.1}}
+{{:Statues/old sprite|Eyeball|1.3.1}}
+{{:Statues/old sprite|Gargoyle|1.3.1}}
+{{:Statues/old sprite|Gloom|1.3.1}}
+{{:Statues/old sprite|Goblin|1.3.1}}
+{{:Statues/old sprite|Hammer|1.3.1}}
+{{:Statues/old sprite|Hornet|1.3.1}}
+{{:Statues/old sprite|Imp|1.3.1}}
+{{:Statues/old sprite|Mushroom|1.3.1}}
+{{:Statues/old sprite|Pickaxe|1.3.1}}
+{{:Statues/old sprite|Pillar|1.3.1}}
+{{:Statues/old sprite|Pot|1.3.1}}
+{{:Statues/old sprite|Potion|1.3.1}}
+{{:Statues/old sprite|Reaper|1.3.1}}
+{{:Statues/old sprite|Shield|1.3.1}}
+{{:Statues/old sprite|Spear|1.3.1}}
+{{:Statues/old sprite|Sunflower|1.3.1}}
+{{:Statues/old sprite|Sword|1.3.1}}
+{{:Statues/old sprite|Tree|1.3.1}}
+{{:Statues/old sprite|Woman|1.3.1}}
+{{itemlist/end}}
+; 文字
+{{itemlist/start|style=terraria|width=18em}}
+{{:Statues/old sprite|'A'|1.3.1}}
+{{:Statues/old sprite|'B'|1.3.1}}
+{{:Statues/old sprite|'C'|1.3.1}}
+{{:Statues/old sprite|'D'|1.3.1}}
+{{:Statues/old sprite|'E'|1.3.1}}
+{{:Statues/old sprite|'F'|1.3.1}}
+{{:Statues/old sprite|'G'|1.3.1}}
+{{:Statues/old sprite|'H'|1.3.1}}
+{{:Statues/old sprite|'I'|1.3.1}}
+{{:Statues/old sprite|'J'|1.3.1}}
+{{:Statues/old sprite|'K'|1.3.1}}
+{{:Statues/old sprite|'L'|1.3.1}}
+{{:Statues/old sprite|'M'|1.3.1}}
+{{:Statues/old sprite|'N'|1.3.1}}
+{{:Statues/old sprite|'O'|1.3.1}}
+{{:Statues/old sprite|'P'|1.3.1}}
+{{:Statues/old sprite|'Q'|1.3.1}}
+{{:Statues/old sprite|'R'|1.3.1}}
+{{:Statues/old sprite|'S'|1.3.1}}
+{{:Statues/old sprite|'T'|1.3.1}}
+{{:Statues/old sprite|'U'|1.3.1}}
+{{:Statues/old sprite|'V'|1.3.1}}
+{{:Statues/old sprite|'W'|1.3.1}}
+{{:Statues/old sprite|'X'|1.3.1}}
+{{:Statues/old sprite|'Y'|1.3.1}}
+{{:Statues/old sprite|'Z'|1.3.1}}
+{{:Statues/old sprite|'0'|1.3.1}}
+{{:Statues/old sprite|'1'|1.3.1}}
+{{:Statues/old sprite|'2'|1.3.1}}
+{{:Statues/old sprite|'3'|1.3.1}}
+{{:Statues/old sprite|'4'|1.3.1}}
+{{:Statues/old sprite|'5'|1.3.1}}
+{{:Statues/old sprite|'6'|1.3.1}}
+{{:Statues/old sprite|'7'|1.3.1}}
+{{:Statues/old sprite|'8'|1.3.1}}
+{{:Statues/old sprite|'9'|1.3.1}}
+{{itemlist/end}}
+{{collapse bottom}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Skeleton Statues}}可以生成为[[{{tr|Statue traps}}]]的一部分。
+** {{tr|Chest Statues}}现在在{{tr|Underground Deserts}}中生成的房屋中也会出现。
+** {{tr|functional Statue}}的 6 个{{tr|tiles}}现在的共享同一个冷却时间，防止用多个[[{{tr|Timer}}]]来生成六倍数量的{{tr|enemies}}或{{tr|items}}。
+** 放置在{{tr|Plantera}}后的[[{{tr|Dungeon}}]]中的{{tr|statue}}所生成的[[{{tr|Mimic}}]]和[[{{tr|Shark}}]]不再有几率生成[[{{tr|Dungeon Spirit}}]]。
+** 修正了[[{{tr|KO Cannon}}]]可能会从{{tr|Statue}}生成的{{tr|enemies}}身上掉落的 {{tr|bug}}。
+** 修正了可以用电路从{{tr|statue}}以比预期更快的速度生成{{tr|heart}}/{{tr|enemy}}的 {{tr|bug}}。
+** 修正了在世界创建之时{{tr|Piranha Statues}}不会正常生成的 {{tr|bug}}。
+** {{tr|Mushroom Statue}}现在连上电路后会亮起。}}
+{{history|Desktop 1.2.4|
+** {{tr|Armor Statue}}的配方有所改变，现在需要 50 个 {{item|Stone Block|mode=image}} 而非 100 个（依然在[[{{tr|Work Bench}}]]处制作）。
+** 添加了{{tr|Shark Statue}}（生成出现于{{tr|Underground}}）以及可制作的字母与数字{{tr|Statues}}（用 50 {{item|Stone Block|mode=image}}在[[{{tr|Heavy Work Bench}}]]处制作）。}}
+{{history|Desktop 1.2.3.1|
+** {{tr|The King Statue}}现在正确地召唤[[{{tr|Traveling Merchant}}]]了。
+** {{tr|The Queen Statue}}现在正确地召唤[[{{tr|Stylist}}]]了。}}
+{{history|Desktop 1.2.0.3|
+** [[{{tr|Lucky Coin}}]]不再会导致{{tr|Statue}}生成的{{tr|enemies}}掉落[[{{tr|Coins}}]]。
+** {{tr|The King Statue}}和{{tr|Queen Statue}}现在能正确地召唤新 {{tr|NPCs}}。}}
+{{history|Desktop 1.2.0.2|
+** {{tr|Hardmode summon items}}不再会从{{tr|Statue}}生成的{{tr|enemies}}身上掉落了。
+** {{tr|Statues}}不再会在[[{{tr|Thin Ice}}]]上生成。}}
+{{history|Desktop 1.2|
+** 所有{{tr|Statues}}现在都用[[{{tr|Pickaxe}}]]来释放，而不再使用[[{{tr|a Hammer}}]]。
+** {{tr|Statues}}所生成的{{tr|Corrupt Goldfish}}和{{tr|Corrupt Bunnies}}不再掉落{{tr|Coins}}。
+** 添加了{{tr|Lihzahrd Statues}}、{{tr|Lihzahrd Guardian Statues}}和{{tr|Lihzahrd Watcher Statues}}，出现在[[{{tr|Jungle Temple}}]]中。}}
+{{history|Desktop 1.1.1|当{{tr|Statues}}从顶部砸碎时它们不再会变为{{tr|Armor Statues}}。}}
+{{history|Desktop 1.1|
+** {{tr|Angel Statue}}现在是可放置且可堆叠（最大 99）的了，卖出价由 {{cc|1}} 提升至 {{cc|60}}，并移除了{{tr|tooltip}}（'It does not do anything.'（它什么用都没有））。
+** {{tr|Angel Statue}}{{tr|sprite updated.}}旧外观为 [[File:Angel Statue (1.0).png]]。
+** 将{{tr|Statue}}更名为{{tr|Armor Statue}}。
+** 添加了{{tr|Bomb Statue}}、{{tr|Heart Statue}}、{{tr|Star Statue}}、{{tr|Bird Statue}}、{{tr|Bunny Statue}}、{{tr|Fish Statue}}、{{tr|Bat Statue}}、{{tr|Chest Statue}}、{{tr|Crab Statue}}、{{tr|Jellyfish Statue}}、{{tr|Piranha Statue}}、{{tr|Skeleton Statue}}、{{tr|Slime Statue}}、{{tr|King Statue}}、{{tr|Queen Statue}}、{{tr|Anvil Statue}}、{{tr|Axe Statue}}、{{tr|Boomerang Statue}}、{{tr|Boot Statue}}、{{tr|Bow Statue}}、{{tr|Corrupt Statue}}、{{tr|Cross Statue}}、{{tr|Eyeball Statue}}、{{tr|Gargoyle Statue}}、{{tr|Gloom Statue}}、{{tr|Goblin Statue}}、{{tr|Hammer Statue}}、{{tr|Hornet Statue}}、{{tr|Imp Statue}}、{{tr|Mushroom Statue}}、{{tr|Pickaxe Statue}}、{{tr|Pillar Statue}}、{{tr|Pot Statue}}、{{tr|Potion Statue}}、{{tr|Reaper Statue}}、{{tr|Shield Statue}}、{{tr|Spear Statue}}、{{tr|Sunflower Statue}}、{{tr|Sword Statue}}、{{tr|Tree Statue}}、和{{tr|Woman Statues}}。}}
+{{history|Desktop 1.0.6|添加了{{tr|Statue}}（稍后更名为{{tr|Armor Statue}}），可以在野外找到或者在[[{{tr|Work Bench}}]]处用 100 {{item|Stone Block|mode=image}} 制作。}}
+{{history|Desktop 1.0.5|{{tr|Angel Statue}}的描述信息放到引号中了。|nocat=1}}<!-- doesn't directly affect the statue -->
+{{history|Desktop 1.0.4|{{tr|Angel Statue}}现在更难找到了。}}
+{{history|Desktop-Release|引入了{{tr|Angel Statue}}，但是不能持有、放置、或装备。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Skeleton Statues}}可以生成为{{tr|statue traps}}的一部分。
+** {{tr|Chest Statues}}现在在{{tr|Underground Deserts}}中生成的房屋中也会出现。
+** {{tr|functional Statue}}的 6 个{{tr|tiles}}现在的共享同一个冷却时间，防止用多个[[{{tr|Timer}}]]来生成六倍数量的{{tr|enemies}}或{{tr|items}}。
+** 放置在{{tr|Plantera}}后的[[{{tr|Dungeon}}]]中的{{tr|statue}}所生成的[[{{tr|Mimic}}]]和[[{{tr|Shark}}]]不再有几率生成[[{{tr|Dungeon Spirit}}]]。
+** {{tr|The Mushroom Statue}}现在接上电路后会亮起。
+** 将外观更新到与{{tr|Desktop}} 1.3.1 一致。}}
+{{history|Console 1.07|
+** {{tr|Armor Statue}}的配方有所改变，现在需要 50 个 {{item|Stone Block|mode=image}} 而非 100 个（依然在[[{{tr|Work Bench}}]]处制作）。
+** 添加了{{tr|Shark Statue}}（生成出现于{{tr|Underground}}）以及可制作的字母与数字{{tr|Statues}}（用 50 {{item|Stone Block|mode=image}}在[[{{tr|Heavy Work Bench}}]]处制作）。}}
+{{history|Console 1.02|
+** 所有{{tr|Statues}}现在都用{{tr|Pickaxe}}来释放，而不再使用{{tr|a Hammer}}。
+** {{tr|Statues}}所生成的{{tr|Corrupt Goldfish}}和{{tr|Corrupt Bunnies}}不再掉落{{tr|Coins}}。
+** 添加了{{tr|Lihzahrd Statues}}、{{tr|Lihzahrd Guardian Statues}}和{{tr|Lihzahrd Watcher Statues}}，出现在[[{{tr|Jungle Temple}}]]中。
+** {{tr|Statues}}不再会在{{tr|Thin Ice}}上生成。
+** {{tr|The Lucky Coin}}不再会导致{{tr|Statue}}所生成的{{tr|enemies}}掉落{{tr|Coins}}。
+** {{tr|Hardmode summon items}}不再会从{{tr|Statue}}生成的{{tr|enemies}}身上掉落了。}}
+{{history|Console-Release|introduced=y|和{{tr|Desktop}} 1.1.1 中的相应{{tr|mechanics}}、{{tr|recipes}}、及各种类一起引入。}}
+{{history|Mobile 1.2.11212|
+** {{tr|Armor Statue}}的配方有所改变，现在需要 50 个 {{item|Stone Block|mode=image}} 而非 100 个（依然在[[{{tr|Work Bench}}]]处制作）。
+** 添加了{{tr|Shark Statue}}（生成出现于{{tr|Underground}}）以及可制作的字母与数字{{tr|Statues}}（用 50 {{item|Stone Block|mode=image}}在[[{{tr|Heavy Work Bench}}]]处制作）。}}
+{{history|Mobile 1.2.6508|
+** 所有{{tr|Statues}}现在都用{{tr|Pickaxe}}来释放，而不再使用{{tr|a Hammer}}。
+** {{tr|Statues}}所生成的{{tr|Corrupt Goldfish}}和{{tr|Corrupt Bunnies}}不再掉落{{tr|Coins}}。
+** 添加了{{tr|Lihzahrd Statues}}、{{tr|Lihzahrd Guardian Statues}}和{{tr|Lihzahrd Watcher Statues}}，出现在[[{{tr|Jungle Temple}}]]中。
+** {{tr|Statues}}不再会在{{tr|Thin Ice}}上生成。
+** {{tr|The Lucky Coin}}不再会导致{{tr|Statue}}所生成的{{tr|enemies}}掉落{{tr|Coins}}。
+** {{tr|Hardmode summon items}}不再会从{{tr|Statue}}生成的{{tr|enemies}}身上掉落了。}}
+{{history|Mobile 1.1.5536|
+** {{tr|Angel Statue}}现在是可放置且可堆叠（最大 99）的了，卖出价由 {{cc|1}} 提升至 {{cc|60}}，并移除了{{tr|tooltip}}（'It does not do anything.'（它什么用都没有））。
+** 将外观更新到与{{tr|Desktop}} 1.1 一致。
+** 将{{tr|Statue}}更名为{{tr|Armor Statue}}。
+** 添加了{{tr|Bomb Statue}}、{{tr|Heart Statue}}、{{tr|Star Statue}}、{{tr|Bird Statue}}、{{tr|Bunny Statue}}、{{tr|Fish Statue}}、{{tr|Bat Statue}}、{{tr|Chest Statue}}、{{tr|Crab Statue}}、{{tr|Jellyfish Statue}}、{{tr|Piranha Statue}}、{{tr|Skeleton Statue}}、{{tr|Slime Statue}}、{{tr|King Statue}}、{{tr|Queen Statue}}、{{tr|Anvil Statue}}、{{tr|Axe Statue}}、{{tr|Boomerang Statue}}、{{tr|Boot Statue}}、{{tr|Bow Statue}}、{{tr|Corrupt Statue}}、{{tr|Cross Statue}}、{{tr|Eyeball Statue}}、{{tr|Gargoyle Statue}}、{{tr|Gloom Statue}}、{{tr|Goblin Statue}}、{{tr|Hammer Statue}}、{{tr|Hornet Statue}}、{{tr|Imp Statue}}、{{tr|Mushroom Statue}}、{{tr|Pickaxe Statue}}、{{tr|Pillar Statue}}、{{tr|Pot Statue}}、{{tr|Potion Statue}}、{{tr|Reaper Statue}}、{{tr|Shield Statue}}、{{tr|Spear Statue}}、{{tr|Sunflower Statue}}、{{tr|Sword Statue}}、{{tr|Tree Statue}}、和{{tr|Woman Statues}}。}}
+{{history|Mobile-Release|introduced=y|和{{tr|Desktop}} 1.0.6 中的相应{{tr|mechanics}}、{{tr|recipes}}、及各个种类一起引入。}}
+{{history|3DS-Release|introduced=y|和{{tr|Desktop}} 1.2.4 中的相应{{tr|mechanics}}、{{tr|recipes}}、及各个种类一起引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Statues}}

@@ -1,0 +1,61 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4131
+| type = Item summon / Storage
+}}
+{{item infobox
+| auto = 5325
+| type = Item summon / Storage
+}}
+[[File:Void Bag (demo).gif|thumb|用{{tr|Void Bag}}召唤出虚空传送门。注意它发出的光。]]
+
+'''{{tr|Void Bag}}'''是一个[[{{tr|portable storage}}]]物品，让玩家能随处开启[[{{tr|Void Vault}}]]。在{{tr|inventory}}中对{{tr|Void Bag item}}按下 {{key|open}} 时，会将其在“开启的”{{tr|Void Bag}}和'''{{tr|Closed Void Bag}}'''间切换。在使用时，它会提供暂时性的供玩家开启{{tr|Void Vault}}的传送门，持续 3 分钟。此物品不会被消耗，可以无限使用。
+
+在开启时，{{tr|Void Vault}}的储存内容会等效地作为玩家的副{{tr|inventory}}，会在玩家的主{{tr|inventory}}满后自动储存收集的物品（以紫色拾取文本提示）。此外，它还允许玩家无需打开{{tr|Void Vault}}的储存界面就能和与其中的物品交互，就如同它们在玩家的主{{tr|inventory}}中一样。
+
+在关闭时，{{tr|Void Bag}}的功能类似[[{{tr|Money Trough}}]]，只作为普通的[[{{tr|portable storage}}]]{{tr|item}}。这会阻止它在玩家的{{tr|inventory}}满时拾取物品，它也会失去副{{tr|inventory}}的功能。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Void Bag|expectedrows=2}}
+
+== 备注 ==
+* 开启的{{tr|Void Bag}}会等效地作为玩家的副{{tr|inventory}}，继承了下列功能：
+** 按下 {{key|heal}}、{{key|mheal}}、和 {{key|buff}} 来使用其中的[[{{tr|food}}]]和[[{{tr|potions}}]]。
+** 使用其内容物进行{{tr|Crafting}}。
+** [[快速堆叠至附近的宝箱上]]。
+** 若在主{{tr|inventory}}满时从[[{{tr|storage item}}]]中拿取全部物品，物品将被送到{{tr|Void Vault}}中。
+** 收藏物品（以阻止快速堆叠）。
+** 在玩家的{{tr|inventory}}中有功能的{{tr|Items}}会正常工作，这包括[[{{tr|informational accessories}}]]、[[{{tr|Guide To Critter Companionship}}]]、[[{{tr|Guide to Environmental Preservation}}]]、[[{{tr|Guide to Peaceful Coexistence}}]]等等。
+*** 不过，将[[{{tr|Encumbering Stone}}]]放置在{{tr|Void Vault}}中不会阻止玩家或开启的{{tr|Void Bag}}拾取物品。
+* {{tr|The Void Bag}}仅在击败[[{{tr|Skeletron}}]]后能够获得，因为它的{{tr|crafting recipe}}中包含仅由[[{{tr|Dungeon}}]]{{tr|enemy}}掉落的[[{{tr|Bone}}]]。
+** 然而，击败[[{{tr|Eater of Worlds}}]] / [[{{tr|Brain of Cthulhu}}]]不是必要的：虽然需要至少召唤它们一次，[[{{tr|Shadow Scale}}]]或[[{{tr|Tissue Sample}}]]分别能够通过击败{{tr|Eater of Worlds}}的几个体节或{{tr|Brain of Cthulhu}}的几个[[{{tr|Creeper}}]]获得，不需要完全击败 {{tr|bosses}}。
+** 在{{eil|drunk world}}中，它在击败{{tr|Skeletron}}前可获得，因为{{tr|Dungeon enemies}}可在击败此 {{tr|boss}} 前生成。
+* {{tr|The Void Bag}}在玩家的物品栏满或其中包含[[{{tr|quest fish}}]]时不会继续捡起同种{{tr|quest fish}}。不过，{{tr|quest fish}}仍然可以手动放置到{{tr|Void Vault}}中，且任何已经存放在{{tr|Void Vault}}中的{{tr|quest fish}}都不会阻止玩家再捡起一条同种{{tr|quest fish}}到物品栏中。
+* {{tr|The Void Bag}}不会自动拾取[[{{tr|Etherian Mana}}]]，但它可以通过手动放置或[[{{tr|Quick Stack}}]]来放置到{{tr|Void Vault}}中。
+
+== 花絮 ==
+[[File:Void Bag spoiler.png|thumb|早期版本的虚空传送门。]]
+
+* 早期的{{tr|Void Bag}}的传送门是深紫色的，这和当前游戏中[[{{tr|Potion of Return}}]]的传送门很像。
+* {{tr|The Void Bag}}的传送门在游戏内部被称为“{{code|VoidLens}}”（虚空晶状体）。
+
+== 另见 ==
+* {{forums thread|introducing-the-void-vault-and-void-bag.78808|Introducing the Void Vault and Void Bag}}，[[Re-Logic]] 最初公布{{tr|Void Vault}}和{{tr|Void Bag}}的[[论坛]]贴子。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|
+** 修复了在[[{{tr|Multiplayer}}]]下部分按下右键在{{tr|Void Bag}}的打开和关闭形态之间切换，会导致音效不断反复播放给其他玩家的问题。
+** 修复了储存在在开启的{{tr|Void Bags}}中的{{tr|info accessories}}在{{tr|Multiplayer}}下没有为附近玩家提供其信息显示的问题。}}
+{{history|Desktop 1.4.4|
+** 现在可被关闭。
+** 开启时，其中的物品可以被当作在玩家的主{{tr|inventory}}中一样使用。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-familiar = yes
+}}
+
+{{language info|en=Void Bag}}

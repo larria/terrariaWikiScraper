@@ -1,0 +1,384 @@
+{{exclusive|1.4.0.1}}
+{{for|{{tr|Lucky}}{{tr|modifier}}|{{tr|modifier}}}}
+
+'''{{tr|Luck}}'''是一项隐藏属性，会影响到《{{tr|Terraria}}》中的多种随机事件。有多种方式可以降低或是提升这一属性值，包括[[{{tr|Buff potions}}]]、[[{{tr|Torch}}]]放置等。{{tr|player}}可以通过与[[{{tr|Wizard}}]]对话得知自己大概的{{tr|Luck}}。
+
+{{tr|Luck}}会影响《{{tr|Terraria}}》中的许多随机物品和事件，诸如独特物品的掉落率、稀有{{tr|enemy}}和{{tr|critter}}的生成率、部分[[{{tr|town NPC}}]] 的首次出现以及[[{{tr|Traveling Merchant}}]]出售的物品数。
+
+== 影响因素 ==
+{{tr|Luck}}受[[{{tr|Ladybug}}]]、[[{{tr|Torch}}]]摆放、[[{{tr|Lucky (buff)}}|{{tr|Lucky Buff}}]]、[[{{tr|Lantern Night}}]]、[[{{tr|Garden Gnome}}]]、[[{{tr|Galaxy Pearl}}]]、特定[[{{tr|accessories}}]]、和丢入[[{{tr|Shimmer}}]]的[[{{tr|coins}}]]影响。
+
+结合所有正面{{tr|Luck}}，能够达到的最高{{tr|Luck}}值为 1.73，不过当{{tr|Luck}}大于 1 时不会有更多影响。仅有的能够对{{tr|Luck}}造成负面影响的为{{tr|Ladybug luck}}，使能够达到的最低{{tr|Luck}}值为 -0.4。
+{{options/set|item|icons=n}}
+{| class="terraria lined"
+! 影响因素 !! 可能的值
+|-
+| {{item|Ladybug|s|link={{tr|Luck}}#{{tr|Ladybugs}}}}
+| +0.4<br/>{{note|...}}<br/>−0.4
+|-
+| {{item|Torch|es|image=Torch.png/Jungle Torch.png/Coral Torch.png|link={{tr|Luck}}#{{tr|Torches}}}}
+| +0.2<br/>+0.1<br/>0
+|-
+| {{item|Luck Potion|s|link={{tr|Luck}}#{{tr|Luck Potions}}}}
+| +0.3<br/>+0.2<br/>+0.1<br/>0
+|-
+| {{item|Lantern Night|s|image=Release Lantern.png|link={{tr|Luck}}#{{tr|Lantern Nights}}}}
+| +0.3<br/>0
+|-
+| {{item|Garden Gnome|s|link={{tr|Luck}}#{{tr|Garden Gnomes}}}}
+| +0.2<br/>0
+|-
+| {{item|Galaxy Pearl|link={{tr|Luck}}#{{tr|Galaxy Pearl}}}}
+| +0.03<br/>0
+|-
+| {{item|Accessories|image=Lucky Horseshoe.png/Lucky Coin.png|link={{tr|Luck}}#{{tr|Accessories}}}}
+| +0.1<br/>+0.05<br/>0
+|-
+| {{item|Coins|image=Copper Coin.png/Silver Coin.png/Gold Coin.png/Platinum Coin.png|link={{tr|Luck}}#{{tr|Coins}}}}
+| +0.2<br/>{{note|...}}<br/>0
+|}{{options/reset|item}}
+
+=== 瓢虫 ===
+玩家和{{item|Ladybug|icons=n}}、{{item|Gold Ladybug|icons=n}}和[[{{tr|town NPC}}]]互动时，{{tr|luck}}会受到一些影响。以下是简化的总结；参看[[{{tr|Luck}}#技术性细节|技术性细节]]部分以获取更加详细和准确的解释。
+
+* 接触一只天然生成的{{tr|Ladybug}}会获得 {{item|Ladybug|mode=image}} +0.2 / {{item|Gold Ladybug|mode=image}} +0.4 的{{tr|Ladybug luck}}，会在最高 {{item|Ladybug|mode=image}} 12 / {{item|Gold Ladybug|mode=image}} 24 分钟的持续时间内逐渐线性降低至 0。
+* 在近距离杀死{{tr|Ladybug}}（无论是天然生成的或玩家放出的）或者在[[{{tr|fishing}}]]时将其用作[[{{tr|bait}}]]会获得 {{item|Ladybug|mode=image}} −0.2 / {{item|Gold Ladybug|mode=image}} −0.4 的{{tr|Ladybug luck}}，会在最高 {{item|Ladybug|mode=image}} 3 / {{item|Gold Ladybug|mode=image}} 6 分钟的持续时间内逐渐线性升高至 0。
+* 杀死除了[[{{tr|Guide}}]]和[[{{tr|Clothier}}]]以外的任何{{tr|town NPC}}会获得 −0.067 的{{tr|Ladybug luck}}，会在 1 分钟的持续时间内逐渐线性升高至 0。
+* 杀死{{tr|Guide}}会获得 +0.067 的{{tr|Ladybug luck}}（除非玩家已经拥有负的{{tr|Ladybug luck}}），会在 4 分钟的持续时间内逐渐线性降低至 0。
+
+可以看到，总的来说正的{{tr|Ladybug luck}}的持续时间是负的{{tr|Ladybug luck}}的四倍。{{tr|Ladybug luck}}会在玩家离开世界时立即重置为 0。
+
+==== 技术性细节 ====
+初始情况下，玩家具有“中立{{tr|Ladybug luck}}”，这意味着{{tr|Ladybug luck}}对玩家的总{{tr|luck}}的影响为 0。玩家的{{tr|Ladybug luck}}为正时具有“好{{tr|Ladybug luck}}”，为负时具有“坏{{tr|Ladybug luck}}”。{{tr|Ladybug luck}}的总值会被加到玩家的总{{tr|luck}}中。玩家的特定行为会导致“好”和“坏{{tr|Ladybug luck}}”，它们是暂时性的，具有设定好的持续时间。持续时间过后，玩家就重新具有“中立{{tr|Ladybug luck}}”。
+
+如果玩家在拥有“好{{tr|Ladybug luck}}”时又获得了“好{{tr|Ladybug luck}}”，持续时间不会叠加，而是其中时间更长的会被继续计数。这同样适用于“坏{{tr|Ladybug luck}}”。此外，“坏{{tr|Ladybug luck}}”可以覆盖掉“好{{tr|Ladybug luck}}”，但“好{{tr|Ladybug luck}}”不能覆盖“坏{{tr|Ladybug luck}}”。
+
+{{tr|Ladybug luck}}值取决于“好”或“坏{{tr|Ladybug luck}}”的剩余持续时间，由以下公式计算：{{source code ref|v=1.4.4.9|method=Terraria.Player.GetLadyBugLuck / Terraria.Player.RecalculateLuck|field=Terraria.NPC.ladyBugGoodLuckTime / Terraria.NPC.ladyBugBadLuckTime}}
+
+<math>\text{瓢虫运气}=\frac{\text{持续时间}}{x}\times0.2</math>
+
+* {{code|x}} 的值在玩家拥有“好{{tr|Ladybug luck}}”时为 720，拥有“坏{{tr|Ladybug luck}}”时为 −180。持续时间的单位为秒。
+
+举个例子，如果玩家拥有剩余 4 分钟的“坏{{tr|Ladybug luck}}”，他们的{{tr|Ladybug luck}}值是 −0.267。如果拥有剩余 42 秒的“好{{tr|Ladybug luck}}”，他们的{{tr|Ladybug luck}}值是 +0.01167。
+
+总共有两种会让玩家获得一个特定持续时间的“好{{tr|Ladybug luck}}”的行为：
+
+* 如果{{tr|player}}靠近一只自然生成的（即非玩家放出的）{{tr|ladybug}}，则{{tr|player}}会获得“好{{tr|Ladybug luck}}”，最高持续 {{item|Ladybug|mode=image}} 12 / {{item|Gold Ladybug|mode=image}} 24 分钟。{{source code ref|v=1.4.4.9|method=Terraria.NPC.LadyBugLuck}}
+** 玩家（的{{tr|hitbox}}）和{{tr|Ladybug}}的{{tr|hitbox}}中心之间的距离必须少于 800 像素（50 格）才能获得“好{{tr|Ladybug luck}}”，但如果该距离不少于 30 像素（1.875 格），则“好{{tr|Ladybug luck}}”的持续时间会依据下列公式基于距离降低：
+:: <math>\text{持续时间} =\left\lfloor 43200\times \left( 1-\frac{\text{距离}}{800}\right)^{6}\right\rfloor \div 60</math>
+::* {{tr|Duration}}的单位为秒，距离的单位为像素。对于{{tr|Gold Ladybugs}}，计算的结果翻倍。
+
+* 如果{{tr|player}}杀死[[{{tr|Guide}}]]，会获得“好{{tr|Ladybug luck}}”，持续 4 分钟。{{source code ref|name=NPCLuck|v=1.4.4.9|method=Terraria.NPC.NPCLuck}}
+
+总共有三种会让玩家获得一个特定持续时间的“坏{{tr|Ladybug luck}}”的行为：
+
+* 如果{{tr|player}}在近距离杀死一只（无论是自然生成的还是玩家放出的）{{tr|ladybug}}，则{{tr|player}}会获得“坏{{tr|Ladybug luck}}”，最高持续 {{item|Ladybug|mode=image}} 3 / {{item|Gold Ladybug|mode=image}} 6 分钟。{{source code ref|v=1.4.4.9|method=Terraria.NPC.checkDead / Terraria.NPC.LadyBugKilled}}
+** 玩家（的{{tr|hitbox}}）和{{tr|Ladybug}}的{{tr|hitbox}}中心之间的距离必须少于 400 像素（25 格）才能获得“坏{{tr|Ladybug luck}}”，但如果该距离不少于 100 像素（6.25 格），则“坏{{tr|Ladybug luck}}”的持续时间会依据下列公式基于距离降低：
+:: <math>\text{持续时间} =\left\lfloor 10800 - 27\times \text{距离}\right\rfloor \div 60</math>
+::* {{tr|Duration}}的单位为秒，距离的单位为像素。对于{{tr|Gold Ladybugs}}，计算的结果翻倍。
+:: 例如，距离 10 格（160 像素）时，“坏{{tr|Ladybug luck}}”会持续 {{item|Ladybug|mode=image}} {{duration|108}} / {{item|Gold Ladybug|mode=image}} {{duration|216}}。距离为 24.5 格（392 像素）时，“坏{{tr|Ladybug luck}}”会持续 {{item|Ladybug|mode=image}} 3.6 / {{item|Gold Ladybug|mode=image}} 7.2 {{tr|seconds}}。
+
+* 如果玩家在[[{{tr|fishing}}]]时将{{tr|Ladybug}}用作[[{{tr|bait}}]]，他们会获得 {{item|Ladybug|mode=image}} 3 / {{item|Gold Ladybug|mode=image}} 6 分钟的“坏{{tr|Ladybug luck}}”。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_CheckFishingBobber_PickAndConsumeBait / Terraria.NPC.LadyBugKilled}}
+
+* 如果玩家杀死了任何[[{{tr|town NPC}}]]（包括[[{{tr|town pets}}]]和[[{{tr|Traveling Merchant}}]]，但不包括{{tr|Guide}}和[[{{tr|Clothier}}]]），他们会获得 1 分钟的“坏{{tr|Ladybug luck}}”。<ref name="NPCLuck"/>
+
+因此，“好{{tr|Ladybug luck}}”的最长持续时间是 24 分钟（由靠近{{tr|Gold Ladybug}}提供），提供的初始{{tr|Ladybug luck}}值为 +0.4，而“坏{{tr|Ladybug luck}}”的最长持续时间为 6 分钟（由在近距离杀死{{tr|Gold Ladybug}}或将其用作{{tr|bait}}提供），提供的初始{{tr|Ladybug luck}}值为 -0.4。当然了，这些值都只是暂时的。在半分钟后（如果在这段时间内没有获得新的{{tr|Ladybug luck}}），这些值将会分别变为 +0.39167 和 −0.367。
+
+=== 火把 ===
+通过在正确的位置摆放或手持[[{{tr|Torch}}]]，{{tr|player}}可以提升自己的{{tr|Luck}}：{{source code ref|v=1.4.4.9|method=Terraria.Player.TryRecalculatingTorchLuck / Terraria.Player.UpdateTorchLuck_ConsumeCountersAndCalculate}}
+
+* 在[[{{tr|Surface}}]]或[[{{tr|Space}}]]{{tr|layers}}的放置的{{tr|torch}}会被无视。这意味着在这些[[{{tr|layers}}]]，仅有{{tr|player}}手持的{{tr|torches}}会影响{{tr|luck}}。
+* {{tr|Torch Luck}}在[[{{tr|Dungeon}}]]或[[{{tr|Lihzahrd Temple}}]]中，或者[[{{tr|The Torch God}}]][[{{tr|event}}]]激活时不适用。
+* 在{{tr|Underground}}及更深处，任何处于（包括放置的和{{tr|player}}手持的）以玩家为中心的 81×81 个{{tr|tile}}以内的方形区域的{{tr|torch}}都会增加或减少{{tr|torch luck}}，总{{tr|luck}}值限制在最大 0.2 与最小 0 的范围内。
+** 只需要单个{{tr|torch}}就可触发对应的好{{tr|luck}}/{{tr|luck}}惩罚。例如，在[[{{tr|Snow biome}}]]中放置 1 个和 100 个[[{{tr|Ice Torch}}]]之间没有区别；两者都会提供 0.2 {{tr|torch luck}}。
+** 被关闭的{{tr|Torches}}（如：通过[[{{tr|wires}}]]关闭）仍然会影响{{tr|luck}}。
+* 除了某些例外之外，{{tr|biome torches}}在其对应{{tr|biome}}中会提供好{{tr|luck}}，而在任何其他地方都会降低{{tr|luck}}。
+* 普通的{{tr|torches}}在大部分可以放置对应{{tr|biome torch}}的地方都会降低{{tr|luck}}，尤其是[[{{tr|Snow Biome}}]]。[[{{tr|Bone torches}}]]在没有对应{{tr|biome torch}}的{{tr|biome}}中（以及{{tr|Ocean}}中）会给予好{{tr|luck}}。
+* [[{{tr|Torch}}#彩色{{tr|Torch}}|彩色{{tr|Torch}}]]、[[{{tr|Torches}}#{{tr|Ultrabright Torch}}|{{tr|Ultrabright Torch}}]]、[[{{tr|Torches|link=y}}#{{tr|Demon Torch}}|{{tr|Demon Torch}}]]、和[[{{tr|Torches|link=y}}#{{tr|Aether Torch}}|{{tr|Aether Torch}}]]以及任何其他光源（例如{{tr|candle}}）对{{tr|luck}}没有任何影响。
+* 好{{tr|luck}}和{{tr|luck}}惩罚分别拥有独立的限制值。好{{tr|luck}}的最大值为 0.2 ，{{tr|luck}}惩罚的最大值为 -0.3。因此，多个同种{{tr|torch}}不会叠加增加{{tr|luck}}，而一个及以上的错误{{tr|torch}}会完全抵消{{tr|torch luck}}的增益。
+* 无论{{tr|luck}}惩罚积累了多少，总{{tr|torch luck}}不会降低到 0 以下——它只会增加{{tr|luck}}，或不提供任何加成。
+
+{{options/set|item|icons=n}}{| class="terraria"
+! {{tr|Torch}} !! 合适的位置 !! 增加{{tr|torch luck}} !! 降低{{tr|torch luck}}
+|-
+| {{item|Ice Torch}} || [[{{tr|Snow biome}}]]、[[{{tr|Underground Snow}}]] || 0.2 || 0.2
+|-
+| {{item|Desert Torch}} || [[{{tr|Desert}}]]、[[{{tr|Underground Desert}}]] || 0.2 || 0.2
+|-
+| {{item|Jungle Torch}} || [[{{tr|Jungle}}]]、[[{{tr|Underground Jungle}}]] || 0.2 || 0.2
+|-
+| {{item|Hallowed Torch}} || [[{{tr|Hallow}}]]、[[{{tr|Underground Hallow}}]] || 0.2 || 0.2
+|-
+| {{item|Corrupt Torch}} || [[{{tr|Corruption}}]]、[[{{tr|Underground Corruption}}]] || 0.2 || 0.2
+|-
+| {{item|Crimson Torch}} || [[{{tr|Crimson}}]]、[[{{tr|Underground Crimson}}]] || 0.2 || 0.2
+|-
+| {{item|Cursed Torch}} || [[{{tr|Corruption}}]]、[[{{tr|Underground Corruption}}]] || 0.2 || 0
+|-
+| {{item|Ichor Torch}} || [[{{tr|Crimson}}]]、[[{{tr|Underground Crimson}}]] || 0.2 || 0
+|-
+| {{item|Coral Torch}} || [[{{tr|Ocean}}]] || 0.2 || 0 或 0.2（见下方{{tr|notes}}）
+|-
+| {{item|Mushroom Torch}} || [[{{tr|Glowing Mushroom biome}}]] || 0.2 || 0.2
+|-
+| {{item|Bone Torch}} || 任何不处于[[{{tr|Snow biome}}]]、[[{{tr|Desert}}]]、[[{{tr|Jungle}}]]、<br/>[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、[[{{tr|Hallow}}]]、[[{{tr|Dungeon}}]]或[[{{tr|Jungle Temple}}]]的地方 || 0.1 || 0
+|-
+| {{item|Torch}} || 无 || 0 || 0， 0.1 或 0.3（见下方{{tr|notes}}）
+|}{{options/reset|item}}
+
+==== 备注 ====
+* 仅当放置在{{tr|water}}外且在{{tr|Ocean biome}}外时，{{tr|Coral torches}}会降低 0.2 的{{tr|torch luck}}。无论是否放置在{{tr|water}}中，{{tr|Coral torches}}只要处于{{tr|Ocean biome}}中就可以增加{{tr|luck}}。
+* 普通{{tr|torches}}在[[{{tr|Desert}}]]、[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]和[[{{tr|Hallow}}]]{{tr|biome}}中降低 0.1 的{{tr|torch luck}}，在[[{{tr|Snow biome}}]]中降低 0.3。在任何其他地方都没有效果。
+* [[{{tr|Bone Torch}}]]在没有其对应{{tr|torch}}的{{tr|biomes}}中会提供一些好处（包括[[{{tr|Forest}}]]、[[{{tr|Space}}]]、[[{{tr|Underworld}}]]、''普通''的[[{{tr|Caverns}}]]、[[{{tr|Ocean}}]]、和[[{{tr|Glowing Mushroom biome}}|{{tr|Glowing Mushroom}}]]）。
+* 对于[[{{tr|hybrid biome}}]]，只要所有{{tr|torches}}都属于已存在的{{tr|biomes}}之一，就不会有惩罚。例如，在{{tr|Hallowed Snow biome}}中具有{{tr|Ice Torch and Hallowed Torches}}仍然会将{{tr|luck}}提高 0.2。
+
+因此，为了获得最高的{{tr|Luck}}，{{tr|player}}应该尝试在对应的{{tr|biome}}的{{tr|underground}}使用相应的{{tr|biome torch}}，同时避免在错误的{{tr|biome}}中使用{{tr|Torch}}。此外，也应当避免在拥有其对应{{tr|biome torch}}的{{tr|biome}}中使用普通{{tr|torch}}。[[{{tr|Bone Torch}}]]很适合放置在{{tr|biome}}交界处，这可以避免站在一个{{tr|biome}}中时在判定范围内有另一{{tr|biome}}的{{tr|torch}}。在{{tr|surface}}和{{tr|Space}}中，{{tr|player}}可以通过''手持''适合的{{tr|torch}}来增加{{tr|luck}}；很明显这无法帮助玩家进行{{tr|fishing}}或是任何需要非{{tr|torch}}{{tr|tool}}来进行的行为。使用防御性质的或间接的攻击手段仍然可以影响战斗，例如[[{{tr|Minions}}]]、{{tr|Sentries}}、和[[{{tr|armor}}]]效果。
+
+如果[[{{tr|Torch God's Favor}}]]设为开启，普通的{{tr|torches}}在下列{{tr|biome}}中手持和/或放置时会自动转换为适合的类型：[[{{tr|Desert}}]]、[[{{tr|Jungle}}]]、[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、[[{{tr|Hallow}}]]和[[{{tr|Snow biome}}]]。{{tr|Bone Torch}}、[[{{tr|Demon torch}}]]、和[[{{tr|Aether Torch}}]]也会在[[{{tr|Dungeon}}]]、[[{{tr|Underworld}}]]、和[[{{tr|Aether}}]]中分别自动放置，但要注意这些{{tr|torch}}在对应的位置并不会影响{{tr|torch luck}}。
+
+=== 运气药水 ===
+[[{{tr|Lucky (buff)}}|幸运]]{{tr|buff}}会依据其剩余时间提升{{tr|Luck}}：
+
+{| class="terraria"
+! 剩余时间 !! {{tr|Luck}}增幅
+|-
+| 大于 10 分钟 || +0.3
+|-
+| 大于 5 分钟 || +0.2
+|-
+| 5 分钟或更少 || +0.1
+|}
+
+这些值不叠加，因此使用[[{{tr|Greater Luck Potion}}]]（持续{{iteminfo|Greater Luck Potion|buff duration}}）会提供 5 分钟的 +0.3 {{tr|Luck}}，然后是 5 分钟的 +0.2 {{tr|Luck}}，最后是 5 分钟的 +0.1 {{tr|Luck}}。{{tr|Luck Potions}}之间仅有的不同是{{tr|buff}}的持续时间。
+
+=== 灯笼夜 ===
+[[{{tr|Lantern Night}}]]会增加 0.3 的{{tr|Luck}}，这在世界各处均有效，包括{{tr|underground}}。不过，如果有[[{{tr|Blood Moon}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、任何 {{tr|Boss}} 或{{tr|Invasion}}正在进行，或是[[{{tr|Moon Lord}}]]正在被召唤，{{tr|Lantern Night}}不会开始。
+
+=== 花园侏儒 ===
+如果在{{tr|player}}附近{{buff area}}的区域有[[{{tr|Garden Gnome}}]]，{{tr|Luck}}会提升 0.2。放置多个{{tr|Garden Gnome}}不会叠加此效果。
+
+=== 星系珍珠 ===
+使用[[{{tr|Galaxy Pearl}}]]会将玩家的{{tr|luck}}永久提高 0.03。
+
+=== 配饰 ===
+特定{{tr|accessories}}会在装备时增加穿戴者的{{tr|luck}}，以及在 800 像素（50 格）以内的同一[[{{tr|Teams}}]]的所有成员的{{tr|luck}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateEquips / Terraria.Player.RefreshInfoAccsFromTeamPlayers}}
+{{options/set|item|showid=n|mode=table|icons=n}}
+{| class="terraria"
+! colspan=2 | {{tr|Item}} !! {{tr|Luck}}
+|- {{#vardefine:list|{{equipinfo/list|{{#vardefineecho:stat|hasLuck_LuckyHorseshoe}}|sep=&}}}}
+| {{item|id={{#lstelem:{{#var:list}}|&|1}}}}
+| rowspan={{#lstcnt:{{#var:list}}|&}} | {{#cargo_query:tables=Equipinfo|fields=equipmentBasedLuckBonus|where=itemid IS NULL AND {{#var:stat}} IS NOT NULL|delimiter=|no html}}
+{{#lstmap:{{#lstsub:{{#var:list}}|&|&|2}}|&|@@@@|<esc>
+|-
+| {{item|id=@@@@}}</esc>|}}
+|- class=topline {{#vardefine:list|{{equipinfo/list|{{#vardefineecho:stat|hasLuck_LuckyCoin}}|sep=&}}}}
+| {{item|id={{#lstelem:{{#var:list}}|&|1}}}}
+| rowspan={{#lstcnt:{{#var:list}}|&}} | {{#cargo_query:tables=Equipinfo|fields=equipmentBasedLuckBonus|where=itemid IS NULL AND {{#var:stat}} IS NOT NULL|delimiter=|no html}}
+{{#lstmap:{{#lstsub:{{#var:list}}|&|&|2}}|&|@@@@|<esc>
+|-
+| {{item|id=@@@@}}</esc>|}}
+|- class=topline
+! colspan=2 | 总计可能值
+! +{{#expr:{{#cargo_query:tables=Equipinfo|fields=equipmentBasedLuckBonus|where=itemid IS NULL AND (hasLuck_LuckyCoin IS NOT NULL OR hasLuck_LuckyHorseshoe IS NOT NULL)|delimiter=|no html}}}}
+|}{{options/reset|item}}
+{{note|同一行的{{tr|Accessories}}无法叠加。}}
+
+团队成员之间共享的{{tr|luck}}提升不会叠加。例如，如果两名附近的团队成员都装备了{{tr|Lucky Horseshoe}}，他们各只会获得 {{#vardefineecho:horseshoe_luck|{{#cargo_query:tables=Equipinfo|fields=equipmentBasedLuckBonus|where=itemid IS NULL AND hasLuck_LuckyHorseshoe IS NOT NULL|delimiter=|no html}}}} {{tr|luck}}，而非 +{{#expr:{{#var:horseshoe_luck}}*2}}。
+
+=== 钱币 ===
+{| class="terraria lined" style="float:right; margin-left:1em;"
+! {{tr|Coin}} !! {{tr|Coin luck}}计数
+|-
+| {{item|Copper Coin}}（1）
+| 1
+|-
+| {{item|Silver Coin}}（1）
+| 100
+|-
+| {{item|Gold Coin}}（1）
+| 10000
+|-
+| {{item|Platinum Coin}}（1）
+| 1000000
+|}
+
+将[[{{tr|coins}}]]丢入[[{{tr|Shimmer}}]]会将其消耗，并使得半径 1000 像素（62.5 格）内的所有玩家的“{{tr|coin luck}}计数”提高一定的值{{source code ref|v=1.4.4.9|name=addCoinLuck|method=Terraria.Player.AddCoinLuck}}，取决于{{tr|coin}}的类型和堆叠大小：1 个{{tr|Copper Coin}}提高 1 {{tr|coin luck}}计数。{{source code ref|v=1.4.4.9|method=Terraria.Item.GetShimmered}}
+
+{{tr|The coin luck}}计数每{{tr|tick}}{{tick}}降低 0.01%，若降低到 0.25 以下则会立即被设为 0。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateCoinLuck}}（这很可能是因为不这么做的话，这一指数下降函数无法到达零）。玩家的剩余{{tr|coin luck}}计数会为他们提供如下表所示的{{tr|luck}}：{{source code ref|v=1.4.4.9|method=Terraria.Player.CalculateCoinLuck}}
+
+{| class="terraria lined"
+! 剩余的{{tr|coin luck}}计数（X） !! {{tr|Luck}}
+|-
+| X > 249000
+| +0.2
+|-
+| 24900 < X ≤ 249000
+| +0.175
+|-
+| 2490 < X ≤ 24900
+| +0.15
+|-
+| 249 < X ≤ 2490
+| +0.125
+|-
+| 24.9 < X ≤ 249
+| +0.1
+|-
+| 2.49 < X ≤ 24.9
+| +0.075
+|-
+| 0.25 ≤ X ≤ 2.49
+| +0.05<!--
+|-
+| 0 < X < 0.249
+| +0.025-->
+|}
+
+{{tr|The coin luck}}计数永远不会超过 100,0000<ref name="addCoinLuck"/>，因此消耗 1 个{{tr|Platinum Coin}}会完全充满它。这会提供持续{{duration|13902.29 ticks}}的最高的 0.2 {{tr|luck}}加成，此后该加成会下降 0.025，之后每 {{duration|23024.7 ticks}}再下降0.025。<!-- coin luck function: f(x)=1000000*(0.9999^x). solve 249001=f(x) to get the x where the function's value is 249001: x=log(1000000/249001)/log(10000/9999)≈13902.2885. see https://www.wolframalpha.com/input?i=solve+1000000*%280.9999%5Ex%29+%3D+249001 -->
+
+== 影响 ==
+{{tr|Luck}}对游戏进程中的诸多概率都有影响。每当计算随机概率时，一个修正因子会被用来修正随机概率：{{source code ref|v=1.4.4.9|method=Terraria.Player.RollLuck}}
+* 如果{{tr|player}}的{{tr|Luck}}大于 0，则有 (100 × {{tr|Luck}})% 的几率，随机概率会增加。
+** 具体增量也是随机的：如果基础值是 1/X，实际值会变成 1/Y，其中 Y 是介于 X/2 到 X-1 之间（闭区间）的整数。因此，对于一件基础发生几率为 1/n 的事件，平均来说的发生几率为 <math>\left(\sum _{k=\lfloor \frac{n}{2} \rfloor }^{n-1}\frac{1}{k}\right) \div \lceil \frac{n}{2} \rceil \times \text{luck} +\frac{1}{n} \times \left( 1-\text{luck}\right)</math>
+* 如果{{tr|player}}的{{tr|Luck}}小于 0，则有 (100 × |{{tr|Luck}}|)% 的几率，随机概率会降低。
+** 具体减少量和上面一样也是随机的：如果基础值是 1/X，实际值会变成 1/Y，其中 Y 是介于 X 到 X * 2 - 1 之间（闭区间）的整数。因此，对于一件基础发生几率为 1/n 的事件，平均来说的发生几率为 <math>\left(\sum _{k=n}^{2n-1}\frac{1}{k}\right) \div n\times \left|\text{luck}\right|+\frac{1}{n} \times \left( 1-\left|\text{luck}\right|\right)</math>。
+* 如果{{tr|player}}{{tr|Luck}}为 0，则直接使用基础几率。
+
+例如，如果某个事件的基础发生概率是 10%，则：
+* 若{{tr|player}}的{{tr|Luck}}为 1.0，有 100% 的几率这个概率会变成 1/5 到 1/9 之间，最终平均概率是大约 14.91%。<ref>(1/5 + 1/6 + 1/7 + 1/8 + 1/9) / 5 * 1.0 + 1/10 * (1 - 1.0) ≈ 0.149127</ref>
+* 若{{tr|player}}的{{tr|Luck}}为 0.5，有 50% 的几率这个概率会提升，最终平均概率是大约 12.46%。<ref>(1/5 + 1/6 + 1/7 + 1/8 + 1/9) / 5 * 0.5 + 1/10 * (1 - 0.5) ≈ 0.124563</ref>
+* 若{{tr|player}}的{{tr|Luck}}为 0，最终概率等于基础概率，10%。
+* 若{{tr|player}}的{{tr|Luck}}为 -0.2，有 20% 的几率，这个概率会变成 1/10 到 1/19 之间，最终平均概率是大约 9.44%。<ref>(1/10 + 1/11 + 1/12 + 1/13 + 1/14 + 1/15 + 1/16 + 1/17 + 1/18 + 1/19) / 10 * 0.2 + 1/10 * (1 - 0.2) ≈ 0.094375</ref>
+* 若{{tr|player}}的{{tr|Luck}}为 -0.4，有 40% 的几率这个概率会降低，最终平均概率是大约 8.88%。<ref>(1/10 + 1/11 + 1/12 + 1/13 + 1/14 + 1/15 + 1/16 + 1/17 + 1/18 + 1/19) / 10 * 0.4 + 1/10 * (1 - 0.4) ≈ 0.088751</ref>
+
+举个例子，如果杀怪来刷一种掉落率为 2% 的{{tr|item}}，则每杀 1000 次，掉落物数量的数学期望会是 20：
+
+* 在杀死一只{{tr|ladybug}}后，前述数学期望会变成 18（向下取整）。如果本来要刷一个小时，现在就得额外多刷 7 分钟。注意“坏{{tr|Ladybug luck}}”实际上维持不了那么久。
+* 如果在[[{{tr|Underground Jungle}}]]{{tr|biome}}中，附近插一根{{tr|Jungle Torch}}、放一个{{tr|Garden Gnome}}，还有剩余时间 5 分钟以上的[[{{tr|Lucky (buff)}}|幸运]]增益，恰好还是[[{{tr|Lantern Night}}]]，前述数学期望会变成 28。如果本来要刷一个小时，现在就可以少刷大约 17 分钟。
+
+当 <math>n</math> 足够大时，应用正{{tr|luck}}修正后的等效几率接近 <math>\frac{2\log{2}}{n}\approx \frac {1.4}{n}</math>，因此显然正{{tr|luck}}将特定事件的发生几率提高了 <math>0.4 \times \text{运气}</math>。类似地，负{{tr|luck}}将特定事件的发生几率降低了约 <math>0.3 \times \text{运气}</math>。
+=== 物品掉落 ===
+除了少数例外之外，几乎所有{{tr|item}}的掉落率都会受{{tr|Luck}}影响。杀死{{tr|enemy}}时，最接近它的{{tr|player}}的{{tr|Luck}}会被用于计算。
+
+* 这包括敌怪掉落[[{{tr|Heart}}]]和[[{{tr|Mana Star}}]]的几率，以及[[{{tr|Zombie Elf}}]]、[[{{tr|Scarecrow}}]]、[[{{tr|Hellhound}}]]和[[{{tr|Poltergeist}}]]掉落一个以上{{tr|Heart}}的几率。
+* 任何时候，当 [[{{tr|boss}}]]（或者特定的某些敌怪，如[[{{tr|Mimics}}]]和[[{{tr|Biome Mimic}}]]）肯定会从“掉落列表”里掉落其中一件物品时，{{tr|luck}}不适用于该选择（不影响“必定从N个物品中掉落一种”的掉落）。以下的其它 {{tr|boss}} 掉落也不受{{tr|luck}}影响：{{source code ref|v=1.4.4.9|{{code|Terraria.GameContent.ItemDropRules.ItemDropDatabase.cs}} 中的多个方法。}}
+<div style="margin-left:1.6em;">{{collapse top simple}}
+{{#listmap:list=<!--
+
+RegisterBoss_QueenSlime
+-->4980,<!--
+
+RegisterBoss_KingSlime
+-->2585,<!--
+
+RegisterBoss_Deerclops
+-->5117, 5118, 5119, 5095,<!--
+
+RegisterBoss_QueenBee
+-->1121, 1123, 2888, 842, 843, 844,<!--
+
+RegisterBoss_WOF
+-->490, 491, 489, 2998, 426, 434, 514, 4912,<!--
+
+RegisterBoss_MoonLord
+-->3063, 3389, 3065, 1553, 3930, 3541, 3570, 3571, 3569,<!--
+
+RegisterBoss_Betsy
+-->3827, 3859, 3870, 3858,<!--
+
+RegisterDD2EventDrops
+-->3865, 3809, 3811, 3810, 3812, 3852, 3854, 3823, 3835, 3836, 3856, 3865,  3809, 3811, 3810, 3812, 3852, 3854, 3823, 3835, 3836, 3814, 3815, 3857, 3855, 3814, 3815, 3857, 3855,<!--
+
+-->|insep=,|token=@|pattern=<esc>{{itemlist/item|{{item|id=@|showid=n|icons=n}}}}</esc>|outsep=|duplicates=strip|intro={{itemlist/start|width=18em|class=terraria}}|outro={{itemlist/end}}}}
+{{collapse bottom simple}}</div>
+* 另一个例外是掉落自[[{{tr|Harpy}}]]的[[{{tr|Feather}}]]，它总是以 {{chance|1/2}} 的几率掉落，不受{{tr|luck}}影响。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterMiscDrops}}
+* 只有敌怪掉落会受{{tr|luck}}影响。来自[[{{tr|grab bags}}]]的物品掉落几率（如[[{{tr|crates}}]]或[[{{tr|Oyster}}]]）不受影响。
+
+=== NPC 生成 ===
+部分 NPC 的生成几率会受玩家{{tr|luck}}影响：
+
+* 金[[{{tr|critters}}]]代替普通{{tr|critter}}生成的几率（包括[[{{tr|Trees}}#{{tr|Shaking}}|摇树]]时）。
+* 从被击败的[[{{tr|Dungeon}}]]{{tr|enemy}}上生成[[{{tr|Dungeon Spirit}}]]的几率。
+** 对于此计算，会使用最接近被击败的{{tr|enemy}}的{{tr|player}}的{{tr|Luck}}。
+* [[{{tr|Hardmode Dungeon}}]]{{tr|enemy}}在错误的{{tr|wall}}种类前的生成几率（如[[{{tr|Skeleton Commando}}]]在{{tr|Slab Walls}}前生成）。
+* 以下实体的生成几率：{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+<div style="margin-left:1.6em;">{{collapse top simple}}{{options/set|item|icons=n|maxsize=x45px}}
+{{itemlist|width=16em|class=terraria
+|{{item|Bound Goblin}}
+|{{item|Bound Wizard}}
+|{{item|Doctor Bones}}
+|{{item|Dungeon Slime}}
+|{{item|Enchanted Nightcrawler}}
+|{{item|Fairies|image=Blue Fairy.png/Green Fairy.png/Pink Fairy.png}}
+|{{item|Gnome}}
+|{{item|Golden Slime}}
+|{{item|Ice Golem}}
+|{{item|Mimics|note=（{{tr|Present Mimics}}除外）|wrap=y}}
+|{{item|Biome Mimic|s|image=Hallowed Mimic.png}}
+|{{item|Pinky}}
+|{{item|Clumsy Balloon Slime}}
+|{{item|Old Shaking Chest}}
+|{{item|Mystic Frog}}
+|{{item|Truffle Worm}}
+|{{item|Prismatic Lacewing}}
+}}{{options/reset|item}}
+{{collapse bottom simple}}</div>
+
+=== 其它机制 ===
+* 从被打破的[[{{tr|Pot}}]]中出现[[{{tr|Coin Portal}}]]的几率会受最接近打破罐子的玩家的{{tr|luck}}影响。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.CheckPot}}
+* 拥有最高{{tr|luck}}的玩家会影响[[{{tr|Traveling Merchant}}]]的商店中出现更多物品的几率。{{source code ref|v=1.4.4.9|method=Terraria.Chest.SetupTravelShop}}
+* 在[[{{tr|fishing}}]]时，正的幸运会有 ''(100 × {{tr|luck}})%'' 的几率将{{tr|fishing power}}暗中倍乘 110% 至 140% 之间的一个随机数字。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.FishingCheck}}
+** 与之相反的是，负的幸运会有 ''(−100 × {{tr|luck}})%'' 的几率将{{tr|fishing power}}暗中倍乘 60% 至 90% 之间的一个随机数字。
+** 除了会影响{{tr|fishing power}}以外，{{tr|luck}}对实际的{{tr|fishing catches}}没有其他影响。
+* 掉落自{{tr|enemies}}的[[{{tr|Coins}}]]会受{{tr|luck}}影响；{{tr|luck}}会使得游戏生成两个不同的{{tr|coin}}掉落值，在{{tr|luck}}为正时选择较大的一项，为负时选择较小的一项。此效果对结果的影响程度取决于外部因素，例如[[{{tr|Midas}}]]{{tr|debuff}}和[[{{tr|Blood Moon}}]]，因为更大的分散度意味着生成的两个值的区别会更大。
+** 在 1.0 {{tr|luck}}时，取决于实际情况，{{tr|enemies}}平均会掉落 1.15 倍至 1.19 倍的钱。
+** 这也适用于 [[{{tr|bosses}}]]，但仅限[[{{tr|Classic Mode}}]]。[[{{tr|Expert Mode}}]]下的 {{tr|Bosses}} 会掉落[[{{tr|Treasure Bag}}]]，它们不受{{tr|luck}}影响。
+* {{tr|damage}}计算在很多情况下也受{{tr|Luck}}影响；正的{{tr|Luck}}对{{tr|player}}有利。{{tr|projectile}}受{{tr|Luck}}影响，{{tr|enemy}}的{{tr|melee damage}}也一样（例如[[{{tr|Zombie}}]]的{{tr|contact damage}}）。{{tr|player}}的{{tr|weapon}}也受{{tr|Luck}}影响。
+** 下列步骤将被用于计算{{tr|player}}{{tr|damage}}受{{tr|Luck}}的影响：{{source code ref|v=1.4.4.9|method=Terraria.Main.damageVar}}
+*** 生成初始[[{{tr|damage}}]]值。
+*** 检查{{tr|player}}的{{tr|Luck}}是否 > 0 ，如果是，生成介于 0.0 到 1.0 的随机数。如果随机数小于{{tr|player}}的{{tr|Luck}}，计算第二次{{tr|damage}}值，然后从两次中取高的那一个。
+*** 如果{{tr|player}}的{{tr|Luck}} < 0 ，生成介于 0.0 到 1.0 的随机数。如果随机数小于{{tr|player}}的{{tr|Luck}}的绝对值，计算第二次{{tr|damage}}值，然后从两次中取低的那一个。
+** 这会使{{tr|damage}}值（减去{{tr|defense}}前）平均增加/减少至多 5%。
+** {{tr|Luck}}如影响普通{{tr|enemy}}一般影响 [[{{tr|PvP}}]]。
+** [[{{tr|Thorns Potion}}]]、[[{{tr|Turtle armor}}]]的{{tr|set bonus}}、和[[{{tr|Brand of the Inferno}}]]与[[{{tr|Sergeant United Shield}}]]的格挡伤害都会被{{tr|luck}}''反向影响''。更高的{{tr|luck}}有几率会降低所受的伤害，因而会降低被{{tr|thorns}}效果或格挡造成的伤害。
+
+=== 不受运气影响的因素 ===
+''不受''{{tr|luck}}影响的机制的列表（包括上方所提到的）：
+
+* [[钓鱼渔获|渔获]]（对{{tr|fishing power}}的效果除外）或{{tr|Angler Quest}}奖励。
+* 来自任何{{tr|grab bags}}{{tr|item}}的战利品，如{{tr|crates}}或{{tr|Oysters}}。
+* 来自任何{{tr|boss}}或{{tr|enemy}}的从“掉落列表”里掉落其中一件物品的物品选择。
+* 部分的 {{tr|boss}} 掉落，已在[[#{{tr|Item}}掉落|上方]]列出。
+* [[{{tr|Harpy}}]]掉落[[{{tr|Feather}}]]的几率固定为 {{chance|1/2}}。
+* 任何{{tr|armor}}、{{tr|accessories}}等的“[[{{tr|Dodge}}]]”机制。
+* [[{{tr|Ammunition items}}#{{tr|Ammo conservation}}|{{tr|Ammo conservation}}]]几率。
+* [[{{tr|Events}}]]的发生几率（如上所述，{{tr|Luck}}本身会被{{tr|Lantern Nights}}影响）。
+* {{tr|Health}}和{{tr|mana}}回复。
+* 除了{{tr|thorns}}以外的{{tr|Buff}}或{{tr|debuff}}效果。
+* 其他和随机几率有关的事情。
+
+== 巫师运气状态 ==
+[[{{tr|Wizard}}]]偶尔会告知{{tr|player}}其大体上的{{tr|Luck}}，这会取代其常规对话：
+
+{{transclude|{{tr|Wizard}}|section=luckstatusquotes|clr=y}}
+
+== 花絮 ==
+* 最初被引入时，不匹配的[[{{tr|Torch}}]]会导致负的{{tr|Torch}}{{tr|Luck}}值，降低最终的{{tr|luck}}值。在批评这一机制的 [https://web.archive.org/web/20200522014330/https://old.reddit.com/r/Terraria/comments/gn2rbf/new_luck_system_is_horrible Reddit 贴子]引起了极大的社区反响后，它在 {{eil|1.4.0.3}} 中被修改。这一变更使得{{tr|Wizard}}在低于 -0.42 {{tr|Luck}}时的对话无法在游戏内看到。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 装备{{tr|Lucky Horseshoe}}或其升级现在提供 +0.05 {{tr|luck}}。
+** 装备{{tr|Lucky Coin}}或其升级现在提供 +0.05 {{tr|luck}}。
+** 添加了{{tr|coin luck}}。}}
+{{history|Desktop 1.4.0.3|负面的{{tr|Torch luck}}最低只能将{{tr|Luck}}降低至 0。错误的{{tr|torch}}仍然会抵消正确{{tr|torch}}给{{tr|luck}}带来的加成。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Luck}}

@@ -1,0 +1,89 @@
+{{npc infobox
+| auto = 267
+| type = Flying Enemy
+| environment = The Crimson
+| Tissue Sample|{{modes|2–5|1–3|1–2}}|{{modes|wrap=n|66.67%|66.67%|{{master|50%}}}}
+| Crimtane Ore|{{modes|5–12|5–7|2–4}}|66.67%
+| Heart|1|50%
+}}
+{{about|[[{{tr|Brain of Cthulhu}}]]的{{tr|minion}}|{{tr|pet summoning item}}|{{tr|Creeper Egg}}|来自{{iwlink|mc|Minecraft|《我的世界》（Minecraft）}}的苦力怕（Creeper）套装|{{tr|Creeper set}}|{{tr|Solar Eclipse}}{{tr|enemy}}|{{tr|Eyezor}}}}
+
+'''{{tr|Creepers}}'''是一种像眼球的[[{{tr|enemies}}]]，20 只（40 只，如果在[[{{tr|For the worthy}}]]世界中）{{tr|Creepers}}会与[[{{tr|Brain of Cthulhu}}]]一起生成。它们会围绕 {{tr|the boss}} 高速飞行，不管 {{tr|the boss}} 传送到哪里都会跟随过去，充当盾牌。{{tr|Creepers}}被击杀后不会重生。先要击杀所有的{{tr|Creepers}}，随后{{tr|Brain of Cthulhu}}才有弱点可供攻击。
+
+如果{{tr|player}}低于最大[[{{tr|health}}]]，则{{tr|Creepers}}有 1/2 (50%) 的几率掉落[[{{tr|Heart}}]]。{{source code ref|v=1.4.0.5|name=heals|method=Terraria.NPC.NPCLoot_DropHeals}}
+
+== 备注 ==
+* 在{{eil|Expert Mode}}或{{eil|Master Mode}}中击中{{tr|player}}时，{{tr|Creepers}}总是造成以下九种{{tr|debuff}}之一：{{source code ref|v=1.4.4.9|name=debuffs|method=Terraria.Player.StatusFromNPC / Terraria.Player.AddBuff_DetermineBuffTimeToAdd}}
+: {| class="terraria sortable"
+! {{tr|Debuff}} !! 持续时间<ref name="debuffs"/><br/><small>(秒)</small> !! 概率
+|-
+| {{item|Poisoned}}
+| {{expert|{{#expr:floor(floor(  0.75 * 3.5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 3.5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 3.5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 3.5  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Darkness}}
+| {{expert|{{#expr:floor(floor(  0.75 * 2  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 2  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 2  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 2  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Cursed}}
+| {{expert|{{#expr:floor(floor(  0.75 * 0.5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 0.5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 0.5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 0.5  *60)*2.5)/60round2}} 秒}}
+| {{chance|2/81}}
+|-
+| {{item|Bleeding}}
+| {{expert|{{#expr:floor(floor(  0.75 * 5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 5  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Confused}}
+| {{expert|{{#expr:floor(floor(  0.75 * 1  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 1  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 1  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 1  *60)*2.5)/60round2}} 秒}}
+| {{chance|2/81}}
+|-
+| {{item|Slow}}
+| {{expert|{{#expr:floor(floor(  0.75 * 3.5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 3.5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 3.5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 3.5  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Weak}}
+| {{expert|{{#expr:floor(floor(  0.75 * 7.5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 7.5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 7.5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 7.5  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Silenced}}
+| {{expert|{{#expr:floor(floor(  0.75 * 1  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 1  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 1  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 1  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|-
+| {{item|Broken Armor}}
+| {{expert|{{#expr:floor(floor(  0.75 * 6.5  *60)*2)/60round2}}–{{#expr:floor(floor(  1.5 * 6.5  *60)*2)/60round2}} 秒}}<br>{{master|{{#expr:floor(floor(  0.75 * 6.5  *60)*2.5)/60round2}}–{{#expr:floor(floor(  1.5 * 6.5  *60)*2.5)/60round2}} 秒}}
+| {{chance|11/81}}
+|}
+
+== 小贴士 ==
+* {{tr|Creepers}}并不免疫如[[{{tr|On Fire!}}]]、[[{{tr|Frostburn}}]]或[[{{tr|Poisoned}}]]之类的[[{{tr|debuff}}]]，使用能施加这些{{tr|debuff}}的武器可以造成较高的{{DPS}}。
+* 使用具有穿透性的{{tr|weapon}}和[[{{tr|ammunition}}]]（例如[[{{tr|Jester's Arrow}}]]、[[{{tr|Unholy Arrow}}]]和[[{{tr|Hellfire Arrow}}]]）以及有溅射伤害的{{tr|weapon}}（例如[[{{tr|Grenade}}]]和[[{{tr|Molotov Cocktail}}]]）可以更有效处理{{tr|Creepers}}。
+* {{tr|Creepers}}不会掉落[[{{tr|souls}}]]、[[{{tr|Biome Key}}]]或者{{eil|Biome Key Mold}}。
+
+== 花絮 ==
+* 在{{tr|Classic Mode}}下，{{tr|Brain of Cthulhu}}本身不会掉落任何[[{{tr|Tissue Sample}}]]，只有{{tr|Creepers}}会。然而，两种{{tr|enemy}}都会掉落[[{{tr|Crimtane Ore}}]]。{{source code ref|v=1.4.4.9|name=drops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_BOC}}在专家模式下，{{tr|brain of cthulhu}}的[[{{tr|Treasure Bag}}#克苏鲁之脑|{{tr|Treasure Bag}}]]将掉落一些{{tr|Tissue Samples}}。
+* {{tr|Creepers}}有 1/2 的几率掉落一颗心，这是其他大多数{{tr|enemy}}的 1/12 几率的六倍。
+* {{tr|Creepers}}类似于[[{{tr|Moon Lord}}]]和他的[[{{tr|True Eye of Cthulhu}}]]的{{tr|Phantasmal Sphere attack}}。
+*{{tr|Creepers}}是少数在{{tr|Expert Mode}}中无法拾取掉落的{{tr|coins}}的{{tr|enemies}}之一。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Expert Mode}}中，掉落{{tr|Tissue Samples}}的数量从 4–10 减少到 1–3。{{tr|Master Mode}}中，新添了更低的掉落概率和掉落数量： 50% 概率掉落 1–2 {{tr|Tissue Samples}}。
+** {{tr|Expert Mode}}中，掉落{{tr|Crimtane Ore}}的数量从 11–25 减少到 5–7。{{tr|Master Mode}}中，新添了更低的掉落数量： 2–4 个{{tr|Crimtane Ore}}。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在在{{tr|Expert mode}}中可以造成各种各样的{{tr|debuff}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-main = yes
+| show-boss = yes
+}}
+
+{{language info|en=Creeper}}

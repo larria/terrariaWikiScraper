@@ -1,0 +1,48 @@
+{{item infobox
+| type = Potion
+| auto = 295
+| buffduration = {{etext|@@@@|e=1.4.0.1|small=y}}<br/>{{etext|{{duration|300}}|e=1.4.0.1|invert=y|small=y}}
+| tags = Loot
+}}
+
+'''{{tr|Featherfall Potion}}'''是一个[[{{tr|Buff potions}}|{{tr|buff potion}}]]，使用后会给予'''{{tr|Featherfall}}'''[[{{tr|Buffs}}|{{tr|buff}}]]。此{{tr|The buff}}会消除[[{{tr|fall damage}}]]，并将玩家的下落速度和[[{{tr|gravity}}]]降低 {{chance|2/3}}{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update}}，这会使得他们跳得更高、下落更慢。{{potionlength|{{etext|{{duration|600}}|e=1.4.0.1}} / {{etext|{{duration|300}}|e=1.4.0.1|invert=y}}}}
+
+此外，{{tr|buff}}激活时，按住 {{key|down}} 键会将下落速度和{{tr|gravity}}变回正常；按住 {{key|up}} 键会将下落速度和{{tr|gravity}}的减少百分比改为 90%。由于{{tr|gravity}}降低，玩家被攻击击中后被击退的距离也会增加。
+
+{{tr|The Featherfall buff}}也对[[{{tr|mounts}}]]和[[{{tr|Minecarts|link=y}}|{{tr|Minecarts}}]]生效（[[{{tr|Honeyed Goggles}}|{{tr|Bee Mount}}]]除外，{{tr|buff}}对它没有效果），且能在[[{{tr|reverse gravity}}]]期间生效。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Featherfall Potion|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Featherfall Potion}}和[[{{tr|Djinn's Curse}}]]是仅有的能在[[{{tr|Stoned}}]][[{{tr|debuff}}]]处于激活状态时防止{{tr|fall damage}}的物品。
+* 由于{{tr|Featherfall Potion and the Djinn's Curse}}提供的是同一种效果<ref name="update"/>，它们的效果无法互相叠加。
+
+== 小贴士 ==
+* 具有{{tr|Featherfall buff}}时，通过按住 {{key|up}}、使用[[{{tr|hooks}}]]钩住上方的[[{{tr|platform}}]]，并在到达钩住的位置前松开{{tr|hooks}}，可以达成几百格的跳跃高度。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Duration}}由 5 分钟提升至 10 分钟。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|修正了{{tr|featherfall potion}}在[[{{tr|Gravitation Potion}}|{{tr|reverse gravity}}]]时无效的问题。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，使用的是{{tr|Desktop}} 1.3.0.1 中更新过的{{tr|sprite}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Sprite updated}}为与{{tr|Desktop 1.3.0.1}} 一致。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Featherfall Potion}}

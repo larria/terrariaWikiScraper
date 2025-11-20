@@ -1,0 +1,214 @@
+{{infobox wrapper|direction=row
+|{{npc infobox|boxwidth=330px|tabs=y
+| auto = 87
+| namesub =
+| imagealt = [[File:Wyvern.png|300px|link=]]
+| image2 =
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| damage =
+| defense =
+|custom:Wyvern Kite|{{item|Wyvern Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}|4%
+| Soul of Flight|{{modes|5–10|10–20}}|100%
+| hardmode = yes
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+|{{npc infobox|boxwidth=310px
+| name = Arch Wyvern
+| imagesize = 290px
+| image2 =
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| ai = Worm AI
+| life = 8000
+| banner = yes
+| Soul of Flight|5–20|100%
+| Shadow Key|1|75% {{eicons|Zapinator|small=y}}
+| variant = yes
+| money = 0–{{coin|2gc}}
+}}
+}}
+{{distinguish|{{tr|Etherian Wyvern}}}}<!--中文特有：-->{{about|{{tr|Hardmode enemy}}|{{tr|weapon}}|{{tr|Flying Dragon (item)}}}}
+
+'''{{tr|Wyverns}}'''是在[[{{tr|Space}}]]生成的大型[[{{tr|Hardmode}}]][[{{tr|enemies}}]]。它们长得像是{{维基百科|Chinese dragon|中国龙}}，长且白，遵循[[{{tr|Worm AI}}]]。'''{{tr|Arch Wyverns}}'''是青铜色的{{eversions|Arch Wyvern|short}}独有种类。
+
+它们会追着下降的玩家一直到地面高度，并且能够穿过[[{{tr|block}}]]飞行，但普通{{tr|Wyverns}}不太会飞到地面以下。
+
+{{tr|Wyverns}}只会在玩家高于特定高度（参见[[{{tr|Space}}#{{tr|Notes}}|{{tr|Space}} § {{tr|Notes}}]]）且在[[{{tr|Dungeon}}]]{{tr|biomes}}之外才可生成。{{tr|Wyverns}}在[[{{tr|events}}]]期间不会生成，当玩家附近有至少一名 [[{{tr|NPC}}]] 时也可以阻止其生成。在已经有一只{{tr|Wyverns}}存活时不会生成另一只{{tr|A Wyvern}}，并且像大多数有能力穿过{{tr|block}}的{{tr|enemy}}一样，若玩家待在[[{{tr|safe wall}}]]前面，即使对于{{tr|Wyvern}}而言存在有效的生成点时它也无法生成。
+
+__TOC__
+{{-}}
+
+== 体节 ==
+* {{tr|Wyverns}}的体长一共有 15 节。第一节是其头部，第三节和第十节是腿，第二节、第四到第八、第十一和第十二节是身体，最后三节是尾部。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_006_Worms}}
+{{flexstart|style=gap:2em}}
+{{flexstart|item}}
+=== {{tr|Wyvern}} ===
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/damageBlock/defenseBlock}}
+{| class="terraria lined align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | 体节
+! {{tr|Damage}}
+! {{tr|Defense}}
+{{npc infobox|auto = 87|environment = Space}}
+{{npc infobox|auto = 88|environment = Space}}
+{{npc infobox|auto = 89|environment = Space}}
+{{npc infobox|auto = 90|environment = Space}}
+{{npc infobox|auto = 91|environment = Space}}
+{{npc infobox|auto = 92|environment = Space}}
+|}
+{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+{{flexend|item}}{{flexstart|item}}
+
+=== {{eil|Arch Wyvern|nolink=y}} ===
+{{npc infobox/options|view=table|cols=npcid/variant/damage/defense}}
+{| class="terraria lined align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | 体节
+! {{tr|Damage}}
+! {{tr|Defense}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Head
+| damage = 89
+| defense = 30
+| money = 0–{{coin|2gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1013
+}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Legs
+| damage = 70
+| defense =40
+| money = {{coin|1gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1014
+}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Body
+| damage = 70
+| defense = 40
+| money = {{coin|2gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1015
+}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Body 2
+| damage = 70
+| defense = 40
+| money = {{coin|2gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1016
+}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Body 3
+| damage = 70
+| defense = 40
+| money = {{coin|2gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1017
+}}
+{{npc infobox|notabs=y
+| name = Arch Wyvern Tail
+| damage = 70
+| defense = 30
+| money = {{coin|2gc}}
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Space
+| id = 1018
+}}
+|}
+{{npc infobox/options|reset}}
+{{flexend|item}}
+{{flexend}}
+
+== 备注 ==
+* 有可能在其头部在地图之外时击杀{{tr|Wyvern}}。因为其头部是掉落战利品的部位，这会导致损失其战利品。
+* 尽管栖息在天空中，但它们依然同所有[[{{tr|Worms}}|{{tr|worm}}类{{tr|enemies}}]]一样免疫[[{{tr|Lava}}]]，并且能无障碍地在其中游泳。
+* 在{{3DS}}上，{{tr|Wyverns}}不像大多数其他{{tr|enemies}}和 {{tr|bosses}}，它在所有玩家全部死亡后并不会消失。
+* {{tr|The Wyvern}}不会跟随玩家进入{{tr|underground}}，如果玩家进入了地表以下，它就会朝相反方向行进。
+
+== 小贴士 ==
+* 与任何多节{{tr|enemy}}一样，穿透性和爆炸性的武器能够一次击中多节，能比普通武器多造成数倍的普通伤害。
+** 用[[{{tr|bow}}]]或[[{{tr|Repeater}}]]加上[[{{tr|Jester's Arrow}}]]或[[{{tr|Holy Arrow}}]]是个击杀{{tr|the Wyvern}}的好办法。
+** 从 {{eil|1.4.0.1}} 开始，诸如[[{{tr|Blue Moon}}]]或[[{{tr|Sunfury}}]]之类的投掷类[[{{tr|flails}}]]对付{{tr|Wyverns}}非常有效，在[[{{tr|Classic Mode}}]]中如果瞄准得好可以一击干掉它。{{tr|The Sunfury}}能对多个体节造成[[{{tr|On Fire!}}]]，只要少数几次击中就能造成大量伤害。
+** 其他对击杀{{tr|Wyverns}}和其他{{tr|worm}}很有用的物品是[[{{tr|Shotgun}}]]或{{eil|Onyx Blaster}}（用[[{{tr|Explosive Bullet}}]]）、[[{{tr|Nimbus Rod}}]]、和{{eil|Medusa Head}}。
+** 得自{{eil|Crimson Mimic|s}}的{{eil|Life Drain}}也是个非常强大的选项，因为它可以同时从多个体节吸取生命。
+* 躲避{{tr|Wyvern}}是非常重要的，因为它能造成可观的伤害。
+** 在高海拔的[[{{tr|space}}]]中与{{tr|Wyvern}}战斗更容易，因为低重力有助于躲避其攻击。
+*** 在{{tr|Space}}中使用[[{{tr|Gravitation Potion}}]]并在遭遇{{tr|Wyvern}}时让自身自由坠落同时水平移动可以让玩家和{{tr|Wyvern}}的速度几乎一样。加上足够的{{tr|movement speed buffs}}可以和它一样甚至超过它。而在{{tr|Wyvern}}尾随玩家时用诸如[[{{tr|Golden Shower}}]]这样的{{tr|piercing weapons}}攻击则可以快速搞定它，即使在{{eil|Expert Mode}}或{{eil|Master Mode}}亦然。
+* 在[[{{tr|Hardmode}}]]早期击杀{{tr|Wyverns}}可能会比较困难，所以推荐远离它们，直到能得到更好的[[{{tr|armor}}]]和穿透性[[{{tr|weapons}}]]为止。
+* [[{{tr|Minecart}}]]和[[{{tr|Unicorn Mount}}]]都比{{tr|a Wyvern}}更快。
+* {{tr|Wyvern}}头部的[[{{tr|defense}}]]要低于其尾部和身体{{tr|segments}}，使其在冲向玩家时更容易受到伤害。但是头部也会造成两倍于身体其余部分接触时的伤害，使得直面{{tr|Wyvern}}头部更加危险。
+* 由于[[{{tr|Water Candle}}]]的效果在高海拔地区大大增强，放一个在附近可以大大加快刷[[{{tr|Souls of Flight}}]]的速度。
+** 此外，{{tr|Water Candles}}还会为{{tr|Wyverns}}提供一次额外的生成尝试，使其生成几率几乎翻倍。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+
+== 花絮 ==
+* 尽管其名字{{维基百科|Wyvern|t=飞龙}}这个词指的是一种有两只翅膀和两条后腿但没有手臂或前腿的西方龙，但《{{tr|Terraria}}》中{{tr|Wyverns}}的外形却是按照{{维基百科|Chinese dragon|t=中国龙}}描绘的，四足而无翅。
+* [[{{tr|Angler}}]][[{{tr|Angler}}#{{tr|Quests}}|在一个任务中]]提到{{tr|Wyverns}}生下来的时候是一种名叫{{item|Wyverntail|s|size=22px}}的蝌蚪并由此成长起来。
+* {{icon/old-gen}}{{tr|Wyverns}}受[[{{tr|knockback}}]]影响，而{{tr|Arch Wyverns}}不。
+* {{tr|The Wyvern}}和 2001 年的日本成长故事奇幻动画电影{{维基百科|b=y|Spirited Away|千与千寻}}中的小白龙的龙形态很相似（[https://popcultureplaypen.files.wordpress.com/2011/04/haku.jpg 图片]）。
+* 根据[[:File:Wyvern (card).png|{{tr|the Collector's Edition}}的集换式卡牌]]，{{tr|Wyverns}}能说话且曾经是善良的，但[[{{tr|Corruption}}]]让它们变得富有攻击性。
+* {{eicons|1.4.0.1}}{{tr|Hardmode}}开始后，有时候会在背景中看到有{{tr|a Wyvern}}在飞。
+** 背景中还会出现{{tr|Wyvern}}形状的云。
+* [[{{tr|Painter}}]]所出售的[[{{tr|paintings}}]]{{item|Sky Guardian}}中描绘了{{tr|Wyvern}}。
+* 根据其[[{{tr|Bestiary}}]]条目，{{eil|Phantasm Dragon|s}}是被强大魔法召唤出来的{{tr|Wyverns}}灵魂。
+{{bestiary}}
+
+== 图库 ==
+<gallery widths="250" heights="160">
+File:Ambience Wyvern.gif|{{eicons|1.4.0.1}} [[{{tr|Ambient entities}}|{{tr|background}}]]中飞行{{tr|Wyvern}}的动画。
+File:Wyvern cloud.png|{{eicons|1.4.0.1}} 背景中看到的{{tr|Wyvern}}形状的云。
+File:Site-logo-hallowed.png|[[{{tr|Official Terraria Forums}}]]（{{tr|Hallowed}}风格）上显示的{{tr|Wyvern}}和{{tr|Pixie}}。
+File:Wyvern Kite.gif|使用中的[[{{tr|Kites}}|{{tr|Wyvern Kite}}]]。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Wyvern Kite}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}旧外观为：[[File:Wyvern (old).png|299px]]}}
+{{history|Desktop 1.3.0.1|添加了新音效。}}
+{{history|Desktop 1.1.1|
+** 现在不那么常见了。
+** 现在不太会在靠近地面的地方生成。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 移除了{{tr|Arch Wyvern}}。
+** {{tr|Wyvern}}不再受{{tr|knockback}}影响。
+** 添加了{{tr|Desktop 1.3.0.1}} 的音效。}}
+{{history|Console 1.02|{{tr|Arch Wyvern}}{{tr|sprite updated.}}旧的外观是：[[File:Arch Wyvern (old).png|299px]]}}
+{{history|Console-Release|{{tr|Introduced}}，伴随着独有的{{tr|Arch Wyvern}}和{{tr|Desktop 1.1.1}} 的更改。}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** 移除了{{tr|Arch Wyvern}}。
+** 添加了{{tr|Desktop 1.3.0.1}} 的音效。}}
+{{history|Mobile 1.2.6508|{{tr|Arch Wyvern}}的{{tr|sprite}}更新为和{{tr|Console 1.02}} 一致。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced}}，伴随着独有的{{tr|Arch Wyvern}}和{{tr|Desktop 1.1.1}} 的更改。}}
+{{history|3DS-Release|{{tr|Introduced}}，伴随着独有的{{tr|Arch Wyvern}}和{{tr|Desktop 1.1.1}} 的更改。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Worms}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Wyvern}}

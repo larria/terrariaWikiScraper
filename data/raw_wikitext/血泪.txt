@@ -1,0 +1,42 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| type = Event summon
+| auto = 4271
+| sounduse = Roar 0.wav
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Bloody Tear}}'''是一种[[{{tr|Consumables}}#{{tr|Summoning items}}|{{tr|event summoning item}}]]，可用于召唤[[{{tr|Blood Moon}}]]。它仅可在[[{{tr|night}}]]使用；试着在白天使用它不会召唤出{{tr|Blood Moon}}也不会消耗掉该{{tr|item}}。与此类似，{{tr|Bloody Tear}}也无法在{{tr|Blood Moon}}期间使用。
+
+{{tr|The Bloody Tear}}仅能在{{tr|a Blood Moon}}期间由非[[{{tr|Statues}}]]生成的{{tr|enemies}}掉落（也就是说，在{{tr|the Blood Moon}}结束后杀死的{{tr|enemies}}不会掉落它），或是由[[{{tr|The Groom}}]]和[[{{tr|The Bride}}]]在任何时间掉落。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBloodMoonFishing}}{{tr|drop rates}}为：普通{{tr|Blood Moon enemies}}为 {{chance|1/100}} 几率，[[{{tr|Zombie Merman}}]]、[[{{tr|Blood Eel}}]]、和[[{{tr|Hemogoblin Shark}}]]为 {{chance|1/25}} 几率，{{tr|The Groom}}和{{tr|The Bride}}为 {{chance|1/5}} 几率。
+
+除此之外，有 {{chance|1/2}} / {{expert|{{chance|1/1}}}} 的几率在任何时间从[[{{tr|Dreadnautilus}}]]身上掉落。
+
+== 备注 ==
+* 如果{{tr|Bloody Tear}}在[[{{tr|moon phase}}]]处于[[{{tr|New Moon}}]]时使用，那么{{tr|the moon phase}}会被设置为[[{{tr|Waxing Crescent}}]]。{{source code ref|v=1.4.3.6|method=Terraria.Player.ItemCheck_UseEventItems}}
+* 在[[{{tr|Frost Moon}}]]或[[{{tr|Pumpkin Moon}}]]期间尝试使用{{tr|Bloody Tear}}不会发生[[{{tr|Blood Moon}}]]，但仍会消耗{{tr|Bloody Tear}}。
+
+== 小贴士 ==
+* 如果玩家想要一把[[{{tr|Slap Hand}}]]，他们可以拿着{{tr|Bloody Tear}}直至找到[[{{tr|Skeleton Merchant}}]]。然后他们可以使用{{tr|Bloody Tear}}，让{{tr|Skeleton Merchant}}出售{{tr|Slap Hand}}。
+* 因为在[[{{tr|New Moon}}]]的夜晚使用{{tr|Bloody Tear}}会使{{tr|Moon Phase}}变为[[{{tr|Waxing Crescent}}]]，因此它可以用于更快地取得[[{{tr|Moon phase}}|与月相相关的内容]]。
+
+== 花絮 ==
+* {{tr|tooltip}}致敬了{{维基百科|b=y|Castlevania II: Simon's Quest|t=恶魔城II 诅咒的封印}}，每当夜幕降临时，游戏都会显示相同的文本。该物品的名称来自“恶魔城 II”中的曲目“Bloody Tears”。
+** 此{{tr|tooltip}}也兼做[[{{tr|Mechdusa}}]]生成前的[[{{tr|status message}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|在{{tr|Graveyards}}中生成的{{tr|The Brides and Grooms}}现在即使不在{{tr|Blood Moon}}期间也会掉落{{tr|Bloody Tears}}。}}
+{{history|Desktop 1.4.1|提高掉落率。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Bloody Tear}}

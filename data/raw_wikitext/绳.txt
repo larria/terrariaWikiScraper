@@ -1,0 +1,88 @@
+{{item infobox
+| name = Ropes
+| imagealt = [[File:Rope.png]] [[File:Vine Rope.png]] [[File:Silk Rope.png]] [[File:Web Rope.png]]<hr/>
+[[File:Rope (placed).png]] [[File:Vine Rope (placed).png]] [[File:Silk Rope (placed).png]] [[File:Web Rope (placed).png]]
+| type = Consumable / Crafting material
+| auto = 965
+| width = 1
+| height = 1
+| buy = @@@@ {{note|paren=y|仅{{tr|regular Rope}}}}
+| sell = @@@@ {{note|paren=y|除{{tr|Vine Rope}}外}}
+| tags = Drop / Loot
+| idshow = 965, 2996, 3077, 3078
+| idtileshow = 213, 353, 365, 366
+| cargo = no
+}}
+{{for|操作上类似的{{tr|items}}|{{tr|Streamers}}|{{tr|Chain}}}}
+[[File:Rope (demo).gif|right|frame|正在使用{{tr|Rope}}的玩家。]]
+
+'''{{tr|Ropes}}'''是主要用于提供快速垂直机动性的可放置物品。它们可以在任何方向上紧挨着[[{{tr|blocks}}]]放置，或者在存在[[{{tr|Background Walls}}]]的地方也可以放置在半空中。放置后，可以通过按{{key|up}}和{{key|down}}使用{{tr|Ropes}}在其上上下移动。[[{{tr|Streamers}}]]和[[{{tr|Chain}}]]的操作与{{tr|Rope}}完全相同，但不能制作成[[{{tr|Rope Coil}}]]。
+
+所有种类的{{tr|Rope}}操作都是相同的，但{{tr|Silk Ropes}}和{{tr|Web Ropes}}不怕掉进[[{{tr|lava}}]]，而不像{{tr|normal Ropes}}和{{tr|Vine Ropes}}那样会如同[[{{tr|Torch}}]]一般被{{tr|lava}}移除。
+
+各种{{tr|ropes}}以不同的方式获得：
+* '''{{tr|Rope}}'''可以随机在[[{{tr|Chest}}]]和[[{{tr|Pot}}]]中找到、可作为[[{{tr|Slime}}]]的{{eil|Bonus drops|bonus drop}}掉落、或从[[{{tr|Merchant}}]]和[[{{tr|Skeleton Merchant}}]]处以每个 {{iteminfo|Rope|buy}} 的价格购买。
+* '''{{tr|Vine Rope}}'''是通过装备[[{{tr|Guide to Plant Fiber Cordage}}]]时摧毁[[{{tr|vines|link=y}}|{{tr|vines}}]]而得到的。
+* '''{{tr|Silk Rope}}'''是在[[{{tr|Loom}}]]处用一个[[{{tr|Silk}}]]制作的。
+* '''{{tr|Web Rope}}'''是[[{{tr|by hand}}]]用一个[[{{tr|Cobweb}}]]制作的。
+
+视觉上，玩家似乎是用一种带有轮子的机械工具来沿着{{tr|Rope}}移动，就像在铁轨上移动那样。在使用{{tr|rope}}时此工具会自动出现，不作为单独的{{tr|item}}存在，并且从游戏一开始就可用。
+
+在{{tr|Rope}}上的垂直{{tr|movement speed}}等于自由落体速度，但是通过{{tr|Rope}}向下移动碰到地面'''不会'''导致[[{{tr|fall damage}}]]。通过水平相邻放置的{{tr|rope}}也可以进行{{tr|Horizontal movement}}，但要慢得多。{{tr|Rope}}可以放置在已放置的{{tr|Rope}}顶部，这将让{{tr|rope}}的总长度向下延伸，这样玩家就不需要实际处于整个绳条的最下方。
+
+所有种类的{{tr|Rope}}都可以制作成各自的[[{{tr|Rope Coils}}]]，这是一种{{tr|consumable items}}，可用来将{{tr|Ropes}}放置到无法到达的位置。
+
+== 类型 ==
+{{item infobox/options|view=table|imagemode=placed|cols=item2cells-anchor-nolink/imageplaced/idtile/buy/sell}}
+{| class="terraria" style="text-align:center;"
+! colspan=2 | 类型 !! 放置状态 !! [[{{tr|Tile IDs}}|{{tr|Tile ID}}]] !! 买入 !! 卖出
+{{item infobox | auto = 965  | type = Consumable | width = 1 | height = 1 | tags = Drop / Loot / buy / vendor:Merchant / vendor:Skeleton Merchant }}
+{{item infobox | auto = 2996 | type = Consumable | width = 1 | height = 1 | tags = Drop / Loot}}
+{{item infobox | auto = 3077 | type = Consumable | width = 1 | height = 1 | tags = Drop / Loot}}
+{{item infobox | auto = 3078 | type = Consumable | width = 1 | height = 1 | tags = Drop / Loot}}
+|}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE % Rope|expectedrows=2}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE %Rope|expectedrows=4}}
+
+== 备注 ==
+* 在{{tr|rope}}上的上升速度为 {{mph|41}}、下降速度为 {{mph|51}}、水平速度是 {{mph|5}}（虽然在游戏中显示的是 {{mph|0}}，但其速度为 7.55 英尺/秒）。
+* {{tr|rope}}的所有种类都有“+3 范围”属性，让物品能够从更远的地方使用。这''不会''影响放置的{{tr|ropes}}的使用。
+* 所有类型的{{tr|rope}}都不能用[[{{tr|Actuator}}]]关闭。
+* {{3DS version}}中的一个小故障会导致在将第八格{{tr|rope}}添加到一根七格长的垂直{{tr|ropes}}上时{{tr|rope}}会向下倍增而不花费额外的{{tr|rope}}。不过，倍增是有限的，最终会停止。
+
+== 小贴士 ==
+* {{tr|Rope}}非常适合建造[[{{tr|Hellevator}}]]，因为玩家能以和自由落体相同的速度下降，并且以相当快的速度上升。它很容易获得，可以反复在{{tr|Hellevator}}顶部放置来让{{tr|rope}}一直向下延伸。注意，像[[{{tr|Torches}}]]之类的放置的物品可能会打断放置。
+* 即使{{tr|rope}}的顶部没有固定在任何东西上，玩家也依然可以放置{{tr|ropes}}，甚至可以向天空延伸，这可以用来轻松到达[[{{tr|Floating Island}}]]：向上建造{{tr|rope}}柱同时向天空中攀爬。同样地，探索[[{{tr|Ocean}}]]深处时，{{tr|rope}}也可用于快速上升到水面上。
+* 飞到{{tr|rope}}上并继续沿{{tr|rope}}移动会维持着飞行速度。
+* 制作{{tr|Silk Rope}}对资源的利用要比制作{{tr|Web Rope}}更有效率：30 个{{tr|Web Ropes}}需要 10 个{{tr|Cobwebs}}，但 30 个{{tr|Silk Ropes}}只需要 7 个{{tr|Cobwebs}}（制作成{{tr|Silk}}）。
+** 但是，{{tr|Silk and Silk Rope}}都需要{{tr|Loom}}才能{{tr|craft}}，而{{tr|Web Rope}}不需要任何[[{{tr|Crafting stations}}|{{tr|crafting station}}]]就能制作。
+* 尽可能将所有{{tr|Ropes}}转换为{{tr|Rope coils}}将能携带十倍量的{{tr|Rope}}，并且如果有必要，可以将它们重新制作成{{tr|normal Rope}}。
+
+== 花絮 ==
+{{float file box|width=90px|[[File:PlayerPulley.gif]]|“滑车”（pulley）工具}}
+* 玩家沿着{{tr|rope}}移动时会自动使用的{{tr|mechanical tool}}在内部称为 <code>PlayerPulley</code>（玩家滑车）。
+
+== 另见 ==
+* {{eil|Snake Charmer's Flute}}，提供类似机动性的物品
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可以与[[{{tr|Platforms}}]]和[[{{tr|Minecart Track}}]]相交。}}
+{{history|Desktop 1.3.0.1|
+** 范围由 +2 增加到 +3。
+** 引入新品种{{tr|rope}}：{{tr|Web Rope}}、{{tr|Silk Rope}}、和{{tr|Vine Rope}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Ropes}}

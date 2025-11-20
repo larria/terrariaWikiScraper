@@ -1,0 +1,44 @@
+{{item infobox
+| damage = @@@@ {{eicons|1.4.0.1|small=y}} / 52 {{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 1259
+| tags = hardmode /drop
+| listcat = flails
+| idprojectile = 247, 248
+}}
+{{drop infobox|style=clear:right}}
+[[File:Flower Pow (demo).gif|frame|{{eicons|1.4.0.1}} 使用中的{{tr|Flower Pow}}。]]
+
+'''{{tr|Flower Pow}}'''是一个[[{{tr|Hardmode}}]][[{{tr|flail}}]]，由[[{{tr|Plantera}}]]以{{eicons|1.3.0.1}} {{chance|1/7}} / {{eicons|1.3.0.1|invert=y}} {{chance|1/6}} 的几率掉落。除了通常的{{tr|flail}}攻击以外，它还能向{{tr|enemy}}发射花瓣。花瓣{{tr|projectiles}}造成{{tr|weapon}}{{tr|base damage}}的 {{percent|33.33%}}({{#expr:floor({{iteminfo|Flower Pow|damage}}/3)}} 点{{tr|damage}})和一半的[[{{tr|knockback}}]]（{{tr|base knockback}}为 {{kb|3.25}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_015_Flails}}按住{{key|use}}时，{{tr|Flower Pow}}就会以稳定的速度向视线范围内的{{tr|enemy}}发射花瓣。投掷时使其落在实体[[{{tr|block}}]]上会大幅提高花瓣的发射频率。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* 当站在 1 个{{tr|block}}宽的阻挡（无论是在{{tr|player}}上方、下方还是左右侧）前时，{{tr|Flower Pow}}丢出后能穿过墙，使得它能够安全地攻击{{tr|enemy}}。
+* 在部分{{3DS version}}中，{{tr|Flower Pow}}不向{{tr|enemies}}发射花瓣，使得有几率造成[[{{tr|Confused}}]]的[[{{tr|Dao of Pow}}]]是更好的选择。{{verify}}
+
+== 花絮 ==
+* 它的名称来自于“{{wikipedia|Flower power|花之力（Flower power）}}”口号，该口号用于上世纪六七十年代的和平运动。
+* 它发射的花瓣类似于{{tr|Plantera}}第一阶段发射的种子。
+* {{tr|Flower Pow}}是能够额外地发射{{tr|projectiles}}的三种{{tr|flails}}之一，另外两种是[[{{tr|The Drippler Crippler}}]]和[[{{tr|Flairon}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 伤害翻倍，由 65 增加至 130。
+** 重做了{{tr|flails}}的功能。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 52 增加至 65。
+** 掉落几率由 {{chance|1/6}} 降低至 {{chance|1/7}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Flails}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-main = yes
+| show-meleeother = yes
+}}
+
+{{language info|en=Flower Pow}}

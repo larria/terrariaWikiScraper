@@ -1,0 +1,118 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| name = Dragonflies
+| type = Critter
+| imagealt = [[File:Black Dragonfly.gif|link=]] [[File:Blue Dragonfly.gif|link=]] [[File:Green Dragonfly.gif|link=]] [[File:Orange Dragonfly.gif|link=]] [[File:Red Dragonfly.gif|link=]] [[File:Yellow Dragonfly.gif|link=]] [[File:Gold Dragonfly.gif|link=]]
+| environment = Surface
+| id = 595–601
+| auto = 595
+| cargo = no
+}}
+<!--
+we need these infoboxes for cargo storage
+-->{{npc infobox/options|view=void}}<!--
+-->{{npc infobox
+| name = Black Dragonfly<!--Don't remove |name-->
+| image = Black Dragonfly.gif
+| type = Critter
+| environment = Desert
+| auto = 595
+}}<!--
+-->{{npc infobox
+| name = Blue Dragonfly<!--Don't remove |name-->
+| image = Blue Dragonfly.gif
+| type = Critter
+| environment = Forest
+| auto = 596
+}}<!--
+-->{{npc infobox
+| name = Green Dragonfly<!--Don't remove |name-->
+| image = Green Dragonfly.gif
+| type = Critter
+| environment = Forest
+| auto = 597
+}}<!--
+-->{{npc infobox
+| name = Orange Dragonfly<!--Don't remove |name-->
+| image = Orange Dragonfly.gif
+| type = Critter
+| environment = Desert
+| auto = 598
+}}<!--
+-->{{npc infobox
+| name = Red Dragonfly<!--Don't remove |name-->
+| image = Red Dragonfly.gif
+| type = Critter
+| environment = Forest
+| auto = 599
+}}<!--
+-->{{npc infobox
+| name = Yellow Dragonfly<!--Don't remove |name-->
+| image = Yellow Dragonfly.gif
+| type = Critter
+| environment = Desert
+| auto = 600
+}}<!--
+-->{{npc infobox/options|reset}}
+
+'''{{tr|Dragonflies}}'''是较小的罕见[[{{tr|critters}}]]，可在[[{{tr|surface}}]]找到。靠近它们时，它们会向上并远离玩家飞行一小段距离。
+
+{{tr|Dragonflies}}仅可在[[{{tr|day}}]]期间，[[{{tr|wind}}]]速低于 20 {{mph}}{{source code ref|v=1.4.4.9|property=Terraria.NPC.TooWindyForButterflies}}时生成，并具有下列限制：若玩家在[[{{tr|town}}]]中，{{tr|dragonflies}}仅能在下[[{{tr|rain}}]]时生成；否则，它们就仅能在不下{{tr|rain}}时生成。此外，在以生成{{tr|tile}}为中心 61×41 格的矩形范围内必须至少有一棵[[{{tr|cattail}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.FindCattailTop|t=游戏会按从上到下，从左到右的顺序搜索{{tr|cattail}}顶部；如果有多个{{tr|cattails}}，第一棵{{tr|cattails}}会被初始选中；对于后续的每棵{{tr|cattails}}，各有 <code>1/i</code> 的几率替代所选的{{tr|cattail}}，其中 <code>i</code> 初始为 2，每次成功替代后会增加 1。}}{{tr|The dragonfly}}会在所选的{{tr|cattail}}上生成，而非初始的生成{{tr|tile}}。因此，它们能够在屏幕上生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}黑、橙、黄色的{{tr|variants}}能够在[[{{tr|Sand Block}}]]附近的{{tr|cattails}}上生成（通常在[[{{tr|Desert}}]]中），而蓝、绿、红色的{{tr|variants}}能够在纯净的[[{{tr|Grass}}]]或[[{{tr|Mowed grass}}]]附近的{{tr|cattails}}上生成（通常在[[{{tr|Forest}}]]中）。{{source code ref|v=1.4.4.9|method=Terraria.NPC.RollDragonflyType}}注意这是由初始的生成{{tr|tile}}决定的，而非{{tr|cattail}}所生长于的{{tr|tile}}。例如，{{tr|Red Dragonfly}}可以在{{tr|Sand Block}}上生长的{{tr|cattail}}处生成，只要附近有{{tr|Grass tile}}即可。
+
+{{critter info|plural=y|gold=y
+|cagename=[[{{tr|Dragonfly Jars}}]]
+|statuename=[[{{tr|Dragonfly Statue}}]]
+|goldname=[[{{tr|Gold Dragonfly}}]]
+}}
+
+== 类型 ==
+{{options/set|item|mode=table}}<!--
+-->{{item infobox/options|view=table|cols=item/rarity/sell/baitpower/makenpcid/col:notes}}
+{| class="terraria sortable lined align-center"
+! colspan= 2 | {{tr|Dragonfly}}
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! data-sort-type="number" style="line-height: 1.25" | [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! 生成
+{{item infobox|auto = 4340 |nolink= | col:notes = {{chance|1/400}} 几率代替另一只{{tr|Dragonfly}}生成。|cargo=no}}<!-- cargo store on its own page
+-->{{options/set|item|nolink=y}}
+{{item infobox|auto = 4334 | col:notes = [[{{tr|Sand Block}}]]}}
+{{item infobox|auto = 4335 | col:notes = [[{{tr|Grass}}]]/[[{{tr|Mowed grass}}]]}}
+{{item infobox|auto = 4336 | col:notes = [[{{tr|Grass}}]]/[[{{tr|Mowed grass}}]]}}
+{{item infobox|auto = 4337 | col:notes = [[{{tr|Sand Block}}]]}}
+{{item infobox|auto = 4338 | col:notes = [[{{tr|Grass}}]]/[[{{tr|Mowed grass}}]]}}
+{{item infobox|auto = 4339 | col:notes = [[{{tr|Sand Block}}]]}}
+|}{{options/reset|item}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE %Dragonfly|expectedrows=9}}
+
+== 备注 ==
+* 在 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|worlds}}，[[{{tr|layers}}|高度]]不会影响{{tr|dragonflies}}的生成。
+* {{tr|Dragonflies}}能够随时间加速并轻易地快过玩家（即使玩家装备了[[{{tr|Hermes Boots}}]]或其升级）。
+** 它们可达到的最高速度非常高，最高为 {{mph|16 pixels}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_114_Dragonflies}}
+
+== 小贴士 ==
+* 虽然{{tr|cattails}}仅能天然生长于{{tr|water}}中，移除{{tr|water}}并不会摧毁它们。可以利用这一点来让{{tr|dragonflies}}的生成几率更高，因为移除{{tr|water}}会阻止与{{tr|water}}相关的生物的生成。
+* 如果要刷{{tr|dragonflies}}，建议仅保留一棵{{tr|cattail}}，将所有其他的移除掉，然后在该{{tr|cattail}}的左侧（或右侧）约 55 格处等待。这一棵{{tr|cattail}}即可允许屏幕外的合适{{tr|tiles}}生成{{tr|dragonflies}}。玩家也可以在屏幕边缘建造很高的墙壁来挡住其他{{tr|enemies}}靠近（它们很快会因此而消失），并在{{tr|cattail}}周围建造天花板来阻止{{tr|dragonflies}}飞走。
+* 由于{{tr|dragonflies}}可达到的速度非常高，在试图抓{{tr|dragonfly}}时，玩家应该留出一点距离来加速。
+
+== 花絮 ==
+{{bestiary|Blue Dragonfly|alias={{tr|dragonflies}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Dragonflies}}

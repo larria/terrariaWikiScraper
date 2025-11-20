@@ -1,0 +1,50 @@
+{{buff infobox
+| image = [[File:Beetle Might.gif|link=]]
+| type = Buff
+| cause = {{item|image=Beetle Scale Mail.png|Beetle armor|{{tr|Beetle armor}}{{tr|set bonus}}|note=(用[[{{tr|Beetle Scale Mail}}]])|wrap=y}}
+| effects = 在战斗中提高近战伤害和速度
+| duration = 当在战斗中
+}}
+
+'''{{tr|Beetle Might}}'''是当玩家穿着带有{{tr|Beetle Scale Mail}}的全套[[{{tr|Beetle armor}}]]的情况下造成伤害时给予玩家的[[{{tr|Buffs}}|{{tr|Buff}}]]。穿着此{{tr|armor}}伤害[[{{tr|enemy}}]]会得到 10% 的{{tr|damage}}和{{tr|melee speed}}提升。如果战斗持续的足够久，这会上升到 20% 并且最终会达到 30%。强度的每次增加都会让另一只{{tr|beetle}}在玩家周围飞行。玩家停止造成伤害后，{{tr|the beetles}}会挨个消失，并会失去相应的战斗奖励。
+
+== 等级 ==
+{{infobox wrapper|direction=row|float=none
+|{{buff infobox
+| auto = 98
+| effects = 在战斗中提高近战伤害和速度
+| duration = 当在战斗中
+}}
+|{{buff infobox
+| auto = 99
+| effects = 在战斗中提高近战伤害和速度
+| duration = 当在战斗中
+}}
+|{{buff infobox
+| auto = 100
+| effects = 在战斗中提高近战伤害和速度
+| duration = 当在战斗中
+}}
+}}
+
+== 备注 ==
+* 活跃{{tr|beetles}}的数量取决于一个隐藏值：<code>beetleCounter</code>，它与对{{tr|enemies}}造成的伤害成比例增加。每次击中{{tr|enemy}}时，<code>beetleCounter</code> 都会增加<code>所造成伤害 * factor</code>，其中 <code>factor</code> 是 3（如果无激活{{tr|beetles}}）、2（如果激活了一只{{tr|beetle}}）、或 1（如果激活了两只{{tr|beetles}}）。
+** 当 <code>beetleCounter</code> 达到 400 时会得到第一只{{tr|beetle}}，达到 1600 时得到第二只，达到 6200 时得到第三只。
+* <code>beetleCounter</code> 在每个{{tr|game tick}}{{tick}}都会减少 <code>3 + ticks / 10</code>，其中 <code>ticks</code> 是穿戴者上次造成伤害以来经过的{{tr|game ticks}}数。这意味着要将<code>beetleCounter</code>维持在当前水平需要的最低 {{DPS}} 为 180。由于这个衰减速率，当使用弱{{tr|weapon}}对抗高防御的{{tr|enemy}}时，可能需要非常长时间（甚至不可能）才能得到另一只{{tr|beetle}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Beetle's Might}}的充能的持续时间延长了约 33%，现在充能到{{tr|Beetle's Might}} 3 级所需的时间/伤害略有减少。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.04|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Beetle Might}}

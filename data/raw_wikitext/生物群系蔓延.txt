@@ -1,0 +1,174 @@
+{{for|如何阻止{{tr|biomes}}蔓延的指南|指南:维护世界的纯净度}}
+
+[[{{tr|evil biome}}]]和[[{{tr|the Hallow}}]]不像所有其他{{tr|biomes}}，它们可以自行蔓延至其他区域。它们会慢慢地将其{{tr|biome}}特有的{{tr|tiles}}附近的某些易感{{tr|tiles}}转换（“感染”）为它们相应的{{tr|biome}}对应物，从而扩大自身{{tr|biome}}的范围。{{tr|biome spread}}的确切规则对于三种传染性{{tr|biomes}}有一些细微不同，如下所述。
+
+这三种{{tr|biomes}}可以统称为“传染性{{tr|biomes}}”。易被感染的{{tr|Blocks}}和{{tr|walls}}则称之为“可腐化的”，在任何情况下都不会被传染的则称为“不可腐化的”。''可''被感染但尚''未''被感染的{{tr|Blocks}}和{{tr|walls}}则称为“纯净的”。
+
+{{tr|Biome spread}}在世界创生之后就立即开始了，在首次打败[[{{tr|Wall of Flesh}}]]（即，[[{{tr|Hardmode}}]]开始后）后会大大增强并提速，在打败了[[{{tr|Plantera}}]]则会再次减缓。一旦{{tr|Hardmode}}开始，世界的{{tr|evil biome}}和{{tr|the Hallow}}的蔓延就几乎没有限制，如果玩家不加以努力，它们最终将会占领它们之间的所有地区。
+
+此过程是游戏的“{{tr|tile}}更新周期”的一部分：每个{{tr|game tick}}{{tick}}中，游戏都会选择少量{{tr|tiles}}进行更新，这涵盖了包括{{tr|biome spread}}在内的若干流程。[[{{tr|Layers}}|水平面]]上方和下方的{{tr|tile}}是分开选择的；作为近似，每块“{{tr|surface}}”{{tr|tiles}}平均大约每 140 秒更新一次，而每块“{{tr|underground}}”{{tr|tiles}}平均大约每 830 秒更新一次。（也就是说，地面以上的{{tr|tiles}}的更新频率大致上是地下{{tr|tiles}}的六倍，因此{{tr|biome spread}}在地面之上也会相应地快这么多。）由于随机选择方法，即使这些平均值也是近似的，对于给定的单个{{tr|tile}}，其更新间隔时间长度可能会有很大的不同。当更新已被感染的{{tr|tile}}时，它会被视为潜在的“源{{tr|tile}}”，可以在一次更新中感染多个其他{{tr|tiles}}。
+
+== 蔓延性{{tr|tiles}} ==
+只有以下{{tr|biome}}的{{tr|blocks}}和{{tr|plants}}能够转化其附近的易感{{tr|tiles}}。{{tr|Blocks}}和{{tr|plants}}可以转化{{tr|blocks}}、{{tr|plants}}、和[[{{tr|walls}}]]，而{{tr|walls}}只能转化其他{{tr|walls}}（后者参见[[#{{tr|Background Walls}}|下文]]）。三种{{tr|biomes}}都不能转化另外两种的{{tr|blocks}}，{{tr|grass}}例外（细节参见[[#{{tr|Grass}}|下文]] ）。
+{| class=terraria
+! {{tr|Corruption}} !! {{tr|Crimson}} !! {{tr|Hallow}}
+|-
+| {{item|Corrupt grass}} || {{item|Crimson grass}} || {{item|Hallowed grass}}
+|-
+| {{item|Ebonstone Block}} || {{item|Crimstone Block}} || {{item|Pearlstone Block}}
+|-
+|  || {{tr|Crimson plants}}{{note|像是{{tr|grass}}和{{tr|flowers}}}} || {{tr|Hallowed plants}}{{note|像是高{{tr|grass}}和{{tr|flowers}}}}
+|-
+|  || {{item|Vicious Mushroom}} ||
+|-
+| {{item|Corruption thorny bushes|link={{tr|Thorny bushes|link=y}}|image=Corruption Thorny Bush.png}} || {{item|Crimson thorny bushes|link={{tr|Thorny bushes|link=y}}|image=Crimson Thorny Bush.png}} ||
+|-
+|  || {{item|Crimson vines}} || {{item|Hallowed vines}}
+|-
+| {{item|Purple Ice Block}} || {{item|Red Ice Block}} || {{item|Pink Ice Block}}
+|-
+| {{item|Ebonsand Block}} || {{item|Crimsand Block}} || {{item|Pearlsand Block}}
+|-
+| {{item|Ebonsandstone Block}} || {{item|Crimsandstone Block}} || {{item|Pearlsandstone Block}}
+|-
+| {{item|Hardened Ebonsand Block}} || {{item|Hardened Crimsand Block}} || {{item|Hardened Pearlsand Block}}
+|}
+
+注意这里的不一致性：{{tr|Crimson plants}}和{{tr|Vicious Mushrooms}}能够作为源{{tr|tiles}}，而其{{tr|Corruption}}的等价物{{tr|Corrupt plants}}和[[{{tr|Vile Mushroom}}]]却不能。
+
+== {{tr|Pre-Hardmode}}的蔓延 ==
+在[[{{tr|pre-Hardmode}}]]，这三种{{tr|biomes}}只能以非常有限的方式蔓延：仅有的蔓延性{{tr|tiles}}是[[{{tr|Corrupt grass}}]]、[[{{tr|Crimson grass}}]]、和[[{{tr|Hallowed grass}}]]，以及{{tr|Corruption}}和{{tr|Crimson}}[[{{tr|thorny bushes}}]]。关于{{tr|grass}}蔓延的错综复杂之处，请参见[[#{{tr|Grass}}|下文]]。
+
+尽管[[{{tr|the Hallow}}]]在{{tr|pre-Hardmode}}的世界中通常并不存在，但若人工于{{tr|pre-Hardmode}}制造{{tr|the Hallow}}，它也会{{tr|spread}}。
+
+== {{tr|Hardmode}}的{{tr|spread}} ==
+在[[{{tr|Hardmode}}]]中，{{tr|the pre-Hardmode}}[[#{{tr|Grass}}|{{tr|grass}}的蔓延性]]维持不变。但是，有更多{{tr|tiles}}变得会被转换且蔓延会快得多。下表要如此解读：任何''[[#{{tr|Spreading tiles}}|{{tr|spreading tiles}}]]''都能将以其为中心的 7×7 方形区域内任何''{{tr|pure tiles}}''转化为相应''转化的{{tr|tile}}''。{{source code ref|v=1.4.2.3|{{code|Terraria.WorldGen.cs}} 中的 {{code|HardUpdateWorld()}} 方法}}
+{| class=terraria
+|+ {{tr|Hardmode}}{{tr|Spread}}概述
+! {{tr|Pure Tile}} !! 转化的{{tr|Corrupt Tile}} !! 转化的{{tr|Crimson Tile}} !! 转化的{{tr|Hallowed Tile}}
+|-
+| {{item|Grass}} || {{item|Corrupt grass}} || {{item|Crimson grass}} || {{item|Hallowed grass}}
+|-
+| {{item|Stone Block}} || {{item|Ebonstone Block}} || {{item|Crimstone Block}} || {{item|Pearlstone Block}}
+|-
+| {{item|Mud Block}} || {{item|Dirt Block}} || {{item|Dirt Block}} || {{na}}
+|-
+| {{item|Ice Block}} || {{item|Purple Ice Block}} || {{item|Red Ice Block}} || {{item|Pink Ice Block}}
+|-
+| {{item|Sand Block}} || {{item|Ebonsand Block}} || {{item|Crimsand Block}} || {{item|Pearlsand Block}}
+|-
+| {{item|Hardened Sand Block}} || {{item|Hardened Ebonsand Block}} || {{item|Hardened Crimsand Block}} || {{item|Hardened Pearlsand Block}}
+|-
+| {{item|Sandstone Block}} || {{item|Ebonsandstone Block}} || {{item|Crimsandstone Block}} || {{item|Pearlsandstone Block}}
+|-
+| {{item|Jungle grass}} || {{item|Corrupt Jungle grass|note={{small|(不会转化其下的{{tr|Mud Block}}，仅限1.4.4及以上版本)}}|wrap=y}} || {{item|Crimson Jungle grass|note={{small|(不会转化其下的{{tr|Mud Block}}，仅限1.4.4及以上版本)}}|wrap=y}} || {{na}}
+|-
+| {{item|Jungle thorny bushes|link={{tr|Thorny bushes|link=y}}|image=Jungle Thorny Bush.png}} || {{item|Corruption thorny bushes|link={{tr|Thorny bushes|link=y}}|image=Corruption Thorny Bush.png}} || {{item|Crimson thorny bushes|link={{tr|Thorny bushes|link=y}}|image=Crimson Thorny Bush.png}} || {{na}}
+|}
+
+首次打败[[{{tr|Plantera}}]]会将{{tr|biomes}}的蔓延速度降低至默认{{tr|Hardmode}}速度的 {{chance|1/2}}。
+
+== {{tr|Grass}} ==
+和普通[[{{tr|grass}}]]一样，邪恶和{{tr|Hallowed}}的版本也会蔓延。本节中描述的机制在启动{{tr|Hardmode}}或打败{{tr|Plantera}}时并不会改变，在整个游戏过程都一直保持不变。
+
+就{{tr|grass spread}}而言，{{tr|Corruption}}和{{tr|Crimson}}的[[{{tr|thorny bushes}}]]分别视为{{tr|Corrupt}}/{{tr|Crimson grass blocks}}。
+
+以下通用限制适用于所有形式的{{tr|grass spread}}，包括{{tr|pure grass}}：
+* {{tr|Grass}}不会在[[{{tr|surface}}]]以下{{tr|spread}}。你需要位于[[{{tr|surface}}]]以上至少 4 英尺（[[{{tr|Depth Meter}}]]的读数），脚下的{{tr|the grass}}才能{{tr|spread}}。
+* {{tr|Grass}}只会{{tr|spreads}}至相邻{{tr|tiles}}，即，直接围绕着{{tr|spreading tile}}的那八个{{tr|tiles}}。
+* {{tr|Grass}}不会{{tr|spread}}到其相邻{{tr|tile}}中有[[{{tr|lava}}]]的{{tr|tile}}上。
+* {{tr|Grass}}只会{{tr|spreads}}到其相邻{{tr|tiles}}中有空位的{{tr|tile}}上。
+
+所有类型的{{tr|grass}}都会{{tr|spread}}到[[{{tr|Dirt Block}}]]上。此外，{{tr|evil}}和{{tr|Hallowed grass blocks}}可以转化其他{{tr|grass}}，如下所示：
+
+{| class="terraria aligncenter"
+! rowspan=2 | {{tr|spreading Grass Tile}} !! colspan=4 | 转化{{tr|Grass}}
+|-
+! {{item|Grass|Pure Grass}} !! {{item|Corrupt grass}} !! {{item|Crimson grass}} !! {{item|Hallowed grass}}
+|-
+| {{item|Corrupt grass}} || {{yes}} || {{na}} ||{{yes}}||{{yes}}
+|-
+| {{item|Crimson grass}} || {{yes}} ||{{yes}}||{{na}} ||{{yes}}
+|-
+| {{item|Hallowed grass}} || {{yes}} ||{{yes}}||{{yes}}||{{na}}
+|}
+
+三种{{tr|grass}}都以相同的方式{{tr|spread}}，因此，举个例子说，并没有哪个“更快”或“更强”。比如，{{tr|Hallowed grass}}有能力取代{{tr|Crimson grass}}，反之亦然，两者会不断地相互转化。
+
+在[[{{tr|Hardmode}}]]中，{{tr|Corrupt}}、{{tr|Crimson}}、和{{tr|Hallowed grass}}依然会长到{{tr|Dirt Blocks}}上并且感染{{tr|other grass}}，正如上文所述。但是，它们还额外得到了转换三格范围内其他任何可腐化{{tr|tile}}——包括{{tr|pure grass}}——的能力（和其他[[#{{tr|Spreading tiles}}|{{tr|spreading tiles}}]]一样）。以这种方式转化{{tr|tile}}是以不同方式进行处理的，因此并不适用以上所述限制。例如，这让它们可以感染{{tr|surface}}之下的{{tr|pure grass}}，这在{{tr|pre-Hardmode}}是不可能的。
+
+{{tr|Evil and Hallowed grass}}永远不会转化[[{{tr|Sunflower}}]]下的{{tr|tile}}。注意在{{tr|pre-Hardmode}}，{{tr|Sunflowers}}因此可以作为有效的屏障，而{{tr|spreading grass}}在{{tr|Hardmode}}中可以{{tr|spread}}到最多三格远的{{tr|tiles}}上，很容易绕过单棵{{tr|Sunflower}}。
+
+== {{tr|Background Walls}} ==
+<!-- All information in this section is taken from the Desktop 1.3.5.3 source code. -->
+{{for|详细的技术说明和完整的算法|en:Talk:Biome spread#Wall Conversion Algorithm in Detail|display=讨论页（英文）}}
+
+[[{{tr|Background walls}}]]无法感染[[{{tr|blocks}}]]，但它们''可以''被{{tr|blocks}}感染，并且它们可以在一定限制下感染某些其他''{{tr|walls}}''。{{tr|Walls}}也可以在初始{{tr|hardmode}}转变中被转化，或者被玩家手工转化。
+
+* {{tr|Natural or placed}}的[[{{tr|Grass Wall}}]]、[[{{tr|Jungle Wall}}]]、和[[{{tr|Flower Wall}}]]都转化为受感染的{{tr|Grass walls}}。只有{{tr|pure walls}}才会被感染，且之后不会被另一种感染所感染。
+* {{tr|Natural or placed}}的{{tr|Sandstone Walls or Hardened Sand Walls}}转化为相应的{{tr|biome wall}}。即使已被感染， 这些墙也''可以''被重复感染并转化成另一种{{tr|biome}}。
+* {{tr|Stone walls}}不会以这种方式感染，但{{tr|Ebonstone and Crimstone walls}}可以感染上面所列的{{tr|other wall}}类型。
+* 在所有情况下，此后进行{{tr|biome}}转化（包括通过[[{{tr|Thrown Water}}]]或[[{{tr|Clentaminator}}]]）所波及的所有墙都视为''天然''{{tr|wall}}。这可能会影响{{tr|enemy}}生成，也许还会影响各种[[{{tr|Underground Desert}}]]{{tr|biomes}}的存在。
+
+{| class=terraria
+! {{tr|Pure Wall}} !! {{tr|Corruption}} !! {{tr|Crimson}} !! {{tr|Hallow}}
+|-
+| {{item|Grass Wall}}<br/>{{item|Flower Wall}} || {{item|Corrupt Grass Wall}} || {{item|Crimson Grass Wall}} || {{item|Hallowed Grass Wall}}
+|-
+| {{item|Jungle Wall}} || {{item|Corrupt Grass Wall}} || {{item|Crimson Grass Wall}} || {{na}}
+|-
+| {{item|Stone Wall}} || {{item|Ebonstone Wall}} || {{item|Crimstone Wall}} || {{item|Pearlstone Wall}}
+|-
+| {{item|Hardened Sand Wall}} || {{item|Hardened Ebonsand Wall}} || {{item|Hardened Crimsand Wall}} || {{item|Hardened Pearlsand Wall}}
+|-
+| {{item|Sandstone Wall}} || {{item|Ebonsandstone Wall}} || {{item|Crimsandstone Wall}} || {{item|Pearlsandstone Wall}}
+|}
+
+根据源{{tr|tile}}的不同，墙的感染有两种重叠的模式（“草型”和“沙型”）。每个{{tr|tile}}的更新都会考虑这两种模式，并且可以分别感染不同的墙。并且其行为还会根据此{{tr|tile}}是高于还是低于{{tr|surface level}}以及正在考虑哪种感染而有所不同。 
+
+=== 公共规则 ===
+* 在所有情况下，{{tr|wall}}的感染范围是 2 格（以源{{tr|tile}}为中心的 5×5 正方形），相较之下，大多数{{tr|blocks}}的范围是 3 格。
+** 和{{tr|blocks}}一样，{{tr|Hallow}}无法感染{{tr|Jungle Walls}}
+* 要让{{tr|a source tile}}的{{tr|wall}}受感染，必须在{{tr|source tile}}''内''或其 20 格范围内找到带有相关感染的合格前景{{tr|block}}或{{tr|plant}}（统称为“{{tr|biome blocks}}”）。 
+** 所谓合格的{{tr|biome blocks}}会随着场合不同而有所差异，但以下{{tr|blocks}}始终是合格的：'''{{tr|Grass}}、{{tr|Ice}}、{{tr|Stone}}、{{tr|Sand}}、和{{tr|Vines}}。'''
+** 对于{{tr|Crimson}}的情况、或者要感染{{tr|surface level}}以下的{{tr|any grassy wall}}，则此{{tr|biome block}}必须位于{{tr|the source tile}}内。
+** 否则（用{{tr|Corruption or Hallow}}感染{{tr|surface level}}以上的{{tr|grassy wall}}、或是要感染{{tr|any sandy wall}}），则{{tr|the biome block}}可以出现在 20 格范围内（以{{tr|the source tile}}为中心的 41×41 方形区域）的任意地方。
+
+=== {{tr|Grassy Wall}}的传染 ===
+如果{{tr|the source tile}}包含任何'''已感染的天然{{tr|Grass Wall}}'''、'''已感染的天然{{tr|Stone Wall}}'''（{{tr|Pearlstone Wall}}''除外''）或'''已感染的{{tr|grass block}}'''，则它会试图'''传染''纯净''的{{tr|Grass Wall}}、{{tr|Flower Wall}}、或{{tr|Jungle Wall}}'''。这些类型的{{tr|walls}}无论是天然的还是玩家放置的都会被传染。
+
+* 依次检查各个传染性{{tr|biomes}}：{{tr|Crimson}}、然后是{{tr|Corruption}}、然后是{{tr|Hallow}}。如果该{{tr|tile}}具有合格的{{tr|wall}}和来自不同{{tr|biome}}的{{tr|a grass tile}}，则会试图蔓延这两个{{tr|biomes}}。
+** 对于每次传染尝试，都会在范围内选择单个{{tr|tile}}，如果它是{{tr|pure grassy wall}}，则就会被传染。
+** 同样，传染需要如上所述的“{{tr|biome block}}”：
+*** 对于{{tr|Crimson}}的情况、或者在{{tr|surface level}}以下，那么此{{tr|biome block}}必须位于{{tr|the source tile}}内，否则只要在 20 格范围内。
+***除了上面所列（{{tr|Grass}}、{{tr|Ice}}、{{tr|Stone}}、{{tr|Sand}}、和{{tr|Vines}}）之外，[[{{tr|Demonite Ore}}]]对于{{tr|Corruption}}亦算合格。它只在这一步才算为合格的{{tr|biome block}}，而[[{{tr|Crimtane Ore}}]]对于{{tr|Crimson}}并''不''合格。
+*** 大多数{{tr|biome}}特有的[[{{tr|plants}}]]（如果已感染）在这里亦会被视为合格的{{tr|biome blocks}}。这包括[[{{tr|thorny bushes}}]]、高草/{{tr|flowers}}（即，从恰当的{{tr|grass blocks}}上长出来的）、[[{{tr|Vile Mushroom}}]]/[[{{tr|Vicious Mushroom}}]]、和（再次）[[{{tr|vines|link=y}}|{{tr|vines}}]]。
+** 如上所述，{{tr|Hallow}}不能传染{{tr|Jungle Walls}}、而{{tr|Pearlstone Walls}}则完全不能传染{{tr|grassy walls}}。
+
+=== {{tr|Sandy Wall}}的传染 ===
+如果{{tr|the source tile}}包含'''{{tr|any Sandstone Wall}}'''、'''{{tr|any Hardened Sand Wall}}'''、及'''{{tr|any Sandstone Block}}'''，则它会试图'''传染{{tr|Hardened Sand Wall}}或{{tr|Sandstone Wall}}'''。
+
+* 只有{{tr|Hardened Sand wall or Sandstone Walls}}，纯净的''或者带有任何感染的''，才会以这种方式转化。
+* 不像{{tr|grassy walls}}，这只会选择一个{{tr|biome}}，然后会在附近选择单块{{tr|tile}}进行传染尝试。 
+** 要尝试传染，{{tr|the source tile}}必须拥有被感染的{{tr|wall}}或被感染的{{tr|biome block}}。 
+*** 合格的{{tr|walls}}包括{{tr|Grass wall}}、{{tr|Stone wall}}、{{tr|Sandstone wall}}、或{{tr|Hardened Sand wall}}。（注意前两种隐含了第一步中的{{tr|Sandstone Block}}）
+*** 合格的{{tr|biome blocks}}包括前文所述（{{tr|Grass}}、{{tr|Ice}}、{{tr|Stone}}、{{tr|Sand}}、和{{tr|Vines}}）、或{{tr|Sandstone Blocks}}，但不包括{{tr|other plants}}。
+*** 如果{{tr|tile}}对于{{tr|wall}}和{{tr|block}}/{{tr|vine}}有不同的感染，那么{{tr|Crimson}}优先，其次{{tr|Hallow}}。仅在没有其他竞争感染的情况下才适用{{tr|Corruption}}。
+
+== 备注 ==
+* 即使“途中”有不可腐化的{{tr|block}}，{{tr|Spreading tiles}}亦可以{{tr|spread}}其{{tr|biome}}。例如，在{{tr|Hardmode}}中，{{tr|Corrupt grass block}}和{{tr|pure grass block}}之间放上一格宽的[[{{tr|Wood}}]]墙并不能阻止{{tr|grass}}被转化，因为{{tr|the Corrupt grass}}能转化三格范围内的任何{{tr|tile}}。因此，要有效地阻止{{tr|biome}}的蔓延，必须有至少三格宽的屏障，可以是全空或者不可腐化的{{tr|blocks}}。
+* {{tr|The Crimson}}和{{tr|the Hallow}}会从各自的{{tr|grass blocks}}下方长出[[{{tr|vines|link=y}}|{{tr|vines}}]]。这些{{tr|vines}}可以将其{{tr|biomes}}传播到附近的{{tr|blocks}}（{{tr|Hardmode}}中）和上述{{tr|walls}}上。并没有{{tr|Corrupt vines}}，且{{tr|vines}}自身不会被转化，除非转化它们所连接的那个{{tr|block}}。
+* 上面有[[{{tr|moss}}]]的[[{{tr|Stone Block}}]]会被视为{{tr|regular Stone Blocks}}。转化时，{{tr|The moss}}会被摧毁。
+*  {{tr|Corrupt and Crimson grass blocks}}上长出来的[[{{tr|Thorny bushes}}]]可以在各个方向上延伸出很长距离，可以进一步传播{{tr|Corruption and Crimson}}，甚至可以跨过不可腐化{{tr|blocks}}。因此，在{{tr|pre-Hardmode}}，{{tr|evil biome}}有可能会跨过间隙传播，只要其{{tr|thorny bushes}}恰好长得穿过间隙并与另一半的{{tr|grass}}相距3格及以内。
+* [[{{tr|Chlorophyte Ore}}]]和[[{{tr|Chlorophyte Brick}}]]限制了{{tr|the evil biomes}}的蔓延：
+** 如果{{tr|the Corruption}}试图感染{{tr|Mud Block}}或{{tr|Jungle grass block}}，''或''如果直接接触目标{{tr|tile}}的四个{{tr|tiles}}其中之一是{{tr|Mud block}}或{{tr|Jungle grass block}}，那么会检查附近是否存在{{tr|Chlorophyte}}：如果在 10 格半径内有至少 5 格{{tr|Chlorophyte tile}}（不论是{{tr|Ore}}还是{{tr|Brick}}，都算入），感染就会完全失败。如果{{tr|Chlorophyte tile}}少于 5 格但大于 0 格，则有 ''&lt;格数&gt;''/5 几率（例如，如果有 3 格{{tr|Chlorophyte tiles}}那么就是 3/5）让感染失败。{{source code ref|v=1.3.5.3|{{code|Terraria.WorldGen.cs}} 中的 {{code|nearbyChlorophyte()}} 方法}}
+** {{tr|The Crimson}}总是会检查附近的{{tr|Chlorophyte}}，无论目标{{tr|block}}和相邻{{tr|blocks}}如何。
+* 因为{{tr|the Hallow}}不会蔓延到{{tr|mud or Jungle grass}}上，因此在{{tr|the Jungle}}和相邻{{tr|biomes}}之间创建人工{{tr|the hallow}}也有助于保护{{tr|the Jungle}}。要想得到更加可控的解决方案，可以将这一点与上面的备注结合起来，把{{tr|Hallowed blocks}}紧挨着[[{{tr|Underground Jungle}}]]边缘附近的小{{tr|Chlorophyte}}矿脉放置。
+** 如果{{tr|evil biome}}通过{{tr|Jungle grass}}的途径在矿脉附近蔓延，且矿脉没大到足以完全中止此蔓延，则{{tr|the Hallow}}就会开始蔓延，由于{{tr|Chlorophyte}}的减速效应，它很快就会超过{{tr|evil biome}}。
+** 如果{{tr|evil biome}}并不在矿脉附近蔓延，无论是因为玩家的行动还是由于矿脉已经大到足以阻止蔓延，则{{tr|the Hallow}}根本就不会蔓延。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{language info|en=Biome spread}}

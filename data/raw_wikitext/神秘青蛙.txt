@@ -1,0 +1,41 @@
+{{exclusive|1.4.4}}
+{{npc infobox
+| image = Mystic Frog.gif
+| imageother = Mystic Frog (idle).gif/Mystic Frog (swimming).gif
+| imageothercaption = 空闲和游泳状态
+| auto = 687
+| type = Critter
+| environment = Jungle
+}}
+
+'''{{tr|Mystic Frog}}'''是一种[[{{tr|critter}}]]，有 {{chance|1/30}} 的几率代替[[{{tr|Jungle}}]]中普通的[[{{tr|Frog}}]]生成。{{critter info|nobugnet=y|nostatue=y}}
+
+如果玩家在它身上撒出[[{{tr|Purification Powder}}]]，它就会变成[[{{tr|Mystic Slime}}]][[{{tr|town pet}}]]。此后，{{tr|Mystic Frog}}就不再会生成。如果{{tr|Mystic Slime}}被杀死，它会自然重生，无需再净化一只{{tr|Mystic Frog}}。同一时间只能存在一只{{tr|Mystic Frog}}。
+
+{{Lifeform Analyzer note}}
+
+== 备注 ==
+* 试图用任何[[{{tr|Bug Net}}]]捕捉{{tr|Mystic Frog}}会导致它传送到屏幕内的附近区域。如果附近没有有效的传送地点，{{tr|Mystic Frog}}会在一阵烟雾中消失，就像[[{{tr|Critter statues}}|{{tr|statue}}生成]]的{{tr|critter}}一样。{{source code ref|v=1.4.4.8|method=Terraria.NPC.TryTeleportingCaughtMysticFrog}}
+
+== 花絮 ==
+* 在 [[1.4.4.9]] 版本中，{{tr|Mystic Frog}}拥有最高的 [[{{tr|NPC ID}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|
+** 替代普通{{tr|Frog}}生成的几率由 {{chance|1/50}} 提升至 {{chance|1/30}}。
+** 现在当玩家试图用[[{{tr|Bug Net}}]]捕捉{{tr|Mystic Frog}}时，它会尝试传送走。此前，用{{tr|Bug Net}}捕捉{{tr|Mystic Frog}}会使其消失。
+** {{tr|Bestiary entry}}由“A curious frog with a funny hat, wandering around the Jungle! There is more than meets the eye with this slimy amphibian...”（一只好奇的青蛙戴着滑稽的帽子，在丛林里游荡！这种黏糊糊的两栖动物远不止看上去这么简单……）改为“A curious frog with a funny hat, surrounded by potent magic! Perhaps something can break its curse... you probably shouldn't kiss it!”（一只好奇的青蛙戴着滑稽的帽子，被强大的魔法包围着！也许有什么东西可以打破它的诅咒……你大概不该亲吻它！）。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Mystic Frog}}

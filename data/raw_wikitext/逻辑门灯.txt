@@ -1,0 +1,42 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| name = Logic Gate Lamps
+| imagealt = [[File:Logic Gate Lamp (On).png|link=]] [[File:Logic Gate Lamp (Off).png|link=]] [[File:Logic Gate Lamp (Faulty).png|link=]]
+| type = Mechanism/Furniture
+| auto = 3602
+| width = 1 | height = 1
+| tooltip = 
+| value = 
+| id = 3602, 3618, 3663
+| cargo = no
+}}
+[[File:AND logic gate animation.gif|right|frame|两个逻辑门灯与一个 AND 逻辑门组成的AND线路。]]
+
+'''{{tr|Logic Gate Lamp}}'''是一种[[{{tr|mechanism}}]]，可以放置在[[{{tr|Logic Gate}}]]或其他{{tr|Logic Gate Lamp}}上方。{{tr|Logic Gate}}会基于自身{{tr|type}}和放置在其上的{{tr|Logic Gate Lamps}}的状态进行激活。{{tr|Logic Gate Lamps}}的状态是通过{{tr|wire}}来进行切换的。逻辑门与逻辑门灯皆购自[[{{tr|Steampunker}}]]，售价为 {{sc|10}}(一般)、{{gc|2}}(故障)。
+
+== 种类 ==
+{{item infobox/options|view=table|cols=item2cells-nolink/idtile/tooltip/buy/sell}}
+{| class="terraria lined"
+! colspan=2 | 类型!! [[{{tr|Tile IDs}}]] !! {{tr|Tooltip}} !! {{tr|Buy}} !! {{tr|Sell}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3602 | tags = vendor / vendor:Steampunker }}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3618 | tags = vendor / vendor:Steampunker }}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3663 | tags = vendor / vendor:Steampunker }}
+|}
+
+== {{tr|Notes}} ==
+* 在{{tr|logic gate}}上放置{{tr|logic gate lamp (faulty)}}，灯会变为蓝色并使{{tr|logic gate}}原本功能失效，其功能与行为会完全改变。更多信息详见[[Logic Gate#Faulty Lamps|逻辑门：故障灯]]。
+* 用法很灵活，两个或以上的{{tr|Logic Gate Lamp}}可以用在同一个{{tr|Logic Gate}}上。
+* {{tr|wire}}输入讯号时，会反转{{tr|Logic Gate Lamp}}的开关状态，所以可以用'开'的灯来反转讯号。这个用法很实用，因为原版''[[{{tr|Terraria}}]]''中并没有''非门''。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Logic Gate Lamps}}

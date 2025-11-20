@@ -1,0 +1,134 @@
+'''{{tr|Extra jumps}}'''允许玩家在装备有五种不同的[[{{tr|accessories}}]]或四种不同的[[{{tr|mounts}}]]时在半空中额外跳跃一次或多次。
+
+[[File:Bundle of Balloons (demo).gif|frame|right|使用{{tr|Bundle of Balloons}}进行三次不同跳跃的一个例子。]]
+
+{{tr|extra jump}}各有各的类型，这由使用的{{tr|accessory}}或{{tr|mount}}的种类决定。同种类型的跳跃无法相互叠加，但不同类型的则可以，这就允许玩家来连续不断的跳跃两次以上。举个例子，同时装备有[[{{tr|Cloud in a Bottle}}]]和[[{{tr|Tsunami in a Bottle}}]]的玩家可以额外跳上两次，但若同时装备{{tr|Cloud in a Bottle}}和[[{{tr|Cloud in a Balloon}}]]则只能额外跳跃一次。每种类型的跳跃都会在使用时展示独特的粒子特效动画，这些动画按照以下顺序进行：召唤的{{tr|mount}}的跳跃、{{tr|Sandstorm}}、{{tr|Blizzard}}、{{tr|Fart}}、{{tr|Tsunami}}和{{tr|Cloud}}。
+
+额外的跳跃和基础跳跃有相同的[[{{tr|jump speed}}]]，但却有不同的[[{{tr|jump duration}}]]。举例来说，在默认跳跃速度下，来源于[[{{tr|Sandstorm in a Bottle}}]]的跳跃时间比基础跳跃长 3 倍，最高可跳到 {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*3}}}}}} 格高处，这比起基础跳跃的 {{jump reach}} 格多了整整 {{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*3}})/{{jump reach|raw=y}}-1}}。
+
+== 配饰 ==
+{{tr|extra jump}}被五个配饰和他们的升级物提供，这列在下表中。如上所述，不同类型（也就是不同行里面的）的跳跃可以叠加，但相同类型（也就是同一行里面的）的跳跃并不能相互叠加。
+
+{| class="terraria"
+! 跳跃类型
+! {{tr|Items}}
+! [[{{tr|Jump duration}}|跳跃<br/>持续时间]]<ref>相对于第一次跳跃的{{tr|jump duration}}。</ref>
+! 跳跃<br/>总高度<ref>默认[[{{tr|gravity}}]]，无其他生效{{tr|boosts}}，仅用对应行的跳跃，而第二跳在第一条完成后被自动激活。提升的百分比是相对于基础跳跃高度（{{jump reach}}格）而言的。</ref>
+! 水平速度倍率<ref>相对于在地面上的移动速度。</ref>
+! 水平加速度倍率<ref>相对于在地面上的加速度。</ref>
+|-
+| rowspan=2 | {{tr|Cloud}}
+| {{equipinfo/list|where=hasJumpOption_Cloud IS NOT NULL AND jumpBoost IS NULL|format=dotlist}}
+| rowspan=2 | 75%
+| {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*0.75}}}}}} 格 (+{{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*0.75}})/{{jump reach|raw=y}}-1}})
+| rowspan=2 | 100%
+| rowspan=2 | 100%
+|-
+| {{equipinfo/list|where=hasJumpOption_Cloud IS NOT NULL AND jumpBoost IS NOT NULL|format=dotlist}}
+| {{formatnum:{{#expr:{{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*0.75|6.51}}}}}} 格 (+{{percent|({{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*0.75|6.51}})/{{jump reach|raw=y}}-1}})
+|- class="topline"
+| rowspan=2 | {{tr|Blizzard}}
+| {{equipinfo/list|where=hasJumpOption_Blizzard IS NOT NULL AND jumpBoost IS NULL|format=dotlist}}
+| rowspan=2 | 150%
+| {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*1.5}}}}}} 格 (+{{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*1.5}})/{{jump reach|raw=y}}-1}})
+| rowspan=2 | 150%
+| rowspan=2 | 300%
+|-
+| {{equipinfo/list|where=hasJumpOption_Blizzard IS NOT NULL AND jumpBoost IS NOT NULL|format=dotlist}}
+| {{formatnum:{{#expr:{{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*1.5|6.51}}}}}} 格 (+{{percent|({{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*1.5|6.51}})/{{jump reach|raw=y}}-1}})
+|- class="topline"
+| rowspan=2 | {{tr|Sandstorm}}
+| {{equipinfo/list|where=hasJumpOption_Sandstorm IS NOT NULL AND jumpBoost IS NULL|format=dotlist}}
+| rowspan=2 | 300%
+| {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*3}}}}}} 格 (+{{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*3}})/{{jump reach|raw=y}}-1}})
+| rowspan=2 | 200%
+| rowspan=2 | 150%
+|-
+| {{equipinfo/list|where=hasJumpOption_Sandstorm IS NOT NULL AND jumpBoost IS NOT NULL|format=dotlist}}
+| {{formatnum:{{#expr:{{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*3|6.51}}}}}} 格 (+{{percent|({{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*3|6.51}})/{{jump reach|raw=y}}-1}})
+|- class="topline"
+| rowspan=2 | {{tr|Fart}}
+| {{equipinfo/list|where=hasJumpOption_Fart IS NOT NULL AND jumpBoost IS NULL|format=dotlist}}
+| rowspan=2 | 200%
+| {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*2}}}}}} 格 (+{{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*2}})/{{jump reach|raw=y}}-1}})
+| rowspan=2 | 175%
+| rowspan=2 | 300%
+|-
+| {{equipinfo/list|where=hasJumpOption_Fart IS NOT NULL AND jumpBoost IS NOT NULL|format=dotlist}}
+| {{formatnum:{{#expr:{{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*2|6.51}}}}}} 格 (+{{percent|({{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*2|6.51}})/{{jump reach|raw=y}}-1}})
+|- class="topline"
+| rowspan=2 | {{tr|Tsunami}}
+| {{equipinfo/list|where=hasJumpOption_Sail IS NOT NULL AND jumpBoost IS NULL|format=dotlist}}
+| rowspan=2 | 125%
+| {{formatnum:{{#expr:{{jump reach|raw=y}}+{{jump reach|raw=y|15*1.25}}}}}} 格 (+{{percent|({{jump reach|raw=y}}+{{jump reach|raw=y|15*1.25}})/{{jump reach|raw=y}}-1}})
+| rowspan=2 | 125%
+| rowspan=2 | 150%
+|-
+| {{equipinfo/list|where=hasJumpOption_Sail IS NOT NULL AND jumpBoost IS NOT NULL|format=dotlist}}
+| {{formatnum:{{#expr:{{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*1.25|6.51}}}}}} 格 (+{{percent|({{jump reach|raw=y|20|6.51}}+{{jump reach|raw=y|20*1.25|6.51}})/{{jump reach|raw=y}}-1}})
+|}
+
+== {{tr|Mounts}} ==
+共有四种允许在空中多跳一次的[[{{tr|mounts}}]]。
+
+{| class="terraria lined"
+! colspan=2 | {{tr|Mount}}
+! [[{{tr|Jump duration}}|跳跃持续时间]]<ref>相对于骑乘{{tr|mount}}时的第一跳而言。</ref>
+! 水平速度倍率<ref>相对于在地面上的移动速度。</ref>
+! 水平加速度倍率<ref>相对于在地面上的加速度。</ref>
+|-
+| {{item|mode=table|Unicorn Mount}} || 200%
+| 150%
+| 300%
+|-
+| {{item|mode=table|Basilisk Mount}} || 75%
+| 150%
+| 300%
+|-
+| {{item|mode=table|Santank Mount}} || 200%
+| 150%
+| 300%
+|-
+| {{item|mode=table|Goat Mount}} || 200%
+| 150%
+| 300%
+|}
+
+== {{tr|Tips}} ==
+* {{tr|Extra jumps}}可以在落地前的一刻使用，以重置[[{{tr|fall damage}}]]。
+* 六段跳的最大跳跃高度（举个例子，可以通过装备[[{{tr|Bundle of Balloons}}]]、[[{{tr|Fart in a Balloon}}]]和{{eil|Sharkron Balloon}}实现）是{{formatnum:{{#expr:
+{{jump reach|raw=y|20|6.51}}
++{{jump reach|raw=y|20*0.75|6.51}}
++{{jump reach|raw=y|20*1.5|6.51}}
++{{jump reach|raw=y|20*3|6.51}}
++{{jump reach|raw=y|20*2|6.51}}
++{{jump reach|raw=y|20*1.25|6.51}}
+}}}}格(+{{percent|(
+{{jump reach|raw=y|20|6.51}}
++{{jump reach|raw=y|20*0.75|6.51}}
++{{jump reach|raw=y|20*1.5|6.51}}
++{{jump reach|raw=y|20*3|6.51}}
++{{jump reach|raw=y|20*2|6.51}}
++{{jump reach|raw=y|20*1.25|6.51}}
+)/{{jump reach|raw=y}}-1}})。 <!--
+-->这可以被一些[[{{tr|Movement speed}}#{{tr|Boosts}}|加成{{tr|accessories}}]]进一步提高：装备{{eil|Soaring Insignia}}、[[{{tr|Frog Leg}}]]和{{eil|Moon Lord Legs}}后，六段跳的最大跳跃总高度将会是{{formatnum:{{#expr:
+{{jump reach|raw=y|20+1|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*0.75|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*1.5|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*3|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*2|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*1.25|6.51+2.4+2.4+1.8}}
+}}}} 格(+{{percent|(
+{{jump reach|raw=y|20+1|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*0.75|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*1.5|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*3|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*2|6.51+2.4+2.4+1.8}}
++{{jump reach|raw=y|(20+1)*1.25|6.51+2.4+2.4+1.8}}
+)/{{jump reach|raw=y}}-1}})。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{language info|en=Extra jump}}

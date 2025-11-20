@@ -1,0 +1,8 @@
+<includeonly>{{#if:{{{1|}}}|{{recipes/extract|where=result="{{{1|}}} Statue" AND (version LIKE "%desktop%" OR version IS NULL)|mode=ingredients}}}}</includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Prints the crafting recipe for a critter statue. Pass the name of the critter as the first unnamed parameter.
+{{language info|en=Statues/critter statue recipe}}
+</noinclude>

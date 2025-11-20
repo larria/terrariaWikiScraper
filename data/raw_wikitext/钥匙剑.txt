@@ -1,0 +1,74 @@
+{{item infobox | boxwidth = 22em
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 55 {{eicons|1.3.0.1|invert=y|small=y}}
+| critical = @@@@ {{eicons|1.4.4|small=y}} / 4% {{eicons|Ocram|small=y}}
+| knockback = @@@@ {{eicons|1.3.0.1|small=y}} / {{kb|6}} {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.3.0.1|small=y}} / {{ut|22}} {{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 671
+| listcat = broadswords
+| tags = drop / hardmode / vendor / vendor:Traveling Merchant
+}}
+{{drop infobox|style=clear:right}}
+[[File:Keybrand (demo).gif|thumb|270px|{{eicons|1.4.0.1}} 用{{tr|The Keybrand}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Mimic}}]]。注意基于{{tr|enemy}}的{{tr|health}}而提高的{{tr|damage}}。]]
+[[File:Keybrand (demo) (old).gif|frame|{{eicons|1.4.0.1|invert=y}} {{tr|The Keybrand}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Keybrand}}'''是一把[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|sword}}]]。它有 {{chance|1/200}} / {{expert|{{chance|1/133}}}}的几率掉落于[[{{tr|Hardmode Dungeon}}]]中的[[{{tr|Blue Armored Bones}}]]、[[{{tr|Hell Armored Bones}}]]和[[{{tr|Rusty Armored Bones}}]]。
+
+{{eicons|1.4.0.1}} {{tr|Keybrand}}对于受伤的{{tr|enemy}}造成额外{{tr|damage}}。当击中剩余少于 10% {{tr|health}}的{{tr|enemy}}时，它造成最大 100% 的额外{{tr|damage}}（共计 200%）。用{{tr|Keybrand}}击中任何{{tr|enemy}}都会产生闪闪发光的视觉效果。
+
+{{modifier|melee}}
+
+== 备注 ==
+* {{eicons|1.4.4.1}} {{tr|The Keybrand}}有着 {{iteminfo|Keybrand|crit}} 的[[{{tr|critical strike chance}}]]，而非通常的 4%。
+* {{eicons|1.4.0.1}} 在确定将要造成的{{tr|damage}}时使用以下公式：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_MeleeHitNPCs}}
+** 如果击中拥有高于 10% {{tr|HP}}的{{tr|enemy}}：<math>\mathit{ damage} \times \left(1 + \frac{10}{9} \times \left(1 - \frac{\mathit{HP_{Current}}}{\mathit{HP_{Max}}}\right)\right)</math>
+:: （这意味着，{{tr|enemy}}每损失 1% {{tr|health}}，受到的{{tr|damage}}将增加 <math>\frac{1}{90}</math>。）
+:* 如果击中拥有低于或等于 10% {{tr|HP}}的{{tr|enemy}}：<math>\mathit{Damage} \times 2</math>
+* 在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，{{tr|Keybrand}}会获得下列改动：
+** 和[[{{tr|Katana}}]]调换位置。因此，它由[[{{tr|Traveling Merchant}}]]出售，而非掉落自{{tr|Hardmode Dungeon enemies}}。
+** {{tr|Damage}}由 105 降低至 15。
+** {{tr|Value}}由 {{gc|20}} 降低至 {{gc|10}}。
+
+== 成就 ==
+{{achievement|name=Robbing the Grave}}
+
+== 小贴士 ==
+* {{eicons|1.4.0.1}} {{tr|Keybrand}}对受伤的{{tr|enemy}}造成额外{{tr|damage}}的能力，使它成为对抗低{{tr|speed}}且高{{tr|health}}的{{tr|enemy}}（如[[{{tr|Nailhead}}]]或[[{{tr|Ogre}}]]）的绝佳选择。
+
+== 花絮 ==
+* {{tr|Keybrand}}的设计基于[https://www.khwiki.com/Keyblade 钥匙刃（Keyblade）]，一把在动作角色扮演游戏系列《{{wikipedia|Kingdom Hearts|王国之心}}》（''Kingdom Hearts''）中的武器。它与名为[https://www.khwiki.com/Kingdom_Key 王国之钥（Kingdom Key）]的钥匙刃有着极强的相似性，后者由[https://www.khwiki.com/Sora 索拉]使用
+** {{eicons|1.4.0.1}} {{tr|Keybrand}}打击{{tr|enemy}}时的视觉效果可能参考了在《王国之心》系列中钥匙刃打击{{tr|enemy}}时类似的明亮效果。
+* 尽管它是把钥匙，但是它不能解锁任何东西。
+* {{tr|Keybrand}}是不产生{{tr|projectile}}的最强武器。
+* 直到 [[{{tr|1.3.5}}]]，{{tr|items}}都有一个内部名称。在{{tr|Keybrand}}引入后直到 [[{{tr|1.3.0.1}}]]，它的内部名称是''Lockblade''（锁刃）。{{source code ref|v=1.2.4.1|old=y|method=Terraria.Item.SetDefaults1}}这可能是它在开发时原本的名字，但是这个名字从来没有在游戏中出现过。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprite updated.}}旧{{tr|sprite}}为[[File:Keybrand (pre-1.4.4.9).png|link=]]}}。
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 85 提升至 105。
+** 额外{{tr|critical chance}}由 17% 提升至 20%。
+** 伤害缩放效果的最大值由 150 % 降低至 100%。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 70 提升至 85。
+** 现在根据{{tr|enemy}}的受伤程度增加最高 150% 的{{tr|damage}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在能{{tr|autoswing}}了。
+** {{tr|Damage}}由 55 提升至 70。
+** {{tr|Knockback}}从 6 提升至 6.5。
+** {{tr|Critical strike chance}}由 4% 提升至 17%。
+**{{tr|Use time}}由 22 降低至 20。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-melee = yes
+}}
+
+{{language info|en=Keybrand}}

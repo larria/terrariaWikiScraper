@@ -1,0 +1,65 @@
+{{npc infobox
+| auto = 37
+| type = NPC
+| environment = Dungeon entrance
+}}
+{{quotation|[[{{tr|Nurse}}|{{tr|The Nurse}}]]|{{gameText|LegacyDialog.32}}}}
+
+'''{{tr|Old Man}}'''是个 [[{{tr|NPC}}]]，其主要功能是召唤[[{{tr|Skeletron}}]]。他出现在[[{{tr|Dungeon}}]]的入口处。若在[[{{tr|night}}]]与其对话，{{tr|the Old Man}}会给玩家一个叫“{{gameText|LegacyInterface.50}}”的选项，此选项会召唤{{tr|Skeletron}}。若在白天与其对话，{{tr|Old Man}}会告诉玩家晚上再来。他还会把 300 永久最大[[{{tr|health}}]]（15 颗心）或更低，或者 10 [[{{tr|defense}}]]或更低的玩家判断为太弱，但依然会允许他们召唤{{tr|summon Skeletron}}。
+
+在没打败{{tr|Skeletron}}时也可以进入{{tr|The Dungeon}}，但在其中前进至低于地表水平面（低于零[[{{tr|Depth Meter}}|深度]]）时会生成[[{{tr|Dungeon Guardian}}]]，它极有可能一照面就干掉玩家。（''参见[[指南:{{tr|Dungeon Guardian}}攻略]]''）。
+
+当{{tr|Skeletron}}被击败后，{{tr|the Old Man}}就从他的诅咒中解放出来，并会以[[{{tr|Clothier}}]]的身份到达（当有空[[{{tr|House}}]]可用时）。此外，玩家可以进入{{tr|the Dungeon}}了。
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Old Man|male}}
+{{-}}
+
+== 备注 ==
+* {{tr|The Old Man}}可被[[{{tr|Lava}}]]、[[{{tr|Dart Trap}}]]伤害，会造成常规伤害和[[{{tr|debuff}}]]效果，也会被[[{{tr|Explosives (class)}}]]伤害。他也和其他 {{tr|NPC}} 一样会受滚落的[[{{tr|Boulder}}]]和[[{{tr|Suffocation}}]]伤害。但是，[[{{tr|enemies}}]]无法对其造成伤害（{{tr|Goblin Scout}}除外），也不会自卫（{{eicons|1.3.0.1}} 不像其他 {{tr|NPCs}}）不过他还是会逃离{{tr|enemy}}处。
+* 如果{{tr|the Old Man}}死亡或玩家挑战{{tr|Skeletron}}失败，{{tr|the Old Man}}会在下一个白天（{{time|6:30 AM}}）于{{tr|the Dungeon}}入口处重生。
+
+== 话语 ==
+{{collapse top}}
+'''在{{tr|day}}：'''
+* “{{gameText|LegacyDialog.82}}”
+*“{{gameText|LegacyDialog.83}}”
+* “{{gameText|LegacyDialog.84}}”
+
+'''当玩家的最大生命值小于等于 300 或防御力小于等于 10 时：'''
+* “{{gameText|LegacyDialog.85}}”
+* “{{gameText|LegacyDialog.86}}”
+* “{{gameText|LegacyDialog.87}}”
+* “{{gameText|LegacyDialog.88}}”
+
+'''当玩家的最大生命值大于 300 或防御力大于 10 时：'''
+* “{{gameText|LegacyDialog.90}}”
+* “{{gameText|LegacyDialog.89}}”
+* “{{gameText|LegacyDialog.91}}”
+* “{{gameText|LegacyDialog.92}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* 其他 {{tr|NPCs}} 会和{{tr|the old man}}“互动”并谈话。
+* 他是唯一不会自卫且不受{{tr|enemies}}伤害的 {{tr|NPC}}。他也不会[[{{tr|drown}}]]。
+* 他是仅有的两个没有地图图标的友方 {{tr|NPCs}} 之一。另外一个是{{eil|Skeleton Merchant}}。{{icon/old-gen}}不过，他会显示为类似于{{tr|enemy}}的红点。
+* 在召唤[[{{tr|Skeletron}}]]时，{{tr|the Old Man}}会死亡，这使得其看起来像是他变成了{{tr|Skeletron}}，他的{{tr|Bestiary}}条目进一步支持了这一点。
+** 但第二天在{{tr|Skeletron}}依然存活的情况下他还是可以重生，但如果这种情况下干掉了{{tr|Skeletron}}他就会死掉。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|{{tr|The Old Man}}的[[{{tr|Bestiary}}]]条目如果因为其他原因没有填充上，那么现在会在[[{{tr|Skeletron}}]]死亡时自动填充。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.0.5|{{tr|The Old Man}}现在在{{tr|night}}变化成{{tr|Skeletron}}之前会先警告玩家。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Old Man}}

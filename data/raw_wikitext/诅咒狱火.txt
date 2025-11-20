@@ -1,0 +1,79 @@
+{{buff infobox
+| auto = 39
+| effects = -24 （对{{tr|enemy}}） / -12 (对玩家）{{eicons|1.4.1|small=y}} /<br/>-6 {{eicons|1.4.0.1|invert=y|small=y}} {{tr|health}} <small>/秒</small><br/>停止{{tr|health regeneration}}<br/>受到的{{tr|knockback}}增加 10%
+}}
+
+'''{{tr|Cursed Inferno}}'''是一种[[{{tr|debuff}}]]，会阻止{{tr|health regeneration}}并使受影响的 {{tr|NPC}} 在{{tr|debuff}}生效期间每秒受到伤害。{{tr|damage}}的大小与[[{{tr|Game platform}}]]有关：
+
+* {{eicons|1.4.1}} 对{{tr|enemies}}每秒造成 24 点{{tr|damage}}，对玩家则是每秒 12 点{{tr|damage}}。受影响的{{tr|enemies}}还会多承受 10% 的{{tr|knockback}}。
+* {{eicons|1.4.0.1|invert=y}} {{tr|Enemies and players}}每秒都会受到 6 点{{tr|damage}}。
+
+如果受影响的目标被{{eil|Oiled}}了，它们会受到：
+* 每秒 25 点额外伤害，总计对{{tr|enemy}}每秒 49 伤害、对玩家每秒 37 伤害。
+
+== 原因 ==
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害<!-- dps * time * chance -->
+|-
+{{debuff source|Cursed Arrow}} || {{eicons|1.4.1}} 168 / {{eicons|1.4.0.1|invert=y}} 42
+{{debuff source|Cursed Bullet}} || {{eicons|1.4.1}} 168 / {{eicons|1.4.0.1|invert=y}} 42
+{{debuff source|Cursed Dart}} || 72-144
+{{debuff source|Cursed Flames}} || {{eicons|1.4.1}} 168 / {{eicons|1.4.0.1|invert=y}} 42
+{{debuff source|Clinger Staff}} || 168
+{{debuff source|Spectral Arrow}} || 42
+{{debuff source|Flask of Cursed Flames|3–6 {{tr|seconds}}|100%}} || {{eicons|1.4.1}} 72-144 / {{eicons|1.4.0.1|invert=y}} 18-36
+|}
+
+=== 来自{{tr|enemy}} ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|mode=table|class=block aligncenter textleft|Clinger|size=40px}}（{{tr|Cursed Flame}}）
+| 7 / {{expert|14}} 秒
+| {{chance|1/3}}
+| {{eicons|1.4.0.1}} 84 / {{expert|168}}<br/>{{eicons|1.4.0.1|invert=y}} 42 / {{expert|84}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Vile Ghoul}}
+| 7 / {{expert|14}} 秒
+| {{chance|1/1}}
+| 84 / {{expert|168}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Spazmatism|size=40px}}（{{tr|Cursed Flames Attack}}）
+| 8 / {{expert|16}} {{tr|seconds}}
+| {{chance|1/3}}
+| {{eicons|1.4.0.1}} 96 / {{expert|192}}<br/>{{eicons|1.4.0.1|invert=y}} 48 / {{expert|96}}
+|-
+|}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities|Cursed Inferno}}
+
+== 备注 ==
+* 不像[[{{tr|On Fire!}}]]，进入[[{{tr|water}}]]或者[[{{tr|honey}}]]不会取消此{{tr|debuff}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 此{{tr|debuff}}对{{tr|enemy}}的每秒伤害再次增加，从 12 增加至 24。 
+** 显然现在有更多{{tr|enemies}}会受到{{tr|Cursed Inferno}}的影响。}}
+{{history|Desktop 1.4.0.1|
+** 对玩家和{{tr|enemy}}的每秒伤害翻倍，从 6 增加至 12。
+** 来自[[{{tr|Ghoul}}]]、[[{{tr|Clinger}}]]和[[{{tr|The Twins}}|{{tr|Spazmatism}}]]的{{tr|Cursed Inferno}}的持续时间稍微降低，以减轻对玩家增加的伤害。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再造成基于百分比的伤害。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Cursed Inferno}}

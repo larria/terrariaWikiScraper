@@ -1,0 +1,50 @@
+{{exclusive|1.3.0.1}}
+{{buff infobox
+| auto = 156
+| effects = 造成伤害，无法移动或使用{{tr|items}}，{{tr|fall damage}}提高
+}}
+{{float file box|width=8em|{{transform|[[File:Stoned player.png|link=]]|mirror=y}}|受到{{tr|Stoned}}影响的玩家。}}
+
+'''{{tr|Stoned}}'''是一种[[{{tr|Debuffs}}]]，会对玩家造成 20 / {{expert|40}} / {{master|60}} 伤害{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}，并且使其变成石头，无法行动并无法使用物品。此外，[[{{tr|fall damage}}]]会大大增加，会引起{{tr|fall damage}}的最小高度缩短。如果玩家处于[[逆转{{tr|gravity}}]]下，{{tr|gravity}}会恢复正常。它也会禁用[[{{tr|mounts}}]]、[[{{tr|Hooks}}]]，并且无视任何提供{{tr|fall damage}}免疫的[[{{tr|accessories}}]]，包括[[{{tr|Lucky Horseshoe}}]]和所有类型的[[{{tr|Wings}}]]。不过，此{{tr|debuff}}的效果可被[[{{tr|Pocket Mirror}}]]（它提供对该{{tr|debuff}}的免疫效果）、[[{{tr|Djinn's Curse}}]]、和[[{{tr|Featherfall Potion}}]]抵消。
+
+此{{tr|debuff}}只能在玩家处于[[{{tr|Medusa}}]]视线中且在其攻击状态时看向她时施加。此{{tr|debuff}}会持续 1–4 秒，取决于玩家看向{{tr|Medusa}}时她已经进行了多长时间的攻击。{{tr|Medusa}}不能石化任何背朝她，或不处于她视线中的玩家。
+
+== 来源 ==
+=== 来自敌怪 ===
+{| class="terraria"
+! 来自
+! 持续时间
+! 几率
+|-
+| {{item|Medusa|wrap=y|note=（凝视攻击）}}
+| 1–4 {{tr|seconds}}
+| 1/1 (100%)
+|}
+
+== 备注 ==
+* {{key|heal}}可在{{tr|debuff}}激活时使用。
+* 当玩家同时有多个禁用玩家输入的{{tr|debuff}}在身时，以下是效果应用到玩家身上的优先级：
+** '''{{tr|Stoned}}'''
+** [[{{tr|Frozen}}]]
+** [[{{tr|Webbed}}]]
+*** 注意如果{{tr|Webbed effect}}和任何其他效果共存，玩家将不会受重力效果影响。
+
+== 历史 ==
+{{history|Desktop 1.3.5|修复了{{tr|death message}}总是为“{{gameText|DeathText.Slain|x_0=&lt;玩家名称&gt;}}”}}
+{{history|Desktop 1.3.3|现在可被[[{{tr|Pocket Mirror}}]][[{{tr|accessory}}]]免疫。}}
+{{history|Desktop 1.3.1|[[{{tr|Medusa}}]]不再能石化在她正上方的玩家。}}
+{{history|Desktop 1.3.0.4|现在{{tr|Medusa}}在攻击时需要有清晰的直线视线才能触发此{{tr|debuff}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|同步{{tr|Desktop}} 1.3.0.4 的改动引入。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|同步{{tr|Desktop}} 1.3.0.4 的改动引入。（{{icon/ps4}}）}}
+{{history|Switch 1.0.711.6|introduced=y|同步{{tr|Desktop}} 1.3.0.4 的改动引入。}}
+{{history|Mobile 1.3.0.7|introduced=y|同步{{tr|Desktop}} 1.3.0.4 的改动引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Stoned}}

@@ -1,0 +1,70 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| type = Potion
+| auto = 5211
+}}
+{{float file|[[File:Biome Sight Potion in Action.png|thumb|黑暗中{{tr|Biome Sight Potion}}的效果。]]}}
+
+'''{{tr|Biome Sight Potion}}'''是一种饮用后会给予'''{{tr|Biome Sight}}'''{{tr|buff}}的[[{{tr|buff potion}}]]。此{{tr|buff}}能够高亮显示所有[[{{tr|Corrupt}}]]、[[{{tr|Crimson}}]]或[[{{tr|Hallowed}}]]化的{{tr|tiles}}，将其分别显示为紫色、红色和粉色。{{buffduration}}
+
+== 高亮{{tr|tiles}}列表 ==
+{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Main.IsTileBiomeSightable}}
+{{options/set|item|smallicons=yes|wrap=y|icons=no}}
+; {{tr|Corruption}} {{color box|#C864F0|text=y}}
+{{itemlist|class=terraria|width=15em
+|{{item|Corrupt grass}}
+|{{item|Corrupt Jungle grass}}
+|{{item|Corrupt vines}}
+|{{item|Corruption thorny bushes}}
+|{{item|Wild Corrupt plants|image=Tiles 24 1.png/Tiles 24 6.png/Tiles 24 13.png}}
+|{{item|Vile Mushroom}}
+|{{item|Ebonstone Block}}
+|{{item|Ebonsand Block}}
+|{{item|Hardened Ebonsand Block}}
+|{{item|Ebonsandstone Block}}
+|{{item|Purple Ice Block}}
+|{{item|Lesion Block|note2=（仅在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中）}}
+}}
+; {{tr|Crimson}} {{color box|#FF6464|text=y}}
+{{itemlist|class=terraria|width=15em
+|{{item|Crimson grass}}
+|{{item|Crimson Jungle grass}}
+|{{item|Crimson vines}}
+|{{item|Crimson thorny bushes}}
+|{{item|Wild Crimson plants|image=Tiles 201 1.png/Tiles 201 6.png/Tiles 201 13.png}}
+|{{item|Vicious Mushroom}}
+|{{item|Crimstone Block}}
+|{{item|Crimsand Block}}
+|{{item|Hardened Crimsand Block}}
+|{{item|Crimsandstone Block}}
+|{{item|Red Ice Block}}
+|{{item|Flesh Block|note2=（仅在 {{tr|Don't dig up}} 和 {{tr|Get fixed boi}} {{tr|worlds}}中）}}
+}}
+; {{tr|Hallow}} {{color box|#FFA0F0|text=y}}
+{{itemlist|class=terraria|width=15em
+|{{item|Hallowed grass}}
+|{{item|Mowed Hallowed grass}}
+|{{item|Hallowed vines}}
+|{{item|Pearlstone Block}}
+|{{item|Pearlsand Block}}
+|{{item|Hardened Pearlsand Block}}
+|{{item|Pearlsandstone Block}}
+|{{item|Pink Ice Block}}
+}}<!--
+-->{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Biome Sight Potion|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Biome Sight Potion}}

@@ -1,0 +1,37 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4672
+| sound1 = Item 153.wav
+| soundcaption1 = 甩鞭
+| listcat = Whips
+| tag = vendor / vendor:Zoologist
+}}
+[[File:Leather Whip (demo).gif|thumb|400px|使用中的{{tr|Leather Whip}}。]]
+
+'''{{tr|Leather Whip}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|whip}}]]，它可以在[[{{tr|Zoologist}}]]处以 {{iteminfo|Leather Whip|buy}} 的价格购买。{{whip note|tagdmg=4|penalty=50%}}
+
+{{modifier|whip}}
+
+== 花絮 ==
+* 其{{tr|tooltip}}中，<i>{{#explode:{{itemTooltip|4672}}|<br/>|-1}}</i>一句参考了平台冒险动作角色扮演游戏{{wikipedia|Castlevania: Symphony of the Night|《恶魔城：月下夜想曲（Castlevania: Symphony of the Night）》}}，指[https://castlevania.fandom.com/wiki/Dracula 德古拉]和带着皮鞭的[https://castlevania.fandom.com/wiki/Richter_Belmont 里希特·贝尔蒙特]之间的标志性开场对话。
+* 在内部，{{tr|the Leather Whip}}需要{{tr|Bestiary}}被至少填充 10% 才能购买，{{source code ref|v=1.4.4.9|method=Terraria.Chest.SetupShop}}但由于在此之前{{tr|the Zoologist}}根本无法生成，因此她一出现该物品就总是可购买的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Knockback}}由 0.5 提升至 1。
+** 购买价格由 {{gc|15}} 降低至 {{gc|10}}。}}
+{{history|Desktop 1.4.1|购买需求由完成{{tr|Bestiary}}的 15% 改为 10%。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Whips}}
+{{Master Template Weapons
+| show-summon=yes
+}}
+
+{{language info|en=Leather Whip}}

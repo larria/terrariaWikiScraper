@@ -1,0 +1,955 @@
+{{legacy nav tab}}
+{{about|完全装饰性的{{tr|background objects}}|{{tr|background objects}}的完整列表，包括会掉落{{tr|item}}的那些|物体}}
+{{for|属于背景的不可交互环境物体|环境实体}}
+
+在[[{{tr|world creation}}]]过程中，有各种'''{{tr|ambient objects}}'''随机散布于四处，遍及大多数[[{{tr|Biome}}]]和[[{{tr|layer}}]]。这些是自然放置的{{tr|background objects}}，可以用[[{{tr|Pickaxe}}]]、[[{{tr|drill}}]]、或[[{{tr|Explosives (class)}}]]来破坏，但这样做不会造成任何效果，也不会掉落物品。它们主要用作视觉氛围，且除了冰凌以外，被破坏的{{tr|ambient objects}}不会随时间推移重新生成。
+
+{{tr|Ambient objects}}无法被玩家收集，且和部分其他自然生成的物体不同，它们不能用[[{{tr|Ecto Mist}}]]制作。不过，可以通过[[{{tr|Rubblemaker}}]]放置{{tr|Ambient objects}}。
+
+破坏某些{{tr|ambient objects}}时有 {{chance|1/6}} 几率生成一只[[{{tr|Worm}}]]（从物体中跳出），可以用[[{{tr|Bug Net}}]]将其收集。在[[{{tr|Graveyard}}]]{{tr|biomes}}中，会改为生成[[{{tr|Maggot}}]]。当{{tr|world}}中已经存在 5 只或以上的{{tr|Worms}}/{{tr|Maggots}}，就不会生成{{tr|Worm or Maggot}}。这一检测通过后，一只{{tr|Worm}}有 {{chance|1/400}} 几率被替换为[[{{tr|Gold Worm}}]]。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.KillTile_DropBait}}
+
+== 类型 ==
+=== {{tr|stalactite}}和{{tr|stalagmites}} ===
+这些{{tr|ambient objects}}被摧毁时永远不会生成{{tr|critters}}。
+
+{{flexstart|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+{| class="terraria lined sortable"
+! class=unsortable | 图像
+! {{tr|Tile ID}}
+! class=unsortable | 描述
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_0_0_0.png]]<!--
+-->[[File:Tiles_165_0_0_1.png]]<!--
+-->[[File:Tiles_165_0_0_2.png]]<!--
+-->{{flexend}}
+| 165 (0)
+| 大冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_0_2_0.png]]<!--
+-->[[File:Tiles_165_0_2_1.png]]<!--
+-->[[File:Tiles_165_0_2_2.png]]<!--
+-->{{flexend}}
+| 165 (0)
+| 小冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_1_0_0.png]]<!--
+-->[[File:Tiles_165_1_0_1.png]]<!--
+-->[[File:Tiles_165_1_0_2.png]]<!--
+-->{{flexend}}
+| 165 (1)
+| 大[[{{tr|Stone Block}}|石头]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_1_2_0.png]]<!--
+-->[[File:Tiles_165_1_2_1.png]]<!--
+-->[[File:Tiles_165_1_2_2.png]]<!--
+-->{{flexend}}
+| 165 (1)
+| 小[[{{tr|Stone Block}}|石头]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_2_0_0.png]]<!--
+-->[[File:Tiles_165_2_0_1.png]]<!--
+-->[[File:Tiles_165_2_0_2.png]]<!--
+-->{{flexend}}
+| 165 (2)
+| 被网住的猎物
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_3_2_0.png]]<!--
+-->[[File:Tiles_165_3_2_1.png]]<!--
+-->[[File:Tiles_165_3_2_2.png]]<!--
+-->{{flexend}}
+| 165 (3)
+| [[{{tr|Hive|link=y}}|{{tr|Hive}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_4_0_0.png]]<!--
+-->[[File:Tiles_165_4_0_1.png]]<!--
+-->[[File:Tiles_165_4_0_2.png]]<!--
+-->{{flexend}}
+| 165 (4)
+| 大[[{{tr|Pearlstone Block}}|{{tr|Pearlstone}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_4_2_0.png]]<!--
+-->[[File:Tiles_165_4_2_1.png]]<!--
+-->[[File:Tiles_165_4_2_2.png]]<!--
+-->{{flexend}}
+| 165 (4)
+| 小[[{{tr|Pearlstone Block}}|{{tr|Pearlstone}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_5_0_0.png]]<!--
+-->[[File:Tiles_165_5_0_1.png]]<!--
+-->[[File:Tiles_165_5_0_2.png]]<!--
+-->{{flexend}}
+| 165 (5)
+| 大[[{{tr|Ebonstone Block}}|{{tr|Ebonstone}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_5_2_0.png]]<!--
+-->[[File:Tiles_165_5_2_1.png]]<!--
+-->[[File:Tiles_165_5_2_2.png]]<!--
+-->{{flexend}}
+| 165 (5)
+| 小[[{{tr|Ebonstone Block}}|{{tr|Ebonstone}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_6_0_0.png]]<!--
+-->[[File:Tiles_165_6_0_1.png]]<!--
+-->[[File:Tiles_165_6_0_2.png]]<!--
+-->{{flexend}}
+| 165 (6)
+| 大[[{{tr|Crimstone Block}}|{{tr|Crimstone}}]]{{tr|stalactite}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_6_2_0.png]]<!--
+-->[[File:Tiles_165_6_2_1.png]]<!--
+-->[[File:Tiles_165_6_2_2.png]]<!--
+-->{{flexend}}
+| 165 (6)
+| 小[[{{tr|Crimstone Block}}|{{tr|Crimstone}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_7_0_0.png]]<!--
+-->[[File:Tiles_165_7_0_1.png]]<!--
+-->[[File:Tiles_165_7_0_2.png]]<!--
+-->{{flexend}}
+| 165 (7)
+| 大[[{{tr|Sandstone Block}}|{{tr|Sandstone}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_7_2_0.png]]<!--
+-->[[File:Tiles_165_7_2_1.png]]<!--
+-->[[File:Tiles_165_7_2_2.png]]<!--
+-->{{flexend}}
+| 165 (7)
+| 小[[{{tr|Sandstone Block}}|{{tr|Sandstone}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_8_0_0.png]]<!--
+-->[[File:Tiles_165_8_0_1.png]]<!--
+-->[[File:Tiles_165_8_0_2.png]]<!--
+-->{{flexend}}
+| 165 (8)
+| 大[[{{tr|Granite Block}}|{{tr|Granite}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_8_2_0.png]]<!--
+-->[[File:Tiles_165_8_2_1.png]]<!--
+-->[[File:Tiles_165_8_2_2.png]]<!--
+-->{{flexend}}
+| 165 (8)
+| 小[[{{tr|Granite Block}}|{{tr|Granite}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_9_0_0.png]]<!--
+-->[[File:Tiles_165_9_0_1.png]]<!--
+-->[[File:Tiles_165_9_0_2.png]]<!--
+-->{{flexend}}
+| 165 (9)
+| 大[[{{tr|Marble Block}}|{{tr|Marble}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_9_2_0.png]]<!--
+-->[[File:Tiles_165_9_2_1.png]]<!--
+-->[[File:Tiles_165_9_2_2.png]]<!--
+-->{{flexend}}
+| 165 (9)
+| 小[[{{tr|Marble Block}}|{{tr|Marble}}]]{{tr|stalactites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_10_0_0.png]]<!--
+-->[[File:Tiles_165_10_0_1.png]]<!--
+-->[[File:Tiles_165_10_0_2.png]]<!--
+-->{{flexend}}
+| 165 (10)
+| 大粉色冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_10_2_0.png]]<!--
+-->[[File:Tiles_165_10_2_1.png]]<!--
+-->[[File:Tiles_165_10_2_2.png]]<!--
+-->{{flexend}}
+| 165 (10)
+| 小粉色冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_11_0_0.png]]<!--
+-->[[File:Tiles_165_11_0_1.png]]<!--
+-->[[File:Tiles_165_11_0_2.png]]<!--
+-->{{flexend}}
+| 165 (11)
+| 大紫色冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_11_2_0.png]]<!--
+-->[[File:Tiles_165_11_2_1.png]]<!--
+-->[[File:Tiles_165_11_2_2.png]]<!--
+-->{{flexend}}
+| 165 (11)
+| 小紫色冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_12_0_0.png]]<!--
+-->[[File:Tiles_165_12_0_1.png]]<!--
+-->[[File:Tiles_165_12_0_2.png]]<!--
+-->{{flexend}}
+| 165 (12)
+| 大红色冰凌
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_12_2_0.png]]<!--
+-->[[File:Tiles_165_12_2_1.png]]<!--
+-->[[File:Tiles_165_12_2_2.png]]<!--
+-->{{flexend}}
+| 165 (12)
+| 小红色冰凌
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined sortable"
+! class=unsortable | 图像
+! {{tr|Tile ID}}
+! class=unsortable | 描述
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_1_1_0.png]]<!--
+-->[[File:Tiles_165_1_1_1.png]]<!--
+-->[[File:Tiles_165_1_1_2.png]]<!--
+-->{{flexend}}
+| 165 (1)
+| 大[[{{tr|Stone Block}}|石头]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_1_3_0.png]]<!--
+-->[[File:Tiles_165_1_3_1.png]]<!--
+-->[[File:Tiles_165_1_3_2.png]]<!--
+-->{{flexend}}
+| 165 (1)
+| 小[[{{tr|Stone Block}}|石头]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_3_3_0.png]]<!--
+-->[[File:Tiles_165_3_3_1.png]]<!--
+-->[[File:Tiles_165_3_3_2.png]]<!--
+-->{{flexend}}
+| 165 (3)
+| [[{{tr|Hive|link=y}}|{{tr|Hive}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_4_1_0.png]]<!--
+-->[[File:Tiles_165_4_1_1.png]]<!--
+-->[[File:Tiles_165_4_1_2.png]]<!--
+-->{{flexend}}
+| 165 (4)
+| 大[[{{tr|Pearlstone Block}}|{{tr|Pearlstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_4_3_0.png]]<!--
+-->[[File:Tiles_165_4_3_1.png]]<!--
+-->[[File:Tiles_165_4_3_2.png]]<!--
+-->{{flexend}}
+| 165 (4)
+| 小[[{{tr|Pearlstone Block}}|{{tr|Pearlstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_5_1_0.png]]<!--
+-->[[File:Tiles_165_5_1_1.png]]<!--
+-->[[File:Tiles_165_5_1_2.png]]<!--
+-->{{flexend}}
+| 165 (5)
+| 大[[{{tr|Ebonstone Block}}|{{tr|Ebonstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_5_3_0.png]]<!--
+-->[[File:Tiles_165_5_3_1.png]]<!--
+-->[[File:Tiles_165_5_3_2.png]]<!--
+-->{{flexend}}
+| 165 (5)
+| 小[[{{tr|Ebonstone Block}}|{{tr|Ebonstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_6_1_0.png]]<!--
+-->[[File:Tiles_165_6_1_1.png]]<!--
+-->[[File:Tiles_165_6_1_2.png]]<!--
+-->{{flexend}}
+| 165 (6)
+| 大[[{{tr|Crimstone Block}}|{{tr|Crimstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_6_3_0.png]]<!--
+-->[[File:Tiles_165_6_3_1.png]]<!--
+-->[[File:Tiles_165_6_3_2.png]]<!--
+-->{{flexend}}
+| 165 (6)
+| 小[[{{tr|Crimstone Block}}|{{tr|Crimstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_7_1_0.png]]<!--
+-->[[File:Tiles_165_7_1_1.png]]<!--
+-->[[File:Tiles_165_7_1_2.png]]<!--
+-->{{flexend}}
+| 165 (7)
+| 大[[{{tr|Sandstone Block}}|{{tr|Sandstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_7_3_0.png]]<!--
+-->[[File:Tiles_165_7_3_1.png]]<!--
+-->[[File:Tiles_165_7_3_2.png]]<!--
+-->{{flexend}}
+| 165 (7)
+| 小[[{{tr|Sandstone Block}}|{{tr|Sandstone}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_8_1_0.png]]<!--
+-->[[File:Tiles_165_8_1_1.png]]<!--
+-->[[File:Tiles_165_8_1_2.png]]<!--
+-->{{flexend}}
+| 165 (8)
+| 大[[{{tr|Granite Block}}|{{tr|Granite}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_8_3_0.png]]<!--
+-->[[File:Tiles_165_8_3_1.png]]<!--
+-->[[File:Tiles_165_8_3_2.png]]<!--
+-->{{flexend}}
+| 165 (8)
+| 小[[{{tr|Granite Block}}|{{tr|Granite}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_9_1_0.png]]<!--
+-->[[File:Tiles_165_9_1_1.png]]<!--
+-->[[File:Tiles_165_9_1_2.png]]<!--
+-->{{flexend}}
+| 165 (9)
+| 大[[{{tr|Marble Block}}|{{tr|Marble}}]]{{tr|stalagmites}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_165_9_3_0.png]]<!--
+-->[[File:Tiles_165_9_3_1.png]]<!--
+-->[[File:Tiles_165_9_3_2.png]]<!--
+-->{{flexend}}
+| 165 (9)
+| 小[[{{tr|Marble Block}}|{{tr|Marble}}]]{{tr|stalagmites}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+=== 小堆 ===
+{| class="terraria lined sortable"
+! class=unsortable | 图像
+! {{tr|Tile ID}}
+! class=unsortable | 描述
+! {{hover text|{{tr|Critter}}|被摧毁时可能生成{{tr|Worm, Gold Worm, or Maggot}}，如本文章开头所述}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_0.png]]<!--
+-->[[File:Tiles_185_1.png]]<!--
+-->[[File:Tiles_185_2.png]]<!--
+-->[[File:Tiles_185_3.png]]<!--
+-->[[File:Tiles_185_4.png]]<!--
+-->[[File:Tiles_185_5.png]]<!--
+-->{{flexend}}
+| 185 (0)
+| 微小[[{{tr|Stone Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_6.png]]<!--
+-->[[File:Tiles_185_7.png]]<!--
+-->[[File:Tiles_185_8.png]]<!--
+-->[[File:Tiles_185_9.png]]<!--
+-->[[File:Tiles_185_10.png]]<!--
+-->[[File:Tiles_185_11.png]]<!--
+-->{{flexend}}
+| 185 (1)
+| 微小[[{{tr|Dirt Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_12.png]]<!--
+-->[[File:Tiles_185_13.png]]<!--
+-->[[File:Tiles_185_14.png]]<!--
+-->[[File:Tiles_185_15.png]]<!--
+-->[[File:Tiles_185_16.png]]<!--
+-->[[File:Tiles_185_17.png]]<!--
+-->[[File:Tiles_185_18.png]]<!--
+-->[[File:Tiles_185_19.png]]<!--
+-->{{flexend}}
+| 185 (2)
+| {{tr|Skulls and bones}}
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_20.png]]<!--
+-->[[File:Tiles_185_21.png]]<!--
+-->[[File:Tiles_185_22.png]]<!--
+-->[[File:Tiles_185_23.png]]<!--
+-->[[File:Tiles_185_24.png]]<!--
+-->[[File:Tiles_185_25.png]]<!--
+-->[[File:Tiles_185_26.png]]<!--
+-->[[File:Tiles_185_27.png]]<!--
+-->{{flexend}}
+| 185 (3)
+| 血腥{{tr|skulls and bones}}
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_28.png]]<!--
+-->[[File:Tiles_185_29.png]]<!--
+-->[[File:Tiles_185_30.png]]<!--
+-->[[File:Tiles_185_31.png]]<!--
+-->{{flexend}}
+| 185 (4)
+| [[{{tr|Iron Pickaxe}}]]的头、[[{{tr|Iron Axe}}]]的头、[[{{tr|Iron Broadsword}}]]的柄、[[{{tr|Iron Hammer}}]]的头
+| {{no}}
+|-
+| [[File:Tiles_185_32.png]]
+| 185 (4)
+| [[{{tr|Mining Helmet}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_33.png]]<!--
+-->[[File:Tiles_185_34.png]]<!--
+-->[[File:Tiles_185_35.png]]<!--
+-->{{flexend}}
+| 185 (4)
+| [[{{tr|Wooden Arrow}}]]、断掉的{{tr|Wooden Arrow}}、损坏的[[{{tr|Wooden Bow}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_36.png]]<!--
+-->[[File:Tiles_185_37.png]]<!--
+-->[[File:Tiles_185_38.png]]<!--
+-->[[File:Tiles_185_39.png]]<!--
+-->[[File:Tiles_185_40.png]]<!--
+-->[[File:Tiles_185_41.png]]<!--
+-->{{flexend}}
+| 185 (5)
+| 微小[[{{tr|Snow Block}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_42.png]]<!--
+-->[[File:Tiles_185_43.png]]<!--
+-->[[File:Tiles_185_44.png]]<!--
+-->[[File:Tiles_185_45.png]]<!--
+-->[[File:Tiles_185_46.png]]<!--
+-->[[File:Tiles_185_47.png]]<!--
+-->{{flexend}}
+| 185 (6)
+| 微小[[{{tr|Ice Block}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_48.png]]<!--
+-->[[File:Tiles_185_49.png]]<!--
+-->[[File:Tiles_185_50.png]]<!--
+-->[[File:Tiles_185_51.png]]<!--
+-->[[File:Tiles_185_52.png]]<!--
+-->[[File:Tiles_185_53.png]]<!--
+-->{{flexend}}
+| 185 (7)
+| 微小{{tr|spider eggs}}团
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_54.png]]<!--
+-->[[File:Tiles_185_55.png]]<!--
+-->[[File:Tiles_185_56.png]]<!--
+-->[[File:Tiles_185_57.png]]<!--
+-->[[File:Tiles_185_58.png]]<!--
+-->[[File:Tiles_185_59.png]]<!--
+-->{{flexend}}
+| 185 (8)
+| 微小[[{{tr|Sandstone Block}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_60.png]]<!--
+-->[[File:Tiles_185_61.png]]<!--
+-->[[File:Tiles_185_62.png]]<!--
+-->[[File:Tiles_185_63.png]]<!--
+-->[[File:Tiles_185_64.png]]<!--
+-->[[File:Tiles_185_65.png]]<!--
+-->{{flexend}}
+| 185 (9)
+| 微小[[{{tr|Granite Block}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_66.png]]<!--
+-->[[File:Tiles_185_67.png]]<!--
+-->[[File:Tiles_185_68.png]]<!--
+-->[[File:Tiles_185_69.png]]<!--
+-->[[File:Tiles_185_70.png]]<!--
+-->[[File:Tiles_185_71.png]]<!--
+-->{{flexend}}
+| 185 (10)
+| 微小[[{{tr|Marble Block}}]]
+| {{no}}
+|-
+| [[File:Tiles_185_72.png]]
+| 185 (11)
+| 微小带叶[[{{tr|Living Wood}}]]根
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185_73.png]]<!--
+-->[[File:Tiles_185_74.png]]<!--
+-->[[File:Tiles_185_75.png]]<!--
+-->[[File:Tiles_185_76.png]]<!--
+-->{{flexend}}
+| 185 (12)
+| 微小[[{{tr|Sand Blocks}}|{{tr|sand}}]]堆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_0.png]]<!--
+-->[[File:Tiles_185b_1.png]]<!--
+-->[[File:Tiles_185b_2.png]]<!--
+-->[[File:Tiles_185b_3.png]]<!--
+-->[[File:Tiles_185b_4.png]]<!--
+-->[[File:Tiles_185b_5.png]]<!--
+-->{{flexend}}
+| 185 (13)
+| 小[[{{tr|Stone Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_6.png]]<!--
+-->[[File:Tiles_185b_7.png]]<!--
+-->[[File:Tiles_185b_8.png]]<!--
+-->[[File:Tiles_185b_9.png]]<!--
+-->[[File:Tiles_185b_10.png]]<!--
+-->{{flexend}}
+| 185 (14)
+| 小骨堆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_11.png]]<!--
+-->[[File:Tiles_185b_12.png]]<!--
+-->[[File:Tiles_185b_13.png]]<!--
+-->[[File:Tiles_185b_14.png]]<!--
+-->[[File:Tiles_185b_15.png]]<!--
+-->{{flexend}}
+| 185 (15)
+| 血腥骨堆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_25.png]]<!--
+-->[[File:Tiles_185b_26.png]]<!--
+-->[[File:Tiles_185b_27.png]]<!--
+-->[[File:Tiles_185b_28.png]]<!--
+-->[[File:Tiles_185b_29.png]]<!--
+-->[[File:Tiles_185b_30.png]]<!--
+-->{{flexend}}
+| 185 (25)
+| 小[[{{tr|Snow Block}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_31.png]]<!--
+-->[[File:Tiles_185b_32.png]]<!--
+-->[[File:Tiles_185b_33.png]]<!--
+-->{{flexend}}
+| 185 (26)
+| 覆盖[[{{tr|Cobwebs}}]]的[[{{tr|Chair}}]]、[[{{tr|Work Bench}}]]、和[[{{tr|Toilet}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_34.png]]<!--
+-->[[File:Tiles_185b_35.png]]<!--
+-->[[File:Tiles_185b_36.png]]<!--
+-->[[File:Tiles_185b_37.png]]<!--
+-->{{flexend}}
+| 185 (27)
+| 小{{tr|spider eggs}}团
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_38.png]]<!--
+-->[[File:Tiles_185b_39.png]]<!--
+-->[[File:Tiles_185b_40.png]]<!--
+-->{{flexend}}
+| 185 (28)
+| 小长草[[{{tr|Stone Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_41.png]]<!--
+-->[[File:Tiles_185b_42.png]]<!--
+-->[[File:Tiles_185b_43.png]]<!--
+-->[[File:Tiles_185b_44.png]]<!--
+-->[[File:Tiles_185b_45.png]]<!--
+-->[[File:Tiles_185b_46.png]]<!--
+-->{{flexend}}
+| 185 (29)
+| 小[[{{tr|Sandstone Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_47.png]]<!--
+-->[[File:Tiles_185b_48.png]]<!--
+-->[[File:Tiles_185b_49.png]]<!--
+-->[[File:Tiles_185b_50.png]]<!--
+-->[[File:Tiles_185b_51.png]]<!--
+-->[[File:Tiles_185b_52.png]]<!--
+-->{{flexend}}
+| 185 (30)
+| 小[[{{tr|Granite Block}}]]
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_53.png]]<!--
+-->[[File:Tiles_185b_54.png]]<!--
+-->[[File:Tiles_185b_55.png]]<!--
+-->[[File:Tiles_185b_56.png]]<!--
+-->[[File:Tiles_185b_57.png]]<!--
+-->[[File:Tiles_185b_58.png]]<!--
+-->{{flexend}}
+| 185 (31)
+| 小[[{{tr|Marble Block}}|{{tr|Marble}}]]建筑废墟
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_59.png]]<!--
+-->[[File:Tiles_185b_60.png]]<!--
+-->[[File:Tiles_185b_61.png]]<!--
+-->{{flexend}}
+| 185 (32)
+| 小带叶[[{{tr|Living Wood}}]]根
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_185b_62.png]]<!--
+-->[[File:Tiles_185b_63.png]]<!--
+-->[[File:Tiles_185b_64.png]]<!--
+-->{{flexend}}
+| 185 (33)
+| 小[[{{tr|Sand Blocks}}|{{tr|sand}}]]堆
+| {{no}}
+|}
+
+=== 大堆 ===
+{| class="terraria lined sortable"
+! class=unsortable | 图像
+! {{tr|Tile ID}}
+! class=unsortable | 描述
+! {{hover text|{{tr|Critter}}|被摧毁时可能生成{{tr|Worm, Gold Worm, or Maggot}}，如本文章开头所述}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_186_0.png]]<!--
+-->[[File:Tiles_186_1.png]]<!--
+-->[[File:Tiles_186_2.png]]<!--
+-->[[File:Tiles_186_3.png]]<!--
+-->[[File:Tiles_186_4.png]]<!--
+-->[[File:Tiles_186_5.png]]<!--
+-->{{flexend}}
+| 186 (0)
+| {{tr|Bone and skull}}堆
+| {{no}}
+|-
+| [[File:Tiles_186_6.png]]
+| 186 (1)
+| 被[[{{tr|Swords}}|{{tr|sword}}]]穿透的[[{{tr|Skeleton}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_186_7.png]]<!--
+-->[[File:Tiles_186_8.png]]<!--
+-->[[File:Tiles_186_9.png]]<!--
+-->[[File:Tiles_186_10.png]]<!--
+-->[[File:Tiles_186_11.png]]<!--
+-->[[File:Tiles_186_12.png]]<!--
+-->{{flexend}}
+| 186 (2)
+| {{tr|Stone}}堆
+| {{yes}}
+|-
+| [[File:Tiles_186_13.png]]
+| 186 (3)
+| {{tr|Stone}}堆和[[{{tr|Mining Helmet}}]]
+| {{no}}
+|-
+| [[File:Tiles_186_14.png]]
+| 186 (3)
+| 其中有[[{{tr|Tin Pickaxe}}]]的{{tr|Stone}}堆
+| {{no}}
+|-
+| [[File:Tiles_186_15.png]]
+| 186 (3)
+| 其中有{{tr|sword}}的{{tr|Stone}}堆（似乎是[[{{tr|Tin Broadsword}}]]）
+
+作为石中[[{{tr|Enchanted Sword}}]]/[[{{tr|Terragrim}}]]的赝品出现
+| {{no}}
+|-
+| [[File:Tiles_186_22.png]]
+| 186 (7)
+| 覆盖[[{{tr|Cobweb}}]]的颠倒的[[{{tr|Table}}]]
+| {{no}}
+|-
+| [[File:Tiles_186_23.png]]
+| 186 (7)
+| 覆盖{{tr|Cobwebs}}的翻倒的[[{{tr|Grandfather Clock}}]]
+| {{no}}
+|-
+| [[File:Tiles_186_24.png]]
+| 186 (7)
+| 覆盖{{tr|Cobwebs}}的损坏的[[{{tr|Chest}}]]
+| {{no}}
+|-
+| [[File:Tiles_186_25.png]]
+| 186 (7)
+| 覆盖{{tr|Cobwebs}}的损坏的[[{{tr|Gold Chandelier}}]]
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_186_26.png]]<!--
+-->[[File:Tiles_186_27.png]]<!--
+-->[[File:Tiles_186_28.png]]<!--
+-->[[File:Tiles_186_29.png]]<!--
+-->[[File:Tiles_186_30.png]]<!--
+-->[[File:Tiles_186_31.png]]<!--
+-->{{flexend}}
+| 186 (8)
+| [[{{tr|Snow Block}}|{{tr|Snow}}]]堆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_186_32.png]]<!--
+-->[[File:Tiles_186_33.png]]<!--
+-->[[File:Tiles_186_34.png]]<!--
+-->{{flexend}}
+| 186 (9)
+| 覆盖[[{{tr|Mushroom grass}}]]的大{{tr|stones}}堆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_0.png]]<!--
+-->[[File:Tiles_187_1.png]]<!--
+-->[[File:Tiles_187_2.png]]<!--
+-->{{flexend}}
+| 187 (0)
+| 带[[{{tr|Jungle grass}}]]的大{{tr|stones}}堆
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_3.png]]<!--
+-->[[File:Tiles_187_4.png]]<!--
+-->[[File:Tiles_187_5.png]]<!--
+-->{{flexend}}
+| 187 (1)
+| 带[[{{tr|Jungle grass}}]]的大[[{{tr|Mud Block}}|{{tr|mud}}]]堆
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_6.png]]<!--
+-->[[File:Tiles_187_7.png]]<!--
+-->[[File:Tiles_187_8.png]]<!--
+-->{{flexend}}
+| 187 (2)
+| 带有一点[[{{tr|Hellstone}}]]的大[[{{tr|Ash Block}}|{{tr|ash}}]]堆
+| {{no}}
+|-
+| [[File:Tiles_187_9.png]]
+| 187 (3)
+| 覆盖{{tr|Cobwebs}}的{{tr|Bones}}
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_10.png]]<!--
+-->[[File:Tiles_187_11.png]]<!--
+-->[[File:Tiles_187_12.png]]<!--
+-->{{flexend}}
+| 187 (3)
+| 大{{tr|spider eggs}}团
+| {{no}}
+|-
+| [[File:Tiles_187_13.png]]
+| 187 (3)
+| 覆盖{{tr|Cobwebs}}的死尸
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_14.png]]<!--
+-->[[File:Tiles_187_15.png]]<!--
+-->[[File:Tiles_187_16.png]]<!--
+-->{{flexend}}
+| 187 (4)
+| 带[[{{tr|grass}}]]的大{{tr|stones}}堆
+| {{yes}}
+|-
+| [[File:Tiles_187_18.png]]
+| 187 (6)
+| 带有带血的刀的[[{{tr|Lihzahrd}}]]献祭桌
+| {{yes}}
+|-
+| [[File:Tiles_187_19.png]]
+| 187 (6)
+| 损坏的[[{{tr|Golem}}]]头
+| {{yes}}
+|-
+| [[File:Tiles_187_20.png]]
+| 187 (6)
+| 位于[[{{tr|Lihzahrd Brick}}]]上的{{tr|Skull}}
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_21.png]]<!--
+-->[[File:Tiles_187_22.png]]<!--
+-->{{flexend}}
+| 187 (7)
+| 带苔藓的{{tr|cages}}（空的和有鸡的）
+| {{no}}
+|-
+| [[File:Tiles_187_23.png]]
+| 187 (7)
+| 生锈的[[{{tr|Minecart}}]]
+| {{no}}
+|-
+| [[File:Tiles_187_24.png]]
+| 187 (7)
+| 旧水井
+| {{no}}
+|-
+| [[File:Tiles_187_25.png]]
+| 187 (7)
+| {{tr|dirt}}堆和一把铲子
+| {{no}}
+|-
+| [[File:Tiles_187_26.png]]
+| 187 (7)
+| 帐篷
+| {{no}}
+|-
+| [[File:Tiles_187_27.png]]
+| 187 (7)
+| 装满土壤的生锈手推车
+| {{no}}
+|-
+| [[File:Tiles_187_28.png]]
+| 187 (7)
+| 系有{{tr|rope}}的杆
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_29.png]]<!--
+-->[[File:Tiles_187_30.png]]<!--
+-->[[File:Tiles_187_31.png]]<!--
+-->{{flexend}}
+| 187 (8)
+| 大{{tr|Sandstone}}{{tr|stalagmites}}
+| {{no}}
+|-
+| [[File:Tiles_187_32.png]]
+| 187 (8)
+| 大蚁丘
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_33.png]]<!--
+-->[[File:Tiles_187_34.png]]<!--
+-->{{flexend}}
+| 187 (8)
+| 大蚁穴
+| {{no}}
+|-
+| [[File:Tiles_187_35.png]]
+| 187 (9)
+| 大[[{{tr|Granite Block}}|{{tr|Granite}}]]{{tr|boulder}}
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_36.png]]<!--
+-->[[File:Tiles_187_37.png]]<!--
+-->[[File:Tiles_187_38.png]]<!--
+-->[[File:Tiles_187_39.png]]<!--
+-->[[File:Tiles_187_40.png]]<!--
+-->{{flexend}}
+| 187 (9)
+| 大[[{{tr|Granite Block}}|{{tr|Granite}}]]石块和{{tr|stalagmites}}
+| {{yes}}
+|-
+| [[File:Tiles_187_41.png]]
+| 187 (10)
+| 大[[{{tr|Marble Block}}|{{tr|Marble}}]]{{tr|boulder}}
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_42.png]]<!--
+-->[[File:Tiles_187_43.png]]<!--
+-->[[File:Tiles_187_44.png]]<!--
+-->[[File:Tiles_187_45.png]]<!--
+-->[[File:Tiles_187_46.png]]<!--
+-->{{flexend}}
+| 187 (10)
+| 大[[{{tr|Marble Block}}|{{tr|Marble}}]]建筑废墟
+| {{no}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_47.png]]<!--
+-->[[File:Tiles_187_48.png]]<!--
+-->{{flexend}}
+| 187 (11)
+| 大带叶[[{{tr|Living Wood}}]]根
+| {{no}}
+|-
+| [[File:Tiles_187_49.png]]
+| 187 (11)
+| 大带叶[[{{tr|Living Wood}}]]根
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_50.png]]<!--
+-->[[File:Tiles_187_51.png]]<!--
+-->{{flexend}}
+| 187 (12)
+| 叶丛
+| {{yes}}
+|-
+| {{flexstart|style=gap: 5px}}<!--
+-->[[File:Tiles_187_52.png]]<!--
+-->[[File:Tiles_187_53.png]]<!--
+-->{{flexend}}
+| 187 (13)
+| 牛的骨架和{{tr|skull}}
+| {{yes}}
+|-
+| [[File:Tiles_187_54.png]]
+| 187 (13)
+| [[{{tr|Vulture}}]]骨架
+| {{yes}}
+|}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可以用[[{{tr|Rubblemaker}}]]放置。}}
+{{history|Desktop 1.4.0.1|
+** 多个{{tr|ambient objects}}的外观更新。
+** 添加了冰凌的{{tr|Corrupt, Crimson, and Hallowed}}{{tr|variants}}。
+** 添加了新的{{tr|Granite, Marble, Living Tree, and Desert}}{{tr|ambient objects}}。}}
+{{history|Desktop 1.2.4|某些{{tr|ambient objects}}现在在被破坏时有几率生成[[{{tr|Worm}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{all versions}}
+[[Category:背景物体物品]]
+
+{{language info|en=Ambient objects}}

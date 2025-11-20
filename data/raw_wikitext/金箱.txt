@@ -1,0 +1,373 @@
+{{item infobox
+| imagealt = [[File:Locked Gold Chest.png|{{tr|Locked Gold Chest}}|link=]] [[File:Gold Chest.png|{{tr|Gold Chest}}|link=]]
+| type = Furniture/Storage 
+| width = 2
+| height = 2
+| auto = 306
+| tags = plunder
+}}
+{{dablink|不要同{{eil|Golden Chest}}，来自[[{{tr|Pirate Invasion}}]]中的掉落物混淆。}}
+
+'''{{tr|Gold Chest}}'''是一种{{tr|naturally generated}}的[[{{tr|chest}}]]，内含多种不同的{{tr|loot}}。每个{{tr|chest}}都会包含一个特殊{{tr|item}}、[[{{tr|coins}}]]和一些其它的常见{{tr|item}}。{{tr|Gold Chests}}可以在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]的[[{{tr|Underground Cabin}}]]中，以及[[{{tr|Underground Jungle}}]]找到，还可以在[[{{tr|Dungeon}}]]中以{{tr|Locked Gold Chests}}的形式找到。每个{{tr|Locked Gold Chests}}都需要一把[[{{tr|Golden Key}}]]来开启。
+
+除了初始{{tr|item}}不同之外，{{tr|Gold Chests}}和其它{{tr|chests}}类似。从{{tr|Gold Chest}}中移除所有物品之后才能用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]进行采挖。之后它可以被拾取，{{tr|place}}，并像其它{{tr|chest}}一样使用，具有 40 {{tr|slots}}的{{tr|storage}}空间。它和其它{{tr|chest}}仅有的三处不同为：{{tr|Gold Chests}}无法被{{tr|craft}}，只会在{{tr|world creation}}时在{{tr|random}}位置生成；它们也可以在 [[{{tr|NPC}}]] 处以 {{iteminfo|Gold Chest|sell}} 进行{{tr|sell}}，高于普通{{tr|chest}} {{iteminfo|Chest|sell}} 的{{tr|sell price}}。{{tr|Gold Chests}}暴露在[[{{tr|light source}}]]下时会闪烁，类似于{{tr|coins}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Gold Chest|expectedrows=1}}
+
+== 拾取物 ==
+每一个{{tr|naturally generated}}的{{tr|chest}}（下文称“天然{{tr|chest}}”）内含有何种{{tr|item}}取决于其所生成的位置。每一个天然{{tr|chest}}中都包含有一件“稀有{{tr|item}}”并搭配若干件从下列“一般{{tr|item}}”列表内{{tr|random}}选出的{{tr|item}}。在创建世界，系统生成天然{{tr|chest}}时，一件从下列表格中挑选而出的稀有{{tr|item}}总是会位于{{tr|chest}}内的第一个物品格，然后，系统将会以下列一般{{tr|item}}表格中的每一个区域为单位进行检索，决定是否将该区域{{tr|item}}放入{{tr|chest}}，若是，则系统将会按照一定的规则向{{tr|chest}}内添加一种该区域的一般{{tr|item}}。
+
+这个规则为：按照下列表格，同一个天然{{tr|chest}}内不会出现两种位于相同区域的物品——例如按照下列表格，[[{{tr|Wooden Arrow}}]]与[[{{tr|Shuriken}}]]位于同一个区域，则它们不可能同时生成于同一个天然{{tr|chest}}里。
+
+=== [[{{tr|Underground}}]] ===
+* 特别地，同样属于稀有物品的[[{{tr|Extractinator}}]]相对于其它稀有物品更加地“稀有”，它的生成率为 5%。
+* [[{{tr|Flare Gun}}]]总是与[[{{tr|Flare}}]]一同生成。
+* {{tr|underground}}有时会在{{tr|Cabin}}之外{{tr|spawn}}{{tr|Golden Chest}}（指的不是在{{tr|surface}}的{{tr|chest}}），并且依旧包含常规的{{tr|loot}}，不过这种情况比较少见。
+** 然而在{{eversions|1.4.0.1}}，{{tr|Golden Chests}}经常在{{tr|cabins}}外生成。
+* 天然{{tr|chest}}内不会出现由当前世界内无法开采到的{{tr|ore}}所制成的[[{{tr|Bars}}]]（例如，该世界没有[[{{tr|Iron Ore}}]]，则{{tr|chest}}内不会生成[[{{tr|Iron Bar}}]]）
+
+{{flexstart|alignitems=top}}
+{| class="terraria lined"
+! colspan=2 | 稀有物品
+|-
+! {{tr|Item}} !! 数量
+|-
+| {{item|Band of Regeneration}} || 1
+|-
+| {{item|Magic Mirror}} || 1
+|-
+| {{item|Cloud in a Bottle}} || 1
+|-
+| {{item|Hermes Boots}} || 1
+|-
+| {{item|Mace}} || 1
+|-
+| {{item|Enchanted Boomerang}}（仅{{eicons|1.4.0.1|invert=y}}）|| 1
+|-
+| {{item|Shoe Spikes}} || 1
+|-
+| style="border:0;" | {{item|Flare Gun}} || style="border:0;" | 1
+|-
+| {{item|Flare}} || 25-50
+|-
+| {{item|Extractinator}} || 1
+|}
+
+{| class="terraria lined"
+! colspan=4 | 一般物品
+|-
+! colspan=2 | 几率 !! {{tr|Item}} !! 数量
+|-
+| 33.33%
+| 1/3
+| {{item|Bomb}}
+| 10-19
+|-
+| 20%
+| 1/5
+| {{item|Angel Statue}}
+| 1
+|-
+| 33.33%
+| 1/3
+| {{item|Rope}}
+| 50-100
+|-
+| rowspan=4 | 50%
+| rowspan=4 | 1/2
+| style="border:0;" | {{item|Iron Bar}}
+| rowspan=4 | 5-14
+|-
+| style="border:0;" | {{item|Lead Bar}}
+|-
+| style="border:0;" | {{item|Silver Bar}}
+|-
+| {{item|Tungsten Bar}}
+|-
+| rowspan=2 | 50%
+| rowspan=2 | 1/2
+| style="border:0;" | {{item|Wooden Arrow}}
+| rowspan=2 | 25-49
+|-
+| {{item|Shuriken}}
+|-
+| 50%
+| 1/2
+| {{item|Lesser Healing Potion}}
+| 3-5
+|-
+| rowspan=9 | 66.67%
+| rowspan=9 | 2/3
+| style="border:0;" | {{item|Regeneration Potion}}
+| rowspan=9 | 1-2
+|-
+| style="border:0;" | {{item|Shine Potion}}
+|-
+| style="border:0;" | {{item|Night Owl Potion}}
+|-
+| style="border:0;" | {{item|Swiftness Potion}}
+|-
+| style="border:0;" | {{item|Archery Potion}}
+|-
+| style="border:0;" | {{item|Gills Potion}}
+|-
+| style="border:0;" | {{item|Hunter Potion}}
+|-
+| style="border:0;" | {{item|Mining Potion}}
+|-
+| {{item|Dangersense Potion}}
+|-
+| 50%
+| 1/2
+| {{item|Torch}}
+| 10-20
+|-
+| 66.67%
+| 2/3
+| {{item|Recall Potion}}
+| 1-2
+|-
+| 50%
+| 1/2
+| {{item|Silver Coin}}
+| 50-89
+|-
+|}
+{{flexend}}
+
+=== [[{{tr|Cavern}}]] ===
+* 生成在距离{{tr|world}}底部 250 格以内的{{tr|Gold Chests}}中的一般{{tr|item}}与[[{{tr|Shadow Chests}}]]相同。
+* 特别地，同样属于稀有物品的[[{{tr|Lava Charm}}]]相对于其他的稀有物品更加地“稀有”，它的生成率为 2.5％。
+* 类似地，[[{{tr|Extractinator}}]]于洞穴天然{{tr|chest}}内的生成概率只有 6.5％。
+* 同样地，在洞穴天然{{tr|chest}}内，[[{{tr|Flare Gun}}]]与[[{{tr|Flare}}]]总是同时生成。
+* 同上，洞穴天然{{tr|chest}}内也不会出现由当前世界内无法开采到的矿物所制成的[[{{tr|Bars}}]]（例如，该世界没有{{tr|Iron Ore}}，则{{tr|chest}}内不会生成{{tr|Iron Bar}}）。
+
+{{flexstart|alignitems=top}}
+{| class="terraria lined"
+|-
+! colspan="2" | 稀有物品
+|-
+! 物品 !! 数量
+|-
+| {{item|Band of Regeneration}} || 1
+|-
+| {{item|Magic Mirror}} || 1
+|-
+| {{item|Cloud in a Bottle}} || 1
+|-
+| {{item|Hermes Boots}} || 1
+|-
+| {{item|Shoe Spikes}} || 1
+|-
+| style="border:0;" | {{item|Flare Gun}} || style="border:0;" | 1
+|-
+| {{item|Flare}} || 25-50
+|-
+| {{item|Extractinator}} || 1
+|-
+| {{item|Lava Charm}} || 1
+|-
+| {{item|Wolf Fang}} || 1
+|}
+{| class="terraria lined"
+! colspan=4 | 一般物品
+|-
+! colspan=2 | 几率 !! {{tr|Item}} !! 数量
+|-
+| 20%
+| 1/5
+| {{item|Suspicious Looking Eye}}
+| 1
+|-
+| 33.33%
+| 1/3
+| {{item|Dynamite}}
+| 1
+|-
+| 25%
+| 1/4
+| {{item|Jester's Arrow}}
+| 25-50
+|-
+| rowspan=4 | 50%
+| rowspan=4 | 1/2
+| style="border:0;" | {{item|Silver Bar}}
+| rowspan=4 | 3-10
+|-
+| style="border:0;" | {{item|Tungsten Bar}}
+|-
+| style="border:0;" | {{item|Gold Bar}}
+|-
+| {{item|Platinum Bar}}
+|-
+| rowspan=2 | 50%
+| rowspan=2 | 1/2
+| style="border:0;" | {{item|Flaming Arrow}}
+| rowspan=2 | 25-50
+|-
+| {{item|Throwing Knife}}
+|-
+| 50%
+| 1/2
+| {{item|Healing Potion}}
+| 3-5
+|-
+| rowspan=6 | 66.67%
+| rowspan=6 | 2/3
+| style="border:0;" | {{item|Spelunker Potion}}
+| rowspan=6 | 1-2
+|-
+| style="border:0;" | {{item|Featherfall Potion}}
+|-
+| style="border:0;" | {{item|Night Owl Potion}}
+|-
+| style="border:0;" | {{item|Water Walking Potion}}
+|-
+| style="border:0;" | {{item|Archery Potion}}
+|-
+| {{item|Gravitation Potion}}
+|-
+| rowspan=6 | 33.33%
+| rowspan=6 | 1/3
+| style="border:0;" | {{item|Thorns Potion}}
+| rowspan=6 | 1-2
+|-
+| style="border:0;" | {{item|Water Walking Potion}}
+|-
+| style="border:0;" | {{item|Invisibility Potion}}
+|-
+| style="border:0;" | {{item|Hunter Potion}}
+|-
+| style="border:0;" | {{item|Dangersense Potion}} <!-- Dangersense actually occupies two slots in this part, making it more likely, but current table format doesn't have a way to represent that -->
+|-
+| {{item|Teleportation Potion}}
+|-
+| 50%
+| 1/2
+| {{item|Recall Potion}}
+| 1-2
+|-
+| rowspan=2 | 50%
+| rowspan=2 | 1/2
+| style="border:0;" | {{item|Torch}}
+| rowspan=2 | 15-29
+|-
+| {{item|Glowstick}}
+|-
+| 50%
+| 1/2
+| {{item|Gold Coin}}
+| 1-2
+|-
+|}
+{{flexend}}
+
+=== [[{{tr|Dungeon}}]] ===
+* {{tr|Dungeon}}中的{{tr|Gold Chests}}是锁上的，每个{{tr|Gold Chests}}都需要使用一个[[{{tr|Golden Key}}]]来开启。
+** {{tr|Dungeon}}中的普通木{{tr|Chests}}总是会包含{{tr|Golden Key}}，以及和高度有关的一般物品。
+* {{tr|Dungeon}}中的{{tr|Gold Chests}}会包含下列稀有物品中的一个，以及上方列出的普通{{tr|Gold Chest}}具有的一般物品，取决于它们所在的高度：[[{{tr|Gold Chest|link=y}}#{{tr|Underground}}|{{tr|Underground}}]]或[[{{tr|Gold Chest|link=y}}#{{tr|Cavern}}|{{tr|Caverns}}]]。在{{eversions|1.4.0.1}}中，它们有 {{chance|1/8}} 的几率包含[[{{tr|Bone Welder}}]]，有 {{chance|1/3}} 的几率包含[[{{tr|Shadow Key}}]]。见[[Talk:{{tr|Gold Chest}}#地牢金箱几率|讨论页面]]获取详细的{{tr|Dungeon}}中的{{tr|Gold Chests}}的物品分布信息。
+
+{{loot
+
+|:group:start|1|
+  |Muramasa||1/7
+  |Cobalt Shield||1/7
+  |:custom:Aqua Scepter<!--Do not storage Bubble Gun to cargo-->:{{item|Aqua Scepter|note2=({{eicons|Don't dig up|small=y}} 在普通世界中)}}<br/>{{item|Bubble Gun|note2=({{eicons|Don't dig up|small=y}} 在 [[don't dig up]] 和 [[get fixed boi]] 世界中)}}||1/7
+  |Blue Moon||1/7
+  |Magic Missile||1/7
+  |Valor||1/7
+  |Handgun||1/7
+|:group:end|-----------------|-
+
+| Shadow Key|1|1/3
+|:group:end|-----------------|-
+
+| Bone Welder|1|1/8
+
+| cargo = <includeonly>n</includeonly>
+}}
+
+=== [[{{tr|Pyramid}}]] ===
+* 除了可能包含下表中的稀有物品外，生成于{{tr|Pyramid}}里的天然{{tr|Gold Chest}}同样可能会包含生成于[[{{tr|Gold Chest}}#地下|地下]]或[[{{tr|Gold Chest}}#洞穴|洞穴]]的天然{{tr|Gold Chest}}中能找到的一般物品，这取决于这个{{tr|chest}}所处的环境。
+* 类似于{{tr|Flare Gun}}和{{tr|Flare}}，[[{{tr|Pharaoh's Mask}}]]会与[[{{tr|Pharaoh's Robe}}]]一同生成。
+
+{{loot
+| title = @primary
+
+|:group:start||{{chance|1/9}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}}  {{eicons|1.4.4|invert=y|small=y}}
+  |Pharaoh's Mask|1|
+  |Pharaoh's Robe|1|
+|:group:end|-----------------|-
+
+| Flying Carpet|1|{{chance|4/9}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}}  {{eicons|1.4.4|invert=y|small=y}}
+| Sandstorm in a Bottle|1|{{chance|4/9}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}}  {{eicons|1.4.4|invert=y|small=y}}
+
+| cargo = <includeonly>n</includeonly>
+}}
+* 在{{eil|Celebrationmk10}}世界中，{{tr|Pyramid}}中的{{tr|Gold Chest}}必然包含{{tr|Pharaoh's set}}，并且它们总是包含{{tr|Flying Carpet }}或者{{tr|Sandstorm in a Bottle}}
+{{loot
+| title = 主要物品 <small>(仅有两个)</small>{{note|block=y|paren=y|small=y|{{eil|Celebrationmk10}}}}
+
+|:group:start||1
+  |Pharaoh's Mask|1|
+  |Pharaoh's Robe|1|
+|:group:end|-----------------|-
+
+| Flying Carpet|1|5/9
+| Sandstorm in a Bottle|1|4/9
+
+| cargo = n
+}}
+
+
+== 备注 ==
+* 用“[[{{tr|For the worthy}}]]”{{tr|secret seed}}生成的{{tr|worlds}}里，{{tr|Floating islands}}上包含的是{{tr|locked Gold Chests}}而不是正常的[[{{tr|Skyware Chest}}]]，这是对旧{{tr|versions}}''{{tr|Terraria}}''的致敬。该{{tr|chests}}依然包含标准{{tr|Skyware Chest}}的{{tr|loot}}。
+
+== 成就 ==
+{{achievement|name=I Am Loot!}}
+{{achievement|name=Dungeon Heist}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在幸运马掌重新加入{{tr|Skyware chest}}，而不是{{tr|underground layers}}的{{tr|chest}}中找到。}}
+{{history|Desktop 1.4.1|现在{{tr|Lucky Horseshoe}}可以在{{tr|cavern layers}}{{tr|chest}}中找到而不是{{tr|Skyware chests}}。}}
+{{history|Desktop 1.4.0.1|
+** 再次可以生成于{{tr|underground}}了。
+*** 现在可以生成于[[{{tr|Underground Jungle}}]]和[[{{tr|Glowing Mushroom biome}}]]但仅在[[{{tr|Underground Cabins}}]]外生成。
+** 生成于[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]层的{{tr|Golden Chests}}现在有可能出现新物品[[{{tr|Mace}}]]{{tr|flail}}作为主{{tr|item}}。不再出现[[{{tr|Enchanted Boomerang}}]]，后者现在是{{tr|craftable}}的了。
+** 不再于[[{{tr|Underground Desert}}]]生成，并由[[{{tr|Sandstone Chest}}]]取代，它有自己的{{tr|loot}}表。
+** [[{{tr|Shadow Key}}]]现在有 {{chance|1/3}} 的概率以次要{{tr|loot}}生成于{{tr|Locked Gold Chests}}而不是主要{{tr|loot}}{{tr|item}}。}}
+{{history|Desktop 1.3.1|现在可以用来{{tr|craft}}[[{{tr|Trapped Chests}}|{{tr|Trapped Gold Chests}}]]。}}
+{{history|Desktop 1.3.0.1|
+** [[{{tr|Dungeon}}]]中的{{tr|Locked Golden Chests}}现在会出现[[{{tr|Valor}}]][[{{tr|yoyo}}]]作为新的{{tr|loot}}{{tr|item}}。
+** 首次开启{{tr|Gold Chest}}现在会触发“{{tr|I Am Loot!}}”[[{{tr|achievements}}]]，而在{{tr|Dungeon}}开启一个{{tr|Locked Gold Chest}}会触发“{{tr|Dungeon Heist}}”{{tr|achievement}}。
+** 正常情况下不再生成于[[{{tr|Underground Cabin}}]]外面和{{tr|Dungeon}}里。
+** 现在仅{{tr|spawn}}于普通[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]，其{{tr|loot}}表将与其他{{tr|Underground biomes}}([[{{tr|Ice biome}}]]除外)相同, 其他{{tr|biome}}将更换为{{tr|biome}}风格一致的{{tr|chests}}——如{{tr|Glowing Mushroom biome}}为[[{{tr|Mushroom Chest}}]]，[[{{tr|Underground Jungle}}]]为[[{{tr|Rich Mahogany Chest}}]]等。}}
+{{history|Desktop 1.2.4|
+** 扩大了[[{{tr|potions}}]]{{tr|loot}}表：
+*** {{tr|Underground layer}}中的{{tr|Chest}}有 {{chance|2/3}} 几率存在 1~2 个[[{{tr|Dangersense Potion}}]]、[[{{tr|Mining Potion}}]]、或[[{{tr|Recall Potion}}]]。
+*** {{tr|Cavern layer}}的{{tr|Chests}}有 {{chance|1/3}} 概率出现 1~2 个[[{{tr|Teleportation Potion}}]]和 {{chance|1/2}} 几率出现 1~2 个[[{{tr|Recall Potion}}]]。}}
+{{history|Desktop 1.2.3|
+** [[{{tr|Dungeon}}]]中的{{tr|Locked Golden Chests}}现在有 {{chance|1/8}} 几率出现[[{{tr|Bone Welder}}]]{{tr|crafting station}}作为次要{{tr|loot}}{{tr|item}}。
+** 放置的{{tr|storage items}}现在可以被重命名了。}}
+{{history|Desktop 1.2|
+** 所有{{tr|chest}}{{tr|storage capacity}}提高一倍。
+** [[{{tr|Underground}}]]和[[{{tr|Cavern}}]]{{tr|layers}}生成的{{tr|Golden Chests}}现在有概率出现连带[[{{tr|Flare Gun}}#{{tr|Flares}}|{{tr|Flares}}]]的[[{{tr|Flare Gun}}]]、[[{{tr|Shoe Spikes}}]]或[[{{tr|Lava Charm}}]]（仅在{{tr|Cavern}}的[[{{tr|Lava}}]]层）作为主要{{tr|item}}。也有 {{chance|1/20}} 出现稀有的[[{{tr|Extractinator}}]]。
+*** 极大地扩大了次要{{tr|loot}}表：现在的特征是会出现[[{{tr|Rope}}]]，且在出现不同{{tr|ore}}的{{tr|world}}里[[{{tr|Lead Bar}}]]、[[{{tr|Tungsten Bar}}]]和[[{{tr|Platinum Bar}}]]会作为[[{{tr|Iron Bar}}]]、[[{{tr|Silver Bar}}]]和[[{{tr|Gold Bar}}]]的相关替代。
+** 不再{{tr|spawn}}于{{tr|Floating Islands}}，现在以[[{{tr|Skyware Chest}}]]作为替代，且不再需要[[{{tr|Golden Key}}]]来解锁。
+** 现在会{{tr|spawn}}在[[{{tr|Desert}}]]中的新{{tr|structures}}[[{{tr|Pyramid}}]]中，且有可能以[[{{tr|Flying Carpet}}]]、[[{{tr|Pharaoh's set}}]]或[[{{tr|Sandstorm in a Bottle}}]]三者之一作为其主要{{tr|loot}}{{tr|item}}。}}
+{{history|Desktop 1.1|现在也会生成于[[{{tr|Underground Cabin}}]]，后者是随机分布于{{tr|underground}}的一种{{tr|small structures}}，其特征是[[{{tr|furniture}}]]和[[{{tr|traps}}]]。}}
+{{history|Desktop 1.0.6|{{tr|Locked Gold Chests}}{{tr|introduced}}[[{{tr|Dungeon}}]]和[[{{tr|Floating Island}}]]。需要一个[[{{tr|Golden Key}}]]来解锁，因此只能在[[{{tr|Skeletron}}]]后才可以实现。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}，取代了普通的地下[[{{tr|chest}}]]}}
+{{history|t=Xbox 补丁（2013 年 5 月 1 日）|Console Xbox Patch 5-1-2013|在本次补丁后生成的世界，[[{{tr|Dragon armor}}]]不会再出现在{{tr|Gold Chest}}了。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Gold}}
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Gold Chest}}

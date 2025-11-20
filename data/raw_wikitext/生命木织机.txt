@@ -1,0 +1,35 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| auto = 2196
+| type = Furniture / Crafting station
+| width = 3 | height = 3
+| buy = @@@@ {{eicons|1.4.1|small=y}}
+| tags = loot / vendor / vendor:Steampunker
+}}
+
+'''{{tr|Living Loom}}'''是种[[{{tr|crafting station}}]]，用于以任意种类的[[{{tr|Woods}}|{{tr|Wood}}]]制作[[{{tr|Living Wood furniture}}]]。并非每个世界内都一定会有{{tr|Living Loom}}，且其无法{{tr|craft}}得到。
+
+在{{eversions|1.4.0.1}}上，{{tr|a Living Loom}}可能会生成放置在[[{{tr|Living Tree}}]]内[[{{tr|Living Wood Chest}}]]附近的地面上，而在{{eversions|Living Loom|not=1.4.0.1}}上，{{tr|a Living Loom}}则是可能在{{tr|chest}}内部找到{{tr|Living Loom}}。在{{eversions|1.4.1}}上，如果玩家的[[{{tr|inventory}}]]中有[[{{tr|Living Wood Wand}}]]，也能从[[{{tr|Steampunker}}]]处以 {{iteminfo|Living Loom|buy}} 购买{{tr|the Living Loom}}。
+
+== 制作 ==
+=== 用于制作 ===
+{{recipes|station=Living Loom|nostation=y|title={{item|Living Loom}}|expectedrows=25}}
+
+== 备注 ==
+* 虽然名字叫“织机”，但它并不能替代普通的[[{{tr|Loom}}]]{{tr|crafting station}}，因为它不能制作[[{{tr|Silk}}]]，也不能制作任何其它和布有关的{{tr|items}}。
+* [[{{tr|Living Wood Chest}}]]只在{{eversions|1.4.0.1}}上才能{{tr|craft}}，在其他平台上必须在[[{{tr|Living Tree}}]]中才能找到它。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.1|现在当玩家的{{tr|inventory}}中有{{tr|Living Wood Wand}}时，可以从[[{{tr|Steampunker}}]]购买本物品。}}
+{{history|Desktop 1.4.0.1|现在生成为放置的{{tr|furniture}}，而不是出现在{{tr|chests}}中。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}替代[[{{tr|living wood}}]]成为制作[[{{tr|Living Wood Wall}}]]所用的{{tr|crafting station}}。}}
+{{history|Console 1.07|{{tr|Introduced.}}替代{{tr|living wood}}成为制作{{tr|Living Wood Wall}}所用的{{tr|crafting station}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}替代{{tr|living wood}}成为制作{{tr|Living Wood Wall}}所用的{{tr|crafting station}}。}}
+
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+{{language info|en=Living Loom}}

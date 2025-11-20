@@ -1,0 +1,53 @@
+{{exclusive|1.4.0.1}}
+
+'''{{tr|Golf}}'''是一种[[{{tr|player}}]]将[[{{tr|Golf Balls}}]]用[[{{tr|Golf Clubs}}]]打入[[{{tr|Golf Cup}}]]的游戏内活动。{{tr|Golf}}装备可以从[[{{tr|Golfer}}]] {{tr|NPC}} 处购买。{{tr|Golf}}场地不会自然生成，必须由玩家建造。由于{{tr|Golf}}场地的规模较大，且玩{{tr|Golf}}完全是可选的，大多数玩家很可能会使用自定义地图的方式玩{{tr|golf}}。
+
+== 游玩方式 ==
+=== 布置场地 ===
+[[File:Golf Cup example.png|thumb|放置{{tr|Golf Cup}}。]]
+
+首先，玩家需要获得建造场地所需的物品。这包括基础的组成部分：一个任意颜色的[[{{tr|Golf Ball}}]]，任意[[{{tr|Golf Club}}]]，一个[[{{tr|Golf Cup}}]]，以及一个用于放置球的[[{{tr|Golf Tee}}]]。
+
+=== 游玩 ===
+要开始玩{{tr|golf}}, 玩家需要放置一个{{tr|Golf Tee}}，然后按 {{key|open}} 键放置球，或者直接将球放在地上。然后，需要使用四种类型之一的{{tr|Golf Club}}来击打球。它们包括铁杆、木杆、挖起杆、推杆。游戏的目标是用最少的打击数，或“杆数”来将球打入球洞。使用[[{{tr|Golf Whistle}}]]会将球返回到上一位置，同时罚一杆。
+
+== {{tr|Golf score}} ==
+和通常的{{tr|Golf score}}机制——杆数不同，'''{{tr|Golf score}}'''是用于统计一个{{tr|character}}玩{{tr|golf}}的总体经验的数据。{{tr|Golf score}}基于所用的杆数以及每一次击球球飞过的欧氏距离，即所有从球击出的位置到球的最终落点的线段的长度总和。最终计算得出的{{tr|score}}在被加到{{tr|character}}积累的总分数前会向下取整。取整前的{{tr|score}}用下列公式计算：
+
+<code>{{tr|score}} = (总距离 / 16) / (杆数 + 2)</code>
+
+玩家能积累的最高{{tr|score}}为 1,000,000,000。[[{{tr|Golfer}}]]的商店规模会随玩家总{{tr|score}}上升而逐渐扩展，获得 2000 分后达到最多。
+
+== 备注 ==
+* {{tr|Golf Balls}}的速度和轨迹会被下列因素影响：
+** {{tr|Golf Balls}}在硬质表面（如[[{{tr|Stone Block}}]]或[[{{tr|Gray Brick}}]]）上会飞的更远。在[[{{tr|Golf Tee}}]]上开始击球也会使球飞的更远。{{tr|Golf Balls}}在[[{{tr|Ice Block}}]]上滚动时会滑得更远。
+** 与之相反，[[{{tr|Sand Block}}]]、[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]或[[{{tr|Leaf Block}}]]会降低{{tr|Golf Balls}}的速度，且如果不使用{{tr|Wedge Club}}，在这些{{tr|block}}上击球时会更加困难。[[{{tr|Honey Block}}]]也会降低球的速度，接近停止。
+** {{tr|Golf Balls}}不会破坏[[{{tr|Cobweb}}]]，但会在穿过它们时减速。
+** 诸如[[{{tr|vines|link=y}}|{{tr|vines}}]]、[[{{tr|Grasses}}|高草]]和[[{{tr|thorny bushes}}]]的{{tr|plant}}会降低{{tr|Golf Balls}}的速度。使用[[{{tr|Lawn Mower}}]]修剪草地会帮助{{tr|Golf Balls}}在上面运动更快、更远。
+** [[{{tr|Water}}]]和[[{{tr|honey}}]]会极大地阻碍{{tr|Golf Ball}}的运动和飞行，但[[{{tr|lava}}]]不会。
+** {{tr|Golf Balls}}不受弹性{{tr|blocks}}（如[[{{tr|Silly Balloons}}]]）影响。
+** {{tr|Golf Balls}}在落到干草上时会停止运动。
+* 由于{{tr|Golf Balls}}算作{{tr|projectiles}}，它们能够被[[{{tr|Conveyor Belt}}]]移动，也能激活[[{{tr|Teal Pressure Pad}}]]。
+* {{tr|Golf ball}}的轨迹不会被[[{{tr|Wind}}|风速]]影响。除此之外，{{tr|Golf Balls}}也不受[[{{tr|Teleporter}}]]、[[{{tr|Portal Gun}}|{{tr|portals}}]]或[[{{tr|Explosives (class)}}]]影响。
+* 不能在反转[[{{tr|gravity}}]]时玩{{tr|golf}}（使用[[{{tr|Gravitation Potion}}]]或[[{{tr|Gravity Globe}}]]）。玩家不能在反转重力时挥杆。
+
+== 小贴士 ==
+* {{tr|The player}}可以使用[[{{tr|Old One's Army}}]]{{tr|arena}}来作高尔夫的练习场地。将{{tr|Golf Tee}}和{{tr|Golf Cup}}分别放置两端可以使玩家用{{tr|Driver Club}}击球时获得很多分数。
+** 如果玩家在末端放置多个{{tr|Golf Cups}}以及一道很高的一{{tr|tile}}宽的墙，就能够显著提高一杆进洞的几率，从而提升获得的分数。此外，修剪整个场地的草地也会有所帮助，因为球在{{tr|mowed grass}}上飞的更高更远。
+* 玩家也可以在[[指南:旅行#{{tr|Hellevator}}|{{tr|Hellevator}}]]顶端放置{{tr|Golf Tee}}，底端放置{{tr|Golf Cup}}并使用{{tr|Putter Club}}将球击到[[{{tr|The Underworld}}]]中来刷取分数，这在大世界中尤其有效。
+* 由于视角会跟随击出的{{tr|Golf Ball}}，玩家可以用{{tr|golf}}来简单地在世界中寻找[[{{tr|Floating Island}}]]：放置一个[[{{tr|Golf Tee}}]]，然后使用{{tr|Wedge Club}}或{{tr|Iron club}}来将{{tr|Golf Ball}}向上击出。这比其它游戏早期的寻找方式都要快速、简便、便宜，因为{{tr|Golf Ball}}速度很快，且每次击球并不需要额外购买物品。
+* 即使玩家的{{tr|inventory}}中没有{{tr|Golf Balls}}，使用{{tr|Golf Tee}}也会自动地将{{tr|Golf Ball}}放置在其上。如果玩家已经拥有一个球座，就不太需要购买{{tr|Golf Balls}}，除非想用[[{{tr|dye}}]]将球染成其它颜色。
+
+== 花絮 ==
+* 虽然玩家、[[{{tr|Ghost}}]]、死亡时的视角能阻止[[{{tr|Meteorite (biome)}}|{{tr|meteorite}}]]在屏幕内生成，但使用{{tr|Golf Ball}}移动视角时{{tr|meteorite}}可以在屏幕内生成。
+
+== 另见 ==
+* {{forums thread|fore-rraria-hitting-the-links-with-terraria-golf.88539/|FORE-RRARIA! Hitting the Links with Terraria Golf}} {{small|（2020 年 5 月 11 日）}}，[[Re-Logic]] 发布的介绍此小游戏的[[论坛]]帖子。
+* [https://www.youtube.com/watch?v=8vJGVhYrKWQ Terraria 1.4 Golf Reveal!] {{small|（2020 年 5 月 11 日）}}，YouTube 用户 Khaios 制作的介绍{{tr|golf}}、展示{{tr|golf map}} ''Putt-rarria'' 的视频。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+{{language info|en=Golf}}

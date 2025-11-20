@@ -1,0 +1,24 @@
+<includeonly>
+|-
+| {{item|{{{1|}}}|wrap=y}}
+| {{{2|{{itemsource|{{{1|}}}|sep=<hr class{{=}}"incell-border"/>}}}}}
+| {{{3|<!--
+	-->{{#ifexpr:{{#vardefineecho:shieldsrow:defense|{{iteminfo|{{{1|}}}|defense}}}}|
+*<!--
+		-->{{l10n|getEquipInfo|stat_statDefense|$data1$={{#var:shieldsrow:defense}}}}<!--
+	-->}}<!--
+	-->{{#ifexpr:{{#vardefineecho:shieldsrow:lifeRegen|{{iteminfo|{{{1|}}}|lifeRegen}}}}|
+*<!--
+		-->{{l10n|getEquipInfo|stat_lifeRegen|$data1$={{#expr:{{#var:shieldsrow:lifeRegen}}/2}}}}<!--
+	-->}}<!--
+	-->{{equipinfo|{{{1|}}}|list=y}}<!--
+-->}}}
+| [[File:{{{1|}}} (equipped).png]]<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Shields/row}}
+</noinclude>

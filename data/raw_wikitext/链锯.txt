@@ -1,0 +1,63 @@
+'''{{tr|Chainsaws}}'''是一类[[{{tr|tools}}]]，可用于摧毁[[{{tr|trees}}]]和[[{{tr|cacti}}]]，类似于[[{{tr|axes}}]]，也可作为[[{{tr|melee weapons}}]]来使用。就像[[{{tr|Muramasa}}]]和其他快速挥舞的{{tr|swords}}一样，{{tr|Chainsaws}}可以迅速造成大量伤害，但此类武器牺牲了大范围弧线挥舞的能力而换得了指向任意方向的能力。几乎所有{{tr|chainsaws}}都是[[{{tr|Hardmode}}]]独有的，但却没有一把能在{{tr|axe power}}上超越[[{{tr|pre-Hardmode}}]]的[[{{tr|Molten Hamaxe}}]]（[[{{tr|Butcher's Chainsaw}}]]和它持平），但是，从[[{{tr|Palladium Chainsaw}}]]开始，它们能够更快地砍倒{{tr|tree}}，因为它们击打树的频率更快。
+
+对于任何{{tr|chainsaw}}，最佳[[{{tr|modifier}}]]都是'''{{tr|Godly}}'''，因为与{{tr|axes}}不同，它们不能得到影响大小与速度的{{tr|modifier}}。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! {{tr|Axe power}}
+! {{tr|Pickaxe Power}}
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Bonus}}
+! data-sort-type=number | {{tr|Use time}}
+! [[{{tr|Mining speed}}]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, axe, hammer, pick, bonus, usetime, toolspeed, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=hardmode ASC, FLOOR(axe) ASC, FLOOR(pick) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 备注 ==
+*如果{{tr|Chainsaw}}不间断地使用长达一分钟，它会停止工作，并且需要重新按一次 {{key|use}} 才会重新开始。这是因为它们在使用时实际上是长持续时间的引导{{tr|projectiles}}，就像[[{{tr|Magic Missile}}]]那样。
+
+== 花絮 ==
+[[{{tr|Sawtooth Shark}}]]是唯一一个在[[{{tr|Hardmode}}]]之前就可用的{{tr|chainsaw}}，也是唯一通过{{tr|fishing}}得到的。在{{3DS version}}上，[[{{tr|Drax}}]]在{{tr|pre-Hardmode}}也可用。
+* {{tr|Drax}}是仅有的有{{tr|pickaxe power}}的{{tr|chainsaw}}。在 1.2 之前，它还具有{{tr|hammer}}的功能，这也是其他{{tr|chainsaw}}所没有的。
+* {{tr|Butcher's Chainsaw}}是唯一掉落自{{tr|enemy}}的{{tr|chainsaw}}。它也是整体属性最高的{{tr|chainsaw}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在所有[[{{tr|drills}}]]和{{tr|chainsaws}}的挖掘速度都比它们的非机械对应物更快，但有效范围更短。
+** 另外，优化的挖掘装备搭配方案上使用{{tr|pickaxes}}/{{tr|axes}}依然会表现更好，但{{tr|drills}}和{{tr|chainsaws}}在非优化的配装上会更快。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Butcher's Chainsaw}}]]和（{{tr|unobtainable}}的）{{tr|Luminite Chainsaws}}。}}
+{{history|Desktop 1.2.4|添加了[[{{tr|Sawtooth Shark}}]]。}}
+{{history|Desktop 1.2|
+** 添加了[[{{tr|Chlorophyte Chainsaw}}]]。
+**“{{tr|Hamdrax}}”重命名为“{{tr|Drax}}”，并移除了它的{{tr|hammer}}功能，因为围绕着同时破坏{{tr|furniture}}和{{tr|walls}}存在一些问题。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-main = yes
+| show-tool = yes
+}}
+
+[[Category:工具物品|*]]
+[[Category:{{tr|Chainsaws}}| ]]
+
+{{language info|en=Chainsaws}}

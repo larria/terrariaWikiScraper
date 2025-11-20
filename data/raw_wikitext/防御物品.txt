@@ -1,0 +1,67 @@
+{{dablink|这是所有防御物品的列表，有关防御机制，请参考[[防御]]。}}
+
+'''防御物品'''在适当的栏位中装备可以为玩家提供[[防御力|防御]]。
+{{itemlist/options|width=19.5em}}
+{{infocard|class=terraria compact|text=
+{{infocard/mainheading|盔甲部件}}
+{{#dpl:
+| category = {{tr|Armor items}}
+| notcategory = {{tr|Armor sets}}
+| nottitleregexp = ^{{tr|Armor}}{{!}}{{tr|Buckets}}$<!-- exclude these pages -->
+| redirects = include
+| namespace = <!-- need to have it blanked to restrict it to main namespace. prevents category pages from being included-->
+| includesubpages = false<!-- remove language subpages -->
+| ordermethod = titlewithoutnamespace
+| order = ascending
+| format= ²{itemlist,¦²{item¦²{pagename2en¦%PAGE%}²¦wrap=y}²,,}²
+}}
+{{infocard/mainheading|[[{{tr|Armor}}#{{tr|Pre-Hardmode}}|{{tr|Pre-Hardmode Armor Sets}}]]}}
+{{#dpl:
+| category = {{tr|Armor sets}}
+| notcategory = 困难模式独有物品
+| namespace = <!-- need to have it blanked to restrict it to main namespace. prevents category pages from being included-->
+| includesubpages = false<!-- remove language subpages -->
+| ordermethod = titlewithoutnamespace
+| order = ascending
+| format= ²{itemlist,¦²{item¦²{pagename2en¦%PAGE%}²¦wrap=y}²,,}²
+}}
+{{infocard/mainheading|[[{{tr|Armor}}#{{tr|Hardmode}}|{{tr|Hardmode Armor Sets}}]]}}
+{{#dpl:
+| category = {{tr|Armor sets}}&困难模式独有物品
+| namespace = <!-- need to have it blanked to restrict it to main namespace. prevents category pages from being included-->
+| includesubpages = false<!-- remove language subpages -->
+| ordermethod = titlewithoutnamespace
+| order = ascending
+| format= ²{itemlist,¦²{item¦²{pagename2en¦%PAGE%}²¦wrap=y}²,,}²
+}}
+{{infocard/mainheading|[[{{tr|Accessories}}]]}}
+{{itemlist
+|{{item|Ankh Shield}}
+|{{item|Celestial Shell}}
+|{{item|Celestial Stone}}
+|{{item|Cobalt Shield}}
+|{{item|Flesh Knuckles}}
+|{{item|Frozen Turtle Shell|note=({{eicons|1.3.0.1|invert=yes|small=yes}})}}
+|{{item|Moon Charm}}
+|{{item|Moon Shell}}
+|{{item|Moon Stone}}
+|{{item|Obsidian Shield}}
+|{{item|Obsidian Skull}}
+|{{item|Paladin's Shield}}
+|{{item|Shackle}}
+|{{item|Sun Stone}}
+}}
+{{infocard/mainheading|[[{{tr|Consumables}}]]}}
+{{itemlist
+|{{item|Ironskin Potion}}
+|{{item|t=任意[[{{tr|Food}}]]{{tr|item}}|wrap=y|note=(这会给予[[{{tr|Well Fed}}]]、[[{{tr|Plenty Satisfied}}]]、[[{{tr|Exquisitely Stuffed}}]])|image=Apple.png}}
+}}
+{{infocard/mainheading|[[{{tr|Weapons}}]]}}
+{{itemlist
+|{{item|Brand of the Inferno}}
+|{{item|Sergeant United Shield}}
+}}
+}}<!-- end infocard -->
+{{itemlist/options|reset}}
+
+{{language info|en=Defense items}}

@@ -1,0 +1,47 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3240
+| type = Furniture/Mechanism
+| width = 1 | height = 5
+| sounduse = Door Opened.wav
+| idtile = 388（关闭）, 389（开启）
+}}
+[[File:Tall Gate (demo).gif|thumb|开启与关闭{{tr|Tall Gate}}（首先按下 {{key|open}} 开启，再使用[[{{tr|Smart Cursor}}]]关闭）。]]
+
+'''{{tr|Tall Gates}}'''是一件[[{{tr|furniture}}]]{{tr|item}}，本质上是一种较高的滑动{{tr|door}}，可以用 {{key|open}} 开启或关闭。
+
+{{tr|Tall Gates}}与普通的[[{{tr|Door}}]]有下列不同：
+* {{tr|Tall Gate}}有 5 个{{tr|tiles}}高，大到足够让乘坐[[{{tr|Mounts}}]]的{{tr|player}}无需解除坐骑就能通过（与 3 个{{tr|tiles}}高的{{tr|doors}}不同）。
+* 与{{tr|Doors}}不同，{{tr|Tall Gates}}在开启时不会占用额外{{tr|tile}}，因此在两边放置的[[{{tr|blocks}}]]或{{tr|furniture}}不会阻止它们被打开。
+* 只有一种{{tr|Tall Gates}}（与对于每种{{tr|furniture}}主题都有不同版本可用的{{tr|Doors}}不同）。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Tall Gate|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Tall Gates}}仍然能被 [[{{tr|NPCs}}]] 打开，且可以被具有[[{{tr|Fighter AI}}]] 的[[{{tr|enemies}}]]强行打开，与普通的{{tr|doors}}类似。{{tr|enemies}}需要更多次敲击才能打开它们。
+
+== 小贴士 ==
+* {{tr|Tall Gates}}在防止{{tr|enemies}}进入时不如{{tr|doors}}，因此若要防止{{tr|enemies}}进入，则最好选用普通{{tr|doors}}。
+
+== 花絮 ==
+* 虽然此{{tr|item}}的{{tr|inventory}}{{tr|sprite}}以正视图显示它（与{{tr|doors}}类似），{{tr|Tall Gate}}放置时永远不会以这种形式显示，因为它使用时并不是向侧面打开。
+* 由于制作{{tr|Iron Bar}}/{{tr|Lead Bar}}需要 3 个[[{{tr|Ore}}]]，此{{tr|item}}所用的{{tr|Wood}}和{{tr|Ore}}数量之比为 1:1。
+
+== 另见 ==
+* [[{{tr|Trap Door}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.2.1|修复了在[[{{tr|doors}}]]、[[{{tr|Trap Door}}]]和{{tr|Tall Gate}}打开时，[[{{tr|house}}]]会被判定无效的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Tall Gate}}

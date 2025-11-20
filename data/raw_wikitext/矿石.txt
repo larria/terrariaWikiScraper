@@ -1,0 +1,430 @@
+{{item infobox
+| imagealt = [[File:Ores.gif|link=]]
+| type = Crafting material
+| placeable = yes
+| use = {{iteminfo|12|useTime}}
+| stack = {{iteminfo|12|stack}}
+| rare =
+| consumable = true
+| idtile = 6–9, 22, 37, 56, 58, 107–108, 111, 166–169, 204, 211, 221–223, 408
+| cargo = no
+| allversions = yes
+}}
+
+'''{{tr|Ores}}'''是游戏进程所必需的主要[[{{tr|crafting material}}]]。它们通常必须在[[{{tr|Furnace}}]]制作成[[{{tr|bars}}]]，随后它们能够制作成若干必须的[[{{tr|tools}}]]、[[{{tr|weapons}}]]、[[{{tr|armor}}]]、和其他[[{{tr|items}}]]。有些物品需要未加工的{{tr|ores}}，常见的是[[{{tr|bricks}}]]和[[{{tr|potions}}]]。未加工的{{tr|Ores}}也能直接作为{{tr|blocks}}供建筑使用。
+
+{{tr|Ores}}通常以放置的[[{{tr|blocks}}]]所形成的矿脉形式出现于[[{{tr|Underground}}]][[地层|层]]和更深之处，可用[[{{tr|Pickaxe}}]]或[[{{tr|Drill}}]]采挖。低等级的{{tr|Ores}}也会出现于[[{{tr|Surface}}]]附近或[[{{tr|Floating Island}}]]中的[[{{tr|Dirt}}]]内。一些{{tr|Ores}}也会掉落自 [[{{tr|bosses}}]]，如[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]、[[{{tr|Brain of Cthulhu}}]]、{{eil|Ocram}}、和{{eil|Moon Lord}}。
+
+[[{{tr|Extractinator}}]]和（来自[[{{tr|Fishing}}]]的）[[{{tr|Crate}}]]也会给出{{tr|Ores}}作为随机奖励。
+
+一个世界通常只会包含每一等级矿石中的一种，随机选定。例如，某个世界中可能会拥有[[{{tr|Copper Ore}}]]和[[{{tr|Iron Ore}}]]，而另一个世界可能拥有{{tr|Copper Ore}}和[[{{tr|Lead Ore}}]]（参见[[#{{tr|Pre-Hardmode}}|下表]]）。{{tr|alternate ore}}在世界中不会自然生成，但依然可以通过其他手段得到，比如{{tr|Crates}}、{{eil|bonus drops}}、或从{{tr|Extractinator}}得到。[[{{tr|Hardmode}}]]{{tr|ore}}种类则会在玩家摧毁[[{{tr|Altars}}|{{tr|Altar}}]]的同时随机选定。
+
+在{{eil|drunk world}}中，每一级别的两种{{tr|ore}}都会生成而不只是生成其中之一。
+
+一共有 {{eicons|Luminite}} 21 / {{eicons|Luminite|invert=y}} 20 种不同类型的{{tr|ores}}。
+
+== 类型 ==
+{| class="terraria sortable align-center lined"
+! colspan=2 | {{tr|Ore}}
+! data-sort-type="number" | [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+{{#dplvar:set|ore_rows|}}<!--
+query all ores
+-->{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, rare, sell
+|q?where=type HOLDS 'ore'
+|q?groupBy=itemid
+|q?orderBy=hardmode, rare
+|template=:{{tr|Ores}}/row
+}}<!--
+define print order:
+-->{{#vardefine:order|12/699/11/700/14/701/13/702/116/56/880/173/174/364/1104/365/1105/366/1106/947/3460}}<!--
+append other items, then print:
+-->{{#lstmap:{{#lstuniq:{{#var:order}}/{{#dplvar:ore_rows}}|/|/}}|/|@@@@|<esc>{{#dplvar:ore_row_@@@@}}</esc>|}}
+|}
+
+== 困难模式之前 ==
+{{/ore|width=165px}}
+{| class="terraria lined"
+! 等级
+! {{tr|Ore types}}
+! 最低要求工具
+! width=150 | {{tr|Crafting}}
+! 来源
+|-
+! 1
+| {{/ore|Copper Ore|Tin Ore}}
+| style="text-align:center" | {{item|mode=image|Copper Pickaxe}} {{item|mode=image|Tin Pickaxe}} {{item|mode=image|Cactus Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Copper Bar|ingredient=Copper Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Tin Bar|ingredient=Tin Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Surface}}]]、[[{{tr|Underground}}]]、[[{{tr|Cavern}}]]
+|-
+! 2
+| {{/ore|Iron Ore|Lead Ore}}
+| style="text-align:center" | {{item|mode=image|Copper Pickaxe}} {{item|mode=image|Tin Pickaxe}} {{item|mode=image|Cactus Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Iron Bar|ingredient=Iron Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Lead Bar|ingredient=Lead Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Surface}}]]、[[{{tr|Underground}}]]、[[{{tr|Cavern}}]]
+|-
+! 3
+| {{/ore|Silver Ore|Tungsten Ore}}
+| style="text-align:center" | {{item|mode=image|Copper Pickaxe}} {{item|mode=image|Tin Pickaxe}} {{item|mode=image|Cactus Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Silver Bar|ingredient=Silver Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Tungsten Bar|ingredient=Tungsten Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]、[[{{tr|Floating Island}}]]、[[{{tr|Surface}}]]（稀有）
+|-
+! 4
+| {{/ore|Gold Ore|Platinum Ore}}
+| style="text-align:center" | {{item|mode=image|Copper Pickaxe}} {{item|mode=image|Tin Pickaxe}} {{item|mode=image|Cactus Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Gold Bar|ingredient=Gold Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Platinum Bar|ingredient=Platinum Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]、[[{{tr|Floating Island}}]]、[[{{tr|Surface}}]]（非常稀有）
+|-
+! 5
+| {{/ore|Demonite Ore|Crimtane Ore}}
+| style="text-align:center" | {{item|mode=image|Gold Pickaxe}} {{item|mode=image|Platinum Pickaxe}}
+{{item|mode=image|Reaver Shark}} {{nowrap|({{eicons|1.4.0.1}})}}
+| style="text-align:center" | {{recipes/extract|result=Demonite Bar|ingredient=Demonite Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Crimtane Bar|ingredient=Crimtane Ore|nostation=y|withresult=y|sep=<br/>}}
+| {{inline block|[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Underground}}]]、[[{{tr|Cavern}}]]、}} {{inline block|[[{{tr|Eater of Worlds}}]]、（{{tr|Demonite}}）、[[{{tr|Brain of Cthulhu}}]]（{{tr|Crimtane}}）}}
+|-
+! 6
+| {{/ore|Meteorite}}
+| style="text-align:center" | {{item|mode=image|Tungsten Pickaxe}} {{item|mode=image|Gold Pickaxe}} {{item|mode=image|Platinum Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Meteorite Bar|ingredient=Meteorite|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Meteorite (biome)}}|{{tr|Meteorite biome}}]]
+|-
+! 7
+| {{/ore|Obsidian}}
+| style="text-align:center" | {{item|mode=image|Gold Pickaxe}} {{item|mode=image|Platinum Pickaxe}} {{nowrap|({{eicons|1.4.3.3}})}}<br/> {{item|mode=image|Nightmare Pickaxe}} {{item|mode=image|Deathbringer Pickaxe}} {{nowrap|({{eicons|1.4.3.3|invert=y}})}}
+| style="text-align:center" | {{na}}
+| [[{{tr|Water}}]]和[[{{tr|Lava}}]]之间的接触
+|-
+! 8
+| {{/ore|Hellstone}}
+| style="text-align:center" | {{item|mode=image|Nightmare Pickaxe}} {{item|mode=image|Deathbringer Pickaxe}} 
+{{item|mode=image|Reaver Shark}} {{nowrap|({{eicons|1.4.0.1|invert=y}})}}
+| style="text-align:center" | {{recipes/extract|result=Hellstone Bar|ingredient=Hellstone|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Underworld}}]]
+|}
+
+=== 生成 ===
+[[{{tr|world seed}}]]会根据下方的公式来决定最初四个级别的{{tr|ore}}中生成哪一种，{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld|class=Terraria.Utilities.UnifiedRandom}}其中 <math>s</math> 是[[{{tr|world seed}}]]的“识别符”部分（0 至 2147483647 间的整数），<math>f</math> 和 <math>c</math> 是下表中的常量，<math>\bmod</math> 是{{维基百科|Modulo|取余运算符}}。{{note|small=y|paren=y|译注：取余运算的结果为运算符左侧的数除以右侧的数后的余数。例：10%4{{=}}2}}
+
+<math>( s * f + c ) \bmod 2147483647 > 1073741823</math>
+
+如果不等式成立，则{{tr|world}}中包含默认{{tr|ore}}类型（{{tr|Copper, Iron}}，等等），否则包含{{tr|alternate ore}}类型（{{tr|Tin, Lead}}，等等）
+
+{| class="terraria"
+! {{tr|Ore}} !! <math>f</math> !! <math>c</math>
+|-
+| {{item|Copper Ore|Copper|nolink=y}} || 1582116761 || 626863973
+|-
+| {{item|Iron Ore|Iron|nolink=y}} || 1676571504 || 1003550677
+|-
+| {{item|Silver Ore|Silver|nolink=y}} || 1476289907 || 1358625013
+|-
+| {{item|Gold Ore|Gold|nolink=y}} || 1117239683 || 1008269081
+|}
+
+{{collapse top simple|显示例子|隐藏例子}}
+例如，{{tr|seed}}为 <math>s = 1965937006</math> 的{{tr|world}}具有下列{{tr|ores}}：
+
+{| class="terraria lined"
+! 公式 !! 结果
+|-
+| <math>( 1965937006 * 1582116761 + 626863973 ) \bmod 2147483647 > 1073741823</math> || {{item|Copper Ore|Copper|nolink=y}}
+|-
+| <math>( 1965937006 * 1676571504 + 1003550677 ) \bmod 2147483647 \ngtr 1073741823</math> || {{item|Lead Ore|Lead|nolink=y}}
+|-
+| <math>( 1965937006 * 1476289907 + 1358625013 ) \bmod 2147483647 \ngtr 1073741823</math> || {{item|Tungsten Ore|Tungsten|nolink=y}}
+|-
+| <math>( 1965937006 * 1117239683 + 1008269081 ) \bmod 2147483647 > 1073741823</math> || {{item|Gold Ore|Gold|nolink=y}}
+|}
+{{collapse bottom simple}}
+
+== 困难模式 ==
+{{/ore|width=175px}}
+{| class="terraria lined"
+! 等级
+! {{tr|Ore types}}
+! 最低要求工具
+! width=175 | {{tr|Crafting}}
+! 来源
+|-
+! 9
+| {{/ore|Cobalt Ore|Palladium Ore}}
+| style="text-align:center" | {{item|mode=image|Molten Pickaxe}}
+{{item|mode=image|Reaver Shark}} {{nowrap|({{eicons|1.4.0.1|invert=y}})}}
+| style="text-align:center" | {{recipes/extract|result=Cobalt Bar|ingredient=Cobalt Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Palladium Bar|ingredient=Palladium Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]
+|-
+! 10
+| {{/ore|Mythril Ore|Orichalcum Ore}}
+| style="text-align:center" | {{item|mode=image|Cobalt Pickaxe}} {{item|mode=image|Cobalt Drill}} {{item|mode=image|Palladium Pickaxe}} {{item|mode=image|Palladium Drill}}
+| style="text-align:center" | {{recipes/extract|result=Mythril Bar|ingredient=Mythril Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Orichalcum Bar|ingredient=Orichalcum Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Cavern}}]]
+|-
+! 11
+| {{/ore|Adamantite Ore|Titanium Ore}}
+| style="text-align:center" | {{item|mode=image|Mythril Pickaxe}} {{item|mode=image|Mythril Drill}} {{item|mode=image|Orichalcum Pickaxe}} {{item|mode=image|Orichalcum Drill}}
+{{item|mode=image|Palladium Pickaxe}} {{item|mode=image|Palladium Drill}} {{nowrap|({{icon/3ds}})}}
+| style="text-align:center" | {{recipes/extract|result=Adamantite Bar|ingredient=Adamantite Ore|nostation=y|withresult=y|sep=<br/>}}<br/>{{recipes/extract|result=Titanium Bar|ingredient=Titanium Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Cavern}}]]（大致在[[{{tr|Lava}}]]的深度上）、{{eil|Ocram}}（只掉{{tr|Adamantite}}）
+|-
+! 12
+| {{/ore|Chlorophyte Ore}}
+| style="text-align:center" | {{item|mode=image|Pickaxe Axe}} {{item|mode=image|Drax}}
+| style="text-align:center" | {{recipes/extract|result=Chlorophyte Bar|ingredient=Chlorophyte Ore|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Underground Jungle}}]]
+|-
+! 13
+| {{/ore|Luminite}}
+| style="text-align:center" | {{item|mode=image|Copper Pickaxe}} {{item|mode=image|Tin Pickaxe}}
+| style="text-align:center" | {{recipes/extract|result=Luminite Bar|ingredient=Luminite|nostation=y|withresult=y|sep=<br/>}}
+| [[{{tr|Moon Lord}}]]
+|}
+
+前三个等级的[[{{tr|Hardmode}}]]{{tr|ores}}是通过摧毁[[{{tr|Demon Altar}}]]/[[{{tr|Crimson Altar}}]]来生成的，则需要有一把{{tr|hammer power}}达到 80% 或更高的[[{{tr|hammer}}]]，例如[[{{tr|Pwnhammer}}]]。[[{{tr|Chlorophyte Ore}}]]则一旦开启了{{tr|Hardmode}}就会自然生成，但在打败所有[[{{tr|Mechanical bosses}}]] 无法采挖之；而[[{{tr|Luminite}}]]则不会自然出现。后面这两种{{tr|ores}}都不受摧毁{{tr|altars}}影响。
+{{transclude|{{tr|Altars}}|section=hardmode ores}}
+
+=== 生成 ===
+摧毁一个{{tr|altar}}时生成的矿脉的数量由下列公式决定：{{source code ref|v=1.4.0.5|method=Terraria.WorldGen.SmashAltar / Terraria.WorldGen.OreRunner}}
+
+<math>\frac{ \left(\mathit{世界大小} \times 310 - \mathit{矿石级别} \times 85 \right) \times 0.85 }{ \left\lfloor \frac{\mathit{摧毁的祭坛数量}} {3} \right\rfloor + 1 } \times \mathit{系数}</math>
+* <math>\lfloor x \rfloor</math> 为向下取整函数。
+* <math>\mathit{世界大小}</math> 是[[{{tr|Map size}}|{{tr|world}}宽度]]除以 4200：{{tr|small world}}为 1，{{tr|medium worlds}}为 1.524，{{tr|large worlds}}为 2。
+* <math>\mathit{矿石级别}</math> 代表对应级别的{{tr|ore}}：
+: {| class="terraria lined"
+! colspan=2 | {{tr|Ore}}类型 !! 值
+|-
+| {{item|Cobalt Ore|Cobalt}} || {{item|Palladium Ore|Palladium}} || 0
+|-
+| {{item|Mythril Ore|Mythril}} || {{item|Orichalcum Ore|Orichalcum}} || 1
+|-
+| {{item|Adamantite Ore|Adamantite}} || {{item|Titanium Ore|Titanium}} || 2
+|}
+* <math>\mathit{系数}</math> 取决于{{tr|ore}}类型，会略微增加/降低不同类别的稀有度。
+: {| class="terraria lined"
+! colspan=2 | {{tr|Ore}}类型 !! 值
+|-
+| colspan=2 | {{item|Cobalt Ore|Cobalt}} || 1.05
+|-
+| {{item|Mythril Ore|Mythril}} || {{item|Adamantite Ore|Adamantite}} || 1
+|-
+| colspan=2 | {{item|Palladium Ore|Palladium}} || 0.945
+|-
+| {{item|Orichalcum Ore|Orichalcum}} || {{item|Titanium Ore|Titanium}} || 0.9
+|}
+: 这表明，拥有{{tr|Palladium}}而非{{tr|Cobalt}}、{{tr|Orichalcum}}而非{{tr|Mythril}}、或{{tr|Titanium}}而非{{tr|Adamantite}}的世界中相应{{tr|ore}}平均来说会少 10%。
+以下表格将此可视化，展示了每个{{tr|altar}}被摧毁时会生成多少{{tr|ore}}矿脉。如果在单个世界中摧毁了 264 个{{tr|altars}}，那么后继的每个{{tr|altars}}都只会生成一块矿脉。
+{| class="terraria" style="text-align:center"
+! colspan=2 | {{tr|Ore}}类型 !! 1 {{tr|altar}} !! 2 {{tr|altars}} !! 3 {{tr|altars}} !! 4 {{tr|altars}} !! 5 {{tr|altars}} !! 6 {{tr|altars}} !! 7 {{tr|altars}} !! 8 {{tr|altars}} !! 9 {{tr|altars}}
+|-
+| {{item|mode=table|Cobalt Ore}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(0/3)+1)*1.05)}} 矿脉 <!-- this is the formula from above; as used in the source code. leaving some "unnecessary" factors in to ensure understandability --> || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(3/3)+1)*1.05)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(6/3)+1)*1.05)}} 矿脉 || {{na|-}} || {{na|-}}
+|-
+| {{item|mode=table|Palladium Ore}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(0/3)+1)*0.945)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(3/3)+1)*0.945)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*0)*0.85/(floor(6/3)+1)*0.945)}} 矿脉 || {{na|-}} || {{na|-}}
+|-
+| {{item|mode=table|Mythril Ore}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(1/3)+1)*1)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(4/3)+1)*1)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(7/3)+1)*1)}} 矿脉 || {{na|-}}
+|-
+| {{item|mode=table|Orichalcum Ore}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(1/3)+1)*0.9)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(4/3)+1)*0.9)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*1)*0.85/(floor(7/3)+1)*0.9)}} 矿脉 || {{na|-}}
+|-
+| {{item|mode=table|Adamantite Ore}} || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(2/3)+1)*1)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(5/3)+1)*1)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(8/3)+1)*1)}} 矿脉
+|-
+| {{item|mode=table|Titanium Ore}} || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(2/3)+1)*0.9)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(5/3)+1)*0.9)}} 矿脉 || {{na|-}} || {{na|-}}
+| {{#expr:floor((1*310-85*2)*0.85/(floor(8/3)+1)*0.9)}} 矿脉
+|}
+{{note|small=y|这些数值适用于{{tr|small world}}。}}
+
+所有{{tr|Hardmode ores}}都会避免在世界最外沿 100 格范围内生成。{{tr|Cobalt}}和{{tr|Palladium}}的最高生成位置就在[[{{tr|surface}}]]下，{{tr|Mythril}}和{{tr|Orichalcum}}则从[[{{tr|Cavern}}]]层顶部开始生成，而{{tr|Adamantite}}和{{tr|Titanium}}在{{tr|Cavern layer}}中开始生成，低于{{tr|Mythril}}/{{tr|Orichalcum}}。<ref>{{tr|Adamantite}}/{{tr|Titanium}}的确切高度可以用此公式计算：<code>( (|{{tr|world}}顶部的高度| + |{{tr|Underground}}/{{tr|Cavern}}边界的深度|)*2 + {{tr|world}}总高度 ) / 3</code>。{{source code ref|noref=y|v=1.4.0.5|method=Terraria.WorldGen.SmashAltar|t=此处的公式为 <code>Main.rockLayer + Main.rockLayer + (double)Main.maxTilesY) / 3.0</code>。}}</ref>所有{{tr|ores}}会在距离{{tr|world}}底部边界 150 格高的位置停止生成（即大约[[{{tr|the Underworld}}]]内的四分之一高度）
+
+砸碎的{{tr|altars}}数量不会影响矿脉的大小，只会影响矿脉的数量。由于每个矿脉的生成是重度随机化的，因此很难给出精确的“最适”矿脉高低值。取而代之，下面给出了“好运”和“霉运”下的矿脉数量表格。由于偶尔会损失{{tr|ore}}，平均产出量可能在 30–40% 之间。
+{{options/set|item|mode=image}}
+{| class="terraria" style="text-align:center"
+! colspan=2 | {{tr|Ore type}} !! 好运 !! 霉运
+|-
+| {{item|mode=table|Cobalt Ore|Cobalt}} || 103 {{item|Cobalt Ore}} (34 {{item|Cobalt Bar}} + 1 {{item|Cobalt Ore}}) || 11 {{item|Cobalt Ore}} (3 {{item|Cobalt Bar}} + 2 {{item|Cobalt Ore}})
+|-
+| {{item|mode=table|Palladium Ore|Palladium}} || 103 {{item|Palladium Ore}} (34 {{item|Palladium Bar}} + 1 {{item|Palladium Ore}}) || 11 {{item|Palladium Ore}} (3 {{item|Palladium Bar}} + 2 {{item|Palladium Ore}})
+|-
+| {{item|mode=table|Mythril Ore|Mythril}} || 89 {{item|Mythril Ore}} (22 {{item|Mythril Bar}} + 1 {{item|Mythril Ore}}) || 11 {{item|Mythril Ore}} (2 {{item|Mythril Bar}} + 3 {{item|Mythril Ore}})
+|-
+| {{item|mode=table|Orichalcum Ore|Orichalcum}} || 89 {{item|Orichalcum Ore}} (22 {{item|Orichalcum Bar}} + 1 {{item|Orichalcum Ore}}) || 11 {{item|Orichalcum Ore}} (2 {{item|Orichalcum Bar}} + 3 {{item|Orichalcum Ore}})
+|-
+| {{item|mode=table|Adamantite Ore|Adamantite}} || 58 {{item|Adamantite Ore}} (11 {{item|Adamantite Bar}} + 3 {{item|Adamantite Ore}}) || 11 {{item|Adamantite Ore}} (2 {{item|Adamantite Bar}} + 1 {{item|Adamantite Ore}})
+|-
+| {{item|mode=table|Titanium Ore|Titanium}} || 58 {{item|Titanium Ore}} (11 {{item|Titanium Bar}} + 3 {{item|Titanium Ore}}) || 11 {{item|Titanium Ore}} (2 {{item|Titanium Bar}} + 1 {{item|Titanium Ore}})
+|}{{options/reset|item}}
+{{note|small=y|这和{{eil|luck}}机制无关。}}
+
+但请注意，上表假设所有{{tr|ore}}都实际上取代了{{tr|blocks}}。如果{{tr|Ore}}试图在任何下表未列出的{{tr|block}}上生成，则其无法生成。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.OreRunner}}
+{{flexstart}}
+{{options/set|item|wrap=y|small=y}}
+{{itemlist|class=terraria|width=14em
+|{{item|Dirt Block}}
+|{{item|Stone Block|note=（包括长有[[{{tr|Moss}}]]的{{tr|variants}}）}}
+|{{item|Corrupt grass}}
+|{{item|Ebonstone Block}}
+|{{item|Clay Block}}
+|{{item|Sand Block}}
+|{{item|Ash Block}}
+|{{item|Mud Block}}
+|{{item|Jungle grass}}
+|{{item|Mushroom grass}}
+|{{item|Hallowed grass}}
+|{{item|Ebonsand Block}}
+|{{item|Pearlsand Block}}
+|{{item|Pearlstone Block}}
+|{{item|Snow Block}}
+|{{item|Ice Block}}
+|{{item|Purple Ice Block}}
+|{{item|Pink Ice Block}}
+|{{item|Crimson grass}}
+|{{item|Red Ice Block}}
+|{{item|Crimstone Block}}
+|{{item|Crimsand Block}}
+|{{item|Sandstone Block}}
+|{{item|Hardened Sand Block}}
+|{{item|Crimsandstone Block}}
+|{{item|Pearlsandstone Block}}
+|{{item|Ebonsandstone Block}}
+|{{item|Hardened Ebonsand Block}}
+|{{item|Hardened Crimsand Block}}
+|{{item|Hardened Pearlsand Block}}
+|{{item|Crispy Honey Block|note=（仅限 {{eil|Don't dig up}} 和<br/>{{tr|Get fixed boi}} {{tr|worlds}}）}}
+|{{item|Hive|note=（当后方没有[[{{tr|Hive Wall}}]]）}}
+}}
+{{options/reset|item}}
+{{flexend}}
+
+此外，{{tr|Hardmode ores}}不会在[[{{tr|Granite Block}}]]或[[{{tr|Marble Block}}]]上生成，因此不会出现在{{eil|Granite Cave}}和{{eil|Marble Cave}}中，因为这些地方不存在可替换的{{tr|block}}。
+
+== 备注 ==
+* [[{{tr|Meteorite}}]]（Meteorite）、[[{{tr|Obsidian}}]]（Obsidian）、和[[{{tr|Luminite}}]]（Luminite）在游戏中并不视为{{tr|ores}}。它们的名字中没有“ore”（矿）的字样，并且采挖它们并不能解锁{{tr|Ooo! Shiny!}}和{{tr|Extra Shiny!}}{{tr|achievements}}。
+* 对于{{tr|Extra Shiny! achievement}}，[[{{tr|Chlorophyte Ore}}]]并不算作{{tr|Hardmode ore}}。
+
+== 成就 ==
+{{achievement|name=Ooo! Shiny!}}
+{{achievement|name=Extra Shiny!}}
+{{achievement|name=Photosynthesis}}
+
+== 小贴士 ==
+* 每个[[{{tr|Hardmode}}]]{{tr|ore}}都是在世界中头三个[[{{tr|Altar}}]]被破坏时选定的。可以通过在砸掉首批{{tr|Altars}}后不存档离开世界（通过结束任务或杀掉进程的方式）来“选择”{{tr|ores}}。在[[{{tr|server}}]]上要实现这点更容易，只要用 <code>exit-nosave</code> 指令即可。
+** 这样做时应当关闭[[{{tr|Autosave}}]]。否则游戏可能会在摧毁{{tr|altar}}后离开{{tr|world}}前保存。
+* 除了[[{{tr|Hellstone}}]]和[[{{tr|Obsidian}}]]外，所有{{tr|ores}}都会被[[{{tr|Spelunker}}]]{{tr|buff}}高亮标记，这使得找到矿脉更加容易。{{tr|Hellstone}}不会被这个{{tr|buff}}点亮，但会被[[{{tr|Dangersense Potion}}]]点亮。{{tr|Obsidian}}很容易在[[{{tr|lava}}]]四周出现。
+* 使用[[{{tr|Crate Potion}}]]能改善得到[[{{tr|crates}}]]的几率，能开出{{tr|ore}}的[[{{tr|Wooden Crate}}]]同样如此。
+* 在摧毁{{tr|Altars}}之前将多余的天然{{tr|blocks}}比如[[{{tr|dirt}}]]填进山洞可以让{{tr|Hardmode}}{{tr|ores}}在其中生成。随后还能在小地图上看到它们，这提供一种方法，能将多余的{{tr|blocks}}转化为{{tr|ores}}，还能知道它们的确切位置。
+* 在{{eversions|1.3.0.1|invert=y|old-gen=n}}中，[[{{tr|Palladium Pickaxe}}]]和[[{{tr|Palladium Drill}}|{{tr|drill}}]]可以采挖{{tr|Adamantite}}{{tr|Titanium}}。
+* 大多数{{tr|ores}}的卖出价与其制造的{{tr|bars}}相同或更高。例外的是{{tr|pre-Hardmode}}后期的{{tr|ores}}（[[{{tr|Meteorite}}]]、{{tr|Hellstone}}、和{{eicons|1.4.0.1|invert=y}} [[{{tr|Demonite Ore}}]]/[[{{tr|Crimtane Ore}}]]）和[[{{tr|Chlorophyte Ore}}]]，所有这些的{{tr|ore}}都比{{tr|bars}}更有利可图。（{{tr|Hellstone}}和{{tr|obsidian}}的{{tr|ores}}是不能出售的，而且不存在{{tr|Obsidian}}锭）。
+* 有两种快速找到{{tr|Hardmode ores}}的方法，用之前发现的{{eil|Abandoned Minecart Tracks}}或者沿着[[{{tr|The Underworld}}]]的天花板搜索。这两种方法都可以沿着很长一段水平距离描绘巨大的洞穴系统，{{tr|the Minecart Tracks}}允许玩家逃离危险的{{tr|enemies}}，而[[{{tr|mechanical boss}}]] 之前的{{tr|Hardmode enemies}}在{{tr|the Underworld}}中生成的很少且很容易躲避。
+
+== 花絮 ==
+* {{eicons|1.3.0.1|invert=y}} {{tr|Hellstone}}的物品外观其实是重新着色过的[[{{tr|Silver Ore}}]]外观。
+* {{tr|Hellstone}}是唯一不能在单个世界内无限生成的{{tr|ores}}。其他的都可以从{{tr|Crates}}、[[{{tr|an Extractinator}}]]、[[{{tr|Bosses}}]]、可复制的[[{{tr|liquid}}]]、[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}坠落]]和[[{{tr|Mud Block}}]]等方式获取。
+** {{eicons|1.4.0.1|invert=y}} 由于没有{{eil|Dirt Bomb|s}}，{{tr|Chlorophyte}}受限于世界中{{tr|mud}}（和{{tr|dirt}}）的数量。
+* {{eicons|1.4.0.1|invert=y}} [[{{tr|Iron Ore}}|{{tr|Iron}}]]和[[{{tr|Lead Ore}}|{{tr|Lead}}]]仅有的没有相应[[{{tr|brick}}]]的{{tr|ore type}}。
+* {{tr|Luminite}}的售价是所有{{tr|ore}}中最高的，每块 {{iteminfo|Luminite|sell}}。
+* {{tr|Palladium}}、{{tr|Cobalt}}、和{{tr|Titanium}}是仅有的以现实金属命名的{{tr|Hardmode}}{{tr|ores}}。
+* {{tr|Luminite}}是唯一不使用[[{{tr|Furnace}}]]或[[{{tr|Hardmode Forges}}|{{tr|Hardmode Forge}}]]来制作{{tr|bars}}的{{tr|ore}}，改为需要[[{{tr|Ancient Manipulator}}]]。
+[[File:Tier 1 ores side-by-side.jpg|frame|{{tr|Ore}}代用选择在[[{{tr|drunk world}}]]中并不是互斥的，如图所示（左边是{{tr|Copper Ore}}，右边是{{tr|Tin Ore}}）。]]
+* 在{{eil|drunk world}}中，每个级别的两种代用{{tr|ore}}类型都会可用。
+
+=== 非对等性 ===
+虽然大多数由{{tr|ores}}或其衍生物制成或暗示由其做成的物体都拥有同等级的等价物，但也有一些例外情况：
+
+; {{tr|Copper / Tin}}
+* 通过{{tr|fishing}}得到的[[{{tr|Tin Can}}]]没有“铜罐”{{tr|counterpart}}。
+* [[{{tr|Merchant}}]]总是只卖{{tr|copper tools}}，即使在包含{{tr|Tin}}的{{tr|worlds}}中亦如此。
+* 新生成的{{tr|characters}}和重生的{{tr|Mediumcore}}{{tr|characters}}生成后身上总是带着{{tr|copper tools}}，即使包含{{tr|Tin}}的{{tr|worlds}}中亦如此。
+
+; {{tr|Iron / Lead}}
+* 虽然{{tr|Hardmode}}的{{tr|Mythril Crate}}暗示{{tr|crate}}和{{tr|ore}}进程有关联，但{{tr|the Iron Crate}}并没有“{{tr|Lead}}匣”{{tr|counterpart}}。
+* [[{{tr|Ironskin Potion}}]]的名字虽然这么叫，但它可以用{{tr|Iron Ore or Lead Ore}}制作；没有“铅皮药水”{{tr|counterpart}}。
+* {{tr|The Merchant}}总是出售{{tr|Iron Anvil}}，即使在包含{{tr|{{tr|Lead}}}}的{{tr|worlds}}中亦如此。
+* [[{{tr|Underground Cabin}}]]中总是生成{{tr|Iron Anvil}}，即使在包含{{tr|{{tr|Lead}}}}的{{tr|worlds}}中亦如此。
+* 新生成的{{tr|Journey}}{{tr|characters}}总是带着{{tr|iron tools}}，即使在包含{{tr|{{tr|Lead}}}}的{{tr|worlds}}中亦如此。
+
+; {{tr|Gold / Platinum}}
+* [[{{tr|Gold Chest}}]]没有“{{tr|Platinum}}箱”{{tr|counterpart}}。
+* 掉落自[[{{tr|Pirate Invasion}}]]{{tr|enemies}}的[[{{tr|Golden furniture}}]]和[[{{tr|Gold Ring}}]]没有{{tr|platinum}}{{tr|counterparts}}。
+* [[{{tr|Gold Dust}}]]以及其衍生品还有相关的{{tr|buffs and debuffs}}，都没有{{tr|platinum counterpart}}。
+* {{tr|Gold versions}}的[[{{tr|critters}}]]没有{{tr|platinum counterparts}}。
+* [[{{tr|Golden Carp}}]]没有“{{tr|Platinum}}鲤鱼”{{tr|counterpart}}。
+* 虽然{{tr|Hardmode}}的{{tr|Titanium Crate}}暗示{{tr|crate}}和{{tr|ore}}进程有关联，但{{tr|the Gold Crate}}并没有“{{tr|Platinum}}匣”{{tr|counterpart}}。
+* 虽然{{tr|gold and platinum}}是同{{tr|tier}}的{{tr|ores}}，但[[{{tr|Platinum Coin}}]]的级别却直接高于[[{{tr|Gold Coin}}]]。
+
+; {{tr|Cobalt / Palladium}}
+* [[{{tr|Ancient Cobalt armor}}]]没有对应的“{{tr|Ancient Palladium set}}”。
+* [[{{tr|Cobalt Shield}}]]没有对应的“{{tr|Palladium}}护盾”。
+
+; {{tr|Mythril / Orichalcum}}
+* 虽然{{tr|pre-Hardmode}}的{{tr|Iron Crate}}暗示{{tr|crate}}和{{tr|ore}}进程有关联，但{{tr|the Mythril Crate}}并没有“{{tr|Orichalcum}}匣”{{tr|counterpart}}。
+
+; {{tr|Adamantite / Titanium}}
+* 虽然{{tr|pre-Hardmode}}的{{tr|Gold Crate}}暗示{{tr|crate}}和{{tr|ore}}进程有关联，但{{tr|the Titanium Crate}}并没有“{{tr|Adamantite}}匣”{{tr|counterpart}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|提高了{{tr|Demonite}}、{{tr|Crimtane}}、和{{tr|Chlorophyte}}的卖出价格。|nocat=1}}
+{{history|Desktop 1.3.0.1|
+** 更新了一些{{tr|ore}}的图形。
+** {{tr|Introduced Luminite}}。|nocat=1}}
+{{history|Desktop 1.2.3|
+** {{tr|Ore}}现在能堆叠到 999 个。
+**{{tr|Chlorophyte Ore}}变得稍微罕见一点，生长也慢了一点。
+** {{tr|Hardmode Ores}}的生成量略微减少。}}<!-- this is an actual patch, not adding Ores, so don’t put nocat here -->
+{{history|Desktop 1.2|
+**添加了 8 种新{{tr|ores}}作为原来那 8 种的可能代用品：{{tr|Tin}}、{{tr|Lead}}、{{tr|Tungsten}}、{{tr|Platinum}}、{{tr|Crimtane}}、{{tr|Palladium}}、{{tr|Orichalcum}}、{{tr|Titanium}}，按其{{tr|tier}}排列。
+** 添加了{{tr|Chlorophyte Ore}}。|nocat=1}}
+{{history|Desktop 1.1|{{tr|Introduced}}[[{{tr|Hardmode}}]]{{tr|Ores}}：{{tr|Cobalt Ore}}、{{tr|Mythril Ore}}、和{{tr|Adamantite Ore}}。|nocat=1}}
+{{history|Desktop 1.0.2|现在采挖石头和其他硬物会发出会发出“叮”的声音。}}<!-- this is an actual patch, not adding Ores, so don’t put nocat here -->
+{{history|Desktop-Release|引入了{{tr|Copper Ores}}、{{tr|Iron Ores}}、{{tr|Silver Ores}}、和{{tr|Gold Ores}}，{{tr|Hellstone}}、{{tr|Obsidian}}、和{{tr|Meteorite}}。}}
+{{history|Console 1.0.933.1|进行了 PS4 的 1.0.750.0 更新的更改。（{{icon|xbox one}}）|nocat=1}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 更新了一些{{tr|ore}}的图形。
+** {{tr|Introduced Luminite}}。|nocat=1}}
+{{history|Console 1.06|
+** {{tr|Ore}}现在能堆叠到 999 个。
+**{{tr|Chlorophyte Ore}}变得稍微罕见一点，生长也慢了一点。
+** {{tr|Hardmode Ores}}的生成量略微减少。}}<!-- this is an actual patch, not adding Ores, so don’t put nocat here -->
+{{history|Console 1.02|引入了{{tr|Desktop}} 1.2 所有的{{tr|Ores}}。|nocat=1}}
+{{history|Console-Release|引入，同时带有采挖的声音。
+** {{tr|Pre-Hardmode}}的{{tr|Ores}}：{{tr|Copper Ores}}、{{tr|Iron Ores}}、{{tr|Silver Ores}}、和{{tr|Gold Ores}}，{{tr|Hellstone}}、{{tr|Obsidian}}、和{{tr|Meteorite}}。
+** {{tr|Hardmode}}的{{tr|Ores}}：{{tr|Cobalt Ores}}、{{tr|Mythril Ores}}、和{{tr|Adamantite Ores}}。}}
+{{history|Mobile 1.2.11212|
+** {{tr|Ore}}现在能堆叠到 999 个。
+**{{tr|Chlorophyte Ore}}变得稍微罕见一点，生长也慢了一点。
+** {{tr|Hardmode Ores}}的生成量略微减少。}}<!-- this is an actual patch, not adding Ores, so don’t put nocat here -->
+{{history|Mobile 1.2.6508|引入了{{tr|Desktop}} 1.2 所有的{{tr|Ores}}。|nocat=1}}
+{{history|Mobile 1.1.5536|引入{{tr|Hardmode Ores}}：{{tr|Cobalt Ore}}、{{tr|Mythril Ore}}和{{tr|Adamantite Ore}}。|nocat=1}}
+{{history|Mobile-Release|引入了{{tr|Copper Ores}}、{{tr|Iron Ores}}、{{tr|Silver Ores}}、和{{tr|Gold Ores}}，{{tr|Hellstone}}、{{tr|Obsidian}}、和{{tr|Meteorite}}。这些在采挖时会发出声音。}}
+{{history|3DS-Release|引入了{{tr|Desktop}} 1.2.3 中的采挖声音和生成机制。
+** {{tr|Pre-Hardmode}}的{{tr|Ores}}：{{tr|Copper Ores}}、{{tr|Iron Ores}}、{{tr|Silver Ores}}、{{tr|Gold Ores}}、和{{tr|Platinum Ores}}，{{tr|Hellstone}}、{{tr|Obsidian}}、和{{tr|Meteorite}}。
+** {{tr|Hardmode}}{{tr|Ores}}：{{tr|Cobalt Ores}}、{{tr|Palladium ore}}、{{tr|Mythril Ores}}、{{tr|Orichalcum ore}}、{{tr|Adamantite Ores}}、{{tr|Titanium ore}}、和{{tr|Chlorophyte Ores}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+
+| show-ore = yes
+}}
+{{Master Template Tiles
+| show-other = yes
+}}
+
+[[Category:{{tr|Ore}}{{tr|items}}| ]]
+
+{{language info|en=Ores}}

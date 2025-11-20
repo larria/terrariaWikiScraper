@@ -1,0 +1,52 @@
+{{exclusive|1.3.3}}
+{{item infobox
+| auto = 3788
+| idprojectile = 661
+| listcat = Guns / Scope
+| hardmode = yes
+}}
+[[File:Onyx Blaster (demo).gif|thumb|400px|right|使用中的{{tr|Onyx Blaster}}。]]
+
+'''{{tr|Onyx Blaster}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|gun}}]]，是[[{{tr|Shotgun}}]]的直接升级，每次射击时发射 4 发[[{{tr|bullets}}]]，但只消耗一枚[[{{tr|ammo}}]]，同时发射一发暗能量{{tr|crystal}}{{tr|projectile}}。暗能量{{tr|crystal}}会在命中{{tr|enemy}}或{{tr|block}}，亦或者经过{{duration|{{projectileinfo|661|timeLeft}} ticks}}（默认情况下为 {{#expr:({{projectileinfo|661|timeLeft}}*((1+0{{projectileinfo|661|extraUpdates}})*{{iteminfo|3788|velocity}}))/16 round 2}} {{tr|tiles}}；随着[[{{tr|velocity}}]]提高）后爆炸。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}{{tr|crystal}}{{tr|projectile}}造成两倍{{tr|weapon}}{{tr|damage}}，例如使用[[{{tr|Musket Ball}}]]时造成 {{#expr:({{iteminfo|3788|damage}}+{{iteminfo|97|damage}})*2}} {{tr|base damage}}。
+
+{{modifier|ranged}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Onyx Blaster|expectedrows=1}}
+
+== 备注 ==
+* 黑色水晶{{tr|projectile}}的[[{{tr|velocity}}]]继承自使用的[[{{tr|ammo}}]]，但是它并不会继承其 [[extraUpdates]] 属性。这可能会造成反直觉的结果，比如对水晶的速度加成最低的{{tr|bullet}}是[[{{tr|Luminite Bullet}}]]，而[[{{tr|High Velocity Bullet}}]]会使水晶的速度与[[{{tr|Musket Ball}}]]相同。
+
+== 小贴士 ==
+* {{tr|Onyx Blaster}}可以在击败任一[[{{tr|mechanical boss}}]] 之前制作，使得在该时期，它是一把行之有效的{{tr|weapon}}。它的材料并不难收集，且它在应对{{tr|Hardmode}}早期的威胁时有着良好的表现，是应对{{tr|mechanical boss}} 的良好选择，甚至于有能力应对更之后的 {{tr|boss}} 如[[{{tr|Duke Fishron}}]]。
+* 它可以一击必杀许多常见的{{tr|Hardmode enemy}}，而且它的{{tr|explosion}}对[[{{tr|worms|link=y}}#{{tr|enemy}}|{{tr|worms}}类{{tr|enemy}}]]有十足的破坏力，能够一击必杀直到[[{{tr|Dune Splicer}}]]为止的任何{{tr|worm}}类{{tr|enemy}}，或加速对抗[[{{tr|Destroyer}}]]。
+* 将该{{tr|weapon}}与[[{{tr|Megashark}}]]和[[{{tr|Endless Musket Pouch}}]]搭配使用可以最大程度地控制大群{{tr|enemy}}。
+
+== 花絮 ==
+[[File:Onyx Blast.png|thumb|{{tr|Onyx Blaster}}的特写镜头。]]
+* {{wikipedia|Onyx|玛瑙（Onyx）}}是一种在世界各地都很常见的矿物。{{tr|Onyx Blaster}}这个名字可能是因为玛瑙和此{{tr|weapon}}都是黑色的。
+** 尽管该{{tr|weapon}}被命名为{{tr|Onyx Blaster}}，但玛瑙并没有被用来制造该{{tr|weapon}}，且[[《{{tr|Terraria}}》]]中也没有玛瑙这种物品。
+* 此{{tr|weapon}}是两种碎块制作成的“系列”{{tr|weapon}}之一，该系列的其他{{tr|weapon}}是[[{{tr|Sky Fracture}}]]和[[{{tr|Dao of Pow}}]]。它们的配方、名称和外观将{{tr|weapon}}与黑暗、光明和平衡的主题联系起来，{{tr|Onyx Blaster}}代表的是黑暗，此外，该组{{tr|weapon}}中的每把{{tr|weapon}}都对应着三种“{{tr|classic}}”的伤害类型（{{tr|melee}}、{{tr|magic}}和{{tr|ranged}}）中的一种，其中{{tr|Onyx Blaster}}是远程{{tr|weapon}}。
+* 根据 [[{{tr|Yoraiz0r}}]] 的说法，{{tr|Onyx Blaster}}的设计灵感受到日本电子游戏系列{{wikipedia|Danganronpa|《弹丸论破/枪弹辩驳（Danganronpa）》}}中的主要反派{{wikipedia|Monokuma|黑白熊（Monokuma）}}黑暗、“邪恶”的一半的启发。<ref>{{forums thread|behind-the-scenes-of-journeys-end-a-q-a-with-the-programmers-and-artists-of-terraria.102130/page-12#post-2276972|Behind the scenes of Journey's End - A Q&A with the Programmers and Artists of Terraria}} {{small|Jan 22, 2021}}</ref>
+* 它是《{{tr|Terraria}}》中 唯二拥有功能独立的副炮的枪械之一，另一把是[[{{tr|Vortex Beater}}]]。
+* 在使用{{tr|Onyx Blaster}}时其{{tr|sprite}}上的紫色条纹会发光。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 伤害由 28 降低至 24。
+** 使用时间由 45 增加至 48。}}
+{{history|Desktop 1.3.4.4|修复了和{{tr|Onyx Blaster}}有关的帧数降低问题。}}
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Onyx Blaster}}

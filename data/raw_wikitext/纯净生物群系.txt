@@ -1,0 +1,16 @@
+{{stub}}
+'''纯净{{tr|biomes}}'''是技术上被视为[[{{tr|world}}]]中的区域的默认{{tr|biome}}设置的[[{{tr|biomes}}]]。如果一片区域没有被其他{{tr|biomes}}占据，则此处总是会被视为纯净{{tr|biomes}}中的一种（取决于高度）。
+
+以下{{tr|biomes}}被视为纯净{{tr|biomes}}：[[{{tr|Space}}]]、[[{{tr|Forest}}]]、[[{{tr|Underground}}]]、和[[{{tr|Cavern}}]]。
+
+== 备注 ==
+* 在[[{{tr|fishing}}]]时，独有于这些{{tr|biomes}}的内容仅在没有其他重叠的{{tr|biomes}}时可获得，否则内容会被重叠的{{tr|biomes}}的内容覆盖。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.FishingCheck_RollItemDrop}}
+** 例如，[[{{tr|Jewelfish}}]]仅能在[[{{tr|Underground}}]]及以下[[{{tr|fishing}}]]时获得，如果[[生物群落的存在要求|附近有足够的{{tr|tile}}]]以形成诸如[[{{tr|Corruption}}]]/[[{{tr|Underground Corruption}}]]等{{tr|biome}}，就无法获得此{{tr|fish}}。
+
+== 参考 ==
+{{reflist}}
+
+{{all versions}}
+{{Biomes}}
+
+{{language info|en=Pure biomes}}

@@ -1,0 +1,108 @@
+[[File:BiomeBannerHive.png|center]]
+{{forlist|{{tr|the background object}}|{{tr|Bee Hive}}|{{tr|the block}}|[[{{tr|Hive|link=y}}]]}}
+
+'''{{tr|Bee Hive}}'''是位于[[{{tr|Underground Jungle}}]]的[[{{tr|mini-biome}}]]。{{tr|The hive}}本身是由[[{{tr|Hive|link=y}}|{{tr|Hive}}]][[{{tr|block}}]]构成；在其内部，含有[[{{tr|Honey}}]]池并且通常有一只[[{{tr|Larva}}]]。摧毁{{tr|the Larva}}会召唤[[{{tr|Queen Bee}}]]。任何{{tr|projectile}}、[[{{tr|tool}}]]、[[{{tr|weapon}}]]、或[[{{tr|enemy}}]]都会一击即摧毁{{tr|the Larva}}，因此如果玩家尚未准备好与{{tr|Queen Bee}}战斗，在{{tr|the Larva}}附近应当小心谨慎一些。
+
+每个世界的{{tr|bee hives}}数量取决于[[{{tr|world size}}]]：小或中世界通常有 6-8 个{{tr|hives}}，大世界中会有 11-16 个{{tr|hives}}。{{source code ref|v=1.4.0.5|method=Terraria.WorldGen.GenerateWorld|t=相关部分在 AddGenerationPass<code>"Hives"</code> 下。要注意某些世界有可能（但可能性很低）会比所列的数量少；另外，一些[[{{tr|Secret world seeds}}|特殊{{tr|world seeds}}]]拥有非同寻常的{{tr|hives}}数量、大小、与形状。}}
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Queen Bee|note2=({{tr|boss}})|size=*0.5}}<!--
+			-->|{{item|Hornet}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Moss Hornet}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自摧毁[[{{tr|Hive}}]]块：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bee}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Queen Bee}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bee Gun}}<!--
+			-->|{{item|Bee Keeper}}<!--
+			-->|{{item|The Bee's Knees}}<!--
+			-->|{{item|Honey Comb}}<!--
+			-->|{{item|Nectar}}<!--
+			-->|{{item|Hive Wand}}<!--
+			-->|{{item|Bee Hat}}<!--
+			-->|{{item|Bee Shirt}}<!--
+			-->|{{item|Bee Pants}}<!--
+			-->|{{item|Beenade}}<!--
+			-->|{{item|Bee Minecart}}<!--
+			-->|{{item|Queen Bee Trophy}}<!--
+			-->|{{item|Bottled Honey}}<!--
+			-->|{{item|Queen Bee Mask}}<!--
+			-->|{{item|Bee Wax}}<!--
+			-->|{{item|Honeyed Goggles}}<!--
+			-->|{{item|Treasure Bag (Queen Bee)|note2=(在[[{{tr|Expert Mode}}]]中掉落[[{{tr|Hive Pack}}]])}}<!--
+			-->|{{item|Sparkling Honey|note2=(在[[{{tr|Master Mode}}]]有 25% 几率掉落)}}<!--
+			-->|{{item|Queen Bee Relic|note2=(在[[{{tr|Master Mode}}]]中掉落)}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hive}}<!--
+			-->|{{item|Hive Wall}}<!--
+			-->|{{item|Honey}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 在 [[{{tr|Drunk world}}]] 中，{{tr|Bee Hives}}会变得更大，有着不同寻常的外轮廓，并且常常包含不止一个{{tr|Larvae}}。因此，每个{{tr|world}}包含的{{tr|Bee Hives}}数目要比正常情况略少。
+
+== 成就 ==
+{{achievement|name=Where's My Honey?}}
+{{achievement|name=Sting Operation}}
+
+== 小贴士 ==
+* [[{{tr|Underground Jungle}}]]会自然生成少量{{tr|Honey}}和[[{{tr|Honey Block}}]]，但和普遍认为的相反，这并不意味着{{tr|Bee Hive}}就在附近。
+* {{tr|the hive}}的底部会充满{{tr|Honey}}。站在{{tr|the honey}}中会提供{{tr|regeneration}}[[{{tr|buff}}]]，但会大大减慢玩家的移动，并让躲闪变得困难。如果玩家在意外生成[[{{tr|Queen Bee}}]]时困在{{tr|honey pool}}中，他们会极为脆弱并且在逃掉前可能要承受许多次重击。放置[[{{tr|platforms}}]]有助于避免掉进{{tr|honey pool}}。（注意不要在{{tr|Larva}}''上''放置{{tr|platforms}}或任何其他东西，这样会打破它！）
+* {{tr|A Larva}}可能会隐藏在{{tr|the honey}}液面之下。如果{{tr|hive}}中看起来没有可见的{{tr|Larva}}（或者巨大的{{tr|hive}}中只有一个{{tr|larva}}），玩家对于在{{tr|the honey}}中使用武器或向其中开火要非常小心，以免遭受到{{tr|Queen Bee}}的突然袭击。
+* 漫到{{tr|the honey}}上的[[{{tr|water}}]]会生成{{tr|Honey Blocks}}。如果{{tr|Larva}}部分淹没或''刚好位于液面下''，形成的{{tr|blocks}}会破坏{{tr|the Larva}}，正常召唤出{{tr|Queen Bee}}。
+* 如果{{tr|the hive}}足够大，可以通过（可选地）清理{{tr|the hive}}的{{tr|wall}}并添加{{tr|Platform}}来将其变成不错的{{tr|arena}}。这不仅对于{{tr|Queen Bee}}战有用，也对打[[{{tr|Plantera}}]]有用。
+* 在{{tr|Underground Jungle}}中穿着[[{{tr|Chlorophyte armor}}]]或[[{{tr|Orichalcum armor}}]]是有风险的，它们的{{tr|set bonus}}可能会意外打破一定距离外某处的{{tr|Larva}}，从而导致意料外的{{tr|Queen Bee}}战。在这个时间点上，玩家应当已经相当好地用[[{{tr|Hardmode}}]]武装了自己，但即使如此，玩家依然可能会措手不及。
+* {{eicons|1.4.4}} 如果玩家需要长时间待在{{tr|Bee Hive}}中，例如为未来与{{tr|Queen Bee}}的战斗搭建{{tr|arenas}}，那么{{tr|Bee Hives}}中大量的{{tr|Hornets}}可能会威胁到玩家的生命。要对付大量{{tr|Hornets}}，{{tr|ranged weapons}}（例如[[{{tr|Musket}}]]、[[{{tr|Undertaker}}]]、或[[{{tr|gem staves}}]]）可以用来快速地消灭它们，同时还可以装备[[{{tr|Bezoar}}]]、浸没在{{tr|honey}}中以便获得{{tr|regeneration buff}}、还可以把[[{{tr|Hornet Banner}}]]放置在{{tr|hive}}附近。玩家还可以在{{tr|Larvae}}附近放一圈[[{{tr|blocks}}]]，避免用{{tr|arrows or bullets}}意外唤醒{{tr|Queen Bee}}。可以穿透{{tr|enemies}}或物块的{{tr|Weapons}}（例如[[{{tr|whips}}]]、[[{{tr|Vilethorn}}]]、和[[{{tr|Gray Zapinator}}]]）在{{tr|hive}}的封闭空间中应当避免使用。
+
+== 花絮 ==
+* {{tr|Bee Hives}}中通常有一只{{tr|larvae}}，但较大的{{tr|Hives}}可能会包含两只{{tr|Larvae}}，而较小的{{tr|Hives}}则有低几率不含{{tr|Larvae}}。
+* 很罕见地，两个{{tr|Bee Hives}}会重叠，变成一个超巨大的{{tr|Bee Hive}}。
+
+* {{tr|Larva}}也能像其他{{tr|block}}一样上漆。
+
+* 在 [[{{tr|not the bees}}]] {{tr|world}}中，{{tr|larva}}可以在任意{{tr|blocks}}上生成。这意味着你可以替换掉{{tr|larva}}下的{{tr|blocks}}而不破坏它。甚至用一些独特的{{tr|block}}，比如来自[[{{tr|Dungeon}}]]的{{tr|spikes}}，也一样不会破坏它。
+
+== 历史 ==
+{{history|Desktop 1.2.4|提升了在{{tr|world creation}}生成更多数量的几率。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{all versions}}
+
+{{language info|en=Bee Hive (biome)}}

@@ -1,0 +1,92 @@
+{{item infobox
+| auto = 1571
+| damage = @@@@ {{eicons|1.4.1|small=y}} / 64 {{eicons|1.2.3|not=1.4.1|small=y}} / 57 {{eicons|1.2.3|invert=y|small=y}}
+| listcat = projectile melee
+| tags = Loot / hardmode
+| idprojectile = 306, 307
+| sound1 = NPC Hit 1.wav
+| soundcaption1 = {{tr|Eater's Bite}}{{tr|impact}}
+}}
+{{see also|{{tr|Corruptor}}}}
+[[File:Scourge of the Corruptor (demo).gif|frame|right|使用中的{{tr|The Scourge of the Corruptor}}。]]
+
+'''{{tr|Scourge of the Corruptor}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|melee weapon}}]]，会发射{{tr|projectiles}}。它必定会在[[{{tr|The Corruption}}|{{tr|Corruption}}]]{{tr|worlds}}内[[{{tr|Dungeon}}]]的[[{{tr|Corruption Chest}}]]中找到。需要一把[[{{tr|Corruption Key}}]]以打开{{tr|Corruption Chest}}。
+
+{{tr|Scourge of the Corruptor}}会发射{{tr|Eater's Bite}}，一种很像小型[[{{tr|Eater of Souls}}]]的快速标枪，在击中[[{{tr|block}}|{{tr|solid block}}]]或[[{{tr|enemy}}]]后会分裂成{{etext|2–4 个或 15 个（见[[#{{tr|Notes}}|{{tr|Notes}}]]）|e=1.4.4}}/{{etext|2–5 个|e=1.4.0.1|invert=y}}{{tr|Tiny Eaters}}。这些{{tr|Tiny Eaters}}具有自动追踪能力，能飞行约 350 {{tr|tiles}}，且在消失前最多反弹 5 次。{{tr|Eater's Bite and Tiny Eaters}}都不受{{tr|gravity}}影响。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{eicons|1.4.1}} {{tr|Tiny Eaters}}造成 75% {{tr|base damage}}（{{#expr:floor({{iteminfo|Scourge of the Corruptor|damage}}*0.75)}} {{tr|base damage}}）。{{source code ref|name=kill|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+** 在{{eversions|1.2.3|not=1.4.1|short=y}}中，它们造成 70% {{tr|base damage}}（{{#expr:floor(64*0.7)}} {{tr|base damage}}）。
+** 在{{eversions|1.2.3|invert=y|short=y}}中，它们造成 55% {{tr|base damage}}（{{#expr:floor(57*0.55)}} {{tr|base damage}}）。
+* {{tr|Tiny Eaters}}也会造成 {{eicons|1.2.3}} 35% / {{eicons|1.2.3|invert=y}} 30% 基础[[{{tr|knockback}}]] ({{tr|knockback}}是 {{knockback|full=y|{{#expr:floor({{iteminfo|Scourge of the Corruptor|knockback}}*0.35)}}|class=}}）<ref name="kill" />。<!-- no difference between floor(5*0.35) and floor(5*0.3) -->
+* 每次生成的{{tr|Tiny Eaters}}的数量是随机决定的，在下表中列出。{{eicons|1.4.4}}在此之后，生成的{{tr|Tiny Eaters}}的数量有 {{chance|1/100}} 的几率被设为 15 个。<ref name="kill" />
+: {| class="terraria
+! rowspan=2 | {{tr|Tiny Eaters}}数量 !! colspan=3 | 几率
+|-
+! {{eicons|1.4.4}} !! {{eicons|1.2.3|not=1.4.0.1}} !! {{eicons|1.2.3|invert=y}}
+|-
+| 2 || {{chance|33/100}} || {{chance|729/1000}} || {{chance|81/100}}
+|-
+| 3 || {{chance|33/100}} || {{chance|243/1000}} || {{chance|18/100}}
+|-
+| 4 || {{chance|33/100}} || {{chance|27/1000}} || {{chance|1/100}}
+|-
+| 5 || {{na}} || {{chance|1/1000}} || {{na}}
+|-
+| 15 || {{chance|1/100}} || {{na}} || {{na}}
+|-
+! 平均{{tr|Tiny Eaters}}数量 || 3.12 || 2.3 || 2.2
+|}
+* {{tr|Scourge of the Corruptor}}是{{tr|melee weapon}}，会受到[[{{tr|armor}}]]和[[{{tr|accessories}}]]的{{tr|melee debuff bonus}}影响，例如[[{{tr|Frost armor}}]]或[[{{tr|Beetle armor}}]]和[[{{tr|Fire Gauntlet}}]]，以及[[{{tr|Flasks}}]]的效果。
+* {{tr|Tiny Eaters}}会在[[{{tr|Mimic}}]]和[[{{tr|Nymph}}]]变得有攻击性之前就追踪它们。
+* 当从右边或下面向一个{{tr|tile}}厚的墙射击时，{{tr|Tiny Eaters}}有可能生成在墙的另一边。
+* {{tr|Tiny Eaters}}不会破坏[[{{tr|Cobweb}}]]，也不会对[[{{tr|critters}}]]和[[{{tr|Target Dummy}}]]造成{{tr|damage}}。
+* 和所有的自动追踪{{tr|projectiles}}一样，{{tr|Tiny Eaters}}不会追踪{{tr|players}}（即使是在 [[{{tr|PvP}}]] 中也如此）。
+* 在[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|worlds}}中无法获得{{tr|Scourge of the Corruptor}}，因为它们缺少{{tr|Corruption Chest}}。取而代之的是，{{tr|Dungeon}}中会有一个[[{{tr|Crimson Chest}}]]，其中包含[[{{tr|Vampire Knives}}]]。
+
+== 小贴士 ==
+* 当和[[{{tr|Magma Stone}}]]或其升级、[[{{tr|Flask of Fire}}]]、[[{{tr|Flask of Cursed Flames}}]]、[[{{tr|Flask of Ichor}}]]等等物品一同使用时，{{tr|the Scourge of the Corruptor}}在照明洞穴方面十分高效。
+* 尽管{{tr|the Tiny Eater}}的{{tr|knockback}}非常小，它们的巨大数量使它们的总体{{tr|knockback}}能压倒{{tr|enemy}}。
+* 可以用这把{{tr|weapon}}朝着诸如地面之类的表面迅速发射，来连续释放成群的{{tr|Tiny Eaters}}。
+
+== 花絮 ==
+* 尽管 ''{{wiktionary|scourge}}'' 多指一种用于惩罚的长鞭，腐化者之戟（''Scourge'' of the Corruptor）并不是{{eil|Whips|whip}}；根据工具提示，它其实是一把标枪。{{note|small=y|paren=y|译注：“戟”和“标枪”其实也有差别，但它们都是长柄且有金属枪头。而且戟一般不用于投掷，这与{{tr|Scourge of the Corruptor}}的用法不相符。}}
+** ''scourge''也用来指造成巨大麻烦或痛苦的人或事。
+* 这把武器的攻击音效和射弹撞击音效并不以相同频率播放，在持续攻击的时候会变得错位。
+* {{tr|Scourge of the Corruptor}}的英文原名是 Scourge of the Corruptor，可直译为“{{tr|Corruptor}}之天罚”，这可以理解为“对{{tr|Corruptor}}的天罚”，但它并不会对[[{{tr|Corruptor}}]]造成额外伤害。
+** 这个名字也可以理解为“''来自''{{tr|Corruptor}}的天罚”。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Tiny Eaters}}现在会更快地移动和追踪{{tr|enemies}}。
+** 平均每次攻击产生的{{tr|Tiny Eaters}}由 2.67 提升至 3.12。
+** 现在有 {{chance|1/100}} 的几率生成 15 个{{tr|Tiny Eaters}}.}}
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 64 提升至 70。
+** {{tr|Tiny Eaters}}的{{tr|damage}}由{{tr|base damage}}的 70% 提升至 75% 。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** 每一击{{tr|spawn}}的{{tr|Tiny Eaters}}的最大数量由 5 降低至 4，平均数量由 2.3 提升至 2.67。}}
+{{history|Desktop 1.2.3|
+** {{tr|Damage}}由 57 提升至 64。
+** {{tr|Tiny Eaters}}的{{tr|Damage}}由{{tr|base damage}}的 55% 提升至 70%。
+** {{tr|Tiny Eaters}}的{{tr|Knockback}}由{{tr|base knockback}}的 30% 提升至 35%（由于取整，这在实际效果上没有任何区别）。
+** 每一击{{tr|spawn}}的{{tr|Tiny Eaters}}的最大数量由 4 提升至 5，平均数量由 2.2 提升至 2.3。}}
+{{history|Desktop 1.2.0.3|吞噬者只在追踪{{tr|enemy}}时发出来自[[{{tr|Frost armor}}]]{{tr|set}}的光效。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Scourge of the Corruptor}}

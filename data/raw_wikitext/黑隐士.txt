@@ -1,0 +1,134 @@
+{{npc infobox
+| auto = 163
+| id = 163 (地面), 238 (墙上)
+| image = Black Recluse (ground).gif
+| imageother = Black Recluse.gif
+| imageothercaption = 在墙上
+| ai = {{tr|Fighter AI}} {{note|small=y|paren=y|地面}}<br/>{{tr|Spider AI}} {{note|small=y|paren=y|墙上}}
+| environment = Spider Nest
+| damage2 = &#32;{{note|small=y|paren=y|地面}}<br/>{{npcinfo|238|damage_all}} {{note|small=y|paren=y|墙上}}<br/>{{modes|expertonly=y|wrap=no|{{expert|36}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}}}
+| debuff = Acid Venom
+| debuffchance = 10%
+| debuffduration = {{modes|{{duration|4}} {{eicons|1.4.0.1|small=y}}<br>{{duration|8}} {{eicons|1.4.0.1|invert=y|small=y}}|{{duration|8}}|{{duration|10}}}}
+| debuff2 = Webbed | debuffmode2 = expert
+| debuffchance2 = {{expert|100%}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}
+| debuffduration2 = {{expert|{{duration|rawseconds=0.5–2.5}}}}
+| Fried Egg|1|3.33%
+| Poison Staff|1|2.5%
+| Spider Fang|1–3|{{modes|50%|90%}}
+| idprojectile = 472#expert
+| sound1 = Item 17.wav
+| soundcaption1 = {{gameText|ProjectileName.WebSpit}}
+| soundmode1 = expert
+| hardmode = yes
+| cate = no
+| cargo = no | cargodrops = yes
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view = void
+| auto = 163
+| image = Black Recluse (ground).gif
+| environment = Spider Nest
+| damage2 = <br/>{{modes|expertonly=y|wrap=no|{{expert|36}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}}}
+| debuff = Acid Venom
+| debuffchance = 10%
+| debuffduration = {{modes|{{eicons|1.4.0.1|small=y}} {{duration|4}} <br> {{eicons|1.4.0.1|invert=y|small=y}} {{duration|8}}|{{duration|8}}|{{duration|10}}}}
+| debuff2 = Webbed | debuffmode2 = expert
+| debuffchance2 = {{expert|100%}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}
+| debuffduration2 = {{expert|{{duration|rawseconds=0.5–2.5}}}}
+| hardmode = yes
+| cate = force
+}}<!--
+-->{{npc infobox | view = void
+| auto = 238
+| image = Black Recluse.gif
+| environment = Spider Nest
+| damage2 = <br/>{{modes|expertonly=y|wrap=no|{{expert|36}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}}}
+| debuff = Acid Venom
+| debuffchance = 10%
+| debuffduration = {{modes|{{eicons|1.4.0.1|small=y}} {{duration|4}} <br> {{eicons|1.4.0.1|invert=y|small=y}} {{duration|8}}|{{duration|8}}|{{duration|10}}}}
+| debuff2 = Webbed | debuffmode2 = expert
+| debuffchance2 = {{expert|100%}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}}
+| debuffduration2 = {{expert|{{duration|rawseconds=0.5–2.5}}}}
+| hardmode = yes
+| cate = force
+}}
+{{distinguish|Wall Creeper}}
+
+'''{{tr|Black Recluse}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Enemies}}|{{tr|enemy}}]]，会在[[{{tr|Cavern}}]][[{{tr|Layers}}|{{tr|layer}}]]的[[{{tr|Spider Nest}}]]中及其附近生成。它有 {{chance|1/10}} 几率造成 4 / {{expert|8}} / {{master|10}} 秒的[[{{tr|Acid Venom}}]][[{{tr|Debuffs}}|{{tr|debuff}}]]。在{{eil|Expert Mode}}下，它会获得特殊的吐网攻击，会造成 0.5–2.5 秒的[[{{tr|Webbed}}]]{{tr|debuff}}。
+
+== 备注 ==
+* 像其它所有蜘蛛一样，{{tr|Black Recluse}}不能穿过 2 格高的空隙。
+* {{eicons|Expert Mode}}吐网攻击之间的冷却时间持续 3 秒。如果{{tr|Black Recluse}}不再聚焦玩家或没有直接攻击路径，它会暂停攻击。当{{tr|Black Recluse}}受到伤害时，吐网攻击的冷却时间会增加 0.33 到 1 秒。{{source code ref|name=ai|v=1.4.0.5|method=Terraria.NPC.AI}}
+* 在 {{eil|For the worthy}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，{{tr|the Black Recluse}}的{{tr|web spit projectiles}}会随机地在其消失位置周围 13×13 的矩形范围内放置[[{{tr|Cobweb}}]]。{{source code ref|v=1.4.4.4|method=Terraria.Projectile.SpawnWeb}}
+* {{eicons|1.4.0.1|invert=y}}一旦[[{{tr|hardmode}}]]开始，{{tr|Black Recluse}}就完全取代了{{tr|Spider Nest}}中的[[{{tr|Wall Creeper}}]]。在{{eversions|1.4.0.1|short=y}}中，{{tr|Wall Creeper}}仍然有很小的几率在{{tr|Hardmode}}中生成。
+
+== 小贴士 ==
+* 由于{{tr|Black Recluse}}体色为黑色，在{{tr|Spider Cave}}中它们可能很难被察觉。建议放置足够数量的[[{{tr|light sources}}]]或饮用[[{{tr|Hunter Potion}}]]。
+* 它们的高伤害输出、难以被看见以及有几率造成额外 40 总伤害的{{tr|Acid Venom}}{{tr|debuff}}使它们非常致命，并且可以在{{tr|Hardmode}}早期轻松杀死玩家。
+* 由于它们的[[{{tr|health}}]]和[[{{tr|defense}}]]低，使用单次攻击造成大量伤害的武器是击败它们的最佳方式。高[[{{tr|knockback}}]]武器也可以将它们挡住足够长的时间以杀死它们。
+** 对付{{tr|Black Recluse}}比较有用的武器是{{eil|Yoyos}}，因为它可以在安全距离内对其造成伤害。
+* 一旦玩家拥有强力的武器, {{tr|Black Recluse}}是十分有效的[[指南:赚钱|刷钱]]目标，每次击杀掉落半个[[{{tr|Gold Coin}}]]。它们会直接掉落 {{npcinfo|Black Recluse|value}}，由[[{{tr|Poison Staff}}]]的掉落几率可得平均每次击杀带来的收益为 {{sell expr|Poison Staff|*0.025<!-- drop chance is 2.5% -->*1.15 round 0}}，同时[[{{tr|Spider Fang}}]]可以被制作成[[{{tr|Queen Spider Staff}}]]，带来每次击杀 {{sell expr|Queen Spider Staff|*0.5<!-- drop chance of Spider Fang is 50% -->*2<!-- average no. of dropped fangs is 2 -->/24<!-- 24 Spider Fangs make 1 Queen Spider Staff-->*1.15 round 0}}的收益。<!-- The *1.15 is for modifiers. -->
+
+== 花絮 ==
+* 其（英文）名字“Black Recluse”是名为“{{维基百科|Latrodectus|black widow|t=黑寡妇}}”和“{{维基百科|Brown recluse spider|brown recluse|t=隐居褐蛛}}”的两种蜘蛛的结合。这两种蜘蛛都以其有毒的能力而闻名。这反映在它的外观、掉落物和{{tr|Acid Venom}}{{tr|debuff}}效果上。
+* {{tr|web spit}}攻击的冷却时间被编程为技术上可以持续长达 15 秒：<ref name="ai" /> 每{{tr|tick}}{{tick}}，游戏检查最后一次攻击发生的时间是否超过距离当前 <code><i>x</i></code> {{tr|tick}}，<code><i>x</i></code> 是每次检查时随机选择的 180 到 899 之间的数字。如果是这种情况，冷却时间将重置，{{tr|Black Recluse}}再次攻击。因此，冷却时间总是至少持续 181 个{{tr|tick}}（等于 3 秒）：
+: {| class=terraria style="float:left;margin-right:1.6em;"
+! {{tr|Ticks}}<br/><math>k+181</math> !! 几率<br/><math>\frac{719!\cdot(k+1)}{(719-k)! \cdot 720^{k+1}}</math>
+|-
+| 181 || 0.138889%
+|-
+| 182 || 0.277391%
+|-
+| 183 || 0.550938%
+|-
+| 184 || 0.684846%
+|-
+| 185 || 0.816108%
+|-
+| '''207''' || '''2.28911%'''
+|-
+| 229 || 1.27947%
+|-
+| 230 || 1.21673%
+|-
+| 231 || 1.15488%
+|-
+| 232 || 1.09411%
+|-
+| 233 || 1.03461%
+|-
+| 281 || 0.00888%
+|}
+
+* '''加粗'''的数字代表最大几率。
+
+* 由此可见，冷却时间的几率在达到最大前有断崖式提高，此后也以相似的速度降低。注意在 281 {{tr|tick}}以后，几率已经低到可以忽略不计。
+* 冷却持续 899 {{tr|tick}}（即 15 秒）的几率极其低（约 10<sup>-690</sup>），几乎为零。
+
+{{-}}
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在会掉落[[{{tr|Fried Egg}}]]。
+** {{tr|Acid Venom}}的持续时间由 8 秒降低至 4 秒。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Health}}由 200 提升至 350。}}
+{{history|Desktop 1.2.4|现在掉落[[{{tr|Spider Fang}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spiders}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Black Recluse}}

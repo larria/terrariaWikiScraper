@@ -1,0 +1,396 @@
+[[File:BiomeBannerFrostMoon.png|center]]
+{{dablink|不要与[[{{tr|Frost Legion}}]]，另一个召唤出的{{tr|event}}混淆。}}
+{{flavor text|{{GameText|LegacyMisc.34}}|image=Frost Moon}}
+{{float file box|[[File:Frost Moon Icon.png]]|进度条图标}}
+
+'''{{tr|Frost Moon}}'''是一种[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的，以{{tr|Christmas}}为主题的[[{{tr|event}}]]，可用[[{{tr|Naughty Present}}]]于任意时间在[[{{tr|night}}]]召唤，结束于黎明（4:30{{nbsp}}AM）。它可以在一年内的任意时间被召唤，并不需要实际处于[[{{tr|Christmas}}]]季节中。在该{{tr|event}}期间，特殊的且极度困难的{{tr|enemies}}会高速生成攻击玩家。它与[[{{tr|Pumpkin Moon}}]]{{tr|event}}相似，但包含更多波数且略多的内容。视觉上，月亮会变为雪人头的样子，但保留当前的[[{{tr|moon phase}}]]。
+
+整个{{tr|event}}由 20 波组成。当玩家达到某些击杀分数时，波数会推进。在波数所需的分数得以满足后，下一波即开始，并且击杀分数重置为 0。[[{{tr|Status messages}}]]会指示波数何时推进，以及已经达到哪一波。请参阅[[#波数|下表]]来了解每个{{tr|enemy}}所能获得的分数以及每一波所需要的分数。{{eil|Expert Mode}}{{tr|worlds}}会得到 2 倍的分数，而{{eil|Master Mode}}则会得到 2.5 倍的分数。在{{eversions|1.4.4}}中，总分会在{{tr|the event}}结束后显示。
+
+{{tr|Frost Moon event}}总是在{{tr|AM}}{{nbsp}}4:30 结束。此{{tr|event}}的目标是在{{tr|event}}结束''之前''到达 20 波，但事件的{{eicons|Achievements|old-gen=n}} [[#{{tr|Achievement}}|{{tr|achievement}}]]则会在 15 波时就被给予。{{source code ref|v=1.4.2.1|name=fmprogress|method=Terraria.NPC.CheckProgressFrostMoon}}
+
+召唤{{tr|the Frost Moon}}的[[{{tr|Naughty Present}}]]需要的{{tr|materials}}只在玩家已经打败[[{{tr|Plantera}}]]的[[{{tr|Hardmode}}]]世界中可用（但事件本身在[[{{tr|pre-Hardmode}}]]的世界中可以召唤）。因此，它甚至对于具有最棒的装备的玩家都是个挑战。在最终波中，需要同时与多个 [[{{tr|boss}}]] 级的{{tr|enemies}}战斗。
+
+{{tr|Frost Moon enemies}}掉落强大的[[{{tr|weapons}}]]和[[{{tr|accessories}}]]，以及[[{{tr|pets}}]]和[[{{tr|vanity items}}]]。大多数掉落物极为少见，即使是已经设法完成整个{{tr|event}}的玩家也会发现它们需要如此多次才能得到它们。{{tr|Boss}} 掉落物的掉落率随着完成的波数增加而提高。参见[[#{{tr|Loot}}|下表]]以获取更加详细的{{tr|loot and trophies}}掉落率信息。
+
+在{{eversions|1.4.1}}中，在 4:30 AM 前达到 15 波会在黎明时（4:30 AM）显示信息“{{gameText|Misc.StartedVictoryXmas}}”。接下来的整个白天和整个黑夜，会显示所有[[{{tr|Christmas}}]]的特效。在翌日 4:30 AM，信息“{{gameText|Misc.EndedVictoryXmas}}”会出现，然后所有的{{tr|Christmas events}}将不再出现直至{{tr|Christmas}}再次来临或玩家再一次达到{{tr|Frost Moon}}的 15 波。{{source code ref|v=1.4.2.1|name=season|method=Terraria.Main.CheckForMoonEventsStartingTemporarySeasons}}
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Present Mimic}}<!--
+			-->|{{item|Flocko}}<!--
+			-->|{{item|Gingerbread Man}}<!--
+			-->|{{item|Zombie Elf}}<!--
+			-->|{{item|Elf Archer}}<!--
+			-->|{{item|Nutcracker}}<!--
+			-->|{{item|Yeti}}<!--
+			-->|{{item|Elf Copter}}<!--
+			-->|{{item|Krampus|size=*0.75}}<!--
+			-->|{{item|Everscream|note2=({{tr|boss}})|size=*0.5}}<!--
+			-->|{{item|Santa-NK1|note2=({{tr|boss}})|size=*0.5}}<!--
+			-->|{{item|Ice Queen|note2=({{tr|boss}})|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自{{tr|Zombie Elf}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Elf set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|Everscream}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Christmas Tree Sword}}<!--
+			-->|{{item|Razorpine}}<!--
+			-->|{{item|Festive Wings}}<!--
+			-->|{{item|Christmas Hook}}<!--
+			-->|{{item|Everscream Trophy}}<!--
+			-->|{{item|Everscream Relic|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->|{{item|Shrub Star|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|Santa-NK1}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Elf Melter}}<!--
+			-->|{{item|Chain Gun}}<!--
+			-->|{{item|Santa-NK1 Trophy}}<!--
+			-->|{{item|Santa-NK1 Relic|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->|{{item|Toy Tank|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|Ice Queen}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blizzard Staff}}<!--
+			-->|{{item|North Pole}}<!--
+			-->|{{item|Snowman Cannon}}<!--
+			-->|{{item|Baby Grinch's Mischief Whistle}}<!--
+			-->|{{item|Reindeer Bells}}<!--
+			-->|{{item|Ice Queen Trophy}}<!--
+			-->|{{item|Ice Queen Relic|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->|{{item|Frozen Crown|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Frost Moon)| {{sound|track=Frost Moon}} |icons=no}}<!--
+			-->|{{item|Otherworldly Music Box (Invasion)| {{sound|track=Invasion (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 波数 ==
+{{flexstart|alignitems=flex-start}}
+{| class="terraria sortable lined"
+|+ 每次击杀所获点数&nbsp;<ref name="fmprogress"/>
+! {{tr|Enemy}} !! 点数
+|-
+| [[{{tr|Zombie Elf}}]] || 1 / {{expert|2}} / {{master|2.5}}
+|-
+| [[{{tr|Gingerbread Man}}]] || 2 / {{expert|4}} / {{master|5}}
+|-
+| [[{{tr|Elf Archer}}]] || 3 / {{expert|6}} / {{master|7.5}}
+|-
+| [[{{tr|Nutcracker}}]] || 4 / {{expert|8}} / {{master|10}}
+|-
+| [[{{tr|Flocko}}]] || 5 / {{expert|10}} / {{master|12.5}}
+|-
+| [[{{tr|Elf Copter}}]] || 8 / {{expert|16}} / {{master|20}}
+|-
+| [[{{tr|Krampus}}]] || 10 / {{expert|20}} / {{master|25}}
+|-
+| [[{{tr|Yeti}}]] || 18 / {{expert|36}} / {{master|45}}
+|-
+| [[{{tr|Present Mimic}}]] || 20 / {{expert|40}} / {{master|50}}
+|-
+| [[{{tr|Everscream}}]] || 50 / {{expert|100}} / {{master|125}}
+|-
+| [[{{tr|Santa-NK1}}]] || 100 / {{expert|200}} / {{master|250}}
+|-
+| [[{{tr|Ice Queen}}]] || 150 / {{expert|300}} / {{master|375}}
+|}
+{| class="terraria lined"
+|+ 波数对于点数 & {{tr|enemies}}&nbsp;<ref name="fmprogress"/>
+! 波数 !! 所需点数 !! {{tr|Enemies}}
+|-
+| 1 || 0 || [[{{tr|Zombie Elf}}]]和[[{{tr|Gingerbread Man}}]]
+|-
+| 2 || 25 || [[{{tr|Zombie Elf}}]]和[[{{tr|Elf Archer}}]]
+|-
+| 3 || 40 || [[{{tr|Zombie Elf}}]]、[[{{tr|Elf Archer}}]]、[[{{tr|Gingerbread Man}}]]和[[{{tr|Nutcracker}}]]
+|-
+| 4 || 50 || [[{{tr|Everscream}}]]、[[{{tr|Zombie Elf}}]]、[[{{tr|Elf Archer}}]]和[[{{tr|Gingerbread Man}}]]
+|-
+| 5 || 80 || [[{{tr|Everscream}}]]、[[{{tr|Zombie Elf}}]]、[[{{tr|Elf Archer}}]]和[[{{tr|Nutcracker}}]]
+|-
+| 6 || 100 || [[{{tr|Everscream}}]]、[[{{tr|Elf Archer}}]]、[[{{tr|Nutcracker}}]]和[[{{tr|Elf Copter}}]]
+|-
+| 7 || 160 || [[{{tr|Santa-NK1}}]]、[[{{tr|Gingerbread Man}}]]、[[{{tr|Elf Archer}}]]和[[{{tr|Zombie Elf}}]]
+|-
+| 8 || 180 || [[{{tr|Santa-NK1}}]]、[[{{tr|Elf Copter}}]]、[[{{tr|Elf Archer}}]]、[[{{tr|Nutcracker}}]]和[[{{tr|Krampus}}]]
+|-
+| 9 || 200 || [[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Nutcracker}}]]、[[{{tr|Elf Copter}}]]和[[{{tr|Gingerbread Man}}]]
+|-
+| 10 || 250 || [[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Krampus}}]]、[[{{tr|Zombie Elf}}]]、和[[{{tr|Elf Copter}}]]
+|-
+| 11 || 300 || [[{{tr|Ice Queen}}]]、[[{{tr|Flocko}}]]、[[{{tr|Zombie Elf}}]]和[[{{tr|Gingerbread Man}}]]
+|-
+| 12 || 375 || [[{{tr|Ice Queen}}]]、[[{{tr|Everscream}}]]、[[{{tr|Gingerbread Man}}]]、[[{{tr|Yeti}}]]和[[{{tr|Zombie Elf}}]]
+|-
+| 13 || 450 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Elf Copter}}]]、[[{{tr|Gingerbread Man}}]]、和[[{{tr|Flocko}}]]
+|-
+| 14 || 525 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Yeti}}]]、和[[{{tr|Krampus}}]]
+|-
+| 15 || 675 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Yeti}}]]、和[[{{tr|Elf Copter}}]]
+|-
+| 16 || 850 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Yeti}}]]、和[[{{tr|Flocko}}]]
+|-
+| 17 || 1025 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Yeti}}]]、[[{{tr|Krampus}}]]、和[[{{tr|Elf Copter}}]]
+|-
+| 18 || 1325 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、[[{{tr|Yeti}}]]、[[{{tr|Nutcracker}}]]、和[[{{tr|Krampus}}]]
+|-
+| 19 || 1550 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]、和[[{{tr|Yeti}}]]
+|-
+| 20 || 2000 || [[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]、和[[{{tr|Everscream}}]]
+|}
+{{flexend}}
+
+* 达到第 15 波所需的总分数：3410；第 20 波：10160
+* {{tr|Present Mimics}}可在少于 4 个时在任意波生成，取代每波常规的{{tr|enemies}}。
+* 同时存在的 {{tr|bosses}} 最大数量取决于所在波数。当达到此数量时（或超过时，例如若玩家设法达到波数 9 而不杀死来自波数 6 的 2 只{{tr|Everscreams}}），就不会生成新的同种 {{tr|boss}}。<!--
+
+-->
+: {| class="terraria lined align-center"
+|+ Boss 生成限制&nbsp;{{source code ref|v=1.4.0.5|name=spawns|method=Terraria.NPC.SpawnNPC}}
+! 波数 !! {{item|mode=image|Everscream|size=90px}}<br/>[[{{tr|Everscream}}]] !! {{item|mode=image|Santa-NK1|size=60px}}<br/>[[{{tr|Santa-NK1}}]] !! {{item|mode=image|Ice Queen|size=100px}}<br/>[[{{tr|Ice Queen}}]]
+|-
+| 4 || 1 || {{na|-}} || {{na|-}}
+|-
+| 5 || 1 || {{na|-}} || {{na|-}}
+|-
+| 6 || 2 || {{na|-}} || {{na|-}}
+|-
+| 7 || {{na|-}} || 1 || {{na|-}}
+|-
+| 8 || {{na|-}} || 1 || {{na|-}}
+|-
+| 9 || 1 || 1 || {{na|-}}
+|-
+| 10 || 1 || 2 || {{na|-}}
+|-
+| 11 || {{na|-}} || {{na|-}} || 1
+|-
+| 12 || 1 || {{na|-}} || 1
+|-
+| 13 || {{na|-}} || 1 || 1
+|-
+| 14 || 1 || 1 || 1
+|-
+| 15 || 3 || 2 || 1
+|-
+| 16 || 4 || 2 || 2
+|-
+| 17 || 5 || 3 || 2
+|-
+| 18 || 6 || 4 || 3
+|-
+| 19 || 7 || 5 || 4
+|-
+| 20 || colspan="3" | 无限
+|}
+
+=== 拾取物 ===
+所有{{tr|boss}}类{{tr|enemy}}([[{{tr|Ice Queen}}]]、[[{{tr|Santa-NK1}}]]和[[{{tr|Everscream}}]])在较靠后的波数中都有较高的几率掉落{{tr|loot}}。该几率始于波数 4 的 11.11% ({{expert|20%}})，并以非线性方式升高至波数 19中的 33%（{{expert|波数 14 中的 100%}}）。公式如下(<math>w</math>为当前波数):{{source code ref|v=1.4.4.9|name=gatingchance|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGatingChance}}
+
+{{flexstart|style=column-gap:4em;row-gap:0.5em|justify=left}}
+{{flexstart|item}}[[{{tr|Classic Mode}}]]: <math>\cfrac{1}{\max(1, \left \lfloor \cfrac{28 - w}{2.5} \right \rfloor)}</math>{{flexend|item}}
+{{flexstart|item}}[[{{tr|Expert Mode}}]]: <math>\cfrac{1}{\max(1, \left \lfloor \cfrac{23 - w}{2.5} \right \rfloor - 2)}</math>{{flexend|item}}
+{{flexend}}
+
+此几率会受离死亡{{tr|enemy}}最近的玩家的[[{{tr|luck}}]]影响。<ref name="gatingchance" />
+
+{| class="terraria lined mw-collapsible mw-collapsed" style="min-width: 13em"
+|+ 战利品掉落倍率
+! 波数 !! 经典 !! 专家
+{{#loop:wave|4|17|<nowiki/>
+{{!}}-
+{{!}} {{#var:wave}}
+{{!}} {{frost moon item drop rates|1|wave={{#var:wave}}}}
+{{!}} {{expert|{{frost moon item drop rates|1|wave={{#var:wave}}|expert=y}}}}
+}}
+|}
+
+[[{{tr|Trophies}}]]有它们自己的单独几率掉落(在{{eversions|1.4.0.1|short=y}}中，''亦会''与普通的掉落率并列使用，就像上文所解释的那样)。从第 15 波开始，每个{{tr|Ice Queen}}、{{tr|Santa-NK1}}和{{tr|Everscream}}被击杀时都有几率掉落各自的{{tr|trophy}}。该几率会在第 17 波时和第 19 波时升高，如下所示。{{tr|Luck}}''并不会''影响该几率。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGateForTrophies}}
+<!--
+For trophies, Expert Mode has a 1/3 chance of reducing the denominator by 1 compared to Classic Mode; e.g. in Expert Mode on wave 15, there is a 2/3 chance that the drop rate will be 1/4, but a 1/3 chance that the drop rate will be 1/3; thus, the average of these outcomes is 1/((4+4+3)/3) = 3/11.
+-->
+{| class="terraria lined align-center mw-collapsible mw-collapsed" style="min-width: 18em"
+|+ 纪念章基础掉落率
+! 波数 !! 经典 !! 专家
+|-
+| 15 || {{chance|1/4}} || {{expert|{{chance|3/11}}}}
+|-
+| 16 || {{chance|1/4}} || {{expert|{{chance|3/11}}}}
+|-
+| 17 || {{chance|1/3}} || {{expert|{{chance|3/8}}}}
+|-
+| 18 || {{chance|1/3}} || {{expert|{{chance|3/8}}}}
+|-
+| 19+ || {{chance|1/2}} || {{expert|{{chance|3/5}}}}
+|}
+
+下表显示了受上述战利品掉落倍率影响的所有物品的掉落率。
+{{options/set|item|mode=image|maxsize=35px}}
+{| class="terraria lined align-center mw-collapsible mw-collapsed" style="width:100%"
+|+ 每波的实际掉落率
+! 波数
+! {{item|Christmas Hook}}
+! {{item|Christmas Tree Sword}}
+! {{item|Razorpine}}
+! {{item|Festive Wings}}
+
+! {{item|Chain Gun}}
+! {{item|Elf Melter}}
+
+! {{item|Baby Grinch's Mischief Whistle}}
+! {{item|Blizzard Staff}}
+! {{item|North Pole}}
+! {{item|Snowman Cannon}}
+! {{item|Reindeer Bells}}
+
+! {{item|Trophies|image=Everscream Trophy.png / Santa-NK1 Trophy.png / Ice Queen Trophy.png}}
+! {{item|Relics|image=Everscream Relic.png / Santa-NK1 Relic.png / Ice Queen Relic.png}}
+! {{item|Shrub Star}} {{item|Toy Tank}} {{item|Frozen Crown}}
+|-
+| class="cellborder-right" | {{note|{{hover text|基础|不含倍率下的基础掉落率}}}}
+| <!-- Christmas Hook --> {{note|{{percent|14/15 * 1/3}}}}
+| <!-- Christmas Tree Sword --> {{note|{{percent|14/15 * 1/3}}}}
+| <!-- Razorpine --> {{note|{{percent|14/15 * 1/3}}}}
+| class="cellborder-right" | <!-- Festive Wings --> {{note|{{percent|1/15}}}}
+
+| <!-- Chain Gun --> {{note|{{percent|1/2}}}}
+| class="cellborder-right" | <!-- Elf Melter --> {{note|{{percent|1/2}}}}
+
+| <!-- Baby Grinch's Mischief Whistle --> {{note|{{percent|1/15}}}}
+| <!-- Blizzard Staff --> {{note|{{percent|14/15 * 1/3}}}}
+| <!-- North Pole --> {{note|{{percent|14/15 * 1/3}}}}
+| class="cellborder-right" | <!-- Snowman Cannon --> {{note|{{percent|14/15 * 1/3}}}}
+| class="cellborder-right" | <!-- Reindeer Bells --> {{note|{{percent|1/15}}}}
+
+| class="cellborder-right" | <!-- Trophies --> {{na}}
+
+| class="cellborder-right" | <!-- Relics --> {{note|{{percent|1}}}}
+
+| <!-- Pets --> {{note|{{percent|1/4}}}}
+{{#loop:wave|4|17|<nowiki/>
+{{!}}-
+{{!}} class="cellborder-right" {{!}} {{#var:wave}}
+{{!}} <!-- Christmas Hook --> {{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}
+{{!}} <!-- Christmas Tree Sword --> {{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}
+{{!}} <!-- Razorpine --> {{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}
+{{!}} <!-- Christmas Tree Sword --> {{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}
+{{!}} <!-- Razorpine --> {{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}
+{{!}} class="cellborder-right" {{!}} <!-- Festive Wings --> {{frost moon item drop rates|1/15|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|1/15|wave={{#var:wave}}|expert=y}}}}
+
+{{!}} <!-- Chain Gun --> {{#ifexpr:{{#var:wave}}<7|{{na}}|{{frost moon item drop rates|1/2|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|1/2|wave={{#var:wave}}|expert=y}}}}}}
+{{!}} class="cellborder-right" {{!}} <!-- Elf Melter --> {{#ifexpr:{{#var:wave}}<7|{{na}}|{{frost moon item drop rates|1/2|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|1/2|wave={{#var:wave}}|expert=y}}}}}}
+
+{{!}} <!-- Baby Grinch's Mischief Whistle --> {{#ifexpr:{{#var:wave}}<11|{{na}}|{{frost moon item drop rates|1/15|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|1/15|wave={{#var:wave}}|expert=y}}}}}}
+{{!}} <!-- Blizzard Staff --> {{#ifexpr:{{#var:wave}}<11|{{na}}|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}}}
+{{!}} <!-- North Pole --> {{#ifexpr:{{#var:wave}}<11|{{na}}|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}}}
+{{!}} class="cellborder-right" {{!}} <!-- Snowman Cannon --> {{#ifexpr:{{#var:wave}}<11|{{na}}|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|14/15 * 1/3|wave={{#var:wave}}|expert=y}}}}}}
+{{!}} class="cellborder-right" {{!}} <!-- Reindeer Bells --> {{#ifexpr:{{#var:wave}}<15|{{na}}|{{frost moon item drop rates|1/15|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|1/15|wave={{#var:wave}}|expert=y}}}}}}
+
+{{!}} class="cellborder-right" {{!}} <!-- Trophies --> {{#switch:{{#var:wave}}|#default={{na}}
+|15|16={{frost moon item drop rates|1/4|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|3/11|wave={{#var:wave}}|expert=y}}}}
+|17|18={{frost moon item drop rates|1/3|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|3/8|wave={{#var:wave}}|expert=y}}}}
+|19|20={{frost moon item drop rates|1/2|wave={{#var:wave}}}}<br/>{{expert|{{frost moon item drop rates|3/5|wave={{#var:wave}}|expert=y}}}}
+}}
+
+{{!}} class="cellborder-right" {{!}} <!-- Relics --> {{master|{{frost moon item drop rates|1|wave={{#var:wave}}|expert=y}}}}
+
+{{!}} <!-- Pets --> {{master|{{frost moon item drop rates|1/4|wave={{#var:wave}}|expert=y}}}}
+}}
+|}{{options/reset|item}}
+
+== 备注 ==
+{{float file box|[[File:Frost Moon (moon).png|link=]]|{{tr|event}}中出现的[[{{tr|moon}}]]。}}
+* {{tr|The Frost Moon event}}有时候会在退出并重新进入世界时结束。
+* [[{{tr|Water Candle}}]]、[[{{tr|Peace Candle}}]]、[[{{tr|Battle Potion}}]]和[[{{tr|Calming Potion}}]]在{{tr|invasion}}期间无效果，就像一些其他{{tr|event}}那样。
+* 如果玩家在此{{tr|event}}中被杀死，事件并不会取消。伴随着{{tr|event}}持续到黎明，玩家会持续重生并继续与{{tr|enemies}}作战。在单人模式游戏中，退出此世界并重新载入会取消此{{tr|event}}，但也会清空地面上的{{tr|item}}。
+* {{tr|The Frost Moon}}不会和[[{{tr|Blood Moon}}]]叠加。如果在{{tr|Blood Moon}}时召唤{{tr|the Frost Moon}}结果就是个常规的{{tr|Frost Moon}}。
+* 在{{tr|Frost Moon}}时召唤[[{{tr|Pirate Invasion}}]]会中止它。
+* 黎明到来时任何还留在玩家屏幕上的 {{tr|boss}} {{tr|enemies}}都会开始快速朝一个方向移动，跑出屏幕以消失。在这发生时依然可以追杀甚至杀掉一些 {{tr|bosses}}。
+* 在{{tr|event}}结束后击杀逗留的{{tr|enemies}}永远不会掉落任何稀有{{tr|items}}。
+
+== 成就 ==
+{{achievement|name=Ice Scream}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Frost Moon}}攻略}}
+* 因为{{tr|Frost Moon enemies}}无法生成的区域的{{tr|spawn rates}}也会提升，{{tr|a Frost Moon}}可以用于刷其他物品，例如在[[{{tr|Ocean}}]]刷[[{{tr|Pirate Map}}]]，同时完全避开{{tr|Frost Moon enemies}}。
+* {{tr|Frost Moon enemies}}很容易受到[[{{tr|Ichor Debuff}}]]影响，这使得[[{{tr|Flask of Ichor}}]]、[[{{tr|Ichor Arrow}}]]或[[{{tr|Ichor Bullet}}|{{tr|Bullets}}]]、或[[{{tr|Golden Shower}}]]非常有效。
+* 玩家应当在{{tr|enemies}}生成后尽快击杀它们，以确保能够紧随着生成更多{{tr|enemies}}，以增加到达后面波数的几率。
+* {{tr|The Frost Moon}}是个很好的途径来快速获取大量[[{{tr|coins}}]]。
+* [[{{tr|Warmth Potion}}]]是一种很好用的[[{{tr|potion}}]]，可大大减少{{tr|event}}中{{tr|enemies}}给予的{{tr|damage}}。
+
+== 花絮 ==
+* 在{{eversions|Lunar Events|invert=y}}中，{{tr|Frost Moon}}通常被认为是游戏中最难的{{tr|event}}。
+** 在这些版本中不可用的{{eil|Lunar Events}}总体来说要难得多。
+* 这是少数在{{3DS version}}中可用的 [[1.2]] 后的特性。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Frost Moon}}中的所有常规{{tr|enemies}}现在在{{tr|multiplayer}}的{{tr|Expert}}/{{tr|Master}}中有着较低的、基于{{tr|player}}数目的{{tr|health}}缩放（{{tr|boss}} 单位已经有此缩放）。
+** {{tr|Frost Moon}}的“{{tr|expert drop bonus}}”修正略微降低，基础的掉落率则有相同幅度的提高，最终{{tr|Classic mode}}的掉落物略微增加了，而{{tr|Expert drop}}的掉落则保持不变。
+** {{tr|Frost Moon}}现在在{{tr|Master mode}}中有一个 2.5 倍的分数乘子。在此之前，在{{tr|Expert}}中分数会变为原来的 2 倍，但在{{tr|Master}}中没有更多提升。
+** {{tr|Frost Moon}}现在会在{{tr|the event}}结束时会显示总分数。
+** 修复了{{tr|Flocko and Krampus}}不会推进{{tr|Frost Moon}}的波次进程的问题。
+** 修复了一个很老的 {{tr|bug}}，该 {{tr|bug}} 会导致完成{{tr|Frost Moon}}的第 2、3 和 4 波需要的分数远远低于预期。}}
+{{history|Desktop 1.4.1|游戏中解锁一天[[{{tr|Christmas}}]]的需求改为 15 波。}}
+{{history|Desktop 1.4.0.1|到达{{tr|Frost Moon}}的末尾会解锁一游戏日的[[{{tr|Christmas}}]]{{tr|event}}。}}
+{{history|Desktop 1.3.0.4|修正了在[[{{tr|multiplayer}}]]中{{tr|invasion}}进度条超过 32767 点时会跳到大约 -32768 的问题。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Elf Archer Banner}}]]、[[{{tr|Elf Copter Banner}}]]、[[{{tr|Flocko Banner}}]]、[[{{tr|Gingerbread Man Banner}}]]、[[{{tr|Krampus Banner}}]]、[[{{tr|Nutcracker Banner}}]]、[[{{tr|Present Mimic Banner}}]]、[[{{tr|Yeti Banner}}]]、和[[{{tr|Zombie Elf Banner}}]]。
+** 打败{{tr|Flocko and Krampus}}给予的{{tr|Frost Moon}}点数均降低至 0。}}
+{{history|Desktop 1.2.4.1|
+** [[{{tr|Elf Hat}}|{{tr|Elf vanity}}]]现在可以在{{tr|Frost Moon}}期间掉落于[[{{tr|Zombie Elf}}|{{tr|Zombie Elves}}]]。
+** 修复了{{tr|Frost Moon}}第 14 和19波中的"[[{{tr|Santa-NK1}}]]"错拼为 "Santank" 的 bug。}}
+{{history|Desktop 1.2.4|nocat=1|{{verify|在 1.2.2 中是 8，而在 1.2.4 是 10。这个变更具体是在哪个版本进行的？}} 击败{{tr|Krampus}}给予的{{tr|Frost Moon}}点数从 8 提升至 10。}}
+{{history|Desktop 1.2.3.1|
+** 使得推进{{tr|Frost Moon}}波数更容易了一点。
+** 使得若干种{{tr|Frost Moon}}怪物设计速度更慢、伤害更低。}}
+{{history|Desktop 1.2.3|
+** [[{{tr|Pumpkin Moon}}]]和{{tr|Frost Moon}}现在可在使用{{tr|Snowman pet}}时开始。
+** {{tr|Frost Moon}}的所有波数现在在警告中正确的使用"{{tr|Flocko}}"。
+** {{tr|Flocko}} & {{tr|Elf Copter}}现在在{{tr|dawn}}时可正确地跑走。
+** 修复了{{tr|frost moon}}波数的显示文字（{{tr|Elf Zombie}}改为{{tr|Zombie Elf}}）。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|到达{{tr|Frost Moon}}的末尾会解锁（游戏中的）一天[[{{tr|Christmas}}]]。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+{{all versions}}
+[[Category:召唤的事件]]
+
+{{language info|en=Frost Moon}}

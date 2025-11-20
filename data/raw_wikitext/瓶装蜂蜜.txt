@@ -1,0 +1,36 @@
+{{item infobox
+| type = Potion
+| auto = 1134
+| tags = Drop
+| debuff = Potion Sickness / 60
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Bottled Honey}}'''是[[{{tr|recovery potion}}]]和[[{{tr|crafting material}}]]。使用后，它会恢复 {{iteminfo|Bottled Honey|healLife}}{{nbsp}}[[{{tr|health}}]]并和其他{{tr|healing potions}}一样造成持续 60 秒的[[{{tr|Potion Sickness}}]]。在{{eversions|1.4.4|short=y}}中，还会给予玩家[[{{tr|Honey (buff)}}|{{tr|Honey}}]][[{{tr|buff}}]]，持续 15 {{tr|seconds}}。除了可以制作得到之外，{{tr|Bottled Honey}}也掉落自出现在[[{{tr|Underground Jungle}}]]中的[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]内的[[{{tr|Queen Bee}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Bottled Honey|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Bottled Honey|expectedrows=2}}
+
+== 备注 == 
+* 使用{{key|buff}}{{tr|hotkey}}会给予玩家[[{{tr|Honey (buff)}}|{{tr|Honey}}]]{{tr|buff}}而不恢复{{tr|health}}或造成[[{{tr|Potion Sickness}}]]，但仅当玩家未受{{tr|Potion Sickness}}影响时才会如此。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 30 提升至 9999。
+** 现在还提供持续 15 秒的[[{{tr|Honey (buff)}}|{{tr|Honey}}]]{{tr|Buff}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Bottled Honey}}

@@ -1,0 +1,51 @@
+{{exclusive|1.3.3}}
+{{item infobox
+| auto = 3779
+| hardmode = yes
+| sound1 = Item 14.wav
+| soundcaption1 = {{tr|Impact}}
+}}
+[[File:Spirit Flame (demo).gif|thumb|350px|对[[{{tr|Mimics}}]]使用{{tr|The Spirit Flame}}。]]
+
+'''{{tr|Spirit Flame}}'''是一个[[{{tr|Hardmode}}]][[{{tr|magic weapon}}]]，使用时，会在玩家周围随机位置生成一团悬浮在空中的小型紫色火焰。当有[[{{tr|enemy}}]]进入火焰 25 格范围内并且和火焰之间有清晰视线时，它就会自动瞄准并追踪那个{{tr|enemy}}。{{source code ref|name=projectileai|v=1.4.2.2|method=Terraria.Projectile.AI}}在撞击{{tr|enemy}}或[[{{tr|block}}]]时，火焰会引起小爆炸，造成范围伤害。可以持续使用{{tr|The Spirit Flame}}来召唤多个火焰，如果火焰三秒内没有寻找到目标则会自行消散。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Spirit Flame|expectedrows=1}}
+
+== 备注 ==
+* 和所有{{tr|homing attacks}}一样，在[[{{tr|multiplayer}}]]中{{tr|flames}}不会导向其他玩家。
+* 所生成的火焰的位置是随机产生的。如果它位于实心[[{{tr|blocks}}]]内，游戏会尝试另找位置生成，但最多只会重新尝试 9 次。{{source code ref|v=1.4.2.2|method=Terraria.Player.ItemCheck_Shoot}}因此，火焰有可能会在{{tr|solid blocks}}内生成，此时它会立刻消失。在这种情况下此{{tr|weapon}}仍然会消耗{{tr|mana}}。
+* 一旦锁定目标，火焰就会持续聚焦于{{tr|enemy}}上，即使它移动到射程之外（例如，它移动非常快）。但是，如果火焰未能在锁定之后五秒内爆炸，它就会消散。<ref name="projectileai"/>
+
+== 小贴士 ==
+* 尽管{{tr|this weapon}}伤害很高，但在[[{{tr|Hardmode}}]]很早期就能得到，甚至可以早于打败任意[[{{tr|mechanical bosses}}]]。需要打败两个[[{{tr|Sand Elemental}}]]来得到[[{{tr|Forbidden Fragment}}]]，并刷[[{{tr|Desert Spirit}}]]来得到一个[[{{tr|Desert Spirit Lamp}}]]。
+** 请注意，{{tr|Desert spirits}}只出现在[[{{tr|Underground Desert}}|{{tr|Underground Corrupt}}或{{tr|Crimson Deserts}}]]中，而{{tr|Sand Elementals}}只会在{{tr|Hardmode}}[[{{tr|Sandstorm}}]]期间生成。
+** 考虑到{{tr|Hardmode Desert}}的敌对环境、{{tr|Underground Desert}}并不保证会与{{tr|evil biomes}}重叠、以及{{tr|Sandstorms}}发生的随机性，获得这些材料会十分麻烦。
+* {{tr|reforge}}{{tr|this weapon}}的{{tr|cost}}相当低，因此很容易得到出色的{{tr|modifier}}。
+
+== 花絮 ==
+* 紫色的火焰和其造成的爆炸与[[{{tr|Desert Spirit}}]]的{{tr|projectiles}}非常相似，此武器正是基于后者的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 伤害范围大小加倍。
+** {{tr|Projectile}}持续时间提高 25%。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Use time}}由 30 降低至 22。
+** {{tr|Mana cost}}由 18 降低至 14。}}
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|随到{{tr|Desktop}} 1.4.0.1 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Spirit Flame}}

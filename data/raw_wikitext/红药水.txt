@@ -1,0 +1,92 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| type = Potion
+| auto = 678
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Red Potion}}'''是一种[[{{tr|potion}}]]，可以在下列{{tr|world}}的[[{{tr|Chests}}]]中发现：[[{{tr|drunk world}}]] （{{chance|1/30}} 几率）、[[{{tr|For the worthy}}]]（{{chance|1/10}} 几率）和 [[{{tr|Get fixed boi}}]]（约 {{chance|1/13}} 几率）<!-- 1-(29/30)*(9/10)-->。它亦可由 [[{{tr|Celebrationmk10}}]] 和 {{tr|Get fixed boi}} {{tr|worlds}}中的[[{{tr|Jungle Mimic}}]]掉落。
+
+使用后，它会对玩家造成持续 1 小时 / {{expert|2 小时}} / {{master|3 小时}}的大量[[{{tr|debuffs}}]]。在 {{tr|For the worthy}} 和 {{tr|Get fixed boi}} 中，它则会最多提供三种[[{{tr|buffs}}]]，持续 30 分钟。
+
+== 备注 ==
+* 在 {{tr|For the worthy}}/{{tr|Get fixed boi}} 以外，{{tr|the Red Potion}}会造成下列{{tr|debuffs}}：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}
+{{flexstart}}
+: {{itemlist|class=terraria|width=11em<!-- not necessary here, but used for consistency with below, where 11em are necessary -->
+|{{buff|wrap=y|Poisoned}}
+|{{buff|wrap=y|Darkness}}
+|{{buff|wrap=y|Cursed}}
+|{{buff|wrap=y|On Fire!}}
+|{{buff|wrap=y|Bleeding}}
+|{{buff|wrap=y|Confused}}
+|{{buff|wrap=y|Slow}}
+|{{buff|wrap=y|Weak}}
+|{{buff|wrap=y|Silenced}}
+|{{buff|wrap=y|Broken Armor}}
+|{{buff|wrap=y|Suffocation}}
+}}
+{{flexend}}
+* 在 {{tr|For the worthy}}/{{tr|Get fixed boi}} 中，{{tr|the Red Potion}}会造成以下{{tr|buffs}}中最多三种。总共会执行三次{{tr|buff}}选择尝试，每次随机从下表中选择一种。同一种{{tr|buff}}可能会被选中多次，从而使{{tr|buff}}数量变少；此种情况下，提供的{{tr|buff}}的{{tr|duration}}不会延长。
+{{flexstart}}
+: {{itemlist|class=terraria|width=11em
+|{{buff|wrap=y|Obsidian Skin}}
+|{{buff|wrap=y|Regeneration}}
+|{{buff|wrap=y|Swiftness}}
+|{{buff|wrap=y|Ironskin}}
+|{{buff|wrap=y|Mana Regeneration}}
+|{{buff|wrap=y|Magic Power}}
+|{{buff|wrap=y|Featherfall}}
+|{{buff|wrap=y|Spelunker}}
+|{{buff|wrap=y|Archery}}
+|{{buff|wrap=y|Heartreach}}
+|{{buff|wrap=y|Hunter}}
+|{{buff|wrap=y|Endurance}}
+|{{buff|wrap=y|Lifeforce}}
+|{{buff|wrap=y|Inferno}}
+|{{buff|wrap=y|Mining}}
+|{{buff|wrap=y|Rage}}
+|{{buff|wrap=y|Wrath}}
+|{{buff|wrap=y|Dangersense}}
+}}
+{{flexend}}
+
+== 小贴士 ==
+* 装备有[[{{tr|Ankh Charm}}]]或[[{{tr|Ankh Shield}}]]，和任何提供火焰免疫的装备（通常是[[{{tr|Obsidian Skin Potion}}]]）时，可以移除大部分的{{tr|debuffs}}。不过，[[{{tr|Suffocation}}]]并不能被三种{{tr|items}}之一移除，在{{tr|Nurse}}处治疗则可以将其移除。
+* 由于{{tr|buffs}}可在世界间转移，所以加载一个 {{tr|For the worthy}} {{tr|world}}，在这里饮用{{tr|Red Potions}}，然后回到玩家的主要世界是一个可行的策略。
+
+== 花絮 ==
+* {{tr|Red Potion}}是一项在 [[1.2.2]] 更新前被更改的测试{{tr|item}}，用于试着给予普通玩家{{tr|debuffs}}而不是[[{{tr|buffs}}]]。
+* 引入时，它在游戏代码中取代了[[{{tr|Soul Scythe}}]]。
+* 除去[[{{tr|Flask of Gold}}]]，{{tr|Red Potion}}是唯一具有金色瓶盖的{{tr|potion}}。
+* 它是唯一一种可以一次性造成多于一种{{tr|debuffs}}的{{tr|potion}}。
+* {{tr|Red Potion}}的{{tr|tooltip}}''“{{itemTooltip|678}}”''（''"{{itemTooltip|lang=en|678}}"''）被 1.4.0.3 添加的 [[{{tr|For the worthy}}]] {{tr|seed}}所提及，其中{{tr|Red Potion}}会提供{{tr|buffs}}而非{{tr|debuffs}}。
+* {{tr|Red Potion}}（Red Potion）直接参考了 [[{{tr|Redigit}}]]，他是[[《{{tr|Terraria}}》]]的首席开发者。
+** 在 [[1.3.0.1]] 前，穿着[[{{tr|Red's set}}]]可以造成一组相似的{{tr|debuffs}}。
+** {{tr|Red's set}}不能提供对此{{tr|potion}}或其他效果造成的{{tr|debuffs}}的免疫能力。
+** {{tr|potion}}瓶盖上面的“R”参考了其名称。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Research cost}}由 10 降低至 3。}}
+{{history|Desktop 1.4.2.3|现在会掉落自[[{{tr|Jungle Mimic}}]]。}}
+{{history|Desktop 1.4.0.4|现在可被[[{{tr|research}}]]。}}
+{{history|Desktop 1.4.0.3|
+** 现在可以在 [[{{tr|For the worthy}}]] {{tr|secret world seed}}的[[{{tr|Chests}}]]中以 {{chance|1/10}} 的几率找到。
+*** 在此{{tr|world}}中饮用该{{tr|potion}}并不会造成平时的{{tr|debuffs}}，反而会造成最多 3 种随机的有益[[{{tr|buffs}}]]，每一种都持续 30 分钟。}}
+{{history|Desktop 1.4.0.1|
+** 现在可获得：可以在 [[05162020]] {{tr|secret world seed}}的[[{{tr|Chests}}]]中以 {{chance|1/30}} 的几率找到。
+** 造成的{{tr|debuffs}}现在在[[{{tr|Master Mode}}]]中会持续 3 小时。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated}}。旧{{tr|sprite}}为：[[File:Red Potion (pre-1.3.1).png|link=]]}}
+{{history|Desktop 1.3.0.1|造成的{{tr|debuffs}}现在在[[{{tr|Expert Mode}}]]中会持续 2 小时。}}
+{{history|Desktop 1.2.2|{{tr|Introduced}}，替换了[[{{tr|Soul Scythe}}]]。}}
+{{history|Mobile 1.3.0.7|不再变成新外观的[[{{tr|Angel Statue}}]]。}}
+{{history|Mobile 1.2.11212|引入，但通过编辑器得到的话会变成新外观的{{tr|Angel Statue}}。}}<!-- we know that the Red Potion existed pre-1.3.0.7, but not sure when -->
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Red Potion}}

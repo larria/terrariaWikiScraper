@@ -1,0 +1,65 @@
+{{npc infobox
+| auto = 65
+| image = Shark.gif
+| image2 = Shark (old).png
+| type = Aquatic
+| environment = Ocean
+| Shrimp Po' Boy|1|2%
+|custom:Shark Kite|{{item|Shark Kite|note=(在[[{{tr|Windy Day}}]]期间)|wrap=y}}|4%
+|:group:start|一次只会掉落以下两件{{tr|items}}之一|
+| Diving Helmet|1|5% {{eicons|1.4.4|small=y}} <br/> 2% {{eicons|1.4.4|invert=y|small=y}}
+| Shark Fin|1|95% {{eicons|1.4.4|small=y}} <br/> 98% {{eicons|1.4.4|invert=y|small=y}}
+|:group:end|---------|---------
+}}
+
+{{for|在[[{{tr|Sandstorm}}]]期间发现的{{tr|enemy}}|{{tr|Sand Shark}}}}
+{{for|它的{{eversions|1.3.0.1|invert=y|short=y}}独有变种|{{tr|Orca}}|link1=旧版:{{tr|Orca}}}}
+
+[[File:Shark_hunting.png|frame|在海底呼吸时安全捕猎{{tr|Shark}}的一种可能方法。地板和墙壁最低处的{{tr|block}}上使用了{{tr|Actuators}}，以便外出收集物品。]]
+
+'''{{tr|Shark}}'''是在[[{{tr|Ocean}}]]里发现的[[{{tr|Enemy}}]]。{{tr|Sharks}}比其它{{tr|Ocean}}的{{tr|enemy}}（如[[{{tr|Crab}}]]或[[{{tr|Pink Jellyfish}}]]）更稀有，虽然它们仍然比较常见。
+
+== 备注 ==
+* {{tr|Shark}}只能生成在距离世界边界 250 格以内的区域里，或生成自[[{{tr|Shark Statue}}]]。
+* {{tr|Shark}}不会像大多数其他鱼一样在陆地上跳动，这使得它们在搁浅时不那么危险。
+* 与其他水中{{tr|enemies}}一样，{{tr|Shark}}会忽视淹在少于一{{tr|tile}}水里的玩家。
+* {{eicons|1.4.0.1}}{{tr|Shark Statue}}生成的{{tr|Sharks}}被[[{{tr|lava}}]]、[[{{tr|traps}}]]、或[[{{tr|NPCs}}]] 的攻击杀死时不会掉落任何物品。
+
+== 小贴士 ==
+* {{tr|Shark}}会向玩家冲锋，并且可以比大多数玩家更快地移动。它们对[[{{tr|knockback}}]]具有很强的抵抗力，但强大的[[{{tr|weapons}}]]通常至少能阻止它们前进。
+* 快速射击武器、[[{{tr|flails}}]]和多次攻击武器（如[[{{tr|Swordfish}}]]或[[{{tr|Boomstick}}]]）往往对{{tr|Shark}}有效。另外[[{{tr|Autoswing}}]]的[[{{tr|weapons}}]]也对{{tr|Shark}}有效，只要它们有足够的[[{{tr|knockback}}]]。由于{{eil|Arkhalis}}和{{eil|Terragrim}}极快的攻击速度和{{tr|autoswing}}能力，它们对{{tr|Shark}}亦非常有效。
+* 使用[[{{tr|Water Walking Potion}}]]或[[{{tr|Water Walking Boots}}]]站立在水面并稍微向下潜水，就可以在保持安全的同时将{{tr|Shark}}吸引到很接近的距离内。使用[[{{tr|Flipper}}]]{{tr|accessory}}可防止下沉到水底。
+* 要安全且简便地刷{{tr|Sharks}}，建造一个站立的地方，但保留半{{tr|tile}}的水。在玩家面前添加一个挡板到水面上方的一块方块上。使用有弧度的[[{{tr|ranged weapon}}]]或[[{{tr|Flamelash}}]]类型的武器在掩体旁边射击，或使用[[{{tr|Vilethorn}}]]穿过掩体射击。
+* 类似的方法是留在海底，在{{tr|Sand}}中挖一个小坑，并在上方建立一个掩体，但不连接到地面，留下一{{tr|tile}}的间隙。{{tr|Shark}}会试图攻击，但无法进入。然后玩家就可以肆无忌惮地进行攻击。如果玩家缺少合适的游泳装备或[[{{tr|Neptune's Shell}}]]，[[{{tr|Gills Potion}}]]可能会派上用场。
+* 刷{{tr|Shark}}的一种简单方法是将[[{{tr|Shark Statue}}]]放在一桶延伸到 12 {{tr|tile}}空间的[[{{tr|lava}}]]上，并用[[{{tr|1 Second Timer}}]]激活雕像。这样就可以在没有风险的情况下杀死{{tr|Shark}}并防止物品被摧毁。
+** {{eicons|1.4.0.1}}由于{{tr|statue}}生成的{{tr|Sharks}}在仅被{{tr|lava damage}}杀死时不掉落物品，这需要任何类型的{{tr|player damage}}。可以使用[[{{tr|minions}}]]来轻松达成这一点。 
+
+== 花絮 ==
+* {{tr|Shark}}会掉落[[{{tr|Diving Helmet}}]]可能是{{tr|Shark}}吃掉了穿戴了{{tr|Diving Helmet}}的人。
+* 现实世界中{{wikipedia|shark attack|{{tr|shark}}{{tr|attack}}}}非常稀有，{{tr|Shark}}很少故意攻击人类，而是将游泳的人误认为是受伤的海豹——它们的猎物之一。
+{{bestiary}}
+
+== 另见 ==
+* {{eil|Shark Bait}} – 一个[[{{tr|pet}}]]召唤物品，能召唤{{tr|Shark Pup}}{{tr|pet}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|[[{{tr|Diving Helmet}}]]的{{tr|drop rate}}提高，[[{{tr|Shark Fin}}]]的{{tr|drop rate}}降低。}}
+{{history|Desktop 1.4.0.1|
+** 现在有几率掉落[[{{tr|Shrimp Po' Boy}}]]。
+** 修复了第 1 和第 3 个动画帧中的错位像素。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Shark (pre-1.3.5).png|link=]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Shark (old).png|link=]]。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落它自己的相应{{tr|banner}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.02|现在有几率掉落其自己的相应[[{{tr|banners (enemy)}}|{{tr|banner}}]]。}}
+{{history|Console-Release|introduced=y|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|introduced=y|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+{{Old-gen console enemies}}
+
+{{language info|en=Shark}}

@@ -1,0 +1,2440 @@
+<div class="ajaxHide">
+{{Main|数据 ID}}
+此页面列出了[[《{{tr|Terraria}}》]]中所有'''{{tr|gore}}'''的 {{tr|IDs}}。
+
+{{tr|gore}}是不可交互的，且大多受重力影响。虽然大部分{{tr|gore}}用于表示被击败的{{tr|enemies}}或 {{tr|bosses}} 的碎片或身体部位，但仍有许多其它被归类为“{{tr|gore}}”的{{tr|sprite}}用于为{{tr|game environment}}中的{{tr|items}}、物体和实体添加视觉效果。
+
+如果禁用了[[溅血效果]]，那么标记为不“安全”的{{tr|gore}}会被替换为蓝色的云（{{tr|gore}} 11–13）。
+
+[[Category:数据 ID]]
+</div><!--
+
+
+-->{{source code ref|onlycate=y|v=1.4.4.2|<code>Terraria.GameContent.ChildSafety.cs</code> 中的 <code>SafeGore</code> 字段。}}<!--
+-->{{#dplvar:set<!--
+	-->|__gore:safe:11|y<!--
+	-->|__gore:safe:12|y<!--
+	-->|__gore:safe:13|y<!--
+	-->|__gore:safe:16|y<!--
+	-->|__gore:safe:17|y<!--
+	-->|__gore:safe:42|y<!--
+	-->|__gore:safe:44|y<!--
+	-->|__gore:safe:51|y<!--
+	-->|__gore:safe:52|y<!--
+	-->|__gore:safe:53|y<!--
+	-->|__gore:safe:54|y<!--
+	-->|__gore:safe:55|y<!--
+	-->|__gore:safe:56|y<!--
+	-->|__gore:safe:57|y<!--
+	-->|__gore:safe:61|y<!--
+	-->|__gore:safe:62|y<!--
+	-->|__gore:safe:63|y<!--
+	-->|__gore:safe:67|y<!--
+	-->|__gore:safe:68|y<!--
+	-->|__gore:safe:69|y<!--
+	-->|__gore:safe:99|y<!--
+	-->|__gore:safe:106|y<!--
+	-->|__gore:safe:120|y<!--
+	-->|__gore:safe:130|y<!--
+	-->|__gore:safe:131|y<!--
+	-->|__gore:safe:147|y<!--
+	-->|__gore:safe:148|y<!--
+	-->|__gore:safe:149|y<!--
+	-->|__gore:safe:150|y<!--
+	-->|__gore:safe:156|y<!--
+	-->|__gore:safe:197|y<!--
+	-->|__gore:safe:198|y<!--
+	-->|__gore:safe:199|y<!--
+	-->|__gore:safe:200|y<!--
+	-->|__gore:safe:201|y<!--
+	-->|__gore:safe:202|y<!--
+	-->|__gore:safe:203|y<!--
+	-->|__gore:safe:204|y<!--
+	-->|__gore:safe:205|y<!--
+	-->|__gore:safe:206|y<!--
+	-->|__gore:safe:213|y<!--
+	-->|__gore:safe:217|y<!--
+	-->|__gore:safe:218|y<!--
+	-->|__gore:safe:219|y<!--
+	-->|__gore:safe:220|y<!--
+	-->|__gore:safe:221|y<!--
+	-->|__gore:safe:222|y<!--
+	-->|__gore:safe:257|y<!--
+	-->|__gore:safe:265|y<!--
+	-->|__gore:safe:266|y<!--
+	-->|__gore:safe:267|y<!--
+	-->|__gore:safe:268|y<!--
+	-->|__gore:safe:269|y<!--
+	-->|__gore:safe:276|y<!--
+	-->|__gore:safe:277|y<!--
+	-->|__gore:safe:278|y<!--
+	-->|__gore:safe:279|y<!--
+	-->|__gore:safe:280|y<!--
+	-->|__gore:safe:281|y<!--
+	-->|__gore:safe:282|y<!--
+	-->|__gore:safe:314|y<!--
+	-->|__gore:safe:321|y<!--
+	-->|__gore:safe:322|y<!--
+	-->|__gore:safe:326|y<!--
+	-->|__gore:safe:331|y<!--
+	-->|__gore:safe:360|y<!--
+	-->|__gore:safe:361|y<!--
+	-->|__gore:safe:362|y<!--
+	-->|__gore:safe:363|y<!--
+	-->|__gore:safe:364|y<!--
+	-->|__gore:safe:365|y<!--
+	-->|__gore:safe:366|y<!--
+	-->|__gore:safe:367|y<!--
+	-->|__gore:safe:368|y<!--
+	-->|__gore:safe:369|y<!--
+	-->|__gore:safe:370|y<!--
+	-->|__gore:safe:375|y<!--
+	-->|__gore:safe:376|y<!--
+	-->|__gore:safe:377|y<!--
+	-->|__gore:safe:406|y<!--
+	-->|__gore:safe:407|y<!--
+	-->|__gore:safe:408|y<!--
+	-->|__gore:safe:409|y<!--
+	-->|__gore:safe:410|y<!--
+	-->|__gore:safe:411|y<!--
+	-->|__gore:safe:412|y<!--
+	-->|__gore:safe:413|y<!--
+	-->|__gore:safe:414|y<!--
+	-->|__gore:safe:415|y<!--
+	-->|__gore:safe:416|y<!--
+	-->|__gore:safe:417|y<!--
+	-->|__gore:safe:418|y<!--
+	-->|__gore:safe:419|y<!--
+	-->|__gore:safe:420|y<!--
+	-->|__gore:safe:421|y<!--
+	-->|__gore:safe:422|y<!--
+	-->|__gore:safe:423|y<!--
+	-->|__gore:safe:424|y<!--
+	-->|__gore:safe:425|y<!--
+	-->|__gore:safe:426|y<!--
+	-->|__gore:safe:427|y<!--
+	-->|__gore:safe:428|y<!--
+	-->|__gore:safe:429|y<!--
+	-->|__gore:safe:430|y<!--
+	-->|__gore:safe:435|y<!--
+	-->|__gore:safe:436|y<!--
+	-->|__gore:safe:437|y<!--
+	-->|__gore:safe:521|y<!--
+	-->|__gore:safe:522|y<!--
+	-->|__gore:safe:523|y<!--
+	-->|__gore:safe:525|y<!--
+	-->|__gore:safe:526|y<!--
+	-->|__gore:safe:527|y<!--
+	-->|__gore:safe:542|y<!--
+	-->|__gore:safe:570|y<!--
+	-->|__gore:safe:571|y<!--
+	-->|__gore:safe:572|y<!--
+	-->|__gore:safe:580|y<!--
+	-->|__gore:safe:581|y<!--
+	-->|__gore:safe:582|y<!--
+	-->|__gore:safe:603|y<!--
+	-->|__gore:safe:604|y<!--
+	-->|__gore:safe:605|y<!--
+	-->|__gore:safe:606|y<!--
+	-->|__gore:safe:610|y<!--
+	-->|__gore:safe:611|y<!--
+	-->|__gore:safe:612|y<!--
+	-->|__gore:safe:613|y<!--
+	-->|__gore:safe:614|y<!--
+	-->|__gore:safe:615|y<!--
+	-->|__gore:safe:616|y<!--
+	-->|__gore:safe:617|y<!--
+	-->|__gore:safe:618|y<!--
+	-->|__gore:safe:639|y<!--
+	-->|__gore:safe:704|y<!--
+	-->|__gore:safe:705|y<!--
+	-->|__gore:safe:706|y<!--
+	-->|__gore:safe:707|y<!--
+	-->|__gore:safe:708|y<!--
+	-->|__gore:safe:709|y<!--
+	-->|__gore:safe:710|y<!--
+	-->|__gore:safe:711|y<!--
+	-->|__gore:safe:712|y<!--
+	-->|__gore:safe:713|y<!--
+	-->|__gore:safe:714|y<!--
+	-->|__gore:safe:715|y<!--
+	-->|__gore:safe:716|y<!--
+	-->|__gore:safe:717|y<!--
+	-->|__gore:safe:718|y<!--
+	-->|__gore:safe:719|y<!--
+	-->|__gore:safe:720|y<!--
+	-->|__gore:safe:721|y<!--
+	-->|__gore:safe:728|y<!--
+	-->|__gore:safe:729|y<!--
+	-->|__gore:safe:730|y<!--
+	-->|__gore:safe:731|y<!--
+	-->|__gore:safe:732|y<!--
+	-->|__gore:safe:733|y<!--
+	-->|__gore:safe:734|y<!--
+	-->|__gore:safe:825|y<!--
+	-->|__gore:safe:826|y<!--
+	-->|__gore:safe:827|y<!--
+	-->|__gore:safe:848|y<!--
+	-->|__gore:safe:849|y<!--
+	-->|__gore:safe:850|y<!--
+	-->|__gore:safe:851|y<!--
+	-->|__gore:safe:853|y<!--
+	-->|__gore:safe:854|y<!--
+	-->|__gore:safe:855|y<!--
+	-->|__gore:safe:856|y<!--
+	-->|__gore:safe:857|y<!--
+	-->|__gore:safe:858|y<!--
+	-->|__gore:safe:859|y<!--
+	-->|__gore:safe:860|y<!--
+	-->|__gore:safe:861|y<!--
+	-->|__gore:safe:862|y<!--
+	-->|__gore:safe:892|y<!--
+	-->|__gore:safe:893|y<!--
+	-->|__gore:safe:898|y<!--
+	-->|__gore:safe:899|y<!--
+	-->|__gore:safe:907|y<!--
+	-->|__gore:safe:908|y<!--
+	-->|__gore:safe:909|y<!--
+	-->|__gore:safe:910|y<!--
+	-->|__gore:safe:911|y<!--
+	-->|__gore:safe:912|y<!--
+	-->|__gore:safe:913|y<!--
+	-->|__gore:safe:914|y<!--
+	-->|__gore:safe:915|y<!--
+	-->|__gore:safe:916|y<!--
+	-->|__gore:safe:917|y<!--
+	-->|__gore:safe:918|y<!--
+	-->|__gore:safe:919|y<!--
+	-->|__gore:safe:920|y<!--
+	-->|__gore:safe:921|y<!--
+	-->|__gore:safe:922|y<!--
+	-->|__gore:safe:923|y<!--
+	-->|__gore:safe:924|y<!--
+	-->|__gore:safe:925|y<!--
+	-->|__gore:safe:926|y<!--
+	-->|__gore:safe:939|y<!--
+	-->|__gore:safe:940|y<!--
+	-->|__gore:safe:941|y<!--
+	-->|__gore:safe:942|y<!--
+	-->|__gore:safe:943|y<!--
+	-->|__gore:safe:1087|y<!--
+	-->|__gore:safe:1088|y<!--
+	-->|__gore:safe:1089|y<!--
+	-->|__gore:safe:1090|y<!--
+	-->|__gore:safe:1091|y<!--
+	-->|__gore:safe:1092|y<!--
+	-->|__gore:safe:1093|y<!--
+	-->|__gore:safe:1113|y<!--
+	-->|__gore:safe:1114|y<!--
+	-->|__gore:safe:1115|y<!--
+	-->|__gore:safe:1116|y<!--
+	-->|__gore:safe:1117|y<!--
+	-->|__gore:safe:1118|y<!--
+	-->|__gore:safe:1119|y<!--
+	-->|__gore:safe:1120|y<!--
+	-->|__gore:safe:1121|y<!--
+	-->|__gore:safe:1125|y<!--
+	-->|__gore:safe:1126|y<!--
+	-->|__gore:safe:1127|y<!--
+	-->|__gore:safe:1128|y<!--
+	-->|__gore:safe:1129|y<!--
+	-->|__gore:safe:1130|y<!--
+	-->|__gore:safe:1131|y<!--
+	-->|__gore:safe:1132|y<!--
+	-->|__gore:safe:1133|y<!--
+	-->|__gore:safe:1134|y<!--
+	-->|__gore:safe:1135|y<!--
+	-->|__gore:safe:1136|y<!--
+	-->|__gore:safe:1137|y<!--
+	-->|__gore:safe:1138|y<!--
+	-->|__gore:safe:1139|y<!--
+	-->|__gore:safe:1140|y<!--
+	-->|__gore:safe:1141|y<!--
+	-->|__gore:safe:1142|y<!--
+	-->|__gore:safe:1143|y<!--
+	-->|__gore:safe:1144|y<!--
+	-->|__gore:safe:1145|y<!--
+	-->|__gore:safe:1146|y<!--
+	-->|__gore:safe:1147|y<!--
+	-->|__gore:safe:1160|y<!--
+	-->|__gore:safe:1161|y<!--
+	-->|__gore:safe:1162|y<!--
+	-->|__gore:safe:1201|y<!--
+	-->|__gore:safe:1202|y<!--
+	-->|__gore:safe:1203|y<!--
+	-->|__gore:safe:1204|y<!--
+	-->|__gore:safe:1208|y<!--
+	-->|__gore:safe:1209|y<!--
+	-->|__gore:safe:1218|y<!--
+	-->|__gore:safe:1225|y<!--
+	-->|__gore:safe:1226|y<!--
+	-->|__gore:safe:1248|y<!--
+	-->|__gore:safe:1249|y<!--
+	-->|__gore:safe:1250|y<!--
+	-->|__gore:safe:1251|y<!--
+	-->|__gore:safe:1252|y<!--
+	-->|__gore:safe:1253|y<!--
+	-->|__gore:safe:1254|y<!--
+	-->|__gore:safe:1255|y<!--
+	-->|__gore:safe:1257|y<!--
+	-->|__gore:safe:1261|y<!--
+	-->|__gore:safe:1269|y<!--
+-->}}<!--
+
+-->{{source code ref|onlycate=y|v=1.4.4.2|<code>Terraria.ID.GoreID.cs</code> 中的 <code>GoreID</code> 类。}}<!--
+-->{{#dplvar:set<!--
+	-->|__gore:iname:61|Smoke1<!--
+	-->|__gore:iname:62|Smoke2<!--
+	-->|__gore:iname:63|Smoke3<!--
+	-->|__gore:iname:435|FartCloud1<!--
+	-->|__gore:iname:436|FartCloud2<!--
+	-->|__gore:iname:437|FartCloud3<!--
+	-->|__gore:iname:618|ChargedBlasterRing<!--
+	-->|__gore:iname:619|MoonLordHeart1<!--
+	-->|__gore:iname:620|MoonLordHeart2<!--
+	-->|__gore:iname:621|MoonLordHeart3<!--
+	-->|__gore:iname:622|MoonLordHeart4<!--
+	-->|__gore:iname:623|GoblinArcherHead<!--
+	-->|__gore:iname:624|GoblinArcherHand<!--
+	-->|__gore:iname:625|GoblinArcherLeg<!--
+	-->|__gore:iname:626|GoblinPeonHead<!--
+	-->|__gore:iname:627|GoblinPeonHand<!--
+	-->|__gore:iname:628|GoblinPeonLeg<!--
+	-->|__gore:iname:629|GoblinScoutHead<!--
+	-->|__gore:iname:630|GoblinScoutHand<!--
+	-->|__gore:iname:631|GoblinScoutLeg<!--
+	-->|__gore:iname:632|GoblinThiefHead<!--
+	-->|__gore:iname:633|GoblinThiefHand<!--
+	-->|__gore:iname:634|GoblinThiefLeg<!--
+	-->|__gore:iname:635|GoblinWarriorHead<!--
+	-->|__gore:iname:636|GoblinWarriorHand<!--
+	-->|__gore:iname:637|GoblinWarriorLeg<!--
+	-->|__gore:iname:638|SkeletonMerchantHead<!--
+	-->|__gore:iname:639|SkeletonMerchantBag<!--
+	-->|__gore:iname:640|SkeletonMerchantChunk1<!--
+	-->|__gore:iname:641|SkeletonMerchantChunk2<!--
+	-->|__gore:iname:642|SkeletonMerchantChunk3<!--
+	-->|__gore:iname:643|ButcherHead<!--
+	-->|__gore:iname:644|ButcherSaw<!--
+	-->|__gore:iname:645|ButcherArm<!--
+	-->|__gore:iname:646|ButcherLeg<!--
+	-->|__gore:iname:647|CreatureFromTheDeepHead<!--
+	-->|__gore:iname:648|CreatureFromTheDeepArm<!--
+	-->|__gore:iname:649|CreatureFromTheDeepLeg<!--
+	-->|__gore:iname:650|FritzHead<!--
+	-->|__gore:iname:651|FritzArm<!--
+	-->|__gore:iname:652|FritzLeg<!--
+	-->|__gore:iname:653|NailheadHead<!--
+	-->|__gore:iname:654|NailheadArm<!--
+	-->|__gore:iname:655|NailheadLeg<!--
+	-->|__gore:iname:656|PsychoHead<!--
+	-->|__gore:iname:657|PsychoArm<!--
+	-->|__gore:iname:658|PsychoLeg<!--
+	-->|__gore:iname:659|PsychoKnife<!--
+	-->|__gore:iname:660|DeadlySphere1<!--
+	-->|__gore:iname:661|DeadlySphere2<!--
+	-->|__gore:iname:662|DrManFlyHead<!--
+	-->|__gore:iname:663|DrManFlyArm<!--
+	-->|__gore:iname:664|DrManFlyLeg<!--
+	-->|__gore:iname:665|ThePossessedHead<!--
+	-->|__gore:iname:666|ThePossessedArm<!--
+	-->|__gore:iname:667|ThePossessedLeg<!--
+	-->|__gore:iname:668|CrimsonBunnyHead<!--
+	-->|__gore:iname:669|CrimsonBunnyLeg<!--
+	-->|__gore:iname:670|CrimsonGoldfishHead<!--
+	-->|__gore:iname:671|CrimsonGoldfishTail<!--
+	-->|__gore:iname:672|CrimsonPenguinBody<!--
+	-->|__gore:iname:673|CrimsonPenguinHead<!--
+	-->|__gore:iname:674|CrimsonPenguinLeg<!--
+	-->|__gore:iname:675|GoblinSummonerHead<!--
+	-->|__gore:iname:676|GoblinSummonerArm<!--
+	-->|__gore:iname:677|GoblinSummonerItem<!--
+	-->|__gore:iname:678|GoblinSummonerLeg<!--
+	-->|__gore:iname:679|ShadowflameApparation<!--
+	-->|__gore:iname:680|ShadowflameApparation2<!--
+	-->|__gore:iname:681|MothronSpawn1<!--
+	-->|__gore:iname:682|MothronSpawn2<!--
+	-->|__gore:iname:683|MothronSpawn3<!--
+	-->|__gore:iname:684|MothronEgg1<!--
+	-->|__gore:iname:685|MothronEgg2<!--
+	-->|__gore:iname:686|MothronEgg3<!--
+	-->|__gore:iname:687|Mothron1<!--
+	-->|__gore:iname:688|Mothron2<!--
+	-->|__gore:iname:689|Mothron3<!--
+	-->|__gore:iname:690|Mothron4<!--
+	-->|__gore:iname:691|Mothron5<!--
+	-->|__gore:iname:692|MedusaHead<!--
+	-->|__gore:iname:693|MedusaArm<!--
+	-->|__gore:iname:694|MedusaLeg<!--
+	-->|__gore:iname:695|GreekSkeletonHead<!--
+	-->|__gore:iname:696|GreekSkeletonArm<!--
+	-->|__gore:iname:697|GreekSkeletonLeg<!--
+	-->|__gore:iname:698|GreekPot1<!--
+	-->|__gore:iname:699|GreekPot2<!--
+	-->|__gore:iname:700|GreekPot3<!--
+	-->|__gore:iname:701|GreekPot4<!--
+	-->|__gore:iname:702|GreekPot5<!--
+	-->|__gore:iname:703|GreekPot6<!--
+	-->|__gore:iname:704|ToxicFlask<!--
+	-->|__gore:iname:705|ToxicFlask2<!--
+	-->|__gore:iname:706|WaterDrip<!--
+	-->|__gore:iname:707|WaterDripCorrupt<!--
+	-->|__gore:iname:708|WaterDripJungle<!--
+	-->|__gore:iname:709|WaterDripHallow<!--
+	-->|__gore:iname:710|WaterDripIce<!--
+	-->|__gore:iname:711|WaterDripDesert<!--
+	-->|__gore:iname:712|WaterDripUnderground<!--
+	-->|__gore:iname:713|WaterDripCavern<!--
+	-->|__gore:iname:714|WaterDripBlood<!--
+	-->|__gore:iname:715|WaterDripCrimson<!--
+	-->|__gore:iname:716|LavaDrip<!--
+	-->|__gore:iname:717|HoneyDrip<!--
+	-->|__gore:iname:718|GraniteGolemHead<!--
+	-->|__gore:iname:719|GraniteGolemBody<!--
+	-->|__gore:iname:720|GraniteGolemArm<!--
+	-->|__gore:iname:721|GraniteGolemLeg<!--
+	-->|__gore:iname:722|BloodZombieHead<!--
+	-->|__gore:iname:723|BloodZombieChunk<!--
+	-->|__gore:iname:724|BloodZombieChunk2<!--
+	-->|__gore:iname:725|DripplerChunk<!--
+	-->|__gore:iname:726|DripplerChunk2<!--
+	-->|__gore:iname:727|DripplerChunk3<!--
+	-->|__gore:iname:728|LunarTablet1<!--
+	-->|__gore:iname:729|LunarTablet2<!--
+	-->|__gore:iname:730|LunarTablet3<!--
+	-->|__gore:iname:731|LunarTablet4<!--
+	-->|__gore:iname:732|LunarTablet5<!--
+	-->|__gore:iname:733|LunarTablet6<!--
+	-->|__gore:iname:734|KingSlimeCrown<!--
+	-->|__gore:iname:735|CrawDadClaw<!--
+	-->|__gore:iname:736|CrawDadEye<!--
+	-->|__gore:iname:737|CrawDad2Claw<!--
+	-->|__gore:iname:738|CrawDad2Eye<!--
+	-->|__gore:iname:739|GiantShelly<!--
+	-->|__gore:iname:740|GiantShelly2<!--
+	-->|__gore:iname:741|SalamanderArm<!--
+	-->|__gore:iname:750|SalamanderHead<!--
+	-->|__gore:iname:759|SalamanderLeg<!--
+	-->|__gore:iname:768|TaxCollectorHead<!--
+	-->|__gore:iname:769|TaxCollectorArm<!--
+	-->|__gore:iname:770|TaxCollectorCane<!--
+	-->|__gore:iname:771|TaxCollectorLeg<!--
+	-->|__gore:iname:772|StardustSoldier1<!--
+	-->|__gore:iname:773|StardustSoldier2<!--
+	-->|__gore:iname:774|StardustSoldier3<!--
+	-->|__gore:iname:775|StardustSpider1<!--
+	-->|__gore:iname:776|StardustSpider2<!--
+	-->|__gore:iname:777|StardustSpider3<!--
+	-->|__gore:iname:778|StardustJellyfish1<!--
+	-->|__gore:iname:779|StardustJellyfish2<!--
+	-->|__gore:iname:780|StardustJellyfish3<!--
+	-->|__gore:iname:781|StardustJellyfish4<!--
+	-->|__gore:iname:782|NebulaBrain1<!--
+	-->|__gore:iname:783|NebulaBrain2<!--
+	-->|__gore:iname:784|NebulaBrain3<!--
+	-->|__gore:iname:785|NebulaHeadcrab1<!--
+	-->|__gore:iname:786|NebulaHeadcrab2<!--
+	-->|__gore:iname:787|NebulaHeadcrab3<!--
+	-->|__gore:iname:788|NebulaEye1<!--
+	-->|__gore:iname:789|NebulaEye2<!--
+	-->|__gore:iname:790|NebulaBeast1<!--
+	-->|__gore:iname:791|NebulaBeast2<!--
+	-->|__gore:iname:792|NebulaBeast3<!--
+	-->|__gore:iname:793|NebulaSoldier1<!--
+	-->|__gore:iname:794|NebulaSoldier2<!--
+	-->|__gore:iname:795|NebulaSoldier3<!--
+	-->|__gore:iname:796|VortexRifleman1<!--
+	-->|__gore:iname:797|VortexRifleman2<!--
+	-->|__gore:iname:798|VortexRifleman3<!--
+	-->|__gore:iname:799|VortexHornetQueen1<!--
+	-->|__gore:iname:800|VortexHornetQueen2<!--
+	-->|__gore:iname:801|VortexHornetQueen3<!--
+	-->|__gore:iname:802|VortexHornet1<!--
+	-->|__gore:iname:803|VortexHornet2<!--
+	-->|__gore:iname:804|VortexHornet3<!--
+	-->|__gore:iname:805|VortexHornet4<!--
+	-->|__gore:iname:806|VortexLarva1<!--
+	-->|__gore:iname:807|VortexLarve2<!--
+	-->|__gore:iname:808|VortexSoldier1<!--
+	-->|__gore:iname:809|VortexSoldier2<!--
+	-->|__gore:iname:810|VortexSoldier3<!--
+	-->|__gore:iname:811|GiantWalkingAntlion1<!--
+	-->|__gore:iname:812|GiantWalkingAntlion2<!--
+	-->|__gore:iname:813|GiantWalkingAntlion3<!--
+	-->|__gore:iname:814|GiantWalkingAntlion4<!--
+	-->|__gore:iname:815|GiantFlyingAntlion1<!--
+	-->|__gore:iname:816|GiantFlyingAntlion2<!--
+	-->|__gore:iname:817|GiantFlyingAntlion3<!--
+	-->|__gore:iname:818|GiantFlyingAntlion4<!--
+	-->|__gore:iname:819|DuneSplicerHead<!--
+	-->|__gore:iname:820|DuneSplicerBody<!--
+	-->|__gore:iname:821|DuneSplicerTail<!--
+	-->|__gore:iname:822|TombCrawlerHead<!--
+	-->|__gore:iname:823|TombCrawlerBody<!--
+	-->|__gore:iname:824|TombCrawlerTail<!--
+	-->|__gore:iname:825|ChimneySmoke1<!--
+	-->|__gore:iname:826|ChimneySmoke2<!--
+	-->|__gore:iname:827|ChimneySmoke3<!--
+	-->|__gore:iname:828|SolarWormHead<!--
+	-->|__gore:iname:829|SolarWormBody<!--
+	-->|__gore:iname:830|SolarWormTail<!--
+	-->|__gore:iname:831|SolarBeast1<!--
+	-->|__gore:iname:832|SolarBeast2<!--
+	-->|__gore:iname:833|SolarBeast3<!--
+	-->|__gore:iname:834|SolarBeast4<!--
+	-->|__gore:iname:835|SolarSpearman1<!--
+	-->|__gore:iname:836|SolarSpearman2<!--
+	-->|__gore:iname:837|SolarRoller1<!--
+	-->|__gore:iname:838|SolarRoller2<!--
+	-->|__gore:iname:839|SolarRoller3<!--
+	-->|__gore:iname:840|SolarRoller4<!--
+	-->|__gore:iname:841|SolarMeteor1<!--
+	-->|__gore:iname:842|SolarMeteor2<!--
+	-->|__gore:iname:843|SolarMeteor3<!--
+	-->|__gore:iname:844|SolarSoldier1<!--
+	-->|__gore:iname:845|SolarSoldier2<!--
+	-->|__gore:iname:846|SolarSoldier3<!--
+	-->|__gore:iname:847|SolarSoldier4<!--
+	-->|__gore:iname:848|MartianWalker1<!--
+	-->|__gore:iname:849|MartianWalker2<!--
+	-->|__gore:iname:850|MartianWalker3<!--
+	-->|__gore:iname:851|MartianWalker4<!--
+	-->|__gore:iname:852|MartianWalker5<!--
+	-->|__gore:iname:853|PirateShip1<!--
+	-->|__gore:iname:854|PirateShip2<!--
+	-->|__gore:iname:855|PirateShip3<!--
+	-->|__gore:iname:856|PirateShip4<!--
+	-->|__gore:iname:857|PirateShip5<!--
+	-->|__gore:iname:858|PirateShip6<!--
+	-->|__gore:iname:859|PirateShip7<!--
+	-->|__gore:iname:860|PirateShip8<!--
+	-->|__gore:iname:861|PirateShip9<!--
+	-->|__gore:iname:862|PirateShip10<!--
+	-->|__gore:iname:863|DesertGhoul1<!--
+	-->|__gore:iname:864|DesertGhoul2<!--
+	-->|__gore:iname:865|DesertGhoul3<!--
+	-->|__gore:iname:866|DesertGhoul4<!--
+	-->|__gore:iname:867|DesertGhoulCorruption1<!--
+	-->|__gore:iname:868|DesertGhoulCorruption2<!--
+	-->|__gore:iname:869|DesertGhoulCorruption3<!--
+	-->|__gore:iname:870|DesertGhoulCorruption4<!--
+	-->|__gore:iname:871|DesertGhoulCrimson1<!--
+	-->|__gore:iname:872|DesertGhoulCrimson2<!--
+	-->|__gore:iname:873|DesertGhoulCrimson3<!--
+	-->|__gore:iname:874|DesertGhoulCrimson4<!--
+	-->|__gore:iname:875|DesertLamia1<!--
+	-->|__gore:iname:876|DesertLamia2<!--
+	-->|__gore:iname:877|DesertLamia3<!--
+	-->|__gore:iname:878|DesertLamia4<!--
+	-->|__gore:iname:879|DesertGhoulHallow1<!--
+	-->|__gore:iname:880|DesertGhoulHallow2<!--
+	-->|__gore:iname:881|DesertGhoulHallow3<!--
+	-->|__gore:iname:882|DesertGhoulHallow4<!--
+	-->|__gore:iname:883|DesertScorpion1<!--
+	-->|__gore:iname:884|DesertScorpion2<!--
+	-->|__gore:iname:885|DesertScorpion3<!--
+	-->|__gore:iname:886|DesertScorpion4<!--
+	-->|__gore:iname:887|DesertScorpion5<!--
+	-->|__gore:iname:888|DesertBeast1<!--
+	-->|__gore:iname:889|DesertBeast2<!--
+	-->|__gore:iname:890|DesertBeast3<!--
+	-->|__gore:iname:891|DesertBeast4<!--
+	-->|__gore:iname:892|PirateShip11<!--
+	-->|__gore:iname:893|PirateShip12<!--
+	-->|__gore:iname:894|DemonTaxCollectorHead<!--
+	-->|__gore:iname:895|DemonTaxCollectorArm<!--
+	-->|__gore:iname:896|DemonTaxCollectorLeg<!--
+	-->|__gore:iname:897|SquirrelRed<!--
+	-->|__gore:iname:898|MartianProbe1<!--
+	-->|__gore:iname:899|MartianProbe2<!--
+	-->|__gore:iname:900|Cultist1<!--
+	-->|__gore:iname:901|Cultist2<!--
+	-->|__gore:iname:902|CultistBoss1<!--
+	-->|__gore:iname:903|CultistBoss2<!--
+	-->|__gore:iname:904|GigaZapperHead<!--
+	-->|__gore:iname:905|GigaZapperHand<!--
+	-->|__gore:iname:906|GigaZapperLeg<!--
+	-->|__gore:iname:907|SillyBallonPink<!--
+	-->|__gore:iname:908|SillyBalloonPurple<!--
+	-->|__gore:iname:909|SillyBalloonGreen<!--
+	-->|__gore:iname:910|TreeLeaf_Normal<!--
+	-->|__gore:iname:911|TreeLeaf_Palm<!--
+	-->|__gore:iname:912|TreeLeaf_Mushroom<!--
+	-->|__gore:iname:913|TreeLeaf_Boreal<!--
+	-->|__gore:iname:914|TreeLeaf_Jungle<!--
+	-->|__gore:iname:915|TreeLeaf_Corruption<!--
+	-->|__gore:iname:916|TreeLeaf_Crimson<!--
+	-->|__gore:iname:917|TreeLeaf_Hallow<!--
+	-->|__gore:iname:925|TreeLeaf_HallowLast<!--
+	-->|__gore:iname:926|PartyHatBlue<!--
+	-->|__gore:iname:927|PartyHatDemolitionist<!--
+	-->|__gore:iname:928|PartyHatDyeTrader<!--
+	-->|__gore:iname:929|PartyHatMerchant<!--
+	-->|__gore:iname:930|PartyHatNurse<!--
+	-->|__gore:iname:931|PartyHatPainter<!--
+	-->|__gore:iname:932|PartyHatPirate<!--
+	-->|__gore:iname:933|PartyHatSanta<!--
+	-->|__gore:iname:934|PartyHatSkeletonMerchant<!--
+	-->|__gore:iname:935|PartyHatSteampunker<!--
+	-->|__gore:iname:936|PartyHatStylist<!--
+	-->|__gore:iname:937|PartyHatTravellingMerchant<!--
+	-->|__gore:iname:938|PartyHatWizard<!--
+	-->|__gore:iname:939|PartyHatPink<!--
+	-->|__gore:iname:940|PartyHatCyan<!--
+	-->|__gore:iname:941|PartyHatPurple<!--
+	-->|__gore:iname:942|PartyHatWhite<!--
+	-->|__gore:iname:943|SandDrip<!--
+	-->|__gore:iname:944|Sandshark1<!--
+	-->|__gore:iname:945|Sandshark2<!--
+	-->|__gore:iname:946|Sandshark3<!--
+	-->|__gore:iname:947|Sandshark4<!--
+	-->|__gore:iname:948|Sandshark1Corrupt<!--
+	-->|__gore:iname:949|Sandshark2Corrupt<!--
+	-->|__gore:iname:950|Sandshark3Corrupt<!--
+	-->|__gore:iname:951|Sandshark4Corrupt<!--
+	-->|__gore:iname:952|Sandshark1Crimson<!--
+	-->|__gore:iname:953|Sandshark2Crimson<!--
+	-->|__gore:iname:954|Sandshark3Crimson<!--
+	-->|__gore:iname:955|Sandshark4Crimson<!--
+	-->|__gore:iname:956|Sandshark1Hallowed<!--
+	-->|__gore:iname:957|Sandshark2Hallowed<!--
+	-->|__gore:iname:958|Sandshark3Hallowed<!--
+	-->|__gore:iname:959|Sandshark4Hallowed<!--
+	-->|__gore:iname:960|SandElemental1<!--
+	-->|__gore:iname:961|SandElemental2<!--
+	-->|__gore:iname:962|SandElemental3<!--
+	-->|__gore:iname:963|SandElemental4<!--
+	-->|__gore:iname:964|Tumbleweed1<!--
+	-->|__gore:iname:965|Tumbleweed2<!--
+	-->|__gore:iname:966|Tumbleweed3<!--
+	-->|__gore:iname:967|Bartender1<!--
+	-->|__gore:iname:968|Bartender2<!--
+	-->|__gore:iname:969|Bartender3<!--
+	-->|__gore:iname:970|DD2Skeleton1<!--
+	-->|__gore:iname:971|DD2Skeleton2<!--
+	-->|__gore:iname:972|DD2Skeleton3<!--
+	-->|__gore:iname:973|DD2Skeleton4<!--
+	-->|__gore:iname:974|DD2WyvernT1_1<!--
+	-->|__gore:iname:975|DD2WyvernT1_2<!--
+	-->|__gore:iname:976|DD2WyvernT1_3<!--
+	-->|__gore:iname:977|DD2WyvernT1_4<!--
+	-->|__gore:iname:978|DD2WyvernT1_5<!--
+	-->|__gore:iname:979|DD2DrakinT3_1<!--
+	-->|__gore:iname:980|DD2DrakinT3_2<!--
+	-->|__gore:iname:981|DD2DrakinT3_3<!--
+	-->|__gore:iname:982|DD2DrakinT3_4<!--
+	-->|__gore:iname:983|DD2GoblinT1_1<!--
+	-->|__gore:iname:984|DD2GoblinT1_2<!--
+	-->|__gore:iname:985|DD2GoblinT1_3<!--
+	-->|__gore:iname:986|DD2GoblinT1_4<!--
+	-->|__gore:iname:987|DD2JavelinThrowerT1_1<!--
+	-->|__gore:iname:988|DD2JavelinThrowerT1_2<!--
+	-->|__gore:iname:989|DD2JavelinThrowerT1_3<!--
+	-->|__gore:iname:990|DD2JavelinThrowerT1_4<!--
+	-->|__gore:iname:991|DD2JavelinThrowerT1_5<!--
+	-->|__gore:iname:992|DD2JavelinThrowerT1_6<!--
+	-->|__gore:iname:993|DD2Kobold1<!--
+	-->|__gore:iname:994|DD2Kobold2<!--
+	-->|__gore:iname:995|DD2Kobold3<!--
+	-->|__gore:iname:996|DD2Kobold4<!--
+	-->|__gore:iname:997|LightningBugT3_1<!--
+	-->|__gore:iname:998|LightningBugT3_2<!--
+	-->|__gore:iname:999|LightningBugT3_3<!--
+	-->|__gore:iname:1000|DD2Ogre1<!--
+	-->|__gore:iname:1001|DD2Ogre2<!--
+	-->|__gore:iname:1002|DD2Ogre3<!--
+	-->|__gore:iname:1003|DD2Ogre4<!--
+	-->|__gore:iname:1004|DD2Ogre5<!--
+	-->|__gore:iname:1005|DD2Ogre6<!--
+	-->|__gore:iname:1006|DD2Ogre6Alt<!--
+	-->|__gore:iname:1007|Pages<!--
+	-->|__gore:iname:1008|PageScrap<!--
+	-->|__gore:iname:1009|DD2DarkMageT1_1<!--
+	-->|__gore:iname:1010|DD2DarkMageT1_2<!--
+	-->|__gore:iname:1011|DD2DarkMageT1_3<!--
+	-->|__gore:iname:1012|DD2DarkMageT1_4<!--
+	-->|__gore:iname:1013|DD2DarkMageT1_5<!--
+	-->|__gore:iname:1014|DD2DarkMageT1_6<!--
+	-->|__gore:iname:1015|DD2DarkMageT1_7<!--
+	-->|__gore:iname:1016|DD2DarkMageT1_8<!--
+	-->|__gore:iname:1017|DD2DarkMageT1_9<!--
+	-->|__gore:iname:1018|DD2DarkMageT1_10<!--
+	-->|__gore:iname:1019|DD2DarkMageT1_11<!--
+	-->|__gore:iname:1020|DD2WitherBeast1<!--
+	-->|__gore:iname:1021|DD2WitherBeast2<!--
+	-->|__gore:iname:1022|DD2WitherBeast3<!--
+	-->|__gore:iname:1023|DD2WitherBeast4<!--
+	-->|__gore:iname:1024|OgreSpit1<!--
+	-->|__gore:iname:1025|OgreSpit2<!--
+	-->|__gore:iname:1026|OgreSpit3<!--
+	-->|__gore:iname:1027|DD2Crystal1<!--
+	-->|__gore:iname:1028|DD2Crystal2<!--
+	-->|__gore:iname:1029|DD2Crystal3<!--
+	-->|__gore:iname:1030|DD2Crystal4<!--
+	-->|__gore:iname:1031|DD2GoblinBomberT1_1<!--
+	-->|__gore:iname:1032|DD2GoblinBomberT1_2<!--
+	-->|__gore:iname:1033|DD2GoblinBomberT1_3<!--
+	-->|__gore:iname:1034|DD2GoblinBomberT2_1<!--
+	-->|__gore:iname:1035|DD2GoblinBomberT2_2<!--
+	-->|__gore:iname:1036|DD2GoblinBomberT2_3<!--
+	-->|__gore:iname:1037|DD2GoblinBomberT3_1<!--
+	-->|__gore:iname:1038|DD2GoblinBomberT3_2<!--
+	-->|__gore:iname:1039|DD2GoblinBomberT3_3<!--
+	-->|__gore:iname:1040|DD2WyvernT2_1<!--
+	-->|__gore:iname:1041|DD2WyvernT2_2<!--
+	-->|__gore:iname:1042|DD2WyvernT2_3<!--
+	-->|__gore:iname:1043|DD2WyvernT2_4<!--
+	-->|__gore:iname:1044|DD2WyvernT2_5<!--
+	-->|__gore:iname:1045|DD2WyvernT3_1<!--
+	-->|__gore:iname:1046|DD2WyvernT3_2<!--
+	-->|__gore:iname:1047|DD2WyvernT3_3<!--
+	-->|__gore:iname:1048|DD2WyvernT3_4<!--
+	-->|__gore:iname:1049|DD2WyvernT3_5<!--
+	-->|__gore:iname:1050|DD2KoboldFlyerT2_1<!--
+	-->|__gore:iname:1051|DD2KoboldFlyerT2_2<!--
+	-->|__gore:iname:1052|DD2KoboldFlyerT2_3<!--
+	-->|__gore:iname:1053|DD2KoboldFlyerT2_4<!--
+	-->|__gore:iname:1054|DD2KoboldFlyerT2_5<!--
+	-->|__gore:iname:1055|DD2JavelinThrowerT2_1<!--
+	-->|__gore:iname:1056|DD2JavelinThrowerT2_2<!--
+	-->|__gore:iname:1057|DD2JavelinThrowerT2_3<!--
+	-->|__gore:iname:1058|DD2JavelinThrowerT2_4<!--
+	-->|__gore:iname:1059|DD2JavelinThrowerT2_5<!--
+	-->|__gore:iname:1060|DD2JavelinThrowerT2_6<!--
+	-->|__gore:iname:1061|DD2JavelinThrowerT3_1<!--
+	-->|__gore:iname:1062|DD2JavelinThrowerT3_2<!--
+	-->|__gore:iname:1063|DD2JavelinThrowerT3_3<!--
+	-->|__gore:iname:1064|DD2JavelinThrowerT3_4<!--
+	-->|__gore:iname:1065|DD2JavelinThrowerT3_5<!--
+	-->|__gore:iname:1066|DD2JavelinThrowerT3_6<!--
+	-->|__gore:iname:1067|DD2GoblinT2_1<!--
+	-->|__gore:iname:1068|DD2GoblinT2_2<!--
+	-->|__gore:iname:1069|DD2GoblinT2_3<!--
+	-->|__gore:iname:1070|DD2GoblinT2_4<!--
+	-->|__gore:iname:1071|DD2GoblinT3_1<!--
+	-->|__gore:iname:1072|DD2GoblinT3_2<!--
+	-->|__gore:iname:1073|DD2GoblinT3_3<!--
+	-->|__gore:iname:1074|DD2GoblinT3_4<!--
+	-->|__gore:iname:1075|DD2DrakinT2_1<!--
+	-->|__gore:iname:1076|DD2DrakinT2_2<!--
+	-->|__gore:iname:1077|DD2DrakinT2_3<!--
+	-->|__gore:iname:1078|DD2DrakinT2_4<!--
+	-->|__gore:iname:1079|DD2BetsyTail<!--
+	-->|__gore:iname:1080|DD2BetsyFoot<!--
+	-->|__gore:iname:1081|DD2BetsyHead<!--
+	-->|__gore:iname:1082|DD2BetsyBody<!--
+	-->|__gore:iname:1083|DD2BetsyWing1<!--
+	-->|__gore:iname:1084|DD2BetsyWing2<!--
+	-->|__gore:iname:1085|DD2BetsyHand<!--
+	-->|__gore:iname:1086|DD2BetsyButt<!--
+	-->|__gore:iname:1087|AmbientFloorCloud1<!--
+	-->|__gore:iname:1088|AmbientFloorCloud2<!--
+	-->|__gore:iname:1089|AmbientFloorCloud3<!--
+	-->|__gore:iname:1090|AmbientFloorCloud4<!--
+	-->|__gore:iname:1091|AmbientAirborneCloud1<!--
+	-->|__gore:iname:1092|AmbientAirborneCloud2<!--
+	-->|__gore:iname:1093|AmbientAirborneCloud3<!--
+	-->|__gore:iname:1094|WalkingAntlion1<!--
+	-->|__gore:iname:1095|WalkingAntlion2<!--
+	-->|__gore:iname:1096|WalkingAntlion3<!--
+	-->|__gore:iname:1097|WalkingAntlion4<!--
+	-->|__gore:iname:1098|FlyingAntlion1<!--
+	-->|__gore:iname:1099|FlyingAntlion2<!--
+	-->|__gore:iname:1100|FlyingAntlion3<!--
+	-->|__gore:iname:1101|FlyingAntlion4<!--
+	-->|__gore:iname:1102|LarvaeAntlion1<!--
+	-->|__gore:iname:1103|LarvaeAntlion2<!--
+	-->|__gore:iname:1104|EyeballFlyingFish1<!--
+	-->|__gore:iname:1105|EyeballFlyingFish2<!--
+	-->|__gore:iname:1106|ZombieMerman1<!--
+	-->|__gore:iname:1107|ZombieMerman2<!--
+	-->|__gore:iname:1108|ZombieMerman3<!--
+	-->|__gore:iname:1109|Golfer1<!--
+	-->|__gore:iname:1110|Golfer2<!--
+	-->|__gore:iname:1111|Golfer3<!--
+	-->|__gore:iname:1112|Golfer4<!--
+	-->|__gore:iname:1113|TreeLeaf_HallowJim<!--
+	-->|__gore:iname:1121|TreeLeaf_HallowLastJim<!--
+	-->|__gore:iname:1122|DesertPot1<!--
+	-->|__gore:iname:1123|DesertPot2<!--
+	-->|__gore:iname:1124|DesertPot3<!--
+	-->|__gore:iname:1125|Balloon_White_1<!--
+	-->|__gore:iname:1126|Balloon_White_2<!--
+	-->|__gore:iname:1127|Balloon_White_3<!--
+	-->|__gore:iname:1128|Balloon_Red_1<!--
+	-->|__gore:iname:1129|Balloon_Red_2<!--
+	-->|__gore:iname:1130|Balloon_Red_3<!--
+	-->|__gore:iname:1131|Balloon_Orange_1<!--
+	-->|__gore:iname:1132|Balloon_Orange_2<!--
+	-->|__gore:iname:1133|Balloon_Orange_3<!--
+	-->|__gore:iname:1134|Balloon_Yellow_1<!--
+	-->|__gore:iname:1135|Balloon_Yellow_2<!--
+	-->|__gore:iname:1136|Balloon_Yellow_3<!--
+	-->|__gore:iname:1137|Balloon_Green_1<!--
+	-->|__gore:iname:1138|Balloon_Green_2<!--
+	-->|__gore:iname:1139|Balloon_Green_3<!--
+	-->|__gore:iname:1140|Balloon_Blue_1<!--
+	-->|__gore:iname:1141|Balloon_Blue_2<!--
+	-->|__gore:iname:1142|Balloon_Blue_3<!--
+	-->|__gore:iname:1143|Balloon_Purple_1<!--
+	-->|__gore:iname:1144|Balloon_Purple_2<!--
+	-->|__gore:iname:1145|Balloon_Purple_3<!--
+	-->|__gore:iname:1146|Balloon_String<!--
+	-->|__gore:iname:1147|WaterDripDesert2<!--
+	-->|__gore:iname:1148|Ladybug1<!--
+	-->|__gore:iname:1149|Ladybug2<!--
+	-->|__gore:iname:1150|Seagull1<!--
+	-->|__gore:iname:1151|Seagull2<!--
+	-->|__gore:iname:1152|Pupfish1<!--
+	-->|__gore:iname:1153|Pupfish2<!--
+	-->|__gore:iname:1154|Grebe1<!--
+	-->|__gore:iname:1155|Grebe2<!--
+	-->|__gore:iname:1156|Grebe3<!--
+	-->|__gore:iname:1157|Rat1<!--
+	-->|__gore:iname:1158|Rat2<!--
+	-->|__gore:iname:1159|Rat3<!--
+	-->|__gore:iname:1160|EbonsandDrip<!--
+	-->|__gore:iname:1161|CrimsandDrip<!--
+	-->|__gore:iname:1162|PearlsandDrip<!--
+	-->|__gore:iname:1163|LittleRat1<!--
+	-->|__gore:iname:1164|Owl1<!--
+	-->|__gore:iname:1165|Owl2<!--
+	-->|__gore:iname:1166|Turtle1<!--
+	-->|__gore:iname:1167|Turtle2<!--
+	-->|__gore:iname:1168|Turtle3<!--
+	-->|__gore:iname:1169|TurtleJungle1<!--
+	-->|__gore:iname:1170|TurtleJungle2<!--
+	-->|__gore:iname:1171|TurtleJungle3<!--
+	-->|__gore:iname:1172|BloodNautilus1<!--
+	-->|__gore:iname:1173|BloodNautilus2<!--
+	-->|__gore:iname:1174|BloodNautilus3<!--
+	-->|__gore:iname:1175|BloodNautilus4<!--
+	-->|__gore:iname:1176|BloodNautilus5<!--
+	-->|__gore:iname:1177|BloodNautilus6<!--
+	-->|__gore:iname:1178|BloodNautilus7<!--
+	-->|__gore:iname:1179|BloodSquid1<!--
+	-->|__gore:iname:1180|BloodSquid2<!--
+	-->|__gore:iname:1181|BloodSquid3<!--
+	-->|__gore:iname:1182|BloodSquid4<!--
+	-->|__gore:iname:1183|GoblinShark1<!--
+	-->|__gore:iname:1184|GoblinShark2<!--
+	-->|__gore:iname:1185|GoblinShark3<!--
+	-->|__gore:iname:1186|GoblinShark4<!--
+	-->|__gore:iname:1187|BloodEel1<!--
+	-->|__gore:iname:1188|BloodEel2<!--
+	-->|__gore:iname:1189|BloodEel3<!--
+	-->|__gore:iname:1190|Gnome1<!--
+	-->|__gore:iname:1191|Gnome2<!--
+	-->|__gore:iname:1192|Gnome3<!--
+	-->|__gore:iname:1193|Gnome4<!--
+	-->|__gore:iname:1194|SeaTurtle1<!--
+	-->|__gore:iname:1195|SeaTurtle2<!--
+	-->|__gore:iname:1196|SeaTurtle3<!--
+	-->|__gore:iname:1197|Seahorse1<!--
+	-->|__gore:iname:1198|Dolphin1<!--
+	-->|__gore:iname:1199|Dolphin2<!--
+	-->|__gore:iname:1200|Dolphin3<!--
+	-->|__gore:iname:1201|ChumBucket<!--
+	-->|__gore:iname:1202|FogMachineCloud1<!--
+	-->|__gore:iname:1203|FogMachineCloud2<!--
+	-->|__gore:iname:1204|FogMachineCloud3<!--
+	-->|__gore:iname:1205|Dandelion1<!--
+	-->|__gore:iname:1206|Dandelion2<!--
+	-->|__gore:iname:1207|Dandelion3<!--
+	-->|__gore:iname:1208|ChumBucketFloatingChunks<!--
+	-->|__gore:iname:1209|SparkleGuitar<!--
+	-->|__gore:iname:1210|RockGolem1<!--
+	-->|__gore:iname:1211|RockGolem2<!--
+	-->|__gore:iname:1212|RockGolem3<!--
+	-->|__gore:iname:1213|RockGolem4<!--
+	-->|__gore:iname:1214|MaggotZombie1<!--
+	-->|__gore:iname:1215|MaggotZombie2<!--
+	-->|__gore:iname:1216|MaggotZombie3<!--
+	-->|__gore:iname:1217|MaggotZombieMaggotPieces<!--
+	-->|__gore:iname:1218|ShadowMimicCoins<!--
+	-->|__gore:iname:1219|BestiaryGirl1<!--
+	-->|__gore:iname:1220|BestiaryGirl2<!--
+	-->|__gore:iname:1221|BestiaryGirl3<!--
+	-->|__gore:iname:1222|BestiaryGirl4<!--
+	-->|__gore:iname:1223|BestiaryGirlFox1<!--
+	-->|__gore:iname:1224|BestiaryGirlFox2<!--
+	-->|__gore:iname:1225|LightningBunnySparks<!--
+	-->|__gore:iname:1226|KingSlimePetCrown<!--
+	-->|__gore:iname:1227|GemSquirrelAmethyst<!--
+	-->|__gore:iname:1228|GemSquirrelTopaz<!--
+	-->|__gore:iname:1229|GemSquirrelSapphire<!--
+	-->|__gore:iname:1230|GemSquirrelEmerald<!--
+	-->|__gore:iname:1231|GemSquirrelRuby<!--
+	-->|__gore:iname:1232|GemSquirrelDiamond<!--
+	-->|__gore:iname:1233|GemSquirrelAmber<!--
+	-->|__gore:iname:1234|GemBunnyAmethystHead<!--
+	-->|__gore:iname:1235|GemBunnyAmethystBack<!--
+	-->|__gore:iname:1236|GemBunnyTopazHead<!--
+	-->|__gore:iname:1237|GemBunnyTopazBack<!--
+	-->|__gore:iname:1238|GemBunnySapphireHead<!--
+	-->|__gore:iname:1239|GemBunnySapphireBack<!--
+	-->|__gore:iname:1240|GemBunnyEmeraldHead<!--
+	-->|__gore:iname:1241|GemBunnyEmeraldBack<!--
+	-->|__gore:iname:1242|GemBunnyRubyHead<!--
+	-->|__gore:iname:1243|GemBunnyRubyBack<!--
+	-->|__gore:iname:1244|GemBunnyDiamondHead<!--
+	-->|__gore:iname:1245|GemBunnyDiamondBack<!--
+	-->|__gore:iname:1246|GemBunnyAmberHead<!--
+	-->|__gore:iname:1247|GemBunnyAmberBack<!--
+	-->|__gore:iname:1248|TreeLeaf_VanityTreeSakura<!--
+	-->|__gore:iname:1249|TreeLeaf_GemTreeTopaz<!--
+	-->|__gore:iname:1250|TreeLeaf_GemTreeAmethyst<!--
+	-->|__gore:iname:1251|TreeLeaf_GemTreeSapphire<!--
+	-->|__gore:iname:1252|TreeLeaf_GemTreeEmerald<!--
+	-->|__gore:iname:1253|TreeLeaf_GemTreeRuby<!--
+	-->|__gore:iname:1254|TreeLeaf_GemTreeDiamond<!--
+	-->|__gore:iname:1255|TreeLeaf_GemTreeAmber<!--
+	-->|__gore:iname:1256|MagmaSnailShell<!--
+	-->|__gore:iname:1257|TreeLeaf_VanityTreeYellowWillow<!--
+	-->|__gore:iname:1258|QueenSlimeCrown<!--
+	-->|__gore:iname:1259|QueenSlimeWing<!--
+	-->|__gore:iname:1260|QueenSlimeMinionPurpleWing<!--
+	-->|__gore:iname:1261|QueenSlimePetCrown<!--
+	-->|__gore:iname:1262|HallowBoss1<!--
+	-->|__gore:iname:1263|HallowBoss2<!--
+	-->|__gore:iname:1264|HallowBoss3<!--
+	-->|__gore:iname:1265|HallowBoss4<!--
+	-->|__gore:iname:1266|HallowBoss5<!--
+	-->|__gore:iname:1267|HallowBoss6<!--
+	-->|__gore:iname:1268|HallowBoss7<!--
+	-->|__gore:iname:1269|PlanteroSombrero<!--
+	-->|__gore:iname:1270|DeerclopsHead<!--
+	-->|__gore:iname:1271|DeerclopsAntler<!--
+	-->|__gore:iname:1272|DeerclopsBody<!--
+	-->|__gore:iname:1273|DeerclopsArm<!--
+	-->|__gore:iname:1274|DeerclopsLeg<!--
+	-->|__gore:iname:1275|Stinkbug1<!--
+	-->|__gore:iname:1276|Stinkbug2<!--
+	-->|__gore:iname:1277|ScarletMacaw1<!--
+	-->|__gore:iname:1278|TreeLeaf_TreeAsh<!--
+	-->|__gore:iname:1279|ScarletMacaw2<!--
+	-->|__gore:iname:1280|BlueMacaw1<!--
+	-->|__gore:iname:1281|BlueMacaw2<!--
+	-->|__gore:iname:1282|Toucan1<!--
+	-->|__gore:iname:1283|Toucan2<!--
+	-->|__gore:iname:1284|YellowCockatiel1<!--
+	-->|__gore:iname:1285|YellowCockatiel2<!--
+	-->|__gore:iname:1286|GrayCockatiel1<!--
+	-->|__gore:iname:1287|GrayCockatiel2<!--
+	-->|__gore:iname:1288|ArmsDealerShimmeredHead<!--
+	-->|__gore:iname:1289|ArmsDealerShimmeredArm<!--
+	-->|__gore:iname:1290|ArmsDealerShimmeredLeg<!--
+	-->|__gore:iname:1291|ClothierShimmeredHead<!--
+	-->|__gore:iname:1292|ClothierShimmeredArm<!--
+	-->|__gore:iname:1293|ClothierShimmeredLeg<!--
+	-->|__gore:iname:1294|CyborgShimmeredHead<!--
+	-->|__gore:iname:1295|CyborgShimmeredArm<!--
+	-->|__gore:iname:1296|CyborgShimmeredLeg<!--
+	-->|__gore:iname:1297|DemolitionistShimmeredHead<!--
+	-->|__gore:iname:1298|DemolitionistShimmeredHeadParty<!--
+	-->|__gore:iname:1299|DemolitionistShimmeredArm<!--
+	-->|__gore:iname:1300|DemolitionistShimmeredLeg<!--
+	-->|__gore:iname:1301|DryadShimmeredHead<!--
+	-->|__gore:iname:1302|DryadShimmeredArm<!--
+	-->|__gore:iname:1303|DryadShimmeredLeg<!--
+	-->|__gore:iname:1304|DyeTraderShimmeredHead<!--
+	-->|__gore:iname:1305|DyeTraderShimmeredHeadParty<!--
+	-->|__gore:iname:1306|DyeTraderShimmeredArm<!--
+	-->|__gore:iname:1307|DyeTraderShimmeredLeg<!--
+	-->|__gore:iname:1308|GoblinTinkererShimmeredHead<!--
+	-->|__gore:iname:1309|GoblinTinkererShimmeredArm<!--
+	-->|__gore:iname:1310|GoblinTinkererShimmeredLeg<!--
+	-->|__gore:iname:1311|GolferShimmeredHead<!--
+	-->|__gore:iname:1312|GolferShimmeredArm<!--
+	-->|__gore:iname:1313|GolferShimmeredLeg<!--
+	-->|__gore:iname:1314|GuideShimmeredHead<!--
+	-->|__gore:iname:1315|GuideShimmeredArm<!--
+	-->|__gore:iname:1316|GuideShimmeredLeg<!--
+	-->|__gore:iname:1317|MechanicShimmeredHead<!--
+	-->|__gore:iname:1318|MechanicShimmeredArm<!--
+	-->|__gore:iname:1319|MechanicShimmeredLeg<!--
+	-->|__gore:iname:1320|MerchantShimmeredHead<!--
+	-->|__gore:iname:1321|MerchantShimmeredHeadParty<!--
+	-->|__gore:iname:1322|MerchantShimmeredArm<!--
+	-->|__gore:iname:1323|MerchantShimmeredLeg<!--
+	-->|__gore:iname:1324|NurseShimmeredHead<!--
+	-->|__gore:iname:1325|NurseShimmeredHeadParty<!--
+	-->|__gore:iname:1326|NurseShimmeredArm<!--
+	-->|__gore:iname:1327|NurseShimmeredLeg<!--
+	-->|__gore:iname:1328|OldManShimmeredHead<!--
+	-->|__gore:iname:1329|OldManShimmeredArm<!--
+	-->|__gore:iname:1330|OldManShimmeredLeg<!--
+	-->|__gore:iname:1331|PainterShimmeredHead<!--
+	-->|__gore:iname:1332|PainterShimmeredLeg<!--
+	-->|__gore:iname:1333|PainterShimmeredPaintcan<!--
+	-->|__gore:iname:1334|PainterShimmeredPaintbrush<!--
+	-->|__gore:iname:1335|PartyGirlShimmeredHead<!--
+	-->|__gore:iname:1336|PartyGirlShimmeredArm<!--
+	-->|__gore:iname:1337|PartyGirlShimmeredLeg<!--
+	-->|__gore:iname:1338|SantaClausShimmeredHead<!--
+	-->|__gore:iname:1339|SantaClausShimmeredHeadParty<!--
+	-->|__gore:iname:1340|SantaClausShimmeredArm<!--
+	-->|__gore:iname:1341|SantaClausShimmeredLeg<!--
+	-->|__gore:iname:1342|SkeletonMerchantShimmeredHead<!--
+	-->|__gore:iname:1343|SkeletonMerchantShimmeredHeadParty<!--
+	-->|__gore:iname:1344|SkeletonMerchantShimmeredArm<!--
+	-->|__gore:iname:1345|SkeletonMerchantShimmeredLeg<!--
+	-->|__gore:iname:1346|SkeletonMerchantShimmeredBag<!--
+	-->|__gore:iname:1347|SkeletonMerchantShimmeredScrap<!--
+	-->|__gore:iname:1348|SteampunkerShimmeredHead<!--
+	-->|__gore:iname:1349|SteampunkerShimmeredArm<!--
+	-->|__gore:iname:1350|SteampunkerShimmeredLegs<!--
+	-->|__gore:iname:1351|StylistShimmeredHead<!--
+	-->|__gore:iname:1352|StylistShimmeredHair<!--
+	-->|__gore:iname:1353|StylistShimmeredArm<!--
+	-->|__gore:iname:1354|StylistShimmeredLeg<!--
+	-->|__gore:iname:1355|TavernkeepShimmeredHead<!--
+	-->|__gore:iname:1356|TavernkeepShimmeredArm<!--
+	-->|__gore:iname:1357|TavernkeepShimmeredLeg<!--
+	-->|__gore:iname:1358|TaxCollectorShimmeredHead<!--
+	-->|__gore:iname:1359|TaxCollectorShimmeredArm<!--
+	-->|__gore:iname:1360|TaxCollectorShimmeredLeg<!--
+	-->|__gore:iname:1361|TaxCollectorShimmeredCane<!--
+	-->|__gore:iname:1362|TravelingMerchantShimmeredHead<!--
+	-->|__gore:iname:1363|TravelingMerchantShimmeredHeadParty<!--
+	-->|__gore:iname:1364|TravelingMerchantShimmeredArm<!--
+	-->|__gore:iname:1365|TravelingMerchantShimmeredLeg<!--
+	-->|__gore:iname:1366|TruffleShimmeredHead<!--
+	-->|__gore:iname:1367|TruffleShimmeredArm<!--
+	-->|__gore:iname:1368|TruffleShimmeredLeg<!--
+	-->|__gore:iname:1369|WitchDoctorShimmeredHead<!--
+	-->|__gore:iname:1370|WitchDoctorShimmeredArm<!--
+	-->|__gore:iname:1371|WitchDoctorShimmeredLeg<!--
+	-->|__gore:iname:1372|WitchDoctorShimmeredSpear<!--
+	-->|__gore:iname:1373|WizardShimmeredHat<!--
+	-->|__gore:iname:1374|WizardShimmeredClothScrap1<!--
+	-->|__gore:iname:1375|WizardShimmeredClothScrap2<!--
+	-->|__gore:iname:1376|WizardShimmeredClothScrap3<!--
+	-->|__gore:iname:1377|BestiaryGirlShimmeredHead<!--
+	-->|__gore:iname:1378|BestiaryGirlShimmeredHeadTransformed<!--
+	-->|__gore:iname:1379|BestiaryGirlShimmeredArm<!--
+	-->|__gore:iname:1380|BestiaryGirlShimmeredArmTransformed<!--
+	-->|__gore:iname:1381|BestiaryGirlShimmeredLeg<!--
+	-->|__gore:iname:1382|BestiaryGirlShimmeredTail<!--
+	-->|__gore:iname:1383|Count<!--
+
+-->}}<!--
+
+-->
+{| class="terraria lined sortable"
+! width="45px" | ID
+! 图像
+! {{tr|Internal name}}
+! width="500px" | 来源
+! 安全
+{{/row|[[{{tr|Demon Eye}}]]和大多数变体种类、[[{{tr|Wandering Eye}}]]}}
+{{/row|[[{{tr|Demon Eye}}]]和大多数变体种类}}
+{{/row|[[{{tr|Zombie}}]]和大多数变体种类}}
+{{/row|[[{{tr|Zombie}}]]和大多数变体种类}}
+{{/row|[[{{tr|Zombie}}]]和大多数变体种类}}
+{{/row|[[{{tr|Servant of Cthulhu}}]]}}
+{{/row|[[{{tr|Servant of Cthulhu}}]]}}
+{{/row|[[{{tr|Eye of Cthulhu}}]]}}
+{{/row|[[{{tr|Eye of Cthulhu}}]]}}
+{{/row|[[{{tr|Eye of Cthulhu}}]]}}
+{{/row|[[{{tr|Cloud in a Bottle}}]]、[[{{tr|Pigron}}]] {{note|paren=y|{{tr|Hallow}}}}、禁用[[{{tr|溅血效果}}]]时的不安全血污和[[{{tr|Dust IDs}}|{{tr|dust}}]]}}
+{{/row|[[{{tr|Cloud in a Bottle}}]]、[[{{tr|Pigron}}]] {{note|paren=y|{{tr|Hallow}}}}、禁用[[{{tr|溅血效果}}]]时的不安全血污和[[{{tr|Dust IDs}}|{{tr|dust}}]]}}
+{{/row|[[{{tr|Cloud in a Bottle}}]]、[[{{tr|Pigron}}]] {{note|paren=y|{{tr|Hallow}}}}、禁用[[{{tr|溅血效果}}]]时的不安全血污和[[{{tr|Dust IDs}}|{{tr|dust}}]]}}
+{{/row|[[{{tr|Eater of Souls}}]]}}
+{{/row|[[{{tr|Eater of Souls}}]]}}
+{{/row}}
+{{/row}}
+{{/row|[[{{tr|Devourer}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Devourer}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Devourer}}]] {{note|paren=y|尾巴}}}}
+{{/row|[[{{tr|Giant Worm}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Giant Worm}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Giant Worm}}]] {{note|paren=y|尾巴}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Eater of Worlds}}]] {{note|paren=y|尾巴}}}}
+{{/row|[[{{tr|Merchant}}]]}}
+{{/row|[[{{tr|Merchant}}]]}}
+{{/row|[[{{tr|Merchant}}]]}}
+{{/row|[[{{tr|Nurse}}]]}}
+{{/row|[[{{tr|Nurse}}]]}}
+{{/row|[[{{tr|Nurse}}]]}}
+{{/row|[[{{tr|Arms Dealer}}]]}}
+{{/row|[[{{tr|Arms Dealer}}]]}}
+{{/row|[[{{tr|Arms Dealer}}]]}}
+{{/row|[[{{tr|Dryad}}]]}}
+{{/row|[[{{tr|Dryad}}]]}}
+{{/row|[[{{tr|Dryad}}]]}}
+{{/row|[[{{tr|Skeleton}}]]和大多数变体种类}}
+{{/row|[[{{tr|Skeleton}}]]和大多数变体种类}}
+{{/row|[[{{tr|Skeleton}}]]和大多数变体种类}}
+{{/row|[[{{tr|Fire Imp}}]]}}
+{{/row|[[{{tr|Fire Imp}}]]}}
+{{/row|[[{{tr|Fire Imp}}]]}}
+{{/row|[[{{tr|Goblin Sorcerer}}]]}}
+{{/row|[[{{tr|Goblin Sorcerer}}]]}}
+<!-- 50 -->
+{{/row|[[{{tr|Goblin Sorcerer}}]]}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 1}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 1}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 1}}}}}}
+{{/row|[[{{tr|Skeletron Head}}]]、[[{{tr|Dungeon Guardian}}]]}}
+{{/row|[[{{tr|Skeletron Head}}]]、[[{{tr|Dungeon Guardian}}]]}}
+{{/row|[[{{tr|Skeletron Hand}}]]}}
+{{/row|[[{{tr|Skeletron Hand}}]]}}
+{{/row|[[{{tr|Old Man}}]]}}
+{{/row|[[{{tr|Old Man}}]]}}
+{{/row|[[{{tr|Old Man}}]]}}
+{{/row|[[{{tr|Pygmy Staff}}]]、[[{{tr|stynger bolt}}]]、[[{{tr|grenade}}]]}}
+{{/row|[[{{tr|Pygmy Staff}}]]、[[{{tr|stynger bolt}}]]、[[{{tr|grenade}}]]}}
+{{/row|[[{{tr|Pygmy Staff}}]]、[[{{tr|stynger bolt}}]]、[[{{tr|grenade}}]]}}
+{{/row|[[{{tr|Demolitionist}}]]}}
+{{/row|[[{{tr|Demolitionist}}]]}}
+{{/row|[[{{tr|Demolitionist}}]]}}
+{{/row|[[{{tr|Bone Serpent}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Bone Serpent}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Bone Serpent}}]] {{note|paren=y|尾巴}}}}
+{{/row|[[{{tr|Hornet}}]]}}
+{{/row|[[{{tr|Hornet}}]]}}
+{{/row|[[{{tr|Snatcher}}]]、[[{{tr|Man Eater}}]]}}
+{{/row|[[{{tr|Guide}}]]}}
+{{/row|[[{{tr|Guide}}]]}}
+{{/row|[[{{tr|Guide}}]]}}
+{{/row|[[{{tr|Bunny}}]]}}
+{{/row|[[{{tr|Bunny}}]]}}
+{{/row|[[{{tr|Corrupt Bunny}}]]}}
+{{/row|[[{{tr|Corrupt Bunny}}]]}}
+{{/row|[[{{tr|Harpy}}]]}}
+{{/row|[[{{tr|Harpy}}]]}}
+{{/row|[[{{tr|Cave Bat}}]]}}
+{{/row|[[{{tr|Jungle Bat}}]]}}
+{{/row|[[{{tr|Corrupt Goldfish}}]]}}
+{{/row|[[{{tr|Piranha}}]]}}
+{{/row|[[{{tr|Vulture}}]]}}
+{{/row|[[{{tr|Vulture}}]]}}
+{{/row|[[{{tr|Vulture}}]]}}
+{{/row|[[{{tr|Shark}}]]}}
+{{/row|[[{{tr|Shark}}]]}}
+{{/row|[[{{tr|Shark}}]]}}
+{{/row|[[{{tr|Shark}}]]}}
+{{/row|[[{{tr|Demon}}]]、[[{{tr|Voodoo Demon}}]]}}
+{{/row|[[{{tr|Demon}}]]、[[{{tr|Voodoo Demon}}]]}}
+{{/row|[[{{tr|Crab}}]]}}
+{{/row|[[{{tr|Crab}}]]}}
+{{/row|[[{{tr|Antlion}}]]}}
+{{/row|[[{{tr|Antlion}}]]}}
+{{/row|生成[[{{tr|Wraith}}]]、[[{{tr|Angry Nimbus}}]]、[[{{tr|Possessed Armor}}]]、[[{{tr|Reaper}}]]、[[{{tr|Vampire}}]]、[[{{tr|Headless Horseman}}]]、[[{{tr|Pigron}}]] {{note|paren=y|{{tr|Corrupt}}}}、[[{{tr|Pigron}}]] {{note|paren=y|{{tr|Crimson}}}}、[[{{tr|Biome Mimic}}]]时}}
+<!-- 100 -->
+{{/row|[[{{tr|Bird}}]]}}
+{{/row|[[{{tr|Unicorn}}]]}}
+{{/row|[[{{tr|Unicorn}}]]}}
+{{/row|[[{{tr|Unicorn}}]]}}
+{{/row|[[{{tr|Unicorn}}]]}}
+{{/row|[[{{tr|Unicorn}}]]}}
+{{/row|[[{{tr|Armored Skeleton}}]]}}
+{{/row|[[{{tr|Giant Bat}}]]}}
+{{/row|[[{{tr|Corruptor}}]]}}
+{{/row|[[{{tr|Corruptor}}]]}}
+{{/row|[[{{tr|Corruptor}}]]、[[{{tr|Clinger}}]]}}
+{{/row|[[{{tr|Digger}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Digger}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Digger}}]] {{note|paren=y|尾巴}}}}
+{{/row|[[{{tr|Clinger}}]]}}
+{{/row|[[{{tr|Clinger}}]]}}
+{{/row|[[{{tr|Angler Fish}}]]}}
+{{/row|[[{{tr|Werewolf}}]]}}
+{{/row|[[{{tr|Werewolf}}]]}}
+{{/row|[[{{tr|Werewolf}}]]}}
+{{/row|[[{{tr|Clown}}]]}}
+{{/row|[[{{tr|Clown}}]]}}
+{{/row|[[{{tr|Clown}}]]}}
+{{/row|[[{{tr|Clown}}]]}}
+{{/row|[[{{tr|Goblin Tinkerer}}]]}}
+{{/row|[[{{tr|Goblin Tinkerer}}]]}}
+{{/row|[[{{tr|Goblin Tinkerer}}]]}}
+{{/row|[[{{tr|Wizard}}]]}}
+{{/row|[[{{tr|Wizard}}]]}}
+{{/row|[[{{tr|Wizard}}]]}}
+{{/row|[[{{tr|Skeleton Archer}}]]}}
+{{/row|[[{{tr|Skeleton Archer}}]]}}
+{{/row|[[{{tr|The Hungry}}]]}}
+{{/row|[[{{tr|The Hungry}}]]}}
+{{/row|[[{{tr|Leech}}]]}}
+{{/row|[[{{tr|Leech}}]]}}
+{{/row|[[{{tr|Leech}}]]}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|嘴巴}}、[[{{tr|Wall of Flesh}}]] {{note|paren=y|眼睛}}}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|嘴巴}}}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|眼睛}}}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|嘴巴}}}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|嘴巴}}}}
+{{/row|[[{{tr|Wall of Flesh}}]] {{note|paren=y|嘴巴}}}}
+{{/row|[[{{tr|Retinazer}}]]}}
+{{/row|[[{{tr|Spazmatism}}]]}}
+{{/row|[[{{tr|Spazmatism}}]]}}
+{{/row|[[{{tr|Retinazer}}]]}}
+{{/row|[[{{tr|Skeletron Prime}}]]}}
+{{/row|[[{{tr|Skeletron Prime}}]]}}
+{{/row|[[{{tr|Skeletron Prime}}]]}}
+<!-- 150 -->
+{{/row|[[{{tr|Skeletron Prime}}]]}}
+{{/row|[[{{tr|Mechanic}}]]}}
+{{/row|[[{{tr|Mechanic}}]]}}
+{{/row|[[{{tr|Mechanic}}]]}}
+{{/row|[[{{tr|Bald Zombie}}]]}}
+{{/row|[[{{tr|Wandering Eye}}]]}}
+{{/row|[[{{tr|The Destroyer}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Santa}}]]}}
+{{/row|[[{{tr|Santa}}]]}}
+{{/row|[[{{tr|Santa}}]]}}
+{{/row|[[{{tr|Penguin}}]]}}
+{{/row|[[{{tr|Penguin}}]]}}
+{{/row|[[{{tr|Penguin}}]] {{note|paren=y|黑}}}}
+{{/row|[[{{tr|Penguin}}]] {{note|paren=y|黑}}}}
+{{/row|[[{{tr|Ice Bat}}]]}}
+{{/row|[[{{tr|Ice Bat}}]]}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 2}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 2}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 2}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 3}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 3}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 3}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 4}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 4}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Forest 4}}}}}}
+{{/row|[[{{tr|Giant Flying Fox}}]]}}
+{{/row|[[{{tr|Giant Flying Fox}}]]}}
+{{/row|[[{{tr|Giant Tortoise}}]]}}
+{{/row|[[{{tr|Giant Tortoise}}]]}}
+{{/row|[[{{tr|Giant Tortoise}}]]}}
+{{/row|[[{{tr|Ice Tortoise}}]]}}
+{{/row|[[{{tr|Wolf}}]]}}
+{{/row|[[{{tr|Wolf}}]]}}
+{{/row|[[{{tr|Wolf}}]]}}
+{{/row|[[{{tr|Red Devil}}]]}}
+{{/row|[[{{tr|Red Devil}}]]}}
+{{/row|[[{{tr|Arapaima}}]]}}
+{{/row|[[{{tr|Arapaima}}]]}}
+{{/row|[[{{tr|Truffle}}]]}}
+{{/row|[[{{tr|Truffle}}]]}}
+{{/row|[[{{tr|Truffle}}]]}}
+{{/row|[[{{tr|Frozen Zombie}}]]}}
+{{/row|[[{{tr|Frozen Zombie}}]]}}
+{{/row|[[{{tr|Frozen Zombie}}]]}}
+{{/row|[[{{tr|Frankenstein}}]]}}
+{{/row|[[{{tr|Frankenstein}}]]}}
+{{/row|[[{{tr|Frankenstein}}]]}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Ice}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Ice}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Jungle}}}}}}
+<!-- 200 -->
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Jungle}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Dungeon}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Dungeon}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Underworld}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Underworld}}}}}}
+{{/row|[[{{tr|Black Recluse}}]]}}
+{{/row|[[{{tr|Black Recluse}}]]}}
+{{/row|[[{{tr|Wall Creeper}}]]}}
+{{/row|[[{{tr|Wall Creeper}}]]}}
+{{/row|[[{{tr|Swamp Thing}}]]}}
+{{/row|[[{{tr|Swamp Thing}}]]}}
+{{/row|[[{{tr|Swamp Thing}}]]}}
+{{/row|[[{{tr|Undead Viking}}]]、[[{{tr|Armored Viking}}]]}}
+{{/row|[[{{tr|Undead Viking}}]]}}
+{{/row|[[{{tr|Undead Viking}}]]}}
+{{/row|[[{{tr|Corrupt Penguin}}]]}}
+{{/row|[[{{tr|Corrupt Penguin}}]]}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Pyramid}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Pyramid}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Pyramid}}}}}}
+{{/row|[[{{tr|UFO}}]]、[[{{tr|Projectile IDs}}|{{tr|Luminite Arrow}}]]、[[{{tr|Projectile IDs}}|{{tr|Luminite Arrow Trail}}]]}}
+{{/row|[[{{tr|UFO}}]]}}
+{{/row|[[{{tr|UFO}}]]}}
+{{/row|[[{{tr|Crimera}}]]}}
+{{/row|[[{{tr|Crimera}}]]}}
+{{/row|[[{{tr|Herpling}}]]}}
+{{/row|[[{{tr|Herpling}}]]}}
+{{/row|[[{{tr|Angry Trapper}}]]}}
+{{/row|[[{{tr|Angry Trapper}}]]}}
+{{/row|[[{{tr|Moss Hornet}}]]}}
+{{/row|[[{{tr|Moss Hornet}}]]}}
+{{/row|[[{{tr|Steampunker}}]]}}
+{{/row|[[{{tr|Steampunker}}]]}}
+{{/row|[[{{tr|Steampunker}}]]}}
+{{/row|[[{{tr|Derpling}}]]}}
+{{/row|[[{{tr|Derpling}}]]}}
+{{/row|[[{{tr|Derpling}}]]}}
+{{/row|[[{{tr|Face Monster}}]]}}
+{{/row|[[{{tr|Floaty Gross}}]]}}
+{{/row|[[{{tr|Floaty Gross}}]]}}
+{{/row|[[{{tr|Snow Flinx}}]]}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Pincushion Zombie}}}}, [[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Pincushion Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Pincushion Zombie}}}}, [[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Pincushion Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Swamp Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Swamp Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Swamp Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Swamp Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Swamp Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Swamp Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Twiggy Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Twiggy Zombie}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Dilated Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Sleepy Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Cataract Eye}}}}}}
+<!-- 250 -->
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Purple Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Purple Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Green Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Green Eye}}}}}}
+{{/row|[[{{tr|Nymph}}]]}}
+{{/row|[[{{tr|Nymph}}]]}}
+{{/row|[[{{tr|Nymph}}]]}}
+{{/row|[[{{tr|Armored Viking}}]]}}
+{{/row|[[{{tr|Lihzahrd}}]]}}
+{{/row|[[{{tr|Lihzahrd}}]]}}
+{{/row|[[{{tr|Lihzahrd}}]]}}
+{{/row|[[{{tr|Lihzahrd}}]]}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Female Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Female Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Female Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Female Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Female Zombie}}}}、[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Armed Female Zombie}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Headache Skeleton}}}}、[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Bone Throwing Headache Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Pantless Skeleton}}}}、{{tr|Skeleton}}{{note|paren=y|{{tr|Bone Throwing Pantless Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Headache Skeleton}}}}、[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Bone Throwing Headache Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Misassembled Skeleton}}}}、[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Bone Throwing Misassembled Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Pantless Skeleton}}}}、[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Bone Throwing Pantless Skeleton}}}}}}
+{{/row|[[{{tr|Moth}}]]}}
+{{/row|[[{{tr|Moth}}]]}}
+{{/row|[[{{tr|Moth}}]]}}
+{{/row|[[{{tr|Icy Merman}}]]}}
+{{/row|[[{{tr|Icy Merman}}]]}}
+{{/row|[[{{tr|Icy Merman}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Confetti Gun}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Happy Grenade}}]] [[{{tr|Weapon Imbue: Confetti}}]]、[[{{tr|Party Hair Dye}}]]}}
+{{/row|[[{{tr|Dye Trader}}]]}}
+{{/row|[[{{tr|Dye Trader}}]]}}
+{{/row|[[{{tr|Dye Trader}}]]}}
+{{/row|[[{{tr|Party Girl}}]]}}
+{{/row|[[{{tr|Party Girl}}]]}}
+{{/row|[[{{tr|Party Girl}}]]}}
+{{/row|[[{{tr|Cyborg}}]]}}
+{{/row|[[{{tr|Cyborg}}]]}}
+{{/row|[[{{tr|Cyborg}}]]}}
+{{/row|[[{{tr|Cochineal Beetle}}]]}}
+{{/row|[[{{tr|Cochineal Beetle}}]]}}
+{{/row|[[{{tr|Lac Beetle}}]]}}
+{{/row|[[{{tr|Cyan Beetle}}]]}}
+{{/row|[[{{tr|Cyan Beetle}}]]}}
+{{/row|[[{{tr|Sea Snail}}]]}}
+{{/row|[[{{tr|Squid}}]]}}
+{{/row|[[{{tr|Squid}}]]}}
+<!-- 300 -->
+{{/row|[[{{tr|Larva}}]]}}
+{{/row|[[{{tr|Larva}}]]}}
+{{/row|[[{{tr|Larva}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Queen Bee}}]]}}
+{{/row|[[{{tr|Raincoat Zombie}}]]}}
+{{/row|[[{{tr|Raincoat Zombie}}]]}}
+{{/row|[[{{tr|Raincoat Zombie}}]]}}
+{{/row|[[{{tr|Flying Fish}}]]}}
+{{/row|[[{{tr|Flying Fish}}]]}}
+{{/row|[[{{tr|Umbrella Slime}}]]}}
+{{/row}}
+{{/row}}
+{{/row|[[{{tr|Flying Snake}}]]}}
+{{/row|[[{{tr|Flying Snake}}]]}}
+{{/row|[[{{tr|Flying Snake}}]]}}
+{{/row|[[{{tr|Painter}}]]}}
+{{/row|[[{{tr|Painter}}]]}}
+{{/row|[[{{tr|Painter}}]]}}
+{{/row|[[{{tr|Painter}}]]}}
+{{/row|[[{{tr|Witch Doctor}}]]}}
+{{/row|[[{{tr|Witch Doctor}}]]}}
+{{/row|[[{{tr|Witch Doctor}}]]}}
+{{/row|[[{{tr|Witch Doctor}}]]}}
+{{/row|[[{{tr|Pirate}}]]}}
+{{/row|[[{{tr|Pirate}}]]}}
+{{/row|[[{{tr|Pirate}}]]}}
+{{/row|[[{{tr|Rapid Healing}}]]、[[{{tr|Love Potion}}]] {{note|paren=y|projectile}}、[[{{tr|Lovestruck}}]]}}
+{{/row|[[{{tr|Jungle Creeper}}]]}}
+{{/row|[[{{tr|Jungle Creeper}}]]}}
+{{/row|[[{{tr|Jungle Creeper}}]]}}
+{{/row|[[{{tr|Jungle Creeper}}]]}}
+{{/row|[[{{tr|Pirate Deckhand}}]]}}
+{{/row|[[{{tr|Pirate Deckhand}}]]}}
+{{/row|[[{{tr|Pirate Deckhand}}]]}}
+{{/row|[[{{tr|Pirate Corsair}}]]}}
+{{/row|[[{{tr|Pirate Corsair}}]]}}
+{{/row|[[{{tr|Pirate Corsair}}]]}}
+{{/row|[[{{tr|Pirate Deadeye}}]]}}
+{{/row|[[{{tr|Pirate Deadeye}}]]}}
+{{/row|[[{{tr|Pirate Deadeye}}]]}}
+{{/row|[[{{tr|Pirate Crossbower}}]]}}
+{{/row|[[{{tr|Pirate Crossbower}}]]}}
+{{/row|[[{{tr|Pirate Crossbower}}]]}}
+{{/row|[[{{tr|Pirate Captain}}]]}}
+{{/row|[[{{tr|Pirate Captain}}]]}}
+<!-- 350 -->
+{{/row|[[{{tr|Pirate Captain}}]]}}
+{{/row|[[{{tr|Blood Crawler}}]]}}
+{{/row|[[{{tr|Blood Crawler}}]]}}
+{{/row|[[{{tr|Blood Crawler}}]]}}
+{{/row|[[{{tr|Blood Feeder}}]]}}
+{{/row|[[{{tr|Blood Feeder}}]]}}
+{{/row|[[{{tr|Blood Jelly}}]]}}
+{{/row|[[{{tr|Blood Jelly}}]]}}
+{{/row|[[{{tr|Blood Jelly}}]]}}
+{{/row|[[{{tr|Ice Golem}}]]}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}、[[{{tr|Golem}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}、[[{{tr|Golem}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|左权}}、[[{{tr|Golem}}]] {{note|paren=y|右拳}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|头部}}、[[{{tr|Golem}}]] {{note|paren=y|左拳}}、[[{{tr|Golem}}]] {{note|paren=y|右拳}}}}
+{{/row|[[{{tr|Golem}}]] {{note|paren=y|左权}}、[[{{tr|Golem}}]] {{note|paren=y|右拳}}}}
+{{/row|[[{{tr|Eyezor}}]]}}
+{{/row|[[{{tr|Parrot}}]]}}
+{{/row|[[{{tr|Parrot}}]]}}
+{{/row|[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Mushroom Zombie}}}}、[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Hat Mushroom Zombie}}}}、[[{{tr|Fungo Fish}}]]、[[{{tr|Anomura Fungus}}]]、[[{{tr|Mushi Ladybug}}]]、[[{{tr|Fungi Bulb}}]]、[[{{tr|Giant Fungi Bulb}}]]、[[{{tr|Spore Bat}}]]、[[{{tr|Spore Skeleton}}]]}}
+{{/row|[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Mushroom Zombie}}}}、[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Hat Mushroom Zombie}}}}、[[{{tr|Fungo Fish}}]]、[[{{tr|Anomura Fungus}}]]、[[{{tr|Mushi Ladybug}}]]、[[{{tr|Fungi Bulb}}]]、[[{{tr|Giant Fungi Bulb}}]]、[[{{tr|Spore Bat}}]]、[[{{tr|Spore Skeleton}}]]}}
+{{/row|[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Mushroom Zombie}}}}、[[{{tr|Spore Zombie}}]] {{note|paren=y|{{tr|Hat Mushroom Zombie}}}}、[[{{tr|Fungo Fish}}]]、[[{{tr|Anomura Fungus}}]]、[[{{tr|Mushi Ladybug}}]]、[[{{tr|Fungi Bulb}}]]、[[{{tr|Giant Fungi Bulb}}]]、[[{{tr|Spore Bat}}]]、[[{{tr|Spore Skeleton}}]]}}
+{{/row|[[{{tr|Plantera}}]]进入第二形态}}
+{{/row|[[{{tr|Plantera}}]]进入第二形态}}
+{{/row|[[{{tr|Plantera}}]]进入第二形态}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera}}]]}}
+{{/row|[[{{tr|Plantera's Tentacle}}]]}}
+{{/row|[[{{tr|Plantera's Tentacle}}]]}}
+{{/row|[[{{tr|Plantera's Hook}}]]}}
+{{/row|[[{{tr|Plantera's Hook}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+<!-- 400 -->
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Brain of Cthulhu}}]]}}
+{{/row|[[{{tr|Creeper}}]]}}
+{{/row|[[{{tr|Ichor Sticker}}]]}}
+{{/row|[[{{tr|Ichor Sticker}}]]}}
+{{/row|[[{{tr|Ichor Sticker}}]]}}
+{{/row|[[{{tr|Rusty Armored Bones}}]] {{note|paren=y|{{tr|Axe Rusty Armored Bones}}}}}}
+{{/row|[[{{tr|Rusty Armored Bones}}]] {{note|paren=y|{{tr|Flail Rusty Armored Bones}}}}}}
+{{/row|[[{{tr|Rusty Armored Bones}}]] {{note|paren=y|{{tr|Sword Rusty Armored Bones}}}}、[[{{tr|Rusty Armored Bones}}]] {{note|paren=y|{{tr|Sword No Armor Rusty Armored Bones}}}}}}
+{{/row|[[{{tr|Blue Armored Bones}}]] {{note|paren=y|{{tr|Mace Rusty Armored Bones}}}}}}
+{{/row|[[{{tr|Blue Armored Bones}}]] {{note|paren=y|{{tr|Sword Rusty Armored Bones}}}}}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Bubble Machine}}]]}}
+{{/row|[[{{tr|Blue Jay}}]]}}
+{{/row|[[{{tr|Cardinal}}]]}}
+{{/row|[[{{tr|Squirrel}}]]}}
+{{/row|[[{{tr|Mouse}}]]}}
+{{/row|[[{{tr|Stink Potion}}]] {{note|paren=y|{{tr|projectile}}}}、[[{{tr|Stinky}}]]}}
+{{/row|[[{{tr|Stink Potion}}]] {{note|paren=y|{{tr|projectile}}}}、[[{{tr|Stinky}}]]}}
+{{/row|[[{{tr|Stink Potion}}]] {{note|paren=y|{{tr|projectile}}}}、[[{{tr|Stinky}}]]}}
+{{/row|[[{{tr|Raven}}]]}}
+{{/row|[[{{tr|Raven}}]]}}
+{{/row|[[{{tr|Bunny Slime}}]]}}
+{{/row|[[{{tr|Scarecrow}}]]}}
+{{/row|[[{{tr|Scarecrow}}]]}}
+{{/row|[[{{tr|Scarecrow}}]]}}
+{{/row|[[{{tr|Scarecrow}}]]}}
+{{/row|[[{{tr|Scarecrow}}]]}}
+{{/row|[[{{tr|Headless Horseman}}]]}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Owl Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Owl Eye}}}}}}
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Spaceship Demon Eye}}}}}}
+<!-- 450 -->
+{{/row|[[{{tr|Demon Eye}}]] {{note|paren=y|{{tr|Spaceship Demon Eye}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Doctor Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Doctor Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Doctor Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Superman Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Superman Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Superman Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Pixie Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Pixie Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Pixie Zombie}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Top Hat Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Top Hat Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Top Hat Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Astronaut Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Astronaut Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Astronaut Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Alien Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Alien Skeleton}}}}}}
+{{/row|[[{{tr|Skeleton}}]] {{note|paren=y|{{tr|Alien Skeleton}}}}}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Mourning Wood}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Pumpking}}]]}}
+{{/row|[[{{tr|Hellhound}}]]}}
+{{/row|[[{{tr|Hellhound}}]]}}
+{{/row|[[{{tr|Hellhound}}]]}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Xmas Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Xmas Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Xmas Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Sweater Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Sweater Zombie}}}}}}
+{{/row|[[{{tr|Zombie}}]] {{note|paren=y|{{tr|Sweater Zombie}}}}}}
+{{/row|[[{{tr|Zombie Elf}}]]}}
+{{/row|[[{{tr|Zombie Elf}}]] {{note|paren=y|{{tr|Beard Zombie Elf}}}}}}
+{{/row|[[{{tr|Zombie Elf}}]] {{note|paren=y|{{tr|Girl Zombie Elf}}}}}}
+{{/row|[[{{tr|Zombie Elf}}]]及变体种类}}
+{{/row|[[{{tr|Zombie Elf}}]]及变体种类}}
+{{/row|[[{{tr|Zombie Elf}}]]及变体种类}}
+<!-- 500 -->
+{{/row|[[{{tr|Gingerbread Man}}]]}}
+{{/row|[[{{tr|Gingerbread Man}}]]}}
+{{/row|[[{{tr|Gingerbread Man}}]]}}
+{{/row|[[{{tr|Yeti}}]]}}
+{{/row|[[{{tr|Yeti}}]]}}
+{{/row|[[{{tr|Yeti}}]]}}
+{{/row|[[{{tr|Yeti}}]]}}
+{{/row|id=508|[[{{tr|Everscream}}]]}}
+{{/row|[[{{tr|Everscream}}]]}}
+{{/row|[[{{tr|Everscream}}]]}}
+{{/row|[[{{tr|Everscream}}]]}}
+{{/row|[[{{tr|Everscream}}]]}}
+{{/row|[[{{tr|Ice Queen}}]]}}
+{{/row|[[{{tr|Ice Queen}}]]}}
+{{/row|[[{{tr|Ice Queen}}]]}}
+{{/row|[[{{tr|Ice Queen}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Santa-NK1}}]]}}
+{{/row|[[{{tr|Elf Copter}}]]}}
+{{/row|[[{{tr|Elf Copter}}]]}}
+{{/row|[[{{tr|Elf Copter}}]]}}
+{{/row|[[{{tr|Elf Copter}}]]}}
+{{/row|[[{{tr|Nutcracker}}]]}}
+{{/row|[[{{tr|Nutcracker}}]]}}
+{{/row|[[{{tr|Nutcracker}}]]}}
+{{/row|[[{{tr|Nutcracker}}]]}}
+{{/row|[[{{tr|Nutcracker}}]]}}
+{{/row|[[{{tr|Elf Archer}}]]}}
+{{/row|[[{{tr|Elf Archer}}]]}}
+{{/row|[[{{tr|Elf Archer}}]]}}
+{{/row|[[{{tr|Elf Archer}}]]}}
+{{/row|id=538|[[{{tr|Krampus}}]]}}
+{{/row|[[{{tr|Krampus}}]]}}
+{{/row|[[{{tr|Krampus}}]]}}
+{{/row|[[{{tr|Krampus}}]]}}
+{{/row|[[{{tr|Krampus}}]]}}
+{{/row|[[{{tr|Stylist}}]]}}
+{{/row|[[{{tr|Stylist}}]]}}
+{{/row|[[{{tr|Stylist}}]]}}
+{{/row|[[{{tr|Stylist}}]]}}
+{{/row|[[{{tr|Snail}}]]}}
+{{/row|[[{{tr|Snail}}]]}}
+{{/row|[[{{tr|Glowing Snail}}]]}}
+<!-- 550 -->
+{{/row|[[{{tr|Glowing Snail}}]]}}
+{{/row|[[{{tr|Frog}}]]}}
+{{/row|[[{{tr|Frog}}]]}}
+{{/row|[[{{tr|Goldfish}}]]}}
+{{/row|[[{{tr|Goldfish}}]]}}
+{{/row|[[{{tr|Mallard Duck}}]]}}
+{{/row|[[{{tr|Mallard Duck}}]]}}
+{{/row|[[{{tr|Mallard Duck}}]]}}
+{{/row|[[{{tr|Duck}}]]}}
+{{/row|[[{{tr|Duck}}]]}}
+{{/row|[[{{tr|Duck}}]]}}
+{{/row|[[{{tr|Black Scorpion}}]]}}
+{{/row|[[{{tr|Black Scorpion}}]]}}
+{{/row|[[{{tr|Black Scorpion}}]]}}
+{{/row|[[{{tr|Scorpion}}]]}}
+{{/row|[[{{tr|Scorpion}}]]}}
+{{/row|[[{{tr|Scorpion}}]]}}
+{{/row|[[{{tr|Traveling Merchant}}]]}}
+{{/row|[[{{tr|Traveling Merchant}}]]}}
+{{/row|[[{{tr|Traveling Merchant}}]]}}
+{{/row|[[{{tr|Music Box}}]] {{note|paren=y|放置的、激活}}}}
+{{/row|[[{{tr|Music Box}}]] {{note|paren=y|放置的、激活}}}}
+{{/row|[[{{tr|Music Box}}]] {{note|paren=y|放置的、激活}}}}
+{{/row|[[{{tr|Duke Fishron}}]]}}
+{{/row|[[{{tr|Duke Fishron}}]]}}
+{{/row|[[{{tr|Duke Fishron}}]]}}
+{{/row|[[{{tr|Duke Fishron}}]]}}
+{{/row|[[{{tr|Sharkron}}]]}}
+{{/row|[[{{tr|Sharkron}}]]}}
+{{/row|[[{{tr|Sharkron}}]]}}
+{{/row|[[{{tr|Pirate Staff}}|{{tr|One Eyed Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Soulscourge Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Pirate Captain}}]]、[[{{tr|Toilets}}|{{tr|Toilet}}]]激活}}
+{{/row|[[{{tr|Pirate Staff}}|{{tr|One Eyed Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Soulscourge Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Pirate Captain}}]]、[[{{tr|Toilets}}|{{tr|Toilet}}]]激活}}
+{{/row|[[{{tr|Pirate Staff}}|{{tr|One Eyed Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Soulscourge Pirate}}]]、[[{{tr|Pirate Staff}}|{{tr|Pirate Captain}}]]、[[{{tr|Toilets}}|{{tr|Toilet}}]]激活}}
+{{/row|[[{{tr|Sharkron}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Mini Sharkron}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Mini Sharkron}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Mini Sharkron}}]]}}
+{{/row|[[{{tr|Brain Scrambler}}]]}}
+{{/row|[[{{tr|Brain Scrambler}}]]}}
+{{/row|[[{{tr|Brain Scrambler}}]]}}
+{{/row|[[{{tr|Brain Scrambler}}]]}}
+{{/row|[[{{tr|Ray Gunner}}]]}}
+{{/row|[[{{tr|Ray Gunner}}]]}}
+{{/row|[[{{tr|Ray Gunner}}]]}}
+{{/row|[[{{tr|Martian Officer}}]]}}
+{{/row|[[{{tr|Martian Officer}}]]}}
+{{/row|[[{{tr|Martian Officer}}]]}}
+{{/row|[[{{tr|Gray Grunt}}]]}}
+{{/row|[[{{tr|Gray Grunt}}]]}}
+{{/row|[[{{tr|Gray Grunt}}]]}}
+<!-- 600 -->
+{{/row|[[{{tr|Martian Engineer}}]]}}
+{{/row|[[{{tr|Martian Engineer}}]]}}
+{{/row|[[{{tr|Martian Engineer}}]]}}
+{{/row|[[{{tr|Tesla Turret}}]]}}
+{{/row|[[{{tr|Tesla Turret}}]]}}
+{{/row|[[{{tr|Tesla Turret}}]]}}
+{{/row|[[{{tr|Martian Drone}}]]}}
+{{/row|[[{{tr|Scutlix}}]]}}
+{{/row|[[{{tr|Scutlix}}]]}}
+{{/row|[[{{tr|Scutlix}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Core}}]]}}
+{{/row|[[{{tr|Martian Saucer Turret}}]]}}
+{{/row|[[{{tr|Martian Saucer Cannon}}]]}}
+{{/row}}
+{{/row|[[{{tr|Moon Lord Core}}]]}}
+{{/row|[[{{tr|Moon Lord Core}}]]}}
+{{/row|[[{{tr|Moon Lord Core}}]]}}
+{{/row|[[{{tr|Moon Lord Core}}]]}}
+{{/row|[[{{tr|Goblin Archer}}]]}}
+{{/row|[[{{tr|Goblin Archer}}]]}}
+{{/row|[[{{tr|Goblin Archer}}]]}}
+{{/row|[[{{tr|Goblin Peon}}]]}}
+{{/row|[[{{tr|Goblin Peon}}]]}}
+{{/row|[[{{tr|Goblin Peon}}]]}}
+{{/row|[[{{tr|Goblin Scout}}]]}}
+{{/row|[[{{tr|Goblin Scout}}]]}}
+{{/row|[[{{tr|Goblin Scout}}]]}}
+{{/row|[[{{tr|Goblin Thief}}]]}}
+{{/row|[[{{tr|Goblin Thief}}]]}}
+{{/row|[[{{tr|Goblin Thief}}]]}}
+{{/row|[[{{tr|Goblin Warrior}}]]}}
+{{/row|[[{{tr|Goblin Warrior}}]]}}
+{{/row|[[{{tr|Goblin Warrior}}]]}}
+{{/row|[[{{tr|Skeleton Merchant}}]]}}
+{{/row|[[{{tr|Skeleton Merchant}}]]}}
+{{/row|[[{{tr|Skeleton Merchant}}]]}}
+{{/row|[[{{tr|Skeleton Merchant}}]]}}
+{{/row|[[{{tr|Skeleton Merchant}}]]}}
+{{/row|[[{{tr|Butcher}}]]}}
+{{/row|[[{{tr|Butcher}}]]}}
+{{/row|[[{{tr|Butcher}}]]}}
+{{/row|[[{{tr|Butcher}}]]}}
+{{/row|[[{{tr|Creature from the Deep}}]]}}
+{{/row|[[{{tr|Creature from the Deep}}]]}}
+{{/row|[[{{tr|Creature from the Deep}}]]}}
+<!-- 650 -->
+{{/row|[[{{tr|Fritz}}]]}}
+{{/row|[[{{tr|Fritz}}]]}}
+{{/row|[[{{tr|Fritz}}]]}}
+{{/row|[[{{tr|Nailhead}}]]}}
+{{/row|[[{{tr|Nailhead}}]]}}
+{{/row|[[{{tr|Nailhead}}]]}}
+{{/row|[[{{tr|Psycho}}]]}}
+{{/row|[[{{tr|Psycho}}]]}}
+{{/row|[[{{tr|Psycho}}]]}}
+{{/row|[[{{tr|Psycho}}]]}}
+{{/row|[[{{tr|Deadly Sphere}}]]}}
+{{/row|[[{{tr|Deadly Sphere}}]]}}
+{{/row|[[{{tr|Dr. Man Fly}}]]}}
+{{/row|[[{{tr|Dr. Man Fly}}]]}}
+{{/row|[[{{tr|Dr. Man Fly}}]]}}
+{{/row|[[{{tr|The Possessed}}]]}}
+{{/row|[[{{tr|The Possessed}}]]}}
+{{/row|[[{{tr|The Possessed}}]]}}
+{{/row|[[{{tr|Vicious Bunny}}]]}}
+{{/row|[[{{tr|Vicious Bunny}}]]}}
+{{/row|[[{{tr|Vicious Goldfish}}]]}}
+{{/row|[[{{tr|Vicious Goldfish}}]]}}
+{{/row|[[{{tr|Vicious Penguin}}]]}}
+{{/row|[[{{tr|Vicious Penguin}}]]}}
+{{/row|[[{{tr|Vicious Penguin}}]]}}
+{{/row|[[{{tr|Goblin Warlock}}]]}}
+{{/row|[[{{tr|Goblin Warlock}}]]}}
+{{/row|[[{{tr|Goblin Warlock}}]]}}
+{{/row|[[{{tr|Goblin Warlock}}]]}}
+{{/row|[[{{tr|Shadowflame Apparition}}]]}}
+{{/row|[[{{tr|Shadowflame Apparition}}]]}}
+{{/row|[[{{tr|Baby Mothron}}]]}}
+{{/row|[[{{tr|Baby Mothron}}]]}}
+{{/row|[[{{tr|Baby Mothron}}]]}}
+{{/row|[[{{tr|Mothron Egg}}]]}}
+{{/row|[[{{tr|Mothron Egg}}]]}}
+{{/row|[[{{tr|Mothron Egg}}]]}}
+{{/row|[[{{tr|Mothron}}]]}}
+{{/row|[[{{tr|Mothron}}]]}}
+{{/row|[[{{tr|Mothron}}]]}}
+{{/row|[[{{tr|Mothron}}]]}}
+{{/row|[[{{tr|Mothron}}]]}}
+{{/row|[[{{tr|Medusa}}]]}}
+{{/row|[[{{tr|Medusa}}]]}}
+{{/row|[[{{tr|Medusa}}]]}}
+{{/row|[[{{tr|Hoplite}}]]}}
+{{/row|[[{{tr|Hoplite}}]]}}
+{{/row|[[{{tr|Hoplite}}]]}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+<!-- 700 -->
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Marble Cave}}}}}}
+{{/row|[[{{tr|Toxic Flask}}]] {{note|paren=y|{{tr|projectile}}}}}}
+{{/row|[[{{tr|Toxic Flask}}]] {{note|paren=y|{{tr|projectile}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]]}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Corrupt}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Jungle}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Hallow}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Ice}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Desert}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Underground}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Cavern}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Blood Moon}}}}}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Crimson}}}}}}
+{{/row|[[{{tr|Magic Lava Dropper}}|{{tr|Dripping Lava}}]]}}
+{{/row|[[{{tr|Magic Honey Dropper}}|{{tr|Dripping Honey}}]]}}
+{{/row|[[{{tr|Granite Golem}}]]}}
+{{/row|[[{{tr|Granite Golem}}]]}}
+{{/row|[[{{tr|Granite Golem}}]]}}
+{{/row|[[{{tr|Granite Golem}}]]}}
+{{/row|[[{{tr|Blood Zombie}}]]}}
+{{/row|[[{{tr|Blood Zombie}}]]}}
+{{/row|[[{{tr|Blood Zombie}}]]}}
+{{/row|[[{{tr|Drippler}}]]}}
+{{/row|[[{{tr|Drippler}}]]}}
+{{/row|[[{{tr|Drippler}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|Mysterious Tablet}}]]}}
+{{/row|[[{{tr|King Slime}}]]}}
+{{/row|[[{{tr|Crawdad}}]] {{note|paren=y|{{tr|red}}}}}}
+{{/row|[[{{tr|Crawdad}}]] {{note|paren=y|{{tr|red}}}}}}
+{{/row|[[{{tr|Crawdad}}]] {{note|paren=y|{{tr|blue}}}}}}
+{{/row|[[{{tr|Crawdad}}]] {{note|paren=y|{{tr|blue}}}}}}
+{{/row|[[{{tr|Giant Shelly}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Giant Shelly}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|{{tr|blue}}}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|黑}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|粉}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|灰}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|金}}}}
+<!-- 750 -->
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|{{tr|blue}}}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|黑}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|粉}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|灰}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|金}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|{{tr|blue}}}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|黑}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|粉}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|灰}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Salamander}}]] {{note|paren=y|金}}}}
+{{/row|[[{{tr|Tax Collector}}]]}}
+{{/row|[[{{tr|Tax Collector}}]]}}
+{{/row|[[{{tr|Tax Collector}}]]}}
+{{/row|[[{{tr|Tax Collector}}]]}}
+{{/row|[[{{tr|Stargazer}}]]}}
+{{/row|[[{{tr|Stargazer}}]]}}
+{{/row|[[{{tr|Stargazer}}]]}}
+{{/row|[[{{tr|Twinkle Popper}}]]}}
+{{/row|[[{{tr|Twinkle Popper}}]]}}
+{{/row|[[{{tr|Twinkle Popper}}]]}}
+{{/row|[[{{tr|Flow Invader}}]]}}
+{{/row|[[{{tr|Flow Invader}}]]}}
+{{/row|[[{{tr|Flow Invader}}]]}}
+{{/row|[[{{tr|Flow Invader}}]]}}
+{{/row|[[{{tr|Nebula Floater}}]]}}
+{{/row|[[{{tr|Nebula Floater}}]]}}
+{{/row|[[{{tr|Nebula Floater}}]]}}
+{{/row|[[{{tr|Brain Suckler}}]]}}
+{{/row|[[{{tr|Brain Suckler}}]]}}
+{{/row|[[{{tr|Brain Suckler}}]]}}
+{{/row}}
+{{/row}}
+{{/row|[[{{tr|Evolution Beast}}]]}}
+{{/row|[[{{tr|Evolution Beast}}]]}}
+{{/row|[[{{tr|Evolution Beast}}]]}}
+{{/row|[[{{tr|Predictor}}]]}}
+{{/row|[[{{tr|Predictor}}]]}}
+{{/row|[[{{tr|Predictor}}]]}}
+{{/row|[[{{tr|Storm Diver}}]]}}
+{{/row|[[{{tr|Storm Diver}}]]}}
+{{/row|[[{{tr|Storm Diver}}]]}}
+{{/row|[[{{tr|Alien Queen}}]]}}
+<!-- 800 -->
+{{/row|[[{{tr|Alien Queen}}]]}}
+{{/row|[[{{tr|Alien Queen}}]]}}
+{{/row|[[{{tr|Alien Hornet}}]]}}
+{{/row|[[{{tr|Alien Hornet}}]]}}
+{{/row|[[{{tr|Alien Hornet}}]]}}
+{{/row|[[{{tr|Alien Hornet}}]]}}
+{{/row|[[{{tr|Alien Larva}}]]}}
+{{/row|[[{{tr|Alien Larva}}]]}}
+{{/row|[[{{tr|Vortexian}}]]}}
+{{/row|[[{{tr|Vortexian}}]]}}
+{{/row|[[{{tr|Vortexian}}]]}}
+{{/row|[[{{tr|Giant Antlion Charger}}]]}}
+{{/row|[[{{tr|Giant Antlion Charger}}]]}}
+{{/row|[[{{tr|Giant Antlion Charger}}]]}}
+{{/row|[[{{tr|Giant Antlion Charger}}]]}}
+{{/row|[[{{tr|Giant Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Giant Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Giant Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Giant Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Dune Splicer}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Dune Splicer}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Dune Splicer}}]] {{note|paren=y|尾部}}}}
+{{/row|[[{{tr|Tomb Crawler}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Tomb Crawler}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Tomb Crawler}}]] {{note|paren=y|尾部}}}}
+{{/row|[[{{tr|Chimney}}]]}}
+{{/row|[[{{tr|Chimney}}]]}}
+{{/row|[[{{tr|Chimney}}]]}}
+{{/row|[[{{tr|Crawltipede}}]] {{note|paren=y|头部}}}}
+{{/row|[[{{tr|Crawltipede}}]] {{note|paren=y|身体}}}}
+{{/row|[[{{tr|Crawltipede}}]] {{note|paren=y|尾部}}}}
+{{/row|[[{{tr|Drakomire}}]]}}
+{{/row|[[{{tr|Drakomire}}]]}}
+{{/row|[[{{tr|Drakomire}}]]}}
+{{/row|[[{{tr|Drakomire}}]]}}
+{{/row|[[{{tr|Drakanian}}]]}}
+{{/row|[[{{tr|Drakanian}}]]}}
+{{/row|[[{{tr|Sroller}}]]}}
+{{/row|[[{{tr|Sroller}}]]}}
+{{/row|[[{{tr|Sroller}}]]}}
+{{/row|[[{{tr|Sroller}}]]}}
+{{/row|[[{{tr|Corite}}]]}}
+{{/row|[[{{tr|Corite}}]]}}
+{{/row|[[{{tr|Corite}}]]}}
+{{/row|[[{{tr|Selenian}}]]}}
+{{/row|[[{{tr|Selenian}}]]}}
+{{/row|[[{{tr|Selenian}}]]}}
+{{/row|[[{{tr|Selenian}}]]}}
+{{/row|[[{{tr|Martian Walker}}]]}}
+{{/row|[[{{tr|Martian Walker}}]]}}
+<!-- 850 -->
+{{/row|[[{{tr|Martian Walker}}]]}}
+{{/row|[[{{tr|Martian Walker}}]]}}
+{{/row|[[{{tr|Martian Walker}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Ghoul}}]]}}
+{{/row|[[{{tr|Ghoul}}]]}}
+{{/row|[[{{tr|Ghoul}}]]}}
+{{/row|[[{{tr|Ghoul}}]]}}
+{{/row|[[{{tr|Vile Ghoul}}]]}}
+{{/row|[[{{tr|Vile Ghoul}}]]}}
+{{/row|[[{{tr|Vile Ghoul}}]]}}
+{{/row|[[{{tr|Vile Ghoul}}]]}}
+{{/row|[[{{tr|Tainted Ghoul}}]]}}
+{{/row|[[{{tr|Tainted Ghoul}}]]}}
+{{/row|[[{{tr|Tainted Ghoul}}]]}}
+{{/row|[[{{tr|Tainted Ghoul}}]]}}
+{{/row|[[{{tr|Lamia}}]] {{note|paren=y|光明}}}}
+{{/row|[[{{tr|Lamia}}]] {{note|paren=y|黑暗}}}}
+{{/row|[[{{tr|Lamia}}]]}}
+{{/row|[[{{tr|Lamia}}]]}}
+{{/row|[[{{tr|Dreamer Ghoul}}]]}}
+{{/row|[[{{tr|Dreamer Ghoul}}]]}}
+{{/row|[[{{tr|Dreamer Ghoul}}]]}}
+{{/row|[[{{tr|Dreamer Ghoul}}]]}}
+{{/row|[[{{tr|Sand Poacher}}]]}}
+{{/row|[[{{tr|Sand Poacher}}]]}}
+{{/row|[[{{tr|Sand Poacher}}]]}}
+{{/row|[[{{tr|Sand Poacher}}]]}}
+{{/row|[[{{tr|Sand Poacher}}]]}}
+{{/row|[[{{tr|Basilisk}}]]}}
+{{/row|[[{{tr|Basilisk}}]]}}
+{{/row|[[{{tr|Basilisk}}]]}}
+{{/row|[[{{tr|Basilisk}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Flying Dutchman}}]]}}
+{{/row|[[{{tr|Tortured Soul}}]]}}
+{{/row|[[{{tr|Tortured Soul}}]]}}
+{{/row|[[{{tr|Tortured Soul}}]]}}
+{{/row|[[{{tr|Red Squirrel}}]]}}
+{{/row|[[{{tr|Martian Probe}}]]}}
+{{/row|[[{{tr|Martian Probe}}]]}}
+<!-- 900 -->
+{{/row|[[{{tr|Cultist Archer}}]]、[[{{tr|Lunatic Devotee}}]]}}
+{{/row|[[{{tr|Cultist Archer}}]]、[[{{tr|Lunatic Devotee}}]]、[[{{tr|Lunatic Cultist}}]]}}
+{{/row|[[{{tr|Lunatic Cultist}}]]}}
+{{/row|[[{{tr|Lunatic Cultist}}]]}}
+{{/row|[[{{tr|Gigazapper}}]]}}
+{{/row|[[{{tr|Gigazapper}}]]}}
+{{/row|[[{{tr|Gigazapper}}]]}}
+{{/row|[[{{tr|Silly Balloon Machine}}]]}}
+{{/row|[[{{tr|Silly Balloon Machine}}]]}}
+{{/row|[[{{tr|Silly Balloon Machine}}]]}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Forest tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Palm tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Giant Glowing Mushroom}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Boreal tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Jungle tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Corrupt tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Crimson tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|任何戴着蓝[[{{tr|Party Hat}}]]的 [[{{tr|NPC}}]] }}
+{{/row|[[{{tr|Demolitionist}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Dye Trader}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Merchant}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Nurse}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Painter}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Pirate}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Santa}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Steampunker}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Stylist}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Traveling Merchant}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|[[{{tr|Wizard}}]] {{note|paren=y|{{tr|party}}}}}}
+{{/row|任何戴着粉[[{{tr|Party Hat}}]]的 [[{{tr|NPC}}]] }}
+{{/row|任何戴着青[[{{tr|Party Hat}}]]的 [[{{tr|NPC}}]] }}
+{{/row|任何戴着紫[[{{tr|Party Hat}}]]的 [[{{tr|NPC}}]] }}
+{{/row|任何戴着白[[{{tr|Party Hat}}]]的 [[{{tr|NPC}}]] }}
+{{/row|[[{{tr|Magic Sand Dropper}}|{{tr|Sand Flow}}]]}}
+{{/row|[[{{tr|Sand Shark}}]]}}
+{{/row|[[{{tr|Sand Shark}}]]}}
+{{/row|[[{{tr|Sand Shark}}]]}}
+{{/row|[[{{tr|Sand Shark}}]]}}
+{{/row|[[{{tr|Bone Biter}}]]}}
+{{/row|[[{{tr|Bone Biter}}]]}}
+<!-- 950 -->
+{{/row|[[{{tr|Bone Biter}}]]}}
+{{/row|[[{{tr|Bone Biter}}]]}}
+{{/row|[[{{tr|Flesh Reaver}}]]}}
+{{/row|[[{{tr|Flesh Reaver}}]]}}
+{{/row|[[{{tr|Flesh Reaver}}]]}}
+{{/row|[[{{tr|Flesh Reaver}}]]}}
+{{/row|[[{{tr|Crystal Thresher}}]]}}
+{{/row|[[{{tr|Crystal Thresher}}]]}}
+{{/row|[[{{tr|Crystal Thresher}}]]}}
+{{/row|[[{{tr|Crystal Thresher}}]]}}
+{{/row|[[{{tr|Sand Elemental}}]]}}
+{{/row|[[{{tr|Sand Elemental}}]]}}
+{{/row|[[{{tr|Sand Elemental}}]]}}
+{{/row|[[{{tr|Sand Elemental}}]]}}
+{{/row|[[{{tr|Angry Tumbler}}]]}}
+{{/row|[[{{tr|Angry Tumbler}}]]}}
+{{/row|[[{{tr|Angry Tumbler}}]]}}
+{{/row|[[{{tr|Tavernkeep}}]]}}
+{{/row|[[{{tr|Tavernkeep}}]]}}
+{{/row|[[{{tr|Tavernkeep}}]]}}
+{{/row|[[{{tr|Old One's Skeleton}}]]}}
+{{/row|[[{{tr|Old One's Skeleton}}]]}}
+{{/row|[[{{tr|Old One's Skeleton}}]]}}
+{{/row|[[{{tr|Old One's Skeleton}}]]}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Kobold}}]]}}
+{{/row|[[{{tr|Kobold}}]]}}
+{{/row|[[{{tr|Kobold}}]]}}
+{{/row|[[{{tr|Kobold}}]]}}
+{{/row|[[{{tr|Etherian Lightning Bug}}]]}}
+{{/row|[[{{tr|Etherian Lightning Bug}}]]}}
+{{/row|[[{{tr|Etherian Lightning Bug}}]]}}
+<!-- 1000 -->
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Ogre}}]]}}
+{{/row|[[{{tr|Tome of Infinite Wisdom}}]] {{note|paren=y|{{tr|projectile}}}}}}
+{{/row|[[{{tr|Tome of Infinite Wisdom}}]] {{note|paren=y|{{tr|projectile}}}}}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Dark Mage}}]]}}
+{{/row|[[{{tr|Wither Beast}}]]}}
+{{/row|[[{{tr|Wither Beast}}]]}}
+{{/row|[[{{tr|Wither Beast}}]]}}
+{{/row|[[{{tr|Wither Beast}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Ogre Spit}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Ogre Spit}}]]}}
+{{/row|[[{{tr|Projectile IDs}}|{{tr|Ogre Spit}}]]}}
+{{/row|[[{{tr|Eternia Crystal}}]]}}
+{{/row|[[{{tr|Eternia Crystal}}]]}}
+{{/row|[[{{tr|Eternia Crystal}}]]}}
+{{/row|[[{{tr|Eternia Crystal}}]]}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 1}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin Bomber}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Wyvern}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+<!-- 1050 -->
+{{/row|[[{{tr|Kobold Glider}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Kobold Glider}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Kobold Glider}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Kobold Glider}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Kobold Glider}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Javelin Thrower}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Etherian Goblin}}]] {{note|paren=y|{{tr|tier 3}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Drakin}}]] {{note|paren=y|{{tr|tier 2}}}}}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Betsy}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Graveyard}}]]}}
+{{/row|[[{{tr|Antlion Charger}}]]}}
+{{/row|[[{{tr|Antlion Charger}}]]}}
+{{/row|[[{{tr|Antlion Charger}}]]}}
+{{/row|[[{{tr|Antlion Charger}}]]}}
+{{/row|[[{{tr|Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Antlion Swarmer}}]]}}
+<!-- 1100 -->
+{{/row|[[{{tr|Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Antlion Swarmer}}]]}}
+{{/row|[[{{tr|Antlion Larva}}]]}}
+{{/row|[[{{tr|Antlion Larva}}]]}}
+{{/row|[[{{tr|Wandering Eye Fish}}]]}}
+{{/row|[[{{tr|Wandering Eye Fish}}]]}}
+{{/row|[[{{tr|Zombie Merman}}]]}}
+{{/row|[[{{tr|Zombie Merman}}]]}}
+{{/row|[[{{tr|Zombie Merman}}]]}}
+{{/row|[[{{tr|Golfer}}]]}}
+{{/row|[[{{tr|Golfer}}]]}}
+{{/row|[[{{tr|Golfer}}]]}}
+{{/row|[[{{tr|Golfer}}]]}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Hallowed tree}}}}|imagesize=150px}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Underground Desert}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Underground Desert}}}}}}
+{{/row|[[{{tr|Pot}}]] {{note|paren=y|{{tr|Underground Desert}}}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|白}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|红}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|红}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|红}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|橙}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|黄}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|黄}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|黄}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|绿}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|蓝}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|蓝}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|蓝}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Windy Balloon}}]] {{note|paren=y|紫}}}}
+{{/row|[[{{tr|Windy Balloon}}]]}}
+{{/row|[[{{tr|Magic Water Dropper}}|{{tr|Dripping Water}}]] {{note|paren=y|{{tr|Underground Desert}}}}}}
+{{/row|[[{{tr|Ladybug}}]]}}
+{{/row|[[{{tr|Ladybug}}]]}}
+<!-- 1150 -->
+{{/row|[[{{tr|Seagull}}]]}}
+{{/row|[[{{tr|Seagull}}]]}}
+{{/row|[[{{tr|Pupfish}}]]}}
+{{/row|[[{{tr|Pupfish}}]]}}
+{{/row|[[{{tr|Grebe}}]]}}
+{{/row|[[{{tr|Grebe}}]]}}
+{{/row|[[{{tr|Grebe}}]]}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|[[{{tr|Magic Sand Dropper}}|{{tr|Sand Flow}}]] {{note|paren=y|{{tr|Ebonsand}}}}}}
+{{/row|[[{{tr|Magic Sand Dropper}}|{{tr|Sand Flow}}]] {{note|paren=y|{{tr|Crimsand}}}}}}
+{{/row|[[{{tr|Magic Sand Dropper}}|{{tr|Sand Flow}}]] {{note|paren=y|{{tr|Pearlsand}}}}}}
+{{/row|[[{{tr|Rat}}]]}}
+{{/row|[[{{tr|Owl}}]]}}
+{{/row|[[{{tr|Owl}}]]}}
+{{/row|[[{{tr|Turtle}}]]}}
+{{/row|[[{{tr|Turtle}}]]}}
+{{/row|[[{{tr|Turtle}}]]}}
+{{/row|[[{{tr|Jungle Turtle}}]]}}
+{{/row|[[{{tr|Jungle Turtle}}]]}}
+{{/row|[[{{tr|Jungle Turtle}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Dreadnautilus}}]]}}
+{{/row|[[{{tr|Blood Squid}}]]}}
+{{/row|[[{{tr|Blood Squid}}]]}}
+{{/row|[[{{tr|Blood Squid}}]]}}
+{{/row|[[{{tr|Blood Squid}}]]}}
+{{/row|[[{{tr|Hemogoblin Shark}}]]}}
+{{/row|[[{{tr|Hemogoblin Shark}}]]}}
+{{/row|[[{{tr|Hemogoblin Shark}}]]}}
+{{/row|[[{{tr|Hemogoblin Shark}}]]}}
+{{/row|[[{{tr|Blood Eel}}]]}}
+{{/row|[[{{tr|Blood Eel}}]]}}
+{{/row|[[{{tr|Blood Eel}}]]}}
+{{/row|[[{{tr|Gnome}}]]}}
+{{/row|[[{{tr|Gnome}}]]}}
+{{/row|[[{{tr|Gnome}}]]}}
+{{/row|[[{{tr|Gnome}}]]}}
+{{/row|[[{{tr|Sea Turtle}}]]}}
+{{/row|[[{{tr|Sea Turtle}}]]}}
+{{/row|[[{{tr|Sea Turtle}}]]}}
+{{/row|[[{{tr|Seahorse}}]]}}
+{{/row|[[{{tr|Dolphin}}]]}}
+{{/row|[[{{tr|Dolphin}}]]}}
+<!-- 1200 -->
+{{/row|[[{{tr|Dolphin}}]]}}
+{{/row|[[{{tr|Chum Bucket}}|{{tr|Chum}}]]}}
+{{/row|[[{{tr|Fog Machine}}]]}}
+{{/row|[[{{tr|Fog Machine}}]]}}
+{{/row|[[{{tr|Fog Machine}}]]}}
+{{/row|[[{{tr|Angry Dandelion}}]]}}
+{{/row|[[{{tr|Angry Dandelion}}]]}}
+{{/row|[[{{tr|Angry Dandelion}}]]}}
+{{/row|[[{{tr|Chum Bucket}}|{{tr|Chum}}]]}}
+{{/row}}
+{{/row|[[{{tr|Rock Golem}}]]}}
+{{/row|[[{{tr|Rock Golem}}]]}}
+{{/row|[[{{tr|Rock Golem}}]]}}
+{{/row|[[{{tr|Rock Golem}}]]}}
+{{/row|[[{{tr|Maggot Zombie}}]]}}
+{{/row|[[{{tr|Maggot Zombie}}]]}}
+{{/row|[[{{tr|Maggot Zombie}}]]}}
+{{/row|[[{{tr|Maggot Zombie}}]]}}
+{{/row|[[{{tr|Ornate Shadow Key}}|{{tr|Shadow Mimic}}]]、[[{{tr|Golden Slime}}]]}}
+{{/row|[[{{tr|Zoologist}}]]}}
+{{/row|[[{{tr|Zoologist}}]]}}
+{{/row|[[{{tr|Zoologist}}]]}}
+{{/row|[[{{tr|Zoologist}}]]}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|werefox}}}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|werefox}}}}}}
+{{/row|[[{{tr|Volt Bunny}}]]}}
+{{/row|[[{{tr|Slime Prince}}]]}}
+{{/row|[[{{tr|Amethyst Squirrel}}]]}}
+{{/row|[[{{tr|Topaz Squirrel}}]]}}
+{{/row|[[{{tr|Sapphire Squirrel}}]]}}
+{{/row|[[{{tr|Emerald Squirrel}}]]}}
+{{/row|[[{{tr|Ruby Squirrel}}]]}}
+{{/row|[[{{tr|Diamond Squirrel}}]]}}
+{{/row|[[{{tr|Amber Squirrel}}]]}}
+{{/row|[[{{tr|Amethyst Bunny}}]]}}
+{{/row|[[{{tr|Amethyst Bunny}}]]}}
+{{/row|[[{{tr|Topaz Bunny}}]]}}
+{{/row|[[{{tr|Topaz Bunny}}]]}}
+{{/row|[[{{tr|Sapphire Bunny}}]]}}
+{{/row|[[{{tr|Sapphire Bunny}}]]}}
+{{/row|[[{{tr|Emerald Bunny}}]]}}
+{{/row|[[{{tr|Emerald Bunny}}]]}}
+{{/row|[[{{tr|Ruby Bunny}}]]}}
+{{/row|[[{{tr|Ruby Bunny}}]]}}
+{{/row|[[{{tr|Diamond Bunny}}]]}}
+{{/row|[[{{tr|Diamond Bunny}}]]}}
+{{/row|[[{{tr|Amber Bunny}}]]}}
+{{/row|[[{{tr|Amber Bunny}}]]}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Sakura tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Topaz tree}}}}|imagesize=150px}}
+<!-- 1250 -->
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Amethyst tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Sapphire tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Emerald tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Ruby tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Diamond tree}}}}|imagesize=150px}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Amber tree}}}}|imagesize=150px}}
+{{/row|[[{{tr|Magma Snail}}]]}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Yellow Willow tree}}}}|imagesize=150px}}
+{{/row|[[{{tr|Queen Slime}}]]}}
+{{/row|[[{{tr|Queen Slime}}]]|imagesize=60px}}
+{{/row|[[{{tr|Heavenly Slime}}]]}}
+{{/row|[[{{tr|Slime Princess}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Empress of Light}}]]}}
+{{/row|[[{{tr|Plantero}}]]}}
+{{/row|[[{{tr|Deerclops}}]]}}
+{{/row|[[{{tr|Deerclops}}]]}}
+{{/row|[[{{tr|Deerclops}}]]}}
+{{/row|[[{{tr|Deerclops}}]]}}
+{{/row|[[{{tr|Deerclops}}]]}}
+{{/row|[[{{tr|Stinkbug}}]]}}
+{{/row|[[{{tr|Stinkbug}}]]}}
+{{/row|[[{{tr|Scarlet Macaw}}]]}}
+{{/row|{{tr|Falling leaves}} {{note|paren=y|{{tr|Ash tree}}}}|imagesize=150px}}
+{{/row|[[{{tr|Scarlet Macaw}}]]}}
+{{/row|[[{{tr|Blue Macaw}}]]}}
+{{/row|[[{{tr|Blue Macaw}}]]}}
+{{/row|[[{{tr|Toucan}}]]}}
+{{/row|[[{{tr|Toucan}}]]}}
+{{/row|[[{{tr|Yellow Cockatiel}}]]}}
+{{/row|[[{{tr|Yellow Cockatiel}}]]}}
+{{/row|[[{{tr|Gray Cockatiel}}]]}}
+{{/row|[[{{tr|Gray Cockatiel}}]]}}
+{{/row|[[{{tr|Arms Dealer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Arms Dealer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Arms Dealer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Clothier}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Clothier}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Clothier}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Cyborg}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Cyborg}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Cyborg}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Demolitionist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Demolitionist}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Demolitionist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+<!--1300-->
+{{/row|[[{{tr|Demolitionist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dryad}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dryad}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dryad}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dye Trader}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dye Trader}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Dye Trader}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Dye Trader}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Goblin Tinkerer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Goblin Tinkerer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Goblin Tinkerer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Golfer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Golfer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Golfer}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Guide}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Guide}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Guide}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Mechanic}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Mechanic}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Mechanic}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Merchant}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Nurse}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Nurse}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Nurse}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Nurse}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Old Man}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Old Man}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Old Man}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Painter}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Painter}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Painter}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Painter}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Party Girl}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Party Girl}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Party Girl}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Santa Claus}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Santa Claus}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Santa Claus}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Santa Claus}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Skeleton Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Steampunker}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Steampunker}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Steampunker}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+<!--1350-->
+{{/row|[[{{tr|Stylist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Stylist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Stylist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Stylist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tavernkeep}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tavernkeep}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tavernkeep}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tax Collector}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tax Collector}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tax Collector}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Tax Collector}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Traveling Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Traveling Merchant}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|party}}}}}}
+{{/row|[[{{tr|Traveling Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Traveling Merchant}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Truffle}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Truffle}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Truffle}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Witch Doctor}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Witch Doctor}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Witch Doctor}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Witch Doctor}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Wizard}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Wizard}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Wizard}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Wizard}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|werefox}}}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后、{{tr|werefox}}}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+{{/row|[[{{tr|Zoologist}}]] {{note|paren=y|{{tr|shimmer}}后}}}}
+<!-- 1382 total -->
+|}
+
+{{language info|en=Gore IDs}}

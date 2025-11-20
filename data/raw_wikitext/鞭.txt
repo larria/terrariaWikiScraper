@@ -1,0 +1,128 @@
+{{exclusive|1.4.0.1}}
+{{about|一系列{{tr|summon weapons}}|{{tr|hooks}}|[[{{tr|Ivy Whip}}]]}}
+
+'''{{tr|Whips}}'''是近距离的[[{{tr|summon weapons}}]]，会以弧状的路径挥舞且产生一种{{sound|[[Media:Item 153.wav|独特的音效]]|Item 153.wav}}。与所有{{tr|summon weapons}}一样，{{tr|Whips}}会受到[[{{tr|summon damage}}]]的加成，且通常情况下不造成[[{{tr|critical hit}}]]，也不受大小的加成。
+
+当有{{tr|enemy}}被{{tr|Whip}}击中时，任何玩家召唤的[[{{tr|minions}}]]和[[{{tr|sentries}}]]都会以此{{tr|enemy}}为目标，这类似于使用{{tr|minion}}/{{tr|sentry-summoning weapon}}对{{tr|enemy}}按下 {{key|open}} 时的效果。
+
+如果{{tr|whip}}单次攻击击中了多个目标，每次击中造成的伤害会以固定百分比下降一次。每个{{tr|whip}}的此属性在下方表格中列为“多目标惩罚”。
+
+大部分{{tr|whips}}会对击中的{{tr|enemy}}造成一种特殊的[[{{tr|debuff}}]]，持续 4 秒{{source code ref|v=1.4.3.6|method=Terraria.Projectile.StatusNPC}}，将其“标记”。
+
+{{tr|Whips}}可以获得与[[{{tr|swords}}]]相同的[[{{tr|modifiers}}]]，包括{{tr|Legendary}}。它们的最佳{{tr|modifier}}是'''{{tr|Legendary}}'''。
+<!-- Extra info for the below table
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Leather Whip}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|4 {{tr|summon tag damage}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|50%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Snapthorn}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|6 {{tr|summon tag damage}}，<br/>[[{{tr|attack speed}}]]{{tr|bonus}}，<br/>[[{{tr|Poisoned}}]]}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|40%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Spinal Tap}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|7 {{tr|summon tag damage}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|10%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Firecracker}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|烈焰能量，<br/>[[{{tr|Hellfire}}]]}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|33%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Cool Whip}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|6 {{tr|summon tag damage}}，<br/>{{tr|snowflake minion}}，[[{{tr|Frostbite}}]]}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|30%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Durendal}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|9 {{tr|summon tag damage}}，<br/>[[{{tr|attack speed}}]]{{tr|bonus}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|20%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Dark Harvest}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|{{tr|Dark energy}}，<br/>[[{{tr|attack speed}}]]{{tr|bonus}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|10%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Morning Star}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|8 {{tr|summon tag damage}}<br/>和 12% {{tr|critical chance}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|5%}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Kaleidoscope}}}}<!--
+-->{{#vardefine:_onhit_{{#var:_id}}|20 {{tr|summon tag damage}}<br/>和 10% {{tr|critical chance}}}}<!--
+-->{{#vardefine:_multihit_{{#var:_id}}|10%}}
+== 类型 ==
+{{weapon type count}}
+<!-- Range changes in 1.4.1 not documented yet-->
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! 击中效果
+! 多目标惩罚
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | {{tr|Sell value}}
+! class=unsortable | {{tr|Source}}
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=FLOOR(damage) ASC
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 备注 ==
+* 所有{{tr|whips}}都能受到[[{{tr|Attack speed}}|{{tr|melee attack speed}}]]{{tr|bonuses}}、来自[[{{tr|Feral Claws}}]]及其升级的[[{{tr|autoswing}}]]效果、和[[{{tr|flasks}}]]的加成的影响。除此之外的其他任何{{tr|melee bonus}}均不会影响{{tr|whip}}。
+* 所有鞭都能受到召唤击退的加成（比如[[{{tr|Hercules Beetle}}]]），但不能受到近战击退的加成（比如[[{{tr|Titan Glove}}]]及其上位合成）。
+* 每个{{tr|whip}}都会造成其独有的特殊“标记”{{tr|debuff}}，且可通过使用多个{{tr|whips}}来叠加{{tr|summon tag damage and critical strike chance}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* {{tr|Whips}}可以作为游戏早期的优秀武器，它们的伤害较高且获取较容易。
+* 由于其具有较大的攻击范围，{{tr|Whips}}很适合用来清理植被。结合其能够穿过实心墙清理{{tr|plant}}的能力，{{tr|Whip}}能在单次挥击里清除整个[[{{tr|thorny bush}}]]，快速清理[[{{tr|vines|link=y}}|{{tr|vines}}]]，以及安全地移除[[{{tr|Rolling Cactus}}]]。
+* 由于{{tr|Whip}}的主要攻击的运作方式与{{tr|piercing melee weapon}}类似，它们对于能穿过{{tr|blocks}}的{{tr|enemy}}（如[[{{tr|Worm AI}}|{{tr|worms}}]]、[[{{tr|Cursed Skull}}]]，和发射可摧毁的{{tr|projectile}}的[[{{tr|Caster AI}}|{{tr|casters}}]]）非常有效。
+** 然而，所有{{tr|Whips}}的单次挥击中每多击中一次{{tr|enemy}}，对其造成的伤害就会降低，直到降低至 1 伤害。这一伤害惩罚在早期的{{tr|Whips}}上较高，在后期的{{tr|Whips}}上较低。
+*** 这不会阻止能造成{{tr|debuff}}的{{tr|Whips}}（如[[{{tr|Snapthorn}}]]）施加其{{tr|debuff}}。然而，{{tr|Firecracker}}只会对首个被击中的{{tr|enemy}}施加爆炸效果，即使这次攻击最终标记了另一个{{tr|enemy}}。
+* 主要加成[[{{tr|melee}}]]的{{tr|armor sets}}与装备（如[[{{tr|Feral Claws}}]]）能够极大地提升{{tr|whips}}的效率，因为它们会受到{{tr|attack speed bonuses}}。
+** 这包括来自[[{{tr|Snapthorn}}]]、[[{{tr|Durendal}}]]和[[{{tr|Dark Harvest}}]]的{{tr|melee speed bonuses}}。如果玩家切换武器够快，可以用能提升攻速的{{tr|Whip}}先攻击一次，再切换到伤害更高的{{tr|Whip}}攻击以获取极大的伤害加成。[[{{tr|Feral Claws}}]]的[[{{tr|autoswing}}]]效果会让这一操作更加简单，玩家可以直接按住攻击按键，然后使用数字按键来切换处于[[{{tr|hotbar}}]]中的{{tr|Whips}}。
+* {{tr|summon tag damage}}会为{{tr|minions}}提供大幅的伤害加成。例如，{{tr|pre-Hardmode}}的{{tr|Whips}}能使[[{{tr|Slime Staff}}|{{tr|Baby Slime minion}}]]对[[{{tr|Eye of Cthulhu}}]]造成的{{DPS}}翻 3 倍以上，而[[{{tr|Kaleidoscope}}]]能使已经很强力的 [[{{tr|Xeno Staff}}|{{tr|UFO minion}}]]的{{DPS}}再提升 50%。
+** 相较于只使用一种{{tr|whip}}，使用多种不同的{{tr|whips}}对{{tr|minion}}{{DPS}}有更大的影响，因为{{tr|whip}}的{{tr|summon tag}}{{tr|bonuses}}可被叠加。
+* {{tr|Whips}}和[[{{tr|Valhalla Knight armor}}]]的相性极佳，它具有 +60% {{tr|summon damage}}的加成，较高的{{tr|defense}}和{{tr|health regeneration}}，以及数个{{tr|sentry slots}}，但对其它种类武器的加成较少。如果要用更高风险换取高回报，可以选择[[{{tr|Shinobi Infiltrator armor}}]]，它具有 +60% {{tr|damage}}和 +20% {{tr|speed}}加成（相比于大部分后期{{tr|melee weapons}}来说，这对{{tr|Whips}}影响更大），但{{tr|defense}}较低、没有{{tr|health regeneration}}。
+
+== 花絮 ==
+* {{tr|Whips}}的加入致敬了日本科幻系列{{维基百科|Final Fantasy|《最终幻想（Final Fantasy）》}}中携带鞭子的召唤师，尤其是来自游戏{{维基百科|Final Fantasy IV|《最终幻想 4（Final Fantasy IV）》}}的{{维基百科|Rydia|莉迪亚（Rydia）}}。它也参考了游戏{{维基百科|Final Fantasy V|《最终幻想 5（Final Fantasy V）》}}中能够捕捉并召唤魔兽的魔兽使。
+* 在现实生活中，{{维基百科|Whips|鞭子（Whips）}}通常用于动物，用作训练和表演用途。这可能是[[{{tr|Zoologist}}]]售卖[[{{tr|Leather Whip}}]]的原因。
+* 虽然{{tr|Whips}}和[[{{tr|Melee weapons}}]]有相似之处，它们仍然被分类为[[{{tr|summon weapons}}]]。
+* 虽然其名称如此，[[{{tr|Hooks}}#{{tr|Ivy Whip}}|{{tr|Ivy Whip}}]]''不是''一件武器。它是一种[[{{tr|Hooks}}]]，在{{tr|Whips}}加入游戏前就存在了。
+
+== 另见 ==
+* [[{{tr|Minion Summon Items}}]]
+* [[{{tr|Sentry Summon Items}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Whip}}的标记和效果现在同样适用于{{tr|Sentry}}（和它们应用于{{tr|minions}}的方式相同）。
+** {{tr|Firecracker}}和{{tr|Cool Whip}}现在各自会造成[[{{tr|Hellfire}}]]和[[{{tr|Frostbite}}]]，而非[[{{tr|On Fire!}}]]和[[{{tr|Frostburn}}]]。}}
+{{history|Desktop 1.4.1.2|
+** 增强了[[{{tr|Cool Whip}}]]，现在会造成{{tr|Frostburn}}，且{{tr|Snowflake minion}}的移动速度提升 50%。
+** 削弱了[[{{tr|Firecracker}}]]，爆炸伤害由 3 倍{{tr|minion damage}}降低至 2.75 倍{{tr|minion damage}}。}}
+{{history|Desktop 1.4.1|
+** 加入了[[{{tr|Spinal Tap}}]]。
+** {{tr|Whips}}现在受[[{{tr|flasks}}]]效果影响。
+** 所有{{tr|whip}}（[[{{tr|Leather Whip}}]]除外）的范围均有提升。
+*** 提升速度的[[{{tr|modifiers}}]]不再对攻击范围有反作用。
+** {{tr|Whip}}的伤害惩罚现在在早期的{{tr|Whips}}更高，在后期的{{tr|Whips}}上更低。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Whips}}

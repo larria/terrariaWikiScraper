@@ -1,0 +1,68 @@
+{{item infobox
+| imagebreak = yes
+| type = Furniture
+| width = 1 | height = 2
+| auto = 275
+| tags = plunder / Potion ingredients
+}}
+
+'''{{tr|Corals}}'''是一种[[{{tr|crafting materials}}]]，可在{{tr|world}}尽头处的[[{{tr|Ocean}}]]{{tr|biomes}}中发现。它们会在位于水下、{{tr|world}}左右边缘的 380 格内、且深度高于{{eicons|1.4.0.1}} −20 {{tr|feet}} / {{eicons|1.4.0.1|invert=y}} 0 {{tr|feet}}的[[{{tr|Sand Blocks}}]]上自然生长，但需要 7 {{tr|tiles}}范围内有不多于 5 个{{tr|Corals}}（{{eicons|1.4.0.1}}或[[{{tr|Seashells}}]]）。{{tr|Corals}}可通过[[{{tr|pickaxe}}]]/[[{{tr|drill}}]]挖掘、挖掘下方的{{tr|sand}}或在其上方放置{{tr|block}}的方式收获。
+
+{{tr|Corals}}放置后会有随机的外观。在收获{{tr|Corals}}后，它们可以被放置在任何{{tr|blocks}}上。
+
+{{eicons|1.4.0.1}} {{tr|Corals}}可在{{tr|water}}浅于 5 格的{{tr|Sand Block}}上生成，只是速度较慢。生成速率和[[{{tr|rain}}]]、[[{{tr|wind}}]]和{{tr|Sand Block}}上方最多 14 {{tr|tiles}}的空余空间有关。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_OvergroundTile}}
+
+{{eicons|1.4.0.1|invert=y}} {{tr|Corals}}仅生成于{{tr|water}}下至少 5 {{tr|tile}}处，{{tr|Rain and wind}}不影响其生成速率。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Coral|expectedrows=8}}
+
+== 备注 ==
+* {{tr|Corals}}并未被限制于只能生长在生成的{{tr|Ocean}}的{{tr|water}}中。只要其他条件均满足，甚至可以在[[{{tr|Space}}]]{{tr|layer}}中的水池内种植{{tr|Corals}}。
+* 在 {{eversions|1.4.0.1}} 中：
+** {{tr|Corals}}生成时，会发出可以听见的“砰”一声（{{sound||Dig 0.wav}}{{sound||Dig 1.wav}}{{sound||Dig 2.wav}}）。
+** 生成率会在[[{{tr|rain}}]]和[[{{tr|wind}}]]期间增加，二者兼备且最强时则得到最多{{tr|bonus}}。
+** 生成率会因每个{{tr|Sand Block}}上方的空{{tr|tiles}}而增加，最多 14 格。这些“空{{tr|tiles}}”可以包含[[{{tr|walls}}]]和[[{{tr|Actuator}}|非激活的{{tr|tiles}}]]。
+*** 这意味着相距 15 格的两层{{tr|Sand}}{{tr|platforms}}会具有相同的最高生成率（额外的一层是用于支撑{{tr|Sand Blocks}}的{{tr|solid blocks}}）。
+** 若 11 格内（以生成格为中心的 23×23 格正方形区域）有 1 个或更多[[{{tr|Seashell}}]]或{{tr|coral}}，则生成率会降低。若 7 {{tr|tiles}}内（以生成格为中心的 15×15 格正方形区域）有多于5 个{{tr|Seashells or Corals}}，则不会再生成。
+
+== 花絮 ==
+* {{维基百科|Coral}}是动物。{{note|small=y|paren=y|译注：珊瑚是珊瑚纲的所有种的总称，属于刺胞动物门（旧称腔肠动物门）。}}
+* 在早期版本中，虽然每个{{tr|Coral}}下方仅需要 1 个{{tr|block}}，但两边事实上多需要半个格子的空地，这阻止了{{tr|blocks}}或物体被直接放在两边。例如，要在平台上放置 5 个{{tr|Corals}}，若两侧都有{{tr|block}}，这一平台需要至少有 11 格宽；如果是开放的平台，则只需要有 9 格宽。<!-- Verified in 1.2.4 ([[Special:Diff/1137908]]) -->
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** 现在用于制作[[{{tr|Reef Block}}]]。}}
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Capricorn Helmet}}]]。}}
+{{history|Desktop 1.4.0.5|现在正确的符合其{{tr|tile}}放置预览。}}
+{{history|Desktop 1.4.0.1|
+** 现在用于制作[[{{tr|Coralstone Block}}]]、[[{{tr|Coral Torch}}]]、和[[{{tr|Shell Pile}}]]。
+** 现在可以在浅于 5 格的{{tr|water}}下的{{tr|sand}}上生成。
+** 现在可在{{tr|world}}边缘 380 格以内生成，而非 275 格。
+** 生成率提高。生成率现在还受[[{{tr|rain}}]]、[[{{tr|wind}}]]、和{{tr|sand}}上方的空间大小的影响。
+** {{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|不再用于制作[[{{tr|Neptune's Shell}}]]，因为它现在掉落自[[{{tr|Creature from the Deep}}]]。}}
+{{history|Desktop 1.2.4|现在用于制作[[{{tr|Sonar Potion}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Coral}}必须用[[{{tr|pickaxe}}]]来收集。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-material = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Coral}}

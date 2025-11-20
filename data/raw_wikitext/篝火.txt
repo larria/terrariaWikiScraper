@@ -1,0 +1,84 @@
+{{item infobox
+| auto = 966
+| type = Furniture / Crafting station / Light source
+| width = 3 | height = 2
+| buff = Cozy Fire
+| duration = 范围内无限
+| id = 966, 3046–3050, 3723–3724, 4689–4694
+| listcat = plunder items
+| cargo = no
+}}
+[[File:Placed Campfires.gif|frame|放置的{{tr|Campfires}}（开启与关闭时的外观）。点击图片查看各行的简介。]]
+
+'''{{tr|Campfire}}'''是一种可放置的[[{{tr|furniture}}]]{{tr|item}}。它会发出光照并为附近的{{tr|player}}提供'''{{tr|Cozy Fire}}'''[[{{tr|health regeneration}}]][[{{tr|buff}}]]。可以通过对它点击{{key|open}}或发出[[{{tr|wire}}]]信号来关闭{{tr|Campfire}}，同理可将其重新开启。它还能够用来烹饪[[{{tr|Marshmallow on a Stick}}]]。
+
+{{tr|Cozy Fire}}{{tr|buff}}会增加附近{{tr|player}} 10% 的当前{{tr|health regeneration}}，并额外增加 0.5 每秒生命回复。该{{tr|buff}}会施加给任何处于以{{tr|Campfire}}为中心的{{buff area}}以内的{{tr|players}}，与[[{{tr|Heart Lantern}}]]相似。两件{{tr|item}}的回复{{tr|buffs}}会互相叠加，提供更高的{{tr|health regeneration}}提升，且处于这些{{tr|item}}的范围内也能够帮助抵消持续伤害性[[{{tr|debuffs}}]]的效果（如[[{{tr|Poisoned}}]]和[[{{tr|On Fire!}}]]）。
+
+[[{{tr|Fireplace}}]]的运作方式相似，也会提供{{tr|Cozy Fire}}{{tr|buff}}，但不能用于烹饪{{tr|Marshmallow on a Stick}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|showresultid=y|result=LIKE %Campfire|expectedrows=15|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 用于制作 ===
+{{:Recipes/Campfire}}
+
+== 备注 ==
+{{float file box|[[File:Rainbow Campfire animation.gif]]|{{tr|Rainbow Campfire}}的动画效果。}}
+* {{eicons|1.3.0.1}} {{tr|Campfire}}不算作 [[{{tr|NPC}}]] [[{{tr|House}}]]的光源。
+* 在其范围内时，{{tr|health regeneration}}加成不会被距离或阻隔的{{tr|block}}与{{tr|wall}}影响。
+* {{tr|NPCs}} 不受{{tr|health regeneration}}效果影响。
+* [[{{tr|Heart Lantern}}]]会提供相似的{{tr|health regeneration}}加成。
+** {{tr|Heart Lantern}}的效果会与{{tr|Campfire}}堆叠。这总共会提供 1.5 生命值/秒的{{tr|health regeneration}}，外加 1.1× 的基础回复速度。
+*  当有[[{{tr|liquids}}]]被倾倒在上方时，{{tr|Campfires}}会被立即摧毁。{{tr|Cursed Campfire}}、{{tr|Ichor Campfire}}和{{eil|nl=y|Coral Campfire}}除外，它们可以被放置在[[{{tr|water}}]]中。
+* 关闭{{tr|Campfire}}会取消其{{tr|buff}}。
+* {{eil|Moon Lord}}存在时的光效会使{{tr|Campfires}}变成黑色，但这并不会取消其{{tr|buff}}。
+* {{icon/console}} 光标在其上方时，{{tr|Bone Campfire}}的[[{{tr|tooltip}}]]会错误显示为[[{{tr|Shadowflame Bow}}]]的。
+
+== 小贴士 ==
+* 同[[{{tr|Heart Lantern}}]]一样，处于危险区域时在[[{{tr|Inventory}}#热键栏（10 栏位）|{{tr|hotbar}}]]里拥有一些会很有用，它们可以立即放置以获取更快的{{tr|health regeneration}}。
+* 在[[指南:基地|家]]里放置一个{{tr|Campfire}}与{{tr|Heart Lantern}}也会很有用。
+
+== 花絮 ==
+[[File:Underground Campfire and Coins.png|thumbnail|250px|right|{{tr|underground campfire}}和一些{{tr|Gold Coins}}。]]
+* 当{{tr|Campfire}}在[[{{tr|rain}}]]中时，它会放出更多的烟雾。这只是美观上的效果。
+* 普通的{{tr|Campfires}}有时可以在{{eil|Campsite}}找到，其中还会有一些放置的[[{{tr|Silver Coin}}]]或[[{{tr|Gold Coin}}]]。
+* {{tr|The Rainbow Campfire}}看上去是使用[[{{tr|Crystal Block}}]]搭成的，但实际上并没有在原料中用到它。其原料，[[{{tr|Torches}}#彩色{{tr|Torch}}|{{tr|Rainbow Torches}}]]，实际上是用[[{{tr|Rainbow Brick}}]]做成的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Aether and Mushroom campfires}}。
+** 现在可以被[[{{tr|Torch God's Favor}}]]转换。}}
+{{history|Desktop 1.4.0.1|
+** 加入了 6 种新的{{tr|campfire}}：{{tr|Coral}}、{{tr|Corrupt}}、{{tr|Crimson}}、{{tr|Desert}}、{{tr|Hallowed}}和{{tr|Jungle Campfires}}。
+** 效果作用范围扩大。
+** 普通{{tr|Campfire}}的{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.1|加入了{{tr|Bone}}和{{tr|Ultrabright campfires}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 所需的{{tr|Wood}}数量由 20 降低至 10。
+** 加入了 5 种新的{{tr|campfire}}：{{tr|Cursed}}、{{tr|Demon}}、{{tr|Frozen}}、{{tr|Ichor}}和{{tr|Rainbow Campfires}}。
+** 现在可以通过右键点击来关闭{{tr|Campfires}}。
+** 关闭{{tr|campfire}}会取消其{{tr|buff}}。}}
+{{history|Desktop 1.2.3|
+** [[{{tr|Nurse}}]]不再会移除[[{{tr|Potion Sickness}}]]、[[{{tr|Heart Lamp}}（增益）|{{tr|heart lantern}}]]和{{tr|campfire}}{{tr|buffs}}。
+** 降低了{{tr|campfire}}的{{tr|buff}}效果。修复了{{tr|campfire}}能够放置在{{tr|water}}中的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|加入了{{tr|Buff}}图标。}}
+{{history|Desktop 1.2.1|{{tr|Campfires}}不再能放置在{{tr|water}}中。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|加入了{{tr|Bone}}和{{tr|Ultrabright campfires}}。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|
+** 加入了 6 种新的{{tr|campfire}}：{{tr|Coral}}、{{tr|Corrupt}}、{{tr|Crimson}}、{{tr|Desert}}、{{tr|Hallowed}}和{{tr|Jungle Campfires}}。
+** 效果作用范围扩大。
+** 普通{{tr|Campfire}}的{{tr|sprite updated.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+
+{{language info|en=Campfires}}

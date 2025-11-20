@@ -1,0 +1,118 @@
+{{legacy nav tab}}
+{{item infobox
+| imagebreak = yes
+| autoimageold = no
+| type = Armor/Set
+| buff = Titanium Barrier / 10
+| idprojectile = 908
+| hardmode = yes
+}}
+{{distinguish|Titan armor}}
+
+'''{{tr|Titanium armor}}'''是一个[[{{tr|Hardmode}}]][[{{tr|armor}}]]套装，由'''{{tr|Titanium Breastplate}}'''和'''{{tr|Titanium Leggings}}'''，以及三种不同的头部件：'''{{tr|Titanium Mask}}'''、'''{{tr|Titanium Helmet}}'''、和'''{{tr|Titanium Headgear}}'''组成，分别为{{tr|melee, ranged, and magic damage}}提供{{tr|bonus}}。制作包含一个头部件的全套{{tr|set}}共需要 59 个{{tr|Titanium Bars}}（236 个[[{{tr|Titanium Ore}}]]）。制作所有五个部件共需要 85 个{{tr|Titanium Bars}}（340 个{{tr|Titanium Ore}}）。
+
+{{alt ore|Adamantite armor}}
+
+装备全套{{tr|set}}时提供如下效果：
+<tabber>
+|-|{{tr|Mask}}=
+* +49 [[{{tr|defense}}]]
+* +17% [[{{tr|melee damage}}]]
+* +15% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +9% [[{{tr|melee speed}}]]
+* +6% [[{{tr|movement speed}}]]
+* 攻击会为玩家提供'''{{tr|Titanium Barrier}}'''{{tr|buff}}，这会生成围绕玩家旋转的{{tr|Titanium Shards}}。{{tr|Titanium Shards}}数量越多，旋转速度越快，最多同时存在 7 个{{tr|Titanium Shards}}。每个{{tr|Titanium Shards}}造成 50 伤害和 {{knockback|15|full=y|class=}}的[[{{tr|knockback}}]]{{source code ref|name=OnHit|v=1.4.4.9|method=Terraria.Player.OnHit}}，且不会造成[[{{tr|critical hit}}]]。每个{{tr|Titanium Shards}}会在击中{{tr|enemy}}或经过 10 秒后消失。
+|-|{{tr|Helmet}}=
+* +34 [[{{tr|defense}}]]
+* +23% [[{{tr|ranged damage}}]]
+* +13% {{tr|ranged}}[[{{tr|critical strike chance}}]]
+* +6% [[{{tr|movement speed}}]]
+* 攻击会为玩家提供'''{{tr|Titanium Barrier}}'''{{tr|buff}}，这会生成围绕玩家旋转的{{tr|Titanium Shards}}。{{tr|Titanium Shards}}数量越多，旋转速度越快，最多同时存在 7 个{{tr|Titanium Shards}}。每个{{tr|Titanium Shards}}造成 50 伤害和 {{knockback|15|full=y|class=}}的[[{{tr|knockback}}]]<ref name="OnHit"/>，且不会造成[[{{tr|critical hit}}]]。每个{{tr|Titanium Shards}}会在击中{{tr|enemy}}或经过 10 秒后消失。
+|-|{{tr|Headgear}}=
+* +30 [[{{tr|defense}}]]
+* +23% [[{{tr|magic damage}}]]
+* +13% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* +100 最大[[{{tr|mana}}]]
+* +6% [[{{tr|movement speed}}]]
+* 攻击会为玩家提供'''{{tr|Titanium Barrier}}'''{{tr|buff}}，这会生成围绕玩家旋转的{{tr|Titanium Shards}}。{{tr|Titanium Shards}}数量越多，旋转速度越快，最多同时存在 7 个{{tr|Titanium Shards}}。每个{{tr|Titanium Shards}}造成 50 伤害和 {{knockback|15|full=y|class=}}的[[{{tr|knockback}}]]<ref name="OnHit"/>，且不会造成[[{{tr|critical hit}}]]。每个{{tr|Titanium Shards}}会在击中{{tr|enemy}}或经过 10 秒后消失。
+</tabber>
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| auto = 1218
+| hardmode = yes
+}}
+|{{item infobox
+| type = Armor
+| auto = 1219
+| hardmode = yes
+}}
+}}
+{{-}}
+
+=== {{tr|Helmet}}种类 ===
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| auto = 1215
+| hardmode = yes
+}}
+|{{item infobox
+| type = Armor
+| auto = 1216
+| hardmode = yes
+}}
+|{{item infobox
+| type = Armor
+| auto = 1217
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=Titanium Mask/Titanium Headgear/Titanium Helmet/Titanium Breastplate/Titanium Leggings|expectedrows=5}}
+
+== 备注 ==
+[[File:Titanium Barrier (demo).gif|frame|{{tr|Titanium armor}}的{{tr|set bonus}}。注意碎片会在击中一次后消失，其数量越多旋转速度越快。]]<!-- This GIF is down here (and not at the top as usual) because it interferes with the infoboxes in the "Set" section. -->
+
+* 大部分[[{{tr|dyes}}]]对此{{tr|armor}}的颜色影响很小，但有少数例外（如[[{{tr|Intense Rainbow Dye}}]]）。
+* 如果{{tr|player}}在{{tr|Titanium Barrier buff}}激活时传送，碎片会快速移动到玩家所在位置而不是一起传送。
+* [[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura sentry}}]]可以用于持续刷新{{tr|Titanium Barrier}}{{tr|set bonus}}，不过此方法不能用[[{{tr|Target Dummy}}]]和[[{{tr|statue}}]]生成的{{tr|enemies}}。[[{{tr|Traps}}]]也不会触发{{tr|set bonus}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 碎片现在只能每 10 {{tr|ticks}}（1/6 秒）生成一个，最多每秒 6 个碎片。
+** {{tr|Titanium armor}}的碎片不再从{{tr|Statue}}生成的{{tr|enemies}}处产生。}}
+{{History|Desktop 1.4.1|{{tr|Titanium Mask bonus}}由 8% 提升至 9%。}}
+{{history|Desktop 1.4.0.3|[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]不再触发{{tr|Titanium armor}}的{{tr|set bonus}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprites updated.}}
+** {{tr|set bonus}}改为提供{{tr|Titanium Shards}}屏障而非{{tr|Shadow Dodge}}。{{tr|Shadow Dodge set bonus}}现在是来自[[{{tr|Hallowed armor}}]]的{{tr|Holy Protection set bonus}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Shadow Dodge}}的内部冷却由 20 秒延长至 30 秒。}}
+{{history|Desktop 1.2.3|
+** 每件头部件所需的{{tr|bars}}由 12 个提升至 13 个。
+** {{tr|Titanium Breastplate}}所需的{{tr|bars}}由 24 个提升至 26 个。
+** {{tr|Titanium Leggings}}所需的{{tr|bars}}由 18 个提升至 20 个。
+** 修复了{{tr|Shadow Dodge buff}}作为{{tr|buff}}列表中的最后一项时不会被移除的漏洞。}}
+{{history|Desktop 1.2.2|修复了具有大量{{tr|buffs}}时会导致玩家无敌的 {{tr|bug}}（{{tr|Buff slots}}增加以修复此 {{tr|bug}}）。}}
+{{history|Desktop 1.2.1|女性版本的外观更新。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.09|[[{{tr|Dragon armor}}]]、[[{{tr|Spectral armor}}]]、和[[{{tr|Titan armor}}]]现在可用{{tr|Titanium armor}}部件制作。}}
+{{history|Mobile 1.2.11964|{{tr|Dragon armor, Spectral armor, and Titan armor}}现在可用[[{{tr|Orichalcum armor}}]]、[[{{tr|Palladium armor}}]]、或{{tr|Titanium armor}}部件制作。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Titanium}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Titanium armor}}

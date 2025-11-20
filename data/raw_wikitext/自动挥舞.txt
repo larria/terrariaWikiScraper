@@ -1,0 +1,21 @@
+{{dablink|要得到所有具备{{tr|autoswing}}特性的{{tr|weapons}}列表，请在[[{{tr|weapon}}列表]]使用{{tr|Autoswing}}列的排序功能，或参阅[[:分类:{{tr|Autoswing items}}]]。}}
+[[File:Cutlass (demo).gif|thumb|1800px|[[{{tr|Cutlass}}]]的{{tr|autoswing}}演示。]]
+[[File:Placing blocks (demo).gif|thumb|1800px|所有[[{{tr|blocks}}]]在放置时都会{{tr|autoswing}}的特性演示。]]
+
+'''{{tr|Autoswing}}'''（也称为'''{{tr|autofire}}'''或'''{{tr|auto-use}}'''）是一种属性，可以应用到诸如[[{{tr|weapons}}]]、[[{{tr|tools}}]]和[[{{tr|blocks}}]]这样的可使用{{tr|item}}上，这样在按住{{key|use}}键时此物品会自动重新使用（或挥舞）。与之相反，不具备{{tr|autoswing}}的{{tr|weapon}}就需要玩家反复单击或按下 {{key|use}} 来持续攻击。
+
+在本 {{tr|wiki}} 中，具有{{tr|autoswing}}能力的{{tr|item}}在其信息框右上角会显示 {{auto icon}} 图标。
+
+== 备注 ==
+* 在内部，<code>autoReuse</code>属性决定{{tr|item}}是否能{{tr|autoswing}}。
+* {{eicons|1.4.4}}可以通过设置菜单中的“{{tr|autofire}}”选项为所有武器启用{{tr|Autoswing}}。<!--{{eicons|1.4.0.1}}-->[[{{tr|melee weapon}}]]和[[{{tr|whip}}]]也可以通过特定{{tr|accessory}}启用{{tr|autoswing}}：{{equipinfo/list|autoReuseGlove|format=itemname-linked-pretty}}。
+** 注意这些实际上都不会更改{{tr|item}}的<code>autoReuse</code>属性。
+* {{icon/3DS}} 除了少数几种特定的{{tr|weapon}}外，所有{{tr|weapon}}都启用了{{tr|autoswing}}。
+
+== 小贴士 ==
+* {{tr|Autoswing}}是非常有用的属性，在比较武器时应当予以考虑，因为它能够最大化打击次数。例如，不考虑其他属性，应当优先选择造成 30 {{tr|base damage}}的{{tr|autoswing weapon}}而非造成 34 {{tr|base damage}}的非{{tr|autoswing weapon}}。注意从 {{eil|1.4.4}} 开始所有{{tr|weapon}}都可通过“{{tr|auto-fire}}”选项启用{{tr|autoswing}}。
+* 没有{{tr|autoswing}}能力的{{tr|Item}}依然可以通过诸如{{维基百科|auto clicker|自动连点器}}之类的第三方软件来自动地挥舞。
+
+{{Game mechanics}}
+
+{{language info|en=Autoswing}}

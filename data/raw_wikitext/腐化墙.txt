@@ -1,0 +1,48 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| name = Corruption Walls
+| type = Wall
+| imagealt = <p>[[File:Corrupt Growth Wall.png]] [[File:Corrupt Mass Wall.png]] [[File:Corrupt Pustule Wall.png]] [[File:Corrupt Tendril Wall.png]]</p><hr/><p>[[File:Corrupt Growth Wall (placed).png]] [[File:Corrupt Mass Wall (placed).png]]</p>[[File:Corrupt Pustule Wall (placed).png]][[File:Corrupt Tendril Wall (placed).png]]</p>
+| auto = 4513
+| id = 4513-4516
+| idwall = 188-191 ({{tr|natural}}) / 276-279 ({{tr|crafted}})
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 4513| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4514| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4515| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4516| type = Wall}}
+
+{{dablink|不要与[[{{tr|Ebonstone Wall}}]]相混淆。}}
+
+'''{{tr|Corrupt Walls}}'''是自然生成的[[{{tr|Background wall}}]]，出现在[[{{tr|Corruption}}]]中。这些自然出现的{{tr|walls}}可以用[[{{tr|hammer}}]]摧毁，但不会掉落任何东西。这些{{tr|walls}}也不会阻止{{tr|enemies}}的生成，也不能用于合格的[[{{tr|house}}]]。
+
+在{{eversions|1.4.0.1}}上，这些墙可以用[[{{tr|Ebonstone}}]]制作，可以像其他[[{{tr|Background walls}}#{{tr|Crafted walls}}|{{tr|craftable walls}}]]一样使用。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|result=Corrupt Growth Wall/Corrupt Mass Wall/Corrupt Pustule Wall/Corrupt Tendril Wall|expectedrows=4}}
+
+=== 用于 ===
+{{recipes|ingredient=Corrupt Growth Wall/Corrupt Mass Wall/Corrupt Pustule Wall/Corrupt Tendril Wall|expectedrows=4}}
+
+== 备注 ==
+* {{tr|Some cave walls}}可以转化为{{tr|corrupt walls}}：{{tr|Mottled Stone Walls}}变为{{tr|Corrupt Pustule Walls}}、{{tr|Fractured Stone Walls}}变为{{tr|Corrupt Tendril Walls}}、{{tr|Worn Stone Walls}}变为{{tr|Corrupt Growth Walls}}、以及{{tr|Stalactite Stone Walls}}变为{{tr|Corrupt Mass Walls}}。用[[{{tr|Clentaminator}}]]搭配{{tr|Green Solution}}是逆转转化的唯一方法。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|给所有{{tr|Corrupt Wall}}添加了{{tr|crafting recipes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|crafting recipes}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+
+
+{{language info|en=Corrupt Walls}}

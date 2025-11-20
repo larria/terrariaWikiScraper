@@ -1,0 +1,117 @@
+{{buff infobox
+| auto = 70
+| effects = {{eicons|1.4.1}} −30 / {{eicons|1.4.0.1|invert=y}} −6 生命值<small>（每秒）</small><br/>无{{tr|health regeneration}}
+}}
+{{distinguish|{{tr|Vial of Venom}}}}
+
+'''{{tr|Acid Venom}}'''（在{{eversions|1.4.1|invert=y|short=y}}中为'''{{tr|Venom}}'''）是一种会阻止{{tr|health regeneration}}并使受影响的 {{tr|npc}} 和{{tr|player}}每秒损失{{tr|health}}的[[{{tr|Debuff}}]]。它是更强版本的[[{{tr|Poisoned}}]]。每秒损失的{{tr|health}}因[[{{tr|Game platform}}]]而异：
+
+* {{eicons|1.4.1}} 受影响的 {{tr|npc}} 每秒损失 30 {{tr|health}}，{{tr|player}}每秒损失 15 {{tr|health}}。
+* {{eicons|1.4.0.1|invert=y}} 受影响的 {{tr|npc}} 和玩家每秒损失 6 {{tr|health}}。
+
+{{eicons|1.4.1|invert=y|short=y}} {{tr|immune}}{{tr|Venom}}的{{tr|Enemies}}也同样{{tr|immune}}{{tr|Poisoned}}。
+
+== 原因 ==
+=== 来自环境 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 总伤害
+! 几率
+|-
+| {{item|mode=table|Venom Dart Trap}}
+| 5 / {{expert|10}} / {{master|13}} {{tr|seconds}}
+| 75 / {{expert|150}} / {{master|195}}
+| {{chance|1/1}}
+|}
+
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 总伤害
+! 几率
+|-
+| {{item|mode=table|Venom Bullet}}
+| {{duration|10}}
+| {{eicons|1.4.1}} 300 / {{eicons|1.4.0.1|invert=y}} 60
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Venom Arrow}}
+| {{duration|10}}
+| {{eicons|1.4.1}} 300 / {{eicons|1.4.0.1|invert=y}} 60
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Venom Staff}}
+| {{duration|30}}
+| {{eicons|1.4.1}} 900 / {{eicons|1.4.0.1|invert=y}} 180
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Spider Staff}}
+| 2–4 秒
+| {{eicons|1.4.1}} 60–120 / {{eicons|1.4.0.1|invert=y}} 12–24
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Queen Spider Staff|icons=n}}
+| {{eicons|1.4.0.1}} 2–4 / {{eicons|Queen Spider Staff|not=1.4.0.1}} 4–6 {{tr|seconds}}
+| {{eicons|1.4.1}} 60–120 / {{eicons|Queen Spider Staff|not=1.4.0.1}} 24–36
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Flask of Venom}}
+| 5–9 {{tr|seconds}}
+| {{eicons|1.4.1}} 150–285 / {{eicons|1.4.0.1|invert=y}} 30–54
+| {{chance|1/1}}
+|-
+| {{item|mode=table|Pygmy Staff}}
+| {{eicons|1.3.0.1}} 5–10 {{tr|seconds}}
+| {{eicons|1.4.1}} 150–300
+| {{chance|1/3}}
+|-
+|}
+
+=== 来自{{tr|enemy}} ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 总伤害
+! 几率
+|-
+| {{item|mode=table|Black Recluse}}
+| {{eicons|1.4.0.1}} 4 / {{expert|8}} / {{master|10}} / {{eicons|1.4.0.1|invert=y}} 8 {{tr|seconds}}
+| {{eicons|1.4.1}} 60 / {{expert|120}} / {{master|150}} <br/> {{eicons|1.3.0.1|invert=y}} 48
+| {{chance|1/10}}
+|-
+| {{item|mode=table|Jungle Creeper}}
+| {{eicons|1.4.1}} 4 / {{expert|8}} / {{master|10}} {{tr|seconds}}
+| 60 / {{expert|120}} / {{master|150}}
+| {{chance|1/10}}
+|-
+| {{item|mode=table|Sand Poacher}}
+| 4 / {{expert|8}} / {{master|10}} {{tr|seconds}}
+| 60 / {{expert|120}} / {{master|150}}
+| {{chance|1/1}}
+|}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities}}
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 此{{tr|debuff}}的{{tr|enemy}}版本{{tr|Damage per second}}由 15 翻倍为 30。 
+** {{tr|Venom}}被重命名为{{tr|Acid Venom}}，并且现在可以作用于多个金属、石头、不死、和有毒的{{tr|enemies}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|damage per second}}由 6 提升至 15，{{tr|debuff}}的{{tr|player}}和{{tr|enemy}}的版本都一样。
+** [[{{tr|Pygmy Staff}}]]和[[{{tr|Queen Spider Staff}}]]的{{tr|Venom}}持续时间缩短，抵消其强化后的效力
+** [[{{tr|Black Recluse}}]]和[[{{tr|Sand Poacher}}]]的{{tr|Venom}}{{tr|duration}}有所缩短，以减轻对玩家的威胁。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再造成基于百分比的伤害{{verify}}<!-- needs verification as to whether it dealt percentage-based damage before -->。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Acid Venom}}

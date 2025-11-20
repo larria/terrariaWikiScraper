@@ -1,0 +1,101 @@
+'''{{tr|Bats}}'''是常见的{{tr|flying}}[[{{tr|enemies}}]]。它们遵循[[{{tr|AI}}|{{tr|Bat AI}}]]，在试图接触玩家的同时随机四处飞行并碰到东西。在{{eil|Expert mode}}中，部分类型有几率对玩家造成[[{{tr|Feral Bite}}]][[{{tr|debuff}}]]。
+
+== 种类 ==
+=== 困难模式之前 ===
+{{#invoke:CargoQuery|main
+|q?tables=NPCs
+|q?fields= _pageName=page, npcid, nameraw, image, damage, life, defense, bannername, money
+|q?groupBy=npcid
+|q?where= ai="Bat AI"
+|q?limit=1000
+|template=:{{BASEPAGENAME}}/row0
+}}{{options/set|item|maxsize=x100px}}{{npc infobox/options|view=custom|extargs=template/sortkey/image/nolink}}
+{{npc infobox/tablestart}}
+{| class="terraria sortable lined noborder align-center"
+! 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! data-sort-type=number | {{tr|Coins}}
+! class="unsortable" | {{tr|Banner}}
+! class="unsortable" | 额外信息
+|-
+| {{/row|id=49|sortkey=a}}
+| align=left | 常见[[{{tr|Cavern}}]]/[[{{tr|Underground}}]]{{tr|enemy}}
+|-
+| {{/row|id=634|sortkey=b}}
+| align=left | 常见[[{{tr|Glowing Mushroom biome}}]]{{tr|enemy}}
+|-
+| {{/row|id=51|sortkey=c}}
+| align=left | 常见[[{{tr|Jungle}}]]{{tr|enemy}}
+|-
+| {{/row|id=60|sortkey=d}}
+| align=left | 常见[[{{tr|The Underworld}}|{{tr|Underworld}}]]{{tr|enemy}}
+|-
+| {{/row|id=150|sortkey=e}}
+| align=left | 常见[[{{tr|Ice biome}}]]{{tr|enemy}}，接触时造成[[{{tr|Chilled}}]]和少见的[[{{tr|Frozen}}]]
+|}{{npc infobox/tableend}}{{npc infobox/options|reset}}
+
+=== 仅限[[{{tr|Hardmode}}]] ===
+{{npc infobox/options|view=custom|extargs=template/sortkey/image/nolink}}
+{{npc infobox/tablestart}}
+{| class="terraria sortable lined noborder align-center"
+! 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! data-sort-type=number | {{tr|Coins}}
+! class="unsortable" | {{tr|Banner}}
+! class="unsortable" | 额外信息
+|-
+| {{/row|id=93|sortkey=a}}
+| align=left | 常见[[{{tr|Cavern}}]]{{tr|enemy}}，接触时造成[[{{tr|Confused}}]]
+|-
+| {{/row|id=137|sortkey=b}}
+| align=left | 常见[[{{tr|The Hallow}}|{{tr|Hallow}}]]{{tr|enemy}}
+|-
+| {{/row|id=151|sortkey=c}}
+| align=left | 常见[[{{tr|The Underworld}}|{{tr|Underworld}}]]{{tr|enemy}}，只在打败了[[{{tr|Mechanical Bosses}}|{{tr|Mechanical Boss}}]] 后出现
+|-
+| {{/row|id=121|sortkey=d}}
+| align=left | [[{{tr|The Corruption}}|{{tr|Corruption}}]]{{tr|enemy}}，生命值耗尽时变为[[{{tr|Slime}}]]形态
+|-
+| {{/row|id=152|sortkey=e}}
+| align=left | [[{{tr|Jungle}}]]{{tr|enemy}}，只在{{tr|night}}生成
+|-
+| {{/row|id=158|sortkey=f}}
+| align=left | [[{{tr|Solar Eclipse}}]]{{tr|enemy}}，以{{tr|a bat}}形态追击玩家并在靠近时变形为人形
+|}{{npc infobox/tableend}}{{npc infobox/options|reset}}{{options/reset|item}}
+
+== 小贴士 ==
+* {{tr|Bats}}形体较小、速度快，而且它们飘忽不定的行为常常会惹恼和激怒玩家。对于没有手段来防止[[{{tr|knockback}}]]（比如用{{tr|Cobalt shield}}）的新手玩家来说它们很让人头疼，因为玩家可能会被它撞下悬崖而进入致命的坠落，或者更糟的是掉进大群{{tr|enemies}}中。
+* {{tr|Hellbats}}特别讨厌，因为它们很容易把毫无防备的玩家撞到{{tr|lava}}池里。
+* 面对{{tr|bats}}时，玩家可以采取一些应对措施：
+** 不错的策略是回避。利用{{tr|walls}}和地形来困住它们，或者用{{tr|knockback}}来维持距离。
+** 如果装备了具有良好{{tr|knockback}}的{{tr|weapon}}，那么足以将它们近距离击杀，因为通常在{{tr|bat}}返回之前{{tr|weapon}}即可挥出。
+** 玩家可能在早期就注意到[[{{tr|Broadswords}}]]在实战中非常有效。
+
+== 历史 ==
+{{history|Desktop 1.4.3|除{{tr|Slimers and Vampires}}外的所有{{tr|Bats}}现在都会掉落[[{{tr|Bat Bat}}]]。}}
+{{history|Desktop 1.3.0.1|部分{{tr|Bats}}现在在[[{{tr|Expert mode}}]]中会导致[[{{tr|Feral Bite}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.2|引入了{{tr|Ice Bat, Lava Bat, Vampire, and Giant Flying Fox}}。}}
+{{history|Desktop 1.1|引入了{{tr|Giant Bat}}、{{tr|Slimer}}、和{{tr|Illuminant Bat}}。}}
+{{history|Desktop 1.0.6|所有{{tr|bats}}的生命值降低。}}
+{{history|Desktop 1.0.5|
+** 引入了{{tr|Hellbat}}。
+** {{tr|Bats}}不再进入水中。
+** {{tr|Bats}}现在有特别的死亡音效。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}添加了{{tr|Cave Bat}}和{{tr|Jungle Bat}}。}}
+
+{{Bats}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{all versions}}
+
+{{language info|en=Bats}}

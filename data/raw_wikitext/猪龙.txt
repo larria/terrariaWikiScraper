@@ -1,0 +1,114 @@
+{{npc infobox
+| imagealt = [[File:Corruption Pigron.gif|link=]] [[File:Crimson Pigron.gif|link=]] [[File:Hallow Pigron.gif|link=]]
+| image2 = 
+| namesub = 
+| auto = 170
+| type = Flying Enemy
+| environment = Ice biome
+| id = 170 {{note|paren=y|{{tr|Corrupt}}}}, 171 {{note|paren=y|{{tr|Hallow}}}}, 180 {{note|paren=y|{{tr|Crimson}}}}
+| Bacon|1|6.67%
+| Pigron Minecart|1|1%
+|custom:Pigron Kite|{{item|Pigron Kite|note=（在[[{{tr|Windy Day}}]]）|wrap=y}}|4%
+| Ham Bat|1|4%
+| sound1 = Zombie 38.wav, Zombie 39.wav, Zombie 40.wav, Zombie 9.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+| cargo = no | cargodrops = yes
+}}<!--
+
+invisible infoboxes for the individual variants, for cargo storage:
+-->{{npc infobox | view = void
+| auto = 170
+| image = Corruption Pigron.gif
+| type = Flying Enemy
+| environment = Ice biome+Underground Corruption
+| hardmode = yes
+}}<!--
+-->{{npc infobox | view = void
+| auto = 171
+| image = Hallow Pigron.gif
+| type = Flying Enemy
+| environment = Ice biome+Underground Hallow
+| hardmode = yes
+}}<!--
+-->{{npc infobox | view = void
+| auto = 180
+| image = Crimson Pigron.gif
+| type = Flying Enemy
+| environment = Ice biome+Underground Crimson
+| hardmode = yes
+}}
+{{about|{{tr|the Hardmode enemy}}|{{tr|the mount}}|{{eil|Scaly Truffle}}}}
+
+'''{{tr|Pigron}}'''是一种[[{{tr|Hardmode}}]][[{{tr|Enemies}}|{{tr|enemy}}]]，在与[[{{tr|Underground Hallow}}]]、[[{{tr|Underground Corruption}}]]、或[[{{tr|Underground Crimson}}]]重叠的[[{{tr|Ice biome}}]]生成。它具有多种颜色的种类（取决于它在哪一个重叠的{{tr|biome}}{{tr|spawns}}），但均具有相同的属性和行为。
+
+{{tr|Pigrons}}拥有能够变得透明且几乎无法被看见的特殊能力，这允许它们穿过[[{{tr|blocks}}|{{tr|solid blocks}}]]。当一只透明的{{tr|Pigron}}开始攻击时，它将会重新变得可见。当它开始朝玩家移动时，它偶尔会发出能被听到的咆哮声。如果它处于稳定的可见状态，并且在到达{{tr|player}}的路径上被{{tr|solid blocks}}所阻挡，它将再次变得透明以通过它们。
+
+== 备注 ==
+* {{tr|Pigrons}}在[[{{tr|Underground Corruption}}]]是紫色的，在[[{{tr|Underground Hallow}}]]是粉色的，而在[[{{tr|Underground Crimson}}]]是红色的。
+* {{tr|Pigrons}}只能在当玩家位于[[{{tr|Crimson}}]]、[[{{tr|Corruption}}]]、或[[{{tr|Hallow}}]]{{tr|biomes}}中，位于[[{{tr|Cavern}}]]{{tr|layer}}的[[{{tr|Snow Block}}]]、[[{{tr|Thin Ice}}]]、[[{{tr|Ice Block}}]]、和[[{{tr|Pink Ice Block}}]]上生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}<ref>由于生成{{tr|Pigrons}}的代码位于{{tr|Crimson}}/{{tr|Corrupt}}/{{tr|Hallowed enemies}}之后，若生成{{tr|tile}}为[[{{tr|Red Ice Block}}]]或[[{{tr|Purple Ice Block}}]]其条件就不可达。不过，在{{tr|Hallowed tile}}上的生成不必定成功，因此仍然有几率在[[{{tr|Pink Ice Block}}]]上生成{{tr|Pigron}}。</ref>
+** {{tr|ice}}的类型与游戏决定生成的{{tr|Pigron}}无关（例如，{{tr|Corrupt Pigron}}可以在{{tr|Pink Ice Blocks}}上生成，只要玩家被认为处于[[{{tr|The Corruption}}|{{tr|Corruption}}]]中即可）。
+** 要生成{{tr|Pigrons}}，玩家并不需要位于{{tr|Ice biome}}中。
+** 同时位于{{tr|Crimson and Corruption biomes}}中会让{{tr|Pigrons}}的生成几率翻倍，因为每个{{tr|Pigron}}种类都有单独的生成尝试。
+* 若玩家站立在[[{{tr|Safe wall}}|安全的{{tr|background wall}}]]前、若附近居住有[[{{tr|NPCs}}|{{tr|Town NPCs}}]]、或玩家在过去 5 秒内没有移动过（至少 {{mph|0.25}}）且没有使用过{{tr|item}}，{{tr|Pigrons}}就无法生成。
+** 若玩家在{{eil|Shadow Candle}}的范围内，不会应用这些特殊条件。
+* {{tr|Pigrons}}可以被[[{{tr|Pigron Statue}}]]生成。如此生成时，其{{tr|variant}}是随机的。
+** 在[[{{tr|pre-Hardmode}}]]，{{tr|Statue}}生成的{{tr|Pigrons}}不会掉落任何{{tr|loot}}（[[{{tr|Pigron Banner}}|{{tr|banners}}]]除外）。
+** 在罕见情况下，[[{{tr|traps}}]]的[[{{tr|trigger}}]]可能会连接到{{tr|Pigron Statue}}，意外地生成一个[[{{tr|statue trap}}]]。
+* 如果{{tr|Pigron}}要变得透明并穿透{{tr|blocks}}，那么它与玩家之间的直接视线必须在一段时间内都被{{tr|blocks}}所阻隔。因此，可以通过这样一种方法困住{{tr|pigrons}}：允许它们通过一个洞看到玩家，但洞的大小不足以使之通过。
+
+== 小贴士 ==
+* 合理使用[[{{tr|Hunter Potion}}]]会使寻找和解决{{tr|Pigron}}变得容易得多，因为它在通常几乎不可见的时候仍会发光。
+* 在{{tr|Ice biome}}中时需注意咆哮声，因为听到{{tr|Pigrons}}的声音通常会比看到它们更早，而且它们发出的声音是独特的。
+* 可以用{{tr|Pigron Statue}}非常容易地解锁{{eil|Bestiary}}中的所有三个种类，免去创造三种{{tr|biomes}}的麻烦。
+
+== 花絮 ==
+* 猪龙的英文名字（Pigron）是“猪”（Pig）和“龙”（Dragon）构成的混成词。[[Cenx]] 在 IRC 中证实了这一点。
+* 尽管{{tr|Pigron}}有三种不同的颜色的{{tr|variants}}，并且互相略有差异，但{{tr|banner}}、{{tr|minecart}}、以及[[{{tr|Scaly Truffle}}]]的{{tr|Pigron Mount}}始终是粉红色的。
+* {{tr|Pigron}}咆哮时的声音听起来像是被奇怪地扭曲的 [[{{tr|boss}}]] 在被召唤或攻击时发出的声音。
+* 现实中，Toynk Toys 生产过一种现已停止生产的{{tr|Pigron}}毛绒玩具，这种玩具是基于[[{{tr|Underground Corruption}}]]中的紫色{{tr|Pigron}}制作的。<ref>https://www.rakuten.com/shop/toynk/product/JZW-13812-C/</ref>
+{{bestiary|Crimson Pigron|alias={{tr|Pigrons}}}}
+
+== 另见 ==
+* [[{{tr|Duke Fishron}}]]，和以它为原型的{{tr|mounts}}，[[{{tr|Cute Fishron}}]]和[[{{tr|Pigron Mount}}]]。
+* [[{{tr|Pigronata}}]]，由[[{{tr|Party Girl}}]]出售的以{{tr|Pigron}}为主题的彩罐。
+
+== 历史 ==
+{{history|Desktop 1.4.3|现在会掉落[[{{tr|Ham Bat}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 现在会掉落[[{{tr|Pigron Minecart}}]]和[[{{tr|Pigron Kite}}]]。
+** 掉落{{tr|Bacon}}的几率由 33% 降低至 6.67%。
+** {{tr|Hallow Pigron}}不再掉落[[{{tr|Blessed Apple}}]]。
+** 现在可以在{{tr|Red Ice Blocks}}上生成。}}
+{{history|Desktop 1.3.0.1|
+** 现在有几率掉落[[{{tr|Bacon}}]]。
+** {{tr|Sprites updated.}}旧{{tr|sprites}}为：[[File:Corruption Pigron (old).png|link=]] [[File:Hallow Pigron (old).png|link=]] [[File:Crimson Pigron (old).png|link=]]。
+** 现在具有多个种类。}}
+{{history|Desktop 1.2.3|
+** 现在有几率在在朝玩家移动时发出咆哮。
+** 现在在遇到玩家时不在发出 {{tr|boss}} 召唤时的咆哮声音。}}
+{{history|Desktop 1.2.0.3|现在会掉落[[{{tr|Pigron Banner}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在有几率掉落{{tr|Bacon}}。
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** 现在具有多个种类。}}
+{{history|Console 1.06|现在有几率在在朝玩家移动时发出咆哮。}}
+{{history|Console 1.02|introduced=y|与{{tr|Banner}}一起引入。}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** 现在有几率掉落{{tr|Bacon}}。
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** 现在具有多个种类。}}
+{{history|Mobile 1.2.11212|现在有几率在在朝玩家移动时发出咆哮。}}
+{{history|Mobile 1.2.6508|introduced=y|与{{tr|Banner}}一起引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Pigron}}

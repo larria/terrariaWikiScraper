@@ -1,0 +1,73 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3543
+| debuff = Daybroken / 5 / 100%
+| sound1 = Item 14.wav
+| soundcaption1 = {{gameText|ProjectileName.DaybreakExplosion}}
+| idprojectile = 636, 953
+| listcat = {{tr|projectile melee}}{{!}}+
+| hardmode = yes
+}}
+[[File:Daybreak (demo).gif|frame|将{{tr|The Daybreak}}用在[[{{tr|Target Dummy}}]]上。每根插入假人的{{tr|spears}}都会提高{{tr|the debuff}}的效果。]]
+
+'''{{tr|Daybreak}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|melee weapon}}]]，可以发射受重力影响的{{tr|sun spear}}{{tr|projectiles}}。当命中[[{{tr|enemy}}]]后，会插在目标上，造成{{tr|damage}}并施加[[{{tr|Daybroken}}]][[{{tr|Debuffs}}]]，每 0.25 {{tr|seconds}}造成 25 {{tr|damage}}，持续 5 {{tr|seconds}}。一次最多可以对单个{{tr|enemy}}插上 8 个{{tr|sun spear}}{{tr|projectiles}}，使{{tr|debuff}}达到 800 {{DPS}}。{{source code ref|v=1.4.4.9|field=Terraria.Projectile._javelinsMax8|method=Terraria.Projectile.Damage / Terraria.Projectile.StatusNPC / Terraria.NPC.UpdateNPC_BuffApplyDOTs / Terraria.Projectile.AI|t=<code>Terraria.Projectile.AI</code> 中的相关部分为 <code>aiStyle == 113</code> 代码段。}}受到此{{tr|debuff}}影响的{{tr|Enemies}}死亡时会对周围 6.25 格内的{{tr|enemy}}造成此{{tr|debuff}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.HitEffect}}
+
+此外，{{tr|the Daybreak}}能够引发{{tr|solar explosions}}，造成等同于{{tr|weapon}}{{tr|base damage}}的伤害并施加{{tr|Daybroken debuff}}，但无法[[{{tr|Critical hit}}]]{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}。{{tr|Solar Explosions}}会在下列任一事件发生时产生：
+* 附着在目标上的{{tr|sun spear}}的持续时间结束。
+* 附着了{{tr|sun spear}}的目标死亡。
+* {{tr|sun spear}}与[[{{tr|blocks}}|{{tr|solid block}}]]碰撞。
+* {{tr|sun spear}}击中已经附着了八根{{tr|sun spear}}的目标。
+
+其最佳{{tr|modifier}}是'''{{tr|Ruthless}}'''。由于{{tr|Daybreak}}的部分伤害输出来源于不能{{tr|critical hit}}的{{tr|Solar Explosions}}，{{tr|critical hit chance}}{{tr|bonuses}}相较于直接增加伤害不太有效。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Daybreak|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|Melee speed}}]]强化会增加{{tr|Daybreak}}的{{tr|spears}}的[[{{tr|velocity}}]]（这会让它们飞行更远距离），但对此{{tr|weapon}}的发射频率没有影响。
+* {{tr|The sun spear}}在发射后 {{duration|23 ticks}}内不受[[{{tr|gravity}}]]影响。
+* {{tr|sun spear}}可以从下列{{tr|items}}获得造成{{tr|debuff}}的效果，但是{{tr|Solar Explosions}}不能：
+** [[{{tr|Flasks}}]]。
+** 来自[[{{tr|Frost armor}}]]的[[{{tr|Frostbite}}]]。
+** 来自[[{{tr|Magma Stone}}]]{{tr|or its upgrades}}的[[{{tr|Hellfire}}]]。
+* 每根{{tr|sun spear}}都拥有其自己的{{tr|Daybroken}}{{tr|debuff}}持续时间。
+* 由于{{tr|Daybroken debuff}}的伤害无法被其他{{tr|items}}提高，其 {{DPS}} 即使在使用防御性的配装（例如使用[[{{tr|Beetle Shell}}]]）时仍然可观。
+* {{tr|Solar Explosion}}的大小是随机的。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill <!-- projectile 636 creates 953 when expired-->/ Terraria.Projectile.AI <!-- aiStyle==117 sets projectile scale-->|t=<code>Terraria.Projectile.AI</code> 中的相关部分为 <code>aiStyle == 117</code> 代码段。爆炸的大小在 0.85 倍至 2 倍之间。}}
+
+== 小贴士 ==
+* 其{{tr|projectiles}}会发出大量的光，使得探索和在黑暗中寻找{{tr|enemies}}变得更容易。
+* {{tr|The Daybreak}}在对付[[{{tr|Moon Lord}}]]和其他 [[{{tr|boss}}]] 时很有用，因为它有很高的单目标伤害。
+** 相比之下，另一把同样用{{tr|Solar Fragments}}制作的武器[[{{tr|Solar Eruption}}]]则更适合攻击多重目标，特别是在[[{{tr|Lunar Events}}]]之类的{{tr|events}}中时。
+
+== 花絮 ==
+* {{tr|Daybreak}}和{{tr|Solar Eruption}}造成的[[{{tr|Daybroken}}]]{{tr|debuff}}实际上并没有自己的{{tr|debuff}}图标，因为此{{tr|debuff}}并不能施加在{{tr|players}}身上。它用[[{{tr|Stardust Dragon}}]]{{tr|buff}}的图标作为内部占位符。
+* {{tr|The sun spear}}类似于[[{{tr|Drakanian}}]]与[[{{tr|Drakomire Rider}}]]所使用的{{tr|spears}}。
+* {{tr|Daybreak}}的功能和{{维基百科|Javelin|标枪}}类似，标枪是一种较小的矛，不同于长矛主要用于近身攻击，其主要用于投掷。
+* {{wiktionary|daybreak|破晓（daybreak）}}意思是早晨第一次出现日光的时间，即黎明（dawn）。
+* 它可以视为[[{{tr|Bone Javelin}}]]的更强力且非消耗性的升级版，因为它的{{tr|projectiles}}受重力影响并且会插在{{tr|enemies}}身上随时间推移造成伤害。
+** 然而，{{tr|Daybreak}}是{{tr|melee weapon}}，而{{tr|Bone Javelin}}是{{tr|ranged weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1.1|{{tr|Projectiles}}现在当插在闭合的[[{{tr|Moon Lord}}]]{{tr|Eye}}上时会爆炸。}}
+{{history|Desktop 1.4.1|{{tr|Projectiles}}现在会在持续时间耗尽或击中墙时爆炸。爆炸造成和{{tr|weapon}}相同的{{tr|damage}}，并且还可以击中附近的{{tr|enemies}}。}}
+{{history|Desktop 1.4.0.1|现在即使攻击一击杀死了目标，它也会将{{tr|debuff}}蔓延到附近的{{tr|enemies}}身上。}}
+{{history|Desktop 1.3.0.4|修正了{{tr|Daybroken debuff}}会蔓延至友方 {{tr|NPC}} 并杀死他们的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Luminite
+| show-solar = yes
+}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Daybreak}}

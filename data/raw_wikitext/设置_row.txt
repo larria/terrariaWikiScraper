@@ -1,0 +1,24 @@
+<includeonly><!--
+
+--><tr><!--
+	--><td align="center"><!--
+		--><div>'''{{{name}}}'''</div><!--
+		--><div><!--
+			// display {{{options}}} (slash-separated list) with {{comma|or=y}}
+			-->{{#af_pipeline:{{{options|}}}<!--
+				-->|{{#af_split:{{{prev}}}|/}}<!-- turn into a list of unnamed template parameters
+				-->|{{#af_merge:{{{prev}}}|{{#af_object:or=y}}}}<!-- add "|or=y" to the template parameters
+				-->|{{#af_template:comma|{{{prev}}}}}<!-- transclude {{comma}}
+			-->}}<!--
+		--></div><!--
+	--></td><!--
+	--><td align="center">{{{default|{{na}}}}}</td><!--
+	--><td><nowiki/>
+{{{description|}}}</td><!--
+--></tr><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Settings/row}}
+</noinclude>

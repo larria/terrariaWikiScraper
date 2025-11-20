@@ -1,0 +1,28 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars -->
+|-
+| {{item|{{{name|}}}|image={{{name|}}}.png|id={{{itemid|}}}|mode=table|class=alignleft block}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| {{#or:{{formatnum:{{{velocity|}}}}}| data-sort-value=0 {{!}} {{note|small=y|???}} }}
+| {{#expr:{{getProjectileInfo|{{iteminfo|{{{itemid|}}}|shoot}}|extraUpdates}}+1}}
+| {{#if:{{{knockback|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{knockback|}}}+1}}|<!-- if not is_number($knockback)
+		-->{{#dplreplace:{{{knockback|}}}|\(({{#dplvar:_kbs}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "knockback" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{knockback|}}}}}<br/>{{note|small=y|block=y|({{knockback|{{{knockback|}}}}})}}<!-- 
+	-->}}<!--
+-->|<!--
+	-->data-sort-value=0 {{!}} {{note|small=y|???}}<!--
+-->}}
+| {{#if:{{{hardmode|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{{sell|}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Arrows/row}}
+</noinclude>

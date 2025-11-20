@@ -1,0 +1,70 @@
+{{exclusive|1.3.0.1|old-gen=y}}
+{{item infobox | boxwidth = 23em
+| auto = 17
+| imagealt = [[File:Copper Watch.png|link=]] [[File:Tin Watch.png|link=]] [[File:Silver Watch.png|link=]] [[File:Tungsten Watch.png|link=]] [[File:Gold Watch.png|link=]] [[File:Platinum Watch.png|link=]]
+| name = Watches
+| rare = @@@@ {{note|paren=y|{{tr|Gold}}/{{tr|Platinum}}}} /<br/>{{iteminfo|Silver Watch|rare}} {{note|paren=y|{{tr|Silver}}/{{tr|Tungsten}}/{{tr|Copper}}/{{tr|Tin}}}}
+| sell = @@@@ {{note|paren=y|{{tr|Gold}}}} /<br/>{{iteminfo|Platinum Watch|sell}} {{note|paren=y|{{tr|Platinum}}}} /<br/>{{iteminfo|Silver Watch|sell}} {{note|paren=y|{{tr|Silver}}}} /<br/>{{iteminfo|Tungsten Watch|sell}} {{note|paren=y|{{tr|Tungsten}}}} /<br/>{{iteminfo|Copper Watch|sell}} {{note|paren=y|{{tr|Copper}}}} /<br/>{{iteminfo|Tin Watch|sell}} {{note|paren=y|{{tr|Tin}}}}
+| tags = informational / watches
+| id = 15–17, 707–709
+| cargo = no
+}}
+{{float file box|float=right|title=所有{{tr|Watches}}的[[{{tr|Toggles}}|{{tr|Toggle}}]]{{tr|icons}}|{{inline block|css=width:50%;line-height:2.5|{{icon|desktop}}<br/>[[File:Watch toggle.png|link=]]}}{{inline block|css=width:50%;line-height:2|{{icon|mobile}}<br/>[[File:Watch toggle (mobile).png|link=]]}}}}
+
+'''{{tr|Watches}}'''是一类[[{{tr|Informational Accessories}}]]，可以在屏幕右上方显示当前游戏中的[[{{tr|Time of day}}|时间]]。
+
+{{tr|watch}}的准确度由制作所需的{{tr|metal bars}}的类型决定：
+
+* [[{{tr|Copper Watch}}]]和[[{{tr|Tin Watch}}]]显示精确至小时的时间，向下取整。
+* [[{{tr|Silver Watch}}]]和[[{{tr|Tungsten Watch}}]]显示精确至半小时的时间，向下取整。
+* [[{{tr|Gold Watch}}]]和[[{{tr|Platinum Watch}}]]显示精确至分钟的时间，向下取整。
+
+{{tr|Watches}}可在相邻放置的[[{{tr|Table}}]]和[[{{tr|Chair}}]]处制作。
+
+时间的显示可以通过{{icon|desktop}}在{{tr|inventory}}打开时点击{{tr|minimap}}下方的{{tr|watch}}图标或{{icon|console|mobile}}在{{tr|equipment}}菜单中选择{{tr|watch}}图标进行切换。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE % Watch|expectedrows=6}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Watch|expectedrows=8}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+
+== 历史 ==
+{{history|Desktop 1.3.1|所有{{tr|watches}}{{tr|Sprites updated}}。
+** [[File:Copper Watch (old).png]] → [[File:Copper Watch.png]] [[File:Silver Watch (old).png]] → [[File:Silver Watch.png]] [[File:Gold Watch (old).png]] → [[File:Gold Watch.png]]
+** [[File:Tin Watch (old).png]] → [[File:Tin Watch.png]] [[File:Tungsten Watch (old).png]] → [[File:Tungsten Watch.png]] [[File:Platinum Watch (old).png]] → [[File:Platinum Watch.png]]}}
+{{history|Desktop 1.3.0.1|{{tr|Gold and Platinum Watches}}现在用于制作{{tr|GPS}}/{{tr|Cell Phone}}。}}
+{{history|Desktop 1.2.4|修正了显示时间时表上显示两个':'的 bug。}}
+{{history|Desktop 1.2|{{tr|Introduced}}{{tr|Tin, Tungsten, and Platinum Watches}}。|nocat=1}}<!-- just introducing things, those categories are taken care of separately -->
+{{history|Desktop 1.1|现在用于制作[[{{tr|Timer}}]]和[[{{tr|GPS}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced}}{{tr|Copper, Silver, and Gold Watches}}。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Sprites updated}}为与{{tr|Desktop}} 1.3.1 一致。
+** {{tr|Gold Watches and Platinum Watches}}现在用于制作{{tr|the GPS/Cell Phone}}。}}
+{{history|Console 1.02|{{tr|Introduced}}{{tr|Tin, Tungsten, and Platinum Watches}}。|nocat=1}}<!-- see above -->
+{{history|Console-Release|{{tr|Introduced}}{{tr|Copper, Silver, and Gold Watches}}，用于制作{{tr|Timers and the GPS}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 再次变得可制作。
+** 现在功能正常了。
+** 现在可在{{tr|inventory}}中发挥作用。
+** {{tr|Copper, Silver, and Gold Watches}}重新用于制作{{tr|Timers}}。
+** {{tr|Tin Watches, Tungsten Watches, and Platinum Watches}}现在用于制作{{tr|Timers}}。
+** {{tr|Platinum Watches and Gold Watches}}现在用于制作{{tr|the GPS/Cell Phone}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}{{tr|Tin, Tungsten, and Platinum Watches}}，但无法制作；使得{{tr|Copper, Silver, and Gold Watches}}无法制作并不出现在{{tr|recipes}}中。}}<!-- not nocat, since it does something to Watches as a whole -->
+{{history|Mobile-Release|{{tr|Introduced}}{{tr|Copper, Silver, and Gold Watches}}，但无功能。}}
+
+{{Watches}}
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+[[Category:配饰物品]]
+[[Category:桌子和椅子]]
+
+{{language info|en=Watches}}

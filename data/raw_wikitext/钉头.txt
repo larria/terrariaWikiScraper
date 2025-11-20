@@ -1,0 +1,44 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 463
+| image = Nailhead.gif
+| environment = Solar Eclipse
+| damage2 = &#32;{{note|small=y|paren=y|接触}}<br/>{{modes|{{#expr:{{npcinfo|463|damage}}*0.15*2}}|{{#expr:{{npcinfo|463|damage|expert}}*0.15*4}}|{{#expr:{{npcinfo|463|damage|master}}*0.15*6}}}} {{note|small=y|paren=y|{{gameText|ProjectileName.Nail}}}}
+| custom:Nail Gun/Nail|{{item|Nail Gun}}
+: + {{item|Nail}} (100–200)|{{modes|4%|7.84%}}
+| idprojectile = 498
+| hardmode = yes
+}}
+
+'''{{tr|Nailhead}}'''是一个稀有的[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|enemy}}]]，在[[{{tr|Solar Eclipse}}]][[{{tr|event}}]]期间生成。除了高额的接触{{tr|damage}},{{tr|Nailhead}}在受到攻击时有 {{chance|1/3}} 的概率以扩散状发射三至五个{{tr|Nail projectiles}}。它不仅有着比其他{{tr|Solar Eclipse}}{{tr|enemy}}明显更高的{{tr|health}}，而且还有着高额的[[{{tr|knockback}}]]抗性。
+
+{{tr|Nailhead}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;KillsToBanner}}
+
+== 备注 ==
+* {{tr|Nails}}每发射一次后会有半秒的冷却时间。{{source code ref|v=1.4.1.2|method=Terraria.NPC.AI_003_Fighters}}
+
+== 小贴士 ==
+* 尽管有着高额{{tr|health}}并能造成高{{tr|damage}}，{{tr|Nailhead}}却比{{tr|Solar Eclipse}}中的{{tr|enemies}}移动的更慢，这使它更易受多重{{tr|damage}}影响。
+* {{tr|Nailhead}}的接触{{tr|damage}}是极高的，因此在近距离和{{tr|Nailhead}}战斗很危险。
+* 在[[{{tr|Expert Mode}}]]下，尤其是[[{{tr|Master Mode}}]]，{{tr|Nails}}变得同{{tr|Nailhead}}本身一样致命。从远距离造成伤害至关重要，最好是在其射程外进行攻击。
+
+== 花絮 ==
+* {{tr|The Nailhead}}参考了 1987 年的英国超自然恐怖电影{{wikipedia|Hellraiser|《养鬼吃人（Hellraiser）》}}中的角色 {{wikipedia|Pinhead (Hellraiser)|Pinhead}}<ref>[https://twitter.com/CrownoO/status/558347401141161985 Crowno on Twitter]</ref>。
+{{Bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Solar Eclipse Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Nailhead}}

@@ -1,0 +1,45 @@
+{{item infobox
+| auto = 951
+| idprojectile = 166
+| type = Furniture / Weapon
+| damage =<!-- Remove the -1 damage display -->
+| knockback =<!-- Remove 0 knockback display -->
+| width = 3 | height = 3
+| sounduse = Item 11.wav
+| sound1 = Item 51.wav
+| soundcaption1 = 碰撞
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+{{dablink|不要与伤害性[[{{tr|Snowball}}]]{{tr|launcher}}[[{{tr|Snowball Cannon}}]]或高伤害[[{{tr|Hardmode}}]][[{{tr|Launcher}}]][[{{tr|Snowman Cannon}}]]相混淆。}}
+[[File:Snowball Launcher (demo).gif|thumb|420x420px|{{tr|the Snowball Launcher}}的动画。]]
+
+'''{{tr|Snowball Launcher}}'''是一种[[{{tr|pre-Hardmode}}]]的[[{{tr|placement}}|可放置]] {{tr|weapon}}，{{eicons|1.4.4|invert=y}}用[[{{tr|Snowball}}]]作为{{tr|ammunition}}。放置后，在其上点击{{key|use}}它会发射单个{{tr|snowball}}，按住则会快速连续发射{{tr|snowballs}}，在大约三十度角范围内散射。[[{{tr|ice biome}}]]中的[[{{tr|Snow Flinx}}]]会掉落它，几率为 {{chance|1/150}}。
+
+类似于[[{{tr|Cannon}}]]，{{tr|the Snowball Launcher}}也能由[[{{tr|wire}}]]触发。根据连接的{{tr|wire}}在{{tr|Snowball Launcher}}外观中的横向位置不同，它会发射{{tr|snowball}}（冷却时间为 1/6 秒）或转向{{tr|the wire}}所在的一侧。通过{{tr|wire}}激活{{tr|Snowball Launcher}}而发射出来的{{tr|Snowballs}}是纯装饰性的，不会造成伤害，也不会从玩家的{{tr|inventory}}中消耗掉。
+
+== 备注 ==
+* 由于他们造成的是{{tr|ranged damage}}，{{tr|Snowball Launcher}}所发射的{{tr|Snowballs}}受远程奖励影响，比如[[{{tr|Frost armor}}]]的{{tr|set bonus}}。
+** 但是，{{tr|Snowballs}}始终维持恒定的 35 {{tr|base damage}}和 3.5 {{tr|knockback}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.TileInteractionsUse}}这也不会受到{{tr|Snowball Launcher}}的{{tr|base damage}}（-1）或{{tr|knockback}}（{{iteminfo|Snowball Launcher|knockback}}）的影响。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 不再需要{{tr|ammo}}。
+** 发射的冷却时间由 10 帧降低至 7 帧。
+** 加长{{tr|projectile}}射程，减少下坠。}}
+{{history|Desktop 1.3.1|现在可以用{{tr|wire}}触发且这么做的时候会发射假{{tr|snowballs}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-misc = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Snowball Launcher}}

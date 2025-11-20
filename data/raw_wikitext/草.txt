@@ -1,0 +1,289 @@
+'''{{tr|Grass}}'''是一类{{tr|block}}，覆盖了大多数地面地形。它可让许多种不同的[[{{tr|plants}}]]在其上生长。
+
+== 天然草类型 ==
+这些类型的{{tr|grass}}会在{{tr|world}}各处天然出现。它们也可以使用其对应的[[{{tr|Seeds|link=y}}#{{tr|Grass seeds}}|{{tr|seeds}}]]来种植。此外，常规的{{tr|grass}}还可以用[[{{tr|Staff of Regrowth}}]]或{{eil|Axe of Regrowth}}来种植。
+
+如果在{{tr|grass block}}下方有空间，对应类型的[[{{tr|Vines}}]]就可以在它下方长出。在{{tr|grass}}上种植的[[{{tr|Acorn}}]]（{{tr|Mushroom grass}}除外）会生长为对应类型的[[{{tr|tree}}]]。
+<section begin=grasstypes /><!-- 此章节被[[植物]]转载 -->
+{| class="terraria lined"
+! colspan=2 | {{tr|Type}}
+! {{nowrap|[[{{tr|Soil}}]]类型}}
+! {{tr|Seeds}}
+! 备注
+|-
+| {{item|Grass|id=2|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| {{item|mode=image|Grass Seeds}}
+|
+* 在[[{{tr|Forest}}]]中和[[{{tr|Floating Islands}}]]上生成
+* 随时间天然长出[[{{tr|tree}}]]、[[{{tr|Mushroom}}]]、[[#草上的野生植物|野生{{tr|plants}}]]、[[{{tr|Daybloom}}]]、和[[{{tr|Yellow Marigold}}]]
+* 可用于种植[[{{tr|Pumpkin}}]]和[[{{tr|Sunflower}}]]
+|-
+| {{item|Corrupt grass|id=23|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| {{item|mode=image|Corrupt Seeds}}
+|
+* 在[[{{tr|The Corruption}}]]中生成
+* 随时间天然长出[[{{tr|Ebonwood tree}}]]、[[{{tr|Vile Mushroom}}]]、[[#草上的野生植物|野生{{tr|Corrupt plant}}]]、[[{{tr|Deathweed}}]]、和[[{{tr|thorny bushes}}]]
+* 发出微粒
+|-
+| {{item|Corrupt Jungle grass|id=661|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Mud Block|Mud}}
+| {{item|mode=image|Corrupt Seeds}}
+|
+* 在{{tr|Corruption}}[[{{tr|Biome spread}}|蔓延]]至[[{{tr|Jungle}}]]和[[{{tr|Underground Jungle}}]]中时生成
+* 随时间天然长出[[{{tr|Ebonwood tree}}]]、[[{{tr|Vile Mushroom}}]]、[[#草上的野生植物|野生{{tr|Corrupt plant}}]]、[[{{tr|Deathweed}}]]、和[[{{tr|thorny bushes}}]]
+|-
+| {{item|Crimson grass|id=199|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| {{item|mode=image|Crimson Seeds}}
+|
+* 在[[{{tr|The Crimson}}]]中生成
+* 随时间天然长出[[{{tr|Shadewood tree}}]]、{{eil|Vicious Mushroom|s}}、[[#草上的野生植物|野生{{tr|Crimson plant}}]]、[[{{tr|Deathweed}}]]、和[[{{tr|thorny bushes}}]]
+|-
+| {{item|Crimson Jungle grass|id=662|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Mud Block|Mud}}
+| {{item|mode=image|Crimson Seeds}}
+|
+* 在{{tr|Crimson}}[[{{tr|Biome spread}}|蔓延]]至[[{{tr|Jungle}}]]和[[{{tr|Underground Jungle}}]]中时生成
+* 随时间天然长出[[{{tr|Shadewood tree}}]]、{{eil|Vicious Mushroom|s}}、[[#草上的野生植物|野生{{tr|Crimson plant}}]]、[[{{tr|Deathweed}}]]、和[[{{tr|thorny bushes}}]]
+|-
+| {{item|Mushroom grass|id=70|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Mud Block|Mud}}
+| {{item|mode=image|Mushroom Grass Seeds}}
+|
+* 在[[{{tr|Glowing Mushroom biome}}]]中生成
+* 随时间天然长出[[{{tr|Glowing Mushroom}}]]和[[{{tr|Giant Glowing Mushroom}}]]
+* 发出黯淡光芒（{{eicons|1.4.4}}颜色会随[[{{tr|paint}}]]改变）
+|-
+| {{item|Jungle grass|id=60|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Mud Block|Mud}}
+| {{item|mode=image|Jungle Grass Seeds}}
+|
+* 在[[{{tr|Jungle}}]]和[[{{tr|Underground Jungle}}]]中生成
+* 在{{tr|Jungle}}中，随时间天然长出[[{{tr|Mahogany tree}}]]、[[#草上的野生植物|野生{{tr|Jungle plant}}]]、[[{{tr|Moonglow}}]]、和[[{{tr|Bamboo}}]]
+* 在{{tr|Underground Jungle}}中，随时间天然长出[[{{tr|Mahogany tree}}]]、[[#草上的野生植物|野生{{tr|Jungle plant}}]]、[[{{tr|Moonglow}}]]、[[{{tr|thorny bushes}}]]、[[{{tr|Jungle Spores}}]]、[[{{tr|Jungle Rose}}]]、和[[{{tr|Nature's Gift}}]]
+* 可用于种植[[{{tr|Sunflower}}]]
+|-
+| {{item|Hallowed grass|id=109|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| {{item|mode=image|Hallowed Seeds}}
+|
+* 在[[{{tr|The Hallow}}]]中生成
+* 随时间天然长出[[{{tr|Pearlwood tree}}]]、[[{{tr|Mushroom}}]]、[[#草上的野生植物|野生{{tr|Hallowed plants}}]]、和[[{{tr|Daybloom}}]]
+* 发出闪烁微粒
+* 可用于种植[[{{tr|Pumpkin}}]]和[[{{tr|Sunflower}}]]
+|-
+| {{item|Ash grass|id=633|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Ash Block|Ash}}
+| {{item|mode=image|Ash Grass Seeds}}
+|
+* 在[[{{tr|ash forest}}|{{tr|ash forests}}]]中生成
+* 随时间天然长出[[{{tr|Ash tree}}]]、[[#草上的野生植物|野生{{tr|Ash plant}}]]、和[[{{tr|Fireblossom}}]]
+* 和其他{{tr|grass types}}不同，不会被[[{{tr|lava}}]]摧毁
+* 可用于种植[[{{tr|Sunflower}}]]
+|}<section end=grasstypes />
+
+== 修剪过的草 {{eicons|Lawn Mower}} ==
+这些类型的{{tr|grass}}有一些特殊属性。''见[[{{tr|Lawn Mower}}]]获取细节。''
+<section begin=mowed grass /><!-- 此章节被[[植物]]和[[割草机]]转载 -->
+{| class="terraria"
+! colspan=2 | {{tr|Type}}
+! {{nowrap|[[{{tr|Soil}}]]类型}}
+! 来源
+|-
+| {{item|Mowed grass|id=477|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| 在{{tr|grass}}上使用{{eil|Lawn Mower|nl=<includeonly>y</includeonly><!-- no self-link on [[Lawn Mower]] -->}}
+|-
+| {{item|Mowed Hallowed grass|id=492|type=tile|mode=table|nolink=yes|anchor=yes}}
+| {{item|Dirt Block|Dirt}}
+| 在{{tr|Hallowed grass}}上使用{{eil|Lawn Mower|nl=<includeonly>y</includeonly>}}
+|}<section end=mowed grass />
+
+== 草上的野生植物 ==
+这些{{tr|weeds and flowers}}会在位于{{tr|surface}}的不同类型的{{tr|grass}}上天然生长。除了{{tr|Jungle grass, Mushroom grass, and Ash grass}}上的以外，它们不会在低于{{tr|surface}}处生长，不会在{{tr|mowed grass}}上生长。在有[[{{tr|paint}}]]的{{tr|grass blocks}}上生长的{{tr|Plants}}（除了大型{{tr|Jungle plants}}以外）会继承{{tr|block}}的颜色。
+
+许多类型的{{tr|wild plants}}被摧毁时有几率生成[[{{tr|critter}}]]。穿着{{eil|Flower Boots}}会大幅降低摧毁{{tr|flower plants}}时的生成几率。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.KillTile_DropBait}}
+
+这些{{tr|plants}}中的一部分可用{{eil|Flower Seeds}}、{{tr|Flower Boots}}、和{{eil|Rubblemaker}}手动种植。其余的无法被手动种植。
+
+{| class="terraria lined"
+! 图像
+! {{tr|Tile ID}}
+! 生长在
+! 备注
+|-
+| [[File:Tiles 3 0.png]] [[File:Tiles 3 1.png]] [[File:Tiles 3 2.png]] [[File:Tiles 3 3.png]] [[File:Tiles 3 4.png]] [[File:Tiles 3 5.png]]
+| 3<br/><small>(0–5)</small>
+| rowspan=4 | {{item|Grass|nolink=y}}
+| rowspan=4 |
+* 被摧毁时可能生成[[{{tr|Grasshopper}}]]和[[{{tr|Worm}}]]（或其[[{{tr|Gold critter}}|{{tr|gold variants}}]]）。
+** {{eicons|Graveyard}}如果玩家位于[[{{tr|Graveyard}}]]中，[[{{tr|Maggot}}]]会代替{{tr|Worms}}生成。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 {{note|paren=y|{{tr|tile ID}} 3}} / 2–4 {{note|paren=y|{{tr|tile ID}} 73}} 个[[{{tr|Hay}}]]。
+* 若玩家的{{tr|inventory}}中有[[{{tr|Blowpipe}}]]或[[{{tr|Blowgun}}]]，掉落[[{{tr|Seed|link=y}}|{{tr|Seed}}]]（{{chance|1/2}} 几率）。
+* 仅当有[[#可让{{tr|plant}}生长的{{tr|wall}}|合适的{{tr|walls}}]]或完全没有{{tr|walls}}时可生长。
+|-
+| [[File:Tiles 3 6.png]] [[File:Tiles 3 7.png]] [[File:Tiles 3 9.png]] [[File:Tiles 3 10.png]] [[File:Tiles 3 11.png]] [[File:Tiles 3 12.png]] [[File:Tiles 3 13.png]] [[File:Tiles 3 14.png]] [[File:Tiles 3 15.png]] [[File:Tiles 3 16.png]] [[File:Tiles 3 17.png]] [[File:Tiles 3 18.png]] [[File:Tiles 3 19.png]] [[File:Tiles 3 20.png]]
+| 3<br/><small>(6–7, 9–20)</small>
+|-
+| [[File:Tiles 73 0.png]] [[File:Tiles 73 1.png]] [[File:Tiles 73 2.png]] [[File:Tiles 73 3.png]] [[File:Tiles 73 4.png]] [[File:Tiles 73 5.png]]
+| 73<br/><small>(0–5)</small>
+|-
+| [[File:Tiles 73 6.png]] [[File:Tiles 73 7.png]] [[File:Tiles 73 9.png]] [[File:Tiles 73 10.png]] [[File:Tiles 73 11.png]] [[File:Tiles 73 12.png]] [[File:Tiles 73 13.png]] [[File:Tiles 73 14.png]] [[File:Tiles 73 15.png]] [[File:Tiles 73 16.png]] [[File:Tiles 73 17.png]] [[File:Tiles 73 18.png]] [[File:Tiles 73 19.png]] [[File:Tiles 73 20.png]]
+| 73<br/><small>(6–7, 9–20)</small>
+|-
+| [[File:Tiles 24 0.png]] [[File:Tiles 24 1.png]] [[File:Tiles 24 2.png]] [[File:Tiles 24 3.png]] [[File:Tiles 24 4.png]] [[File:Tiles 24 5.png]]
+| 24<br/><small>(0–5)</small>
+| rowspan=2 | {{item|Corrupt grass|nolink=y}}<br/>{{item|Corrupt Jungle grass|nolink=y|icons=n}}
+| rowspan=2 |
+* 计入{{tr|Corruption biome}}的[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|tile}}计数]]。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 个[[{{tr|Hay}}]]。
+* 仅当有[[#可让{{tr|plant}}生长的{{tr|wall}}|合适的{{tr|walls}}]]或完全没有{{tr|walls}}时可生长。
+|-
+| [[File:Tiles 24 6.png]] [[File:Tiles 24 7.png]] [[File:Tiles 24 9.png]] [[File:Tiles 24 10.png]] [[File:Tiles 24 11.png]] [[File:Tiles 24 12.png]] [[File:Tiles 24 13.png]] [[File:Tiles 24 14.png]] [[File:Tiles 24 15.png]] [[File:Tiles 24 16.png]] [[File:Tiles 24 17.png]] [[File:Tiles 24 18.png]] [[File:Tiles 24 19.png]] [[File:Tiles 24 20.png]]
+| 24<br/><small>(6–7, 9–20)</small>
+|-
+| [[File:Tiles 201 0.png]] [[File:Tiles 201 1.png]] [[File:Tiles 201 2.png]] [[File:Tiles 201 3.png]] [[File:Tiles 201 4.png]] [[File:Tiles 201 5.png]]
+| 201<br/><small>(0–5)</small>
+| rowspan=2 | {{item|Crimson grass|nolink=y}}<br/>{{item|Crimson Jungle grass|nolink=y|icons=n}}
+| rowspan=2 |
+* 不计入{{tr|Crimson biome}}的[[{{tr|Biomes}}#{{tr|Biome}}存在要求|{{tr|tile}}计数]]。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 个[[{{tr|Hay}}]]。
+* 仅当有[[#可让{{tr|plant}}生长的{{tr|wall}}|合适的{{tr|walls}}]]或完全没有{{tr|walls}}时可生长。
+|-
+| [[File:Tiles 201 6.png]] [[File:Tiles 201 7.png]] [[File:Tiles 201 8.png]] [[File:Tiles 201 9.png]] [[File:Tiles 201 10.png]] [[File:Tiles 201 11.png]] [[File:Tiles 201 12.png]] [[File:Tiles 201 13.png]] [[File:Tiles 201 14.png]] [[File:Tiles 201 16.png]] [[File:Tiles 201 17.png]] [[File:Tiles 201 18.png]] [[File:Tiles 201 19.png]] [[File:Tiles 201 20.png]] [[File:Tiles 201 21.png]] [[File:Tiles 201 22.png]]
+| 201<br/><small>(6–14, 16–22)</small>
+|-
+| [[File:Tiles 71 0.png]] [[File:Tiles 71 1.png]] [[File:Tiles 71 2.png]] [[File:Tiles 71 3.png]] [[File:Tiles 71 4.png]]
+| 71<br/><small>(0–4)</small>
+| {{item|Mushroom grass|nolink=y}}
+|
+* 掉落[[{{tr|Glowing Mushroom}}]]，可能掉落[[{{tr|Mushroom Grass Seed}}]]。
+* 会发出环境光。
+* 计入{{tr|Glowing Mushroom biome}}的[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|tile}}计数]]。
+|-
+| [[File:Tiles 61 0.png]] [[File:Tiles 61 1.png]] [[File:Tiles 61 2.png]] [[File:Tiles 61 3.png]] [[File:Tiles 61 4.png]] [[File:Tiles 61 5.png]]
+| 61<br/><small>(0–5)</small>
+| rowspan=6 | {{item|Jungle grass|nolink=y}}
+| rowspan=6 |
+* 被摧毁时可能生成[[{{tr|Grubby}}]]、[[{{tr|Sluggy}}]]、或[[{{tr|Buggy}}]]。
+* 可能掉落[[{{tr|Jungle Grass Seed}}]]。
+* 计入{{tr|Jungle biome}}的[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|tile}}计数]]。
+* 和其他野生{{tr|plants}}不同，可在[[{{tr|Water}}|水下]]生长。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 {{note|paren=y|{{tr|tile ID}} 61}} / 2–4 {{note|paren=y|{{tr|tile ID}} 74}} 个[[{{tr|Hay}}]]。
+|-
+| [[File:Tiles 61 10.png]] [[File:Tiles 61 11.png]] [[File:Tiles 61 12.png]] [[File:Tiles 61 13.png]] [[File:Tiles 61 14.png]] [[File:Tiles 61 15.png]] [[File:Tiles 61 16.png]] [[File:Tiles 61 17.png]] [[File:Tiles 61 18.png]] [[File:Tiles 61 19.png]] [[File:Tiles 61 20.png]] [[File:Tiles 61 21.png]] [[File:Tiles 61 22.png]]
+| 61<br/><small>(10–22)</small>
+|-
+| [[File:Tiles 233 0.png]] [[File:Tiles 233 1.png]] [[File:Tiles 233 2.png]] [[File:Tiles 233 3.png]] [[File:Tiles 233 4.png]] [[File:Tiles 233 5.png]] [[File:Tiles 233 6.png]] [[File:Tiles 233 7.png]]
+| 233<br/><small>(0–7)</small>
+|-
+| [[File:Tiles 233 9.png]] [[File:Tiles 233 10.png]] [[File:Tiles 233 11.png]] [[File:Tiles 233 12.png]] [[File:Tiles 233 13.png]] [[File:Tiles 233 14.png]] [[File:Tiles 233 15.png]] [[File:Tiles 233 16.png]] [[File:Tiles 233 17.png]] [[File:Tiles 233 18.png]] [[File:Tiles 233 19.png]] [[File:Tiles 233 20.png]]
+| 233<br/><small>(9–20)</small>
+|-
+| [[File:Tiles 74 0.png]] [[File:Tiles 74 1.png]] [[File:Tiles 74 2.png]] [[File:Tiles 74 3.png]] [[File:Tiles 74 4.png]] [[File:Tiles 74 5.png]]
+| 74<br/><small>(0–5)</small>
+|-
+| [[File:Tiles 74 6.png]] [[File:Tiles 74 7.png]] [[File:Tiles 74 9.png]] [[File:Tiles 74 10.png]] [[File:Tiles 74 11.png]] [[File:Tiles 74 12.png]] [[File:Tiles 74 13.png]] [[File:Tiles 74 14.png]] [[File:Tiles 74 15.png]] [[File:Tiles 74 16.png]]
+| 74<br/><small>(6–7, 9–16)</small>
+|-
+| [[File:Tiles 110 0.png]] [[File:Tiles 110 1.png]] [[File:Tiles 110 2.png]] [[File:Tiles 110 3.png]] [[File:Tiles 110 4.png]] [[File:Tiles 110 5.png]]
+| 110<br/><small>(0–5)</small>
+| rowspan=4 | {{item|Hallowed grass|nolink=y}}
+| rowspan=4 |
+* 计入{{tr|Hallowed biome}}的[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|tile}}计数]]。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 {{note|paren=y|{{tr|tile ID}} 110}} / 2–4 {{note|paren=y|{{tr|tile ID}} 113}} 个[[{{tr|Hay}}]]。
+* 仅当有[[#可让{{tr|plant}}生长的{{tr|wall}}|合适的{{tr|walls}}]]或完全没有{{tr|walls}}时可生长。
+|-
+| [[File:Tiles 110 6.png]] [[File:Tiles 110 7.png]] [[File:Tiles 110 9.png]] [[File:Tiles 110 10.png]] [[File:Tiles 110 11.png]] [[File:Tiles 110 12.png]] [[File:Tiles 110 13.png]] [[File:Tiles 110 14.png]] [[File:Tiles 110 15.png]] [[File:Tiles 110 16.png]] [[File:Tiles 110 17.png]] [[File:Tiles 110 18.png]] [[File:Tiles 110 19.png]] [[File:Tiles 110 20.png]]
+| 110<br/><small>(6–7, 9–20)</small>
+|-
+| [[File:Tiles 113 0.png]] [[File:Tiles 113 1.png]] [[File:Tiles 113 2.png]] [[File:Tiles 113 3.png]] [[File:Tiles 113 4.png]] [[File:Tiles 113 5.png]]
+| 113<br/><small>(0–5)</small>
+|-
+| [[File:Tiles 113 6.png]] [[File:Tiles 113 7.png]]
+| 113<br/><small>(6–7)</small>
+|-
+| [[File:Tiles 637 0.png]] [[File:Tiles 637 1.png]] [[File:Tiles 637 2.png]] [[File:Tiles 637 3.png]] [[File:Tiles 637 4.png]] [[File:Tiles 637 5.png]]
+| 637<br/><small>(0–5)</small>
+| rowspan=2 | {{item|Ash grass|nolink=y|icons=n}}
+| rowspan=2 |
+* 被摧毁时可能生成[[{{tr|Hell Butterfly}}]]或[[{{tr|Lavafly}}]]。
+* 可能掉落[[{{tr|Ash Grass Seeds}}]]。
+* 用[[{{tr|Sickle}}]]收割时掉落 1–2 个[[{{tr|Hay}}]]。
+* 仅当有[[#可让{{tr|plant}}生长的{{tr|wall}}|合适的{{tr|walls}}]]或完全没有{{tr|walls}}时可生长。
+|-
+| [[File:Tiles 637 6.png]] [[File:Tiles 637 7.png]] [[File:Tiles 637 8.png]] [[File:Tiles 637 9.png]] [[File:Tiles 637 10.png]]
+| 637<br/><small>(6–10)</small>
+|}
+
+=== 可让{{tr|plant}}生长的{{tr|wall}} ===
+当某些类型的{{tr|plants}}试图生长时，{{tr|soil block}}所在的那一格和{{tr|soil block}}上方的那一格必须未被{{tr|walls}}占据，或是下方列出的{{tr|walls}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.PlaceTile|field=Terraria.ID.WallID.Sets&#46;AllowsPlantsToGrow}}
+{{itemlist/start|class=terraria|width=18em}}<!--
+-->{{#arraydefine:walls|<!--0,-->63,64,65,66,67,68,69,70,74,80,81,106,107,138,139,140,141,145,150,152,245,264,265,268,315,317|,}}<!--
+-->{{#arrayprint:walls||@@@|
+{{itemlist/item|{{wall|id=@@@}}}}
+}}<!--
+-->{{itemlist/end}}
+
+== 蔓延 ==
+{{about|section=y|{{tr|grass}}在空余的{{tr|soils}}上的蔓延|一类{{tr|grass}}转化另一类{{tr|grass}}的细节|{{tr|Biome spread}}#{{tr|Grass}}}}
+
+任何类型的{{tr|Grass}}都会从现有的{{tr|block}}{{tr|spreads}}到恰当土壤类型的其他{{tr|blocks}}上。但有下列限制：
+* 纯净{{tr|grass}}，{{tr|mowed grass}}和{{tr|mowed Hallowed grass}}无论如何都不会在[[{{tr|surface}}]]以下蔓延。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_UndergroundTile|field=Terraria.ID.TileID.Sets&#46;SpreadUnderground}}玩家需要位于[[{{tr|surface}}]]上至少 4 英尺高（[[{{tr|Depth Meter}}]]的读数）的位置，脚下的{{tr|grass}}才能蔓延。
+* {{tr|Grass}}只会{{tr|spreads}}至相邻{{tr|tiles}}，即，直接围绕着{{tr|grass block}}的八个{{tr|tiles}}中的{{tr|block}}。
+* {{tr|Grass}}不会{{tr|spread}}到其相邻{{tr|tile}}中有[[{{tr|lava}}]]的{{tr|block}}上。
+* {{tr|Grass}}只会{{tr|spreads}}到其相邻{{tr|tiles}}中至少有一格空位的{{tr|tile}}上（即{{tr|grass}}不会蔓延到被八个{{tr|solid blocks}}完全围绕的{{tr|block}}上）。
+
+另外：
+* {{tr|Dirt Blocks and Mud Blocks}}对于两种{{tr|evil grasses}}都是可用的土壤。例如，{{tr|Corrupt Jungle grass}}可蔓延到{{tr|Dirt Blocks}}上（产生普通的{{tr|Corrupt grass}}），而普通的{{tr|Corrupt grass}}可蔓延到{{tr|Mud Blocks}}上（产生{{tr|Corrupt Jungle grass}}）。
+* {{tr|The mowed grasses}}也能蔓延到相邻的{{tr|Dirt Blocks}}上（仅限{{tr|surface}}以上），但产生的新{{tr|grass}}是未修剪过的。
+* 涂上[[{{tr|paint}}]]的{{tr|grass}}也会将其{{tr|paint}}蔓延。
+* {{tr|Corruption and Crimson}}[[{{tr|thorny bushes}}]]可以在相邻的{{tr|Dirt Blocks}}上产生{{tr|Corruption}}/{{tr|Crimson grass}}{{eicons|Corrupt Jungle grass}}并在相邻的{{tr|Mud Blocks}}上产生{{tr|Corrupt}}/{{tr|Crimson Jungle grass}}。
+
+== 小贴士 ==
+* 在采挖带{{tr|grass}}的{{tr|blocks}}时，{{tr|the grass}}会吸收[[{{tr|pickaxe}}]]/[[{{tr|drill}}]]的第一次打击。因此，与采挖大多数{{tr|blocks}}不同，高[[{{tr|mining speed}}]]的{{tr|tool}}总是会比较慢的{{tr|tool}}表现更好，哪怕较慢的那个有着更高的[[{{tr|pickaxe power}}]]。这意味着[[{{tr|Hardmode}}]]之前的最佳挖{{tr|grass}}{{tr|item}}是[[{{tr|Bone Pickaxe}}]]。理论上，{{eil|Shroomite Digging Claw}}是所有{{tr|hardmode tools}}中速度最快的。
+** 这在[[{{tr|Jungle}}]]{{tr|biome}}变得尤为重要，因为其中{{tr|Jungle grass}}横生。
+
+== 花絮 ==
+[[File:Unused grasses.png|thumb|200px|两个未使用的{{tr|grass}}图像的例子。]]
+
+* 在游戏文件中，有另外两种未使用的{{tr|grass}}类型的图像，<code>Tiles_2_Beach.xnb</code> 和 <code>Tiles_199-gross.xnb</code>。前者是一种类似于{{tr|Jungle Grass}}的黄绿色的{{tr|grass}}，但它是长在{{tr|dirt}}上的，可能原本是[[{{tr|Ocean}}]]的{{tr|grass variant}}。后者是[[{{tr|Flesh Block}}]]的变体，但是作为{{tr|grass}}设计的。
+** {{tr|Crimson grass}}在内部被称为 <code>FleshGrass</code>（血肉草），因此第二个草的变体可能是早期{{tr|crimson grass}}的外观。
+
+== 图库 ==
+<gallery>
+Mushroom Grass Light Source example.jpg|由{{tr|Mushroom grass}}提供的亮光。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Ash grass}}。
+** {{tr|Corrupt grass and Crimson grass}}现在可以在{{tr|Mud Block}}上生长和蔓延。
+** 现在{{tr|Mushroom grass}}在涂上[[{{tr|paint}}]]会发出不同颜色的光。}}
+{{history|Desktop 1.4.0.1|
+** 人工{{tr|Jungle biomes}}现在需要 140 块{{tr|Jungle grass blocks}}而非 100 块。
+** 添加了{{tr|mowed grass}}。
+** {{tr|Jungle grass}}上的{{tr|Wild plants}}和{{tr|Glowing Mushrooms}}不再能生长于[[{{tr|Actuator}}|被致动]]的{{tr|blocks}}上（这曾经会导致它们立即被破坏并掉落{{tr|item}}供收集）。}}
+{{history|Desktop 1.2.4|
+** 替换了被包围时的{{tr|grass}}的图像。
+** 现在当玩家用实心图格覆盖{{tr|Grass}}时会将它移除。}}
+{{history|Desktop 1.2.3|
+** [[{{tr|Acorns}}]]现在可以种在所有类型的{{tr|grass}}上了。
+** {{tr|Corrupt grass}}、{{tr|Crimson grass}}、和{{tr|Hallowed grass}}{{tr|wall}}蔓延地更远了。
+** 修正了玩家不能用[[{{tr|Dirt Rod}}]]拾起{{tr|crimson grass}}和{{tr|hallowed grass}}的问题。}}
+{{history|Desktop 1.2|引入了{{tr|Crimson grass}}种类。}}
+{{history|Desktop 1.1|引入了{{tr|Hallowed grass}}种类。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+[[Category:环境]]
+
+{{language info|en=Grasses}}

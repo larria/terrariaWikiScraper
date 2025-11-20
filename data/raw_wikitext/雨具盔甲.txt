@@ -1,0 +1,95 @@
+{{infobox wrapper|direction=row|float=right|
+{{item infobox
+| name = Rain armor
+| namesub = {{eicons|1.3.0.1}}
+| autoimageold = no <!-- no need to place; uses in next infobox -->
+| type = Armor/Set
+| tags = drop
+}}
+{{item infobox
+| name = Rain set
+| namesub = {{eicons|1.3.0.1|invert=y}}
+| image = Rain armor (old).png
+| imagefemale = Rain armor female (old).png
+| type = Vanity/Set
+| tags = drop
+| rare = {{rare|1}}
+| sell = {{sc|4}} {{note|set|paren=y}}
+}}
+}}
+{{drop infobox|Rain Hat/Rain Coat|style=clear:right}}
+
+'''{{tr|Rain armor}}'''或者'''{{tr|Rain set}}'''是一套[[{{tr|armor}}]]/[[{{tr|Vanity items}}]]套装，包含'''{{tr|Rain Hat}}'''和'''{{tr|Rain Coat}}'''。在{{eversions|1.3.0.1}}上视作{{tr|armor}}。在{{eversions|1.3.0.1|invert=y}}上，该套装仅作为{{tr|vanity items}}，在装备时也不提供[[{{tr|Defense}}]]。
+
+每个部件有{{etext|{{chance|1/40}}|e=1.4.4}} / {{etext|{{chance|1/20}}|e=1.4.4|invert=y}}的概率掉落自[[{{tr|Rain Coat Zombie}}]]。
+
+== 套装 ==
+'''{{eversions|1.3.0.1}}'''
+{{infobox wrapper|direction=row|float=none|
+{{item infobox
+| type = Armor
+| auto = 1135
+| tags = drop
+}}
+|
+{{item infobox
+| type = Armor
+| auto = 1136
+| tags = drop
+}}
+}}
+
+'''{{eversions|1.3.0.1|invert=y}}'''
+{{infobox wrapper|direction=row|float=none|
+{{item infobox
+| name = Rain Hat
+| type = Vanity
+| body slot = Social Helmet
+| stack = 1
+| rare = {{rare|1}}
+| sell = {{sc|2}}
+| id = 1135
+| cargo = no
+}}
+|
+{{item infobox
+| name = Rain Coat
+| type = Vanity
+| stack = 1
+| body slot = Social Shirt
+| rare = {{rare|1}}
+| sell = {{sc|2}}
+| id = 1136
+| cargo = no
+}}
+}}
+
+== 花絮 ==
+* {{tr|Rain armor}}是目前游戏中两种只有两个部件的{{tr|armor sets}}之一，另一种是[[{{tr|Wizard set}}]]。
+* {{eicons|1.4.4|invert=y}} {{Armornosetbonus}}
+* 虽然{{tr|Rain armor}}与[[{{tr|Snow armor}}]]都掉落自特定天气才能生成的{{tr|enemy}}，由于[[{{tr|Snow armor}}]]有三个部件，所以实际上{{tr|Snow armor}}更稀有。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated}}——帽子在装备时会显示下方的头发，大衣也不再移除{{tr|female shirts}}，使它们被装备时的外观由[[File:Rain armor (old).png]] [[File:Rain armor female (old).png]]改为[[File:Rain armor.png]] [[File:Rain armor female.png]]。}}
+{{history|Desktop 1.3.2|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在提供{{tr|defense}}（之前为[[{{tr|vanity}}]]{{tr|set}}）。
+** {{tr|Rarity}}由蓝色变为白色。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 将外观更新到与{{tr|Desktop}} 1.3.2 一致。
+** 现在提供{{tr|defense}}（之前为{{tr|vanity}}{{tr|set}}）。
+** {{tr|Rarity}}由蓝色变为白色。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-main = yes
+| show-vanity = yes
+}}
+{{exclusive|1.3.0.1|nobanner=y}}<!-- The set functions as ARMOR on the desktop version, and CLOTHES on the old-gen versions. No banner as the page lists info for all versions -->
+
+{{language info|en=Rain armor}}

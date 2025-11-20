@@ -1,0 +1,1534 @@
+{{quotation|[[File:Emote Town Merchant.gif|link=]] [[{{tr|Merchant}}]]|{{gameText|LegacyDialog.11}}}}
+{{dablink|不要与伤害减免属性[[{{tr|Defense}}]]相混淆。}}
+{{see also|指南:{{tr|Armor}}进程}}
+
+'''{{tr|Armor}}'''是一套可装备的[[{{tr|defense item}}]]，能降低[[{{tr|enemies}}]]和大多数其他伤害源所造成的伤害。{{tr|Armor}}部件通过放置在玩家的[[{{tr|inventory}}]]的{{tr|Armor}}栏中进行装备。{{tr|Armor}}也可以放在[[{{tr|Inventory|link=y}}#{{tr|Vanity armor}}（3 栏位）|{{tr|vanity slots}}]]中来改变玩家的外貌同时又不影响属性。{{tr|Armor}}散件也可以[[{{tr|craft}}]]得到、从 {{tr|npc}} 处购买、或掉落自{{tr|enemies}}。
+
+每件{{tr|armor}}都有[[{{tr|defense}}]]属性，能将所受到的伤害的数值减少其数值的一半 / {{expert|75%}} / {{master|全部}}，向上取整。例如，全套[[{{tr|Copper armor}}]]一共提供了 {{#vardefineecho:copper_def|{{#expr:{{getSetInfo|Copper armor|defense|note=n|rawdefense=y}}+{{getSetInfo|Copper armor|setbonusdefense}}}}}} 防御，能降低 {{#expr:ceil({{#var:copper_def}}/2)}} / {{expert|{{#expr:ceil({{#var:copper_def}}*3/4)}}}} / {{master|{{#var:copper_def}}}} 点伤害。[[{{tr|Silver armor}}]]一共有 {{#vardefineecho:silver_def|{{#expr:{{getSetInfo|Silver armor|defense|note=n|rawdefense=y}}+{{getSetInfo|Silver armor|setbonusdefense}}}}}} 防御，向上取整后能降低 {{#expr:ceil({{#var:silver_def}}/2)}} / {{expert|{{#expr:ceil({{#var:silver_def}}*3/4)}}}} / {{master|{{#var:silver_def}}}} 点伤害。攻击通常不会降到零，无论玩家的{{tr|armor}}质量如何，所有的攻击总是会造成至少 1 伤害（对于[[{{tr|critical hit}}]]则是 2 伤害）。攻击造成 0 伤害的情况只有玩家不管因为什么原因处于无敌状态或在同一团队中有玩家装备着[[{{tr|Paladin's Shield}}]]且此攻击在正常情况下是造成 1 伤害的。
+
+在单件{{tr|Armor}}提供的{{tr|defense}}之外，大多数{{tr|armor}}类型在同时穿上同一{{tr|Armor}}类型的全部三个部件时会提供'''{{tr|Set Bonus}}'''<!-- bolded because the page [[Set Bonus]] redirects here and it's an important part of the armor topic -->对于基本的[[{{tr|pre-Hardmode}}]]的[[{{tr|Ore}}]]{{tr|armors}}（[[{{tr|Copper armor}}]]到[[{{tr|Platinum armor}}]]），这就是额外的一点防御力。更高级的或独特的{{tr|Armors}}能提供其他专门的{{tr|set bonuses}}（例如，[[{{tr|Shroomite Armor}}]]提供了在不移动时隐身的能力）。
+
+在所有游戏平台上，[[{{tr|pre-Hardmode}}]]可获得 35 套不同的{{tr|armor sets}}；[[{{tr|Hardmode}}]]中可获得 35 套不同的{{tr|armor sets}}；8 件{{tr|robes}}和 2 顶{{tr|wizard hats}}会给予额外的{{tr|buffs}}；还有 12 件其他{{tr|armor}}散件。
+
+对于 {{eil|1.4.4.9}} 中所有{{tr|armor}}部件的原始数据可排序列表，见[[{{tr|Armor stat table}}]]。
+
+== 盔甲套装 ==
+=== 困难模式之前 ===
+{| class="terraria sortable" style="width:100%"
+|-
+! class="unsortable" rowspan=2 |外观
+! width=80 rowspan=2 | 套装
+! colspan = 4 | 防御
+! class="unsortable" rowspan=2 | 奖励 / 效果 / 备注
+! class="unsortable" rowspan=2 | {{tr|Cost}} / 来源 / 制作于
+|-
+! style="font-size:12px;" data-sort-type=number | 头部
+! style="font-size:12px;" data-sort-type=number | 胸部
+! style="font-size:12px;" data-sort-type=number | 腿部
+! style="font-size:100%;" data-sort-type=number | 共计
+|-
+| [[File:Mining armor.png|link=]] [[File:Mining armor female.png|link=]] [[File:Ultrabright Helmet (equipped).png|link=]]
+| {{item|mode=text|wrap=y|Mining armor}}
+| style="text-align:center" data-sort-value=2 |
+'''{{tr|Ultrabright Helmet}}：''' 4 <br/>
+'''{{tr|Mining Helmet}}：''' 2 {{eicons|1.4.4|small=y}}<br/>1 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" data-sort-value=4 |
+'''{{tr|Ultrabright Helmet}}：''' 6 <br/>
+'''{{tr|Mining Helmet}}：''' 4 {{eicons|1.4.4|small=y}}<br/>3 {{eicons|1.4.4|invert=y|small=y}}
+| class="small" |
+* +20% [[{{tr|mining speed}}]]
+* '''{{tr|Set Bonus}}：''' +10% {{tr|mining speed}}（总共 +30%）
+* '''效果：'''{{tr|Helmet}}部件会发光。
+* {{tr|Mining Helmet}}和[[{{tr|Ultrabright Helmet}}]]可以互换
+| style="text-align:center" | {{item|mode=image|Merchant}} {{item|mode=image|Undead Miner}}
+'''{{tr|Mining Helmet}}：'''由[[{{tr|Merchant}}]]以 {{gc|4}} {{eicons|1.3.0.1}} / {{gc|8}} {{eicons|1.3.0.1|invert=y}} 的价格出售<br/>
+: {{eicons|1.3.0.1}} {{tr|Helmet}}也掉落自[[{{tr|Undead Miner}}]]<br/>
+'''{{tr|Ultrabright Helmet}}：'''使用{{tr|Mining Helmet}}和{{Item|Night Vision Helmet}}在{{Item|Tinkerer's Workshop}}制作<br/>
+'''{{tr|Pants}}和{{tr|Shirt}}：'''掉落自{{tr|Undead Miner}}
+|- class="topline"
+| [[File:Wood armor.png|link=]] [[File:Wood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Wood armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" data-sort-value=0 | 0 {{eicons|1.3.0.1|small=y}}<br/>1 {{eicons|1.3.0.1|invert=y|small=y}}
+| style="text-align:center" data-sort-value=3 | 3 {{eicons|1.3.0.1|small=y}}<br/>{{small|(2+1)}}<br/>4 {{eicons|1.3.0.1|invert=y|small=y}}<br/>{{small|(3+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Wood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Rich Mahogany armor.png|link=]] [[File:Rich Mahogany armor female.png|link=]]
+| {{item|mode=text|wrap=y|Rich Mahogany armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 4 <br/>{{small|(3+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Rich Mahogany}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Boreal Wood armor.png|link=]] [[File:Boreal Wood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Boreal Wood armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 4 <br/>{{small|(3+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Boreal Wood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Palm Wood armor.png|link=]] [[File:Palm Wood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Palm Wood armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 1
+| style="text-align:center" | 4 <br/>{{small|(3+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Palm Wood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Ebonwood armor.png|link=]] [[File:Ebonwood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Ebonwood armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 2
+| style="text-align:center" | 1
+| style="text-align:center" | 5 <br/>{{small|(4+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Ebonwood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Shadewood armor.png|link=]] [[File:Shadewood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Shadewood armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 2
+| style="text-align:center" | 1
+| style="text-align:center" | 5 <br/>{{small|(4+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| class="small" |
+* 75 {{item|Shadewood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Ash Wood armor.png|link=]] [[File:Ash Wood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Ash Wood armor}}
+| style="text-align:center" | 2
+| style="text-align:center" | 3
+| style="text-align:center" | 2
+| style="text-align:center" | 7
+| class="small" |
+* '''{{tr|Set Bonus}}：'''将[[{{tr|lava}}]]的{{tr|contact damage}}降低 50%，所造成的[[{{tr|On Fire!}}]][[{{tr|debuff}}]]{{tr|duration}}降低 3.5 秒。
+| class="small" |
+* 75 {{item|Ash Wood}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Rain armor.png|link=]] [[File:Rain armor female.png|link=]]
+| {{item|mode=text|icons=no|Rain armor}}<br/> {{eicons|1.3.0.1|small=y}}<ref name=vanity/>
+| style="text-align:center" | 1
+| style="text-align:center" | 2
+| style="text-align:center" | -
+| style="text-align:center" | 3
+|
+| style="text-align:center" | {{item|mode=image|Rain Coat Zombie}}
+罕见掉落自[[{{tr|Raincoat Zombie}}]]
+|- class="topline"
+| [[File:Snow armor.png|link=]] [[File:Snow armor female.png|link=]]
+| {{item|mode=text|wrap=y|Snow armor}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>1 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>2 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>1 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 9 {{eicons|1.4.4|small=y}}<br/>4 {{eicons|1.4.4|invert=y|small=y}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''免疫[[{{tr|Chilled}}]]和[[{{tr|Frozen}}]][[{{tr|debuffs}}]] {{eicons|1.4.4|small=y}}
+| style="text-align:center" | {{item|mode=image|Frozen Zombie}}
+罕见掉落自[[{{tr|Frozen Zombie}}]]
+|- class="topline"
+| [[File:Pink Snow armor.png|link=]] [[File:Pink Snow armor female.png|link=]]
+| {{item|mode=text|wrap=y|Pink Snow armor}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>1 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>2 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}}<br/>1 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 9 {{eicons|1.4.4|small=y}}<br/>4 {{eicons|1.4.4|invert=y|small=y}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''免疫[[{{tr|Chilled}}]]和[[{{tr|Frozen}}]][[{{tr|debuffs}}]] {{eicons|1.4.4|small=y}}
+| class="small" |
+* 1 {{item|Snow Hood}}
+* 1 {{item|Snow Coat}}
+* 1 {{item|Snow Pants}}
+* 9 {{item|Pink Thread}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Angler armor.png|link=]] [[File:Angler armor female.png|link=]]
+| {{item|mode=text|wrap=y|Angler armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 2
+| style="text-align:center" | 1
+| style="text-align:center" | 4
+| class="small" |
+* '''{{tr|Set Bonus}}：'''降低{{tr|enemy}}{{tr|spawn rates}} {{eicons|1.4.4|small=y}}
+* 每一件可获得 +5% {{tr|fishing power}}，总共可得到 +15% {{tr|fishing power}}
+| style="text-align:center" | {{item|mode=image|Angler}}
+来自[[{{tr|Angler}}]]的任务奖励
+|- class="topline"
+| [[File:Cactus armor.png|link=]] [[File:Cactus armor female.png|link=]]
+| {{item|mode=text|wrap=y|Cactus armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 1 {{eicons|1.4.4|small=y}} <br/>2 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 1
+| style="text-align:center" | 3 {{eicons|1.4.4|small=y}} <br/>5 {{eicons|1.4.4|invert=y|small=y}}<br/>{{small|(4+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''被击中时给予攻击者 15 / {{expert|30}} / {{master|45}} 伤害 {{eicons|1.4.0.1|small=y}} / +1 {{tr|defense}} {{eicons|1.4.0.1|invert=y|small=y}}
+| class="small" |
+* 75 {{item|Cactus}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Copper armor.png|link=]] [[File:Copper armor female.png|link=]]
+| {{item|mode=text|wrap=y|Copper armor}}
+| style="text-align:center" | 1
+| style="text-align:center" | 2
+| style="text-align:center" | 1
+| style="text-align:center" | 6 <br/>{{small|(4+2)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+2 {{tr|defense}}
+| class="small" |
+* 48 {{eicons|1.4.0.1|small=y}} / 60 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Copper Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Tin armor.png|link=]] [[File:Tin armor female.png|link=]]
+| {{item|mode=text|wrap=y|Tin armor}}
+| style="text-align:center" | 2
+| style="text-align:center" | 2
+| style="text-align:center" | 1
+| style="text-align:center" | 7 <br/>{{small|(5+2)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+2 {{tr|defense}}
+| class="small" |
+* 48 {{eicons|1.4.0.1|small=y}} / 60 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Tin Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Pumpkin armor.png|link=]] [[File:Pumpkin armor female.png|link=]]
+| {{item|mode=text|wrap=y|Pumpkin armor}}
+| style="text-align:center" | 2
+| style="text-align:center" | 3
+| style="text-align:center" | 2
+| style="text-align:center" | 7
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+10% {{tr|damage}}
+| class="small" |
+* 75 {{item|Pumpkin}}
+* 在{{item|Work Bench}}制作
+|- class="topline"
+| [[File:Ninja armor.png|link=]] [[File:Ninja armor female.png|link=]]
+| {{item|mode=text|icons=n|Ninja armor}}<br/> {{eicons|1.3.0.1|small=y}}<ref name=vanity/>
+| style="text-align:center" | 2
+| style="text-align:center" | 4
+| style="text-align:center" | 3
+| style="text-align:center" | 9
+| class="small" |
+* 每一件可获得 +3% {{tr|critical strike chance}}，总共可得到 +9% {{tr|critical strike chance}}
+* '''{{tr|Set Bonus}}：'''{{tr|movement speed}}提高 20%
+* '''{{tr|Set Effect}}：'''移动时身后有拖影效果
+| style="text-align:center" | {{item|mode=image|King Slime}}
+掉落自[[{{tr|King Slime}}]]
+|- class="topline"
+| [[File:Iron armor.png|link=]] [[File:Iron armor female.png|link=]]
+[[File:Ancient Iron Helmet (equipped).png|link=]] [[File:Ancient Iron Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Iron armor}}
+| style="text-align:center" | 2
+| style="text-align:center" | 3
+| style="text-align:center" | 2
+| style="text-align:center" | 9 <br/>{{small|(7+2)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+2 {{tr|defense}}
+* {{tr|Ancient Iron Helmet}}和{{tr|Iron Helmet}}可互换，都能和其他{{tr|iron armor}}部件搭配使用
+| class="small" |
+* 60 {{eicons|1.4.0.1|small=y}} / 75 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Iron Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+* [[{{tr|Ancient Iron Helmet}}]]罕见掉落自[[{{tr|Skeletons}}]]
+|- class="topline"
+| [[File:Lead armor.png|link=]] [[File:Lead armor female.png|link=]]
+| {{item|mode=text|wrap=y|Lead armor}}
+| style="text-align:center" | 3
+| style="text-align:center" | 3
+| style="text-align:center" | 2
+| style="text-align:center" | 11 <br/>{{small|(8+3)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+3 {{tr|defense}}
+| class="small" |
+* 60 {{eicons|1.4.0.1|small=y}} / 75 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Lead Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Silver armor.png|link=]] [[File:Silver armor female.png|link=]]
+| {{item|mode=text|wrap=y|Silver armor}}
+| style="text-align:center" | 3
+| style="text-align:center" | 4
+| style="text-align:center" | 3
+| style="text-align:center" | 13 <br/>{{small|(10+3)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+3 {{tr|defense}}
+| class="small" |
+* 60 {{eicons|1.4.0.1|small=y}} / 75 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Silver Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Tungsten armor.png|link=]] [[File:Tungsten armor female.png|link=]]
+| {{item|mode=text|wrap=y|Tungsten armor}}
+| style="text-align:center" | 4
+| style="text-align:center" | 5
+| style="text-align:center" | 3
+| style="text-align:center" | 15 <br/>{{small|(12+3)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+3 {{tr|defense}}
+| class="small" |
+* 60 {{eicons|1.4.0.1|small=y}} / 75 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Tungsten Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Gold armor.png|link=]] [[File:Gold armor female.png|link=]]
+[[File:Ancient Gold Helmet (equipped).png|link=]] [[File:Ancient Gold Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Gold armor}}
+| style="text-align:center" | 4
+| style="text-align:center" | 5
+| style="text-align:center" | 4
+| style="text-align:center" | 16 <br/>{{small|(13+3)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+3 {{tr|defense}}
+* {{tr|Ancient Gold Helmet}}和{{tr|Gold Helmet}}可互换，都能和其他{{tr|Gold armor}}部件搭配使用
+| class="small" |
+* 75 {{eicons|1.4.0.1|small=y}} / 90 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Gold Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+* [[{{tr|Ancient Gold Helmet}}]]罕见掉落自{{tr|Skeletons}}
+|- class="topline"
+| [[File:Platinum armor.png|link=]] [[File:Platinum armor female.png|link=]]
+| {{item|mode=text|wrap=y|Platinum armor}}
+| style="text-align:center" | 5
+| style="text-align:center" | 6
+| style="text-align:center" | 5
+| style="text-align:center" | 20 <br/>{{small|(16+4)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+4 {{tr|defense}}
+| class="small" |
+* 75 {{eicons|1.4.0.1|small=y}} / 90 {{eicons|1.4.0.1|invert=y|small=y}} {{item|Platinum Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Fossil armor.png|link=]] [[File:Fossil armor female.png|link=]]
+| {{item|mode=text|wrap=y|Fossil armor}}
+| style="text-align:center" | 4
+| style="text-align:center" | 5
+| style="text-align:center" | 4
+| style="text-align:center" | 13
+| class="small" |
+* +5% {{tr|ranged damage}}
+* +8% {{tr|ranged critical strike chance}}
+* '''{{tr|Set Bonus}}：'''20% 的几率不消耗弹药
+| class="small" |
+* 60 {{item|Sturdy Fossil}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Bee armor.png|link=]] [[File:Bee armor female.png|link=]]
+| {{item|mode=text|wrap=y|Bee armor}}
+| style="text-align:center" | 4
+| style="text-align:center" | 5
+| style="text-align:center" | 4
+| style="text-align:center" | 13
+| class="small" |
+* +2 {{tr|minion capacity}}
+* +13% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：'''+10% {{tr|summon damage}}（总共 +23%）
+| class="small" |
+* 30 {{item|Bee Wax}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Obsidian armor.png|link=]] [[File:Obsidian armor female.png|link=]]
+| {{item|mode=text|wrap=y|Obsidian armor}}
+| style="text-align:center" | 4
+| style="text-align:center" data-sort-value=6 | 6
+| style="text-align:center" data-sort-value=5 | 5
+| style="text-align:center" data-sort-value=15 | 15
+| class="small" |
+* +1 {{tr|minion capacity}}
+* +16% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：'''+30% {{tr|whip range}}，+15% {{tr|whip speed}}，以及 +15% {{tr|summon damage}}（总共 +31%）
+| class="small" |
+* 60 {{item|Obsidian}}
+* 30 {{item|Silk}}
+* 20 {{item|Shadow Scale}} / {{item|Tissue Sample}}
+* 在{{item|Hellforge|Hellforge|icons=no}}制作
+|- class="topline"
+| [[File:Gladiator armor.png|link=]] [[File:Gladiator armor female.png|link=]]
+| {{item|mode=text|wrap=y|Gladiator armor}}
+| style="text-align:center" data-sort-value=5 | 5
+| style="text-align:center" data-sort-value=6 | 6
+| style="text-align:center" data-sort-value=5 | 5
+| style="text-align:center" data-sort-value=16 | 16
+| class="small" |
+* '''{{tr|Set Bonus}}：'''免疫{{tr|knockback}}
+| style="text-align:center" | {{item|mode=image|Hoplite}}
+罕见掉落自[[{{tr|Hoplite}}]]
+|- class="topline"
+| [[File:Meteor armor.png|link=]] [[File:Meteor armor female.png|link=]]
+| {{item|mode=text|wrap=y|Meteor armor}}
+| style="text-align:center" | 5
+| style="text-align:center" | 6
+| style="text-align:center" | 5
+| style="text-align:center" | 16
+| class="small" |
+* +27% {{tr|magic damage}} {{eicons|1.4.0.1|small=y}} / +21% {{tr|magic damage}} {{eicons|1.4.0.1|invert=y|small=y}}
+* '''{{tr|Set Bonus}}：'''[[{{tr|space gun}}]]的使用花费 0 {{tr|mana}}
+* '''套装效果：'''移动时有火焰微粒（类似于[[{{tr|rocket boots}}]]，但不发光）
+| class="small" |
+* 45 {{eicons|1.3.0.1|small=y}} / 60 {{eicons|1.3.0.1|invert=y|small=y}} {{item|Meteorite Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Jungle armor.png|link=]] [[File:Jungle armor female.png|link=]]
+| {{item|mode=text|wrap=y|Jungle armor}}
+| style="text-align:center" | 5
+| style="text-align:center" | 6
+| style="text-align:center" | 6
+| style="text-align:center" | 17
+| class="small" |
+* +80 {{tr|mana capacity}}
+* 魔法暴击率增加 12%
+* +6% {{tr|magic damage}} {{eicons|1.4.0.1|small=y}}
+* 每个部件都可以和[[{{tr|Ancient Cobalt armor}}]]的部件互换
+* '''{{tr|Set Bonus}}：'''魔力消耗降低 16%
+* '''套装效果：'''移动时草粒飞舞
+| class="small" |
+* 32 {{item|Jungle Spores}}
+* 10 {{eicons|1.3.0.1|small=y}} / 12 {{eicons|1.3.0.1|invert=y|small=y}} {{item|Stinger}}
+* 2 {{item|Vine}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Ancient Cobalt armor.png|link=]] [[File:Ancient Cobalt armor female.png|link=]]
+| {{item|mode=text|wrap=y|Ancient Cobalt armor}}
+| style="text-align:center" | 5
+| style="text-align:center" | 6
+| style="text-align:center" | 6
+| style="text-align:center" | 17
+| class="small" |
+* +80 {{tr|mana capacity}}
+* 魔法暴击率增加 12%
+* +6% {{tr|magic damage}} {{eicons|1.4.0.1|small=y}}
+* 每个部件都可以和[[{{tr|Jungle armor}}]]的部件互换
+* '''{{tr|Set Bonus}}：'''魔力消耗降低 16%
+* '''套装效果：'''移动时身后有拖影
+| style="text-align:center" | {{item|mode=image|Hornet}} {{item|mode=image|Man Eater}}
+罕见掉落自[[{{tr|Hornet}}]]和[[{{tr|Man Eater}}]]
+|- class="topline"
+| [[File:Necro armor.png|link=]] [[File:Necro armor female.png|link=]]
+[[File:Ancient Necro Helmet (equipped).png|link=]] [[File:Ancient Necro Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Necro armor}}
+| style="text-align:center" data-sort-value=6 | 6 {{eicons|1.4.1|small=y}} <br/>5 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" data-sort-value=7 | 7 {{eicons|1.4.1|small=y}} <br/>6 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" data-sort-value=6 | 6 {{eicons|1.4.1|small=y}} <br/>5 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" data-sort-value=19 | 19 {{eicons|1.4.1|small=y}} <br/>16 {{eicons|1.4.0.1|invert=y|small=y}}
+| class="small" |
+* +15% {{tr|ranged damage}}
+* '''{{tr|Set Bonus}}：'''{{tr|ranged critical strike chance}}提高 10% {{eicons|1.4.0.1|small=y}} <br/> 20% 几率不消耗{{tr|ammo}} {{eicons|1.4.0.1|invert=y|small=y}}
+* '''套装效果：'''移动时身后有拖影，受伤时发出骨头碎裂的声音
+* {{tr|Ancient Necro Helmet}}和{{tr|Necro Helmet}}可互换，都能和其他{{tr|Necro armor}}部件搭配使用
+| class="small" |
+* 135 {{item|Cobweb}}
+* 150 {{item|Bone}}
+* 在{{item|Work Bench}}制作
+* [[{{tr|Ancient Necro Helmet}}]]罕见掉落自{{tr|Angry Bones}}
+|- class="topline"
+| [[File:Shadow armor.png|link=]] [[File:Shadow armor female.png|link=]]
+| {{item|mode=text|wrap=y|Shadow armor}}
+| style="text-align:center" | 6
+| style="text-align:center" | 7
+| style="text-align:center" | 6
+| style="text-align:center" | 19
+| class="small" |
+* +15% {{tr|critical strike chance}}{{eicons|1.4.4|small=y}} / +21% {{tr|melee attack speed}}{{eicons|1.4.4|invert=y|small=y}} 
+* 每个部件都可以和[[{{tr|Ancient shadow armor}}]]的部件互换
+* '''{{tr|Set Bonus}}：'''加速度增加 75% ，最大移动速度乘以 1.15 倍 {{eicons|1.4.4|small=y}} / +15% {{tr|movement speed}} {{eicons|1.4.4|invert=y|small=y}}
+* '''{{tr|Set Effect}}：'''移动时身后有拖影，并有[[{{tr|rocket boots}}]]那样的火焰，但是紫色的。
+| class="small" |
+* 60 {{item|Demonite Bar}}
+* 45 {{item|Shadow Scale}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Ancient Shadow armor.png|link=]] [[File:Ancient Shadow armor female.png|link=]]
+| {{item|mode=text|wrap=y|Ancient Shadow armor}}
+| style="text-align:center" | 6
+| style="text-align:center" | 7
+| style="text-align:center" | 6
+| style="text-align:center" | 19
+| class="small" |
+* +15% {{tr|critical strike chance}}{{eicons|1.4.4|small=y}} / +21% {{tr|melee attack speed}}{{eicons|1.4.4|invert=y|small=y}} 
+* 每个部件都可以和[[{{tr|shadow armor}}]]的部件互换
+* '''{{tr|Set Bonus}}：'''加速度增加 75% ，最大移动速度乘以 1.15 倍 {{eicons|1.4.4|small=y}} / +15% {{tr|movement speed}} {{eicons|1.4.4|invert=y|small=y}}
+* '''{{tr|Set Effect}}：'''移动时身后有拖影，并有[[{{tr|rocket boots}}]]那样的火焰，但是紫色的。
+| style="text-align:center" | {{item|mode=image|Eater of Souls|ext=gif}}
+罕见掉落自[[{{tr|Eater of Souls}}]]
+|- class="topline"
+| [[File:Crimson armor.png|link=]] [[File:Crimson armor female.png|link=]]
+| {{item|mode=text|wrap=y|Crimson armor}}
+| style="text-align:center" | 6
+| style="text-align:center" | 7
+| style="text-align:center" | 6
+| style="text-align:center" | 19
+| class="small" |
+* +9% {{eicons|1.4.4|small=y}} / +6% {{tr|damage}}{{eicons|1.4.4|invert=y|small=y}} 
+* '''{{tr|Set Bonus}}：'''大大提高[[{{tr|health regeneration}}]]速度
+* '''{{tr|Set Effect}}：'''在移动时与再生生命时会发出红色微粒
+| class="small" |
+* 60 {{item|Crimtane Bar}}
+* 45 {{item|Tissue Sample}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|- class="topline"
+| [[File:Molten armor.png|link=]] [[File:Molten armor female.png|link=]]
+| {{item|mode=text|wrap=y|Molten armor}}
+| style="text-align:center" | 8
+| style="text-align:center" | 9
+| style="text-align:center" | 8
+| style="text-align:center" | 25
+| class="small" |
+* +7% {{tr|melee critical strike chance}} {{eicons|1.4.0.1|small=y}}
+* +7% {{tr|melee damage}} {{eicons|1.4.0.1|small=y}}
+* +7% {{tr|melee speed}} {{eicons|1.4.0.1|small=y}}
+* '''{{tr|Set Bonus}}：''' +10% {{tr|melee damage}}，免疫[[{{tr|On Fire!}}]]{{eicons|1.4.0.1|small=y}} / +17% {{tr|melee damage}}{{eicons|1.4.0.1|invert=y|small=y}}
+* '''{{tr|Set Effect}}：'''移动时有火焰微粒
+| class="small" |
+* 45 {{item|Hellstone Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|}
+{{reflist|refs=
+<ref name=vanity>虽然{{tr|Rain set}}和{{tr|Ninja set}}在{{eversions|1.3.0.1|short|invert=y}}上可用，但它们只起到了{{tr|vanity}}的作用，不视为{{tr|armor}}。</ref>}}
+
+=== [[{{tr|Hardmode}}]] ===
+{| class="terraria lined sortable"
+|-
+! class="unsortable" rowspan=2 |外观
+! width=80 rowspan=2 | 套装
+! colspan = 4 | 防御
+! class="unsortable" rowspan=2 | 奖励 / 效果 / 备注
+! class="unsortable" colspan="2" rowspan=2 | {{tr|Cost}} / 来源 / 制作于
+|-
+! style="font-size:12px;" data-sort-type=number | 头部
+! style="font-size:12px;" data-sort-type=number | 胸部
+! style="font-size:12px;" data-sort-type=number | 腿部
+! style="font-size:100%;" data-sort-type=number | 共计
+|-
+| [[File:Pearlwood armor.png|link=]] [[File:Pearlwood armor female.png|link=]]
+| {{item|mode=text|wrap=y|Pearlwood armor}}
+| style="text-align:center" | 2
+| style="text-align:center" | 3
+| style="text-align:center" | 2
+| style="text-align:center" | 8 {{small|(7+1)}}
+| class="small" |
+* '''{{tr|Set Bonus}}：'''+1 {{tr|defense}}
+| colspan="2" class="small" |
+* 75 {{item|Pearlwood}}
+* 在{{item|Work Bench}}制作
+|-
+| [[File:Spider armor.png|link=]] [[File:Spider armor female.png|link=]]
+| {{item|mode=text|wrap=y|Spider armor}}
+| style="text-align:center" | 5
+| style="text-align:center" | 8
+| style="text-align:center" | 7
+| style="text-align:center" | 20
+| class="small" |
+* +3 {{tr|minion capacity}}<!-- +1 for each piece -->
+* +16% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：'''+12% {{tr|summon damage}}（总共 +28%）
+| colspan="2" class="small" |
+* 36 {{item|Spider Fang}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|-
+| [[File:Cobalt armor.png|link=]]
+[[File:Cobalt armor female.png|link=]]
+| {{item|mode=text|wrap=y|Cobalt armor}}
+| style="text-align:center" data-sort-value=2 | 
+'''{{tr|Magic}}：''' 3 {{eicons|1.4.4|small=y}}<br/>2 {{eicons|1.4.4|invert=y|small=y}}<br/>
+'''{{tr|Ranged}}：''' 5 {{eicons|1.4.4|small=y}}<br/>4 {{eicons|1.4.4|invert=y|small=y}}<br/>
+'''{{tr|Melee}}：''' 14 {{eicons|1.4.4|small=y}}<br/>12 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" | 10 {{eicons|1.4.4|small=y}}<br/>8 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" data-sort-value=8 | 8 {{eicons|1.4.4|small=y}}<br/>7 {{eicons|1.4.4|invert=y|small=y}}
+| style="text-align:center" data-sort-value=18 |
+'''{{tr|Magic}}：''' 21 {{eicons|1.4.4|small=y}} <br/> 17 {{eicons|1.4.4|invert=y|small=y}}<br/>
+'''{{tr|Ranged}}：''' 23 {{eicons|1.4.4|small=y}} <br/> 19 {{eicons|1.4.4|invert=y|small=y}}<br/>
+'''{{tr|Melee}}：''' 32 {{eicons|1.4.4|small=y}} <br/> 27 {{eicons|1.4.4|invert=y|small=y}}
+| class="small" |
+* +5% {{eicons|1.4.1|small=y}} / +3% {{eicons|1.4.1|invert=y|small=y}} {{tr|critical strike chance}}
+* +10% {{tr|movement speed}}
+* +3% {{tr|damage}} {{eicons|1.4.1|small=y}}
+* '''{{tr|Cobalt Hat}}：''' +40 {{tr|mana capacity}}、 +10% {{tr|magic damage}} {{eicons|1.4.1|small=y}}, +9% {{tr|magic critical strike chance}}
+** '''{{tr|Set Bonus}}：'''魔力消耗降低 14%
+* '''{{tr|Cobalt Mask}}：''' +10% {{tr|ranged damage}}、+10% {{eicons|1.4.1|small=y}} / +6% {{eicons|1.4.1|invert=y|small=y}} {{tr|ranged critical strike chance}}
+** '''{{tr|Set Bonus}}：'''20% 的几率不消耗弹药
+* '''{{tr|Cobalt Helmet}}：''' +10% {{eicons|1.4.1|small=y}} / +7% {{eicons|1.4.1|invert=y|small=y}} {{tr|movement speed}}、+15% {{tr|melee damage}} {{eicons|1.4.1|small=y}} / +12% {{tr|melee speed}} {{eicons|1.4.1|invert=y|small=y}}
+** '''{{tr|Set Bonus}}：''' +15% {{tr|melee speed}}（总共 +27% {{eicons|1.4.1|invert=y|small=y}}）
+* '''{{tr|Set Effect}}：'''移动时身后有拖影效果
+| colspan="2" class="small" |
+* 45 {{item|Cobalt Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|-
+| [[File:Palladium armor.png|link=]]
+[[File:Palladium armor female.png|link=]]
+| {{item|mode=text|wrap=y|Palladium armor}}
+| style="text-align:center" data-sort-value=3 | 
+'''{{tr|Magic}}：''' 3<br/>
+'''{{tr|Ranged}}：''' 5<br/>
+'''{{tr|Melee}}：''' 14
+| style="text-align:center" | 10
+| style="text-align:center" | 8
+| style="text-align:center" data-sort-value=21 | 
+'''{{tr|Magic}}：''' 21<br/>
+'''{{tr|Ranged}}：''' 23<br/>
+'''{{tr|Melee}}：''' 32
+| class="small" |
+* +5% {{tr|damage}}
+* +3% {{tr|critical strike chance}}
+* '''{{tr|Palladium Headgear}}：''' +9% {{eicons|1.4.1|small=y}} / +7% {{eicons|1.4.1|invert=y|small=y}} {{tr|magic damage}}、+9% {{eicons|1.4.1|small=y}} / +7% {{eicons|1.4.1|invert=y|small=y}} {{tr|critical strike chance}}、+60 {{tr|mana capacity}}
+* '''{{tr|Palladium Helmet}}：'''+9% {{tr|ranged damage}}、 +9% {{tr|ranged}}{{tr|critical strike chance}}
+* '''{{tr|Palladium Mask}}：''' +12% {{eicons|1.4.1|small=y}} / +8% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee damage}}、+12% {{tr|melee speed}}
+* '''{{tr|Set Bonus}}：'''当你击中敌人后会有[[{{tr|Rapid Healing}}]]{{tr|buff}}，持续 5 秒
+| colspan="2" class="small" |
+* 54 {{item|Palladium Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|-
+| [[File:Mythril armor.png|link=]]
+[[File:Mythril armor female.png|link=]]
+| {{item|mode=text|wrap=y|Mythril armor}}
+| style="text-align:center" data-sort-value=3 | 
+'''{{tr|Magic}}：''' 3<br/>
+'''{{tr|Ranged}}：''' 6<br/>
+'''{{tr|Melee}}：''' 16
+| style="text-align:center" | 12
+| style="text-align:center" | 9
+| style="text-align:center" data-sort-value=24 | 
+'''{{tr|Magic}}：''' 24<br/>
+'''{{tr|Ranged}}：''' 27<br/>
+'''{{tr|Melee}}：''' 37
+| class="small" |
+* +7% {{eicons|1.4.1|small=y}} / +5% {{eicons|1.4.1|invert=y|small=y}} {{tr|damage}}
+* +10% {{eicons|1.4.1|small=y}} / +3% {{eicons|1.4.1|invert=y|small=y}} {{tr|critical strike chance}}
+* '''{{tr|Mythril Hood}}：'''+60 {{tr|mana capacity}}、+15% {{tr|magic damage}}
+** '''{{tr|Set Bonus}}：'''魔力消耗降低 17%
+* '''{{tr|Mythril Hat}}：'''+12% {{tr|ranged damage}}、+7% {{tr|ranged}}{{tr|critical strike chance}}
+** '''{{tr|Set Bonus}}：'''20% 的几率不消耗弹药
+* '''{{tr|Mythril Helmet}}：''' +8% {{eicons|1.4.1|small=y}} / +5% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee critical strike chance}}、+10% {{tr|melee damage}}
+** '''{{tr|Set Bonus}}：''' +10% {{eicons|1.4.1|small=y}} / +5% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee critical strike chance}}（总共 +28% {{eicons|1.4.1|small=y}} / +13% {{eicons|1.4.1|invert=y|small=y}}）
+| colspan="2" class="small" |
+* 45 {{item|Mythril Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Orichalcum armor.png|link=]]
+[[File:Orichalcum armor female.png|link=]]
+| {{item|mode=text|wrap=y|Orichalcum armor}}
+| style="text-align:center" data-sort-value=4 | 
+'''{{tr|Magic}}：''' 4<br/>
+'''{{tr|Ranged}}：''' 7<br/>
+'''{{tr|Melee}}：''' 19
+| style="text-align:center" | 13
+| style="text-align:center" | 10
+| style="text-align:center" data-sort-value=27 | 
+'''{{tr|Magic}}：''' 27<br/>
+'''{{tr|Ranged}}：''' 30<br/>
+'''{{tr|Melee}}：''' 42
+| class="small" |
+* +6% {{tr|critical strike chance}}
+* +8% {{tr|damage}}{{eicons|1.4.4|small=y}}
+* +11% {{tr|movement speed}}
+* '''{{tr|Orichalcum Headgear}}：'''+18% {{tr|magic critical strike chance}}、+80 {{tr|mana capacity}}
+* '''{{tr|Orichalcum Helmet}}：'''+15% {{tr|ranged critical strike chance}}、+8% {{tr|movement speed}}
+* '''{{tr|Orichalcum Mask}}：''' +11% {{eicons|1.4.1|small=y}} / +7% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee damage}}、+11% {{eicons|1.4.1|small=y}} / +7% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee speed}}、+7% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''会有花瓣落到你的目标身上并造成额外伤害
+| colspan="2" class="small" |
+* 54 {{item|Orichalcum Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Adamantite armor.png|link=]]
+[[File:Adamantite armor female.png|link=]]
+| {{item|mode=text|wrap=y|Adamantite armor}}
+| style="text-align:center" data-sort-value=4 | 
+'''{{tr|Magic}}：''' 4<br/>
+'''{{tr|Ranged}}：''' 8<br/>
+'''{{tr|Melee}}：''' 22
+| style="text-align:center" | 16
+| style="text-align:center" | 12
+| style="text-align:center" data-sort-value=32 | 
+'''{{tr|Magic}}：''' 32<br/>
+'''{{tr|Ranged}}：''' 36<br/>
+'''{{tr|Melee}}：''' 50
+| class="small" |
+* +8% {{eicons|1.4.1|small=y}} / +6% {{eicons|1.4.1|invert=y|small=y}} {{tr|damage}}
+* +7% {{eicons|1.4.1|small=y}} / +4% {{eicons|1.4.1|invert=y|small=y}} {{tr|critical strike chance}}
+* +5% {{tr|movement speed}}
+* '''{{tr|Adamantite Headgear}}：''' +80 {{tr|mana capacity}}、+12% {{eicons|1.4.1|small=y}} / +11% {{eicons|1.4.1|invert=y|small=y}} {{tr|magic damage}}、+12% {{eicons|1.4.1|small=y}} / +11% {{eicons|1.4.1|invert=y|small=y}} {{tr|critical strike chance}}
+** '''{{tr|Set Bonus}}：'''魔力消耗降低 19%
+* '''{{tr|Adamantite Mask}}：''' +14% {{tr|ranged damage}}、+10% {{eicons|1.4.1|small=y}} / +8% {{eicons|1.4.1|invert=y|small=y}} {{tr|ranged critical strike chance}}
+** '''{{tr|Set Bonus}}：'''25%的几率不消耗弹药
+* '''{{tr|Adamantite Helmet}}：'''+7% {{tr|melee critical strike chance}}、+14% {{tr|melee damage}}
+** '''{{tr|Set Bonus}}：''' +20% {{eicons|1.4.1|small=y}} / +18% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee speed}}、+20% {{eicons|1.4.1|small=y}} / +18% {{eicons|1.4.1|invert=y|small=y}} {{tr|movement speed}}
+* '''{{tr|Set Effect}}：'''玩家的轮廓有脉动效果
+| colspan="2" class="small" |
+* 54 {{item|Adamantite Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Titanium armor.png|link=]]
+[[File:Titanium armor female.png|link=]]
+| {{item|mode=text|wrap=y|Titanium armor}}
+| style="text-align:center" data-sort-value=4 | 
+'''{{tr|Magic}}：''' 4<br/>
+'''{{tr|Ranged}}：''' 8<br/>
+'''{{tr|Melee}}：''' 23
+| style="text-align:center" | 15
+| style="text-align:center" | 11
+| style="text-align:center" data-sort-value=30 | 
+'''{{tr|Magic}}：''' 30<br/>
+'''{{tr|Ranged}}：''' 34<br/>
+'''{{tr|Melee}}：''' 49
+| class="small" |
+* +7% {{tr|damage}}
+* +6% {{tr|critical strike chance}}
+* +6% {{tr|movement speed}}
+* '''{{tr|Titanium Headgear}}：'''+16% {{tr|magic damage}}、+7% {{tr|magic critical strike chance}}、+100 {{tr|mana capacity}}
+* '''{{tr|Titanium Helmet}}：'''+16% {{tr|ranged damage}}、+7% {{tr|ranged critical strike chance}}
+* '''{{tr|Titanium Mask}}：''' +9% {{eicons|1.4.1|small=y}} / +8% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee damage}}、+9% {{eicons|1.4.1|small=y}} / +8% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee speed}}、 +9% {{eicons|1.4.1|small=y}} / +8% {{eicons|1.4.1|invert=y|small=y}} {{tr|melee critical strike chance}}
+* '''{{tr|Set Bonus}}：''' 击中敌人后会给你[[{{tr|Titanium Barrier}}]]{{tr|buff}}，持续 10 秒。{{eicons|1.4.0.1|small=y}} / 击中敌人时会给你[[{{tr|Shadow Dodge}}]]{{tr|buff}} {{eicons|1.4.0.1|invert=y|small=y}}
+| colspan="2" class="small" |
+* 59 {{item|Titanium Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Crystal Assassin armor.png|link=]] [[File:Crystal Assassin armor female.png|link=]]
+| {{item|mode=text|wrap=y|Crystal Assassin armor}}
+| style="text-align:center" | 12
+| style="text-align:center" | 14
+| style="text-align:center" | 10
+| style="text-align:center" | 36
+| class="small" |
+* +5% {{tr|critical strike chance}}
+* +5% {{tr|damage}}
+* +20% {{tr|movement speed}}
+* +10% {{tr|melee speed}}
+* 10% 的几率不消耗弹药
+* -10% {{tr|mana cost}}
+* '''{{tr|Set Bonus}}：''' 允许{{tr|dash}}、{{tr|damage}}提高 10%、{{tr|critical strike chance}}提高 10%。
+| colspan="2" style="text-align:center" | {{item|mode=image|Queen Slime}}
+掉落自[[{{tr|Queen Slime}}]]
+|- class="topline"
+|-
+| [[File:Frost armor.png|link=]] [[File:Frost armor female.png|link=]]
+| {{item|mode=text|wrap=y|Frost armor}}
+| style="text-align:center" | 10
+| style="text-align:center" | 20
+| style="text-align:center" | 13
+| style="text-align:center" | 43
+| class="small" |
+* +16% {{tr|melee damage}}
+* +16% {{tr|ranged damage}}
+* +11% {{tr|melee critical strike chance}}
+* +11% {{tr|ranged critical strike chance}}
+* +8% {{tr|movement speed}}
+* +10% {{tr|melee attack speed}}
+* '''{{tr|Set Bonus}}：'''{{tr|Melee and ranged}}攻击造成[[{{tr|Frostbite}}]] {{eicons|1.4.0.1|small=y}}<br/>+10% {{tr|melee and ranged damage}}{{eicons|1.4.0.1|small=y}} <br/>{{tr|Melee and ranged}}攻击造成[[{{tr|Frostburn}}]]{{eicons|1.4.0.1|small=y|invert=y}}
+* '''{{tr|Set Effect}}：'''移动时有雪花尾迹，冰块破碎的音效取代了受伤时痛苦的声音
+| colspan="2" class="small" |
+* 46 {{item|Titanium Bar}}''或''{{item|Adamantite Bar}}（{{eicons|1.3.0.1}}）
+* 46 {{item|Hallowed Bar}} ({{eicons|1.2.3|not=1.3.0.1}})
+* 3 {{item|Frost Core}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Forbidden armor.png|link=]] [[File:Forbidden armor female.png|link=]]
+| {{item|mode=text|wrap=y|Forbidden armor}}
+| style="text-align:center" | 6
+| style="text-align:center" | 12
+| style="text-align:center" | 8
+| style="text-align:center" | 26
+| class="small" |
+* +25% {{tr|magic damage}}
+* +25% {{tr|summon damage}}
+* +80 {{tr|mana capacity}}
+* +2 {{tr|minion capacity}}
+* '''{{tr|Set Bonus}}：'''双击{{key|down}}/{{key|up}}<ref>取决于[[{{tr|Settings}}#控件|激活套装奖励设置]]</ref>可将远古风暴召唤到光标位置
+* '''{{tr|Set Effect}}：'''移动时身后有拖影效果
+| colspan="2" class="small" |
+* 46 {{item|Titanium Bar}}''或''{{item|Adamantite Bar}}
+* 3 {{item|Forbidden Fragment}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Squire armor.png|link=]] [[File:Squire armor female.png|link=]]
+| {{item|mode=text|wrap=y|Squire armor}}
+| style="text-align:center" | 13
+| style="text-align:center" | 27
+| style="text-align:center" | 18
+| style="text-align:center" | 58
+| class="small" |
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +15% {{tr|melee damage}}
+* +15% {{tr|melee critical strike chance}}
+* +15% {{tr|movement speed}}
+* {{tr|health regeneration}}速度提高
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +2）<br/>弩车可以刺穿更多目标，但会在你承受伤害时陷入恐慌
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|45}}（全套）价格出售
+|-
+| [[File:Monk armor.png|link=]] [[File:Monk armor female.png|link=]]
+| {{item|mode=text|wrap=y|Monk armor}}
+| style="text-align:center" | 8
+| style="text-align:center" | 22
+| style="text-align:center" | 16
+| style="text-align:center" | 46
+| class="small" |
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|melee damage}}
+* +20% {{tr|melee speed}}
+* +15% {{tr|melee critical strike chance}}
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>{{tr|sentry capacity}}（总共+2）<br/>闪电光环现在可以更快地实施暴击
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|45}}（全套）价格出售
+|-
+| [[File:Huntress armor.png|link=]] [[File:Huntress armor female.png|link=]]
+| {{item|mode=text|wrap=y|Huntress armor}}
+| style="text-align:center" | 7
+| style="text-align:center" | 17
+| style="text-align:center" | 12
+| style="text-align:center" | 36
+| class="small" |
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|ranged damage}}
+* +10% {{tr|ranged critical strike chance}}
+* +10% 减少{{tr|ammo}}消耗
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +2）<br/>{{tr|Explosive Traps}}重新装载更快并为{{tr|enemies}}涂油<br/>点燃{{tr|oiled}}的{{tr|enemies}}会造成额外伤害
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|45}}（全套）价格出售
+|-
+| [[File:Apprentice armor.png|link=]] [[File:Apprentice armor female.png|link=]]
+| {{item|mode=text|wrap=y|Apprentice armor}}
+| style="text-align:center" | 7
+| style="text-align:center" | 15
+| style="text-align:center" | 10
+| style="text-align:center" | 32
+| class="small" |
+* +1 {{tr|sentry capacity}}
+* -10% {{tr|mana usage}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|magic damage}}
+* +20% {{tr|magic critical strike chance}}
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +2）<br/>爆炸烈焰视野和射程显著增加
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|45}}（全套）价格出售
+|-
+| [[File:Hallowed armor.png|link=]]
+[[File:Hallowed armor female.png|link=]]
+| {{item|mode=text|wrap=y|Hallowed armor}}
+| style="text-align:center" data-sort-value=1 | 
+'''{{tr|Summon}}：''' 1 {{eicons|1.4.0.1|small=y}}<br/>
+'''{{tr|Magic}}：''' 5<br/>
+'''{{tr|Ranged}}：''' 9<br/>
+'''{{tr|Melee}}：''' 24
+| style="text-align:center" | 15
+| style="text-align:center" | 11
+| style="text-align:center" data-sort-value=27 | 
+'''{{tr|Summon}}：''' 27 {{eicons|1.4.0.1|small=y}}<br/>
+'''{{tr|Magic}}：''' 31<br/>
+'''{{tr|Ranged}}：''' 35<br/>
+'''{{tr|Melee}}：''' 50
+| class="small" |
+* +7% {{tr|damage}}
+* +7% {{tr|critical strike chance}}
+* +8% {{tr|movement speed}}
+* 每个部件都可以和[[{{tr|Ancient Hallowed armor}}]]的部件互换
+* '''{{tr|Hallowed Hood}}{{eicons|1.4.0.1|small=y}}：'''+1 {{tr|minion capacity}}，+10% {{tr|summon damage}}
+** '''{{tr|Set Bonus}}：''' +2 {{tr|minion capacity}}
+* '''{{tr|Hallowed Headgear}}：'''+100 {{tr|mana capacity}}、+12% {{tr|magic damage}}、+12% {{tr|critical strike chance}}
+** '''{{tr|Set Bonus}}：''' -20% {{tr|mana usage}}{{eicons|1.4.0.1|invert=y|small=y}}
+* '''{{tr|Hallowed Helmet}}：''' +15% {{tr|ranged damage}}、+8% {{tr|ranged critical strike chance}}
+** '''{{tr|Set Bonus}}：''' 25% 几率不消耗{{tr|ammo}}{{eicons|1.4.0.1|invert=y|small=y}}
+* '''{{tr|Hallowed Mask}}：'''+10% {{tr|melee damage}}、+10% {{tr|critical strike chance}}、+10% {{tr|melee speed}}
+** '''{{tr|Set Bonus}}：''' +19% {{tr|movement speed}}、+19% {{tr|melee speed}}{{eicons|1.4.0.1|invert=y|small=y}}
+* '''{{tr|Set Bonus}}：''' 在击中{{tr|enemy}}后进入免疫状态{{eicons|1.4.0.1|small=y}}
+* '''{{tr|Set Effect}}：'''身后拖影和脉动效果
+| colspan="2" class="small" |
+* 54 {{item|Hallowed Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Ancient Hallowed armor.png|link=]]
+| {{item|mode=text|wrap=y|Ancient Hallowed armor}}
+| style="text-align:center" data-sort-value=1 | 
+'''{{tr|Summon}}：''' 1<br/>
+'''{{tr|Magic}}：''' 5<br/>
+'''{{tr|Ranged}}：''' 9<br/>
+'''{{tr|Melee}}：''' 24
+| style="text-align:center" | 15
+| style="text-align:center" | 11
+| style="text-align:center" data-sort-value=27 | 
+'''{{tr|Summon}}：''' 27<br/>
+'''{{tr|Magic}}：''' 31<br/>
+'''{{tr|Ranged}}：''' 35<br/>
+'''{{tr|Melee}}：''' 50
+| class="small" |
+* +7% {{tr|damage}}
+* +7% {{tr|critical strike chance}}
+* +8% {{tr|movement speed}}
+* 每个部件都可以和[[{{tr|Hallowed armor}}]]的部件互换
+* '''{{tr|Ancient Hallowed Hood}}：''' +1 {{tr|minion capacity}}，+10% {{tr|summon damage}}
+** '''{{tr|Set Bonus}}：''' +2 {{tr|minion capacity}}
+* '''{{tr|Ancient Hallowed Headgear}}：'''+100 {{tr|mana capacity}}、+12% {{tr|magic damage}}、+12% {{tr|critical strike chance}}
+* '''{{tr|Ancient Hallowed Helmet}}：''' +15% {{tr|ranged damage}}、+8% {{tr|ranged critical strike chance}}
+* '''{{tr|Ancient Hallowed Mask}}：'''+10% {{tr|melee damage}}、+10% {{tr|critical strike chance}}、+10% {{tr|melee speed}}
+* '''{{tr|Set Bonus}}：''' 击中{{tr|enemy}}后进入免疫状态
+* '''{{tr|Set Effect}}：'''身后拖影和脉动效果
+| colspan="2" class="small" |
+* 54 {{item|Hallowed Bar}}
+* 在{{item|Demon Altar}}/{{item|Crimson Altar}}处制作。
+|-
+| [[File:Chlorophyte armor.png|link=]]
+[[File:Chlorophyte armor female.png|link=]]
+| {{item|mode=text|wrap=y|Chlorophyte armor}}
+| style="text-align:center" nowrap data-sort-value=7 | 
+'''{{tr|Magic}}：''' 7<br/>
+'''{{tr|Ranged}}：''' 13<br/>
+'''{{tr|Melee}}：''' 20 {{eicons|1.4.0.1|small=y}} <br/> '''{{tr|Melee}}：''' 25 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" | 18
+| style="text-align:center" | 13
+| style="text-align:center" nowrap data-sort-value=38 | 
+'''{{tr|Magic}}：''' 38<br/>
+'''{{tr|Ranged}}：''' 44<br/>
+'''{{tr|Melee}}：''' 51 {{eicons|1.4.0.1|small=y}} <br/> '''{{tr|Melee}}：''' 56 {{eicons|1.4.0.1|invert=y|small=y}}
+| class="small" |
+* +5% {{tr|damage}}
+* +15% {{tr|critical strike chance}}
+* +5% {{tr|movement speed}}
+* '''{{tr|Chlorophyte Headgear}}：''' +80 {{tr|mana capacity}}、-17% {{tr|mana usage}}、+16% {{tr|magic damage}}
+* '''{{tr|Chlorophyte Helmet}}：''' +16% {{tr|ranged damage}}、20% 的几率不消耗弹药
+* '''{{tr|Chlorophyte Mask}}：''' +16% {{tr|melee damage}}、+6% {{tr|melee critical strike chance}}
+* '''{{tr|Set Bonus}}：'''玩家头上会出现持续存在的{{tr|leaf crystal}}，攻击{{tr|enemies}}造成 100 {{eicons|1.3.0.1}} / 40 {{eicons|1.3.0.1|invert=y|small=y}}基础伤害。{{eicons|1.4.0.1}}所受伤害降低 5% （使用{{tr|mask}}）。
+| colspan="2" class="small" |
+* 54 {{item|Chlorophyte Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Turtle armor.png|link=]] [[File:Turtle armor female.png|link=]]
+| {{item|mode=text|wrap=y|Turtle armor}}
+| style="text-align:center" | 21
+| style="text-align:center" | 27
+| style="text-align:center" | 17
+| style="text-align:center" | 65
+| class="small" |
+* +14% {{tr|melee damage}}
+* +12% {{tr|melee critical strike chance}}
+* 敌人更有可能攻击你
+* '''{{tr|Set Bonus}}：'''{{tr|Melee}}攻击你的敌人会受到伤害，数值等于其攻击被你的防御削减之前的数值的两倍。所受伤害减少15%
+| colspan="2" class="small" |
+* 54 {{item|Chlorophyte Bar}}
+* 3 {{item|Turtle Shell}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Tiki armor.png|link=]] [[File:Tiki armor female.png|link=]]
+| {{item|mode=text|wrap=y|Tiki armor}}
+| style="text-align:center" | 6
+| style="text-align:center" | 17
+| style="text-align:center" | 12
+| style="text-align:center" | 35
+| class="small" |
+* +3 {{tr|minion capacity}}
+* +30% {{tr|summon damage}}<!-- +10% for each piece -->
+* +10% {{tr|whip range}}{{eicons|1.4.4|small=y}}
+* '''{{tr|Set Bonus}}：''' +1 {{tr|minion capacity}}（总共 +4）。{{eicons|1.4.4|small=y}} +20% {{tr|whip range}}
+| colspan="2" style="text-align:center" | {{item|mode=image|Witch Doctor}}
+击败[[{{tr|Plantera}}]]后由[[{{tr|Witch Doctor}}]]以 {{getSetInfo|Tiki armor|buy|note=n}} 出售
+|-
+| [[File:Beetle armor.png|link=]]
+[[File:Beetle armor female.png|link=]]
+| {{item|mode=text|wrap=y|Beetle armor}}
+| style="text-align:center" | 23
+| style="text-align:center" data-sort-value=20 | 
+'''{{tr|Beetle Scale Mail}}：''' 20<br/>
+'''{{tr|Beetle Shell}}：''' 32
+| style="text-align:center" | 18
+| style="text-align:center" data-sort-value=61 | 
+'''{{tr|Beetle Scale Mail}}：''' 61<br/>
+'''{{tr|Beetle Shell}}：''' 73
+| class="small" |
+* +6% {{tr|melee damage}}
+* +6% {{tr|movement speed}}
+* +6% {{tr|melee speed}}
+* 敌人更有可能攻击你
+* '''{{tr|beetle Shell}}''': +5% {{tr|melee damage}}、+5% {{tr|critical strike chance}}
+** '''{{tr|Set Bonus}}:'''伤害转移，从 15% 开始，最多可到 45%
+* '''{{tr|beetle Scale mail}}'''：+8% {{tr|melee damage}}、+8% {{tr|critical strike chance}}、+6% {{tr|movement speed}}、+6% {{tr|melee speed}}
+** '''{{tr|Set Bonus}}：''' {{tr|melee damage}}和{{tr|speed}}各增加 10%，最多可达 30%
+| colspan="2" class="small" |
+* 18 {{item|Beetle Husk}} 能完成套装（26个能做出所有部件）
+* 完整的[[{{tr|Turtle armor}}]]套装（如果打算两个胸部部件都做，还额外多要一个[[{{tr|Turtle Scale Mail}}]]）
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Shroomite armor.png|link=]]
+[[File:Shroomite armor female.png|link=]]
+| {{item|mode=text|wrap=y|Shroomite armor}}
+| style="text-align:center" | 11
+| style="text-align:center" | 24
+| style="text-align:center" | 16
+| style="text-align:center" | 51
+| class="small" |
+* +25% {{tr|ranged critical strike chance}}
+* +13% {{tr|ranged damage}}
+* +12% {{tr|movement speed}}
+* +20% 几率不消耗{{tr|ammo}}
+* '''{{tr|Shroomite Headgear}}：'''为发射[[{{tr|arrows}}]]或[[{{tr|Stake}}]]的武器提供 +15% {{tr|Damage}}
+* '''{{tr|Shroomite Mask}}：'''为发射[[{{tr|bullets}}]]或[[{{tr|Candy Corn}}]]的武器提供 +15% {{tr|Damage}}
+* '''{{tr|Shroomite Helmet}}：''' {{eicons|1.4.4}}为其它所有不消耗的{{tr|range weapon}}/{{eicons|1.4.4|invert=y}}为发射[[{{tr|rockets}}]]或其它相似类型{{tr|ammunition}}的{{tr|range weapon}}提供 +15% {{tr|damage}}
+* '''{{tr|Set Bonus}}：'''站立不动时有隐身效果：
+** 敌人将不太可能攻击你
+** 在隐身中{{tr|ranged weapons}}的{{tr|Damage}}、{{tr|critical strike chance}}和{{tr|knockback}}会增加，最多可达 60%  {{tr|Damage}}、 10% {{tr|critical strike chance}} 和 50% {{tr|knockback}}
+| colspan="2" class="small" |
+* 54 {{item|Shroomite Bar}}
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Spectre armor.png|link=]]
+[[File:Spectre armor female.png|link=]]
+| {{item|mode=text|wrap=y|Spectre armor}}
+| style="text-align:center" data-sort-value=6 | 
+'''{{tr|Hood}}：''' 6<br/>
+'''{{tr|Mask}}：''' 18
+| style="text-align:center" | 14
+| style="text-align:center" | 10
+| style="text-align:center" data-sort-value=30 | 
+'''{{tr|Hood}}：''' 30<br/>
+'''{{tr|Mask}}：''' 42
+| class="small" |
+* +15% {{tr|magic damage}}
+* +7% {{tr|magic critical strike chance}}
+* +8% {{tr|movement speed}}
+* '''{{tr|Spectre Hood}}：''' -40% {{tr|magic damage}} {{eicons|1.4.1|invert=y|small=y|3ds=n}}
+** '''{{tr|Set Bonus}}：''' -40% {{tr|magic damage}} {{eicons|1.4.1|small=y}}<br/>对{{tr|enemies}}造成的{{tr|magic damage}}的 20% 会治疗自己或附近同盟玩家中{{tr|health}}最低的那个
+* '''{{tr|Spectre Mask}}：''' +60 {{tr|mana capacity}}、-13% {{tr|mana usage}}、+10% {{eicons|1.4.1|small=y}} / +5% {{eicons|1.4.1|invert=y|small=y}} {{tr|magic damage}}、+10% {{eicons|1.4.1|small=y}} / +5% {{eicons|1.4.1|invert=y|small=y}} {{tr|magic critical strike chance}}
+** '''{{tr|Set Bonus}}:'''对{{tr|enemy}}造成的{{tr|magic damage}}会生成能够自动追踪的魔力球，其伤害为造成伤害的{{eicons|1.4.0.1}} 100% / {{eicons|Spectre Mask|not=1.4.0.1}} 50%。
+* '''{{tr|Set Effect}}：''' 半透明的视觉效果
+| colspan="2" class="small" |
+* 54 {{item|Spectre Bar}}
+* 54 {{item|Chlorophyte Bar}}（{{eicons|Spectre Bar|invert=y}}）
+* 54 {{item|Ectoplasm}}（{{eicons|Spectre Bar|invert=y}}）
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+|-
+| [[File:Spooky armor.png|link=]] [[File:Spooky armor female.png|link=]]
+| {{item|mode=text|wrap=y|Spooky armor}}
+| style="text-align:center" data-sort-value=9 | 9 {{eicons|1.4.0.1|small=y}} <br/> 8 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" nowrap data-sort-value=11 | 11 {{eicons|1.4.0.1|small=y}} <br/> 10 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" nowrap data-sort-value=10 | 10 {{eicons|1.4.0.1|small=y}} <br/> 9 {{eicons|1.4.0.1|invert=y|small=y}}
+| style="text-align:center" data-sort-value=30 | 30 {{eicons|1.4.0.1|small=y}} <br/> 27 {{eicons|1.4.0.1|invert=y|small=y}}
+| class="small" |
+* +4 {{tr|minion capacity}} {{eicons|1.4.0.1|small=y}} / +3 {{tr|minion capacity}} {{eicons|1.4.0.1|invert=y|small=y}}
+* +33% {{tr|summon damage}}
+* +20% {{tr|movement speed}} {{eicons|1.4.0.1|small=y}}
+* '''{{tr|Set Bonus}}：'''+25% {{tr|summon damage}}（总共 +58%）
+* '''{{tr|Set Effect}}：'''轮廓有脉动效果
+| colspan="2" class="small" |
+* 750 {{item|Spooky Wood}}
+* 在{{item|Work Bench}}制作
+|-
+| [[File:Dragon armor.png|link=]] [[File:Dragon armor female.png|link=]]
+| {{item|Dragon armor|wrap=y|mode=text}}
+| style="text-align:center" | 31
+| style="text-align:center" | 20
+| style="text-align:center" | 14
+| style="text-align:center" | 65
+| class="small" |
+* +20% {{tr|melee damage}}
+* +17% {{tr|melee speed}}
+* +25% {{tr|critical strike chance}}
+* +12% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''+23% {{tr|melee speed}}（总共 +40%），+23% {{tr|movement speed}}（总共 +35%）
+| class="small" |
+* 30 {{item|Soul of Might}}
+* 50 {{item|Soul of Blight|wrap=y}}
+* 完整[[{{tr|Cobalt armor}}]]套装
+* 完整[[{{tr|Mythril armor}}]]套装
+* 完整[[{{tr|Adamantite armor}}]]套装
+* 完整[[{{tr|Hallowed armor}}]]套装
+| class="small" |
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+* 每个部件有 11% 几率掉落自[[{{tr|Ocram}}]]
+|-
+| [[File:Titan armor.png|link=]] [[File:Titan armor female.png|link=]]
+| {{item|Titan armor|wrap=y|mode=text}}
+| style="text-align:center" | 14
+| style="text-align:center" | 18
+| style="text-align:center" | 13
+| style="text-align:center" | 45
+| class="small" |
+* +30% {{tr|ranged damage}}
+* 20% 几率不消耗{{tr|ammo}}
+* +10% {{tr|movement speed}}
+* +20% {{tr|ranged critical strike chance}}
+* '''{{tr|Set Bonus}}：'''28%的几率不消耗弹药（总共 48%）
+| class="small" |
+* 30 {{item|Soul of Sight}}
+* 50 {{item|Soul of Blight|wrap=y}}
+* 完整[[{{tr|Cobalt armor}}]]套装
+* 完整[[{{tr|Mythril armor}}]]套装
+* 完整[[{{tr|Adamantite armor}}]]套装
+* 完整[[{{tr|Hallowed armor}}]]套装
+| class="small" |
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+* 每个部件有 11% 几率掉落自[[{{tr|Ocram}}]]
+|-
+| [[File:Spectral armor.png|link=]] [[File:Spectral armor female.png|link=]]
+| {{item|Spectral armor|wrap=y|mode=text}}
+| style="text-align:center" | 10
+| style="text-align:center" | 15
+| style="text-align:center" | 15
+| style="text-align:center" | 40
+| class="small" |
+* +150 {{tr|mana capacity}}
+* +30% {{tr|magic damage}}
+* -10% {{tr|mana usage}}
+* +10% {{tr|movement speed}}
+* +25% 魔法暴击率
+* '''{{tr|Set Bonus}}：''' -23% {{tr|mana usage}}（一共 -33%）
+| class="small" |
+* 20 {{item|Soul of Fright}}
+* 50 {{item|Soul of Blight|wrap=y}}
+* 完整[[{{tr|Cobalt armor}}]]套装
+* 完整[[{{tr|Mythril armor}}]]套装
+* 完整[[{{tr|Adamantite armor}}]]套装
+* 完整[[{{tr|Hallowed armor}}]]套装
+| class="small" |
+* 在{{item|Mythril Anvil}}/{{item|Orichalcum Anvil}}制作
+* 每个部件有 11% 几率掉落自[[{{tr|Ocram}}]]
+|-
+| [[File:Valhalla Knight armor.png|link=]] [[File:Valhalla Knight armor female.png|link=]]
+| {{item|mode=text|wrap=y|Valhalla Knight armor}}
+| style="text-align:center" | 20
+| style="text-align:center" | 24
+| style="text-align:center" | 24
+| style="text-align:center" | 68
+| class="small" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +10% {{tr|melee damage}}
+* +20% {{tr|melee critical strike chance}}
+* +20% {{tr|movement speed}}
+* {{tr|health regeneration}}速度大幅提高
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +3）<br/>大幅提升{{tr|Ballista}}效力
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|150}}（全套）价格出售
+|-
+| [[File:Shinobi Infiltrator armor.png|link=]] [[File:Shinobi Infiltrator armor female.png|link=]]
+| {{item|mode=text|wrap=y|Shinobi Infiltrator armor}}
+| style="text-align:center" | 10
+| style="text-align:center" | 26
+| style="text-align:center" | 18
+| style="text-align:center" | 54
+| class="small" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +20% {{tr|melee damage}}
+* +20% {{tr|melee speed}}
+* +25% {{tr|melee critical strike chance}}
+* +30% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +3）<br/>大幅提升{{tr|Lightning Aura}}效力
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|150}}（全套）价格出售
+|-
+| [[File:Red Riding armor.png|link=]] [[File:Red Riding armor female.png|link=]]
+| {{item|mode=text|wrap=y|Red Riding armor}}
+| style="text-align:center" | 8
+| style="text-align:center" | 24
+| style="text-align:center" | 16
+| style="text-align:center" | 48
+| class="small" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +25% {{tr|ranged damage}}
+* +20% {{tr|ranged critical strike chance}}
+* +20% 减少{{tr|ammo}}消耗
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +3）<br/>大幅提升{{tr|explosive Traps}}效力
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|150}}（全套）价格出售
+|-
+| [[File:Dark Artist armor.png|link=]]
+| {{item|mode=text|wrap=y|Dark Artist armor}}
+| style="text-align:center" | 7
+| style="text-align:center" | 21
+| style="text-align:center" | 14
+| style="text-align:center" | 42
+| class="small" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +25% {{tr|magic damage}}
+* +25% {{tr|magic critical strike chance}}
+* -15% {{tr|mana usage}}
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：'''<br/>+1 {{tr|sentry capacity}}（总共 +3）<br/>大幅提升爆炸烈焰效力
+| colspan="2" style="text-align:center" | {{item|mode=image|Tavernkeep}}
+由[[{{tr|Tavernkeep}}]]以 {{dm|150}}（全套）价格出售
+|-
+| [[File:Solar Flare armor.png|link=]] [[File:Solar Flare armor female.png|link=]]
+| {{item|mode=text|wrap=y|Solar Flare armor}}
+| style="text-align:center" | 24
+| style="text-align:center" | 34
+| style="text-align:center" | 20
+| style="text-align:center" | 78
+| class="small" |
+* +29% {{tr|melee damage}}
+* +26% {{tr|melee critical hit chance}}
+* +15% {{tr|movement speed}}
+* +15% {{tr|melee speed}}
+* 敌人更有可能瞄准你
+* {{tr|health regeneration}}速度小幅提高
+* '''{{tr|Set Bonus}}：'''随时间生成{{tr|Solar}}护盾，保护玩家并允许玩家冲刺。接触到{{tr|enemies}}时会消耗一次充能造成伤害，并产生爆炸。
+* '''{{tr|Set Effect}}：'''移动时身后有拖影
+| colspan="2" class="small" |
+* 45 {{item|Solar Fragment}}
+* 36 {{item|Luminite Bar}}
+* 在{{item|Ancient Manipulator}}制作
+|-
+| [[File:Vortex armor.png|link=]] [[File:Vortex armor female.png|link=]]
+| {{item|mode=text|wrap=y|Vortex armor}}
+| style="text-align:center" | 14
+| style="text-align:center" | 28
+| style="text-align:center" | 20
+| style="text-align:center" | 62
+| class="small" |
+* +36% {{tr|ranged damage}}
+* +27% {{tr|ranged critical strike chance}}
+* +10% {{tr|movement speed}}
+* 25% 的几率不消耗弹药
+* '''{{tr|Set Bonus}}：'''双击{{key|down}}切换隐身，增加远程能力和降低敌人瞄准你的几率，但会减慢移动速度
+* '''效果：'''会发光，每多装备一个部件发出的光就更强一分。
+| colspan="2" class="small" |
+* 45 {{item|Vortex Fragment}}
+* 36 {{item|Luminite Bar}}
+* 在{{item|Ancient Manipulator}}制作
+|-
+| [[File:Nebula armor.png|link=]] [[File:Nebula armor female.png|link=]]
+| {{item|mode=text|wrap=y|Nebula armor}}
+| style="text-align:center" | 14
+| style="text-align:center" | 18
+| style="text-align:center" | 14
+| style="text-align:center" | 46
+| class="small" |
+* +26% {{tr|magic damage}}
+* +16% {{tr|magic critical strike chance}}
+* +10% {{tr|movement speed}}
+* +60 {{tr|mana capacity}}
+* -15% {{tr|mana usage}}
+* '''{{tr|Set Bonus}}：'''对{{tr|enemies}}的{{tr|Magic damage}}有几率生成{{tr|buff}}强化道具，拾取强化道具可获得可堆叠的{{tr|buffs}}。
+| colspan="2" class="small" |
+* 45 {{item|Nebula Fragment}}
+* 36 {{item|Luminite Bar}}
+* 在{{item|Ancient Manipulator}}制作
+|-
+| [[File:Stardust armor.png|link=]] [[File:Stardust armor female.png|link=]]
+| {{item|mode=text|wrap=y|Stardust armor}}
+| style="text-align:center" | 10
+| style="text-align:center" | 16
+| style="text-align:center" | 12
+| style="text-align:center" | 38
+| class="small" |
+* +66% {{tr|summon damage}}
+* +5 {{tr|minion capacity}}
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|whip range}}
+* '''{{tr|Set Bonus}}：'''召唤跟随并保护玩家的{{tr|Stardust Guardian}}。
+| colspan="2" class="small" |
+* 45 {{item|Stardust Fragment}}
+* 36 {{item|Luminite Bar}}
+* 在{{item|Ancient Manipulator}}制作
+|}
+
+=== [[{{tr|Wizard set}}]] ===
+虽然不是传统的{{tr|armor set}}，但这些帽子和长袍一起穿着时会带来{{tr|set bonus}}。
+
+{| class="terraria lined" style="width:100%"
+! class="unsortable" |外观
+! {{tr|Item}}
+! 装备栏位
+! {{tr|Defense}}
+! class="unsortable" | 奖励
+! class="unsortable" | {{tr|Set Bonus}}（加上{{tr|robe}}）
+! class="unsortable" | {{tr|Cost}} / 来源
+|-
+| [[File:Magic Hat (equipped).png|link=]] [[File:Magic Hat (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Magic Hat}}
+| style="text-align:center" | 头部
+| style="text-align:center" | 2
+|
+* {{eicons|1.4.1}} +6% / {{eicons|1.4.1|invert=y}} +7% {{tr|magic damage}}
+* {{eicons|1.4.1}} +6% / {{eicons|1.4.1|invert=y}} +7% {{tr|magic critical strike chance}}
+| +60 {{tr|mana capacity}}
+| style="text-align:center" |{{item|mode=image|Traveling Merchant}}
+由[[{{tr|Traveling Merchant}}]]以 {{gc|3}} 出售。
+|-
+| [[File:Wizard Hat (equipped).png|link=]] [[File:Wizard Hat (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Wizard Hat}}
+| style="text-align:center" | 头部
+| style="text-align:center" | 4 {{eicons|1.4.1|small=y}} <br/> 2 {{eicons|1.4.1|invert=y|small=y}}
+|
+* {{eicons|1.4.1}} +5% / {{eicons|1.4.1|invert=y}} +15% {{tr|magic damage}}
+* +1 {{tr|minion slot}}（仅限在 Celebrationmk10 {{eicons|1.4.2.3|small=y}} 世界中）
+| +10% {{tr|magic critical strike chance}}
+| style="text-align:center" |{{item|mode=image|Tim}}
+掉落自[[{{tr|Tim}}]]。
+|}
+
+{| class="terraria lined" style="width:100%"
+! class="unsortable" |外观
+! {{tr|Item}}
+! 装备栏位
+! {{tr|Defense}}
+! class="unsortable" | 奖励
+! class="unsortable" | {{tr|Cost}} / 来源
+|-
+| [[File:Amethyst Robe (equipped).png|link=]] [[File:Amethyst Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Amethyst Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 0
+|
+* +20 {{tr|mana capacity}}
+* -5% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Amethyst}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Topaz Robe (equipped).png|link=]] [[File:Topaz Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Topaz Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 1
+|
+* +40 {{tr|mana capacity}}
+* -7% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Topaz}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Sapphire Robe (equipped).png|link=]] [[File:Sapphire Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Sapphire Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 1
+|
+* +40 {{tr|mana capacity}}
+* -9% {{tr|mana usage}}
+| colspan="2" class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Sapphire}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Emerald Robe (equipped).png|link=]] [[File:Emerald Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Emerald Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 2
+|
+* +60 {{tr|mana capacity}}
+* -11% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Emerald}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Ruby Robe (equipped).png|link=]] [[File:Ruby Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Ruby Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 2
+|
+* +60 {{tr|mana capacity}}
+* -13% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Ruby}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Amber Robe (equipped).png|link=]] [[File:Amber Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Amber Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 3
+|
+* +60 {{tr|mana capacity}}
+* -13% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Amber}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Diamond Robe (equipped).png|link=]] [[File:Diamond Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Diamond Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 3
+|
+* +80 {{tr|mana capacity}}
+* -15% {{tr|mana usage}}
+| class="small" |
+* 1 {{item|Robe}}
+* 10 {{item|Diamond}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Mystic Robe (equipped).png|link=]] [[File:Mystic Robe (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Mystic Robe}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | 2
+|
+* +6% {{tr|magic damage}}
+* +6% {{tr|magic critical strike chance}}
+* -10% {{tr|mana usage}}
+| style="text-align:center" | {{item|mode=image|Traveling Merchant}}
+由[[{{tr|Traveling Merchant}}]]以 {{iteminfo|Mystic Robe|buy}} {{eicons|1.3.0.1}} / {{gc|2}} {{eicons|1.3.0.1|invert=y}}）出售
+|}
+
+== 其他盔甲 ==
+一些{{tr|armor}}散件不是任何特定套装的一部分。
+
+{| class="terraria lined" style="width:100%"
+! class="unsortable" |外观
+! {{tr|Item}}
+! 装备栏位
+! {{tr|Defense}}
+! class="unsortable" | 奖励
+! class="unsortable" | {{tr|Cost}} / 来源
+|-
+| [[File:Empty Bucket (equipped).png|link=]] [[File:Empty Bucket (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Empty Bucket}}
+| style="text-align:center" | 头部
+| style="text-align:center" | {{iteminfo|Empty Bucket|defense}}
+| 通常用于运送液体。
+| colspan="2" class="small" |
+* 3 {{item|Iron Bar}} / {{item|Lead Bar}}
+* 在{{item|Iron Anvil|Iron}}/{{item|Lead Anvil}}制作
+|-
+| [[File:Goggles (equipped).png|link=]] [[File:Goggles (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Goggles}}
+| style="text-align:center" | 头部
+| style="text-align:center" | {{iteminfo|Goggles|defense}}
+|
+| colspan="2" class="small" |
+* 2 {{item|Lens}}
+* 在{{item|Work Bench}}'''和'''{{item|Wooden Chair|Chair}}处制作
+|-
+| [[File:Green Cap (equipped).png|link=]] [[File:Green Cap (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Green Cap}}<br/>（仅限{{eicons|1.4.0.1|small=y}}）
+| style="text-align:center" | 头部
+|style="text-align:center" | {{iteminfo|Green Cap|defense}}
+| 
+| style="text-align:center" | {{item|mode=image|Guide}}
+由[[{{tr|Guide}}]]掉落（仅当其名称为 Andrew 时）
+|-
+| [[File:Diving Helmet (equipped).png|link=]] [[File:Diving Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Diving Helmet}}
+| style="text-align:center" | 头部
+|style="text-align:center" | {{iteminfo|Diving Helmet|defense}}
+| 大大延长水下呼吸时间
+| style="text-align:center" | {{item|mode=image|Shark}} {{item|mode=image|Orca}}
+罕见掉落自[[{{tr|Shark}}]]和[[{{tr|Orca}}]] {{eicons|Ocram|small=y}}。
+|-
+| [[File:Night Vision Helmet (equipped).png|link=]] [[File:Night Vision Helmet (equipped) female.png|link=]]
+| [[{{tr|Night Vision Helmet}}]]
+| style="text-align:center" | 头部
+| style="text-align:center" | {{iteminfo|Night Vision Helmet|defense}}
+| 提供了类似于[[{{tr|Night Owl Potion}}]]的效果
+| style="text-align:center" | {{item|mode=image|Granite Elemental}} {{item|mode=image|Cyborg}}
+掉落自[[{{tr|Granite Elemental}}]]，或者在打败[[{{tr|Martian Madness}}]]{{tr|event}}后由[[{{tr|Cyborg}}]]以 {{iteminfo|Night Vision Helmet|buy}} 的价格售卖。
+|-
+| [[File:Viking Helmet (equipped).png|link=]] [[File:Viking Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Viking Helmet}}
+| style="text-align:center" | 头部
+| style="text-align:center" | {{iteminfo|Viking Helmet|defense}}
+|
+| style="text-align:center" | {{item|mode=image|Undead Viking}}
+罕见掉落自[[{{tr|Undead Viking}}]]。
+|-
+| [[File:Ultrabright Helmet (Equipped).png|link=]] [[File:Ultrabright Helmet (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Ultrabright Helmet}}
+| style="text-align:center" | 头部
+| style="text-align:center" | {{iteminfo|Ultrabright Helmet|defense}}
+| 提供了强度类似于[[{{tr|Ultrabright Torch}}]]的光照
+| colspan="2" class="small" |
+* 1 {{item|Mining Helmet}}
+* 1 {{item|Night Vision Helmet}}
+* 在{{item|Tinkerer's Workshop}}制作
+|-
+| [[File:Flinx Fur Coat (equipped).png|link=]] [[File:Flinx Fur Coat (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Flinx Fur Coat}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | {{iteminfo|Flinx Fur Coat|defense}}
+| +1 {{tr|minion capacity}}，+5% {{tr|summon damage}}
+| colspan="2" class="small" |
+* 10 {{item|Silk}}
+* 8 {{item|Flinx Fur}}
+* 8 {{item|Gold Bar|Gold}} / {{item|Platinum Bar}}
+* 在{{item|Loom}}制作
+|-
+| [[File:Gi (equipped).png|link=]] [[File:Gi (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Gi}}
+| style="text-align:center" | 胸部
+| style="text-align:center" | {{iteminfo|Gi|defense}}
+| +5% {{tr|damage}}、+5% {{tr|critical strike chance}}、<br/>+10% {{tr|melee speed}}、+10% {{tr|movement speed}}
+| style="text-align:center" | {{item|mode=image|Traveling Merchant}}
+由[[{{tr|Traveling Merchant}}]]以 {{iteminfo|Gi|buy}} 出售。
+|-
+| [[File:Boots of Ostara (equipped).png|link=]]
+| {{item|mode=text|wrap=y|Boots of Ostara}}
+| style="text-align:center" | 脚部
+| style="text-align:center" | 3
+| 能在{{tr|dirt}}创造出{{tr|grass}}。能进行几次“兔子跳”。
+| style="text-align:center" | {{item|mode=image|Lepus}}
+掉落自[[{{tr|Lepus}}]]。
+|-
+| [[File:Djinn's Curse (equipped).png|link=]]
+| {{item|mode=text|wrap=y|Djinn's Curse}}
+| style="text-align:center" | 脚部
+| style="text-align:center" | {{iteminfo|Djinn's Curse|defense}}
+| 提供类似[[{{tr|Featherfall Potion}}]]的缓慢下降效果。
+| style="text-align:center" | {{item|mode=image|Desert Spirit}}
+[[{{tr|Desert Spirit}}]]的罕见掉落。
+|-
+| [[File:Moon Lord Legs (equipped).png|link=]] [[File:Moon Lord Legs (equipped) female.png|link=]]
+| {{item|mode=text|wrap=y|Moon Lord Legs}}
+| style="text-align:center" | 脚部
+| style="text-align:center" | {{iteminfo|Moon Lord Legs|defense}}
+| 提供了 25% {{tr|movement speed}}和多四格跳跃高度。
+| style="text-align:center" | {{item|mode=image|Chest}} [[File:IconCorruptionCrimson.png|link={{tr|Drunk World}}]] {{item|mode=image|Chest}}
+在[[{{tr|drunk world}}]]的{{tr|chests}}中找到。
+|}
+
+== 成就 ==
+{{achievement|name=Matching Attire}}
+{{achievement|name=A Knight in Shining Armors}}
+
+== 备注 ==
+* 各{{tr|armor set}}的胸甲会随着人物的性别而改变，女性的胸甲常会露出乳沟或腹部，或二者皆有。这是个纯视觉的变更，并不会降低防御。
+* {{/count}}<!-- dynamic display of the numbers of armor sets in the different versions -->
+* 如果用第三方工具将{{tr|armor}}部件放进{{tr|accessory slots}}，它们不会为玩家提供其{{tr|defense}}和属性{{tr|buffs}}。
+* {{eicons|1.3.0.1|invert=y}}{{tr|Ancient armor}}部件在{{tr|inventory}}中显示为朝向左边而非右边。
+
+== 小贴士 ==
+* 默认的{{tr|Hardmode ore}}{{tr|armors}}（[[{{tr|Cobalt armor}}|{{tr|Cobalt}}]]、[[{{tr|Mythril armor}}|{{tr|Mythril}}]]、和[[{{tr|Adamantite armor}}|{{tr|Adamantite}}]]）经常被误认为是其他{{tr|armors}}（[[{{tr|Palladium armor}}|{{tr|Palladium}}]]、[[{{tr|Orichalcum armor}}|{{tr|Orichalcum}}]]、和[[{{tr|Titanium armor}}|{{tr|Titanium}}]]）的直接降级版本。虽然它们的{{tr|armor}}价值确实都比较低（{{tr|Adamantite}}的例外）并且没有华丽的效果，但它们经常能给出更好、更有职业针对性的奖励（例如，{{tr|Cobalt}}{{tr|Melee}}套装依然是第二好的{{tr|melee speed}}{{tr|armor}}，仅次于{{tr|Hallowed}}{{tr|Melee}}套装）。默认的{{tr|Hardmode ore}}{{tr|armor}}也不需要那么多{{tr|bars}}来制造，这使其更容易快速进展。
+* 对于大多数带有{{tr|helmet}}变体的{{tr|Hardmode armors}}来说，{{tr|the helmets}}的卖出价要比相应套装中其他组件要高，尽管其制作所需的{{tr|bars}}数更少。这是因为{{tr|the helmet}}带有职业特有奖励或其他特殊能力。例如，此类套装中的{{tr|the melee helmet}}会拥有{{tr|melee modifiers}}和不成比例的{{tr|defense}}。
+=== 混合盔甲套装 ===
+虽然{{tr|set bonuses}}可以成为使用成套{{tr|armor}}的强烈动机，但很多情况下不同散件的能力可以有效地组合起来，尤其是在游戏后期。特别万能的散件包括[[{{tr|Valhalla Knight's Breastplate}}]]（因其[[{{tr|health regeneration}}]]）。一些示例包括：
+
+* {{tr|The Turtle armor}}的胸甲件可以与[[{{tr|Hallowed Mask}}]]或[[{{tr|Chlorophyte Mask}}]]以及[[{{tr|Hallowed Greaves}}]]组合使用，来大大增强{{tr|melee damage}}，代价是失去 15% [[{{tr|damage reduction}}]]、{{tr|the Thorns effect}}、少量{{tr|defense}}、以及大部分提高[[{{tr|aggro}}]]的效果。如果用{{tr|Hallowed Mask}}，将得到 62 {{tr|defense}}（相较于全套{{tr|Turtle armor}}的 65）、+18% {{tr|melee damage}}、 +18% {{tr|melee critical chance}}、和 +10% {{tr|melee speed}}。 
+** 如果改用{{tr|the Chlorophyte Mask}}，{{tr|defense}}会降低至 58，而{{tr|the melee damage bonus}}升到 +28%，但{{tr|the melee critical chance bonus}}会掉到 +14%，并且失去{{tr|the melee speed bonus}}。无论哪种方式，穿戴者都会得到额外的 +7% ''所有''{{tr|damage}}和 +8% {{tr|movement speed}}。
+** {{eicons|Valhalla Knight's Breastplate}} 如果改用[[{{tr|Valhalla Knight's Breastplate}}]]，会得到额外 3 点防御力、{{tr|regeneration}}、和+30% {{tr|summon damage}}奖励，代价是一些{{tr|melee bonuses}}（只剩下 +10% 或 +20% {{tr|damage}}、+10% 或 +6% {{tr|critical chance}}）。
+* [[{{tr|Chlorophyte Helmet}}]]和[[{{tr|Shroomite Breastplate}}]]（或者在游戏末期，[[{{tr|Vortex Breastplate}}]]）的组合提供了比任何{{tr|set bonus}}都多的{{tr|ammo}}节约。（更深入的讨论参见[[{{tr|Sandgun}}#{{tr|Tips}}|{{tr|Sandgun}}]]。）
+* {{eicons|Valhalla Knight's Breastplate}}由{{tr|the Chlorophyte Mask}}、[[{{tr|Valhalla Knight's Breastplate}}]]、和{{tr|Valhalla Knight's Greaves}}所组成的再生{{tr|Melee}}/{{tr|Summon}}套装提供了 +16% {{tr|melee damage}}、+26% {{tr|melee critical strike chance}}、+30% {{tr|movement speed}}、+50% {{tr|summon damage}}、和每秒 +8 {{tr|health regeneration}}。
+* {{eicons|Valhalla Knight's Breastplate}} 对于远程职业，如果并不需要[[{{tr|Shroomite armor}}]]的{{tr|the set bonus}}，胸甲部件可以替换为{{tr|the Valhalla Knight's Breastplate}}以得到{{tr|health regeneration}}。
+* {{eicons|Valhalla Knight's Breastplate}}对于法师，[[{{tr|Hallowed Headgear}}]]、{{tr|Valhalla Knight's Breastplate}}、和{{tr|Dark Artist's Leggings}}提供了 +100 {{tr|mana capacity}}、+12% {{tr|magic damage}}、+37% {{tr|magic critical strike chance}}、+50% {{tr|minion damage}}、和每秒 +8 {{tr|health regeneration}}。
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{all versions}}
+[[Category:盔甲物品| ]]
+
+{{language info|en=Armor}}

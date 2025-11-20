@@ -1,0 +1,95 @@
+{{item infobox
+| type = Block
+| auto = 150
+| tags = plunder/Potion ingredients
+}}
+{{quotation|[[{{tr|Stylist}}|{{tr|The Stylist}}]]|{{gameText|LegacyDialog.318}}}}
+{{redirect|{{tr|Web}}|{{tr|the debuff}}|{{tr|Webbed}}}}
+
+[[File:Cobweb (demo).gif|right|frame|玩家接触{{tr|Cobwebs}}时它会破裂并减缓玩家。]]
+
+'''{{tr|Cobwebs}}'''是一种[[{{tr|crafting material}}]]，用于制作[[{{tr|Silk}}]]和其他物品。{{tr|Cobwebs}}也可以放置。它们会接住落到上面的玩家并重置[[{{tr|fall damage}}]]。它们会在玩家卡在其中之后短时间内破裂，但也可以用任意武器或[[{{tr|weapon}}]]或挥舞的[[{{tr|tool}}]]收取，就像[[{{tr|Plants}}]]那样。
+
+{{tr|Cobwebs}}通常出现在[[{{tr|underground}}]]区域，沿着墙或天花板的边缘，一簇有 5 个或更多，当被打破时一定会掉落{{tr|cobweb item}}。它们也会在[[{{tr|Spider Nest}}]]中大量出现，在那它们会随着时间推移而重新长出；但是，此处的{{tr|cobweb}}在被打破时只有 {{chance|1/4}} 几率掉落。在{{eil|Expert Mode}}中，[[{{tr|Black Recluse}}]]和[[{{tr|Jungle Creeper}}]]得到了种特殊的喷吐攻击，会对玩家造成[[{{tr|Webbed}}]][[{{tr|debuff}}]]；在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} [[{{tr|secret world seeds}}]]中，喷吐攻击会在以{{tr|projectiles}}消失处为中心的 13×13 格矩形区域内随机放下[[{{tr|Cobweb}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Cobweb|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Cobweb|expectedrows=11}}
+
+== 备注 ==
+* 放置的{{tr|cobwebs}}不会妨碍怪、[[{{tr|NPCs}}]]或[[{{tr|critters}}]]的移动。
+* 虽然{{tr|Cobwebs}}没有卖出价值，但可以制作成卖出价值为 {{iteminfo|Silk|sell}} 的[[{{tr|Silk}}]]。每个{{tr|silk}}需要 7 {{tr|Cobweb}}，这相当于{{tr|Cobweb}}有了 {{sell expr||floor(|Silk|/7<!--7 Cobweb make 1 Silk-->)}} 的卖出价值。
+* {{eicons|1.4.0.1|invert=y}} 放置状态的{{tr|cobwebs}}能支撑住像[[{{tr|sand}}]]和[[{{tr|silt}}]]这样的下落{{tr|blocks}}，移除{{tr|cobwebs}}会让它们落下，对它们所击中的任何东西造成伤害。
+
+== 小贴士 ==
+* 由于它们会延缓玩家的移动，{{tr|Cobwebs}}可用在坑洞的建造中以防止[[{{tr|fall damage}}]]。
+* 制作[[{{tr|Silk Rope}}]]而非[[{{tr|Web Rope}}]]会更为明智，因为{{tr|Silk}}消耗的{{tr|Cobweb}}更少而产出更多{{tr|rope}}。
+* 寻找{{tr|Cobweb}}有一种简单的方法是使用[[{{tr|Dangersense Potion}}]]，因为它会在屏幕上高亮标记出{{tr|Cobweb}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Spinal Tap}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Cobweb}}现在可以用 4 个[[{{tr|Spider Wall}}|{{tr|Spider Walls}}]]在靠近[[{{tr|Ecto Mist}}]]的[[{{tr|Work Bench}}]]处制作。
+** 为{{tr|Cobweb}}引入了 2 个新配方：
+*** {{tr|Cobweb}}现在可以在靠近{{tr|Ecto Mist}}的{{tr|Work Bench}}处制作成 4 个{{tr|Spider Walls}}。
+*** 10 个{{tr|Cobweb}}加上一个[[{{tr|Spider Fang}}]]可以在[[{{tr|Work Bench}}]]处制作成 10 个[[{{tr|Spider Nest Block}}|{{tr|Spider Nest Blocks}}]]。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 当玩家具有[[{{tr|Dangersense Potion}}|{{tr|Dangersense buff}}]]时，{{tr|Cobwebs}}现在会像其他{{tr|traps}}一样以红色高亮标记，而非红色闪光。
+** 为{{tr|Cobweb}}引入了 3 个新配方：
+*** 可以用 1个 {{tr|Cobweb}}制作出 3 个[[{{tr|Rope}}|{{tr|Web Rope}}]]。
+*** 30 个{{tr|Cobwebs}}可以在[[{{tr|Loom}}]]处制作成 [[{{tr|Strings}}|{{tr|White String}}]]。
+*** 可以用 20 个{{tr|Cobwebs}}和 10 个[[{{tr|Wood}}]]在[[{{tr|Work Bench}}]]处制作出[[{{tr|Wooden Yoyo}}]]。}}
+{{history|Desktop 1.2.4|
+** 现在用 10 个{{tr|Cobweb}}加上[[{{tr|Bottled Water}}]]和[[{{tr|Shiverthorn}}]]可以制作[[{{tr|Dangersense Potion}}]]。
+*** {{tr|This potion}}，会将[[{{tr|traps}}]]用红色高亮标记，也会用红色闪光微粒来高亮标记放置的{{tr|Cobwebs}}。}}
+{{history|Desktop 1.2|
+** 现在在[[{{tr|Spider Nest}}]]中会大量出现，因为墙面允许{{tr|Cobwebs}}重新长出。但是，这里的{{tr|Cobwebs}}只有 1/4 几率掉落{{tr|Cobweb item}}。
+** {{tr|Silk}}现在只需要 7 个{{tr|Cobwebs}}来制作，而非 10 个。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.0.6|现在会由于玩家陷入其中而断裂。}}
+{{history|Desktop 1.0.1|现在能正确防止{{tr|fall damage}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Sprite updated.}}}}
+{{history|Console 1.0.933.1|进行了对应于 {{icon|ps4}} 的 1.0.750.0 更新的更改。（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|
+** 当玩家具有[[{{tr|Dangersense Potion}}|{{tr|Dangersense buff}}]]时，{{tr|Cobwebs}}现在会像其他{{tr|traps}}一样以红色高亮标记，而非红色闪光。
+** 为{{tr|Cobweb}}引入了 3 个新配方：
+*** 可以用 1个 {{tr|Cobweb}}制作出 3 个[[{{tr|Rope}}|{{tr|Web Rope}}]]。
+*** 30 个{{tr|Cobwebs}}可以在[[{{tr|Loom}}]]处制作成 [[{{tr|Strings}}|{{tr|White String}}]]。
+*** 可以用 20 个{{tr|Cobwebs}}和 10 个[[{{tr|Wood}}]]在[[{{tr|Work Bench}}]]处制作出[[{{tr|Wooden Yoyo}}]]。（{{icon|ps4}}）}}
+{{history|Console 1.07|
+** 现在用 10 个{{tr|Cobweb}}加上[[{{tr|Bottled Water}}]]和[[{{tr|Shiverthorn}}]]可以制作[[{{tr|Dangersense Potion}}]]。
+*** {{tr|This potion}}，会将[[{{tr|traps}}]]用红色高亮标记，也会用红色闪光微粒来高亮标记放置的{{tr|Cobwebs}}。}}
+{{history|Console 1.02|
+** 现在在[[{{tr|Spider Nest}}]]中会大量出现，因为墙面允许{{tr|Cobwebs}}重新长出。但是，这里的{{tr|Cobwebs}}只有 1/4 几率掉落{{tr|Cobweb item}}。
+** {{tr|Silk}}现在只需要 7 个{{tr|Cobwebs}}来制作，而非 10 个。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Sprite updated.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|带着到{{tr|Desktop}} [[1.3.0.1]] 为止的相应更新引入。}}
+{{history|Mobile 1.3.0.7|
+** 当玩家具有[[{{tr|Dangersense Potion}}|{{tr|Dangersense buff}}]]时，{{tr|Cobwebs}}现在会像其他{{tr|traps}}一样以红色高亮标记，而非红色闪光。
+** 为{{tr|Cobweb}}引入了 3 个新配方：
+*** 可以用 1个 {{tr|Cobweb}}制作出 3 个[[{{tr|Rope}}|{{tr|Web Rope}}]]。
+*** 30 个{{tr|Cobwebs}}可以在[[{{tr|Loom}}]]处制作成 [[{{tr|Strings}}|{{tr|White String}}]]。
+*** 可以用 20 个{{tr|Cobwebs}}和 10 个[[{{tr|Wood}}]]在[[{{tr|Work Bench}}]]处制作出[[{{tr|Wooden Yoyo}}]]。}}
+{{history|Mobile 1.2.11212|
+** 现在用 10 个{{tr|Cobweb}}加上[[{{tr|Bottled Water}}]]和[[{{tr|Shiverthorn}}]]可以制作[[{{tr|Dangersense Potion}}]]。
+*** {{tr|This potion}}，会将[[{{tr|traps}}]]用红色高亮标记，也会用红色闪光微粒来高亮标记放置的{{tr|Cobwebs}}。}}
+{{history|Mobile 1.2.6508|
+** 现在在[[{{tr|Spider Nest}}]]中会大量出现，因为墙面允许{{tr|Cobwebs}}重新长出。但是，这里的{{tr|Cobwebs}}只有 1/4 几率掉落{{tr|Cobweb item}}。
+** {{tr|Silk}}现在只需要 7 个{{tr|Cobwebs}}来制作，而非 10 个。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-material = yes
+}}
+{{Master Template Tiles}}
+
+{{language info|en=Cobweb}}

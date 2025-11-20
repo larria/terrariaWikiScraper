@@ -1,0 +1,48 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4978
+| sound1 = Item 32.wav
+| soundcaption1 = 飞行
+| tags = wings / loot / accessories
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Fledgling Wings}}'''是仅有的[[{{tr|pre-Hardmode}}]]之前的[[{{tr|Wings}}|{{tr|wing}}]]类[[{{tr|accessory}}]]。其最高速度为水平 {{mph|15}} 和垂直 {{mph|22.5}}。它有 0.42 秒的飞行时间，以及 150% 的垂直速度乘数。
+
+{{tr|Fledgling Wings}}可以从[[{{tr|Floating Island}}]]上的[[{{tr|Skyware Chest}}]]中获得，以及从来自[[{{tr|fishing}}]]的[[{{tr|Sky Crate}}]]和[[{{tr|Azure Crate}}]]中获得。[[{{tr|Journey Mode}}]]{{tr|characters}}生成时总是带有一个{{tr|Fledgling Wings}}。
+
+== 备注 ==
+* 和其他{{tr|wings}}不同，{{tr|Fledgling Wings}}没有任何水平动量提升。
+* 在常规世界中，获得自{{tr|Skyware Chest}}或{{tr|crate}}的{{tr|Fledgling Wings}}永不会有[[{{tr|modifier}}]]。在 [[Celebrationmk10]] 世界中，{{tr|Skyware Chest}}中的{{tr|Fledgling Wings}}会有“最佳”{{tr|modifier}}之一，与其他{{tr|chest item}}一致。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.AddBuriedChest / Terraria.Player.OpenFishingCrate / Terraria.WorldGen.ImproveAllChestContents}}<!-- Note that Get fixed boi does not have this mechanic-->
+* 赠予新{{tr|Journey Mode character}}的{{tr|Fledgling Wings}}可拥有随机的{{tr|modifier}}，与其他初始{{tr|item}}一致。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UICharacterCreation.SetupPlayerStatsAndInventoryBasedOnDifficulty}}
+
+== 成就 ==
+{{achievement|name=Head in the Clouds}}
+
+== 小贴士 ==
+* 在[[{{tr|Journey Mode}}]]下，玩家起始就能获得{{tr|Fledgling Wings}}，且它直到[[{{tr|Wall of Flesh}}]]前都有使用价值。
+* 耗时取得{{tr|Fledgling Wings}}可能不太值得，因为诸如[[{{tr|Spectre Boots}}]]和[[{{tr|Cloud in a Bottle}}]]之类的{{tr|accessories}}能够提供类似的移动力，而且更为常见。
+* 缓慢坠落能力可以用来在不重置飞行时间的情况下移动很长的距离，这在通常可获得{{tr|Fledgling Wings}}的时期非常有用。
+
+== 花絮 ==
+* {{tr|The Fledgling Wings}}具有游戏中所有{{tr|wings}}中最低的垂直飞行，因为它是玩家所能得到的第一种{{tr|wing}}。
+* {{tr|Fledgling Wings}}的内部名称为<code>{{itemInternalNameFromId|4978}}</code>，可能指的是它在[[{{tr|Journey Mode}}]]中能立即获得的事实，此模式的部分特性旨在自由创造和提高游戏体验。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Fledgling Wings}}从[[{{tr|Skyware Chest}}]]的主要物品中移除，现在它有 {{chance|1/40}} 几率作为次要物品出现。
+*** [[{{tr|Sky Crates}}]]已被更新，以匹配上述更改。}}
+{{history|Desktop 1.4.1|现在{{tr|Fledgling Wings}}会取代[[{{tr|Lucky Horseshoe}}]]出现在{{tr|Skyware Chest}}、{{tr|Sky Crate}}、和[[{{tr|Azure Crate}}]]中。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Fledgling Wings}}

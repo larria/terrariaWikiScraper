@@ -1,0 +1,72 @@
+{{npc infobox
+| name = 星际商人
+| type = NPC
+| environment = Valid house
+| imagealt = &#32;
+| image2 = 星际商人.png
+| image3 = 星际商人 (old).png
+| imageversion2 = ,
+| imageversion3 = ,
+| imageother = Map Icon 星际商人.png / Map Icon 星际商人 (old).png
+| imageothercaption = Map Icon
+| boxwidth = 18em
+| id = 540
+|cargo = no
+}}
+
+'''星际商人'''是个商贩 [[{{tr|NPC}}]]，可以用游戏内的[[{{tr|Coins}}]]和真实世界的货币向他购买许多种独有物品。
+
+一旦以下条件全部满足，他就会出现：
+* 有一间空的[[{{tr|House}}]]。
+* 游戏世界中的所有玩家[[{{tr|Inventory}}|{{tr|inventories}}]]中加起来有超过 {{sc|10}}。
+
+注意只有处于主{{tr|inventory}}和{{tr|coin slots}}中的{{tr|coins}}才算数；存放在诸如[[{{tr|Piggy Bank}}]]这样的[[{{tr|Storage items}}#{{tr|Portable Storage}}|{{tr|portable storage item}}]]中的不计入要求中。如果星际商人被杀掉，仅当以上条件再次被满足时他才会重生。这意味着所有玩家{{tr|inventories}}中加起来需要有超过 {{sc|10}}。
+
+== 出售{{tr|items}} ==
+与其他{{tr|merchants}}不同，星际商人的商店库存并不是固定的，而是由游戏的远程服务器决定。下列物品已知由星际商人出售。
+
+{{shop
+| nonote=y
+|{{shop row|星界守望者|value=￥64|image=乐逗物品3609.png}}
+|{{shop row|融合模组|value={{gc|5}}|image=乐逗物品3648.png}}
+|{{shop row|复活药水|value=￥2|image=乐逗物品3606.png}}
+|{{shop row|三个复活药水|value=￥5|image=乐逗物品3607.png}}
+|{{shop row|九个复活药水|value=￥12|image=乐逗物品3608.png}}
+|{{shop row|忍者大师优惠礼包|value=￥45|image=乐逗物品3603.png}}
+|{{shop row|蜜蜂领主优惠礼包|value=￥128|image=乐逗物品3604.png}}
+|{{shop row|哥布林王优惠礼包|value=￥64|image=乐逗物品3605.png}}
+}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “我原来的商队里有一只猴子，一棵花菜，一个机器人，一团火，一条鱼和一只鸡。哦对了！还有一个像你一个的家伙。”
+* “如果每天晚上都是这样我就要召唤轨道炮啦！”
+* “火把？！你以为我是那个头上插了根白毛的老家伙吗？”
+* “介系里妹有挽过的船新版本。”
+* “相信我，氪金不会让你变强。”
+* “你完全不知道泥块在国外卖多少钱。”
+* “我这辈子最值的事情就是用煤炭换了一把钻石剑！”
+
+'''[[{{tr|Night}}]]：'''
+* “我打赌这些家伙一会儿就烧起来了！”
+
+'''[[{{tr|Blood Moon}}]]：'''
+* “慌什么，至少这里的骷髅不会骑蜘蛛，不是吗？”
+{{collapse bottom}}
+
+== 花絮 ==
+* 星际商人的性别未知。
+* 话语“你完全不知道泥块在国外卖多少钱。”模仿了[[{{tr|Merchant}}]]关于[[{{tr|Dirt Block}}]]所说的相似话语。
+* 星际商人的大多数话语都是对电子游戏《''{{wikipedia|Minecraft|我的世界（Minecraft）}}''》的致敬。
+** 与“用煤炭换了一把钻石剑”有关的对话很可能是参考了《''我的世界''》中的村民，他们提供的交易包括购买煤炭，也包括出售钻石剑。
+** 与“怪物烧起来”有关的对话，是参考了《''我的世界''》中的敌对生物会在阳光下燃烧的事实。
+** 与“骷髅骑蜘蛛”有关的对话，是参考了《''我的世界''》中的蜘蛛骑士。
+
+== 历史 ==
+{{history|移动中国版|nocat=y|t=乐逗版 1.3.5.3 (3009)|更改了皮肤。}}
+{{history|移动中国版|nocat=y|t=乐逗版 1.3.4 (2443)|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-npc = yes
+}}

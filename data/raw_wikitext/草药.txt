@@ -1,0 +1,236 @@
+'''{{tr|Herbs}}'''是一类[[{{tr|plants}}]]，可以用于制作[[{{tr|potions}}]]。它们可以在{{tr|world}}各处找到，并可以使用几乎任何[[{{tr|weapon}}]]或[[{{tr|tool}}]]收获。每种{{tr|herb}}都会在满足特定需求时开花。收获开花时的{{tr|Herbs}}会掉落 1 个{{tr|herb item}}和 1–3 个对应类型的[[{{tr|seeds|link=y}}|{{tr|seeds}}]]；{{tr|seeds}}可以被重新种植以持续供应{{tr|herbs}}。如果用[[{{tr|Staff of Regrowth}}]]或{{eil|Axe of Regrowth}}收获，掉落的{{tr|herbs}}数量会提升至 1–2 个，掉落的{{tr|seeds}}数量会提升至 1–5 个。{{source code ref|name=KillTile_GetItemDrops|v=1.4.4.9|method=Terraria.WorldGen.KillTile_GetItemDrops}}{{tr|Herbs}}会在其对应的[[{{tr|soil}}]]上随机出现，但也可以在那一{{tr|soil}}上、[[{{tr|Clay Pot}}]]、和{{eil|Planter Box|es}}中用对应{{tr|seed}}种植。
+
+{{tr|Herbs}}也可以在{{eil|Herb Bag|s}}中找到。此外，{{tr|Daybloom}}可以由{{eil|Angry Dandelion|s}}掉落。
+
+{{tr|Herbs}}和[[{{tr|liquids}}]]的交互各有不同：仅{{tr|Fireblossom}}可在{{tr|lava}}中生长，仅{{tr|Moonglow and Waterleaf}}可在{{tr|water}}中生长。没有{{tr|herb}}可在{{tr|honey or shimmer}}中生长。{{source code ref|name=growalch|v=1.4.4.9|method=Terraria.WorldGen.GrowAlch}}
+
+== 类型 ==
+有 7 种不同类型的{{tr|herbs}}。
+
+{| class="terraria lined"
+! colspan=2 | {{tr|Plant}}
+! {{tr|Seeds}}
+! 适合的{{tr|soil}}
+! 开花条件{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Drawing.TileDrawing.IsAlchemyPlantHarvestable}}
+|-
+| {{item|mode=table|Blinkroot|showid=y}}
+| {{item|mode=image|class=block aligncenter|Blinkroot Seeds}}
+| 
+* {{item|Dirt Block}}
+* {{item|Mud Block}}
+| 随机
+|-
+| {{item|mode=table|Daybloom|showid=y}}
+| {{item|mode=image|class=block aligncenter|Daybloom Seeds}}
+| 
+* {{item|Grass}}
+* {{item|Mowed grass}}
+* {{item|Hallowed grass}}
+* {{item|Mowed Hallowed grass}}
+| [[{{tr|Day and night cycle}}|{{tr|Daytime}}]]（{{time|4:30 AM}} 至 {{time|7:29 PM}}）
+|-
+| {{item|mode=table|Deathweed|showid=y}}
+| {{item|mode=image|class=block aligncenter|Deathweed Seeds}}
+| 
+* {{item|Corrupt grass}}
+* {{item|Corrupt Jungle grass}}
+* {{item|Ebonstone Block}}
+* {{item|Crimson grass}}
+* {{item|Crimson Jungle grass}}
+* {{item|Crimstone Block}}
+| [[{{tr|Day and night cycle}}|{{tr|nighttime}}]]，且是[[{{tr|Blood Moon}}]]或 {{eicons|1.3.0.1}} [[{{tr|Moon phase}}|{{tr|Full Moon}}]]（{{time|7:30 PM}} 至 {{time|4:29 AM}}）
+|-
+| {{item|mode=table|Fireblossom|showid=y}}
+| {{item|mode=image|class=block aligncenter|Fireblossom Seeds}}
+| 
+* {{item|Ash Block}}
+* {{item|Ash grass}}
+| {{eicons|1.3.0.1}} 日落时段（{{time|day=y|ticks=40500}} 至 {{time|day=y|ticks=54000}}），正在下[[{{tr|rain}}]]时除外<br/>{{eicons|1.3.0.1|invert=y}} 浸没在[[{{tr|lava}}]]中时
+|-
+| {{item|mode=table|Moonglow|showid=y}}
+| {{item|mode=image|class=block aligncenter|Moonglow Seeds}}
+| 
+* {{item|Jungle grass}}
+| {{tr|Nighttime}}（{{time|7:30 PM}} 至 {{time|4:29 AM}}）
+|-
+| {{item|mode=table|Shiverthorn|showid=y}}
+| {{item|mode=image|class=block aligncenter|Shiverthorn Seeds}}
+| 
+* {{item|Snow Block}}
+* {{item|Ice Block}}
+* {{item|Purple Ice Block}}
+* {{item|Red Ice Block}}
+* {{item|Pink Ice Block}}
+| 随机；会永远保持开花，直到被收获
+|-
+| {{item|mode=table|Waterleaf|showid=y}}
+| {{item|mode=image|class=block aligncenter|Waterleaf Seeds}}
+| 
+* {{item|Sand Block}}
+* {{item|Pearlsand Block}}
+| {{eicons|1.2.3}} 下[[{{tr|Rain}}]]时<br/>{{eicons|1.2.3|invert=y}} 浸没在[[{{tr|water}}]]中时
+|}{{options/reset|item}}
+
+== 生长 ==
+{| class="terraria lined aligncenter" style="float:right; margin-left:1em; font-size:90%"
+! {{tr|Herb}} !! 发芽阶段 !! 成熟阶段 !! 开花阶段
+|-
+| align=left | [[{{tr|Blinkroot}}]]
+| [[File:Blinkroot (placed) (sprout).png]] || [[File:Blinkroot (placed) (mature).png]] || [[File:Tiles 84 2.png]]
+|-
+| align=left | [[{{tr|Daybloom}}]]
+| [[File:Daybloom (placed) (sprout).png]] || [[File:Daybloom (placed) (mature).png]] || [[File:Tiles 84 0.png]]
+|-
+| align=left | [[{{tr|Deathweed}}]]
+| [[File:Deathweed (placed) (sprout).png]] || [[File:Deathweed (placed) (mature).png]] || [[File:Tiles 84 3.png]]
+|-
+| align=left | [[{{tr|Fireblossom}}]]
+| [[File:Fireblossom (placed) (sprout).png]] || [[File:Fireblossom (placed) (mature).png]] || [[File:Tiles 84 5.png]]
+|-
+| align=left | [[{{tr|Moonglow}}]]
+| [[File:Moonglow (placed) (sprout).png]] || [[File:Moonglow (placed) (mature).png]] || [[File:Tiles 84 1.png]]
+|-
+| align=left | [[{{tr|Shiverthorn}}]]
+| [[File:Shiverthorn (placed) (sprout).png]] || [[File:Shiverthorn (placed) (mature).png]] || [[File:Tiles 84 6.png]]
+|-
+| align=left | [[{{tr|Waterleaf}}]]
+| [[File:Waterleaf (placed) (sprout).png]] || [[File:Waterleaf (placed) (mature).png]] || [[File:Tiles 84 4.png]]
+|}<!--
+
+-->{{#vardefine:textherbyes|被摧毁时会掉落{{tr|Herb}}}}<!--
+-->{{#vardefine:textherbno|被摧毁时不会掉落{{tr|Herb}}}}<!--
+-->{{#vardefine:textseedyes|被摧毁时会掉落{{tr|Seeds}}}}<!--
+-->{{#vardefine:textseedno|被摧毁时不会掉落{{tr|Seeds}}}}<!--
+
+-->{{#vardefine:herbyes|{{item|size=15px|nolink=y|mode=image|Blinkroot|{{#var:textherbyes}}}}}}<!--
+-->{{#vardefine:herbno|{{nowrap|<span title{{=}}"{{#var:textherbno}}">{{item|size=15px|nolink=y|mode=image|Blinkroot|{{#var:textherbno}}}}{{no|style=margin-left: -18.5px;}}</span>}}}}<!--
+-->{{#vardefine:seedyes|{{item|size=15px|nolink=y|mode=image|Blinkroot Seeds|{{#var:textseedyes}}}}}}<!--
+-->{{#vardefine:seedno|{{nowrap|<span title{{=}}"{{#var:textseedno}}">{{item|size=15px|nolink=y|mode=image|Blinkroot Seeds|{{#var:textseedno}}}}{{no|style=margin-left: -18.5px;}}</span>}}}}
+
+{{tr|Herb}}的生长分为三个不同的阶段：
+* ''发芽阶段'' {{spaces|en}} {{#var:herbno}} {{*}} {{#var:seedno}}
+: 从地面长出的非常小的{{tr|plant}}枝条或幼芽。这一阶段可以在{{tr|seeds}}刚刚播撒时观察到。试图在这一阶段收获{{tr|plant}}时，''既不会获得{{tr|herb}}，也不会获得{{tr|seeds}}''（甚至不会返还最初用于种植的{{tr|seeds}}）。
+* ''成熟阶段'' {{spaces|en}} {{#var:herbyes}} {{*}} {{#var:seedno}}
+: {{tr|plant}}的植株部分已经有所生长，变化相当显著。但是它们仍然没有开花。在此时直接收获会''获得一份{{tr|herb}}，但不会获得{{tr|seeds}}''。在此阶段使用[[{{tr|Staff of Regrowth}}]]或{{eil|Axe of Regrowth}}收获{{tr|herb}}会获得较多量的{{tr|herbs and seeds}}。注意在这一阶段，只有种植在[[{{tr|soil}}]]上的{{tr|herb}}可以被这些{{tr|tools}}直接收获。
+* ''开花阶段'' {{spaces|en}} {{#var:herbyes}} {{*}} {{#var:seedyes}}
+: 以花的出现（可能有其他次要的效果，例如火花、发光、闪烁的光等等）为特征，且这一阶段只会在满足所需要求时出现。对于取决于{{tr|Weather}}或[[{{tr|event}}]]的条件，在这些条件的持续时间内会保持开花；{{tr|plant}}会在之后转变回成熟阶段（例：{{tr|Moonglow}}在{{tr|night}}开花，在{{tr|day}}则不会）。一般来说，这是收获{{tr|plants}}的最佳阶段，因为如此做会''获得{{tr|herb}}和其{{tr|seeds}}''。使用{{tr|Staff of Regrowth}}或{{tr|Axe of Regrowth}}收获会获得较多量的{{tr|herbs and seeds}}。
+
+在成熟阶段和开花阶段下，收获{{tr|herb}}时实际上会检测距离{{tr|herb}}最近的玩家是否手持{{tr|Staff of Regrowth}}或{{tr|Axe of Regrowth}}，以决定是否具有额外掉落量。<ref name="KillTile_GetItemDrops"/>因此，只要最近的玩家手持这些{{tr|tools}}，被摧毁的{{tr|herb tile}}就会产生较多量的{{tr|herbs and seeds}}，无论摧毁它们的是什么（例如直接使用[[{{tr|Explosives (class)}}]]或在{{tr|herbs}}下方的{{tr|tile}}上使用[[{{tr|Actuator}}]]），也无论它们是否能被这些{{tr|tools}}直接收获（例如种植在[[{{tr|Clay Pots}}]]和{{eil|Planter Box|es}}中的成熟阶段的{{tr|herbs}}无法被这些{{tr|tools}}直接收获）。
+
+=== 细节 ===
+{{tr|Herb}}生长分为两种类型：{{tr|herb plant}}的初始生成{{source code ref|name=plantalch|v=1.4.4.9|method=Terraria.WorldGen.PlantAlch}}，和已存在的{{tr|herb plant}}的生长。<ref name="growalch" />
+
+==== 初始生成 ====
+每{{tr|tick}}，游戏会多次尝试在{{tr|world}}的随机位置生成一棵发芽阶段的{{tr|herb}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld}}见[[{{tr|Plants}}#plantalch|{{tr|Plants}} § 生长]]获取细节。
+
+当{{tr|herb}}将要被生成时，游戏会选择一定竖直范围内的一个随机{{tr|tile}}。<ref name="plantalch"/>
+
+* 在常规{{tr|world}}中，此{{tr|tile}}有 {{chance|1/40}} 几率在[[{{tr|Cavern}}]]{{tr|layer}}的下半部分中或更下方，{{chance|1/10}} 几率在{{tr|world}}中的任何位置，以及 {{chance|7/8}}<!--1-1/40-1/10-->几率在{{tr|surface}}以下。
+* 在 {{eil|don't dig up}} 或 {{eil|get fixed boi}} {{tr|world}}中，此{{tr|the tile}}将总是在{{tr|world}}中的任何位置。
+
+如果所选{{tr|tile}}未被占用<!-- Not: Tile.active() -->，则在所选{{tr|tile}}的正下方选择一个新的被{{tr|solid block}}占用的{{tr|tile}}。
+
+然后，通过检查当前选择的{{tr|tile}}来尝试生成{{tr|herb plant}}：
+
+* 首先，检查附近是否有太多的{{tr|herbs}}。以所选{{tr|tile}}为中心的正方形范围内，至多允许 4 个{{tr|herbs}}存在。正方形的边长取决于[[{{tr|world size}}]]：<!--
+-->{{#vardefine:herbs|{{#expr:floor(15*4200/4200)*2+1}}}}<!--
+-->{{#vardefine:herbm|{{#expr:floor(15*6400/4200)*2+1}}}}<!--
+-->{{#vardefine:herbl|{{#expr:floor(15*8400/4200)*2+1}}}}
+** {{tr|Small world}}：{{#var:herbs}}×{{#var:herbs}}
+** {{tr|Medium world}}：{{#var:herbm}}×{{#var:herbm}}
+** {{tr|Large world}}：{{#var:herbl}}×{{#var:herbl}}
+* {{tr|Herbs}}也无法在{{tr|half-blocks}}或斜坡{{tr|block}}上生成。
+* 然后，如果所选{{tr|tile}}的上方一格未被占用，通过所选{{tr|tile}}的类型决定{{tr|herb}}的类型。如果所选{{tr|tile}}不匹配下方列出的任一个{{tr|tile}}，则不会种植{{tr|herb}}。
+{| class="terraria lined"
+! colspan=2 | {{tr|Herb type}}
+! 所选{{tr|tile type}}
+|-
+| {{item|Daybloom|mode=table|image=Daybloom (placed) (sprout).png}}
+| {{item|Grass|type=tile}}或{{item|Hallowed grass|type=tile}}
+|-
+| {{item|Moonglow|mode=table|image=Moonglow (placed) (sprout).png}}
+| {{item|Jungle grass|type=tile}}
+|-
+| {{item|Blinkroot|mode=table|image=Blinkroot (placed) (sprout).png}}
+| {{item|Dirt Block}}或{{item|Mud Block}}
+|-
+| {{item|Deathweed|mode=table|image=Deathweed (placed) (sprout).png}}
+| {{item|Corrupt grass|type=tile}}、{{item|Ebonstone Block}}、{{item|Crimson grass|type=tile}}、{{item|Crimstone Block}}、<br/>{{item|Corrupt Jungle grass|type=tile}}、{{item|Crimson Jungle grass|type=tile}}
+|-
+| {{item|Waterleaf|mode=table|image=Waterleaf (placed) (sprout).png}}
+| {{item|Sand Block}}或{{item|Pearlsand Block}}<br>{{note|small=y|paren=y|不在[[{{tr|Ocean}}]]{{tr|biome}}中}}
+|-
+| {{item|Fireblossom|mode=table|image=Fireblossom (placed) (sprout).png}}
+| {{item|Ash Block}}或{{item|Ash grass|type=tile}}
+|-
+| {{item|Shiverthorn|mode=table|image=Shiverthorn (placed) (sprout).png}}
+| {{item|Snow Block}}、{{item|Ice Block}}、{{item|Purple Ice Block}}、{{item|Red Ice Block}}、{{item|Pink Ice Block}}
+|}
+
+==== 已存在的草药的生长 ====
+在随机{{tr|tile}}更新选中一个{{tr|herb tile}}时，会进行生长检查。<ref name="growalch" />
+
+首先，游戏会检查{{tr|herb}}是否在恰当的{{tr|liquid}}中生长，遵循前述规则：仅{{tr|Fireblossom}}可在{{tr|lava}}中生长，仅{{tr|Moonglow and Waterleaf}}可在{{tr|water}}中生长，且没有{{tr|herb}}可在{{tr|honey or shimmer}}中生长。虽然{{tr|lava}}应当已经在接触其他{{tr|herbs}}时将其摧毁，{{tr|herbs}}仍然可能在其余类型的{{tr|liquid}}中存在。如果这一检查检测到了{{tr|herbs}}在不恰当的{{tr|liquid}}中生长，就会将其摧毁。
+
+然后，若所选{{tr|herb}}在发芽阶段，尝试将其生长为成熟阶段。首先，有 {{chance|1/50}} 的几率以 {{chance|1/1}} 的几率让所选{{tr|herb}}生长，但对于{{tr|Shiverthorns}}这一几率仅为 {{chance|1/2}}。如果这个 {{chance|1/50}} 几率失败了，有另一个 {{chance|1/50}} 的几率让部分类型的{{tr|herb}}生长，但需要特定的条件：
+{| class="terraria lined"
+! colspan=2 | {{tr|Herb type}}
+! 条件
+|-
+| {{item|Daybloom|mode=table|image=Daybloom (placed) (sprout).png}}
+| [[{{tr|daytime}}]]期间
+|-
+| {{item|Moonglow|mode=table|image=Moonglow (placed) (sprout).png}}
+| [[{{tr|night}}]]期间
+|-
+| {{item|Blinkroot|mode=table|image=Blinkroot (placed) (sprout).png}}
+| 位于[[{{tr|surface}}]]以下
+|-
+| {{item|Waterleaf|mode=table|image=Waterleaf (placed) (sprout).png}}
+| 下[[{{tr|Rain}}]]
+|-
+| {{item|Fireblossom|mode=table|image=Fireblossom (placed) (sprout).png}}
+| 位于[[{{tr|the Underworld}}]]
+|}
+
+之后，游戏会决定{{tr|Blinkroot and Shiverthorn}}的更新。
+* 对于{{tr|Blinkroot}}，有 {{chance|2/3}} 几率进行更新。
+** 如果它处于成熟阶段，它有 {{chance|1/2}} 的几率开花。
+** 如果它已开花，它有 {{chance|1/5}} 的几率返回到成熟阶段。
+* 对于{{tr|Shiverthorn}}，有 {{chance|1/30}} 的几率进行更新。这总是会让成熟阶段的{{tr|Shiverthorn}}开花。
+** 开花的{{tr|Shiverthorns}}不会返回到成熟阶段。
+
+== 备注 ==
+* 只要存在对应的{{tr|soil}}，{{tr|Herbs}}能够在{{tr|world}}中的任何地方生长。由于部分{{tr|soil}}类型在某些[[{{tr|biomes}}]]中存在更为普遍，因此对应的{{tr|herbs}}在这里会更频繁地出现。例如，[[{{tr|Snow biome}}]]/[[{{tr|Ice biome}}]]绝大部分由{{tr|Snow and Ice Blocks}}组成，因此[[{{tr|Shiverthorn}}]]可以在这里被大量发现。
+* 每次{{tr|herb}}的开花条件满足时，它都会开花，而非仅开花一次。例如，每当{{tr|night}}到来，[[{{tr|Moonglow}}]]都会开花，而非仅开花一次。
+* 由于随机{{tr|tile}}更新的机制，平均来说，在{{tr|surface layer}}及以上的{{tr|herbs}}会比在{{tr|surface layer}}以下的{{tr|herbs}}生长得更快。
+* 虽然对于每种{{tr|herb}}都有其对应的{{eil|Planter Box}}，但任何{{tr|Planter Box}}（和[[{{tr|Clay Pot}}]]）都可以用来种植任何{{tr|herb}}，无论其类型或是放置在哪个{{tr|biome}}中。用这些来种植{{tr|herb}}也避免了挥舞{{tr|tools}}会破坏附近{{tr|herbs}}的问题。
+* {{tr|Herb seeds}}以其对应{{tr|herb}}命名（例：[[{{tr|Blinkroot Seeds}}]]对应{{tr|Blinkroot}}）。也存在普通的[[{{tr|Seed}}]]，它们是[[{{tr|Blowpipe}}]]的[[{{tr|ammunition}}]]，不能被种植。
+* 所有{{tr|Herbs}}卖出价都是 {{iteminfo|Blinkroot|sell}}，而它们的{{tr|seeds}}卖出价为 {{iteminfo|Blinkroot Seeds|sell}}。
+
+== 小贴士 ==
+* {{tr|Herb seeds}}可以被用来创造[[Guide:刷资源#{{tr|Herbs}}|{{tr|herb}}农场]]。<ref>[http://web.archive.org/web/20150308175422/http://www.terrariaonline.com/threads/jungle-vegetation-and-moonglow-farms.111017/#post-3119246 www.terrariaonline.com → {{tr|Forums}} → 帖子： "Jungle vegetation and Moonglow farms"]</ref>可以使用[[{{tr|Dart Trap}}]]来快速收获生长在[[{{tr|soil}}]]上的{{tr|herbs}}；不过，收获生长在[[{{tr|Clay Pot}}]]或{{eil|Planter Boxes}}中的{{tr|herbs}}需要用[[{{tr|pickaxe}}]]，或者，若要获取更高收益，则需使用[[{{tr|Staff of Regrowth}}]]。
+
+== 花絮 ==
+* [[{{tr|Daybloom}}]]是仅有的能由{{tr|enemies}}掉落的{{tr|herb}}。
+
+== 另见 ==
+* [[指南:园艺]]
+* [[{{tr|Coral}}]]
+* [[{{tr|Mushrooms|link=y}}|{{tr|Mushrooms}}]]
+
+== 历史 ==
+{{history|Desktop 1.2.4|{{tr|Introduced}}{{tr|Shiverthorn}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}{{tr|Blinkroot}}、{{tr|Daybloom}}、{{tr|Deathweed}}、{{tr|Fireblossom}}、{{tr|Moonglow}}、{{tr|Waterleaf}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Herbs}}
+{{Master Template Consumables
+| show-material = yes
+}}
+
+[[Category:制作材料物品]]
+
+{{language info|en=Herbs}}

@@ -1,0 +1,227 @@
+{{infobox wrapper
+|{{npc infobox
+| auto = 42
+| idprojectile = 55
+| image = Hornet.gif
+| image2 = Hornet (old).png
+| type = Flying Enemy
+| environment = Underground Jungle
+| damage =
+| defense =
+| life =
+| knockback =
+| money =
+| debuff = Poisoned
+| debuffchance = {{modes|33%|100%}}
+| debuffduration = {{modes|10|2–10 或 20}} {{tr|seconds}}
+| Stinger|1|{{modes|66%|100%}}
+| Bezoar|1|{{modes|1%|2%}}
+|:group:start|以下三件{{tr|item}}只会掉落其一|---------
+| Ancient Cobalt Helmet|1|0.33%
+| Ancient Cobalt Breastplate|1|0.33%
+| Ancient Cobalt Leggings|1|0.33%
+|:group:end|---------|---------
+| sound1 = Item 17.wav
+| soundcaption1 = {{tr|Stinger}}
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+{{npc infobox
+| id = 1011
+| idprojectile = 55
+| type = Flying Enemy
+| name = Dragon Hornet
+| image = Dragon Hornet.gif
+| image2 =
+| variant = yes
+| environment = Underground Jungle
+| damage = 20
+| life = 75
+| defense = 20
+| money = {{coin|40cc}}
+| Stinger|1-3|50%
+| Beeswax|1|10%
+| sound1 = Item 17.wav
+| soundcaption1 = {{tr|Stinger}}
+}}
+}}
+{{dablink|不要与[[{{tr|Moss Hornet}}]]相混淆，这是一种相似的[[{{tr|Hardmode}}]]{{tr|enemy}}。}}
+
+'''{{tr|Hornets}}'''是一种[[{{tr|pre-hardmode}}]]的飞行[[{{tr|enemy}}]]，生成于[[{{tr|Underground Jungle}}]]。它们遵循{{tr|Flying AI}}，会漂浮在玩家射程外然后向玩家冲锋，同时也会发射{{tr|stinger projectile}}（在{{eil|Expert Mode}}中频率会加快）。这些{{tr|stinger}}有 {{chance|1/3}} 几率对玩家造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]，持续 10 秒。在{{tr|Expert mode}}中，有 {{chance|1/3}}的几率持续 20 秒，或 {{chance|2/3}}的几率持续 2–10 秒。{{tr|stinger}}无法用武器摧毁，并且行进速度大致上和[[{{tr|Dart Trap}}]]发出的{{tr|dart}}一致。
+
+== 种类 ==
+{{tr|Hornet}}的所有种类有着完全相同的掉落。[[{{tr|Moss Hornet}}]]''不是''[[{{tr|pre-Hardmode}}]]{{tr|Hornet}}的一个种类。
+{{npc infobox/tablestart}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist/moneyBlock}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! {{tr|health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+! {{tr|Coin}}
+{{npc infobox
+| auto = 42
+| image = Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -16
+| imagealt = [[File:Hornet.gif|{{#expr:42*0.85 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -17
+| imagealt = [[File:Hornet.gif|{{#expr:42*1.2 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = 231
+| image = Fatty Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -56
+| imagealt = [[File:Fatty Hornet.gif|{{#expr:42*0.85 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -57
+| imagealt = [[File:Fatty Hornet.gif|{{#expr:44*1.25 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = 232
+| image = Honey Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -58
+| type = Flying Enemy
+| imagealt = [[File:Honey Hornet.gif|{{#expr:42*0.8 round 0}}px|link=]]
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -59
+| imagealt = [[File:Honey Hornet.gif|{{#expr:42*1.15 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = 233
+| image = Leafy Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -60
+| imagealt = [[File:Leafy Hornet.gif|{{#expr:42*0.92 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -61
+| imagealt = [[File:Leafy Hornet.gif|{{#expr:42*1.1 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = 234
+| image = Spikey Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -62
+| imagealt = [[File:Spikey Hornet.gif|{{#expr:44*0.85 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -63
+| imagealt = [[File:Spikey Hornet.gif|{{#expr:44*1.16 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = 235
+| image = Stingy Hornet.gif
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -64
+| imagealt = [[File:Stingy Hornet.gif|{{#expr:46*0.85 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+{{npc infobox
+| auto = -65
+| imagealt = [[File:Stingy Hornet.gif|{{#expr:46*1.21 round 0}}px|link=]]
+| type = Flying Enemy
+| environment = Underground Jungle
+}}
+|}{{npc infobox/options|reset}}{{npc infobox/tableend}}
+
+== 备注 ==
+* {{eicons|1.4.0.3}} 在 [[{{tr|For the worthy}}]] 和 [[{{tr|Get fixed boi}}]]{{tr|world}}中，{{tr|Hornet}}发射{{tr|stinger}}的频率会增快至大约两倍，并会在死亡时向随机方向释放出一串{{tr|stinger}}。
+
+== 花絮 ==
+* 虽然{{tr|Dragon Hornet}}看起来和{{tr|Hornet}}一样只有一根{{tr|stinger}}，但是它最多可以掉落三根。
+* 实际上，{{tr|hornet}}是{{tr|wasp}}的一种。
+** 尽管真正的{{tr|hornet}}并不能射出其{{tr|stinger}}，但它们可以多次蜇刺并可能致命，尤其是对于那些过敏的人。
+{{bestiary}}
+
+== 另见 ==
+* {{item|Bee}}——相似但危险程度较低的[[{{tr|enemy}}]]
+* {{item|Bee Mount|small=y}}——可骑乘的{{tr|bee}}[[{{tr|mount}}]]
+* {{item|Hornet Staff|Hornet minion|image=Hornet (minion).gif|small=y}}——会与{{tr|enemy}}战斗的{{tr|hornet}}[[{{tr|minion}}]]
+* {{item|Baby Hornet}}——{{tr|hornet}}[[{{tr|pet}}]]（不会战斗）
+* {{item|Tiphia|small=y}}——{{tr|tiphia pet}}，有几乎完全一样的外观（每约 0.3 秒会对{{tr|enemy}}造成 1 伤害，但不会追击它们）
+* {{item|Moss Hornet}}——[[{{tr|Hardmode}}]]的{{tr|Hornet}}类{{tr|enemy}}
+* {{item|Alien Hornet|small=y}}——[[{{tr|Vortex Pillar}}]]的{{tr|Hornet}}类{{tr|enemy}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.4.0.1|[[{{tr|Bee Hive}}]]在撞击时不再有几率生成{{tr|Hornet}}。}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}旧的{{tr|Sprites}}为 [[File:Hornet_(old).png|link=]]。}}
+{{history|Desktop 1.3.0.1|在你隐身时{{tr|Hornets}}不再会朝你发射。}}
+{{history|Desktop 1.2.3|修正了{{tr|Ancient Cobalt Leggings}}总是会与{{tr|Ancient Cobalt Helmet}}一起掉落的 {{tr|bug}}，这一 {{tr|bug}} 使得此物品实际上的掉落率变为 {{chance|1/150}}。}}
+{{history|Desktop 1.2|
+** {{tr|Health and damage}}分别降低了 4% 和 24%。
+** 现在被击杀时有几率掉落[[{{tr|Ancient Cobalt armor}}]]。}}
+{{history|Desktop 1.1|{{tr|Melee damage}}分别由 45/38/32 降低至 40/34/28。}}
+{{history|Desktop 1.0.6|
+** 添加了{{tr|stinger projectile}}。
+** {{tr|Hornet}}现在不能进入水中。}}
+{{history|Desktop 1.0.5|
+** 从现在开始应该不会进入水中。
+** 接触水面时不会发出溅水的声音。
+** 引入了{{tr|Big Stinger}}和{{tr|Little Stinger}}变种。
+** {{tr|Hornet}}不再掉落[[{{tr|Jungle armor}}]]，它改为由玩家制作。}}
+{{history|Desktop 1.0.4|{{tr|Hornet}}在飞行时不再显得要翻过来的样子。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|移除{{tr|Dragon Hornet}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|移除{{tr|Dragon Hornet}}。（{{icon|ps4}}）}}
+{{history|Console 1.02|添加了{{tr|Dragon Hornet}}的掉落。}}
+{{history|Console-Release|引入，同时引入了{{tr|Dragon Hornet}}变种。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|移除{{tr|Dragon Hornet}}。}}
+{{history|Mobile 1.1.5536|{{tr|Dragon Hornet}}现在会掉落[[{{tr|Stinger}}]]。}}
+{{history|Mobile-Release|引入，同时引入了{{tr|Dragon Hornet}}变种。}}
+{{history|3DS-Release|引入，同时引入了{{tr|Dragon Hornet}}变种。}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Hornet}}

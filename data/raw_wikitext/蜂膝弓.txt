@@ -1,0 +1,52 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 2888
+| idprojectile = 469,181
+| listcat = bows
+| tags = drop / bag loot / treasure bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:The Bee's Knees (demo).gif|frame|right|{{tr|The Bee's Knees}}射出一行蜜蜂。]]
+
+'''{{tr|The Bee's Knees}}'''是一把[[{{tr|pre-hardmode}}]]的[[{{tr|bow}}]]，有 {{chance|1/3}} 的几率由[[{{tr|Queen Bee}}]]掉落。当使用[[{{tr|Wooden Arrow}}]]为[[{{tr|ammo}}]]时，此{{tr|bow}}会转而射出一个像一排{{tr|bee}}一样的{{tr|Bee Arrow projectile}}。{{tr|Bee Arrows}}不受{{tr|gravity}}影响，并在与[[{{tr|enemy}}]]或实体[[{{tr|block}}]]碰撞后散开，生成三个小型追踪{{tr|bee projectiles}}，有三次独立的 {{chance|1/3}} 几率生成额外的{{tr|bee}}。{{tr|bee projectiles}}造成 {{chance|1/3}} 于{{tr|weapon}}和{{tr|ammo}}总合的{{tr|damage}}({{#expr:floor(({{iteminfo|The Bee's Knees|damage}}+{{iteminfo|Wooden Arrow|damage}})/3)}} {{tr|base damage}})，10 {{tr|seconds}}后或与[[{{tr|water}}]]或[[{{tr|lava}}]]接触后消失，此外，{{tr|projectile}}有 {{chance|1/2}} 几率造成 1 额外{{tr|damage}}。{{source code ref|name=bees|v=1.4.4.9|method=Terraria.Projectile.Kill}}{{tr|bees}}可以穿透 1 个{{tr|enemy}}或于碰到{{tr|block}}后反弹 1 次，但这两个效果不能于一个{{tr|bee}}上应用。
+
+{{modifier|ranged}}
+
+== 备注 ==
+* 装备{{eil|Hive Pack}}时，所有{{tr|Bee projectiles}}有 {{chance|1/2}} 几率转化为{{tr|Giant Bee projectiles}}，总会提高 1–3 {{tr|damage}}，造成{{knockback|full=y|0.5|class=}}的[[{{tr|knockback}}]]，能穿透{{tr|enemies}}或碰到实体{{tr|blocks}}后反弹共 4 次，飞得更快，并持续 11 {{tr|seconds}}。两种{{tr|bee projectiles}}都会在{{tr|contact}}到[[{{tr|water}}]]或[[{{tr|lava}}]]后立即消失。{{source code ref|v=1.4.4.9|method=Terraria.Player.beeType / Terraria.Player.beeDamage / Terraria.Player.beeKB / Terraria.Projectile.SetDefaults|t=虽然{{tr|Giant Bees}}的实际{{tr|knockback}}为<code>0.5 + ''{{tr|Bee}}{{tr|knockback}}'' × 1.1</code>, 但是所有普通{{tr|Bees}}的{{tr|knockback}}都为 0，使 1.1 倍乘数相关计算永不生效。}}
+* 当向左侧或上方 1 {{tr|tile}}厚的墙壁射击时，部分来自初始{{tr|projectile}}的{{tr|bee projectiles}}可能会在墙壁的另一侧生成。但{{tr|Bees}}不会穿过位于玩家右侧或下方的墙壁。
+* {{tr|Bee Arrow projectile}}不受重力影响，这意味着它不会像普通{{tr|arrow}}一样在射出后下坠。
+* {{tr|arrow}}会在与{{tr|enemy}}{{tr|contact}}时造成{{tr|damage}}然后散成{{tr|bees}}，之后，{{tr|bee}}也会造成{{tr|damage}}。
+
+== 小贴士 ==
+* {{tr|The Bee's Knees}}对于{{tr|ranged players}}来说是一把非常强力的{{tr|weapon}}，它对单体目标的{{tr|damage}}足以让其用到获得[[{{tr|Hellwing Bow}}]]或更靠后的{{tr|bow}}。
+* 由于较少的可反弹次数，{{tr|the Bee's Knees}}发射的{{tr|bee}}通常比其他{{tr|bee}}{{tr|weapons}}存在的时间更短。不过，这把{{tr|weapon}}的{{tr|Bee Arrow}}会造成相较之下多得多的{{tr|damage}}。
+* 和大部分将{{tr|arrows}}转换为特殊{{tr|projectile}}的{{tr|bows}}不同，{{tr|The Bee's Knees}}可以用于正常地发射非[[{{tr|Wooden Arrow}}]]的[[{{tr|arrows}}]]。此种情况下，它是一把高于平均水平的{{tr|bow}}，在{{tr|pre-Hardmode}}仅次于[[{{tr|Molten Fury}}]]，但也比后者能更早获得。不过，其特殊{{tr|projectiles}}永远不能继承更好的{{tr|arrow type}}的较高的{{tr|base damage}}。
+** 如果空中的目标较难被直接命中，向地面射击并让{{tr|bees}}追踪{{tr|enemies}}不失为一种选择。
+* {{tr|The Bee's Knees}}生成的{{tr|The bees}}能够对{{tr|enemies}}造成几乎持续不停的伤害，从而能通过{{tr|knockback}}来将其定住。这使得{{tr|The Bee's Knees}}在早期[[{{tr|Hardmode}}]]仍然可用。
+* {{tr|The Bee's Knees}}是针对[[{{tr|Wall of Flesh}}]]的极佳武器，因为{{tr|bees}}能在短时间内轻松地处理[[{{tr|The Hungry}}]]，并蜂拥而上攻击[[{{tr|Wall of Flesh}}]]本身。
+
+== 花絮 ==
+* {{modifier|prefixnote}}
+* 其名称参考了短语''{{wiktionary|the bee's knees}}''，意为优秀或卓越的东西。
+* 此武器是一系列{{tr|bee}}相关的一套武器的一部分，它们都和[[{{tr|Queen Bee}}]]与[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]有关。
+* 虽然{{tr|tooltip}}称{{tr|arrows}}会变成一列{{tr|bees}}，但如果{{tr|the Bee's Knees}}水平发射的话，它们也会变成一行。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|use time}}由 24 降低至 23。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:The Bee's Knees (pre-1.4.0.1).png|link=]]。
+** {{tr|Damage}}从 26 降低至 23。
+** {{tr|Use Time}}从 23 提升至 24。
+** {{tr|Sell value}}从 {{sc|54}} 提升至 {{gc|2}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=The Bee's Knees}}

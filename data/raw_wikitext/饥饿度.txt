@@ -1,0 +1,83 @@
+{{exclusive|1.4.3}}
+{{redirect|{{tr|Hungry}}|{{tr|Wall of Flesh}}召唤的{{tr|enemy}}|{{tr|The Hungry}}}}
+
+'''{{tr|Hunger}}'''是一个游戏机制，仅存在于 [[{{tr|The Constant}}]] 和 [[{{tr|Get fixed boi}}]] [[{{tr|secret world seeds}}|秘密{{tr|worlds}}]]中。它分为三个阶段，由不同的[[{{tr|debuffs}}]]表明。第一阶段会在世界创建后立即出现，但它没有任何实际效果。在一段时间后，它将会达到第二和第三阶段，这会降低玩家的属性，且最终会让玩家持续失去[[{{tr|health}}]]。
+
+使用任何类型的[[{{tr|food}}]]会暂时地禁用{{tr|hunger}}。在[[{{tr|Well Fed}}|{{tr|food buff}}]]激活期间，{{tr|debuff}}会被抵消，但一旦{{tr|buff}}结束，第一阶段的{{tr|hunger}}就会重新出现。
+
+在{{tr|hunger}}激活时食用[[{{tr|Mushroom}}]]也会将{{tr|debuff}}重置到第一阶段起始时。
+
+{{float file box|width=8em|title=[[{{tr|Emotes}}]]|
+[[File:Emote Peckish.gif]]
+
+{{tr|Peckish}}
+----
+[[File:Emote Hungry.gif]]
+
+{{tr|Hungry}}
+----
+[[File:Emote Starving.gif]]
+
+{{tr|Starving}}
+}}
+
+在每一阶段的开始，会出现对应的[[{{tr|emote}}]]。
+
+== 阶段 ==
+{{infobox wrapper|direction=row|float=none
+|{{buff infobox
+| auto = 332
+| duration = {{duration|300}} {{note|small=y|paren=y|[[{{tr|The Constant}}]]}} /<br/>{{duration|480}} {{note|small=y|paren=y|[[{{tr|Get fixed boi}}]]}}{{source code ref|name=duration|v=1.4.4.9|method=Terraria.Player.UpdateHungerBuffs|t=实际决定{{tr|duration}}的条件为“<code>remixWorld</code> && <code>dontStarveWorld</code>”，即 [[{{tr|Don't dig up}}]] 和 {{tr|The Constant}} {{tr|world}}属性为真。}}
+| effects = 无实际效果
+}}
+|{{buff infobox
+| auto = 333
+| duration = {{duration|300}} {{note|small=y|paren=y|[[{{tr|The Constant}}]]}} /<br/>{{duration|480}} {{note|small=y|paren=y|[[{{tr|Get fixed boi}}]]}}<ref name="duration"/>
+| effects = 降低属性
+}}
+|{{buff infobox
+| auto = 334
+| duration = 直到玩家使用[[{{tr|Food}}]]{{tr|item}}
+| effects = 每秒失去{{tr|health}}，并降低属性
+}}
+}}
+
+{{tr|Hunger}}的第一阶段为'''{{tr|Peckish}}'''，在[[{{tr|The Constant}}]] {{tr|worlds}}中持续 {{duration|300}}，或在 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中持续 {{duration|480}}。这一时间过后，会进入第二阶段，玩家变得'''{{tr|Hungry}}'''。再经过 {{duration|300}} / {{duration|480}}后就会到达最后阶段，'''{{tr|Starving}}'''。它会持续到玩家使用任何[[{{tr|food}}]]或死亡。在{{tr|Starving}}时，玩家每秒会失去等同于其{{tr|maximum health}}的 2% 的{{tr|health}}，且其他所有[[{{tr|health regeneration}}]]全部无效。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateLifeRegen}}
+
+{{tr|Peckish}}没有任何功能性的效果，而{{tr|Hungry and Starving}}会降低玩家的属性：{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBuffs}}
+
+{| class="terraria lined"
+! 属性 !! {{item|mode=image|nolink=y|Hungry}}<br/>{{tr|Hungry}} !! {{item|mode=image|nolink=y|Starving}}<br/>{{tr|Starving}}
+|-
+| [[{{tr|Defense}}]] || −2 || −4
+|-
+| [[{{tr|Damage}}]] || −5% || −10%
+|-
+| [[{{tr|Melee speed}}]] || −5% || −10%
+|-
+| [[{{tr|Critical strike chance}}]] || −2% || −4%
+|-
+| [[{{tr|summon}}]][[{{tr|knockback}}]] || −0.5 || −1
+|-
+| [[{{tr|Mining speed}}]] || −5% || −15%
+|}
+
+== 花絮 ==
+* 这些{{tr|debuffs}}的{{tr|icons}}基于《[[{{tr|Don't Starve}}]]》中的{{iwlink|dts|Hunger}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|食用普通{{tr|Mushroom}}会将{{tr|hunger}}重置为完整持续时间的{{tr|Peckish}}。}}
+{{history|Desktop 1.4.3.2|修复了当{{tr|hunger}}状态改变时会删除特定{{tr|buffs}}的问题。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.3.2 的更改一并引入。}}
+{{history|Switch 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.3.2 的更改一并引入。}}
+{{history|Mobile 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.3.2 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Hunger}}

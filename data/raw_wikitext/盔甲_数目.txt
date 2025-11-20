@@ -1,0 +1,255 @@
+<!--
+
+----- Define variables -----
+// total counts:
+-->{{#vardefine:a:dsk_n-tot|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Desktop}}内容<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:cns_n-tot|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Console}}内容<!--
+	-->|nottitlematch={{tr|Dragon armor}}{{!}}{{tr|Spectral armor}}{{!}}{{tr|Titan armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:mbl_n-tot|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Mobile}}内容<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:old_n-tot|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Old-gen console}}内容<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:3ds_n-tot|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|3DS}}内容<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+
+// pre-Hardmode:
+-->{{#vardefine:a:dsk_n-phm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Desktop}}内容<!--
+	-->|notcategory=困难模式独有物品<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:cns_n-phm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Console}}内容<!--
+	-->|notcategory=困难模式独有物品<!--
+	-->|nottitlematch={{tr|Dragon armor}}{{!}}{{tr|Spectral armor}}{{!}}{{tr|Titan armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:mbl_n-phm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Mobile}}内容<!--
+	-->|notcategory=困难模式独有物品<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:old_n-phm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Old-gen console}}内容<!--
+	-->|notcategory=困难模式独有物品<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:3ds_n-phm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|3DS}}内容<!--
+	-->|notcategory=困难模式独有物品<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+
+// Hardmode:
+-->{{#vardefine:a:dsk_n-hm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Desktop}}内容&困难模式独有物品<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:cns_n-hm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Console}}内容&困难模式独有物品<!--
+	-->|nottitlematch={{tr|Dragon armor}}{{!}}{{tr|Spectral armor}}{{!}}{{tr|Titan armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:mbl_n-hm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Mobile}}内容&困难模式独有物品<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:old_n-hm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|Old-gen console}}内容&困难模式独有物品<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+-->{{#vardefine:a:3ds_n-hm|<!--
+	-->{{#dpl:<!--
+	-->|category={{tr|Armor sets}}&{{tr|3DS}}内容&困难模式独有物品<!--
+	-->|nottitlematch={{tr|Rain armor}}{{!}}{{tr|Ninja armor}}<!--
+	-->|mode=userformat<!--
+	-->|namespace=<!--
+	-->|includesubpages=false<!--
+	-->|resultsheader=%PAGES%<!--
+	-->}}<!--
+-->}}<!--
+
+
+
+----- Output -----
+-->一共有 <!--
+
+// Desktop total count
+-->{{icon/desktop}}<!--
+-->{{#ifeq:{{#var:a:dsk_n-tot}}|{{#var:a:cns_n-tot}}|&thinsp;{{icon/console}}}}<!-- if Console and Desktop armor counts are equal, then add console icon
+-->{{#ifeq:{{#var:a:dsk_n-tot}}|{{#var:a:mbl_n-tot}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Desktop armor counts are equal, then add mobile icon
+--> {{#var:a:dsk_n-tot}} / <!--
+
+// Console total count
+-->{{#ifeq:{{#var:a:dsk_n-tot}}|{{#var:a:cns_n-tot}}||<!-- only if Console and Desktop armor counts are not equal
+	-->{{icon/console}}<!--
+	-->{{#ifeq:{{#var:a:cns_n-tot}}|{{#var:a:mbl_n-tot}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Console armor counts are equal, then add mobile icon
+	--> {{#var:a:cns_n-tot}} /&#32;<!--
+-->}}<!--
+
+// Mobile total count
+-->{{#ifeq:{{#var:a:dsk_n-tot}}|{{#var:a:mbl_n-tot}}||<!-- only if Mobile and Desktop armor counts are not equal
+	-->{{#ifeq:{{#var:a:cns_n-tot}}|{{#var:a:mbl_n-tot}}||<!-- and Mobile and Console armor counts are not equal
+		-->{{icon/mobile}}<!--
+		--> {{#var:a:mbl_n-tot}} /&#32;<!--
+	-->}}<!--
+-->}}<!--
+
+// Old-gen total count
+-->{{icon/old-gen}} {{#var:a:old_n-tot}} / <!--
+
+// 3DS total count
+-->{{icon/3ds}} {{#var:a:3ds_n-tot}}<!--
+
+--> 种{{tr|armor sets}}。其中，困难模式之前有 <!--
+
+
+// Desktop pre-HM count
+-->{{icon/desktop}}<!--
+-->{{#ifeq:{{#var:a:dsk_n-phm}}|{{#var:a:cns_n-phm}}|&thinsp;{{icon/console}}}}<!-- if Console and Desktop armor counts are equal, then add console icon
+-->{{#ifeq:{{#var:a:dsk_n-phm}}|{{#var:a:mbl_n-phm}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Desktop armor counts are equal, then add mobile icon
+--> {{#var:a:dsk_n-phm}} / <!--
+
+// Console pre-HM count
+-->{{#ifeq:{{#var:a:dsk_n-phm}}|{{#var:a:cns_n-phm}}||<!-- only if Console and Desktop armor counts are not equal
+	-->{{icon/console}}<!--
+	-->{{#ifeq:{{#var:a:cns_n-phm}}|{{#var:a:mbl_n-phm}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Console armor counts are equal, then add mobile icon
+	--> {{#var:a:cns_n-phm}} /&#32;<!--
+-->}}<!--
+
+// Mobile pre-HM count
+-->{{#ifeq:{{#var:a:dsk_n-phm}}|{{#var:a:mbl_n-phm}}||<!-- only if Mobile and Desktop armor counts are not equal
+	-->{{#ifeq:{{#var:a:cns_n-phm}}|{{#var:a:mbl_n-phm}}||<!-- and Mobile and Console armor counts are not equal
+		-->{{icon/mobile}}<!--
+		--> {{#var:a:mbl_n-phm}} /&#32;<!--
+	-->}}<!--
+-->}}<!--
+
+// Old-gen pre-HM count
+-->{{icon/old-gen}} {{#var:a:old_n-phm}} / <!--
+
+// 3DS pre-HM count
+-->{{icon/3ds}} {{#var:a:3ds_n-phm}}<!--
+
+--> 种可用，而 <!--
+
+// Desktop HM count
+-->{{icon/desktop}}<!--
+-->{{#ifeq:{{#var:a:dsk_n-hm}}|{{#var:a:cns_n-hm}}|&thinsp;{{icon/console}}}}<!-- if Console and Desktop armor counts are equal, then add console icon
+-->{{#ifeq:{{#var:a:dsk_n-hm}}|{{#var:a:mbl_n-hm}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Desktop armor counts are equal, then add mobile icon
+--> {{#var:a:dsk_n-hm}} / <!--
+
+// Console HM count
+-->{{#ifeq:{{#var:a:dsk_n-hm}}|{{#var:a:cns_n-hm}}||<!-- only if Console and Desktop armor counts are not equal
+	-->{{icon/console}}<!--
+	-->{{#ifeq:{{#var:a:cns_n-hm}}|{{#var:a:mbl_n-hm}}|&thinsp;{{icon/mobile}}}}<!-- if Mobile and Console armor counts are equal, then add mobile icon
+	--> {{#var:a:cns_n-hm}} /&#32;<!--
+-->}}<!--
+
+// Mobile HM count
+-->{{#ifeq:{{#var:a:dsk_n-hm}}|{{#var:a:mbl_n-hm}}||<!-- only if Mobile and Desktop armor counts are not equal
+	-->{{#ifeq:{{#var:a:cns_n-hm}}|{{#var:a:mbl_n-hm}}||<!-- and Mobile and Console armor counts are not equal
+		-->{{icon/mobile}}<!--
+		--> {{#var:a:mbl_n-hm}} /&#32;<!--
+	-->}}<!--
+-->}}<!--
+
+// Old-gen HM count
+-->{{icon/old-gen}} {{#var:a:old_n-hm}} / <!--
+
+// 3DS HM count
+-->{{icon/3ds}} {{#var:a:3ds_n-hm}}<!--
+
+--> 种是{{tr|Hardmode}}独有的。<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Armor/count}}
+</noinclude>

@@ -1,0 +1,58 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 46
+| listcat = Broadswords
+}}
+[[File:Light's Bane (demo).gif|frame|{{tr|Light's Bane}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Light's Bane}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|sword}}]]，由[[{{tr|Demonite Bar}}]]制作而来。它每次挥舞时会在剑的尖端附近创造短时间的黑暗斩切。斩切具有 5 [[{{tr|armor penetration}}]]，{{source code ref|v=1.4.4.4|method=Terraria.Projectile.Damage}}可穿透一次，并且会自动以 3.125 {{tr|tile}}内的{{tr|enemy}}为目标。有两种斩切：默认的小斩切，和随机出现的大斩切。小斩切造成 50% {{tr|base damage}}（{{#expr:{{iteminfo|Light's Bane|damage}}/2}} {{tr|base damage}}），而大斩切造成 100% {{tr|base damage}}（{{iteminfo|Light's Bane|damage}} {{tr|base damage}}）。大斩切出现的几率等于玩家的{{tr|melee}}[[{{tr|critical strike chance}}]]。{{source code ref|v=1.4.4.4|method=Terraria.Player.ItemCheck_Shoot}}
+
+{{tr|Light's Bane}}的[[{{tr|Crimson}}]]{{tr|counterpart}}为[[{{tr|Blood Butcherer}}]]，它更强、更大，但也更慢，并也是制作[[{{tr|Night's Edge}}]]的关键材料之一。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Light's Bane|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Light's Bane|expectedrows=1}}
+
+== 备注 ==
+* 它和[[{{tr|Demon Bow}}]]、[[{{tr|War Axe of the Night}}]]、[[{{tr|Fisher of Souls}}]]、[[{{tr|Malaise}}]]一同是不需要[[{{tr|Shadow Scale}}]]就能制作的魔矿工具及武器之一。
+
+== 小贴士 ==
+* {{tr|Light's Bane}}提供比[[{{tr|War Axe of the Night}}]]更高的 {{DPS}}。不过，后者的范围更大，用以平衡较低的 {{DPS}}。
+** 然而，在{{eversions|1.4.4}}中，{{tr|Light's Bane}}的范围更大，因为其大小在 [[1.4.0.1]] 和 [[1.4.4]] 中增大了两次，且在 1.4.4 还获得了挥舞时的额外斩切。
+* 制作{{tr|Light's Bane}}依然很重要，因为游戏里需要它来制作[[{{tr|Night's Edge}}]]。
+
+== 花絮 ==
+* 魔光剑的英文原文是Light's Bane，它的设计灵感疑似来源于瑞典极端金属乐队[https://en.wikipedia.org/wiki/Dissection_(band) Dissection]在1995年的第二张录音室专辑"[https://en.wikipedia.org/wiki/Storm_of_the_Light%27s_Bane Storm Of The Light's Bane]"，游戏中的魔光剑不仅使用了与专辑名一样的名称，它的配色也与专辑封面一致。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Sprite updated.}}
+** {{tr|Size}}尺寸提高。
+** 现在会产生短距离的斩切，造成{{tr|Light's Bane}}{{tr|base damage}}的一半。
+** {{tr|Damage}}由 18 降低至 16。}}
+{{history|Desktop 1.4.1|{{tr|Damage}}从 17 提升至 18。}}
+{{history|Desktop 1.4.0.1|{{tr|Size}}尺寸由 1.1 提升至 1.4。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Sprite updated.}}旧的{{tr|sprite}}是 [[File:Light's Bane (pre-1.2).png|link=]]。}}
+{{history|Desktop 1.0.6|{{tr|damage}}由 16 提升至 17。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Demonite}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Light's Bane}}

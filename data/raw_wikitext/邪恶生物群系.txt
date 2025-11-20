@@ -1,0 +1,620 @@
+[[File:BiomeBannerEvil.png|center]]
+
+'''{{tr|Evil Biome}}'''是会自然蔓延的危险[[{{tr|biome}}]]，对其内部或周围的实体有普遍负面影响。世界中总是会生成[[{{tr|The Corruption}}]]或[[{{tr|The Crimson}}]]。一个生成好的世界只会包含这两个{{tr|biomes}}其中之一，每种都有 {{chance|1/2}} 几率。{{eicons|1.3.2}}玩家可以在生成世界时[[世界#创建与进入|选择]]想要让世界中出现{{tr|corruption}}还是{{tr|crimson}}。不过，也依然可以维持使用随机决定的设置。
+
+此{{tr|biome}}会作为此世界的自然生成的{{tr|Evil biome}}保存下来，并且决定了：
+* 生成[[{{tr|Shadow Orb}}]]还是[[{{tr|Crimson Heart}}]]
+* 生成[[{{tr|Demon Altar}}]]还是[[{{tr|Crimson Altar}}]]
+* 在[[{{tr|Dungeon}}]]中生成[[{{tr|Corruption Chest}}]]还是[[{{tr|Crimson Chest}}]]
+* 打败[[{{tr|Wall of Flesh}}]]时创建[[{{tr|Underground Corruption}}]]还是[[{{tr|Underground Crimson}}]]
+* {{eicons|1.4.4|invert=y}}在[[{{tr|Hardmode}}]]中砸掉[[{{tr|Altar}}]]后种下的是{{tr|Corruption}}相关的{{tr|blocks}}还是{{tr|Crimson}}相关的{{tr|blocks}}
+* 在[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]期间 [[{{tr|NPCs}}]] 出售的是{{tr|Corruption}}相关的还是{{tr|Crimson}}相关的{{tr|items}}。
+* {{eicons|Key of Night}} [[{{tr|Key of Night}}]]放到{{tr|chest}}里后生成的是哪种[[{{tr|Biome Mimic}}]]
+
+可以创建[[指南:人工{{tr|biomes}}#{{tr|Hallow}}、{{tr|Corruption}}、和{{tr|Crimson}}|人工{{tr|the Corruption/the Crimson}}]]，在一个区域内散播“错误的”{{tr|evil}}。传统上这是通过从另一个世界携带而来的{{tr|materials}}，但 1.4 提供了一个新选择：如果{{tr|Dryad}}在[[{{tr|Hardmode}}]]期间被安置于[[{{tr|Graveyard}}]]中，她就会出售另一{{tr|evil}}的{{tr|Seeds}}。<br/>'''注意：'''掉落自{{tr|enemies}}的[[{{tr|Biome Key}}]]{{eicons|1.3.0.1|small=y}}/{{eil|Biome Key Mold}}的类型取决于{{tr|enemy}}被击杀时所处的{{tr|biome}}，无论它是“天然”{{tr|biome}}还是“人造”{{tr|biome}}。但是，这并不能提供与{{tr|key}}相配套的{{tr|Dungeon chest}}。
+
+此{{tr|biome}}主要由被感染的石头（[[{{tr|Ebonstone}}]]或[[{{tr|Crimstone}}]]）所构成的{{tr|chasms}}组成。不过，此{{tr|biome}}可以和其他{{tr|biomes}}有所重叠，提供了腐化版的[[{{tr|Forest}}]]、[[{{tr|Desert}}]]、[[{{tr|Snow}}]]、[[{{tr|Jungle}}]]或[[{{tr|Ocean}}]]{{tr|biomes}}。这可以通过紫色/红色[[{{tr|grass}}]]和[[{{tr|Ebonwood}}]]/[[{{tr|Shadewood}}]]{{tr|trees}}、紫色/红色[[{{tr|Cactus}}]]和[[{{tr|Ebonsand}}]]/[[{{tr|Crimsand}}]]、[[{{tr|Purple Ice}}]]/[[{{tr|Red Ice}}]]、或紫色/红色[[{{tr|Palm Tree}}]]的存在来证实。被感染的{{tr|Jungle}}区域会变成[[{{tr|Corrupt Jungle grass}}]]/[[{{tr|Crimson Jungle grass}}]]，{{eicons|1.4.4|invert=y}}或者[[{{tr|Forest}}]]（同时{{tr|the mud}}转化为{{tr|dirt}}）。
+
+在{{tr|Pre-Hardmode}}，唯一有能力蔓延{{tr|evil biomes}}的{{tr|biome}}是被感染的{{tr|surface Forest}}，通过被感染的长草{{tr|blocks}}来进行（细节见下面）。
+
+== {{tr|Corruption and Crimson}}的对应物  ==
+某些{{tr|items}}是{{tr|The Corruption}}或{{tr|The Crimson}}所独有的。
+
+以下物品被视作互为对应物。要注意的是对应物之间并不一定使用相同的属性和行为。
+
+{{item/options|small=y}}
+{| class="terraria lined" id="cc-counterparts"
+|-
+! {{tr|The Corruption}} !! {{tr|The Crimson}} !! 来源
+|-
+| {{item|Musket}} || {{item|The Undertaker}} || rowspan=5 | [[{{tr|Shadow Orb}}]] /
+[[{{tr|Crimson Heart}}]]
+|-
+| {{item|Vilethorn}} || {{item|Crimson Rod}}
+|-
+| {{item|Ball O' Hurt}} || {{item|The Rotted Fork}}
+|-
+| {{item|Band of Starpower}} || {{item|Panic Necklace}}
+|-
+| {{item|Shadow Orb (item)}} || {{item|Crimson Heart (item)}}
+|-
+| {{item|Rotten Chunk}} || {{item|Vertebra}} || rowspan=2 |{{tr|Corruption}}[[{{tr|enemies}}]] / <br/>{{tr|Crimson}}{{tr|enemies}}
+|-
+| {{item|Cursed Flame}} || {{item|Ichor}}
+|-
+| {{item|Vile Mushroom}} || {{item|Vicious Mushroom}} || [[{{tr|Corrupt grass}}]] / <br/>[[{{tr|Crimson grass}}]]
+|-
+| {{item|Demonite Ore}} || {{item|Crimtane Ore}} || style="border-bottom-style: dashed;" | {{small|{{tr|environment}}中也有，<br/>[[{{tr|Eye of Cthulhu}}]]}}
+|-
+| {{item|Shadow Scale}} || {{item|Tissue Sample}} || rowspan=4 style="border-bottom:0px;" | [[{{tr|Eater of Worlds}}]] /
+[[{{tr|Brain of Cthulhu}}]]
+|-
+| {{item|Eater of Worlds Mask}} || {{item|Brain of Cthulhu Mask}}
+|-
+| {{item|Eater of Worlds Trophy}} || {{item|Brain of Cthulhu Trophy}}
+|-
+| {{item|Eater's Bone}} || {{item|Bone Rattle}}
+|-
+| {{item|Worm Scarf}} || {{item|Brain of Confusion}} || {{small|([[{{tr|Treasure Bag}}]])}}
+|-
+| {{item|Eater of Worlds Relic}} || {{item|Brain of Cthulhu Relic}} || rowspan=2 | [[{{tr|Eater of Worlds}}]] /
+[[{{tr|Brain of Cthulhu}}]] <br/>
+{{small|[[{{tr|Master Mode}}]]中}}
+|-
+| {{item|Writhing Remains}} || {{item|Brain in a Jar}}
+|-
+| {{item|Dart Rifle}} || {{item|Dart Pistol}} || rowspan=5 | [[{{tr|Corrupt Mimic}}]] /
+[[{{tr|Crimson Mimic}}]]
+|-
+| {{item|Chain Guillotines}} || {{item|Fetid Baghnakhs}}
+|-
+| {{item|Clinger Staff}} || {{item|Life Drain}}
+|-
+| {{item|Putrid Scent}} || {{item|Flesh Knuckles}}
+|-
+| {{item|Worm Hook}} || {{item|Tendon Hook}}
+|-
+| {{item|Corrupt Seeds}} || {{item|Crimson Seeds}} || [[{{tr|Eye of Cthulhu}}]] /
+[[{{tr|Dryad}}]]
+|-
+| {{item|Vile Powder}} || {{item|Vicious Powder}} || [[{{tr|Dryad}}]]，<br/>
+{{small|可制作}}
+|-
+| {{item|Purple Solution}} || {{item|Red Solution}} || rowspan=2 | [[{{tr|Steampunker}}]]
+|-
+| {{item|Decay Chamber}} || {{item|Flesh Cloning Vat}}
+|-
+| {{item|Lesion Block}} || {{item|Flesh Block}} || 制作得到
+|-
+| {{item|Scourge of the Corruptor}} || {{item|Vampire Knives}} || [[{{tr|Corruption Chest}}]] /
+[[{{tr|Crimson Chest}}]]
+|}
+{{item/options|reset}}
+
+== [[{{tr|The Corruption}}]] ==
+{{tr|The Corruption}}呈现出紫色的“腐化”主题，有紫色的[[{{tr|grass}}]]、[[{{tr|tree}}]]和[[{{tr|stone}}]]。此{{tr|biome}}存在着[[{{tr|Thorny Bush}}]]和独特的[[{{tr|enemies}}]]（以[[{{tr|Eater of Souls}}]]和[[{{tr|Devourer}}]]开始），让此区域对于新手玩家而言是危险甚至致命的。[[{{tr|Eater of Worlds}}]]只能在{{tr|the corruption}}中召唤。{{tr|The Corruption}}包含深深的垂直[[{{tr|chasm}}]]（很容易导致因坠落伤害而[[{{tr|death}}]]），在地下深处有隧道横穿它们。地下深处有[[{{tr|Shadow Orbs}}]]，通常位于{{tr|chasms}}底部或接近底部的位置。在世界中摧毁第一个{{tr|shadow orb}}总是会掉落一把[[{{tr|Musket}}]]和一些[[{{tr|Musket Balls}}]]，刚好自动满足[[{{tr|Arms Dealer}}]]到达所需的条件。摧毁 3 个{{tr|shadow orbs}}会导致生成{{tr|Eater of Worlds}}。
+{{-}}
+=== {{tr|the Corruption}}内容 ===
+{{item/options|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard|class=compact small|type=biome|text=<!--
+	-->{{infocard/mainheading|角色}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Eater of Souls}}<!--
+			-->|{{item|Corrupt Goldfish}}<!--
+			-->|{{item|Devourer}}<!--
+			-->|{{item|Eater of Worlds|note=(boss)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]中：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corruptor}}<!--
+			-->|{{item|Corrupt Slime}}<!--
+			-->|{{item|Shadow Slime}}<!--
+			-->|{{item|Slimer}}<!--
+			-->|{{item|World Feeder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自杀死的[[{{tr|Corrupt Slime}}]]/[[{{tr|Shadow Slime}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Slimeling|note=(一次会生成 3 个)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Corrupted Desert}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dark Mummy}}<!--
+			-->|{{item|Shadow Mummy}}<!--
+			-->|{{item|Bone Biter|note=(仅限[[{{tr|Sandstorm}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Underground Corruption}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cursed Hammer}}<!--
+			-->|{{item|Shadow Hammer}}<!--
+			-->|{{item|Clinger}}<!--
+			-->|{{item|Corrupt Mimic}}<!--
+			-->|{{item|Vile Ghoul|wrap=y|note=与[[{{tr|Underground Desert}}]]重叠时}}<!--
+			-->|{{item|Desert Spirit|wrap=y|note=与[[{{tr|Underground Desert}}]]重叠时}}<!--
+			-->|{{item|Corruption Pigron|link={{tr|Pigron|link=y}}|wrap=y|note=与[[{{tr|Ice biome}}]]重叠时}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|独特宝藏}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Shadow Orb}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Musket}}<!--
+			-->|{{item|Musket Ball|note=(随[[{{tr|Musket}}]]掉落)|wrap=y}}<!--
+			-->|{{item|Ball O' Hurt}}<!--
+			-->|{{item|Vilethorn}}<!--
+			-->|{{item|Band of Starpower}}<!--
+			-->|{{item|Shadow Orb (item)}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Eater of Souls}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist <!--
+			-->|{{item|Ancient Shadow armor}}<!--
+			-->|{{item|Burger}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Eater of Souls}}]]、[[{{tr|Devourer}}]]、[[{{tr|Corruptor}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rotten Chunk}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Devourer}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Worm Tooth}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Eater of Worlds}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+                        -->|{{item|Demonite Ore}}<!--
+			-->|{{item|Shadow Scale}}<!--
+			-->|{{item|Eater's Bone}}<!--
+			-->|{{item|Eater of Worlds Mask}}<!--
+			-->|{{item|Eater of Worlds Trophy}}<!--
+                        -->|{{item|Treasure Bag (Eater of Worlds)|Treasure Bag|note=(在[[{{tr|Expert Mode}}]]中掉落[[{{tr|Worm Scarf}}]])|wrap=y}}<!--
+                        -->|{{item|Eater of Worlds Relic|note=(在[[{{tr|Master Mode}}]]中掉落)|wrap=y}}<!--
+                        -->|{{item|Writhing Remains|note=(在[[{{tr|Master Mode}}]]罕见掉落)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自任意[[{{tr|Hardmode}}]]中的[[{{tr|enemy}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corruption Key|note=(来自任意{{tr|enemy}}，1/2500 几率) {{eicons|Corruption Key Mold|invert=y|small=y}}|wrap=y}}<!--
+			-->|{{item|Corruption Key Mold|note=(来自任意{{tr|enemy}}，1/2500 几率)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Underground Corruption}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Soul of Night|note=(1/5 几率)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|World Feeder}}]]、[[{{tr|Clinger}}]]和[[{{tr|Vile Ghoul}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cursed Flame}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|World Feeder}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+                        -->|{{item|World Feeder Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Corrupt Slime}}]]和[[{{tr|Slimeling}}]]:|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blindfold}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Cursed Hammer}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Nazar}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Shadow Hammer|s}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cobalt Bar}}<!--
+			-->|{{item|Mythril Bar}}<!--
+			-->|{{item|Adamantite Bar}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Corruptor}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vitamins}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Devourer}}]]和[[{{tr|World Feeder}}]]:|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Suspicious Looking Apple}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|World Feeder}}]]、[[{{tr|Clinger}}]]、[[{{tr|Corrupt Slime}}]]、[[{{tr|Slimeling}}]]、[[{{tr|Cursed Hammer}}]]和[[{{tr|Corruptor}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meat Grinder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dark Mummies}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blindfold}}<!--
+			-->|{{item|Megaphone}}<!--
+			-->|{{item|Mummy set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dark Mummies}}]]、[[{{tr|Vile Ghoul}}]]和[[{{tr|Bone Biter}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dark Shard}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Vile Ghoul}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ancient Cloth}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Bone Biter}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Shark Fin}}<!--
+			-->|{{item|Nachos}}<!--
+			-->|{{item|Sand Shark Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Desert Spirit}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Djinn's Curse}}<!--
+			-->|{{item|Desert Spirit Lamp}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Pigron}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bacon}}<!--
+			-->|{{item|Pigron Minecart}}<!--
+			-->|{{item|Pigron Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Corrupt Mimic|s}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dart Rifle}}<!--
+			-->|{{item|Chain Guillotines}}<!--
+			-->|{{item|Clinger Staff}}<!--
+			-->|{{item|Putrid Scent}}<!--
+			-->|{{item|Worm Hook}}<!--
+			-->|{{item|Greater Healing Potion}}<!--
+			-->|{{item|Greater Mana Potion}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自植物：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vile Mushroom}}<!--
+			-->|{{item|Deathweed}}<!--
+			-->|{{item|Deathweed Seeds|note=([[{{tr|Blood Moon}}]]期间)|wrap=y}}<!--
+			-->|{{item|Ebonwood|note=(来自树木)|wrap=y}}<!--
+			-->|{{item|Elderberry|note=(来自{{tr|shaking trees}})|wrap=y}}<!--
+			-->|{{item|Blackcurrant|note=(来自{{tr|shaking trees}})|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ebonstone Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自和[[{{tr|Ice biome}}]]重叠的地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Purple Ice Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自和[[{{tr|Desert}}]]重叠的地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ebonsand Block}}<!--
+			-->|{{item|Hardened Ebonsand Block}}<!--
+			-->|{{item|Ebonsandstone Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ebonkoi}}<!--
+			-->|{{item|Purple Clubberfish}}<!--
+			-->|{{item|Corrupt Crate}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自在[[{{tr|Hardmode}}]]中[[{{tr|Fishing}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Toxikarp}}<!--
+			-->|{{item|Defiled Crate}}<!--
+			-->|{{item|Scaly Truffle|wrap=y|note=和[[{{tr|Ice biome}}]]重叠时}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Lightless Chasms}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+	-->{{infocard/mainheading|音乐}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Corruption)|mode=image}} {{sound|track=Corruption}}<!--
+			-->|{{item|Music Box (Underground Corruption)|mode=image}} {{sound|track=Underground Corruption}}<!--
+                        -->|{{item|Otherworldly Music Box (Corruption)|mode=image}} {{sound|track=Corruption (Otherworldly)}} {{eicons|1.4.0.1}}<!--
+                        -->|{{item|Otherworldly Music Box (Underground Corruption)|mode=image}} {{sound|track=Underground Corruption (Otherworldly)}} {{eicons|1.4.0.1}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+-->}}{{item/options|reset}}{{dotlist/options|reset}}
+
+
+== [[{{tr|The Crimson}}]] ==
+[[File:Crimson Chasms.png|thumb|{{tr|The Crimson}}的[[{{tr|Chasm}}]]|200px]]
+与{{tr|the Corruption}}不同，{{tr|The Crimson}}呈现出更多红色的血腥主题，有着红色的草、石头和树叶。只出现在{{tr|crimson}}世界的独特{{tr|enemies}}包括[[{{tr|Blood Crawler}}]]、[[{{tr|Face Monster}}]]和[[{{tr|Crimera}}]]。[[{{tr|Brain of Cthulhu}}]]——{{tr|Eater of Worlds}}的替代——只能在{{tr|the crimson}}中召唤。被{{tr|crimson}}感染的石头叫做[[{{tr|crimstone}}]]，和其{{tr|corruption}}对应物一样，只能用[[{{tr|Nightmare Pickaxe}}]]/[[{{tr|Deathbringer Pickaxe}}]]或更强的{{tr|pickaxe}}采挖。就像{{tr|the corruption}}，{{tr|the crimson}}包含深深的{{tr|chasms}}，但形状完全不同：一条蜿蜒的隧道从地面通向一个巨大的洞穴，次级隧道从此洞穴中向下延伸。这些隧道看起来很像是只手。虽然在这里长距离掉落的危险较小，但此区域依然相当危险。{{tr|the crimson}}包含放置的[[{{tr|Crimson Heart}}]]，而不是{{tr|shadow orbs}}，位于次级隧道的末端或更远处。在世界中摧毁第一个{{tr|crimson heart}}会掉落[[{{tr|the Undertaker}}]]和一些[[{{tr|musket balls}}]]，和其{{tr|Corruption}}对应物一样，会立刻满足{{tr|the Arms Dealer}}到达所需的条件。摧毁 3 个{{tr|crimson hearts}}会导致生成{{tr|the Brain of Cthulhu}}。
+{{-}}
+
+=== 内容 ===
+{{item/options|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard|class=compact small|type=biome|text=<!--
+	-->{{infocard/mainheading|角色}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Crawler}}<!--
+			-->|{{item|Vicious Goldfish}}<!--
+			-->|{{item|Face Monster}}<!--
+			-->|{{item|Crimera}}<!--
+			-->|{{item|Brain of Cthulhu|note=({{tr|boss}})|wrap=y|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]中：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Herpling}}<!--
+			-->|{{item|Crimslime}}<!--
+			-->|{{item|Blood Jelly}}<!--
+			-->|{{item|Blood Feeder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Crimson}}[[{{tr|Desert}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Mummy}}<!--
+			-->|{{item|Dark Mummy|icons=no}} {{eicons|1.4.0.1|invert=y|small=y}}<!--
+			-->|{{item|Flesh Reaver|note=(仅限[[{{tr|Sandstorm}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Underground Crimson}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Axe}}<!--
+			-->|{{item|Ichor Sticker}}<!--
+			-->|{{item|Floaty Gross}}<!--
+			-->|{{item|Crimson Mimic}}<!--
+			-->|{{item|Tainted Ghoul|wrap=y|note=与[[{{tr|Underground Desert}}]]重叠时}}<!--
+			-->|{{item|Desert Spirit|wrap=y|note=与[[{{tr|Underground Desert}}]]重叠时}}<!--
+			-->|{{item|Crimson Pigron|link={{tr|Pigron|link=y}}|wrap=y|note=与[[{{tr|Ice biome}}]]重叠时}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|独特宝藏}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Crimson Heart}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|The Undertaker}}<!--
+			-->|{{item|The Rotted Fork}}<!--
+			-->|{{item|Crimson Rod}}<!--
+			-->|{{item|Panic Necklace}}<!--
+			-->|{{item|Crimson Heart (item)}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Crimera}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist <!--
+			-->|{{item|Burger}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Blood Crawler}}]]、[[{{tr|Crimera}}]]、[[{{tr|Face Monster}}]]、[[{{tr|Floaty Gross}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist <!--
+			-->|{{item|Vertebra}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Brain of Cthulhu}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+                        -->|{{item|Crimtane Ore}}<!--
+			-->|{{item|Tissue Sample}}<!--
+			-->|{{item|Bone Rattle}}<!--
+			-->|{{item|Brain of Cthulhu Trophy}}<!--
+			-->|{{item|Brain of Cthulhu Mask}}<!--
+                        -->|{{item|Treasure Bag (Brain of Cthulhu)|Treasure Bag|note=(在[[{{tr|Expert Mode}}]]中掉落[[{{tr|Brain of Confusion}}]])|wrap=y}}<!--
+                        -->|{{item|Brain of Cthulhu Relic|note=(在[[{{tr|Master Mode}}]]中掉落)|wrap=y}}<!--
+                        -->|{{item|Brain in a Jar|note=(在[[{{tr|Master Mode}}]]中罕见掉落)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自任意[[{{tr|Hardmode}}]]中的[[{{tr|enemy}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Key|note=(来自任意{{tr|enemy}}，1/2500 几率) {{eicons|Crimson Key Mold|invert=y|small=y}}|wrap=y}}<!--
+			-->|{{item|Crimson Key Mold|note=(来自任意{{tr|enemy}}，1/2500 几率)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Underground Crimson}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Soul of Night|note=(1/5 几率)|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Ichor Sticker}}]]和[[{{tr|Tainted Ghoul}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ichor}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Crimslime}}]] {{eicons|1.4.0.1}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blindfold}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Crimson Axe}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Nazar}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Floaty Gross}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vitamins}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Herpling}}]]、[[{{tr|Crimslime}}]]、[[{{tr|Crimson Axe}}]]和[[{{tr|Floaty Gross}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meat Grinder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Blood Mummies}}]] {{eicons|1.4.0.1}} 和[[{{tr|Dark Mummies}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blindfold}}<!--
+			-->|{{item|Megaphone}}<!--
+			-->|{{item|Mummy set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Blood Mummies}}|{{tr|Blood}}]]/[[{{tr|Dark Mummies}}]]、[[{{tr|Tainted Ghoul}}]]、和[[{{tr|Flesh Reaver}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dark Shard}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Tainted Ghoul}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ancient Cloth}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Flesh Reaver}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Shark Fin}}<!--
+			-->|{{item|Nachos}}<!--
+			-->|{{item|Sand Shark Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Desert Spirit}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Djinn's Curse}}<!--
+			-->|{{item|Desert Spirit Lamp}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Pigron}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bacon}}<!--
+			-->|{{item|Pigron Minecart}}<!--
+			-->|{{item|Pigron Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Crimson Mimic|s}}：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dart Pistol}}<!--
+			-->|{{item|Fetid Baghnakhs}}<!--
+			-->|{{item|Life Drain}}<!--
+			-->|{{item|Flesh Knuckles}}<!--
+			-->|{{item|Tendon Hook}}<!--
+			-->|{{item|Greater Healing Potion}}<!--
+			-->|{{item|Greater Mana Potion}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自植物：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vicious Mushroom}}<!--
+			-->|{{item|Deathweed}}<!--
+			-->|{{item|Deathweed Seeds|note=([[{{tr|Blood Moon}}]]期间)|wrap=y}}<!--
+			-->|{{item|Shadewood|note=(来自树木)|wrap=y}}<!--
+			-->|{{item|Blood Orange|note=(来自{{tr|shaking trees}})|wrap=y}}<!--
+			-->|{{item|Rambutan|note=(来自{{tr|shaking trees}})|wrap=y}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimstone Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自和[[{{tr|Ice biome}}]]重叠的地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Red Ice Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自和[[{{tr|Desert}}]]重叠的地形：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimsand Block}}<!--
+			-->|{{item|Hardened Crimsand Block}}<!--
+			-->|{{item|Crimsandstone Block}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Tigerfish}}<!--
+			-->|{{item|Hemopiranha}}<!--
+			-->|{{item|Crimson Crate}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自在[[{{tr|Hardmode}}]]中[[{{tr|Fishing}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bladetongue}}<!--
+			-->|{{item|Hematic Crate}}<!--
+			-->|{{item|Scaly Truffle|wrap=y|note=和[[{{tr|Ice biome}}]]重叠时}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+	-->{{infocard/mainheading|售卖}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Deadland Comes Alive}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+	-->{{infocard/mainheading|音乐}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Crimson)|mode=image}} {{sound|track=Crimson}}<!--
+			-->|{{item|Music Box (Underground Crimson)|mode=image}} {{sound|track=Underground Crimson}}<!--
+                        -->|{{item|Otherworldly Music Box (Crimson)|mode=image}} {{sound|track=Crimson (Otherworldly)}} {{eicons|1.4.0.1}}<!--
+                        -->|{{item|Otherworldly Music Box (Underground Crimson)|mode=image}} {{sound|track=Underground Crimson (Otherworldly)}} {{eicons|1.4.0.1}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+-->}}<!--
+-->{{item/options|reset}}{{dotlist/options|reset}}
+
+== 蔓延 ==
+{{main|{{tr|Biome spread}}}}
+{{tr|The Corruption}}和{{tr|the Crimson}}都会向外蔓延自身，类似于[[{{tr|the Hallow}}]]那样。这意味着它们会缓慢地转化现存{{tr|Corrupt/Crimson}}{{tr|blocks}}附近的某些易感{{tr|tiles}}。虽然在{{tr|pre-Hardmode}}其蔓延能力非常有限，但在打败了[[{{tr|Wall of Flesh}}]]之后它们会蔓延得更快更激进。第一次打败[[{{tr|Plantera}}]]会将这三种{{tr|biomes}}的整体蔓延速度降低 {{chance|1/2}}。
+
+=== {{tr|Corrupted Deserts}}和{{tr|Crimson Deserts}} ===
+{{main|{{tr|The Corruption}}#{{tr|Corrupted Desert}}|label1={{tr|Corrupted Desert}}|{{tr|The Crimson}}#{{tr|Crimson Desert}}|label2={{tr|Crimson Desert}}}}
+[[File:Corrupted Desert.png|thumb|{{tr|Corrupted}}[[{{tr|Desert}}]]。]]
+[[File:Crimsoned Desert.png|thumb|{{tr|Crimson}}[[{{tr|Desert}}]]。]]
+{{tr|The evil biomes}}可以与{{tr|deserts}}重叠，且在{{tr|Hardmode}}中，{{tr|the corruption}}和{{tr|the crimson}}可以通过{{tr|desert}}蔓延，因此会创造出[[{{tr|The Corruption}}#{{tr|Corrupted Desert}}|{{tr|corrupted desert}}]]和[[{{tr|The Crimson}}#{{tr|Crimson Desert}}|{{tr|crimson desert}}]]。在{{tr|the corruption}}中，[[{{tr|sand}}]]会被[[{{tr|ebonsand}}]]所取代，而在{{tr|the crimson}}中，{{tr|sand}}会被[[{{tr|crimsand}}]]所取代。在{{tr|the corruption}}和{{tr|the crimson}}{{tr|desert}}变体中会出现普通版本的相应{{tr|biome}}中所没有的独特{{tr|enemies}}。
+
+== 净化 ==
+{{dablink|另见：[[指南:维护世界的纯净度]]}}
+[[File:Contained Corruption and Hallow World.png|thumb|已被恰当抑制的{{tr|Corruption}}和[[{{tr|the Hallow}}|{{tr|hallow}}]]，后者虽然不被视为{{tr|evil biome}}，但依然可能最终失控蔓延。]]
+在{{tr|Hardmode}}中，{{tr|the Corruption}}或{{tr|the Crimson}}（像{{tr|the Hallow}}一样）可能会失控蔓延；如果没有玩家的努力，{{tr|the evil biome}}和{{tr|the Hallow}}会共同占领整个世界。
+
+在{{tr|Pre-Hardmode}}，玩家可以用[[{{tr|Purification Powder}}]]来净化小片{{tr|the corruption}}/{{tr|the crimson}}，并用[[{{tr|Sunflower}}]]来阻挡受感染草的蔓延。但是，到{{tr|Hardmode}}时，这些蔓延的{{tr|biomes}}才成为一个主要问题。
+
+在{{tr|hardmode}}中，一个好策略是在{{tr|the corruption}}/{{tr|the crimson}}周围挖个 3 格宽的隧道对其进行抑制。不过，靠近{{tr|the surface}}之处，[[{{tr|Thorny Bush}}]]最远能将腐化传播到 6 格之外，因此隧道也需要有 6 格宽，或者用不可腐化的{{tr|block}}衬砌。
+
+大规模移除{{tr|Corruption or Crimson}}或逆转其在{{tr|Hardmode}}中的蔓延，实际上需要用[[{{tr|Clentaminator}}]]。可从在有[[{{tr|mechanical boss}}]] 被打败后到达的[[{{tr|Steampunker}}]]处以 {{pc|2}}购买（游戏中最贵的物品之一）。用{{tr|the Clentaminator}}配合{{tr|Green Solution}}（同样购买自{{tr|the Steampunker}}）可以净化大片{{tr|evil biomes}}。但是，大多数{{tr|players}}会想要保留一些小片的完整{{tr|biome}}，因为其中的{{tr|the enemies}}有独特的掉落物（其中一些是推进游戏进程所推荐的）。
+
+{{tr|The evil biomes}}也会被{{tr|the Hallow}}的存在所阻挡，反之亦然；甚至在得到{{tr|the Clentaminator}}之前，播撒{{tr|the Hallow}}就是限制{{tr|Corruption or Crimson}}的传播的另一种方法。但是，这可能意味着在未来最终不得不处理失控的{{tr|the Hallow}}。
+
+== 小贴士 ==
+* 在{{eversions|1.3.0.1|short=y}}中，世界生成的进度条有一半是绿的，另一半则是紫色或红色，取决于世界拥有的是{{tr|Corruption}}还是[[{{tr|Crimson}}]]。在世界生成过程中，生成{{tr|the Crimson}}那一步会显示“正在使世界变得血腥”，而生成{{tr|the Corruption}}时这一步显示的是“正在使世界变得邪恶”。另外，在世界选择界面上，世界名称旁边的树也有一面是绿色/正常的，而另一面是紫色/红色（分别代表{{tr|Corruption}}/{{tr|Crimson}}）。在{{tr|hardmode}}中，树会有一部分是黄色，代表[[{{tr|Hallow}}]]。
+
+== 备注 ==
+* 在{{eversions|1.4.0.1}}中，你可以通过向[[{{tr|Dryad}}]]购买{{tr|seeds}}来创造另一种{{tr|evil}}，使得无需切换世界即可得到两种{{tr|evil}}的{{tr|items}}，{{tr|evil chest}}、其内容物、以及{{tr|Steampunker}}的{{tr|items}}除外。
+
+== {{tr|Trivia}} ==
+* 在{{eversions|1.4.0.1}}中，用种子 [[{{tr|Secret world seeds|link=y}}#{{tr|Drunk World}}|{{tr|05162020}}]] 生成的世界包含两种{{tr|evils}}。
+
+{{Biomes}}
+{{all versions}}
+{{language info|en=Evil biomes}}

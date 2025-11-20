@@ -1,0 +1,53 @@
+{{npc infobox
+| auto = 172
+| type = Undead Enemy
+| environment = Cavern
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.RuneBlast}}}}
+| Rune Hat|1|100%
+| Rune Robe|1|100%
+| idprojectile = 129
+| sound1 = Item 28.wav
+| soundcaption1 = {{gameText|ProjectileName.RuneBlast}}
+| sound2 = Item 8.wav
+| soundcaption2 = 传送
+| hardmode = yes
+}}
+
+'''{{tr|Rune Wizard}}'''是个稀有的[[{{tr|Hardmode}}]][[{{tr|Caster}}]][[{{tr|enemy}}]]，出现在[[{{tr|Cavern}}]][[{{tr|layer}}|层]]下部。在生成时，他会动手向玩家发射可穿透[[{{tr|blocks}}]]的亮绿色魔法{{tr|Rune Blast}}{{tr|projectiles}}，类似于其他{{tr|caster}}{{tr|enemies}}，如[[{{tr|Fire Imp}}]]和[[{{tr|Dark Caster}}]]。然而，与{{tr|Burning Spheres}}不同，{{tr|the Rune Wizard}}的{{tr|projectiles}}无法以任何方式摧毁。他会造成极其高额的{{tr|contact damage}}，并且会在发射六枚{{tr|projectiles}}后传送至新位置。{{tr|The Rune Wizard}}在死亡时总是会掉落[[{{tr|Rune Hat}}]]和[[{{tr|Rune Robe}}]]。
+
+{{Lifeform Analyzer note}}{{tr|The Rune Wizard}}需要 10 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}#具有非默认击杀数的旗帜|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 备注 ==
+* {{tr|The Rune Wizard}}只在一定深度以下才能生成。此深度可以通过将[[{{tr|underground}}]]层底部和[[{{tr|Underworld}}]]层底部的绝对深度相加然后除以 2 来确定。由于世界生成过程是随机化的，对于不同的世界这个值会有所不同。
+** 通常，有[[{{tr|lava}}]]的区域可以作为很好用的指示器来指明哪里会生成{{tr|Rune Wizard}}。
+
+== 小贴士 ==
+* 对抗{{tr|the Rune Wizard}}的一个简单方法就是不断攻击他。这基本上会让他瘫掉，防止它攻击和传送。对他造成[[{{tr|On Fire!}}]]之类的[[{{tr|debuffs}}]]会是对抗他的非常有效的方法。
+** 能让{{tr|Rune Wizard}}瘫掉的可行武器包括[[{{tr|Piranha Gun}}]]、诸如[[{{tr|Megashark}}]]等具有高开火速率的武器、以及大多数[[{{tr|summoning weapons}}]]。
+* 尽管{{tr|Rune Wizard}}并不会尝试接触玩家作为其攻击的一部分，但它会造成极高的接触伤害，3 下左右就足以干掉大多数玩家。他的{{tr|projectiles}}造成的伤害要低得多，但他对于只有弱{{tr|Hardmode items}}的玩家来说依然可能非常危险，尤其是当他生成在一个无法到达的位置时。
+** 在{{eil|Master Mode}}中，其{{tr|contact damage }}往往足以秒杀玩家。
+** 由于其超高的{{tr|contact damage}}，建议使用远距离武器对抗{{tr| Rune Wizard}}。但是，由于他生成在狭窄的洞穴群中，要做到这点可能会很困难。
+
+== 花絮 ==
+* {{tr|The Rune Wizard}}可视为是[[{{tr|Tim}}]]的{{tr|Hardmode}}版本。掉落的{{tr|The vanity items}}非常类似于{{tr|Tim}}所掉落的物品。二者也有类似的生成深度和攻击模式，并且都会掉落只能通过打败它们得到的独特{{tr|items}}。另外，根据[[{{tr|Bestiary}}]]的说法，{{tr| the Rune Wizard }}是{{tr| Tim}}的哥哥。
+** 但是，和{{tr| Tim}}不同，{{tr| the Rune Wizard}}的{{tr|spawn rate}}完全无法由玩家手动提高。
+* 由于{{tr| Rune Wizard}}{{tr|spawn rates}}超低并且对生成位置还有限制，他可视为是游戏中最稀有的{{tr|enemies}}之一。
+* {{tr|The Rune Wizard}}的{{tr|contact damage}}在所有{{tr|enemies}}中排名第二，他的伤害则是{{tr|damage}}游戏中第三高的。其{{tr|contact damage}}和[[{{tr|Pirate Captain}}]]的{{tr| cannonballs}}以及[[{{tr|Skeleton Sniper}}]]的{{tr|Sniper Bullet}}相当。他的{{tr|damage}}仅次于[[{{tr|Dungeon Guardian}}]]和在白天的{{eil|Empress of Light}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Spawn rate}}由 1/300 提升至 1/200。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Casters}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Rune Wizard}}

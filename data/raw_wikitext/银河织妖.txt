@@ -1,0 +1,66 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 402
+| idprojectile = 540
+| namesub =
+| image = Milkyway Weaver.png
+| type = Burrowing Enemy
+| environment = Lunar Events
+| damage =
+| defense =
+| hardmode = yes
+| shownpcid = no
+| cargo = no
+| sound1 = Roar 1.wav
+| soundcaption1 = 漂浮
+}}
+
+'''{{tr|Milkyway Weaver}}'''是[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|Worm AI}}|{{tr|worm}}]][[{{tr|enemy}}]]，在[[{{tr|Lunar Events}}]]期间生成在[[{{tr|Stardust Pillar}}]]区域中。它类似于[[{{tr|Solar Pillar}}]]的[[{{tr|Crawltipede}}]]，完全不受重力影响，可以在空中自由漂浮。然而，它比{{tr|Crawltipede}}要小得多，在任何地方都会瞄准玩家而非仅限在空中，其头部是唯一的弱点而非尾部。偶尔，它会停下来并冲锋几秒钟，然后召唤另一个和{{tr|Stardust Pillar}}有关的{{tr|enemy}}。
+
+{{tr|Milkyway Weaver}}的攻击主要是冲向玩家造成伤害，但每七秒会停下来。之后，它会造成持续五秒的越来越亮的蓝色闪光，并召唤星尘柱所属的敌人，这类似于{{tr|Stardust Pillar}}自身的召唤攻击。召唤敌人时，{{tr|Milkyway Weaver}}遵循与{{tr|Stardust Pillar}}相同的标准，即它只能召唤其他的{{tr|Milkyway Weavers}}、[[{{tr|Star Cell}}]]和[[{{tr|Flow Invader}}]]。
+
+== 体节 ==
+{{tr|Milkyway Weavers}}总共由 10–14 个{{tr|segments}}构成。
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/damageBlock/defenseBlock}}
+{| class="terraria align-center nowrap"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! {{tr|Damage}}
+! {{tr|Defense}}
+{{npc infobox
+| auto = 402
+| environment = Lunar Events
+}}
+{{npc infobox
+| auto = 403
+| environment = Lunar Events
+}}
+{{npc infobox
+| auto = 404
+| environment = Lunar Events
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 花絮 ==
+* 与所有{{tr|other worm enemies}}不同，其他的{{tr|worm}}各个体节是刚性连接在一起的，而{{tr|Milkyway Weavers}}的体节是松散地连接在一起的，并且此{{tr|enemy}}移动得越快各个体节间得间距就越大。因此，如果它移动的非常快，一只{{tr|Milkyway Weaver}}能够跨越很大一块屏幕区域。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Movement speed}}提高 50%。
+** 会周期性地在追逐玩家数秒后停下并生成一个新的{{tr|Stardust enemy}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Worms}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Milkyway Weaver}}

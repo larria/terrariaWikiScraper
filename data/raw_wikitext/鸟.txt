@@ -1,0 +1,118 @@
+{{infobox wrapper
+|{{item infobox
+| auto = 2015
+| id = 2015–2017
+| name = Birds
+| imagealt = [[File:Bird.png|link=|{{tr|Bird}}的{{tr|item sprite}}]] [[File:Blue Jay.png|link=|{{tr|Blue Jay}}的{{tr|item sprite}}]] [[File:Cardinal.png|link=|{{tr|Cardinal}}的{{tr|item sprite}}]]
+| cargo = no
+}}
+|{{npc infobox
+| auto = 74
+| id = 74, 297, 298
+| name = Birds
+| imagealt = [[File:Bird (NPC).png|link=]] [[File:Blue Jay.png|link=]] [[File:Cardinal.png|link=]]
+| imageother = Bird.gif/Blue Jay.gif/Cardinal.gif
+| imageothercaption = 飞行状态
+| type = Critter
+| environment = Forest/Snow biome/The Hallow
+| sound1 = Zombie 14.wav, Zombie 16.wav, Zombie 17.wav, Zombie 18.wav, Zombie 19.wav
+| soundcaption1 = 空闲
+| banner =
+| cargo = no
+}}
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view=void
+| auto = 74
+| image = Bird (NPC).png
+| type = Critter
+| environment = Forest/Snow biome/The Hallow
+}}<!--
+-->{{npc infobox | view=void
+| auto = 297
+| type = Critter
+| environment = Forest/Snow biome/The Hallow
+}}<!--
+-->{{npc infobox | view=void
+| auto = 298
+| type = Critter
+| environment = Forest/Snow biome/The Hallow
+}}
+
+'''{{tr|Bird}}'''、'''{{tr|Blue Jay}}'''、和'''{{tr|Cardinal}}'''是飞行[[{{tr|critters}}]]，会在[[{{tr|Forest}}]][[{{tr|biome}}]]中生成。就像[[{{tr|Vulture}}]]一样，{{tr|Birds}}在玩家接近之前会保持静止，然后它们就会飞走。{{tr|Birds}}偶尔会在附近鸣叫。
+
+{{critter info|plural=y|gold=y
+|cagename=[[{{tr|Bird Cage}}|{{tr|Bird}}]] / [[{{tr|Blue Jay Cage}}|{{tr|Blue Jay}}]] / [[{{tr|Cardinal Cage}}]]
+|statuename=[[{{tr|Bird Statue}}]]
+|goldname=[[{{tr|Gold Bird}}]]
+}}
+
+== 类型 ==
+{{options/set|item|nolink=y|mode=table}}<!--
+-->{{item infobox/options|view=table|cols=item/rarity/sell/makenpcid/col:song}}
+{| class="terraria sortable lined align-center"
+! colspan= 2 | {{tr|Bird}}
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! 鸣声
+{{item infobox
+| auto = 2015
+| col:song = {{sound||Zombie 14.wav}} {{sound||Zombie 18.wav}}
+}}
+{{item infobox
+| auto = 2016
+| col:song = {{sound||Zombie 16.wav}}
+}}
+{{item infobox
+| auto = 2017
+| col:song = {{sound||Zombie 17.wav}} {{sound||Zombie 19.wav}}
+}}
+|}{{options/reset|item}}{{item infobox/options|reset}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Bird/Blue Jay/Cardinal|expectedrows=8}}
+
+== 备注 ==
+* {{tr|Birds}}总是飞在地面之上大约 20 格的地方。
+* {{tr|The Bird Banner}}只会掉落自常规的{{tr|Bird}}，{{tr|the Blue Jay}}或{{tr|Cardinal}}不会掉落。
+* 在{{eversions|1.3.0.1|old-gen=n|invert=y}}上，全部三种{{tr|Birds}}都没有卖出价值。
+
+== 小贴士 ==
+* [[{{tr|Bird Statue}}]]在连接到[[{{tr|wire}}|电路]]时会生成{{tr|Birds}}，是刷[[{{tr|Bird banner}}]]的绝佳方法。
+
+== 花絮 ==
+[[File:Bird cloud.png|thumb|right|{{tr|bird}}形状的[[稀有{{tr|cloud}}|{{tr|cloud}}]]。]] 
+[[File:Ambience BirdsVShape.gif|thumb|right|背景中偶尔飞过的[[{{tr|Ambient entities}}|鸟群]]。]]
+
+* 常规的{{tr|Bird}}在其{{tr|item}}{{tr|sprite}}上看有着黑色的腿，但是作为{{tr|critter}}以及出现在放置的{{tr|Cage}}中时腿是黄色的。
+* {{tr|The Bird}}、[[{{tr|Bunny}}]]、[[{{tr|Goldfish}}]]、和[[{{tr|Penguin}}]]是仅有的四种有自己的[[{{tr|Banners (enemy)}}|{{tr|banners}}]]的{{tr|Critters}}。
+* 在{{eversions|1.4.0.1}}中，背景中有时会看到[[稀有云|{{tr|Bird}}]]形状的云。
+* 熟悉鸟类的人会意识到“其中有一个和其他的不同”。声音文件说明这三种都是鸣禽；白色的“普通”鸟可能会被误认为是各种不同的物种，包括一些鸣禽，但另外两种都代表了真正的物种。{{tr|Cardinal}}确实是一种鸣禽，但{{tr|Blue jay}}（Blue ''jay''）并不是——它是乌鸦和大乌鸦的近亲，嗓音沙哑，性情好斗。（{{tr|Blue ''bird''}}（蓝鸲）才真正是鸣禽。）
+{{bestiary|Bird|Blue Jay|Cardinal}}
+
+== 另见 ==
+* [[{{tr|Gold Bird}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Roasted Bird}}]]。}}
+{{history|Desktop 1.3.5|常规{{tr|bird}}的 {{tr|NPC sprite}}更新。}}
+{{history|Desktop 1.3.1|现在可用于制作{{tr|Bird Statues}}。}}
+{{history|Desktop 1.3.0.1|
+** 常规{{tr|bird}}的 {{tr|NPC sprite}}更新。
+** {{tr|Cardinal}}现在可以卖 {{coin|7sc 50cc}}。}}
+{{history|Desktop 1.2.3|{{tr|Birds}}现在更有可能在早上生成，每个品种都有多首歌可以唱。}}
+{{history|Desktop 1.2.0.3|{{tr|Introduced}}{{tr|Blue Jay}}和{{tr|Cardinal}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Birds}}

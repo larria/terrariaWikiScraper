@@ -1,0 +1,47 @@
+{{item infobox
+| auto = 1302
+| damage = @@@@ {{eicons|1.4.1|small=y}} /<br/>10 {{eicons|1.4.1|invert=y|small=y}}
+| tags = hardmodeonly
+}}
+
+[[File:High Velocity Bullet (demo).gif|thumb|500px|{{eicons|1.4.1}}使用中的{{tr|High Velocity Bullets}}。]]
+
+'''{{tr|High Velocity Bullets}}'''是一类[[{{tr|ammunition}}]]，可在至少击败一个[[{{tr|mechanical boss}}]] 后获得。它们是游戏中飞行最快的{{tr|bullet}}。
+
+在{{eversions|1.4.1}}中，{{penetrate|3|name={{tr|the High Velocity Bullet}}|p=0.15}}
+
+{{:Bullets/cost|Cog}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=High Velocity Bullet|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|Velocity}}]]是{{tr|projectile}}从{{tr|weapon}}发射后在空间中飞行的速度。更高的{{tr|velocity}}会使得玩家更容易击中远处快速移动的目标，因为所需要的提前量更少。
+* {{tr|High Velocity Bullets}}每秒更新 8 次位置，而非一次，这使得其等效{{tr|velocity}}是 {{#tag:math|({{iteminfo|High Velocity Bullet|velocity}} + \text{weapon velocity}) * 8}}。
+* 射出后，{{tr|bullets}}会发出亮黄色光。
+* [[{{tr|Uzi}}]]、[[{{tr|Venus Magnum}}]]、和[[{{tr|Sniper Rifle}}]]会将[[{{tr|Musket Ball}}]]和{{eil|Tungsten Bullet|s}}（也包括{{eversions|short=y|1.4.4|invert=y}}上的[[{{tr|Silver Bullet}}]]）等效转换为{{tr|High Velocity Bullets}}。这不会影响[[extraUpdates]]以外的属性，但在{{eversions|1.4.1}}中这将允许它们穿透目标。
+
+== 小贴士 ==
+* {{tr|High Velocity Bullets}}在 [[{{tr|PvP}}]] 中可能很强力，尤其是在针对使用高级[[{{tr|wings}}]]、提高玩家速度的[[{{tr|accessories}}]]和[[{{tr|armor}}]]时，它使得精确的瞄准和正确的发射时机不那么重要。
+
+== 花絮 ==
+* 如果向近处发射，由于{{tr|bullets}}的外观图非常大，这会使得它们看上去可能会是隐形的。
+
+== 历史 ==
+{{history|Desktop 1.4.2|修复了{{tr|High Velocity Bullets}}有时会命中大型目标两次的问题（这不适用于[[蠕虫（消歧义）#{{tr|enemies}}|多体节{{tr|enemies}}]]，仍然能多次命中它们）。}}
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 10 提升至 11。
+** 现在会穿透两次，最多击中 3 个{{tr|enemies}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Bullets}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=High Velocity Bullet}}

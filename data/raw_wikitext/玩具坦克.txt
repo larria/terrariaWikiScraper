@@ -1,0 +1,54 @@
+{{exclusive|1.4.0.1}}
+{{master mode only}}
+{{item infobox
+| auto = 4794
+| idprojectile = 14, 930
+| sound1 = Item 11.wav
+| soundcaption1 = 机枪
+| sound2 = Item 89.wav
+| soundcaption2 = {{tr|Rocket launcher}}
+| sound3 = Item 14.wav
+| soundcaption3 = {{tr|Rocket impact}}
+| tags = drop/hardmode
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Toy Tank}}'''是一个[[{{tr|mount}}]]召唤{{tr|item}}，能够召唤可骑乘的'''{{tr|Santank Mount}}'''。它掉落自[[{{tr|Master Mode}}]]下的[[{{tr|Santa-NK1}}]]。此{{tr|mount}}具有{{tr|double jump}}，且附带两个自动瞄准的{{tr|weapons}}；包括向前开火的机枪和自动制导的{{tr|rocket launcher}}。
+
+此{{tr|mount}}的{{tr|The maximum movement speed}}是 {{mph|41}}，需要约 1.5 秒来达到最高速度。不算{{tr|double jump}}时，最大跳跃高度是 12 格，{{tr|double jump}}时机正确时则为 26 格。{{tr|double jump}}可以和其他[[{{tr|Extra jump}}|{{tr|double jump accessories}}]]叠加。{{tr|Santank Mount}}有 2 格宽、3 格高，这使其在挖矿时比[[{{tr|The Black Spot}}]]这样的更大的{{tr|mount}}更为适用。
+
+附带的两个{{tr|weapons}}仅会在玩家前方有[[{{tr|enemies}}]]时开火。机枪的子弹造成 100 {{tr|base damage}}，带有 22.9°<!-- ±0.2 rad--> 的扩散，使得此{{tr|weapon}}较不精准。自动制导{{tr|rockets}}造成 120 {{tr|base damage}}且会在发射后寻找最近的目标，包括位于{{tr|mount}}的初始探测距离以外的目标（例：玩家身后的{{tr|enemies}}）。{{tr|projectiles}}的{{tr|damage}}不会被玩家拥有的任何{{tr|damage bonuses}}改变，但其[[{{tr|critical strike chance}}]]受玩家的[[{{tr|ranged}}]]{{tr|critical strike chance}}影响。机枪每 {{duration|10 ticks}}发射一发子弹（即每秒 6 发），而{{tr|rocket launcher}}每 {{duration|40 ticks}}发射一发{{tr|rocket}}。{{source code ref|v=1.4.4.9|method=Terraria.Mount.Initialize / Terraria.Mount.UseAbility}}
+
+== 备注 ==
+[[File:Santank Mount approximate detection range.png|thumb|{{tr|Santank Mount}}的目标探测区域的可视化。最大探测范围约为 53 格。]]
+* {{tr|The Santank Mount}}的探测范围是玩家前方 120° 的扇形区域（水平轴上方 60° 和下方 60°），从玩家处延伸 53.125 格（在途中用红色高亮标出）。{{source code ref|v=1.4.4.9|method=Terraria.Mount.UpdateEffects|t=玩家中心至{{tr|enemies}}中心的向量和 X 轴的夹角在玩家朝右时必须 <code>≤1.0471975949079879 rad = 60.000003°</code>，朝左时必须 <code>≥2.0943951461045853 rad = 120.000003°</code>。由于考虑的是绝对值，这一范围关于 X 轴对称。此外，向量的长度必须 <code>&lt;850</code> 像素，即 <code>850/16 = 53.125</code> 格。}}
+** 这只是{{tr|mount}}的目标''探测''区域。它可以攻击到在区域外的{{tr|enemies}}（机枪的子弹可以击中超过 53.125 格远的{{tr|enemies}}，而自动制导{{tr|rockets}}理论上可以击中任何地方的{{tr|enemies}}），但当此探测区域内没有和玩家间有清晰视线的{{tr|enemies}}时，{{tr|weapon}}不会开火。
+* {{tr|player}}可在{{tr|Santank}}攻击时使用{{tr|items}}或其他{{tr|weapons}}，这使得{{tr|Santank}}可以作为提升{{DPS}}的一种手段。
+* 此{{tr|mount}}会将[[{{tr|fall damage}}]]降低到 1。
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+
+== 小贴士 ==
+* {{tr|The projectiles}}的伤害和发射频率使得此{{tr|mount}}能成为可靠的[[{{tr|weapon}}]]。 
+
+== 花絮 ==
+* 其{{tr|tooltip}}，<i>{{#explode:{{itemTooltip|4794}}|<br/>|-1}}</i>是参考了{{维基百科|Santa Claus|圣诞老人}}的好孩子/淘气鬼名单。{{tr|buff tooltip}}，''“{{buffinfo|281|tooltip}}”''参考了同一故事。
+* 其{{tr|item tooltip}}参考了[[{{tr|Santa-NK1}}]]（Santa-NK1）在开发阶段时的名字（Santank）。
+
+== 历史 ==
+{{history|Desktop 1.4.3|（英文）{{tr|buff tooltip}}由“Crossing off the naughty list . . .”更改为“Crossing off the naughty list...”。}}
+{{history|Desktop 1.4.0.5|高度由 4 格降低至 3 格。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|introduced=y|随到 1.4.0.5 为止的更改引入。}}
+{{history|Switch 1.4.0.5.5|introduced=y|随到 1.4.0.5 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|随到 1.4.0.5 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Toy Tank}}

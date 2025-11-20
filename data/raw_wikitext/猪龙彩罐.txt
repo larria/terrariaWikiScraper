@@ -1,0 +1,48 @@
+{{exclusive|Party}}
+{{item infobox
+| type = Furniture
+| width = 4 | height = 3
+| auto = 3746
+| tags = vendor / vendor:Party Girl
+}}
+
+'''{{tr|Pigronatas}}'''是由玩家悬挂在[[{{tr|block}}]]下侧的可放置[[{{tr|furniture}}]]{{tr|items}}，类似于[[{{tr|Banners}}]]。用[[{{tr|weapon}}]]击打时，它们会在一阵{{tr|confetti}}中被摧毁，并掉落[[{{tr|Coins}}]]和/或其他战利品。{{tr|Pigronatas}}可在[[{{tr|Party}}|{{tr|Parties}}]]期间从[[{{tr|Party Girl}}]]处以每个 {{iteminfo|Pigronata|buy}} 购买。
+
+== 掉落 ==
+{{loot
+
+| Bacon|1–2|5/192
+| Party Bullet|30–90|1/9
+| Flask of Party|1|3/9
+| Silver Coin|10–200|7/9
+
+}}
+
+== 备注 ==
+* 有 {{chance|2/9}} 几率会什么都不掉。
+* {{tr|Party Bullets}}只在掉落了[[{{tr|Flask of Party}}]]的同时才可能掉落。但{{tr|A Flask of Party}}可能不伴随{{tr|Party Bullets}}而单独掉落。
+* 平均{{tr|coin}}掉落量为 {{buy expr|round=2||17300/3}}，所以批量购买和打破{{tr|Pigronatas}}的“净”{{tr|cost}}平均是每个 {{coin|{{#vardefineecho:avg_cost|{{buy expr|raw=y|Pigronata|-17300/3}}}}}}。其他掉落物的卖出价平均是每个{{tr|Pigronata}} {{sell expr|round=2|| 1*|Flask of Party|/3 + 60*|Party Bullet|/9 + (16/15)*|Bacon|*(5/192)}}。
+* 掉落一个{{tr|bacon}}的几率是 {{chance|14/576|reduce=n}}，掉落两个{{tr|bacon}}的几率则仅有 {{chance|1/576}}。这意味着当有{{tr|Bacon}}掉落时，有 {{chance|1/15}} 几率是掉落两个，{{chance|14/15}} 几率是只掉落一个。
+
+== 小贴士 ==
+* 一次打破大量{{tr|Pigronatas}}的一种简单的办法是[[{{tr|hooks}}|钩抓]]在天花板上然后只要放置它们即可。{{tr|The hooks}}可以在玩家放置彩罐后立即将其打碎。
+** 另一种方法是向三格高的空间中投掷[[{{tr|Spiky Ball}}]]或者发射[[{{tr|Flares}}]]，然后再对着上面放置{{tr|Pigronatas}}，这样也能立即击碎它们。
+* {{tr|The Pigronata}}是在[[{{tr|Hardmode}}]]之前得到[[{{tr|Party Bullet}}]]和[[{{tr|Bacon}}]]的方法之一，通过购买并打破{{tr|Pigronatas}}，可以以平均每发 {{coin|round=2|{{#expr:{{#var:avg_cost}}/(60/9)}}}} 的净成本得到{{tr|bullet}}，并以平均每片 {{coin|round=2|{{#expr:{{#var:avg_cost}}/((16/15)*(5/192))}}}} 的净成本得到{{tr|Bacon}}。（以上两个值都已经将{{tr|coin}}掉落量折算进去了，但未考虑其他掉落物的卖出价值）
+** {{tr|Bacon}}是非常有用的物品，和{{eil|BBQ Ribs}}并列游戏中第二好的食物物品，仅次于{{eil|Golden Delight}}（提供的{{tr|buff}}一样，但持续时间翻倍）。
+** 另一方面，以这种方式在{{tr|pre-Hardmode}}得到它的成本要远高于{{tr|Golden Delight}}的价格 {{GetItemInfo|Golden Delight|sell}}。（除非算上赚回来的钱）
+* {{eicons|1.4.0.1}} 当{{tr|the Party Girl}}住在[[{{tr|the Hallow}}]]{{tr|biome}}中并且临近[[{{tr|Wizard}}]]或[[{{tr|Zoologist}}]]（附近没有住着其他 {{tr|NPCs}}）、且装备了[[{{tr|Discount Card}}]]或[[{{tr|Greedy Ring}}]]时，仅需 {{buy expr|Pigronata|*0.75<!-- maximum price modifier -->*0.8<!-- Discount Card -->}} 就能购买{{tr|Pigronatas}}。这使得快速破坏它们并卖掉其内容物能有净利润。玩家甚至可以选择保留非常有用的{{tr|Bacon}}（基本上是免费的）同时仍然能有盈利。
+
+== 花絮 ==
+* ''{{tr|Pigronata}}'' 是由 ''[[{{tr|Pigron}}|Pigron]]'' 和 ''{{wikipedia|lang=en|piñata}}'' 组成的混成词，Pigron（{{tr|Pigron}}）是出现在{{tr|underground Hallow}}/{{tr|Corruption}}/{{tr|Crimson snow biomes}}中的{{tr|enemy}}，而 Piñata（皮纳塔）是一种节日物品，中间填满东西，悬挂起来，然后用棍子打破。
+
+== 历史 ==
+{{history|Desktop 1.3.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Pigronata}}

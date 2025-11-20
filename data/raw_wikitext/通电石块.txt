@@ -1,0 +1,64 @@
+{{item infobox
+| type = Block/Mechanism
+| auto = 512
+| width = 1 | height = 1
+| tags = plunder
+}}
+{{item infobox
+| type = Block/Mechanism
+| auto = 511
+| width = 1 | height = 1
+| tags = plunder
+}}
+
+'''{{tr|Active Stone Blocks}}'''和'''{{tr|Inactive Stone Blocks}}'''是一种可以作为[[{{tr|mechanisms}}]]的[[{{tr|blocks}}]]。使用[[{{tr|wire}}]]及{{tr|trigger}}可以将其形态切换为“开”或“关”。
+
+激活时，{{tr|Active Stone Block}}会变为{{tr|Inactive Stone Block}}，反之亦然。{{tr|Wires}}必须穿过所有需要激活的{{tr|Active/Inactive Stone Blocks}}，并且需要与{{tr|trigger}}（例如[[{{tr|pressure plate}}]]、[[{{tr|Switch}}]]、或[[{{tr|timer}}]]）相连接。这些{{tr|blocks}}可以用来建造[[{{tr|traps}}]]、闸门、隐藏通道、吊桥（例如，可以建造在{{tr|water, lava}}或空旷区域上方）、天桥等等。
+
+* {{tr|An Active Stone Block}}属于[[{{tr|foreground object}}]]。这意味着它的外观和行为都与普通[[{{tr|Stone Block}}]]相同，会阻挡运动，允许实体站立或行走于上，阻断光线并可以挡住[[{{tr|liquids}}]]。
+* {{tr|An Inactive Stone Block}}属于{{tr|background object}}。虽然仍然可见，但它现在看起来暗于{{tr|Stone Block}}，表现得就像[[{{tr|furniture}}]]一样。它本质上是允许{{tr|players}}、{{tr|items}}、{{tr|liquids}}、光线等通过的空地。
+
+{{tr|Active Stone Block}}与{{tr|Inactive Stone Block}}都能被制作。玩家通常会制作{{tr|Active Stone Block}}，因为{{tr|Inactive Stone Block}}在没有相邻的{{tr|foreground object}}的情况下无法相邻放置。{{tr|Active Stone Block}}则没有这种缺点，放置之后可以用{{tr|wires}}切换为{{tr|Inactive Stone Block}}，最终结果与直接放置{{tr|Inactive Stone Block}}是相同的。
+
+放置{{tr|Active Stone Blocks}}、使用{{tr|wiring}}将其切换为{{tr|Inactive Stone Block}}，再挖掘并放置它们就会得到{{tr|Inactive Stone Block}}，反之亦然。
+
+{{tr|Active/Inactive Stone Blocks}}会自然生成于[[{{tr|Cavern}}]]{{tr|layer}}的[[{{tr|Boulder}}]]{{tr|traps}}中，其中{{tr|Active Stone Blocks}}会连接至{{tr|pressure plate}}并支撑上方的{{tr|Boulder}}。如果{{tr|An enemy or player}}走上了{{tr|pressure plate}}，就会让{{tr|Active Stone Blocks}}变为{{tr|Inactive Stone Block}}，这样一来{{tr|Boulder}}就会坠落并伤害下方的玩家。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Active Stone Block/Inactive Stone Block|expectedrows=2}}
+
+== 备注 ==
+* 其行为与使用[[{{tr|Actuator}}]]{{tr|actuate}}的{{tr|blocks}}是一样的。它可以通过{{tr|wiring}}将任意{{tr|block}}变为{{tr|actuate}}状态。
+** 虽然{{tr|Active/Inactive Stone Blocks}}在游戏的一开始就能获得，但{{tr|Actuators}}需要打败[[{{tr|Skeletron}}]]并得到[[{{tr|Mechanic}}]]后才能获得。
+** 不过，与{{tr|actuate}}的{{tr|blocks}}不同，{{tr|Inactive Stone Blocks}}无法“支撑”毗连{{tr|blocks}}的放置。。这是因为，从技术上说{{tr|Inactive Stone Block}}属于{{tr|background object}}。
+* 放置在{{tr|Active Stone Blocks}}上的[[{{tr|Furniture}}]]，在切换成{{tr|Inactive Stone Block}}后将被释放并掉落成可拾取的{{tr|items}}。切换成{{tr|Inactive Stone Block}}后其相邻的{{tr|blocks}}仍会悬空，就像{{tr|blocks}}被挖掘掉了那样。
+* {{tr|Inactive Stone Blocks}}可以使用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]正常挖掘。除此之外，它们也可以通过使用[[{{tr|Explosives (class)}}]]来释放。
+
+== 小贴士 ==
+* 身处[[{{tr|Hardmode}}]][[{{tr|biome}}]]中时，很容易就可以找到那些被{{tr|Corruption, Crimson or Hallow}}包围的、{{tr|naturally generated}}的{{tr|Active Stone Blocks}}。这是因为，与普通的{{tr|stone blocks}}不同的是，它们不会被感染。
+* 即便没有{{tr|Mechanic}}（亦即没有{{tr|wiring tools}}），此{{tr|item}}（从{{tr|underground}}自然生成的{{tr|Boulder traps}}中获取）仍然有用。玩家可以把它放在[[{{tr|hotbar}}]]中，以便查看屏幕上的电路布局，这有助于发现和绕过自然生成的{{tr|traps}}。
+* 连接到附近的[[{{tr|Switch}}]]或[[{{tr|Lever}}]]的、竖直放置的三条{{tr|Active Stone Blocks}}，可以作为仅玩家才能通过的[[{{tr|doors}}]]使用。[[{{tr|NPC}}]] 没有办法通过它们来到门外面，并且任何{{tr|enemy}}都无法打开它们。注意，这不满足[[{{tr|house}}]]的入口要求，因此 {{tr|NPC}} 仍需要至少一扇真正的{{tr|door}}才会搬入（不过，这扇{{tr|door}}不需要通往外界，可以只通向建筑物的其他部分）。在任意一侧使用蓝[[{{tr|Pressure Plates}}]]会使“门”暂时失活，然后在玩家到达另一侧时重新激活。由于{{tr|Blue Pressure Plates}}只能被{{tr|players}}激活，因此这可以用来在[[{{tr|Blood Moon}}]]期间防止[[{{tr|Zombies}}]]进入。
+** 使用 3 个{{tr|Active Stone Blocks}}和 3 个{{tr|Inactive Stone Blocks}}（或者 6 个{{tr|Active/Inactive Stone Blocks}}，然后激活一半）就可以建造一个“气闸式”双门系统{{note|small=y|paren=y|也就是说，在第一道门关闭时第二道门才打开，结构类似潜艇的气闸}}，同时仍然只允许{{tr|players}}通过。这对于在{{tr|underground}}建造房屋，并防止{{tr|underground enemies}}进入来说非常有用。
+* 为了节省{{tr|storage}}空间，可以考虑把所有{{tr|Inactive Stone Blocks}}转换成{{tr|Active Stone Blocks}}（或反之）。通过叠加堆叠，就可以轻松地省下一个{{tr|inventory or storage slot}}。
+
+== 另见 ==
+* [[指南:电路]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|修正了斜坡形态的{{tr|Inactive Stone blocks}}在你下次进入世界时会变回非斜坡形态的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Active stone blocks}}现在可以使用[[{{tr|Painter}}]]出售的{{tr|paint}}上色。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Tiles
+| show-main = yes
+| show-blocks = yes
+}}
+
+{{language info|en=Active Stone Block}}

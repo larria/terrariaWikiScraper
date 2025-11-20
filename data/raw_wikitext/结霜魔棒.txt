@@ -1,0 +1,46 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5147
+| debuff = Frostburn / 2–3 {{tr|seconds}} / 50%
+| listcat = wands
+}}
+
+{{distinguish|Frost Staff}}
+
+'''{{tr|Wand of Frosting}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|wand}}]]，是[[{{tr|Wand of Sparking}}]]的直接升级物。使用时，它可发射一枚蓝色{{tr|spark}}，在消失前大约能够沿一定弧线行进 16 {{tr|tiles}}。{{tr|The spark}}可以穿透一个[[{{tr|enemy}}]]，并且有 {{chance|1/2}} 的几率造成[[{{tr|Frostburn}}]][[{{tr|debuff}}]]，持续时间为 2 {{tr|seconds}}（{{chance|2/3}}概率）或 3 {{tr|seconds}}（{{chance|1/3}}概率）。{{tr|Wand of Frosting}}有 {{iteminfo|Wand of Frosting|crit}} 基础[[{{tr|critical strike chance}}]]，而非通常的 4% 。
+
+{{modifier|magiclownokb}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Wand of Frosting|expectedrows=1}}
+
+[[File:Wand of Frosting (demo).gif|right|framed|对[[{{tr|Target Dummies}}]]使用{{tr|Wand of Frosting}}。]]
+
+== 备注 ==
+* {{tr|The projectile}}有 1 {{tr|second}}持续时间，而且其剩余的持续时间会在击中第一个目标后减半。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Projectile.AI|t=相关部分位于 <code>Terraria.Projectile.AI</code> 方法在 <code>aiStyle == 2</code> 代码段。}}
+* 在 [[don't dig up]] 和 [[get fixed boi]] {{tr|world}}，由于{{tr|Wand of Sparking}}变为了[[{{tr|Hardmode}}]]独有，所以{{tr|Wand of Frosting}}也会获得下列改动：
+** {{tr|Damage}}由 15 提升至 42。
+** {{tr|Use time}}由 26 降低至 10。
+** {{tr|Mana cost}}由 2 提升至 6。
+** [[{{tr|Velocity}}]]由 7 提升至 12。
+** 造成[[{{tr|Frostbite}}]]而非[[{{tr|Frostburn}}]]。
+** {{tr|Sell value}}由 {{sc|15}} 提升至 {{coin|5gc 5sc}}。
+
+== 花絮 ==
+* 此{{tr|weapon}}和[[{{tr|Wand of Sparking}}]]有着游戏中魔法武器里最低的[[{{tr|mana}}]]消耗；不考虑搭配了[[{{tr|Meteor armor}}]]的[[{{tr|Space Gun}}]]或者[[{{tr|Gray Zapinator}}]]/[[{{tr|Orange Zapinator}}]]（这些消耗 0 {{tr|mana}}）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Wand of Frosting}}

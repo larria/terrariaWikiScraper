@@ -1,0 +1,327 @@
+{{quotation|加载界面[[{{tr|Tips}}]]|{{GameText|LoadingTips_Default.41}}}}
+这一页探讨了玩家的'''[[{{tr|health}}]]{{tr|regeneration}}'''机制的运作原理，以及装备和{{tr|buff}}影响再生速率的方式。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateLifeRegen}}
+
+如果玩家短时间内没有被击中，{{tr|health}}就会开始再生，直到玩家再次被击中。玩家生命再生的速率取决于下列五种因素：
+# 玩家的{{tr|maximum health}}：更高的{{tr|maximum health}}会带来更快的再生速率。
+# 移动：如果玩家静止不动，其再生速率会 ×1.25；如果玩家在移动中，再生速率会降低为 ×0.5。
+# {{eicons|1.4.0.1}}休息：如果玩家躺在[[{{tr|bed}}]]上或坐在[[{{tr|chair}}]]或[[{{tr|sofa}}]]上，其再生速率会 ×1.3。
+# 玩家承受伤害后经过的时间：距离玩家之后一次承受伤害越久，再生速率就越快；在 60 秒（游戏内的 1 小时）时达到上限，此后再生速率就不再上升。
+# {{tr|Buffs}}和{{tr|debuffs}}：参见下方的详细解释，但注意这些数据不直接代表{{tr|health regeneration}}；它们只是因数（越高越好）。
+
+玩家等待再生开始所需的时间变化很大，从大约 1/10 秒到 17 秒（[[{{tr|Expert Mode}}]]中是 32 秒），具体依然取决于最大生命值、移动状态、和{{tr|buffs}}/{{tr|debuffs}}。
+
+== 来源 ==
+下方为提供{{tr|health regeneration}}的东西的列表。
+{| class="terraria lined" id="Regeneration-table"
+! {{tr|Item}}
+! 再生（每秒）
+! 触发
+! 备注
+|-
+| {{item|Band of Regeneration}}
+| {{eicons|1.4.1}} 1 / {{eicons|1.4.1|invert=y}} 0.5
+| 装备
+|
+|-
+| {{item|Charm of Myths}}
+| {{eicons|1.4.1}} 1 / {{eicons|1.4.1|invert=y}} 0.5
+| 装备
+|
+|-
+| {{item|Werewolf (buff)}}
+| 0.5
+| 在{{tr|night}}期间，装备[[{{tr|Moon Charm}}]]{{tr|or its upgrades}}
+|
+|-
+| {{item|Sun Stone}}
+| 1
+| 在白天装备
+|
+|-
+| {{item|Moon Stone}}
+| 1
+| 在{{tr|night}}或{{tr|solar eclipse}}期间装备
+|
+|-
+| {{item|Celestial Stone}}
+| 1
+| 装备（和其组件不叠加）
+|
+|-
+| {{item|Celestial Shell}}
+| 1
+| 装备（和其组件不叠加）
+|
+|-
+| {{item|Shiny Stone}}
+| 1
+| 装备
+| 随着时间推移缓慢提升{{tr|regeneration}}速度，当玩家移动或使用大多数物品时终止。仅限{{tr|Expert mode}}。
+|-
+| {{item|Regeneration}}
+| 2
+| 使用[[{{tr|Regeneration Potion}}]]
+| {{tr|Buff}}持续 8 分钟。
+|-
+| {{item|Honey (buff)}}
+| 1
+| 站在[[{{tr|Honey}}]]
+| 离开{{tr|Honey}}后{{tr|Buff}}会持续 30 秒，在装备[[{{tr|Honey Comb}}]]或其升级物之一的情况下承受伤害后此{{tr|Buff}}会持续 5 秒。自然生命再生计数器每{{tr|tick}}加 2；与其他形式的自然生命再生一样，玩家避免承受伤害且不移动时此效果会变得更加强大。如果玩家的生命再生由于{{tr|debuffs}}变为负数，则每秒额外加 2 生命值，尽管这并不能将{{tr|health regeneration}}提升到零以上。
+|-
+| {{item|Dryad's Blessing|link=Dryad's Blessing (Buff)}}
+| 3
+| 在[[{{tr|Dryad}}]]施展{{tr|dryad's ward}}时在她附近。
+|
+|
+|-
+| {{item|Cozy Fire}}
+| 0.5；基础再生速率 ×1.1
+| 站在[[{{tr|Campfire}}]]附近
+|
+|-
+| {{item|Heart Lamp}}
+| 1
+| 站在[[{{tr|Heart Lantern}}]]附近
+|
+|-
+| {{item|Crimson armor}}
+| 基础再生速率 ×1.5
+| 装备全套
+| 自然生命再生计数器每{{tr|tick}}加 1；与其他形式的自然生命再生一样，玩家避免承受伤害且不移动时此效果会变得更加强大。
+|-
+| {{item|Rapid Healing}}
+| {{eicons|1.4.1}} 2 / {{eicons|1.4.1|invert=y}} 3
+| 穿戴全套[[{{tr|Palladium armor}}]]时命中{{tr|enemy}}
+| {{tr|Buff}}持续 5 秒。
+|-
+| {{item|Solar Flare armor}}
+| 3（每个部件 1）
+| 装备
+| 
+|-
+| {{item|Life Drain|image=Life Drain (buff).png}}
+| 1.5（每多击中 2 个{{tr|enemy}}再多 0.5 生命值）
+| 用武器伤到{{tr|enemies}}
+| 武器对{{tr|enemy}}造成伤害时提供{{tr|Life Drain buff}}。自然生命再生计数器每{{tr|tick}}加 5，每多伤害 2 个{{tr|enemy}}再多加 1；与其他形式的自然生命再生一样，玩家避免承受伤害且不移动时此效果会变得更加强大。
+|-
+| {{item|Life Nebula}}
+| 每级 3
+| 收取{{tr|Life Booster}}
+| 持续 8 秒并能叠加最多三次。一次只会移除一层，同时计时器会重置。
+|-
+| {{item|Valhalla Knight's Breastplate}}
+| 4
+| 装备
+|
+|-
+| {{item|Squire's Great Helm}}
+| 2
+| 装备
+|
+|-
+| {{item|Chair}}
+| 基础再生速率 ×1.3
+| {{eicons|1.4.0.1}} 坐在[[{{tr|Chair}}]]、[[{{tr|Toilet}}]]、[[{{tr|Sofa}}]]、[[{{tr|Bench}}]]、[[{{tr|Throne}}]]上，或睡在[[{{tr|Bed}}]]上。
+| 自然生命再生计数器每{{tr|tick}}加 3；与其他形式的自然生命再生一样，玩家避免承受伤害时此效果会变得更加强大。
+|
+|-
+| {{item|Hearty Meal}}
+| 3
+| 用[[{{tr|Ham Bat}}]]击杀目标
+| {{tr|Buff}}持续 7 秒。
+|-
+| {{item|Vital Crystal}}
+| -
+| 使用物品
+| 效果永久持续。自然生命再生计数器每{{tr|tick}}加 0.2；与其他形式的自然生命再生一样，玩家避免承受伤害且不移动时此效果会变得更加强大。
+|}
+
+== 细节 ==
+{{tr|Health regeneration}}（HR）由下列公式决定：
+
+<math>
+\mathit{生命再生} = \frac{1}{2} \times
+\left(
+	\left(
+		\underbrace{
+			\left(
+				\frac{\mathit{最大生命}}{400}\times0.85+0.15
+			\right) \times \mathit{时间}
+		}_{\mathtt{再生}}	
+    \times \underbrace{ \mathit{移动} \times \mathit{休息} \times \mathit{专家} }_{\mathtt{特殊}} \right) + \underbrace{ \mathit{增益} }_{\mathtt{增益部分}}
+\right)
+</math>
+给出的是玩家每秒再生的{{tr|health}}量。
+
+此公式可以分为 3 个部分，且会经过一些取整：
+# <code>再生</code>部分包括：
+#* <code><i>最大生命</i></code>：玩家的最大生命值。
+#* <code><i>时间</i></code>：自上次受伤以来的时间因数。详细定义可在详细解释部分找到。
+#** <code><i>时间</i></code>的值开始时是 0，在头 30 秒内每 5 秒加 1，此后每 10 秒加 1，最高为 9。（0 ≤ <code><i>时间</i></code> ≤ 9）这意味着这一部分在头 5 秒内为 0，30 秒后为 6，60 秒后为 9。这里没有考虑[[{{tr|Shiny Stone}}]]的效果，它可以将<code><i>时间</i></code>的值提高到最大 38，并且以其他方式改变算法（见下文）。
+# <code>增益</code>部分：
+#* <code><i>增益</i></code>：来自{{tr|buffs and debuffs}}的修正。所有来自[[#{{tr|Buffs}}|{{tr|Buffs}}]]部分的“R+n”值都可以加在这里（n 那部分）（有部分{{tr|buffs}}会影响算法的其他部分；还是见下文）。这是最简单的部分，因为{{tr|buffs}}就只是加在再生上。这发生在所有其他自然再生计算之后，因此来自{{tr|buffs}}的再生不受特殊{{tr|modifier}}或[[{{tr|Bleeding}}]]影响。然而，其中许多（见下文）会因[[{{tr|Poisoned}}]]之类的伤害性{{tr|debuffs}}而变得无效。
+# The <code>特殊</code>部分包括：
+#* <code><i>移动</i></code>：如果玩家正在移动则为 0.5，如果玩家静止不动则为 1.25。
+#** 在这里，仅当玩家有水平方向动量且不是被[[{{tr|Hooks}}|{{tr|grappling hook}}]]所拉扯时才视为正在移动。纯垂直方向的移动或者用{{tr|grappling hooks}}移动不会阻碍自然再生。
+#* <code><i>休息</i></code>：1，除非玩家坐在{{tr|chair}}上或者躺在{{tr|bed}}上，这种情况下为 1.3。
+#* <code><i>专家</i></code>：1，除非玩家处于{{tr|expert mode}}且没有{{tr|well fed buff}}，这种情况下为 0.5；或者玩家处于{{tr|expert mode}}且没有{{tr|well fed buff}}但装备了{{tr|Shiny Stone}}，这种情况下为 0.75。
+所有这些都四舍五入到最接近的整数，最后除以 2 即可得到每秒的再生量。
+
+玩家每秒钟会再生以上计算出来的 HR 数值量的生命值，不考虑{{tr|Shiny Stone}}和[[{{tr|Rapid Healing}}]]。这意味着如果玩家的 HR=0.5，则每 2 秒会恢复 1 生命值；如果玩家的 HR=5，则每秒会恢复 5 生命值（严格地说，每 12 {{tr|ticks}}{{tick}}恢复 1 生命值）。
+
+=== 备注 ===
+* {{tr|Buffs}}有助于缩短再生开始前所需的时间。
+* 刚开局的玩家如果站立不动会在 12 秒（{{tr|expert mode}}下是 17 秒）后开始再生生命，移动时则需要 17 秒（{{tr|expert mode}}下是 32 秒）。在第一次使用[[{{tr|Life Crystal}}]]后，以上数字变为站立不动时 7 秒（{{tr|expert mode}}下是 12 ）、移动中 17 秒（{{tr|expert mode}}下是 27 秒）。
+
+== 技术解释 ==
+玩家有以下{{tr|health regeneration}}属性：
+* 再生时间（'''RT'''）：人物已经再生了多少时间。通常每{{tr|tick}} +1，上限为 3600，当人物承受伤害时会重置为零（停止再生）。
+* 再生速率（'''R'''）：每{{tr|tick}}再生的生命值（HP）（每 1 点 '''R''' 等于 0.5 HP/秒）。'''RT''' 越长（玩家避免伤害的时间越长）此数值就越高。
+* 再生计数器（'''RC'''）：每{{tr|tick}}增加 '''R'''，大于等于 120 或者小于等于 -120 时，会减去或加上 120，同时玩家得到或失去 1 生命值。
+
+再生速率（'''R'''）决定了 '''RC''' 变化的速度。'''R''' 通常为 0 或正数，但如果玩家碰到了如[[{{tr|Poisoned}}]]之类消耗生命的[[{{tr|debuff}}]]则可能为负值。
+
+=== 计算 ===
+基础再生速率（'''R'''）主要取决于再生时间（'''RT'''）、玩家的最大生命值（'''mHP'''）、和玩家是站定还是移动中。
+
+'''首先''','''RT''' 会转换为''有效再生时间''（'''eRT'''）。
+* 如果 '''RT''' <= 1800，则每 300 '''RT''' 让 '''eRT''' +1。
+* 如果 '''RT''' > 1800，则超过 1800 之后每 600 '''RT''' 让 '''eRT''' +1。
+
+以下是 '''RT''' 和 '''eRT''' 之间关系的示例：
+{| class="wikitable" style="text-align:center"
+!RT
+!0~299 !! 300~599 !! 600~899 !! 900~1199 !! 1200~1499 !! 1500~1799 !! 1800~2399 !! 2400~2999 !! 3000~3599 !! 3600
+|-
+|eRT || 0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9
+|}
+
+'''其次'''，基础再生速率 <code>'''R''' = (mHP / 400 * 0.85 + 0.15) * eRT</code>
+* 如果玩家站立不动，'''R''' 会乘以 1.25。
+* 如果玩家正在移动，则会乘以 0.5。
+'''最后'''，它将四舍五入到最接近的整数。
+
+因此，简单地说：玩家不受伤害的时间越长、玩家最大生命值越高，其自然生命再生速率就越高。此外，相比于正在移动，站立不动可以获得 2.5 倍治疗加成。使用物品不算是移动。
+
+以上计算之后，如果玩家处于[[{{tr|Expert Mode}}]]且'''没有'''[[{{tr|Well Fed}}]]{{tr|buff}}, '''R''' 会乘以 0.5。
+
+== {{tr|Item and buff effects}} ==
+'''R''' 也受到{{tr|other items and buffs}}影响。
+
+注：尽管[[{{tr|drowning}}]]类似于消耗生命的{{tr|debuffs}}，但它只会重置 '''RT''' 而并不会影响 '''RC''' 和 '''R'''。它会直接扣减生命值。
+
+=== {{tr|Buffs}} ===
+{| class="terraria lined"
+! style="padding:2px 30px" | {{tr|Item}}/{{tr|Buff}} !! {{tr|Effect}}
+|-
+| [[{{tr|Heart Lantern}}]] || '''R''' +2
+|-
+| [[{{tr|Campfire}}]] || '''R''' +1 且基础 '''R''' x1.1
+|-
+| [[{{tr|Crimson armor}}]] || 基础 '''R''' x1.5 <br/>每{{tr|tick}} '''RT''' +1
+|-
+| [[{{tr|Life Drain}}]] || '''R''' +3（每多 2 个受影响的{{tr|enemies}}再加 1）<br/>每{{tr|tick}} '''RT''' +5（每多 2 个受影响的{{tr|enemies}}再加 1）
+|-
+| [[{{tr|Rapid Healing}}]] || 每{{tr|tick}} '''RC''' +4
+|-
+| [[{{tr|Vital Crystal}}]] || 每{{tr|tick}} '''RT''' +0.2
+|-
+|休息或坐下
+|基础 '''R''' x1.3
+每{{tr|tick}} '''RT''' +3
+|}
+
+以下当玩家没有任何消耗生命的{{tr|debuffs}}时适用：
+{| class="terraria lined"
+! style="padding:2px 60px" | {{tr|Item}}/{{tr|Buff}} !! {{tr|Effect}}
+|-
+|[[{{tr|Moon Charm}}|{{tr|Werewolf}}]]||'''R''' +1
+|-
+|[[{{tr|Band of Regeneration}}]]
+
+[[{{tr|Charm of Myths}}]]
+
+[[{{tr|Moon Stone}}]]/[[{{tr|Sun Stone}}]]/[[{{tr|Celestial Stone}}]]
+
+[[{{tr|Celestial Shell}}]]
+
+[[{{tr|Squire armor}}|{{tr|Squire's Great Helm}}]]
+
+[[{{tr|Solar Flare armor}}]]（每件）
+|'''R''' +2
+|-
+| [[{{tr|Regeneration Potion}}|{{tr|Regeneration}}]] || '''R''' +4
+|-
+| [[{{tr|Dryad's Blessing (Buff)}}|{{tr|Dryad's Blessing}}]] || '''R''' +6
+|-
+|[[{{tr|Valhalla Knight armor}}|{{tr|Valhalla Knight's Breastplate}}]]
+|'''R''' +8
+|-
+|[[{{tr|Life Nebula}}]]|| 当 '''R''' 小于 0 时设置 '''R''' = 0<br/> 每一级{{tr|buff}} '''R''' +6（第三级为 18）
+|}
+
+=== 再生{{tr|debuffs}} ===
+* [[{{tr|Feral Bite}}]]{{tr|debuff}}：基础 '''R''' 值乘以 0.5。
+* [[{{tr|Bleeding}}]]和[[{{tr|Obstructed}}]]{{tr|debuff}}：保持 '''RT''' 重置为 0，因此基础 '''R''' 保持为 0。
+
+== 消耗生命的{{tr|debuffs}} ==
+以下会取消上面第二个表格中的 '''R''' 加成、将 '''RT''' 重置为 0、且按以下值降低 '''R'''：
+* [[{{tr|Poisoned}}]]：-4
+* [[{{tr|On Fire!}}]]：-8
+* [[{{tr|Frostburn}}]]：-16
+* [[{{tr|Cursed Inferno}}]]：-24
+* [[{{tr|Acid Venom}}]]：-30
+* [[{{tr|Burning}}]]：-60
+* [[{{tr|Suffocation}}]]：-40。
+* [[{{tr|Electrified}}]]：-8（站立不动时），或 -40（水平移动时）。
+* [[{{tr|The Tongue}}]]：-100，仅限{{tr|Expert mode}}中。
+注：如果玩家处于{{tr|debuff}}或[[{{tr|Burning}}]]或[[{{tr|Suffocation}}]]或{{tr|expert mode}}[[{{tr|The Tongue}}]]下，在 '''RC''' 达到 -120 时不会失去 1 生命值，而是改为在 '''RC''' 达到 -600 时失去 5 生命值。
+
+=== [[{{tr|Honey}}]] ===
+* {{tr|Honey}}在{{tr|health regeneration}}上有两个效果：{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateLifeRegen / Terraria.Player.Update}}
+** 其一，若 '''R''' ＜ 0，它会使 '''R''' 增加 4。若此后 '''R''' ＞ 0 ，则将 '''R''' 重设为 0。
+** 其二，它会直接使 '''R''' 增加 2 并且额外让 '''RT''' 每{{tr|tick}} +2。
+
+=== [[{{tr|Shiny Stone}}]] ===
+装备{{tr|Shiny Stone}}会将[[{{tr|Feral Bite}}]]{{tr|debuff}}和{{tr|Expert mode}}的乘数从 0.5 变为 0.75。二者都只会让再生速度降低 25% 而非之前的 50%。它还将基础 '''R''' ×1.1。
+
+如果玩家'''未'''使用任何{{tr|items}}并且几乎站立不动（它允许轻微移动，上限为 {{mph|0.25}}，水平或垂直方向），则在上述效果外还会'''再'''施加以下效果：
+# 如果玩家有任何消耗生命的{{tr|debuffs}}而导致 '''R''' 小于 0，'''R''' 会减半（如果玩家还具有[[{{tr|Honey}}]]{{tr|buff}}，则会先将 '''R''' 提高 4（但不超过 0），然后再将 '''R''' 减半，最后，{{tr|Honey buff}}再额外将 '''R''' 提高 2）。
+# '''R''' +4。
+# '''RT''' 每{{tr|tick}} +4。
+# 如果 90 < '''RT''' < 1800，则 '''RT''' 重置为 1800。
+# 它会去除 '''RT''' 的上限，当 '''RT''' > 3000 时，超过 3000 后每 300 '''RT''' 会让 '''eRT''' +1（这一部分上限为 30，因此它会让 '''eRT''' 的最大值变为 38 而非之前的 9）。
+# 最后，如果 '''R''' > 0，'''RC''' 每{{tr|tick}} +1。
+
+因此，如果玩家最大生命值为 600、有{{tr|Shiny Stone}}且站立不动、在{{tr|Expert mode}}中、没有[[{{tr|Well Fed}}]]：
+* '''R''' = (600 ÷ 400 × 0.85 + 0.15) × 38 × 1.25 × 0.75 × 1.1 + 4 = 60
+* '''RC''' 每{{tr|tick}}额外 +1
+* = 每秒 30.5 生命值再生速率
+
+=== 更复杂的例子 ===
+为了展现{{tr|items, buffs and debuffs}}是如何相互作用的，这里有一个更复杂的例子：
+
+假设玩家拥有[[{{tr|Electrified}}]]和[[{{tr|Frostburn}}]]{{tr|debuffs}}、[[{{tr|Regeneration Potion}}|{{tr|Regeneration}}]]和[[{{tr|Honey (buff)}}|{{tr|Honey}}]]{{tr|buffs}}、装备了[[{{tr|Shiny Stone}}]]和[[{{tr|Charm of Myths}}]]、且在[[{{tr|Heart Lantern}}]]附近站立不动。
+
+如上所述，{{tr|life regeneration}}将按下述步骤确定：
+# {{tr|Regeneration buff}}和{{tr|Charm of Myths}}分别将 '''R''' 提高 4 和 2，因此 '''R''' = 6。
+# 消耗{{tr|life}}的{{tr|debuffs}}消除了上述效果，将 '''R''' 设为 0。
+# {{tr|Electrified and Frostburn debuffs}}分别将 '''R''' 降低 8 和 16，因此 '''R''' = -24。
+# 因为 '''R''' < 0，{{tr|the Honey buff}}将 '''R''' 提高 4，因此 '''R''' = -20。
+# 由于 '''R''' 依然小于 0，{{tr|the Shiny Stone}}让其减半，因此 '''R''' = -10。
+# 然后{{tr|Honey buff, Shiny Stone, and Heart Lantern}}分别将 '''R''' 提高 2、4、和 2，因此 '''R''' = -2。
+# 由于玩家有消耗生命的{{tr|debuffs}}，'''RT''' 会保持为 0，因此玩家没有自然生命再生。
+# 由于 '''R''' 小于 0，{{tr|the Shiny Stone}}不会提供 '''RC''' 每{{tr|tick}} +1 的加成。
+
+因此，玩家的 '''R''' = -2，每秒会失去 1 生命值。
+
+但是，如果玩家也有[[{{tr|Ham Bat}}|{{tr|Hearty Meal}}]]{{tr|buff}}，则会得到 '''R''' +6 的加成，使玩家得到 2 HP/秒的再生速率。此外，由于 '''R''' > 0，{{tr|the Shiny Stone}}现在会提供 '''RC''' 每{{tr|tick}} +1 的奖励，从而得到额外 0.5 HP/秒的再生速率。因此玩家现在拥有 2.5 HP/秒的再生速率。
+
+不过，如果玩家拥有的是[[{{tr|Rapid Healing}}]]{{tr|buff}}（会给予 '''RC''' 每{{tr|tick}} +4 的效果并且不会影响 '''R'''）而非[[{{tr|Ham Bat}}|{{tr|Hearty Meal}}]]{{tr|buff}}，{{tr|the Shiny Stone}}就不会提供 '''RC''' 每{{tr|tick}} +1 的奖励。因此玩家此时拥有的是 1 HP/秒的再生速率。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Health regeneration}}

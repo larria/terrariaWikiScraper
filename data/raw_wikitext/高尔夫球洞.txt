@@ -1,0 +1,28 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4040
+| type = Block / Mechanism
+| sound1 = Item 129.wav
+| soundcaption1 = {{tr|Golf Ball}}进球
+| tags = vendor / vendor:Golfer
+}}
+[[File:Golf Cup example.png|frame|放置的{{tr|Golf Cup}}。]]
+
+'''{{tr|Golf Cup}}'''是用在[[{{tr|Golf}}]]中的、可以激活的[[{{tr|mechanism}}]][[{{tr|block}}]]。它可以在[[{{tr|Golfer}}]]处以 {{iteminfo|Golf Cup|buy}} 的价格购买。当[[{{tr|Golf Ball}}]]滚入{{tr|Golf Cup}}，{{tr|Golf Ball projectile}}会从世界上被移除，球洞会发出信号，一条[[{{tr|status message}}]]会向所有玩家分享从玩家放置球到进球到进球所使用的杆数。
+
+== 备注 ==
+* {{tr|golf ball}}必须被杆子至少击打过一次才能激活{{tr|Golf Cup}}。直接把{{tr|golf balls}}扔上去是不管用的。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|修复了{{tr|Golf Cups}}会向服务器内所有玩家发送电信号的 {{tr|Bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+{{Wiring}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Golf Cup}}

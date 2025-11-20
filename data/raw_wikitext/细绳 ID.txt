@@ -1,0 +1,38 @@
+<div class="ajaxHide">
+{{main|数据 ID}}
+
+此页面包含有[[《{{tr|Terraria}}》]]游戏代码中用于引用[[{{tr|Strings}}|{{tr|string}}]]颜色的内部'''{{tr|projectile IDs}}''' 的可排序列表。此信息对于研究性目的或开发诸如[[{{tr|Mod}}]]之类的第三方软件会很有用。
+
+== ID 列表 ==
+</div>
+{| class="terraria sortable lined"
+! {{tr|ID}} !! {{tr|String item}}
+{{#af_pipeline:
+
+<!-- get all items with a string ID (attribute "stringColor" not "false") -->
+  {{iteminfo query|stat=stringColor|valuenot=false|get=id}}
+
+<!-- get string ID of each item -->
+| {{#af_map:{{{prev}}}|itemid|
+	{{#af_object:
+		 item={{item|id={{#af_show:{{{itemid}}}}}|showid=n|icons=n}}
+		|stringid={{iteminfo|id={{#af_show:{{{itemid}}}}}|field=stringColor}}
+	}}
+}}
+
+<!-- sort by string ID -->
+| {{#af_keysort:{{{prev}}}|stringid}}
+
+<!-- display table rows -->
+| {{#af_foreach:{{{prev}}}||item|<nowiki/>
+{{!}}-
+{{!}} {{#af_get:{{{item}}}|stringid}}
+{{!}} {{#af_get:{{{item}}}|item}}
+}}
+
+}}
+|}
+
+{{category|Data IDs}}
+
+{{language info|en=String IDs}}

@@ -1,0 +1,58 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 2895
+}}
+|{{npc infobox
+| auto = 448
+| type = Gold Critter
+| image = Gold Worm.gif
+| environment = Surface
+}}
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Gold Worm}}'''是一种[[{{tr|critter}}]]。{{critter info|isgold=y}}
+
+特殊的是，{{tr|Gold Worm}}[[{{tr|Bait power}}|作为{{tr|bait}}时被消耗掉的几率]]极低，仅为 {{chance|1/20}}。{{source code ref|name=pickbait|v=1.4.4.9|method=Terraria.Player.ItemCheck_CheckFishingBobber_PickAndConsumeBait}}
+
+它也偶尔能通过打开[[{{tr|Can Of Worms}}]]得到。
+
+{{Lifeform Analyzer note}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Gold Worm|expectedrows=3}}
+
+== 备注 ==
+* [[{{tr|Tackle Box}}]]及其升级物不会影响{{tr|Gold Worm}}在钓鱼时被消耗掉的几率。<ref name="pickbait"/>
+
+== 小贴士 ==
+* {{tr|The Gold Worm}}最好用于制作[[{{tr|Gummy Worm}}]]，因其能永久提高玩家的{{tr|fishing power}}。
+* 由于被消耗掉的几率特别低，{{tr|The Gold Worm}}是一种极好的{{tr|bait item}}。其他{{tr|gold critters}}和其他有着 50% {{tr|bait power}}的{{tr|item}}有 {{chance|1/9.333}}（有{{tr|Tackle Box}}或其升级物是 {{chance|1/10.333}}）几率被消耗掉，因此{{tr|Gold Worm}}的平均使用寿命是它们的两倍以上。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|在{{tr|critter}}形态下接触[[{{tr|Shimmer}}]]时，现在会变为[[{{tr|Gummy Worm}}]]而非[[{{tr|Faeling}}]]。}}
+{{history|Desktop 1.4.4|
+** 当用于{{tr|fishing}}时，消耗的几率极低（仅为 1/20 几率）。它不再受{{tr|Tackle Box}}及其升级物的影响。
+** 现在用于通过{{tr|shimmer}}制作{{tr|the Gummy Worm}}。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Golden Delight}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|现在用于制作{{tr|the Golden Delight}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Gold}}
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Gold Worm}}

@@ -1,0 +1,48 @@
+{{exclusive|1.4.3}}
+{{item infobox
+| auto = 5119
+| sound1 = Item 60.wav
+| soundcaption1 = {{tr|Fireball}}
+| sound2 = Item 45.wav
+| soundcaption2 = {{tr|Fireball impact}}
+| tags = drop / sentry / bag loot
+| idprojectile = 966, 967
+}}
+{{drop infobox|style=clear:right}}
+[[File:Houndius Shootius (demo).gif|frame|right|{{tr|The Houndius Shootius}}攻击[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Houndius Shootius}}'''是一种[[{{tr|Summon weapon}}#{{tr|Sentry}}类型|{{tr|sentry summon weapon}}]]。{{sentry note}}{{tr|The Houndius Shootius}}会用悬浮眼球向 60 格内的{{tr|enemy}}发射火球{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}，火球在击中{{tr|enemy}}或障碍物表面时会消散。眼球总是会凝视玩家，而当有{{tr|enemy}}靠近到攻击范围内时，它会转而盯向{{tr|enemy}}。使用后，{{tr|sentry}}会试图在{{tr|cursor}}处生成，不过如果{{tr|cursor}}在半空中，{{tr|the sentry}}会生成在{{tr|cursor}}下方最近的{{tr|blocks}}上。它有 {{chance|1/4}} 的几率由[[{{tr|Deerclops}}]]掉落。
+
+其最佳[[{{tr|modifiers}}]]是'''{{tr|Mythical}}'''、'''{{tr|Furious}}'''、'''{{tr|Godly}}'''。取整导致这些{{tr|modifiers}}提供与{{tr|Ruthless modifier}}相同的伤害增加，将伤害从 24 增至 28。
+
+== 备注 ==	
+* {{tr|The Houndius Shootius}}以每{{duration|90 ticks}}一次的频率发射{{tr|fireballs}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}
+
+== 花絮 ==
+* {{tr|The Houndius Shootius}}是唯一不是[[{{tr|Tavernkeep's Sentry}}]]的{{tr|pre-Hardmode sentry}}。
+* 其{{tr|tooltip}}参考了《[[dts:Don't Starve Together|{{tr|Don't Starve Together}}]]》中，[[dts:Wortox|沃拓克斯]]对{{tr|Houndius Shootius}}的检查话语。
+
+== 另见 ==
+* {{dts link}}（眼睛炮塔）
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|增加了{{tr|projectile}}的碰撞体积。}}
+{{history|Desktop 1.4.4|现在在被召唤后开火前有短暂延迟。}}
+{{history|Desktop 1.4.3.2|[[{{tr|velocity}}]]由 8.5 增加至 12.5。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Houndius Shootius}}

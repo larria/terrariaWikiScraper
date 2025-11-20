@@ -1,0 +1,59 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2590
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 40 {{eicons|Molotov Cocktail|not=1.3.0.1|small=y}}
+| debuff = On Fire! / {{duration|rawseconds=3–6}} / 100%
+| sound1 = Shatter.wav
+| soundcaption1 = {{tr|Impact}}
+| idprojectile = 399, 400, 401, 402
+}}
+[[File:Molotov Cocktail (demo).gif|framed|使用{{tr|Molotov Cocktails}}{{tr|attack}}[[{{tr|Target Dummy}}]]。注意{{tr|Molotov Fire projectile}}造成的{{tr|damage}}。]]
+
+'''{{tr|Molotov Cocktail}}'''是一种有效使用{{tr|range}}较短的[[{{tr|consumable ranged weapon}}]]。一旦命中实体{{tr|block}}或[[{{tr|enemy}}]]，它会爆炸并释放{{tr|Molotov Fire projectile}}，{{penetrate|auto=400|article=|name=该{{tr|projectile}}}}{{tr|Molotov Fire projectile}}能够对{{tr|enemy}}造成{{tr|damage}}并施加 3-6 {{tr|seconds}}[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。它的高{{tr|damage}}和{{tr|debuff}}使它成为一种在[[{{tr|pre-Hardmode}}]]的前中期相当有用的{{tr|weapon}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Molotov Cocktail|expectedrows=2}}
+
+== 备注 ==
+* {{eicons|1.3.0.1}}{{tr|Molotov Fire projectile}}对[[{{tr|Eater of Worlds}}]]只会造成 65% {{tr|damage}}（{{#expr:floor({{iteminfo|Molotov Cocktail|damage}}*0.65)}} {{tr|base damage}}）并只能穿透 1 个而非 2 个目标。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* 这件{{tr|item}}在清理[[{{tr|Spider Nest}}]]和[[{{tr|vines(plant)}}|{{tr|vine}}]]时非常有用，因为许多的{{tr|Molotov Fire projectile}}可以清理大量[[{{tr|Cobweb}}]]和{{tr|vine}}。
+* 它在与一些 {{tr|boss}} 的战斗中非常有效：
+** [[{{tr|Eater of Worlds}}]]（可有效{{tr|damage}}其{{tr|segment}}，{{eicons|1.3.0.1}}尽管对其的{{tr|damage}}减少）
+** [[{{tr|Brain of Cthulhu}}]]（可有效击杀[[{{tr|Creeper}}]]）
+** [[{{tr|Wall of Flesh}}]]（可有效击杀[[{{tr|The Hungry}}]]）
+
+== 花絮 ==
+* {{wikipedia|Molotov Cocktail|{{tr|Molotov Cocktail}}}}最初是芬兰军队在 1939 年的{{wikipedia|Winter War|冬季战争}}中用来对付俄军的反坦克武器，是个装满柴油的瓶子。其{{tr|name}}来自于{{wikipedia|Vyacheslav Mikhailovich Molotov|维亚切斯拉夫·莫洛托夫}}，一名辩称苏联飞机没有向芬兰人民扔下炸弹，而是去贫民区为贫苦的芬兰人民空投面包的苏联政治家。芬兰军民戏谑地称要用饮品“鸡尾酒”来回敬“面包篮”。这一术语现在仍被用来指由一瓶燃料或烈性酒精制成的在瓶口有一块点燃的布的小型临时燃烧弹。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在使用[[{{tr|Gel}}]]来{{tr|craft}}，而不是[[{{tr|Pink Gel}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Damage type}}由{{tr|Throwing}}改为{{tr|Ranged}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Damage}}由 40 降低至 23。
+** {{tr|Damage type}}由{{tr|Ranged}}改为{{tr|Throwing}}。
+** {{tr|Crafting recipe}}变更：
+*** [[{{tr|Ale}}]]由 10 降低至 5。
+*** 添加{{tr|Pink Gel}}。
+*** 制作数量由 10 降低至 5。
+** 现在只会对{{tr|Eater of Worlds}}造成 65% {{tr|damage}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|同步{{tr|Desktop 1.3.0.1}}的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|同步{{tr|Desktop 1.3.0.1}}的更改。（{{icon|ps4}}）}}
+{{history|Console 1.08|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Molotov Cocktail}}

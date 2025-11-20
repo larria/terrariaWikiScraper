@@ -1,0 +1,123 @@
+[[File:BiomeBannerMeteor.png|center]]
+{{about|{{tr|the biome}}|{{tr|the ore}}|{{tr|Meteorite}}}}
+
+'''{{tr|Meteorite biome}}'''是一种[[{{tr|mini-biome}}]]，形成于{{tr|meteor}}坠落在世界中时。这个事件总是发生在屏幕外，在世界某处留下一个布满[[{{tr|Meteorite}}]]矿的坑，等待玩家发现。 {{tr|A meteor event}}仅在玩家 {{eicons|1.4.0.2}} 首次打败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]] / {{eicons|1.4.0.2|invert=y}} 首次破坏一颗[[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]]（[[#条件|参见下文的完整条件]]）之后才能随机发生。会有一条[[{{tr|status message}}]]提醒玩家{{tr|meteor}}坠落：''“{{gameText|LegacyWorldGen.59}}”''
+
+{{tr|Meteorite biomes}}会生成[[{{tr|Meteor Head}}]]，这是一种独特的{{tr|enemy}}，会朝玩家飞来，并在玩家移动时随之而动，能穿过它们所遇到的所有[[{{tr|blocks}}]]。只要一块区域被视为是{{tr|meteorite biome}}，{{tr|Meteor Heads}}的生成就无法阻止，即使附近有多个 [[{{tr|NPCs}}]] 亦如是。不过，{{tr|the Space Layer}}可以覆盖掉{{tr|the Meteorite biome}}（{{tr|Harpies}}会取而代之）。如果{{tr|the player}}处于{{tr|Meteorite biome}}中，同时靠近{{tr|the Space}}边界，那么{{tr|Harpies}}''和''{{tr|Meteor Heads}}二者均可生成。
+
+一但大多数{{tr|Meteorite}}已被挖走（剩余的{{tr|Meteorite blocks}}少于 {{eicons|1.4.0.2}} 75 / {{eicons|1.3.0.1|invert=y}} 23 块；大约是{{tr|Meteorite}}坠落地点平均量的 10%），此地区就不再视为{{tr|Meteorite biome}}。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meteor Head}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meteorite}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Meteor Head}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meteorite|note2=（仅限{{tr|Pre-Hardmode}}）}}<!--
+			-->|{{item|Meteor Head Banner}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Eerie)| {{sound|track=Eerie}} |icons={{eicons|1.3.0.1|old=y}} }}  <!--
+			-->|{{item|Music Box (Hell)| {{sound|track=Underworld}} |icons={{eicons|3ds=y}} }}<!--
+			-->|{{item|Otherworldly Music Box (Eerie)| {{sound|track=Eerie (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!-- 
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 条件 ==
+在{{eicons|1.4.0.2}}[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]被打败后 / {{eicons|1.4.0.2|invert=y}} [[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]]被砸碎后，有 50% 几率生成{{tr|meteorite}}坠落地。此{{tr|biome}}通常会在下一个[[{{tr|Day and night cycle}}|{{tr|midnight}}]]生成，但如果是在{{tr|midnight}}和黎明（半夜 12:00 – 凌晨 4:30）之间{{eicons|1.4.0.2}} 打败{{tr|Eater of Worlds}}或{{tr|Brain of Cthulhu}} / {{eicons|1.4.0.2|invert=y}} 破坏{{tr|the Shadow Orb or Crimson Heart}}，也可以立即生成。
+
+此外，每个夜晚都有 2% 几率会在{{tr|midnight}}时随机落下一颗{{tr|meteor}}，只要 {{eicons|1.4.0.2}} {{tr|the Eater of Worlds or Brain of Cthulhu}}已被打败过 / {{eicons|1.4.0.2|invert=y}} 世界中已经有{{tr|Shadow Orb or Crimson Heart}}被砸碎。这些条件都是在{{tr|dusk}}（晚上 7:30）时进行检查的。
+
+<div>{{anchor|block limit}} 一旦满足以上初始条件，随着时间推移会有多个{{tr|Meteor}}落到世界中。不过，一旦在 [[{{tr|Depth Meter}}|{{tr|0{{nbsp}}英尺}}]]以上已经有了一定数量的[[{{tr|Meteorite}}]]{{tr|ores}}，就不会再有新的{{tr|Meteorites}}落下。上限是：{{source code ref|v=1.4.0.5|method=Terraria.WorldGen.dropMeteor}}
+* [[{{tr|World size}}|{{tr|Small}}]]{{tr|worlds}}：{{#expr:floor((4200/4200)*400)+1}}<!-- calculation as done in the source code -->
+* {{tr|Medium worlds}}：{{#expr:floor((6400/4200)*400)+1}}
+* {{tr|Large worlds}}： {{#expr:floor((8400/4200)*400)+1}}</div>
+
+{{tr|meteors}}能撞击的地方也有一些约束：
+* 以[[{{tr|spawn point}}]]为中心的 16% 的世界范围（{{#expr:4200*0.16 round0}} {{note|paren=y|{{tr|small worlds}}}} / {{#expr:6400*0.16 round0}} {{note|paren=y|{{tr|medium worlds}}}} / {{#expr:8400*0.16 round0}} {{note|paren=y|{{tr|large worlds}}}} 格）受到保护，不会落下{{tr|meteors}}。
+* {{tr|Meteor}}不会落在 [[{{tr|NPC}}]] 或[[{{tr|chest}}]]周边 35 格之内。
+* 它们不会落在任何玩家的屏幕内。
+* 它们不会落在世界任何一边边缘的 50 格之内或世界顶部的 50 格之内。
+* {{eicons|1.4.0.1}} 它们不会落在[[{{tr|Dungeon}}]]或[[{{tr|Jungle Temple}}]]上。
+* 如果这些条件覆盖了整个世界（例如，大量箱子），不会有任何{{tr|meteor}}落下。
+
+为了找到有效的位置，游戏会搜索一块 30×30 格的区域，在其中寻找 600 块{{tr|solid blocks}}。[[{{tr|Sunplate block}}]]和[[{{tr|Cloud blocks}}]]计为 -100 {{tr|solid blocks}}；因此，[[{{tr|floating islands}}]]不太可能被{{tr|a meteor}}击中。[[{{tr|Liquid}}]]同样会降低计数值，因此{{tr|meteor}}落到[[{{tr|Jungle}}]]或[[{{tr|Ocean}}]]中的可能性也比较小。[[{{tr|sky bridge}}]]之类较薄的结构也不够致密，因而不能承受{{tr|meteor}}撞击。
+
+== 备注 ==
+* 在凌晨 4:30 到中午 12:00 之间多次满足{{tr|meteor}}的生成条件（{{eicons|1.4.0.2}} 打败{{tr|the Eater of Worlds or Brain of Cthulhu}} / {{eicons|1.4.0.2|invert=y}} 打破{{tr|a Shadow Orb or Crimson Heart}}）只会有几率导致一颗{{tr|meteor}}在{{tr|midnight}}落下；此{{tr|event}}并不叠加。但是，在半夜 12:00 到凌晨 4:30 之间反复满足条件依然可能生成多颗{{tr|meteors}}。
+* {{3DS version}}中，在{{tr|Meteorite biome}}中时，会播放音乐《[[{{tr|Music|link=y}}#The Underworld|The Underworld]]》而非《[[{{tr|Music|link=y}}#Eerie|Eerie]]》。
+{{float file box|width=9em|[[File:Ambience Meteor.gif]]|{{tr|Meteor}}[[{{tr|Ambient entities}}|在{{tr|background}}中的形象]]}}
+* 在{{eversions|1.4.0.1}}中，在撞击地在世界上生成之时之前不久，{{tr|the background}}中会显示一颗具有动画效果的下落的{{tr|meteor}}。这并不能准确表示{{tr|meteorite}}坠落地点在世界上的实际位置：可能{{tr|The meteor}}看起来是落到了世界右侧，但实际上却是落在左侧。
+** 仅当生成{{tr|meteorite biome}}的条件是在黄昏到晚上 11:40 之间满足的时候，才会显示这颗{{tr|meteor}}，这也包括每晚的随机生成几率。总是会在晚上 11:40 开始在背景中显示坠落。{{source code ref|v=1.4.0.5|method=Terraria.Main.HandleMeteorFall}}
+** 即使实际情况会阻止{{tr|meteorite}}落地（即，实际上不会生成新的{{tr|meteorite biome}}），但只要条件得以满足，就总是会显示{{tr|the background meteor}}。
+
+== 小贴士 ==
+{{for|防御{{tr|Meteor Heads}}的{{tr|tips}}|{{tr|Meteor Head}}#{{tr|Tips}}}}
+* 恰当的装备，比如高[[{{tr|mining speed}}]]的{{tr|tool}}（[[{{tr|pre-Hardmode}}]]能采挖{{tr|Meteorite}}的{{tr|pickaxes}}中最快的是[[{{tr|Bone Pickaxe}}]]；将其[[{{tr|reforge}}]]成{{tr|Light}}可以进一步提高速度）和对[[{{tr|Burning}}]]{{tr|debuff}}的防护（例如，带上[[{{tr|Obsidian Skull}}]]）将极大地提高{{tr|meteorite}}的开采效率。
+** [[{{tr|Mining Potion}}]]、{{eil|Ancient Chisel}}、和{{eil|Slice of Cake}}等等，可以进一步提高{{tr|mining speed}}。
+* {{eicons|1.3.0.1|invert=y}} 尖角状的{{tr|Meteorite blocks}}可以与之接触而不受{{tr|Burning}}伤害。每隔几行就留下一块{{tr|block}}并用[[{{tr|Hammer}}]]将其敲成尖角状就可以将其当作平台，这样就能向下挖到更深处。也可以挖到坠落地下方，站在其他类型的{{tr|block}}上采挖上面的{{tr|Meteorite}}。
+* 由于当世界上有[[#{{tr|block}}限制|太多]]位于 0 英尺以上的{{tr|Meteorite blocks}}时{{tr|meteorites}}就无法落下，因此可以通过在任意 0 英尺以上的位置放置足够数量的{{tr|Meteorite blocks}}来彻底防止{{tr|meteorite}}撞击。
+* 在地图上有一些地方可能是玩家希望避免被{{tr|meteorite}}撞击的，比如玩家建造的建筑物、[[{{tr|Ocean}}]]、[[{{tr|Underground Jungle}}]]的入口、[[{{tr|Underground Desert}}]]、[[{{tr|chasms}}]]、[[{{tr|Living Tree}}]]、{{eicons|1.4.0.1|invert=y}} [[{{tr|Dungeon}}]]、或[[{{tr|Temple}}]]。保护这些区域最简单的方法是在这些区域附近放下一个[[{{tr|chest}}]]。{{tr|The chest}}能保护 35 格半径内的所有东西。或者添加一些[[{{tr|cloud}}]]或[[{{tr|Sunplate block}}]]也能保护一块区域。
+* 如果在地表找不到{{tr|meteorite}}坠落地点，它可能落到了{{tr|Living Tree}}上、[[{{tr|The Corruption}}]]/[[{{tr|the Crimson}}]]的{{tr|chasm}}里、或者[[{{tr|Floating Island}}]]上。
+
+== 花絮 ==
+* 落到[[{{tr|The Corruption}}]]、[[{{tr|The Crimson}}]]、[[{{tr|Glowing Mushroom biome}}|{{tr|Glowing Mushroom Biomes}}]]和[[{{tr|Space}}]]中时，{{tr|meteorite biomes}}的音乐会被这些地方的主题音乐所覆盖。
+* 虽然[[{{tr|Character}}|{{tr|Player}}]]、[[{{tr|Ghost}}]]、和死亡屏幕可以阻止{{tr|meteor}}的落点生成在屏幕内，但是可以用{{tr|golf balls}}来移动镜头从而实际看到{{tr|meteor}}的生成。
+* 如果坠落地中被{{tr|Meteorites}}所取代的{{tr|block}}是涂了漆的，那么相应的{{tr|Meteorites}}就也会是涂了漆的。
+
+== 图库 ==
+<gallery>
+File:LivingTreeMeteorite.gif|{{tr|meteor}}有可能落到{{tr|Living Tree}}中，尽管其开口顶部有一个{{tr|chest}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|修正了如果{{tr|world}}的顶部完全被[[{{tr|platforms}}]]覆盖就会阻止{{tr|meteor}}生成的问题。}}
+{{history|Desktop 1.4.0.2|
+** {{tr|Meteors}}不再会在[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]被打败之前落下。
+** 再次击杀{{tr|Eater of Worlds/Brain of Cthulhu}}会增加下一个夜晚{{tr|Meteors}}坠落的几率。在此之前，要达到同样的效果需要打破[[{{tr|Shadow Orbs}}]]/[[{{tr|Crimson Heart}}]]。
+** {{tr|Meteors}}不再能用[[{{tr|explosives (class)}}]]来开采。}}
+{{history|Desktop 1.4.0.1|
+** 在夜晚{{tr|meteor}}坠落之前，背景中添加了{{tr|meteor}}坠落的动画。
+** {{tr|Meteors}}不再会落在[[{{tr|Dungeon}}]]或[[{{tr|Jungle Temple}}]]上。
+** 要成为{{tr|biome}}要求 75 [[{{tr|Meteorite}}]]而非 50。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Hardmode}}中[[{{tr|Lava Bat}}]]不再会在{{tr|Meteorite biomes}}中生成了。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS 1.04|音乐变为[[{{tr|Desktop}} 1.3.0.1]] 中加入的新的[[{{tr|The Underworld}}]]音乐。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{all versions}}
+
+{{language info|en=Meteorite (biome)}}

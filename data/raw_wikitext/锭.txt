@@ -1,0 +1,74 @@
+{{item infobox
+| imagealt = <p>[[File:Silver Bar.png|{{tr|Inventory icon}}|link=]] [[File:Adamantite Bar.png|{{tr|Inventory icon}}|link=]] [[File:Shroomite Bar.png|{{tr|Inventory icon}}|link=]]</p><p>[[File:Placed Bars.png|放置的{{tr|Bars}}|link=]]</p>
+| type = Crafting material/Furniture
+| placeable = yes
+| width = 1
+| height = 1
+| use = {{iteminfo|Copper Bar|useTime}}
+| stack = 9999 {{eicons|1.4.0.1|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}}
+| consumable = true
+| cargo = no
+| tags = drop
+| listcat = Bar items{{!}}
+}}
+{{about|{{tr|crafting material}}锭（'''Bars'''）| {{item|Bar|link=}}（'''Bar'''）{{tr|furniture}}{{tr|item}}|{{tr|Tables}}}}
+
+'''{{tr|Bars}}'''是一类[[{{tr|crafting material}}]]，一般用采挖来的[[{{tr|Ore}}]]在[[{{tr|Furnace}}]]处制作而来。大多数{{tr|ore}}相关的{{tr|items}}在制作时都需要先把原矿制作成{{tr|Bars}}。
+
+目前有 23 种不同的{{tr|Bars}}。其中大部分要想获得只需要有相应的{{tr|ores}}作为制作材料。[[{{tr|Hellstone Bar}}]]、[[{{tr|Spectre Bar}}]]、和[[{{tr|Shroomite Bar}}]]是例外，它们需要另外的辅助材料。[[{{tr|Hallowed Bar}}]]不是制作而来的，而是由[[{{tr|Mechanical Bosses}}]] 掉落。一些{{tr|Bars}}也能从[[{{tr|Crates}}]]中随机获得。
+
+== 类型 ==
+{{recipes
+|result = LIKE % Bar | stationnot = Iron Anvil/Lead Anvil/Heavy Work Bench and Ecto Mist | cate = force | expectedrows = 27
+|id = bars-info-table
+<!-- custom headers for crafting table. -->
+|header-result = {{tr|Bars}} </th><th data-sort-type="number"> 卖出
+|header-ingredients = 制作自
+<!-- custom result output -->
+|resulttemplate = :{{PAGENAME}}/result
+<!-- extra row aside from recipes query -->
+|extrow-1-col-result = {{item|Hallowed Bar}}</td><td style{{=}}"text-align: right;">{{iteminfo|Hallowed Bar|sell}}
+|extrow-1-col-ingredients = 掉落自[[{{tr|Mechanical Bosses}}]]
+|extrow-1-col-station = <center>{{na}}</center>
+}}
+
+== 备注 ==
+* {{tr|Bars}}可以像[[{{tr|furniture}}]]那样放置，占据一格空间，并可以彼此堆叠。当以这种方式放置时，它们可以像[[{{tr|platforms}}]]一样使用，可以站在上面和从上面落下，可以在顶部放置{{tr|furniture}}（[[{{tr|torches}}]]还可以插在侧面）。
+* {{tr|Bars}}无法在下方没有其他{{tr|block}}的情况下放置，因此，无法在没有其他{{tr|blocks}}辅助的情况下造出由{{tr|bars}}建成的{{tr|house}}。这种机制使得破坏{{tr|bars}}和砍倒[[{{tr|trees}}]]类似，破坏一叠{{tr|bars}}底部的那块同时也会破坏其上方的所有{{tr|bars}}。
+** 唯一能让放置的{{tr|bars}}“浮空”的办法可能是利用有{{tr|item}}的[[{{tr|chests}}]]无法被摧毁的事实。用{{tr|bars}}作为这种{{tr|chest}}底下的支撑意味着在{{tr|chest}}被清空之前它们都无法摧毁。这使得它们可以浮在半空中而无需任何支撑{{tr|blocks}}。
+
+== 花絮 ==
+* [[{{tr|Hallowed bar}}]]是唯一不需要{{tr|ore}}来制造的{{tr|bars}}。
+* 虽然放置时只消耗一块{{tr|bars}}，但{{tr|tile sprite}}看起来则是 3 或 4 块{{tr|bars}}堆放在一起的样子。
+* {{eicons|1.3.0.1}} 诸如{{tr|Copper Bars}}之类{{tr|pre-Hardmode}}的{{tr|bars}}的{{tr|textures}}在形状上和{{tr|Hardmode bars}}略有不同（注意观察{{tr|texture}}的右下角）。唯一的例外是{{tr|Chlorophyte Bar}}，其{{tr|texture}}的形状和{{tr|pre-Hardmode}}的{{tr|bars}}是一样的。
+* 旧的{{tr|bars}}{{tr|textures}}是{{iwlink|mc|Minecraft|{{作品|Minecraft|我的世界}}}}中各种[[mc:Metal|{{译名|ingot|锭}}]]的旧版纹理修改后的版本。例如，比较[[mc:File:Iron Ingot JE2 BE1.png|{{tr|Minecraft}}的旧版{{译名|iron ingot|铁锭}}]]和[[:File:Iron Bar (old).png|旧版的{{tr|Terraria}}{{tr|iron bar}}]]就可以看出来。
+
+== 历史 ==
+{{history|Desktop 1.4.4|所有{{tr|bars}}的{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|所有{{tr|bars}}的{{tr|Stack limit}}由 99 提升至 999。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Spectre Bar}}]]和[[{{tr|Luminite Bar}}]]。
+** 所有{{tr|bars}}都重新制作了纹理。}}
+{{history|Desktop 1.2|
+** 添加了[[{{tr|Tin Bar}}]]、[[{{tr|Lead Bar}}]]、[[{{tr|Tungsten Bar}}]]、[[{{tr|Platinum Bar}}]]、[[{{tr|Crimtane Bar}}]]、[[{{tr|Palladium Bar}}]]、[[{{tr|Orichalcum Bar}}]]、[[{{tr|Titanium Bar}}]]、[[{{tr|Hallowed Bar}}]]、[[{{tr|Chlorophyte Bar}}]]、和[[{{tr|Shroomite Bar}}]]。
+** {{tr|Bars}}现在是可放置的了。}}
+{{history|Desktop 1.1|引入了[[{{tr|Cobalt Bar}}]]、[[{{tr|Mythril Bar}}]]、和[[{{tr|Adamantite Bar}}]]。|nocat=1}}<!-- only introducing items, no changes -->
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|进行了与 PS4 的 1.0.750.0 更新一样的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 引入了{{tr|Spectre Bar}}和{{tr|Luminite Bar}}。
+** 所有{{tr|bars}}都重新制作了纹理。}}
+{{history|Console 1.02|
+** 添加了{{tr|Tin Bar}}、{{tr|Lead Bar}}、{{tr|Tungsten Bar}}、{{tr|Platinum Bar}}、{{tr|Crimtane Bar}}、{{tr|Palladium Bar}}、{{tr|Orichalcum Bar}}、{{tr|Titanium Bar}}、{{tr|Hallowed Bar}}、{{tr|Chlorophyte Bar}}、和{{tr|Shroomite Bar}}。
+** {{tr|Bars}}现在是可放置的了。}}
+{{history|Console-Release|引入了{{tr|basic bars}}，以及{{tr|Cobalt Bar}}、{{tr|Mythril Bar}}、和{{tr|Adamantite Bar}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-ore = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Bars}}

@@ -1,0 +1,73 @@
+{{legacy nav tab}}
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2535
+| tags = Minion / hardmode
+| idprojectile = 389, 387, 388
+| sound1 = Item 12.wav
+| soundcaption1 = {{gameText|ProjectileName.MiniRetinaLaser}}
+}}
+[[File:Optic Staff (demo).gif|thumb|370x370px|使用中的{{tr|The Optic Staff}}。|alt=yes]]
+[[File:Max Twins.jpg|thumb|right|最大规模的{{tr|The Twins}}军队（共11对，即22个{{tr|minions}}）]]
+
+'''{{tr|Optic Staff}}'''是[[{{tr|Hardmode}}]]的[[{{tr|summon weapon}}]]，可召唤二阶段的[[{{tr|the twins}}]]作为[[{{tr|minion}}]]。这对名为{{tr|Spazmamini and Retanimini}}的{{tr|minion}}会飞向[[{{tr|enemies}}]]，分别以冲刺和发射激光的方式攻击{{tr|enemy}}。每对{{tr|twins}}{{tr|minion}}仅占用一个[[{{tr|minion slot}}]]。
+
+其最佳[[{{tr|modifiers}}]]是'''{{tr|Mythical}}'''， '''{{tr|Furious}}'''，'''{{tr|Godly}}'''。取整使得这些{{tr|modifiers}}提供和{{tr|Ruthless modifier}}相同的伤害增幅。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Optic Staff|expectedrows=1}}
+
+== 备注 ==
+* 由于{{tr|the twins}}是成对的，玩家可以达到 22 的最大{{tr|minion}}容量（对于其它{{tr|minion}}，最大容量是 11）。
+* {{tr|The Spazmamini}}的冲刺造成{{tr|weapon}}面板伤害（{{iteminfo|Optic Staff|damage}} {{tr|base damage}}）而{{tr|Retanimini}}的激光造成 115% 面板伤害（{{#expr:floor({{iteminfo|Optic Staff|damage}}*1.15)}} {{tr|base damage}}）。
+* {{tr|The Retanimini}}平均每 {{duration|45 ticks}}发射一次{{tr|lasers}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t={{tr|The Retanimini}}的 <code>ai[1]</code> 每{{tr|tick}}增加 1 到 3 。因此其平均每{{tr|tick}}增加 2。其阈值为 90 所以平均每两次攻击间的冷却为 90/2=45 {{tr|ticks}}。}}
+* {{tr|The Spazmamini}}平均每 {{duration|40 ticks}}对{{tr|enemy}}冲刺一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=一次冲刺之后，{{tr|the Spazmamini}}的 <code>ai[1]</code> 被设为 1 然后每次更新增加 1，直到超过阈值40。在此期间{{tr|Spazmamini}}具有 1 extraUpdates，所以它的 <code>ai[1]</code> 每{{tr|tick}}增加 2 ，直到超过阈值 40 时，即 40/2=20 {{tr|ticks}}。在此之后，它的eateaUpdates被移除且 <code>ai[1]</code> 重设为 1 ，接着每{{tr|tick}}随机增加 1 到 3 中的整数，这意味着它平均每{{tr|tick}}增加 2。此阈值也为 40，因此超过此阈值的平均时间是 40/2=20 {{tr|ticks}}。一旦上述所有完成后，{{tr|Spazmamini}}可以再次冲刺，意味着两次冲刺之间的平均间隔为 20+20=40 {{tr|ticks}}。}}
+* {{tr|Spazmamini}}击中{{tr|enemy}}会造成 12 嘀嗒[[{{tr|static invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The Twins minions}}最远可锁定距离 125 格的{{tr|enemy}}。{{source code ref|name=aistyle66|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于<code>aiStyle == 66</code>代码段。}}
+** 但若他们距离{{tr|player}}超过 75 格时，他们将会返回{{tr|player}}身侧，这会中止他们的{{tr|attack}}。
+** {{tr|The Spazmamini}}只有在其与目标距离少于 31.25 格时才会冲刺。
+* {{tr|The Retanimini}}的激光以 {{mph|24 pixels}} 的速度行进，发出光芒，且如果没有击中{{tr|enemy}}或{{tr|solid block}}，它会在{{duration|100 ticks}}后消失。<ref name="aistyle66"/>
+
+== 小贴士 ==
+* 不同于大多数飞行{{tr|minion}}，{{tr|the twins}}不能穿过{{tr|block}}，除非{{tr|player}}移动到范围之外。
+* {{tr|the twins}}适用于处理密集的敌群，如[[{{tr|Solar Eclipse}}]]、[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]。
+
+== 花絮 ==
+* 与原 Boss 不同，两个{{tr|minions}}不由卷须互相连接。更进一步，{{tr|Spazmamini}}也不会像{{tr|Spazmatism}}那样喷出{{tr|Cursed Flames}}。
+* 通过提高{{tr|projectile}}上限到最高，再把它降下来，有可能使{{tr|Retinamini}}和{{tr|Spazmamini}}的数量不对应。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|
+** {{tr|Base damage}}从 21 提升至 24 （{{tr|Spazmamini}}的{{tr|damage}}是{{tr|base damage}}的 100%）。
+** {{tr|Retinamini}}的{{tr|damage}}缩放从 1.25 倍减少至 1.15 倍{{tr|base damage}}（由于基础伤害增加了所以最终的伤害仍然轻微增加了）}}
+{{history|Desktop 1.4.4|
+** {{tr|Retinamini}}的激光不再穿透了。因此它们不再受{{tr|immune frames}}影响了。
+** {{tr|Retinamini}}的{{tr|damage}}从 24 提升至 26。
+** {{tr|Spazmatism}}的{{tr|damage}}从 30 减少至 21。
+** {{tr|Spazmatism}}现在在追逐目标时有了更弹性的冲刺范围。
+** 双子魔眼召唤物现在会更快地返回玩家身边。}}
+{{history|Desktop 1.4.1.2|
+** 由{{tr|Spazmamini}}和{{tr|Retanimini}}的攻击造成的{{tr|Enemy immune frames}}从 16 减少至 12。
+** 增加了{{tr|Spazmamini}}在追逐敌怪时的移动速度。}}
+{{history|Desktop 1.4.1|现在使用独立无敌计时器。}}
+{{history|Desktop 1.2.4.1|
+** 现在消耗 10 {{tr|mana}}。
+** 修复生成不成对或再次生成失败的漏洞。}}
+{{history|Desktop 1.2.4|引入。}}
+{{history|Console 1.07|引入。消耗 10 {{tr|mana}}。}}
+{{history|Switch 1.0.711.6|引入。}}
+{{history|Mobile 1.2.11212|引入。消耗 10 {{tr|mana}}。}}
+
+== 参考 == 
+{{reflist}}
+
+{{Hallowed}}
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{language info|en=Optic Staff}}

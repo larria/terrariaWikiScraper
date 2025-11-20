@@ -1,0 +1,43 @@
+{{item infobox
+| auto = 4391
+| type = Block
+}}
+
+[[File:Thin ice patch.png|thumb|一大块薄冰。]]
+{{float file|[[File:Thin Ice In-Game.png|thumb|水上的一层薄冰。]]}}
+
+'''{{tr|Thin Ice}}'''是一种可以在[[{{tr|Snow biome}}]]和[[{{tr|Ice biome}}]]中找到的[[{{tr|block}}]]。 它可以以两种形式自然生成：要么是一{{tr|pool}}[[{{tr|water}}]]上的一层薄冰，要么是{{tr|underground}}一大块满是薄冰的区域。
+
+和[[{{tr|Ice Block}}]]相似，{{tr|Thin Ice}}会减少摩擦力，玩家能在上面滑行。当玩家撞击它且达到某一速度时，{{tr|Thin Ice}}就会破裂，这一情况最常发生在玩家从高处下落时。掉在{{tr|Thin Ice}}上本身不会造成[[{{tr|fall damage}}]]，但它不会减慢玩家的速度，因此{{tr|fall damage}}会持续累积，直到玩家落在其它方块上（这一点不像[[{{tr|Cobweb}}]]，它会重置{{tr|fall damage}})。使用[[{{tr|Ice Skates}}]]或者任意它的升级[[{{tr|accessories}}]]，就能在{{tr|Thin Ice}}上降落，而不会使它破裂并摔下去。(这也会使玩家可能在薄冰上受到{{tr|fall damage}})。
+
+当{{tr|Thin Ice}}被撞碎或被[[{{tr|pickaxe}}]], [[{{tr|drill}}]]或[[{{tr|Explosives (class)}}|{{tr|explosion}}]]打碎，它就被永久地摧毁了，什么也不会掉落。在{{eversions|1.4.0.1|invert=y}}中，{{tr|Thin Ice}}无法以任何方法被拾取，合成或移动。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Thin Ice|expectedrows=1}}
+
+== {{tr|Notes}} ==
+* 在水中的薄冰碎裂并不会导致水位的上涨或者下降。
+* 薄冰仅能由上方开始破裂，所以试图水平或从底部冲过薄冰是不可能的。用[[{{tr|Hooks}}|{{tr|grappling hook}}]]从上方勾住{{tr|Thin Ice block}}会让玩家撞碎它，但从其它方向勾住{{tr|thin ice}}是安全的。
+* 使用[[{{tr|Gravitation Potion}}]]不会从下方撞碎{{tr|thin ice}}，但是依然可以从上方撞碎它。因此可以看出薄冰仅能从上方撞碎。
+* 减小{{tr|player}}接触薄冰时的初速度可以防止薄冰破裂，例如使用[[{{tr|Featherfall Potion}}]]、[[{{tr|Rocket Boots}}]]及其衍生品、穿过水层减速亦或是蜘蛛网。
+* {{eicons|1.3.0.1|invert=y|3ds=n}}尽管不在水中，用钩爪抓住薄冰底部会导致{{tr|player}}溺死。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|现在可以被制作。}}
+{{history|Desktop 1.3.0.1|
+** 现在会大块出现。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.0.2|箱子、生命水晶以及雕像不再会生成在{{tr|Thin ice}}上。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-main = yes
+| show-blocks = yes
+}}
+
+{{language info|en=Thin Ice}}

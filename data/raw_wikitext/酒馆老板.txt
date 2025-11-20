@@ -1,0 +1,299 @@
+{{exclusive|1.3.4}}
+{{infobox wrapper|
+{{npc infobox|tabs=y
+| auto = 550
+| idprojectile = 669
+| type = NPC
+| environment = Valid house
+| damage ={{modes|24|36|42}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ItemName.Ale}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| Ale Tosser|1|16.67%
+| imageother = Map Icon Tavernkeep.png
+| imageothercaption = Map Icon
+}}
+{{npc infobox
+| auto = 579
+| type = NPC
+}}
+}}
+[[File:Unconscious Man NPC.png|thumb|right|[[{{tr|forest}}]]中的{{tr|Unconscious Man}}。]]
+
+'''{{tr|Tavernkeep}}'''是个独特的商贩 [[{{tr|NPC}}]]，其大多数物品只接受[[{{tr|Defender Medal}}]]作为货币，而非[[{{tr|coins}}]]。他只在玩家打败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]之后才能见到。一旦此条件满足，他会作为'''{{tr|Unconscious Man}}'''生成在世界的任何[[{{tr|layer}}]]，和处于此状态的他对话会使其醒来。如果{{tr|Unconscious Man}}被杀死，他之后仍能重生；如果{{tr|Tavernkeep NPC}} 被杀死，只要有空余[[{{tr|house}}]]，他会在一段时间后再次入住。
+
+[[{{tr|Summon weapons}}#{{tr|Tavernkeep's sentries}}|{{tr|Tavernkeep's sentry}}{{tr|summon weapons}}]]与[[{{tr|Old One's Army}}]][[{{tr|event}}]]有关，一开始，它们只能在此{{tr|event}}中使用。只有在{{tr|event}}成功完成后才能在别处使用。{{tr|Tavernkeep}}的每个{{tr|sentry}}{{tr|summon weapons}}都有三个级别：{{tr|Rod}}、{{tr|Cane}}、和{{tr|Staff}}；{{tr|the Staff}}最贵也最强。他所售卖的{{tr|The armor}}还将每个{{tr|sentry}}类型与一个特定类别关联在一起：{{tr|Ballista}}是{{tr|melee}}（坦克）、{{tr|Flameburst}}是[[{{tr|magic}}]]、{{tr|Explosive Trap}}是[[{{tr|ranged}}]]、而{{tr|Lightning Aura}}是“快速{{tr|melee}}”（针对[[{{tr|summon}}]]）。
+
+当玩家首次选择“{{gameText|UI.BartenderHelp}}”选项时，{{tr|Tavernkeep}}会免费给{{tr|player}} 10 个{{tr|Defender Medals}}。在此之后，所有{{tr|Defender Medals}}都必须通过至少击败数波{{tr|Old One's Army}}来获得。
+
+受到威胁时，他会向{{tr|enemies}}投掷一杯杯[[{{tr|Ale}}]]，在游戏初期会造成 24 / {{expert|36}} / {{master|42}} {{tr|damage}}。随着玩家的进程推进，他会得到[[{{tr|NPCs}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>他死亡时可能会掉落[[{{tr|Ale Tosser}}]]，让玩家也能进行相同的攻击。
+
+{{Lifeform Analyzer note|The Unconscious Man}}
+
+== 出售物品 ==
+{{flexstart}}
+'''注：'''虽然所列的前六个物品（即用[[{{tr|Coins}}]]购买的那些）的价格可以通过装备[[{{tr|Discount Card}}]]或[[{{tr|Greedy Ring}}]]来降低，亦受 {{tr|NPC}} 的[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|happiness level}}]]影响，但其他货品则总是要花费固定数量的[[{{tr|Defender Medal}}]]。
+{{shop|icons=y|nonote=y
+|{{shop row|Ale}}
+|{{shop row|Eternia Crystal|打败任意[[{{tr|mechanical boss}}]] 之前。}}
+|{{shop row|Eternia Crystal|value={{gc|1}}|打败了至少一个[[{{tr|mechanical boss}}]] 后且又尚未打败[[{{tr|Golem}}]]。}}
+|{{shop row|Eternia Crystal|value={{gc|4}}|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Eternia Crystal Stand}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中、足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]、且尚未打败[[{{tr|Golem}}]]。}}
+|{{shop row|Defender's Forge}}
+|{{shop row|Flameburst Rod}}
+|{{shop row|Flameburst Cane|打败至少一个[[{{tr|Mechanical boss}}]] 之后。}}
+|{{shop row|Flameburst Staff|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Ballista Rod}}
+|{{shop row|Ballista Cane|打败至少一个[[{{tr|Mechanical boss}}]] 之后。}}
+|{{shop row|Ballista Staff|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Explosive Trap Rod}}
+|{{shop row|Explosive Trap Cane|打败至少一个[[{{tr|Mechanical boss}}]] 之后。}}
+|{{shop row|Explosive Trap Staff|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Lightning Aura Rod}}
+|{{shop row|Lightning Aura Cane|打败至少一个[[{{tr|Mechanical boss}}]] 之后。}}
+|{{shop row|Lightning Aura Staff|打败[[{{tr|Golem}}]]后。}}
+}}
+{{shop|icons=y|nonote=y
+|{{shop row|Monk's Bushy Brow Bald Cap|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Monk's Shirt|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Monk's Pants|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Squire's Great Helm|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Squire's Plating|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Squire's Greaves|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Huntress's Wig|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Huntress's Jerkin|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Huntress's Pants|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Apprentice's Hat|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Apprentice's Robe|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Apprentice's Trousers|打败至少一个[[{{tr|mechanical boss}}]] 后。}}
+|{{shop row|Valhalla Knight's Helm|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Valhalla Knight's Breastplate|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Valhalla Knight's Greaves|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Dark Artist's Hat|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Dark Artist's Robes|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Dark Artist's Leggings|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Red Riding Hood|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Red Riding Dress|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Red Riding Leggings|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Shinobi Infiltrator's Helmet|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Shinobi Infiltrator's Torso|打败[[{{tr|Golem}}]]后。}}
+|{{shop row|Shinobi Infiltrator's Pants|打败[[{{tr|Golem}}]]后。}}
+}}
+{{flexend}}
+
+== {{tr|Living preferences}} ==
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{NPC shimmered form|Tavernkeep|male}}
+{{-}}
+
+== 名称 ==
+{{npc names}}
+
+== {{tr|Eternia Crystal}} ==
+这些话语会在选择“{{gameText|UI.BartenderHelp}}”选项时出现。{{source code ref|v=1.4.4.9|method=Terraria.Lang.BartenderHelpText}}
+
+{{collapse top}}
+'''当{{tr|character}}首次在{{tr|world}}内选择此选项；给予 10 个[[{{tr|Defender Medal}}]]：'''
+* “{{gameText|BartenderSpecialText.FirstHelp}}”
+
+'''选择选项时，以下话语会按顺序循环出现：'''
+* “{{gameText|BartenderHelpText.Help_1}}”
+* “{{gameText|BartenderHelpText.Help_2}}”
+* “{{gameText|BartenderHelpText.Help_3}}”
+* “{{gameText|BartenderHelpText.Help_4}}”
+* “{{gameText|BartenderHelpText.Help_5}}”
+* “{{gameText|BartenderHelpText.Help_6}}”
+* “{{gameText|BartenderHelpText.Help_7}}”
+* “{{gameText|BartenderHelpText.Help_8}}”
+* “{{gameText|BartenderHelpText.Help_9}}”
+* “{{gameText|BartenderHelpText.Help_10}}”
+* “{{gameText|BartenderHelpText.Help_11}}”
+{{collapse bottom}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|BartenderChatter.Chatter_1}}”
+* “{{gameText|BartenderChatter.Chatter_2}}”
+* “{{gameText|BartenderChatter.Chatter_3}}”
+* “{{gameText|BartenderChatter.Chatter_4}}”
+* “{{gameText|BartenderChatter.Chatter_5}}”
+* “{{gameText|BartenderChatter.Chatter_6}}”
+* “{{gameText|BartenderChatter.Chatter_7}}”
+* “{{gameText|BartenderChatter.Chatter_8}}”
+
+'''无家可归时：'''
+* “{{gameText|BartenderChatter.Chatter_19}}”
+
+'''在{{tr|night}}：'''
+* “{{gameText|BartenderChatter.Chatter_14}}”
+* “{{gameText|BartenderChatter.Chatter_15}}”
+
+'''[[{{tr|Demolitionist}}]]存在时：'''
+* “{{gameText|BartenderChatter.Chatter_11|x_Demolitionist=&lt;{{tr|Demolitionist}}的名称&gt;}}”
+
+'''[[{{tr|Goblin Tinkerer}}]]存在时：'''
+* “{{gameText|BartenderChatter.Chatter_12|x_GoblinTinkerer=&lt;{{tr|Goblin Tinkerer}}的名称&gt;}}”（指[[{{tr|Old One's Army}}]]的基本{{tr|enemy}}是[[{{tr|Etherian Goblin}}|{{tr|Goblin}}]]）
+
+'''[[{{tr|Steampunker}}]]存在时：'''
+* “{{gameText|BartenderChatter.Chatter_10|x_Steampunker=&lt;{{tr|Steampunker}}的名称&gt;}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|BartenderChatter.Chatter_9|x_Dryad=&lt;{{tr|Dryad}}的名称&gt;}}”（指的是{{tr|Tavernkeep}}和[[{{tr|Dryad}}]]都和[[{{tr|Old One's Army}}|{{tr|Etheria}}]]相关联。）
+
+: '''在白天，当站在{{tr|Dryad}}面前时：'''
+:* “{{gameText|BartenderChatter.Chatter_13}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|BartenderChatter.Chatter_16}}”
+
+'''[[{{tr|Hardmode}}]]期间：'''
+* “{{gameText|BartenderChatter.Chatter_18}}”
+
+'''打败[[{{tr|Moon Lord}}]]后：'''
+* “{{gameText|BartenderChatter.Chatter_17}}”
+
+'''[[{{tr|Windy Day}}]]期间：'''
+* “{{gameText|BartenderSpecialText.Windy1}}”
+* “{{gameText|BartenderSpecialText.Windy2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|BartenderSpecialText.Rain1}}”
+* “{{gameText|BartenderSpecialText.Rain2}}”
+
+'''[[{{tr|Storm}}]]期间：'''
+* “{{gameText|BartenderSpecialText.Storm1}}”
+* “{{gameText|BartenderSpecialText.Storm2}}”
+
+'''在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|BartenderSpecialText.Graveyard1}}”
+* “{{gameText|BartenderSpecialText.Graveyard2}}”
+
+'''[[{{tr|Party}}]]期间：'''
+* “{{gameText|BartenderSpecialText.Party_1}}”
+* “{{gameText|BartenderSpecialText.Party_2}}”
+
+'''基于[[{{tr|Old One's Army}}]]：'''
+*“{{gameText|BartenderSpecialText.BeforeDD2Tier1}}”（1 级之前）
+*“{{gameText|BartenderSpecialText.AfterDD2Tier1}}”（1 级之后）
+*“{{gameText|BartenderSpecialText.AfterDD2Tier2}}”（2 级之后）
+*“{{gameText|BartenderSpecialText.AfterDD2Tier3}}”（3 级之后）
+
+'''醒来时：'''
+* “{{gameText|BartenderSpecialText.FirstMeeting}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_DD2Bartender.HateCrowded}}”
+
+'''在[[{{tr|the Hallow}}]]中时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.LikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在[[{{tr|Snow biome}}]]中时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.DislikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Demolitionist}}]]时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.LoveNPC|x_NPCName=&lt;{{tr|Demolitionist}}的名称&gt;}}”
+
+'''靠近[[{{tr|Goblin Tinkerer}}]]时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.LikeNPC|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名称&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名称&gt;}}”
+
+'''靠近[[{{tr|Guide}}]]时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.DislikeNPC|x_NPCName=&lt;{{tr|Guide}}的名称&gt;}}”
+
+'''靠近[[{{tr|Dye Trader}}]]时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.HateNPC|x_NPCName=&lt;{{tr|Dye Trader}}的名称&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_DD2Bartender.Content}}”
+{{collapse bottom}}
+
+== 备注 ==
+* 虽然他的商店在{{tr|Golem}}被打败后会填满物品，但依然可以使用快速出售/快速丢弃快捷键卖东西给他。不过，此时卖掉的任何东西都无法“买回”。
+* 在[[{{tr|Corrupt}}]]{{tr|worlds}}中击败[[{{tr|Brain of Cthulhu}}]]也会允许{{tr|Unconscious Man}}出现，反之亦然，不过若不使用来自其他{{tr|world}}的物品，这只能在[[{{tr|Hardmode}}]]达成。
+* 拿着[[{{tr|Ale}}]]靠近{{tr|Tavernkeep}}并站在他身边会让他也拿起自己的{{tr|Ale}}杯。
+** 当他拿着{{tr|Ale}}时，玩家继续拿着{{tr|Ale}}向他走就能和他干杯，玻璃杯相碰时会制造出粒子略微飞溅的效果。这个效果纯粹是为了好看，没有任何实际功效。
+
+== 小贴士 ==
+* 用[[{{tr|Hunter Potion}}]]有助于找到{{tr|the Unconscious Man}}，因为它能高亮显示其身体。
+* 在打败任何[[{{tr|Mechanical Bosses}}]]之前先囤积{{tr|Eternia Crystals}}从长远来看是个省钱的好办法，因为在打败{{tr|Mechanical Boss}} 后{{tr|Eternia Crystals}}会涨价。
+*每一对{{tr|armor set}}（基础的和进阶的）强化某一种{{tr|sentry}}类型及一种玩法种类。他们还全部能提高{{tr|minion}}伤害和玩家在不动用{{tr|Etherian Mana}}能使用的{{tr|sentries}}的数量。
+** {{tr|Squire armor and Valhalla Knight armor}}对应{{tr|Ballista}}和纯[[{{tr|melee}}]]力量，还有{{tr|regeneration}}和最高的{{tr|defense}}。
+** {{tr|Apprentice armor and Dark Artist armor}}对应{{tr|Flameburst}}并且提供[[{{tr|magic}}]]{{tr|bonus}}。
+** {{tr|Huntress armor and Red Riding armor}}对应{{tr|Explosive Traps}}和[[{{tr|range}}]]。
+** {{tr|Monk armor and Shinobi Infiltrator armor}}对应{{tr|Lightning Aura}}，并可能是为了[[{{tr|Summoning weapons}}|召唤师]]而提供“迅捷{{tr|melee}}”的安排，同时用第二高的{{tr|defense}}与{{tr|speed bonuses}}替代了{{tr|regeneration}}。
+* 在升级{{tr|event}}之前囤积足够{{tr|Defender Medals}}来买齐下一级别的全部四种召唤武器可能会是个好主意（打败任意{{tr|mechanical boss}} 前囤积 60 个{{tr|Defender Medals}}，打败{{tr|Golem}}前囤积 240 个）。
+
+== 花絮 ==
+* {{tr|The Tavernkeep}}是个来自于《''[[dd2:|地牢守护者2（Dungeon Defenders 2，缩写为DD2）]]''》的人物。他的很多话语也引用了此游戏。
+** 他的话语“{{gameText|BartenderChatter.Chatter_4}}”参考了在《{{tr|Dungeon Defenders 2}}》中玩家没和他交谈时他就只会擦桌子的事实。
+** 他的话语“{{gameText|BartenderChatter.Chatter_17}}”指的是《{{tr|Dungeon Defenders 2}}》中的 {{iwlink|dd2|Abyss Lord|Abyss Lord（深渊领主）}}和[[{{tr|Moon Lord}}]]共用的类{{tr|Cthulhu}}外观。
+** 他的两句话语：“{{gameText|BartenderChatter.Chatter_10|x_Steampunker=&lt;{{tr|Steampunker}}的名称&gt;}}”和“{{gameText|BartenderChatter.Chatter_18}}”分别提到了《{{tr|Dungeon Defenders 2}}》中的英雄 {{iwlink|dd2|Gun Witch|Gun Witch（枪械女巫）}}和 {{iwlink|dd2|Lavamancer|Lavamancer（熔岩术士）}}。
+** 他的两句话语：“{{gameText|BartenderChatter.Chatter_9|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”和“{{gameText|BartenderChatter.Chatter_13}}”引用了{{tr|the Dryad}}[[dd2:Dryad|同样出现在《地牢守护者2》中]]的事实。
+** 他的话语“{{gameText|BartenderChatter.Chatter_8}}”似乎指的是《{{tr|Dungeon Defenders 2}}》中一种叫作“ramster”的生物。在游戏的 v2.0 更新说明中有写到“有些人称这些高贵的生物为 meburs。”<ref>[https://steamcommunity.com/app/236110/discussions/0/626329186743364640/ steamcommunity.com → Dungeon Defenders 2 → Discussions → thread: Current Patch Notes] {{date|date=Jul 27, 2017}}</ref>
+* {{tr|The Tavernkeep}}的名称可能为 Moe、Paddy、或 Ted，这可能是参考美国动画情景喜剧{{维基百科|b=y|The Simpsons|t=辛普森一家}}中的调酒师 Moe Szyslak、美国情景喜剧{{维基百科|b=y|It's Always Sunny in Philadelphia|t=酒吧五杰}}中的爱尔兰酒吧“Paddy's Pub”、以及在美国情景喜剧{{维基百科|b=y|Cheers|t=欢乐酒店}}中扮演调酒师 Sam Malone 的演员 {{维基百科|Ted Danson}}。
+* {{tr|Tavernkeep}}的名称之一 Javahawk 是来自于 Joshua "Javahawk" Javaheri，他是开发并发行《{{tr|Dungeon Defenders 2}}》的 Chromatic Games（前身为 Trendy Entertainment）的工作室总监。
+* 在 [[1.4.0.1]] 之前，{{tr|the Tavernkeep}}并没有特别的[[{{tr|Party}}]]话语。作为占位符，游戏文件中有一条从不会在游戏内显示的话语：“I really need some birthday text, Yorai!”（Yorai，我很需要生日文本！）（这指的是''{{tr|Terraria}}''的开发者之一 [[{{tr|Yoraiz0r}}]]）。{{source code ref|old=y|v=1.3.5.3|method=Terraria.NPC.GetBirthdayDialog|t=话语本身位于 <code>Terraria.Localization.Content.en-US.Town.json</code>。}}{{note|small=y|paren=y|译注：此话语的游戏内置中文翻译为“我真的需要一些生日祝福，尤莱！”}}
+* 他的话语“{{gameText|BartenderChatter.Chatter_15}}”引用了美国饶舌歌手兼歌曲作者 {{维基百科|Juicy J}} 的歌《Slob on My Knob》，这首歌在互联网模因（meme）中经常用到。
+* {{tr|Golem}}被打败后他会出售 40 个{{tr|items}}，与[[{{tr|Golfer}}]]（[[{{tr|golf}}]]得分为 2000 或更高，在足够快乐时）并列为出售物品最多的 {{tr|NPC}}。
+** 但是，在任意时刻，没有某些先决条件的情况下，出售物品最多的 {{tr|NPC}} 是[[{{tr|Santa Claus}}]]，有 39 个{{tr|items}}。
+* 虽然此 [[{{tr|NPC}}]] 是{{tr|Tavernkeep}}，但是他却不喜欢拥挤的地方。
+* {{tr|Tavernkeep}}可能的名称之一是 Barkeep，可能指的是 [https://tvtropes.org/pmwiki/pmwiki.php/Main/EveryoneCallsHimBarkeep Everyone Calls Him "Barkeep"（每个人都叫他“酒吧老板”）]这个桥段，以及此桥段的一个例子：[https://tvtropes.org/pmwiki/pmwiki.php/Main/HisNameReallyIsBarkeep His Name Really Is "Barkeep"（他的名称真的是“Barkeep”）]。
+* 他关于{{tr|the Guide}}具有黑暗天性的评论指的是他是{{tr|the Wall of Flesh}}的来源，是召唤它的关键。
+* {{tr|Tavernkeep}}和[[{{tr|Golfer}}]]都可能叫 William 这个名称。
+* 在 [[1.4.0.1]] 更新之前，{{tr|Tavernkeep}}所出售的{{tr|the rods and canes}}是仅有的名称中没有“{{tr|Staff}}”字样的召唤武器。1.4.0.1 中引入的[[{{tr|Terraprisma}}]]和[[{{tr|whips}}]]则也具有此特质。
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Tavern|Tavern（酒馆）}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在最初对话时会提供 10 个{{tr|Defender Medal}}。
+** {{tr|Tier 2}}{{tr|Armor}}部件的价格由 25 降低至 15 {{tr|Defender Medals}}。
+** {{tr|Tier 3}}{{tr|Armor}}部件的价格由 75 降低至 50 {{tr|Defender Medals}}。
+** {{tr|Tier 2}}{{tr|Sentries}}的价格由 25 降低至 15 {{tr|Defender Medals}}。
+** {{tr|Tier 3}}{{tr|Sentries}}的价格由 100 降低至 60 {{tr|Defender Medals}}。
+** {{tr|Defender's Forge}}的价格由 75 降低至 50 {{tr|Defender Medals}}。}}
+{{history|Desktop 1.4.0.5|当他的独有商品装满商店时就不再出售[[{{tr|Pylons}}]]。}}
+{{history|Desktop 1.3.4.2|
+** 修正了缺失的坐姿外观。
+** 修复了将{{tr|Eternia Crystal}}称为“Elder Crystal”（上古水晶）的问题。
+** 现在会出现在[[{{tr|Lifeform Analyzer}}]]上。
+** 不再会意外地在[[{{tr|water}}]]中生成。}}
+{{history|Desktop 1.3.4.1|
+** 修复了[[{{tr|King Statue}}]]对其不起作用的问题。
+** 提高了{{tr|Unconscious Man}}的生成几率。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.18|修正了{{tr|Tavernkeep}}被杀死后可能不会重生的问题。}}
+{{history|Console 1.17|introduced=y|随到{{tr|Desktop}} 1.3.4.2 为止的更改引入。}}
+{{history|Switch 1.0.1096.2|introduced=y|随到{{tr|Desktop}} 1.3.4.2 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|随{{tr|Desktop}} 1.3.4.2 至 1.4.0.5 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Tavernkeep}}

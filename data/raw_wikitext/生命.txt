@@ -1,0 +1,150 @@
+{| class="terraria lined" style="float:right; margin-left:0.5em; font-size:var(--font-size-s); line-height:var(--line-height-s);"<!-- font-size and line-height styles to imitate <small> styling -->
+|+ {{tr|Player health}}
+|-
+| '''新玩家：'''{{note|block=y|paren=y|100 {{tr|health}}}} || {{hp|100}}
+|-
+| '''使用 1 个[[{{tr|Life Crystal}}]]后：'''{{note|block=y|paren=y|120 {{tr|health}}}} || {{hp|120}}
+|-
+| '''使用 15 个{{tr|Life Crystals}}后：'''{{note|block=y|paren=y|400 {{tr|health}}}} || {{hp|400}}
+|-
+| '''使用 1 个[[{{tr|Life Fruit}}]]后：'''{{note|block=y|paren=y|405 {{tr|health}}}} || {{hp|405}}
+|-
+| '''使用 20 个{{tr|Life Fruits}}后：'''{{note|block=y|paren=y|500 {{tr|health}}}} || {{hp|500}}
+|}
+{{about|可玩{{tr|character}}的{{tr|the health}}机制|{{tr|bosses}} 的{{tr|the health bar}}|{{tr|Boss health bar}}}}
+{{see also|{{tr|Mana}}}}
+
+'''{{tr|Health}}'''是{{tr|character}}的生命计数，由屏幕右上方的心形图标条表示。显示出来的每个红色心代表 20 {{tr|health}}，每个[[{{tr|Life Fruit}}|金色心]]代表 25 <!-- NOT 5 ! Remember that the gold heart REPLACES the red heart. 20 health (from the red heart) + 5 health (from the gold heart) = 25 HEALTH. -->{{tr|health}}。
+
+受到[[{{tr|damage}}]]会导致{{tr|health}}下降，通过{{tr|health bar}}由右向左褪色来表示。当{{tr|character}}停止承受伤害时，{{tr|health}}会开始[[{{tr|Health Regeneration}}|再生]]，并且{{tr|character}}避免进一步伤害的时间越长，再生速率会不断增加，如果{{tr|character}}站定不动还会进一步提高速率。{{tr|Regeneration}}也能通过使用各种可装备物品、{{tr|potions}}、和放置的能引发区域效果[[{{tr|buff}}]]的{{tr|furniture items}}（[[{{tr|Heart Lantern}}]]、[[{{tr|Campfire}}]]）来提升。
+
+新{{tr|characters}}起始有 5 颗红色心，即 100 {{tr|health}}。可以通过使用[[{{tr|Life Crystal}}]]来提升{{tr|health}}上限，每个{{tr|Life Crystal}}可以永久性地给{{tr|health}}增加一颗红色心，将{{tr|health}}上限提升 20。这可以一直进行到{{tr|health bar}}达到 20 颗红色心（400 生命值）。
+
+在游戏的后期，{{tr|character}}可以用[[{{tr|Life Fruit}}]]来增加{{tr|hearts}}的容量，每个能增加 5 {{tr|health}}，通过永久性地将各个心的颜色转变为金色来表示。使用 15 个{{tr|Life Crystals}}和 20 个{{tr|Life Fruits}}后，{{tr|character}}可以达成 20 颗金色心，相当于 500 {{tr|health}}上限。使用[[{{tr|Lifeforce Potion}}]]可以进一步将{{tr|health}}上限临时提升至 600。
+
+在{{eversions|1.4.0.1}}中，玩家可以通过[[{{tr|settings}}]]中的“生命和魔力样式”选项来更改[[#{{tr|Health and mana}}条样式|{{tr|health bar}}的样式]]。具有经典样式时，{{tr|Hearts}}会缩小，若它们为“空”则会淡化消失。
+
+在{{eversions|1.3.0.1|invert=y}}中，{{tr|hearts}}会一块块地失去，逐渐显露出黑色的“空”的{{tr|heart}}。每个红色小块代表 5 {{tr|health}}，每个金色小块代表 1.25 {{tr|health}}。金色{{tr|hearts}}处于红色{{tr|hearts}}之外的单独层上。
+* 在{{3DS version}}中，在取得超过 10 颗心之前，心也更大一些。
+
+== 提高{{tr|maximum health}} ==
+下方为能提高{{tr|maximum health}}的物品列表。
+
+{| class="terraria lined"
+! {{tr|Item}}
+! 数量
+! 永久
+! 备注
+|-
+| {{item|Life Crystal}}
+| 20
+| {{yes}}
+| 当玩家的{{tr|health}}上限是 400 或更高时不能使用。
+|-
+| {{item|Life Fruit}}
+| 5
+| {{yes}}
+| 当玩家的{{tr|health}}上限小于 400 或已经是 500 或更高时不能使用。
+|-
+| {{item|Lifeforce Potion}}
+| 20% {{tr|max health}}
+| {{no}}
+| 持续{{eicons|1.4.0.1}} 8 分钟 / {{eicons|1.4.0.1|invert=y}} 5 分钟。
+|}
+
+== 失去生命 ==
+{{float file box|[[File:Heart (empty).png|Empty heart]]|空了的心|width=90px}}
+{{main|{{tr|Damage}}|{{tr|Death}}}}
+
+{{tr|Damage}}来自于攻击、环境危险、[[{{tr|Fall damage}}|掉落]]、{{tr|drowning}}、或[[{{tr|debuffs}}]]。受到伤害会降低{{tr|character}}的{{tr|health}}，并会导致短暂的无敌时间，此时人物会视觉上“闪烁”。当人物的{{tr|health}}达到 0，所有的心都完全褪色时，[[{{tr|death}}]]到来。''对于能降低{{tr|health}}的事物的完整列表，见[[{{tr|Death|link=y}}#死亡原因|死亡原因]]。''
+
+=== 防止伤害 ===
+==== 直接伤害 ====
+{{main|{{tr|Accessories}}|{{tr|Armor}}|{{tr|Buffs}}|{{tr|Defense}}|{{tr|Damage reduction}}}}
+
+特定的{{tr|accessories}}、{{tr|armor}}、和{{tr|buffs}}会提高{{tr|characters}}的{{tr|defense}}，这会降低所受伤害。除了其本身的奖励和功能以外，所有{{tr|accessories}}都能具有最多提供 4 {{tr|defense}}的[[{{tr|modifiers}}]]。除了增加{{tr|defense}}以外，部分{{tr|item}}能够削减或消除部分类型的{{tr|damage}}，这一机制称为[[{{tr|damage reduction}}]]。
+
+==== {{tr|Fall damage}} ====
+{{main|{{tr|Fall damage}}}}
+
+部分{{tr|items}}会提供对{{tr|fall damage}}的直接免疫（如[[{{tr|wings}}]]）。部分其他{{tr|items}}若在掉落期间正确使用会间接地防止{{tr|fall damage}}（如[[{{tr|extra jumps}}]]能重置{{tr|fall damage}}）。部分[[{{tr|mounts}}]]也具有{{tr|fall damage}}减免。
+
+== 恢复{{tr|health}} ==
+=== {{tr|Health regeneration}} ===
+{{main|{{tr|Health regeneration}}}}
+
+如果没有受到伤害，{{tr|character}}会在短时间后自动开始再生{{tr|health}}，并且在站定不动时{{tr|health regeneration}}会进行得更快。除了{{tr|character}}的自然{{tr|health regeneration}}以外，特定事物（如{{tr|item and buffs}}）也会提高{{tr|health regeneration}}，使得玩家每秒再生更多{{tr|health}}。
+
+=== 治疗 ===
+{{see also|{{tr|Heart}}|{{tr|Recovery potions}}|{{tr|Nurse}}}}
+
+玩家能够通过拾取{{tr|Heart}}、使用{{tr|recovery potions}}、或前往{{tr|Nurse}}处治疗来回复{{tr|health}}。
+
+{{tr|Hearts}}会立即恢复 20 {{tr|health}}，而{{tr|recovery potions}}按其类型能恢复特定量的{{tr|health}}。
+
+{{tr|Recovery potions}}也会带来[[{{tr|Potion Sickness}}]]{{tr|debuff}}（通常为 60 秒，若装备了[[{{tr|Philosopher's Stone}}]]或[[{{tr|Charm of Myths}}]]则为 45 秒）。当处于此{{tr|debuff}}的作用下时，玩家不能使用其他会带来此{{tr|debuff}}的物品。
+
+{{tr|Nurse}}收取基于玩家所受伤害的[[{{tr|coins}}]]来完全恢复玩家的{{tr|health}}，同时治愈大部分[[{{tr|debuffs}}]]
+
+=== 生命汲取 ===
+{{main|{{tr|Lifesteal}}}}
+
+诸如[[{{tr|Vampire Knives}}]]和[[{{tr|Spectre armor}}]]（使用{{tr|Spectre Hood}}）的{{tr|set bonus}}等{{tr|item}}会用其{{tr|lifesteal}}效果，基于对{{tr|enemies}}造成的伤害而定量治疗玩家。
+
+每当[[{{tr|Bat Bat}}]]击中{{tr|enemy}}时都会恢复 1 {{tr|health}}，但它不视为{{tr|lifesteal}}效果。
+
+== {{tr|Health and mana}}条样式 ==
+{{exclusive|1.4.0.1|section=y}}
+
+{{see also|{{tr|Boss health bar}}}}
+
+{{tr|The player}}可以通过[[{{tr|settings}}]]中的“生命和魔力样式”选项来更改{{tr|health and mana}}条样式。目前有六种不同样式：
+
+* '''{{gameText|UI.HealthManaStyle_Default}}'''：简单的{{tr|heart}}和{{tr|mana star}}显示，具有{{tr|health}}的数值显示。
+* '''{{gameText|UI.HealthManaStyle_New}}'''：具有金色边框的{{tr|Heart and mana star}}显示。
+* '''{{gameText|UI.HealthManaStyle_NewWithText}}'''：具有金色边框的{{tr|Heart and mana star}}显示，具有{{tr|health}}的数值显示。
+* '''{{gameText|UI.HealthManaStyle_HorizontalBars}}'''：{{tr|health and mana}}的条状显示。
+* '''{{gameText|UI.HealthManaStyle_HorizontalBarsWithText}}'''：{{tr|health and mana}}的条状显示，具有{{tr|health}}的数值显示。
+* '''{{gameText|UI.HealthManaStyle_HorizontalBarsWithFullText}}'''：{{tr|health and mana}}的条状显示，具有{{tr|health and mana}}的数值显示。
+
+<gallery widths="240px" heights="200px">
+File:Health and Mana Classic.png|{{gameText|UI.HealthManaStyle_Default}}
+File:Health and Mana Fancy.png|{{gameText|UI.HealthManaStyle_New}}
+File:Health and Mana Fancy 2.png|{{gameText|UI.HealthManaStyle_NewWithText}}
+File:Health and Mana Bars.png|{{gameText|UI.HealthManaStyle_HorizontalBars}}
+File:Health and Mana Bars 2.png|{{gameText|UI.HealthManaStyle_HorizontalBarsWithText}}
+File:Health and Mana Bars 3.png|{{gameText|UI.HealthManaStyle_HorizontalBarsWithFullText}}
+</gallery>
+
+== 成就 ==
+{{achievement|name=Topped Off}}
+{{achievement|name=Maxed Out}}
+
+== 备注 ==
+* 玩家同时可拥有的{{tr|maximum health}}为 600，可通过使用 15 个{{tr|Life Crystals}}、20 个{{tr|Life Fruits}}、和一个[[{{tr|Lifeforce Potion}}]]来达到。
+* 一些{{tr|events}}要求玩家有一定量的永久最大生命值才能发生：
+** 高于 100 才能让[[{{tr|Nurse}}]]生成。
+** 高于 120 才能让[[{{tr|Blood Moon}}]]发生
+** 高于 140 才能让{{eil|Slime Rain|s}}发生
+** 有 200 或更多才能让[[{{tr|Eye of Cthulhu}}]]和{{eil|Deerclops}}生成、[[{{tr|Goblin Army}}]]和[[{{tr|Pirate Invasion}}]]自发入侵
+** 300 或更多才能让[[{{tr|Old Man}}]]不再认为玩家不值得挑战[[{{tr|Skeletron}}]]（不过在此之前依然可以挑战{{tr|Skeletron}}）
+** 400 或更多才能让{{tr|Life Fruit}}可使用。
+: 注意，其中一些{{tr|events}}可能需要其他条件。有关详细信息请参阅相应页面。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了三种新的{{tr|Health Bar}}样式选项。}}
+{{history|Desktop 1.4.0.1|添加了两种新的{{tr|Health Bar}}样式选项。}}
+{{history|Desktop 1.2.3|降低了[[{{tr|campfire}}]]和[[{{tr|heart lantern}}]]{{tr|regeneration}}的效果。}}
+{{history|Desktop 1.2.2|每一击恢复一次生命值的物品现在有一个每秒 2 颗心的上限。}}
+{{history|Desktop 1.2.1.2|站在[[{{tr|Heart Lantern}}]]附近会提高{{tr|health regeneration}}。}}
+{{history|Desktop 1.2|
+** 现在可以用[[{{tr|Life Fruit}}]]达到 500 的最大生命值。
+** 站在[[{{tr|Honey}}]]中会提高{{tr|health regeneration}}，并且在离开{{tr|honey}}还会提供 30 秒的{{tr|regeneration buff}}。
+** 站在[[{{tr|Campfire}}]]附近会提高{{tr|health regeneration}}。}}
+{{history|Desktop 1.0.6|
+** 当人物不受伤害一段时间后会自动开始再生生命。
+** 治疗物品在使用时会带来[[{{tr|Potion Sickness}}]][[{{tr|debuff}}]]。}}
+
+{{Game mechanics}}
+
+{{language info|en=Health}}

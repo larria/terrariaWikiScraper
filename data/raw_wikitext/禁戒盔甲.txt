@@ -1,0 +1,92 @@
+{{exclusive|1.3.3}}
+{{item infobox
+| type = Armor/Set
+| setbonus = <i>{{gameText|ArmorSetBonus.Forbidden|x_0={{key|down}}/{{key|up}}<ref>取决于[[{{tr|Settings}}#控件|激活套装奖励设置]]</ref>}}</i>
+| listcat = summon weapons
+| hardmode = yes
+| idprojectile = 656
+| sound1 = Item 82.wav
+| soundcaption1 = {{tr|Ancient Storm}}
+}}
+{{float file box|width=6.5em|[[File:Forbidden Sign.png|link=]]|{{tr|Forbidden Sign}}}}
+
+'''{{tr|Forbidden Armor}}'''是一套[[{{tr|Hardmode}}]][[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Forbidden Mask}}'''、'''{{tr|Forbidden Robes}}'''和'''{{tr|Forbidden Treads}}'''组成。制作全套需要 3 个[[{{tr|Forbidden Fragment}}]]和 46 个[[{{tr|Titanium Bar}}]]或[[{{tr|Adamantite Bar}}]]。
+
+全套{{tr|Forbidden armor}}能提供以下属性：
+
+* +{{getSetInfo|Forbidden armor|defense|note=n}} [[{{tr|defense}}]]
+* +25% [[{{tr|magic damage}}]]和[[{{tr|summon damage}}]]
+* +80 {{tr|maximum}}[[{{tr|mana}}]]
+* +2 [[{{tr|minion}}]]容量
+
+穿着全套时，一个称为'''{{tr|Forbidden Sign}}'''的金色多刺符文类物体会漂浮在玩家身后，类似于来自[[{{tr|Stardust armor}}]]套装的[[{{tr|Stardust Guardian}}]]。双击{{key|down}}或{{key|up}}（取决于“激活{{tr|Set Bonuses}}”[[{{tr|settings}}]]）会发送一束尘土，会消耗 20 {{tr|mana}}在{{tr|cursor}}下方最接近的[[{{tr|block}}]]表面召唤{{tr|Ancient Storm}}。尘土束本身不会造成伤害，但{{tr|Ancient Storm}}会频繁攻击任何接触到它的[[{{tr|enemy}}]]，造成 20 {{tr|base damage}}。尘土束无法穿过实心物体，这意味着若{{tr|character and the cursor}}之间有实心物体，尘土束会击中实心物体并停下，不会召唤出{{tr|Ancient Storm}}。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 3776
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 3777
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 3778
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Forbidden Mask/Forbidden Robes/Forbidden Treads|expectedrows=6}}
+
+== 备注 ==
+* {{tr|The Ancient Storm}}有以下性质：{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 127</code> 代码段。}}
+** 要召唤{{tr|Ancient Storm}}需要至少 3×11 格的空间。不过在召唤后，根据可用的空间，其大小可在 3 至 30 格高、1 至 3 格宽之间变化。当{{tr|Ancient Storm}}被召唤后其可造成伤害的最大体积为 3×28 格。
+** 同一时间只能激活一个{{tr|Ancient Storm}}。当召唤新的{{tr|Ancient Storm}}时，旧的会在大约 1 秒后消失。
+** {{tr|The Ancient Storm}}可持续 15 秒，但它最多只能击中{{tr|enemies}} 30 次，并会造成 10 帧左右{{tr|local immunity frame}}。它会在第 30 次击中后大约 1 秒后消失。
+** 玩家的上方或中心到{{tr|The Ancient Storm}}的中间一列间必须有未被阻挡的清晰视线。在视线被阻挡后，{{tr|Ancient Storm}}会在大约 1 秒后消失。
+* 虽然{{tr|Ancient Storm}}可受[[{{tr|Magic damage}}]]和[[{{tr|summon damage}}]]的{{tr|bonus}}影响，{{source code ref|v=1.4.4.9|method=Terraria.Player.CommandForbiddenStorm}}其[[{{tr|critical strike chance}}]]仅依赖于玩家的{{tr|magic critical strike chance}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+** 提供对所有伤害类型的{{tr|bonus}}的物品（如[[{{tr|Celestial Shell}}]]或[[{{tr|Avenger Emblem}}]]）会计算其{{tr|bonus}}两次。
+** 由于装备了全套{{tr|Forbidden armor}}套装（这总共提供 50% 伤害{{tr|bonus}}），{{tr|Ancient Storm}}的{{tr|base damage}}总是已经被提高到了 30。
+* 即使在受[[{{tr|Stoned}}]][[{{tr|debuff}}]]影响时也可以召唤{{tr|The Ancient Storm}}。
+* 用[[{{tr|Dye}}]]给{{tr|Forbidden Robes}}染色会改变{{tr|Forbidden Sign}}的颜色，即使装备了{{tr|vanity}}胸甲也如此。
+* {{tr|The Forbidden Sign}}会在玩家周围发出微弱的黄光，类似于[[{{tr|Mining Helmet}}]]。
+
+== 小贴士 ==
+* 就属性而言，这套套装弱于使用{{tr|magic}}头部部件（{{tr|the Mythril Hood}}）的[[{{tr|Mythril armor}}]]。不过，利用好{{tr|Ancient Storm}}和额外的{{tr|minion slots}}，就可以达到比[[{{tr|Adamantite armor}}]]更高的{{DPS}}。
+* {{tr|The set bonus}}对于与[[{{tr|The Destroyer}}]]和其他{{tr|worm enemies}}战斗很有用，因为{{tr|the Ancient Storm}}能够极其快速地击中多个{{tr|segments}}。
+* 如果只需要{{tr|summon bonuses}}，改为使用[[{{tr|Spider armor}}]]可能会更好。{{tr|Spider armor}}在{{tr|Hardmode}}刚一开始就可以得到，并提供了更高的{{tr|summon bonuses}}。
+* 虽然对于纯{{tr|summoners}}来说它弱于{{tr|Spider armor}}，其混搭的特性对于在更高的难度中游玩的{{tr|summoners}}来说会有用，尤其是在[[{{tr|Master Mode}}]]中，因为{{tr|magic weapons}}能让玩家在与[[{{tr|mechanical bosses}}]] 作战时采用更安全的策略。
+
+== 花絮 ==
+* {{tr|The Forbidden armor}}是[[{{tr|Snow biome}}]]的[[{{tr|Frost armor}}]]的[[{{tr|Desert}}]]{{tr|counterpart}}，因为它们都以类似的方式获得。不过，{{tr|Frost armor}}会提供针对[[{{tr|Melee weapons}}|{{tr|melee}}]]和[[{{tr|ranged weapons}}]]的强化，而非[[{{tr|Magic weapons}}|{{tr|magic}}]]和[[{{tr|summon weapons}}]]。
+* 这一套装很像{{维基百科|Anubis|t=阿努比斯}}，埃及的死亡与葬礼之神，它被描绘为一个与死亡有关的犬头人。
+* 和其他的{{tr|minions and sentries}}不同，{{tr|the Forbidden Sign}}不是[[{{tr|projectile}}]]。它使用了游戏文件中 <code>Extra_74</code> 的纹理。
+* 在{{tr|vanity helmet slot}}装备[[{{tr|Safeman's Sunny Day}}]]会让{{tr|sun}}位于{{tr|Forbidden Sign}}的环中一起移动。
+
+== 图库 ==
+<gallery>
+File:Forbidden armor (Safeman).gif|frame|同时装备{{tr|Safeman's Sunny Day}}和全套的{{tr|Forbidden armor}}。
+File:Forbidden armor (demo).gif|使用{{tr|Forbidden Sign}}的{{tr|Ancient Storm}}{{tr|Attack}}一组[[{{tr|Target Dummies}}]]。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在{{tr|Summon}}相关{{tr|item}}的{{tr|Tooltips}}为“{{tr|Summon Damage}}”而不是“{{tr|Minion Damage}}”。}}
+{{history|Desktop 1.4.1|现在{{tr|The Forbidden Robes}}提供 10% {{tr|summon damage bonus}}，{{tr|Forbidden Treads}}提供 10% {{tr|magic damage bonus}}。}}
+{{history|Desktop 1.4.0.1|虽然套装总收益维持不变，但来自{{tr|Forbidden Robes}}和{{tr|Forbidden Treads}}的收益已被平均分配，现在各给予 40 {{tr|mana}}和 +1 {{tr|Minion}}数。}}
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|随到{{tr|Desktop}} 1.4.0.1 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Forbidden armor}}

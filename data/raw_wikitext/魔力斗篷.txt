@@ -1,0 +1,56 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4001
+| idprojectile = 723
+| hardmode = yes
+}}
+|{{item infobox
+| name = Mana Cloak Star
+| type = Miscellaneous
+| auto = 4143
+| mheal = 50
+| research =<!-- can't be researched -->
+}}
+}}
+
+'''{{tr|Mana Cloak}}'''是一种[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，结合了[[{{tr|Mana Flower}}]]与[[{{tr|Star Cloak}}]]二者的功能。除此之外，它还为{{tr|Star Cloak}}生成的坠星提供了新的效果。
+
+当玩家受到伤害时，{{tr|Mana Cloak}}会生成三枚伤害敌怪的星星。而当这些星星撞击到障碍物时，它就会变成一颗特殊的闪闪发光的{{tr|mana star}}，并向玩家飞来。这会回复玩家的 50 {{tr|mana}}。如果在{{tr|mana star}}生成 5 秒后都未将其拾取，那么它会消失掉。{{source code ref|v=1.4.3.6|method=Terraria.Item.DespawnIfMeetingConditions}}不过注意，无论{{tr|Mana Cloak}}效果被触发多少次，每秒钟都只能生成一颗回复魔力的星星。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Mana Cloak|expectedrows=1}}
+
+== 备注 ==
+* {{tr|mana stars}}仅在落星之一撞击实体物块时才会生成，而坠星根本不会与{{tr|platforms}}相互作用。
+* {{tr|mana stars}}仅在玩家处于 20 格之内时才会移过来。在此距离之外，{{tr|mana stars}}会在半空中盘桓。
+* 上述效果使得玩家距离实体物块较远时难以收集{{tr|mana stars}}。因此，这让它在空中战斗中没那么有用，比如使用[[{{tr|Wings}}]]、飞行[[{{tr|Mounts}}]]抑或[[{{tr|Minecart Track}}]]来对抗 {{tr|boss}} 时。这些情况下，玩家可能更愿意用有相似效果的[[{{tr|Magic Cuffs}}]]或者[[{{tr|Celestial Cuffs}}]]。
+* 其减少魔力使用的效果可以与[[{{tr|Magnet Flower}}]]或者[[{{tr|Mana Flower}}]]叠加。
+* {{tr|Mana Cloak}}的{{tr|star}}的拾取范围不受[[{{tr|Celestial Magnet}}]]、[[{{tr|Celestial Cuffs}}]]或[[{{tr|Celestial Emblem}}]]影响。
+* [[{{tr|Star Cloak}}]]、[[{{tr|Bee Cloak}}]]、{{tr|Mana Cloak}}、和[[{{tr|Star Veil}}]]的{{tr|star}}坠落效果不会叠加。无论装备了这些物品中的多少个，每次只会落下三颗{{tr|stars}}，且始终以{{tr|Mana Cloak}}先于[[{{tr|Bee Cloak}}]]先于[[{{tr|Star Veil}}]]先于[[{{tr|Star Cloak}}]]的优先级触发
+
+== 花絮 ==
+* 若用[[{{tr|inventory editor}}]]将魔力星加入物品栏，那么它的外观会是纯白色，光标悬停在上面时什么也不会显示。
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|现在只在承受会造成[[{{tr|Invincibility frame}}分组]]中第二组与第四组{{tr|invincibility frame}}的{{tr|damage}}时才会生成{{tr|stars}}。}}
+{{history|Desktop 1.4.1|
+** {{tr|Stars}}现在造成 75 {{tr|damage}}并且拥有 25 点[[{{tr|armor penetration}}]]。
+** 此伤害在[[{{tr|Expert mode}}]]中被乘以 2，在[[{{tr|Master mode}}]]中乘以 3（{{tr|armor penetration}}不变）
+** 现在使用局部免疫帧，不会干扰{{tr|other piercing projectiles}}。}}
+{{history|Desktop 1.4.0.5|修复了[[{{tr|Encumbering Stone}}]]让玩家无法收集{{tr|Mana Cloak}}的魔力星的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Mana Cloak}}

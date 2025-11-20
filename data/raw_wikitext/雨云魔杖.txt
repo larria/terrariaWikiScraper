@@ -1,0 +1,56 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1244
+| tags = drop / hardmode
+| idprojectile = 237, 238, 239
+}}
+{{drop infobox|style=clear:right}}
+[[File:Nimbus Rod (demo).gif|framed|{{tr|Nimbus Rod}}的雨滴正在攻击[[{{tr|Target Dummies}}]]。注意雨滴可以穿透敌怪，但不能穿透墙壁，并且可被召唤出两朵。]]
+
+'''{{tr|Nimbus Rod}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|magic weapons}}]]，可以创造一个向自身正下方滴落伤害性“雨滴”{{tr|projectiles}}的雨云。使用时，一个雨云{{tr|projectile}}从{{tr|Nimbus Rod}}中发射并移向光标位置。到达目的地或碰到[[{{tr|solid block}}]]后，雨云就会停止并开始向下滴落伤害性的雨滴，造成{{tr|weapon}}的面板{{tr|damage}}，{{penetrate|5|name=雨滴}}每朵云都会持续存在五{{tr|minutes}}且最多可以同时生成两朵雨云。在已有两朵雨云时使用{{tr|Nimbus Rod}}会使第一朵雨云消失。{{tr|Nimbus Rod}}有 {{chance|1/15}} 的概率掉落自[[{{tr|Angry Nimbus}}]]。
+
+{{modifier|magicnokb}}
+
+== 备注 ==
+* 雨云无法穿过[[{{tr|blocks}}]]或关闭的[[{{tr|doors}}]]等实体物，但可以穿过[[{{tr|platforms}}]]和[[{{tr|liquids}}]]。
+* {{tr|Rain}}{{tr|projectile}}击中{{tr|enemy}}时会造成 10 {{tr|ticks}}{{tick}}[[{{tr|static invincibility frame}}]]。
+* 雨云每 9 {{tr|tick}}生成 1 滴雨滴，即每秒产生 6.67 滴雨滴。{{source code ref|name=ai|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle {{=}}{{=}} 45</code> 代码段。}}
+* 雨滴移动速度为 {{mph|51}}，与{{tr|player}}坠落速度相同。
+* 雨滴在 {{duration|{{projectileinfo|239|timeLeft}} ticks}}后消失，<ref name="ai"/>最大范围为 {{#expr:(5<!-- velocity of the raindrop projectiles: 5 pixels per tick -->*{{projectileinfo|239|timeLeft}}+{{projectileinfo|239|height}})/16<!-- 16 pixels in a tile -->}} {{tr|tiles}}。
+
+== 小贴士 ==
+* {{tr|Nimbus Rod}}在功能上与[[{{tr|sentries}}]]类似。它具有即发即弃的特点，成本低，持续时间长且随时间推移而造成的{{tr|damage}}相对较高，使其成为与 [[{{tr|bosses}}]] 等大型{{tr|enemy}}战斗时的理想武器。雨弹的穿透性能证明其可以有效地对抗多节{{tr|enemy}}，例如[[{{tr|The Destroyer}}]]。{{tr|player}}还可以在雨云存在时自由使用其他武器，因为{{tr|Nimbus Rod}}仅初始使用会消耗[[{{tr|mana}}]]。
+* 由于{{tr|projectile}}的[[{{tr|critical strike chance}}]]不是基于发射的{{tr|weapon}}，而是基于玩家当前手持的{{tr|weapon}}，因此该武器与高基础{{tr|critical strike chance}}的{{tr|magic weapons}}搭配良好，最为突出的是{{comma/start}}{{#af_foreach:{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name|q?where=damagetype LIKE '%magic%' AND critical>20|q?order by=critical,name}}||itemname|{{comma/item|{{eil|{{{itemname}}}}}}}}}{{comma/end}}。
+* 每个独立的雨滴都会触发与{{tr|damage}}相关的套装奖励，例如[[{{tr|Orichalcum armor}}]]和[[{{tr|Spectre armor}}]]的套装奖励。
+* 由于雨滴间的间隔很小，{{tr|Nimbus Rod}}可作为阻挡可破坏射弹的屏障，例如[[{{tr|Burning Sphere}}]]。
+* [[{{tr|Crimson Rod}}]]发射的云也可以同时存在，这允许你一次在屏幕上由于三个雨云。然而，在{{tr|hardmode}}中，{{tr|Crimson Rod}}几乎没什么用。
+* 获得{{tr|Nimbus Rod}}可能很困难，即使是在[[{{tr|rain}}]]时，{{tr|Angry Nimbus}}也是比较罕见。和所有{{tr|enemies}}一样，它的{{tr|spawn rate}}可以通过[[{{tr|Water Candle}}]]和[[{{tr|Battle Potion}}]]，以及[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]等[[{{tr|events}}]]来提升。玩家如果建造一个坚固的基地，就可以去安全的攻击{{tr|enemy}}，并可能获得一个{{tr|Nimbus Rod}}。
+
+== 花絮 ==
+* 它可以视为{{tr|Crimson Rod}}在[[{{tr|Hardmode}}]]的升级版，后者效果类似，但{{tr|damage}}较低。
+* 其英语名称中出现的术语 ''Nimbus（雨云）''是一个过时的术语，指的是一种现在归类为{{维基百科|nimbostratus cloud|雨层云（Nimbostratus cloud）}}的云。雨层云是一种低空、灰色、通常较暗、无定形、近乎均匀的云，通常会产生持续性的降雨或降雪。
+* 在{{tr|Blood Moon}}期间，{{tr|Nimbus Rod}}的雨滴将会变成红色，类似于[[{{tr|Crimson Rod}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|clouds}}的{{tr|Duration}}从 1 分钟增加至 5 {{tr|minutes}}。
+** {{tr|Damage}}由 36 降低至 30。
+** 现在使用静态无敌帧，不再会与不来自于{{tr|Nimbus Rod}}的{{tr|damage}}造成的无敌帧相互干扰。
+** {{tr|Mana cost}}由 10 提升至 30。
+** 穿透数量从无限减少到 5。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Nimbus Rod}}

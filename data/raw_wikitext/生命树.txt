@@ -1,0 +1,214 @@
+[[File:BiomeBannerLivingTree.png|center]]
+{{see also|{{tr|Living Mahogany Tree}}}}
+[[File:1.4 Living Trees map view.png|250px|thumb|三棵{{tr|Living Trees}}的地图视图，其中两棵有隧道互通。]]
+
+'''{{tr|Living Trees}}'''是{{tr|world creation}}之时生成的大型树形[[{{tr|Forest}}]]结构。和常规的[[{{tr|Tree}}]]不同，{{tr|Living Trees}}是由实心的[[{{tr|Living Wood}}]]和[[{{tr|Leaf blocks}}]]组成的，而非{{tr|characters}}可以通过的{{tr|background objects}}。{{tr|Living Trees}}常常会有向下通向{{tr|treasure room}}的隧道，{{tr|treasure room}}中会包含{{tr|Living Tree}}主题的[[{{tr|furniture}}]]和一个[[{{tr|Living Wood Chest}}]]。
+
+在{{eversions|1.4.0.1}}中，{{tr|Living Trees}}的树冠更大且更圆，并且可以成组生成，具有连通到其他{{tr|trees}}或者通往外部的水平隧道。{{tr|Chests}}也会在这些隧道中生成。{{tr|treasure room}}会位于其中一棵{{tr|tree}}下方，且包含[[{{tr|Living Loom}}]]而非[[{{tr|Living Wood Table}}]]。它们内部隧道的入口处是封闭的，需要有[[{{tr|pickaxe}}]]才能进入。[[{{tr|Gnome}}]]在{{tr|Living Trees}}中也会更常见。
+
+__TOC__
+{{-}}
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+	-->{{infocard/box|title=常见：|<!--
+		-->{{dotlist<!--
+		-->|{{item|Gnome}}<!--
+		-->}}<!--
+	-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+	-->{{infocard/box|title=来自地形：|<!--
+		-->{{dotlist<!--
+		-->|{{item|Living Wood Chest}}<!--
+		-->|{{item|Living Loom}}<!--
+		-->|{{item|Living Wood Door}}<!--
+		-->|{{item|Living Wood Table}}<!--
+		-->|{{item|Living Wood Chair}}<!--
+		-->|{{item|Living Wood Wall}} <!--
+		-->|{{item|Living Wood Platform}}<!--
+		-->}}<!--
+	-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特宝藏}}<!--
+	--><div><!--
+	-->{{infocard/box|title=来自{{tr|chests}}：|<!--
+		-->{{dotlist<!--
+		-->|{{item|Leaf Wand}}<!--
+		-->|{{item|Living Wood Wand}}<!--
+		-->|{{item|Sunflower Minecart}}<!--
+		-->|{{item|Ladybug Minecart}}<!--
+		-->|{{item|Finch Staff}}<!--
+		-->|{{item|Magic Mirror|note2=（仅限{{eicons|Lepus}}）}}<!--
+		-->|{{item|Enchanted Boomerang|note2=（仅限{{eicons|Lepus}}）}}<!--
+		-->|{{item|Band of Regeneration|note2=（仅限{{eicons|Lepus}}）}}<!--
+		-->|{{item|Bug Net|note2=（仅限{{eicons|Lepus}}）}}<!--
+		-->|{{item|Band of Starpower|note2=（仅限{{eicons|Lepus}}）}}<!--
+		-->}}<!--
+	-->}}<!--
+	--></div><!--
+    
+-->{{infocard/end}}<!-- 
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 在[[{{tr|world size}}|{{tr|small worlds}}]]中，{{tr|Living Trees}}可能会延伸到[[{{tr|Space}}]]中。
+* 在{{eversions|1.4.0.1}}中，天然生成的[[{{tr|Living Wood Wall}}]]被视为[[不安全墙]]，因此不能直接用于 [[{{tr|NPC}}]] [[{{tr|housing}}]]。在{{eversions|1.4.0.1|invert=y}}中，天然生成的{{tr|Living Wood Walls}}被视为[[安全墙]]。
+* 在{{eversions|1.4.0.1|invert=y}}中，单个世界中最多会生成五棵{{tr|Living Trees}}。<ref>https://forums.terraria.org/index.php?threads/tool-the-terraria-seed-project.69351/</ref>
+* 在 {{eil|drunk world|s}} 中，[[{{tr|Dungeon}}]]入口被一棵{{tr|Living Tree}}替代，其隧道会通向[[{{tr|Old Man}}]]所处的地下房间。这棵{{tr|Living Tree}}的{{tr|tiles}}会被刷上[[{{tr|Brown Paint}}]]。
+* 在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，生成的{{tr|Living Trees}}不会具有{{tr|Leaf Blocks}}。
+
+=== 生成 ===
+{{exclusive|1.4.0.1|section=y}}
+
+以下为[[{{tr|world generation}}]]时{{tr|Living Trees}}的生成细节。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld|t=相关 generation pass 为 <code>Living Trees</code>。}}
+
+{{tr|Living Trees}}会成组生成。[[{{tr|World size}}|{{tr|Small worlds}}]]最多会有 2 组，{{tr|medium worlds}}最多 3 组，{{tr|large worlds}}最多 4 组。在 [[{{tr|drunk world}}]]、[[{{tr|Celebrationmk10}}]]、和 [[{{tr|Don't dig up}}]] {{tr|worlds}}中，可以生成更多组的{{tr|Living Trees}}。
+
+每一组{{tr|Living Trees}}都有一棵“主”{{tr|tree}}，其两侧可能会生成“副”{{tr|Living Trees}}。主{{tr|trees}}会拥有{{tr|treasure room}}，而副{{tr|trees}}仅会生成水平隧道。每棵主{{tr|tree}}的两侧最多各能生成 3 棵副{{tr|trees}}，因此一组中总共最多有 7 棵{{tr|Living Trees}}。在 {{tr|drunk world}}、{{tr|Celebrationmk10}}、和 {{tr|Don't dig up}} {{tr|worlds}}中，可以生成更多的副{{tr|Living Trees}}。
+
+==== 技术性细节 ====
+在生成{{tr|world}}时，游戏会首先决定{{tr|Living Tree}}组的生成尝试次数；这一次数取决于[[{{tr|world size}}]]和[[{{tr|secret world seeds}}]]。游戏会首先设定默认的次数；如果默认次数是 0，则有 {{chance|1/2}} 几率使其增加 1。然后，游戏会检查激活的{{tr|secret world seeds}}，然后基于{{tr|world size}}增加尝试次数。
+
+{| class="terraria lined"
+! rowspan=3 | {{tr|World size}}
+! colspan=4 | 尝试次数
+|-
+! rowspan=2 | 默认
+! colspan=3 | 激活的[[{{tr|Secret world seeds}}]]{{footnote|name=attempts-gfb|[[{{tr|Get fixed boi}}]] {{tr|worlds}}被视为激活了{{tr|drunk world}} {{tr|seed}}。}}<!--
+if (WorldGen.drunkWorldGen){...}
+else if (Main.tenthAnniversaryWorld){...}
+else if (WorldGen.remixWorldGen){...}-->
+|-
+! [[{{tr|Drunk world}}]] !! [[{{tr|Celebrationmk10}}]] !! [[{{tr|Don't dig up}}]]
+|-
+! 小
+| 0–2
+| +2 || +3 || +2
+|-
+! 中
+| 0–3
+| +3 || +4 || +3
+|-
+! 大
+| 0–4
+| +4 || +6 || +4
+|}
+* 生成尝试次数示例：
+** 一个{{tr|small world}}可以有 0–2 次尝试。
+** 一个大 [[{{tr|Celebrationmk10}}]] {{tr|world}}可以有 6–10 次尝试。
+** 一个大 [[{{tr|Get fixed boi}}]] {{tr|world}}可以有 4–8 次尝试。
+
+然后，游戏会选择每棵{{tr|Living Tree}}生成的位置。水平坐标会随机选择，但永远不会位于[[{{tr|Ocean}}]]{{tr|biomes}}中。
+* 在 [[{{tr|Celebrationmk10}}]] {{tr|worlds}}中，水平坐标会在{{tr|world}}中部 70% 区域中随机选择。换言之，{{tr|world}}两侧的 15% 区域内不会生成{{tr|Living Tree}}。<!-- WorldGen.tenthAnniversaryWorldGen && !WorldGen.remixWorldGen -->
+** 如果这一水平坐标和{{tr|world}}中心的距离少于 200 格，则这次尝试被''消耗''，不会生成{{tr|Living Trees}}。
+
+要决定每棵{{tr|Living Tree}}的垂直坐标，游戏会从{{tr|tree}}的水平坐标处顶部的真正[[世界边界]]开始向下检查，结束于[[{{tr|surface}}]]{{tr|layer}}。
+* 在到达此范围内的第一个[[{{tr|Dirt Block}}]]后，{{tr|Dirt Block}}上方的{{tr|tile}}将被选为生成坐标。
+** 如果这一选中的{{tr|tile}}符合以下任意条件，这次尝试被''消耗''，不会生成{{tr|Living Trees}}：
+*** {{tr|The tile}}距离顶部的真正世界边界少于 150 格。
+*** {{tr|The tile}}距离[[山洞]]少于 50 格。
+*** 在以{{tr|tile}}为中心 100×100 的方形区域内有任何下列{{tr|tiles}}：{{footnote|name=area|从该{{tr|tile}}开始各方向上的范围：向左 50 格，向上 50 格，向右 49 格，向下 49 格。}}
+::: {{options/set|item|icons=no}}{{itemlist|class=terraria|width=18em
+|{{item|Blue Brick}}
+|{{item|Green Brick}}
+|{{item|Pink Brick}}
+|{{item|Cloud}}
+|{{item|Rain Cloud}}
+|{{item|Snow Cloud}}
+|{{item|Cracked Blue Brick}}
+|{{item|Cracked Green Brick}}
+|{{item|Cracked Pink Brick}}
+}}{{options/reset|item|icons=no}}
+
+此后，游戏会在此坐标生成一棵{{tr|Living Tree}}（一组中的“主”{{tr|Living Tree}}），并尝试在它两侧生成一些“副”{{tr|Living Tree}}。每一侧的尝试次数会被激活的{{tr|secret world seeds}}所更改。
+
+{| class="terraria lined"
+|+ 尝试次数
+! rowspan=2 | 默认
+! colspan=3 | 激活的[[{{tr|Secret world seeds}}]]{{footnote|name=attempts-gfb}}<!--
+if (WorldGen.drunkWorldGen || Main.tenthAnniversaryWorld){...}
+else if (WorldGen.remixWorldGen){...}-->
+|-
+! [[{{tr|Drunk world}}]] !! [[{{tr|Celebrationmk10}}]] !! [[{{tr|Don't dig up}}]]
+|-
+| 0–3
+| + (2–4) || + (2–4) || + (1–5)
+|}
+* “副”{{tr|Living Tree}}的生成尝试次数示例：
+** 默认每一侧有 0–3 次尝试，因此一组中最多可有 7 棵{{tr|Living Trees}}（1 + 3 + 3）。
+** [[{{tr|Don't dig up}}]] {{tr|world}}每一侧有 0–8 次尝试，因此一组中最多可有 17 棵{{tr|Living Trees}}（1 + 8 + 8）。
+** [[{{tr|Get fixed boi}}]] {{tr|world}}每一侧有 0–7 次尝试，因此一组中最多可有 15 棵{{tr|Living Trees}}（1 + 7 + 7）。
+* 注意每一侧的尝试次数并不一定是相等的。例如，有可能左侧进行了 2 次尝试，而右侧进行了 1 次尝试。
+
+会先生成主{{tr|tree}}左侧的副{{tr|tree}}，然后再生成右侧的。在每一侧，副{{tr|tree}}是由近及远生成的。类似于主{{tr|Living Tree}}，副{{tr|Living Tree}}的生成也使用坐标。
+* 每一侧将要生成的第一棵副{{tr|tree}}的初始水平坐标开始于主{{tr|tree}}的水平坐标。
+* 然后，对于这一侧每一棵副{{tr|tree}}，执行以下操作：
+** 通过将当前的水平坐标减去/加上（取决于正在主{{tr|tree}}的哪一侧进行生成）13 至 30 间的一个随机的数来得到{{tr|tree}}的水平坐标。
+*** 如果这一水平坐标和{{tr|world}}中心的距离少于 200 格，则这次尝试被''消耗''，不会生成{{tr|Living Trees}}。
+** 将垂直坐标设置为主{{tr|tree}}的垂直坐标。如果新的坐标是实心{{tr|tile}}，则向上移动，直至找到一个未被占据的{{tr|tile}}；如果新的坐标未被占用，则向下移动直至找到一个实心{{tr|tile}}，然后将坐标设置为实心{{tr|tile}}上方的那一格。这就是最终副{{tr|Living Tree}}所生成于的{{tr|tile}}。
+*** 类似于主{{tr|Living Tree}}，如果在以{{tr|tile}}为中心 100×100 的方形区域内有任何下列{{tr|tiles}}{{footnote|name=area}}，这次尝试被''消耗''，不会生成{{tr|Living Trees}}：
+::: {{options/set|item|icons=no}}{{itemlist|class=terraria|width=18em
+|{{item|Blue Brick}}
+|{{item|Green Brick}}
+|{{item|Pink Brick}}
+|{{item|Cloud}}
+|{{item|Rain Cloud}}
+|{{item|Snow Cloud}}
+|{{item|Cracked Blue Brick}}
+|{{item|Cracked Green Brick}}
+|{{item|Cracked Pink Brick}}
+}}{{options/reset|item|icons=no}}
+
+== 小贴士 ==
+* {{eicons|1.4.0.1|invert=y}} 只需添加一个[[{{tr|light source}}]]，{{tr|Living Trees}}中的宝藏房间就可以被用作 [[{{tr|NPC}}]] [[{{tr|housing}}]]。
+* 在[[{{tr|Hardmode}}]]中，只要树下的区域被清空，{{tr|Living Trees}}就会成为抵御[[{{tr|evil biome}}]]和[[{{tr|Hallow}}]]{{tr|biomes}}那加快的[[{{tr|spread}}]]速率的天然屏障。
+* 在和[[{{tr|The Destroyer}}]]作战时，{{tr|Living Trees}}可以作为高地使用。
+
+== 花絮 ==
+* 有时，{{tr|Living Trees}}的内部隧道会被[[{{tr|Enchanted Sword Shrine}}]]完全取代。
+
+== 图库 ==
+<gallery widths=300px heights=200px>
+File:A group of 7 Living Trees in 1.4.4.9.png|{{eicons|1.4.0.1}}一组 7 棵{{tr|Living Trees}}。
+File:Spawn of 6 living trees close together in 1.4.png|{{eicons|1.4.0.1}}生成在一起的 6 棵{{tr|Living Trees}}。
+File:1.4 Living Tree.png|{{eicons|1.4.0.1}}有{{tr|treasure room}}的一棵{{tr|Living Tree}}（用 [[Terrafirma]] 查看）。
+File:Living Tree Brown.png|在 [[{{tr|drunk world}}]] 中，刷上[[{{tr|Brown Paint}}]]并被作为[[{{tr|Dungeon}}]]入口的{{tr|The Living Tree}}。
+File:Living tree blocking crimson.png|{{tr|A Living Tree}}阻挡了[[{{tr|The Crimson}}]]在地下的蔓延。
+File:Living Tree.png|[[1.4.0.1]] 之前生成的{{tr|Living Tree}}。
+File:Uprooted Living Tree.png|一棵 1.4.0.1 之前生成的没有{{tr|underground}}部分的{{tr|Living Tree}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在可以以 2–7 棵为一组生成，带有连接组内{{tr|trees}}的水平隧道。
+*** 某些{{tr|trees}}仍然可能像之前一样独立出现。
+** [[{{tr|Gnome}}]]现在偶尔会在{{tr|Living Trees}}中生成。
+** {{tr|Living Trees}}的内部入口被{{tr|Living Wood}}阻挡。
+** {{tr|Living Trees}}的树冠更圆一些。
+** {{tr|Living Trees}}内房间的{{tr|walls}}对于 [[{{tr|NPCs}}|{{tr|NPC}}]] [[{{tr|House}}|{{tr|housing}}]]不再视为有效。
+** {{tr|The treasure room}}现在包含放置的[[{{tr|Living Loom}}]]而非{{tr|Living Wood Table}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Living Trees}}现在生成{{tr|Living Wood Platforms}}而非{{tr|Wood Platforms}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|Desktop 1.4.0.1}} 中的所有功能和变更。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Biomes}}
+
+{{all versions}}
+[[Category:{{tr|Treasure Rooms}}]]
+
+{{language info|en=Living Tree}}

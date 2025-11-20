@@ -1,0 +1,20 @@
+<includeonly><!--
+--> align=left | <span style="display:none;">{{{sortkey|}}}</span> <!--
+
+-->{{item|{{#dplvar:bat:{{{id|}}}:nameraw}}|image={{#ifeq:{{{id|}}}|158|Vampire Bat|{{#dplvar:bat:{{{id|}}}:nameraw}}}}.png|id={{{id|}}}|type=npc|link={{{link|{{#dplvar:bat:{{{id|}}}:page}}}}}}}<!--
+
+--> || style="white-space: nowrap;" | {{#dplvar:bat:{{{id|}}}:life}}<!-- 
+
+--> || style="white-space: nowrap;" | {{#dplvar:bat:{{{id|}}}:damage}}<!--
+
+--> || style="white-space: nowrap;" | {{#dplvar:bat:{{{id|}}}:defense}}<!--
+
+--> || class="money" | {{#or:{{#dplvar:bat:{{{id2|{{{id|}}}}}}:money}}|{{na}}}}<!--
+
+--> || {{#if:{{{banner|{{#dplvar:bat:{{{id|}}}:bannername}}}}}|{{item|mode=image|{{{banner|{{#dplvar:bat:{{{id|}}}:bannername}}}}}}}|{{na}}}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Bats/row}}
+</noinclude>

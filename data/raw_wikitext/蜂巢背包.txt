@@ -1,0 +1,57 @@
+{{exclusive|Expert Mode}}
+{{expert mode only}}
+{{item infobox
+| auto = 3333
+| idprojectile = 566
+| tags = Treasure Bag loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Hive Pack}}'''是一个[[{{tr|pre-Hardmode}}]][[{{tr|accessory}}]]，装备后，有 {{chance|1/2}} 几率将友方的{{tr|Bee projectiles}}替换为更大的“{{tr|Giant Bees}}”。{{source code ref|v=1.4.4.5|method=Terraria.Player.beeType}}{{tr|The Hive Pack}}必定掉落自[[{{tr|Expert Mode}}]]下[[{{tr|Queen Bee}}]]的[[{{tr|Treasure Bag|link=y}}#{{tr|Queen Bee}}|{{tr|Treasure Bag}}]]。
+
+== 备注 ==
+* {{tr|Giant Bees}}会获得以下强化：
+** {{tr|Giant Bees}}必定额外造成 1–3 点伤害，且具有 {{knockback|0.5|full=y|class=}} 的[[{{tr|knockback}}]]，相比之下普通{{tr|Bee}}具有 {{chance|1/2}} 几率额外造成 1 伤害。{{source code ref|v=1.4.4.9|method=Terraria.Player.beeDamage / Terraria.Player.beeKB|t={{tr|Giant Bees}}的实际{{tr|knockback}}为 <code>0.5 + ''{{tr|Bee knockback}}'' × 1.1</code>。注意除了[[{{tr|Hive-Five}}]]的{{tr|bees}}以外，所有普通{{tr|Bees}}都具有 0 {{tr|base knockback}}。}}
+** {{tr|Giant Bees}}能够穿透{{tr|enemies}}和在{{tr|tiles}}上反弹总共 3 次，而非 2 次；持续 11 秒而非 10 秒；且飞行速度显著更快。{{source code ref|v=1.4.4.5|method=Terraria.Projectile.SetDefaults}}
+* 它也让{{tr|Bee Gun, Bee Keeper, and Honey Comb}}（{{tr|and its upgrades}}）在使用时额外有一次 {{chance|1/3}} 的几率生成{{tr|bee projectile}}。 
+* 它也会将[[{{tr|Hornet Staff}}]]{{tr|minions}}的开火速率从平均每 {{duration|45 ticks}}一次提高至平均每 {{duration|35 ticks}}一次，并将[[{{tr|Wasp Gun}}]]的伤害和[[{{tr|armor penetration}}]]提高 5。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_062 / Terraria.Projectile.Damage}}
+* 和普通{{tr|bee}}一样，{{tr|Giant Bees}}仍会在与[[{{tr|water}}]]和[[{{tr|lava}}]]接触时立即消失。
+* {{tr|The Hive Pack}}会使以下和{{tr|bee}}相关的{{tr|items}}受益：
+{{flexstart}}
+{{itemlist|class=terraria|width=14em
+|{{item|Beenade}}
+|{{item|Bee Keeper}}
+|{{item|Bee Gun}}
+|{{item|The Bee's Knees|icons=n}}
+|{{item|Honey Comb}}
+|{{item|Sweetheart Necklace}}
+|{{item|Bee Cloak}}
+|{{item|Honey Balloon}}
+|{{item|Amber Horseshoe Balloon|icons=n}}
+|{{item|Stinger Necklace|icons=n}}
+|{{item|Hornet Staff|icons=n}}
+|{{item|Wasp Gun}}
+|{{item|Hive-Five|icons=n}}
+}}
+{{flexend}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在会将[[{{tr|Hornet Staff}}]]{{tr|minions}}的开火频率提高约 30%。
+** 现在会将[[{{tr|Wasp Gun}}]]的伤害和[[{{tr|armor penetration}}]]各提高 5。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}旧外观是：[[File:Hive Pack (pre-1.4.0.1).png|link=]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Hive Pack}}

@@ -1,0 +1,40 @@
+{{item infobox
+| name = Mossy Walls
+| auto = 4496
+| imagealt = <p>[[File:Green Mossy Wall.png|link=]] [[File:Brown Mossy Wall.png|link=]] [[File:Red Mossy Wall.png|link=]] [[File:Blue Mossy Wall.png|link=]] [[File:Purple Mossy Wall.png|link=]]</p><li><p>[[File:Green Mossy Wall (placed).png|link=]] [[File:Brown Mossy Wall (placed).png|link=]] [[File:Red Mossy Wall (placed).png|link=]]</p><p>[[File:Blue Mossy Wall (placed).png|link=]] [[File:Purple Mossy Wall (placed).png|link=]]</p></li>
+| imagebreak = yes
+| id = 4496–4500
+| idwall = 54–58 ([[{{tr|Unsafe wall}}]]) / 256–260 ([[{{tr|Safe wall}}]])
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox/options|view=void}}<!--
+-->{{item infobox|auto=4496}}<!--
+-->{{item infobox|auto=4497}}<!--
+-->{{item infobox|auto=4498}}<!--
+-->{{item infobox|auto=4499}}<!--
+-->{{item infobox|auto=4500}}<!--
+-->{{item infobox/options|reset}}
+
+'''{{tr|Green Mossy Wall}}'''、'''{{tr|Brown Mossy Wall}}'''、'''{{tr|Red Mossy Wall}}'''、'''{{tr|Blue Mossy Wall}}'''和'''{{tr|Purple Mossy Wall}}'''是一类[[{{tr|background walls}}]]，它们可以自然生成在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]{{tr|layers}}的[[{{tr|moss chamber}}]]中，并被算作[[{{tr|Unsafe wall}}]]。被摧毁时，它们不会作为{{tr|item}}掉落，并只能在{{eversions|1.4.0.1|short=y}}中通过{{tr|crafting}}获取。被{{tr|player}}所放置的{{tr|walls}}会被作为[[{{tr|safe wall}}]]处理。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|result=LIKE % Mossy Wall|expectedrows=5}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Mossy Wall|expectedrows=5}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|为{{tr|Green Mossy Wall, Brown Mossy Wall, Red Mossy Wall, Blue Mossy Wall, and Purple Mossy Wall}}添加了可获得的{{tr|items}}和{{tr|crafting recipes}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Mossy Walls}}

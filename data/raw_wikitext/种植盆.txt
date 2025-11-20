@@ -1,0 +1,80 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3215
+| name = Planter Boxes
+| imagealt = <p>[[File:Daybloom Planter Box.png|{{tr|Daybloom Planter Box inventory icon}}|link=]] [[File:Moonglow Planter Box.png|{{tr|Moonglow Planter Box inventory icon}}|link=]] [[File:Deathweed Planter Box.png|{{tr|Deathweed Planter Box inventory icon}}|link=]] [[File:Crimsonweed Planter Box.png|{{tr|Crimsonweed Planter Box inventory icon}}|link=]]</p><p>[[File:Blinkroot Planter Box.png|{{tr|Blinkroot Planter Box inventory icon}}|link=]] [[File:Waterleaf Planter Box.png|{{tr|Waterleaf Planter Box inventory icon}}|link=]] [[File:Shiverthorn Planter Box.png|{{tr|Shiverthorn Planter Box inventory icon}}|link=]] [[File:Fireblossom Planter Box.png|{{tr|Fireblossom Planter Box inventory icon}}|link=]]</p>
+| type = Furniture
+| width = 1 | height = 1
+| buy = yes
+| id = 3215–3222
+| cargo = no
+}}
+
+'''{{tr|Planter Boxes}}'''是一类特殊的园艺{{tr|items}}，可从[[{{tr|Dryad}}]]处以每个 {{iteminfo|Daybloom Planter Box|buy}} 的价格购买，玩家可以在其中种植[[{{tr|herb}}]]或[[{{tr|Flower Seeds}}]]。如果留空的话，[[{{tr|wild grass plants}}]]就会从放置在[[{{tr|surface}}]]或[[{{tr|Space}}]]中的{{tr|Planter Boxes}}里自然生长出来。{{source code ref|v=1.4.3.6|method=Terraria.WorldGen.UpdateWorld_OvergroundTile}}在{{tr|Planter Boxes}}中生长的{{tr|Herbs}}无法用通常的方式（即通过在旁边挥舞{{tr|tools}}的方式）来采收，只能用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]、以及[[{{tr|Staff of Regrowth}}]]或[[{{tr|Axe of Regrowth}}]]收获。
+
+{{tr|Planter Boxes}}的放置和行为与[[{{tr|platforms}}]]类似：它们的下方不需要支撑物，且玩家可以在上方行走，但按下 {{key|down}} 按键会使得玩家从其上方落下。
+
+虽然各种{{tr|planter boxes}}拥有不同的{{tr|seed}}名称和外观，但这些区别仅是美观上的：任何{{tr|herb}}{{tr|seeds}}可以在任何{{tr|planter box}}中生长，在对应{{tr|planter box}}中种植对应{{tr|seeds}}并不会提供任何额外好处。取决于{{tr|world}}中的[[{{tr|evil biome}}]]种类，{{tr|Dryad}}会售卖[[{{tr|Corrupt grass}}]]或[[{{tr|Crimson grass}}]]外观的[[{{tr|Deathweed}}]]{{tr|Planter Box}}。 
+
+== 类型 ==
+{{options/set|item|mode=table|nolink=y|icons=n}}
+{{options/set|item infobox|view=table|imagemode=placed|cols=item2cells-nolink/imageplaced/idtile/col:available}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Item}}
+! 放置状态
+! [[{{tr|Tile IDs}}]]
+! 何时有货
+{{item infobox | auto = 3215 | image = Daybloom Planter Box.png | imageplaced = Daybloom Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|King Slime}}]]后
+}}
+{{item infobox | auto = 3216 | image = Moonglow Planter Box.png | imageplaced = Moonglow Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|Queen Bee}}]]后
+}}
+{{item infobox | auto = 3217 | image = Deathweed Planter Box.png | imageplaced = Deathweed Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 在[[{{tr|Corruption}}]]{{tr|world}}中，击败[[{{tr|Eater of Worlds}}]]后
+}}
+{{item infobox | auto = 3218 | image = Crimsonweed Planter Box.png | imageplaced = Crimsonweed Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 在[[{{tr|Crimson}}]]{{tr|world}}中，击败[[{{tr|Brain of Cthulhu}}]]后
+}}
+{{item infobox | auto = 3219 | image = Blinkroot Planter Box.png | imageplaced = Blinkroot Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|Eye of Cthulhu}}]]后
+}}
+{{item infobox | auto = 3220 | image = Waterleaf Planter Box.png | imageplaced = Waterleaf Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|Skeletron}}]]后
+}}
+{{item infobox | auto = 3221 | image = Shiverthorn Planter Box.png | imageplaced = Shiverthorn Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|Skeletron}}]]后
+}}
+{{item infobox | auto = 3222 | image = Fireblossom Planter Box.png | imageplaced = Fireblossom Planter Box (placed).png | type = Furniture | tags = vendor / vendor:Dryad
+| col:available = 击败[[{{tr|Wall of Flesh}}]]后
+}}
+|}<!--
+-->{{options/reset|item}}{{options/reset|item infobox}}
+
+== 备注 ==
+* {{tr|Planter Boxes}}的功能与[[{{tr|Clay Pot}}]]和放置的[[{{tr|Rock Golem Head}}]]相似。不过，{{tr|herb seeds}}不能种在{{tr|Rock Golem Heads}}里。
+* 当对种植在{{tr|Planter Box}}中的{{tr|herb}}使用[[{{tr|Staff of Regrowth}}]]或[[{{tr|Axe of Regrowth}}]]时，只有在{{tr|herb}}开花时它才会被收集。不过，它仍然能够用{{tr|pickaxe or drill}}在任意时间收集。
+* [[{{tr|Torches}}]]可以直接放置在{{tr|Planter Box}}上方。
+* 如果{{tr|Planter Boxes}}上方有 2×2 的开放空间的话，那么[[{{tr|Tombstones}}]]就可以落在上面，但这样会摧毁其中生长的任何植物。
+
+== 小贴士 ==
+* 虽然{{tr|Planter Boxes}}和{{tr|platforms}}作用类似，但它们无法被[[{{tr|Hammers}}|锤击]]成楼梯、或使用[[{{tr|Smart Cursor}}]]斜向放置。当使用{{tr|Smart Cursor}}放置时，总是会以直线放置它们。这在由于随机的凸起或凹陷处而使得水平放置普通{{tr|platforms}}较为困难时很有用。
+* [[{{tr|Lava}}]]能够穿过{{tr|Planter Boxes}}并且不会摧毁它们，使得它们在[[{{tr|Expert Mode}}]]下建造[[{{tr|Wall of Flesh}}]]{{tr|arenas}}时很有用，因为{{tr|Expert Mode}}下的[[{{tr|Lava Slimes}}]]在被杀死时会产生{{tr|lava}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|{{tr|Skeletron Prime}}的{{tr|bombs}}现在会在接触{{tr|Planter Boxes}}时爆炸。}}
+{{history|Desktop 1.4.0.1|[[{{tr|Torches}}]]和{{tr|Tombstones}}现在可以直接放置在{{tr|Planter Boxes}}上。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Planter Boxes}}

@@ -1,0 +1,81 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 379
+| idprojectile = 81
+| image = Cultist Archer.gif
+| environment = Dungeon entrance
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.WoodenArrowHostile}}}}
+| hardmode = yes
+}}
+{{npc infobox
+| auto = 438
+| image = Lunatic Devotee.gif
+| environment = Dungeon entrance
+| hardmode = yes
+}}
+{{distinguish|{{tr|Lunatic Cultist}}}}
+
+'''{{tr|Cultist}}'''是[[{{tr|Hardmode}}]]，[[{{tr|Golem}}]]后的[[{{tr|enemy}}]]，在{{tr|Golem}}被击败后会和[[{{tr|Mysterious Tablet}}]]一起在[[{{tr|Dungeon}}]]入口生成。总共会生成四个{{tr|Cultists }}：两个'''{{tr|Cultist Archers}}'''和两个'''{{tr|Lunatic Devotees}}'''。击败所有四个{{tr|Cultists}}会使[[{{tr|Lunatic Cultist}}]] [[{{tr|boss}}]] 立即生成，生成时还会摧毁{{tr|Mysterious Tablet}}。击败{{tr|Lunatic Cultist}}会开始[[{{tr|Lunar Events}}]]。
+
+在其中一个{{tr|Cultists}}被攻击前，他们处于被动状态，不造成接触伤害，玩家可以自由走过他们而不触发他们的攻击。攻击四个{{tr|Cultist}}中的任意一个会激活{{tr|Cultist Archers}}，他们会开始用[[{{tr|bows}}]]向玩家发射[[{{tr|Wooden Arrow}}]]，并造成接触伤害。{{tr|Lunatic Devotees}}则一直处于被动状态，不会造成接触伤害。
+
+如果玩家没有召唤出{{tr|Lunatic Cultist}}；在与{{tr|Lunatic Cultist}}的战斗中逃跑或[[{{tr|Death}}]]；摧毁了所有四个[[{{tr|Celestial Towers}}]]；或是关闭{{tr|world}}后重新进入，所有四个{{tr|Cultists}}在经过一个游戏日后会重新以被动状态在{{tr|Dungeon}}入口生成。关闭世界并重新进入可能是将它们重置为初始状态的最快方式。
+
+{{tr|Lunatic Devotee}}{{tr|Cultist Archer}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 备注 ==
+[[File:Cultists Hole.png|200px|thumb|right|在有限空间中生成的{{tr|The Cultists}}。]]
+[[File:Cultists Sky.png|200px|thumb|right|在没有屋顶、大部分{{tr|block}}未被[[{{tr|Actuator}}|激活]]的地面上生成的{{tr|The Cultists}}。]]
+[[File:Cultists-air.png|200px|thumb|right|在单个{{tr|block}}上生成的{{tr|The Cultists}}。此图片世界中的所有其它{{tr|Dungeon Brick}}都已被移除（包括入口处的），在它们的四周很大一片区域都没有任何{{tr|block}}。要注意的是这些位置是它们原来所处的精确位置。]]
+
+* {{tr|Cultists}}只会在下列情况下生成：{{source code ref|v=1.3.5.3|method=Terraria.GameContent.Events.CultistRitual.CheckRitual}}
+** 世界处于[[{{tr|Hardmode}}]]，且[[{{tr|Skeletron}}]]和[[{{tr|Golem}}]]已被击败。
+** 没有 [[{{tr|bosses}}]] 存活且没有[[{{tr|events}}]]正在发生。
+** 没有[[{{tr|Mysterious Tablet}}]]存在。
+** 玩家没有位于{{tr|Dungeon}}生成点（即[[{{tr|Old Man}}]]的生成点：他晚上所站位置脚下两个{{tr|block}}的左边那个）周围 79×41 个{{tr|tile}}范围内。
+** {{tr|Dungeon}}生成点上方第 7 个{{tr|tile}}（大约为{{tr|mysterious tablet}}的中心）不是{{tr|solid block}}或[[{{tr|Actuator}}|非激活状态]]的{{tr|block}}，包括{{tr|platform}}。
+* 被动状态的{{tr|Cultists}}可能会被下列方式意外触发：
+** 尽管[[{{tr|Minion}}]]不会尝试攻击处于被动状态的{{tr|Cultists}}，造成接触伤害的[[{{tr|Minion}}]]可能会偶尔伤害到{{tr|Cultists}}。但是，[[{{tr|Tempest Staff}}|{{tr|Sharknadoes}}]]{{tr|minion}}可能会在远程攻击和{{tr|Cultist}}在同一直线上的{{tr|enemy}}时意外攻击到他们，或者通过接触伤害触发他们。
+** [[{{tr|Mechanical Cart}}]]的激光有时会瞄准被动状态的{{tr|Cultists}}。如果{{tr|Mechanical Cart}}被用来快速到达{{tr|Dungeon}}，建议将轨道末端离{{tr|Dungeon}}入口远一些。
+* {{eicons|console=y|mobile=y}} 如果其中一个{{tr|Cultists }}被一击杀死（如使用[[{{tr|Shroomite armor}}]]和[[{{tr|Sniper Rifle}}]]），其他的{{tr|Cultists}}会保持被动，{{tr|background music}}也不会改变。不过如果这样杀死所有{{tr|Cultist}}的话，{{tr|Lunatic Cultist}}仍然会生成。
+* 攻击任意一个{{tr|Cultists}}会令{{tr|Lunatic Devotees}}的祭拜动作加快，{{tr|background music}}会变为[[{{tr|BOSS 4}}]]。这是相对简单的获得此 {{tr|boss music}}的[[{{tr|Music Box}}]]的方式，因为这种方式不需要与 {{tr|boss}} 对战。
+* {{tr|The Cultist Archers}}不会消失，因此如果有畅通的道路，他们可能会跟随玩家很长一段距离。
+* 由于{{tr|Lunatic Devotee}}不会自己移动且不受[[{{tr|knockback}}]]影响，仅有的移动他们的方式为破坏他们脚下的{{tr|blocks}}，将他们[[{{tr|Teleporter}}|传送]]，或者使用[[{{tr|hoik}}]]。
+* 如果{{tr|Lunatic Devotees}}被杀死，而{{tr|Cultist Archers}}被引走并且在远处被杀死，{{tr|Lunatic Cultist}}不会生成。{{tr|Cultists}}也不会重新生成。这一问题可以通过退出世界后重进来解决。
+* {{eicons|1.3.4}} [[{{tr|Minions}}]]不能被玩家手动命令攻击{{tr|Cultists}}。
+* {{tr|The Cultists}}不能被{{tr|lava}}伤害，也不能用{{tr|water}}来溺毙。
+* 如果其中一个{{tr|cultists}}被[[{{tr|Fallen Star}}]]击中，他们会像被玩家攻击后一样变为敌对状态。
+
+== 花絮 ==
+* 游戏文件中出现了[[{{tr|White Cultist Archer}}]]，但在实际游戏中不会生成。源码中也包含了以下角色的属性，但它们既没有对应的图像，也不会在游戏中生成：'''{{tr|Blue Cultist Fighter}}'''、'''{{tr|White Cultist Caster}}'''和'''{{tr|White Cultist Fighter}}'''。游戏文件中也包含了这些角色的{{$|Banners||enemy}}（和{{tr|banner}}外观图），但它们目前无法获得。除此之外，只有{{tr|White Cultist Archer}}能够通过作弊或第三方工具生成。除了外观以外，{{tr|White Cultist Archer}}和{{tr|Blue Cultist Archer}}完全相同。
+* 虽然弓手使用的似乎是{{tr|Wooden Bow}}和{{tr|Wooden Arrows}}，它们被玩家使用时造成的基础伤害为{{#expr:{{iteminfo|Wooden Bow|damage}}+{{iteminfo|Wooden Arrow|damage}}}}，但是他的{{tr|ranged attack}}会造成 80 / {{expert|160}} / {{master|240}} 伤害。
+* 如果一个{{tr|Cultist}}被带到远离{{tr|Dungeon}}的地方后被杀死，{{tr|Lunatic Cultist}}的召唤动画仍会播放，但不会生成。
+* {{lore|{{tr|Lunatic Cultist}}和他们的教派崇拜{{tr|Cthulhu}}并希望重建/恢复他们的主人。他们迫使[[{{tr|Mechanic}}]]创造[[{{tr|Mechanical Bosses}}]]来替换{{tr|Cthulhu}}身上被撕下的器官。}}
+{{bestiary
+|Blue Cultist Archer
+|Lunatic Devotee
+}}
+
+== 另见 ==
+* [[{{tr|Cultist set}}]]，由[[{{tr|Clothier}}]]售卖的一套很像{{tr|Cultists}}的{{tr|vanity set}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Lunatic Devotee}}从 "Lunatic Devote" 更名为 "Lunatic Devotee"。}}
+{{history|Desktop 1.3.0.4|
+** 不再会在[[{{tr|Moon Lord}}]]生成过程中生成。
+** 不再能在重要事件发生时（如 {{tr|boss}} 战、{{tr|invasion}}时）生成。
+** 修复了{{tr|cultists}}在[[{{tr|multiplayer}}]]中罕见情况下会陷入地面的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-main = yes
+| show-hardmode = yes
+}}
+{{language info|en=Cultists}}

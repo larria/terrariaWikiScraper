@@ -1,0 +1,99 @@
+{{forlist|令玩家不可见的[[{{tr|potion}}]]|{{tr|Invisibility Potion}}|其他使某些东西不可见的效果|{{tr|Invisibility (disambiguation)}}}}
+
+'''{{tr|Stealth}}'''是一种能力，完全进入{{tr|Stealth}}可以让玩家变得几乎不可见，并阻止某些[[{{tr|enemies}}]]以玩家为目标。此外，它还会为玩家提供一些进攻性属性，例如伤害和[[{{tr|critical strike chance}}]]{{tr|bonuses}}。通常，玩家需要消耗一段较短的时间来完全进入{{tr|Stealth}}。玩家骑乘[[{{tr|mount}}]]时无法进入{{tr|stealth}}。
+
+有 3 个提供此能力的{{tr|items}}。
+
+== 细节 ==
+在内部，{{tr|stealth}}的效果由两个变量所控制：<code>stealth</code>{{source code ref|v=1.4.4.9|field=Terraria.Player.stealth}} 和 <code>stealthTimer</code>{{source code ref|v=1.4.4.9|field=Terraria.Player.stealthTimer}}。
+
+<code>stealth</code> 被用作进入{{tr|stealth}}的进度。默认情况下，玩家的 <code>stealth</code> 值为 1。当玩家激活了一种{{tr|stealth}}能力时，其 <code>stealth</code> 会固定以每{{tr|tick}}{{tick}}一定量的速度降低。当 <code>stealth</code> 到达 0 时，玩家即被视为完全进入{{tr|stealth}}。{{tr|stealth}}能力提供的属性更改也会根据 <code>stealth</code> 的值进行缩放，由下方公式计算：
+: <math>\text{实际属性更改} = \text{属性更改}\times(1-\mathit{stealth})</math>
+这意味着在进入{{tr|stealth}}的过程中，属性更改会线性地从 0 提高到最大值（在下方[[#{{tr|Items}}|{{tr|items}}列表]]中列出）。
+* 例如，玩家带着[[{{tr|Psycho Knife}}]]站定不动时，<code>stealth</code> 每{{tr|tick}}会降低 0.02。因此，玩家会在 50 {{tr|ticks}}（{{duration|50ticks}}）后进入{{tr|stealth}}。完全进入{{tr|stealth}}后，{{tr|Psycho Knife}}的{{tr|stealth}}会为玩家提供 +300% [[{{tr|melee damage}}]]；在进入{{tr|stealth}}的转变中，在开始进入{{tr|stealth}}之后的 25 {{tr|ticks}}（{{duration|25ticks}}）后，这一{{tr|bonus}}则会是 <math display="inline">300\%\times(1-0.5)=150\%</math>。
+
+<code>stealthTimer</code> 作为进入{{tr|stealth}}的冷却。默认情况下，<code>stealthTimer</code> 的值为 0。如果它高于 0，它每{{tr|tick}}会降低 1，在 <code>stealthTimer</code> 重新到达 0 前，玩家的 <code>stealth</code> 属性不会降低。这一属性被{{tr|Psycho Knife}}和[[{{tr|Shroomite armor}}]]的{{tr|stealth}}所使用，若玩家在进入{{tr|stealth}}前使用了{{tr|item}}，就会短暂地暂停{{tr|stealth}}过程。
+* 例如，若玩家装备了{{tr|Shroomite armor}}并在完全进入{{tr|stealth}}前使用了{{tr|item}}，只要{{tr|item}}的使用动画未结束 <code>stealthTimer</code> 就会被设为 5。这意味着在{{tr|item}}的使用动画结束后，玩家还需要等待 5 {{tr|ticks}}（{{duration|5ticks}}），<code>stealth</code> 才会再次开始降低。
+
+=== 效果 ===
+{{tr|Stealth}}提供以下的效果：
+* 某些属性更改（基于{{tr|stealth}}的来源而定），会在玩家的 <code>stealth</code> 到达 0 时达到最高效果。
+* 玩家的 <code>stealth</code> 到达 0 后，如果玩家没有在使用任何{{tr|item}}，[[{{tr|Fighter AI}}]] 和[[{{tr|Flying AI}}]] 的{{tr|enemies}}就不会向玩家发射[[{{tr|projectiles}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters / Terraria.NPC.AI_005_EaterOfSouls}}
+* [[{{tr|NPCs}}]] 不会尝试与 <code>stealth</code> 属性不为 1 的玩家“对话”（即发出[[{{tr|emotes}}]]）。{{source code ref|v=1.4.4.9|property=Terraria.Player.CanBeTalkedTo}}
+* 在[[{{tr|multiplayer}}]]下，{{tr|stealth}}会改变玩家的{{tr|health bar}}的透明度。玩家的 <code>stealth</code> 到达 0 时，{{tr|The health bar}}将不可见。{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawInterface_14_EntityHealthBars}}
+
+== 物品 ==
+{{tr|The Psycho Knife}}的{{tr|stealth}}要优先于{{tr|armors}}的{{tr|stealth}}。如果同时使用{{tr|Psycho Knife}}和其中一套{{tr|armor}}，在进入{{tr|stealth}}后，玩家仅会获得{{tr|Psycho Knife}}的{{tr|stealth}}带来的属性更改（仅有的例外为{{tr|knockback bonus}}：会同时获得来自两件{{tr|item}}的{{tr|knockback bonus}}）。
+{{options/set|item|mode=table}}
+{|class="terraria lined"
+! colspan=2 | {{tr|Item}}
+! <code>stealth</code> 变化条件{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update}}
+! <code>stealthTimer</code> 变化条件<ref name="update"/>
+! 属性更改{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.GetWeaponKnockback / Terraria.Player.ItemCheck_OwnerOnlyCode}}{{footnote|此处的值代表 <code>stealth</code> 到达 0 时的属性更改。}}
+|-
+| {{item|Psycho Knife}}
+|
+* 玩家静止不动{{footnote|name=stationary|“静止不动”的实际条件为玩家的水平和垂直速度均低于 0.1 像素/{{tr|tick}}。}}且未在使用任何{{tr|item}}：-0.02 <code>stealth</code>/{{tr|tick}}
+** 这意味着完全进入{{tr|stealth}}需要 {{duration|1/0.02ticks}}。
+* 在 <code>stealth</code> 到达 0 前，且玩家在移动''或''使用任何{{tr|item}}：+0.1 <code>stealth</code>/{{tr|tick}}
+* 在{{tr|stealth}}时，当任何下列情况发生时 <code>stealth</code> 会被立即设为 1：
+** {{tr|The weapon}}击中目标。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyNPCOnHitEffects / Terraria.Player.ItemCheck_MeleeHitPVP}}
+** 玩家切换到其他{{tr|item}}。
+** 玩家召唤了[[{{tr|mount}}]]。<ref name="update"/>
+** 玩家受到任何伤害。{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}
+|
+* 在{{tr|stealth}}时击中目标后：<br/><code>stealthTimer</code> 被设为 15（{{duration|15ticks}}）
+|
+* +300% [[{{tr|melee}}]][[{{tr|damage}}]]
+* +30% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +100% {{tr|melee}}[[{{tr|knockback}}]]
+* -750 [[{{tr|aggro}}]]
+* -50% [[{{tr|movement speed}}]]；然后将{{tr|sprint speed}}设为与{{tr|move speed}}相等
+|-
+| {{item|Shroomite armor|note2=（{{tr|Set Bonus}}）}}
+|
+* 玩家静止不动{{footnote|name=stationary}}且未在使用任何{{tr|item}}：-0.015 <code>stealth</code>/{{tr|tick}}
+** 这意味着完全进入{{tr|stealth}}需要 {{duration|1/0.015ticks}}。
+* 玩家移动：<math display="inline">+0.075\times(\text{水平速度}+\text{垂直速度})</math> <code>stealth</code>/{{tr|tick}}
+** 水平速度和垂直速度的单位均为像素/{{tr|tick}}。
+* 在{{tr|stealth}}时，当任何下列情况发生时 <code>stealth</code> 会被立即设为 1：
+** {{tr|The Set Bonus}}不再激活。
+** 玩家召唤了[[{{tr|mount}}]]。<ref name="update"/>
+** 玩家受到任何伤害。
+|
+* 完全进入{{tr|stealth}}前使用{{tr|item}}：<br/><code>stealthTimer</code> 被设为 5（{{duration|5ticks}}）
+|
+* +60% [[{{tr|ranged}}]]{{tr|damage}}
+* +10% {{tr|ranged critical strike chance}}
+* −750 {{tr|aggro}}
+* +50% {{tr|ranged knockback}}
+|-
+| {{item|Vortex armor|note2=（{{tr|Set Bonus}}）}}
+|
+* 激活了{{tr|Stealth mode}}：±0.04 <code>stealth</code>/{{tr|tick}}
+** 这意味着完全进入或退出{{tr|stealth}}需要 {{duration|1/0.04ticks}}。
+* 在{{tr|stealth}}时，当任何下列情况发生时 <code>stealth</code> 会被立即设为 1：
+** {{tr|The Set Bonus}}不再激活。
+** 玩家受到任何伤害。
+* 当任何下列情况发生时{{tr|Stealth}}会立即被取消：
+** 玩家召唤了[[{{tr|mount}}]]。<ref name="update"/>
+** 玩家使用任何[[{{tr|dash}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.DashMovement}}
+| {{na}}
+|
+* +80% {{tr|ranged damage}}
+* +20% {{tr|ranged critical strike chance}}
+* −1200 {{tr|aggro}}
+* +50% {{tr|ranged knockback}}
+* ×0.3 {{tr|movement speed}}；这一倍率固定，不受 <code>stealth</code> 的影响{{footnote|会同时影响{{tr|move speed and sprint speed}}。}}
+|}{{options/reset|item}}
+
+== 备注 ==
+* 传送效果（[[{{tr|Teleporter}}]]、[[{{tr|Magic Mirror}}]]、[[{{tr|Rod of Discord}}]]、等等）和使用[[{{tr|hooks}}]]不会取消{{tr|stealth}}。
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{language info|en=Stealth}}

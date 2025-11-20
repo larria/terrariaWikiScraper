@@ -1,0 +1,66 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| name = Seashells
+| imagealt = [[File:Seashell.png]] [[File:Starfish.png]]</li><li>[[File:Seashell (placed).png]]<br/>[[File:Starfish (placed).png]]</li>
+| type = Furniture
+| auto = 2625
+| width = 1 | height = 1
+| sell =
+| research =
+| tags = plunder
+| cargo = no
+}}
+
+'''{{tr|Seashells}}'''是一类{{tr|decorative items}}，可被发现于[[{{tr|Ocean}}]]{{tr|biomes}}中。它们可在{{tr|biome}}中的[[{{tr|Sand Blocks}}]]上生成，既可以在沙滩上也可在水下生成。它们被放置出来时会呈现为三种变体之一。
+
+{{eicons|1.4.0.1}} {{tr|Seashells}}可在沙滩上和水下生成，只要 8 {{tr|tiles}}内有不多于 3 个[[{{tr|Coral}}]]或{{tr|Seashells}}。生成速率和[[{{tr|rain}}]]、[[{{tr|wind}}]]、和{{tr|Sand Block}}上最多 14 {{tr|tiles}}的空余空间有关。当{{tr|Seashell}}生成时，有 79.4% 的几率生成普通{{tr|Seashell or a Starfish}}，9.8% 的几率生成{{tr|Tulip Shell}}，8.8% 的几率生成{{tr|Lightning Whelk Shell}}，2% 的几率生成{{tr|Junonia Shell}}。
+
+{{eicons|Seashells|not=1.4.0.1}} {{tr|Seashells}}不会重新生成，被世界生成时的数量所限制，使它们变成了[[不可再生物品]]。
+
+== 类型 ==
+{{item infobox/options|mode=table|cols=item2cells-anchor-nolink/sacrifices/sell-alignright}}
+{| class="terraria lined"
+! colspan=2 | 类型
+! 研究
+! {{tr|Sell price}}
+{{item infobox | auto = 2625 | type = Furniture | width = 1 | height = 1 | tags = plunder }}
+{{item infobox | auto = 2626 | type = Furniture | width = 1 | height = 1 | tags = plunder }}
+{{item infobox | auto = 4073 | type = Furniture | width = 1 | height = 1 | tags = plunder }}
+{{item infobox | auto = 4072 | type = Furniture | width = 1 | height = 1 | tags = plunder }}
+{{item infobox | auto = 4071 | type = Furniture | width = 1 | height = 1 | tags = plunder }}
+|}<!--
+-->{{item infobox/options|reset}}
+
+== {{tr|Notes}} ==
+* 虽然技术上说并非真正的{{tr|seashell}}，但{{tr|Starfish}}有着相同的功能、生成条件、[[{{tr|Tile IDs}}]]、和内部名称。它们都在代码中被叫做“沙滩堆”（Beach Piles)。
+* 在 {{eversions|1.4.0.1}} 中：
+** 当{{tr|Seashells and Starfish}}生成时，会发出可以听见的“砰”一声。
+** 生成率会在[[{{tr|rain}}]]和[[{{tr|wind}}]]期间增加，二者兼备且最强时则得到最多加成。
+** 生成率会因每个{{tr|Sand Block}}上方的空{{tr|tiles}}而增加，最多 14 {{tr|tiles}}。这意味着若不是因为{{tr|Sand Block}}下需要垫上额外的{{tr|solid block}}，则 14 {{tr|tiles}}内的两个{{tr|sand}}{{tr|platforms}}生成率是相等的。空{{tr|tiles}}可包括{{tr|water}}、{{tr|walls}}和[[{{tr|Actuator}}|未致动的{{tr|tiles}}]]。
+** 若 11 {{tr|tiles}}内有 1 个或更多{{tr|Seashell}}或[[{{tr|coral}}]]，则生成率会降低。若 8 {{tr|tiles}}内有多于3 个，则不会再生成。
+
+== {{tr|Tips}} ==
+* {{eicons|1.4.0.1}} 虽然{{tr|Junonia Shells}}与{{tr|Seashells}}一同生成，但前者卖的明显更多，可作为游戏早期非常好的金钱来源。
+* {{eicons|1.4.0.1}} 简单的{{tr|Seashell}}农场可以通过将[[{{tr|Sand Blocks}}]]放置在相距 14 {{tr|tiles}}的{{tr|platforms}}上实现。{{tr|Seashells}}只要处于[[{{tr|Ocean}}]]{{tr|biomes}}上方就会出现，即使是在[[{{tr|Space}}]]{{tr|layer}}中也是如此。[[{{tr|Walls}}]]会阻止[[{{tr|Sea Oats}}]]生成，但不妨碍{{tr|Seashell}}生成。
+
+== {{tr|Crafting}} ==
+=== {{tr|Used in}} ===
+{{recipes|ingredient=Seashell/Starfish/Lightning Whelk Shell/Tulip Shell/Junonia Shell|expectedrows=5}}
+
+== {{tr|Trivia}} ==
+* {{tr|The Seashell}}和{{tr|Coral}}是仅有的{{tr|inventory}}外观和任何一种放置状态变体都不一样的装饰性[[{{tr|background objects}}]]。
+* 在 [[1.3.5]] 之前，{{tr|Terraria}}物品名称曾经存储在单独的语言文件中，而物品的“名称”属性仅仅只是内部占位符。{{tr|Seashells}}和{{tr|Starfish}}的内部名称是“沙滩上的玩意”（Beach Stuff）。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.5|现在正确的符合其{{tr|tile}}放置预览。}}
+{{history|Desktop 1.4.0.1|
+** 现在用于制作[[{{tr|Shell Pile}}]]。
+** 现在会在{{tr|Ocean biome}}中再生，使其成为可再生资源。
+** 添加了{{tr|Lightning Whelk Shells, Tulip Shells and Junonia Shells}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Seashells}}

@@ -1,0 +1,92 @@
+{{halloween only}}
+{{item infobox
+| auto = 1774
+| type = Grab bag
+| tooltip = {{icon/desktop}} @@@@<br/>{{icon/xbox}} 按 LT 打开<br/>{{icon/playstation}} 按 R1 打开<br/>{{icon/wiiu}} 按 ZR 打开<br/>{{icon/switch}} 按 ZL 打开<br/>{{icon/mobile|small=y}} 双击打开<br/>{{icon/3DS}} 点击打开{{tr|present}}！
+| tags = drop
+}}
+{{dablink|不要与相似的{{tr|Expert Mode}}独有物品{{eil|Treasure Bag}}相混淆。}}
+
+'''{{tr|Goodie Bag}}'''是种[[{{tr|grab bag}}]]类物品，在[[{{tr|Halloween}}]][[{{tr|seasonal event}}]]期间可用。每个{{tr|Goodie Bag}}会包含下表中的一种随机奖励。{{tr|Goodie Bags}}和所有其他{{tr|grab bags}}一样，是通过在玩家的[[{{tr|inventory}}]]中按 {{key|open}} 来打开的。随时都可以打开它们，即使在{{tr|the Halloween}}之外亦可。
+
+{{tr|Goodie Bags}}以 {{chance|1/80}} 几率掉落自除[[{{tr|Statues}}|{{tr|statue}}生成的{{tr|enemies}}]]和[[{{tr|Meteor Head}}]]外任意[[{{tr|enemy}}]]，仅限{{tr|Halloween}}期间{{source code ref|v=1.4.3.6|class=Terraria.GameContent.ItemDropRules.Conditions.HalloweenGoodieBagDrop}}。
+
+== 掉落 ==
+<!--
+The chance values in this table are taken from the Desktop 1.4.1.2 source code, Terraria.Player.openGoodieBag.
+They are displayed using {{#expr:}} to ensure the highest level of precision.
+-->
+{{loot
+
+| Unlucky Yarn|1|1/150
+| Bat Hook|1|149/22500
+| Rotten Egg|10–40|{{#expr:(149*149*1)/(150*150*4)}}
+
+|:group:start|1|{{#expr:(149*149*3*1)/(150*150*4*10)}}
+  | Jacking Skeletron||
+  | Bitter Harvest||
+  | Blood Moon Countess||
+  | Hallow's Eve||
+  | Morbid Curiosity||
+|:group:end|-----------------|-
+
+|:group:start|1|{{#expr:(149*149*3*9*1)/(150*150*4*10)}}
+  | Cat set||
+  | Creeper set||
+  | Ghost set||
+  | Leprechaun set||
+  | Pixie set||
+  | Princess set||
+  | Pumpkin set||
+  | Robot set||
+  | Unicorn set||
+  | Vampire set||
+  | Witch set||
+  | Bride of Frankenstein set||
+  | Karate Tortoise set||
+  | Reaper set||
+  | Fox set||
+  | Cat Ears||
+  | Space Creature set||
+  | Wolf set||
+  | Treasure Hunter set||
+|:group:end|-----------------|-
+
+}}
+
+== 小贴士 ==
+* 可以通过打败大量{{tr|enemies}}来快速获得{{tr|Goodie Bags}}。[[{{tr|Water Candle}}]]和[[{{tr|Battle Potion}}]]可以提升{{tr|regular spawn rate}}，但诸如[[{{tr|Goblin Invasion}}]]或[[{{tr|Slime Rain}}]]之类的[[{{tr|events}}]]已被证明更加有效。
+* 大多数{{tr|Goodie Bag}}奖励是[[{{tr|vanity item}}]]套装（66.6%）或[[{{tr|Rotten Egg}}]]（24.67%），偶尔也有[[{{tr|paintings}}]]（7.4%）。{{tr|Costumes}}大多会一次收到两三件，每件可以卖 {{iteminfo|Creeper Mask|sell}}。{{tr|paintings}}则每件可以卖 {{iteminfo|Bitter Harvest|sell}}。
+
+== 花絮 ==
+* 很多{{tr|vanity sets}}都参考了流行文化：
+** {{tr|The Creeper set}}参考了 3D 沙盒电子游戏《''{{iwlink|mc|Minecraft|我的世界（Minecraft）}}''》。
+** {{tr|The Space Creature set}}参考了{{wikipedia|lang=en|Xenomorph (Alien franchise)|异形生物}}，这是一种虚构的{{wikipedia|lang=en|endoparasitoid|内寄生}}{{wikipedia|lang=en|Extraterrestrials in fiction|外星生物}}物种，是{{wikipedia|lang=en|Alien (franchise)|《异形》系列电影}}中的对立种族。
+** 空手道陆龟则是个文字游戏，参考了虚构的少年拟人化乌龟《''{{wikipedia|lang=en|Teenage Mutant Ninja Turtles|忍者神龟（Teenage Mutant Ninja Turtles）}}''》。
+** {{tr|the Leprechaun set}}参考了 2006 年的《{{wikipedia|lang=en|Crichton Leprechaun}}》视频，这是一件假设在 Crichton（Mobile, Alabama）的一棵树中看到{{wikipedia|lang=en|leprechaun|{{tr|leprechaun}}}}的事情。<ref>[http://www.reddit.com/r/Terraria/comments/1o9m6v/to_me_it_look_like_a_leprechaun_to_me_all_you/  Reddit 上 Redigit 发的贴] {{small|{{date|date=Oct 12, 2013}}}}</ref>
+* {{tr|The Bride of Frankenstein}}参考了 1935 年的美国科幻黑暗漫画恐怖电影{{wikipedia|lang=en|The Bride of Frankenstein|《The Bride of Frankenstein（科学怪人的新娘）》}}。
+* 画作《{{tr|Jacking Skeletron}}（Jacking Skeletron）》参考了 1993 年美国定格动画音乐黑暗奇幻万圣节圣诞电影《''{{wikipedia|lang=en|The Nightmare Before Christmas|怪诞城之夜（The Nightmare Before Christmas）}}''》，其中的主角是 {{wikipedia|lang=en|Jack Skellington}}。画作中描绘的场景是骷髅在电影中的一个标志性的地点。
+** 此外，''jacking'' 在俚语中是''偷窃''的意思，《怪诞城之夜》的主要情节是 Jack Skellington 试图偷走圣诞节，这样他就能取代圣诞老人来运作这个节日。
+* {{tr|The Treasure Hunter Set}}可能参考了电子游戏中的人物 {{维基百科|Lara Croft}} {{note|small=y|paren=y|译注：《古墓丽影》的主人公}}和 {{维基百科|Nathan Drake (Uncharted)|Nathan Drake}} {{note|small=y|paren=y|译注：《神秘海域》的主人公}}。
+
+== 另见 ==
+* [[{{tr|Present}}]]
+
+== 历史 ==
+{{history|Desktop 1.2.1.2|[[{{tr|Bat Hook}}]]现在会正确掉落自{{tr|the Goodie Bag}}。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.0|{{tr|Introduced.}}（{{icon|windows phone}}）}}
+{{history|Mobile 1.2.6667|{{tr|Introduced.}}（{{icon|google play}}）}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}（{{icon|ios}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Goodie Bag}}

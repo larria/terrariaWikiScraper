@@ -1,0 +1,49 @@
+{{npc infobox|boxwidth=18em
+| auto = 350
+| image = Elf Archer.gif
+| image2 = Elf Archer (old).png
+| idprojectile = 82
+| type = Enemy
+| environment = Frost Moon
+| damage2 = &#32;{{note|small=y|({{tr|melee}})}}<br/>{{modes|90|180|270}} {{note|small=y|paren=y|{{tr|flaming arrows}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_003_Fighters}}
+| debuff = On Fire!
+| debuffchance = 33% {{note|small=y|paren=y|{{tr|flaming arrows}}}}
+| debuffduration = {{modes|7|14|17.5}} {{tr|seconds}} {{source code ref|v=1.4.0.5|name=debuff|{{code|Terraria.Projectile.cs}} 中的 {{code|StatusPlayer()}} 方法（在 {{code|<nowiki>type == 82</nowiki>}} 下）}}
+| hardmode = yes
+}}
+
+'''{{tr|Elf Archer}}'''是[[{{tr|Hardmode}}]]中[[{{tr|Plantera}}]]之后的[[{{tr|enemy}}]]，在[[{{tr|Frost Moon}}]][[{{tr|event}}]]中，从第 2 波开始出现。它与[[{{tr|Pirate Crossbower}}]]和[[{{tr|Skeleton Archer}}]]非常相似，发射能造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]的[[{{tr|Flaming Arrow}}]]。
+
+在{{tr|Frost Moon}}期间击败{{tr|Elf Archer}}会获得 3 点 / {{expert|6 点}} / {{master|7.5 点}}得分。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Master Mode}}中每次击杀时，给予的{{tr|Frost Moon}}波次点数从 6 增加至 7.5。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Damage}}由 80 降低至 70。
+** 现在每被玩家击杀 50 次时会掉落[[{{tr|Banners (enemy)|link=y}}#{{tr|Frost Moon}}|{{tr|Elf Archer Banner}}]]。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|进行了对应于（{{icon|ps4}}的）1.0.750.0 更新的更改。（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|
+** {{tr|Damage}}由 80 降低至 70。
+** 现在每被玩家击杀 50 次时会掉落[[{{tr|Banners (enemy)|link=y}}#{{tr|Frost Moon}}|{{tr|Elf Archer Banner}}]]。（{{icon|ps4}}）}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Damage}}由 80 降低至 70。
+** 现在每被玩家击杀 50 次时会掉落[[{{tr|Banners (enemy)|link=y}}#{{tr|Frost Moon}}|{{tr|Elf Archer Banner}}]]。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|带着到{{tr|Desktop}} [[1.3.0.1]] 为止的相应更新引入。}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Frost Moon Enemies}}
+{{Master Template Characters
+| show-event=yes
+}}
+
+{{language info|en=Elf Archer}}

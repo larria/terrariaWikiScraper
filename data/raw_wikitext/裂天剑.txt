@@ -1,0 +1,46 @@
+{{exclusive|1.3.3}}
+{{item infobox|boxwidth = 25em
+| hardmode = yes
+| auto = 3787
+| listcat = wands
+}}
+[[File:Sky Fracture (demo).gif|framed|right|303x303px|对[[{{tr|Target Dummy}}]]使用{{tr|Sky Fracture}}。]]
+
+'''{{tr|Sky Fracture}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|wand}}]]。使用时，它会从{{tr|player}}身后依次迅速地召唤处三个瞄准光标所在的位置的能量剑。{{tr|sword}}不能穿透[[{{tr|enemy}}]]或穿过[[{{tr|block}}]]。{{tr|Sky Fracture}}的基础[[{{tr|critical strike chance}}]]为 {{iteminfo|Sky Fracture|crit}}，而非通常的 4%。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sky Fracture|expectedrows=1}}
+
+== 备注 ==
+* 在内部，{{tr|Sky Fracture}}具有 {{iteminfo|Sky Fracture|useTime}} <code>[[useTime]]</code>，以及 {{iteminfo|Sky Fracture|useAnimation}} <code>[[useAnimation]]</code>，使得其每次按下 {{key|use}} 键会发射 {{#expr:{{iteminfo|Sky Fracture|useAnimation}}/{{iteminfo|Sky Fracture|useTime}}}} 次。它还具有 {{iteminfo|Sky Fracture|reuseDelay}} 的 <code>[[reuseDelay]]</code>，在每个 <code>useAnimation</code> 之间添加了 {{iteminfo|Sky Fracture|reuseDelay}} {{tr|ticks}}{{tick}}（{{duration|{{iteminfo|Sky Fracture|reuseDelay}} ticks}}）的冷却时间，使得攻击总计需要 {{#expr:{{iteminfo|Sky Fracture|reuseDelay}}+{{iteminfo|Sky Fracture|useAnimation}}}} {{tr|ticks}}（{{duration|{{#expr:{{iteminfo|Sky Fracture|reuseDelay}}+{{iteminfo|Sky Fracture|useAnimation}}}} ticks}}）。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults4}}
+** {{tr|The Sky Fracture}}的 <code>reuseDelay</code> 始终计算为其 <code>useAnimation + 6</code>。这使得其 <code>reuseDelay</code> 会随其{{tr|modifier}}变化。
+* 每一个剑射弹都会从 14 种不同的外形中选取一种。
+
+== 小贴士 ==
+* 由于{{tr|projectile}}的{{tr|critical strike chance}}不是基于发射它的武器，而是基于玩家当前手持的武器的，它与[[{{tr|Nimbus Rod}}]]和[[{{tr|Clinger Staff}}]]配合得超乎预料地好，因为它们的静态射弹在被召唤后会继承其 {{iteminfo|Sky Fracture|crit}} 的暴击率。
+
+== 花絮 ==
+* 它的{{tr|critical strike chance}}与[[{{tr|Obsidian Swordfish}}]]并列第二（{{iteminfo|Sky Fracture|crit}}），仅被[[{{tr|Sniper Rifle}}]]（{{iteminfo|Sniper Rifle|crit}}）打败。
+* 在 [[1.3.5]] 前，{{tr|items}}曾有一个未被使用的{{tr|internal name}}。{{tr|Sky Fracture}}的{{tr|internal name}}是 “magic glove”。{{source code ref|v=1.3.4.4|old=y|method=Terraria.Item.SetDefaults4}}
+* {{tr|Sky Fracture}}是用两种{{tr|Shards}}各一个来制造的武器小“套装”中的一把，其他的成员是[[{{tr|Onyx Blaster}}]]和[[{{tr|Dao of Pow}}]]。它们的{{tr|recipes}}、名称和外观将武器与黑暗、光明、还有平衡的主题联系起来，其中{{tr|Sky Fracture}}代表着光明。套装中还包括三种“经典”伤害类型（[[{{tr|melee}}]]、[[{{tr|magic}}]]、和[[{{tr|ranged}}]]）对应的武器各一把，其中{{tr|the Sky Fracture}}是{{tr|magic weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Mana cost}}由 14 提升至 17。}}
+{{history|Desktop 1.3.3.1|修正了出售和[[{{tr|reforge}}]]{{tr|costs}}。}}
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|修复了施法之间缺少延迟的问题，该问题大大提高了开火速率和伤害输出。}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.3.3.1 及 1.4.0.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Sky Fracture}}

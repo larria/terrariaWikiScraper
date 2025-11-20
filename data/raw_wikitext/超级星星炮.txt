@@ -1,0 +1,60 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4060
+| idprojectile = 728, 729
+| tags = hardmode
+| sound1 = Item 9.wav <!-- played every 20–59 ticks; Desktop 1.4.4.9 source code, Terraria.Projectile.AI_151_SuperStar -->
+| soundcaption1 = {{tr|Star}}{{tr|projectile}}
+| sound2 = Item 10.wav <!-- Desktop 1.4.4.9 source code, Terraria.Projectile.Kill -->
+| soundcaption2 = 斩切
+| sound3 = Item 10.wav
+| soundcaption3 = {{tr|Impact}}
+}}
+[[File:Super Star Shooter (demo).gif|frame|right|使用{{tr|Super Star Shooter}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Super Star Shooter}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|ranged weapon}}]]，它是[[{{tr|Star Cannon}}]]的直接升级版本，以[[{{tr|Fallen Star}}]]为[[{{tr|ammunition}}]]，弹道为直线。{{tr|star}}{{tr|projectiles}}不受{{tr|gravity}}影响，可以穿透无限个[[{{tr|enemy}}]]，并会召唤出明亮的白色光痕斩向命中的{{tr|enemy}}，造成额外的相当于{{tr|weapon}}{{tr|damage}} 75% 的{{tr|damage}}（{{#expr:floor({{iteminfo|Super Star Shooter|damage}}*0.75)}} {{tr|base damage}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SummonSuperStarSlash}} {{tr|Star}}{{tr|projectiles}}在命中实体{{tr|block}}或飞行一分钟后，会消散为发光粒子。
+
+{{modifier|ranged}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Super Star Shooter|expectedrows=1}}
+
+== 备注 ==
+* 在 [[For the worthy]] 和 [[Get fixed boi]] {{tr|world}}中，大部分 [[{{tr|boss}}]] 可以反弹{{tr|Fallen Star}}{{tr|projectiles}}。
+** 另外，{{tr|Super Star Shooter}}的{{tr|base damage}}降低至 {{#expr:floor({{iteminfo|Super Star Shooter|damage}}*0.9)}}，{{tr|base use time}}提升至 {{use time|full=y|class=|{{#expr:floor({{iteminfo|Super Star Shooter|use}}*1.1)}}}}。<!-- ItemVariants.RebalancedVariant -->
+
+== 小贴士 ==
+* {{tr|Super Star Shooter}}可以在击败任一[[{{tr|mechanical bosses}}]] 后立即制作，并且在对付它们（尤其是[[{{tr|Destroyer}}]]）时非常有效。
+* 鉴于很难收集大量的{{tr|Fallen Star}}，降低[[{{tr|Ammunition item}}|{{tr|Ammo}}]]消耗的{{tr|item}}（如：[[{{tr|Ammo Box}}]]）会很有用。
+** 在[[{{tr|Journey Mode}}]]中[[{{tr|Fallen Star}}]]可以很容易地被复制。
+* 由于{{tr|Super Star Shooter}}能够穿透[[{{tr|enemy}}]]，它拥有出色的群体控制能力，直到击败[[{{tr|Golem}}]]都很有用。
+
+== 花絮 ==
+* 其{{tr|tooltip}}参考了电视节目{{wikipedia|Pinky and the Brain|《两只老鼠打天下（Pinky and the Brain）》}}和{{wikipedia|Animaniacs|《狂欢三宝（Animaniacs）》}}。
+* {{tr|Super Star Shooter}}的{{tr|rarity}}为{{iteminfo|Super Star Shooter|rare}}，虽然它在击败一个{{tr|mechanical boss}} 后就可制作。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 斩切现在使用{{tr|static immunity}}，因此其{{tr|immune frames}}不再会阻止{{tr|Star}}{{tr|projectile}}命中。
+** 斩切现在造成 75% {{tr|base damage}}，而非 50%。
+** 如果{{tr|character}}背对着墙射击，{{tr|Star}}{{tr|projectile}}不再会立即消失。}}
+{{history|Desktop 1.4.1.2|
+** {{tr|use time}}由 12 提升至 18。
+** {{tr|damage}}由 70 降低至 60。}}
+{{history|Desktop 1.4.1|现在{{tr|craftable}}，而不是由[[{{tr|Traveling Merchant}}]]以 {{gc|50}} 的价格出售。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hallowed}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Super Star Shooter}}

@@ -1,0 +1,115 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Armor/Set
+| buff = Solar Blaze
+| idbuffshow = 170–172
+| idprojectile = 608
+| hardmode = yes
+| sound1 = Item 14.wav
+| soundcaption1 = {{gameText|ProjectileName.SolarCounter}}
+}}
+
+{{float file box
+|class=note-text
+|[[File:Solar Blaze.gif|link=]]| 
+|[[File:Solar Blaze shield.gif|link=]]|{{tr|Solar Blaze buff icon}}及其{{tr|Solar Shield}}强度。}}
+[[File:Solar Flare armor (demo).gif|frame|right|使用中的{{tr|The Solar Shield}}的[[{{tr|dash}}]]能力。]]
+
+'''{{tr|Solar Flare armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|armor}}]]套装，提供[[{{tr|melee weapon}}]]加成。目前它是{{eversions|Solar Flare Helmet}}中可用的最终{{tr|melee set}}。此{{tr|armor set}}也提供最多的基础[[{{tr|defense}}]]。制作全套一共需要 36 个[[{{tr|Luminite Bar}}]]（144 个[[{{tr|Luminite}}]]）和 45 个[[{{tr|Solar Fragment}}]]。
+
+此套装由'''{{tr|Solar Flare Helmet}}'''、'''{{tr|Solar Flare Breastplate}}'''、和'''{{tr|Solar Flare Leggings}}'''组成。
+
+全套{{tr|the Solar Flare armor}}将提供以下{{tr|bonuses}}：
+:
+* +{{getSetInfo|Solar Flare armor|defense|note=n}} [[{{tr|defense}}]]
+* +26% {{tr|melee}}[[{{tr|critical hit chance}}]]
+* +29% [[{{tr|melee damage}}]]
+* +15% [[{{tr|melee speed}}]]
+* +15% [[{{tr|movement speed}}]]
+* +12% [[{{tr|damage reduction}}]]
+* 提高[[{{tr|life regeneration}}]] (+3 {{tr|HP}}/秒）
+* +900 [[{{tr|aggro}}]]
+
+装备全套套装额外提供了一个特殊的{{tr|set bonus}}：'''{{tr|Solar Blaze}}'''[[{{tr|buff}}]]，它会在玩家没有受到[[{{tr|damage}}]]时逐渐“充能”（第一层无需不受伤害也可充能完成），最多可达 3 层（类似于[[{{tr|Beetle armor}}]]）。每一层需要 3 秒钟来充能，且会无论层数提供固定的 20% [[{{tr|damage reduction}}]]。在第一次充能后会出现一个盾牌，它可以指示充能的层数，第二次和第三次充能后盾牌上分别会出现两个和三个尖刺。
+
+受到伤害会消耗掉一层充能，并在玩家周围释放火焰爆炸，对附近的{{tr|enemy}}造成伤害。当有至少一层充能时，玩家可以通过双击 {{key|left}} 或 {{key|right}} 按键来激活一次特殊[[{{tr|dash}}]]攻击。如果{{tr|dash}}击中了任何{{tr|enemy}}，会消耗一层充能，{{tr|dash}}会对被击中的{{tr|enemy}}造成伤害并产生火焰爆炸（即单个{{tr|enemy}}会受到两次伤害）并提供 {{duration|4ticks}}[[{{tr|invincibility frames}}]]。玩家每秒只能{{tr|dash}}一次。{{tr|The set bonus}}也会提供 12% 的基础{{tr|damage reduction}}，和护盾的{{tr|damage reduction}}乘算叠加。
+
+装备的每一件部件（哪怕被[[{{tr|vanity}}]]{{tr|items}}所隐藏）都会让玩家发光，每多装备一件就会更亮一分。此外，装备全套套装会同时具备移动{{tr|after-image}}效果和脉动效果，类似于[[{{tr|Hallowed armor}}]]。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 2763
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2764
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2765
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Solar Flare Helmet/Solar Flare Breastplate/Solar Flare Leggings|expectedrows=3}}
+
+== 备注 ==
+* 火焰爆炸具有 150 {{tr|base damage}}（受{{tr|melee damage bonuses}}影响）并造成 {{knockback|15|full=y|class=}} 的{{tr|base knockback}}。{{tr|dash}}攻击也具有 150 {{tr|base damage}}（受{{tr|melee damage}}''和''{{tr|melee critical strike chance}}{{tr|bonuses}}影响）并造成 {{knockback|9|full=y|class=}} 的{{tr|base knockback}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt / Terraria.Player.DashMovement}}
+* 手持[[{{tr|Psycho Knife}}]]会提高火焰爆炸和{{tr|dash}}攻击的伤害，且提高{{tr|dash}}攻击的{{tr|critical strike chance}}。
+* 受到[[{{tr|fall damage}}]]也会触发爆炸释放并消耗一层充能。
+* {{tr|The dash}}会导致玩家以 {{mph|52}} 的速度移动。
+** 此{{tr|dash}}会让玩家的移动比[[{{tr|Dungeon Guardian}}]]快 {{mph|11}}、比[[{{tr|Biome Mimic}}]]在玩家距离过远时的{{tr|dash}}快 {{mph|1}}。
+* 此{{tr|armor}}的{{tr|The dash}}效果覆盖[[{{tr|Tabi}}]]、[[{{tr|Master Ninja Gear}}]]、和[[{{tr|Shield of Cthulhu}}]]{{tr|accessories}}的{{tr|dash}}效果。
+* [[{{tr|Endurance Potion}}]]、[[{{tr|Frozen Turtle Shell}}]]、和[[{{tr|Worm Scarf}}]]的{{tr|damage reduction}}可以和{{tr|this armor}}叠加。
+* {{tr|The Solar Blaze}}{{tr|buff}}的{{tr|tooltip}}依然显示“所受伤害降低30%”，虽然实际的效果是 20%。
+* {{tr|The shield}}可以用胸甲{{tr|dye slot}}进行[[{{tr|Dyes}}|染色]]。
+* 和所有用{{tr|Luminite}}制作的{{tr|armors}}一样，装备{{tr|Solar Flare armor}}让玩家会发光，对于此盔甲而言是发红光。光照半径随着装备的组件数量增加而扩大。
+
+== 小贴士 ==
+* 与[[{{tr|Beetle armor}}]]相比，{{tr|Solar Flare armor}}所提供的{{tr|defense}}要略高于使用{{tr|the Beetle Shell}}的{{tr|Beetle armor}}。虽然{{tr|Beetle armor}}的{{tr|damage reduction}}要高一些，但{{tr|Solar Flare armor}}的{{tr|set bonus}}所提供的 12% {{tr|damage reduction}}和一些其他{{tr|buffs}}可以叠加。可以通过以下方式来基本上达到{{tr|Beetle armor}}的{{tr|damage reduction}}水平：具有[[{{tr|Endurance}}]]、[[{{tr|Ice Barrier}}]]、和[[{{tr|Worm Scarf}}]]时，{{tr|Beetle armor}}最多提供 {{percent|1-(1-0.1-0.25-0.17)*(1-0.45)}} {{tr|damage reduction}}，而{{tr|Solar Flare armor}}提供 {{percent|1-(1-0.1-0.25-0.17-0.12)*(1-0.2)}}，只少了 {{#expr:100*((1-0.1-0.25-0.17-0.12)*(1-0.2)-(1-0.1-0.25-0.17)*(1-0.45))}} 个百分点。
+
+== 花絮 ==
+* {{tr|The shield}}的作用有点像[[{{tr|Shield of Cthulhu}}]]，但造成更大伤害、{{tr|dash}}距离更远且不会在命中时将玩家往回推。
+* {{tr|Solar Flare armor}}基本上是组合了[[{{tr|Turtle armor}}]]（伤害反射）、{{tr|Beetle armor}}（{{tr|damage reduction}}）、和{{tr|the Shield of Cthulhu}}（{{tr|dash}}）的效果。
+* {{维基百科|solar flare|（太阳）耀斑}}是指{{维基百科|Sun|太阳}}的亮度突然增加。更强的耀斑之后会产生{{维基百科|coronal mass ejection|日冕物质抛射}}，这是从太阳表面释放出大量等离子体的现象。
+
+== 另见 ==
+* [[{{tr|Vortex armor}}]]
+* [[{{tr|Nebula armor}}]]
+* [[{{tr|Stardust armor}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Solar Dash}}/爆炸伤害现在会受{{tr|melee damage bonus}}加成。}}
+{{history|Desktop 1.4.0.1|
+** 每件{{tr|armor}}组件现在提供 1 {{tr|HP}}/秒的[[{{tr|health regeneration}}]]。
+** {{tr|The helmet}}套装现在提供 +26% [[{{tr|critical strike chance}}]]而非 +17%，{{tr|chestplate}}现在提供 +29% [[{{tr|melee damage}}]]而非 +22%。
+** 此{{tr|armor}}不再是在充能激活时提供 30% [[{{tr|damage reduction}}]]，现在改为任何时候都有 12% {{tr|damage reduction}}，在充能激活时还有 20% 额外{{tr|damage reduction}}。
+** 护盾充能之间的间隔缩短了 2 秒。
+** {{tr|set bonus}}的（英文）{{tr|tooltip}}从''“Solar shields generate over time protecting you, \ consume the shield power to dash, damaging enemies”''改为''“Solar shields charge over time to protect you & let you dash \ A charge is used to damage enemies you touch \ Consumed charges explode & damage enemies”''。
+** {{tr|sell value}}由{{tr|no value}}提升至每套 {{coin|31gc 50sc}}。}}
+{{history|Desktop 1.3.0.6|现在{{tr|dash}}能力仅在击中{{tr|enemy}}时消耗充能，且任何一次撞到{{tr|enemy}}都会引发“{{tr|Solar Radiance}}”爆炸。}}
+{{history|Desktop 1.3.0.4|修正了即使玩家死亡时也依然会绘制{{tr|Solar shields}}的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-solar = yes
+}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Solar Flare armor}}

@@ -1,0 +1,101 @@
+{{item infobox
+| type = Furniture / Light source
+| rare = {{rare|0}}
+| placeable = Yes
+| width = 1
+| height = 1
+| stack = 99
+| consumable = true
+| use = 15
+| tool = Right-click or Pickaxe
+| sell = {{gc|2}} ({{tr|Golden Candle}})
+| idtile = 33, 174 ({{tr|Platinum Candle}}),<br/>49 ({{tr|Water Candle}}), 372 ({{tr|Peace Candle}})
+| cargo = no
+| allversions = yes
+}}
+[[File:Placed Candles.png|frame|放置蜡烛（在开和关状态下，如果有的话）。单击以查看每行的摘要。]]
+
+{{redirect|{{tr|Pumpkin Candle}}|[[{{tr|Pets}}|{{tr|pet summon item}}]]|{{tr|Pumpkin Scented Candle}}}}
+
+'''{{tr|Candle}}'''是一种产生[[{{tr|Light source}}|光]]的[[{{tr|Furniture}}]]。可以将其放置在[[桌子]]、[[平台]]或[[工作台]]上。蜡烛即使放置在水下也会发光，并且可以通过[[{{tr|mechanism}}]]打开或关闭。
+
+[[{{tr|Water Candle}}]]是在[[{{tr|Dungeon}}]]中发现的一种特殊类型的蜡烛。放置或手持时，会使{{tr|enemy}}的生成速度提高33％，并增加最多50％屏幕内同时出现的{{tr|enemy}}数量，此效果无法关闭。放置多个水蜡烛或放置并手持水蜡烛都不会让效果叠加。[[{{tr|Peace Candle}}]]与水蜡烛相比，{{tr|Peace Candle}}降低了{{tr|enemy}}的生成速度。{{eil|Shadow Candle}} 取消了[[{{tr|town}}]]区域的{{tr|enemy}}生成减少的增益。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|cate=force|showresultid=y|result=LIKE %Candle|resultnot=Large Dynasty Candle|expectedrows=39|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 不可制作 ===
+{{item/options|set|nolink=y|class=block|mode=table}}
+{| class="terraria lined"
+|-
+! colspan=2 | 蜡烛 !! 备注
+|-
+| {{item infobox|type=Furniture/Light Source|width=1|height=1|view=item|auto=1405|tags=plunder}} || 在地牢中找到。
+|-
+| {{item infobox|type=Furniture/Light Source|width=1|height=1|view=item|auto=1406|tags=plunder}} || 在地牢中找到。
+|-
+| {{item infobox|type=Furniture/Light Source|width=1|height=1|view=item|auto=1407|tags=plunder}} || 在地牢中找到。
+|-
+| {{item infobox|type=Furniture/Light Source|width=1|height=1|view=item|auto=2651|tags=plunder}} || 在[[{{tr|Ruined House}}]]中找到，不会被[[熔岩]]摧毁。
+|-
+| {{item infobox|type=Furniture/Light Source|width=1|height=1|view=item|auto=2155|tags=drop}} || 由[[Pirate Invasion|海盗]]掉落.
+|}
+{{item/options|reset}}
+
+== {{tr|Notes}} ==
+* 水蜡烛可以被放置在水里，并且会正常发光。
+* 如果在水下手持水蜡烛，它将不会发光。
+* 水蜡烛的效果可以与[[{{tr|Battle Potion}}]]和[[{{tr|Blood Moon}}]]的效果叠加。
+* [[{{tr|Skull Lantern}}]]似乎是蜡烛的"骨头" 版本，最显着的区别是它的大小。蜡烛的尺寸为1×1，而骷髅头灯笼的尺寸为2×2。骷髅头灯笼''无法''通过{{tr|mechanism}}进行开关。
+* [[大王朝蜡烛]]尽管名字含有蜡烛，但它实际上是烛台。
+* 仙人掌蜡烛有点像[[粉仙人球]]。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|加入了[[{{tr|Shadow Candle}}]]。}}
+{{history|Desktop 1.4.0.1|加入了{{tr|Spider Candle}}和{{tr|Lesion Candle}}。}}
+{{history|Desktop 1.3.5|引入了水晶蜡烛。}}
+{{history|Desktop 1.3.0.1|
+** 引入了花岗岩蜡烛、大理石蜡烛、火星蜡烛、陨石蜡烛和和平蜡烛。
+** 现在可以制作水蜡烛。}}
+{{history|Desktop 1.2.4.1|现在可以制作蒸汽朋克蜡烛。}}
+{{history|Desktop 1.2.4|引入了针叶木蜡烛、棕榈木蜡烛、蘑菇蜡烛、南瓜蜡烛、史莱姆蜡烛、蜂蜜蜡烛、阴森木蜡烛和不可制作的蒸汽朋克蜡烛。}}
+{{history|Desktop 1.2.3|
+** 引入了乌木蜡烛、珍珠木蜡烛、暗影木蜡烛、仙人掌蜡烛、王朝蜡烛、血肉蜡烛、冰雪蜡烛、玻璃蜡烛、金蜡烛、丛林蜥蜴蜡烛、生命木蜡烛、红木蜡烛和天域蜡烛。
+** 修复了铂金蜡烛在非RGB照明模式下不发光的BUG。
+** 修复了铂金蜡烛无法右键单击的BUG。}}
+{{history|Desktop 1.2.1.2|为水蜡烛添加了一个buff图标。}}
+{{history|Desktop 1.2|
+** 引入了铂金蜡烛和蓝、绿、粉地牢蜡烛。
+** 现在放置水蜡烛也可以提高{{tr|enemy}}的生成速度。}}
+{{history|Desktop 1.0.5|在水下手持蜡烛将不再发光。}}
+{{history|Desktop 1.0.4|现在在手持水蜡烛时会有使{{tr|enemy}}生成速度提高的效果。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|随PS4的1.0.750.0的更新进行了更改。 ({{icon/xbox one}})}}
+{{history|Console 1.0.750.0|({{icon/ps4}})
+** 引入了花岗岩蜡烛、大理石蜡烛、火星蜡烛、陨石蜡烛和和平蜡烛。
+** 现在可以制作水蜡烛。}}
+{{history|Console 1.07|引入了针叶木蜡烛、棕榈木蜡烛、蘑菇蜡烛、南瓜蜡烛、史莱姆蜡烛、蜂蜜蜡烛、阴森木蜡烛和蒸汽朋克蜡烛。}}
+{{history|Console 1.06|引入了乌木蜡烛、珍珠木蜡烛、暗影木蜡烛、仙人掌蜡烛、王朝蜡烛、血肉蜡烛、冰雪蜡烛、玻璃蜡烛、金蜡烛、丛林蜥蜴蜡烛、生命木蜡烛、红木蜡烛和天域蜡烛。}}
+{{history|Console 1.02|
+** 引入了铂金蜡烛和蓝、绿、粉地牢蜡烛。
+** 现在放置水蜡烛也可以提高{{tr|enemy}}的生成速度。
+** 为水蜡烛添加了一个buff图标。}}
+{{history|Console-Release|引入了对电脑版1.0.5的更改。}}
+{{history|Switch 1.0.711.6|引入了对电脑版1.3.0.1的更改。}}
+{{history|Mobile 1.3.0.7|
+** 引入了花岗岩蜡烛、大理石蜡烛、火星蜡烛、陨石蜡烛和和平蜡烛。
+** 现在可以制作水蜡烛。
+** 现在手持水蜡烛可以增加{{tr|enemy}}的生成速度。}}
+{{history|Mobile 1.2.11212|引入了乌木蜡烛、珍珠木蜡烛、暗影木蜡烛、仙人掌蜡烛、王朝蜡烛、血肉蜡烛、冰雪蜡烛、玻璃蜡烛、金蜡烛、丛林蜥蜴蜡烛、生命木蜡烛、红木蜡烛、天域蜡烛、针叶木蜡烛、棕榈木蜡烛、蘑菇蜡烛、南瓜蜡烛、史莱姆蜡烛、蜂蜜蜡烛、阴森木蜡烛和蒸汽朋克蜡烛。}}
+{{history|Mobile 1.2.6508|
+** 引入了铂金蜡烛和蓝、绿、粉地牢蜡烛。
+** 现在放置水蜡烛也可以提高{{tr|enemy}}的生成速度。}}<!-- held ones, due to bugs, didn't until Mobile 1.3.0.7 -->
+** 为水蜡烛添加了一个buff图标。
+{{history|Mobile-Release|引入，在水下手持蜡烛将不再发光。}}<!-- held Candles didn't increase spawnrate until Mobile 1.3.0.7 -->
+{{history|3DS-Release|引入了对电脑版 1.2 的更改。}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+{{language info|en=Candles}}

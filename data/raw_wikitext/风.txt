@@ -1,0 +1,546 @@
+'''{{tr|Wind}}'''是《[[{{tr|Terraria}}]]》中的一种机制，会影响各种物体的运动以及{{eil|Windy Day|s}}和[[{{tr|Sandstorm}}]]的发生。
+
+风速的范围是在 0 到 60 {{mph}} 之间。风可以从东面或西面吹来。诸如[[{{tr|Weather Radio}}]]之类的[[{{tr|Informational accessories}}]]所显示的风向指的是风''从''哪边''吹来''，而非''向''哪边''吹去''（因此，例如“25 mph 西风”意味着风以 25 mph 风速从西边吹来）。
+
+'''{{tr|Wind}}'''主要影响不会影响游戏玩法事物，比如云的移动速度、{{tr|blizzard}}和{{tr|sandstorm}}的背景效果、和[[{{tr|water}}]]面与{{tr|tree}}的动画。不过，它偶尔也会对游戏玩法有影响，比如它对[[{{tr|Detonating Bubble}}]]的影响和对遭受[[{{tr|Mighty Wind}}]]折磨的玩家的影响。[[{{tr|Cosmic Car Key}}]]所召唤的{{tr|The UFO Mount}}似乎也会稍微被风所推动，但很难察觉到，除非长时间对着某个角落发射会反弹的武器。
+
+{{eicons|1.4.0.1}} {{tr|wind speed}}为 20 mph 或更高时会发生[[{{tr|Windy Day}}]]{{tr|event}}，在{{tr|wind speed}}降低到 16 mph 以下时结束。
+
+[[{{tr|Weather Radio}}]]、[[{{tr|Fish Finder}}]]、[[{{tr|PDA}}]]、[[{{tr|Cell Phone}}]]、和[[{{tr|Shellphone}}]]全都能在屏幕右上角列出风速。
+
+== 功能  {{eicons|1.4.0.1}} ==
+代码中有两个控制{{tr|wind speed}}的核心值：{{code|windSpeedCurrent}} 和 {{code|windSpeedTarget}}，二者均每{{tr|tick}}{{tick}}更新一次。windSpeedCurrent 的变化速率由以下公式确定：
+
+<pre>speed = |windSpeedTarget/50 * (1 + 降雨强度 * 5/9) - windSpeedCurrent/50| * 0.0015;</pre>
+
+其中 windSpeedTarget 和 windSpeedCurrent 值的单位为游戏所使用的 mph。游戏将两个值都存储为浮点值，当 < 0 时是东风，> 0 时是西风。
+世界在创建时，会带有不超过 20 mph 的风，并且会设置变量 {{code|windCounter}} 来防止风速在接下来的 15 - 45 秒内有变化。这段时间结束后，会有一些随机几率会在一定量以内加强或减弱风，每 15 - 45 秒就会这么循环一次（“阵风”）。{{source code ref|v=1.4.0.5|method=Terraria.Main.UpdateWeather}}
+{| class="terraria"
+! 几率!! 目标风速变化
+|-
+| 25% || -1.25 mph 到 1.25 mph
+|-
+| 37.5% || -2.5 mph 到 2.5 mph
+|-
+| 37.5% || -5 mph 到 5 mph
+|}
+有第二个计数器（{{code|extremeWindCounter}}），它在每一次阵风出现时都会减一。当它到达零时，会引发“极端阵风”。在世界生成过程中和发生极端阵风时都会重置这个计数器。
+{| class="terraria"
+! 几率 !! 发生
+|-
+| 21.66% || 目标风速设置为 0，接下来 2 - 8 分钟内不会出现阵风。
+|-
+| 21.66% || 目标风速会增加 -10 mph 到 10 mph
+|-
+| 36.83% || 目标风速会增加 -20 mph 到 20 mph
+|-
+| 19.85% || 目标风速会增加 -40 mph 到 40 mph
+|}
+当极端阵风出现时，目标{{tr|wind speed}}将决定经过多少次阵风后会发生下一次极端阵风。
+{| class="terraria"
+! 目标{{tr|wind speed}} !! 出现极端阵风所需的阵风数量
+|-
+| 0 - 15 mph || 10 - 30 次阵风
+|-
+| > 15 mph || 15 - 40 次阵风
+|-
+| > 25 mph || 20 - 50 次阵风
+|-
+| > 35 mph || 25 - 60 次阵风
+|}
+
+最后，如果某次阵风让风向改变，则目标{{tr|wind speed}}有 66% 几率会翻转回到原来的方向。
+完成所有这些步骤之后，目标{{tr|wind speed}}会被限制为不超过 40 mph。
+
+== 影响 ==
+{{tr|Wind}}会有以下影响：
+{| class="terraria lined"
+! 对象
+! 效果
+|-
+| [[{{tr|Windy Day}}]]
+| 当{{tr|wind speed}}在任意方向上为 20 mph 或更高时会发生此{{tr|event}}。
+|-
+| [[{{tr|Sandstorm}}]]
+| 当{{tr|wind speed}}在任意方向上为 30 mph 或更高时有几率发生。
+|-
+| {{item|Windy Balloon}}
+| 影响移动方向和生成位置。{{tr|Spawn rate}}会随着{{tr|wind speeds}}提高而提高。
+|-
+| {{item|Angry Dandelion}}
+| 影响所发射{{tr|projectiles}}的方向、动画和运动，以及{{tr|enemy}}自身的动画。{{tr|The enemy}}只能在风所吹的方向上发射。{{tr|Spawn rate}}会随着{{tr|wind speeds}}提高而提高。
+|-
+| {{item|Ladybug}}
+| 影响移动方向；只在{{tr|winds}}在任意方向上超过 20 mph 时才会生成。
+|-
+| {{eil|Ecto Mist}}
+| 影响移动方向。
+|-
+| {{item|Release Doves}}
+| 影响移动方向。
+|-
+| {{item|Kites}}
+| 不在墙后面时会推动之。
+|-
+| {{item|Water}}
+| 影响动画，当[[{{tr|Settings}}#视频|水波质量]]启用时还会影响扭曲。
+|-
+| {{item|Music Box}}
+| 影响音符的飘动方向。
+|-
+| 降水（[[{{tr|Rain}}]]、[[{{tr|Blizzard}}]]、[[{{tr|Sandstorm}}]]、等等）
+| 影响微粒运动。
+|-
+| {{tr|Clouds}}
+| 影响飘动方向。
+|-
+| {{item|Bubble Machine|Bubbles}}
+| 影响飘动方向。
+|-
+| {{item|Detonating Bubble}}
+| 影响飘动方向。
+|-
+| {{item|Angry Tumbler}}
+| 推动。
+|-
+| {{item|Party|image=Party Center.png|Party Background Balloons}}
+| 影响{{tr|balloon}}飘动方向。
+|-
+| 有{{eil|Mighty Wind}}{{tr|debuff}}的玩家
+| 推动。
+|-
+| {{item|North Pole|{{tr|North Pole}}的雪花}}
+| {{eicons|1.4.4|invert=y}} 影响飘落方向。
+|-
+| {{item|Paper Airplane|s}}
+| 带走。
+|-
+| {{item|Snake Charmer's Flute}}
+| 影响使用长笛所产生的音符。
+|-
+| [[{{tr|Ambient entities}}]]
+| 影响背景中断线风筝、蝴蝶群、{{tr|the pegasus}}、{{tr|pixie}}群、{{tr|vultures}}、{{tr|birds}}群、{{tr|seagull}}群、{{tr|gastropod}}群、{{tr|balloon slime}}群、{{tr|hellbat}}群、{{tr|bat}}群、{{tr|wyverns}}、热气球和飞艇的移动。
+|-
+| {{item|Chimney}}
+| 推动其所冒出的烟雾微粒。
+|-
+| {{item|Firefly}} / {{item|Lightning Bug}}
+| 当{{tr|winds}}在任意方向上超过 20 mph 时不会生成。
+|-
+| {{item|Butterfly}}
+| 当{{tr|winds}}在任意方向上超过 20 mph 时不会自然生成或通过摇树生成。
+|-
+| {{item|Water Strider|s|image=Water Strider (NPC).png/Gold Water Strider (NPC).png}}
+| 当{{tr|winds}}在任意方向上超过 20 mph 时不会自然生成。
+|-
+| {{item|Witch's Broom}}
+| 会推动把手顶部的小灯。
+|-
+| {{item|Leaf Block|{{tr|Trees}}和{{tr|Living Tree Leaf Blocks}}}}
+| 随着风速增加叶子也会更频繁地掉落。掉落的叶子也会受风所影响。
+|-
+| {{item|Tree|Treetops|size=32px}}
+| 长着树叶的树梢会有动画。
+|-
+| {{item|Vines}}
+| 推动。
+|-
+| {{item|Lantern Night|{{tr|Lantern Night}}时的{{tr|Background Lanterns}}|image=Release Lantern.png}}
+| 影响飘动方向。
+|-
+| {{item|Release Lantern}}
+| 影响飘动方向。
+|-
+| [[{{tr|Music}}|{{tr|Wind}}的氛围曲子]]
+| 影响音量。仅当风速大于 20 mph 时才会播放。
+|-
+| [[{{tr|Waterfall}}]]
+| 影响动画。{{verify}}
+|-
+| {{item|Pin Wheel}}
+| 影响旋转动画。
+|-
+| {{item|Pin Flags|image=Red Pin Flag.png}}
+| 影响动画速度。
+|-
+| {{item|Weather Vane}}
+| 影响动画。
+|}
+
+=== {{tr|Furniture}} ===
+一些{{tr|furnitures}}，当其处于{{tr|surface}}上，位于以下任意墙前面、或者其后面根本没有墙时，会受风影响。
+{{flexstart}}
+{{itemlist|class=terraria|width=18em
+|{{item|Boreal Wood Fence}}
+|{{item|Ebonwood Fence}}
+|{{item|Lead Fence}}
+|{{item|Iron Fence}}
+|{{item|Wooden Fence}}
+|{{item|Palm Wood Fence}}
+|{{item|Pearlwood Fence}}
+|{{item|Rich Mahogany Fence}}
+|{{item|Shadewood Fence}}
+|{{item|Wrought Iron Fence}}
+|{{item|Bamboo Fence}}
+}}
+{{flexend}}
+
+满足以上条件时，以下家具会受风影响。
+{{flexstart}}
+{{itemlist|class=terraria|width=14em
+|{{item|Chandelier|s}}
+|{{item|Lantern|s|image=Ebonwood Lantern.png}}
+|{{item|Pigronata}}
+|{{item|Disco Ball}}
+|{{item|War Table Banner}}
+|{{item|Hanging Pot}}
+|{{item|Hanging Brazier}}
+|所有高草
+|{{item|Mushroom|s}}
+|{{item|Acorn|s}}
+|{{item|Vile Mushroom}}
+|{{item|Jungle Spores}}
+|{{item|Nature's Gift}}
+|{{item|Glowing Mushroom}}
+|{{item|Herb|s|image=Fireblossom.png}}
+|{{item|Vicious Mushroom}}
+|{{item|Strange Plant|s}}
+|{{item|Lime Kelp}}
+|{{item|Blue Berries}}
+|{{item|Yellow Marigold}}
+|{{item|Sky Blue Flower}}
+|{{item|Green Mushroom}}
+|{{item|Teal Mushroom}}
+|[[{{tr|Oasis Plants}}]]
+|{{item|Gemcorn|s|image=Diamond Gemcorn.png}}
+|{{item|Sakura Sapling|s}}
+|{{item|Yellow Willow Sapling|s}}
+|{{item|Sunflower|s}}
+|[[{{tr|Sea Oats}}]]
+}}
+{{flexend}}
+
+=== [[{{tr|Mighty Wind}}]] {{eicons|1.4.0.1}} ===
+* {{tr|Mighty Wind}}默认情况下每秒会推动玩家 {{code|mph * 0.0012}} 像素。如果{{tr|wind speed}} > 25mph，此数值还会增加 37%。如果玩家正在坠落或跳跃，此数值会提高 50%。最后，如果玩家向左或向右移动，此数值会降低 20%，并且最后会被限制为不超过 0.072 像素/帧。
+* 以足够的速度迎风奔跑会让玩家出现类似于穿着[[{{tr|Hermes Boots}}]]奔跑时的那种效果的微粒。
+* 骑着{{tr|mount}}在固定高度上向左或向右移动时会抵消{{tr|mighty wind}}的影响。
+
+== 备注 ==
+* 当正好为 0 mph 时，游戏会将其视为西风，但由于{{tr|wind speeds}}使用的是小数系统，此值通常只是接近但不会正好是 0。
+* 在标题屏幕上，会初始化出一个最高 40 mph 的风速。但这并不会带入生成的世界中，世界内会以最高 20 mph 的风速开始。
+** 由于这些初始速度，世界有 1/400 几率生成时就处于{{tr|Windy Day}}状态。
+* 在[[{{tr|Journey Mode}}]]中，如果玩家控制风速，那么在[[{{tr|Lantern Night}}]]期间风速会降到零。
+* 只有目标{{tr|wind speed}}会随同世界存盘，加载这个世界时，当前{{tr|wind speed}}会被设置为目标{{tr|wind speed}}。这会使得玩家退出又重新进入世界后{{tr|wind speeds}}上会有轻微不同。
+
+== 花絮 ==
+在较低的{{tr|wind speeds}}时，每{{tr|tick}}内叶子从树上掉落的频率较低（5 mph → 1/2000 几率、10 mph → 1/1000、15 mph → 1/450、……40 mph → 1/50）。虽然最大风速是 40mph，但却有针对 55 mph 及更高风速情况的代码，几率为每{{tr|tick}} 1/10。
+
+=== 废弃的{{tr|Projectile}}物理 ===
+在游戏代码中，有一个布尔值 {{code|Main.windPhysics}} 可以开关一个特性：{{tr|projectiles}}会受风影响。因为它处于禁用状态，因此目前游戏中并没有这样的特性。以下是关于此特性效果的详细描述。
+
+值得注意的是，此特性会试图在{{tr|North Pole}}上禁用风的效果，但不清楚这是为了防止和现有代码冲突还是为了彻底移除此特性。
+
+当此特性被激活时，以下所有{{tr|projectiles}}，当其位于{{tr|surface}}上且未卡债{{tr|tiles}}中或在墙后时，都会受风影响。这仅当它们沿当前风向移动且其 x 速度低于 {{code|wind mph * 0.36}} 时才会发生。这会让它们的 x 速度每{{tr|tick}}改变 {{code|wind mph * 0.002}} 像素，或者说每秒 {{code|wind mph * 0.12}} 像素。
+
+在这种情况下，{{tr|A projectile}}的 x 速度不能超过 16，但实际上永远不会达到此限制，因为可能的最大{{tr|wind speed}}，40 mph，只能将{{tr|projectiles}}吹到每{{tr|tick}} 14.4 像素。
+
+{{collapse top|显示列表|隐藏列表}}
+{{itemlist|class=terraria|width=18em
+|{{/row|76}}
+|{{/row|77}}
+|{{/row|78}}
+|{{/row|90}}
+|{{/row|177}}
+|{{/row|521}}
+|{{/row|522}}
+|{{/row|155}}
+|{{/row|163}}
+|{{/row|310}}
+|{{/row|167}}
+|{{/row|168}}
+|{{/row|169}}
+|{{/row|170}}
+|{{/row|415}}
+|{{/row|416}}
+|{{/row|417}}
+|{{/row|418}}
+|{{/row|171}}
+|{{/row|475}}
+|{{/row|505}}
+|{{/row|506}}
+|{{/row|281}}
+|{{/row|410}}
+|{{/row|514}}
+|{{/row|524}}
+|{{/row|569}}
+|{{/row|570}}
+|{{/row|571}}
+|{{/row|1}}
+|{{/row|2}}
+|{{/row|4}}
+|{{/row|5}}
+|{{/row|14}}
+|{{/row|36}}
+|{{/row|38}}
+|{{/row|41}}
+|{{/row|51}}
+|{{/row|55}}
+|{{/row|81}}
+|{{/row|82}}
+|{{/row|91}}
+|{{/row|98}}
+|{{/row|103}}
+|{{/row|117}}
+|{{/row|120}}
+|{{/row|158}}
+|{{/row|159}}
+|{{/row|160}}
+|{{/row|161}}
+|{{/row|172}}
+|{{/row|174}}
+|{{/row|176}}
+|{{/row|178}}
+|{{/row|180}}
+|{{/row|184}}
+|{{/row|195}}
+|{{/row|207}}
+|{{/row|225}}
+|{{/row|242}}
+|{{/row|246}}
+|{{/row|248}}
+|{{/row|259}}
+|{{/row|265}}
+|{{/row|267}}
+|{{/row|270}}
+|{{/row|275}}
+|{{/row|276}}
+|{{/row|278}}
+|{{/row|279}}
+|{{/row|282}}
+|{{/row|283}}
+|{{/row|284}}
+|{{/row|285}}
+|{{/row|286}}
+|{{/row|287}}
+|{{/row|289}}
+|{{/row|311}}
+|{{/row|312}}
+|{{/row|323}}
+|{{/row|325}}
+|{{/row|336}}
+|{{/row|337}}
+|{{/row|345}}
+|{{/row|350}}
+|{{/row|355}}
+|{{/row|357}}
+|{{/row|374}}
+|{{/row|376}}
+|{{/row|389}}
+|{{/row|408}}
+|{{/row|424}}
+|{{/row|425}}
+|{{/row|426}}
+|{{/row|440}}
+|{{/row|469}}
+|{{/row|472}}
+|{{/row|474}}
+|{{/row|477}}
+|{{/row|478}}
+|{{/row|479}}
+|{{/row|484}}
+|{{/row|485}}
+|{{/row|495}}
+|{{/row|498}}
+|{{/row|507}}
+|{{/row|508}}
+|{{/row|532}}
+|{{/row|572}}
+|{{/row|581}}
+|{{/row|585}}
+|{{/row|587}}
+|{{/row|605}}
+|{{/row|616}}
+|{{/row|638}}
+|{{/row|662}}
+|{{/row|685}}
+|{{/row|671}}
+|{{/row|676}}
+|{{/row|680}}
+|{{/row|682}}
+|{{/row|686}}
+|{{/row|706}}
+|{{/row|710}}
+|{{/row|711}}
+|{{/row|712}}
+|{{/row|719}}
+|{{/row|763}}
+|{{/row|772}}
+|{{/row|811}}
+|{{/row|814}}
+|{{/row|819}}
+|{{/row|837}}
+|{{/row|876}}
+|{{/row|920}}
+|{{/row|921}}
+|{{/row|926}}
+|{{/row|937}}
+|{{/row|3}}
+|{{/row|21}}
+|{{/row|48}}
+|{{/row|54}}
+|{{/row|69}}
+|{{/row|70}}
+|{{/row|621}}
+|{{/row|93}}
+|{{/row|162}}
+|{{/row|166}}
+|{{/row|240}}
+|{{/row|249}}
+|{{/row|300}}
+|{{/row|304}}
+|{{/row|318}}
+|{{/row|330}}
+|{{/row|347}}
+|{{/row|370}}
+|{{/row|371}}
+|{{/row|471}}
+|{{/row|497}}
+|{{/row|501}}
+|{{/row|504}}
+|{{/row|510}}
+|{{/row|520}}
+|{{/row|599}}
+|{{/row|861}}
+|{{/row|868}}
+|{{/row|869}}
+|{{/row|909}}
+|{{/row|936}}
+|{{/row|15}}
+|{{/row|95}}
+|{{/row|96}}
+|{{/row|253}}
+|{{/row|502}}
+|{{/row|17}}
+|{{/row|31}}
+|{{/row|39}}
+|{{/row|40}}
+|{{/row|42}}
+|{{/row|56}}
+|{{/row|65}}
+|{{/row|67}}
+|{{/row|68}}
+|{{/row|71}}
+|{{/row|109}}
+|{{/row|179}}
+|{{/row|241}}
+|{{/row|354}}
+|{{/row|411}}
+|{{/row|412}}
+|{{/row|413}}
+|{{/row|414}}
+|{{/row|736}}
+|{{/row|737}}
+|{{/row|738}}
+|{{/row|812}}
+|{{/row|24}}
+|{{/row|50}}
+|{{/row|53}}
+|{{/row|183}}
+|{{/row|185}}
+|{{/row|196}}
+|{{/row|261}}
+|{{/row|277}}
+|{{/row|326}}
+|{{/row|327}}
+|{{/row|328}}
+|{{/row|346}}
+|{{/row|352}}
+|{{/row|378}}
+|{{/row|400}}
+|{{/row|401}}
+|{{/row|402}}
+|{{/row|450}}
+|{{/row|473}}
+|{{/row|480}}
+|{{/row|483}}
+|{{/row|515}}
+|{{/row|538}}
+|{{/row|870}}
+|{{/row|928}}
+|{{/row|776}}
+|{{/row|777}}
+|{{/row|778}}
+|{{/row|779}}
+|{{/row|800}}
+|{{/row|801}}
+|{{/row|803}}
+|{{/row|804}}
+|{{/row|805}}
+|{{/row|806}}
+|{{/row|807}}
+|{{/row|808}}
+|{{/row|809}}
+|{{/row|810}}
+|{{/row|28}}
+|{{/row|29}}
+|{{/row|30}}
+|{{/row|37}}
+|{{/row|75}}
+|{{/row|102}}
+|{{/row|108}}
+|{{/row|133}}
+|{{/row|134}}
+|{{/row|135}}
+|{{/row|136}}
+|{{/row|137}}
+|{{/row|138}}
+|{{/row|139}}
+|{{/row|140}}
+|{{/row|141}}
+|{{/row|142}}
+|{{/row|143}}
+|{{/row|144}}
+|{{/row|164}}
+|{{/row|303}}
+|{{/row|338}}
+|{{/row|339}}
+|{{/row|340}}
+|{{/row|341}}
+|{{/row|397}}
+|{{/row|470}}
+|{{/row|516}}
+|{{/row|517}}
+|{{/row|519}}
+|{{/row|588}}
+|{{/row|637}}
+|{{/row|681}}
+|{{/row|773}}
+|{{/row|862}}
+|{{/row|863}}
+|{{/row|903}}
+|{{/row|904}}
+|{{/row|905}}
+|{{/row|906}}
+|{{/row|910}}
+|{{/row|911}}
+|{{/row|930}}
+|{{/row|43}}
+|{{/row|201}}
+|{{/row|202}}
+|{{/row|203}}
+|{{/row|204}}
+|{{/row|205}}
+|{{/row|527}}
+|{{/row|528}}
+|{{/row|529}}
+|{{/row|530}}
+|{{/row|531}}
+}}
+{{collapse bottom}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Wind}}

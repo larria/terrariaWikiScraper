@@ -1,0 +1,48 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4061
+| damage = @@@@ {{note|small=y|paren=y|{{tr|spear}}}} / {{#expr:floor({{iteminfo|Storm Spear|damage}}*1.5)}} {{note|small=y|paren=y|{{tr|Storm Spear Shot}}}}
+| idprojectile = 730, 732
+| listcat = spears
+| tags = loot / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Storm Spear (demo).gif|thumb|{{tr|The Storm Spear}}被用于攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Storm Spear}}'''是一支[[{{tr|pre-Hardmode}}]]的，[[{{tr|Desert}}]]主题的[[{{tr|spears}}|{{tr|spear}}]]。当刺出时，它会发射一束小型闪电，造成 150% 的基础伤害和一半强度的击退。{{source code ref|v=1.4.2.2|method=Terraria.Projectile.AI_019_Spears}}该武器可在[[{{tr|Underground Desert}}]]较深的 3/7 部分的[[{{tr|Sandstone Chest}}]]中找到，或者通过开启[[{{tr|Oasis Crate}}]]和[[{{tr|Mirage Crate}}]]获得。
+
+{{modifier|meleealt}}
+
+== 小贴士 ==
+* 该武器拥有不俗的伤害与攻击速度，在近距离时尤其有效，因此它是一个相当好用的前期武器。
+** 该武器也是最早拥有射弹的近战武器之一，与[[{{tr|Ice Blade}}]]相似。
+** 能够攻击任何方向和能够攻击墙中的敌人使它成为应对[[{{tr|Tomb Crawler}}]]和[[{{tr|Man Eater}}]]的有效武器。
+* 它射出的闪电让其攻击范围长于其他游戏早期的{{tr|spears}}，使其在由于{{tr|contact damage}}增加而需要和{{tr|enemies}}以及早期的 {{tr|boss}} 像[[{{tr|Eye of Cthulhu}}]]和[[{{tr|King Slime}}]]保持距离的[[{{tr|Master Mode}}]]中很有用。
+* 当紧挨一个方块厚的墙站着时，{{tr|Storm Spear}}可以透过墙发射{{tr|Storm Spear Shot}}。
+** 玩家的[[{{tr|Attack speed}}|{{tr|melee speed}}]]越高，能够穿墙的距离就越远。当{{tr|melee speed}}足够高时，甚至可以穿透 3 个{{tr|block}}厚的{{tr|walls}}。
+* 在 [[{{tr|Don't dig up}}]] 世界中，{{tr|Storm Spear}}可以以较低的风险从{{tr|Underground Desert}}的{{tr|Chests}}中获得。
+* 如果一个{{tr|Sandstone Chest}}包含[[{{tr|Thunder Zapper}}]]或者[[{{tr|Bast Statue}}]]，则{{tr|player}}的位置已经足够低以获得{{tr|Storm Spear}}。否则，需要继续向下挖掘来获得它。
+
+== 花絮 ==
+* 它和[[{{tr|Thunder Zapper}}]]，一种[[{{tr|pre-hardmode}}]][[{{tr|Magic weapons}}]]，非常相似。该武器也可以在{{tr|Underground Desert}}的{{tr|Sandstone Chest}}中找到。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 伤害由 12 提升至 14。
+** {{tr|Projectile damage}}由 1.25 倍{{tr|base damage}}提升至 1.5 倍。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spears}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-main = yes
+| show-meleeother = yes
+}}
+
+{{language info|en=Storm Spear}}

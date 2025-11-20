@@ -1,0 +1,39 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4264
+| tags = buy / vendor:Golfer
+}}
+
+'''{{tr|Golf Cart Keys}}'''是一个[[{{tr|mount}}]]{{tr|summoning item}}，能让玩家乘坐可骑乘的'''{{tr|Golf Cart}}'''。击败[[{{tr|Skeletron}}]]，且玩家获得超过 2000 的[[{{tr|golf score}}]]后，它可以从[[{{tr|Golfer}}]]处以 {{iteminfo|Golf Cart Keys|buy}} 的价格购买。
+
+{{tr|The Golf Cart}}的车灯会发出能照亮 40 格的光，而最亮的位置在约 15 格处。
+
+== 备注 ==
+* {{tr|The Golf Cart}}的最高速度是 {{mountinfo|Golf Cart|max speed}}。在超过{{mph|{{#expr:{{mountinfo|Golf Cart|runSpeed|raw=y}}/2}} tiles}}时，它会开始向碰到的[[{{tr|enemies}}]]和[[{{tr|critters}}]]造成伤害，伤害为 40 基础[[{{tr|summon damage}}]]，以及 10（{{knockback|10}}）点的[[{{tr|knockback}}]]。{{source code ref|v=1.4.1.2|method=Terraria.Player.HorizontalMovement}}
+* 它会降低 {{mountinfo|Golf Cart|fall damage}} 的[[{{tr|fall damage}}]]，让玩家比通常跳得更高（{{mountinfo|Golf Cart|jump reach}} 格），且跳跃高度可以与[[{{tr|Extra jump}}]][[{{tr|accessories}}]]（如[[{{tr|Cloud in a Bottle}}]]）叠加。
+* {{tr|The Golf Cart}}在[[{{tr|water}}]]中能正常运作，但速度会变慢。它也不会影响[[{{tr|breath}}]]，所以玩家仍然会[[{{tr|drown}}]]。
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+
+== 小贴士 ==
+* 同时装备[[{{tr|Cloud in a Bottle}}]]、[[{{tr|Fart in a Jar}}]]、[[{{tr|Blizzard in a Bottle}}]]、[[{{tr|Tsunami in a Bottle}}]]和[[{{tr|Sandstorm in a Bottle}}]]（或它们的任意{{tr|variant}}）时，{{tr|Golf Cart}}可以跳得非常高。
+
+== 花絮 ==
+* {{tr|The Golf Cart Keys}}上看起来有个[[{{tr|Bunny}}]]挂饰。
+* {{tr|Golf Cart mount}}的内部名称为 {{code|GolfCartSomebodySaveMe}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Golf Cart Keys}}

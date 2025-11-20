@@ -1,0 +1,78 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 675
+| idprojectile = 972, 973
+| listcat = broadswords / projectile melee
+| tags = hardmode
+}}
+
+'''{{tr|True Night's Edge}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|sword}}]]。它是[[{{tr|Night's Edge}}]]的更强版本，造成更高伤害，且在挥舞时能发射{{tr|projectile}}。它是制作[[{{tr|Terra Blade}}]]所必需的材料之一。{{tr|True Night's Edge}}能够[[{{tr|autoswing}}]]。
+
+{{tr|sword}}本身挥舞时会在剑刃周围产生一圈大范围的黑暗光环，显著提高了它对{{tr|enemies}}造成伤害的范围，并且能覆盖到玩家身后。不过，和可击中所有在{{tr|melee}}范围内的{{tr|enemies}}的大部分[[{{tr|broadswords}}]]不同，{{tr|True Night's Edge}}的{{tr|melee}}挥舞最多只能击中两个目标。{{tr|sword}}每次挥舞时，都会发射旋转的、盘状的绿色能量{{tr|projectile}}。{{tr|projectile}}会相对玩家移动而移动，随着玩家移动停留在屏幕上的相同路径上。{{tr|The projectile}}造成 50% {{tr|base damage}}（{{#expr:{{iteminfo|True Night's Edge|damage}}/2}} {{tr|base damage}}），{{source code ref|v=1.4.4.4|method=Terraria.Player.ItemCheck_Shoot}}且最多能击中 3 次。{{tr|projectile}}会为击中的目标施加 10 {{tr|ticks}}{{tick}}的[[{{tr|immunity frames}}]]，且能够击中同一目标多次（如目标足够大，使得{{tr|projectile}}在 10 {{tr|tick}}后仍然停留在其身上）。{{source code ref|v=1.4.4.4|method=Terraria.Projectile.SetDefaults}}如果近距离的光环击中了{{tr|enemy}}，会产生紫色的闪光；如果其{{tr|projectile}}击中了{{tr|enemy}}，会产生绿色的闪光。
+
+{{modifier|melee}}
+
+{{float file box|float=right|width=470px|[[File:True Night's Edge (demo).gif|thumb|450px]]|使用中的{{tr|The True Night's Edge}}。注意其圆形{{tr|projectile}}能击中三次。}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|legacy=no|result=True Night's Edge|expectedrows=1}}
+
+=== 制作树 ===
+{{/{{tr|Crafting tree}}}}
+
+=== 用于 ===
+{{recipes|ingredient=True Night's Edge|expectedrows=1}}
+
+== 小贴士 ==
+* 推荐用{{tr|True Night's Edge}}近战对战[[{{tr|Plantera}}]]，因为有延迟的{{tr|projectile}}使得它难以在远距离击中 {{tr|boss}}，但是近战可以让绿色{{tr|projectile}}多次命中目标（类似于[[{{tr|Demon Scythe}}]]），从而造成大量{{tr|Damage}}。
+
+== 花絮 ==
+* {{tr|The True Night's Edge}}是 [[Steam 物品#徽章|Steam 的闪亮{{tr|Terraria}}徽章]]中使用的物品。
+* {{tr|True Night's Edge}}和[[{{tr|True Excalibur}}]]曾经因其相似性和在游戏进度中同一时期可获取而可以互相比较，但在 [[{{tr|1.4.4}}]] 的更新中，它们成为了更加独特的{{tr|weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Melee}}挥舞现在每次最多只能击中 2 个目标而非 3 个。}}
+{{history|Desktop 1.4.4|
+** {{tr|True Night's Edge}}现在在剑刃周围有一圈伤害性能量区域；可以在更大、更广的区域内造成伤害，并且更好地覆盖玩家身后。
+** {{tr|Melee}}挥舞现在每次最多击中 3 个目标。
+** 现在发射大的旋转的能量圈而非{{tr|sword projectile}}，行进距离较长，能击中多次。
+** {{tr|Damage}}由 105 降低至 70。
+** {{tr|Use time}}由 26 提升至 32。}}
+{{history|Desktop 1.4.1|
+** {{tr|Crafting recipe}}现在需要来自各个[[{{tr|mechanical boss}}]] 的{{tr|souls}}各 20 个，而非{{tr|Broken Hero Sword}}。
+** 现在能{{tr|autoswing}}了。
+** {{tr|Projectile}}现在造成 1.5 倍{{tr|base damage}}而非 1 倍。}}
+{{history|Desktop 1.4.0.3|{{tr|Item}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.4.0.1|{{tr|Damage}}由 90 提升至 105。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 78 提升至 90。
+** {{tr|Use time}}由 24 提升至 26。}}
+{{history|Desktop 1.2.3|
+** 伤害由 70 提升至 78。
+** {{tr|Projectile}}冷却时间由 0.75 秒降低至 0.4 秒。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 伤害由 78 提升至 90。
+** {{tr|Use time}}由 24 提升至 26。}}
+{{history|Console 1.06|
+** 伤害由 70 提升至 78。
+** {{tr|Projectile}}冷却时间由 0.75 秒降低至 0.4 秒。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|
+** 伤害由 70 提升至 78。
+** 更快速地发射{{tr|projectiles}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=True Night's Edge}}

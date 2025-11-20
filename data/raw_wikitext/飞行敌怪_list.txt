@@ -1,0 +1,54 @@
+<includeonly><!-- 
+-->{{#dplvar:set<!-- 
+-->|_fe_image_Arch Wyvern|Arch Wyvern Head Horizontal.png<!-- 
+-->|_fe_image_Crawltipede|Crawltipede (Head).png<!-- 
+-->|_fe_image_Hornets|Hornet.png<!-- 
+-->|_fe_image_Milkyway Weaver|Milkyway Weaver (Head).png<!-- 
+-->|_fe_image_Mythical Wyvern|Mythical Wyvern Head.png<!-- 
+-->|_fe_image_Wyvern|Wyvern Head Horizontal.png<!-- 
+-->|_fe_image_Phantasm Dragon|Phantasm Dragon Head Horizontal.png<!-- 
+-->|_fe_image_Blood Eel|Blood Eel Head.png<!-- 
+-->|_fe_size_Dungeon Guardian|*0.5<!-- 
+-->|_fe_size_Dragon Skull|*0.5<!-- 
+-->|_fe_size_Mothron|*0.5<!-- 
+-->|_fe_size_Mothron|*0.75<!-- 
+-->|_fe_size_True Eye of Cthulhu|*0.5<!-- 
+-->}}<!-- 
+-->{{#dpl:
+|category=飞行敌怪 NPC¦悬停 AI NPC
+|{{#ifeq:{{{hardmode|}}}|yes| category=困难模式独有 NPC}}
+|{{#ifeq:{{{hardmode|}}}|no| notcategory=困难模式独有 NPC}}
+|notcategory=Boss NPC
+|notcategory=无法生成的 NPC
+|includesubpages=no
+|nottitlematch=大飞龙¦龙骷髅¦龙骷髅头¦大恶魔¦暗影锤<!-- 中文wiki特有的问题，某些重定向页面不得不处理掉。（如果A本身重定向到B，同时A符合条件，那么在中文A和{{tc|A}}会同时符合，需要排除掉其中至少一个） -->
+|redirects=include
+|ordermethod=title
+|format=²{itemlist¦class=terraria¦width={{{width|18em}}},
+¦²{#dplvar:set¦_title_¦²{cn2e¦%TITLE%}²}²²{item¦²{#dplvar:_title_}²<!-- 
+	-->¦image=²{#if:²{#dplvar:_fe_image_²{#dplvar:_title_}²}²¦²{#dplvar:_fe_image_²{#dplvar:_title_}²}²}²<!-- 
+	-->¦size=²{#if:²{#dplvar:_fe_size_²{#dplvar:_title_}²}²¦²{#dplvar:_fe_size_²{#dplvar:_title_}²}²}²<!-- 
+	-->}²
+,,}²
+}}</includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+List of all flying enemies. It is generated via [[DPL]], specifically the two categories [[:Category:Flying Enemy NPCs]] and [[:Category:Hovering AI NPCs]].
+
+
+Optional parameters:
+
+; width
+: = width of item; default is 18em
+
+; hardmode
+: = no; only displays pre-Hardmode enemies
+: = yes; only displays Hardmode enemies
+: defaults to displaying both
+
+The filename and size of the images are controlled by the code itself. They can be changed if needed.
+
+{{language info|en=Flying enemies/list}}
+</noinclude>

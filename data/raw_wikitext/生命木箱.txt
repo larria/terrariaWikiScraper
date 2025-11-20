@@ -1,0 +1,122 @@
+{{item infobox
+| type = Furniture /Storage
+| width = 2| height = 2
+| auto = 831
+| tags = plunder
+}}
+
+'''{{tr|Living Wood Chest}}'''可以在空心的[[{{tr|Living Tree}}]]中找到。在{{eversions|1.4.0.1}}中，它也可以使用[[{{tr|Living Loom}}]]制作，其有时可以在{{tr|Living Wood Chest}}旁找到。 在{{eversions|1.4.0.1|invert=y}}中，{{tr|Living Loom}}有时也可以在{{tr|Living Wood Chest}}中以物品形式找到
+
+== 掉落 ==
+每个{{tr|Living Wood Chest}}都总是会包含一件主要{{tr|item}}，可能有多个次要物品或一个都没有。除了这一部分列出的{{tr|items}}外，还会存在一些[[{{tr|Chests}}#{{tr|Surface loot}}|{{tr|Surface Chests}}]]中的常见{{tr|items}}。
+
+=== {{eversions|1.4.0.1}} ===
+{{flexstart|alignitems=top}}
+{{loot|title=@primary
+
+| Living Wood Wand|1|2/3
+| Finch Staff|1|1/3
+
+}}
+
+{{loot|title=@secondary
+
+| Leaf Wand|1|2/3
+
+|:group:start|1|1/6
+  | Sunflower Minecart||
+  | Ladybug Minecart||
+|:group:end|-----------------|-
+
+}}
+{{flexend}}
+
+注意：如果{{tr|Living Wood Chest}}存在{{tr|Living Wood Wand}}，那么必定也会存在{{tr|Leaf Wand}}，反之亦然。它们永远不会只存在其中一件。{{tr|Living Wood Chest}}存在它们的概率为依旧为 {{chance|2/3}}。
+
+=== {{eversions|1.4.0.1|invert=y|short=y}} ===
+{{flexstart|alignitems=top}}
+{{options/set|item|wrap=y}}
+
+{| class="terraria lined"
+|-
+! colspan="4" | {{tr|Items}} {{eicons|old-gen=1}}
+|-
+! % !! 几率 !! 物品 !! 数量
+|-
+| rowspan=2 | 100%
+| rowspan=2 | 1 / 1
+| style="border:0;" | {{item|Living Wood Wand}}
+| rowspan=2 | 1
+|-
+| {{item|Leaf Wand}}
+|-
+| 50%
+| 1 / 2
+| {{item|Living Loom}}
+| 1
+|}
+
+{| class="terraria lined"
+|-
+! colspan="3" |{{tr|Items}} {{eicons|3ds=y}}
+|-
+! 几率 !! 物品 !! 数量
+|-
+| 100%
+| {{item|Living Wood Wand}}
+| 1
+|-
+| 100%
+| {{item|Leaf Wand}}
+| 1
+|-
+| rowspan=3 | 100%
+| style="border:0;" | {{item|Magic Mirror}}
+| rowspan=3 | 1
+|-
+| style="border:0;" | {{item|Enchanted Boomerang}}
+|-
+| {{item|Band of Regeneration}}
+|-
+| rowspan=2 | 100%
+| style="border:0;" | {{item|Bug Net}}
+| rowspan=2 | 1
+|-
+| {{item|Band of Starpower}}
+|-
+| 100%
+| {{item|Torch}}
+| 3-10
+|}<!-- Console chances are based off old PC chances. -->
+{{options/reset|item}}
+{{flexend}}
+
+注意：在{{eversions|old-gen=y}}中，{{tr|Living Wood Chests}}会出现{{tr|Living Wood Wand}}或{{tr|Leaf Wand}}，但它们不会同时出现。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Living Wood Chest|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Living Wood Chest|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|包含{{tr|minecart}}的几率由 1/10 提升至 1/6。}}
+{{history|Desktop 1.4.0.1|
+** 现在{{tr|loot}}中包含了[[{{tr|Ladybug Minecart}}]]、[[{{tr|Sunflower Minecart}}]]和[[{{tr|Finch Staff}}]]。
+** 现在可被制作了。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Trapped Living Wood Chest}}]]。}}
+{{history|Desktop 1.3.0.1|现在{{tr|Leaf Wand}}和{{tr|Living Wood Wand}}必定会同时出现。}}
+{{history|Desktop 1.2.3|放置的{{tr|storage items}}现在可以重命名了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|loot}}更新，以匹配{{tr|Desktop}} 1.3.0.7。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Living Wood Chest}}

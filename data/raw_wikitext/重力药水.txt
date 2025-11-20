@@ -1,0 +1,85 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Potion
+| auto = 305
+| sound1 = Item 8.wav
+| soundcaption1 = 切换{{tr|gravity}}
+| tags = Bag loot
+}}
+{{float file box|width=400px|
+{{flexstart|justify=center|style=row-gap:5px}}
+{{flexstart|item|order=2}}[[File:Gravity example (reversed).png|386px|{{tr|reverse gravity}}下的{{tr|Forest}}场景]]{{flexend|item}}<!-- the reversed image should be first in the DOM so that it's displayed by search engines etc. -->
+{{flexstart|item|order=1}}[[File:Gravity example (normal).png|386px|正常{{tr|gravity}}下的{{tr|Forest}}场景]]{{flexend|item}}
+{{flexend}}
+|{{tr|character}}、[[{{tr|Squirrel}}]]、和[[{{tr|Guide}}]]在[[{{tr|Forest}}]]中。<br/>上：正常{{tr|gravity}}，下：{{tr|reverse gravity}}。
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Gravitation Potion}}'''是一种[[{{tr|buff potion}}]]，使用时会提供'''{{tr|Gravitation}}'''[[{{tr|buff}}]]。{{tr|buff}}允许玩家通过按下 {{key|up}} 来反转[[{{tr|Gravity}}]]。{{tr|gravity}}反转后，屏幕会上下颠倒，玩家会向上坠落并可在天花板上行走。这一效果可在空中切换。{{buffduration}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Gravitation Potion|expectedrows=1}}
+
+== 备注 ==
+{{for|更多有关{{tr|reverse gravity}}的细节|{{tr|Reverse gravity}}}}
+* 虽然在{{tr|Gravity}}反转时会重置玩家的掉落距离，但这种{{tr|potion}}本身''不会''消除[[{{tr|fall damage}}]]。使用[[{{tr|FeatherFall Potion}}]]、[[{{tr|wings}}]]、[[{{tr|Lucky Horseshoe}}]]、[[{{tr|Obsidian Horseshoe}}]]、或任何[[{{tr|Balloons}}|{{tr|Horseshoe Balloons}}]]将会在使用{{tr|Gravitation Potion}}时更加安全。
+** 若要仅靠{{tr|Gravitation Potion}}来消除{{tr|fall damage}}，玩家可以通过在落地前快速反转{{tr|Gravity}}的方式来消除动量。
+
+== 小贴士 ==
+* 使用{{tr|Gravitation Potion}}在正确的高度上下盘旋是寻找[[{{tr|Floating Islands}}]]的有效方法。
+* {{tr|Gravitation}}{{tr|Buff}}有效地超越了[[{{tr|Rocket Boots}}]]和[[{{tr|wings}}]]的组合，成为了航程最远的空中旅行方式，不过以它作为飞行方式时会更难操控。
+* 它可以在与[[{{tr|Wall of Flesh}}]]的战斗中使用，以此来行走于[[{{tr|Underworld}}]]的顶端，避开[[{{tr|lava}}]]池、[[{{tr|Ruined House}}]]、地面的坑洼、以及[[{{tr|Expert Mode}}]]下的[[{{tr|Lava Slime}}]]。
+* 屏幕上下翻转时可能会很难辨认方向。使用[[{{tr|minimap}}]]模式之一作为主要的视觉参考可能会有所帮助，它''不会''被翻转。
+* 尽管较难控制，{{tr|Gravitation Potion}}可以是不错的垂直机动力来源，尤其是在躲避第二阶段的[[{{tr|Retinazer}}]]的激光，以及尝试在[[{{tr|mechanical bosses}}]] 前击败[[{{tr|Duke Fishron}}]]时。由于效果的{{tr|duration}}较短，应当确保备有多瓶{{tr|potions}}。
+
+== 花絮 ==
+* 行走时的视觉效果（如穿着全套[[{{tr|Frost armor}}]]时的雪效果）不会被翻转。
+
+== 另见 ==
+* [[{{tr|Gravity Globe}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 30 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** （再次）修复了[[{{tr|Celestial Pillar}}]]护盾在{{tr|reverse gravity}}下会飞上天空的问题。
+** 修复了在按下 UP 键逆转{{tr|Gravity}}时会使玩家的{{tr|flying mounts}}解除的问题。现在，在乘坐{{tr|mounts}}时无法{{tr|reverse gravity}}。
+** 修复了{{tr|reverse gravity}}时[[{{tr|Money Trough}}]]的鼠标悬停检测方向错误的问题。
+** 修复了{{tr|reverse gravity}}时类似[[{{tr|Blizzard Staff}}]]的{{tr|weapons}}会朝玩家瞄准的方向的相反方向汇聚的问题。
+** 修复了{{tr|reverse gravity}}时玩家会卡在锤击过的{{tr|platforms}}上的问题。
+** 修复了[[{{tr|Forbidden armor}}]]的环在{{tr|reverse gravity}}状态下未能正确翻转的问题。
+** 修复了{{tr|reverse gravity}}时一些{{tr|weapons}}不会随玩家翻转的问题。
+** 修复了{{tr|cobwebs}}无法正确减慢{{tr|reverse gravity}}时的玩家的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|修复了[[{{tr|Magic Missile}}]]、[[{{tr|drills}}]]、和[[{{tr|Dirt Rod}}]]在{{tr|reverse gravity}}下无法正常工作的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|修复了较长的{{tr|hairs}}在{{tr|reverse gravity}}下会将前端绘制在玩家的脚部处的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** 修复了[[{{tr|sign}}]]气泡在{{tr|reverse gravity}}下出现在错误位置的 {{tr|bug}}。
+** 修复了[[{{tr|Featherfall Potion}}]]在{{tr|reverse gravity}}时无效的 {{tr|bug}}。
+* 修复了玩家在{{tr|reverse gravity}}下在{{tr|water}}中无法跳跃的 {{tr|bug}}。
+** 修复了{{tr|reverse gravity}}某些{{tr|hats}}的位置会变得很奇怪的 {{tr|bug}}。
+** 修复了{{tr|reverse gravity}}时[[{{tr|Rune Robe}}]]粒子会出现在玩家头部的 {{tr|bug}}。
+** 修复了{{tr|reverse gravity}}时{{tr|chat}}气泡位置错误的 {{tr|bug}}。
+** 修复了{{tr|reverse gravity}}时尝试移动 {{tr|NPC}} 会使用相反的屏幕高度位置的 {{tr|bug}}。
+** 修复了{{tr|reverse gravity}}时用[[{{tr|Sniper Scope}}]]或[[{{tr|Binoculars}}]]缩放时会使用相反的高度方向的 {{tr|bug}}。
+** {{tr|Gravity}}反转时[[{{tr|Rod of Discord}}]]可以正常工作了。
+** 修复了{{tr|reverse gravity}}时[[{{tr|Hydra Staff}}]]的使用精度。}}
+{{history|Desktop 1.2|{{tr|Gravitation}}的效果现在会反转世界{{tr|world}}而非{{tr|character}}外观。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}，{{tr|tooltip}}为“按UP或DOWN可逆转重力”。}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated.}}（{{icon|ps4}}）}}
+{{history|Console 1.02|{{tr|Gravitation}}的效果现在会反转世界{{tr|world}}而非{{tr|character}}外观。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Gravitation}}的效果现在会反转世界{{tr|world}}而非{{tr|character}}外观。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，{{tr|Gravitation}}的效果会反转世界{{tr|world}}而非{{tr|character}}外观。}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Gravitation Potion}}

@@ -1,0 +1,17 @@
+<includeonly><!--
+
+-->{{#vardefine:ore-width|{{{width|{{#var:ore-width}}}}}}}<!--
+
+-->{{#fornumargs:|v|{{nowrap<!--
+	-->|style=display:inline-block; min-width:{{#var:ore-width}}; margin:0.1em 0<!--
+	-->|[[File:{{#var:v}} (placed).png]] {{item|{{#var:v}}|small=y}}<!--
+-->}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+It takes an unlimited number of ore names as parameters and displays their placed sprite, inventory sprite, and item name. The subpage can also be called with just the <code>$width</code> parameter to set the minimum width of each ore display for the following subpage calls.
+{{language info|en=Ores/ore}}
+</noinclude>

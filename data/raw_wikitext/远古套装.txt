@@ -1,0 +1,56 @@
+{{exclusive|1.3.3}}
+{{item infobox
+| type = Vanity/Set
+| hardmode = yes
+}}
+
+'''{{tr|Ancient set}}'''是由'''{{tr|Ancient Headdress}}'''、'''{{tr|Ancient Garments}}'''和'''{{tr|Ancient Slacks}}'''组成的[[{{tr|Hardmode}}]][[{{tr|vanity}}]]{{tr|set}}。{{vanity note}}
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 3773
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 3774
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 3775
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Ancient Headdress/Ancient Garments/Ancient Slacks|expectedrows=3}}
+
+== 小贴士 ==
+* 卖出{{tr|Ancient set}}会比直接卖出所有所需的材料多赚<!--
+
+-->{{#vardefine:set_sell|{{#explode:{{setinfo|Ancient set|sell|raw=y}}|¤|1}}}}<!--
+--><!--{{#vardefine:ings_sell|{{recipes/test|result=Ancient Headdress/Ancient Garments/Ancient Slacks|mode=ingredients-sell}}}}<!--
+-->{{#vardefine:ings_sell|{{sell expr|Silk|*45+15*|Ancient Cloth|raw=y}}}}<!--
+
+-->{{#vardefine:diff|{{#expr:{{#var:set_sell}}-{{#var:ings_sell}}}}}}<!--
+
+-->{{coin|{{#var:diff}}}}（{{percent|{{#expr:{{#var:diff}}/{{#var:ings_sell}}}}}}）。
+
+== 花絮 ==
+* {{tr|The Ancient Set}}在视觉上和[[{{tr|Forbidden armor}}]]{{tr|set}}相似，但它没有独特的能力。
+*{{tr|The Ancient Headdress}}的外观类似于对胡狼头人身的古埃及{{维基百科|mummification|木乃伊制作}}（一种古老的尸体保存方法）之神{{维基百科|Anubis|t=阿努比斯}}的常见描绘。
+* {{icon/console}} 升级到 [[{{tr|Console 1.4.0.5.4.1}}|{{tr|1.4.0.5.4.1}}]] 后，[[{{tr|Horned God set}}]]各组件的实例会被替换为{{tr|Ancient Headdress/Ancient Garments/Ancient Slacks}}。
+
+== 历史 ==
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-vanity = yes
+}}
+
+{{language info|en=Ancient set}}

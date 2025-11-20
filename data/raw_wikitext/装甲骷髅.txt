@@ -1,0 +1,82 @@
+{{npc infobox
+| auto = 77
+| image = Armored Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+| damage =
+| defense =
+| life =
+| knockback =
+| money =
+| debuff = Broken Armor
+| debuffchance = 16.67%
+| debuffduration = {{modes|{{duration|120}}|{{duration|240}}}}
+| Armor Polish|1|{{modes|1%|1.99%}}
+| Beam Sword|1|0.67%
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+
+{{distinguish|Blue Armored Bones}}
+
+'''{{tr|Armored Skeleton}}'''是出现在[[{{tr|Cavern}}]]中的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。在接触时它有 {{chance|1/6}} 几率能造成[[{{tr|Broken Armor}}]][[{{tr|debuff}}]]，持续 2 分钟 / {{expert|4 分钟}}。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist/money}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+! {{tr|Coins}}
+{{npc infobox
+| auto = 77
+| image = Armored Skeleton.gif
+| type = Undead Enemy
+| environment = Cavern
+}}
+{{npc infobox
+| auto = -15
+| imagealt = [[File:Armored Skeleton.gif|{{#expr:34*1.1 round 0 }}px|link=]]
+| type = Undead Enemy
+| environment = Cavern
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* 在大约略高于[[{{tr|lava}}]]高度的地方，会生成一种更大、更强力版本的{{tr|Armored Skeletons}}。它在内部称为“重骷髅”。
+* 在打败[[{{tr|Plantera}}]]之前，{{tr|Armored Skeletons}}是[[{{tr|Armor Polish}}]]的唯一来源。
+
+== 花絮 ==
+* {{tr|Armored Skeletons}}看起来穿着[[{{tr|Ancient Cobalt Breastplate}}]]的一个蓝色更深的且有带刺护肩的版本。
+* {{tr|The Heavy Skeleton}}版本是少数在[[{{tr|Expert Mode}}|{{tr|Expert}}]]或[[{{tr|Master Mode}}]]中生命值没有提升的{{tr|enemy}}。因此，其生命值实际上在{{tr|master mode}}中要比常规的{{tr|armored skeleton}}低得多，而在{{tr|expert mode}}中则二者相当。 
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在只在[[{{tr|Blood Moon}}]]期间能打开[[{{tr|doors}}]]或[[{{tr|Tall Gate}}]]，在[[{{tr|Graveyard}}]]时也偶尔能开。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Broken Armor}}{{tr|duration}}由 5 降低至 2 {{tr|minutes}}。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落它自己的相应{{tr|banner}}。}}
+{{history|Desktop 1.2|
+** 生命值由 340 降低至 260，伤害由 60 降低至 40，防御由 36 降低至 28。
+** 现在有几率掉落{{tr|Armor Polish}}和/或{{tr|Beam Sword}}。
+** 重型{{tr|Skeleton}}版本不再拥有独立的名字，但维持了其属性。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Armored Skeleton}}

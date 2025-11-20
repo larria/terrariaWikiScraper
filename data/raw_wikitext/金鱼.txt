@@ -1,0 +1,80 @@
+{{infobox wrapper
+|{{item infobox
+| auto = 261
+| sell = @@@@ {{eicons|1.3.0.1|small=y}}<br/>{{sc|1}} {{eicons|1.3.0.1|invert=y|mobile=n|3DS=n|small=y}}<br/>无价值 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}}
+}}
+|{{npc infobox
+| image = Goldfish.gif
+| imageother = Goldfish2.gif
+| imageothercaption = 离水时
+| auto = 55
+| type = Critter
+| type2 = Aquatic
+}}
+|{{npc infobox
+| auto = 230
+| image = Goldfish Walker.gif
+| type = Critter
+| environment = Rain
+}}
+}}
+{{for|此{{tr|enemy}}的变种|{{tr|Corrupt Goldfish}}|{{tr|Vicious Goldfish}}}}
+
+'''{{tr|Goldfish}}'''是一种无害的[[{{tr|Critter}}]]，游在[[{{tr|water}}]]里，在[[{{tr|Rain}}|下雨]]时还会在陆地上行走。{{critter info|gold=y|cagename=[[{{tr|Fish Bowl}}]]|statuename=[[{{tr|Fish Statue}}]]}}
+
+在[[{{tr|Blood Moon}}]]期间，或被[[{{tr|Vile Powder}}]]或[[{{tr|Vicious Powder}}]]击中时，金鱼会变[[{{tr|Corrupt Goldfish}}]]或[[{{tr|Vicious Goldfish}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Goldfish|expectedrows=6}}
+
+== 备注 ==
+* 金鱼离开水并不会死亡，它们只会不停地在地上扑腾。
+* {{tr|Walking Goldfish}}在雨停时并不会停止行走，除非它们重新进入了水中。在这种情况下，它们会试图离开屏幕，然后会消失。
+* {{tr|Vile Powder}}不适用于[[{{tr|Rain}}|下雨]]期间四处走动的{{tr|Goldfish}}。
+* {{tr|Goldfish}}来回游动，每次撞到{{tr|block}}时反转方向。但如果它们所撞到的{{tr|block}}是向上的斜坡，它们会顺着向上游动，如果斜坡一直持续到离开水面，它们也会顺着游出水面，此时它们会开始蹦跶，除非那时正在下雨。
+* 在下雨时，通过{{tr|Statue}}生成的{{tr|Goldfish}}不会计入{{tr|Statue}}的{{tr|spawn limit}}中，因为它会转变为{{tr|walking Goldfish}}而不再是标准的{{tr|Goldfish}}。
+* 即使在{{tr|underground}}，{{tr|Goldfish}}在下雨时也会开始行走。
+* 最有效率地卖出捕捉到的{{tr|Goldfish}}的方法都是将其制作成{{tr|Fish Bowls}}。
+
+== 花絮 ==
+[[File:Goldfish cloud.png|thumb|right|{{eicons|1.4.0.1}} {{tr|Goldfish}}形的云朵。]]
+* 虽然没有直接使用已经注册成商标的短语，但{{tr|Goldfish}}的提示信息是暗指零食{{wikipedia|Goldfish (snack)|{{tr|Goldfish}}}}（“the snack that smiles back（这零食也在朝你微笑）”）。
+* 以前，杀死{{tr|Goldfish}}后，它会作为{{tr|item}}掉落，并可作为弱[[{{tr|Potion}}#{{tr|Recovery potions}}|{{tr|recovery potion}}]]使用（恢复 20 生命值），其提示信息是此功能的残余物。
+* {{tr|Goldfish}}的眼睛是黑色的，但被击杀后就变成了红眼睛。这可能是因为你杀掉它的时候出现血液了。
+* {{tr|The Goldfish}}、[[{{tr|Bunny}}]]、[[{{tr|Bird}}]]、和[[{{tr|Penguin}}]]是仅有的四种有自己的[[{{tr|Banners (enemy)}}|{{tr|banners}}]]的{{tr|Critters}}。
+* 在{{eversions|1.4.0.1}}中，背景中有时会看到{{tr|Goldfish}}形状的[[稀有云|{{tr|cloud}}]]。
+* {{tr|Walking Goldfish}}在下落时会旋转，这可以通过将它们在{{tr|rain}}期间在[[{{tr|Space}}]]中释放的方式看到。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.3.3|修复了行走的{{tr|Goldfish}}无法像其他{{tr|Goldfish}}一样变为{{tr|Corrupted}}/{{tr|Crimson}}的问题。}}
+{{history|Desktop 1.3.1|现在可用于制作{{tr|Fish Statues}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Goldfish}}现在可以卖出 {{sc|7}} {{cc|50}}。
+** 不再用于制作[[{{tr|Neptune's Shell}}]]。}}
+{{history|Desktop 1.2.3|
+** 堆叠上限由 99 提升至 999。
+** {{tr|Goldfish}}没有出售价值，而非可卖出 {{sc|1}}。
+** 不再通过击杀掉落，而是只能用[[{{tr|Bug Net}}]]。
+** 现在是可释放的而非可食用的。}}
+{{history|Desktop 1.2.0.3|
+** 现在会掉落[[{{tr|Goldfish Banner}}]]。
+** {{tr|Goldfish}}在[[{{tr|Ocean}}]]附近不再会掉落[[{{tr|Pirate Map}}]]。}}
+{{history|Desktop 1.2|
+** 当从{{tr|statues}}生成时不再生成{{tr|coins}}。
+** 它们现在会在下雨时行走。
+** {{tr|Sell price}}由 {{sc|2}} 降低至 {{sc|1}}。}}
+{{history|Desktop 1.1|现在可被玩家伤到。}}
+{{history|Desktop 1.0.6|使用{{tr|a Goldfish}}现在会触发[[{{tr|Potion Sickness}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Goldfish}}

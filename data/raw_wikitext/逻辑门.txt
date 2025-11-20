@@ -1,0 +1,98 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| auto = 3603
+| name = Logic Gates
+| type = Mechanism/Furniture
+| width = 1 | height = 1
+| tooltip =
+| id =
+| tags = vendor / vendor:Steampunker
+| cargo = no
+}}
+[[File:AND logic gate animation.gif|frame|{{tr|logic gate (AND)}}的例子。]]
+
+'''{{tr|Logic Gate}}'''是提供[[{{tr|wire}}]]逻辑的[[{{tr|mechanism}}]]。使用一个或多个[[{{tr|Logic Gate Lamp}}]]放在逻辑门上可作为输入。{{tr|logic gate}}的开关状态视其输入而定，且每次改变状态时会发送一次信号。
+
+{{tr|The logic gates}}和{{tr|Logic Gate Lamps}}都以每个 {{iteminfo|Logic Gate (AND)|buy}} 的价格出售自[[{{tr|Steampunker}}]]。
+
+== 行为 ==
+{{tr|the logic gate}}可见的亮和灭状态应当被称为“是”和“否”。所有门初次放置时都处于“否”状态（熄灭的）。可以在它上方连续放置一个或多个{{tr|logic gate lamp}}以形成一个“灯组”，每当在灯组上方添加一盏{{tr|logic gate lamp}}、从灯组顶端移除一盏{{tr|logic gate lamp}}或者是其中一盏{{tr|logic gate lamp}}改变状态时，就会使处于它们下方的{{tr|the logic gate}}根据各自的条件更新状态：
+{{options/set|item|nolink=y|icons=no}}
+{| class="terraria"
+! {{tr|Logic Gate}} !! “是”条件 !! 
+|-
+|满足条件时，{{tr|the logic gate}}就会变为“是”状态，不满足时变为“否”状态。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3603}} || 当所有的{{tr|Logic Gate Lamp}}都激活时。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3605}} || 只要有未激活的{{tr|Logic Gate Lamp}}。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3604}} || 当被激活的{{tr|Logic Gate Lamp}}数量大于等于 1 时。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3606}} || 当被激活的{{tr|Logic Gate Lamp}}数量等于 0 时。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3607}} || 当被激活的{{tr|Logic Gate Lamp}}数量等于 1 时。
+|-
+|{{item infobox|view=item|width=1|height=1|tags=buy/vendor:Steampunker|auto=3608}} || 当被激活的{{tr|Logic Gate Lamp}}数量不等于 1 时。
+|}{{options/reset|item}}
+
+{{tr|Logic Gate}}在改变状态时，会发出一个信号。如果信号会导致一个{{tr|Logic Gate}}在同一{{tr|tick}}{{tick}}中来回改变两次（以上）状态，那么在这个{{tr|Logic Gate}}上会显示一股烟雾。但{{tr|Logic Gate}}本身的状态依旧会改变一次，所以仍会发出一个信号。
+
+=== 故障灯 ===
+{{tr|logic gate lamp (faulty)}}是通过放置在{{tr|Logic Gate Lamp}}组上面来使用的（下文简称“故障灯”）。当如此做，连接在这个灯组下方的{{tr|Logic Gate}}会变为蓝色（无论它原本是什么{{tr|Logic Gate}}），从而覆盖其正常功能并完全改变其行为。此时该灯组和{{tr|Logic Gate}}起随机发生器的作用，当门上方的正常{{tr|Logic Gate Lamp}}改变状态时，门不再发出信号。相反，当信号触发故障灯时，它会随机选择其下方的一个{{tr|Logic Gate Lamp}}进行判断。如果该灯状态为开，{{tr|Logic Gate}}就会发出一个信号。例如，故障灯下方有三盏灯，两个状态为开，一个状态为关，则触发故障灯时，门有 {{chance|2/3}} 的几率发出一个信号。
+
+一盏故障灯可以在一个{{tr|tick}}中被触发多次，有效地使门有多次机会发出信号。不能通过这种方式在同一个{{tr|tick}}中发出多个信号，但是，每次故障灯收到信号时，门都有机会发出信号。例如，如果在同一{{tr|tick}}中触发一个故障灯两次，该门附有两个逻辑灯，一个状态为开，另一个状态为关，则该门有 {{chance|3/4}} 的几率发出信号。
+
+如果故障灯下只有一个{{tr|Logic Gate Lamp}}，故障灯将总是选择此灯作为判断。在这种情况下，故障灯组起到“if”语句的作用，当{{tr|Logic Gate Lamp}}状态为开时，触发故障灯会使{{tr|Logic Gate}}发送信号。如果该灯状态为关，则触发故障灯时，{{tr|Logic Gate Lamp}}不会发送信号。这种结构的一个非常实际的用途是一条单向线：点亮故障灯下的{{tr|Logic Gate Lamp}}，故障灯接收到信号时{{tr|Logic Gate}}可以发送信号，而{{tr|Logic Gate}}接收到信号时什么也不会发生。此外，可以通过向{{tr|Logic Gate Lamp}}发送信号来关闭该电线。
+
+=== 反转门 ===
+由于门只要改变状态就会发出信号，因此在大多数情况下，每个门的“反转”版本（带有“非”字样的门，以及“异或”相对于“同或”）的行为与正常对应的门相同。唯一的区别是当第一个灯被添加到一个新的门时。（例如，{{tr|logic gate (and)}} 和 {{tr|logic gate (nand)}} 在第一次放置时都为“否”状态（熄灭的）。但是，在添加{{tr|logic gate lamp (off)}}时，{{tr|logic gate (and)}} 将保持“否”状态，不发出信号，而 {{tr|logic gate (nand)}} 将改变为“是”状态，从而发出信号。）
+
+== 实用电路 ==
+=== 切换触发器（T 触发器） ===
+[[File:T Flip Flop.png|left|frame|T 触发器]]
+切换触发器是一种只有一个输入的设备，每两次输入会改变一次状态。该装置由{{tr|logic gate lamp (faulty)}}、{{tr|logic gate lamp}}和门组成。当试图利用会被连续触发两次的{{tr|Triggers}}（如{{tr|weighted pressure plate}}）控制设备时，它特别有用。
+{{-}}
+
+=== 设置/重置触发器（SR 触发器） ===
+[[File:SR flip-flop v2.png|left|frame|SR 触发器]]
+
+设置/重置触发器是一种有两个输入的设备，在同一个输入端的多个激活信号并不会使其状态改变。当两个输入端都至少被激活过一次时，它会输出一个信号。在演示样例中，红色和绿色是输入信号，蓝色则是输出信号。
+{{-}}
+
+=== 有限存储电路 ===
+{{image|Restricted Storage Circuit.png|scale=0.75|thumb|left|有限存储电路}}
+可储存一个状态信号的电路，依靠{{tr|junction box}}旁边的{{tr|logic gate (or)}}作为储存状态的“位”。它的顶部有三个输入端，从左到右分别是“写”、“读”以及“输入”，此外还有一个输出端。当“读”被关闭时，内部的位不会改变；当“读”被开启时，内部的位会复制“输入”。独立于此，当“写”被关闭时，输出不会改变；当“写”被开启时，输出会复制内部的位。
+{{image|Restricted Storage Circuit Compact.png|scale=0.675|thumb|right|一个更加小巧的有限存储电路设计。}}
+{{-}}
+
+=== 安全开关 ===
+[[File:Safety.png|thumb|left|安全开关]]
+用于开启/关闭{{tr|traps}}的简单{{tr|switch}}。用到了两种{{tr|logic gates}}：{{tr|Logic Gate (AND)}}（{{tr|switch}}右上方有 3 盏灯的门），和{{tr|Logic Gate (XOR)}}（{{tr|switch}}下方有 2 盏灯的门）。{{tr|Switch and pressure plate}}被连接至{{tr|Logic Gate (XOR)}}。当{{tr|switch}}被激活时，会阻止{{tr|pressure plate}}触发{{tr|traps}}。
+{{-}}
+
+== {{tr|Notes}} ==
+* 非门并没有被加入游戏，因为根据''[[{{tr|Terraria}}]]''中的{{tr|Logic Gate}}工作原理，它们只会在每次输入改变时简单地发出信号。
+* 故障灯可以以各种位置和数量被安放在灯组中，它们全都有机会使门输出信号。然而，故障灯只会根据位置判断其下方的{{tr|logic gate lamps}}，在其上方的则会被忽略。
+* 在电子学和逻辑学中，具有 2 个以上输入的{{tr|Logic Gate (XOR)}}通常被视为有 2 个输入的{{tr|Logic Gate (XOR)}}的级联，因此，如果有奇数个输入，则其输出充当奇偶校验器。然而，在{{tr|terraria}}中，具有多个输入的{{tr|Logic Gate (XOR)}}只有在输入数恰好为一时才会被激活。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.2|
+** 修复了 XNOR 被称为 NXOR 的问题。
+** 为 XNOR 的{{tr|tooltip}}添加了“也被称作 NXOR”。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|添加了电脑版 1.3.2 的更改。}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|添加了电脑版 1.3.2 的更改。}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Logic Gates}}

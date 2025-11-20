@@ -1,0 +1,85 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4788
+| tags = hardmode / vendor / vendor:Zoologist
+}}
+[[File:Jousting Lance (demo).gif|frame|right|在静止和高速移动（使用[[{{tr|Terraspark Boots}}]]和[[{{tr|Shield of Cthulhu}}]]{{tr|dash}}）时攻击[[{{tr|Target Dummies}}]]。]]
+
+'''{{tr|Jousting Lance}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|melee weapon}}]]，由[[{{tr|Zoologist}}]]在完成[[{{tr|bestiary}}]]的 30% ({{b entries|30%|entries}})以 {{iteminfo|Jousting Lance|buy}} 的价格出售。按下 {{key|use}} 将举起{{tr|Jousting Lance}}，按住 {{key|use}} 则会使其保持固定角度伸出。其{{tr|damage}}会随{{tr|player}}的[[{{tr|movement speed}}]]增加，使得[[{{tr|mounts}}]]、[[{{tr|sprinting accessories}}]]、或{{tr|dash}}能力（如[[{{tr|Shield of Cthulhu}}]]、[[{{tr|Tabi}}]]/[[{{tr|Master Ninja Gear}}]]、或[[{{tr|Solar Flare armor}}]]等提供的）有助于将{{tr|damage}}最大化。当玩家受到伤害后，{{tr|Jousting Lance}}将会收回。
+
+它是[[{{tr|Hallowed Jousting Lance}}]]和[[{{tr|Shadow Jousting Lance}}]]的弱化版。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+<!-- common notes transcluded on [[Hallowed Jousting Lance]] and [[Shadow Jousting Lance]]: below this line -->
+* {{tr|damage}}（<math>\text{dmg}</math>）和{{tr|knockback}}（<math>\text{kb}</math>）值可以用下面的公式进行估计：{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+: <math>\text{dmg} = \left\lfloor d * \left( v * \frac{22}{875} + 0.1 \right) \right\rfloor</math> 和
+: <math>\text{kb} = v * k * \frac{44}{1575}</math>，
+: 其中 <math>v</math> 是{{tr|player}}的速度（以 {{mph}} 计），<math>d</math> 是{{tr|weapon}}的{{tr|damage}}（{{iteminfo|{{pagename2en}}|damage}} 点{{tr|base damage}}），<math>k</math> 是{{tr|weapon}}的{{tr|knockback}}（{{iteminfo|{{pagename2en}}|knockback}} 点{{tr|base knockback}}）。
+:* 更精确的公式是基于玩家的速度（以格/秒计）（<math>v'</math>）
+:: <math>\text{dmg} = \left\lfloor d * \left( v' * \frac{6}{175} + 0.1 \right) \right\rfloor</math>
+:: <math>\text{kb} = v' * k * \frac{4}{105}</math>
+<!--
+derivation of the damage formula (tps is tiles-per-second velocity; internal pixels-per-tick velocity is tps/3.75):
+dmg = floor(basedmg * ( 0.1 + (tps/3.75) / 7 * 0.9 ))
+dmg = floor(basedmg * ( 0.1 + tps / 26.25 * 0.9 ))
+dmg = floor(basedmg * ( tps * 6/175 + 0.1 ))
+for mph velocity: tps = mph*11/15
+
+derivation of the knockback formula:
+kb = basekb * (tps/3.75) / 7
+kb = basekb * tps / 26.25
+kb = basekb * tps * 4/105
+-->
+: 实例（{{tr|base damage and knockback}}均未修正）：
+
+: {| class="terraria lined"
+! {{tr|Velocity}} !! {{tr|Damage}} !! {{tr|Knockback}}
+{{#lstmap:<!--
+
+one row for each of these mph values:
+-->0, 5, 15, 20, 30, 60, 100, 150, 179<!--
+
+-->|,|@@@@|<esc>
+|-
+| {{mph|@@@@}}
+| {{#expr:floor({{iteminfo|{{pagename2en}}|damage}}*({{mph|@@@@|tiles}}*6/175+0.1))}}
+| {{knockback|full=y|class=|{{#expr:{{iteminfo|{{pagename2en}}|knockback}}*{{mph|@@@@|tiles}}*(4/105) round 2}}}}
+</esc>|}}
+|}
+<!-- notes that only apply to the normal Jousting Lance and should not be transcluded: below this line -->{{#if:{{#dplvar:_transclude_onlycommon}}||
+}}
+
+== 小贴士 ==
+<!-- common tips transcluded on [[Hallowed Jousting Lance]] and [[Shadow Jousting Lance]]: below this line -->
+* 由于此{{tr|weapon}}在受到伤害时就会收回，它在攻击能够承受一击的{{tr|enemy}}时不太有效。不过，它很适合清理大群的较弱{{tr|enemy}}。
+** 这让玩家间的{{tr|Jousting Lance}}对决可行，因为输的那一方将无法对获胜方造成伤害。
+** 此问题可以被[[{{tr|Feral Claws}}]]及其升级缓解，因为[[{{tr|autoswing}}]]让玩家在受伤后能够自动进行下一次攻击。此外，从[[{{tr|Titan Glove}}]]获得的{{tr|knockback bonus}}有助于防止玩家首先受伤。
+* {{tr|jousting lances}}从{{tr|movement speed}}中获得的伤害没有上限。可以通过搭配[[{{tr|Mollusk Whistle}}]]或[[{{tr|Inner Tube}}]]和极其深的{{tr|water}}池，并通过从池底浮到水面来获得极高的动量，并因此获得极高的伤害。使用正确的配置，这一伤害甚至可以一击杀死[[{{tr|Dungeon Guardian}}]]。<ref>[https://www.youtube.com/watch?v=4KDSp-l1nbU Terraria - For the Worthy Master Dungeon Guardian Speedkill in 1 tick (World Record)]</ref>
+* 相对地，将{{tr|jousting lance}}竖直向上或向下伸出会使得它获得较大的碰撞范围，使得它在冲刺时能够更容易地击中飞行或行动难以预测的{{tr|enemies}}。
+* 在跳下[[{{tr|hellevator}}]]时将{{tr|jousting lance}}向下伸出会阻止[[{{tr|Spider Cave}}]]中生成的[[{{tr|Cobweb}}]]将玩家减速，较高的下落速度也可以帮助处理生成的{{tr|enemy}}。
+<!-- tips that only apply to the normal Jousting Lance and should not be transcluded: below this line -->
+
+== 花絮 ==
+<!-- common trivia transcluded on [[Hallowed Jousting Lance]] and [[Shadow Jousting Lance]]: below this line -->
+* 向行进方向的反方向刺出{{tr|Jousting Lance}}会让[[{{tr|mounts}}]]走“{{wikipedia|Moonwalk (dance)|太空步}}”，例如[[{{tr|Unicorn mount}}]]会后退着前进。相似地，在骑乘{{tr|mount}}时，{{tr|Jousting Lance}}会悬浮在空中，使得玩家的手在视觉上并没有握住它。
+<!-- trivia that only applies to the normal Jousting Lance and should not be transcluded: below this line -->
+* 其{{tr|tooltip}}''“纳命来！（Have at thee!）”''参考了{{wikipedia|William Shakespeare|莎士比亚}}的戏剧{{wikipedia|Henry VI, Part 3|《亨利六世（The History of King Henry the Sixth）》}}第二幕、第四场、第十一行中的一句台词“And so, have at thee!”。在设定上，该场景为 1461 年{{wikipedia|Battle of Towton|陶顿战役}}中克里福德勋爵（Lord Clifford）和理查·普兰他日奈（Richard Plantagenet）之间的一场{{wikipedia|single combat|一对一决斗}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 56 提升至 60。}}
+{{history|Desktop 1.4.1.2|{{tr|Jousting Lances}}不再能获得{{tr|melee speed modifiers}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Jousting Lance}}

@@ -1,0 +1,22 @@
+<includeonly><!--
+
+-->{{#vardefine:magicquiver_knockback|{{#expr:floor({{{base knockback}}}*1.1)}}}}<!-- apply knockback increase of the Magic Quiver
+-->{{#ifeq:{{#var:magicquiver_knockback}}|{{{base knockback}}}|<!-- knockback is the same, skip this weapon -->|<nowiki/>
+{{!}}-
+{{!}} {{item|{{{1}}}|wrap=y}}
+{{!}} {{formatnum:{{{base knockback}}}}}
+{{!}} {{formatnum:{{#var:magicquiver_knockback}}}}
+{{!}} <!--
+-->{{#ifexpr:{{#var:magicquiver_knockback}}>{{{base knockback}}}|<!--
+	-->{{green|{{percent|{{signed number|{{#expr:({{#var:magicquiver_knockback}}/{{{base knockback}}}-1)*100 round2}}}}%}}}}<!--
+-->|<!--
+	-->{{red|{{percent|{{signed number|{{#expr:({{#var:magicquiver_knockback}}/{{{base knockback}}}-1)*100 round2}}}}%}}}}<!--
+-->}}<!--
+-->}}<!-- end of ifeq
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+{{language info|en=Magic Quiver/row}}
+</noinclude>

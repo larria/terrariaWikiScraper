@@ -1,0 +1,56 @@
+<div class="ajaxHide">
+{{redirect|瓶子|和“瓶”相关的事物|{{tr|Bottle (disambiguation)}}}}
+
+'''{{tr|Flasks}}'''是一类在[[{{tr|Imbuing Station}}]]制作的[[:Category:{{tr|Consumable items}}|{{tr|consumable item}}]]。每种都会为玩家提供一种[[{{tr|buff}}]]，让玩家的{{tr|melee}}和[[{{tr|whip}}]]攻击能造成额外的[[{{tr|debuff}}]]。任何根据其提示信息中的显示归属于{{tr|melee}}的{{tr|weapon}}都能从中受益，包括[[{{tr|Sword}}]]、[[{{tr|Spears}}]]、[[{{tr|Yoyos}}]]、[[{{tr|Tool}}]]、[[{{tr|Boomerangs}}]]、[[{{tr|Flails}}]]、[[{{tr|Scourge of the Corruptor}}]]、和[[{{tr|Vampire Knives}}]]等。
+
+一次只能使用一种{{tr|Flasks}}，激活第二种会自动取消上一种。在{{eversions|1.3.0.1}}中，{{tr|flasks}}在死后依然会维持激活状态，不像其他{{tr|potions}}。
+
+{{tr|Flasks}}全部在[[{{tr|Imbuing Station}}]]处制作，所有{{tr|flasks}}都持续 20（{{eicons|1.3.0.1}}）或 15（{{eicons|1.3.0.1|invert=y}}）分钟。
+
+== 类型 ==
+</div>
+
+{{recipes
+|result = LIKE Flask of % | expectedrows = 12
+|nostation = y
+<!-- custom headers for crafting table. -->
+|header-result = {{tr|Flask}}
+<!-- add custom col -->
+|col-C-1 = 灌注
+|col-C-2 = {{tr|Melee Attacks}}会造成
+<!-- data for custom col -->
+|result-index-Flask of Poison = a
+|a-row-col-C-1 = {{item|nolink=y|Weapon Imbue Poison}}
+|a-row-col-C-2 = {{buff|Poisoned}}
+|result-index-Flask of Fire = b
+|b-row-col-C-1 = {{item|nolink=y|Weapon Imbue Fire}}
+|b-row-col-C-2 = {{buff|On Fire!}}
+|result-index-Flask of Venom = c
+|c-row-col-C-1 = {{item|nolink=y|Weapon Imbue Acid Venom}} {{eicons|1.4.1}}<br/>{{item|nolink=y|Weapon Imbue Venom}} {{eicons|1.4.1|invert=y}}
+|c-row-col-C-2 = {{buff|Acid Venom}} {{eicons|1.4.1}}<br/>{{buff|id=70|Venom}}
+|result-index-Flask of Gold = d
+|d-row-col-C-1 = {{item|nolink=y|Weapon Imbue Gold}}
+|d-row-col-C-2 = {{buff|Midas}}
+|result-index-Flask of Ichor = e
+|e-row-col-C-1 = {{item|nolink=y|Weapon Imbue Ichor}}
+|e-row-col-C-2 = {{buff|Ichor}}
+|result-index-Flask of Cursed Flames = f
+|f-row-col-C-1 = {{item|nolink=y|Weapon Imbue Cursed Flames}}
+|f-row-col-C-2 = {{buff|Cursed Inferno}}
+|result-index-Flask of Nanites = g
+|g-row-col-C-1 = {{item|nolink=y|Weapon Imbue Nanites}}
+|g-row-col-C-2 = {{buff|Confused}}
+|result-index-Flask of Party = h
+|h-row-col-C-1 = {{item|nolink=y|Weapon Imbue Confetti}}
+|h-row-col-C-2 = {{item|Confetti}}炸开
+}}
+<div class="ajaxHide">
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+</div>
+
+[[Category:{{tr|Potion items}}| ]]
+
+{{language info|en=Flasks}}

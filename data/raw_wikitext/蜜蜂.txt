@@ -1,0 +1,88 @@
+{{npc infobox
+| auto = 210
+| image = Bees.gif
+| imagecargo = [[File:Bee.gif|link=]]
+| type = Flying Enemy
+| environment = Bee Hive (biome)/Jungle/Underground Jungle
+| life =
+| damage =
+| defense =
+| knockback =
+| debuffmode = expert
+| debuff = Poisoned
+| debuffchance = 100%
+| debuffduration = {{expert|2–6 {{tr|seconds}}}}|{{master|2.5–7{{tr|seconds}}}}
+| shownpcid = no
+}}
+
+'''{{tr|Bee}}'''是一种小型{{tr|flying}}[[{{tr|enemies}}|{{tr|enemy}}]]，通常在[[{{tr|Underground Jungle}}]]生成。它们可以被[[{{tr|Queen Bee}}]]生成，且也会在摧毁[[{{tr|Bee Hive}}]]时和偶尔在采挖[[{{tr|Hive|link=y}}|{{tr|Hive}}]]{{tr|blocks}}（主要在[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]{{tr|biomes}}中找到）时生成。它们通过飞到其目标身上的方式来攻击，造成{{tr|contact damage}}。在{{eil|Expert Mode}}下，{{tr|Bees}}会对玩家造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。
+
+在{{eversions|1.4.0.1}}中，{{tr|Bees}}也可以伤害其他{{tr|enemies}}。{{tr|Bees}}可以将所有（除了它们自身和[[{{tr|Queen Bee}}]]以外的）{{tr|enemies}}和玩家作为目标，且它们总是攻击最接近的目标。{{tr|Bees}}的攻击对目标造成 100% {{tr|contact damage}}，且它们也会受到目标的 100% {{tr|contact damage}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.UpdateNPC / Terraria.NPC.GetHurtByOtherNPCs / Terraria.NPC.BeHurtyOtherNPCs / AI_005_EaterOfSouls|field=Terraria.ID.NPCID.Sets&#46;HurtingBees}}
+
+== 种类 ==
+{{npc infobox/tablestart|note=bottom}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Knockback resistance}}
+{{npc infobox
+| image = Bee.gif
+| auto = 210
+| type = Flying Enemy
+| environment = Bee Hive (biome)/Jungle/Underground Jungle
+}}
+{{npc infobox
+| image = Small Bee.gif
+| auto = 211
+| type = Flying Enemy
+| environment = Bee Hive (biome)/Jungle/Underground Jungle
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* 来自[[{{tr|Bee Gun}}]]、[[{{tr|Bee Keeper}}]]、[[{{tr|The Bee's Knees}}]]、[[{{tr|Beenade}}]]、或[[{{tr|Honey Comb}}]]的{{tr|Bees}}和{{tr|Bee enemies}}完全无关，因为这些{{tr|bees}}是友方{{tr|projectiles}}。 
+** 和玩家的{{tr|bee projectiles}}不同，{{tr|Bee enemies}}在进入[[{{tr|water}}]]中时不会死亡/消失。不过，若[[{{tr|Bee Hive}}]]落到{{tr|water}}中，它在破碎时不会生成{{tr|Bees}}。
+* 在{{eil|Expert mode}}中，由{{tr|Bees}}所造成的伤害在[[{{tr|Hardmode}}]]中大大提高。这可能会让玩家猝不及防，因为{{tr|bees}}在游戏的这个阶段通常是很容易应付的。
+* {{tr|Bees}}不会掉落[[{{tr|Souls of Light}}]]、[[{{tr|Souls of Night}}]]、[[{{tr|Biome Key}}]]、或[[{{tr|Biome Key Mold}}]]。
+
+== 小贴士 ==
+* 由于{{tr|Bees}}能从{{tr|Hive blocks}}中生成，推荐小心进入{{tr|Bee Hive}}，虽然它们{{tr|defense and health}}都很低。虽然即使是{{tr|pickaxe}}中最低级的[[{{tr|Copper Pickaxe}}]]都能击杀它们，但一下子破坏太多{{tr|Hives}}也可能会压倒穿着低级[[{{tr|armor}}]]的玩家。
+
+== 花絮 ==
+* 它们以及[[{{tr|Servant of Cthulhu}}]]和[[{{tr|Meteor Head}}]]是仅有的基础伤害值要高于自身最大生命值的{{tr|enemies}}。
+{{bestiary}}
+
+== 另见 ==
+* {{item|Hornet}} – 类似但更加危险的[[{{tr|enemy}}]]
+* {{item|Moss Hornet}} – [[{{tr|Hardmode}}]]独有的，更强大的{{tr|Hornet}}
+* {{item|Bee Mount}} – 可骑乘的{{tr|bee}}[[{{tr|mount}}]]
+* {{item|Hornet minion|link={{tr|Hornet Staff|link=y}}|image=Hornet (minion).gif}} – 会和{{tr|enemies}}战斗的{{tr|hornet}}[[{{tr|minion}}]]
+* {{item|Baby Hornet}} – {{tr|hornet}}[[{{tr|pet}}]]（不会战斗）
+* {{item|Tiphia}} – {{tr|a tiphia pet}}，有几乎和{{tr|hornet}}完全一样的外观（每约 0.3 秒会对{{tr|enemy}}造成 1 伤害，但不会追杀它们）
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprites updated.}}旧{{tr|sprites}}为[[File:Bee (pre-1.4.4.9).png|link=]] [[File:Small Bee (pre-1.4.4.9).png|link=]]。}}
+{{history|Desktop 1.4.1.2|不再攻击{{tr|invincible}}的 {{tr|NPCs}}。}}
+{{history|Desktop 1.4.0.1|现在会以玩家和{{tr|enemies}}为目标。}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}旧{{tr|sprites}}为[[File:Bees (old).png|link=]]。}}
+{{history|Desktop 1.3.1|添加了自然出现的[[{{tr|Bee Hive}}]]{{tr|traps}}，被摧毁时会释放 2–3 只{{tr|bees}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Bee}}

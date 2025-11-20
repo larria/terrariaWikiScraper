@@ -1,0 +1,22 @@
+<includeonly><!--
+
+
+-->{{#vardefine:goreids:id|{{{id|{{#expr:{{#var:goreids:id}}+1}}}}}}}<!-- if the ID variable is empty, start with 0
+
+--><tr><!--
+	--><td>{{#var:goreids:id}}</td><!--
+	--><td align="center">[[File:Gore {{#var:goreids:id}}.{{{ext|png}}}{{#if:{{{imagesize|}}}|{{!}}{{{imagesize}}}}}]]</td><!--
+	-->{{#if:{{#var:__gore:iname:{{#var:goreids:id}}}}|<!--
+		--><td align="center"><code>{{#var:__gore:iname:{{#var:goreids:id}}}}</code></td><!--
+	-->|<!--
+		--><td align="center" data-sort-value="ZZZZZ">{{na}}</td><!--
+	-->}}<!--
+	--><td>{{{1|{{na}}}}}</td><!--
+	--><td align="center">{{#if:{{#var:__gore:safe:{{#var:goreids:id}}}}|{{yes}}|{{no}}}}</td><!--
+--></tr><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Gore IDs/row}}
+</noinclude>

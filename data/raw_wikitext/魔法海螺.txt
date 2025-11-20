@@ -1,0 +1,60 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4263
+| type = Tool / Miscellaneous
+| tags = bag loot
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Demon Conch}}
+
+'''{{tr|Magic Conch}}'''是一种{{tr|item}}，能将玩家传送至较远侧的[[{{tr|Ocean}}]]。和[[{{tr|Magic Mirror}}]]类似，{{tr|Magic Conch}}可以无限使用。它能从[[{{tr|underground desert}}]]较浅的 4/7 部分的[[{{tr|Sandstone Chest}}]]、[[{{tr|Oasis Crate}}]]和[[{{tr|Mirage Crate}}]]中获得。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Magic Conch|expectedrows=1}}
+
+== 备注 ==
+[[File:MagicConchTeleportLocations.gif|thumb|基于{{tr|mount}}高度和{{tr|block}}距离水平面的高度的不同传送位置。]]
+
+* 玩家被传送到的{{tr|tile}}是没有被{{tr|liquid}}阻挡的水平距离最远的一格，然后是最高的一格。当世界最初生成后，这一格应当位于在水边的{{tr|Sand Block}}上。
+* {{tr|Magic Conch}}将玩家传送到的其中一个{{tr|tile}}下方必须有向下延伸至海面的{{tr|block}}。这些{{tr|block}}之间可以有少于玩家高度的空隙，且必须位于海面以上。这使得玩家能够利用{{tr|mount}}改变自己的高度来让{{tr|Magic Conch}}将玩家传送到世界中 6 个不同的位置。如果两侧{{tr|Oceans}}被完全阻挡（例如，被{{tr|liquid}}淹没），传送会失败，玩家会被传送到自己当前所在位置。
+* 失败的{{tr|Magic Conch}}传送会重置玩家的动量，并重置[[{{tr|extra jumps}}]]次数。此外，直到传送失败都按住 {{key|jump}} 不放只会重置由[[{{tr|Rocket Boots}}]]及其升级物提供的飞行时间，而在传送前放开 {{key|jump}} 会重置{{tr|Rocket Boots}}和[[{{tr|wings}}]]提供的飞行时间，这使得玩家能够获得“无限”飞行。
+* 玩家所传送到的{{tr|tile}}会在传送发生前的瞬间确定，而非使用此物品时。
+* 使用时产生的微粒是{{tr|water}}微粒，它们会随玩家当前所在的{{tr|biome}}而变化颜色。[[{{tr|Water fountains}}]]和[[{{tr|Blood Moon}}]]也会改变微粒的颜色，优先于{{tr|biome}}的天然水颜色。
+* 如果玩家位于[[{{tr|spawn point}}]]东侧的世界，就会被传送到西侧的{{tr|Ocean}}，反之亦然。
+
+== 小贴士 ==
+* 如果还没有探索两侧的{{tr|Oceans}}，它可以用于快速寻找[[{{tr|Angler}}]]来开始做[[{{tr|fishing}}]][[{{tr|quests}}]]。
+** 然而，由于此物品需要在对于未做好准备的玩家来说非常危险的[[{{tr|Underground Desert}}]]{{tr|biome}}中找到，或者从较为稀有的{{tr|fishing catch}}：[[{{tr|Oasis Crate}}]]/[[{{tr|Mirage Crate}}]]中获得，步行前往{{tr|Oceans}}可能会更快些。
+* 除了[[{{tr|Pylon}}]]网络外，它提供了另一种快速到达{{tr|Ocean}}的方法。
+* 由于每个世界中只能放置一个{{tr|Ocean Pylon}}但有两个{{tr|Oceans}}，{{tr|the Magic Conch}}对于到达没有{{tr|Pylon}}所在的{{tr|Ocean}}来说也很有用。
+* {{tr|The Magic Conch}}在[[{{tr|Lunar Events}}]]期间更为有用，因为其中两个[[{{tr|Celestial Pillars}}]]常常会生成在靠近世界两侧的位置。
+* {{tr|The Magic Conch}}让建立{{tr|Pylon}}网络更加简单。在{{tr|Ocean biome}}建造{{tr|town}}时，{{tr|the Magic Conch}}和{{tr|Magic Mirror}}允许玩家在家和{{tr|Ocean}}之间快速往返并且能方便地获取物资，而无需穿过大半个世界旅行。
+* {{tr|The Magic Conch}}也能让玩家快速到达[[{{tr|Dungeon}}]]。由于{{tr|Dungeon}}总是离{{tr|Ocean}}很近，玩家可以更快地到达那里。在探索[[{{tr|Plantera}}]]后的{{tr|Dungeon}}时它会更加有用，因为玩家可能会在{{tr|Dungeon}}中死很多次。
+* {{tr|The Magic Conch}}必定会将已经在{{tr|Ocean}}中的玩家传送到另一侧的[[{{tr|Ocean}}]]{{tr|biome}}。这允许玩家简单地到达世界两侧，只需再用一次{{tr|the Magic Conch}}即可。
+* 在尝试开始[[{{tr|Martian Madness}}]]{{tr|event}}时，{{tr|The Magic Conch}}可以用来节省时间，因为它允许玩家传送到[[{{tr|Martian Probe}}]]能够生成的世界两侧。
+
+== 花絮 ==
+* 其{{tr|tooltip}}，“{{itemTooltip|4263}}”参考了将海螺壳举在耳边时听到的声音很像海浪这一事实。在现实生活中，海螺中的空腔会让附近的噪音产生共鸣，听起来像海浪的声音。
+* 它拥有游戏中最慢的{{tr|use time}}，与[[{{tr|Demon Conch}}]]、两种[[{{tr|Magic Mirrors}}]]、[[{{tr|Cell Phone}}]]和[[{{tr|Snake Charmer's Flute}}]]相同。
+* {{tr|Magic Conch}}有可能是基于《{{wikipedia|Spongebob Squarepants|海绵宝宝}}》的《[https://spongebob.fandom.com/zh/wiki/%E7%A5%9E%E5%A5%87%E6%B5%B7%E8%9E%BA 海绵宝宝俱乐部（Club Spongebob）]》一集中的[https://spongebob.fandom.com/zh/wiki/%E7%A5%9E%E5%A5%87%E6%B5%B7%E8%9E%BA_(%E7%89%A9%E5%93%81) 神奇海螺]，后者在网络上成为了一个流行迷因/梗（meme）。
+
+== 另见 ==
+* [[{{tr|Demon Conch}}]]
+* [[{{tr|Magic Mirrors}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 动画序列现在速度与{{tr|Magic Mirror}}一样快。
+** 现在用于制作[[{{tr|Shellphone}}]]。}}
+{{history|Desktop 1.4.0.5|修复了在[[{{tr|Sandstorm}}]]期间使用{{tr|Magic Conch}}时遇到的一个罕见的崩溃问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Magic Conch}}

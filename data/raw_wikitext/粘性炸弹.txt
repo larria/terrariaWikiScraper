@@ -1,0 +1,52 @@
+{{item infobox
+| auto = 235
+| damage = 100
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 50 {{eicons|1.4.0.1|invert=y|small=y}}
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+| listcat = Explosives
+}}
+
+[[File:Sticky Bomb (demo).gif|thumb|扔到墙上的{{tr|A Sticky Bomb}}。]]
+
+'''{{tr|Sticky Bombs}}'''是用[[{{tr|Bomb}}]]和[[{{tr|Gel}}]]制作而成的一种[[{{tr|Explosives (class)}}]]。它们可以用作采矿工具或{{tr|weapon}}，虽然通常都是前者。当使用时，{{tr|Sticky Bomb}}会从玩家处抛出若干格远并粘在它所接触到的第一个实心{{tr|tile}}上（包括天花板或[[{{tr|platform}}]]）。如果它所粘着的{{tr|tile}}被某些手段移除，它会落下直到碰到另一个{{tr|tile}}。它会在 3 秒钟后爆炸，对附近的{{tr|enemies}}造成 100 点伤害并摧毁它周围的多个{{tr|blocks}}。如果不小心，玩家也会伤到自己。
+
+{{tr|Sticky Bombs}}可以摧毁几乎所有{{tr|block}}（[[{{tr|Explosion-proof objects}}|除了一些例外]]），随后可以收集它们。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sticky Bomb|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Sticky Bomb|expectedrows=1}}
+
+== 小贴士 ==
+* {{tr|Sticky Bombs}}对于清理一个区域非常有用，因为他们比非粘性的对应物更加精确也更加安全。然而，它们整体覆盖范围较短。
+** 因此，它们在试图摧毁[[{{tr|Crimson Heart}}]]或[[{{tr|Shadow Orb}}]]时非常有用，因为玩家不需要设置障碍来防止它们滚走。
+* 虽然{{tr|the Sticky Bomb}}自身能卖 {{iteminfo|Sticky Bomb|sell}}，而其{{tr|ingredients}}只能卖 {{coin|{{recipes/extract|result=Sticky Bomb|mode=ingredients-sell}}}}，因此相比而言，将{{tr|Bombs}}制作成{{tr|Sticky Bombs}}比直接出售{{tr|the ingredients}}要更有利可图。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.4|修正了[[{{tr|Sticky Grenade}}]]、{{tr|Sticky Bombs}}、和[[{{tr|Sticky Dynamite}}]]并不总会粘住的问题。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprites updated.}}
+** {{tr|Stack limit}}由 50 提升至 99。
+** 现在用于制作[[{{tr|Sticky Dirt Bomb}}]]。}}
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2|{{tr|Gel}}的要求由 5 个降低至 1 个。}}
+{{history|Desktop 1.1|{{tr|Stack limit}}由 20 提升至 50。}}
+{{history|Desktop 1.0.2|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-misc = yes
+}}
+
+{{language info|en=Sticky Bomb}}

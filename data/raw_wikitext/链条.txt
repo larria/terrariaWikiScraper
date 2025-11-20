@@ -1,0 +1,47 @@
+{{item infobox
+| auto = 85
+| type = Consumable
+| sell = @@@@ {{eicons|1.3.0.1|small=y}} / {{sc|2}} {{eicons|1.3.0.1|invert=y|small=y}}
+}}
+
+'''{{tr|Chains}}'''既可以用来攀爬，也是某些制作配方的材料。用于制作[[{{tr|Grappling Hook}}]]、[[{{tr|Sawmill}}]]、所有种类的[[{{tr|Watches}}]]和[[{{tr|Chandelier}}]]之类的物品。链条可以放置，虽然无法变成绳子一样的圈，但还是以类似[[{{tr|Rope}}]]的方式使用，且攀爬速度相同（14秒1,000尺）。放置的链条是背景物体，更类似家具，不算作[[Room|房间]]的背景墙。
+
+{{eicons|1.4.4}}{{tr|Chains}}不会被[[{{tr|lava}}]]摧毁，尽管其为{{rare|0}}[[{{tr|rarity}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chain|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Chain|expectedrows=50}}
+
+
+== 历史 ==
+{{history|Desktop 1.4.4.1|{{tr|recipe}}可制作的{{tr|Chains}}从 10 个提升至 15 个。}}
+{{history|Desktop 1.4.4|
+** {{tr|Chains}}现在不会被熔岩摧毁，不论是{{tr|tiles}}还是{{tr|item}}。
+** 现在用于制作[[{{tr|Chest Lock}}]]。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Spider, Lesion, Sandstone, Bamboo, Nebula, Solar, Stardust}}和{{tr|Vortex}}[[{{tr|Chandelier}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Martian, Granite, Marble}}和{{tr|Meteorite}}[[{{tr|Chandelier}}]]。
+** 范围从 +2 提升至 +3。
+** {{tr|Sell price}}从{{sc|2}}降低至{{cc|40}}。}}
+{{history|Desktop 1.2.4|添加了{{tr|recipes}}，用于制作新的{{tr|Wood}}[[{{tr|Chandelier}}]]。}}
+{{history|Desktop 1.2.3|添加了许多{{tr|recipes}}，用于制作[[{{tr|Chandelier}}]]。}}
+{{history|Desktop 1.2.1.2|现在用于制作[[{{tr|Heart Lantern}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Chains}}现在可被放置，可像新的[[{{tr|Rope}}]]一样用于攀爬。
+** {{tr|Recipe}}从 3 个{{tr|Bars}}做 1 条{{tr|Chain}}改成了 1 个{{tr|Bars}}做 10 条{{tr|Chains}}。
+** 名字从"{{tr|Iron Chain}}"改成了"{{tr|Chain}}"，因为它现在可以用[[{{tr|Lead Bar}}]]制作。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|添加了[[{{tr|Tin Watch}}|{{tr|Tin}}]]、[[{{tr|Tungsten Watch}}|{{tr|Tungsten}}]]和[[{{tr|Platinum Watch}}]]。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Metal}}
+{{Master Template Consumables
+| show-other = yes
+}}
+{{language info|en=Chain}}

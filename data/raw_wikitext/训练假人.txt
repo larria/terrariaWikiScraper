@@ -1,0 +1,59 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper|direction=row
+|{{item infobox|boxwidth=15em
+| imageplacedalt =
+| type = Furniture
+| width = 2| height = 3
+| auto = 3202
+}}
+|{{npc infobox
+| auto = 488 | boxwidth=18em
+| image = Target Dummy (placed).gif
+| type = Furniture
+| soundhurt = NPC Hit 15.wav, NPC Hit 16.wav, NPC Hit 17.wav
+}}
+}}
+[[File:Hel-Fire (demo).gif|framed|{{tr|player}}使用[[{{tr|Hel-Fire}}]]攻击{{tr|Target Dummy}}。]]
+
+'''{{tr|Target Dummy}}'''是一种用来测试玩家攻击的[[{{tr|furniture}}]]。它可以被玩家重复攻击，同时像[[{{tr|enemies}}]]一样显示[[{{tr|damage}}]]数字，这样就可以测试在[[{{tr|modifier}}]]、[[{{tr|buff}}]]或者某些加成装备影响下[[{{tr|weapon}}]]的实际输出伤害。{{tr|Target Dummy}}无论受到多少由[[{{tr|weapon}}]]造成的伤害也不会被摧毁。可以用任何[[{{tr|pickaxe}}]]、[[{{tr|drill}}]]、或[[{{tr|Explosives (class)}}]]来移除{{tr|Target Dummy}}。
+
+{{tr|Target Dummy}}不仅显示伤害数字，也会显示会造成伤害的[[{{tr|debuffs}}]]的视觉效果，同时允许玩家测试他们的伤害输出，频率以及间隔期。虽然它们挨打时有向后晃的视觉效果，但{{tr|Target Dummy}}对[[{{tr|knockback}}]]免疫并且完全不会移动。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Target Dummy|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Target Dummy}}的[[{{tr|defense}}]]为 0。因为敌怪的防御会降低玩家造成的伤害，打击{{tr|Target Dummy}}时显示的伤害值是仅供参考的基本值，通常不能代表在实战中对敌人造成的伤害。
+* {{tr|Target Dummy}}有一个与其相联系的实体，该实体可以被去除，这会让{{tr|Target Dummy}}对伤害没有反应。它也可以用[[{{tr|Teleporter}}]]和[[{{tr|hoik}}]]来移动，并且在下方没有方块时会下落。
+** 同时最多可以有 100 个{{tr|Target Dummy}}实体处于激活状态。
+* {{tr|Target Dummy}}不会吸引自动制导的武器和多数仆从的主动追击或攻击，但{{tr|Stardust Cell}}的远程攻击会攻击它，并且类似于[[{{tr|Stardust Dragon Staff}}|星尘龙]]或[[{{tr|Deadly Sphere Staff}}|致命球]]这样的具有接触类伤害的仆从会在路过{{tr|Target Dummy}}时造成伤害。[[{{tr|Chlorophyte armor}}]]的套装奖励的自动攻击只有在玩家穿上盔甲并且攻击{{tr|Target Dummy}}时触发。非玩家操作瞄准敌人的武器，比如[[{{tr|Medusa Head}}]]或[[{{tr|Magnet Sphere}}]]，也会在攻击{{tr|Target Dummy}}时失效。
+* 许多需要攻击敌人才能触发的特殊效果，比如[[{{tr|The Horseman's Blade}}]]的{{tr|homing pumpkins}}和[[{{tr|Phantasm}}]]的附加{{tr|projectiles}}，不会在攻击{{tr|Target Dummy}}时生效。
+* 在{{tr|Target Dummy}}身上使用[[{{tr|Life Drain}}]]会提供{{tr|Life Drain}}[[{{tr|buff}}]]，在穿着全套的[[{{tr|Palladium Armor}}]]时攻击{{tr|Target Dummy}}也会触发{{tr|Rapid Healing buff}}。
+
+== 花絮 ==
+* {{tr|Target Dummy}}有死亡音效，但是它并不能被杀死。
+* {{tr|Target Dummy}}在被没有[[{{tr|Knockback}}]]的{{tr|weapon}}（如[[{{tr|Wand of Sparking}}]]）击中时仍然会晃动。
+
+== 另见 ==
+* {{item|DPS Meter}}，一种可以显示佩戴者每秒对敌伤害的[[{{tr|accessory}}]]，在测试对{{tr|Target Dummy}}伤害时很有用。
+* {{item|Mannequin}}和{{item|Womannequin}}，类似的不能被攻击但能够穿戴盔甲和时装物品的模型。
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|{{tr|Target Dummies}}不再会触发[[{{tr|Titanium armor}}]]的{{tr|set bonus}}。}}
+{{history|Desktop 1.3.1.1|修复了{{tr|Target Dummies}}永久隐形的问题。}}
+{{history|Desktop 1.3.1|{{tr|Target Dummies}}不再能触发吸血效果和[[{{tr|Spectre Armor}}]]。}}
+{{history|Desktop 1.3.0.4|修复了在[[{{tr|multiplayer}}]]下{{tr|Target Dummies}}有时会隐形的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.732.3|修复了放置的{{tr|Target Dummies}}和{{tr|item frames}}会阻止{{tr|world}}加载的问题。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Target Dummies}}不再能触发{{tr|Titanium armor}}的{{tr|set bonus}}和{{tr|Spectre Armor}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Target Dummy}}

@@ -1,0 +1,624 @@
+{{options/snap|item|snapshot:wingslist}}{{options/set|item|class=break}}<!--
+-->{{eicons/options|small=y}}<!--
+
+-->{{options/set|item infobox<!-- 
+-->|view=table<!-- 
+-->|imageinfo=no<!-- 
+-->|imagemode=equipped<!-- 
+-->|extequipped=png<!-- 
+-->|autoimageequipped=no<!-- 
+-->|cols=item2cells-anchor/imageequipped/col:source/col:time/col:height/col:xspeed/col:xaccmult/col:ymult/rarity/col:notes<!-- 
+-->|item2cells:nolink=true<!-- 
+-->|extargs=nolink<!-- 
+-->}}<!--
+
+-->{{#vardefine:pptToMph|{{#expr:216000/42240}}}}<!--Pixel/tick to Miles/hour-->
+{| class="terraria sortable lined align-center full-width" id="wings-table"
+! colspan="2" rowspan="2" | {{tr|Wing}}
+! rowspan="2" class="unsortable" | 装备后
+! rowspan="2" class="unsortable" | 来源
+! rowspan="2" | 时间{{source code ref|v=1.4.4.9|method=Terraria.Initializers.WingStatsInitializer.Load}}{{source code ref|old=y|v=1.3.5.3|method=Terraria.Player.UpdateEquips}}
+! rowspan="2" | 高度<br/>（格）
+! colspan="3" | 速度属性{{footnote|应用于玩家飞行时。}}
+! rowspan="2" data-sort-type=number | {{tr|Rarity}}
+! rowspan="2" class="unsortable" | 备注
+|-
+! 最大水平速度{{footnote|按住 {{key|left}} 或 {{key|right}} 时的最大水平速度，假设玩家未佩戴任何[[{{tr|Movement Accessories}}|{{tr|movement accessories}}]]、未施加[[{{tr|buffs}}]]、没站在任何[[{{tr|liquids}}]]中并且没有按着 {{key|up}} 或 {{key|down}}。如果有其他水平速度{{tr|bonus}}（例：悬浮）要高于此处所列数值，此速度会被覆盖。数字会被舍入到最接近的整数。}}{{source code ref|v=1.4.4.9|method=Terraria.Initializers.WingStatsInitializer.Load / Terraria.Player.WingAirLogicTweaks / Terraria.Player.HorizontalMovement}}<br/>(mph)
+! 水平加速度倍率{{footnote|飞行时应用于水平加速度的倍率。}}{{source code ref|v=1.4.4.9|method=Terraria.Initializers.WingStatsInitializer.Load / Terraria.Player.WingAirLogicTweaks}}
+! 垂直倍率{{footnote|会应用到''最终''{{tr|jump speed}}值上。所有其他跳跃加成''也''会乘以此数值。}}{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.WingMovement}}
+{{item infobox | auto = 4978 | tags = wings
+| cate = <noinclude>no</noinclude>
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = align{{=}}left {{!}} 于创建[[{{tr|Journey Mode}}]]{{tr|character}}时得到，或者从[[{{tr|Skyware Chest}}]]、[[{{tr|Sky Crate}}]]和[[{{tr|Azure Crate}}]]中得到。
+| col:time = {{duration|25ticks}}
+| col:height = 18
+| col:xspeed = {{#expr:3*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：{{chance|1/40}}
+* 仅有的[[{{tr|Pre-Hardmode}}]]的{{tr|wings}}。
+}}
+{{item infobox | auto = 493 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude> 
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Angel Wings|mode=ingredients}}
+| col:time = {{duration|100ticks}}
+| col:height = 53
+| col:xspeed = {{#expr:6.25*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | auto = 492 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Demon Wings|mode=ingredients}}
+| col:time = {{duration|100ticks}}
+| col:height = 53
+| col:xspeed = {{#expr:6.25*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | id = 5035 | name = Sparkly Wings | rare = {{rare|5<noinclude>|cate=no</noinclude>}}
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Sparkly Wings|mode=ingredients}}'''或'''<br/>由[[{{tr|Dryad}}]]出售
+| col:time = {{duration|100ticks}}
+| col:height = 53
+| col:xspeed = {{#expr:6.25*{{#var:pptToMph}} round 0}}
+| col:xaccmult = ???
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在[[{{tr|Hardmode}}]]的[[{{tr|Blood Moon}}]]期间以 {{gc|40}} 出售。
+* {{eicons|1.3.0.1|desktop=n}} 任何现存的{{tr|Sparkly Wings}}都会被替换为{{tr|Cenx's Wings}}。
+}}
+{{item infobox | auto = 761 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Fairy Wings|mode=ingredients|sep=null }}
+| col:time = {{duration|130ticks}}
+| col:height = 67
+| col:xspeed = {{#expr:6.75*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 粒子效果发出黄光。
+}}
+{{item infobox | auto = 2494 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 来自[[{{tr|Angler}}]]的{{tr|Quest reward}}
+| col:time = {{duration|130ticks}} {{eicons|1.4.0.1}}<br/>{{duration|100ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 67 {{eicons|1.4.0.1}}<br/>53 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:3*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在完成了第 10 个[[{{tr|quest}}]]后，每个[[{{tr|quest}}]]都有 1/70 几率得到，但仅限[[{{tr|Hardmode}}]]。
+}}
+{{item infobox | auto = 822 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Frozen Wings|mode=ingredients}}
+| col:time = {{duration|130ticks}} {{eicons|1.4.0.1}}<br/>{{duration|160ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 67 {{eicons|1.4.0.1}}<br/>81 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在黑暗中可见，且散发出雪粒子。
+}}
+{{item infobox | auto = 785 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Harpy Wings|mode=ingredients}}
+| col:time = {{duration|130ticks}} {{eicons|1.4.0.1}}<br/>{{duration|140ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 67 {{eicons|1.4.0.1}}<br/>72 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:7*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | auto = 748 | tags = vendor / vendor:Steampunker / wings / hardmode
+| cate = <noinclude>no</noinclude>
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = align{{=}}left {{!}} 由[[{{tr|Steampunker}}]]出售
+| col:time = {{duration|150ticks}} {{eicons|1.4.0.1}}<br/>{{duration|115ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 77 {{eicons|1.4.0.1}}<br/>60 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:6.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在[[{{tr|Hardmode}}]]下，[[{{tr|Moon phase}}]] {{moons|5|6|7|8}} 期间出售，售价为 {{iteminfo|748|buy}}
+* 用{{key|up}}键能更快上升（上升速度上限为 3 倍{{tr|jump speed}}）。
+* 快速上升以 2 倍的原速度消耗飞行时间。
+* 粒子效果发出橙光。
+* 使用时会发出独特的音效。
+}}
+{{item infobox | auto = 665 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 1583 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 1584 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 1585 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 1586 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 3228 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+* 发出微弱的紫光，且在黑暗中可见。
+* 完全无声。
+}}
+{{item infobox | auto = 3580
+| ext = gif
+| cate = <noinclude>no</noinclude>
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 从脚下发出火箭微粒，类似于[[{{tr|Rocket Boots}}]]，没有任何实际的翅膀图像。
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 发出微弱的红光，且使玩家眼睛泛出红光。
+** 发光和眼睛泛光效果取决于所在的{{tr|accessory slot}}：最底下的栏位提供了最亮的光效，而最顶上的栏位则禁用光效。
+* 眼睛可通过{{tr|pet dye slot}}来染色，火箭效果则通过{{tr|accessory slot}}染色。
+* 完全无声。
+}}
+{{item infobox | auto = 3582 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 在黑暗中可见。
+}}
+{{item infobox | auto = 3588 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+}}
+{{item infobox | auto = 3592 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 暗红色部分在黑暗中可见。
+}}
+{{item infobox | auto = 3924 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+* 粒子效果发出白光，在黑暗中可见。
+* {{tr|wings}}发出的光的颜色取决于玩家上衣的颜色。
+}}
+{{item infobox | auto = 3928 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 4730 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 4746 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 4750 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 4754 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} [[{{tr|Hardmode}}]]{{eil|Treasure Bag}}（[[{{tr|Queen Slime}}]]的除外）
+| col:time = {{duration|150ticks}}
+| col:height = 77
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* [[{{tr|Developer item}}]]
+}}
+{{item infobox | auto = 1162 | tags = vendor / vendor:Witch Doctor / wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 由[[{{tr|Witch Doctor}}]]出售
+| col:time = {{duration|160ticks}}
+| col:height = 81
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在击败{{tr|Plantera}}后，[[{{tr|Hardmode}}]][[{{tr|Jungle}}]]中，于[[{{tr|night}}]]以 {{iteminfo|1162|buy}} 出售。{{eicons| 1.4.0.1 }}
+* 在[[{{tr|Hardmode}}]][[{{tr|Jungle}}]]中，于[[{{tr|night}}]]以 {{pc|1}} 出售。{{eicons|1.4.0.1|invert=y}}
+}}
+{{item infobox | auto = 1165 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Bat Wings|mode=ingredients}}
+| col:time = {{duration|160ticks}} {{eicons|1.4.0.1}}<br/>{{duration|140ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 81 {{eicons|1.4.0.1}}<br/>72 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:3*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | auto = 1515 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Bee Wings|mode=ingredients}}
+| col:time = {{duration|160ticks}} {{eicons|1.4.0.1}}<br/>{{duration|130ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 81 {{eicons|1.4.0.1}}<br/>67 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* {{eicons|1.4.0.1}}[[{{tr|Tattered Bee Wing}}]]会在打败至少一个[[{{tr|mechanical boss}}]] 后开始掉落。
+}}
+{{item infobox | auto = 749 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Butterfly Wings|mode=ingredients}}
+| col:time = {{duration|160ticks}} {{eicons|1.4.0.1}}<br/>{{duration|130ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 81 {{eicons|1.4.0.1}}<br/>67 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:6.75*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 粒子效果发出粉红光。
+* {{eicons|1.4.0.1}}[[{{tr|Butterfly Dust}}]]会在打败至少一个[[{{tr|mechanical boss}}]] 后开始掉落。
+}}
+{{item infobox | auto = 821 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Flame Wings|mode=ingredients}}
+| col:time = {{duration|160ticks}}
+| col:height = 81
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 粒子效果发出橙光，在黑暗中可见，且显得半透明。
+}}
+{{item infobox | auto=823 | cargo=no | name=Ghost Wings
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Ghost Wings|mode=ingredients}}
+| col:time = {{duration|160ticks}}
+| col:height = 81
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 150%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 在{{eversions|Spectre Wings|short}}上被{{tr|Spectre Wings}}所取代。
+* 半透明。
+}}
+{{item infobox | auto = 1866
+| cate = <noinclude>no</noinclude>
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Hoverboard|mode=ingredients}}
+| col:time = {{duration|170ticks}}
+| col:height = 94 {{eicons|1.4.0.1}}<br/>86 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:6.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:6.25*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 166% {{eicons|1.4.0.1}}<br/>150% {{eicons|1.4.0.1|invert=y}}
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮速度提升至 {{#expr:10*{{#var:pptToMph}} round 0}} {{tr|mph}}；悬浮时具有 1000% 加速度倍率。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+* 完全无声。
+* 推进器火焰在黑暗中可见。
+}}
+{{item infobox | auto = 786 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Bone Wings|mode=ingredients}}
+| col:time = {{duration|170ticks}} {{eicons|1.4.0.1}}<br/>{{duration|140ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 94 {{eicons|1.4.0.1}}<br/>72 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1}}<br/>{{#expr:7*{{#var:pptToMph}} round 0}} {{eicons|1.4.0.1|invert=y}}
+| col:xaccmult = 100%
+| col:ymult = 166% {{eicons|1.4.0.1}}<br/>150% {{eicons|1.4.0.1|invert=y}}
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | auto = 2770 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Mothron}}]]
+| col:time = {{duration|170ticks}}
+| col:height = 94
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 166%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：{{chance|1/20}} / {{expert|{{chance|39/400}}}}。仅在[[{{tr|Plantera}}]]后掉落。
+* 发出黄色的光，且花纹在黑暗中可见。
+}}
+{{item infobox | auto = 823 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Spectre Wings|mode=ingredients}}
+| col:time = {{duration|170ticks}}
+| col:height = 94
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 166%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 取代了来自{{eversions|Ghost Wings}}的{{tr|Ghost Wings}}。
+* 半透明。
+}}
+{{item infobox | auto = 2280 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Beetle Wings|mode=ingredients}}
+| col:time = {{duration|170ticks}}
+| col:height = 94
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 166%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 完全无声。
+}}
+{{item infobox | auto = 1871 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Everscream}}]]
+| col:time = {{duration|180ticks}} {{eicons|1.4.0.1}}<br/>{{duration|170ticks}} {{eicons|1.4.0.1|invert=y}}
+| col:height = 107 {{eicons|1.4.0.1}}<br/>86 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 180% {{eicons|1.4.0.1}}<br/>150% {{eicons|1.4.0.1|invert=y}}
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：0.74%–2.22% / {{expert|1.33%–6.67%}}，取决于当前波数。<ref>每一波的详细掉落率：{{frost moon item drop rates|1/15|fromwave=4|towave=20}}见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]获取更多信息。</ref>
+* 灯泡在黑暗中可见。
+}}
+{{item infobox | auto = 1830 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Spooky Wings|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 107 {{eicons|1.4.0.1}}<br/>91 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 180% {{eicons|1.4.0.1}}<br/>150% {{eicons|1.4.0.1|invert=y}}
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+}}
+{{item infobox | auto = 1797 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Tattered Fairy Wings|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 107 {{eicons|1.4.0.1}}<br/>91 {{eicons|1.4.0.1|invert=y}}
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 180% {{eicons|1.4.0.1}}<br/>150% {{eicons|1.4.0.1|invert=y}}
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 粒子效果发出黄光。
+}}
+{{item infobox | auto = 948 | tags = Vendor/ vendor:Steampunker / wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 由[[{{tr|Steampunker}}]]出售
+| col:time = {{duration|180ticks}}
+| col:height = 107
+| col:xspeed = {{#expr:7.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 100%
+| col:ymult = 180%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 击败[[{{tr|Golem}}]]后，以 {{iteminfo|948|buy}} 出售。<!--if you have these on mobile or console, please go to the Discussion page and explain how you obtained them, which platform you are using (iPhone, PS3, Xbox, etc.), and the Terraria version number you are running-->
+}}
+{{item infobox | auto = 3883 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Betsy}}]]
+| col:time = {{duration|150ticks}}
+| col:height = 119
+| col:xspeed = {{#expr:7*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 250%
+| col:ymult = 250%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：{{chance|1/4}}
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮速度提升至 {{#expr:12*{{#var:pptToMph}} round 0}} {{tr|mph}}；悬浮时具有 1200% 加速度倍率。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+}}
+{{item infobox | auto = 4823 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Empress of Light}}]]
+| col:time = {{duration|150ticks}}
+| col:height = 128
+| col:xspeed = {{#expr:8*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 200%
+| col:ymult = 275%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：{{chance|1/15}} / {{expert|{{chance|1/10}}}}
+* 用{{key|up}}键能更快上升。
+}}
+{{item infobox | auto = 2609 | tags = wings / hardmode / bag loot
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Duke Fishron}}]]
+| col:time = {{duration|180ticks}}
+| col:height = 143
+| col:xspeed = 41
+| col:xaccmult = 200%
+| col:ymult = 250%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 掉落率：{{chance|1/15}} / {{expert|{{chance|1/10}}}}
+* 忽略[[{{tr|liquids}}]]中的移动惩罚。
+* 身后留下水泡尾迹。
+}}
+{{item infobox | auto = 3470 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Nebula Mantle|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 143
+| col:xspeed = {{#expr:6.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 150%
+| col:ymult = 245%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}} {{anchor|Luminite}}{{anchor|{{tr|Luminite}}}}
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮速度提升至 {{#expr:12*{{#var:pptToMph}} round 0}} {{tr|mph}}；悬浮时具有 1200% 加速度倍率。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+* 在黑暗中可见。
+* 穿着全套[[{{tr|Nebula armor}}]]套装时会有带着脉动效果的实心运动残影。
+}}
+{{item infobox | auto = 3469 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Vortex Booster|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 143
+| col:xspeed = {{#expr:6.5*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 150%
+| col:ymult = 245%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮速度提升至 {{#expr:12*{{#var:pptToMph}} round 0}} {{tr|mph}}；悬浮时具有 1200% 加速度倍率。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+* 发出天蓝色的光，且推进器火焰在黑暗中可见。
+* 完全无声。
+}}
+{{item infobox | auto = 3468 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Solar Wings|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 167
+| col:xspeed = {{#expr:9*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 250%
+| col:ymult = 300%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 50% 额外最大上升速度。
+* 在黑暗中可见，且粒子效果发出橙光。
+}}
+{{item infobox | auto = 3471 | tags = wings / hardmode
+| cate = <noinclude>no</noinclude>
+| col:source = align{{=}}left {{!}} {{recipes/extract|result=Stardust Wings|mode=ingredients}}
+| col:time = {{duration|180ticks}}
+| col:height = 167
+| col:xspeed = {{#expr:9*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 250%
+| col:ymult = 300%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}} 
+* 50% 额外最大上升速度，加速更快。
+* 在黑暗中可见。 
+* 穿着全套[[{{tr|Stardust armor}}]]套装时会有带着拖尾效果的透明运动残影。
+}}
+{{item infobox | auto = 4954
+| cate = <noinclude>no</noinclude>
+| nolink = false <!-- has its own page -->
+| cargo = no <!-- Cargo data is stored on its own page -->
+| col:source = align{{=}}left {{!}} 掉落自[[{{tr|Expert Mode}}]]中的[[{{tr|Moon Lord}}]]
+| col:time = {{duration|180ticks}}
+| col:height = 201
+| col:xspeed = {{#expr:8*{{#var:pptToMph}} round 0}}
+| col:xaccmult = 450%
+| col:ymult = 450%
+| col:notes = style{{=}}"font-size: 85%; text-align: left;" {{!}}
+* 用 {{key|up}} 键能更快加速但上升速度变慢（上升速度上限为 3 倍{{tr|jump speed}}）。
+* 用&thinsp;{{key|down}}&thinsp;+&thinsp;{{key|jump}}&thinsp;能水平悬浮。
+* 悬浮速度提升至 {{#expr:16*{{#var:pptToMph}} round 0}} {{tr|mph}}；悬浮时具有 1600% 加速度倍率。
+* 悬浮且未按下 {{key|left}} 和 {{key|right}} 时，以 0.5 倍的原速度消耗飞行时间。
+}}
+|}<!--
+-->{{options/reset|item infobox}}<!--
+-->{{eicons/options|reset}}<!--
+-->{{options/restore|item|snapshot:wingslist}}<!--
+
+-->{{reflist|css=text-align:left;}}<!--
+-->{{footnotelist|css=text-align:left;}}<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Wings/List}}
+</noinclude>

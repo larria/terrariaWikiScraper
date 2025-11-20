@@ -1,0 +1,53 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3118
+| tags = informational / vendor / vendor:Traveling Merchant
+}}
+
+'''{{tr|Lifeform Analyzer}}'''是[[{{tr|Informational Accessories}}|{{tr|informational accessory}}]]，显示玩家周围 81.25 格{{source code ref|name=drawinfoaccs|v=1.4.4.9|method=Terraria.Main.DrawInfoAccs}}范围内稀有[[{{tr|enemies}}]]、[[{{tr|critters}}]]、和未发现的[[{{tr|NPCs}}]]（参见[[#所检测的生物列表|下文列表]]）的名字。它可从[[{{tr|Traveling Merchant}}]]处以 {{iteminfo|Lifeform Analyzer|buy}} 购买。
+
+它是制作 [[{{tr|R.E.K. 3000}}]] 所需的三个组件之一，其他两个是[[{{tr|Tally Counter}}]]和[[{{tr|Radar}}]]，因此是[[指南:制作{{tr|Cell Phone}}|制作]][[{{tr|Cell Phone}}]]所必需的组件。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Lifeform Analyzer|expectedrows=1}}
+
+== 所检测的生物列表 ==
+如果在附近检测到了多个稀有生物，{{tr|the Lifeform Analyzer}}会报告拥有最高稀有度数值的生物名字。
+{{ajax|{{tr|Lifeform Analyzer}}/所检测的生物列表}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* 尽管[[{{tr|Mimics}}]]在{{tr|Lifeform Analyzer}}上具有的稀有度数值是 4，但和另一个稀有度为 4 的{{tr|enemy}}[[{{tr|Tim}}]]相比，它们作为“稀有”{{tr|enemies}}要常见得多。其他诸如[[{{tr|Rainbow Slime}}]]之类的{{tr|enemy}}只在非常特定的条件下才会频繁出现，这使得它们比稀有度数值更高的{{tr|enemy}}要更难发现。
+* 如果附近有多个具有相同稀有度数值的{{tr|creatures}}，那么显示哪一个取决于它们在内部的当前存活生物列表中的顺序。<ref name="drawinfoaccs" />这在不使用诸如 [[{{tr|mods}}]] 之类的第三方工具时是无法确定的。
+** 值得注意的是，{{tr|Mimics}}、{{tr|Ice Mimics}}、或{{tr|Tim}}''可能会''遮住{{tr|Truffle Worm or Prismatic Lacewing}}。以上任意之一都''会''遮住任何不那么稀有的生物，比如{{tr|Gold Critters}}，而{{tr|Biome Mimics}}也同样遮住任何其他东西。以上这些东西几乎也都可以遮住任何一个需要救援的 {{tr|NPCs}}。
+
+== 小贴士 ==
+* 可以用[[{{tr|Hunter Potion}}]]来寻找{{tr|Lifeform Analyzer}}所检测到的目标的确切位置。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 一些{{tr|enemies}}的{{tr|rarity}}级别有所改变，根据其共存的{{tr|enemies}}而给予恰当的优先级（例如：{{tr|Dye Beetles}}的{{tr|rarity}}又降回 1 了）。
+** {{tr|Voodoo Demon}}现在也会显示在{{tr|Lifeform Analyzer}}上。
+** {{tr|Gold Critters}}现在会以金字显示。}}
+{{history|Desktop 1.4.1| {{tr|Lac Beetles}}、{{tr|Cyan Beetles}}和{{tr|Cochineal Beetles}}的稀有度由 1 提高至 2。}}
+{{history|Desktop 1.4.0.1|现在可以探测[[{{tr|Prismatic Lacewing}}]]、[[{{tr|Sea Snail}}]]和[[{{tr|Squid}}]]。}}
+{{history|Desktop 1.3.4.2|现在可以探测[[{{tr|Sleeping Angler}}]]和[[{{tr|Unconscious Man}}]]。}}
+{{history|Desktop 1.3.3|现在可以探测[[{{tr|Sand Elemental}}]]。}}
+{{history|Desktop 1.3.0.5|现在可以探测[[{{tr|Martian Probe}}]]。}}
+{{history|Desktop 1.3.0.4|修正了[[{{tr|Pinky}}]]不会出现在{{tr|Lifeform Analyzer}}上的问题。}}
+{{history|Desktop 1.3.0.3|修正了[[{{tr|Nymph}}]]没有[[{{tr|rarity}}]]的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Lifeform Analyzer}}

@@ -1,0 +1,42 @@
+{{data template}}
+<!--
+
+Recipes for legacy platforms are registered at [[Legacy:Recipes/Hardmode Forge/register]].
+
+
+ ============ Recipes on Desktop 1.4.4 ============ 
+
+-->{{recipes/register
+| result = Crystal Block | resultid = 3234 | amount = 5
+| station = Adamantite Forge
+| Stone Block | 5
+| Crystal Shard | 1
+}}<!--
+-->{{recipes/register
+| version = {{eversions|1.4.1|code=y}}
+| result = Adamantite Bar | resultid = 391 | amount = 1
+| station = Adamantite Forge
+| Adamantite Ore | 4
+}}<!--
+-->{{recipes/register
+| version = {{eversions|1.4.1|code=y}}
+| result = Titanium Bar | resultid = 1198 | amount = 1
+| station = Adamantite Forge
+| Titanium Ore | 4
+}}<!--
+-->{{recipes/register
+| version = {{eversions|1.4.1.2|code=y}}
+| result = Chlorophyte Bar | resultid = 1006 | amount = 1
+| station = Adamantite Forge
+| Chlorophyte Ore | 5
+}}<!--
+-->{{recipes/register
+| result = Spectre Bar | resultid = 3261 | amount = 2
+| station = Adamantite Forge
+| Chlorophyte Bar | 2
+| Ectoplasm | 1
+}}
+
+<noinclude>
+{{language info|en=Recipes/Hardmode Forge/register}}
+</noinclude>

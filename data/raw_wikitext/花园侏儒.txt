@@ -1,0 +1,42 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| imagebreak = yes
+| type = Furniture / Miscellaneous
+| auto = 4609
+| width = 1 | height = 2
+}}
+
+'''{{tr|Garden Gnome}}'''是一件小型[[{{tr|furniture}}]]{{tr|item}}，会在[[{{tr|Gnome}}]]碰到阳光时生成。放置的{{tr|Garden Gnome}}会将玩家的[[{{tr|Luck}}#{{tr|Garden Gnomes}}|{{tr|Luck}}]]增加 0.2。此加成会对处于以{{tr|Garden Gnome}}为中心{{buff area}}区域内的玩家施加，类似于[[{{tr|Heart Lantern}}]]。放置多个{{tr|Garden Gnomes}}不会进一步提升{{tr|luck}}。
+
+被放置的{{tr|Garden Gnomes}}有五种不同的{{tr|sprite}}（它们的功能相同）：
+
+* 两臂交叉，侧面面向屏幕。
+* 驼着背，侧面面向屏幕。
+* 侧面面向屏幕。
+* 屁股面向屏幕。
+* 正对屏幕。
+
+== {{tr|Notes}} ==
+[[File:Garden Gnome Conditions.png|thumb|各种不同条件。{{tr|Garden Gnome}}会在条件 1 和 2 下生成，但在 3、4、5 或 6 时不会生成。]]
+* ''阳光''的定义为以下条件：
+** 处于[[{{tr|day}}]]（上午{{nbsp}}4:30 到下午{{nbsp}}7:30），包括[[{{tr|Solar Eclipse}}]]。
+** 不存在[[{{tr|background wall}}]]，包括[[{{tr|Glass Wall}}]]和天然墙。
+* {{tr|Garden Gnome}}会在{{tr|Gnome}}上方有[[{{tr|blocks}}|{{tr|solid blocks}}]]时生成。如果{{tr|Gnome}}处于[[{{tr|water}}]]下则不会生成。
+
+== {{tr|Tips}} ==
+* 由于它们获取相对容易，将其放置在任何{{tr|Luck}}生效的地方会很有用，例如 [[{{tr|boss}}]] 场地或刷怪场中。
+* {{tr|Garden Gnome}}在预览状态下的朝向取决于它所在的{{tr|tile}}，而不是{{tr|player}}的朝向。
+* 与其它{{tr|buff}}{{tr|furniture}}不同，{{tr|Garden Gnome}}不会给玩家提供可见的[[{{tr|buff}}]]以表明它已生效。可以将另一个提供范围{{tr|buff}}的{{tr|item}}（如[[{{tr|Campfire}}]]或[[{{tr|Sunflower}}]]）放置在{{tr|Garden Gnome}}旁边，观察其{{tr|buff}}图标来判断{{tr|luck}}加成是否生效。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.1|
+** 修复了其中一种{{tr|Garden Gnome}}的框架中一个奇怪的像素。
+** 修复了有关{{tr|Garden Gnomes}}的一个小{{tr|tile}}框架问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+{{language info|en=Garden Gnome}}

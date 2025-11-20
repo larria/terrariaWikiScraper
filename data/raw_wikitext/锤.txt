@@ -1,0 +1,63 @@
+'''{{tr|Hammer}}'''是一种用来破坏[[{{tr|background walls}}]]以及创建半[[{{tr|blocks}}]]和斜坡的[[{{tr|tools}}]]。高等级的{{tr|hammers}}（例如[[{{tr|Chlorophyte Warhammer}}]]）有足够的伤害可以用作[[{{tr|weapons}}]]。有些可以同时用作{{tr|hammers}}和[[{{tr|axes}}]]，例如[[{{tr|hamaxes}}]]。新角色生成时不会携带{{tr|hammer}}，除非在{{eil|Journey Mode}}，这时他们会携带一把[[{{tr|Iron Hammer}}]]。
+
+任何{{tr|hammer}}都能用来打破[[{{tr|Shadow Orb}}]]和[[{{tr|Crimson Heart}}]]。要摧毁[[{{tr|Altar}}]]则需要[[{{tr|Pwnhammer}}]]或更强的{{tr|hammer}}，不过只在已经打败[[{{tr|Wall of Flesh}}]]的世界才能这么做。如果试图用较差的{{tr|hammer}}或者在打败{{tr|Wall of Flesh}}之前摧毁之，玩家将损失一半当前生命值，同时{{tr|Altar}}安然无恙。
+
+虽然不是{{tr|hammer}}，[[{{tr|Drill Containment Unit}}]]可以在{{tr|Hardmode worlds}}摧毁{{tr|altars}}并且在挖掘时在周围创建斜坡。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! {{tr|Hammer Power}}
+! {{tr|Axe power}}
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Bonus}}
+! data-sort-type=number | {{tr|Use time}}
+! [[{{tr|Mining speed}}]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, hammer, axe, damage, bonus, usetime, toolspeed, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=FLOOR(hammer) ASC, FLOOR(axe) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 成就 ==
+{{achievement|name=Stop! Hammer Time!}}
+
+== 花絮 ==
+* 全部六种[[{{tr|Hardmode ores}}]]都没有对应的{{tr|hammer or hamaxe}}。
+* [[{{tr|Paladin's Hammer}}]]可以激活{{tr|achievement}}，但它发挥的并不是{{tr|hammer}}的功能。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|加入了四个新的{{tr|hamaxes}}，需要用[[{{tr|Luminite Bar}}]]和[[{{tr|Celestial Fragment}}]]来制作。}}
+{{history|Desktop 1.2.4|修正了玩家站在向下的斜坡与半格块之间时会漂浮的问题。}}
+{{history|Desktop 1.2.3|增加了倒置的斜面。修正了两个漂浮玩家的 Bug，这种 Bug 使得玩家和所站的表面之间的距离异常的大。}}
+{{history|Desktop 1.2|
+** {{tr|Hammers}}现在可以用来制造{{tr|half-blocks}}与斜面。
+** {{tr|Hammers}}不再能移除{{tr|furniture}}与{{tr|life crystals}}，现在要用{{tr|pickaxes}}或{{tr|drills}}来移除。}}
+{{history|Desktop 1.0.6|{{tr|Hammers}}现在摧毁{{tr|blocks}}的速度加快，摧毁{{tr|walls}}的速度大概是其他物体的两倍。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-main = yes
+| show-tool = yes
+}}
+
+[[Category:工具物品|*]]
+[[Category:锤| ]]
+
+{{language info|en=Hammers}}

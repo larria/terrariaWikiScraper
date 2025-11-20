@@ -1,0 +1,68 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerGranite.png|center]]
+
+'''{{tr|Granite Cave}}'''是一种出现在[[{{tr|Underground}}]]或[[{{tr|Cavern}}]][[{{tr|layer}}|层]]的[[{{tr|mini-biome}}]]。虽然形状可能因存在重叠的洞穴系统而不同，{{tr|Granite Cave}}通常是开阔的洞穴，并且偶尔点缀着岩架。{{tr|Granite Cave}}本身是完全由[[{{tr|Granite Block}}]]和[[{{tr|Granite Wall}}]]构成的，并且内含一些[[{{tr|Pot}}]]。在{{tr|Granite Cave}}中生成的[[{{tr|Underground Cabin}}]]由[[{{tr|Smooth Granite Block}}|{{tr|Granite}}主题物块]]和[[{{tr|Granite furniture}}|家具]]构成。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+    --><div><!--
+	-->{{infocard/box|<!--
+		-->{{dotlist<!--
+		-->|{{item|Granite Golem}}<!--
+		-->|{{item|Granite Elemental}}<!--
+		-->}}<!--
+	-->}}<!--
+    --></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Granite Golem}}]]、[[{{tr|Granite Elemental}}]]、和地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Granite Block}}<!--
+
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Granite Golem}}]]和[[{{tr|Granite Elemental}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Night Vision Helmet}}<!--
+			-->|{{item|Spaghetti}}<!--
+			-->|{{item|Geode}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 由于它只是一个{{tr|mini-biome}}，通常的 [[{{tr|NPC spawning}}]]规则并不适用于{{tr|the Granite Cave}}。取而代之的是，{{tr|Granite Elementals and Granite Golems}}需要在玩家的[[{{tr|NPC spawning|link=y}}#基础|{{tr|spawn range}}]]中有一块{{tr|Granite Block}}让它们在其上生成；或者是距离玩家 30 到 60 格之间的{{tr|Granite Block}}。只要单块{{tr|Granite Block}}就够了（但{{tr|Granite Blocks}}数量增加会提高几率），[[{{tr|Granite Wall}}]]并无任何影响。但是，如果玩家站在{{tr|Granite Block}}上，{{tr|Granite Elementals and Granite Golems}}的生成几率就会得到显著提高。在这种情况下，附近并不要求有更多{{tr|Granite Blocks}}。{{source code ref|v=1.3.5.3|method=Terraria.NPC.SpawnNPC}}
+* 在 [[{{tr|Drunk World}}]] 中，它的生成方式与{{tr|Marble Cave}}的发生了互换。
+
+== 小贴士 ==
+* {{tr|Granite}}{{tr|biome}}通常至少有一个独立的宝箱，因此一旦玩家有足够的力量击退{{tr|Granite Elemental}}，他们就应当探索这个生物群落了。
+
+== 另见 ==
+* [[{{tr|Marble Cave}}]]
+* [[{{tr|Underground}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 添加了新的{{tr|Granite}}碎石堆。
+** 添加了两种来自{{tr|Granite Cave enemies}}的掉落：
+*** [[{{tr|Granite Elemental}}]]和[[{{tr|Granite Golem}}]]二者都有 5% 的几率掉落[[{{tr|Geode}}]]（一种消耗品，被扔出时会掉落两种[[{{tr|Gem}}]]），并有 2% 的几率掉落新的[[{{tr|Spaghetti}}]][[{{tr|food}}]]{{tr|item}}。
+** 修正了世界生成过程中的一个问题，即生成在[[{{tr|Dungeon}}]]下面的{{tr|Granite}}和[[{{tr|Marble Cave}}|{{tr|Marble}}]]{{tr|biomes}}会让一些[[{{tr|Dungeon Bricks}}]]被锤击成在{{tr|the Dungeon}}生成之前相同的形状。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7.5|{{tr|Introduced.}}（{{icon|amazon}}）}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}（{{icon|ios}} {{icon|google play}}）}}
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{language info|en=Granite Cave}}

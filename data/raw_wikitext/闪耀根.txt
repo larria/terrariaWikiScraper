@@ -1,0 +1,55 @@
+{{item infobox
+| auto = 315
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = potion ingredients / plunder / bag loot
+}}
+{{drop infobox|style=clear:right}}
+{{quotation|[[File:Emote Town Pirate.gif|link=]][[{{tr|Pirate}}]]|{{gameText|LegacyDialog.274}}}}
+
+'''{{tr|Blinkroot}}'''是一种[[{{tr|Herbs}}|{{tr|herb}}]]，外表为带有发光亮点的茎。{{herb note}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Blinkroot|expectedrows=16}}
+
+== 备注 ==
+* 如果{{tr|Blinkroot}}所在的{{tr|Dirt Block}}转变为[[{{tr|grass}}]]{{tr|block}}，{{tr|the Blinkroot}}会被破坏并掉落为物品。
+* {{tr|Blinkroots}}在位于[[{{tr|surface}}]]以下时会生长得略微快一些。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GrowAlch|t=见[[{{tr|Herbs|link=y}}#已存在的草药的生长|{{tr|Herbs}} § 已存在的草药的生长]]。}}
+
+== 小贴士 ==
+* {{tr|Blinkroots}}最常见于[[{{tr|Underground}}]][[{{tr|layer}}]]及以下的区域，因为这些区域通常缺乏{{tr|grass}}。
+* 由于其开花是随机的，大规模种植方法似乎不太适合。每次收获都要检查目前有多少作物在花期并手动触发，以确保有足够的种子掉落以进行下一次种植。
+* 由于其发光特性，使得在已探索区域墙外也能看到它，因而它可能可以让玩家找到未探索的洞穴。
+
+== 花絮 ==
+* {{tr|Blinkroot}}是游戏中生长最快的{{tr|herb}}，甚至能够在种植后的几秒钟内收获。
+* [[{{tr|Party Girl}}]] {{tr|NPC}} 在她的一句话语（“{{gameText|LegacyDialog.267}}”）<ref>原文："{{gameText|lang=en|LegacyDialog.267}}"（译注：after party 指的是一种派对后的聚会）</ref>中提到了{{tr|Blinkroot}}。
+* 相似的是，[[{{tr|Pirate}}]] {{tr|NPC}} 也会偶尔提到{{tr|Blinkroots}}：“{{gameText|LegacyDialog.274}}”<ref>原文："{{gameText|lang=en|LegacyDialog.274}}"</ref>这是对经常和海盗相关联的原文“呦呵呵，一瓶朗姆酒！”（"Yo ho ho and a bottle of rum!"）的改编。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在用于制作[[{{tr|Biome Sight Potion}}]]。
+** {{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.3|现在用于制作[[{{tr|Garland}}]]。}}
+{{history|Desktop 1.4.0.3|
+** 现在在世界创建时更频繁地生成。
+** 现在在[[{{tr|underground}}]]会更快生长。}}
+{{history|Desktop 1.4.0.1|
+** 现在用于制作[[{{tr|Teleportation Potion}}]]和[[{{tr|Hanging Blinkroot}}]]。
+** {{tr|Stack limit}}从 99 提升至 999。}}
+{{history|Desktop 1.3.0.1|生长速度降低。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Herbs}}
+{{Master Template Consumables
+| show-material = yes
+}}
+
+{{language info|en=Blinkroot}}

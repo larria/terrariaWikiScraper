@@ -1,0 +1,118 @@
+{{item infobox
+| imagealt = [[File:Wooden Door.png|{{tr|Wooden Door item sprite}}|link=]]
+| type = Furniture/Mechanism
+| placeable = Yes
+| width = 2
+| height = 3
+| use = {{iteminfo|Wooden Door|usetime}}
+| autoswing = yes
+| rare = {{iteminfo|Wooden Door|rare}}
+| stack = {{iteminfo|Wooden Door|stack}}
+| sell = {{iteminfo|Wooden Door|sell}}<br/>{{iteminfo|Golden Door|sell}}（{{tr|Golden Door}}）
+| research = 1
+| sound1 = Door_Opened.wav
+| soundcaption1 = 打开d
+| sound2 = Door_Closed.wav
+| soundcaption2 = 关闭
+| idtile = 10（关闭），11（打开）
+| consumable = yes
+| cargo = no
+}}
+{{quotation|[[{{tr|Tax Collector}}|{{tr|The Tax Collector}}]]|{{gameText|LegacyDialog.365}}}}
+[[File:Placed Doors.png|frame|所有放置的{{tr|doors}}（向左开，关闭和向右开状态）。点击图片查看各行的简介。]]
+
+'''{{tr|Door}}'''是一类[[{{tr|furniture}}]]{{tr|items}}，在关闭时可以防止[[{{tr|enemy}}]]进入区域。玩家可以通过对其按下{{key|open}}打开它们。{{tr|Doors}}可以放置在任何正好为三格高，带有天花板和地板[[{{tr|block}}]]的空间中。友方 [[{{tr|NPCs}}]] 在白天四处游荡时也会开门和关门。
+
+一些遵循[[{{tr|Fighter AI}}]] 的{{tr|enemies}}可以开门，而[[{{tr|Goblin Peon}}]]则可以将其整个移除。''详情参见[[{{tr|Fighter AI|link=y}}#打开{{tr|doors and Tall Gates}}|{{tr|Fighter AI}} §打开{{tr|doors and Tall Gates}}]]。''
+
+也可以通过[[{{tr|Wire}}]]打开和关闭{{tr|door}}。如果将{{tr|wires}}放在{{tr|door}}的合页上，则电路将在激活时切换{{tr|door}}的关闭/打开状态，但是如果将{{tr|wires}}放置在{{tr|door}}打开的侧面上，则电路只能关闭{{tr|door}}。
+
+{{float file box|width=7em|[[File:Lihzahrd Temple Door.png]]|锁住的{{tr|Lihzahrd Door}}的外观。}}
+
+{{tr|Lihzahrd Door}}会自然出现在[[{{tr|Jungle Temple}}]]的入口处，一开始需要[[{{tr|Temple Key}}]]来打开。解锁后，可以用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]破坏它，然后像其他{{tr|door}}一样被玩家再次放置。也可以制作{{tr|Lihzahrd Door}}，但只有在打开最初的那个{{tr|door}}后才能获得其[[{{tr|crafting station}}]]，而且所需原料需要[[{{tr|Picksaw}}]]（或更高级）才能开采，{{tr|Picksaw}}由[[{{tr|Golem}}]]掉落。锁住的{{tr|Lihzahrd Door}}会完全阻止其本身和它上方和下方的 2 个{{tr|block}}被破坏。
+
+除了此处列出的{{tr|doors}}外，还存在[[{{tr|Trap Door}}]]和[[{{tr|Tall Gate}}]]，它们的行为类似于{{tr|doors}}。游戏中每种{{tr|block}}都可以通过[[{{tr|Actuator}}]]用作（靠[[{{tr|Switch}}]]切换开关的）{{tr|doors}}。
+
+目前共有 {{eicons|1.4.0.1}} 42 / {{eicons|1.3.0.1|invert=y|3DS=n}} 22 / {{icon/3DS}} 19 种可制作的{{tr|doors}}，和 6 种不可制作而必须从{{tr|world}}各处收集的{{tr|doors}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE %Door|resultnot=Trap Door|expectedrows=41|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 不可制作的门 ==
+{{options/set|item|nolink=y|mode=table}}<!--
+-->{{item infobox/options|view=table|cols=item2cells-anchor-nolink/col:notes}}
+{| class="terraria lined"
+|-
+! colspan=2 | {{tr|Door}} !! {{tr|Notes}}
+{{item infobox | auto = 1138 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = plunder
+| col:notes = 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+}}
+{{item infobox | auto = 1411 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = plunder
+| col:notes = 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+}}
+{{item infobox | auto = 1412 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = plunder
+| col:notes = 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+}}
+{{item infobox | auto = 1413 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = plunder
+| col:notes = 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+}}
+{{item infobox | auto = 1458 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = plunder
+| col:notes = 出现在[[{{tr|Ruined houses}}]]中，不会被[[{{tr|lava}}]]摧毁。
+}}
+{{item infobox | auto = 1710 | type = Furniture/Mechanism |  width = 2 | height = 3 | tags = drop / hardmode
+| col:notes = 掉落自[[{{tr|Pirate Invasion}}|{{tr|Pirates}}]]。可以卖 {{iteminfo|1710|sell}}。
+}}
+|}{{options/reset|item}}{{item infobox/options|reset}}
+
+* {{tr|Wooden Door, Rich Mahogany Door, Boreal Door, Sandstone Door, Skyware Door, Mushroom Door, Granite Door, Marble Door, Living Wood Door and Lihzahrd Doors}}也可以从{{tr|world}}各地收集得到。
+
+== 备注 ==
+* {{eicons|1.4.0.1|3ds=y}} {{tr|Doors}}会在玩家接近时自动打开。
+** {{eicons|1.4.0.1}} 可以在[[{{tr|Settings}}]]中开关此选项。
+* {{tr|Doors}}会根据玩家面朝的方向向左或向右打开，而不是玩家来自的方向。例如，如果玩家站在{{tr|Doors}}的左侧并面向左，则{{tr|Doors}}将朝向玩家打开，即向左。如果玩家不动，然后向右转并打开{{tr|Doors}}，则它将向右打开。
+* 如果{{tr|door}}的一侧有障碍物阻止它向此方向打开，例如有{{tr|furniture or background object}}，那么{{tr|the door}}会从另一侧没有障碍物的方向上打开。
+** 这有助于在[[{{tr|Blood Moon}}]]之类的[[{{tr|events}}]]中使房屋[[指南:基地|免受{{tr|enemies}}侵扰]]，因为它们始终会试图向内打开{{tr|doors}}。在{{eversions|1.4.0.1}}中，玩家打开的{{tr|doors}}一侧被挡住时，会尝试从另一个方向将其打开。
+* {{tr|Doors}}关闭时会挡住[[{{tr|liquids}}]]。
+** 如果{{tr|doors}}在打开时暴露在[[{{tr|lava}}]]中，它们（{{tr|Obsidian Doors}}除外）会被自动摧毁，但在关闭时会像阻挡其他{{tr|liquid}}一样阻挡{{tr|lava}}。
+* 当打开时，所有{{tr|doors}}都会占用 2×3 格。关闭时，尺寸为 1×3 格。
+** 因此，关闭{{tr|doors}}来为其[[{{tr|paint}}|刷漆]]会更节约，因为这只需要花费 3 个{{tr|Paint}}。
+** 除此之外，如果玩家在打开的{{tr|door}}上的每一行中的两格中随机涂一格，然后将其关闭，则再次打开它时将对整个{{tr|door}}涂上{{tr|paint}}。
+* 如果打开了玩家用[[{{tr|Hooks}}]]抓住的{{tr|door}}，则{{tr|Hook}}将松开，并且玩家会朝着{{tr|door}}打开的方向被甩出好几格。
+
+== 花絮 ==
+* {{tr|Pine Doors}}上的花环和[[{{tr|Holly}}]]物品很像，很有可能是因为它是由仅从[[{{tr|Christmas}}]]季节中掉落的[[{{tr|Presents}}]]中获得的[[{{tr|Pine Tree Block}}]]制作成的。
+* 虽然{{tr|Lead Door}}、{{tr|Stone Door}}和{{tr|Iron Door}}是使用更坚硬的材料制作的，但它们与其它{{tr|Door}}的作用相同。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了{{tr|Ash Wood Door}}、{{tr|Balloon Door}}和{{tr|Reef Door}}。}}
+{{history|Desktop 1.4.2.1|修复了{{tr|Door}}、[[{{tr|Trap Door}}]]和[[{{tr|Tall Gate}}]]打开时会让[[{{tr|house}}]]被判定无效的问题。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Spider Door}}、{{tr|Lesion Door}}、{{tr|Sandstone Door}}、{{tr|Bamboo Door}}、{{tr|Nebula Door}}、{{tr|Solar Door}}、{{tr|Stardust Door}}和{{tr|Vortex Doors}}。
+** {{tr|Skyware Door}}的物品和放置外观都更新了。
+** {{tr|Doors}}现在会在玩家接近时自动打开。可以在[[{{tr|Settings}}]]中开关此选项。
+** 现在如果正面被其他东西堵住，{{tr|Doors}}会试着往另外一边打开。
+** 在{{tr|Doors}}前生长着冰柱，瓦砾或其他自然背景元素的门，现在在打开时会将其摧毁。}}
+{{history|Desktop 1.3.5|添加了{{tr|Crystal Door}}。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Meteorite Door}}、{{tr|Granite Door}}、{{tr|Marble Door}}和{{tr|Martian Door}}。}}
+{{history|Desktop 1.2.4.1|修复了电路无法正确激活门、[[{{tr|Music Boxes}}]]和[[{{tr|Water Fountains}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.2.4|添加了{{tr|Palm Wood Door}}、{{tr|Boreal Wood Door}}和{{tr|Slime Door}}。}}
+{{history|Desktop 1.2.3|添加了{{tr|Frozen Door}}，修改了大多数{{tr|doors}}的{{tr|crafting station}}。}}
+{{history|Desktop 1.2.2|添加了{{tr|Pine Door}}。}}
+{{history|Desktop 1.2.1.2|[[{{tr|Actuator}}]]不能再作用于{{tr|doors}}。}}
+{{history|Desktop 1.2.1|添加了{{tr|Pumpkin Door}}和{{tr|Spooky Door}}。}}
+{{history|Desktop 1.2.0.3|添加了{{tr|Steampunk Door}}、{{tr|Glass Door}}、{{tr|Honey Door}}和{{tr|Golden Door}}。}}
+{{history|Desktop 1.2.0.2|打开{{tr|doors}}将不再使房间变得[[{{tr|Housing}}|不合适]]。}}
+{{history|Desktop 1.2|添加了许多新种类。}}
+{{history|Desktop 1.0.6|{{tr|Wooden Door sprite updated.}}旧外观是 [[File:Wooden Door (1.0.0).png]] [[File:Wooden Door (placed) (1.0.0).png]]}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Doors}}

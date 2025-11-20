@@ -1,0 +1,509 @@
+{{info request|在不同游戏平台上和{{tr|chat}}相关的控制按键（主要是{{tr|console versions}}）}}
+'''{{tr|Chat}}'''是玩家用于在[[{{tr|multiplayer}}]]游戏中交流的系统。在{{desktop version}}中，收到的{{tr|Chat message}}将显示在屏幕左下角附近。玩家可以按下 {{key|chat}} 来打开{{tr|chat}}框，输入{{tr|message}}，然后再次按下 {{key|chat}} 以发送。也可以通过 {{key|Ctrl}} + {{key|X}}、{{key|Ctrl}} + {{key|C}}、和 {{key|Ctrl}} + {{key|V}} 来剪切、复制、粘贴输入的整条{{tr|message}}。替代快捷键 {{key|Shift}} + {{key|Delete}}、{{key|Ctrl}} + {{key|Insert}}、和 {{key|Shift}} + {{key|Insert}} 也一样可用。
+
+以下为其他游戏平台中打开{{tr|chat}}的按键：
+* {{icon/xbox}} Xbox：{{key|xb-lb}} + 十字键下。
+
+{{tr|chat}}打开时，会显示已接收{{tr|message}}的日志。最多可储存 500 条{{tr|message}}，可以使用 {{key|↑}} 和 {{key|↓}} 箭头按键来滚动显示历史{{tr|message}}。
+
+[[#Tag|Tag]] 可以用来给{{tr|message}}添加格式，允许玩家更改字体颜色甚至发送游戏物体。这可以用于在{{tr|chat}}中发送{{tr|items}}。在[[{{tr|inventory}}]]打开时打开{{tr|chat}}框，并在按下 {{key|Alt}} 时点击{{tr|inventory}}中的一件{{tr|item}}即可将其输入到{{tr|message}}中。
+
+{{tr|server}}管理员可以使用[[{{tr|Server}}#控制台命令列表|“say”{{tr|command}}]]来从控制台和玩家聊天。
+
+{{tr|The chat}}显示在{{tr|single player}}中也有效。仍然可以在其中输入{{tr|message}}或{{tr|commands}}，不过其主要作用将是显示[[{{tr|status messages}}]]，例如[[{{tr|event}}]]或 [[{{tr|boss}}]] 的开始。
+
+== {{tr|Commands}} ==
+{{for|{{tr|server commands}}|{{tr|Server}}#控制台命令列表}}
+以下{{tr|commands}}可以被原版{{tr|servers}}中的所有玩家使用。{{source code ref|v=1.4.4.9|命名空间 {{code|Terraria.Chat.Commands}}}}
+
+注意部分[[{{tr|mods}}]]，例如 [https://github.com/NyxStudios/TShock/releases TShock] 或 [https://forums.terraria.org/index.php?threads/1-3-terrariapatcher-plugins-and-more-works-with-tmodloader-now.24615/#Download TerrariaPatcher] 允许玩家使用其他更高级的{{tr|commands}}，此处不讨论这些。
+
+{| class="terraria lined"
+|-
+! width=10% | {{tr|Command}}
+! 游戏内描述<ref><code>{{#invoke:gameText|getRaw|ChatCommand.Help}}</code> {{tr|command}}的描述</ref>
+! width=40% | {{tr|Notes}}
+! width=10% | 文本颜色
+! 示例
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Party}} ''<{{tr|message}}>''</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Party}}|：|1}}
+| 如果使用者在[[{{tr|teams}}|{{tr|team}}]]中，{{tr|message}}只会被发送给{{tr|team}}成员。文本的颜色将和{{tr|team}}颜色相同。<br/>若玩家不在任何{{tr|team}}中，会有{{tr|status message}}提醒。
+| {{color box|#CC3333|text=y}}<br/><!--Red
+-->{{color box|#3BDA55|text=y}}<br/><!--Green
+-->{{color box|#3B95DA|text=y}}<br/><!--Blue
+-->{{color box|#F2DD64|text=y}}<br/><!--Yellow
+-->{{color box|#E064F2|text=y}}<br/><!--Pink
+-->{{color box|#FFF014|text=y}}<!--Status message-->
+| <span style="color:#CC3333;"><玩家名字>{{tr|message}}</span> {{note|small=y|paren=y|红队}}<br/>
+<span style="color:#FFF014;">{{gameText|LegacyMultiplayer.10}} {{note|small=y|paren=y|当玩家不在任何{{tr|team}}中}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Emote}} ''<{{tr|message}}>''</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Emote}}|：|1}}
+| 显示的文本由星号开头，然后是玩家名字和{{tr|message}}本身。
+| {{color box|#CC6600|text=y}}
+| <span style="color:#CC6600;">* 玩家名字{{tr|message}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Playing_0}}</code><br/><code>{{#invoke:gameText|getRaw|ChatCommand.Playing_1}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Playing}}|：|1}}
+| 提供玩家名字的列表，用逗号分隔。
+| {{color box|#FFF014|text=y}}
+| <span style="color:#FFF014;">玩家名字1, 玩家名字2</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Roll}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Roll}}|：|1}}
+| 给出 1 至 100（闭区间）内的一个随机整数。
+| {{color box|#FFF014|text=y}}
+| <span style="color:#FFF014;">*玩家名字{{gameText|LegacyMultiplayer.9}} 83</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Emoji_0}} ''<{{tr|emote}}>''</code><br/><code>{{#invoke:gameText|getRaw|ChatCommand.Emoji_1}} ''<{{tr|emote}}>''</code><br/><code>{{#invoke:gameText|getRaw|ChatCommand.Emoji_1}} ''<{{tr|emote}}{{tr|id}}>''</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Emoji}}|：|1}}
+| 让玩家使用对应的[[{{tr|emote}}]]，类似于直接使用{{tr|emote commands}}。
+| {{na}}
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Emoji_0}} {{gameText|EmojiName.EmotionLove}}</code> 、 <code>{{gameText|EmojiCommand.EmotionLove}}</code> 和 <code>{{#invoke:gameText|getRaw|ChatCommand.Emoji_1}} 0</code> 均会发送 [[File:Emote Emotion Love.gif|link=]]“Emotion Love”{{tr|emote}}。
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Help}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Help}}|：|1}}
+| 列出所有{{tr|commands}}及其描述。
+| {{color box|#FFF014|text=y}}
+| <span style="color:#FFF014;">{{#invoke:gameText|getRaw|ChatCommandDescription.Party}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.RPS}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.RPS}}|：|1}}
+| 使玩家在“RPS Rock”（石头）、“RPS Paper”（布）、和“RPS Scissors”（剪刀）之间随机使用一个表情。
+| {{na}}
+| [[File:Emote RPS Rock.gif|link=]] [[File:Emote RPS Paper.gif|link=]] [[File:Emote RPS Scissors.gif|link=]]
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.Death}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.Death}}|：|1}}
+| 显示当前{{tr|character}}的总{{tr|death}}次数。这一{{tr|death}}次数（以及下方的所有计数）都是按{{tr|character}}记录的。
+| {{color box|#FF1919|text=y}}
+| <span style="color:#FF1919;">{{gameText|LegacyMultiplayer.23|x_0=玩家名字|x_1=5}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.PVPDeath}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.PVPDeath}}|：|1}}
+| 显示当前{{tr|character}}的总 [[{{tr|PvP}}]] {{tr|death}}次数（即由其他玩家导致的{{tr|death}}）。
+| {{color box|#FF1919|text=y}}
+| <span style="color:#FF1919;">{{gameText|LegacyMultiplayer.24|x_0=玩家名字|x_1=5}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.AllDeath}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.AllDeath}}|：|1}}
+| 显示{{tr|server}}中所有玩家的{{tr|death}}次数。
+| {{color box|#FF1919|text=y}}
+| <span style="color:#FF1919;">{{gameText|LegacyMultiplayer.23|x_0=玩家名字1|x_1=5}}</span><br/>
+<span style="color:#FF1919;">{{gameText|LegacyMultiplayer.25|x_0=玩家名字2|x_1=1}}</span>
+|-
+| <code>{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath}}</code>
+| {{#explode:{{#invoke:gameText|getRaw|ChatCommandDescription.AllPVPDeath}}|：|1}}
+| 显示{{tr|server}}中所有玩家的 {{tr|PvP}} {{tr|death}}次数。
+| {{color box|#FF1919|text=y}}
+| <span style="color:#FF1919;">{{gameText|LegacyMultiplayer.24|x_0=玩家名字1|x_1=5}}</span><br/>
+<span style="color:#FF1919;">{{gameText|LegacyMultiplayer.26|x_0=玩家名字2|x_1=1}}</span>
+|}
+
+如果{{tr|server}}所用的语言不是英语，部分{{tr|commands}}会有所不同。
+
+{| class="terraria"
+! [[:en:|英语]] !! [[:de:|德语]] !! [[:fr:|法语]] !! [[:en:Terraria Wiki/it|意大利语]] !! [[:pl:|波兰语]] !! [[:pt:|葡萄牙语]] !! [[:ru:|俄语]] !! 中文<ref>译注：下方的{{tr|commands}}以[[Terraria Wiki:语言包|官方 Wiki 中文语言包]]为准。在{{desktop version}}的游戏内置中文内有不同的{{tr|commands}}会被显示在注释中。</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Party|lang=zh}}}}<ref>{{code|/队消息}}</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emote|lang=zh}}}}<ref>{{code|/表情消息}}</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=en}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=de}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=fr}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=it}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=pl}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=pt}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=ru}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_0|lang=zh}}}}<ref>{{code|/玩}}</ref><br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Playing_1|lang=zh}}}}<ref>{{code|/玩家}}</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Roll|lang=zh}}}}<ref>{{code|/滚动}}</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=en}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=de}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=fr}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=it}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=pl}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=pt}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=ru}}}}<br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_0|lang=zh}}}}<ref>{{code|/表情符号}}</ref><br/>{{code|{{#invoke:gameText|getRaw|ChatCommand.Emoji_1|lang=zh}}}}
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Help|lang=zh}}}}<ref>{{code|/帮助}}</ref>
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.RPS|lang=zh}}}}
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.Death|lang=zh}}}}
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.PVPDeath|lang=zh}}}}
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllDeath|lang=zh}}}}
+|-
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=en}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=de}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=fr}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=it}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=pl}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=pt}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=ru}}}}
+| {{code|{{#invoke:gameText|getRaw|ChatCommand.AllPVPDeath|lang=zh}}}}
+|}
+
+== Tag ==
+{{exclusive|1.3.0.1|section=y}}
+Tag 会更改消息的显示方式。其输入格式为 <code>[''识别符'':''文本'']</code> 或 <code>[''识别符''/''选项'':''文本'']</code>。<noinclude>它们也可以在[[{{tr|Announcement Box}}]]中使用。</noinclude>
+
+无效的 tag（例如，不存在的{{tr|achievement}}）会显示为以''文本''参数作为内容的普通文本。
+
+无法在 tag 内部继续使用 tag；例如：<code>[c/ff0000:[n:Player]]</code> 会显示为“<span style="color:#f00">[n:Player</span>]”，最后一个方括号不带颜色。此外，名称 tag 也将是不完整的，因为使用的是外层的方括号而非内层的——这本质上是处理顺序的问题。不过，如果冒号后紧跟方括号的话就可以为其添加上颜色，输入 <code>[c/ff0000:[Player][c/ff0000:]]</code> 即可得到“<span style="color:#f00">[Player]</span>”。
+
+=== 颜色 ===
+[[File:Text colors in chat.png|thumb|433x433px|用{{tr|An Announcement Box}}来输出多种颜色的{{tr|chat messages}}，外加一个渐变色示例。]]
+* 识别符：{{dotlist|inline=y|{{code|color}}|{{code|c}}}}
+
+颜色 tag 会用不同的颜色显示''文本''参数。''选项''参数通过{{wikipedia|hexadecimal|十六进制}}数来指定颜色的 {{wikipedia|RGB}} 值。
+
+* 示例：{{code|[c/FF0000:此文本是红色的。]}}会输出“<span style="color: #FF0000;">此文本是红色的。</span>”
+
+{| class="mw-collapsible mw-collapsed terraria sortable lined" style="min-width: 300px;"
+|+ {{tr|Status message}}颜色
+! 颜色
+! 用途
+! 示例
+|-
+| {{color box|#FFFFFF|text=y}}
+| [[{{tr|Player}}]]{{tr|chat messages}}。使用在{{tr|Announcement Box}}中时，<br/>文本（颜色）将与玩家的实际输入内容无异。
+| {{na}}
+|-
+| {{color box|#32FF82|text=y}}
+| 大部分[[{{tr|events}}]]开始。
+| “<span style="color:#32FF82;">{{gameText|LegacyMisc.8}}</span>”<br/>“<span style="color:#32FF82;">{{gameText|LegacyMisc.52}}</span>”
+|-
+| {{color box|#AF4BFF|text=y}}
+| [[{{tr|invasion}}]]开始时，或 [[{{tr|boss}}]] 被击败或召唤。
+| “<span style="color:#AF4BFF;">{{gameText|Announcement.HasAwoken|x_0={{tr|Skeletron}}}}</span>”
+|-
+| {{color box|#E11919|text=y}}
+| {{tr|player}}死亡。
+| “<span style="color:#E11919;">{{gameText|DeathTextGeneric.Slain|x_0=&lt;玩家名字&gt;}}</span>”
+|-
+| {{color box|#FF1919|text=y}}
+| {{tr|town}} [[{{tr|NPC}}]] 或{{tr|town pet}}死亡。
+| “<span style="color:#FF1919;">{{gameText|DeathText.Slain|x_0={{gameText|Game.NPCTitle|x_0=&lt;{{tr|NPC}} 名字&gt;|x_1=&lt;{{tr|NPC}} 类型&gt;}}}}</span>”
+|-
+| {{color box|#327DFF|text=y}}
+| {{tr|town NPC}} 或{{tr|town pet}}到达。
+| “<span style="color:#327DFF;">{{gameText|Announcement.HasArrived|x_0={{gameText|Game.NPCTitle|x_0=&lt;{{tr|NPC}} 名字&gt;|x_1=&lt;{{tr|NPC}} 类型&gt;}}}}</span>”
+|-
+| {{color box|#FFF014|text=y}}
+| 常规[[{{tr|status messages}}]]。
+| “<span style="color:#FFF014;">{{gameText|Game.SpawnPointSet}}</span>”<br/>“<span style="color:#FFF014;">{{gameText|Net.CannotTeleportToPylonBecausePlayerIsNotNearAPylon}}</span>”
+|-
+| {{color box|#FF00A0|text=y}}
+| {{tr|NPC}} 发起[[{{tr|Party}}]]。
+| “<span style="color:#FF00A0;">{{gameText|Game.BirthdayParty_1|x_0=&lt;{{tr|NPC}} 名字&gt;}}</span>”
+|}
+
+可以通过连续使用许多颜色 tag 来达成颜色转换/渐变效果：
+* 示例：<code>[c/FF0000:R][c/DF0020:e][c/BF0040:d] [c/9F0060:t][c/800080:o] [c/60009F:b][c/40009F:l][c/2000DF:u][c/0000FF:e]</code>会输出“<span style="color:#FF0000;">R</span><span style="color:#DF0020;">e</span><span style="color:#BF0040;">d</span> <span style="color:#9F0060;">t</span><span style="color:#800080;">o</span> <span style="color:#60009F;">b</span><span style="color:#40009F;">l</span><span style="color:#2000DF;">u</span><span style="color:#0000FF;">e</span>”
+* 此[https://colordesigner.io/gradient-generator 网站]可以用于寻找渐变色的十六进制码。
+
+=== {{tr|Item}} ===
+* 识别符：{{dotlist|inline=y|{{code|item}}|{{code|i}}}}
+
+{{tr|The item}} tag 会显示{{tr|item icon}}。在其上悬浮{{tr|cursor}}会显示其正常的[[{{tr|tooltip}}]]。''文本''参数用于指定{{tr|item}}类型，可输入[[{{tr|Item IDs}}|数字 ID]] 或{{tr|item}}的内部名称。''选项''参数包含由逗号分隔的选项列表，由字母和数字组成。{{code|p}} 用于指定[[{{tr|Prefix IDs}}|{{tr|modifier}}]]；{{code|s}} 或 {{code|x}} 用于指定堆叠{{tr|items}}的数量。
+
+{{tr|chat}}中的所有{{tr|items}}占用的宽度和高度都相同，若需要则会被缩放变小以适应大小。
+
+* 示例：{{code|[i:2]}} 会输出[[{{tr|{{itemNameFromId|2}}}}]]（{{tr|item ID}} 为 2）
+* 示例：{{code|[i/p57:4]}} 会输出{{tr|Ruthless}}[[{{tr|{{itemNameFromId|4}}}}]]（{{tr|item ID}} 为 4）
+* 示例：{{code|[i/s10:29]}} 会输出堆叠十个的[[{{tr|{{itemNameFromId|29}}}}]]（{{tr|item ID}} 为 29）
+
+=== {{tr|Name}} ===
+* 识别符：{{dotlist|inline=y|{{code|name}}|{{code|n}}}}
+
+{{tr|Name}} tag 会在尖括号内输出{{tr|player name}}。这是为来自玩家的所有{{tr|messages}}预设的。可以通过在前面输入反斜杠（\）来输入字符 {{code|[}}、{{code|]}}、和 {{code|\}}。
+
+* 示例：{{code|[n:Player]}} 会输出“&lt;Player&gt;”
+* 示例：{{code|[n:\Pl\[ay\]er]}} 会输出“&lt;\Pl[ay]er&gt;”
+
+=== {{tr|Achievement}} ===
+* 识别符：{{dotlist|inline=y|{{code|a}}}}
+
+{{tr|The achievement}} tag 会以浅蓝色输出一项{{tr|Achievement}}的名字。点击它会打开成就窗口。''文本'' 参数通过{{tr|internal name}}来指定{{tr|achievement}}。
+
+此 tag 在代码中也注册了识别符 {{code|achievement}}；不过，由于其长度为 11 个字符，它不会产生作用。
+
+* 示例：{{code|[a:NO_HOBO]}}
+* E示例：{{code|[a:PLAY_ON_A_SPECIAL_SEED]}}
+
+{{#arraydefine:tags:achievements|<!--
+    -->TIMBER,<!--
+	-->NO_HOBO,<!--
+	-->OBTAIN_HAMMER,<!--
+	-->HEART_BREAKER,<!--
+	-->OOO_SHINY,<!--
+	-->HEAVY_METAL,<!--
+	-->I_AM_LOOT,<!--
+	-->STAR_POWER,<!--
+	-->HOLD_ON_TIGHT,<!--
+	-->EYE_ON_YOU,<!--
+	-->SMASHING_POPPET,<!--
+	-->WORM_FODDER,<!--
+	-->MASTERMIND,<!--
+	-->WHERES_MY_HONEY,<!--
+	-->STING_OPERATION,<!--
+	-->BONED,<!--
+	-->DUNGEON_HEIST,<!--
+	-->ITS_GETTING_HOT_IN_HERE,<!--
+	-->MINER_FOR_FIRE,<!--
+	-->STILL_HUNGRY,<!--
+	-->ITS_HARD,<!--
+	-->BEGONE_EVIL,<!--
+	-->EXTRA_SHINY,<!--
+	-->HEAD_IN_THE_CLOUDS,<!--
+	-->LIKE_A_BOSS,<!--
+	-->BUCKETS_OF_BOLTS,<!--
+	-->DRAX_ATTAX,<!--
+	-->PHOTOSYNTHESIS,<!--
+	-->GET_A_LIFE,<!--
+	-->THE_GREAT_SOUTHERN_PLANTKILL,<!--
+	-->TEMPLE_RAIDER,<!--
+	-->LIHZAHRDIAN_IDOL,<!--
+	-->ROBBING_THE_GRAVE,<!--
+	-->BIG_BOOTY,<!--
+	-->FISH_OUT_OF_WATER,<!--
+	-->OBSESSIVE_DEVOTION,<!--
+	-->STAR_DESTROYER,<!--
+	-->CHAMPION_OF_TERRARIA,<!--
+	-->BLOODBATH,<!--
+	-->GOBLIN_PUNTER,<!--
+	-->KILL_THE_SUN,<!--
+	-->WALK_THE_PLANK,<!--
+	-->DO_YOU_WANT_TO_SLAY_A_SNOWMAN,<!--
+	-->TIN_FOIL_HATTER,<!--
+	-->BALEFUL_HARVEST,<!--
+	-->ICE_SCREAM,<!--
+	-->SLIPPERY_SHINOBI,<!--
+	-->STICKY_SITUATION,<!--
+	-->REAL_ESTATE_AGENT,<!--
+	-->NOT_THE_BEES,<!--
+	-->JEEPERS_CREEPERS,<!--
+	-->FUNKYTOWN,<!--
+	-->INTO_ORBIT,<!--
+	-->ROCK_BOTTOM,<!--
+	-->MECHA_MAYHEM,<!--
+	-->GELATIN_WORLD_TOUR,<!--
+	-->FASHION_STATEMENT,<!--
+	-->VEHICULAR_MANSLAUGHTER,<!--
+	-->BULLDOZER,<!--
+	-->THERE_ARE_SOME_WHO_CALL_HIM,<!--
+	-->DECEIVER_OF_FOOLS,<!--
+	-->SWORD_OF_THE_HERO,<!--
+	-->LUCKY_BREAK,<!--
+	-->THROWING_LINES,<!--
+	-->DYE_HARD,<!--
+	-->FREQUENT_FLYER,<!--
+	-->THE_CAVALRY,<!--
+	-->COMPLETELY_AWESOME,<!--
+	-->TIL_DEATH,<!--
+	-->ARCHAEOLOGIST,<!--
+	-->PRETTY_IN_PINK,<!--
+	-->RAINBOWS_AND_UNICORNS,<!--
+	-->YOU_AND_WHAT_ARMY,<!--
+	-->PRISMANCER,<!--
+	-->IT_CAN_TALK,<!--
+	-->WATCH_YOUR_STEP,<!--
+	-->MARATHON_MEDALIST,<!--
+	-->GLORIOUS_GOLDEN_POLE,<!--
+	-->SERVANT_IN_TRAINING,<!--
+	-->GOOD_LITTLE_SLAVE,<!--
+	-->TROUT_MONKEY,<!--
+	-->FAST_AND_FISHIOUS,<!--
+	-->SUPREME_HELPER_MINION,<!--
+	-->TOPPED_OFF,<!--
+	-->SLAYER_OF_WORLDS,<!--
+	-->YOU_CAN_DO_IT,<!--
+	-->SICK_THROW,<!--
+	-->MATCHING_ATTIRE,<!--
+	-->BENCHED,<!--
+	-->DEFEAT_QUEEN_SLIME,<!--
+	-->DEFEAT_EMPRESS_OF_LIGHT,<!--
+	-->GET_ZENITH,<!--
+	-->FIND_A_FAIRY,<!--
+	-->DEFEAT_DREADNAUTILUS,<!--
+	-->DEFEAT_OLD_ONES_ARMY_TIER3,<!--
+	-->FLY_A_KITE_ON_A_WINDY_DAY,<!--
+	-->TURN_GNOME_TO_STATUE,<!--
+	-->TALK_TO_NPC_AT_MAX_HAPPINESS,<!--
+	-->GET_TERRASPARK_BOOTS,<!--
+	-->THROW_A_PARTY,<!--
+	-->PET_THE_PET,<!--
+	-->GO_LAVA_FISHING,<!--
+	-->FOUND_GRAVEYARD,<!--
+	-->DIE_TO_DEAD_MANS_CHEST,<!--
+	-->DEFEAT_DEERCLOPS,<!--
+	-->GET_GOLDEN_DELIGHT,<!--
+	-->DRINK_BOTTLED_WATER_WHILE_DROWNING,<!--
+	-->GET_CELL_PHONE,<!--
+	-->GET_ANKH_SHIELD,<!--
+	-->GAIN_TORCH_GODS_FAVOR,<!--
+	-->PLAY_ON_A_SPECIAL_SEED,<!--
+	-->ALL_TOWN_SLIMES,<!--
+	-->TRANSMUTE_ITEM,<!--
+	-->PURIFY_ENTIRE_WORLD,<!--
+	-->TO_INFINITY_AND_BEYOND
+}}<!--
+
+-->{| class="mw-collapsible mw-collapsed terraria sortable lined" style="min-width: 300px;"
+|+ {{tr|Achievement internal name}}
+! {{tr|Achievement}}
+! {{tr|Internal name}}
+{{#arrayprint:tags:achievements||@@@@|<tr><td>{{gameText|Achievements.@@@@_Name}}</td><td><code>@@@@</code></td></tr>}}
+|}
+
+=== 图标 ===
+* 识别符：{{dotlist|inline=y|{{code|glyph}}|{{code|g}}}}
+
+图标 tag 输出手柄按钮。''文本''参数通过编号指定图标的类型。
+
+注意这会直接输出按钮图标，输出并不一定匹配玩家当前控制配置中的功能。这一小问题可能会影响图标的实用性。
+
+* 示例：{{code|[g:0]}} 会输出 {{g|a}}
+* 示例：{{code|[g:16][g:16][g:15][g:15][g:14][g:13][g:14][g:13][g:1][g:0]}} 会输出经典{{维基百科|Konami Code|t=科乐美秘技}}：{{g|up-dpad}}{{g|up-dpad}}{{g|down-dpad}}{{g|down-dpad}}{{g|left-dpad}}{{g|right-dpad}}{{g|left-dpad}}{{g|right-dpad}}{{g|b}}{{g|a}}
+
+{| class="mw-collapsible mw-collapsed terraria sortable lined" style="min-width: 300px;"
+|+ 图标
+! 编号
+! 图像
+! 描述
+|-
+| 0 || {{g|a}} || A 键
+|-
+| 1 || {{g|b}} || B 键
+|-
+| 2 || {{g|x}} || X 键
+|-
+| 3 || {{g|y}} || Y 键
+|-
+| 4 || {{g|back}} || 返回（Back）
+|-
+| 5 || {{g|start}} || 开始（Start）
+|-
+| 6 || {{g|left-shoulder}} || 左侧肩键（LB）
+|-
+| 7 || {{g|right-shoulder}} || 右侧肩键（RB）
+|-
+| 8 || {{g|left-trigger}} || 左扳机（LT）
+|-
+| 9 || {{g|right-trigger}} || 右扳机（RT）
+|-
+| 10 || {{g|left-stick}} || 左摇杆
+|-
+| 11 || {{g|right-stick}} || 右摇杆
+|-
+| 12 || {{g|undefined-stick}} || 未知摇杆
+|-
+| 13 || {{g|right-dpad}} || 十字键（D-pad）右
+|-
+| 14 || {{g|left-dpad}} || 十字键左
+|-
+| 15 || {{g|down-dpad}} || 十字键下
+|-
+| 16 || {{g|up-dpad}} || 十字键上
+|-
+| 17 || {{g|left-stick-left}} || 左摇杆向左
+|-
+| 18 || {{g|left-stick-right}} || 左摇杆向右
+|-
+| 19 || {{g|left-stick-up}} || 左摇杆向上
+|-
+| 20 || {{g|left-stick-down}} || 左摇杆向下
+|-
+| 21 || {{g|right-stick-left}} || 右摇杆向左
+|-
+| 22 || {{g|right-stick-right}} || 右摇杆向右
+|-
+| 23 || {{g|right-stick-up}} || 右摇杆向上
+|-
+| 24 || {{g|right-stick-down}} || 右摇杆向下
+|-
+| 25 || {{g|left-stick-wiggle}} || 左摇杆左右摆动
+|}
+
+== 备注 ==
+* 在{{desktop version}}{{verify|需要验证此条是否也在{{tr|console version}}中生效}}，可以在重命名[[{{tr|chests}}]]时使用 tag。不过，总字符数将十分有限（最多仅 20 个字符），包括 tag 所用的字符。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了 <code>/death</code>、<code>/pvpdeath</code>、<code>/alldeath</code>、和 <code>/allpvpdeath</code> {{tr|commands}}。}}
+{{history|Desktop 1.3.2|改善了{{tr|chat}} tag，现在它们应当不会在长句中失效。}}
+{{history|Desktop 1.3.1|添加了图标 tag。}}
+{{history|Desktop 1.3.0.1|添加了 tag。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Chat}}

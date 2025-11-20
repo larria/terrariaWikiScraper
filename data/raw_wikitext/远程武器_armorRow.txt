@@ -1,0 +1,14 @@
+<includeonly>{{#if:{{{4|}}}||
+{{:Ranged weapons/recipe|{{{1|}}}|{{{2|}}}|{{{3|}}}}}
+{{!}}}} {{iteminfo|{{{1|}}}|defense}}
+| {{iteminfo|{{{2|}}}|defense}}
+| {{iteminfo|{{{3|}}}|defense}}
+| {{getSetInfo||head={{{1|}}}|body={{{2|}}}|legs={{{3|}}}|defense|note=n}}
+</includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Prints the "Source", "Head", "Chest", "Legs", and "Sum" columns with dynamic data. It takes the three armor pieces as parameters. Set the fourth unnamed parameter to something like {{code|nocrafting}} to prevent the "Source" column from being displayed.
+{{language info|en=Ranged weapons/armorRow}}
+</noinclude>

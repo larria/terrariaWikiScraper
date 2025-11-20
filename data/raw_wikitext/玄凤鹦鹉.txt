@@ -1,0 +1,70 @@
+{{exclusive|1.4.4}}
+{{infobox wrapper
+|{{item infobox
+| auto = 5312
+| id = 5312 (黄), 5313 (灰)
+| name = Cockatiels
+| imagealt = [[File:Yellow Cockatiel.png|link=|Yellow Cockatiel item sprite]] [[File:Gray Cockatiel.png|link=|Gray Cockatiel item sprite]]
+| cargo = no
+}}
+|{{npc infobox
+| auto = 674
+| id = 674 (黄), 675 (灰)
+| name = Cockatiels
+| namesub =
+| imagealt = [[File:Yellow Cockatiel.png|link=]] [[File:Gray Cockatiel.png|link=]]
+| imageother = Yellow Cockatiel (flying).gif/Gray Cockatiel (flying).gif
+| imageothercaption = 飞行状态
+| type = Critter
+| environment = Jungle
+| sound1 = Zombie 118.wav, Zombie 119.wav, Zombie 120.wav
+| soundcaption1 = Idle
+| cargo = no
+}}
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view=void
+| auto = 675
+| type = Critter
+| environment = Jungle
+}}<!--
+-->{{npc infobox | view=void
+| auto = 674
+| type = Critter
+| environment = Jungle
+}}<!--
+-->{{item infobox | view=void
+| auto = 5312
+}}<!--
+-->{{item infobox | view=void
+| auto = 5313
+}}
+
+'''{{tr|Yellow Cockatiels}}'''和'''{{tr|Gray Cockatiels}}'''是一类[[{{tr|critters}}]]，会在[[{{tr|Jungle}}]]中的[[{{tr|daytime}}]]期间生成。
+
+{{critter info|plural=y
+|cagename=[[{{tr|Yellow Cockatiel Cage}}]] / [[{{tr|Gray Cockatiel Cage}}]]
+|statuename=[[{{tr|Cockatiel Statue}}]]
+}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Yellow Cockatiel/Gray Cockatiel|expectedrows=3}}
+
+== 花絮 ==
+* {{tr|The Yellow Cockatiel}}、{{tr|Gray Cockatiel}}、[[{{tr|Blue Macaw}}]]、[[{{tr|Owl}}]]、[[{{tr|Scarlet Macaw}}]]、和[[{{tr|Toucan}}]]是仅有的无法被制作为[[{{tr|food}}]]的{{tr|bird}}类{{tr|critters}}。
+* 现实生活中的{{wikipedia|cockatiel|玄凤鹦鹉}}是原产于澳大利亚的{{wikipedia|cockatoo|凤头鹦鹉}}的一种分支，作为广受赞誉和流行的宠物而闻名。
+{{bestiary|Yellow Cockatiel|Gray Cockatiel}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Cockatiels}}

@@ -1,0 +1,57 @@
+{{item infobox
+| type = Potion
+| sell = @@@@ {{eicons|1.3.0.1|small=y}} /<br/> {{cc|5}} {{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 5
+| tags = plunder
+| listcat = Potion ingredients
+| debuff = Potion Sickness
+| debuffduration = {{duration|30}} {{eicons|1.4.1}}<br/>{{duration|60}} {{eicons|1.4.1|invert=y}}
+}}
+{{about|生长在{{tr|forests}}中的{{tr|mushroom}}种类|植物类别“{{tr|Mushrooms}}”|{{tr|Mushrooms|link=y}}|{{tr|the biome}}|{{tr|Glowing Mushroom biome}}}}
+
+'''{{tr|Mushroom}}'''是种[[{{tr|crafting material}}]]和[[{{tr|Recovery potions}}|治疗{{tr|item}}]]，在位于[[{{tr|surface}}]]的[[{{tr|grass}}]]或[[{{tr|Hallowed grass}}]]上随机生成，通常在[[{{tr|Forest}}]]中。可以用任意[[{{tr|tool}}]]或[[{{tr|weapon}}]]来收取此{{tr|item}}。
+
+在{{eversions|1.4.1}}中，{{tr|the Mushroom}}只会造成 30 秒[[{{tr|Potion Sickness}}]]，只有{{tr|healing potions}}{{tr|duration}}的一半。即使如此，它每分钟也只能恢复 30 生命值，而相对的，[[{{tr|Lesser Healing Potion}}]]能够恢复 50。
+
+{{eicons|1.4.4}}在 [[{{tr|The Constant}}]] 世界中，如果玩家{{tr|hungry}}，食用{{tr|Mushroom}}也会将[[{{tr|Hunger}}]]重置为 5 分钟的{{tr|Peckish}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Mushroom|expectedrows=6}}
+
+== 小贴士 ==
+* 用{{tr|Mushroom}}作为{{tr|healing item}}是非常低效的，因为它可以制作成两瓶[[{{tr|Lesser Healing Potion}}]]，每瓶可恢复 {{iteminfo|Lesser Healing Potion|healLife}} 生命值。
+
+== 种植 ==
+{{main|指南:园艺#{{tr|Mushrooms}}}}
+{{eicons|1.3.0.1}} {{tr|Mushroom}}在游戏早期有很高的出售价值（{{sell expr|raw=y||10000<!--1 Gold-->/|Mushroom}} 个{{tr|Mushroom}}就能卖出 {{gc|1}}），并且它们非常常见且能大量种植。
+
+{{tr|Mushroom}}会生长在{{tr|surface layer}}中任意空白{{tr|grass}}块，这意味着它们可以通过成条放置草来轻松种植。草可以通过将{{tr|dirt}}连接到现有的草、种植[[{{tr|Grass Seeds}}]]、或使用[[{{tr|Staff of Regrowth}}]]来生长。垂直方向上只需要有一格净空，因此{{tr|dirt}}条可以三条一组互相间隔一格密集放置（再多的话你可能就无法收割它们）。如果背后有[[{{tr|wall}}]]，{{tr|Mushroom}}就不会生长，因此要确保{{tr|dirt}}条后能看到天空。它们的生长不需要水，也可以在屏幕上时生成。一个这样的{{tr|farm}}需要定时清理——{{tr|Mushroom}}不会取代{{tr|grass}}，而是需要空的{{tr|tile}}来生长。
+
+利用[[{{tr|Dart Trap}}]][[{{tr|mechanism}}]]，农场可以一定程度上自动化。{{tr|dart trap}}可以连接到农场入口处的[[{{tr|Pressure Plate}}]]或者连接到[[{{tr|Timer}}]]。发射出来的{{tr|dart}}会砍下它所接触到的所有{{tr|grass}}和{{tr|mushrooms}}，让玩家只需要跑过农场拾取掉落的{{tr|mushrooms}}而无需挥动他们的{{tr|sword}}。
+
+== 花絮 ==
+* {{tr|This mushroom}}可能有点像''{{wikipedia|lang=en|Lactarius deliciosus|松乳菇（Lactarius deliciosus）}}''。不过，那种蘑菇的斑点不那么明显。
+* 它是游戏中最弱的纯治疗物品，每个{{tr|Mushroom}}只会恢复 {{iteminfo|Mushroom|healLife}} 生命值。
+** 虽然技术上说[[{{tr|Life Fruit}}]]的治疗量是最低的，每次使用只会治疗 5 生命值，但它们同样也会使最大生命值提高 5。
+
+== 历史 ==
+{{history|Desktop 1.4.1|{{tr|Mushroom}}的{{tr|Potion Sickness}}时间由 60 秒降低至 30 秒。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|出售价值由 {{cc|5}} 提升至 {{coin|2sc 50cc}}。}}
+{{history|Desktop 1.0.6|
+** 回复量由 20 生命值降低至 15。
+** 现在使用时会触发[[{{tr|Potion Sickness}}]]{{tr|debuff}}。}}
+{{history|Desktop 1.0.4|出售价值降低。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+| show-material = yes
+}}
+
+{{language info|en=Mushroom}}

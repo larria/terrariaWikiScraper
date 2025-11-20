@@ -1,0 +1,66 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 167
+| damage = 250
+| sound1 = Item 14.wav
+| soundcaption1 = {{tr|Explosion}}
+| listcat = explosives
+| tags = loot / vendor / vendor:Demolitionist
+}}
+[[File:Dynamite (demo).gif|thumb|340px|向[[{{tr|Target Dummy}}]]投掷{{tr|Dynamite}}。]]
+{{quotation|[[File:Emote Town Demolitionist.gif|link=]] [[{{tr|Demolitionist}}]]|{{gameText|LegacyDialog.108}}}}
+{{about|{{tr|the explosive weapon}}|{{tr|the fish quest}}|{{tr|Dynamite Fish}}}}
+
+'''{{tr|Dynamite}}'''是强力的[[{{tr|Explosives (class)}}]]，在掷出后 5 秒爆炸。爆炸对{{tr|Dynamite}}水平和垂直方向 7.8 格内的所有[[{{tr|enemies}}]]、[[{{tr|critters}}]]、和玩家（但不包括 [[{{tr|NPCs}}]]）造成 250 无职业伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.PrepareBombToBlow}}此外，它会摧毁半径 7 格内的几乎所有[[{{tr|blocks}}]]、[[{{tr|walls}}]]、和[[{{tr|furniture}}]]（[[{{tr|explosion-proof objects}}]]除外）。{{tr|Dynamite}}可在[[{{tr|Chest}}]]中找到，或以每个 {{iteminfo|Dynamite|buy}} 的价格从[[{{tr|Demolitionist}}]]处购买。
+
+{{tr|Dynamite}}的爆炸威力不受中间物质的影响：例如，若{{tr|Dynamite}}被[[{{tr|Dungeon Bricks}}]]（不会被爆炸摧毁）包围，它仍然能摧毁爆炸范围内其他可摧毁的{{tr|blocks}}并伤害{{tr|Dungeon Bricks}}外部的实体。{{tr|Dynamite}}也能在[[{{tr|liquids}}]]中生效。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Dynamite|expectedrows=5}}
+
+== 备注 ==
+* {{tr|Dynamite}}的两种功能拥有明确但略微不同的范围：
+** 对实体造成伤害：爆炸涵盖以{{tr|Dynamite}}为中心 15.625×15.625 格的正方形，即四个方向上 7.8125 格。
+** 摧毁{{tr|tiles}}：爆炸涵盖以{{tr|Dynamite}}为圆心，直径 14 格的圆形，即各个方向上 7 格。
+: 因此，即使在爆炸边缘的{{tr|tiles}}完好无损，此处的实体可能仍然会受到伤害。
+
+== 小贴士 ==
+* 由于{{tr|Dynamite}}的爆炸半径很大，使用的时候要特别小心。
+* 如果玩家在 5 秒内退出{{tr|world}}，激活的{{tr|Dynamite}}会消失。这可以用来防止误用{{tr|Dynamite}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 99 提升至 9999。
+** 现在用于制作[[{{tr|TNT Barrel}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Stack limit}}由 30 提升至 99。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 价格由 {{coin|1gc 50sc}} 降低至 {{sc|20}}。
+** 添加了[[{{tr|Sticky Dynamite}}]]和[[{{tr|Bouncy Dynamite}}]]的制作配方。}}
+{{history|Desktop 1.2.3|现在用于制作[[{{tr|Explosive Bunny}}]]。}}
+{{history|Desktop 1.2|
+** 价格由 {{sc|50}} 提升至 {{coin|1gc 50sc}}。
+** {{tr|Stack limit}}由 5 提升至 30。}}
+{{history|Desktop 1.1|
+** {{tr|Stack limit}}由 3 提升至 5。
+** 现在在[[{{tr|Wall of Flesh}}]]被打败后可摧毁[[{{tr|Hellstone}}]]。
+** 现在用于制作[[{{tr|Explosives}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-misc = yes
+}}
+
+{{language info|en=Dynamite}}

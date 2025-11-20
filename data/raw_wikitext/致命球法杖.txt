@@ -1,0 +1,45 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3249
+| tags = Minion / drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Deadly Sphere Staff (demo).gif|frame|{{tr|The Deadly Sphere Staff}}攻击{{tr|Mimic}}。]]
+
+'''{{tr|Deadly Sphere Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|summoning weapon}}]]，可召唤[[{{tr|Deadly Sphere}}]]{{tr|minion}}。它会高速冲撞向[[{{tr|enemies}}]]，但不能穿过[[{{tr|block}}]]。每三次攻击后，它会短暂的悬停并循环切换为三个形态中的下一个，然后继续攻击。{{tr|The Deadly Sphere Staff}}有 {{chance|1/30}} / {{expert|{{chance|59/900}}}} 的几率由在[[{{tr|Solar Eclipse}}]]期间生成的[[{{tr|Deadly Sphere}}]]掉落。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|the Deadly Sphere}}平均 0.53 秒冲刺一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分在<code>aiStyle == 66</code>代码段。{{tr|The Deadly Sphere}}的 ai[1] 每次增加 1，在开始时，其会获得 1 extraUpdate，因此其 ai[1] 每帧增加 2 。当其在第一形态时 ai[1] 达到 40 或者在其他两个形态时达到 30，其 extraUpdate 会被移除且 ai[1] 重设为 1。此时，当其 ai[1] 再增加 10 后，它就会冲刺，因此第一形态每 30 帧冲刺一次，其他两个形态每 25 帧。如果进行了形态转换，{{tr|Deadly Sphere}}的 ai[1] 必须在刚刚提到的阈值达到 16 后才能进行冲刺，这会造成 46/41 {{tr|tick}}延迟（取决于先前的形态）。这意味着{{tr|Deadly Sphere}}循环回到初始形态总共需要 288 {{tr|ticks}}，在这过程中冲刺 9 次。其每次冲刺平均需要 32 帧。}}
+** 而这并不意味着{{tr|Deadly Sphere}}在实际情况下每 0.53 {{tr|seconds}}会命中一次，因为它不会在两次冲刺之间调整自身位置，导致它偶尔会打偏或者在{{tr|local invincibility frame}}还未结束时冲向{{tr|enemy}}。
+* {{tr|Deadly sphere}}可以锁定最远距离 50 格的{{tr|enemy}}，且可持续攻击锁定的目标直到距离{{tr|player}}超过 93.75 格，而在超过此范围后它会自动返回{{tr|player}}身侧。
+* {{tr|Deadly Sphere minion}}击中{{tr|enemy}}时会造成 12 {{tr|tick}}{{tick}}[[{{tr|local immunity frame}}|{{tr|local invincibility frame}}]]。
+
+== 花絮 ==
+* {{tr|Deadly Sphere Staff}}可能带有“{{tr|Deadly}}”修饰语，此时会显示为“{{tr|Deadly}}{{tr|Deadly Sphere Staff}}”。这种情况也可见于[[{{tr|Lucky Horseshoe}}]]、[[{{tr|Lucky Coin}}]]、和[[{{tr|Arcane Flower}}]]上。
+* 和掉落它的{{tr|enemy}}一样，此{{tr|item}}参考了 1979 年美国科幻恐怖电影{{维基百科|b=y|Phantasm (film)|Phantasm|t=鬼追人}}。
+* {{tr|Deadly Sphere}}的其中一个形象设计很像来自美国史诗太空歌剧媒体系列{{维基百科|b=y|Star Wars|t=星球大战}}的{{维基百科|TIE Advanced|t=钛高级型}}。不过，它实际上参考了《鬼追人》的续集，1988 年的美国科幻动作恐怖电影{{维基百科|b=y|Phantasm II|t=鬼追人2}}中的球体的变体。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Drop rate}}由 {{chance|1/40}} / {{expert|{{chance|79/1600}}}} 提升至 {{chance|1/30}} / {{expert|{{chance|59/900}}}}。
+** {{tr|Damage}}由 50 降低至 40。
+** 现在使用局部无敌帧。
+** 索敌范围增加，因此它会从更远距离攻击{{tr|enemies}}。此外，改善了其“冲刺”动作攻击一定距离外的{{tr|enemies}}行为。
+** {{tr|Deadly Sphere}}现在会更快地返回玩家处。
+** 修复了{{tr|Deadly Sphere}}会在战斗中自发地从{{tr|enemies}}身上解除仇恨的 {{tr|bug}}。}}
+{{history|Desktop 1.4.1.2|{{tr|Deadly Sphere}}的攻击所导致的{{tr|Enemy}}免疫帧由 10 降低至 8。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons}}
+
+{{language info|en=Deadly Sphere Staff}}

@@ -1,0 +1,52 @@
+{{infobox wrapper|direction=row
+|{{item infobox
+| auto = 357
+| imageoldalt =
+| type = Potion
+| namesub = {{eicons|1.4.0.1}}
+| duration = 8 {{tr|minutes}} {{eicons|1.4.0.1|small=y}}
+}}
+|{{item infobox
+| auto = 357
+| type = Potion
+| imagealt = [[File:Bowl of Soup (old).png|link=]]
+| cargo = no
+| namesub = {{eicons|1.4.0.1|invert=y}}
+| tooltip = {{tcext|buff|Minor improvements to all stats}}
+| duration = 10 {{tr|minutes}} {{eicons|1.3.0.1|invert=y|small=y}}
+| idbuff = 26
+| research =
+}}
+}}
+
+'''{{tr|Bowl of Soup}}'''是一种由[[{{tr|Cooking Pot}}]]制作的[[{{tr|Food and Drink Potions}}|{{tr|food item}}]]。食用后会提供 {{eicons|1.4.0.1}} 8 分钟的[[{{tr|Plenty Satisfied}}]] [[{{tr|buff}}]]，或是 {{eicons|1.3.0.1|invert=y}} 10 分钟的[[{{tr|Well Fed}}]]{{tr|buff}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Bowl of Soup|expectedrows=2}}
+
+== 备注 ==
+* 在{{eversions|1.4.0.1|invert=y|short=y}}版本中，[[{{tr|Bowl}}]]会随着汤一起消耗，无法反复利用。
+* 在{{eversions|1.4.0.1|invert=y|short=y}}版本中，只有{{tr|Clay Bowl}}能够用于制作{{tr|Bowl of Soup}}，{{tr|Glass}}/{{tr|Dynasty Bowls}}不行。
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|修复了{{tr|sprite}}中一个缺失的像素。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Recipe}}中不再包含[[{{tr|Bowl}}]]。
+** 现在给予{{tr|Plenty Satisfied}}而不是{{tr|Well Fed}}。
+** {{tr|Buff duration}}降低至 8 分钟。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧{{tr|sprite}}是：[[File:Bowl of Soup (old).png|link=]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Buff}}持续时间由 10 分钟增加至 30 分钟。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|同步{{tr|Desktop}} 1.4.0.1 和 1.4.0.4 中的更改。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Bowl of Soup}}

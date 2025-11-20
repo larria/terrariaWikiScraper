@@ -1,0 +1,62 @@
+'''{{tr|Arrows}}'''是一种由[[{{tr|bow}}]]或[[{{tr|repeater}}]]发射的[[{{tr|ammunition}}]]。大多数{{tr|arrows}}是通过制作得到，但有一些可掉落自[[{{tr|enemies}}]]、购买自 [[{{tr|NPCs}}]]、或在[[{{tr|chests}}]]或[[{{tr|Pot}}]]中找到。和所有其他[[:Category:消耗性物品|自动消耗的物品]]一样，所使用的{{tr|arrow}}的类型取决于其在[[{{tr|inventory}}]]中的位置：左上角排位最高、右下角最低。
+
+== 类型 ==
+{{weapon type count|arrows}}<!-- need first unnamed parameter for transclusion （第一参数不要tr） -->
+
+{| class="terraria sortable lined align-center"
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! [[Velocity#extraUpdates|总{{tr|Velocity}}<br/>乘数]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=itemid
+|template=:{{tr|Arrows}}/row
+}}
+|}
+
+== 备注 ==
+* {{eicons|1.4.0.1|invert=y}} 有很多{{tr|arrows}}能重用，特别是[[{{tr|Wooden Arrow}}]]和[[{{tr|Flaming Arrow}}]]在射出后有较高掉落率，它们有一定几率损坏，这与射中什么无关（射向[[{{tr|Slime}}]]的{{tr|arrow}}和射向[[{{tr|Brick}}]]的损坏的一样多）。
+* 某些{{tr|bows}}/{{tr|repeaters}}，比如[[{{tr|Chlorophyte Shotbow}}]]和[[{{tr|Tsunami}}]]，发射时会同时射出多支{{tr|arrows}}，但只消耗一支{{tr|arrow}}。
+** 这些{{tr|bows}}所射出的所有{{tr|arrows}}在撞击时总是会损坏。
+* {{eicons|1.4.0.1|invert=y}} 从[[{{tr|Molten Fury}}]]射出的{{tr|Wooden Arrows}}视为{{tr|Flaming Arrows}}，并''有几率''能直接以{{tr|Flaming Arrows}}形式回收。
+** {{eil|Sharanga}}的{{tr|arrows}}可以回收为[[{{tr|Spectral Arrow}}]]。
+* [[{{tr|Jester's Arrow}}]]、[[{{tr|Hellfire Arrow}}]]、[[{{tr|Venom Arrow}}]]和{{eil|Vulcan Bolt|s|icons={{eicons|3ds=y|old-gen=y}}}}总是会被消耗掉无法重用。
+** 基于这个原因，在不做修改的情况下，{{tr|inventory}}中不可能拥有{{tr|Vulcan Bolts}}，因为只当玩家用{{eil|Vulcan Repeater}}发射时它们才会出现，而又总是会在撞击时被摧毁。
+* {{eicons|1.4.0.1|invert=y}} [[{{tr|Flaming Arrow}}]]、[[{{tr|Frostburn Arrow}}]]、[[{{tr|Cursed Arrow}}]]和[[{{tr|Ichor Arrow}}]]，射出后如果没有损坏，有 2/3 几率会降级变回{{tr|wooden arrow}}。
+* {{eil|Endless Quiver}}无限供应{{tr|Wooden Arrow}}，并因此会受{{tr|arrow}}转化效果的影响。
+
+== 小贴士 ==
+* {{tr|Arrows}}在游戏早期特别强力，即使是用[[{{tr|Copper Bow}}]]加上简单的{{tr|wooden arrows}}所造成的伤害也是一把[[{{tr|Swords}}|{{tr|sword}}]]的两倍。
+* 应当将{{tr|Wooden Arrows}}升级为{{tr|Flaming Arrows}}或{{tr|Frostburn Arrows}}，因为这并不需要很多资源，但却大大提升了有用程度。
+* [[{{tr|Magic Quiver}}]]大大提高了{{tr|arrows}}的效力，增强了伤害、[[{{tr|velocity}}]]、和{{tr|knockback}}，并且在使用箭支时有机会不消耗它们。
+* 在[[{{tr|Journey Mode}}]]中只需要 99 {{tr|arrows}}来完成[[{{tr|Research}}]]就能无限复制，从而使[[{{tr|Endless Quiver}}]]变得无用，用为它需要用到 3996 {{tr|Wooden Arrow}}，也只是提供无限{{tr|Wooden Arrow}}。
+** 但是，{{tr|Endless Quiver}}不需要像{{tr|arrows}}那样在战斗中途进行复制。
+
+{{Arrows}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+[[Category:箭| ]]
+[[Category:消耗性物品]]
+[[Category:商贩物品]]
+[[Category:可制作的物品]]
+[[Category:工作台]]
+[[Category:徒手]]
+[[Category:铁砧或铅砧]]
+[[Category:制作材料物品]]
+[[Category:微光]]
+[[Category:秘银砧或山铜砧]]
+[[Category:水晶球]]
+[[Category:远古操纵机]]
+
+{{language info|en=Arrows}}

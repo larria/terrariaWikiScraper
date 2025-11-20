@@ -1,0 +1,334 @@
+{{legacy nav tab}}
+<section begin=npc infobox />{{npc infobox
+| boxwidth = 23em <!-- slightly wider than default, for the Expert drop list -->
+| name = Golem
+| type = Boss
+| environment = Jungle Temple
+| ai = Golem Body AI
+| life = <!--
+	-->{{modes|{{#expr:{{npcinfo|245|lifeMax|raw=y}}+{{npcinfo|246|lifeMax|raw=y}}+{{npcinfo|247|lifeMax|raw=y}}+{{npcinfo|248|lifeMax|raw=y}}}}<!--
+		-->|{{#expr:{{npcinfo|245|lifeMax_e|raw=y}}+{{npcinfo|246|lifeMax_e|raw=y}}+{{npcinfo|247|lifeMax_e|raw=y}}+{{npcinfo|248|lifeMax_e|raw=y}}}}<!--
+		-->|{{#expr:{{npcinfo|245|lifeMax_m|raw=y}}+{{npcinfo|246|lifeMax_m|raw=y}}+{{npcinfo|247|lifeMax_m|raw=y}}+{{npcinfo|248|lifeMax_m|raw=y}}}}<!--
+	-->}} {{note|small=y|paren=y|总计}}<br/><!--
+	-->{{modes|{{npcinfo|246|lifeMax}}|{{npcinfo|246|lifeMax_e}}|{{npcinfo|246|lifeMax_m}}}} {{note|small=y|paren=y|{{tr|head}}}}<br/><!--
+	-->{{modes|{{npcinfo|245|lifeMax}}|{{npcinfo|245|lifeMax_e}}|{{npcinfo|245|lifeMax_m}}}} {{note|small=y|paren=y|身体}}<br/><!--
+	-->{{modes|{{npcinfo|247|lifeMax}}|{{npcinfo|247|lifeMax_e}}|{{npcinfo|247|lifeMax_m}}}} {{note|small=y|paren=y|每只拳头}}
+| immune1 = Poisoned
+| immune2 = On Fire!
+| immune3 = Confused
+| money = {{modes|{{npcinfo|245|value}}|{{npcinfo|245|value|expert}}}}
+| debuff = On Fire!
+| debuffchance = 50% {{note|paren=y|{{gameText|ProjectileName.Fireball}}}}
+| debuffduration = {{modes|{{duration|rawseconds=5–7}}|{{duration|rawseconds=10–14}}|{{duration|rawseconds=15–21}}}}
+
+| Picksaw|1|25% @normal
+| Beetle Husk|4–8|100% @normal
+|:group:start|总是会掉落以下 7 件物品之一{{source code ref|v=1.4.0.5|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_Golem}}| @normal
+| custom:Stynger/Stynger Bolt|{{item|Stynger}}
+:+ {{item|Stynger Bolt}} (60–99) |14.29% @normal
+| Possessed Hatchet|1|14.29% @normal
+| Sun Stone|1|14.29% @normal
+| Eye of the Golem|1|14.29% @normal
+| Heat Ray|1|14.29% @normal
+| Staff of Earth|1|14.29% @normal
+| Golem Fist|1|14.29% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Greater Healing Potion|5-15|100%
+| Golem Mask|1|14.29% @normal
+| Golem Trophy|1|10%
+| Treasure Bag (Golem)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Shiny Stone|1|100% #expert
+  | Golem Mask|1|14.29% #expert
+  | Picksaw|1|33.33% #expert
+  |:group:start|总是会掉落以下 7 件物品之一|8 #expert
+  | custom:Stynger/Stynger Bolt|{{item|Stynger}}
+:+ {{item|Stynger Bolt}} (60–99) |14.29% #expert
+  | Possessed Hatchet|1|14.29% #expert
+  | Sun Stone|1|14.29% #expert
+  | Eye of the Golem|1|14.29% #expert
+  | Heat Ray|1|14.29% #expert
+  | Staff of Earth|1|14.29% #expert
+  | Golem Fist|1|14.29% #expert
+  |:group:end|-----------------------------------|
+  | Beetle Husk|18–23|100% #expert
+  | Gold Coin|[[NPC drops#Coin drops|12]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Guardian Golem|1|{{master|25%}} @master
+| Golem Relic|1|{{master|100%}} @master
+
+| imageother = Map Icon Golem.png
+| imageothercaption = {{tr|Map Icon}}
+| hardmode = yes
+}}<section end=npc infobox />
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.LIHZAHRDIAN_IDOL_Description}}|是|1}}}}|image=Map Icon Golem.png}}
+{{about|{{tr|Plantera}}后的 {{tr|boss}}}}
+
+'''{{tr|Golem}}'''是[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的 [[{{tr|Bosses}}|{{tr|boss}}]]，出现在[[{{tr|Jungle Temple}}]]中。它通过猛踩玩家、发射拳头、发射{{tr|projectiles}}弹幕的方式攻击。击败{{tr|Golem}}是[[{{tr|Lunar Events}}]]、[[{{tr|Martian Madness}}]]、和 {{tr|Tier 3}}的[[{{tr|Old One's Army}}]]的前置条件。
+
+{{boss music|Golem|Boss 2 (Otherworldly)}}
+
+== 召唤 ==
+击败[[{{tr|Plantera}}]]后的任何时间，在[[{{tr|Lihzahrd Altar}}]]（位于[[{{tr|Jungle Temple}}]]的最终房间内）上用[[{{tr|Lihzahrd Power Cell}}]]可召唤出{{tr|Golem}}。在{{tr|Lihzahrd Altar}}上按下 {{key|open}} 键后，会从玩家的[[{{tr|inventory}}]]中消耗一个{{tr|Lihzahrd Power Cell}}并直接在祭坛上方召唤出{{tr|Golem}}。
+
+{{tr|The Lihzahrd Altar}}可以用[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}挖掘并重新放置。不过，{{tr|Golem}}在[[{{tr|Underground Jungle}}]]之外会[[#{{tr|Enraged}}行为|{{tr|enraged}}]]。
+
+== 行为 ==
+{{tr|Golem}}包括四个部位：身体、附在身体上的头部、以及每个手臂上的拳头。身体初始是无敌的，必须先击败头部才能伤害身体；击败身体会结束 {{tr|boss}} 战。类似于[[{{tr|Skeletron}}]]的手，并不必须击败两只拳头。
+
+=== 第一形态 ===
+<!-- Body: -->
+{{tr|Golem}}会持续跳向空中并试图落在玩家头上，每次跳跃后会有小段冷却时间。当玩家和{{tr|Golem}}的身体之间的视线被实心[[{{tr|blocks}}]]阻挡时，它会向玩家跳跃，这会允许它穿过所有{{tr|solid blocks}}（类似于[[{{tr|Biome Mimic}}]]的行为）。
+
+<!-- Fists: -->
+{{tr|Golem}}会周期性地发射其拳头，它们会连着链条飞向玩家。拳头可以穿过{{tr|solid blocks}}，但范围有限，且在被发射前会短暂发出橙色光。随着拳头的{{tr|health}}降低，其发射频率会提高。击败拳头会让{{tr|Golem}}更频繁地四处跳跃，且两只拳头均被摧毁后会更加频繁。
+
+<!-- Head: -->
+{{tr|Golem}}的头部会从嘴中发射能反弹的{{tr|fireball}}，有 {{chance|1/2}} 几率造成 5–7 / {{expert|10–14}} / {{master|15–21}} 秒的[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。当头部的{{tr|health}}低于一半（{{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp}}/2)}}}} / {{expert|{{formatnum:{{#expr:{{npcinfo|Golem Head|hp|expert}}/2}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|Golem Head|hp|master}}/2}}}}}} {{tr|HP}}）时，其眼睛会开始向玩家发射被称为{{tr|Eye Beams}}的黄色、可穿过{{tr|blocks}}的激光。{{tr|Golem}}的头部会朝向玩家所在的那一侧（例如，如果玩家在头部左侧则会朝左）。如果头部朝向左侧或右侧，{{tr|Golem}}只会有一只眼睛发射{{tr|Eye Beam}}，但如果玩家在水平方向上对齐了{{tr|Golem}}头部，它会朝前看，此时它会同时发射两道{{tr|Eye Beams}}，每只眼睛各一道。
+
+当头部低于一半{{tr|health}}（由其开始发射{{tr|Eye Beams}}指示）时，{{tr|fireball}}的伤害由 36 / {{expert|72}} / {{master|108}} 提升至 48 / {{expert|96}} / {{master|144}}。此外，随着{{tr|Golem}}头部受到更多伤害，它们会更频繁地发射。
+
+{| class="terraria lined align-center"
+! {{tr|Golem Head health}} !! {{tr|Fireball}}冷却
+|-
+| ≥ 40% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp}}*0.4)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp|expert}}*0.4)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp|master}}*0.4)}}}}}}}}
+| {{duration|300/(1) ticks}}
+|-
+| ≥ 20% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp}}*0.2)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp|expert}}*0.2)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Head|hp|master}}*0.2)}}}}}}}}
+| {{duration|300/(1+1) ticks}}
+|-
+| < 20%
+| {{duration|300/(1+1+1) ticks}}
+|}
+
+与{{tr|fireballs}}不同，{{tr|Eye Beams}}不会以有规律的间隔发射。其冷却是随机的，不过有最短持续时间。这一最短冷却初始为 {{duration|60/(1) ticks}}，并随着{{tr|Golem}}头部的剩余{{tr|health}}降低，最多降低至低于 20% {{tr|HP}}时的 {{duration|60/(1+1+1+1) ticks}}。此外，冷却在玩家和{{tr|Golem}}头部的中心之间的视线被{{tr|solid blocks}}阻挡时大致上会减半。<!-- The description of the Eye Beam's cooldown is very simplified here. It can technically last up to 659 ticks; the algorithm is similar to the Black Recluses' web spit attack (see [[Black Recluse#Trivia]]). -->
+
+{{tr|fireballs and Eye Beams}}的冷却在[[{{tr|multiplayer}}]]下会更加低，取决于{{tr|server}}上的玩家数。
+
+=== 第二形态 ===
+当{{tr|Golem}}头部的{{tr|health}}耗尽后，它会从身体上分离，变得免疫[[{{tr|damage}}]]，开始在玩家上方悬浮并穿过{{tr|blocks}}。{{tr|Golem}}的身体现在会成为主要目标。和此前类似，头部会继续发射{{tr|projectiles}}（不过此时它总是会同时发射两道{{tr|Eye Beams}}），身体会继续四处跳跃（现在跳跃更快，且随着{{tr|health}}会更加快），拳头若未被摧毁会继续攻击玩家（攻击会更加频繁）。必须完全耗尽身体的{{tr|health}}以结束战斗，此时无敌的头部会同时被摧毁。
+
+同样，头部发射{{tr|fireballs}}的频率随着{{tr|Golem}}受到伤害而提高。
+
+{| class="terraria lined align-center"
+! {{tr|Golem Body health}} !! {{tr|Fireball}}冷却
+|-
+| ≥ 80% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.8)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.8)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.8)}}}}}}}}
+| {{duration|300/(1) ticks}}
+|-
+| ≥ 60% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.6)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.6)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.6)}}}}}}}}
+| {{duration|300/(1+1) ticks}}
+|-
+| ≥ 20% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.2)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.2)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.2)}}}}}}}}
+| {{duration|300/(1+1+1) ticks}}
+|-
+| ≥ 10% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.1)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.1)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.1)}}}}}}}}
+| {{duration|300/(1+1+1+1) ticks}}
+|-
+| < 10%
+| {{duration|300/(1+1+1+1+1) ticks}}
+|}
+
+{{tr|Golem}}身体{{tr|health}}降低也会降低{{tr|Eye Beams}}的冷却，并提高其伤害和[[{{tr|velocity}}]]：
+
+{| class="terraria lined align-center"
+! {{tr|Golem Body health}} !! {{tr|Eye Beam damage}} !! {{tr|Eye Beam velocity}}
+|-
+| ≥ 50% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.5)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.5)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.5)}}}}}}}}
+| 48 / {{expert|96}} / {{master|144}}
+| {{mph|11 pixels}}
+|-
+| ≥ 40% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.4)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.4)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.4)}}}}}}}}
+| 50 / {{expert|100}} / {{master|150}}
+| {{mph|11+0.25 pixels}}
+|-
+| ≥ 30% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.3)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.3)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.3)}}}}}}}}
+| 52 / {{expert|104}} / {{master|156}}
+| {{mph|11+0.25+0.25 pixels}}
+|-
+| ≥ 20% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.2)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.2)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.2)}}}}}}}}
+| 54 / {{expert|108}} / {{master|162}}
+| {{mph|11+0.25+0.25+0.25 pixels}}
+|-
+| ≥ 10% {{footnote|≥ {{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp}}*0.1)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|expert}}*0.1)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Golem Body|hp|master}}*0.1)}}}}}}}}
+| 56 / {{expert|112}} / {{master|168}}
+| {{mph|11+0.25+0.25+0.25+0.25 pixels}}
+|-
+| < 10%
+| 58 / {{expert|116}} / {{master|174}}
+| {{mph|11+0.25+0.25+0.25+0.25+0.25 pixels}}
+|}
+
+视线被阻挡时，{{tr|Eye Beam}}的伤害提高 50%、{{tr|velocity}}提高 150%。
+
+=== 暴怒行为 ===
+{{tr|Golem}}在[[{{tr|Underground Jungle}}]]以外会{{tr|enrage}}，这会使其跳跃更快，且其头部低于 50% {{tr|health}}时更频繁发射{{tr|Eye Beams}}。它在回到{{tr|Underground Jungle}}后会变回正常状态。
+
+== 部位 ==
+=== 第一形态 ===
+{{infobox wrapper|direction=row|float=left
+|{{npc infobox|width=26em
+| auto = 246
+| type = Boss Part
+| environment = Jungle Temple
+| damage2 = <!--
+	-->&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|36|72|108}} {{note|small=y|paren=y|{{gameText|ProjectileName.Fireball}}，{{tr|health}} ≥50% 时}}<br/><!--
+	-->{{modes|48|96|144}} {{note|small=y|paren=y|{{gameText|ProjectileName.Fireball}}，{{tr|health}} <50% 时}}<br/><!--
+	-->{{modes|56|112|168}} {{note|small=y|paren=y|{{gameText|ProjectileName.EyeBeam}}}}
+| idprojectile = 258, 259
+| sound1 = Item 33.wav
+| soundcaption1 = {{gameText|ProjectileName.EyeBeam}}
+| sound2 = Item 20.wav
+| soundcaption2 = {{gameText|ProjectileName.Fireball}}
+}}
+|{{npc infobox
+| imagealt = <table>
+<tr><td>左拳</td><td>右拳</td></tr>
+<tr><td>[[File:Left Golem Fist.png|link=]]</td><td>[[File:Right Golem Fist.png|link=]]</td></tr>
+</table>
+| auto = 247
+| namesub =
+| type = Boss Part
+| environment = Jungle Temple
+| sound1 = Item 14.wav
+| soundcaption1 = 发射
+| id = 247, 248
+| cargo = no
+}}
+}}<!--
+invisible infoboxes for storing the individual fists' info to cargo:
+-->{{npc infobox | view = void
+| auto = 247
+| type = Boss Part
+| environment = Jungle Temple
+}}<!--
+-->{{npc infobox | view = void
+| auto = 248
+| type = Boss Part
+| environment = Jungle Temple
+}}
+{{-}}
+
+=== 第二形态 ===
+{{infobox wrapper|direction=row|float=left
+|{{npc infobox
+| image = Golem Core.png
+| auto = 245
+| type = Boss Part
+| environment = Jungle Temple
+| sound1 = Item 14.wav
+| soundcaption1 = 重踏
+}}
+|{{npc infobox
+| auto = 249
+| image = Free Golem Head.gif
+| type = Boss Part / Invincible
+| environment = Jungle Temple
+| damage2 = <!--
+	-->&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|40|80|120}} {{note|small=y|paren=y|{{gameText|ProjectileName.Fireball}}}}<br/><!--
+	-->{{modes|48–58|96–116|144–174}} {{note|small=y|paren=y|{{gameText|ProjectileName.EyeBeam}}，见[[#第二形态|第二形态]]获取细节}}
+| idprojectile = 258, 259
+| sound1 = Item 33.wav
+| soundcaption1 = {{gameText|ProjectileName.EyeBeam}}
+| sound2 = Item 20.wav
+| soundcaption2 = {{gameText|ProjectileName.Fireball}}
+}}
+}}
+{{-}}
+
+== 后果 ==
+{{exclusive|Cultists|section=y}}
+* [[{{tr|Cultist}}]]会在[[{{tr|Dungeon}}]]的入口处生成，杀死它们会召唤[[{{tr|Lunatic Cultist}}]]和随后的[[{{tr|Lunar Events}}]]（只要某些其他条件也已满足——见[[{{tr|Cultists}}#备注|细节]]）。
+** 要让此发生，必须先要至少打败一次[[{{tr|Skeletron}}]]，因为[[{{tr|Old Man}}]]生成会覆盖{{tr|the Cultists}}的生成。
+* [[{{tr|Martian Probe}}]]开始随机生成，它可以触发[[{{tr|Martian Madness}}]]{{tr|event}}。
+* 在{{tr|Golem}}被打败后召唤[[{{tr|Old One's Army}}]]会触发最难的“{{tr|Tier 3}}”版本的{{tr|event}}，让玩家可以与[[{{tr|Betsy}}]]战斗。
+* 可以在[[{{tr|Shimmer}}]]处{{tr|decraft}}[[{{tr|Lihzahrd furniture}}]]。
+* [[{{tr|Steampunker}}]]将开始出售[[{{tr|Steampunk Wings}}]]。
+* [[{{tr|Party Girl}}]]会开始出售[[{{tr|Celebration}}]]。
+
+== 备注 ==
+* 除[[{{tr|King Slime}}]]外，它是仅有的会受到[[{{tr|lava}}]]伤害的 {{tr|boss}}。不过这只适用于{{tr|Golem}}头部分离后的身体。
+* {{tr|Golem}}的{{tr|map icon}}会标出其头部的位置。
+** 尽管如此，{{tr|Golem}}仍然会在其头部追随玩家太远时消失，因为距离是从其身体开始计算的。
+* {{tr|Golem}}拳头的攻击只会在玩家处于两拳之间或者和拳头同侧时发射。
+* 和大多数 {{tr|bosses}}不同，{{tr|Golem}}会受到[[{{tr|Space}}]]的低重力影响。
+
+== 成就 ==
+{{achievement|name=Lihzahrdian Idol}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies}}
+<!-- Do not put specific strategies here. Instead, add them to [[Guide:Golem strategies]]. -->
+* 在某些情况下，[[{{tr|the Lihzahrd Altar}}]]四周的地形会导致{{tr|Golem}}在生成时被卡住。在这种情况下，它可以用拳头和{{tr|projectiles}}攻击但无法跳来跳去。玩家可以通过在{{tr|altar}}附近放置{{tr|blocks}}来重新创造这种状况。
+* {{tr|Lihzahrd Altar}}下方的三个[[{{tr|Lihzahrd Brick}}]]无法被[[{{tr|Actuator}}|致动]]，因此无法在第一次击败{{tr|Golem}}之前移动{{tr|altar}}。
+
+== 花絮 ==
+{{float file box|[[File:Gore 361.png|link=]]|{{tr|Golem}}的{{tr|gore}}中带有伤心脸的{{tr|Lihzahrd Brick}}主题的太阳。}}
+* 在犹太民间传说中，{{维基百科|golem|t=石巨人/魔像}}（{{ipa|ˈɡoʊləm|before=}}，''GOH-ləm''，希伯来语：גּוֹלֶם）是一种纯粹由无生命的物质（通常为粘土或泥巴）创造出的拟人化生物。这个词在《诗篇》和中世纪作品中曾用于指代不定形、未成形的材料。
+* 在{{tr|Golem}}的第一形态下，其头部会随着{{tr|health}}降低而看起来更松动，每当{{tr|Golem}}跳跃时会自己弹跳。
+* {{tr|Golem}}身体上{{tr|Lihzahrd Brick}}主题的太阳符号的{{tr|The gore}}外观具有伤心的脸。
+* 假设玩家高 {{real-life size|48|feet}}（{{real-life size|48|meters}} 米），{{tr|Golem}}约有 {{real-life size|208.25|feet}}（{{real-life size|208.25|meters}} 米）高。其头部约有 {{real-life size|106|feet}}（{{real-life size|106|meters}} 米）高。
+* 尽管 [[1.4.0.1]] 进行了{{tr|sprite update}}，但{{tr|Golem}}的[[{{tr|achievement}}]]图标和{{tr|gore}}外观并未更新。
+{{bestiary|Golem Body|alias={{tr|Golem}}|article=}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Golem Body}}的{{tr|health}}由 9000 提升至 15000。
+** {{tr|Golem Head}}的{{tr|health}}由 16000 提升至 25000。
+** {{tr|Golem Fists}}的{{tr|health}}由 7000 提升至 10000。
+** 现在在发射拳头之前有一个大约半秒的视觉效果。
+** {{tr|Golem Fists}}不再能被阻退了。
+** 现在占用更多{{tr|enemy slots}}，以便在战斗时减少或取消{{tr|enemy spawns}}。}}
+{{history|Desktop 1.4.0.5|修复一个 {{tr|NPC}} 平滑处理方面的问题。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}旧外观为 [[File:Golem (old).png|40px]]。
+** 在[[{{tr|Expert Mode}}]]中，{{tr|Golem}}的攻击会随着玩家数量增加而变得更加积极，并且逃课它的难度略微更高。
+** 现在{{tr|Golem}}在{{tr|the Underground Jungle}}外会{{tr|enrage}}。
+** 现在在必要时能穿过{{tr|blocks}}。
+** 击败{{tr|Golem}}会让[[{{tr|Party Girl}}]]开始出售[[{{tr|Celebration}}]]。
+** [[{{tr|Picksaw}}]]现在会随其他掉落物掉落，而不再作为主掉落池的一部分。
+** 添加了两个[[{{tr|Master Mode}}]]掉落物：[[{{tr|Guardian Golem}}]]和[[{{tr|Golem Relic}}]]。}}
+{{history|Desktop 1.3.4|击败{{tr|Golem}}会解锁 {{tr|tier 3}}的[[{{tr|Old One's Army}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在会触发[[{{tr|Cultist}}]]生成。
+** 现在会触发[[{{tr|Martian Probe}}]]生成。
+** [[{{tr|Steampunker}}]]现在会在{{tr|Golem}}被打败后出售[[{{tr|Steampunk Wings}}]]。
+** 添加了{{tr|Expert mode}}掉落物，[[{{tr|Shiny Stone}}]]。}}
+{{history|Desktop 1.2.3|
+** 现在在[[{{tr|Plantera}}]]被打败前不能生成。
+** 所有部位的{{tr|health}}、{{tr|damage}}、和{{tr|defense}}提高：
+*** {{tr|Golem Body}}的{{tr|health}}由 8000 提升至 9000。
+*** {{tr|Golem Body}}的{{tr|contact damage}}由 70 提升至 72。
+*** {{tr|Golem Body}}的{{tr|defense}}由 24 提升至 26。
+*** {{tr|Golem Head}}的{{tr|health}}由 15000 提升至 16000。
+*** {{tr|Golem Head}}的{{tr|contact damage}}由 60 提升至 64。
+*** {{tr|Golem Head}}的{{tr|defense}}由 18 提升至 20。
+*** {{tr|Golem Fists}}的{{tr|health}}由 6000 提升至 7000。
+*** {{tr|Golem Fists}}的{{tr|contact damage}}由 55 提升至 59。
+*** {{tr|Free Golem Head}}的（内部）{{tr|health}}由 10000 提升至 11000，但其仍是无敌的。
+*** {{tr|Free Golem Head}}的（内部）{{tr|defense}}由 30 提升至 32，但其仍是无敌的。
+** {{tr|Eye Beam}}{{tr|damage}}由 58 降低至 56（第一形态，附着的{{tr|Golem Head}}）以及由 50 降低至 48（第二形态，{{tr|Free Golem Head}}）。
+** 其攻击能穿透墙壁了。
+** 现在掉落 {{gc|15}}、4–8 个[[{{tr|Beetle Husk}}]]、和[[{{tr|Golem Mask}}]]。
+** 现在对[[{{tr|Poisoned}}]]和[[{{tr|On Fire!}}]]免疫。
+** {{tr|Golem}}现在能成功穿过[[{{tr|platforms}}]]。
+** 召唤{{tr|Golem}}现在会正确地只用一个[[{{tr|Lihzahrd Power Cell}}]]。
+** 现在会在所有玩家都被杀后逃走并消失。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Golem}}

@@ -1,0 +1,367 @@
+{{legacy nav tab}}
+<section begin=npc infobox />{{npc infobox
+| boxwidth = 31em
+| auto = 113
+| namesub = <!-- hide "Wall of Flesh Mouth" namesub caused by "|auto=113" -->
+| image = Wall of Flesh.gif
+| environment = The Underworld
+| damage = <!-- hide damage stat of Wall of Flesh Mouth -->
+| defense = <!-- hide defense stat of Wall of Flesh Mouth -->
+| type = Boss
+| debuff = Horrified
+| debuffduration = 当玩家距离 {{tr|boss}} 120 格以内。
+| debuff2 = The Tongue
+| debuffduration2 = 当玩家具有{{tr|Horrified debuff}}，并离开{{tr|Underworld}}或在 {{tr|boss}} 身后 2.5 格以外。
+
+| Pwnhammer|1|100% @normal
+|:group:start|总是会掉落以下 8 件{{tr|items}}中的两件（见下方备注）| @normal
+| :note:|{{note|总是会掉落以下 4 件{{tr|weapons}}之一}} | @normal
+| Breaker Blade           |1| 25% @normal
+| Clockwork Assault Rifle |1| 25% @normal
+| Laser Rifle             |1| 25% @normal
+| Firecracker             |1| 25% @normal
+| :note:|{{note|总是会掉落以下 4 个{{tr|emblems}}之一}} | @normal
+| Warrior Emblem          |1| 25% @normal
+| Ranger Emblem           |1| 25% @normal
+| Sorcerer Emblem         |1| 25% @normal
+| Summoner Emblem         |1| 25% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Badger's Hat // 当和[[{{tr|Eye of Cthulhu}}]]在同一天打败时 |1|100%
+| Healing Potion|5–15|100%
+| Wall of Flesh Mask|1|14.29% @normal
+| Wall of Flesh Trophy|1|10%
+| Treasure Bag (Wall of Flesh)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Demon Heart // 当尚未使用{{tr|Demon Heart}}时 |1|100% #expert
+  | Wall of Flesh Mask|1|14.29% #expert
+  | Pwnhammer|1|100% #expert
+  |:group:start|总是会掉落以下 4 个{{tr|emblems}}之一| #expert
+  | Warrior Emblem|1|25% #expert
+  | Ranger Emblem|1|25% #expert
+  | Sorcerer Emblem|1|25% #expert
+  | Summoner Emblem|1|25% #expert
+  |:group:end|-----------------------------------|
+  |:group:start|总是会掉落以下 4 件{{tr|weapons}}之一| #expert
+  | Breaker Blade|1|25% #expert
+  | Clockwork Assault Rifle|1|25% #expert
+  | Laser Rifle|1|25% #expert
+  | Firecracker|1|25% #expert
+  |:group:end|-----------------------------------|
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|8]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Goat Skull|1|{{master|25%}} @master
+| Wall of Flesh Relic|1|{{master|100%}} @master
+
+| sound1 = NPC Killed 10.wav
+| soundcaption1 = 生成
+| sound2 = NPC Killed 13.wav
+| soundcaption2 =  {{tr|Summon Leech}}
+| imageother = Map Icon Wall of Flesh.png
+| imageothercaption = {{tr|Map Icon}}
+| id = 113, 114
+}}<section end=npc infobox />
+{{flavor text| {{ucfirst:{{#dplreplace:{{#explode:{{#invoke:gameText|getRaw|Achievements.STILL_HUNGRY_Description}}|，|1}}|它是|}}}}。|image=Map Icon Wall of Flesh.png}}
+{{distinguish|Flesh Block Wall}}
+
+[[File:Wall of Flesh2.jpg|thumb|300px|面对{{tr|the Wall of Flesh}}的玩家。]]
+
+'''{{tr|Wall of Flesh}}'''是[[{{tr|pre-Hardmode}}]]的最终 [[{{tr|boss}}]]。一旦它被打败，{{tr|world}}永久性转化为[[{{tr|Hardmode}}]]，带来新的内容和挑战。
+
+要打败{{tr|Wall of Flesh}}，玩家必须攻击其眼睛或者嘴巴。它们共享同一个{{tr|health}}计数器，因此攻击三者中的任何一个都能消耗此 {{tr|boss}} 的总{{tr|health}}。但是，眼睛的[[{{tr|defense}}]]要比嘴巴更低（因此会受到更大伤害）。{{tr|Wall of Flesh}}的所有其他部位都不能被伤害。
+
+关于来自此 {{tr|boss}} 的两个专有[[{{tr|debuffs}}]]'''[[#{{tr|Horrified}}|{{tr|Horrified}}]]'''和'''[[#{{tr|The Tongue}}|{{tr|The Tongue}}]]'''的信息，参见下文。
+
+{{boss music|t={{tr|the Wall of Flesh}}|Boss 2|Wall of Flesh (Otherworldly)}}
+
+== 召唤 ==
+{{tr|Wall of Flesh}}可在[[{{tr|The Underworld}}]]中用[[{{tr|Guide Voodoo Doll}}]]{{tr|summon}}。若{{tr|Guide Voodoo Doll}}被丢入{{tr|the Underworld}}中的[[{{tr|lava}}]]并被摧毁，[[{{tr|Guide}}]]会立即死亡且{{tr|Wall of Flesh}}会立即被{{tr|summon}}。要让此流程发生，{{tr|The Guide}}必须存活。如果{{tr|item}}被其他地方的{{tr|lava}}摧毁，{{tr|Guide}}会像通常一样死亡，但 {{tr|boss}} 不会被{{tr|summon}}；如果{{tr|item}}被{{tr|lava}}摧毁但{{tr|Guide}}并不存活，则会浪费掉{{tr|item}}，不会{{tr|summon}}出 {{tr|boss}}。
+
+也可以通过让{{tr|the Guide}}在{{tr|The Underworld}}中的{{tr|lava}}内死亡的方式来{{tr|summon}}{{tr|The Wall of Flesh}}。他可以以任何方式死亡（玩家、{{tr|enemy}}、或环境），只要他死亡时接触到{{tr|lava}}即可。{{source code ref|v=1.4.4.9|method=Terraria.NPC.DoDeathEvents / Terraria.NPC.SpawnWOF}}
+
+{{tr|Wall of Flesh}}移动的方向取决于{{tr|Guide Voodoo Doll}}被摧毁的位置（或{{tr|Guide}}在{{tr|lava}}中被杀死的位置）。如果位于{{tr|world}}水平中心的左侧，{{tr|boss}} 会从左向右扫过，反之亦然。
+
+=== 位置 ===
+当{{tr|Guide Voodoo Doll}}被摧毁或{{tr|Guide}}在{{tr|lava}}中被杀死时，游戏会检查{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnWOF}}是否所有玩家都距离娃娃/{{tr|Guide}}的位置至少 75 格<!-- 1200 pixels -->远。若是，则{{tr|Wall of Flesh}}会被召唤在娃娃/{{tr|Guide}}的水平位置处。否则，向最近的侧向[[世界边界]]移动一格并再次检查，重复直至遇到距离任何玩家至少 75 格远的{{tr|tile}}。检查会在距真正世界边界 20 格远处（即距离可见世界边界 21 / 22 格）停止，即使有玩家仍然位于该点 75 格范围内（例如，紧贴可见世界边界）。
+
+在确定水平生成位置后，游戏会决定有效的垂直位置。生成{{tr|tile}}必须未被{{tr|solid block}}占据，且其{{tr|liquid}}等级必须少于 100（即最多约 {{percent|99/255 round 2}} 格的{{tr|liquid}}）。同样，游戏会从娃娃/{{tr|Guide}}的垂直位置开始，并检查该位置是否有效。然后会检查该点上方那格、下方那格、上方第二格、下方第二格……以此类推，直到找到有效位置。如果游戏在 1000 次尝试后（即上下方各 1000 格）未找到有效位置，则返回初始垂直位置。最后，施加垂直限制：如果所选垂直位置高于{{tr|Underworld and Cavern layers}}边界向下 10 格，则强制下移到该位置（即使该处{{tr|tile}}此前是无效的）；若所选位置低于该分界线 80 格（大约位于{{tr|the Underworld}}的高度中线），则强制上移至该位置（也不考虑该位置{{tr|tile}}此前是否无效）。
+
+{{tr|Wall of Flesh}}的嘴巴的中部会在所选位置出现，眼睛会相对其位置生成。{{tr|boss}} 在生成后会快速在垂直方向上对齐玩家。
+
+== 行为 ==
+{{tr|The Wall of Flesh}}非常大，垂直占据整个屏幕。一旦生成，它会缓慢地单向扫过地图，迫使[[{{tr|player}}]]在战斗期间不断移动，同时还要与[[{{tr|Underworld}}]]的通常危险相抗衡。
+
+<div>{{anchor|{{tr|Horrified}}}}{{anchor|Horrified}}<!-- separate <div> so that the "Flash Anchored" gadget ([[MediaWiki:Gadget-flashAnchored]]) only highlights this paragraph -->
+当{{tr|Wall of Flesh}}存活时，所有靠近{{tr|the Underworld}}<ref>实际的边界为{{tr|Underworld}}上方 50 格。</ref>且距离{{tr|Wall of Flesh}}少于 120 格的玩家会被施加'''{{tr|Horrified}}'''[[{{tr|debuff}}]]。只要{{tr|Wall of Flesh}}存在，此{{tr|debuff}}就会持续地被施加。一旦被施加到玩家身上，它就会持续至玩家或{{tr|Wall of Flesh}}死亡。此{{tr|debuff}}基本上被用于决定是否能施加[[#{{tr|The Tongue}}|{{tr|The Tongue}}]]{{tr|debuff}}。
+
+当此{{tr|debuff}}激活时，若玩家和{{tr|Wall of Flesh}}的“墙”部分碰撞，就会受到 50 / {{expert|100}} / {{master|150}} 伤害并向{{tr|Wall of Flesh}}朝向的方向被[[{{tr|knockback}}]]。这一伤害不具有通常的 ±15% 随机变化，且会无视玩家的{{tr|knockback}}免疫（例：来自[[{{tr|Cobalt Shield}}]]或其升级物）。若玩家被这一伤害击杀，会显示[[{{tr|Death}}|{{tr|death message}}]]''“{{gameText|DeathText.Slain|x_0=&lt;玩家名字&gt;}}”''{{source code ref|name=WOFTongue|v=1.4.4.9|method=Terraria.Player.WOFTongue}}
+
+如果{{tr|Wall of Flesh}}到达了地图的另一边，它会消失，且所有受到{{tr|Horrified}}影响的玩家会立即死亡（具有独特的{{tr|death message}}''“{{gameText|DeathText.WasLicked_1|x_0=&lt;玩家名字&gt;}}”''或''“{{gameText|DeathText.WasLicked_2|x_0=&lt;玩家名字&gt;}}”''）。</div>
+
+<div>{{anchor|{{tr|The Tongue}}}}{{anchor|Tongue}}{{anchor|The Tongue}}<!-- separate <div> so that the "Flash Anchored" gadget ([[MediaWiki:Gadget-flashAnchored]]) only highlights this paragraph -->
+当{{tr|Horrified debuff}}激活时，试图离开{{tr|the Underworld}}或前往{{tr|Wall of Flesh}}身后会造成[[{{tr|The Tongue}}]]{{tr|debuff}}。当此{{tr|debuff}}激活时，会有一根卷须抓住玩家并将其以最高 {{mph|11 pixels}} 的速度拉向{{tr|the Wall of Flesh}}的嘴中，无视途经的[[{{tr|blocks}}]]。[[{{tr|Expert Mode}}]]下，此{{tr|debuff}}还会使玩家{{expert|每秒受到 50 伤害}}。{{tr|debuff}}激活时，玩家将无法移动或使用物品。如果玩家死于{{tr|debuff}}，会显示独特的{{tr|death message}}''“{{gameText|DeathText.WasLicked_1|x_0=&lt;玩家名字&gt;}}”''或''“{{gameText|DeathText.WasLicked_2|x_0=&lt;玩家名字&gt;}}”''
+
+当{{tr|The Tongue debuff}}激活时，若玩家和{{tr|Wall of Flesh}}之间的{{维基百科|euclidean distance|欧几里得距离}}{{note|small=y|paren=y|译注：即两点间的直线距离}}大于 187.5 格，玩家会立即死亡，而非被拖向{{tr|Wall of Flesh}}；这会具有独特的{{tr|death message}}：''“{{gameText|DeathText.TriedToEscape|x_0=&lt;玩家名字&gt;}}”''<ref name="WOFTongue"/>这等效于阻止玩家逃离战斗或传送到 {{tr|boss}} 身后（包括[[{{tr|Magic Mirrors}}]]、[[{{tr|Teleporter}}]]、[[{{tr|Demon Conch}}]]等等）。退出并重新进入{{tr|world}}可以逃离战斗，但{{tr|Wall of Flesh}}会消失。
+</div>
+
+{{tr|The Wall of Flesh}}随着生命值下降会移动得越来越快；详情参见[[#{{tr|Movement speed}}|下文]]。在极低{{tr|health}}时，它的移动速度可高达 {{mph|3.25 pixels}} / {{expert|{{mph|7.977499 pixels}}}}。由于{{tr|Wall of Flesh}}在{{tr|Expert Mode}}中有着更高的{{tr|movement speed}}，它在{{tr|health}}下降后通过{{tr|The Tongue}}{{tr|debuff}}吸入玩家的速度也会随之提高。
+
+另外：
+* {{anchor|The Hungry}}{{anchor|{{tr|The Hungry}}}}{{tr|The Wall of Flesh}}有叫做[[#部位|{{tr|The Hungry}}]]的小嘴，每个都由长长的血管连接着，会朝着玩家移动并对玩家造成伤害。随着{{tr|the Wall of Flesh}}的主体受到伤害，它们会造成更高的伤害并更能抵抗攻击。当受到足够伤害后，它们会脱离并高速飞向玩家。
+** {{tr|The Hungry}}被击杀时总是会掉落一颗[[{{tr|Heart}}]]。在{{tr|Expert mode}}中，则只有 {{chance|1/5}} 几率掉落；且只要{{tr|Wall of Flesh}}还活着，{{tr|The Hungry}}就会不断重新生成。
+** 在[[{{tr|Expert Mode}}]]及以上，[[{{tr|multiplayer}}]]中每名额外的玩家都会使{{tr|The Hungry}}获得更多的[[{{tr|knockback}}]]抗性，且它们在有至少 5 名玩家时会免疫{{tr|knockback}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.ScaleStats_ApplyMultiplayerStats}}
+* {{tr|The Wall of Flesh}}的眼睛会发射紫色的{{tr|Eye Lasers}}。随着其{{tr|health}}降低，激光的伤害、发射频率、{{tr|velocity}}都随之提升。
+* {{tr|The Wall of Flesh}}会从其嘴中喷吐出追逐玩家的[[{{tr|Leech}}]]。当被击杀时，它们必定 / {{expert|以 {{chance|1/5}}几率}}掉落[[{{tr|heart}}]]。
+* 它会随机地发出{{sound|[[Media:NPC Killed 10.wav|吼声]]|NPC Killed 10.wav|nofallback=y}}。
+
+=== {{tr|Movement speed}} ===
+{{tr|the Wall of Flesh}}的{{tr|The movement speed}}取决于其{{tr|health}}，具体如下：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle{{nbsp}}{{=}}{{=}}{{nbsp}}27</code> 代码段。}}
+{{flexstart|alignitems=top|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ [[File:Classic mode icon.png]] {{tr|Classic Mode}}
+! {{tr|Health}} !! {{tr|Speed}}
+|-
+| ≥75%
+| {{mph|1.5 pixels}}
+|-
+| <75%{{note|block=y|small=y|{{#expr:floor({{npcinfo|Wall of Flesh|hp}}*0.75)}} {{tr|HP}}}}
+| {{mph|1.75 pixels}}
+|-
+| <50%{{note|block=y|small=y|{{#expr:floor({{npcinfo|Wall of Flesh|hp}}*0.5)}} {{tr|HP}}}}
+| {{mph|2.15 pixels}}
+|-
+| <25%{{note|block=y|small=y|{{#expr:floor({{npcinfo|Wall of Flesh|hp}}*0.25)}} {{tr|HP}}}}
+| {{mph|2.65 pixels}}
+|-
+| <10%{{note|block=y|small=y|{{#expr:floor({{npcinfo|Wall of Flesh|hp}}*0.1)}} {{tr|HP}}}}
+| {{mph|3.25 pixels}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ [[File:Expert mode icon.png]] {{tr|Expert Mode}}
+! {{tr|Health}} !! {{tr|Speed}}
+|-
+| ≥75%
+| {{mph|2.375 pixels}}
+|-
+| <75%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.75)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.75)}}}} {{tr|HP}}}}
+| {{mph|2.7125 pixels}}
+|-
+| <66%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.66)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.66)}}}} {{tr|HP}}}}
+| {{mph|3.1175 pixels}}
+|-
+| <50%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.5)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.5)}}}} {{tr|HP}}}}
+| {{mph|3.6575 pixels}}
+|-
+| <33%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.33)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.33)}}}} {{tr|HP}}}}
+| {{mph|4.0625 pixels}}
+|-
+| <25%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.25)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.25)}}}} {{tr|HP}}}}
+| {{mph|4.7375 pixels}}
+|-
+| <10%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.1)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.1)}}}} {{tr|HP}}}}
+| {{mph|5.5475 pixels}}
+|-
+| <5%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.05)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.05)}}}} {{tr|HP}}}}
+| {{mph|6.3575 pixels}}
+|-
+| <3.5%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.035)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.035)}}}} {{tr|HP}}}}
+| {{mph|7.1675 pixels}}
+|-
+| <2.5%{{note|block=y|small=y|{{expert|{{#expr:floor({{npcinfo|Wall of Flesh|hp|expert}}*0.025)}}}} / {{master|{{#expr:floor({{npcinfo|Wall of Flesh|hp|master}}*0.025)}}}} {{tr|HP}}}}
+| {{mph|7.977499 pixels}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+== 部位 ==
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 113
+| image = Wall of Flesh Mouth.gif
+| type = Boss
+| environment = The Underworld
+| sound1 = NPC Killed 13.wav
+| soundcaption1 = 召唤{{tr|Leech}}
+}}
+|{{npc infobox
+| auto = 114
+| image = Wall of Flesh Eye.gif
+| type = Boss
+| environment = The Underworld
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|22–30|44–60|66–90}} {{note|small=y|paren=y|{{gameText|ProjectileName.EyeLaser}}；取决于{{tr|health}}}}
+| idprojectile = 83
+| sound1 = Item 33.wav
+| soundcaption1 = {{gameText|ProjectileName.EyeLaser}}
+}}
+
+|{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 115
+| image = The Hungry.gif
+| environment = The Underworld
+| damage2 = <!--
+	-->&#32;{{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} >75%}}<br/><!--
+	-->{{modes|45|90|135}} {{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} 75–50%}}<br/><!--
+	-->{{modes|60|120|180}} {{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} <50%}}<br/><!--
+	-->
+| defense2 = <!--
+	-->&#32;{{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} >75%}}<br/><!--
+	-->20 {{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} 75–50%}}<br/><!--
+	-->30 {{note|small=y|paren=y|{{tr|Wall of Flesh}}{{tr|health}} <50%}}<br/><!--
+	-->
+| knockback2 = <!--
+Formula: Final KB resistance = KB resistance × (1 - Boost), where Boost is calculated in Terraria.NPC.GetStatScalingFactors
+Note that this stat is the multiplier of incoming knockback, so subtract Final KB resistance from 1 for the stat displayed in wiki infobox.
+-->{{modes|expertonly=yes<!--
+	-->|&#32;{{note|small=y|paren=y|1 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_e}}*(1-17/30)) round 2}}}} {{note|small=y|paren=y|2 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_e}}*(1-32/45)) round 2}}}} {{note|small=y|paren=y|3 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_e}}*(1-109/135)) round 2}}}}  {{note|small=y|paren=y|4 名玩家}}<br/><!--
+		-->100% {{note|small=y|paren=y|5 名玩家及以上}}<br/><!--
+	-->|&#32;{{note|small=y|paren=y|1 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_m}}*(1-17/30)) round 2}}}} {{note|small=y|paren=y|2 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_m}}*(1-32/45)) round 2}}}} {{note|small=y|paren=y|3 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=115|2=knockBackResist_m}}*(1-109/135)) round 2}}}} {{note|small=y|paren=y|4 名玩家}}<br/><!--
+		-->100% {{note|small=y|paren=y|5 名玩家及以上}}<br/><!--
+-->}}
+}}
+|{{npc infobox
+| auto = 116
+| image = The Hungry II.gif
+| type = Flying Enemy
+| knockback2 =<!--
+-->{{modes|expertonly=yes<!--
+	-->|&#32;{{note|small=y|paren=y|1 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_e}}*(1-17/30)) round 2}}}} {{note|small=y|paren=y|2 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_e}}*(1-32/45)) round 2}}}} {{note|small=y|paren=y|3 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_e}}*(1-109/135)) round 2}}}}  {{note|small=y|paren=y|4 名玩家}}<br/><!--
+		-->100% {{note|small=y|paren=y|5 名玩家及以上}}<br/><!--
+	-->|&#32;{{note|small=y|paren=y|1 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_m}}*(1-17/30)) round 2}}}} {{note|small=y|paren=y|2 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_m}}*(1-32/45)) round 2}}}} {{note|small=y|paren=y|3 名玩家}}<br/><!--
+		-->{{percent|{{#expr:(1-{{npcinfo|id=116|2=knockBackResist_m}}*(1-109/135)) round 2}}}} {{note|small=y|paren=y|4 名玩家}}<br/><!--
+		-->100% {{note|small=y|paren=y|5 名玩家及以上}}<br/><!--
+-->}}
+| environment = The Underworld
+| Heart|1|{{modes|100%|20%}}
+}}
+}}
+}}
+
+== 后果 ==
+当{{tr|the Wall of Flesh}}被杀死时，它的[[{{tr|drop}}|掉落物]]会留在半空中的一个 9×9 的封闭方框中，在[[{{tr|The Corruption}}|{{tr|Corruption}}]]世界中方框由[[{{tr|Demonite Brick}}]]构成，而在[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界中由[[{{tr|Crimtane Brick}}]]构成。它还总是会掉落一把[[{{tr|Pwnhammer}}]]，这是在世界中生成[[{{tr|Hardmode}}]]{{tr|ore}}所必需的（通过用{{tr|hammer power}}高于 80% 的{{tr|hammer}}破坏[[{{tr|Demon Altar}}]]或[[{{tr|Crimson Altar}}]]，{{tr|Pwnhammer}}是第一把能得到的这类{{tr|hammer}}）。
+* 在[[{{tr|Expert Mode}}]]或更高{{tr|difficulties}}下，它掉落的[[{{tr|Treasure Bags|link=y}}#{{tr|Wall of Flesh}}|{{tr|Treasure Bag}}]]会包含[[{{tr|Demon Heart}}]]，为玩家提供一个额外的（{{expert|第六个}} / {{master|第七个}}）{{tr|accessory slot}}。
+** 在玩家使用一个{{tr|Demon Heart}}后，{{tr|Treasure Bags}}不再掉落{{tr|Demon Heart}}，也无法再使用{{tr|Demon Heart}}。
+* [[{{tr|Merchant}}]]会开始出售[[{{tr|Drum Set}}]]和[[{{tr|Drumstick}}]]。
+* [[{{tr|Angler}}]]会开始需求[[{{tr|Angelfish}}]]和[[{{tr|Cloudfish}}]]。
+* [[{{tr|Dryad}}]]会开始出售[[{{tr|Fireblossom Planter Box}}]]。
+
+=== {{tr|Hardmode}} ===
+{{main|{{tr|Hardmode}}}}
+在第一次打败{{tr|the Wall of Flesh}}后，会显示一条[[{{tr|status message}}]]：''“{{gameText|LegacyMisc.15}}”''，同时世界永久转化为{{tr|hardmode}}。{{tr|Hardmode}}带来了新的[[{{tr|biome}}]]、[[{{tr|Hardmode}}#{{tr|Enemies}}|新的且更强大的{{tr|enemies}}]]、以及各种各样的新装备。
+
+两条[[{{tr|Hallow}}]]和[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]的[[{{tr|Hardmode conversion}}|斜向条带]]会形成“V”形，从{{tr|world}}顶部一路延伸至[[{{tr|Underworld}}]]底部。{{tr|Corruption}}/{{tr|Crimson}}和{{tr|Hallow}}会以更快的速度[[{{tr|biome spread}}|{{tr|spread}}]]，若不采取任何行动，最终会覆盖{{tr|world}}内大片区域。
+
+== 备注 ==
+* 是否能召唤{{tr|the Wall of Flesh}}取决于[[{{tr|Guide}}]]是否存活。如果是[[{{tr|night}}]]或者有[[{{tr|event}}]]正在进行中，则{{tr|Guide}}无法重生。因此，多次战斗之间的等待时间通常要比其他 {{tr|bosses}} 要长。将战斗安排在{{tr|dawn}}之前结束则有机会进行两次甚至更多次战斗，特别是如果已经为{{tr|the Guide}}分配好了[[{{tr|House}}]]时。
+* {{tr|Guide}}确实有可能会在{{tr|the Wall of Flesh}}活着时重生，不过当{{tr|world}}中已有{{tr|the Wall of Flesh}}存活时就无法重复生成此 {{tr|boss}}。
+* 当{{tr|Wall of Flesh}}存活且所有{{tr|Underworld}}中的玩家被杀死时，屏幕会在 4 秒内逐渐渐变为黑色，然后{{tr|Wall of Flesh}}会消失，屏幕变回正常。
+* {{tr|The Wall of Flesh}}的眼睛会在其身体上上下移动来避开碰到的{{tr|blocks}}。在眼睛上下 4–5 格的{{tr|Solid blocks}}和{{tr|liquids}}都会让它移动位置。
+* {{tr|The Tongue debuff}}仍然能移动具有{{tr|knockback}}免疫（如使用[[{{tr|Cobalt Shield}}]]{{tr|or its upgrades}}）的玩家。
+* 在 [[{{tr|For the worthy}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}}中，{{tr|the Wall of Flesh}}的眼睛和嘴巴要小得多，同时{{tr|The Hungry}}要大得多。在战斗期间也会持续生成具有更高{{tr|defense}}和更快[[{{tr|Burning Sphere}}]]的[[{{tr|Fire Imp}}]]。
+
+== 成就 ==
+{{achievement|name=Still Hungry}}
+{{achievement|name=It's Hard!}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies}}
+<!-- Pre-fight: -->
+* 如果尚未准备好与{{tr|Wall of Flesh}}战斗，要避免当[[{{tr|Voodoo Demon}}]]在{{tr|lava}}上时击杀它，也要避免让{{tr|the Guide}}在{{tr|lava}}中被杀死。
+**基于此原因，要避免在世界靠外的四分之一范围内击杀{{tr|Voodoo Demons}}，因为那里没有{{tr|Ruined Houses}}，因而在世界外缘有更多{{tr|lava}}。
+** 如果意外召唤了{{tr|Wall of Flesh}}，玩家可以退出并重新进入{{tr|world}}来安全地使其消失。注意如此做也会移除掉落的{{tr|items}}并将玩家传送回其[[{{tr|spawn point}}]]。如果玩家想要和{{tr|Wall of Flesh}}战斗，注意它在战斗开始时很缓慢，使用增加{{tr|speed}}的{{tr|item}}可以轻松甩开它，例如[[{{tr|Hermes Boots}}]]{{tr|and its upgrades}}。
+* 如果最近刚召唤了{{tr|Wall of Flesh}}或者{{tr|the Guide}}最近被其它方式杀死过，在再次尝试召唤{{tr|the Wall of Flesh}}之前要确保{{tr|the Guide}}已经重生。[[{{tr|housing menu}}]]以及[[{{tr|Minimap}}|{{tr|map}}]]都可以用来快速检查{{tr|world}}中是否有{{tr|Guide}}。
+* 如果打算刷{{tr|the Wall of Flesh}}，可以考虑在{{tr|the underworld}}中{{tr|lava}}上方建一个地板上有[[{{tr|Actuators}}]]的{{tr|house}}，并连接一个[[{{tr|Teleporter}}]]以供快速旅行。[[{{tr|Demon Conch}}]]也可以用于传送到{{tr|Underworld}}。
+** 一旦{{tr|the Guide}}进入{{tr|the housing}}，激活{{tr|the Actuators}}然后迅速取消激活。这样，{{tr|the Guide}}就能在同一个{{tr|house}}内重生并可以继续刷。
+
+<!-- Gear preparation: -->
+* 增强机动性的物品，比如[[{{tr|Gravitation Potion}}]]、[[{{tr|Rocket Boots}}]]或它们的升级物之一、以及各种[[{{tr|Hooks}}]]，可以让穿越{{tr|The Underworld}}更容易，另外，诸如[[{{tr|Honeyed Goggles}}]]之类的{{tr|flying mounts}}也有助于飞越{{tr|lava pool}}，并让搭配[[{{tr|Builder Potion}}]]或[[{{tr|Brick Layer}}]]{{tr|accessory}}建造{{tr|Wall of Flash}}战斗场地时更加简单。同样，像[[{{tr|Obsidian Skin Potion}}]]、[[{{tr|Lava Charm}}]]、[[{{tr|Lava Waders}}]]、[[{{tr|Terraspark Boots}}]]、[[{{tr|Superheated Blood}}]]（或效用略少的[[{{tr|Obsidian Rose}}]]）这样的{{tr|items}}可以减轻{{tr|the underworld}}中众多的{{tr|lava}}池和其他环境危险的威胁。
+** 同时使用[[{{tr|Magiluminescence}}]]和[[{{tr|Lightning Boots}}]]可将玩家的最高速度提升至 {{mph|41}}，足以在{{tr|Classic Mode}}一直甩开{{tr|Wall of Flesh}}。也可以用[[{{tr|Golfer}}]] {{tr|NPC}} 处购买的[[{{tr|Golf Cart Keys}}|{{tr|Golf Cart}}]]{{tr|mount}}以使用更多的伤害性和生存性{{tr|accessories}}。 
+* [[{{tr|Beenade}}]]和[[{{tr|Molotov Cocktail}}]]是对抗{{tr|Wall of Flesh}}的高效[[{{tr|consumable ranged weapons}}]]，尤其是在[[{{tr|Expert Mode}}]]中，但在更高{{tr|difficulties}}下效果较差。
+* 首次与{{tr|Wall of Flesh}}战斗一般不建议用[[{{tr|Melee weapons}}]]，因为这类{{tr|weapon}}的近距离攻击会导致相当大程度的{{tr|contact damage}}。某些有更远距离的{{tr|melee weapons}}，比如[[{{tr|Dark Lance}}]]或[[{{tr|yoyo}}]]，可能会有用。
+** [[{{tr|Night's Edge}}]]是应对{{tr|Wall of Flesh}}的有效近距离{{tr|weapon}}之一，因为其额外的{{tr|projectiles}}能够击退周围的{{tr|The Hungry}}，同时还能对 {{tr|boss}} 造成伤害。 
+* 能造成[[{{tr|On Fire!}}]]的装备对于{{tr|the Hungry}}很有效。
+
+<!-- Terrain preparation: -->
+* 一种有效且常用的地形准备工作是建造一座长桥（在{{tr|Classic Mode}}中至少 500 格，在{{tr|Expert or Master}}中还需更长）。由于[[{{tr|Wood Platform}}]]和[[{{tr|Hay}}]]十分丰富，它们是很合适的材料。桥上的[[{{tr|Ruined House}}]]和{{tr|ash}}堆应当清理掉，以避免在战斗中被它们卡住。
+* 用[[防爆{{tr|tiles}}]]（比如[[{{tr|Dungeon Brick}}]]）建桥并使用[[{{tr|Dynamite}}]]会极其高效，只要玩家能掐好投掷时机。
+** 使用可受[[{{tr|biome spread}}]]影响的{{tr|tiles}}建桥有助于在击败{{tr|Wall of Flesh}}后立即开始刷[[{{tr|souls}}]]。
+** 对于[[{{tr|Ranged weapons}}|远程职业]]，起伏的平台有助于躲避 {{tr|the boss}} 的{{tr|lasers}}。从一处顶部（或略后一点）朝{{tr|the Wall of Flesh}}射击，一旦它靠近就移动到下一处顶部。
+** {{tr|Wall of Flesh}}总是试图保持在至少 2 格厚的地面之上，使用这一厚度的桥可以让两只眼睛都保持待在桥上方。
+** 在桥上添加[[{{tr|Minecart Track}}]]并在战斗期间骑乘[[{{tr|Minecart}}]]可让玩家保持在 {{tr|boss}} 前方，尤其是在它可达到很高速度的{{tr|Expert Mode}}中。
+
+<!-- During the fight: -->
+* 在大幅伤害{{tr|the Wall of Flesh}}本体之前先集中精力于{{tr|The Hungry}}，{{tr|The Hungry}}的伤害和{{tr|defense}}都会随着本体承受伤害和增强，因此如果留到后面它们就会变得更难击杀。
+* 攻击眼睛造成的伤害最大，因为它们的{{tr|defense}}最低。
+
+== 花絮 ==
+* {{lore|{{tr|the Wall of Flesh}}是世界的守护者。一旦它被打败，世界自身会寻找新的守护者取而代之，{{tr|Hallow}}就被释放出来作为临时守护者。}}
+* {{tr|The Wall of Flesh}}是受日本角色扮演游戏系列{{维基百科|b=y|Final Fantasy|最终幻想}}中的 [https://finalfantasy.fandom.com/wiki/Demon_Wall_(enemy) 恶魔墙（Demon Wall）]所启发。<ref>{{forums thread|terrarias-8th-anniversary-ask-redigit-and-cenx.79731/page-7#post-1765746|Terraria's 8th Anniversary - Ask Redigit and Cenx!}} {{small||{{date|2019|05|20}}}}</ref>
+* {{tr|The Hungry}}是唯一不免疫[[{{tr|On Fire!}}]][[{{tr|debuff}}]]的[[{{tr|Underworld}}]][[{{tr|enemy}}]]。
+* 《[[{{tr|Terraria}}]]》的首席开发者 [[{{tr|Redigit}}]] 在官方{{tr|Terraria}} Discord 确认了[[{{tr|Guide}}]]就是{{tr|the Wall of Flesh}}。<ref>[https://discord.com/channels/251072485095636994/699332402887000064/709622948683710484 #journeys-end-chat 中 Red 的消息]（[https://i.imgur.com/fjelKj6.png 图片链接]）</ref>
+** 这一确认和{{tr|Wall of Flesh}}在一条加载屏幕[[{{tr|tip}}]]中被指代为男性（“他”）的事实相一致。
+** 不过，[[{{tr|Steam Trading Cards}}]]甚至是{{tr|Guide}}自己都说他只是{{tr|Wall of Flesh}}的祭品。此外，击败{{tr|Wall of Flesh}}后{{tr|Guide}}能重生。
+* {{tr|The Wall of Flesh}}是仅有的两个在{{tr|Expert mode}}中拥有超过 10,000 {{tr|HP}}的{{tr|pre-Hardmode boss}}之一，另一个是[[{{tr|Deerclops}}]]。
+** 虽然[[{{tr|Skeletron}}]]和[[{{tr|Eater of Worlds}}]]具有更高{{tr|health}}，它们不是单体{{tr|enemies}}。
+* {{tr|The Wall of Flesh}}是四个在召唤时不会发出通常的{{sound|[[{{tr|Media:Roar_0.wav}}|咆哮声]]|Roar_0.wav|nofallback=y}}的 {{tr|bosses}} 之一，其他的为[[{{tr|Lunatic Cultist}}]]、[[{{tr|the Queen Bee}}]]、和[[{{tr|the Empress of Light}}]]。
+* {{tr|The Wall of Flesh}}通常被简称为“肉山”。{{note|small=y|paren=y|译注：英文社区中通常将 Wall of Flesh 简写为 ''WoF''。}}
+* 战利品的方框总是会在{{tr|the Wall of Flesh}}的嘴巴处生成，方框的大小也和嘴巴的大小相关联。因此，如果嘴巴的大小改变（例如使用了外部[[{{tr|mods}}]]或 [[{{tr|For the worthy}}]] {{tr|seed}}），方框的大小也会跟着变化。
+* {{tr|The Wall of Flesh}}是唯一一个在[[{{tr|Master Mode}}]]中掉落[[{{tr|mount}}]]{{tr|summoning item}}的 {{tr|boss}}。所有其他{{tr|Master Mode}}独有的{{tr|mount-summoning items}}均掉落自[[{{tr|mini-boss}}]]。
+* 眼睛和嘴后面连接的血管和[[{{tr|Eye of Cthulhu}}]]身后拖着的血管相似。
+* 在{{tr|pre-Hardmode}}世界中，{{tr|The Wall of Flesh}}仅能被击杀一次，因为在后续的战斗中世界已经进入了{{tr|Hardmode}}。
+* {{tr|The Wall of Flesh}}是两个需要某个{{tr|town}} [[{{tr|NPC}}]] 存活才能召唤的 {{tr|boss}} 之一，另一个是{{tr|Skeletron}}。
+* 在[[{{tr|Journey Mode}}]]中，如果激活了[[{{tr|Godmode}}]]，在与{{tr|Wall of Flesh}}战斗期间用[[{{tr|Magic Mirrors}}]]或类似方式将玩家传送走并不会杀死玩家，而是会被{{tr|The Tongue debuff}}一路拖回{{tr|the Underworld}}。
+* [[{{tr|Steam Trading Cards|link=y}}#{{tr|Trading Cards}}|{{tr|Guide}}的 {{tr|Steam Trading Card}}]]中将{{tr|Wall of Flesh}}描述为“the god of eternal nightmares”（永恒的梦魇之主）。
+{{bestiary|Wall of Flesh|The Hungry}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|The Hungry}}不再在{{tr|Wall of Flesh health}}低于 25% 时获得第三次属性加成了。它们现在只会使用{{tr|Wall of Flesh health}}低于 50% 时获得的第二次属性加成，直到战斗结束。
+** {{tr|The Tongue}}{{tr|debuff}}的拉扯速度现在会和 {{tr|boss}} 在{{tr|Expert}}/{{tr|Master Mode}}下的速度匹配了，以防止{{tr|Wall of Flesh}}在战斗末尾时移动速度快于拉扯玩家的速度。}}
+{{history|Desktop 1.4.3.3|在[[{{tr|Classic Mode}}]]中被打败时，{{tr|The Wall of Flesh}}总是会掉落 1 件{{tr|weapon}}和 1 个{{tr|emblem}}。}}
+{{history|Desktop 1.4.2|修复了它可能会掉到世界下边缘之外的问题。}}
+{{history|Desktop 1.4.1.2|不再免疫[[{{tr|Poisoned}}]]。}}
+{{history|Desktop 1.4.1|现在{{tr|Wall of Flesh}}当附近所有玩家全部死亡或附近没有玩家时，会让屏幕渐变为黑色并且消失。}}
+{{history|Desktop 1.4.0.5|修复一个 {{tr|NPC}} 平滑处理方面的问题。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Wall of Flesh Relic}}]]，{{tr|Master Mode}}独有的掉落，作为类似[[{{tr|trophy}}]]的物品。
+** 添加了[[{{tr|Goat Skull}}]]，{{tr|Master Mode}}独有的掉落，会召唤{{tr|goat mount}}。
+** 现在能掉落[[{{tr|Firecracker}}]]{{tr|whip}}。
+** 现在能掉落[[{{tr|Badger's Hat}}]]。
+** 现在可以通过让{{tr|the Guide}}在{{tr|the Underworld}}中在接触{{tr|lava}}的情况下死亡来召唤。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落[[{{tr|Summoner Emblem}}]]。
+** 如果{{tr|world}}生成为带有[[{{tr|The Crimson}}]]，掉落物现在会被包裹在[[{{tr|Crimtane Brick}}]]中。}}
+{{history|Desktop 1.2.3|现在有几率掉落[[{{tr|Wall of Flesh Mask}}]]。}}
+{{history|Desktop 1.2|现在有几率掉落[[{{tr|Wall of Flesh Trophy}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Wall of Flesh}}

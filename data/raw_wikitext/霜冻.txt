@@ -1,0 +1,64 @@
+{{buff infobox
+| auto = 44
+| effects = -8 {{eicons|1.4.1|small=y}} / -6 {{eicons|1.4.1|invert=y|small=y}} {{tr|health}}<small>/秒（对玩家）</small><br/>-8 {{tr|health}}<small>/秒（对 NPC）</small><br/>停止{{tr|health regeneration}}
+}}
+
+'''{{tr|Frostburn}}'''是一个[[{{tr|debuff}}]]，它会阻止{{tr|health regeneration}}，还会随时间造成伤害。当对玩家造成时，玩家每秒损失{{eicons|1.4.1}} 8 / {{eicons|1.4.1|invert=y}} 6 点{{tr|health}}，当对非玩家的实体（[[{{tr|enemies}}]]、[[{{tr|town NPC}}]]等）造成时，他们每秒会损失 8 点生命值。如果非玩家的实体被[[{{tr|Oiled}}]]了，它们会代之以每秒受到 33 点伤害。
+
+在{{eversions|1.4.1}}中，{{tr|Frostburn debuff}}有一个更强的版本，叫做[[{{tr|Frostbite}}]]。
+
+在游戏前期到中期，此{{tr|debuff}}非常有用，因为只有 {{immunities/count}} 种{{tr|enemy}}免疫它。在{{eversions|1.4.1|invert=y|short=y}}中，没有任何{{tr|enemies}}能造成{{tr|Frostburn}}效果。
+
+== 原因 ==
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+|-
+{{debuff source|Wand of Frosting}}
+|-
+{{debuff source|Frostburn Arrow}}
+|-
+{{debuff source|Ice Boomerang}}
+|-
+| {{item|mode=table|Frost armor|note=（{{tr|Ranged or melee attack}}）}}
+| 5–14 {{tr|seconds}}
+| 100% {{eicons|1.4.1|invert=y|small=y}}
+|-
+| {{item|mode=table|Flower of Frost}}
+| 5–14 {{tr|seconds}}
+| 50% {{eicons|1.4.4|invert=y|small=y}}
+|}
+
+=== 来自{{tr|enemy}} ===
+{| class="terraria"
+! 来源
+! 持续时间
+! 几率
+|-
+| {{item|Ice Elemental|note2=（{{tr|Frost Blast}}）}}
+| 6 / {{expert|12}} / {{master|15}} 秒
+| {{chance|1/3}} {{eicons|1.4.1}}
+|}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities|{{tr2e|{{PAGENAME}}}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|大多数能够造成{{tr|Frostburn}}的[[{{tr|Hardmode}}]]{{tr|items}}改为造成[[{{tr|Frostbite}}]]。}}
+{{history|Desktop 1.4.1|受此效果影响的玩家每秒损失的{{tr|health}}由 6 点提升至 8 点。}}
+{{history|Desktop 1.2.3.1|修复了在 PVP 模式中{{tr|Flower of Frost}}无法造成{{tr|frostburn}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|伤害加倍，但持续时间减半。装备[[{{tr|Frost Armor}}]]时不再会使[[{{tr|Spiky Ball Trap}}]]造成{{tr|Frostburn}}{{tr|debuffs}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.2.3 的更改引入。}}
+{{history|Mobile 1.3.0.7|不再造成基于百分比的伤害。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Frostburn}}

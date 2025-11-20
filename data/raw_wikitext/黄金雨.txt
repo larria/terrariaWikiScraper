@@ -1,0 +1,68 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1336
+| debuff = Ichor / 10 /100%
+| listcat = magic weapons / spell books
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Golden Shower (demo).gif|frame|right|{{tr|Golden Shower}}攻击[[{{tr|Target Dummies}}]]。]]
+
+'''{{tr|Golden Shower}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|spell book}}]]，可连续快速地发射弧形{{tr|golden ichor streams}}。每道{{tr|ichor stream}}最多可击中 5 个目标。{{tr|ichor stream}}可施加 10 {{tr|second}}[[{{tr|Ichor (debuff)}}|{{tr|Ichor debuff}}]]（在[[{{tr|PvP}}]]中为 15 {{tr|seconds}}），这可增加 15 点[[{{tr|armor penetration}}]]。
+
+{{tr|The Golden Shower}}是[[{{tr|the Corruption}}]]的[[{{tr|Cursed Flames|link=y}}|{{tr|Cursed Flames}}]]和[[{{tr|the Hallow}}]]的[[{{tr|Crystal Storm}}]]的[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|counterpart}}，所有这些都需要[[{{tr|Spell Tome}}]]和独有于其{{tr|underground biome counterparts}}的材料以制作。
+	
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Golden Shower|expectedrows=1}}
+
+== 备注 ==
+* 在内部，{{tr|the Golden Shower}}具有 {{iteminfo|Golden Shower|useTime}} 的 <code>[[useTime]]</code> 和 {{iteminfo|Golden Shower|useAnimation}} 的 <code>[[useAnimation]]</code> ，使其每按下一次 {{key|use}} 键可发射 {{#expr:{{iteminfo|Golden Shower|useAnimation}}/{{iteminfo|Golden Shower|useTime}}}} 道{{tr|ichor streams}}。
+* {{tr|The Golden Shower}}击中时造成 10 {{tr|ticks}}{{tick}} [[{{tr|global invincibility frame}}]]，这意味着相邻的{{tr|ichor streams}}通常不能击中同一目标。
+** 然而，因为其仅能穿透 4 个目标，所以前一道{{tr|ichor stream}}不会对第五个目标造成{{tr|invincibility}}，这使得第五个目标可被两道{{tr|ichor stream}}分别击中一次。
+* [[{{tr|Expert Mode}}]]下，{{tr|Golden Shower}}对[[{{tr|The Destroyer}}]]及其[[{{tr|Probe}}]]仅造成 75% {{tr|damage}}。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* {{tr|The Golden Shower}}的{{tr|fast speed}}和穿透能力使其成为与大群{{tr|enemies}}战斗的好帮手（例如[[{{tr|Events}}]]期间）。
+* 其降低防御的效果使其在对抗 [[{{tr|boss}}]] 时很有效，玩家可以用其攻击之后再装备更强的武器来造成更高伤害。或者，也可以用[[{{tr|Flask of Ichor}}]]、[[{{tr|Ichor Bullet}}]]、[[{{tr|Ichor Arrow}}]]或[[{{tr|Bladetongue}}]]，但{{tr|the Golden Shower}}和{{tr|Bladetongue}}依然有不会被消耗掉的优势。
+** 但是，制作{{tr|the Golden Shower}}需要先刷 15 个{{tr|Souls of Night}}，而可制作的替代品只需要一些{{tr|Ichor}}和更容易获得的资源。
+* 它是获得[[{{tr|Magical Harp}}]]之前解决[[{{tr|worm enemies}}]]的最佳{{tr|magic weapons}}之一。
+* {{tr|Ichor debuff}}能大幅提高每秒造成多次打击的武器的{{DPS}}，如[[{{tr|Crystal Storm}}]]、[[{{tr|Cursed Flames|link=y}}|{{tr|Cursed Flames}}]]、和[[{{tr|Magnet Sphere}}]]。
+* 被其水流击中的{{tr|enemies}}即使在完全黑暗中也会发光，亮度和[[{{tr|Hunter Potion}}]]的效果相当。
+* {{tr|Golden Shower}}是极少数能在{{tr|Hardmode}}（或整个游戏进程）前期获得，同时在游戏末期依然有价值的{{tr|weapons}}。尽管到那时候其伤害会不值一提，但其{{tr|debuff}}可以用于提升{{DPS}}。
+* 因为它很容易在{{tr|Hardmode}}的前期就获得，在难度渐增的后期又很有用，因此在{{tr|Crimson}}世界中在打败[[{{tr|Wall of Flesh}}]]后应当马上优先获得它。
+* 虽然[[{{tr|Destroyer}}]]免疫{{tr|Ichor}}{{tr|debuff}}，但是{{tr|the Golden Shower}}对抗它依然很有效，因为能一次伤害多个体节。
+** 不过，[[{{tr|Expert Mode}}]]下{{tr|Golden Shower}}只能对其造成 75% {{tr|base damage}}，这会导致它不那么有效。
+* 如果和[[{{tr|Betsy's Wrath}}]]一起使用，玩家可以从{{tr|enemy}}身上减去最多 55 {{tr|defense}}，从而造成更高伤害。
+
+== 花絮 ==
+* {{tr|The Golden Shower}}的{{tr|ichor}}流的外观和由[[{{tr|Ichor Sticker}}]]发射的{{tr|ichor}}流的外观完全相同。
+* 在{{维基百科|Greek mythology|希腊神话}}中，{{维基百科|Zeus|t=宙斯}}以“{{tr|Golden Shower}}”（golden showers）的形式接近{{维基百科|Danaë|t=达那厄}}，两者结合后达那厄就生下了传奇英雄{{维基百科|Perseus|t=珀尔修斯}}。<!-- Before removing any trivia, please refer to the Discussion/Talk page -- Ferretwings, wiki admin -->
+* “Golden Shower”（{{tr|Golden Shower}}）是描述{{维基百科|urolagnia|t=恋尿癖}}的俚语，这是一种恋物性癖。在''[[{{tr|Terraria}}]]''中这个名称可能指的是其攻击看起来像一股尿流。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 21 提升至 30。}}
+{{history|Desktop 1.4.2.3|现在会掉落自[[{{tr|Jungle Mimic}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在制作时要求的{{tr|Ichor}}由 30 个降至 20 个。}}
+{{history|Desktop 1.2.3|
+** 伤害由 28 降低至 21。
+** 现在仅能穿透 4 次，而不是无限次数。
+** 施加给{{tr|enemy}}的{{tr|Ichor debuff}}的{{tr|duration}}从 15 {{tr|second}}降低至 10 {{tr|second}}。在{{tr|pvp}}中施加给其他{{tr|player}}的此{{tr|debuff}}的{{tr|duration}}仍不变。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spell books}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Golden Shower}}

@@ -1,0 +1,268 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper|
+{{npc infobox
+| auto = 588|boxwidth=18em
+| type = NPC
+| environment = Valid house
+| imageother = Map Icon Golfer.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+{{npc infobox
+| auto = 589|boxwidth=18em
+| image = Golfer Rescue.png
+| type = NPC
+| environment = Underground Desert
+}}
+}}
+
+'''{{tr|Golfer}}'''是一个 [[{{tr|NPC}}]]商贩，出售和[[{{tr|golfing}}]]相关的物品。随着玩家打{{tr|golf}}的次数增多，会解锁更多物品，包括[[{{tr|Golf Clubs}}]]、[[{{tr|Golf trophies}}]]、和[[{{tr|paintings}}]]。他初始生成于[[{{tr|Underground Desert}}]]中，保持静止，与在此状态下的他对话会“解救”他。如果静止的{{tr|Golfer}}被杀死，他之后仍能重生；如果{{tr|Golfer NPC}} 被杀死，只要有空余[[{{tr|house}}]]，他会在一段时间后再次入住。
+
+{{tr|The Golfer}}用他的{{tr|golf balls}}攻击附近的[[{{tr|enemies}}]]来自卫。
+
+{{Lifeform Analyzer note|他}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Worn Golf Club (Iron)}}
+|{{shop row|Worn Golf Club (Driver)}}
+|{{shop row|Worn Golf Club (Wedge)}}
+|{{shop row|Worn Golf Club (Putter)}}
+|{{shop row|White Pin Flag}}
+|{{shop row|Red Pin Flag}}
+|{{shop row|Green Pin Flag}}
+|{{shop row|Blue Pin Flag}}
+|{{shop row|Yellow Pin Flag}}
+|{{shop row|Purple Pin Flag}}
+|{{shop row|Golf Tee}}
+|{{shop row|Golf Ball}}
+|{{shop row|Golf Whistle}}
+|{{shop row|Golf Cup}}
+|{{shop row|Arrow Sign}}
+|{{shop row|Painted Arrow Sign}}
+|{{shop row|Country Club Cap}}
+|{{shop row|Country Club Visor}}
+|{{shop row|Country Club Vest}}
+|{{shop row|Country Club Trousers}}
+|{{shop row|Lawn Mower}}
+|{{shop row|Golf Cart Keys|{{tr|Golf score}}超过 2000、[[{{tr|Skeletron}}]]被打败后}}
+|{{shop row|The Rolling Greens|{{tr|Golf score}}超过 2000、在以下{{tr|moon phases}}期间：{{moons|1|2}}}}
+|{{shop row|Study of a Ball at Rest|{{tr|Golf score}}超过 2000、在以下{{tr|moon phases}}期间：{{moons|3|4}}}}
+|{{shop row|Fore!|{{tr|Golf score}}超过 2000、在以下{{tr|moon phases}}期间：{{moons|5|6}}}}
+|{{shop row|The Duplicity of Reflections|{{tr|Golf score}}超过 2000、在以下{{tr|moon phases}}期间：{{moons|7|8}}}}
+|{{shop row|Golf Club (Iron)|{{tr|Golf score}}超过 500}}
+|{{shop row|Golf Club (Driver)|{{tr|Golf score}}超过 500}}
+|{{shop row|Golf Club (Wedge)|{{tr|Golf score}}超过 500}}
+|{{shop row|Golf Club (Putter)|{{tr|Golf score}}超过 500}}
+|{{shop row|Golf Chest|{{tr|Golf score}}超过 500}}
+|{{shop row|Bronze Golf Trophy|{{tr|Golf score}}超过 500}}
+|{{shop row|Fancy Golf Club (Iron)|{{tr|Golf score}}超过 1000}}
+|{{shop row|Fancy Golf Club (Driver)|{{tr|Golf score}}超过 1000}}
+|{{shop row|Fancy Golf Club (Wedge)|{{tr|Golf score}}超过 1000}}
+|{{shop row|Fancy Golf Club (Putter)|{{tr|Golf score}}超过 1000}}
+|{{shop row|Silver Golf Trophy|{{tr|Golf score}}超过 1000}}
+|{{shop row|Premium Golf Club (Iron)|{{tr|Golf score}}超过 2000}}
+|{{shop row|Premium Golf Club (Driver)|{{tr|Golf score}}超过 2000}}
+|{{shop row|Premium Golf Club (Wedge)|{{tr|Golf score}}超过 2000}}
+|{{shop row|Premium Golf Club (Putter)|{{tr|Golf score}}超过 2000}}
+|{{shop row|Gold Golf Trophy|{{tr|Golf score}}超过 2000}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Golfer (Shimmered).png]] [[File:Map Icon Golfer (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Golfer}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Golfer}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|GolferChatter.Chatter_1}}”
+* “{{gameText|GolferChatter.Chatter_2}}”
+* “{{gameText|GolferChatter.Chatter_3}}”
+* “{{gameText|GolferChatter.Chatter_4}}”
+* “{{gameText|GolferChatter.Chatter_5}}”
+* “{{gameText|GolferChatter.Chatter_7}}”
+* “{{gameText|GolferChatter.Chatter_8}}”
+* “{{gameText|GolferChatter.Chatter_9}}”
+* “{{gameText|GolferChatter.Chatter_10}}”
+* “{{gameText|GolferChatter.Chatter_13}}”
+* “{{gameText|GolferChatter.Chatter_14}}”
+
+'''首次见面时：'''
+* "{{gameText|GolferSpecialText.FirstMeeting1}}"
+* "{{gameText|GolferSpecialText.FirstMeeting2}}"
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|GolferChatter.Chatter_11|x_Armsdealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|GolferChatter.Chatter_12|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''[[{{tr|Angler}}]]存在时：'''
+* “{{gameText|GolferChatter.Chatter_6|x_Angler=&lt;{{tr|Angler}}的名字&gt;}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|GolferChatter.Chatter_15}}”
+* “{{gameText|GolferChatter.Chatter_16}}”
+
+'''[[{{tr|Party}}]]期间：'''
+* “{{gameText|GolferSpecialText.Party_1}}”
+* “{{gameText|GolferSpecialText.Party_2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|GolferChatter.Chatter_17}}”
+* “{{gameText|GolferSpecialText.Rain1}}”
+* “{{gameText|GolferSpecialText.Rain2}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|GolferSpecialText.Storm1|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+* “{{gameText|GolferSpecialText.Storm2}}”
+
+'''[[{{tr|Windy Day}}]]期间：'''
+* “{{gameText|GolferSpecialText.Windy1}}”
+* “{{gameText|GolferSpecialText.Windy2}}”
+
+'''在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|GolferSpecialText.Graveyard1}}”
+* “{{gameText|GolferSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Golfer.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Golfer.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Golfer.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Golfer.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Golfer.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Golfer.HateCrowded}}”
+
+'''当在[[{{tr|Forest}}]]中时：'''
+* “{{gameText|TownNPCMood_Golfer.LikeBiome|x_BiomeName={{tr|the Forest}}}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_Golfer.DislikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Golfer.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''当在[[{{tr|Angler}}]]附近时：'''
+* “{{gameText|TownNPCMood_Golfer.LoveNPC|x_NPCName=&lt;{{tr|Angler}}的名字&gt;}}”
+
+'''靠近[[{{tr|Painter}}]]时：'''
+* “{{gameText|TownNPCMood_Golfer.LikeNPC|x_NPCName=&lt;{{tr|Painter}}的名字&gt;}}”
+
+'''靠近[[{{tr|Zoologist}}]]时：'''
+* “{{gameText|TownNPCMood_Golfer.LikeNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Pirate}}]]时：'''
+* “{{gameText|TownNPCMood_Golfer.DislikeNPC|x_NPCName=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''靠近[[{{tr|Merchant}}]]时：'''
+* “{{gameText|TownNPCMood_Golfer.HateNPC|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Golfer.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+=== {{tr|Golf score}}话语 ===
+{{collapse top}}
+'''玩家的{{tr|golf score}}低于 500 时：'''
+* “{{gameText|GolferQuestsChatterBeginner.1}}”
+* “{{gameText|GolferQuestsChatterBeginner.2}}”
+* “{{gameText|GolferQuestsChatterBeginner.3}}”
+
+'''玩家的{{tr|golf score}}在 500 到 1000 之间时：'''
+* “{{gameText|GolferQuestsChatterApprentice.1}}”
+* “{{gameText|GolferQuestsChatterApprentice.2}}”
+* “{{gameText|GolferQuestsChatterApprentice.3}}”
+
+'''玩家的{{tr|golf score}}在 1000 到 2000 之间时：'''
+* "{{gameText|GolferQuestsChatterJourneyman.1}}"
+* “{{gameText|GolferQuestsChatterJourneyman.2}}”
+* “{{gameText|GolferQuestsChatterJourneyman.3}}”
+
+'''玩家的{{tr|golf score}}在 2000 以上时：'''
+* “{{gameText|GolferQuestsChatterMaster.1}}”
+* “{{gameText|GolferQuestsChatterMaster.2}}”
+* “{{gameText|GolferQuestsChatterMaster.3}}”
+{{collapse bottom}}
+
+== 备注 ==
+* 在[[{{tr|multiplayer}}]]中，{{tr|the Golfer}}商店物品的解锁判断是对每个玩家单独进行的，所以每个人都必须去打{{tr|golf}}才能购买所有物品。
+
+== 小贴士 ==
+* 如果洞穴系统不合适，在[[{{tr|Underground Desert}}]]中寻找{{tr|the Golfer}}会有些困难，哪怕是带着{{tr|Lifeform Analyzer}}。[[{{tr|Hunter Potion}}]]有助于找到他。
+* 由于在[[{{tr|Hardmode}}]]中{{tr|the Underground Desert}}生成的{{tr|enemy}}要困难得多，因此在进入{{tr|Hardmode}}之前去寻找{{tr|Golfer}}危险会比较小。这也是早期获得[[{{tr|Ocean Pylon}}]]的数种方法之一，因为他喜爱[[{{tr|Angler}}]]。
+* 在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中，营救{{tr|The Golfer}}可能会更加困难，所以如果听到受伤的音效或者看到伤害数字显示，应该尽快赶往他所处位置。
+* 可以通过手工创建{{tr|Underground Desert}}的方式使得{{tr|Golfer}}在生成于 [[1.3.0.1]] 之前的世界中能够生成。只需要建造一些能让{{tr|enemies}}生成的{{tr|blocks}}，然后从这些{{tr|blocks}}背后开始向上放置 50 格高的[[{{tr|Sandstone Wall}}]]。然后这些墙必须转换为相应的[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、或[[{{tr|Hallow}}]]版本（例如用[[{{tr|Clentaminator}}]]；并不要求再将其转回纯净版本）。这会让这些{{tr|background walls}}变成“自然生成”的墙，这就能让{{tr|biome}}特有的{{tr|enemies}}生成，包括{{tr|the Golfer}}。
+* 通过在[[{{tr|hellevator}}]]的底部放上[[{{tr|Golf Cup}}]]，顶部放上[[{{tr|Cobweb}}]]的方式能快速获得 2000 分的{{tr|A golf score}}。
+
+== 花絮 ==
+* {{tr|Golfer}}的名字有好几个都指向了虚构和现实中的职业{{tr|golfers}}：
+** Lion Pines – {{wikipedia|Tiger Woods|Tiger Woods（老虎伍兹）}}
+** Arnie Palmfrond – {{wikipedia|Arnold Palmer|Arnold Palmer}}
+** Jake Nicklelisp – {{wikipedia|Jack Nicklaus}}
+** Gunner McLovin – {{wikipedia|Shooter McGavin}}
+** Billy Bones – {{wikipedia|Bobby Jones (golfer)|Bobby Jones}}
+* 名字 Harry Madison 参考的是 {{Wikipedia|Happy Madison Productions}}，这是一家美国电影公司，它的名字取自电影《''{{wikipedia|Happy Gilmore|Happy Gilmore（高尔夫球也疯狂）}}''》（这是部关于{{tr|golfer}}的喜剧片）和《''{{wikipedia|Billy Madison|Billy Madison（阿呆闯学堂）}}''》。
+* 名字 Jim Mulligan 参考的是 {{wikipedia|Mulligan (games)|mulligan}}，这个词指的是无惩罚地在上一杆的击球点重新打一杆。
+* {{tr|The Golfer}}的话语 “{{gameText|GolferChatter.Chatter_2}}”参考的是 1996 年的美国体育喜剧电影《''{{wikipedia|Happy Gilmore|Happy Gilmore（高尔夫球也疯狂）}}''》。
+* 他的话语 “{{gameText|GolferChatter.Chatter_14}}” 参考的是 {{wikipedia|TLC}} 乐队的歌《{{wikipedia|Waterfalls (TLC song)|Waterfalls}}》。
+* {{tr|Golfer}}的话语大都和{{tr|Golf}}的规则与术语有关。
+** 其话语：“{{gameText|GolferChatter.Chatter_6|x_Angler=&lt;{{tr|Angler}}的名字&gt;}}”是指球手一般会根据情况给予球童小费，有时小费会多到超过球童本身的收入。
+** 其话语：“{{gameText|GolferChatter.Chatter_8}}”是指打{{tr|Golf}}时需要根据地形和情况选择球杆，木杆开球、铁杆打球、挖起杆切球、最后用推杆推球。每种球杆又有不同的型号，其中铁杆有 1–9 号（1L–9L），击打距离按排列从高到低。
+** 其话语：“{{gameText|GolferChatter.Chatter_9}}”是因为球手应当尽可能少的挥杆将球打入球洞。
+** 其话语：“{{gameText|GolferQuestsChatterBeginner.3}}”提到的鸟儿和鸭子都是{{tr|Golf}}术语。鸟儿（birdie）指的是低于标准杆 1 杆的分数；鸭子（Duck）是指鸭钩（Duck Hook），指击球时球发射得很低，轨迹向左侧（左撇子为右侧）弯曲偏离目标。{{note|small=y|paren=y|此句的大概意思是：错失了小鸟成绩很可惜。但鸭钩改善的不错，所以别放弃！}}
+** 其话语：“{{gameText|GolferChatter.Chatter_10}}”是指维护和保养{{tr|Golf}}球场的草坪需要投入大量金钱。
+** 其话语“{{gameText|GolferChatter.Chatter_1}}”可能参考了很多{{tr|golfers}}都会因挥杆失误而短暂暴怒的情况。
+* 虽然{{tr|the Golfer}}的话语说{{tr|golf balls}}会受到风速的影响，但在''[[{{tr|Terraria}}]]''中并非如此。
+* {{tr|The Golfer}}是受到了是现实中的职业{{tr|golfer}} Tiger Woods（老虎伍兹）的一点启发，之所以引入是因为需要有一个 {{tr|NPC}} 来出售和{{tr|golf}}有关的物品。<ref>[https://www.reddit.com/r/Terraria/comments/nelbjw/terrarias_10th_anniversary_we_are_relogic_ask_us/gygrihl Terraria's 10th Anniversary: We are Re-Logic, Ask Us Anything!] {{date|date=May 17, 2021}}</ref>
+{{float file box|[[File:Golfer Rescue.png]]|{{tr|Underground Desert}}中等待救援的{{tr|Golfer}}}}
+* 他出现在{{tr|the Underground Desert}}可能是参考了打高尔夫时会困在沙坑中的事。
+** {{tr|Golf}}规则里，球手必须在球落地的地方打下一杆，因此会困在一些难以进行打球的地形中（比如接近垂直的壶状沙坑）。
+** 这也解释了为什么等待救援的{{tr|Golfer}}在打球。这在{{tr|Guide}}的建议中也有所提示：“{{gameText|GuideHelpTextSpecific.Help_1109}}”
+* {{tr|The Golfer}}首次亮相是在{{date|date=October 1, 2018}} Re-Logic 在 YouTube 上发布的[https://www.youtube.com/watch?v=wTKF3JWPS_E 城镇夜晚预告片]中 。
+* 一旦玩家的{{tr|golf score}}达到 2000，他就会同时出售总计 39 件物品。如果他足够快乐，还会出售一个[[{{tr|pylon}}]]，将他的销售货品凑到整整 40 件。他和[[{{tr|Tavernkeep}}]]并列为出售物品最多的 {{tr|NPC}}。
+** 但是，在任意时刻，没有某些先决条件的情况下，出售物品最多的 {{tr|NPC}} 是[[{{tr|Santa Claus}}]]，有 39 个{{tr|items}}。
+** 当他的商店有 39 件或更多物品时，卖给{{tr|Golfer}}的物品就无法再买回。
+* 根据 [[{{tr|Redigit}}]] 的说法，{{tr|the Golfer}}是[[{{tr|Zoologist}}]]的哥哥，他的一些话语提到了这点。{{discord ref|postedby=Redigit|channel=#journeys-end-chat|link={{tr|251072485095636994/699332402887000064/712128381033906186|link=y}}|date=05/19/2020}}
+* {{tr|Golfer}}所售卖的{{item|Golf Cart Keys}}上有着与{{tr|Zoologist}}所售卖的{{item|Critter Shampoo}}和{{item|Guide To Critter Companionship}}一样的{{tr|Bunny}}。[[{{tr|Golf Cart Keys}}]]上的{{tr|Bunny}}钥匙扣很可能是{{tr|Zoologist}}赠予的。
+** 在{{tr|Golf}}规则里，{{item|Golf Cart}}只有球童{{note|small=y|paren=y|帮忙捡球、拎包和指导{{tr|Golfer}}的职业人}}才能驾驶，这可能也在暗示{{tr|Zoologist}}担任过{{tr|Golfer}}的球童。
+** {{tr|Zoologist}}的对话也暗示了她了解{{tr|Golf}}规则：“{{gameText|TownNPCMood_BestiaryGirl.LikeNPC|x_NPCName=&lt;{{tr|Golfer}}的名字&gt;}}”
+** {{tr|Zoologist}}可能因为狐狸诅咒而讨厌{{tr|water}}，不再帮忙去水障碍区捡球。其[[{{tr|Rain}}|雨天]]话语表达过这一点：“{{gameText|BestiaryGirlSpecialText.Rain2}}”因此{{tr|Golfer}}对{{tr|Angler}}的评价才会提到：“{{#explode:{{gameText|TownNPCMood_Golfer.LoveNPC|x_NPCName=&lt;{{tr|Angler}}的名字&gt;}}|。|1}}”
+* {{tr|Golfer}}知晓兽化人的存在，可能在暗示他在寻找解除{{tr|Zoologist}}诅咒的方法。
+** {{tr|Wizard}}喜爱{{tr|Golfer}}可能是引用了奇幻作品中的设定，兽化症需要{{tr|Wizard}}的魔法来解除，因此{{tr|Golfer}}时常拜访过{{tr|Wizard}}。
+* 当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Golfer}}会变形为他的狼人形态。这参考了[[{{tr|Zoologist}}]]，她是{{tr|Golfer}}的妹妹，且是狐人。
+** 虽然他和{{tr|Zoologist}}间的血缘关系可能是这一现象的来源，在她妹妹的{{tr|Bestiary entry}}中解释了她的狐人是由被诅咒的咬伤造成的。因此，这对兄妹的兽化的来源是不同的。
+**{{tr|Golfer}}的{{tr|Shimmer}}形态从形象风格判断，可能来源于亚文化中的{{wikipedia|Furry fandom|福瑞（Furry）}}，而非民俗传说中的{{wikipedia|Shapeshifting|兽化变形（Shapeshifting）}}。前者是一种''动物拟人化''的形象，后者是因某种媒介而''被变形的人类''。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Golfer}}

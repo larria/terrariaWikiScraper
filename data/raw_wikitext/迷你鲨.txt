@@ -1,0 +1,96 @@
+{{item infobox
+| auto = 98
+| listcat = guns
+| tags = vendor / vendor:Arms Dealer
+}}
+{{quotation|[[{{tr|Arms Dealer}}|{{tr|The Arms Dealer}}]]|{{gameText|LegacyDialog.66}}}}
+[[File:Minishark (demo).gif|framed|发射[[{{tr|Musket Ball}}]]的{{tr|The Minishark}}]]
+
+'''{{tr|Minishark}}'''是一把困难模式前的[[{{tr|gun}}]]，能以{{iteminfo|Minishark|buy}}的价格从[[{{tr|Arms Dealer}}]]处购买。它可以消耗任何种类的[[{{tr|bullet}}]]，可以[[自动挥舞|自动开火]]，且每发子弹都有{{chance|1/3}}的几率不消耗任何弹药。它的[[{{tr|use time}}]]是所有[[{{tr|pre-Hardmode}}]]的[[{{tr|ranged weapons}}]]中最低的。
+
+其最佳[[{{tr|modifier}}]]是'''{{tr|Agile}}'''，由于它没有任何[[{{tr|knockback}}]]因此无法得到影响{{tr|knockback}}的{{tr|modifier}}。在{{eversions|1.4.1|invert=y}}中，它还能用'''{{tr|Deadly}}'''的{{tr|modifier}}以提高{{DPS}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Minishark|expectedrows=2}}
+
+== 成就 ==
+{{achievement|name=Completely Awesome}}
+
+== 小贴士 ==
+* {{eicons|1.4.0.1}} 妙不可言的成就可以通过在商店栏买进后再直接卖回去来免费获取。
+* 将{{tr|Minishark}}与[[{{tr|Shark Tooth Necklace}}]]结合起来使用会很有用，尤其是与[[{{tr|bosses}}]]战斗时。它们高额的{{tr|defense}}可以严重降低已经很低的{{tr|Minishark}}每发子弹的{{tr|damage}}。
+** 由于大部分[[{{tr|Hardmode}}]]{{tr|enemies}}有足够的{{tr|defense}}完全抵消其{{tr|damage}}，并且比基础{{tr|enemies}}拥有更多的{{tr|health}}，因此在{{tr|Hardmode}}期间它在功能上变得毫无用处，并且被其升级版本[[{{tr|Megashark}}]]所取代。
+** 与增加{{tr|armor penetration}}类似，更高{{tr|damage}}的{{tr|bullets}}能显著地提高{{DPS}}。
+* 即使有 33.3% 的几率不消耗{{tr|ammo}}，{{tr|Minishark}}仍然可以非常快地使用完一整组的{{tr|bullets}}，特别是当其带有减少其{{tr|use time}}的{{tr|modifiers}}时。但是，通过穿着以下装备，{{tr|Minishark}}节省{{tr|ammo}}弹药的效果可以显著提高：
+: <!--
+-->{{options/set|item|wrap=y}}<!--
+-->{| class="terraria align-center" style="line-height:1.3"
+! rowspan=2 | 加成
+! colspan=2 | 不消耗{{tr|ammo}}的几率
+! rowspan=2 | 平均最终发射量<br/>每 9999 {{tr|bullets}}
+! rowspan=2 | 平均{{tr|ammo}}消耗速率<br/>{{small|（持续发射）}}
+<!-- using {{#expr:}} and {{iteminfo}} for the values of the last two columns because 1) it makes the method of calculating transparent and 2) the use time might change in a future update (-> dynamic data) -->
+|-
+! {{small|单独}} !! {{small|总计}}
+|-
+| align=left | {{na}}{{note|paren=y|{{tr|base weapon}}}} || colspan=2 | {{chance|1/3}} || {{#expr:9999/(2/3) round 1}} 发
+| <!--
+-->{{#vardefine:useTimeTicks|{{#expr:{{iteminfo|Minishark|useTime}}/(2/3) round 2}}}}<!-- use time in ticks
+-->{{#vardefine:useTimeSecs|{{#expr:{{#var:useTimeTicks}}/60 round 3}}}}<!-- use time in seconds
+
+-->1 每 {{#var:useTimeSecs}} {{tr|seconds}}{{note|block=y|small=y|（{{#var:useTimeTicks}} {{tr|tick}}{{tick}}）}}
+|-
+| align=left | {{item|Necro armor|note=（{{eicons|1.4.0.1|invert=y|small=y}}）}} 或 {{item|Fossil armor}}  || {{chance|1/5}} || {{chance|7/15}} || {{#expr:9999/(8/15) round 1}} 发
+| <!--
+-->{{#vardefine:useTimeTicks|{{#expr:{{iteminfo|Minishark|useTime}}/(8/15) round 2}}}}<!-- use time in ticks
+-->{{#vardefine:useTimeSecs|{{#expr:{{#var:useTimeTicks}}/60 round 3}}}}<!-- use time in seconds
+
+-->1 每 {{#var:useTimeSecs}} {{tr|seconds}}{{note|block=y|small=y|（{{#var:useTimeTicks}} {{tr|tick}}{{tick}}）}}
+|-
+| align=left | {{item|Ammo Box}} || {{chance|1/5}} || {{chance|43/75}} || {{#expr:9999/(32/75) round 1}} 发
+| <!--
+-->{{#vardefine:useTimeTicks|{{#expr:{{iteminfo|Minishark|useTime}}/(32/75) round 2}}}}<!-- use time in ticks
+-->{{#vardefine:useTimeSecs|{{#expr:{{#var:useTimeTicks}}/60 round 3}}}}<!-- use time in seconds
+
+-->1 每 {{#var:useTimeSecs}} {{tr|seconds}}{{note|block=y|small=y|（{{#var:useTimeTicks}} {{tr|tick}}{{tick}}）}}
+|}{{options/reset|item}}
+
+== 花絮 ==
+* 自 1980 年以来，虚构的手持{{wikipedia|Minigun|迷你炮机枪{{note|paren=y|Minigun}}}}已经普遍出现在电子游戏和电影中。在实际中，单人便携式 M134 迷你炮机枪几乎不可能作为单独的步兵武器来管理，并且对于人类来说，无论是携带还是操作它都是非常不切实际的。
+* {{tr|Minishark}}和[[{{tr|Night's Edge}}]]一样有 [[{{tr|Steam Trading Card}}]]。
+** 在 {{tr|Steam Trading Card}}上还可以看到{{tr|Minishark}}有八个枪管，其设计与{{wikipedia|Gatling gun|加特林机关枪}}类似。
+** 它在上面还有一个手把，可能是为了辅助瞄准。
+* {{tr|Minishark}}的颜色与设计可能参考了1999年的FPS第一人称射击游戏{{wikipedia|Quake III Arena|《雷神之锤Ⅲ竞技场（Quake III Arena）》}}中的[https://quake.fandom.com/wiki/Machine_Gun_%28Q3%29 机枪]。它们都是全自动多管机{{tr|guns}}，每发{{tr|bullet}}的{{tr|damage}}很低。
+* 虽然是{{tr|shark}}，但扔进水中仍会下沉。
+* [[{{tr|Clockwork Assault Rifle}}]]，{{eicons|1.4.4|invert=y}}[[{{tr|Star Cannon}}]], {{eicons|1.4.4|invert=y}}[[{{tr|Flintlock Pistol}}]] 以及 [[{{tr|Minishark}}]] 是仅有的没有[[{{tr|knockback}}]]的[[{{tr|guns}}]]。
+* {{tr|Minishark}}是几挺以水生生物命名的机枪中的第一挺，其余的是[[{{tr|Gatligator}}]]，[[{{tr|Megashark}}]]和[[{{tr|S.D.M.G.}}]]。
+* {{tr|Minishark}}被暗示是由活{{tr|shark}}制成的，有以下几个细节支持这一点：
+** {{tr|Arms Dealer}}曾说：“{{gameText|LegacyDialog.66}}”暗示其可能由活{{tr|shark}}制成。
+** 在{{tr|Arms Dealer}}的{{tr|Bestiary entry}}一段写道“……用鲨鱼制成的枪炮”。
+** {{tr|Megashark}}的制作需 5 个{{tr|Shark Fins}}。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Sprite updated.}}旧{{tr|sprite}}是 [[File:Minishark (pre-1.2).png|link=]]。}}
+{{history|Desktop 1.1|
+** 价格由 {{gc|40}} 降低至 {{gc|35}}。
+** 现在用于制作{{tr|Megashark}}}}。
+{{history|Desktop 1.0.6|添加了 33% 不消耗{{tr|ammo}}的几率。}}
+{{history|Desktop 1.0.5|
+** {{tr|Damage}}由 5 提升至 6。
+** 价格由 {{gc|50}} 降低至 {{gc|40}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-ranged = yes
+}}
+{{language info|en=Minishark}}

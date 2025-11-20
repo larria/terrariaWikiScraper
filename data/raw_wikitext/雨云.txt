@@ -1,0 +1,44 @@
+{{item infobox
+| type = Block
+| tooltip = @@@@ {{eicons|1.4.0.1|small=y}}
+| auto = 765
+| tags = plunder
+}}
+[[File:Rain Clouds (demo).gif|frame|right|放置好的{{tr|Rain Clouds}}。]]
+[[File:Cloud Blocks (demo).gif|thumb|right|行走或落于[[{{tr|Cloud}}]]、{{tr|Rain Clouds}}和[[{{tr|Snow Cloud}}]]上时它们会散发出蓬松的大颗粒。]]
+
+'''{{tr|Rain Cloud}}'''是一种[[{{tr|block}}]]，和[[{{tr|Cloud}}|{{tr|Cloud block}}]]一起出现在[[{{tr|Floating Island}}]]下。{{tr|Rain Cloud blocks}}会让其下方出现纯装饰性的雨滴，下落大约 18 格并在随后的 5 格内逐渐淡出。在{{eversions|1.4.0.1}}中，落在{{tr|Rain Clouds}}不会造成[[{{tr|fall damage}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Rain Cloud|expectedrows=1}}
+
+== 备注 ==
+* {{icon|desktop}} 在[[{{tr|Settings}}]]中将图像质量设置为低时，一个区域中只会有 25 块{{tr|rain clouds}}会产生雨水。而在中质量下有 112 块{{tr|rain clouds}}会产生雨水。另外，图像质量设置得越低，雨水就会越快开始淡出。
+* 如果用[[{{tr|Actuator}}]]将此{{tr|block}}变为非激活（未通电）状态，下雨动画会依然存在。
+* {{tr|Rain Cloud}}下方的{{tr|solid block}}会阻断雨滴下落，但被[[锤]]击过的{{tr|block}}不会。
+* 在这些{{tr|block}}四周通常会生成小水池。
+* {{eicons|1.4.4}} 如果在{{tr|Rain Cloud}}上刷[[{{tr|Echo Coating}}]]，只有{{tr|the block}}本身会受影响。降雨效果会依然可见。
+
+== 小贴士 ==
+* 下雨效果有助于定位[[{{tr|Floating Island}}]]和[[{{tr|Floating Lake}}]]。
+* {{eicons|1.4.0.1}} 可以将{{tr|Rain Clouds}}用在[[{{tr|Hellevator}}]]底部来避免死于[[{{tr|fall damage}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Rain Clouds}}现在能消除[[{{tr|fall damage}}]]。}}
+{{history|Desktop 1.3.2|现在可制作。}}
+{{history|Desktop 1.2.3|加速了{{tr|Rain Cloud}}的代码并让其更好地绘制。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|现在可制作。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|现在可制作。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Rain Cloud}}

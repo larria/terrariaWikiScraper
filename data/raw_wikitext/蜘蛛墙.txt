@@ -1,0 +1,45 @@
+{{item infobox
+| auto = 4503
+| id = 4503, 5363
+| idwall = 62 ([[{{tr|Unsafe wall}}|不安全]]) / @@@@ ([[{{tr|Safe wall}}|安全]])
+| cargo = no
+}}<!--
+隐形 infobox，用于 cargo 存储
+-->{{item infobox|view=void|auto=4503}}<!--
+-->{{item infobox|view=void|auto=5363}}
+{{distinguish|{{tr|Spider Nest Wall}}}}
+
+'''{{tr|Spider Wall}}'''是一类[[{{tr|background wall}}]]，可在[[{{tr|Spider Nest}}]]中自然生成，且被视为[[{{tr|Unsafe wall}}]]。它在被摧毁时不会掉落为物品，且只能在{{eversions|1.4.0.1|short=y}}中通过制作获得。它在被玩家放置时视为[[{{tr|safe wall}}]]。
+
+'''{{eil|nl=y|Infested Spider Wall}}'''是一件物品，可以放置[[{{tr|Unsafe wall}}|不安全]]的{{tr|Spider Wall}}。它看上去和{{tr|Spider Wall}}一样，并可通过将{{tr|Spider Wall}}丢入{{eil|Shimmer}}来获得。
+
+不安全的{{tr|Spider Walls}}的前方会随时间生成[[{{tr|Cobweb}}]]，使其成为后者的可再生来源。这些{{tr|Cobweb}}在被摧毁时只有 {{chance|1/4}} 几率产生{{tr|Cobweb item}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=LIKE %Spider Wall|expectedrows=2}}
+
+=== 用于 ===
+{{recipes|ingredient=Spider Wall|expectedrows=2}}
+
+== 备注 ==
+* {{tr|Cobweb}}无法在[[{{tr|Water}}|水下]]生长。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** 添加了{{tr|Infested Spider Wall}}。
+** {{tr|Spider Wall}}现在用于通过[[{{tr|shimmer}}]]制作{{tr|the Infested Spider Wall}}。}}
+{{history|Desktop 1.4.0.1|为{{tr|Spider Wall}}添加了可获得的物品。它现在可用[[{{tr|Cobweb}}]]在[[{{tr|Ecto Mist}}]]中的[[{{tr|Work Bench}}]]处制作。不过，它在放置时仍然是[[{{tr|safe wall}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Shimmering Exclusive Items}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Spider Wall}}

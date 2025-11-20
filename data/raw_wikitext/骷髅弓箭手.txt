@@ -1,0 +1,50 @@
+{{npc infobox
+| auto = 110
+| image = Skeleton Archer.gif
+| image2 = Skeleton Archer (old).png
+| idprojectile = 82
+| type = Undead Enemy
+| environment = Underground/Cavern
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|70|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.FlamingArrow}}}}
+| debuff = On Fire!
+| debuffchance = 33.33% {{note|small=y|paren=y|{{gameText|ProjectileName.FlamingArrow}}}}
+| debuffduration = {{modes|{{duration|420 ticks}}|{{duration|840 ticks}}|{{duration|1050 ticks}}}}
+| Magic Quiver|1|2.5% {{eicons|1.4.4.8|small=y}}<br/>1.25% {{eicons|1.4.4.8|invert=y|small=y}}
+| Marrow|1|0.5%
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+
+'''{{tr|Skeleton Archer}}'''是有时会在[[{{tr|Cavern}}]][[{{tr|layer}}|层]]生成的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。相比于其他洞穴{{tr|enemy}}而言，它们移动的相当缓慢。当玩家在它们的视线中时，它们会停止移动并朝玩家射出[[{{tr|Flaming Arrow}}]]，有几率造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+
+== 备注 ==
+* {{tr|the Skeleton Archer}}所射出的{{tr|Flaming Arrows}}不会被[[{{tr|water}}]]扑灭。
+* 不像[[{{tr|Armored Skeleton}}]]，{{tr|Skeleton Archers}}不会开[[{{tr|door}}]]。
+* {{tr|the Skeleton Archer}}射出的[[{{tr|Arrow}}]]不能被玩家回收。
+
+== 小贴士 ==
+* 几个简单的陷坑（7[[{{tr|block}}|格]]深）就能非常有效的对抗{{tr|Skeleton Archers}}和[[{{tr|Armored Skeleton}}]]等{{tr|enemies}}。
+* {{tr|Skeleton Archers}}很少能准确地射出第一箭，它会慢慢调整瞄准，所以四处移动就可以让它们几乎不可能命中玩家，站在上方也一样。
+*在射出第一箭之前有个小延迟，在此期间{{tr|Skeleton Archer}}很容易被攻击。如果玩家命中一击就就会打断它的瞄准，因此快速的玩家可以让它一箭都射不出。
+
+== 花絮 ==
+* {{tr|Skeleton Archers}}看上去穿的是有尖刺肩甲的绿色版[[{{tr|Ancient Cobalt Breastplate}}]]。
+* 它似乎拿着一把[[{{tr|Wooden Bow}}]]，但它掉落的却是[[{{tr|Marrow}}]]。似乎也没见它有箭袋，但却会掉落[[{{tr|Magic Quiver}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Magic Quiver}}的{{tr|Drop rate}}由 {{chance|1/80}} 提升至 {{chance|1/40}}。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|生命值、伤害和防御分别从 260、55 和 28 降低到 210、45 和 14。现在会掉落[[{{tr|Magic Quiver}}]]和[[{{tr|Marrow}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Skeleton Archer}}

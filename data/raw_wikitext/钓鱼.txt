@@ -1,0 +1,659 @@
+{{quotation|[[{{tr|Angler}}|{{tr|The Angler}}]]|{{gameText|LegacyDialog.344|x_WorldName=世界}}}}
+[[File:Fishing (demo).gif|frame|right|{{tr|Fishing}}进行中。]]
+
+'''{{tr|Fishing}}'''是在玩家的[[{{tr|inventory}}]]中有[[{{tr|Bait}}]]的情况下在[[{{tr|liquid}}]]（[[{{tr|water}}]]、[[{{tr|honey}}]]、[[{{tr|lava}}]]）边使用[[{{tr|Fishing Pole}}]]来完成的活动。按下 {{key|use}} 按键会抛出带有浮标的鱼线，在浮标被丢入{{tr|liquid}}时才会生效。当浮标上下移动时再次按下按键即可收线，随着收线经常会钓上一件物品。[[{{tr|Angler}}]] {{tr|NPC}} 会提供日常{{tr|fishing quests}}，并用各种{{tr|equipment}}、{{tr|coins}}、{{tr|potions}}、和{{tr|vanity items}}来作为完成任务的奖励。
+
+{{tr|Fishing}}提供了各种各样的游戏资源：[[{{tr|Potion}}]]和[[{{tr|food}}]]的{{tr|Crafting materials}}；各种非常有用的物品，比如[[{{tr|Frog Leg}}]]或[[{{tr|Balloon Pufferfish}}]]等移动强化物品；甚至是{{tr|pet}}[[{{tr|Zephyr Fish}}]]。通过[[{{tr|Crates}}]]，{{tr|fishing}}还提供了另一个来源来得到[[{{tr|ores}}]]、[[{{tr|coin}}]]、许多[[{{tr|chest}}]]{{tr|items}}、以及一些特有的东西，比如[[{{tr|Falcon Blade}}]]和[[{{tr|Sailfish Boots}}]]。
+
+虽然{{tr|fishing}}并非游戏进程所必需，但要完成[[{{tr|Cell Phone}}]]需要{{tr|the Angler}}的一些{{tr|quest rewards}}（[[{{tr|Fish Finder}}]]的组件）。要和[[{{tr|Duke Fishron}}]] [[{{tr|boss}}]] 战斗也需要{{tr|Fishing}}。
+
+对于{{tr|pre-Hardmode}}玩家，{{tr|fishing}}会是个获取[[{{tr|coin}}]]和装备的好途径；到{{tr|Hardmode}}中期时，它和[[指南:赚钱|其他赚钱选项]]、{{tr|enemy}}掉落、和改进装备的方法相比就没什么竞争力了。
+
+== 需求 ==
+[[File:Fishing dimensions.png|thumb|right|假设浮标位于{{tr|liquid}}表面（由[[{{tr|Golden Fishing Rod}}]]标出）。决定湖泊大小时，先决定{{tr|liquid}}表面的宽度（绿色矩形部分），然后区域从表面的{{tr|tile}}向下延伸（箭头部分）。落在原始计算液面宽度之外的那些图格不计在内（红色区域）。]]
+
+必须有 75 格相连的液体（对于[[{{tr|ocean}}]]需要 1001 格、对于[[{{tr|honey}}]]则需要 50 格{{source code ref|v=1.4.4.9|name=GetFishingPondState|method=Terraria.Projectile.GetFishingPondState|t=相连的{{tr|honey}}{{tr|tile}}的数量将会被乘以 1.5，向下取整。}}）才能正常{{tr|fishing}}，而较为理想的情况则要有 300 格以上（对于{{tr|Ocean}}是 1001 格，对于{{tr|honey}}则是 200 格<ref name="GetFishingPondState"/>）。相连{{tr|liquid}}顶部那行的宽度（即钓鱼浮标所处的那一行）决定了池塘的计算宽度，接着计算这些格正下方的深度总数。如果池塘在较深处变得更宽，多出来的这些宽度''不会''计入。玩家可以成功地在 1 格宽的池塘里钓鱼，只要其深度达到 75 格。浮标距离岸边多远无关紧要。
+
+在{{eversions|1.4.4}}中，玩家可以在部分浸入在{{tr|liquid}}中时{{tr|fishing}}，只要玩家的手臂高于浮标即可。
+
+在{{eicons|1.4.4|invert=y}}中，当玩家浸在{{tr|liquid}}中时是无法钓鱼的，哪怕只是部分浸入，甚至浸在完全不相连的水体中也不行。 
+
+不过，可以在移动时、飞行中、用[[{{tr|Grappling Hook}}]]抓着{{tr|block}}时、通过[[{{tr|Slimy Saddle}}]]漂在{{tr|liquid}}上、坐在[[{{tr|chair}}]]上、或站在{{tr|liquid}}表面上时（例如使用[[{{tr|Water Walking Boots}}]]之类的物品）进行{{tr|fishing}}。
+
+[[{{tr|Lava}}]]中也可以{{tr|Fishing}}，但是仅适用于[[{{tr|Hotline Fishing Hook}}]]、{{eil|Lavaproof Tackle Bag}}、{{eil|Lavaproof Fishing Hook}}，或使用{{eil|Magma Snail}}、{{eil|Lavafly}}、或{{eil|Hell Butterfly}}作为{{tr|bait}}。在{{tr|lava}}中可能需要等更长时间才会有咬钩，但以上物品中至少使用两种时能提升其几率；详情参见下文[[#渔获频率|渔获频率]]章节。
+
+== 钓鱼任务 ==
+{{redirect|{{tr|Quest}}|{{tr|the Strange Plant quest}}|{{tr|Dye Trader}}#{{tr|Strange Plant quests}}{{!}}{{tr|Dye Trader}} § {{tr|Strange Plant quests}}}}
+{{for|{{tr|quest fish}}的列表|{{tr|Angler}}#任务列表}}
+
+要想捕获[[{{tr|Angler}}]] [[{{tr|NPC}}]] 所要的{{tr|quest fish}}，需要在当天{{tr|fishing}}任务相应的[[{{tr|biome}}]]及[[{{tr|depth}}|高度]]下{{tr|fishing}}，具体可以通过与{{tr|Angler}}交谈来确定。虽然玩家做{{tr|quest}}''并不需要''和{{tr|Angler}}对话，甚至都不需要遇见他，但是除了和他交谈以外没有方式得知{{tr|quest fish}}的位置。上交正确的{{tr|quest fish}}之后，[[{{tr|Angler}}]]会给出[[{{tr|Angler}}#任务奖励|特殊奖励]]。如果玩家的{{tr|inventory}}中已经有了特定的{{tr|quest fish}}、那天已经上交过{{tr|quest fish}}或{{tr|Angler}}处于沉睡状态或已死亡时，就无法捕获任务鱼。{{source code ref|v=1.4.4.9|name=FishingCheck_ProbeForQuestFish|method=Terraria.Projectile.FishingCheck_ProbeForQuestFish}}不过，若玩家将{{tr|quest fish}}放入了[[{{tr|storage item}}]]，就能再捕到{{tr|quest fish}}。{{tr|the Angler}}会在每天的{{tr|dawn}}（{{time|4:30AM}}）变更其{{tr|quest}}。
+
+== 影响因素 ==
+在满足了{{tr|fishing}}的先决条件之后，还有一些因素会影响到渔获的品质/稀有度。有各种相关装备：
+* 特定的[[{{tr|accessories}}]]和{{tr|items}}。它们都会互相叠加，且绝大多数都是[[{{tr|Angler}}]][[{{tr|quest}}]]的奖励。
+* 来自特定[[{{tr|potions}}]]的[[{{tr|Buffs}}]]有助于{{tr|fishing}}，它们都能被制作或由{{tr|Angler}}奖励。
+* [[{{tr|Fishing pole}}]]可以制作得到、以{{tr|Angler}}奖励的方式得到、从其他 {{tr|NPC}} 处购买、或在[[{{tr|chest}}]]中找到。
+* 从多种来源得到的[[{{tr|Bait}}]]：捕捉[[{{tr|Critter}}]]、{{tr|Angler}}奖励、[[{{tr|Crates}}]]、[[{{tr|Enchanted Nightcrawler}}|甚至是制作]]。
+* {{eil|Chum Bucket|s}}掉落自{{tr|Blood Moon fishing}}生成的{{tr|enemies}}。
+* {{eil|Gummy Worm}}会永久提升{{tr|fishing power}}。
+
+所有因素会被合并成总'''{{tr|Fishing Power}}'''，它决定了高品质渔获的几率。计算{{tr|Fishing Power}}首先要将以下三个基本因素相加：{{source code ref|v=1.4.4.9|method=Terraria.Player.GetFishingConditions / Terraria.Projectile.FishingCheck}}
+* 所用{{tr|Fishing Pole}}的{{tr|Fishing Power}}。
+* 所用{{tr|Bait}}的{{tr|Bait Power}}。<ref name="bp" group="fb">% {{tr|Bait Power}}也就意味着 % {{tr|Fishing Power}}，并且与所有其他{{tr|Fishing Power}}因素如{{tr|Fishing Pole}}的{{tr|Fishing power}}和时间因素之类合并起作用。{{tr|Bait Power}}''还''决定了从玩家物品栏里消耗掉鱼饵物品的几率。拥有高{{tr|Bait Power}}的物品能持续更多钓鱼次数：高{{tr|Bait Power}}意味着''低''消耗几率。</ref>
+* {{tr|items and potions}}的效果。
+
+上面三种因素相加之后，按以下方式应用奖励（或惩罚）：
+* 玩家钓鱼的[[{{tr|time}}]]，以百分比系数的方式应用到之前的因素上。这些系数列在下方的“时间”表中，且互相之间是乘算的（例如，在{{tr|Full Moon}}期间的 {{time|6:00 PM}} – {{time|7:30 PM}} {{tr|fishing}}时，系数将是 1.3×1.1=1.43）。{{source code ref|v=1.4.4.9|method=Terraria.Player.Fishing_GetPowerMultiplier}}
+* {{eicons|Chum Bucket}} 在{{tr|liquid}}表面使用的{{tr|Chum Buckets}}数量。会直接加到之前的因素上。
+* 湖的大小。小于 300 格（{{tr|honey}}为 200 格<ref name="GetFishingPondState"/>）的湖会带来{{tr|Fishing Power}}惩罚。以百分比乘数的方式应用到之前的因素上。
+* 如果{{tr|fishing}}时'''没有使用'''[[{{tr|High Test Fishing Line}}]]、{{eil|Lavaproof Tackle Bag}}、或[[{{tr|Angler Tackle Bag}}]]，那么在收线时有 {{chance|1/7}} 的固定几率发生鱼线断裂，同时损失渔获。即使鱼线断裂，消耗{{tr|bait}}的几率也保持不变。在装备了上方三种{{tr|accessories}}之一后，鱼线就永远不会断裂。
+
+下表中影响{{tr|fishing power}}的量标记为{{green|绿}}或{{red|红}}。因为一些奖励因素（例如，一天中的时间或者天气）是乘算的，三个基本因素之一所给出的{{tr|fishing power}}数量可能会因此而显得有所不同（例如，当在下{{tr|rain}}时{{tr|fishing}}时，[[{{tr|Angler Earring}}]]显得能够提供比 +10 {{tr|Fishing Power}}更高的加成）。
+{|
+|valign="top"|
+{| class="terraria lined" style="margin:0; width:650px"<!-- fishing-table-left -->
+|+ {{tr|Fishing Power}}增强装备和物品
+|-
+! {{tr|Item}}
+! 效果
+|-
+| {{item|Angler Tackle Bag}}
+| {{green|+10}} {{tr|Fishing Power}}
+|-
+| {{item|Lavaproof Tackle Bag}}
+| {{green|+10}} {{tr|Fishing Power}}
+|-
+| {{item|Angler Earring}}
+| {{green|+10}} {{tr|Fishing Power}}
+|-
+| {{item|Angler armor}}
+| 每件{{green|+5}} {{tr|Fishing Power}}
+|-
+| {{item|Fishing Potion}}
+| {{green|+15}} {{tr|Fishing Power}}（{{iteminfo|Fishing Potion|buffduration}}）
+|-
+| {{item|Chum Bucket}}
+| {{green|+11/+17/+20}} {{tr|Fishing Power}}<ref group="fb">的加成取决于同时在水面上存在多少个。用一个{{tr|Chum Bucket}}会 +11、两个 +17 而三个就达到最大值 +20。这些加成不受之前因素（即，{{tr|armor}}、{{tr|accessories}}、{{tr|potions}}、{{tr|bait}}、{{tr|fishing pole}}、{{tr|time}}、或{{tr|weather}}）影响，只受{{tr|lake}}的大小影响。还要注意没有钓上任何东西或者鱼线断了也会算作 10 次使用之一。</ref><br/>（10 次使用）
+|-
+| {{item|Fishing Bobber|Fishing Bobbers}}
+| {{green|+10}} {{tr|Fishing Power}}
+|-
+| {{item|Gummy Worm}}
+| {{green|+3}} {{tr|Fishing Power}}<br/>（使用后永久有效）
+|-
+| {{item|Inner Tube}}或{{item|Mollusk Whistle}}
+| {{green|+5}} {{tr|Fishing Power}}<br/>（只要玩家与{{tr|liquid}}接触就提供）
+|-
+| {{item|Tipsy|note2=（仅限{{eicons|1.4.4}}）}}
+| {{green|+5}} {{tr|Fishing Power}}
+|-
+| {{item|Toilet|Any Toilet|note2=（仅限{{eicons|1.4.4}}，[[{{tr|Golden Toilet}}]]除外）}}
+| {{green|+5}} {{tr|Fishing Power}}<br/>（当玩家坐在上面时）
+|}
+{| class="terraria lined" style="margin:0; width:650px"<!-- fishing-table-left -->
+|+ 来自{{tr|fishing}}装备和物品的其他效果
+|-
+! {{tr|Item}}
+! 效果
+|-
+| {{item|High Test Fishing Line}}
+| 鱼线永远不会断裂
+|-
+| {{item|Tackle Box}}
+| −5% {{tr|bait}}消耗几率 
+|-
+| {{item|Crate Potion}}
+| +15% [[{{tr|Crate}}]]几率（{{iteminfo|Crate Potion|buffduration}}）
+|-
+| {{item|Sonar Potion}}
+| 收线前即显示钓到的物品名称<br/>（{{iteminfo|Sonar Potion|buffduration}}）
+|-
+| {{item|Angler Tackle Bag}}
+| {{tr|High Test Fishing Line and Tackle Box}}的效果
+|-
+| {{item|Fisherman's Pocket Guide}}
+| 显示当前{{tr|Fishing Power}}
+|-
+| {{item|Weather Radio}}
+| 显示当前天气
+|-
+| {{item|Sextant}}
+| 显示[[{{tr|moon phase}}]]
+|-
+| {{item|Fish Finder}}
+| 显示{{tr|weather}}、{{tr|moon phase}}、{{tr|fishing power}}
+|-
+| {{item|Lavaproof Fishing Hook}}
+| 无论用什么{{tr|bait}}或鱼竿都可以在{{tr|lava}}中钓鱼。
+|-
+| {{item|Lavaproof Tackle Bag}}
+| {{tr|High Test Fishing Line, Tackle Box, and Lavaproof Fishing Hook}}的效果
+|}
+|valign="top"|
+{| class="terraria lined" style="margin:0;width:210px"
+|+ 时间
+|-
+! 因素
+! 效果
+|-
+| {{tr|Cloudy or Overcast}}<ref name="cloud" group="fb">这与下雨的加成叠加，这意味着因为多云而下雨时{{tr|Fishing Power}}的加成要超过 ×1.2。</ref>
+| {{green|×1.1}}
+|-
+| [[{{tr|Rain}}]]
+| {{green|×1.2}}
+|-
+| {{time|4:30 AM}} – {{time|6:00 AM}}
+| {{green|×1.3}}
+|-
+| {{time|9:00 AM}} – {{time|3:00 PM}}
+| {{red|×0.8}}
+|-
+| {{time|6:00 PM}} – {{time|7:30 PM}}
+| {{green|×1.3}}
+|-
+| {{time|9:18 PM}} – {{time|2:42 AM}}
+| {{red|×0.8}}
+|-
+| [[{{tr|moon}}|{{tr|Full Moon}}]]
+| {{green|×1.1}}
+|-
+| 凸月
+| {{green|×1.05}}
+|-
+| 眉月
+| {{red|×0.95}}
+|-
+| {{tr|New moon}}
+| {{red|×0.9}}
+|-
+| [[{{tr|Blood Moon}}]]
+| {{green|×1.1}}<ref name="bloodmoon" group="fb">在{{eversions|1.4.0.1|short=y}}中，在{{tr|Blood Moon}}期间{{tr|fishing}}有很大几率生成若干中独有且困难的{{tr|enemies}}之一。更多细节请参见[[{{tr|Fishing}}#{{tr|Enemies}}|{{tr|enemies}}]]章节。</ref>
+|}
+{| class="terraria lined align-center" style="margin:0;width:210px"
+|+ 湖泊大小 <ref group="fb">此处列出的湖泊大小是示例数值，以描述湖泊大小对{{tr|fishing power}}的影响效果，它们不是阈值。惩罚实际上取决于这个公式：<code>'''(格数 / (n * atmo)) × {{tr|Fishing Power}}'''</code>，其中对于{{tr|water}}来说 n = 300，{{tr|honey}}则是 200 格，而 atmo 通常为 1，除非{{eicons|Expert mode}}位于极高的海拔高度。当总格数在 75 至 300（200）间时，任何数量的提高和降低都会改变湖泊大小惩罚。详细来说，atmo （在{{eversions|Expert mode|invert=y}}中）总是为 1，否则则取决于公式：<code>max(0.25, min(1, ((maxY - Y) - (60 + 10 * WF)) / (maxY / 6)))</code>（在{{eversions|Expert mode}}中，若高于{{tr|Surface}}，其中 Y 是浮标高于{{tr|surface}}的高度，单位为[[{{tr|Layers}}|{{tr|tiles}}]]；maxY 是{{tr|world}}的最高高度，单位为{{tr|tiles}}；WF 在[[{{tr|World size}}|{{tr|Small and Medium worlds}}]]中是 1，在{{tr|Large worlds}}中则是 4）。<!-- 此处的 atmo 公式等同于源码中的，但被更改过以便玩家理解——即使用（maxY - Y），也就是深度计所示的海拔，而非是游戏内的“Y”（从世界顶部从 0 开始向下计数），且此处的“WF”变量是简化过的 floor(worldWidthInTiles / 4200)^2，如果不考虑微小世界的话，后者只有两个可能的值（1 和 4），而微小世界的此数值为 0。--></ref>
+|-
+! 水体格数
+! 效果
+|-
+| 75
+| {{red|−75%}}
+|-
+| 100
+| {{red|−66.6%}}
+|-
+| 125
+| {{red|−58.3%}}
+|-
+| 150
+| {{red|−50%}}
+|-
+| 175
+| {{red|−41.6%}}
+|-
+| 200
+| {{red|−33.3%}}
+|-
+| 225
+| {{red|−25%}}
+|-
+| 250
+| {{red|−16.6%}}
+|-
+| 275
+| {{red|−8.3%}}
+|-
+| 300+
+| {{green|''无惩罚''}}
+|}
+|}
+{{reflist|group=fb}}
+
+=== 运气 ===
+{{exclusive|Luck|section=y}}
+
+玩家的[[{{tr|luck}}]]属性会影响其{{tr|Fishing Power}}。这一效果是隐藏的，即它们永远不会改变{{tr|Fisherman's Pocket Guide}}或相关{{tr|accessories}}在游戏界面中显示的数值。
+
+如果玩家具有坏（负）{{tr|luck}}，他们的{{tr|fishing Power}}就有几率（每次捕捞都会判断一次）会被降低。同样，好（正）{{tr|Luck}}会让{{tr|Fishing Power}}有几率得以提高。
+* 如果玩家的总{{tr|luck}}小于 0，则每次尝试捕捞都有 ''(−100 × {{tr|Luck}})% 的几率''让玩家的{{tr|Fishing Power}}降低 {{red|10%}} 到 {{red|40%}}。
+* 如果玩家的总{{tr|Luck}}大于 0，则每次尝试捕捞都有 ''(100 × {{tr|Luck}})% 的几率''让玩家的{{tr|Fishing Power}}提高 {{green|10%}} 到 {{green|40%}}。
+* 除了影响{{tr|fishing power}}以外，实际的{{tr|fishing}}渔获不会被{{tr|luck}}影响。
+* 钓到[[{{tr|Crates}}]]的几率'''不受'''{{tr|Luck}}影响，但钓到的{{tr|crate}}的类型''受''影响。这是因为钓上{{tr|crates}}的几率是固定的，不受{{tr|Fishing Power or Luck}}影响，但{{tr|crate}}的''类型''是取决于{{tr|Fishing Power}}的。进一步细节请参见下文[[#{{tr|Crate}}机制|{{tr|Crate}}机制]]章节。{{source code ref|v=1.4.4.9|name=FishingCheck_RollDropLevels|method=Terraria.Projectile.FishingCheck_RollDropLevels}}{{source code ref|v=1.4.4.9|name=FishingCheck_RollItemDrop|method=Terraria.Projectile.FishingCheck_RollItemDrop}}
+
+== 钓竿 ==
+[[{{tr|Fishing Pole}}]]和[[{{tr|Bait}}]]一起用于{{tr|fishing}}。部分{{tr|Fishing Pole}}可以制作，其余的则由 [[{{tr|NPC}}]] 出售、由[[{{tr|Chest}}]]中开出、或是[[{{tr|Angler}}]]的奖励。
+{{collapse top}}
+{{:钓竿}}
+{{collapse bottom}}
+
+== 鱼饵 ==
+{{collapse top}}
+{{transclude|{{tr|Bait}}#类型}}
+{{collapse bottom}}
+
+== 渔获 ==
+=== 鱼 ===
+任何时间都可能捕到这些东西。大多数都可以作为[[{{tr|crafting material}}]]用于制作[[{{tr|Food}}]]（[[{{tr|Cooked Fish}}]]）和其他[[{{tr|Potion}}]]。其中一些还可以制作其他类型的物品。{{tr|Jellyfish}}可以作为{{tr|bait}}使用。另外，大多数都可以卖给 [[{{tr|NPC}}]]。注意，高度的要求多数是划分为“{{tr|Surface}}及其之上”和“{{tr|Underground}}及其之下”。在这些物品中，只有三个物品不能在{{tr|Surface or Underground}}层钓到：{{tr|The Damselfish}}（仅限{{tr|Sky}}）、和{{tr|the Blue or Green Jellyfish}}（仅限{{tr|Cavern or Underworld}}）。
+
+{{ajax|渔获}}
+
+=== 任务鱼 ===
+任务鱼是仅当特定任务激活时才能捕到的物品，并且除了用来获取[[{{tr|Angler}}#任务奖励|任务奖励]]外没有任何用处。玩家与[[{{tr|Angler}}]] [[{{tr|NPC}}]] 对话可以确认当天的任务。一共有 41 种不同的任务鱼。
+
+{{ajax|渔夫/任务}}
+
+=== 可使用物品 ===
+这些物品无需额外处理即可直接使用。大部分是[[{{tr|tools}}]]或[[{{tr|weapons}}]]，其中很多在游戏中很大一部分范围内看是同类型最佳物品。还有几个能强化跳跃能力的[[{{tr|Accessories}}]]、一个对{{tr|Healing Potion}}的改进、一个[[{{tr|Pet}}]]、以及在[[{{tr|Hardmode}}]]中还有一个{{tr|mount}}。[[{{tr|Angler}}]]任务奖励使这套物品更加充实，包括[[{{tr|Fuzzy Carrot}}|早期{{tr|mount}}]]、一个（在[[{{tr|Pre-Hardmode}}]]）顶级的[[{{tr|Fish Hook}}]]、和一些辅助{{tr|fishing}}的物品。
+
+{{ajax|其他渔获}}
+
+=== {{tr|Crate}} ===
+{{tr|Crate}}是可堆叠的{{tr|grab bag}}类型物品，其中包含的东西是随机的，包括[[{{tr|potions}}]]、{{tr|bait}}、有用的{{tr|items}}、[[{{tr|coins}}]]、[[{{tr|Bars}}|{{tr|metal bars}}]]、甚至还有[[{{tr|ores}}]]。越是少见的{{tr|Crate}}类型内含的东西价值就越高。{{tr|biome}}{{tr|crate}}能提供只在同类型{{tr|biome chest}}才能找到的物品，包括[[{{tr|Crimson Heart}}]]/[[{{tr|Shadow Orb}}]]以及在{{tr|Dungeon chests}}中出现的物品。不过，并非所有{{tr|biome}}或特殊{{tr|chest}}都有对应的{{tr|crate}}。{{tr|Crates}}是“代用版”{{tr|metals}}和{{tr|ores}}的主要来源之一。
+{{collapse top}}
+<center>{{transclude|{{tr|Crates}}#{{tr|Types}}|clr=y}}</center>
+{{collapse bottom}}
+
+=== 垃圾 ===
+这些物品没有任何用途（{{eil|Joja Cola}}除外）或[[{{tr|coin}}]]方面的价值。在单个物品栏位里它们最多能堆叠到{{etext|9999|e=1.4.4}}/{{etext|99|e=1.4.4|invert=y}}个。只有当湖泊实在太小或{{tr|Fishing Power}}实在太低时玩家才会"捕"到这些东西。当湖泊大小至少有 300 格（对于{{tr|honey}}是 200 格<ref name="GetFishingPondState"/>）或总{{tr|fishing power}}至少有 50 时就不会捕到垃圾。
+{{options/set|item infobox|view=item|extargs=nolink}}
+{| class="terraria sortable align-center"
+! 类型
+! 价值
+! [[{{tr|Rarity}}]]
+! [[高度]]
+! [[{{tr|Biome}}]]
+|-
+| {{item infobox|auto=2337|nolink=y}}
+| 0
+| {{iteminfo|id=2337|field=rare}}
+| 任意
+| 任意
+|-
+| {{item infobox|image=Seaweed (junk).png|auto=2338|nolink=y}}
+| 0
+| {{iteminfo|id=2338|field=rare}}
+| 任意
+| 任意
+|-
+| {{item infobox|auto=2339|nolink=y}}
+| 0
+| {{iteminfo|id=2339|field=rare}}
+| 任意
+| 任意
+|-
+| {{item|id=5275}}<!-- already has an infobox on its own page -->
+| 0
+| {{iteminfo|id=5275|field=rare}}
+| 任意
+| 任意
+|}{{options/reset|item infobox}}
+
+在{{eversions|1.4.4}}中，{{tr|rarity}}为{{iteminfo|id=2337|field=rare}}的垃圾物品可被放入[[{{tr|Extractinator}}]]或[[{{tr|Chlorophyte Extractinator}}]]以获得低级的{{tr|bait}}。
+{{transclude|{{tr|Extractinator}}|section=junk}}
+
+{{eil|Joja Cola}}可在[[{{tr|Dryad}}]]处被净化以获得{{eil|Stardrop}}。
+
+=== 敌怪 ===
+{{exclusive|1.4.0.1|section=y}}
+[[{{tr|Blood Moon}}]][[{{tr|event}}]]期间，在{{tr|water}}中{{tr|fishing}}会导致多种{{tr|Blood Moon}}主题的[[{{tr|enemies}}]]生成。这些{{tr|enemies}}是：
+{{itemlist/options|width=18em}}
+{{infocard/start|class=terraria compact}}
+{{infocard/mainheading|{{tr|Pre-Hardmode}}}}
+{{itemlist
+    |{{item|Wandering Eye Fish}}
+    |{{item|Zombie Merman}}
+}}
+{{infocard/mainheading|{{tr|Hardmode}}}}
+{{itemlist
+    |{{item|Hemogoblin Shark|scale=0.67}}
+    |{{item|Blood Eel|scale=0.5}}
+    |{{item|Dreadnautilus|scale=0.5}}
+}}
+{{infocard/end}}<!-- end of infocard
+-->{{itemlist/options|reset}}
+
+在{{tr|Blood Moon}}期间收线时，有 {{chance|1/6}} 几率（用了[[{{tr|Chum Caster}}]]是 {{chance|1/3}}）会生成这些{{tr|enemies}}之一。{{source code ref|name=FishingCheck_RollEnemySpawns|v=1.4.4.9|method=Terraria.Projectile.FishingCheck_RollEnemySpawns}}注意[[#影响因素|{{tr|fishing power}}]]对此机制无影响，使用{{tr|Chum Buckets}}也对此无影响。
+
+使用[[{{tr|Sonar Potion}}]]时，生成{{tr|enemy}}时会以红色显示{{tr|enemy}}名称，让玩家有一两秒的时间为即将到来的攻击做准备。在{{tr|pre-Hardmode}}，可能出现的{{tr|enemies}}只有{{tr|Zombie Merman}}和{{tr|Wandering Eye Fish}}，二者几率相等。在{{tr|Hardmode}}中，{{tr|the Dreadnautilus}}有 {{chance|1/10}} 几率出现，另外四种{{tr|enemies}}则均分剩余出现几率（{{chance|9/40}}）。
+
+=== 城镇宠物 ===
+{{exclusive|1.4.4|section=y}}
+[[{{tr|Blood Moon}}]][[{{tr|event}}]]期间，在{{tr|water}}中{{tr|fishing}}也能生成一个独有的[[{{tr|town pet}}]]：[[{{tr|Surly Slime}}]]。
+
+若{{tr|Surly Slime}}在{{tr|world}}中尚未获得过，在{{tr|Blood Moon}}期间收线时，每个{{tr|fishing enemy}}有 {{chance|1/5}} 的几率被替换为{{tr|Surly Slime}}。<ref name="FishingCheck_RollEnemySpawns"/>注意[[#{{tr|Factors}}|{{tr|fishing power}}]]对此机制无影响，使用{{tr|Chum Buckets}}也对此无影响。
+
+一旦{{tr|Surly Slime}}被钓上，它被杀后就会自然重生，无需再钓上一个，且在{{tr|Blood Moon}}期间{{tr|fishing}}也不再会产生新的{{tr|Surly Slime}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Blue Jellyfish (bait)/Green Jellyfish (bait)/Pink Jellyfish (bait)/Bass/Trout/Salmon/Flounder/Rock Lobster/Atlantic Cod/Tuna/Red Snapper/Shrimp/Double Cod/Damselfish/Armored Cavefish/Crimson Tigerfish/Flarefin Koi/Neon Tetra/Obsidifish/Prismite/Princess Fish/Hemopiranha/Specular Fish/Stinkfish/Variegated Lardfish/Chaos Fish/Frost Minnow/Ebonkoi|expectedrows=50}}
+
+== 机制 ==
+=== 渔获频率 ===
+钓鱼时，有一个隐藏的'''捕获计数'''来追踪玩家捕获前的进度。计数正常是从 0 开始，随着时间推移增加。当它超过 660 时，有 ((75 + {{tr|fishing power}}) / 2) % 的几率鱼会咬钩，在{{tr|fishing power}}达到 125 时几率达到上限。随后计数会重置为 0，无论是否有鱼咬钩。
+
+当至少使用下列物品类型的两种在{{tr|lava}}中{{tr|fishing}}时，（''如果''没有咬钩）计数器则会重置到 240：{{tr|lava bait}}、[[{{tr|Hotline Fishing Hook}}]]、和/或一件防{{tr|lava}}{{tr|accessory}}（{{eil|Lavaproof Fishing Hook}}或{{eil|Lavaproof Tackle Bag}}两者之一）。这三种全用的效果和只用两种是一样的{{source code ref|v=1.4.4.9|name=FishingCheck|method=Terraria.Projectile.FishingCheck}}。
+
+捕获计数每{{tr|tick}}{{tick}}都会根据以下因素增加：
+
+* 默认 1–2 点（平均每{{tr|tick}} 1.5 点）
+* 60 分之 1 的几率 60 点（平均每{{tr|tick}} 1 点）
+* 每{{tr|tick}} ( {{tr|fishing power}} / 30 ) 点（例如，{{tr|fishing power}} 50 时每{{tr|tick}} 1.667 点）
+* ({{tr|fishing power}} / 3)% 的几率额外增加 1–2 点。（每{{tr|tick}} 1.5 × {{tr|fishing power}} / 300 点 ）
+
+因此，平均捕获率公式如下所示：
+<math>{\frac{660\times\frac{points}{bite}}{\left(1.5+1+\frac{fishing\ power}{30}+1.5\times\frac{fishing\ power}{300}\right)\times\frac{points}{tick}}\div60\times\frac{ticks}{second}}</math>
+或者化简之后：
+<math>{\frac{11}{2.5+\frac{23}{600}\times{fishing\ power}}\times\frac{seconds}{bite}}</math>
+例如，若玩家{{tr|fishing power}} 为 125，则预期每 1.5 秒左右就能钓到一条鱼：
+<math>{\frac{11}{2.5+\frac{23}{600}\times125}\times\frac{seconds}{bite}\approx1.5\times\frac{seconds}{bite}}</math>
+
+=== {{tr|Biomes}} ===
+在{{tr|lava or honey}}中{{tr|fishing}}时，玩家只能获得那一特定{{tr|liquid}}中的{{tr|fishing catches}}，无论湖的位置。
+
+在{{tr|water}}中{{tr|fishing}}时，若玩家身处[[{{tr|hybrid biome}}]]，他就有资格钓上不同[[{{tr|biomes}}]]中的渔获。不过，某些{{tr|biomes}}的优先级要高于其他{{tr|biomes}}。优先级顺序在下表中列出。<ref name="FishingCheck_RollItemDrop"/>
+
+如果玩家同时处于多重{{tr|biomes}}中，而高优先级的{{tr|biome}}并未生成渔获时，游戏会继续对后继的{{tr|biomes}}进行渔获检查。此外，还有两个互斥{{tr|biome}}组。若玩家位于一个高优先级的{{tr|biome}}，则只会检查那个{{tr|biome}}的渔获，而那组中其余的{{tr|biome}}不会被检查。这两组为：[[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]/[[{{tr|Hallow}}]]，以及{{eicons|1.4.0.1}}[[{{tr|Ocean}}]]/[[{{tr|Desert}}]]（[[{{tr|Oasis}}]]）。
+
+特殊地，仅在“纯净”的{{tr|biomes}}中可钓上的{{tr|items}}（所有{{tr|layers}}的{{tr|Forest biome}}，从{{tr|world}}顶部到底部的顺序为：[[{{tr|Space}}]]/{{tr|Sky}}、常规的{{tr|surface}}[[{{tr|Forest}}]]、纯净的[[{{tr|Underground}}]]、纯净的[[{{tr|Cavern}}]]）要求本{{tr|biome}}不和其他任何{{tr|biomes}}重叠。否则，玩家将只能获得与之重叠的{{tr|biomes}}中的{{tr|fishing catches}}。
+
+{| class="terraria sortable"
+! rowspan="2" | {{tr|Biome}}
+! data-sort-type="number" class="unsortable" | 标准优先级
+! data-sort-type="number" class="unsortable" | {{tr|Crate}}优先级
+|-
+| {{item|Lava|mode=|class=}} || 1 || 1
+|-
+| {{item|Honey|mode=|class=}} || 2 || data-sort-value="999" | {{na}}
+|-
+| {{item|Dungeon}} || 3 || 2
+|-
+| {{item|The Corruption}} || 4 <ref name="evil" group="bp">如果同时处于{{tr|Corruption}}和{{tr|Crimson}}中，则两者都有 50% 几率（{{tr|crates}}例外，此时{{tr|Corruption}}有更高优先级）。</ref><ref name="FishingCheck_RollItemDrop"/>|| 4
+|-
+| {{item|The Crimson}} || 4<ref name="evil" group="bp"/> || 4
+|-
+| {{item|The Hallow}} || 5 || 5
+|-
+| {{item|Snow biome}} || 6<ref name="snow" group="bp">如果同时处于{{tr|Snow}}和{{tr|Jungle}}中, 则两者都有 50% 几率（仅对非{{tr|Crate}}的{{tr|Item}}生效）。</ref><ref name="FishingCheck_RollItemDrop"/> || 7
+|-
+| {{item|Jungle}} || 7 || 6
+|-
+| {{item|Glowing Mushroom biome}} || 8 || data-sort-value="999" | {{na}}
+|-
+| {{item|Ocean}} || 9 || 3
+|-
+| {{item|Desert}}（{{item|Oasis|image=Bestiary Oasis.png}}） || 10 || 8
+|-
+| {{tr|Forest}}（{{item|Sky|Space/Sky}}） || 11<ref name="forestitem" group="bp">纯净{{tr|biome}}，不应与其他{{tr|biomes}}重叠，否则无法获得来自此{{tr|biome}}的{{tr|fishing catches}}。</ref> || 9
+|-
+| {{tr|Forest}}（{{item|Underground}} / {{item|Cavern}}） || 12<ref name="forestitem" group="bp"/> || data-sort-value="999" | {{na}}
+|-
+| {{item|Forest}} ([[{{tr|Surface}}]]) || 13<ref name="forestitem" group="bp"/> || data-sort-value="1000" | {{na}}<ref name="forestcrate" group="bp">没有{{tr|crate}}是仅限{{tr|Forest biome}}特产的，但有一些{{tr|crates}}是在任何{{tr|biome}}（包括{{tr|Forest}}）都能钓到的。详情请参阅下面的[[#{{tr|Crate}}机制|{{tr|Crate}}机制]]章节。</ref>
+|}
+{{reflist|group=bp}}
+
+==== 备注 ====
+* {{tr|background}}和播放的{{tr|music}}依照的是不同的优先级顺序，未必与用于生成渔获的[[{{tr|biome}}]]一致。例如，如果播放的是{{tr|Jungle}}的音乐而附近有足够量的{{tr|Snow Block}}，玩家就无法捕到{{tr|Jungle}}{{tr|quest fish}}，而是会捕到{{tr|Snow biome}}的渔获。
+** {{eicons|1.4.0.1|invert=y}} 此外，[[{{tr|Glowing Mushroom biome}}]]渔获要求附近有 200 格{{tr|Glowing Mushroom tiles}}，这个数字要高于显示{{tr|Glowing Mushroom biome}}背景并播放相应音乐所需要的量。
+* 在 {{eil|Not the bees}} {{tr|worlds}}中，一次{{tr|fishing}}尝试有 {{chance|1/2}} 几率不被视为[[{{tr|Jungle}}]]尝试。并且对于{{tr|honey}}中的{{tr|fishing}}尝试，有 {{chance|1/2}} 几率被视为在{{tr|water}}中的{{tr|fishing}}尝试。后者同样使用于 {{eil|Get fixed boi}} {{tr|worlds}}。
+* 在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，当在[[{{tr|Cavern}}]]{{tr|layer}}（见[[#{{tr|Notes}} 2|下方]]获取关于{{tr|layers}}的细节）中{{tr|fishing}}时，若此次{{tr|fishing}}尝试被视为[[{{tr|surface}}]]尝试，此次{{tr|fishing}}尝试有 {{chance|1/3}} 几率被视为[[{{tr|Ocean}}]]尝试，若是{{tr|crate}}尝试，则有 {{chance|1/2}} 几率。当在[[{{tr|Space}}]]{{tr|layer}}{{tr|fishing}}时，玩家永不被视为在[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]中。
+
+=== 地层 ===
+{{see also|{{tr|Layers}}}}
+
+对高度的要求（{{tr|Sky}}/{{tr|Surface}}/{{tr|Underground}}/{{tr|Cavern}}）是以水面所在高度来衡量的，而非玩家所在的位置。<ref name="FishingCheck"/>可以利用这一点，建立两个相邻但水面处于不同地层的水池，这样玩家站在同一个位置就能同时钓两类鱼。
+
+对于钓鱼而言有五个高度区域，具有不同 {{tr|ID}}：
+{| class="terraria lined"
+! {{tr|ID}} !! 区域 !! 高度
+|-
+| 0 || {{tr|Sky}} || ''钓鱼水面'' > {{tr|Surface}}水平面到世界顶部的中间 50% 处<ref name="s" group="lp">见[[{{tr|Space|link=y}}#{{tr|Notes}}|{{tr|Space}} § {{tr|Notes}}]]</ref>
+|-
+| 1 || {{tr|Surface}} || {{tr|Surface}}水平面 < ''钓鱼水面'' ≤ 水平面到世界顶部的中间 50% 处<ref name="s" group="lp"/>
+|-
+| 2 || {{tr|Underground}} || {{tr|Cavern layer}} < ''钓鱼水面'' ≤ {{tr|Surface}}水平面
+|-
+| 3 || {{tr|Caverns}} || 世界底部上方 300 格处 < ''钓鱼水面'' ≤ {{tr|Cavern layer}}
+|-
+| 4 || {{tr|Underworld}} || ''钓鱼水面'' ≤ 世界底部上方 300 格处
+|}
+{{reflist|group=lp}}
+
+==== 备注 ====
+* 在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，{{tr|Underground and Caverns}}高度区域（ID 2 和 3）的高度检查会被调换（即：在常规{{tr|world}}中{{tr|Cavern layer}}独有的渔获现在是{{tr|Underground layer}}独有的）。此外，若当前{{tr|fishing}}尝试的区域 ID 是 2（即：{{tr|Cavern layer}}尝试），则区域 ID 有 {{chance|1/2}} 的几率被设为 1（即：使当前尝试变为[[{{tr|surface}}]]尝试）。
+
+=== 渔获品质 ===
+[[File:Catch quality chances.svg|thumb|right|400px|在给定的所示{{tr|Fishing Power}}下各个渔获品质位的成功判定几率。急剧变化是由于取整造成的。]]
+
+渔获有 6 个不同的'''渔获品质位'''，各自有相应的概率：<ref name="FishingCheck_RollDropLevels"/>
+
+{| class="terraria"
+! 渔获品质
+! 概率
+! 100 {{tr|Fishing Power}}时的几率<ref name="cqfp" group="cq">''显示''的{{tr|Fishing Power}}。所有例子都假设{{eil|luck}}为 0。</ref>
+! 300 {{tr|Fishing Power}}时的几率<ref name="cqfp" group="cq"/>
+|-
+! scope="row" | 丰富<br/>{{note|small=y|paren=y|Plentiful}}
+| colspan="5" | 默认渔获
+|-
+! scope="row" | 常见<br/>{{note|small=y|paren=y|Common}}
+| {{tr|fishing power}} / 150，上限为 {{chance|1 in 2|mode=f}}
+| '''{{chance|1 in 2}}'''
+| '''{{chance|1 in 2}}'''
+|-
+! scope="row" | 不常见<br/>{{note|small=y|paren=y|Uncommon}}
+| {{tr|fishing power}} / 300，上限为 {{chance|1 in 3|mode=f}}
+| '''{{chance|1 in 3}}'''
+| '''{{chance|1 in 3}}'''
+|-
+! scope="row" | 罕见<br/>{{note|small=y|paren=y|Rare}}
+| {{tr|fishing power}} / 1050，上限为 {{chance|1 in 4|mode=f}}
+| {{chance|1 in 10}}
+| '''{{chance|1 in 4}}'''
+|-
+! scope="row" | 非常罕见<br/>{{note|small=y|paren=y|Very Rare}}
+| {{tr|fishing power}} / 2250，上限为 {{chance|1 in 5|mode=f}}
+| {{chance|1 in 22}}
+| {{chance|1 in 7}}
+|-
+! scope="row" | 极度罕见<br/>{{note|small=y|paren=y|Extremely Rare}}<ref group="cq">在源代码中的内部名称为Legendary。{{source code ref|noref=y|v=1.4.4.9|field=Terraria.DataStructures.FishingAttempt.legendary}}</ref>
+| {{tr|fishing power}} / 4500，上限为 {{chance|1 in 6|mode=f}}
+| {{chance|1 in 45}}
+| {{chance|1 in 15}}
+|}
+{{reflist|group=cq}}
+
+分母部分是向下取整的。例如，{{tr|fishing power}}若为 85，则捕获十分罕见渔获的几率为  {{chance|1/52}}。
+
+当生成新的鱼时，各个渔获品质是互相独立的进行判定的。例如，不常见、罕见、十分罕见可能全部成功通过掷骰判定，与此同时常见与非常罕见的掷骰判定则失败。随后，游戏根据哪些品质成功通过判定以及诸如高度与{{tr|biome}}之类其他因素来生成鱼。
+
+除了一些例外情况，在决定玩家具体收获什么鱼时，成功通过判定的渔获品质中最高的那个会优先于更低的那些渔获品质位。然而，并不是每个渔获品质位上都一定有可捕获的鱼；在这种情况下，游戏将继续检查更低的那些渔获品质位。成功通过判定的高渔获品质位并''不会''向下转为更低的品质位。例如，如果罕见品质的判定成功通过，但却并没有可捕获的罕见鱼，游戏会继续检查不常见品质的判定是否成功通过；如果不常见品质的判定失败，就会继续检查常见品质的结果。
+
+每个{{tr|biome}}都有一张基于渔获品质掷骰判定和其他因素的表，列出了在那能够捕到的此{{tr|biome}}特产鱼。如果没有生成任何{{tr|biome}}特产鱼，游戏会继续检查后继那些更低优先级的{{tr|biomes}}。许多渔获品质位上的可用鱼会基于随机性变化，因此在特定{{tr|biome}}下在同一渔获品质位成功通过判定无法保证玩家会得到此品质的某种特定的鱼，甚至无法保证一定会得到此品质的鱼。如果此品质位上没有选定任何鱼，游戏会继续检查更低的那些品质位，当且仅当所有品质位都没有鱼时，游戏会继续检查后继的{{tr|biomes}}。
+
+在水中钓鱼时，如果非常罕见品质成功通过掷骰判定，则一定会首先对几种特定渔获（{{eil|Advanced Combat Techniques}}、{{eil|Dread of the Red Sea}}、[[{{tr|Frog Leg}}]]、[[{{tr|Balloon Pufferfish}}]]、[[{{tr|Zephyr Fish}}]]，依以上顺序）进行检查判定。如果这些检查全部未成功，游戏才会继续对{{tr|biome}}特产鱼进行检查。
+
+所有任务鱼占据的品质位都是不常见，{{eicons|1.4.1|invert=y}}{{tr|Mirage Fish}}和{{tr|Pixiefish}}例外，它们占据的是罕见。
+
+一共只有四种{{tr|fish}}是“丰富”的：{{eil|Bass}}、{{eil|Trout}}、{{eil|Flounder}}、和{{eil|Rock Lobster}}。如果所有其他检查都失败且玩家是在水中钓鱼，那么玩家将默认钓到其中之一：如果是在[[{{tr|Ocean}}]]中钓鱼会钓到{{tr|Trout}}、在{{eversions|Flounder}}中如果是在[[{{tr|Desert}}]]或{{eil|Oasis}}中就会钓到{{tr|Flounder}}或{{tr|Rock Lobster}}（{{tr|Rock Lobster}}的常见程度是{{tr|Flounder}}的一半）、否则就是{{tr|Bass}}。
+
+=== 宝匣机制 ===
+有一个独立的掷骰判定用于决定捕到的是否是[[{{tr|Crate}}]]，默认几率是 10% （如果[[{{tr|Crate Potion}}]]处于激活状态则为 25%）。如果渔获的品质是非常罕见或十分罕见，会生成{{tr|Golden Crate}}；渔获的品质是罕见会生成{{tr|biome}}特产的{{tr|crate}}（如果有，否则会生成{{tr|Iron Crate}}）；渔获品质为不常见会生成{{tr|Iron Crate}}；其他情况下则是{{tr|Wooden Crate}}。在{{eversions|1.4.0.1}}上的{{tr|Hardmode}}中，{{tr|the crate}}会是{{tr|the Hardmode}}的对等{{tr|crate}}。
+
+在{{tr|honey}}中钓鱼永远不会生成{{tr|crate}}。在{{tr|lava}}中钓鱼只在{{eversions|Obsidian Crate}}中会生成{{tr|crates}}，且这些{{tr|crates}}只会是[[{{tr|Obsidian Crate}}]]或[[{{tr|Hellstone Crate}}]]。
+
+=== 堆叠大小 ===
+可堆叠的鱼（即[[{{tr|Bomb Fish}}]]和[[{{tr|Frost Daggerfish}}]]）在生成时的堆叠大小是基于玩家的{{tr|fishing power}}变化的。这种变化可以相当大，较高的{{tr|fishing power}}提高了生成时的最小堆叠大小，同时显著提高了最大堆叠大小。
+
+== 备注 ==
+* 一共有 16 种能产生不同渔获的钓鱼地点。
+* 任务完成数量是与人物绑定的，而非与世界绑定。取得特定奖励所需要的最小数量可以在多个世界累积。而达成{{tr|achievements}}所需的任务完成数则是所有人物在所有世界中的总数，所以可以有多个人物对{{tr|achievements}}有贡献。
+* “可钓得”的鱼和{{tr|critters}}或{{tr|enemies}}之间没有交集：玩家可以钓到[[{{tr|Golden Carp}}]]或[[{{tr|Tropical Barracuda}}]]，但绝不会有[[{{tr|Goldfish}}]]或[[{{tr|Piranha}}]]。即使玩家可以看到水里有{{tr|Goldfish}}，捕获它需要的也是[[{{tr|Bug Net}}]]而非{{tr|fishing pole}}。
+* 在每次有鱼咬钩时浮标会移动两三下，在这之后鱼就会跑掉，但是鱼线会依然处于抛出状态。收线动作只需要在这个动画结束之前进行即可，具体的点击时间不会影响渔获的品质。
+* 在不向[[{{tr|Angler}}]]询问任务鱼线索的情况下也可能钓到当天的任务鱼。
+* 时间必须自然地从 {{time|04:29 AM}} 走到 {{time|04:30 AM}}（新一天的开始），才会有新的任务开始。
+** {{eil|Sleeping|睡觉}}会加速时间。这可以让完成更多{{tr|quests}}容易些。
+** 玩家可以使用{{eil|Enchanted Sundial}}来立即获得新{{tr|quest}}。
+* {{eicons|1.4.0.1|invert=y}} {{tr|Crate}}内的东西是在打开的时候决定的。因此，在[[{{tr|Hardmode}}]]期间打开在{{tr|pre-Hardmode}}钓到的{{tr|Crate}}也能够获得{{tr|Hardmode}}物品。在{{tr|Hardmode}}之前囤积{{tr|crates}}可以让玩家无需打破{{tr|altars}}即可得到{{tr|Hardmode ores}}的早期供应。
+* [[{{tr|Ocean}}]]特有的渔获，包括{{tr|quest fish}}，无法在{{tr|Hallowed}}或{{tr|Corrupt}}/{{tr|Crimson Ocean}}捕到。但是朝着地图边缘方向深入{{tr|Ocean}}一些，到{{tr|biome Sand Block}}距离水面更远的位置就可能可以捕获它们。当播放起{{tr|Ocean}}{{tr|Biome}}的音乐时，就能捕到{{tr|Ocean}}鱼了。
+* 在{{3DS version}}中，玩家在{{tr|Ocean}}{{tr|Biome}}中可以捕到很多种鱼，其中有些并非此{{tr|Biome}}原生。
+* 在所有大小的世界中，{{tr|Sky}}钓鱼所需要最小高度都要高于生成{{tr|floating lakes}}所需的最小高度。因此，{{tr|a floating lake}}有可能会生成的太低从而不算是{{tr|Sky}}中，只会生成{{tr|surface}}的{{tr|fish}}和{{tr|crates}}。
+* 在{{tr|reverse gravity}}（用[[{{tr|Gravitation Potion}}]]或[[{{tr|Gravity Globe}}]]）下也可以钓鱼；{{tr|the bobber}}会“上落”到水中，而鱼可以正常捕到。
+* 通过钓鱼得到的[[{{tr|Weapons}}]]和[[{{tr|accessories}}]]永远不会带有[[{{tr|Modifiers}}]]。
+
+== 成就 ==
+{{achievement|name=Hot Reels!}}
+
+== 小贴士 ==
+{{for|高效收集{{tr|bait}}的{{tr|tips}}|{{tr|Bait}}#{{tr|Tips}}}}
+
+=== 常规 ===
+[[File:Dual-Biome Fishing 2.png|thumb|站在湖左边可在{{tr|Glowing Mushroom biome}}中{{tr|fishing}}，而站在右边可在{{tr|Forest fishing}}。]]
+
+* 建造可在多种{{tr|biomes}}中{{tr|fishing}}有助于获得{{tr|biomes}}独有的{{tr|loots}}和{{tr|quest fish}}。[[{{tr|Buckets}}]]可以用来复制{{tr|liquids}}以快速建造湖泊。
+** 一个湖泊可以在多个{{tr|biomes}}之间共享；重要的是玩家所在的{{tr|biome}}。在图中的湖泊可以用于{{tr|Forest and Glowing Mushroom biome fishing}}，因为当站在湖右侧时没有足够的{{tr|Glowing Mushroom biome tiles}}。
+* 除非想要召唤[[{{tr|Duke Fishron}}]]，否则在[[{{tr|Ocean}}]]中{{tr|fishing}}时，[[{{tr|Truffle Worm}}]]不应是最左上角的{{tr|bait item}}。{{tr|Bait}}是按照左上到右下的顺序使用的，这意味着对于常规钓鱼来说{{tr|Truffle Worm}}应当放在右下角格子里，而对于召唤{{tr|Duke Fishron}}则应当在左上角格子。将{{tr|Truffle Worm}}放在其他格子里则会阻止玩家使用{{tr|inventory}}中排在它后面的那些{{tr|bait}}，从而让玩家没法{{tr|fishing}}。
+* 玩家可以在{{tr|fishing}}时使用下列东西来自卫且不打断钓鱼：{{eil|Shield of Cthulhu}}、任意[[{{tr|Summon}}|召唤物]]（只要在玩家抛线前召唤出来）、{{eil|Solar Flare armor}}的爆炸、能攻击的{{tr|mount}}、或任意{{tr|thorns effect}}（如[[{{tr|Thorns Potion}}]]）。
+* 考虑到较早就获得{{eil|Chum Bucket|s}}有些难度，以及第二个和第三个{{tr|Chum Bucket}}所给出的低加成，在游戏早期一次只用一个{{tr|Chum Bucket}}会比较好。
+* [[{{tr|Sonar Potion}}]]让玩家能选择性地对需要的渔获收杆。 
+** 对于{{tr|honey or lava}}，使用它不太值得，因为只有少数几种可能性，并且全都是有用且可出售的。
+** 否则，使用{{tr|Sonar Potions}}可以更加节省{{tr|bait}}，但花费时间更长：（使用{{tr|Sonar Potion}}时）等待不想要的渔获改变的时间可能会比（不使用{{tr|Sonar Potion}}时）两次咬钩之间的时间还要长。
+*** 如果玩家的{{tr|bait}}充足且不仅限于捕捉数种特定的渔获，那么不使用{{tr|Sonar Potions}}会快得多（尤其在高[[#影响因素|{{tr|Fishing Power}}]]下）。
+*** 或者，玩家也可以通过切换到另一个{{tr|hotbar slot}}并切回的方式来对待不想要的渔获。这会更快地取消捕获且无需冒消耗{{tr|bait}}的风险。
+** 另一方面，{{tr|bait}}只会消耗在玩家真正想要的渔获上，玩家也不会将{{tr|inventory}}空间用在低价值的鱼上。
+* 钓[[{{tr|Scaly Truffle}}]]在进入{{tr|Hardmode}}后仍然是个不错的财源，即使在得到所有可钓得的装备后，玩家依然需要补充{{tr|potion ingredients}}和（通过{{tr|crates}}）{{tr|ores}}/{{tr|metals}}。
+
+=== 渔夫任务 ===
+* {{tr|Angler}}给出的奖励有六个不同的配饰，但在[[{{tr|Tinkerer's Workshop}}]]可以将它们合并成一个功能配饰和一个信息配饰：
+** [[{{tr|Tackle Box}}]]、[[{{tr|High Test Fishing Line}}]]、和[[{{tr|Angler Earring}}]]合并成{{eil|Angler Tackle Bag}}。
+*** {{tr|The Angler Tackle Bag}}之后可以通过和{{eil|Lavaproof Fishing Hook}}结合来升级为{{eil|Lavaproof Tackle Bag}}。
+*** {{tr|The Angler Tackle Bag}}的{{tr|fishing power bonus}}可和另一个{{tr|Angler Earring}}和/或{{tr|Lavaproof Tackle Bag}}叠加。所有三件物品会提供 30% 的总{{tr|bonus}}。
+** {{eil|Fisherman's Pocket Guide}}、{{eil|Weather Radio}}、和{{eil|Sextant}}组合成{{eil|Fish Finder}}。
+*** {{tr|The Fish Finder}}随后可和其他物品组合来制作{{eil|PDA}}，后者可用于制作{{eil|Cell Phone}}，最终可制作成{{eil|Shellphone}}。
+* 当玩家的{{tr|inventory}}里已经有一条{{tr|quest fish}}时，无法再钓起<ref name = "FishingCheck_ProbeForQuestFish"/>或拾取{{source code ref|v=1.4.4.9|method=Terraria.Player.GetItem}}此种{{tr|quest fish}}，但只要把{{tr|fish}}简单地存到一个[[{{tr|storage item}}]]，甚至{{tr|trash slot}}（虽然这样很容易失去这条鱼）中即可收集多条。
+** 保存的{{tr|quest fish}}可以留待下次需要此{{tr|quest fish}}时使用。
+*类似地，世界中的所有玩家都会需要相同的日常{{tr|quest fish}}，因此一个玩家就可以给所有玩家供应当日{{tr|quest fish}}。但是，如果有一个玩家与已经完成过此任务的某个玩家同名，那么当他尝试交付任务时会被拒绝。
+** 注意{{tr|quest fish}}不会叠加，但  3 个{{tr|chests}}就足以将每种{{tr|quest fish}}都保存 3 份。
+** 玩家上交了任务之后，当天就不再能够钓到{{tr|quest fish}}了<ref name="FishingCheck_ProbeForQuestFish"/>。
+
+=== 时间管理 ===
+* 长时间钓鱼可能会很无聊，而且''也并非''很高效。最好是让每次钓鱼持续时间短一些，并且挑选玩家有奖励的时间（{{tr|moon phase}}、{{tr|weather}}、[[{{tr|luck}}]]）钓鱼：
+* 任何临近{{time|3 AM}}或{{time|3PM}}的时间。玩家应当检查这些条件：是{{tr|overcast}}或雨天、{{tr|a full moon}}、或提升{{tr|luck}}的事件（{{eil|Ladybug}}群或{{eil|Lantern Night}}），如果另外两个因素是中性或以上，那就值得开始{{tr|fishing}}。
+* 即使玩家并非主要为了{{tr|crates}}去钓鱼，{{tr|Crate Potion}}的 4 分钟持续时间也提供了一个很好的基准。即便是单瓶{{tr|potion}}也通常能提供足够时间来钓到多个{{tr|crates}}、以及多条{{tr|quest fish}}（如果有任务）。
+* 在{{time|3:00 AM}}至{{time|4:30 AM}}或{{time|4:30 PM}}至{{time|6:00 PM}}之间开始{{tr|fishing}}会让{{tr|Crate potion}}的持续时间覆盖[[#影响因素|上述]]的正面时段之一，同时还能避开之后的负面时段。如果一瓶{{tr|Crate potion}}失效之后条件依然良好，那么可能值得再使用第二瓶{{tr|potion}}，哪怕会持续到进入负面时段；同时甚至可能值得钓到用完{{tr|Sonar potion}}的持续时间。
+* 使用{{eil|Loadout}}或[[{{tr|portable storage}}]]{{tr|item}}允许快速更换{{tr|fishing}}装备，包括将[[{{tr|armor}}]]切换到[[{{tr|Angler armor}}]]。
+
+=== 熔岩钓鱼 ===
+{{see also|{{tr|Lava}}#{{tr|Fishing}}}}
+{{tr|pre-Hardmode}}就能进行[[{{tr|Lava}}]]{{tr|fishing}}，但在{{tr|Hardmode}}中会更容易。玩家需要三个因素（{{tr|bait}}、{{tr|fishing pole}}、{{tr|accessory}}）中的至少一个，且拥有其中两个会大幅提高捕获速度：
+
+# 在{{tr|Hardmode}}中，{{tr|the Angler}}会奖励[[{{tr|Hotline Fishing Hook}}]]，这是一把允许用任意{{tr|bait}}在{{tr|lava}}中钓鱼的{{tr|fishing pole}}。
+# 在{{tr|Hardmode}}之前，就能在[[{{tr|Underworld}}]]中捕捉{{tr|lava bait}}。如果玩家没有[[{{tr|Golden Bug Net}}]]，那就需要制作一个[[{{tr|Lavaproof Bug Net}}]]。
+# 以上任何一个都使得可以钓到[[{{tr|Obsidian Crate}}]]（{{tr|Hardmode}}中是[[{{tr|Hellstone Crates}}]]），以寻找[[{{tr|Lavaproof Fishing Hook}}]]。{{tr|This accessory}}允许用任意{{tr|bait}}和钓竿在{{tr|lava}}中钓鱼。渔获以及{{tr|crates}}中还会有其他有用及可出售的物品；如果玩家没有[[{{tr|Shadow Key}}]]，则可以把[[{{tr|Obsidian Lock Box}}]]存起来直到（在[[{{tr|Dungeon}}]]中）得到一把为止。如同上方所述，{{tr|the Lavaproof Fishing Hook}}可以和{{tr|Angler Tackle Bag}}相结合来制作{{tr|Lavaproof Tackle Bag}}。
+# 同样，拥有三种（{{tr|lava bait}}、{{tr|Hotline Fishing Hook}}、或{{tr|Lavaproof Fishing Hook accessory}}）中的任意两种，会更快地产生渔获。当钓罕见的[[{{tr|Lava Charm}}]]时这特别有用。
+
+== 最大{{tr|Fishing Power}} ==
+{{tr|fishing power}}的最大可能值是 375。
+
+{{tr|Item}}奖励能加到 188：
+* [[{{tr|Golden Fishing Rod}}]]有 50%
+* [[{{tr|bait}}]]有 50%（如[[{{tr|Master Bait}}]]）
+* [[{{tr|Fishing Potion}}]]有 15%
+* [[{{tr|Angler armor}}]]有 15%
+** {{tr|Angler Hat}}有 5%
+** {{tr|Angler Vest}}有 5%
+** {{tr|Angler Pants}}有 5%
+* [[{{tr|Angler Earring}}]]有 10%
+* {{eil|Angler Tackle Bag}}有 10%
+* {{eil|Lavaproof Tackle Bag}}有 10%
+* {{eil|Fishing Bobber}}有 10%
+* {{eicons|1.4.4}} [[{{tr|Tipsy}}]]有 5%
+* {{eicons|1.4.4}} 坐在[[{{tr|Toilet}}]]上有 5%，[[{{tr|Inner Tube}}]]有 5%
+** 这可以通过任何提供水下移动的物品来达成（[[{{tr|Flipper Potion}}]]、[[{{tr|Neptune's Shell}}]]、[[{{tr|Trident}}]]、[[{{tr|Fishron Wings}}]]，等等）。这会禁用{{tr|Inner Tube}}的漂浮效果，让玩家能在水中坐在{{tr|Toilet}}上。
+* {{eil|Gummy Worm}}有 3%
+
+再乘上[[{{tr|weather}}]]和[[{{tr|Moon phase}}]]奖励：
+* 时段 30%：188 × 1.3 = 244.4
+* 雨天 20%：244.4 × 1.2 = 293.28
+* 多云 10%：293.28 × 1.1 = 322.608
+* {{tr|Full moon}} 10%：322.608 × 1.1 = 354.8688 ≈ 354
+
+{{eil|Chum Bucket}}会添加额外的加成：
+* 第一桶 +11：354 + 11 = 365
+* 第二桶 +6：365 + 6 = 371
+* 第三桶 +3：371 + 3 = 374
+
+{{eil|Luck}}有可能会进一步提升{{tr|Fishing Power}}：具有正{{tr|luck}}时，每次收杆时，374 {{tr|Fishing Power}}会随机变为最高 523 {{tr|Fishing Power}}。
+
+=== 何时停止{{tr|fishing}} ===
+一旦玩家拥有了{{eil|Golden Bug Net}}、[[{{tr|Golden Fishing Rod}}]]、{{eil|Fish Finder}}、用于处理{{tr|water}}的{{eil|Bottomless Water Bucket}}和{{eil|Super Absorbant Sponge}}、用于处理{{tr|honey}}的{{eil|Bottomless Honey Bucket}}和{{eil|Honey Absorbant Sponge}}、以及一个{{eil|Angler Tackle Bag}}（或者甚至两个{{tr|Angler Tackle Bags}}和/或一个[[{{tr|Angler Earring}}]]），{{tr|Angler}}就给不出什么了。不考虑{{tr|the Angler}}的{{tr|Fishing}}可能依然有利可图，特别是收集{{tr|crates}}和其他特殊渔获。
+
+{{eicons|Lavaproof Fishing Hook|invert=y}} {{tr|Angler}}奖励的几率整体上是随着时间推移而提升的，但在 150 个{{tr|Angler quest}}之后，大多数奖励的几率会回复到初始几率并维持不变。一旦玩家得到了重要的{{tr|pre-Hardmode}}的奖励后，在{{tr|Hardmode}}之前就应当不管{{tr|Angler quests}}，希望避免在得到{{tr|Hardmode}}奖励之前就触及截止线。在{{tr|Hardmode}}之前囤积{{tr|crates}}也很有帮助，可以在{{tr|Hardmode}}中打开它们以作为{{tr|Hardmode ores and metals}}的早期来源。
+
+进入{{tr|Hardmode}}之后，只会多出几个{{tr|weapons}}和{{tr|mount}}可钓（{{eil|Toxikarp}}或{{eil|Bladetongue}}、{{eil|Crystal Serpent}}、{{eil|Scaly Truffle}}）。{{tr|Angler}}只有两个额外的奖励：和部分早期{{tr|Hardmode Wings}}等同的，提供机动性的[[{{tr|Fin Wings}}]]；以及用于在{{tr|lava}}里{{tr|fishing}}的{{eil|Hotline Fishing Hook}}（它在玩家获得{{eil|Lavaproof Fishing Hook}}或{{eil|Lavaproof Tackle Bag}}后很可能是多余的）。一旦这些东西玩家已经全部拥有，他们就可算是完结了{{tr|the Angler Quests}}。{{tr|Fishing}}依然可以提供{{tr|potion}}补给、{{tr|metals}}（尤其是代用金属）、和钱（{{tr|the Scaly Truffle}}是不错的目标），但在此后就不再有新的物品了。
+
+== 花絮 ==
+* [[{{tr|Golden Carp}}]]除了 {{iteminfo|Golden Carp|sell}} 的卖价之外没有任何用处。特别地，它无法被烹饪。
+* {{eicons|1.4.0.1|invert=y}}[[{{tr|Neon Tetra}}]]除了 {{iteminfo|Neon Tetra|sell}} 的卖价外没有任何用处。
+* [[{{tr|Double Cod}}]]为制作[[{{tr|Ammo Reservation Potion}}]]所必需，有可能是因为“鳕鱼（Cod）”这个单词和第一人称射击游戏{{wikipedia|Call of Duty|《使命召唤》（Call of Duty）}}系列的缩写恰好一致。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在玩家可以在部分浸没在{{tr|liquid}}中时{{tr|fishing}}，只要玩家的手臂高于浮标即可。
+** 现在在{{tr|Hallowed}}[[{{tr|Oasis}}]]中钓鱼时，可以同时获得{{tr|Hallowed}}或{{tr|Oasis fish}}。同样的规则不适用于更具侵略性的{{tr|Corruption}}/{{tr|Crimson}}。
+** 激活[[{{tr|Inner Tube}}]]或[[{{tr|Mollusk Whistle}}]]时接触{{tr|liquid}}现在提供 5 {{tr|fishing power}}。
+** 坐在[[{{tr|toilets}}]]上现在提供 +5 {{tr|fishing power}}。
+** [[{{tr|Tipsy}}]]{{tr|debuff}}现在提供 5 {{tr|fishing power}}。
+** 添加了[[{{tr|Fishing Bobbers}}]]。
+** 添加了[[{{tr|Surly Slime}}]]，可在{{tr|Blood Moon}}期间于{{tr|water}}中钓上。}}
+{{history|Desktop 1.4.1|
+** 移除了在 1.4.0.1 中引入的高{{tr|Fishing Powers}}的下调效果。
+** {{tr|Mirage Fish}}和{{tr|Pixiefish}}调整为“不常见”而非“稀有”，以匹配{{tr|other Quest fish}}。}}
+{{history|Desktop 1.4.0.5|
+** 现在在选择要使用的{{tr|bait}}时会优先考虑[[{{tr|Ammo}}]]栏。
+** [[{{tr|Dungeon}}]]钓鱼现在会优先考虑{{tr|Dungeon}}战利品而非重叠的其他[[{{tr|biomes}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Desert}}]]（包括[[{{tr|Oasis}}]]）作为{{tr|fishing biome}}。
+** 添加了[[{{tr|Blood Moon}}]]钓鱼：现在在{{tr|Blood Moon}}期间在水中可以钓出 5 种新{{tr|enemies}}。
+** 添加了[[{{tr|Flounder}}]]和[[{{tr|Rock Lobster}}]]。
+** 添加了[[{{tr|Chum Caster}}]]和[[{{tr|Scarab Fishing Rod}}]]。
+** [[{{tr|Water Strider}}]]、[[{{tr|Gold Water Strider}}]]、[[{{tr|Maggot}}]]、[[{{tr|Ladybug}}]]、[[{{tr|Gold Ladybug}}]]、[[{{tr|Magma Snail}}]]、[[{{tr|Lavafly}}]]、[[{{tr|Hell Butterfly}}]]、[[{{tr|Black Dragonfly}}]]、[[{{tr|Blue Dragonfly}}]]、[[{{tr|Green Dragonfly}}]]、[[{{tr|Orange Dragonfly}}]]、[[{{tr|Red Dragonfly}}]]、[[{{tr|Yellow Dragonfly}}]]、和[[{{tr|Gold Dragonfly}}]]加入{{tr|baits}}行列。
+** 在{{tr|crates}}系列中加入了[[{{tr|Frozen Crate}}]]、[[{{tr|Oasis Crate}}]]、[[{{tr|Obsidian Crate}}]]和[[{{tr|Ocean Crate}}]]以及其[[{{tr|Crates}}#种类|{{tr|Hardmode}}版本]]。
+** 添加了[[{{tr|Chum Bucket}}]]。
+** 添加了两种在{{tr|lava}}中钓鱼的方法：[[{{tr|Lavaproof Fishing Hook}}]]和[[{{tr|Underworld}}]]{{tr|bait}}。
+** {{tr|Pre-Hardmode}}的{{tr|crates}}不再提供{{tr|Hardmode ores}}。
+** {{tr|Angler quest rewards}}在 150 个{{tr|quests}}后不再会减少。
+** {{tr|Fishing Power}}现在受[[{{tr|Luck}}]]影响。
+** 现在高{{tr|Fishing Powers}}会被向下调整。{{tr|Fishing Power}}越高，调整效果越强。}}
+{{history|Desktop 1.3.0.5|修正了能通过{{tr|fishing}}获得[[{{tr|Seedler}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.4|从钓鱼得到的物品现在能正确由高亮系统高亮。}}
+{{history|Desktop 1.3.0.1|
+** 加入[[{{tr|Jungle Crate}}]]、[[{{tr|Sky Crate}}]]、[[{{tr|Corrupt Crate}}]]、[[{{tr|Crimson Crate}}]]、[[{{tr|Hallowed Crate}}]]、[[{{tr|Dungeon Crate}}]]。
+** 地表不再能钓到天空任务鱼。
+** 降低在天空环境下钓鱼所需的水体格数。}}
+{{history|Desktop 1.2.4.1|
+** 修复在鱼线断裂之后反复点击依然会生成渔获的 Bug。
+** 修复一个会导致当处在死亡的[[{{tr|Mediumcore}}]]人物任务栏中时[[#Junk|{{tr|Seaweed}}（垃圾）]]变为[[{{tr|Seaweed}}]]（宠物物品）的 Bug（现在这种情况下{{tr|Seaweed}}会直接消失）。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 添加了{{tr|Jungle Crate}}、{{tr|Sky Crate}}、{{tr|Corrupt Crate}}、{{tr|Crimson Crate}}、{{tr|Hallowed Crate}}、以及{{tr|Dungeon Crate}}。
+** 地表不再能钓到天空任务鱼。
+** 降低在天空环境下钓鱼所需的水体格数。}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 浮标机制更新为与{{tr|Desktop}} 1.3.0.1 一致。
+** 添加了{{tr|Jungle Crate}}、{{tr|Sky Crate}}、{{tr|Corrupt Crate}}、{{tr|Crimson Crate}}、{{tr|Hallowed Crate}}、以及{{tr|Dungeon Crate}}。
+** 地表不再能钓到天空任务鱼。
+** 降低在天空环境下钓鱼所需的水体格数。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}但具有不同的{{tr|bobber}}机制。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Fishing}}

@@ -1,0 +1,69 @@
+<div class="ajaxHide">
+{{main|数据 ID}}
+本页面列出了《[[{{tr|Terraria}}]]》中各单独[[{{tr|Armor}}]]图像的ID。
+</div><!--
+
+// load armor db
+-->{{getArmorInfo|head||}}<!--
+-->{{getArmorInfo|body||}}<!--
+-->{{getArmorInfo|legs||}}<!--
+
+// cache template result for future use
+-->{{#vardefine:_na|{{na}}}}<!--
+-->{{#vardefine:_count|{{getArmorInfo|||count}}}}<!-- 
+
+//l10n table for namenote. Translate values of these vars on language pages.
+-->{{#vardefine:_nn_back|                 背后                 }}<!--
+-->{{#vardefine:_nn_bottom|               下摆               }}<!--
+-->{{#vardefine:_nn_extension|            延展            }}<!--
+-->{{#vardefine:_nn_female bottom|        女性下摆        }}<!--
+-->{{#vardefine:_nn_female extension alt| 女性延展备选 }}<!--
+-->{{#vardefine:_nn_female extension|     女性延展     }}<!--
+-->{{#vardefine:_nn_female|               女性               }}<!--
+-->{{#vardefine:_nn_male bottom|          男性下摆          }}<!--
+-->{{#vardefine:_nn_male extension alt|   男性延展备选   }}<!--
+-->{{#vardefine:_nn_male extension|       男性延展       }}<!--
+-->{{#vardefine:_nn_male|                 男性                 }}<!--
+
+// print table -->
+{| class="terraria"
+! width=30px | ID
+! 头部
+! 身体
+! 腿部
+
+{{#loop:id|0|{{#var:_count}}|<!--
+	--><tr><!--
+		--><td>{{#var:id}}</td><!--
+		--><td><!--
+			-->{{#if:{{#dplvar:__armor:name:head:{{#var:id}}}}|<!--
+				-->[[File:{{#dplvar:__armor:image:head:{{#var:id}}}}|link=]] [[{{tr|{{#dplvar:__armor:link:head:{{#var:id}}}}}}|{{tr|{{#dplvar:__armor:name:head:{{#var:id}}}}}}]] <!--
+				-->{{#if:{{#vardefineecho:_n|{{#dplvar:__armor:namenote:head:{{#var:id}}}}}}|{{note|paren=y|{{#var:_nn_{{#var:_n}}|{{#var:_n}}}}}}}}<!--
+			-->|<!-- else
+				-->{{#var:_na}}<!--
+			-->}}<!--
+		--></td><!--
+		--><td><!--
+			-->{{#if:{{#dplvar:__armor:name:body:{{#var:id}}}}|<!--
+				-->[[File:{{#dplvar:__armor:image:body:{{#var:id}}}}|link=]] [[{{tr|{{#dplvar:__armor:link:body:{{#var:id}}}}}}|{{tr|{{#dplvar:__armor:name:body:{{#var:id}}}}}}]] <!--
+				-->{{#if:{{#vardefineecho:_n|{{#dplvar:__armor:namenote:body:{{#var:id}}}}}}|{{note|paren=y|{{#var:_nn_{{#var:_n}}|{{#var:_n}}}}}}}}<!--
+			-->|<!-- else
+				-->{{#var:_na}}<!--
+			-->}}<!--
+		--></td><!--
+		--><td><!--
+			-->{{#if:{{#dplvar:__armor:name:legs:{{#var:id}}}}|<!--
+				-->[[File:{{#dplvar:__armor:image:legs:{{#var:id}}}}|link=]] [[{{tr|{{#dplvar:__armor:link:legs:{{#var:id}}}}}}|{{tr|{{#dplvar:__armor:name:legs:{{#var:id}}}}}}]] <!--
+				-->{{#if:{{#vardefineecho:_n|{{#dplvar:__armor:namenote:legs:{{#var:id}}}}}}|{{note|paren=y|{{#var:_nn_{{#var:_n}}|{{#var:_n}}}}}}}}<!--
+			-->|<!-- else
+				-->{{#var:_na}}<!--
+			-->}}<!--
+		--></td><!--
+	--></tr><!--
+-->}}
+
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Armor IDs}}

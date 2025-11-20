@@ -1,0 +1,50 @@
+{{item infobox
+| auto = 1801
+| mana = @@@@ {{eicons|1.4.0.1|small=y}} / 3 {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = Drop / hardmode
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Bat Scepter (demo).gif|framed|玩家使用{{tr|Bat Scepter}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Mimic}}]]。注意{{tr|bat projectiles}}的自动制导能力。]]
+
+'''{{tr|Bat Scepter}}'''是一把[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|wand}}]]，有 2.5–12.5%（6.25–12.5%）的概率掉落自[[{{tr|Pumpkin Moon}}]][[{{tr|Event}}]]期间的[[{{tr|Pumpking}}]]，具体概率取决于当前波数。<ref>{{tr|pumpkin moon}}的各个波次所对应的具体掉落几率：{{pumpkin moon item drop rates|1/8|fromwave=10|towave=20}} 更多信息见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]。</ref> 使用时，它可发射 {{eicons|1.4.0.1|invert=y}} 1–3 / {{eicons|1.4.0.1}} 2–3 只追踪{{tr|bats}}，它们不能穿透[[{{tr|enemies}}]]或穿过[[{{tr|blocks}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* 发射半秒后，{{tr|bat}}开始自动追踪 50 {{tr|tile}}范围内距离最近的{{tr|enemy}}，而且若之后其他{{tr|enemy}}距离更近，其会改变追踪目标。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle == 36</code> 代码段。如果距离{{tr|enemy}}的水平和竖直距离加起来小于 50 {{tr|tile}}，则{{tr|The bats}}可追踪此{{tr|enemy}}。}}
+* {{tr|bat projectiles}}无法进入[[{{tr|water}}]]或[[{{tr|lava}}]]中，但可以进入[[{{tr|honey}}]]。
+** 它们不会追踪接触到{{tr|liquids}}的任何{{tr|enemy}}，除非此{{tr|enemy}}能够穿透{{tr|block}}移动。
+* {{eicons|1.4.4|small=y}} {{tr|The bats}}未追踪目标时的最大速度为 {{mph|10 pixels}}，而追踪目标时的最大速度为 {{mph|13 pixels}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle == 36</code> 代码段。}}
+* 若{{tr|Bat projectiles}}未击中{{tr|enemy}}或{{tr|solid block}}则会在 10 {{tr|seconds}}后消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+
+== 小贴士 ==
+* 相较于[[{{tr|Wasp Gun}}]]，{{tr|Bat Scepter}}具有更高的单体 {{DPS}}，但在密闭区域内（如[[{{tr|Dungeon}}]]）或是对抗大群{{tr|enemies}}时（如在[[{{tr|Events}}]]期间）表现不佳。
+
+== 花絮 ==
+* 它可被看做{{tr|Bee Gun and Wasp Gun}}的[[{{tr|Halloween}}]]主题对应物。
+* {{eicons|1.3.0.1}} {{tr|The Bat Scepter}}发射时会发出与[[{{tr|wings}}]]相同的音效。
+** 在{{old-gen console version}}中，它发射时不发出声音，但在击中时会发出与{{tr|wings}}相似的声音。
+** 在{{eversions|1.3.0.1|invert=y|old-gen=n}}中，它在发射时发出类似于翅膀的微妙声音。
+
+== 历史 ==	
+{{history|Desktop 1.4.4|{{tr|Bats}}现在追击目标的速度大约快了 30% （它们在不追击时速度不变）。}}
+{{history|Desktop 1.4.0.1|
+** 每次施法平均{{tr|Bats}}数量由 2 提升至 2.5。
+** {{tr|Mana cost}}由 3 提升至 6。}}
+{{history|Desktop 1.2.1.1|现在可[[{{tr|Modifier}}|{{tr|reforged}}]]。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.1.1 引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.1.1 引入。}}
+{{history|3DS-Release|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.1.1 引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Bat Scepter}}

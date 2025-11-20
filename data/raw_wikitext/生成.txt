@@ -1,0 +1,46 @@
+{{about|{{tr|the player}}的{{tr|spawn}}位置|玩家死亡后{{tr|respawn}}的细节|{{tr|Death}}#{{tr|Respawn}}|其他实体的生成机制|{{tr|NPC spawning}}}}
+
+'''{{tr|World Spawn Point}}'''指的是玩家在进入一个新创建的[[{{tr|world}}]]或加入[[{{tr|multiplayer}}]][[{{tr|server}}]]时所出现的位置。{{tr|world spawn point}}会位于[[{{tr|surface}}]]{{tr|layer}}以上，且不浸没在任何[[{{tr|liquid}}]]中。它通常会位于{{tr|world}}的水平中心点五格范围内的最上方的那个{{tr|block}}上，但若范围内没有有效{{tr|tile}}，水平范围会扩大。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld|t=相关的 world generation pass 称为“<code>Spawn Point</code>”。}}它在绝大部分情况下位于[[{{tr|Forest}}]]{{tr|biome}}中，因为更危险的{{tr|biomes}}不会出现在{{tr|the world}}的中心。
+
+玩家的'''{{tr|Spawn Point}}'''最初是{{tr|world spawn point}}，但可以通过制作一张[[{{tr|Bed}}]]将其放置在{{tr|house}}中并在其上按{{key|open}}按钮来改变。{{tr|The spawn point}}是玩家[[{{tr|death}}]]后重生的地方，并且[[{{tr|Magic Mirror}}|{{tr|Magic Mirror}}/{{tr|Ice Mirror}}]]（{{tr|or its upgrades}}）或[[{{tr|Recall Potion}}]]将传送到此处。一旦{{tr|the bed}}所在的[[{{tr|house}}]]被破坏或在{{tr|bed}}上再次按下{{key|open}}，玩家的{{tr|spawn point}}会恢复为世界的初始{{tr|spawn point}}。
+
+{{eicons|1.4.0.1}}{{tr|World Spawn Point}}在[[{{tr|minimap}}]]上被标记为 [[File:Map Spawn.png]] 绿色箭头{{tr|icon}}；而玩家的{{tr|Spawn Point}}被标记为 [[File:Map Bed.png]] {{tr|bed icon}}。
+
+== 备注 ==
+* 将{{tr|world spawn point}}的位置记作 {{code|(x, y)}}，生成过程的描述如下：
+** 当玩家在{{tr|world spawn point}}处{{tr|spawn}}或{{tr|respawn}}，或者传送至{{tr|world spawn point}}时（用{{eil|Shellphone (Spawn)}}传送至{{tr|world spawn point}}除外），游戏会检查{{tr|spawn point}}上方的 3×3 格区域（由 {{code|(x-1,y-3)}} 至 {{code|(x+1, y-1)}}）。如果这一区域包含任何[[{{tr|block}}|{{tr|solid block}}]]或[[{{tr|liquid}}]]，{{tr|spawn point}}会被视为''被阻挡''。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn_IsAreaAValidWorldSpawn}}
+*** {{eicons|1.4.0.1}}当{{tr|world spawn point}}被阻挡时，游戏会检查{{tr|world spawn point}}正上方的 30 格（由 {{code|(x, y)}} 至 {{code|(x, y-29)}}）以寻找未被阻挡的{{tr|spawn point}}（{{tr|tile}}上方的 3×3 格区域不包含任何{{tr|solid block or liquid}}）。如果在高度为 {{code|y1}} 处找到了{{tr|tile}}，新的{{tr|spawn point}}将会是 {{code|(x, y1)}}，且游戏会清理{{tr|spawn point}}上方的区域。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn_GetPositionAtWorldSpawn}}
+**** 如果没有找到这种{{tr|tile}}，则玩家会在{{tr|world spawn point}}{{tr|spawn}}。
+*** {{eicons|1.4.0.1|invert=y}}当{{tr|world spawn point}}被阻挡时，游戏总是会清理{{tr|world spawn point}}。
+:: 清理{{tr|spawn point}}时，所有位于{{tr|spawn point}}上方 3×3 格区域以内的{{tr|solid blocks and liquids}}会被摧毁，以让玩家正确生成。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn_ForceClearArea}}装有东西的[[{{tr|storage items}}]]和支撑它们的{{tr|tiles}}不会被摧毁，此种情况下玩家会{{tr|spawn}}在{{tr|tiles}}内部。
+:* 若{{tr|world spawn point}}未被阻挡但处于空中，游戏会检查{{tr|world spawn point}}下方 3 格宽×50 格高的长方形区域（由 {{code|(x-1, y)}} 至 {{code|(x+1, y+49)}}）以寻找实心{{tr|tile}}。如果在高度为 {{code|y2}} 处找到了实心{{tr|tile}}，新的{{tr|spawn point}}将会是{{code|(x, y2)}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn_DescendFromDefaultSpace}}
+::* 如果没有找到这种{{tr|tile}}，则玩家会在{{tr|world spawn point}}{{tr|spawn}}。
+* 当玩家通过{{tr|Shellphone (Spawn)}}传送至{{tr|world spawn point}}时：
+** 如果{{tr|world spawn point}}被阻挡，游戏会检查{{tr|world spawn point}}正上方的 30 格以寻找未被阻挡的{{tr|spawn point}}，并将新{{tr|spawn point}}设置为找到的有效{{tr|tile}}。
+** 如果没有找到这种{{tr|tile}}，则游戏会清理{{tr|world spawn point}}上方的区域，玩家会在{{tr|world spawn point}}{{tr|spawn}}。
+
+== 小贴士 ==
+* 在{{tr|the world spawn point}}上建个庇护所应该会很有用，这样当玩家恰巧在{{tr|the world spawn point}}重生（比如所设置的{{tr|spawn point}}意外地被还原到了初始{{tr|world spawn point}}）时能够得到一些安全保障。类似地，要避免在{{tr|the world spawn point}}正下方挖掘，因为玩家重生在那里时会无可避免地坠落。
+* 玩家有可能恰好生成在[[{{tr|Floating Island}}]]上，尽管这种情况极其罕见。此种情况下，强烈建议用手头的{{tr|blocks}}建造通往地面的阶梯。如果在[[{{tr|Skyware Chest}}]]中恰好有[[{{tr|Lucky Horseshoe}}]]或{{eil|Fledgling Wings}}，就可以装备它并跳下到{{tr|surface}}而不承受[[{{tr|fall damage}}]]。
+** 另外，也可以就直接重新生成一个{{tr|the world}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 在{{tr|minimap}}上为{{tr|world spawn point}}和{{tr|bed spawn point}}添加了{{tr|icons}}。
+** 现在如果{{tr|spawn point}}被{{tr|blocks}}所覆盖，玩家可以在上方最多 30 格处生成，而不是直接摧毁这些{{tr|blocks}}。
+** 由于[[{{tr|Snow biome}}]]现在会生成在距离{{tr|spawn point}}更远的地方，{{tr|spawn point}}位于其中的几率显著降低。}}
+{{history|Desktop 1.2.4|现在在创建新{{tr|world}}时，玩家有更大可能性生成在平坦干净的地面上。}}
+{{history|Desktop 1.2.0.2|现在如果[[{{tr|bed}}]]被放置在玩家不破坏{{tr|block}}就无法生成的地方，玩家会在试图设置{{tr|spawn point}}时收到一条讯息，通知{{tr|bed}}的位置不合适。}}
+{{history|Desktop 1.0.1|生成时，由于{{tr|spawn point}}清理而会被移除的地面上的{{tr|chests}}不再会被破坏。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Spawn}}

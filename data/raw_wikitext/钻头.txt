@@ -1,0 +1,145 @@
+{{distinguish|Drill Containment Unit}}
+
+'''{{tr|Drills}}'''是一类[[{{tr|Hardmode}}]][[{{tr|tools}}]]，为[[{{tr|pickaxes}}]]的替代品，与其相对应的镐的镐力相同。在{{eversions|1.4.0.1|short}}中，它们{{tr|range}}比{{tr|pickaxes}}更短，但速度更快。注意其速度只取决于它们的基础使用速度，与{{tr|melee speed modifiers}}无关。
+
+应当注意到{{tr|drills}}是基于 [[{{tr|NPC}}]] 无敌计时器造成伤害的，而不是以{{tr|usetime}}（动画的时间）计量的碰撞。这使得{{tr|drills}}在伤害敌怪方面更加有效。所有{{tr|drills}}使用的无敌计时器都是一样的，并且相当于 10 {{tr|usetime}}。{{Verify}}
+
+{{tr|Tools}}（[[{{tr|hammer}}]]、[[{{tr|axe}}]]、[[{{tr|pickaxe}}]]、[[{{tr|drills}}]]、[[{{tr|chainsaw}}]]、{{tr|jackhammers}}等等）使用实际的{{tr|usetime}}（而非动画的时间）来完成他们的工作。例如{{tr|Mythril Drill}}，{{tr|the usetime}}是 10 而动画时间是 25 减 1 或者说 24。这在使用一些高等级的{{tr|pickaxes}}和{{tr|hammers}}时表现得最明显，因为它们在每次挥舞（挥舞的时间基于动画的时间）时都能击中几次{{tr|tiles}}/{{tr|walls}}。
+
+{{eicons|Lepus}} [[{{tr|Drax}}]]在[[{{tr|pre-Hardmode}}]]即可用，出现在[[{{tr|Shadow Chest}}]]中。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! 最高可采{{tr|Block}}
+! {{tr|Pickaxe Power}}
+! {{tr|Axe power}}
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Bonus}}
+! data-sort-type=number | {{tr|Use time}}
+! [[{{tr|Mining speed}}]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, pick, axe, bonus, usetime, toolspeed, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=FLOOR(pick) ASC, FLOOR(axe) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 效力 ==
+{| class="terraria lined align-center" id="drills-Effectiveness-table"
+|+ 要摧毁{{tr|blocks}}需要的敲击次数
+|-
+! {{tr|Block}}
+! {{item|mode=image|Molten Pickaxe}}
+! {{item|mode=image|Cobalt Drill}}
+! {{item|mode=image|Mythril Drill}}
+! {{item|mode=image|Adamantite Drill}}
+! {{item|mode=image|Drax}}
+! {{item|mode=image|Laser Drill}}
+|-
+| {{item|Dirt Block}}<br/>{{item|Sand Block}}<br/>{{item|Clay Block}}<br/>{{item|Mud Block}}<br/>{{item|Silt Block}}<br/>{{item|Ash Block}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|-
+| {{item|Stone Block}}<br/>{{item|Candy Cane Block}}<br/>{{item|Green Candy Cane Block}}<br/>{{item|Snow Block}}<br/>{{item|Pearlsand Block}}<br/>{{item|Ebonsand Block}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|-
+| {{item|Copper Ore}}<br/>{{item|Iron Ore}}<br/>{{item|Silver Ore}}<br/>{{item|Gold Ore}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|-
+| {{item|Demonite Ore}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|-
+| {{item|Meteorite}}
+| 2 || 2 || 2 || 2 || 1 || 1
+|-
+| {{item|Obsidian}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|-
+| {{item|Ebonstone Block}}<br/>{{item|Pearlstone Block}}<br/>{{item|Hellstone}}<br/>{{item|Dungeon Brick|image=Blue Brick.png/Green Brick.png/Pink Brick.png}}
+| 2 || 2 || 2 || 2 || 1 || 1
+|-
+| {{item|Cobalt Ore}}
+| 2 || 2 || 2 || 2 || 1 || 1
+|-
+| {{item|Mythril Ore}}
+| - || 3 || 2 || 2 || 2 || 2
+|-
+| {{item|Adamantite Ore}}
+| - || - || 3 || 3 || 2 || 2
+|-
+| {{item|Chlorophyte Ore}}
+| - || - || - || - || 3 || 3
+|-
+| {{item|Lihzahrd Brick}}
+| - || - || - || - || - || 2
+|-
+| {{item|Gray Brick}}<br/>{{item|Red Brick}}<br/>{{item|Obsidian Brick}}<br/>{{item|Mudstone Brick}}<br/>{{item|Iridescent Brick}}<br/>{{item|Pearlstone Brick}}<br/>{{item|Snow Brick}}<br/>{{item|Copper Brick}}<br/>{{item|Silver Brick}}<br/>{{item|Gold Brick}}<br/>{{item|Demonite Brick}}<br/>{{item|Hellstone Brick}}<br/>{{item|Cobalt Brick}}<br/>{{item|Mythril Brick}}
+| 1 || 1 || 1 || 1 || 1 || 1
+|}
+
+== 备注 ==
+* 不同于[[{{tr|pickaxe}}]]，无论玩家“瞄准”什么地方，{{tr|pickaxe}}的动画都是相同的（在玩家周围挥舞），而{{tr|drill}}会跟随光标的指向。虽然这样更加写实，但这种细节却可能让挖掘变得有点困难，因为光标基本上那总是会被{{tr|drill}}头部遮住（除非使用了{{tr|smart cursor}}）。
+* 如果连续不间断地使用钻头一分钟，它会停止工作并且需要通过按下{{key|use}}键来重启。这是因为当被使用时，钻头实际上是一个长时间存在的射弹，就像[[{{tr|Magic Missile}}]]一样。
+* {{tr|Drills}}可能采挖的比{{tr|pickaxes}}略微慢一点，因为它们不受近战速度[[{{tr|modifiers}}]]影响。想要最大化采挖速度的玩家要避免使用{{tr|drills}}，因为近战加速带来的好处只适用于{{tr|pickaxes}}。
+** 不过，点击会“重置”挖掘进程，因此在一个较强的{{tr|block}}（比如{{tr|Adamantite}}）上快速点击能够采挖的比没有{{tr|modifiers}}的{{tr|pickaxe}}快得多，尽管会更辛苦些。
+** 这可能也意味着{{tr|drills}}对不希望为了{{tr|mining speed}}损失{{tr|armor or accessories}}效果的、处于游戏末期或者{{tr|expert mode}}的角色要更好。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在所有没有{{tr|knockback}}的{{tr|drills}}都有了一个占位的{{tr|knockback}}值，以获取更好的{{tr|modifiers}}。}}
+{{history|Desktop 1.4.0.1|
+** 现在所有{{tr|drills}}和{{tr|chainsaws}}的挖掘速度都比它们的非机械对应物更快，但有效范围更短。
+** 另外，优化的挖掘装备搭配方案上使用{{tr|pickaxes}}/{{tr|axes}}依然会表现更好，但{{tr|drills}}和{{tr|chainsaws}}在非优化的配装上会更快。
+** [[{{tr|Luminite Drills}}]]现在是可获得的了。}}
+{{history|Desktop 1.3.3|修复了{{tr|drills}}在[[{{tr|Flask of Party}}]]的效果下极快速喷射纸屑的问题。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Laser Drill}}]]，一个具有特别大（+11）范围的钻头，掉落自[[{{tr|Martian Saucer}}]]。
+** 添加了{{tr|unobtainable}}的[[{{tr|Luminite Drills}}]]。}}
+{{history|Desktop 1.2|
+** 添加了[[{{tr|Palladium Drill}}]]、[[{{tr|Orichalcum Drill}}]]、[[{{tr|Titanium Drill}}]]和[[{{tr|Chlorophyte Drill}}]]。
+** {{tr|Drills}}不再是{{tr|materials}}。
+** 每个[[{{tr|drill}}]]现在都有等价的{{tr|pickaxe}}，为那些不喜欢{{tr|drills}}的人而准备。
+** {{tr|Hamdrax}}被重命名为[[{{tr|Drax}}]]。}}
+{{history|Desktop 1.1|Introduced=y|与[[{{tr|Cobalt Drill}}]]、[[{{tr|Mythril Drill}}]]、[[{{tr|Adamantite Drill}}]]和[[{{tr|Drax}}]]一并引入。}}
+{{history|Console 1.0.933.1|
+** 添加了[[{{tr|Laser Drill}}]]，一个具有特别大（+11）范围的钻头，掉落自[[{{tr|Martian Saucer}}]]。
+** 添加了{{tr|unobtainable}}的[[{{tr|Luminite Drills}}]]。（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|
+** 添加了[[{{tr|Laser Drill}}]]，一个具有特别大（+11）范围的钻头，掉落自[[{{tr|Martian Saucer}}]]。
+** 添加了{{tr|unobtainable}}的[[{{tr|Luminite Drills}}]]。（{{icon|ps4}}）}}
+{{history|Console 1.02|
+** 添加了[[{{tr|Palladium Drill}}]]、[[{{tr|Orichalcum Drill}}]]、[[{{tr|Titanium Drill}}]]和[[{{tr|Chlorophyte Drill}}]]。
+** {{tr|Drills}}不再是{{tr|materials}}。
+** 每个[[{{tr|drill}}]]现在都有等价的{{tr|pickaxe}}，为那些不喜欢{{tr|drills}}的人而准备。
+** {{tr|Hamdrax}}被重命名为[[{{tr|Drax}}]]。}}
+{{history|Console-Release|Introduced=y|与[[{{tr|Cobalt Drill}}]]、[[{{tr|Mythril Drill}}]]、[[{{tr|Adamantite Drill}}]]和[[{{tr|Drax}}]]一并引入。}}
+{{history|Switch 1.0.711.6|Introduced=y|与{{tr|Desktop}} [[1.3.0.1]] 中的所有相应{{tr|drills}}一并引入。}}
+{{history|Mobile 1.3.0.7|
+** 添加了[[{{tr|Laser Drill}}]]，一个具有特别大（+11）范围的钻头，掉落自[[{{tr|Martian Saucer}}]]。
+** 添加了{{tr|unobtainable}}的[[{{tr|Luminite Drills}}]]。}}
+{{history|Mobile 1.2.6508|
+** 添加了[[{{tr|Palladium Drill}}]]、[[{{tr|Orichalcum Drill}}]]、[[{{tr|Titanium Drill}}]]和[[{{tr|Chlorophyte Drill}}]]。
+** {{tr|Drills}}不再是{{tr|materials}}。
+** 每个{{tr|drill}}现在都有等价的{{tr|pickaxe}}，为那些不喜欢{{tr|drills}}的人而准备。
+** {{tr|Hamdrax}}被重命名为[[{{tr|Drax}}]]。}}
+{{history|Mobile-Release|Introduced=y|与[[{{tr|Cobalt Drill}}]]、[[{{tr|Mythril Drill}}]]、[[{{tr|Adamantite Drill}}]]和[[{{tr|Drax}}]]一并引入。}}
+{{history|3DS-Release|Introduced=y|与{{tr|Desktop}} [[1.2]] 中的所有相应{{tr|drills}}一并引入。}}
+
+{{Master Template Tools
+| show-tool = yes
+}}
+
+[[Category:工具物品|*]]
+[[Category:{{tr|Drills}}| ]]
+
+{{language info|en=Drills}}

@@ -1,0 +1,266 @@
+{{exclusive|1.4.0.1}}
+
+'''{{tr|Secret world seed}}'''是被发现作为秘密{{wikipedia|Easter egg (media)|彩蛋}}的一些[[{{tr|World Seed}}]]，它们会生成具有独特或奇怪性质的{{tr|world}}。与只影响通常{{tr|world}}结构的普通{{tr|world}}{{tr|seed}}不同，{{tr|Secret world seed}}可以生成出带有普通{{tr|world}}生成中无法出现的一些特性的{{tr|world}}（即：这些{{tr|world}}中的一些[[{{tr|Game Mechanics}}]]会被改变）。例如，它们可能会改变[[{{tr|enemy}}]]的属性和行为、{{tr|item}}掉落、{{tr|biomes}}、主题[[{{tr|Music}}]]以及更多。
+
+{{tr|secret seeds}}使用了与普通{{tr|seed}}不同的{{tr|world}}生成机制。使用{{tr|secret seeds}}会覆盖{{tr|seed}}作为随机性来源的普通功能，两个使用同一{{tr|secret seed}}创建的{{tr|world}}会有所不同。
+
+目前总共有八个不同的{{tr|secret seeds}}。
+
+== Drunk world ==
+{{main|{{tr|Drunk world}}}}
+[[File:Drunk Seed On Large Map.png|thumb|451x451px|一个使用 05162020 {{tr|seed}}生成的[[{{tr|World size}}|{{tr|large world}}]]的{{tr|world}}地图。注意地图中[[{{tr|Corruption}}]]与[[{{tr|Crimson}}]]共存。]]
+[[File:Seed 05162020 map view (small world).png|450px|thumb|Drunk world [[{{tr|World size}}|{{tr|small world}}]]的地图。]]
+[[File:05162020 generating.png|450px|thumb|Drunk world 的生成界面。]]
+
+* {{tr|Seeds}}：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld}}{{dotlist|inline=y|{{code|05162020}}|{{code|5162020}}}}
+
+这个{{tr|seed}}参考了[[《{{tr|Terraria}}》]]的 9 周年纪念日和 [[1.4.0.1]] 的正式发布日期：2020 年 5 月 16 日。它会生成一个特别的{{tr|world}}，源代码中称为{{code|drunkWorldGen}}（{{tr|Drunk world}}生成）。{{source code ref|v=1.4.0.5|field=Terraria.WorldGen.drunkWorldGen}}因此，[[《{{tr|terraria}}》]]社区将其称为''{{tr|Drunk world}}''。
+
+在此{{tr|seed}}中，两种[[{{tr|Evil biomes}}]]、任何具有两种变种的{{tr|ore}}的全部两种变种均会生成。[[{{tr|Party Girl}}]]代替[[{{tr|Guide}}]]作为起始 {{tr|NPC}}，[[{{tr|Dungeon}}]]入口现在会生成于一棵漆成棕色的[[{{tr|Living Tree}}]]下。
+
+=== 生成世界时 ===
+* 在生成{{tr|world}}中的描述和提示变成每一{{tr|tick}}{{tick}}都会改变的随机数字（“{{gameText|LegacyWorldGen.34}}”除外）。
+* 背景图片显示的是[[{{tr|Glowing Mushroom biome}}]]，云朵像 [[{{tr|Redigit}}]] 的头。{{tr|moon}}反向运动，且像一个笑脸（见[[#{{tr|Trivia}}|{{tr|Trivia}}]]）。{{tr|world}}生成完毕后，这些效果在返回{{tr|main menu}}后仍然可见。
+* 生成{{tr|world}}的进度条边框在[[{{tr|Corruption}}]]和[[{{tr|Crimson}}]]之间飞快闪烁。
+* 会播放[[{{tr|music}}#Console Title|{{tr|Console}}标题界面音乐]]，而不是通常的[[{{tr|music}}#Title Screen|标题界面音乐]]。
+* 《{{tr|Terraria}}》的图标和版本编号会旋转着消失。
+* [[{{tr|time}}]]一直为{{tr|night}}，从不会变为{{tr|day}}。
+
+=== 世界图标 ===
+Drunk world 的{{tr|The world icon}}是一棵侵染了两种{{tr|world evils}}的{{tr|tree}}。
+
+<gallery>
+File:IconCorruptionCrimson.png|{{tr|Pre-Hardmode world icon}}。
+File:IconHallowCorruptionCrimson.png|{{tr|Hardmode world icon}}。
+</gallery>
+
+== Not the bees ==
+{{main|Not the bees}}
+[[File:Ntb medium.png|thumb|450px|Not the bees [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+[[File:Not the bees seed generation screen.jpg|thumb|450px|Not the bees {{tr|world}}的生成界面。]]
+
+* {{tr|Seeds}}（不区分大小写）：{{source code ref|name=ProcessSpecialWorldSeeds|v=1.4.4.9|method=Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|not the bees}}|{{code|not the bees!}}|{{code|notthebees}}}}
+
+这个{{tr|seed}}会生成一个主要由{{tr|bee}}主题的{{tr|biomes}}，与{{tr|bee}}相关的{{tr|items}}和{{tr|structures}}组成的{{tr|world}}。
+
+{{tr|world}}的大部分区域被[[{{tr|Jungle}}]]{{tr|biome}}代替。[[{{tr|Larva}}]]可以在{{tr|world}}中的任何位置生成。[[海洋生物群系]]的[[沙块]]会被[[蜂蜜块]]替代；[[石块]]和[[土块]]将会被[[{{tr|Hive|link=y}}|{{tr|Hive block}}]]替代；[[洞穴层]]下层（岩浆层）的石块将会被[[松脆蜂蜜块]]替代。[[地表]]、[[地下]]和[[洞穴层]]上层（非岩浆层）的[[水]]会被[[蜂蜜]]替代（但地牢、漂浮岛不受影响）。[[地牢]]的[[地牢砖]]和[[地牢墙]]会被刷上[[深橙漆]]。[[{{tr|Merchant}}]]代替[[{{tr|Guide}}]]作为起始 [[{{tr|NPC}}]]。
+
+=== 生成世界时 ===
+* 所有生成描述均为“{{gameText|UI.WorldGenEasterEgg_GeneratingBees}}”。
+
+=== 世界图标 ===
+Not the Bees {{tr|world}}的{{tr|The world icon}}是一棵被[[{{tr|Bee}}]]环绕的[[{{tr|Jungle Tree}}|{{tr|Rich Mahogany}}]]。
+
+<gallery>
+File:IconCorruptionNotTheBees.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonNotTheBees.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionNotTheBees.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonNotTheBees.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== For the worthy ==
+{{main|For the worthy}}
+[[File:ForTheWorthyMap(Small).png|450px|thumb|For the worthy [[{{tr|World size}}|{{tr|small world}}]]的地图。]]
+[[File:ForTheWorthyWorldGen.png|450px|thumb|For the worthy {{tr|worlds}}的生成界面。]]
+
+* {{tr|Seeds}}（不区分大小写）：<ref name="ProcessSpecialWorldSeeds"/>{{dotlist|inline=y|{{code|for the worthy}}|{{code|fortheworthy}}}}
+
+这一{{tr|secret seed}}的特性旨在大幅增加游戏的难度。
+
+此{{tr|seed}}会将{{tr|world difficulty}}提高一级（例：[[{{tr|Classic}}]] For the worthy {{tr|world}}等同于普通的[[{{tr|Expert}}]]{{tr|world}}）。使用此{{tr|seed}}的[[{{tr|Master Mode}}]]{{tr|worlds}}会在世界选择菜单上将其{{tr|difficulty}}显示为“{{gameText|UI.Legendary}}”。
+
+所有[[{{tr|Enemies}}]]的{{tr|contact damage, health and coin drop rate}}在{{tr|world difficulty}}的基础倍率之上再提升一倍普通{{tr|Classic Mode world}}中的数值。{{source code ref|v=1.4.4.9|method=Terraria.NPC.ScaleStats_ApplyGameMode}}如果{{tr|world}}是{{tr|Master Mode}}（“[[#{{tr|Difficulty}}|{{tr|Legendary Mode}}]]”），{{tr|contact damage}}会再乘以 4/3。{{source code ref|v=1.4.4.9|method=Terraria.NPC.ScaleStats}}来自远程攻击（即[[{{tr|projectiles}}]]）的伤害不变。
+
+[[{{tr|Bunny}}]]（包括{{tr|player}}自己放置的）和[[{{tr|Demon}}]]有 {{chance|2/3}} 的几率分别被[[{{tr|Explosive Bunny}}]]和[[{{tr|Voodoo Demon}}]]替代。{{source code ref|v=1.4.4.5|method=Terraria.NPC.NewNPC}}[[{{tr|Demolitionist}}]]代替[[{{tr|Guide}}]]作为起始 [[{{tr|NPC}}]]。
+
+还有许多其它针对{{tr|world}}生成和{{tr|game mechanics}}的改动。例如，{{tr|world}}中的一些[[{{tr|water}}]]池将被[[{{tr|lava}}]]所代替。 [[{{tr|Pot}}]]和[[{{tr|trees}}]]可能会掉落点燃的[[{{tr|Bomb}}]]，而非通常的掉落物。[[{{tr|Skyware Chest}}]]被上锁的[[{{tr|Gold Chest}}]]替代，但仍然包含对应的{{tr|loot}}。
+
+[[{{tr|Bosses}}]] 的大小和/或 AI 也受到了改动，使得战斗更加艰难。
+
+=== 生成世界时 ===
+* 所有生成描述和{{tr|tips}}都反向写出。
+
+=== 世界图标 ===
+For the worthy {{tr|world}}的{{tr|The world icon}}是一棵[[{{tr|Yellow Willow}}]]。
+
+<gallery>
+File:IconCorruptionFTW.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonFTW.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionFTW.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonFTW.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== Celebrationmk10 ==
+{{main|Celebrationmk10}}
+[[File:CelebrationMK10.png|450px|thumb|Celebrationmk10 [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+
+* {{tr|Seeds}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld / Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|celebrationmk10}}|{{code|05162011}}|{{code|5162011}}|{{code|05162021}}|{{code|5162021}}}}
+
+这一{{tr|seed}}庆祝了[[《{{tr|Terraria}}》]]的十周年纪念日：2021 年 5 月 16 日。
+
+{{tr|player}}的{{tr|spawn point}}会位于一侧[[{{tr|Ocean}}]]的海滩上，名为 Andrew 的[[{{tr|Guide}}]]、名为 Whitney 的[[{{tr|Steampunker}}]]、名为 Yorai 的[[{{tr|Princess}}]]、[[{{tr|Party Girl}}]]、以及一只安哥拉[[{{tr|Town Bunny}}]]也会一起生成，同时会立即开始一场[[{{tr|party}}]]。
+
+在{{tr|chests}}中的物品总是具有“最好”[[{{tr|modifier}}]]，例如[[{{tr|Modifiers}}|{{tr|Menacing}}]]或[[{{tr|Modifiers}}|{{tr|Legendary}}]]。
+
+有两种独特[[{{tr|enemies}}]]可在此{{tr|seed}}中遇到： 
+* [[{{tr|Jungle Mimic}}]]可在{{tr|Hardmode}}下的{{tr|Jungle}}中生成。
+* [[{{tr|Golden Slime}}]]会罕见地生成。
+
+获得罕见物品（如[[{{tr|Rod of Discord}}]]和[[{{tr|Developer items}}]]）的几率显著增加，[[{{tr|Traveling Merchant}}]]总是额外出售 2 件物品，且[[{{tr|Princess}}]]会出售罕见物品（如[[{{tr|Slime Staff}}]]和[[{{tr|Discount Card}}]]）。
+
+=== 生成世界时 ===
+* 所有生成描述和{{tr|tips}}都变为粉色。
+* 会播放[[{{tr|Music}}#{{tr|Underground Hallow}}|{{tr|Underground Hallow music}}]]。
+
+=== 世界图标 ===
+Celebrationmk10 世界的{{tr|The world icon}}是一棵系有蝴蝶结的[[{{tr|Pink Sakura tree}}]]。
+
+<gallery>
+File:IconCorruptionAnniversary.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonAnniversary.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionAnniversary.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonAnniversary.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== The Constant ==
+{{main|{{tr|The Constant}}}}
+[[File:Theconstant updated.png|thumb|450px|The Constant [[{{tr|World size}}|{{tr|medium world}}]]的地图。注意{{tr|cave}}生成的有所不同。]]
+[[File:The Constant Effect.gif|thumb|300px|进入 The Constant {{tr|world}}后产生的{{tr|shader}}效果。]]
+
+* {{tr|Seeds}}（不区分大小写）：<ref name="ProcessSpecialWorldSeeds"/>{{dotlist|inline=y|{{code|constant}}|{{code|theconstant}}|{{code|the constant}}|{{code|eye4aneye}}|{{code|eyeforaneye}}}}
+此{{tr|seed}}是{{tr|Klei Entertainment}}的{{iwlink|dts|Don't Starve Together|《饥荒联动版》}}的[[{{tr|Crossover content}}#{{tr|Don't Starve Together}}|{{tr|crossover}}]]内容的一部分。
+
+它引入了[[{{tr|Hunger}}]]和黑暗机制，使得游戏早期更具挑战性。{{tr|surface}}上会生成带有{{tr|statues}}的[[{{tr|Marble Cave}}|{{tr|Marble biomes}}]]，以及[[{{tr|Spider Nest}}]]，且[[{{tr|Cactus}}]]会伤害玩家。 
+
+在游戏的全程中都会施加一个较暗的{{tr|shader}}，使得游戏看起来更阴郁。属于《{{tr|Don't Starve}}》{{tr|crossover}}内容的物品掉落几率更高。
+
+=== 生成世界时 ===
+* 新增一条生成描述：“{{gameText|WorldGeneration.WavyCaves}}”。
+* 会施加使得屏幕显著变暗的持续性{{tr|shader}}。
+
+=== 世界图标 ===
+The Constant {{tr|World}}的{{tr|World icon}}是一棵源自《{{tr|Don't Starve}}》的{{iwlink|dts|Evergreen|常青树}}。
+
+<gallery>
+File:IconCorruptionDontStarve.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonDontStarve.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionDontStarve.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonDontStarve.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== No traps ==
+{{main|No traps}}
+
+* {{tr|Seeds}}（不区分大小写）：<ref name="ProcessSpecialWorldSeeds"/>{{dotlist|inline=y|{{code|no traps}}|{{code|notraps}}}}
+
+这个{{tr|seed}}包含明显多于正常{{tr|world}}的{{tr|traps}}。以及新的{{tr|traps}}，包括[[{{tr|Bouncy Boulder}}]]、[[{{tr|Life Crystal Boulder}}]]、和[[{{tr|Venom Dart Trap}}]]。
+
+=== 生成世界时 ===
+* 生成描述“{{gameText|LegacyWorldGen.34}}”被替换为“{{gameText|LegacyWorldGen.91}}”。
+
+=== 世界图标 ===
+No traps {{tr|world}}的{{tr|The world icon}}和常规{{tr|icon}}相似，但{{tr|tree}}底部有[[{{tr|Wire}}]]伸出。
+
+<gallery>
+File:IconCorruptionTraps.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonTraps.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionTraps.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonTraps.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== Don't dig up ==
+{{main|Don't dig up}}
+[[File:Dontdigupworld.png|450px|thumb|Don't dig up [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+[[File:Don't dig up generation screen.png|450px|thumb|Don't dig up {{tr|worlds}}的生成界面。]]
+
+* {{tr|Seeds}}（不区分大小写）：<ref name="ProcessSpecialWorldSeeds"/>{{dotlist|inline=y|{{code|don't dig up}}|{{code|dont dig up}}|{{code|dontdigup}}}}
+
+这个{{tr|seed}}让玩家在[[{{tr|Underworld}}]]的中部{{tr|spawn}}，颠倒了玩家在{{tr|biomes}}中前进的顺序。自下而上依次是：[[{{tr|Glowing Mushroom biome}}]]、{{tr|underground}}{{tr|version}}的[[{{tr|Surface}}]]{{tr|biomes}}、[[{{tr|Underground}}]]{{tr|layer}}、[[{{tr|Cavern Layer}}]]，最后是真正的{{tr|surface}}：[[{{tr|Evil biome}}]]，这里没有太阳。
+
+{{tr|The Underworld}}的中部会生成一个平坦的[[{{tr|Ash Block}}]]“岛屿”，长有[[{{tr|Ash Tree}}]]，且完全不生成[[{{tr|lava}}]]。[[{{tr|Mimic}}]]现在会在{{tr|pre-Hardmode}}生成，但在这一时期改为掉落[[{{tr|Gold Chest}}]]战利品。另外，[[{{tr|slimes}}]]有几率包含[[{{tr|Fallen Star}}]]作为其[[{{tr|bonus drop}}]]，且它们也会从打破的[[{{tr|Pot}}]]中生成（这些必定包含{{tr|Fallen Star}}）。此外，在[[{{tr|Expert Mode}}]]以上，[[{{tr|Lava slime}}]]不会在死亡时产生{{tr|lava}}。 
+
+[[{{tr|Tax Collector}}]]代替[[{{tr|Guide}}]]作为起始 {{tr|NPC}}。
+
+=== 生成世界时 ===
+* 《{{tr|Terraria}}》 {{tr|logo}} 会旋转至上下颠倒。
+* {{tr|The background}}会变为[[{{tr|Space}}]]的星空{{tr|background}}。
+* 会播放[[{{tr|Music}}#{{tr|Corruption}}|{{tr|Corruption music}}]]，无论{{tr|world evil}}是什么。
+
+=== 世界图标 ===
+Don't dig up {{tr|world}}的{{tr|The world icon}}是一棵[[{{tr|Ash Tree}}]]。
+
+<gallery>
+File:IconCorruptionRemix.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonRemix.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionRemix.png|{{tr|Hardmode}}{{tr|Corruption}}{{tr|world icon}}。
+File:IconHallowCrimsonRemix.png|{{tr|Hardmode}}{{tr|Crimson}}{{tr|world icon}}。
+</gallery>
+
+== Get fixed boi ==
+{{main|Get fixed boi}}
+[[File:Getfixedboiworld.png|450px|thumb|Get fixed boi [[{{tr|World size}}|{{tr|medium world}}]]的地图。]]
+
+* {{tr|Seeds}}（不区分大小写）：<ref name="ProcessSpecialWorldSeeds"/>{{dotlist|inline=y|{{code|get fixed boi}}|{{code|getfixedboi}}}}
+
+此{{tr|seed}}结合了 {{tr|drunk world}}、Not the bees、For the worthy、Celebrationmk10、{{tr|The Constant}}、No traps、和 Don't dig up {{tr|seeds}}。
+
+它还包括独特的特性，包括在游戏进度中替换[[{{tr|Mechanical Bosses}}]] 的 {{tr|boss}} [[{{tr|Mechdusa}}]]，以及[[{{tr|Crispy Honey Block}}]]会[[{{tr|Burning}}]]玩家并在被采掘后释放[[{{tr|Lava}}]]。
+
+=== 生成世界时 ===
+生成界面结合了其他{{tr|seeds}}的特点：
+* 生成{{tr|world}}的进度条边框在[[{{tr|Corruption}}]]和[[{{tr|Crimson}}]]之间飞快闪烁。
+* 大部分生成描述和{{tr|tips}}都反向写出，“{{gameText|LegacyWorldGen.91}}”除外。
+* 《{{tr|Terraria}}》 {{tr|logo}} 会旋转至上下颠倒。
+* {{tr|The background}}会变为[[{{tr|Space}}]]的星空{{tr|background}}。
+* 会播放[[{{tr|Music}}#OW Space|{{tr|Otherworldly Space music}}]]。
+* 会开始一场[[Get fixed boi#星星小游戏|星星小游戏]]：用{{tr|cursor}}反弹{{tr|falling stars}}会提高{{tr|world}}生成期间特定物体和结构的生成数量。
+* {{tr|The cursor}}会变为在{{tr|drunk world}}的生成期间出现的“微笑{{tr|moon}}”。{{tr|background}}中任何碰撞到{{tr|moon}}的{{tr|falling star}}会被反弹，同时发出 {{sound||Item_57.wav}}{{sound||Item_58.wav}} 猫叫声（和[[{{tr|Meowmere}}]]的{{tr|projectiles}}相同）以及 {{sound||Coin 0.wav}}{{sound||Coin 1.wav}}{{sound||Coin 2.wav}}{{sound||Coin 3.wav}}{{sound||Coin 4.wav}} [[{{tr|coins}}]]被拾取的声音。
+* 会施加 [[The Constant]] {{tr|seed}}的{{tr|shader}}，且随着{{tr|star}}被反弹效果会越来越明显。
+
+=== 世界图标 ===
+Get fixed boi {{tr|world}}的{{tr|world icon}}是一棵不断闪烁且异常的{{tr|tree}}，会显示多个版本的普通{{tr|tree icon}}，有不同的颜色组合。
+
+<gallery>
+File:IconEverythingAnimated.png|{{tr|World icon}}。
+</gallery>
+
+== 备注 ==
+* 由于{{tr|seed}}是随机生成的，所以有可能在不指定{{tr|seed}}的情况下生成一个 {{tr|Drunk world}} 或 Celebrationmk10 {{tr|world}}，但发生此事的几率微乎其微（{{tr|Drunk world}}的几率为 1/2147483648 （0.000000047%），Celebrationmk10 {{tr|world}}的几率为 1/1073741824 （0.000000093%））。
+** 这是因为随机{{tr|seed}}是 0 至 2147483647 之间的一个随机数字。随机的{{tr|seed}}可能会对应上这些{{tr|secret seed}}所需的数字。Celebrationmk10 {{tr|world}}具有双倍的概率是因为有两个数字能够触发这一{{tr|secret seed}}。
+
+== 成就 ==
+{{achievement|name=A Rare Realm}}
+
+== 花絮 ==
+* 在生成 {{tr|Drunk world}} 时，月亮形成的笑脸参考了一个天文学段子：“在 2020 年 5 月 16 日，月亮、木星和金星会形成一个笑脸”，这正是 1.4 发布的日期。<ref>[https://www.forbes.com/sites/jamiecartereurope/2020/05/01/no-there-wont-be-a-smiley-face-in-the-night-sky-in-may-but-something-else-will-make-you-happy No, There Won’t Be A ‘Smiley Face’ In The Night Sky In May (But Something Else Will Make You Happy)（不，五月份里天上不会有“笑脸”，但还有些其它事会让你高兴）] {{small|{{date|2020|05|01}}}}</ref><ref>[https://twitter.com/BBCTees/status/1244479508125802496 BBC Radio Tees on Twitter] {{small|{{date|2020|03|30}}}}</ref>
+* 和其他{{tr|secret seeds}}不同，{{tr|the drunk world}} 和 {{tr|Celebrationmk10}} 的{{tr|seeds}}被视作数字，因此前面可以加上任意数量的 0（例如：对于 {{tr|drunk world}}，可以是 <code>000005162020</code>）。此外，许多其它的字符串也会无意中生成这一{{tr|secret seed}}（由于使用了 {{wikipedia|Cyclic redundancy check|CRC-32 算法}}{{source code ref|v=1.4.3.6|method=Terraria.IO.WorldFileData.SetSeed}}），例如（区分大小写）：
+** {{tr|Drunk world}}（区分大小写）：{{dotlist|{{code|now aunt brush}}|{{code|Joke Disappear Horizon}}|{{code|disapprove stiff solution}}}}
+** {{tr|Celebrationmk10}}（区分大小写）：{{dotlist|{{code|Thirst of dress}}|{{code|engineer governor reproduction}}|{{code|inform Representative yorai}}}}
+* 如果一个修改过的{{tr|world}}同时激活了 2 个或更多的{{tr|secret seeds}}，其使用的图标的优先度如下：Get fixed boi > Drunk world > For the worthy > Not the bees > Celebrationmk10 > The Constant > Don't dig up > No traps。
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|{{tr|Master}} [[For the worthy]] 和 [[Get fixed boi]] {{tr|Seeds}}现在在世界选择菜单中将其{{tr|difficulty}}显示为“{{gameText|UI.Legendary}}”。}}
+{{history|Desktop 1.4.4|
+** 添加了三个{{tr|secret seeds}}：{{code|no traps}}、{{code|don't dig up}}、和{{code|get fixed boi}}。
+** 添加了进入任何{{tr|secret seed}}的{{tr|achievement}}。
+** 对数个{{tr|secret seeds}}做了改动，包括 [[Not the bees]]、[[For the worthy]]、[[Celebrationmk10]]、和[[{{tr|the Constant}}]]。}}
+{{history|Desktop 1.4.3|
+** 添加了{{tr|secret seed}} {{code|theconstant}}。
+** 使用了特殊{{tr|seed}}的{{tr|world}}现在在{{tr|world}}选择菜单中拥有独特的图标，用以区分。}}
+{{history|Desktop 1.4.2.3|添加了{{tr|secret seed}} {{code|celebrationmk10}}。}}
+{{history|Desktop 1.4.0.5|
+** 在“For the worthy”{{tr|seed}}中，{{tr|Chest}}战利品现在会被[[{{tr|Angel Statue}}]]而不是[[{{tr|Dirt Block}}]]替代，且替代几率由 {{chance|1/5}} 降低至 {{chance|1/15}}。
+** 在“For the worthy”{{tr|seed}}中，[[{{tr|Glowing Moss biome}}]]现在比通常情况下大 50%。}}
+{{history|Desktop 1.4.0.3|添加了{{tr|secret seed}} {{code|for the worthy}}。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|secret seed}} {{code|5162020}} 和 {{code|not the bees}}。}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=Secret world seeds}}

@@ -1,0 +1,58 @@
+{{item infobox
+| auto = 1910
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 40 {{eicons|1.4.0.1|invert=y|small=y}}
+| debuff = Frostbite / 20
+| debuffchance = 100% {{eicons|1.4.4|small=y}}
+| debuff2 = On Fire! / 20
+| debuffchance2 = 100% {{eicons|1.4.4|invert=y|small=y}}
+| idprojectile = 85
+| listcat = Scope
+| tags = hardmode/drop
+}}
+{{drop infobox|style=clear:right}}
+[[File:Elf Melter (demo).gif|frame|right|{{eicons|1.4.0.1}} {{tr|The Elf Melter}}攻击[[{{tr|Target Dummies}}]]。]]
+
+'''{{tr|Elf Melter}}'''是一种[[{{tr|Hardmode}}]]下的[[{{tr|ranged weapon}}]]，由[[{{tr|Santa-NK1}}]]在[[{{tr|Frost Moon}}]]期间掉落。它是[[{{tr|Plantera}}]]后对[[{{tr|Flamethrower}}]]的间接升级物，也使用[[{{tr|Gel}}]]作为[[{{tr|ammunition}}]]。与其前任相似，按下 {{key|use}} 按钮会消耗掉 {{eicons|1.4.3.3}} 1 / {{eicons|1.4.3.3|invert=y}} 2 个{{tr|gel}}，射出{{eicons|1.4.4}} 五 / {{eicons|1.4.4|invert=y}} 六道连续不断的火焰，可以通过移动光标来覆盖到整个区域。{{tr|Elf Melter}}以 6.25%–16.67% / {{expert|12.5%–50%}} 的几率（取决于波数）掉落自[[{{tr|Frost Moon}}]][[{{tr|event}}]]中的[[{{tr|Santa-NK1}}]]。<ref>每波的相似掉落率：{{frost moon item drop rates|1/2|fromwave=7|towave=20}}参阅[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]获知更多信息。</ref>
+
+在{{eversions|1.4.4}}中，{{tr|Elf Melter}}发射的火焰有着独特的蓝色外观，能够以高速从{{tr|weapon}}中射出，范围随时间扩大，行进一段时间后在玩家前方较短距离处消散，形成一片圆锥形的作用区域。火焰拥有 15 点[[{{tr|armor penetration}}]]，能够造成[[{{tr|Frostbite}}]]{{tr|debuff}}并持续 20 {{tr|second}}，能最多穿透三个{{tr|enemy}}，在击中第四个后消散。除此之外，{{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 15% {{tr|damage}}惩罚。
+
+在{{eversions|1.4.4|invert=y}}中，{{tr|Elf Melter}}的火焰是由火焰粒子构成的直线，从{{tr|weapon}}处发出并在行进一段较短的距离后停止，接着继续留存一段时间。火焰会造成[[{{tr|On Fire!}}]]{{tr|debuff}}，持续 20 {{tr|second}}，能最多穿透三个{{tr|enemy}}，在击中第四个后消散。
+
+{{modifier|ranged}}给予 +10% {{tr|speed}}的{{tr|modifier}}会将每次点击发出的火焰流由六发提升至七发，{{eicons|1.4.3.3|invert=y}}同时，每次发射依然只消耗 2 个{{tr|gel}}。增加{{tr|velocity}}的{{tr|modifier}}会提升火焰流的射程，+15% 大约能提升 5 格，而 +10% 大约能提升 3 格。
+
+== 备注 ==
+* 当{{tr|player}}持有{{tr|Elf Melter}}时，{{tr|players}}身后会出现一个淡红色的燃料箱。这可能会干扰一些[[{{tr|accessory}}]]的外观，例如[[{{tr|wing}}]]。[[{{tr|Heat Ray}}]]和[[{{tr|Clentaminator}}]]也具有此特性。
+* [[{{tr|Water}}]]、[[{{tr|honey}}]]和{{eil|Shimmer}}会阻止{{tr|Elf Melter}}的{{tr|projectile}}，虽然它会击中紧挨着水面的{{tr|enemy}}，但在水下时就根本不会发射。{{tr|Elf Melter}}可以射入[[{{tr|lava}}]]中，但在{{tr|lava}}内不会发射。
+* {{eil|Pink Gel}}不能作为[[{{tr|ammo}}]]使用，因而无法与{{tr|Elf Melter}}搭配使用。
+
+== 花絮 ==
+* {{tr|Elf Melter}}与{{wikipedia|lang=en|World War II|第二次世界大战}}的标志性武器 {{wikipedia|lang=en|M2 flamethrower|M2 火焰喷射器}}非常相似。
+* {{eicons|1.4.4|invert=y}} {{tr|Elf Melter}}（Elf Melter）的内部名称被错误地拼写为<code>EldMelter</code>。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|damage}}由 60 降低至 53。
+** 每次发射的火焰条数由 6 降低至 5。
+** 其{{tr|projectile}}现在使用局部[[{{tr|immunity frame}}]]。
+** 现在拥有 15 点[[{{tr|armor penetration}}]]。
+** 重新设置了视觉上和碰撞框的大小。
+** 造成的{{tr|debuff}}由{{tr|On Fire!}}改为{{tr|Frostbite}}。}}
+{{history|Desktop 1.4.3.3|修正了导致{{tr|Elf Melter}}一次使用 2 枚{{tr|ammo}}的问题。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.0.1|
+** {{tr|damage}}由 40 提升至 60。
+** {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 15% {{tr|damage}}惩罚。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Elf Melter}}

@@ -1,0 +1,73 @@
+{{item infobox
+| type = Mechanism
+| width = 1 | height = 1
+| auto = 849
+| tags = buy / vendor:Mechanic
+}}
+
+'''{{tr|Actuator}}'''是一个[[{{tr|mechanism}}]]，可以在[[{{tr|Mechanic}}]]处以每个 {{sc|10}} 的价格购买，或者由落{{tr|sand}}、{{tr|lava}}或[[{{tr|Dead Man's Chest}}]] [[{{tr|traps}}]]处收集。它需要用[[{{tr|Wire}}]]连接以生效。激活时，它所在的{{tr|the tile}}会在激活与非激活状态切换，这会让任何{{tr|block}}都能够像[[{{tr|Active Stone Block}}|通电或{{tr|inactive stone blocks}}]]一样切换。和{{tr|wire}}一样，{{tr|Actuators}}通常情况下是不可见的，仅当选择一件{{tr|mechanism item}}时才可见。
+
+以下{{tr|item}}可以与{{tr|Actuators}}交互：
+* 它们可以用[[{{tr|Wire Cutter}}]]或{{eil|The Grand Design}}移除。
+* 它们可以用{{eil|The Grand Design}}放置。
+* 如果{{tr|player}}拥有{{tr|Actuator}}，[[{{tr|Presserator}}]]会自动将它们安装到放置的物体上。
+* [[{{tr|Actuation Rod}}]]可以切换有限距离内的{{tr|Actuator}}的状态，无需{{tr|wire}}连接。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Actuator|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Actuator}}不仅能在大多数[[{{tr|block}}]]和[[{{tr|traps}}]]上，也能在[[{{tr|platform}}]]和[[{{tr|teleporter}}]]上正常运作。
+* 大多数[[{{tr|furniture}}]]在下方的{{tr|block}}/{{tr|platform}}被{{tr|Actuator}}关闭时会被释放。
+* 如果{{tr|Actuator}}刚好在[[{{tr|tree}}]]、[[{{tr|Demon Altar}}]]、[[{{tr|Crimson Altar}}]]或[[{{tr|chest}}]]下，它们就不会运作（即便那个[[{{tr|chest}}]]是空的）。{{eicons|1.4.0.5}} 这一{{tr|block actuator}}保护也对{{tr|chest}}下方的第二层{{tr|blocks}}有效（总共 4 个{{tr|blocks}}）。
+* 当某个方块被{{tr|Actuator}}关闭时，任何生长于其上方的[[{{tr|plants}}]]都会掉落，如同{{tr|player}}用工具挥舞过去一样。这可以用于蘑菇农场。不过[[{{tr|Herbs}}]]仍然会留在被关闭的{{tr|Block}}上。
+* [[{{tr|Liquids}}]]和受重力影响的{{tr|block}}（比如[[{{tr|sand}}]]、[[{{tr|silt}}]]、[[{{tr|slush}}]]等）可以通过被{{tr|Actuator}}关闭的物块。在{{eversions|1.4|short|invert=y}}中，受重力影响的{{tr|blocks}}无法通过它们。
+* {{tr|Actuator}}可以用于通过[[{{tr|underworld}}]]中的[[{{tr|Hellstone}}]]而不产生岩浆，类似地，可以用于通过[[{{tr|hive}}]]而不产生[[{{tr|honey}}]]或生成蜜蜂。
+* 未激活状态的[[{{tr|Biomes}}#{{tr|Biome}}存在条件|{{tr|Biome blocks}}]]仍会计入形成对应{{tr|biome}}的{{tr|block}}计数。
+* 自然生成的[[{{tr|Lihzahrd Brick}}]]在[[{{tr|Plantera}}]]被击败前无法被致动。
+** 这一设定最初可能是有意为之，因为[[{{tr|Biome Keys}}]]从前并不会直接掉落，而是需要用到[[{{tr|Temple Key}}]]制作。
+* {{tr|NPC}} 可以正常生成于被致动的物块之上，然后会立即下落穿过它们。
+* 未激活的{{tr|blocks}}不算作 [[{{tr|NPC}}]] [[{{tr|house}}]]的框架，因此框架中有任何未激活{{tr|block}}的{{tr|house}}会变成无效{{tr|house}}。
+* 在{{console version}}中，被锁的{{tr|Jungle Temple door}}被视作被致动的{{tr|Block}}。
+* 如果在{{tr|block}}被致动前放置[[{{tr|Portal Gun}}]]的{{tr|Portals}}，在{{tr|block}}致动后{{tr|portals}}也不会消失且可以正常生效。
+* {{tr|Actuator}}对于[[{{tr|bubble}}]]没有效果。
+
+== 小贴士 ==
+* 使用{{tr|Actuators}}代替[[{{tr|doors}}]]可以制造能够完全阻挡[[{{tr|Blood Moon}}]]等[[{{tr|events}}]]中{{tr|enemies}}的进出口。
+** 也有可能使用六个{{tr|Actuator}}并使两侧处于不同状态来制作出一个气闸式双门互锁系统。将其与所选择的{{tr|triggers}}结合，可以在保证房屋始终有效的情况下仅允许玩家通过。虽然仍然需要一扇{{tr|door}}或一些{{tr|platform}}来保证房屋有效，但这种类型的{{tr|door}}可以直接放置在 NPC 房屋的外墙上,以此来节约搭建房屋时所用的任何昂贵的材料。
+* 由于它们对{{tr|trap}}起效，所以可以连续放置多个{{tr|trap}}，而没有任何一个{{tr|trap}}的攻击会被前方的{{tr|trap}}挡住。
+* {{tr|Actuators}}可用于在不生成[[{{tr|lava}}]]的情况下穿过[[{{tr|the Underworld}}]]中的[[{{tr|Hellstone}}]]。类似地，它也可以用于在不生成[[{{tr|honey}}]]或{{tr|bee}}的情况下穿过[[{{tr|Hive|link=y}}|{{tr|Hive block}}]]。{{tr|Actuation Rod}}或许可以快速地激活已放置的{{tr|Actuators}}。
+* 如果在重新激活{{tr|block}}的时候{{tr|player}}站在其中，{{tr|player}}可以在原来所占据的 6 个{{tr|block}}中自由移动，但不能进入其他{{tr|block}}。这可以用于临时防护。
+* {{eicons|1.4.0.1}}与自然生成的{{tr|wires}}一样，自然生成的{{tr|Actuators}}同样可以被收集，即使它们罕见得多。每个{{tr|Actuators}}可以节约{{sc|10}}。
+* {{tr|Actuators}}是一个很好的工具，可以为规划（尤其是在地下）进行地形改造/清理道路。
+
+== 花絮 ==
+* [[{{tr|Multicolor Wrench}}]]不能移除{{tr|Actuators}}，虽然它是用可以移除{{tr|Actuators}}的{{tr|Wire Cutter}}制作的。
+** 然而，由{{tr|Multicolor wrench}}制作的[[{{tr|The Grand Design}}]]可以移除{{tr|Actuators}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|不再能用于取下[[{{tr|Lihzahrd Altar}}]]。}}
+{{history|Desktop 1.3.1|
+** {{tr|Sprite updated.}}
+** 现在用于制作[[{{tr|Actuation Rod}}]]。}}
+{{history|Desktop 1.2.4|被致动的{{tr|tiles}}不再会在{{tr|world}}重新加载时移除其上方的{{tr|water}}。}}
+{{history|Desktop 1.2.3|修复了未激活的{{tr|tiles}}可以被粘住（例：[[{{tr|Sticky Bomb}}]]）的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|{{tr|Actuators}}不再对[[{{tr|doors}}]]生效。}}
+{{history|Desktop 1.2.0.2|在击败[[{{tr|Plantera}}]]前不再能够使用{{tr|actuators}}来致动[[{{tr|Jungle Temple}}]]{{tr|blocks}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|
+** {{tr|Sprite updated.}}
+** 现在用于制作[[{{tr|Actuation Rod}}]]。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Wiring}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Actuator}}

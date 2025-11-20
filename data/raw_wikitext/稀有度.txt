@@ -1,0 +1,176 @@
+'''{{tr|Rarity}}'''是所有{{tr|item}}都具备的一项属性，它能粗略地体现出{{tr|item}}的价值与获取的难度。在{{tr|game}}内，{{tr|item}}的{{tr|rarity}}体现于其{{tr|name}}文字的显示{{tr|color}}。例如，当{{tr|cursor}}指向[[{{tr|inventory}}]]中的某一个{{tr|item}}时，即可看到显示出来的{{tr|item}}{{tr|name}}带有{{tr|rarity}}{{tr|color}}。{{tr|item}}的[[{{tr|modifier}}]]会影响其{{tr|rarity}}，可以提升或降低多达 2 {{tr|tiers}}。
+
+所有{{tr|Rarity}}为{{rare|0|cate=no}}的{{tr|item}}在接触{{tr|lava}}时都会被摧毁，但以下{{tr|item}}例外：
+* [[{{tr|Obsidian}}]]
+* [[{{tr|Fireblossom}}]]
+* [[{{tr|Fireblossom Seeds}}]]
+* {{item|Living Fire Block|mode=text}}（仅限原始类型）
+* {{item|Grate|mode=text}}
+* [[{{tr|buckets}}]]（所有 4 种类型）
+* [[{{tr|Track}}]]（所有 3 种类型）
+* [[{{tr|Crispy Honey Blocks}}]]
+* [[{{tr|Chains}}]]
+所有{{tr|rarity}}不为{{rare|0|cate=no}}的{{tr|item}}在接触{{tr|lava}}时都不会被摧毁。
+
+== 等级 ==
+{{more images|pictures of each rarity color when using the Void Bag or Sonar Potion, alongside the used colors}}
+点击{{tr|rarity}}{{tr|color}}图标可以查看相应{{tr|rarity}}的全部{{tr|item}}清单。
+
+{| class="terraria lined align-center full-width"
+! {{tr|tier}}/{{tr|color}}
+! <abbr title="此{{tr|tier}}{{tr|item}}的一般描述。存在一些例外情况。">描述</abbr>
+! 例子
+! {{tr|color}}代码{{source code ref|v=1.4.4.9|method=Terraria.PopUpText.NewText}}
+|-
+| '''-1'''
+
+[[File:Rarity color negative big.png|{{tr|rarity}}{{tr|tier}}：-1|link=:分类:{{tr|rarity}}为 -1 的{{tr|item}}]]
+| align=left | 最低{{tr|tier}}。只有[[{{tr|fishing}}]]得到的“{{tr|junk}}”{{tr|item}}（[[{{tr|Tin Can}}]]、[[{{tr|Old Shoe}}]]、和[[{{tr|Seaweed (junk)}}|{{tr|Seaweed}}]]）拥有该{{tr|rarity}}，以此作为{{tr|rarity}}基准。出现在这个{{tr|tier}}的主要是带有“坏”[[{{tr|modifier}}]]的{{tc/rarity|Blue}}装备，比如，{{tr|shameful}} [[{{tr|Iron Broadsword}}]]。
+| [[File:Rarity-negative.png|link=钓鱼#垃圾]] 
+| {{color box|rgb(130, 130, 130)|text=y|textformat=hex}}
+|-
+| '''0'''
+
+[[File:Rarity color 0 big.png|{{tr|rarity}}{{tr|tier}}：0|link=:分类:{{tr|rarity}}为 0 的{{tr|item}}]]
+| align=left | 在{{tr|Terraria}}的{{tr|game}}代码中，没有明确指定{{tr|rarity}}的{{tr|items}}都默认归入这一{{tr|tier}}。到目前为止，此{{tr|rarity}}的{{tr|item}}是最多的，其中很多都可认为是{{tr|game}}中最常见的{{tr|item}}。[[{{tr|Coins}}]]、[[{{tr|Heart}}|{{tr|Hearts}}]]和[[{{tr|Mana Star}}|{{tr|Mana Stars}}]]都在这一{{tr|tier}}。其中包含有大多数的[[{{tr|furniture}}]]，建筑{{tr|materials}}（[[{{tr|blocks}}]]与[[{{tr|walls}}]]），早期的[[{{tr|tools}}]]、[[{{tr|weapons}}]]和[[{{tr|armor}}]]（用[[{{tr|wood}}]]或低{{tr|tier}}的[[{{tr|ores}}]]制造的），[[{{tr|Gel}}]]和[[{{tr|herbs}}]]之类常见[[{{tr|crafting material}}]]，以及大多数早期 [[{{tr|NPC}}]] 出售{{tr|item}}。此{{tr|tier}}的{{tr|item}}会被[[{{tr|lava}}]]摧毁，只有少数例外。
+| [[File:Rarity-0.png|link={{tr|Wood|link=y}}]]
+| {{color box|rgb(255, 255, 255)|text=y|textformat=hex}}
+|-
+| '''1'''
+
+[[File:Rarity color 1 big.png|{{tr|rarity}}{{tr|tier}}：1|link=:分类:{{tr|rarity}}为 1 的{{tr|item}}]]
+| align=left | 一些早期的[[{{tr|ores}}]]制作出的[[{{tr|Weapons}}]]与[[{{tr|armor}}]]，以及早期的{{tr|drop}}{{tr|item}}如[[{{tr|Shackle}}]]与[[{{tr|Lucky Horseshoe}}]]之类。也包括{{$|banners||enemy}}、[[{{tr|trophies}}]]、[[{{tr|masks}}]]，[[{{tr|Fishing}}|{{tr|fish}}]]、还有[[{{tr|Pre-Hardmode}}]]的各种[[{{tr|dyes}}]]，以及各种{{tr|buff potions}}（但[[{{tr|Stink Potion}}]]和[[{{tr|Love Potion}}]]的{{tr|rarity}}为白色，而{{eil|Biome Sight Potion}} 的{{tr|rarity}}为粉色，因此它们除外）。本{{tr|tier}}以及更高{{tr|tier}}的{{tr|item}}在[[{{tr|lava}}]]中不会被摧毁。
+| [[File:Rarity-1.png|link={{tr|Umbrella|link=y}}]]
+| {{color box|rgb(150, 150, 255)|text=y|textformat=hex}}
+|-
+| '''2'''
+
+[[File:Rarity color 2 big.png|{{tr|rarity}}{{tr|tier}}：2|link=:分类:{{tr|rarity}}为 2 的{{tr|item}}]]
+| align=left | [[{{tr|Pre-Hardmode}}]]的中期{{tr|item}}。大多数是由{{tr|drop}}或{{tr|buy}}（{{tr|noncraftable item}}）得到，例外的是[[{{tr|Necro armor}}]]、[[{{tr|Sandgun}}]]、[[{{tr|Spinal Tap}}]]、[[{{tr|Sunglasses}}]]、[[{{tr|Obsidian Skull}}]]、[[{{tr|Star Cannon}}]]、[[{{tr|Diamond Staff}}]]、和[[{{tr|Tinkerer's Workshop}}]]的各种合成品。
+| [[File:Rarity-2.png|link={{tr|Book of Skulls|link=y}}]]
+| {{color box|rgb(150, 255, 150)|text=y|textformat=hex}}
+|-
+| '''3'''
+
+[[File:Rarity color 3 big.png|{{tr|rarity}}{{tr|tier}}：3|link=:分类:{{tr|rarity}}为 3 的{{tr|item}}]]
+| align=left | [[{{tr|Pre-Hardmode}}]]的后期{{tr|item}}：用[[{{tr|Hellstone}}]]制作出来的[[{{tr|Weapons}}]]和[[{{tr|armor}}]]、出自[[{{tr|Jungle}}]]和[[{{tr|Underground Jungle}}]]的{{tr|item}}、出自[[{{tr|Underworld}}]]{{tr|item}}和[[{{tr|Void Bag}}]]。几种[[{{tr|Hardmode}}]]的{{tr|ores}}、[[{{tr|crafting material}}]]、和{{tr|consumables}}（[[{{tr|Greater Healing Potion}}]]和一些[[{{tr|ammunition}}]]{{tr|item}}）也归于此{{tr|tier}}。
+| [[File:Rarity-3.png|link={{tr|Crystal Ball|link=y}}]]
+| {{color box|rgb(255, 200, 150)|text=y|textformat=hex}}
+|-
+| '''4'''
+
+[[File:Rarity color 4 big.png|{{tr|rarity}}{{tr|tier}}：4|link=:分类:{{tr|rarity}}为 4 的{{tr|item}}]]
+| align="left" | 早期[[{{tr|Hardmode}}]]{{tr|item}}，包括由摧毁[[{{tr|Altars}}]]之后生出的六种[[{{tr|Hardmode|link=y}}#{{tr|Ores}}|{{tr|Hardmode ores}}]]所制作出来的{{tr|item}}，和{{tr|Hardmode}}早期或常见敌怪所{{tr|drop}}的{{tr|item}}。也包括各种[[{{tr|flasks}}]]，和一些虽然罕见但依然可以在很早期就得到的{{tr|item}}，例如[[{{tr|Golden Bug Net}}]]和[[{{tr|Slime Staff}}]]。还包括一些[[{{tr|pre-Hardmode}}]]后期的{{tr|item}}，比如[[{{tr|Mana Flower}}]]，以及大多数用[[{{tr|Shiny Red Balloon}}]]制作的{{tr|item}}。
+| [[File:Rarity-4.png|link=双钩]]
+| {{color box|rgb(255, 150, 150)|text=y|textformat=hex}}
+|-
+| '''5'''
+
+[[File:Rarity color 5 big.png|{{tr|rarity}}{{tr|tier}}：5|link=:分类:{{tr|rarity}}为 5 的{{tr|item}}]]
+| align=left | [[{{tr|Hardmode}}]]中期（[[{{tr|Plantera}}]]前）的{{tr|item}}，包括击败[[{{tr|Mechanical Bosses}}]] 得到的那些道具，如[[{{tr|Flamethrower}}]]、[[{{tr|Optic Staff}}]]和[[{{tr|Hallowed armor}}]]。也包括{{tr|Hardmode}} [[{{tr|NPC}}]] 所出售的那些更昂贵的{{tr|item}}比如[[{{tr|Clentaminator}}]]，和一些更罕见的{{tr|Hardmode}}{{tr|drop}}品，其中包括制造中级[[{{tr|wing}}]]所需的一些特殊{{tr|materials}}（[[{{tr|Tattered Bee Wing}}]]、[[{{tr|Fire Feather}}]]等等）。还包括某些[[{{tr|pre-Hardmode}}]][[{{tr|vanity items}}]]，比如[[{{tr|Winter Cape}}]]。
+| [[File:Rarity-5.png|link={{tr|Fairy Bell|link=y}}]]
+| {{color box|rgb(255, 150, 255)|text=y|textformat=hex}}
+|-
+| '''6'''
+
+[[File:Rarity color 6 big.png|{{tr|rarity}}{{tr|tier}}：6|link=:分类:{{tr|rarity}}为 6 的{{tr|item}}]]
+| align=left | 这是一个比较小的{{tr|tier}}，主要由[[{{tr|Plantera}}]]前最罕见的{{tr|item}}所构成，这些{{tr|item}}绝大多数为售卖品或{{tr|drop}}品，如[[{{tr|Death Sickle}}]]和[[{{tr|Coin Gun}}]]，还包括通过[[{{tr|Shimmer}}]]{{tr|transmutation}}获得的一次性[[{{tr|consumable}}]]。还有高等级的[[{{tr|Tinkerer's Workshop}}]]合成品，如[[{{tr|Ankh Charm}}]]、[[{{tr|Hand Of Creation}}]]和[[{{tr|Ammo Box}}]]（{{eversions|Ammo Box|not=1.4.4|short=y}}中[[{{tr|pre-Hardmode}}]]可获得）。
+| [[File:Rarity-6.png|link={{tr|Coin Gun|link=y}}]]
+| {{color box|rgb(210, 160, 255)|text=y|textformat=hex}}
+|-
+| '''7'''
+
+[[File:Rarity color 7 big.png|{{tr|rarity}}{{tr|tier}}：7|link=:分类:{{tr|rarity}}为 7 的{{tr|item}}]]
+| align=left | 得自[[{{tr|Plantera}}]]和[[{{tr|Golem}}]]，以及{{tr|Hardmode}}[[{{tr|Underground Jungle}}]]的{{tr|item}}。[[{{tr|Chlorophyte}}]]{{tr|tool}}与{{tr|weapon}}、[[{{tr|Ankh Shield}}]]、[[{{tr|Temple Key}}]]、部分[[{{tr|Pumpkin Moon}}]]及[[{{tr|Frost Moon}}]]{{tr|drop}}品、和[[{{tr|Candy Cane Hook}}]]。还有一些高级的{{tr|The Pre-Hardmode}}的[[{{tr|Tinkerer's Workshop}}]]合成物，比如{{eil|Cell Phone}}、[[{{tr|Frostspark Boots}}]]、[[{{tr|Lava Waders}}]]、和{{eil|Terraspark Boots}}。
+| [[File:Rarity-7.png|link={{tr|Rod of Discord|link=y}}]]
+| {{color box|rgb(150, 255, 10)|text=y|textformat=hex}}
+|-
+| '''8'''
+
+[[File:Rarity color 8 big.png|{{tr|rarity}}{{tr|tier}}：8|link=:分类:{{tr|rarity}}为 8 的{{tr|item}}]]
+| align=left | 用[[{{tr|Plantera}}]]后的[[{{tr|Hardmode Dungeon}}|{{tr|Dungeon}}]]中所获得的{{tr|item}}和以此为{{tr|materials}}制作出的{{tr|item}}：[[{{tr|Spectre Bar}}]]/[[{{tr|Ectoplasm}}]]{{tr|item}}，[[{{tr|Biome Chest}}]]{{tr|item}}如[[{{tr|Vampire Knives}}]]；[[{{tr|Shroomite Bar}}|{{tr|Shroomite}}]]{{tr|items}}；以及来自{{tr|game}}后期的[[{{tr|event}}]]的{{tr|drop}}物：[[{{tr|Martian Madness}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Betsy}}]]；以及[[{{tr|Duke Fishron}}]]或[[{{tr|Empress of Light}}]]的{{tr|drop}}物。还有[[{{tr|Beetle armor}}]]、[[{{tr|Terra Blade}}]]、[[{{tr|Shellphone}}]]、[[{{tr|Portal Gun}}]]、以及所有[[{{tr|mounts}}]]（[[{{tr|Minecart}}]]和 {{eicons|1.4.0.1}} [[:Category:{{tr|Master Mode}}内容|{{tr|Master Mode}}独有的]]{{tr|mounts}}除外）。
+| [[File:Rarity-8.png|link={{tr|Paladin's Shield|link=y}}]]
+| {{color box|rgb(255, 255, 10)|text=y|textformat=hex}}
+|-
+| '''9'''
+
+[[File:Rarity color 9 big.png|{{tr|rarity}}{{tr|tier}}：9|link=:分类:{{tr|rarity}}为 9 的{{tr|item}}]]
+| align=left |这又是一个比较小的{{tr|tier}}，包含来自{{eil|Lunar Events}} 的早期{{tr|item}}，主要是[[{{tr|Lunar Fragments}}]]和[[{{tr|Monolith}}]]，以及[[{{tr|Luminite Brick}}]]。也包括偶尔可以从[[{{tr|Expert Mode}}]]的[[{{tr|Treasure Bag}}]]中得到的[[{{tr|developer items}}]]、[[{{tr|streamer items}}]]和[[{{tr|Echo Chamber}}]]。对于{{eversions|1.3.0.1|invert=y|short}}，这个{{tr|tier}}内只有[[{{tr|reforge}}]]过的基础{{tr|rarity}}为{{tc/rarity|Lime}}或{{tc/rarity|Yellow}}的[[{{tr|weapons}}]]和[[{{tr|accessories}}]]，因为在这些版本中{{tr/rarity|Cyan}}就是最高{{tr|rarity}}了。
+| [[File:Rarity-9.png|link={{tr|Valkyrie Yoyo|link=y}}]]
+| {{color box|rgb(5, 200, 255)|text=y|textformat=hex}}
+|-
+| '''10'''
+
+[[File:Rarity color 10 big.png|{{tr|rarity}}{{tr|tier}}：10|link=:分类:{{tr|rarity}}为 10 的{{tr|item}}]]
+| align=left | {{eicons|1.3.0.1}} 用[[{{tr|Lunar Fragment}}]]及[[{{tr|Luminite}}]]在[[{{tr|Ancient Manipulator}}]]处制作出来的{{tr|item}}，包括{{tr|Ancient Manipulator}}{{tr|crafting station}}本身。以及大多数直接{{tr|drop}}自[[{{tr|Moon Lord}}]]的{{tr|item}}，需要击败{{tr|Moon Lord}}才能获得的[[{{tr|Shimmer}}]]升级物，以及[[{{tr|Static Hook}}]]、和[[{{tr|Rubblemaker}}]]。
+| [[File:Rarity-10.png|link={{tr|Meowmere|link=y}}]]
+| {{color box|rgb(255, 40, 100)|text=y|textformat=hex}}
+|-
+| '''11'''
+
+[[File:Rarity color 11 big.png|{{tr|rarity}}{{tr|tier}}：11|link=:分类:{{tr|rarity}}为 11 的{{tr|item}}]]
+| align=left | {{eicons|1.3.0.1}} 这个{{tr|tier}}由拥有高级[[{{tr|modifier}}]]的{{tc/rarity|Cyan}}与{{tc/rarity|Red}}{{tr|item}}构成。目前没有基准{{tr|rarity}}在这个{{tr|tier}}的{{tr|item}}。
+| [[File:Rarity-11.png|link={{tr|Nebula Arcanum|link=y}}]]
+| {{color box|rgb(180, 40, 255)|text=y|textformat=hex}}
+|-
+| '''{{tr|expert}} (−12)'''
+
+[[File:Rarity color rainbow big.gif|{{tr|rarity}}{{tr|tier}}：彩虹|link=:分类:{{tr|rarity}}为彩虹的{{tr|item}}]]
+| align=left | {{eicons|1.3.0.1}} 这个特殊的{{tr|tier}}包括通过打开{{tr|drop}}自[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]] [[{{tr|bosses}}]] 的[[{{tr|Treasure Bags}}]]得到的[[:Category:{{tr|Expert mode}}内容|{{tr|Expert mode}}独有]]{{tr|items}}，以及{{tr|Treasure Bags}}本身。除了[[{{tr|developer items}}]]外，所有来自{{tr|Expert mode}}的独有{{tr|items}}都具有这个{{tr|rarity}}。
+
+尽管这些{{tr|item}}在{{tr|game}}内的{{tr|rarity}}{{tr|color}}均显示为动态的彩虹色，但在{{tr|game}}代码中，它们包含有其他{{tr|tier}}数值。
+| [[File:Rarity-rainbow.gif|link={{tr|Hive Pack|link=y}}]]
+| 动态{{source code ref|v=1.4.4.9|method=Terraria.Main.DoUpdate_AnimateDiscoRGB}}
+|-
+| '''{{tr|master}} (−13)'''
+
+[[File:Rarity color fiery red big.gif|{{tr|rarity}}{{tr|tier}}：火红|link=:Category:{{tr|rarity}}为火红的{{tr|item}}]]
+| align=left | {{eicons|1.4.0.1}} 这个特殊的{{tr|tier}}包括[[{{tr|Master Mode}}]]中的 [[{{tr|bosses}}]] {{tr|drop}}的[[:Category:{{tr|Master mode}}内容|{{tr|Master Mode}}独有]]{{tr|item}}。除了 [[{{tr|0x33's Aviators}}]]外，所有来自{{tr|Master mode}}的独有{{tr|items}}都具有这个{{tr|rarity}}。
+| [[File:Rarity-fiery red.gif|link={{tr|Frozen Crown|link=y}}]]
+| 动态{{source code ref|v=1.4.4.9|method=Terraria.Main.DoUpdate_AnimateCursorColors}}
+|-
+| '''{{tr|quest}} (−11)'''
+
+[[File:Rarity color quest big.png|{{tr|rarity}}{{tr|tier}}：{{tr|quest}}|link=:分类:{{tr|quest}}{{tr|rarity}}的{{tr|item}}]]
+| align=left | 这个特殊{{tr|tier}}只包含用来交给发布{{tr|quest}}的 [[{{tr|NPC}}]]（目前只有[[{{tr|Dye Trader}}]]和[[{{tr|Angler}}]]）来换{{tr|quest reward}}的“{{tr|quest item}}”。{{tr|quest}}{{tr|item}}没有其他用途，不过[[{{tr|Strange Plant}}]]可以卖得 {{iteminfo|Strange Plant|sell}} 或用于装饰。
+| [[File:Rarity-quest.png|link={{tr|Bunnyfish|link=y}}]]
+| {{color box|rgb(255, 175, 0)|text=y|textformat=hex}}
+|}
+
+== 备注 ==
+* 某些{{tr|rarity}}{{tr|color}}在{{tr|game}}中显得非常相似，很容易弄混，例如，{{tc/rarity|Green}}和{{tc/rarity|Lime}}、{{tc/rarity|Orange}}和{{tc/rarity|Light Red}}。
+* 如果用[[{{tr|Announcement Box}}]]来显示带有能提升{{tr|rarity}}的{{tr|modifiers}}的{{tr|quest item}}，会发现此{{tr|quest item}}的{{tr|rarity}}{{tr|color}}显示为{{tc/rarity|Gray}}（Gray）。
+* {{tc/rarity|Gray}}{{tr|rarity}}的{{tr|item}}（在 {{code|-1}} {{tr|tier}}中的）同样不受{{tr|lava}}影响。这可能是个 {{tr|bug}} 或者疏忽，因为{{tr|source code}}只检查{{tr|rarity}}为 {{code|0}}（{{tc/rarity|White}}）的{{tr|item}}。{{source code ref|v=1.4.4.9|method=Terraria.Item.CheckLavaDeath}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced}}火红色{{tr|Rarity}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced}}{{tc/rarity|Red}}、{{tc/rarity|Purple}}、和{{tc/rarity|Rainbow}}{{tr|rarity}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced}}{{tc/rarity|Amber}}{{tr|Rarity}}。}}
+{{history|Desktop 1.2|{{tr|Introduced}}{{tc/rarity|Lime}}、{{tc/rarity|Yellow}}、和{{tc/rarity|Cyan}}{{tr|Rarities}}。}}
+{{history|Desktop 1.1|introduced=y|patched=y|
+**{{tr|Introduced}}{{tc/rarity|Gray}}、{{tc/rarity|Pink}}、和{{tc/rarity|Light Purple}}{{tr|Rarity}}。
+** {{tc/rarity|Light Red}}{{tr|Rarity}}现在是可获得的了。}}
+{{history|Desktop-Release|{{tr|Introduced}}{{tc/rarity|White}}、{{tc/rarity|Blue}}、{{tc/rarity|Green}}、和{{tc/rarity|Orange}}{{tr|rarities}}。{{tc/rarity|Light Red}}{{tr|rarity}}已{{tr|introduced}}，但{{tr|unobtainable}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced}}{{tc/rarity|Red}}、{{tc/rarity|Purple}}、和{{tc/rarity|Rainbow}}{{tr|rarity}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced}}{{tc/rarity|Red}}、{{tc/rarity|Purple}}、和{{tc/rarity|Rainbow}}{{tr|rarity}}。（{{icon/ps4}}）}}
+{{history|Console 1.07|{{tr|Introduced}}{{tc/rarity|Amber}}{{tr|Rarity}}。}}
+{{history|Console 1.02|{{tr|Introduced}}{{tc/rarity|Lime}}、{{tc/rarity|Yellow}}、和{{tc/rarity|Cyan}}{{tr|Rarities}}。}}
+{{history|Console-Release|{{tr|Introduced}}{{tr/rarity|Gray}}、{{tr/rarity|White}}、{{tr/rarity|Blue}}、{{tr/rarity|Green}}、{{tr/rarity|Orange}}、{{tr/rarity|Light Red}}、{{tr/rarity|Pink}}、和{{tr/rarity|Light Purple}}{{tr|rarities}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}{{tr/rarity|Gray}}、{{tr/rarity|White}}、{{tr/rarity|Blue}}、{{tr/rarity|Green}}、{{tr/rarity|Orange}}、{{tr/rarity|Light Red}}、{{tr/rarity|Pink}}、{{tr/rarity|Light Purple}}、{{tr/rarity|Lime}}、{{tr/rarity|Yellow}}、{{tr/rarity|Cyan}}、{{tr/rarity|Amber}}、{{tr/rarity|Red}}、{{tr/rarity|Purple}}、和{{tr/rarity|Rainbow}}{{tr|rarities}}。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}火红色{{tr|Rarity}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced}}{{tc/rarity|Red}}、{{tc/rarity|Purple}}、和{{tc/rarity|Rainbow}}{{tr|rarity}}。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}{{tc/rarity|Amber}}{{tr|Rarity}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}{{tc/rarity|Lime}}、{{tc/rarity|Yellow}}、和{{tc/rarity|Cyan}}{{tr|Rarities}}。}}
+{{history|Mobile 1.1.5536|introduced=y|patched=y|
+**{{tr|Introduced}}{{tc/rarity|Gray}}、{{tc/rarity|Pink}}、和{{tc/rarity|Light Purple}}{{tr|Rarity}}。
+** {{tc/rarity|Light Red}}{{tr|Rarity}}现在是可获得的了。}}
+{{history|Mobile-Release|{{tr|Introduced}}{{tc/rarity|White}}、{{tc/rarity|Blue}}、{{tc/rarity|Green}}、和{{tc/rarity|Orange}}{{tr|rarities}}。{{tc/rarity|Light Red}}{{tr|rarity}}已{{tr|introduced}}，但{{tr|unobtainable}}。}}
+{{history|3DS-Release|{{tr|Introduced}}{{tr/rarity|Gray}}、{{tr/rarity|White}}、{{tr/rarity|Blue}}、{{tr/rarity|Green}}、{{tr/rarity|Orange}}、{{tr/rarity|Light Red}}、{{tr/rarity|Pink}}、{{tr/rarity|Light Purple}}、{{tr/rarity|Lime}}、{{tr/rarity|Yellow}}、和{{tr/rarity|Cyan}}{{tr|rarities}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{game mechanics}}
+[[Category:{{tr|item}}|*]]
+
+{{language info|en=Rarity}}

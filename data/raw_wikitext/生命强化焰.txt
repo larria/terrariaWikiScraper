@@ -1,0 +1,43 @@
+{{exclusive|Nebula armor}}
+{{item infobox
+| type = Potion
+| ext = gif
+| duration = 8
+| auto = 3454
+| hardmode = yes
+}}
+
+'''{{tr|Life Booster}}'''是在穿着全套[[{{tr|Nebula armor}}]]并攻击到[[{{tr|enemy}}]]时，随机掉落的三种强化焰之一。拾取时，它会提供'''{{tr|Life Nebula}}'''{{tr|buff}}，这会立刻将玩家的[[{{tr|health regeneration}}]]速率增加 3 点/秒，持续 8 秒{{source code ref|v=1.4.3.6|method=Terraria.Player.UpdateBuffs}}。如果在{{tr|Life Nebula buff}}已处于激活状态时拾取{{tr|Life Booster}}，那么它会与先前的{{tr|Life Nebula}}相叠加，最多叠加三次。每 8 秒钟，就会损失一层{{tr|Life Booster}}，同时{{tr|the Life Nebula buff}}也会降低一级。
+
+{{tr|Life Boosters}}，与其他{{tr|Nebula}}强化焰一样，都可以漂浮在空中，并具有 8.875 格的[[拾取范围]]。{{source code ref|v=1.4.3.6|method=Terraria.Player.GetItemGrabRange}}它们不能正常地出现在玩家的[[{{tr|inventory}}]]中。
+
+== 备注 ==
+* 叠加三层时，玩家的{{tr|health regeneration}}会增加 9 点/秒。
+** 尽管它是个非常强力的防御性{{tr|buff}}，但{{tr|debuff}}[[{{tr|On Fire!}}]]和[[{{tr|Poisoned}}]]可以完全将其带来的益处无效化。
+* 在[[{{tr|multiplayer}}]]中，任何一位玩家都能拾取这些{{tr|Life Boosters}}并能从其{{tr|buff}}中受益，无论是否身着{{tr|Nebula armor}}。另外，拾取{{tr|Life Boosters}}时会给附近（在 43.75 格半径内{{source code ref|v=1.4.3.6|method=Terraria.MessageBuffer.GetData|t=相关的 <code>messageType</code> 为 102。}}）的玩家{{tr|Life Nebula}}。如果取得{{tr|Life Boosters}}的玩家在[[{{tr|Teams}}]]中，则只有同一队的其他玩家能得到此{{tr|buff}}。
+
+== 另见 ==
+* [[{{tr|Damage Booster}}]]
+* [[{{tr|Mana Booster}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 每层{{tr|Life Booster}}提供的治疗由 5 HP/{{tr|second}}降低至 3 HP/{{tr|second}}。
+** 如果使用[[{{tr|inventory editor}}]]将{{tr|Life Booster}}放入玩家的{{tr|inventory}}，它将不再显示为其动画帧，而是正确地显示动画。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-nebula = yes
+}}
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Life Booster}}

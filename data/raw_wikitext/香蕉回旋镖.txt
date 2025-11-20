@@ -1,0 +1,59 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1324
+| listcat = boomerangs
+| tags = Drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Bananarang (demo).gif|framed|{{tr|Bananarangs}}攻击[[{{tr|Target Dummy}}]]。]]
+{{dablink|不要与{{eil|Banana}}，一件[[{{tr|food}}]]{{tr|item}}相混淆。}}
+
+'''{{tr|Bananarang}}'''是一个[[{{tr|Hardmode}}]][[{{tr|boomerang}}]]。它会在击中{{tr|enemy}}、接触[[{{tr|block}}]]、或到达最大范围后返回玩家。和大部分其他{{tr|boomerangs}}不同，{{tr|Bananarang}}被丢出后玩家无需等待其返回即可继续丢出更多的{{tr|Bananarang}}，同时最多可丢出 10 个{{tr|Bananarang}}。{{tr|The Bananarang}}有 {{chance|1/10}} 几率掉落自[[{{tr|Blood Moon}}]]期间的[[{{tr|Clown}}]]。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|Bananarang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 32.19 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Bananarang}}返回玩家时的最高速度为 {{mph|20 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 小贴士 ==
+* {{tr|The Bananarang}}是对付{{tr|flying enemies}}以及阻拦大群怪时的好选择。它在[[{{tr|Hardmode}}]]的前中期很强大，尤其是应对诸如[[{{tr|Queen Slime}}]]、[[{{tr|The Twins}}]]、和[[{{tr|Skeletron Prime}}]]等 {{tr|boss}} 时。
+* {{tr|Bananarangs}}在{{tr|Hardmode}}第一次[[{{tr|Blood Moon}}]]中就能获得，但所造成的{{tr|damage}}要高于大多数[[{{tr|Adamantite}}]]和[[{{tr|Titanium}}]]{{tr|weapons}}。
+
+== 花絮 ==
+* 英文名 ''Bananarang'' 由单词 ''banana''（{{tr|banana}}）和 ''boomerang''（{{tr|boomerang}}）组合而成。
+* 尽管是{{tr|banana}}，玩家并不能食用{{tr|the Bananarang}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.3|{{tr|Sell value}}由 {{gc|15}} 降低至 {{gc|12}}。}}
+{{history|Desktop 1.4.4|
+** 现在是单个{{tr|item}}，而非能堆叠 10 个的{{tr|item}}。因此，它现在能获得[[{{tr|modifiers}}]]。
+** {{tr|Sell value}}由 {{coin|7.5gc}} 提升至 {{gc|15}}。
+** {{tr|Damage}}由 55 降低至 45。
+** 掉落几率由 {{chance|1/30}} 提升至 {{chance|1/10}}。}}
+{{history|Desktop 1.4.1|
+** {{tr|Use Time}}由 14 降低至 11。
+** {{tr|Bananas}}的{{tr|projectile speed}}和返回速度都有所提升。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.3|现在会{{tr|autoswings}}。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 40 提升至 55。
+** {{tr|use time}}由 7（{{tr/speed|Insanely Fast}}）提升至 14（{{tr/speed|Very Fast}}）。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Bananarang}}

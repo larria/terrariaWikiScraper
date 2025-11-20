@@ -1,0 +1,34 @@
+{{for|类似的列表，其中包含所有类型武器的信息|武器列表}}
+{{see also|{{tr|ranged weapons}}列表|{{tr|magic weapons}}列表|{{tr|summon weapons}}列表}}
+
+本页面包含《[[{{tr|Terraria}}]]》中所有可用[[{{tr|melee weapons}}]]的可排序列表。所有显示的数据均为来自源代码的基础值（没有[[{{tr|modifiers}}]]、[[{{tr|accessories}}]]、或[[{{tr|buffs}}]]的效果）。《{{tr|Terraria}}》中不同{{tr|melee weapons}}的总数是 {{#cargo_query:tables=Items|fields=count(distinct name)|where=damagetype LIKE '%melee%' AND type HOLDS 'weapon'|no html}} 种。
+{| class="terraria sortable lined align-center"
+! colspan=2 | 名称
+! data-sort-type=number | [[{{tr|Damage}}]]
+! data-sort-type=number | [[{{tr|Velocity}}]]
+! data-sort-type=number | [[{{tr|Use time}}]]
+! data-sort-type=number | [[{{tr|Knockback}}]]
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | [[{{tr|Rarity}}]]
+! data-sort-type=number | 卖出价
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, image, name, damage, velocity, usetime, knockback, critical, autoswing, rare, hardmode, sell
+|q?where=damagetype LIKE '%melee%' AND type HOLDS 'weapon'
+|q?groupBy=itemid
+|q?orderBy=name ASC, FLOOR(itemid) ASC
+|q?limit=200
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+[[Category:{{tr|Melee weapons}}| ]]
+
+{{language info|en=List of melee weapons}}
