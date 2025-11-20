@@ -1,0 +1,48 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4763
+| idbuff = 272
+| tags = minecart / vendor / vendor:Zoologist
+}}
+
+'''{{tr|Digging Molecart}}'''是一种[[{{tr|Minecart}}]]，可以自动挖掘一条隧道并且放置[[{{tr|Minecart Track}}]]。 在[[{{tr|Bestiary}}]]完成了 35%（{{b entries|35%|entries}}）之后，它由[[{{tr|Zoologist}}]]以{{iteminfo|Digging Molecart|buy}}出售。
+
+一旦行驶上已经放置好的轨道， {{tr|Digging Molecart}}将以 {{mountinfo|Digging Molecart|max speed}} 的最大速度移动。当它行进时，它会挖掘出 5 个{{tr|tile}}高的隧道并且放置轨道。即使它在斜向轨道上开始移动，它也只会水平地放置轨道和移动。
+
+== 备注 ==
+{{float file|[[File:Digging Molecart (demo).gif|frame|right|使用中的{{tr|Digging Molecart}}。]]}}
+
+* {{tr|Digging Molecart}}的自动铺路功能仅在[[{{tr|Underground}}]][[{{tr|layer}}]]及以下可用。
+**  要挖掘{{tr|block}}，玩家的[[{{tr|inventory}}]]中必须拥有至少一把[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]。它会使用[[{{tr|pickaxe power}}]]最高的工具。
+** 要放置轨道，玩家的[[{{tr|inventory}}]]中必须有[[{{tr|Minecart Track}}]]。
+* {{tr|Digging Molecart}}无法挖掘会受到重力影响的{{tr|block}}，例如[[{{tr|Sand Block}}]]、[[{{tr|Silt Block}}]]或[[{{tr|Slush Block}}]]。
+** 在乘坐{{tr|Digging Molecart}}时人工挖掘前方受重力影响的{{tr|block}}会使得{{tr|Digging Molecart}}到达下落中的{{tr|block}}下方。然后，若下落中的{{tr|blocks}}落在{{tr|Digging Molecart}}放置的{{tr|Minecart Tracks}}上，{{tr|the blocks}}会变为物品。
+* {{tr|Digging Molecart}}不能破坏内含{{tr|item}}的[[{{tr|storage item}}]]，或是其正下方的{{tr|block}}。
+** 它能破坏里面没有物品的{{tr|storage items}}，但永远无法破坏它们下方的{{tr|block}}。这意味着玩家必须手动移除和{{tr|Minecart Tracks}}不处于一高度的{{tr|storage items}}。
+* {{tr|The Digging Molecart}}不受[[{{tr|Creative Shock}}]]{{tr|debuff}}影响，会正常工作。
+** 注意玩家在{{tr|debuff}}激活时无法破坏由{{tr|The Digging Molecart}}放置的{{tr|Minecart Tracks}}。
+** {{tr|The Digging Molecart}}也能破坏[[{{tr|Eternia Crystal Stand}}]]。在[[{{tr|Old One's Army}}]]{{tr|event}}期间这样做并不会使{{tr|event}}结束，[[{{tr|Eternia Crystal}}]]会从{{tr|Eternia Crystal Stand}}上脱离，且其下方没有{{tr|blocks}}时会下落。
+
+== 小贴士 ==
+* 若玩家希望[[指南:维护世界的纯净度|维护世界的纯净度]]，{{tr|Digging Molecart}}是挖掘隔离带的最有效方法之一。垂直的[[{{tr|hellevator}}]]可以很容易地用{{$|explosives||class}}挖，但挖掘水平隧道会较为昂贵，因为它需要[[{{tr|Scarab Bomb}}]]。如果玩家不想在{{tr|Hardmode}}早期（一个游戏难度突然达到峰值的时期，此时玩家急需处理其他资源）感到匆忙，可以在进入{{tr|Hardmode}}之前使用{{tr|Digging Molecart}}在世界各地挖出几条水平隧道。这也能使玩家得以对{{tr|Hardmode}}早期的{{tr|ore}}和其他资源进行大范围的快速搜索。
+* {{tr|The Digging Molecart}}在建造{{tr|underground arenas}}时也非常有用，如[[{{tr|Underground Jungle}}]]。在上次放置的{{tr|Minecart Track}}下方的四个{{tr|tiles}}处用{{tr|Digging Molecart}}放置新的一条轨道时，旧的轨道就会被清理掉。
+* 因为{{tr|minecarts}}能够保持其动量，使用{{tr|Digging Molecart}}时，玩家可以让游戏自己运行，从而自动地建造一条很长的轨道。这对[[指南:旅行|在世界中旅行]]有极大帮助。
+* 最好不要在距离{{tr|surface}}[[{{tr|Desert}}]]很近的位置挖掘，因为{{tr|Digging Molecart}}无法采掘{{tr|Sand Block}}，且手动挖掘全部{{tr|Sand Block}}可能会很麻烦。
+
+== 花絮 ==
+* 虽然{{tr|minecarts}}能够进入 4 个{{tr|tile}}高的隧道，{{tr|the Digging Molecart}}挖掘出的是 5 个{{tr|tile}}高的隧道。
+* {{tr|The Digging Molecart}}和《{{wikipedia|Yoshi's Island|耀西岛}}》（''Yoshi's Island''）系列中的[https://www.mariowiki.com/Mole_Tank 鼹鼠坦克（Mole Tank）]变形非常相似。 
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在由[[{{tr|Zoologist}}]]在完成 35% {{tr|Bestiary}}后售卖，而非 60%。}}
+{{history|Desktop 1.4.0.4|修复了{{tr|Digging Molecart}}会摧毁不应被摧毁的{{tr|tile}}的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.4 的更改。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.4 的更改。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.4 的更改。}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Digging Molecart}}

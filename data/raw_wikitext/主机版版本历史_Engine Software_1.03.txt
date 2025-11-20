@@ -1,0 +1,71 @@
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复 {{tr|Bug}}：
+* 加载 1.2 前创建的世界，不再会使之遭到破坏（地面移动、世界会以奇怪的方式生成）
+* {{tr|items}}放置在{{tr|Piggy Bank or safes}}中的{{tr|Characters}}，不再会失去所有{{tr|items}}，或使{{tr|items}}被替换成其他{{tr|items}}
+* 你不再能使用{{tr|Drax}}挖掉{{tr|door}}以便闯入{{tr|Jungle Temple}}
+* 修复了{{tr|Inferno Demons}}/{{tr|Hardmode enemies}}不总会在击败{{tr|hardmode boss}} 后生成的 {{tr|bug}}
+* {{tr|The Cyborg}}不再使用{{tr|Party Girl}}的名字和外观，也不再使用她的对话
+* 修复了{{tr|Spider Caves}}不总会生成{{tr|Spiders}}、{{tr|Webs}}、{{tr|Chests}}和/或{{tr|background}}的 {{tr|bug}}
+* 修复了摧毁{{tr|Crimson biome}}中的{{tr|hearts}}会召唤{{tr|Eater of Worlds}}而非{{tr|the Brain of Cthulhu}}的 {{tr|bug}}
+* 放置在{{tr|blocks}}上的{{tr|Torches}}如果被{{tr|walls}}包围，不再会意外地连接到{{tr|walls}}上而非希望连接到的{{tr|blocks}}上
+* {{tr|Moon Charm}}现在正确地拥有 1.2 的功能
+* 修复了世界生成时，有时会略过{{tr|messages}} “Making the world bloody...” 或 “Making the world evil...” 的 {{tr|bug}}
+* {{tr|Blood Crawlers AI}} 不再会在水中出问题。所有{{tr|Spider}}类型的 AI 都做了这项修复。
+* {{tr|Blood Crawlers}}现在可以爬墙
+* {{tr|Life Fruits}} & {{tr|Chlorophyte}}现在可以正常生成
+* 修复了进入{{tr|hardmode}}时总会生成{{tr|Corruption}}（在{{tr|Crimson world}}中也是如此）的 {{tr|bug}}
+* {{tr|Shadow chests}}在{{tr|hell}}生成不再如此频繁
+* 修复了{{tr|Gold Chests}}很少或不能在{{tr|underground}}中生成、{{tr|Ice Chests}}很少或不能在{{tr|underground Ice Biomes}}中生成的 {{tr|bug}}，以及世界生成时很少或不能生成{{tr|Underground Cabins}}的 {{tr|bug}}。它们现在会以正常的生成率生成
+* 持有{{tr|crimson rod}}时，光标不再离开屏幕
+* 修复了{{tr|death messages}}不出现的 {{tr|bug}}
+* {{tr|reforged}}过的{{tr|weapons}}的属性不再会在储存后消失
+* {{tr|Shadow Orbs}}现在被摧毁时又会掉落{{tr|loot}}了
+* 当{{tr|Crimson Biome}}覆盖{{tr|a Snow Biome}}时，{{tr|Crimson music}}现在会播放
+* {{tr|Ice Elementals}}向你射击时不再会杀死自己
+* 新{{tr|Characters}}开局默认会有 20 {{tr|mana}}
+* {{tr|Living Wood Walls}}、{{tr|Flesh Walls}}和{{tr|Bone Walls}}现在都被看做有效的房屋墙
+* {{tr|Jungle Spores}}和其他{{tr|jungle plants}}现在可以生长
+* {{tr|Vile mushrooms}}现在会掉落，不再像其他生长物一样会被打破
+* {{tr|Goblin Archer}}现在在过了{{tr|melee}}距离之后会朝你射击
+* 有一组{{tr|bucket}}时使用其中之一，不再会让整组都消失
+* {{tr|Plantera's Bulbs}}现在可以生成
+* 修复了{{tr|Jetpack}}可以在按住跳跃键时无限飞行的 {{tr|bug}}
+* 现在可以在没有{{tr|iron}}的世界中制作{{tr|chests}}（现在可以用{{tr|lead}}制作）
+* 普通{{tr|cactus}}不再在{{tr|corrupted sand}}上生长
+* {{tr|Crimson}}现在会传播
+* {{tr|Chlorophyte bullets}}不再追踪{{tr|the nurse}}
+* {{tr|Piranha Gun}}现在可以正常生效
+* 从{{tr|Life Fruits}}处额外获取的 100 HP 现在会被保存
+* 修复了{{tr|hardmode}}的{{tr|alternate ores}}不会在摧毁{{tr|Demon Altars}}时生成，而只会生成旧{{tr|ores}}的 {{tr|bug}}
+* {{tr|Trophy}}“Is this Heaven”不再是损坏的
+* 现在在地图左侧尽头使用{{tr|Clentaminator}}时不再会造成崩溃
+* {{tr|Silt Block}}重新受{{tr|gravity}}影响
+* 修复了特定{{tr|items}}的总体掉落率太高的 {{tr|bug}}。这包括{{tr|Nature's Gift}}、{{tr|Pet Items}}、{{tr|Banners}}、{{tr|Boss Trophies}}以及{{tr|Falling Stars}}。
+* 被{{tr|Angry Nimbus}}杀死时，游戏不再显示你被{{tr|Vilethorn}}杀死
+* {{tr|Lava Waders}}现在会显示{{tr|lava}}保护条
+* 饮用{{tr|obsidian potion}}并身处{{tr|lava}}以下时，现在会出现氧气条
+* 内置了一个机制来自动摧毁那些玩家不应当拥有的物品：
+** {{tr|Red's Wings}}
+** {{tr|Red's Helmet}}
+** {{tr|Red's Breastplate}}
+** {{tr|Red's Leggings}}
+** {{tr|Coin Gun}}
+* {{tr|Dynamite}}和其他若干物品现在有正确的售价
+* 修复了油漆{{tr|door}}，然后开门再关门之后，只有一半有油漆的 {{tr|bug}}
+* {{tr|Pigron}}不再发出{{tr|Skeleton}}的声音，也不再像{{tr|fire Imp}}那样行动
+* {{tr|Background}}不再会在暂停时切换为{{tr|menu background}}
+* 在 1.2 前的世界中放在{{tr|mannequins}}上的特定{{tr|armors}}，在下载 1.2 后不再会转化成其他东西或者消失
+* {{tr|Seaweed}}现在会出现在游戏中。
+* 修复了在线{{tr|multiplayer}}中客户端玩家使用{{tr|Goodie Bag}}不会得到{{tr|items}}，或者会使主机崩溃的 {{tr|bug}}
+* 访问{{tr|Multiplayer world}}时，地图数据现在保存在本地
+* {{tr|Hallowed and Corruption}}的比例现在每 5 {{tr|minutes}}而非 35 分钟更新一次
+* 不再能仅用{{tr|hallowed bars}}制作{{tr|Drax or Pickaxe Axe}}
+* {{tr|Music boxes}}不再能得到{{tr|a prefix}}
+* 修复了可以在白天使用 {{tr|boss summon items}}的 {{tr|bug}}
+* 修复了拥有{{tr|Flare Gun and Flare}}时，会像手持{{tr|torch}}那样站立的 {{tr|bug}}
+* 放置下{{tr|Heart Lantern}}时，其{{tr|buff icon}}不再有一个不需要的倒计时
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Engine Software/1.03}}
+</noinclude>

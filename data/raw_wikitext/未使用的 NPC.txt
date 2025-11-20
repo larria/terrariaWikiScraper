@@ -1,0 +1,83 @@
+在[[{{tr|Terraria}}|《{{tr|Terraria}}》]]中，有一些 [[{{tr|NPC ID}}|{{tr|NPCs}}]] 因为各种原因而'''未被使用'''。
+
+== 无法生成的 {{tr|NPC}} ==
+{{unspawnable|section=y}}
+这些 {{tr|NPC}} 具有相应功能，但在正常游戏进程的任何时刻都不会出现。它们只能在使用[[{{tr|Mods}}|{{tr|mod}}]]或第三方服务器指令时出现。
+{{options/snap|item|snapshot:unused_npcs}}{{options/set|item|mode=table}}
+{| class="terraria"
+! colspan=2 | {{tr|NPC}}
+! 备注
+|-
+| {{item|White Cultist Archer|image=White Cultist Archer.gif|id=380|type=npc}}
+| 类似于[[{{tr|Blue Cultist Archer}}]]，但穿着像[[{{tr|Solar Cultist costume}}]]一样的衣服。
+|-
+| {{item|The Torch God|The Torch God (NPC)|id=664|type=npc}}
+| 虽然{{tr|event}}在游戏内存在，此 {{tr|the NPC}} 是不可生成的。它仅为[[{{tr|The Torch God}}]]的[[{{tr|bestiary}}]]条目而存在。
+|}
+
+== 未使用的 {{tr|NPCs}} ==
+这些 {{tr|NPCs}} 是不完整的，且即使使用{{tr|mods}}也无法被生成。各种各样的文件或 ID 名可能存在于代码中。
+{| class="terraria"
+! colspan=2 | {{tr|NPC}}
+! 备注
+|-
+| {{item|None2|nolink=y|image=Wandering Eye (old).png|id=76|type=npc|note=（None2）}}
+| 未被使用。其图像与[[{{tr|Wandering Eye}}]]的旧外观相似。
+|-
+| {{item|Exploding Snowman|id=146|type=npc}}
+| 虽然未被使用，但其外观在 [[1.3.5]] 中被更新过。它在内部被称为“None3”（无3）。
+|-
+| {{item|Mini Flow Invader|link=Flow Invader|image=Flow Invader Minion.gif|id=408|type=npc}}
+| 图像与[[{{tr|projectile ID}}|{{tr|projectile ID}} 539]]相同，后者是由{{eil|Flow Invader}}发射的射弹。
+|-
+| {{item|DD2AttackerTest|nolink=y|id=547|type=npc|note=（DD2AttackerTest）}}
+| 根据其名称推断，它被开发者用来测试与{{eil|Old One's Army}}{{tr|event}}有关的东西。外观类似于{{eil|Angry Tumbler}}。
+|}
+
+== 删除的 {{tr|NPC}} ==
+{{historical content|section=y}}
+这些 {{tr|NPCs}} 曾经存在于游戏中，无论是否可生成，但后来因为各种原因被移除了。
+{| class="terraria"
+! colspan=2 | {{tr|NPC}}
+! 备注
+|-
+| {{item|DeerclopsLeg|image=Deerclops Leg.png|id=669 {{note|paren=y|先前}}|type=npc}}
+| 在 1.4.3 中和[[{{tr|Deerclops}}]]一同引入，作为不可生成的 {{tr|NPC}}。其 {{tr|ID}} 在 1.4.4 中被[[{{tr|Stinkbug}}]]替代。
+|-
+| {{item|Mc MoneyPants|id=1028 {{note|paren=y|先前}}|type=npc}}
+| 为{{tr|unimplemented}}[[{{tr|Chinese New Year}}]]{{tr|event}}作为 {{tr|NPC}} 引入。{{tr|Mc MoneyPants}} 曾和[[{{tr|Merchant}}]]共用一句话语，还有一个类似于[[{{tr|Guide}}]]的帮助按钮，但这个按钮会让游戏崩溃。
+|-
+| {{item|Mythical Wyvern|image=Mythical Wyvern Head.png|id=1029 {{note|paren=y|先前}}|type=npc}}
+| 也是为{{tr|unimplemented}}[[{{tr|Chinese New Year}}]]{{tr|event}}引入的。{{tr|The Mythical Wyvern}}曾和普通的[[{{tr|Wyverns}}]]具有相同的 {{tr|AI}}，且会掉落[[{{tr|Mythical set}}]]。
+|}
+
+== 未使用的{{tr|projectiles}} ==
+这些{{tr|projectiles}}在《{{tr|Terraria}}》的文件中存在。它们只能通过{{tr|mod}}或第三方服务器指令生成。各种各样的文件或 ID 名可能存在于代码中。
+{| class="terraria"
+! colspan=2 | {{tr|Projectile}}
+! 备注
+|-
+| {{item|Mud Ball|nolink=y|id=39|type=projectile}}
+| [[1.0.5]] 版本的孑遗，那时候[[{{tr|Mud Block}}]]有几率下落，类似于[[{{tr|Sand Blocks}}]]与[[{{tr|Silt Block}}]]。其图像类似于重新上色的[[{{tr|Projectile IDs}}|{{tr|Dirt Ball}}]]。
+|-
+| {{item|Projectile 457|Phasic Warp Ejector|nolink=y|id=457|type=projectile}}
+| 和[[{{tr|Phasic Warp Ejector}}]]具有相同的外观。
+|-
+| {{item|Projectile 458|Phasic Warp Disc|id=458|nolink=y|type=projectile}}
+| 可能是由[[{{tr|Phasic Warp Ejector}}]]发射的。
+|-
+| {{item|Projectile 624|Starburst|image=Lightning Orb Arc.png|id=624|nolink=y|type=projectile}}
+| 在 [[1.4.0.1]] 更新前被[[{{tr|Stardust Guardian}}]]使用。
+|-
+| {{item|Projectile 871|Split Shot Core|nolink=y|image=Split Shot Core.gif|id=871|type=projectile}}
+| 可能是[[{{tr|Empress of Light}}]]的弃用攻击。
+|}<!--
+-->{{options/restore|item|snapshot:unused_npcs}}
+
+== 另见 ==
+* [[{{tr|Unobtainable items}}]]
+* {{eil|Dazed}}，一个无法造成的[[{{tr|debuff}}]]。
+
+[[Category:无法生成的 NPC| ]]
+
+{{language info|en=Unused NPCs}}

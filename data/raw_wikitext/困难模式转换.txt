@@ -1,0 +1,421 @@
+[[File:Initial Hardmode map.png|alt=|thumb|310x310px|刚转化至{{tr|Hardmode}}的{{tr|world}}的{{tr|Map}}。注意由新产生的[[{{tr|Corruption}}]]（深紫色）和[[{{tr|Hallow}}]]（浅桃红色）[[{{tr|biomes}}]]所组成的“V”字形取代了原来存在的{{tr|world}}{{tr|blocks}}。]]
+{{about|初始的转化|{{tr|Hardmode}}下持续的转化和{{tr|spread}}|{{tr|Biome spread}}}}
+
+第一次打败[[{{tr|Wall of Flesh}}]]会在{{tr|world}}中触发一次'''转化'''，创建出[[{{tr|Hardmode}}]][[{{tr|biomes}}]]。两条斜向的线条会以“V”字形生成，其中一条将{{tr|tiles}}转换为其[[{{tr|Hallow}}]]{{tr|counterpart}}，另一条将{{tr|tiles}}转换为其[[{{tr|evil biome}}]]（[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]，取决于{{tr|world evil}}）{{tr|counterpart}}。线条会从{{tr|world}}顶部延伸至[[{{tr|The Underworld}}]]底部。[[{{tr|status message}}]]''“{{gameText|LegacyMisc.15}}”''会在转化完成后显示。 
+
+{{tr|The Hallowed}}线条总是会先生成。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack}}见[[#被转换的{{tr|tiles}}|下方]]来获取在此次转换中被转换的{{tr|tiles}}列表。
+
+== 线条大小和位置 ==
+斜向线条的起点和宽度取决于[[{{tr|world size}}]]和[[{{tr|Dungeon}}]]的位置，在下表中列出。线条的{{tr|biome type}}是随机的（即在左侧的可能是{{tr|Hallow}}也可能是{{tr|evil biome}}）。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack/ Terraria.WorldGen.GERunner}}
+<!--
+-->{{#vardefine:maxTilesX-small|4200}}<!--
+-->{{#vardefine:maxTilesX-medium|6400}}<!--
+-->{{#vardefine:maxTilesX-large|8400}}<!--
+-->{{#vardefine:factor-small|{{#expr:{{#var:maxTilesX-small}} / 4200.0}}}}<!--
+-->{{#vardefine:factor-medium|{{#expr:6400 / 4200.0}}}}<!--
+-->{{#vardefine:factor-large|{{#expr:8400 / 4200.0}}}}
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ 线条起点<ref>起点的 X 坐标将是下方范围中的一个随机值，而 Y 坐标起始为 0。游戏会首先生成一个在 [300,399] 范围内的整数，然后将其乘以 0.001 得到 <code>factorA</code>（即：[0.300-0.399]）；然后生成一个在 [200,299] 范围内的整数，然后将其乘以 0.001 得到 <code>factorB</code>（即：[0.200-0.299]）。若{{tr|Dungeon}}位于{{tr|world}}左半，起点为 <code>maxTilesX×(1-factorA)</code> 和 <code>maxTilesX×factorB</code>；若{{tr|Dungeon}}位于{{tr|world}}右半，起点为<code>maxTilesX×(1-factorB)</code> 和 <code>maxTilesX×factorA</code>。<code>maxTilesX</code> 是{{tr|world}}的宽度（单位为{{tr|tiles}}）。</ref><br/><small>（{{tr|world}}顶部的水平座标，单位：图格）</small>
+! rowspan=2 | {{tr|World size}}
+! colspan=2 | {{tr|Dungeon}}在左半边
+! colspan=2 | {{tr|Dungeon}}在右半边
+|-
+! 线条 1
+! 线条 2
+! 线条 1
+! 线条 2
+|-
+! 小
+| {{#expr:{{#var:maxTilesX-small}}*0.2 round 0}}–{{#expr:{{#var:maxTilesX-small}}*0.299 round 0}}
+| {{#expr:{{#var:maxTilesX-small}}*(1-0.399) round 0}}–{{#expr:{{#var:maxTilesX-small}}*(1-0.3) round 0}}
+| {{#expr:{{#var:maxTilesX-small}}*0.3 round 0}}–{{#expr:{{#var:maxTilesX-small}}*0.399 round 0}}
+| {{#expr:{{#var:maxTilesX-small}}*(1-0.299) round 0}}–{{#expr:{{#var:maxTilesX-small}}*(1-0.2) round 0}}
+|-
+! 中
+| {{#expr:{{#var:maxTilesX-medium}}*0.2 round 0}}–{{#expr:{{#var:maxTilesX-medium}}*0.299 round 0}}
+| {{#expr:{{#var:maxTilesX-medium}}*(1-0.399) round 0}}–{{#expr:{{#var:maxTilesX-medium}}*(1-0.3) round 0}}
+| {{#expr:{{#var:maxTilesX-medium}}*0.3 round 0}}–{{#expr:{{#var:maxTilesX-medium}}*0.399 round 0}}
+| {{#expr:{{#var:maxTilesX-medium}}*(1-0.299) round 0}}–{{#expr:{{#var:maxTilesX-medium}}*(1-0.2) round 0}}
+|-
+! 大
+| {{#expr:{{#var:maxTilesX-large}}*0.2 round 0}}–{{#expr:{{#var:maxTilesX-large}}*0.299 round 0}}
+| {{#expr:{{#var:maxTilesX-large}}*(1-0.399) round 0}}–{{#expr:{{#var:maxTilesX-large}}*(1-0.3) round 0}}
+| {{#expr:{{#var:maxTilesX-large}}*0.3 round 0}}–{{#expr:{{#var:maxTilesX-large}}*0.399 round 0}}
+| {{#expr:{{#var:maxTilesX-large}}*(1-0.299) round 0}}–{{#expr:{{#var:maxTilesX-large}}*(1-0.2) round 0}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ 线条宽度<ref>在设置了线条的起点后，起点的坐标会被存储在向量 <code>v</code> 中，X, Y 坐标分别为 <code>v.X</code> 和 <code>v.Y</code>。然后游戏会生成一个在 [240,249]（此处将其称为 <code>rNum</code>）范围内的整数，然后将其乘以 <code>maxTilesX / 4200.0</code> 得到 <code>width</code> 值。<code>maxTilesX</code> 是{{tr|world}}的宽度（单位为{{tr|tiles}}）。然后，检查长方形区域以内的{{tr|tiles}}（水平范围：从 <code>v.X-width÷2</code> 到 <code>v.X + width ÷ 2</code>；竖直范围：从 <code>v.Y - width ÷ 2</code> 到 <code>v.Y + width ÷ 2</code>），若一个{{tr|tile}}的坐标（<code>(X,Y)</code>）满足以下条件：<code>| X- v.X | + | Y - v.Y | < rNum × 0.5 × ( 1 + rFactor × 0.015 )</code>（其中 <code>rFactor</code> 是一个在 [-10,10] 范围内的随机整数），则该{{tr|tile}}会被转换。<code>rFactor</code> 的随机性会在线条周围产生零散的被转换的{{tr|tiles}}。下方的“原始值”一列是不考虑这些零散{{tr|tiles}}时的线条宽度。除此之外，线条的斜率储存在另一个向量 <code>v2</code>中，其中 <code>v2.X</code> 为 3 或 -3，取决于线条的方向，而 <code>v2.Y</code> 总是 5。在每次长方形区域检查后，<code>v</code> 会被加上 <code>v2</code>（即：<code>v.X = v.X + v2.X</code>、<code>v.Y = v.Y + v2.Y</code>）。然后，游戏会生成一个在 [-10,10] 范围内的随机整数，将其乘以 0.05，然后将其加到 <code>v2.X</code> 上。<code>v2.X</code> 的上下限为 [2,4]（或 [-4,-2]）。</ref><small>（单位为{{tr|tile}}）</small>
+! {{tr|World size}}
+! 原始值
+! 计入零散{{tr|tiles}}
+|-
+! 小
+| {{#expr:200*{{#var:factor-small}}}}–{{#expr:249*{{#var:factor-small}}}}
+| {{#expr:200*{{#var:factor-small}} round 0}}–{{#expr:1.15*249*{{#var:factor-small}} round 0}}
+|-
+! 中
+| {{#expr:200*{{#var:factor-medium}} round 0}}–{{#expr:249*{{#var:factor-medium}} round 0}}
+| {{#expr:200*{{#var:factor-medium}} round 0}}–{{#expr:1.15*249*{{#var:factor-medium}} round 0}}
+|-
+! 大
+| {{#expr:200*{{#var:factor-large}}}}–{{#expr:249*{{#var:factor-large}}}}
+| {{#expr:200*{{#var:factor-large}} round 0}}–{{#expr:1.15*249*{{#var:factor-large}} round 0}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+== {{tr|Secret world seeds}} ==
+在 {{eil|drunk world|s}}中（其中同时存在{{tr|Corruption and Crimson}}），{{tr|tiles}}会被转化为{{tr|Hardmode}}转化发生当天的主导{{tr|evil biome}}。
+
+在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，“V”字形被替换为一个和{{tr|Jungle}}位于同侧的长方形转换区域。{{tr|tiles}}只会被转换为其{{tr|Hallow counterpart}}；不会生成新的{{tr|evil biome}}。参见 [[{{tr|Don't dig up|link=y}}#{{tr|Hardmode}}转化|{{tr|Don't dig up}} § {{tr|Hardmode}}转化]]获取细节。
+
+== 被转化的{{tr|tiles}} ==
+{{itemlist/options|width=17.5em}}{{options/set|item|mode=tile|scale=0.8}}
+
+=== {{tr|Hallow}} ===
+{| class="terraria lined mw-collapsible"
+! 转换产生的{{tr|tile}}
+! 原{{tr|tile}}
+|-
+|{{wall|id=70}}
+|
+{{itemlist
+|{{wall|id=63}}
+|{{wall|id=65}}
+|{{wall|id=66}}
+|{{wall|id=68}}
+|{{wall|id=69}}
+|{{wall|id=81}}
+}}
+|-
+|{{wall|id=219}}
+|{{wall|id=216}}
+|-
+|{{wall|id=222}}
+|{{wall|id=187}}
+|-
+|{{wall|id=28}}
+|
+{{itemlist
+|{{wall|id=3}}
+|{{wall|id=83}}
+}}
+|-
+|{{item|Pearlstone Block}}
+|
+{{itemlist
+|{{item|Stone Block}}
+|{{item|Ebonstone Block}}
+|{{item|Crimstone Block}}
+}}
+|-
+|{{item|Pearlsand Block}}
+|
+{{itemlist
+|{{item|Sand Block}}
+|{{item|Silt Block}}
+|{{item|Ebonsand Block}}
+|{{item|Crimsand Block}}
+}}
+|-
+|{{item|Jungle grass}}
+|
+{{itemlist
+|{{item|Corrupt Jungle grass}}
+|{{item|Crimson Jungle grass}}
+}}
+|-
+|{{item|Hallowed grass}}
+|
+{{itemlist
+|{{item|Grass}}
+|{{item|Corrupt grass}}
+|{{item|Crimson grass}}
+}}
+|-
+|{{item|Pink Ice Block}}
+|
+{{itemlist
+|{{item|Ice Block}}
+|{{item|Purple Ice Block}}
+|{{item|Red Ice Block}}
+}}
+|-
+|{{item|Pearlsandstone Block}}
+|{{item|Sandstone Block}}
+|-
+|{{item|Hardened Pearlsand Block}}
+|{{item|Hardened Sand Block}}
+|-
+! colspan=2 | 当{{tr|world}}中有 > 200000 个[[{{tr|Hive|link=y}}|{{tr|Hive}}]]块{{footnote|name=hive}}
+|-
+|{{item|Pearlstone Block}}
+|{{item|Hive}}
+|-
+|{{item|Hardened Pearlsand Block}}
+|{{item|Crispy Honey Block}}
+|}
+
+=== {{tr|the Corruption}} ===
+{| class="terraria lined mw-collapsible"
+! 转换产生的{{tr|tile}}
+! 原{{tr|tile}}
+|-
+|{{wall|id=69}}
+|
+{{itemlist
+|{{wall|id=63}}
+|{{wall|id=65}}
+|{{wall|id=66}}
+|{{wall|id=68}}
+}}
+|-
+|{{wall|id=217}}
+|{{wall|id=216}}
+|-
+|{{wall|id=220}}
+|{{wall|id=187}}
+|-
+|{{item|Corrupt Jungle grass}}
+|
+{{itemlist
+|{{item|Jungle grass}}
+|{{item|Crimson Jungle grass}}
+}}
+|-
+|{{item|Corrupt grass}}
+|
+{{itemlist
+|{{item|Grass}}
+|{{item|Hallowed grass}}
+}}
+|-
+|{{item|Ebonstone Block}}
+|
+{{itemlist
+|{{item|Stone Block}}
+|{{item|Pearlstone Block}}
+}}
+|-
+|{{item|Ebonsand Block}}
+|
+{{itemlist
+|{{item|Sand Block}}
+|{{item|Silt Block}}
+|{{item|Pearlsand Block}}
+}}
+|-
+|{{item|Purple Ice Block}}
+|
+{{itemlist
+|{{item|Ice Block}}
+|{{item|Pink Ice Block}}
+}}
+|-
+|{{item|Ebonsandstone Block}}
+|{{item|Sandstone Block}}
+|-
+|{{item|Hardened Ebonsand Block}}
+|{{item|Hardened Sand Block}}
+|-
+! colspan=2 | 当{{tr|world}}中有 > 200000 个[[{{tr|Hive|link=y}}|{{tr|Hive}}]]块{{footnote|name=hive}}
+|-
+|{{item|Ebonstone Block}}
+|{{item|Hive}}
+|-
+|{{item|Hardened Ebonsand Block}}
+|{{item|Crispy Honey Block}}
+|}
+
+=== {{tr|the Crimson}} ===
+{| class="terraria lined mw-collapsible"
+! 转换产生的{{tr|tile}}
+! 原{{tr|tile}}
+|-
+|{{wall|id=81}}
+|
+{{itemlist
+|{{wall|id=63}}
+|{{wall|id=65}}
+|{{wall|id=66}}
+|{{wall|id=68}}
+|{{wall|id=69}}
+}}
+|-
+|{{wall|id=218}}
+|{{wall|id=216}}
+|-
+|{{wall|id=221}}
+|{{wall|id=187}}
+|-
+|{{item|Crimson Jungle grass}}
+|
+{{itemlist
+|{{item|Jungle grass}}
+|{{item|Corrupt Jungle grass}}
+}}
+|-
+|{{item|Crimson grass}}
+|
+{{itemlist
+|{{item|Grass}}
+|{{item|Hallowed grass}}
+}}
+|-
+|{{item|Crimstone Block}}
+|
+{{itemlist
+|{{item|Stone Block}}
+|{{item|Pearlstone Block}}
+}}
+|-
+|{{item|Crimsand Block}}
+|
+{{itemlist
+|{{item|Sand Block}}
+|{{item|Silt Block}}
+|{{item|Pearlsand Block}}
+}}
+|-
+|{{item|Red Ice Block}}
+|
+{{itemlist
+|{{item|Ice Block}}
+|{{item|Pink Ice Block}}
+}}
+|-
+|{{item|Crimsandstone Block}}
+|{{item|Sandstone Block}}
+|-
+|{{item|Hardened Crimsand Block}}
+|{{item|Hardened Sand Block}}
+|-
+! colspan=2 | 当{{tr|world}}中有 > 200000 个[[{{tr|Hive|link=y}}|{{tr|Hive}}]]块{{footnote|name=hive}}
+|-
+|{{item|Crimstone Block}}
+|{{item|Hive}}
+|-
+|{{item|Hardened Crimsand Block}}
+|{{item|Crispy Honey Block}}
+|}
+
+== {{tr|Wall}}替换 ==
+在初始转换后，游戏也会产生小块的{{tr|biome-specific}}[[{{tr|background walls}}]]。这可能会替换已有的符合要求的{{tr|background walls}}，或者在曾不存在{{tr|walls}}的地方创建新的{{tr|walls}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack|t=注意这适用于常规{{tr|worlds}}和使用{{tr|secret world seeds}}的{{tr|worlds}}。}}
+
+在这一过程中，游戏会选择竖直范围从{{tr|surface}}上方 100 格至{{tr|world}}底部上方 190 格中的一个随机{{tr|tile}}，然后决定生成的{{tr|wall type}}（见下方）所选{{tr|tile}}上的{{tr|The block}}必须是[[#{{tr|Blocks}}和对应的{{tr|walls}}|下表]]中列出的{{tr|block}}，且所选{{tr|tile}}上方一格不能被{{tr|solid block}}占据。然后，会选中一个区域，其中包含所有不含{{tr|blocks}}、有[[#符合要求的{{tr|walls}}|符合要求的{{tr|walls}}]]、且和所选{{tr|tile}}上方一格相连的{{tr|tile}}。如果所选区域包含超过 50 格，且不超过 1000 格，则整个区域中的{{tr|wall}}都会被替换为对应所选{{tr|tile}}的{{tr|wall}}中的随机一种。
+
+{{tr|wall}}替换的总执行次数也有限制。见[[#尝试次数|下方]]获取细节。
+
+=== {{tr|Blocks}}和对应的{{tr|walls}} ===
+{| class="terraria lined mw-collapsible"
+! {{tr|Block type}}
+! {{tr|Wall type}}
+|-
+|<!--Corrupt-->
+{{itemlist
+|{{item|Corrupt grass}}
+|{{item|Corrupt Jungle grass}}
+|{{item|Ebonstone Block}}
+|{{item|Ebonsand Block}}
+|{{item|Purple Ice Block}}
+|{{item|Hardened Ebonsand Block}}
+|{{item|Ebonsandstone Block}}
+|{{item|Corrupt vines}}
+|{{item|Wild Corrupt plants|image=Tiles 24 1.png/Tiles 24 6.png/Tiles 24 13.png}}
+|{{item|Vile Mushroom}}
+|{{item|Corruption Thorny Bush}}
+}}
+|
+{{itemlist
+|{{wall|id=188}}
+|{{wall|id=189}}
+|{{wall|id=190}}
+|{{wall|id=191}}
+}}
+|-
+|<!--Crimson-->
+{{itemlist
+|{{item|Crimson grass}}
+|{{item|Crimson Jungle grass}}
+|{{item|Crimstone Block}}
+|{{item|Crimsand Block}}
+|{{item|Red Ice Block}}
+|{{item|Hardened Crimsand Block}}
+|{{item|Crimsandstone Block}}
+|{{item|Crimson vines}}
+}}
+|
+{{itemlist
+|{{wall|id=192}}
+|{{wall|id=193}}
+|{{wall|id=194}}
+|{{wall|id=195}}
+}}
+|-
+|<!--Hallow-->
+{{itemlist
+|{{item|Hallowed grass}}
+|{{item|Pearlstone Block}}
+|{{item|Pearlsand Block}}
+|{{item|Pink Ice Block}}
+|{{item|Hardened Pearlsand Block}}
+|{{item|Pearlsandstone Block}}
+|{{item|Hallowed vines}}
+}}
+|
+{{itemlist
+|{{wall|id=200}}
+|{{wall|id=201}}
+|{{wall|id=202}}
+|{{wall|id=203}}
+}}
+|}
+
+=== 符合要求的{{tr|walls}} ===
+仅''无''{{tr|background wall}}，或有下列类型的{{tr|wall}}的{{tr|tiles}}可被替换。
+{{collapse top|显示{{tr|walls}}|隐藏{{tr|walls}}}}
+{{#arraydefine:walls|54,55,56,57,58,59,61,185,212,213,214,215,2,196,197,198,199,15,40,71,64,204,205,206,207,208,209,210,211}}
+{{itemlist/start}}
+{{#arrayprint:walls||@@@|
+{{itemlist/item|{{wall|id=@@@}}}}
+}}
+{{collapse bottom}}{{itemlist/options|reset}}{{options/reset|item}}
+
+=== 尝试次数===
+{{tr|wall}}替换操作的总次数在不同{{tr|world sizes}}中的上限不同，在下表中列出。每次成功的{{tr|wall}}替换尝试会将剩余尝试次数减少 1。此外，在执行 15000 次失败的尝试后，剩余尝试次数也会减少 1。
+
+{| class="terraria lined" style="text-align:center"
+! {{tr|World size}}
+! 尝试次数
+|-
+! 小
+| {{#expr:{{#var:factor-small}}*25 round 0}}
+|-
+! 中
+| {{#expr:{{#var:factor-medium}}*25 round 0}}
+|-
+! 大
+| {{#expr:{{#var:factor-large}}*25 round 0}}
+|}
+
+== 历史 ==
+{{history|Desktop 1.3.4|线条的{{tr|biome type}}和位置的随机性现在由[[{{tr|World Seed}}]]控制。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.smCallBack}}{{source code ref|old=y|v=1.3.4|method=Terraria.WorldGen.smCallBack}}{{source code ref|old=y|v=1.3.3.3|method=Terraria.WorldGen.smCallBack}}}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile 1.1.8|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist|refs=
+{{footnote|name=hive|这通常会在 [[{{tr|Not the bees}}]] 中发生，但技术上来说，只要条件满足，即可在任何{{tr|world}}中发生。由于{{tr|Hallow}}线条总是先生成，它有可能会转换足够多的{{tr|Hive}}，以至于{{tr|evil}}线条无法转换这些{{tr|tiles}}。}}
+}}
+
+{{Game mechanics}}
+
+{{language info|en=Hardmode conversion}}

@@ -1,0 +1,56 @@
+{{npc infobox
+| auto = 184
+| image = Spiked Ice Slime.gif
+| idprojectile = 174
+| type = Slime
+| environment = Ice biome
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|18|36|54}} {{note|small=y|paren=y|{{gameText|ProjectileName.IceSpike}}}}
+| debuff = Chilled
+| debuffchance = 100%
+| debuffduration = {{modes|{{duration|20}}|{{duration|40}}|{{duration|50}}}}
+| debuff2 = Frozen
+| debuffchance2 = {{modes|6.67%|10.4%}} {{note|paren=y|{{tr|melee}}}}<br/>{{modes|5%|9.75%}} {{note|paren=y|{{gameText|ProjectileName.IceSpike}}}}
+| debuffduration2 = {{modes|{{duration|1}}|{{duration|2}}|{{duration|2.5}}}} {{note|paren=y|{{tr|melee}}}}<br/>{{modes|{{duration|1.5}}|2 或 3 {{tr|seconds}}|2.5 或 3.75 {{tr|seconds}}}} {{note|paren=y|{{gameText|ProjectileName.IceSpike}}}}
+| Gel|{{modes|1–2|1–3}}|100%
+| Ice Cream|1|0.67%
+| Slime Staff|1|{{modes|0.01%|0.0143%}}
+| sound1 = Item 17.wav
+| soundcaption1 = Ice Spike
+}}
+
+'''{{tr|Spiked Ice Slimes}}'''是一种生成于[[{{tr|Ice biome}}]]的[[{{tr|slime}}]]。它们会向玩家发射必然造成[[{{tr|Chilled}}]][[{{tr|debuff}}]]效果且有几率造成[[{{tr|Frozen}}]]{{tr|debuff}}的 {{item|Ice Spike|s|nolink=y}}。
+
+在{{tr|Classic mode}}下，{{tr|Spiked Ice Slime}}每隔约 1.5 秒发射 1 根{{tr|Ice Spike}}。在{{eil|Expert Mode}}下，它每次会向自身附近发射 6–8 根{{tr|Ice Spikes}}。
+
+{{Royal Gel note}}
+
+== 备注 ==
+* 在{{eil|Expert Mode}}中，{{tr|Ice Spikes}}有额外的 4.75% 的几率造成{{tr|Frozen debuff}}，持续 {{expert|2}} / {{master|2.5}} {{tr|seconds}}。加上通常的 5% 造成{{tr|Frozen debuff}} {{expert|3}} / {{master|3.75}} {{tr|seconds}}的几率，{{tr|Ice Spikes}}总计有 9.75% 的几率造成该{{tr|debuff}}。
+
+== 成就 ==
+{{achievement|name=Gelatin World Tour}}
+{{achievement|name=Slimer}}
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在可在{{tr|Hardmode}}中生成，但几率减少。
+** 现在可以掉落[[{{tr|Ice Cream}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落[[{{tr|Slime Banner}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{-}}
+{{Slimes}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Spiked Ice Slime}}

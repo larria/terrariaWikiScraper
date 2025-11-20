@@ -1,0 +1,46 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5135
+| type = Block / Mechanism
+| debuff = Acid Venom / 5
+| sound1 = item 17.wav
+| soundcaption1 = 发射{{tr|Dart}}
+| idprojectile = 980
+| hardmode = yes
+}}
+
+'''{{tr|Venom Dart Trap}}'''是一个[[{{tr|traps}}]]，在被[[{{tr|wire}}]]激活时会发射带毒{{tr|dart}}。它是[[{{tr|Dart Trap}}]]的直接升级物。
+
+它在两次开火间有 3{{nbsp}}1/3 秒的冷却时间。{{tr|The dart}}对玩家造成 60 / {{expert|120}} / {{master|180}} 伤害{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle / Terraria.Projectile.Damage}}并造成 5 / {{expert|10}} / {{master|12.5}} 秒的[[{{tr|Acid Venom}}]]（对[[{{tr|NPCs}}]]、[[{{tr|enemies}}]]、和[[{{tr|critters}}]]是 30 伤害与 5 秒{{tr|Acid Venom}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.StatusNPC / Terraria.Projectile.StatusPlayer}}
+
+可以用[[{{tr|hammer}}]]将{{tr|Venom Dart Traps}}旋转 90°。
+
+{{tr|The Venom Dart Trap}}不会自然生成，只能通过制作获得。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Venom Dart Trap|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Venom Dart Trap}}可以穿过紧邻其前方的单个{{tr|block}}射击。
+
+== 花絮 ==
+* {{tr|The Venom Dart Trap}}是少数几种无法自然生成的{{tr|traps}}之一，其他的是[[{{tr|Trapped Chest}}]]和[[{{tr|Land Mine}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spider Fang}}
+{{Traps}}
+{{Wiring}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Venom Dart Trap}}

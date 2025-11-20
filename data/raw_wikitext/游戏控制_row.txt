@@ -1,0 +1,14 @@
+<!--table header: Action Wiki Icon PC (mouse & keyboard) PC (controller) Playstation Xbox WiiU Notes
+{{/row|action|optional named parameters}} named parameters (all optional): Wiki, PCkeymouse, PCcontroller, PS, Xbox, WiiU, Notes -->
+! {{anchor|{{{anchor|{{{1|}}}}}}}}{{{1|}}}
+| style="border-bottom:1px var(--theme-border-color) solid" align=center | {{{Wiki|{{{wiki|}}}}}}
+| style="border-bottom:1px var(--theme-border-color) solid" align=center | {{{PCkeymouse|}}} <!--
+-->{{#ifeq:{{{PCcontroller|}}}|{{=}}||{{!!}} style="border-bottom:1px var(--theme-border-color) solid;" align=center {{#ifeq:{{#pos:{{{PCcontroller|}}}|{{=}}}}||{{!}}}} {{{PCcontroller|}}}}} <!--
+-->{{#ifeq:{{{PS|}}}|{{=}}||{{!!}} style="border-bottom:1px var(--theme-border-color) solid;" align=center {{#ifeq:{{#pos:{{{PS|}}}|{{=}}}}||{{!}}}} {{{PS|}}}}} <!--
+-->{{#ifeq:{{{Xbox|}}}|{{=}}||{{!!}} style="border-bottom:1px var(--theme-border-color) solid;" align=center {{#ifeq:{{#pos:{{{Xbox|}}}|{{=}}}}||{{!}}}} {{{Xbox|}}}}} <!--
+-->{{#ifeq:{{{WiiU|}}}|{{=}}||{{!!}} style="border-bottom:1px var(--theme-border-color) solid;" align=center {{#ifeq:{{#pos:{{{WiiU|}}}|{{=}}}}||{{!}}}} {{{WiiU|}}}}} <!--
+-->{{#ifeq:{{{Switch|}}}|{{=}}||{{!!}} style="border-bottom:1px var(--theme-border-color) solid;" align=center {{#ifeq:{{#pos:{{{Switch|}}}|{{=}}}}||{{!}}}} {{{Switch|}}}}}
+| style="border-bottom:1px var(--theme-border-color) solid;" |{{#ifeq:{{#sub:{{{Notes|{{{notes|}}}}}}|0|1}}|*|<span class="dropSub">•{{#sub:{{{Notes|{{{notes|}}}}}}|1}}</span>|{{{Notes|{{{notes|}}}}}}}}
+<noinclude>{{formatting subpage}}
+{{language info|en=Game controls/row}}
+</noinclude>

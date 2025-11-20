@@ -1,0 +1,257 @@
+'''{{tr|Use time}}'''是应用于[[{{tr|weapons}}]]、[[{{tr|tools}}]]以及其他可使用的[[{{tr|items}}]]的一种属性，它决定了使用物品之后需要过多少时间才能再次使用同个或另一个物品。根本上说，这就是用游戏{{tr|tick}}{{tick}}来计量的“开火速率<ref>相应英文原文为 ''rate of fire'' 或 ''fire rate''，通常可翻译为''射速''。但由于游戏官方中文将另一个游戏中的概念 ''Velocity'' 译为''射速''，同时这里的 ''fire'' 泛指一切武器（包括近战武器）的使用动作，译为''发射''不妥。因此，这里改用''开火速率''作为 ''fire rate'' 的中文译名；此外本 wiki 以及[[Terraria Wiki:语言包|官方 Wiki 中文语言包]]中将 ''Velocity'' 译为{{tr|velocity}}。</ref>”。较低的{{tr|use time}}意味着武器较快。例如，[[{{tr|Shortswords}}]]的{{tr|use time}}通常为 {{iteminfo|Platinum Shortsword|use time}} 到 {{iteminfo|Copper Shortsword|use time}}，意味着和异常慢的[[{{tr|Volcano}}]]相比它能快速连续使用，后者的{{tr|use time}}为 {{iteminfo|Volcano|use time}}——是慢得多的武器，不能那么频繁地用出。
+
+{{tr|Use time}}在对比武器或工具的速度时特别有用。这些物品在游戏内的{{tr|tooltips}}信息自动将此属性的值归为几类，如“{{tr/speed|Very fast}}”或“{{tr/speed|Very slow}}”。所有分组如下：
+{{tocright}}
+{| class="terraria"
+! 值 !! 游戏内文本
+|-
+| align=center | ≤8 || {{gameText|LegacyTooltip.6}}
+|-
+| align=center | 9–20 || {{gameText|LegacyTooltip.7}}
+|-
+| align=center | 21–25 || {{gameText|LegacyTooltip.8}}
+|-
+| align=center | 26–30 || {{gameText|LegacyTooltip.9}}
+|-
+| align=center | 31–35 || {{gameText|LegacyTooltip.10}}
+|-
+| align=center | 36–45 || {{gameText|LegacyTooltip.11}}
+|-
+| align=center | 46–55 || {{gameText|LegacyTooltip.12}}
+|-
+| align=center | ≥56 || {{gameText|LegacyTooltip.13}}
+|}
+
+== 技术性信息 ==
+有多个属性被用于决定一件物品的使用行为：'''<code>useTime</code>'''{{source code ref|v=1.4.4.9|field=Terraria.Item.useTime}}、'''<code>useAnimation</code>'''{{source code ref|v=1.4.4.9|field=Terraria.Item.useAnimation}}、和 '''<code>reuseDelay</code>'''{{source code ref|v=1.4.4.9|field=Terraria.Item.reuseDelay}}。所有这些值的单位均为{{tr|ticks}}{{tick}}。
+* {{anchor|useTime}}<code>useTime</code> 决定了物品两次实际使用之间的时间，即物品两次生效之间的间隔。
+* {{anchor|useAnimation}}<code>useAnimation</code>，如其名称所示，是每次物品使用的动画的持续时间，即单次 {{key|use}} 按键输入后物品的行为。
+* {{anchor|reuseDelay}}{{anchor|use delay}}<code>reuseDelay</code> 决定了一件物品能够再次使用前需要经过多少{{tr|ticks}}。这通常被用于平衡{{tr|weapons}}以防止它具有极高的开火速率。这一属性也常被称为“use delay”（使用延迟）。
+
+在内部，分别对应 <code>useTime</code> 和 <code>useAnimation</code> 的两个{{tr|tick}}计数器 <code>itemTime</code> 和 <code>itemAnimation</code> 被应用于玩家。当一件物品被使用时，游戏会检查其 <code>useTime</code> 和 <code>useAnimation</code>，应用所有攻击速度{{tr|bonuses}}，然后将得出的{{tr|ticks}}数添加至对应的计数器中。这些计数器每{{tr|tick}}减少 1，且只要它们大于 0，玩家就被视为正在使用物品，在此期间多个行动会被禁用。对于大多数物品，<code>useTime</code> 等于 <code>useAnimation</code>，意味着该物品每次 {{key|use}} 按键输入只会被使用一次。有些物品的 <code>useTime</code> 属性低于 <code>useAnimation</code>，使得它们每次 {{key|use}} 按键输入会被使用多次。
+{| class="terraria"
+! 每次 {{key|use}} 按键输入的使用次数
+|-
+| <math>\text{使用次数}=\lceil\frac{\mathit{useAnimation}}{\mathit{useTime}}\rceil</math>
+|-
+|
+* <math>\lceil{x}\rceil</math> 为向上取整函数（向上取整到最近的整数）。
+|}
+
+<code>reuseDelay</code> 在 <code>itemAnimation</code> 计数器归零后应用。这将会把 <code>reuseDelay</code> 的值增加到两个计数器中，让玩家在可使用物品前需再等待几个{{tr|ticks}}。
+
+在此 wiki 上，<code>useAnimation</code> 属性被称为“{{tr|use time}}”属性显示于信息框中。<code>useTime</code> 属性仅在[[{{tr|tools}}]]上作为其“[[{{tr|tool speed}}]]”属性显示（因为这一属性在大多数情况下对其他物品的功能没有影响）。
+
+在{{desktop version}}中，特定的行动会在 <code>itemTime</code> 或 <code>itemAnimation</code> {{tr|tick}}计数器不为零时被禁用：
+* 涉及与{{tr|inventory}}中的物品互动的行动，包括：{{source code ref|v=1.4.4.9|method=Terraria.UI.ItemSlot.LeftClick}}
+** 更换手持的物品。（<code>itemAnimation</code>{{tr|tick}}计数器不为零时）
+** 通过鼠标更换手持的物品。（<code>itemTime</code>{{tr|tick}}计数器不为零时）
+** 将手持的物品丢到地上。
+** 更换可装备物品，包括[[{{tr|armor}}]]、[[{{tr|accessory}}]]、和[[{{tr|equipment slot}}]]中的物品。
+** [[{{tr|Cursor modes|link=y}}#特殊{{tr|cursors}}|{{tr|Inventory}}管理键]]，例如快速出售、快速丢弃，等等。
+* 切换{{eil|Loadouts}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.TrySwitchingLoadout}}
+* {{eil|Digging Molecart}}的采挖和[[{{tr|Minecart Track}}]]放置。
+* 和大多数游戏界面元素的交互。可以通过打开[[{{tr|autopause}}]]，并在使用物品时打开{{tr|inventory}}观察到。除了{{tr|Duplication Menu}}以外，[[{{tr|Journey Mode}}]]能力菜单的其他功能将仍然可用。{{source code ref|v=1.4.4.9|method=Terraria.Main.HoverOverCraftingItemButton|property=Terraria.GameInput.PlayerInput.IgnoreMouseInterface}}
+部分热键仍然可用，包括{{key|heal}}、{{key|mheal}}、{{key|buff}}、{{key|grapple}}、和{{key|mount}}。
+
+例如：
+* [[{{tr|Pickaxes}}]]使用 <code>useTime</code> 来决定它们击打{{tr|tiles}}的频率（这是在本 wiki 上显示的[[{{tr|tool speed}}]]）；它们的 <code>useAnimation</code> 决定了它们造成{{tr|melee damage}}的频率（这是挥舞动画的持续时间）。
+* [[{{tr|Golden Shower}}]]具有 {{iteminfo|Golden Shower|useTime}} 的 <code>useTime</code>，以及 {{iteminfo|Golden Shower|useAnimation}} 的 <code>useAnimation</code>，使得其每次 {{key|use}} 按键输入会发射 {{#expr:{{iteminfo|Golden Shower|useAnimation}}/{{iteminfo|Golden Shower|useTime}}}} 次。
+* [[{{tr|Clockwork Assault Rifle}}]]具有 {{iteminfo|Clockwork Assault Rifle|useTime}} 的 <code>useTime</code>，以及 {{iteminfo|Clockwork Assault Rifle|useAnimation}} 的 <code>useAnimation</code>，使得其每次 {{key|use}} 按键输入会发射 {{#expr:{{iteminfo|Clockwork Assault Rifle|useAnimation}}/{{iteminfo|Clockwork Assault Rifle|useTime}}}} 次。它还具有 {{iteminfo|Clockwork Assault Rifle|reuseDelay}} 的 <code>reuseDelay</code>，在每次三发点射之间添加了 {{iteminfo|Clockwork Assault Rifle|reuseDelay}} {{tr|tick}}的间隔。
+
+=== 特殊情况 ===
+==== 使用限制 ====
+以下{{tr|weapons}}被特殊编码以在每次使用时仅发射特定次数（基于其 <code>useAnimation</code>）：{{eil|Tome of Infinite Wisdom}}（{{#expr:floor(({{iteminfo|Tome of Infinite Wisdom|useAnimation}}-12)/{{iteminfo|Tome of Infinite Wisdom|useTime}})}} 次）、{{eil|Nightglow}}（4 次<!-- Commented out as direct calculation result do not reflect actual behavior, same for Eventide {{#expr:floor(({{iteminfo|Nightglow|useAnimation}}-8)/{{iteminfo|Nightglow|useTime}})}}-->）、和{{eil|Eventide}}（5 次<!--{{#expr:floor(({{iteminfo|Eventide|useAnimation}}-10)/{{iteminfo|Eventide|useTime}})}}-->）。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_OwnerOnlyCode}}
+
+==== 挥舞物品 ====
+对于在头顶挥舞的物品（[[{{tr|melee}}]]{{tr|weapons}}、[[{{tr|pickaxes}}]]，等等），其挥舞动画的时长和 <code>useAnimation</code> 相关。单个目标在一次挥舞动画期间仅能被击中一次。
+
+==== {{tr|Projectile melee weapons}} ====
+以下[[{{tr|projectile melee weapons}}]]的{{tr|projectiles}}的发射频率基于它们的 <code>useTime</code> 属性，和其基础的{{tr|use time}}（<code>useAnimation</code>）不同，所以它们可能无法在每次挥舞时都发射{{tr|projectile}}。这些发射频率只能被[[{{tr|modifiers}}]]更改，因为只有{{tr|modifiers}}会影响 <code>useTime</code>。不过，如果这种{{tr|weapon}}的 <code>useTime</code> 少于其 <code>useAnimation</code>，它们在挥舞结束后才能再次发射{{tr|projectile}}。
+{{itemlist|class=terraria|width=15em<!--
+{{#arraydefine:projectileMeleeWeapon-useTime|65,676,723,724,989,1226,1227|,}}-->
+|{{item|Starfury}}
+|{{item|Frostbrand}}
+|{{item|Beam Sword}}
+|{{item|Ice Blade}}
+|{{item|Enchanted Sword}}
+|{{item|Chlorophyte Claymore}}
+|{{item|Chlorophyte Saber}}
+}}
+
+{{anchor|shootsEveryUse}}{{eicons|1.4.4}}下列{{tr|projectile melee weapons}}具有 <code>shootsEveryUse</code> 能力，这使得它们每次使用时都会发射一个{{tr|projectile}}。不过，如果这种{{tr|weapon}}的 <code>useTime</code> 少于其 <code>useAnimation</code>，它们在挥舞结束后才能再次发射{{tr|projectile}}。
+{{itemlist|class=terraria|width=15em<!--
+{{#arraydefine:projectileMeleeWeapon-shootsEveryUse|190,273,368,674,675,757,1826,5382|,}}-->
+|{{item|Blade of Grass}}
+|{{item|Night's Edge}}
+|{{item|Excalibur}}
+|{{item|True Excalibur}}
+|{{item|True Night's Edge}}
+|{{item|Terra Blade}}
+|{{item|The Horseman's Blade}}
+|{{item|Waffle's Iron|icons=no}}
+}}
+
+==== 和{{tr|autoswing}}相结合 ====
+[[{{tr|Autoswing}}]]的物品是具有 <code>autoReuse</code> 属性的物品（即在此 wiki 上的信息框中带有 {{auto icon}} {{tr|autoswing icon}}）。当这种物品到达其动画结束的前一{{tr|tick}}时，它会立即跳过并开始新动画（该物品的新一次使用）。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyItemAnimation / Terraria.Player.ItemCheck_HandleMPItemAnimation}}
+
+对于大多数物品这是正常的，因为游戏会在计算过程中将其 <code>useAnimation</code> 增加 1 {{tr|tick}}（见[[#prevent skip|下方计算]]）。不过，这一步是整个过程的最后一步；对于[[{{tr|melee weapons}}]]的计算要早些完成，因此跳过了这一步。这意味着{{tr|autoswing melee weapons}}的实际{{tr|use time}}（<code>useAnimation</code>）相较于源代码中的 <code>useAnimation</code>、{{tr|item tooltip}}中所示的、和此 wiki 上显示的要少 1 {{tr|tick}}。
+
+=== 计算 ===
+由一次 {{key|use}} 按键输入触发的物品使用所消耗的时间的计算基于物品的类型使用不同的公式。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.CapAttackSpeeds / Terraria.Player.ApplyItemAnimation}}
+
+不过，在所有计算之前，会先应用[[{{tr|modifiers}}]]的效果，可视作对特定物品属性的直接更改。<code>useTime</code>、<code>useAnimation</code>、和 <code>reuseDelay</code> 会受此影响，用下列公式计算：
+
+<math>\text{新属性} = \operatorname{round}(\text{原属性}\times\mathit{修饰语})</math>
+* <math>\operatorname{round}</math> 运算符将值取整到最接近的整数；理论上说，如果值正好在两个整数正中间（.5），则取整到最接近的偶数，但由于浮点数误差，实际结果可能有所不同。
+* <math>\mathit{修饰语}</math> 是{{tr|modifier}}对速度的强化（小数形式）。例如，[[{{tr|Light}}]]{{tr|modifier}}提供 +15% {{tr|speed}}，意味着 <math>\mathit{修饰语}=1-0.15=0.85</math>。
+
+所有下方的公式会使用此处的新属性来进行计算。
+{{collapse top|显示{{tr|modifier}}示例|隐藏示例}}
+{| class="terraria lined align-center"
+! {{tr|Weapon}}
+! {{tr|Modifier}}
+! {{tr|Bonus}}
+! 修改后的 <code>useAnimation</code>
+! 实际{{tr|bonus}}{{footnote|游戏内所示的百分比。}}
+|-
+| rowspan=2 | {{item|Megashark|mode=image}}<br/>[[{{tr|Megashark}}]]<br/>{{note|基础 <code>useAnimation</code>：{{iteminfo|Megashark|useAnimation}}}}
+{{/row|Megashark|Unreal}}
+|-
+{{/row|Megashark|Rapid}}
+|-
+| style="border-bottom:0px" rowspan=3 | {{item|Musket|mode=image}}<br/>[[{{tr|Musket}}]]<br/>{{note|基础 <code>useAnimation</code>：{{iteminfo|Musket|useAnimation}}}}
+{{/row|Musket|Nimble}}
+|-
+{{/row|Musket|Unreal}}
+|-
+{{/row|Musket|Rapid}}
+|}
+{{collapse bottom}}
+
+而后，物品使用的总时间使用下列公式计算。注意对于一个给定的物品，有且仅有一个公式与之对应。
+
+对于造成[[{{tr|melee}}]]伤害的物品：
+
+<math>\text{总时间} = \left\lfloor\mathit{useAnimation}\times\frac{1}{1+\mathit{近战速度}\times\mathit{近战速度倍率}}\right\rfloor+\mathit{reuseDelay}</math>
+* <math>\left\lfloor{x}\right\rfloor</math> 为向下取整函数（向下取整到最接近的整数）。
+* <math>\mathit{近战速度}</math> 是{{tr|melee speed bonuses}}之和（小数形式），起始为 0。例如，{{tr|melee speed}}提高 10% 意味着 +0.1。
+* <math>\mathit{近战速度倍率}</math> 对于大部分{{tr|weapons}}是 <math>1</math>。见下表获取具有不同值的{{tr|weapon}}：{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;BonusMeleeSpeedMultiplier}}
+{| class="terraria lined"
+! 物品 !! 倍率
+|-
+| [[{{tr|Terra Blade}}]]
+| 0.75
+|-
+| [[{{tr|Bladed Glove}}]]
+| 0.5
+|-
+| [[{{tr|Fetid Baghnakhs}}]]
+| 0.25
+|-
+| [[{{tr|Psycho Knife}}]]
+| 0.33
+|}
+
+对于[[{{tr|whips}}]]：
+
+<math>\text{总时间} = \left\lfloor\mathit{useAnimation}\times\frac{1}{1+\mathit{近战速度}+\mathit{鞭速度增益}}\times\frac{1}{\mathit{鞭速度套装奖励}}\right\rfloor+\mathit{reuseDelay}</math>
+* <math>\mathit{近战速度}</math> 是{{tr|melee speed bonuses}}之和（小数形式），起始为 0。例如，{{tr|melee speed}}提高 10% 意味着 +0.1。
+* <math>\mathit{鞭速度增益}</math> 是来自{{tr|buffs}}的{{tr|whip speed}}{{tr|bonuses}}之和（小数形式），起始为 0。例如，[[{{tr|Jungle's Fury}}]]的{{tr|whip speed}}提高 12% 意味着 +0.12。
+* <math>\mathit{鞭速度套装奖励}</math> 是来自{{tr|set bonus}}的{{tr|whip speed}}{{tr|bonuses}}，无{{tr|set bonus}}生效时为 1。目前仅有[[{{tr|Obsidian armor}}]]提供此{{tr|bonus}}，将这一值改为 1.15。
+* 目前，所有{{tr|whips}}的 <math>\mathit{reuseDelay}</math> 为 0。
+
+{{anchor|placement speed}}{{anchor|building speed}}{{anchor|放置速度}}{{anchor|建造速度}}对于[[{{tr|blocks}}]]：
+
+<math>\text{总时间} = \left\lfloor\mathit{useAnimation}\times\frac{1}{1+\mathit{物块速度}}\right\rfloor+\mathit{reuseDelay}</math>
+
+* <math>\mathit{物块速度}</math> 默认为 0；部分物品会使其增加特定的值。
+* 目前，所有{{tr|blocks}}的 <math>\mathit{reuseDelay}</math> 为 0。
+{| class="terraria lined"
+! 物品 !! 值
+|-
+| [[{{tr|Ambrosia}}]]
+| +0.05
+|-
+| [[{{tr|Builder Potion}}]]
+| +0.25
+|-
+| [[{{tr|Brick Layer}}]]<br/>{{note|small=y|paren=y|{{tr|or its upgrades}}}}
+| +0.5
+|}
+
+对于[[{{tr|walls}}]]：
+
+<math>\text{总时间} = \left\lfloor\mathit{useAnimation}\times\frac{1}{1+\mathit{墙速度}}\right\rfloor+\mathit{reuseDelay}</math>
+
+* <math>\mathit{墙速度}</math> 默认为 0；部分物品会使其增加特定的值。
+* 目前，所有{{tr|walls}}的 <math>\mathit{reuseDelay}</math> 为 0。
+{| class="terraria lined"
+! 物品 !! 值
+|-
+| [[{{tr|Ambrosia}}]]
+| +0.05
+|-
+| [[{{tr|Builder Potion}}]]
+| +0.25
+|-
+| [[{{tr|Portable Cement Mixer}}]]<br/>{{note|small=y|paren=y|{{tr|or its upgrades}}}}
+| +0.5
+|}
+
+{{anchor|prevent skip}}对于其余能[[{{tr|autoswing}}]]（<code>autoReuse = true</code>）、<code>reuseDelay</code> 为 0、<code>useTime</code> 不高于 <code>useAnimation</code>、能发射{{tr|projectile}}、[[{{tr|Use Style IDs}}|{{tr|use style}}]]为 5 的物品（见下方获取适用的物品的列表）：
+
+<math>\text{总时间} = \mathit{useAnimation}+1</math>
+* +1 消除了{{tr|autoswing items}}的[[#和{{tr|autoswing}}相结合|动画跳过特性]]。
+{{collapse top|显示适用的物品的列表。}}
+{{itemlist/start|width=18em}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=itemid
+|q?where= autoswing=true AND itemid!=4722<!-- Exclude [[First Fractal]]-->
+|q?limit=5600
+|delimiter=
+|template=:{{tr|Use time}}/prevent skip
+|default=
+}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+对于余下的物品：
+
+<math>\text{总时间} = \mathit{useAnimation}</math>
+
+== 备注 ==
+* “开火频率”是通过将每秒{{tr|ticks}}数（60）除以物品的{{tr|use time}}计算得到的：<math>\mathit{开火频率} = \frac{60}{\mathit{使用时间}}</math>
+: 例如，[[{{tr|Megashark}}]]的{{tr|use time}}为 {{iteminfo|Megashark|use time}}。其开火频率可通过将此值代入以上公式计算：<!--
+-->{{#vardefine:exact_firerate|{{#expr:60/{{iteminfo|Megashark|use time}}}}}}<!--
+-->{{#vardefine:approximate_firerate|{{#expr:{{#var:exact_firerate}} round 2}}}}<!--
+use the "≈" sign if the fire rate needs rounding; use the "=" sign if it's exact
+-->{{#vardefine:equalssign|{{#ifeq:{{#var:exact_firerate}}|{{#var:approximate_firerate}}|=|\approx}}}}<!--
+-->{{#tag:math|\mathit{开火频率} = \frac{60}{ {{iteminfo|Megashark|use time}} } {{#var:equalssign}} {{formatnum:{{#var:approximate_firerate}}}}}}
+: 将此值乘以 60 可以得到每分钟的开火速率，对于{{tr|Megashark}}来说是每分钟约 {{#expr:{{#var:exact_firerate}}*60 round 2}} 发。
+* 特定物品的使用条件不仅仅基于其{{tr|use time}}。例如，诸如[[{{tr|Mushroom}}]]和[[{{tr|Lesser Healing Potion}}]]这样的[[{{tr|recovery potions}}]]有特殊的冷却周期；[[{{tr|flails}}]]和[[{{tr|boomerangs}}]]必须先被收回才能再次被发射。
+* {{tr|autoswing melee weapons}}的[[#和{{tr|autoswing}}相结合|动画跳过特性]]在某些情况下会极大地影响{{tr|use time}}。例如，{{tr|Light}}[[{{tr|Meowmere}}]]的{{tr|use time}}为 12。具有 141% {{tr|melee speed bonus}}时，其{{tr|use time}}变为 4.98，向下取整为 4，等同于 200% {{tr|melee speed bonus}}。考虑跳过后，实际的{{tr|use time}}由 11 降低至 3，等同于 267% {{tr|melee speed bonus}}。
+
+== 历史 ==
+{{history|Desktop 1.0.6|
+** {{tr|tooltip}}文本“{{tr/speed|Very fast}}”现在应用于所有{{tr|use time}}不超过 20 的{{tr|item}}上。相应调整了其他组别：
+*** “{{tr/speed|Very fast}}”现在为 9–20 而非 9–15。
+*** “{{tr/speed|Fast}}”现在为 21–25 而非 16–20。
+*** “{{tr/speed|Average}}”现在为 25–30 而非 21–25。
+*** “{{tr/speed|Slow}}”现在为 31–35 而非 26–30。
+*** “{{tr/speed|Very slow}}”现在为 36–45 而非 31–40。
+*** “{{tr/speed|Extremely slow}}”现在为 46–55 而非 41–50。
+*** “{{tr/speed|Snail}}”现在为 ≥56 而非 ≥51。
+:: 因此，有些{{tr|item}}现在列出的速度更快，即使其实际的{{tr|use time}}并没有变化。}}
+{{history|Desktop 1.0.3|修复了{{tr|tooltip}}文本中一处有关{{tr|use time}}的错误：“Extremly slow speed” → “Extrem'''e'''ly slow speed”（{{tr|Extremely slow speed}}）。}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+[[Category:物品|*]]
+
+{{language info|en=Use time}}

@@ -1,0 +1,159 @@
+{{npc infobox
+| auto = 50
+| type = Boss
+| type2 = Slime
+| environment = Forest/Slime Rain
+| image = King Slime.gif
+| Solidifier|1|100% {{eicons|1.3.0.1|small=y}} @normal
+| Slimy Saddle|1|25% @normal
+|:group:start| 总是会掉落以下 3 件{{tr|items}}之一&nbsp;{{source code ref|v=1.4.0.5|name=ksdrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_KingSlime}}| @normal
+| Ninja Hood|1|33.33% @normal
+| Ninja Shirt|1|33.33% @normal
+| Ninja Pants|1|33.33% @normal
+|:group:end|--------------------------------------------------------|------------------------
+|:group:start| 总是会掉落以下 2 件{{tr|items}}之一&nbsp;<ref name="ksdrops"/>| @normal
+| Slime Hook|1|33.33% @normal
+| Slime Gun|1|66.67% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Lesser Healing Potion|5-15|100%
+| King Slime Mask|1|14.29% @normal
+| King Slime Trophy|1|10%
+| Treasure Bag (King Slime)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Royal Gel|1|100% #expert
+  | King Slime Mask|1|14.29% #expert
+  | Slimy Saddle|1|50% #expert
+  |:group:start|总是会掉落以下 3 件{{tr|items}}中的两件|3 #expert
+  | Ninja Hood|1|67% #expert
+  | Ninja Shirt|1|67% #expert
+  | Ninja Pants|1|67% #expert
+  |:group:end|-----------------------------------|
+  |:group:start|总是会掉落以下 2 件{{tr|items}}之一|2 #expert
+  | Slime Gun|1|50% #expert
+  | Slime Hook|1|50% #expert
+  |:group:end|-----------------------------------|
+  | Solidifier|1|100% #expert
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|1]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Royal Delight|1|{{master|25%}} @master
+| King Slime Relic|1|{{master|100%}} @master
+| imageother = Map Icon King Slime.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.SLIPPERY_SHINOBI_Description}}|，|1}}}}|size=34px}}
+
+'''{{tr|King Slime}}'''是个[[{{tr|pre-Hardmode}}]]的 [[{{tr|Bosses}}|{{tr|boss}}]]。其外观是戴着珠宝金冠的巨大[[{{tr|Blue Slime}}]]，内部似乎还有个忍者。在游戏的{{eversions|1.3.0.1|invert=y|short=y}}中他没有王冠。{{tr|King Slime}}受伤害时会额外生成普通的{{tr|Blue Slimes}}（在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中还有{{eil|Spiked Slime|s}}）并且尺寸也会缩小。
+
+{{tr|King Slime}}在以下条件之一满足时生成：
+* 某个玩家使用了[[{{tr|Slime Crown}}]]。
+* {{eicons|Slime Rain}} [[{{tr|Slime Rain}}]][[{{tr|event}}]]期间打败了 150 只[[{{tr|slimes}}]]（如果在此世界中已经干掉过{{tr|King Slime}}就只要 75 只）。
+* 偶尔出现在地图两侧各六分之一范围内，需要是白天且只出现在[[{{tr|Grass}}]]上。
+
+与{{tr|King Slime}}战斗完全是可选的，并不为游戏推进所必须。但打败它可以给玩家一些钱和有用的物品。
+
+{{boss music|Boss 1|Boss 1 (Otherworldly)}}
+
+== 生成 ==
+=== 手工 ===
+玩家可以使用[[{{tr|Slime Crown}}]]在任意地点任意时间手动召唤{{tr|King Slime}}。
+
+=== 随机 ===
+满足以下条件时，{{tr|King Slime}}有极低几率自然生成：
+
+* 玩家位于地图两边外侧的六分之一（最左边或最右边）范围内。
+
+* 其潜在{{tr|spawn point}}的[[{{tr|Depth}}]]高于零。
+* 时间是[[{{tr|day}}]]。
+* 在其潜在的生成点必须有标准的绿[[{{tr|grass}}]]（屏幕之外；''参见 [[{{tr|NPC spawning}}#生成的基础原理|{{tr|NPC spawning}}]]''）
+
+=== {{tr|Slime Rain}} ===
+{{exclusive|1.3.0.1|section=y|nocat=y}}
+{{main|{{tr|Slime Rain}}}}
+如果在[[{{tr|Slime Rain}}]]{{tr|event}}有 150 只[[{{tr|Slimes}}]]被玩家、[[{{tr|lava}}]]、[[{{tr|traps}}]]、及召唤的[[{{tr|minions}}]]杀死，{{tr|King Slime}}就会生成。打败此 {{tr|boss}} 会让此{{tr|event}}在不久之后结束——如果所有玩家死亡（哪怕是{{tr|singleplayer}}），此 {{tr|boss}} 会消失并且此{{tr|event}}会继续持续一段时间后自行结束（介于游戏中的 9 到 15 小时之间），它会自然结束。如果{{tr|King Slime}}在世界中已被打败过，则只需要击杀 75 只{{tr|Slime}}就能生成。如果在{{tr|Slime Rain}}期间用{{tr|Slime Crown}}手动召唤了{{tr|King Slime}}并击杀它，事件就会像玩家在事件时击杀自然生成的{{tr|King Slime}}那般结束。这对于想尽快结束{{tr|Slime Rain}}{{tr|event}}的后期玩家很有用。
+
+=== [[{{tr|Don't dig up}}]] ===
+{{exclusive|1.4.4|section=y|nocat=y}}
+{{main|Don't dig up}}
+在Don't dig up世界，杀死一只史莱姆有{{chance|1/200}}的几率召唤史莱姆王，前提是史莱姆王尚未被击败，并且玩家有超过 140 的永久最大[[{{tr|health}}]]和超过 8 点的[[{{tr|defense}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.DoDeathEvents}} 只有特定的史莱姆死亡能发生这种情况: [[{{tr|Blue Slime}}]]，[[{{tr|Green Slime}}]]，[[{{tr|Pinky}}]]，[[{{tr|Baby Slime}}]]，[[{{tr|Black Slime}}]]，[[{{tr|Purple Slime}}]]，[[{{tr|Red Slime}}]]，[[{{tr|Yellow Slime}}]]和[[{{tr|Jungle Slime}}]]。史莱姆在没有受到玩家伤害的前提下死亡不会召唤史莱姆王。
+
+== 备注 ==
+* 虽然它是一个大型而有韧性的{{tr|enemy}}且在与其战斗时会播放 {{tr|Boss}} 音乐，拥有{{tr|map icon}}和{{tr|boss health bar}}，但{{tr|King Slime}}经常被视为“副 {{tr|boss}}”或“{{tr|mini-boss}}”（不过对此并没有来自开发者的官方说法）。它在以下几方面和传统的 {{tr|boss}} 不同：
+** {{eicons|1.3.0.1}} 无论当前游戏进展水平如何，都可能碰到{{tr|King Slime}}。
+** 除{{eil|Lepus}}外，他是唯一会受到[[{{tr|lava}}]]伤害的 [[{{tr|boss}}]]。
+** {{eicons|1.3.0.1|invert=y}} {{tr|King Slime}}不会穿过[[{{tr|blocks}}]]行进或射击，这提供了防护或围困的可能性，而与大多数其他 {{tr|bosses}} 作战时不存在这种可能性（尽管距离被困住的{{tr|King Slime}}太远时会导致它传送出去）。
+** 他可以在世界的特定区域随机生成，这类似于普通{{tr|enemies}}的生成而非 {{tr|bosses}}。
+* 在{{eversions|1.3.0.1}}中，{{tr|King Slime}}会在无法触及玩家时传送到玩家处。这在任意距离上都能进行，可以防止轻易地将此 {{tr|boss}} 困在一个小区域中。
+* {{tr|King Slime}}的绝对最高跳跃可以越过 17 格高的墙。
+* 在{{eil|Expert mode}}中，{{tr|King Slime}}在失去生命值时会召唤[[{{tr|Spiked Slime}}]]和{{tr|normal slimes}}。[[{{tr|Spiked Slime}}]]并不受[[{{tr|Royal Gel}}]]影响。
+* {{tr|King Slime}}可以在{{tr|blocks}}内生成，使得它如果不传送就无法移动。
+* 在世界外侧与{{tr|King Slime}}战斗时它有可能会在玩家死后传送到玩家处。
+
+== {{tr|Achievements}} ==
+{{achievement|name=Slippery Shinobi}}{{achievement|name=Sticky Situation}}
+== 小贴士 ==
+{{strategies}}
+* 穿透武器不仅能伤害{{tr|King Slime}}还能击杀它所生成的额外{{tr|slimes}}。
+* 战斗中所生成的{{tr|The Blue Slimes}}会掉落[[{{tr|Heart}}]]和[[{{tr|Star}}]]，分别能恢复 20 [[{{tr|Health}}]]和 100 [[{{tr|Mana}}]]。
+* 由于战斗中生成的{{tr|Blue Slimes}}数量巨大，在特定区域中召唤{{tr|King Slime}}是一种快速、轻松的刷特定掉落物的方法。例如 {{eicons|Biome Key Molds|invert=y}} [[{{tr|Biome Keys}}]]或{{eil|Biome Key Molds}}、[[{{tr|Pirate Map}}]]、[[{{tr|Halloween}}]]和[[{{tr|Christmas}}]]掉落物、或{{eil|Cascade}}、{{eil|Hel-Fire}}、{{eil|Amarok}}、{{eil|Yelets}}、和{{eil|Kraken}}{{tr|yoyos}}。在 {{eil|1.4.0.1}} 之前，它们也会掉落[[{{tr|soul}}]]。
+* {{tr|King Slime}}自身并不会掉落[[{{tr|gel}}]]，但他所生成的{{tr|blue Slimes}}会。这让与他战斗成为一种非常好的刷{{tr|gel}}方法，例如为了[[{{tr|Flamethrower}}]]{{tr|ammo}}或者为了[[{{tr|Asphalt Block}}]]。
+* 在{{tr|Expert Mode}}中击杀{{tr|King Slime}}并卖掉其掉落物平均会得到 {{gc|10}}。
+* 当{{tr|King Slime}}传送时，他可能会卡在周围的{{tr|block}}里，让他有一会儿无法移动。
+
+== {{tr|Trivia}} ==
+* [[{{tr|ninja armor}}]]似乎来源于{{tr|King Slime}}内的{{tr|ninja}}。据 [[{{tr|Redigit}}]] 所说，被困的{{tr|ninja}}是[[{{tr|Guide}}]]的兄弟，<ref>[https://www.reddit.com/r/Terraria/comments/gjl47i/ill_take_new_lore_for_200_alex/ I'll take new lore for 200 Alex : Terraria] {{small|2020 年 5 月 14 日}}</ref>因为对战此 {{tr|boss}} 失败，他被{{tr|King Slime}}所吞噬。<ref>[https://www.reddit.com/r/Terraria/comments/nelbjw/terrarias_10th_anniversary_we_are_relogic_ask_us/gygrysi Terraria's 10th Anniversary: We are Re-Logic, Ask Us Anything!] {{small|2021 年 5 月 17 日}}</ref>
+* 在{{eversions|1.3.0.1|invert=y|short}}中，它是唯一会掉落{{tr|banner}}的 {{tr|boss}}，这使它更像普通{{tr|enemies}}而并非{{tr|boss}}。
+* {{tr|King Slime}}所掉落的{{tr|The trophy}}看起来是把沾满粘液的{{wikipedia|lang=en|Ninjatō|忍者刀}}。这是忍者通常会携带着的常见武器。这可能是因为{{tr|King Slime}}会掉落{{tr|the Ninja armor}}。
+* {{tr|King Slime}}内的{{tr|Ninja}}和王冠的图像是存储在单独的图片文件中的。没有它们的{{tr|The King Slime}}图像看起来类似于放大的普通的[[{{tr|Blue Slime}}]]的外观。
+* [[1.1]] 中的外观并没有{{tr|crown}}或{{tr|ninja}}。
+* 虽然它有时被视为游戏中最容易的 {{tr|boss}}，但他所造成的伤害是所有{{tr|pre-Hardmode}}的 {{tr|boss}} 中第二高的，仅次于{{tr|Classic Mode}}中的[[{{tr|Wall of Flesh}}]]或{{eil|Expert Mode}}中的[[{{tr|Skeletron}}]]。
+* {{tr|King Slime}}和[[{{tr|The Deerclops}}]]是唯二在被此世界中打败过以后还能随机生成的 {{tr|boss}}。
+* 在传送时，{{tr|King Slime}}会丢下现在戴着的王冠，并且在传送完成时会生成一顶新的戴上。
+* {{tr|The Spiked Blue Slime}}、{{eil|Pirate's Curse}}、{{eil|Jungle Mimic}}、和{{eil|Golden Slime}}是游戏中仅有的没有[[{{tr|Bestiary}}]]条目的非无敌{{tr|enemies}}，而{{tr|King Slime}}则是唯一所召唤的{{tr|enemies}}没有{{tr|Bestiary}}条目的 {{tr|boss}}。
+{{bestiary|article=}}
+
+== 图库 ==
+<gallery>
+File:King Slime (original).png|内部没有{{tr|ninja}}也没有{{tr|crown}}的{{tr|King Slime}}。
+File:Ninja.png|{{tr|King Slime}}肚子里见到的{{tr|ninja}}。
+</gallery>
+
+== 另见 ==
+* [[{{tr|Queen Slime}}]]，[[{{tr|Hardmode}}]]版本。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在占用更多的敌怪栏，以便在战斗中减少甚至阻止敌怪生成。这不会影响史莱姆雨中的生成。}}
+{{history|Desktop 1.4.0.5|修正了一个 {{tr|NPC}} 平滑处理方面的问题。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|King Slime Relic}}]]，它是类[[{{tr|trophy}}]]{{tr|Master Mode}}专有掉落物。
+** 添加了[[{{tr|Royal Delight}}]]，它是[[{{tr|pet}}]]召唤{{tr|Master Mode}}专有掉落物。
+** 修正了{{tr|King Slime}}的{{tr|minions}}在{{tr|underground}}会掉落[[{{tr|Soul of Light}}]]或[[{{tr|Soul of Night}}]]的漏洞。
+** {{tr|King Slime}}现在更加难以借助[[{{tr|Ropes}}]]来轻易击杀了。}}
+{{history|Desktop 1.3.5|{{tr|Ninja}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 添加了王冠的外观。不带王冠的外观是[[File:King Slime (old).png|50px]]。
+** 添加了新掉落物。
+** 现在有{{tr|Expert mode AI}}。
+** 现在只要卡住或不在玩家范围内超过 5 秒钟就会传送。
+** 现在能在[[{{tr|Slime Rain}}]]{{tr|event}}后生成。
+** 现在会掉落[[{{tr|Solidifier}}]]。}}
+{{history|Desktop 1.2.4|现在会掉落[[{{tr|Slime Hook}}]]、[[{{tr|Slime Gun}}]]和[[{{tr|Slimy Saddle}}]]。}}
+{{history|Desktop 1.2.0.3|现在掉落[[{{tr|Slime Banner}}]]。}}
+{{history|Desktop 1.1|现在可以用[[{{tr|Slime Crown}}]]生成。}}
+{{history|Desktop 1.0.5|
+** 现在能浮在液体上，并且在接触水面时不会发出溅水的声音。
+** 现在一次只会生成一个{{tr|King Slime}}。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Slimes}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=King Slime}}

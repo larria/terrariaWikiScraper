@@ -1,0 +1,109 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| imagealt = [[File:Ballista Rod.png|link=]] [[File:Ballista Cane.png|link=]] [[File:Ballista Staff.png|link=]]
+| stack = 1
+| type = Weapon
+| damage = {{note|small=y|paren=y|每级各不相同}}
+| damagetype = Summon
+| knockback = {{iteminfo|3824|knockback}}
+| use = {{iteminfo|3824|use}}
+| velocity = {{iteminfo|3824|velocity}}
+| tooltip = {{itemTooltip|3824}}
+| research = {{iteminfo|3824|research}}
+| rare =
+| cargo = no
+}}
+
+'''{{tr|Ballista Rod, Ballista Cane, Ballista Staff}}'''是一类特殊的[[{{tr|Tavernkeep's sentries}}|{{tr|sentry summon weapons}}]]。{{sentry note|name={{tr|Ballista}}|plural=y}}{{tr|Ballista sentry}}是设置在地面的一台大型的自动弩设备，它会向 56.25 格内接近的{{tr|enemies}}发射{{tr|Ballista Shot projectiles}}，最多穿透三个目标，在击中第四个目标时消失，造成较高的{{tr|damage}}但有较慢的开火速度。在[[{{tr|Tavernkeep}}]]处，{{tr|Ballista Rod}}的售价为 {{iteminfo|Ballista Rod|buy}}，{{tr|Ballista Cane}}的售价为 {{iteminfo|Ballista Cane|buy}}，而{{tr|Ballista Staff}}的售价为 {{iteminfo|Ballista Staff|buy}}。
+
+{{tr|Ballista Rod}}在任何时候都能购买，{{tr|Ballista Cane}}在击败任意[[{{tr|Mechanical Boss}}]] 后可购买，{{tr|Ballista Staff}}在击败[[{{tr|Golem}}]]后可购买。三个不同版本的武器的效果类似，但拥有不同的数据，其中{{tr|Ballista Staff}}是最昂贵的也是最强大的。
+
+直到[[{{tr|Old One's Army}}]][[{{tr|event}}]]成功完成后才能在{{tr|event}}以外使用这些{{tr|weapons}}。在任意{{tr|difficulty}}下成功完成{{tr|event}}后就能允许玩家在{{tr|event}}之外使用{{tr|Rod}}、{{tr|Canes}}、和{{tr|Staves}}。
+
+在{{tr|Old One's Army}}{{tr|event}}持续期间，[[{{tr|Etherian Mana}}]]可被收集，其可用于放置多个{{tr|Ballista}}，{{tr|event}}结束之前会一直存在。{{tr|Etherian Mana}}无法在{{tr|event}}之外使用。
+
+{{tr|Ballista sentries}}可受[[{{tr|Squire armor}}]]和[[{{tr|Valhalla Knight armor}}]]{{tr|set bonuses}}加成，这会使{{tr|Ballista Shot projectiles}}的[[{{tr|velocity}}]]增加 31.25% <!-- from 16 to 21-->，并让它们能最多穿透六个{{tr|enemy}}，在击中七个时消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.NewProjectile}}此外，它在玩家受到伤害后还会提供[[{{tr|Ballista Panic!}}]]{{tr|buff}}，持续 5 秒{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}，这会增加{{tr|Ballista sentries}}的开火频率。{{tr|Valhalla Knight armor}}还会极大地提高开火频率。
+
+其最佳[[{{tr|Modifiers}}]]是'''{{tr|Ruthless}}'''。{{tr|The Mythical modifier}}提供了最广泛的属性奖励，但这些奖励主要影响的是初始召唤动作而非召唤出来的{{tr|sentry}}。另外，{{tr|sentries}}无法造成[[{{tr|critical hit}}]]。{{tr|Mythical Ballista}}相对于{{tr|Ruthless}}唯一的优势是[[{{tr|knockback}}]]。<!-- {{modifier|summon}} cannot be used here because it would display "... advantage a Mythical Ballista sentry summons has over a Ruthless one ..." also Mythical Ballista Rod only has 34 base damage because 34.4999993 damage rounds down to 34 and not up to 35. -->
+
+
+== 级别 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| namesub = {{tr|Tier 1}}
+| auto = 3824
+| sound1 = Dd2 ballista tower shot 0.wav, Dd2 ballista tower shot 1.wav, Dd2 ballista tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/dd2/vendor:Tavernkeep
+| idprojectile = 677, 680
+}}
+|{{item infobox
+| namesub = {{tr|Tier 2}}
+| auto = 3825
+| sound1 = Dd2 ballista tower shot 0.wav, Dd2 ballista tower shot 1.wav, Dd2 ballista tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 678, 680
+}}
+|{{item infobox
+| namesub = {{tr|Tier 3}}
+| auto = 3826
+| sound1 = Dd2 ballista tower shot 0.wav, Dd2 ballista tower shot 1.wav, Dd2 ballista tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 679, 680
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Ballista Rod/Ballista Cane/Ballista Staff|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Ballista Rod/Ballista Cane/Ballista Staff|expectedrows=3}}
+
+== 备注 ==
+* 在任何难度中完成[[{{tr|Old One's Army}}]]{{tr|event}}，会为世界以及完成{{tr|event}}的{{tr|character}}设置一个隐藏的属性。任何访问过该世界的{{tr|characters}}（包括新创建的{{tr|characters}}），就可以在任意世界中使用{{tr|Tavernkeep's sentry}}的{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。完成{{tr|event}}的{{tr|character}}同样也可以在任意世界中使用{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。
+* {{tr|The Ballista}}在攻击后具有 {{duration|160 ticks}} 的冷却。如果玩家装备[[{{tr|Valhalla Knight armor}}]]，这一冷却会降低至 {{duration|100 ticks}}。当有{{tr|Ballista Panic! buff}}时，这一冷却会降低至 {{duration|60 ticks}}。如果有{{tr|buff}}且玩家穿着{{tr|Valhalla Knight armor}}，这一冷却会进一步降低至 {{duration|30 ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_134_Ballista / Terraria.Projectile.GetBallistraShotDelay}}
+** {{tr|The Ballista}}的攻击需要 {{duration|25 ticks}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_134_Ballista}}，因此其攻击间隔为 {{duration|160+25+1 ticks}}（默认），{{duration|100+25+1 ticks}}（装备{{tr|Valhalla Knight armor}}），{{duration|60+25+1 ticks}}（有{{tr|Ballista Panic! buff}}）或 {{duration|30+25+1 ticks}}（装备且有{{tr|buff}}）。
+* {{tr|Ballista shot}}会造成 -1 {{tr|tick}}[[{{tr|local immunity frame}}|{{tr|local invincibility frame}}]]。{{tr|local invincibility frame}}意味着其不会干涉其他{{tr|projectiles}}且{{tr|Ballista shot}}之间也不会相互干涉，而 -1 {{tr|tick}}则意味着同一支{{tr|Ballista Shot}}不能击中同一目标多于一次。
+
+== 小贴士 ==
+* {{tr|The Ballista}}比其他的{{tr|Tavernkeep's sentry summons}}的开火速率更慢，但其伤害、范围、和穿透能力使得它成为了游戏中最好的{{tr|sentries}}之一，尤其是更高等级的{{tr|Ballista}}。当和[[{{tr|Valhalla Knight armor}}]]的加成和{{tr|health regeneration}}能力，以及有好位置的场地，它们就能迅速摧毁 {{tr|bosses}}，甚至是[[{{tr|Moon Lord}}]]。
+* 一种应对[[{{tr|Old One's Army}}]]的有效方法是在[[{{tr|Mysterious Portal}}]]附近放置[[{{tr|Lightning Aura}}]]{{tr|sentries}}，并在场地中间放置{{tr|Ballistas}}。
+* {{tr|Ballistas}}对于快速移动的目标通常是不精准的。[[{{tr|Flameburst Tower}}]]{{tr|sentries}}对于这类{{tr|enemies}}可能会更有效。
+** 此外，{{tr|Old One's Army}}期间的{{tr|flying enemies}}可能会导致{{tr|sentries}}向上瞄准它们攻击，通常会由于{{tr|projectile}}飞行时间而无法命中，且会浪费本应能射向接近{{tr|enemies}}的射击。为了防止这一问题，可以将数个{{tr|Ballistas}}放置在{{tr|the Mysterious Portal}}''后方''，从而使{{tr|Ballista Shots}}落在{{tr|enemies}}前进的路径上。
+
+== 图库 ==
+[[File:Ballista Rod (demo).gif|none|frame|使用中的{{tr|The Ballista Rod}}。]]
+[[File:Ballista Cane (demo).gif|none|frame|使用中的{{tr|The Ballista Cane}}。]]
+[[File:Ballista Staff (demo).gif|none|frame|使用中的{{tr|The Ballista Staff}}。]]
+
+== 参考 ==
+* {{dd2 link|Ballista}}
+* [[{{tr|Flameburst sentry summons}}]]
+* [[{{tr|Lightning Aura sentry summons}}]]
+* [[{{tr|Explosive Trap sentry summons}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将{{tr|Cane}}和{{tr|Staff}}所需的{{tr|Defender Medals}}分别由 25 和 100 降低至 15 和 60。
+** 伤害从 27/67/140 增加至 30/74/156。
+** 攻击冷却从 {{duration|180 ticks}} 降低至 {{duration|160 ticks}}。
+** {{tr|knockback}}从 4.5 增加至 4.7。
+** 现在被召唤后，在开火前有短暂延迟
+** {{tr|Ballista sentry summons}}现在可用于通过[[{{tr|shimmer}}]]制作[[{{tr|Explosive Trap sentry summons}}]]。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Ballista sentry summons}}

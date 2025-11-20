@@ -1,0 +1,84 @@
+{{item infobox | boxwidth = 22em
+| auto = 533
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 23 {{eicons|1.3.0.1|invert=y|small=y}}
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} <br/> {{gc|6}} {{eicons|1.4.0.1|invert=y|small=y}}
+| listcat = Guns
+| hardmode = yes
+}}
+[[File:Megashark (demo).gif|frame|正在发射{{tr|Musket Balls}}的{{tr|Megashark}}。]]
+
+'''{{tr|Megashark}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|Gun}}]]，发射[[{{tr|Bullet}}]]。它是强化版的[[{{tr|Minishark}}]]，是游戏中[[{{tr|Plantera}}]]之前最强的{{tr|guns}}之一。它的{{tr|use time}}为 7，是游戏中{{tr|use time}}最低的{{tr|weapon}}之一，并有 50% 几率不消耗[[{{tr|ammo}}]]。
+
+{{modifier|ranged}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Megashark|expectedrows=1}}
+
+== 小贴士 ==
+* {{tr|Megashark}}超快的{{tr|use time}}和良好的{{tr|damage}}使得如果[[{{tr|Destroyer}}]]是第一个被击败的话，其可以很好地应对剩余的[[{{tr|mechanical bosses}}]]，甚至于[[{{tr|Plantera}}]]。
+* 相较于[[{{tr|Gatligator}}]]和[[{{tr|Uzi}}]]，{{tr|Megashark}}是三者中精确度最高、{{tr|use time}}最低、并且最容易得到的。{{tr|Gatligator}}是{{Tc/speed|very fast}}的但精确度较低，且有时很少见，{{tr|Uzi}}拥有{{tr|high velocity bullets}}和良好的伤害，但更慢且更罕见。但{{tr|Gatligator}}和{{tr|Uzi}}可以在打败[[{{tr|Destroyer}}]]之前得到（{{tr|Megashark}}需要 20 个{{tr|Souls of Might}}，而{{tr|Gatligator}}可以买到、{{tr|Uzi}}掉落自{{tr|Angry Trapper}}），这可视为它们的优势。
+: {| class="terraria"
+! 方面 !! {{tr|Megashark}} !! {{tr|Uzi}} !! {{tr|Gatligator}}
+|-
+| {{tr|Base damage}}
+| {{iteminfo|Megashark|damage}}
+| {{iteminfo|Uzi|damage}}
+| {{iteminfo|Gatligator|damage}}
+|-
+| {{tr|Knockback}}
+| {{knockback|{{iteminfo|Megashark|knockback}}|full=y|class=note-text&#32;small}}
+| {{knockback|{{iteminfo|Uzi|knockback}}|full=y|class=note-text&#32;small}}
+| {{knockback|{{iteminfo|Gatligator|knockback}}|full=y|class=note-text&#32;small}}
+|-
+| {{tr|Critical strike chance}}
+| {{iteminfo|Megashark|critical}}
+| {{iteminfo|Uzi|critical}}
+| {{iteminfo|Gatligator|critical}}
+|-
+| {{tr|Use time}}
+| {{use time|{{iteminfo|Megashark|use time}}|full=y|class=note-text&#32;small}}
+| {{use time|{{iteminfo|Uzi|use time}}|full=y|class=note-text&#32;small}}
+| {{use time|{{iteminfo|Gatligator|use time}}|full=y|class=note-text&#32;small}}
+|-
+| {{tr|Velocity}}
+| {{iteminfo|Megashark|velocity}}
+| {{iteminfo|Uzi|velocity}}
+| {{iteminfo|Gatligator|velocity}}
+|-
+| 不消耗{{tr|ammo}}率
+| 50%
+| 0%
+| 50%
+|-
+| 基础{{DPS}}<ref>请注意，{{DPS}}很少被认为是一个适合比较的统计数据，因为它受到许多变量的影响，是不可靠的因素。</ref>（搭配[[{{tr|Musket Ball}}]]）
+| {{#expr:(60/{{iteminfo|Megashark|use time}})*({{iteminfo|Megashark|damage}}+{{iteminfo|Musket Ball|damage}}) round 0}}
+| {{#expr:(60/{{iteminfo|Uzi|use time}})*({{iteminfo|Uzi|damage}}+{{iteminfo|Musket Ball|damage}}) round 0}}
+| {{#expr:(60/{{iteminfo|Gatligator|use time}})*({{iteminfo|Gatligator|damage}}+{{iteminfo|Musket Ball|damage}}) round 0}}
+|}
+
+== 花絮 ==
+* [[{{tr|Minishark}}]]的卖出[[{{tr|value}}]]和{{tr|Megashark}}一样，虽然它更弱且是后者的{{tr|crafting recipe}}内的{{tr|ingredient}}之一。
+* {{eil|S.D.M.G.}}是{{tr|Megashark}}的间接升级物，但和{{tr|Megashark}}不同，它是一种独有掉落物。
+* 当直朝下射击时，可以看到{{tr|bullets}}是从枪管上面一点靠近鳍片的位置出现的。
+* {{eicons|Lepus}} 由于[[{{tr|Lepus}}]] 有 1% 几率掉落 3 个[[{{tr|Soul of Might}}|{{tr|Souls of Might}}]]，因此有可能在[[{{tr|pre-Hardmode}}]]之前就取得{{tr|Megashark}}的{{tr|crafting ingredients}}。然而，依然要有[[{{tr|Hardmode Anvil}}]]才能{{tr|craft}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|卖出价格由 {{gc|6}} 提升至 {{gc|7}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Damage}}由 23 提高到 25。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-ranged = yes
+}}
+
+{{language info|en=Megashark}}

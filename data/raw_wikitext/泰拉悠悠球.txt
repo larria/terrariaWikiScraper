@@ -1,0 +1,58 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3389
+| idprojectile = 603, 604
+| listcat = Yoyos
+| tags = drop / treasure bag loot / hardmode
+| yoyo duration = infinite
+| yoyo reach = 25
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|{{tr|Paintings}}{{!}}{{tr|Terrarian Gothic}}|{{tr|Terrarium}}}}
+{{about|{{tr|the yoyo}}|玩家控制的人物|{{tr|Character}}}}
+[[File:Terrarian (demo).gif|frame|玩家用{{tr|Terrarian}}攻击[[{{tr|Target Dummies}}]]。注意{{tr|projectiles}}是如何自动导向{{tr|enemies}}的。]]
+
+'''{{tr|Terrarian}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|yoyo}}]]。{{tr|The Terrarian}}有 {{chance|2/9}} 几率掉落自[[{{tr|Moon Lord}}]]。使用时，它会以很快的频率向附近的{{tr|enemies}}发射绿色的、留存时间很短的{{tr|projectiles}}，这些{{tr|projectiles}}可在墙壁上反弹。{{tr|The Terrarian}}还具有 {{iteminfo|Terrarian|crit}} 的基础[[{{tr|critical strike chance}}]]而非通常的 4%。
+
+其最佳[[{{tr|Modifiers}}|{{tr|modifier}}]]是'''{{tr|Legendary}}'''。虽然{{tr|Yoyos}}通常不能得到{{tr|the Legendary modifier}}，但{{tr|the Terrarian}}却是个例外，并且它从{{tr|the Legendary modifier}}得到的是一套特别的加成：+17% {{tr|Damage}}、+8% {{tr|Critical Strike Chance}}、以及 +17% [[{{tr|Knockback}}]]。
+
+== 备注 ==
+* {{tr|Terrarian}}每 {{duration|6 ticks}} 发射一次{{tr|projectile}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_099_2}}
+* 用{{tr|the Terrarian}}的{{tr|projectiles}}击中{{tr|enemy}}会激活装备的[[{{tr|Counterweights|counterweight}}]]和[[{{tr|Yoyo Glove|yoyo glove}}]]，即使{{tr|the yoyo}}本身并未击中。由{{tr|Yoyo Glove}}产生的复制{{tr|yoyo}}也会发射{{tr|projectiles}}。
+* {{tr|projectiles}}向{{tr|yoyo}} 25 {{tr|tiles}}距离内最近的{{tr|enemies}}发射。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_099_2|t=距离是{{wikipedia|taxicab distance}}，也就是{{tr|yoyo projectile}}和{{tr|enemy}}之间的水平距离和垂直距离之和。}}
+** 如果没有{{tr|enemies}}在射程内，它们将向随机方向射击。
+** {{tr|projectiles}}在发射后不会追逐{{tr|enemies}}，只是沿直线移动。
+* {{tr|Terrarian}}和它的{{tr|projectiles}}在命中{{tr|enemies}}时会产生 10 {{tr|ticks}}的[[{{tr|static immunity frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* 每个{{tr|Terrarian beam projectile}}只能造成一次伤害，之后会无害化。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* 击中{{tr|enemies}}或在{{duration|30 ticks}}过后，{{tr|projectiles}}会在{{duration|26 ticks}}的时间内逐渐变淡，然后消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=The relevant part is the <code>aiStyle == 115</code> code block.}}
+
+== 成就 ==
+{{achievement|name=Sick Throw}}
+{{achievement|name=Throwing Lines}}
+
+== 花絮 ==
+* {{tr|The Terrarian}}[http://onedropyoyos.com/yoyos/terrarian/ 在现实中]也可以从 {{OneDrop}} 购买。<ref>[https://twitter.com/onedropdesign/status/618916913867943937 Twitter 上的 One Drop Yo-Yos ] {{small|2015 年 7 月 9 日}}</ref>在 2015 年 11 月，原版的“[http://onedropyoyos.com/yoyos/terrarian/ {{tr|Terrarian}}]”推出，然后，在 2019 年 6 月，One Drop Yoyos 推出了一款相关的{{tr|yoyo}}，名叫“[http://onedropyoyos.com/yoyos/legendary-terrarian/ {{tr|Legendary}} {{tr|Terrarian}}（Legendary Terrarian）]”。自 2020 年 5 月 [[1.4.0.1]] 发布以来，{{tr|Terrarian}}在游戏中也可以也可以重铸为 {{tr|Legendary}} {{tr|Terrarian}}了。
+* 根据它的色调，看起来它是由[[{{tr|Luminite Bar}}|{{tr|Luminite}}]]制成的。这和它由[[{{tr|Moon Lord}}]]掉落的情况相切合。
+* {{tr|The Terrarian}}和[[{{tr|Zenith}}]]拥有游戏中所有[[{{tr|melee weapon}}]]中第二高的{{tr|base damage}}，比[[{{tr|Meowmere}}]]低 10 {{tr|base damage}}。然而，尽管这样，由于其{{tr|homing projectiles}}和{{tr|the yoyo bag}}的效果，它的 {{DPS}} 通常要高于{{tr|Meowmere}}。
+* {{tr|the Terrarian}}是仅有的两个能发射{{tr|projectiles}}的{{tr|yoyo}}之一，另一个是[[{{tr|Hive-Five}}]]。
+* {{tr|The Terrarian}}专属的{{tr|Legendary}}[[{{tr|modifier}}]]其[[{{tr|Prefix IDs}}|{{tr|internal ID}}]] 是 84（<code>Legendary2</code>），而所有其他武器的{{tr|Legendary modifier}}其 ID 是 81（<code>Legendary</code>）。常规的{{tr|Legendary modifier}}有{{tr|yoyos}}不能享受的速度加成，所以必须专门编码一个只针对{{tr|Terrarian}}的特殊{{tr|Legendary modifier}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Yoyo}}和球体{{tr|projectile}}现在使用{{tr|static immunity frames}}。因此{{tr|Yoyo}}和球体{{tr|projectile}}现在能互不阻碍地各自造成伤害，这会大幅提高{{tr|Terrarian}}的潜在伤害。}}
+{{history|Desktop 1.4.0.1|现在可以得到{{tr|Legendary modifier}}了。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Yoyos}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Terrarian}}

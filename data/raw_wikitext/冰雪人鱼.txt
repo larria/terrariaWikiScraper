@@ -1,0 +1,54 @@
+{{npc infobox
+| auto = 206
+| image = Icy Merman.gif
+| image2 = Icy Merman (old).png
+| environment = Ice biome
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/> {{modes|74|148|222}} {{note|small=y|paren=y|{{gameText|ProjectileName.IcewaterSpit}}}}
+| debuff = Chilled
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.IcewaterSpit}}}}
+| debuffduration = {{modes|{{duration|25}}|{{duration|50}}|{{duration|62.5}}}}
+| debuff2 = Frozen
+| debuffchance2 = 10% {{note|small=y|paren=y|{{gameText|ProjectileName.IcewaterSpit}}}}
+| debuffduration2 = {{modes|{{duration|rawseconds=0.5–2}}|{{duration|rawseconds=1–4}}|{{duration|rawseconds=1.25–5}}}}
+| Frost Staff|1|2%
+| Ice Sickle|1|{{eicons|1.4.4}} 1% / {{eicons|1.4.4|invert=y}} 0.56%
+| Milkshake|1|1.33%
+| hardmode = yes
+| idprojectile = 177
+| sound1 = Item 28.wav
+| soundcaption1 = {{gameText|ProjectileName.IcewaterSpit}}
+}}
+
+'''{{tr|Icy Merman}}'''是个[[{{tr|Hardmode}}]]的[[{{tr|enemy}}]]，可在[[{{tr|Ice biome}}]]找到。当可以直接看到玩家后，它将会停下并开始发射{{tr|Icewater Spit}}{{tr|projectiles}}，类似于发射频率更低的[[{{tr|Frost Staff}}]]。其{{tr|projectiles}}和[[{{tr|Ice Elemental}}]]的{{tr|projectiles}}行为相似，但{{tr|damage}}较低且发射频率更高。{{tr|Icewater Spit}}攻击总是会造成[[{{tr|Chilled}}]][[{{tr|debuff}}]]，且有 {{chance|1/10}} 几率造成[[{{tr|Frozen}}]]。
+
+== 小贴士 ==
+* 当{{tr|the Icy Merman}}站在原地向玩家发射{{tr|projectile}}时，它很容易受到攻击速度快于其{{tr|Icewater Spit}}攻击的{{tr|ranged weapon}}的打断，如[[{{tr|Phoenix Blaster}}]]。这样就很容易将其定在原地。或者，如果玩家能够利用掩体来接近它且不被其{{tr|projectile}}攻击命中，[[{{tr|melee weapons}}]]就能攻击到它。然而，如果玩家被其{{tr|projectile}}击中并受到{{tr|Chilled}}{{tr|debuff}}，就将更加难以不被再次击中地接近它。
+* 它们站定后，[[{{tr|Nimbus Rod}}]]能够高效地杀死它们。
+
+== 花絮 ==
+* 虽然名字叫{{tr|Merman}}，但它在水中的机动性并不会增加。
+* {{tr|The Icy Merman}}在 {{eil|1.3.5}} 前的外观是重新上色的[[{{tr|Neptune's Shell}}]]及其升级物提供的[[{{tr|Merfolk}}]]外观。
+** {{eil|Zombie Merman}}的{{tr|sprite}}和{{tr|The Icy Merman}}的新{{tr|sprite}}类似。
+{{bestiary}}
+** 和图鉴不同，{{tr|The Icy Merman}}并不是"不死"敌怪。
+
+== 另见 ==
+* {{item|Creature from the Deep}}
+* {{item|Zombie Merman}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|[[{{tr|Ice Sickle}}]]{{tr|drop rate}}由 {{chance|1/180}} 提升至 {{chance|1/100}}。}}
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Milkshake}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated}}。旧的{{tr|sprite}}是 [[File:Icy Merman (old).png|15px]]。}}
+{{history|Desktop 1.2.0.3|现在会掉落[[{{tr|Icy Merman Banner}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Icy Merman}}

@@ -1,0 +1,497 @@
+{{infobox wrapper|
+{{npc infobox | tabs=y
+| auto = 369
+| type = NPC
+| environment = Ocean/Valid house
+| damage = {{modes|10|15|17}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ItemName.FrostDaggerfish}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| imageother = Map Icon Angler.png
+| imageothercaption = Map Icon
+| idprojectile = 520
+}}|
+{{npc infobox
+| auto = 376
+| image = Sleeping Angler.gif
+| type = NPC
+| environment = Ocean
+| damage =
+}}
+}}
+{{redirect|Angler|{{tr|Angler Fish}}（Angler Fish）|{{tr|Angler Fish}}}}
+{{quotation|[[File:Emote Town Angler.gif|link=]] '''{{tr|Angler}}'''|{{gameText|LegacyDialog.334}}}}
+
+'''{{tr|Angler}}'''是个有关于[[{{tr|Fishing}}]]的专门 [[{{tr|NPC}}]]，看起来是个小男孩。他不出售任何东西、但会给予玩家[[{{tr|Angler}}/{{tr|Quests}}|{{tr|quests}}]]。{{tr|Quest}}目标通常涉及为他捕捉特定[[{{tr|biome}}]]或[[{{tr|layer}}]]中的[[{{tr|Fishing}}#任务鱼|稀有鱼类]]，为此他会发放各种奖励。
+
+在{{eversions|Frost Daggerfish|short}}中，他会在受到威胁时向附近的{{tr|enemy}}投掷[[{{tr|Frost Daggerfish}}]]，在游戏开始时会造成 10 / {{expert|15}} / {{master|17}} 伤害。 
+* 此外，在{{eversions|1.4.0.1|short}}上，他会随着玩家的进展得到[[{{tr|NPC stat boosts}}|各种属性提升]]<ref name="ai"/>。
+
+在第一次遇到{{tr|The Angler}}时，他会是'''{{tr|Sleeping Angler}}'''，随机生成在[[{{tr|Ocean}}]]{{tr|biome}}（很少见地会出现在{{tr|underworld}}）的沙滩或[[{{tr|water}}]]面上。当如下条件满足时他会搬进来：
+* 有一间空[[{{tr|house}}]]。
+* 玩家已经与其互动过并已将其叫醒（{{key|open}}）。
+
+{{Lifeform Analyzer note|{{tr|The Sleeping Angler}}}}
+
+== 发起任务 ==
+* 每天的{{tr|quest}}会在{{time|4:30 AM}}时决定，无论是否已经与{{tr|the Angler}}交谈过。
+* 要想知道应该去哪里找{{tr|quest fish}}，玩家需要与{{tr|the Angler}}对话并选择“{{gameText|LegacyInterface.64}}”选项。
+** 在{{3DS version}}中，玩家无需选择选项，因为{{tr|quest}}会在与{{tr|Angler}}对话时立即给出。
+** 在 {{eversions|1.4.4}}, 给定任务鱼的位置会显示在对话下方。
+* 玩家需要有[[{{tr|Fishing Pole}}]]、[[{{tr|Bait}}]]、和总量合适的[[{{tr|liquid}}]]（参见[[{{tr|Fishing}}]]）来捕捉{{tr|quest fish}}。
+** {{tr|quest fish}}物品仅在其{{tr|quest}}生效时能捕捉到（从当天的{{time|4:30 AM}}直到下一天的{{time|4:30 AM}}，且在玩家上交当天的{{tr|quest fish}}前）。
+** 仅当玩家的[[{{tr|inventory}}]]中没有此任务鱼时才能捕到此鱼。
+* 再次与{{tr|Angler}}谈话会从玩家的{{tr|inventory}}中移除{{tr|the quest fish}}，并将物品奖励给玩家。
+
+== 任务列表 ==
+{{ajax|渔夫/任务}}
+
+== 任务奖励 ==
+在完成{{tr|quest}}之后，{{tr|the Angler}}会奖励给玩家一个物品、一些[[{{tr|Coins}}]]、还可能会有一些[[{{tr|bait}}]]。
+* '''罕见度降低量：'''给予功能性物品的几率取决于两个因素。每个可能的物品都拥有一个基础罕见度，几率范围为{{tr|Fish Finder}}组件的 {{chance|1/30}} 至{{tr|Golden Fishing Rod}}的 {{chance|1/250}} 不等。这一基础罕见度会被乘上一个“罕见度降低量”数值。罕见度降低量起始为 1，并基于玩家完成的{{tr|quests}}数量和{{tr|Angler}}当前的{{tr|happiness}}改变。在考虑了{{tr|happiness}}和完成的{{tr|quests}}后，罕见度降低量会再被乘以 0.9。这会使得提供功能性的非[[{{tr|potion}}]]{{tr|items}}的几率会随着{{tr|quests}}完成数的提高逐渐地提高（下方列出）：随着{{tr|quests}}完成，它们的可能性会越来越高（其他物品的可能性则越低）。
+** 完成少于 51 个{{tr|quests}}时，罕见度降低量起始为 1，每完成一个任务减少 0.01。
+** 完成少于 101 个{{tr|quests}}时，罕见度降低量起始为 0.5，完成超过 50 个{{tr|quest}}后每再完成一个，罕见度降低量减少 0.005。
+** 完成少于 150 个{{tr|quests}}时，罕见度降低量起始为 0.25，完成超过 100 个{{tr|quest}}后每再完成一个，罕见度降低量减少 0.002。
+** 完成超过 150 个{{tr|quests}}后，罕见度降低量固定为 0.15。
+** 在计算了完成的{{tr|quests}}数后，罕见度降低量会再乘以固定的 0.9，以及基于{{tr|happiness}}的乘数。参见{{tr|Notes}}以获取使用的{{tr|happiness}}公式。
+** 举个例子，{{tr|Golden Fishing Rod}}在完成 75 个{{tr|quests}}后会作为随机奖励出现，基础罕见度为 1/250。在完成 75 个{{tr|quest}}时，不考虑{{tr|happiness}}的罕见度降低量为 0.3375，意味着实际几率是 1/(250*0.3375)（取整到最接近的整数），或是 {{chance|1/84}}，比最初的 {{chance|1/250}} 要高不少。
+* '''{{tr|Coin}}数量：'''奖励的{{tr|coins}}数量会随着{{tr|quests}}的完成数而增加，且向下取整到最接近的整{{tr|Gold Coin}}（少于 {{gc|1}} 的话则取整到整{{tr|Silver Coin}}），最高为 {{gc|10}}。平均奖励的{{tr|coin}}在取整之前约为 {{sc|70}}，每完成一个{{tr|quest}}就再加上 {{sc|1.5}}。这一数值在{{eil|Expert Mode}}中翻倍。{{eicons|1.4.4}} 此外，这些数值在{{tr|Hardmode}}再翻倍，但上限仍为 {{gc|10}}。
+* '''{{tr|Bait}}几率：'''{{tr|The Angler}}可能会额外奖励玩家一定数量的{{tr|bait}}，其几率由首次完成{{tr|quest}}时的 {{chance|50/99|mode=p}} 提高到 50 个{{tr|quest}}时的 100%。平均提供的{{tr|bait}}的数量和质量会随着{{tr|quests}}的完成数而增加，最高为 7 个[[{{tr|Master Bait}}]]。
+'''注：'''
+* 在{{eversions|1.4.0.1|short=y|invert=y}}中，完成第 150 个{{tr|quest}}后，几率会永久重置到其基础几率，就像玩家根本没有完成过{{tr|quests}}一样。此时，奖励的几率会比首个完成{{tr|quest}}时略微''更差''。例如，在奖励中包含任意类型的{{tr|bait}}的几率会降低到 {{chance|reduce=n|50/100}}，这比首个{{tr|quest}}时的 {{chance|50/99}} 几率更低。{{tr|Coins}}''不会''受此影响，仍然会继续上升到最高每个{{tr|quest}} {{gc|10}}。相似地，{{tr|Bait}}''数量''也''不会''被影响，仍然会继续最高每个{{tr|quest}} 7 个{{tr|bait}}，但获得{{tr|bait}}的几率（若有{{tr|bait}}，则为获得{{tr|bait}}的类型）会受到影响。
+* 在{{eversions|1.4.0.1}}中，{{tr|Angler}}的[[{{tr|NPCs}}#{{tr|Happiness}}|{{tr|happiness}}]]会影响其奖励：在 100%（中立）{{tr|happiness}}时，奖励的几率（影响物品的几率''和''{{tr|bait}}的几率与类型）实际上会''增加到''其基础数值的 111.11%。奖励几率会随着{{tr|happiness}}变动，范围为 88.89%（在最不快乐时，150% 价格乘数）至 126.98%（在最快乐时，75% 价格乘数）。{{source code ref|v=1.4.3.6|method=Terraria.Player.GetAnglerReward|t=实际公式为 <code>实际几率 = 基础几率 / (0.9 * ((1 + 价格乘数) / 2))</code>，其中<code>价格乘数</code>为{{tr|Angler}}在其他情况下隐藏的价格乘数，和其他 {{tr|NPCs}} 一样由其{{tr|happiness}}决定。}}
+* 在{{eversions|1.4.0.1|short=y}}中，奖励不会包含玩家{{tr|inventory}}中或[[{{tr|portable storage}}]]中已有的{{tr|informational accessories}}或{{tr|fishing}}用的功能性{{tr|accessories}}，除非玩家已经拥有全部对应类型的{{tr|accessory}}或者拥有其组合起来后的物品。符合这些要求的特定的物品在下方表格中列出。
+** 如果玩家想要在他们获得全套{{tr|accessories}}''之前''获得重复的{{tr|accessories}}，只需要在收集{{tr|Angler}}的奖励前将对应类型的{{tr|accessories}}放置到''不''专属于玩家的外部储存容器中（如：普通的[[{{tr|Chest}}]]）即可。
+
+=== 奖励表 ===
+只会得到以下所列的特别奖励之一。所列的几率收到已完成任务数量和（在{{eversions|1.4.0.1|short=y}}中）{{tr|Angler}}的{{tr|happiness}}影响。几率是按照以下列表顺序从上往下进行判定的。这意味着靠近底部的奖励实际几率会略低于所列数值。这些几率不受{{eil|luck}}影响。
+
+==== 主要奖励 ====
+{| class="terraria sortable lined"
+! 物品 !! 基础罕见度 !! {{tr|Notes}}
+|-
+| {{item|wrap=y|Fuzzy Carrot}}
+| {{na}} || 在第 5 个任务保证能得到。
+|-
+| {{item|wrap=y|Angler Hat}}
+| {{na}} || 在第 10 个任务保证能得到。
+|-
+| {{item|wrap=y|Angler Vest}}
+| {{na}} || 在第 15 个任务保证能得到。
+|-
+| {{item|wrap=y|Angler Pants}}
+| {{na}} || 在第 20 个任务保证能得到。
+|-
+| {{item|wrap=y|Honey Absorbant Sponge}}
+| {{tr|Pre-hardmode}}为 {{chance|1/4}} <br/> {{tr|Hardmode}}为 {{chance|1/2}} || 若{{tr|quest fish}}是[[{{tr|Bumblebee Tuna}}]]。<br/>几率不受{{tr|quests}}数量和{{tr|Angler}}的{{tr|happiness}}影响。
+|-
+| {{item|wrap=y|Bottomless Honey Bucket}}
+| {{tr|Pre-hardmode}}为 {{chance|1/4}} <br/> {{tr|Hardmode}}为 {{chance|1/2}} || 若{{tr|quest fish}}是[[{{tr|Bumblebee Tuna}}]]。<br/>几率不受{{tr|quests}}数量和{{tr|Angler}}的{{tr|happiness}}影响。
+|-
+| {{item|wrap=y|Golden Fishing Rod}}
+| {{chance|1/250}} || 到第 {{eicons|1.3.0.1|3DS=y}} 30 / {{eicons|1.3.0.1|invert=y|3DS=n}} 50 个{{tr|quest}}保证能得到。<br/>在第 75 个{{tr|quest}}后可获得。
+|-
+| {{item|wrap=y|Hotline Fishing Hook}}
+| {{chance|1/100}} {{eicons|1.4.0.1}} <br/> {{chance|1/75}} {{eicons|1.4.0.1|invert=y}} || 仅限[[{{tr|Hardmode}}]]。<br/>在第 25 个{{tr|quest}}后可获得。
+|-
+| {{item|wrap=y|Fin Wings}}
+| {{chance|1/70}} || 仅限{{tr|Hardmode}}。<br/>在第 10 个任务之后可获得。
+|-
+| {{item|wrap=y|Bottomless Water Bucket}}
+| {{chance|1/70}} || 在第 10 个任务之后可获得。<br/>在第 25 个任务保证能得到。
+|-
+| {{item|wrap=y|Super Absorbant Sponge}}
+| {{chance|1/70}} || 在第 10 个任务之后可获得。
+|-
+| {{item|wrap=y|Golden Bug Net}}
+| {{chance|1/80}} ||
+|-
+| {{item|wrap=y|Fish Hook}}
+| {{chance|1/60}} ||
+|-
+| {{item|wrap=y|Minecarp}}
+| {{chance|1/60}} ||
+|-
+| {{item|wrap=y|Mermaid set}}
+| {{chance|1/80}} {{eicons|1.4.0.1}} <br/> {{chance|1/50}} {{eicons|1.4.0.1|invert=y}} || 一次性奖励全部 3 件。
+|-
+| {{item|wrap=y|Fish Costume set}}
+| {{chance|1/80}} {{eicons|1.4.0.1}} <br/> {{chance|1/50}} {{eicons|1.4.0.1|invert=y}} || 一次性奖励全部 3 件。
+|-
+| {{item|wrap=y|High Test Fishing Line}}
+| {{chance|1/40}} <ref group="rw" name="acc">游戏会将所有 7 件{{tr|accessories}}的几率结合到同一次判定中，如果该判定成功，则游戏会检查缺少的{{tr|accessories}}，并以相等的概率选择其中一件（作为奖励）。这样处理这一几率的原因很可能是保证在玩家已经拥有其中几样{{tr|accessories}}时，获得{{tr|accessories}}的总体几率不变。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Player.GetAnglerReward_MainReward}}</ref> || {{eicons|1.4.0.1}} 仅当手头没有同种物品时，<ref group="rw" name="inv">“手头”的范围包括{{tr|inventory}}、（在全部三个{{eil|loadouts}}中）装备着的{{tr|accessories}}、以及 4 种[[{{tr|Portable Storage}}]]。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Player.DropAnglerAccByMissing}}</ref>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Angler Earring}}
+| {{chance|1/40}}<ref group="rw" name="acc"/> || {{eicons|1.4.0.1}} 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Tackle Box}}
+| {{chance|1/40}}<ref group="rw" name="acc"/> || {{eicons|1.4.0.1}} 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Fisherman's Pocket Guide}}
+| {{chance|1/30}}<ref group="rw" name="acc"/> || 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Weather Radio}}
+| {{chance|1/30}}<ref group="rw" name="acc"/> || 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Sextant}}
+| {{chance|1/30}}<ref group="rw" name="acc"/> || 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Fishing Bobber}}
+| {{chance|1/25}}<ref group="rw" name="acc"/> || 仅当手头没有同种物品时，<ref group="rw" name="inv"/>，这包括在[[{{tr|crafting tree}}]]中包含此件物品的{{tr|craftable items}}。
+|-
+| {{item|wrap=y|Fishing Potion}} (2-5)
+| {{chance|1/3}} {{eicons|1.4.4}} || 仅当其他物品不被给予时。
+|-
+| {{item|wrap=y|Sonar Potion}} (2-5)
+| {{chance|1/3}} {{eicons|1.4.4}} || 仅当其他物品不被给予时。
+|-
+| {{item|wrap=y|Crate Potion}} (2-5)
+| {{chance|1/3}} {{eicons|1.4.4}} || 仅当其他物品不被给予时。
+|}
+{{reflist|group=rw}}
+
+==== 家具奖励 {{eicons|1.4.4}} ====
+类似于主要奖励池，玩家有时会被奖励下表中的随机一件{{tr|furniture}}。在完成 100 个{{tr|quests}}（包括第 100 个{{tr|quests}}）后就能保证获得{{tr|The furniture}}。
+
+{| class="terraria lined"
+! {{tr|Item}}
+|-
+| {{item|wrap=y|Life Preserver}}
+|-
+| {{item|wrap=y|Ship's Wheel}}
+|-
+| {{item|wrap=y|Compass Rose}}
+|-
+| {{item|wrap=y|Wall Anchor}}
+|-
+| {{item|wrap=y|Pillagin' Me Pixels}}
+|-
+| {{item|wrap=y|Treasure Map}}
+|-
+| {{item|wrap=y|Goldfish Trophy}}
+|-
+| {{item|wrap=y|Bunnyfish Trophy}}
+|-
+| {{item|wrap=y|Swordfish Trophy}}
+|-
+| {{item|wrap=y|Sharkteeth Trophy}}
+|-
+| {{item|wrap=y|Ship in a Bottle}}
+|-
+| {{item|wrap=y|Seaweed Planter}}
+|-
+| {{item|wrap=y|Not So Lost In Paradise}}
+|-
+| {{item|wrap=y|Crustography}}
+|-
+| {{item|wrap=y|What Lurks Below}}
+|-
+| {{item|wrap=y|Fangs}}
+|-
+| {{item|wrap=y|Couch Gag}}
+|-
+| {{item|wrap=y|Silent Fish}}
+|-
+| {{item|wrap=y|The Duke}}
+|}
+
+==== 其他奖励 {{eicons|1.4.4|invert=y}} ====
+如果没有获得主要奖励，则会获得下面奖励中的一个，且没有特定顺序。几率不受完成的{{tr|quests}}数量影响。
+
+{| class="terraria lined"
+! {{tr|Item}} !! 几率 !! {{tr|Notes}}
+|-
+| {{item|wrap=y|Life Preserver}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Ship's Wheel}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Compass Rose}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Wall Anchor}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Pillagin' Me Pixels}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Treasure Map}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Goldfish Trophy}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Bunnyfish Trophy}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Swordfish Trophy}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Sharkteeth Trophy}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Ship in a Bottle}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Seaweed Planter}} || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Coralstone Block}} (50–150) || {{chance|1/100}} ||
+|-
+| {{item|wrap=y|Fishing Potion}} (2–5) <br/> {{item|wrap=y|Sonar Potion}} (2–5) <br/> {{item|wrap=y|Crate Potion}} (2–5) <br/> || 默认 || 仅会奖励一种{{tr|potion}}。
+|}
+
+==== 鱼饵奖励 ====
+
+如果奖励了{{tr|bait}}，则其具体类型的几率按照以下顺序判定。以下所列几率不受已完成任务数量和（{{eversions|1.4.0.1|short=y}}中）{{tr|Angler}}的{{tr|happiness}}的影响。如上文所述，（基础{{tr|happiness}}时）获得{{tr|bait}}的几率范围从 50% 到 100% 不等。
+
+{| class="terraria lined"
+! {{tr|Item}} !! 基准几率
+|-
+| {{item|wrap=y|Master Bait}} || {{chance|1/15}}
+|-
+| {{item|wrap=y|Journeyman Bait}} || {{chance|1/5}}
+|-
+| {{item|wrap=y|Apprentice Bait}} || 默认
+|}
+
+获得的{{tr|bait}}数量随机决定，最少为 1，最高为 7，平均数量取决于完成的{{tr|quests}}数。会进行六次互相独立的掷骰判定，几率分别为 N/25、N/50、N/100、N/150、N/200、和 N/250（其中 N 为完成的{{tr|quests}}数量''加一''），且这些判定在成功时各会将{{tr|bait}}数量增加 1。因此，数量通常会在 1 和 7 个{{tr|bait}}间变化，直到在第 249 个{{tr|quest}}后达到最高。{{source code ref|v=1.4.3.6|method=Terraria.Player.GetAnglerReward_Bait|t={{tr|bait}}数量随机决定的方法自从 [[1.2.4]] 以来没有改变过（{{code|Terraria.Player.cs}} 中的 {{code|GetAnglerReward()}} 方法。}}一些对于不同{{tr|quest}}完成数的平均{{tr|bait}}数量的示例如下：
+
+{| class="terraria lined"
+! {{tr|quests}}完成数量 !! 平均{{tr|bait}}数量
+|-
+| 1 || 1.17 个{{tr|bait}}
+|-
+| 25 || 3.19 个{{tr|bait}}
+|-
+| 50 || 4.31 个{{tr|bait}}
+|-
+| 100 || 5.58 个{{tr|bait}}
+|-
+| 150 || 6.36 个{{tr|bait}}
+|-
+| 200 || 6.80 个{{tr|bait}}
+|-
+| 249+ || '''7 个{{tr|bait}}（必定）'''
+|}
+
+== {{tr|Living preferences}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Angler|male}}
+{{-}}
+
+== 备注 ==
+* {{tr|The Angler}}是仅有的几个无关游戏进度能获得的{{tr|town NPCs}} 之一（其他的为[[{{tr|Guide}}]]、[[{{tr|Stylist}}]]和{{eil|Golfer}}）。
+* {{tr|The Sleeping Angler}}随机生成，就像其他受缚 {{tr|NPCs}} 那样。并不保证他一开始就会在某个海岸生成。玩家有可能需要在岸边等一段时间他才会出现。
+* {{tr|The Sleeping Angler}}可以漂浮在[[{{tr|water}}]]和[[{{tr|honey}}]]上。
+* 如果在第二天开始（第二天{{time|4:30 AM}}）之前未完成任务，则无论是否与{{tr|the Angler}}交谈，都会开始新的任务。
+** 在{{tr|Angler}}生成于世界上之前就有可能钓到任务鱼。但是，大多数任务鱼都需要在特定的环境下钓，因此这样钓到的可能性不大。
+* {{tr|The Angler}}绝不会在[[{{tr|Corruption}}]]世界中分配需要玩家去[[{{tr|the Crimson}}]]捕鱼的任务，反之亦然。
+* 如果玩家的[[{{tr|inventory}}]]中已经有当天的任务渔获，则不会捕到任何任务鱼。可以在一天内捕到多条任务鱼，只要玩家将之前捕到的任务鱼丢到地上或存到[[{{tr|Chest}}]]或其他[[{{tr|storage item}}]]中。这种情况中，位于玩家的“{{tr|trash slot}}”内的鱼不算，因此将第一条鱼放到那里就可以拾取第二条{{tr|quest fish}}。用光标将物品抓在半空中不算做持有，加上另一条丢在{{tr|trash slot}}中的{{tr|quest fish}}，这样就可以从地上捡起第三条，最多可以在{{tr|inventory}}中有三条{{tr|quest fish}}。
+* 大多数 {{tr|NPCs}} 死的时候用的是常规的死亡动画，而{{tr|the Angler}}只是简单地在一阵烟雾中消失。他的死亡讯息也是独特的：不是“{{gameText|LegacyMisc.19|x_0=&lt;{{tr|Angler}}的名称&gt;}}”，讯息写的是“{{gameText|LegacyMisc.36|x_0=&lt;{{tr|Angler}}的名称&gt;}}”。这可能是由于评级问题，因为描述儿童被杀的情况往往会导致被 {{wikipedia|ESRB}} 评级为仅限成人，这可能会限制游戏的发行。
+** 在{{3DS version}}中情况并不如此：状态讯息写的是“{{tr|Angler}}被杀死了...”，因为 Re-Logic 并未更新这些平台上的游戏。{{tr|The Angler}}依然消失于一阵烟雾中。
+* 如果{{tr|the Angler}}在被解救之后被杀死，并且没有合适的[[{{tr|house}}]]可供其入住，则一旦有空闲的他就会入住，就像所有其他 [[{{tr|NPC}}]] 那样。
+* 任务完成数量是与人物绑定的，而非与世界绑定。取得特定奖励所需要的最小数量可以在多个世界累积。而达成[[{{tr|achievements}}]]所需的任务完成数则是所有人物在所有世界中的总数，所以可以有多个人物对{{tr|achievements}}有贡献。
+* 某个世界中游戏内每天的当前钓鱼任务是与人物名称绑定的。例如：不可能用两个同名的人物分别在同一个世界中领取奖励。
+* {{eicons|1.3.0.1}} {{tr|The Angler}}提供了[[{{tr|Fish Finder}}]]的全部三个部件，这是[[{{tr|Cell Phone}}]]的子组件之一。他的另外三个礼物可以组合成[[{{tr|Angler Tackle Bag}}]]，而这又是制作{{eil|Lavaproof Tackle Bag}}所必需。
+
+== 成就 ==
+{{achievement|name=Servant-in-Training}}
+{{achievement|name=Good Little Slave}}
+{{achievement|name=Trout Monkey}}
+{{achievement|name=Fast and Fishious}}
+{{achievement|name=Supreme Helper Minion!}}
+{{achievement|name=Glorious Golden Pole}}
+
+== 小贴士 ==
+* 在[[{{tr|Multiplayer}}]]中，使用控制台命令快进到黎明并不会重置任务的冷却计时，玩家依然需要等待 24 分钟（游戏内的 24 小时）才能得到新任务。不过，快进到午夜并等待 4.5 分钟到黎明是有效的。
+* 如果在玩家交了每日任务后尚未保存游戏，可以不保存关掉游戏然后再次交任务以获得不同的奖励。可以多次这样做，以获得想要的奖励而无需为了新任务等待 24 分钟。<!-- Works on Xbox One, PC, 3DS -->
+* 建立小型{{tr|biomes}}对于快速捕捞{{tr|biome}}特产鱼非常有用，因为某些{{tr|biomes}}，比如[[{{tr|Jungle}}]]、[[{{tr|Corruption}}]]、或[[{{tr|Crimson}}]]可能需要耗费不少时间并历经危险才能到达。
+* {{eicons|1.4.0.1}} 试图从钓鱼来获得新{{tr|accessories}}（例如，收集[[{{tr|Fish Finder}}]]的材料）时，记得要把已经从{{tr|quest fishing}}得到的{{tr|accessories}}放在{{tr|inventory}}中，以避免得到重复物品。但是，如果已经拥有全部，应当试着只拿着已经有两份的那些，来最小化又拿到一份的几率。完成任务也能提高获得其中之一的几率。
+* 在{{eil|Journey Mode}}中使用时间菜单来跳过当天以及使用复制菜单来得到{{tr|quest fish}}可以更轻松地完成{{tr|achievements}}。
+* 捕捉多条同种{{tr|quest fish}}，并将其储存在{{tr|storage}}中可以在将来的{{tr|quests}}需求同一条{{tr|fish}}时节省许多时间。注意玩家需要将{{tr|quest fish}}移出{{tr|inventory}}才可再次钓上同一种{{tr|fish}}。
+
+== 名称 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+'''醒来时：'''
+* “{{gameText|LegacyDialog.353}}”
+* “{{gameText|LegacyDialog.354}}”
+* “{{gameText|LegacyDialog.355}}”
+
+{{eicons|1.4.0.1}} ''任何时间：'''
+* “{{gameText|AnglerQuestChatter.Chatter_2|x_AnglerCompletedQuestsCount=&lt;已完成任务数&gt;}}”
+* “{{gameText|AnglerQuestChatter.Chatter_1|x_AnglerCompletedQuestsCount=&lt;已完成任务数&gt;}}”
+
+'''当任务可用时：'''
+* “{{gameText|LegacyDialog.334}}”
+* “{{gameText|LegacyDialog.335}}”
+* “{{gameText|LegacyDialog.337|x_Angler=&lt;{{tr|Angler}}的名称&gt;|x_WorldName=&lt;{{tr|world}}的名称&gt;}}”（这引用了一战中美国以{{wikipedia|Uncle Sam|山姆大叔}}为主体的著名宣传海报）
+* “{{gameText|LegacyDialog.336}}”
+
+'''当完成任务时：'''
+* “{{gameText|AnglerQuestText.TurnIn_1}}”
+* “{{gameText|AnglerQuestText.TurnIn_3}}”
+* “{{gameText|AnglerQuestText.TurnIn_4}}”
+* “{{gameText|AnglerQuestText.TurnIn_5}}”
+* “{{gameText|AnglerQuestText.TurnIn_2}}”
+
+'''当每日任务已经完成了之后点击任务按钮时：'''
+* “{{gameText|LegacyDialog.339}}”
+* “{{gameText|AnglerQuestText.NoQuest_2}}”
+* “{{gameText|AnglerQuestText.NoQuest_1}}”
+* “{{gameText|AnglerQuestText.NoQuest_4}}”
+* “{{gameText|AnglerQuestText.NoQuest_5}}”
+* “{{gameText|AnglerQuestText.NoQuest_3|x_Angler=&lt;{{tr|Angler}}的名称&gt;}}”
+
+'''完成任务后：'''
+* “{{gameText|LegacyDialog.345}}”
+* “{{gameText|LegacyDialog.338}}”
+* “{{gameText|LegacyDialog.340|x_WorldName=&lt;{{tr|world}}的名称&gt;}}”
+* “{{gameText|LegacyDialog.346}}”
+* “{{gameText|LegacyDialog.342}}”
+* “{{gameText|LegacyDialog.343}}”
+* “{{gameText|LegacyDialog.341}}”
+* “{{gameText|LegacyDialog.344|x_WorldName=&lt;{{tr|world}}的名称&gt;}}”
+
+'''在[[{{tr|Dryad}}]]存在的情况下完成任务时：'''
+* “{{gameText|LegacyDialog.347|x_Dryad=&lt;{{tr|Dryad}}的名称&gt;}}”
+
+'''在{{eil|Tavernkeep}}存在的情况下完成任务时：'''
+* “{{gameText|AnglerChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名称&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|AnglerSpecialText.Party}}”
+
+'''在[[{{tr|blood moon}}]]期间，当任务可用时：'''
+* “{{gameText|LegacyDialog.348}}”
+* “{{gameText|LegacyDialog.349}}”
+* “{{gameText|AnglerSpecialText.BloodMoonFishing1}}”
+
+'''在{{tr|a blood moon}}期间，当完成任务时：'''
+* “{{gameText|LegacyDialog.351}}”
+* “{{gameText|LegacyDialog.352}}”
+* “{{gameText|LegacyDialog.350}}”
+* “{{gameText|AnglerSpecialText.BloodMoonFishing2}}”
+
+'''在下{{tr|rain}}时：'''
+* “{{gameText|AnglerSpecialText.Rain2}}”
+* “{{gameText|AnglerSpecialText.Rain1}}”
+
+'''雷暴期间：'''
+* “{{gameText|AnglerSpecialText.Storm2}}”
+* “{{gameText|AnglerSpecialText.Storm1}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|AnglerSpecialText.Windy2}}”
+* “{{gameText|AnglerSpecialText.Windy1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|AnglerSpecialText.Graveyard2}}”
+* “{{gameText|AnglerSpecialText.Graveyard1}}”
+
+{{collapse bottom}}
+
+=== 快乐话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''没有影响{{tr|happiness}}的东西时：'''
+* “{{gameText|TownNPCMood_Angler.Content}}”
+
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Angler.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Angler.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Angler.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Angler.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Angler.HateCrowded}}”
+
+'''在{{tr|Ocean}}中：'''
+* “{{gameText|TownNPCMood_Angler.LikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''在{{tr|the Desert}}中：'''
+* “{{gameText|TownNPCMood_Angler.DislikeBiome|x_BiomeName={{tr|the Desert}}}}”
+
+'''在[[{{tr|evil biome}}]]中或[[{{tr|Dungeon}}]]中时'''
+* “{{gameText|TownNPCMood_Angler.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Angler.LikeNPC_Princess|x_NPCName={{tr|the Princess}}[{{tr|Princess}}的名称]}}”
+
+'''靠近[[{{tr|Demolitionist}}]]时：'''
+* “{{gameText|TownNPCMood_Angler.LikeNPC|x_NPCName={{tr|the Demolitionist}}[{{tr|Demolitionist}}的名称]}}”
+
+'''靠近[[{{tr|Party Girl}}]]时：'''
+* “{{gameText|TownNPCMood_Angler.LikeNPC|x_NPCName={{tr|the Party Girl}}[{{tr|Party Girl}}的名称]}}”
+
+'''当在[[{{tr|Tax Collector}}]]附近时：'''
+* “{{gameText|TownNPCMood_Angler.LikeNPC|x_NPCName={{tr|the Tax Collector}}[{{tr|Tax Collector}}的名称]}}”
+
+'''靠近[[{{tr|Tavernkeep}}]]时：'''
+* “{{gameText|TownNPCMood_Angler.HateNPC|x_NPCName={{tr|the Tavernkeep}}[{{tr|Tavernkeep}}的名称]}}”
+
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Angler}}是个小孩，所以他比所有其它人都小。其他 {{tr|NPC}} 中唯一还是孩子的是{{eil|Princess}}。他的外观图要比其他人的都要矮一格。
+** {{tr|The Angler}}似乎是个孤儿，可从“{{gameText|LegacyDialog.346}}”看出。
+** 如话语“{{gameText|AnglerChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名称&gt;}}”中所见，[[{{tr|Tavernkeep}}]]不让{{tr|The Angler}}喝[[{{tr|Ale}}]]。这是因为{{tr|Angler}}大概未达{{wikipedia|legal drinking age|法定饮酒年龄}}。
+* {{tr|The Angler}}对{{tr|bees}}过敏，正如他给的寻找[[{{tr|Bumblebee Tuna}}]]的任务中所示。
+* {{tr|The Angler}}似乎常常忽视玩家的安全，他的话语体现了这一点，例如：“{{gameText|LegacyDialog.336}}”
+* 尽管{{tr|Angler}}自称喜欢钓鱼，但从未见他本人在钓鱼，而且他仅有的能提供给玩家的鱼还都是装在{{tr|trophies}}上。
+** 在{{eil|credits}}中，可见到他给了[[{{tr|Pirate}}]]一条{{tr|quest fish}}，但这条{{tr|fish}}可能是玩家给他的。
+* {{tr|the Clownfish}}的任务对话引用了 2003 年的美国电脑动画冒险电影{{wikipedia|Finding Nemo|《海底总动员》}}。
+* {{tr|the Batfish}}的任务描述引用了《{{wikipedia|Batman Theme|蝙蝠侠主题曲（Batman Theme）}}》，这是 1966 年的《{{wikipedia|Batman|蝙蝠侠（Batman）}}》电视连续剧的片头曲。
+* {{tr|the Pengfish}}的任务对话引用了虚构的超级英雄{{wikipedia|Superman|超人}}。
+* 虽然他在任务对话中声称要发大财，然而{{tr|the Jewelfish}}出售时依然一文不值。
+* 虽然极为罕见，但完全有可能给{{tr|angler}}一条[[{{tr|bunnyfish}}]]然后收到[[{{tr|bunnyfish trophy}}]]，这表明他直接将其返还。
+* {{tr|The Angler}}关于用舌头触碰冰块的话语参考的是如下事实：非常冷的物体（例如冰块）会导致舌头上的唾液冻结在舌头表面的孔隙内，从而导致舌头粘在冰上。
+* {{eicons|1.4.0.1}}有趣的是，尽管他因为那地方显然没什么鱼而不喜欢[[{{tr|Desert}}]]，但{{tr|Desert}}中依然可以捕获好几种鱼，其中包括两种{{tr|quest fish}}。
+* {{tr|The Angler}}的[[#{{tr|Shimmered form}}|{{tr|Shimmered form}}]]形态是一个{{维基百科|Kappa (folklore)|河童}}，一种来自日本民间传说的类龟生物。{{tr|Angler}}同时是小孩和钓鱼者，和“河童”确实有所关联。
+* 当{{tr|Sleeping Angler}}生成在{{tr|Ocean}}{{tr|biome}}的{{tr|water}}面上时，会缓慢向地图中心方向漂浮。结合他醒来时否认溺水并感谢{{tr|player}}将他救起的话语判断，可能指的就是他漂在{{tr|water}}面上这件事： 
+** “{{gameText|LegacyDialog.353}}”
+** “{{gameText|LegacyDialog.354}}”
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|
+** {{tr|The Angler}}的{{tr|Accessory}}重复掉落保护调整为更加灵活，且对玩家友好。
+*** 他现在会将重复保护适用于全部 7 件{{tr|accessories}}，包括[[{{tr|Fishing Bobber}}]]，而非此前的仅选择性地将重复保护独立适用于 2 套三件{{tr|accessories}}上。
+*** 如果玩家{{tr|inventory}}中拥有 7 种{{tr|accessories}}的任何几种（无论是其独立状态或其升级状态），{{tr|Angler}}现在会在掉落{{tr|accessory}}时必定提供不重复的{{tr|accessory}}。仅当玩家在{{tr|inventory}}中拥有全部 7 种{{tr|accessory}}时，他才会开始掉落重复的。这总体上也会提高他掉落的{{tr|accessories}}数量。
+*** 这也使得他掉落{{tr|accessories}}的数量在整体上提高。
+** {{tr|Mermaid set}}和{{tr|Fish set}}在优先度顺序上现在高于{{tr|Accessories}}，因为{{tr|Accessories}}会更加常见。}}
+{{history|Desktop 1.4.4|
+** {{tr|Angler}}{{tr|Quests}}现在在[[{{tr|Hardmode}}]]期间提供 2 倍[[{{tr|coin}}]]。
+** {{tr|Angler}}的常见{{tr|Quest}}奖励不再包含[[{{tr|furniture}}]]{{tr|items}}。现在，他有几率在完成{{tr|quests}}时额外提供{{tr|furniture}}掉落。这一几率会随着完成的{{tr|Quests}}数增加而增加。
+** 现在在完成第 25 个{{tr|quest}}时必定获得{{tr|Bottomless Water Bucket}}。
+** {{tr|Bottomless Water Bucket}}现在可在{{tr|pre-Hardmode}}获得。}}
+{{history|Desktop 1.4.0.1|
+** 可能的名称中移除了“Bryce”。
+** 现在{{tr|Angler}}的{{tr|Quest rewards}}提供[[{{tr|informational accessories}}]]的可能性更高。
+*** 此外，除非已经拥有所有{{tr|Informational Accessories}}，否则他所给的{{tr|accessory}}不会和玩家{{tr|inventory}}中已有的重复。
+** 添加了 2 句新话语，告诉玩家已完成任务数量。
+** 修正了一些{{tr|Fishing Quest}}对话文本不一致或不准确的地方。}}
+{{history|Desktop 1.3.4.2|现在正确地出现在[[{{tr|Lifeform Analyzer}}]]上。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** {{tr|Angler}}的任务现在总是给{{tr|gold coins}}。
+** 添加了[[{{tr|Fisherman's Pocket Guide}}]]、[[{{tr|Weather Radio}}]]、[[{{tr|Sextant}}]]和[[{{tr|Golden Bug Net}}]]。
+** 任务现在会告诉你去哪里找任务鱼。
+** [[{{tr|Golden Fishing Rod}}]]现在只需要完成 30 个任务（而非 50）。
+** 一些掉落几率有所改变。}}
+{{history|Desktop 1.2.4.1|
+** 修正了“Wyverntail（{{tr|Wyverntail}}）”被错名为“Whyverntail”的 Bug。
+** 现在使用其他语言时也会显示{{tr|Angler}}的任务。
+** 修正{{tr|Sleeping Angler}}被{{tr|enemies}}攻击时会缓慢在{{tr|tile}}上移动的 Bug。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|在主机版中引入[[{{tr|fishing}}]]，包括{{tr|the Angler}} NPC、钓鱼任务、和其奖励。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Angler}}

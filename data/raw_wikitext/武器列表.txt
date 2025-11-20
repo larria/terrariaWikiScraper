@@ -1,0 +1,37 @@
+{{see also|{{tr|melee weapons}}列表|{{tr|ranged weapons}}列表|{{tr|magic weapons}}列表|{{tr|summon weapons}}列表}}
+
+本页面包含《[[{{tr|Terraria}}]]》中所有可用[[{{tr|weapons}}]]的可排序列表。注意，这里将所有可以造成[[{{tr|damage}}]]的[[{{tr|Unobtainable}}|可获得的]]、非[[{{tr|ammunition}}]]、且非[[{{tr|accessory}}]]的[[{{tr|item}}]]均视为{{tr|weapon}}。能造成伤害的[[{{tr|mounts}}]]和诸如[[{{tr|traps}}]]这样的环境伤害源不包含在内。显示的所有数据都是来源于源代码的基础数据（不考虑[[{{tr|modifiers}}]]、[[{{tr|accessories}}]]、[[{{tr|buffs}}]]、或其他奖励的效果）。
+
+《{{tr|Terraria}}》不同武器的总数量是 {{#cargo_query:tables=Items|fields=count(distinct itemid)|where=unobtainable IS NULL AND type HOLDS "weapon" OR listcat HOLDS "weapon items"|no html}} 种。<!--
+
+-->{{#dplvar:set|_y|{{yes}}|_n|{{no}}|_na|-|_novalue|{{tr|No value}}}}<!--
+-->{{#vardefine:_damagetype_|{{#dplvar:_na}}}}<!--
+-->{{#vardefine:_usetime_|{{#dplvar:_na}}}}
+{{flexstart|css=overflow: auto}}
+{| class="terraria sortable align-center"
+! class="unsortable" | 图像
+! 名称
+! data-sort-type="number" | {{tr|Damage}}
+! [[{{tr|Damage types}}|{{tr|Damage type}}]]
+! data-sort-type="number" | [[{{tr|Knockback}}]]
+! [[{{tr|Critical hit}}|{{tr|Critical chance}}]]
+! data-sort-type="number" | [[{{tr|Use time}}]]
+! data-sort-type="number" | [[{{tr|Rarity}}]]
+! {{auto icon|size=18px|nl=y}}
+! style="font-size:13px;" | 仅限[[{{tr|Hardmode}}]]
+! data-sort-type="number" | [[{{tr|Value}}]]
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=image,name,damage,damagetype,knockback,critical,usetime,rare,autoswing,hardmode,sell,type
+|q?groupBy=name
+|q?orderBy=name
+|q?where=unobtainable IS NULL AND type HOLDS "weapon" OR listcat HOLDS "weapon items"
+|q?limit=1000
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+{{flexend}}
+
+[[Category:{{tr|Weapon items}}| ]]
+
+{{language info|en=List of weapons}}

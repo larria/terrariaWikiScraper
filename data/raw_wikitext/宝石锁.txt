@@ -1,0 +1,46 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| imagealt = <p>[[file:Amethyst Gem Lock.png|link=]] [[file:Topaz Gem Lock.png|link=]] [[file:Sapphire Gem Lock.png|link=]]</p><p>[[file:Emerald Gem Lock.png|link=]] [[file:Ruby Gem Lock.png|link=]] [[file:Diamond Gem Lock.png|link=]] [[file:Amber Gem Lock.png|link=]]</p>
+| type = Furniture / Mechanism
+| rare = {{rare|0}}
+| consumable = true
+| placeable = Yes
+| width = 3
+| height = 3
+| stack = {{iteminfo|3650|stack}}
+| use ={{iteminfo|3650|useTime}}
+| idtile = 440
+| sell = {{iteminfo|3650|sell}}
+| cargo = no
+}}
+[[File:Placed Gem Locks.png|frame|放置的{{tr|Gem Locks}}，开和关的状态。点击图片查看各行的简介。]]
+
+'''{{tr|Gem Lock}}'''是一种特殊的[[{{tr|mechanism}}]]，是作为[[{{tr|Large Gem}}]]的容器或者祭坛的。当相应的{{tr|Large Gem}}放入其中时，{{tr|A Gem Lock}}会发出一个信号，当{{tr|Large Gem}}被移除时会再次发出信号。这使得对于一个简单的装置而言可以只用一个{{tr|mechanism}}来做到只要{{tr|gem}}在锁当中就一直保持某些东西（比如门）打开，因为如果{{tr|gem}}被取出它就会立刻关闭。
+
+{{tr|Gem Locks}}主要用于制作冒险地图，在这种地图内玩家必须完成某些目标才能得到继续进程所必须的宝石奖励。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|showresultid=1|result=LIKE % Gem Lock|expectedrows=7|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 备注 ==
+* {{tr|The Gem Lock}}是可制作的{{tr|mechanism}}中唯一会发射信号同时{{tr|recipe}}中又没有{{tr|wire}}的。
+* 给{{tr|the Gem Lock}}刷[[{{tr|paint}}]]也会影响放置其中的{{tr|gem}}的颜色。
+* {{tr|The Gem Lock}}只能卖{{sc|1}}，尽管其{{tr|ingredients}}的价值要更高。
+
+== 花絮 ==
+* {{tr|The Gem Lock}}是[[{{tr|Official Terraria Forums}}]]用户 Master Geass 的[https://forums.terraria.org/index.php?threads/gem-locks-and-announcement-box.27551/ 建议]。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Gems}}
+{{Master Template Furniture
+| show-other=yes
+}}
+
+{{language info|en=Gem Locks}}

@@ -1,0 +1,33 @@
+{{item infobox
+| type = Mechanism / Furniture
+| width = 1 | height = 1
+| tags = buy / vendor:Mechanic
+| auto = 538
+}}
+{{for|任天堂主机版本的游戏|{{tr|Console version}}}}
+'''{{tr|Switch}}'''是一种起动[[{{tr|mechanism}}]]，可以从[[{{tr|Mechanic}}]]处花费 {{sc|20}} 购买，{{tr|player}}也可以在[[{{tr|Dungeon}}]]中使用[[{{tr|Pickaxe}}]]或[[{{tr|Drill}}]]对与[[{{tr|Chain Lantern}}]]相连的[[{{tr|Switch}}]]进行收集。
+
+{{tr|Switch}}可以放置在[[{{tr|block}}]]的顶部和旁边，或者[[{{tr|Wooden Beam}}]]旁，也可以放置在背景墙上。可以通过右击激活一个{{tr|Switch}}。
+
+虽然名字如此，但{{tr|Switch}}并不像“开启/关闭”的{{tr|mechanism}}那样工作。例如，当{{tr|Switch}}被连接到飞镖机关时，不论它目前是什么状态，右击它总是会触发[[{{tr|Dart Trap}}]]，就像[[{{tr|Pressure Plate}}]]一样。
+
+== 备注 ==
+* 除了不能被放置到平台上，{{tr|Switch}}的操作与[[{{tr|Lever}}]]相同。控制杆也更容易看到，并提供更大的点击目标，而{{tr|Switch}}可能更难以发现和点击，因为只有一个图块的大小（如果{{tr|player}}希望隐藏陷阱机关，这实际上可能是 [[{{tr|PvP}}]] 中的一个好处）。{{tr|Switch}}可以像大多数其他块一样进行喷漆，可以将它们伪装成与周围环境融为一体。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|现在可放置到墙上。}}
+{{history|Desktop 1.2.0.3|修复了{{tr|Switch}}复制 {{tr|bug}}（大概这次是真的）。}}
+{{history|Desktop 1.2.0.2|{{tr|Switch}}复制不再可行。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Switch}}

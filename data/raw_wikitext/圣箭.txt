@@ -1,0 +1,109 @@
+{{item infobox
+| auto = 516
+| idprojectile = 91, 92
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 6 {{eicons|1.3.0.1|invert=y|small=y}}
+| tags = hardmodeonly
+}}
+[[File:Holy Arrow (demo).gif|framed|right|使用中的{{tr|Holy Arrows}}。]]
+
+'''{{tr|Holy Arrows}}'''是一种[[{{tr|Hardmode}}]][[{{tr|arrow}}]]。当{{tr|arrow}}击中[[{{tr|block}}]]或实体时，会从天空向击中点落下两个{{tr|Hallow Star projectiles}}。
+
+{{eicons|1.4.0.1}} {{tr|Hallow Star projectiles}}不能穿透，并造成{{tr|arrow}}{{tr|base damage}}的 1/3。{{tr|arrow}}的{{tr|base damage}}由{{tr|Holy Arrow}}的{{tr|base damage}}（{{iteminfo|Holy Arrow|damage}}）和{{tr|weapon}}的{{tr|base damage}}相加得出。
+
+{{eicons|1.4.0.1|invert=y}} {{tr|Hallow Star projectiles}}能够穿透一次，并造成{{tr|arrow}}{{tr|base damage}}的全额。{{source code ref|v=1.3.5.3|old=y|name=kill|method=Terraria.Projectile.Kill}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Holy Arrow|expectedrows=2}}
+
+== 备注 ==
+* 第一颗{{tr|hallow star}}会在{{tr|arrow projectile}}被摧毁（击中固体[[{{tr|block}}]]或{{tr|an enemy}}）时立刻生成。它会从屏幕顶端以随机角度落向{{tr|arrow}}被摧毁的位置，并能穿过所有{{tr|blocks}}。一旦它到达位置，地形穿透能力就会被取消，当其击中{{tr|block}}或 1 {{eicons|1.4.0.1}} / 2 {{eicons|1.4.0.1|invert=y}} 个{{tr|enemies}}后就会被摧毁。之后，会生成第二颗{{tr|hallow star}}。它的目标位置是第一颗{{tr|hallow star}}被摧毁的地方。<ref name="kill"/>
+** 注意如果{{tr|arrow}}并未被正常摧毁，例如，它离开屏幕并消失，{{tr|hallow stars}}就不会生成。同样地，如果第一颗{{tr|hallow star}}并未正常摧毁，则第二颗{{tr|hallow star}}就不会生成。
+* {{tr|Hallow Star projectiles}}不受[[{{tr|Magic Quiver}}]]的[[{{tr|velocity}}]]{{tr|boost}}影响。
+
+== 小贴士 ==
+* {{tr|hallow star effect}}让{{tr|Holy Arrows}}对 [[{{tr|bosses}}]] 和其他大型{{tr|enemies}}，特别是[[{{tr|Plantera}}]]，极其高效，尤其是配合{{eil|Chlorophyte Shotbow}}。
+* 它配合发射多重{{tr|arrows}}的{{tr|bows}}特别强大，诸如[[{{tr|Tsunami}}]]，因为每一支命中的{{tr|arrow}}都会召唤一对{{tr|stars}}。
+* {{tr|Holy Arrows}}即使在打败了[[{{tr|Plantera}}]]和[[{{tr|Golem}}]]之后也依然有用——它们是击杀{{eil|Martian Saucer}}的良好选择，即使是在[[{{tr|Expert mode}}]]中亦是如此。
+
+=== 优点 ===
+{{tr|Holy Arrows}}相对于其他{{tr|arrows}}有一些优势：
+
+* {{item|Hellfire Arrow}}
+** 作用范围更大（且有穿透效果{{eicons|1.4.0.1|invert=y}}）。
+** 可回收。{{eicons|1.4.0.1|invert=y}}
+* {{item|Jester's Arrow}}：
+** 可回收。{{eicons|1.4.0.1|invert=y}}
+** {{tr|crafts}}数量更高。
+** {{tr|Materials}}在{{tr|Hardmode}}中更容易获得。
+* {{item|Cursed Arrow}}和{{item|Ichor Arrow}}：
+** {{tr|Crafting materials}}得自{{tr|surface enemies}}。
+* 所有其他{{tr|arrows}}
+** {{tr|Stars}}会照亮大片区域，包括经过的{{tr|blocks}}和{{tr|walls}}。
+** 如果正确排列，{{tr|Arrows}}加上{{tr|stars}}能造成 1.67 倍伤害。
+** 可以打到某些接触不到的{{tr|enemies}}。
+
+=== 缺点 ===
+其他{{tr|arrows}}相对于{{tr|Holy Arrows}}有一些优势：
+
+* {{item|Hellfire Arrow}}：
+** 作用范围是一致且可预测的。
+** 可购买而并不要求去刷{{tr|materials}}，也可以在[[{{tr|Pre-hardmode}}]]制作。
+* {{item|Jester's Arrow}}：
+** {{tr|Piercing effects}}可控并可以在任何方向上起作用。
+** 可以在{{tr|Pre-hardmode}}制作。
+* {{item|Cursed Arrow}}：
+** 造成的直接伤害要高 {{#expr:{{iteminfo|Cursed Arrow|damage}}-{{iteminfo|Holy Arrow|damage}}}}。
+** 造成[[{{tr|Cursed Inferno}}]]{{tr|debuff}}，随着时间推移造成额外伤害。
+* {{item|Ichor Arrow}}：
+** 造成的直接伤害要高 {{#expr:{{iteminfo|Ichor Arrow|damage}}-{{iteminfo|Holy Arrow|damage}}}}。
+** 造成[[{{tr|Ichor debuff}}]]，降低目标的防御力。
+* {{item|Luminite Arrow}}：
+** 造成的直接伤害要高 {{#expr:{{iteminfo|Luminite Arrow|damage}}-{{iteminfo|Holy Arrow|damage}}}}。
+** 残像更容易控制。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Hallow Stars damage}}由 50% 降低至 33%。
+** {{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Hallow Stars}}不再能穿透并击中第二个目标。
+** {{tr|Hallow Stars}}现在造成 50% 原始{{tr|damage}}而非 100%。}}
+{{history|Desktop 1.3.1|
+** {{tr|Sprite updated.}}
+** 修复了{{tr|Hallow Star}}的伤害类型为{{tr|magic}}而非{{tr|ranged}}的问题。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 6 提升至 13。
+** {{tr|Crafting recipe}}更改：[[{{tr|Wooden Arrow}}]]×45->200，[[{{tr|Pixie Dust}}]]×6->3。}}
+{{history|Desktop 1.2|
+** {{tr|Crafting}}数量由 35 提升至 45。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|同步 PS4 的 1.0.750.0 更新的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Sprite updated}}，同步{{tr|Desktop}} 1.3.1。
+** 伤害由 6 提升至 13。
+** {{tr|Crafting recipe}}更改：{{tr|Wooden Arrow}}×45->200，{{tr|Pixie Dust}}×6->3。}}
+{{history|Console 1.02|
+** {{tr|Crafting}}数量由 35 提升至 45。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，同步{{tr|Desktop}} 1.2 的更改。}}
+{{history|Mobile 1.3.0.7|
+** 伤害由 6 提升至 13。
+** {{tr|Crafting recipe}}更改：{{tr|Wooden Arrow}}×45->200，{{tr|Pixie Dust}}×6->3。}}
+{{history|Mobile 1.2.6508|
+** {{tr|Crafting}}数量由 35 提升至 45。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，同步{{tr|Desktop}} 1.2 的更改。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Arrows}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Holy Arrow}}

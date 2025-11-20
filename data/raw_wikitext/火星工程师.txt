@@ -1,0 +1,45 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| image = Martian Engineer.gif
+| auto = 386
+| environment = Martian Madness
+| Martian Conduit Plating|8–20|12.5%
+| Martian Uniform Helmet|1|0.5%
+| Martian Uniform Torso|1|0.5%
+| Martian Uniform Pants|1|0.5%
+| Laser Drill|1|0.13%
+| Anti-Gravity Hook|1|0.13%
+| Charged Blaster Cannon|1|0.13%
+| hardmode = yes
+}}
+
+'''{{tr|Martian Engineer}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|enemy}}]]，出现在[[{{tr|Martian Madness}}]][[{{tr|event}}]]中。{{tr|Martian Engineer}}有在周围建造[[{{tr|Tesla Turret}}]]的能力。
+
+== 备注 ==
+* {{tr|Tesla Turrets}}只会在{{tr|Martian Engineer}}周围 5×5 格的矩形区域内生成。它们要求有一块实心{{tr|tile}}，其上有 3×4 格开阔空间并且没有[[{{tr|lava}}]]。{{source code ref|v=1.4.4.9|name=ai|method=Terraria.NPC.AI_003_Fighters}}
+* {{tr|A Martian Engineer}}只会在当前存活的{{tr|Martian Engineer}}平均拥有{{tr|Tesla Turrets}}不到四座时才会放下新的{{tr|Tesla Turrets}}。<ref name="ai"/>例如，如果目前有两个{{tr|Martian Engineers}}存活，那么同时最多只会生成八座{{tr|Tesla Turrets}}。这一极限并不会平分给各个{{tr|Martian Engineers}}，也就是说，有可能其中一个生成了七座{{tr|Tesla Turrets}}而另一个只有一座。
+* 建造完一座{{tr|Tesla Turret}}后，{{tr|the Martian Engineer}}会先等待 3 秒，然后再建造下一座。这一{{tr|cooldown}}会在{{tr|Martian Engineer}}受伤时重置为 1 秒。处于[[{{tr|Confused}}]]状态时，它无法建造{{tr|Tesla Turret}}；当这一{{tr|debuff}}结束时，冷却时间会重置为 1.5 秒。<ref name="ai"/>
+
+== 小贴士 ==
+* 在{{tr|event}}过程中，如果对{{tr|Martian Engineers}}处理不当，可能会出现大量{{tr|Tesla Turrets}}。要避免被它们的攻击淹没，玩家应当集中精力优先除掉{{tr|Martian Engineers}}。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Laser Drill}}]]、[[{{tr|Anti-Gravity Hook}}]]、和[[{{tr|Charged Blaster Cannon}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Martian Madness Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Martian Engineer}}

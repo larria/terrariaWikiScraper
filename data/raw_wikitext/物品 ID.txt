@@ -1,0 +1,111 @@
+<div class="ajaxHide">
+__FORCETOC__
+{{main|数据 ID}}
+{{see also|心动版独有物品 ID}}
+
+此页面包含有[[《{{tr|Terraria}}》]]游戏代码内内部用于引用[[{{tr|items}}]]的'''物品 ID''' 的可排序列表。此信息对于研究性目的或开发诸如 [[Mod]] 和[[地图查看器]]之类的第三方软件会很有用。
+
+== ID 列表 ==
+</div>
+<table class="terraria lined sortable">
+<tr><th>ID</th><th>名称</th><th>内部名称</th></tr><!-- // translate this line for table header -->
+{{#invoke:ItemIDList|go|lang={{lang}}
+<!-- For translators: Translate the following three parameter values. -->
+| no_official_name = {{na}} {{note|small=y|paren=y|无官方名称}}
+| no_internal_name = 无
+| not_implemented = {{note|small=y|paren=y|{{tr|unobtainable}}/未实现}}
+
+| links = {{#af_object:
+<!-- These are link adjustments where necessary. For translators: Do not translate these. -->
+  p115 = Shadow Orb (item)
+| p669 = Fish (item)
+| p865 = Princess Dress (Clothier)
+| p1435 = The Destroyer (item)
+| p1475 = Darkness (item)
+| p2338 = Seaweed (junk)
+| p2436 = Blue Jellyfish (bait)
+| p2437 = Green Jellyfish (bait)
+| p2438 = Pink Jellyfish (bait)
+| p2771 = Brain Scrambler (item)
+| p3062 = Crimson Heart (item)
+| p4633 = Oasis (item)
+| p4725 = Graveyard (item)
+}}
+}}
+</table>
+<div class="ajaxHide">
+
+== 独有 ID 列表 ==
+这些物品是{{3ds version}}或{{old-gen console version}}所独有的。
+{| class="terraria sortable" style="text-align:center"
+! data-sort-type="number" | ID !! 名称 !! class="unsortable" | 图像
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName=page,itemid,name,imagefile
+|q?where=
+<!-- base condition for exclusive items: -->
+(itemid IS NOT NULL AND (internalname IS NULL or internalname="None") AND unobtainable IS NULL)
+<!-- special cases: -->
+AND name != "Ruler" <!-- has a separate infobox where internalname=None -->
+|q?groupBy=itemid,name
+|q?orderBy=itemid
+|q?limit=1000
+|template=:{{PAGENAME}}/row
+}}
+|}
+
+== 历史 ==
+{{history|Desktop 1.4.4.5|新增 ID 5453–5455。}}
+{{history|Desktop 1.4.4|新增 ID 5125–5452。}}
+{{history|Desktop 1.4.3|新增 ID 5088–5124。}}
+{{history|Desktop 1.4.1|新增 ID 5045–5087。}}
+{{history|Desktop 1.4.0.5|新增 ID 5043–5044。}}
+{{history|Desktop 1.4.0.1|新增 ID 3930–5042。}}
+{{history|Desktop 1.3.5|新增 ID 3884–3929。}}
+{{history|Desktop 1.3.4|新增 ID 3797–3883。}}
+{{history|Desktop 1.3.3|新增 ID 3770–3796。}}
+{{history|Desktop 1.3.2|
+** 新增 ID 3730–3769。
+** 移除了[[{{tr|Phasesabers}}]]所使用的负数 ID。它们现在有各自的正 ID 了。}}
+{{history|Desktop 1.3.1|新增 {{tr|ID}} 3602–3729。}}
+{{history|Desktop 1.3.0.5|新增 {{tr|ID}} 3601。}}
+{{history|Desktop 1.3.0.1|
+** 新增 {{tr|IDs}} 2749–3600。
+** 移除{{tr|Copper/Silver/Gold/Tin/Lead/Tungsten/Platinum}}的{{tr|tools and weapons}}所使用的负数 ID。它们现在拥有各自的正数 {{tr|IDs}} 了。}}
+{{history|Desktop 1.2.4.1|新增 {{tr|IDs}} 2743–2748。}}
+{{history|Desktop 1.2.4|
+** 新增 {{tr|IDs}} 2289–2742。
+** 更改 ID 673：现在由[[{{tr|Boreal Wood Work Bench}}]]使用而非[[{{tr|Icemourne}}]]。
+** 更改 ID 677：现在由[[{{tr|Boreal Wood Table}}]]使用而非[[{{tr|Scythe}}]]。
+** 更改 ID 858：现在由[[{{tr|Boreal Wood Sofa}}]]使用而非（实验性地）[[{{tr|Blizzard in a Bottle}}]]。}}
+{{history|Desktop 1.2.3|新增 {{tr|IDs}} 1966–2288。}}
+{{history|Desktop 1.2.2|
+** 新增 {{tr|IDs}} 1867–1965。
+** 更改 ID 678： 现在由[[{{tr|Red Potion}}]]使用而非[[{{tr|Soul Scythe}}]]。}}
+{{history|Desktop 1.2.1.2|新增 {{tr|IDs}} 1858–1866。}}
+{{history|Desktop 1.2.1|新增 {{tr|IDs}} 1725–1857。}}
+{{history|Desktop 1.2.0.3|新增 {{tr|IDs}} 1615–1724。}}
+{{history|Desktop 1.2.0.2|新增 {{tr|ID}} 1614。}}
+{{history|Desktop 1.2|
+** 新增 {{tr|IDs}} 604–1613。
+** 新增{{tr|Tin/Lead/Tungsten/Platinum}}的{{tr|Pickaxes, Broadswords, Shortswords, Axes, Hammers, and Bows}}所使用的负数 {{tr|ID}}。}}
+{{history|Desktop 1.1.2|新增 ID 603。}}
+{{history|Desktop 1.1.1|新增 {{tr|IDs}} 586–602。}}
+{{history|Desktop 1.1|
+** 新增 {{tr|IDs}} 364–585。
+** 新增{{tr|Phasesabers}}所使用的负数 {{tr|ID}}。}}
+{{history|Desktop 1.0.6.1|新增 {{tr|ID}} 363。}}
+{{history|Desktop 1.0.6|新增 {{tr|IDs}} 327–362。}}
+{{history|Desktop 1.0.5|
+** 新增 {{tr|IDs}} 265–326。
+** 重新添加了 ID 126，现在由[[{{tr|Bottled Water}}]]使用。}}
+{{history|Desktop 1.0.4|新增 {{tr|IDs}} 239–264。}}
+{{history|Desktop 1.0.3|新增 {{tr|IDs}} 236–238。}}
+{{history|Desktop 1.0.2|新增 {{tr|ID}} 235。}}
+{{history|Desktop 1.0.1|移除 {{tr|ID}} 126 ([[{{tr|Zapinator}}]])。}}
+{{history|Desktop-Release|引入 {{tr|IDs}} 1–234。{{tr|Copper/Silver/Gold}}的{{tr|Pickaxes, Broadswords, Shortswords, Axes, Hammers, and Bows}}使用负数 {{tr|IDs}}。}}
+</div>
+{{category|Data IDs}}
+{{category|Items| }}
+
+{{language info|en=Item IDs}}

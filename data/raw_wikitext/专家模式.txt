@@ -1,0 +1,153 @@
+{{exclusive|1.3.0.1}}
+{{expert mode only}}
+{{flavor text|{{gameText|UI.ExpertDescriptionFlavor}}|image=Expert mode icon.png|size=20px}}
+{{dablink|勿与击败{{tr|Wall of Flesh}}所触发的[[{{tr|Hardmode}}]]或另一个在世界生成时的难度选项[[{{tr|master mode}}]]相混淆。}}
+[[File:Create world prompt expert mobile.png|300px|thumb|在{{mobile}} [[{{tr|Mobile 1.3.0.7}}|{{tr|1.3.0.7}}]]上选择{{tr|Expert Mode}}，会显示一只[[{{tr|Corrupt Bunny}}]]而非{{tr|regular Bunny}}，以此来提现难度的提高。]]
+
+'''{{tr|Expert Mode}}'''是在[[{{tr|world}}]]创建过程中可以选择的[[{{tr|Difficulty}}#{{tr|World modes}}|{{tr|difficulty option}}]]之一。它会大大提升游戏的难度，与此同时掉落物的数量和质量以及获得稀有物品的几率都会有所提升。进而，它还提供了某些[[{{tr|Expert}}独有内容|独有内容]]。{{tr|Expert Mode}}在{{tr|Expert Mode world}}创建之时就已开始，之后玩家就无法再更改。在[[{{tr|Journey Mode}}]]中，可以用[[{{tr|Enemy Difficulty Slider}}]]来开关{{tr|Expert Mode}}。
+
+所有{{tr|Expert Mode}}更改也适用于[[{{tr|Master Mode}}]]，这包括更高的掉落几率、修改过的 [[{{tr|AI}}]]、等等。所有{{tr|Expert}}独有内容在{{tr|Master Mode}}下可用。
+
+==  常规 ==
+* 玩家的普通[[{{tr|respawn}}]]{{tr|time}}由 10 {{tr|seconds}}提升至 15 {{tr|seconds}}。在[[{{tr|multiplayer}}]]下，如果{{tr|death}}发生时距离玩家的位置 250 格以内存在 [[{{tr|boss}}]]，{{tr|respawn time}}由 20 {{tr|seconds}}提升至 30 {{tr|seconds}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetRespawnTime}}
+* [[{{tr|Slime Rain}}]]{{tr|event}}无需满足其通常条件也可能发生，期间{{tr|spawn rate}}提升15%，并且[[{{tr|Green Slime}}]]或[[{{tr|Purple Slime}}]]的生成几率提高。
+* [[{{tr|Traveling Merchant}}]]有50%几率额外多售卖一件物品。
+* [[{{tr|Softcore}}|{{tr|Classic}}（{{tr|Softcore}}）]]玩家死亡时掉落 75% {{tr|coins}}而非 50%。
+
+== 敌怪 ==
+=== 通用更改 ===
+* 大多数{{tr|enemies}}的生命值翻倍，造成的伤害大致上翻倍、受到的[[{{tr|knockback}}]]降低 10%。
+** 除了 [[{{tr|bosses}}]] 及其{{tr|minions}}外的较弱{{tr|enemies}}（例如[[{{tr|pre-Hardmode}}]]的{{tr|enemies}}）在进入[[{{tr|Hardmode}}]]时可能会得到对以上属性的额外加成，在打败[[{{tr|Plantera}}]]后可能会再次加成。
+** 特殊{{tr|enemies}}（比如 {{tr|bosses}}）的属性有额外加成。
+* 敌怪和 {{tr|Boss}} 拥有新的 [[AI]]，其攻击模式将更难应付。
+* 敌怪可以在 [[{{tr|NPC}}]] 附近生成，不过依然不会在放置的[[{{tr|background walls}}]]前生成。
+* 敌怪掉落物品数量提升，某些物品的掉落率也有所提升（通常在原几率基础上提升50%到100%）。
+* 某些{{tr|enemies}}会造成额外的[[{{tr|debuff}}]]，或有更高几率造成原本就能造成的{{tr|debuff}}。
+* 在[[{{tr|Pumpkin Moon}}]]/[[{{tr|Frost Moon}}]]期间击杀{{tr|enemies}}对{{tr|event}}进程的推动速度为{{tr|Classic Mode}}中的两倍。
+
+=== {{tr|Coin}}拾取 ===
+{{main|{{tr|Expert Mode}}下的{{tr|Coin}}拾取}}
+* 大多数{{tr|enemies}}能够拾取[[{{tr|coins}}]]。它们这样做时会发出音效（{{sound||Coin 0.wav}}{{sound||Coin 1.wav}}{{sound||Coin 2.wav}}{{sound||Coin 3.wav}}{{sound||Coin 4.wav}}）。持有{{tr|coin}}的{{tr|enemies}}会根据它们所拥有的最高级的{{tr|coin}}来发出对应颜色的闪烁效果。
+
+=== 新的{{tr|enemy attacks}} ===
+* [[{{tr|Bat}}]]和[[{{tr|Duke Fishron}}]]有可能造成[[{{tr|Feral Bite}}]]{{tr|Debuff}}。
+* 有些[[{{tr|Zombie}}]]会手持[[{{tr|Zombie Arm}}]]，这使得它们拥有更大攻击范围和更高伤害。
+* [[{{tr|Spiked Slime}}]]最多可以同时往周围小范围内射出 6 个尖刺。
+* 有些[[{{tr|Skeleton}}]]会投掷[[{{tr|bone}}]]。
+* [[{{tr|Lava Slime}}]]死后会留下一格[[{{tr|lava}}]]。
+* [[{{tr|Jellyfish}}]]具备了新的电击攻击：一边放电一边直线移动且不受伤害。用挥舞的[[{{tr|melee weapon}}]]、[[{{tr|whip}}]]、或[[{{tr|tool}}]]击中它们会对玩家造成伤害。
+* [[{{tr|Black Recluse}}]]和[[{{tr|Jungle Creeper}}]]额外具备喷吐攻击技能，让玩家短时间内无法移动。
+* [[{{tr|Granite Elemental}}]]可以进入防御模式来防御攻击，就像[[{{tr|Granite Golem}}]]那样，但仅在其生命值低于 50% 时才会这么做。
+
+=== Boss ===
+* [[{{tr|Bosses}}]] 在{{tr|Expert mode}}中有更多的生命值。他们的生命值在[[{{tr|Multiplayer}}]]中会进一步增强，每名玩家所带来的生命值增加量变得更高。
+** 每个 {{tr|boss}} 都有其自己的''增强系数''，这是一个大于 1 的数值。例如，[[{{tr|Skeletron}}]]的增强系数是 2.0 而[[{{tr|Plantera}}]]的增强系数是 1.4。
+** 在{{tr|single player}}中，{{tr|Expert boss health}}遵循以下公式：<code>{{tr|Expert Mode Health}} = {{tr|Classic Mode Health}} × 增强系数</code>
+** 在{{tr|multiplayer}}中，{{tr|Expert bosses}} 会基于玩家数量进一步提升其{{tr|health}}：<code>{{tr|Expert Mode health}} = {{tr|Classic Mode health}} × 增强系数 × 多人模式系数</code>
+*** ''多人模式系数''会随着每名玩家而逐渐增加：<code>多人模式系数 = 1 + 生命值增加量[2] + 生命值增加量[3] + ...</code>
+*** 每名玩家的基础生命值增加量是 35%。即，<code>生命值增加量[2] = 0.35</code>。
+*** 后继每名玩家都会比上一个带来更多生命值增加量：<code>生命值增加量[n+1] = 生命值增加量[n] + (1 - 生命值增加量[n]) ÷ 3</code>
+*** 如果有十名或更多玩家，则按照以下公式对''多人模式系数''进行修正：<code>多人模式系数 = (多人模式系数 × 2 + 8) ÷ 3</code>
+*** ''多人模式系数''不能超过 1,000。实际上永远无法达到这个上限，因为这需要有 1,498 名玩家，而{{tr|Terraria servers}}内不能操作 255 名玩家。
+*** 多人模式系数通过数学公式可表示为 <math>f(n) = n - \frac{39}{20} + \frac{39}{20} \left(\frac 2 3\right)^{n - 1},\ \text{多人模式系数} = \min\left\{f(n), \frac{f(n) \cdot 2 + 8} 3, 1000\right\}</math>
+** {{tr|Boss}} 生命值是在 {{tr|boss}} 生成时决定的。如果在 {{tr|boss}} 已经生成后有玩家加入，{{tr|boss}} 的生命值并不会随着新玩家进入而更新。
+* 大多数 Boss 拥有新的攻击或移动方式，这让它们更加困难。例如，[[{{tr|Duke Fishron}}]]，有第三阶段了。
+* 打败 {{tr|Boss}} 时会得到此专属于此 {{tr|boss}} 的{{tr|Expert Mode}}独有的[[{{tr|Treasure Bag}}]]（[[{{tr|Lunatic Cultist}}]]、[[{{tr|Dark Mage}}]]、和[[{{tr|Ogre}}]]除外）。{{tr|Treasure Bag}}内有更多此 {{tr|Boss}} 在{{tr|classic mode}}下的常规掉落物品及一件独特的[[#{{tr|Expert}}独有物品|{{tr|Expert Mode}}独有物品]]。这些物品全部可以在非{{tr|Expert Mode}}世界中使用，除了[[{{tr|Demon Heart}}]]。[[{{tr|Hardmode Bosses}}]] 的{{tr|Treasure Bags}}额外有 6.25% 几率包含随机一套[[{{tr|developer items}}]]（[[{{tr|Queen Slime}}]]除外）。{{tr|Treasure Bags}}在任何{{tr|difficulty}}下都可以打开。
+** 在{{tr|multiplayer}}中，所有对 {{tr|boss}} 造成了伤害的玩家都会得到{{tr|Treasure Bag}}。
+
+== 物品 ==
+* {{tr|Enemies}}会掉落 2.5 倍量的[[{{tr|coins}}]]。
+* [[{{tr|Pots}}]]被砸碎时会掉落更多[[{{tr|items}}]]，并有更高几率得到稀有{{tr|items}}。
+* [[{{tr|Fishing}}]]任务[[{{tr|Angler}}#任务奖励|奖励]]包含更多{{tr|coins}}，并有更高几率得到更好的战利品。
+* 放置的[[敌怪旗]]会提供更强力的{{tr|Buff}}。
+* [[{{tr|Hardmode Dungeon}}|{{tr|Hardmode}}、{{tr|Plantera}}后的{{tr|Dungeon}}]]{{tr|enemies}}有着强化过的掉落表，可以一次掉落两件物品。
+* [[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]{{tr|mini-bosses}} 会在第 10 波就开始有几率掉落{{tr|trophies}}。
+
+== 玩家 ==
+* 没有[[{{tr|Well Fed}}]][[{{tr|Buff}}]]时[[{{tr|Health regeneration}}]]速度减半（若有[[{{tr|Shiny Stone}}]]则只减四分之一）。
+* [[{{tr|Vampire Knives}}]]与[[{{tr|Spectre armor}}]]的治疗效果略微降低。
+* [[防御]]属性更加有效，比{{tr|Classic Mode}}效率高 50%。<ref>强化后的防御属性实际效果依然弱于{{tr|Classic Mode}}。因为敌怪的伤害是大致乘以 2 的，与此同时防御减伤只乘以 1.5。这导致的结果是，在同样的防御属性值下玩家要承受 2 倍以上的实际伤害。举个例子，假设玩家穿齐全套近战[[{{tr|Adamantite armor}}]]（50 点防御）同时没有其他额外防御加成，这种情况下被[[{{tr|Giant Bat}}]]（{{tr|Classic Mode}}下其伤害为 45）攻击。在{{tr|Classic Mode}}中，将减免掉 45 点伤害中的 25 点（50×50%），实际承受 20 点伤害。在专家模式中，将减免 90 点（45×2）伤害中的 38 点（50×75%），实际承受 52 点伤害。</ref>
+* 在[[{{tr|Snow Biome}}]]中接触到[[{{tr|water}}]]或[[{{tr|shimmer}}]]时，玩家会受到[[{{tr|Chilled}}]][[{{tr|Debuff}}]]，此{{tr|Debuff}}在{{tr|liquid}}中时会全程保持，离开{{tr|liquid}}后再持续 5 秒之后消失。
+* 以下[[{{tr|debuffs}}]]在玩家身上持续时间翻倍：{{transclude|Debuffs|section=expert_doubled|nobox=y}}
+* 使用专家独有物品[[{{tr|Demon Heart}}]]可以获得第六个[[{{tr|accessory}}]]栏。这个栏位是永久性的，但仅当玩家处于专家模式或[[{{tr|Master Mode}}]]世界中时才激活。
+
+== 专家独有物品 ==
+{{see also|专家独有内容}}
+
+{{tr|Expert Mode}}独有物品通过打开 [[{{tr|Boss}}]] 掉落的[[{{tr|Treasure Bag}}]]得到，一般拥有 {{rare|rainbow|cate=no}} [[{{tr|rarity}}]]。这些物品只能从{{tr|Expert Mode}}的世界中得到，但它们在{{tr|Classic}}世界中也依然可以正常使用，除了[[{{tr|Demon Heart}}]]。
+{{options/set|item|icons=no}}
+{| class="terraria lined"
+! {{tr|Boss}} !! {{tr|Items}} !! 用途
+|-
+| [[{{tr|King Slime}}]] || {{item|Royal Gel}} || 大多数[[{{tr|slimes}}]]会变得友好，不会对玩家造成伤害。
+|-
+| [[{{tr|Eye of Cthulhu}}]] || {{item|Shield of Cthulhu}} || 双击{{key|left}}或{{key|right}}键进行[[{{tr|dash}}]]{{tr|attack}}，会造成 30 伤害，并且在击中{{tr|enemies}}时进入短暂的[[{{tr|invincibility frame}}|无敌]]。
+|-
+| [[{{tr|Eater of Worlds}}]] || {{item|Worm Scarf}} || 所受的所有伤害减少 17%。
+|-
+| [[{{tr|Brain of Cthulhu}}]] || {{item|Brain of Confusion}} || 被击中后有几率对附近的{{tr|enemies}}施加[[{{tr|Confused}}]]，有 {{chance|1/6}} 几率[[{{tr|dodge}}]]到来的伤害，如果成功，会使[[{{tr|critical strike chance}}]]和[[{{tr|summon damage}}]]提高 10%，持续 4 {{tr|seconds}}。
+|-
+| [[{{tr|Queen Bee}}]] || {{item|Hive Pack}} || 有 {{chance|1/2}} 几率将友方{{tr|bee}}替换为更大、更有伤害力的版本，以此来提高其能力强度。
+|-
+| [[{{tr|Skeletron}}]] || {{item|Bone Glove}} || 玩家攻击时投掷会反弹的{{tr|crossbone}}，每个能造成 25 伤害。
+|-
+| [[{{tr|Deerclops}}]] || {{item|Bone Helm}} || 召唤{{tr|homing}}的{{tr|Shadow Hand projectiles}}来伤害附近{{tr|enemies}}，每个能造成 18 点{{tr|damage}}。
+|-
+| [[{{tr|Wall of Flesh}}]] || {{item|Demon Heart}} || [[{{tr|accessory}}]]栏个数永久性地增加一个。
+只能使用一次。仅在{{tr|Expert mode}}和[[{{tr|Master Mode}}]]中可使用和生效。
+|-
+| [[{{tr|Queen Slime}}]] || {{item|Volatile Gelatin}} || 向附近的{{tr|enemy}}发射会弹跳的{{tr|Volatile Gelatin}}球，每个能造成 65 伤害。
+|-
+| [[{{tr|The Twins}}]] || {{item|Mechanical Wheel Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[{{tr|The Destroyer}}]] || {{item|Mechanical Wagon Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[{{tr|Skeletron Prime}}]] || {{item|Mechanical Battery Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[{{tr|Plantera}}]] || {{item|Spore Sac}} || 召唤悬浮在玩家周围的{{tr|spore}}，{{tr|spore}}会飘向附近的{{tr|enemies}}然后爆炸，造成 70 {{tr|damage}}并造成持续 5–10 {{tr|seconds}}的[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。
+|-
+| [[{{tr|Golem}}]] || {{item|Shiny Stone}} || 不移动时，[[{{tr|health regeneration}}]]会翻番提升，由每秒 10 生命值提升至每秒 40 生命值。
+|-
+| [[{{tr|Empress of Light}}]] || {{item|Soaring Insignia}} || 给予无限{{tr|flight time}}，同时提高{{tr|flight speed}}、{{tr|movement speed}}、加速度、和跳跃机动性。
+|-
+| [[{{tr|Duke Fishron}}]] || {{item|Shrimpy Truffle}} || 召唤具有{{tr|infinite flight time}}[[{{tr|Mounts}}|{{tr|mount}}]]，并且在浸没于[[{{tr|liquid}}]]中、下{{tr|rain}}时、或骑手{{tr|health}}低于一半时获得显著的{{tr|movement speed}}加成。
+|-
+| [[{{tr|Mourning Wood}}]] || {{item|Witch's Broom}} || 召唤具有{{tr|infinite flight time}}并能悬停的[[{{tr|Mounts}}|{{tr|mount}}]]。
+|-
+| rowspan=3 | [[{{tr|Moon Lord}}]] || style="border-bottom:0" | {{item|Gravity Globe}} || style="border-bottom:0" | 让持有者可以反转[[重力]]，并可以在半空中切换。
+|-
+| style="border-bottom:0" | {{item|Suspicious Looking Tentacle}} || style="border-bottom:0" | 召唤能探测附近{{tr|enemies, treasure, and ores}}的[[{{tr|Light Pet}}|{{tr|light pet}}]]。
+|-
+| {{item|Celestial Starboard}} || 可以悬停并快速向上爬升的[[{{tr|wings}}|{{tr|wing}}]]。在所有{{tr|wing}}中机动性最强。
+|}<!--
+-->{{options/reset|item}}
+
+== 花絮 ==
+* 专家模式的描述文本（英文原文）：“{{gameText|UI.ExpertDescriptionFlavor|lang=en}}”出自1984年的美国动作冒险电影{{维基百科|b=y|Indiana Jones and the Temple of Doom|t=夺宝奇兵2：魔宫传奇}}。
+
+== 历史 ==
+{{history|Desktop 1.4.3|添加了[[{{tr|Bone Helm}}]]、[[{{tr|Deerclops}}]]的独有{{tr|Expert Mode}}{{tr|accessory}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Soaring Insignia}}]]、[[{{tr|Empress of Light}}]]的独有{{tr|expert mode accessory}}。
+** 添加了[[{{tr|Volatile Gelatin}}]]、[[{{tr|Queen Slime}}]]的独有{{tr|expert mode accessory}}。
+** 添加了[[{{tr|Witch's Broom}}]]、[[{{tr|Mourning Wood}}]]的独有{{tr|expert mode mount}}。
+** 添加了[[{{tr|Celestial Starboard}}]]、[[{{tr|Moon Lord}}]]的第三个独有{{tr|expert mode item}}。
+** 在{{tr|Expert Mode}}中捡走{{tr|coins}}的{{tr|enemies}}现在在其消失时会保存到某个位置。
+** [[{{tr|0x33's Aviators}}]]不再掉落自[[{{tr|Hardcore}}]]{{tr|characters}}在{{tr|Expert mode}}中打开的{{tr|Treasure Bags}}，而是改为在{{tr|Master mode}}下由{{tr|Eye of Cthulhu}}正常掉落。}}
+{{history|Desktop 1.3.0.4|
+** 修复了{{tr|Expert mode}}中{{tr|enemy}}发射的可破坏{{tr|projectiles}}缩放比例的问题。
+** 修复{{tr|Expert mode}}中{{tr|enemies}}捡起{{tr|coins}}时会产生“空气{{tr|items}}”的问题。}}
+{{history|Desktop 1.3.0.1|引入。{{tr|Bosses}} 现在会掉落特殊的{{tr|Expert mode}}独有物品。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+[[Category:专家模式内容|*]]
+
+{{language info|en=Expert Mode}}

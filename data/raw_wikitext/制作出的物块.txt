@@ -1,0 +1,42 @@
+<!--
+-->{{#vardefine:craftbl_where|(type__full LIKE "%block%" OR type__full LIKE "%brick%") AND name NOT LIKE "%Platform" AND listcat HOLDS "craftable items"}}<!--
+-->{{#vardefine:craftbl_where0|(ings NOT LIKE "%Wall¦%" OR result IN ("Inactive Stone Block")) AND ings NOT LIKE "%Fence¦%" AND ings NOT LIKE "%Platform¦%"}}<!--
+-->{{#vardefine:craftbl_list|{{#lstuniq:<!--
+	// default delimiter of cargo query result list varies by language, so |delimiter=, is required for non-English languages.
+	-->{{#lstmap:{{#cargo_query:tables=Items|limit=3000|fields=name|where={{#var:craftbl_where}}|no html|delimiter=,}}|,|@|<esc><!-- 
+		-->{{#if:{{recipes/exist|where={{#var:craftbl_where0}} AND result="@"}}|@}}<!-- exclude blocks that are only crafted from a wall or platform
+	--></esc>|,}}<!--
+-->|,|,}}}}<!--
+
+-->
+<div class="ajaxHide">
+{{main|{{tr|Blocks}}}}
+此页面列出了所有可以制作的{{tr|blocks}}。不包括仅由一种[[{{tr|platform}}]]或[[{{tr|wall}}]]制作的{{tr|block}}。
+
+一共有 {{#cargo_query:tables=Items|limit=3000|fields=count(distinct name)|where={{#var:craftbl_where}}}} 种可制作的{{tr|block}}。
+</div>
+{| class="terraria lined sortable" width="100%"
+! colspan=2 | {{tr|Block}}
+! 外观
+! {{tr|Crafting ingredients}}
+! {{tr|Crafting station}}
+|-
+{{#lstmap:{{#var:craftbl_list}}|,|@|<esc>
+|-
+| {{item|@|mode=table}}
+| align=center | {{#cargo_query:tables=Items|fields=imageplaced|where=name="@"|more results text=|default=}}
+| {{recipes/extract|where={{#var:craftbl_where0}} AND result="@"|mode=ingredients}}
+| {{recipes/extract|where={{#var:craftbl_where0}} AND result="@"|mode=station}}
+</esc>|}}
+|}
+
+<div class="ajaxHide">
+{{Master Template Tiles
+| show-main = yes
+| show-blocks = yes
+}}
+
+[[Category:{{tr|Block}}{{tr|items}}|*]]
+
+{{language info|en=Crafted blocks}}
+</div>

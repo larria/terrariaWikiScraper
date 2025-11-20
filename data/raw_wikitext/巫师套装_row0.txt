@@ -1,0 +1,17 @@
+<includeonly>
+|-
+| align=left {{item|mode=table|{{{name|}}}|id={{{itemid|}}}}}
+| [[File:{{{name|}}} (equipped).png|link=]] [[File:{{{name|}}} (equipped) female.png|link=]]
+| {{tr|{{ucfirst:{{{bodyslot|}}}}}}}
+| {{#or:{{{defense|}}}|0}}
+| align=left | {{gameText|ItemTooltip.{{{internalname|}}}}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{#or:{{{buy|}}}|{{na|-}}}}
+| align=right | {{{sell|}}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|{{l10n|formatting_subpage|type_row}}}}
+
+{{language info|en=Wizard set/row0}}
+</noinclude>

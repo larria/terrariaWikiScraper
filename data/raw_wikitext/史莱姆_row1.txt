@@ -1,0 +1,15 @@
+<includeonly><!--
+--> align=left | <span style="display:none;">{{#var:ni:ext:sortkey}}</span><!--
+-->{{item|{{#var:ni:name}}|image={{#var:ni:ext:image}}|note={{#if:{{#var:ni:namesub}}|({{tr|{{#var:ni:namesub}}}})}}|id={{#var:ni:npcid}}|type=npc|nolink={{#var:ni:ext:nolink}}}}<!--
+--> || style="white-space: nowrap;" | {{#var:ni:lifemax}}<!--
+--> || style="white-space: nowrap;" | {{#var:ni:damage}}<!--
+--> || style="white-space: nowrap;" | {{#var:ni:defense}}<!--
+--> || class="money" style="white-space: nowrap;" | {{#var:ni:money}}<!--
+--> || {{#if:{{#var:ni:banner}}|{{item|mode=image|{{#var:ni:banner}}}}|{{na}}}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Slimes/row1}}
+</noinclude>

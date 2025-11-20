@@ -1,0 +1,49 @@
+{{expert mode only}}
+{{exclusive|Expert Mode}}
+{{item infobox
+| debuff = Poisoned / {{duration|rawseconds=5–10}} / 100%
+| auto = 3336
+| imageequippedalt = <!-- Hiding the default equipped image. The Spore Sac doesn't have an actual visual appearance. -->
+| idprojectile = 567, 568, 569, 570, 571
+| tags = Treasure Bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Spore Sac (demo).gif|framed|使用{{tr|Spore Sac}}攻击[[{{tr|Mimic}}]]和[[{{tr|Target Dummy}}]]。注意{{tr|Spore Gas}}可以多次伤害{{tr|enemies}}并造成{{tr|the Poisoned debuff}}。]]
+
+'''{{tr|Spore Sac}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|accessory}}]]，它总是掉落自[[{{tr|Expert Mode}}]]下[[{{tr|Plantera}}]]的[[{{tr|Treasure Bag}}#{{tr|Plantera}}|{{tr|Treasure Bag}}]]。装备时，它会在玩家身边持续生成多个静止不动的漂浮{{tr|Spore Traps}}，缓慢地追踪 15 格内的{{tr|enemy}}。{{tr|Spore Traps}}可以穿透[[{{tr|blocks}}]]并在接触目标时变为{{tr|Spore Gas}}，造成 70 无职业{{tr|damage}}并施加 5–10 秒的[[{{tr|Poisoned}}]][[{{tr|Debuffs}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.SporeSac}}每个{{tr|Spore Trap}}在消失前最多可存在 20 秒。
+
+{{tr|Spore Traps}}只能在{{tr|blocks}}附近或者{{tr|background}}[[{{tr|walls}}]]上生成，最远距离{{tr|player}} 25 格。当无{{tr|background walls}}以供其生成时，{{tr|Spore Traps}}最多可以在距离{{tr|blocks}}约 3 格远的范围内生成。
+
+== 备注 ==
+* {{tr|Spore Sac}}每秒平均会生成 3 个{{tr|Spore Trap}}。
+* 当攻击一个固定不动且无{{tr|defense}}的目标时，{{tr|Spore Sac}}可造成 630 {{DPS}}，{{tr|Poisoned}}{{tr|debuff}}还有 6 额外{{DPS}}。
+* {{tr|Spore Gas}}击中时会造成 10 {{tr|tick}}{{tick}}的[[{{tr|Global Invincibility frame}}]]。
+* {{tr|Spores}}不会主动追踪可破坏的{{tr|enemy projectiles}}以及[[{{tr|critters}}]]。
+* 同时最多可存在 10 个{{tr|spores}}。
+* {{tr|Spores}}不能在其他{{tr|spores}}的 3 格内生成。
+* {{tr|Spores}}不能在[[{{tr|liquids}}]]中生成。
+
+== 小贴士 ==
+* 因为{{tr|spores}}能穿透{{tr|blocks}}，此{{tr|accessory}}在如[[{{tr|Dungeon}}]]和[[{{tr|Underground Jungle}}]]之类的狭窄地形中十分强力。此外，{{tr|spores}}的追踪能力有助于在{{tr|player}}造建筑或挂机时自动攻击{{tr|enemies}}。
+* {{tr|Spores trap}}不会触发[[{{tr|caster}}]]的传送效果，因而成为击杀它们的有效方法。
+* [[{{tr|Ice Rod}}]]创造的{{tr|Ice blocks}}可以被用作{{tr|Spores trap}}生成点。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Spore}}的{{tr|Movement speed}}大大提升。
+** {{tr|Spore}}开始追踪目标的范围提升 20%。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Equipables
+|show-combatacc = yes
+}}
+
+{{language info|en=Spore Sac}}

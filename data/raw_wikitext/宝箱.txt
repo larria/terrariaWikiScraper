@@ -1,0 +1,346 @@
+{{item infobox
+| imagealt = [[File:Chest.png|{{tr|Chest}}{{tr|item}}的{{tr|sprite}}|link=]]
+| type = Furniture/Storage
+| auto = 48
+| name = Chests
+| width = 2
+| height = 2
+| idtile = {{iteminfo|Chest|tile id}}、{{iteminfo|Crystal Chest|tile id}}
+| buy = {{iteminfo|Golf Chest|buy}}（{{tr|Golf Chest}}）
+| sell =
+| cargo = no
+}}
+{{quotation|[[{{tr|Merchant}}]]|{{gameText|LegacyDialog.20}}}}
+
+'''{{tr|Chests}}'''是一种[[{{tr|storage item}}]]，每个{{tr|Chests}}最多可容纳 40 组{{tr|item}}，以 10×4 {{icon|desktop|console|mobile}} / 5×8 {{icon|3ds}} / 5×4 （只有 20 组{{tr|item}}） {{icon|old-gen}}的形式储存。{{tr|Chests}}能在已清空的前提下被任意[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]破坏。{{tr|Chests}}正下方的物块无法破坏。
+
+不仅可以通过制作获得{{tr|Chests}}，在世界生成时游戏也会随机在地图上放置一些{{tr|Chests}}。这些{{tr|Chests}}中的物品在创建时就被决定，不会根据进入[[{{tr|Hardmode}}]]而改变。
+
+一共有 22 种可自然生成的{{tr|Chests}}（其中 6 种不能被制作）、48 种可制作的{{tr|Chests}}和 1 种可购买的{{tr|Chests}}，如果算上[[{{tr|Barrel}}]]和[[{{tr|Trash Can}}]]，那么总共有 55 种{{tr|Chests}}和 57 种可放置的{{tr|storage items}}（除了[[{{tr|dressers}}]]和{{tr|portable storage items}}）。
+
+每个世界中最多同时放置 8000 {{eicons|1.4.0.1}} / 1000 {{eicons|1.4.0.1|invert=y}} 个{{tr|storage items}}（{{tr|portable storage}}物品如[[{{tr|Safe}}]]、[[{{tr|Piggy Bank}}]]、[[{{tr|Void Vault}}]]、和{{eil|Defender's Forge}}，以及展示{{tr|items}}如[[{{tr|Item Frame}}]]、[[{{tr|Weapon Rack}}]]、和[[{{tr|Mannequin}}]]除外）。达到这一限制时再放置{{tr|storage items}}就会直接成为掉落物，无法放置成功。
+
+在{{eversions|1.2.3|short}}版本中，放置的{{tr|chests}}可被重命名（不能超过 20 个字符）。将鼠标{{tr|cursor}}悬停在已命名的{{tr|chest}}上就会显示它的名字。如果目标{{tr|chest}}没有被命名，什么都不会显示。要重命名{{tr|chest}}，请先通过按{{key|open}}将其打开。默认的{{tr|chest}}名取决于{{tr|chest}}的{{tr|type}}（例如{{tr|Living Wood Chest}}的默认名称为“{{tr|Living Wood Chest}}”）。点击“{{tr|Rename}}”然后输入一个新的名字，再按{{key|enter}}或点击 “{{tr|Save}}”以应用更改。{{tr|Chest}}的名称中也可以使用和[[{{tr|Announcement Box}}]]或[[{{tr|chat}}]]中一样的[[{{tr|Announcement Box}}#格式|文本格式化代码]]。
+
+== 自然生成的{{tr|chests}} ==
+[[File:Placed Chests.png|alt=|frame|放置的{{tr|chests}}和其他{{tr|storage items}}。点击图片以查看各行的简介。]]
+{| class="terraria lined" id="chest-table" style="float: left; min-width: 800px;"
+! 类型
+! 出现在
+! 备注
+! 卖出价
+|-
+| {{item infobox |imageinfo=no | auto = 48| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item |nolink=y}}
+| [[{{tr|Surface}}]]
+| 基础的可制作{{tr|Chest}}。<br/> 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。<br/> 参见[[#{{tr|Surface}}{{tr|loot}}|{{tr|Surface}}{{tr|loot}}部分]]以查看其中可能出现的{{tr|loot}}。
+| align=right | {{iteminfo|48|sell}}
+|-
+| {{item|id=306}}
+| [[{{tr|Underground}}]]（未上锁的）<br/> [[{{tr|Dungeon}}]]（上锁的）
+| 每个{{tr|Locked Gold Chests}}需要一个[[{{tr|Golden Key}}]]以解锁。
+| align=right | {{iteminfo|306|sell}}
+|-
+| {{item|id=681}}
+| [[{{tr|Snow biome}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方{{eicons|1.4.0.1}}。
+| align=right | {{iteminfo|681|sell}}
+|-
+| {{item|id=680}}
+| [[{{tr|Jungle Shrine}}]] <br/> [[{{tr|Living Mahogany Tree}}]]
+|
+| align=right | {{iteminfo|680|sell}}
+|-
+| {{item|id=1142}}
+| [[{{tr|Jungle Temple}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方{{eicons|1.4.0.1}}。
+| align=right | {{iteminfo|1142|sell}}
+|-
+| {{item|id=831}}
+| [[{{tr|Living Tree}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方{{eicons|1.4.0.1}}。
+| align=right | {{iteminfo|831|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 2544| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Glowing Mushroom biome}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。
+| align=right | {{iteminfo|2544|sell}}
+|-
+| {{item|id=626}}
+| [[{{tr|Underground Jungle}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。
+| align=right | {{iteminfo|626|sell}}
+|-
+| {{item|id=4267}}
+| [[{{tr|Underground Desert}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。
+| align=right | {{iteminfo|4267|sell}}
+|-
+| {{item|id=838}}
+| [[{{tr|Floating Islands}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方{{eicons|1.4.0.1}}。
+| align="right" |{{iteminfo|838|sell}}
+|-
+| {{item|id=1298}}
+| [[{{tr|Ocean}}]]，也会稀有地出现在其他水体中
+|
+| align=right | {{iteminfo|1298|sell}}
+|-
+| {{item|id=952}}
+| [[{{tr|Spider Cave}}]]
+|
+| align=right | {{iteminfo|952|sell}}
+|-
+| {{item|id=3125}}
+| [[{{tr|Granite Cave}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。
+| align=right | {{iteminfo|3125|sell}}
+|-
+| {{item|id=3181}}
+| [[{{tr|Marble Cave}}]]
+| 参见下方的[[#{{tr|Crafting}}|可制作的{{tr|Chests}}部分]]以查看制作配方。
+| align=right | {{iteminfo|3181|sell}}
+|-
+| {{item|id=328}}
+| [[{{tr|Underworld}}]]
+| 需要[[{{tr|Shadow Key}}]]。
+| align=right | {{iteminfo|328|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 3885| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item|nolink=y}}
+| [[{{tr|Pirate Invasion}}]]
+|
+| align=right | {{iteminfo|3885|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 1529| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Corruption Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|1529|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 1530| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Crimson Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|1530|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 1531| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Hallowed Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|1531|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 1532| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Frozen Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|1532|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 1528| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Jungle Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|1528|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 4712| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| [[{{tr|Dungeon}}]]
+| 需要一个[[{{tr|Desert Key}}]]。<br/>解锁前必须先击败[[{{tr|Plantera}}]]。
+| align=right | {{iteminfo|4712|sell}}
+|-
+| {{item infobox |imageinfo=no| auto = 3988| type = Furniture / Storage | width = 2 | height = 2 | tags = Plunder | view = item}}
+| {{tr|Trap}}
+| 以连接各种各样的陷阱的状态被发现。<br/>起[[{{tr|mechanism}}]]作用。
+| align=right | {{iteminfo|3988|sell}}
+|}
+{{-}}
+
+== 其他{{tr|chests}} ==
+{| class="terraria lined" style="float: left; min-width: 800px;"
+! 类型
+! 来源
+! 卖出价
+|-
+| {{item infobox |imageinfo=no| auto = 4265 | type = Furniture / Storage |  width = 2 | height = 2 | tags = vendor /vendor:Golfer | view = item |nolink=y}}
+| 购买自[[{{tr|Golfer}}]]，售价为 {{iteminfo|4265|buy}}。
+| align=right | {{iteminfo|4265|sell}}
+|}
+{{-}}
+
+== 制作 ==
+* 所有可制作的{{tr|chests}}的售价均为 {{iteminfo|Chest|sell}}，除了{{tr|Dynasty Chest}}、{{tr|Steampunk Chest}}、和{{tr|Honey Chest}}，它们的售价为 {{iteminfo|Dynasty Chest|sell}}。
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE %Chest|resultnot=LIKE Trapped %Chest|expectedrows=39|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== {{tr|Trapped Chests}} ===
+大多数{{tr|chests}}都可被制作为{{eil|Trapped Chests}}，使它们成为一种[[{{tr|mechanism}}]]，而不再拥有储存能力。
+{{recipes|cate=force|showresultid=y|result=LIKE Trapped %Chest|expectedrows=52}}
+
+== 地表拾取物 ==
+自然生成在[[{{tr|Surface}}]]的{{tr|Chests}}内有各种{{tr|loot}}，供玩家拿取和使用。其中每个{{tr|chest}}内都有一个“主要物品”和一些随机选取的次要物品。
+
+{{flexstart|alignitems=top|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{{loot|item=Chest|title=@primary
+
+| Spear|1|{{#vardefineecho:chestlootchance|{{chance|1/10}} {{eicons|Step Stool|small=y}}<br/>{{chance|1/8}} {{eicons|1.3.0.1|invert=y|small=y}}}}
+| Blowpipe|1|{{#var:chestlootchance}}
+| Wooden Boomerang|1|{{#var:chestlootchance}}
+| Glowstick|40–74| {{chance|1/8}} {{eicons|Step Stool|invert=y|small=y}}
+| Throwing Knife|70–149|{{chance|1/8}} {{eicons|Step Stool|invert=y|small=y}}
+| Aglet|1|{{#var:chestlootchance}}
+| Climbing Claws|1|{{#var:chestlootchance}}
+| Umbrella|1|{{#var:chestlootchance}}
+| Guide to Plant Fiber Cordage|1|{{chance|1/10}}
+| Wand of Sparking|1|{{chance|1/10}}
+| Radar|1|{{chance|1/10}}
+| Step Stool|1|{{chance|1/10}}
+
+}}
+{{flexend|item}}
+{{flexstart|item}}
+{{loot|item=Chest|title=@secondary
+
+| Glowstick|40-75|{{chance|1/6}}{{eicons|1.4.4}}
+| Throwing Knife|150-300|{{chance|1/6}}{{eicons|1.4.4}}
+| Herb Bag|1–4|1/6
+| Can Of Worms|1–4|1/6
+| Grenade|3–5|1/3
+
+|:group:start|3–10|1/2
+  | Copper Bar||
+  | Tin Bar||
+|:group:end|-----------------|-
+
+|:group:start|3–10|1/2
+  | Iron Bar||
+  | Lead Bar||
+|:group:end|-----------------|-
+
+| Rope|50–100|1/2
+
+|:group:start|25–50|2/3
+  | Wooden Arrow||
+  | Shuriken||
+|:group:end|-----------------|-
+
+| Lesser Healing Potion|3–5|1/2
+| Recall Potion|3–5|2/3
+
+|:group:start|1–2|2/3
+  | Ironskin Potion||
+  | Shine Potion||
+  | Night Owl Potion||
+  | Swiftness Potion||
+  | Mining Potion||
+  | Builder Potion||
+|:group:end|-----------------|-
+
+|:group:start|10–20|1/2
+  | Torch||
+  | Bottle||
+|:group:end|-----------------|-
+
+| Silver Coin|10–29|1/2
+| Wood|50–99|1/2
+
+}}
+{{flexend|item}}
+{{flexend}}
+
+注意：
+* {{tr|Chest}}内相同等级的锭只会出现其中一种，并且与当前世界已经生成的矿石种类相同。
+* 表中的几率列表示的是物品被包含在{{tr|chest}}内的概率。而其中有些特定物品的堆叠数量并不服从均匀分布。
+* 次要物品按照表中所示的顺序生成，因此它们在箱子中的相对顺序与表中顺序相同。
+
+== {{tr|Underground}}{{tr|loot}} ==
+{{transclude|{{tr|Gold Chest}}#拾取物}}
+
+== 备注 ==
+* 在{{old-gen console version}}中，{{tr|chests}}在足够近，可被打开的范围内时会出现黄色轮廓。
+* 在{{icon/wiiu}} Wii U {{tr|version}}中，重命名{{tr|chest}}时弹出的对话框类似于与先前最后一个 NPC 对话时的选项。
+
+== 小贴士 ==
+* 在[[{{tr|Hardmode}}]]{{tr|world}}的[[{{tr|Dungeon}}]]外打开{{tr|chest}}之前，最好先用[[{{tr|ranged weapon}}]]射击它或召唤一个[[{{tr|minion}}]]，因为{{tr|chest}}有可能是[[{{tr|Mimic}}]]。如果是的话，它会受到{{tr|damage}}并开始追逐{{tr|player}}。
+
+== {{tr|Trivia}} ==
+* {{tr|pirate}}的{{tr|Golden Chest}}、[[{{tr|Golden Dresser}}]]、和{{eil|Money Trough}}是为数不多的由{{tr|enemy}}掉落的[[{{tr|storage items}}]]。
+* {{eil|Golf Chest|nl=y}}是唯一可在游戏中购买的{{tr|chest}}（{{tr|portable storage items}}除外）。
+* 由于随机数生成器的机制限制，世界有可能在不存在特定{{tr|loot}}的情况下生成。然而这非常罕见，因为一个世界中有很多{{tr|chest}}。并且即使{{tr|loot}}没有自然生成，也可以通过钓鱼时钓到的{{tr|crates}}获得。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 引入了{{tr|Ash Wood chests}}、{{tr|Balloon chests}}和{{tr|Reef Chests}}。
+** 所有可上锁的{{tr|Chests}}现在可使用{{tr|Chest Locks}}重新上锁。
+** {{tr|Throwing Knives}}/{{tr|Glowsticks}}不再作为主要物品，将主要物品池大小从 12 降低至 10。这些{{tr|items}}现在是次要物品。}}
+{{history|Desktop 1.4.1.1|修复了当重命名{{tr|chest}}时玩家无法正常退出物品栏的问题。}}
+{{history|Desktop 1.4.0.5|修复了若{{tr|chests}}和其他[[{{tr|furniture}}]]{{tr|items}}被放置在非固体物块上时会导致世界崩溃的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Chest}}上限由 1000 提升至 8000。
+** {{tr|Gold chests}}现可在{{tr|Underground Cabins}}外生成，就像 [[1.2.4.1]] 一样。
+<!--** {{tr|Skyware Chair sprite updated}}。-->
+** {{tr|Living Wood Chests}}、{{tr|Skyware Chests}}、{{tr|Frozen Chests}}和{{tr|Lihzahrd Chests}}可以制作了。
+** 引入了{{tr|Spider Chests}}、{{tr|Lesion Chests}}、{{tr|Sandstone Chests}}、{{tr|Bamboo Chests}}、{{tr|Golf Chests}}、{{tr|Solar Chests}}、{{tr|Vortex Chests}}、{{tr|Nebula Chests}}、{{tr|Stardust Chests}}和{{tr|Desert Chests}}。}}
+{{history|Desktop 1.3.5|
+** 现在可以获取{{tr|Crystal Chests}}和{{tr|Golden Chests}}了。
+** 除非使用使用{{tr|gamepad}}，否则在重命名{{tr|Chests}}时不再显示虚拟键盘。}}
+{{history|Desktop 1.3.2.1|
+** 修复了在使用{{tr|Gamepads}}时{{tr|Chest}}按钮循环不良的问题。
+** 修复了在某些情况下已开启自动暂停并打开{{tr|chest}}时{{tr|items}}被装备的问题。}}
+{{history|Desktop 1.3.2|现可在{{tr|chests}}中使用排序功能。}}
+{{history|Desktop 1.3.1|
+** 现在能被制作为[[{{tr|Trapped Chest}}]]。
+** 添加了{{tr|Golden Chest}}和{{tr|Crystal Chests}}，但无法获得。}}
+{{history|Desktop 1.3.0.4|修复了“快速堆叠至附近的宝箱上”在旧的或者装了 Mod 的世界中可能导致物品丢失的问题。}}
+{{history|Desktop 1.3.0.3|现可使用{{key|lshift}}键在{{tr|chests}}和你的[[{{tr|inventory}}]]间交换物品，而不再会丢弃物品。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Meteorite Chests}}、{{tr|Granite Chests}}、{{tr|Marble Chests}}、和{{tr|Martian Chests}}。
+** {{tr|Gold chests}}不再在[[{{tr|Underground Cabin}}]]外生成，除了{{tr|Dungeon}}。
+** {{tr|Chests}}现在有了打开和关闭时的动画。
+** [[{{tr|NPC}}]]现在会避免坐在{{tr|chests}}附近。
+** 你现在可以在打开{{tr|chest}}时直接使用其中的材料[[{{tr|craft}}]]{{tr|items}}，而不必事先将物品放在物品栏中。
+** 增加了一个{{tr|inventory}}按钮以用于快速将物品堆叠至附近的宝箱上，让库存管理更加快捷。
+** {{tr|Quick stack}}现在会在你的{{tr|chests}}中为你{{tr|inventory}}中拥有的物品自动创建新的堆叠（如果适用）。
+** 添加了[[游戏控制#{{tr|Inventory}}|通过 Alt+左键点击来收藏物品]]的功能。被收藏的物品不能被快速丢弃、快速堆叠、或快捷存放。
+** [[{{tr|Dresser}}]]现在可以充当{{tr|chests}}。}}
+{{history|Desktop 1.2.4.1|
+** {{tr|Pink Chests}}、{{tr|Blue Chests}}、和{{tr|Green Dungeon Chests}}有了配方。
+** {{tr|Right-click}}以打开{{tr|Chests}}，[[{{tr|Piggy Bank}}]]或[[{{tr|Safe}}]]不再会拾起光标所指的物品。
+** 加入了{{tr|Glass Chest}}。}}
+{{history|Desktop 1.2.4|
+** 添加了{{tr|Palm Wood Chests}}、{{tr|Mushroom Chests}}、{{tr|Boreal Wood Chests}}、{{tr|Slime Chests}}、{{tr|Blue Dungeon Chests}}、{{tr|Green Dungeon Chests}}、{{tr|Pink Dungeon Chests}}、{{tr|Bone Chests}}、{{tr|Cactus Chests}}、{{tr|Flesh Chests}}、{{tr|Obsidian Chests}}、{{tr|Pumpkin Chests}}、和{{tr|Spooky Chests}}。
+** 修复了{{tr|chest}}在放置在[[{{tr|Boulder}}]]上（但不垂直）时会导致游戏崩溃的问题。}}
+{{history|Desktop 1.2.3.1|
+** 修复了{{tr|Chests}}不能放置在 2x1 {{tr|tiles}}上的 {{tr|bug}}。之前只有在{{tr|Chests}}底部的右侧有一个实心物块才能放置{{tr|Chests}}。
+** 修复了当用[[{{tr|sign}}]]打开{{tr|chest}}时会锁定物品栏的 {{tr|bug}}。
+** 修复了[[{{tr|altar}}]]/[[{{tr|pot}}]]/{{tr|chests}}在错误的条件下生成的问题。
+** {{tr|Chests}}不再会在[[{{tr|multiplayer}}]]中丢失名称。}}
+{{history|Desktop 1.2.3|
+** 添加了{{tr|Dynasty Chests}}、{{tr|Honey Chests}}、和{{tr|Steampunk Chests}}。
+** 更新了{{tr|Shadewood Chest}}、{{tr|Ebonwood Chest}}、{{tr|Rich Mahogany Chest}}、和{{tr|Pearlwood Chest}}的材质。
+** 放置的{{tr|chests}}可被重命名（不能超过 20 个字符）。将鼠标{{tr|cursor}}悬停在已命名的{{tr|chest}}上就会显示它的名字。'''任何'''被命名为“Chest”的{{tr|chests}}都会显示为普通{{tr|chests}}的样式。
+** 有{{tr|Boulders}}的{{tr|Chests}}击中时不再会使游戏崩溃。
+** 修复了{{tr|chests}}可被放置在错误位置（例如[[{{tr|ice block}}]]或在世界生成中的斜坡）上的 {{tr|bug}}。
+** 修复了在破坏上面是{{tr|chest}}的[[{{tr|teleporter}}]]时会崩溃的问题。}}
+{{history|Desktop 1.2.1.2|在小屏幕上，打开{{tr|chest}}时不再会从中自动抓取物品。}}
+{{history|Desktop 1.2.0.3|使用小屏幕的玩家不会再从{{tr|chest}}中自动装备或拾取物品。}}
+{{history|Desktop 1.2.0.2|{{tr|Chests}}、[[{{tr|Crystal Heart}}]]、和[[{{tr|statues}}]]不再会在{{tr|ice}}（[[{{tr|Thin Ice}}]]）上生成。}}
+{{history|Desktop 1.2|
+** 现在可用[[{{tr|pickaxe}}]]破坏。
+** 所有{{tr|chests}}的容量都翻了一番。
+** 利用[[{{tr|Music box}}]]/{{tr|chest}}复制物品不再可行。
+** 放置了[[{{tr|Actuator}}]]的物块不再会在上方有{{tr|chest}}时取消激活。
+** {{tr|Chests}}现在有了更大的{{tr|loot}}表。
+** 添加了可制作的{{tr|Ebonwood Chests}}、{{tr|Rich Mahogany Chests}}、{{tr|Pearlwood Chests}}、和{{tr|Shadewood Chests}}。
+** 添加了不可制作的[[{{tr|Ivy Chest}}]]、[[{{tr|Ice Chest}}]]、[[{{tr|Living Wood Chest}}]]、[[{{tr|Skyware Chest}}]]（替换了[[{{tr|Floating Island}}]]上的上锁[[{{tr|Gold Chest}}]]）、[[{{tr|Web Covered Chest}}]]、[[{{tr|Lihzahrd Chest}}]]、[[{{tr|Water Chest}}]]，以及{{tr|biome chests}}：[[{{tr|Jungle Chest}}]]、[[{{tr|Corruption Chest}}]]、[[{{tr|Crimson Chest}}]]、[[{{tr|Hallowed Chest}}]]和[[{{tr|Frozen Chest}}]]（所有{{tr|biome chests}}都需要一把[[{{tr|Biome Key}}]]打开）。}}
+{{history|Desktop 1.1.1|修复了在多人游戏中堆叠的[[{{tr|coins}}]]会从{{tr|chests}}中消失的问题。}}
+{{history|Desktop 1.0.6.1|不再能储存成组的空物品。}}
+{{history|Desktop 1.0.6|
+** 所有在[[{{tr|Dungeon}}]]中生成的{{tr|wooden Chests}}现在都会包含[[{{tr|Gold Key}}]]，以用于打开[[{{tr|Gold Chest}}]]。
+** 添加了[[{{tr|Shadow Chest}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Chests}}现可在[[{{tr|Surface}}]]生成，其中包含能帮助新玩家生存的物品。
+** 现在{{tr|Chests}}内的{{tr|loot}}取决于它们生成时所处的海拔。
+** 添加了[[{{tr|Gold Chest}}]]，替换掉了绝大多数自然生成的{{tr|Chest}}。}}
+{{history|Desktop 1.0.1|{{tr|chest}}下方的[[{{tr|Sand}}]]不再会因为重力原因掉落。}}
+{{history|Desktop-Release|引入普通{{tr|Chest}}。}}
+{{history|Console 1.08|添加了{{tr|Chest}}的命名、快速堆叠、和补货功能。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|现可在{{tr|chests}}中使用排序功能。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+{{language info|en=Chests}}

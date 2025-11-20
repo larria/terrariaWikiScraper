@@ -1,0 +1,20 @@
+<includeonly>{{#invoke:iteminfo|getInfo|{{itemIdFromName|{{{1|}}}}}|gsi_}}<!--
+-->|-
+| {{item|{{#dplvar:gsi_name}}|id={{#dplvar:gsi_type}}}}
+| {{#dplvar:gsi_damage}}
+| {{#dplvar:gsi_mana}}
+| {{#expr:{{getProjectileInfo|{{#dplvar:gsi_shoot}}|penetrate}}-1}}
+| {{formatnum:{{#dplvar:gsi_shootSpeed}}}}
+| {{#dplvar:gsi_useAnimation}}{{note|block=y|small=y|({{use time|{{#dplvar:gsi_useAnimation}}}})}}
+| {{formatnum:{{#dplvar:gsi_knockBack}}}}{{note|block=y|small=y|({{knockback|{{#dplvar:gsi_knockBack}}}})}}
+| align=left | {{recipes/extract|result={{#dplvar:gsi_name}}|mode=ingredients}}
+| {{#if:{{#dplvar:gsi_autoReuse}}|{{yes}}|{{no}}}}
+| {{rare|{{#dplvar:gsi_rare}}}}
+| {{coin|{{#expr:{{#dplvar:gsi_value}}/5}}cc}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Gem staves/row}}
+</noinclude>

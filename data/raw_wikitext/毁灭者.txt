@@ -1,0 +1,209 @@
+<section begin="npc infobox" />{{npc infobox
+| auto = 134 |boxwidth=450px
+| name = The Destroyer
+| namesub =
+| image = The Destroyer.png
+| type = Boss
+| type2 = Burrowing Enemy
+| environment = Surface+Night
+| environment2 = Space+Night
+| ai = The Destroyer AI
+| damage =
+| defense =
+| money = {{modes|{{coin|12gc}}|{{coin|30gc}}}}
+| immuneallnotwhips = yes | immuneallnote = <br/>{{note|paren=y|除了{{item|Stunned|scale=0.5|small=y}}和{{item|Bleeding|scale=0.5}} {{eicons|Tizona|small=y}}}}
+| Soul of Might|25–40|100% @normal
+| Hallowed Bar|15–30|100% @normal
+| Horned God Robe|1|14.29% {{icon/old-gen|small=y}} @normal
+| Greater Healing Potion|5–15|100%
+| Destroyer Mask|1|14.29% @normal
+| Destroyer Trophy|1|10%
+| Treasure Bag (The Destroyer)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Mechanical Wagon Piece|1|100% #expert
+  | Destroyer Mask|1|14.29% #expert
+  | Soul of Might|25–40|100% #expert
+  | Hallowed Bar|20–35|100% #expert
+  | Gold Coin|[[NPC drops#Coin drops|12]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Deactivated Probe|1|{{master|25%}} @master
+| Destroyer Relic|1|{{master|100%}} @master
+
+| idprojectile = 100
+
+| sound1 = Item 33.wav
+| soundcaption1 = {{gameText|ProjectileName.DeathLaser}}
+| imageother = Map Icon The Destroyer.png
+| imageothercaption = Map Icon
+| hardmode = yes
+| cargo = no | cargodrops = yes
+| shownpcid = no
+}}<section end="npc infobox" />
+{{flavor text|{{gameText|LegacyMisc.28}}|image=Destroyer Trophy.png}}
+{{for|{{tr|the painting}}|{{tr|The Destroyer (item)}}}}
+
+'''{{tr|The Destroyer}}'''是个[[{{tr|Hardmode}}]][[{{tr|Mechanical Boss}}]]，基本上就是更困难版本的[[{{tr|Eater of Worlds}}]]。就像{{tr|the Eater of Worlds}}那样，它是只非常大型的[[{{tr|Worm AI}}|{{tr|Worm}}]]。虽然它看起来是有很多体节所组成的，但体节不会单独死亡，{{tr|The Destroyer}}也不会分裂为多个实体；其所有体节共享单一的生命值池。和其他{{tr|worm}}一样，同时伤害多个{{tr|segment}}的攻击会对{{tr|The Destroyer}}造成更大伤害。
+
+可以用[[{{tr|Mechanical Worm}}]]在[[{{tr|night}}]]（晚上 7:30 到凌晨 4:30）手动召唤{{tr|The Destroyer}}。在[[{{tr|Altars}}|{{tr|Demon Altar}}或{{tr|Crimson Altar}}]]被摧毁后，只要当前世界中尚未打败过它，它在黄昏时就有 {{chance|1/10}} 几率自然生成，如果以这种方式生成，它的到来会以[[{{tr|status message}}]]''"{{gameText|LegacyMisc.28}}"''来宣告。
+
+{{tr|The Destroyer}}的每一节都包含一个发红光的{{item|Probe|size=20px}}，它是独立的[[{{tr|flying enemy}}]]，会随着 {{tr|boss}} 承受伤害而陆续起飞。分离出来后，{{tr|Probes}}就可以被单独杀死，且绝不会返回{{tr|The Destroyer}}。无论是在{{tr|The Destroyer}}中还是分离出来后，它们都会朝玩家发射激光。如果某一节中没有{{tr|red light}}，这意味着{{tr|Probe}}已经从此节中起飞。
+
+{{tr|The Destroyer}}必须在清晨之前杀死，否则它们就会逃跑并消失。
+
+{{boss music|Boss 3|Boss 2 (Otherworldly)}}
+
+== 体节 ==
+{{see also|{{tr|Probe}}}}
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/damage/defenseBlock}}
+{| class="terraria noborder align-center nowrap"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! {{tr|Damage}}
+! {{tr|Defense}}
+{{npc infobox
+| auto = 134
+| type = Boss Part
+| type2 = Burrowing Enemy
+| environment = Surface+Night
+| environment2 = Space+Night
+}}
+{{npc infobox
+| auto = 135
+| type = Boss Part
+| type2 = Burrowing Enemy
+| environment = Surface+Night
+| environment2 = Space+Night
+| damage2 = &nbsp;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|44|72|108}}&nbsp;{{note|small=y|paren=y|{{gameText|ProjectileName.DeathLaser}} {{source code ref|v=1.4.1.2|name=destroyerai|method=Terraria.NPC.AI_037_Destroyer}}}}
+}}
+{{npc infobox
+| auto = 136
+| type = Boss Part
+| type2 = Burrowing Enemy
+| environment = Surface+Night
+| environment2 = Space+Night
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+{{-}}
+
+== 行为 ==
+像大多数{{tr|worm enemies}}一样，{{tr|The Destroyer}}生成时是盘起来的，然后会立即解开并向玩家移动。它在任何距离上都会跟随玩家，并且只有玩家死亡或黎明（凌晨 4:30）来临时才会消失。它通过快速向地下行进到屏幕外的方式消失。
+
+{{tr|The Destroyer}}会从地下跃出并试图撞击玩家。当它完全在空中时，其机动性受限，需要有{{tr|blocks}}或{{tr|platforms}}来“挖”穿。它还会尝试环绕玩家，如果玩家距离地面太近，它就有可能会成功。
+如果玩家的加载范围内没有物块或物块不足以让{{tr|The Destroyer}}在其中“钻”的话，它会在接近加载范围的边缘时直接跃升，当玩家在高空战斗时更为常见。
+
+此外，{{tr|The Destroyer}}还会进行以下攻击：
+* 它会从其体节中发射{{tr|Death Lasers}}，造成 44 / {{expert|72}} / {{master|108}} 伤害。<ref name="destroyerai"/>
+* 它会从其身体中释放飞行{{item|Probe|s|size=20px}}，会发射{{tr|Pink lasers}}，造成 50 / {{expert|88}} / {{master|132}} {{tr|damage}}。{{source code ref|v=1.4.1.2|name=probeai|{{code|Terraria.NPC.cs}} 中的 {{code|AI_005_EaterOfSouls()}} 方法。}}
+
+体节受伤害时有 {{chance|1/25}} 几率释放{{tr|Probe}}。<ref name="destroyerai"/>{{tr|Probes}}会飞向玩家，试图保持一定距离，偶而也会进入近战范围。其射击精度一般，能够可靠地命中静止的玩家。{{tr|Probes}}永远不会回归主体，如果玩家距离太远或死亡它们就会消失，这与{{tr|The Destroyer}}不同，后者会一直追着玩家直到二者之一死亡。{{tr|boss}} 死亡时{{tr|Probes}}并不会死亡，因此即使在打败了{{tr|The Destroyer}}之后也可能还得继续击杀它们。
+
+== {{tr|Notes}} ==
+{{transclude|{{tr|Mechanical bosses}}#{{tr|Notes}}}}
+* {{eil|Expert Mode}}下，[[{{tr|Golden Shower}}]]对{{tr|The Destroyer}}及其[[{{tr|Probe}}]]仅能造成 75% {{tr|base damage}}。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+* 当{{tr|The Destroyer}}在屏幕外时，它可以自由移动，无视{{tr|blocks}}，类似于[[{{tr|Wyvern}}]]。
+* {{tr|The Destroyer}}特别长，包含头尾在内有 82 节，或者说是 239 格长。{{source code ref|v=1.4.4.9|method=Terraria.NPC.GetDestroyerSegmentsCount}}
+** 在 {{eil|For the worthy}} 世界中，{{tr|The Destroyer}}拥有 100 个身体体节（总共 102 节），并且各个{{tr|segment}}要更大。
+* {{tr|The Destroyer}}可以沿着[[{{tr|platforms}}]]移动，就像这是{{tr|blocks}}那般。
+
+== {{tr|Achievements}} ==
+{{achievement|name=Buckets of Bolts}}
+{{achievement|name=Mecha Mayhem}}
+{{achievement|name=Ride The Worm}}
+
+== {{tr|Tips}} ==
+{{strategies}}
+* 与大多数 {{tr|bosses}} 不同，{{tr|The Destroyer}}在玩家距离太远时并不会消失，它只是追着他们来到他们所在位置。
+** 这意味着战斗中可以使用任何传送手段（[[{{tr|Magic Mirrors}}]]、[[{{tr|Teleporter}}]]等）来轻松避开它，因为它也不会传送。
+** 要记住，{{tr|The Destroyer}}在屏幕之外时可以自由移动而不会被阻碍。
+* 任何可以打击{{tr|enemies}}多次或一次伤害多个体节的武器在对抗{{tr|The Destroyer}}时都会比单目标武器有高得多的效率。
+* 要避免使用基于[[{{tr|debuff}}]]的{{tr|weapons}}，因为{{tr|The Destroyer}}免疫除了来自{{eil|Heart Arrow|s}}的[[{{tr|Stunned}}]]外的所有{{tr|debuffs}}。注意{{tr|Heart Arrows}}仅当击中其头部体节时才会定住{{tr|The Destroyer}}。
+* {{tr|The Destroyer}}的头部防御力为 0。尽管它会对玩家造成巨大的伤害（{{npcinfo|The Destroyer Head|damage_all}}），并且只对头节造成伤害可能会非常困难，但专注于它可以极大地加快战斗速度。如果使用[[{{tr|minions}}]]，则应始终将其指向头部。
+* {{tr|Probes}}应当尽快处理掉，因为它们会极大地干扰战斗，并且还可以将它们作为[[{{tr|Heart}}]]的稳定来源（{{tr|Expert mode}}中是 50% 掉落率）。
+* 用[[{{tr|Minimap}}]]来查看{{tr|the Destroyer}}会在何处冒出地面大大有助于躲避。
+* 刷{{tr|the Destroyer}}是一种快速的[[{{tr|指南:赚钱}}|{{tr|赚钱}}]]方法，因为其掉落物可用于制作多个[[{{tr|Light Disc}}]]，每个可以卖出{{iteminfo|Light Disc|sell}}。
+
+== {{tr|Trivia}} ==
+* {{tr|The Destroyer}}的头部有 {{expert|{{npcinfo|134|damage|expert}}}} / {{master|{{npcinfo|134|damage|master}}}} 伤害，是所有 {{tr|boss}} 在{{eil|Expert}}和{{eil|Master Mode}}中第三高的。它仅次于{{eil|Moon Lord}}的{{tr|Phantasmal Deathray}}和暴怒的{{eil|Empress of Light}}。在{{tr|Master Mode}}中，可以秒杀没有强化过[[{{tr|defense}}]]且没有用[[{{tr|Life Fruit}}]]提升过生命值的玩家。
+* {{tr|The Destroyer}}拥有除{{tr|Moon Lord}}外所有 [[{{tr|Boss}}]] 中最高的总生命值。它现在依然拥有最大的单体生命条，因为{{tr|Moon Lord}}的总生命值是其所有身体部位的总和，而{{tr|Moon Lord}}的各部位单独的生命值全都低于{{tr|The Destroyer}}。
+** 这使得{{tr|The Destroyer}}成为测试拥有在[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]上无效的附属效果的高级别{{tr|Hardmode weapons}}{{DPS}}的有用目标，比如{{eil|Phantasm}}。
+** 在{{tr|Classic worlds}}中，{{tr|the Destroyer}}有着10 倍于[[{{tr|Wall of Flesh}}]]的生命值。
+* {{tr|The Destroyer}}上有很多突出的小金属装置，像是{{wikipedia|centipede|蜈蚣}}般的腿或轮子，这可能解释了它在{{tr|block}}中自由移动的能力。
+* 虽然{{tr|status message}}说''“{{gameText|LegacyMisc.28}}”，但当玩家身处地下时它并不会生成。不过，它确实似乎是从地下出现的。
+* 在{{mobile version}}的一些预告片中的{{tr|The Destroyer}}体节上发蓝光而非红光。
+* {{lore|{{tr|The Destroyer}}是三个机械再造版的{{tr|Cthulhu}}缺失器官之一。在[[{{tr|bestiary}}]]中，揭示了它是{{tr|Cthulhu}}的脊柱的替代品。尽管设计上受{{tr|Cthulhu}}影响很深，但[[{{tr|Eater of Worlds}}]]和{{tr|Cthulhu}}并无联系，并且没有地方提到它是{{tr|Cthulhu}}以前的身体部位。}}<!-- From Redigit on the Terraria Discord while discussing Moon Lord/mech lore: "EoW isn't important "..."It's just a big monster". Other official EoW lore makes no reference to Cthulhu either, despite other relevant bosses having such. -->
+{{bestiary|article=}}
+
+== {{tr|See also}} ==
+* [[{{tr|The Twins}}]]
+* [[{{tr|Skeletron Prime}}]]
+
+== {{tr|History}} ==
+{{for|关于影响所有{{tr|mechanical bosses}} 的变更|{{tr|mechanical bosses}} 历史|link1={{tr|Mechanical bosses}}#历史}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Master Mode}}掉落物，[[{{tr|Deactivated Probe}}]]和[[{{tr|Destroyer Relic}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 外观更新。
+** 添加了{{tr|Expert Mode}}掉落物，[[{{tr|Mechanical Wagon Piece}}]]。
+** 不再能在{{tr|blocks}}下面看见。}}
+{{history|Desktop 1.2.3|
+** 生命值恢复为 80,000（从 60,000）。伤害和防御都提升了：
+*** 头部伤害由 50 提升至 70。
+*** 身体伤害由 35 提升至 55。防御力（由2 6）恢复至 30。
+*** 尾巴伤害由 20 提升至 40。防御力（由 30）恢复至 35。
+** 现在有几率掉落[[{{tr|Destroyer Mask}}]]。
+** 现在掉落物会出现在其被打败时距离玩家最近的体节上，而非头部所在的位置。}}
+{{history|Desktop 1.2.1.2|现在免疫所有[[{{tr|debuffs}}]]。}}
+{{history|Desktop 1.2|
+** 生命值由 80,000 降低至 60,000。伤害和防御降低：
+*** 头部伤害由 60 降低至 50。
+*** 身体伤害由 40 降低至 35。防御由 30 降低至 26。
+*** 尾部伤害由 35 降低至 30。
+** 现在有几率在黄昏自然生成，伴随着讯息：“你感受到地下深处的震动...”。
+** 现在会掉落 25–40 个[[{{tr|Soul of Might}}|{{tr|Souls of Might}}]]而非 20–30 个。
+** 现在有几率掉落[[{{tr|Destroyer Trophy}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 {{tr|Console}} 1.0.750.0 一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** 添加了{{tr|Expert mode}}掉落物，{{tr|Mechanical Wagon Piece}}。
+** 不再能在{{tr|blocks}}下面看见。}}
+{{history|Console 1.06|
+** 生命值恢复为 80,000（从 60,000）。伤害和防御都提升了：
+*** 头部伤害由 50 提升至 70。
+*** 身体伤害由 35 提升至 55。防御力（由2 6）恢复至 30。
+*** 尾巴伤害由 20 提升至 40。防御力（由 30）恢复至 35。
+** 现在有几率掉落{{tr|Destroyer Mask}}。
+** 现在掉落物会出现在其被打败时距离玩家最近的体节上，而非头部所在的位置。}}
+{{history|Console 1.02|
+** 生命值由 80,000 降低至 60,000。伤害和防御降低：
+*** 头部伤害由 60 降低至 50。
+*** 身体伤害由 40 降低至 35。防御由 30 降低至 26。
+*** 尾部伤害由 35 降低至 30。
+** 现在有几率在黄昏自然生成。
+** 现在会掉落 25–40 个{{tr|Souls of Might}}而非 20–30 个。
+** 现在有几率掉落{{tr|Destroyer Trophy}}。
+** 现在免疫所有{{tr|debuffs}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.732.3|修正了在{{tr|Destroyer}}重生后其体节对于非主机玩家未同步的 {{tr|bug}}。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.2.11212|
+** 现在有几率掉落{{tr|Destroyer Mask}}。}}
+{{history|Mobile 1.2.6508|
+** 现在在{{tr|hardmode}}中有几率在黄昏自然生成。
+** 现在会掉落 25–40 个{{tr|Souls of Might}}而非 20–30 个。
+** 现在有几率掉落{{tr|Destroyer Trophy}}。
+** 现在免疫所有{{tr|debuffs}}。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Worms}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=The Destroyer}}

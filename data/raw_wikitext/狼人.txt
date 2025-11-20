@@ -1,0 +1,64 @@
+{{npc infobox
+| auto = 104
+| image = Werewolf.gif
+| image2 = Werewolf (old).png
+| environment = Surface+Night+Full Moon
+| debuff = Bleeding
+| debuffchance = 12.5%
+| debuffduration = {{modes|45|90|112.5}} {{tr|seconds}}
+| Moon Charm|1|1.67%
+| Adhesive Bandage|1|{{modes|1%|2%}}
+| Wolf Fang|1|1.5%
+| hardmode = yes
+}}
+{{about|{{tr|the Werewolf enemy}}|同名{{tr|buff}}|{{tr|Werewolf (buff)}}}}
+
+'''{{tr|Werewolf}}'''是一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，只会在[[{{tr|full moon}}]]的[[{{tr|night}}]]生成，在此期间它与[[{{tr|Zombie}}]]一样常见。{{tr|Werewolves}}会开[[门]]且有 {{chance|1/8}} 几率造成[[{{tr|Bleeding}}]][[{{tr|debuff}}]]。在靠近后，{{tr|Werewolves}}会通过跳跃或猛击来攻击玩家，迅速拉拢距离从而让无准备的玩家措手不及。
+
+{{tr|The Werewolf}}会掉落[[{{tr|Moon Charm}}]]，让玩家能在晚上变为{{tr|werewolf}}。
+
+== 备注 ==
+* {{eicons|1.4.4}} [[{{tr|Silver Bullet}}]]对{{tr|Werewolves}}造成 3 倍{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* 即使玩家已经拥有来自{{tr|Moon Charm}}或其升级品的{{tr|Werewolf buff}}，{{tr|The Werewolf}}也依然会攻击玩家。
+* {{tr|Werewolves}}只在{{tr|full moon}}时才能在[[{{tr|Blood Moon}}]]中生成，并且{{tr|spawn rates}}不会提高。{{source code ref|v=1.4.0.5|method=NPC.SpawnNPC}}
+
+== 小贴士 ==
+* 可以通过某些 [[{{tr|NPC}}]] 出售的物品来追踪会生成{{tr|Werewolves}}的夜晚，因为[[{{tr|Painter}}]]会基于{{tr|the moon phase}}出售[[{{tr|paintings}}]]，而[[{{tr|Clothier}}]]会在{{tr|full moon}}是专门销售独特的物品。[[{{tr|Dye Trader}}]]和[[{{tr|Skeleton Merchant}}]]的货架同样会有独特的{{tr|items}}，不过{{eil|Sextant}}和衍生的[[{{tr|Informational items}}|{{tr|informational item}}]]会更直接地提供相同的信息。
+* 使用[[{{tr|Water Candle}}]]或[[{{tr|Battle Potion}}]]对刷[[{{tr|Moon Shell}}]]和后来的[[{{tr|Celestial Shell}}]]很有用。
+* 如果在满月夜时实力不足，可以用游戏初期应对[[{{tr|Zombie}}]]的策略来对战{{tr|Werewolves}}，例如将自己关进安全区域然后开个小孔供{{tr|projectiles}}发射。
+
+== 花絮 ==
+* 在常见传说中，{{tr|werewolves}}的主要弱点是[[{{tr|Silver Ore}}|{{tr|silver}}]]，但《[[{{tr|Terraria}}]]》中的{{tr|silver items}}在对付它们时并没有特别的收益（{{eicons|1.4.4}} [[{{tr|Silver Bullet}}]]除外）。
+** 不过，《{{tr|Terraria}}》中的{{tr|Werewolves}}与一般传说中的狼人一样在{{tr|full moon}}时出没。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在受到[[{{tr|Silver Bullet}}]]的伤害变为 3 倍。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 生命值由 400 降低至 350。
+** {{tr|Defense}}由 40 降低至 38。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落{{tr|a Werewolf Banner}}。}}
+{{history|Desktop 1.2|现在有几率掉落[[{{tr|Adhesive Bandage}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 生命值由 400 降低至 350。
+** {{tr|Defense}}由 40 降低至 38。}}
+{{history|Console 1.02|现在有几率掉落{{tr|a Werewolf Banner}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{verify}}
+** 生命值设置为 350。
+** 防御力设置为 38。}}<!-- needs verification as to what the health was before (old mobile was very weird with stats)-->
+{{history|Mobile 1.2.6508|现在有几率掉落{{tr|a Werewolf Banner}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，会掉落{{tr|Werewolf Banner}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Werewolf}}

@@ -1,0 +1,247 @@
+'''{{tr|Status messages}}'''在满足特定条件时以一条{{tr|chat}}信息的方式显示在[[{{tr|chat}}]]中。
+
+所有{{tr|Status messages}}都具有游戏使用的 7 种颜色的一种，玩家可以用如下方式来在{{tr|chat}}中复刻出它们：输入 <code>[c/XXXXXX:]</code>，将需要改变颜色的文本写在冒号后面，并将“XXXXXX”替换为十六进制颜色代码。见[[{{tr|Announcement Box}}]]获取更多信息。
+
+== {{tr|NPCs}} ==
+* 当某个[[{{tr|NPC}}]]（除了[[{{tr|Old Man}}]]和{{eil|Skeleton Merchant}}）生成时，会以 {{color box|#327dff|text=y}} 颜色显示{{tr|message}}''“{{gameText|Announcement.HasArrived|x_0=&lt;{{tr|NPC}}的类型&gt;&lt;{{tr|NPC}}的名字&gt;}}”''。
+* 在{{3ds version}}中，当某个 {{tr|NPC}} 的需求已经满足、但没有房屋供其居住时，会显示{{tr|message}}''“&lt;{{tr|NPC}}的名字&gt; would like to settle down.”''（''“&lt;{{tr|NPC}}的名字&gt;想安顿下来。”''）。
+* 当 {{tr|NPC}} 死亡时，会显示{{tr|message}}''“{{gameText|LegacyMisc.19|x_0=&lt;{{tr|NPC}}的类型&gt;&lt;{{tr|NPC}}的名字&gt;}}”。
+** [[{{tr|Angler}}]]、{{eil|Princess}}、或{{eil|Town pets|town pet}}死亡时，会改为显示{{tr|message}}''“{{gameText|LegacyMisc.36|x_0=&lt;{{tr|Angler}}/{{tr|Pet}}/{{tr|Princess}}的名字&gt;}}”''。
+** 两种情况下，都会使用 {{color box|#ff1919|text=y}} 颜色。
+* 当{{eil|Traveling Merchant}}离开时，会以 {{color box|#327dff|text=y}} 颜色显示{{tr|message}}''“{{gameText|LegacyMisc.35|x_0={{tr|the Traveling Merchant}}&lt;{{tr|NPC}}的名字&gt;}}”''。
+
+== {{tr|Boss}} ==
+大多数 [[{{tr|bosses}}]] 在其被召唤出来的时候会以 {{color box|#af4bff|text=y}} 的颜色显示{{tr|message}}''“{{gameText|Announcement.HasAwoken|x_0=&lt;{{tr|boss}}的名字&gt;}}”''。当某个 {{tr|boss}} 自发随机生成而非由玩家召唤时，会在其出现前的几个游戏内小时显示以下相应{{tr|Message}}：
+
+{| class="terraria lined"
+! {{tr|Message}} !! {{tr|Boss}} !! 颜色
+|-
+| ''“{{gameText|LegacyMisc.9}}”''
+| [[{{tr|Eye of Cthulhu}}]]
+| rowspan=5 | {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.28}}”'' <br/> ''"你感受到地下深处的地震..."''&thinsp;
+| [[{{tr|The Destroyer}}]]
+|-
+| ''“{{gameText|LegacyMisc.29}}”''
+| [[{{tr|The Twins}}]]
+|-
+| ''“{{gameText|LegacyMisc.30}}”'' <br/> ''"你感觉周围的空气越来越冷..."''&thinsp;
+| [[{{tr|Skeletron Prime}}]]
+|-
+| ''“{{gameText|LegacyMisc.108}}”''
+| [[{{tr|Mechdusa}}]]
+|}
+
+* 当 {{tr|boss}} 被打败时，会以 {{color box|#af4bff|text=y}} 颜色显示{{tr|message}}''“{{gameText|Announcement.HasBeenDefeated_Single|x_0=&lt;{{tr|boss}}的名字&gt;}}”''（或''“{{gameText|Announcement.HasBeenDefeated_Plural|x_0=&lt;{{tr|boss}}的名字&gt;}}”''）。
+
+== {{tr|Events}} ==
+大多数[[{{tr|events}}]]被召唤或自然生成时，会显示以下对应信息：
+
+{| class="terraria lined"
+! {{tr|Message}} !! {{tr|Event}} !! 颜色
+|-
+| ''“{{gameText|LegacyMisc.8}}”''
+| [[{{tr|Blood Moon}}]]
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyWorldGen.74}}”'' <br/> ''“{{gameText|LegacyWorldGen.75}}”''
+| {{eil|Slime Rain}}
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|Game.BirthdayParty_1|x_0=&lt;{{tr|NPC}}的名字&gt;}}”'' <br/> ''“{{gameText|Game.BirthdayParty_2|x_0=&lt;{{tr|NPC}}的名字&gt;|x_1=&lt;{{tr|NPC}}的名字&gt;}}”'' <br/> ''“{{gameText|Game.BirthdayParty_3|x_0=&lt;{{tr|NPC}}的名字&gt;|x_1=&lt;{{tr|NPC}}的名字&gt;|x_2=&lt;{{tr|NPC}}的名字&gt;}}”'' <br/> ''“{{gameText|LegacyMisc.99}}”''
+| {{eil|Party}}
+| {{color box|#ff00a0|text=y}}
+|-
+| ''“{{gameText|DungeonDefenders2.InvasionStart}}”'' <br/> ''“{{gameText|DungeonDefenders2.InvasionWin}}”''
+| {{eil|Old One's Army}}
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.20}}”''
+| [[{{tr|Solar Eclipse}}]]
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.1}}”'' <br/> ''“{{gameText|LegacyMisc.2}}”'' <br/> ''“{{gameText|LegacyMisc.3}}”'' <br/> ''“{{gameText|LegacyMisc.0}}”''
+| [[{{tr|Goblin Army}}]]
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.5}}”'' <br/> ''“{{gameText|LegacyMisc.6}}”'' <br/> ''“{{gameText|LegacyMisc.7}}”'' <br/> ''“{{gameText|LegacyMisc.4}}”''
+| [[{{tr|Frost Legion}}]]
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.25}}”'' <br/> ''“{{gameText|LegacyMisc.26}}”'' <br/> ''“{{gameText|LegacyMisc.27}}”'' <br/> ''“{{gameText|LegacyMisc.24}}”''
+| [[{{tr|Pirate Invasion}}]]
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.41}}”'' <br/> ''“{{gameText|LegacyMisc.42}}”''
+| {{eil|Martian Madness}}
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.43}}”''
+| {{eil|Lunar Events}}
+| {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|Misc.StartedVictoryXmas}}”'' <br/> ''“{{gameText|Misc.EndedVictoryXmas}}”''
+| [[{{tr|Christmas}}]]
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|Misc.StartedVictoryHalloween}}”'' <br/> ''“{{gameText|Misc.EndedVictoryHalloween}}”''
+| [[{{tr|Halloween}}]]
+| {{color box|#32ff82|text=y}}
+|}
+
+== {{tr|Multiplayer}} ==
+{| class="terraria lined"
+! {{tr|Message}} !! 触发
+|-
+| ''“{{gameText|LegacyMultiplayer.11|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.12|x_0=&lt;玩家名字&gt;}}”''
+| 玩家切换 [[{{tr|PvP}}]] 的开关。
+|-
+| ''“{{gameText|LegacyMultiplayer.14|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.15|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.16|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.17|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.22|x_0=&lt;玩家名字&gt;}}”''
+| 玩家加入了对应[[{{tr|Teams}}|{{tr|team}}]]。
+|-
+| ''“{{gameText|LegacyMultiplayer.13|x_0=&lt;玩家名字&gt;}}”''
+| 玩家离开了其{{tr|team}}。
+|-
+| ''“{{gameText|LegacyMultiplayer.19|x_0=&lt;玩家名字&gt;}}”'' <br/> ''“{{gameText|LegacyMultiplayer.20|x_0=&lt;玩家名字&gt;}}”''
+| 玩家加入/离开{{tr|world}}。
+|}
+
+这些{{tr|messages}}会使用玩家当前{{tr|team}}的颜色：
+{| class="terraria lined"
+! {{tr|Team}} !! 颜色
+|-
+| 红队 || {{color box|#cc3333|text=y}}
+|-
+| 绿队 || {{color box|#3bda55|text=y}}
+|-
+| 蓝队 || {{color box|#3b95da|text=y}}
+|-
+| 黄队 || {{color box|#f2dd64|text=y}}
+|-
+| 粉队 || {{color box|#e064f2|text=y}}
+|}
+
+== {{tr|Pylons}} ==
+一些{{tr|status messages}}会在{{tr|pylons}}不正常使用的情况下显示，如下表所示。它们都以 {{color box|#fff014|text=y}} 颜色显示。
+<section begin="pylon-status-messages" />
+{| class="terraria lined"
+! {{tr|Message}} !! 触发
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecausePlayerIsNotNearAPylon}}”''
+| 玩家距离任何{{tr|pylon}} 60 格以上。
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecauseNotEnoughNPCs}}”''
+| 在目的地{{tr|biome pylon}}附近的 {{tr|NPCs}} 少于 2 个。
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecauseNotEnoughNPCsAtCurrentPylon}}”''
+| 在玩家附近的{{tr|biome pylon}}附近的 {{tr|NPCs}} 少于 2 个。
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecauseThereIsDanger}}”''
+| 存在 [[{{tr|boss}}]] 或敌对[[{{tr|event}}]]。
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecauseNotMeetingBiomeRequirements}}”''
+| {{tr|biome pylon}}不在其对应{{tr|biome}}中。
+|-
+| ''“{{gameText|Net.CannotTeleportToPylonBecauseAccessingLihzahrdTempleEarly}}”''
+| 击败[[{{tr|Plantera}}]]前，{{tr|pylon}}位于[[{{tr|Unsafe wall}}|不安全]]的[[{{tr|Lihzahrd Brick Wall}}]]前方。
+|}<section end="pylon-status-messages" />
+
+== 其他 ==
+{| class="terraria lined"
+! {{tr|Message}} !! 触发 !! 效果 !! width=90px | 颜色
+|-
+| ''“{{gameText|Game.SpawnPointSet}}”''
+| 玩家在尚未设置为其{{tr|spawn point}}且正确放置的[[{{tr|Bed}}]]上按 {{key|open}}。
+| 玩家的[[{{tr|spawn point}}]]设置为{{tr|Bed}}所在的位置，只要{{tr|bed}}是放在有效的{{tr|house}}中。
+| {{color box|#fff014|text=y}}
+|-
+| ''“{{gameText|Game.SpawnPointRemoved}}”''
+| 玩家在已经设置为其{{tr|spawn point}}且正确放置的[[{{tr|Bed}}]]上按 {{key|open}}。
+| 玩家的[[{{tr|spawn point}}]]被设置为{{tr|world spawn point}}。
+| {{color box|#fff014|text=y}}
+|-
+| ''“{{gameText|Game.BallBounceResult|x_0={{tr|Beach Ball}}|x_1=&lt;次数&gt;}}”''
+| [[{{tr|Beach Ball}}]]在被击打超过 10 次后落地。
+| 可以用于对用{{tr|Beach Ball}}进行的比赛打分。
+| {{color box|#fff014|text=y}}
+|-
+| ''“{{gameText|Game.BallBounceResultGolf_Single|x_0=&lt;玩家名字&gt;|x_1={{tr|Golf Ball}}|x_2=1}}”'' <br/> ''“{{gameText|Game.BallBounceResultGolf_Plural|x_0=&lt;玩家名字&gt;|x_1={{tr|Golf Ball}}|x_2=&lt;杆数&gt;}}”''
+| {{eil|Golf Ball}}被玩家击打至少一次后落入{{eil|Golf Cup}}中。
+| 可以用于玩{{tr|golf}}小游戏。
+| {{color box|#fff014|text=y}}
+|-
+| ''“{{gameText|Misc.CombatBookUsed}}”''
+| 使用{{eil|Advanced Combat Techniques}}或{{eil|Advanced Combat Techniques: Volume Two}}{{tr|items}}。
+| [[{{tr|NPCs}}|{{tr|town NPCs}}]]的属性提高。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|Misc.PeddlersSatchelUsed}}”''
+| 使用{{eil|Peddler's Satchel}}{{tr|item}}。
+| [[{{tr|Traveling Merchant}}]]出售的{{tr|item}}数量提高 1。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|Misc.LicenseCatUsed}}”'' <br/> ''“{{gameText|Misc.LicenseDogUsed}}”'' <br/> ''“{{gameText|Misc.LicenseBunnyUsed}}”''
+| 分别在使用{{eil|Cat License}}、{{eil|Dog License}}、或{{eil|Bunny License}}时。
+| 分别允许{{eil|Cat}}、{{eil|Dog}}、或{{eil|Town Bunny}}搬进有效的{{tr|housing}}中。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.10}}”''
+| 玩家打破了第一个、第四个、第七个……[[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]]。
+| rowspan=2 | 通知所有玩家此次破坏（可能在屏幕外）。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.11}}”''
+| 玩家打破了第二个、第五个、第八个……{{tr|Shadow Orb}}或{{tr|Crimson Heart}}。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyWorldGen.59}}”''
+| {{eicons|1.4.0.2}}打败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]或{{eicons|1.4.0.2|invert=y}}打破{{tr|Shadow Orb}}或{{tr|Crimson Heart}}后有几率出现。
+| 一颗[[{{tr|Meteorite (biome)}}|{{tr|meteor}}]]已坠落到世界中。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.15}}”''
+| 首次打败[[{{tr|Wall of Flesh}}]]后。
+| 已完成[[{{tr|Hardmode}}转化]]。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.12}}”'' <br/> ''“{{gameText|LegacyMisc.13}}”'' <br/> ''“{{gameText|LegacyMisc.14}}”'' <br/> ''“{{gameText|LegacyMisc.21}}”'' <br/> ''“{{gameText|LegacyMisc.22}}”'' <br/> ''“{{gameText|LegacyMisc.23}}”''
+| [[{{tr|Altar}}]]被摧毁。
+| {{tr|world}}中生成相应的{{tr|Hardmode}}[[{{tr|ore}}]]。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.32}}”''
+| 首次全部打败三个[[{{tr|mechanical bosses}}]] 后。
+| [[{{tr|Underground Jungle}}]]中开始生成[[{{tr|Plantera's Bulb}}]]。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.33}}”''
+| 首次打败[[{{tr|Plantera}}]]后。
+| 新的[[{{tr|enemy}}]]类型开始出现在[[{{tr|Hardmode Dungeon}}|{{tr|Dungeon}}]]中。
+| {{color box|#32ff82|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.44}}”''
+| 四个{{eil|Celestial Pillars}}中的第一个被摧毁。 
+| rowspan=3 | 通知所有玩家此{{tr|Celestial Pillar}}被摧毁（可能在屏幕外）。
+| rowspan=3 | {{color box|#af4bff|text=y}}
+|-
+| ''“{{gameText|LegacyMisc.45}}”''
+| 四个{{tr|Celestial Pillars}}中的第二个被摧毁。 
+|-
+| ''“{{gameText|LegacyMisc.46}}”''
+| 四个{{tr|Celestial Pillars}}中的第三个被摧毁。 
+|-
+| ''“{{gameText|LegacyMisc.52}}”''
+| 四个{{tr|Celestial Pillars}}中的最后一个被摧毁或玩家使用了{{eil|Celestial Sigil}}。
+| 开始{{eil|Moon Lord}}召唤倒计时。
+| {{color box|#32ff82|text=y}}
+|}
+
+== 花絮 ==
+* 在{{mobile version}}中，曾经在满足 {{tr|NPC}} 的需求但没有可用{{tr|house}}的时候会显示{{tr|message}}''“&lt;{{tr|NPC}}的名字&gt; would like to settle down”''。它在 [[{{tr|Mobile}} 1.3.0.7|1.3.0.7]] 更新中被移除了。
+* 尽管[[{{tr|King Slime}}]]能自然生成，它没有特殊的{{tr|message}}。
+
+{{Game mechanics}}
+{{all versions}}
+
+{{language info|en=Status messages}}

@@ -1,0 +1,54 @@
+{{item infobox
+| type = Event summon
+| auto = 1315
+| stack = 20 {{eicons|1.4.0.1|small=y}} / 1 {{eicons|1.4.0.1|invert=y|small=y}}
+| sounduse = Roar 0.wav
+}}
+{{dablink|不要与[[{{tr|Treasure Map}}]]，一种装饰性{{tr|furniture}}相混淆。}}
+
+'''{{tr|Pirate Map}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Consumables}}#{{tr|Summoning items}}|{{tr|event summoning item}}]]，用于召唤[[{{tr|Pirate Invasion}}]]。在{{tr|Hardmode}}下，它有 {{chance|1/100}} 的几率由大部分在{{tr|surface}}[[{{tr|Ocean}}]]{{tr|biome}}中被杀死的[[{{tr|enemy}}]]掉落（见[[#{{tr|Notes}}|{{tr|Notes}}]]获取更多细节）。
+
+要使用它，必须至少有一名[[{{tr|player}}]]具有 200 [[{{tr|health}}]]或以上。{{source code ref|v=1.4.3.6|method=Terraria.Main.CanStartInvasion/Terraria.Player.ItemCheck_UseEventItems}}
+
+== 备注 ==
+* {{tr|The Pirate Map}}仅会在满足以下条件时掉落：{{source code ref|v=1.4.3.6|method=Terraria.GameContent.ItemDropRules.Conditions|t=（类 {{code|PirateMap}}）}}
+** 世界处于{{tr|Hardmode}}。
+** {{tr|The enemy}}至少能掉落 {{cc|1}}（即[[{{tr|statue}}]]生成的{{tr|enemies}}、[[{{tr|Meteor Head}}]]等等不会掉落{{tr|Pirate Map}}）。
+** {{tr|The enemy}}位于水平面（0 {{tr|feet}}）下方 10 {{tr|tile}}处的界线以上。
+* 虽然{{tr|Pirate Maps}}只能在{{tr|Hardmode}}中获得，但依然可以直接在{{tr|Pre-Hardmode worlds}}中{{tr|summon}}{{tr|Pirate invasions}}。
+
+== 小贴士 ==
+[[File:Farming pirate arapaima.png|thumb|200px|{{tr|Arapaimas}}太大，因此无法进入两格的间隙，使得刷取更为安全。注意，在{{eversions|1.4.0.1}}中，{{tr|fish enemies}}不再会被非毗连水体中的{{tr|players}}吸引。]]
+
+* 刷{{tr|Pirate Maps}}最简单的方式是直接带在{{tr|Ocean water}}上（[[{{tr|Water Walking Boots}}]]或一个小{{tr|platform}}就能办到）。使用[[{{tr|Water Candle}}]]和/或[[{{tr|Battle Potion}}]]来提高生成率并刷{{tr|enemy}}，它们最终会掉落{{tr|Pirate Map}}。[[{{tr|minions}}]]对刷怪过程有所帮助。
+* 在[[{{tr|Blood Moon}}]]时，{{tr|enemies}}会有''更高''{{tr|spawn rate}}，且这可以和{{tr|Water Candle}}和{{tr|Battle Potion}}{{tr|buff}}叠加。这可以更加确保能够获得数个{{tr|Pirate Maps}}。
+* 在{{tr|Ocean}}附近创造一个{{eil|Graveyard}}{{tr|mini-biome}}，可以在{{tr|day}}的时候也能提高{{tr|enemy spawn rates}}，来做到快速刷取。
+* 装备[[{{tr|Neptune's Shell}}]]并使用[[{{tr|Minion}}]]，并穿戴一些{{tr|minion boost gear}} (如[[{{tr|Spider armor}}]])，可以直接在海床上挂机，让{{tr|Minion}}来消灭{{tr|enemies}}。
+** 在[[{{tr|Crimson}}]]世界中，在一侧的[[{{tr|Ocean}}]]旁边建立一块（不会扩散的）{{tr|Crimson}}可以使[[{{tr|Blood Jelly}}]]生成，其生成频率比{{tr|ocean}}中普通{{tr|enemy}}更高。
+** 如果[[{{tr|Jungle}}]]离{{tr|Ocean}}足够近的话，{{tr|Ocean}}中便会频繁地生成[[{{tr|Arapaima}}]]。也可以在{{tr|Ocean}}附近人工创建{{tr|Jungle}}。
+** 在[[{{tr|The Corruption}}]]世界中，使用[[{{tr|Unholy Water}}]]或者[[{{tr|Clentaminator}}]]来腐化{{tr|Ocean}}，并且在其中反复击败[[{{tr|Eater of Worlds}}]]是一个非常有效的方法。因为有大约 50 体节，每杀死大约两只就能获得至少一个{{tr|Pirate Map}}。
+** [[{{tr|Harpy}}]]和[[{{tr|Wyvern}}]]也会掉落{{tr|Pirate Maps}}。
+* 如果是在{{tr|Ocean biome}}击杀的，[[{{tr|Pirates}}]]自身也会{{tr|drop}}{{tr|Pirate Maps}}，这可以让刷取变得更简单。这也适用于其他[[{{tr|Events}}|{{tr|invasion}}]]中的{{tr|enemies}}如[[{{tr|Goblin Army}}]]和[[{{tr|Frost Legion}}]]。
+
+== 花絮 ==
+* {{tr|Pirate Map}}使用时播放的{{sound|[[Media:Roar_0.wav|音效]]|Roar_0.wav|nofallback=y}}与 {{tr|boss-summoning items}}（[[{{tr|Suspicious Looking Eye}}]]、[[{{tr|Mechanical Skull}}]]等）相同。
+* {{eicons|1.4.0.1}} [[{{tr|Guide}}]]会在一个{{tr|tip}}中提到{{tr|the Pirate Map}}：“{{gameText|GuideHelpTextSpecific.Help_1123}}”
+** 不过，{{tr|the Pirate Map}}可由任何{{tr|Ocean enemy}}掉落，而非仅掉落自[[{{tr|Shark}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在可堆叠至 20 个。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.10061|现在，{{tr|Pirate Map}}只会在[[{{tr|Ocean}}]]{{tr|biome}}中掉落，而不是[[{{tr|Plantera}}]]后任何地方都可以。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Pirate Map}}

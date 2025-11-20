@@ -1,0 +1,392 @@
+{{exclusive|1.3.4}}
+[[File:BiomeBannerOldOne'sArmy.png|center]]
+{{float file box|[[File:Old One's Army Icon.png]]|进度条图标}}
+{{tocright}}
+{{flavor text|{{gameText|DungeonDefenders2.InvasionStart}}|image=Bestiary Old One's Army.png}}
+
+'''{{tr|Old One's Army}}'''是个独特的{{作品|Dungeon Defenders 2|t={{tr|Dungeon Defenders 2}}}}[[{{tr|crossover content}}|{{tr|crossover}}]][[{{tr|event}}]]，可以通过将[[{{tr|Eternia Crystal}}]]放置在[[{{tr|Eternia Crystal Stand}}]]上来触发。会有一波波{{tr|enemies}}从[[{{tr|Eternia Crystal (NPC)}}|{{tr|crystal}}]]两边的[[{{tr|Mysterious Portal}}|{{tr|portals}}]]中生成出来，试图摧毁水晶。{{tr|event}}的目标是保护水晶直到清空所有波数——如果水晶被摧毁了，{{tr|the event}}即告结束。
+
+此{{tr|event}}有三种难度版本，即“{{tr|tiers}}”： 
+* 在击败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]后，将解锁{{tr|The Old One's Army}}的第一级，起初最高有 5 波。
+* 在击败任何[[{{tr|mechanical boss}}]] 后，{{tr|the event}}进入{{tr|difficulty}}提升的第二级，增加额外的两波，使得总波数最高为 7。
+* 在击败[[{{tr|Golem}}]]后，{{tr|the event}}会达到第三级，也是最后一级{{tr|difficulty}}，在 7 波中会有完整的{{tr|enemies}}和{{tr|mini-bosses}} 组合。
+
+通过靠后的波数会奖励给玩家[[{{tr|Defender Medal}}]]，这是一种独特的货币，可以用来从[[{{tr|Tavernkeep}}]] [[{{tr|NPC}}]] 处购买特殊[[{{tr|weapons}}]]、[[{{tr|armor}}]]、和[[{{tr|Defender's Forge}}]]。由于此{{tr|event}}的较高难度，这些装备特别适合此{{tr|event}}，随着级数推进会解锁更强的装备。此{{tr|event}}还部署了许多[[#反作弊机制|反作弊/漏洞机制]]，例如在其持续时间内阻止玩家放置或移除[[{{tr|blocks}}]]和[[{{tr|liquids}}]]。
+
+== 召唤 ==
+要启动{{tr|Old One's Army event}}，必须先放置一个[[{{tr|Eternia Crystal Stand}}]]。然后必须通过在底座上按 {{key|open}} 来在其上放置[[{{tr|Eternia Crystal}}]]。{{tr|the Crystal}}和其底座都可在[[{{tr|Tavernkeep}}]]处用[[{{tr|coins}}]]购买。在打败了[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]后，在世界中就可以随机发现作为{{tr|Unconscious Man}}出现的{{tr|Tavernkeep}}。
+
+=== 地形需求 ===
+要召唤此{{tr|event}}对召唤区域附近的地形有一些独特的要求。如果不符合这些要求，就无法成功放置{{tr|the Eternia Crystal}}，并且会显示一条[[#{{tr|status message}}|{{tr|status message}}]]来通知玩家地面不合适。
+
+* 在{{tr|the Eternia Crystal Stand}}两边水平方向都至少要有 60 格空地，从底座中央算起（一共需要 121 格空地，底座在正中央）。如果给了足够空间，{{tr|enemy}}传送门会在更远一些的地方生成：最远会在两侧距离中央 120 格的地方。
+* 垂直方向需要至少有 10 格空间（即，“地板”和“天花板”（如果有）之间）。
+* 此外，地面以上的{{tr|tiles}}不能紧挨着{{tr|Eternia Crystal Stand}}。
+* 地板上不能有宽度大于 1 格的洞。
+
+玩家最多可以建造三格的高度差而不会被视为堵塞所须的空间。[[{{tr|Platform}}]]和[[{{tr|Actuator}}|未被致动]]的{{tr|blocks}}不会计为平坦地板的一部分，且会计入三格高度限制中；但是安装了{{tr|Actuators}}的地板若在放置{{tr|the Crystal}}的时候是实心的就会被计为是平坦的，并可以在{{tr|event}}开始之后被致动。此外，关闭的[[{{tr|trap doors}}]]会被视为平坦的，在{{tr|event}}开始之后可以正常开启和关闭。
+
+== 波数 ==
+此{{tr|The event}}由一定数量的波次组成，每一波会变得越来越困难。玩家需要杀死一定数量的{{tr|enemies}}来完成一波。每个{{tr|enemy}}（包括{{tr|mini-bosses}}）在[[{{tr|Classic Mode}}]]中算作 1 次击杀，在[[{{tr|Expert Mode}}]]及以上算作 2 次击杀。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.DD2Event.Difficulty_1_GetMonsterPointsWorth / Terraria.GameContent.Events.DD2Event.Difficulty_2_GetMonsterPointsWorth / Terraria.GameContent.Events.DD2Event.Difficulty_3_GetMonsterPointsWorth}}''见[[#波数图表|波数图表]]获取细节。''
+
+在每一波结束时，会有下一波的 30 秒倒计时，由出现在{{tr|the Eternia Crystal}}上方的计时器来表示。在这段时间期间对[[{{tr|Eternia Crystal Stand}}]]按下 {{key|open}} 可以让玩家跳过等待立即开始下一波。{{tr|The Eternia Crystal Stand}}的{{tr|tooltip}}和完成第一波的信息中也会提示这一点。
+
+此事件有三个可能的{{tr|tiers}}，具体取决于触发{{tr|event}}时的游戏进度。除了 {{tr|bosses}} 的差异外，普通{{tr|event enemies}}在不同级别中也有不同，在高级别中属性更强且外观更具威胁性。
+
+* {{anchor|{{tr|Tier 1}}}}{{anchor|Tier 1}}'''{{tr|Tier 1}}（T1）'''由五波组成，在最后一波中有一个或多个[[{{tr|Dark Mage}}]]作为{{tr|mini-bosses}}。在[[{{tr|Hardmode}}]]中打败任何[[{{tr|Mechanical Bosses}}]] 之前召唤此{{tr|event}}触发的是 {{tr|Tier 1}}。最后一波仅会在杀死至少一个{{tr|Dark Mage}}后结束。完成 {{tr|Tier 1}}总共会奖励总共 5 枚[[{{tr|Defender Medal}}]]。
+
+* {{anchor|{{tr|Tier 2}}}}{{anchor|Tier 2}}'''{{tr|Tier 2}}（T2）'''由七波组成，在最后一波中有一个或多个[[{{tr|Ogre}}]]作为{{tr|mini-bosses}}。在这一级别中不会出现{{tr|Dark Mages}}。在已打败了至少一个{{tr|Mechanical Boss}} 的[[{{tr|Hardmode}}]]世界中召唤此{{tr|event}}触发的是 {{tr|Tier 2}}。最后一波仅会在杀死至少一个{{tr|Ogre}}后结束。{{tr|The Ogre}}的{{tr|treasure bag}}是{{tr|unobtainable}}的，因此它并不会掉落。完成 {{tr|Tier 2}}会奖励总共 25 枚{{tr|Defender Medals}}。
+
+* {{anchor|{{tr|Tier 3}}}}{{anchor|Tier 3}}'''{{tr|Tier 3}}（T3）'''由七波组成，[[{{tr|boss}}]] [[{{tr|Betsy}}]]在最后一波中生成。在之前的三波中还会生成{{tr|The Dark Mage}}和{{tr|Ogre}}。在打败了[[{{tr|Golem}}]]之后召唤此{{tr|event}}触发的是 {{tr|Tier 3}}。最后一波仅会在打败{{tr|Betsy}}时结束。完成 {{tr|Tier 3}}会奖励总共 100 枚{{tr|Defender Medals}}。在[[{{tr|Expert mode}}]]{{tr|worlds}}中，[[{{tr|Treasure Bag (Betsy)}}|{{tr|Betsy}}的{{tr|Treasure Bag}}]]还会掉落另外 30–49 枚{{tr|Defender Medals}}。此外，在[[{{tr|Master Mode}}]]{{tr|worlds}}中，{{tr|boss}} 的[[{{tr|relics}}]]只会在这一级别中掉落。
+
+== {{tr|Defender Medals}}和{{tr|sentries}} ==
+从第三波开始，每一波完成时会奖励给玩家[[{{tr|Defender Medal}}]]，这是一种特殊的货币，用于从[[{{tr|Tavernkeep}}]] [[{{tr|NPC}}]] 处购买物品，可以帮助玩家完成后继的{{tr|Old One's Armies}}。其中包括特殊的[[{{tr|summon weapons}}#{{tr|Tavernkeep's sentries}}|{{tr|sentry summon weapons}}]]，这些{{tr|weapons}}使用[[{{tr|Etherian Mana}}]]，这种资源仅在本{{tr|event}}期间掉落。{{tr|Etherian Mana}}允许同时放置多个{{tr|sentry minions}}并持续保持到此{{tr|event}}结束，{{tr|Etherian Mana}}越多，所允许放置的{{tr|sentries}}就越多。一旦此{{tr|event}}结束，所有{{tr|Etherian Mana}}就会消失，无论是未收集起来的还是在玩家{{tr|inventory}}中的。
+
+在此{{tr|event}}开始时，玩家会收到 10 个{{tr|Etherian Mana}}，允许他们放置一个{{tr|sentry}}。注意不是从{{tr|the Tavernkeep}}处得到的{{tr|sentry}}（比如[[{{tr|Queen Spider Staff}}]]）不使用也不能使用{{tr|Etherian Mana}}，但可以单独召唤。
+
+来自{{tr|Tavernkeep}}的各种{{tr|sentry}}（[[{{tr|Flameburst sentry summons}}|{{tr|Flameburst}}]]、[[{{tr|Explosive Trap sentry summons}}|{{tr|Explosive Trap}}]]、[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]、[[{{tr|Ballista sentry summons}}|{{tr|Ballista}}]]）都有三种{{tr|tiers}}：{{tr|Rod}}、{{tr|Cane}}、和{{tr|Staff}}，其中{{tr|Staff}}是最贵也最强大的。
+
+一旦此{{tr|event}}在某个世界中成功完成，这些{{tr|the weapons}}就可以在此{{tr|the event}}之外按普通召唤规则使用。
+
+== 掉落 ==
+此{{tr|event}}中的每个{{tr|mini-boss}} 都会掉落[[{{tr|trophy}}]]（{{chance|1/10}} 几率）和[[{{tr|mask}}]]（{{chance|1/7}} 几率）。在[[{{tr|Expert mode}}]]中，[[{{tr|Betsy}}]]还会以 100% 几率掉落[[{{tr|Treasure Bag}}]]。
+
+{{tr|Mini-bosses}} 还会掉落[[{{tr|pets}}]]、[[{{tr|vanity items}}]]、和强力[[{{tr|weapons}}]]与[[{{tr|accessories}}]]。此{{tr|event}}期间掉落的所有[[{{tr|banners (enemy)}}|{{tr|enemy banners}}]]都有功能性，不过它们相较于其他{{tr|enemy banners}}提供的{{tr|buff}}要更弱，仅使玩家造成的伤害 +10%/{{expert|+20%}} 和受到的伤害 −5%/{{expert|−10%}}，且大部分{{tr|banner}}掉落所需的击杀数要更高。
+
+{{tr|Enemies}}不会掉落[[{{tr|Biome Key}}]]之类的{{tr|biome}}特定掉落物或[[{{tr|coin}}]]，即使具有诸如[[{{tr|Midas}}]]的效果或带着[[{{tr|Lucky Coin}}]]或其衍生物也是如此。它们同样不会在[[{{tr|Christmas}}]]时掉落[[{{tr|Present}}]]，也不会在[[{{tr|Halloween}}]]时掉落[[{{tr|Goodie Bag}}]]。<!-- However, they ''do'' have the universal {{chance|1/2500}} 几率 to drop a [[{{tr|Summoning items}}|{{tr|summoning item}}]] for any [[{{tr|Mechanical bosses}}]] that have not yet been defeated. Isn't true in 1.4, when it became false must be found-->
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=结构：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Eternia Crystal (NPC)|Eternia Crystal}}<!--
+			-->|{{item|Mysterious Portal|size=*0.25}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|mechanical bosses}}]] 前：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Etherian Goblin}}<!--
+			-->|{{item|Etherian Goblin Bomber}}<!--
+			-->|{{item|Etherian Javelin Thrower}}<!--
+			-->|{{item|Etherian Wyvern}}<!--
+			-->|{{item|Dark Mage}}<!--
+			-->|{{item|Old One's Skeleton|note2=（来自[[{{tr|Dark Mage}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=打败一个[[{{tr|mechanical boss}}]]后：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Kobold}}<!--
+			-->|{{item|Drakin}}<!--
+			-->|{{item|Kobold Glider}}<!--
+			-->|{{item|Wither Beast}}<!--
+			-->|{{item|Ogre|size=*0.75}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Golem}}]]后：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Etherian Lightning Bug}}<!--
+			-->|{{item|Betsy|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Eternia Crystal (NPC)}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Defender Medal}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自所有{{tr|enemies}}：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Etherian Mana}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dark Mage}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Apprentice's Scarf}}<!--
+			-->|{{item|Squire's Shield}}<!--
+			-->|{{item|War Table}}<!--
+			-->|{{item|War Table Banner}}<!--
+			-->|{{item|Dragon Egg}}<!--
+			-->|{{item|Gato Egg}}<!--
+			-->|{{item|Dark Mage Mask}}<!--
+			-->|{{item|Dark Mage Trophy}}<!--
+			-->|{{item|Dark Mage Relic|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->|{{item|Dark Mage's Tome|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Ogre}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Huntress's Buckler}}<!--
+			-->|{{item|Monk's Belt}}<!--
+			-->|{{item|Tome of Infinite Wisdom}}<!--
+			-->|{{item|Phantom Phoenix}}<!--
+			-->|{{item|Brand of the Inferno}}<!--
+			-->|{{item|Sleepy Octopod}}<!--
+			-->|{{item|Ghastly Glaive}}<!--
+			-->|{{item|Creeper Egg}}<!--
+			-->|{{item|Ogre Mask}}<!--
+			-->|{{item|Ogre Trophy}}<!--
+			-->|{{item|Ogre Relic|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->|{{item|Ogre's Club|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Betsy}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Flying Dragon}}<!--
+			-->|{{item|Sky Dragon's Fury}}<!--
+			-->|{{item|Aerial Bane}}<!--
+			-->|{{item|Betsy's Wrath}}<!--
+			-->|{{item|Betsy's Wings}}<!--
+			-->|{{item|Betsy Mask}}<!--
+			-->|{{item|Betsy Trophy}}<!--
+			-->|{{item|Treasure Bag (Betsy)|note2=（仅限[[{{tr|Expert mode}}]]）}}<!--
+			-->|{{item|Betsy Relic|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->|{{item|Betsy's Egg|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Old One's Army)| {{sound|track=Old One's Army}} |icons={{eicons|Old One's Army}} }}<!--
+			-->|{{item|Otherworldly Music Box (Invasion)| {{sound|track=Invasion (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 反作弊机制 ==
+* 在此{{tr|event}}期间，[[{{tr|Creative Shock}}]][[{{tr|debuff}}]]会阻止放置或挖掘{{tr|blocks}}。它也会阻止用[[{{tr|Bucket}}]]倒下或收集各种[[{{tr|liquids}}]]。
+* 所有{{tr|blocks}}：不能用{{tr|Blocks}}来完全阻止{{tr|event enemies}}推进。{{tr|Old One's Army enemies}}能进入“鬼魂”状态，能穿过{{tr|blocks}}移动。它们一开始生成时是处于这种状态下的，然后当它们和玩家之间没有通畅的路径时会重新进入这种状态。例如，如果玩家进入{{tr|arena}}下方的隧道中，{{tr|enemies}}会向下穿透{{tr|the blocks}}进入隧道。
+* {{item|Teleporter}}：{{tr|Event enemies}}不受{{tr|Teleporters}}影响。使其对此{{tr|event}}毫无用处。但是，玩家依然可以使用它们。
+* {{item|Lava}}：{{tr|Event enemies}}不会受到{{tr|Lava}}伤害，使其对此{{tr|event}}毫无用处。
+* {{item|Water}}、{{item|Honey}}、和{{item|Honey Block|s}}不会使{{tr|enemies}}减速。
+* {{item|Dart Trap|Traps}}：虽然{{tr|traps}}会正常伤害{{tr|event enemies}}，但它们的效率低于{{tr|sentries}}；{{tr|Traps}}还可能会让{{tr|sentries}}变得更加低效，因为{{tr|trap}}的攻击会给它们所击中的{{tr|enemies}}带来[[{{tr|invincibility frames}}]]，而{{tr|sentries}}不会。{{tr|Traps}}在{{tr|arena}}中{{tr|sentries}}够不着的地方仍然会有些用。
+
+依然可能的事情：
+* {{item|Actuator}}可用于在{{tr|the event}}开始后改变{{tr|arena}}。要记住，墙可能会导致{{tr|enemies}}直接穿过。<ref>见[[指南:{{tr|Old One's Army}}攻略]]页面上的[[指南:{{tr|Old One's Army}}攻略#{{tr|Actuator}}降落法|{{tr|Actuator}}降落法策略]]以了解避开防作弊机制的一种特定实现。</ref>
+* {{item|Ice Rod}}可以放置临时的{{tr|ice blocks}}。
+* 可以用{{item|Dirt Rod}}来移动战斗场地中的[[{{tr|Dirt Block}}]]。
+* 创建放置的{{tr|blocks}}的{{tr|Weapons and tools}}是可用的，会生成{{tr|block}}。但是，在{{tr|event}}结束前，这些{{tr|blocks}}无法用[[{{tr|tools}}]]移动。
+** {{item|Sandgun}}发射时依然会生成放置的[[{{tr|Sand Block}}]]。
+** {{item|Dirt Bomb|Dirt Bombs|icons=n}}和{{item|Sticky Dirt Bomb|s|icons=n}}可以使用，会生成放置的{{tr|Dirt Blocks}}。
+* {{item|Proximity Mine Launcher}}和[[{{tr|explosives (class)}}]]可以摧毁不防爆的{{tr|blocks}}。
+* 可以用{{item|Conveyor Belt|s|icons=n}}来将{{tr|Etherian Mana}}移向玩家。注意，它们不会像正常情况下那样移动{{tr|enemies}}，只会移动{{tr|the player}}。
+* {{item|Etherian Mana|icons=n}}可以被放置在[[{{tr|storage item}}]]（例如[[{{tr|Chest}}]]或[[{{tr|Piggy Bank}}]]）中，只要在{{tr|events}}之间不打开，就可以在将来的{{tr|events}}中使用它们。
+** 可以在启用[[{{tr|Autopause}}]]的情况下打开{{tr|storage item}}，以防止{{tr|Etherian Mana}}在{{tr|events}}之间消失。
+* {{item|Minecart Track|s}}可以放置在战斗场地中，允许玩家用[[{{tr|Minecarts}}]]碾压{{tr|enemies}}。
+
+== 波数图表 ==
+{{options/set|item|icons=n}}
+{| class="terraria" width=80%
+{{#vardefine:none|}}
+{{#vardefine:c1|style="background:#ff808070"}}
+{{#vardefine:c2|style="background:#60ee6070"}}
+{{#vardefine:c3|style="background:#8080ff70"}}
+{{#vardefine:vline|style="border-left:1px solid #a4caff70"}}
+{{#vardefine:colors|#ff808070#60ee6070#8080ff70#a4caff70}}
+! colspan=3 | 凡例
+|-
+! width=33% {{#var:c1}} | {{tr|Mechanical Boss}} 之前（T1）!! width=33% {{#var:c2}} | 打败了一个{{tr|Mechanical Boss}} 后（T2）!! width=33% {{#var:c3}} | {{tr|Golem}}后（T3）
+|}
+{| class="terraria" width=80%
+!width=300| {{tr|Enemy}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 1 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 2 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 3 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 4 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 5 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 6 波}} !! colspan="3" width="70" {{#var:vline}} | {{small|第 7 波}}
+|- <!-- Enemy   Waves: 1 2 3 4 5 6 7 -->
+{{/row|customrow=y|custom=所需的总击杀数{{footnote|注意所有{{tr|enemies}}在[[{{tr|Classic Mode}}]]中算作 1 次击杀，在[[{{tr|Expert Mode}}]]及以上算作 2 次击杀。}}{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.DD2Event.Difficulty_1_GetRequiredWaveKills / Terraria.GameContent.Events.DD2Event.Difficulty_2_GetRequiredWaveKills / Terraria.GameContent.Events.DD2Event.Difficulty_3_GetRequiredWaveKills}}<!--
+-->| 60|60|60  | 80|80|80 | 100|100|100 | 120|120|120 | {{#tag:abbr|140|title="至少需要杀死一个{{tr|Dark Mage}}"}}|140|140 | 0|180|180 | 0|{{#tag:abbr|220|title="至少需要杀死一个{{tr|Ogre}}"}}|{{#tag:abbr|∞|title="必须击败{{tr|Betsy}}"}} | colors={{#var:colors}}}}
+|-
+{{/row| Etherian Goblin |size=25px  | T123 | T123 | T123 | T123 | T123 | T23 | T23 | colors={{#var:colors}}}}
+|-
+{{/row| Etherian Goblin Bomber |size=20px | T3 | T13 | T12 | T1 | T123 | T23 | T23 | colors={{#var:colors}}}}
+|-
+{{/row| Etherian Javelin Thrower |size=25px | T23 | T23 | T123 | T123 | T1 | T23 | T3 | colors={{#var:colors}}}}
+|-
+{{/row| Etherian Wyvern |size=25px  | none | none | T23 | T123 | T12 | T2 | T2 | colors={{#var:colors}}}}
+|-
+{{/row| custom={{item|Dark Mage|size=35px}} + {{item|Old One's Skeleton|size=18px}} | | none | none | none | T3 | T1 | T3 | none | colors={{#var:colors}}}}
+|-
+{{/row| Kobold |size=30px   | none | T23 | T23 | T23 | T23 | T2 | T2 | colors={{#var:colors}}}}
+|-
+{{/row| Etherian Lightning Bug |size=35px | none | T3 | none | none | none | T3 | none | colors={{#var:colors}}}}
+|-
+{{/row| Drakin |size=40px   | none | none | T3 | T23 | T23 | T23 | T23 | colors={{#var:colors}}}}
+|-
+{{/row| Kobold Glider |size=40px  | none | none | none | T3 | T23 | T2 | T2 | colors={{#var:colors}}}}
+|-
+{{/row| Wither Beast |size=35px  | none | none | none | none | T3 | T23 | T23 | colors={{#var:colors}}}}
+|-
+{{/row| Ogre |size=35px   | none | none | none | none | T3 | T3 | T2 | colors={{#var:colors}}}}
+|-
+{{/row| Betsy |size=55px   | none | none | none | none | none | none | T3 | colors={{#var:colors}}}}
+|-
+{{/row|customrow=y|custom={{item|Etherian Mana}}奖励| 20|20|20 | 20|20|20 | 20|20|20 | 30|20|20 | 40|20|30 | 0|30|30 | 0|30|30 | colors={{#var:colors}}}}
+|-
+{{/row|customrow=y|custom={{item|Defender Medal}}奖励| none | none | 1|0|1 | 1|1|3 | 3|3|11 | 0|6|25 | 0|15|{{#tag:abbr|60|title="{{tr|Expert mode}}：另有来自{{tr|Betsy}}的{{tr|Treasure Bag}}的 30–49 个。"}} | colors={{#var:colors}}}}
+|}
+{{footnotelist}}
+
+== 装备图表 ==
+{{tr|The Old One's Army event}}带来了相关的装备。{{tr|The armor}}和{{tr|sentry weapons}}在[[{{tr|Tavernkeep}}]]处出售，可以用[[{{tr|Defender Medal}}]]来交换，而其他的{{tr|weapons}}和{{tr|accessories}}掉落自{{tr|event}}中的{{tr|enemies}}。虽然所有装备都能与同一职业的其他装备协作，但这种协作的唯一具体好处是相应{{tr|armor set bonus}}给予每个{{tr|sentry}}的{{tr|buffs}}；不管是{{tr|weapons}}还是{{tr|accessories}}都不会涉及到任何额外的独特加成，因此可以随玩家的喜好与任意其他{{tr|armor}}使用或者交换任何其他武器。
+
+{{tr|Tier 2}}物品在打败了一个[[{{tr|Mechanical boss}}]] 后可用，而 {{tr|Tier 3}}物品在打败了[[{{tr|Golem}}]]后可用。
+
+{| class="terraria lined"
+! 职业
+! {{tr|Sentries}}
+! 二级{{tr|Armor}}
+! 三级{{tr|Armor}}
+! 二级{{tr|Weapon}}
+! 三级{{tr|Weapon}}
+! {{tr|Accessory}}
+|-
+! 学徒
+（{{tr|magic}}）
+| {{item|mode=image|Flameburst Rod}} {{item|mode=image|Flameburst Cane}} {{item|mode=image|Flameburst Staff}}<br/><center>[[{{tr|Flameburst sentry summons}}|{{tr|Flameburst}}]]</center>
+| {{item|Apprentice armor}}
+| {{item|Dark Artist armor}}
+| {{item|Tome of Infinite Wisdom|size=30px}}
+| {{item|Betsy's Wrath|size=30px}}
+| {{item|Apprentice's Scarf}}
+|-
+! 女猎人
+（{{tr|ranged}}）
+| {{item|mode=image|Explosive Trap Rod}} {{item|mode=image|Explosive Trap Cane}} {{item|mode=image|Explosive Trap Staff}}<br/><center>[[{{tr|Explosive Trap sentry summons}}|{{tr|Explosive Trap}}]]</center>
+| {{item|Huntress armor}}
+| {{item|Red Riding armor}}
+| {{item|Phantom Phoenix|size=20px}}
+| {{item|Aerial Bane|size=25px}}
+| {{item|Huntress's Buckler}}
+|-
+! 和尚
+（轻{{tr|melee}}）
+| {{item|mode=image|Lightning Aura Rod}} {{item|mode=image|Lightning Aura Cane}} {{item|mode=image|Lightning Aura Staff}}<br/><center>[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]</center>
+| {{item|Monk armor}}
+| {{item|Shinobi Infiltrator armor}}
+| {{item|Sleepy Octopod|size=35px}} /{{item|Ghastly Glaive|size=35px}}
+| {{item|Sky Dragon's Fury|size=35px}}
+| {{item|Monk's Belt}}
+|-
+! 侍卫
+（坦{{tr|melee}}）
+| {{item|mode=image|Ballista Rod}} {{item|mode=image|Ballista Cane}} {{item|mode=image|Ballista Staff}}<br/><center>[[{{tr|Ballista sentry summons}}|{{tr|Ballista}}]]</center>
+| {{item|Squire armor}}
+| {{item|Valhalla Knight armor}}
+| {{item|Brand of the Inferno|size=30px}}
+| {{item|Flying Dragon|size=35px}}
+| {{item|Squire's Shield}}
+|}{{options/reset|item}}
+
+== {{tr|Status messages}} ==
+所有和{{tr|Old One's Army event}}相关的独特[[{{tr|status messages}}]]如下。
+
+'''当{{tr|Eternia Crystal}}被摧毁：'''
+* “{{gameText|DungeonDefenders2.InvasionLose}}”
+
+'''当完成了第一波：'''
+* “{{gameText|DungeonDefenders2.WaveCompleteFirst}}”
+
+'''当完成了一波：'''
+* “{{gameText|DungeonDefenders2.WaveComplete}}”
+
+'''当{{tr|Eternia Crystal Stand}}放置在不恰当的位置：'''
+* “{{gameText|DungeonDefenders2.BartenderWarning}}”
+
+== 备注 ==
+* {{tr|The Eternia Crystal}}在不受伤害时会以非常慢的速度恢复{{tr|health}}。
+* {{tr|Eternia Crystal}}在[[{{tr|Expert Mode}}]]拥有 2 倍{{tr|health}}，在[[{{tr|Master Mode}}]]拥有 3 倍{{tr|health}}。
+* 将{{tr|Mechanical Boss}} 的{{tr|summoning item}}带到[[{{tr|Pre-Hardmode}}]]的世界中并击败一个{{tr|Mechanical Boss}} 依然只会产生 {{tr|Tier 1}}的{{tr|Old One's Army}}。
+* 诸如[[{{tr|Spiky Ball Traps}}]]或[[{{tr|Super Dart Traps}}]]之类的{{tr|traps}}会对{{tr|Eternia Crystal}}造成少量伤害。
+* 如果在召唤{{tr|Old One's Army}}之前用常规的[[{{tr|mana}}]]召唤了[[{{tr|Tavernkeep's sentries}}]]，它们会在{{tr|event}}开始时消失。常规的{{tr|sentries}}不会消失。
+* {{tr|event}}的“通过”状态由{{tr|Eternia Crystal}}周围环绕白色光芒和{{tr|music}}改变所指示，此时{{tr|event}}即视为胜利，即使{{tr|enemies}}前往接触{{tr|Eternia Crystal}}或玩家死亡也如此。如果遗留的{{tr|sentries}}干掉了最终 {{tr|boss}}，此{{tr|event}}甚至可以在玩家死后获胜。
+** 对于 {{tr|Tier 1}}和 {{tr|Tier 2}}，玩家可以通过击杀{{tr|enemies}}来推进最后一波的进度，但必须至少击败一个其对应的最终 {{tr|bosses}} 来通过{{tr|event}}。
+** 对于 {{tr|Tier 3}}，{{tr|the event}}在[[{{tr|Betsy}}]]被击败后即视为通过，无论此时剩余多少{{tr|enemies}}。
+* {{tr|Betsy}}会在屏幕外的地面上生成，而非生成在[[{{tr|Mysterious Portal}}]]处。
+* 四个强化{{tr|sentry}}的{{tr|accessories}}具有相同的效果且不会互相叠加。它们仅有外观不同，各自和一套 {{tr|Tier 2 armor sets}}相匹配。
+* 如果玩家在[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]被打破时击杀了 {{tr|boss}}，游戏依然会将{{tr|event}}视为失败，玩家不会得到[[{{tr|Defender Medal}}]]，也没有胜利讯息。但是，这样打败的 {{tr|bosses}} 依然会掉落其独特战利品。
+* 所有的伤害性{{tr|traps}}（[[{{tr|Land Mine}}]]除外）仅能对来自{{eil|Old One's Army}}[[{{tr|event}}]]的{{tr|enemies}}造成基础{{tr|damage}}的 50%。下表列出了所有伤害性{{tr|traps}}的{{tr|projectile}}：{{source code ref|v=1.4.4.9|{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage|field=Terraria.ID.NPCID.Sets.BelongsToInvasionOldOnesArmy}}}}
+{{#arraydefine:projectiles|98,99,108,184,185,186,187,188,654,655,727,980,1002,1005,1007,1013,1014|,}}<!--
+-->{{options/set|item|icons=no}}<!--
+-->{{#dplvar:set<!--
+-->|source_98|{{item|Dart Trap}}<!--
+-->|source_99|{{item|Boulder}}<br/>{{item|Rock Golem|size=20px|note2=（[[{{tr|For the worthy}}]] / [[{{tr|Get fixed boi}}]]）}}<!--
+-->|source_108|{{item|Explosives}}<!--
+-->|source_184|{{item|Super Dart Trap}}<!--
+-->|source_185|{{item|Spiky Ball Trap}}<!--
+-->|source_186|{{item|Spear Trap}}<!--
+-->|source_187|{{item|Flame Trap}}<!--
+-->|source_188|{{item|Flame Trap}}<!--
+-->|source_654|{{item|Geyser}}<!--
+-->|source_655|{{item|Bee Hive}}<!--
+-->|source_727|{{item|Rolling Cactus}}<!--
+-->|source_980|{{item|Venom Dart Trap}}<!--
+-->|source_1002|{{item|TNT Barrel}}<!--
+-->|source_1005|{{item|Boulder|note2=（[[{{tr|For the worthy}}]] / [[{{tr|Get fixed boi}}]]）<br/>（在常规[[{{tr|Boulder}}]]碎裂时生成。）}}<!--
+-->|source_1007|{{item|Gas Trap}}<!--
+-->|source_1013|{{item|Bouncy Boulder}}<!--
+-->|source_1014|{{item|Life Crystal Boulder}}<!--
+-->}}
+{| class="terraria lined"
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]]
+! colspan=2 | {{tr|Projectile}}
+! 来源
+{{#arrayprint:projectiles||@@@|<!--
+--><tr><!--
+	--><td>@@@</td><!--
+	--><td>[[File:{{projectileinfo|@@@|image}}|link=]]</td><!--
+	--><td>{{projectileinfo|@@@|name}}</td><!--
+	--><td>{{#dplvar:source_@@@}}</td><!--
+--></tr>}}
+|}{{options/reset|item}}
+
+== 成就 ==
+{{achievement|name=Hero of Etheria}}
+
+== 小贴士 ==
+{{strategies}}
+* 由于[[{{tr|Creative Shock}}]][[{{tr|debuff}}]]，所有用于准备战斗场地的建造工作都需要事先完成。在此{{tr|event}}发生时不可能放置或移除{{tr|blocks}}或{{tr|furniture}}，即使是在各波之间也不能。
+* 在此{{tr|event}}期间，玩家可以组合使用两种有不同限制的{{tr|sentry}}：
+** 常规{{tr|sentries}}（[[{{tr|Houndius Shootius}}]]、[[{{tr|Queen Spider Staff}}]]等等）会照常运作：玩家支付适量的[[{{tr|mana}}]]，每个{{tr|sentry}}持续正常的 10 {{tr|minutes}}。默认情况下，玩家一次只能召唤一个{{tr|sentries}}，但{{tr|Tavernkeep armor}}及其他[[{{tr|Summon weapons}}#增强装备|装备]]可让玩家召唤更多。
+** 在{{tr|event}}期间，{{tr|Tavernkeep sentries}}不使用（且不能用）常规的{{tr|mana}}进行召唤。取而代之的是，玩家需要花费 10 个此{{tr|event}}的[[{{tr|Etherian Mana}}]]。{{tr|Etherian Mana}}补给是''唯一''限制玩家召唤{{tr|sentry}}数量的因素，并且它们会持续到{{tr|event}}结束（在{{tr|event}}外它们会和其他{{tr|sentry}}一样运作）。
+** 一般来说，玩家在没有同等级{{tr|Tavernkeep sentry}}的情况下很难完成一次{{tr|Old One's Army}}；对于后面的级别，拥有一套{{tr|Tavernkeep armor}}也会有所助益。玩家会免费得到一个 {{tr|Tier 1}}{{tr|sentry}}；存下 {{iteminfo|Flameburst Cane|buy}} 将允许玩家在面对 {{tr|Tier 2}}的{{tr|Old One's Army}}之前购买一个 {{tr|Tier 2 sentry}}。如果能够存足 {{setinfo|Apprentice armor|buy|note=n}}，就能预先购买 {{tr|Tier 2 armor}}。在 {{tr|Tier 2}}中，应当集中精力收集至少 {{iteminfo|Flameburst Staff|buy}} 来购买 {{tr|Tier 3 sentry}}——再收集 {{setinfo|Dark Artist armor|buy|note=n}} 就能也买下{{tr|armor}}。注意{{tr|the sentries and the armor}}对于常规游戏过程也是很有用的。
+* 如果玩家处于{{tr|a Hardmode}}、非[[{{tr|Expert Mode}}]]{{tr|world}}中但尚未打败任何{{tr|mechanical boss}}，可以用[[{{tr|Blessed Apple}}]]或[[{{tr|Ancient Horn}}]]{{tr|mount}}轻松地刷此{{tr|event}}，只需要来回奔跑即可。{{tr|the mounts}}在冲锋时造成的伤害能够一击杀死除了[[{{tr|Dark Mage}}]]外的所有{{tr|enemies}}
+
+== 花絮 ==
+* 由于取整，有可能在{{tr|Betsy}}具有极低{{tr|health}}但尚未被击败时就完成 {{tr|Tier 3}}的{{tr|Old One's Army}}。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.DD2Event.Difficulty_3_GetRequiredWaveKills}}
+* [[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]随着受到伤害提高会逐渐地生出裂纹。
+* 在[[{{tr|bestiary}}]]中，许多{{tr|enemies}}的条目会展示其 {{tr|Tier 3}}的{{tr|variant}}（包括其属性），即使尚未到达这个级别。
+* 在游戏文件中可找到一个名叫 [[DD2AttackerTest]]（{{tr|DD2AttackerTest}}）的[[{{tr|Unused NPCs}}]]。它看起来和[[{{tr|Angry Tumbler}}]]{{tr|enemy}}完全相同。
+
+== 另见 ==
+* {{dd2 link|Old Ones|撒旦（Old Ones）}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Etherian Lightning Bug}}现在会取代{{tr|Etherian Wyvern}}生成在 {{tr|tier 3}}{{tr|Old One's Army}}的第 6 波
+** {{tr|Eternia Crystal}}现在在{{tr|Expert Mode}}拥有 2 倍{{tr|health}}，在{{tr|Master Mode}}拥有 3 倍{{tr|health}}。}}
+{{history|Desktop 1.3.4.4| 修正了{{tr|enemies}}在{{tr|multiplayer}}中如果距离玩家过远时会隐身生成的情况。}}
+{{history|Desktop 1.3.4.3|修正了 {{tr|tier 3}}未给[[{{tr|Eternia Crystal Stand}}]]正确关联{{tr|health}}的问题。}}
+{{history|Desktop 1.3.4.2|修正了{{tr|portals}}不发光的问题。}}
+{{history|Desktop 1.3.4.1|
+** 修正了[[{{tr|Defender Medal}}]]在[[{{tr|Multiplayer}}]]中只会掉落 1 个而非预期数量的问题。
+** 修正了一些{{tr|enemies}}在[[{{tr|Multiplayer}}]]中不可见的问题。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+{{language info|en=Old One's Army}}

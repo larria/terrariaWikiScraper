@@ -1,0 +1,40 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4272
+| idprojectile = 757, 928
+| listcat = flails
+| tags = drop / hardmode
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Drippler Crippler}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|flail}}]]，掉落自[[{{tr|Blood Eel}}]]。使用时，它会在玩家周围旋转，也可以向外丢出，在拉回之前造成较高伤害。丢出时，它还会发射一枚可以弹跳、并会受{{tr|gravity}}影响的{{tr|projectile}}，造成{{tr|weapon}}面板 {{percent|50%}} 的{{tr|damage}}({{#expr:floor({{iteminfo|Drippler Crippler|damage}}/2)}} {{tr|base damage}})。<!-- Internally, the ball projectile's damage is the same as the flail's damage, but the flail's damage is doubled in its tooltip (see [[Flails#Thrown]]). -->{{tr|projectiles}}受重力影响较大，并会在实体[[{{tr|block}}]]上弹射两次或击中两个[[{{tr|enemies}}]]后消失。
+
+{{modifier|meleealt}}
+
+== 小贴士 ==
+* 此{{tr|weapon}}虽然是{{tr|Hardmode}}早期的{{tr|weapon}}，但拥有极高的{{tr|base damage}}，使得此{{tr|flail}}在{{tr|Hardmode}}中期也很有用。
+* 和所有{{tr|flails}}一样，{{tr|Drippler Crippler}}清理大群{{tr|enemy}}或攻击{{tr|hitboxes}}较大的{{tr|enemy}}时非常有效。
+
+== 花絮 ==
+{{float file box|width=7em|[[File:Drippler Crippler chain.png]]|六节{{tr|chain}}。}}
+* {{tr|Drippler Crippler}}的球形{{tr|projectile}}很像它的名称来源：[[{{tr|Drippler}}]]的外观。
+* 虽然它的名称如此，它对{{tr|Dripplers}}不会造成更高伤害。不过，在[[{{tr|Classic Mode}}]]中{{tr|Dripplers}}只有 {{npcinfo|Drippler|hp}} 点生命值和 {{npcinfo|Drippler|defense}} 点{{tr|defense}}；只要有任意数值的伤害加成，即使是“旋转”攻击的减半伤害也能一击杀死{{tr|Drippler}}。
+* {{tr|chain}}上的图案总是相同的，并且每六节就会循环一次。
+* {{tr|Drippler Crippler}}是能够额外地发射{{tr|projectiles}}的三种{{tr|flails}}之一，另外两种是[[{{tr|Flower Pow}}]]和[[{{tr|Flairon}}]]。其中，{{tr|Drippler Crippler}}也是唯一不能自动锁定目标的，但它能够最早获得。
+[[File:Drippler Crippler (demo).gif|frame|right|使用中的{{tr|Drippler Crippler}}。]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Flails}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Drippler Crippler}}

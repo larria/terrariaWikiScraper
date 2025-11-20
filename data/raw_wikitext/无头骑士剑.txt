@@ -1,0 +1,66 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1826
+| idprojectile = 321, 997
+| listcat = broadswords / projectile melee
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:The Horseman's Blade (demo).gif|frame|使用{{tr|The Horseman's Blade}}攻击[[{{tr|Target Dummy}}]]、[[{{tr|Zombie}}]]、和[[{{tr|Mimic}}]]。注意{{tr|projectiles}}会自动导向目标，以及{{tr|The Horseman's Blade}}一次只能击中三个{{tr|enemies}}。]]
+
+'''{{tr|The Horseman's Blade}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|sword}}]]。它在挥舞时还会在周围产生一圈大范围的橙色斩击，显著提高了它对{{tr|enemies}}造成伤害的范围，并且能覆盖到玩家身后。不过，和可击中所有在{{tr|melee}}范围内的{{tr|enemies}}的大部分[[{{tr|broadswords}}]]不同，{{tr|the Horseman's Blade}}每次挥舞最多只能击中三个目标。在击中一个{{tr|enemy}}后，{{tr|the Horseman's Blade}}会召唤一个{{tr|Flaming Jack}}：能自动追踪的南瓜头{{tr|projectile}}，会穿过{{tr|solid blocks}}来攻击最接近的目标。{{tr|Flaming Jacks}}具有和{{tr|sword}}本身相同的伤害和[[{{tr|critical strike chance}}]]。{{tr|The Horseman's Blade}}掉落自[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]中的[[{{tr|Pumpking}}]]，掉落率为 2.5–12.5%（{{expert|6.25–12.5%}}），具体取决于当前波数。<ref>每波的详细掉落率：{{pumpkin moon item drop rates|1/8|fromwave=10|towave=20}}参见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]以获取详细信息。</ref>
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=The Horseman's Blade|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Flaming Jack}}会在屏幕外的随机位置生成，以 {{mph|8 pixels}} 的速度直线飞行。它会以使其生成的{{tr|enemy}}作为目标并追踪它，不过它可能会击中其路径上的另一{{tr|enemy}}。如果目标{{tr|enemy}}在{{tr|Flaming Jack}}到达前死亡，它会以 62.5 格内最近的{{tr|enemy}}（从{{tr|enemy}}的{{tr|hitbox}}中心起计算）作为目标。如果第二个目标也死亡了，{{tr|Flaming Jack}}会再次选择最近的目标，以此类推。如果不存在目标，它会按当前路径行进，直到在屏幕外消失。{{source code ref|v=1.4.4.9|method=Terraria.Player.HorsemansBlade_SpawnPumpkin / Terraria.Projectile.AI|t=在 <code>Terraria.Projectile.AI</code> 中的相关代码段为 <code>aiStyle == 55</code>。}}
+* {{tr|The Horseman's Blade}}击中[[{{tr|critters}}]]或[[{{tr|statue}}]]生成的{{tr|enemies}}时无法召唤出{{tr|Flaming Jack}}。
+* {{tr|The Horseman's Blade}}总是会将{{tr|enemies}}击退向远离玩家的方向，无论其挥舞方向。
+* 玩家在挥舞此{{tr|sword}}时无法转身，类似于[[{{tr|Excalibur}}]]、[[{{tr|Night's Edge}}]]、[[{{tr|Keybrand}}]]、和[[{{tr|Falcon Blade}}]]。
+* {{tr|The sword}}在黑暗中可见，但不会照亮其他物体。
+* {{tr|Flaming Jacks}}可能会跟踪[[{{tr|Spike Ball}}]]、[[{{tr|projectile NPC}}|{{tr|projectiles enemy}}]]（如[[{{tr|chaos ball}}]]或[[{{tr|Vile Spit}}]]）、甚至是被捆绑的 [[{{tr|NPC}}]]。
+* {{tr|Flaming Jacks}}不会在 [[{{tr|PvP}}]] 时生成，也不会追踪其他{{tr|player}}，但如果它们刚好接触到其他{{tr|player}}，则能对他们造成{{tr|damage}}。
+
+== 小贴士 ==
+* 虽然叫做''{{tr|The Horseman's Blade}}''，它是由{{tr|Pumpking}}掉落的，而非[[{{tr|Headless Horseman}}]]。
+* 用{{tr|The Horseman's Blade}}攻击大型的多{{tr|segment}}{{tr|enemy}}，像是[[{{tr|Destroyer}}]]或[[{{tr|Wyvern}}]]，会召唤出许多的{{tr|Flaming Jack}}，因为它们的每个{{tr|segment}}都可被攻击，因此被视为不同的目标。
+* 由于{{tr|Flaming Jacks}}可追踪{{tr|enemies}}，此{{tr|weapon}}在很多时候都能派上用场，比如在[[{{tr|Hardmode Dungeon}}]]和[[{{tr|Events}}]]中攻击成群的{{tr|enemy}}。
+* 穿着全套[[{{tr|Frost armor}}]]或[[{{tr|Fire Gauntlet}}]]（或者使用多种可使{{tr|weapon}}挥舞时发光的[[{{tr|flasks}}]]中的一种）会让{{tr|Flaming Jacks}}也发光。这一点和追踪且穿墙的{{tr|projectiles}}使它很适合探索或寻找资源。
+* 与[[{{tr|Terra Blade}}]]相比，{{tr|The Horseman's Blade}}的强力[[{{tr|knockback}}]]和自动追踪{{tr|projectile}}能弥补一些它在攻速和伤害上的不足。
+
+== 花絮 ==
+* 被放在[[{{tr|Weapon Rack}}]]上时，{{tr|The Horseman's Blade}}看起来比其他{{tr|swords}}大很多。
+* {{modifier|prefixnote}}
+* 即使在[[{{tr|Moon Lord}}]]身上的三只眼睛都被干掉时，{{tr|Flaming Jacks}}仍然会聚集在他的双手和头部位置。
+* 南瓜{{tr|projectiles}}（{{tr|Flaming Jack}}）的英文名称（Flaming Jack）中的“Jack”可能是{{维基百科|Jack-o'-lantern|t=南瓜灯}}的缩写，这是通常由南瓜制成的雕刻灯笼的名字。
+* {{tr|The Horseman's Blade}}（以及[[{{tr|Headless Horseman}}]]{{tr|enemy}}）参考了 1820 年由美国作家{{维基百科|Washington Irving|t=华盛顿·欧文}}创作的哥特小说{{维基百科|The Legend of Sleepy Hollow|t=沉睡谷传奇/睡谷的传说}}中的无头骑士。在故事的高潮部分，主角被无头骑士追赶，无头骑士最终把头扔向了他。后来发现这颗头实际上是一个南瓜。这个故事被引用了许多次，也由于{{维基百科|Jack-o'-lantern|南瓜灯}}跟万圣节产生了联系。在迪士尼 1949 年的改编电影{{维基百科|b=y|The Adventures of Ichabod and Mr. Toad|t=伊老师与小蟾蜍大历险}}中，它作为一个着火的南瓜灯出现，类似于此{{tr|item}}的{{tr|projectiles}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|修复了{{tr|The Horseman's Blade}}{{tr|projectiles}}即使本不应攻击{{tr|critters}}，但有时也会选择{{tr|critters}}作为目标的问题。}}
+{{history|Desktop 1.4.4|
+** {{tr|Flaming Jacks}}不再在击中{{tr|Statue}}生成的{{tr|enemies}}产生。
+** {{tr|Flaming Jacks}}只造成 100% {{tr|weapon damage}}而非 150%。
+** 当{{tr|the Horseman's Blade}}触发[[{{tr|Striking Moment}}]]{{tr|buff}}时，生成的{{tr|Flaming Jacks}}不再继承{{tr|damage}}提升。
+** {{tr|The Horseman's Blade}}现在在剑刃周围有一圈伤害性能量区域；可以在更大、更广的区域内造成伤害，并且更好地覆盖玩家身后
+** 现在每次挥舞最多击中三个目标。
+** {{tr|Damage}}由 75 提升至 150。}}
+{{history|Desktop 1.4.0.1|
+** 现在用于制作[[{{tr|Zenith}}]]。
+** {{tr|Flaming Jacks}}不再能触发{{tr|Striking Moment buff}}，以防止{{tr|Flaming Jacks}}的伤害被此{{tr|buff}}提高两次。}}
+{{history|Desktop 1.3.0.3|修复了击中[[{{tr|Lunar Events}}]]{{tr|enemies}}时不产生{{tr|Flaming Jacks}}的问题。}}
+{{history|Desktop 1.2.1.1|现在可{{tr|reforge}}。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=The Horseman's Blade}}

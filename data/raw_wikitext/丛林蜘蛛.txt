@@ -1,0 +1,90 @@
+{{npc infobox
+| auto = 236
+| id = 236 (地面), 237 (墙上)
+| image = Jungle Creeper.gif
+| image2 = Jungle Creeper (ground) (old).png
+| imageother = Jungle Creeper2.gif
+| imageothercaption = 在墙上
+| environment = Underground Jungle
+| ai = {{tr|Fighter AI}} {{note|small=y|paren=y|地面}}<br/>{{tr|Spider AI}} {{note|small=y|paren=y|墙上}}
+| damage2 = &#32;{{eicons|1.4.1|small=y}} / 50 <!--
+	-->{{modes|wrap=n<!--
+		-->|normal={{eicons|1.4.1|invert=y|small=y}}<!--
+	-->}}<!--
+	--><br/>{{modes|wrap=n<!--
+		-->|expert={{expert|36}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}} {{eicons|1.4.1|small=y}}<!--
+		-->|master={{expert|36}} {{note|small=y|paren=y|{{gameText|ProjectileName.WebSpit}}}} {{eicons|1.4.1|small=y}}<!--
+	-->}}
+| life2 = &#32;{{eicons|1.4.1|small=y}} / 120 <!--
+	-->{{modes|wrap=n<!--
+		-->|normal={{eicons|1.4.1|invert=y|small=y}}<!--
+	-->}}
+| defense2 = &#32;{{eicons|1.4.1|small=y}} / 14 <!--
+	-->{{modes|wrap=n<!--
+		-->|normal={{eicons|1.4.1|invert=y|small=y}}<!--
+	-->}}
+| debuff = Acid Venom
+| debuffchance = 10% {{eicons|1.4.1|small=y}}
+| debuffduration = {{modes|{{duration|4}}|{{duration|8}}|{{duration|10}}}}
+| debuff2 = Webbed | debuffmode2 = expert
+| debuffchance2 = 100% {{note|paren=y|{{gameText|ProjectileName.WebSpit}}}} {{eicons|1.4.1|small=y}}
+| debuffduration2 = {{duration|rawseconds=0.5–2.5}}
+| idprojectile = 472#expert
+| hardmode = yes
+| sound1 = Item 17.wav
+| soundcaption1 = {{gameText|ProjectileName.WebSpit}}
+| soundmode1 = expert
+| cate = no
+| cargo = no | cargodrops = yes
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view = void
+| auto = 236
+| image = Jungle Creeper.gif
+| environment = Underground Jungle
+| cate = force
+| hardmode = yes
+}}<!--
+-->{{npc infobox | view = void
+| auto = 237
+| image = Jungle Creeper2.gif
+| environment = Underground Jungle
+| cate = force
+| hardmode = yes
+}}
+
+'''{{tr|Jungle Creeper}}'''是[[{{tr|Underground Jungle}}]]中的一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。它的外表类似[[{{tr|Black Recluse}}]]，棕色的，带一点绿色。它们爬在[[{{tr|background walls}}]]上，类似于[[{{tr|Wall Creeper}}]]。
+
+{{eicons|1.4.1}} 它可以造成[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]，在[[{{tr|Expert Mode}}]]中还会获得一种特殊的唾液攻击，对玩家施加[[{{tr|Webbed}}]][[{{tr|debuff}}]]。在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，唾液攻击会随机将[[{{tr|Cobweb}}]]放置在以{{tr|projectiles}}消失处为中心的、13×13 的矩形区域中。
+
+== 备注 ==
+* 像所有的{{tr|spider}}一样，{{tr|Jungle Creepers}}不能穿过垂直的 2 格高的{{tr|Block}}。
+* {{eicons|1.4.1|invert=y|short=y}} {{tr|Jungle Creepers}}似乎比同时期的大多数{{tr|enemies}}都要弱一些，比起威胁来说更像是麻烦。
+* {{eicons|1.4.1}} 两次{{tr|web spit attacks}}之间的{{tr|cooldown}}时间为 3 {{tr|seconds}}。如果{{tr|Jungle Creeper}}丢失了与玩家之间的视线，那么这一{{tr|cooldown}}时间会暂停。每到{{tr|Jungle Creeper}}受到伤害时，这一{{tr|cooldown}}时间会随机增加 0.33 到 1 {{tr|second}}。{{source code ref|name=ai|v=1.4.1.1|method=Terraria.NPC.AI}}
+
+== 花絮 ==
+* {{eicons|1.4.1}} {{tr|The Jungle Creeper}}是游戏中最强大的[[:Category:{{tr|Spider AI NPCs}}|{{tr|spider enemy}}]]，比{{tr|Black Recluse}}、[[{{tr|Blood Crawler}}]]和{{tr|the Wall Creeper}}都要强。
+{{bestiary}}
+* 参考了流行童谣《{{wikipedia|Itsy Bitsy Spider}}》。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Defense}}由 40 降低至 28。}}
+{{history|Desktop 1.4.1|
+** {{tr|Sprites updated.}}
+** 属性略微增加：伤害由 50 提升至 100、{{tr|defense}}由 14 提升至 40、最大生命值由 120 提升至 400、移动速度增加、造成{{tr|Acid Venom debuff}}、在{{tr|Expert}}/{{tr|Master}}中可以施放{{tr|web spit attacks}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spiders}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Jungle Creeper}}

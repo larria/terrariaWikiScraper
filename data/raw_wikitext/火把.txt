@@ -1,0 +1,276 @@
+{{legacy nav tab}}
+{{item infobox
+| imagealt = [[File:Torch.png]]<br/>[[File:Purple Torch.png]] [[File:Yellow Torch.png]] [[File:Blue Torch.png]] [[File:Green Torch.png]] [[File:Red Torch.png]] [[File:Orange Torch.png]] [[File:White Torch.png]] [[File:Pink Torch.png]] [[File:Ice Torch.png]] [[File:Cursed Torch.png]]<br/>[[File:Ichor Torch.png]] [[File:Demon Torch.png]] [[File:Rainbow Torch.png]] [[File:Ultrabright Torch.png]] [[File:Bone Torch.png]] [[File:Desert Torch.png]] [[File:Coral Torch.png]] [[File:Corrupt Torch.png]] [[File:Crimson Torch.png]] [[File:Hallowed Torch.png]] [[File:Jungle Torch.png]]
+| type = Furniture / Light source
+| placeable = yes
+| width = 1 | height = 1
+| use = {{iteminfo|8|use}}
+| tooltip = {{itemTooltip|8}}
+| rare = {{iteminfo|8|rare}}
+| stack = {{iteminfo|8|stack}}
+| idtile = {{iteminfo|8|tile}}
+| consumable = yes
+| tags = Vendor / Loot / Plunder / Drop
+| cargo = no
+}}
+{{quotation|[[File:Emote Town Merchant.gif|link=]] [[{{tr|Merchant}}]]|{{gameText|LegacyDialog.5}}}}
+[[File:Holding torch.gif|frame|right|{{tr|Torch}}可以使用 {{key|open}} 来拾起，并且手持时可以点亮玩家周围。]]
+[[File:Torch put out.gif|frame|right|当玩家手持{{tr|Torch}}进入水中，{{tr|Torch}}就会熄灭，即使水面碰不到{{tr|torch}}，只到达玩家的腰的高度。]]
+
+'''{{tr|Torch}}'''是一种[[{{tr|furniture}}]]{{tr|items}}，可在[[{{tr|placed}}]]、手持、或（通过 {{key|throw}} 键）掉落时发光，而且在游戏的各个阶段都很关键，是主要的[[{{tr|light source}}]]。{{tr|Torch}}可永久地发光，而且不会熄灭。普通{{tr|Torch}}可以随机在[[{{tr|Chest}}]]和[[{{tr|Pot}}]]中发现、可作为[[{{tr|Slime}}]]的[[{{tr|Bonus drops}}|{{tr|bonus drop}}]]掉落、或从[[{{tr|Merchant}}]]或[[{{tr|Skeleton Merchant}}]]处以每个 {{iteminfo|Torch|buy}} 的价格购买。
+
+{{tr|Torch}}可以放置在大部分的[[{{tr|block}}]]两侧或是上方，也可以放置在[[{{tr|wall}}]]上、[[{{tr|tree}}]]上和[[{{tr|Wooden Beam}}]]的两侧，还可以被放置在任意种类的[[{{tr|Platform}}]]上。被放置的{{tr|Torch}}可以通过 {{key|open}} 键或使用任意[[{{tr|Pickaxe}}]]或[[{{tr|Drill}}]]来进行回收。若{{tr|Torch}}所附着的{{tr|block}}被破坏，则{{tr|Torch}}会附着在其他相邻的{{tr|block}}或{{tr|wall}}上。若{{tr|torch}}周围的所有{{tr|blocks}}（左侧、右侧、下方）都被移除，且{{tr|torch}}的后方没有{{tr|wall}}，它会像所有其他{{tr|item}}一样掉落。
+
+{{tr|Torches}}也是一种[[{{tr|mechanisms}}]]，可通过[[{{tr|Wire}}]]来控制开关。
+
+在[[{{tr|surface}}]]{{tr|layer}}以下的任意[[{{tr|biome}}]]中密集地放置至少 101 个{{tr|torches}}会开始[[{{tr|the Torch God}}]]迷你{{tr|event}}。完成{{tr|event}}会奖励[[{{tr|Torch God's Favor}}]]，它允许玩家自动将普通{{tr|torches}}转化为其{{tr|biome}}{{tr|variant}}之一。
+__TOC__
+{{-}}
+== 类型 ==
+{{options/snap|item|for_torch_table}}
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/idtile-sortbysubid/col:color/sell-alignright/col:notes|extargs=rowspan}}
+{| class="terraria lined sortable" id="torches-table"
+! rowspan=2 colspan= 2 | 类型
+! rowspan=2 data-sort-type=number | 图格 ID
+! colspan=5 | 颜色变动（{{维基百科|RGB}}）<ref>仅适用于“彩色”和“迷幻”[[{{tr|lighting mode}}]]。</ref>{{source code ref|v=1.4.0.4|method=TerrariaID.TorchID.Initialize / Terraria.Main.DoUpdate_AnimateTileGlows / Terraria.Main.DoUpdate_AnimateDiscoRGB}}
+! rowspan=2 data-sort-type=number | {{tr|Sell value}}
+! rowspan=2 | {{tr|Notes}}
+|-
+! data-sort-type=number | 红（R）
+! data-sort-type=number | 绿（G）
+! data-sort-type=number | 蓝（B）
+! align=center | 适用于：<ref>此列代表{{tr|torch}}处于完全点亮的白色{{tr|tile}}时的颜色变动。注意着仅是将上述颜色变动在理论上可视化的结果；游戏内的颜色几乎总是更暗、更淡，且不那么闪亮。右侧一列可能更加准确</ref>{{color box|rgb(255,255,255)|size=1em}}
+! class=unsortable align=center | 适用于：{{color box|rgb(127,127,127)|size=1em}}
+{{item infobox| auto=8 | type = Furniture / Light source | width = 1 | height = 1 | tags = buyable / loot / plunder / drop / vendor:Merchant / vendor:Skeleton Merchant
+| col:color = {{/color|8}}
+| col:notes = 普通{{tr|Torch}}。
+}}
+{{item infobox| auto=430 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|430}}
+}}
+{{item infobox| auto=432 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|432}}
+}}
+{{item infobox| auto=427 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|427}}
+}}
+{{item infobox| auto=429 | type = Furniture / Light source | width = 1 | height = 1 | tags = plunder
+| col:color = {{/color|429}}
+| col:notes = 会自然出现在[[{{tr|Jungle Shrine}}]]中。
+}}
+{{item infobox| auto=428 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|428}}
+}}
+{{item infobox| auto=1245 | type = Furniture / Light source | width = 1 | height = 1 | tags = plunder
+| col:color = {{/color|1245}}
+}}
+{{item infobox| auto=431 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|431}}
+| col:notes = 最亮的{{tr|torch}}。
+}}
+{{item infobox| auto=974| type = Furniture / Light source | width = 1 | height = 1 | tags = loot
+| col:color = {{/color|974}}
+| col:notes = 有时出现在[[{{tr|Frozen Chest}}]]中。
+}}
+{{item infobox| auto=3114| type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|3114}}
+}}
+{{item infobox| auto=3004 | type = Furniture / Light source | width = 1 | height = 1 | tags = buyable / vendor:Skeleton Merchant
+| col:color = {{/color|3004}}
+| col:notes = 由[[{{tr|Skeleton Merchant}}]]在游戏中每分钟（现实的每秒）的后半部分以 {{iteminfo|3004|buy}} 的价格出售。
+}}
+{{item infobox| auto=2274 | type = Furniture / Light source | width = 1 | height = 1 | tags = buyable / vendor:Traveling Merchant
+| col:color = {{/color|2274}}
+| col:notes = 由[[{{tr|Traveling Merchant}}]]以每个 {{iteminfo|2274|buy}} 的价格随机出售。手持时非常亮，放置时则稍暗。
+}}
+{{item infobox| auto=433 | type = Furniture / Light source | width = 1 | height = 1 | tags = plunder | stack = @@@@ {{eicons|1.4.4|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}} |rowspan = 2
+| col:color = {{/color|name=7-0}}
+| col:notes = rowspan{{=}}2 {{!}} 颜色会线性循环变化；在[[{{tr|The Underworld}}]]自然生成。
+}}
+|-
+| {{trim|{{/color|name=7-1}}}}
+{{item infobox| auto=523 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|523}}
+| col:notes = 在[[{{tr|water}}]]和[[{{tr|lava}}]]中可放置和正常运作；{{iteminfo|523|rare}} {{tr|rarity}}。
+}}
+{{item infobox| auto=1333 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|1333}}
+| col:notes = 在[[{{tr|water}}]]和[[{{tr|lava}}]]中可放置和正常运作；{{iteminfo|1333|rare}} {{tr|rarity}}。
+}}
+{{item infobox| auto=3045 | type = Furniture / Light source | width = 1 | height = 1 | tags = |rowspan=6
+| col:color = {{/color|name=14-0}}
+| col:notes = rowspan{{=}}6 {{!}} 颜色会线性循环变化；{{iteminfo|3045|rare}}{{tr|rarity}}。
+}}
+|-
+| {{trim|{{/color|name=14-1}}}}
+|-
+| {{trim|{{/color|name=14-2}}}}
+|-
+| {{trim|{{/color|name=14-3}}}}
+|-
+| {{trim|{{/color|name=14-4}}}}
+|-
+| {{trim|{{/color|name=14-5}}}}
+{{item infobox| auto=4383 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4383}}
+}}
+{{item infobox| auto=4384 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4384}}
+| col:notes = 在[[{{tr|water}}]]中可放置和正常运作
+}}
+{{item infobox| auto=4385 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4385}}
+}}
+{{item infobox| auto=4386 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4386}}
+}}
+{{item infobox| auto=4387 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4387}}
+}}
+{{item infobox| auto=4388 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|4388}}
+}}
+{{item infobox| auto=5293 | type = Furniture / Light source | width = 1 | height = 1 | tags =
+| col:color = {{/color|5293}}
+}}
+{{item infobox| auto=5353 | type = Furniture / Light source | width = 1 | height = 1 | tags = | rowspan = 2
+| col:color = {{/color|name=23-0}}
+| col:notes = rowspan{{=}}2 {{!}}
+}}
+|-
+| {{trim|{{/color|name=23-1}}}}
+|}{{options/restore|item|for_torch_table}}
+
+== {{tr|Luck}} ==
+{{main|{{tr|Luck}}#{{tr|Torches}}|label1={{tr|Luck}} § {{tr|Torches}}}}
+
+通过在正确的位置放置或手持{{tr|Torches}}，玩家的[[{{tr|luck}}]]最多能提高 0.2。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE %Torch|resultnot=Tiki Torch|expectedrows=23}}
+
+=== 用于 ===
+==== 普通{{tr|Torch}} ====
+{{recipes|ingredient=Torch|expectedrows=220}}
+
+==== {{tr|Ice Torch}} ====
+{{recipes|ingredient=Ice Torch|expectedrows=13}}
+
+==== {{tr|Pink Torch}} ====
+{{recipes|ingredient=Pink Torch|expectedrows=2}}
+
+==== {{tr|Bone Torch}} ====
+{{recipes|ingredient=Bone Torch|expectedrows=1}}
+
+==== {{tr|Ultrabright Torch}} ====
+{{recipes|ingredient=Ultrabright Torch|expectedrows=2}}
+
+==== {{tr|Demon Torch}} ====
+{{recipes|ingredient=Demon Torch|expectedrows=2}}
+
+==== {{tr|Cursed Torch}} ====
+{{recipes|ingredient=Cursed Torch|expectedrows=1}}
+
+==== {{tr|Ichor Torch}} ====
+{{recipes|ingredient=Ichor Torch|expectedrows=1}}
+
+==== {{tr|Rainbow Torch}} ====
+{{recipes|ingredient=Rainbow Torch|expectedrows=1}}
+
+==== {{tr|Desert Torch}} ====
+{{recipes|ingredient=Desert Torch|expectedrows=1}}
+
+==== {{tr|Coral Torch}} ====
+{{recipes|ingredient=Coral Torch|expectedrows=1}}
+
+==== {{tr|Corrupt Torch}} ====
+{{recipes|ingredient=Corrupt Torch|expectedrows=1}}
+
+==== {{tr|Crimson Torch}} ====
+{{recipes|ingredient=Crimson Torch|expectedrows=1}}
+
+==== {{tr|Hallowed Torch}} ====
+{{recipes|ingredient=Hallowed Torch|expectedrows=1}}
+
+==== {{tr|Jungle Torch}} ====
+{{recipes|ingredient=Jungle Torch|expectedrows=1}}
+
+==== {{tr|Mushroom Torch}} ====
+{{recipes|ingredient=Mushroom Torch|expectedrows=1}}
+
+==== {{tr|Aether Torch}} ====
+{{recipes|ingredient=Aether Torch|expectedrows=1}}
+
+== 备注 ==
+[[File:Placed Torches.png|frame|放置的{{tr|Torches}}（开和关状态，若适用）。点击图片查看各行的简介。]]
+[[File:Terraria-Torches.png|thumb|在“彩色”[[{{tr|lighting mode}}]]下{{tr|Torch}}的照明范围和颜色。由上至下：<br/>-普通{{tr|Torch}}<br/>-{{tr|Orange Torch}}<br/>-{{tr|Red Torch}}<br/>-{{tr|Purple Torch}}<br/>-{{tr|Blue Torch}}<br/>-{{tr|Green Torch}}<br/>-{{tr|Yellow Torch}}<br/>-{{tr|White Torch}}<br/>-{{tr|Ice Torch}}<br/>-{{tr|Ultrabright Torch}}<br/>-{{tr|Demon Torch}}<br/>-{{tr|Cursed Torch}}<br/>-{{tr|Ichor Torch}}]]
+
+* 除了{{tr|Coral Torch, Cursed Torch, and Ichor Torch}}以外，其他{{tr|Torch}}都不能在[[{{tr|water}}]]下发光。被扔进{{tr|water}}中的{{tr|Torch}}一旦被{{tr|water}}淹没就不再发光。如果玩家在[[{{tr|Hotbar}}]]选中{{tr|Torch}}时走进{{tr|water}}中，{{tr|Torch}}就会变得看不见且不发光。被放置的{{tr|Torch}}在被{{tr|water}}接触到时会被释放并作为物品掉落。
+* {{tr|cursor}}停留在空区域时，按住 {{key|as}} 按键会自动选择玩家{{tr|inventory}}中的{{tr|Torch}}，便于快速、简便地获得{{tr|light source}}。
+* {{tr|White Torch}}能够产生出比其他[[{{tr|light source}}]]都更亮的光。
+* {{tr|Torch}}在放置时会比手持或掉落时发出更亮的光，{{tr|Ultrabright Torch}}除外。
+* {{tr|Torch}}是唯一一种（通过按 {{key|throw}} 键）可以一次只扔出去一个的物品。其他的物品都是一次将整叠扔出。
+* {{tr|Torch}}被扔出时只能抛出几格远，然后就会竖直下落。对于被抛出更远的{{tr|light source}}，应该使用[[{{tr|Glowstick}}]]或者[[{{tr|Flare}}]]（注意{{tr|Glowstick}}是通过 {{key|use}} 按键而非 {{key|throw}} 按键扔出的）。
+* 尽管{{tr|Blue Torches}}外观上看起来较为黯淡，但选择“迷幻”[[{{tr|Lighting mode}}]]时它可以照亮很大的范围，在使用[[{{tr|Night Owl Potion}}]]后范围将变得更大。
+* [[{{tr|Smart Cursor}}]]开启时，玩家只能在黑暗的地方放置火把。
+
+== 花絮 ==
+* {{tr|Orange Torches}}的添加显然是因为"a really persistent nagging brit”（一个真心啰嗦的英国人），参考自 Youtube 作者 [https://www.youtube.com/user/ChippyGaming ChippyGaming]（即 James Bennett）。<ref>[http://www.reddit.com/r/IAmA/comments/1n9bmz/i_am_redigit_creator_of_terraria_ask_me_anything/ccgjsuc www.reddit.com ➝ thread: I am Redigit - Creator of Terraria. Ask Me Anything!] ➝ 问题: 是什么让你决定加入像{{tr|Orange torch}}这样的好东西？（由用户 chippygaming 提问） ➝ 回答: 这个真心啰嗦的英国人。:P</ref>
+* 就像许多游戏一样，《{{tr|Terraria}}》的{{tr|Torches}}一旦放下便不会熄灭（除了将其[[{{tr|Wire}}|通电]]）。
+** 然后在{{tr|1.4.1}}更新加入了[[{{tr|The Torch God}}]]的图鉴条目解释了其缘由，其背后有一个掌管火把永恒摇曳的神明。
+* 在游戏暂停时，{{tr|Torch}}的火焰动画仍会继续播放。
+* 如果在一个{{tr|Torch}}上放置一个{{tr|block}}，{{tr|Torch}}会变矮。如果{{tr|Torch}}上方没有{{tr|block}}，它会显得更高。要观察到这一点，可以在{{tr|Torch}}上方放置一个[[{{tr|Trap Door}}]]并开/关{{tr|Trap Door}}。
+* {{tr|Torch}}是用的最多的原料，总共有 {{recipes/count|ingredient=Torch}} 个{{tr|recipes}}需要。第二名则是{{tr|Wood}}，出现在了 {{recipes/count|ingredient=Wood}} 个{{tr|recipes}}中。
+* 在 [[{{tr|The Constant}}]] {{tr|Worlds}}中，露天的{{tr|torches}}和[[{{tr|Campfires}}]]会在下[[{{tr|Rain}}]]期间“关闭”。
+
+== 历史 ==
+{{history|Desktop 1.4.4.5|所有其他{{tr|torches}}现在用于通过[[{{tr|shimmer}}]]制作{{tr|the Aether Torch}}。}}
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Mushroom Torch and Aether Torches}}。
+** {{tr|Coral Torch}}的{{tr|recipe}}现在消耗 3 个[[{{tr|Torches}}]]；每个[[{{tr|Coral}}]]产生 3 个{{tr|Coral Torches}}而非 1 个。
+** 所有{{tr|torches}}的{{tr|stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.1|{{tr|Jungle Torch}}的{{tr|crafting recipe}}的制作配方更改 - 需要的火把数量和产物数量从 15 增加到了 25。}}
+{{history|Desktop 1.4.0.5|现在用于激活[[{{tr|Torch God}}]]迷你事件。}}
+{{history|Desktop 1.4.0.3|移除了坏{{tr|torch luck}}。}}
+{{history|Desktop 1.4.0.1|
+** 最大堆叠由 99 个提升至 999 个。
+** 添加了{{tr|Desert Torches, Coral Torches, Corrupt Torches, Crimson Torches, Hallowed Torches and Jungle Torches}}。
+** 现在也可用粉/紫/{{tr|Red Ice Blocks}}制作{{tr|Ice Torch}}。}}
+{{history|Desktop 1.3.1|现在可以将{{tr|torch}}放置在[[{{tr|Actuator}}|被致动]]的方块上。}}
+{{history|Desktop 1.3.0.3|修复了{{tr|torch}}复制 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Demon Torches}}现在可被制作。
+** 添加了{{tr|Rainbow Torches, Bone Torches and Pink Torches}}。
+** 现在可以被放在任意[[{{tr|platforms}}]]上了。}}
+{{history|Desktop 1.2.4|现在用于制作{{tr|Molotov Cocktail}}。}}
+{{history|Desktop 1.2.3.1|修复了{{tr|torch}}会被放置在斜坡错误的一端（使得火把悬在空中）的问题。}}
+{{history|Desktop 1.2.3|
+** 添加了{{tr|Ultrabright Torches}}。
+** 修复了丢出{{tr|torches}}会无需消耗地激活{{tr|hotbar}}中的{{tr|items}}的漏洞。
+** 修复了{{tr|Ice Torch}}丢在地面上时不会发光的问题。
+** 修复了{{tr|torch}}复制 {{tr|bug}}。}}
+{{history|Desktop 1.2|
+** {{tr|Torches}}现在具有动画。
+** 所有彩色{{tr|torch}}的{{tr|sprites updated.}}
+** 现在可以被放置在[[{{tr|background walls}}]]上。
+** 添加了{{tr|Ice Torches, Orange Torches, and Ichor Torches}}。}}
+{{history|Desktop 1.1|
+** 现在可以用[[{{tr|Wire}}]]切换开关。
+** 添加了彩色{{tr|Torches, Cursed Torches, and Demon Torch}}。}}
+{{history|Desktop 1.0.5|掉落的{{tr|Torches}}不再在水下发光。}}
+{{history|Desktop 1.0.1|{{tr|Torches}}现在在放置在{{tr|wood platforms}}上时会正确工作。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+
+{{language info|en=Torches}}

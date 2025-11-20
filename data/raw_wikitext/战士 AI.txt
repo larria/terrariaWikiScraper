@@ -1,0 +1,112 @@
+'''{{tr|Fighter AI}}''' 是一种被各种{{tr|enemy}}所遵循的 [[{{tr|AI}}]] 类型。部分{{tr|Fighter AI enemies}}能打开[[{{tr|Door}}]]和{{eil|Tall Gate}}。
+
+== 行为 ==
+拥有{{tr|Fighter AI}} 的 {{tr|NPC}} 会表现出以下行为：
+* 直接追逐玩家。
+* 在必要时或玩家在其上方足够高处时跳跃。
+* 可穿过[[{{tr|platforms}}]]寻路。
+
+== 打开{{tr|doors and Tall Gates}} ==
+部分{{tr|fighters}}能够打开位于其路径上的{{tr|doors and Tall Gates}}来触及玩家。当他们在一扇门前时，他们每秒都会“敲击”它（{{sound||Dig 0.wav}}{{sound||Dig 1.wav}}{{sound||Dig 2.wav}}），且会在特定的[[#敲击数|敲击数]]后打开它。
+
+大部分{{tr|fighters}}能够在任何时候打开{{tr|doors and Tall Gates}}，而其余的只能在[[{{tr|Blood Moon}}]]期间这样做。这已在下方列出。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters}}
+<!--
+
+// list of NPC IDs of fighters that can open doors in general
+-->{{#vardefine:doors_all|{{#cargo_query:table=NPCs<!--
+	-->| fields = npcid<!--
+	-->| group by = npcid<!--
+	-->| where = ai = "Fighter AI" AND npcid < 1000<!-- ignore old-gen-/3DS-exclusive enemies --> AND NOT (
+   npcid IN (343, 47, 67, 109, 110, 111, 120, 163, 164, 239, 168, 199, 206, 214, 215, 216, 217, 218, 219, 220, 226, 243, 251, 257, 258, 290, 291, 292, 293, 305, 306, 307, 308, 309, 348, 349, 350, 351, 379)
+OR (npcid >= 430 AND npcid <= 436)
+OR npcid IN (591, 380, 381, 382, 383, 386, 391)
+OR (npcid >= 449 AND npcid <= 452)
+OR npcid IN (466, 464, 166, 469, 468, 471, 470, 480, 481, 482, 411, 424, 409)
+OR (npcid >= 494 AND npcid <= 506)
+OR npcid IN (425, 427, 426, 428, 580, 508, 415, 419, 520)
+OR (npcid >= 524 AND npcid <= 527)
+OR npcid IN (528, 529, 530, 532, 582, 624, 631)
+
+OR npcid=236<!-- manually excluding Jungle Creeper -->
+)<!--
+	-->| limit = 200<!--
+	-->| format = list | delimiter=,<!--
+	-->| no html<!--
+-->}}}}<!--
+// list of NPC IDs of fighters that can only open doors during a Blood Moon
+-->{{#vardefine:doors_only_bloodmoon|{{#lstapp:{{#lstmap:{{#var:doors_all}}|,|@@@@|<esc><!-- dummy #lstapp to remove empty elements
+	-->{{#switch:{{npcinfo|id=@@@@|2=type}}<!--
+		-->|3|430|590|331|332|132|161|186|187|188|189|200|223|320|321|319|21|324|323|322|44|196|167|77|197|202|203|449|450|451|452|481|201|635=@@@@<!--
+	-->}}<!--
+--></esc>|,}}}}}}<!--
+
+-->{{options/set|item|class=break|wrap=y}}<!--
+-->{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria mw-collapsible"
+|+ 总是
+|
+{{itemlist/start|width=16em}}<!--
+-->{{#cargo_query:table=NPCs<!--
+	-->|fields=npcid, nameraw, image<!--
+	-->|group by=npcid<!--
+	-->|where=npcid IN ({{#var:doors_all}}) AND npcid NOT IN ({{#var:doors_only_bloodmoon}})<!--
+	-->|format=template|template=:{{BASEPAGENAME}}/npc|named args=yes<!--
+-->}}<!--
+-->{{itemlist/end}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria mw-collapsible"
+|+ 仅在{{tr|Blood Moon}}期间
+|
+{{itemlist/start|width=16em}}<!--
+-->{{#cargo_query:table=NPCs<!--
+	-->|fields=npcid, nameraw, image<!--
+	-->|group by=npcid<!--
+	-->|where=npcid IN ({{#var:doors_only_bloodmoon}})<!--
+	-->|format=template|template=:{{BASEPAGENAME}}/npc|named args=yes<!--
+-->}}<!--
+-->{{itemlist/end}}
+{{note|当玩家在{{eil|Graveyard}}中时，这些{{tr|enemies}}有 {{chance|1/60}} 几率在敲击{{tr|door}}/{{tr|Tall Gate}}时打开它，即使不在{{tr|Blood Moon}}期间。在 {{eil|For the worthy}} {{tr|worlds}}中，这些{{tr|enemies}}永远无法打开{{tr|doors}}/{{tr|Tall Gates}}，即使在{{tr|Blood Moon}}期间也不行。}}
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+=== 敲击数 ===
+总体上说，{{tr|fighters}}会在第二次敲击时打开{{tr|door}}（即：在 2 秒后），在第五次敲击时打开{{tr|Tall Gate}}（即：在 5 秒后）。不过，有一些例外：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters}}
+
+* {{item|Butcher|s}}会在第一次敲击时打开{{tr|doors and Tall Gates}}（即：在 1 秒后）。
+* {{item|Angry Bones|image=Angry Bones 1.png/Big Angry Bones.png}}（所有{{tr|variants}}）会在第一次敲击时打开{{tr|doors}}（即：在 1 秒后），在第二次敲击时打开{{tr|Tall Gate}}（即：在 2 秒后）。
+* {{item|Goblin Thief|s}}会在第四次敲击时打开{{tr|Tall Gate}}（即：在 4 秒后）。
+
+敲击数会在{{tr|enemy}}在打开{{tr|door}}/{{tr|Tall Gate}}前就走开时重置。例如，如果一个{{tr|fighter}}敲击了{{tr|Tall Gate}}三次然后走开了，它就需要重新敲击五次来打开它。
+
+=== 备注 ===
+* [[{{tr|Goblin Peon}}]]较为独特，它总是会摧毁{{tr|doors}}而非打开它（但不会摧毁{{tr|Tall Gates}}）。
+* {{tr|Doors}}仅可朝{{tr|enemy}}朝向的方向被打开。如果另外一边被阻挡（例如：被[[{{tr|block}}]]或如[[{{tr|Work Bench}}]]之类的{{tr|background}}物体阻挡），它们就无法被打开。不过，这种情况下{{tr|Goblin Peons}}仍然能摧毁{{tr|doors}}。
+
+== 小贴士 ==
+* 一片水平的地面是理想的和{{tr|fighters}}战斗的场地。推荐使用快速攻击或能造成很高[[{{tr|knockback}}]]的{{tr|weapon}}。当玩家使{{tr|fighters}}排成一排时，能够多次（或无限）穿透{{tr|enemies}}的[[{{tr|magic weapon}}]]最为有效。
+* 由于{{tr|Fighter AI enemies}}总是会和其目标保持同一高度，建造一个上方有{{tr|platform}}桥梁的大坑（然后站在比桥低的地方）会导致{{tr|Fighter AI enemies}}落到其中。
+* 许多{{tr|Fighter AI enemies}}都尤其被[[{{tr|Confused}}]]{{tr|debuff}}克制，这会使其走离玩家。
+
+== 具有{{tr|Fighter AI}} 的 {{tr|NPC}} 列表==
+{{options/set|item|maxsize=60x60px|wrap=y}}<!--
+-->{{ai npcs list|width=16em}}<!--
+-->{{options/reset|item}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|以下{{tr|enemies}}（除了在[[{{tr|Blood Moon}}]]期间，或在[[{{tr|Graveyard}}]]中随机的罕见情况下以外）不再能打开[[{{tr|doors}}]]和[[{{tr|Tall Gate}}]]：[[{{tr|Skeleton}}]]（及其所有{{tr|variants}}）、[[{{tr|Undead Miner}}]]、[[{{tr|Armored Skeleton}}]]、和[[{{tr|Armored Viking}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{category|Fighter AI NPCs| }}
+
+{{language info|en=Fighter AI}}

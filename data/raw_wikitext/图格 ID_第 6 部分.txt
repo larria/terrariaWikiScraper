@@ -1,0 +1,748 @@
+{|class="terraria ajaxHide"
+|图格 ID: {{#dpl:category=数据 ID|titleregexp=图格 ID/第 . 部分$|skipthispage=no|ordermethod=titlewithoutnamespace|format=²{dotlist/start¦inline=y}²,²{dotlist/item¦[[%TITLE%¦²{#replace:%TITLE%¦图格 ID/¦}²]]}²,,²{dotlist/end}²}}
+|}
+{| class="terraria sortable border"
+! data-sort-type="number" | ID !! data-sort-type="number" | 子 ID<ref>对于物品，即其 <code>placeStyle</code> 属性。</ref> !! 图片 !! 物品 / 实体 !! 内部名称
+|-
+| 300 || 0 || [[File:Bone Welder (placed).gif|link=]] || {{item|Bone Welder}} || <code>BoneWelder</code>
+|-
+| 301 || 0 || [[File:Flesh Cloning Vat (placed).gif|link=]] || {{item|Flesh Cloning Vat}} || <code>FleshCloningVat</code>
+|-
+| 302 || 0 || [[File:Glass Kiln (placed).gif|link=]] || {{item|Glass Kiln}} || <code>GlassKiln</code>
+|-
+| 303 || 0 || [[File:Lihzahrd Furnace (placed).gif|link=]] || {{item|Lihzahrd Furnace}} || <code>LihzahrdFurnace</code>
+|-
+| 304 || 0 || [[File:Living Loom (placed).png|link=]] || {{item|Living Loom}} || <code>LivingLoom</code>
+|-
+| 305 || 0 || [[File:Sky Mill (placed).gif|link=]] || {{item|Sky Mill}} || <code>SkyMill</code>
+|-
+| 306 || 0 || [[File:Ice Machine (placed).gif|link=]] || {{item|Ice Machine}} || <code>IceMachine</code>
+|-
+| 307 || 0 || [[File:Steampunk Boiler (placed).gif|link=]] || {{item|Steampunk Boiler}} || <code>SteampunkBoiler</code>
+|-
+| 308 || 0 || [[File:Honey Dispenser (placed).gif|link=]] || {{item|Honey Dispenser}} || <code>HoneyDispenser</code>
+|-
+| 309 || 0 || [[File:Penguin Cage.png|link=]] || {{item|Penguin Cage}} || <code>PenguinCage</code>
+|-
+| 310 || 0 || [[File:Worm Cage.png|link=]] || {{item|Worm Cage}} || <code>WormCage</code>
+|-
+| 311 || 0 || [[File:Dynasty Wood (placed).png|link=]] || {{item|Dynasty Wood}} || <code>DynastyWood</code>
+|-
+| 312 || 0 || [[File:Red Dynasty Shingles (placed).png|link=]] || {{item|Red Dynasty Shingles}} || <code>RedDynastyShingles</code>
+|-
+| 313 || 0 || [[File:Blue Dynasty Shingles (placed).png|link=]] || {{item|Blue Dynasty Shingles}} || <code>BlueDynastyShingles</code>
+|-
+| 314 || 0 || [[File:Minecart Track (placed).png|link=]] || {{item|Minecart Track}} || rowspan=3 | <code>MinecartTrack</code>
+|-
+| 314 || 1 || [[File:Pressure Plate Track (placed).png|link=]] || {{item|Pressure Plate Track}} 
+|-
+| 314 || 2 || [[File:Booster Track (placed).gif|link=]] || {{item|Booster Track}} 
+|-
+| 315 || 0 || [[File:Coralstone Block (placed).png|link=]] || {{item|Coralstone Block}} || <code>Coralstone</code>
+|-
+| 316 || 0 || [[File:Blue Jellyfish Jar.png|link=]] || {{item|Blue Jellyfish Jar}} || <code>BlueJellyfishBowl</code>
+|-
+| 317 || 0 || [[File:Green Jellyfish Jar.png|link=]] || {{item|Green Jellyfish Jar}} || <code>GreenJellyfishBowl</code>
+|-
+| 318 || 0 || [[File:Pink Jellyfish Jar.png|link=]] || {{item|Pink Jellyfish Jar}} || <code>PinkJellyfishBowl</code>
+|-
+| 319 || 0 || [[File:Ship in a Bottle.png|link=]] || {{item|Ship in a Bottle}} || <code>ShipInABottle</code>
+|-
+| 320 || 0 || [[File:Seaweed Planter (placed).png|link=]] || {{item|Seaweed Planter}} || <code>SeaweedPlanter</code>
+|-
+| 321 || 0 || [[File:Boreal Wood (placed).png|link=]] || {{item|Boreal Wood}} || <code>BorealWood</code>
+|-
+| 322 || 0 || [[File:Palm Wood (placed).png|link=]] || {{item|Palm Wood}} || <code>PalmWood</code>
+|-
+| 323 || 0 || [[File:Palm Tree.png|link=]] || [[{{tr|Palm tree}}]] || <code>PalmTree</code>
+|-
+| 324 || 0 || [[File:Seashell (placed).png|link=]] || {{item|Seashell}} || rowspan=5 | <code>BeachPiles</code>
+|-
+| 324 || 1 || [[File:Starfish (placed).png|link=]] || {{item|Starfish}}
+|-
+| 324 || 2 || [[File:Lightning Whelk Shell (placed).png|link=]] || {{item|Lightning Whelk Shell}}
+|-
+| 324 || 3 || [[File:Tulip Shell (placed).png|link=]] || {{item|Tulip Shell}}
+|-
+| 324 || 4 || [[File:Junonia Shell (placed).png|link=]] || {{item|Junonia Shell}}
+|-
+| 325 || 0 || [[File:Tin Plating (placed).png|link=]] || {{item|Tin Plating}} || <code>TinPlating</code>
+|-
+| 326 || 0 || [[File:Waterfall Block (placed).gif|link=]] || {{item|Waterfall Block|ext=gif}} || <code>Waterfall</code>
+|-
+| 327 || 0 || [[File:Lavafall Block (placed).gif|link=]] || {{item|Lavafall Block|ext=gif}} || <code>Lavafall</code>
+|-
+| 328 || 0 || [[File:Confetti Block (placed).gif|link=]] || {{item|Confetti Block|ext=gif}} || <code>Confetti</code>
+|-
+| 329 || 0 || [[File:Midnight Confetti Block (placed).gif|link=]] || {{item|Midnight Confetti Block|ext=gif}} || <code>ConfettiBlack</code>
+|-
+| 330 || 0 || [[File:Copper Coin (placed).png|link=]] || {{item|Copper Coin|Copper Coin Pile}} || <code>CopperCoinPile</code>
+|-
+| 331 || 0 || [[File:Silver Coin (placed).png|link=]] || {{item|Silver Coin|Silver Coin Pile}} || <code>SilverCoinPile</code>
+|-
+| 332 || 0 || [[File:Gold Coin (placed).png|link=]] || {{item|Gold Coin|Gold Coin Pile}} || <code>GoldCoinPile</code>
+|-
+| 333 || 0 || [[File:Platinum Coin (placed).png|link=]] || {{item|Platinum Coin|Platinum Coin Pile}} || <code>PlatinumCoinPile</code>
+|-
+| 334 || 0 || [[File:Weapon Rack (placed).png|link=]] || {{item|Weapon Rack|note=（未使用，被 ID 471 替代）|icons=n}} || <code>WeaponsRack</code>
+|-
+| 335 || 0 || [[File:Fireworks Box.png|link=]] || {{item|Fireworks Box}} || <code>FireworksBox</code>
+|-
+| 336 || 0 || [[File:Living Fire Block (placed).gif|link=]] || {{item|Living Fire Block}} || <code>LivingFire</code>
+|-
+| 337 || 0 || [[File:'0' Statue (placed).png|link=]] || {{item|'0' Statue}} || rowspan=36 | <code>AlphabetStatues</code>
+|-
+| 337 || 1 || [[File:'1' Statue (placed).png|link=]] || {{item|'1' Statue}}
+|-
+| 337 || 2 || [[File:'2' Statue (placed).png|link=]] || {{item|'2' Statue}}
+|-
+| 337 || 3 || [[File:'3' Statue (placed).png|link=]] || {{item|'3' Statue}}
+|-
+| 337 || 4 || [[File:'4' Statue (placed).png|link=]] || {{item|'4' Statue}}
+|-
+| 337 || 5 || [[File:'5' Statue (placed).png|link=]] || {{item|'5' Statue}}
+|-
+| 337 || 6 || [[File:'6' Statue (placed).png|link=]] || {{item|'6' Statue}}
+|-
+| 337 || 7 || [[File:'7' Statue (placed).png|link=]] || {{item|'7' Statue}}
+|-
+| 337 || 8 || [[File:'8' Statue (placed).png|link=]] || {{item|'8' Statue}}
+|-
+| 337 || 9 || [[File:'9' Statue (placed).png|link=]] || {{item|'9' Statue}}
+|-
+| 337 || 10 || [[File:'A' Statue (placed).png|link=]] || {{item|'A' Statue}}
+|-
+| 337 || 11 || [[File:'B' Statue (placed).png|link=]] || {{item|'B' Statue}}
+|-
+| 337 || 12 || [[File:'C' Statue (placed).png|link=]] || {{item|'C' Statue}}
+|-
+| 337 || 13 || [[File:'D' Statue (placed).png|link=]] || {{item|'D' Statue}}
+|-
+| 337 || 14 || [[File:'E' Statue (placed).png|link=]] || {{item|'E' Statue}}
+|-
+| 337 || 15 || [[File:'F' Statue (placed).png|link=]] || {{item|'F' Statue}}
+|-
+| 337 || 16 || [[File:'G' Statue (placed).png|link=]] || {{item|'G' Statue}}
+|-
+| 337 || 17 || [[File:'H' Statue (placed).png|link=]] || {{item|'H' Statue}}
+|-
+| 337 || 18 || [[File:'I' Statue (placed).png|link=]] || {{item|'I' Statue}}
+|-
+| 337 || 19 || [[File:'J' Statue (placed).png|link=]] || {{item|'J' Statue}}
+|-
+| 337 || 20 || [[File:'K' Statue (placed).png|link=]] || {{item|'K' Statue}}
+|-
+| 337 || 21 || [[File:'L' Statue (placed).png|link=]] || {{item|'L' Statue}}
+|-
+| 337 || 22 || [[File:'M' Statue (placed).png|link=]] || {{item|'M' Statue}}
+|-
+| 337 || 23 || [[File:'N' Statue (placed).png|link=]] || {{item|'N' Statue}}
+|-
+| 337 || 24 || [[File:'O' Statue (placed).png|link=]] || {{item|'O' Statue}}
+|-
+| 337 || 25 || [[File:'P' Statue (placed).png|link=]] || {{item|'P' Statue}}
+|-
+| 337 || 26 || [[File:'Q' Statue (placed).png|link=]] || {{item|'Q' Statue}}
+|-
+| 337 || 27 || [[File:'R' Statue (placed).png|link=]] || {{item|'R' Statue}}
+|-
+| 337 || 28 || [[File:'S' Statue (placed).png|link=]] || {{item|'S' Statue}}
+|-
+| 337 || 29 || [[File:'T' Statue (placed).png|link=]] || {{item|'T' Statue}}
+|-
+| 337 || 30 || [[File:'U' Statue (placed).png|link=]] || {{item|'U' Statue}}
+|-
+| 337 || 31 || [[File:'V' Statue (placed).png|link=]] || {{item|'V' Statue}}
+|-
+| 337 || 32 || [[File:'W' Statue (placed).png|link=]] || {{item|'W' Statue}}
+|-
+| 337 || 33 || [[File:'X' Statue (placed).png|link=]] || {{item|'X' Statue}}
+|-
+| 337 || 34 || [[File:'Y' Statue (placed).png|link=]] || {{item|'Y' Statue}}
+|-
+| 337 || 35 || [[File:'Z' Statue (placed).png|link=]] || {{item|'Z' Statue}}
+|-
+| 338 || 0 || [[File:Firework Fountain.png|link=]] || {{item|Firework Fountain}} || <code>FireworkFountain</code>
+|-
+| 339 || 0 || [[File:Grasshopper Cage.png|link=]] || {{item|Grasshopper Cage}} || <code>GrasshopperCage</code>
+|-
+| 340 || 0 || [[File:Living Cursed Fire Block (placed).gif]] || {{item|Living Cursed Fire Block}} || <code>LivingCursedFire</code>
+|-
+| 341 || 0 || [[File:Living Demon Fire Block (placed).gif]] || {{item|Living Demon Fire Block}} || <code>LivingDemonFire</code>
+|-
+| 342 || 0 || [[File:Living Frost Fire Block (placed).gif]] || {{item|Living Frost Fire Block}} || <code>LivingFrostFire</code>
+|-
+| 343 || 0 || [[File:Living Ichor Block (placed).gif]] || {{item|Living Ichor Block}} || <code>LivingIchor</code>
+|-
+| 344 || 0 || [[File:Living Ultrabright Fire Block (placed).gif]] || {{item|Living Ultrabright Fire Block}} || <code>LivingUltrabrightFire</code>
+|-
+| 345 || 0 || [[File:Honeyfall Block (placed).gif|link=]] || {{item|Honeyfall Block}} || <code>Honeyfall</code>
+|-
+| 346 || 0 || [[File:Chlorophyte Brick (placed).png|link=]] || {{item|Chlorophyte Brick}} || <code>ChlorophyteBrick</code>
+|-
+| 347 || 0 || [[File:Crimtane Brick (placed).png|link=]] || {{item|Crimtane Brick}} || <code>CrimtaneBrick</code>
+|-
+| 348 || 0 || [[File:Shroomite Plating (placed).png|link=]] || {{item|Shroomite Plating}} || <code>ShroomitePlating</code>
+|-
+| 349 || 0 || [[File:Mushroom Statue (placed).png|link=]] || {{item|Mushroom Statue}} || <code>MushroomStatue</code>
+|-
+| 350 || 0 || [[File:Martian Conduit Plating (placed).png|link=]] || {{item|Martian Conduit Plating}} || <code>MartianConduitPlating</code>
+|-
+| 351 || 0 || [[File:Smoke Block (placed).gif|link=]] || {{item|Smoke Block}} || <code>ChimneySmoke</code>
+|-
+| 352 || 0 || [[File:Crimson Thorny Bush.png|link=]] || {{item|Crimson Thorny Bush}} || <code>CrimsonThorns</code>
+|-
+| 353 || 0 || [[File:Vine Rope (placed).png|link=]] || {{item|Vine Rope}} || <code>VineRope</code>
+|-
+| 354 || 0 || [[File:Bewitching Table (placed).gif|link=]] || {{item|Bewitching Table}} || <code>BewitchingTable</code>
+|-
+| 355 || 0 || [[File:Alchemy Table (placed).gif|link=]] || {{item|Alchemy Table}} || <code>AlchemyTable</code>
+|-
+| 356 || 0 || [[File:Enchanted Sundial (placed).png|link=]] || {{item|Enchanted Sundial}} || <code>Sundial</code>
+|-
+| 357 || 0 || [[File:Smooth Marble Block (placed).png|link=]] || {{item|Smooth Marble Block}} || <code>MarbleBlock</code>
+|-
+| 358 || 0 || [[File:Gold Bird Cage.png|link=]] || {{item|Gold Bird Cage}} || <code>GoldBirdCage</code>
+|-
+| 359 || 0 || [[File:Gold Bunny Cage.png|link=]] || {{item|Gold Bunny Cage}} || <code>GoldBunnyCage</code>
+|-
+| 360 || 0 || [[File:Gold Butterfly Jar.png|link=]] || {{item|Gold Butterfly Jar}} || <code>GoldButterflyCage</code>
+|-
+| 361 || 0 || [[File:Gold Frog Cage.png|link=]] || {{item|Gold Frog Cage}} || <code>GoldFrogCage</code>
+|-
+| 362 || 0 || [[File:Gold Grasshopper Cage.png|link=]] || {{item|Gold Grasshopper Cage}} || <code>GoldGrasshopperCage</code>
+|-
+| 363 || 0 || [[File:Gold Mouse Cage.png|link=]] || {{item|Gold Mouse Cage}} || <code>GoldMouseCage</code>
+|-
+| 364 || 0 || [[File:Gold Worm Cage.png|link=]] || {{item|Gold Worm Cage}} || <code>GoldWormCage</code>
+|-
+| 365 || 0 || [[File:Silk Rope (placed).png|link=]] || {{item|Silk Rope}} || <code>SilkRope</code>
+|-
+| 366 || 0 || [[File:Web Rope (placed).png|link=]] || {{item|Web Rope}} || <code>WebRope</code>
+|-
+| 367 || 0 || [[File:Marble Block (placed).png|link=]] || {{item|Marble Block}} || <code>Marble</code>
+|-
+| 368 || 0 || [[File:Granite Block (placed).png|link=]] || {{item|Granite Block}} || <code>Granite</code>
+|-
+| 369 || 0 || [[File:Smooth Granite Block (placed).png|link=]] || {{item|Smooth Granite Block}} || <code>GraniteBlock</code>
+|-
+| 370 || 0 || [[File:Meteorite Brick (placed).png|link=]] || {{item|Meteorite Brick}} || <code>MeteoriteBrick</code>
+|-
+| 371 || 0 || [[File:Pink Slime Block (placed).png|link=]] || {{item|Pink Slime Block}} || <code>PinkSlimeBlock</code>
+|-
+| 372 || 0 || [[File:Peace Candle.png|link=]] || {{item|Peace Candle}} || <code>PeaceCandle</code>
+|-
+| 373 || 0 || [[File:Magic Water Dropper.png|link=]] || {{item|Magic Water Dropper}} || <code>WaterDrip</code>
+|-
+| 374 || 0 || [[File:Magic Lava Dropper.png|link=]] || {{item|Magic Lava Dropper}} || <code>LavaDrip</code>
+|-
+| 375 || 0 || [[File:Magic Honey Dropper.png|link=]] || {{item|Magic Honey Dropper}} || <code>HoneyDrip</code>
+|-
+| 376 || 0 || [[File:Wooden Crate.png|link=]] || {{item|Wooden Crate}} || rowspan=26 | <code>FishingCrate</code>
+|-
+| 376 || 1 || [[File:Iron Crate.png|link=]] || {{item|Iron Crate}}
+|-
+| 376 || 2 || [[File:Golden Crate.png|link=]] || {{item|Golden Crate}}
+|-
+| 376 || 3 || [[File:Corrupt Crate.png|link=]] || {{item|Corrupt Crate}}
+|-
+| 376 || 4 || [[File:Crimson Crate.png|link=]] || {{item|Crimson Crate}}
+|-
+| 376 || 5 || [[File:Dungeon Crate.png|link=]] || {{item|Dungeon Crate}}
+|-
+| 376 || 6 || [[File:Sky Crate.png|link=]] || {{item|Sky Crate}}
+|-
+| 376 || 7 || [[File:Hallowed Crate.png|link=]] || {{item|Hallowed Crate}}
+|-
+| 376 || 8 || [[File:Jungle Crate.png|link=]] || {{item|Jungle Crate}}
+|-
+| 376 || 9 || [[File:Pearlwood Crate.png|link=]] || {{item|Pearlwood Crate}}
+|-
+| 376 || 10 || [[File:Mythril Crate.png|link=]] || {{item|Mythril Crate}}
+|-
+| 376 || 11 || [[File:Titanium Crate.png|link=]] || {{item|Titanium Crate}}
+|-
+| 376 || 12 || [[File:Defiled Crate.png|link=]] || {{item|Defiled Crate}}
+|-
+| 376 || 13 || [[File:Hematic Crate.png|link=]] || {{item|Hematic Crate}}
+|-
+| 376 || 14 || [[File:Stockade Crate.png|link=]] || {{item|Stockade Crate}}
+|-
+| 376 || 15 || [[File:Azure Crate.png|link=]] || {{item|Azure Crate}}
+|-
+| 376 || 16 || [[File:Divine Crate.png|link=]] || {{item|Divine Crate}}
+|-
+| 376 || 17 || [[File:Bramble Crate.png|link=]] || {{item|Bramble Crate}}
+|-
+| 376 || 18 || [[File:Frozen Crate.png|link=]] || {{item|Frozen Crate}}
+|-
+| 376 || 19 || [[File:Boreal Crate.png|link=]] || {{item|Boreal Crate}}
+|-
+| 376 || 20 || [[File:Oasis Crate.png|link=]] || {{item|Oasis Crate}}
+|-
+| 376 || 21 || [[File:Mirage Crate.png|link=]] || {{item|Mirage Crate}}
+|-
+| 376 || 22 || [[File:Obsidian Crate.png|link=]] || {{item|Obsidian Crate}}
+|-
+| 376 || 23 || [[File:Hellstone Crate.png|link=]] || {{item|Hellstone Crate}}
+|-
+| 376 || 24 || [[File:Ocean Crate.png|link=]] || {{item|Ocean Crate}}
+|-
+| 376 || 25 || [[File:Seaside Crate.png|link=]] || {{item|Seaside Crate}}
+|-
+| 377 || 0 || [[File:Sharpening Station (placed).gif|link=]] || {{item|Sharpening Station}} || <code>SharpeningStation</code>
+|-
+| 378 || 0 || [[File:Target Dummy (placed).gif|link=]] || {{item|Target Dummy}} || <code>TargetDummy</code>
+|-
+| 379 || 0 || [[File:Bubble (placed).gif|link=]] || {{item|Bubble}} || <code>Bubble</code>
+|-
+| 380 || 0 || [[File:Daybloom Planter Box (placed).png|link=]] || {{item|Daybloom Planter Box}} || rowspan=8 | <code>PlanterBox</code>
+|-
+| 380 || 1 || [[File:Moonglow Planter Box (placed).png|link=]] || {{item|Moonglow Planter Box}}
+|-
+| 380 || 2 || [[File:Deathweed Planter Box (placed).png|link=]] || {{item|Deathweed Planter Box}}
+|-
+| 380 || 3 || [[File:Crimsonweed Planter Box (placed).png|link=]] || {{item|Crimsonweed Planter Box|Deathweed Planter Box|link={{tr|Planter Boxes|link=y}}}}
+|-
+| 380 || 4 || [[File:Blinkroot Planter Box (placed).png|link=]] || {{item|Blinkroot Planter Box}}
+|-
+| 380 || 5 || [[File:Waterleaf Planter Box (placed).png|link=]] || {{item|Waterleaf Planter Box}}
+|-
+| 380 || 6 || [[File:Shiverthorn Planter Box (placed).png|link=]] || {{item|Shiverthorn Planter Box}}
+|-
+| 380 || 7 || [[File:Fireblossom Planter Box (placed).png|link=]] || {{item|Fireblossom Planter Box}}
+|-
+| 381 || 0 || [[File:Lava Moss (placed).png|link=]] || {{item|Lava Moss|note=（{{tr|Stone Block}}上）}} || <code>LavaMoss</code>
+|-
+| 382 || 0 || [[File:Flower vines.png|link=]] || {{item|Flower vines|link={{tr|Plants|link=y}}#{{tr|Vines}}}} || <code>VineFlowers</code>
+|-
+| 383 || 0 || [[File:Living Mahogany (placed).png|link=]] || {{item|Living Mahogany}} || <code>LivingMahogany</code>
+|-
+| 384 || 0 || [[File:Mahogany Leaf Block (placed).png|link=]] || {{item|Mahogany Leaf Block}}|| <code>LivingMahoganyLeaves</code>
+|-
+| 385 || 0 || [[File:Crystal Block (placed).png|link=]] || {{item|Crystal Block}} || <code>CrystalBlock</code>
+|-
+| 386 || 0 || [[File:Trap Door (placed).gif|link=]] || {{item|Trap Door}}（开）|| <code>TrapdoorOpen</code>
+|-
+| 387 || 0 || [[File:Trap Door (placed).gif|link=]] || {{item|Trap Door}}（关）|| <code>TrapdoorClosed</code>
+|-
+| 388 || 0 || [[File:Tall Gate (placed).gif|link=]] || {{item|Tall Gate}}（关）|| <code>TallGateClosed</code>
+|-
+| 389 || 0 || [[File:Tall Gate (placed).gif|link=]] || {{item|Tall Gate}}（开）|| <code>TallGateOpen</code>
+|-
+| 390 || 0 || [[File:Lava Lamp (placed).gif|link=]] || {{item|Lava Lamp}} || <code>LavaLamp</code>
+|-
+| 391 || 0 || [[File:Enchanted Nightcrawler Cage.png|link=]] || {{item|Enchanted Nightcrawler Cage}} || <code>CageEnchantedNightcrawler</code>
+|-
+| 392 || 0 || [[File:Buggy Cage.png|link=]] || {{item|Buggy Cage}} || <code>CageBuggy</code>
+|-
+| 393 || 0 || [[File:Grubby Cage.png|link=]] || {{item|Grubby Cage}} || <code>CageGrubby</code>
+|-
+| 394 || 0 || [[File:Sluggy Cage.png|link=]] || {{item|Sluggy Cage}} || <code>CageSluggy</code>
+|-
+| 395 || 0 || [[File:Item Frame.png|link=]] || {{item|Item Frame}} || <code>ItemFrame</code>
+|-
+| 396 || 0 || [[File:Sandstone Block (placed).png|link=]] || {{item|Sandstone Block}} || <code>Sandstone</code>
+|-
+| 397 || 0 || [[File:Hardened Sand Block (placed).png|link=]] || {{item|Hardened Sand Block}} || <code>HardenedSand</code>
+|-
+| 398 || 0 || [[File:Hardened Ebonsand Block (placed).png|link=]] || {{item|Hardened Ebonsand Block}} || <code>CorruptHardenedSand</code>
+|-
+| 399 || 0 || [[File:Hardened Crimsand Block (placed).png|link=]] || {{item|Hardened Crimsand Block}} || <code>CrimsonHardenedSand</code>
+|-
+| 400 || 0 || [[File:Ebonsandstone Block (placed).png|link=]] || {{item|Ebonsandstone Block}} || <code>CorruptSandstone</code>
+|-
+| 401 || 0 || [[File:Crimsandstone Block (placed).png|link=]] || {{item|Crimsandstone Block}} || <code>CrimsonSandstone</code>
+|-
+| 402 || 0 || [[File:Hardened Pearlsand Block (placed).png|link=]] || {{item|Hardened Pearlsand Block}} || <code>HallowHardenedSand</code>
+|-
+| 403 || 0 || [[File:Pearlsandstone Block (placed).png|link=]] || {{item|Pearlsandstone Block}} || <code>HallowSandstone</code>
+|-
+| 404 || 0 || [[File:Desert Fossil (placed).png|link=]] || {{item|Desert Fossil}} || <code>DesertFossil</code>
+|-
+| 405 || 0 || [[File:Fireplace (placed).gif|link=]] || {{item|Fireplace}} || <code>Fireplace</code>
+|-
+| 406 || 0 || [[File:Chimney (placed).gif|link=]] || {{item|Chimney}} || <code>Chimney</code>
+|-
+| 407 || 0 || [[File:Sturdy Fossil (placed).png|link=]] || {{item|Sturdy Fossil}} || <code>FossilOre</code>
+|-
+| 408 || 0 || [[File:Luminite (placed).png|link=]] || {{item|Luminite}} || <code>LunarOre</code>
+|-
+| 409 || 0 || [[File:Luminite Brick (placed).png|link=]] || {{item|Luminite Brick}} || <code>LunarBrick</code>
+|-
+| 410 || 0 || [[File:Vortex Monolith (placed).png|link=]] [[File:Vortex Monolith (placed) (active).gif|link=]] || {{item|Vortex Monolith}} || rowspan=4 | <code>LunarMonolith</code>
+|-
+| 410 || 1 || [[File:Nebula Monolith (placed).png|link=]] [[File:Nebula Monolith (placed) (active).gif|link=]] || {{item|Nebula Monolith}}
+|-
+| 410 || 2 || [[File:Stardust Monolith (placed).png|link=]] [[File:Stardust Monolith (placed) (active).gif|link=]] || {{item|Stardust Monolith}}
+|-
+| 410 || 3 || [[File:Solar Monolith (placed).png|link=]] [[File:Solar Monolith (placed) (active).gif|link=]] || {{item|Solar Monolith}}
+|-
+| 411 || 0 || [[File:Detonator (placed).gif|link=]] || {{item|Detonator}} || <code>Detonator</code>
+|-
+| 412 || 0 || [[File:Ancient Manipulator (placed).gif|link=]] || {{item|Ancient Manipulator}} || <code>LunarCraftingStation</code>
+|-
+| 413 || 0 || [[File:Red Squirrel Cage.png|link=]] || {{item|Red Squirrel Cage}} || <code>SquirrelOrangeCage</code>
+|-
+| 414 || 0 || [[File:Gold Squirrel Cage.png|link=]] || {{item|Gold Squirrel Cage}} || <code>SquirrelGoldCage</code>
+|-
+| 415 || 0 || [[File:Solar Fragment Block (placed).png|link=]] || {{item|Solar Fragment Block}} || <code>LunarBlockSolar</code>
+|-
+| 416 || 0 || [[File:Vortex Fragment Block (placed).png|link=]] || {{item|Vortex Fragment Block}} || <code>LunarBlockVortex</code>
+|-
+| 417 || 0 || [[File:Nebula Fragment Block (placed).png|link=]] || {{item|Nebula Fragment Block}} || <code>LunarBlockNebula</code>
+|-
+| 418 || 0 || [[File:Stardust Fragment Block (placed).png|link=]] || {{item|Stardust Fragment Block}} || <code>LunarBlockStardust</code>
+|-
+| 419 || 0 || [[File:Logic Gate Lamp (Off).png|link=]] || {{item|Logic Gate Lamp (Off)}} || rowspan=3 | <code>LogicGateLamp</code>
+|-
+| 419 || 1 || [[File:Logic Gate Lamp (On).png|link=]] || {{item|Logic Gate Lamp (On)}}
+|-
+| 419 || 2 || [[File:Logic Gate Lamp (Faulty).png|link=]] || {{item|Logic Gate Lamp (Faulty)}}
+|-
+| 420 || 0 || [[File:Logic Gate (AND).png|link=]] || {{item|Logic Gate (AND)}} || rowspan=6 | <code>LogicGate</code>
+|-
+| 420 || 1 || [[File:Logic Gate (OR).png|link=]] || {{item|Logic Gate (OR)}}
+|-
+| 420 || 2 || [[File:Logic Gate (NAND).png|link=]] || {{item|Logic Gate (NAND)}}
+|-
+| 420 || 3 || [[File:Logic Gate (NOR).png|link=]] || {{item|Logic Gate (NOR)}}
+|-
+| 420 || 4 || [[File:Logic Gate (XOR).png|link=]] || {{item|Logic Gate (XOR)}}
+|-
+| 420 || 5 || [[File:Logic Gate (XNOR).png|link=]] || {{item|Logic Gate (XNOR)}}
+|-
+| 421 || 0 || [[File:Conveyor Belt (Clockwise) (placed).gif|link=]] || {{item|Conveyor Belt (Clockwise)}} || <code>ConveyorBeltLeft</code>
+|-
+| 422 || 0 || [[File:Conveyor Belt (Counter Clockwise) (placed).gif|link=]] || {{item|Conveyor Belt (Counter Clockwise)}} || <code>ConveyorBeltRight</code>
+|-
+| 423 || 0 || [[File:Logic Sensor (Day).png|link=]] || {{item|Logic Sensor (Day)}} || rowspan=7 | <code>LogicSensor</code>
+|-
+| 423 || 1 || [[File:Logic Sensor (Night).png|link=]] || {{item|Logic Sensor (Night)}}
+|-
+| 423 || 2 || [[File:Logic Sensor (Player Above).png|link=]] || {{item|Logic Sensor (Player Above)}}
+|-
+| 423 || 3 || [[File:Liquid Sensor (Water).png|link=]] || {{item|Liquid Sensor (Water)}}
+|-
+| 423 || 4 || [[File:Liquid Sensor (Lava).png|link=]] || {{item|Liquid Sensor (Lava)}}
+|-
+| 423 || 5 || [[File:Liquid Sensor (Honey).png|link=]] || {{item|Liquid Sensor (Honey)}}
+|-
+| 423 || 6 || [[File:Liquid Sensor (Any).png|link=]] || {{item|Liquid Sensor (Any)}}
+|-
+| 424 || 0 || [[File:Junction Box (placed).png|link=]] || {{item|Junction Box}} || <code>WirePipe</code>
+|-
+| 425 || 0 || [[File:Announcement Box (placed).png|link=]] || {{item|Announcement Box}} || <code>AnnouncementBox</code>
+|-
+| 426 || 0 || [[File:Red Team Block (placed).png|link=]] || {{item|Red Team Block}} || <code>TeamBlockRed</code>
+|-
+| 427 || 0 || [[File:Red Team Platform (placed).png|link=]] || {{item|Red Team Platform}} || <code>TeamBlockRedPlatform</code>
+|-
+| 428 || 0 || [[File:Orange Weighted Pressure Plate (placed).gif|link=]] || {{item|Orange Weighted Pressure Plate}} || rowspan=4 | <code>WeightedPressurePlate</code>
+|-
+| 428 || 1 || [[File:Cyan Weighted Pressure Plate (placed).gif|link=]] || {{item|Cyan Weighted Pressure Plate}}
+|-
+| 428 || 2 || [[File:Purple Weighted Pressure Plate (placed).gif|link=]] || {{item|Purple Weighted Pressure Plate}}
+|-
+| 428 || 3 || [[File:Pink Weighted Pressure Plate (placed).gif|link=]] || {{item|Pink Weighted Pressure Plate}}
+|-
+| 429 || 0 || [[File:Wire Bulb (placed).png|link=]] || {{item|Wire Bulb}} || <code>WireBulb</code>
+|-
+| 430 || 0 || [[File:Green Team Block (placed).png|link=]] || {{item|Green Team Block}} || <code>TeamBlockGreen</code>
+|-
+| 431 || 0 || [[File:Blue Team Block (placed).png|link=]] || {{item|Blue Team Block}} || <code>TeamBlockBlue</code>
+|-
+| 432 || 0 || [[File:Yellow Team Block (placed).png|link=]] || {{item|Yellow Team Block}} || <code>TeamBlockYellow</code>
+|-
+| 433 || 0 || [[File:Pink Team Block (placed).png|link=]] || {{item|Pink Team Block}} || <code>TeamBlockPink</code>
+|-
+| 434 || 0 || [[File:White Team Block (placed).png|link=]] || {{item|White Team Block}} || <code>TeamBlockWhite</code>
+|-
+| 435 || 0 || [[File:Green Team Platform (placed).png|link=]] || {{item|Green Team Platform}} || <code>TeamBlockGreenPlatform</code>
+|-
+| 436 || 0 || [[File:Blue Team Platform (placed).png|link=]] || {{item|Blue Team Platform}} || <code>TeamBlockBluePlatform</code>
+|-
+| 437 || 0 || [[File:Yellow Team Platform (placed).png|link=]] || {{item|Yellow Team Platform}} || <code>TeamBlockYellowPlatform</code>
+|-
+| 438 || 0 || [[File:Pink Team Platform (placed).png|link=]] || {{item|Pink Team Platform}} || <code>TeamBlockPinkPlatform</code>
+|-
+| 439 || 0 || [[File:White Team Platform (placed).png|link=]] || {{item|White Team Platform}} || <code>TeamBlockWhitePlatform</code>
+|-
+| 440 || 0 || [[File:Ruby Gem Lock.png|link=]] || {{item|Ruby Gem Lock}} || rowspan=7 | <code>GemLocks</code>
+|-
+| 440 || 1 || [[File:Sapphire Gem Lock.png|link=]] || {{item|Sapphire Gem Lock}}
+|-
+| 440 || 2 || [[File:Emerald Gem Lock.png|link=]] || {{item|Emerald Gem Lock}}
+|-
+| 440 || 3 || [[File:Topaz Gem Lock.png|link=]] || {{item|Topaz Gem Lock}}
+|-
+| 440 || 4 || [[File:Amethyst Gem Lock.png|link=]] || {{item|Amethyst Gem Lock}}
+|-
+| 440 || 5 || [[File:Diamond Gem Lock.png|link=]] || {{item|Diamond Gem Lock}}
+|-
+| 440 || 6 || [[File:Amber Gem Lock.png|link=]] || {{item|Amber Gem Lock}}
+|-
+| 441 || 0 || [[File:Chest.png|link=]] || {{item|Trapped Chest}} || rowspan=54 | <code>FakeContainers</code>
+|-
+| 441 || 1 || [[File:Gold Chest.png|link=]] || {{item|Trapped Gold Chest}}
+|-
+| 441 || 2 || [[File:Locked Gold Chest.png]] || {{tr|Trapped Locked Gold Chest (unused)}}
+|-
+| 441 || 3 || [[File:Shadow Chest.png]] || {{item|Trapped Shadow Chest}}
+|-
+| 441 || 4 || [[File:Locked Shadow Chest.png]] || {{tr|Trapped Locked Shadow Chest (unused)}}
+|-
+| 441 || 5 || [[File:Barrel.png]] || {{tr|Trapped Barrel (unused)}}
+|-
+| 441 || 6 || [[File:Trash Can.png]] || {{tr|Trapped Trash Can (unused)}}
+|-
+| 441 || 7 || [[File:Ebonwood Chest.png]] || {{item|Trapped Ebonwood Chest}}
+|-
+| 441 || 8 || [[File:Rich Mahogany Chest.png]] || {{item|Trapped Rich Mahogany Chest}}
+|-
+| 441 || 9 || [[File:Pearlwood Chest.png]] || {{item|Trapped Pearlwood Chest}}
+|-
+| 441 || 10 || [[File:Ivy Chest.png]] || {{item|Trapped Ivy Chest}}
+|-
+| 441 || 11 || [[File:Ice Chest.png]] || {{item|Trapped Ice Chest}}
+|-
+| 441 || 12 || [[File:Living Wood Chest.png]] || {{item|Trapped Living Wood Chest}}
+|-
+| 441 || 13 || [[File:Skyware Chest.png]] || {{item|Trapped Skyware Chest}}
+|-
+| 441 || 14 || [[File:Shadewood Chest.png]] || {{item|Trapped Shadewood Chest}}
+|-
+| 441 || 15 || [[File:Web Covered Chest.png]] || {{item|Trapped Web Covered Chest}}
+|-
+| 441 || 16 || [[File:Lihzahrd Chest.png]] || {{item|Trapped Lihzahrd Chest}}
+|-
+| 441 || 17 || [[File:Water Chest.png]] || {{item|Trapped Water Chest}}
+|-
+| 441 || 18 || [[File:Jungle Chest.png]] || {{item|Trapped Jungle Chest}}
+|-
+| 441 || 19 || [[File:Corruption Chest.png]] || {{item|Trapped Corruption Chest}}
+|-
+| 441 || 20 || [[File:Crimson Chest.png]] || {{item|Trapped Crimson Chest}}
+|-
+| 441 || 21 || [[File:Hallowed Chest.png]] || {{item|Trapped Hallowed Chest}}
+|-
+| 441 || 22 || [[File:Frozen Chest.png]] || {{item|Trapped Frozen Chest}}
+|-
+| 441 || 23 || [[File:Locked Jungle Chest.png]] || {{tr|Trapped Locked Jungle Chest (unused)}}
+|-
+| 441 || 24 || [[File:Locked Corruption Chest.png]] || {{tr|Trapped Locked Corruption Chest (unused)}}
+|-
+| 441 || 25 || [[File:Locked Crimson Chest.png]] || {{tr|Trapped Locked Crimson Chest (unused)}}
+|-
+| 441 || 26 || [[File:Locked Hallowed Chest.png]] || {{tr|Trapped Locked Hallowed Chest (unused)}}
+|-
+| 441 || 27 || [[File:Locked Frozen Chest.png]] || {{tr|Trapped Locked Frozen Chest (unused)}}
+|-
+| 441 || 28 || [[File:Dynasty Chest.png]] || {{item|Trapped Dynasty Chest}}
+|-
+| 441 || 29 || [[File:Honey Chest.png]] || {{item|Trapped Honey Chest}}
+|-
+| 441 || 30 || [[File:Steampunk Chest.png]] || {{item|Trapped Steampunk Chest}}
+|-
+| 441 || 31 || [[File:Palm Wood Chest.png]] || {{item|Trapped Palm Wood Chest}}
+|-
+| 441 || 32 || [[File:Mushroom Chest.png]] || {{item|Trapped Mushroom Chest}}
+|-
+| 441 || 33 || [[File:Boreal Wood Chest.png]] || {{item|Trapped Boreal Wood Chest}}
+|-
+| 441 || 34 || [[File:Slime Chest.png]] || {{item|Trapped Slime Chest}}
+|-
+| 441 || 35 || [[File:Green Dungeon Chest.png]] || {{item|Trapped Green Dungeon Chest}}
+|-
+| 441 || 36 || [[File:Trapped Locked Green Dungeon Chest.png]] || {{tr|Trapped Locked Green Dungeon Chest (unused)}}
+|-
+| 441 || 37 || [[File:Pink Dungeon Chest.png]] || {{item|Trapped Pink Dungeon Chest}}
+|-
+| 441 || 38 || [[File:Trapped Locked Pink Dungeon Chest.png]] || {{tr|Trapped Locked Pink Dungeon Chest (unused)}}
+|-
+| 441 || 39 || [[File:Blue Dungeon Chest.png]] || {{item|Trapped Blue Dungeon Chest}}
+|-
+| 441 || 40 || [[File:Trapped Locked Blue Dungeon Chest.png]] || {{tr|Trapped Locked Pink Dungeon Chest (unused)}}
+|-
+| 441 || 41 || [[File:Bone Chest.png]] || {{item|Trapped Bone Chest}}
+|-
+| 441 || 42 || [[File:Cactus Chest.png]] || {{item|Trapped Cactus Chest}}
+|-
+| 441 || 43 || [[File:Flesh Chest.png]] || {{item|Trapped Flesh Chest}}
+|-
+| 441 || 44 || [[File:Obsidian Chest.png]] || {{item|Trapped Obsidian Chest}}
+|-
+| 441 || 45 || [[File:Pumpkin Chest.png]] || {{item|Trapped Pumpkin Chest}}
+|-
+| 441 || 46 || [[File:Spooky Chest.png]] || {{item|Trapped Spooky Chest}}
+|-
+| 441 || 47 || [[File:Glass Chest.png]] || {{item|Trapped Glass Chest}}
+|-
+| 441 || 48 || [[File:Martian Chest.png]] || {{item|Trapped Martian Chest}}
+|-
+| 441 || 49 || [[File:Meteorite Chest.png]] || {{item|Trapped Meteorite Chest}}
+|-
+| 441 || 50 || [[File:Granite Chest.png]] || {{item|Trapped Granite Chest}}
+|-
+| 441 || 51 || [[File:Marble Chest.png]] || {{item|Trapped Marble Chest}}
+|-
+| 441 || 52 || [[File:Crystal Chest.png]] || {{item|Fake_newchest1|image=Crystal Chest.png}}（{{tr|unobtainable}}）
+|-
+| 441 || 53 || [[File:Golden Chest.png]] || {{item|Fake_newchest2|image=Golden Chest.png}}（{{tr|unobtainable}}）
+|-
+| 442 || 0 || [[File:Teal Pressure Pad (placed).png|link=]] || {{item|Teal Pressure Pad}} || <code>ProjectilePressurePad</code>
+|-
+| 443 || 0 || [[File:Geyser (placed).png|link=]] || {{item|Geyser}} || <code>GeyserTrap</code>
+|-
+| 444 || 0 || [[File:Bee Hive (placed).png|link=]] || {{item|Bee Hive}} || <code>BeeHive</code>
+|-
+| 445 || 0 || [[File:Pixel Box.png|link=]] || {{item|Pixel Box}} || <code>PixelBox</code>
+|-
+| 446 || 0 || [[File:Silly Pink Balloon (placed).png|link=]] || {{item|Silly Pink Balloon}} || <code>SillyBalloonPink</code>
+|-
+| 447 || 0 || [[File:Silly Purple Balloon (placed).png|link=]] || {{item|Silly Purple Balloon}} || <code>SillyBalloonPurple</code>
+|-
+| 448 || 0 || [[File:Silly Green Balloon (placed).png|link=]] || {{item|Silly Green Balloon}} || <code>SillyBalloonGreen</code>
+|-
+| 449 || 0 || [[File:Blue Streamer (placed).png|link=]] || {{item|Blue Streamer}} || <code>SillyStreamerBlue</code>
+|-
+| 450 || 0 || [[File:Green Streamer (placed).png|link=]] || {{item|Green Streamer}} || <code>SillyStreamerGreen</code>
+|-
+| 451 || 0 || [[File:Pink Streamer (placed).png|link=]] || {{item|Pink Streamer}} || <code>SillyStreamerPink</code>
+|-
+| 452 || 0 || [[File:Silly Balloon Machine (placed).gif|link=]] || {{item|Silly Balloon Machine}} || <code>SillyBalloonMachine</code>
+|-
+| 453 || 0 || [[File:Silly Tied Balloon (Purple) (placed).gif|link=]] || rowspan=2 | {{item|Silly Tied Balloon (Purple)}} || rowspan=6 | <code>SillyBalloonTile</code>
+|-
+| 453 || 1 || {{transform|[[File:Silly Tied Balloon (Purple) (placed).gif|link=]]|mirror=y}}
+|-
+| 453 || 2 || [[File:Silly Tied Balloon (Green) (placed).gif|link=]] || rowspan=2 | {{item|Silly Tied Balloon (Green)}}
+|-
+| 453 || 3 || {{transform|[[File:Silly Tied Balloon (Green) (placed).gif|link=]]|mirror=y}}
+|-
+| 453 || 4 || [[File:Silly Tied Balloon (Pink) (placed).gif|link=]] || rowspan=2 | {{item|Silly Tied Balloon (Pink)}}
+|-
+| 453 || 5 || {{transform|[[File:Silly Tied Balloon (Pink) (placed).gif|link=]]|mirror=y}}
+|-
+| 454 || 0 || [[File:Pigronata (placed).gif|link=]] || {{item|Pigronata}} || <code>Pigronata</code>
+|-
+| 455 || 0 || [[File:Party Center (placed).gif|link=]] || {{item|Party Center}} || <code>PartyMonolith</code>
+|-
+| 456 || 0 || [[File:Silly Tied Bundle of Balloons (placed).gif|link=]] || {{item|Silly Tied Bundle of Balloons}} || <code>PartyBundleOfBalloonTile</code>
+|-
+| 457 || 0 || [[File:Party Present (placed).png|link=]] || {{item|Party Present}} || <code>PartyPresent</code>
+|-
+| 458 || 0 || [[File:Sandfall Block (placed).gif|link=]] || {{item|Sandfall Block}} || <code>SandFallBlock</code>
+|-
+| 459 || 0 || [[File:Snowfall Block (placed).gif|link=]] || {{item|Snowfall Block}} || <code>SnowFallBlock</code>
+|-
+| 460 || 0 || [[File:Snow Cloud (placed).png|link=]] || {{item|Snow Cloud}} || <code>SnowCloud</code>
+|-
+| 461 || 0 || [[File:Magic Sand Dropper.png|link=]] || {{item|Magic Sand Dropper}} || <code>SandDrip</code>
+|-
+| 462 || 0 || [[File:Desert Spirit Lamp.png|link=]] || {{item|Desert Spirit Lamp}} || <code>DjinnLamp</code>
+|-
+| 463 || 0 || [[File:Defender's Forge (placed).gif|link=]] || {{item|Defender's Forge}} || <code>DefendersForge</code>
+|-
+| 464 || 0 || [[File:War Table (placed).gif|link=]] || {{item|War Table}} || <code>WarTable</code>
+|-
+| 465 || 0 || [[File:War Table Banner (placed).png|link=]] || {{item|War Table Banner}} || <code>WarTableBanner</code>
+|-
+| 466 || 0 || [[File:Eternia Crystal Stand (placed).png|link=]] || {{item|Eternia Crystal Stand}} || <code>ElderCrystalStand</code>
+|-
+| 467 || 0 || [[File:Crystal Chest.png|link=]] || {{item|Crystal Chest}} || rowspan=17 | <code>Containers2</code>
+|-
+| 467 || 1 || [[File:Golden Chest.png|link=]] || {{item|Golden Chest}}
+|-
+| 467 || 2 || [[File:Spider Chest.png|link=]] || {{item|Spider Chest}}
+|-
+| 467 || 3 || [[File:Lesion Chest.png|link=]] || {{item|Lesion Chest}}
+|-
+| 467 || 4 || [[File:Dead Man's Chest.png|link=]] || {{item|Dead Man's Chest}}
+|-
+| 467 || 5 || [[File:Solar Chest.png|link=]] || {{item|Solar Chest}}
+|-
+| 467 || 6 || [[File:Vortex Chest.png|link=]] || {{item|Vortex Chest}}
+|-
+| 467 || 7 || [[File:Nebula Chest.png|link=]] || {{item|Nebula Chest}}
+|-
+| 467 || 8 || [[File:Stardust Chest.png|link=]] || {{item|Stardust Chest}}
+|-
+| 467 || 9 || [[File:Golf Chest.png|link=]] || {{item|Golf Chest}}
+|-
+| 467 || 10 || [[File:Sandstone Chest.png|link=]] || {{item|Sandstone Chest}}
+|-
+| 467 || 11 || [[File:Bamboo Chest.png|link=]] || {{item|Bamboo Chest}}
+|-
+| 467 || 12 || [[File:Desert Chest.png|link=]] || {{item|Desert Chest}}
+|-
+| 467 || 13 || [[File:Locked Desert Chest.png|link=]] || {{item|Locked Desert Chest|link={{tr|Biome Chests|link=y}}}}
+|-
+| 467 || 14 || [[File:Reef Chest.png|link=]] || {{item|Reef Chest}}
+|-
+| 467 || 15 || [[File:Balloon Chest.png|link=]] || {{item| Balloon Chest}}
+|-
+| 467 || 16 || [[File:Ash Wood Chest.png|link=]] || {{item|Ash Wood Chest}}
+|-
+| 468 || 0 || [[File:Crystal Chest.png|link=]] || {{item|Trapped Crystal Chest}} || rowspan=17 | <code>FakeContainers2</code>
+|-
+| 468 || 1 || [[File:Golden Chest.png|link=]] || {{item|Trapped Golden Chest}}
+|-
+| 468 || 2 || [[File:Spider Chest.png|link=]] || {{item|Trapped Spider Chest}}
+|-
+| 468 || 3 || [[File:Lesion Chest.png|link=]] ||  {{item|Trapped Lesion Chest}}
+|-
+| 468 || 4 || [[File:Dead Man's Chest.png]] || {{tr|Trapped Dead Man's Chest (unused)}}
+|-
+| 468 || 5 || [[File:Solar Chest.png|link=]] || {{item|Trapped Solar Chest}}
+|-
+| 468 || 6 || [[File:Vortex Chest.png|link=]] || {{item|Trapped Vortex Chest}}
+|-
+| 468 || 7 || [[File:Nebula Chest.png|link=]] || {{item|Trapped Nebula Chest}}
+|-
+| 468 || 8 || [[File:Stardust Chest.png|link=]] || {{item|Trapped Stardust Chest}}
+|-
+| 468 || 9 || [[File:Golf Chest.png|link=]] || {{item|Trapped Golf Chest}}
+|-
+| 468 || 10 || [[File:Sandstone Chest.png|link=]] || {{item|Trapped Sandstone Chest}}
+|-
+| 468 || 11 || [[File:Bamboo Chest.png|link=]] || {{item|Trapped Bamboo Chest}}
+|-
+| 468 || 12 || [[File:Desert Chest.png|link=]] || {{item|Trapped Desert Chest}}
+|-
+| 468 || 13 || [[File:Locked Desert Chest.png]] || {{tr|Trapped Locked Desert Chest (unused)}}
+|-
+| 468 || 14 || [[File:Reef Chest.png|link=]] || {{item|Trapped Reef Chest}}
+|-
+| 468 || 15 || [[File:Balloon Chest.png|link=]] || {{item|Trapped Balloon Chest}}
+|-
+| 468 || 16 || [[File:Ash Wood Chest.png|link=]] || {{item|Trapped Ash Wood Chest}}
+|-
+| 469 || 0 || [[File:Crystal Table.png|link=]] || {{item|Crystal Table}} || rowspan=12 | <code>Tables2</code>
+|-
+| 469 || 1 || [[File:Spider Table.png|link=]] || {{item|Spider Table}}
+|-
+| 469 || 2 || [[File:Lesion Table.png|link=]] || {{item|Lesion Table}}
+|-
+| 469 || 3 || [[File:Solar Table.png|link=]] || {{item|Solar Table}}
+|-
+| 469 || 4 || [[File:Vortex Table.png|link=]] || {{item|Vortex Table}}
+|-
+| 469 || 5 || [[File:Nebula Table.png|link=]] || {{item|Nebula Table}}
+|-
+| 469 || 6 || [[File:Stardust Table.png|link=]] || {{item|Stardust Table}}
+|-
+| 469 || 7 || [[File:Sandstone Table.png|link=]] || {{item|Sandstone Table}}
+|-
+| 469 || 8 || [[File:Bamboo Table.png|link=]] || {{item|Bamboo Table}}
+|-
+| 469 || 9 || [[File:Reef Table.png|link=]] || {{item|Reef Table}}
+|-
+| 469 || 10 || [[File:Balloon Table.png|link=]] || {{item|Balloon Table}}
+|-
+| 469 || 11 || [[File:Ash Wood Table.png|link=]] || {{item|Ash Wood Table}}
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Tile IDs/Part6}}

@@ -1,0 +1,40 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2517
+| use = @@@@ {{eicons|1.4.4|small=y}} / {{ut|23}} {{eicons|1.4.4|invert=y|small=y}}
+| knockback = @@@@ {{eicons|1.4.4|small=y}} / {{kb|5}} {{eicons|1.4.4|invert=y|small=y}}
+| listcat = Broadswords
+}}
+[[File:Palm Wood Sword (demo).gif|frame|{{tr|Palm Wood Sword}}的动画。]]
+
+'''{{tr|Palm Wood Sword}}'''是[[{{tr|Wooden Sword}}]]的另一个版本。它由{{tr|Palm Wood}}制作而来，后者可以获得自在[[{{tr|Ocean}}]]或{{eil|Oasis}}{{tr|biomes}}中砍伐的[[{{tr|palm tree}}]]。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Palm Wood Sword|expectedrows=1}}
+
+== 小贴士 ==
+* {{tr|Palm Wood Sword}}{{tr|damage}}和下列剑相同：{{#cargo_query:tables=Items|fields=CONCAT('{{eil{{!}}',name,'}}')|group by=itemid|where=name!="Palm Wood Sword" AND (listcat HOLDS 'swords' OR listcat HOLDS 'shortswords' OR listcat HOLDS 'broadswords') AND damage={{iteminfo|Palm Wood Sword|damage}}}}。得到后面的这些容易得多。
+* {{tr|player}}若收集了一些[[{{tr|Acorn}}]]和[[{{tr|sand}}]]，那么他们就可以在基地的沙子上附近种[[{{tr|palm tree}}]]。自然情况下，{{tr|palm trees}}只长在[[{{tr|Ocean}}]]或者是{{eil|Oasis}}{{tr|biomes}}。
+
+== 花絮 ==
+* {{tr|The Palm Wood Sword}}的外观和{{tr|the Wooden Sword}}的外观非常相似；不过还是有一些改变，最明显的是它的颜色略浅一些。另外，剑柄也略有不同，它的{{wikipedia|lang=en|quillon|剑格}}是水平方向的，而{{tr|Wooden Sword}}的剑格则与剑刃平行。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Use time}}由 23 降至 19。
+** 击退由 5 提升至 6。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+{{Wood}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Palm Wood Sword}}

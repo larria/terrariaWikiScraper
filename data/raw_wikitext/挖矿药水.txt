@@ -1,0 +1,33 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| type = Potion
+| auto = 2322
+| buffduration = @@@@ {{eicons|1.4.0.1|small=y}}<br/>{{duration|300}} {{eicons|Mining Potion|not=1.3.0.1|small=y}}
+| tags = drop / loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Mining Potion}}'''是一种喝下后会给予'''{{tr|Mining}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。此{{tr|buff}}会增加 25% [[{{tr|mining speed}}]]。{{potionlength|8 分钟}} {{eicons|Bonus drops|3ds=n}} 
+
+{{eicons|1.3.0.1}}它有小几率作为[[{{tr|Slimes}}]]的[[{{tr|Bonus drops}}|{{tr|bonus drop}}]]出现。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Mining Potion|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Mining buff}}只会提升[[{{tr|Pickaxes}}]]的{{tr|mining speed}}，它并不会提升[[{{tr|Drills}}]]或{{eil|Drill Containment Unit}}的钻探速度。
+* {{tr|Mining buff}}可与来自[[{{tr|Ancient Chisel}}]] {{eicons|1.4.0.1}}、[[{{tr|Slice of Cake}}]] {{Eicons|1.4.0.1}}、[[{{tr|Celestial Stone}}]]、[[{{tr|Celestial Shell}}]]、[[{{tr|Sun Stone}}]]或[[{{tr|Moon Stone}}]]和[[{{tr|Mining armor}}]]的奖励叠加。将它们与[[{{tr|Picksaw}}]]、[[{{tr|Luminite Pickaxe}}]]或[[{{tr|Shroomite Digging Claw}}]]配合使用可达到极快的{{tr|mining speed}}。
+
+== {{tr|Trivia}} ==
+* 其{{tr|sprite}}有点像倒置的{{tr|pickaxe}}：{{transform|[[File:Mining Potion.png|link=]]|flip=y}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Buff duration}}从 8 分钟提升至 10 分钟。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated}}，{{tr|buff}}持续时间由 5 分钟改为 8 分钟。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{language info|en=Mining Potion}}

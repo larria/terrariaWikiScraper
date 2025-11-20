@@ -1,0 +1,112 @@
+{{exclusive|Stylist}}
+{{item infobox
+| imagealt = <p>[[File:Hair Dye Remover.png|link=]] [[File:Life Hair Dye.png|link=]] [[File:Mana Hair Dye.png|link=]] [[File:Depth Hair Dye.png|link=]] [[File:Money Hair Dye.png|link=]] [[File:Time Hair Dye.png|link=]] [[File:Team Hair Dye.png|link=]]</p><p>[[File:Biome Hair Dye.png|link=]] [[File:Party Hair Dye.png|link=]] [[File:Rainbow Hair Dye.png|link=]] [[File:Speed Hair Dye.png|link=]] [[File:Martian Hair Dye.png|link=]] [[File:Twilight Hair Dye.png|link=]]</p>
+| type = Hair dye
+| use = {{iteminfo|1990|useTime}}
+| rare = {{iteminfo|1990|rare}}
+| stack = {{iteminfo|1990|stack}}
+| consumable = yes
+| cargo = no
+}}
+
+'''{{tr|Hair Dyes}}'''是由[[{{tr|Stylist}}]] [[{{tr|NPC}}]] 出售的[[{{tr|consumable}}|{{tr|consumable items}}]]。使用后，它们会用一种动态{{tr|effect}}取代{{tr|player}}的头发颜色。
+
+== 类型 ==
+{{tr|Hair Dye}}的获取条件参见[[{{tr|Stylist}}]]页面。
+{{options/set|item|mode=table|nolink=y}}
+{|class="terraria lined" id="Dyes-table"
+|-
+!colspan=2|{{tr|Item}}
+!价格
+!效果
+|-
+|{{item infobox|view=item|auto=1990|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1990|buy}}
+|清除当前生效的{{tr|Hair Dye}}。
+|-
+|{{item infobox|view=item|auto=1977|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1977|buy}}
+|发色随着{{tr|player}}当前的[[生命值]]改变。生命值全满时，发色是红色，并且随着生命值的流失缓慢褪色变为接近黑色。<br/>{{:{{tr|Hair Dyes}}/slider|id=health|format=[[File:PlayerHeart.png|生命值|link=]]&ensp;{{tr|Health}}：$slider$ $value$%}}
+|-
+|{{item infobox|view=item|auto=1978|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1978|buy}}
+|发色随着玩家的当前[[{{tr|mana}}]]水平而变。满{{tr|mana}}时，头发是蓝色的，并且随着{{tr|mana}}减少慢慢褪色到接近白色。<br/>{{:Hair Dyes/slider|id=mana|format=[[File:Mana.png|{{tr|Mana}}|link=]]&ensp;{{tr|Mana}}：$slider$ $value$%}}
+|-
+|{{item infobox|view=item|auto=1979|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1979|buy}}
+|发色随着{{tr|player}}当前所处的[[{{tr|layer}}]]改变。发色在[[{{tr|Space}}]]中是蓝色、在[[{{tr|surface}}]]是绿色、在[[{{tr|underground}}]]时是棕色、在[[{{tr|Cavern}}|{{tr|Cavern layer}}]]中是灰色、在[[{{tr|Underworld}}]]中是红色。
+|-
+|{{item infobox|view=item|auto=1980|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1980|buy}}
+|发色随着{{tr|player}}携带的[[{{tr|coin}}]]数量改变。当携带数量是{{tr|copper coins}}级时为红棕色、是{{tr|silver coins}}级时为银色、以此类推。玩家{{tr|inventory}}中需要至少有 {{pc|1}} 才能购买。
+|-
+|{{item infobox|view=item|auto=1981|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1981|buy}}
+|发色随着一天中的[[{{tr|time}}]]改变。从下半夜到早晨是浅蓝色、早晨到中午是绿色、中午到傍晚是黄色、傍晚到上半夜是红色、上半夜到午夜是紫色、午夜到下半夜是深蓝、之后回到浅蓝。颜色非常平滑地随着时间推移而变化。<br/>{{:{{tr|Hair Dyes}}/slider|id=time|format=[[File:Power Menu Time.png|{{tr|Time}}|link=|22px]]&ensp;时间：$slider$ $value$|defaultvalue=0}}
+|-
+|{{item infobox|view=item|auto=1982|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1982|buy}}
+|在[[{{tr|multiplayer}}]]{{tr|games}}中，发色对应于{{tr|player}}的当前队伍。在单人模式中或不在队伍中时，则呈现白色。
+|-
+|{{item infobox|view=item|auto=1983|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1983|buy}}
+|发色随着{{tr|player}}当前所处的[[{{tr|biome}}]]改变。在[[{{tr|Forest}}]]、[[{{tr|Glowing Mushroom Biome}}|{{tr|Mushroom}}]]、[[{{tr|Space}}]]和[[{{tr|Ocean}}]]中是绿色；在{{tr|normal}}[[{{tr|Deserts}}]]中是黄色；在[[{{tr|Jungle}}]]中是黄绿色；在[[{{tr|Dungeon}}]]中是棕色；在所有类型的[[{{tr|The Corruption}}]]中是紫色；在所有类型的[[{{tr|The Crimson}}]]中是红色；在所有类型的[[{{tr|The Hallow}}]]中是浅蓝色；在{{tr|normal}}[[{{tr|Snow}}]]和[[{{tr|Ice biome}}]]中是白色；在{{tr|normal}}[[{{tr|Underground}}]]、[[{{tr|Cavern}}]]和[[{{tr|The Underworld}}]]中是灰色。在[[{{tr|Blood Moon}}]]期间发色全程是深红色，{{tr|Ocean biome}}除外。
+|-
+|{{item infobox|view=item|auto=1984|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1984|buy}}
+|发色变为粉色，并且不断在{{tr|player}}身边生成{{tr|confetti}}。
+|-
+|{{item infobox|view=item|auto=1985|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1985|buy}}
+|发色在多种颜色间不断循环变化，变化方式和[[{{tr|Rainbow Brick}}]]完全一样，并且和它们同步。击杀三个[[{{tr|mechanical bosses}}]] 后出售。
+|-
+|{{item infobox|view=item|auto=1986|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|1986|buy}}
+|发色随着{{tr|player}}当前{{tr|speed}}改变。静止不动时，头发是平常的颜色，移动时变为蓝绿色。高速时颜色会更加明显。击杀至少一个[[{{tr|Mechanical bosses}}|{{tr|mechanical boss}}]] 后出售。<br />{{:{{tr|Hair Dyes}}/slider|id=speed|format=[[File:Stopwatch.png|{{tr|Speed}}|link=|22px]]&ensp;{{tr|Speed}}：$slider$ $value$&nbsp;{{mph}}|defaultvalue=30}}
+|-
+|{{item infobox|view=item|auto=2863|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|2863|buy}}
+|发色比默认更亮并且在{{tr|darkness}}中可见。完成[[{{tr|Martian Madness}}]]后出售。
+|-
+|{{item infobox|view=item|auto=3259|tags=vendor/vendor:Stylist}}
+| align=right | {{iteminfo|3259|buy}}
+|发色是紫色且有星光，在{{tr|player}}移动时星光也会跟着移动。头发在完全{{tr|darkness}}中仍可见。使用[[{{tr|Familiar Wig}}]]时无效果。（可以改用[[{{tr|Twilight Dye}}]]。）完成[[{{tr|Martian Madness}}]]后出售。
+|}{{options/reset|item}}
+
+== 备注 ==
+* 发色在{{tr|map}}和{{tr|minimap}}上也会动态改变。
+* 如果玩家不想{{tr|equip}}{{tr|Watch}}，{{tr|Time Hair Dye}}可以当作不太精确的[[{{tr|Copper Watch}}]]或[[{{tr|Tin Watch}}]]来用以节约空间。然而，需要在{{tr|Vanity slot}}{{tr|equip}}一顶帽子（或者不{{tr|equip}}{{tr|helmet}}）来显出头发。使用[[{{tr|Familiar Wig}}]]可以解决这个问题。
+* 在人物{{tr|select}}界面时{{tr|Time Hair Dye}}的{{tr|effect}}也会显示。
+* 虽然购买{{tr|Money Hair Dye}}只需{{tr|cost}} {{iteminfo|Money Hair Dye|buy}}，但玩家的{{tr|inventory}}中需要有至少 {{pc|1}}才能让{{tr|Stylist}}售卖它。
+* 即使戴着会完全遮住头发的{{tr|helmet}}，{{tr|Party Hair Dye}}也会{{tr|spawn}}{{tr|confetti}}。
+* 不在{{tr|team}}内时（或处于{{tr|singleplayer}}中），{{tr|Team Hair Dye}}的作用和[[{{tr|Team Dye}}]]有所不同：{{tr|Team Hair Dye}}会让玩家的头发变成白色，而{{tr|Team Dye}}不会起作用，就像并未施用{{tr|dye}}那样。
+* {{tr|Biome Hair Dye}}使用当前{{tr|biome}}的[[水]]色，使用[[{{tr|Water Fountain}}]]会将发色变为{{tr|water fountain}}的{{tr|biome}}对应的颜色，尽管所处{{tr|biome}}并未改变。
+
+== 图库 ==
+<gallery widths="180px">
+File:Twilight Hair Dye (demo).gif|{{tr|Twilight Hair Dye}}。注意{{tr|stars}}仅在玩家移动时才可见。
+File:Speed Hair Dye (demo).gif|使用[[{{tr|Hermes Boots}}]]时的{{tr|Speed Hair Dye}}。
+File:Party Hair Dye (demo).gif|{{tr|Party Hair Dye}}。注意较大的{{tr|confetti}}会停留在地面上，而较小的会穿过地板。
+File:Rainbow Hair Dye (demo).gif|{{tr|Rainbow Hair Dye}}。注意它和[[{{tr|Rainbow Brick}}]]同步。
+</gallery>
+
+== 另见 ==
+* {{item|Leinfors' Luxury Shampoo}}，一种有着{{tr|Hair Dye}}般效果的{{tr|an accessory}}。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|引入了{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}。}}
+{{history|Desktop 1.2.4|（无记录的）[[{{tr|Rainbow Brick}}]]和[[{{tr|Rainbow Brick Wall}}]]现在会贯穿整个色谱，{{tr|Rainbow Hair Dye}}也一样。}}
+{{history|Desktop 1.2.3.1|修复了当穿着能够给予最大{{tr|mana}}的{{tr|armor}}时用了{{tr|Mana Hair Dye}}的头发会变为粉色的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|引入{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|引入{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}。（{{icon/ps4}}）}}
+{{history|Console 1.08|引入了[[{{tr|Stylist}}]]以及{{tr|Hair Dye}}（{{tr|Life Hair Dye}}、{{tr|Mana Hair Dye}}、{{tr|Depth Hair Dye}}、{{tr|Money Hair Dye}}、{{tr|Time Hair Dye}}、{{tr|Team Hair Dye}}、{{tr|Biome Hair Dye}}、{{tr|Party Hair Dye}}、{{tr|Rainbow Hair Dye}}、{{tr|Speed Hair Dye}}）和{{tr|Hair Dye Remover}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|引入{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}，并将机制更新为与{{tr|Desktop}} 1.3.0.1 一致。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Hair Dyes}}

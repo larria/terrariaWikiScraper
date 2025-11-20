@@ -1,0 +1,49 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper<!-- necessary for the {{transclude}} box to be displayed in the right spot -->
+|{{item infobox
+| auto = 4348
+| tags = vendor / hardmode / vendor:Traveling Merchant
+| listcat = magic weapons / magic guns
+}}
+|[[File:Orange Zapinator (demo).gif|thumb|射击{{tr|Orange Zapinator}}来展示其混沌行为。|236px]]
+}}
+{{about|{{tr|Hardmode}}的{{tr|magic weapon}}|{{tr|pre-Hardmode}}的版本|{{tr|Gray Zapinator}}|{{eversions|Zapinator}}独有的{{tr|magic weapon}}|{{tr|Zapinator}}}}
+
+'''{{tr|Orange Zapinator}}'''是仅限[[{{tr|Hardmode}}]]的[[{{tr|magic gun}}]]，可以购买自[[{{tr|Traveling Merchant}}]]，价格为 {{iteminfo|Orange Zapinator|buy}}。[[{{tr|Meteor armor}}]]的{{tr|set bonus}}会将其[[{{tr|mana}}]]花费降到 0，但状态中显示的{{tr|mana cost}}并不会改变。
+
+{{transclude|{{tr|Gray Zapinator}}|section=projectile}}
+
+== 备注 ==
+* 伤害提升效果同样也应用于[[{{tr|critical hits}}]]。
+* 因为{{tr|Orange Zapinator}}是在击中时获得效果，后继的命中可能会给予同一个光束新的效果，这有可能导致叠加伤害和击退效果，使得一些光束可造成数千的伤害或极强的击退。
+* 只有光束的前端会造成伤害，如果未接触到前端，{{tr|enemy}}可以穿过光束而不受到伤害。
+* 一旦进入{{tr|Hardmode}}，{{tr|the Orange Zapinator}}新来的{{tr|Traveling Merchant}}的{{tr|inventory}}中的{{tr|Gray Zapinator}}，使得后者无法再获取。
+
+== 小贴士 ==
+* 在击杀[[{{tr|Golem}}]]后，在[[{{tr|Dungeon}}]]附近使用{{tr|The Orange Zapinator}}某种程度上说是不安全的，因为不可预测的激光可能会引来[[{{tr|Cultists}}]]并且可能会生成[[{{tr|Lunatic Cultist}}]]。
+* 尽管它的{{tr|rarity}}较低，但考虑到有幸能从其{{tr|projectiles}}行为中获得特殊效果，它在{{tr|Hardmode}}早期是一把非常强力的武器（尤其是搭配上强化{{tr|magic}}能力的{{tr|armor}}后）。
+* 经常出现的慢速光束在同体型较大且移动较慢的 {{tr|boss}} 战斗时往往非常有用，比如[[{{tr|Plantera}}]]。
+
+== 花絮 ==
+* 一次攻击会有 {{percent|(19/20)*(19/20)*(1/2)*(1/3)*(6/7)*(6/7)*(19/20)*(49/50)*(6/7)*(6/7)*(13/14)*(13/14)*(9/10)}} 的概率不获得任何特殊效果。在这种情况下仍会有 40% {{tr|velocity}}和 10% {{tr|damage}}以及{{tr|knockback}}的衰减。
+* 一次性触发所有效果的概率为1/{{formatnum:{{#expr:20*20*2*(3/2)*7*7*20*50*7*7*14*14*10}}}}。
+* {{tr|The Zapinator}}的名字（Zapinator）和外观都类似于 {{wikipedia|NES Zapper}} ，这是{{wikipedia|Famicom|红白机}}（在日本称为Family Computer，在北美和国际上称为{{wikipedia|Nintendo Entertainment System}}或NES）的电子光枪外设。{{tr|Orange Zapinator}}特别类似于 1989 年在欧美重新发布的拥有明亮的橙色和黑色扳机的 NES Zapper。
+** NES Zapper 的颜色为橙色是由于欧洲和美国法律禁止将玩具枪支涂成真枪的颜色，以防止其用于犯罪。
+** {{tr|projectiles}}不稳定的行为和其{{tr|tooltip}}——<i>{{itemTooltip|4348}}</i>——很可能是调侃光线枪因其作用原理导致的不精确性和光线枪在不同光枪游戏中效果的不一致。
+* [[{{tr|Zapinator}}]]最早是由开发人员在最初的[[1.0|{{tr|Desktop-Release}}]]中引入的，用于秒杀{{tr|enemies}}来进行测试，并在 [[1.0.1]] 版本中移除。后来，这个物品被加入到 {{3DS version}}中。{{tr|The Zapinator}}最终在 [[1.4.0.1]] 中变为[[{{tr|Gray Zapinator}}]]和{{tr|Orange Zapinator}}重新引入到{{eversions|1.4.0.1}}中。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Usetime}}由 37 降低至 36。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Orange Zapinator}}

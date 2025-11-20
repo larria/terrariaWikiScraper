@@ -1,0 +1,45 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4908
+| damage = 100
+| type = Consumable
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+| listcat = Explosives
+}}
+[[File:Dirt Bomb (demo).gif|frame|{{tr|A Dirt Bomb}}爆炸。]]
+
+'''{{tr|Dirt Bomb}}'''是一种[[{{tr|explosives (class)}}]]，就像普通的[[{{tr|Bomb}}]]一样，它将会在等待 3 {{tr|seconds}}后爆炸。但它随后将在小半径内的爆炸区域中[[{{tr|Dirt Block}}]]而非破坏物块。爆炸半径内的已有物块将不受影响。它可以与[[{{tr|Gel}}]]合成为[[{{tr|Sticky Dirt Bomb}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Dirt Bomb|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Dirt Bomb|expectedrows=1}}
+
+== 备注 ==
+* 如果被丢向玩家，那么{{tr|dirt}}不会在{{tr|player}}的位置生成。
+* {{tr|Dirt Bomb}}会对正上方的{{tr|player}}造成正常{{tr|Bomb}}的伤害，而不会产生{{tr|dirt}}。
+* {{tr|Dirt Bomb}}产生的{{tr|dirt}}可以比制造它需要的 25 块要多，在半空爆炸时最多可以产生 57 块{{tr|dirt}}，在悬空的一格方块上爆炸产生 56 块。这是一种无限获得{{tr|dirt}}的方法，{{tr|dirt}}能被制作成[[{{tr|mud}}]]，进而用于种植[[{{tr|Chlorophyte Ore}}]]，这种事在 [[{{tr|1.4.0.1}}]] 之前不可行。
+* 如果在[[{{tr|Old One's Army}}]]{{tr|event}}中使用{{tr|Dirt Bomb}}，此时{{tr|dirt}}可以产生，但是{{tr|enemies}}会直接穿过它们。
+* 与其普通对应物（普通{{tr|Bomb}}）不同，{{tr|the Dirt Bomb}}并没有弹力的版本。
+* {{tr|Dirt Bomb}}产生的{{tr|The dirt}}不会替换掉{{tr|liquids}}。如果爆炸发生在水池中，那么产生的{{tr|dirt}}会“蕴含”原有的{{tr|water}}；挖掉这些{{tr|dirt}}又会再度将{{tr|water}}释放出来。
+
+== 小贴士 ==
+* {{tr|Dirt Bomb}}可用于快速填充爆炸或采矿留下的洞，也可以快速制造山或填充大面积土地。尤其值得一提的是{{$|Meteorite||biome}}坠毁地点，根据{{tr|meteorite}}大小的差异，填补{{tr|meteorite}}的区域需要 40 至 60 枚{{tr|Dirt Bomb}}。
+** 这在炸出[[{{tr|Hellevator}}]]时非常有用，可以使用{{tr|the Dirt Bombs}}来填上流出{{tr|lava}}的那些孔隙。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|修复了在半砖上爆炸时不会产生{{tr|dirt}}的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+{{Explosives}}
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Dirt Bomb}}

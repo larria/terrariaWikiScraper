@@ -1,0 +1,49 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| auto = 3817
+| tags = drop
+}}
+
+'''{{tr|Defender Medal}}'''是用来从[[{{tr|Tavernkeep}}]]购买物品的一种货币。它们可以通过在[[{{tr|Old One's Army}}]][[{{tr|event}}]]中完成波次来获得，在每波结束时会由[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]掉落。在开启[[{{tr|Betsy}}]]的[[{{tr|Expert Mode}}]][[{{tr|Treasure Bag}}]]时也会奖励 30–49 个{{tr|Defender Medals}}。此外，玩家与{{tr|Tavernkeep}}对话并选择“{{gameText|UI.BartenderHelp}}”选项时也能获得 10 个{{tr|Defender Medals}}，但每个世界只能以此方式获得一次。
+
+== 用途 ==
+{| class="terraria lined sortable"
+! 物品 !! 价格
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name, buy
+|q?where=tag HOLDS 'dd2'
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 备注 == 
+* 在[[{{tr|Multiplayer}}]]中，每位玩家都可以从{{tr|Eternia Crystal}}处拾取一份单独的{{tr|Defender Medals}}，与{{tr|Expert Mode}}中的{{tr|Treasure Bags}}的机制类似。
+
+== 小贴士 ==
+* 购买{{tr|items}}并立即将其卖回{{tr|Tavernkeep}}是将{{tr|Defender Medals}}换成[[{{tr|coins}}]]的好方式。提高{{tr|Tavernkeep}}的[[{{tr|happiness}}]]会提供更高的利润。
+
+== 花絮 ==
+* 购买所有可用{{tr|Defender Medal}}购买的物品一共需要 {{dm|{{#expr:0{{#lstmap:{{#cargo_query:tables=Items|fields=name|delimiter=,|where=tag HOLDS 'dd2'|no html|default=}}|,|@@@@|<esc>0{{iteminfo|raw=y|@@@@|shopCustomPrice}}</esc>|+}}}}}}。
+* 直到 [[1.3.5]]，{{tr|items}}拥有未使用的内部名称。{{tr|Defender Medal}}的名称曾为“our first non coin currency!”（我们的首个非{{tr|coin}}货币！）{{source code ref|v=1.3.4.4|old=y|method=Terraria.Item.SetDefaults4}}
+
+== 另见 ==
+* {{dd2 link|Defender Medals}}
+
+== 历史 ==
+{{history|Desktop 1.3.4.1|修复了在[[{{tr|Multiplayer}}]]中{{tr|Defender Medals}}会以每堆叠 1 个的方式掉落，而非以预计数量掉落的 {{tr|Bug}}。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+[[Category:物品]]
+
+{{language info|en=Defender Medal}}

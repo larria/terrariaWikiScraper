@@ -1,0 +1,90 @@
+{{legacy nav tab}}
+{{item infobox | boxwidth=23em
+| auto = 65
+| sound1 = Item 9.wav
+| soundcaption1 = {{tr|Fallen Star}}
+| sound2 = Item 10.wav
+| soundcaption2 = {{tr|Fallen Star impact}}
+| sound3 = MaxMana.wav
+| soundcaption3 = {{tr|projectile}}冷却完毕
+| listcat = broadswords / projectile melee
+| tags = loot / bag loot
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Sunfury|Star Wrath|Starlight}}
+[[File:Starfury (demo).gif|350px|thumb|使用中的{{tr|Starfury}}。]]
+
+'''{{tr|Starfury}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|sword}}]]，有 {{chance|1/4}} 几率在[[{{tr|Floating Island}}]]上的[[{{tr|Skyware Chest}}]]中找到，有 {{chance|1/4}} 几率从{{eil|Sky Crate|s}}和{{eil|Azure Crate|s}}中获得。在挥舞时，{{tr|Starfury}}有时能生成从天而降的{{tr|star projectile}}落向{{tr|cursor}}位置。{{tr|star}}会发光，造成 1.5 倍于{{tr|sword}}的{{tr|damage}}（{{#expr:floor({{iteminfo|Starfury|damage}}*1.5)}} {{tr|base damage}}），不造成[[{{tr|knockback}}]]，且能够穿透一次。{{source code ref|name=shoot|v=1.4.3.6|method=Terraria.Player.ItemCheck_Shoot}}{{tr|star}}在到达{{tr|cursor}}处或{{tr|cursor}}上方最低的开阔空间之前可以穿透所有[[{{tr|blocks}}]]，此后它会在击中{{tr|block}}时消失。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Starfury|expectedrows=1}}
+
+== 备注 ==
+* 当没有[[{{tr|Modifiers}}]]时，{{tr|The star projectile}}的冷却时间为 {{duration|{{iteminfo|Starfury|useTime|raw=y}} ticks}}。
+** 冷却结束时，会产生小的粒子效果并且会播放{{sound|[[Media:MaxMana.wav|恢复{{tr|mana}}声]]|MaxMana.wav|nofallback=y}}来提醒玩家。
+* {{tr|The star projectile}}仅会在挥舞开始时发射。因此，任何{{tr|melee speed bonus}}都会导致{{tr|stars}}每 3 次挥舞发射一次，而非每 2 次挥舞。
+** 因此，{{tr|star projectile}}的发射频率在玩家具有较低的{{tr|melee speed bonus}}时会降低。
+* {{tr|The star projectile}}生成在玩家上方 37.5 格并且向玩家面朝方向的反方向（水平）偏离光标最多 12.5 格处。<ref name="shoot"/>
+** 因此，将{{tr|cursor}}放置在屏幕底部会使得{{tr|star}}以近乎直线的轨迹落下，而将{{tr|cursor}}放置在屏幕顶部会使得{{tr|star}}轨迹的角度大幅变化。
+* {{tr|star projectile}}的[[{{tr|velocity}}]]受到[[{{tr|melee speed}}]]{{tr|bonuses}}影响。玩家的{{tr|melee speed}}越高，{{tr|star}}的{{tr|velocity}}越高。
+
+== 小贴士 ==
+* {{tr|Starfury}}可以用于寻找洞穴，因为{{tr|stars}}在下落时会发光，可以到达屏幕上可见的任何洞穴，且会产生能够向下运动的发光粒子。
+* 如果瞄准准确，{{tr|the Starfury}}挥舞时能够用{{tr|sword}}和{{tr|star}}击中不同{{tr|enemy}}，或是同一{{tr|enemy}}两次。
+* 在[[{{tr|Underground Jungle}}]]使用{{tr|the Starfury}}时要小心，因为它很容易打破尚未发现的[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]中的[[{{tr|Larva}}]]，从而召唤出[[{{tr|Queen Bee}}]]。
+* 如果使用{{tr|melee speed}}加成且仅使用{{tr|star}}进行攻击，将挥舞的时机卡在每次{{tr|projectile}}冷却结束时可能会很有用。
+** 此外，[[{{tr|Modifiers}}|{{tr|Legendary}}]]的{{tr|Starfury}}会在{{tr|melee speed}}位于 39% 至 50% 之间时达到最高的{{tr|stars}}发射频率。
+
+== 花絮 ==
+* {{eil|Star Wrath}}可以被视作此武器的[[{{tr|Hardmode}}]]升级。
+* 在早期版本中，{{tr|Starfury}}是一把[[{{tr|magic weapon}}]]，能类似于{{tr|Star Wrath}}一样持续生成{{tr|stars}}。这使得它甚至直到{{tr|Hardmode}}早期都是好用的武器。这一能力在 [[1.2]] 更新中移除了，它的武器{{tr|damage}}类型也在此次更新中改变。
+* 在早期测试中，[[Redigit]] 曾将{{tr|the Starfury}}放在一个充满“几个屏幕的[[{{tr|spike}}]]”（several screens of [[spike]]s）的地方，并且告诉测试者们不管谁先找到它就可以得到它。然而无论哪个测试者接近它，他就会把他们传送到[[{{tr|Ocean}}]]。<ref>https://twitter.com/Demilogic/status/1593635502581846018''"Starfury was the first magic item in game. When it was added, I placed it in the world surrounded by several screens of spikes and told the testers whoever gets to it first can keep it. Whenever someone got close I’d teleport them to the ocean. Those were the best times." - Redigit on Twitter''</ref>
+* {{tr|Starfury}}在游戏[[《{{tr|Pixel Piracy}}》]]、[[《{{tr|Dungeon Defenders 2}}》]]、和{{维基百科|b=y|Dead Cells|死亡细胞}}中作为{{tr|crossovers}}的一部分出现。
+
+== 另见 ==
+* {{pp link|Starfury}}
+* {{dd2 link|Swords#Legendary|Starfury}}
+* {{tr|Dead Cells}} Wiki 上的{{iwlink|dc|Starfury}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprite updated}}。旧的{{tr|sprite}}是 [[File:Starfury (pre-1.4.4.9).png|link=]]。}}
+{{history|Desktop 1.4.4.8|
+** {{tr|Damage}}由 22 提升至 25。
+** {{tr|Stars}}现在造成 1.5 倍{{tr|sword}}的伤害而不是 2 倍。}}
+{{history|Desktop 1.4.4|
+** 现在{{tr|Stars}}下落速度提高 25%，能够穿过{{tr|blocks}}，并大幅改动了其视觉效果。
+** 包含在{{tr|Skyware Chests}}和{{tr|Sky Crate}}/{{tr|Azure Crates}}的几率由 {{chance|1/3}} 降低至 {{chance|1/4}}。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Zenith}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Projectile sprite updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Inventory sprite updated.}}}}
+{{history|Desktop 1.2.3|
+** 修正了{{tr|Starfury}}作为{{tr|melee weapon}}却能获得{{tr|magic}}[[{{tr|modifier}}|{{tr|prefixes}}]]的问题。
+** 修复了{{tr|Starfury projectiles}}属于{{tr|magic}}而非{{tr|melee}}（不再触发[[{{tr|Spectre armor}}]]的效果）。}}
+{{history|Desktop 1.2|
+** {{tr|Damage}}提升，落下的{{tr|stars}}（由 15 提升至 22）{{tr|sword}}自身（由 16 提升至 22）都有所提升。
+** 现在有充能时间了。
+** 现在归类为{{tr|melee damage}}而非{{tr|magic damage}}。
+** 使用不再需要{{tr|mana}}。
+** {{tr|Inventory}}{{tr|Sprite updated}}。旧的{{tr|sprite}}是 [[File:Starfury (pre-1.2).png|link=]]。}}
+{{history|Desktop 1.0.6|
+** {{tr|Damage}}由 15 提升至 16。
+** {{tr|Mana usage}}由 11 提升至 16。
+** 由{{tr|Starfury}}所产生的{{tr|Stars}}如果是在{{tr|blocks}}内生成的，现在会继续飞行直到它们到达开放空间，在这个时间点上它们会变为实体。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Starfury}}

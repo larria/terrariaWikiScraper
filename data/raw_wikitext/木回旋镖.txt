@@ -1,0 +1,60 @@
+{{item infobox
+| auto = 284
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 7 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.4|small=y}} / {{ut|16}} {{eicons|1.4.4|invert=y|small=y}}
+| listcat = boomerangs
+| tags = Loot / vendor / vendor:Skeleton Merchant
+}}
+{{drop infobox|style=clear:right}}
+[[File:Wooden Boomerang (demo).gif|framed|使用中的{{tr|Wooden Boomerang}}。]]
+
+'''{{tr|Wooden Boomerang}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|boomerang}}]]。它是最弱的{{tr|boomerang}}，出现在位于[[{{tr|Surface}}]]和[[{{tr|Underground}}]][[{{tr|layer}}]]中的[[{{tr|Chest}}|{{tr|Wooden Chest}}]]内。它也能在[[{{tr|full moon}}]]期间从{{eil|Skeleton Merchant}}处以 {{iteminfo|Wooden Boomerang|buy}} 的价格购买。
+
+{{eicons|1.4.0.1}} 可以用[[{{tr|Fallen Star}}]]将其升级为[[{{tr|Enchanted Boomerang}}]]。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Wooden Boomerang|expectedrows=1}}
+
+== 备注 == 
+* {{tr|Wooden Boomerang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 13.64 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Wooden Boomerang}}返回玩家时的最高速度为 {{mph|9 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 小贴士 ==
+* {{eicons|1.4.0.1}} 由于可以非常便宜地将它升级为{{tr|Enchanted Boomerang}}，因此玩家找到了{{tr|Wooden Boomerang}}应当尽快将其升级以得到大幅属性提升。由于这还会将其售价提升到原本的好几倍，因此将拿到的{{tr|boomerangs}}升级是值得的。
+
+== 花絮 ==
+* 它不能从[[{{tr|Wooden Crate}}]]中获得，尽管其余出现在{{tr|Wooden Chests}}中的稀有物品有很多可以从[[{{tr|Wooden Crate}}]]中获得。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 8 提升至 10。
+** {{tr|Use time}}由 16 提升至 20。
+** 现在由[[{{tr|Skeleton Merchant}}]]出售。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Enchanted Boomerang}}]]。}}
+{{history|Desktop 1.3.0.1|伤害从 7 提升至 8。}}
+{{history|Desktop 1.1|现在视为{{tr|melee}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Damage}}由 7 提升至 8。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|伤害由 7 提升至 8。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced}}，列入{{tr|melee}}中。}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|伤害从 7 提升至 8。}}
+{{history|Mobile 1.1.5536|现在列入{{tr|melee}}中。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，列入{{tr|melee}}中。}}
+
+== 参考 ==
+{{reflist}}
+
+{{boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Wooden Boomerang}}

@@ -1,0 +1,1004 @@
+{|class="terraria ajaxHide"
+|图格 ID: {{#dpl:category=数据 ID|titleregexp=图格 ID/第 . 部分$|skipthispage=no|ordermethod=titlewithoutnamespace|format=²{dotlist/start¦inline=y}²,²{dotlist/item¦[[%TITLE%¦²{#replace:%TITLE%¦图格 ID/¦}²]]}²,,²{dotlist/end}²}}
+|}
+{| class="terraria sortable border"
+! data-sort-type="number" | ID !! data-sort-type="number" | 子 ID<ref>对于物品，即其 <code>placeStyle</code> 属性。</ref> !! 图片 !! 物品 / 实体 !! 内部名称
+|-
+| 0 || 0 || [[File:Dirt Block (placed).png|link=]] || {{item|Dirt Block}} || <code>Dirt</code>
+|-
+| 1 || 0 || [[File:Stone Block (placed).png|link=]] || {{item|Stone Block}} || <code>Stone</code>
+|-
+| 2 || 0 || {{item|Grass|mode=table|class=alignleft}} || rowspan=2 | <code>Grass</code>
+|-
+| 2 || Beach || [[File:Beach grass.png|link=]] || 海滨草 {{note|small=y|paren=y|未使用}}
+|-
+| 3 || 0 || [[File:tiles_3_0.png|link=]] || rowspan=6 | {{eil|Tall Grass Seeds|Tall Grass}} || rowspan=45 | <code>Plants</code>
+|-
+| 3 || 1 || [[File:tiles_3_1.png|link=]]
+|-
+| 3 || 2 || [[File:tiles_3_2.png|link=]]
+|-
+| 3 || 3 || [[File:tiles_3_3.png|link=]]
+|-
+| 3 || 4 || [[File:tiles_3_4.png|link=]]
+|-
+| 3 || 5 || [[File:tiles_3_5.png|link=]]
+|-
+| 3 || 6 || [[File:tiles_3_6.png|link=]] || rowspan=4 | {{eil|Magenta Flower Seeds|Magenta Flower}}
+|-
+| 3 || 30 || [[File:tiles_3_30.png|link=]]
+|-
+| 3 || 31 || [[File:tiles_3_31.png|link=]]
+|-
+| 3 || 32 || [[File:tiles_3_32.png|link=]]
+|-
+| 3 || 7 || [[File:tiles_3_7.png|link=]] || rowspan=5 | {{eil|Pink Flower Seeds|Pink Flower}}
+|-
+| 3 || 17 || [[File:tiles_3_17.png|link=]]
+|-
+| 3 || 33 || [[File:tiles_3_33.png|link=]]
+|-
+| 3 || 34 || [[File:tiles_3_34.png|link=]]
+|-
+| 3 || 35 || [[File:tiles_3_35.png|link=]]
+|-
+| 3 || 8 || [[File:tiles_3_8.png|link=]] || {{eil|Mushroom}}
+|-
+| 3 || 9 || [[File:tiles_3_9.png|link=]] || rowspan=3 | {{eil|Blue Flower Seeds|Blue Flower}}
+|-
+| 3 || 16 || [[File:tiles_3_16.png|link=]]
+|-
+| 3 || 20 || [[File:tiles_3_20.png|link=]]
+|-
+| 3 || 10 || [[File:tiles_3_10.png|link=]] || rowspan=7 | {{eil|Yellow Flower Seeds|Yellow Flower}}
+|-
+| 3 || 11 || [[File:tiles_3_11.png|link=]]
+|-
+| 3 || 13 || [[File:tiles_3_13.png|link=]]
+|-
+| 3 || 18 || [[File:tiles_3_18.png|link=]]
+|-
+| 3 || 24 || [[File:tiles_3_24.png|link=]]
+|-
+| 3 || 25 || [[File:tiles_3_25.png|link=]]
+|-
+| 3 || 26 || [[File:tiles_3_26.png|link=]]
+|-
+| 3 || 12 || [[File:tiles_3_12.png|link=]] || rowspan=4 | {{eil|Violet Flower Seeds|Violet Flower}}
+|-
+| 3 || 42 || [[File:tiles_3_42.png|link=]]
+|-
+| 3 || 43 || [[File:tiles_3_43.png|link=]]
+|-
+| 3 || 44 || [[File:tiles_3_44.png|link=]]
+|-
+| 3 || 14 || [[File:tiles_3_14.png|link=]] || rowspan=8 | {{eil|White Flower Seeds|White Flower}}
+|-
+| 3 || 15 || [[File:tiles_3_15.png|link=]]
+|-
+| 3 || 27 || [[File:tiles_3_27.png|link=]]
+|-
+| 3 || 28 || [[File:tiles_3_28.png|link=]]
+|-
+| 3 || 29 || [[File:tiles_3_29.png|link=]]
+|-
+| 3 || 36 || [[File:tiles_3_36.png|link=]]
+|-
+| 3 || 37 || [[File:tiles_3_37.png|link=]]
+|-
+| 3 || 38 || [[File:tiles_3_38.png|link=]]
+|-
+| 3 || 19 || [[File:tiles_3_19.png|link=]] || rowspan=7 | {{eil|Red Flower Seeds|Red Flower}}
+|-
+| 3 || 21 || [[File:tiles_3_21.png|link=]]
+|-
+| 3 || 22 || [[File:tiles_3_22.png|link=]]
+|-
+| 3 || 23 || [[File:tiles_3_23.png|link=]]
+|-
+| 3 || 39 || [[File:tiles_3_39.png|link=]]
+|-
+| 3 || 40 || [[File:tiles_3_40.png|link=]]
+|-
+| 3 || 41 || [[File:tiles_3_41.png|link=]]
+|-
+| 4 || 0 || [[File:tiles_4_0_0.png|link=]] [[File:tiles_4_0_1.png|link=]] [[File:tiles_4_0_2.png|link=]] [[File:tiles_4_0_3.png|link=]] [[File:tiles_4_0_4.png|link=]] [[File:tiles_4_0_5.png|link=]] || {{item|Torch}} || rowspan=24 | <code>Torches</code>
+|-
+| 4 || 1 || [[File:tiles_4_1_0.png|link=]] [[File:tiles_4_1_1.png|link=]] [[File:tiles_4_1_2.png|link=]] [[File:tiles_4_1_3.png|link=]] [[File:tiles_4_1_4.png|link=]] [[File:tiles_4_1_5.png|link=]] || {{item|Blue Torch}}
+|-
+| 4 || 2 || [[File:tiles_4_2_0.png|link=]] [[File:tiles_4_2_1.png|link=]] [[File:tiles_4_2_2.png|link=]] [[File:tiles_4_2_3.png|link=]] [[File:tiles_4_2_4.png|link=]] [[File:tiles_4_2_5.png|link=]] || {{item|Red Torch}}
+|-
+| 4 || 3 || [[File:tiles_4_3_0.png|link=]] [[File:tiles_4_3_1.png|link=]] [[File:tiles_4_3_2.png|link=]] [[File:tiles_4_3_3.png|link=]] [[File:tiles_4_3_4.png|link=]] [[File:tiles_4_3_5.png|link=]] ||  {{item|Green Torch}}
+|-
+| 4 || 4 || [[File:tiles_4_4_0.png|link=]] [[File:tiles_4_4_1.png|link=]] [[File:tiles_4_4_2.png|link=]] [[File:tiles_4_4_3.png|link=]] [[File:tiles_4_4_4.png|link=]] [[File:tiles_4_4_5.png|link=]] ||  {{item|Purple Torch}}
+|-
+| 4 || 5 || [[File:tiles_4_5_0.png|link=]] [[File:tiles_4_5_1.png|link=]] [[File:tiles_4_5_2.png|link=]] [[File:tiles_4_5_3.png|link=]] [[File:tiles_4_5_4.png|link=]] [[File:tiles_4_5_5.png|link=]] ||  {{item|White Torch}}
+|-
+| 4 || 6 || [[File:tiles_4_6_0.png|link=]] [[File:tiles_4_6_1.png|link=]] [[File:tiles_4_6_2.png|link=]] [[File:tiles_4_6_3.png|link=]] [[File:tiles_4_6_4.png|link=]] [[File:tiles_4_6_5.png|link=]] ||  {{item|Yellow Torch}}
+|-
+| 4 || 7 || [[File:tiles_4_7_0.png|link=]] [[File:tiles_4_7_1.png|link=]] [[File:tiles_4_7_2.png|link=]] [[File:tiles_4_7_3.png|link=]] [[File:tiles_4_7_4.png|link=]] [[File:tiles_4_7_5.png|link=]] ||  {{item|Demon Torch}}
+|-
+| 4 || 8 || [[File:tiles_4_8_0.png|link=]] [[File:tiles_4_8_1.png|link=]] [[File:tiles_4_8_2.png|link=]] [[File:tiles_4_8_3.png|link=]] [[File:tiles_4_8_4.png|link=]] [[File:tiles_4_8_5.png|link=]] ||  {{item|Cursed Torch}}
+|-
+| 4 || 9 || [[File:tiles_4_9_0.png|link=]] [[File:tiles_4_9_1.png|link=]] [[File:tiles_4_9_2.png|link=]] [[File:tiles_4_9_3.png|link=]] [[File:tiles_4_9_4.png|link=]] [[File:tiles_4_9_5.png|link=]] ||  {{item|Ice Torch}}
+|-
+| 4 || 10 || [[File:tiles_4_10_0.png|link=]] [[File:tiles_4_10_1.png|link=]] [[File:tiles_4_10_2.png|link=]] [[File:tiles_4_10_3.png|link=]] [[File:tiles_4_10_4.png|link=]] [[File:tiles_4_10_5.png|link=]] ||{{item|Orange Torch}}
+|-
+| 4 || 11 || [[File:tiles_4_11_0.png|link=]] [[File:tiles_4_11_1.png|link=]] [[File:tiles_4_11_2.png|link=]] [[File:tiles_4_11_3.png|link=]] [[File:tiles_4_11_4.png|link=]] [[File:tiles_4_11_5.png|link=]] ||{{item|Ichor Torch}}
+|-
+| 4 || 12 || [[File:tiles_4_12_0.png|link=]] [[File:tiles_4_12_1.png|link=]] [[File:tiles_4_12_2.png|link=]] [[File:tiles_4_12_3.png|link=]] [[File:tiles_4_12_4.png|link=]] [[File:tiles_4_12_5.png|link=]] || {{item|Ultrabright Torch}}
+|-
+| 4 || 13 || [[File:tiles_4_13_0.png|link=]] [[File:tiles_4_13_1.png|link=]] [[File:tiles_4_13_2.png|link=]] [[File:tiles_4_13_3.png|link=]] [[File:tiles_4_13_4.png|link=]] [[File:tiles_4_13_5.png|link=]] || {{item|Bone Torch}}
+|-
+| 4 || 14 || [[File:tiles_4_14_0.png|link=]] [[File:tiles_4_14_1.png|link=]] [[File:tiles_4_14_2.png|link=]] [[File:tiles_4_14_3.png|link=]] [[File:tiles_4_14_4.png|link=]] [[File:tiles_4_14_5.png|link=]] || {{item|Rainbow Torch}}
+|-
+| 4 || 15 || [[File:tiles_4_15_0.png|link=]] [[File:tiles_4_15_1.png|link=]] [[File:tiles_4_15_2.png|link=]] [[File:tiles_4_15_3.png|link=]] [[File:tiles_4_15_4.png|link=]] [[File:tiles_4_15_5.png|link=]] || {{item|Pink Torch}}
+|-
+| 4 || 16 || [[File:tiles_4_16_0.png|link=]] [[File:tiles_4_16_1.png|link=]] [[File:tiles_4_16_2.png|link=]] [[File:tiles_4_16_3.png|link=]] [[File:tiles_4_16_4.png|link=]] [[File:tiles_4_16_5.png|link=]] || {{item|Desert Torch}}
+|-
+| 4 || 17 || [[File:tiles_4_17_0.png|link=]] [[File:tiles_4_17_1.png|link=]] [[File:tiles_4_17_2.png|link=]] [[File:tiles_4_17_3.png|link=]] [[File:tiles_4_17_4.png|link=]] [[File:tiles_4_17_5.png|link=]] || {{item|Coral Torch}}
+|-
+| 4 || 18 || [[File:tiles_4_18_0.png|link=]] [[File:tiles_4_18_1.png|link=]] [[File:tiles_4_18_2.png|link=]] [[File:tiles_4_18_3.png|link=]] [[File:tiles_4_18_4.png|link=]] [[File:tiles_4_18_5.png|link=]] || {{item|Corrupt Torch}}
+|-
+| 4 || 19 || [[File:tiles_4_19_0.png|link=]] [[File:tiles_4_19_1.png|link=]] [[File:tiles_4_19_2.png|link=]] [[File:tiles_4_19_3.png|link=]] [[File:tiles_4_19_4.png|link=]] [[File:tiles_4_19_5.png|link=]] || {{item|Crimson Torch}}
+|-
+| 4 || 20 || [[File:tiles_4_20_0.png|link=]] [[File:tiles_4_20_1.png|link=]] [[File:tiles_4_20_2.png|link=]] [[File:tiles_4_20_3.png|link=]] [[File:tiles_4_20_4.png|link=]] [[File:tiles_4_20_5.png|link=]] || {{item|Hallowed Torch}}
+|-
+| 4 || 21 || [[File:tiles_4_21_0.png|link=]] [[File:tiles_4_21_1.png|link=]] [[File:tiles_4_21_2.png|link=]] [[File:tiles_4_21_3.png|link=]] [[File:tiles_4_21_4.png|link=]] [[File:tiles_4_21_5.png|link=]] || {{item|Jungle Torch}}
+|-
+| 4 || 22 || [[File:tiles_4_22_0.png|link=]] [[File:tiles_4_22_1.png|link=]] [[File:tiles_4_22_2.png|link=]] [[File:tiles_4_22_3.png|link=]] [[File:tiles_4_22_4.png|link=]] [[File:tiles_4_22_5.png|link=]] || {{item|Mushroom Torch}}
+|-
+| 4 || 23 || [[File:tiles_4_23_0.png|link=]] [[File:tiles_4_23_1.png|link=]] [[File:tiles_4_23_2.png|link=]] [[File:tiles_4_23_3.png|link=]] [[File:tiles_4_23_4.png|link=]] [[File:tiles_4_23_5.png|link=]] || {{item|Aether Torch}}
+|-
+| 5 || 0 || [[File:Tree.png|link=]] || [[{{tr|Forest tree}}]] || rowspan=8 | <code>Trees</code>
+|-
+| 5 || 1 || [[File:Tree (Corruption).png|link=]]  || [[{{tr|Ebonwood tree}}]]
+|-
+| 5 || 2 || [[File:Tree (Jungle).png|link=]]  || [[{{tr|Mahogany tree}}]] {{note|small=y|paren=y|{{tr|surface}}}}
+|-
+| 5 || 3 || [[File:Tree (Hallow).png|link=]]  || [[{{tr|Pearlwood tree}}]]
+|-
+| 5 || 4 || [[File:Tree (Snow).png|link=]]  || [[{{tr|Boreal tree}}]]
+|-
+| 5 || 5 || [[File:Tree (Crimson).png|link=]]  || [[{{tr|Shadewood tree}}]]
+|-
+| 5 || 6 || [[File:Underground Jungle Tree.png|link=]]  || [[{{tr|Mahogany tree}}]] {{note|small=y|paren=y|{{tr|Underground Jungle}}}}
+|-
+| 5 || 7 || [[File:Giant Glowing Mushroom (surface).png|link=]]  || [[{{tr|Giant Glowing Mushroom}}]] {{note|small=y|paren=y|{{tr|surface}}}}
+|-
+| 6 || 0 || [[File:Iron Ore (placed).png|link=]]  || {{item|Iron Ore}} || <code>Iron</code>
+|-
+| 7 || 0 || [[File:Copper Ore (placed).png|link=]] || {{item|Copper Ore}} || <code>Copper</code>
+|-
+| 8 || 0 || [[File:Gold Ore (placed).png|link=]] || {{item|Gold Ore}} || <code>Gold</code>
+|-
+| 9 || 0 || [[File:Silver Ore (placed).png|link=]] || {{item|Silver Ore}} || <code>Silver</code>
+|-
+| 10 || 0 || [[File:tiles_10_0_0.png|link=]] [[File:tiles_10_0_1.png|link=]] [[File:tiles_10_0_2.png|link=]] || {{item|Wooden Door|note=（关）}} || rowspan=46 | <code>ClosedDoor</code>
+|-
+| 10 || 1 || [[File:tiles_10_1_0.png|link=]] [[File:tiles_10_1_1.png|link=]] [[File:tiles_10_1_2.png|link=]] || {{item|Ebonwood Door|note=（关）}}
+|-
+| 10 || 2 || [[File:tiles_10_2_0.png|link=]] [[File:tiles_10_2_1.png|link=]] [[File:tiles_10_2_2.png|link=]] || {{item|Rich Mahogany Door|note=（关）}}
+|-
+| 10 || 3 || [[File:tiles_10_3_0.png|link=]] [[File:tiles_10_3_1.png|link=]] [[File:tiles_10_3_2.png|link=]] || {{item|Pearlwood Door|note=（关）}}
+|-
+| 10 || 4 || [[File:tiles_10_4_0.png|link=]] [[File:tiles_10_4_1.png|link=]] || {{item|Cactus Door|note=（关）}}
+|-
+| 10 || 5 || [[File:tiles_10_5_0.png|link=]] || {{item|Flesh Door|note=（关）}}
+|-
+| 10 || 6 || [[File:tiles_10_6_0.png|link=]] || {{item|Mushroom Door|note=（关）}}
+|-
+| 10 || 7 || [[File:tiles_10_7_0.png|link=]] || {{item|Living Wood Door|note=（关）}}
+|-
+| 10 || 8 || [[File:tiles_10_8_0.png|link=]] || {{item|Bone Door|note=（关）}}
+|-
+| 10 || 9 || [[File:tiles_10_9_0.png|link=]] || {{item|Skyware Door|note=（关）}}
+|-
+| 10 || 10 || [[File:tiles_10_10_0.png|link=]] || {{item|Shadewood Door|note=（关）}}
+|-
+| 10 || 11 || [[File:tiles_10_11_0.png|link=]] || {{item|Lihzahrd Door|note=（锁住）}}
+|-
+| 10 || 12 || [[File:tiles_10_12_0.png|link=]] || {{item|Lihzahrd Door|note=（已开锁（关））}}
+|-
+| 10 || 13 || [[File:tiles_10_13_0.png|link=]] [[File:tiles_10_13_1.png|link=]] [[File:tiles_10_13_2.png|link=]] || {{item|Dungeon Door|note=（关）}}
+|-
+| 10 || 14 || [[File:tiles_10_14_0.png|link=]] || {{item|Lead Door|note=（关）}}
+|-
+| 10 || 15 || [[File:tiles_10_15_0.png|link=]] || {{item|Iron Door|note=（关）}}
+|-
+| 10 || 16 || [[File:tiles_10_16_0.png|link=]] || {{item|Blue Dungeon Door|note=（关）}}
+|-
+| 10 || 17 || [[File:tiles_10_17_0.png|link=]] || {{item|Green Dungeon Door|note=（关）}}
+|-
+| 10 || 18 || [[File:tiles_10_18_0.png|link=]] || {{item|Pink Dungeon Door|note=（关）}}
+|-
+| 10 || 19 || [[File:tiles_10_19_0.png|link=]] || {{item|Obsidian Door|note=（关）}}
+|-
+| 10 || 20 || [[File:tiles_10_20_0.png|link=]] || {{item|Glass Door|note=（关）}}
+|-
+| 10 || 21 || [[File:tiles_10_21_0.png|link=]] || {{item|Golden Door|note=（关）}}
+|-
+| 10 || 22 || [[File:tiles_10_22_0.png|link=]] || {{item|Honey Door|note=（关）}}
+|-
+| 10 || 23 || [[File:tiles_10_23_0.png|link=]] || {{item|Steampunk Door|note=（关）}}
+|-
+| 10 || 24 || [[File:tiles_10_24_0.png|link=]] || {{item|Pumpkin Door|note=（关）}}
+|-
+| 10 || 25 || [[File:tiles_10_25_0.png|link=]] || {{item|Spooky Door|note=（关）}}
+|-
+| 10 || 26 || [[File:tiles_10_26_0.png|link=]] || {{item|Pine Door|note=（关）}}
+|-
+| 10 || 27 || [[File:tiles_10_27_0.png|link=]] || {{item|Frozen Door|note=（关）}}
+|-
+| 10 || 28 || [[File:tiles_10_28_0.png|link=]] [[File:tiles_10_28_1.png|link=]] [[File:tiles_10_28_2.png|link=]] || {{item|Dynasty Door|note=（关）}}
+|-
+| 10 || 29 || [[File:tiles_10_29_0.png|link=]] || {{item|Palm Wood Door|note=（关）}}
+|-
+| 10 || 30 || [[File:tiles_10_30_0.png|link=]] || {{item|Boreal Wood Door|note=（关）}}
+|-
+| 10 || 31 || [[File:tiles_10_31_0.png|link=]] || {{item|Slime Door|note=（关）}}
+|-
+| 10 || 32 || [[File:tiles_10_32_0.png|link=]] [[File:tiles_10_32_1.png|link=]] [[File:tiles_10_32_2.png|link=]] || {{item|Martian Door|note=（关）}}
+|-
+| 10 || 33 || [[File:tiles_10_33_0.png|link=]] || {{item|Meteorite Door|note=（关）}}
+|-
+| 10 || 34 || [[File:tiles_10_34_0.png|link=]] || {{item|Granite Door|note=（关）}}
+|-
+| 10 || 35 || [[File:tiles_10_35_0.png|link=]] || {{item|Marble Door|note=（关）}}
+|-
+| 10 || 36 || [[File:tiles_10_36_0.png|link=]] || {{item|Crystal Door|note=（关）}}
+|-
+| 10 || 37 || [[File:tiles_10_37_0.png|link=]] || {{item|Spider Door|note=（关）}}
+|-
+| 10 || 38 || [[File:tiles_10_38_0.png|link=]] || {{item|Lesion Door|note=（关）}}
+|-
+| 10 || 39 || [[File:tiles_10_39_0.png|link=]] || {{item|Solar Door|note=（关）}}
+|-
+| 10 || 40 || [[File:tiles_10_40_0.png|link=]] || {{item|Vortex Door|note=（关）}}
+|-
+| 10 || 41 || [[File:tiles_10_41_0.png|link=]] || {{item|Nebula Door|note=（关）}}
+|-
+| 10 || 42 || [[File:tiles_10_42_0.png|link=]] || {{item|Stardust Door|note=（关）}}
+|-
+| 10 || 43 || [[File:tiles_10_43_0.png|link=]] || {{item|Sandstone Door|note=（关）}}
+|-
+| 10 || 44 || [[File:tiles_10_44_0.png|link=]] [[File:tiles_10_44_1.png|link=]] [[File:tiles_10_44_2.png|link=]] || {{item|Stone Door|note=（关）}}
+|-
+| 10 || 45 || [[File:tiles_10_45_0.png|link=]] [[File:tiles_10_45_1.png|link=]] [[File:tiles_10_45_2.png|link=]] || {{item|Bamboo Door|note=（关）}}
+|-
+| 11 || 0 || [[File:tiles_11_0_0.png|link=]] [[File:tiles_11_0_1.png|link=]] || {{item|Wooden Door|note=（开）}} || rowspan=46 | <code>OpenDoor</code>
+|-
+| 11 || 1 || [[File:tiles_11_1_0.png|link=]] [[File:tiles_11_1_1.png|link=]] || {{item|Ebonwood Door|note=（开）}}
+|-
+| 11 || 2 || [[File:tiles_11_2_0.png|link=]] [[File:tiles_11_2_1.png|link=]] || {{item|Rich Mahogany Door|note=（开）}}
+|-
+| 11 || 3 || [[File:tiles_11_3_0.png|link=]] [[File:tiles_11_3_1.png|link=]] || {{item|Pearlwood Door|note=（开）}}
+|-
+| 11 || 4 || [[File:tiles_11_4_0.png|link=]] [[File:tiles_11_4_1.png|link=]] || {{item|Cactus Door|note=（开）}}
+|-
+| 11 || 5 || [[File:tiles_11_5_0.png|link=]] [[File:tiles_11_5_1.png|link=]] || {{item|Flesh Door|note=（开）}}
+|-
+| 11 || 6 || [[File:tiles_11_6_0.png|link=]] [[File:tiles_11_6_1.png|link=]] || {{item|Mushroom Door|note=（开）}}
+|-
+| 11 || 7 || [[File:tiles_11_7_0.png|link=]] [[File:tiles_11_7_1.png|link=]] || {{item|Living Wood Door|note=（开）}}
+|-
+| 11 || 8 || [[File:tiles_11_8_0.png|link=]] || {{item|Bone Door|note=（开）}}
+|-
+| 11 || 9 || [[File:tiles_11_9_0.png|link=]] [[File:tiles_11_9_1.png|link=]] || {{item|Skyware Door|note=（开）}}
+|-
+| 11 || 10 || [[File:tiles_11_10_0.png|link=]] [[File:tiles_11_10_1.png|link=]] || {{item|Shadewood Door|note=（开）}}
+|-
+| 11 || 11 || rowspan=2 | [[File:tiles_11_11_0.png|link=]] [[File:tiles_11_11_1.png|link=]] || rowspan=2 | {{item|Lihzahrd Door|note=（开）}}
+|-
+| 11 || 12
+|-
+| 11 || 13 || [[File:tiles_11_13_0.png|link=]] [[File:tiles_11_13_1.png|link=]] || {{item|Dungeon Door|note=（开）}}
+|-
+| 11 || 14 || [[File:tiles_11_14_0.png|link=]] [[File:tiles_11_14_1.png|link=]] || {{item|Lead Door|note=（开）}}
+|-
+| 11 || 15 || [[File:tiles_11_15_0.png|link=]] [[File:tiles_11_15_1.png|link=]] || {{item|Iron Door|note=（开）}}
+|-
+| 11 || 16 || [[File:tiles_11_16_0.png|link=]] [[File:tiles_11_16_1.png|link=]] || {{item|Blue Dungeon Door|note=（开）}}
+|-
+| 11 || 17 || [[File:tiles_11_17_0.png|link=]] || {{item|Green Dungeon Door|note=（开）}}
+|-
+| 11 || 18 || [[File:tiles_11_18_0.png|link=]] [[File:tiles_11_18_1.png|link=]] || {{item|Pink Dungeon Door|note=（开）}}
+|-
+| 11 || 19 || [[File:tiles_11_19_0.png|link=]] [[File:tiles_11_19_1.png|link=]] || {{item|Obsidian Door|note=（开）}}
+|-
+| 11 || 20 || [[File:tiles_11_20_0.png|link=]] [[File:tiles_11_20_1.png|link=]] || {{item|Glass Door|note=（开）}}
+|-
+| 11 || 21 || [[File:tiles_11_21_0.png|link=]] [[File:tiles_11_21_1.png|link=]] || {{item|Golden Door|note=（开）}}
+|-
+| 11 || 22 || [[File:tiles_11_22_0.png|link=]] [[File:tiles_11_22_1.png|link=]] || {{item|Honey Door|note=（开）}}
+|-
+| 11 || 23 || [[File:tiles_11_23_0.png|link=]] || {{item|Steampunk Door|note=（开）}}
+|-
+| 11 || 24 || [[File:tiles_11_24_0.png|link=]] [[File:tiles_11_24_1.png|link=]] || {{item|Pumpkin Door|note=（开）}}
+|-
+| 11 || 25 || [[File:tiles_11_25_0.png|link=]] [[File:tiles_11_25_1.png|link=]] || {{item|Spooky Door|note=（开）}}
+|-
+| 11 || 26 || [[File:tiles_11_26_0.png|link=]] [[File:tiles_11_26_1.png|link=]] || {{item|Pine Door|note=（开）}}
+|-
+| 11 || 27 || [[File:tiles_11_27_0.png|link=]] [[File:tiles_11_27_1.png|link=]] || {{item|Frozen Door|note=（开）}}
+|-
+| 11 || 28 || [[File:tiles_11_28_0.png|link=]] || {{item|Dynasty Door|note=（开）}}
+|-
+| 11 || 29 || [[File:tiles_11_29_0.png|link=]] [[File:tiles_11_29_1.png|link=]] || {{item|Palm Wood Door|note=（开）}}
+|-
+| 11 || 30 || [[File:tiles_11_30_0.png|link=]] [[File:tiles_11_30_1.png|link=]] || {{item|Boreal Wood Door|note=（开）}}
+|-
+| 11 || 31 || [[File:tiles_11_31_0.png|link=]] [[File:tiles_11_31_1.png|link=]] || {{item|Slime Door|note=（开）}}
+|-
+| 11 || 32 || [[File:tiles_11_32_0.png|link=]] [[File:tiles_11_32_1.png|link=]] || {{item|Martian Door|note=（开）}}
+|-
+| 11 || 33 || [[File:tiles_11_33_0.png|link=]] [[File:tiles_11_33_1.png|link=]] || {{item|Meteorite Door|note=（开）}}
+|-
+| 11 || 34 || [[File:tiles_11_34_0.png|link=]] [[File:tiles_11_34_1.png|link=]] || {{item|Granite Door|note=（开）}}
+|-
+| 11 || 35 || [[File:tiles_11_35_0.png|link=]] [[File:tiles_11_35_1.png|link=]] || {{item|Marble Door|note=（开）}}
+|-
+| 11 || 36 || [[File:tiles_11_36_0.png|link=]] [[File:tiles_11_36_1.png|link=]] || {{item|Crystal Door|note=（开）}}
+|-
+| 11 || 37 || [[File:tiles_11_37_0.png|link=]] [[File:tiles_11_37_1.png|link=]] || {{item|Spider Door|note=（开）}}
+|-
+| 11 || 38 || [[File:tiles_11_38_0.png|link=]] [[File:tiles_11_38_1.png|link=]] || {{item|Lesion Door|note=（开）}}
+|-
+| 11 || 39 || [[File:tiles_11_39_0.png|link=]] [[File:tiles_11_39_1.png|link=]] || {{item|Solar Door|note=（开）}}
+|-
+| 11 || 40 || [[File:tiles_11_40_0.png|link=]] [[File:tiles_11_40_1.png|link=]] || {{item|Vortex Door|note=（开）}}
+|-
+| 11 || 41 || [[File:tiles_11_41_0.png|link=]] [[File:tiles_11_41_1.png|link=]] || {{item|Nebula Door|note=（开）}}
+|-
+| 11 || 42 || [[File:tiles_11_42_0.png|link=]] [[File:tiles_11_42_1.png|link=]] || {{item|Stardust Door|note=（开）}}
+|-
+| 11 || 43 || [[File:tiles_11_43_0.png|link=]] [[File:tiles_11_43_1.png|link=]] || {{item|Sandstone Door|note=（开）}}
+|-
+| 11 || 44 || [[File:tiles_11_44_0.png|link=]] [[File:tiles_11_44_1.png|link=]] || {{item|Stone Door|note=（开）}}
+|-
+| 11 || 45 || [[File:tiles_11_45_0.png|link=]] [[File:tiles_11_45_1.png|link=]] || {{item|Bamboo Door|note=（开）}}
+|-
+| 12 || 0 || [[File:Life Crystal (placed).gif|link=]] || {{item|Life Crystal}}<br/>{{item|Repaired Life Crystal}} || <code>Heart</code>
+|-
+| 13 || 0 || [[File:tiles_13_0.png|link=]] || {{item|Bottle}} || rowspan=9 | <code>Bottles</code>
+|-
+| 13 || 1 || [[File:tiles_13_1.png|link=]] || {{item|Lesser Healing Potion}}<br/>{{item|Decorative Healing Potion}}
+|-
+| 13 || 2 || [[File:tiles_13_2.png|link=]] || {{item|Lesser Mana Potion}}<br/>{{item|Decorative Mana Potion}}
+|-
+| 13 || 3 || [[File:tiles_13_3.png|link=]] || {{item|Pink Vase}}
+|-
+| 13 || 4 || [[File:tiles_13_4.png|link=]] || {{item|Mug}}
+|-
+| 13 || 5 || [[File:tiles_13_5.png|link=]] || {{item|Dynasty Cup}}
+|-
+| 13 || 6 || [[File:tiles_13_6.png|link=]] || {{item|Wine Glass}}
+|-
+| 13 || 7 || [[File:tiles_13_7.png|link=]] || {{item|Honey Cup}}
+|-
+| 13 || 8 || [[File:tiles_13_8.png|link=]] || {{item|Chalice}}
+|-
+| 14 || 0 || [[File:tiles_14_0.png|link=]] || {{item|Wooden Table}} || rowspan=36 | <code>Tables</code>
+|-
+| 14 || 1 || [[File:tiles_14_1.png|link=]] || {{item|Ebonwood Table}}
+|-
+| 14 || 2 || [[File:tiles_14_2.png|link=]] || {{item|Rich Mahogany Table}}
+|-
+| 14 || 3 || [[File:tiles_14_3.png|link=]] || {{item|Pearlwood Table}}
+|-
+| 14 || 4 || [[File:tiles_14_4.png|link=]] || {{item|Bone Table}}
+|-
+| 14 || 5 || [[File:tiles_14_5.png|link=]] || {{item|Flesh Table}}
+|-
+| 14 || 6 || [[File:tiles_14_6.png|link=]] || {{item|Living Wood Table}}
+|-
+| 14 || 7 || [[File:tiles_14_7.png|link=]] || {{item|Skyware Table}}
+|-
+| 14 || 8 || [[File:tiles_14_8.png|link=]] || {{item|Shadewood Table}}
+|-
+| 14 || 9 || [[File:tiles_14_9.png|link=]] || {{item|Lihzahrd Table}}
+|-
+| 14 || 10 || [[File:tiles_14_10.png|link=]] || {{item|Blue Dungeon Table}}
+|-
+| 14 || 11 || [[File:tiles_14_11.png|link=]] || {{item|Green Dungeon Table}}
+|-
+| 14 || 12 || [[File:tiles_14_12.png|link=]] || {{item|Pink Dungeon Table}}
+|-
+| 14 || 13 || [[File:tiles_14_13.png|link=]] || {{item|Obsidian Table}}
+|-
+| 14 || 14 || [[File:tiles_14_14.png|link=]] || {{item|Gothic Table}}
+|-
+| 14 || 15 || [[File:tiles_14_15.png|link=]] || {{item|Glass Table}}
+|-
+| 14 || 16 || [[File:tiles_14_16.png|link=]] || {{item|Banquet Table}}
+|-
+| 14 || 17 || [[File:tiles_14_17.png|link=]] || {{item|Bar}}
+|-
+| 14 || 18 || [[File:tiles_14_18.png|link=]] || {{item|Golden Table}}
+|-
+| 14 || 19 || [[File:tiles_14_19.png|link=]] || {{item|Honey Table}}
+|-
+| 14 || 20 || [[File:tiles_14_20.png|link=]] || {{item|Steampunk Table}}
+|-
+| 14 || 21 || [[File:tiles_14_21.png|link=]] || {{item|Pumpkin Table}}
+|-
+| 14 || 22 || [[File:tiles_14_22.png|link=]] || {{item|Spooky Table}}
+|-
+| 14 || 23 || [[File:tiles_14_23.png|link=]] || {{item|Pine Table}}
+|-
+| 14 || 24 || [[File:tiles_14_24.png|link=]] || {{item|Frozen Table}}
+|-
+| 14 || 25 || [[File:tiles_14_25.png|link=]] || {{item|Dynasty Table}}
+|-
+| 14 || 26 || [[File:tiles_14_26.png|link=]] || {{item|Palm Wood Table}}
+|-
+| 14 || 27 || [[File:tiles_14_27.png|link=]] || {{item|Mushroom Table}}
+|-
+| 14 || 28 || [[File:tiles_14_28.png|link=]] || {{item|Boreal Wood Table}}
+|-
+| 14 || 29 || [[File:tiles_14_29.png|link=]] || {{item|Slime Table}}
+|-
+| 14 || 30 || [[File:tiles_14_30.png|link=]] || {{item|Cactus Table}}
+|-
+| 14 || 31 || [[File:tiles_14_31.png|link=]] || {{item|Martian Table}}
+|-
+| 14 || 32 || [[File:tiles_14_32.png|link=]] || {{item|Meteorite Table}}
+|-
+| 14 || 33 || [[File:tiles_14_33.png|link=]] || {{item|Granite Table}}
+|-
+| 14 || 34 || [[File:tiles_14_34.png|link=]] || {{item|Marble Table}}
+|-
+| 14 || 35 || [[File:tiles_14_35.png|link=]] || {{item|Crystal Table|note=（未使用）}}{{note|small=y|block=y|{{tr|Crystal Table}}实际使用的{{tr|Tile ID}} 是 469。}}
+|-
+| 15 || 0 || [[File:tiles_15_0_0.png|link=]] [[File:tiles_15_0_1.png|link=]] || {{item|Wooden Chair}} || rowspan=45 | <code>Chairs</code>
+|-
+| 15 || 1 || [[File:tiles_15_1_0.png|link=]] [[File:tiles_15_1_1.png|link=]] || {{item|Toilet}}
+|-
+| 15 || 2 || [[File:tiles_15_2_0.png|link=]] [[File:tiles_15_2_1.png|link=]] || {{item|Ebonwood Chair}}
+|-
+| 15 || 3 || [[File:tiles_15_3_0.png|link=]] [[File:tiles_15_3_1.png|link=]] || {{item|Rich Mahogany Chair}}
+|-
+| 15 || 4 || [[File:tiles_15_4_0.png|link=]] [[File:tiles_15_4_1.png|link=]] || {{item|Pearlwood Chair}}
+|-
+| 15 || 5 || [[File:tiles_15_5_0.png|link=]] [[File:tiles_15_5_1.png|link=]] || {{item|Living Wood Chair}}
+|-
+| 15 || 6 || [[File:tiles_15_6_0.png|link=]] [[File:tiles_15_6_1.png|link=]] || {{item|Cactus Chair}}
+|-
+| 15 || 7 || [[File:tiles_15_7_0.png|link=]] [[File:tiles_15_7_1.png|link=]] || {{item|Bone Chair}}
+|-
+| 15 || 8 || [[File:tiles_15_8_0.png|link=]] [[File:tiles_15_8_1.png|link=]] || {{item|Flesh Chair}}
+|-
+| 15 || 9 || [[File:tiles_15_9_0.png|link=]] [[File:tiles_15_9_1.png|link=]] || {{item|Mushroom Chair}}
+|-
+| 15 || 10 || [[File:tiles_15_10_0.png|link=]] [[File:tiles_15_10_1.png|link=]] || {{item|Skyware Chair}}
+|-
+| 15 || 11 || [[File:tiles_15_11_0.png|link=]] [[File:tiles_15_11_1.png|link=]] || {{item|Shadewood Chair}}
+|-
+| 15 || 12 || [[File:tiles_15_12_0.png|link=]] [[File:tiles_15_12_1.png|link=]] || {{item|Lihzahrd Chair}}
+|-
+| 15 || 13 || [[File:tiles_15_13_0.png|link=]] [[File:tiles_15_13_1.png|link=]] || {{item|Blue Dungeon Chair}}
+|-
+| 15 || 14 || [[File:tiles_15_14_0.png|link=]] [[File:tiles_15_14_1.png|link=]] || {{item|Green Dungeon Chair}}
+|-
+| 15 || 15 || [[File:tiles_15_15_0.png|link=]] [[File:tiles_15_15_1.png|link=]] || {{item|Pink Dungeon Chair}}
+|-
+| 15 || 16 || [[File:tiles_15_16_0.png|link=]] [[File:tiles_15_16_1.png|link=]] || {{item|Obsidian Chair}}
+|-
+| 15 || 17 || [[File:tiles_15_17_0.png|link=]] [[File:tiles_15_17_1.png|link=]] || {{item|Gothic Chair}}
+|-
+| 15 || 18 || [[File:tiles_15_18_0.png|link=]] [[File:tiles_15_18_1.png|link=]] || {{item|Glass Chair}}
+|-
+| 15 || 19 || [[File:tiles_15_19_0.png|link=]] [[File:tiles_15_19_1.png|link=]] || {{item|Golden Chair}}
+|-
+| 15 || 20 || [[File:tiles_15_20_0.png|link=]] [[File:tiles_15_20_1.png|link=]] || {{item|Golden Toilet}}
+|-
+| 15 || 21 || [[File:tiles_15_21_0.png|link=]] [[File:tiles_15_21_1.png|link=]] || {{item|Bar Stool}}
+|-
+| 15 || 22 || [[File:tiles_15_22_0.png|link=]] [[File:tiles_15_22_1.png|link=]] || {{item|Honey Chair}}
+|-
+| 15 || 23 || [[File:tiles_15_23_0.png|link=]] [[File:tiles_15_23_1.png|link=]] || {{item|Steampunk Chair}}
+|-
+| 15 || 24 || [[File:tiles_15_24_0.png|link=]] [[File:tiles_15_24_1.png|link=]] || {{item|Pumpkin Chair}}
+|-
+| 15 || 25 || [[File:tiles_15_25_0.png|link=]] [[File:tiles_15_25_1.png|link=]] || {{item|Spooky Chair}}
+|-
+| 15 || 26 || [[File:tiles_15_26_0.png|link=]] [[File:tiles_15_26_1.png|link=]] || {{item|Pine Chair}}
+|-
+| 15 || 27 || [[File:tiles_15_27_0.png|link=]] [[File:tiles_15_27_1.png|link=]] || {{item|Dynasty Chair}}
+|-
+| 15 || 28 || [[File:tiles_15_28_0.png|link=]] [[File:tiles_15_28_1.png|link=]] || {{item|Frozen Chair}}
+|-
+| 15 || 29 || [[File:tiles_15_29_0.png|link=]] [[File:tiles_15_29_1.png|link=]] || {{item|Palm Wood Chair}}
+|-
+| 15 || 30 || [[File:tiles_15_30_0.png|link=]] [[File:tiles_15_30_1.png|link=]] || {{item|Boreal Wood Chair}}
+|-
+| 15 || 31 || [[File:tiles_15_31_0.png|link=]] [[File:tiles_15_31_1.png|link=]] || {{item|Slime Chair}}
+|-
+| 15 || 32 || [[File:tiles_15_32_0.png|link=]] [[File:tiles_15_32_1.png|link=]] || {{item|Martian Hover Chair}}
+|-
+| 15 || 33 || [[File:tiles_15_33_0.png|link=]] [[File:tiles_15_33_1.png|link=]] || {{item|Meteorite Chair}}
+|-
+| 15 || 34 || [[File:tiles_15_34_0.png|link=]] [[File:tiles_15_34_1.png|link=]] || {{item|Granite Chair}}
+|-
+| 15 || 35 || [[File:tiles_15_35_0.png|link=]] [[File:tiles_15_35_1.png|link=]] || {{item|Marble Chair}}
+|-
+| 15 || 36 || [[File:tiles_15_36_0.png|link=]] [[File:tiles_15_36_1.png|link=]] || {{item|Crystal Chair}}
+|-
+| 15 || 37 || [[File:tiles_15_37_0.png|link=]] [[File:tiles_15_37_1.png|link=]] || {{item|Spider Chair}}
+|-
+| 15 || 38 || [[File:tiles_15_38_0.png|link=]] [[File:tiles_15_38_1.png|link=]] || {{item|Lesion Chair}}
+|-
+| 15 || 39 || [[File:tiles_15_39_0.png|link=]] [[File:tiles_15_39_1.png|link=]] || {{item|Solar Chair}}
+|-
+| 15 || 40 || [[File:tiles_15_40_0.png|link=]] [[File:tiles_15_40_1.png|link=]] || {{item|Vortex Chair}}
+|-
+| 15 || 41 || [[File:tiles_15_41_0.png|link=]] [[File:tiles_15_41_1.png|link=]] || {{item|Nebula Chair}}
+|-
+| 15 || 42 || [[File:tiles_15_42_0.png|link=]] [[File:tiles_15_42_1.png|link=]] || {{item|Stardust Chair}}
+|-
+| 15 || 43 || [[File:tiles_15_43_0.png|link=]] [[File:tiles_15_43_1.png|link=]] || {{item|Sandstone Chair}}
+|-
+| 15 || 44 || [[File:tiles_15_44_0.png|link=]] [[File:tiles_15_44_1.png|link=]] || {{item|Bamboo Chair}}
+|-
+| 16 || 0 || [[File:Iron Anvil (placed).png|link=]]  || {{item|Iron Anvil}} || rowspan=2 | <code>Anvils</code>
+|-
+| 16 || 1 || [[File:Lead Anvil (placed).png|link=]]  || {{item|Lead Anvil}}
+|-
+| 17 || 0|| [[File:Furnace_(placed).gif|link=]] || {{item|Furnace}} || <code>Furnaces</code>
+|-
+| 18 || 0 || [[File:tiles_18_0.png|link=]] || {{item|Work Bench}} || rowspan=44 | <code>WorkBenches</code>
+|-
+| 18 || 1 || [[File:tiles_18_1.png|link=]] || {{item|Ebonwood Work Bench}}
+|-
+| 18 || 2 || [[File:tiles_18_2.png|link=]] || {{item|Rich Mahogany Work Bench}}
+|-
+| 18 || 3 || [[File:tiles_18_3.png|link=]] || {{item|Pearlwood Work Bench}}
+|-
+| 18 || 4 || [[File:tiles_18_4.png|link=]] || {{item|Bone Work Bench}}
+|-
+| 18 || 5 || [[File:tiles_18_5.png|link=]] || {{item|Cactus Work Bench}}
+|-
+| 18 || 6 || [[File:tiles_18_6.png|link=]] || {{item|Flesh Work Bench}}
+|-
+| 18 || 7 || [[File:tiles_18_7.png|link=]] || {{item|Mushroom Work Bench}}
+|-
+| 18 || 8 || [[File:tiles_18_8.png|link=]] || {{item|Slime Work Bench}}
+|-
+| 18 || 9 || [[File:tiles_18_9.png|link=]] || {{item|Shadewood Work Bench}}
+|-
+| 18 || 10 || [[File:tiles_18_10.png|link=]] || {{item|Lihzahrd Work Bench}}
+|-
+| 18 || 11 || [[File:tiles_18_11.png|link=]] || {{item|Blue Dungeon Work Bench}}
+|-
+| 18 || 12 || [[File:tiles_18_12.png|link=]] || {{item|Green Dungeon Work Bench}}
+|-
+| 18 || 13 || [[File:tiles_18_13.png|link=]] || {{item|Pink Dungeon Work Bench}}
+|-
+| 18 || 14 || [[File:tiles_18_14.png|link=]] || {{item|Obsidian Work Bench}}
+|-
+| 18 || 15 || [[File:tiles_18_15.png|link=]] || {{item|Gothic Work Bench}}
+|-
+| 18 || 16 || [[File:tiles_18_16.png|link=]] || {{item|Pumpkin Work Bench}}
+|-
+| 18 || 17 || [[File:tiles_18_17.png|link=]] || {{item|Spooky Work Bench}}
+|-
+| 18 || 18 || [[File:tiles_18_18.png|link=]] || {{item|Dynasty Work Bench}}
+|-
+| 18 || 19 || [[File:tiles_18_19.png|link=]] || {{item|Honey Work Bench}}
+|-
+| 18 || 20 || [[File:tiles_18_20.png|link=]] || {{item|Frozen Work Bench}}
+|-
+| 18 || 21 || [[File:tiles_18_21.png|link=]] || {{item|Steampunk Work Bench}}
+|-
+| 18 || 22 || [[File:tiles_18_22.png|link=]] || {{item|Palm Wood Work Bench}}
+|-
+| 18 || 23 || [[File:tiles_18_23.png|link=]] || {{item|Boreal Wood Work Bench}}
+|-
+| 18 || 24 || [[File:tiles_18_24.png|link=]] || {{item|Skyware Work Bench}}
+|-
+| 18 || 25 || [[File:tiles_18_25.png|link=]] || {{item|Glass Work Bench}}
+|-
+| 18 || 26 || [[File:tiles_18_26.png|link=]] || {{item|Living Wood Work Bench}}
+|-
+| 18 || 27 || [[File:tiles_18_27.png|link=]] || {{item|Martian Work Bench}}
+|-
+| 18 || 28 || [[File:tiles_18_28.png|link=]] || {{item|Meteorite Work Bench}}
+|-
+| 18 || 29 || [[File:tiles_18_29.png|link=]] || {{item|Granite Work Bench}}
+|-
+| 18 || 30 || [[File:tiles_18_30.png|link=]] || {{item|Marble Work Bench}}
+|-
+| 18 || 31 || [[File:tiles_18_31.png|link=]] || {{item|Crystal Work Bench}}
+|-
+| 18 || 32 || [[File:tiles_18_32.png|link=]] || {{item|Golden Work Bench}}
+|-
+| 18 || 33 || [[File:tiles_18_33.png|link=]] || {{item|Spider Work Bench}}
+|-
+| 18 || 34 || [[File:tiles_18_34.png|link=]] || {{item|Lesion Work Bench}}
+|-
+| 18 || 35 || [[File:tiles_18_35.png|link=]] || {{item|Solar Work Bench}}
+|-
+| 18 || 36 || [[File:tiles_18_36.png|link=]] || {{item|Vortex Work Bench}}
+|-
+| 18 || 37 || [[File:tiles_18_37.png|link=]] || {{item|Nebula Work Bench}}
+|-
+| 18 || 38 || [[File:tiles_18_38.png|link=]] || {{item|Stardust Work Bench}}
+|-
+| 18 || 39 || [[File:tiles_18_39.png|link=]] || {{item|Sandstone Work Bench}}
+|-
+| 18 || 40 || [[File:tiles_18_40.png|link=]] || {{item|Bamboo Work Bench}}
+|-
+| 18 || 41 || [[File:tiles_18_41.png|link=]] || {{item|Reef Work Bench}}
+|-
+| 18 || 42 || [[File:tiles_18_42.png|link=]] || {{item|Balloon Work Bench}}
+|-
+| 18 || 43 || [[File:tiles_18_43.png|link=]] || {{item|Ash Wood Work Bench}}
+|-
+| 19 || 0 || {{nowrap|[[File:tiles_19_0_2.png|link=]][[File:tiles_19_0_0.png|link=]][[File:tiles_19_0_0.png|link=]][[File:tiles_19_0_13.png|link=]][[File:tiles_19_0_20.png|link=]]}} || {{item|Wood Platform}} || rowspan=49 | <code>Platforms</code>
+|-
+| 19 || 1 || {{nowrap|[[File:tiles_19_1_2.png|link=]][[File:tiles_19_1_0.png|link=]][[File:tiles_19_1_0.png|link=]][[File:tiles_19_1_13.png|link=]][[File:tiles_19_1_20.png|link=]]}} || {{item|Ebonwood Platform}}
+|-
+| 19 || 2 || {{nowrap|[[File:tiles_19_2_2.png|link=]][[File:tiles_19_2_0.png|link=]][[File:tiles_19_2_0.png|link=]][[File:tiles_19_2_13.png|link=]][[File:tiles_19_2_20.png|link=]]}} || {{item|Rich Mahogany Platform}}
+|-
+| 19 || 3 || {{nowrap|[[File:tiles_19_3_2.png|link=]][[File:tiles_19_3_0.png|link=]][[File:tiles_19_3_0.png|link=]][[File:tiles_19_3_13.png|link=]][[File:tiles_19_3_20.png|link=]]}} || {{item|Pearlwood Platform}}
+|-
+| 19 || 4 || {{nowrap|[[File:tiles_19_4_2.png|link=]][[File:tiles_19_4_0.png|link=]][[File:tiles_19_4_0.png|link=]][[File:tiles_19_4_13.png|link=]][[File:tiles_19_4_20.png|link=]]}} || {{item|Bone Platform}}
+|-
+| 19 || 5 || {{nowrap|[[File:tiles_19_5_2.png|link=]][[File:tiles_19_5_0.png|link=]][[File:tiles_19_5_0.png|link=]][[File:tiles_19_5_13.png|link=]][[File:tiles_19_5_20.png|link=]]}} || {{item|Shadewood Platform}}
+|-
+| 19 || 6 || {{nowrap|[[File:tiles_19_6_2.png|link=]][[File:tiles_19_6_0.png|link=]][[File:tiles_19_6_0.png|link=]][[File:tiles_19_6_13.png|link=]][[File:tiles_19_6_20.png|link=]]}} || {{item|Blue Brick Platform}}
+|-
+| 19 || 7 || {{nowrap|[[File:tiles_19_7_2.png|link=]][[File:tiles_19_7_0.png|link=]][[File:tiles_19_7_0.png|link=]][[File:tiles_19_7_13.png|link=]][[File:tiles_19_7_20.png|link=]]}} || {{item|Pink Brick Platform}}
+|-
+| 19 || 8 || {{nowrap|[[File:tiles_19_8_2.png|link=]][[File:tiles_19_8_0.png|link=]][[File:tiles_19_8_0.png|link=]][[File:tiles_19_8_13.png|link=]][[File:tiles_19_8_20.png|link=]]}} || {{item|Green Brick Platform}}
+|-
+| 19 || 9 || {{nowrap|[[File:tiles_19_9_2.png|link=]][[File:tiles_19_9_0.png|link=]][[File:tiles_19_9_0.png|link=]][[File:tiles_19_9_13.png|link=]][[File:tiles_19_9_20.png|link=]]}} || {{item|Metal Shelf}}
+|-
+| 19 || 10 || {{nowrap|[[File:tiles_19_10_2.png|link=]][[File:tiles_19_10_0.png|link=]][[File:tiles_19_10_0.png|link=]][[File:tiles_19_10_13.png|link=]][[File:tiles_19_10_20.png|link=]]}} || {{item|Brass Shelf}}
+|-
+| 19 || 11 || {{nowrap|[[File:tiles_19_11_2.png|link=]][[File:tiles_19_11_0.png|link=]][[File:tiles_19_11_0.png|link=]][[File:tiles_19_11_13.png|link=]][[File:tiles_19_11_20.png|link=]]}} || {{item|Wood Shelf}}
+|-
+| 19 || 12 || {{nowrap|[[File:tiles_19_12_2.png|link=]][[File:tiles_19_12_0.png|link=]][[File:tiles_19_12_0.png|link=]][[File:tiles_19_12_13.png|link=]][[File:tiles_19_12_20.png|link=]]}} || {{item|Dungeon Shelf}}
+|-
+| 19 || 13 || {{nowrap|[[File:tiles_19_13_2.png|link=]][[File:tiles_19_13_0.png|link=]][[File:tiles_19_13_0.png|link=]][[File:tiles_19_13_13.png|link=]][[File:tiles_19_13_20.png|link=]]}} || {{item|Obsidian Platform}}
+|-
+| 19 || 14 || {{nowrap|[[File:tiles_19_14_2.png|link=]][[File:tiles_19_14_0.png|link=]][[File:tiles_19_14_0.png|link=]][[File:tiles_19_14_13.png|link=]][[File:tiles_19_14_20.png|link=]]}} || {{item|Glass Platform}}
+|-
+| 19 || 15 || {{nowrap|[[File:tiles_19_15_2.png|link=]][[File:tiles_19_15_0.png|link=]][[File:tiles_19_15_0.png|link=]][[File:tiles_19_15_13.png|link=]][[File:tiles_19_15_20.png|link=]]}} || {{item|Pumpkin Platform}}
+|-
+| 19 || 16 || {{nowrap|[[File:tiles_19_16_2.png|link=]][[File:tiles_19_16_0.png|link=]][[File:tiles_19_16_0.png|link=]][[File:tiles_19_16_13.png|link=]][[File:tiles_19_16_20.png|link=]]}} || {{item|Spooky Wood Platform}}
+|-
+| 19 || 17 || {{nowrap|[[File:tiles_19_17_2.png|link=]][[File:tiles_19_17_0.png|link=]][[File:tiles_19_17_0.png|link=]][[File:tiles_19_17_13.png|link=]][[File:tiles_19_17_20.png|link=]]}} || {{item|Palm Wood Platform}}
+|-
+| 19 || 18 || {{nowrap|[[File:tiles_19_18_2.png|link=]][[File:tiles_19_18_0.png|link=]][[File:tiles_19_18_0.png|link=]][[File:tiles_19_18_13.png|link=]][[File:tiles_19_18_20.png|link=]]}} || {{item|Mushroom Platform}}
+|-
+| 19 || 19 || {{nowrap|[[File:tiles_19_19_2.png|link=]][[File:tiles_19_19_0.png|link=]][[File:tiles_19_19_0.png|link=]][[File:tiles_19_19_13.png|link=]][[File:tiles_19_19_20.png|link=]]}} || {{item|Boreal Wood Platform}}
+|-
+| 19 || 20 || {{nowrap|[[File:tiles_19_20_2.png|link=]][[File:tiles_19_20_0.png|link=]][[File:tiles_19_20_0.png|link=]][[File:tiles_19_20_13.png|link=]][[File:tiles_19_20_20.png|link=]]}} || {{item|Slime Platform}}
+|-
+| 19 || 21 || {{nowrap|[[File:tiles_19_21_2.png|link=]][[File:tiles_19_21_0.png|link=]][[File:tiles_19_21_0.png|link=]][[File:tiles_19_21_13.png|link=]][[File:tiles_19_21_20.png|link=]]}} || {{item|Steampunk Platform}}
+|-
+| 19 || 22 || {{nowrap|[[File:tiles_19_22_2.png|link=]][[File:tiles_19_22_0.png|link=]][[File:tiles_19_22_0.png|link=]][[File:tiles_19_22_13.png|link=]][[File:tiles_19_22_20.png|link=]]}} || {{item|Skyware Platform}}
+|-
+| 19 || 23 || {{nowrap|[[File:tiles_19_23_2.png|link=]][[File:tiles_19_23_0.png|link=]][[File:tiles_19_23_0.png|link=]][[File:tiles_19_23_13.png|link=]][[File:tiles_19_23_20.png|link=]]}} || {{item|Living Wood Platform}}
+|-
+| 19 || 24 || {{nowrap|[[File:tiles_19_24_2.png|link=]][[File:tiles_19_24_0.png|link=]][[File:tiles_19_24_0.png|link=]][[File:tiles_19_24_13.png|link=]][[File:tiles_19_24_20.png|link=]]}} || {{item|Honey Platform}}
+|-
+| 19 || 25 || {{nowrap|[[File:tiles_19_25_2.png|link=]][[File:tiles_19_25_0.png|link=]][[File:tiles_19_25_0.png|link=]][[File:tiles_19_25_13.png|link=]][[File:tiles_19_25_20.png|link=]]}} || {{item|Cactus Platform}}
+|-
+| 19 || 26 || {{nowrap|[[File:tiles_19_26_2.png|link=]][[File:tiles_19_26_0.png|link=]][[File:tiles_19_26_0.png|link=]][[File:tiles_19_26_13.png|link=]][[File:tiles_19_26_20.png|link=]]}} || {{item|Martian Platform}}
+|-
+| 19 || 27 || {{nowrap|[[File:tiles_19_27_2.png|link=]][[File:tiles_19_27_0.png|link=]][[File:tiles_19_27_0.png|link=]][[File:tiles_19_27_13.png|link=]][[File:tiles_19_27_20.png|link=]]}} || {{item|Meteorite Platform}}
+|-
+| 19 || 28 || {{nowrap|[[File:tiles_19_28_2.png|link=]][[File:tiles_19_28_0.png|link=]][[File:tiles_19_28_0.png|link=]][[File:tiles_19_28_13.png|link=]][[File:tiles_19_28_20.png|link=]]}} || {{item|Granite Platform}}
+|-
+| 19 || 29 || {{nowrap|[[File:tiles_19_29_2.png|link=]][[File:tiles_19_29_0.png|link=]][[File:tiles_19_29_0.png|link=]][[File:tiles_19_29_13.png|link=]][[File:tiles_19_29_20.png|link=]]}} || {{item|Marble Platform}}
+|-
+| 19 || 30 || {{nowrap|[[File:tiles_19_30_2.png|link=]][[File:tiles_19_30_0.png|link=]][[File:tiles_19_30_0.png|link=]][[File:tiles_19_30_13.png|link=]][[File:tiles_19_30_20.png|link=]]}} || {{item|Crystal Platform}}
+|-
+| 19 || 31 || {{nowrap|[[File:tiles_19_31_2.png|link=]][[File:tiles_19_31_0.png|link=]][[File:tiles_19_31_0.png|link=]][[File:tiles_19_31_13.png|link=]][[File:tiles_19_31_20.png|link=]]}} || {{item|Golden Platform}}
+|-
+| 19 || 32 || {{nowrap|[[File:tiles_19_32_2.png|link=]][[File:tiles_19_32_0.png|link=]][[File:tiles_19_32_0.png|link=]][[File:tiles_19_32_13.png|link=]][[File:tiles_19_32_20.png|link=]]}} || {{item|Dynasty Wood Platform}}
+|-
+| 19 || 33 || {{nowrap|[[File:tiles_19_33_2.png|link=]][[File:tiles_19_33_0.png|link=]][[File:tiles_19_33_0.png|link=]][[File:tiles_19_33_13.png|link=]][[File:tiles_19_33_20.png|link=]]}} || {{item|Lihzahrd Platform}}
+|-
+| 19 || 34 || {{nowrap|[[File:tiles_19_34_2.png|link=]][[File:tiles_19_34_0.png|link=]][[File:tiles_19_34_0.png|link=]][[File:tiles_19_34_13.png|link=]][[File:tiles_19_34_20.png|link=]]}} || {{item|Flesh Platform}}
+|-
+| 19 || 35 || {{nowrap|[[File:tiles_19_35_2.png|link=]][[File:tiles_19_35_0.png|link=]][[File:tiles_19_35_0.png|link=]][[File:tiles_19_35_13.png|link=]][[File:tiles_19_35_20.png|link=]]}} || {{item|Frozen Platform}}
+|-
+| 19 || 36 || {{nowrap|[[File:tiles_19_36_2.png|link=]][[File:tiles_19_36_0.png|link=]][[File:tiles_19_36_0.png|link=]][[File:tiles_19_36_13.png|link=]][[File:tiles_19_36_20.png|link=]]}} || {{item|Spider Platform}}
+|-
+| 19 || 37 || {{nowrap|[[File:tiles_19_37_2.png|link=]][[File:tiles_19_37_0.png|link=]][[File:tiles_19_37_0.png|link=]][[File:tiles_19_37_13.png|link=]][[File:tiles_19_37_20.png|link=]]}} || {{item|Lesion Platform}}
+|-
+| 19 || 38 || {{nowrap|[[File:tiles_19_38_2.png|link=]][[File:tiles_19_38_0.png|link=]][[File:tiles_19_38_0.png|link=]][[File:tiles_19_38_13.png|link=]][[File:tiles_19_38_20.png|link=]]}} || {{item|Solar Platform}}
+|-
+| 19 || 39 || {{nowrap|[[File:tiles_19_39_2.png|link=]][[File:tiles_19_39_0.png|link=]][[File:tiles_19_39_0.png|link=]][[File:tiles_19_39_13.png|link=]][[File:tiles_19_39_20.png|link=]]}} || {{item|Vortex Platform}}
+|-
+| 19 || 40 || {{nowrap|[[File:tiles_19_40_2.png|link=]][[File:tiles_19_40_0.png|link=]][[File:tiles_19_40_0.png|link=]][[File:tiles_19_40_13.png|link=]][[File:tiles_19_40_20.png|link=]]}} || {{item|Nebula Platform}}
+|-
+| 19 || 41 || {{nowrap|[[File:tiles_19_41_2.png|link=]][[File:tiles_19_41_0.png|link=]][[File:tiles_19_41_0.png|link=]][[File:tiles_19_41_13.png|link=]][[File:tiles_19_41_20.png|link=]]}} || {{item|Stardust Platform}}
+|-
+| 19 || 42 || {{nowrap|[[File:tiles_19_42_2.png|link=]][[File:tiles_19_42_0.png|link=]][[File:tiles_19_42_0.png|link=]][[File:tiles_19_42_13.png|link=]][[File:tiles_19_42_20.png|link=]]}} || {{item|Sandstone Platform}}
+|-
+| 19 || 43 || {{nowrap|[[File:tiles_19_43_2.png|link=]][[File:tiles_19_43_0.png|link=]][[File:tiles_19_43_0.png|link=]][[File:tiles_19_43_13.png|link=]][[File:tiles_19_43_20.png|link=]]}} || {{item|Stone Platform}}
+|-
+| 19 || 44 || {{nowrap|[[File:tiles_19_44_2.png|link=]][[File:tiles_19_44_0.png|link=]][[File:tiles_19_44_0.png|link=]][[File:tiles_19_44_13.png|link=]][[File:tiles_19_44_20.png|link=]]}} || {{item|Bamboo Platform}}
+|-
+| 19 || 45 || {{nowrap|[[File:tiles_19_45_2.png|link=]][[File:tiles_19_45_0.png|link=]][[File:tiles_19_45_0.png|link=]][[File:tiles_19_45_13.png|link=]][[File:tiles_19_45_20.png|link=]]}} || {{item|Reef Platform}}
+|-
+| 19 || 46 || {{nowrap|[[File:tiles_19_46_2.png|link=]][[File:tiles_19_46_0.png|link=]][[File:tiles_19_46_0.png|link=]][[File:tiles_19_46_13.png|link=]][[File:tiles_19_46_20.png|link=]]}} || {{item|Balloon Platform}}
+|-
+| 19 || 47 || {{nowrap|[[File:tiles_19_47_2.png|link=]][[File:tiles_19_47_0.png|link=]][[File:tiles_19_47_0.png|link=]][[File:tiles_19_47_13.png|link=]][[File:tiles_19_47_20.png|link=]]}} || {{item|Ash Wood Platform}}
+|-
+| 19 || 48 || {{nowrap|[[File:tiles_19_48_2.png|link=]][[File:tiles_19_48_0.png|link=]][[File:tiles_19_48_0.png|link=]][[File:tiles_19_48_13.png|link=]][[File:tiles_19_48_20.png|link=]]}} || {{item|Echo Platform}}
+|-
+| 20 || 0 || [[File:tiles_20_0_0.png|link=]] [[File:tiles_20_0_1.png|link=]] [[File:tiles_20_0_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Forest Saplings}}]] || rowspan=11 | <code>Saplings</code>
+|-
+| 20 || 1 || [[File:tiles_20_1_0.png|link=]] [[File:tiles_20_1_1.png|link=]] [[File:tiles_20_1_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Boreal Sapling}}]]
+|-
+| 20 || 2 || [[File:tiles_20_2_0.png|link=]] [[File:tiles_20_2_1.png|link=]] [[File:tiles_20_2_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Jungle Sapling}}]]
+|-
+| 20 || 3 || [[File:tiles_20_3_0.png|link=]] [[File:tiles_20_3_1.png|link=]] [[File:tiles_20_3_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Corrupt Sapling}}]]
+|-
+| 20 || 4 || [[File:tiles_20_4_0.png|link=]] [[File:tiles_20_4_1.png|link=]] [[File:tiles_20_4_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Crimson Sapling}}]]
+|-
+| 20 || 5 || [[File:tiles_20_5_0.png|link=]] [[File:tiles_20_5_1.png|link=]] [[File:tiles_20_5_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Hallowed Sapling}}]]
+|-
+| 20 || 6 || [[File:tiles_20_6_0.png|link=]] [[File:tiles_20_6_1.png|link=]] [[File:tiles_20_6_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Palm Sapling}}]]
+|-
+| 20 || 7 || [[File:tiles_20_7_0.png|link=]] [[File:tiles_20_7_1.png|link=]] [[File:tiles_20_7_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Hallowed Palm Sapling}}]]
+|-
+| 20 || 8 || [[File:tiles_20_8_0.png|link=]] [[File:tiles_20_8_1.png|link=]] [[File:tiles_20_8_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Crimson Palm Sapling}}]]
+|-
+| 20 || 9 || [[File:tiles_20_9_0.png|link=]] [[File:tiles_20_9_1.png|link=]] [[File:tiles_20_9_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Corrupt Palm Sapling}}]]
+|-
+| 20 || 10 || [[File:tiles_20_10_0.png|link=]] [[File:tiles_20_10_1.png|link=]] [[File:tiles_20_10_2.png|link=]] || [[{{tr|Acorn}}|{{tr|Ash Sapling}}]]
+|-
+| 21 || 0 || [[File:tiles_21_0_0.png|link=]] [[File:tiles_21_0_2.png|link=]] || {{item|Chest}} || rowspan=54 | <code>Containers</code>
+|-
+| 21 || 1 || [[File:tiles_21_1_0.png|link=]] [[File:tiles_21_1_2.png|link=]] || {{item|Gold Chest}}
+|-
+| 21 || 2 || [[File:tiles_21_2_0.png|link=]] [[File:tiles_21_2_2.png|link=]] || {{item|Locked Gold Chest}}
+|-
+| 21 || 3 || [[File:tiles_21_3_0.png|link=]] [[File:tiles_21_3_2.png|link=]] || {{item|Shadow Chest}}
+|-
+| 21 || 4 || [[File:tiles_21_4_0.png|link=]] [[File:tiles_21_4_2.png|link=]] || {{item|Locked Shadow Chest|link={{tr|Shadow Chest|link=y}}}}
+|-
+| 21 || 5 || [[File:tiles_21_5_0.png|link=]] || {{item|Barrel}}
+|-
+| 21 || 6 || [[File:tiles_21_6_0.png|link=]] || {{item|Trash Can}}
+|-
+| 21 || 7 || [[File:tiles_21_7_0.png|link=]] [[File:tiles_21_7_2.png|link=]] || {{item|Ebonwood Chest}}
+|-
+| 21 || 8 || [[File:tiles_21_8_0.png|link=]] [[File:tiles_21_8_2.png|link=]] || {{item|Rich Mahogany Chest}}
+|-
+| 21 || 9 || [[File:tiles_21_9_0.png|link=]] [[File:tiles_21_9_2.png|link=]] || {{item|Pearlwood Chest}}
+|-
+| 21 || 10 || [[File:tiles_21_10_0.png|link=]] [[File:tiles_21_10_2.png|link=]] || {{item|Ivy Chest}}
+|-
+| 21 || 11 || [[File:tiles_21_11_0.png|link=]] [[File:tiles_21_11_2.png|link=]] || {{item|Frozen Chest}}
+|-
+| 21 || 12 || [[File:tiles_21_12_0.png|link=]] [[File:tiles_21_12_2.png|link=]] || {{item|Living Wood Chest}}
+|-
+| 21 || 13 || [[File:tiles_21_13_0.png|link=]] [[File:tiles_21_13_2.png|link=]] || {{item|Skyware Chest}}
+|-
+| 21 || 14 || [[File:tiles_21_14_0.png|link=]] [[File:tiles_21_14_2.png|link=]] || {{item|Shadewood Chest}}
+|-
+| 21 || 15 || [[File:tiles_21_15_0.png|link=]] [[File:tiles_21_15_2.png|link=]] || {{item|Web Covered Chest}}
+|-
+| 21 || 16 || [[File:tiles_21_16_0.png|link=]] [[File:tiles_21_16_2.png|link=]] || {{item|Lihzahrd Chest}}
+|-
+| 21 || 17 || [[File:tiles_21_17_0.png|link=]] [[File:tiles_21_17_2.png|link=]] || {{item|Water Chest}}
+|-
+| 21 || 18 || [[File:tiles_21_18_0.png|link=]] [[File:tiles_21_18_2.png|link=]] || {{item|Jungle Chest}}
+|-
+| 21 || 19 || [[File:tiles_21_19_0.png|link=]] [[File:tiles_21_19_2.png|link=]] || {{item|Corruption Chest}}
+|-
+| 21 || 20 || [[File:tiles_21_20_0.png|link=]] [[File:tiles_21_20_2.png|link=]] || {{item|Crimson Chest}}
+|-
+| 21 || 21 || [[File:tiles_21_21_0.png|link=]] [[File:tiles_21_21_2.png|link=]] || {{item|Hallowed Chest}}
+|-
+| 21 || 22 || [[File:tiles_21_22_0.png|link=]] [[File:tiles_21_22_2.png|link=]] || {{item|Ice Chest}}
+|-
+| 21 || 23 || [[File:tiles_21_23_0.png|link=]] [[File:tiles_21_23_2.png|link=]] || {{item|Locked Jungle Chest|link={{tr|Jungle Chest|link=y}}}}
+|-
+| 21 || 24 || [[File:tiles_21_24_0.png|link=]] [[File:tiles_21_24_2.png|link=]] || {{item|Locked Corruption Chest|link={{tr|Corruption Chest|link=y}}}}
+|-
+| 21 || 25 || [[File:tiles_21_25_0.png|link=]] [[File:tiles_21_25_2.png|link=]] || {{item|Locked Crimson Chest|link={{tr|Crimson Chest|link=y}}}}
+|-
+| 21 || 26 || [[File:tiles_21_26_0.png|link=]] [[File:tiles_21_26_2.png|link=]] || {{item|Locked Hallowed Chest|link={{tr|Hallowed Chest|link=y}}}}
+|-
+| 21 || 27 || [[File:tiles_21_27_0.png|link=]] [[File:tiles_21_27_2.png|link=]] || {{item|Locked Ice Chest|link={{tr|Ice Chest}}}}
+|-
+| 21 || 28 || [[File:tiles_21_28_0.png|link=]] [[File:tiles_21_28_2.png|link=]] || {{item|Dynasty Chest}}
+|-
+| 21 || 29 || [[File:tiles_21_29_0.png|link=]] [[File:tiles_21_29_2.png|link=]] || {{item|Honey Chest}}
+|-
+| 21 || 30 || [[File:tiles_21_30_0.png|link=]] [[File:tiles_21_30_2.png|link=]] || {{item|Steampunk Chest}}
+|-
+| 21 || 31 || [[File:tiles_21_31_0.png|link=]] [[File:tiles_21_31_2.png|link=]] || {{item|Palm Wood Chest}}
+|-
+| 21 || 32 || [[File:tiles_21_32_0.png|link=]] [[File:tiles_21_32_2.png|link=]] || {{item|Mushroom Chest}}
+|-
+| 21 || 33 || [[File:tiles_21_33_0.png|link=]] [[File:tiles_21_33_2.png|link=]] || {{item|Boreal Wood Chest}}
+|-
+| 21 || 34 || [[File:tiles_21_34_0.png|link=]] [[File:tiles_21_34_2.png|link=]] || {{item|Slime Chest}}
+|-
+| 21 || 35 || [[File:tiles_21_35_0.png|link=]] [[File:tiles_21_35_2.png|link=]] || {{item|Green Dungeon Chest}}
+|-
+| 21 || 36 || [[File:tiles_21_36_0.png|link=]] [[File:tiles_21_36_2.png|link=]] || {{item|Locked Green Dungeon Chest}}
+|-
+| 21 || 37 || [[File:tiles_21_37_0.png|link=]] [[File:tiles_21_37_2.png|link=]] || {{item|Pink Dungeon Chest}}
+|-
+| 21 || 38 || [[File:tiles_21_38_0.png|link=]] [[File:tiles_21_38_2.png|link=]] || {{item|Locked Pink Dungeon Chest}}
+|-
+| 21 || 39 || [[File:tiles_21_39_0.png|link=]] [[File:tiles_21_39_2.png|link=]] || {{item|Blue Dungeon Chest}}
+|-
+| 21 || 40 || [[File:tiles_21_40_0.png|link=]] [[File:tiles_21_40_2.png|link=]] || {{item|Locked Blue Dungeon Chest}}
+|-
+| 21 || 41 || [[File:tiles_21_41_0.png|link=]] [[File:tiles_21_41_2.png|link=]] || {{item|Bone Chest}}
+|-
+| 21 || 42 || [[File:tiles_21_42_0.png|link=]] [[File:tiles_21_42_2.png|link=]] || {{item|Cactus Chest}}
+|-
+| 21 || 43 || [[File:tiles_21_43_0.png|link=]] [[File:tiles_21_43_2.png|link=]] || {{item|Flesh Chest}}
+|-
+| 21 || 44 || [[File:tiles_21_44_0.png|link=]] [[File:tiles_21_44_2.png|link=]] || {{item|Obsidian Chest}}
+|-
+| 21 || 45 || [[File:tiles_21_45_0.png|link=]] [[File:tiles_21_45_2.png|link=]] || {{item|Pumpkin Chest}}
+|-
+| 21 || 46 || [[File:tiles_21_46_0.png|link=]] [[File:tiles_21_46_2.png|link=]] || {{item|Spooky Chest}}
+|-
+| 21 || 47 || [[File:tiles_21_47_0.png|link=]] [[File:tiles_21_47_2.png|link=]] || {{item|Glass Chest}}
+|-
+| 21 || 48 || [[File:tiles_21_48_0.png|link=]] [[File:tiles_21_48_2.png|link=]] || {{item|Martian Chest}}
+|-
+| 21 || 49 || [[File:tiles_21_49_0.png|link=]] [[File:tiles_21_49_2.png|link=]] || {{item|Meteorite Chest}}
+|-
+| 21 || 50 || [[File:tiles_21_50_0.png|link=]] [[File:tiles_21_50_2.png|link=]] || {{item|Granite Chest}}
+|-
+| 21 || 51 || [[File:tiles_21_51_0.png|link=]] [[File:tiles_21_51_2.png|link=]] || {{item|Marble Chest}}
+|-
+| 21 || 52 || [[File:tiles_21_52_0.png|link=]] [[File:tiles_21_52_2.png|link=]] || {{item|Crystal Chest|note=（未使用）}}{{note|small=y|block=y|{{tr|Crystal Chest}}实际使用的{{tr|Tile ID}} 是 467。}}
+|-
+| 21 || 53 || [[File:tiles_21_53_0.png|link=]] [[File:tiles_21_53_2.png|link=]] || {{item|Golden Chest|note=（未使用）}}{{note|small=y|block=y|{{tr|Golden Chest}}实际使用的{{tr|Tile ID}}是 467 (1)。}}
+|-
+| 22 || 0 || [[File:Demonite Ore (placed).png|link=]] || {{item|Demonite Ore}} || <code>Demonite</code>
+|-
+| 23 || 0 || {{item|Corrupt grass|mode=table|class=alignleft}} || <code>CorruptGrass</code>
+|-
+| 24 || 0 || [[File:tiles_24_0.png|link=]] || rowspan=8 | 矮[[{{tr|wild Corrupt plants}}]] || rowspan=23 | <code>CorruptPlants</code>
+|-
+| 24 || 1 || [[File:tiles_24_1.png|link=]] 
+|-
+| 24 || 2 || [[File:tiles_24_2.png|link=]] 
+|-
+| 24 || 3 || [[File:tiles_24_3.png|link=]] 
+|-
+| 24 || 4 || [[File:tiles_24_4.png|link=]] 
+|-
+| 24 || 5 || [[File:tiles_24_5.png|link=]] 
+|-
+| 24 || 6 || [[File:tiles_24_6.png|link=]] 
+|-
+| 24 || 7 || [[File:tiles_24_7.png|link=]] 
+|-
+| 24 || 8 || [[File:tiles_24_8.png|link=]] || {{item|Vile Mushroom}}
+|-
+| 24 || 9 || [[File:tiles_24_9.png|link=]] || rowspan=14 | 矮[[{{tr|wild Corrupt plants}}]]
+|-
+| 24 || 10 || [[File:tiles_24_10.png|link=]] 
+|-
+| 24 || 11 || [[File:tiles_24_11.png|link=]] 
+|-
+| 24 || 12 || [[File:tiles_24_12.png|link=]] 
+|-
+| 24 || 13 || [[File:tiles_24_13.png|link=]] 
+|-
+| 24 || 14 || [[File:tiles_24_14.png|link=]] 
+|-
+| 24 || 15 || [[File:tiles_24_15.png|link=]] 
+|-
+| 24 || 16 || [[File:tiles_24_16.png|link=]] 
+|-
+| 24 || 17 || [[File:tiles_24_17.png|link=]] 
+|-
+| 24 || 18 || [[File:tiles_24_18.png|link=]] 
+|-
+| 24 || 19 || [[File:tiles_24_19.png|link=]] 
+|-
+| 24 || 20 || [[File:tiles_24_20.png|link=]] 
+|-
+| 24 || 21 || [[File:tiles_24_21.png|link=]] 
+|-
+| 24 || 22 || [[File:tiles_24_22.png|link=]] 
+|-
+| 25 || 0 || [[File:Ebonstone Block (placed).png|link=]] || {{item|Ebonstone Block}} || <code>Ebonstone</code>
+|-
+| 26 || 0 || {{item|Demon Altar|mode=table|class=alignleft}} || rowspan=2 | <code>DemonAltar</code>
+|-
+| 26 || 1 || {{item|Crimson Altar|mode=table|class=alignleft}}
+|-
+| 27 || 0 || [[File:tiles_27_0.png|link=]] [[File:tiles_27_0.png|link=]] [[File:tiles_27_2.png|link=]] || {{item|Sunflower}} || <code>Sunflower</code>
+|-
+| 28 || 0 || [[File:tiles_28_0_0.png|link=]] [[File:tiles_28_0_1.png|link=]] [[File:tiles_28_0_2.png|link=]] || rowspan=4 | [[{{tr|Pot}}|{{tr|Forest Pots}}]] || rowspan=37 | <code>Pots</code>
+|-
+| 28 || 1 || [[File:tiles_28_1_0.png|link=]] [[File:tiles_28_1_1.png|link=]] [[File:tiles_28_1_2.png|link=]]
+|-
+| 28 || 2 || [[File:tiles_28_2_0.png|link=]] [[File:tiles_28_2_1.png|link=]] [[File:tiles_28_2_2.png|link=]]
+|-
+| 28 || 3 || [[File:tiles_28_3_0.png|link=]] [[File:tiles_28_3_1.png|link=]] [[File:tiles_28_3_2.png|link=]]
+|-
+| 28 || 4 || [[File:tiles_28_4_0.png|link=]] [[File:tiles_28_4_1.png|link=]] [[File:tiles_28_4_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Tundra Pots}}]]
+|-
+| 28 || 5 || [[File:tiles_28_5_0.png|link=]] [[File:tiles_28_5_1.png|link=]] [[File:tiles_28_5_2.png|link=]]
+|-
+| 28 || 6 || [[File:tiles_28_6_0.png|link=]] [[File:tiles_28_6_1.png|link=]] [[File:tiles_28_6_2.png|link=]]
+|-
+| 28 || 7 || [[File:tiles_28_7_0.png|link=]] [[File:tiles_28_7_1.png|link=]] [[File:tiles_28_7_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Jungle Pots}}]]
+|-
+| 28 || 8 || [[File:tiles_28_8_0.png|link=]] [[File:tiles_28_8_1.png|link=]] [[File:tiles_28_8_2.png|link=]]
+|-
+| 28 || 9 || [[File:tiles_28_9_0.png|link=]] [[File:tiles_28_9_1.png|link=]] [[File:tiles_28_9_2.png|link=]]
+|-
+| 28 || 10 || [[File:tiles_28_10_0.png|link=]] [[File:tiles_28_10_1.png|link=]] [[File:tiles_28_10_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Dungeon Pots}}]]
+|-
+| 28 || 11 || [[File:tiles_28_11_0.png|link=]] [[File:tiles_28_11_1.png|link=]] [[File:tiles_28_11_2.png|link=]]
+|-
+| 28 || 12 || [[File:tiles_28_12_0.png|link=]] [[File:tiles_28_12_1.png|link=]] [[File:tiles_28_12_2.png|link=]]
+|-
+| 28 || 13 || [[File:tiles_28_13_0.png|link=]] [[File:tiles_28_13_1.png|link=]] [[File:tiles_28_13_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Underworld Pots}}]]
+|-
+| 28 || 14 || [[File:tiles_28_14_0.png|link=]] [[File:tiles_28_14_1.png|link=]] [[File:tiles_28_14_2.png|link=]]
+|-
+| 28 || 15 || [[File:tiles_28_15_0.png|link=]] [[File:tiles_28_15_1.png|link=]] [[File:tiles_28_15_2.png|link=]]
+|-
+| 28 || 16 || [[File:tiles_28_16_0.png|link=]] [[File:tiles_28_16_1.png|link=]] [[File:tiles_28_16_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Corruption Pots}}]]
+|-
+| 28 || 17 || [[File:tiles_28_17_0.png|link=]] [[File:tiles_28_17_1.png|link=]] [[File:tiles_28_17_2.png|link=]]
+|-
+| 28 || 18 || [[File:tiles_28_18_0.png|link=]] [[File:tiles_28_18_1.png|link=]] [[File:tiles_28_18_2.png|link=]]
+|-
+| 28 || 19 || [[File:tiles_28_19_0.png|link=]] [[File:tiles_28_19_1.png|link=]] [[File:tiles_28_19_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Spider Cave Pots}}]]
+|-
+| 28 || 20 || [[File:tiles_28_20_0.png|link=]] [[File:tiles_28_20_1.png|link=]] [[File:tiles_28_20_2.png|link=]]
+|-
+| 28 || 21 || [[File:tiles_28_21_0.png|link=]] [[File:tiles_28_21_1.png|link=]] [[File:tiles_28_21_2.png|link=]]
+|-
+| 28 || 22 || [[File:tiles_28_22_0.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Crimson Pots}}]]
+|-
+| 28 || 23 || [[File:tiles_28_23_0.png|link=]] [[File:tiles_28_23_2.png|link=]]
+|-
+| 28 || 24 || [[File:tiles_28_24_0.png|link=]]
+|-
+| 28 || 25 || [[File:tiles_28_25_0.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Pyramid Pots}}]]
+|-
+| 28 || 26 || [[File:tiles_28_26_0.png|link=]]
+|-
+| 28 || 27 || [[File:tiles_28_27_0.png|link=]]
+|-
+| 28 || 28 || [[File:tiles_28_28_0.png|link=]] [[File:tiles_28_28_1.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Lihzahrd Pots}}]]
+|-
+| 28 || 29 || [[File:tiles_28_29_0.png|link=]] [[File:tiles_28_29_1.png|link=]]
+|-
+| 28 || 30 || [[File:tiles_28_30_0.png|link=]] [[File:tiles_28_30_1.png|link=]]
+|-
+| 28 || 31 || [[File:tiles_28_31_0.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Marble Cave Pots}}]]
+|-
+| 28 || 32 || [[File:tiles_28_32_0.png|link=]] [[File:tiles_28_32_1.png|link=]]
+|-
+| 28 || 33 || [[File:tiles_28_33_0.png|link=]]
+|-
+| 28 || 34 || [[File:tiles_28_34_0.png|link=]] [[File:tiles_28_34_1.png|link=]] [[File:tiles_28_34_2.png|link=]] || rowspan=3 | [[{{tr|Pot}}|{{tr|Underground Desert Pots}}]]
+|-
+| 28 || 35 || [[File:tiles_28_35_0.png|link=]] [[File:tiles_28_35_1.png|link=]] [[File:tiles_28_35_2.png|link=]]
+|-
+| 28 || 36 || [[File:tiles_28_36_0.png|link=]] [[File:tiles_28_36_1.png|link=]] [[File:tiles_28_36_2.png|link=]]
+|-
+| 29 || 0 || [[File:tiles_29.png|link=]] || {{item|Piggy Bank}} || <code>PiggyBank</code>
+|-
+| 30 || 0 || [[File:Wood (placed).png|link=]] || {{item|Wood}} || <code>WoodBlock</code>
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Tile IDs/Part1}}

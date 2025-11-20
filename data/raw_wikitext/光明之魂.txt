@@ -1,0 +1,93 @@
+{{item infobox
+| image = Soul of Light.gif
+| auto = 520
+| tags = Drop / hardmode / Bag loot
+| listcat = Souls{{!}}Light
+}}
+{{drop infobox|style=clear:right}}
+{{for|搜集{{tr|Souls}}的策略|指南:收割魂#光明|display=指南:收割魂}}
+
+'''{{tr|Soul of Light}}'''是一种[[{{tr|Hardmode}}]]下的[[{{tr|crafting material}}]]。它会由大部分处于[[{{tr|Underground Hallow}}]]（[[{{tr|Cavern}}]]{{tr|layer}}）中的[[{{tr|enemies}}]]掉落，几率为 {{chance|1/5}}。这也包括不专属于此[[{{tr|Biomes}}]]的{{tr|enemy}}（例如[[{{tr|Granite Elemental}}]]）。对于{{tr|enemies}}掉落{{tr|souls}}的细节，参见[[#{{tr|Notes}}|{{tr|Notes}}]]。
+
+要制作所有{{tr|items}}（不包括 [[{{tr|Boss}}]] {{tr|summoning items}}和{{eil|Key of Night}}），需要<!--
+1.4.0.1:	--> {{eicons|1.4.0.1}} 118 /<!--
+pre-1.3.0.1:	--> {{eicons|1.3.0.1|invert=y}} 89
+个{{tr|Souls of Light}}。制作每种 {{tr|boss-summoning item}}各一个和一个{{tr|Key of Light}}额外需要 {{eicons|Suspicious Looking Skull|invert=y}} 24 / {{eicons|Suspicious Looking Skull}} 14 个{{tr|Souls of Light}}，总计 {{eicons|1.4.0.1}} 142 / {{eicons|1.3.0.1|invert=y}} 103 个{{tr|Souls of Light}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Soul of Light|expectedrows=22}}
+
+== 备注 ==
+* {{tr|Soul of Light}}的掉落条件如下：{{source code ref|v=1.4.4.9|method=Terraria.Content.ItemDropRules.Conditions.SoulOfWhateverConditionCanDrop}}{{source code ref|v=1.3.5.3|old=y|method=Terraria.NPC.NPCLoot}}
+** {{tr|The world}}在[[{{tr|Hardmode}}]]中。
+** 玩家在杀死{{tr|enemies}}时位于[[{{tr|Cavern}}]]{{tr|layer}}或更下方的一种{{tr|Hallow biome}}中。
+*** 在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中，玩家只需要位于一种{{tr|Hallow biome}}中。
+** {{tr|The enemy}}的{{tr|health}}大于 1（即不是[[:Category:{{tr|Spell AI NPCs}}|{{tr|spell}}]]、[[{{tr|Fungi Spore}}]]、[[{{tr|Plantera}}|{{tr|Spore}}]]，等等）。
+** {{tr|The enemy}}至少掉落 {{cc|1}}（即[[{{tr|Statue}}]]生成的{{tr|enemies}}、{{tr|Hardmode}}期间的[[{{tr|Meteor Head}}]]、{{tr|boss}} {{tr|minions}}等等{{tr|enemy}}都不会掉落{{tr|souls}}）。
+** {{tr|The enemy}}不是 [[{{tr|Bosses}}]]、有翅膀的[[{{tr|Slimer}}]]、{{eicons|1.4.0.1}}和特定的[[{{tr|slimes}}]]：{{#arraydefine:slimes|1,-3,-4,-5,-6,-7,-8,-9,-10,535|,}}
+{{collapse top|无法掉落{{tr|souls}}的{{tr|slimes}}列表}}
+{{itemlist/start|width=20em}}
+{{#arrayprint:slimes|
+|@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}
+}}
+{{itemlist/end}}
+{{collapse bottom}}
+* 在{{versions|3DS}}中，{{tr|Soul of Light}}会以目前未知的几率在{{tr|surface}}[[{{tr|Hallow}}]]掉落。{{verify|Should be re-checked for Mobile 1.4.0.5.0.}}
+
+== 小贴士 ==
+* 刷{{tr|Souls of Light}}最好的方法之一是去[[{{tr|Underground Hallow}}]]，深入到[[{{tr|lava}}]]生成的位置，放置上一些[[{{tr|Water Candle}}]]。在{{tr|Underground Hallow}}生成的{{tr|enemy}}不会穿过{{tr|block}}（[[{{tr|Enchanted Sword (NPC)}}|{{tr|Enchanted Swords}}]]除外）且没有独特性质，因此它们会受到{{tr|lava}}伤害并掉落{{tr|Soul of Light}}。当然，这对其他由{{tr|Underground Hallow}}掉落的物品也有效。
+* {{eicons|1.4.0.1|invert=y}}另外一个获取{{tr|Soul of Light}}的简单方式就是去{{tr|Underground Hallow}}用[[{{tr|Slime Crown}}]]召唤[[{{tr|King Slime}}]]。杀死它召唤的[[{{tr|Blue Slime}}]]有几率掉落{{tr|Soul of Light}}（这个方法对于刷 [[{{tr|Soul of Night}}]]同时适用）。
+
+== 花絮 ==
+* 虽然其{{tr|tooltip}}为''{{itemTooltip|520}}''，{{tr|Souls of Light}}可以由非专属于[[{{tr|Underground Hallow}}]]的{{tr|enemies}}掉落。
+* 在 [[1.3.0.1|1.3]] 预告片中，{{tr|the Soul of Light}}使用的是旧外观。
+
+== 另见 ==
+* [[{{tr|Soul of Night}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 特定{{tr|Slime}}不再掉落{{tr|Soul of Light}}。
+** 现在用于制作[[{{tr|Soul of Light in a Bottle}}]]和[[{{tr|Cool Whip}}]]。
+** {{tr|expert mode}}，不再有额外掉落判定。}}
+{{history|Desktop 1.3.3|现在用于{{tr|craft}}[[{{tr|Sky Fracture}}]]。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Logic Sensor (Day)}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated}}。旧{{tr|sprite}}是 [[File:Soul of Light (old).png]]。
+** [[{{tr|Expert Mode}}]]{{tr|worlds}}中的{{tr|Drop rate}}提升。
+** 不再用于制作[[{{tr|Neptune's Shell}}]]。
+** 现在用于制作[[{{tr|Chik}}]]、[[{{tr|Meteor Staff}}]]、和[[{{tr|Key of Light}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** {{tr|Expert Mode}}{{tr|worlds}}中的{{tr|Drop rate}}提升。}}
+{{history|Console 1.02|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** {{tr|Expert Mode}}{{tr|worlds}}中的{{tr|Drop rate}}提升。}}
+{{history|Mobile 1.2.6508|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Mobile 1.1.5536|现在可以获取。}}
+{{history|Mobile 1.1.8|{{tr|Introduced}}，但{{tr|unobtainable}}。}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Souls}}
+{{Master Template Consumables
+| show-drop = yes
+}}
+
+{{language info|en=Soul of Light}}

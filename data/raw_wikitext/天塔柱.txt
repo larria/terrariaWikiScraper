@@ -1,0 +1,111 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| name = Monoliths
+| auto = 3536
+| imagealt = [[File:Solar Monolith.png|{{tr|Solar Monolith item sprite}}|link=]] [[File:Vortex Monolith.png|{{tr|Vortex Monolith item sprite}}|link=]] [[File:Nebula Monolith.png|{{tr|Nebula Monolith item sprite}}|link=]] [[File:Stardust Monolith.png|{{tr|Stardust Monolith item sprite}}|link=]] [[File:Blood Moon Monolith.png|{{tr|Blood Moon Monolith item sprite}}|link=]] [[File:Void Monolith.png|{{tr|Void Monolith item sprite}}|link=]] [[File:Aether Monolith.png|{{tr|Aether Monolith item sprite}}|link=]]
+| type = Furniture/Mechanism
+| width = 2
+| height = 3
+| tooltip = <!-- hide tooltip because it is different per monolith -->
+| rare = <!-- hide rarity level because it is different per monolith -->
+| sell = <!-- hide sell value because it is different per monolith -->
+| id = 3536–3539, 4054, 4318, 5347
+| idtile = 410, 480, 509, 658
+| cargo = no
+}}
+
+'''{{tr|Monoliths}}'''是一类[[{{tr|furniture}}]]{{tr|items}}，可以激活通常在[[{{tr|events}}]]期间或特殊情况下见到的{{tr|backgrounds}}和其他屏幕效果。像其他[[{{tr|mechanisms}}]]一样，放置后，它们可以用 {{key|open}} 按键或通过[[{{tr|wire}}]]来切换开关，在它们周围的一小片区域内提供其效果。它们也可以作为[[{{tr|Vanity Accessories}}|{{tr|vanity accessories}}]]装备，这会为玩家在任何地方启用其效果，类似于[[{{tr|Radio Thing}}]]。
+
+共有七种不同的{{tr|monoliths}}：'''{{tr|Solar Monolith}}'''、'''{{tr|Vortex Monolith}}'''、'''{{tr|Nebula Monolith}}'''、'''{{tr|Stardust Monolith}}'''、和'''{{tr|Void Monolith}}'''可在[[{{tr|Ancient Manipulator}}]]制作，'''{{tr|Aether Monolith}}'''可通过[[{{tr|Shimmer}}]]获得，而'''{{tr|Blood Moon Monolith}}'''以 {{chance|1/10}} 几率掉落自[[{{tr|Dreadnautilus}}]]。
+
+* {{tr|The Blood Moon Monolith}}会模仿[[{{tr|Blood Moon}}]]期间所见的效果。
+* {{tr|The Nebula, Solar, Stardust, and Vortex Monoliths}}会模仿通常在[[{{tr|Lunar Events}}]]期间围绕对应[[{{tr|Celestial Pillar}}]]的效果。
+* {{tr|The Void Monolith}}会模仿[[{{tr|Moon Lord}}]] {{tr|boss}} 战的屏幕效果。
+* {{tr|The Aether Monolith}}会模仿[[{{tr|Aether}}]]{{tr|mini-biome}}中的屏幕效果。
+** 和其他{{tr|monoliths}}不同，{{tr|the Aether Monolith}}有三种状态：一个关闭状态<!-- ShimmerMonolithState == 2 -->（会完全禁用区域内的{{tr|the Aether}}效果，即使这些效果正常情况下由于[[{{tr|Shimmer}}]]的存在而可见）和两个开启状态——低状态<!-- ShimmerMonolithState == 0 -->，行为如同该{{tr|monolith}}不存在（若附近{{tr|Shimmer}}足够，则允许{{tr|Aether}}效果产生，但不会将该效果强制开启）；高状态<!-- ShimmerMonolithState == 1 -->，会强制将{{tr|Aether}}效果开启。
+
+== 类型 ==
+{{options/set|item|icons=n}}{{options/set|item infobox|view=table|colsep=\|cols=item2cells-anchor-nolink\:{{BASEPAGENAME}}/placed\idtile\tooltip\rarity\sell|extargs=tristate}}
+{| class="terraria sortable lined"
+! colspan=2 rowspan=2 | {{tr|Monolith}} !! colspan=2 class=unsortable | 放置后 !! rowspan=2 | [[{{tr|Tile IDs}}|{{tr|Tile ID}}]] !! rowspan=2 | {{tr|Tooltip}} !! rowspan=2 | {{tr|Rarity}} !! rowspan=2 | {{tr|Sell value}}
+|-
+! class=unsortable | 关闭 !! class=unsortable | 激活
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=3536|tags=hardmode}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=3537|tags=hardmode}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=3538|tags=hardmode}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=3539|tags=hardmode}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=4054}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=4318|tags=hardmode}}
+{{item infobox|type=Furniture/Mechanism|width=2|height=3|auto=5347|tristate=y}}
+|}{{options/reset|item infobox}}{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|result=LIKE % Monolith|expectedrows=6}}
+
+== 备注 ==
+* {{tr|A monolith}}的实际范围和玩家的分辨率大小相关，只要它位于玩家屏幕边缘 30 {{tr|tiles}}以内，其效果就可见。换言之，更简单的计算方式为距离{{tr|monolith}}的边缘 29 格。
+* 当检查激活的{{tr|monoliths}}时，游戏会从左上角开始检查，先从上至下，然后从左到右。{{source code ref|v=1.4.4.9|method=Terraria.SceneMetrics.ScanAndExportToMain}}
+** 因此，同时激活多个{{tr|monoliths}}时，最右侧、最下方的{{tr|monolith}}具有最高优先级。例如，如果一个高状态的{{tr|Aether Monolith}}被放置在屏幕左下角，另一个关闭状态的{{tr|Aether Monolith}}被放在右上角，产生的{{tr|Aether}}视觉效果将为关闭状态。
+** 此外，激活的{{tr|Aether}}效果总是能够覆盖{{tr|Blood Moon}}的视觉效果。<!--{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBiomes}}-->{{verify|这是通过游戏内效果确定的。不确定导致这一现象的源代码。}}
+* {{tr|Lunar monoliths}}（{{tr|Nebula Monolith, Solar Monolith, Stardust Monolith, Vortex Monolith, and Void Monolith}}）的效果不会互相叠加。{{source code ref|v=1.4.4.9|method=Terraria.Main.CheckMonoliths}}不过，它们能够和{{tr|Blood Moon Monolith or Aether Monolith}}叠加。
+** 当将{{tr|Blood Moon Monolith}}和{{tr|lunar monoliths}}叠加时，激活{{tr|lunar monolith}}和{{tr|Blood Moon Monolith}}的先后顺序会产生不同的效果。例如，先激活{{tr|Stardust Monolith}}再激活{{tr|Blood Moon Monolith}}会产生深蓝色，而先激活{{tr|Blood Moon Monolith}}再激活{{tr|Stardust Monolith}}会显示出类似于[[{{tr|Nebula Pillar}}]]的紫色。
+[[File:Stardust and Blood Moon tint demonstration.png|thumb|{{tr|Blood Moon Monolith}}与{{tr|Stardust Monolith}}结合的效果。]]
+** 当将{{tr|lunar monoliths}}与{{tr|Aether Monolith}}叠加时，玩家先激活哪个{{tr|monolith}}似乎并不会影响产生的效果。
+* {{tr|Monoliths}}只会调整视觉效果。它们不会{{tr|spawn}}任何[[{{tr|Enemies}}#{{tr|Event enemies}}|{{tr|event enemy}}]]或[[{{tr|Bosses}}#{{tr|Event bosses}}|{{tr|event Boss}}]]，也不会改变[[{{tr|music}}]]。
+* 如果在{{tr|exit}}{{tr|world}}时{{tr|Monoliths}}保持激活状态，则{{tr|background}}会在几秒内可见并逐渐淡化，类似于关闭{{tr|Monoliths}}时的淡化效果，此后{{tr|background}}会恢复正常。
+
+== 小贴士 ==
+* {{tr|Monoliths}}的效果有时可以提高一个区域的亮度，这可能会有用。
+* {{tr|The lunar monoliths}}有可发光的部位，但它们仅会在有光照的区域发光。这可以用于在创造{{tr|background}}效果的同时让{{tr|monoliths}}保持隐藏。
+* {{tr|The lunar monoliths}}在{{tr|surface}}于{{tr|night}}时会提供全面的视野，可以将其装备在{{tr|social accessory slot}}来获得永久的效果。
+
+== 花絮 ==
+* 在[[{{tr|Blood Moon}}]]激活一个{{tr|Monoliths}}时，其效果会和{{tr|Blood Moon}}期间的红色屏幕效果相结合。
+* {{tr|Lunar Monolith}}的外形类似对应[[{{tr|Celestial Pillars}}]]的缩小版本。
+** {{tr|Monoliths}}是与{{tr|Lunar Event}}有关的{{tr|item}}中仅有的不是 {{rare|10|cate=n}} 稀有度的{{tr|item}}。
+* [[{{tr|Party Center}}]]在源代码中的名字为 <code>PartyMonolith</code>（{{tr|Party}}{{tr|Monolith}}）。和普通的{{tr|monoliths}}不同，它会真正的启动[[{{tr|Party}}]]{{tr|event}}而不只是调整{{tr|background}}。
+* {{tr|Void Monolith}}的设计基于科幻小说系列{{维基百科|Space Odyssey|t=太空漫游|b=y}}中的 {{维基百科|Monolith (Space Odyssey)|黑方碑|t=Monolith}}。
+* 仅有的{{tr|pre-Hardmode}}的{{tr|monolith}}是{{tr|Aether Monolith}}。
+
+== 图库 ==
+<gallery widths="240px" heights="200px">
+File:Solar Monolith Screen Effect.png|激活的{{tr|Solar Monolith}}。
+File:Vortex Monolith Screen Effect.png|激活的{{tr|Vortex Monolith}}。
+File:Nebula Monolith Screen Effect.png|激活的{{tr|Nebula Monolith}}。
+File:Stardust Monolith Screen Effect.png|激活的{{tr|Stardust Monolith}}。
+File:Void Monolith Screen Effect.png|激活的{{tr|Void Monolith}}。
+File:Blood Moon Screen Effect.png|激活的{{tr|Blood Moon Monolith}}。
+File:Aether Monolith Screen Effect.png|激活的{{tr|Aether Monolith}}。
+</gallery>
+
+== 另见 ==
+* [[{{tr|Echo Chamber}}]]
+* [[{{tr|Radio Thing}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Aether Monolith}}。
+** 现在可作为{{tr|accessories}}装备。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Void and Blood Moon Monoliths}}。}}
+{{history|Desktop 1.3.5|修复了{{tr|Vortex Monolith}}的卖出价格较低的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-luminite = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+{{Master Template Equipables
+| show-vanityacc = yes
+}}
+
+{{language info|en=Monoliths}}

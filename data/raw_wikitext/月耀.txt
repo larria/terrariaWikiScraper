@@ -1,0 +1,41 @@
+{{exclusive|Moon Lord}}
+{{item infobox
+| auto = 3570
+| mana = @@@@
+| tags = hardmode / Drop / treasure bag loot
+| listcat = magic weapons / spell books
+}}
+{{drop infobox|style=clear:right}}
+[[File:Lunar Flare (demo).gif|frame|right|{{tr|The Lunar Flare}}攻击[[{{tr|Target Dummies}}]]。注意它独特的穿过{{tr|block}}的能力。]]
+	
+'''{{tr|Lunar Flare}}'''是一本[[{{tr|Hardmode}}]]，[[{{tr|Moon Lord}}]]后的[[{{tr|spell book}}]]，其有 {{chance|2/9}} 的概率掉落自[[{{tr|Moon Lord}}]]。使用时，其会召唤三枚{{tr|lunar flares projectile}}向{{tr|cursor}}位置倾泄而下。{{tr|The lunar flares}}与[[{{tr|enemies}}]]和[[{{tr|blocks}}]]碰撞时爆炸，但直到它们到达{{tr|cursor}}位置时可穿透{{tr|blocks}}，然后才会爆炸。
+
+{{modifier|magic}}
+__NOTOC__
+== 备注 ==
+* {{tr|The Lunar Flare}}的{{tr|projectiles}}会发出大量的光，但穿过{{tr|solid blocks}}时不会发光。
+* {{tr|The Lunar Flare}}的{{tr|projectiles}}击中时造成 -1 {{tr|ticks}}{{tick}}[[{{tr|local invincibility frame}}]]，这意味着每个{{tr|projectile}}不能多次伤害同一目标。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{tr|The Lunar Flare}}的爆炸可以伤害碰撞点水平和竖直方向 4.375 {{tr|tiles}}内的{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001|t=爆炸覆盖以碰撞点为中心 8.75×8.75 {{tr|tiles}}的方形区域。}}
+
+== 花絮 ==
+* 它的名字（Lunar Flare，直译为月亮耀斑）模仿了现实中的天文现象{{wikipedia|lang=en|solar flare|太阳耀斑（solar flare）}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Mana cost}}由 13 降低至 9。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+	
+== 参考 == 
+{{reflist}}
+
+{{Spell books}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Lunar Flare}}

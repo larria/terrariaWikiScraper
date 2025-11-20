@@ -1,0 +1,334 @@
+'''{{tr|Debuffs}}'''是施加在玩家或[[{{tr|enemy}}]]上的负面状态效果，会在战斗期间或者通过各种物品或环境获得。激活的{{tr|debuffs}}以图标形式显示在[[{{tr|hotbar}}]]下方，伴随的还有其剩余持续时间。与玩家具有更多控制权的[[{{tr|buffs}}]]相反，{{tr|Debuffs}}几乎普遍是负面的或至少是有害的效果。
+
+一般来说，伤害性{{tr|debuff}}会叠加：如果玩家同时有[[{{tr|Poisoned}}]]和[[{{tr|On Fire!}}]]，就会同时承受来自两个{{tr|debuff}}的伤害。[[{{tr|Death}}]]时总会清除所有生效的{{tr|debuff}}。
+
+不同于{{tr|buff}}，{{tr|debuff}}不能通过右键点击相应图标的方式取消。[[{{tr|Nurse}}]]能取消{{tr|debuff}}，花费是每个生效的{{tr|debuff}} {{coin|250cc}} 至 {{coin|3gc}}，价格取决于部分因素（见''[[{{tr|Nurse|link=y}}#价格增加|{{tr|Nurse}} § 价格增加]]''获取更多细节）。这并不适用于[[{{tr|Potion Sickness}}]]{{tr|debuff}}，此{{tr|debuff}}无法被取消。
+
+== 来自{{tr|enemies}} ==
+{| class="terraria lined sortable"
+! 图标 !! 名称 !! 效果 !! {{tr|Tooltip}} !! {{tr|Duration}}
+{{/row| 30
+| 防止玩家自然再生{{tr|health}}。<br/>{{eicons|Tizona}}由于{{tr|enemies}}不能自然再生{{tr|health}}，当它们有此{{tr|debuff}}时会以失去{{tr|health}}替代。
+| {{duration|rawseconds=5–45}}<br/>{{expert|{{duration|rawseconds=6–90}}}}<br/>{{master|{{duration|rawseconds=7.5–112.5}}}}
+}}
+{{/row| 20
+| 玩家变为绿色，随着时间流逝缓慢失去生命，并无法再生生命。
+| {{duration|rawseconds=2–20}}<br/>{{expert|{{duration|rawseconds=2–40}}}}<br/>{{master|{{duration|rawseconds=2.5–50}}}}
+}}
+{{/row| 24
+| 玩家被火焰吞没，随着时间流失缓慢失去生命，并无法再生生命。
+| {{duration|rawseconds=0.5–15}}<br/>{{expert|{{duration|rawseconds=1–30}}}}<br/>{{master|{{duration|rawseconds=1.25–37.5}}}}
+}}
+{{/row| 70
+| 玩家变为紫色，随着时间流失缓慢失去生命，并无法再生生命。
+| {{duration|4}}<br/>{{expert|{{duration|8}}}}<br/>{{master|{{duration|10}}}}
+}}
+{{/row| 22
+| 玩家变为蓝色，光线亮度下降。
+| {{duration|15}}<br/>{{expert|{{duration|rawseconds=3–30}}}}<br/>{{master|{{duration|rawseconds=3.75–37.5}}}}
+}}
+{{/row| 80
+| 严重降低光线的亮度，使得几乎无法看到。
+| {{duration|rawseconds=2–6}}<br/>{{expert|{{duration|rawseconds=4–12}}}}<br/>{{master|{{duration|rawseconds=5–15}}}}
+}}
+{{/row| 35
+| 防止玩家使用任何需要{{tr|mana}}的东西。
+| {{duration|7}}<br/>{{expert|{{duration|rawseconds=1.5–14}}}}<br/>{{master|{{duration|rawseconds=1.87–17.5}}}}
+}}
+{{/row| 23
+| 防止玩家使用任何东西。
+| {{duration|4}}<br/>{{expert|{{duration|rawseconds=0.73–8}}}}<br/>{{master|{{duration|rawseconds=0.92–10}}}}
+}}
+{{/row| 31
+| [[{{tr|Game controls}}]]被切换。
+| {{duration|rawseconds=5–14}}<br/>{{expert|{{duration|rawseconds=1.5–28}}}}<br/>{{master|{{duration|rawseconds=1.87–35}}}}
+}}
+{{/row| 32
+| 减慢玩家的速度。
+| {{duration|rawseconds=5–16}}<br/>{{expert|{{duration|rawseconds=0.5–32}}}}<br/>{{master|{{duration|rawseconds=0.63–40}}}}
+}}
+{{/row| 197
+| 玩家的速度严重降低。
+| {{duration|15}}<br/>{{expert|{{duration|15}}}}<br/>{{master|{{duration|15}}}}
+}}
+{{/row| 33
+| 使玩家的物理能力下降。
+| {{duration|rawseconds=60–300}}<br/>{{expert|{{duration|rawseconds=11.23–600}}}}<br/>{{master|{{duration|rawseconds=14.03–750}}}}
+}}
+{{/row| 36
+| 玩家的[[{{tr|defense}}]]减半。
+| {{duration|rawseconds=2–10}}<br/>{{expert|{{duration|rawseconds=4–20}}}}<br/>{{master|{{duration|rawseconds=5–25}}}}
+}}
+{{/row| 195
+| 玩家的[[{{tr|defense}}]]减半。
+| 在[[{{tr|Wither Beast}}]]的 25 格以内
+}}
+{{/row| 196
+| 所有由玩家造成的伤害降低 50%。
+| {{duration|5}}<br/>{{expert|{{duration|5}}}}<br/>{{master|{{duration|5}}}}
+}}
+{{/row| 37
+| 如果玩家逃离[[{{tr|the Underworld}}]]就会导致他们死亡。
+| 在与[[{{tr|Wall of Flesh}}]]战斗时
+}}
+{{/row| 38
+| 将玩家穿过图格直接拉到[[{{tr|Wall of Flesh}}]]面前。
+| 在接触[[{{tr|The Tongue}}]]时
+}}
+{{/row| 39
+| 用随时间推移造成伤害的{{tr|cursed flames}}点燃玩家。{{tr|Cursed flames}}不会被水扑灭。
+| {{duration|rawseconds=2–7}}<br/>{{expert|{{duration|rawseconds=4–14}}}}<br/>{{master|{{duration|rawseconds=5–17.5}}}}
+}}
+{{/row| 69
+| 使玩家发黄，并失去{{eicons|1.4.1}} 15 / {{eicons|1.4.1|invert=y}} 20 {{tr|defense}}。
+| {{duration|rawseconds=7–15}}<br/>{{expert|{{duration|rawseconds=14–30}}}}<br/>{{master|{{duration|rawseconds=17.5–37.5}}}}
+}}
+{{/row| 44
+| 受影响的实体随时间流失生命并且不能再生生命。
+| {{duration|6}}<br/>{{expert|{{duration|12}}}}<br/>{{master|{{duration|15}}}}
+}}
+{{/row| 46
+| 减慢玩家的速度。
+| {{duration|rawseconds=5–45}}<br/>{{expert|{{duration|rawseconds=10–90}}}}<br/>{{master|{{duration|rawseconds=12.5–112.5}}}}
+}}
+{{/row| 47
+| 阻止玩家移动或使用任何物品。
+| {{duration|rawseconds=0.33–2}}<br/>{{expert|{{duration|rawseconds=0.67–4}}}}<br/>{{master|{{duration|rawseconds=0.83–5}}}}
+}}
+{{/row| 149
+| 使玩家卡在被击中时的地方。在此效果进行时玩家仍然可以使用物品。
+| {{expert|{{duration|rawseconds=0.5–2.5}}}}<br/>{{master|{{duration|rawseconds=0.5–2.5}}}}
+}}
+{{/row| 156
+| 防止玩家水平移动或使用任何物品。玩家会受到更严重的{{tr|fall damage}}，且不能被[[{{tr|Wings}}]]或[[{{tr|Lucky Horseshoe}}]]抵消。
+| {{duration|rawseconds=1–4}}<br/>{{expert|{{duration|rawseconds=1–4}}}}<br/>{{master|{{duration|rawseconds=1–4}}}}
+}}
+{{/row| 164
+| 使玩家根据其位置向上或向下漂浮。
+| {{duration|rawseconds=6–12}}<br/>{{expert|{{duration|rawseconds=5–9}}}}<br/>{{master|{{duration|rawseconds=5–9}}}}
+}}
+{{/row| 163
+| 除了玩家周围的一小块区域外，屏幕几乎完全变暗，并导致玩家[[{{tr|Bleeding}}]]。
+| 被[[{{tr|Brain Suckler}}]]攻击时
+}}
+{{/row| 144
+| 使玩家在移动时受到显著伤害，不移动时受到少量伤害。
+| {{duration|rawseconds=4–8}}<br/>{{expert|{{duration|rawseconds=4–8}}}}<br/>{{master|{{duration|rawseconds=4–8}}}}
+}}
+{{/row| 148
+| 提高玩家的伤害但降低玩家的{{tr|health regeneration}}并随机施加其他{{tr|debuff}}。
+| {{expert|{{duration|rawseconds=3–90}}}}<br/>{{master|{{duration|rawseconds=3–90}}}}
+}}
+{{/row| 145
+| 防止玩家通过[[{{tr|Vampire Knives}}]]或[[{{tr|Spectre armor}}|{{tr|Spectre Hood}}]]进行治疗
+| {{duration|14}}<br/>{{expert|{{duration|16}}}}<br/>{{master|{{duration|16}}}}
+}}
+|}
+
+== 来自物品与环境 ==
+{| class="terraria lined sortable"
+! 图标 !! 名称 !! 效果 !! {{tr|Tooltip}} !! {{tr|Duration}}
+{{/row| 94
+| {{tr|Magic damage}}降低 25%，伤害降低的量每 1/5 秒减少 1%。
+| {{duration|rawseconds=5–10}}
+}}
+{{/row| 21
+| 防止玩家喝[[{{tr|healing potion}}]]和{{tr|restoration potions}}。
+| {{duration|60}}（有[[{{tr|Philosopher's Stone}}]]/[[{{tr|Charm of Myths}}]]时为 {{duration|45}}）
+}}
+{{/row| 88
+| 如果玩家在此{{tr|debuff}}激活时再次使用[[{{tr|Rod of Discord}}]]，会让让玩家失去等同于最大[[{{tr|health}}]]的{{eicons|1.3.0.1}} 1/7 / {{eicons|1.3.0.1|invert=y}} 1/6 的{{tr|health}}。
+| {{duration|6}}
+}}
+{{/row| 68
+| 玩家被[[{{tr|Sand}}]]、[[{{tr|Slush}}]]、或[[{{tr|Silt}}]]埋住时会随时间推移丢失生命。
+| 当与掉落的[[{{tr|Silt}}]]/[[{{tr|Sand}}]]/[[{{tr|Slush}}]]接触时。
+}}
+{{/row| 67
+| 玩家燃烧，损失生命值、{{tr|life regeneration}}速度、和{{tr|movement speed}}。
+| 当与[[{{tr|Meteorite}}]]、[[{{tr|Hellstone}}]]、或[[{{tr|Hellstone Brick}}]]接触时
+}}
+{{/row| 25
+| 降低{{tr|defense}}，提高{{tr|melee}}属性。
+| {{duration|120}}
+}}
+{{/row| 119
+| 受影响的实体会散发出装饰性的红心。
+| {{duration|30}}
+}}
+{{/row| 120
+| 玩家周围出现绿色烟雾，纯粹的视觉效果。
+| {{duration|30}}
+}}
+{{/row| 86
+| 提高{{tr|Enemy}}的{{tr|spawn rate}}和屏幕上{{tr|enemies}}的最大数量
+| 当在放置的[[{{tr|Water Candle}}]]附近时
+}}
+{{/row| 350
+| 将区域内[[{{tr|town}}]]对{{tr|enemy}}生成降低的效果无效化。
+| 当在放置的[[{{tr|Shadow Candle}}]]附近时
+}}
+{{/row| 194
+| 按[[{{tr|wind}}|风向]]被推走
+| 在[[{{tr|Sandstorm}}]]中无限时
+}}
+{{/row| 199
+| 不能建造或破坏{{tr|blocks}}。
+| 在[[{{tr|Old One's Army}}]]事件中无限时
+}}
+{{/row| 332
+| 无实际效果。
+| [[{{tr|Hunger}}]]的第一阶段，持续 {{duration|300}}。
+}}
+{{/row| 333
+| 降低玩家的属性。
+| {{tr|Hunger}}的第二阶段，持续 {{duration|300}}。
+}}
+{{/row| 334
+| 降低玩家的属性。每秒失去等同于人物最大{{tr|health}} 2% 的{{tr|health}}。
+| {{tr|Hunger}}的第三阶段，直到食用{{tr|food}}或玩家死亡。
+}}
+{{/row| 321	
+| 玩家的[[{{tr|critical strike chance}}]]和[[{{tr|summon damage}}]]提高 10%。无法使用[[{{tr|Brain of Confusion}}]]闪避。
+| {{duration|4}}
+}}
+{{/row| 353
+| 导致玩家下降穿过所有{{tr|blocks}}，直到到达开口。
+| 持续直到玩家到达开口，或经过 20 秒后按下 {{key|up}}、{{key|left}}、{{key|down}}、或 {{key|right}}。
+}}
+|}
+
+== 其他减益 ==
+{| class="terraria lined sortable"
+! 图标 !! 名称 !! 效果 !! {{tr|Tooltip}} !! {{tr|Duration}}
+{{/row| 72
+| 使所作用的{{tr|enemies}}死亡时掉落比正常更多的{{tr|coins}}。
+| {{duration|2}}
+}}
+{{/row| 204
+| 火会更有效。
+| {{duration|rawseconds=4–9}}
+}}
+{{/row| m200
+| 所作用的{{tr|enemies}}完全定身。
+| {{duration|rawseconds=5–7}}
+}}
+{{/row| 103
+| 玩家会滴水，纯粹的视觉效果。
+| {{duration|30}}
+}}
+{{/row| 137
+| 玩家身上滴落蓝色的粘液，并变成蓝色。纯粹的视觉效果。
+| {{duration|30}}
+}}
+{{/row| 320
+| 玩家滴下粉色的粘液并闪闪发光，纯粹的视觉效果。
+| {{duration|30}}
+}}
+{{/row| 153
+| 对目标造成每秒 15 伤害。
+| {{duration|rawseconds=5–8}}
+}}
+{{/row| 203
+| 防御降低 40。
+| {{duration|5}}
+}}
+{{/row| 169
+| 使所作用的{{tr|enemies}}持续受到伤害多达15秒。
+| {{duration|15}}
+}}
+{{/row| 189
+| 使所作用的{{tr|enemies}}持续受到伤害多达 5 秒。 
+| {{duration|5}}
+}}
+{{/row| 183
+| 使所作用的{{tr|enemies}}持续受到伤害。
+| {{duration|rawseconds=6–9}}
+}}
+{{/row| 186
+| 使所作用的{{tr|enemies}}持续受到伤害。
+| 当在[[{{tr|Dryad}}]]的树叶护盾中时
+}}
+{{/row| 344
+| 使所作用的{{tr|enemies}}持续受到伤害多达 9 秒。
+| {{duration|9}}
+}}
+|}
+
+== 无法获取的减益 ==
+{| class="terraria lined sortable"
+! 图标 !! 名称 !! 效果 !! {{tr|Tooltip}} !! {{tr|Notes}}
+{{/row| 160
+| 水平移动速度变为三分之一。降低跳起的高度。
+| 正常游戏过程内无法获取
+}}
+|}
+
+== 备注 ==
+* 玩家所受的下列{{tr|debuffs}}的{{tr|duration}}在{{eil|Expert Mode}}下提高 100%（即翻倍），在{{eil|Master Mode}}下则提高 150%：<!--
+--><section begin=expert_doubled /><!--
+-->{{source code ref|v=1.4.4.9|method=Terraria.Player.AddBuff_DetermineBuffTimeToAdd}}<!--
+-->{{itemlist/options|class=terraria}}<!--
+-->{{#af_pipeline:
+
+<!-- list of buff IDs directly from the source code: -->
+{{#af_list:  20 | 22 | 23 | 24 | 30 | 31 | 32 | 33 | 35 | 36 | 39 | 44 | 46 | 47 | 69 | 70 | 80  }}
+
+<!-- get buff name in the local language -->
+| {{#af_map:{{{prev}}}|buffid|{{#af_object:trname={{buffNameFromId|{{{buffid}}}}}|buffid={{{buffid}}}}}}}
+<!-- sort by translated buff name -->
+| {{#af_keysort:{{{prev}}}|trname}}
+<!-- output each buff ID with {{buff}} -->
+| {{#af_map:{{{prev}}}|b|{{buff|id={{#af_get:{{{b}}}|buffid}}}}}}
+| {{#af_template:itemlist|{{{prev}}}}}
+}}<!--
+-->{{itemlist/options|reset}}<!--
+--><section end=expert_doubled />
+** 此外，{{tr|Expert worlds}}中，玩家进入位于[[{{tr|Snow biome}}]]的[[{{tr|water}}]]或[[{{tr|shimmer}}]]中时会被施加{{tr|Chilled debuff}}。{{tr|Chilled debuff}}在玩家位于{{tr|liquid}}中时一直存在，离开{{tr|liquid}}后继续持续 5 秒。
+* 同一时间，{{tr|enemy}}所具有的{{tr|debuffs}}数量的上限为{{eicons|1.4.4}} 20 / {{eicons|1.4.4|invert=y}} 5 个。
+* 大多数[[{{tr|whips}}]]会对击中的{{tr|enemy}}施加特殊的{{tr|debuff}}，将其“标记”。取决于{{tr|whip}}，[[{{tr|Minions}}]]和[[{{tr|sentries}}]]会对被标记的{{tr|enemy}}造成更高伤害，且可能还有额外效果。例如，被[[{{tr|Firecracker}}]]标记的{{tr|enemy}}受到{{tr|minions or sentries}}的伤害时会产生小爆炸。 
+* {{anchor|on_enemies}}玩家可以对大部分{{tr|enemy}}造成{{:{{BASEPAGENAME}}/on enemies|list}}{{tr|debuffs}}。以下{{tr|items}}可造成这些{{tr|debuffs}}：
+: {| class="terraria lined sortable mw-collapsible"
+! {{tr|Item}} !! {{tr|Debuff}}&ensp;
+{{:{{BASEPAGENAME}}/on enemies|table}}
+|}
+
+== 花絮 ==
+* 在内部，[[{{tr|Tentacle Spike}}]]会对{{tr|enemies}}造成{{tr|debuff}}，它会对{{tr|enemies}}造成{{tr|weapon}}的持续伤害效果。因为它无法被施加给玩家，它没有名字或{{tr|tooltip}}，且使用了{{item|Distorted|icons=n|scale=0.6}}的{{tr|icon}}作为占位符。其[[{{tr|Buff IDs}}|{{tr|buff ID}}]] 为 337。
+* {{eicons|1.4.1}}使用伤害性{{tr|debuffs}}对{{tr|enemy}}能达到的最高 {{DPS}} 为 1217。这可以通过使用[[{{tr|Flask of Cursed Flames}}]]，穿着[[{{tr|Huntress armor}}]]/[[{{tr|Red Riding armor}}]]和[[{{tr|Magma Stone}}]]，发射[[{{tr|Venom Dart Trap}}]]，使用[[{{tr|Daybreak}}]]、[[{{tr|Shadowflame Hex Doll}}]]、[[{{tr|Blood Butcherer}}]]、[[{{tr|Ice Boomerang}}]]、[[{{tr|Bone Javelin}}]]、和[[{{tr|Tentacle Spike}}]]，同时带有[[{{tr|Imp Staff}}]]和[[{{tr|Stardust Cell Staff}}]]{{tr|minion}}，以及激活[[{{tr|Explosive Trap sentry summons}}|{{tr|Explosive Trap}}]]和[[{{tr|Staff of the Frost Hydra}}|{{tr|Frost Hydra}}]]，用这些来攻击受到[[{{tr|Oiled}}]]（来自{{tr|Explosive Trap}}）影响的目标，且目标位于已击败了全部 {{tr|bosses}} 的[[{{tr|Master Mode}}]]{{tr|world}}中的[[{{tr|Dryad}}]]的光环以内。<ref>总 {{DPS}} 计算：{{tr|Cursed Inferno}}为 24、{{tr|Hellfire}}为 15、{{tr|Acid Venom}}为 30、{{tr|Daybroken}}为 800、{{tr|Shadowflame}}为 15、{{tr|Blood Butchered}}为 20、{{tr|Frostburn}}为 8、{{tr|Penetrated}}为 18、{{tr|TentacleSpike}}为 15、{{tr|On Fire!}}为 4、{{tr|Celled}}为 200、{{tr|Frostbite}}为 25、{{tr|Oiled}}为 25、{{tr|Master Mode}}下击败全部 {{tr|bosses}} 的{{tr|Dryad's Bane}}为 18。</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Player}}受到的{{tr|buff}}/{{tr|debuff}}的最大数量从 22 提升至 44。
+** {{tr|Enemy}}受到的{{tr|debuff}}的最大数量由 5 提升至 20。
+** {{tr|Introduced}}[[{{tr|Shadow Candle}}]]。}}
+{{history|Desktop 1.4.1|[[{{tr|Hellfire}}]]和[[{{tr|Frostbite}}]]被引入。}}
+{{history|Desktop 1.3.4|[[{{tr|Betsy's Curse}}]]、[[{{tr|Creative Shock}}]]、[[{{tr|Withered Weapon}}]]、和[[{{tr|Withered Armor}}]]被引入。}}
+{{history|Desktop 1.3.3|[[{{tr|Mighty Wind}}]]被引入。}}
+{{history|Desktop 1.3.0.5|修正了导致[[{{tr|Distorted}}]]定住玩家而非改变其移动模式的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|[[{{tr|Stoned}}]]、[[{{tr|Shadowflame}}]]、[[{{tr|Distorted}}]]、和[[{{tr|Feral Bite}}]]被引入。}}
+{{history|Desktop 1.2.3.1|[[{{tr|Mana Sickness}}]]被引入。}}
+{{history|Desktop 1.2.1.2|
+** 添加了[[{{tr|Chaos State}}]]和[[{{tr|Water Candle}}]]{{tr|debuffs}}。
+** 修正了一个导致在{{tr|multiplayer}}中{{tr|enemy}}只会显示一个{{tr|debuff}}的 {{tr|bug}}。
+** 现在{{tr|enemy}}变形时能正确的保持其{{tr|debuff}}了。}}
+{{history|Desktop 1.2|[[{{tr|Burning}}]]、[[{{tr|Blackout}}]]、[[{{tr|Chilled}}]]、[[{{tr|Frozen}}]]、[[{{tr|Venom}}]]、[[{{tr|Frostburn}}]]、[[{{tr|Ichor Debuff}}]] 和[[{{tr|Suffocation}}]]{{tr|debuff}}被引入。}}
+{{history|Desktop 1.1|[[{{tr|Bleeding}}]]、[[{{tr|Broken Armor}}]]、[[{{tr|Confused}}]]、[[{{tr|Cursed Inferno}}]]、[[{{tr|Horrified}}]]、[[{{tr|Silenced}}]]、[[{{tr|Slow}}]]、[[{{tr|The Tongue}}]]、和[[{{tr|Weak}}]]{{tr|debuff}}被引入。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|伤害性{{tr|debuffs}}不再造成基于百分比的{{tr|damage}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+[[Category:{{tr|Debuffs}}| ]]
+
+{{language info|en=Debuffs}}

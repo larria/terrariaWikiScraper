@@ -1,0 +1,419 @@
+{{legacy nav tab}}
+{{exclusive|1.2.3}}
+{{npc infobox|boxwidth=18em
+| auto = 368
+| type = NPC
+| Peddler's Hat|1|100%
+| imageother = Map Icon Traveling Merchant.png
+| imageothercaption = Map Icon
+| idprojectile = 14, 357
+}}
+{{about|偶尔带着随机货品暂时前来的 {{tr|NPC}}|通过拥有 {{sc|50}} 或更多而解锁的游戏早期 {{tr|NPC}}|{{tr|Merchant}}|于{{tr|Underground}}出现的{{tr|skeleton}}类 {{tr|NPC}}|{{tr|Skeleton Merchant}}}}
+{{quotation|[[File:Emote Town Travelling Merchant.gif|link=]] '''{{tr|Traveling Merchant}}'''|{{gameText|LegacyDialog.330}}}}
+
+'''{{tr|Traveling Merchant}}'''是一个独特的商贩 [[{{tr|NPC}}]]，他会随机拜访{{tr|player}}的{{tr|town}}并停留一个[[{{tr|Day and night cycle}}|{{tr|day}}]]。他的商品栏是随机的，每次拜访都会不同，出售 4–10 种[[#{{tr|Items sold}}|下表]]列出的不同{{tr|item}}。
+
+想要满足{{tr|Traveling Merchant}}的生成条件，需要已经有至少 2 个其他{{tr|NPC}}已经到达。[[{{tr|Guide}}]]可为其中之一，但不计算[[{{tr|Old Man}}]]和[[{{tr|Skeleton Merchant}}]]。{{source code ref|v=1.3.5.3|method=Terraria.Main.UpdateTime}}他不会在[[{{tr|Solar Eclipse}}]]，[[{{tr|Goblin Army}}]]，[[{{tr|Frost Legion}}]]，[[{{tr|Pirate Invasion}}]]或[[{{tr|Martian Madness}}]]期间生成。{{source code ref|v=1.3.5.3|method=Terraria.WorldGen.SpawnTravelNPC}}他不需要有自己的[[{{tr|house}}]]就能生成，而是生成在其他 {{tr|NPC}}（包括[[{{tr|town pet}}]]）附近，整天围着他们转悠。
+
+一旦满足条件，{{tr|Traveling Merchant}}每{{tr|tick}}{{tick}}将有 1/108000 的几率生成（约合每天22.12%），他将在{{time|4:30 AM}} 和{{time|12:00 PM}} 之间的随机时间点生成。无论{{tr|player}}是否在睡觉，他每{{tr|tick}}生成的几率总是不变。他于当天的{{time|6:00 PM}} 离开，但这只会在他离开屏幕的情况下发生。如果世界中已经没有任何{{tr|player}}（包括死亡状态的），他也将立即消失。
+
+当受到[[{{tr|enemy}}]]的威胁时，{{tr|Traveling Merchant}}将使用[[{{tr|Revolver}}]]自卫。进入[[{{tr|Hardmode}}]]后，他将使用[[{{tr|Pulse Bow}}]]自卫。
+
+== 出售物品 ==
+由于使用了复杂的随机化函数且依赖于数个变量，几乎不可能得到{{tr|Traveling Merchant}}出售物品的准确几率。{{source code ref|v=1.4.3.6|method=Terraria.Chest.SetupTravelShop}}，然而，依然可能将{{tr|item}}分组为六个{{tr|rarity}}“{{tr|slot}}”，范围从“常见”到“极其罕见”。请注意，这些{{tr|slot}}与{{tr|Traveling Merchant}}商品栏的{{tr|slot}}并不对应——所有出售的物品可能来自同一{{tr|rarity slot}}。它们只是用来对某一{{tr|item}}的{{tr|rarity}}做一个粗略的、比较性的估计。每个商品栏{{tr|slot}}都有 1/n 的几率出现每个可能会出售的{{tr|item}}，其中 n 是 100 × {{tr|rarity slot}}。该几率受到[[{{tr|luck}}]]影响，更确切地说，受到{{tr|world}}中{{tr|luck}}最高的{{tr|player}}的影响。当多个{{tr|item}}都通过了几率判定，则会选择最后一个通过判定的{{tr|item}}。
+
+在同一{{tr|rarity slot}}中，在下表中排列更高的{{tr|item}}有更高的几率出售，例如，[[{{tr|Companion Cube}}]]比[[{{tr|Water Gun}}]]更有可能出售（''平均而言''），因为它在列表中排列更高。
+
+{{tr|Traveling Merchant}}总会出售一幅{{tr|painting}}，且总是在他商品栏的最后一个{{tr|slot}}里。在[[{{tr|Hardmode}}]]，至少会有一个出售的{{tr|item}}对应{{tr|rarity slot 2}}（不常见）或更稀有。
+
+{{options/set|item|icons=n}}{{flexstart|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+=== 常见 ===
+{{shop|nonote=y|header=商品栏<small>——常见{{tr|item}}（{{tr|slot}} 1/6）</small>
+|{{shop row|Yuuma, The Blue Tiger|&#8204;}}
+|{{shop row|Sunshine of Israpony|&#8204;}}
+|{{shop row|Do Not Eat the Vile Mushroom!|&#8204;}}
+|{{shop row|Parsec Pals|&#8204;}}
+|{{shop row|Cheesy Pizza Poster|&#8204;}}
+|{{shop row|Duality|&#8204;}}
+|{{shop row|Benny Warhol|&#8204;}}
+|{{shop row|Kargoh's Summon|&#8204;}}
+|{{shop row|Stopwatch|&#8204;}}
+|{{shop row|Lifeform Analyzer|&#8204;}}
+|{{shop row|DPS Meter|&#8204;}}
+|{{shop row|Lawn Flamingo|&#8204;}}
+|{{shop row|Pink Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|Pink Team Platform|{{small|出售[[{{tr|Pink Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|Yellow Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|Yellow Team Platform|{{small|出售[[{{tr|Yellow Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|Green Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|Green Team Platform|{{small|出售[[{{tr|Green Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|Blue Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|Blue Team Platform|{{small|出售[[{{tr|Blue Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|Red Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|Red Team Platform|{{small|出售[[{{tr|Red Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|White Team Block|一次只会出售<br/>单色{{tr|Team Block}}}}
+|{{shop row|White Team Platform|{{small|出售[[{{tr|White Team Block}}]]时<br/>总是有售}}}}
+|{{shop row|Dynasty Wood|&#8204;}}
+|{{shop row|Red Dynasty Shingles|{{small|出售[[{{tr|Dynasty Wood}}]]时<br/>总是有售}}}}
+|{{shop row|Blue Dynasty Shingles|{{small|出售[[{{tr|Dynasty Wood}}]]时<br/>总是有售}}}}
+|{{shop row|Fancy Dishes|&#8204;}}
+|{{shop row|Chalice|&#8204;}}
+|{{shop row|Zebra Skin|&#8204;}}
+|{{shop row|Leopard Skin|&#8204;}}
+|{{shop row|Tiger Skin|&#8204;}}
+|{{shop row|Sake|&#8204;}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 不常见 ===
+{{shop|nonote=y|header=商品栏<small>——不常见{{tr|item}}（{{tr|slot}} 2/6）</small>
+|{{shop row|The Bereaved|在 [[{{tr|The Constant}}]] {{tr|world}}中}}
+|{{shop row|The Strongman|在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|The Firestarter|在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|The Gentleman Scientist|在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|Ultrabright Torch|&#8204;}}
+|{{shop row|Katana|不在 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}}中}}
+|{{shop row|Keybrand|value={{gc|10}}|在 {{tr|Don't dig up}} 或 {{tr|Get fixed boi}} {{tr|world}}中}}
+|{{shop row|Presserator|&#8204;}}
+|{{shop row|Portable Cement Mixer|&#8204;}}
+|{{shop row|Paint Sprayer|&#8204;}}
+|{{shop row|Extendo Grip|&#8204;}}
+|{{shop row|Brick Layer|&#8204;}}
+|{{shop row|Pad Thai|&#8204;}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 罕见 ===
+{{shop|nonote=y|header=商品栏<small>——罕见{{tr|item}}（{{tr|slot}} 3/6）</small>
+|{{shop row|The Season|击败[[{{tr|Frost Legion}}]]后}}
+|{{shop row|Snowfellas|击败{{tr|Frost Legion}}后}}
+|{{shop row|Cursed Saint|击败{{tr|Frost Legion}}后}}
+|{{shop row|Cold Snap|击败{{tr|Frost Legion}}后}}
+|{{shop row|Acorns|击败{{tr|Frost Legion}}后}}
+|{{shop row|Moonman & Company|击败[[{{tr|Moon Lord}}]]后}}
+|{{shop row|The Truth Is Up There|击败[[{{tr|Martian Madness}}]]后}}
+|{{shop row|Martia Lisa|击败{{tr|Martian Madness}}后}}
+|{{shop row|Castle Marsberg|击败{{tr|Martian Madness}}后}}
+|{{shop row|Not a Kid, nor a Squid|击败[[{{tr|Moon Lord}}]]后}}
+|{{shop row|Code 2|击败任一[[{{tr|mech boss}}]] 后}}
+|{{shop row|Code 1|击败[[{{tr|Eye of Cthulhu}}]]后}}
+|{{shop row|Gray Zapinator|[[{{tr|pre-Hardmode}}]]，<br/>击败[[{{tr|Eye of Cthulhu}}]]、<br/>[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]、<br/>[[{{tr|Queen Bee}}]]或[[{{tr|Skeletron}}]]后}}
+|{{shop row|Orange Zapinator|在[[{{tr|Hardmode}}]]}}
+|{{shop row|Pretty Pink Ribbon|&#8204;}}
+|{{shop row|Pretty Pink Dress|{{small|出售[[{{tr|Pretty Pink Ribbon}}]]时<br/>一直有售}}}}
+|{{shop row|Pretty Pink Stockings|{{small|出售[[{{tr|Pretty Pink Ribbon}}]]时<br/>一直有售}}}}
+|{{shop row|Fake Unicorn Horn|&#8204;}}
+|{{shop row|Heart Hairpin|&#8204;}}
+|{{shop row|Star Hairpin|&#8204;}}
+|{{shop row|Fedora|&#8204;}}
+|{{shop row|Goblorc Ears|&#8204;}}
+|{{shop row|Vulkelf Ears|&#8204;}}
+|{{shop row|Panda Ears|&#8204;}}
+|{{shop row|Devil Horns|&#8204;}}
+|{{shop row|Demon Horns|&#8204;}}
+|{{shop row|Raynebro's Hood|&#8204;}}
+|{{shop row|Raynebro's Hoodie|{{small|出售 [[{{tr|Raynebro's Hood}}]]时<br/>一直有售}}}}
+|{{shop row|Raynebro's Pants|{{small|出售 [[{{tr|Raynebro's Hood}}]]时<br/>一直有售}}}}
+|{{shop row|Star Princess Crown|&#8204;}}
+|{{shop row|Star Princess Dress|{{small|出售[[{{tr|Star Princess Crown}}]]时<br/>一直有售}}}}
+|{{shop row|Celestial Wand|{{small|出售[[{{tr|Star Princess Crown}}]]时<br/>一直有售}}}}
+|{{shop row|Master Gamer's Jacket|&#8204;}}
+|{{shop row|Master Gamer's Pants|{{small|出售[[{{tr|Master Gamer's Jacket}}]]时<br/>一直有售}}}}
+|{{shop row|Chef Hat|&#8204;}}
+|{{shop row|Chef Uniform|{{small|出售[[{{tr|Chef Hat}}]]时<br/>一直有售}}}}
+|{{shop row|Chef Pants|{{small|出售[[{{tr|Chef Hat}}]]时<br/>一直有售}}}}
+|{{shop row|Gi|&#8204;}}
+|{{shop row|Mystic Robe|&#8204;}}
+|{{shop row|Magic Hat|&#8204;}}
+|{{shop row|Fez|&#8204;}}
+|{{shop row|Revolver|砸碎[[{{tr|Shadow Orb}}]]/[[{{tr|Crimson Heart}}]]后}}
+|{{shop row|Pho|&#8204;}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 十分罕见 ===
+{{shop|nonote=y|header=商品栏<small>——十分罕见{{tr|item}}（{{tr|slot}} 4/6）</small>
+|{{shop row|The Bereaved|不在 [[{{tr|The Constant}}]] {{tr|world}}中}}
+|{{shop row|The Strongman|不在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|The Firestarter|不在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|The Gentleman Scientist|不在 {{tr|The Constant}} {{tr|world}}中}}
+|{{shop row|Bamboo Leaf|&#8204;}}
+|{{shop row|Bedazzled Nectar|&#8204;}}
+|{{shop row|Blue Chicken Egg|&#8204;}}
+|{{shop row|Exotic Chew Toy|&#8204;}}
+|{{shop row|Birdie Rattle|&#8204;}}
+|{{shop row|Anti-Portal Block|在[[{{tr|Hardmode}}]]}}
+|{{shop row|Companion Cube|&#8204;}}
+|{{shop row|Sitting Duck's Fishing Pole|击败[[{{tr|Skeletron}}]]后}}
+|{{shop row|Hunter Cloak|&#8204;}}
+|{{shop row|Winter Cape|&#8204;}}
+|{{shop row|Red Cape|&#8204;}}
+|{{shop row|Mysterious Cape|&#8204;}}
+|{{shop row|Crimson Cloak|&#8204;}}
+|{{shop row|Diamond Ring|&#8204;}}
+|{{shop row|Water Gun|&#8204;}}
+|{{shop row|Pulse Bow|击败所有[[{{tr|mech boss}}]] 后}}
+|{{shop row|Yellow Counterweight|&#8204;}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 非常罕见 ===
+{{shop|nonote=y|header=商品栏<small>——非常罕见{{tr|item}}（{{tr|slot}} 5/6）</small>
+|{{shop row|Arcane Rune Wall|&#8204;}}
+|{{shop row|Kimono|&#8204;}}
+|{{shop row|Sergeant United Shield|在[[{{tr|Hardmode}}]]}}
+|{{shop row|Gatligator|在[[{{tr|Hardmode}}]]}}
+|{{shop row|Black Counterweight|&#8204;}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 极其罕见 ===
+{{shop|nonote=y|header=商品栏<small>——极其罕见{{tr|item}}（{{tr|slot}} 6/6）</small>
+|{{shop row|Angel Halo|&#8204;}}
+}}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+=== 出售物品数量 ===
+{{#vardefine:avg_classic|{{#expr:4*(3255/16384) + 5*(5127/16384) + 6*(16327/49152) + 7*(1103/8192) + 8*(1003/49152) + 9*(19/16384) + 10*(1/49152) round 2}}}}<!--
+-->{{#vardefine:avg_expert|{{#expr:4*(3255/16384) + 5*(4191/16384) + 6*(7927/24576) + 7*(22945/98304) + 8*(7621/98304) + 9*(265/24576) + 10*(29/49152) + 11*(1/98304) round 2}}}}
+
+{{tr|Traveling Merchant}}商品栏中的出售{{tr|item}}数量在每次到达时随机变化。平均出售{{tr|item}}数量为 {{formatnum:{{#var:avg_classic}}}} / {{expert|{{formatnum:{{#var:avg_expert}}}}}}。出售{{tr|item}}数量及其对应的具体概率如下表所示。{{source code ref|v=1.4.4.9|method=Terraria.Chest.SetupTravelShop}}
+
+部分{{tr|item}}总是一起出售，出售{{tr|item}}数量只包括“基础”{{tr|item}}。这代表[[{{tr|Dynasty Shingles}}]]和[[{{tr|Team Platform}}]]不计入此数目，因为它们总是分别与它们的“基础”{{tr|item}}{{tr|Dynasty Wood}}或{{tr|Team Block}}一同出售。类似的，[[{{tr|Pretty Pink set}}]]、[[{{tr|Raynebro's set}}]]、[[{{tr|Star Princess set}}]]、[[{{tr|Master Gamer's set}}]]和[[{{tr|Chef set}}]]的所有 2 / 3 个部件一同被看作一个{{tr|item}}。
+
+此外，[[{{tr|painting}}]]也不计入这个数目，因为{{tr|Traveling Merchant}}在所有非{{tr|painting}}外总是额外出售一幅{{tr|painting}}。
+
+{| class="terraria lined mw-collapsible" style="min-width:220px"
+|-
+! rowspan=2 | “基础”{{tr|item}}数量
+! colspan=2 | 几率
+|-
+! [[{{tr|Classic Mode}}|{{tr|Classic}}]] !! [[{{tr|Expert Mode}}|{{tr|Expert}}]]
+|-
+| 4
+| {{chance|mode=p|3255/16384}}{{note|block=y|small=y|paren=y|{{chance|mode=f|3255/16384}}}}
+| {{expert|{{chance|mode=p|3255/16384}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|3255/16384}}}}
+|-
+| 5
+| {{chance|mode=p|5127/16384}}{{note|block=y|small=y|paren=y|{{chance|mode=f|5127/16384}}}}
+| {{expert|{{chance|mode=p|4191/16384}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|4191/16384}}}}
+|-
+| 6
+| {{chance|mode=p|16327/49152}}{{note|block=y|small=y|paren=y|{{chance|mode=f|16327/49152}}}}
+| {{expert|{{chance|mode=p|7927/24576}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|7927/24576}}}}
+|-
+| 7
+| {{chance|mode=p|1103/8192}}{{note|block=y|small=y|paren=y|{{chance|mode=f|1103/8192}}}}
+| {{expert|{{chance|mode=p|22945/98304}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|22945/98304}}}}
+|-
+| 8
+| {{chance|mode=p|1003/49152}}{{note|block=y|small=y|paren=y|{{chance|mode=f|1003/49152}}}}
+| {{expert|{{chance|mode=p|7621/98304}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|7621/98304}}}}
+|-
+| 9
+| {{chance|mode=p|19/16384}}{{note|block=y|small=y|paren=y|{{chance|mode=f|19/16384}}}}
+| {{expert|{{chance|mode=p|265/24576}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|265/24576}}}}
+|-
+| 10
+| {{chance|mode=p|1/49152|3}}{{note|block=y|small=y|paren=y|{{chance|mode=f|1/49152}}}}
+| {{expert|{{chance|mode=p|29/49152}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|29/49152}}}}
+|-
+| 11
+| {{na}}
+| {{expert|{{chance|mode=p|1/98304|3}}}}{{note|block=y|small=y|paren=y|{{chance|mode=f|1/98304}}}}
+|}
+
+“基础”{{tr|item}}数量受{{tr|player}}的[[{{tr|luck}}]]影响。较高的{{tr|luck}}会增加{{tr|Traveling Merchant}}出售超过 6 个“基础”{{tr|item}}的几率，较低的{{tr|luck}}会增加他只出售 4-6 个“基础”{{tr|item}}的几率。但是，{{tr|Luck}}只是在现有的范围内调整几率，因此，{{tr|Traveling Merchant}}总是会出售至少 4 个且至多 10 / {{expert|11}} “基础”{{tr|item}}（在下述条件下可更多），即使{{tr|luck}}特别高或特别低。在[[{{tr|multiplayer}}]]中，{{tr|world}}当前{{tr|luck}}最高的{{tr|player}}的{{tr|luck}}会有影响。
+
+在某些情况下，出售“基础”{{tr|item}}数量会增加：
+* 如果当前{{tr|world}}处于[[{{tr|Hardmode}}]]，数目增加 1。
+* 如果当前{{tr|world}}已经使用过[[{{tr|Peddler's Satchel}}]]，数目增加 1。
+* 在 [[{{tr|Get fixed boi}}]] {{tr|world}}，数目增加 1。
+* 在 [[{{tr|Celebrationmk10}}]] {{tr|world}}，数目增加 2。
+{{options/set|item|icons=no|maxsize=26px}}
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Pre-Hardmode}}
+! rowspan=2 | {{tr|Effect}}
+! colspan=2 | 出售“基础”{{tr|item}}数量
+|-
+! [[{{tr|Classic Mode}}|{{tr|Classic}}]] !! [[{{tr|Expert Mode}}|{{tr|Expert}}]]
+|-
+| {{note|paren=y|无上述项}}
+| 4–10 {{note|small=y|paren=y|平均 {{formatnum:{{#var:avg_classic}}}}}}
+| {{expert|4–11}} {{note|small=y|paren=y|平均 {{formatnum:{{#var:avg_expert}}}}}}
+|-
+| {{item|Peddler's Satchel}}
+| 5–11 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+1}}}}}}
+| {{expert|5–12}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+1}}}}}}
+|-
+| {{item|Celebrationmk10|image=IconCorruptionAnniversary.png}}
+| 6–12 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+2}}}}}}
+| {{expert|6–13}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+2}}}}}}
+|-
+| {{item|Get fixed boi|image=IconEverythingAnimated.png}}
+| 5–11 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+1}}}}}}
+| {{expert|5–12}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+1}}}}}}
+|-
+| {{item|Peddler's Satchel|nolink=true}}<br/>{{item|Celebrationmk10|image=IconCorruptionAnniversary.png|nolink=true|bignote=in}}
+| 7–13 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+3}}}}}}
+| {{expert|7–14}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+3}}}}}}
+|-
+| {{item|Peddler's Satchel|nolink=true}}<br/>{{item|Get fixed boi|image=IconEverythingAnimated.png|nolink=true|bignote=in}}
+| 6–12 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+2}}}}}}
+| {{expert|6–13}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+2}}}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined"
+|+ {{tr|Hardmode}}
+! rowspan=2 | {{tr|Effect}}
+! colspan=2 | 出售“基础”{{tr|item}}数量
+|-
+! [[{{tr|Classic Mode}}|{{tr|Classic}}]] !! [[{{tr|Expert Mode}}|{{tr|Expert}}]]
+|-
+| {{note|paren=y|无上述项}}
+| 5–11 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+1}}}}}}
+| {{expert|5–12}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+1}}}}}}
+|-
+| {{item|Peddler's Satchel}}
+| 6–12 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+2}}}}}}
+| {{expert|6–13}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+2}}}}}}
+|-
+| {{item|Celebrationmk10|image=IconCorruptionAnniversary.png}}
+| 7–13 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+3}}}}}}
+| {{expert|7–14}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+3}}}}}}
+|-
+| {{item|Get fixed boi|image=IconEverythingAnimated.png}}
+| 6–12 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+2}}}}}}
+| {{expert|6–13}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+2}}}}}}
+|-
+| {{item|Peddler's Satchel|nolink=true}}<br/>{{item|Celebrationmk10|image=IconCorruptionAnniversary.png|nolink=true|bignote=in}}
+| 8–14 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+4}}}}}}
+| {{expert|8–15}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+4}}}}}}
+|-
+| {{item|Peddler's Satchel|nolink=true}}<br/>{{item|Get fixed boi|image=IconEverythingAnimated.png|nolink=true|bignote=in}}
+| 7–13 {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_classic}}+3}}}}}}
+| {{expert|7–14}} {{note|small=y|paren=y|平均 {{formatnum:{{#expr:{{#var:avg_expert}}+3}}}}}}
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+== 微光形态 ==
+{{NPC shimmered form|Traveling Merchant|male}}
+
+== 备注 ==
+* 生成{{tr|Traveling Merchant}}的判定并不是如[[{{tr|Goblin Army}}]]或其他大部分[[{{tr|event}}]]一样一天执行一次。而是每{{tr|tick}}{{tick}}执行一次。
+** 对于每天前半部分的每个{{tr|tick}}（{{time|4:30 AM}} – {{time|12:00 PM}} = 7.5 {{tr|hour}} = 27000 {{tr|tick}}），有 1/108000 的几率生成{{tr|Traveling Merchant}}。因此，{{tr|Traveling Merchant}}每天有：<code>1-(107999/108000)^27000 = 0.2212001339 ≈ 22.12%</code>的几率到达。
+** 这意味着如果想要{{tr|Traveling Merchant}}出售的某个特定{{tr|item}}，但他到达后并没有出售该{{tr|item}}，且此时在游戏中为{{time|12:00 PM}} 之前，可以击杀{{tr|Traveling Merchant}}，以等待潜在的二次生成。
+* {{tr|Traveling Merchant}}在[[{{tr|event}}]]期间不会离去。
+* {{tr|Traveling Merchant}}可以举办[[{{tr|Party}}]]。
+
+== 小贴士 ==
+* {{tr|Traveling Merchant}}只有在离开屏幕后才会消失。如果{{tr|player}}在他通常离开的时间点让他停留在屏幕内，他将一直停留，直到他离开屏幕。如果他一直停留在屏幕内，直到第二天黎明，他将在第二天晚上{{time|6:00 PM}}之后离开。然而，这并不会改变他的商品栏。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+{{collapse top}}
+* “{{gameText|LegacyDialog.322}}”
+* “{{gameText|LegacyDialog.323}}”
+* “{{gameText|LegacyDialog.324}}”
+* “{{gameText|LegacyDialog.325}}”
+* “{{gameText|LegacyDialog.326}}”
+* “{{gameText|LegacyDialog.327}}”
+* “{{gameText|LegacyDialog.328}}”
+* “{{gameText|LegacyDialog.329}}”
+* “{{gameText|LegacyDialog.330}}”
+
+'''[[{{tr|Merchant}}]]存在时：'''
+* “{{gameText|LegacyDialog.320|x_Merchant=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''[[{{tr|Clothier}}]]存在时：'''
+* “{{gameText|LegacyDialog.321|x_Clothier=&lt;{{tr|Clothier}}的名字&gt;}}”
+
+'''[[{{tr|Guide}}]]存在时：'''
+* “{{gameText|LegacyDialog.319|x_Guide=&lt;{{tr|Guide}}的名字&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|TravellingMerchantSpecialText.Party}}”
+
+'''[[{{tr|Rain}}]]期间{{eicons|1.4.0.1|small=y}}：'''
+* “{{gameText|TravellingMerchantSpecialText.Rain1}}”
+* “{{gameText|TravellingMerchantSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|TravellingMerchantSpecialText.Storm1}}”
+* “{{gameText|TravellingMerchantSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|TravellingMerchantSpecialText.Windy1}}”
+* “{{gameText|TravellingMerchantSpecialText.Windy2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|TravellingMerchantSpecialText.Graveyard1}}”
+* “{{gameText|TravellingMerchantSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* 他出售的许多商品都来自于亚洲，通常来自于{{wikipedia|Qing dynasty|清朝}}。
+** 他的很多商品可能参考了{{wikipedia|East India Company|东印度公司}}，也可能是参考了在大发现时期中被带到欧洲的商品。
+** 他的[[#{{tr|Shimmered form}}|{{tr|Shimmered form}}]]穿着亚洲风格的服饰。
+* 他的名字 Willy 很有可能参考了美国剧作家{{wikipedia|Arthur Miller|亚瑟·米勒（Arthur Miller）}} 1949 年写就的剧作{{wikipedia|Death of a Salesman|推销员之死}}，剧中的主角 {{wikipedia|Willy Loman}} 是一个旅行推销员。
+* 他的话语“{{gameText|LegacyDialog.328}}”参考了巴基斯坦商人和广播艺术家 Muhammad Shahid Nazir，他因其新奇歌曲{{wikipedia|One Pound Fish|《一磅鱼（One Pound Fish）》}}走红，被称为{{wikipedia|One Pound Fish Man|一磅鱼男（One Pound Fish Man）}}。
+* 他的话语“{{gameText|LegacyDialog.327}}”参考了 1992 年的美国动画音乐奇幻电影{{wikipedia|Aladdin (1992 Disney film)|《阿拉丁（Aladdin）》}}。
+* 他的话语“{{gameText|LegacyDialog.322}}”参考了一个有关[[{{tr|Angel Statue}}]]是游戏中最没用的{{tr|statue}}的没品笑话；[[{{tr|Merchant}}]]的一句话语也参考了这个。
+* 和[[{{tr|Cyborg}}]]、[[{{tr|Zoologist}}]]以及[[{{tr|Princess}}]]一样，{{tr|Traveling Merchant}}是仅有的几个在击败[[{{tr|Moon Lord}}]]后有新{{tr|item}}出售的 [[{{tr|NPC}}]] 之一，他出售的是[[{{tr|Not a Kid, nor a Squid}}]]和[[{{tr|Moonman & Company}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 不再出售[[{{tr|Ammo Box}}]]和[[{{tr|Celestial Magnet}}]]。
+** 现在在[[{{tr|Hardmode}}]]必定有一个额外的{{tr|slot}}。这一{{tr|slot}}只会包含四类较为罕见的物品池中的{{tr|item}}，常见的两类物品池中的{{tr|item}}被排除在外。
+** 现在在任何时间还必定有一个额外的，用以出售[[{{tr|painting}}]]的{{tr|slot}}。{{tr|Painting}}不再会从他的其他{{tr|slot}}中出现，这会略微提高他出售其他商品的几率。
+** [[{{tr|Pad Thai}}]]由 1 级提高至 2级，使得它更不常见；{{tr|buy price}}由 {{sc|30}} 提升至 {{sc|55}}。
+** [[{{tr|Pho}}]]由 1 级提高至 3 级，使得它更不常见；{{tr|buy price}}由 {{sc|50}} 提升至 {{sc|75}}。
+** [[{{tr|Christmas}}]]{{tr|paintings}}现在会在击败{{tr|Frost Legion}}后于一直有售，而非仅限{{tr|Christmas}}{{tr|Seasonal event}}期间。
+** [[{{tr|Gray Zapinator}}|灰]]/[[{{tr|Orange Zapinator}}]]由 5 级降低至 3 级，使得它们更常见。
+** [[{{tr|Pulse Bow}}]]现在在击败所有[[{{tr|mech boss}}]] 后出售，而非在击败[[{{tr|Plantera}}]]后。}}
+{{history|Desktop 1.4.3|现在出售 4 幅新[[{{tr|paintings}}]]。}}
+{{history|Desktop 1.4.1|
+** [[{{tr|Sitting Duck's Fishing Pole}}]]现在只在击败[[{{tr|Skeletron}}]]后出售。
+** 不再出售[[{{tr|Super Star Shooter}}]]。}}
+{{history|Desktop 1.4.0.4|修正了{{tr|Traveling Merchant}}和[[{{tr|Skeleton Merchant}}]]意外具有 [[{{tr|NPC}}#{{tr|Happiness}}|{{tr|NPC}} {{tr|Happiness}}]]的问题。}}
+{{history|Desktop 1.4.0.1|现在出售[[{{tr|Celestial Wand}}]]、[[{{tr|Exotic Chew Toy}}]]、[[{{tr|Birdie Rattle}}]]以及很多其他新{{tr|item}}。}}
+{{history|Desktop 1.3.2|修正了在[[{{tr|Night}}]]不能攻击的 {{tr|bug}}。}}
+{{history|Desktop 1.3.1|现在出售[[{{tr|Companion Cube}}]]、[[{{tr|Team Block}}]]、[[{{tr|Team Platform}}]]和[[{{tr|Presserator}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在用[[{{tr|Revolver}}]]（[[{{tr|pre-Hardmode}}]]）和[[{{tr|Pulse Bow}}]]（[[{{tr|Hardmode}}]]）自卫。
+** 现在出售很多新{{tr|item}}，包括[[{{tr|Yoyo}}]]、[[{{tr|Accessory}}]]和{{tr|painting}}。}}
+{{history|Desktop 1.2.4.1|现在出售[[{{tr|Animal Skins}}]]。}}
+{{history|Desktop 1.2.4|修正了[[{{tr|Scorpion}}]]能受[[{{tr|King Statue}}]]作用而{{tr|Traveling Merchant}}不能的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|
+** {{tr|Traveling Merchant}}不再能于[[{{tr|lava}}]]中生成。
+** 修正了[[{{tr|Queen Statue}}]]/[[{{tr|King Statue}}]]分别不传送[[{{tr|Stylist}}]]和{{tr|Traveling Merchant}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在出售很多新{{tr|item}}，包括{{tr|yoyo}}、{{tr|accessory}}和{{tr|painting}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|现在出售很多新{{tr|item}}，包括{{tr|yoyo}}、{{tr|accessory}}和{{tr|painting}}。（{{icon|ps4}}）}}
+{{history|Console 1.08|添加了[[{{tr|Cape}}]]（{{tr|Winter Cape}}、{{tr|Mysterious Cape}}、{{tr|Red Cape}}和{{tr|Crimson Cloak}}），以及[[{{tr|Diamond Ring}}]]。}}
+{{history|Console 1.07|与直到{{tr|Desktop 1.2.4.1}} 为止的商品一并{{tr|Introduced.}}但不包括{{tr|Angel Halo}}、{{tr|cape}}和{{tr|Diamond Ring}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|与直到{{tr|Desktop 1.2.4.1}} 为止的商品一并{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Traveling Merchant}}

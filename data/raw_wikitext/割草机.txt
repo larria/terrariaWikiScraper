@@ -1,0 +1,36 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4049
+| type = Tool
+| tags = vendor / vendor:Golfer
+}}
+
+'''{{tr|Lawn Mower}}'''是一个[[{{tr|tool}}]]，可从[[{{tr|Golfer}}]]处以 {{iteminfo|Lawn Mower|buy}} 的价格购买。它能够修剪普通和{{tr|Hallowed}}[[{{tr|Grasses}}]]。{{tr|Mowed grass}}会拥有不同的外观，降低{{tr|enemy}} 10% 的生成率，能够阻止高草生长，也会在[[{{tr|golf}}]]中改变球的运动方式。{{tr|Lawn Mower}}仅在玩家移动时能对[[{{tr|critters}}]]和[[{{tr|enemies}}]]造成固定为 8 的伤害{{source code ref|v=1.4.4.9|name=mow|method=Terraria.Player.MowTheLawn}}。在非普通和{{tr|Hallowed grass}}上使用时，它只会移除杂草和花。
+
+== {{tr|Mowed Grass}}{{tr|types}} ==
+{{transclude|{{tr|Grass}}|section=mowed grass}}
+
+== 备注 ==
+* 和大部分物品不同，{{tr|Lawn Mower}}的伤害是固定的，不会受[[{{tr|armor}}]]、[[{{tr|accessories}}]]或[[{{tr|potions}}]]影响。不过[[{{tr|defense}}]]仍然能够正常降低它。
+* 可以在竖直方向上割草（手持{{tr|Lawn Mower}}时在[[{{tr|Grass}}]]{{tr|block}}旁跳跃），也可以在反转[[{{tr|gravity}}]]时割草（使用[[{{tr|Gravitation Potion}}]]或[[{{tr|Gravity Globe}}]]）。
+* {{tr|The Lawn Mower}}能受[[{{tr|Smart Cursor}}]]影响，能够在范围内的任意方向割草。这包括完全包裹在{{tr|dirt}}中的{{tr|grass}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|
+** 修复了有关[[{{tr|biome spread}}]]和{{tr|mowed grass}}的问题。
+** 修复了{{tr|mowed grass}}上的{{tr|tree}}不掉落[[{{tr|acorns}}]]的问题。}}
+{{history|Desktop 1.4.0.3|修复了在{{tr|mowed Hallow grass}}上的[[{{tr|Hallowed trees}}]]会掉落普通[[{{tr|Wood}}]]而不是[[{{tr|Pearlwood}}]]的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-main = yes
+| show-other = yes
+}}
+
+{{language info|en=Lawn Mower}}

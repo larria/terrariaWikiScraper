@@ -1,0 +1,48 @@
+{{infobox wrapper
+|{{item infobox
+| type = Potion
+| buy = @@@@ {{eicons|1.3.0.1|3ds=y|small=y}}<br/>{{sc|10}} {{eicons|1.3.0.1|invert=y|3ds=n|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|3ds=y|small=y}}<br/>{{sc|2}} {{eicons|1.3.0.1|invert=y|3ds=n|small=y}}
+| auto = 500
+| tags = Potion ingredients/ Drop / Loot / hardmode /vendor:Wizard
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Greater Mana Potion}}'''是一种使用时能够恢复 200 [[{{tr|mana}}]]的{{tr|potion}}。不像大多数{{tr|potions}}，{{tr|Greater Mana Potions}}无法制作。它们能够以每个{{iteminfo|Greater Mana Potion|buy}} {{eicons|1.3.0.1|3ds=yes}} / {{sc|10}} {{eicons|1.3.0.1|invert=y|3ds=n}}的价格从[[{{tr|Wizard}}]]处购买，或由{{eil|Mimics#Special_variants|Biome Mimics}}掉落。在{{eversions|1.4.0.1|invert=y}}中，它们还能从[[{{tr|Golden Crate}}]]中获得，但是在{{eversions|1.4.0.4}}中，它们无法在{{tr|Hardmode}}外获得。
+
+装备[[{{tr|Mana Flower}}]]使{{tr|player}}能够自动使用任何种类的{{tr|Mana Potions}}。使用任何魔力恢复药水都会激活[[{{tr|Mana Sickness}}]]{{tr|debuff}}，短时间内降低{{tr|magic damage}}。
+
+== {{tr|Crafting}} ==
+=== {{tr|Used in}} ===
+{{recipes|ingredient=Greater Mana Potion|expectedrows=1}}
+
+== {{tr|Notes}} ==
+* {{eicons|1.4.4|invert=y}}{{tr|Greater Mana Potions}}最大堆叠数为 75，与[[{{tr|Mana Potion}}]]相同，是[[{{tr|Lesser Mana Potions}}]]最大堆叠数的 1.5 倍。从[[{{tr|Wizard}}]]处购买一整叠需要花费 {{eicons|1.3.0.1|invert=y|3ds=n}} {{buy expr||1000<!-- {{sc|10}} -->*75}} / {{icon/3ds}} {{buy expr||500<!-- {{sc|5}} -->*75}}。
+* 使用{{tr|Greater Mana Potion}}对{{tr|player}}按照每点{{tr|mana}}的价格来算是 {{eicons|1.3.0.1|3ds=1}} {{buy expr|Greater Mana Potion|/{{iteminfo|Greater Mana Potion|healMana}}}} / {{eicons|1.3.0.1|invert=y|3ds=n}} {{buy expr||1000<!-- {{sc|10}} -->/{{iteminfo|Greater Mana Potion|healMana}}}}。
+
+== {{tr|Trivia}} ==
+* 尽管[[{{tr|Mana Flower}}]]是用[[{{tr|Mana Potion}}]]{{tr|craft}}的，但是{{tr|Mana Flower}}的{{tr|sprite}}展示的是{{tr|Greater Mana Potion}}的形状及其上的两个黄条。
+* {{tr|Greater Mana Potion}}与动作角色扮演的砍杀游戏''{{wikipedia|Diablo 2|暗黑破坏神2（Diablo 2）}}''中的[https://diablo.fandom.com/wiki/Mana_Potions {{tr|Mana Potions}}]有着相同的名称和相似的外观。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.0.1|
+** {{tr|Buy}}/{{tr|Sell}}价格从 {{sc|10}} / {{sc|2}} 降低到 {{sc|5}} / {{sc|1}}。
+** {{tr|Sprite updated}}。}}
+{{history|Desktop 1.2.3|
+** 可用于{{tr|craft}}{{tr|Super Mana Potions}}。
+** 使用任何{{tr|Mana Potion}}都会造成{{tr|Mana Sickness}}{{tr|debuff}}。
+** 最大堆叠数由 50 增加到 75 。}}
+{{history|Desktop 1.2|
+** {{tr|Buy}}/{{tr|Sell}}价格从 {{sc|5}} / {{sc|1}} 增加到 {{sc|10}} / {{sc|2}}。
+** 最大堆叠数由 99 减少到 50.}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+{{language info|en=Greater Mana Potion}}

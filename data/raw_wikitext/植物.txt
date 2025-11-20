@@ -1,0 +1,350 @@
+{{for|遍布《{{tr|Terraria}}》世界各处的{{tr|trees}}|{{tr|Trees}}}}
+'''{{tr|Plants}}'''出现在整个''[[{{tr|Terraria}}]]''[[{{tr|world}}]]各处，并且可以在各种条件下从某些类型的[[{{tr|block}}]]中长出。大多数可以收割使用，并可能额外掉落[[{{tr|seeds}}]]供重新种植，例如{{tr|jungle grass}}和{{tr|Jungle grass seeds}}。不同的[[{{tr|biome}}]]一般具有不同的{{tr|plant}}。
+
+{{tr|Plants}}会随时间随机生长。它们在不同[[{{tr|layers}}]]中有不同的生长速度。见[[#生长|下方]]获取细节。
+<!--
+此页面是关于植物的，所有页面，除了{{tr|Thorny Bushes}}外，都有其相应的物品页面。
+以下章节是从相应界面转载过来的。
+-->
+
+== 生长 ==
+所有类型的{{tr|plants}}、[[{{tr|seashells}}]]、[[{{tr|Coral}}]]的生长、和其他随时间生成的{{tr|tiles}}都取决于每{{tr|tick}}的随机{{tr|tile}}更新。{{tick}}{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld}}总体来说，每{{tr|tick}}更新更多{{tr|tile}}意味着更快的生长。
+
+{{tr|The tile update}}分为两个部分：
+* {{anchor|overground}}“地面上”{{tr|updates}}{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_OvergroundTile}}，这包括通常发生于[[{{tr|surface}}]]{{tr|layer}}及以上的{{tr|updates}}。
+* {{anchor|subterranean}}“地面下”{{tr|updates}}{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_UndergroundTile}}，这包括通常发生于[[{{tr|underground}}]]{{tr|layer}}及以下的{{tr|updates}}。
+
+每{{tr|tick}}，游戏会随机更新{{tr|world}}特定范围内的部分{{tr|tiles}}。更新的总数取决于[[{{tr|world size}}]]、“更新速率”、和{{eil|Journey Mode}}{{tr|time menu}}中设置的时间速率。公式为：
+
+<code>更新数 = {{tr|World}}宽度 × {{tr|World}}高度 × 更新速率 × {{tr|Journey Mode}}时间速率</code>
+
+在不同条件下有 3 个不同的更新速率。下表是正常时间速率下（1×），所有{{tr|world sizes}}中特定区域内的每{{tr|tick}}的总更新数。<!--
+-->{{#vardefine:sizes|{{#expr:4200*1200}}}}<!--
+-->{{#vardefine:sizem|{{#expr:6400*1800}}}}<!--
+-->{{#vardefine:sizel|{{#expr:8400*2400}}}}<!--
+-->{{#vardefine:overground|{{#expr:3E-5}}}}<!--
+-->{{#vardefine:underground|{{#expr:1.5E-5}}}}<!--
+-->{{#vardefine:underground2|{{#expr:2.5E-5}}}}
+{| class="terraria lined"
+! rowspan=2 | 区域
+! rowspan=2 | 更新速率
+! colspan=3 | 每{{tr|tick}}的总更新数
+|-
+! {{tr|Small world}}
+! {{tr|Medium world}}
+! {{tr|Large world}}
+|-
+| {{anchor|surface}}{{anchor|{{tr|surface}}}}[[{{tr|Surface}}]]{{tr|layer}}及以上
+| 3×10<sup>-5</sup>
+| {{#expr:ceil({{#var:sizes}}*{{#var:overground}})}}
+| {{#expr:ceil({{#var:sizem}}*{{#var:overground}})}}
+| {{#expr:ceil({{#var:sizel}}*{{#var:overground}})}}
+|-
+| {{anchor|underground}}{{anchor|{{tr|underground}}}}[[{{tr|Underground}}]]{{tr|layer}}及以下<br/>{{note|small=y|{{tr|regular world}}中}}
+| 1.5×10<sup>-5</sup>
+| {{#expr:ceil({{#var:sizes}}*{{#var:underground}})}}
+| {{#expr:ceil({{#var:sizem}}*{{#var:underground}})}}
+| {{#expr:ceil({{#var:sizel}}*{{#var:underground}})}}
+|-
+| {{anchor|underground-remix}}[[{{tr|Underground}}]]{{tr|layer}}及以下<br/>{{note|small=y|{{eil|don't dig up}} 或<br/>{{eil|get fixed boi}} {{tr|world}}中}}
+| 2.5×10<sup>-5</sup>
+| {{#expr:ceil({{#var:sizes}}*{{#var:underground2}})}}
+| {{#expr:ceil({{#var:sizem}}*{{#var:underground2}})}}
+| {{#expr:ceil({{#var:sizel}}*{{#var:underground2}})}}
+|}
+
+每次更新中，会选择单个{{tr|tile}}，并使用一系列检查和几率来决定更新的结果。
+
+* {{anchor|plantalch}}特别地，在[[#surface|{{tr|surface}}区域]]中进行更新时，在检查所选{{tr|tile}}之前，游戏会首先尝试在{{tr|world}}另一位置[[{{tr|Herbs}}#初始生成|生成一棵{{tr|herb plant}}]]。{{tr|herb}}生长的几率取决于{{tr|world size}}，在下表中列出<!--
+ PlantAlch() chance: 151+(151*2.8-151)*clamp 
+-->{{#vardefine:clamps|{{#expr:4200/4200-1}}}}<!--
+-->{{#vardefine:clampm|{{#expr:6400/4200-1}}}}<!--
+-->{{#vardefine:clampl|{{#expr:8400/4200-1}}}}
+{| class="terraria lined"
+! colspan=3 | 几率
+|-
+! {{tr|Small world}}
+! {{tr|Medium world}}
+! {{tr|Large world}}
+|-
+| {{chance|1/{{#expr:(151+(151*2.8-151)*{{#var:clamps}})*100}}|5}}
+| {{chance|1/{{#expr:ceil((151+(151*2.8-151)*{{#var:clampm}})*100)}}|5}}
+| {{chance|1/{{#expr:(151+(151*2.8-151)*{{#var:clampl}})*100}}|5}}
+|}
+
+每{{tr|tick}}，游戏会进行以下操作：
+{|class="terraria lined"
+! {{tr|World type}}
+! 操作顺序
+|-
+| {{tr|Regular worlds}}
+|
+# 在[[#surface|{{tr|surface}}区域]]进行[[#overground|地面上更新]]。
+# 在[[#underground|{{tr|underground}}区域]]进行[[#subterranean|地面下更新]]。
+|-
+| {{eil|Don't dig up}} / {{eil|get fixed boi}} {{tr|worlds}}
+|
+# 在[[#surface|{{tr|surface}}区域]]进行[[#overground|地面上更新]]。
+# 在[[#underground|{{tr|underground}}区域]]同时进行[[#overground|地面上更新]]和[[#subterranean|地面下更新]]。
+|}
+
+== {{tr|Grass}} ==
+[[{{tr|Grass}}]]让许多{{tr|plants}}可以在其上生长，并覆盖了大多数地面地形。一共有十一种不同类型的{{tr|grass}}。
+
+{{transclude|{{tr|Grasses}}|section=grasstypes|clr=y}}
+
+=== 修剪过的草 {{eicons|Lawn Mower}} ===
+{{transclude|{{tr|Grass}}|section=mowed grass}}
+
+== 草上的野生植物 ==
+{{transclude|{{tr|Grasses}}#草上的野生植物}}
+
+== {{tr|Moss}} ==
+[[{{tr|Moss}}]]是生长在[[{{tr|Stone Block}}]]上的类{{tr|grass}}{{tr|plant}}。它有多种不同的颜色，会随机地出现在{{tr|cave surfaces}}上或有相应{{tr|mossy wall}}的[[{{tr|moss chamber}}]]中{{tr|Moss}}会长出毛绒绒的植被，可以像割杂草那般割掉。在{{eversions|1.4.0.1}}中，可以用[[{{tr|Paint Scraper}}]]来将其作为{{tr|item}}收集，并用于重新种植或制作{{tr|mossy walls}}。
+
+{{transclude|{{tr|Moss}}#{{tr|Types}}}}
+
+== {{tr|Herbs}} ==
+[[{{tr|Herbs}}]]用于在[[{{tr|Placed Bottle}}]]或[[{{tr|Alchemy Table}}]]处制作[[{{tr|potions}}]]。他们出现在世界各地，或出现在{{eil|Herb Bag|s}}中，可以用几乎任何[[{{tr|weapon}}]]或[[{{tr|tool}}]]收割。每种{{tr|herb}}都会在符合某些要求时开花。在开花时收割{{tr|Herbs}}会额外掉落 1–3 颗相应[[{{tr|seeds}}]]。
+
+{{transclude|{{tr|Herbs}}#{{tr|Types}}}}
+
+== {{tr|Mushrooms}} ==
+[[{{tr|Mushrooms|link=y}}|{{tr|Mushrooms}}]]是随机生长在很多[[{{tr|grasses}}]]和其他[[{{tr|blocks}}]]上的{{tr|plants}}。[[{{tr|Biome spread}}]]或人工更改{{tr|biome}}的方法（[[{{tr|solutions}}]]、[[{{tr|Thrown Powder}}]]、[[{{tr|Thrown Water}}]]，等等）能够使常规[[{{tr|Mushroom}}]]、[[{{tr|Vile Mushroom}}]]、和[[{{tr|Vicious Mushroom}}]]互相转化，并使[[{{tr|Glowing Mushroom}}]]和[[{{tr|Jungle Spores}}]]互相转化。
+
+共有 6 种{{tr|mushrooms}}：
+
+{{transclude|{{tr|Mushrooms|link=y}}|section=types}}
+
+== {{tr|Vines}} ==
+{| class="terraria" style="float:right; margin-left:1em"
+! {{tr|Vines}}
+|-
+| {{flexstart|justify=space-evenly|style=gap:var(--layout-gap);}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Vines.png]]}}{{flexitem|{{tr|Regular vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Jungle vines.png]]}}{{flexitem|{{tr|Jungle vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Hallowed vines.png]]}}{{flexitem|{{tr|Hallowed vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Crimson vines.png]]}}{{flexitem|{{tr|Crimson vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Flower vines.png]]}}{{flexitem|{{eil|nl=y|Flower vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Mushroom vines.png]]}}{{flexitem|{{eil|nl=y|Mushroom vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Corrupt vines.png]]}}{{flexitem|{{eil|nl=y|Corrupt vines}}}}{{flexend}}
+{{flexstart|direction=column|justify=justified}}{{flexitem|class=align-center|[[File:Ash vines.png]]}}{{flexitem|{{eil|nl=y|Ash vines}}}}{{flexend}}
+{{flexend}}
+|}
+{{redirect|Vines|由[[{{tr|Man Eater}}]]所掉落的物品|{{tr|Vine}}}}
+
+'''{{tr|Vines}}'''是自{{tr|blocks}}向下方生长的植物。如果有足够的空间，它们最多可以长到十格长。尽管它们会阻碍光线（会发光的{{tr|Glowing Mushroom vines}}除外），但他们不会妨碍移动并且可以用几乎任意[[{{tr|weapon}}]]或[[{{tr|tool}}]]轻松摧毁。摧毁一格{{tr|vines}}会摧毁其下方的所有{{tr|vines}}，摧毁最上方的一格或者挖掉它所悬挂的{{tr|block}}会摧毁整株{{tr|vines}}。
+
+总共有{{eicons|1.4.4}}八 / {{eicons|1.4.4|invert=y}}四种不同类型的{{tr|vines}}：{{tr|Regular vines}}（从[[{{tr|Grass}}]]和[[{{tr|Leaf Block}}]]上长出）、{{tr|Jungle vines}}（从[[{{tr|Jungle grass}}]]块上长出）、{{tr|Hallowed vines}}（从[[{{tr|Hallowed grass}}]]块上长出）、{{tr|Crimson vines}}（从[[{{tr|Crimson grass}}]]块上长出）、{{eil|nl=y|Flower vine|s}}（从长草洞穴中的[[{{tr|Grasses}}]]上或玩家放置的[[{{tr|Grass Wall}}]]或[[{{tr|Flower Wall}}]]前长出）、{{eil|nl=y|Mushroom vine|Glowing Mushroom vines}}（从[[{{tr|Mushroom grass}}]]上长出）、{{eil|nl=y|Corrupt vine|s}}（从[[{{tr|Corrupt grass}}]]上长出）、和{{eil|nl=y|Ash vine|s}}（从[[{{tr|Ash grass}}]]上长出)。
+
+{{tr|Vines}}只能在[[{{tr|surface}}]]以上生长（{{tr|Jungle vines, Glowing Mushroom vines, and Ash vines}}例外，它们可以在任何高度生长）并且只能从下方不是[[{{tr|Hammers}}|斜面]]的{{tr|blocks}}上长出。
+
+{{tr|Vines}}可以被[[{{tr|paint}}|涂漆]]。从涂漆的{{tr|blocks}}中新长出来的{{tr|vines}}会具有该{{tr|block}}的颜色而{{tr|vines}}自然延伸所生成的{{tr|vines}}图格将具有{{tr|vines}}现有尖端的颜色。
+
+{{tr|Jungle vines tiles}}计入其[[生物群落的存在要求]]，但{{tr|Corrupt vines, Crimson vines, and Hallowed vines}}不计。{{source code ref|v=1.4.4.5|method=Terraria.SceneMetrics.ExportTileCountsToMain}}不过，这些{{tr|vines}}会向附近的{{tr|block}}[[{{tr|biome spread}}|{{tr|spread}}]]其对应的{{tr|biome}}。{{eil|Guide to Plant Fiber Cordage}}允许从{{tr|regular vines and Jungle vines}}中收集{{eil|Vine Rope|s}}。
+
+{{tr|Vines}}永远不会掉落[[{{tr|Vine}}]]物品，后者是[[{{tr|Man Eater}}]]的不常见掉落物。不过，{{tr|Glowing Mushroom vines}}在被摧毁时会掉落[[{{tr|Glowing Mushroom}}]]。
+
+== {{tr|Cattails}} ==
+{{exclusive|1.4.0.1|section=y}}
+[[File:Catttails in a lake.png|thumb|湖中的{{tr|Forest cattails}}。]]
+
+'''{{tr|Cattails}}'''是在淹没于[[{{tr|water}}]]下 1–7 格深的{{tr|block}}上自然生长出来的{{tr|plants}}。它们是{{tr|background objects}}，可以用绝大多数[[{{tr|weapons}}]]或[[{{tr|tools}}]]摧毁。摧毁{{tr|cattail}}的某一格会同时摧毁{{tr|cattail}}在这一格以上的所有{{tr|tile}}，而摧毁其底部或者其所附着的{{tr|block}}会完全摧毁此{{tr|cattail}}。
+
+有六种不同类型的{{tr|cattails}}：{{tr|Regular cattails}}（从[[{{tr|Grasses}}|{{tr|Grass}}]]上长出）、{{tr|Jungle cattails}}（从[[{{tr|Jungle grass}}]]和[[{{tr|Oasis}}]]中的[[{{tr|Sand Blocks}}]]上长出）、{{tr|Hallowed cattails}}（从[[{{tr|Hallowed grass}}]]上长出）、{{tr|Glowing Mushroom cattails}}（从[[{{tr|Mushroom grass}}]]上长出）、{{tr|Corruption cattails}}（从[[{{tr|Corrupt grass}}]]上长出）和{{tr|Crimson cattails}}（从[[{{tr|Crimson grass}}]]上长出）。除了{{tr|Glowing Mushroom cattails}}外，所有{{tr|cattails}}都只能在{{tr|surface}}以上生长。
+
+{{tr|Glowing Mushroom cattails}}被摧毁时会掉落[[{{tr|Glowing Mushroom}}]]；其他类型的{{tr|cattails}}不产生任何掉落。
+
+{{-}}
+
+== {{tr|Lily pads}} ==
+{{exclusive|1.4.0.1|section=y}}
+[[File:All lilypad variants.png|thumb|所有类型{{tr|Lily pad}}的变种。从上至下：常规、{{tr|Hallowed, Jungle, Crimson, and Corruption lily pads}}]]
+
+'''{{tr|Lily pads}}'''是在水面以下 3–12 格内有合适{{tr|block}}时生长在水面的{{tr|plant}}，它们是可以被大多数[[{{tr|weapon}}]]和[[{{tr|tool}}]]破坏的{{tr|background object}}。
+
+总共有五种不同类型的{{tr|Lily pads}}，每种{{tr|Lily pads}}有 18 种变种，共 90 种。它们是： {{tr|Regular lily pads}}（在[[{{tr|Grass}}]]上方）、{{tr|Jungle lily pads}}（在[[{{tr|Jungle grass}}]]和[[{{tr|Oasis}}]]中的[[{{tr|Sand Blocks}}]]上方）、{{tr|Hallowed lily pads}}（在[[{{tr|Hallowed grass}}]]上方）、{{tr|Corruption lily pads}}（在[[{{tr|Corrupt grass}}]]上方）和{{tr|Crimson lily pads}}（在[[{{tr|Crimson grass}}]]上方）。
+
+{{-}}
+
+== {{tr|Cactus}} ==
+{{float file box|width=200px|[[File:Growing cactus.png]] [[File:Growing Corrupt cactus.png]] [[File:Growing Crimson cactus.png]] [[File:Growing Hallow cactus.png]]|常规、{{tr|Corrupt, Crimson, and Hallowed cactus}}}}
+
+[[{{tr|Cactus}}]]会在[[{{tr|Desert}}]] [[{{tr|biome}}]]中的[[{{tr|Sand Blocks}}]]上自然生长，且在{{tr|Desert}}被[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、或[[{{tr|Hallow}}]]侵染后仍然会存在。它可以用任意[[{{tr|axe}}]]砍伐，可以用于制作{{tr|cactus}}主题的[[{{tr|weapons}}]]、[[{{tr|armor}}]]、[[{{tr|furniture}}]]，或者被放置并用作建筑材料。有时，[[{{tr|Pink Prickly Pear}}]]会在{{tr|cactus}}顶上生长。在{{eversions|1.4.0.1|invert=y}}中，采掘{{tr|cactus}}下方的{{tr|Sand Block}}可以破坏整株{{tr|plant}}。
+
+{{-}}
+
+== {{tr|Oasis}}植被 ==
+{{exclusive|1.4.0.1|section=y}}
+[[File:Oasis Plants.png|frame|{{tr|Oasis}}植被]]
+
+'''{{tr|Oasis}}植被'''包括能在[[{{tr|Oasis}}]]{{tr|biome}}中的[[{{tr|Sand Blocks}}]]上自然生长的各类{{tr|plant}}。
+
+{{-}}
+
+== {{tr|Bamboo}} ==
+{{exclusive|1.4.0.1|section=yes}}
+[[File:Bamboo Plant.png|thumb|[[{{tr|Jungle}}]]中的{{tr|Bamboo}}。]]
+
+'''{{tr|Bamboo}}'''是在浸没于 2–5 格深的{{tr|water}}中的[[{{tr|Jungle grass}}]]上自然生长的{{tr|plant}}。它会以极其缓慢的速度竖直生长。{{tr|Bamboo}}可以用[[{{tr|pickaxe}}]]砍倒，并用于制作[[{{tr|furniture}}]]或[[{{tr|Large Bamboo}}]]。
+
+{{-}}
+
+== {{tr|Seaweeds}} ==
+{{exclusive|1.4.0.1|section=yes}}
+{{float file box|width=250px|[[File:Seaweeds.png]]|所有{{tr|seaweed variants}}}}
+{{redirect|Seaweeds|其他物品|{{tr|Seaweed (disambiguation)}}}}
+
+'''{{tr|Seaweeds}}'''是在位于[[{{tr|Underground}}]]{{tr|layer}}的浸没于{{tr|water}}中的[[{{tr|Sand Blocks}}]]上自然生长的{{tr|plant}}，尤其常见于[[{{tr|Ocean}}#{{tr|Ocean Cave}}|{{tr|Ocean Cave}}]]中。
+
+{{-}}
+
+== {{tr|Sea oats}} ==
+{{exclusive|1.4.0.1|section=yes}}
+[[File:Sea Oats.png|thumb所有{{tr|sea oat variants}}]]
+
+'''{{tr|Sea oats}}'''是在[[{{tr|Oasis}}]]与[[{{tr|Ocean}}]]{{tr|biomes}}中的[[{{tr|Sand Blocks}}]]上自然生长的{{tr|plant}}。
+
+{{-}}
+
+== {{tr|Thorny bushes}} ==
+{{redirect|Thorn|{{tr|Blood Moon}}期间获得的{{tr|the magic weapon}}|{{tr|Blood Thorn}}|提供{{tr|Thorns buff}}的{{tr|potion}}|{{tr|Thorns Potion}}}}
+{{float file|style=margin-left:1em|
+<gallery>
+File:Corruption Thorns.png|[[{{tr|the Corruption}}]]中的{{tr|Thorny bushes}}
+File:Jungle Thorns.png|[[{{tr|Underground Jungle}}]]中的{{tr|Thorny bushes}}
+File:Crimson Thorns.png|[[{{tr|the Crimson}}]]中的{{tr|Thorny bushes}}
+</gallery>
+}}
+
+'''{{tr|Thorny bushes}}'''，或'''{{tr|thorns}}'''是会伤害任何接触它的玩家的{{tr|plants}}。共有{{eicons|1.4.4}}四/{{eicons|1.3.0.1|invert=y}}两种不同的{{tr|thorny bushes}}：
+* [[{{tr|Underground Jungle}}]]中的棕色灌木造成 17 {{tr|base damage}}。
+* [[{{tr|the Corruption}}]]中的紫色灌木造成 10 {{tr|base damage}}。
+* {{eicons|1.3.0.1}} [[{{tr|the Crimson}}]]中的红色灌木造成 10 {{tr|base damage}}。
+* {{eicons|1.4.4}} 来自 [[For the worthy]] {{tr|world}}中的[[{{tr|Plantera}}]]的粉色灌木造成 100 {{tr|base damage}}。{{source code ref|v=1.4.4.6|method=Terraria.Player.ApplyTouchDamage|field=Terraria.ID.TileID.Sets.TouchDamageImmediate}}
+
+{{tr|Thorny bushes}}会在被[[{{tr|weapon}}]]、[[{{tr|tool}}]]、或玩家接触后被摧毁，但隐形的{{tr|projectiles}}（如[[{{tr|Medusa Head}}]]、[[{{tr|Life Drain}}]]等）不会摧毁它们。它们也无法作为物品获得。所有 [[{{tr|NPCs}}]]、[[{{tr|enemies}}]]、和[[{{tr|critters}}]]都不会受到{{tr|thorny bushes}}的伤害，也无法将其摧毁。特别地，所有{{tr|Plantera}}的{{tr|thorny bushes}}会在{{tr|Plantera}}不存在时被摧毁。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_OvergroundTile / Terraria.WorldGen.UpdateWorld_UndergroundTile}}{{tr|thorny bushes}}可以在任意方向上长出六格远，但其生长会被[[实心物体]]所阻挡。和[[{{tr|wild grass plants}}]]不同，在{{tr|soil block}}后方有{{tr|background walls}}时，{{tr|thorny bushes}}仍然能生长。
+
+紫色和红色的种类会[[{{tr|Biome spread}}|蔓延{{tr|Corruption}}/{{tr|Crimson}}]]；但是棕色的种类不会蔓延[[{{tr|Jungle grass}}]]。
+
+== {{tr|Sunflower}} ==
+[[File:Sunflowers in Forest.png|thumb|[[{{tr|forest}}]]中自然生成的{{tr|Sunflowers}}。]]
+
+[[{{tr|Sunflowers}}]]是{{tr|surface plant}}，能防止[[{{tr|The Corruption}}|{{tr|Corruption}}]]和[[{{tr|The Crimson}}|{{tr|Crimson}}]]（{{eicons|1.4.0.1}}和[[{{tr|The Hallow}}|{{tr|Hallow}}]]）蔓延到它们自身所在的{{tr|blocks}}，并为附近的玩家提供{{eil|Happy!}}[[{{tr|buff}}]]，略微增加他们的移动速度同时降低{{tr|enemy}}[[{{tr|spawn rate}}]]。
+
+{{-}}
+
+== {{tr|Life Fruit}} ==
+[[File:Life fruit.jpg|thumb|{{tr|Jungle}}中找到的{{tr|A Life Fruit}}植株。]]
+
+[[{{tr|Life Fruits}}]]是一种{{tr|consumables}}，可以使{{tr|player}}的最大[[{{tr|health}}]]永久提高 5，上限为 500（在使用{{tr|Life Crystals}}到达 400 {{tr|health}}后使用 20 个）。它们可以在{{etext|t=至少击败一个[[{{tr|mechanical boss}}]]后|e=1.3.0.1}} / {{etext|t={{tr|Hardmode}}下|e=1.3.0.1|invert=y}}于[[{{tr|Underground Jungle}}]]中找到。击败的{{tr|mechanical bosses}}越多，{{tr|Life Fruits}}就越常见。{{tr|Life Fruits}}会在[[{{tr|Spelunker Potion}}]]的作用下发光。
+
+{{-}}
+
+== {{tr|Dye plants}} ==
+[[{{tr|Dyes|link=y}}#{{tr|Basic Dyes}}|{{tr|Dye plants}}]]可在[[{{tr|Dye Vat}}]]处制作成[[{{tr|Dye}}]]。它们可在各种{{tr|biomes}}中遇到，并会显示在地图上。有 8 种{{tr|dye plants}}（左侧为{{tr|inventory}}外观，右侧为放置后外观）：
+
+{{itemlist|class=terraria|width=12em
+|{{item|Teal Mushroom|image=Teal Mushroom.png/Teal Mushroom (placed).png}}
+|{{item|Green Mushroom|image=Green Mushroom.png/Green Mushroom (placed).png}}
+|{{item|Sky Blue Flower|image=Sky Blue Flower.png/Sky Blue Flower (placed).png}}
+|{{item|Yellow Marigold|image=Yellow Marigold.png/Yellow Marigold (placed).png}}
+|{{item|Blue Berries|image=Blue Berries.png/Blue Berries (placed).png}}
+|{{item|Lime Kelp|image=Lime Kelp.png/Lime Kelp (placed).png}}
+|{{item|Pink Prickly Pear|image=Pink Prickly Pear.png<!--/Pink Prickly Pear (placed).png<!-- too wide-->}}
+|{{item|Orange Bloodroot|image=Orange Bloodroot.png/Orange Bloodroot (placed).png}}
+}}
+
+== {{tr|Strange Plants}} ==
+{{exclusive|Strange Plant|section=y}}
+{{float file box|[[File:Strange Plant (placed).png]]|放置的{{tr|Strange Plants}}。}}
+
+[[{{tr|Strange Plant}}]]是不常见的[[{{tr|Hardmode}}]]{{tr|quest items}}，可以用于与[[{{tr|Dye Trader}}]]交易以换取 33 种特殊[[{{tr|dyes}}]]中的 1 种，获得的{{tr|dye}}种类与已击败的 [[{{tr|bosses}}]] 和/或[[{{tr|events}}]]相关。{{tr|player}}会获得 6 个同种随机选择的{{tr|dye}}。
+
+{{-}}
+
+== {{tr|Plantera's Bulb}} ==
+{{float file box|width=8em|[[File:Plantera's Bulb.gif]]|{{tr|Plantera's Bulb}}}}
+
+[[{{tr|Plantera's Bulb}}]]是[[{{tr|Underground Jungle}}]]中的一种粉色{{tr|plant}}，它会在当前世界处于[[{{tr|Hardmode}}]]下，且已经击败所有 3 个[[{{tr|mechanical bosses}}]]后（{{3DS version}}中只需击败 1 个）出现。它在被{{tr|pickaxe}}/{{tr|drill}}采掘时、被{{tr|explosives}}破坏时、被[[{{tr|Clentaminator}}]]喷射到[[{{tr|Solution}}]]时，或其下方的{{tr|Jungle grass}}被锤击或转换为另一个{{tr|block}}时会召唤[[{{tr|Plantera}}]]。虽然它不能被{{tr|weapons}}或{{tr|projectiles}}破坏，但仍需小心对待，以避免不必要的 {{tr|boss}} 战。大约每六分钟会生成一个{{tr|Plantera's Bulb}}（约为游戏内的四分之一天）。
+
+{{-}}
+
+== {{tr|Pumpkin}} ==
+{{float file box|[[File:Pumpkin Growth.gif]]|{{tr|pumpkin}}生长的各个阶段。}}
+
+[[{{tr|Pumpkins}}]]在{{tr|Halloween}}期间会自然生成，并且可以用[[{{tr|Dryad}}]]所售的[[{{tr|Pumpkin Seed}}]]来人工种植。收获{{tr|Pumpkins}}会掉落{{tr|Pumpkin block}}，它可以被放置，也可以制作成[[{{tr|Pumpkin armor}}|{{tr|armor}}]]、[[{{tr|Pumpkin furniture}}|{{tr|furniture}}]]、[[{{tr|Pumpkin Wall}}|{{tr|walls}}]]、[[{{tr|Pumpkin Pie}}]]、和[[{{tr|Pumpkin Moon Medallion}}]]。收获{{tr|Pumpkins}}还有几率掉落[[{{tr|Magical Pumpkin Seed}}]]。
+
+{{-}}
+
+== 装饰、家具、和墙类植物 ==
+以下{{tr|item}}不被视为{{tr|plants}}，而是常规的拥有基于{{tr|plant}}的主题的[[{{tr|walls}}]]、[[{{tr|blocks}}]]、和[[{{tr|furniture}}]]{{tr|items}}。
+{{options/set|item|wrap=y}}{{itemlist/options|width=14em}}
+<div class=terraria>
+<!-- Furniture -->
+{{itemlist
+|{{item|Christmas Tree}}
+|{{item|Potted Trees|image=Potted Forest Tree.png/Potted Jungle Tree.png/Potted Hallow Tree.png}}
+|{{item|Potted Lava Plants|image=Potted Magma Palm.png/Potted Brimstone Bush.png/Potted Fire Brambles.png}}
+|{{item|Potted Crystal Plants|image=Potted Crystal Fern.png/Potted Crystal Spiral.png/Potted Crystal Tree.png}}
+|{{item|Hanging herbs|image=Hanging Blinkroot.png/Hanging Daybloom.png/Hanging Shiverthorn.png}}
+}}
+<!-- Blocks -->
+{{itemlist
+|{{item|Leaf Block}}
+|{{item|Mahogany Leaf Block}}
+}}
+<!-- Walls -->
+{{itemlist
+|{{item|Grass Wall}}
+|{{item|Flower Wall}}
+|{{item|Jungle Wall}}
+|{{item|Living Leaf Wall}}
+|{{item|Corrupt Grass Wall}}
+|{{item|Crimson Grass Wall}}
+|{{item|Hallowed Grass Wall}}
+}}
+</div>{{options/reset|item}}{{itemlist/options|reset}}
+
+此外，放置于[[{{tr|surface}}]]以上或[[{{tr|Space}}]]中时，[[{{tr|Clay Pot}}]]、{{eil|Planter Boxes}}、和{{eil|Rock Golem Head}}能够随机长出[[#草上的野生植物|{{tr|wild grass plant}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Neon moss and Helium moss}}{{tr|variants}}。
+** 添加了{{tr|Corrupt vines and Ash vines}}。
+** 添加了 For the worthy 中{{tr|Plantera}}的{{tr|thorny bushes}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了绿洲植被、{{tr|cattails, lily pads, sea oats, Bamboo, glowing mushroom vines and seaweeds}}。
+** 添加了{{tr|Argon moss, Krypton moss, and Xenon moss}}{{tr|variants}}。
+** 给长草洞穴添加了{{tr|flower vines}}。
+** [[{{tr|Strange Plants}}]]现在会显示在[[{{tr|Metal Detector}}]]上，且仅在[[{{tr|Hardmode}}]]出现。
+** {{tr|Jungle grass}}上的{{tr|Wild plants}}和{{tr|Glowing Mushrooms}}不再能生长于[[{{tr|Actuator}}|被致动]]的{{tr|blocks}}上（这曾经会导致它们立即被破坏并掉落{{tr|item}}供收集）。}}
+{{history|Desktop 1.3.0.4|{{tr|Dye plants}}现在在{{tr|spelunker}}效果下也会发光。}}
+{{history|Desktop 1.3.0.1|
+** 引入[[{{tr|Strange Plants}}]]。
+** 引入[[{{tr|Vicious Mushroom}}]]。
+** 在靠近时，[[{{tr|Sunflower}}]]会给予个新{{tr|buff}}“{{tr|Happy!}}”，就像[[{{tr|Campfire}}]]那样。
+** [[{{tr|the Crimson}}]]中添加了{{tr|Thorny bushes}}。}}
+{{history|Desktop 1.2.1|[[{{tr|Sunflower}}]]现在会降低{{tr|Crimson}}的影响。}}
+{{history|Desktop 1.2|
+** 新{{tr|plants}}。
+** 引入了{{tr|Crimson grass}}。}}
+{{history|Desktop 1.1|[[{{tr|Cactus}}]]不会再对触碰它们的玩家造成伤害。}}
+{{history|Desktop 1.0.6|
+** {{tr|Thorny bushes}}现在在玩家接触它们时会被摧毁。
+** [[{{tr|Cacti}}]]不再会因为它们的成长而造成击退或破坏物块。}}
+{{history|Desktop 1.0.5|
+** {{tr|plant}}的生长速率放缓了。
+** {{tr|Vines}}在水下时不会长到超过 1 格长的问题已修正，现在能正确生长了。}}
+{{history|Desktop 1.0.4|[[{{tr|Jungle}}]]{{tr|plants}}现在会在水下生长了。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+[[Category:环境]]
+
+{{language info|en=Plants}}

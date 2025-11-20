@@ -1,0 +1,68 @@
+{{item infobox
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 37 {{eicons|1.3.0.1|invert=y|small=y}}
+| debuff = On Fire! / 3
+| debuffchance = 50% {{eicons|1.4.4|small=y}}<br/>20% {{eicons|1.4.4|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.4|small=y}} /<br/> {{ut|15}} {{eicons|1.4.4|invert=y|small=y}}
+| auto = 119
+| listcat = Boomerangs
+}}
+[[File:Flamarang (demo).gif|framed|{{eicons|1.4.4|invert=y|small=y}}使用中的{{tr|The Flamarang}}。]]
+
+'''{{tr|Flamarang}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|boomerang}}]]，是[[{{tr|Enchanted Boomerang}}]]的升级版，可以造成更高伤害且有{{eicons|1.4.4}} {{chance|1/2}} / {{eicons|1.4.4|invert=y}} {{chance|1/5}} 几率对[[{{tr|enemies}}]]造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]，持续 3 秒。它的进行速度要快于{{tr|Enchanted Boomerang}}并会发出更多光。其发光粒子还会穿过墙壁。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Flamarang|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Flamarang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 27.88 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Flamarang}}返回玩家时的最高速度为 {{mph|20 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 小贴士 ==
+* 此武器可以很好地在[[{{tr|Queen Bee}}]]静止并生成[[{{tr|bee}}]]时对抗她，因为{{tr|the Flamarang}}既可以让{{tr|Queen Bee}}陷于{{tr|on fire!}}状态又能杀死接近的{{tr|bees}}。
+
+== 花絮 ==
+* 英文名 ''Flamarang'' 由单词 ''flame''（火焰）和 ''boomerang''（{{tr|boomerang}}）组合而成。
+* {{tr|The Flamarang}}拥有所有[[{{tr|Pre-Hardmode}}]]的{{tr|boomerang}}中最高的伤害。其{{tr|base damage}}略微高于[[{{tr|Bananarang}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 32 提升至 49。
+** 造成{{tr|On Fire!}}的几率由 20% 提升至 50%。
+** {{tr|Use time}}由 15 提升至 20。}}
+{{history|Desktop 1.4.1|{{tr|projectile}}的{{tr|projectile speed}}和返回速度都有所提升。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated}}。旧的{{tr|sprite}}是 [[File:Flamarang (pre-1.4.0.3).png|link=]]。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|伤害由 37 降低至 32。}}
+{{history|Desktop 1.2|
+** {{tr|Damage}}由 32 提升至 37。
+** {{tr|crafting}}所需的{{tr|Hellstone Bar}}由 15 个降低至 10 个。}}
+{{history|Desktop 1.1|现在视为{{tr|melee}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.1 一致。
+** 伤害由 37 降至 32。}}
+{{history|Console-Release|{{tr|Introduced}}，列入{{tr|melee}}中。}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|伤害由 37 降低至 32。}}
+{{history|Mobile 1.2.6508|伤害由 32 提升至 37。}}
+{{history|Mobile 1.1.5536|现在列入{{tr|melee}}中。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hellstone}}
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Flamarang}}

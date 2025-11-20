@@ -1,0 +1,170 @@
+{{exclusive|1.4.0.1}}
+{{flavor text|所有摇晃之物的君主。}}
+{{infobox wrapper
+|{{npc infobox | boxwidth=25em
+| namesub2 = 第一形态
+| type = Boss
+| type2 = Slime
+| environment = The Hallow
+| auto = 657
+| idprojectile = 922,926
+| money =
+| damage = {{modes|60|120|180}} {{note|small=y|paren=y|{{tr|melee}}}} <br/> {{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.QueenSlimeSmash}}}} <br/> {{modes|60|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.QueenSlimeGelAttack}}}}
+| sound1 = Zombie 115.wav, Zombie 116.wav, Zombie 117.wav
+| soundcaption1 = 空闲
+| soundkilled =
+| sound2 = Item 154.wav
+| soundcaption2 = 蓄力{{tr|gel}}
+| sound3 = Item 155.wav
+| soundcaption3 = {{tr|Regal Gel}}
+| imageother = Map Icon Queen Slime.png
+| imageothercaption = {{tr|Map Icon}}
+| hardmode = yes
+}}
+|{{npc infobox | boxwidth=25em
+| namesub2 = 第二形态
+| image = Queen Slime (Second form).png
+| imagesize = *0.75
+| type = Boss
+| type2 = Slime
+| environment = The Hallow
+| auto = 657
+| idprojectile = 922,926
+| life = {{modes|9000/18000|14400/28800|18360/36720}}
+| damage = {{modes|60|120|180}} {{note|small=y|paren=y|{{tr|melee}}}} <br/> {{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.QueenSlimeSmash}}}} <br/> {{modes|60|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.QueenSlimeGelAttack}}}}
+
+| Sparkle Slime Balloon|25–75|100% @normal
+|:group:start|总是会掉落以下 3 件{{tr|items}}之一&nbsp;{{source code ref|v=1.4.0.5|name=qsdrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_QueenSlime}}| @normal
+| Crystal Assassin Hood|1|33.33% @normal
+| Crystal Assassin Shirt|1|33.33% @normal
+| Crystal Assassin Pants|1|33.33% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Blade Staff|1|25% @normal
+| Gelatinous Pillion|1|25% @normal
+| Hook of Dissonance|1|33.33% @normal
+| Greater Healing Potion|5–15|100%
+| Queen Slime Mask|1|14.29% @normal
+| Queen Slime Trophy|1|10%
+| Treasure Bag (Queen Slime)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Volatile Gelatin|1|100% #expert
+  | Sparkle Slime Balloon|25–74|100% #expert
+  | Queen Slime Mask|1|14.29% #expert
+  | Gelatinous Pillion|1|50% #expert
+  | Hook of Dissonance|1|50% #expert
+  | Blade Staff|1|33.33% {{eicons|1.4.1}} #expert
+   |:group:start|总是会掉落以下 3 件{{tr|items}}中的两件| #expert
+  | Crystal Assassin Hood|1|67% #expert
+  | Crystal Assassin Shirt|1|67% #expert
+  | Crystal Assassin Pants|1|67% #expert
+  |:group:end|-----------------------------------|
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|6]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Regal Delicacy|1|{{master|25%}} @master
+| Queen Slime Relic|1|{{master|100%}} @master
+
+| sound1 = Zombie 115.wav, Zombie 116.wav, Zombie 117.wav
+| soundcaption1 = 空闲
+| imageother = Map Icon Queen Slime.png
+| imageothercaption = {{tr|Map Icon}}
+| hardmode = yes
+| cargo = no | cargodrops = yes
+}}
+}}
+
+'''{{tr|Queen Slime}}'''是一个[[{{tr|Hardmode}}]]早期的、[[{{tr|Hallow}}]]主题 [[{{tr|boss}}]]，是[[{{tr|King Slime}}]]在[[{{tr|hardmode}}]]中的对应物。她的外观是一个巨大的戴着王冠的紫罗兰色{{tr|slime}}，体内有一个巨大的彩色水晶。对战{{tr|Queen Slime}}完全是可选的，并非游戏进程所需（和她的[[{{tr|pre-Hardmode}}]]对应物[[{{tr|King Slime}}]]非常相似），不过打败她可能会回报给玩家有用的物品。
+
+{{boss music|exclusive=1|pronoun=her|ow=Boss 2 (Otherworldly)}}
+
+== 生成 ==
+可以通过在[[{{tr|the Hallow}}]]使用[[{{tr|Gelatin Crystal}}]]召唤{{tr|Queen Slime}}，在使用时物品被立刻消耗，同时召唤 {{tr|boss}}。若在其他{{tr|biome}}使用，什么都不会发生，且{{tr|Gelatin Crystal}}也不会被消耗。
+
+== 行为 ==
+类似于[[{{tr|King Slime}}]]，如果她无法触及玩家，她会传送到玩家旁边。
+
+{{tr|Queen Slime}}会像[[{{tr|King Slime}}]]那样跳来跳去，但要快的多。在她受到伤害时她会召唤仆从：
+
+* {{item|Crystal Slime|s|icons=n}}，向上发射几个水晶。
+* {{item|Heavenly Slime|s|icons=n}}，飞向玩家。
+* {{item|Bouncy Slime|s|icons=n}}，向玩家发射几个弹跳射弹。
+
+几次跳跃后，她保持静止几秒钟，然后随机选择两种方式之一进行攻击：
+* 快速跳向玩家，试图踩踏玩家，这会造成很高伤害。上升时，她可以穿过{{tr|blocks}}。
+* 发射 6 个 {{item|Regal Gel|link=}} ，在反弹两次之后碎裂。她有时会连续如此行动这种攻击。
+
+当她的生命值在 50% 及以下时，{{tr|Queen Slime}}就会长出翅膀并像[[{{tr|Slimer}}]]一样飞翔。她的 {{tr|AI}} 也发生了变化：
+* 她会迅速向十个方向发射皇家凝胶。
+* 如果玩家离她较近的话，她会尝试飞到玩家上方并落下。如果在一定时间内没有接触到地面，她会停下并向玩家飞回。
+* 她不再能够传送至{{tr|the player}}处。
+
+== 备注 ==
+* 此 {{tr|Boss}} 只有召唤时需要在{{tr|the Hallow}}，战斗可以在任何地方进行。这意味着玩家可以在战斗开始后去到一个不同的生物群落，且战斗会正常进行。
+* [[{{tr|Royal Gel}}]]无法让玩家免疫{{tr|Queen Slime}}召唤出来的{{tr|slime}}。
+* 虽然是一只{{tr|Hardmode boss}}，[[{{tr|developer items}}]]却并不能从{{tr|Queen Slime}}的[[{{tr|Treasure Bag}}]]中掉落。
+* 若玩家在其发动攻击时位于皇后之上，冲撞攻击（皇后猛击）可以打击到玩家。
+* {{tr|Queen Slime}}本身和{{tr|Regal Gel}}可被[[{{tr|liquids}}]]减速。在皇后的第二阶段，她不再受到{{tr|liquids}}的影响，除非她在试图对玩家进行踩踏攻击。
+* {{tr|Bouncy Slimes}}和{{tr|Crystal Slimes}}就像大多数其他{{tr|slime}}一样，浮在液体表面时不会发射{{tr|projectiles}}。
+* 在种子为“[[For the worthy]]”的世界中，{{tr|Queen Slime}}的 {{tr|AI}} 有如下变动：
+** 在第一状态下发射 8 个{{tr|Regal Gel}}，在第二状态下发射15个{{tr|Regal Gel}}。
+** {{tr|Regal Gel}}的攻击方向会随机化。
+** 更加频繁的踩踏攻击。
+
+== 成就 ==
+{{achievement|name=Just Desserts}}
+
+== 小贴士 ==
+{{strategies}}
+* [[{{tr|Palladium armor}}]]由于其提供的快速治疗效果而很有用。
+* {{tr|Queen Slime}}拥有相对简单的攻击方式，容易躲闪。最大的威胁来自于她所产生的仆从，这些仆从可以使射弹充满屏幕并迅速使玩家不知所措，应该尽快杀死这些仆从。
+* 一个击败{{tr|Queen Slime}}的策略是在她的第一阶段使用翅膀或坐骑飞在空中，因为这样她的许多攻击都无法命中玩家。在她的第二阶段，最好保持靠近地面，偶尔向她上方勾引，因为可以躲避射弹和仆从的缓慢且可预测的运动。
+* 在[[{{tr|Master Mode}}]]下，[[{{tr|The Black Spot}}]]坐骑允许玩家在第一阶段通过悬浮躲过所有攻击。
+* 强烈建议在白天与{{tr|Queen Slime}}战斗，因为在晚上很难看到她的攻击。
+* 在杀死任何其他困难模式Boss之前，甚至在摧毁恶魔或猩红[[{{tr|Altars}}]]之前，{{tr|Queen Slime}}都可以被击败。她掉落的[[{{tr|Crystal Assassin armor}}]]可帮助玩家渡过早期困难模式。
+* 与大多数 {{tr|Boss}} 一样，她对[[{{tr|lava}}]]免疫，但是她的仆从却不能。由熔岩制成的战斗场，配以[[{{tr|Lava Waders}}]]或[[{{tr|Terraspark Boots}}]]可以使战斗轻而易举，而不必担心仆从。
+* 使用不连续的平台可以使其仆从落下并远离战斗。
+* 任何一对翅膀配以飞行助力配饰和[[{{tr|Shield of Cthulhu}}]]（用于冲锋技能），都可以轻松躲避她的所有攻击（但很难同时闪躲她的仆从）。
+* 使用[[{{tr|Holy Arrow}}]]作为弹药的[[{{tr|Daedalus Stormbow}}]]和召唤出的[[{{tr|minions}}]]配合可以清理她召唤的{{tr|minions}}。
+* 在更高难度下与她战斗时，切勿直接停留在多个水晶{{tr|slime}}的上面。它们的攻击会在几秒钟内杀死你。
+* [[{{tr|Invisibility Potion}}]]可被用于减缓其他敌怪的生成，并防止被{{tr|Heavenly Slimes}}追逐不休。
+
+== 花絮 ==
+* {{tr|Queen Slime}}的AI完全由开发者 [[Grox the Great]] 编写，但她的视觉效果由 [[Yoraiz0r]] 完成。{{verify}}
+* {{tr|Queen Slime}}是 7 个拥有独立音乐的 {{tr|Boss}} 之一，其它 6 个分别是{{eil|Deerclops}}、[[{{tr|Duke Fishron}}]]、[[{{tr|Empress of Light}}]]、[[{{tr|Moon Lord}}]]、[[{{tr|Plantera}}]]、和[[{{tr|Queen Bee}}]]。
+* {{tr|Queen Slime Trophy}}中有一个被{{tr|slime}}覆盖的羽毛的图案，这和{{tr|King Slime Trophy}}中被{{tr|slime}}覆盖的剑的图案很相似。
+* {{tr|Queen Slime}}是 [[1.4]] 版本添加的两个新 {{tr|Boss}} 之一，另一个 {{tr|Boss}} 是[[{{tr|Empress of Light}}]]。两者都以[[{{tr|Hallow}}]]为主题。 
+** {{tr|Queen Slime}}聚焦的是{{tr|the Hallow}}的水晶主题，而光之女皇则是彩虹主题。这反映在她们的召唤物的颜色上、攻击上和特有掉落物品上。
+* {{tr|Queen Slime}}是三个进入第二形态时地图图标不会改变的 {{tr|Boss}} 之一，另外两个分别是[[{{tr|Brain of Cthulhu}}]]和[[{{tr|Santa-NK1}}]]。
+* {{tr|Queen Slime}}的多数掉落物是[[{{tr|King Slime}}]]所掉落的升级版。[[{{tr|Ninja armor}}]]和[[{{tr|Crystal Assassin armor}}]]都提供了通用的伤害增加。两者都会掉落一个[[{{tr|Mounts}}]]召唤物品([[{{tr|Slimy Saddle}}]]和[[{{tr|Gelatinous Pillion}}]])和一个[[{{tr|Hooks}}]] ([[{{tr|Slime Hook}}]]和[[{{tr|Hook of Dissonance}}]])，和小玩具武器（[[{{tr|Slime Gun}}]]和[[{{tr|Sparkle Slime Balloon}}]]）。
+** 与其他大多数 {{tr|Boss}} 掉落物不同，[[{{tr|Hook of Dissonance}}]]''不会''受[[{{tr|Luck}}]]影响，它总会以{{chance|1/3}}的几率掉落。这可能是因为{{tr|Queen Slime}}的{{tr|Hook of Dissonance}}是{{tr|King Slime}}的{{tr|Slime Hook}}的对应物：后者也不受运气的影响，因为如果{{tr|slime}}钩没有掉落，[[{{tr|Slime Gun}}]]就''会''掉落。<ref name="qsdrops"/>
+** [[{{tr|Volatile Gelatin}}]]也与[[{{tr|Royal Gel}}]]存在相似性，它们分别是{{tr|Queen Slime}}和{{tr|King Slime}}的专家模式掉落物，与相应的 {{tr|boss}} 皇冠外表一样。不过，这都纯粹是审美上的，二者用途完全不同。
+* {{tr|Queen Slime}}第二形态的翅膀类似于一对超大的[[{{tr|Angel Wings}}]]。
+* {{tr|Queen Slime}}死后出现的[[{{tr|Gore ID}}|{{tr|crown}}血污]]与[[{{tr|King Slime}}]]的{{tr|crown}}血污不同。{{tr|King Slime}}的{{tr|crown}}在[[{{tr|Blood and Gore}}]]开启时会出现，但{{tr|Queen Slime}}的{{tr|crown}}不会。
+** 这可能是因为她不仅在死亡时掉落{{tr|crown}}，还会掉落翅膀。
+{{bestiary}}
+
+== 另见 ==
+* [[{{tr|Slimes}}]]，一种常见的[[{{tr|enemy}}]]类型。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 第二阶段的最大飞行速度和加速度都降低了大约 15%。
+** 史莱姆皇后的仆从的射弹伤害从 30/80/150 降低至 30/68/120。
+** 上述这些射弹现在会产生一些光，以使其在晚上更容易看见。
+** 现在占用更多的敌怪栏，以便在战斗中减少甚至阻止敌怪生成。}}
+{{history|Desktop 1.4.1|现在掉落[[{{tr|Blade Staff}}]]。}}
+{{history|Desktop 1.4.0.5|修正了一个 {{tr|NPC}} 平滑处理方面的问题。}}
+{{history|Desktop 1.4.0.3|修复了可同时召唤超过一只的 bug。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.3 及 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.3 及 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.3 及 1.4.0.5 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Slimes}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Queen Slime}}

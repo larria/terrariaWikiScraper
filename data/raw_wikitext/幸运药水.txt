@@ -1,0 +1,62 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| name = Luck Potions
+| imagealt = [[File:Lesser Luck Potion.png|link=|{{tr|Lesser Luck Potion item sprite}}]] [[File:Luck Potion.png|link=|{{tr|Luck Potion item sprite}}]] [[File:Greater Luck Potion.png|link=|{{tr|Greater Luck Potion item sprite}}]]
+| auto = 4477
+| type = Potion
+| sell = <!-- hide sell value; it is different for each potion -->
+| duration = <!-- hide buff duration; it is different for each potion -->
+| id = 4477–4479
+| cargo = no
+}}
+
+'''{{tr|Luck Potions}}'''是三种能够提供[[{{tr|Lucky (buff)}}|{{tr|Lucky buff}}]]的[[{{tr|buff potions}}]]的统称，它们可以提高玩家的[[{{tr|Luck}}]]。{{potionlength|5–15 分钟}} 
+
+使用弱效、常规、或{{tr|Greater Luck Potion}}会分别提供 5、10、或 15 分钟的{{tr|Lucky buff}}。此{{tr|buff}}的独特之处在于其效果取决于剩余的{{tr|duration}}，如下所示：
+
+{| class="terraria"
+! 剩余时间 !! {{tr|Luck}}增幅
+|-
+| 大于 10 分钟 || +0.3
+|-
+| 大于 5 分钟 || +0.2
+|-
+| 5 分钟或更少 || +0.1
+|}
+
+这些数值不会叠加，不同{{tr|Luck Potions}}之间唯一的区别是其效果的{{tr|duration}}：<!-- The effects and differences of these potions can be a bit confusing at first. Hence we explicitly list the effect of each potion to avoid confusion. -->
+* 使用{{tr|Lesser Luck Potion}}（5 分钟{{tr|Lucky}}）提供 5 分钟的 +0.1 {{tr|luck}}。
+* 使用常规的{{tr|Luck Potion}}（10 分钟{{tr|Lucky}}）提供 5 分钟的 +0.2 {{tr|luck}}，然后是 5 分钟的 +0.1 {{tr|luck}}。
+* 使用{{tr|Greater Luck Potion}}（15 分钟{{tr|Lucky}}）提供 5 分钟的 +0.3 {{tr|luck}}，然后是 5 分钟的 +0.2 {{tr|luck}}，然后则是 5 分钟的 +0.1 {{tr|luck}}。
+
+== 类型 ==
+{{options/set|item infobox|view=table|cols=item2cells-anchor-nolink/buffduration/sell}}
+{{options/set|item|icons=n}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Potion}} !! {{tr|Buff duration}} !! {{tr|Sell value}}
+|-
+{{item infobox|type=Potion|auto=4477}}
+{{item infobox|type=Potion|auto=4478}}
+{{item infobox|type=Potion|auto=4479}}
+|}{{options/reset|item}}{{options/reset|item infobox}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|result=LIKE %Luck Potion|expectedrows=3}}
+
+== 小贴士 ==
+* 将[[{{tr|Black Pearl}}]]和[[{{tr|Pink Pearl}}]]制作成{{tr|Luck Potions}}总是比直接卖出它们获利更多。计入其他{{tr|materials}}，这样做可以分别将它们的{{tr|sell value}}提高 {{sell expr|Luck Potion|-|Black Pearl|-|Bottled Water|-|Waterleaf|-|Ladybug}} 和 {{sell expr|Greater Luck Potion|-|Pink Pearl|-|Bottled Water|-|Waterleaf|-|Ladybug}}。
+* {{tr|Pink Pearls}}较为罕见。获得它的玩家应当考虑将其制作为[[{{tr|Galaxy Pearl}}]]而非{{tr|Greater Luck Potion}}（除非已经使用了一个）。{{tr|Galaxy Pearl}}提供了永久的{{tr|luck}}{{tr|boost}}（不过增幅较小），而{{tr|Greater Luck Potion}}只提供暂时的{{tr|boost}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Duration}}由 3/5/10 分钟提升至 5/10/15 分钟。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Luck Potions}}

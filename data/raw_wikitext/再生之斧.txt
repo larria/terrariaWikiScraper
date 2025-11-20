@@ -1,0 +1,36 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| type = Weapon / Tool
+| auto = 5295
+}}
+
+'''{{tr|Axe of Regrowth}}'''是一种多功能[[{{tr|tool}}]]。它有和[[{{tr|Staff of Regrowth}}]]相同的功能，在收集[[{{tr|herb}}]]和{{tr|herb seed}}时，对收获量的增加相同，还可以用于在[[{{tr|dirt}}]]上创造[[{{tr|grass}}]]。它也可以被用作[[{{tr|axe}}]]，具有在砍伐[[{{tr|tree}}]]后在其下方的{{tr|grass block}}上立即种下[[{{tr|Acorn}}]]的独特特性。
+
+{{modifier|harvest}}
+
+== 制作 ==
+=== 配方 === 
+{{recipes|result=Axe of Regrowth|expectedrows=2}}
+
+== 备注 ==
+* 仅有能从{{tr|Acorn}}生长而来的{{tr|trees}}会受到影响。
+** 当用于砍伐[[{{tr|Cactus}}]]、[[{{tr|gem trees}}]]、或[[{{tr|Giant Glowing Mushroom}}]]时，不会放置任何东西。
+** 当用于砍伐[[{{tr|vanity trees}}]]时，只会种下普通的{{tr|Acorns}}，而非[[{{tr|Sakura Sapling}}]]/[[{{tr|Yellow Willow Sapling}}]]。
+* {{tr|Axe of Regrowth}}不需要消耗{{tr|player}}{{tr|inventory}}中的{{tr|Acorn}}以种植{{tr|tree}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseMiningTools_ActuallyUseMiningTool}}
+*当在手中时，{{tr|projectiles}}（如{{tr|Grappling Hooks}}和{{tr|Minions}}）也会收集成熟{{tr|herbs}}的{{tr|seed}}。
+
+== 小贴士 ==
+* 因为[[{{tr|Staff of Regrowth}}]]可在[[{{tr|Underground Jungle}}]]找到，玩家此时可能已经收集了足够多的{{tr|materials}}以立即将其制作成{{tr|Axe of Regrowth}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprite updated.}}旧的{{tr|sprite}}是 [[File:Axe of Regrowth (pre-1.4.4.9).png|link=]]}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Axe of Regrowth}}

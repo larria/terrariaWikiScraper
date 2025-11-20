@@ -1,0 +1,49 @@
+== 玩家相关机制 ==
+* [[{{tr|Aggro}}]] – '''{{tr|Aggro}}'''决定了{{tr|enemies}}开始攻击玩家的距离。
+* [[{{tr|Attack speed}}]] – '''{{tr|Attack speed}}'''的处理方式类似于[[{{tr|movement speed}}]]：增幅将累加，但上限是 4 倍于原始速度。
+* [[{{tr|Breath meter}}]] – 当玩家的头部在[[{{tr|water}}]]或[[{{tr|honey}}]]中时，'''{{tr|Breath meter}}'''会立即出现在玩家上方，它代表着玩家还有多少时间开始溺水。
+* [[{{tr|Buffs}}]] – '''{{tr|Buff}}'''是玩家使用特定物品之后在属性点或视觉效果方面得到的特定收益。各种{{tr|buff}}的持续时间从 30 秒到 48 分钟不等。
+* [[{{tr|Critical hit}}]] – 每次玩家击中{{tr|enemy}}时均有小几率发生'''{{tr|critical hit}}'''。它会造成双倍于普通打击的伤害。
+* [[{{tr|Damage types}}]] – {{tr|Weapons}}被分类为不同的'''{{tr|damage types}}'''，包括{{tr|melee, ranged, magic, and summon}}。不同的{{tr|equipments and consumables}}提供针对不同{{tr|damage types}}的{{tr|bonuses}}。
+* [[{{tr|Death}}]] – '''{{tr|Death}}'''会在{{tr|character}}的[[{{tr|health}}]]降为零时发生。{{tr|death}}时将根据人物的{{tr|difficulty}}与（{{tr|multiplayer}}中）{{tr|server settings}}的不同来掉落物品。{{tr|death}}时会显示一条[[{{tr|status message}}]]，内容则依赖于{{tr|death}}原因。
+* [[{{tr|Debuffs}}]] – '''{{tr|Debuff}}'''是暂时性的负面状态效果。不同于{{tr|buff}}，{{tr|debuff}}无法被无代价地在任何时间取消，而是需要付钱给[[{{tr|Nurse}}]] {{tr|NPC}} 来取消{{tr|debuff}}。
+* [[{{tr|Defense}}]] – '''{{tr|Defense}}'''数字决定每次被击中时会有多少伤害被吸收掉。它在{{tr|Expert and Master Mode}}中会更有效。
+* [[{{tr|Difficulty}}]] – {{tr|A character}}的'''{{tr|difficulty}}'''是在创建{{tr|character}}的过程中选择的，仅应用于此{{tr|character}}本身。{{tr|character}}的{{tr|difficulty}}决定了其{{tr|death}}时会发生什么。
+* [[{{tr|Fall damage}}]] – '''{{tr|Fall damage}}'''指的是{{tr|player character}}在下落很长距离后落在实心地面上时所承受的伤害。
+* [[{{tr|Health}}]] – '''{{tr|Health}}'''是{{tr|character}}的生命数值，通过屏幕右上方的心形图标条所代表。显示出来的每个[[{{tr|Life Crystal}}|红色心]]代表 20 {{tr|health}}。每个[[{{tr|Life Fruit}}|金色心]]代表 25 {{tr|health}}。
+* [[{{tr|Inventory}}]] – '''{{tr|Inventory}}'''是一组空位，物品将出现于此，也可存放于此。
+* [[{{tr|Knockback}}]] – '''{{tr|Knockback}}'''是一种基本机制，{{tr|players and enemies}}会沿着攻击的相反方向被推开。
+* {{eil|Luck}} – '''{{tr|Luck}}'''是一种影响多项活动的随机性的机制。
+* [[{{tr|Mana}}]] – '''{{tr|Mana}}'''是玩家使用[[{{tr|magic weapons}}]]与[[{{tr|tools}}]]时所需要用到的一种资源。玩家的当前{{tr|mana}}与{{tr|maximum mana}}显示为屏幕右侧的垂直[[{{tr|Mana Crystal}}|蓝色星星]]条。
+
+== 物品 ==
+* [[{{tr|Autoswing}}]] – '''{{tr|Autoswing}}'''是物品的一项属性，当按住{{key|use}}不放时，具备此种属性的{{tr|weapon}}会反复使用或激活。在{{3DS}}中几乎所有武器都有{{tr|autoswing}}属性。
+* [[{{tr|Modifier}}]] – '''{{tr|Modifier}}'''会改变{{tr|item}}的属性。[[{{tr|Weapons}}]]和[[{{tr|accessories}}]]在被制作出来、作为战利品在[[{{tr|Chests}}]]中出现、或由{{tr|enemies}}掉落时，都有几率具有随机分配的{{tr|Modifier}}。
+* [[{{tr|Rarity}}]] – '''{{tr|Rarity}}'''通常作为物品有多难得到以及多有价值的衡量尺度。
+* [[{{tr|Use time}}]] – '''{{tr|Use time}}'''是应用于{{tr|weapons}}、[[{{tr|tools}}]]、和其他可使用的{{tr|items}}的一种属性，它决定了使用物品之后需要过多少时间才能再次使用同个或另一个物品。
+* [[{{tr|Value}}]] – '''{{tr|Value}}'''是以物品值多少{{tr|coins}}来描述的。如果{{tr|item}}由 [[{{tr|NPC}}]] 售卖，{{tr|Value}}也将是 {{tr|NPC}} 给出的售价。
+* [[{{tr|Velocity}}]] – '''{{tr|Velocity}}'''是[[{{tr|weapon}}]]发射的{{tr|projectile}}的速度。不应将其与[[{{tr|use time}}]]相混淆，后者是物品多快能再次使用（即：快、平均、慢，指的是间隔）。
+
+== NPC相关机制 ==
+* [[{{tr|AI}}]] –  '''{{tr|AI}}'''（或'''人工智能'''）指的是 [[{{tr|NPC}}]]、[[{{tr|Enemy}}]]、或[[{{tr|Critter}}]]展现出来的行为方式。例如，[[{{tr|Caster AI}}]] 总是先传送，然后射击三次，随后停顿三秒，然后再次传送。
+* [[{{tr|NPC spawning}}]] – {{tr|NPCs, enemies, and critters}}会在屏幕外生成并根据其 {{tr|AI}} 行动。其生成的频率、最大的生成数量、和生成的类型都取决于[[{{tr|Day and night cycle}}|一天中的时段]]、[[{{tr|biome}}]]、地面的[[{{tr|Blocks}}|{{tr|the tile type}}]]、和其他因素。
+* [[{{tr|NPC drops}}]] – 大部分[[{{tr|enemies}}]]被杀死时会掉落[[{{tr|coins}}]]，很多还会有几率掉落{{tr|items}}。一些{{tr|town NPCs}} 也拥有掉落。
+
+== 世界 ==
+* [[{{tr|Day and night cycle}}]] – '''{{tr|day and night cycle}}'''指的是{{tr|sun}}和[[{{tr|moon}}]]的升起与落下，以及这对{{tr|world}}的影响。
+* {{eil|Expert Mode}} – '''{{tr|Expert}}'''是一个{{tr|world difficulty}}设置，在世界创建过程中选择。一旦{{tr|world}}已被生成，此{{tr|world}}的这一设置就无法再被改变。
+* {{eil|Master Mode}} – '''{{tr|Master}}'''是另一个{{tr|world difficulty}}设置，规则和{{tr|Expert}}一致，但整体上{{tr|enemy}}、{{tr|boss}} 的 {{tr|AI}} 和属性都更困难。
+* {{eil|Journey Mode}} – '''{{tr|Journey}}'''是另一个{{tr|world difficulty}}设置，玩家对{{tr|world}}有更大的控制权（如时间、天气等）。
+* [[{{tr|Lighting mode}}]] – '''{{tr|lighting mode}}'''决定了如何渲染{{tr|world}}中从各种光源发出的光线。它可在''{{tr|Terraria}}''的[[{{tr|settings}}]]菜单的“图像”子菜单内。
+* [[{{tr|World size}}]] – '''{{tr|World size}}'''指的是单个''{{tr|Terraria}}''{{tr|world}}的大小。可用的大小取决于游玩的平台。
+* [[{{tr|Moon phase}}]] – '''{{tr|moon}}'''会以八个不同的'''相'''为周期循环变化，每个[[{{tr|night}}]]都会推移为相邻的下一个{{tr|Moon phase}}。当前的{{tr|Moon phase}}由当晚{{tr|moon}}可见部分比例表示。
+* [[{{tr|Music}}]] – ''{{tr|Terraria}}''拥有超过九十首'''{{tr|music}}'''曲目。每一首{{tr|music}}都会在玩家处于特定{{tr|biome}}或特定{{tr|events}}发生时无限循环播放。
+* [[{{tr|Spawn}}]] – '''{{tr|world spawn point}}'''是玩家在新创建的[[{{tr|world}}]]中，或加入[[{{tr|multiplayer}}]][[{{tr|server}}]]时所出现的位置。对于常规{{tr|world}}，{{tr|world spawn point}}将位于{{tr|world}}水平中心点五格范围内的表面上。
+* [[{{tr|Evil biome}}]] – 每个{{tr|world}}生成时会带有[[{{tr|The Crimson}}]]或[[{{tr|The Corruption}}]]。在{{eversions|1.3.2|short=y}}中，玩家可以在创建{{tr|world}}时选择{{tr|biome}}。
+* {{eil|RGB}} – '''{{tr|RGB}}'''光效可对支持的 Razer、Logitech、Corsair、和 SteelSeries 外置设备生效。 
+
+{{Game mechanics}}
+
+[[Category:游戏机制| ]]
+
+{{language info|en=Game mechanics}}

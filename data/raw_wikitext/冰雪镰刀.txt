@@ -1,0 +1,58 @@
+{{legacy nav tab}}
+{{item infobox| boxwidth = 22em
+| auto = 1306
+| sound1 = Item 27.wav
+| soundcaption1 = {{tr|Impact}}
+| tags = Drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Death Sickle|Sickle}}
+[[File:Ice Sickle (demo).gif|frame| 使用中的{{tr|The Ice Sickle}}。]]
+<!--
+
+>>> If you find this item in an Ice Chest, please go to the [[Talk:Ice Sickle|discussion page]] and tell us what platform you are using, as it is not supposed to be there. <<<
+
+-->
+'''{{tr|Ice Sickle}}'''是一个[[{{tr|Hardmode}}]][[{{tr|swords}}]]，当它挥动时，它会发射一个旋转的蓝色{{tr|sickle}}{{tr|projectile}}，造成{{tr|weapon}}67%的伤害({{#expr:floor({{iteminfo|Ice Sickle|damage}}*0.67)}} 基础伤害)，且最多可以穿透3个{{tr|enemies}}。{{tr|projectile}}会逐渐减速，在移动3秒后消散。它可以由[[{{tr|Armored Viking}}]]、[[{{tr|Ice Elemental}}]]、[[{{tr|Ice Tortoise}}]]、和[[{{tr|Icy Merman}}]]以{{chance|1/100}}的概率掉落。
+
+{{modifier|melee}}
+
+== 备注 ==
+*  {{tr|Ice Sickle}}{{tr|projectile}}命中后产生8 {{tr|ticks}}{{tick}}的{{tr|static invincibility frames}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* 像[[{{tr|Death Sickle}}]]一样，这把{{tr|weapon}}的{{tr|projectile}}的距离会随{{tr|melee speed}}增加而变远。
+
+== 小贴士 ==
+* 该{{tr|weapon}}对于近距离控场非常有效，因为大多数{{tr|enemies}}会在试图穿过悬停的{{tr|projectile}}时被{{tr|knockback}}并受到大量{{tr|damage}}。它也可以作为对抗[[{{tr|Worms}}]]类{{tr|enemies}}（如[[{{tr|The Destroyer}}]]、[[{{tr|Dune Splicer}}]]、和[[{{tr|World Feeder}}]]）的有力{{tr|weapon}}——每个{{tr|projectile}}都可以对这类{{tr|enemies}}造成多段{{tr|damage}}。
+
+== 花絮 ==
+* 其英文名称“Ice Sickle”（{{tr|Ice Sickle}}）是对词语“''{{wiktionary|icicle}}''”（冰柱）的文字游戏。
+* Ice Sickle 的英文名称其实不太恰当，由于它的柄比镰刀长，其刃部没有镰刀那么弯曲，因而它更像现实生活中的 {{wikipedia|scythe}}（大镰，其柄比镰刀更长）而非 {{wikipedia|sickle}}（镰刀）。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|
+** {{tr|Projectile damage}}从造成{{tr|base damage}}的 50% 提升至 67%.
+** {{tr|projectile}}的穿透数量从 3 提升至 4。
+}}
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 42 提升至 50。
+** {{tr|Ice Sickle projectiles}}的范围提升 50%。
+** {{tr|Projectile damage}}由{{tr|base damage}}的 100% 降低至 50%。
+** {{tr|Projectile}}改为使用{{tr|static invincibility frame}}，并降低了命中间的{{tr|static invincibility time}}（会略微更频繁地造成{{tr|base damage}}）。
+** {{tr|Projectile}}的穿透数量由 5 降低至 3。
+** 掉落几率由 1/180 提升至 1/100。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|damage}}由 40 提升至 42。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+== 参考== 
+{{reflist}}
+
+{{projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Ice Sickle}}

@@ -1,0 +1,40 @@
+{{exclusive|1.2.2}}
+{{christmas only}}
+{{item infobox
+| auto = 1918
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 14 {{eicons|1.2.2|not=1.4.4|small=y}}
+| listcat = Boomerangs
+| tags = bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Fruitcake Chakram (demo).gif|frame|right|{{tr|The Fruitcake Chakram}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Fruitcake Chakram}}'''是在[[{{tr|Christmas}}|{{tr|Christmas seasonal event}}]]期间获得的[[{{tr|Present}}]]中掉落的[[{{tr|boomerang}}]]类的{{tr|weapon}}，[[{{tr|pre-Hardmode}}]]的几率为 0.626% 而[[{{tr|Hardmode}}]]是 0.584%。不像[[{{tr|Thorn Chakram}}]]，它不会在[[{{tr|block}}]]上反弹。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|The Fruitcake Chakram}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 23.44 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|Fruitcake Chakram}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|The Fruitcake Chakram}}返回玩家时的最高速度为 {{mph|12 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 花絮 ==
+* {{维基百科|chakram|旋刃}}在历史上是在印度使用的武器。它是一个有着锋利外缘的扁平金属环，可以抛向敌人，但不会返回。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 14 提升至 19。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.04|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Fruitcake Chakram}}

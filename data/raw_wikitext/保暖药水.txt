@@ -1,0 +1,84 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| type = Potion
+| auto = 2359
+}}
+
+'''{{tr|Warmth Potion}}'''是一种[[{{tr|buff potion}}]]，在使用时提供'''{{tr|Warmth}}'''[[{{tr|buff}}]]。该{{tr|buff}}可减少 30% 来自寒冷主题的[[{{tr|enemies}}]]的伤害（[[#受影响的实体|见下表]])。{{potionlength}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Warmth Potion|expectedrows=1}}
+
+== 受影响的实体 ==
+当{{tr|Warmth buff}}生效时，来自下列{{tr|enemies}}的伤害会被减少：
+{{#vardefine:coldDamage_enemies|{{#loop:i|1|{{npcIdFromInternalName|Count}}|{{#if:{{npcinfo|{{#var:i}}|coldDamage}}|₪{{npcNameFromId|{{#var:i}}}}}}}}}}<!--
+-->{{#listmap:<!--
+	-->|list={{#var:coldDamage_enemies}}<!--
+	-->|insep=₪|outsep=<!--
+	-->|token=@@@@<!--
+	-->|pattern=<esc>{{itemlist/item|{{item|@@@@|maxsize=50x50px}}}}</esc><!--
+	-->|sortmode=sort<!--
+	-->|intro={{itemlist/start|class=terraria|width=12em}}<!--
+	-->|outro={{itemlist/end}}<!--
+-->}}
+
+{{eicons|1.3.0.1}} 另外，那些由[[{{tr|Selenian}}]]、[[{{tr|Expert}}]][[{{tr|Biome Mimic}}]]或[[{{tr|Dreadnautilus}}]][[{{tr|List of reflected projectiles}}|反弹]]回来的玩家{{tr|projectiles}}造成的伤害亦会被{{tr|Warmth}}削弱。这种削弱发生在最初的伤害因反射而减半之后。下列{{tr|projectile}}会受到影响：<!--
+
+-->{{#arraydefine:list|118,119,120,166,172,253,309,337,344,359,520,979|,}}<!--
+
+-->{{#vardefine:source_118|[[{{tr|Ice Blade}}]]}}<!--
+-->{{#vardefine:source_119|[[{{tr|Frostbrand}}]]}}<!--
+-->{{#vardefine:source_120|使用任意类型[[{{tr|arrow}}]]的[[{{tr|Ice Bow}}]]}}<!--
+-->{{#vardefine:source_166|[[{{tr|Snowball}}]]、[[{{tr|Snowball Cannon}}]]、[[{{tr|Snowball Launcher}}]]}}<!--
+-->{{#vardefine:source_172|使用[[{{tr|FrostBurn Arrow}}]]的任意标准[[{{tr|
+bow}}]]/[[{{tr|repeater}}]]}}<!--
+-->{{#vardefine:source_253|[[{{tr|Flower of Frost}}]]}}<!--
+-->{{#vardefine:source_309|[[{{tr|Staff of the Frost Hydra}}|{{tr|Frost Hydra}}]]}}<!--
+-->{{#vardefine:source_337|[[{{tr|Blizzard Staff}}]]}}<!--
+-->{{#vardefine:source_344|[[{{tr|North Pole}}]]}}<!--
+-->{{#vardefine:source_359|[[{{tr|Frost Staff}}]]}}<!--
+-->{{#vardefine:source_520|[[{{tr|Frost Daggerfish}}]]、[[{{tr|Angler}}]]}}<!--
+-->{{#vardefine:source_979|[[{{tr|Wand of Frosting}}]]}}<!--
+-->{{options/set|item|icons=no|mode=table|nolink=y|class=block aligncenter}}<!--
+-->{{flexstart}}<!-- this flexbox ensures that the table is displayed next to the {{item infobox}} on wider screens (instead of below it) -->
+{| class="terraria sortable mw-collapsible mw-collapsed" style="width:100%"
+|-
+! colspan=4 | {{tr|Projectile}}
+|-
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]] !! 图像 !! {{tr|Name}} !! {{tr|Source}}
+{{#arrayprint:list|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]]</td>
+<td>{{projectileinfo|@@@@|name}}</td>
+<td>{{#var:source_@@@@|{{na}}}}</td>
+</tr>
+}}
+|}{{options/reset|item}}
+{{flexend}}
+
+== 备注 ==
+* {{tr|Warmth buff}}在 [[{{tr|PvP}}]] 中，并不能影响寒冷主题{{tr|weapons}}的伤害。
+* 尽管在{{3DS version}}上有{{tr|Frost Minnow}}，并且在其[[{{tr|tooltip}}]]中列出了“材料”，但由于游戏中没有{{tr|Shiverthorn}}，因此无法制作{{tr|Warmth Potion}}。
+* 其{{tr|damage reduction}}与[[{{tr|Endurance Potion}}]]乘算叠加，总计可以减少{{tr|ice enemy}}的 37% {{tr|damage}}。
+* {{tr|The Warmth buff}}无法减免来自[[{{tr|Frozen Zombie}}]]、{{eicons|1.4.4|invert=y}} [[{{tr|Ice Mimic}}]]以及{{eicons|1.4.4|invert=y}} [[{{tr|Ice Tortoise}}]]的{{tr|damage}}（尽管它们都以寒冷为主题）。
+
+== 小贴士 ==
+* 此物品在[[{{tr|Frost Legion}}]]和[[{{tr|Frost Moon}}]][[{{tr|events}}]]期间非常有利，因为他们的许多敌人都受到{{tr|Warmth buff}}的影响。此外，它将持续整个{{tr|Frost Moon}}的时间。
+* 虽然{{eil|Deerclops|Deerclops}}的部分{{tr|attacks}}与冰雪无关，但它们造成的{{tr|damage}}仍然会降低 30%。这让此{{tr|potion}}在战斗中非常有用。
+
+== 花絮 ==
+* 尽管名字如此，这个{{tr|buff}}不能防止[[{{tr|Chilled}}]]{{tr|debuff}}。这样做的唯一方法是使用{{tr|accessories}}，如[[{{tr|Hand Warmer}}]]、[[{{tr|Ankh Shield}}]]或[[{{tr|Arctic Diving Gear}}]]。
+* {{tr|The Frost Minnow and Shiverthorn}}都是{{tr|Warmth Potion}}的制作材料，并且都获取于[[{{tr|Snow biome}}]]（一个以寒冷为主题的{{tr|biome}}）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在能提高对{{tr|Ice Bat}}、{{tr|Ice Tortoise}}、{{tr|Ice Mimic}}和{{tr|Yeti}}{{tr|contact damage}}的防护。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Warmth Potion}}

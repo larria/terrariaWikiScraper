@@ -1,0 +1,61 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| hardmode = yes
+| auto = 3476
+| idprojectile = 617, 618, 620
+| sound1 = Item 14.wav
+| soundcaption1 = {{tr|impact}}
+}}
+
+'''{{tr|Nebula Arcanum}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|magic weapon}}]]，它会发射一个紫色的漩涡球体。球体会缓慢地自动追踪 50 {{tr|tile}}范围内的[[{{tr|enemies}}]]，从[[{{tr|block}}]]上反弹，击中三次后爆炸成 10–16 个更小的碎片{{tr|projectiles}}，每个碎片造成 65% {{tr|weapon}}面板伤害（{{#expr:floor({{iteminfo|Nebula Arcanum|damage}}*0.65)}} {{tr|base damage}}），与 80% 武器[[{{tr|knockback}}]]（{{knockback|full=y|{{#expr:floor({{iteminfo|Nebula Arcanum|knockback}}*0.8)}}|class=}} {{tr|base knockback}}），并且不能穿透。{{source code ref|name=kill|v=1.4.4.9|method=Terraria.Projectile.Kill}}三次击中并不需要全部针对同一目标，因为在其目标在第三次击中前死亡后它会继续追踪其它{{tr|enemies}}。如果{{tr|projectile}}没有击中三次，它会在 11 秒后爆炸。
+
+随着主球体的运动，其还会额外产生环绕它的粉色小{{tr|projectiles}}，它们会造成 50% {{tr|weapon}}面板{{tr|damage}}（{{#expr:floor({{iteminfo|Nebula Arcanum|damage}}*0.5)}} {{tr|base damage}}），穿过{{tr|blocks}}，不造成{{tr|knockback}}并穿透无数名{{tr|enemies}}。每个球体最多召唤八个这种{{tr|projectiles}}。在{{tr|projectile}}存在时间的前半段内，每秒出现两到三枚这样的小{{tr|projectile}}且并在将要爆炸时以相同的速率消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle == 118</code> 代码段。}}
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Nebula Arcanum|expectedrows=1}}
+
+== 备注 ==
+* 紫色主球体{{tr|projectile}}击中时造成 8 {{tr|tick}}[[{{tr|local invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* 小球体{{tr|projectiles}}击中时造成 20 {{tr|tick}}{{tr|local invincibility frame}}，且可存在{{duration|420 ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Projectile.SetDefaults}}
+* 爆炸对紫色球体{{tr|projectile}}为中心的 11×11-{{tr|tile}}方形区域造成伤害。<ref name="kill"/>
+* 爆炸所产生的碎片{{tr|projectiles}}可在{{tr|tile}}上反弹且在 {{duration|40 ticks}}后消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle == 29</code> 代码段。}}
+
+== 小贴士 ==
+* 在持续使用时，{{tr|Nebula Arcanum}}会快速消耗[[{{tr|mana}}]]。玩家在使用此物品时，应该准备好提供{{tr|mana}}的物品，如[[{{tr|Super Mana Potion}}]]和[[{{tr|Mana Regeneration Potion}}]]。
+* 持续时间、寻的属性、和环绕的{{tr|projectiles}}使{{tr|Nebula Arcanum}}成为一种有效的群怪清除武器。
+* {{tr|Nebula Arcanum}}能造成比[[{{tr|Moon Lord}}]]前任何{{tr|magic weapon}}都要高的{{DPS}}，但是更难击中快速移动的{{tr|enemies}}和[[{{tr|bosses}}]]。
+* {{tr|Nebula Arcanum}}可极其高效地摧毁[[{{tr|Celestial Pillars}}]]，因为它们不会移动且体积巨大的特性使得{{tr|Nebula Arcanum}}的所有效果造成全额伤害。
+* {{tr|Nebula Arcanum}}的伤害高到可以跳过[[{{tr|Empress of Light}}]]大部分的攻击模式，这使得白天与她战斗更加轻松。
+
+== 花絮 ==
+{{float file box|[[File:Nebula Arcanum (held).gif]]|使用此武器时，玩家手持的法球。}}
+[[File:Nebula Arcanum (demo).gif|frame|right|使用{{tr|Nebula Arcanum}}攻击[[{{tr|Target Dummy}}]]和一个[[{{tr|Mimics}}]]。]]
+* 使用{{tr|Nebula Arcanum}}时，它被显示为玩家拿着一个被一圈粉色光晕环绕旋转的暗紫色球体，{{tr|projectiles}}从球体中生成。
+* {{tr|The projectile}}和[[{{tr|Lunar Portal}}]]以及出现在[[{{tr|Vortex Pillar}}|{{tr|Vortex}}区域]]的传送门共享同一个外观，尽管它们的颜色不同。
+* {{tr|Nebula Arcanum}}物品状态的外观与典型的{{维基百科|水晶球}}形象类似：被一块布包裹以妥善储存。
+* {{tr|Nebula Arcanum}}与 2012 年的砍杀类动作角色扮演游戏《''{{wikipedia|Diablo III|暗黑破坏神 3（Diablo III）}}''》中的[https://diablo.fandom.com/wiki/Arcane_Orb 秘法光球（Arcane Orb）]十分相似，无论从外观上还是功能上。
+
+== 历史 ==
+{{history|Desktop 1.3.0.5|
+** {{tr|Projectile}}{{tr|speed}}提升。
+** {{tr|mana cost}}由 40 降低至 30。
+** {{tr|base damage}}由 80 降低至 70。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-nebula = yes
+}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+{{language info|en=Nebula Arcanum}}

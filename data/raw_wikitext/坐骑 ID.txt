@@ -1,0 +1,19 @@
+<div class="ajaxHide">
+{{main|数据 ID}}
+此页面列出了《[[{{tr|Terraria}}]]》中所有[[{{tr|mounts}}]]的 {{tr|IDs}}。
+[[Category:数据 ID]]
+</div>
+{| class="terraria sortable"
+! width="45px" | ID 
+! class="unsortable" | 图像
+! 名称
+! {{tr|Internal name}}<!--
+-->{{#vardefine:total|{{getMountInfo||count}}}}<!--
+-->{{#vardefine:i|0}}<!--
+-->{{#while:| {{#ifexpr:{{#var:i}}<{{#var:total}}|true}} |<!-- for $i = 0 to 50 -->
+<nowiki/>
+{{/row|{{#var:i}}}}
+{{#vardefine:i|{{#expr:{{#var:i}}+1}}}}}}
+|}
+
+{{language info|en=Mount IDs}}

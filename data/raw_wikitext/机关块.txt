@@ -1,0 +1,87 @@
+<div class="ajaxHide">
+{{main|{{tr|Block}}|{{tr|Trap}}}}
+</div>
+
+{| class="terraria sortable" width="100%"
+! {{tr|Block}}
+! {{tr|Environment}}
+! 可掠夺
+! 可制作
+! 备注
+|-
+| {{item|Active Stone Block}}
+| [[{{tr|Trap}}]]
+| {{yes}}
+| {{yes}}
+| 触发后变为{{tr|Inactive Stone Blocks}}。在世界中这通常会从上方掉落一块[[{{tr|Boulder}}]]，会造成巨大的伤害并一直滚动直到被障碍挡住。
+|-
+| {{item|Inactive Stone Block}}
+| [[{{tr|Trap}}]]
+| {{yes}}
+| {{yes}}
+| {{tr|Blocks}}不会自然生成为{{tr|Inactive Stone Blocks}}，但是可以从环境中掠夺到，只要它们所处的{{tr|trap}}已经被玩家触发。不像大多数{{tr|blocks}}，{{tr|Inactive Stone Blocks}}是[[{{tr|background object}}]]。它们不能直接互相叠[[{{tr|placed}}|放]]，玩家必须先以{{tr|Active Stone Blocks}}的形式{{tr|place}}它们，随后取消激活。触发它们会将其变回{{tr|Active Stone Blocks}}。
+|-
+| {{item|Explosives}}
+| [[{{tr|Trap}}]]
+| {{yes}}
+| {{yes}}
+| {{tr|Explosives}}是最罕见的{{tr|trap}}形式。在 [[1.2]] 之前{{tr|enemy}}通常会在玩家之前将其引爆；然而在新版本中{{tr|enemies}}不在会触发世界生成的{{tr|traps}}。{{tr|Explosives}}可能会连接到[[{{tr|Pressure Plates}}]]或[[{{tr|Detonator}}]]。在后一种情况中，它们往往出现在异常巨大的矿脉中心。触发{{tr|explosives}}会摧毁{{tr|blocks}}并在巨大的半径范围内造成极大的伤害，类似于[[{{tr|Dynamite}}]]。被爆炸波及的玩家几乎总是会立刻死亡。
+|-
+| {{item|Dart Trap}}
+| [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]、[[{{tr|Dungeon}}]]
+| {{yes}}
+| {{no}}
+| {{tr|Dart Traps}}在被触发时会射出一枚不受重力影响的飞镖。{{tr|The dart}}会穿透所有目标直到击中一堵墙。它造成中等的伤害，对玩家则此伤害会双倍。它还会造成[[{{tr|Poisoned}}]]{{tr|debuff}}。
+|-
+| {{item|Super Dart Trap}}
+| [[{{tr|Lihzahrd Temple}}]]
+| {{yes}}
+| {{no}}
+| {{tr|Super Dart Traps}}的功能与{{tr|regular Dart Traps}}完全相同，但会造成多得多的伤害。
+|-
+| {{item|Spear Trap}}
+| [[{{tr|Lihzahrd Temple}}]]
+| {{yes}}
+| {{no}}
+| 被触发时会刺出一支{{tr|spear}}，随后缩回。这会对触及的任何东西造成巨大的伤害。
+|-
+| {{item|Spiky Ball Trap}}
+| [[{{tr|Lihzahrd Temple}}]]
+| {{yes}}
+| {{no}}
+| 被触发时扔出会反弹的{{tr|spiky ball}}。这些球在消失之前会随机弹跳一段时间，对触及的任何东西造成巨大的伤害。
+|-
+| {{item|Flame Trap}}
+| [[{{tr|Lihzahrd Temple}}]]
+| {{yes}}
+| {{no}}
+| 被触发时射出一团火焰，造成很高的伤害并造成 [[{{tr|On Fire!}}]]{{tr|debuff}}。
+|-
+| {{item|Spike}}
+| [[{{tr|Dungeon}}]]
+| {{yes}}
+| {{no}}
+| {{tr|Spikes}}接触玩家会导致伤害，但是接触{{tr|enemies}}或友方 {{tr|NPC}} 则不会。
+|-
+| {{item|Wooden Spike}}
+| [[{{tr|Lihzahrd Temple}}]]
+| {{yes}}
+| {{no}}
+| {{tr|Wooden Spikes}}的功能和{{tr|Spikes}}类似，但是造成更多伤害。
+|-
+|{{item|Geyser}}
+| [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]
+| {{yes}}
+| {{no}}
+| {{tr|Geysers}}的功能和{{tr|Flame Traps}}类似，但是能射穿{{tr|blocks}}并且只能装在地板或天花板上。
+|}
+
+<div class="ajaxHide">
+{{Master Template Tiles
+| show-main = yes
+| show-blocks = yes
+}}</div>
+
+[[Category:{{tr|Block}}{{tr|items}}|*]]
+
+{{language info|en=Trap blocks}}

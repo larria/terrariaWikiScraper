@@ -1,0 +1,93 @@
+当玩家在淹没于[[{{tr|water}}]]或[[{{tr|honey}}]]中时[[{{tr|breath meter}}]]彻底耗尽时就会发生'''{{tr|Drowning}}'''。在{{tr|drowning}}时，玩家将会持续受到伤害，直到成功用[[{{tr|accessory}}]]、[[{{tr|potion}}]]或一块空气来与之对抗。否则，玩家最终将[[{{tr|Death}}]]。{{tr|drowning}}发生时的伤害速率无法减缓或加速，除非玩家装备有特定{{tr|accessories}}。
+
+[[{{tr|NPC}}]]如果卡住或者被强迫进入水中也会{{tr|drowning}}，这是一个非常有效的杀死 NPC 的方法。值得注意的是，[[{{tr|House|link=y}}#{{tr|House}}检验评估|{{tr|house}}检验]]并不受{{tr|liquids}}影响，意味着可以通过淹没他们的房屋来“自动”地淹死他们。唯一免疫{{tr|drowning}}的 {{tr|NPC}} 是{{eil|Skeleton Merchant}}，另外[[{{tr|Nurse}}]]可以足够快地治疗自己来对抗{{tr|drowning}}。
+
+只要有足够大的一块{{tr|water}}或{{tr|honey}}能完全淹没玩家，在任何地方都能发生{{tr|Drowning}}，自然条件下发生{{tr|Drowning}}主要是在[[{{tr|Ocean}}]]和[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]中。玩家可以手工触发溺水，方法是装备上[[{{tr|Fish Bowl}}]]。{{tr|Lava}}不能淹死玩家，而是会在接触时造成伤害。
+
+* 开始{{tr|drowning}}时的音效: {{sound||Drown.wav}}
+
+== 溺水时间 ==
+损失生命值的速度随着使用的呼吸{{tr|equipment}}或{{tr|potions}}而变化。下面显示的时间是实际时间（不是游戏时间）。
+
+{| class="terraria lined"
+! rowspan=2 | 物品
+! rowspan=2 | 生命损失速率
+! colspan=2 | 死亡所需时间
+|-
+! {{note|从 100 生命值开始|paren=y}}<br/>{{hp|100}} !! {{note|从 500 生命值开始|paren=y}}<br/>{{hp|500}}
+|-
+| 无
+| 17.14{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}7{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}
+| {{duration|100*7/2 ticks}} || {{duration|500*7/2 ticks}}
+|-
+| {{item|Breathing Reed}}
+| 8.57{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}14{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}
+| {{duration|100*7*2/2 ticks}} || {{duration|500*7*2/2 ticks}}
+|-
+|
+{| class="drowning-table-no-border" style="background-color:inherit;"
+|-
+| colspan=2 | 任意以下{{tr|diving equipment}}之一：
+{{#lstmap:{{equipinfo/list|accDivingHelm|sep=/}}|/|@@|<esc>
+|-
+| {{item|mode=table|showid=n|id=@@}}
+</esc>|}}
+|-
+| colspan=2 | {{note|这些并不叠加|paren=y}}
+|}
+| {{eicons|1.4.1}}: 2.86{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}42{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}<br/>{{eicons|1.4.1|invert=y}}: 4.29{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}28{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}
+| {{eicons|1.4.1}}: {{duration|100*7*6/2 ticks}}<br/>{{eicons|1.4.1|invert=y}}: {{duration|100*7*4/2 ticks}} || {{eicons|1.4.1}}: {{duration|500*7*6/2 ticks}}<br/>{{eicons|1.4.1|invert=y}}: {{duration|500*7*4/2 ticks}}
+|-
+| {{item|Breathing Reed|note2=搭配任何潜水设备}}
+| {{eicons|1.4.1}}: 1.43{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}84{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}<br/>{{eicons|1.4.1|invert=y}}: 2.14{{nbsp}}生命值/秒<br/>{{note|每{{nbsp}}56{{nbsp}}{{tr|ticks}}{{tick}}{{nbsp}}2{{nbsp}}生命值|small=y}}
+| {{eicons|1.4.1}}: {{duration|100*7*6*2/2 ticks}}<br/>{{eicons|1.4.1|invert=y}}: {{duration|100*7*4*2/2 ticks}} || {{eicons|1.4.1}}: {{duration|500*7*6*2/2 ticks}}<br/>{{eicons|1.4.1|invert=y}}: {{duration|500*7*4*2/2 ticks}}
+|-
+|
+{| class="drowning-table-no-border" style="background-color:inherit;"
+|-
+| colspan=2 | 任意以下{{tr|Merfolk equipment}}之一：
+|-
+| {{item|mode=table|Neptune's Shell}}
+|-
+| {{item|mode=table|Moon Shell}}
+|-
+| {{item|mode=table|Celestial Shell}}
+|}
+| colspan=3 | 玩家不会因溺水失去生命值
+|-
+| {{item|Gills Potion}}
+| colspan=3 | 玩家不会因溺水失去生命值
+|}
+
+* 注意{{tr|the Breathing Reed}}需要手持才能生效
+
+== 成就 ==
+{{achievement|name=Unusual Survival Strategies}}
+
+== 小贴士 ==
+* [[{{tr|Flipper}}]]及其升级品让玩家能游泳。这极大地有助于水下行进，通常可以大大降低溺水的可能性。如果附近有其他固体地形块，亦可使用{{$|hook}}替代。
+* [[{{tr|Water Walking Potion}}]]或[[{{tr|Water Walking Boots}}]]及其升级品允许在{{tr|liquids}}表面行走，防止意外溺水。不过，这依然有可能沉没。
+* 由于玩家在{{tr|honey}}中{{tr|movement speed}}会降低，因此装备不恰当时玩家有可能会卡在{{tr|honey}}里，很容易淹死。
+
+== 花絮 ==
+* 因{{tr|drowning}}{{tr|death}}将会显示以下[[{{tr|death message}}]]之一：
+** ''“{{gameText|DeathText.Drowned_1|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_2|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_3|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_4|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_5|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_6|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Drowned_7|x_0=&lt;{{tr|Player name}}&gt;}}”''
+
+== 历史 ==
+{{history|Desktop 1.2|
+** {{tr|Lava}}不再导致{{tr|drowning}}。
+** 引入{{tr|Honey}}，它可以淹死玩家。}}
+{{history|Desktop-Release|{{tr|Introduced}}，由{{tr|water}}和{{tr|lava}}引起。}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Drowning}}

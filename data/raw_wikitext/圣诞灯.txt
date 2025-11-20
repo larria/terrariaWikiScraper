@@ -1,0 +1,57 @@
+{{christmas only}}
+{{item infobox
+| imagealt = [[File:Blue Light.png]] [[File:Red Light.png]] [[File:Green Light.png]]<hr/>[[File:Christmas lights (placed).gif]]
+| type = Furniture / Mechanism
+| placeable = Yes
+| width = 1 | height = 1
+| stack = 9999
+| rare = {{rare|0}}
+| consumable = true
+| use = 15
+| buy = {{sc|5}}
+| sell = {{sc|1}}
+| idtile = 149
+| cargo = no
+}}
+
+'''{{tr|Christmas lights}}'''是一类装饰性的[[{{tr|light source}}]]，看起来很像{{tr|Christmas}}时使用的灯串，会发出微弱的光。它们可以放在[[{{tr|block}}]]的四个面上，并且可以使用[[{{tr|wire}}]]进行开关。虽然它们很暗以至于很难作为功能性的{{tr|light sources}}使用，但它们仍然可以满足[[{{tr|House}}]]对于{{tr|light source}}的需求。{{tr|Christmas lights}}能以 {{iteminfo|Blue Light|buy}} 的价格购买自[[{{tr|Santa Claus}}]]。
+
+{{tr|Christmas lights}}有三种可用的颜色，它们是分开售卖的。
+
+== 类型 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| boxwidth = 18em
+| auto = 596
+| type = Furniture / Mechanism
+| width = 1 | height = 1
+| tags = buy/vendor:Santa Claus
+}}
+|{{item infobox
+| boxwidth = 18em
+| auto = 597
+| type = Furniture / Mechanism
+| width = 1 | height = 1
+| tags = buy/vendor:Santa Claus
+}}
+|{{item infobox
+| boxwidth = 18em
+| auto = 598
+| type = Furniture / Mechanism
+| width = 1 | height = 1
+| tags = buy/vendor:Santa Claus
+}}
+}}
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+
+{{language info|en=Christmas lights}}

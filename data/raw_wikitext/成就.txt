@@ -1,0 +1,925 @@
+{{exclusive|desktop=y|console=y|old-gen console=y|mobile=y|switch=y}}
+
+'''{{tr|Achievements}}'''（'''Achievements'''，在{{icon|console|old-gen}}则称为 '''Accomplishments'''）是通过在《{{tr|Terraria}}》的{{tr|world}}中执行各种任务来获得的。
+
+== 1.3.0.1 中引入的{{tr|Achievements}} ==
+{{exclusive|1.3.0.1|section=y}}
+[[1.3.0.1]] 中引入了 88 个{{tr|achievements}}。
+* {{icon/xbox one}} Xbox One 版、{{icon/ps4}} 版、{{icon/ios}} iOS 及 {{icon/google play}} Google Play 版中''在游戏内成就之外''分别依然还有来自于{{old-gen console version}}和 GameCenter 和 Google Play 的{{tr|achievements}}，但这些{{tr|achievements}}已被弃用。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! 分类 !! 条件{{source code ref|v=1.4.3.6|method=Terraria.Initializers.AchievementInitializer.Load}}和备注
+|-
+| {{/row|Timber!!}}
+|
+* 可通过从任何来源拾取 10 种[[{{tr|wood}}]]中的任意一种来达成。
+* 在砍伐的树木倒下时，伐木工会用短语 ''{{wiktionary|timber#Interjection|Timber!}}''（即此{{tr|achievement}}的英文名）来警告他人。
+|-
+| {{/row|No Hobo}}
+|
+* 任何有效[[{{tr|housing}}]]均符合此{{tr|achievement}}的要求。
+* 参考了短语 ''{{维基百科|no homo}}''。<ref>译注：该短语的使用场合为加在容易产生歧义的发言之后，表明该发言和（男男）同性恋无关，例如：“We are really close, no homo.”（我们那关系可铁了。）/“We are really close.”（我们那关系可亲密了。）</ref>
+|-
+| {{/row|Stop! Hammer Time!}}
+|
+* 除了所有[[{{tr|hammers}}]]之外，也可以通过获得[[{{tr|Paladin's Hammer}}]]完成。
+* 参考了饶舌歌手 {{维基百科|MC Hammer}} 在 1990 年的流行饶舌歌曲{{维基百科|b=y|U Can't Touch This}}的一句歌词。
+|-
+| {{/row|Ooo! Shiny!}}
+|
+* 符合条件的[[{{tr|ores}}]]包括[[{{tr|Copper Ore}}]]、[[{{tr|Iron Ore}}]]、[[{{tr|Silver Ore}}]]、[[{{tr|Gold Ore}}]]、[[{{tr|Tin Ore}}]]、[[{{tr|Lead Ore}}]]、[[{{tr|Tungsten Ore}}]]、[[{{tr|Platinum Ore}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]、[[{{tr|Hellstone}}]]、[[{{tr|Cobalt Ore}}]]、[[{{tr|Mythril Ore}}]]、[[{{tr|Adamantite Ore}}]]、[[{{tr|Palladium Ore}}]]、[[{{tr|Orichalcum Ore}}]]、[[{{tr|Titanium Ore}}]]、和[[{{tr|Chlorophyte Ore}}]]。
+* {{tr|The achievement}}检查的是{{tr|ore tile}}的摧毁。除了[[{{tr|Block Swap}}]]以外的所有方法都可被使用；可用的选项包括直接采挖{{tr|ore}}（无论它是自然生成的还是手动放置的）、使用[[{{tr|explosives (class)}}]]、使用[[{{tr|Drill Mount}}]]、或使用[[{{tr|Digging Molecart}}]]。
+* {{tr|achievement icon}}中展示的{{tr|The ore}}是[[{{tr|Copper Ore}}]]。
+|-
+| {{/row|Heart Breaker}}
+|
+* [[{{tr|Actuator}}|致动]]{{tr|Life Crystal}}下方的{{tr|block}}来打破{{tr|Life Crystal}}不会得到此{{tr|achievement}}。
+* 可能参考了通关 2007 年的解谜游戏{{维基百科|b=y|Portal (video game)|Portal|t=传送门}}后所获得的{{tr|achievement}}。
+|-
+| {{/row|Heavy Metal}}
+|
+* 致敬了同名的音乐流派，它在游戏中经常被引用：[[{{tr|Plantera}}]]及其相关物品，以及[[{{tr|Blood Rain Bow}}]]。
+|-
+| {{/row|I Am Loot!}}
+|
+* {{tr|The Gold Chest}}不需要位于[[{{tr|underground}}]]，也不需要是天然生成的。{{source code ref|v=1.4.4.9|method=Terraria.Player.TileInteractionsUse}}
+* 此{{tr|achievement}}的英文名“I Am Loot!”参考了{{维基百科|b=y|Guardians of the Galaxy|t=银河护卫队}}系列中{{维基百科|Groot|t=格鲁特}}的台词“I Am Groot”（我是格鲁特），他重复了这一句台词无数遍。
+|-
+| {{/row|Star Power}}
+|
+* {{tr|The achievement}}检查的是[[{{tr|Mana Crystal}}]]的使用。仅仅是使用已经用过一个{{tr|Mana Crystal}}的{{tr|character}}不会起作用。
+|-
+| {{/row|Hold on Tight!}}
+|
+* 要得到这个{{tr|achievement}}，{{tr|hooks}}需要放在[[{{tr|Inventory}}#{{tr|Equipment}}|{{tr|grappling hook slot}}]]中。
+|-
+| {{/row|Eye on You}}
+|
+* 参考了“I've got my eye on you”（我盯上你了）这句话。
+|-
+| {{/row|Smashing, Poppet!}}
+|
+* 参考了{{维基百科|b=y|The Wild Thornberrys|t=原野小英雄}}，这是一部美国动画连续剧，最初于 1998 年至 2004 年在{{维基百科|Nickelodeon|t=尼克罗顿国际儿童频道}}播出。主角 Eliza Thornberry 的父亲 Nigel 的口头禅是“砸”（Smashing），而他通常叫他的女儿“小乖乖”（Poppet）。
+|-
+| {{/row|Worm Fodder}}
+|
+|-
+| {{/row|Mastermind}}
+|
+* 在此{{tr|achievement}}的[[File:Steam.svg|16px|link=|Steam]] Steam 版的描述中，“enormous”被错拼为“enourmous”。
+|-
+| {{/row|Where's My Honey?}}
+|
+* 只需要进入{{tr|Bee Hive}}。玩家背后必须是[[{{tr|Unsafe wall}}|不安全]]的[[{{tr|Hive Wall}}]]。
+* 参考了 2011 年的解谜电子游戏{{维基百科|b=y|Where's My Water?|t=鳄鱼小顽皮爱洗澡}}。
+|-
+| {{/row|Sting Operation}}
+|
+* 参考{{维基百科|Sting operation|t=缉捕圈套/钓鱼执法}}，这是一种通过欺骗手段捕获罪犯的执法手段。
+|-
+| {{/row|Boned}}
+|
+* 参考了“Owned”这个词，它通常在一个人在游戏中打败对手时用到。<ref>译注：此词通常是在胜利方以精彩的方式或较大优势下赢得对局时发送给失败方的，以示嘲讽或挑衅。</ref>
+|-
+| {{/row|Dungeon Heist}}
+|
+* {{tr|Achievement}}名称可能参考了 2011 年的抢劫喜剧电影{{维基百科|b=y|Tower Heist|t=高楼大劫案}}。
+|-
+| {{/row|It's Getting Hot in Here}}
+|
+* 参考了 2002 年 {{维基百科|Nelly}} 的嘻哈歌曲{{维基百科|b=y|Hot in Herre}}。
+* 在 [[1.4.0.1]] 之前，此{{tr|achievement}}的文件名错拼成了“Its Hetting Hot in Here”。
+|-
+| {{/row|Miner for Fire}}
+|
+|-
+| {{/row|Still Hungry}}
+|
+* 注意打败{{tr|the Wall of Flesh}}会在{{tr|pre-Hardmode}}的世界中开启[[{{tr|Hardmode}}]]。
+* 可能参考了 1984 年美国重金属乐队 {{维基百科|Twisted Sister}} 的专辑{{维基百科|b=y|Stay Hungry (album)|Stay Hungry}}。
+|-
+| {{/row|It's Hard!}}
+|
+* 必须在{{tr|pre-Hardmode}}的世界中打败[[{{tr|Wall of Flesh}}]]。
+* 如果玩家在{{tr|pre-Hardmode}}的{{tr|world}}中，那么在其他玩家打败[[{{tr|Wall of Flesh}}]]时也可以获得此{{tr|achievement}}。
+* 此{{tr|achievement}}的图像似乎展示了在{{tr|Hardmode}}中可获得的各种{{tr|souls}}。顺时针方向，从左上角开始，似乎是：[[{{tr|Soul of Sight}}]]、[[{{tr|Soul of Night}}]]、[[{{tr|Soul of Fright}}]]、[[{{tr|Soul of Light}}]]、[[{{tr|Soul of Flight}}]]、和（几乎看不见的）[[{{tr|Soul of Might}}]]。
+|-
+| {{/row|Begone, Evil!}}
+|
+* 任何有 80% {{tr|hammer power}}的[[{{tr|hammer}}]]或任何能摧毁{{tr|Altar}}的方式都可以，只要{{tr|Altar}}被摧毁即可。
+* 此{{tr|achievement}}只能在[[{{tr|Hardmode}}]]中获得。
+|-
+| {{/row|Extra Shiny!}}
+|
+* 符合条件的[[{{tr|ores}}]]包括[[{{tr|Cobalt Ore}}]]、[[{{tr|Mythril Ore}}]]、[[{{tr|Adamantite Ore}}]]、[[{{tr|Palladium Ore}}]]、[[{{tr|Orichalcum Ore}}]]、和[[{{tr|Titanium Ore}}]]。
+* {{tr|The achievement}}检查的是{{tr|ore tile}}的摧毁。除了[[{{tr|Block Swap}}]]以外的所有方法都可被使用；可用的选项包括直接采挖{{tr|ore}}（无论它是自然生成的还是手动放置的）、使用[[{{tr|explosives (class)}}]]、使用[[{{tr|Drill Mount}}]]、或使用[[{{tr|Digging Molecart}}]]。
+* {{tr|achievement icon}}展示了正在采挖[[{{tr|Mythril Ore}}]]的[[{{tr|Cobalt Drill}}]]。
+|-
+|{{/row|Head in the Clouds}}
+|
+* [[{{tr|Fledgling Wings}}]]也计入此{{tr|achievement}}。
+* {{tr|achievement icon}}中展示的{{tr|The wings}}似乎是[[{{tr|Angel Wings}}]]。
+|-
+| {{/row|Like a Boss}}
+|
+* 参考了歌曲{{维基百科|b=y|Like a Boss}}。
+|-
+| {{/row|Buckets of Bolts}}
+|
+|-
+| {{/row|Drax Attax}}
+|
+|-
+| {{/row|Photosynthesis}}
+|
+* {{tr|The achievement}}检查的是{{tr|ore tile}}的摧毁。除了[[{{tr|Block Swap}}]]以外的所有方法都可被使用；可用的选项包括直接采挖{{tr|ore}}（无论它是自然生成的还是手动放置的）、使用[[{{tr|explosives (class)}}]]、使用[[{{tr|Drill Mount}}]]、或使用[[{{tr|Digging Molecart}}]]。
+* 提及{{tr|Chlorophyte}}和{{维基百科|chlorophyll|叶绿素}}的相似性，叶绿素是植物中{{维基百科|photosynthesis|光合作用}}所必需的绿色色素。
+|-
+| {{/row|Get a Life}}
+|
+* {{tr|The achievement}}检查的是[[{{tr|Life Fruit}}]]的使用。仅仅是使用已经用过一个{{tr|Life Fruit}}的{{tr|character}}不会起作用。
+* 其名称（Get a Life）是[[{{tr|Life Fruit}}]]（Life Fruit）和嘲讽俚语 {{维基百科|Get a life (idiom)|get a life}}（讨生活/混口饭吃）的双关语。
+|-
+| {{/row|The Great Southern Plantkill}}
+|
+* 引用了 {{维基百科|Pantera}} 的第八张专辑{{维基百科|b=y|The Great Southern Trendkill}}。
+|-
+| {{/row|Temple Raider}}
+|
+* 参考了{{维基百科|b=y|Tomb Raider|t=古墓丽影}}媒体系列。
+|-
+| {{/row|Lihzahrdian Idol}}
+|
+* 参考了电视歌唱比赛系列{{维基百科|b=y|American Idol|t=美国偶像}}。
+|-
+| {{/row|Robbing the Grave}}
+|
+* 捡起{{tr|Dungeon}}中任意[[{{tr|Dungeon}}#{{tr|Hardmode}}{{tr|Plantera}}后的{{tr|Dungeon}}|{{tr|Plantera}}后的{{tr|enemy}}]]掉落的{{tr|weapon}}，不包括[[{{tr|Shadow Jousting Lance}}]]。
+|-
+| {{/row|Big Booty}}
+|
+* [[{{tr|Biome Chest}}]]只能用[[{{tr|Biome Keys}}]]在击败[[{{tr|Plantera}}]]之后打开。
+* {{tr|The achievement icon}}并不包含[[{{tr|Desert Key}}]]，这是因为此{{tr|achievement}}是在它被添加前引入的。
+|-
+| {{/row|Fish Out of Water}}
+|
+* 参考了词语 ''{{wiktionary|fish out of water}}''（如鱼离水），意思是某人离开了他的舒适区或专业领域。
+|-
+| {{/row|Obsessive Devotion}}
+|
+* 注意这会启动[[{{tr|Lunar Events}}]]。
+|-
+| {{/row|Star Destroyer}}
+|
+* 要注意打败全部四塔会召唤出[[{{tr|Moon Lord}}]]。
+* 可能参考了史诗太空歌剧媒体系列{{维基百科|b=y|Star Wars|t=星球大战}}系列中的{{维基百科|Star Destroyer|t=歼星舰}}。
+* 要求玩家在每个{{tr|Celestial Pillar}}被打败前对其造成过至少 1 点伤害。可以在不同世界打败各个{{tr|Celestial Pillar}}。
+|-
+| {{/row|Champion of Terraria}}
+|
+* 在 [[1.3.0.1]] 之前其图像是不同的，以避免在 1.3 发布之前泄露最终 {{tr|boss}} 的样子；曾经是{{tr|Moon Lord}}的剪影，只显示了他头顶的眼睛和他的轮廓。
+|-
+| {{/row|Bloodbath}}
+|
+|-
+| {{/row|Slippery Shinobi}}
+|
+* 英文名称 Slippery Shinobi 中的 ''Shinobi'' 是另一个用于称呼{{维基百科|ninja|t=忍者}}的单词，指的是{{tr|King Slime}}内的忍者。
+|-
+| {{/row|Goblin Punter}}
+|
+* 可能参考了 1937 年的奇幻小说{{维基百科|b=y|The Hobbit|t=霍比特人}}中的一句话。
+|-
+| {{/row|Walk the Plank}}
+|
+|-
+| {{/row|Kill the Sun}}
+|
+|-
+| {{/row|Do You Want to Slay a Snowman?}}
+|
+* 参考了 2013 年的迪士尼电影{{维基百科|b=y|Frozen (2013 film)|Frozen|t=冰雪奇缘}}，其中有一首歌名叫{{维基百科|b=y|Do You Want to Build a Snowman?|t=想要堆个雪人吗？}}
+|-
+| {{/row|Tin-Foil Hatter}}
+|
+* 以{{维基百科|Tin foil hat|t=锡箔帽}}命名，它通常和外星阴谋理论家联系在一起。
+|-
+| {{/row|Baleful Harvest}}
+|
+|-
+| {{/row|Ice Scream}}
+|
+* 引用了一首流行的儿童歌曲：“I scream, you scream, we all scream for ice cream!”（我也叫，你也叫，我们都叫着要吃冰淇淋）。
+|-
+| {{/row|Sticky Situation}}
+|
+|-
+| {{/row|Real Estate Agent}}
+|
+* [[{{tr|Traveling Merchant}}]]、[[{{tr|Old Man}}]]、和[[{{tr|Skeleton Merchant}}]]不是{{tr|Town NPCs}}，且此{{tr|achievement}}不考虑[[{{tr|Santa Claus}}]]。因此，只需要拥有剩下的 25 个{{tr|Town NPCs}}。
+|-
+| {{/row|Not the Bees!}}
+|
+* 不要将{{tr|Bee armor}}与[[{{tr|Bee set}}]]相混淆。
+* 参考了 2006 年的神秘恐怖电影{{维基百科|b=y|The Wicker Man (2006 film)|The Wicker Man|t=异教徒}}中的{{维基百科|Nicolas Cage|t=尼古拉斯·凯奇}}的一句台词。
+|-
+| {{/row|Jeepers Creepers}}
+|
+* ''{{wiktionary|jeepers creepers|Jeepers creepers}}'' 这一短语用来表达惊讶或烦恼。
+|-
+| {{/row|Funkytown}}
+|
+* 需要 100 格位于[[{{tr|surface}}]]的{{tr|Glowing Mushroom biome blocks}}。
+* 和迪斯科放克乐队 {{维基百科|Lipps, Inc.}} 1980 年的单曲{{维基百科|b=y|Funkytown}}同名。
+|-
+| {{/row|Into Orbit}}
+|
+* 到达[[{{tr|Space}}]]顶部。
+|-
+| {{/row|Rock Bottom}}
+|
+* 到达[[{{tr|The Underworld}}]]底部。
+|-
+| {{/row|Mecha Mayhem}}
+|
+* 所有[[{{tr|mechanical bosses}}]] 必须在{{tr|world}}中存在才会激活{{tr|achievement}}记录。
+* 所有 {{tr|bosses}} 都必须被玩家杀死；如果其中任何一个 {{tr|bosses}} 消失了，就不会获得{{tr|achievement}}。
+** 此限制仅适用于 {{tr|boss}} 本身。它不影响[[{{tr|Skeletron Prime}}]]的四肢和来自[[{{tr|the Destroyer}}]]的[[{{tr|Probe}}]]。
+* 可通过击败[[{{tr|Mechdusa}}]]获得。
+|-
+| {{/row|Gelatin World Tour}}
+|
+* 计入{{tr|this achievement}}的类型为：[[{{tr|Baby Slime}}]]、[[{{tr|Black Slime}}]]、[[{{tr|Blue Slime}}]]、[[{{tr|Corrupt Slime}}]]、[[{{tr|Crimslime}}]]、[[{{tr|Dungeon Slime}}]]、[[{{tr|Green Slime}}]]、[[{{tr|Ice Slime}}]]、[[{{tr|Illuminant Slime}}]]、[[{{tr|Jungle Slime}}]]、[[{{tr|King Slime}}]]、[[{{tr|Lava Slime}}]]、[[{{tr|Mother Slime}}]]、[[{{tr|Pinky}}]]、[[{{tr|Purple Slime}}]]、[[{{tr|Rainbow Slime}}]]、[[{{tr|Red Slime}}]]、[[{{tr|Slimeling}}]]、[[{{tr|Slimer}}]]（没翅膀的）、[[{{tr|Spiked Ice Slime}}]]、[[{{tr|Spiked Jungle Slime}}]]、[[{{tr|Toxic Sludge}}]]、[[{{tr|Umbrella Slime}}]]、和[[{{tr|Yellow Slime}}]]。其中七种是{{tr|Hardmode}}独有的、三种是{{tr|the Corruption}}独有的、一种是{{tr|the Crimson}}独有的。
+|-
+| {{/row|Fashion Statement}}
+|
+* 也被称为[[{{tr|Inventory}}#{{tr|Vanity Armor}}|{{tr|Vanity Armor slots}}]]。
+* 不能通过从[[{{tr|Inventory|link=y}}#{{tr|Main inventory}}|{{tr|main inventory}}]]用 {{key|open}} 装备第三个[[{{tr|vanity items}}|{{tr|vanity item}}]]来获得。
+|-
+| {{/row|Vehicular Manslaughter}}
+|
+*靠[[{{tr|Minecart Upgrade Kit}}]]的{{tr|lasers}}杀掉{{tr|enemy}}不算。
+|-
+| {{/row|Bulldozer}}
+|
+* 只有可以被[[{{tr|pickaxes}}]]或类似{{tr|tools}}采掘的{{tr|tiles}}（即{{tr|solid blocks}}、[[物体]]、[[{{tr|furniture}}]]等等）会计入此{{tr|achievement}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.PickTile / Terraria.GameContent.Achievements.AchievementsHelper.HandleMining}}
+** 采掘占用多格的物体时，无论物体的尺寸，{{tr|achievement}}计数仅会增加 1。
+* 只有用{{tr|pickaxes}}、[[{{tr|drill}}]]、[[{{tr|Gravedigger's Shovel}}]]、或[[{{tr|Drill Mount}}]]采挖的{{tr|tile}}会计入此{{tr|achievement}}。
+|-
+| {{/row|There are Some Who Call Him...}}
+|
+* 参考了{{维基百科|b=y|Monty Python and the Holy Grail|t=巨蟒与圣杯}}中的{{维基百科|Tim the Enchanter|t=魔法师蒂姆}}，以及他的话语“There are some who call me... Tim.”（有些人叫我...蒂姆。）
+|-
+| {{/row|Deceiver of Fools}}
+|
+* 需要在{{tr|Nymph}}形态下杀掉。在{{tr|Lost Girl}}变为{{tr|a Nymph}}之前就将其杀掉不算数。
+|-
+| {{/row|Sword of the Hero}}
+|
+|-
+| {{/row|Lucky Break}}
+|
+* 玩家落地后的{{tr|health}}必须低于最大[[{{tr|health}}]]的 10% 才能完成{{tr|this achievement}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+* [[{{tr|Stoned}}]]状态下无法获得此{{tr|achievement}}。
+* 如果有 500 {{tr|maximum health}}、0 {{tr|defense}}并且没有物品来消除[[{{tr|fall damage}}]]，玩家需要精确地下落 74 格（剩余 10 {{tr|HP}}）。
+|-
+| {{/row|Throwing Lines}}
+|
+|-
+| {{/row|Dye Hard}}
+|
+* [[{{tr|Inventory}}#{{tr|Armor Dye}}|3 个{{tr|armor dye slots}}]]、[[{{tr|Inventory}}#{{tr|Accessory Dye}}|5 个{{tr|accessory dye slots}}]]、和[[{{tr|Inventory}}#{{tr|Equipment}}|5 个{{tr|equipment dye slots}}]]（[[{{tr|Pet}}]]、[[{{tr|Light Pet}}]]、[[{{tr|Minecart}}]]、[[{{tr|Mount}}]]、和[[{{tr|Grappling hook}}]]）。
+* 参考了 1988 年美国动作惊悚片{{维基百科|b=y|Die Hard|t=虎胆龙威}}。
+|-
+| {{/row|Sick Throw}}
+|
+|-
+| {{/row|The Frequent Flyer}}
+|
+* 并不需要一次性完成。玩家可以经常去找[[{{tr|Nurse}}]]治疗，花费会累积起来。
+* 可以通过有目的地使[[{{tr|Nurse}}]]变得[[{{tr|Happiness}}|不快乐]]来让她收取更多{{tr|coins}}从而更快达成此成就。
+* 在游戏后期可以轻松完成此{{tr|The achievement}}，因为治疗的花费会随着游戏进度而提高。
+* 也可以用[[{{tr|Red Potion}}]]来快速得到此{{tr|achievement}}，因为它会导致大量{{tr|debuffs}}。不过，这在 [[{{tr|for the worthy}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中行不通，因为{{tr|Red Potion}}会改为提供{{tr|buff}}。
+|-
+| {{/row|The Cavalry}}
+|
+|-
+| {{/row|Completely Awesome}}
+|
+* 致敬了{{tr|the minishark}}的{{tr|tooltip}}：“{{#explode:{{gameText|ItemTooltip.Minishark}}|<br/>|1}}”
+|-
+| {{/row|Til Death...}}
+|
+* 可能参考了出现在{{维基百科|b=y|Book of Common Prayer|t=公祷书}}和{{维基百科|b=y|Alternative Service Book|t=替用礼文书}}中的传统{{维基百科|Marriage vows|t=结婚誓词}}，其中包含有短语“til death do us part”（直到死亡将我们分开）。
+|-
+| {{/row|Archaeologist}}
+|
+* Doctor Bones（{{tr|Doctor Bones}}）模仿了{{维基百科|Indiana Jones|t=印第安纳·琼斯}}，他又被称为 Doctor Jones（琼斯博士）。
+|-
+| {{/row|Pretty in Pink}}
+|
+* 可能是参考了 {{维基百科|The Psychedelic Furs}} 乐队的同名歌曲{{维基百科|b=y|Pretty in Pink (song)|Pretty in Pink}}，或者是以其为名的 1986 年的美国浪漫喜剧电影{{维基百科|b=y|Pretty in Pink|t=红粉佳人}}。
+|-
+| {{/row|Rainbows and Unicorns}}
+|
+* “{{wiktionary|Rainbows and unicorns}}”（彩虹和独角兽）是个常见的成语，用于描述奇妙而不现实的场景。
+|-
+| {{/row|You and What Army?}}
+|
+* 关于召唤多个{{tr|minions}}的信息，参见[[{{tr|Minions}}]]；最大化{{tr|minion}}召唤数的信息，参见[[{{tr|Summon weapons|link=y}}#{{tr|Minion}}最大化|{{tr|Summon weapons}} § {{tr|Minion}}最大化]]。
+* 可以在{{tr|minion capacity}}仅为 8 时就获得此{{tr|achievement}}，通过在到达最大{{tr|minion}}召唤数时再召唤一个{{tr|minion}}达成。这是因为之前召唤的{{tr|minion}}在第九个被召唤出来之后才会消失。
+* [http://tvtropes.org/pmwiki/pmwiki.php/Main/YouAndWhatArmy You and What Army?] 是个在多种媒体形式中都有使用的蔑视短语。
+|-
+| {{/row|Prismancer}}
+|
+|-
+| {{/row|It Can Talk?!}}
+|
+* 必须在{{tr|surface}}以上{{tr|Truffle}}才会搬进去。
+|-
+| {{/row|Watch Your Step!}}
+|
+* 此{{tr|achievement}}仅在被特定[[{{tr|traps}}]]或其导致的[[{{tr|debuffs}}]]杀死时才能获得。仅仅只是受到伤害是不行的。
+** 见[[{{tr|Traps|link=y}}#技术性信息|{{tr|Traps}} § 技术性信息]]获取细节。
+* {{tr|The achievement icon}}展示了[[{{tr|Dart Trap}}]]发射{{tr|dart}}。
+|-
+| {{/row|Marathon Medalist}}
+|
+* 骑乘[[{{tr|mount}}]]或被[[{{tr|The Tongue}}]][[{{tr|debuff}}]]拖拽时的移动不会计入此{{tr|achievement}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.GameContent.Achievements.AchievementsHelper.HandleRunning}}
+* 26.2 英里等价于 69168 格。
+|-
+| {{/row|Glorious Golden Pole}}
+|
+* 这是作为奖励从[[{{tr|Angler}}]]处获得的；在刚好第 30 个[[{{tr|Angler}}#{{tr|Quest rewards}}|{{tr|quests}}]]时可得到，或在 75 个任务后有 {{chance|1/250}} 几率得到。
+|-
+| {{/row|Servant-in-Training}}
+|
+|-
+| {{/row|Good Little Slave}}
+|
+* {{tr|The quest}}计数会累计；任何{{tr|character}}在任何{{tr|world}}中完成的所有{{tr|quests}}都会被计入这些{{tr|achievements}}中。
+|-
+| {{/row|Trout Monkey}}
+|
+|-
+| {{/row|Fast and Fishious}}
+|
+* 此{{tr|achievement}}的名称参考了动作电影系列{{维基百科|b=y|Fast & Furious|t=速度与激情}}。
+* 另一个可能的参考是由 {{维基百科|Captain Beefheart}} 和 {{维基百科|The Magic Band}} 在 1969 年创作的实验性摇滚专辑{{维基百科|b=y|Trout Mask Replica}}，其中多次用到了短语“fast and bulbous”。
+|-
+| {{/row|Supreme Helper Minion!}}
+|
+|-
+| {{/row|Topped Off}}
+|
+* 需要玩家拥有 500 {{tr|health}}和 200 {{tr|mana}}，等同于使用 15 个[[{{tr|Life Crystal}}]]、20 个[[{{tr|Life Fruit}}]]、和 9 个[[{{tr|Mana Crystal}}]]。
+* {{tr|The achievement}}检查的是玩家使用[[{{tr|Life Fruit}}]]或[[{{tr|Mana Crystal}}]]后的实际{{tr|max health}}和{{tr|mana}}。以下情况''不会''达成{{tr|achievement}}：
+** 通过使用[[{{tr|Lifeforce Potion}}]]具有不少于 500 {{tr|health}}，但没有使用足够的{{tr|Life Crystals and Life Fruits}}。
+** 具有不少于 200 {{tr|mana}}（通过[[{{tr|armor}}]]、[[{{tr|accessories}}]]、[[{{tr|modifiers}}]]、[[{{tr|buffs}}]]等等），但没有使用足够的{{tr|Mana Crystals}}。
+|-
+| {{/row|Slayer of Worlds}}
+|
+* 一共要打败 15 个 {{tr|bosses}}：[[{{tr|Brain of Cthulhu}}]]、[[{{tr|The Destroyer}}]]、[[{{tr|Duke Fishron}}]]、[[{{tr|Eater of Worlds}}]]、[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Golem}}]]、[[{{tr|King Slime}}]]、[[{{tr|Lunatic Cultist}}]]、[[{{tr|Moon Lord}}]]、[[{{tr|Plantera}}]]、[[{{tr|Queen Bee}}]]、[[{{tr|Skeletron}}]]、[[{{tr|Skeletron Prime}}]]、[[{{tr|the Twins}}]]、和[[{{tr|Wall of Flesh}}]]。{{tr|Event bosses}} 不计入其中；并且{{tr|Brain of Cthulhu}}和{{tr|Eater of Worlds}}均需被击败，尽管{{tr|achievement}}的图像上显示的是{{tr|Eater of Worlds}}。
+* 此{{tr|achievement}}并不要求击败[[{{tr|Empress of Light}}]]、[[{{tr|Deerclops}}]]、和[[{{tr|Queen Slime}}]]，因为它们是在此{{tr|achievement}}引入后才实现的。
+* {{tr|The achievement}}的图像似乎有一个穿着[[{{tr|Red's set}}]]的人物，大概是 [[{{tr|Redigit}}]]。
+|-
+| {{/row|You Can Do It!}}
+|
+* {{tr|Nighttime events}}（[[{{tr|Blood Moon}}]]、[[{{tr|Pumpkin Moon}}]]等等）不会阻止获得此{{tr|achievement}}。
+|-
+| {{/row|Matching Attire}}
+|
+* {{tr|The achievement icon}}中展示的[[{{tr|armor}}]]{{tr|set}}似乎是[[{{tr|Palladium armor}}]]。<!-- The color is more like Copper armor, but the helmet looks more like a Palladium Helmet. -->
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+== 1.4.0.1 中引入的成就 ==
+{{exclusive|1.4.0.1|section=y}}
+[[1.4.0.1]] 中引入了一个{{tr|achievement}}。计入此前存在的{{tr|Achievements}}，总共有 89 个{{tr|Achievements}}。
+
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! 分类 !! 备注
+|-
+| {{/row|Benched}}
+|
+* 可能指的是体育比赛中的相同术语：运动员被“{{wiktionary|bench#Verb|benched}}”（坐板凳，即被当作替补了）。
+|}
+
+== 1.4.1 中引入的成就 ==
+{{exclusive|1.4.1|section=y}}
+[[1.4.1]] 中引入了 15 个{{tr|achievement}}。计入此前存在的{{tr|Achievements}}，总共有 104 个{{tr|Achievements}}。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! 分类 !! 备注
+|-
+| {{/row|Fae Flayer}}
+|
+*
+|-
+| {{/row|Just Desserts}}
+|
+* 成就名（Just Desserts）是习语“{{wiktionary|just deserts}}”（意为“罪有应得”）的一个常见双关。
+|-
+| {{/row|Don't Dread on Me}}
+|
+* 参考了{{维基百科|Gadsden flag|t=加兹登旗}}上的题词，为“{{维基百科|Don't Tread on Me|t=别踩我}}”。
+|-
+| {{/row|Hero of Etheria}}
+|
+* 在打败[[{{tr|Betsy}}]]后、出现[[{{tr|status message}}]]“{{GameText|DungeonDefenders2.InvasionWin}}”会给予该成就。
+|-
+| {{/row|Infinity +1 Sword}}
+|
+* 引用了 TV Tropes 网站上的[https://tvtropes.org/pmwiki/pmwiki.php/Main/InfinityPlusOneSword 同名比喻]（Infinity +1 Sword，指的是游戏中不仅是最强的，而且其获取难度和强度相当的装备）。
+|-
+| {{/row|Boots of the Hero}}
+|
+*
+|-
+| {{/row|A Rather Blustery Day}}
+|
+* 参考了{{维基百科|Winnie-the-Pooh|t=小熊维尼}}，这句话既是角色常用的（恰当地代指大风天所用的）短语，也是一首同名歌曲的歌名。
+|-
+| {{/row|Quiet Neighborhood}}
+|
+* 至少需要 7 个[[{{tr|Tombstones}}]]。
+* {{tr|achievement icon}}可能参考了 1989 年的超自然喜剧电影{{维基百科|b=y|Ghostbusters II|t=捉鬼敢死队 2}}的电影海报。
+|-
+| {{/row|Hot Reels!}}
+|
+* 要在[[{{tr|lava}}]]中[[{{tr|fishing}}]]，需要[[{{tr|Hotline Fishing Hook}}]]、[[{{tr|Lavaproof Fishing Hook}}]]{{tr|or its upgrade}}、或{{tr|the Underworld}}中找到的[[{{tr|bait}}]]。
+* 参考了{{维基百科|Hot Wheels|t=风火轮}}玩具车。
+|-
+| {{/row|Heliophobia}}
+|
+* {{维基百科|Heliophobia|t={{tr|Heliophobia}}/恐日症}}是指对太阳的恐惧。
+* 要注意，{{tr|Gnomes}}很可能会在自然生成的[[{{tr|Living Tree}}]]中生成。
+|-
+| {{/row|Leading Landlord}}
+|
+* 通过在[[{{tr|the Hallow}}]]{{tr|biome}}中安置[[{{tr|Party Girl}}]]、[[{{tr|Wizard}}]]、和[[{{tr|Zoologist}}]]，然后和[[{{tr|Party Girl}}]]谈话；或将[[{{tr|Arms Dealer}}]]和[[{{tr|nurse}}]]安置在[[{{tr|Desert}}]]中并和[[{{tr|Arms Dealer}}]]谈话，可以很容易达成此{{tr|achievement}}。
+|-
+| {{/row|Feeling Petty}}
+|
+*
+|-
+| {{/row|Hey! Listen!}}
+|
+* [[{{tr|Fairies}}|{{tr|fairy}}]]可以是自然生成的，也可以是被玩家释放的。
+* 参考了{{维基百科|b=y|The Legend of Zelda: Ocarina of Time|t=塞尔达传说：时之笛}}中的角色 {{iwlink|zelda|Navi}}。
+|-
+| {{/row|Jolly Jamboree}}
+|
+* 由[[{{tr|Party Center}}]]开始的{{tr|Parties}}也计入此{{tr|achievement}}。
+* 可能参考了{{维基百科|b=y|Reader Rabbit|t=瑞德小兔}}（学龄前版）中同名的 Reader Rabbit 歌曲。
+|-
+| {{/row|Dead Men Tell No Tales}}
+|
+* “{{wiktionary|dead men tell no tales|Dead men tell no tales}}”（死人不会告密）是个众所周知的谚语，常用作杀人的动机。
+* {{tr|Tooltip}}引用了 1993 年的科幻电影{{维基百科|b=y|Jurassic Park (film)|Jurassic Park|t=侏罗纪公园}}中的角色{{维基百科|Ian Malcolm (Jurassic Park)|Ian Malcolm|t=伊恩·马尔科姆}}的标志性台词“Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should”（你们科学家总是过于关注能不能办到，却不去想想该不该这么做）。
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+== 1.4.4 中引入的成就 ==
+{{exclusive|1.4.4|section=y}}
+[[1.4.4]] 中引入了 11 个{{tr|achievement}}。计入此前存在的{{tr|Achievements}}，总共有 115 个{{tr|Achievements}}。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! 分类 !! 备注
+|-
+| {{/row|An Eye For An Eye}}
+|
+{{redirect|An Eye For An Eye|同名的更新|1.4.3|[[{{tr|secret world seed}}]]|{{tr|The Constant}}}}
+* {{作品|Terraria|{{tr|Terraria}}}}和{{维基百科|b=y|Don't Starve Together|t=饥荒联机版}}的[[{{tr|Crossover content}}|内容{{tr|crossover}}]][[1.4.3|更新]]的标题，此次更新中添加了{{tr|Deerclops}}。
+|-
+| {{/row|Feast of Midas}}
+|
+* {{维基百科|Midas|t={{tr|Midas}}}}是希腊神话中一位国王的名字，他被给予了将他所触及的所有东西都变为金子的能力。
+|-
+| {{/row|Unusual Survival Strategies}}
+|
+* 使用{{tr|Bottled Water}}时玩家的[[{{tr|breath meter}}]]需要为空（即正在由于[[{{tr|drowning}}]]而失去{{tr|health}}）。
+|-
+| {{/row|Black Mirror}}
+|
+* 参考了英国电视连续剧{{维基百科|b=y|Black Mirror|t=黑镜}}，这部剧集主要描绘了拥有科幻技术的近未来反乌托邦。
+|-
+| {{/row|Ankhumulation Complete}}
+|
+*
+|-
+| {{/row|Torch God}}
+|
+{{redirect|Torch God|{{tr|the event}}|{{tr|The Torch God}}}}
+|-
+| {{/row|A Rare Realm}}
+|
+* {{tr|The achievement}}会在具有任何[[{{tr|secret world seed}}]]属性的{{tr|world}}中游玩时获得。因此，使用[[{{tr|Map viewer}}|{{tr|world}}编辑器]]创建的具有这些属性的{{tr|worlds}}也符合条件。{{source code ref|v=1.4.4.9|property=Terraria.Main.specialSeedWorld}}
+|-
+| {{/row|The Great Slime Mitosis}}
+|
+*
+|-
+| {{/row|A Shimmer In The Dark}}
+|
+* {{tr|The transmutation}}可以是拆解{{tr|item}}或是任何[[{{tr|Shimmer|link=y}}#{{tr|Item transmutations}}|特殊{{tr|item transmutations}}]]。
+|-
+| {{/row|And Good Riddance!}}
+|
+* 可以在[[{{tr|pre-Hardmode}}]]达成。
+|-
+| {{/row|To Infinity... and Beyond!}}
+|
+* 参考了美国系列动画电影{{维基百科|b=y|Toy Story (franchise)|Toy Story|t=玩具总动员}}中{{维基百科|Buzz Lightyear|t=巴斯光年}}的口头禅。
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+== {{old-gen console version|nl=y}}{{tr|Achievements}} ==
+=== {{icon|xb360}} Xbox 360 ===
+一共有 30 个{{tr|achievements}}，价值 400 分。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{| class="terraria sortable lined"
+! class="unsortable" | {{tr|Achievement}} !! 分数 !! class="unsortable" | 备注
+|-
+| {{achievement|name=Home Sweet Home|nolink=y}} || 20 ||
+|-
+| {{achievement|name=All in the Family|nolink=y}} || 10 ||
+* 这不要求[[{{tr|Santa Claus}}]]。
+* 最有可能是参考了美国情景喜剧{{维基百科|b=y|All in the Family}}系列。
+|-
+| {{achievement|name=Rock Bottom (old)|t=Rock Bottom|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Exterminator|nolink=y}} || 10 ||
+* 这不要求[[{{tr|Duke Fishron}}]]。
+|-
+| {{achievement|name=Slimer|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Challenge Accepted|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Maxed Out|nolink=y}} || 15 ||
+|-
+| {{achievement|name=Corruptible|nolink=y}} || 10 ||
+* 50% 只是最低限度。使用[[{{tr|Dryad}}]]的“[[{{tr|Dryad|link=y}}#{{tr|World status}}|{{tr|Status}}]]”选项来查看进度。
+* 虽然{{tr|achievement}}的名称和图片是这样，但{{tr|world}}并不需要是{{tr|corrupt world}}，使得在[[{{tr|Crimson}}]]{{tr|world}}中也可以达成此成就。
+|-
+| {{achievement|name=Hallowed Be Thy Name|nolink=y}} || 10 ||
+* 50% 只是最低限度。使用[[{{tr|Dryad}}]]的“[[{{tr|Dryad|link=y}}#{{tr|World status}}|{{tr|Status}}]]”选项来查看进度。
+* 可能是参考了铁娘子（Iron Maiden）的专辑《The Number of The Beast》中的{{维基百科|Hallowed Be Thy Name|t=同名}}歌曲。这句话也出现在基督教圣经的{{维基百科|Matthew 6:9|马太福音 6:9}} 的“主祷文”开篇中。
+|-
+| {{achievement|name=Ophthalmologist|nolink=y}} || 15 ||
+* 眼科医生（ophthalmologist）是{{维基百科|ophthalmology|t=眼科学}}的专科医生，这是医学与外科学的一个分支，负责眼科疾病的诊断与治疗。{{tr|The Twins}}似乎患有中央{{维基百科|heterochromia iridum|虹膜异色症}}这种眼病。
+|-
+| {{achievement|name=Bona Fide|nolink=y}} || 15 ||
+|-
+| {{achievement|name=Ride The Worm|nolink=y}} || 15 ||
+*{{tr|the achievement}}的名称参考了 1965 的书籍{{作品|Dune|t=沙丘}}
+|-
+| {{achievement|name=Marathon Runner|nolink=y}} || 20 ||
+|-
+| {{achievement|name=Landscaper|nolink=y}} || 15 ||
+|-
+| {{achievement|name=Crowd Control|nolink=y}} || 15 ||
+* 此成就的名称在[[{{tr|Tips}}|{{tr|tip}}]]“When dealing with a Goblin Army, crowd control is key.”（处理[[{{tr|Goblin Army}}]]时，{{tr|crowd control}}是关键。）中有所引用。
+|-
+| {{achievement|name=Survivor|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Icarus|nolink=y}} || 10 ||
+* 到达地图顶部。
+* 此成就的名称引用了希腊神话中代达罗斯（Daedalus）的儿子伊卡洛斯（Icarus）飞得离太阳太近导致他的翅膀熔化的传说。
+|-
+| {{achievement|name=Vanity of Vanities|nolink=y}} || 10 ||
+* 参考了圣经中的句子“vanity of vanities, all is vanity”（虚空的虚空，一切皆是虚空）（旧约-传道书 1:2）。
+|-
+| {{achievement|name=Pet Hoarder|nolink=y}} || 10 ||
+* 需要[[{{tr|bone key}}]]。
+|-
+| {{achievement|name=Terraria Student|nolink=y}} || 5 ||
+|-
+| {{achievement|name=Terraria Expert|nolink=y}} || 5 ||
+|-
+| {{achievement|name=Be Prepared|nolink=y}} || 15 ||
+|-
+| {{achievement|name=Airtime!|nolink=y}} || 10 ||
+* 多段短时间也行。
+|-
+| {{achievement|name=Blacksmith|nolink=y}} || 15 ||
+* 制作[[{{tr|Silver Bullet}}]]通常能快速达成此{{tr|achievement}}。
+|-
+| {{achievement|name=I'm Smelting!|nolink=y}} || 20 ||
+* 很可能是参考了 1939 年的美国奇幻音乐电影{{维基百科|b=y|The Wizard of Oz (1939 film)|The Wizard of Oz|t=绿野仙踪}}中由西国魔女（Wicked Witch of the West）所说的“I'm melting!”（我要热化了！）这句话。
+|-
+| {{achievement|name=A Knight in Shining Armors|nolink=y}} || 15 ||
+|-
+| {{achievement|name=Engineer|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Red Moon Rises|nolink=y}} || 10 ||
+|-
+| {{achievement|name=Crafty|nolink=y}} || 20 ||
+|-
+| {{achievement|name=To Hell and Back|nolink=y}} || 20 ||
+* 用[[{{tr|Magic Mirror}}]]返回{{tr|surface}}不计入此{{tr|achievement}}。
+|
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+=== {{icon/ps3}}<span style="display:none">PS3</span> / {{icon/psvita}}<span style="display:none">PS Vita</span> / {{icon/wiiu}} Wii U ===
+一共有 39 个奖杯/成就： 1 个铂金的、2 个金的、19 个银的和 17 个铜的。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor|id=ps3wiiu}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! data-sort-type=number | 质量 !! class="unsortable" | 备注
+|-
+|
+ {{achievement|name=Completionist!|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Completionist!|title= 所有成就皆已解锁。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=4 | 铂金 ||
+|-
+|
+ {{achievement|name=Home Sweet Home|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Home Sweet Home|title={{tr|The Guide}}已搬入！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Terraria Student|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Terraria Student|title=你已开始教程！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+|
+{{achievement|name=All in the Family|icons={{icon|ps}}|nolink=y}}
+{{achievement|name=All in the Family|title=每个 {{tr|NPC}} 都已经搬进来了！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+* 这不要求[[{{tr|Santa Claus}}]]。
+|-
+|
+{{achievement|name=Rock Bottom (old)|t=Rock Bottom|icons={{icon|ps}}|nolink=y}}
+{{achievement|name=Rock Bottom (old)|t=Rock Bottom|title=你已到达世界底部！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Exterminator|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Slimer|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Challenge Accepted|nolink=y}} || data-sort-value=3 | 金 ||
+|-
+|
+ {{achievement|name=Maxed Out|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Maxed Out|title=你拥有最大{{tr|health and mana}}|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Corruptible|nolink=y}} || data-sort-value=2 | 银 ||
+* 50% 只是最低限度。使用[[{{tr|Dryad}}]]的“[[{{tr|Dryad|link=y}}#{{tr|World status}}|{{tr|Status}}]]”选项来查看进度。
+|-
+|
+{{achievement|name=Hallowed Be Thy Name|icons={{icon|ps}}|nolink=y}}
+{{achievement|name=Hallowed Be Thy Name|title=你的世界已神圣化！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+* 50% 只是最低限度。使用[[{{tr|Dryad}}]]的“[[{{tr|Dryad|link=y}}#{{tr|World status}}|{{tr|Status}}]]”选项来查看进度。
+|-
+| {{achievement|name=Ophthalmologist|nolink=y}} || data-sort-value=2 | 银 ||
+* 眼科医生（ophthalmologist）是{{维基百科|ophthalmology|t=眼科学}}的专科医生，这是医学与外科学的一个分支，负责眼科疾病的诊断与治疗。{{tr|The Twins}}似乎患有中央{{维基百科|heterochromia iridum|虹膜异色症}}这种眼病。
+|-
+| {{achievement|name=Bona Fide|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Ride The Worm|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Marathon Runner|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Landscaper|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Crowd Control|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Survivor|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Survivor|title=你度过了第一晚！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Icarus|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Icarus|title=到达世界顶部。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Vanity of Vanities|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Vanity of Vanities|title=穿一整套{{tr|vanity}}衣服。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Pet Hoarder|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Pet Hoarder|title=找到所有宠物。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+|-
+|
+ {{achievement|name=Be Prepared|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Be Prepared|title=同时激活 5 个{{tr|buffs}}|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Airtime!|nolink=y}} || data-sort-value=1 | 铜 ||
+* 多段短时间也行。
+|-
+|
+ {{achievement|name=Blacksmith|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Blacksmith|title=在{{tr|anvil}}处制作 300 个{{tr|items}}。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+* 制作[[{{tr|Silver Bullet}}]]通常能快速达成此{{tr|achievement}}。
+|-
+| {{achievement|name=Bona Fide|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+|
+ {{achievement|name=A Knight in Shining Armors|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=A Knight in Shining Armors|title=你已获得每一种{{tr|armor}}。|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Landscaper|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Red Moon Rises|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+|
+ {{achievement|name=Crafty|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Crafty|title=你已用过每一种制作站！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=To Hell and Back|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Back for Second|nolink=y}} || data-sort-value=3 | 金 ||
+|-
+| {{achievement|name=Is This Heaven?|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+| {{achievement|name=Leap a tall building in a single bound|nolink=y}} || data-sort-value=2 | 银 ||
+* 此成就只计算下落距离。
+* 参考了一条对{{维基百科|Superman|t=超人}}的描述，说的是他能“一跃跳上高楼”（leap tall buildings in a single bound）
+|-
+| {{achievement|name=Safe Fall|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Hellevator|nolink=y}} || data-sort-value=2 | 银 ||
+* 参见[[{{tr|Hellevator}}]]。用{{tr|small world}}会比较容易，但并非必须。
+|-
+|
+ {{achievement|name=Gone in 60 seconds|icons={{icon|ps}}|nolink=y}}
+ {{achievement|name=Gone in 60 seconds|title=你持续奔跑了 60 秒！|icons={{icon|wiiu}}|nolink=y}}
+| data-sort-value=1 | 铜 ||
+* 需要用到[[{{tr|Hermes Boots}}]]和一个很长的平坦区域。
+* 此成绩的名称参考了电影{{维基百科|b=y|Gone in 60 Seconds|t=极速 60 秒}}
+|-
+| {{achievement|name=Appease the Volcano Gods|nolink=y}} || data-sort-value=2 | 银r ||
+* 将[[{{tr|Guide Voodoo Doll}}]]扔进{{tr|lava}}是行不通的。他需要站在{{tr|lava}}中直接死去。
+|-
+| {{achievement|name=Homicidal|nolink=y}} || data-sort-value=2 | 银 ||
+|-
+| {{achievement|name=Terraria Expert|nolink=y}} || data-sort-value=1 | 铜 ||
+|-
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+== {{icon/mobile}} 旧的{{tr|Mobile version}}{{tr|achievements}} ==
+{{tr|Achievements}}曾经在 [[File:Apple App Store.svg|16px|link={{tr|Mobile version|link=y}}|Apple App Store]] Apple App Store / &thinsp;{{icon/google play}} Google Play 版本中可用。总共有 12 个{{tr|achievements}}，共计 1000 分（[[File:Apple App Store.svg|16px|link={{tr|Mobile version|link=y}}|Apple App Store]]）100,000 XP（&thinsp;{{icon/google play}}）。由于[[{{tr|Mobile}} 1.3.0.7]] 完全从头开始重新编程，因此新玩家不再能解锁这些{{tr|achievements}}。
+{{toggleBox/start|class=achievements terraria trw-toggled-with-anchor|id=oldmobile}}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{| class="terraria sortable lined"
+! {{tr|Achievement}} !! 分数（{{icon|ios}}）!! XP（{{icon|google play}}）!! class="unsortable" | 备注
+|-
+| {{achievement|name=Terraria Expert|nolink=y}} || 80 || 6,000 ||
+|-
+|
+ {{achievement|name=Home Sweet Home|title=[[{{tr|Guide}}]]住进你的房屋中|icons={{icon|ios}}|nolink=y}}
+ {{achievement|name=Home Sweet Home|title=让[[{{tr|Guide}}]]住进你的房屋中|icons={{icon|google play}}|nolink=y}}
+| 80 || 6,000 ||
+|-
+|
+ {{achievement|name=All in the Family|title=每个 [[{{tr|NPC}}]] 都住进你的房屋中|icons={{icon|ios}}|nolink=y}}
+ {{achievement|name=All in the Family|t=Family Night|title=让每个 {{tr|NPC}} 都住进你的房屋中|icons={{icon|google play}}|nolink=y}}
+| 80 || 10,000 ||
+* 这不要求[[{{tr|Santa Claus}}]]。
+|-
+|
+ {{achievement|name=Rock Bottom (old)|t=Rock Bottom|icons={{icon|ios}}|nolink=y}}
+ {{achievement|name=Rock Bottom (old)|t=Going Down|icons={{icon|google play}}|nolink=y}}
+| 80 || 7,000 ||
+|-
+| {{achievement|name=Exterminator|nolink=y}} || 80 || 12,000 ||
+|-
+|
+ {{achievement|name=Maxed Out|icons={{icon|ios}}|title=最大化你的[[{{tr|health}}]]和[[{{tr|mana}}]]|nolink=y}}
+ {{achievement|name=Maxed Out|icons={{icon|google play}}|t=All Pumped Up|title=最大化你的{{tr|health}}和{{tr|mana}}|nolink=y}}
+| 80 || 10,000 ||
+|-
+|
+ {{achievement|name=Crowd Control|icons={{icon|ios}}|title=打败[[{{tr|Goblin Army}}]]|nolink=y}}
+ {{achievement|name=Crowd Control|icons={{icon|google play}}|t=Defeated The Mob|title=打败{{tr|the Goblin Army}}|nolink=y}}
+| 80 || 8,000 ||
+|-
+|
+ {{achievement|name=Slimer|icons={{icon|ios}}|title=杀死每一种[[{{tr|slime}}]]|nolink=y}}
+ {{achievement|name=Slimer|icons={{icon|google play}}|t=King Of Slimes|title=杀死每一种[[{{tr|slime}}]]|nolink=y}}
+| 80 || 7,000 ||
+|-
+|
+ {{achievement|name=Is This Heaven?|icons={{icon|ios}}|title=找到一座[[{{tr|floating island}}]]|nolink=y}}
+ {{achievement|name=Is This Heaven?|icons={{icon|google play}}|t=Could This Be Heaven|title=找到一座{{tr|floating island}}|nolink=y}}
+| 80 || 7,000 ||
+|-
+|
+ {{achievement|name=A Knight in Shining Armors|icons={{icon|ios}}|nolink=y}}
+ {{achievement|name=A Knight in Shining Armors|icons={{icon|google play}}|t=Collector|nolink=y}}
+| 90 || 10,000 ||
+|-
+|
+ {{achievement|name=Red Moon Rises|icons={{icon|ios}}|title=在[[{{tr|Blood Moon}}]]中存活|nolink=y}}
+ {{achievement|name=Red Moon Rises|icons={{icon|google play}}|t=When The Moon Turns Red|title=在{{tr|Blood Moon}}中存活|nolink=y}}
+| 100 || 7,000 ||
+|-
+|
+ {{achievement|name=Crafty|icons={{icon|ios}}|title=使用每一种[[{{tr|crafting station}}]]|nolink=y}}
+ {{achievement|name=Crafty|icons={{icon|google play}}|t=Expert Crafter|title=使用每一种[[{{tr|crafting station}}]]|nolink=y}}
+| 90 || 10,000 ||
+|-
+|}
+{{toggleBox/handle|default=点击此处查看完整的信息表格|toggled=隐藏完整信息表格}}
+{{toggleBox/end}}
+
+== 备注 ==
+<!-- Only add general notes here, which apply to several or all achievements. Notes regarding a specific achievement are to be added directly in the table, in the respective row. -->
+* {{icon/old-gen}} {{icon/ps3}}和{{icon/xbox360}} Xbox 360 的{{tr|Achievements}}在措辞方面有着不同的描述。{{icon|ps3}} 是指完成了动作的玩家，而 {{icon|xbox360}} Xbox 360 只是表明了已执行的动作。
+* {{icon|ps3|psvita}} 没有对应 [[#Xbox 360|Xbox 360 {{tr|achievement}}]]的九个[[#PS3 / PS Vita / Wii U|奖杯]]是：Appease the Volcano Gods、Back for Second、Completionist、Gone in 60 seconds、Hellevator、Homicidal、Is This Heaven?、Leap a tall building in a single bound、和 Safe Fall。<!--
+
+achievements.dat is not in this directory for Windows, maybe others are wrong/outdated too.
+
+* {{icon/desktop}} {{icon/mobile}} 可以通过编辑 <code>achievements.dat</code> 来添加或删除成就。它位于以下位置：
+** Windows: <code>"%USERPROFILE%\Documents\My Games\Terraria"</code>
+** Mac：<code>~/Library/Application support/Terraria</code>
+** Linux：<code>$HOME/.local/share/Terraria</code>
+** Android：<code>/sdcard/Android/data/com.and.games505.TerrariaPaid</code> 或 <code>/storage/emulated/0/Android/data/com.and.games505.TerrariaPaid</code>
+** iOS：<code>Browse > On My (device) > Terraria</code>-->
+
+== 小贴士 ==
+* {{eicons|1.4.0.1}}如果玩家不打算保留[[{{tr|Minishark}}]]，可以在不关闭[[{{tr|Arms Dealer}}]]的商店窗口的情况下将它买下然后全价卖回去。这样仍然能解锁{{tr|Completely Awesome}}{{tr|achievement}}。
+
+== 花絮 ==
+<!-- Only add general trivia here, which applies to several or all achievements. Trivia regarding a specific achievement is to be added directly in the table, in the respective row (with the exception of the unimplemented achievements, of course). -->
+* 有一个{{tr|enemy}}能够一次性完成五个{{tr|achievements}}：
+** [[{{tr|King Slime}}]]（{{tr|Slippery Shinobi}}、{{tr|Slayer of Worlds}}、{{tr|Sticky Situation}}、{{tr|Vehicular Manslaughter}}、{{tr|Gelatin World Tour}}。）
+* 有四个{{tr|enemies}}能够一次性完成四个{{tr|achievements}}：
+** [[{{tr|Wall of Flesh}}]]（{{tr|Still Hungry}}、{{tr|Slayer of Worlds}}、{{tr|It's Hard!}}、和{{tr|Vehicular Manslaughter}}）
+** 任意[[{{tr|mechanical boss}}]]（{{tr|Buckets of Bolts}}、{{tr|Slayer of Worlds}}、{{tr|Mecha Mayhem}}、和{{tr|Vehicular Manslaughter}}）
+* 有一个{{tr|enemy}}能够一次性完成三个{{tr|achievements}}：
+** [[{{tr|Pinky}}]]（{{tr|Gelatin World Tour}}、{{tr|Vehicular Manslaughter}}、和{{tr|Pretty in Pink}}）
+* {{eicons|1.4.4.9}}截至 [[1.4.4.9]] 版本，在游戏代码中有六个未实现的{{tr|achievements}}：{{source code ref|v=1.4.4.9|本地化文件 <code>Terraria.Localization.Content.en-US.json</code>。}}
+** {{tr|Behind The Mask}}（Behind The Mask）——杀死[[{{tr|Lunatic Cultist}}|疯狂邪教徒]]（Insane Cultist），他是一名拥有强大法术的疯狂魔法师。
+** {{tr|Behind The Mask}}是由于已有类似的{{tr|achievement}}存在而未被使用。
+** {{tr|Davy Jones' Locker}}（Davy Jones' Locker）——打败[[{{tr|Flying Dutchman}}]]，它是在天空中四处劫掠的帆船。
+** {{tr|Winterhearted}}（Winterhearted）——打败[[{{tr|Ice Queen}}]]，她是在最寒冷夜晚里出现的邪恶女巫。
+** {{tr|Pumpkin Smasher}}（Pumpkin Smasher）——打败[[{{tr|Pumpking}}]]，它是万圣节前夜的恐怖领主。
+*** {{tr|Pumpkin Smasher}}参考了美国另类摇滚（alternative rock）乐队{{维基百科|The Smashing Pumpkins|t=碎南瓜乐队}}。
+** {{tr|Independence Day}}（Independence Day）——打败[[{{tr|Martian Saucer}}|母舰]]（Mothership），它是火星入侵者的首脑。
+*** {{tr|Independence Day}}参考了 1996 年的美国科幻动作电影{{维基百科|b=y|Independence Day (1996 film)|Independence Day|t=独立日}}，其中军队与来袭的外星人作战。
+** {{tr|Hex Education}}（Hex Education）——打败[[{{tr|Goblin Warlock}}]]，她是掌控黑暗烈焰的巫师。
+*** {{tr|Hex Education}}双关了“sex education”（性教育）和{{tr|Goblin Warlock}}的妖术（hex）相关（比如它掉落的[[{{tr|Shadowflame Hex Doll}}]]和[[{{tr|Shadowflame Knife}}]]）。
+* “{{tr|the Sick Throw}}”和“{{tr|Throwing Lines}}”两个{{tr|achievements}}的图标有着相同的外观，但颜色不同。
+
+== 另见 ==
+* [[{{tr|Slimer}}]]，这是一种{{tr|flying}}[[{{tr|Slime}}]]{{tr|enemy}}，有同名{{old-gen console version}}{{tr|achievement}}。{{note|paren=y|small=y|译注：这个成就名是个双关文字游戏。{{tr|Slimer}}的英文名为 Slimer。字面上，Slime（史莱姆的原文）有黏糊的意思，-er 为比较级，Slimer 有“更黏糊”的意思。}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|The Truffle Worm, Celestial Sigil, Gelatin Crystal, Prismatic Lacewing and Deer Thing}}现在会给予{{tr|Like a Boss}}{{tr|achievement}}。}}
+{{history|Desktop 1.4.4|添加了 11 个{{tr|new achievements}}。}}
+{{history|Desktop 1.4.3.3|修正了导致{{tr|Dead Men Tell No Tales}}{{tr|achievement}}无法在[[{{tr|multiplayer}}]]下解锁的 {{tr|Bug}}。}}
+{{history|Desktop 1.4.1.1|
+** 修正了一个导致在任意{{tr|liquid}}中{{tr|fishing}}都会让{{tr|Hot Reels!}}{{tr|achievement}}解锁的 {{tr|bug}}。
+** 修正了一个导致达成{{tr|Leading Landlord}}{{tr|achievement}}所需的{{tr|happiness}}获得难度变得难于预期的 {{tr|bug}}。}}
+{{history|Desktop 1.4.1|添加了 15 个{{tr|new achievements}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了“{{tr|Benched}}”{{tr|achievement}}，当玩家制作第一个[[{{tr|Work Bench}}]]时会得到。
+** 在[[{{tr|inventory}}]]的右上角添加了一个推荐{{tr|Achievement icon}}来引导玩家。
+** 成就解锁时添加了一个{{sound|[[Media:Achievement complete.wav|音效]]|Achievement complete.wav|nofallback=y}}。
+** “{{tr|Temple Raider}}”{{tr|achievement}}现在要求用[[{{tr|Temple Key}}]]打开[[{{tr|Jungle Temple}}]]的大门，而非采挖[[{{tr|Lihzahrd Bricks}}]]。}}
+{{history|Desktop 1.3.0.4|
+** 修正了某些{{tr|achievements}}（即：“{{tr|Baleful Harvest}}”和“{{tr|Ice Scream}}”）在{{tr|multiplayer}}中无法获取的问题（现在应该能全部得到了）。
+** 修正了{{tr|fishing achievements}}在 Steam 上未计算或在启动时被重置的问题。
+**“{{tr|Dye Hard}}”现在正确地需求所有{{tr|the equipment slots}}都有{{tr|dye}}，而非只要{{tr|armor slots}}/{{tr|accessory slots}}。}}
+{{history|Desktop 1.3.0.3|
+** 修正了在{{tr|multiplayer}}得不到“{{tr|event}}”{{tr|achievements}}的问题。（“{{tr|You can do it!}}”、“{{tr|It's Hard!}}”、“{{tr|No Hobo}}”等等）
+** 修正了在{{tr|glowing mushroom biome}}中死后重生时不再会得到“{{tr|Funkytown}}”{{tr|achievement}}的问题。
+** 修正了如果禁用所有过滤器后{{tr|achievements menu}}滑动条挂在屏幕顶部的问题。}}
+{{history|Desktop 1.3.0.1|introduced=y|为{{tr|Desktop players}}引入了 88 个 Steam {{tr|achievements}}。}}
+{{history|Console 1.0.933.1|引入{{tr|Achievements}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced Achievements}}。（{{icon/ps4}}）}}
+{{history|Switch 1.0.732.3|修正了“{{tr|Lucky Break}}”{{tr|Achievement}}会在不满足指定条件时就解锁的 {{tr|bug}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced Achievements}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced Achievements}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Achievements}}

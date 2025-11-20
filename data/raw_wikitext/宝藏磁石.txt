@@ -1,0 +1,45 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 5010
+| tags = Loot / Bag loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Treasure Magnet}}'''是一种[[{{tr|accessory}}]]，能够将原本大小为 2.625 {{tr|tiles}}的[[拾取范围]]提升至 12 {{tr|tiles}}{{source code ref|v=1.4.1.2|field=Terraria.Player.defaultItemGrabRange / Terraria.Item.treasureGrabRange}}。它可以在[[{{tr|Shadow Chest}}]]以及获取自[[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]中的[[{{tr|Obsidian Lock Box}}]]里找到。
+
+当{{tr|item}}在其{{tr|range}}内时，在飞向玩家前，这些{{tr|items}}会在地面上方悬停一段时间。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Treasure Magnet|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The item}}的拾取范围是个矩形的区域，通常来说大小为 5.25×5.25 {{tr|tile}}，以{{tr|player}}为中心。{{tr|The Treasure Magnet}}将矩形区域的大小大大增加，为 24×24 {{tr|tiles}}。
+* 在常规世界中，获得自{{tr|Shadow Chest}}的{{tr|Treasure Magnet}}永不会有[[{{tr|modifier}}]]。在 [[Celebrationmk10]] 世界中，{{tr|Shadow Chest}}中的{{tr|Treasure Magnet}}会有“最佳”{{tr|modifier}}之一，与其他{{tr|chest item}}一致。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.AddBuriedChest / Terraria.Player.OpenFishingCrate / Terraria.WorldGen.ImproveAllChestContents}}<!-- Note that Get fixed boi does not have this mechanic-->
+
+== 小贴士 ==
+* {{tr|Treasure Magnet}}也会影响[[{{tr|Heart}}]]、[[{{tr|Star}}]]、[[{{tr|Nebula armor}}|{{tr|Nebula armor}}提供的强化]]、和[[{{tr|Etherian Mana}}]]。这让拾取它们变得更加安全，在 [[{{tr|boss}}]] 战或[[{{tr|events}}]]期间会非常有用。
+** 虽然它的效果是[[{{tr|Heartreach Potion}}]]、[[{{tr|Celestial Magnet}}]]、[[{{tr|Gold Ring}}]]和它们对应的升级物之和，但来自这些{{tr|items}}的{{tr|range}}增加效果比{{tr|the Treasure Magnet}}所提供的效果要更大。不过，它可以与这些{{tr|items}}叠加，例如，如果同时装备{{tr|the Celestial Magnet}}和{{tr|the Treasure Magnet}}，那么{{tr|stars}}的拾取范围会增加至 30.75 {{tr|tiles}}。
+** 注意，那些功能专一的{{tr|items}}在把{{tr|items}}吸引到玩家处之前，并不会有悬停效果出现，使得拾取的速度会更快一些。
+* 在使用[[{{tr|Laser Drill}}]]时它会很有帮助，因为{{tr|drill}}较大的范围通常会把一部分挖掘的{{tr|blocks}}留在拾取范围以外。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 它现在有 1/5 的几率作为次要{{tr|loot}}出现在{{tr|Shadow Chests}}和{{tr|Obsidian Lock Boxes}}中，不再是从前的主要拾取物。
+** 现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Treasure Magnet}}

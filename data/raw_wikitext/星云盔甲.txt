@@ -1,0 +1,96 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Armor/Set
+| hardmode = yes
+}}
+
+'''{{tr|Nebula armor}}'''是一套[[{{tr|Moon Lord}}]]后的[[{{tr|armor}}]]{{tr|set}}，会提供[[{{tr|magic weapon}}]]加成。它目前在{{eversions|Nebula armor}}中是最终的{{tr|magic set}}。制作全套{{tr|set}}一共需要 36 个[[{{tr|Luminite Bar}}]]（144 个[[{{tr|Luminite}}]]）和 45 个[[{{tr|Nebula Fragment}}]]。
+
+全套{{tr|Nebula armor}}会提供以下好处：
+* +60 最大[[{{tr|mana}}]]
+* +26% [[{{tr|magic damage}}]]
+* +16% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* −15% {{tr|mana usage}}
+* +10% [[{{tr|movement speed}}]]
+
+此外，装备全套{{tr|set}}时，在使用[[{{tr|Magic weapons}}]]攻击{{tr|enemies}}时有几率出现特殊的强化焰{{tr|items}}。每个强化焰都会给予{{tr|player}}持续 8 {{tr|seconds}}的{{tr|buff}}，并在{{tr|player}}周围产生悬浮的{{tr|spark}}{{tr|effect}}。当一个强化焰{{tr|item}}在一个相同的{{tr|buff}}生效期间被拾取，它会与前一个已有的{{tr|buff}}叠加，最多叠加 3 层同种强化焰。每隔 8 秒，一层强化焰失效，{{tr|buff}}降低一级。强化焰{{tr|items}}悬浮在空中，比大多数其他{{tr|items}}具有更大的拾取{{tr|range}}。
+
+在[[{{tr|multiplayer}}]]中，任何一位玩家都能拾取这些强化焰物品并能从其{{tr|buff}}中受益，无论是否身着{{tr|Nebula armor}}。另外，拾取一个强化焰物品时会给附近（在 43.75 {{tr|tile}}半径内{{source code ref|v=1.4.2.1|method=Terraria.MessageBuffer.GetData}}）的玩家一个同样的{{tr|buff}}。如果取得强化焰的玩家是在一个[[{{tr|Team}}]]中，则只有同一队的其他玩家能得到此{{tr|buff}}；否则，无组队的玩家会在获取强化焰的时候会将{{tr|buff}}传递给附近的所有其他玩家。 
+
+{| class="terraria" style="float:right;margin:0"
+! width=150 | {{tr|Item}} !! width=220 | 给予{{tr|buff}} !! {{tr|buff}}描述
+|-
+| {{item|Damage Booster|icons=no|ext=gif}} || {{item|link=|Damage Nebula|icons=no}} || {{getBuffInfo|179|tooltip}}，持续 8 秒钟
+|-
+| {{item|Life Booster|icons=no|ext=gif}} || {{item|link=|Life Nebula|icons=no}} || {{getBuffInfo|173|tooltip}}（每秒 3），持续 8 秒钟
+|-
+| {{item|Mana Booster|icons=no|ext=gif}} || {{item|link=|Mana Nebula|icons=no}} || {{getBuffInfo|176|tooltip}}（每秒大约 10），持续 8 秒钟
+|}
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 2760
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2761
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2762
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Nebula Helmet/Nebula Breastplate/Nebula Leggings|expectedrows=3}}
+
+== 备注 ==
+[[File:Nebula armor set bonus effect.png|frame|right|具有{{tr|Nebula armor}}的{{tr|buffs}}时，在{{tr|Character}}周围漂浮的{{tr|Sparks}}。]]
+
+* {{tr|The Mana Booster}}，和自然的及来自其它来源的{{tr|mana regeneration}}不同，会在使用消耗{{tr|mana}}的武器''时''恢复{{tr|mana}}。
+* 玩家每次击中{{tr|enemy}}时有 {{chance|1/3}} 的几率生成强化焰，有 0.5 秒的冷却时间。
+* 击中下列{{tr|enemies}}无法产生强化焰：[[{{tr|Bubble Shield}}]]、[[{{tr|Tesla Turret}}]]、[[{{tr|Martian Drone}}]]、和[[{{tr|Ancient Doom}}]]。
+* 除了增加其本身的级数外，拾取强化焰也会刷新其{{tr|duration}}。
+* 和所有使用{{tr|Luminite}}制作的{{tr|armor}}一样，装备{{tr|Nebula armor}}会让玩家发光（{{tr|Nebula armor}}为紫色光）。装备的部件越多，光就会越亮。
+
+== 小贴士 ==
+* 由于其{{tr|defense}}较高，正面的{{tr|damage}}{{tr|bonuses}}，以及极高的潜在{{tr|health regeneration}}能力，这套{{tr|armor set}}在攻击上远远超过了两种[[{{tr|Spectre armor}}]]，并且提供了接近{{tr|Spectre Hood}}的生存能力。
+** 另外，{{tr|Moon Lord}}的[[{{tr|Moon Bite}}]]{{tr|debuff}}不会阻止{{tr|Life Booster}}生效，因为这是增加被动{{tr|health regeneration}}的，而不像使用{{tr|Spectre Hood}}的{{tr|Spectre armor}}套装，后者给予的是直接的生命恢复。
+* [[{{tr|Celestial Magnet}}]]不会增加强化焰的[[拾取范围]]，而{{eil|Treasure Magnet}}会。这是因为游戏将强化焰视作物品而非[[{{tr|Star}}]]。
+
+== 花絮 ==
+* 强化焰被拾取前的外观和制作{{tr|armor}}所必需的[[{{tr|Nebula Fragment}}]]极度相似。
+* 现实生活中的{{维基百科|nebula|t=星云}}是由电离气体组成的扩散的星际尘埃。它们也通常是恒星形成的区域。
+
+== 另见 ==
+* [[{{tr|Solar Flare armor}}]]
+* [[{{tr|Vortex armor}}]]
+* [[{{tr|Stardust armor}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 每级{{tr|Life Booster}}的{{tr|healing}}效果由 5 {{tr|hp}}/秒减少到 3 {{tr|hp}}/秒。
+** 对强化焰作了限制，只有{{tr|magic damage}}才会使其{{tr|spawn}}（此前所有种类的{{tr|projectile}}造成{{tr|damage}}都会使强化焰生成）。
+** {{tr|sell value}}由{{tr|no value}}提升至 {{coin|31gc 50sc}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-luminite = yes
+| show-nebula = yes
+}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Nebula armor}}

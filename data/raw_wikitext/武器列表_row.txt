@@ -1,0 +1,27 @@
+<includeonly>
+|-
+| {{{image|}}}
+| [[{{tr|{{{name|}}}|link=y}}|{{tr|{{{name|}}}}}]] {{#iferror:{{eicons|{{{name|}}}}}}}
+| {{{damage|}}}
+| {{#var:_damagetype_{{#uesc:{{{damagetype|}}}}} | {{#vardefineecho:_damagetype_{{#uesc:{{{damagetype|}}}}}|{{tr|{{#uesc:{{{damagetype|}}}}}}}}} }}
+| {{{knockback|}}}
+| {{#if:{{{critical|}}}|<!--
+	-->{{percent|{{{critical}}}{{#iferror:{{#expr:1+{{{critical}}}}}||%}}}}<!-- append a percentage sign if the crit chance is a raw number
+-->|<!--
+	// crit chance is not present (e.g. for summon weapons, which never have a crit chance)
+	-->{{#var:_na}}<!--
+-->}}		
+| {{{usetime|}}}
+| {{rare|{{{rare|}}}|cate=no}}
+| {{#var:_{{#if:{{{autoswing|}}}|y|n}}}}
+| {{#var:_{{#if:{{{hardmode|}}}|y|n}}}}
+| {{#if:{{#if:{{{sell|}}}||y}}{{#ifeq:{{lc:{{{sell}}}}}|no value|y}}|<!--
+	-->data-sort-value=0 {{!}} {{#var:_novalue}}<!--
+-->|<!--
+	-->{{{sell}}}<!--
+-->}}
+</includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=List of weapons/row}}
+</noinclude>

@@ -1,0 +1,45 @@
+{{item infobox
+| imagealt = [[File:Giant Glowing Mushroom.png|30px|link=]] [[File:Giant Glowing Mushroom (surface).png|24px|link=]]
+| type = Background object
+| idtile = 5 ({{tr|surface}}), 72 ({{tr|underground}})
+| listcat = Environments
+| cargo = no
+}}
+
+'''{{tr|Giant Glowing Mushrooms}}'''很像[[{{tr|trees}}]]，但是只会随机生成在[[{{tr|mushroom}}{{tr|biome}}]]里有足够空间的地方。它们能被[[{{tr|axe}}]]砍倒，并且会掉落[[{{tr|Glowing Mushroom}}]]，也会不那么常见地掉落[[{{tr|Mushroom Grass Seeds}}]]。{{tr|Giant Glowing Mushrooms}}也会像[[{{tr|Plants|link=y}}#{{tr|Grass}}|{{tr|Mushroom Grass}}]]和[[{{tr|Glowing Mushroom}}]]一样发光。
+
+生长在{{tr|surface}}与{{tr|underground biomes}}的{{tr|Giant Glowing Mushrooms}}的图像有明显的不同：{{tr|Underground}}的版本通常生长有笔直的茎干，而{{tr|Surface}}的版本则有更加复杂的分支形式。
+
+它们的生成条件类似于{{tr|trees}}：
+* 如果有天花板，则必须至少高于地面 16 格。
+* 地面正上方不可有背景墙，但地面与地面上一格可以有背景墙。
+* 它们至少要 5 格的平地才能生成。
+* 它们之间至少要间隔 2 格。
+
+== 备注 ==
+* 若使用[[{{tr|Clentaminator}}]]蔓延[[{{tr|Glowing Mushroom biome}}]]，{{tr|trees}}会变为{{tr|surface}}的{{tr|Giant Glowing Mushrooms}}，反之亦然。
+* {{eicons|1.4.4}} [[{{tr|Paint}}]]{{tr|Giant Glowing Mushrooms}}、[[{{tr|Glowing Mushroom}}]]“{{tr|plants}}”（包括{{tr|Mushroom}}[[{{tr|vines}}|{{tr|vine}}]]和[[{{tr|cattail}}]]）以及[[{{tr|Mushroom grass}}]]，都会改变它们发出的光的颜色。
+
+== 花絮 ==
+* 虽然在变更日志中，它们被称为{{tr|Giant glowing mushrooms}}或者简单地称为{{tr|Giant mushrooms}}，但是在源代码中，它们被称为{{tr|Mushroom Trees}}（{{tr|Mushroom Trees}}）。
+* 在游戏中的{{tr|minimap}}里，它们被简单地标记成{{tr|trees}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在在刷漆时，可以发出不同颜色的光。}}
+{{history|Desktop 1.2|不再需要种植在{{tr|underground}}，{{tr|surface variant}}现在可以在{{tr|Surface}}生长。}}
+{{history|Desktop 1.0.5|随着时间的推移，{{tr|Giant Glowing Mushrooms}}将重新生成。它们现在动态地在[[{{tr|mushroom grass}}]]上生成，而非仅在世界生成时生成。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.02|不再需要种植在{{tr|underground}}，{{tr|surface variant}}现在可以在{{tr|Surface}}生长。}}
+{{history|Console-Release|Introduced=y|和生成机制一起从{{tr|Desktop}} 1.0.5 中引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|不再需要种植在{{tr|underground}}，{{tr|surface variant}}现在可以在{{tr|Surface}}生长。}}
+{{history|Mobile-Release|Introduced=y|和生成机制一起从{{tr|Desktop}} 1.0.5 中引入。}}
+{{history|3DS-Release|Introduced=y|和生成机制一起从{{tr|Desktop}} 1.2 中引入。}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+[[Category:自然生成]]
+
+{{language info|en=Giant Glowing Mushroom}}

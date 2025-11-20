@@ -1,0 +1,67 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3475
+| use = @@@@<br/>{{note|paren=y|见[[{{tr|Vortex Beater|link=y}}#{{tr|Notes}}|{{tr|notes}}]]获取更多信息}}<!-- 必须使用具体的链接，因为它是在其他页面（如[[枪]]）中显示的 cargo 数据值，若不这样写链接就无法生效。 -->
+| velocity = @@@@<br/>{{note|paren=y|见[[{{tr|Vortex Beater|link=y}}#{{tr|Notes}}|{{tr|notes}}]]获取更多信息}}
+| idprojectile = 615, 616
+| listcat = Guns / Scope
+| sound1 = Item 36.wav
+| soundcaption1 = 使用
+| sound2 = Item 14.wav
+| soundcaption2 = {{gameText|ProjectileName.VortexBeaterRocket}}碰撞
+| hardmode = yes
+}}
+[[File:Vortex Beater (demo).gif|frame|right|{{tr|the Vortex Beater}}的动画。注意武器的加速动画，这是纯粹的视觉效果。]]
+[[File:VortexBlasterCurve.png|thumb|right|453px|{{tr|Vortex Beater}}射出的曲线飞行的爆炸物。]]
+
+'''{{tr|Vortex Beater}}'''是[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|gun}}]]。使用时，它会以 25°散射角度快速发射[[{{tr|bullets}}]]。它每 {{duration|35ticks|round=3}}还会发射自动追踪、会爆炸的{{tr|Vortex Rocket}}，其{{tr|base damage}}为{{tr|weapon damage}} + 20（{{iteminfo|Vortex Beater|damage}} + 20 = {{#expr:{{iteminfo|Vortex Beater|damage}}+20}} {{tr|base damage}}），基础{{tr|knockback}}为{{tr|weapon knockback}}的 1.25 倍（{{knockback|{{#expr:{{iteminfo|Vortex Beater|kb}}*1.25}}|full=y|class=}}）。{{source code ref|name=ai075|v=1.4.4.9|method=Terraria.Projectile.AI_075}}{{tr|The Vortex Beater}}还有 {{chance|2/3}} 的概率[[{{tr|Ammo conservation}}|不消耗{{tr|ammo}}]]。
+
+{{modifier|ranged}}由于它不会得益于{{tr|speed modifiers}}，'''{{tr|Godly}}'''和'''{{tr|Demonic}}'''提供了和'''{{tr|Unreal}}'''相同的 {{DPS}} 加成。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Vortex Beater|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Vortex Beater}}的特点为其列出的属性和{{tr|projectiles}}的实际属性不对应。这些属性包括：<ref name="ai075"/>
+** [[{{tr|Use time}}]]：{{tr|bullets}}的发射频率对应 {{use time|5|full=y|class=}}的{{tr|use time}}，{{tr|Vortex Rockets}}的发射频率对应 {{use time|35|full=y|class=}}的{{tr|use time}}。这些{{tr|use time}}属性无法被{{tr|speed bonuses}}改变。
+** [[{{tr|Velocity}}]]：{{tr|bullets}}的{{tr|velocity}}为 14，{{tr|Vortex Rockets}}的{{tr|velocity}}为 8。
+* 技术上来说，在使用{{tr|Vortex Beater}}时，它会生成一个{{tr|gun projectile}}，在接触时可造成 100% {{tr|weapon}}{{tr|damage}}（{{iteminfo|Vortex Beater|damage}} {{tr|base damage}}）。{{tr|gun projectile}}此后会按照内置的发射频率生成{{tr|bullets and Vortex Rockets}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot / Terraria.Projectile.AI_075|field=Terraria.ID.ItemID.Sets&#46;gunProj}}
+* 虽然{{tr|Vortex Beater}}同时发射{{tr|bullets and rockets}}，但它只消耗{{tr|bullets}}作为[[{{tr|ammunition}}]]。它不能使用任何形式的[[{{tr|rocket}}]]或[[{{tr|Explosives (class)}}]]作为{{tr|ammunition}}，因此不会受益于[[{{tr|Shroomite Helmet}}]]。
+* {{tr|The Vortex Rocket}}可追踪 50 {{tr|tile}}距离内的{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001|t=此距离是{{wikipedia|taxicab distance|曼哈顿距离}}，即{{tr|vortex rocket}}与{{tr|enemy}}之间的垂直和水平距离之和。}}
+* 爆炸时，{{tr|the Vortex Rocket}}在以接触点为中心的 5×5 {{tr|tile}}方形区域内造成伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+** 此爆炸也可以{{tr|damage}}先前被{{tr|rocket}}击中的同一个{{tr|enemy}}，使得{{tr|rocket}}会对直接击中的{{tr|enemy}}造成两次伤害。
+
+== 小贴士 ==
+* 即使缺乏准确度，{{tr|the Vortex Beater}}也更适用于对群压制，而[[{{tr|Phantasm}}]]则具有更高的对单 {{DPS}}。
+
+== 花絮 ==
+* 虽然{{tr|Vortex Beater}}有加速的动画，但这纯粹只是视觉效果。
+* 此{{tr|weapon}}以前被叫做“Blackhole Beater”（黑洞机枪），出现在 2015 年 5 月 27 日发布于 YouTube 上的[https://www.youtube.com/watch?v=MXam7gSObek 预告片]中（[[1.3.0.1]] 更新发布的 33 天前）。
+* 这是《[[{{tr|Terraria}}]]》中唯二拥有功能独立的副炮的枪械之一，另一把是[[{{tr|Onyx Blaster}}]]。
+* 在玩家停止射击后，经过短暂的延迟后会听到一声此{{tr|gun}}重新装弹的声音。这完全是装饰性效果，并且此特性与{{tr|Onyx Blaster}}、[[{{tr|Boomstick}}]]、[[{{tr|Shotgun}}]]和[[{{tr|Quad-Barrel Shotgun}}]]相同。
+* 此{{tr|weapon}}每次发射{{tr|bullet}}会播放两次发射音效。
+** 上述特性再加上其{{tr|Vortex Rockets}}，可能会使其成为游戏中最吵的{{tr|gun}}。
+* {{tr|Vortex Beater}}在电子游戏{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|crossover}}的一部分出现。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|降低了音效的音量。}}
+{{history|Desktop 1.3.0.5|{{tr|damage}}由 70 降低至 50。}}
+{{history|Desktop 1.3.0.4|{{tr|damage}}由 63 提升至 70。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-vortex = yes
+}}
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Vortex Beater}}

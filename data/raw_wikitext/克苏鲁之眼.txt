@@ -1,0 +1,219 @@
+{{legacy nav tab}}
+{{infobox wrapper
+|{{npc infobox
+| auto = 4
+| namesub2 = 第一形态
+| image = Eye of Cthulhu (Phase 1).gif
+| type = Boss
+| environment = Surface+Night
+| environment2 = Space+Night
+| sound1 = NPC Hit 1.wav
+| soundcaption1 = 召唤<br/>{{tr|Servant of Cthulhu}}
+| sound2 = Roar 0.wav
+| soundcaption2 = 进入第二阶段
+| imageother = Map Icon Eye of Cthulhu (first form).png
+| imageothercaption = Map Icon
+}}
+|{{npc infobox
+| image = Eye of Cthulhu (Second Phase).gif
+| name = Eye of Cthulhu
+| namesub2 = 第二形态
+| type = Boss
+| environment = Surface+Night
+| environment2 = Space+Night
+| ai = Eye of Cthulhu AI
+| damage = {{modes|wrap=no
+	<!-- Classic: -->|23
+	<!-- Expert:  -->|{{expert|36}}<br/>{{expert|40}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|expert}}*0.04)}} {{tr|health}}时}}
+	<!-- Master:  -->|{{master|54}}<br/>{{master|60}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|master}}*0.04)}} {{tr|health}}时}}
+}}{{source code ref|v=1.4.4.9|name=eocai|method=Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 4</code> 代码段。}}
+| life = {{modes|{{#expr:floor({{npcinfo|4|hp}}*0.5)}}/{{npcinfo|4|hp}}|{{#expr:floor({{npcinfo|4|hp|expert}}*0.65)}}/{{npcinfo|4|hp|expert}}|{{#expr:floor({{npcinfo|4|hp|master}}*0.65)}}/{{npcinfo|4|hp|master}}}}
+| defense = {{modes|wrap=no
+	<!-- Classic: -->|0
+	<!-- Expert:  -->|0<br/>{{expert|−15}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|expert}}*0.12)}} {{tr|health}}时}}<br/>{{expert|−30}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|expert}}*0.04)}} {{tr|health}}时}}
+	<!-- Master:  -->|0<br/>{{expert|−15}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|master}}*0.12)}} {{tr|health}}时}}<br/>{{expert|−30}} {{note|small=y|paren=y|当低于 {{#expr:floor({{npcinfo|4|hp|master}}*0.04)}} {{tr|health}}时}}
+}}<ref name="eocai"/>
+| knockback = 100%
+| immune1 = Confused
+| money = {{modes|{{coin|3gc}}|{{coin|7gc50sc}}}}
+
+|custom:Badger's Hat|{{item|Badger's Hat|note=（当和[[{{tr|Wall of Flesh}}]]在同一天被击败）{{source code ref|v=1.4.4.9|name=badger|method=Terraria.NPC.DoDeathEvents_DropBossPotionsAndHearts}}|wrap=y}}|100%
+| Binoculars|1|2.5% @normal
+|:group:start|仅{{tr|Corrupt worlds}}{{source code ref|v=1.4.4.9|name=drops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_EOC}} | @normal
+| Demonite Ore|30–90| 100% @normal
+| Unholy Arrow|20–50| 100% @normal
+| Corrupt Seeds|1–3| 100% @normal
+|:group:end|--------------------------------------------------------|------------------------
+|:group:start|仅{{tr|Crimson worlds}}<ref name="drops"/> | @normal
+| Crimtane Ore|30–90| 100% @normal
+| Crimson Seeds|1–3| 100% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Lesser Healing Potion|5–15| 100%
+| Eye of Cthulhu Mask|1|14.29% @normal
+| Eye of Cthulhu Trophy|1|10%
+| Treasure Bag (Eye of Cthulhu)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Shield of Cthulhu|1|100% #expert
+  | Eye of Cthulhu Mask|1|14.29% #expert
+  | Binoculars|1|3.33% #expert
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|3]]|100% #expert
+  |:group:start|仅{{tr|Corrupt worlds}}<ref name="drops"/> |3 #expert
+  | Demonite Ore|30–90| 100% #expert
+  | Unholy Arrow|20–50| 100% #expert
+  | Corrupt Seeds|1–3| 100% #expert
+  |:group:end|-----------------------------------|
+  |:group:start|仅{{tr|Crimson worlds}}<ref name="drops"/> |3 #expert
+  | Crimtane Ore|30–90| 100% #expert
+  | Crimson Seeds|1–3| 100% #expert
+  |:group:end|-----------------------------------|
+  |:loot:end|---------------------------------------|-
+| Eye of Cthulhu Relic|1|{{master|100%}} @master
+| 0x33's Aviators|1|{{master|100%}} @master
+| Suspicious Grinning Eye|1|{{master|25%}} @master
+
+| imageother = Map Icon Eye of Cthulhu (second form).png
+| imageothercaption = Map Icon
+| sound1 = NPC Hit 1.wav
+| soundcaption1 = 受伤
+| sound2 = NPC Killed 1.wav
+| soundcaption2 = 死亡
+| sound3 = Roar 0.wav
+| soundcaption3 = 冲锋
+| sound4 = EoC Expert Roar.wav
+| soundcaption4 = 连续冲锋
+| soundmode4 = expert
+| id = 4
+| cargo = no | cargodrops = yes
+}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.EYE_ON_YOU_Description}}|是|1}}}}|image=Map Icon Eye of Cthulhu (first form).png}}
+{{quotation|[[File:Emote Town Merchant.gif|link=]] [[{{tr|Merchant}}]]|{{gameText|LegacyDialog.1}}}}
+{{dablink|不要将其与[[{{tr|The Eye of Cthulhu|link=y}}]]，一件{{tr|Hardmode}}的{{tr|yoyo}}；或是[[{{tr|True Eye of Cthulhu}}]]，{{tr|Moon Lord}}的{{tr|minion}}相混淆。}}
+
+'''{{tr|Eye of Cthulhu}}'''是一个[[{{tr|pre-Hardmode}}]]的 [[{{tr|boss}}]]。它通常是{{tr|player}}在游戏中会遇到的第一个 {{tr|Boss}} 之一，因为它会在到达相对较早的游戏进度水平时自动生成。它也可以用[[{{tr|Suspicious Looking Eye}}]]在{{tr|night}}手动召唤''（参见下方[[#召唤和生成|召唤和生成]]）''。
+
+{{boss music|t={{tr|the Eye of Cthulhu}}|Boss 1|Boss 1 (Otherworldly)}}
+
+== 召唤和生成 ==
+{{tr|Eye of Cthulhu}}可以在[[{{tr|night}}]]（游戏时间 {{time|7:30 PM}} 开始）时用[[{{tr|Suspicious Looking Eye}}]]来手动召唤。同一时间只能手动召唤一个{{tr|Eye of Cthulhu}}。
+
+若满足以下条件，它也会在每个{{tr|night}}有 {{chance|1/3}} 的几率自然生成：
+
+* {{tr|Eye of Cthulhu}}在当前{{tr|world}}中尚未被击败过。
+* {{tr|world}}中至少有一个{{tr|player}}拥有至少 200 最大[[{{tr|health}}]]和大于 10 的[[{{tr|defense}}]]。
+* 至少有四个[[{{tr|town NPC}}]]存在于{{tr|world}}上。这一总数包括[[{{tr|Old Man}}]]、{{eil|Traveling Merchant}}、和{{eil|town pets}}，但不包括{{eil|Skeleton Merchant}}。
+
+当{{tr|Eye of Cthulhu}}自然生成时，将会出现一条[[{{tr|status message}}]]''“{{gameText|LegacyMisc.9}}”''。在显示{{tr|status message}}后，{{tr|Eye of Cthulhu}}将在 81 游戏内分钟后（在 {{time|ticks=4860|day=n}}）{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateTime}}生成。如果{{tr|player}}整个{{tr|night}}都位于[[{{tr|Surface}}]]以下的{{tr|layer}}，{{tr|Eye of Cthulhu}}就不会生成。在{{tr|night}}结束前回到{{tr|surface}}会导致它正常生成。此外，如果玩家在{{tr|singleplayer}}下在{{tr|status message}}显示后退出{{tr|world}}，{{tr|Eye of Cthulhu}}也不会生成。
+
+== 行为 ==
+{{tr|Eye of Cthulhu}}拥有两个阶段，各阶段中它都能够穿过{{tr|blocks}}。 在第一阶段，它试图直接漂浮在{{tr|player}}上方，同时生成 3–4 个{{item|Servant of Cthulhu}}，它们死后会掉落[[{{tr|Heart}}]]和[[{{tr|Star}}]]。{{tr|Servant of Cthulhu}}生成时会播放{{sound|[[Media:NPC Hit 1.wav|常见的受击音效]]|NPC Hit 1.wav|nofallback=y}}。然后，它会连续 3 次向{{tr|player}}发起冲撞，然后重复这一循环。
+
+当{{tr|Eye of Cthulhu}}的{{tr|health}}降低到 50% / {{expert|65%}}（{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp}}*0.5)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|expert}}*0.65)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|master}}*0.65)}}}}}}）以下后时，它会原地旋转并转变为第二形态（它会甩开其虹膜，并将其变为嘴），攻击时会更加激烈地向{{tr|player}}冲撞 3 次，然后在空中停留一段时间。这一阶段它不再生成{{tr|Servant of Cthulhu}}，并且没有[[{{tr|defense}}]]，但{{tr|contact damage}}有所增加。此外，它每次冲撞都会伴随着{{sound|[[Media:Roar 0.wav|怒吼]]|Roar 0.wav|nofallback=y}}。
+
+如果{{tr|player}}在黎明（{{time|4:30 AM}}）前仍未杀死{{tr|Eye of Cthulhu}}、所有{{tr|players}}死亡、或它脱离屏幕过远，它就会消失。
+
+=== 专家模式 ===
+在{{eil|Expert Mode}}下，{{tr|Eye of Cthulhu}}拥有以下额外特性：
+* {{tr|The Eye of Cthulhu}}比正常情况下生成更多{{tr|Servants of Cthulhu}}，以及在变形时生成 4–5 个额外的{{tr|Servants of Cthulhu}}。
+* 在第二阶段，{{tr|Eye of Cthulhu}}会获得额外的强力连续冲锋攻击，每次冲锋时它都会发出{{sound|[[Media:EoC Expert Roar.wav|音调更高的吼声]]|EoC Expert Roar.wav}}。最初，{{tr|Eye of Cthulhu}}会在常规冲锋后进行连续冲锋，但随着{{tr|Eye of Cthulhu}}的{{tr|life}}降低，连续冲锋最终会完全代替常规冲锋，且速度更快、触发频率更高，接近{{tr|death}}时几乎会连续进行冲刺。
+* {{tr|The Eye of Cthulhu}}在到达极低的{{tr|health}}时会具有负值的{{tr|defense}}（这会提高对其造成的伤害）：
+** 低于 12% {{tr|health}}（{{expert|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|expert}}*0.12)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|master}}*0.12)}}}}}}）时具有 −15 {{tr|defense}}，即每次击中受到的伤害提高 {{#expr:floor(15/2)}} {{tr|damage}}（若为[[{{tr|critical strike}}]]则提高 15 {{tr|damage}}）。
+** 低于 4% {{tr|health}}（{{expert|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|expert}}*0.04)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Eye of Cthulhu|hp|master}}*0.04)}}}}}}）时具有 −30 {{tr|defense}}，即每次击中受到的伤害提高 {{#expr:floor(30/2)}}（若为{{tr|critical strike}}则提高 30 {{tr|damage}}）。
+
+== 备注 ==
+* 一次只能召唤一只{{tr|Eye of Cthulhu}}。在{{tr|Eye of Cthulhu}}存活时或时间不合适时使用{{tr|Suspicious Looking Eye}}不会发生任何事。
+** 然而，在出现自然生成的消息之后（但在 {{tr|Boss}} 生成之前）使用{{tr|Suspicious Looking Eye}}将生成第二只 {{tr|boss}}。
+** 此外，如果玩家在[[{{tr|Journey Mode}}]]中频繁在[[{{tr|dawn}}]]和[[{{tr|dusk}}]]之间切换，会阻止{{tr|Eye of Cthulhu}}消失，且可能会出现更多的自然生成的{{tr|Eye of Cthulhu}}。
+
+== 成就 ==
+{{achievement|name=Eye on You}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+<noinclude>{{strategies}}</noinclude><!-- This section is transcluded on Guide:Eye of Cthulhu strategies, hence these tags -->
+
+* {{tr|Eye of Cthulhu}}掉落[[{{tr|Demonite Ore}}]]或[[{{tr|Crimtane Ore}}]]。尽管此级别的{{tr|armor}}和许多{{tr|tools}}分别还需要（{{tr|Eye of Cthulhu}}不会掉落的）[[{{tr|Shadow Scale}}]]或[[{{tr|Tissue Sample}}]]，但只用{{tr|bars}}就可以制作{{tr|the sword, bow, axe, yoyo, and fishing pole}}。
+* 由于易于制作{{tr|summoning item}}和相对较低的难度，刷{{tr|Eye of Cthulhu}}是在[[{{tr|Hardmode}}]]之前{{nslink|指南|赚钱}}的较有效方式之一。它会直接掉落 {{npcinfo|Eye of Cthulhu|value}} / {{expert|{{npcinfo|Eye of Cthulhu|value|expert}}}}，外加可以制成{{tr|bars}}并以两倍（{{tr|Demonite}}）或三倍（{{tr|Crimtane}}）的价格卖出的{{tr|ores}}。
+* {{tr|Eye of Cthulhu}}仅会在一个{{tr|player}}有大于 10 {{tr|defense}}时随机生成。在{{tr|dusk}}之前脱下提高{{tr|defense}}的装备可以防止它随机生成。
+* {{tr|Boss}} 会看着它将追寻的{{tr|player}}，这在[[{{tr|multiplayer}}]]中可能是有用的信息。
+* 当它原地旋转试图甩开虹膜（由第一形态转变至第二形态的过程）时，它最容易受到攻击，因为它此时无法移动或攻击玩家。然而，这一机会仅会持续很短的一段时间。
+* 因为没有基于位置的召唤要求，所以在一个区域内杀死多个{{tr|Eye of Cthulhu}}可以成为与更强大的 {{tr|Boss}} 战斗的有效手段，因为可以根据需要在战斗中拾取它掉落的[[{{tr|Heart}}]]，不过必须平衡好杀死{{tr|Eye of Cthulhu}}的时间和对付仅在{{tr|night}}活动的 {{tr|Boss}} 的时间。
+* 虽然看上去在{{tr|Corruption world}}杀死{{tr|Eye of Cthulhu}}会比在{{tr|Crimson world}}中得到更多的钱（因为它会额外掉落{{tr|Unholy Arrows}}），但实际上{{tr|Crimtane Ore}}和{{tr|Bars}}的售价比{{tr|Demonite}}高出 30%，因此前者会更加有利可图。
+* 在{{tr|singleplayer}}中，{{tr|player}}可以在{{tr|Eye of Cthulhu}}的冲刺攻击期间使用[[{{tr|Autopause}}]]来多次暂停游戏来帮助瞄准。
+
+== 花絮 ==
+* {{tr|Eye of Cthulhu}}和其他几个 {{tr|Boss}} 都是基于[[{{tr|Cthulhu}}]]，它是在作家{{维基百科|H. P. Lovecraft|t=霍华德·菲利普斯·洛夫克拉夫特}}的短篇故事{{维基百科|b=y|The Call of Cthulhu|t=克苏鲁的呼唤}}中首次想象出的生物。
+* 由[[{{tr|Moon Lord}}]]（它和{{tr|Cthulhu}}很相像）生成的实体{{eil|True Eye of Cthulhu}}的存在可能暗示了{{tr|Eye of Cthulhu}}实际上并不真的是{{tr|Cthulhu}}的眼睛。
+** [[{{tr|lore}}|{{tr|lore}}页面]]和{{tr|Eye of Cthulhu}}的{{tr|Bestiary entry}}都与这一假设冲突。
+* 假设玩家高 {{real-life size|48|feet}}（{{real-life size|48|meters}} 米），{{tr|the Eye of Cthulhu}}第一形态的高度和宽度约为 {{real-life size|{{npcinfo|Eye of Cthulhu|height}}|feet}}（{{real-life size|{{npcinfo|Eye of Cthulhu|height}}|meters}} 米）。其第二形态的牙齿的长度约为 {{real-life size|21|feet}}（{{real-life size|21|meters}} 米）。
+* 一旦{{tr|player}}满足与{{tr|Eye of Cthulhu}}战斗的要求，[[{{tr|Merchant}}]] [[{{tr|NPC}}]] 就会提到感觉有邪恶的存在在注视他。{{footnote|“{{gameText|LegacyDialog.3}}”}}
+* 虽然{{tr|Eye of Cthulhu}}与{{nslink|指南|游戏进程}}无关，它将在满足条件时持续自然生成，直到至少被击败一次。
+* 有可能在{{tr|Eye of Cthulhu}}转换到第二形态前就将其击败（例如：使用游戏后期的{{tr|weapons}}）。不过其被杀死时[[{{tr|Gore IDs}}|{{tr|gore}}]]并不会有变化。
+* [[{{tr|Eye of Cthulhu Trophy}}]]是{{tr|Eye of Cthulhu}}的一颗牙齿，它只能在其第二形态中看到。
+* {{tr|Eye of Cthulhu}}似乎有中心{{维基百科|heterochromia iridum|虹膜异色症}}，一种同一虹膜中有两种颜色的眼部异常。
+* {{tr|The Eye of Cthulhu}}以及[[{{tr|Eater of Worlds}}]]和[[{{tr|Skeletron}}]]是最先被加入 [[《{{tr|Terraria}}》]]的 {{tr|bosses}}，在游戏发行的 [[1.0|1.0 更新]]中首次出现。
+* {{tr|The Eye of Cthulhu}}有时被简称为“克眼”。{{note|small=y|paren=y|译注：在英文社区中，Eye of Cthulhu 常被简称为“EoC”}}
+* {{eicons|RGB}}如果{{tr|player}}在使用有 [[{{tr|RGB}}]] 的键盘，在和{{tr|Eye of Cthulhu}}战斗时，一个迷你版的{{tr|Eye of Cthulhu}}会在键盘上左右来回冲刺。
+* {{tr|The Eye of Cthulhu}}有时会在{{tr|night}}以[[{{tr|Ambient entities}}]]的形式出现于背景中飞行。
+** 背景中也可能出现形状像{{tr|Eye of Cthulhu}}的第一和第二形态的两种{{tr|clouds}}。
+* {{tr|The Eye of Cthulhu}}通过{{tr|crossover events}}在三个游戏中也作为 {{tr|boss}} 登场：[[《{{tr|Dungeon Defenders 2}}》]]、[[《{{tr|Don't Starve Together}}》]]、和{{维基百科|b=y|Palworld|幻兽帕鲁}}。在《{{tr|Don't Starve Together}}》中，它名为“{{iwlink|dts|Eye of Terror}}”（恐怖之眼）。
+* 在《{{tr|Terraria}}》的一些画作中，{{tr|Eye Of Cthulhu}}出现在{{tr|day}}而不是{{tr|night}}。这在 {{tr|PS3}} 封面和 {{tr|Xbox 360}} 封面中可以明显看见。
+* {{lore|{{tr|the Eye of Cthulhu}}是{{tr|Cthulhu}}被打败时被撕扯掉的器官之一。}}
+{{bestiary}}
+
+== 图库 ==
+<gallery class="pixel">
+File:Ambience EOC.gif|{{eicons|1.4.0.1}}{{tr|background}}中飞行的{{tr|Eye of Cthulhu}}[[{{tr|Ambient entities}}]]。
+File:Eye of Cthulhu cloud.png|{{eicons|1.4.0.1}}形如{{tr|Eye of Cthulhu}}的第一阶段的{{tr|Cloud}}。
+File:Eye of Cthulhu second form cloud.png|{{eicons|1.4.0.1}}形如{{tr|Eye of Cthulhu}}的第二阶段的{{tr|Cloud}}。
+File:RGB Eye of Cthulhu.gif|{{eicons|desktop=y}}与{{tr|Eye of Cthulhu}}战斗时启用的 [[{{tr|RGB}}]] 光效。
+File:Eye of Cthulhu (Dungeon Defenders 2).png|[[《{{tr|Dungeon Defenders 2}}》]]中的{{tr|The Eye of Cthulhu}}的外观。
+File:Eye of Terror (Don't Starve Together).png|[[《{{tr|Don't Starve Together}}》]]中的{{tr|The Eye of Cthulhu}}的外观。
+</gallery>
+
+== 另见 ==
+* [[{{tr|The Twins}}]]
+* [[{{tr|Brain of Cthulhu}}]]
+* {{dts link|Eye of Terror}} 
+
+== 历史 ==
+{{history|Desktop 1.4.4|非玩家实体的负值{{tr|defense}}不再会提升至 0。因此，{{tr|Eye of Cthulhu}}在{{tr|Expert Mode}}下低{{tr|health}}时的负值{{tr|defense}}（[[#history {{tr|Desktop}} 1.3.0.1|在 1.3.0.1 中引入]]）现在有实际效果，会使得{{tr|Eye of Cthulhu}}受到的{{tr|damage}}提高。}}
+{{history|Desktop 1.4.0.1|
+** 添加了若干[[{{tr|Master Mode}}]]战利品。 
+*** 添加了{{tr|Eye of Cthulhu}}[[{{tr|relic}}]]。
+*** 添加了[[{{tr|Suspicious Grinning Eye}}]]{{tr|pet-summoning item}}。
+*** [[{{tr|0x33's Aviators}}]]改为在{{tr|Master Mode}}下，任意类型的{{tr|character}}都会掉落。
+** 现在会掉落 [[{{tr|Badger's Hat}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}旧外观为：[[File:Eye of Cthulhu (Phase 1) (old).png|30px]] [[File:Eye of Cthulhu (Phase 2) (old).png|30px]]。}}
+{{history|Desktop 1.3.2|现在在被[[{{tr|Hardcore}}]]{{tr|character}}杀死时会掉落{{tr|0x33's Aviators}}。}}
+{{history|Desktop 1.3.0.4|修复了[[{{tr|Classic Mode}}]]下造成过高[[{{tr|damage}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|现在在{{tr|Expert Mode}}下在低{{tr|health}}时会拥有负值的{{tr|defense}}。不过，由于非玩家实体的{{tr|defense}}最小值总是会被设为 0，这没有实际效果。}}
+{{history|Desktop 1.2.3|现在在[[{{tr|Crimson}}]]{{tr|worlds}}中会掉落[[{{tr|Crimson Seeds}}]]，且有几率掉落[[{{tr|Eye of Cthulhu Mask}}]]。}}
+{{history|Desktop 1.2|现在如果{{tr|player}}在有{{tr|Crimson}}的{{tr|world}}，会掉落[[{{tr|Crimtane Ore}}]]而不是[[{{tr|Demonite Ore}}]]。现在也有几率掉落[[{{tr|Eye of Cthulhu Trophy}}]]和/或[[{{tr|Binoculars}}]]。}}
+{{history|Desktop 1.0.6|[[{{tr|Health}}]]由 3000 降低至 2800。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.06|加入了{{tr|Eye of Cthulhu Mask}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|属性更改，对应{{tr|Desktop}} 1.3.0.4。}}
+{{history|Mobile 1.2.12715|
+** 修正了{{tr|Eye of Cthulhu}}不会生成{{tr|Servant of Cthulhu}}的 {{tr|bug}}。
+** 修正了{{tr|Eye of Cthulhu}}会播放 Boss 4 而非 Boss 1 [[{{tr|music}}]]的 {{tr|bug}}。}}
+{{history|Mobile 1.2.11212|
+** 再次削弱了{{tr|Eye of Cthulhu}}的第二形态。
+** {{tr|Servants of Cthulhu}}掉落{{tr|Hearts}}的几率再次提升。}}
+{{history|Mobile 1.2.10061|
+** 削弱{{tr|Eye of Cthulhu}}，在其第二形态中造成的{{tr|damage}}降低。
+** {{tr|Servants of Cthulhu}}的[[{{tr|Heart}}]]掉落几率提升。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Eye of Cthulhu}}

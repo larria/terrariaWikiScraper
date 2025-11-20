@@ -1,0 +1,199 @@
+{{exclusive|1.3.2}}
+[[File:BiomeBannerParty.png|center]]
+{{quotation|[[File:Emote Town Party Girl.gif|link=]] [[{{tr|Party Girl}}]]|{{gameText|PartyGirlSpecialText.Party_1}}}}
+{{about|{{tr|the event}}|{{tr|the multiplayer}}机制|{{tr|Teams}}}}
+
+'''{{tr|Party}}'''是一个[[{{tr|event}}]]，可以随机发生，或者用[[{{tr|Party Center}}]]手动激活。{{tr|Parties}}主要是视觉效果，对游戏玩法没有什么功能效果——除了来自[[{{tr|Clothier}}]]和[[{{tr|Party Girl}}]]的一些独有的{{tr|vanity}}和{{tr|novelty items}}。{{tr|A Party}}持续到[[{{tr|dusk}}]]（{{time|7:30 PM}}），如果是随机生成的，则从{{tr|dawn}}（{{time|4:30 AM}}）开始。
+
+在任意{{tr|dawn}}，{{tr|A Party}}都有 {{chance|1/10}} 几率（或者 [[{{tr|Celebrationmk10}}]] {{tr|worlds}}中 {{chance|1/7}} 几率）发生（由一至三个 [[{{tr|NPCs}}]]“举办”），无需放置{{tr|Party Center}}。见[[{{tr|Party}}#{{tr|Notes}}|下方]]获取详细条件。当 {{tr|NPCs}} 举办{{tr|a Party}}时，所有放置的[[{{tr|Party Center}}]]都会被激活，每个 {{tr|NPC}} 处会爆发出{{tr|confetti}}{{footnote|技术上来说，{{tr|NPCs}} 会在获得{{tr|Party Hat}}时产生{{tr|confetti}}视觉效果，因此在{{tr|Party}}期间生成的 {{tr|NPCs}} 也会产生{{tr|confetti}}。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.NPC.MakeTransitionEffectsForTextureChanges}}}}，并且会显示一条粉色的[[{{tr|status message}}]]：“{{gameText|Game.BirthdayParty_3|x_0=&lt;{{tr|NPC}} 名字&gt;|x_1=&lt;{{tr|NPC}} 名字&gt;|x_2=&lt;{{tr|NPC}} 名字&gt;}}”在结束时，{{tr|the Party}}会自动解除，同时每个 {{tr|NPCs}} 头顶会出现一团烟雾，并显示另一条粉色{{tr|status message}}：“{{gameText|LegacyMisc.99}}”随后依然可以手动重新启动{{tr|A Party}}。
+
+在{{tr|Party}}期间，会激活以下效果：
+* 除了[[{{tr|Old Man}}]]、[[{{tr|Skeleton Merchant}}]]、[[{{tr|Tax Collector}}]]、和[[{{tr|Zoologist}}]]的所有 {{tr|NPCs}} 都会戴上[[{{tr|Party Hat}}]]（包括[[{{tr|town pets}}]]和[[{{tr|Traveling Merchant}}]]）。
+** {{tr|NPCs}}（{{tr|town pets}}除外）也会偶尔向附近的玩家丢{{tr|confetti}}。
+* 在背景中会持续地升起{{tr|Balloons}}。
+* [[{{tr|Bunnies}}]]也会戴上[[{{tr|Party Hat}}]]（但用[[{{tr|Bug Net}}]]捕捉后只会掉落普通的{{tr|Bunnies}}）。
+** 在{{tr|Party}}期间生成的[[{{tr|Gem Bunnies}}]]会被替换为普通的（戴着{{tr|Party Hat}}的）{{tr|Bunnies}}。
+* {{tr|Clothier}}和{{tr|Party Girl}}会出售额外的{{tr|Party}}专属[[Template:Novelty items|{{tr|novelty}}]]和[[{{tr|vanity items}}]]。
+* 当与其交谈时，大多数 {{tr|NPCs}} 都会显示[[#{{tr|NPC}} 的话语|独特的话语]]。
+* 如果{{tr|Party}}是自然发生的： 
+** 在玩家与{{tr|The Party Girl}}对话时，她会给玩家一个[[{{tr|Slice of Cake}}]]。她每次{{tr|Party}}只会提供该{{tr|item}}一次，即使在[[{{tr|multiplayer}}]]中也如此。
+** [[{{tr|Cool Slime}}|{{tr|Cool Slime town pet}}]]会入住。
+
+== 内容 ==
+{{options/set|item|small=y|icons=n|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Critters}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Party Bunny}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Party Girl}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Party Present|note2=（{{iteminfo|Party Present|buy}}）}}<!--
+			-->|{{item|Pigronata|note2=（{{iteminfo|Pigronata|buy}}）}}<!--
+			-->|{{item|Streamers|note2=（{{iteminfo|Blue Streamer|buy}}）}}<!--
+			-->|{{item|Silly Balloons|note2=（{{iteminfo|Silly Pink Balloon|buy}}）}}<!--
+			-->|{{item|Silly Tied Balloons|note2=（{{iteminfo|Silly Tied Balloon (Pink)|buy}}）}}<!--
+			-->|{{item|Slice of Cake|note2=（与{{tr|Party Girl}}交谈）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Clothier}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bundled Party Balloons|note2=（{{iteminfo|Bundled Party Balloons|buy}}）}}<!--
+			-->|{{item|Balloon Animal|note2=（{{iteminfo|Balloon Animal|buy}}）}}<!--
+			-->|{{item|Silly Sunflower set|note2=（{{setinfo|Silly Sunflower set|buy|note=n}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+    
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}
+=== {{tr|NPC}} 的话语 ===
+在{{tr|Parties}}期间，当与大多数 [[{{tr|NPCs}}]] 交谈时，他们都会显示独特的话语：
+{{options/set|item|class=mirror|icons=n}}
+{| class="terraria sortable lined
+! {{tr|NPC}} !! 话语
+|-
+| {{item|image=Angler (Party).png|Angler}} ||
+“{{gameText|AnglerSpecialText.Party}}”
+|-
+| {{item|image=Arms Dealer (Party).png|Arms Dealer}} ||
+“{{gameText|ArmsDealerSpecialText.Party}}”
+|-
+| {{item|image=Clothier (Party).png|Clothier}} ||
+“{{gameText|ClothierSpecialText.Party}}”
+|-
+| {{item|image=Cyborg (Party).png|Cyborg}} ||
+“{{gameText|CyborgSpecialText.Party}}”
+|-
+| {{item|image=Demolitionist (Party).png|Demolitionist}} ||
+“{{gameText|DemolitionistSpecialText.Party}}”
+|-
+| {{item|image=Dryad (Party).png|Dryad}} ||
+“{{gameText|DryadSpecialText.Party}}”
+|-
+| {{item|image=Dye Trader (Party).png|Dye Trader}} ||
+“{{gameText|DyeTraderSpecialText.Party}}”
+|-
+| {{item|image=Goblin Tinkerer (Party).png|Goblin Tinkerer}} ||
+“{{gameText|GoblinTinkererSpecialText.Party}}”
+|-
+| {{item|image=Golfer (Party).png|Golfer}} ||
+“{{gameText|GolferSpecialText.Party_1}}”
+
+“{{gameText|GolferSpecialText.Party_2}}”
+|-
+| {{item|image=Guide (Party).png|Guide}} ||
+“{{gameText|GuideSpecialText.Party}}”
+|-
+| {{item|image=Mechanic (Party).png|Mechanic}} ||
+“{{gameText|MechanicSpecialText.Party}}”
+|-
+| {{item|image=Merchant (Party).png|Merchant}} ||
+“{{gameText|MerchantSpecialText.Party}}”
+|-
+| {{item|image=Nurse (Party).png|Nurse}} ||
+“{{gameText|NurseSpecialText.Party}}”
+|-
+| {{item|image=Painter (Party).png|Painter}} ||
+“{{gameText|PainterSpecialText.Party}}”
+|-
+| {{item|image=Party Girl (Party).png|Party Girl}} ||
+“{{gameText|PartyGirlSpecialText.Party_1}}”
+
+“{{gameText|PartyGirlSpecialText.Party_2}}”
+|-
+| {{item|image=Pirate (Party).png|Pirate}} ||
+“{{gameText|PirateSpecialText.Party}}”
+|-
+| {{item|image=Princess (Party).png|Princess}} ||
+“{{gameText|PrincessSpecialText.Party}}”
+|-
+| {{item|image=Santa Claus (Party).png|Santa Claus}} ||
+“{{gameText|SantaSpecialText.Party}}”
+|-
+| {{item|image=Steampunker (Party).png|Steampunker}} ||
+“{{gameText|SteampunkerSpecialText.Party}}”
+|-
+| {{item|image=Stylist (Party).png|Stylist}} ||
+“{{gameText|StylistSpecialText.Party}}”
+|-
+| {{item|image=Tavernkeep (Party).png|Tavernkeep}} ||
+“{{gameText|BartenderSpecialText.Party_1}}”
+
+“{{gameText|BartenderSpecialText.Party_2}}”
+|-
+| {{item|image=Traveling Merchant (Party).png|Traveling Merchant}} ||
+“{{gameText|TravellingMerchantSpecialText.Party}}”
+|-
+| {{item|image=Truffle (Party).png|Truffle}} ||
+“{{gameText|TruffleSpecialText.Party}}”
+|-
+| {{item|image=Witch Doctor (Party).png|Witch Doctor}} ||
+“{{gameText|WitchDoctorSpecialText.Party}}”
+|-
+| {{item|image=Wizard (Party).png|Wizard}} ||
+“{{gameText|WizardSpecialText.Party}}”
+|-
+| {{item|Zoologist}} ||
+“{{gameText|BestiaryGirlSpecialText.Party}}”
+|}{{options/reset|item}}
+
+== 备注 ==
+* 由 {{tr|NPCs}} 发起的{{tr|Parties}}仅能在下列条件下发生：{{source code ref|name=natural|v=1.4.4.9|method=Terraria.GameContent.Events.BirthdayParty.NaturalAttempt}}
+** 上个随机发生的{{tr|party}}是在超过 5–10 天前被举办的（实际冷却时间会在随机发生的{{tr|party}}开始时随机选择）。
+** {{tr|The Party Girl}}在场。
+** 至少有 5 个合适的{{tr|town NPCs}}在场（即能够举办{{tr|Party}}的 {{tr|NPC}}）。合适的 {{tr|NPC}} 包括[[{{tr|Traveling Merchant}}]]，但不包括[[{{tr|town pets}}]]、[[{{tr|Old Man}}]]、和[[{{tr|Skeleton Merchant}}]]。
+: [[{{tr|Party Center}}]]可以用于在任何时间开始{{tr|Party}}，无视上述条件（例：即使{{tr|world}}中没有 {{tr|NPCs}}）。
+* {{tr|NPCs}} 名字和发起{{tr|Party}}的 {{tr|NPCs}} 数量随机确定：<ref name="natural"/>
+** 当有 13 个或以上合适的{{tr|town NPCs}}存在时，{{tr|Party}}有 {{chance|1/5}} 的几率由 3 个 {{tr|NPCs}} 举办，{{chance|4/15}} 的几率为 2 个，{{chance|8/15}} 的几率为 1 个。
+** 当少于 13 个合适{{tr|town NPCs}} 存在时，几率为 {{chance|1/3}} 的几率 2 个，{{chance|2/3}} 的几率 1 个。此种情况下不可能由 3 个 {{tr|NPCs}} 举办{{tr|Party}}。
+* 1 至 2 个{{tr|NPCs}} 举办{{tr|Party}}时的{{tr|The status messages}}如下：
+** ''“{{gameText|Game.BirthdayParty_1|x_0=&lt;{{tr|NPC name}}&gt;}}”''
+** ''“{{gameText|Game.BirthdayParty_2|x_0=&lt;{{tr|NPC name}}&gt;|x_1=&lt;{{tr|NPC name}}&gt;}}”''
+* 在一个 [[{{tr|Celebrationmk10}}]] {{tr|world}}被创建后，其中会立即开始{{tr|A Party}}。
+** 在开启了 [[{{tr|For the worthy}}]] 和 {{tr|Celebrationmk10}} {{tr|seed}}的{{tr|Worlds}}中（例如 [[{{tr|Get fixed boi}}]] {{tr|world}}），在第一次{{tr|party}}结束后，所有的[[{{tr|town NPC}}]]（[[{{tr|Traveling Merchant}}]]、[[{{tr|Old Man}}]]、和[[{{tr|Skeleton Merchant}}]]除外）都会被杀死。
+* {{tr|Parties}}会影响到所有 {{tr|NPCs}}（除了[[{{tr|Tax Collector}}]]、[[{{tr|Old Man}}]]、和[[{{tr|Skeleton Merchant}}]]），无论他们在世界的哪个位置。
+* {{tr|The background}}中的{{tr|balloons}}效果会在以玩家为中心 240×135 格的长方形区域内没有 {{tr|NPC}}，''并且''在以玩家为中心 170×125 格的长方形区域内没有{{tr|Party Center}}时消失。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Skies.PartySky.IsNearParty}}
+* 即使所有 {{tr|NPCs}} 被杀死，{{tr|party}}也不会结束。
+
+== 成就 ==
+{{achievement|name=Jolly Jamboree}}
+
+== 花絮 ==
+* 此{{tr|The event}}被{{tr|introduced}}以庆祝[[《{{tr|Terraria}}》]]的五周年日：2016 年 5 月 16 日。
+* 虽然[[{{tr|Tax Collector}}]]并不戴{{tr|party hat}}也不会说和{{tr|Parties}}相关的话，但他仍然可以举办{{tr|a party}}。
+* {{tr|Parties}}是唯一允许看到某些 {{tr|NPC}} 头发的{{tr|event}}，最明显的是[[{{tr|the Dye Trader}}]]。
+* [[{{tr|The Goblin Tinkerer}}]]的话语参考了“{{维基百科|pin the tail on the donkey|t=给驴子安尾巴}}”，这是一种{{tr|party}}游戏。
+* 虽然[[{{tr|Pirate}}]]的话语提到了吃了太多蛋糕让胡子都变白了，但他的外观上胡子的颜色仍然和往常一样。
+* [[{{tr|The Truffle}}]]的话语是拿词语“mushroom”（蘑菇）和“much room”（很多房间）开的玩笑。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** [[{{tr|Get fixed boi}}]] {{tr|worlds}}的首个{{tr|Party}}现在会在其结束后立即杀死大多数{{tr|Town NPCs}}。
+** [[{{tr|Cool Slime}}]]可以在天然的{{tr|Party}}期间入住。}}
+{{history|Desktop 1.4.0.1|
+** 现在[[{{tr|Party Girl}}]]会在{{tr|party}}期间给予和她说话的首个玩家[[{{tr|Slice of Cake}}]]。
+** 现在{{tr|Parties}}仅当{{tr|Party Girl}}存在时才会自然发生。
+** 由[[{{tr|Bunny Statue}}]]生成的{{tr|Bunnies}}现在也会戴着{{tr|Party Hats}}。}}
+{{history|Desktop 1.3.2.1|修复了由 [[{{tr|NPC}}]] 举办的{{tr|parties}}仅会随机为{{tr|server}}中的 1 名{{tr|player}}发生的问题。}}
+{{history|Desktop 1.3.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.3.2.1 至 1.4.0.1 的改动。}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Events}}
+
+[[Category:随机事件]]
+
+{{language info|en=Party}}

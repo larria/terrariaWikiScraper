@@ -1,0 +1,1329 @@
+{{legacy nav tab}}
+
+'''{{tr|Tool speed}}'''是三种基本[[{{tr|tools}}]]类型的一项隐藏属性：
+* [[{{tr|Pickaxes}}|{{tr|pickaxe}}]]或[[{{tr|Drills}}|{{tr|drill}}]]的{{tr|tool speed}}（或者'''{{tr|mining speed}}'''）决定了玩家用其破坏[[{{tr|blocks}}]]和[[{{tr|furniture}}]]的速度。
+* [[{{tr|Axes}}|{{tr|axe}}]]或[[{{tr|Chainsaws}}|{{tr|chainsaw}}]]的{{tr|tool speed}}（或者'''砍伐{{tr|speed}}'''）决定了玩家用其砍伐[[{{tr|trees}}]]和[[{{tr|Cactus}}|{{tr|cacti}}]]的速度。
+* [[{{tr|Hammers}}|{{tr|hammer}}]]的{{tr|tool speed}}决定了玩家用其破坏[[{{tr|background walls}}]]、改变{{tr|blocks}}形状、以及破坏[[{{tr|Altars}}]]和[[{{tr|Shadow Orb}}]]/[[{{tr|Crimson Heart}}]]的速度。
+
+{{tr|tool speed}}的值越低，{{tr|tool}}就越快速''（见[[#术语|下方]]获取解释）''。
+
+== 术语 ==
+{{tr|Tool speed}}是以每次击打所需的{{tr|ticks}}{{tick}}来表示的。因此该名称存在误导性：它显示的是''完成一次特定事件所需的时间''，而速度本应表示''单位时间内发生的事件次数''{{footnote|用数学术语表述：所见数值实为速度的{{维基百科|Multiplicative inverse|倒数}}。}}。
+
+因此：{{tr|tool speed}}的值越小，{{tr|tool}}就越快。例如，{{tr|tool speed}}为 15 意味着此{{tr|tool}}每 15 {{tr|ticks}}击打一次{{tr|block}}/{{tr|tree}}/{{tr|wall}}，或者说每秒 4 次{{tick|short}}。{{tr|A tool speed}}为 20 则意味着此{{tr|tool}}每 20 {{tr|ticks}}击打一次{{tr|block}}/{{tr|tree}}/{{tr|wall}}，或者说每秒 3 次{{tick|short}}。{{tr|tool speed}}为 15 的{{tr|The tool}}要快于{{tr|tool speed}}为 20 的{{tr|tool}}。
+
+=== 与{{tr|use time}}的区别 ===
+应当注意的是，{{tr|tool}}的{{tr|tool speed}}与其挥舞的快慢互相独立，后者才是其游戏内[[{{tr|Tooltips}}|{{tr|tooltip}}]]中可见的{{tr|speed}}（例如：“[[{{tr|Copper Pickaxe}}]]—{{gameText|LegacyTooltip.8}}”），通常被称为''[[{{tr|use time}}]]''。修改“{{tr|Speed}}”的[[{{tr|modifiers}}]]同时影响{{tr|tool speed}}''和''{{tr|use time}}，这可能会导致人们误认为来自[[{{tr|armor}}]]和[[{{tr|accessories}}]]的“{{tr|melee speed}}”{{tr|bonus}}会提高{{tr|tool speed}}。实际上，{{tr|melee speed bonus}}''仅''影响{{tr|use time}}，这对战斗有用，但对{{tr|tool speed}}没有任何影响。 
+
+本 wiki 上为明确区分所称的''{{tr|use time}}''在游戏源代码中由{{tr|item}}的 <code>useAnimation</code> 属性表示，而''{{tr|tool speed}}''实际对应{{tr|item}}的 <code>useTime</code> 属性。
+
+{| class="terraria"
+! 内部属性 !! Wiki 术语
+|-
+| <code>useAnimation</code> || {{tr|Use time}}
+|-
+| <code>useTime</code> || {{tr|Tool speed}}
+|}
+
+因此，''{{tr|use time}}''和 <code>useTime</code> 是两个独立概念，不应混淆。
+
+== 增加和降低 ==
+所有[[{{tr|pickaxes}}]]/[[{{tr|drills}}]]、[[{{tr|axes}}]]/[[{{tr|chainsaws}}]]、和[[{{tr|hammers}}]]都拥有基础的{{tr|tool speed}}，隐藏在[[《{{tr|Terraria}}》]]的代码中，在游戏中不可见。可以在本 wiki 上对应{{tr|tool}}的页面或某些表格的“{{tr|tool}}/{{tr|mining}}/砍伐{{tr|speed}}”一列查询此属性。
+
+任何修改“{{tr|speed}}”的[[{{tr|Modifiers}}|{{tr|modifier}}]]对于大部分{{tr|tools}}而言都会提高或降低{{tr|tool speed}}。{{tr|modifier}}对其他属性的更改（如[[{{tr|damage}}]]）对{{tr|tool speed}}没有效果。
+
+此外，部分{{tr|item}}和[[{{tr|buffs}}]]会提高{{tr|pickaxes}}和[[{{tr|Gravedigger's Shovel}}]]的{{tr|tool speed}}。
+
+=== {{tr|Modifiers}} ===
+提高或降低“{{tr|speed}}”的{{tr|Modifiers}}会影响{{tr|tool speed}}。所有相关{{tr|modifiers}}均显示在下表中。
+
+仅有挥舞的{{tr|pickaxes, axes, and hammers}}可以获得这些{{tr|modifiers}}。{{footnote|name=modifiers-applicable}}{{tr|Drills, chainsaws}}、和[[{{tr|Chlorophyte Jackhammer}}]]不能。{{footnote|name=modifiers-notapplicable}}{{source code ref|v=1.4.4.9|method=Terraria.Item.GetRollablePrefixes}}
+
+{{forlist|{{tr|modifier}}对于{{tr|tool speed}}的有效性分析|下方[[#有效的{{tr|modifiers}}|有效的{{tr|modifiers}}]]}}
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! {{tr|Speed}}
+{{:{{tr|Modifiers}}/table
+| speed
+| Light, Legendary, Quick, Deadly2, Agile, Nasty, Murderous, Nimble, Lazy, Unhappy, Heavy, Bulky, Slow, Annoying, Sluggish
+}}
+|}
+
+=== {{tr|Items and buffs}} ===
+部分{{tr|items}}、[[{{tr|buffs}}]]、和[[{{tr|debuffs}}]]会提高或降低[[{{tr|pickaxes}}]]和[[{{tr|Gravedigger's Shovel}}]]的{{tr|tool speed}}。所有其他{{tr|tools}}（[[{{tr|drills}}]]、[[{{tr|axes}}]]/[[{{tr|chainsaws}}]]、和[[{{tr|hammers}}]]）完全不受这些效果的影响。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseMiningTools_ActuallyUseMiningTool|t=仅有 <code>pick > 0</code> 的{{tr|items}}（以及{{tr|Gravedigger's Shovel}}在 <code>UseShovel()</code> 中）的 <code>useTime</code> 会受到玩家的 <code>pickSpeed</code> 的倍乘。这确实包括{{tr|drills}}，但它们在 <code>ItemCheck_OwnerOnlyCode()</code> 有特殊排除（由 <code>if (channel) {...}</code> 条件所捕获），这使得通常的 <code>pickSpeed</code> 修改没有效果。}}
+
+值得注意的是，功能上同时作为{{tr|pickaxes and axes}}的{{tr|tools}}{{footnote|name=pickaxe-and-axe}}总是会受到影响——无论它们被用作{{tr|pickaxes}}还是{{tr|axes}}。例如，[[{{tr|Mining (buff)}}|{{tr|Mining}}]]{{tr|buff}}也会提高[[{{tr|Pickaxe Axe}}]]的''砍伐''{{tr|speed}}；[[{{tr|Hungry}}]]{{tr|debuff}}也会降低其''砍伐''{{tr|speed}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseMiningTools_ActuallyUseMiningTool|t=若{{tr|item}}具有 <code>pick > 0</code>，{{tr|item}}的 <code>useTime</code> 会被乘上 <code>pickSpeed</code> 因数。游戏不会检查此{{tr|item}}被用于挖掘{{tr|blocks}}还是砍伐{{tr|trees}}/{{tr|cacti}}。}}
+<!--
+
+-->{{options/set|item|mode=table|icons=n|showid=n}}<!--
+-->{{flexstart|gap=var(--layout-gap)}}<!--
+-->{{flexstart|item}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Item}}
+! {{tr|Tool speed}}
+|-
+| {{item|Mining Shirt}}
+| {{percent|{{signed number|{{#expr:-100*({{equipinfo|Mining Shirt|pickSpeed|raw=y}})}}}}%}}
+|-
+| {{item|Mining Pants}}
+| {{percent|{{signed number|{{#expr:-100*({{equipinfo|Mining Pants|pickSpeed|raw=y}})}}}}%}}
+|-
+| {{item|Mining armor|image=Mining armor.png / Mining armor female.png|note2={{tr|set bonus}}}}
+| {{percent|{{signed number|10}}%}}
+|-
+| {{item|id={{#af_get:{{#af_split:{{equipinfo/list|chiselSpeed|sep=&}}|&}}|0}}|bignote={{footnote|name=chiselSpeed-upgrades}}}}
+| {{percent|{{signed number|{{#expr:-100*({{#invoke:CargoQuery|list|q?tables=Equipinfo|q?fields=pickSpeed|q?where=itemid IS NULL AND chiselSpeed IS NOT NULL|q?limit=1}})}}}}%}}
+|-
+| {{item|mode=image|Sun Stone}} {{item|mode=image|Moon Stone}}
+| {{item|mode=text|Sun Stone}} /<br/>{{item|mode=text|Moon Stone|bignote={{footnote|name=skyStoneEffects-upgrades}}}}
+| {{percent|{{signed number|{{#expr:-100*({{#invoke:CargoQuery|list|q?tables=Equipinfo|q?fields=pickSpeed|q?where=itemid IS NULL AND skyStoneEffects IS NOT NULL|q?limit=1}})}}}}%}}
+|-
+| {{item|Ambrosia}}
+| {{percent|{{signed number|5}}%}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Buff}}/{{tr|Debuff}}
+! {{tr|Tool speed}}
+|-
+| {{buff|Mining}}
+| {{percent|{{signed number|25}}%}}
+|-
+| {{buff|Sugar Rush}}
+| {{percent|{{signed number|20}}%}}
+|-
+| {{buff|Well Fed}}
+| {{percent|{{signed number|5}}%}}
+|-
+| {{buff|Plenty Satisfied}}
+| {{percent|{{signed number|10}}%}}
+|-
+| {{buff|Exquisitely Stuffed}}
+| {{percent|{{signed number|15}}%}}
+|-
+| {{buff|Hungry}}
+| {{percent|{{signed number|-5}}%}}
+|-
+| {{buff|Starving}}
+| {{percent|{{signed number|-15}}%}}
+|}
+<!--
+-->{{flexend|item}}<!--
+-->{{flexend}}<!--
+-->{{options/reset|item}}
+
+所有这些效果加算叠加。例如，装备[[{{tr|Mining Shirt}}]]和[[{{tr|Ancient Chisel}}]]提供 {{percent|{{signed number|{{#expr:-100*({{equipinfo|Mining Shirt|pickSpeed|raw=y}}+{{#invoke:CargoQuery|list|q?tables=Equipinfo|q?fields=pickSpeed|q?where=itemid IS NULL AND chiselSpeed IS NOT NULL|q?limit=1}})}}}}%}} {{tr|tool speed}}。
+
+不过，来自这些{{tr|items and buffs}}的提升上限被限制在 +70%，{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}尽管达到更高的值是可能的。
+
+=== 计算 ===
+{{tr|item}}的最终{{tr|tool speed}}由以下公式计算：
+
+<math>\text{工具速度} = \left\lfloor \operatorname{round}(b \times m) \times f \right\rfloor</math>
+
+* <math display=inline>b</math> 是{{tr|base tool speed}}（如其 wiki 文章所记录）。
+* <math display=inline>m</math>是影响{{tr|speed}}的[[{{tr|Modifiers}}|{{tr|modifier}}]]的提升或降低，以小数表示（例：+15% {{tr|speed}}为 0.85）。
+** 如上所述，仅有挥舞的[[{{tr|pickaxes}}]]、[[{{tr|axes}}]]、和[[{{tr|hammers}}]]可以被{{tr|modifiers}}更改{{tr|tool speed}}。{{footnote|name=modifiers-applicable}}对于所有其他{{tr|tools}}（[[{{tr|drills}}]]、[[{{tr|chainsaws}}]]、和[[{{tr|Chlorophyte Jackhammer}}]]），{{footnote|name=modifiers-notapplicable}}<math display=inline>m</math> 总是为 1。
+* <math display=inline>f</math> 是来自{{tr|items}}和[[{{tr|buffs}}]]的总计提升，以小数表示（例：+30% 为 0.7）。
+** 如上所述，这不会低于 0.3（上限为 +70%）且仅适用于{{tr|pickaxes}}和[[{{tr|Gravedigger's Shovel}}]]。对于所有其他{{tr|tools}}，<math display=inline>f</math> 总是为 1。
+
+对此有一个例外：当用{{tr|hammer}}摧毁[[{{tr|background walls}}]]时，以上公式计算出的{{tr|tool speed}}的值会减半然后向下取整。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseMiningTools_TryHittingWall}}例如，35 的{{tr|tool speed}}在摧毁{{tr|walls}}时会被视为 17。注意这一例外仅适用于摧毁{{tr|walls}}；{{tr|hammer}}的其他功能（摧毁背景物体或更改{{tr|blocks}}形状）仍然使用通常的{{tr|tool speed}}。
+
+<math>\text{工具速度}_{\text{墙}} = \left\lfloor \frac{ \left\lfloor \operatorname{round}(b \times m) \times f \right\rfloor }{2} \right\rfloor</math>
+
+==== 分步计算 ====
+# 从{{tr|tool}}的''{{tr|base tool speed}}''（如其 wiki 文章所记录）开始。
+# 将其乘以 [1 - 来自''{{tr|modifier}}''的{{tr|speed}}修改]。
+# 将结果''四舍五入''到最近的整数。
+#如果{{tr|tool}}是{{tr|pickaxe or the Gravedigger's Shovel}}：将{{tr|buffs and items}}的所有{{tr|mining speed}}''{{tr|bonuses}}''加到一起。
+# 若此总和高于 70%，则使用 70% 作为总和。
+# 将来自第 3 步的数字乘以 [1 - 来自第 5 步的数字]。
+# 向下取整
+# 摧毁{{tr|background walls}}时：除以 2 然后再次向下取整。
+
+==== 示例 ====
+; 例子 A
+用 {{tr|Light}} [[{{tr|Shroomite Digging Claw}}]]挖隧道，喝了[[{{tr|Mining Potion}}]]并戴着[[{{tr|Celestial Stone}}]]。
+# {{tr|Shroomite Digging Claw}}的{{tr|tool speed}}是 4。
+# {{tr|Light}} {{tr|modifier}}会 +15% {{tr|speed}}。4&times;(1-0.15) = 3.4。
+# 3.4 四舍五入为 3。
+# {{tr|The Mining Potion}}加 25%，{{tr|the Celestial Stone}}加 15%。总共是 40%。
+# 40% 小于 70%，因此这一步不做操作。
+# 3&times;(1-0.40) = 1.8。
+# 1.8 向下取整为 1。
+实际表现将是每 1/60 秒一次击打（例：它每秒将挖下 60/1 = 60 块{{tr|dirt blocks}}）。
+
+; 例子 B
+用{{tr|Annoying}}[[{{tr|Pickaxe Axe}}]]砍树，并喝了{{tr|Mining Potion}}。
+# {{tr|The Pickaxe Axe}}的{{tr|tool speed}}是 7。
+# {{tr|The Annoying}} {{tr|modifier}}会 -15% {{tr|speed}}。7&times;(1-(-0.15)) = 8.05。
+# 8.05 四舍五入为 8。
+# {{tr|The Mining Potion}}加 25%。
+# 25% 小于 70%，因此这一步不做操作。
+# 8&times;(1-0.25) = 6。
+# 6 是整数，因此这一步不做操作。
+实际表现将是每 6/60 秒一次击打，或者说每秒 60/6 = 10 次击打。<br/>
+{{tr|Trees}}有 500% HP 而{{tr|Pickaxe Axe}}有 110% {{tr|axe power}}，因此需要 <math>\lceil\frac{500%}{110%}\rceil = 5</math> 击才能砍倒一棵树，这需要 <math>\frac{6\times5}{60} = 0.5</math> 秒。
+
+; 例子 C
+穿着全套[[{{tr|Mining armor}}]]，用{{tr|Murderous}}[[{{tr|The Axe}}]]敲{{tr|background wall}}。
+# {{tr|The Axe}}的{{tr|tool speed}}是 7。
+# {{tr|Murderous}} {{tr|modifier}}会 +6% {{tr|speed}}。7&times;(1-0.06) = 6.58。
+# 6.58 四舍五入为 7。
+# 7/2 = 3.5。
+# 3.5 向下取整为 3。
+第 3 步说明了为什么一些工具无法通过某些{{tr|modifiers}}来提高其速度。<br/>
+{{tr|The Mining armor}}是个幌子：它对{{tr|The Axe}}没有影响。因为它提供的奖励是针对{{tr|mining speed}}的，而{{tr|axes}}并不受{{tr|mining speed}}影响<br/>
+实际表现将是每 3/60 秒一击，因此每秒能破坏 60/3 = 20 块{{tr|walls}}。
+
+== 有效的修饰语 ==
+下方列出的[[{{tr|modifiers}}]]对{{tr|tool speed}}有最大增益。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! {{tr|Damage}} !! {{tr|Speed}} !! {{tr|Critical Strike Chance}} !! {{tr|Size}} !! {{tr|Knockback}} !! {{tr|Tier}} !! {{tr|Value}}
+{{:{{tr|Modifiers}}/table
+| damage, speed, critical, size, knockback, tier, value
+| Light, Legendary, Deadly2, Agile, Quick, Nasty, Murderous, Nimble
+}}
+|}
+
+虽然一般而言挖矿的最佳{{tr|modifier}}通常是{{tr|Light}}，但由于取整，某些{{tr|tools}}可以用较差的{{tr|modifier}}得到相同的速度，这意味着[[{{tr|reforge}}]]这些{{tr|tools}}会更容易（也更便宜），因为有更多{{tr|modifier}}并列“最优”。由于摧毁[[{{tr|background walls}}]]时{{tr|tool speed}}会减半后向下取整，因此这会更加复杂，但总的来说是这样：
+<!--
+
+-->{{#vardefine:is_modifiable_tool|itemid IN ({{#af_join:{{itemIdSet|list=y|PrefixLegacy.ItemSets.SwordsHammersAxesPicks}}|,}})}}<!--
+-->{{#vardefine:is_modifiable_pick_or_axe|({{#var:is_modifiable_tool}}) AND (axe IS NOT NULL OR pick IS NOT NULL OR itemid=4711)}}<!--
+-->{{#vardefine:is_modifiable_hammer|({{#var:is_modifiable_tool}}) AND hammer IS NOT NULL}}<!--
+
+-->{{itemlist/options|width=13em}}<!--
+-->{{options/set|item|icons=n|maxsize=30x30px}}<!--
+
+-->{{infocard|class=compact|text=
+
+{{infocard/mainheading|{{tr|Pickaxes and axes}}}}
+<!-- All modifiers have no effect: 1, 2, 3 -->
+
+{{infocard/box|
+<!-- 6%, 10%, or 15% modifiers are best: 9, 10 -->
+{{tr|tool speed}}为 9 或 10 的{{tr|Tools}}用 +6%、+10%、或 +15% 的{{tr|modifier}}会获得相同的{{tr|block}}/{{tr|tree}}/{{tr|cactus}}破坏速度——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_pick_or_axe}}) AND toolspeed IN (9, 10)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+
+{{infocard/box|
+<!-- 10% or 15% modifiers are best: 6, 7, 8, 15, 16 -->
+{{tr|tool speed}}为 6、7、8、15、或 16的{{tr|Tools}}用 +10% 或 +15% 的{{tr|modifier}}会获得相同的{{tr|block}}/{{tr|tree}}/{{tr|cactus}}破坏速度——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_pick_or_axe}}) AND toolspeed IN (6, 7, 8, 15, 16)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+
+{{infocard/box|
+<!-- Only 15% modifier has effect: 4 -->
+{{tr|tool speed}}为 4 的{{tr|Tools}}必须用{{tr|Light}}{{tr|modifier}}''才能''提高其速度。仅有一个{{tr|Tools}}的{{tr|tool speed}}为 4：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_pick_or_axe}}) AND toolspeed IN (4)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+<!-- (All other tool speeds have 15% as their best modifier.) -->
+
+{{infocard/mainheading|{{tr|Hammers}}}}
+
+{{infocard/box|
+<!-- All modifiers have no effect: 1, 2, 3, 5, 7, 9 -->
+{{tr|tool speed}}为 7 的{{tr|Hammers}}完全无法通过{{tr|modifiers}}来提高破坏{{tr|wall}}的速度——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_hammer}}) AND toolspeed IN (7)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+
+{{infocard/box|
+<!-- All modifiers have the same effect: 12, 14, 16 -->
+{{tr|tool speed}}为 14 或 16 的{{tr|Hammers}}用 +5%、+6%、+10%、或+15% 的{{tr|modifier}}会获得相同的破坏{{tr|wall}}的速度——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_hammer}}) AND toolspeed IN (14, 16)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+<!-- 6%, 10%, or 15% modifiers are best: 10 (There is no hammer with this tool speed.) -->
+
+{{infocard/box|
+<!-- 10% or 15% modifiers are best: 6, 8, 15, 17, 19, 21, 23, 26, 28, 30 -->
+{{tr|tool speed}}为 8、19、21、或 23 的{{tr|Hammers}}用 +10% 或 +15% 的{{tr|modifier}}会获得相同的破坏{{tr|wall}}的速度——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_hammer}}) AND toolspeed IN (8, 19, 21, 23)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+
+{{infocard/box|
+<!-- 15% modifier is best:  4, 11, 13, 18, 20, 22, 24, 25, 27, 29, >30 -->
+对于{{tr|tool speed}}为 11、20、或 25 的{{tr|Hammers}}，{{tr|Light}}（+15%）是唯一的最佳{{tr|modifier}}——这包括：
+
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_modifiable_hammer}}) AND toolspeed IN (11, 20, 25)
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link={{item|{{{itemname}}}}}
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- format each item with {{item}} -->
+| {{#af_template:itemlist|{{{prev}}}}} <!-- display with {{itemlist}} -->
+}}
+}}
+
+}}<!--
+
+-->{{itemlist/options|reset}}<!--
+-->{{options/reset|item}}
+
+== {{tr|Tool speed}}表格 ==
+{{tr|The Legendary, Deadly, Agile, and Nasty modifiers}}对于{{tr|mining speed}}的影响和 {{tr|Quick}} 完全一样。
+
+=== [[{{tr|Pickaxes}}]]/[[{{tr|Drills}}]] ===
+所有{{tr|drills}}的{{tr|mining speeds}}都不受{{tr|modifiers}}影响。
+
+{| class="terraria sortable lined align-center" id="pickaxes-table"
+! {{tr|Pickaxe}}
+! 来源
+! {{tr|Pickaxe Power}}
+! 范围{{tr|bonus}}
+! {{tr|Mining speed}}
+! data-sort-type=number | 最佳速度<br/>(最低{{tr|modifier}})
+! 可以采挖
+|-
+| {{item|Cactus Pickaxe}}
+| {{itemsource|Cactus Pickaxe}}
+| {{iteminfo|Cactus Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Cactus Pickaxe|tileBoost|raw=y}}}}
+| 16
+| 14 ({{tr|Quick}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Copper Pickaxe}}
+| {{itemsource|Copper Pickaxe}}
+| {{iteminfo|Copper Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Copper Pickaxe|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Tin Pickaxe}}
+| {{itemsource|Tin Pickaxe}}
+| {{iteminfo|Tin Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Tin Pickaxe|tileBoost|raw=y}}}}
+| 14
+| 12 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Iron Pickaxe}}
+| {{itemsource|Iron Pickaxe}}
+| {{iteminfo|Iron Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Iron Pickaxe|tileBoost|raw=y}}}}
+| 13
+| 11 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Lead Pickaxe}}
+| {{itemsource|Lead Pickaxe}}
+| {{iteminfo|Lead Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Lead Pickaxe|tileBoost|raw=y}}}}
+| 12
+| 10 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Silver Pickaxe}}
+| {{itemsource|Silver Pickaxe}}
+| {{iteminfo|Silver Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Silver Pickaxe|tileBoost|raw=y}}}}
+| 11
+| 9 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]以下的所有东西
+|-
+| {{item|Tungsten Pickaxe}}
+| {{itemsource|Tungsten Pickaxe}}
+| {{iteminfo|Tungsten Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Tungsten Pickaxe|tileBoost|raw=y}}}}
+| 19
+| 16 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]
+|-
+| {{item|Gold Pickaxe}}
+| {{itemsource|Gold Pickaxe}}
+| {{iteminfo|Gold Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Gold Pickaxe|tileBoost|raw=y}}}}
+| 17
+| 14 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]
+|-
+| {{item|Candy Cane Pickaxe}}
+| {{itemsource|Candy Cane Pickaxe}}
+| {{iteminfo|Candy Cane Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Candy Cane Pickaxe|tileBoost|raw=y}}}}
+| 16
+| 14 ({{tr|Quick}})
+| [[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]
+|-
+| {{item|Platinum Pickaxe}}
+| {{itemsource|Platinum Pickaxe}}
+| {{iteminfo|Platinum Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Platinum Pickaxe|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| [[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]
+|-
+| {{item|Fossil Pickaxe}}
+| {{itemsource|Fossil Pickaxe}}
+| {{iteminfo|Fossil Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Fossil Pickaxe|tileBoost|raw=y}}}}
+| 14
+| 12 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]
+|-
+| {{item|Reaver Shark}}
+| {{itemsource|Reaver Shark}}
+| {{iteminfo|Reaver Shark|pickaxe power}}
+| {{signed number|{{iteminfo|Reaver Shark|tileBoost|raw=y}}}}
+| 13
+| 11 ({{tr|Light}})
+|[[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}|{{tr|Demonite}}]]、[[{{tr|Crimtane Ore}}|{{tr|Crimtane}}]]
+|-
+| {{item|Bone Pickaxe}}
+| {{itemsource|Bone Pickaxe}}
+| {{iteminfo|Bone Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Bone Pickaxe|tileBoost|raw=y}}}}
+| 11
+| 9 ({{tr|Light}})
+| [[{{tr|Meteorite}}]]、[[{{tr|Demonite Ore}}]]、[[{{tr|Crimtane Ore}}]]
+|-
+| {{item|Nightmare Pickaxe}}
+| {{itemsource|Nightmare Pickaxe}}
+| {{iteminfo|Nightmare Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Nightmare Pickaxe|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| [[{{tr|Hellstone}}]]、[[{{tr|Ebonstone Block}}]]/[[{{tr|Crimstone Block}}]]
+|-
+| {{item|Deathbringer Pickaxe}}
+| {{itemsource|Deathbringer Pickaxe}}
+| {{iteminfo|Deathbringer Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Deathbringer Pickaxe|tileBoost|raw=y}}}}
+| 14
+| 12 ({{tr|Light}})
+| [[{{tr|Hellstone}}]]、[[{{tr|Ebonstone Block}}]]/[[{{tr|Crimstone Block}}]]
+|-
+| {{item|Molten Pickaxe}}
+| {{itemsource|Molten Pickaxe}}
+| {{iteminfo|Molten Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Molten Pickaxe|tileBoost|raw=y}}}}
+| 18
+| 15 ({{tr|Light}})
+| [[{{tr|Cobalt Ore}}]]、[[{{tr|Palladium Ore}}]]
+|-
+| {{item|Cobalt Pickaxe}}
+| {{itemsource|Cobalt Pickaxe}}
+| {{iteminfo|Cobalt Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Cobalt Pickaxe|tileBoost|raw=y}}}}
+| 13
+| 11 ({{tr|Light}})
+| [[{{tr|Mythril Ore}}]]、[[{{tr|Orichalcum Ore}}]]
+|-
+| {{item|Cobalt Drill}}
+| {{itemsource|Cobalt Drill}}
+| {{iteminfo|Cobalt Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Cobalt Drill|tileBoost|raw=y}}}}
+| 7
+| 7 (无)
+| [[{{tr|Mythril Ore}}]]、[[{{tr|Orichalcum Ore}}]]
+|-
+| {{item|Palladium Pickaxe}}
+| {{itemsource|Palladium Pickaxe}}
+| {{iteminfo|Palladium Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Palladium Pickaxe|tileBoost|raw=y}}}}
+| 12
+| 10 ({{tr|Light}})
+| [[{{tr|Mythril Ore}}]]、[[{{tr|Orichalcum Ore}}]]
+|-
+| {{item|Palladium Drill}}
+| {{itemsource|Palladium Drill}}
+| {{iteminfo|Palladium Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Palladium Drill|tileBoost|raw=y}}}}
+| 7
+| 7 (无)
+| [[{{tr|Mythril Ore}}]]、[[{{tr|Orichalcum Ore}}]]
+|-
+| {{item|Mythril Pickaxe}}
+| {{itemsource|Mythril Pickaxe}}
+| {{iteminfo|Mythril Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Mythril Pickaxe|tileBoost|raw=y}}}}
+| 10
+| 9 ({{tr|Murderous}})
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Mythril Drill}}
+| {{itemsource|Mythril Drill}}
+| {{iteminfo|Mythril Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Mythril Drill|tileBoost|raw=y}}}}
+| 6
+| 6 (无)
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Orichalcum Pickaxe}}
+| {{itemsource|Orichalcum Pickaxe}}
+| {{iteminfo|Orichalcum Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Orichalcum Pickaxe|tileBoost|raw=y}}}}
+| 9
+| 8 ({{tr|Murderous}})
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Orichalcum Drill}}
+| {{itemsource|Orichalcum Drill}}
+| {{iteminfo|Orichalcum Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Orichalcum Drill|tileBoost|raw=y}}}}
+| 5
+| 5 (无)
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Adamantite Pickaxe}}
+| {{itemsource|Adamantite Pickaxe}}
+| {{iteminfo|Adamantite Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Adamantite Pickaxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Adamantite Drill}}
+| {{itemsource|Adamantite Drill}}
+| {{iteminfo|Adamantite Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Adamantite Drill|tileBoost|raw=y}}}}
+| 4
+| 4 (无)
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Titanium Pickaxe}}
+| {{itemsource|Titanium Pickaxe}}
+| {{iteminfo|Titanium Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Titanium Pickaxe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+| {{item|Titanium Drill}}
+| {{itemsource|Titanium Drill}}
+| {{iteminfo|Titanium Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Titanium Drill|tileBoost|raw=y}}}}
+| 4
+| 4 (无)
+| [[{{tr|Adamantite Ore}}]]、[[{{tr|Titanium Ore}}]]
+|-
+|{{item|Pickaxe Axe}}
+| {{itemsource|Pickaxe Axe}}
+| {{iteminfo|Pickaxe Axe|pickaxe power}}
+| {{signed number|{{iteminfo|Pickaxe Axe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+|[[{{tr|Chlorophyte Ore}}|{{tr|Chlorophyte}}]]
+|-
+|{{item|Drax}}
+| {{itemsource|Drax}}
+| {{iteminfo|Drax|pickaxe power}}
+| {{signed number|{{iteminfo|Drax|tileBoost|raw=y}}}}
+| 4
+| 4 (无)
+|[[{{tr|Chlorophyte Ore}}|{{tr|Chlorophyte}}]]
+|-
+| {{item|Chlorophyte Pickaxe}}
+| {{itemsource|Chlorophyte Pickaxe}}
+| {{iteminfo|Chlorophyte Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Chlorophyte Pickaxe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| [[{{tr|Chlorophyte Ore}}]]
+|-
+| {{item|Chlorophyte Drill}}
+| {{itemsource|Chlorophyte Drill}}
+| {{iteminfo|Chlorophyte Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Chlorophyte Drill|tileBoost|raw=y}}}}
+| 4
+| 4 (无)
+| [[{{tr|Chlorophyte Ore}}]]
+|-
+| {{item|Spectre Pickaxe}}
+| {{itemsource|Spectre Pickaxe}}
+| {{iteminfo|Spectre Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Spectre Pickaxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| [[{{tr|Chlorophyte Ore}}]]
+|-
+| {{item|Shroomite Digging Claw}}
+| {{itemsource|Shroomite Digging Claw}}
+| {{iteminfo|Shroomite Digging Claw|pickaxe power}}
+| {{signed number|{{iteminfo|Shroomite Digging Claw|tileBoost|raw=y}}}}
+| 4
+| 3 ({{tr|Light}})
+| [[{{tr|Chlorophyte Ore}}]]
+|-
+| {{item|Picksaw}}
+| {{itemsource|Picksaw}}
+| {{iteminfo|Picksaw|pickaxe power}}
+| {{signed number|{{iteminfo|Picksaw|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| [[{{tr|Lihzahrd Brick}}]]
+|-
+| {{item|Luminite Pickaxes}}
+| {{itemsource|Solar Flare Pickaxe}}<hr class="incell-border"/>{{itemsource|Vortex Pickaxe}}<hr class="incell-border"/>{{itemsource|Nebula Pickaxe}}<hr class="incell-border"/>{{itemsource|Stardust Pickaxe}}
+| {{iteminfo|Solar Flare Pickaxe|pickaxe power}}
+| {{signed number|{{iteminfo|Solar Flare Pickaxe|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| [[{{tr|Lihzahrd Brick}}]]
+|-
+| {{item|Luminite Drills}}
+| {{itemsource|Solar Flare Drill}}<hr class="incell-border"/>{{itemsource|Vortex Drill}}<hr class="incell-border"/>{{itemsource|Nebula Drill}}<hr class="incell-border"/>{{itemsource|Stardust Drill}}
+| {{iteminfo|Solar Flare Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Solar Flare Drill|tileBoost|raw=y}}}}
+| 2
+| 2 (无)
+| [[{{tr|Lihzahrd Brick}}]]
+|-
+| {{item|Laser Drill}}
+| {{itemsource|Laser Drill}}
+| {{iteminfo|Laser Drill|pickaxe power}}
+| {{signed number|{{iteminfo|Laser Drill|tileBoost|raw=y}}}}
+| 6
+| 6 (无)
+| [[{{tr|Lihzahrd Brick}}]]
+|}
+
+=== [[{{tr|Axes}}]]/[[{{tr|Chainsaws}}]] ===
+除了{{tr|Modifiers}}之外，所有有着对应{{tr|axe}}的{{tr|chainsaws}}和那把{{tr|axe}}在功能上都是完全一样的，因此省略，唯一的例外是[[{{tr|Chlorophyte Chainsaw}}]]。
+
+{| class="terraria sortable lined align-center" id="axes-table"
+! {{tr|Axe}}
+! 来源
+! {{tr|Axe power}}
+! 范围{{tr|bonus}}
+! {{tr|Mining speed}}
+! data-sort-type=number | 最佳速度<br/>(最低{{tr|modifier}})
+! 砍树需时<br/>(无{{tr|modifier}})
+! 砍树需时<br/>(最佳{{tr|modifier}})
+|-
+| {{item|Copper Axe}}
+| {{itemsource|Copper Axe}}
+| {{iteminfo|Copper Axe|axe power}}
+| {{signed number|{{iteminfo|Copper Axe|tileBoost|raw=y}}}}
+| 21
+| 18 ({{tr|Light}})
+| 5.25 秒
+| 4.50 秒
+|-
+| {{item|Tin Axe}}
+| {{itemsource|Tin Axe}}
+| {{iteminfo|Tin Axe|axe power}}
+| {{signed number|{{iteminfo|Tin Axe|tileBoost|raw=y}}}}
+| 20
+| 17 ({{tr|Light}})
+| 4.33 秒
+| 3.68 秒
+|-
+| {{item|Iron Axe}}
+| {{itemsource|Iron Axe}}
+| {{iteminfo|Iron Axe|axe power}}
+| {{signed number|{{iteminfo|Iron Axe|tileBoost|raw=y}}}}
+| 19
+| 16 ({{tr|Light}})
+| 3.80 秒
+| 3.20 秒
+|-
+| {{item|Lead Axe}}
+| {{itemsource|Lead Axe}}
+| {{iteminfo|Lead Axe|axe power}}
+| {{signed number|{{iteminfo|Lead Axe|tileBoost|raw=y}}}}
+| 19
+| 16 ({{tr|Light}})
+| 3.17 秒
+| 2.67 秒
+|-
+| {{item|Silver Axe}}
+| {{itemsource|Silver Axe}}
+| {{iteminfo|Silver Axe|axe power}}
+| {{signed number|{{iteminfo|Silver Axe|tileBoost|raw=y}}}}
+| 18
+| 15 ({{tr|Light}})
+| 3.00 秒
+| 2.50 秒
+|-
+| {{item|Gold Axe}}
+| {{itemsource|Gold Axe}}
+| {{iteminfo|Gold Axe|axe power}}
+| {{signed number|{{iteminfo|Gold Axe|tileBoost|raw=y}}}}
+| 18
+| 15 ({{tr|Light}})
+| 3.00 秒
+| 2.50 秒
+|-
+| {{item|Tungsten Axe}}
+| {{itemsource|Tungsten Axe}}
+| {{iteminfo|Tungsten Axe|axe power}}
+| {{signed number|{{iteminfo|Tungsten Axe|tileBoost|raw=y}}}}
+| 18
+| 15 ({{tr|Light}})
+| 3.00 秒
+| 2.50 秒
+|-
+| {{item|Platinum Axe}}
+| {{itemsource|Platinum Axe}}
+| {{iteminfo|Platinum Axe|axe power}}
+| {{signed number|{{iteminfo|Platinum Axe|tileBoost|raw=y}}}}
+| 17
+| 14 ({{tr|Light}})
+| 2.55 秒
+| 2.10 秒
+|-
+| {{item|Cobalt Waraxe}}
+| {{itemsource|Cobalt Waraxe}}
+| {{iteminfo|Cobalt Waraxe|axe power}}
+| {{signed number|{{iteminfo|Cobalt Waraxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| 1.07 秒
+| 0.93 秒
+|-
+| {{item|Sawtooth Shark}}
+| {{itemsource|Sawtooth Shark}}
+| {{iteminfo|Sawtooth Shark|axe power}}
+| {{signed number|{{iteminfo|Sawtooth Shark|tileBoost|raw=y}}}}
+| 4
+| 4 (不适用)
+| 0.53 秒
+| 0.53 秒
+|-
+| {{item|Blood Lust Cluster}}
+| {{itemsource|Blood Lust Cluster}}
+| {{iteminfo|Blood Lust Cluster|axe power}}
+| {{signed number|{{iteminfo|Blood Lust Cluster|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| 1.75 秒
+| 1.52 秒
+|-
+| {{item|Palladium Waraxe}}
+| {{itemsource|Palladium Waraxe}}
+| {{iteminfo|Palladium Waraxe|axe power}}
+| {{signed number|{{iteminfo|Palladium Waraxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| 0.93 秒
+| 0.82 秒
+|-
+| {{item|War Axe of the Night}}
+| {{itemsource|War Axe of the Night}}
+| {{iteminfo|War Axe of the Night|axe power}}
+| {{signed number|{{iteminfo|War Axe of the Night|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| 1.75 秒
+| 1.52 秒
+|-
+| {{item|Mythril Waraxe}}
+| {{itemsource|Mythril Waraxe}}
+| {{iteminfo|Mythril Waraxe|axe power}}
+| {{signed number|{{iteminfo|Mythril Waraxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| 0.80 秒
+| 0.70 秒
+|-
+| {{item|Orichalcum Waraxe}}
+| {{itemsource|Orichalcum Waraxe}}
+| {{iteminfo|Orichalcum Waraxe|axe power}}
+| {{signed number|{{iteminfo|Orichalcum Waraxe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| 0.70 秒
+| 0.60 秒
+|-
+| {{item|Adamantite Waraxe}}
+| {{itemsource|Adamantite Waraxe}}
+| {{iteminfo|Adamantite Waraxe|axe power}}
+| {{signed number|{{iteminfo|Adamantite Waraxe|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| 0.50 秒
+| 0.42 秒
+|-
+| {{item|Meteor Hamaxe}}
+| {{itemsource|Meteor Hamaxe}}
+| {{iteminfo|Meteor Hamaxe|axe power}}
+| {{signed number|{{iteminfo|Meteor Hamaxe|tileBoost|raw=y}}}}
+| 16
+| 14 ({{tr|Quick}})
+| 1.33 秒
+| 1.17 秒
+|-
+| {{item|Titanium Waraxe}}
+| {{itemsource|Titanium Waraxe}}
+| {{iteminfo|Titanium Waraxe|axe power}}
+| {{signed number|{{iteminfo|Titanium Waraxe|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| 0.50 秒
+| 0.42 秒
+|-
+| {{item|Pickaxe Axe}}
+| {{itemsource|Pickaxe Axe}}
+| {{iteminfo|Pickaxe Axe|axe power}}
+| {{signed number|{{iteminfo|Pickaxe Axe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| 0.58 秒
+| 0.50 秒
+|-
+| {{item|Chlorophyte Greataxe}}
+| {{itemsource|Chlorophyte Greataxe}}
+| {{iteminfo|Chlorophyte Greataxe|axe power}}
+| {{signed number|{{iteminfo|Chlorophyte Greataxe|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| 0.50 秒
+| 0.42 秒
+|-
+| {{item|Chlorophyte Chainsaw}}
+| {{itemsource|Chlorophyte Chainsaw}}
+| {{iteminfo|Chlorophyte Chainsaw|axe power}}
+| {{signed number|{{iteminfo|Chlorophyte Chainsaw|tileBoost|raw=y}}}}
+| 4
+| 4 (不适用)
+| 0.33 秒
+| 0.33 秒
+|-
+| {{item|Picksaw}}
+| {{itemsource|Picksaw}}
+| {{iteminfo|Picksaw|axe power}}
+| {{signed number|{{iteminfo|Picksaw|tileBoost|raw=y}}}}
+| 6
+| 5 ({{tr|Quick}})
+| 0.40 秒
+| 0.33 秒
+|-
+| {{item|Shroomite Digging Claw}}
+| {{itemsource|Shroomite Digging Claw}}
+| {{iteminfo|Shroomite Digging Claw|axe power}}
+| {{signed number|{{iteminfo|Shroomite Digging Claw|tileBoost|raw=y}}}}
+| 4
+| 3 ({{tr|Light}})
+| 0.27 秒
+| 0.20 秒
+|-
+| {{item|Lucy the Axe}}
+| {{itemsource|Lucy the Axe}}
+| {{iteminfo|Lucy the Axe|axe power}}
+| {{signed number|{{iteminfo|Lucy the Axe|tileBoost|raw=y}}}}
+| 15
+| 13 ({{tr|Quick}})
+| 1.00 秒
+| 0.87 秒
+|-
+| {{item|Molten Hamaxe}}
+| {{itemsource|Molten Hamaxe}}
+| {{iteminfo|Molten Hamaxe|axe power}}
+| {{signed number|{{iteminfo|Molten Hamaxe|tileBoost|raw=y}}}}
+| 14
+| 12 ({{tr|Light}})
+| 0.93 秒
+| 0.80 秒
+|-
+| {{item|Axe of Regrowth}}
+| {{itemsource|Axe of Regrowth}}
+| {{iteminfo|Axe of Regrowth|axe power}}
+| {{signed number|{{iteminfo|Axe of Regrowth|tileBoost|raw=y}}}}
+| 12
+| 10 ({{tr|Light}})
+| 0.80 秒
+| 0.67 秒
+|-
+| {{item|Haemorrhaxe}}
+| {{itemsource|Haemorrhaxe}}
+| {{iteminfo|Haemorrhaxe|axe power}}
+| {{signed number|{{iteminfo|Haemorrhaxe|tileBoost|raw=y}}}}
+| 11
+| 9 ({{tr|Light}})
+| 0.73 秒
+| 0.60 秒
+|-
+| {{item|Spectre Hamaxe}}
+| {{itemsource|Spectre Hamaxe}}
+| {{iteminfo|Spectre Hamaxe|axe power}}
+| {{signed number|{{iteminfo|Spectre Hamaxe|tileBoost|raw=y}}}}
+| 8
+| 7 ({{tr|Quick}})
+| 0.53 秒
+| 0.47 秒
+|-
+| {{item|Luminite Hamaxes}}
+| {{itemsource|Solar Flare Hamaxe}}<hr class="incell-border"/>{{itemsource|Vortex Hamaxe}}<hr class="incell-border"/>{{itemsource|Nebula Hamaxe}}<hr class="incell-border"/>{{itemsource|Stardust Hamaxe}}
+| {{iteminfo|Solar Flare Hamaxe|axe power}}
+| {{signed number|{{iteminfo|Solar Flare Hamaxe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| 0.47 秒
+| 0.40 秒
+|-
+| {{item|Butcher's Chainsaw}}
+| {{itemsource|Butcher's Chainsaw}}
+| {{iteminfo|Butcher's Chainsaw|axe power}}
+| {{signed number|{{iteminfo|Butcher's Chainsaw|tileBoost|raw=y}}}}
+| 4
+| 4 (不适用)
+| 0.27 秒
+| 0.27 秒
+|-
+| {{item|The Axe}}
+| {{itemsource|The Axe}}
+| {{iteminfo|The Axe|axe power}}
+| {{signed number|{{iteminfo|The Axe|tileBoost|raw=y}}}}
+| 7
+| 6 ({{tr|Quick}})
+| 0.35 秒
+| 0.30 秒
+|}
+
+=== [[{{tr|Hammers}}]] ===
+{{see also|{{tr|Hammer power}}}}
+
+* [[{{tr|Chlorophyte Jackhammer}}]]是游戏中唯一的{{tr|jackhammer}}。
+* 虽然[[{{tr|Meteor Hamaxe}}]]和[[{{tr|Molten Hamaxe}}]]不能通过 {{tr|Nimble}} 以上的{{tr|modifier}}进一步提高{{tr|hammer}}性能，但''能''改善其{{tr|axe}}性能。
+* 虽然[[{{tr|Luminite Hamaxes}}]]和[[{{tr|The Axe}}]]不能通过{{tr|modifier}}改善{{tr|hammer}}性能，但''能''改善其{{tr|axe}}性能。
+
+{| class="terraria sortable lined align-center" id="hammers-table"
+! {{tr|Hammer}}
+! 来源
+! {{tr|Hammer Power}}
+! 范围{{tr|bonus}}
+! {{tr|Mining speed}}
+! 有效速度
+! data-sort-type=number | 最佳有效速度<br/>(最低{{tr|modifier}})
+|-
+| {{item|Wooden Hammer}}
+| {{itemsource|Wooden Hammer}}
+| {{iteminfo|Wooden Hammer|hammer power}}
+| {{signed number|{{iteminfo|Wooden Hammer|tileBoost|raw=y}}}}
+| 25
+| 12
+| 10 ({{tr|Light}})
+|-
+| {{item|Boreal Wood Hammer}}
+| {{itemsource|Boreal Wood Hammer}}
+| {{iteminfo|Boreal Wood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Boreal Wood Hammer|tileBoost|raw=y}}}}
+| 23
+| 11
+| 10 ({{tr|Quick}})
+|-
+| {{item|Copper Hammer}}
+| {{itemsource|Copper Hammer}}
+| {{iteminfo|Copper Hammer|hammer power}}
+| {{signed number|{{iteminfo|Copper Hammer|tileBoost|raw=y}}}}
+| 23
+| 11
+| 10 ({{tr|Quick}})
+|-
+| {{item|Palm Wood Hammer}}
+| {{itemsource|Palm Wood Hammer}}
+| {{iteminfo|Palm Wood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Palm Wood Hammer|tileBoost|raw=y}}}}
+| 23
+| 11
+| 10 ({{tr|Quick}})
+|-
+| {{item|Rich Mahogany Hammer}}
+| {{itemsource|Rich Mahogany Hammer}}
+| {{iteminfo|Rich Mahogany Hammer|hammer power}}
+| {{signed number|{{iteminfo|Rich Mahogany Hammer|tileBoost|raw=y}}}}
+| 23
+| 11
+| 10 ({{tr|Quick}})
+|-
+| {{item|Tin Hammer}}
+| {{itemsource|Tin Hammer}}
+| {{iteminfo|Tin Hammer|hammer power}}
+| {{signed number|{{iteminfo|Tin Hammer|tileBoost|raw=y}}}}
+| 21
+| 10
+| 9 ({{tr|Quick}})
+|-
+| {{item|Ebonwood Hammer}}
+| {{itemsource|Ebonwood Hammer}}
+| {{iteminfo|Ebonwood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Ebonwood Hammer|tileBoost|raw=y}}}}
+| 20
+| 10
+| 8 ({{tr|Light}})
+|-
+| {{item|Iron Hammer}}
+| {{itemsource|Iron Hammer}}
+| {{iteminfo|Iron Hammer|hammer power}}
+| {{signed number|{{iteminfo|Iron Hammer|tileBoost|raw=y}}}}
+| 20
+| 10
+| 8 ({{tr|Light}})
+|-
+| {{item|Shadewood Hammer}}
+| {{itemsource|Shadewood Hammer}}
+| {{iteminfo|Shadewood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Shadewood Hammer|tileBoost|raw=y}}}}
+| 20
+| 10
+| 8 ({{tr|Light}})
+|-
+| {{item|Lead Hammer}}
+| {{itemsource|Lead Hammer}}
+| {{iteminfo|Lead Hammer|hammer power}}
+| {{signed number|{{iteminfo|Lead Hammer|tileBoost|raw=y}}}}
+| 19
+| 9
+| 8 ({{tr|Quick}})
+|-
+| {{item|Ash Wood Hammer}}
+| {{itemsource|Ash Wood Hammer}}
+| {{iteminfo|Ash Wood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Ash Wood Hammer|tileBoost|raw=y}}}}
+| 20
+| 10
+| 8 ({{tr|Light}})
+|-
+| {{item|Pearlwood Hammer}}
+| {{itemsource|Pearlwood Hammer}}
+| {{iteminfo|Pearlwood Hammer|hammer power}}
+| {{signed number|{{iteminfo|Pearlwood Hammer|tileBoost|raw=y}}}}
+| 19
+| 9
+| 8 ({{tr|Quick}})
+|-
+| {{item|Silver Hammer}}
+| {{itemsource|Silver Hammer}}
+| {{iteminfo|Silver Hammer|hammer power}}
+| {{signed number|{{iteminfo|Silver Hammer|tileBoost|raw=y}}}}
+| 19
+| 9
+| 8 ({{tr|Quick}})
+|-
+| {{item|Tungsten Hammer}}
+| {{itemsource|Tungsten Hammer}}
+| {{iteminfo|Tungsten Hammer|hammer power}}
+| {{signed number|{{iteminfo|Tungsten Hammer|tileBoost|raw=y}}}}
+| 25
+| 12
+| 10 ({{tr|Light}})
+|-
+| {{item|Flesh Grinder}}
+| {{itemsource|Flesh Grinder}}
+| {{iteminfo|Flesh Grinder|hammer power}}
+| {{signed number|{{iteminfo|Flesh Grinder|tileBoost|raw=y}}}}
+| 19
+| 9
+| 8 ({{tr|Quick}})
+|-
+| {{item|The Breaker}}
+| {{itemsource|The Breaker}}
+| {{iteminfo|The Breaker|hammer power}}
+| {{signed number|{{iteminfo|The Breaker|tileBoost|raw=y}}}}
+| 19
+| 9
+| 8 ({{tr|Quick}})
+|-
+| {{item|Gold Hammer}}
+| {{itemsource|Gold Hammer}}
+| {{iteminfo|Gold Hammer|hammer power}}
+| {{signed number|{{iteminfo|Gold Hammer|tileBoost|raw=y}}}}
+| 23
+| 11
+| 10 ({{tr|Quick}})
+|-
+| {{item|Platinum Hammer}}
+| {{itemsource|Platinum Hammer}}
+| {{iteminfo|Platinum Hammer|hammer power}}
+| {{signed number|{{iteminfo|Platinum Hammer|tileBoost|raw=y}}}}
+| 21
+| 10
+| 9 ({{tr|Quick}})
+|-
+| {{item|Meteor Hamaxe}}
+| {{itemsource|Meteor Hamaxe}}
+| {{iteminfo|Meteor Hamaxe|hammer power}}
+| {{signed number|{{iteminfo|Meteor Hamaxe|tileBoost|raw=y}}}}
+| 16
+| 8
+| 7 ({{tr|Nimble}})
+|-
+| {{item|Rockfish}}
+| {{itemsource|Rockfish}}
+| {{iteminfo|Rockfish|hammer power}}
+| {{signed number|{{iteminfo|Rockfish|tileBoost|raw=y}}}}
+| 14
+| 7
+| 6 ({{tr|Nimble}})
+|-
+| {{item|Molten Hamaxe}}
+| {{itemsource|Molten Hamaxe}}
+| {{iteminfo|Molten Hamaxe|hammer power}}
+| {{signed number|{{iteminfo|Molten Hamaxe|tileBoost|raw=y}}}}
+| 14
+| 7
+| 6 ({{tr|Nimble}})
+|-
+| {{item|Pwnhammer}}
+| {{itemsource|Pwnhammer}}
+| {{iteminfo|Pwnhammer|hammer power}}
+| {{signed number|{{iteminfo|Pwnhammer|tileBoost|raw=y}}}}
+| 14
+| 7
+| 6 ({{tr|Nimble}})
+|-
+| {{item|Haemorrhaxe}}
+| {{itemsource|Haemorrhaxe}}
+| {{iteminfo|Haemorrhaxe|hammer power}}
+| {{signed number|{{iteminfo|Haemorrhaxe|tileBoost|raw=y}}}}
+| 11
+| 5
+| 4 ({{tr|Light}})
+|-
+| {{item|Hammush}}
+| {{itemsource|Hammush}}
+| {{iteminfo|Hammush|hammer power}}
+| {{signed number|{{iteminfo|Hammush|tileBoost|raw=y}}}}
+| 14
+| 7
+| 6 ({{tr|Nimble}})
+|-
+| {{item|Chlorophyte Warhammer}}
+| {{itemsource|Chlorophyte Warhammer}}
+| {{iteminfo|Chlorophyte Warhammer|hammer power}}
+| {{signed number|{{iteminfo|Chlorophyte Warhammer|tileBoost|raw=y}}}}
+| 14
+| 7
+| 6 ({{tr|Nimble}})
+|-
+| {{item|Chlorophyte Jackhammer}}
+| {{itemsource|Chlorophyte Jackhammer}}
+| {{iteminfo|Chlorophyte Jackhammer|hammer power}}
+| {{signed number|{{iteminfo|Chlorophyte Jackhammer|tileBoost|raw=y}}}}
+| 7
+| 4
+| 4 (无)
+|-
+| {{item|Spectre Hamaxe}}
+| {{itemsource|Spectre Hamaxe}}
+| {{iteminfo|Spectre Hamaxe|hammer power}}
+| {{signed number|{{iteminfo|Spectre Hamaxe|tileBoost|raw=y}}}}
+| 8
+| 4
+| 3 ({{tr|Quick}})
+|-
+| {{item|Luminite Hamaxes}}
+| {{itemsource|Solar Flare Hamaxe}}<hr class="incell-border"/>{{itemsource|Vortex Hamaxe}}<hr class="incell-border"/>{{itemsource|Nebula Hamaxe}}<hr class="incell-border"/>{{itemsource|Stardust Hamaxe}}
+| {{iteminfo|Solar Flare Hamaxe|hammer power}}
+| {{signed number|{{iteminfo|Solar Flare Hamaxe|tileBoost|raw=y}}}}
+| 7
+| 3
+| 3 (无)
+|-
+| {{item|The Axe}}
+| {{itemsource|The Axe}}
+| {{iteminfo|The Axe|hammer power}}
+| {{signed number|{{iteminfo|The Axe|tileBoost|raw=y}}}}
+| 7
+| 3
+| 3 (无)
+|}
+
+== 最快{{tr|mining tools}} ==
+{{tr|The Legendary, Deadly, Agile, and Nasty modifiers}}对于{{tr|mining speed}}的影响和 {{tr|Quick}} 完全一样。
+
+=== 困难模式之前 ===
+==== {{tr|Pickaxes}} ====
+* {{tr|Light}} [[{{tr|Bone Pickaxe}}]]用于那些它可以一击打破的东西（例如[[{{tr|Dirt Block}}]]、[[{{tr|Mud Block}}]]、[[{{tr|Sand Block}}]]、[[{{tr|Snow Block}}]]），以及那些无论{{tr|pickaxe}}强度如何都需要两击的东西（例如[[{{tr|Grass}}]]）。
+* 如果获得{{tr|Bone Pickaxe}}太困难，那可用 {{tr|Light}} [[{{tr|Reaver Shark}}]]替换。
+* {{tr|Light}} [[{{tr|Molten Pickaxe}}]]用于所有其他东西。
+* 请记住，用的好时，[[{{tr|Bomb}}]]和[[{{tr|Dynamite}}]]可以采挖得比{{tr|pickaxes}}更快。还可以将它们和[[{{tr|Gel}}]]组合在一起做成[[{{tr|Sticky Bomb}}]]和[[{{tr|Sticky Dynamite}}]]来让它们更直观地使用。
+
+==== {{tr|Axes}} ====
+* {{tr|Light}} [[{{tr|Molten Hamaxe}}]]。
+* 如果没有[[{{tr|Hellstone}}]]，最佳的砍树工具是[[{{tr|Sawtooth Shark}}]]（任意{{tr|modifier}}），接下来是 {{tr|Quick}}/{{tr|Light}} [[{{tr|Meteor Hamaxe}}]]。
+
+==== {{tr|Hammers}} ====
+* {{tr|Light}} [[{{tr|Ebonwood Hammer}}]]、[[{{tr|Shadewood Hammer}}]]、或[[{{tr|Ash Wood Hammer}}]]是早期的最佳选择。 
+* 具有任何提高{{tr|speed}}的{{tr|modifier}}的[[{{tr|Rockfish}}]]/[[{{tr|Molten Hamaxe}}]]是最初且最佳的升级。
+** [[{{tr|Meteor Hamaxe}}]]比最好的{{tr|wooden hammers}}略微更快，但它需要[[{{tr|Meteorite}}]]，因此被上述{{tr|hammer}}完全超越。
+
+=== {{tr|Hardmode}} ===
+==== {{tr|Pickaxes}} ====
+* {{tr|Light}} [[{{tr|Shroomite Digging Claw}}]]用于除了[[{{tr|Lihzahrd Brick}}]]（这个它挖不动）以外的所有东西。
+* [[{{tr|Moon Lord}}]]后，可以用 {{tr|Light}} [[{{tr|Luminite Pickaxe}}]]来挖{{tr|Lihzahrd Brick}}，如果觉得{{tr|Shroomite Digging Claw}}的 -1 范围对玩家不利也可以用它。
+* 如果有必要，可以将{{tr|A Luminite Pickaxe}}替换为 {{tr|Quick}}/{{tr|Light}} [[{{tr|Picksaw}}]]。
+* 当范围比速度更重要时，{{tr|Laser Drill}}（任何{{tr|modifier}}）拥有'''极端的 +11 范围'''。
+* [[{{tr|Plantera}}]]之前，{{tr|Quick}}/{{tr|Light}} [[{{tr|Chlorophyte Pickaxe}}]]（需要被制作的 {{tr|Quick}}/{{tr|Light}} [[{{tr|Pickaxe Axe}}]]有着相同的速度但没有范围奖励）。
+* [[{{tr|Mechanical Bosses}}]] 之前，{{tr|Quick}}/{{tr|Light}} [[{{tr|Adamantite Pickaxe}}]]/[[{{tr|Titanium Pickaxe}}]]是最好的。
+* [[{{tr|Bomb}}]]、[[{{tr|Dynamite}}]]、[[{{tr|Rocket}}|{{tr|Rocket II}}]]和{{tr|Rocket IV}}和[[{{tr|Mini Nuke II}}]]（首选搭配[[{{tr|Celebration Mk2}}]]使用）以及[[{{tr|Drill Containment Unit}}]]对于大面积采挖可能会是更有效的策略，但它们可能缺乏标准工具的精确度。
+
+==== {{tr|Axes}} ====
+* {{tr|Light}} [[{{tr|Shroomite Digging Claw}}]]。
+* {{tr|Quick}}/{{tr|Light}} [[{{tr|The Axe}}]]，如果玩家觉得{{tr|Shroomite Digging Claw}}的 -1 范围有所不利。
+* 如果[[{{tr|The Axe}}]]太难获得或者用起来烦（由于其音效），可以替换为 {{tr|Quick}}/{{tr|Light}} [[{{tr|Picksaw}}]]。
+* [[{{tr|Moon Lord}}]]后，或者绝对需要比{{tr|a Picksaw}}或{{tr|The Axe}}更大的范围时，{{tr|Quick}}/{{tr|Light}} [[{{tr|Luminite Hamaxe}}]]（不要混淆：如果全都按最佳{{tr|modifiers}}，{{tr|the Picksaw}}是比{{tr|Luminite Hamaxes}}更快的{{tr|axe}}，但却是比[[{{tr|Luminite Pickaxes}}]]更慢的{{tr|pickaxe}}）。
+* [[{{tr|Plantera}}]]之前，{{tr|Quick}}/{{tr|Light}} [[{{tr|Chlorophyte Greataxe}}]]（{{tr|Quick}}/{{tr|Light}} [[{{tr|Adamantite Waraxe}}]]/[[{{tr|Titanium Waraxe}}]]有相同的速度但缺乏范围奖励）。
+* [[{{tr|Mechanical Bosses}}]] 之前，{{tr|Quick}}/{{tr|Light}} {{tr|Adamantite Waraxe}}/{{tr|Titanium Waraxe}}很有用。
+
+==== {{tr|Hammers}} ====
+* [[{{tr|Luminite Hamaxes}}]]和 {{tr|Quick}} [[{{tr|Spectre Hamaxe}}]]均是破坏{{tr|wall}}的最佳选择，同时具有最快的{{tr|speed}}和最大的{{tr|range}}。  
+** [[{{tr|The Axe}}]]可达到相同的{{tr|speed}}但是范围较小。
+** [[{{tr|Chlorophyte Jackhammer}}]]更改{{tr|blocks}}形状更快，但破坏{{tr|wall}}更慢。不过，它比[[{{tr|Chlorophyte Warhammer}}]]要好。
+* [[{{tr|Mechanical Bosses}}]] 之前，{{tr|Light}} [[{{tr|Haemorrhaxe}}]]是最佳选择。
+* 若{{tr|Haemorrhaxe}}难以获得，具有任何增速{{tr|modifier}}的{{tr|Hammush}}/{{tr|Pwnhammer}}/{{tr|Molten Hamaxe}}/{{tr|Rockfish}}也是实用的。
+
+== 花絮 ==
+* 尽管可能更高科技，但[[{{tr|Chainsaws}}]]通常不如由同一种材料制成的[[{{tr|Axes}}]]：它们的{{tr|tool speed}}相同或更差，并且无法通过{{tr|reforge}}来增速。它们确实具有点击时能够“重置”挖掘过程的优势，因此理论上玩家确实可以通过快速点击来弥补（部分）差距。然而，更快的{{tr|tools}}就需要更快的点击才能跟得上，实际上即使是在{{tr|Cobalt tools}}上来这么干也是非常苛刻的，对于并未在其他游戏中练出熟练地快速点击技能的玩家，很可能需要双手操作鼠标才能做到。所有{{tr|drills}}都要比{{tr|pickaxes}}更快，但它们依然无法受益于速度加成。
+* 用[[{{tr|Drill Containment Unit}}]]可能会是个更好但更贵的替代方案。但它不会受益于任何升级。
+
+== 参考 ==
+{{reflist}}
+{{footnotelist|refs=
+
+<!-- This variable is used in some Cargo queries below: Condition whether an item should be included in lists of tools. The Gravedigger's Shovel (ID 4711) has pick=0 but should still be included. -->
+{{#vardefine:is_tool|axe IS NOT NULL OR pick IS NOT NULL OR hammer IS NOT NULL OR itemid=4711}}
+
+{{footnote|name=modifiers-applicable|''能够''获得影响{{tr|speed}}的{{tr|modifiers}}的完整{{tr|tools}}列表：
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_tool}}) AND itemid IN ({{#af_join:{{itemIdSet|list=y|PrefixLegacy.ItemSets.SwordsHammersAxesPicks}}|,}})
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link=[[{{tr|link=y|{{{itemname}}}}}|{{tr|{{{itemname}}}}}]]
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- link each item -->
+| {{#af_template:comma|{{{prev}}}}} <!-- display with {{comma}} -->
+}}。
+}}
+
+{{footnote|name=modifiers-notapplicable|''不能''获得影响{{tr|speed}}的{{tr|modifiers}}的完整{{tr|tools}}列表：
+{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=({{#var:is_tool}}) AND itemid IN ({{#af_join:{{itemIdSet|list=y|PrefixLegacy.ItemSets.SpearsMacesChainsawsDrillsPunchCannon}}|,}})
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link=[[{{tr|link=y|{{{itemname}}}}}|{{tr|{{{itemname}}}}}]]
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- link each item -->
+| {{#af_template:comma|{{{prev}}}}} <!-- display with {{comma}} -->
+}}。
+}}
+
+{{footnote|name=pickaxe-and-axe|{{#af_pipeline:
+{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name
+	|q?where=pick IS NOT NULL AND axe IS NOT NULL AND listcat HOLDS NOT "drills" AND listcat HOLDS NOT "chainsaws"
+}}
+| {{#af_map:{{{prev}}}|itemname|{{#af_object:
+	 trname={{tr|{{{itemname}}}}}
+	|link=[[{{tr|link=y|{{{itemname}}}}}|{{tr|{{{itemname}}}}}]]
+}}}}
+| {{#af_keysort:{{{prev}}}|trname}} <!-- sort list of items by name in the local language -->
+| {{#af_map:{{{prev}}}|item|{{#af_get:{{{item}}}|link}}}}<!-- link each item -->
+| {{#af_template:comma|{{{prev}}}}} <!-- display with {{comma}} -->
+}}}}
+
+{{footnote|name=chiselSpeed-upgrades|或任何{{tr|its upgrades}}：
+<ul>{{#af_pipeline:
+  {{equipinfo/list|chiselSpeed|sep=&}}
+| {{#af_split:{{{prev}}}|&}}
+| {{#af_slice:{{{prev}}}|1}} <!-- remove the first element (already listed) -->
+| {{#af_foreach:{{{prev}}}||itemid|<li>{{item|id={{{itemid}}}|showid=n|icons=n}}</li>}}
+}}</ul>
+它们不会互相叠加。
+}}
+
+{{footnote|name=skyStoneEffects-upgrades|或任何{{tr|its upgrades}}：
+<ul>{{#af_pipeline:
+  {{equipinfo/list|skyStoneEffects|sep=&}}
+| {{#af_split:{{{prev}}}|&}}
+| {{#af_difference:{{{prev}}}|{{#af_list:899|900}}}} <!-- remove Sun/Moon Stone (already listed) -->
+| {{#af_foreach:{{{prev}}}||itemid|<li>{{item|id={{{itemid}}}|showid=n|icons=n}}</li>}}
+}}</ul>
+它们不会互相叠加。
+}}
+
+}}
+
+{{Game mechanics}}
+
+{{language info|en=Tool speed}}

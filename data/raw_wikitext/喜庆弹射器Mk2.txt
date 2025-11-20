@@ -1,0 +1,66 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 3930
+| idprojectile = 714, 715, 716, 717, 718
+| listcat = launchers
+| tags = drop / hardmode / treasure bag loot / bag loot
+| sounduse = Item 156.wav
+| sound2 = Item 14.wav
+| soundcaption2 = {{tr|Explosion}}
+}}
+{{drop infobox|style=clear:right}}
+{{for|{{tr|the secret world seed}}|{{tr|Celebrationmk10}}}}
+[[File:Celebration Mk2 (demo).gif|framed|用{{tr|Celebration Mk2}}攻击[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]。]]
+
+'''{{tr|Celebration Mk2}}''' 是一把[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|launcher}}]]，是[[{{tr|Celebration}}]]的升级版。使用时，它会发射七种受重力影响的{{tr|rocket}}{{tr|projectile}}之一，与作为{{tr|ammo}}使用的[[{{tr|Rocket}}]]类型无关。{{tr|rockets}}的发射频率和其显示的{{tr|use time}}并不对应，而是对应着 {{use time|8|full=y|class=}}的{{tr|use time}}且不受{{tr|speed bonuses}}的影响。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_075}}虽然它保留了{{tr|ammo}}的摧毁性，但它不能够用于搭配[[{{tr|liquid rocket}}]]放置或清除[[{{tr|liquid}}]]。{{tr|Celebration Mk2}}还有 {{chance|1/2}} 几率[[{{tr|Ammo conservation}}|不消耗{{tr|ammo}}]]。
+
+{{tr|Celebration Mk2}}有 {{chance|2/9}} 的几率掉落自{{tr|the Moon Lord}}。 
+
+{{modifier|ranged}}因为它不会得益于{{tr|speed modifiers}}，'''{{tr|Godly}}'''和'''{{tr|Demonic}}'''提供了和'''{{tr|Unreal}}'''相同的{{DPS}}加成。
+
+== 备注 ==
+* 可用颜色区分七种不同的{{tr|rocket}}类型。所有{{tr|rocket}}类型都不同程度地受{{tr|gravity}}影响，这和[[{{tr|Celebration}}]]的{{tr|projectiles}}不同。虽然它们的{{tr|damage}}、[[{{tr|critical strike chance}}]]、和[[{{tr|knockback}}]]是相同的，它们的行为不同：
+** 红色{{tr|rocket}}能够无限穿透不位于极近处的[[{{tr|enemy}}]]，并在撞击实体{{tr|block}}后爆炸。红色{{tr|rocket}}会间歇性地发出小爆炸，但这些是纯粹的视觉效果，不会影响{{tr|rocket}}的{{tr|hitbox}}。
+** 橙色{{tr|rocket}}以弧线发射，发射弧度在竖直方向上受{{tr|cursor}}相对位置的影响，在撞击时的地面上以冲击波的形式产生范围伤害{{tr|hitbox}}。橙色{{tr|rocket}}在飞行途中还会逐渐变大。
+** 黄色{{tr|rocket}}以直线前进（视觉上是蛇形），直到其受到{{tr|gravity}}的影响开始下坠。
+** 绿色{{tr|rocket}}会跟踪{{tr|enemy}}，类似于[[{{tr|Chlorophyte Bullets}}]]。
+** 蓝色{{tr|rockets}}同时发射两发，以螺旋状向前径直行进。
+** 紫色{{tr|rockets}}同时发射三发，样式类似{{tr|shotgun}}的散布。
+** 粉色{{tr|rocket}}似乎没有特殊行为。
+* 短按 {{key|use}} {{tr|button}}时，发射{{tr|rocket}}的类型是随机决定的。不过，当长按时，{{tr|rockets}}的类型是循环的：红色 → 橙色 → 黄色 → 绿色 → 蓝色 → 紫色 → 粉色 → 红色。
+* 技术上来说，在使用{{tr|Celebration Mk2}}时，它会生成一个{{tr|launcher projectile}}，在接触时可造成 100% {{tr|weapon}}{{tr|damage}}（{{iteminfo|Celebration Mk2|damage}} {{tr|base damage}}）。{{tr|launcher projectile}}此后会按照内置的发射频率生成{{tr|rockets}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot / Terraria.Projectile.AI_075|field=Terraria.ID.ItemID.Sets&#46;gunProj}}
+
+== 小贴士 ==
+* 因为其极高的开火频率，它也是极其有效的挖掘{{tr|weapon}}，使用[[{{tr|Rocket II}}]]、[[{{tr|Rocket IV}}]]或[[{{tr|Mini Nuke II}}]]作为{{tr|ammo}}可以快速挖掘一大片区域，每 5–8 秒能挖掉高达上千个{{tr|block}}。虽然它的挖掘速度比传统的挖掘工具（如[[{{tr|Shroomite Digging Claw}}]]和[[{{tr|Drill Containment Unit}}]]，甚至是没那么强力的{{tr|launcher}}[[{{tr|Snowman Cannon}}]]）更快，但是挖掘的精度不佳。
+* 不规律的{{tr|rocket}}与高射速使得{{tr|Celebration Mk2}}清理地面{{tr|enemy}}非常有效（比如在[[{{tr|Solar Eclipse}}]]或[[{{tr|Pumpkin Moon}}]]中）。
+** 它可以在几秒内击杀{{tr|mini-bosses}}（例如[[{{tr|Ice Queen}}]]）。
+
+== 花絮 ==
+* {{tr|Celebration Mk2}}最初在 2018 年 3 月 22 日发布了预告，作为对 [[Yoraiz0r]] 生日的纪念。<ref>{{forums thread|67892|Happy Birthday to Terraria's Lead Developer & Resident Wizard: Yorai!}} {{small|{{date|2018|03|22}}}}</ref>
+* 它可以看作对[[{{tr|Snowman Cannon}}]]和[[{{tr|Stynger}}]]的间接升级。
+* 虽然它是[[{{tr|Celebration}}]]的升级物，但{{tr|the Celebration Mk2}} 在对付{{tr|range}}较远的{{tr|enemy}}时通常没那么有效。
+* {{tr|Celebration}}此前由{{tr|Moon Lord}}掉落，但由于它的强度不及其他{{tr|Moon Lord}}后的{{tr|weapon}}而被{{tr|Celebration Mk2}}代替了。
+
+== 图库 ==
+<gallery widths=250px heights=200px>
+File:CelebrationMK2Rockets.png|thumb|可能射出的七种不同类型的{{tr|rockets}}。
+File:Celebration Mk2 Trailer.gif|frame|right|在 [[Yoraiz0r]] 的生日发布的{{tr|Celebration Mk2}}演示预告。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 40 提升至 50。
+** 修复了导致红色{{tr|rocket}}会在每{{tr|tick}}都造成{{tr|damage}}，导致{{tr|damage}}显著高于预期的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Celebration Mk2}}

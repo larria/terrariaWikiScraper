@@ -1,0 +1,69 @@
+{{item infobox | boxwidth = 22em
+| damage = @@@@ {{eicons|1.2.4|small=y}} / 62 {{eicons|1.2.4|invert=y|small=y}}
+| knockback = @@@@ {{eicons|1.4.4|small=y}} / {{kb|0}} {{eicons|1.4.4|invert=y|small=y}}
+| auto = 197
+| idprojectile = 955
+}}
+[[File:Star Cannon (demo).gif|thumb|right|580x580px|使用中的{{tr|The Star Cannon}}。注意其无限穿透。]]
+
+'''{{tr|Star Cannon}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|ranged weapon}}]]，能够以直线发射[[{{tr|Fallen Star}}]]。发射的{{tr|projectile}}不受[[{{tr|gravity}}]]影响，可以穿透无限数量的[[{{tr|enemies}}]]，会在发射 1 分钟后或命中[[{{tr|block}}|{{tr|solid block}}]]后消散成发光粒子。 
+
+{{eicons|1.4.4}} {{modifier|ranged}}
+
+{{eicons|1.4.4|invert=y}} {{modifier|rangednokb}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Star Cannon|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Star Cannon|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Fallen Star}}{{tr|projectile}}的最远射程为 {{#expr:{{iteminfo|Star Cannon|velocity}}*3.75<!-- tiles/second velocity -->*60<!-- one minute lifespan -->}} 个{{tr|tiles}}，因为它的[[{{tr|velocity}}]]为 {{iteminfo|Star Cannon|velocity}}（{{mph|{{#expr:{{iteminfo|Star Cannon|velocity}}*3.75}} tiles|mode=tiles_text}}或{{mph|{{#expr:{{iteminfo|Star Cannon|velocity}}*3.75}} tiles}}）且最多存在 60 秒。
+* {{tr|The Star Cannon}}实际造成{{eicons|1.2.4}} 54 / {{eicons|1.2.4|invert=y}} 61 伤害，因为发射的{{tr|Fallen Stars}}的伤害为 -1。
+* {{eicons|1.4.2|invert=y}}虽然{{tr|Star Cannon}}能够向上穿过{{tr|platforms}}发射，它将[[{{tr|platforms}}]]的上侧视作实心，不能向下穿过{{tr|platform}}发射。这一特性使得它在传统的由多层{{tr|platform}}组成的[[{{tr|arena}}]]中不是首选{{tr|weapon}}。
+* 当玩家站在离墙不超过 1 个{{tr|tile}}的距离的位置时，{{tr|The Star Cannon}}可以穿过 2 个{{tr|block}}宽的墙发射。
+* {{eicons|1.4.2|invert=y}} 虽然它有[[{{tr|critical strike chance}}]]且会显示{{tr|critical strike chance}}{{tr|modifier}}的加成，它不能造成{{tr|critical hits}}。
+
+== 小贴士 ==
+* 用[[{{tr|skybridge}}]]可以高效地收集{{tr|Fallen Stars}}。
+* {{tr|The Star Cannon}}可以造成大量伤害，从{{DPS}}角度来说是最好的[[{{tr|pre-Hardmode}}]]的{{tr|ranged weapon}}。它在[[{{tr|Hardmode}}]]中也很有用，当穿透{{tr|enemy}}时造成的{{DPS}}高于[[{{tr|Clockwork Assault Rifle}}]]。然而，{{tr|ammo}}的获得难度使得{{tr|Clockwork Assault Rifle}}整体上来说更实用。
+** 在{{eil|Journey Mode}}中，{{tr|Fallen Stars}}能够被研究并被无限复制，也可以通过[[{{tr|Journey Mode}}#时间|时间控制能力]]来快速收集，这消除了{{tr|ammo}}获得难度的门槛。这使得{{tr|Star Cannon}}对于{{tr|Journey Mode players}}来说是一个强力选择。
+* {{eicons|1.4.2|invert=y}}由于{{tr|Star Cannon}}不能造成{{tr|critical hits}}，搭配此{{tr|weapon}}最好的[[{{tr|Mechanical bosses}}]] 前的{{tr|set}}为[[{{tr|Frost Helmet}}]]、[[{{tr|Adamantite Breastplate}}]]和[[{{tr|Necro Greaves}}]]。
+* {{tr|star projectiles}}的无限穿透能力非常克制有多个体节的{{tr|enemy}}（如[[{{tr|Wyvern}}]]和[[{{tr|the Destroyer}}]]）（尤其是对准正确角度发射，穿透大量体节时）以及类似[[{{tr|Wall of Flesh}}]]的 {{tr|bosses}}（能够穿透[[{{tr|the Hungry}}]]攻击 {{tr|boss}}）。
+
+== 花絮 ==
+* [[{{tr|Clockwork Assault Rifle}}]]、{{eicons|1.4.4|invert=y}}{{tr|Star Cannon}}、{{eicons|1.4.4|invert=y}}[[{{tr|Flintlock Pistol}}]]和[[{{tr|Minishark}}]]是仅有的没有基础[[{{tr|knockback}}]]的[[{{tr|guns}}]]。由于大部分种类的{{tr|ammo}}具有的{{tr|knockback}}不为 0，{{eicons|1.4.4|invert=y}}{{tr|the Star Cannon}}是仅有的完全没有{{tr|knockback}}的{{tr|ranged weapon}}。
+* {{eil|Super Star Shooter}}是{{tr|Star Cannon}}的直接升级。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Knockback}}由 0 提升至 3，允许它获得更好的[[{{tr|modifiers}}]]。}}
+{{history|Desktop 1.4.2|
+** 修复了{{tr|Star Cannon}}的{{tr|projectile}}无法造成{{tr|critical hits}}，且不总是正确获得来自{{tr|player equipment}}的属性加成的问题。
+** 修复了{{tr|Star Cannon}}的{{tr|projectile}}无法穿过{{tr|platforms}}的问题。}}
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Super Star Shooter}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|伤害由 62 降低至 55。}}
+{{history|Desktop 1.2|
+** 伤害由 55 提升至 62。
+** 修正了将{{tr|Star Cannon}}的伤害强化到超过 100 会导致发射的{{tr|stars}}在{{tr|night}}掉落的 {{tr|bug}}。}}
+{{history|Desktop 1.1.1|
+** {{tr|Speed}}轻微降低但依然是{{tr/speed|Very Fast}}。
+** {{tr|Damage}}进一步由 60 降低至 55。}}
+{{history|Desktop 1.1|{{tr|Speed}}提升至{{tr/speed|Very Fast}}。}}
+{{history|Desktop 1.0.5|
+** 伤害由 75 降低至 60。
+** 开火速率大幅降低至{{tr/speed|Very Slow}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Meteorite}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Star Cannon}}

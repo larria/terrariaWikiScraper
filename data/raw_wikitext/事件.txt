@@ -1,0 +1,706 @@
+[[File:Frost Legion Battle.png|thumb|一个{{tr|event}}的例子。在这个案例中，它是[[{{tr|Frost Legion}}]]。]]
+{{see also|{{tr|Seasonal events}}}}
+
+'''{{tr|Events}}'''（其中一些也称为'''[[#{{tr|Invasion}}|{{tr|invasions}}]]'''）是临时性的特殊状况，会生成各种特殊[[{{tr|enemies}}]]来攻击玩家，并且{{tr|enemies}}即使在 [[{{tr|NPC}}]] 附近也会生成，大部分情况下{{tr|enemies}}的{{tr|spawn rate}}会有所提高。一些{{tr|events}}可以在游戏过程中随机发生，而其他{{tr|event}}则可以通过特定的{{tr|summoning items}}或特殊情况来触发。{{tr|Events}}会生成它们自身独特的{{tr|enemies}}，这些{{tr|enemies}}在正常游戏过程中是见不到的，反过来，这些{{tr|enemies}}会掉落只能在{{tr|event}}中得到的独特{{tr|item}}。一些{{tr|events}}还带来了独特的视觉效果和独特的氛围，诸如改变了[[{{tr|Moon}}]]和给屏幕用了很显眼的{{tr|shaders}}。{{tr|Events}}还伴随着其自身的特殊[[{{tr|music}}]]，加强了其主题。根据具体{{tr|event}}，它们可能会持续到到达一定的时间限制，或持续到打败一定数量的{{tr|enemies}}。
+
+在{{eversions|1.3.0.1}}中，在部分{{tr|events}}期间会显示一个进度条，用于指示玩家在{{tr|event}}中的进度以及玩家距离完成{{tr|event}}还有多远。它只会出现在以下{{tr|event}}中：[[{{tr|Goblin Army}}]]、{{eil|Old One's Army}}、[[{{tr|Frost Legion}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、和{{eil|Martian Madness}}。在其他限时{{tr|events}}中（[[{{tr|Blood Moon}}]]、{{tr|Rain}}、{{eil|Slime Rain}}、{{eil|Sandstorm}}、[[{{tr|Solar Eclipse}}]]等等）不会出现进度条。''见[[#barinfo|{{tr|Notes}}]]获取关于进度条的更多细节。''
+
+{{tr|Invasion}}类型的{{tr|events}}有位置要求。玩家必须不低于{{tr|surface}}以下 67.5 格且位于{{tr|invasion}}位置的水平方向（两侧）187.5 格以内才被视为在{{tr|invasion}}范围内，否则不会生成{{tr|invasion enemies}}。如果{{tr|invasion}}位于{{tr|world}}的水平中心附近，则当玩家位于任何{{tr|town NPC}}水平方向（两侧）187.5 格以内时也可以通过水平范围检测，不过{{tr|spawn rate}}会有所降低。并不会检测{{tr|The town NPC}} 的垂直位置，因此可以将他们安置在{{tr|arena}}之上或之下很远的地方。''见[[#{{tr|Invasion}}|{{tr|Notes}}]]获取关于{{tr|invasions}}的更多细节。''
+
+总共有{{etext|e=1.4.0.5|t=19}} / {{etext|e=1.3.0.1|invert=y|t=8}}种不同的{{tr|events}}。
+__TOC__
+{{-}}
+
+== 和平{{tr|events}} ==
+<!--
+start Party
+-->
+{{/box|name=Party|image=BiomeBannerParty.png|summoned=由 [[{{tr|NPCs}}]] 在白天随机发起，或者通过{{item|Party Center|icons=n}}手工激活。|
+
+在'''[[{{tr|Party}}]]'''期间，大多数 [[{{tr|NPCs}}]]、{{tr|town pets}}、[[{{tr|Travelling Merchant}}]]、甚至[[{{tr|Bunny}}]]都会戴上[[{{tr|Party Hat}}]]。与 [[{{tr|NPCs}}]] 交谈时会显示独特的对话，且其中一些会出售独特的物品。
+
+在{{tr|Party}}进行期间，背景中天空上到处漂浮着各种各种颜色的气球。
+
+此{{tr|event}}总是会在[[{{tr|Day and night cycle}}#{{tr|Time}}|黄昏]]时结束。}}
+<!--
+end Party
+
+start Lantern Night
+-->
+{{/box|name=Lantern Night|image=BiomeBannerLanternNight.png|summoned=发生在首次打败 {{tr|boss}} 或{{tr|invasion}}之后的夜晚，或者在打败了[[{{tr|Moon Lord}}]]之后的夜晚随机发生。|
+
+'''[[{{tr|Lantern Night}}]]'''是为了庆祝[[人物|玩家]]战胜 {{tr|boss}} 或{{tr|invasion}}而发生的事件。[[{{tr|Party Girl}}]]会出售[[{{tr|Release Lantern}}]]，并且玩家的[[{{tr|Luck}}]]属性会直接 +0.3。
+
+在这样的夜晚，背景中可以看到许多{{tr|lanterns}}升到天空中。}}
+<!--
+end Lantern Night
+-->
+
+== 天气{{tr|events}} ==
+<!--start Rain-->
+{{/box|name={{tr|Rain}}|image=BiomeBannerRain.png|summoned=随机发生。|
+
+'''[[{{tr|Rain}}]]'''在其持续期间会影响任何{{tr|surface biome}}。每次{{tr|Rain event}}可持续的时间不同，由游戏内数个小时至游戏内数天不等，可能会跨越[[{{tr|Day and night cycle}}|白天和{{tr|night}}]]。当玩家在下{{tr|Rain}}期间进入[[{{tr|Snow Biome}}]]时，它会显示为'''{{tr|Blizzard}}'''，导致降雪量增加。{{tr|Rain}}也会提高{{tr|cloud}}量。
+{{-}}
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|除了{{tr|regular surface enemies}}，还会{{tr|spawn}}以下{{tr|enemies}}：}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Flying Fish}}<!--
+			-->|{{item|Umbrella Slime}}<!--
+			-->|{{item|Raincoat Zombie|note2=（{{tr|night}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|blizzards}}期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Deerclops|note2=（罕见）|size=*0.35}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Angry Nimbus|note2=（不常见）}}<!--
+			-->|{{item|image=Rainbow Slime.gif|Rainbow Slime|note2=（{{tr|The Hallow}}，罕见）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Hardmode blizzards}}期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ice Golem|note2=（罕见）|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+其他效果包括以下内容：
+* 在下雨期间在所有液体中都有 +20% [[{{tr|Fishing Power}}]]奖励。
+* [[{{tr|Waterleaf}}]]开花。
+* [[{{tr|Worm}}]]在[[{{tr|Forest}}]][[{{tr|biomes}}]]中频繁生成。
+* [[{{tr|NPC}}]] 会留在他们的[[{{tr|House}}]]中，就像在[[{{tr|night}}]]那样。
+* 玩家{{tr|character}}在{{tr|blizzards}}中处于室外时会眯眼。
+}}
+<!--end Rain
+
+start Sandstorm-->
+{{/box|name=Sandstorm|image=BiomeBannerSandstorm.png|summoned=在[[{{tr|Wind}}]]速高于 30 {{mph}} 时随机发生。|
+
+'''[[{{tr|Sandstorm}}]]'''是[[{{tr|Desert}}]]特有的[[{{tr|event}}]]，它不会在其他地方发生。{{tr|A Sandstorm}}会同时在所有{{tr|Deserts}}中发生。
+当此{{tr|event}}激活时，玩家会持续受到[[{{tr|Mighty Wind}}]][[{{tr|debuff}}]]的影响。
+
+在{{tr|Sandstorm}}期间，屏幕上可见飞扬的{{tr|sand}}微粒，这些微粒的颜色会随着{{tr|Desert}}是普通、[[{{tr|Corrupt Desert}}|{{tr|Corrupt}}]]、[[{{tr|Crimson Desert}}|{{tr|Crimson}}]]、或[[{{tr|Hallowed Desert}}|{{tr|Hallow}}]]而改变。玩家的视野也会受限。
+
+{{options/set|item|icons=n|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|除了{{tr|regular Desert enemies}}，还会{{tr|spawn}}以下{{tr|enemies}}：}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Angry Tumbler}}<!--
+			-->|{{item|Antlion Charger}}<!--
+			-->|{{item|Antlion Swarmer}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sand Elemental|size=*0.75}}<!--
+			-->|{{item|Dune Splicer|size=*0.5}}<!--
+			-->|{{item|Sand Shark|note2=（常规{{tr|desert}}）}}<!--
+			-->|{{item|Crystal Thresher|note2=（[[{{tr|Hallowed Desert}}]]）}}<!--
+			-->|{{item|Bone Biter|note2=（[[{{tr|Corrupt Desert}}]]）}}<!--
+			-->|{{item|Flesh Reaver|note2=（[[{{tr|Crimson Desert}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+}}
+<!--end Sandstorm
+
+start Windy Day-->
+{{/box|name=Windy Day|image=BiomeBannerWindyDay.png|summoned=随机发生。|
+'''[[{{tr|Windy Day}}]]'''会导致云量增加并且会有更强的风吹效果。如果{{tr|Windy Day}}发生在下雨时，就成了{{tr|Thunderstorm}}。
+
+除了{{tr|regular Forest surface enemies}}，还会{{tr|spawn}}以下{{tr|enemies}}：
+{{options/set|item|icons=n}}
+{{itemlist|width=15em
+|{{item|Windy Balloon}}
+|{{item|Angry Dandelion}}
+}}{{options/reset|item}}
+}}
+<!--end Windy Day
+
+start Thunderstorm-->
+{{:Events/box|'''[[{{tr|Thunderstorm}}]]'''是罕见的{{tr|weather event}}，此时{{tr|Rain}}和{{tr|Windy Day}}{{tr|events}}同时发生。在{{tr|Thunderstorm}}期间，屏幕上偶尔会闪过闪电，并且光线要比下雨时更暗淡。风也会吹得比正常时厉害得多。{{tr|Rain}}{{tr|event}}的所有影响在{{tr|Thunderstorm}}期间也都会出现。|image=BiomeBannerThunderstorm.png|name=Thunderstorm|summoned=随机发生。}}
+<!-- end Thunderstorm
+
+start Meteor Shower -->
+{{/box|name=Meteor Shower|image=BiomeBannerMeteorShower.png|summoned=在{{tr|night}}随机发生。|
+'''[[{{tr|Meteor Shower}}]]'''事件期间，{{tr|falling stars}}会出现在背景中天空各处。{{tr|Meteor Showers}}会大大提升[[{{tr|Fallen Stars}}]]的{{tr|spawn rate}}，并导致{{item|Enchanted Nightcrawler|s|icons=n}}生成，从而很容易得到[[{{tr|bait}}]]。}}
+<!--end Meteor Shower-->
+
+== [[{{tr|Pre-Hardmode}}]]{{tr|events}} ==
+<!--start Blood Moon-->
+{{/box|name=Blood Moon|image=BiomeBannerBloodMoon.png|statusmessage={{gameText|LegacyMisc.8}}|icon=[[File:Bestiary Blood Moon.png]]|summoned=仅当{{tr|world}}中至少有一名玩家具有高于 120 [[{{tr|health}}]]且非[[{{tr|new moon}}]]时发生，或由{{item|Bloody Tear|size=24px}}手工召唤。|
+
+'''{{tr|Blood Moon}}'''是一个[[{{tr|event}}]]，持续整个[[{{tr|night}}]]（从 {{time|7:30 PM}} 至 {{time|4:30 AM}}），仅影响[[{{tr|surface}}]]{{tr|layer}}。
+
+[[{{tr|status message}}]]“{{gameText|LegacyMisc.8}}”会提示{{tr|Blood Moons}}的发生。在此{{tr|event}}期间，{{tr|world}}中的所有[[{{tr|water}}]]（包括{{tr|underground}}），以及[[{{tr|rain}}]]和[[{{tr|Moon phase}}|{{tr|moon}}]]本身会变为血红色。{{eicons|1.3.0.1}}当玩家在{{tr|surface layer}}时，屏幕上会产生红色的遮罩效果。在[[{{tr|Beds}}|{{tr|bed}}]]上睡觉以加速时间的能力也会被禁用。
+
+{{tr|The event}}会显著提高{{tr|surface biomes}}中的{{tr|spawn rate}}，并产生新的危险的{{tr|enemies}}，还会改变其行为和生成条件。
+
+{{eicons|1.4.0.1}}[[{{tr|Fishing Power}}]]会提升至 1.1 倍。不过，{{tr|fishing}}也会产生独特{{tr|enemies}}。
+
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|除了{{tr|regular surface enemies}}，还会{{tr|spawn}}以下{{tr|enemies}}：}}<!--
+	--><div><!--
+		-->{{infocard/box|title=任何时候：|<!--
+			-->{{dotlist<!--
+			-->|{{item|The Groom}}<!--
+			-->|{{item|The Bride}}<!--
+			-->|{{item|Blood Zombie}}<!--
+			-->|{{item|Drippler}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|The Corruption}}|{{tr|Corruption}}]]{{tr|world}}中：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corrupt Bunny}}<!--
+			-->|{{item|Corrupt Goldfish}}<!--
+			-->|{{item|Corrupt Penguin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|world}}中：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vicious Bunny}}<!--
+			-->|{{item|Vicious Goldfish}}<!--
+			-->|{{item|Vicious Penguin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wandering Eye Fish}}<!--
+			-->|{{item|Zombie Merman}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Clown|size=*0.5}}<!--
+			-->|{{item|Chattering Teeth Bomb}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间来自[[{{tr|Fishing}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hemogoblin Shark}}<!--
+			-->|{{item|Blood Eel|size=*0.5}}<!--
+			-->|{{item|Dreadnautilus|size=*0.5}}<!--
+			-->|{{item|Blood Squid}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+* [[{{tr|Deathweed}}]]在{{tr|Blood Moon}}期间开花。
+* 大多数 [[{{tr|NPC}}]] 对此{{tr|event}}都有他们独特的评论话语。
+* {{eil|Zoologist}}会变为她的狐人形态。
+}}
+<!--end Blood Moon
+
+start Goblin Army-->
+{{/box|name=Goblin Army|image=BiomeBannerGoblinArmy.png|statusmessage={{gameText|LegacyMisc.3}}|icon=[[File:Bestiary Goblin Invasion.png]]|summoned=当至少摧毁过一个{{item|Shadow Orb|image=Shadow Orb (placed).png}}/{{item|Crimson Heart|image=Crimson Heart (placed).png}}后且有玩家拥有超过 200 [[{{tr|health}}]]时，每个{{tr|dawn}}都有 {{chance|1/3}} 几率发生。也可以用{{item|Goblin Battle Standard}}手工召唤。|
+
+'''[[{{tr|Goblin Army}}]]'''{{tr|event}}中会生成独特的{{tr|Goblin enemies}}。当{{tr|a Goblin Army}}逼近时，会出现以下两条[[{{tr|status messages}}]]之一：“{{gameText|LegacyMisc.1}}” / “{{gameText|LegacyMisc.2}}”
+
+{{flexstart}}{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|在此{{tr|event}}期间，会生成以下{{tr|enemies}}：}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Goblin Peon}}<!--
+			-->|{{item|Goblin Sorcerer}}<!--
+			-->|{{item|Goblin Thief}}<!--
+			-->|{{item|Goblin Warrior}}<!--
+			-->|{{item|Goblin Archer}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Goblin Warlock}}<!--
+			-->|{{item|Shadowflame Apparition|note2=（来自[[{{tr|Goblin Warlock}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}{{flexend}}
+
+虽然并不出现在{{tr|the Goblin Army}}中，但[[{{tr|Goblin Scout}}]]会很罕见地出现在地图的外侧三分之一范围内。它们会掉落[[{{tr|Tattered Cloth}}]]，可用于{{tr|craft}}此{{tr|event}}的{{tr|summoning item}}：[[{{tr|Goblin Battle Standard}}]]。
+
+此{{tr|event}}在打败了一定数量的{{tr|goblins}}后就会完成。之后，就可以在[[{{tr|underground}}]]找到[[{{tr|Goblin Tinkerer}}]] {{tr|NPC}}。
+}}
+<!--
+end Goblin Army
+
+start Slime Rain
+-->
+{{/box
+|name=Slime Rain
+|image=BiomeBannerSlimeRain.png
+|statusmessage={{gameText|LegacyWorldGen.74}}
+|icon=[[File:Bestiary Slime Rain.png]]
+|summoned=有玩家拥有至少 140 [[{{tr|health}}]]和 8 [[{{tr|defense}}]]后会发生，[[{{tr|Expert Mode}}]]中除外，此时它也可以在满足条件之前发生，但几率要低得多|
+
+'''[[{{tr|Slime Rain}}]]'''{{tr|event}}中，天空中会持续不断落下各种[[{{tr|slimes}}]]。如果玩家在此{{tr|event}}自然结束之前击杀了 150 只{{tr|slimes}}就会导致[[{{tr|King Slime}}]]生成，如果已经打败过{{tr|King Slime}}就只需要击杀 75 只{{tr|slimes}}。
+
+会生成很多种{{tr|slimes}}，包括：
+{{itemlist|width=8em
+|{{item|Blue Slime}}
+|{{item|Green Slime}}
+|{{item|Purple Slime}}
+|{{item|Pinky}}
+|{{item|King Slime|scale=0.5}}
+}}
+
+打败{{tr|King Slime}}后此{{tr|event}}会立刻停止。}}
+<!--
+end Slime Rain
+
+start Old One's Army
+-->
+{{/box
+|name={{tr|Old One's Army}}
+|image=BiomeBannerOldOne'sArmy.png
+|statusmessage={{gameText|DungeonDefenders2.InvasionStart}}
+|icon=[[File:Bestiary Old One's Army.png]]
+|summoned=通过将{{item|Eternia Crystal|icons=n}}放置在{{item|Eternia Crystal Stand|icons=n}}上来启动。|
+
+'''[[{{tr|Old One's Army}}]]'''是独特的{{维基百科|b=y|Dungeon Defenders|Dungeon Defenders 2|t=地牢守护者2}}{{tr|crossover event}}，在拯救了打败[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]后出现的[[{{tr|Tavernkeep}}]]（可能出现在任何{{tr|layer}}）之后可以启动。其目标是在一波波从[[{{tr|Mysterious Portal}}]]出现，想要摧毁{{tr|the Eternia Crystal}}的{{tr|enemies}}之下保护{{tr|the Eternia Crystal}}。如果{{tr|Crystal}}被{{tr|enemies}}摧毁，事件即终止。如果它直到所有波数都已清掉还保持安全，{{tr|event}}即告胜利。
+
+[[{{tr|Eternia Crystal}}]]和[[{{tr|Eternia Crystal Stand}}]]都是用[[{{tr|coins}}]]在[[{{tr|Tavernkeep}}]] {{tr|NPC}} 处购买的。{{tr|Players}}在事件持续期间会受到[[{{tr|Creative Shock}}]]{{tr|debuff}}的影响，它会在整个事件期间在一定范围内阻止[[{{tr|blocks}}]]的移除或放置。
+
+每一波都变得越来越困难，并包括大量不同种类的{{tr|enemies}}。此外，整个{{tr|event}}还会随着玩家的进度来扩展难度。如果在任何[[{{tr|Mechanical Bosses}}]] 已被打败之前触发，{{tr|event}}由 5 波组成。如果在已有至少一个{{tr|Mechanical Boss}} 被打败后触发，则{{tr|the event}}由 7 波组成。一旦[[{{tr|Golem}}]]已被打败，{{tr|the event}}变得更加困难，最后一波中会生成 [[{{tr|boss}}]] [[{{tr|Betsy}}]]；每次{{tr|event}}只会生成一只{{tr|Betsy}}，打败它会完成{{tr|event}}。{{tr|The event}}中还包含 2 种{{tr|mini-boss}}：[[{{tr|Ogre}}]]和[[{{tr|Dark Mage}}]]。
+
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|在此{{tr|event}}期间，会生成以下{{tr|enemies}}：}}<!--
+	--><div><!--
+		-->{{infocard/box|title=结构：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Mysterious Portal|size=*0.25}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|mechanical bosses}}]] 前：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Etherian Goblin}}<!--
+			-->|{{item|Etherian Goblin Bomber}}<!--
+			-->|{{item|Etherian Javelin Thrower}}<!--
+			-->|{{item|Etherian Wyvern}}<!--
+			-->|{{item|Dark Mage}}<!--
+			-->|{{item|Old One's Skeleton|note2=（来自[[{{tr|Dark Mage}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=打败一个[[{{tr|mechanical boss}}]]后：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Kobold}}<!--
+			-->|{{item|Drakin}}<!--
+			-->|{{item|Kobold Glider}}<!--
+			-->|{{item|Wither Beast}}<!--
+			-->|{{item|Ogre|size=*0.75}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Golem}}]]后：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Etherian Lightning Bug}}<!--
+			-->|{{item|Betsy|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+}}
+<!--
+end Old One's Army
+
+start The Torch God
+-->{{/box
+|name=The Torch God
+|summoned=在[[{{tr|Surface}}]]{{tr|layer}}以下任意位置小范围内密布约 100 支{{tr|torch}}来启动。|
+
+'''[[{{tr|The Torch God}}]]'''是个迷你{{tr|event}}，当在地下小范围内密布 100 支{{tr|torches}}时发生。放置的{{tr|torches}}会开始向玩家发射小火球，它们自身则逐渐熄灭。火球会造成 40 / {{expert|80}} / {{master|120}} 伤害，并且会直线穿过[[{{tr|blocks}}]]。并且它们还能从位于屏幕外的{{tr|torches}}上生成。
+
+在{{tr|event}}激活时，玩家会受到[[{{tr|Blackout}}]][[{{tr|debuff}}]]影响，大大缩小玩家的视野。
+
+所有{{tr|torches}}都熄灭时此{{tr|event}}即告结束。在短暂的一段时间之后，{{tr|torches}}会重新燃起，并且如果已经有 100 或更多{{tr|torches}}点亮，则[[{{tr|Torch God's Favor}}]]就会出现在玩家[[{{tr|inventory}}]]中。一旦玩家的{{tr|inventory}}有{{tr|Torch God's Favor}}或者已经用过了{{tr|Torch God's Favor}}，则玩家就不能再次挑战此{{tr|event}}。而必须另行创建一个新{{tr|character}}才行。尚未用过{{tr|Torch God's Favor}}的玩家可以持续挑战并完成此{{tr|event}}来得到更多{{tr|Torch God's Favors}}，只要不放在{{tr|inventory}}中就行。
+|image=BiomeBannerTorchGod.png}}
+
+== [[{{tr|Hardmode}}]]{{tr|events}} ==
+<!--
+start Frost Legion
+-->
+{{/box
+|name=Frost Legion
+|image=BiomeBannerFrostLegion.png
+|statusmessage={{gameText|LegacyMisc.7}}
+|icon=[[File:Bestiary Frost Legion.png]]
+|summoned=用{{item|Snow Globe}}召唤。|
+
+'''[[{{tr|Frost Legion}}]]'''是个类似于[[#{{tr|Goblin Army}}|{{tr|Goblin Army}}]]的事件，但它需要一个{{tr|item}}来启动事件，这只在[[{{tr|Hardmode}}]]中才可实现。在[[{{tr|Christmas}}]]期间，{{tr|enemies}}会掉落[[{{tr|present}}]]。如果世界是在{{tr|Hardmode}}中，这些{{tr|presents}}有 {{chance|1/13}} 几率包含用于生成{{tr|the Frost Legion}}的[[{{tr|Snow Globe}}]]。
+
+在此{{tr|the event}}期间，会生成三种不同的独特{{tr|snowmen}}：
+{{itemlist|width=12em
+|{{item|Mister Stabby}}
+|{{item|Snowman Gangsta}}
+|{{item|Snow Balla}}
+}}
+全部{{tr|the snowmen}}都掉落[[{{tr|Snow blocks}}]]，技术上说给了玩家一个获得无限量{{tr|Snow}}的途径。
+
+此{{tr|event}}在打败了一定数量的{{tr|snowmen}}后就会完成。之后，[[{{tr|Santa Claus}}]] {{tr|NPC}} 就会在[[{{tr|Christmas}}]]期间生成。
+}}
+<!--
+end Frost Legion
+
+start Solar Eclipse
+-->
+{{/box
+|name=Solar Eclipse
+|image=BiomeBannerSolarEclipse.png
+|statusmessage={{gameText|LegacyMisc.20}}
+|icon=[[File:Bestiary Eclipse.png]]
+|summoned=一旦打败了任意[[{{tr|Mechanical Boss}}]]，则每天黎明时就有 {{chance|1/20}} 几率发生，或者用{{item|Solar Tablet|size=24px}}手工召唤。|
+
+'''[[{{tr|Solar Eclipse}}]]'''是个[[{{tr|Hardmode}}]]{{tr|event}}，此{{tr|event}}中太阳会升起，但被月亮所遮挡，自然光会大幅度降低到比夜间更暗的程度。普通所生成的{{tr|biome enemy}}会被替换为能在 {{tr|NPC}} 附近生成的特殊{{tr|enemies}}，并且会远比平时更频繁数量也更多。
+
+在此{{tr|event}}期间，会生成以下{{tr|enemies}}：
+{{options/set|item|wrap=y}}
+{{itemlist|width=13em
+|{{item|Swamp Thing}}
+|{{item|Frankenstein}}
+|{{item|Eyezor}}
+|{{item|Vampire}}
+|{{item|The Possessed}}
+|{{item|Fritz}}
+|{{item|Creature from the Deep}}
+|{{item|Reaper|note2=（{{eicons|1.3.0.1|invert=y}}）}}
+}}
+
+全部三个{{tr|Mechanical Bosses}} 都被打败后：
+{{itemlist|width=13em
+|{{item|Reaper|note2=（{{eicons|1.3.0.1}}）}}
+}}
+
+在{{tr|Plantera}}被打败后：
+{{itemlist|width=13em
+|{{item|Butcher}}
+|{{item|Nailhead}}
+|{{item|Deadly Sphere}}
+|{{item|Psycho}}
+|{{item|Dr. Man Fly}}
+|{{item|Mothron|size=95px}}
+|{{item|Baby Mothron}}
+}}{{options/reset|item}}
+
+{{tr|A Solar Eclipse}}总是在黄昏时终止。
+}}
+<!--
+end Solar Eclipse
+
+start Pirate Invasion
+-->
+{{/box
+|name=Pirate Invasion
+|image=BiomeBannerPirateInvasion.png
+|statusmessage={{gameText|LegacyMisc.27}}
+|icon=[[File:Bestiary Pirate Invasion.png]]
+|summoned=有玩家拥有超过 200 [[{{tr|health}}]]时会在白天随机发生，或者用{{item|Pirate Map|size=24px}}手工召唤。|
+
+'''[[{{tr|Pirate Invasion}}]]'''是个和[[{{tr|Goblin Army}}]]非常相似的事件。它可以随机生成，或通过使用[[{{tr|Pirate Map}}]]来召唤，{{tr|Pirate Map}}可以通过在[[{{tr|Hardmode}}]]期间击杀[[{{tr|Ocean}}]]{{tr|biome}}中的任意{{tr|enemy}}来获得。
+
+在此{{tr|event}}期间，会生成{{etext|e=1.3.0.1|t=7}} / {{etext|e=1.3.0.1|invert=y|t=6}}种不同的{{tr|pirate}}主题{{tr|enemies}}：
+{{options/set|item|wrap=y}}
+{{itemlist|width=12em|
+|{{item|Pirate Deckhand}}
+|{{item|Pirate Deadeye}}
+|{{item|Pirate Corsair}}
+|{{item|Pirate Crossbower}}
+|{{item|Pirate Captain}}
+|{{item|Parrot}}
+|{{item|Flying Dutchman|size=60px}}
+}}{{options/reset|item}}
+
+此{{tr|event}}在打败了一定数量的{{tr|pirates}}后就会完成。之后，[[{{tr|Pirate}}]] {{tr|NPC}} 就会入住。
+}}
+<!--
+
+end Pirate Invasion
+
+start Pumpkin Moon
+
+-->
+{{/box|name=Pumpkin Moon|image=BiomeBannerPumpkinMoon.png|statusmessage={{gameText|LegacyMisc.31}}|icon=[[File:Bestiary Pumpkin Moon.png]]|summoned=在{{tr|night}}用{{item|Pumpkin Moon Medallion|size=24px}}召唤。|
+
+'''[[{{tr|Pumpkin Moon}}]]'''是个[[{{tr|Halloween}}]]主题的{{tr|event}}，会持续到下个{{tr|dawn}}。和其他大多数{{tr|events}}不同，{{tr|Pumpkin Moon}}分为互相独立的许多波次。每一波都是通过击败{{tr|enemies}}以获取足够分数来完成的，更高的波数具有更高的难度。如果击败了足够的{{tr|enemies}}，{{tr|event}}最终会进入最后一波，其中{{tr|event enemies}}会无限地生成。
+
+在{{tr|event}}期间，[[{{tr|moon}}]]在视觉上会变为一个南瓜灯。
+
+{{tr|The Pumpkin Moon}}有七种独特的{{tr|enemies}}，难度递增：
+{{itemlist|width=13em
+|{{item|Scarecrow}}
+|{{item|Splinterling}}
+|{{item|Hellhound}}
+|{{item|Poltergeist}}
+|{{item|Headless Horseman|size=50px}}
+|{{item|Mourning Wood|size=70px}}
+|{{item|Pumpking|size=40px}}
+}}
+
+虽然在{{tr|event}}中存活下来除了[[{{tr|Achievement}}]]外并没有任何奖励，但{{tr|enemies}}会掉落独特的{{tr|items}}，包括[[{{tr|Spooky Wood}}]]和装备，比如[[{{tr|Spooky Hook}}]]和[[{{tr|Raven Staff}}]]。
+}}
+<!--
+end Pumpkin Moon
+
+start Frost Moon
+-->
+{{/box
+|name=Frost Moon
+|image=BiomeBannerFrostMoon.png
+|statusmessage={{gameText|LegacyMisc.34}}
+|icon=[[File:Bestiary Frost Moon.png]]
+|summoned=在{{tr|night}}用{{item|Naughty Present|size=20px}}召唤。|
+
+'''[[{{tr|Frost Moon}}]]'''是个[[{{tr|Christmas}}]]主题的{{tr|event}}，会持续到下一个{{tr|dawn}}，并且使用和{{tr|Pumpkin Moon}}一样的波数系统。{{tr|Enemies}}的行为和{{tr|Pumpkin Moon}}内的对应物类似，但更加困难，使得此{{tr|event}}成为 {{eversions|1.3.0.1|invert=y}} 上最困难的{{tr|event}}。
+
+在{{tr|event}}期间，[[{{tr|moon}}]]在视觉上会变为一张雪人的脸。
+
+{{tr|The Frost Moon}}有 11 种独特的{{tr|enemies}}：
+{{itemlist
+|{{item|Gingerbread Man}}
+|{{item|Zombie Elf}}
+|{{item|Elf Archer}}
+|{{item|Nutcracker}}
+|{{item|Yeti}}
+|{{item|Elf Copter}}
+|{{item|Krampus|size=50px}}
+|{{item|Flocko}}
+|{{item|Everscream|size=65px}}
+|{{item|Santa-NK1|size=50px}}
+|{{item|Ice Queen|size=80px}}
+}}
+
+虽然在{{tr|event}}中存活下来除了[[{{tr|Achievement}}]]外并没有任何奖励，但{{tr|enemies}}会掉落独特的{{tr|items}}。
+}}
+<!--
+end Frost Moon
+
+start Martian Madness
+-->
+{{/box
+|name=Martian Madness
+|image=BiomeBannerMartianMadness.png
+|statusmessage={{gameText|LegacyMisc.41}}
+|icon=[[File:Bestiary Martian Madness.png]]
+|summoned=通过让{{item|Martian Probe|size=14px|icons=n}}在探测到玩家后逃离视野范围来启动。|
+
+'''[[{{tr|Martian Madness}}]]'''{{tr|event}}是个[[{{tr|Golem}}]]后的{{tr|event}}，有着外星人入侵的主题。此{{tr|event}}和其他{{tr|event}}不同的地方在于，想要启动它，需要遇到随机出现在世界的[[{{tr|surface}}]]和[[{{tr|space}}]]{{tr|layers}}的[[{{tr|Martian Probe}}]]。一旦{{tr|Martian Probe}}探测到{{tr|player}}后，它需要不被摧毁地离开屏幕。
+
+在{{tr|event}}期间，{{tr|UFOs}} 会在{{tr|background}}中飞行。
+
+{{tr|The Martian Madness event}}提供了 11 种独特的{{tr|enemies}}：
+{{options/set|item|icons=n}}
+{{itemlist|width=14.5em
+|{{item|Martian Saucer|size=75px}}
+|{{item|Scutlix|size=50px}}
+|{{item|Martian Walker|size=40px}}
+|{{item|Martian Drone}}
+|{{item|Tesla Turret}}
+|{{item|Gigazapper}}
+|{{item|Martian Engineer}}
+|{{item|Martian Officer}}
+|{{item|Ray Gunner}}
+|{{item|Gray Grunt}}
+|{{item|Brain Scrambler}}
+}}{{options/reset|item}}
+
+此{{tr|event}}在打败了一定数量的{{tr|Martians}}后就会完成。
+}}
+<!--
+end Martian Madness
+
+start Lunar Events
+-->
+{{/box
+|name=Lunar Events
+|image=BiomeBannerLunarEvent.png
+|statusmessage={{gameText|LegacyMisc.43}}
+|icon=[[File:Bestiary Lunar Events.gif]]
+|summoned=通过打败[[{{tr|Lunatic Cultist}}]]来启动。|
+
+'''[[{{tr|Lunar Events}}]]'''是一种独特的{{tr|event}}，生成四种不同的{{tr|pillars}}——[[{{tr|Celestial Pillars}}]]——均匀分布在世界各处。在{{tr|pillar}}附近时，会有相应主题的{{tr|enemies}}生成。有四种不同的{{tr|pillars}}：[[{{tr|Solar Pillar}}]]、[[{{tr|Vortex Pillar}}]]、[[{{tr|Nebula Pillar}}]]、和[[{{tr|Stardust Pillar}}]]。一开始，所有{{tr|pillars}}都被保护性护盾所环绕。要伤害并最终打败{{tr|pillar}}，需要打败一定数量与此{{tr|pillar}}相关的{{tr|enemy}}。
+
+{{tr|this event}}中有许多独特的{{tr|enemies}}:
+
+{{options/set|item|icons=n}}{{flexstart|justify=left|css=margin: -0.5em;}}<!--
+-->{{#vardefine:listmargin|1em auto}}<!--
+-->{{#vardefine:boxcss|margin: 0.25em;flex: 1 0 360px}}<!--
+ -->{{flexstart|grow=1|shrink=1|basis=790px}}<!--
+  -->{{infocard/box|title={{tr|Solar Pillar}}|css={{#var:boxcss}}|<!--
+    -->{{flexstart|wrap=no}}<!--
+      -->{{flexstart|item|style=margin-right:1.25em;text-align:center;|grow=1}}{{item|Solar Pillar|mode=image}}{{flexend}}<!--
+      -->{{flexstart|item|grow=1}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Selenian}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Drakanian|size=90px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Corite|size=40px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Sroller|size=30px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Crawltipede|image=Crawltipede (Head).png|size=30px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Drakomire|size=70px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Drakomire Rider|size=65px}}{{flexend}}<!--
+      -->{{flexend}}<!--
+    -->{{flexend}}<!--
+  -->}}<!--
+
+  -->{{infocard/box|title={{tr|Vortex Pillar}}|css={{#var:boxcss}}|<!--
+    -->{{flexstart|wrap=no}}<!--
+      -->{{flexstart|item|style=margin-right:1.25em;text-align:center;|grow=1}}{{item|Vortex Pillar|mode=image}}{{flexend}}<!--
+      -->{{flexstart|item|grow=1}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Vortexian}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Alien Queen}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Alien Hornet}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Alien Larva}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Storm Diver}}{{flexend}}<!--
+      -->{{flexend}}<!--
+    -->{{flexend}}<!--
+  -->}}<!--
+ -->{{flexend}}<!--
+ -->{{flexstart|grow=1|shrink=1|basis=790px}}<!--
+  -->{{infocard/box|title={{tr|Nebula Pillar}}|css={{#var:boxcss}}|<!--
+    -->{{flexstart|wrap=no}}<!--
+      -->{{flexstart|item|style=margin-right:1.25em;text-align:center;|grow=1}}{{item|Nebula Pillar|mode=image}}{{flexend}}<!--
+      -->{{flexstart|item|grow=1}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Nebula Floater}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Brain Suckler}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Predictor}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Evolution Beast}}{{flexend}}<!--
+      -->{{flexend}}<!--
+    -->{{flexend}}<!--
+  -->}}<!--
+
+  -->{{infocard/box|title={{tr|Stardust Pillar}}|css={{#var:boxcss}}|<!--
+    -->{{flexstart|wrap=no}}<!--
+      -->{{flexstart|item|style=margin-right:1.25em;text-align:center;|grow=1}}{{item|Stardust Pillar|mode=image}}{{flexend}}<!--
+      -->{{flexstart|item|grow=1}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Star Cell}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Flow Invader|size=50px}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Twinkle Popper}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Milkyway Weaver|image=Milkyway Weaver (Head).png}}{{flexend}}<!--
+        -->{{flexstart|item|style=margin:{{#var:listmargin}};}}{{item|Stargazer}}{{flexend}}<!--
+      -->{{flexend}}{{options/reset|item}}<!--
+    -->{{flexend}}<!--
+  -->}}<!--
+ -->{{flexend}}<!--
+-->{{flexend}}{{options/reset|item}}
+打败全部四个{{tr|pillar}}后，[[{{tr|Moon Lord}}]]会生成。一旦{{tr|Moon Lord}}被打败或玩家在战斗中死亡，此{{tr|event}}即告结束。
+}}
+<!--
+end Lunar Events
+-->
+
+== 备注 ==
+* {{anchor|Invasion}}{{anchor|{{tr|Invasion}}}}在内部，部分{{tr|events}}被分类为“{{tr|invasions}}”且有其对应的“{{tr|invasion ID}}”{{source code ref|v=1.4.4.9|field=Terraria.Main.invasionType}}。同一时间仅能发生一种{{tr|invasion}}。当{{tr|invasion}}激活时，开始其他{{tr|invasion}}的尝试会失败。{{tr|Invasions}}还有以下特性：
+** 大多数{{tr|invasions}}开始于左侧或右侧[[世界边界]]并需要花些时间来移动到{{tr|world}}[[{{tr|spawn point}}]]处。{{tr|Invasions}}以每{{tr|tick}}{{tick}} 1 格的速度移动，或者说每秒 60 格（{{eicons|1.3.0.1}}受时间速度影响，例如：[[{{tr|Journey Mode}}]]时间滑条、[[{{tr|Enchanted Sundial}}]]、[[入睡]]）。{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateInvasion}}假设{{tr|world spawn point}}位于{{tr|world}}的水平中心，{{tr|invasions}}在{{tr|small, medium, and large}}[[{{tr|world size}}]]内分别需要 {{#expr:4200/2/60 round 0}}、{{#expr:6400/2/60 round 0}}、和 {{#expr:8400/2/60 round 0}} 秒才能到达{{tr|spawn point}}。
+*** 提示玩家即将到来的{{tr|invasion}}的[[{{tr|status message}}]]（例如：[[{{tr|Goblin Army}}]]的“''{{gameText|LegacyMisc.1}}''”）在{{tr|invasion}}到达{{tr|spawn point}}之前每分钟会显示一次。因此，该{{tr|message}}在{{tr|large worlds}}中会被显示两次。
+*** 和其他{{tr|invasions}}不同，[[{{tr|Martian Madness}}]]开始于{{tr|world spawn point}}，因此{{tr|event enemies}}在{{tr|invasion}}开始后可以立即生成。
+*** 如上方所述，玩家必须不低于{{tr|surface}}以下 67.5 格且位于{{tr|invasion}}位置的水平方向（两侧）187.5 格以内才被视为在{{tr|invasion}}范围内，否则不会生成{{tr|invasion enemies}}。如果{{tr|invasion}}到达了位于{{tr|world}}的水平中心少于 5 格内的位置，则当玩家位于任何{{tr|town NPC}} 水平方向（两侧）187.5 格以内时也可以通过水平范围检测，不过{{tr|spawn rate}}会有所降低。
+**** {{tr|The town NPC}} 的垂直位置不会被检测。
+** 玩家需要杀死足够的{{tr|enemies}}来完成{{tr|invasion}}。对于每个存在的玩家，所需的击杀数量会提高一个固定值。公式在下表中列出。{{source code ref|v=1.4.4.9|method=Terraria.Main.StartInvasion}}
+{{options/set|item|mode=table}}
+:{| class="terraria lined"
+! colspan=2 | {{tr|Invasion}}
+! width="45px" | ID
+! 所需击杀数
+|-
+| colspan=2 | {{note|small=y|paren=y|未激活{{tr|invasion}}}}
+| 0
+|
+|-
+| {{item|Goblin Army|image=Goblin Army Icon.png}}
+| 1
+| <math>80+40\times\text{玩家数量}</math>
+|-
+| {{item|Frost Legion|image=Frost Legion Icon.png}}
+| 2
+| <math>80+40\times\text{玩家数量}</math>
+|-
+| {{item|Pirate Invasion|image=Pirate Invasion Icon.png}}
+| 3
+| <math>120+60\times\text{玩家数量}</math>
+|-
+| {{item|Martian Madness|image=Martian Madness Icon.png}}
+| 4
+| <math>160+40\times\text{玩家数量}</math>
+|}{{options/reset|item}}
+* 在{{3DS version}}中，{{tr|invasions}}的{{tr|music}}会在整个{{tr|world}}中播放，直至{{tr|invasions}}完成，无论是否有任何{{tr|enemies}}存在。
+* {{anchor|barinfo}}{{tr|events}}的进度条的显示模式可以在[[{{tr|Settings|link=y}}#界面|{{tr|settings}}]]中更改，有 3 个可选选项：{{gameText|LegacyMenu.126}}、{{gameText|LegacyMenu.124}}、或{{gameText|LegacyMenu.125}}。
+** '''{{gameText|LegacyMenu.126}}'''：''默认选项''。进度条会在任何{{tr|event}}相关{{tr|enemy}}位于以玩家为中心约 384.5×384.5 格大小的长方形区域内时显示。{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawInvasionProgress / Terraria.Main.CheckInvasionProgressDisplay|t=实际条件为以{{tr|enemy}}为中心 312.5×312.5 格的长方形区域与左上角位于屏幕左上角那一{{tr|tile}}的 72×54 格的长方形区域相交。}}对于[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、或{{tr|invasions}}，还需要玩家位于[[{{tr|surface}}]]{{tr|layer}}以上。当未满足条件时，进度条会在 {{duration|160ticks}}后被隐藏。
+** '''{{gameText|LegacyMenu.124}}'''：不会显示进度条。
+** '''{{gameText|LegacyMenu.125}}'''：进度条会在击杀一个{{tr|event}}相关的{{tr|enemy}}后，或者{{tr|event}}推进到下一波后显示 {{duration|160ticks}}。剩余显示时间会在满足这些条件后刷新。
+
+== 成就 ==
+{{achievement|name=Jolly Jamboree}}
+{{achievement|name=Sticky Situation}}
+{{achievement|name=Bloodbath}}
+{{achievement|name=Goblin Punter}}
+{{achievement|name=Walk the Plank}}
+{{achievement|name=Do You Want to Slay a Snowman?}}
+{{achievement|name=Kill the Sun}}
+{{achievement|name=Baleful Harvest}}
+{{achievement|name=Ice Scream}}
+{{achievement|name=Tin-Foil Hatter}}
+{{achievement|name=Star Destroyer}}
+
+== 花絮 ==
+* {{eil|Party}}和{{eil|Lantern Night}}是仅有的既不生成独特[[{{tr|enemies}}]]又不播放特别音乐的{{tr|event}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|添加了[[{{tr|The Torch God}}]]{{tr|event}}。}}
+{{history|Desktop 1.4.0.1|添加了[[{{tr|Windy Day}}]]、[[{{tr|Thunderstorm}}]]、[[{{tr|Meteor Shower}}]]、和[[{{tr|Lantern Night}}]]{{tr|events}}。}}
+{{history|Desktop 1.3.4|添加了[[{{tr|Old One's Army}}]]{{tr|event}}。}}
+{{history|Desktop 1.3.3|添加了[[{{tr|Sandstorm}}]]{{tr|event}}。}}
+{{history|Desktop 1.3.2|添加了{{tr|Party event}}。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Martian Madness, Slime Rain, and Lunar Events}}。
+** 部分{{tr|events}}现在有了进度条，显示玩家离完成还有多远。
+** {{tr|Event enemies}}现在在{{tr|event}}结束时会逃跑。}}
+{{history|Desktop 1.2.4|
+* 修正了当{{tr|moon}}{{tr|event}}{{note|small=y|paren=y|译注：原文为 moon event，指{{tr|Blood Moon}}、{{tr|Pumpkin Moon}}、{{tr|Frost Moon}}等}}发生时{{tr|underground}}的{{tr|spawn rate}}也会升高的 {{tr|Bug}}。
+** 如果使用了{{tr|Invasion summon items}}后没有发生{{tr|invasion}}，则其不再会被消耗掉。}}
+{{history|Desktop 1.2.3|{{tr|Invasions}}现在能在任何友方 {{tr|npc}} 附近生成{{tr|enemies}}了，而非仅在世界中央。}}
+{{history|Desktop 1.2|添加了{{tr|Solar Eclipse}}、{{tr|Rain}}、和{{tr|Pirate Invasion}}{{tr|events}}。}}
+{{history|Desktop 1.1.1|添加了{{tr|Frost Legion event}}。}}
+{{history|Desktop-Release|引入了{{tr|Goblin Army}}和{{tr|Blood Moon}}。}}
+{{history|Switch 1.0.711.6|引入了{{tr|Goblin Army}}、{{tr|Blood Moon}}、{{tr|Frost Legion}}、{{tr|Solar Eclipse}}、{{tr|Rain}}、{{tr|Pirate Invasion}}、{{tr|Martian Madness}}、{{tr|Slime Rain}}、和{{tr|Lunar Events}}。}}
+{{history|Console-Release|引入了{{tr|Goblin Army}}、{{tr|Blood Moon}}、和{{tr|Frost Legion}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced}}{{tr|Slime Rain}}、{{tr|Martian Madness}}、和{{tr|Lunar Events}}。}}
+{{history|Mobile-Release|引入了{{tr|Goblin Army}}、{{tr|Blood Moon}}、和{{tr|Frost Legion}}。}}
+{{history|3DS 1.03|添加了{{tr|Frost Moon}}。}}
+{{history|3DS-Release|引入了{{tr|Goblin Army}}、{{tr|Blood Moon}}、{{tr|Frost Legion}}、{{tr|Solar Eclipse}}、{{tr|Rain}}、{{tr|Pirate Invasion}}、和{{tr|Pumpkin Moon}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+[[Category:{{tr|Events}}| ]]
+{{language info|en=Events}}

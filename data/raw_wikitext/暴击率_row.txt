@@ -1,0 +1,11 @@
+<includeonly>
+|-
+| {{item|{{{name|}}}|id={{{itemid|}}}|showid=no}}
+| {{percent|{{{critical}}}{{#if:{{#pos:{{{critical}}}|%}}||%}}}}<!-- only add the % sign if it's not in $critical already
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Critical hit/row}}
+</noinclude>

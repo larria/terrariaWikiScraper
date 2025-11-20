@@ -1,0 +1,117 @@
+{{item infobox
+| auto = 321
+| name = Tombstones
+| imagealt = [[File:Tombstone.png]] [[File:Gravestone.png]] [[File:Golden Headstone.png]]
+| type = Furniture
+| width = 2
+| height = 2
+| idshow = 321, 1173–1177, 3229–3233
+| cargo = no
+}}
+
+'''{{tr|Tombstone}}'''会在{{tr|player}}[[{{tr|Death}}]]时{{tr|drop}}。之后，可以将其取回，像[[{{tr|sign}}]]使用或作为[[{{tr|Furniture}}|装饰]]。默认情况下，{{tr|Tombstones}}会包含根据{{tr|player}}{{tr|death}}方式而生成的[[{{tr|death}}#{{tr|Death messages}}|{{tr|Death messages}}]]。在{{eversions|1.4.0.3}}中，产生的{{tr|Tombstones}}会记载{{tr|player}}{{tr|death}}时的真实日期。
+
+{{tr|player}}{{tr|death}}后，{{tr|Tombstones}}会在周围弹跳一会儿，直到落到 2×2 的空地上，此时它将放置下来。两个{{tr|Tombstones}}不能重叠放置，而且如果它们不能放置自己（例如适合空间不足）将也不能被取回。如果{{tr|Tombstone}}无法找到放置的位置，它最终会消失。
+
+{{tr|player}}{{tr|death}}时会随机选择{{tr|Tombstones}}的{{tr|Variants}}。当{{tr|player}}在[[{{tr|inventory}}]]中拥有超过 {{gc|10}} 时，将会{{tr|drop}}{{tr|Golden Tombstones}}{{source code ref|v=1.4.4.9|method=Terraria.Player.DropTombstone}}。
+
+在{{eversions|1.4.0.1}}中，将 4–8 个{{tr|Tombstones}}放置在邻近位置会慢慢使{{tr|environment}}变暗、饱和度降低。将 {{eicons|1.4.1}} 5 个或更多{{tr|Tombstones}}放在邻近位置会创造一个[[{{tr|Graveyard}}]][[{{tr|mini-biome}}]]。挖掉{{tr|Tombstones}}可能会在{{tr|screen}}外{{tr|spawn}}一只[[{{tr|Ghost (enemy)}}|{{tr|Ghost}}]]。
+
+{{item|Strange Looking Tombstone|icons=no|link=}}是{{eversions|Strange Looking Tombstone}}独占的{{tr|Tombstone}}{{tr|variant}}。如果[[{{tr|Worm Pet}}]]（由[[{{tr|Suspicious Looking Apple}}]]{{tr|summon}}）处于激活状态，则{{tr|player}}{{tr|death}}时会{{tr|drop}}此种{{tr|Tombstones}}。此{{tr|Tombstones}}的{{tr|tooltip}}为“看起来很像{{tr|worm}}的{{tr|Tombstone}}，对吧？”。在采掘它之后可以重新放置它。
+
+在[[{{tr|Difficulty}}|{{tr|Hardcore}}]]{{tr|mode}}下，{{tr|Tombstones}}没有办法轻易获得，因为在这个{{tr|mode}}下{{tr|character}}{{tr|death}}是永久性的。在{{eversions|1.4.0.1}}中，[[{{tr|NPCs}}]] 在存在{{tr|Hardcore}}{{tr|character}}的{{tr|world}}中{{tr|death}}时会掉落{{tr|Tombstones}}。因此，无需创建非{{tr|hardcore}}{{tr|character}}就能建造[[{{tr|Graveyard}}]]。掉落的{{tr|Tombstones}}{{tr|Variants}}同样是完全随机的，大部分 {{tr|NPC}} 都会{{tr|drop}}普通{{tr|Tombstones}}，而[[{{tr|Merchant}}]]和[[{{tr|Tax Collector}}]]会{{tr|drop}}{{tr|Golden Tombstones}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.DropTombstoneTownNPC}}。
+
+{{eicons|1.4.0.3}} 由于{{tr|Tombstones}}可创造{{tr|Graveyard}}且可标记{{tr|death}}地点, {{tr|Tombstones}}现在可被[[{{tr|Dangersense Potions}}]]高亮标记。
+
+{{eil|Abigail's Flower}}可以作为一种[[{{tr|plant}}]]，在任意{{tr|world}}进程中，被少见地发现于放置状态下{{tr|Tombstones}}旁的[[{{tr|grass}}]]地上。它的{{tr|spawn}}几率在 [[The Constant]] {{tr|world}}中会得到提高。
+
+== {{tr|Variants}} ==
+
+{{item/options|set|nolink=y|mode=table}}
+{| class="terraria"
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=321}}
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=1173}}
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=1174}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=1175}}
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=1176}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=1177}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=3230}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=3231}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=3229}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=3233}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2|auto=3232}} 
+|-
+| {{item infobox|view=item|type=Furniture|width=2|height=2| name= Strange Looking Tombstone |id=5062 | rare = 0| use = 15| placeable = yes| stack = 99| consumable = Yes}}
+|}<!--
+-->{{item/options|reset}}
+
+== {{tr|Notes}}==
+* {{tr|Tombstone}}必定会在{{tr|player}}{{tr|death}}时{{tr|drop}}，无视游戏[[{{tr|difficulty}}]]设定。
+* 因为[[{{tr|Angler}}]]和[[{{tr|Princess}}]]是“离开”而非“{{tr|death}}”，因此使用{{tr|Hardcore character}}时他们也不会{{tr|drop}}{{tr|Tombstone}}。
+* 在{{tr|Hardcore}}{{tr|mode}}下，[[{{tr|Traveling Merchant}}]]虽并非{{tr|Town NPC}}，但却会{{tr|drop}}{{tr|Tombstone}}，然而[[{{tr|Old Man}}]]和[[{{tr|Skeleton Merchant}}]]不会。
+
+== {{tr|Tips}} ==
+* {{tr|Tombstones}}可以很轻易的量产，只要将[[{{tr|Hellstone}}]]或[[{{tr|Meteorite}}]]直接放置在{{tr|player}}[[{{tr|spawn point}}]]下方然后创建新{{tr|character}}。{{tr|player}}将不断{{tr|death}}并重生，每次产生一个{{tr|Tombstones}}。另外，也可以从{{tr|spawn point}}直接向下挖，这样{{tr|player}}就会因为[[{{tr|fall damage}}]]而{{tr|death}}。
+** 也可用[[{{tr|water}}]]把{{tr|spawn point}}淹起来使{{tr|player}}[[{{tr|Drowning}}]]{{tr|death}}，但这样效率不及其他方式。
+* 在[[{{tr|Journey Mode}}]]中，即使{{tr|enemies}}{{tr|spawn rate}}被调到了 0× 倍，挖掉{{tr|Tombstones}}时仍然可能会{{tr|spawn}}{{tr|ghost}}。
+
+== {{tr|Trivia}}==
+* {{tr|Golden Tombstones}}和其他的{{tr|Tombstones}}一样，没有{{tr|sell value}}。
+* 在 {{icon/xbox 360}} Xbox 360 版本中，在某一个不明确的补丁之前，任何写在{{tr|Tombstones}}上的冒犯性的或性爱内容都会导致{{tr|Tombstones}}上显示“(Censored)”（已审查）。
+* {{tr|game}}的任何{{tr|version}}都从来没有过金的{{tr|Obelisk}}。
+* {{tr|Strange Looking Tombstones}}是[[{{tr|Crossover content}}#《百战天虫_3》|《百战天虫 3》{{tr|Crossover content}}]]的一部分。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.3|能被[[{{tr|Dangersense Potions}}]]显示。}}
+{{history|Desktop 1.4.0.1|
+** 摧毁{{tr|Tombstone}}现在有几率{{tr|spawn}}一只[[{{tr|Ghost (enemy)}}|{{tr|ghost}}]]。
+** 在[[{{tr|Hardcore}}]]下，{{tr|NPC}} {{tr|death}}时会{{tr|drop}}{{tr|Golden Tombstones}}。
+** {{tr|Tombstone}}可用于创建一个{{tr|Graveyard}}{{tr|mini biome}}。
+** {{tr|Tombstone}}现在会显示{{tr|player}}的{{tr|death}}日期。}}
+{{history|Desktop 1.3.0.1|
+** 添加了除{{tr|Obelisks}}以外其他{{tr|Tombstone}}的金色版本。
+** 更新了{{tr|Tombstone}}、{{tr|Grave Marker}}、{{tr|Cross Grave Marker}}和{{tr|Obelisk}}的{{tr|sprite}}。}}
+{{history|Desktop 1.2|添加了{{tr|Cross Grave Marker}}、{{tr|Grave Marker}}、{{tr|Gravestone}}、{{tr|Headstone}}和{{tr|Obelisk}}{{tr|variant}}，会在{{tr|player}}{{tr|death}}时随机{{tr|drop}}。}}
+{{history|Desktop 1.1|现在在任何{{tr|Difficulty}}下都会{{tr|drop}}。}}
+{{history|Desktop 1.0.6|现在会从[[{{tr|Mediumcore}}]]和[[{{tr|Hardcore}}]]的被杀害{{tr|characters}}{{tr|drop}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|同步 PS4 1.0.750.0 更新的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 添加了除{{tr|Obelisks}}以外其他{{tr|Tombstone}}的金色版本。
+** {{tr|Sprites updated}}以匹配{{tr|Desktop}} 1.3.0.1。}}
+{{history|Console 1.02|添加了{{tr|Cross Grave Marker}}、{{tr|Grave Marker}}、{{tr|Gravestone}}、{{tr|Headstone}}和{{tr|Obelisk}}，会在{{tr|player}}{{tr|death}}时随机{{tr|drop}}。}}
+{{history|Console-Release|{{tr|Introduced}}，所有{{tr|character}}都会{{tr|drop}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.3.0.1 的所有改动。}}
+{{history|Mobile 1.4.0.5.0|
+** 摧毁{{tr|Tombstone}}现在有几率{{tr|spawn}}一只[[{{tr|Ghost (enemy)}}|{{tr|ghost}}]]。
+** 在[[{{tr|Hardcore}}]]下，{{tr|NPC}} {{tr|death}}时会{{tr|drop}}{{tr|Tombstone}}。
+** {{tr|Tombstone}}可用于创建一个{{tr|Graveyard}}{{tr|mini biome}}。
+** {{tr|Tombstone}}现在会显示{{tr|player}}的{{tr|death}}日期。
+** 能被[[{{tr|Dangersense Potions}}]]显示。}}
+{{history|Mobile 1.3.0.7|
+** 添加了除{{tr|Obelisks}}以外其他{{tr|Tombstone}}的金色版本。
+** {{tr|Sprites updated}}以匹配{{tr|Desktop 1.3.0.1}}。
+** 移除{{tr|Strange Looking Tombstone}}，替换为{{tr|Tombstone}}。}}
+{{history|Mobile 1.2.6508|添加了{{tr|Cross Grave Marker}}、{{tr|Grave Marker}}、{{tr|Gravestone}}、{{tr|Headstone}}和{{tr|Obelisk}}，会在{{tr|player}}{{tr|death}}时随机{{tr|drop}}。}}
+{{history|Mobile 1.1.933|{{tr|Introduced}}{{tr|Strange Looking Tombstone}}。}}
+{{history|Mobile-Release|{{tr|Introduced}}，所有{{tr|character}}都会{{tr|drop}}。}}
+{{history|3DS-Release|{{tr|Introduced}}，包括{{tr|Strange Looking Tombstone}}以及{{tr|Desktop}} 1.2 添加的{{tr|Tombstone variant}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Tombstones}}

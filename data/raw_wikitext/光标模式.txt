@@ -1,0 +1,116 @@
+'''{{tr|Cursor modes}}'''是[[《{{tr|Terraria}}》]]里的一种[[{{tr|game mechanic}}]]。{{tr|Auto Select}}和{{tr|Smart Cursor}}是两种主要的{{tr|Cursor modes}}，用于使用工具和放置对象更加方便。{{icon/desktop}}此外，{{tr|cursor}}有数个特殊外观，会在按下特定{{tr|hotkey}}时出现，提示玩家当前{{tr|cursor}}的作用。
+
+== {{tr|Auto Select}} ==
+{{exclusive|1.3.0.1|console=y|section=yes}}
+使用{{tr|Auto Select}}将{{tr|Auto Select}}一个物品并使用，这取决于光标指向的地方。物品不需要在热键栏里。默认情况下，要激活{{tr|Auto Select}}，在电脑上按 {{key|lshift}}，在 PS3/PS4 按 '''R3'''，在 Xbox 360/Xbox 1 上按下'''右摇杆'''。
+
+{| class="terraria"
+! class="unsortable" | 目标
+! class="unsortable" | 选用的物品
+|-
+| [[{{tr|Blocks}}]]和大部分[[{{tr|Furniture}}]] || [[{{tr|Pickaxe}}]]
+|-
+| [[{{tr|Tree}}]]、[[{{tr|Giant Glowing Mushroom}}]]、或[[{{tr|Cactus}}]] || [[{{tr|Axe}}]]
+|-
+| [[{{tr|Altar}}]]、[[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]] || [[{{tr|Hammer}}]]
+|-
+| [[{{tr|Extractinator}}]] || [[{{tr|Silt}}]]或[[{{tr|Slush}}]]
+|-
+| [[{{tr|Cannon}}]] || [[{{tr|Cannonball}}]]
+|-
+| [[{{tr|Bunny Cannon}}]] || [[{{tr|Explosive Bunny}}]]
+|-
+! colspan="2" | 当指向空白空间或墙时，将根据以下条件选择光源
+|-
+| {{tr|cursor}}离玩家很远 || [[{{tr|Glowstick}}]]、[[{{tr|Spelunker Glowstick}}]]或[[{{tr|Flare Gun}}]]
+|-
+| 玩家和{{tr|cursor}}在[[{{tr|Water}}]]（或其他{{tr|liquid}}） || [[{{tr|Cursed Torch}}]]、[[{{tr|Ichor Torch}}]]、[[{{tr|Glowstick}}]]、或[[{{tr|Flare Gun}}]]
+|-
+| 玩家在[[{{tr|Water}}]]中但{{tr|cursor}}不在时 || [[{{tr|Cursed Torch}}]]或[[{{tr|Ichor Torch}}]]
+|-
+| 如果以上都不适用 || 任何[[{{tr|Torch}}]]
+|}
+
+没有[[{{tr|Flares}}]]的[[{{tr|Flare Gun}}]]不会被选择，其他光源比如{{tr|candles}}也不会。如果多于一个物品都同等满足条件，通常会选择在[[{{tr|inventory}}]]中排在首位的那一个。如果首选的物品不可用则通常会选择下个选项。
+
+== {{tr|Smart Cursor}} ==
+{{tr|Smart Cursor}}会根据当前使用的物品选择目标。默认通过按 {{key|左 Ctrl}} 激活/禁用；或者{{icon|mobile}}通过 [[File:SmartCursorOn.png|link=]] / [[File:SmartCursorOff.png|link=]] {{tr|Smart Cursor}}按键。在{{desktop version}}中，在常规[[{{tr|Settings}}]]中也有一个选项来让它只在按住按键时启用。{{tr|Smart Cursor}}模式由一个更宽一些的光标标明，并且被选中的{{tr|tile}}会出现一个黄色的方框。在{{tr|3DS version}}上，{{tr|Smart Cursor}}是默认开启的，除非玩家使用十字键或者触摸屏来定位区域。
+
+{| class="terraria"
+! class="unsortable" | 当前使用的物品
+! class="unsortable" | 行为
+|-
+| [[{{tr|Pickaxe}}]] || 朝向{{tr|cursor}}的方向挖出宽度足够通过的通道。朝向斜上方的隧道通常需要被拓宽才能够回头向下走。
+在 {{eil|1.3.0.1}} 中，垂直的隧道宽度有 2 格宽，而在先前的版本则有 3 格宽。
+|-
+| [[{{tr|Axe}}]] || 砍伐最靠近{{tr|cursor}}的{{tr|tree}}的底部。如果底部不在范围内则会锁定树枝。如果一件物品同时拥有{{tr|Axe}}和{{tr|Pickaxe}}的功能，则会优先锁定{{tr|Trees}}然后才是{{tr|block}}。一个明显的例子是{{eil|Laser Drill}}。
+|-
+| [[{{tr|Hammer}}]] || 移除离{{tr|cursor}}最近的{{tr|wall}}。
+|-
+| [[{{tr|Block}}]] || 将一个{{tr|block}}放置在离{{tr|cursor}}最近的、可以放置的地方。如果{{tr|cursor}}所处的位置已经存在一个{{tr|block}}或者其他物体，则无事发生。然而，如果将{{tr|cursor}}放在一个 {{tr|NPC}} 或者{{tr|player}}上，他们会被几层{{tr|cursor}}围起来。这是目前唯一能够自动将一大块区域填满{{tr|block}}的办法。在{{mobile version}}上，这招非常不可靠。
+|-
+| [[{{tr|Wall}}]] || 将一块{{tr|wall}}放置在离{{tr|cursor}}最近的、可以放置的地方。和其他物品不同，通过{{tr|Smart Cursor}}放置的{{tr|Wall}}只会放置在玩家的视线内。如此便可在不“溢出”的情况下轻松填满房间。
+|-
+| [[{{tr|Platform}}]] || 添加到现存的{{tr|Platform}}周围（任意方向，包括垂直方向）。
+|-
+| [[{{tr|Minecart Track}}]] || 在水平或对角线方向上延长现存的{{tr|tracks}}。
+|-
+| [[{{tr|Wrench}}]] || 延长现存的同色{{tr|wires}}。
+|-
+| [[{{tr|Wire Cutter}}]] || 移除离{{tr|cursor}}最近的{{tr|wire}}。
+|-
+| [[{{tr|Acorn}}]] || 在旁边两个{{tr|Block}}内空无一物的{{tr|grass}}顶端放置一个{{tr|Acorn}}。这考虑到了最优布局，树苗之间会至少间隔 3 个{{tr|tiles}}。
+|-
+| [[{{tr|Paint Roller}}]] || 对某个具体的位置使用{{tr|Paint Roller}}（不移动{{tr|cursor}}，持续使用）会让{{tr|cursor}}从最近的{{tr|wall tile}}开始按圆圈形刷漆，最终会为所有{{tr|wall}}（包括{{tr|furniture and platforms}}后方的）刷漆，但会忽略掉那些{{tr|solid blocks}}后的{{tr|wall}}。
+|}
+
+对一件多用途工具使用{{tr|Smart Cursor}}（比如[[{{tr|Drax}}]]或者[[{{tr|Hamaxe}}]]），可能会有意料之外的结果。这些工具会默认视为{{tr|axe}}，也就是说如果范围内存在树的话，它们总是会锁定树。
+
+{{tr|Smart Cursor}}可能在意想不到的时候造成负面影响，尤其是在玩家没有意识到它已经激活的情况下。比如，在延长{{tr|platforms}}的时候，如果玩家没有瞄准的话，{{tr|platforms}}就会建在意料之外的方向上。使用[[{{tr|Toggles}}#{{tr|Ruler}}|{{tr|ruler}}功能]]可以改善上述情况。再比如，在{{tr|lava}}（或其他{{tr|liquids}}）附近挖掘时，{{tr|Smart Cursor}}会不加分辨地挖掉支撑{{tr|liquid}}的{{tr|block}}。
+
+{{icon|desktop}}通过手动编辑《{{tr|Terraria}}》的 [[{{tr|config.json}}]]，{{tr|Smart Cursor}}可以被重新启用以用于普通{{tr|blocks}}（正如 {{eil|1.2|eicons={{eicons|1.3.0.1|invert=y}} }} 里那样）。参见 [[{{tr|config.json}}#隐藏设置|{{tr|config.json}}]] 来了解如何操作。
+
+== 特殊{{tr|cursors}} ==
+{{exclusive|desktop=y|section=y}}
+{{tr|The cursor}}会在按下特定{{tr|hotkey}}时对应地改变。大部分这些特殊外观均和[[{{tr|inventory}}]]管理功能相关。
+
+{| class="terraria lined"
+! colspan=2 | 功能 !! 默认按键 !! 描述
+|-
+| {{tr|Favorite}}
+| [[File:Cursor Favorite.png|link=]]
+| {{key|Alt}}
+| 将{{tr|item}}[[{{tr|Favorite}}]]/取消收藏。
+|-
+| 拿走<br/>放入
+| [[File:Cursor Loot.png|link=]]<br/>[[File:Cursor Deposit.png|link=]]
+| {{key|lshift}}
+| 快速将物品在开启的[[{{tr|storage items}}]]和主{{tr|inventory}}之间转移。
+|-
+| 出售
+| [[File:Cursor Sell.png|link=]]
+| {{key|lshift}}
+| 在 [[{{tr|NPC}}]] {{tr|vendor}}的商店开启时，快速出售物品。
+|-
+| 卸下装备
+| [[File:Cursor Unequip.png|link=]]
+| {{key|lshift}}
+| 将已装备的物品快速移回主{{tr|inventory}}
+|-
+| 丢弃
+| [[File:Cursor Trash.png|link=]]
+| {{key|左 Ctrl}}{{footnote|可以在主菜单的[[{{tr|Settings}}]]中改为 {{key|lshift}}。}}
+| 将物品从主{{tr|inventory}}快速移动至[[{{tr|trash slot}}]]。
+|-
+| {{tr|Camera Mode}}
+| [[File:Camera Mode Pin 1.png|link=]]<br/>[[File:Camera Mode Pin 2.png|link=]]
+| {{key|F4}}
+| 在[[{{tr|Camera Mode}}]]中“围取边框”选择下的{{tr|Cursors}}。
+|}
+
+== 脚注 ==
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{language info|en=Cursor modes}}

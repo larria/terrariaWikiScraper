@@ -1,0 +1,34 @@
+{{item infobox
+| auto = 118
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+{{about|{{tr|the crafting material}}|那类抓钩工具|{{tr|Hooks}}}}
+
+'''{{tr|Hook}}'''是一种[[{{tr|crafting material}}]]，仅用于制作[[{{tr|Grappling Hook}}]]。它有 {{chance|1/25}} 几率掉落自[[{{tr|Marble Cave}}]]、[[{{tr|Ice biome}}]]和[[{{tr|Cavern}}]][[{{tr|layer}}|层]]中的[[{{tr|Skeleton}}]]、[[{{tr|Undead Miner}}]]、[[{{tr|Hoplite}}]]和[[{{tr|Undead Viking}}]]。也有 {{chance|1/30}} 几率掉落自[[{{tr|Jungle}}]]、[[{{tr|Underground Jungle}}]]、[[{{tr|Cavern}}]]、和[[{{tr|Underground}}]][[{{tr|layer}}|层]]中的[[{{tr|Piranha}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Hook|expectedrows=1}}
+
+== 小贴士 ==
+* 前往[[{{tr|Jungle}}]]就能在游戏非常早期就得到{{tr|Hook}}，在{{tr|Jungle}}中在地表以上会生成{{tr|Piranhas}}。
+* 将多余的{{tr|hook}}制作成{{tr|Grappling Hook}}卖掉（{{iteminfo|Grappling Hook|sell}}）相比于将其与三个{{tr|Chains}}一起直接卖掉（{{sell expr|Hook|+3*|Chain}}）能多赚 {{percent|{{sell expr|raw=y|Grappling Hook}}/{{sell expr|raw=y|Hook|+3*|Chain}}-1}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.3.0.1|现在也会掉落自[[{{tr|Hoplite}}]]。}}
+{{history|Desktop 1.2|现在也会掉落自[[{{tr|Undead Viking}}]]。}}
+{{history|Desktop 1.1|添加了{{tr|tooltip}}。}}
+{{history|Desktop 1.0.3|掉落率由 {{chance|1/30}} 提升至 {{chance|1/25}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-drop = yes
+}}
+
+{{language info|en=Hook}}

@@ -1,0 +1,220 @@
+{{npc infobox|tabs=y
+| auto = 19
+| type = NPC
+| environment = Valid house
+| damage= {{hardmode|{{modes|24|36|42}}|{{modes|15|22|26}}}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ProjectileName.Bullet}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| imageother = Map Icon Arms Dealer.png
+| imageothercaption = Map Icon
+| idprojectile = 14
+}}
+{{quotation|'''{{tr|Arms Dealer}}'''|{{gameText|LegacyDialog.67}}}}
+
+'''{{tr|Arms Dealer}}'''是个一旦以下条件全部满足就会出现的 [[{{tr|NPC}}]]：
+* 有一间空[[{{tr|house}}]]。
+* 玩家在其{{tr|inventory}}中至少有一个[[{{tr|Bullet}}]]或发射{{tr|Bullet}}的[[{{tr|Guns}}]]（存放在诸如[[{{tr|chests}}]]等[[{{tr|storage items}}]]中，或是诸如[[{{tr|Piggy Bank}}]]等[[{{tr|portable storage}}]]中的{{tr|guns}}不算）{{source code ref|v=1.4.3.6|name=spawn|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}。
+
+{{eicons|1.4.4}} 这些要求仅适用于初始生成。如果{{tr|Arms Dealer}}被杀死，他过一段时间会自动重生。
+
+{{eicons|1.4.4|invert=y}} 如果{{tr|Arms Dealer}}被杀，他只会在以上条件再次满足时才会重生。
+
+{{anchor|Damage}}{{anchor|{{tr|Damage}}}}在{{eversions|1.3.0.1}}中，当受到[[{{tr|enemies}}]]的威胁时，{{tr|the Arms Dealer}}会用[[{{tr|Flintlock Pistol}}]]来自卫。一旦[[{{tr|Hardmode}}]]开始，他会升级为用[[{{tr|Minishark}}]]来自卫。他在[[{{tr|Pre-Hardmode}}]]中会造成 24 / {{expert|36}} / {{master|42}}（[[{{tr|Hardmode}}]]中降低至 15 / {{expert|22}} / {{master|26}} 伤害，但提高了开火频率来补偿），并且 （在{{eversions|1.4.0.1}}上）随着玩家的进程推进，他会得到[[{{tr|NPCs}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>
+
+== 生成条件 ==
+以下是符合条件的{{tr|guns}}和{{tr|bullets}}。玩家的{{tr|inventory}}中必须至少有其中一个才能让{{tr|the Arms Dealer}}生成。<ref name="spawn"/>
+{{collapse top}}
+{{itemlist/start|width=15em}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name
+|q?where=listcat HOLDS 'guns'
+|template=:Arms_Dealer/row
+}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name
+|q?where=listcat HOLDS 'bullets'
+|template=:Arms_Dealer/row
+}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Musket Ball}}
+|{{shop row|Silver Bullet|在[[{{tr|Blood Moon}}]]期间，或[[{{tr|Hardmode}}]]中一直有售。<br/>（在有[[{{tr|Silver Ore}}]]（{{eicons|1.4.0.1|invert=y|small=y}} 和有[[{{tr|Tungsten Ore}}]]的{{tr|world}}中）。）}}
+|{{shop row|Tungsten Bullet|在[[{{tr|Blood Moon}}]]期间，或[[{{tr|Hardmode}}]]中一直有售。<br/>（在有[[{{tr|Tungsten Ore}}]]的{{tr|world}}中。）}}
+|{{shop row|Unholy Arrow|在打败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]之后的{{tr|night}}期间。<br/>（或[[{{tr|Hardmode}}]]中一直有售。）}}
+|{{shop row|Flintlock Pistol}}
+|{{shop row|Minishark}}
+|{{shop row|Illegal Gun Parts|在{{tr|night}}。}}
+|{{shop row|Ammo Box|{{eicons|1.4.4}} 在{{tr|Hardmode}}。}}
+|{{shop row|Shotgun|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Empty Bullet|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Stynger Bolt|当玩家拥有[[{{tr|Stynger}}]]时。}}
+|{{shop row|Stake|当玩家拥有[[{{tr|Stake Launcher}}]]时。}}
+|{{shop row|Nail|当玩家拥有[[{{tr|Nail Gun}}]]时。}}
+|{{shop row|Candy Corn|当玩家拥有[[{{tr|Candy Corn Rifle}}]]时。}}
+|{{shop row|Explosive Jack 'O Lantern|当玩家拥有[[{{tr|Jack 'O Lantern Launcher}}]]时。}}
+|{{shop row|Nurse Hat|[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Nurse Shirt|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Nurse Pants|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Quad-Barrel Shotgun|击败[[{{tr|Skeletron}}]]后，在[[{{tr|Graveyard}}]]{{tr|Biome}}中。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Arms Dealer|male}}
+{{-}}
+
+== 小贴士 ==
+* 要获取有效的[[{{tr|gun}}]]最简单的办法是砸掉在[[{{tr|the Corruption}}]]或[[{{tr|the Crimson}}]]中的[[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]]。在第一次这么干时总是会相应地掉落[[{{tr|Musket}}]]或[[{{tr|The Undertaker}}]]。
+** [[{{tr|Musket}}]]和[[{{tr|the Undertaker}}]]也分别能在[[{{tr|Corrupt Crate}}]]和[[{{tr|Crimson Crate}}]]中找到。
+* 其他合格的早期{{tr|guns}}包括：
+** [[{{tr|Boomstick}}]]（来自[[{{tr|Jungle Crate}}]]和[[{{tr|Ivy Chest}}]]）
+** {{eil|Red Ryder}}（来自[[{{tr|Presents}}]]）。
+* [[{{tr|Flare Gun}}]]及其{{tr|Flares}}不算。
+* 也可以从[[{{tr|Party Girl}}]]处获得{{tr|Bullets}}。当有[[{{tr|Party}}]]被举办时，可以购买能掉落[[{{tr|Party Bullet}}]]的[[{{tr|Pigronata}}]]。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.68}}”
+* “{{gameText|LegacyDialog.67}}”
+* “{{gameText|LegacyDialog.66}}”
+
+'''[[{{tr|Nurse}}]]存在时：'''
+* “{{gameText|LegacyDialog.59|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.60|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|LegacyDialog.61|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''[[{{tr|Demolitionist}}]]存在时：'''
+* “{{gameText|LegacyDialog.62|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.63|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+''' [[{{tr|Skeletron}}]]已被打败、但[[{{tr|Wall of Flesh}}]]尚未被打败、{{eicons|1.4.0.1}} 且[[{{tr|Guide}}]]在场：'''
+* “{{gameText|LegacyDialog.58|x_Guide=&lt;{{tr|Guide}}的名字&gt;}}”
+** 如果这些条件都已满足，这会是唯一可能的话语（{{eicons|1.4.0.1}} 除了[[{{tr|Windy Day}}]]、[[{{tr|Rain}}]]和[[{{tr|Thunderstorm}}]]期间）。
+** {{eicons|1.4.0.1|invert=y}} 如果没有{{tr|Guide}}，则在应当显示{{tr|Guide}}名字的地方不会显示任何名字。
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.65}}”
+* “{{gameText|LegacyDialog.64|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|ArmsDealerSpecialText.Party}}”
+
+'''[[{{tr|Rain}}|下雨]]时 {{eicons|1.4.0.1|small=y}}：'''
+* “{{gameText|ArmsDealerSpecialText.Rain1}}”
+* “{{gameText|ArmsDealerSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|ArmsDealerSpecialText.Storm1}}”
+* “{{gameText|ArmsDealerSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|ArmsDealerSpecialText.Windy1}}”
+* “{{gameText|ArmsDealerSpecialText.Windy2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|ArmsDealerSpecialText.Graveyard1}}”
+* “{{gameText|ArmsDealerSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_ArmsDealer.HateCrowded}}”
+
+'''在[[{{tr|Desert}}]]中时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.LikeBiome|x_BiomeName={{tr|the Desert}}}}”
+
+'''在[[{{tr|Snow biome}}]]中时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.DislikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在[[{{tr|evil biome}}]]中或[[{{tr|Dungeon}}]]中时'''
+* “{{gameText|TownNPCMood_ArmsDealer.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''靠近[[{{tr|Nurse}}]]时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.LoveNPC|x_NPCName={{tr|the Nurse}}&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''靠近[[{{tr|Steampunker}}]]时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.LikeNPC|x_NPCName={{tr|the Steampunker}}&lt;{{tr|Steampunker}}的名字&gt;}}”
+
+'''靠近[[{{tr|Golfer}}]]时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.DislikeNPC|x_NPCName={{tr|the Golfer}}&lt;{{tr|Golfer}}的名字&gt;}}”
+
+'''靠近[[{{tr|Demolitionist}}]]时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.HateNPC|x_NPCName={{tr|the Demolitionist}}&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_ArmsDealer.LikeNPC_Princess|x_NPCName=公主&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* 名字 Brimst 可能参考了 {{wikipedia|brimstone}}（{{wikipedia|sulfur|硫磺}}），它是{{wikipedia|gunpowder|火药}}的成分之一。
+* {{tr|Arms Dealer}}的人物设定很可能来自于枪械类动作电影（比如西部电影），从他对{{tr|desert}}{{tr|biome}}的喜好与说话风格便能判断。
+** 他对[[{{tr|Dryad}}]]和[[{{tr|Mechanic}}]]都进行过挑逗与骚扰，同时又与[[{{tr|Nurse}}]]是男女朋友关系。这符合一些动作电影的主人公往往有着沾花惹草的行为。
+* 他在[[{{tr|Halloween}}]]出售的是{{tr|the Nurse}}的衣服而非自己的，这进一步证明了他对{{tr|Nurse}}的兴趣（虽然技术层面上说，{{tr|Nurse}}没有商店界面，所以没法出售物品）。
+* {{tr|The Arms Dealer}}和[[{{tr|Guide}}]]似乎经常用[[{{tr|Emotes}}]]来吵架，暗示他们相处不和睦。他关于[[{{tr|Guide Voodoo Doll}}]]的话语进一步佐证了这一点。但是，{{tr|the Guide}}并不会影响他的{{tr|happiness}}。
+* 关于{{tr|Guide Voodoo Doll}}的话语在{{tr|Guide}}死后也依然会出现，但是其中的名字每次都会随机出现新的。
+* 他关于{{tr|ammo}}需要另行准备的话语是暗指在多数电影中，主角或者其他角色似乎永远都不会没子弹的事实。
+* {{tr|Arms Dealer}}和[[{{tr|Demolitionist}}]]各自有两句话语暗示了他们之间的竞争。例如，当{{tr|Demolitionist}}在附近时，{{tr|Arms Dealer}}偶尔会说''"{{gameText|LegacyDialog.62|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}"''。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在在[[{{tr|Hardmode}}]]会出售[[{{tr|Ammo Box}}]]。
+** 现在死亡的 [[{{tr|NPCs}}]] 会自由重生，无视首次生成他们时需满足的独特条件。}}
+{{history|Desktop 1.4.0.1|
+** 货架上添加了[[{{tr|Quad-Barrel Shotgun}}]]、[[{{tr|Tungsten Bullet}}]]、和[[{{tr|any Pylon}}]]。
+** 关于{{tr|the Guide}}的话语现在只在{{tr|the Guide}}在场时才会显示。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.1|现在出售新引入的{{tr|weapons}}所用的{{tr|ammunition}}，和[[{{tr|Nurse costume}}]]（在[[{{tr|Halloween}}]]期间）。}}
+{{history|Desktop 1.2|降低了[[{{tr|Minishark}}]]和[[{{tr|Illegal Gun Parts}}]]的价格。}}
+{{history|Desktop 1.1|
+** 现在在他生成时会随机赋予名字。他的死亡会用其名字报告。其他 {{tr|NPC}} 在他们各自的对话中也会使用此名字。
+**每天晚上都会出售{{tr|Illegal Gun Parts}}，不再限于{{tr|new moons}}。
+** 在打败[[{{tr|Wall of Flesh}}]]后[[{{tr|Silver Bullet}}]]和[[{{tr|Unholy Arrow}}]]就一直有售。
+**[[{{tr|Shotgun}}]]添加到{{tr|inventory}}中。}}
+{{history|Desktop 1.0.5|
+**[[{{tr|Unholy Arrow}}]]、[[{{tr|Illegal Gun Parts}}]]和[[{{tr|Silver Bullet}}]]添加到{{tr|inventory}}中。
+**商品的选择变为取决于一天中的时间和事件。}}
+{{history|Desktop 1.0.3|和其他 {{tr|NPCs}} 一样，现在可被{{tr|enemies}}杀死。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Arms Dealer}}

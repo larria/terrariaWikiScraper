@@ -1,0 +1,57 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 400
+| image = True Eye of Cthulhu.gif
+| type = Invincible
+| environment = Lunar Events
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|70|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalBolt}}}}<br/>{{modes|110|220|330}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalSphere}}}}<br/>{{modes|70|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalEye}}}}<br/>{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalDeathray}}}}
+| sound1 = Item 124.wav, Item 125.wav
+| soundcaption1 = {{gameText|ProjectileName.PhantasmalBolt}}
+| sound2 = Zombie 102.wav, NPC Killed 6.wav
+| soundcaption2 = {{gameText|ProjectileName.PhantasmalSphere}}
+| sound3 = Zombie 103.wav
+| soundcaption3 = {{gameText|ProjectileName.PhantasmalEye}}
+| sound4 = Zombie 104.wav
+| soundcaption4 = {{gameText|ProjectileName.PhantasmalDeathray}}
+| sound5 = Zombie 100.wav, Zombie 101.wav
+| soundcaption5 = Idle
+| hardmode = yes
+| idprojectile = 452, 454, 455, 462
+}}
+{{dablink|不要与[[{{tr|Eye of Cthulhu}}]] [[{{tr|boss}}]] 或[[{{tr|The Eye of Cthulhu|link=y}}|{{tr|The Eye of Cthulhu}}]][[{{tr|Yoyos}}|{{tr|yoyo}}]]相混淆。}}
+
+'''{{tr|True Eyes of Cthulhu}}'''是无敌的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，会在[[{{tr|Moon Lord}}]]的眼睛被击杀时生成。由于{{tr|Moon Lord}}的核心显露之前需要先击杀他的三只眼睛，因此在战斗结束之前总会有三只{{tr|True Eyes of Cthulhu}}追逐玩家。
+
+== 攻击 ==
+* {{tr|A True Eye of Cthulhu}}会在{{tr|the Moon Lord}}额头上或双手上的眼睛被击杀时出现。它会围绕{{tr|the Moon Lord}}移动并追逐玩家，使用的攻击与其被释放前基本相同。
+** {{item|Phantasmal Bolt|s|link=|size=8px|ext=gif|icons=n}}：眼睛向玩家发射两束{{tr|laser bolts}}，根据玩家的移动进行预判。它们可以通过快速变向进行躲避。
+** {{item|Phantasmal Sphere|s|link=|size=16px|ext=gif|icons=n}}：眼睛生成自己的六个复制品，并同时向玩家飞来。
+** {{item|Phantasmal Eye|link=|size=12px|icons=n}}：眼睛以圆圈状轨迹飞行，释放出自动制导的{{tr|eye projectiles}}。在它们自动导向玩家后，可以通过向上飞行来躲避它们。
+** {{item|Phantasmal Deathray|size=25px|icons=n}}：眼睛发射出弱化版的{{tr|the Moon Lord}}{{tr|Deathray}}，它们会覆盖 120° 的范围，但只造成 2/3 的伤害。
+
+* {{tr|The True Eye of Cthulhu}}的{{tr|attacks}}总会循环进行：{{tr|Phantasmal Bolts}} → {{tr|Phantasmal Spheres}} → {{tr|Phantasmal Eyes}} → {{tr|Phantasmal Deathray}} → {{tr|Phantasmal Spheres}}。
+
+== 备注 ==
+* 由于{{tr|the True Eyes of Cthulhu}}不可能被击杀，因此它们只会在{{tr|the Moon Lord}}被击败或是所有玩家被击败后消失。
+
+== 小贴士 ==
+* 为了防止玩家被{{tr|True Eyes of Cthulhu}}的{{tr|attacks}}压制住，建议让三只眼睛的攻击次序重合。要实现这一点，只需在攻击循环的最后一次{{tr|Phantasmal Sphere attack}}时令额头或双手{{tr|health}}归零即可。这会让躲避变得更容易，因为它们的攻击大部分时候都是相互重合的。
+* 使用[[{{tr|Master Ninja Gear}}]]可以大大提高机动性，并给予一定的闪避几率。因此，它对于闪避眼睛的攻击来说非常有用。
+
+== 花絮 ==
+* {{tr|The True Eye of Cthulhu}}、[[{{tr|Spike Ball}}]]、[[{{tr|Blazing Wheel}}]]和飞行的[[{{tr|Golem Head}}]]是仅有的真正无敌{{tr|enemies}}。
+* 虽然它被叫做''克苏鲁''真眼，但它实际上是在''[[{{tr|Moon Lord}}]]''的眼睛之一被击杀时生成的，因为{{tr|Moon Lord}}是以{{tr|Cthulhu}}为原型设计的。
+* 虽然{{tr|The True Eye of Cthulhu}}是无敌的，但它拥有生命值、受伤音效，甚至是死亡音效。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=True Eye of Cthulhu}}

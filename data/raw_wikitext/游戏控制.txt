@@ -1,0 +1,761 @@
+下面列出了默认的'''{{tr|game controls}}'''。这些都能在标题画面→[[{{tr|settings}}]]→[[{{tr|Settings}}#{{tr|Controls}}|控制]]菜单中更改。在游戏中，则要打开[[{{tr|inventory}}]]，选中“{{tr|Settings}}”，然后进入“控制”来访问它们。
+
+== {{tr|Desktop}} / {{tr|Console Versions}} ==
+=== 游戏玩法控制 ===
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:90px;" | 维基图标
+! style="width:60px;" | PC（鼠标和键盘）
+! style="width:60px;" | PC（手柄）
+! style="width:60px;" | Playstation
+! style="width:60px;" | Xbox
+! style="width:60px;" | Wii U
+! style="width:60px;" | Nintendo Switch
+! 备注
+|- <!--{{/row|action|optional named parameters}} named parameters (all optional): wiki, PCkeymouse, controller, PS, Xbox, WiiU, Switch, notes -->
+{{/row| 使用{{tr|item}}
+| wiki  = {{key|use}}
+| PCkeymouse = [[File:Keyboard Black Mouse Left.png|40x40px]]
+| PCcontroller = [[File:Steam RT.png|30x30px]]
+| PS  = [[File:PS4 R2.png|30x30px]]
+| Xbox  = [[File:XboxOne RT.png|30x30px]]
+| WiiU  = ZR/R/触摸屏幕（游戏摇杆）
+| Switch = [[File:Switch ZR.png|30x30px]]/触摸屏幕
+| notes = 用所持的[[{{tr|weapon}}]]攻击，消耗所持的[[{{tr|potion}}]]，生成所持的[[{{tr|mount}}]]/[[{{tr|minion}}]]召唤物品对应的召唤物，等等。}}
+|-
+{{/row| 互动
+| wiki  = {{key|open}}
+| PCkeymouse = [[File:Keyboard Black Mouse Right.png|40x40px]]
+| PCcontroller = [[File:Steam B.png|30x30px]]
+| PS  = [[File:PS4 Circle.png|30px]]
+| Xbox  = [[File:XboxOne B.png|30x30px]]
+| WiiU  = [[File:WiiU A.png|30x30px]]
+| Switch = [[File:Switch B.png|30x30px]]/点击屏幕
+| notes = 打开[[{{tr|door}}]]或者[[{{tr|chest}}]]，启动[[{{tr|switch}}]]，和 [[{{tr|NPC}}]] 谈话，编辑[[{{tr|sign}}]]/[[{{tr|tombstone}}]]，等等。若想在 macOS 上不用鼠标右键来实现点击鼠标右键的效果，可以将两指放在触控板上（适用于笔记本电脑用户），这样就不会识别成鼠标左键单击而是鼠标右键单击。}}
+|-
+{{/row| 瞄准
+| PCkeymouse = [[File:Keyboard Black Mouse None.png|40x40px]]
+| PCcontroller = 右摇杆
+| PS  = [[File:PS4 Right Stick.png|30x30px]]
+| Xbox  = [[File:XboxOne Right Stick.png|30x30px]]
+| WiiU  = 右摇杆
+| Switch  = 使用右摇杆来平滑运动；使用 [[File:Switch Dpad.png|30px]] 来在物块之间运动。点击屏幕来向对应方向瞄准。
+| notes = 移动光标或引导攻击。}}
+|-
+{{/row| 上
+| wiki  = {{key|up}}
+| PCkeymouse = W
+| PCcontroller = rowspan{{=}}4 {{!}} 左摇杆
+| PS  = rowspan{{=}}4 {{!}} [[File:PS4 Left Stick.png|30x30px]]
+| Xbox  = rowspan{{=}}4 {{!}} [[File:XboxOne Left Stick.png|30x30px]]
+| WiiU  = rowspan{{=}}4 {{!}} 左摇杆
+| Switch = rowspan{{=}}4 {{!}} [[File:Switch Left Stick.png|30x30px]]
+| notes =<nowiki/>
+* 在[[{{tr|Gravitation Potion}}]]生效期间切换重力的方向。
+* 在[[{{tr|Featherfall Potion}}]]生效期间减缓下坠速度。
+* 使角色向上攀爬[[{{tr|rope}}]]。
+* 允许玩家爬上楼梯形态的[[{{tr|Wood Platform}}]]。
+* 让{{tr|character}}站上[[{{tr|Step Stool}}]]（如果配饰栏中有）。}}
+|-
+{{/row| 下
+| wiki  = {{key|down}}
+| PCkeymouse = S
+| PCcontroller = {{=}}
+| PS  = {{=}}
+| Xbox  = {{=}}
+| WiiU  = {{=}}
+| Switch = {{=}}
+| notes =<nowiki/>
+* 让站在[[{{tr|Wood Platform}}]]上的{{tr|character}}落下。
+* 使{{tr|character}}进入水下（在[[{{tr|Water Walking Potion}}]]生效期间）。
+* 让{{tr|character}}爬下[[{{tr|rope}}]]。
+* 让{{tr|character}}下落得更快（在[[{{tr|Featherfall Potion}}]]生效期间）。}}
+|-
+{{/row| 左
+| wiki  = {{key|left}}
+| PCkeymouse = A，左箭头键
+| PCcontroller = {{=}}
+| PS  = {{=}}
+| Xbox  = {{=}}
+| WiiU  = {{=}}
+| Switch = {{=}}
+| notes = 使{{tr|character}}向左移动。按住按键来连续移动。}}
+|-
+{{/row| 右
+| wiki  = {{key|right}}
+| PCkeymouse = D，右箭头键
+| PCcontroller = {{=}}
+| PS  = {{=}}
+| Xbox  = {{=}}
+| WiiU  = {{=}}
+| Switch = {{=}}
+| notes = 使{{tr|character}}向右移动。按住按键来连续移动。}}
+|-
+{{/row| 跳
+| wiki  = {{key|jump}}
+| PCkeymouse = 空格，上箭头键
+| PCcontroller = [[File:Steam_LT.png|30x30px]]
+| PS  = [[File:PS4_L2.png|30x30px]]
+| Xbox  = [[File:XboxOne_LT.png|30x30px]]
+| WiiU  = [[File:WiiU B.png|30x30px]]/Zl/L/L3
+| Switch = [[File:Switch ZL.png|30x30px]]
+| notes =<nowiki/>
+* 使{{tr|character}}跳起来。 按住按键来跳得更高。
+* 在水下时，若装备有[[{{tr|Flippers}}]]、[[{{tr|Diving Gear}}]]、或[[{{tr|Neptune's Shell}}]]等[[{{tr|Accessory}}]]，则允许向上“游泳”（重复跳跃）。
+* 在跳跃中按下跳跃键会激活跳跃类物品的能力，比如[[{{tr|Spectre Boots}}]]，[[{{tr|Sandstorm in a Bottle}}]]等等。
+* 在装备有[[{{tr|Wings}}]]的情况下，按住跳跃键使{{tr|character}}短暂飞行（取决于装备了哪种{{tr|Wings}}），然后缓慢地滑翔到地面上。}}
+|-
+{{/row| 抓钩
+| wiki  = {{key|grapple}}
+| PCkeymouse = E
+| PCcontroller = [[File:Steam B.png|30x30px]]
+| PS  = [[File:PS4 Circle.png|30x30px]]
+| Xbox  = [[File:XboxOne B.png|30x30px]]
+| WiiU  = ZL/L/L3
+| Switch = [[File:Switch B.png|30x30px]]
+| notes = 激活/启动装备在抓钩槽的[[{{tr|Hooks}}|{{tr|grappling hook}}]]。}}
+|-
+{{/row| [[{{tr|Auto Select}}]]
+| wiki  = {{key|as}}
+| PCkeymouse = 左 Shift
+| PCcontroller = 按住 L3
+| PS  = 按下 [[File:PS4 Left Stick.png|30x30px]]
+| Xbox  = 按下 [[File:XboxOne Left Stick.png|30x30px]]
+| Switch = 按下 [[File:Switch Right Stick.png|30x30px]]
+| notes = 按住时会尽量根据光标下方的物体选择适合交互的工具。如果没有物品适用则会选中光源。}}
+|-
+{{/row| [[{{tr|Smart Cursor}}]]
+| wiki  = {{key|sc}}
+| PCkeymouse = 左 Ctrl
+| PCcontroller = 按下 R3
+| PS  = 按下 [[File:PS4 Right Stick.png|30x30px]]
+| Xbox  = 按下 [[File:XboxOne Right Stick.png|30x30px]]
+| WiiU  = 按下 [[File:WiiU Right Stick.png|30x30px]]
+| Switch = 按下/按住[[File:Switch Left Stick.png|30x30px]]（参照智能光标模式设定）
+| notes = 切换{{tr|Smart Cursor}}。开启时，会根据选中的工具自动选择目标物块，使一些任务变得半自动化，比如挖隧道或者建筑。}}
+|-
+{{/row| 快速[[{{tr|Mount}}]]
+| wiki  = {{key|mount}}
+| PCkeymouse = R
+| PCcontroller = [[File:Steam A.png|30x30px]]
+| PS = [[File:PS4 Cross.png|30x30px]] 
+| Xbox = [[File:XboxOne_A.png|30x30px]]
+| Switch = [[File:Switch A.png|30x30px]]
+| notes = 骑上或召回装备槽中的{{tr|mount}}。}}
+|-
+{{/row| 快速治疗
+| wiki  = {{key|heal}}
+| PCkeymouse = H
+| PCcontroller = 未绑定
+| PS = [[File:PS4 L1.png|30x30px]] + [[File:PS4 Right Stick.png|30x30px]] 右
+| Xbox = [[File:XboxOne LB.png|30x30px]] + [[File:XboxOne Right Stick.png|30x30px]] 右
+| Switch = [[File:Switch LB.png|30x30px]] + [[File:Switch Right Stick.png|30x30px]] 右
+| notes = 消耗{{tr|inventory}}里最好的治疗物。（若所有治疗物均不能使[[{{tr|health}}]]恢复至最大{{tr|health}}，则为恢复量最大的物品；若存在一个或多个能使{{tr|health}}恢复至最大{{tr|health}}的物品，则在这些物品中选择溢出恢复量最小的物品；若{{tr|inventory}}中存在[[{{tr|Restoration Potion}}]]，且已损失的{{tr|health}}大于 90 且小于 120 时，则该物品的溢出恢复量被视为 0。{{source code ref|v=1.4.4.9|method=Terraria.Player.QuickHeal_GetItemToUse}}）}}
+|-
+{{/row| 快速魔力
+| wiki  = {{key|mheal}}
+| PCkeymouse = J
+| PCcontroller = 未绑定
+| PS = [[File:PS4 L1.png|30x30px]] + [[File:PS4 Right Stick.png|30x30px]] 左
+| Xbox = [[File:XboxOne LB.png|30x30px]] + [[File:XboxOne Right Stick.png|30x30px]] 左
+| Switch = [[File:Switch LB.png|30x30px]] + [[File:Switch Right Stick.png|30x30px]] 左
+| notes = 消耗{{tr|inventory}}里首个[[{{tr|mana}}]]恢复物品（从左上角开始数）。}}
+|-
+{{/row| 快速增益
+| wiki  = {{key|buff}}
+| PCkeymouse = B
+| PCcontroller = 未绑定
+| PS = [[File:PS4 L1.png|30x30px]] + [[File:PS4 Right Stick.png|30x30px]] 下
+| Xbox = [[File:XboxOne LB.png|30x30px]] + [[File:XboxOne Right Stick.png|30x30px]] 下
+| WiiU  = [[File:WiiU Y.png|30x30px]]
+| Switch = [[File:Switch LB.png|30x30px]] + [[File:Switch Right Stick.png|30x30px]] 下
+| notes =
+* 将{{tr|inventory}}里每种[[{{tr|Buff Potion}}]]消耗一瓶。
+* 如果某种{{tr|Buff Potions}}仍在生效，则同种药水不会被消耗。}}
+|-
+{{/row| {{icon|console}} [[{{tr|Lock on}}]]
+| PCcontroller = [[File:Steam X.png|30x30px]]
+| PS = [[File:PS4 Square.png|30x30px]]
+| Xbox = [[File:XboxOne X.png|30x30px]]
+| Switch = [[File:Switch Y.png|30x30px]]
+| notes = 锁定一个{{tr|enemy}}，使所有的攻击自动瞄准。按下一次便会锁定，再按一次来解除锁定。}}
+|-
+{{/row| {{icon|desktop}} 投掷（丢弃）
+| wiki  = {{key|throw}}
+| PCkeymouse = T
+| PCcontroller = 未绑定
+| notes = 将选中的物品丢弃在地上，使其以掉落物的形式出现并可被任意玩家收集。''不会''造成{{tr|throwing damage}}。也可通过以下操作投掷：打开{{tr|inventory}}，拿起要扔掉的物品，然后在{{tr|inventory}}之外单击鼠标右键。要注意投掷键会投掷整[[{{tr|Inventory}}|堆]]物品，[[{{tr|torch}}]]除外，只有一个{{tr|torch}}会被投掷。}}
+|-
+{{/row| [[{{tr|Inventory}}]]
+| wiki  = {{key|inventory}}
+| PCkeymouse = Esc
+| PCcontroller = [[File:Steam Y.png|30x30px]]
+| PS  = [[File:PS4 Triangle.png|30px]]
+| Xbox  = [[File:XboxOne Y.png|30x30px]]
+| WiiU  = [[File:WiiU X.png|30x30px]]
+| Switch = [[File:Switch X.png|30x30px]]/双击{{tr|hotbar}}
+| notes = 打开扩展的抬头显示，包括[[{{tr|inventory}}]]、制作菜单、保存并退出（单人游戏）或者断开连接（多人游戏）控制选项。如果[[{{tr|autopause}}]]已经启用，游戏会暂停（目前在{{tr|console}}上不可用）。在 Xbox 或者 PS3 上按下开始键来暂停游戏（这不会打开{{tr|inventory}}）。}}
+|-
+{{/row| {{icon|desktop}} 聊天
+| wiki  = {{key|chat}}
+| PCkeymouse = Enter
+| PS  = [[File:PS4 R1.png|30x30px]] + [[File:PS4 Touch Pad.png|30x30px]]
+| Xbox  = [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne View.png|30x30px]]
+| notes = 打开聊天框。}}
+|-
+{{/row| 暂停
+| wiki  = {{key|inventory}}
+| PCkeymouse = Esc
+| PCcontroller = [[File:Steam Start.png|30x30px]]
+| PS  = [[File:PS4 Options.png|35x35px]]
+| Xbox  = [[File:XboxOne Menu.png|40x40px]]
+| WiiU  = [[File:WiiU Plus.png|30x30px]]
+| Switch = [[File:Switch Plus.png|30x30px]]
+| notes = 在单人游戏中暂停游戏。只有在[[{{tr|Autopause}}]]开启时游戏才会暂停。要注意在 PC 上，除了{{tr|Autopause}}设置，在单人游戏中也可通过切出''{{tr|Terraria}}''程序的方法来暂停游戏，比如 {{wikipedia|Alt-Tab}} 快捷键或者{{wikipedia|Windows键|lang=zh}}。}}
+|-
+{{/row| 放大
+| PCkeymouse = +
+| PCcontroller = N/A
+| PS  = [[File:PS4 R1.png|30x30px]] + [[File:PS4 Up.png|30x30px]]
+| Xbox  = [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne Up.png|30x30px]]
+| WiiU  = ZR （暂停时）
+| Switch = [[File:Switch RB.png|30x30px]] + [[File:Switch Up.png|30x30px]]
+| notes= 放大{{tr|character}}，可以在屏幕上看到更少内容。}}
+|-
+{{/row| 缩小
+| PCkeymouse = -
+| PCcontroller = N/A
+| PS  = [[File:PS4 R1.png|30x30px]] + [[File:PS4 Down.png|30x30px]]
+| Xbox  = [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne Down.png|30x30px]]
+| WiiU  = ZL （暂停时）
+| Switch = [[File:Switch RB.png|30x30px]] + [[File:Switch Down.png|30x30px]]
+| notes= 缩小，使角色看起来更小，但是能看见更多内容。}}
+|}
+
+=== 地图控制 ===
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:90px;" | 维基图标
+! style="width:60px;" | PC（鼠标和键盘）
+! style="width:60px;" | PC（手柄）
+! style="width:60px;" | Playstation
+! style="width:60px;" | Xbox
+! style="width:60px;" | Wii U
+! style="width:60px;" | Nintendo Switch
+! 备注
+|-<!--{{/row|action|optional named parameters}} named parameters (all optional): Wiki, PCkeymouse, PCcontroller, PS, Xbox, WiiU, Switch, Notes -->
+{{/row| 放大
+| PCkeymouse = +
+| PCcontroller = 未绑定
+| PS  = [[File:PS4 R1.png|30x30px]] + [[File:PS4 Up.png|30x30px]]
+| Xbox  = [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne Up.png|30x30px]]
+| WiiU  = ZR
+| Switch = [[File:Switch RB.png|30x30px]] + [[File:Switch Up.png|30x30px]]
+| notes= 放大{{tr|minimap}}。}}
+|-
+{{/row| 缩小
+| PCkeymouse = -
+| PCcontroller = 未绑定
+| PS  = [[File:PS4 R1.png|30x30px]] + [[File:PS4 Down.png|30x30px]]
+| Xbox  = [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne Down.png|30x30px]]
+| WiiU  = ZL
+| Switch = [[File:Switch RB.png|30x30px]] + [[File:Switch Down.png|30x30px]]
+| notes= 缩小{{tr|minimap}}。}}
+|-
+{{/row| {{icon|desktop}} 降低透明度
+| PCkeymouse = PageUp
+| PCcontroller = 未绑定
+| notes= 降低{{tr|minimap}}的透明度。}}
+|-
+{{/row| {{icon|desktop}} 增加透明度
+| PCkeymouse = PageDown
+| PCcontroller = 未绑定
+| notes= 提高{{tr|minimap}}的透明度。}}
+|-
+{{/row| 切换完整地图
+| wiki  = {{key|map}}
+| PCkeymouse = M
+| PCcontroller = [[File:Steam Start.png|30x30px]]
+| PS  = [[File:PS4 Touch Pad.png|30x30px]]
+| Xbox  = [[File:XboxOne View.png|30x30px]]
+| WiiU  = [[File:WiiU Minus.png|30x30px]]
+| Switch = [[File:Switch Minus.png|30x30px]]/在缩放达到最大时向内捏合/点击[[{{tr|minimap}}]]
+| notes= 打开一副全屏的地图。这副地图可以像{{tr|minimap}}一样使用键盘或鼠标滚轮来缩放。通过按下方向键或者用鼠标拖拽来滚动地图。点击左下角的图标、按下{{tr|inventory}}键或者再次按下{{tr|Map}}来关闭全屏地图。在多人游戏中，地图会显示所有的玩家。在{{tr|console versions}}上，你可以在全屏地图中选择自己的队伍。}}
+|-
+{{/row| {{icon|desktop}} 切换地图类型
+| wiki  = {{key|minimap}}
+| PCkeymouse = Tab
+| PCcontroller = [[File:Steam Back.png|30x30px]]
+| notes= 在下列三种{{tr|minimap}}类型中轮换：画框模式、叠加模式和隐藏模式。参见[[{{tr|Minimap}}]]来了解更多细节。}}
+|}
+
+=== {{tr|Hotbar}}控制 ===
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:90px;" | 维基图标
+! style="width:60px;" | PC（鼠标和键盘）
+! style="width:60px;" | PC（手柄）
+! style="width:60px;" | Playstation
+! style="width:60px;" | Xbox
+! style="width:60px;" | Wii U
+! style="width:60px;" | Nintendo Switch
+! 备注
+|- <!--{{/row|action|optional named parameters}} named parameters (all optional): Wiki, PCkeymouse, PCcontroller, PS, Xbox, WiiU, Notes -->
+{{/row| 向左/右循环切换
+| PCkeymouse = [[File:Keyboard Black Mouse Middle.png|40x40px]]
+| PCcontroller = [[File:Steam LB.png|30x30px]] / [[File:Steam RB.png|30x30px]]
+| PS  = [[File:PS4 L1.png|30x30px]] / [[File:PS4 R1.png|30x30px]] 或 [[File:PS4 R1.png|30x30px]] + [[File:PS4 Left Stick.png|30x30px]]
+| Xbox  = [[File:XboxOne LB.png|30x30px]] / [[File:XboxOne RB.png|30x30px]] 或 [[File:XboxOne RB.png|30x30px]] + [[File:XboxOne Left Stick.png|30x30px]]
+| WiiU  = [[File:WiiU L.png|30x30px]] / [[File:WiiU R.png|30x30px]]
+| Switch = [[File:Switch LB.png|30x30px]] / [[File:Switch RB.png|30x30px]]
+| notes = 向左或右循环切换热键栏里选中的物品。}}
+|-
+{{/row| {{icon|desktop}} {{tr|Hotbar}}直接选择
+| wiki  = {{key|hotbar}}
+| PCkeymouse = 0-9
+| PCcontroller = 未绑定
+| Switch = 点击{{tr|hotbar}}物品
+| notes = 从{{tr|hotbar}}中选择一件物品（1 对应最左的，而 0 对应最右的）。{{tr|hotbar}}是{{tr|inventory}}最上面那一列，比如说最上方 10 格。物品仅是''被选中''；要想实际''使用''它还需在选中后点击鼠标左键。}}
+|-
+{{/row| 动态{{tr|Hotbar}}
+| PCcontroller = 十字键
+| PS  = 未绑定
+| Xbox  = 未绑定
+| WiiU  = 十字键
+| Switch  = 未绑定
+| notes = 物品可以通过以下方法绑定至十字键：打开{{tr|inventory}}，选中一件{{tr|item}}然后按下十字键的一个方向键。在游戏时按下该方向键会将对应物品直接装备至{{tr|hotbar}}。}}
+|}
+
+=== 其他 ===
+{{exclusive|desktop=y|nocat=y|section=y}}
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:90px;" | 维基图标
+! style="width:60px;" | PC（鼠标和键盘）
+! style="width:60px;" | PC（手柄）
+! style="width:60px;" | Playstation
+! style="width:60px;" | Xbox
+! style="width:60px;" | Wii U
+! style="width:60px;" | Nintendo Switch
+! 备注
+|- <!--{{/row|action|optional named parameters}} named parameters (all optional): Wiki, PCkeymouse, PCcontroller, PS, Xbox, WiiU, Notes -->
+{{/row| 切换{{tr|Camera mode}}
+| wiki  = {{key|F4}}
+| PCkeymouse = F4
+| notes = 切换[[{{tr|Camera mode}}]]。}}
+|-
+{{/row| 切换调试
+| wiki  = {{key|debug}}
+| PCkeymouse = F7
+| notes = 显示/隐藏渲染调试信息。}}
+|-
+{{/row| 切换发送/接收
+| wiki  = {{key|TxRx}}
+| PCkeymouse = F8
+| notes = 显示/隐藏多人游戏连通性调试信息。在单人游戏中，所有的数值都会显示为 0 且不会改变。}}
+|-
+{{/row| 照明模式
+| wiki  = {{key|shift}} + {{key|lighting}}
+| PCkeymouse = Shift + F9
+| notes = 在以下 4 种[[照明模式]]中切换：彩色、白、复古、迷幻（按照排列顺序）。}}
+|-
+{{/row| 切换 FPS
+| wiki  = {{key|FPS}}
+| PCkeymouse = F10
+| notes = 显示/隐藏 FPS（每秒传输帧数）。}}
+|-
+{{/row| 切换 HUD
+| wiki  = {{key|HUD}}
+| PCkeymouse = F11
+| notes = 切换 HUD（抬头显示器）的可见度。}}
+|}
+
+=== {{tr|Inventory}} ===
+* 要从一堆物品中取出一个，只需右键点击它。按住右键来增加从这堆物品中取出的数量。
+* 要从{{tr|inventory}}中直接放置物体，左键点击选中该物品，再点击左键放置或点击右键丢出。
+* 要从{{tr|inventory}}中直接将物体放入{{tr|Trash Can}}，按住 Ctrl 键同时点击该物品。这招可以用于快速释放{{tr|inventory}}中的空间。
+** 可在主菜单中更改以下设置：设置 > 控制 > 左Shift快速丢弃。启用这个设置会使快速丢弃改为使用 Shift 键。
+* 想要快速地将物体从{{tr|inventory}}放进一个打开的收纳物品里或者反过来操作，按住 Shift 键的同时左键点击该{{tr|item}}。
+* 想要直接将物体从一个打开的收纳物品放入{{tr|Trash Can}}，按住 Ctrl 键的同时左键点击该{{tr|item}}。
+** 如果左 Shift 快速丢弃已启用，那么此操作将不可用。
+* 想要{{tr|favorite}}一件{{tr|item}}（使其不可被快速堆叠、快速丢弃、投掷或者快速存放），按住 Alt 的同时左键点击该{{tr|item}}。该{{tr|item}}周围会出现边框来提醒你该{{tr|item}}已经被{{tr|favorite}}。注意：把标记为收藏的{{tr|equipment}}放入{{tr|equipment slot}}以及把它们再放回{{tr|inventory}}会移除这件{{tr|equipment}}的收藏状态，此时你需要再次按下 Alt + 左键点击。
+
+=== {{tr|NPC}} ===
+* 要和一名 NPC 互动，你需要离 NPC 足够近，近到将光标放在 NPC 身上时会出现对话框（在{{mobile version|short}}上，当 NPC 头上出现对话框时即可）。然后，按下{{key|open}}键。
+* 在从 NPC 处买东西时，按住鼠标右键/右扳机键/购买按钮可以增加购得的物品数。
+
+=== {{tr|Equipment}} ===
+* 右键点击一件{{tr|equipment}}（包括位于{{tr|Social slot}}的）会将它换进对应的{{tr|Armor Slot}}或者{{tr|Accessory slot}}。
+
+=== 其他 ===
+* 要阅读[[{{tr|sign}}]]、[[{{tr|tombstone}}]]或者[[{{tr|chest}}]]的名字，将光标置于其上。
+* 在{{tr|crafting}}时，按住鼠标右键来快速{{tr|craft}}许多{{tr|items}}（按住按钮便会增加速度）。
+
+=== Nintendo Switch 版 ===
+==== 触摸控制 ====
+{{switch version}}的游戏在掌上模式中使用了触摸屏，使游玩更加容易。大部分操作和{{Mobile version}}的游戏非常相似，但仍有部分操作是全新的。这些操作包括：
+* 双击{{tr|hotbar}}来打开{{tr|inventory}}。
+* 双击{{tr|inventory}}里的{{tr|accessories}}来切换{{tr|accessory}}的可见性。
+* 点击[[{{tr|minimap}}]]来进入完整地图。
+然而，与{{tr|mobile version}}不同的是，捏合屏幕来缩放会使用选定的{{tr|item}}。
+
+== 移动版 ==
+{{rewrite|Needs an update for 1.4.0.5.2 (controller part specifically)}}
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:100px;" | 触摸
+! style="width:100px;" | {{icon|ios}} MFi 手柄<ref name=mfi/>
+! 备注
+|-
+! 使用{{tr|item}}
+| style="border-bottom:1px #ccc solid" align="center" |点击并按住 (挥舞/发射武器) / 单击 (使用{{tr|potion}}、使用所持{{tr|mount}}/{{tr|minion}}召唤{{tr|item}}、等等。)
+| style="border-bottom:1px #ccc solid" align="center" |R2
+| style="border-bottom:1px #ccc solid" |使用所持[[{{tr|weapon}}]]攻击、消耗所持[[{{tr|potion}}]]、使用所持[[{{tr|mount}}]]/[[{{tr|minion}}]]召唤{{tr|item}}、等等。
+|-
+!交互
+| style="border-bottom:1px #ccc solid" align="center" |单击
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam B.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |打开{{tr|door or chest}}，激活开关，与 NPC 交谈，编辑{{tr|sign}}/{{tr|tombstone}}、等等。
+|-
+!跳跃
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Mobile Jump Button.png|frameless|30x30px]]
+| rowspan="5" style="border-bottom:1px #ccc solid" align="center" |左摇杆
+/
+
+[[File:Steam A.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |
+* 使你的角色跳跃。持续握住摇杆以跳得更高。
+* 在装备有[[{{tr|Wings}}]]的情况下按住按钮/拇指按钮可使你飞行一段时间（取决于所使用的{{tr|Wings}}），并缓降至地面。
+* 在水下时，若装备有[[{{tr|Flippers}}]]、[[{{tr|Diving Gear}}]]、或[[{{tr|Neptune's Shell}}]]等[[{{tr|Accessory}}]]，则允许向上“游泳”（重复跳跃）。
+* 激活跳跃物品，如[[{{tr|Spectre Boots}}]]、[[{{tr|Sandstorm in a Bottle}}]]等的能力。
+|-
+!上
+| rowspan="4" style="border-bottom:1px #ccc solid" align="center" |左拇指按钮
+| style="border-bottom:1px #ccc solid" |
+* 允许玩家爬上楼梯形态的[[{{tr|Wood Platform}}]]。
+* （使用[[{{tr|Gravitation Potion}}]]时）切换角色的重力方向。
+* 使角色向上攀爬[[{{tr|rope}}]]。
+* （使用[[{{tr|Featherfall Potion}}]]时）减缓坠落速度。
+|-
+!下
+| style="border-bottom:1px #ccc solid" |
+* 让站在[[{{tr|Wood Platform}}]]上的{{tr|character}}落下。
+* 当使用[[{{tr|Water Walking Potion}}]]、[[{{tr|Water Walking Boots}}]]、[[{{tr|Obsidian Water Walking Boots}}]]、或[[{{tr|Lava Waders}}]]时，允许玩家进入水中。
+* 使角色向下攀爬[[{{tr|rope}}]]。
+|-
+!左
+| style="border-bottom:1px #ccc solid" |向左移动角色。持续按住以持续移动。
+|-
+!右
+| style="border-bottom:1px #ccc solid" |向右移动角色。持续按住以持续移动。
+|-
+!{{tr|Grapple}}
+| style="border-bottom:1px #ccc solid" align="center" |{{tr|Grapple thumbpad}}（右拇指按钮的左上方）
+| style="border-bottom:1px #ccc solid" align="center" |L2
+| style="border-bottom:1px #ccc solid" |将{{tr|grappling hook}}向{{tr|thumbpad}}被按下的方向发射。
+|-
+!快速使用物品
+| style="border-bottom:1px #ccc solid" align="center" |向右移动拇指按钮
+| style="border-bottom:1px #ccc solid" align="center" |右摇杆
+| style="border-bottom:1px #ccc solid" |在摇杆被握住的方向上攻击、摧毁、或放置图格。若选中了消耗性物品，则会将其消耗。
+|-
+!自动{{tr|Attack}} {{verify}}<!-- Not sure this exists -->
+| style="border-bottom:1px #ccc solid" align="center" |-
+| style="border-bottom:1px #ccc solid" align="center" |R3
+| style="border-bottom:1px #ccc solid" |向目标{{tr|enemy}}方向攻击。最近的敌怪会被自动锁定，可以通过点击其他敌怪来更改。
+
+|-
+!扔出 （丢弃）
+| style="border-bottom:1px #ccc solid" align="center" |从热键栏/{{tr|inventory}}拖出物品
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam X.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |将被选中的物品向着该物品被拖拽的方向上扔出一段距离。注意这种扔出是扔出一整[[{{tr|stack}}]]物品。
+|-
+!{{tr|Inventory}}
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Mobile Inventory Button.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam Y.png|30x30px]]
+| style="border-bottom:1px #ccc solid" |打开{{tr|player}}的{{tr|inventory}}和制作与装备菜单。此时游戏会自动暂停，除非在多人模式中。
+|-
+!暂停
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Mobile Pause Button.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam Start.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |打开{{tr|settings}}，如保存和退出，或更换团队。此时游戏会自动暂停，除非在多人模式中。
+|-
+!放大
+| style="border-bottom:1px #ccc solid" align="center" |向外捏合屏幕
+| rowspan="2" style="border-bottom:1px #ccc solid" align="center" |十字键
+| style="border-bottom:1px #ccc solid" |向外捏合屏幕以离角色更近（屏幕上看到的东西更少）。
+|-
+!缩小
+| style="border-bottom:1px #ccc solid" align="center" |向内捏合屏幕
+| style="border-bottom:1px #ccc solid" |向内捏合屏幕以离角色更远（屏幕上看到的东西更多）。
+|-
+!切换完整地图
+| style="border-bottom:1px #ccc solid" align="center" |向外缩放得足够多''或''<br/>[[File:Mobile Map Button.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" align="center" |向外缩放得足够多
+| style="border-bottom:1px #ccc solid" |打开{{tr|map}}。向内缩放会回到正常的游玩中。
+|-
+!循环快捷键
+左 / 右
+| style="border-bottom:1px #ccc solid" align="center" | -
+| style="border-bottom:1px #ccc solid" align="center" |L1 / R1
+| style="border-bottom:1px #ccc solid" |向左或向右循环热键栏中选中的物品。
+|-
+!热键栏直接选择
+| style="border-bottom:1px #ccc solid" align="center" |点击热键栏
+| style="border-bottom:1px #ccc solid" align="center" |
+| style="border-bottom:1px #ccc solid" |选中热键栏中被点击的物品。热键栏是{{tr|inventory}}最上方的一行，也就是说最上方的 5-10 个{{tr|slots}}。若是可消耗物品，则会自动地立刻将其消耗。
+|-
+!锁定目标
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Mobile Lock On button.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" align="center" |
+| style="border-bottom:1px #ccc solid" |将上方有黄色箭头的敌人作为目标。参见[[{{tr|Cursor modes}}#锁定|锁定]]以获取更多信息。
+|-
+!手动移动{{tr|Cursor}}
+| style="border-bottom:1px #ccc solid" align="center" | 右拇指按钮
+| style="border-bottom:1px #ccc solid" align="center" |
+| style="border-bottom:1px #ccc solid" |主要用于{{tr|Building Mode}}中，以决定在哪里放置{{tr|blocks and walls}}。不过，攻击也会朝向该方向，除非使用圆形方向键以控制攻击方向。手动光标会显示为玩家附近的一个白色十字瞄准线。
+|-
+!切换[[{{tr|Smart Cursor}}]]
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Mobile Smart Cursor Button.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" align="center" |
+| style="border-bottom:1px #ccc solid" |使得{{tr|block placement}}更容易。参见[[{{tr|Smart Cursor}}]]以获取更多信息。
+|}
+{{reflist|refs=
+<ref name=mfi>MFi 意思是"Made For iPhone（iPhone 专用）"。购买 MFi 手柄可使之在 iOS 上正常运行。[https://afterpad.com/mficontrollers/ MFi 手柄的大列表]</ref>
+}}
+
+=== iOS、{{tr|Android}}和亚马逊{{tr|versions}} ===
+在[[{{tr|Mobile 1.3}}]] 中，玩家互动界面更新为了与{{tr|desktop version}}更为相似的版本。然而，由于手机版用户通常使用触摸控制和/或更小的屏幕，为使游戏更为顺利的运行，二者也有一些不同。
+
+{{tr|inventory}}最初被划分为 5 个部分：左侧的{{tr|The Inventory}}和{{tr|Housing Menu}}，{{tr|Chat}}、{{tr|Equipment Menu}}，以及右侧的{{tr|Crafting}}。就像很多其他 UI 元素一样，它们可在设置中被移动或决定是否显示。
+
+<gallery>
+File:Mobile UI Inventory.png|初始[[{{tr|inventory}}]]。
+File:Mobile UI Housing.png|[[{{tr|housing menu}}]]。注意额外的占位{{tr|slots}}。
+File:Mobile UI Chat.png|[[{{tr|Chat}}]] UI。
+File:Mobile UI Equipment.png|{{tr|Equipment Menu}}。
+File:Mobile UI Crafting.png|{{tr|Crafting Menu}}。
+</gallery>
+
+==== {{tr|Inventory}} ====
+类似{{tr|desktop version}}，其[[{{tr|inventory}}]]由 50 个{{tr|slots}}组成。玩家可以选择将最左侧的 10 个{{tr|slots}}还是最上方的一行设置为{{tr|hotbar}}。
+
+一些{{tr|inventory}}功能被移至{{tr|inventory}}下方，以更方便的打开。这包括{{tr|the tools}}、{{tr|research}}和{{tr|split}}功能。{{tr|tools}}按钮会打开由若干个选项组成的窗口，包括[[{{tr|Paint Sprayer}}]]和[[{{tr|Torch God's Favor}}]]的选项窗口。{{tr|Researching}}也可在此处打开，独立于暂停菜单中的{{tr|Journey Mode tools}}。{{tr|split}}按钮会打开一个小滑块，会将一堆叠根据其位置分割为两堆。
+
+==== {{tr|Housing Menu}} ====
+与电脑版的[[{{tr|housing menu}}]]相同，除了每个 NPC 在搬入时都会填充一个占位{{tr|slot}}这一美学上的改变。
+
+==== {{tr|Chat}} ====
+{{tr|The player}}可在{{tr|chat menu}}中键入{{tr|messages}}并查看[[{{tr|status messages}}]]。此窗口还有一个允许键入表情的按钮。其功能与{{desktop version}}上的[[{{tr|chat}}]]相同。
+
+==== {{tr|Equipment}} ====
+由玩家已装备的所有{{tr|equipment}}组成。可见性可通过按下显示/隐藏按钮切换，与{{switch version}}中双击{{tr|accessory}}的操作不同。
+
+==== {{tr|Crafting}} ====
+由若干{{tr|craftable items}}及下方的一个{{tr|Craft}}按钮组成。需要的{{tr|materials}}会被列在按钮旁边。玩家在[[{{tr|Journey mode}}]]中可以通过按下{{tr|duplication}}按钮以找到所有可复制{{tr|items}}。有{{tr|Weapons}}、{{tr|Blocks}}、{{tr|Accessories}}、{{tr|Materials}}、所有（取消启用的过滤器）、{{tr|Armor}}、{{tr|Misc}}和{{tr|Consumables}}的过滤器，可在{{tr|Journey mode}}之外进行访问。
+
+=== Windows 手机版 ===
+{{float file box|width=480px|[[File:Mobile Full Inventory.jpg|475px]]|{{mobile version|short}} {{tr|inventory}}的四部分：{{tr|Crafting}}、{{tr|Inventory}}、{{tr|NPC Shop}}/容器，以及{{tr|Equipment}}（从左到右，从上到下）。}}
+
+==== {{tr|Inventory}} / {{tr|Storage}}栏 ====
+* 点击并拖出{{tr|item}}以将其移出，或与另一个物品交换位置。
+* 将{{tr|inventory}}界面向上或向下拖拽以查看{{tr|inventory}}的更多内容。
+* 选中物品并点击 "Split Stack"（拆分堆叠） 按钮（带有成堆硬币的按钮）会取出一件{{tr|item}}并将其放置在新的一堆中。若刚刚拆分出一个堆叠，则新拆分出来的物品会改而进入该堆叠。
+* 选中{{tr|armor or an accessory}}并点击装备按钮（被一个头盔和玩家头部标出）会将其自动装备于{{tr|armor or accessory slot}}。若对应的{{tr|armor slot}}已满，则会装备于{{tr|vanity slot}}。将物品拖拽至{{tr|Equipment}}栏并释放会以同样方式将其装备。
+* 选中{{tr|Storage}}栏中的物品并点击 Take 按钮会将其放置在{{tr|inventory}}中。将物品拖拽至{{tr|Inventory}}栏并释放亦然。
+* 将{{tr|item}}拖到某一栏上方一段时间后会自动切换至这一栏。
+* 此外，如果你在主屏幕且想要丢弃某个{{tr|item}}，可以在{{tr|hotbar}}中将其选中并按住，拖拽以丢弃。这在想要丢出[[{{tr|Guide Voodoo Doll}}]]并召唤血肉墙时很有用。
+
+==== {{tr|Equipment}}栏 ====
+* 任何可装备的物品都会在被制作出、购买、拾取或{{tr|Storage}}栏中的 Take 按钮被按下时自动装备。
+* 选中{{tr|item}}并点击卸下按钮（被一个头盔和玩家头部标出）会将其脱下并放置于{{tr|Inventory}}
+
+==== {{tr|Crafting}}栏 ====
+* 点击一个{{tr|recipe}}并点击{{tr|Craft}}以制作一个。
+* 点击并按住{{tr|Craft}}以制作多个{{tr|items}}（制作速度随按住按钮的时间增加而增加）。
+
+==== NPC {{tr|Shop}}栏 ====
+* 选中物品并点击购买会在钱币足够时将其购买。
+* 点击{{tr|Inventory}}栏中的出售，或仅仅是将物品拖拽至{{tr|Shop}}栏会将其出售。
+* [[{{tr|Goblin Tinkerer}}]]{{tr|shop}}上方以一处额外的区域，可在此处[[{{tr|reforge}}]]{{tr|items}}。将物品拖拽至此并选择{{tr|Reforge}}会将其重铸。
+
+== {{tr|3DS Version}} ==
+{| class="terraria"
+! style="width:120px;" | 操作
+! style="width:100px;" | {{icon|3DS}}
+! 备注
+|-
+! 使用{{tr|item}}
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam Y.png|frameless|30x30px]] / 在建筑模式下触摸屏幕
+| style="border-bottom:1px #ccc solid" |使用所持[[{{tr|weapon}}]]攻击、消耗所持[[{{tr|potion}}]]、使用所持[[{{tr|mount}}]]/[[{{tr|minion}}]]召唤{{tr|item}}、等等。
+|-
+!交互
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam A.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |打开{{tr|door or chest}}，激活开关，与 NPC 交谈，编辑{{tr|sign}}/{{tr|tombstone}}、等等。
+|-
+!跳跃
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam B.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |
+* 使你的角色跳跃。持续握住摇杆以跳得更高。
+* 在装备有[[{{tr|Wings}}]]的情况下按住按钮/拇指按钮可使你飞行一段时间（取决于所使用的{{tr|Wings}}），并缓降至地面。
+* 在水下时，若装备有[[{{tr|Flippers}}]]、[[{{tr|Diving Gear}}]]、或[[{{tr|Neptune's Shell}}]]等[[{{tr|Accessory}}]]，则允许向上“游泳”（重复跳跃）。
+* 激活跳跃物品，如[[{{tr|Spectre Boots}}]]、[[{{tr|Sandstorm in a Bottle}}]]等的能力。
+|-
+!上
+| rowspan="4" style="border-bottom:1px #ccc solid" align="center" |圆形方向键
+| style="border-bottom:1px #ccc solid" |
+* 允许玩家爬上楼梯形态的[[{{tr|Wood Platform}}]]。
+* （使用[[{{tr|Gravitation Potion}}]]时）切换角色的重力方向。
+* 使角色向上攀爬[[{{tr|rope}}]]。
+* （使用[[{{tr|Featherfall Potion}}]]时）减缓坠落速度。
+|-
+!下
+| style="border-bottom:1px #ccc solid" |
+* 让站在[[{{tr|Wood Platform}}]]上的{{tr|character}}落下。
+* 当使用[[{{tr|Water Walking Potion}}]]、[[{{tr|Water Walking Boots}}]]、[[{{tr|Obsidian Water Walking Boots}}]]、或[[{{tr|Lava Waders}}]]时，允许玩家进入水中。
+* 使角色向下攀爬[[{{tr|rope}}]]。
+|-
+!左
+| style="border-bottom:1px #ccc solid" |向左移动角色。持续按住以持续移动。
+|-
+!右
+| style="border-bottom:1px #ccc solid" |向右移动角色。持续按住以持续移动。
+|-
+!{{tr|Grapple}}
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam A.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |向滑动的方向，或在{{3DS version}}中向圆形方向键被按住的方向射出{{tr|grappling hook}}。然而，此动作用触控触发时十分不可靠。
+|-
+!快速使用物品
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam Y.png|frameless|30x30px]] + 圆形方向键
+| style="border-bottom:1px #ccc solid" |在摇杆被握住的方向上攻击、摧毁、或放置图格。若选中了消耗性物品，则会将其消耗。
+|-
+!自动{{tr|Attack}}
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam Y.png|frameless|30x30px]] （+ 圆形方向键，若没有被锁定的目标）
+| style="border-bottom:1px #ccc solid" |向被锁定的敌怪方向攻击。在{{mobile version}}中，最近的敌怪会被自动锁定，可以通过点击其他敌怪来更改。在{{3DS version}}中，在朝敌怪方向攻击前，需按住[[File:Steam X.png|frameless|30x30px]]以将其作为目标。
+
+|-
+!扔出 （丢弃）
+| style="border-bottom:1px #ccc solid" align="center" |从快速物品栏将物品拖至丢弃图标
+| style="border-bottom:1px #ccc solid" |将被选中的物品向着该物品被拖拽的方向上扔出一段距离。注意这种扔出是扔出一整[[{{tr|stack}}]]物品。
+|-
+!{{tr|Inventory}}
+| style="border-bottom:1px #ccc solid" align="center" |点击触摸屏上的{{tr|inventory}}图标或者 New Nintendo 3DS 上的 {{key|ZR}}
+| style="border-bottom:1px #ccc solid" |打开{{tr|player}}的{{tr|inventory}}和制作与装备菜单。此时游戏会自动暂停，除非在多人模式中。
+|-
+!暂停
+| style="border-bottom:1px #ccc solid" align="center" |开始 / 选择（Start / Select）
+| style="border-bottom:1px #ccc solid" |打开{{tr|settings}}，如保存和退出，或更换团队。此时游戏会自动暂停，除非在多人模式中。
+|-
+!放大
+| rowspan="2" style="border-bottom:1px #ccc solid" align="center" |{{tr|World Map}}上的{{tr|Magnifying Glass}}。
+| style="border-bottom:1px #ccc solid" |向外捏合屏幕以离角色更近（屏幕上看到的东西更少）。
+|-
+!缩小
+| style="border-bottom:1px #ccc solid" |向内捏合屏幕以离角色更远（屏幕上看到的东西更多）。
+|-
+!切换完整地图
+| style="border-bottom:1px #ccc solid" align="center" |按触摸屏上的指南针图标
+| style="border-bottom:1px #ccc solid" |{{icon|mobile}} 向外缩放得足够多会打开地图。在地图上向内缩放会返回正常的游玩。
+|-
+!循环快捷键
+左 / 右
+| style="border-bottom:1px #ccc solid" align="center" |L / R
+| style="border-bottom:1px #ccc solid" |向左或向右循环热键栏中选中的物品。
+|-
+!热键栏直接选择
+| style="border-bottom:1px #ccc solid" align="center" |在快速{{tr|Inventory}}中点击物品
+| style="border-bottom:1px #ccc solid" |选中热键栏中被点击的物品。热键栏是{{tr|inventory}}最上方的一行，也就是说最上方的 5-10 个{{tr|slots}}。若是可消耗物品，则会自动地立刻将其消耗。
+|-
+!锁定目标
+| style="border-bottom:1px #ccc solid" align="center" |[[File:Steam X.png|frameless|30x30px]]
+| style="border-bottom:1px #ccc solid" |将上方有黄色箭头的敌人作为目标。参见[[{{tr|Cursor modes}}#锁定|锁定]]以获取更多信息。
+|-
+!切换手动{{tr|Cursor Mode}}
+| style="border-bottom:1px #ccc solid" align="center" |{{tr|Building Mode}}中，十字键 / 触摸屏
+| style="border-bottom:1px #ccc solid" |主要用于{{tr|Building Mode}}中，以决定在哪里放置{{tr|blocks and walls}}。不过，攻击也会朝向该方向，除非使用圆形方向键以控制攻击方向。手动光标会显示为玩家附近的一个白色十字瞄准线。
+|-
+!移动相机
+| style="border-bottom:1px #ccc solid" align="center" |C-摇杆 (仅限新任天堂 3DS 版)
+| style="border-bottom:1px #ccc solid" |移动相机。
+|}
+
+=== 3DS {{tr|Inventory}} ===
+==== 快速{{tr|Inventory}} ====
+[[File:3DS Quick Inventory.jpeg|300px|thumb|快速{{tr|Inventory}}在游戏中的外观。]]
+<div style="float:right; vertical-align:top">
+[[File:3DS World Map.jpeg|100px|thumb|{{tr|The World Map}}。]]
+[[File:3DS Precision Mode.jpeg|100px|thumb|建筑模式。]]
+</div>{{tr|The touch screen}}以{{tr|players hotbar}}、{{tr|housing menu}}、{{tr|map}}和其他功能选项为特征。这在游戏中以“{{tr|Quick Inventory}}”的形式展现出来。{{tr|quick inventory}}会显示{{tr|the players}}{{tr|inventory}}中的前 10 个{{tr|slots}}，与移动版游戏类似。{{tr|hotbar}}下最左上方的按钮允许{{tr|player}}{{tr|Quick Stack}}至附近的{{tr|Chests}}，这在玩家附近没有{{tr|chest}}时会变灰。中间的按钮允许{{tr|player}}可以将点击并按住的{{tr|item}}丢弃，这在没有要丢弃的物品时会变灰。右上的按钮是{{tr|housing menu}}，在玩家不在[[{{tr|house}}]]时会变灰。
+
+最下方的三个按钮从左到右分别是{{tr|World Map}}、{{tr|Building}}/精确{{tr|Mode}}，以及{{tr|player}}的{{tr|Inventory}}。
+* '''{{tr|World Map}}'''在触摸屏上显示，这样{{tr|the player}}就能一边移动一边看{{tr|the map}}，在角落处还有一个{{tr|magnifying glass}}，允许放大缩小。
+* '''{{tr|Building Mode}}'''提供了玩家屏幕的放大视角，{{tr|tools}}被排序在左侧，而{{tr|building materials}}处于右侧。
+** {{tr|Building materials}}以{{tr|players inventory}}中的顺序排序，但{{tr|tools}}则以{{tr|Weapon}} → {{tr|Pickaxe}} → {{tr|Axe}} → {{tr|Hammer}} → {{tr|Wrenches}}/{{tr|Wire Cutters}} → {{tr|Fishing Tools}}的顺序从上到下排列。
+** 通过按住 L 表示{{tr|tools}}、按住 R 表示{{tr|building materials}} 及一个方向，可以交换左侧的{{tr|Items}}。十字键或圆形方向键上的 Up / Down 可改变选中的{{tr|item}}。左和右仅对左侧的列有效，并且需要有多个同种{{tr|tool}}，如{{tr|Terra Blade}}可以替换为{{tr|Paladin's Hammer}}，它们都被分类为{{tr|weapons}}。
+** 在 New Nintendo 3DS 中，{{tr|Building Mode}}也可使用{{key|ZL}}进行切换。
+** 十字键可与{{tr|Building Mode}}配合使用，以追求放置物块时更高的准确度。
+
+==== {{tr|Inventory}} ====
+[[File:3DS Stacked Items.jpeg|150px|thumb|right|{{tr|inventory}}示例。]]
+{{tr|3DS version}}的{{tr|Inventory}}与{{mobile version}}的非常相似。{{tr|Items}}显示在屏幕下方，而{{tr|item}}的数据会显示在上方。最上方的十个{{tr|inventory}}{{tr|slots}}会被高亮显示，表明这些{{tr|slots}}会显示在{{tr|Quick Inventory}}中。{{tr|Items}}可以通过[[File:Steam X.png|frameless|30x30px]]进行丢弃，而成堆的{{tr|items}}可以通过[[File:Steam Y.png|frameless|30x30px]]分离。在{{tr|trash can}}和拆分图标下方是一个掉落图标。{{tr|Armor}}可以通过[[File:Steam Y.png|frameless|30x30px]]进行装备，但即使此{{tr|armor}}是个[[{{tr|vanity item}}]]，也会替换掉当前装备在{{tr|armor slots}}的任何{{tr|item}}。
+与{{mobile version}}相似，{{tr|items}}可在{{tr|slots}}之间拖动，而非只接受{{tr|button inputs}}。然而，在装备或丢弃物品时，仍需要{{tr|button inputs}}，因为没有在标签间拖动物品的方法。
+{{tr|inventory}}界面的上方有四个/五个{{tr|buttons}}。第一个是个返回的箭头，导致玩家离开{{tr|inventory}}界面。其余的则会切换{{tr|crafting menu}}、{{tr|the inventory}}、{{tr|the chest}}的{{tr|inventory}}（若适用的话），以及{{tr|the player}}的{{tr|armor}}/{{tr|accessory}}界面。
+
+===== {{tr|Chest Inventory}} =====
+[[File:3DS Chest Inventory.jpeg|150px|thumb|right|注意选项在{{tr|chest}}中有所不同。]]
+当{{tr|chest}}被打开时，选项与通常的{{tr|inventory}}有很大不同。要把{{tr|item}}拿出{{tr|chest}}，需要使用[[File:Steam X.png|frameless|30x30px]]，而[[File:Steam Y.png|frameless|30x30px]]会将所有{{tr|items}}拿出{{tr|the chest}}。{{tr|chest}}中的{{tr|Items}}无法被直接拆分或丢弃。当{{tr|player}}的{{tr|inventory}}在{{tr|chest}}可用时打开的时候，屏幕左下方会出现一个{{tr|quick stack}}按钮。存储按钮会在{{tr|item}}被选中时出现，但并不会与拿取按钮共享 X 快捷键。因此。{{tr|player}}要当心不要把想放回{{tr|chest}}里的{{tr|item}}丢弃。
+
+===== {{tr|Crafting Menu}} =====
+[[File:3DS Crafting Menu.jpeg|150px|thumb|right|{{tr|Crafting Menu}}。]]
+{{tr|crafting menu}}将{{tr|crafting}}{{tr|recipes}}分成多个部分，包括：
+# [[{{tr|Furniture}}]]、[[{{tr|Block}}]]和[[{{tr|Wall}}]]
+# [[{{tr|Tools}}]]
+# [[{{tr|Weapons}}]]
+# [[{{tr|Armor}}]]和[[{{tr|Vanity}}]] (和特定[[{{tr|accessories}}]])
+# [[{{tr|Buff Potions}}]]
+# 这些是不适合归入其他分类的{{tr|Miscellaneous items}}，如：{{tr|Boss Summons}}、部分{{tr|Accessories}}、{{tr|Biome Keys}}
+[[File:Steam X.png|frameless|30x30px]]可用于在分类间切换，而[[File:Steam A.png|frameless|30x30px]]或触摸屏上的按钮可用于制作选中的{{tr|item}}。{{tr|Items}}可以使用十字键、圆形方向键或触摸屏进行切换。可以制作的{{tr|Items}}会被列在无法制作的{{tr|items}}之前，并且背景是蓝色的。试图制作无法制作的{{tr|item}}会在制作按钮旁边显示无法制作的原因。与带有常常的{{tr|tooltips}}的{{tr|item}}相似，名字较长的{{tr|items}}在作为原料时，名称会来回滚动。
+
+===== {{tr|Player Inventory}} =====
+[[File:3DS Armor Tab.jpeg|150px|thumb|{{tr|inventory}}的{{tr|armor}}条。点击[[:File:3DS Buffs.jpeg|此处]]查看{{tr|buffs}}界面。]]
+{{tr|player}}的{{tr|armor and accessories}}在{{tr|inventory}}的最后。按 [[File:Steam Y.png|frameless|30x30px]] 会移除{{tr|armor or accessory}}并将其放入{{tr|player}}的{{tr|inventory}}。玩家图片下方的五只眼睛可用于显示或隐藏{{tr|player}}的{{tr|accessories}}，只要它们不是[[{{tr|wings}}]]。[[File:Steam X.png|frameless|30x30px]] 按下后可用于查看{{tr|player}}当前的{{tr|buffs and debuffs}}状态和其持续时间。{{tr|Buffs}}处于屏幕上时，可通过按下 [[File:Steam Y.png|frameless|30x30px]] 将其取消。
+
+===== {{tr|Shop Inventory}} =====
+[[File:3DS Shop.jpeg|150px|thumb|right|NPC 的{{tr|shop}}。[[:File:3DS Stacked Items with Shop.jpeg|{{tr|player}}可在此处从{{tr|inventory}}中出售物品。]]]]
+当与售卖{{tr|items}}的 NPC 互动时，NPC 会代替通常显示{{tr|chest}}的地方显示。{{tr|Items}}可以使用[[File:Steam X.png|frameless|30x30px]]从 NPC 处购买，只要玩家的钱足够多。{{tr|Items}}也可用[[File:Steam Y.png|frameless|30x30px]]从{{tr|player}}的{{tr|inventory}}中拿取。当{{tr|item}}被卖给 NPC 时，该{{tr|item}}会进入回购{{tr|slots}}，后者是可用于回购最近卖出的 5 个{{tr|items}}的{{tr|slots}}。与{{desktop version}}的{{tr|shop}}不同，离开 NPC 的{{tr|shop inventory}}并不会清除回购{{tr|slots}}中的{{tr|items}}，而是仅会在保存并退出游戏时才会如此。
+
+== 历史 ==
+{{history|Desktop 1.4.4|F4 改为与[[{{tr|Camera mode}}]]绑定。}}
+{{history|Desktop 1.4.1.1|
+** 修正了{{tr|Master mode}}玩家用{{tr|Gamepad}}时无法使用所有{{tr|accessory slots}}的问题。
+** 修正了用{{tr|Gamepad}}和{{tr|housing menu}}交互时一个相关的崩溃问题。
+** 修正了一个导致汉字键会自动替换某些键位绑定的问题。}}
+{{history|Desktop 1.3.1|电脑版的{{tr|Controller}}支持，更容易绑定。}}
+{{history|Desktop 1.3.0.1|为{{tr|inventory}}中的{{tr|item}}添加了{{tr|favorite}}选项；添加了{{tr|the mount hotkey}}。}}
+{{history|Desktop 1.2.4.1|修复了在控制中按“重置为默认”会将快速魔力键重设为 M 而非 J 的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|添加了对 Ctrl+Z、X、C 和 V（分别是清除行、剪切行、复制行和粘贴）的支持。添加了对Shift+Insert、Shift+Delete、Ctrl+Insert（分别是粘贴、剪切和复制）的支持。}}
+{{history|Desktop 1.2.0.1|添加了{{tr|map}}控制。}}
+{{history|Desktop 1.2|
+** M 现在用于新的{{tr|minimap}}特征。
+** J 现在用于快速恢复{{tr|mana}}。}}
+{{history|Desktop 1.1.1|键位绑定不再有时会自动被设定为“无”。}}
+{{history|Desktop 1.1|
+** 当按住鼠标光标时，{{tr|item}}会脉动，以与 UI 上的其他{{tr|item}}形成对比。
+** {{tr|Items}}在被丢弃或扔出时会自由移动并旋转。
+** F7 显示游戏调试信息。
+** F8 显示连接调试信息。
+** F9 更改光照{{tr|settings}}。
+** 添加了'{{tr|Auto Select}}'热键。
+** 加入了从打开的{{tr|inventory}}中直接拿取并放置物品的能力。}}
+{{history|Desktop 1.0.6|
+** 热键现在可以用于在[[{{tr|inventory}}]]打开时更改选择的物品。
+** 添加了使用[[{{tr|Hook}}]]的热键（默认为 E）。
+** {{tr|Mana}}和{{tr|Healing Potions}}的快捷键现在能够正常使用于{{tr|Lesser Restoration Potion}}了。}}
+{{history|Desktop 1.0.5|添加了快速饮用{{tr|healing Potion}}、{{tr|mana Potion}}和{{tr|buff potions}}的热键。使用的{{tr|healing potion}}/{{tr|mana potion}}和使用箭矢遵循同样的规则：先使用最靠左上的。{{tr|buff potions}}会一次全部使用。}}
+{{history|Desktop 1.0.2|右击并按住{{tr|crafting recipe}}以制作多个{{tr|items}}，直至到达最大堆叠或材料用完。}}
+{{history|Desktop 1.0.1|{{tr|Inventory button}}被重新排布。}}
+{{history|Desktop-Release|Introduced=y|带着基本操作引入。}}
+
+{{Game mechanics}}
+
+{{language info|en=Game controls}}

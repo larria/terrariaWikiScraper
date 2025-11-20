@@ -1,0 +1,61 @@
+{{collapse top|点击展开 {{tr|bug}} 修复列表|收起列表}}
+; {{tr|Multiplayer}} & 分屏修复
+* Fixed a bug where the host’s world would get copied and replaced by another player’s previously created world.
+* Fixed a bug where a player’s world would get replaced when they went from a single-player session to a [[multiplayer]] one and the host quit first.
+* Fixed a bug where the game would freeze after exiting the session with either a 3rd or 4th split-screen player.
+* Fixed a split-screen crash that would occur when the primary player used ‘Save and Exit’ from a 4-player multiplayer split-screen session.
+* Fixed a crash that would occur for players whose 2nd split-screen player exited a multiplayer session.
+* Fixed a freeze that occurred when a player selected multiplayer after being in a multiplayer game that the host quit.
+* Fixed a crash that would occur when two or more split-screen players would access their cloud save on the ‘Select Player’ screen.
+* Fixed a crash that would occur when a secondary player interacted with a chest during split-screen.
+* 修复了在[[{{tr|Pirate Invasion}}]]中出现的多人模式的错误。
+* Fixed a bug where elements in the mini-map would be missing for other players in a multiplayer session.
+* Fixed a split-screen bug where secondary players would get kicked out of a multiplayer session after interacting with a chest.
+* 修复了接受邀请后出现的崩溃。
+* Fixed a bug that would cause infinite loading after losing connection to the internet while in a multiplayer session.
+* Fixed a crash that would occur if the primary player exited a split-screen session while the secondary player selected the ‘Edit’ option by interacting with a [[tombstone]].
+* Fixed other stability bugs related to accepting invitations while in suspend mode.
+* Fixed a crash that would occur after the host added a split-screen player and another non-split-screen player joined simultaneously.
+* Fixed a crash that would occur for the host while fighting in a [[PvP]] multiplayer session.
+* Fixed a crash that would occur after exiting the split-screen players one by one while the players were zoomed in.
+; 功能修复
+* Fixed a bug that would prevent progression being saved when ‘[[Autosave]]’ was turned off, and the player exited via Save & Exit.
+* 修复了与自动保存相关的其他 Bug
+* Fixed instances of the game becoming unresponsive after signing in and out of profiles.
+* Fixed a bug where certain enemies ([[Blue Slime]]) and bosses would respawn despite being defeated.
+* Fixed an instance where players wouldn’t be taken to a multiplayer session after accepting an invite.
+* Fixed a bug where worlds couldn’t be created after performing sign-in changes after a previous world creation process.
+* [[{{tr|Autopause}}]]现在仅在单人模式中，才在{{tr|Map screen}}上可用。
+; 保存转换修复
+* Fixed a bug where save conversion wouldn’t progress past converting maps when the player has only played in multiplayer games previously.
+* Fixed a bug where saved worlds would disappear after save conversion when worlds had the same name, but a variation in capitalization.
+* 修复了若干与保存转换相关的 bug。
+; 一般崩溃修复
+* 修复了一处会在与[[{{tr|Moon Lord}}]]战斗时发生的崩溃。
+* 修复了在中等或大世界中，使用[[{{tr|Stardust Dragon}}]]时，如果{{tr|minion}}大于等于 8 个，则在被击杀时游戏会卡住的 {{tr|bug}}。
+* 修复了处于{{tr|single-player game}}中时，接受邀请后出现的崩溃。
+* 修复了一处会在[[{{tr|Moon Lord}}]]被打败发生的崩溃。
+* 修复了其他杂七杂八的通过主机版崩溃报告系统报上来的崩溃
+; 物品复制漏洞的修复
+* 修复了一处在移动时，放置一叠物品的最后一个时的复制 {{tr|bug}}。
+* 修复了打开{{tr|build mode}}后，有几种[[{{tr|potion}}]]可以无限饮用的 {{tr|bug}}。
+* 修复了一处与[[{{tr|chest}}]]有关的复制 bug。
+; 性能
+* 修复了染色的[[{{tr|Lunar Hook}}]]在使用时会让游戏表现下降的 {{tr|bug}}。
+* Fixed a bug where animated dyes displayed in the player list would result in graphic corruption and slowdown when repeatedly starting and exiting gameplay.
+; {{tr|Event}}修复
+* 修复了[[{{tr|Goblin Army}}]]{{tr|event}}本该自然生成时服务器出现的崩溃。
+* 修复了{{tr|Goblin Army}}在出现{{tr|event message}}并满足条件时也无法生成的 {{tr|bug}}。
+; 艺术 & 文本修复
+* 修复了装备各种各样的带动画的{{tr|dyes}}，可能导致纹理消失的 {{tr|bug}}。
+* 修复了[[{{tr|Solar Eclipse}}]]{{tr|event}}的背景对于其他玩家缺失的 {{tr|bug}}。
+* 修复了使用[[{{tr|Mana Hair Dye}}]]后，玩家的发色在游戏中和小地图中无法实时更新的 {{tr|bug}}。
+* 修复了把{{tr|dye}}放入{{tr|the dye slot}}后，[[{{tr|Angel Halo}}]]{{tr|item}}的颜色在{{tr|Map or minimap}}中不发生改变的 {{tr|bug}}。
+* 修复了可以在两片{{tr|crafted walls}}之间看到缝隙的 {{tr|bug}}。
+* 修复了[[{{tr|Weapon Rack}}]]的{{tr|tooltip}}会显示出“&lt;right&gt;”而非普通的按钮提示符的问题。
+* 游戏文本现在保持静止，而不会闪烁。
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Pipeworks Studios/PS4 1.0.983.5}}
+</noinclude>

@@ -1,0 +1,68 @@
+{{infobox wrapper
+|{{item infobox|boxwidth=30em
+| auto = 1258
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 43 {{eicons|1.3.0.1|invert=y|small=y}}
+| idprojectile = 246, 249
+| listcat = launchers
+| tags = hardmode / drop / bag loot
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+}}
+|{{item infobox|boxwidth=30em
+| auto = 1261
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 15 {{eicons|1.3.0.1|invert=y|small=y}}
+| buy = @@@@<br/>{{cc|10}} ([[{{tr|Demolitionist|link=y}}|{{tr|Demolitionist}}]]) {{eicons|1.3.0.1|invert=y|small=y}}
+| idprojectile = 246, 249
+| tags = hardmode / drop / bag loot / vendor:Arms Dealer / vendor:Witch Doctor
+}}
+|{{drop infobox|width=30em}}
+}}
+{{dablink|不要与{{tr|crafting material}}[[{{tr|Stinger}}]]混淆。}}
+
+'''{{tr|Stynger}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|launcher}}]]。可以[[{{tr|Autoswing}}|{{tr|auto-fire}}]]，'''{{tr|Stynger Bolts}}'''是其[[{{tr|ammo}}]]。{{tr|Stynger Bolts}}会高速飞行，并会在撞击到[[{{tr|enemy}}]]或实体{{tr|block}}时爆炸，造成范围{{tr|damage}}。它们可以释放出 2–5 个{{tr|shrapnel fragments}}，它们会向大角度的弧形区域飞行，并造成额外的小爆炸。
+
+{{eicons|1.4.0.1}} {{tr|A Stynger Bolt}}会在直接击中单个目标时造成双倍{{tr|damage}}（{{#expr:({{iteminfo|Stynger|damage}}+{{iteminfo|Stynger Bolt|damage}})*2}} {{tr|base damage}}）。
+
+{{tr|The Stynger}}有 {{eicons|1.4.0.1}} {{chance|1/7}} / {{eicons|1.4.0.1|invert=y}} {{chance|1/8}} 几率掉落自[[{{tr|Golem}}]]。{{tr|Stynger}}总会与 60 至 99 枚{{tr|Stynger Bolts}}一起掉落。如果{{tr|player}}的[[{{tr|inventory}}]]中有{{tr|Stynger}}，[[{{tr|Witch Doctor}}]]或[[{{tr|Arms Dealer}}]]将以每个 {{iteminfo|Stynger Bolt|buy}} 的价格出售{{tr|Stynger Bolt}}，在{{eversions|1.3.0.1|invert=y|short}}中则在[[{{tr|Demolitionist}}]]处购买（每个 {{cc|10}}）。
+
+{{modifier|ranged}}
+
+[[File:Stynger (demo).gif|thumb|none|500px|使用中的{{tr|Stynger}}。注意，直接击中会造成双倍{{tr|damage}}。]]
+
+== 备注 ==
+* {{tr|Stynger}}会得到[[{{tr|Shroomite Helmet}}]]的特殊加成。
+* {{tr|Stynger Bolt}}的初始爆炸和以及{{tr|shrapnel fragments}}的爆炸都不会伤害玩家，这让玩家可以近距离使用它们。
+* {{tr|Stynger Bolt}}的初始爆炸，会伤害以碰撞点为中心的 9.4×9.4 格矩形范围内的所有{{tr|enemy}}<!-- exact: 9.375 tiles (150 pixels; 150/16=9.375) -->。{{tr|shrapnel}}造成的爆炸则会伤害以碰撞点为中心的 6.25×6.25 格<!-- 100 pixels -->矩形范围内的所有{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* {{tr|Stynger Bolts}}会受{{tr|gravity}}影响，但由于它飞行速度很高，因此发生的下坠可以忽略不计。
+
+== 小贴士 ==
+* 由于它可以制造爆炸性攻击，因此{{tr|Stynger}}经常可以在不需要精确瞄准的情况下击杀敌人。这在作战压力比较大的情况下非常方便，例如当目标的位置未知时（即位于黑暗中时）。
+* 当穿着整套{{tr|Shroomite armor}}和合适的{{tr|accessories}}在平坦的地形作战时，{{tr|Stynger}}可以轻松地将[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]推进至 15 和 20 波。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 最初的{{tr|Stynger Bolt}}会在直接击中单个目标时造成双倍{{tr|damage}}。
+** {{tr|Stynger}}和{{tr|Stynger Bolt}}的{{tr|item}}{{tr|Sprite updated.}}
+** {{tr|projectile}}{{tr|Sprite updated.}}
+** 掉落率由 {{chance|1/8}} 提升至 {{chance|1/7}}，因为[[{{tr|Picksaw}}]]现在是单独掉落的了。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Stynger}}的{{tr|damage}}由 43 提升至 45。
+** {{tr|Stynger Bolt}}的{{tr|damage}}由 15 提升至 17。}}
+{{history|Desktop 1.2.4|修复了{{tr|shrapnel}}当前只能造成直接的{{tr|explosion damage}}这一 {{tr|bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Stynger}}

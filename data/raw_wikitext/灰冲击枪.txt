@@ -1,0 +1,82 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4347
+| tags = vendor / vendor:Traveling Merchant
+| listcat = magic weapons / magic guns
+}}
+{{about|{{tr|pre-Hardmode}}的{{tr|magic weapon}}|{{tr|the Hardmode}}的对应物|{{tr|Orange Zapinator}}|{{eversions|Zapinator}}独有的{{tr|magic weapon}}|{{tr|Zapinator}}}}
+[[File:Gray Zapinator (demo).gif|thumb|使用中的{{tr|Gray Zapinator}}。|256px]]
+
+'''{{tr|Gray Zapinator}}'''是一个[[{{tr|pre-Hardmode}}]]独有<ref name="gray-zapinator-hardmode"/>的[[{{tr|magic gun}}]]，购买自[[{{tr|Traveling Merchant}}]]，价格为 {{iteminfo|Gray Zapinator|buy}}。它仅在击败[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Queen Bee}}]]或[[{{tr|Skeletron}}]]其中之一后方可购买。其[[{{tr|Hardmode}}]]对应物为[[{{tr|Orange Zapinator}}]]。[[{{tr|Meteor armor}}]]的{{tr|set bonus}}会将其[[{{tr|mana}}]]消耗降到 0，但描述中显示的{{tr|mana cost}}并不会改变。
+
+<section begin="projectile" />此武器会发射行为非常不规律的激光束。在击中{{tr|enemy}}后，其{{tr|projectile}}会减速 40%，并将其当前伤害和[[{{tr|knockback}}]]降低 10%，并且还可能从下表中选择一系列特殊效果。激光束会在击中八个{{tr|enemies}}或 60 秒后消失。
+
+{{modifier|magic}}
+
+== 特殊效果 ==
+在击中{{tr|enemy}}时，激光会产生下列效果中的任意种效果（可能多于一种）：{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+{| class="terraria lined sortable"
+! 效果 !! data-sort-type=number | 几率
+|-
+| 禁用{{tr|tile}}碰撞（即，获得了穿透{{tr|blocks}}的能力）<br/>向左或向右传送最多 16 格 || {{chance|1/20}}
+|-
+| 禁用{{tr|tile}}碰撞<br/>向上或向下传送最多 16 格 || {{chance|1/20}}
+|-
+| 禁用{{tr|tile}}碰撞 || {{chance|1/2}}
+|-
+| {{tr|the projectile}}沿着当前轨迹向后移动最多 39 {{tr|ticks}}{{tick}}<ref name="tileCollision">如果新位置是在{{tr|blocks}}之内并且{{tr|projectile}}没有穿透{{tr|blocks}}移动的能力，则传送不会生效。</ref><br/>（即，传送到反转方向后正常等待最多 39 {{tr|ticks}}或是说 0.65 秒之后会到达的位置）|| {{chance|2/3}}
+|-
+| 略微向屏幕右侧偏移方向 || {{chance|1/7}}
+|-
+| 略微向屏幕底部偏移方向 || {{chance|1/7}}
+|-
+| 将当前{{tr|knockback}}乘以 10<br/>（在正常的每次命中降低 10% {{tr|knockback}}之后应用）|| {{chance|1/20}}
+|-
+| 将当前{{tr|damage}}乘以 10<br/>（在正常的每次命中降低 10% {{tr|damage}}之后应用）|| {{chance|1/50}}
+|-
+| 向左或向右传送最多 4 格<ref name="tileCollision"/> || {{chance|1/7}}
+|-
+| 向上或向下传送最多 4 格<ref name="tileCollision"/> || {{chance|1/7}}
+|-
+| 垂直镜像轨迹 || {{chance|1/14}}
+|-
+| 水平镜像轨迹 || {{chance|1/14}}
+|-
+| 减慢到当前{{tr|velocity}}的 0.05% 到 10% 之间<br/>（在正常的每次命中减速 40% 之后应用）|| {{chance|1/10}}
+|}
+
+这些效果是按照给定顺序应用的。虽然{{tr|projectile}}确实有可能在击中{{tr|enemy}}时一次性触发所有效果，但也有可能一个都不会触发。<section end="projectile" />
+
+== 备注 ==
+* 因为{{tr|Gray Zapinator}}是在击中后得到效果，后继的命中也可能会给予同一束激光新的效果，这可能会导致某些激光能够在命中时造成极高的{{tr|damage}}或{{tr|knockback}}。
+* 只有激光的前端可造成伤害。
+
+== 小贴士 ==
+* {{tr|The Gray Zapinator}}在整个{{tr|pre-Hardmode}}都是十分强力的，尽管它有点依赖运气。
+* {{tr|The Gray Zapinator}}在[[{{tr|Underground Jungle}}]]使用有点危险，因为其瞬移的子弹可能会打破屏幕外的[[{{tr|Larva}}]]并召唤出[[{{tr|Queen Bee}}]]。
+
+== 花絮 ==
+* {{tr|The Zapinator}}的名字（Zapinator）和外观都和 {{wikipedia|NES Zapper|FC光线枪}} 很相似，后者是{{wikipedia|Famicom|FC}}（中文俗称红白机）的电子光枪配件。
+** 它的橙色版本[[{{tr|Orange Zapinator}}]]则来自于美国和欧洲的{{wikipedia|lang=en|Nintendo Entertainment System|NES}}（FC的美国/欧洲版本）使用的{{wikipedia|NES Zapper|NES版光线枪}}，后者颜色为橙色的原因是欧美法律中禁止将玩具类枪械漆成真实枪械的颜色以防止用于犯罪。
+** 其{{tr|projectiles}}不稳定的行为和其{{tr|tooltip}}——<i>{{itemTooltip|4348}}</i>——很可能是调侃光线枪因其作用原理导致的不精确性和光线枪在不同光枪游戏中效果的不一致。
+* 虽然其[[{{tr|rarity}}]]级别比较低，但考虑到来自其{{tr|projectiles}}行为的收益，它在{{tr|pre-Hardmode}}全程都可以是很有效的武器，不过这要求有点运气。
+* [[{{tr|Zapinator}}]]最早是在[[1.0|{{tr|Desktop-Release}}]]中引入的，可以秒杀{{tr|enemies}}，用于测试目的；在 [[1.0.1]] 版本中移除。后来，这个物品被加入到 {{3DS version}}中。{{tr|The Zapinator}}在 [[1.4.0.1]] 中作为{{tr|Gray Zapinator}}和[[{{tr|Orange Zapinator}}]]重新引入到{{eversions|1.4.0.1}}中。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Usetime}}由 37 降低至 36。}}
+{{history|Desktop 1.4.0.2|购买价格由 {{gc|15}} 提高至 {{gc|17}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|随到{{tr|Desktop}} 1.4.0.2 为止的更改引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|随到{{tr|Desktop}} 1.4.0.2 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|随同至{{tr|Desktop}} 1.4.0.2 为止的更改引入。}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="gray-zapinator-hardmode">理论上，通过在{{tr|pre-Hardmode}}生成{{tr|Traveling Merchant}}，然后激活{{tr|hardmode}}且不让他消失，则可在{{tr|hardmode}}中获得它</ref>
+}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Gray Zapinator}}

@@ -1,0 +1,79 @@
+[[File:Tooltip.png|thumb|right|350px|一般的悬停文本的范例。黄框的项目即为本 wiki 上标为“{{tr|tooltip}}”的内容。]]
+
+'''{{tr|Tooltips}}'''是 {{icon|desktop|old-gen|console|mobile}} 停留在物品上或 {{icon|3ds}} 在[[{{tr|Inventory}}]]中选择它们时显示的“悬停文本”。
+
+某个物品显示的完整文本通常包括物品的属性信息。
+
+在很多物品上还会显示附加的文本，这就是在本 wiki 上称为物品的“{{tr|tooltip}}”的东西（它们在''{{tr|Terraria}}''的游戏代码中也是这样称呼的）。它们通常更进一步地描述了此物品，而且经常是以有趣或幽默的方式。
+
+悬停文本的属性部分可能包含任意以下内容：
+* 类型
+* [[{{tr|Damage}}]]
+* [[{{tr|Critical strike}}|{{tr|Critical strike chance}}]]
+* [[{{tr|Use time}}]]
+* [[{{tr|Knockback}}]]
+* [[{{tr|Mana}}|{{tr|Mana usage}}]]
+* [[{{tr|Pickaxe power}}]]、[[{{tr|axe power}}]]、[[{{tr|hammer power}}]]、[[{{tr|fishing power}}]]、[[{{tr|bait power}}]]
+* 生命恢复量
+* [[{{tr|Defense}}]]
+* {{tr|Set Bonus}}（当穿着全套[[{{tr|armor}}]]套装时）
+* [[{{tr|Modifier}}]]效果
+* 额外效果
+* “幽默的备注”（如[[{{tr|Musket}}]]）
+
+{{tr|Modifier}}效果，如果可应用，会出现在{{tr|tooltip}}底部，会呈现绿色（对于好的效果）或红色（对于负面效果）。
+
+== 物品类型 ==
+以下是根据物品类型出现在悬停文本顶部的内容的表格（[[{{tr|weapons}}]]不会显示类型指示）：
+
+{| class = "terraria lined"
+! {{tr|Type}} !! 表明
+|-
+| ''{{gameText|LegacyTooltip.33}}'' || 出现在[[{{tr|Blocks}}]]、[[{{tr|Walls}}]]、和[[{{tr|Furniture}}]]上。表明此物品可被[[{{tr|placement}}|{{tr|place}}]]。
+|-
+| ''{{gameText|LegacyTooltip.35}}'' || 出现在大多数[[{{tr|Thrown weapons}}]]和被捕获的[[{{tr|Critter}}]]上。表明此物品在使用时会被“消耗”掉。
+|-
+| ''{{gameText|LegacyTooltip.36}}'' || 出现在[[{{tr|Crafting material}}]]上。表明此物品用在制作另一个物品的{{tr|crafting recipe}}中。
+|-
+| ''{{gameText|LegacyTooltip.23}}'' || 出现在[[{{tr|Armor}}]]、[[{{tr|Accessories}}]]、[[{{tr|Pet}}]]、[[{{tr|Light Pet}}]]、和[[{{tr|Mount}}]]上。表明此物品可以装备在{{tr|Equipment Inventory}}中的相应栏位内。
+|-
+| ''{{gameText|LegacyTooltip.34}}'' || 出现在被其他物品用作[[{{tr|ammunition}}]]的物品上，比如[[{{tr|Gel}}]]、[[{{tr|Arrows}}]]、[[{{tr|Wire}}]]、和[[{{tr|Bait}}]]{{tr|items}}。表明此物品可以放置在玩家{{tr|inventory}}中的{{tr|Ammo slots}}内。
+|-
+| ''{{gameText|LegacyTooltip.24}}'' || 出现在[[{{tr|Vanity item}}]]上。表明此物品作为{{tr|armor}}装备时不会提供任何属性强化。
+|-
+| ''{{gameText|CommonItemTooltip.RightClickToOpen|y_right=右键点击}}''<ref>无论“交互”键设置成什么都会显示为“右键点击”。</ref> || 表明此物品是[[{{tr|Grab bag}}]]。出现在[[{{tr|Treasure Bag}}]]、[[{{tr|Present}}]]、和[[{{tr|Goodie Bag}}]]、等物品上。注意不适用于{{versions|mobile|console}}，它们有单独的控制。
+|-
+| ''{{gameText|CommonItemTooltip.BannerBonus}}&lt;{{tr|enemy}}名称&gt;'' || 只出现在[[{{tr|Banners (enemy)}}|{{tr|enemy banners}}]]上。表明当玩家在此{{tr|banner}}范围内时，它会针对那种{{tr|enemy}}给予伤害提升。
+|}
+
+== 栏位类型 ==
+根据物品的{{tr|inventory}}栏位的类型或状态，还可能会额外显示以下内容：
+
+{| class = "terraria lined"
+! 讯息 !! 表明
+|-
+| ''{{gameText|LegacyTooltip.56}}''<br/>''{{gameText|LegacyTooltip.57}}'' || 表示物品已被收藏。
+|-
+| ''{{gameText|LegacyTooltip.0}}''<br/>''{{gameText|LegacyTooltip.1}}'' || 当有物品被用在{{tr|social slots}}中时。
+|}
+
+== {{tr|tooltips}}列表 ==
+以下是所有{{tr|tooltips}}的列表。
+{{ajax|List of tooltips}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|
+** 修正了大量{{tr|tooltip}}错别字。
+** 修正了[[{{tr|Ninja gear}}]]{{tr|tooltips}}中的一些不一致问题。
+** 更新了[[{{tr|Invisibility Potion}}]]的{{tr|tooltip}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{language info|en=Tooltips}}

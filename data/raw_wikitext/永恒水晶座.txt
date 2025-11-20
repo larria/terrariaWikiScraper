@@ -1,0 +1,47 @@
+{{exclusive|Tavernkeep}}
+{{item infobox
+| type = Furniture
+| width = 5| height = 3
+| auto = 3816
+| tags = vendor /vendor:Tavernkeep
+}}
+
+'''{{tr|Eternia Crystal Stand}}'''可以在[[{{tr|Tavernkeep}}]]处以 {{iteminfo|Eternia Crystal Stand|buy}} 的价格购买。在{{tr|Eternia Crystal Stand}}处使用[[{{tr|Eternia Crystal}}]]会立即开始[[{{tr|Old One's Army}}]][[{{tr|event}}]]。
+
+== 地形需求 ==
+当尝试在一个不适合的区域放置{{tr|Eternia Crystal}}时，左下角消息会出现一条消息：''“{{gameText|DungeonDefenders2.BartenderWarning}}”''，而不会消耗掉{{tr|Eternia Crystal}}。“宽阔平坦的开阔区域”具体而言意味着：
+
+* {{tr|Eternia Crystal Stand}}两旁必须有 61 个[[{{tr|block}}]]（从{{tr|Eternia Crystal Stand}}的中心开始测量）的空间。
+** {{tr|Eternia Crystal Stand}}不能由[[{{tr|platforms}}]]支撑。此外，{{tr|Eternia Crystal Stand}}的两边必须是{{tr|blocks}}。
+* 表层的物块可以被锤击，这不会对这片区域产生影响。
+* 所述区域表面的物块可以被致动以进入战斗场地。这些物块必须处于激活状态才能放置{{tr|crystal}}。
+* 每远离平台一个方格，表面就可以上下移动一个方格，创造出一个玩家无需跳跃可就以走上去的表面。 这种方法可以一直使用，允许表面按需增高或降低。
+* 每远离平台一个方格，表面就可以上下移动两到三个方格，但这种方法只能连续使用两到三次，在此之后该表面就不再被算作平坦区域了。具体的计算公式尚不清楚。
+* 可以挖一个最多三格宽六格深的坑.
+* 被[[{{tr|actuator}}]]变为未通电状态的[[{{tr|Inactive Stone Block}}]]''不会''干扰这个区域，并且可以在放置完{{tr|Eternia Crystal}}后把它们重新激活。
+* {{tr|Platforms}}不会对区域产生影响.
+* [[{{tr|Bubble}}]]不算做合格的{{tr|blocks}}，既不能用来创造平坦区域，也不会干扰这片开放区域。
+* 表面以上至少需要 10 个{{tr|blocks}}高的空间。只要有一块物块上方只有 9 {{tr|tiles}}的空间就会使得这处位置无效。
+* [[{{tr|Trap door}}]]可以算作是表面的一部分（但仅在关闭时才算）；它们可以在放置完{{tr|Eternia Crystal}}后打开。
+
+== 备注 ==
+* 当{{tr|inventory}}中有{{tr|Eternia Crystal}}时，对着{{tr|Eternia Crystal Stand}}按下 {{key|open}} 即可将其放入，并不需要拿在手上。
+* 在{{tr|Old One's Army}}各波次间的等待时间期间，右键点击{{tr|Eternia Crystal Stand}}可以让玩家跳过等待立即开始下一波。{{tr|The Eternia Crystal Stand}}和完成第一波的信息中也会提示这一点。
+
+== 花絮 ==
+* {{tr|Eternia Crystal Stand}}也是[[{{tr|Crossover content}}#{{tr|Dungeon Defenders 2}}|{{tr|Dungeon Defenders 2}} {{tr|crossover}}]]内容的一部分。
+
+== 历史 ==
+{{history|Desktop 1.4.4|在{{tr|Old One's Army}}各波次间的等待时间期间，右键点击{{tr|Eternia Crystal Stand}}可以让玩家跳过等待立即开始下一波。}}
+{{history|Desktop 1.3.4.3|
+** 修复了在某些高度使用{{tr|Eternia Crystal Stand}}时自伤性的爆炸不连续发生的问题。
+** 修复了 3 级的[[{{tr|Old One's Army}}]]中{{tr|Eternia Crystal}}的{{tr|health}}设置有误的问题。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Eternia Crystal Stand}}

@@ -1,0 +1,89 @@
+<div class="ajaxHide">
+__FORCETOC__
+{{main|数据 ID}}
+此页面包含有[[《{{tr|Terraria}}》]]游戏代码中用于检查{{tr|item}}使用时是否消耗[[{{tr|ammunition items}}]]的内部'''{{tr|ammo IDs}}''' 的可排序列表。{{source code ref|v=1.4.4.9|class=Terraria.ID.AmmoID}}此信息对于研究性目的或开发诸如[[{{tr|Mod}}]]之类的第三方软件会很有用。
+
+== ID 列表 ==
+</div>
+{| class="terraria sortable"
+! data-sort-type="number" | {{tr|ID}} !! 内部名称 !! class="unsortable" | 对应{{tr|ammo}} !! 用于
+|-
+| 0 || <code>None</code>
+| {{na}}
+| 所有不消耗{{tr|ammo}}的武器
+|-
+| 23 || <code>Gel</code>
+| [[{{tr|Gel}}]]
+| [[{{tr|Flamethrower}}]]、[[{{tr|Elf Melter}}]]
+|-
+| 40 || <code>Arrow</code>
+| 所有[[{{tr|arrows}}]]
+| [[{{tr|Bows}}]]和[[{{tr|repeaters}}]]
+|-
+| 71 || <code>Coin</code>
+| 所有[[{{tr|coins}}]]
+| [[{{tr|Coin Gun}}]]
+|-
+| 75 || <code>FallenStar</code>
+| [[{{tr|Fallen Star}}]]
+| [[{{tr|Star Cannon}}]]、[[{{tr|Super Star Shooter}}]]
+|-
+| 97 || <code>Bullet</code>
+| 所有[[{{tr|bullets}}]]
+| [[{{tr|Guns}}]]
+|-
+| 169 || <code>Sand</code>
+| 所有[[{{tr|Sand Blocks}}]]
+| [[{{tr|Sand Gun}}]]
+|-
+| 283 || <code>Dart</code>
+| 所有[[{{tr|darts}}]]
+| [[{{tr|Blowpipe}}]]、[[{{tr|Dart Rifle}}]]、[[{{tr|Dart Pistol}}]]、[[{{tr|Blowgun}}]]
+|-
+| 353 || {{na}}<!-- No code name: Not listed in AmmoID class -->
+| [[{{tr|Ale}}]]
+| [[{{tr|Ale Tosser}}]]
+|-
+| 771 || <code>Rocket</code>
+| 所有[[{{tr|rockets}}]]
+| [[{{tr|Grenade Launcher}}]]、[[{{tr|Rocket Launcher}}]]、[[{{tr|Proximity Mine Launcher}}]]、<br/>[[{{tr|Snowman Cannon}}]]、[[{{tr|Celebration}}]]、[[{{tr|Electrosphere Launcher}}]]、[[{{tr|Celebration Mk2}}]]
+|-
+| 780 || <code>Solution</code>
+| 所有[[{{tr|solutions}}]]
+| [[{{tr|Clentaminator}}]]、[[{{tr|Terraformer}}]]
+|-
+| 931 || <code>Flare</code>
+| 所有[[{{tr|flares}}]]
+| [[{{tr|Flare Gun}}]]
+|-
+| 949 || <code>Snowball</code>
+| [[{{tr|Snowball}}]]
+| [[{{tr|Snowball Cannon}}]]
+|-
+| 1261 || <code>StyngerBolt</code>
+| [[{{tr|Stynger Bolt}}]]
+| [[{{tr|Stynger}}]]
+|-
+| 1783 || <code>CandyCorn</code>
+| [[{{tr|Candy Corn}}]]
+| [[{{tr|Candy Corn Rifle}}]]
+|-
+| 1785 || <code>JackOLantern</code>
+| [[{{tr|Jack 'O Lantern}}]]
+| [[{{tr|Jack 'O Lantern Launcher}}]]
+|-
+| 1836 || <code>Stake</code>
+| [[{{tr|Stake}}]]
+| [[{{tr|Stake Launcher}}]]
+|-
+| 3108 || <code>NailFriendly</code>
+| [[{{tr|Nail}}]]
+| [[{{tr|Nail Gun}}]]
+|}
+<div class="ajaxHide">
+== 参考 ==
+{{reflist}}
+
+{{category|Data IDs}}
+
+{{language info|en=Ammo IDs}}</div>

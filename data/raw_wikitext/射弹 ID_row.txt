@@ -1,0 +1,21 @@
+<includeonly><!--
+
+-->{{#vardefine:_pid|{{{id|{{#expr:{{#var:_pid}}+1}}}}}}}<!--
+
+--><tr><!--
+	--><td>{{#var:_pid}}</td><!--
+	--><td align="center">[[File:{{getProjectileInfo|{{#var:_pid}}|image}}{{#if:{{{size|}}}|{{!}}{{{size}}}}}]]</td><!--
+	--><td>{{getProjectileInfo|{{#var:_pid}}|name}}</td><!--
+	-->{{#if:{{bool|{{{iname|y}}}}}|<!--
+		--><td><code>{{getProjectileInfo|{{#var:_pid}}|internalName}}</code></td><!--
+	-->}}<!--
+	--><td>{{{1|{{na}}}}}</td><!--
+--></tr><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}} It is furthermore used for the same purpose on the [[List of reflectible projectiles]].
+
+The <code>$id</code> parameter can be used to specify a particular projectile ID for the row; otherwise the IDs are incremented automatically. The <code>$size</code> parameter can be used to control the size of the image (using the normal <code><nowiki>[[File:]]</nowiki></code> syntax, e.g. <code>100px</code> or <code>x50px</code>), the <code>$iname</code> can be set to <code>n</code>/<code>no</code> to prevent display of the "Internal name" column, and the first unnamed parameter is used for the description of the projectile's source.
+
+{{language info|en=Projectile IDs/row}}
+</noinclude>

@@ -1,0 +1,41 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| type = Tool
+| auto = 3625
+| tags = Wiring
+}}
+'''{{tr|Multicolor Wrench}}'''是一件[[{{tr|tool}}]]，能够放置/移除任何颜色的[[{{tr|wire}}]]。无论{{tr|block}}放置范围如何，它都能在屏幕上的任意位置使用。
+
+[[File:Multicolor Wrench UI.gif|thumb|right|{{icon|desktop}}{{tr|Menu and cursor icons}}。]]
+
+当手持{{tr|tool}}时按下{{key|open}}，会显示带有五个不同{{tr|buttons}}的菜单，四个用来选择四种颜色的{{tr|wires}}，一个用来切换放置或采集所选颜色的{{tr|wires}}。
+* {{icon|desktop|console}}{{tr|The menu}}会在{{tr|cursor}}位置弹出，{{tr|buttons}}以放射状排列。
+* {{icon|mobile}}{{tr|The menu}}会在{{key|open}}{{tr|button}}上方弹出，{{tr|button}}以两行的形式列出。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Multicolor Wrench|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=Multicolor Wrench|expectedrows=1}}
+
+== 备注 ==
+* 需要花费{{buy expr|Red Wrench|+|Blue Wrench|+|Green Wrench|+|Yellow Wrench|+|Wire Cutter|}}以购买合成{{tr|Multicolor Wrench}}所需的材料。
+* 和{{tr|Wire Cutters}}不同，用{{tr|Multicolor Wrench}}采集的{{tr|wire}}会被直接放置入玩家的{{tr|inventory}}中，而非掉落。
+* {{tr|The Multicolor Wrench}}会放置/采集所有已选择颜色的{{tr|wire}}，这意味着它能够同时放置/采集所有四种颜色的{{tr|wire}}。
+
+== 花絮 ==
+* 虽然{{tr|The Multicolor Wrench}}的外观包含了其余制作它所用的{{tr|wrench}}和{{tr|Wire Cutters}}的颜色，但并没有包含[[{{tr|Yellow Wrench}}]]的黄色调。
+* 尽管是由能够采集[[{{tr|Actuator}}]]的{{tr|Wire Cutter}}制作而来的，{{tr|Multicolor Wrench}}并不能采集{{tr|Actuators}}。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Multicolor Wrench}}

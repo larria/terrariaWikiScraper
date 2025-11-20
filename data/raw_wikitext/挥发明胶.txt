@@ -1,0 +1,36 @@
+{{expert mode only}}
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4987
+| idprojectile = 937
+| tags = bag loot / Treasure Bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Volatile Gelatin (demo).gif|framed|{{tr|Volatile Gelatin}}攻击[[{{tr|Target Dummies}}]]以及[[{{tr|Unicorn}}]]。]]
+
+'''{{tr|Volatile Gelatin}}'''是一个[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，会周期性地向附近[[{{tr|enemies}}]]发射小型紫色粘液球，类似于{{tr|Queen Slime}}的{{tr|Regal Gel projectiles}}。{{tr|Volatile Gelatin}}的{{tr|projectiles}}能最多穿透两个实体或反弹两次，在第三次时消失。{{tr|projectiles}}造成 65 无职业{{tr|damage}}并造成 {{knockback|7|full=y|class=}}的{{tr|knockback}}；这些值不受任何{{tr|boosts}}影响。{{source code ref|v=1.4.4.9|method=Terraria.Player.VolatileGelatin}}{{tr|The Volatile Gelatin}}必定掉落于[[{{tr|Expert Mode}}]]下[[{{tr|Queen Slime}}]]的[[{{tr|Treasure Bag|link=y}}#{{tr|Queen Slime}}|{{tr|Treasure Bag}}]]。
+
+{{tr|The Volatile Gelatin}}具有固定的循环：每 {{duration|40ticks}}（40 {{tr|ticks}}{{tick}}），它会试图向最近的{{tr|enemy}}发射一次{{tr|projectile}}。如果在 40 格内没有{{tr|enemy}}，{{tr|projectile}}不会发射，{{tr|accessory}}会在接下来的 40 {{tr|ticks}}内进入冷却。
+
+== 小贴士 ==
+* 类似于[[{{tr|minions}}]]、{{tr|sentries}}、和[[{{tr|Spore Sac}}]]，{{tr|this accessory}}很适合在[[{{tr|fishing}}]]、采矿、以及其他任何玩家无法集中注意力于战斗的场合使用。{{tr|The Volatile Gelatin}}的{{tr|knockback}}和穿透能力也可以防止玩家在战斗中被大量{{tr|enemies}}淹没，但效果要弱于{{tr|Spore Sac}}。
+* {{tr|Volatile Gelatin}}可用的场合较少，因为其发射{{tr|projectiles}}的频率较低，而大部分{{tr|Expert Hardmode enemies}}有较高{{tr|knockback resistance}}，使得此{{tr|accessory}}相较于更强大的战斗相关或特定职业的{{tr|accessory}}来说很没用。如果仍想要为此{{tr|accessory}}寻找用途，配合{{tr|Hardmode}}早期的{{tr|weapons}}一起使用时它会有些帮助。不过，获得此{{tr|accessory}}时玩家可能已经具有了能够应对{{tr|Hardmode enemies and bosses}} 的强大{{tr|equipment and weapons}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+* {{tr|Projectiles}}现在发射得更远，且曲线更加平缓。
+** 发射频率由每 50 {{tr|ticks}}一次提升至每 40 {{tr|ticks}}一次。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Volatile Gelatin}}

@@ -1,0 +1,54 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4715
+| sounduse = Item 136.wav, Item 138.wav, Item 137.wav, Item 133.wav, Item 134.wav, Item 135.wav
+| listcat = Instruments
+| tags = drop / hardmode / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Stellar Tune (demo).gif|frame|right|{{tr|Stellar Tune}}发射到半空和[[{{tr|Mimics}}]]（追踪）。]]
+
+'''{{tr|Stellar Tune}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|magic weapon}}]]，它发射出成对的星型{{tr|projectile}}，以波浪形的路径向光标移动，且会追踪[[{{tr|enemies}}]]，穿透实心[[{{tr|Block}}]]，并在碰撞后会造成小范围的爆炸。当{{tr|player}}与{{tr|projectile}}击中点之间的视线被阻挡时，星型{{tr|projectile}}的{{tr|damage}}将降低 25%（降低到 {{#expr:floor({{iteminfo|Stellar Tune|damage}}*0.75)}} {{tr|base damage}}）{{source code ref|name=damage|v=1.4.4.9|method=Terraria.Projectile.Damage}} 它会根据{{tr|player}}与光标之间的距离决定演奏哪种和弦（形式类似于[[{{tr|Magical Harp}}]]）。一共有 6 种和弦，每一个和弦的跨度大约是距{{tr|player}} 4 格，最后一种和弦是例外，它会在距离为 21 格或以上的时候被演奏。
+
+{{tr|player}}与光标之间的距离同样控制着{{tr|projectile}}射出的速度。但是，如果{{tr|star projectile}}锁定了{{tr|enemies}}的话，它们将基于与目标的距离自行调整速度。{{tr|The Stellar Tune}}有 {{iteminfo|Stellar Tune|crit}} 基础[[{{tr|critical strike chance}}]] ，不同于通常的 4%。{{tr|The Stellar Tune}}有 {{chance|1/50}} / {{expert|{{chance|1/20}}}} 的概率掉落自[[{{tr|Empress of Light}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The star projectiles}}击中时造成 3 {{tr|ticks}}{{tick}}[[{{tr|local invincibility frame}}]]。<ref name="damage"/>
+* {{tr|The star projectiles}}可瞄准以{{tr|player}}为中心 62.5×50 {{tr|tile}}矩形范围内的任意{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetSparkleGuitarTarget}}
+** 当此{{tr|weapon}}发射时，{{tr|the star projectiles}}会基于目标当前的位置和速度调整它们的落点，尝试预判目标 {{duration|20 ticks}}后的位置。然而，它们在发射后将不会再修正弹道，这会导致在目标高速移动或移动状态突发改变时它们未能命中目标。{{source code ref|name=itemcheckshoot|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot}}
+** 若范围内无有效目标，它们会转而瞄准{{tr|cursor}}，但是在此情况下它们的落点不能距离{{tr|player}}超过 43.75 {{tr|tile}}。<ref name="itemcheckshoot"/>
+* 不论距离，{{tr|The star projectiles}}均需要约莫 {{duration|30 ticks}}以到达它们的落点，且会相应地调整它们的速度。可是，它们还会提前与路径上的其他{{tr|enemy}}碰撞。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_167_SparkleGuitar}}
+* 当{{tr|star projectile}}摧毁时，它的爆炸会对以{{tr|projectile}}为中心的 8×8 {{tr|tile}}方形区域造成{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+
+== 花絮 ==
+* 当{{tr|player}}使用{{tr|Stellar Tune}}时，会做出弹奏的动作。
+* {{transclude|乐器/吉他和弦|nobox=yes}}
+* 虽然反复按下{{Key|use}}键会加速弹奏，但实际发射{{tr|projectile}}的速率会降低。
+* 由于[[{{tr|Empress of Light}}]]掉落的{{tr|weapons}}基于她的{{tr|attacks}}，因此{{tr|Stellar Tune}}可能是基于她的{{tr|Everlasting Rainbow}}设计的。
+* {{tr|Stellar Tune}} (Stellar Tune) 这个名字可能参考了 [http://stellartone.com Stellartone]，一个电吉他和贝斯的调音品牌。
+
+== 另见 ==
+* [[{{tr|Instruments}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Knockback}}由 0 增加到 1.5，允许获得更好的{{tr|modifiers}}。
+** 将吉他的和弦由（由近及远） A小调-G大调-E小调-D大调-C大调-F大调 改为 G大调-A小调-B小调-C大调-D大调-E小调。}}
+{{History|Desktop 1.4.1|{{tr|Damage}}由 75 提升至 85。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Stellar Tune}}

@@ -1,0 +1,86 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4831
+| name = Gem Squirrels
+| image = Gem Squirrels.gif
+| id = 4831–4837
+| cargo = no
+}}
+|{{npc infobox
+| auto = 639
+| name = Gem Squirrels
+| imagealt = [[File:Amethyst Squirrel.gif|link=]] [[File:Topaz Squirrel.gif|link=]] [[File:Sapphire Squirrel.gif|link=]] [[File:Emerald Squirrel.gif|link=]] [[File:Ruby Squirrel.gif|link=]] [[File:Diamond Squirrel.gif|link=]] [[File:Amber Squirrel.gif|link=]]
+| type = Critter
+| environment = Cavern
+| id = 639–645
+| cargo = no
+}}
+}}<!--
+we need these infoboxes for cargo storage
+-->{{npc infobox/options|view=void}}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 639 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 640 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 641 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 642 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 643 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 644 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 645 }}<!--
+-->{{npc infobox/options|reset}}
+
+'''{{tr|Gem Squirrels}}'''是一类无害的[[{{tr|critters}}]]，仅在[[{{tr|cavern}}]]{{tr|layer}}以下的[[{{tr|town}}]]环境中生成，且在[[{{tr|rain}}]]期间有更高的几率生成。{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}
+
+{{critter info|plural=y|nostatue=y
+|cagename=[[{{tr|Cages}}|{{tr|Gem Squirrel Cages}}]]
+}}
+
+== 类型 ==
+{{options/set|item|nolink=y|mode=table}}<!--
+-->{{item infobox/options|view=table|cols=item/makenpcid}}
+{| class="terraria sortable lined align-center"
+! colspan= 2 | {{tr|Gem Squirrel}}
+! [[{{tr|NPC IDs}}]]
+{{item infobox | auto = 4831}}
+{{item infobox | auto = 4832}}
+{{item infobox | auto = 4833}}
+{{item infobox | auto = 4834}}
+{{item infobox | auto = 4835}}
+{{item infobox | auto = 4836}}
+{{item infobox | auto = 4837}}
+|}<!--
+-->{{options/reset|item}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Amber Squirrel/Amethyst Squirrel/Diamond Squirrel/Emerald Squirrel/Ruby Squirrel/Sapphire Squirrel/Topaz Squirrel|expectedrows=14}}
+
+== 备注 ==
+* 虽然{{tr|Gem Squirrels}}代表着不同的{{tr|gem types}}，但它们都会卖出 {{iteminfo|Amethyst Squirrel|sell}} 的价格。
+
+== 小贴士 ==
+* 生成{{tr|Gem Squirrel}}的最好方法是在[[{{tr|cavern}}]]层里建一座[[{{tr|town}}]]。与其他{{tr|critters}}相同，它们在 [[{{tr|NPCs}}]] 身边也会生成得更加频繁。
+
+== 花絮 ==
+{{bestiary|Ruby Squirrel|alias={{tr|Gem Squirrels}}|article=}}
+
+== 另见 ==
+* [[{{tr|Squirrel}}]]
+* [[{{tr|Gem Bunnies}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Gem Critter}}现在有一套基于对应[[{{tr|gem}}]]的{{tr|rarity}}系统。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+[[Category:宝石小动物 NPC]]
+
+{{language info|en=Gem Squirrels}}

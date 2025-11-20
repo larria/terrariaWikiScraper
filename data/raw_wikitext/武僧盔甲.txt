@@ -1,0 +1,74 @@
+{{exclusive|Tavernkeep}}
+{{item infobox
+| type = Armor/Set
+| tag = vendor / vendor:Tavernkeep / hardmode
+}}
+
+'''{{tr|Monk armor}}'''是一套[[{{tr|Hardmode}}]][[{{tr|armor}}]]{{tr|set}}，在击败任何[[{{tr|Mechanical bosses}}|{{tr|mechanical boss}}]] 后以总计 {{setinfo|Squire armor|buy|note=n}} 的价格购买自 [[{{tr|Tavernkeep}}]]。它提供[[{{tr|Summon weapons}}|{{tr|summon}}]]和[[{{tr|Melee weapons}}|{{tr|melee damage}}]]{{tr|bonuses}}。此{{tr|set}}由'''{{tr|Monk's Bushy Brow Bald Cap}}'''、'''{{tr|Monk's Shirt}}'''、和'''{{tr|Monk's Pants}}'''组成。
+
+全套{{tr|Monk armor}}能提供以下属性：
+
+* +46 [[{{tr|defense}}]]
+* +20% [[{{tr|melee damage}}]]
+* +30% [[{{tr|summon damage}}]]
+* +15% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +2 [[{{tr|sentry}}]]栏
+* +20% [[{{tr|melee speed}}]]
+* +20% [[{{tr|movement speed}}]]
+
+此外，穿着全套会提高[[{{tr|Lightning Aura}}]]{{tr|sentry}}的攻击速度，并使得它们能够以 {{chance|1/6}} 的固定几率造成[[{{tr|critical hit}}]]。
+
+[[{{tr|Shinobi Infiltrator armor}}]]可以被视为{{tr|Monk armor}}的直接升级。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 3806
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+|{{item infobox
+| auto = 3807
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+|{{item infobox
+| auto = 3808
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+}}
+{{-}}
+
+== 备注 ==
+* 当搭配[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]并且使用[[{{tr|Morning Star}}]]或[[{{tr|Kaleidoscope}}]]时，{{tr|set bonus}}提供的{{tr|the critical strike chance}}和{{tr|whip}}提供的{{tr|summon tag critical strike chance}}不是直接加算的；它们会被视为两个独立事件。最终的{{tr|critical strike chance}}约为 {{percent|{{#expr:0.12+1/6-0.12/6}}}}（{{tr|Morning Star}}）/ {{percent|{{#expr:0.1+1/6-0.1/6}}}}（{{tr|Kaleidoscope}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* {{tr|The Monk armor}}和[[{{tr|Squire armor}}]]都提供{{tr|melee}}加成。虽然{{tr|the Squire armor}}的{{tr|melee critical strike chance}}加成更高，{{tr|Monk armor}}的{{tr|melee speed}}加成意味着它总体能造成更高伤害（尤其是对于低{{tr|defense}}的{{tr|enemy}}）。对于[[{{tr|whips}}]]更应考虑到这一点，它们能受{{tr|melee speed bonus}}影响，但不受{{tr|melee}}''{{tr|damage}}''{{tr|bonus}}影响。作为补偿，{{tr|The Squire armor}}具有更高的{{tr|defense}}和[[{{tr|health regeneration}}]]。
+* {{tr|The Monk armor}}是一套应对[[{{tr|mechanical bosses}}]]（一旦击败了其中一个后就能获得它）和[[{{tr|Plantera}}]]的强力{{tr|armor}}。其加成比[[{{tr|Hallowed armor}}]]更高，且放置多个[[{{tr|Queen Spider Staff}}|{{tr|Spider Turret}}]]或{{tr|Lightning Aura}}{{tr|sentries}}会让战斗更加简单，尤其是[[{{tr|Plantera}}]]。然而{{tr|Hallowed armor}}的[[{{tr|Holy Protection}}]]能力可能更加适合。
+** {{tr|Lightning Auras}}本身静止的特性使得它对[[{{tr|The Twins}}]]和[[{{tr|Skeletron Prime}}]]不太有效。{{tr|The Queen Spider}}可能会更好，但该{{tr|weapon}}的机动性受限于地面。
+** 使用[[{{tr|Spider armor}}]]时，将[[{{tr|Spider Mask}}]]换为{{tr|Monk's Bushy Brow Bald Cap}}可能会明智一些。这是因为它提供适用于{{tr|whips}}的{{tr|melee speed bonus}}。这可以让它表现上像是[[{{tr|Hardmode}}]]的[[{{tr|Obsidian armor}}]]。
+
+== 另见 ==
+* {{dd2 link|Monk|武僧}}
+* [[{{tr|Monk's Belt}}]]
+* [[{{tr|Squire armor}}]]
+* [[{{tr|Huntress armor}}]]
+* [[{{tr|Apprentice armor}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|summon}}相关{{tr|items}}的{{tr|Tooltips}}现在显示“{{tr|summon damage}}”而非“{{tr|minion damage}}”。
+** 部件价格由 25 降低至 15 {{tr|Defender Medals}}。}}
+{{history|Desktop 1.4.1|{{tr|Monk's Pants}}的{{tr|melee critical chance}}由 10% 提升至 15%。}}
+{{history|Desktop 1.3.4.2|修复了{{tr|Monk's Bushy Brow Bald Cap}}的{{tr|tooltip}}显示“{{tr|attack speed}}”而非“{{tr|melee attack speed}}”的问题。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.3.4.2 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Monk armor}}

@@ -1,0 +1,53 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4914
+| sound1 = Item 153.wav
+| soundcaption1 = 甩鞭
+| listcat = whips
+| tags = drop / hardmode / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Kaleidoscope (demo).gif|frame|right|使用{{tr|Kaleidoscope}}攻击。]]
+
+'''{{tr|Kaleidoscope}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|Whips}}|{{tr|whip}}]]，有 {{chance|1/4}} 几率掉落自[[{{tr|Empress of Light}}]]。
+
+{{whip note|tagdmg=20|tagcrit=10%|penalty=10%}}{{tr|Kaleidoscope}}标记的{{tr|Enemies}}被{{tr|minion or sentry}}击中时还会散发出多种颜色的闪光。
+
+{{modifier|whip}}
+
+== 备注 ==
+* 获得自{{tr|summon weapons}}的[[{{tr|Critical strike chance}}]]加成均为独立计算而不能相互叠加。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}} 此类加成包括[[{{tr|Morning Star}}]]、{{tr|Kaleidoscope}}以及[[{{tr|Monk armor}}]]和[[{{tr|Shinobi Infiltrator armor}}]]的{{tr|set bonuses}}。
+** 例如，使用{{tr|Kaleidoscope}}配合[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]并装备{{tr|Monk armor}}或{{tr|Shinobi Infiltrator armor}}，最终{{tr|critical strike chance}}为 {{percent|{{#expr:0.1+1/6-0.1/6}}}}（{{tr|Monk armor}}）/ {{percent|{{#expr:0.1+1/4-0.1/4}}}}（{{tr|Shinobi Infiltrator armor}}）。
+
+== 小贴士 ==
+* [[{{tr|Morning Star}}]]和{{tr|Kaleidoscope}}拥有使[[{{tr|minion}}]]能造成[[{{tr|critical hit}}]]的独特能力。尽管此加成相对较低，但它仍然能明显地提高伤害，尤其是在拥有大量的{{tr|minion}}时。两把{{tr|whips}}也可以叠加使用来进一步提高{{tr|critical strike chance}}。
+* 由于其高{{tr|base damage}}、攻击范围、标记伤害以及额外的{{tr|summon tag critical strike chance}}，它可以说是游戏中最强的[[{{tr|whip}}]]。
+** 然而，某些情况下[[{{tr|Dark Harvest}}]]的速度加成和{{tr|dark energy}}可能会更好。
+** [[{{tr|Firecracker}}]]对于单个目标也可能表现得更好，尤其是使用[[{{tr|Stardust Dragon}}]]时。
+* {{tr|Kaleidoscope}}的大攻击范围与明亮粒子使其在寻找洞穴或探索{{tr|underground}}时很有用。
+* {{tr|The Kaleidoscope}}和[[{{tr|Blade Staff}}]]搭配良好，因为{{tr|Kaleidoscope}}具有高{{tr|summon tag damage}}。
+
+== 花絮 ==
+* {{维基百科|Kaleidoscope|万花筒}}是一种光学设备，向内看时，其中的反射表面会创造普通、对称，且通常五彩缤纷的漂亮图案。
+* 和许多其它彩虹主题的武器不同，{{tr|Kaleidoscope}}没有为{{tr|developers}}和 Beta 测试者设计的秘密配色。
+* 它是{{tr|Empress of Light}}掉落的武器中唯一不像她的任何一种攻击的武器。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 165 提升至 180。
+** {{tr|Range}}增加。
+** 每次挥舞击中额外目标的伤害惩罚由 15% 降低至 10%。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Whips}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Kaleidoscope}}

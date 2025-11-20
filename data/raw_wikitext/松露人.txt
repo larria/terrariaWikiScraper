@@ -1,0 +1,207 @@
+{{npc infobox
+| auto = 160
+| idprojectile = 590
+| type = NPC
+| environment = Glowing Mushroom biome/Valid house
+| imageother = Map Icon Truffle.png
+| imageothercaption = Map Icon
+| hardmode = yes
+}}
+{{distinguish|{{tr|Truffle Worm}}|{{tr|Shrimpy Truffle}}|{{tr|Scaly Truffle}}}}
+{{quotation|'''{{tr|Truffle}}'''|{{gameText|LegacyDialog.233}}}}
+
+'''{{tr|Truffle}}'''是一个[[{{tr|Hardmode}}]] [[{{tr|NPC}}]] 商贩，他出售各种[[{{tr|Mushrooms|link=y}}|{{tr|mushroom}}]]主题的物品。一旦以下条件全部满足他就会入住：
+* 有一间空闲的[[{{tr|house}}]]。
+* {{tr|Truffle}}将要入住的空闲{{tr|house}}位于''{{tr|surface}}''[[{{tr|Glowing Mushroom biome}}]]中（或附近）（即：高于 0 [[{{tr|Depth Meter}}|高度]]）。{{tr|Surface Glowing Mushroom biomes}}不会天然生成，因此必须手动创建。创建一个{{tr|Glowing Mushroom biome}}需要有 100 格的[[{{tr|Mushroom grass}}]]和[[{{tr|Glowing Mushroom}}]]{{tr|plants}}。{{source code ref|v=1.4.1.2|method=Terraria.WorldGen.CheckSpecialTownNPCSpawningConditions}}
+
+一旦{{tr|Truffle}}已经入住，就可以将其重新分配到任意高度的{{tr|house}}中，只要该{{tr|house}}处于{{tr|Glowing Mushroom biome}}中。若他死亡，他只能在{{tr|surface Glowing Mushroom biome}}中的一间{{tr|house}}再次可用时重生。
+
+在{{eversions|1.3.0.1}}中，当被{{tr|enemies}}威胁时，{{tr|the Truffle}}会释放出[[File:Truffle Spore.gif|10px]]{{tr|Mushroom Spores}}，它们会悬浮于空中并在和{{tr|enemies}}接触时爆炸成{{tr|Spore Clouds}}。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Mushroom Cap}}
+|{{shop row|Strange Glowing Mushroom}}
+|{{shop row|My Son}}
+|{{shop row|Dark Blue Solution}}
+|{{shop row|Mushroom Spear|至少有一个[[{{tr|Mechanical boss}}]] 被打败后。}}
+|{{shop row|Hammush|至少有一个[[{{tr|Mechanical boss}}]] 被打败后。}}
+|{{shop row|Autohammer|[[{{tr|Plantera}}]]被打败后。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== {{tr|Living preferences}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Truffle|male}}
+{{-}}
+
+== 备注 ==
+* 如果有其他 {{tr|NPCs}} 正在等待入住，他们有可能抢在{{tr|Truffle}}之前住进[[{{tr|Glowing Mushroom biome}}]]的家里。如果是想要生成{{tr|the Truffle}}，尽量确保有足够的{{tr|house}}供其他尚未入住的 {{tr|NPCs}} 使用。 
+* {{tr|house}}下方有太多[[{{tr|The Corruption}}|{{tr|Corruption}}]]或[[{{tr|The Crimson}}|{{tr|Crimson}}]]可能会让其变得无效。
+* 要让{{tr|Truffle}}入住，{{tr|house}}必须位于在[[{{tr|Surface}}]]或[[{{tr|Space}}]]{{tr|layers}}的{{tr|Glowing Mushroom biome}}中。
+** 在 {{eil|don't dig up}} 和 {{eil|Get fixed boi}} {{tr|seeds}}中，{{tr|Truffle}}的{{tr|housing}}需求不变，有效的{{tr|house}}必须位于真正的[[{{tr|Surface}}]]或[[{{tr|Space}}]]{{tr|layers}}中，而非[[{{tr|Cavern}}]]{{tr|layer}}中的虚假的“{{tr|surface}}”。
+* 一旦{{tr|The Truffle}}入住，就可以将他分配到另一间{{tr|house}}中，只要新{{tr|house}}也在{{tr|a Glowing Mushroom biome}}中即可。试图将他移动到无效的{{tr|house}}中会收到[[{{tr|status message}}]]''“{{gameText|LegacyInterface.55}}{{tr|Truffle}}”''。
+* 在{{tr|Glowing Mushroom biome}}被摧毁后，{{tr|The Truffle}}依然可以继续留在{{tr|house}}里。可以利用这一点，在所有其他{{tr|Houses}}和 {{tr|NPC}} 附近建立一个{{tr|Glowing Mushroom Biome}}，等他入住，然后摧毁这个{{tr|Glowing Mushroom biome}}，这样就能让所有 {{tr|NPCs}} 在{{tr|Glowing Mushroom biome}}之外待在一起。如果{{tr|Truffle}}死亡，则必须重复这一步骤。
+* {{tr|The Truffle}}是男性，可被[[{{tr|King Statue}}]]传送。
+* 尽管{{tr|Truffle}}需要生活在{{tr|Glowing Mushroom biome}}中，他也可以由于[[{{tr|hybrid biome}}]]的存在而出售其他{{eil|pylons}}。例外情况是{{tr|the Forest}}和{{tr|Cavern pylons}}，它们是互斥的，且仅当不在其他{{tr|biomes}}中时才可用。
+
+== 成就 ==
+{{achievement|name=It Can Talk?!}}
+{{achievement|name=Real Estate Agent}}
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.231}}”
+* “{{gameText|LegacyDialog.233}}”
+* “{{gameText|LegacyDialog.234}}”
+* “{{gameText|LegacyDialog.235}}”
+* “{{gameText|LegacyDialog.240}}” 
+* “{{gameText|LegacyDialog.241}}”
+
+'''[[{{tr|Clothier}}]]存在时：'''
+* “{{gameText|LegacyDialog.236}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|LegacyDialog.232|x_Dryad=&lt;{{tr|Dryad}}的名称&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|TruffleSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|TruffleSpecialText.Windy1}}”
+* “{{gameText|TruffleSpecialText.Windy2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|TruffleSpecialText.Rain1}}”
+* “{{gameText|TruffleSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|TruffleSpecialText.Storm1}}”
+* “{{gameText|TruffleSpecialText.Storm2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|TruffleSpecialText.Graveyard1}}”
+* “{{gameText|TruffleSpecialText.Graveyard2}}”
+
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Truffle.NoHome}}”
+
+'''生活在人烟稀少的地区时：'''
+* “{{gameText|TownNPCMood_Truffle.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Truffle.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Truffle.HateCrowded}}”
+
+'''在{{tr|Mushroom biome}}中时：'''
+* “{{gameText|TownNPCMood_Truffle.LikeBiome|x_BiomeName={{tr|the Glowing Mushrooms}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Truffle.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Guide}}]]时：'''
+
+* “{{gameText|TownNPCMood_Truffle.LoveNPC|x_NPCName=&lt;{{tr|Guide}}的名称&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+
+* “{{gameText|TownNPCMood_Truffle.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名称&gt;}}”
+
+'''靠近[[{{tr|Dryad}}]]时：'''
+
+* “{{gameText|TownNPCMood_Truffle.LikeNPC|x_NPCName=&lt;{{tr|Dryad}}的名称&gt;}}”
+
+'''靠近[[{{tr|Clothier}}]]时：'''
+
+* “{{gameText|TownNPCMood_Truffle.DislikeNPC|x_NPCName=&lt;{{tr|Clothier}}的名称&gt;}}”
+
+'''靠近[[{{tr|Witch Doctor}}]]时：'''
+
+* “{{gameText|TownNPCMood_Truffle.HateNPC|x_NPCName=&lt;{{tr|Doctor}}的名称&gt;}}”
+
+'''中性时：'''
+
+* “{{gameText|TownNPCMood_Truffle.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Truffle}}的眼睛和头顶在黑暗中会发光。
+{{float file box|title={{tr|Truffle}}的各种外观<br/>攻击动作
+|[[File:Truffle (attack).gif]]
+|title2={{tr|Shimmered form}}的攻击动作
+|[[File:Truffle (Shimmered) (attack).gif]]
+|title3=说话动作
+|[[File:Truffle (talk).png]]
+|title4={{tr|Shimmered form}}的说话动作
+|[[File:Truffle (Shimmered) (talk).png]]}}
+* {{tr|The Truffle}}经常被误认为只有一个眼睛，尽管在[[{{tr|It Can Talk?!}}]]和[[{{tr|Real Estate Agent}}]]{{tr|achievement icon}}上他有两个眼睛。
+** 从他的攻击动作中可以看见他的两只眼睛。此时他的双腿变成了菌丝。
+** 在{{tr|Truffle}}说话时还可以看见他的嘴。
+* 几乎所有{{tr|Truffle}}的名称都是蘑菇或毒蕈的种类，或取自其名称的一部分。
+** {{维基百科|Argaric|t=伞菌}}指的是蘑菇的一类子实体，特征为圆形的菌盖、圆柱形的菌柄、以及菌盖下方的菌褶。
+** {{维基百科|Amanita|t=鹅膏菌属}}和 {{维基百科|Amanita muscaria|muscaria}} 指的是毒蝇伞的学名：''Amanita muscaria''，{{tr|Truffle}}的{{tr|Shimmered form}}很像这种蘑菇。
+*** {{tr|The Truffle}}的{{tr|shimmered form}}也可能指向{{tr|surface}}可找到的[[{{tr|Mushroom}}]]。
+** {{维基百科|Chanterelle|t=鸡油菌}}指的是多种可食用的、暖色调的蘑菇，以具有温和的胡椒味为人所知。
+** {{维基百科|Agaricus bisporus|Cremini|t=双胞蘑菇}}是浅褐色、未成熟阶段的 Portobello（大褐菇），在欧亚和北美广泛栽培。
+** {{维基百科|Flammulina filiformis|Enoki|t=金针菇}}是一种瘦小的白色蘑菇品种，源自东亚，在日本和中国料理中被广泛使用。
+** {{维基百科|Grifola frondosa|Maitake|t=灰树花}}是一种在树根处生长的蘑菇品种，源自中国、北美、和欧洲。
+** {{维基百科|Morchella|Morels|t=羊肚菌属}}是可食用真菌的一个属，特征为锥形且似蜂窝状的菌盖。
+** {{维基百科|Boletus edulis|Porcini|t=牛肝菌}}是一种可食用的蘑菇，在整个北半球均有栽培，以其在烹饪中的多用性为人所知。
+** {{维基百科|Lingzhi (mushroom)|Reishi|t=灵芝}}是一种扇形、浅红色的真菌，源自东亚，生长于树的根部。
+** {{维基百科|Shiitake|t=香菇}}是一种浅棕色的蘑菇，源自东亚，但在全球均有栽培和食用。
+** {{维基百科|Shimeji|t=湿地茸}}指的是一类源自东亚的受欢迎的可食用的蘑菇，其中包括了香菇和金针菇。
+* {{eicons|1.4.0.1}}名称 Leinspores 结合了 ''[[Leinfors]]''，Re-logic 的质量保证团队的前成员；以及 ''spore''（孢子），真菌的用于繁殖的器官。
+* {{tr|The Truffle}}的防御武器{{tr|the mushroom spores}}具有所有 {{tr|NPC}} 中最高的{{tr|DPS}}。
+* 他是唯一在走路时左右摆动手臂的 {{tr|NPC}}，而不像其他 {{tr|NPC}} 那样保持手臂弯曲。
+* 他是唯一要求居住特定{{tr|biome}}的 {{tr|NPC}}。
+* 话语“{{gameText|LegacyDialog.231}}”参考了玩家探索{{tr|Glowing Mushroom biomes}}并收集[[{{tr|Glowing Mushroom}}]]。
+* 话语“{{gameText|LegacyDialog.240}}”参考了 1985 年美国冒险喜剧电影{{维基百科|b=y|The Goonies|t=七宝奇谋}}。
+* 话语“{{gameText|LegacyDialog.233}}”参考了将{{维基百科|magic mushrooms|迷幻蘑菇}}作为娱乐性药物使用的事情。
+* 话语“{{gameText|TownNPCMood_Truffle.LikeNPC|x_NPCName=&lt;{{tr|Dryad}}的名称&gt;}}”可能指向了现实中真菌与植物的{{wikipedia|Mutualism (biology)|互利共生（Mutualism）}}关系。
+* 话语“{{gameText|LegacyDialog.236}}”暗示[[{{tr|Clothier}}]]想吃掉{{tr|Truffle}}，“{{gameText|TownNPCMood_Truffle.DislikeNPC|x_NPCName=&lt;{{tr|Clothier}}的名称&gt;}}”进一步支持了这点。
+** 这也提示了{{tr|Truffle}}明白{{tr|Clothier}}此前被[[{{tr|Skeletron}}]]附身了。
+* 从[[{{tr|Strange Glowing Mushroom}}]]和[[{{tr|My Son}}]]可以看出，{{tr|Truffle}}的存在并不是唯一的。
+** {{tr|Truffle}}的对话中也提到过他的家人：“{{gameText|LegacyDialog.235}}”
+*** 这也参考了历史上用猪来定位{{维基百科|truffles|松露}}。
+* [[{{tr|Guide}}]]指引玩家获得{{tr|Truffle}}{{tr|NPC}}的建议“{{gameText|GuideHelpTextSpecific.Help_1108}}”和成就“[[{{tr|It Can Talk?!}}]]”可能暗示{{tr|Truffle}}是在玩家创建的{{tr|surface}}{{tr|Glowing Mushroom biome}}中由普通的[[{{tr|Glowing Mushroom}}]]生长而成的。
+** 这也能解释为什么除{{tr|Dryad}}以外的{{tr|NPC}}都想吃掉{{tr|Truffle}}或拿他来炼药，因为即使他拥有了知觉，他们仍然用看待普通蘑菇的眼光看待他。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在出售一幅新的[[{{tr|painting}}]]。
+** 添加了“Leinspores”作为可能的名称。}}
+{{history|Desktop 1.4.0.5|现在喜欢住在[[{{tr|Glowing Mushroom biome}}|{{tr|Mushroom biome}}]]中而非中立。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|修正了当玩家未达到要求时，{{tr|Truffles}}的售卖列表中会有个空位的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.3|现在要先打败一个{{tr|mechanical boss}} 他才会出售[[{{tr|Mushroom Spear}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.06|现在要先打败一个{{tr|mechanical boss}} 他才会出售{{tr|Mushroom Spear}}。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|现在要先打败一个{{tr|mechanical boss}} 他才会出售{{tr|Mushroom Spear}}。}}
+{{history|Mobile 1.2.7901|修正了一个{{tr|Truffle}}需要花费太长时间才能搬来的 {{tr|bug}}。（{{icon/ios}}）}}
+{{history|Mobile 1.2.7642|修正了一个{{tr|Truffle}}需要花费太长时间才能搬来的 {{tr|bug}}。（{{icon/google}}）}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Truffle}}

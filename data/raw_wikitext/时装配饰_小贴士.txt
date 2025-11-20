@@ -1,0 +1,8 @@
+{{#vardefine:va_flag|{{#ifeq:{{BASEPAGENAME}}|{{tr|Vanity Accessories}}|true}}}}<!--
+
+-->由于{{#if:{{#var:va_flag}}||诸如{{#or:{{#dplvar:_transclude_itemname}}|{{tr|{{BASEPAGENAME}}}}}}}}这样的{{tr|vanity accessories}}无法通过重铸得到除外观外的任何好处，建议将它们装备在{{tr|player}}的[[{{tr|Social Slots}}|{{tr|social accessory slots}}]]中。<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Vanity Accessories/tip}}
+</noinclude>

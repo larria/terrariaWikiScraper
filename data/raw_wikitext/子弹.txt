@@ -1,0 +1,58 @@
+'''{{tr|Bullets}}'''是[[{{tr|ammunition}}]]的一种，由[[{{tr|guns}}]]发射。有很多种能够对[[{{tr|enemies}}]]造成[[{{tr|debuffs}}]]。
+
+== 类型 ==
+{{weapon type count|bullets}}<!-- need first unnamed parameter for transclusion -->
+
+{| class="terraria sortable lined align-center"
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! [[Velocity#extraUpdates|总{{tr|Velocity}}<br/>乘数]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=itemid
+|template=:{{tr|Bullets}}/row
+}}
+|}
+
+== 备注 ==
+* {{eicons|1.4.0.1|invert=y}} {{tr|Cursed Bullets}}只能在有[[{{tr|The Corruption}}]]的世界中得到，因为需要[[{{tr|Cursed Flames}}]]，而[[{{tr|Ichor Bullet}}]]只能在有[[{{tr|The Crimson}}]]的世界中得到，因为需要[[{{tr|Ichor}}]]。{{eicons|1.4.0.1}} 由于[[{{tr|Graveyard}}]]让单个世界中可以同时得到两种{{tr|evil biomes}}，因此情况就不再如此了。
+* [[{{tr|Endless Musket Pouch}}]]充当单个{{tr|Musket Ball}}。但是，它在发射时从不会被消耗掉，因此可以无限使用。
+
+== 小贴士 ==
+
+* [[{{tr|Exploding Bullet}}]]拥有游戏中所有{{tr|bullets}}里最高的[[{{tr|knockback}}]]，平衡了一些高射击速率的{{tr|ranged weapons}}的低击退。其独特之处在于它们是唯一一种能制造范围伤害的{{tr|bullet}}。
+* [[{{tr|Crystal Bullet}}]]通常能在枪上带来最高的{{tr|damage per second}}输出（{{tr|luminite bullets}}除外）并能够和[[{{tr|ichor}}]]有非常好的协作。
+* [[{{tr|Chlorophyte Bullet}}|{{tr|Chlorophyte Bullets}}]]有非常强大的自动制导能力，使得它们用起来极其方便，并且能抵消掉很多枪支（比如[[{{tr|Chain Gun}}]]）的散射。
+* [[{{tr|Musket Ball}}]]/[[{{tr|Endless Musket Pouch}}]]一般而言是极其便宜的{{tr|ammo}}，用于可以将{{tr|musket balls}}变为其他不同{{tr|bullets}}的枪（比如[[{{tr|Sniper Rifle}}]]、[[{{tr|Uzi}}]]）。必须注意，{{tr|the musket balls}}的伤害并不会变为其他{{tr|bullet}}的伤害。
+* [[{{tr|Meteor Shot}}]]可视为{{tr|pre-hardmode}}的终极{{tr|bullets}}，因为它具有穿透一个{{tr|enemy}}的能力。在{{tr|hardmode}}，获得更好的{{tr|hardmode bullets}}之前，它也是非常有用的{{tr|bullet}}。
+* [[{{tr|High Velocity Bullet}}]]：这些{{tr|bullets}}有极高的{{tr|velocity}}，并且能穿透最多两个{{tr|enemies}}，让其对成群{{tr|enemy}}非常有用。
+* [[{{tr|Ichor Bullet}}]]：这些{{tr|bullets}}会造成[[{{tr|ichor}}]]，这是个非常有效的{{tr|debuff}}，可以将{{tr|enemy}}的防御降低 15 点，使得{{tr|this ammunition}}作为随身武器非常有用。
+* 在[[{{tr|Journey Mode}}]]中只需要 99 {{tr|bullets}}来完成[[{{tr|Research}}]]就能无限复制，从而使[[{{tr|Endless Musket Pouch}}]]变得无用，因为它需要用到 3996 {{tr|Musket Balls}}，也只是提供无限{{tr|Musket Balls}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|添加了[[{{tr|Tungsten Bullet}}]]。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Luminite Bullet}}]]和[[{{tr|Endless Musket Pouch}}]]。}}
+{{history|Desktop 1.2.3|调低了[[{{tr|Chlorophyte Bullet}}]]的伤害。修正了一个{{tr|gun}}发射的子弹速度不正确的 {{tr|Bug}}。}}
+{{history|Desktop 1.2|添加了[[{{tr|High Velocity Bullet}}]]、[[{{tr|Party Bullet}}]]、[[{{tr|Nano Bullet}}]]、[[{{tr|Exploding Bullet}}]]、[[{{tr|Golden Bullet}}]]、[[{{tr|Ichor Bullet}}]]、{{tr|Chlorophyte Bullet}}和[[{{tr|Venom Bullet}}]]。}}
+{{history|Desktop 1.1|添加了[[{{tr|Crystal Bullet}}]]和[[{{tr|Cursed Bullet}}]]。}}
+{{history|Desktop 1.0.5|添加了[[{{tr|Silver Bullet}}]]。}}
+{{history|Desktop-Release|引入了[[{{tr|Musket Ball}}]]和[[{{tr|Meteor Shot}}]]。}}
+
+{{Bullets}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+[[Category:子弹| ]]
+[[Category:消耗性物品]]
+
+{{language info|en=Bullets}}

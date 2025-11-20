@@ -1,0 +1,59 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3014
+| debuff = Cursed Inferno / 7
+| debuffchance = 100%
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+[[File:Clinger Staff (demo).gif|frame|{{tr|The Clinger Staff}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Unicorn}}]]。]]
+
+'''{{tr|Clinger Staff}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|magic weapon}}]]，能生成一道 15 {{tr|tiles}}高的[[{{tr|Cursed Flame|link=y}}|{{tr|Cursed Flame}}]]墙，造成伤害并对任何穿过它的[[{{tr|enemy}}]]施加持续 7 {{tr|seconds}}的[[{{tr|Cursed Inferno}}]]{{tr|debuff}}。玩家必须和生成火墙的位置间有清晰视线，否则火墙不会生成，但仍然消耗[[{{tr|mana}}]]。{{tr|The Clinger Staff}}的火墙持续 {{duration|18000ticks}}。同一时间只能存在一道火墙；如果召唤了另一道，前一道火墙就会消失。{{tr|Clinger Staff}}有 {{chance|1/5}} 的概率掉落自[[{{tr|Corrupt Mimic}}]]。
+
+{{modifier|magicsummon}}
+
+== 备注 ==
+* {{tr|The Clinger Staff}}在[[{{tr|platforms}}]]和[[{{tr|blocks}}|{{tr|solid blocks}}]]上都能正常运作。它在被锤击后带有角度的{{tr|block}}和[[{{tr|Planter Boxes}}]]上无法使用。
+* {{tr|Clinger Staff}}对所有[[{{tr|worm enemies}}]]（包括[[{{tr|The Destroyer}}]]）造成的{{tr|damage}}减半（{{#expr:floor({{iteminfo|Clinger Staff|damage}}*0.5)}} {{tr|base damage}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{tr|the Cursed Flame projectile}}的{{tr|damage}}取决于{{tr|Clinger Staff}}被使用时，且直到{{tr|the staff}}再次被使用或墙超过持续时间时都不会改变，即便是{{tr|player}}改变他们的配装或{{tr|buff}}。
+
+== 小贴士 ==
+* 由于其较高的[[{{tr|knockback}}]]，{{tr|the Clinger Staff}}很适合用于使{{tr|enemy}}远离玩家。
+* {{tr|The Clinger Staff}}在杀死[[{{tr|worms}}]]方面很出色（虽然{{tr|damage}}有所降低），因为火墙能同时攻击到{{tr|worm}}的多个{{tr|segments}}。
+* {{tr|the Clinger Staff}}在[[{{tr|Dungeon}}]]很适合用于阻挡{{tr|enemy}}，因为{{tr|Dungeon}}的走廊一般很狭窄。
+* {{tr|the Clinger Staff}}在[[{{tr|Old One's Army}}]]{{tr|event}}期间也很适用，因为其较高的{{tr|knockback}}使得大部分{{tr|enemies}}都无法通过它。
+* 由于{{tr|projectile}}的[[{{tr|critical strike chance}}]]不基于此武器本身的{{tr|critical strike chance}}，而是取决于玩家手持武器，{{tr|the Clinger Staff}}和拥有较高基础{{tr|critical strike chance}}的{{tr|magic weapon}}配合更佳，最值得注意的有{{comma/start}}{{#af_foreach:{{#invoke:CargoQuery|afExport|plainList=name|q?tables=Items|q?fields=name|q?where=damagetype LIKE '%magic%' AND critical>20|q?order by=critical,name}}||itemname|{{comma/item|{{eil|{{{itemname}}}}}}}}}{{comma/end}}。
+** 通过[[{{tr|loadouts}}]]，使得能够在切换回{{tr|player}}常规职业的{{tr|loadout}}之前，先使用一套全部{{tr|reforges}}为[[{{tr|modifiers}}|{{tr|Menacing}}]]的高{{tr|damage}}{{tr|loadout}}专门来生成{{tr|Clinger Staff}}。切换为一套高{{tr|crit}}{{tr|loadout}}将会更进一步地提升{{tr|Clinger Staff}}的{{tr|damage}}。
+* {{tr|Clinger Staff}}可以被看作是[[{{tr|Nimbus Rod}}]]的对应物，因为两把{{tr|weapons}}都可以召唤出能够伤害{{tr|enemies}}的竖直的“{{tr|wall}}”。不过，{{tr|the Clinger Staff}}对于[[{{tr|Skeletron Prime}}]]这样的{{tr|flying bosses}} 不太有效，因为它的{{tr|wall}}在不使用{{tr|platforms}}的情况下受限。
+
+== 花絮 ==
+* 虽然其名称和外观如此，它并不掉落自[[{{tr|Clinger}}]]。
+* {{tr|the Clinger Staff}}在所有{{tr|magic weapon}}中有着单次使用最高的{{tr|mana usage}}。
+* {{tr|the Clinger Staff}}可被认为是来自[[{{tr|Crimson Mimic}}]]的[[{{tr|Life Drain}}]]和来自[[{{tr|Hallowed Mimic}}]]的[[{{tr|Crystal Vile Shard}}]]的[[{{tr|The Corruption}}|{{tr|Corruption}}]]对应物。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Wall}}的{{tr|duration}}提升至 5 分钟。
+** 现在使用静态无敌帧，不再会与不来自于{{tr|Clinger Staff}}的{{tr|damage}}造成的无敌帧相互干扰。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Cursed Flames}}的高度增加了 50%。
+** 不再有命中限制。
+** 现在能造成{{tr|Cursed Inferno debuff}}。
+** 现在能造成{{tr|critical hits}}。
+** 现在对{{tr|worms}}造成的{{tr|damage}}减半。}}
+{{history|Desktop 1.3.2|现在能在{{tr|platforms}}上正常使用。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.1096.2|现在能在{{tr|platforms}}上正常使用。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Clinger Staff}}

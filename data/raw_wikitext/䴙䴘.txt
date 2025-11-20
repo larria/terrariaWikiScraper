@@ -1,0 +1,57 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4374
+}}
+|{{npc infobox
+| auto = 608
+| id = 608 （地面），609（飞行）
+| image = Grebe.gif
+| imageother = Grebe (flying).gif
+| imageothercaption = 飞行状态
+| type = Critter
+| environment = Desert
+| ai = {{tr|Passive AI}} {{note|small=y|paren=y|地面}}<br/>{{tr|Duck AI}} {{note|small=y|paren=y|飞行}}
+| cate = no
+| cargo = no
+}}
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view=void
+| auto = 608
+| type = Critter
+| environment = Desert
+| cate = force
+}}<!--
+-->{{npc infobox | view=void
+| auto = 609
+| image = Grebe (flying).png
+| type = Critter
+| environment = Desert
+| cate = force
+}}
+
+'''{{tr|Grebe}}'''（'''pì tī'''）是一种[[{{tr|critter}}]]，会在[[{{tr|Desert}}]]{{tr|biome}}中的[[{{tr|water}}]]中生成。{{critter info|nostatue=y}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Grebe|expectedrows=2}}
+
+== 备注 ==
+* 它的外观似乎是基于{{wikipedia|black-necked grebe|黑颈䴙䴘}}（Black-Necked Grebe）的长相设计的，后者也被称作有耳䴙䴘。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Grebe}}

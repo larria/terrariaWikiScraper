@@ -1,0 +1,57 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| auto = 624
+| image = Gnome.gif
+| environment = Living Tree
+}}
+[[File:Garden Gnome Conditions.png|thumb|各种不同情况。在情况 1、2 下会产生{{tr|Garden Gnome}}，但在 3、4、5、或 6 下不会。]]
+
+'''{{tr|Gnome}}'''是一种不常见的[[{{tr|pre-Hardmode}}]]的[[{{tr|enemy}}]]，会在[[{{tr|surface}}]]附近生成，最常见于[[{{tr|Living Tree}}]]中。当它在{{tr|day}}位于{{tr|surface}}且其身后没有[[{{tr|Background walls}}]]时，它会被转化为增加周围玩家[[{{tr|Luck}}]]的[[{{tr|Garden Gnome}}]]。
+
+{{Lifeform Analyzer note}}{{tr|The Gnome}}需要 25 次击杀以完成其[[{{tr|Bestiary}}]]条目并获得对应[[{{tr|Banners (enemy)}}#具有非默认击杀数的{{tr|Banners}}|{{tr|banner}}]]，而非通常的 50 次击杀。{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;KillsToBanner}}
+
+== 备注 ==
+* {{tr|Gnomes}}会在临近{{tr|surface}}线（0 英尺）的[[{{tr|Unsafe wall}}|不安全]]的[[{{tr|Dirt Wall}}]]<!-- Wall ID 2 -->、不安全的[[{{tr|Grass Wall}}]]<!-- Wall ID 63 -->、和不安全的[[{{tr|Dirt Walls (natural)}}|{{tr|Underground Dirt Walls}}]]<!-- Wall IDs 196 through 199 -->前方，以及任何高度的不安全[[{{tr|Living Wood Wall}}]]<!-- exact spawn area: between 20% and -10% of the surface area (the area between the surface line and the world top, see [[Space#Notes]]) -->前方生成。如果玩家位于不安全的{{tr|Living Wood Wall}}前方，{{tr|Gnomes}}也会罕见地生成在任何{{tr|wall}}前方；如果同时处于{{tr|night}}，则可以在任何地方生成。{{tr|Gnomes}}在不安全的{{tr|Living Wood Walls}}前方生成时的生成几率显著更高。{{source code ref|name=spawnnpc|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+** 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，与不安全的{{tr|Living Wood Walls}}相关的两种生成情况不会生效，使得不安全的{{tr|Dirt Wall and Grass Walls}}是仅有的生成{{tr|Gnomes}}的方式。{{tr|Gnomes}}在这些{{tr|walls}}前的生成几率相较于普通{{tr|world}}翻倍，且它们只能在{{tr|Glowing Mushroom layer}}以上的[[{{tr|Cavern}}]]{{tr|layer}}生成。
+* 世界中每有一个{{tr|Gnome}}存活，{{tr|Gnome}}的生成几率就会降低 33.33%，当有三个{{tr|Gnomes}}存活时就不可能继续生成。这一降低不适用于在{{tr|Living Wood Walls}}前的生成。<ref name="spawnnpc"/>
+* 除了在{{tr|Living Wood Walls}}前以外，{{tr|Gnomes}}不会在[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]期间生成。<ref name="spawnnpc"/>不过，在{{tr|Solar Eclipse}}期间它们仍然会和正常一样地变为{{tr|Garden Gnome}}。
+* 若玩家位于[[{{tr|Crimson}}]]或[[{{tr|Corruption}}]]{{tr|biomes}}，{{tr|Gnomes}}就无法在不安全的{{tr|Dirt Wall and Grass Walls}}前生成。<ref name="spawnnpc"/>
+* 和大部分其他{{tr|background walls}}不同，{{tr|Gnomes}}可以在[[{{tr|Fence}}]]前变形。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.InAPlaceWithWind}}
+* 当{{tr|Gnomes}}满足转化为{{tr|Garden Gnome}}的条件时，它们会散发出白色的闪烁微粒，但只有存在没有被阻挡的{{tr|block}}时才会转化。{{tr|Gnomes}}在转化为{{tr|Garden Gnome}}时可摧毁[[{{tr|grass}}]]和[[{{tr|ambient objects}}]]，但不能摧毁放置的[[{{tr|furniture}}]]{{tr|items}}。
+** 因此，聚集在一起的{{tr|Gnomes}}若有足够空间便能分别转化。
+* {{tr|Gnomes}}转化为{{tr|Garden Gnomes}}算作玩家杀死它们，且能够给予[[{{tr|Banners (enemy)}}|{{tr|banners}}]]。击杀数会被提供给最近的玩家。
+* 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，{{tr|Gnomes}}会在被带入[[{{tr|the Underworld}}]]上方的{{tr|Glowing Mushroom layer}}或{{tr|the Underworld}}时转化，无论时间和是否在{{tr|background walls}}前方。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Gnomes_ShouldTurnToStone}}
+* 在[[{{tr|Expert Mode}}]]下，{{tr|Gnomes}}拾取的任何[[{{tr|coins}}]]都会在其转化为{{tr|Garden Gnome}}永久丢失。
+
+== 成就 ==
+{{achievement|name=Heliophobia}}
+
+== 小贴士 ==
+* 由于{{tr|Gnomes}}不会掉落{{tr|coins}}和其他物品，杀死它们通常没有好处。应当在{{tr|day}}将它们吸引到{{tr|surface}}来将它们转化为更有用的[[{{tr|Garden Gnome}}]]。
+* {{tr|Gnomes}}在[[{{tr|Living Tree}}]]的根系中常见地生成。不过可能很难从根系中将其引出来，尤其是在游戏早期，它们的高{{tr|knockback}}可能会阻止玩家从{{tr|Living Tree}}的根系爬出到日光下。[[{{tr|Cobalt Shield}}]]或其升级会有所帮助。数排的{{tr|platforms}}（{{tr|Gnomes}}能够跳 6 {{tr|tile}}高）或楼梯也有助于快速逃离。
+* 和其他稀有生物一样，在刷{{tr|Gnomes}}时，[[{{tr|Battle Potion}}]]和[[{{tr|Water Candle}}]]可以用于最大化生成几率。
+** [[{{tr|Lifeform Analyzer}}]]（或其升级）搭配[[{{tr|Hunter Potion}}]]或[[{{tr|Binoculars}}]]对于定位{{tr|Gnomes}}有帮助。
+** [[{{tr|Lava}}]]或[[{{tr|traps}}]]可以用于杀死附近区域的其他生物来降低生成竞争。当然了，这些{{tr|traps}}需要远离可能杀死{{tr|Gnomes}}的地方。
+** 应当移除附近的[[{{tr|Sunflowers}}]]，因为它会降低{{tr|enemy}}生成。
+** 提高玩家的[[{{tr|luck}}]]（如通过[[{{tr|Ladybug}}]]或已经获得的{{tr|Garden Gnomes}}）会提高{{tr|Gnomes}}的生成几率。
+** 由于{{tr|Gnomes}}主要在天然生成的{{tr|walls}}（尤其是{{tr|Living Wood Walls}}）前生成，玩家可以通过移除{{tr|Living Trees}}的{{tr|blocks}}来扩大生成区域。
+** 应当解除[[{{tr|Summon weapons}}|{{tr|Minions}}]]，因为它们可能会快速地杀死范围内的{{tr|Gnome}}。[[{{tr|Thorns Potion}}|{{tr|Thorns}}]]类效果和受伤触发的物品（如[[{{tr|Honey Comb}}]]）也可能会在无意中杀死{{tr|Gnome}}。
+** 如果玩家距离{{tr|Gnomes}}太远，它们不会移动（也不会逃跑），因此必须距离它足够近才能将其引到日光下。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Gnome}}

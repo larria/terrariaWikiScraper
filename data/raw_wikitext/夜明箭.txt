@@ -1,0 +1,48 @@
+{{exclusive|Luminite Bar}}
+{{item infobox
+| auto = 3568
+| tags = hardmodeonly
+| idprojectile = 639, 640
+}}
+[[File:Luminite Arrow (demo).gif|frame|用[[{{tr|Hallowed Repeater}}]]和[[{{tr|Tsunami}}]]发射{{tr|Luminite Arrows}}。注意尾迹{{tr|projectiles}}的产生基于{{tr|arrows}}的消失：对于提前消失的{{tr|arrows}}（如撞到{{tr|solid blocks}}导致），尾迹会提前产生。]]
+
+'''{{tr|Luminite Arrow}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|arrow}}]]。当一支{{tr|Luminite Arrow}}消失时，在大约 0.5 秒后{{verify|确切时间和源代码参考}}会发射出一个{{tr|Luminite Arrow Trail}}{{tr|projectile}}，该{{tr|projectile}}会复制{{tr|arrow}}的飞行轨迹并造成和{{tr|arrow}}相同的{{tr|base damage}}。{{tr|Luminite Arrow}}及其尾迹会在 {{duration|45 ticks}}或击中{{tr|solid block}}时消失。{{penetrate|auto=639|name={{tr|Luminite Arrow}}及其尾迹|p=4%}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill / Terraria.Projectile.SetDefaults / Terraria.Projectile.Damage}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Luminite Arrow|expectedrows=1}}
+
+== 备注 ==
+* 无论玩家位置或移动，尾迹{{tr|projectiles}}都会从{{tr|arrows}}初始被射出的位置产生。
+* 初始每射出一支{{tr|arrow}}，就会产生一个尾迹{{tr|projectile}}。例如，使用同时发射五支{{tr|arrows}}的[[{{tr|Tsunami}}]]会导致有五个尾迹{{tr|projectile}}产生。
+
+== 小贴士 ==
+* 用尾迹打击移动中的{{tr|enemy}}可能会很困难。{{tr|the arrows}}及其尾迹可以同时击中长而平坦的表面上（如[[{{tr|skybridge}}]]上）的{{tr|Enemies}}。
+* {{tr|Luminite Arrow}}与[[{{tr|Phantasm}}]]的协同作用尤为强大：
+** {{tr|The Phantasm}}可以同时射出四支{{tr|arrows}}（同时产生四个尾迹），同时只消耗{{tr|inventory}}中的一支{{tr|arrow}}。
+** {{tr|The Phantasm}}有 66% 的几率不消耗{{tr|arrows}}。考虑到{{tr|Luminite}}的价值很高，这是很值得的。
+** 一次成功的{{tr|The Phantasm}}攻击，可以对同一个{{tr|enemy}}进行三次打击：首先是初始的射击，然后是{{tr|Phantasm}}的次生{{tr|arrow projectiles}}，最后是{{tr|Luminite Arrows}}的尾迹。
+
+== 花絮 ==
+* 其{{tr|tooltip}}''{{itemTooltip|3568}}''（''{{itemTooltip|3568|lang=en}}''）可能参考了 2001 年的平台游戏{{维基百科|b=y|Sonic Adventure 2|t=索尼克大冒险 2}}中的插曲[http://sonic.wikia.com/wiki/Escape_from_the_City 《都市逃亡》（Escape from the City）]中的一句歌词“以音速四处翻滚”（Rolling around at the speed of sound）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Arrows}}
+{{Master Template Luminite
+| show-luminite = yes
+}}
+{{Master Template Weapons
+| show-ammo = yes
+}}
+
+{{language info|en=Luminite Arrow}}

@@ -1,0 +1,74 @@
+{{item infobox|boxwidth=22em
+| type = Furniture/light source
+| width = 1 | height = 1
+| debuff = Water Candle / 范围内无限
+| auto = 148
+| tags = plunder 
+}}
+{{for|{{tr|candles}}的完整列表|{{tr|Candle}}}}
+
+'''{{tr|Water Candle}}'''是一种[[{{tr|furniture}}]]{{tr|item}}，可在放置和手持时提高范围内[[{{tr|enemy}}]]和[[{{tr|critter}}]]的[[{{tr|spawn rate}}]]，并且会发出少量的光。放置后，它会给予附近的玩家'''{{tr|Water Candle}}'''[[{{tr|debuff}}]]。手持{{tr|Water Candle}}不会显示其{{tr|debuff icon}}，但仍然会产生相同的效果。通常能在[[{{tr|Dungeon}}]]的架子上找到多个{{tr|Water Candles}}。{{eicons|1.3.0.1}} 它们也可以在[[{{tr|Wizard}}]]处购买的[[{{tr|Crystal Ball}}]]旁制作。
+
+{{tr|The Water Candle debuff}}会将所有{{tr|enemy}}和{{tr|critter}}的{{tr|spawn rates}}提高 33%，并且将屏幕上能同时出现的最大{{tr|enemies}}数提高 50%。{{tr|debuff}}会施加于手持或以{{tr|Water Candle}}为中心的{{buff area}}内所有的玩家。{{tr|Water candle}}必须位于{{tr|player}}的[[{{tr|hotbar}}]]中且选中才被视为“手持”状态，仅仅位于{{tr|inventory}}中是不够的。多个{{tr|Water Candles}}造成的效果不会互相叠加，即使一个放置、一个手持亦是如此。{{tr|Water Candles}}只能放置在[[{{tr|platforms}}]]和[[{{tr|Work Benches}}]]与[[{{tr|Tables}}]]之类的平面[[{{tr|furniture}}]]上。
+
+{{eicons|1.4.0.1}} 可以通过对它点击{{key|open}}或发出[[{{tr|wire}}]]信号来关闭{{tr|Water Candle}}，同理可将其重新开启。关闭状态的{{tr|Water Candles}}不会造成{{tr|Water Candle debuff}}。
+
+{{eicons|1.4.0.1|invert=y}} {{tr|Water Candles}}无法关闭，也不能作为[[{{tr|mechanisms}}]]。
+
+与{{tr|Water Candle}}相反的是[[{{tr|Peace Candle}}]]，它能降低{{tr|enemy}}的{{tr|spawn rate}}。如果{{tr|Water Candle}}和{{tr|Peace Candle}}同时生效，那么它们的效果会相互抵消，导致生物的{{tr|spawn rate}}不会发生任何变化。与此相反的是，{{tr|Water Candle}}和[[{{tr|Battle Potion}}]]的效果可以相互叠加。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Water Candle|expectedrows=2}}
+
+== {{tr|Notes}} ==
+* {{tr|The Water Candle}}可以放置在[[{{tr|water}}]]下，但在水下时不能手持此物。如果将其在水下放置，它就会发光，但在水下手持则不会。不过无论在水下放置还是手持，它都会提升{{tr|enemy spawn rates}}。
+* {{tr|Water Candles}}不能用于提升某些[[{{tr|event}}]]的{{tr|spawn rates}}，例如[[{{tr|Pumpkin Moon}}|{{tr|Pumpkin}}]]和[[{{tr|Frost Moon}}]]，或[[{{tr|Goblin Invasion}}]]和[[{{tr|Pirate Invasion}}]]，但{{tr|Water Candle}}的效果仍然适用于[[{{tr|Blood Moon}}]]和[[{{tr|Solar Eclipse}}]]。
+* 在[[{{tr|Space}}]]中，{{tr|the Water Candle}}的{{tr|effects}}会更加突出，有效{{tr|spawn rate}}会从 +33% 提高到 +167%。这是唯一一种{{tr|Peace Candle}}不能完全抵消{{tr|the Water Candle}}的情况（只能将其效果降低至{{tr|spawn rate}} +100%。）处于{{tr|Space}}中也可以完全防止{{tr|the Peace Candle}}抵消{{tr|the Water Candle}}对屏幕内同时出现的最大{{tr|enemies}}数量 +50% 的提升。
+
+== 小贴士 ==
+* 将{{tr|Dungeon}}中出现的所有{{tr|Water Candles}}都带走或者关闭可能会有帮助，这么做能降低该区域的{{tr|enemy spawn rates}}。
+* 如果玩家喜欢[[{{tr|fishing}}]]，在城镇周围放置{{tr|Water Candles}}常会有用，因为这会提高诸如[[{{tr|Fireflies}}]]和[[{{tr|Worms}}]]等[[{{tr|critters}}]]的{{tr|spawn rate}}。{{tr|NPC}}的存在依然会防止敌对{{tr|enemies}}生成。
+* 在杀怪刷稀有物品时使用{{tr|Water Candles}}会很有用，因为提升{{tr|spawn rate}}会让更多{{tr|enemies}}生成，以更快得到掉落物。
+
+== {{tr|Trivia}} == 
+* 如果{{tr|Water Candle}}位于玩家的第一个{{tr|hotbar}}栏位，那么在人物选择界面中的人物预览会摆出手持{{tr|Water Candle}}的动作，手臂伸出，但是手中并不会出现{{tr|Water Candle}}。
+* 尽管{{tr|Water Candle}}一般被视为打败[[{{tr|Skeletron}}]]后才能获得的物品，但它仍有概率生成在 0 高度以上的{{tr|Dungeon}}中，从而允许在游戏一开始就能获得。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|
+** 右键点击不再使{{tr|water candle}}掉落，现在必须使用{{tr|a pickaxe}}。
+** 右键点击可以开启/关闭{{tr|water candle}}。
+** 增加了{{tr|effect}}范围。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Rarity}}从{{Tc/rarity|White}}提升到{{Tc/rarity|Blue}}。
+** 添加了{{tr|Crafting recipe}}。
+** 放置和手持{{tr|Water Candle}}的效果不再叠加。}}
+{{history|Desktop 1.2.3.1|修正了地图上会将{{tr|Water Candle}}显示为[[{{tr|Band of Regeneration}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|修正了[[{{tr|Nurse}}]]会收费移除{{tr|Water Candle debuff}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|添加了{{tr|Debuff}}图标。}}
+{{history|Desktop 1.2|放置的{{tr|water candles}}也会提升{{tr|spawn rate}}}}
+{{history|Desktop 1.0.5|手持的{{tr|Candle}}在水下不再发光。}}
+{{history|Desktop 1.0.4|{{tr|Enemy spawn rate}}的提升效果现在手持时也会正确工作。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|（{{icon|xbox one}}）
+** {{tr|Rarity}}从{{Tc/rarity|White}}提升到{{Tc/rarity|Blue}}。
+** 添加了{{tr|Crafting recipe}}。
+** 放置和手持{{tr|Water Candle}}的效果不再叠加。}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Rarity}}从{{Tc/rarity|White}}提升到{{Tc/rarity|Blue}}。
+** 添加了{{tr|Crafting recipe}}。
+** 放置和手持{{tr|Water Candle}}的效果不再叠加。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{Master Template Furniture
+| show-light = yes
+}}
+{{language info|en=Water Candle}}

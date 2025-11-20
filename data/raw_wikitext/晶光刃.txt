@@ -1,0 +1,77 @@
+{{item infobox
+| auto = 3764
+| name = Phasesabers
+| imagealt = [[File:Phasesaber.gif|link=]]
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 41 {{eicons|1.4.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.4|small=y}} / {{ut|25}} {{eicons|1.4.0.1|invert=y|small=y}}
+| idshow = 3764–3769, 4259
+| cargo = no
+}}<!--
+
+store each phasesaber to cargo:
+-->{{item infobox/options|view=void}}<!--
+-->{{item infobox| auto = 3764 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 3765 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 3766 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 3767 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 3768 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 3769 | hardmode = yes<!--pre-hardmode on 3DS--> | listcat = Broadswords }}<!--
+-->{{item infobox| auto = 4259 | listcat = Broadswords }}<!--
+-->{{item infobox/options|reset}}
+{{dablink|不要与用于制作{{tr|Phasesaber}}的、[[{{tr|pre-Hardmode}}]]的[[{{tr|Phaseblades}}]]混淆。}}
+[[File:Phasesaber Color Demonstration.gif|thumb|316x316px|七种{{tr|Phasesaber}}发出的光。]]
+[[File:Blue Phasesaber (demo).gif|frame|{{tr|The Blue Phasesaber}}正在攻击[[{{tr|Target Dummies}}]]。]]
+
+'''{{tr|Phasesaber}}'''是一把{{eicons|1.3.0.1|old-gen=y}} [[{{tr|Hardmode}}]] /{{eicons|1.3.0.1|invert=y|old-gen=n}} [[{{tr|pre-Hardmode}}]]的[[{{tr|broadsword}}]]，它由[[{{tr|pre-Hardmode}}]]的[[{{tr|Phaseblade}}]]直接制作而来。它和{{tr|Phaseblade}}十分相似，除了大约两倍多的伤害，[[{{tr|autoswing}}]]，以及稍有变动的外观。和{{tr|Phaseblade}}一样，它也有{{eicons|Orange Phasesaber}}七/{{eicons|Orange Phasesaber|invert=y}}六种颜色不同但属性完全相同的种类，其颜色取决于制造它所用的{{tr|Phaseblades}}的颜色。所有的{{tr|Phasesaber}}都会在挥舞时发出少量的光芒。
+
+由于[[{{tr|Arch Demon}}]]在{{eversions|Arch Demon|old-gen=n}}会掉落[[{{tr|Crystal Shard}}]]，并且制作它只需要[[{{tr|Pre-Hardmode Anvils}}]]，所以在这些版本中，[[{{tr|pre-hardmode}}]]就可以制作{{tr|Phasesaber}}了。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=LIKE % Phasesaber|expectedrows=13}}
+
+== 小贴士 ==
+* 在 [[PvP]] 中，不同颜色的{{tr|Phaseblade}}可以用于区分不同的队伍。
+
+== 花絮 ==
+* 无论是这把武器的外观还是其使用时的音效都与美国史诗太空歌剧{{wikipedia|Star Wars|《星球大战》}}中的{{wikipedia|lightsaber|能量光剑}}惊人的相似。制造陨石光剑和晶光刃时的宝石和水晶碎块更暗指了制造光剑时所使用的材料，[http://starwars.wikia.com/wiki/Kyber_crystal 凯伯水晶]。
+* {{tr|Phasesabers}}的{{tr|sprites}}明显要比[[{{tr|Phaseblades}}]]亮。
+* {{icon/desktop}}为了修复一个关于一旦{{tr|Phasesabers}}被放置在[[{{tr|Weapon Rack}}]]上就无法被敲下的问题，开发人员把{{tr|Phasesabers}}重新制作成六件新物品（{{tr|ID}} 从 3764 到 3769），这些物品应当不会受到 {{tr|bug}} 影响。因此那些具有负 ID（ID 从 -19 到 -24）的“旧”{{tr|Phasesabers}}无法被获得；玩家会直接获得新的{{tr|item}}。这很可能是这次修复不具有追溯力的原因。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.4.4|
+** 伤害由 42 提升至 48。
+** {{tr|Use time}}由 20 降低至 16。
+** 现在只需要 25 个{{tr|Crystal Shards}}来制作而非 50 个。}}
+{{history|Desktop 1.4.1|{{tr|Orange Phasesaber}}{{tr|sprite updated}}。旧{{tr|sprite}}为：[[File:Orange Phasesaber (old).png]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Orange Phasesaber}}。
+** 伤害由 41 提升至 42。
+** {{tr|Use time}}由 25 降低至 20。}}
+{{history|Desktop 1.3.2|
+** 修复了如果将{{tr|Phasesabers}}放入[[{{tr|Weapon Rack}}]]中，会使{{tr|Weapon Racks}}无法被破坏的问题（此次修复不具有追溯力：{{tr|world}}中已存在的问题不会被修复）。
+** {{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|现在需要在[[{{tr|Hardmode Anvil}}]]上制作。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Sprite updated.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在需要在[[{{tr|Hardmode Anvil}}]]上制作。
+** {{tr|Sprite updated}}为与{{tr|Desktop 1.3.2}} 一致。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Sprite updated.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 现在需要在{{tr|Hardmode Anvil}}上制作，这使其变成了{{tr|Hardmode item}}。}}
+{{history|Mobile-Release|{{tr|Introduced}}，只需要{{tr|pre-Hardmode Anvil}}即可制作。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Gems}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Phasesabers}}

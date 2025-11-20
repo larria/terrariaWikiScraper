@@ -1,0 +1,48 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4952
+| tags = drop / treasure bag loot / hardmode
+| sound1 = Item 10.wav
+| soundcaption1 = 碰撞
+}}
+{{drop infobox|style=clear:right}}
+[[File:Nightglow (demo).gif|frame|{{tr|Nightglow}}攻击[[{{tr|Mimics}}]]。]]
+{{distinguish|Moonglow}}
+
+'''{{tr|Nightglow}}'''是一件[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|Magic weapons}}]]，会从{{tr|player}}处发射四个彩虹色{{tr|projectile}}，追踪附近的[[{{tr|enemies}}]]。每个{{tr|projectiles}}都能在实心[[{{tr|blocks}}]]上反弹，且可以穿透两次，在第三次击中时消失，但是其每击中一个{{tr|enemy}}，就会损失 20% 的{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults/Terraria.Projectile.Damage}}{{tr|Nightglow}}有 {{chance|1/4}} 的几率掉落自[[{{tr|Empress of Light}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The projectile}}击中时造成 30 {{tr|ticks}}{{tick}}的[[{{tr|local invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The projectiles}}可追踪半径 50 {{tr|tiles}}内的{{tr|enemies}}。{{source code ref|name=rainbowstreak|v=1.4.4.9|method=Terraria.Projectile.AI_171_HallowBossRainbowStreak}}
+* 在发射后，{{tr|projectile}}开始追踪{{tr|enemy}}前有 0.5 {{tr|second}}的延迟。
+** 在此延迟时间结束后，{{tr|projectile}}具有 1.5 {{tr|second}}的持续时间，若无追踪目标时，持续时间的消耗速度是原本的两倍。<ref name="rainbowstreak"/>这意味着{{tr|projectile}}在附近无目标时算上延迟总计可存在 1.25 {{tr|seconds}}，而若其立即找到目标，则会存在 2 {{tr|seconds}}。
+* 选中此{{tr|weapon}}后，{{tr|player}}会可见地手持{{tr|weapon}}并提供光照。
+
+== 花絮 ==
+* 由于[[{{tr|Empress of Light}}]]掉落的{{tr|weapon}}是基于其{{tr|attacks}}的，{{tr|the Nightglow}}似乎是源于她的{{tr|Prismatic Bolts}}。
+* {{tr|Nightglow}}在电子游戏{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|crossover}}的一部分出现。
+* {{empress weapon tester colors}}
+* 现实生活中，{{维基百科|nightglow|t=夜光}}（或气辉，airglow）是地球大气层发出的微弱光线，导致夜空永远不会完全黑暗。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在没有跟踪目标的{{tr|Projectiles}}在消失前会停留大约 50% 的时间。
+** 当{{tr|Projectiles}}开始追踪目标时会重置它们的{{tr|duration}}。}}
+{{history|Desktop 1.4.1|
+** {{tr|Mana cost}}由 26 降低至 23。
+** 生成的{{tr|Projectiles}}现在在碰到{{tr|blocks}}时会反弹，而不再是直接破裂。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Nightglow}}

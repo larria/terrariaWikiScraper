@@ -1,0 +1,56 @@
+{{item infobox
+| type = Potion
+| auto = 2355
+| listcat = quest rewards
+}}
+
+'''{{tr|Sonar Potion}}'''是一种[[{{tr|buff potion}}]]，使用后会给予'''{{tr|Sonar}}'''[[{{tr|buff}}]]。{{potionlength}}
+
+{{tr|The Sonar Potion}}可以通过{{tr|crafting}}获得，或在完成{{tr|fishing quests}}后由[[{{tr|Angler}}]]奖励。
+
+在[[{{tr|fishing}}]]时，{{tr|The Sonar buff}}会在咬钩时在[[{{tr|fishing poles}}|{{tr|fishing pole}}]]的{{tr|bobber}}上方显示{{tr|fishing catch}}的名称。除了显示常规的{{tr|item}}名称文本（带有[[{{tr|rarity}}]]颜色），{{tr|the Sonar Potion}}还会在显示的文本上方添加一层半透明的颜色蒙版。 
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sonar Potion|expectedrows=1}}
+
+== 备注 ==
+{| class="terraria lined"
+|+ {{tr|Sonar Potion}}文本颜色
+! 类型
+! 基本颜色
+! 蒙版{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawItemTextPopups}}
+! 描述
+|-
+! {{tr|Item}}
+| 物品的[[{{tr|Rarity}}]]颜色
+| {{color box|rgb(0,0,102)|text=y|textformat=rgb}}
+| 适用于所有物品（如[[{{tr|fish}}]]、[[{{tr|crates}}]]，等等）
+|-
+! 实体
+| {{color box|rgb(237,137,157)|text=y|textformat=rgb}}{{source code ref|v=1.4.4.9|method=Terraria.PopupText.NewText}}
+| {{color box|rgb(102,0,0)|text=y|textformat=rgb}}
+| 适用于[[{{tr|Blood Moon}}]]{{tr|enemies}}和[[{{tr|Surly Slime}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.FishingCheck}}
+|}
+* 在捕获[[{{tr|Duke Fishron}}]]时，{{tr|The Sonar Potion}}不显示任何文本。
+* 如果在[[{{tr|Settings}}|{{tr|game settings}}]]中禁用了拾取文本，{{tr|the Sonar Potion}}不会显示任何文本。
+
+== 小贴士 ==
+* {{tr|The Sonar Potion}}特别有用，它让玩家可以选择钓上的东西，且不在不必要的{{tr|fish}}上浪费[[{{tr|bait}}]]，因为可以将钓线留在水里直到有另一条鱼咬钩。这对于[[{{tr|Angler}}/{{tr|Quests}}|{{tr|angler quests}}]]和钓[[{{tr|crate}}]]很有用。 
+
+== 花絮 ==
+* {{tr|The Sonar Potion}}和[[{{tr|Gills potion}}]]有着一样的{{tr|crafting recipe}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|修正了开启拾取文本时，用{{tr|the Sonar Potion}}[[{{tr|fishing}}]]会删除捕到的物品的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Sonar Potion}}

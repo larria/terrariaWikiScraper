@@ -1,0 +1,58 @@
+{{item infobox
+| type = Furniture/Storage
+| width = 2| height = 2
+| auto = 1142
+| tags = plunder
+}}
+
+'''{{tr|Lihzahrd Chests}}'''是出现在[[{{tr|Jungle Temple}}]]中的[[{{tr|chests}}]]。每个{{tr|Lihzahrd Chests}}中都会包含一个[[{{tr|Lihzahrd Power Cell}}]]，并可能包含一件[[{{tr|Lihzahrd Furnace}}]]、一些[[{{tr|Solar Tablet Fragment}}]]、并有时会有一块[[{{tr|Solar Tablet}}]]。它们也会包含其他典型的[[{{tr|Gold Chest}}]]{{tr|loot}}。
+
+== 拾取物 ==
+{{flexstart}}
+{{loot|title={{tr|Items}}
+|:group:start|1|
+  | Lihzahrd Power Cell|1|1/1
+|:group:end||
+|:group:start|1|1/1
+  | Lihzahrd Furnace||
+|:group:end||
+|:group:start||
+  | Solar Tablet Fragment|3-7|4/5
+  | Solar Tablet|1|1/5
+|:group:end||
+}}
+{{flexend}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Lihzahrd Chest|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Lihzahrd Chest|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|Map size}}|{{tr|Small world}}]]含有 6–13 个{{tr|Lihzahrd Chests}}，{{tr|a Medium world}}含有 9-20 个{{tr|Lihzahrd Chests}}，{{tr|a Large World}}含有 12–26 个{{tr|Lihzahrd Chests}}。{{source code ref|v=1.3.5.3|method=Terraria.WorldGen.templePart2}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.1|现在可制作。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Trapped Lihzahrd Chest}}]]。}}
+{{history|Desktop 1.3.0.1|现在在{{tr|Jungle Temple}}中生成时可能包含{{tr|Solar Tablets}}或{{tr|Solar Tablet Fragments}}。}}
+{{history|Desktop 1.2.3|现在可重命名。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在在{{tr|Jungle Temple}}中生成时可能包含{{tr|Solar Tablets}}或{{tr|Solar Tablet Fragments}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|现在在{{tr|Jungle Temple}}中生成时可能包含{{tr|Solar Tablets}}或{{tr|Solar Tablet Fragments}}。（{{icon/ps4}}）}}
+{{history|Console 1.06|现在可重命名。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Lihzahrd Chest}}

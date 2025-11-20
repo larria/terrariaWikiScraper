@@ -1,0 +1,161 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Armor/Set
+| hardmode = yes
+| idprojectile = 298, 356
+}}
+{{distinguish|Spectral armor}}
+{{float file box|width=320px
+|使用{{tr|Spectre armor}}搭配[[{{tr|Diamond Staff}}]]和[[{{tr|Unholy Trident}}]]攻击[[{{tr|Skeleton}}]]。
+|{{inline block|style=line-height:unset|[[File:Spectre Mask (demo).gif|thumb|300px]]<br/>使用{{tr|Spectre Mask}}}}
+|{{inline block|style=line-height:unset|[[File:Spectre Hood (demo).gif|thumb|300px]]<br/>使用{{tr|Spectre Hood}}}}
+}}
+
+'''{{tr|Spectre armor}}'''是一套[[{{tr|Hardmode}}]]的[[{{tr|Plantera}}]]后的[[{{tr|magic}}]][[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Spectre Robe}}'''、'''{{tr|Spectre Pants}}'''，以及两件不同的头部部件：'''{{tr|Spectre Hood}}'''和'''{{tr|Spectre Mask}}'''组成，分别提供攻击性和防御性的{{tr|bonuses}}。制作包含一个头部件的全套{{tr|set}}共需要 54 个[[{{tr|Spectre Bar}}]]（27 个[[{{tr|Ectoplasm}}]]和 270 个[[{{tr|Chlorophyte Ore}}]]）。制作所有四个部件共需要 66 个{{tr|Spectre Bars}}（33 个{{tr|Ectoplasm}}和 330 个{{tr|Chlorophyte Ore}}）。
+
+装备全套{{tr|set}}时提供下列效果：
+<tabber>
+|-|使用{{tr|Mask}}=
+* +42 [[{{tr|defense}}]]
+* +25% [[{{tr|magic damage}}]]
+* +17% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* +60 最大[[{{tr|mana}}]]
+* +13% {{tr|mana cost}}减免
+* +8% [[{{tr|movement speed}}]]
+* 对{{tr|enemy}}造成{{tr|magic damage}}时生成{{tr|Homing}}的球体{{tr|projectiles}}。球体造成 100% {{tr|weapon damage}}且能造成{{tr|critical hits}}。
+|-|使用{{tr|Hood}}=
+* +30 [[{{tr|defense}}]]
+* -25% [[{{tr|magic damage}}]]
+* +7% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* +8% [[{{tr|movement speed}}]]
+* 对{{tr|enemy}}造成{{tr|magic damage}}时生成[[{{tr|Lifesteal}}]]球体。球体会飞向玩家并恢复等同于造成伤害的 20% 的{{tr|health}}（例：50 {{tr|magic damage}}会恢复 10 {{tr|health}}）。在[[{{tr|multiplayer}}]]下，会治疗（同一）[[{{tr|team}}]]中{{tr|health}}最低的玩家。
+</tabber>
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 1504
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 1505
+| hardmode = yes
+}}
+}}
+{{-}}
+
+=== {{tr|Helmet}}种类 ===
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 2189
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 1503
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=Spectre Mask/Spectre Hood/Spectre Robe/Spectre Pants|expectedrows=4}}
+
+== 备注 ==
+* 两种{{tr|set bonuses}}都拥有效率限制。它们均被相关的数值型属性限制，且有上限，每秒会以固定值重新充能，并在造成{{tr|set bonus}}后降低一定的量{{source code ref|v=1.4.4.9|method=Terraria.Player.Update/Terraria.Projectile.ghostHeal/Terraria.Projectile.ghostHurt}}：
+** {{tr|The Spectre Hood}}的治疗是[[{{tr|lifesteal}}]]效果，受到称为 <code>lifeSteal</code> 的属性的限制。其重新充能速度和最大值显示在下表中。当{{tr|projectile}}造成伤害时，游戏会计算出它能恢复的{{tr|health}}的值，每有一点{{tr|health}}恢复，<code>lifeSteal</code> 就会降低 1。这意味着在持续战斗中，每秒恢复的{{tr|health}}量等同于重新充能速度，而最初的治疗峰值受到最大值的限制。
+::{| class="terraria lined"
+! <code>lifeSteal</code>
+! colspan=2 | 值
+|-
+! 重新充能速度
+| align=center | 36 / {{expert|30}}
+|-
+! 最大值
+| align=center | 80 / {{expert|70}}
+|}
+::* 治疗球恢复的{{tr|health}}和其源{{tr|projectile}}的{{tr|damage}}和该{{tr|projectile}}击中的目标数量相关，可以通过下方公式计算：
+:::* <code>''恢复的{{tr|Health}}'' = ''{{tr|projectile}}伤害'' × [0.2 - 0.05 × ''击中数''<ref>第一次击中时起始为 0，每额外击中一个目标就增加 1</ref>)] </code>
+::* 注意在穿着带{{tr|Spectre Hood}}的{{tr|Spectre armor}}时，所有造成伤害的{{tr|projectiles}}都会降低 <code>lifeSteal</code>，而只有造成{{tr|magic}}伤害的{{tr|projectile}}会生成治疗球。
+:* {{tr|The Spectre Mask}}的伤害球受到称为 <code>ghostDmg</code> 的属性的限制。其重新充能速度和最大值显示在下表中。每造成一点{{tr|magic damage}}，<code>ghostDmg</code> 就会降低 1。这意味着在持续战斗中，伤害球带来的额外 {{DPS}} 受到重新充能速度的限制，而最初的伤害峰值受到最大值的限制。
+::{| class="terraria lined"
+! <code>ghostDmg</code>
+! colspan=2 | 值
+|-
+! 重新充能速度
+| align=center | 400
+|-
+! 最大值
+| align=center | 1500
+|}
+* 如果装备{{tr|Spectre Mask}}时攻击造成的伤害少于 2，就不会出现伤害球。如果装备{{tr|Spectre Hood}}时攻击造成的伤害少于 5，就不会出现治疗球。
+* 穿着带任一{{tr|helmet}}的全套{{tr|set}}会让玩家变得半透明。
+** [[{{tr|dye}}]]在全套{{tr|Spectre armor}}上的可见性不如其他{{tr|armor set}}。
+* 由于{{tr|Spectre armor}}的其余部分总共增加了 15% 的伤害，所以穿着{{tr|Spectre Hood}}的总效果只是减少了 25% 的{{tr|magic}}伤害。
+
+== 小贴士 ==
+* 使用这套{{tr|armor}}最有效的方法之一是同时拥有{{tr|Spectre Hood}}和{{tr|Spectre Mask}}，并根据情况切换它们。这样玩家将既能保持自己存活又能持续造成高伤害。
+* {{tr|Spectre Mask}}的伤害球的平均 {{DPS}} 不能通过{{tr|damage bonuses}}提高到上限以上，但可以通过{{tr|critical strike chance bonuses}}来提高。因此，提高{{tr|critical strike chance}}的{{tr|accessory}}配置会比通常更强，具有更高{{tr|critical strike chance}}的{{tr|weapons}}（如[[{{tr|Stellar Tune}}]]和[[{{tr|Staff of Earth}}]]）可以提高{{tr|set bonus}}的效力。
+* 由于伤害球的基础 {{DPS}} 本质上是一个固定值（最高 400 {{DPS}}），{{tr|Spectre Mask set}}很适合防御性的法师，因为使用{{tr|Warding modifiers}}而非{{tr|Menacing}}/{{tr|Lucky}}所带来的伤害损失不会影响{{tr|set bonus}}造成的伤害。使用防御性的{{tr|accessories}}也能很好地搭配{{tr|Spectre Hood set}}，后者的效果也是防御性的。
+* 使用{{tr|Spectre Hood}}的{{tr|Spectre armor}}常常被认为在对战{{eil|Moon Lord}}时没什么用，后者的[[{{tr|Moon Bite}}]][[{{tr|debuff}}]]会禁用{{tr|lifesteal}}效果（除非玩家移动得足够远使得舌头无法拴住玩家；不过这类策略通常是无效的，因为{{tr|Moon Lord}}可以在玩家离他太远时传送到玩家身边）。
+* 可以通过单次造成极高的伤害的方式（如用[[{{tr|Nebula Blaze}}]]）来超出{{tr|lifesteal}}上限。在与{{tr|Moon Lord}}战斗时这会很有用，可以在{{tr|Moon Bite}}结束且未被重新施加前将恢复的{{tr|health}}最大化。
+* [[{{tr|Mana Sickness}}]]和{{tr|Spectre Hood}}的伤害降低效果叠加后会使许多{{tr|magic weapon}}变得太弱而无法发挥作用，因此玩家应该使用其他恢复{{tr|mana}}的方法。
+* [[{{tr|Magic Cuffs}}]]或[[{{tr|Celestial Cuffs}}]]与{{tr|Spectre Hood}}配合良好，因为它们可以通过受伤获益。使用[[{{tr|Razorpine}}]]等高伤害{{tr|weapon}}，可以将{{tr|health and mana}}保持在舒适的水平。
+
+== 花絮 ==
+* {{tr|The Spectre Hood}}的属性降低是间接造成的（通过{{tr|set bonus}}）。
+* ''{{wiktionary|spectre|Spectre}}''（幽灵）是 ''ghost''（鬼）或 ''spirit''（鬼魂）的另一种说法，暗指制作{{tr|armor set}}所需的[[{{tr|Ectoplasm}}]]是由[[{{tr|Dungeon Spirit}}]]掉落。
+** 虽然 [[{{tr|Re-Logic}}]] 位于美国，但 ''spectre'' 是该词的{{维基百科|British English|英式}}拼写，其{{维基百科|American English|美式}}拼写为 ''specter''。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Spectre Hood}}对{{tr|team}}成员的{{tr|healing range}}从 1200 提升至 3000。此外，该区域现在是圆形而非菱形，这进一步增加了其范围。}}
+{{history|Desktop 1.4.1|
+** {{tr|Spectre Hood}}的伤害降低效果移至其{{tr|set bonus}}中。
+** {{tr|Spectre Mask}}的{{tr|magic damage}}/{{tr|critical chance bonus}}由 5% 提升至 10%，套装加成一次可以造成的爆发伤害的限制由 1000 提升至 1500，并且随着时间的推移产生的{{tr|projectiles}}恢复率由 250 提升至 400。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Spectre Mask}}生成的{{tr|projectile}}现在造成 100% 的原始伤害。
+** {{tr|Spectre Mask}}随时间产生的{{tr|projectile}}恢复率由 150 提升至 250。}}
+{{history|Desktop 1.3.0.3|使用{{tr|Spectre Hood}}的{{tr|Spectre armor}}在玩家受到[[{{tr|Moon Bite}}]]{{tr|debuff}}影响时不再会治疗玩家。}}
+{{history|Desktop 1.3.0.1|现在需要{{tr|Spectre Bars}}而不是{{tr|Ectoplasm}}加{{tr|Chlorophyte Bars}}来制作。}}
+{{history|Desktop 1.2.3.1|{{tr|Spectre Hood}}不再提高{{tr|mana usage}}。}}
+{{history|Desktop 1.2.3|
+** {{tr|Spectre Mask}}{{tr|Introduced.}}
+** {{tr|Spectre Hood}}不再会将{{tr|maximum mana}}提升 80 并将{{tr|mana usage}}降低 17%。取而代之的是，它现在会降低 40% {{tr|magic damage}}并提高 20% {{tr|mana usage}}。
+** {{tr|Spectre Hood}}的[[{{tr|Lifesteal}}]]比例由 8% 提升至 20%。
+** 增加已有的{{tr|Spectre armor}}部件的{{tr|defense}}：
+*** {{tr|Spectre Hood}}的{{tr|defense}}由 4 提升至 6。
+*** {{tr|Spectre Robe}}的{{tr|defense}}由 12 提升至 14。
+*** {{tr|Spectre Pants}}的{{tr|defense}}由 8 提升至 10。}}
+{{history|Desktop 1.2.2|
+** 治疗被限制为每秒最多 40 {{tr|health}}。
+** {{tr|Flame Traps}}不再能够触发{{tr|set bonus}}。}}
+{{history|Desktop 1.2.1.2|[[{{tr|Frost Staff}}]]现在能够触发{{tr|Spectre armor}}的{{tr|set bonus}}。}}
+{{history|Desktop 1.2.1|
+** {{tr|set bonus}}的{{tr|Lifesteal}}比例由 10% 降低至 8%。
+** {{tr|Chlorophyte Bars}}被增加到制作所需材料中。}}
+{{history|Desktop 1.2.0.3|
+** {{tr|defense}}降低：
+*** {{tr|Spectre Hood}}的{{tr|defense}}由 6 降低至 4。
+*** {{tr|Spectre Robe}}的{{tr|defense}}由 14 降低至 12。
+*** {{tr|Spectre Pants}}的{{tr|defense}}由 11 降低至 8。
+** [[{{tr|Traps}}]]不再触发{{tr|Spectre armor}}。
+** 对于同个{{tr|projectile}}造成的伤害，每次{{tr|Spectre armor}}恢复的{{tr|health}}会逐渐减少。}}
+{{history|Desktop 1.2.0.2|来自[[{{tr|Magical Harp}}]]的{{tr|note}}现在计为{{tr|magic}}并且会触发{{tr|Spectre armor}}的{{tr|set bonus}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.09|修复{{tr|Spectre Mask}}没有{{tr|set bonus}}的问题。}}
+{{history|Console 1.08|添加了{{tr|Spectre Mask}}。}}
+{{history|Console 1.02|{{tr|Introduced Spectre Hood set}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，具有两种{{tr|helmet}}种类。}}
+{{history|Mobile 1.2.11212|添加了{{tr|Spectre Mask}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced Spectre Hood set}}。}}
+{{history|3DS-Release|{{tr|Introduced Spectre Hood set}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spectre}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Spectre armor}}

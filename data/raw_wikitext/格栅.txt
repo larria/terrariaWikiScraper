@@ -1,0 +1,37 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| imageplacedalt = [[File:Grate (placed).png]] [[File:Grate (closed).png]]
+| auto = 4422
+| type = Block / Mechanism
+| idtile = 546, 557
+}}
+
+'''{{tr|Grates}}'''是一种只允许液体通过、会阻挡其他物体的前景{{tr|blocks}}，类似于现实世界中下水井盖的作用。
+
+{{tr|grate}}可通过[[{{tr|wire}}]]切换开启和关闭。开启状态的{{tr|grate}}是透明的，允许光和液体通过。若关闭{{tr|grate}}时恰有液体正在通过，{{tr|grate}}会暂时留存那些液体，直到再度开启或{{tr|player}}手动移走它们（使用比如[[{{tr|Empty Bucket}}]]、[[{{tr|super absorbant sponge}}]]、或[[{{tr|dry bomb}}]]等）。
+
+[[{{tr|Bubble}}]]与{{tr|grate}}的功能正好相反，前者是不会阻挡{{tr|player}}的背景物体，但会阻止液体通过。
+
+尽管{{tr|grate}}只有{{rare|0}}稀有度，它们并不会被[[{{tr|lava}}]]摧毁。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Grate|expectedrows=1}}
+
+== {{tr|Tips}} ==
+* 在没有免疫{{tr|lava}}的手段时，使用{{tr|grate}}可大大减轻采集[[{{tr|Hellstone}}]]的难度——{{tr|Hellstone}}留下的{{tr|lava}}会流过{{tr|grate}}，而它们本身则会被截留在{{tr|grate}}上，{{tr|player}}随后可安全采集。
+
+== {{tr|Trivia}} ==
+* 该{{tr|item}}的工具提示<i>{{#explode:{{itemTooltip|4422}}|<br/>|-1}}</i>（英语："They'rrrre Great!"）是一个对 {{wikipedia|Kellogg's}} 牌{{wikipedia|Frosted Flakes|麦片}}的吉祥物{{wikipedia|Tony the Tiger|东尼虎}}的引用。他经常在该品牌广告中说出这句台词。
+** 这也是因为 "Great" 和{{tr|grate}}的英文 "Grate" 是同音词。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Tiles
+| show-main = yes
+}}
+
+{{language info|en=Grate}}

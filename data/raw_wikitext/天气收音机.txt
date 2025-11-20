@@ -1,0 +1,42 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3037
+| tags = Informational / quest rewards
+}}
+'''{{tr|Weather Radio}}'''是个[[{{tr|Informational accessory}}]]，能显示当前[[{{tr|Surface}}]]的[[{{tr|Rain}}|{{tr|weather}}]]和[[{{tr|Wind}}|风速]]，哪怕玩家正身处[[{{tr|underground}}]]、[[{{tr|Cavern}}]]、或[[{{tr|Underworld}}]][[{{tr|layers}}|层]]。此{{tr|accessory}}有 {{chance|1/30}} {{eicons|1.4.0.1}} {{source code ref|v=1.4.0.5|name=angler| {{code|Terraria.Player.cs}} 中的 {{code|GetAnglerReward()}} 函数。注意真正的掉落率要略低于 1/30，因为在此物品之前要对大量其他物品进行掷骰判定。}}几率作为完成[[{{tr|Angler}}#任务奖励|{{tr|Angler}}]] [[{{tr|NPC}}]] 的[[{{tr|Fishing}}]]任务的奖励得到。
+
+如果在{{tr|inventory}}或任何一个[[{{tr|Storage items}}#{{tr|Portable Storage}}|{{tr|Portable Storages}}]]中已经有{{tr|Weather Radio}}，{{tr|the Angler}}就不会将其作为奖励发给玩家。但是，如果玩家的{{tr|inventories}}中已经有了[[{{tr|Fisherman's Pocket Guide}}]]、{{tr|Weather Radio}}、'''和'''[[{{tr|Sextant}}]]（或者由它们所制作出来的{{tr|accessory}}任意其一：[[{{tr|Fish Finder}}]]、[[{{tr|PDA}}]]、或[[{{tr|Cell Phone}}]]），他就能再重复给玩家{{tr|Weather Radio}}。<ref name="angler"/>
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Weather Radio|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Weather Radio|expectedrows=2}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* 如果正在发生某个[[{{tr|event}}]]，{{tr|Weather Radio}}依然会显示天气。
+* {{tr|Weather Radio}}不会显示[[{{tr|Slime Rain}}]]事件。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 当{{tr|Sandstorm}}激活时，{{tr|Weather Radio}}信息{{tr|accessory}}会显示它。它会在普通天气显示和{{tr|Sandstorm}}显示间切换。
+** 现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Fisherman's Pocket Guide}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Angler quest reward}}几率提升。
+** {{tr|The Angler}}不再会给你重复的{{tr|informational accessories}}，除非你已经全部拥有。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Weather Radio}}

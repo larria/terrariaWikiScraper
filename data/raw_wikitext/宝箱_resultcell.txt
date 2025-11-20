@@ -1,0 +1,7 @@
+<includeonly>@@@@{{item infobox | imageinfo = no | auto = {{{resultid|}}} | type = Furniture / Storage |  width = 2 | height = 2 | tags = Plunder | view = void | cargo = {{#if:{{bool|{{#var:crafted_{{{resultid|}}}}}}}|n}}<!-- do not store to Cargo if a "#var:crafted_<item ID>" variable is set (these Chests either already have Cargo storage on their own pages or they are already stored to Cargo in the "Natural Chests" section --> }}</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Chests/resultcell}}
+</noinclude>

@@ -1,0 +1,231 @@
+<section begin="npc infobox" />{{npc infobox
+| auto = 13 |boxwidth=450px
+| name = Eater of Worlds
+| namesub =
+| image = Eater of Worlds.png
+| type = Boss
+| type2 = Burrowing Enemy
+| environment = The Corruption
+| environment2 = Underground Corruption
+| life = <!--
+	-->{{modes<!--
+		-->|normal={{#expr:floor(67*{{npcinfo|14|hp}})}} {{eicons|1.4.0.1|small=y}}<br/>{{#expr:floor(50*{{npcinfo|14|hp}})}} {{eicons|1.4.0.1|invert=y|small=y}}<!--
+		-->|expert={{#expr:floor(72*{{npcinfo|14|hp|expert}})}}<!--
+		-->|master={{#expr:floor(72*{{npcinfo|14|hp|master}})}}<!--
+	-->}}
+| damage =
+| defense =
+| debuff = Weak
+| debuffmode = expert
+| debuffchance = {{modes|0%|{{chance|1/20}}|{{chance|1/20}}}}
+| debuffduration = {{modes|{{na}}|{{duration|600}}|{{duration|750}}}}
+
+| Shadow Scale|0–134 {{eicons|1.4.0.1}} / 0–100 {{eicons|1.4.0.1|invert=y}}|100% @normal
+| Demonite Ore|20–395 {{eicons|1.4.0.1}} / 20–310 {{eicons|1.4.0.1|invert=y}}|100% @normal
+| Eater's Bone|1|5% @normal
+| Lesser Healing Potion|5–15|100%
+| Eater of Worlds Mask|1|14.29% @normal
+| Eater of Worlds Trophy|1|10%
+| Treasure Bag (Eater of Worlds)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Worm Scarf|1|100% #expert
+  | Eater of Worlds Mask|1|14.29% #expert
+  | Demonite Ore|30–59|100% #expert
+  | Shadow Scale|10–19|100% #expert
+  | Eater's Bone|1|5% #expert
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|3]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Writhing Remains|1|{{master|25%}} @master
+| Eater of Worlds Relic|1|{{master|100%}} @master
+
+| sound1 = Roar 1.wav
+| soundcaption1 = 挖掘
+| imageother = Map Icon Eater of Worlds.png
+| imageothercaption = Map Icon
+| cargo = no | cargodrops = yes
+| shownpcid = no
+}}<section end="npc infobox"/>
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.WORM_FODDER_Description}}|是|1}}}}}}
+
+'''{{tr|Eater of Worlds}}'''是一个[[{{tr|pre-Hardmode}}]]，[[{{tr|Corruption}}]]主题的[[{{tr|Worm AI}}|{{tr|worm}}]] [[{{tr|boss}}]]。可以通过在[[{{tr|The Corruption}}]]/[[{{tr|Underground Corruption}}]]使用[[{{tr|Worm Food}}]]，或者摧毁 3 个生成于{{tr|Corruption worlds}}中的[[{{tr|Shadow Orb}}]]来召唤{{tr|Eater of Worlds}}。它可以在任意时间召唤。
+
+{{tr|Eater of Worlds}}不是单体目标，而是由许多有独立{{tr|health}}的{{tr|segment}}组成。在{{eversions|1.4.0.1|short=y}}中总共有 67 / {{expert|72}} 个{{tr|segment}}，而在{{eversions|1.4.0.1|invert=y|short=y}}中，它总共有 50 个{{tr|segment}}{{source code ref|v=1.4.0.5|name=segcount|method=Terraria.NPC.GetEaterOfWorldsSegmentsCount / Terraria.NPC.AI_006_Worms|t=注意，代码中蠕虫类敌怪的{{tr|segment}}数量指的是''身体''{{tr|segment}}，不包括头尾；因此 65/70 实际为 67/72}}。当任何身体{{tr|segment}}被击杀时，它会分裂成多条更短的{{tr|worm}}，每只都有其头部和尾部。击败所有独立的{{tr|worm}}才算作击败此{{tr|boss}}。和所有{{tr|worm}}一样，{{tr|Eater of Worlds}}免疫[[{{tr|lava}}]]。
+
+与{{tr|Eater of Worlds}}战斗是获得[[{{tr|Shadow Scale}}]]的唯一方式，也是获得大量[[{{tr|Demonite Ore}}]]的方式之一。每个{{tr|segment}}在被击杀时都会掉落少量上述两种物品，击败整个 {{tr|boss}} 后还会额外掉落更多。{{source code ref|v=1.4.0.5|name=eowdrops|method=Terraria.NPC.DropEOWLoot / Terraria.NPC.AI_006_Worms / Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_EOW}}首次击败{{tr|Eater of Worlds}}会允许{{eil|Tavernkeep}} [[{{tr|NPC}}]]（作为{{tr|Unconscious Man}}）生成、{{eicons|1.4.0.2}}并且允许[[{{tr|Meteorite (biome)}}|{{tr|meteorites}}]]坠落。
+
+{{tr|The Eater of Worlds}}是[[{{tr|the Crimson}}]]的[[{{tr|Brain of Cthulhu}}]]的{{tr|Corruption}}[[{{tr|counterpart}}]]。{{tr|the Eater of Worlds}}的[[{{tr|Hardmode}}]][[{{tr|mechanical boss}}]] 对应物是[[{{tr|The Destroyer}}]]。
+
+{{boss music|t={{tr|the Eater of Worlds}}|Boss 1|Boss 1 (Otherworldly)}}
+
+== 体节 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/healthBlock/damageBlock/defenseBlock/drops}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 额外掉落
+{{npc infobox
+| auto = 13
+| type = Boss Part
+| environment = The Corruption
+| Demonite Ore|2–5|50%
+| Shadow Scale|{{modes|1–2|2–3}}|50%
+}}
+{{npc infobox
+| auto = 14
+| type = Boss Part
+| environment = The Corruption
+| Demonite Ore|2–5|50%
+| Shadow Scale|{{modes|1–2|2–3}}|50%
+}}
+{{npc infobox
+| auto = 15
+| type = Boss Part
+| environment = The Corruption
+| Demonite Ore|2–5|50%
+| Shadow Scale|{{modes|1–2|2–3}}|50%
+}}
+|}
+{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+{{-}}
+
+== 备注 ==
+* 如果玩家死亡或离开[[{{tr|The Corruption}}]]，{{tr|Eater of Worlds}}将停止追踪玩家并开始快速向屏幕外移动直到[[{{tr|NPC despawning}}|消失]]。
+** 当玩家在[[{{tr|Crimson}}]]{{tr|biome}}中时，{{tr|Eater of Worlds}}不会消失。
+* 当已有{{tr|Eater of Worlds}}存活时，无法用[[{{tr|Worm Food}}]]召唤另一个，且物品不会被消耗掉。
+** {{eicons|1.4.0.1|invert=y}} 打破三个[[{{tr|Shadow Orb}}]]仍能生成多个{{tr|Eater of Worlds}}。不管多少{{tr|Eater of Worlds}}被召唤，只有在最后一节头部被击杀时才会出现击败信息。
+* 注意，实际上并不非要真正''击败''{{tr|Eater of Worlds}}才能推进进程，因为一定数量的{{tr|segments}}就会掉落所需数量的{{tr|materials}}。
+** {{eicons|1.4.0.2}}不过，打败{{tr|the Eater of Worlds}}是获得[[{{tr|Tavernkeep}}]]和使[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]]坠落的唯一方法。
+* {{tr|Eater of Worlds}}的不同{{tr|segments}}在属性上并不相同：头部{{tr|segment}}比身体或尾部显著地造成更高{{tr|damage}}，但也具有最低的[[{{tr|defense}}]]。
+** 尾部则相反：它具有比身体或头部更高的{{tr|defense}}，而造成的{{tr|damage}}最低。
+* 一节{{tr|segments}}不能单独存活。击杀仅有两个{{tr|segments}}组成的部分的其中一个时，两个{{tr|segment}}都会被击杀，并都将掉落{{tr|loot}}。
+* 当{{tr|Eater of Worlds}}分裂时，新生成的{{tr|worms}}在尝试{{tr|attack}}{{tr|player}}前倾向于向地下撤退。
+* {{tr|Eater of Worlds}}以盘绕状态生成，在{{tr|attack}}{{tr|player}}前会逐渐解旋。此时用穿透性武器攻击它能伤害到其所有{{tr|segment}}，这能在几秒钟内杀死它。
+* [[{{tr|Molotov Cocktail}}]]的火焰{{tr|projectile}}只能对{{tr|Eater of Worlds}}造成 65% {{tr|base damage}}，且这些火焰{{tr|projectile}}能穿透的目标数会减少一个。{{source code ref|v=1.4.4.9|name=pdamage|method=Terraria.Projectile.Damage}}
+
+=== {{eil|Expert Mode}}的变化 ===
+* 在{{tr|Expert Mode}}中，{{tr|Eater of Worlds}}的移动速度加快约 20%。{{source code ref|v=1.4.4.9|name=expertspeed|method=Terraria.NPC.AI_006_Worms}}
+* 它会周期性地从身体{{tr|segments}}发射[[{{tr|Vile Spit}}]]。这些{{tr|Vile Spit}}有 {{chance|1/20}} 几率对玩家造成持续 10 分钟的[[{{tr|Weak}}]][[{{tr|debuff}}]]，但可以被任何{{tr|attack}}或{{tr|projectile}}一击摧毁。
+** 头部{{tr|segments}}在{{tr|health}}较低的时候会更频繁地射击。{{source code ref|v=1.4.4.9|name=spitsource|method=Terraria.NPC.AI_006_Worms|t=头部{{tr|segments}}初始具有每{{tr|tick}}{{tick}}<math>\frac{1}{90+\frac{\text{Current health}}{\text{Max health}}\times300}</math>几率射击。({{tr|health}}满时为 {{chance|1/390}}，随着{{tr|segment}}{{tr|health}}，几率越来越高)身体{{tr|segments}}则是每一{{tr|tick}}有 {{chance|1/900}} 几率射击。}}
+** 身体{{tr|segments}}只在[[{{tr|surface}}]]且没有{{tr|background wall}}时射击。<ref name="spitsource"/>
+* {{tr|Eater of Worlds}}从以下{{tr|projectiles}}和[[{{tr|Explosives (class)}}]]受到的{{tr|damage}}降低 80%：<ref name="pdamage"/>
+{{#arraydefine:explosives|30,397,517,28,37,516,29,470,637,108,281,588,519,773,183,181,566|,}}<!--
+-->{{#vardefine:source_181|[[{{tr|Beenade}}]]}}<!--
+-->{{#vardefine:source_566|[[{{tr|Beenade}}]]}}<!--
+-->{{#vardefine:source_588|[[{{tr|Happy Grenade}}]]}}<!--
+-->{| class="terraria sortable mw-collapsible mw-collapsed" style="min-width:50%;"
+|-
+! colspan=4 | {{tr|Projectiles}}
+|-
+! ID !! {{tr|Projectile}} !! {{tr|Source}}
+{{#arrayprint:explosives|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]] {{projectileinfo|@@@@|name}}</td>
+<td>{{#if:{{#var:source_@@@@}}|{{#var:source_@@@@}}|[[{{projectileinfo|@@@@|name}}]]}}</td>
+</tr>
+}}
+|}
+
+== 成就 ==
+{{achievement|name=Worm Fodder}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Eater of Worlds}}攻略}}
+* 有效武器包括穿透武器或区域伤害{{tr|weapons}}，比如[[{{tr|Vilethorn}}]]、[[{{tr|Water Bolt}}]]（{{eicons|1.4.0.1|invert=y}}）、[[{{tr|Spiky Ball}}]]、{{eil|whips}}；还有快速{{tr|melee weapons}}，比如[[{{tr|Falcon Blade}}]]和{{eil|Terragrim}}。
+** 在[[{{tr|Classic Mode}}]]中，[[{{tr|Grenade}}]]是对付{{tr|Eater of Worlds}}的有效{{tr|weapon}}。但在更高难度下却并非如此，因为这种情况下{{tr|Eater of Worlds}}具有对爆炸物的抗性。
+* 和其他{{tr|worm}}类{{tr|enemy}}一样，一旦{{tr|the Eater of worlds}}的头部经过了某个指定点，所有身体体节都必须跟着经过。这使得玩家可以站在其身体旁边，随着其通过而攻击每一段体节。不过玩家应提防其头部绕回来。
+* 击杀{{tr|Eater of Worlds}}的头部会导致其速度急剧下降，几乎完全停下。
+* 如果可能，试着瞄准每个区段的头部和尾部，因为如果它们先被干掉，{{tr|Eater of Worlds}}就不会分裂。注意其头部更易受到伤害。
+* 如果在{{tr|a chasm}}中战斗，要小心被围住，这可能会迅速导致死亡，特别是在{{tr|Expert mode}}或{{tr|Master Mode}}中。一个快速逃离的方法是在战斗区域中放一张[[{{tr|bed}}]]用来传送（用[[{{tr|Recall Potion}}]]、[[{{tr|Magic Mirror}}]]或[[{{tr|Ice Mirror}}]]）到战斗区域上面。
+** 为了避免这种情况，最好提前在{{tr|the Corruption}}中清出一块区域来。
+* 刷{{tr|Eater of Worlds}}是很有利可图的，是[[{{tr|Hardmode}}]]之前最有效率的{{nslink|Guide|赚钱}}方法之一。
+** 若将[[{{tr|Demonite Ore}}]]转换为[[{{tr|Demonite Bar}}]]并卖掉它的掉落物，击杀一次平均能产出 {{gc|19}}。
+** 如果[[{{tr|Vile Mushroom}}]]不足，可以在[[{{tr|Blood Moon}}]]期间从[[{{tr|Dryad}}]]处购买[[{{tr|Vile Powder}}]]（用于[[{{tr|Worm Food}}]]）。
+* 由于每个{{tr|segment}}在被击杀时都会掉落战利品，它可以作为[[{{tr|Christmas}}]]期间的[[{{tr|Presents}}]]，和[[{{tr|Halloween}}]]期间[[{{tr|Goodie Bag}}]]、[[{{tr|Bloody Machete}}]]和[[{{tr|Bladed Glove}}]]的良好来源。
+* 在[[{{tr|Hardmode}}]]中，它还可以提供其他物品：
+** 它很适合用来刷 {{eicons|Corruption Key Mold|invert=y}} [[{{tr|Corruption Key}}]] / {{eicons|Corruption Key Mold}} [[{{tr|Corruption Key Mold}}]]，因为每个{{tr|segment}}都有几率掉落一个。
+** 在{{tr|Corrupt}}[[{{tr|Snow Biome}}]]中，它会掉落{{eil|Amarok|s}}，每个能以 {{iteminfo|Amarok|sell}} 的基础价值卖出。
+** 在{{tr|Corrupt}}[[{{tr|Ocean}}]]中它会掉落[[{{tr|Pirate Map}}]]。
+* 当玩家离开{{tr|Corruption biome}}时，{{tr|Eater of Worlds}}会开始向地下逃离，但并不会立即消失。玩家可以利用这一机制，通过不断进出{{tr|The Corruption}}并注意[[{{tr|minimap}}]]上 {{tr|boss}} 的图标的方式来让{{tr|Eater of Worlds}}远离玩家而不会消失。
+* {{eicons|1.4.0.1}} 使用[[{{tr|flail}}]]时，按住 {{key|use}} 可阻止任何{{tr|Vile Spit}}击中玩家。此外，[[{{tr|whip}}]]也可以做到类似的效果，因为它在一次挥舞内就能清除大片区域内的{{tr|Vile Spit}}。
+
+== 花絮 ==
+[[File:Terraria Steam Workshop background image.jpg|thumb|600px|right|在 Steam 创意工坊页面上的{{tr|Eater of Worlds}}艺术作品。]]
+
+* {{tr|Eater of Worlds}}和[[{{tr|Skeletron}}]]是仅有的没有属于它们自己的 [[{{tr|AI}}]] 的 [[{{tr|bosses}}]]。
+** {{tr|Skeletron}}仅和[[{{tr|Dungeon Guardian}}]]共用 {{tr|AI}}。
+* 在打破[[{{tr|Shadow Orb}}]]时，在很罕见的场合下{{tr|The Eater of Worlds}}可能会生成在地图边界之外。
+* {{tr|Eater of Worlds}}（Eater of Worlds）有时被简称为“EoW”。在中文社区中，它有时被简称为“世吞”。
+* {{tr|Eater of Worlds}}的身体{{tr|segments}}上有五个眼睛，头部和尾部{{tr|segments}}上分别有三个眼睛，因而它总共有 {{eicons|1.4.0.1|invert=y}} 246 / {{eicons|1.4.0.1}} 331 / {{expert|356}} 个眼睛。
+* {{eicons|1.4.0.1}} {{tr|Eater of Worlds}}大约有 195 / {{expert|209}} 格长。
+* {{tr|Eater of Worlds}}具有所有{{tr|pre-Hardmode bosses}} 中最高的{{tr|health}}。
+* 奇怪的是（但很可能是有意为之的），不需要完全击败{{tr|Eater of Worlds}}就能获得被游戏进程锁定的{{tr|items}}（如[[{{tr|Nightmare Pickaxe}}]]和[[{{tr|Shadow Armor}}]]），因为每个单独的{{tr|segments}}都会掉落[[{{tr|Shadow Scale}}]]。 
+** 由于在{{tr|Classic Mode}}中，{{tr|Eater of Worlds}}除了[[{{tr|masks}}]]、[[{{tr|Trophy}}]]和[[{{tr|Eater's Bone}}]]外没有其他独特的掉落物，这一点对于没有强大到足以击败它，却想要更好的装备的{{tr|player}}是有益的。 
+*** 不过，在{{tr|Expert Mode}}或更高难度中，击败{{tr|Eater of Worlds}}能够获得[[{{tr|Worm Scarf}}]]。 
+** 掉落被游戏进程锁定的{{tr|material}}的能力是与此 {{tr|boss}} 的[[{{tr|the Crimson}}]][[{{tr|counterpart}}]][[{{tr|Brain of Cthulhu}}]]的共有特性。 
+* {{lore|[[{{tr|Destroyer}}]]是克苏鲁的脊柱。尽管{{tr|Destroyer}}和{{tr|Eater of Worlds}}有很多的共同点，{{tr|Eater of Worlds}}与克苏鲁没有联系，也并未提及它是前者身体的一部分，这和其他非机械形态的 {{tr|boss}} 不同。}}<!-- From Redigit on the Terraria Discord while discussing Moon Lord/mech lore: "EoW isn't important "..."It's just a big monster". Other official EoW lore makes no reference to Cthulhu either, despite other relevant bosses having such. -->
+* 据 [[Redigit]] 所说，{{tr|Eater of Worlds}}的名字叫 Edward。<ref>[https://www.reddit.com/r/Terraria/comments/ubz1qq/what_is_this_i_destroyed_a_couple_of_purple/i67s0dz/?context=3 Comment on an r/Terraria post] {{small|{{date|2022|04|26}}}}</ref>
+* [[{{tr|Workshop Hub}}|Steam 创意工坊]]页面显示了具有类似蜈蚣的腿的{{tr|Eater of Worlds}}，而非其通常的类似{{tr|worm}}的描绘样式。
+* 虽然名称叫做“{{tr|Eater of Worlds}}”，但它实际上不会“吃掉”或摧毁任何{{tr|blocks}}。
+* 根据[[{{tr|Angler}}]], {{tr|Eater of Worlds}}被切断的一部分掉落于水中，并让一条{{tr|corrupt fish}}变异从而创造出了[[{{tr|Eater of Plankton}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 对[[{{tr|Expert}}]]和[[{{tr|Master}}]]中[[{{tr|Demonite Ore}}]]和[[{{tr|Shadow Scale}}]]的掉落量做了重新分配。总体来说，由{{tr|segment}}掉落的量减少，而由{{tr|Treasure Bags}}掉落的量增加。
+** 在{{tr|Expert mode}}中，掉落物总量大致被平均分配。50% 的{{tr|Ore}}和{{tr|Shadow Scale}}来自{{tr|segment}}击杀，而另外 50% 来自{{tr|Treasure Bags}}。
+** 在{{tr|Master mode}}中，掉落物总量的分配高度地向{{tr|Treasure Bag}}倾斜，只有 25% 的掉落物来自{{tr|segment}}击杀，而 75% 来自{{tr|Treasure Bags}}。
+** {{tr|Classic mode}}下的{{tr|drop rates}}和分配权重未被改动。}}
+{{history|Desktop 1.4.0.2|现在打败{{tr|Eater of Worlds}}才能让[[{{tr|Meteorite (biome)}}|{{tr|Meteorites}}]]落下，而非打破[[{{tr|Shadow Orb}}]]，另外，打败更多{{tr|Eater of Worlds}}会提高在接下来的夜晚中{{tr|Meteorite}}坠落的几率。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Eater of Worlds Relic}}]]，这是个仅限{{tr|Master Mode}}的[[{{tr|trophy}}]]类{{tr|item}}。
+** 添加了[[{{tr|Writhing Remains}}]]，它是{{tr|Master Mode}}独有的[[{{tr|pet}}]]物品，可以召唤出一只缩小版的{{tr|Eater of Worlds}}。它有 25% 几率在{{tr|Eater of Worlds}}死亡时掉落。
+** 现在有更多{{tr|segments}}，在{{tr|Expert Mode}}还会再多一些。}}
+{{history|Desktop 1.3.5.3|修正了在[[{{tr|multiplayer}}]]中在罕见情况下会消失的问题。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.5|降低了{{tr|Vile Spit}}攻击的伤害。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Expert mode}}中有了新的 {{tr|AI}}，现在会朝玩家发射[[{{tr|Vile Spit}}]]。
+** 现在在{{tr|Expert mode}}中会掉落[[{{tr|Treasure Bag}}]]。}}
+{{history|Desktop 1.2.3|现在有几率掉落[[{{tr|Eater of Worlds Mask}}]]。}}
+{{history|Desktop 1.2.1|现在有几率掉落[[{{tr|Eater's Bone}}]]（而非{{tr|Blend-O-Matic}}），因为其掉落率已被修复。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落[[{{tr|Blend-O-Matic}}]]，但这是一个 {{tr|bug}}，本应掉落{{tr|Eater's Bone}}。}}
+{{history|Desktop 1.2|现在有几率掉落[[{{tr|Eater of Worlds Trophy}}]]。}}
+{{history|Desktop 1.1.2|{{tr|Eater of Worlds}}现在可在第三个{{tr|Shadow Orb}}在{{tr|the Hallow}}内被破坏时生成，但依然会因为不在{{tr|the Corruption}}中而逃离。}}
+{{history|Desktop 1.0.6|
+** 当它逃走时不再会被（视作）击败。
+** 头部的{{tr|health}}由 80 降低至 65，{{tr|damage}}由 43 降低至 22。
+** 身体的{{tr|health}}由 210 降低至 150，{{tr|damage}}由 18 降低至 13，{{tr|defense}}由 7 降低至 4。
+** 尾部的{{tr|health}}由 300 降低至 220，{{tr|damage}}由 15 降低至 11，{{tr|defense}}由 10 降低至 8。}}
+{{history|Desktop 1.0.5|
+** 不再掉落{{tr|Shadow armor}}。
+** 不再会跟随玩家到{{tr|the corruption}}以外。
+** 头部的{{tr|health}}由 140 降低至 80，{{tr|damage}}由 50 降低至 43。
+** 身体的{{tr|health}}由 230 降低至 210，{{tr|damage}}由 25 降低至 18。
+** 尾部的{{tr|health}}由 350 降低至 300。}}
+{{history|Desktop 1.0.4|
+** 修正了只是选定快捷栏中的{{tr|Worm Food}}就会召唤{{tr|the Eater of Worlds}}的 {{tr|bug}}。
+** 头部的{{tr|health}}由 120 提升至 140，{{tr|damage}}由 40 提升至 50，{{tr|defense}}由 0 提升至 2。
+** 身体的{{tr|health}}由 200 提升至 230，{{tr|damage}}由 10 提升至 25，{{tr|defense}}由 4 提升至 7。
+** 尾部的{{tr|health}}由 300 提升至 350，{{tr|damage}}由 10 提升至 15，{{tr|defense}}由 8 提升至 10。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Worms}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Eater of Worlds}}

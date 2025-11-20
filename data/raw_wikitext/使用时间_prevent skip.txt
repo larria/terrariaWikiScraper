@@ -1,0 +1,17 @@
+<includeonly><!--
+-->{{#invoke:iteminfo|getInfo|id={{{itemid|}}}|prefix=_get_iteminfo:}}<!--
+-->{{#ifeq:{{#dplvar:_get_iteminfo:useStyle}}|5|<!-- if useStyle == 5
+	-->{{#ifeq:{{#dplvar:_get_iteminfo:shoot}}|0||<!-- if shoot != 0
+		-->{{#ifexpr:{{#dplvar:_get_iteminfo:useAnimation}}>={{#dplvar:_get_iteminfo:useTime}}|<!-- if useTime<=useAnimation
+			-->{{#ifeq:{{#dplvar:_get_iteminfo:reuseDelay}}|0|<!-- if reuseDelay==0
+				-->{{itemlist/item|{{item|id={{{itemid|}}}|showid=no}}}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->}}<!--
+-->}}</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Use time/prevent skip}}
+</noinclude>

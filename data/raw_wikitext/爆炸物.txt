@@ -1,0 +1,114 @@
+{{redirect|爆炸|在[[{{tr|Cavern}}]]区域碰到的作为{{tr|trap}}的可放置物品|{{tr|Explosives}}|{{tr|the painting}}|{{tr|American Explosive}}}}
+{{quotation|[[{{tr|Demolitionist}}|{{tr|The Demolitionist}}]]|{{gameText|LegacyDialog.105}}}}
+
+'''爆炸物'''是一种[[{{tr|consumable}}]]类[[{{tr|weapon}}]]，会在玩家从物品栏中扔出它们的一段时间后爆炸。爆炸是一个范围效果，会摧毁半径内的[[{{tr|blocks}}]]、[[{{tr|walls}}]]、和其他可[[{{tr|placeable}}|放置]]物体。只有[[{{tr|Explosion-proof objects}}|一小部分物体]]可以抵御爆炸。
+
+不像大多数武器那样，爆炸物造成固定量的伤害，无法由任何奖励改变。
+
+== 类型 ==
+所有爆炸物都可在[[{{tr|pre-Hardmode}}]]获得，且无法[[{{tr|Autoswing}}|自动使用]]。
+{{#dplvar:set<!--
+-->|explosives:Bomb:radius|5<!--
+-->|explosives:Bomb:notes|既会滚动又会弹跳，不易控制。<!--
+
+-->|explosives:Bomb Fish:radius|5<!--
+-->|explosives:Bomb Fish:notes|{{tr|contact}}{{tr|tiles}}时会粘住，允许玩家精确控制。<!--
+
+-->|explosives:Bouncy Bomb:radius|5<!--
+-->|explosives:Bouncy Bomb:notes|会在物块表面弹跳，很难控制。<!--
+
+-->|explosives:Bouncy Dynamite:radius|7<!--
+-->|explosives:Bouncy Dynamite:notes|会在物块表面弹跳，很难控制。<!--
+
+-->|explosives:Dirt Bomb:radius|5<!--
+-->|explosives:Dirt Bomb:notes|不会爆炸，而是会生成[[{{tr|dirt}}]]，只有当玩家直接接触时才会造成{{tr|damage}}（且不会生成{{tr|dirt}}）。不会摧毁原先就存在的{{tr|blocks}}。<!--
+
+-->|explosives:Dry Bomb:radius|<!--
+-->|explosives:Dry Bomb:notes|<!--
+
+-->|explosives:Dynamite:radius|7<!--
+-->|explosives:Dynamite:notes|既会滚动又会弹跳，但弹跳幅度比{{tr|Bombs}}小些。<!--
+
+-->|explosives:Holy Hand Grenade:radius|15<!--
+-->|explosives:Holy Hand Grenade:notes|拥有玩家在一击内能造成的最高的{{tr|base damage}}。<!--
+
+-->|explosives:Honey Bomb:radius|<!--
+-->|explosives:Honey Bomb:notes|<!--
+
+-->|explosives:Lava Bomb:radius|<!--
+-->|explosives:Lava Bomb:notes|<!--
+
+-->|explosives:Scarab Bomb:radius|5<!--
+-->|explosives:Scarab Bomb:notes|{{tr|contact}}{{tr|tiles}}时会粘住的定向{{tr|Bombs}}，产生指向玩家反方向的狭窄隧型爆炸。<!--
+
+-->|explosives:Sticky Bomb:radius|5<!--
+-->|explosives:Sticky Bomb:notes|{{tr|contact}}{{tr|tiles}}时会粘住，允许玩家精确控制。<!--
+
+-->|explosives:Sticky Dirt Bomb:radius|5<!--
+-->|explosives:Sticky Dirt Bomb:notes|与{{tr|Dirt Bomb}}相同，但{{tr|contact}}{{tr|tiles}}时会粘住，允许玩家精确控制。<!--
+
+-->|explosives:Sticky Dynamite:radius|7<!--
+-->|explosives:Sticky Dynamite:notes|{{tr|contact}}{{tr|tiles}}时会粘住，允许玩家精确控制。<!--
+
+-->|explosives:Wet Bomb:radius|<!--
+-->|explosives:Wet Bomb:notes|<!--
+-->}}<!--
+
+-->{{options/snap|item|snapshot:explosives-class}}{{options/set|item|mode=table|small=y}}
+{{-}}<!-- needed for transclusion -->
+{| class="terraria sortable lined align-center"
+! colspan=2 | {{tr|Item}}
+! data-sort-type=number | {{tr|Damage}}
+! <abbr title=“爆炸半径”>半径</abbr>
+! data-sort-type=number | {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | {{tr|Notes}}
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, autoswing, hardmode, rare, sell
+|q?where=unobtainable IS NULL AND listcat HOLDS "explosives"
+|q?groupBy=itemid
+|q?orderBy=name
+|template=:{{tr|Explosives (class)}}/row
+}}
+|}{{options/restore|item|snapshot:explosives-class}}
+
+== 备注 ==
+* 有若干种{{tr|consumable}}{{tr|weapons}}可在碰撞后造成{{tr|explosion}}，比如[[{{tr|Grenades}}]]。然而它们造成的是[[{{tr|ranged}}]]{{tr|damage}}，因此不算爆炸物。
+** 尽管并不算作爆炸物，任何种类的{{tr|Grenades}}，包括[[{{tr|Beenade}}]]，都可以满足让[[{{tr|Demolitionist}}]]入住的条件。
+* 从[[{{tr|launchers}}]]发射时，二级和四级[[{{tr|rockets}}]]也会摧毁物块。然而，{{tr|rockets}}被算作[[{{tr|ammunition}}]]。
+* 被爆炸物摧毁的{{tr|tiles}}永远会全数{{tr|drop}}。
+* 整个{{tr|world}}中，最多同时只能存在 400 个掉落物，不论它们是否能被堆叠在一起。如果某次爆炸产生了超过 400 个以上的掉落物，那么部分掉落物就会消失。
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|修复了一个导致{{tr|Sticky Bomb}}和{{tr|Sticky Dynamite}}不能正确粘在{{tr|blocks}}上的错误。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Scarab Bomb}}。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Bouncy Bomb}}、{{tr|Sticky Dynamite}}、{{tr|Bouncy Dynamite}}、和{{tr|Bomb Fish}}。}}
+{{history|Desktop 1.0.2|添加了{{tr|Sticky Bomb}}。}}
+{{history|Desktop-Release|引入{{tr|Bomb}}和{{tr|Dynamite}}。}}
+{{history|Console 1.0.933.1|添加了{{tr|Bouncy Bomb}}、{{tr|Sticky Dynamite}}、{{tr|Bouncy Dynamite}}、和{{tr|Bomb Fish}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|Bouncy Bomb}}、{{tr|Sticky Dynamite}}、{{tr|Bouncy Dynamite}}、和{{tr|Bomb Fish}}。（{{icon/ps4}}）}}
+{{history|Console-Release|引入{{tr|Bomb}}、{{tr|Sticky Bomb}}、和{{tr|Dynamite}}。}}
+{{history|Switch 1.0.711.6|引入{{tr|Bomb}}、{{tr|Sticky Bomb}}、{{tr|Dynamite}}、{{tr|Bouncy Bomb}}、{{tr|Sticky Dynamite}}、{{tr|Bouncy Dynamite}}、和{{tr|Bomb Fish}}。}}
+{{history|Mobile 1.3.0.7|
+** 移除了{{tr|Holy Hand Grenade}}（每个被 5 支{{tr|Dynamite}}代替）。
+** 添加了{{tr|Bouncy Bomb}}、{{tr|Sticky Dynamite}}、{{tr|Bouncy Dynamite}}、和{{tr|Bomb Fish}}。}}
+{{history|Mobile 1.1.5536|现在可以获得{{tr|Holy Hand Grenade}}。}}
+{{history|Mobile 1.1.933|添加了{{tr|Holy Hand Grenade}}，但无法获得。}}
+{{history|Mobile-Release|引入{{tr|Bomb}}、{{tr|Sticky Bomb}}、和{{tr|Dynamite}}。}}
+{{history|3DS-Release|引入{{tr|Bomb}}、{{tr|Sticky Bomb}}、{{tr|Dynamite}}、和{{tr|Holy Hand Grenade}}。}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-misc = yes
+}}
+
+[[Category:爆炸物| ]]
+
+{{language info|en=Explosives (class)}}

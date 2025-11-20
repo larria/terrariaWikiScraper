@@ -1,0 +1,52 @@
+{{item infobox
+| auto = 723
+| sound1 = MaxMana.wav
+| soundcaption1 = {{tr|projectile}}冷却结束
+| listcat = broadswords / projectile melee
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Beam Sword (demo).gif|235px|frame|{{tr|the Beam Sword}}的动画。]]
+
+'''{{tr|Beam Sword}}'''是一把稀有的、[[{{tr|Hardmode}}]]中的[[{{tr|sword}}]]，在挥舞时会偶尔发射金色的{{tr|Sword Beam}}。发射{{tr|Sword Beam}}时不消耗[[{{tr|ammunition}}]]或[[{{tr|mana}}]]，发出少量光线，伤害与{{tr|sword}}的{{tr|base damage}}相同，且不受重力影响，会在击中{{tr|enemies}}或实心[[{{tr|block}}]]时消散。它有 {{chance|1/150}} 的几率由[[{{tr|Armored Skeleton}}]]掉落。
+
+{{modifier|melee}}
+
+== 备注 ==
+* {{tr|Sword Beam}}{{tr|projectile}}有大约 {{eicons|1.4.4}} {{duration|{{iteminfo|Beam Sword|useTime|raw=y}} ticks}} / {{eicons|1.4.4|invert=y}} {{duration|60 ticks}} 的冷却时间。
+** {{eicons|1.4.4|invert=y}} 在冷却时间内，{{tr|the player}}不能切换{{tr|items}}，不能改变面对的方向，也不能应用[[{{tr|Auto Select}}]]，但玩家可以继续挥舞这把{{tr|the sword}}。
+** {{eicons|1.4.4|invert=y}} 在{{tr|Sword Beam}}充能完毕后，会有微弱的粒子效果和{{sound|[[Media:MaxMana.wav|{{tr|mana}}恢复声]]|MaxMana.wav|nofallback=y}}提醒玩家。
+* {{tr|Sword Beam}}无法穿透[[{{tr|blocks}}]]或[[{{tr|enemies}}]]。 这使其能够忽视敌怪在受到穿透伤害时具有的[[{{tr|invincibility frames}}]]。
+* [[{{tr|Melee speed}}]]会对{{tr|Sword Beam}}的速度产生影响，但不会改变其{{tr|cooldown}}时间。
+
+== 小贴士 ==
+* {{eicons|1.4.4|invert=y|3ds=n}} 和大部分其它[[{{tr|projectile melee weapons}}]]不同，{{tr|the Beam Sword}}无法[[{{tr|autoswing}}]]。[[{{tr|Frostbrand}}]]是{{tr|Beam Sword}}的替代品，可以{{tr|autoswing}}，并且其{{tr|projectile}}可以穿透一个{{tr|enemy}}，但它的{{tr|damage}}和挥舞{{tr|speed}}要低一些。
+* {{tr|Beam Sword}}在一次挥舞时可以击中{{tr|enemy}}两次，一次是用{{tr|the sword}}本身，另一次则是用光束，这种情况下可以造成双倍的{{tr|damage}}。
+
+== 花絮 ==
+* {{tr|The Beam Sword}}的名称基于持剑的英雄能够用他们的武器生成能量剑气，从而使他们能够攻击在剑的攻击范围外的敌人的[https://tvtropes.org/pmwiki/pmwiki.php/Main/SwordBeam 常见的电子游戏情节]。{{tr|The Beam Sword}}生成的光束很像{{wikipedia|lang=en|Link (The Legend of Zelda)|林克}}在{{wikipedia|lang=en|The Legend Of Zelda|《塞尔达传说（The Legend Of Zelda）》}}中，具有满{{tr|health}}时发射的剑气。
+* {{tr|The Beam Sword}}和[[{{tr|Enchanted Sword (item)}}|{{tr|Enchanted Sword}}]]在外观上和效果上都非常相似。
+** {{eicons|1.4.4|invert=y|3ds=n}} 虽然数据上是{{tr|Enchanted Sword}}的直接升级，但它不能[[{{tr|autoswing}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Beam Sword (pre-1.4.4.9).png|link=]]。}}
+{{history|Desktop 1.4.4|
+** {{tr|Projectile}}冷却时间由 60 {{tr|frames}}降低至 35 {{tr|frames}}。
+** 不再使用{{tr|mana}}恢复时“滴答”的提示音表示{{tr|projectile}}可以发射。
+** 现在会{{tr|autoswing}}。
+** 现在不能在使用时转向，也不再在挥舞时强制玩家转向射弹发射的方向。}}
+{{history|Desktop 1.4.1|{{tr|Size}}增加 30%。}}
+{{history|Desktop 1.4.0.1|{{tr|Use time}}由 15 增加至 20。{{tr|Projectile}}冷却不变。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Beam Sword}}

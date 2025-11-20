@@ -1,0 +1,78 @@
+{{exclusive|Tavernkeep}}
+{{item infobox
+| type = Armor/Set
+| tag = vendor / vendor:Tavernkeep / hardmode
+}}
+
+'''{{tr|Shinobi Infiltrator armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|armor}}]]{{tr|set}}，以总计 {{setinfo|Shinobi Infiltrator armor|buy|note=n}} 的价格购买自[[{{tr|Tavernkeep}}]]，并提供[[{{tr|Summon weapons}}|{{tr|summon}}]]和[[{{tr|Melee weapons}}|{{tr|melee damage}}]]{{tr|bonuses}}。
+
+此{{tr|set}}由'''{{tr|Shinobi Infiltrator's Helmet}}'''、'''{{tr|Shinobi Infiltrator's Torso}}'''、和'''{{tr|Shinobi Infiltrator's Pants}}'''组成。
+
+全套{{tr|Shinobi Infiltrator armor}}能提供以下{{tr|bonuses}}：
+
+* +54 [[{{tr|defense}}]]
+* +20% [[{{tr|melee damage}}]]
+* +20% [[{{tr|melee speed}}]]
+* +60% [[{{tr|summon damage}}]]
+* +25% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +30% [[{{tr|movement speed}}]]
+* +3 额外[[{{tr|sentry}}]]栏
+
+穿着全套会提高[[{{tr|Lightning Aura}}]]{{tr|sentry}}的攻击速度，使得它们能够以 {{chance|1/4}} 的固定几率造成[[{{tr|critical hit}}]]，并使其半径增加 4 格。
+
+{{tr|The Shinobi Infiltrator armor set}}可以被视为[[{{tr|Monk armor}}]]{{tr|set}}的直接升级。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 3880
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+|{{item infobox
+| auto = 3881
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+|{{item infobox
+| auto = 3882
+| tags = buy / hardmode / dd2/ vendor:Tavernkeep
+}}
+}}
+{{-}}
+
+== 备注 ==
+* 当搭配[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]并且使用[[{{tr|Morning Star}}]]或[[{{tr|Kaleidoscope}}]]时，{{tr|set bonus}}提供的{{tr|the critical strike chance}}和{{tr|whip}}提供的{{tr|summon tag critical strike chance}}不是直接加算的；它们会被视为两个独立事件。最终的{{tr|critical strike chance}}约为 {{percent|{{#expr:0.12+1/4-0.12/4}}}}（{{tr|Morning Star}}）/ {{percent|{{#expr:0.1+1/4-0.1/4}}}}（{{tr|Kaleidoscope}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+== 小贴士 ==
+* {{tr|Shinobi Infiltrator's Torso}}可以换成[[{{tr|Valhalla Knight armor}}|{{tr|Valhalla Knight's Breastplate}}]]，以较低的{{tr|melee speed}}为代价大幅提高防御能力。或者，换为[[{{tr|Monk's Shirt}}]]会以 4 {{tr|defense}}为代价提供额外 20% {{tr|damage}}。不过，如果使用受益于{{tr|melee speed}}的{{tr|weapon}}（如[[{{tr|Terra Blade}}]]），{{tr|Shinobi Infiltrator's Torso}}会比[[{{tr|Monk's Shirt}}]]造成更高伤害。
+** 此外值得注意的是，如果想要穿戴全套{{tr|Shinobi Infiltrator armor}}的话，可以先放置加强的{{tr|Lightning Aura sentries}}，然后再换成更好的{{tr|armor}}部件。这需要稍微多一点点微操，但可以让玩家在保留半径提高的同时从更好的{{tr|armor}}中获益。
+* 此{{tr|set}}也可以提高{{eil|whip}}的速度，使其成为了对于召唤师来说可以考虑的{{tr|set}}（特别是与[[{{tr|Feral Claws}}]]或任何其升级物搭配时更是如此）。
+
+== 花絮 ==
+* {{维基百科|ninja}}（忍者）或 shinobi（忍び）是封建日本的秘密特工或雇佣军。忍者的功能包括间谍，破坏，渗透和暗杀，以及在某些情况下的公开战斗。
+
+== 另见 ==
+* {{dd2 link|Shinobi Infiltrator|渗透忍者}}
+* [[{{tr|Dark Artist armor}}]]
+* [[{{tr|Red Riding armor}}]]
+* [[{{tr|Valhalla Knight armor}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|summon}}相关{{tr|items}}的{{tr|Tooltips}}现在显示“{{tr|summon damage}}”而非“{{tr|minion damage}}”。
+** 部件价格由 75 降低至 50 {{tr|Defender Medals}}。}}
+{{history|Desktop 1.4.1|
+** {{tr|Shinobi Infiltrator's Pants}}的{{tr|movement speed bonus}}由 20% 提升至 30%。
+** 为{{tr|Shinobi Infiltrator's Torso}}添加了 +5% {{tr|melee critical strike chance}}。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Shinobi Infiltrator armor}}

@@ -1,0 +1,27 @@
+<includeonly><!--
+-->{{#vardefine:item|{{{1|}}}}}<!--
+-->{{#vardefine:item_ut|{{iteminfo|{{{1|}}}|use time}}}}<!--
+-->{{#vardefine:modifier|{{{2|}}}}}<!--
+-->{{#vardefine:modifier_ut|{{modifierinfo|{{#var:modifier}}|speed|raw=y}}}}<!--
+-->
+| {{tr|{{#var:modifier}}}}
+| {{l10n|modifierinfo/all|speed|$value$={{modifierinfo|{{#var:modifier}}|speed}}}}
+| {{#vardefineecho:ut|{{#expr:{{#var:item_ut}}*{{#var:modifier_ut}} round 0}}}}
+| {{l10n|modifierinfo/all|speed|$value$={{percent|<!--
+	-->{{#vardefine:ut_mod|{{#expr:(1-({{#var:ut}}/{{#var:item_ut}}) round 2)*100}}}}<!--
+	-->{{sign|{{#var:ut_mod}}}}<!--
+	-->{{#var:ut_mod}}%<!--
+-->}}}}<!--
+-->{{note|before=&#32;|paren=y|{{percent|<!--
+	-->{{#vardefine:ut_diff|{{#expr:{{#var:ut_mod}}-100*(1-{{#var:modifier_ut}}) round 0}}}}<!--
+	-->{{sign|{{#var:ut_diff}}}}<!--
+	-->{{#var:ut_diff}}%<!--
+-->}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Use time/row}}
+</noinclude>

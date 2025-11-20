@@ -1,0 +1,43 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| type = Miscellaneous
+| auto = 4400
+| sound1 = Dig 0.wav, Dig 1.wav, Dig 2.wav
+| soundcaption1 = 碰撞
+| tags = drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Geodes}}'''是一个稀有消耗品，它有 {{chance|1/20}} 的几率掉落自[[{{tr|Granite Cave}}|{{tr|Granite}}]]主题的[[{{tr|enemies}}]]。按下 {{key|use}} 可以丢出{{tr|Geodes}}，在碰撞[[{{tr|blocks}}]]时会掉落两种[[{{tr|gems}}]]。{{tr|gems}}数量为 3-6 个。
+
+== 掉落 ==
+{{loot
+
+| Amethyst|3–6|2/7
+| Diamond|3–6|2/7
+| Topaz|3–6|2/7
+| Ruby|3–6|2/7
+| Emerald|3–6|2/7
+| Sapphire|3–6|2/7
+| Amber|3–6|2/7
+
+}}
+
+== 小贴士 ==
+* 平均来说，每个{{tr|Geode}}的产出物价值为 {{coin|1gc 54sc}}（其{{tr|sell price}}的 {{percent|{{sell expr|raw=y||15400/|Geode}}}}），且最少为{{coin|33sc 75cc}}（其{{tr|sell price}}的 {{percent|{{sell expr|raw=y||3375/|Geode}}}}），这意味着将它们破开总是比直接卖出它们要好。
+** 按这些价值换算，{{tr|Geode}}将每个杀死的{{tr|Granite}}主题{{tr|enemy}}的价值增加了如下数值：
+*** {{coin|25cc}}，若直接卖出{{tr|Geode}}
+*** {{coin|7sc 70cc}}，若开启{{tr|Geode}}并直接卖出{{tr|gems}}
+*** 记住由[[{{tr|Statues}}]]生成的[[{{tr|Granite Golem}}]]的掉落几率较低，需将以上价值除以 5。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Geode}}

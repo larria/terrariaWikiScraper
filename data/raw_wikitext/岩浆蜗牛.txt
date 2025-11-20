@@ -1,0 +1,42 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4849
+}}
+|{{npc infobox
+| auto = 655
+| image = Magma Snail.gif
+| type = Critter
+| environment = The Underworld
+}}
+}}
+
+'''{{tr|Magma Snail}}'''是一种生成在[[{{tr|The Underworld}}]]的[[{{tr|Critter}}]]。{{critter info|underworld=y|nostatue=y}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Magma Snail|expectedrows=1}}
+
+== 备注 ==
+* 试着用普通[[{{tr|Bug Net}}]]来抓{{tr|Magma Snail}}会造成 1 点{{tr|damage}}，还会对玩家造成 {{duration|5}} / {{expert|{{duration|{{#expr:5*2}}}}}} / {{master|{{duration|{{#expr:5*2.5 round 0}}}}}} 秒的[[{{tr|Burning}}]]减益。{{source code ref|v=1.4.4.6|method=Terraria.Player.ItemCheck_CatchCritters}}
+
+== 小贴士 ==
+* {{tr|Magma Snails}}可以卖出 {{iteminfo|Magma Snail|sell}} 的价格，因此捕捉{{tr|the Underworld}}中遇到的所有{{tr|Magma Snails}}是个[[Guide:Making money|赚钱]]的好方法。
+** 将{{tr|Magma Snails}}作为{{tr|bait}}在{{tr|lava}}中{{tr|fishing}}，并出售所有{{tr|fished items}}，可以赚到更多的钱。
+
+== 花絮 ==
+* {{tr|The Magma Snail}}不被包含在[[{{tr|Any Snail}}]]的组别中。
+* 它的壳与[[{{tr|Demon Conch}}]]看起来很相似。考虑到{{tr|Magma Snails}}只能在{{tr|the Underworld}}中找到，并且{{tr|the Demon Conch}}只能从{{tr|lava}}中获取，因此{{tr|the Demon Conch}}可能只是{{tr|Magma Snail}}的壳。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Magma Snail}}

@@ -1,0 +1,60 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4679
+| sound1 = Item 153.wav
+| soundcaption1 = 甩鞭
+| listcat = whips
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Morning Star (demo).gif|frame|right|用{{tr|Morning Star}}攻击。]]
+
+'''{{tr|Morning Star}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|whips}}|{{tr|whip}}]]。{{whip note|tagdmg=8|tagcrit=12%|penalty=5%}}{{tr|The Morning Star}}有 {{chance|1/200}} / {{expert|{{chance|399/40000|4|comma=y}}<!-- 1/200 plus reroll: 199/200*1/200 -->}} 几率掉落自{{tr|Plantera}}后的[[{{tr|Dungeon|link=y}}#{{tr|Hardmode}}{{tr|Plantera}}后的{{tr|Dungeon}}|{{tr|Dungeon}}]]中的[[{{tr|Blue Armored Bones}}]]、[[{{tr|Rusty Armored Bones}}]]、和[[{{tr|Hell Armored Bones}}]]。
+
+{{modifier|whip}}
+
+== 备注 ==
+* 获得自{{tr|summon weapons}}的[[{{tr|Critical strike chance}}]]加成均为独立计算而不能相互叠加。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}} 此类加成包括{{tr|Morning Star}}、[[{{tr|Kaleidoscope}}]]以及[[{{tr|Monk armor}}]]和[[{{tr|Shinobi Infiltrator armor}}]]的{{tr|set bonuses}}。
+** 例如，使用{{tr|Morning Star}}配合[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura}}]]并装备{{tr|Monk armor}}或{{tr|Shinobi Infiltrator armor}}，最终{{tr|critical strike chance}}为 {{percent|{{#expr:0.12+1/6-0.12/6}}}}（{{tr|Monk armor}}）/ {{percent|{{#expr:0.12+1/4-0.12/4}}}}（{{tr|Shinobi Infiltrator armor}}）。
+
+== 成就 ==
+{{achievement|name=Robbing the Grave}}
+
+== 小贴士 ==
+* [[{{tr|Kaleidoscope}}]]是此{{tr|whip}}的间接升级，具有更高的{{tr|base damage}}，更大的{{tr|range}}，和双倍以上的{{tr|summon tag damage}}。不过，它在群体控制方面逊于{{tr|Morning Star}}，提供的{{tr|critical strike chance}}和{{tr|knockback}}更低。
+* {{tr|Morning Star}}和[[{{tr|Kaleidoscope}}]]拥有使[[{{tr|minion}}]]能造成[[{{tr|critical hit}}]]的独特能力。尽管此加成相对较低，但它仍然能明显地提高伤害，尤其是在拥有大量的{{tr|minion}}时。两把{{tr|whips}}也可以叠加使用来进一步提高{{tr|critical strike chance}}。
+* {{tr|The Morning Star}}能在击败[[{{tr|Plantera}}]]后立即刷到，使其成为{{tr|Plantera}}前{{tr|whips}}的较早升级。
+* 虽然{{tr|the Morning Star}}拥有较低的攻击速度，它极高的{{tr|base damage}}和{{tr|knockback}}可以弥补这一不足。
+* 通过在{{tr|Morning Star}}和[[{{tr|Durendal}}]]或[[{{tr|Dark Harvest}}]]间切换来激活{{tr|buff}}可以提高{{tr|the Morning Star}}的低攻击速度，同时也可以在单个目标上堆叠{{tr|whip}}的特殊标记效果。
+* [[{{tr|Dark Harvest}}]]击中时会提高攻击速度，这使它的{{DPS}}与{{tr|Morning Star}}大约相同；使用专注于{{tr|melee}}的配装（装备提升{{tr|melee speed}}的{{tr|accessories}}）时，只要能够持续命中，{{tr|Dark Harvest}}的{{tr|DPS}}将会更高。然而，面对单个目标时，具有{{tr|summon}}标记{{tr|damage}}和{{tr|critical hit chance}}提升的{{tr|Morning Star}}可以通过增加{{tr|minion damage}}的方式取得更高输出。
+
+== 花絮 ==
+* {{tr|The Morning Star}}拥有所有{{tr|whip}}中最高的{{tr|knockback}}和最低的击中多目标时的{{tr|damage}}惩罚。
+* 此{{tr|whip}}的样貌和名字可能参考了{{维基百科|b=y|Castlevania|t=恶魔城}}游戏系列中的 [https://castlevania.fandom.com/wiki/Morning_Star Morning Star 鞭]，其中它是由贝尔蒙特家族持有和传承的传奇的[https://castlevania.fandom.com/wiki/Vampire_Killer_(whip) 吸血鬼杀手（Vampire Killer）鞭]的基础形态。
+** 这种{{tr|whip}}本身灵感来源于一种真正的中世纪武器，{{维基百科|morning star (weapon)|morning star|t=晨星}}。这种武器并不像{{tr|whip}}。相反，它是一种棒状武器，棍子上连接着一个用一些大小不同的尖刺武装起立的球。然而，来自《恶魔城》（和[[《{{tr|Terraria}}》]]）的晨星实际上是一种{{维基百科|Flail (weapon)|军用{{tr|Flail}}}}，虽然在《{{tr|Terraria}}》中它并不算作一把[[{{tr|Flail}}]]。
+* 此{{tr|whip}}的内部似乎由附魔的{{tr|cobalt}}做成，和来自{{tr|Dungeon}}的其它武器（如[[{{tr|Muramasa}}]]和[[{{tr|Blue Moon}}]]）类似。这一特点在它伸长时，或是在它留下的、类似于{{tr|Muramasa}}发出的十字型粒子中可见。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Damage}}由 180 降低至 165。}}
+{{history|Desktop 1.4.4|
+** {{tr|Use time}}由 45 降低至 35。
+** {{tr|Summon tag damage}}由 5 提升至 8。
+** {{tr|Summon tag critical strike chance}}由 5% 提升至 12%。
+** 视觉变化：现在锁链上具有更多节，从而产生可见度更高的灰白色轮廓。这可以在黑暗/夜晚环境下提高其挥舞时的可见度。}}
+{{history|Desktop 1.4.1|
+** {{tr|Range}}增加。
+** 每次挥舞击中额外目标的伤害惩罚由 25% 降低至 5%。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Whips}}
+{{Master Template Weapons
+| show-summon=yes
+}}
+
+{{language info|en=Morning Star}}

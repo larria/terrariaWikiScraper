@@ -1,0 +1,79 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox|auto=664|image=The Torch God.gif|namesub=占位符|view=void}}<!-- 用于储存火把神数据至 Cargo，使其能在[[NPC ID]]中出现 -->
+[[File:BiomeBannerTorchGod.png|center]]
+[[File:The Torch God (demo).gif|alt=|thumb|385x217px|{{tr|Torch God event}}期间正在攻击{{tr|player}}的{{tr|Torches}}。]]
+[[File:Torchgod brightened.png|alt=|thumb|385x217px|在简单的{{tr|arena}}内挑战{{tr|Torch God event}}，使用了多种颜色的{{tr|torches}}，并用{{tr|Glowsticks}}提供照明。]]
+{{redirect|{{tr|The Torch God}}|{{tr|achievement}}|{{tr|achievement}}#{{tr|Torch God}}}}
+
+'''{{tr|The Torch God}}'''是一个[[{{tr|event}}]]，通过在{{tr|underground}}放置大量[[{{tr|Torch}}]]的方式触发。此{{tr|event}}内容为躲避{{tr|projectiles}}，且存活的玩家会获得[[{{tr|Torch God's Favor}}]]奖励，此物品可为玩家提供让{{tr|torches}}自动匹配所处[[{{tr|biome}}]]的选项。在大部分区域内，让{{tr|torches}}与所处{{tr|biome}}相匹配可以对玩家的[[{{tr|luck}}]]带来正面影响。
+
+一旦至少 101 个任何类型的{{tr|torches}}在[[{{tr|surface}}]][[{{tr|layer}}]]以下的任何{{tr|biome}}中被紧密放置，该{{tr|event}}就会开始。由于游戏在玩家移动时会将某些{{tr|Torches}}错误地重复计算，该{{tr|event}}可能会在少于 101 个{{tr|torches}}被放置时开始。如果{{tr|character}}已经使用了{{tr|Torch God's Favor}}，或是在[[{{tr|inventory}}]]中有一个该物品，{{tr|Torch God event}}将不会开始。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateTorchLuck_ConsumeCountersAndCalculate}}
+
+{{tr|the Torch God event}}开始时，{{tr|torch}}的{{tr|flames}}会作为{{tr|projectiles}}射向玩家，每次一个。它们发射的顺序是随机的，每秒发射 3 个{{tr|projectiles}}，并造成 40 / {{expert|80}} / {{master|120}} {{tr|base damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.TorchAttack|field=Terraria.Player.torchFunTimer|t=在每个{{tr|projectile}}被发射前，会查找以玩家中心为中心，201×201 格长方形区域中的点燃的{{tr|torch}}（从左到右，从上到下），并将其填入数组中。然后，随机选择数组中的一个{{tr|torch}}，使其发射{{tr|projectile}}，然后熄灭它。}}{{tr|Projectiles}}能够穿过[[{{tr|blocks}}]]到达玩家处，但在经过玩家后就能重新与{{tr|blocks}}发生碰撞。每个{{tr|torch}}会发射一个{{tr|projectile}}，然后自己熄灭，就像它被[[{{tr|wire}}]]关闭了一样。在整个{{tr|event}}的{{tr|duration}}内，玩家会被施加[[{{tr|Blackout}}]][[{{tr|debuff}}]]，极大地降低可视性。
+
+一旦周围的所有{{tr|Torches}}被耗尽，{{tr|The Torch God event}}就会结束，最多进行 200 次攻击。{{source code ref|v=1.4.4.9|field=Terraria.Player.maxTorchAttacks}}如果至少有 95 个{{tr|torches}}发射了{{tr|projectile}}，玩家就会被奖励{{tr|Torch God's Favor item}}。{{tr|event}}结束时，所有{{tr|torches}}会被重新点亮。如果玩家死亡或离开{{tr|underground}}，{{tr|the event}}会提前结束且不会奖励任何东西；如果玩家进入没有{{tr|torches}}的区域，{{tr|the event}}也会提前结束，但如果至少有 95 个{{tr|torches}}发射了{{tr|projectile}}，就会奖励{{tr|Torch God's Favor}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.TorchAttack}}
+
+{{tr|event}}进行时，会播放{{tr|music}}《{{sound|[[{{tr|Music|link=y}}#{{tr|Boss 3}}|{{tr|Boss 3}}]]|Music-Boss 3.mp3|nofallback=y}}》。当[[{{tr|Party Girl|link=y}}#音乐切换|{{tr|Otherworldly music}}]]启用时，会播放音乐《{{sound|[[{{tr|Music|link=y}}#{{tr|OW Wall of Flesh}}|{{tr|Wall of Flesh}}]]|Music-Wall of Flesh (Otherworldly).mp3|nofallback=y}}》。
+
+== 备注 ==
+* 此{{tr|event}}较为独特，因为玩家只需进行躲避并生存下来即可完成它。没有需要攻击的[[{{tr|enemies}}]]或[[{{tr|bosses}}]]。
+* {{tr|The Torch God}}一次只和一名玩家绑定。在{{tr|multiplayer}}下，只有一名玩家会被{{tr|torch}}的{{tr|fireballs}}作为目标且被施加{{tr|Blackout debuff}}。其他已经使用了{{tr|Torch God's Favor}}的玩家仍然能听到附近玩家进行{{tr|events}}时的{{tr|music}}。
+* {{tr|Torch}}{{tr|fireballs}}的颜色与发射它的{{tr|Torch}}的颜色相匹配。这纯粹是视觉上的效果，所有颜色的{{tr|fireball}}的属性和行为都是相同的。
+* 若在{{tr|the Torch God event}}进行时就退出{{tr|world}}，熄灭的{{tr|torches}}不会被重新点燃。必须重新激活或重新放置它们。
+* 完成此{{tr|event}}、死亡、或是暂时离开{{tr|world}}都会使现存的{{tr|Torches}}暂时失效。可以在一段时间后重新进入{{tr|Torches}}所在区域来重启此{{tr|event}}。
+* 可以使用任意{{tr|Torch}}{{tr|types}}的组合召唤{{tr|Torch God}}。
+* 在{{tr|event}}期间放置的{{tr|Torches}}也可能向玩家发射火球。
+* {{tr|Torch}}{{tr|fireballs}}不会伤害 {{tr|NPCs}}、{{tr|critters}}、{{tr|enemy}}、和已经使用了{{tr|Torch God's Favor}}的玩家。
+* 在{{tr|Torch God}}结束后，在{{tr|event}}可再次为一名玩家开始前有 60 秒的冷却时间。{{source code ref|v=1.4.4.9|method=Terraria.Player.RelightTorches}}
+* {{tr|Torch God}}的[[{{tr|Bestiary}}]]条目会在{{tr|Torch God's Favor}}被使用后解锁。
+
+== 成就 ==
+{{achievement|name=Torch God}}
+
+== 小贴士 ==
+{{For|在{{tr|The Torch God}}中存活的详细策略，包括[[{{tr|arena}}]]的建议|指南:火把神攻略}}
+* 在开阔区域开始{{tr|event}}可为玩家提供更多躲避的空间。
+* 只有[[{{tr|Torches}}]]才会成为{{tr|the Torch God}}的一部分。其他非{{tr|Torches}}类型的[[{{tr|light sources}}]]（如[[{{tr|Lanterns}}]]）可以为区域提供光照且不会成为{{tr|fireballs}}。
+* 能为玩家提供躲避几率的物品，如[[{{tr|Brain of Confusion}}]]，对{{tr|torch fireballs}}有效。
+* 如果将此{{tr|event}}作为对敏捷性的挑战，最好拥有诸如[[{{tr|grappling hooks}}]]等提供机动性物品以躲避{{tr|torch fireballs}}。
+* 如果将此{{tr|event}}作为对耐力的挑战，最好拥有提供较高[[{{tr|defense}}]]的[[{{tr|armor}}]]、{{tr|buffs}}、和{{tr|accessories}}来降低{{tr|torch fireballs}}的伤害。
+* 玩家可以通过使用[[{{tr|Calming Potion}}]]和[[{{tr|Peace Candle}}]]减少{{tr|enemy}}的生成，以减少来自{{tr|enemy}}的危险干扰。从而能让玩家专注于躲避{{tr|fireballs}}。
+** 或者，如果需要更高的生成降低效果，玩家也可以在[[{{tr|town}}]]中激活{{tr|event}}。不过，若玩家失败了，直到玩家完成{{tr|event}}或移除{{tr|torches}}之前，该{{tr|town}}可能会无法进入。
+* 部分{{tr|torches}}会让其相关的{{tr|fireballs}}更难看见，而有些{{tr|torches}}的{{tr|fireballs}}更容易看见。对于躲避来说，最好、最亮的{{tr|torch}}是[[{{tr|White Torch}}]]，但是它是由[[{{tr|Diamond}}]]制作的，会需求大量资源。第二好的{{tr|torch}}是[[{{tr|Ultrabright Torch}}]]，且由[[{{tr|Traveling Merchant}}]]不常见地售卖。第三好的{{tr|torch}}是[[{{tr|Ichor Torch}}]]。取决于环境，[[{{tr|Ice Torch}}]]、[[{{tr|Hallowed Torch}}]]、和[[{{tr|Jungle Torch}}]]可能是第四好的。
+* 如果{{tr|The Torch God's Favor}}放置在[[{{tr|trash slot}}]]、放置在诸如[[{{tr|Chest}}]]的[[{{tr|storage item}}]]中、或丢在地上，就不算作放在{{tr|inventory}}中。玩家可以利用这一点来重复进行{{tr|event}}。
+
+=== {{tr|Arena}}建议 ===
+[[File:Torch God Minecart Arena.png|thumb|使用循环的[[{{tr|Minecart Track}}]]的基础{{tr|arena}}。]]
+以下是一些关于构建一个有利的进行{{tr|event}}的环境的简要建议：
+* 建造一个大且空旷的场地，并将{{tr|Torches}}仅放在一边上，以提供最长的躲避反应时间。
+* 建造一个小的方形场地，并将{{tr|torches}}密布在场地中心。在其中准备一些[[{{tr|Ropes}}]]和走道，以便能在{{tr|torches}}周围环绕。
+* 建造一个带绳的[[{{tr|hellevator}}]]，每 10 {{tr|tiles}}放置一个{{tr|torch}}，并在顶部放置 101 个{{tr|Torches}}。在顶部激活{{tr|event}}后，顺着绳向下走。当玩家到达底部时，应该就会获得{{tr|Torch God's Favor}}。
+* 在密布放置的 101 个火把旁放一圈[[{{tr|Minecart Track}}]]。用[[{{tr|Hammer}}]]敲击轨道以便{{tr|Minecart}}可环绕{{tr|torches}}，必要时利用轨道反弹和交叉口。
+
+== 花絮 ==
+* {{tr|Torch God}}及其奖励物品的引入很有可能是为了回应在 [[1.4.0.1]] 版本中引入的有争议的“[[{{tr|Luck|link=y}}#{{tr|Trivia}}|坏{{tr|torch luck}}]]”特性，此特性会惩罚在给定的{{tr|biome}}中使用错误的{{tr|torch}}类型的玩家（如：在{{tr|Underground Jungle}}中使用{{tr|Ice Torches}}而非{{tr|Jungle Torches}}）。
+* {{tr|Torch God}}最初是《[[{{tr|Terraria}}]]》主播 [https://www.twitch.tv/Pedguin Pedguin] 在 2020 年 5 月 24 日的直播上讨论的，作为让 [[Redigit]] 惩罚使用错误的{{tr|Torch}}的玩家的一种方式。Redigit 在聊天中评论说他喜欢这个主意。
+* {{tr|Torch God}}{{tr|event}}在游戏的源代码中名叫 <code>HappyFunTorchTime</code>（快乐有趣的火把时刻）。
+* 被发射时，每个{{tr|fireball}}会发出被数个[[{{tr|caster}}]]和[[{{tr|magic weapons}}]]使用的{{sound|[[Media:Item 8.wav|音效]]|Item 8.wav|nofallback=y}}。
+* {{tr|Torch God}}是{{tr|bestiary}}中为数不多的稀有度为 5 的生物，是 4 个有着 5 稀有度的 {{tr|bosses}} 之一。
+* 游戏内存在着一个{{tr|The Torch God}} {{tr|NPC}}，其 [[{{tr|NPC IDs}}]] 为 {{code|664}}。它仅有的作用似乎是用于显示{{tr|Torch God}}的[[{{tr|Bestiary}}]]条目中所需的信息。
+** 如果使用第三方软件或[[{{tr|Mods}}]]将它召唤并击杀，它只会掉落 5-15 个[[{{tr|Lesser Healing Potion}}]]和一些[[{{tr|Hearts}}]]。如此做也会解锁{{tr|The Torch God}}的{{tr|bestiary entry}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在完成该{{tr|event}}时会给予一个{{tr|achievement}}。}}
+{{history|Desktop 1.4.3.3|修复了来自[[{{tr|Corrupt Torch}}]]的{{tr|Torch God}}的{{tr|projectiles}}生成雪{{tr|dust}}的问题。}}
+{{history|Desktop 1.4.1|
+** 添加了{{tr|Bestiary entry}}。
+** 现在当{{tr|Otherworld}}音乐选项已开启时，会正确播放[[{{tr|Music}}|异界版配乐]]。}}
+{{history|Desktop 1.4.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+{{language info|en=The Torch God}}

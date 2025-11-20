@@ -1,0 +1,45 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| auto = 3722
+| imagebreak = yes
+| type = Furniture / Mechanism
+| width = 2 | height = 1
+| idprojectile = 654
+| tags = plunder
+}}
+[[File:Geyser (demo).gif|thumb|right|使用中的{{tr|Geyser trap}}。]]
+
+'''{{tr|Geyser}}'''是一种[[{{tr|trap}}]]，触发时会喷出竖直方向的火焰，造成 40 / {{expert|80}} / {{master|120}} {{tr|base damage}}以及 {{knockback|2|full=y|class=}} 的[[{{tr|knockback}}]]{{source code ref|v=1.4.4.9|name=geysertrap|method=Terraria.Wiring.GeyserTrap}}。它会在玩家接触它或其被[[{{tr|wire}}]]触发时激活。{{tr|Geysers}}会在深度足够生成[[{{tr|lava}}]]的区域随机自然生成，这包括[[{{tr|Underworld}}]]和深层[[{{tr|Cavern}}]]区域。它们生成时不会附带相连的[[{{tr|Pressure Plates}}]]或{{tr|wires}}。
+
+{{tr|Geysers}}可以在[[{{tr|block}}]]的顶部或底部放置，放置时分别朝向上方或下方，但不能在侧面放置。
+
+{{tr|Geysers}}不消耗[[{{tr|ammunition}}]]，其触发仅受到 {{duration|200 ticks}}的冷却时间限制<ref name="geysertrap"/>。{{tr|Geyser}}的火焰向上或向下最多延伸 20 格（可被{{tr|solid block}}阻挡），并持续 {{duration|60ticks}}。在产生火焰前，喷射流可以穿过{{tr|solid blocks}}和[[{{tr|liquids}}]]移动（''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节''）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 126</code> 代码段。}}
+
+== 备注 ==
+* {{tr|The Geyser projectile}}需要 3 格高的未被{{tr|solid blocks or liquids}}占用的空间来产生 20 格高的火焰。如果{{tr|Geyser}}喷射方向上的两列{{tr|tiles}}（例：{{tr|Geyser}}朝上时，其上方的{{tr|tiles}}）的任何部分被{{tr|solid blocks}}和/或{{tr|liquids}}阻挡，{{tr|the Geyser}}的喷射流就能够穿过它们移动（由数团烟雾指示），在首个 3 格高的空间处喷出火焰。从{{tr|Geyser}}正上方（或正下方）那格算起，喷射流最多可穿过障碍物移动 28 格。在第 29 格添加{{tr|solid block}}或一整格{{tr|liquid}}会阻止火焰产生。
+** {{tr|The Geyser projectile}}在穿过障碍物移动时仍然能够造成伤害。如果障碍物高 29 格，它仍能伤害最远格正上方（或正下方）的实体。
+** 如果{{tr|Geyser}}朝上，将第 29 个{{tr|solid block}}用[[{{tr|hammer}}]]敲成[[{{tr|half-block}}]]会允许火焰喷出。<!-- 8 pixels/tick × 59 ticks = 29.5 tiles, counting from the Geyser.-->
+* {{tr|Geysers}}会被[[{{tr|Dangersense}}]][[{{tr|buff}}]]高亮显示。
+* 激活{{tr|Geysers}}不会破坏任何已经放置的物体，包括[[{{tr|Torch}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Geyser}}现在可在玩家踩上时被触发。
+** {{tr|Geysers}}不再伴随连接到[[{{tr|Pressure Plate}}]]的{{tr|wire}}生成。}}
+{{history|Desktop 1.3.1.1|修复了多个放置问题。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.3.1.1 和 1.4.0.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Geyser}}

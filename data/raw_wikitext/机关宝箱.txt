@@ -1,0 +1,94 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| type = Mechanism/Furniture
+| imagealt = [[File:Trapped Chest.png|link=]] [[File:Trapped Gold Chest.png|link=]] [[File:Trapped Shadow Chest.png|link=]]
+| rare = {{rare|0}}
+| stack = {{iteminfo|3665|stack}}
+| placeable = Yes
+| consumable = Yes
+| width = 2
+| height = 2
+| sell = {{iteminfo|3665|sell}}
+| use = {{iteminfo|3665|useTime}}
+| idtile = 441, 468
+| cargo = no
+}}
+{{see also|[[{{tr|Dead Man's Chest}}]]，类{{tr|Chest}}的{{tr|item}}，同样会在使用时被激活，但它有{{tr|storage slots}}。}}
+
+'''{{tr|Trapped Chest}}'''是一种具有普通[[{{tr|chest}}]]外观的[[{{tr|mechanism}}]]物品。它不能用于[[{{tr|storage}}]]，因为它并没有任何{{tr|storage slots}}。当它被打开时，它会发出信号并可以用[[{{tr|wire}}]]连接到电路中。
+
+任何{{tr|chest}}都可以在[[{{tr|Heavy Work Bench}}]]处用想要的{{tr|chest}}和 10 个[[{{tr|wire}}]]制作成相应的{{tr|Trapped Chest}}。{{tr|The Trapped Chest}}可以卖得 {{sc|1}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|showresultid=1|result=LIKE Trapped%Chest|expectedrows=52|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 无法获取 ==
+{{infobox wrapper
+|{{item infobox
+| type = Furniture
+| name = Fake_newchest1
+| image = Trapped Chest.png
+| imageplaced = Crystal_Chest.png
+| auto = 3705
+| width = 2
+| height = 2
+| tags = unobtainable
+}}
+|{{item infobox
+| type = Furniture
+| name = Fake_newchest2
+| image = Trapped Chest.png
+| imageplaced = Golden_Chest.png
+| auto = 3706
+| width = 2
+| height = 2
+| tags = unobtainable
+}}
+}}
+{{unobtainable|section=y}}
+在游戏代码中存在着 2 个[[{{tr|Unobtainable}}]]的{{tr|Trapped Chests}}：ItemName.Fake_newchest1 和 ItemName.Fake_newchest2（这些名称是内部名称，因为不存在真正的名称）。它们似乎是{{tr|Trapped Crystal Chest}}和{{tr|Trapped Golden Chest}}的初始版本，但后来这些{{tr|trapped chests}}的实际有效版本加入游戏时，因为某些原因，是作为另外的物品加入的（而非修正这些初始的），这样它们就此保留在游戏代码中。它们只能通过[[{{tr|inventory editors}}]]或漏洞获得，并且和其他{{tr|Unobtainable items}}不同，在游戏启动后并不会自动从{{tr|inventory}}中消失。
+
+在{{tr|inventory}}中，它们有着和普通{{tr|Trapped Chest}}相同的外观，而放置到{{tr|world}}中时，它们看起来分别和{{tr|Crystal Chest}}与{{tr|Golden Chest}}完全一样。可以用[[{{tr|Cursor modes|link=y}}#{{tr|Smart Cursor}}|{{tr|Smart Cursor}}]]与其互动，并且能和普通{{tr|Trapped Chest}}一样运作。一旦它们放置下来后，在[[{{tr|Cursor}}]]悬停到它们上面时，人物和那个时候使用的物品都会立刻冻结，并且所有可见{{tr|accessories}}和{{tr|vanity armor}}都会变得不可见。人物会彻底停止（即使是在半空中）但依然可以改变方向，而且无法使用任何物品。此状态下的人物免疫所有的{{tr|contact damage}}。一旦光标从这些{{tr|chests}}上移开，人物就会立刻解冻，{{tr|accessories}}也会变得可见。此外，打开地图时将[[{{tr|Cursor}}]]悬停在这些{{tr|chests}}上会使游戏崩溃。仅有的摧毁这些{{tr|chests}}的方法是使用[[{{tr|explosives (class)}}]]，或长距离的{{tr|pickaxes}}如[[{{tr|Luminite Pickaxes}}]]，但它们不会掉落任何东西。
+{{-}}
+
+== 未实现 ==
+{{item infobox
+| type = Furniture
+| name = Unimplemented Trapped Chest
+| imagealt = [[File:Locked Gold Chest.png|link=]] [[File:Locked Shadow Chest.png|link=]] [[File:Barrel.png|link=]] [[File:Trash Can.png|link=]] [[File:Locked Jungle Chest.png|link=]] [[File:Locked Corruption Chest.png|link=]] [[File:Locked Crimson Chest.png|link=]] [[File:Locked Hallowed Chest.png|link=]] [[File:Locked Ice Chest.png|link=]] [[File:Locked Green Dungeon Chest.png|link=]] [[File:Locked Pink Dungeon Chest.png|link=]] [[File:Locked Blue Dungeon Chest.png|link=]] [[File:Dead Man's Chest.png|link=]] [[File:Locked Desert Chest.png|link=]]
+| idtile = 441 (2, 4–6, 23–27, 36, 38, 40), 468 (4, 13)
+| width = 2
+| height = 2
+| rare = 
+| tags = unobtainable
+| cargo = no
+}}
+{{unimplemented|section=y}}
+
+游戏数据中还包含若干未使用的{{tr|Trapped Chest}}{{tr|sprites}}<ref>{{tr|Trapped Chest}}的{{tr|sprites}}可以在游戏的 <code>Tiles_441.xnb</code> 和 <code>Tiles_468.xnb</code> 文件中找到。</ref>：每个{{tr|Locked Chest}}的{{tr|trapped version}}（参见[[{{tr|key}}]]）、机关[[{{tr|Barrel}}]]、机关[[{{tr|Trash Can}}]]、和机关[[{{tr|Dead Man's Chest}}]]（它无法被打开{{verify}}）。虽然{{tr|Trapped Locked Chests}}需要{{tr|key}}来解锁，但如果玩家在没有合适{{tr|key}}的情况下试图打开，它依然会发出信号。{{verify}}这些{{tr|chests}}没有{{tr|item IDs}}，且即便使用{{tr|inventory editors}}也无法获取它们。
+{{-}}
+
+== 图库 ==
+<gallery>
+File:Fake new chest (demo).gif|{{tr|Unobtainable}}的{{tr|Trapped Chests}}对人物的影响。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|添加了{{tr|Trapped Spider Chests}}、{{tr|Trapped Lesion Chests}}、{{tr|Trapped Sandstone Chests}}、{{tr|Trapped Bamboo Chests}}、{{tr|Trapped Nebula Chests}}、{{tr|Trapped Solar Chests}}、{{tr|Trapped Stardust Chests}}、和{{tr|Trapped Vortex Chests}}。}}
+{{history|Desktop 1.3.5|添加了{{tr|Crystal}}和{{tr|Gold}}的品种。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|添加了{{tr|Crystal chest}}和{{tr|Golden chest}}。}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Trapped Chests}}

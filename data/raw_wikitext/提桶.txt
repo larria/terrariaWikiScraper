@@ -1,0 +1,89 @@
+{{item infobox
+| imagealt = [[File:Empty Bucket.png|link=]] [[File:Water Bucket.png|link=]] [[File:Lava Bucket.png|link=]] [[File:Honey Bucket.png|link=]]
+| type = Tool/ Miscellaneous
+| use = {{iteminfo|Empty Bucket|useTime}}
+| rare = {{iteminfo|Empty Bucket|rare}}
+| stack = {{iteminfo|Empty Bucket|stack}}
+| cargo = no
+}}
+{{about|杂项{{tr|tools}}|{{tr|storage item}}|{{tr|Barrel}}|在{{tr|Blood Moons}}期间获得的消耗性{{tr|fishing}}{{tr|item}}|{{tr|Chum Bucket}}}}
+
+[[File:Water Bucket (demo).gif|frame|right|用{{tr|A Water Bucket}}倒出和盛放{{tr|water}}。]]
+
+'''{{tr|Buckets}}'''是一类{{tr|tools}}，可以用来携带[[{{tr|water}}]]、[[{{tr|lava}}]]、或[[{{tr|honey}}]]，以将其移除或放置。使用'''{{tr|Empty Bucket}}'''时，在任何充足的[[{{tr|liquid}}]]处按下 {{key|use}} 会将其收集，这会将{{tr|Empty Bucket}}对应地替换为'''{{tr|Water Bucket}}'''、'''{{tr|Lava Bucket}}'''、或'''{{tr|Honey Bucket}}'''。再次按下 {{key|use}} 会将{{tr|liquid}}放置在{{tr|cursor}}位置，此时装满的{{tr|bucket}}会再次被替换为{{tr|Empty Bucket}}。每个{{tr|bucket}}能够装一个{{tr|tile}}的{{tr|liquid}}。
+
+{{eil|Bottomless Water Bucket}}、{{eil|Bottomless Lava Bucket}}和{{eil|Bottomless Honey Bucket}}的功能等同于和可以无限地放置{{tr|water, lava, and honey}}的{{tr|buckets}}，而{{eil|Super Absorbant Sponge}}、{{eil|Lava Absorbant Sponge}}和{{eil|Honey Absorbant Sponge}}是分别只接受{{tr|water, lava, and honey}}的无限{{tr|Empty Buckets}}。它们也比普通的{{tr|buckets counterparts}}具有略微更快的放置/移除{{tr|liquids}}速度（尤其是在放置/移除时不断移动{{tr|cursor}}时）。
+
+== 提桶 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox |boxwidth=20em
+| type = Tool / Armor
+| auto = 205
+}}
+|{{item infobox |boxwidth=17.5em
+| type = Miscellaneous
+| auto = 206
+}}
+|{{item infobox |boxwidth=17.5em
+| type = Miscellaneous
+| auto = 207
+}}
+|{{item infobox |boxwidth=17.5em
+| type = Miscellaneous
+| auto = 1128
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=Empty Bucket/Water Bucket/Lava Bucket/Honey Bucket|expectedrows=4}}
+
+=== 用于 ===
+{{recipes|ingredient=Water Bucket/Lava Bucket/Honey Bucket|expectedrows=47}}
+
+== 备注 ==
+* 当在[[{{tr|liquid}}]]上使用{{tr|Empty Buckets}}时，游戏会检查这一{{tr|tile}}周围 3×3 {{tr|tile}}的方形区域内是否有更多相同类型的{{tr|liquid}}。如果在区域内找到了至少半个{{tr|tile}}的{{tr|liquid}}，每个{{tr|Empty Bucket}}就能收集一整个{{tr|tile}}的对应{{tr|liquid}}。无论收集的是一整个{{tr|tile}}还是少于一个{{tr|tile}}的{{tr|liquid}}，{{tr|Empty Bucket}}总是能完全装满，且能倒出一整个{{tr|tile}}的{{tr|liquid}}。
+* {{tr|An Empty Bucket}}也可以被放置在[[{{tr|armor}}]]的{{tr|helmet slot}}内，它提供 +1 [[{{tr|defense}}]]。
+* 将{{tr|Empty Bucket}}放置在{{tr|vanity slot}}，另一个{{tr|Empty Bucket}}放置在{{tr|armor slot}}会将这两个{{tr|bucket}}叠在一起：[[File:Two buckets (equipped).png|link=]] [[File:Two buckets (equipped) female.png|link=]]
+** 除此之外，只有两种{{tr|items}}能够以这样的方式重叠：{{eil|Badger's Hat}}和{{eil|Rabbit Perch}}。
+* {{eicons|Dyes|not=1.3.0.1}} 由于{{tr|Empty Bucket}}没有色调，大部分[[{{tr|dyes}}]]对其外观的影响微乎其微。
+
+== 小贴士 ==
+[[File:Bucket liquid duplication (demo).gif|thumb|使用{{tr|Bucket}}来复制所有类型的{{tr|liquids}}。]]
+
+* 在复制{{tr|liquids}}时可以利用{{tr|Buckets}}。当它们将{{tr|liquid}}放置于会流动的位置时，这会将{{tr|liquid}}{{tr|tile}}分为多个部分。结合每个{{tr|bucket}}即使只从世界中移除了半个{{tr|tile}}量的{{tr|liquid}}，它们也总是能收集一整个{{tr|tile}}、放置一整个{{tr|tile}}的{{tr|liquid}}的事实，收集半{{tr|bucket}}量的{{tr|liquid}}后仍然能放置一整个{{tr|tile}}并重新开始循环，而剩余的{{tr|liquid}}部分可以在另一位置累积。通过这种“取整”效果之后，现有的{{tr|liquid}}量会比之前更多。在实际操作中，可以通过在单个{{tr|tile}}上重复使用{{tr|bucket}}来放置并移除液体，或将液体分为两个单独的半格，并收集其中之一。
+** {{tr|inventory}}中只有一个{{tr|bucket}}时进行操作最理想，这会在使用它时立即切换它的状态。如果有堆叠的{{tr|bucket}}，玩家需要在每次“使用”之后重新选择对应的一叠物品。因此，最好在复制过程中储存多余的{{tr|bucket}}，在{{tr|liquid}}量能够填充所有{{tr|bucket}}之后再取回它们。
+* {{tr|The Empty Bucket}}“{{tr|helmet}}”几乎没有实用价值。虽然它比正常的[[{{tr|Iron Helmet}}]]便宜许多，它也只能发挥[[{{tr|Wood Helmet}}]]的效果，后者要比{{tr|Empty Bucket}}更容易获得。
+* 在坠落时，{{tr|Water Bucket or Honey Bucket}}可以用作紧急措施来阻止可能致命的[[{{tr|fall damage}}]]，但这需要加以练习才能有效地使用。[[{{tr|Water Walking Boots}}]]或其任意升级也较为有用。在具有对[[{{tr|lava}}]]的保护时（如[[{{tr|Obsidian Skin Potion}}]]或[[{{tr|Lava Charm}}]]及其升级），也可以使用{{tr|Lava Bucket}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 制作{{tr|Empty Bucket}}消耗的{{tr|Iron}}/{{tr|Lead Bar}}数量由 3 降低至 2。
+** {{tr|Sprites updated.}}旧{{tr|sprites}}为：[[File:Empty Bucket (pre-1.4.4).png|link=]] [[File:Water Bucket (pre-1.4.4).png|link=]] [[File:Lava Bucket (pre-1.4.4).png|link=]] [[File:Honey Bucket (pre-1.4.4).png|link=]]。
+** 盛满的{{tr|buckets}}现在可以借助[[{{tr|shimmer}}]]彼此转化。}}
+{{history|Desktop 1.4.0.1|
+** 现在在装备时会显示下方的头发，将其装备后外观从 [[File:Empty Bucket (equipped) (old).png|link=]] [[File:Two buckets (equipped) (old).png|link=]] [[File:Empty Bucket (equipped) female (old).png|link=]] [[File:Two buckets (equipped) female (old).png|link=]] 改为 [[File:Empty Bucket (equipped).png|link=]] [[File:Two buckets (equipped).png|link=]] [[File:Empty Bucket (equipped) female.png|link=]] [[File:Two buckets (equipped) female.png|link=]]。
+** 现在用于制作{{tr|Spider, Lesion, Sandstone, Bamboo, Nebula, Solar, Stardust, and Vortex Sinks}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Inventory}}和装备时的{{tr|sprites updated.}}}}
+{{history|Desktop 1.2.4|
+** 修复了使用{{tr|Water Bucket}}时，最后一个{{tr|Bucket}}不会堆叠的 {{tr|Bug}}。
+** 修复了当{{tr|Bucket}}掉落时，{{tr|Bucket}}不会自行堆叠在一起的 {{tr|Bug}}。
+** 修复了可以在[[{{tr|Mannequin}}]]上复制{{tr|Bucket}}的漏洞。}}
+{{history|Desktop 1.2.3.1|修复了将{{tr|Bucket}}放在[[{{tr|Mannequin}}]]上会消失的问题。}}
+{{history|Desktop 1.2.3|堆叠上限由 1 提升至 99。}}
+{{history|Desktop 1.0.5|装满的{{tr|Bucket}}不再能被倒进{{tr|solid block}}中。}}
+{{history|Desktop 1.0.4|{{tr|empty Bucket}}现在为其穿戴者提供 1 {{tr|defense}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Buckets}}

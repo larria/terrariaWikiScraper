@@ -1,0 +1,95 @@
+{{item infobox
+| imagealt = [[File:Dresser.png|{{tr|Dresser item sprite}}|link=]]<hr/>[[File:Dresser (placed).png|放置的{{tr|Dresser}}|link=]]
+| type = Furniture
+| rare = {{iteminfo|Dresser|rare}}
+| placeable = yes
+| width = 3
+| height = 2
+| stack = {{iteminfo|Dresser|stack}}
+| consumable = true
+| sell = {{iteminfo|Dresser|sell}}
+| use = {{iteminfo|Dresser|use}}
+| idtile = {{iteminfo|Dresser|createTile}}
+| cargo = no
+}}
+
+[[File:Placed Dressers.png|frame|{{tr|Placed Dressers}}。点击图像以查看每一行的总结。]]
+
+'''{{tr|Dresser}}'''是一种[[{{tr|decorative}}|装饰性的]][[{{tr|furniture}}]]和{{eicons|1.3.0.1}}[[{{tr|storage item}}]]。它亦会满足一栋[[{{tr|house}}]]所需的"{{tr|flat surface item}}"的要求。[[{{tr|Bottle (crafting station)}}|{{tr|Bottle}}]]可被放置于其顶部，以作为[[{{tr|potions}}]]的[[{{tr|crafting station}}]]。
+
+目前，共有 {{eicons|1.4.4}} 38 / {{eicons|1.2.4|not=1.3.0.1}} 19 / {{eicons|1.2.4|invert=y}} 5 种{{tr|craftable}}的{{tr|dresser}}，还有 5 种不可制作的版本，必须从世界的不同位置获取。
+
+== 多功能 ==
+{{exclusive|1.3.0.1|section=y}}
+将鼠标悬浮于{{tr|dresser}}的上半部分会展示微缩版的{{tr|dresser}}图标（若被重命名过，则显示名字）。此时单击{{key|open}}键，就可以把{{tr|dresser}}如同[[{{tr|chest}}]]一样打开，拥有相同大小的存储空间和重命名能力。
+
+{{#if:{{eicons|1.3.0.1|not=1.3.1}}|{{eicons|1.3.1}}&#32;}}将鼠标悬浮于{{tr|dresser}}的下半部分则会展示微缩版的衬衫图标（若被重命名过，则名字显示在衬衫图标之前）。此时单击 {{key|open}} 按钮，就会打开一个面板，可允许{{tr|player}}给他们的[[{{tr|character}}风格|默认服装]]重新上色。此界面为身体的四部分，即躯干、袖子、裤子和鞋子，都提供了单独的颜色、饱和度和亮度设置。着色仅适用于玩家的默认服装；为了重新着色[[{{tr|armor}}]]、[[{{tr|accessories}}]]或[[{{tr|vanity items}}]]，取而代之的是必须使用[[{{tr|dyes}}]]。衣服可以反复无限制地免费更换。通过单击高框中的角色，此界面可用于在角色创建时可用的选项之间更改默认服装。
+
+<div style="display:inline-block;">[[File:Change clothes dialog.png|thumb|left|300px|右键单击{{tr|Dresser}}展现此界面。]]</div>
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE %Dresser|expectedrows=38|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 不可制作的{{tr|Dressers}} ==
+{{item/options|set|nolink=y|anchor=y}}
+{| class="terraria lined"
+|-
+! {{tr|Dresser}} !! {{tr|Notes}}
+|-
+| {{item infobox | auto = 2386 | type = Furniture | width = 3 | height = 2 | view = item| tags = storage/plunder}} || 发现于蓝[[{{tr|Dungeon}}]]。
+|-
+| {{item infobox | auto = 2387 | type = Furniture | width = 3 | height = 2 | view = item| tags = storage/plunder}} || 发现于绿{{tr|Dungeon}}。
+|-
+| {{item infobox | auto = 2388 | type = Furniture | width = 3 | height = 2 | view = item| tags = storage/plunder}} || 发现于粉{{tr|Dungeon}}。
+|-
+| {{item infobox | auto = 2390 | type = Furniture | width = 3 | height = 2 | view = item| tags = storage/plunder}} || 发现于[[{{tr|Ruined houses}}]]，在[[{{tr|lava}}]]不会被摧毁。
+|-
+| {{item infobox | auto = 2389 | type = Furniture | width = 3 | height = 2 | view = item| tags = storage/drop}} || 由[[{{tr|Pirate Invasion}}|{{tr|pirates}}]]掉落。
+|}{{item/options|reset}}
+
+== {{tr|Tips}} ==
+* 由于{{eil|Bunny Pet}}的颜色与衬衫颜色绑定，所以{{tr|dresser}}也可以用于更改兔子的颜色。
+* {{tr|Dressers}}提供了{{tr|chest}}的等价功能，但制作不需要[[{{tr|Iron Bar}}]]/[[{{tr|Lead Bar}}]]，后者在游戏早期总是紧缺。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Skyware Dresser}}{{tr|item}}和{{tr|placed sprites updated.}}
+** 添加了{{tr|Spider, Lesion, Sandstone, Bamboo, Nebula, Solar, Stardust, and Vortex Dressers}}。
+** 现在允许改变眼睛和皮肤颜色。}}
+{{history|Desktop 1.3.5|{{tr|Crystal, Dynasty, Frozen and Living Wood Dressers}}现在生效了。}}
+{{history|Desktop 1.3.2|修复了与[[{{tr|Ice Rod}}]]和{{tr|Dressers}}相关的崩溃。}}
+{{history|Desktop 1.3.1|
+** 现在可以改变衣服的风格。
+** {{tr|Golden Dresser}}{{tr|sprite updated.}}
+** 展示在{{tr|dresser}}中的衣物{{tr|sprites updated.}}
+** 添加了{{tr|Crystal, Dynasty, Frozen and Living Wood Dressers}}，但不可制作。}}
+{{history|Desktop 1.3.0.4|{{tr|Cactus and Pumpkin Dressers}}现在需要[[{{tr|Sawmill}}]]来制作。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Meteorite, Granite, Marble and Martian Dressers}}。
+** 现在可作为存储工具。}}
+{{history|Desktop 1.2.4.1|
+** {{tr|Pumpkin Dressers}}的制作现在正确的需要{{tr|Pumpkins}}。
+** {{tr|Spooky Wood Dresser}}现在可以获取。}}
+{{history|Desktop 1.2.4|
+** 添加了 18 种{{tr|dressers}}: {{tr|Blue Dungeon, Green Dungeon, Pink Dungeon}}、{{tr|Bone, Boreal Wood, Cactus}}、{{tr|Flesh}}、{{tr|Glass}}、{{tr|Gold}}、{{tr|Honey}}、{{tr|Lihzahrd, Mushroom, Obsidian, Palm Wood, Pumpkin, Skyware, Slime, and Steampunk Dressers}}。
+** {{tr|Dressers, Pianos and Tables}}被击打时不再产生粒子-你并不是在摧毁它们。
+** {{tr|Ebonwood, Shadewood, Rich Mahogany and Pearlwood Dressers}}{{tr|sprites updated.}}}}
+{{history|Desktop 1.2.3|现在在{{tr|Dresser}}处可以换衣服。}}
+{{history|Desktop 1.2|添加了{{tr|Rich Mahogany, Pearlwood, Shadewood, and Ebonwood Dressers}}。}}
+{{history|Desktop 1.0.6.1|{{tr|Crafting}}工具从[[{{tr|Work Bench}}]]更改为[[{{tr|Sawmill}}]]。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console 1.08|现在在{{tr|Dresser}}处可以换衣服。}}
+{{history|Console 1.07|添加了{{tr|Desktop}} 1.2.4 & 1.2.4.1 的内容。}}
+{{history|Console 1.02|添加了{{tr|Desktop}} 1.2 的内容。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|添加了{{tr|Desktop}} 1.2.4 & 1.2.4.1 的内容。现在在{{tr|Dresser}}里可以换衣服。}}
+{{history|Mobile 1.2.6508|添加了{{tr|Desktop}} 1.2 的内容。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}{{tr|Dresser}}和{{tr|wood}}变种（{{tr|Rich Mahogany, Pearlwood, Shadewood, and Ebonwood}}）。}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+{{language info|en=Dressers}}

@@ -1,0 +1,77 @@
+{{item infobox
+| auto = 128
+| type = Boots
+| sound1 = Item 13.wav
+| soundcaption1 = 飞行
+| tags = vendor / vendor:Goblin Tinkerer
+}}
+[[File:Rocket Boots (demo).gif|frame|{{tr|Rocket Boots}}的动画。]]
+{{quotation|一条加载屏幕上的[[{{tr|Tips}}|{{tr|Tip}}]]|{{GameText|LoadingTips_Default.43}}}}
+
+'''{{tr|Rocket Boots}}'''是一件[[{{tr|accessory}}]]，能让玩家总共飞行 {{duration|70ticks}}。{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update}}需要在半空中按住 {{key|jump}} 以激活它。飞行时，它会发出喷气动画，会产生较亮的光。{{tr|Rocket Boots}}以 {{iteminfo|Rocket Boots|buy}} 购买自 [[{{tr|Goblin Tinkerer}}]]。
+
+飞行时间会在玩家落在任何实心物体，或用[[{{tr|hooks}}]]抓住表面时立即重置。
+
+如果装备了任何[[{{tr|extra jump}}]]{{tr|accessories}}，{{tr|extra jump}}效果会率先生效；此后在半空中按住跳跃按键会激活{{tr|Rocket Boots}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Rocket Boots|expectedrows=4}}
+
+== 备注 ==
+{| class="terraria" style="float:right; margin:0"
+|+ 有/无[[{{tr|Shiny Red Balloon}}]]的飞行距离
+!{{item|mode=image|Shiny Red Balloon}}
+! 飞行距离
+! 飞行距离（{{tr|blocks}}）
+|-
+| {{yes}}
+| ≈220 英尺
+| ≈110
+|-
+| {{no}}
+| ≈170 英尺
+| ≈85
+|}
+
+* 飞行时间是累计的，这意味着可以把飞行时间拆开来一段一段使用。
+* 飞行时间无法与{{tr|its upgrades}}叠加（[[{{tr|Spectre Boots}}]]、[[{{tr|Lightning Boots}}]]等等）。
+* {{tr|Rocket Boots}}的最大上升速度为 38 {{mph}}。
+* 当和[[{{tr|wings}}]]搭配时，{{tr|Rocket Boots}}的飞行会被禁用；它会改为直接使{{tr|wings}}的飞行时间增加 {{duration|42ticks}}。<ref name="update"/>
+* 如果装备了全套的[[{{tr|Shadow armor}}]]、[[{{tr|Ancient Shadow armor}}]]、或[[{{tr|Ancient Cobalt armor}}]]，喷气效果会改为与之搭配的紫色。{{source code ref|v=1.4.4.9|method=Terraria.Player.PlayerFrame}}
+
+== 小贴士 ==
+* 玩家应当注意使用{{tr|Rocket Boot}}后会掉落的高度。（使用{{tr|Rocket Boot}}时）很容易就能达到足以死于[[{{tr|fall damage}}]]的高度，尤其是搭配了其他强化跳跃的{{tr|accessories}}时。
+** 可以留下部分飞行时间来避免{{tr|fall damage}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.2|现在可以与[[{{tr|Dunerider Boots}}]]一起制作[[{{tr|Spectre Boots}}]]，以作为[[{{tr|Flurry Boots}}]]、[[{{tr|Hermes Boots}}]]、或[[{{tr|Sailfish Boots}}]]的替代。}}
+{{history|Desktop 1.3.2|装备后的{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Inventory sprite updated.}}旧外观为 [[File:Rocket Boots (pre-1.3.1).png|link=]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在可以与[[{{tr|Sailfish Boots}}]]一起制作[[{{tr|Spectre Boots}}]]，以作为[[{{tr|Flurry Boots}}]]或[[{{tr|Hermes Boots}}]]的替代。
+** {{tr|Inventory sprite updated.}}}}
+{{history|Desktop 1.2.4.1|修复了站立时，装备{{tr|Rocket Boots}}并按住跳跃按键会让[[{{tr|Wings}}|{{tr|Wing}}]]时间会变为无限的 {{tr|bug}}。}}
+{{history|Desktop 1.2|现在可以与[[{{tr|Flurry Boots}}]]一起制作[[{{tr|Spectre Boots}}]]，以作为[[{{tr|Hermes Boots}}]]的替代。}}
+{{history|Desktop 1.1|不再掉落自[[{{tr|Goblin Army}}]]{{tr|event}}期间的[[{{tr|Goblins}}]]，改为以 {{gc|5}} 购买自 [[{{tr|Goblin Tinkerer}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Rocket Boots}}不再使用[[{{tr|Mana}}]]，而是具有固定的使用时间。略微提高了上升速度以补偿这一点。
+** 穿着全套[[{{tr|Shadow armor}}]]（如果套装显示）会让{{tr|Rocket Boots}}产生紫色火花。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Inventory Sprite updated}}为与{{tr|Desktop}} 1.3.1 一致。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Inventory Sprite updated}}为与{{tr|Desktop}} 1.3.1 一致。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，带有{{tr|Desktop 1.3.0.1}} 的{{tr|inventory sprite}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Inventory sprite}}更新以匹配{{tr|Desktop}} 1.3.0.1。}}
+{{history|Mobile-Release|{{tr|Introduced}}，从{{tr|Goblin Tinkerer}}处购买。}}<!--
+Mobile did not get released with Hardmode, unlike the other versions, so this is for clarification that this change was made in advance
+-->{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Rocket Boots}}

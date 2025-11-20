@@ -1,0 +1,718 @@
+{{exclusive|1.4.0.1}}
+{{for|完成{{tr|Bestiary}}的攻略|指南:填满{{tr|Bestiary}}}}
+[[File:BestiaryGuide (zh).png|thumb|{{tr|Bestiary}}的首个条目：[[{{tr|Guide}}]]。]]
+
+'''{{tr|Bestiary}}'''是一个对《[[{{tr|Terraria}}]]》的多样实体的游戏内记录表，包括[[{{tr|enemies}}]]、[[{{tr|NPCs}}]]、[[{{tr|critters}}]]、和[[{{tr|bosses}}]]。它可以通过{{icon|desktop}}打开[[{{tr|inventory}}]]并在右下角、{{tr|trash slot}}右侧的 [[File:Bestiary icon.png|20px|link=]] 书图标上按 {{key|use}} 来打开，或者{{icon|mobile}}打开[[{{tr|settings}}]]并点击{{tr|Bestiary}}按钮。{{tr|Bestiary}}会显示每个实体的描述和基本属性，包括{{tr|biomes}}、[[File:Bestiary HP.png|20px|link=]] [[{{tr|health}}]]、[[File:Bestiary Attack.png|20px|link=]] [[{{tr|damage}}]]、[[File:Bestiary Defense.png|20px|link=]] [[{{tr|defense}}]]、和 [[File:Bestiary Knockback.png|20px|link=]] [[{{tr|knockback}}]]抗性，以及一些进阶信息，如 [[File:Bestiary Rank Light.png|20px|link=]] {{tr|rarity}}（以 0–5 星作为标准）、[[File:Bestiary Copper.png|20px|link=]] [[File:Bestiary Silver.png|20px|link=]] [[File:Bestiary Gold.png|20px|link=]] [[File:Bestiary Platinum.png|20px|link=]] [[{{tr|coins}}]]、{{tr|item drop rate}}——这些数据基于当前游戏会话决定（基于{{tr|difficulty}}、{{tr|seed}}，等等）。还会显示特定实体的 [[File:Bestiary Slain.png|20px|link=]] 击杀数。所有条目可以用多种标准来分类和筛选，例如属性、出现位置、[[{{tr|time}}]]、[[{{tr|events}}]]，等等。
+
+最开始时，没有关于任何实体的信息可用。取决于实体种类，会通过不同的方法来记录信息进度：
+* 对于[[{{tr|enemy}}]]，会统计特定类型{{tr|enemy}}的击杀数（在 [[1.4.0.1]] 更新前的击杀不会计入）。对于拥有多个条目的相同“类型”的{{tr|Enemies}}（如[[{{tr|Zombies}}]]），每种条目会单独计算（击杀 50 个{{tr|Pincushion Zombie}}，击杀 50 个{{tr|Slimed Zombie}}，诸如此类）。[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]{{tr|event}}独有的[[{{tr|mini-boss}}]] 的信息也遵循此规则。
+** 每个{{tr|enemy}}的信息显示分为四个阶段，它们会基于世界中对应{{tr|enemy}}的击杀数解锁：{{source code ref|v=1.4.4.9|class=Terraria.GameContent.Bestiary.CommonEnemyUICollectionInfoProvider}}
+{| class="terraria lined"
+! rowspan=2 | {{tr|Kill count}}
+! colspan=2 | 解锁的信息
+|-
+! {{desktop}}
+! {{console}}和{{mobile}}
+|-
+| 击杀 1 次
+| 名字、图像、{{tr|biome}}
+| 名字、图像、{{tr|biome}}、描述
+|-
+| 达成 20% 所需的{{tr|kill count}}
+| 属性、描述、{{tr|coin}}掉落量
+| 属性、{{tr|coin}}掉落量
+|-
+| 达成 50% 所需的{{tr|kill count}}
+| colspan=2 style="text-align:center" | 掉落的物品列表
+|-
+| 达成 100% 所需的{{tr|kill count}}
+| colspan=2 style="text-align:center" | 详细的物品{{tr|drop rate}}和数量
+|}
+:* 所需的{{tr|kill count}}和掉落首个[[{{tr|enemy banner}}]]所需的{{tr|kill count}}相同。因此，通常来说每个阶段所需的{{tr|kill count}}分别为 1/10/25/50，不过部分更罕见的{{tr|enemies}}具有[[{{tr|Banners (enemy)}}#具有非默认击杀数的旗帜|具有非默认的击杀数需求]]。
+* 对于一个 [[{{tr|boss}}]]，只需要击杀一次即可显示全部信息。
+* 对于一个[[{{tr|critter}}]]，其条目将会在玩家紧密靠近对应{{tr|critter}}后完全解锁。{{source code ref|v=1.4.4.9|class=Terraria.GameContent.Bestiary.CritterUICollectionInfoProvider}}
+** 玩家必须接近到距离{{tr|critter}} 15 格以内才能使其计入其{{tr|bestiary entry}}。对于更详细的信息，见[[#{{tr|Notes}}|{{tr|Notes}}]]。
+* 对于{{tr|town}} [[{{tr|NPC}}]]，其条目将会在玩家打开 {{tr|NPC}} 的对话窗口后完全解锁。{{source code ref|v=1.4.4.9|class=Terraria.GameContent.Bestiary.TownNPCUICollectionInfoProvider}}
+
+在{{tr|Bestiary}}的底部是会随{{tr|Bestiary}}完成进度增长的进度条，方便玩家追踪他们的进度。将{{tr|cursor}}悬浮于其上会显示准确的百分比。{{tr|Bestiary}}的完成进度和世界绑定，而不是{{tr|character}}。解锁{{tr|Bestiary entry}}的 10% （{{b entries|10%|entries}}）会让[[{{tr|Zoologist}}]] [[{{tr|NPC}}]] 入住，她会随着玩家完成{{tr|Bestiary}}的进度逐渐增加售卖的物品（如[[{{tr|Bunny License}}]]）。并不需要完全解锁一个条目的所有信息，只需要解锁条目即可将其计入完成进度。
+
+总共有 {{b entries|100%}} 个{{tr|Bestiary entry}}。
+
+== 选项 ==
+{{tr|The Bestiary}}的条目能够按下列方式以升序或降序显示和排列。除了默认的“{{gameText|BestiaryInfo.Sort_Unlocks}}”选项外，选项分类也会将未知的条目进行分类
+* [[File:Bestiary If Unlocked.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Unlocks}}'''：默认选择，会在未解锁的条目前优先显示已解锁的条目。
+* [[File:Bestiary icon.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_BestiaryID}}'''：将所有条目按照数字顺序排序（起始为 1）。
+* [[File:Name icon.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Alphabetical}}'''：将所有条目按字母顺序排序（起始为 A）。{{note|small=y|paren=y|译注：使用中文时，会按照拼音首字母排序。}}
+* [[File:Bestiary Attack.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Attack}}'''：将所有条目按照[[{{tr|damage}}]]属性从高到低排序。
+* [[File:Bestiary Defense.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Defense}}'''：将所有条目按照[[{{tr|damage}}]]属性从高到低排序。
+* [[File:Bestiary Gold.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Coins}}'''：将所有条目按照[[{{tr|NPC drops|link=y}}#{{tr|Coin drops}}|{{tr|coins}}掉落量]]从高到低排序。
+* [[File:Bestiary HP.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_HitPoints}}'''：将所有条目按照[[{{tr|damage}}]]属性从高到低排序。
+* [[File:Bestiary Rarity.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_Rarity}}'''：将所有条目按照{{tr|rarity}}从高到低排序。
+* {{icon|console|mobile}} [[File:Bestiary Sort by ID.png|20px|link=]] '''{{gameText|BestiaryInfo.Sort_ID}}'''：将所有条目按照 [[{{tr|NPC IDs}}]] 排序。<ref>每个条目上所显示的数字将仍然是其{{tr|Bestiary IDs}}。</ref>
+
+== 筛选器 ==
+以{{tr|Bestiary}}的筛选器显示中从左上到右下的顺序排序。“生物数量”的数据可能会计入由于在多个{{tr|biome}}中出现而被重复计数的生物。
+{{collapse top|显示筛选器列表}}
+{| class="terraria lined sortable" style="margin:auto;"
+! 序号
+! 图标
+! 筛选器
+! data-sort-type=number | 生物数量
+|- class="sortbottom topline"
+| 1
+| [[File:Bestiary If Unlocked.png|link=]]
+| {{gameText|BestiaryInfo.IfUnlocked}}
+| 0–{{b entries|100%}}<ref>取决于玩家是否解锁了它们。</ref>
+|-
+| 2
+| [[File:Bestiary Boss Enemy.png|link=]]
+| [[{{tr|link=y|Bosses}}|{{gameText|BestiaryInfo.IsBoss}}]]
+| 23
+|-
+| 3
+| [[File:Bestiary Rare Creature.png|link=]]
+| {{gameText|BestiaryInfo.IsRare}}
+| 44
+|-
+| 4
+| [[File:Bestiary Surface.png|link=]]
+| [[{{tr|link=y|Surface}}|{{gameText|Bestiary_Biomes.Surface}}]]
+| 47
+|-
+| 5
+| [[File:Bestiary Daytime.png|link=]]
+| [[{{tr|link=y|Daytime}}|{{gameText|Bestiary_Times.DayTime}}]]
+| 35
+|-
+| 6
+| [[File:Bestiary Party.png|link=]]
+| [[{{tr|link=y|Party}}|{{gameText|Bestiary_Events.Party}}]]
+| 1
+|-
+| 7
+| [[File:Bestiary Windy Day.png|link=]]
+| [[{{tr|link=y|Windy Day}}|{{gameText|Bestiary_Events.WindyDay}}]]
+| 4
+|-
+| 8
+| [[File:Bestiary Rain.png|link=]]
+| [[{{tr|link=y|Rain}}|{{gameText|Bestiary_Events.Rain}}]]
+| 7
+|-
+| 9
+| [[File:Bestiary Nighttime.png|link=]]
+| [[{{tr|link=y|Nighttime}}|{{gameText|Bestiary_Times.NightTime}}]]
+| 48
+|-
+| 10
+| [[File:Bestiary Blood Moon.png|link=]]
+| [[{{tr|link=y|Blood Moon}}|{{gameText|Bestiary_Events.BloodMoon}}]]
+| 18
+|-
+| 11
+| [[File:Bestiary Graveyard.png|link=]]
+| [[{{tr|link=y|Graveyard}}|{{gameText|Bestiary_Biomes.Graveyard}}]]
+| 5
+|-
+| 12
+| [[File:Bestiary Underground.png|link=]]
+| [[{{tr|link=y|Underground}}|{{gameText|Bestiary_Biomes.Underground}}]]
+| 13
+|-
+| 13
+| [[File:Bestiary Caverns.png|link=]]
+| [[{{tr|link=y|Cavern}}|{{gameText|Bestiary_Biomes.Caverns}}]]
+| 43
+|-
+| 14
+| [[File:Bestiary Granite.png|link=]]
+| [[{{tr|link=y|Granite Cave}}|{{gameText|Bestiary_Biomes.Granite}}]]
+| 2
+|-
+| 15
+| [[File:Bestiary Marble.png|link=]]
+| [[{{tr|link=y|Marble Cave}}|{{gameText|Bestiary_Biomes.Marble}}]]
+| 2
+|-
+| 16
+| [[File:Bestiary Underground Mushroom.png|link=]]
+| [[{{tr|link=y|Glowing Mushroom biome}}|{{gameText|Bestiary_Biomes.UndergroundMushroom}}]]
+| 9
+|-
+| 17
+| [[File:Bestiary Spider Nest.png|link=]]
+| [[{{tr|link=y|Spider Cave}}|{{gameText|Bestiary_Biomes.SpiderNest}}]]
+| 2
+|-
+| 18
+| [[File:Bestiary Snow.png|link=]]
+| [[{{tr|link=y|Snow biome}}|{{gameText|Bestiary_Biomes.Snow}}]]
+| 11
+|-
+| 19
+| [[File:Bestiary Underground Snow.png|link=]]
+| [[{{tr|link=y|Ice biome}}|{{gameText|Bestiary_Biomes.UndergroundSnow}}]]
+| 10
+|-
+| 20
+| [[File:Bestiary Desert.png|link=]]
+| [[{{tr|link=y|Desert}}|{{gameText|Bestiary_Biomes.Desert}}]]
+| 16
+|-
+| 21
+| [[File:Bestiary Underground Desert.png|link=]]
+| [[{{tr|link=y|Underground Desert}}|{{gameText|Bestiary_Biomes.UndergroundDesert}}]]
+| 14
+|-
+| 22
+| [[File:Bestiary Sandstorm.png|link=]]
+| [[{{tr|link=y|Sandstorm}}|{{gameText|Bestiary_Events.Sandstorm}}]]
+| 9
+|-
+| 23
+| [[File:Bestiary Ocean.png|link=]]
+| [[{{tr|link=y|Ocean}}|{{gameText|Bestiary_Biomes.Ocean}}]]
+| 15
+|-
+| 24
+| [[File:Bestiary The Jungle.png|link=]]
+| [[{{tr|link=y|Jungle}}|{{gameText|Bestiary_Biomes.Jungle}}]]
+| 20
+|-
+| 25
+| [[File:Bestiary Underground Jungle.png|link=]]
+| [[{{tr|link=y|Underground Jungle}}|{{gameText|Bestiary_Biomes.UndergroundJungle}}]]
+| 23
+|-
+| 26
+| [[File:Bestiary Meteor.png|link=]]
+| [[{{tr|link=y|Meteorite (biome)}}|{{gameText|Bestiary_Biomes.Meteor}}]]
+| 1
+|-
+| 27
+| [[File:Bestiary The Dungeon.png|link=]]
+| [[{{tr|link=y|Dungeon}}|{{gameText|Bestiary_Biomes.TheDungeon}}]]
+| 40
+|-
+| 28
+| [[File:Bestiary The Underworld.png|link=]]
+| [[{{tr|link=y|The Underworld}}|{{gameText|Bestiary_Biomes.TheUnderworld}}]]
+| 16
+|-
+| 29
+| [[File:Bestiary Sky.png|link=]]
+| [[{{tr|link=y|Sky}}|{{gameText|Bestiary_Biomes.Sky}}]]
+| 3
+|-
+| 30
+| [[File:Bestiary The Corruption.png|link=]]
+| [[{{tr|link=y|The Corruption}}|{{gameText|Bestiary_Biomes.TheCorruption}}]]
+| 8
+|-
+| 31
+| [[File:Bestiary Underground Corruption.png|link=]]
+| [[{{tr|link=y|Underground Corruption}}|{{gameText|Bestiary_Biomes.UndergroundCorruption}}]]
+| 10
+|-
+| 32
+| [[File:Bestiary Corrupt Ice.png|link=]]
+| [[{{tr|link=y|Ice biome}}|{{gameText|Bestiary_Biomes.CorruptIce}}]]
+| 1
+|-
+| 33
+| [[File:Bestiary Corrupt Desert.png|link=]]
+| [[{{tr|link=y|Corrupt Desert}}|{{gameText|Bestiary_Biomes.CorruptDesert}}]]
+| 2
+|-
+| 34
+| [[File:Bestiary Corrupt Cave Desert.png|link=]]
+| [[{{tr|link=y|Underground Desert}}|{{gameText|Bestiary_Biomes.CorruptUndergroundDesert}}]]
+| 4
+|-
+| 35
+| [[File:Bestiary The Crimson.png|link=]]
+| [[{{tr|link=y|The Crimson}}|{{gameText|Bestiary_Biomes.Crimson}}]]
+| 9
+|-
+| 36
+| [[File:Bestiary Underground Crimson.png|link=]]
+| [[{{tr|link=y|Underground Crimson}}|{{gameText|Bestiary_Biomes.UndergroundCrimson}}]]
+| 11
+|-
+| 37
+| [[File:Bestiary Crimson Ice.png|link=]]
+| [[{{tr|link=y|Ice biome}}|{{gameText|Bestiary_Biomes.CrimsonIce}}]]
+| 1
+|-
+| 38
+| [[File:Bestiary Crimson Desert.png|link=]]
+| [[{{tr|link=y|Crimson Desert}}|{{gameText|Bestiary_Biomes.CrimsonDesert}}]]
+| 2
+|-
+| 39
+| [[File:Bestiary Crimson Cave Desert.png|link=]]
+| [[{{tr|link=y|Underground Desert}}|{{gameText|Bestiary_Biomes.CrimsonUndergroundDesert}}]]
+| 4
+|-
+| 40
+| [[File:Bestiary The Hallow.png|link=]]
+| [[{{tr|link=y|The Hallow}}|{{gameText|Bestiary_Biomes.TheHallow}}]]
+| 15
+|-
+| 41
+| [[File:Bestiary Underground Hallow.png|link=]]
+| [[{{tr|link=y|Underground Hallow}}|{{gameText|Bestiary_Biomes.UndergroundHallow}}]]
+| 5
+|-
+| 42
+| [[File:Bestiary Hallow Ice.png|link=]]
+| [[{{tr|link=y|Ice biome}}|{{gameText|Bestiary_Biomes.HallowIce}}]]
+| 1
+|-
+| 43
+| [[File:Bestiary Hallow Desert.png|link=]]
+| [[{{tr|link=y|Hallowed Desert}}|{{gameText|Bestiary_Biomes.HallowDesert}}]]
+| 2
+|-
+| 44
+| [[File:Bestiary Hallow Cave Desert.png|link=]]
+| [[{{tr|link=y|Underground Desert}}|{{gameText|Bestiary_Biomes.HallowUndergroundDesert}}]]
+| 2
+|-
+| 45
+| [[File:Bestiary Surface Mushroom.png|link=]]
+| [[{{tr|link=y|Glowing Mushroom biome}}|{{gameText|Bestiary_Biomes.SurfaceMushroom}}]]
+| 8
+|-
+| 46
+| [[File:Bestiary The Temple.png|link=]]
+| [[{{tr|link=y|Jungle Temple}}|{{gameText|Bestiary_Biomes.TheTemple}}]]
+| 3
+|-
+| 47
+| [[File:Bestiary Goblin Invasion.png|link=]]
+| [[{{tr|link=y|Goblin Army}}|{{gameText|Bestiary_Invasions.Goblins}}]]
+| 7
+|-
+| 48
+| [[File:Bestiary Old One's Army.png|link=]]
+| [[{{tr|link=y|Old One's Army}}|{{gameText|Bestiary_Invasions.OldOnesArmy}}]]
+| 13
+|-
+| 49
+| [[File:Bestiary Pirate Invasion.png|link=]]
+| [[{{tr|link=y|Pirate Invasion}}|{{gameText|Bestiary_Invasions.Pirates}}]]
+| 7
+|-
+| 50
+| [[File:Bestiary Martian Madness.png|link=]]
+| [[{{tr|link=y|Martian Madness}}|{{gameText|Bestiary_Invasions.Martian}}]]
+| 12
+|-
+| 51
+| [[File:Bestiary Eclipse.png|link=]]
+| [[{{tr|link=y|Solar Eclipse}}|{{gameText|Bestiary_Events.Eclipse}}]]
+| 15
+|-
+| 52
+| [[File:Bestiary Pumpkin Moon.png|link=]]
+| [[{{tr|link=y|Pumpkin Moon}}|{{gameText|Bestiary_Invasions.PumpkinMoon}}]]
+| 16
+|-
+| 53
+| [[File:Bestiary Frost Moon.png|link=]]
+| [[{{tr|link=y|Frost Moon}}|{{gameText|Bestiary_Invasions.FrostMoon}}]]
+| 14
+|-
+| 54
+| [[File:Bestiary Halloween.png|link=]]
+| [[{{tr|link=y|Halloween}}|{{gameText|Bestiary_Events.Halloween}}]]
+| 11
+|-
+| 55
+| [[File:Bestiary Christmas.png|link=]]
+| [[{{tr|link=y|Christmas}}|{{gameText|Bestiary_Events.Christmas}}]]
+| 8
+|-
+| 56
+| [[File:Bestiary Frost Legion.png|link=]]
+| [[{{tr|link=y|Frost Legion}}|{{gameText|Bestiary_Invasions.FrostLegion}}]]
+| 3
+|-
+| 57
+| [[File:Bestiary Nebula Pillar.png|link=]]
+| [[{{tr|link=y|Nebula Pillar}}|{{gameText|Bestiary_Biomes.NebulaPillar}}]]
+| 5
+|-
+| 58
+| [[File:Bestiary Solar Pillar.png|link=]]
+| [[{{tr|link=y|Solar Pillar}}|{{gameText|Bestiary_Biomes.SolarPillar}}]]
+| 8
+|-
+| 59
+| [[File:Bestiary Vortex Pillar.png|link=]]
+| [[{{tr|link=y|Vortex Pillar}}|{{gameText|Bestiary_Biomes.VortexPillar}}]]
+| 6
+|-
+| 60
+| [[File:Bestiary Stardust Pillar.png|link=]]
+| [[{{tr|link=y|Stardust Pillar}}|{{gameText|Bestiary_Biomes.StardustPillar}}]]
+| 7
+|}
+{{collapse bottom}}
+
+== 条目 ==
+{{collapse top|显示条目列表}}
+{{:{{tr|Bestiary}}/List}}
+{{collapse bottom}}
+
+== 未计入的实体和不可获得的条目 ==
+部分{{tr|enemies}}根本没有{{tr|Bestiary entry}}：
+* [[{{tr|Pirate's Curse}}]]
+* [[{{tr|Spiked Slime}}]]，因为它无法在[[{{tr|Classic}}]]{{tr|worlds}}中生成
+* [[{{tr|Golden Slime}}]]，因为它无法在除了 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] 以外的[[{{tr|world seed}}]]中生成
+* [[{{tr|Jungle Mimic}}]]，因为它无法在除了 {{tr|Celebrationmk10}} 和 {{tr|Get fixed boi}} 以外的{{tr|world seed}}中生成
+
+部分游戏中的{{tr|enemies}}在{{tr|Bestiary entry}}中没有对其{{tr|variants}}的区分：
+* [[{{tr|Mimic}}]]
+** 普通{{tr|Chest}}
+** {{tr|Gold Chest}}
+** {{tr|Shadow Chest}}
+* [[{{tr|Butterfly}}]]
+** {{tr|Monarch Butterfly}}
+** {{tr|Sulphur Butterfly}}
+** {{tr|Zebra Swallowtail Butterfly}}
+** {{tr|Ulysses Butterfly}}
+** {{tr|Julia Butterfly}}
+** {{tr|Red Admiral Butterfly}}
+** {{tr|Purple Emperor Butterfly}}
+** {{tr|Tree Nymph Butterfly}}
+* [[{{tr|Zombie}}]]
+** {{tr|Armed Zombie}}
+** {{tr|Armed Pincushion Zombie}}
+** {{tr|Armed Slimed Zombie}}
+** {{tr|Armed Swamp Zombie}}
+** {{tr|Armed Twiggy Zombie}}
+** {{tr|Armed Female Zombie}}
+** {{tr|Armed Torch Zombie}}
+* [[{{tr|Skeleton}}]]
+** {{tr|Bone Throwing Skeleton}}
+** {{tr|Bone Throwing Headache Skeleton}}
+** {{tr|Bone Throwing Misassembled Skeleton}}
+** {{tr|Bone Throwing Pantless Skeleton}}
+* {{tr|Size variants}}也没有独立的条目，这很可能是因为它们广泛存在，且可能会导致{{tr|bestiary}}变得不合理地冗杂而失去参考价值。
+
+== 备注 ==
+* 击败[[{{tr|Skeletron}}]]也会完全解锁[[{{tr|Dungeon Guardian}}]]的条目。
+* 击败[[{{tr|Lunatic Cultist}}]]也会完全解锁[[{{tr|Phantasm Dragon}}]]和[[{{tr|Ancient Vision}}]]的条目。
+* 对于检测玩家是否接近[[{{tr|critter}}]]：{{source code ref|v=1.4.4.7|property=Terraria.Player.HitboxForBestiaryNearbyCheck}}
+** 在玩家身边会划出一个隐形的矩形，其大小为玩家的范围框向左右各延伸 300 像素，向上下各延伸 200 像素，即水平方向各 18.75 格，竖直方向各 12.5 格。如果{{tr|critter}}进入了这个矩形内，它就会计入其{{tr|bestiary entry}}中。
+*** 玩家的默认范围框宽 20 像素，高 42 像素（不过这些数值在特定情况下有所变化，例如在骑乘[[{{tr|mounts}}]]时）。
+** 总计上，{{tr|critter}}探测矩形的总默认宽度为 620 像素（38.75 格），总默认高度为 442 像素（27.625 格）。
+* {{tr|The Bestiary}}进度和世界绑定。如果在一个世界中解锁了全部{{tr|The Bestiary}}的人物进入新的世界，那个世界的{{tr|The Bestiary}}将仍然是空的。
+** [[{{tr|The Torch God}}]]的条目例外，它会在人物使用[[{{tr|Torch God's Favor}}]]后立即被解锁。
+* {{tr|The Bestiary}}的击杀数和[[{{tr|Tally Counter}}]]使用的是不同计数，因为在 1.4 之前创建的世界中解锁{{tr|Bestiary entry}}需要重新杀死每个生物。
+* 有三种{{tr|enemies}}较为独特：[[{{tr|Crawdad}}]]、[[{{tr|Giant Shelly}}]]、和[[{{tr|Salamander}}]]。在一个世界中，只有其中的随机两种会生成，而第三种不会出现。这已被{{tr|Bestiary}}的进度考虑到了，在其中两种{{tr|enemy}}解锁后，缺失的那种{{tr|enemy}}也会解锁。
+* [[{{tr|Old One's Army}}]]{{tr|enemies}}总是会显示其 {{tr|Tier 3}}{{tr|variant}}的外观和属性。
+* 遇到任何[[{{tr|Critters|link=y}}#{{tr|Gold critters}}|{{tr|gold critter}}]]会自动解锁所有其它金{{tr|critter}}的{{tr|Bestiary entry}}，这意味着只需要靠近一种金{{tr|critter}}即可。
+* 杀死由[[{{tr|statues}}]]生成的{{tr|enemy}}能增加其对应条目的进度，接近{{tr|statues}}生成的{{tr|critter}}也一样。
+* {{tr|A Bestiary entry}}的图像{{tr|background}}可以包含一个{{tr|biome background}}、一个半透明的颜色层，和/或一个{{tr|map background}}遮罩图像。{{tr|The biome backgrounds}}和[[{{tr|Minimap|link=y}}#全屏幕地图背景|全屏{{tr|minimap biome backgrounds}}]]相同；遮罩图像如下所示。
+<gallery widths=230px heights=130px>
+File:Map Background Overlay Sandstorm.png|{{gameText|Bestiary_Events.Sandstorm}}
+File:Map Background Overlay Rain.png|{{gameText|Bestiary_Events.Rain}}
+File:Map Background Overlay Day.png|{{gameText|Bestiary_Times.DayTime}}
+File:Map Background Overlay Night.png|{{gameText|Bestiary_Times.NightTime}}
+File:Map Background Overlay Solar Eclipse.png|{{gameText|Bestiary_Events.Eclipse}}
+File:Map Background Overlay Blizzard.png|{{gameText|Bestiary_Events.Blizzard}}
+File:Map Background Overlay Meteorite.png|{{gameText|Bestiary_Biomes.Meteor}}
+File:Map Background Overlay Pumpkin Moon.png|{{gameText|Bestiary_Invasions.PumpkinMoon}}
+File:Map Background Overlay Frost Moon.png|{{gameText|Bestiary_Invasions.FrostMoon}}
+</gallery>
+
+== 小贴士 ==
+* 能生成{{tr|Enemy}}的{{tr|statues}}可以用于解锁不常见{{tr|enemy}}的详细信息，例如[[{{tr|Medusa}}]]或[[{{tr|Mimics}}]]。
+** 如果获得了[[{{tr|Pigron}}]]{{tr|statue}}，就无需建造{{tr|Corrupt}}/{{tr|Crimson}}/{{tr|Hallowed Ice biome}}了，因为{{tr|statue}}能够召唤所有三种{{tr|variant}}，且{{tr|Pigron}}是仅有的在这些子{{tr|biomes}}中能找到的独特{{tr|enemy}}。
+* [[{{tr|Dungeon Guardian}}]]和[[{{tr|Tortured Soul}}]]的条目可以分别通过与[[{{tr|Clothier}}]]和[[{{tr|Tax Collector}}]]对话来解锁。
+* 为了完成 100% 的{{tr|Bestiary}}，必须人工建造[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]{{tr|biome}}，取决于世界中已经有哪种{{tr|evil biome}}。这还包括{{tr|Surface}}、{{tr|Underground}}、{{tr|Desert}}、{{tr|Underground Desert}}、和{{tr|Ice biomes}}的对应{{tr|biome}}以收集全部{{tr|Crimson}}/{{tr|Corruption}}{{tr|enemies}}和{{tr|critters}}的{{tr|variants}}。
+** 在{{tr|Hardmode}}下，处于[[{{tr|Graveyard}}]]中的[[{{tr|Dryad}}]]会售卖相对的{{tr|evil biome}}的{{tr|seeds}}。
+** [[Drunk world]] 会包括两种{{tr|evil biomes}}。
+: 此外，还需要触发[[{{tr|Halloween}}]]和[[{{tr|Christmas}}]]等[[{{tr|seasonal events}}]]以解锁[[{{tr|Santa Claus}}]]与{{tr|enemies}}和{{tr|critters}}的所有{{tr|variants}}。
+:* 到达[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]的最后一波会触发持续一个游戏日的{{tr|Halloween}}/{{tr|Christmas}}。
+:* 更改设备的日期也可以让{{tr|Halloween}}/{{tr|Christmas}}立即发生，参见对应{{tr|seasonal events}}的页面以获取详细信息。
+* {{tr|Bestiary}}的搜索功能允许使用特定 [[{{tr|bosses}}]] 的别称：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Bestiary.BestiaryDatabaseNPCsPopulator.ModifyEntriesThatNeedIt}}
+: {| class="terraria sortable lined"
+! {{tr|Boss}} !! 可搜索的别称
+|-
+{{options/set|item|maxsize=50x50px|icons=n}}
+| {{item|King Slime}} || {{code|slime king}}
+|-
+| {{item|Eye of Cthulhu}} || {{code|eoc}}
+|-
+| {{item|Eater of Worlds}} || {{code|eow}}
+|-
+| {{item|Brain of Cthulhu}} || {{code|boc}}
+|-
+| {{item|Queen Bee}} || {{code|qb}}<br/>{{code|bee queen}}
+|-
+| {{item|Wall of Flesh}} || {{code|wof}}
+|-
+| {{item|Queen Slime}} || {{code|slime queen}}
+|-
+| {{item|Retinazer}} || {{code|the twins}}<br/>{{code|mech boss}}
+|-
+| {{item|Spazmatism}} || {{code|the twins}}<br/>{{code|mech boss}}
+|-
+| {{item|The Destroyer}} || {{code|mech boss}}
+|-
+| {{item|Skeletron Prime}} || {{code|mech boss}}
+|-
+| {{item|Empress of Light}} || {{code|eol}}<br/>{{code|fairy}}
+|-
+| {{item|Moon Lord}} || {{code|moonlord}}<br/>{{code|cthulhu}}<br/>{{code|ml}}
+|}{{options/reset|item}}
+
+== 花絮 ==
+* [[{{tr|Guide}}]]位于{{tr|Bestiary}}首位而[[{{tr|Moon Lord}}]]位于图鉴末位似乎很合适，因为玩家在《{{tr|Terraria}}》{{tr|world}}中的旅程自{{tr|Guide}}开始，以{{tr|Moon Lord}}结束。
+* 在[[{{tr|pre-Hardmode}}]]的{{tr|world}}中能达到的最高{{tr|Bestiary}}完成百分比为 {{percent|353/{{b entries|100%}}}}（353 个条目）（包括从{{tr|Hardmode}}{{tr|world}}中带来物品）。
+** 这包括{{tr|Hardmode event}}召唤的{{tr|enemies}}、{{tr|boss}} [[{{tr|Consumables|link=y}}#{{tr|Summoning items}}|{{tr|summoning items}}]]、{{tr|statue}}生成、和在[[{{tr|secret world seeds}}]]中生成的{{tr|Town NPCs}}。
+** 如果不从{{tr|Hardmode world}}带来物品，最高完成百分比为 {{percent|293/{{b entries|100%}}}}（293 个条目）。
+* 《{{tr|Terraria}}》的游戏文件中存在着另外 5 个筛选器的图标，它们实际并未使用：{{dotlist|inline=y|style=margin-left:5px
+|[[File:Bestiary Oasis.png|link=]] [[{{tr|Oasis}}]]
+|[[File:Bestiary Blizzard.png|link=]] [[{{tr|Blizzard}}]]
+|[[File:Bestiary Slime Rain.png|link=]] [[{{tr|Slime Rain}}]]
+|[[File:Bestiary Reach Hardmode.png|link=]] [[{{tr|Hardmode}}]]
+|[[File:Bestiary Item Spawn.png|link=]] “{{tr|Item Spawn}}”（Item Spawn）
+}}
+* 在本地化文件中，可以找到每个{{tr|biome}}和{{tr|event}}筛选器的未使用的描述，包括未使用的筛选器。
+{{collapse top|显示未使用的描述列表。}}
+{| class="terraria lined sortable" style="margin:auto;"
+! 筛选器
+! 描述
+|- class="sortbottom topline"
+| [[File:Bestiary Goblin Invasion.png|link=]] {{gameText|Bestiary_Invasions.Goblins}}
+| {{gameText|Bestiary_BiomeText.biome_Goblins}}
+|-
+| [[File:Bestiary Pirate Invasion.png|link=]] {{gameText|Bestiary_Invasions.Pirates}}
+| {{gameText|Bestiary_BiomeText.biome_Pirates}}
+|-
+| [[File:Bestiary Martian Madness.png|link=]] {{gameText|Bestiary_Invasions.Martian}}
+| {{gameText|Bestiary_BiomeText.biome_Martian}}
+|-
+| [[File:Bestiary Old One's Army.png|link=]] {{gameText|Bestiary_Invasions.OldOnesArmy}}
+| {{gameText|Bestiary_BiomeText.biome_OldOnesArmy}}
+|-
+| [[File:Bestiary Pumpkin Moon.png|link=]] {{gameText|Bestiary_Invasions.PumpkinMoon}}
+| {{gameText|Bestiary_BiomeText.biome_PumpkinMoon}}
+|-
+| [[File:Bestiary Frost Moon.png|link=]] {{gameText|Bestiary_Invasions.FrostMoon}}
+| {{gameText|Bestiary_BiomeText.biome_FrostMoon}}
+|-
+| [[File:Bestiary Frost Legion.png|link=]] {{gameText|Bestiary_Invasions.FrostLegion}}
+| {{gameText|Bestiary_BiomeText.biome_FrostLegion}}
+|-
+| [[File:Bestiary Slime Rain.png|link=]] {{gameText|Bestiary_Events.SlimeRain}}
+| {{gameText|Bestiary_BiomeText.biome_SlimeRain}}
+|-
+| [[File:Bestiary Windy Day.png|link=]] {{gameText|Bestiary_Events.WindyDay}}
+| {{gameText|Bestiary_BiomeText.biome_WindyDay}}
+|-
+| [[File:Bestiary Blood Moon.png|link=]] {{gameText|Bestiary_Events.BloodMoon}}
+| {{gameText|Bestiary_BiomeText.biome_BloodMoon}}
+|-
+| [[File:Bestiary Halloween.png|link=]] {{gameText|Bestiary_Events.Halloween}}
+| {{gameText|Bestiary_BiomeText.biome_Halloween}}
+|-
+| [[File:Bestiary Rain.png|link=]] {{gameText|Bestiary_Events.Rain}}
+| {{gameText|Bestiary_BiomeText.biome_Rain}}
+|-
+| [[File:Bestiary Christmas.png|link=]] {{gameText|Bestiary_Events.Christmas}}
+| {{gameText|Bestiary_BiomeText.biome_Christmas}}
+|-
+| [[File:Bestiary Eclipse.png|link=]] {{gameText|Bestiary_Events.Eclipse}}
+| {{gameText|Bestiary_BiomeText.biome_Eclipse}}
+|-
+| [[File:Bestiary Party.png|link=]] {{gameText|Bestiary_Events.Party}}
+| {{gameText|Bestiary_BiomeText.biome_Party}}
+|-
+| [[File:Bestiary Blizzard.png|link=]] {{gameText|Bestiary_Events.Blizzard}}
+| {{gameText|Bestiary_BiomeText.biome_Blizzard}}
+|-
+| [[File:Bestiary Sandstorm.png|link=]] {{gameText|Bestiary_Events.Sandstorm}}
+| {{gameText|Bestiary_BiomeText.biome_Sandstorm}}
+|-
+| [[File:Bestiary Surface.png|link=]] {{gameText|Bestiary_Biomes.Surface}}
+| {{gameText|Bestiary_BiomeText.biome_Surface}}
+|-
+| [[File:Bestiary Graveyard.png|link=]] {{gameText|Bestiary_Biomes.Graveyard}}
+| {{gameText|Bestiary_BiomeText.biome_Graveyard}}
+|-
+| [[File:Bestiary Underground Jungle.png|link=]] {{gameText|Bestiary_Biomes.UndergroundJungle}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundJungle}}
+|-
+| [[File:Bestiary The Underworld.png|link=]] {{gameText|Bestiary_Biomes.TheUnderworld}}
+| {{gameText|Bestiary_BiomeText.biome_TheUnderworld}}
+|-
+| [[File:Bestiary The Dungeon.png|link=]] {{gameText|Bestiary_Biomes.TheDungeon}}
+| {{gameText|Bestiary_BiomeText.biome_TheDungeon}}
+|-
+| [[File:Bestiary The Corruption.png|link=]] {{gameText|Bestiary_Biomes.TheCorruption}}
+| {{gameText|Bestiary_BiomeText.biome_TheCorruption}}
+|-
+| [[File:Bestiary Underground.png|link=]] {{gameText|Bestiary_Biomes.Underground}}
+| {{gameText|Bestiary_BiomeText.biome_Underground}}
+|-
+| [[File:Bestiary The Hallow.png|link=]] {{gameText|Bestiary_Biomes.TheHallow}}
+| {{gameText|Bestiary_BiomeText.biome_TheHallow}}
+|-
+| [[File:Bestiary Underground Mushroom.png|link=]] {{gameText|Bestiary_Biomes.UndergroundMushroom}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundMushroom}}
+|-
+| [[File:Bestiary Stardust Pillar.png|link=]] {{gameText|Bestiary_Biomes.StardustPillar}}
+| {{gameText|Bestiary_BiomeText.biome_StardustPillar}}
+|-
+| [[File:Bestiary The Jungle.png|link=]] {{gameText|Bestiary_Biomes.Jungle}}
+| {{gameText|Bestiary_BiomeText.biome_Jungle}}
+|-
+| [[File:Bestiary Caverns.png|link=]] {{gameText|Bestiary_Biomes.Caverns}}
+| {{gameText|Bestiary_BiomeText.biome_Caverns}}
+|-
+| [[File:Bestiary Underground Snow.png|link=]] {{gameText|Bestiary_Biomes.UndergroundSnow}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundSnow}}
+|-
+| [[File:Bestiary Ocean.png|link=]] {{gameText|Bestiary_Biomes.Ocean}}
+| {{gameText|Bestiary_FlavorText.npc_ZombieElfBeard}}| {{gameText|Bestiary_BiomeText.biome_Ocean}}
+|-
+| [[File:Bestiary Surface Mushroom.png|link=]] {{gameText|Bestiary_Biomes.SurfaceMushroom}}
+| {{gameText|Bestiary_BiomeText.biome_SurfaceMushroom}}
+|-
+| [[File:Bestiary Underground Desert.png|link=]] {{gameText|Bestiary_Biomes.UndergroundDesert}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundDesert}}
+|-
+| [[File:Bestiary Snow.png|link=]] {{gameText|Bestiary_Biomes.Snow}}
+| {{gameText|Bestiary_BiomeText.biome_Snow}}
+|-
+| [[File:Bestiary Desert.png|link=]] {{gameText|Bestiary_Biomes.Desert}}
+| {{gameText|Bestiary_BiomeText.biome_Desert}}
+|-
+| [[File:Bestiary Meteor.png|link=]] {{gameText|Bestiary_Biomes.Meteor}}
+| {{gameText|Bestiary_BiomeText.biome_Meteor}}
+|-
+| [[File:Bestiary Oasis.png|link=]] {{gameText|Bestiary_Biomes.Oasis}}
+| {{gameText|Bestiary_BiomeText.biome_Oasis}}
+|-
+| [[File:Bestiary Spider Nest.png|link=]] {{gameText|Bestiary_Biomes.SpiderNest}}
+| {{gameText|Bestiary_BiomeText.biome_SpiderNest}}
+|-
+| [[File:Bestiary The Crimson.png|link=]] {{gameText|Bestiary_Biomes.Crimson}}
+| {{gameText|Bestiary_BiomeText.biome_Crimson}}
+|-
+| [[File:Bestiary Solar Pillar.png|link=]] {{gameText|Bestiary_Biomes.SolarPillar}}
+| {{gameText|Bestiary_BiomeText.biome_SolarPillar}}
+|-
+| [[File:Bestiary Vortex Pillar.png|link=]] {{gameText|Bestiary_Biomes.VortexPillar}}
+| {{gameText|Bestiary_BiomeText.biome_VortexPillar}}
+|-
+| [[File:Bestiary The Temple.png|link=]] {{gameText|Bestiary_Biomes.TheTemple}}
+| {{gameText|Bestiary_BiomeText.biome_TheTemple}}
+|-
+| [[File:Bestiary Underground Corruption.png|link=]] {{gameText|Bestiary_Biomes.UndergroundCorruption}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundCorruption}}
+|-
+| [[File:Bestiary Nebula Pillar.png|link=]] {{gameText|Bestiary_Biomes.NebulaPillar}}
+| {{gameText|Bestiary_BiomeText.biome_NebulaPillar}}
+|-
+| [[File:Bestiary Corrupt Cave Desert.png|link=]] {{gameText|Bestiary_Biomes.CorruptUndergroundDesert}}
+| {{gameText|Bestiary_BiomeText.biome_CorruptUndergroundDesert}}
+|-
+| [[File:Bestiary Crimson Cave Desert.png|link=]] {{gameText|Bestiary_Biomes.CrimsonUndergroundDesert}}
+| {{gameText|Bestiary_BiomeText.biome_CrimsonUndergroundDesert}}
+|-
+| [[File:Bestiary Hallow Cave Desert.png|link=]] {{gameText|Bestiary_Biomes.HallowUndergroundDesert}}
+| {{gameText|Bestiary_BiomeText.biome_HallowUndergroundDesert}}
+|-
+| [[File:Bestiary Corrupt Desert.png|link=]] {{gameText|Bestiary_Biomes.CorruptDesert}}
+| {{gameText|Bestiary_BiomeText.biome_CorruptDesert}}
+|-
+| [[File:Bestiary Hallow Desert.png|link=]] {{gameText|Bestiary_Biomes.HallowDesert}}
+| {{gameText|Bestiary_BiomeText.biome_HallowDesert}}
+|-
+| [[File:Bestiary Crimson Desert.png|link=]] {{gameText|Bestiary_Biomes.CrimsonDesert}}
+| {{gameText|Bestiary_BiomeText.biome_CrimsonDesert}}
+|-
+| [[File:Bestiary Granite.png|link=]] {{gameText|Bestiary_Biomes.Granite}}
+| {{gameText|Bestiary_BiomeText.biome_Granite}}
+|-
+| [[File:Bestiary Underground Crimson.png|link=]] {{gameText|Bestiary_Biomes.UndergroundCrimson}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundCrimson}}
+|-
+| [[File:Bestiary Underground Hallow.png|link=]] {{gameText|Bestiary_Biomes.UndergroundHallow}}
+| {{gameText|Bestiary_BiomeText.biome_UndergroundHallow}}
+|-
+| [[File:Bestiary Marble.png|link=]] {{gameText|Bestiary_Biomes.Marble}}
+| {{gameText|Bestiary_BiomeText.biome_Marble}}
+|-
+| [[File:Bestiary Corrupt Ice.png|link=]] {{gameText|Bestiary_Biomes.CorruptIce}}
+| {{gameText|Bestiary_BiomeText.biome_CorruptIce}}
+|-
+| [[File:Bestiary Hallow Ice.png|link=]] {{gameText|Bestiary_Biomes.HallowIce}}
+| {{gameText|Bestiary_BiomeText.biome_HallowIce}}
+|-
+| [[File:Bestiary Crimson Ice.png|link=]] {{gameText|Bestiary_Biomes.CrimsonIce}}
+| {{gameText|Bestiary_BiomeText.biome_CrimsonIce}}
+|-
+| [[File:Bestiary Sky.png|link=]] {{gameText|Bestiary_Biomes.Sky}}
+| {{gameText|Bestiary_BiomeText.biome_Sky}}
+|-
+| [[File:Bestiary Daytime.png|link=]] {{gameText|Bestiary_Times.DayTime}}
+| {{gameText|Bestiary_BiomeText.biome_DayTime}}
+|-
+| [[File:Bestiary Nighttime.png|link=]] {{gameText|Bestiary_Times.NightTime}}
+| {{gameText|Bestiary_BiomeText.biome_NightTime}}
+|}
+{{collapse bottom}}
+* [[{{tr|Gnome}}]]是{{tr|Bestiary}}中列出的第一种{{tr|enemy}}。它也是游戏中唯一的不杀死它就能解锁其{{tr|Bestiary entry}}的{{tr|enemy}}。
+* 完成{{tr|Bestiary}} 15% 且不杀死任何[[{{tr|enemies}}]]是可能的。
+* [[{{tr|Moon Lord}}]]的{{tr|Bestiary entry}}是唯一没有{{tr|background}}或[[{{tr|Biomes}}|{{tr|biome}}]]的条目，这很可能是由于它来自世界之外。其图像上的{{tr|The background}}完全是黑色的，且没有可见的{{tr|biome}}筛选器。
+* 虽然{{tr|rarity}}星级系统的范围为 0–5，但是没有条目具有 0 星的{{tr|rarity}}。
+
+== 另见 ==
+* {{forums thread|mythical-beasts-where-to-farm-them-exploring-terrarias-bestiary.88471/|Mythical Beasts & Where to Farm Them: Exploring Terraria's Bestiary}} {{small|{{date|2020|05|08}}}}，由 [[{{tr|Re-Logic}}]] 发布，用于介绍{{tr|Bestiary}}的[[{{tr|forums}}]]贴子。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|所有{{tr|Scarecrow}}的{{tr|Bestiary entry}}将共享同一个击杀计数（而不是以前的独立的 10 次击杀计数），并且会同时被解锁。}}
+{{history|Desktop 1.4.4.7|修复了{{tr|Bestiary entries}}在排序时不会先更新其调整过的属性的问题。}}
+{{history|Desktop 1.4.4|
+** 添加了[[{{tr|Stinkbug}}]]、[[{{tr|Toucan}}]]、[[{{tr|Macaws}}]]、[[{{tr|Cockatiels}}]]、[[{{tr|Shimmer Slime}}]]、[[{{tr|Faeling}}]]、和[[{{tr|Mystic Frog}}]]的条目。
+** {{tr|Bestiary}}现在基于当前游玩情况显示属性（基于如难度、种子等事物）。
+** {{tr|Bestiary}}现在显示{{tr|enemy}}的击杀数，
+** {{tr|Old One's Skeleton}}的最高击杀数由 200 降低至 150。
+** {{tr|Splinterling}}的最高击杀数由 100 提升至 150。
+** 以下{{tr|enemies}}的最高击杀数由 50 分别更改为：{{tr|Hellhound}}（100）、{{tr|Poltergeist}}（100）、{{tr|The Groom}}（10）、{{tr|The Bride}}（10）、{{tr|Rune Wizard}}（10）、{{tr|Tim}}（10）、{{tr|Doctor Bones}}（10）、{{tr|Dreadnautilus}}（10）、{{tr|Zombie Merman}}（25）、{{tr|Wandering Eye Fish}}（25）、{{tr|Hemogoblin Shark}}（25）、{{tr|Blood Eel}}（25）、{{tr|Blue Cultist Archer}}（25）、{{tr|Lunatic Devotee}}（25）、{{tr|Clown}}（25）、{{tr|Devourer}}（25）、{{tr|Gnome}}（25）、{{tr|Goblin Warlock}}（25）、{{tr|Corrupt Mimic}}（25）、{{tr|Crimson Mimic}}（25）、{{tr|Hallowed Mimic}}（25）、{{tr|Ice Golem}}（25）、{{tr|Moth}}（25）、{{tr|Nymph}}（25）、{{tr|Paladin}}（25）、{{tr|Pinky}}（25）、{{tr|Pirate Captain}}（25）、{{tr|Sand Elemental}}（25）、{{tr|Mothron}}（25）、{{tr|Nailhead}}（25)。
+** 现在在“For the Worthy”和“Not the Bees”[[{{tr|secret world seeds}}]]中应当能 100% 完成[[{{tr|Bestiary}}]]。}}
+{{history|Desktop 1.4.3|添加了[[{{tr|Deerclops}}]]的条目。}}
+{{history|Desktop 1.4.2|添加了可删除搜索栏中的文本的按钮。}}
+{{history|Desktop 1.4.1|
+** 添加了[[{{tr|Princess}}]]和[[{{tr|The Torch God}}]]的条目。
+** 拥有独立的{{tr|Bestiary entry}}的 {{tr|Boss}} {{tr|minions}}现在会在击败对应 {{tr|boss}} 后完整解锁。
+** 现在[[{{tr|Dark Mage}}]]和[[{{tr|Ogre}}]]的{{tr|Bestiary entry}}在击杀一次后即可全部解锁。}}
+{{history|Desktop 1.4.0.5|
+** 完成{{tr|Bestiary}}略微更容易，因为[[{{tr|Black Slime}}]]和[[{{tr|Jellyfish}}#{{tr|Blue Jellyfish}}|{{tr|Blue Jellyfish}}]]现在会在[[{{tr|Hardmode}}]]中生成。
+** 修复了多个飞行{{tr|critters}}不总是会记录到{{tr|Bestiary}}中的问题。
+** 修复了[[{{tr|Giant Flying Fox}}]]条目的背景。
+** 修复了[[{{tr|Light Lamia}}]]的{{tr|Bestiary entry}}没有将其显示为[[{{tr|Hallowed Desert}}]]分类的问题。
+** 调整了不一致的[[{{tr|Critters}}|{{tr|critter}}]]/金{{tr|critter}}的顺序。
+** 现在[[{{tr|Flying Dutchman}}]]的{{tr|Bestiary entry}}在击杀一次后即可全部解锁。}}
+{{history|Desktop 1.4.0.4|修复了在 Linux 系统上有关于[[{{tr|Solar Pillar}}]]{{tr|enemy}}筛选的崩溃问题。}}
+{{history|Desktop 1.4.0.3|
+** 现在[[{{tr|Betsy}}]]的{{tr|Bestiary entry}}在击杀一次后即可全部解锁。
+** [[{{tr|Dungeon Guardian}}]]和[[{{tr|Old Man}}]]的{{tr|Bestiary entry}}在击败[[{{tr|Skeletron}}]]时会自动解锁。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Bestiary}}

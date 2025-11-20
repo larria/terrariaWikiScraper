@@ -1,0 +1,36 @@
+{{npc infobox
+| auto = 30
+| type = Projectile NPC
+| environment = Goblin Army / Cavern
+| id = 30 / 665 ({{tr|Tim}})
+}}<!--
+
+// invisible infobox for cargo storage:
+-->{{npc infobox | view = void | auto = 665 | type = Projectile}}
+
+'''{{tr|Chaos Ball}}'''是[[{{tr|Tim}}]]和[[{{tr|Goblin Sorcerer}}]]所发射[[{{tr|projectile NPC}}]]。{{eil|Goblin Warlock}}也会在绕着玩家转的时候不断召唤发射{{tr|Chaos Ball}}。{{tr|The Chaos Ball}}以 {{mph|22.5 tiles}} 的速度沿直线平稳移动，无障碍地穿过[[{{tr|blocks}}]]，在此过程中会发出相当数量的光。可以用任何能造成伤害的[[{{tr|weapon}}]]或[[{{tr|tool}}]]击中来摧毁它。
+
+== 花絮 ==
+* 在游戏内部，{{tr|the Chaos Ball}}被视为是[[{{tr|enemy}}]]而非[[{{tr|projectile}}]]。因此，和真正的{{tr|projectiles}}不同，它有一个 [[{{tr|NPC ID}}]] 和诸如生命值和防御力等属性数据。
+
+== 另见 ==
+* [[{{tr|Burning Sphere}}]]
+* [[{{tr|Water Sphere}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.2|{{tr|Tim}}发射的{{tr|Chaos Balls}}现在{{tr|internal NPC ID}} 为 665。}}
+{{history|Desktop 1.4.2.2|现在受{{tr|Goblin Sorcerer}}和{{tr|Tim}}[[{{tr|banners (enemy)}}|{{tr|banners}}]]影响。}}
+{{history|Desktop 1.3.0.1|现在{{tr|Goblin Warlocks}}也会发射。}}
+{{history|Desktop 1.0.4|被玩家击杀后不再掉落[[{{tr|Heart}}]]或[[{{tr|Star}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-common = yes
+| show-event = yes
+}}
+
+{{language info|en=Chaos Ball}}

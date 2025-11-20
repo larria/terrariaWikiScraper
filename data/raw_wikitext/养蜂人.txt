@@ -1,0 +1,74 @@
+{{item infobox | boxwidth = 22em
+| auto = 1123
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 22 {{eicons|1.3.0.1|invert=y|small=y}}
+| debuff = Confused / 2 / 90%
+| idprojectile = 181
+| tags = drop / bag loot / treasure bag loot
+| listcat = broadswords / projectile melee
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} <br/> {{sc|54}} {{eicons|1.4.0.1|invert=y|small=y}}
+}}
+{{drop infobox|style=clear:right}}
+[[File:Bee Keeper (demo).gif|frame|{{tr|The Bee Keeper}}攻击[[{{tr|Target Dummy}}]]，同时对[[{{tr|Skeleton}}]]造成[[{{tr|Confused}}]]{{tr|debuff}}并召唤{{tr|bees}}。]]
+
+'''{{tr|Bee Keeper}}'''是一把[[{{tr|Pre-Hardmode}}]]的[[{{tr|sword}}]]，在击中时有 {{chance|9/10}} 几率对被击中的{{tr|enemy}}/有 {{chance|8/9}} 几率对被击中的其他玩家造成[[{{tr|Confused}}]][[{{tr|debuff}}]]，持续 2 秒。每击中一个{{tr|enemy}}，它还会生成 1-3（若装备{{eil|Hive Pack}}则是 1-4）个友好的{{tr|Bee projectiles}}。{{source code ref|v=1.4.3.6|method=Terraria.Player.ApplyNPCOnHitEffects / Terraria.Player.StatusToNPC}}这些{{tr|projectiles}}造成{{tr|weapon}}{{tr|base damage}}的 {{chance|1/3}}（{{eicons|1.3.0.1}} {{#expr:{{iteminfo|Bee Keeper|damage}}/3 round 0}} / {{eicons|1.3.0.1|invert=y}} 7 {{tr|base damage}}），还有 {{chance|1/2}} 的几率额外造成 1 点伤害。友好的{{tr|bees}}会追踪最近的目标，它可以穿透两个{{tr|enemies}}，并会在 10 {{tr|second}}的持续时间后消失。它可以在实心[[{{tr|blocks}}]]上反弹三次，还会在接触到[[{{tr|water}}]]或[[{{tr|lava}}]]时消失。{{tr|Bee Keeper}}有 {{chance|1/3}} 的几率掉落自[[{{tr|Queen Bee}}]]。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Bee Keeper|expectedrows=1}}
+
+== 备注 ==
+* 装备{{eil|Hive Pack}}时，有 {{chance|1/3}} 几率生成额外的{{tr|Bee projectile}}，并且所有{{tr|Bee projectiles}}有 {{chance|1/2}} 几率转化为{{tr|Giant Bee projectiles}}，总会提高 1–3 {{tr|damage}}，造成 {{knockback|full=y|0.5|class=}}[[{{tr|knockback}}]]，能穿透{{tr|enemies}}和碰到实体{{tr|blocks}}后反弹共 4 次，飞得更快，并持续 11 {{tr|seconds}}。两种{{tr|bee projectiles}}都会在{{tr|contact}}到[[{{tr|water}}]]或[[{{tr|lava}}]]后立即消失。{{source code ref|v=1.4.4.9|method=Terraria.Player.beeType / Terraria.Player.beeDamage / Terraria.Player.beeKB / Terraria.Projectile.SetDefaults|t=虽然{{tr|Giant Bees}}的实际{{tr|knockback}}为<code>0.5 + ''{{tr|Bee}}{{tr|knockback}}'' × 1.1</code>, 但是所有普通{{tr|Bees}}的{{tr|knockback}}都为 0，使 1.1 倍乘数相关计算永不生效。}}
+* [[{{tr|Armor penetration}}]]效果（来自[[{{tr|Shark Tooth Necklace}}]]和[[{{tr|Sharpening Station}}]]）也会影响召唤出来的{{tr|bees}}所造成的伤害，同时也会对它们的打击造成额外伤害。
+* {{eicons|1.3.0.1}} {{tr|The Bee Keeper}}能[[{{tr|autoswing}}]]。
+
+== 小贴士 ==
+* 用{{tr|the Bee Keeper}}对抗[[{{tr|Worm AI}}|{{tr|worm}}]]类{{tr|enemies}}时，如果它正好穿过{{tr|sword}}的挥舞区域，就会释放出很多{{tr|bees}}。
+* 即使在[[{{tr|Hardmode}}]]中，{{tr|The Bee Keeper}}也会很有用，因为它在造成{{tr|Confused}}的同时造成相当大的伤害，加上{{tr|bee}}之后更是如此。
+* 这些友方{{tr|The bees}}非常有助于群体控制，因为它们不仅可以杀死被{{tr|sword}}所伤的{{tr|enemies}}，还能严重地伤害或击杀附近的其他{{tr|enemy}}。
+
+== 花絮 ==
+* {{tr|The Bee Keeper}}是唯一能造成[[{{tr|Confused}}]]{{tr|debuff}}的{{tr|pre-hardmode}}武器。虽然{{eil|Brain of Confusion}}也可以造成此{{tr|the debuff}}。但它是个{{tr|accessory}}。
+* {{tr|The Bee Keeper}}（英文：Bee Keeper）的名字来自现实中的职业{{wikipedia|beekeeper|养蜂人}}（beekeeper）。
+* 尽管{{tr|item}}的{{tr|Tooltip}}说此剑有“小几率”引发{{tr|Confused}}，但实际上它有 {{chance|9/10}} 几率做到这点。这很可能是个错误。
+* {{tr|The Bee Keeper}}的{{tr|Confused}}{{tr|debuff}}很诡异地也对其他玩家起作用，而大多数{{tr|weapon}}造成的{{tr|debuffs}}在 [[{{tr|PvP}}]] 中通常会被禁用。
+* 尽管[[{{tr|Falcon Blade}}]]有更高的{{tr|rarity}}，但{{tr|the Bee Keeper}}在所有方面（包括售价）都要优于{{tr|Falcon Blade}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|生成的{{tr|Bees}}现在会基于{{tr|melee critical strike}}几率造成[[{{tr|crit}}]]。}}
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 26 提升至 30。
+** {{tr|Sprite updated}}并且{{tr|size}}有所增加。旧{{tr|sprite}}为：[[File:Bee Keeper (pre-1.4.4).png|link=]]。}}
+{{history|Desktop 1.4.1| 
+** 伤害由 24 提升至 26。
+** {{tr|Use time}}由 22 降低至 20。
+** 击退由 5 提升至 5.3。
+** 现在又能{{tr|autoswings}}了。}}
+{{history|Desktop 1.4.0.3|现在用于制作[[{{tr|Zenith}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated}}。旧{{tr|sprite}}为：[[File:Bee Keeper (old).png|link=]]。
+** 伤害由 26 降低至 24。
+** {{tr|Use time}}由 20 提升至 22。
+** 击退由 5.3 降低至 5。
+** 不再{{tr|autoswing}}。
+** 出售价值由 {{sc|54}} 提升至 {{gc|2}}。}}
+{{history|Desktop 1.3.0.4|修正了{{tr|Bee Keeper}}在假人上产生效果的问题。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 22 提升至 26。 
+** 现在会[[{{tr|autoswing}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Bee Keeper}}

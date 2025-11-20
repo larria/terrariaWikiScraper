@@ -1,0 +1,38 @@
+{{item infobox
+| type = Miscellaneous
+| auto = 1000
+| damage = 0
+| damagetype = ranged
+| tags = novelty / buy / vendor:Party Girl
+}}
+
+[[File:Confetti Gun (demo).gif|frame|right|{{tr|Confetti Gun}}射出彩纸。]]
+
+'''{{tr|Confetti Gun}}'''是一种消耗性的{{tr|novelty weapon}}，可发射一大堆不造成任何{{tr|damage}}的缤纷{{tr|confetti}}。它的效果是纯粹美学性的，并没有实际用途。{{tr|Confetti Guns}}是一次性用品，击发完后即刻消失。它们可以以每个 {{iteminfo|Confetti Gun|buy}} 的价格从[[{{tr|Party Girl}}]]处购买。
+
+== 备注 ==
+* 虽然它视觉上发射的是{{tr|confetti}}，但{{tr|Confetti Gun}}实际上跟[[{{tr|Confetti}}]]（一种[[{{tr|crafting material}}]]）无关。
+* {{tr|Confetti Gun}}并非是一把真正消耗[[{{tr|ammunition}}]]的[[{{tr|gun}}]]。它其实更像是类似于{{wikipedia|party popper|礼花炮}}的一次性用品。
+* {{tr|Confetti Gun}}在内部被视为是[[{{tr|ranged}}]]伤害{{tr|item}}，因此受益于[[{{tr|ammo conservation}}]]。但是，仅限于[[{{tr|armor}}]]{{tr|items}}所提供的{{tr|ammo conservation}}奖励，[[{{tr|Magic Quiver}}]]、[[{{tr|Ammo Box}}]]和[[{{tr|Ammo Reservation Potion}}]]对{{tr|Confetti Gun}}不起作用。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}<!-- The usual, "actual" ammo conservation check in Terraria.Player.PickAmmo() that includes the Ammo Box and other items is skipped because that method is only called for items with useAmmo > 0, which is not the case for the Confetti Gun. -->
+
+== 花絮 ==
+* {{tr|Confetti Gun}}作为加入游戏的第 1000 个物品，用来庆祝这个里程碑。<ref>{{archived link|https://web.archive.org/web/20150910070550/http://www.terrariaonline.com/threads/1-000-items.99624/|1,000 items!}} {{small|{{date|2013|05|04}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Novelty items}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Confetti Gun}}

@@ -1,0 +1,125 @@
+<includeonly><!--
+
+// base: fetch info from the cargo table using the following constraints
+-->{{#vardefine:cargo_constraints|
+  d._value IS NOT NULL
+  AND d._value NOT IN ('Suffocation', 'Tipsy', 'Potion Sickness', 'Cerebral Mindtrick') <!-- these debuffs cannot be inflicted on enemies -->
+  AND (
+       i.type HOLDS 'weapon'
+    OR i.type HOLDS 'ammunition'
+    OR i.type HOLDS 'miscellaneous'
+    OR i.type HOLDS 'armor'
+    OR i.type HOLDS 'accessory'
+    OR i.type HOLDS 'potion' <!-- Love/Stink Potion -->
+    OR (i.type HOLDS 'tool' AND i.damage>0)
+  )
+}}<!--
+
+// manual additions, supplementing the cargo table:
+-->{{#vardefine:additions|{{#af_list:
+ {{#af_object:name=Explosive Trap sentry summons|debuff=Oiled|image=Explosive Trap Cane.png|note=([[{{tr|link=y|Huntress armor}}|{{tr|Huntress armor}}]] / [[{{tr|link=y|Red Riding armor}}|{{tr|Red Riding armor}}]])|icons=no}}
+|{{#af_object:name=Flask of Cursed Flames|debuff=Cursed Inferno}}
+|{{#af_object:name=Flask of Fire|debuff=On Fire!}}
+|{{#af_object:name=Flask of Gold|debuff=Midas}}
+|{{#af_object:name=Flask of Ichor|debuff=Ichor}}
+|{{#af_object:name=Flask of Nanites|debuff=Confused}}
+|{{#af_object:name=Flask of Poison|debuff=Poisoned}}
+|{{#af_object:name=Flask of Venom|debuff=Acid Venom}}
+|{{#af_object:name=Inferno Potion|debuff=Hellfire}}
+}}}}<!--
+
+-->{{#switch:{{{1|}}}<!--
+
+// output: list of debuffs that can be inflicted on enemies by the player
+-->|list = {{#af_pipeline:
+
+<!-- list of debuffs: cargo query -->
+{{#invoke:CargoQuery|afExport|plainList = d._value
+	| q?tables = Items=i, Items__debuffs=d
+	| q?join = i._ID=d._rowID
+	| q?fields = d._value
+	| q?where = {{#var:cargo_constraints}}
+	| q?groupBy = d._value
+}}
+
+<!-- make manual additions ("debuff" keys from the array #var:additions) -->
+| {{#af_merge:{{{prev}}}|{{#af_map:{{#var:additions|{{AF_EMPTY}}}}|addition|{{#af_get:{{{addition}}}|debuff}}}}}}
+
+<!-- ensure that there are no duplicates after the manual additions -->
+| {{#af_unique:{{{prev}}}}}
+
+<!-- iterate over the list of debuff names and make an object for each one -->
+| {{#af_map:{{{prev}}}|debuffname|
+	<!-- in this object put the translated debuff name and the link to the debuff page -->
+	{{#af_object:
+		 trname={{buffinfo|{{buffIdFromName|{{{debuffname}}}}}|name}}
+		|page={{buffinfo|{{buffIdFromName|{{{debuffname}}}}}|page}}
+	}}
+}}
+
+<!-- now we have a list of objects, each with a key "trname" and a key "page" -->
+<!-- sort this list by the translated debuff name (key "trname") -->
+| {{#af_keysort:{{{prev}}}|trname}}
+
+<!-- format each debuff as a link -->
+| {{#af_map:{{{prev}}}|debuff|[[{{#af_get:{{{debuff}}}|page}} | {{#af_get:{{{debuff}}}|trname}}]]}}
+
+<!-- combine the debuff links in a list via {{comma}} -->
+| {{#af_template:comma|{{{prev}}}}}
+
+}}<!-- end of #af_pipeline
+
+
+// output: table of items with the debuffs they inflict
+-->|table = <!--
+
+-->{{options/snap|item|debuffs_on_enemies}}<!--
+-->{{options/set|item|wrap=y}}<!--
+-->{{#af_pipeline:
+
+<!-- list of items and their debuffs: cargo query -->
+{{#invoke:CargoQuery|afExport
+	| q?tables = Items=i, Items__debuffs=d
+	| q?join = i._ID=d._rowID
+	| q?fields = d._value=debuff, i.name=name
+	| q?where = {{#var:cargo_constraints}}
+	| q?orderBy = debuff, name
+	| q?limit = 1000
+}}
+
+<!-- make manual additions -->
+| {{#af_merge:{{{prev}}}|{{#var:additions|{{AF_EMPTY}}}}}}
+
+<!-- for each of the objects (from the cargo query plus manual additions), add the translated item name, translated buff name, and a key "1" (for the first unnamed parameter of {{item}}) -->
+| {{#af_map:{{{prev}}}|object|<!-- iterate over the list of objects -->
+	{{#af_merge:{{{object}}}|{{#af_object:
+		<!-- add these keys to each object: -->
+		 trname={{tr|{{#af_get:{{{object}}}|name}}}}
+		|trdebuff={{tr|{{#af_get:{{{object}}}|debuff}}}}
+		|1={{#af_get:{{{object}}}|name}}
+	}}}}
+}}
+
+<!-- sort by translated item name, then translated buff name, so that the result is ordered by buff name first and item name second -->
+| {{#af_keysort:{{{prev}}}|trname}}
+| {{#af_keysort:{{{prev}}}|trdebuff}}
+
+<!-- format each object as a table row, using [[Debuffs/weaponsRow]] -->
+| {{#af_foreach:{{{prev}}}||object|<nowiki/>
+{{#af_template::{{ROOTPAGENAME}}/weaponsRow|{{#af_object:item={{{object}}}}}}}
+}}
+
+}}<!-- end of #af_pipeline
+-->{{options/restore|item|debuffs_on_enemies}}<!--
+
+-->}}<!-- end of #switch
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+It has two modes:
+# <code><nowiki>{{:Debuffs/on enemies|list}}</nowiki></code> displays a [[Template:Comma|comma-separated]], linked list of all debuffs that can be inflicted on enemies by the player.
+# <code><nowiki>{{:Debuffs/on enemies|table}}</nowiki></code> displays rows for a table of those debuffs along with the items that inflict them. The table start (<code><nowiki>{|</nowiki></code>) and end (<code><nowiki>|}</nowiki></code>) are not included and must be added.
+
+{{language info|en=Debuffs/on enemies}}
+</noinclude>

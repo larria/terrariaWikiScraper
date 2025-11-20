@@ -1,0 +1,66 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4680
+| buff = Harvest Time / 3
+| idprojectile = 849, 916
+| sound1 = Item 153.wav
+| soundcaption1 = 甩鞭
+| listcat = whips
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Dark Harvest (demo).gif|thumb|right|{{tr|player}}使用[[{{tr|Flinx Staff}}]]攻击一只[[{{tr|Shark}}]]，伴随着{{tr|Dark Harvest}}的效果。注意{{tr|Dark Harvest}}伤害的连锁能力，使得其可以穿过墙壁击中[[{{tr|Goblin Scout}}]]，以及{{tr|Flinx}}最后两下攻击的{{tr|Damage}}。]]
+
+'''{{tr|Dark Harvest}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|Whips}}]]，其有 2.5–12.5%（{{expert|6.25–12.5%}}）的概率掉落自[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]的期间[[{{tr|Pumpking}}]]，概率取决于当前波次<ref>{{tr|pumpkin moon}}的各个波次所对应的具体掉落几率：{{pumpkin moon item drop rates|1/8|fromwave=10|towave=20}} 更多信息见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]。</ref> {{whip note|penalty=10%}}
+
+使用{{tr|Dark Harvest}}击中{{tr|enemy}}会给目标施加 4 {{tr|seconds}}的暗黑能量光环。当{{tr|minion}}或{{tr|sentry}}攻击受暗黑光环影响的{{tr|enemy}}时，此{{tr|enemy}}会额外受到 10 点{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}} 同时产生名为''{{tr|Reaping}}''的次级效果，会使附近三个{{tr|enemy}}同时受到 10 点{{tr|damage}}，即使它们先前未被{{tr|Dark Harvest}}击中过。{{tr|Reaping}}无视实心[[{{tr|blocks}}]]，不受任何{{tr|damage}}加成影响，且具有 50 [[{{tr|armor penetration}}]]。
+
+此外，使用{{tr|Dark Harvest}}击中{{tr|enemy}}也会提供'''{{tr|Harvest Time}}'''[[{{tr|Buffs}}]]，这会在 3 秒内提升 35% [[{{tr|attack speed}}]]。可通过使用{{tr|Dark Harvest}}再次击中{{tr|enemy}}来重置此{{tr|buff}}的{{tr|duration}}，也可以据此重新为击中的{{tr|enemy}}施加暗黑光环效果。
+
+{{modifier|whip}}
+
+== 备注 ==
+* 暗黑光环可在{{tr|enemy}}身上总计持续 4 秒。它不会在受到{{tr|minion}}或{{tr|sentry}}攻击时被移除。<!-- as opposed to being removed on hit, like with the Firecracker -->
+* {{tr|Reaping}}效果有 25 {{tr|tiles}}的半径，且它可以从一个{{tr|enemy}}“跳跃”到下一{{tr|enemy}}。如果四个{{tr|enemy}}排列为间隔均为 25 {{tr|tiles}}的一列，这可使其最远能击中距离首位{{tr|enemy}} 75 {{tr|tiles}}远的{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_176_EdgyLightning / Terraria.Projectile.SetDefaults}}
+* 在内部，{{tr|dark harvest}}击中{{tr|enemy}}时会赋予 10 {{tr|summon}}[[标记{{tr|damage}}]]，而在攻击{{tr|enemy}}时产生的{{tr|reaping}}{{tr|projectiles}}实际上并不会对{{tr|enemy}}本身造成伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{tr|minions}}和{{tr|sentries}}对{{tr|Dark Harvest}}击中目标的直接{{tr|damage}}不会受{{tr|armor penetration}}影响。只有{{tr|reaping}}效果，即对附近其他{{tr|enemy}}的伤害，具有{{tr|armor penetration}}。
+* {{tr|Reaping}}效果的{{tr|damage}}受[[{{tr|Blade Staff}}]]和[[{{tr|Lightning Aura sentry summons}}|{{tr|Lightning Aura sentries}}]]的{{tr|summon}}标记{{tr|damage}}惩罚影响。
+
+== 小贴士 ==
+* 由于{{tr|Dark Harvest}}的{{tr|Harvest Time}}[[{{tr|Buffs|buff}}]]的特性，在{{tr|buff}}激活时切换到另一{{tr|whip}}可以短暂地提高它的攻击速度。
+* {{tr|Dark Harvest}}的高{{tr|attack speed}}使其成为了所有{{tr|whip}}中具有第三高{{DPS}}的{{tr|whip}}，落后于[[{{tr|Morning Star}}]]和[[{{tr|Kaleidoscope}}]]。使用提升{{tr|melee speed}}的{{tr|accessories}}时，{{tr|the Dark Harvest}}能够达到与{{tr|Morning Star}}持平甚至超过的水平，不过这需要特殊的装备配置。
+* 这是在击败[[{{tr|Empress of Light}}]]前能获得的最好的[[{{tr|Plantera}}]]后{{tr|whips}}之一。不过，[[{{tr|Morning Star}}]]对于单个目标来说表现可能更好，因为它能提升{{tr|minion}}的{{tr|damage}}和{{tr|critical strike chance}}。
+* {{tr|Dark Harvest}}很适合用于{{tr|events}}中，因为{{tr|player}}可以集中攻击应对{{tr|mini-bosses}}，让{{tr|reaping}}效果处理附近较弱的{{tr|enemies}}。
+* {{tr|Dark Harvest}}和攻击频率高的{{tr|minions}}搭配更佳，如[[{{tr|Xeno Staff}}]]或[[{{tr|Blade Staff}}]]。
+* 如果玩家切换武器的速度足够快，他们将能同时获得来自[[{{tr|Snapthorn}}]]、[[{{tr|Durendal}}]]、和{{tr|Dark Harvest}}的所有{{tr|melee speed buff}}。使用其中之一击中{{tr|enemy}}，再切换到另一个攻击，最后切换到剩余的那个{{tr|whip}}攻击。不过，这一技巧在没有其他{{tr|bonuses}}的情况下不太实际，因为在玩家选择最后一个{{tr|whip}}时，首个{{tr|buff}}的时间可能已经耗尽了。这一技巧可以通过装备[[{{tr|Obsidian armor}}]]，或是一次只使用其中两个{{tr|whip}}的方式来实现。
+
+== 花絮 ==
+* {{tr|This item}}很像 {{wikipedia|Kusarigama|锁镰}}，一种日本武器，由一把镰刀和一条加有重物的铁链组成。
+* 类似于[[{{tr|Firecracker}}]]，{{tr|Dark Harvest}}可造成不同于其他{{tr|whip}}的特殊命中效果。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Use time}}由 30 降低至 27。
+** {{tr|Harvest Time}}的{{tr|Attack speed bonus}}由 50% 降低至 35%。
+** {{tr|Reaping}}（{{tr|Dark Harvest}}的特殊标记{{tr|debuff}}）现在会对受影响的目标以及附近的目标造成伤害。这一效果等效于 10 标记伤害。
+** 修复了{{tr|whip speed}}{{tr|buff}}会不正确地应用到{{tr|melee weapons}}上的问题。}}
+{{history|Desktop 1.4.1|
+** {{tr|Range}}增加。
+** 每次挥舞击中额外目标的伤害惩罚由 30% 降低至 10%。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Whips}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Dark Harvest}}

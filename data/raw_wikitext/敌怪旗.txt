@@ -1,0 +1,767 @@
+{{legacy nav tab}}
+{{item infobox
+| name = Banners
+| imagealt = [[File:Slime Banner (placed).png|link=]] [[File:Skeleton Banner (placed).png|link=]] [[File:Zombie Banner (placed).png|link=]] [[File:Medusa Banner (placed).png|link=]]
+| type = Furniture
+| auto = 1683
+| width = 1 | height = 3
+| buff = Banner / 在其附近时无限时间
+| tooltip = {{gameText|CommonItemTooltip.BannerBonus}} &lt;{{tr|enemy}}名字&gt;
+| idbuff = 147
+| bufftip = {{gameText|BuffDescription.MonsterBanner}} &lt;{{tr|enemy}}名字&gt;
+| idshow = <!-- different banners have different item IDs -->
+| idtilesub = <!-- different banners have different tile sub-IDs -->
+| cargo = no
+}}
+{{about|功能性的、由{{tr|enemy}}掉落的{{tr|banners}}|装饰性{{tr|banners}}|{{tr|Banners (decorative)}}}}
+
+'''{{tr|Enemy banners}}'''是一类功能性[[{{tr|furniture}}]]{{tr|items}}，能够放置于[[{{tr|block}}]]和[[{{tr|platforms}}]]下侧。大多数[[{{tr|enemies}}]]和一些[[{{tr|critters}}]]会掉落它们。
+
+放置状态下的{{tr|enemy Banners}}能为站在以{{tr|banner}}为中心的 {{buff area|epage=1.3.0.1}}内的所有玩家提供[[{{tr|buff}}]]。此{{tr|buff}}使玩家所有伤害方式对相应{{tr|enemy}}造成的伤害 +50%/{{expert|+100%}}，同时从{{tr|enemy}}的攻击受到的伤害 −25%/{{expert|−50%}}。<!--On the {{eversions|1.4.4}},-->[[{{tr|Old One's Army}}]]{{tr|enemies}}的{{tr|banner}}会提供针对对应{{tr|enemies}}的更弱的{{tr|banner buff}}，为玩家提供造成伤害 +10%/{{expert|+20%}} 和受到伤害 −8.33%<!-- 1/12 --> / {{expert|−16.67%<!-- 1/6 -->}} 的效果。{{source code ref|v=1.4.4.9|struct=Terraria.ID.ItemID.BannerEffect}}<!--
+Banner effect is 1 for regular enemies and 0.2 for Old One's Army enemies
+Classic damage = 1 + Banner effect * 0.5
+Expert damage = 1 + Banner effect
+Classic reduction = 1 - (1 - Expert reduction) * 0.5
+Expert reduction = 1/(Banner effect + 1). -->
+
+多个同种{{tr|banners}}不会带来{{tr|Buff}}叠加。但附近如果有多个不同种{{tr|banners}}则会全部生效，并整合为单一的{{tr|buff}}图标。
+
+在单个{{tr|world}}中，当对{{tr|enemy}}达到特定击杀数（默认为 50）时玩家的{{tr|inventory}}中就会自动出现一面此{{tr|enemy}}的{{tr|enemy banner}}。如果玩家的{{tr|inventory}}已满，{{tr|banner}}就会改为掉到玩家所在位置的地面上。另外，还会显示一条{{tr|status message}}，内容为：''“{{gameText|Game.EnemiesDefeatedByAnnouncement|x_0=&lt;玩家名字&gt;|x_1=n|x_2=&lt;{{tr|enemy}}名称&gt;}}”''，其中 ''n'' 默认情况下为相应的 50 的倍数。并非所有{{tr|enemy banners}}的取得都要求 50 击杀；例外参见[[#具有非默认击杀数的{{tr|banner}}|下文]]。
+<!--
+---- Banner count ----
+individual variables (manually counted):
+-->{{#vardefine:pre-hm|85}}<!--
+-->{{#vardefine:hm|80}}<!--
+-->{{#vardefine:pre-hm-event|28}}<!--
+-->{{#vardefine:hm-event|90}}<!--
+-->{{#vardefine:unobtainable|6}}<!--
+
+sums:
+-->{{#vardefine:total-event|{{#expr:{{#var:pre-hm-event}}+{{#var:hm-event}}}}}}<!--
+-->{{#vardefine:total-exclusive|{{#expr:{{#var:pre-hm-exclusive}}+{{#var:hm-exclusive}}}}}}<!--
+
+-->{{#vardefine:total-pre-hm|{{#expr:{{#var:pre-hm}}+{{#var:pre-hm-event}}}}}}<!--
+-->{{#vardefine:total-hm|{{#expr:{{#var:hm}}+{{#var:hm-event}}}}}}<!--
+
+-->{{#vardefine:total|{{#expr:{{#var:total-pre-hm}}+{{#var:total-hm}}}}}}<!--
+
+output:
+-->
+共有 {{#var:total}} 种可获取的{{tr|enemy banners}}：[[{{tr|pre-Hardmode}}]]有 {{#var:total-pre-hm}} 种，[[{{tr|Hardmode}}]]有 {{#var:total-hm}} 种。其中，{{#var:total-event}} 种为[[{{tr|Events}}|{{tr|event}}]]{{tr|enemies}}（{{tr|pre-Hardmode}} {{#var:pre-hm-event}} 种，{{tr|Hardmode}} {{#var:hm-event}} 种）。此外，有 {{#var:unobtainable}} 种[[{{tr|unobtainable}}]]的{{tr|enemy banners}}。
+{{options/set|itemlist|width=19.75em}}
+== {{tr|Slimes}} ==
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Blue Slime|id=1683}}
+|{{banner|enemy=Green Slime|id=2928}}
+|{{banner|enemy=Purple Slime|id=2964}}
+|{{banner|enemy=Umbrella Slime|id=1690}}
+|{{banner|enemy=Red Slime|id=2968}}
+|{{banner|enemy=Yellow Slime|id=2992}}
+|{{banner|enemy=Black Slime|id=2899}}
+|{{banner|enemy=Mother Slime|id=2955}}
+|{{banner|enemy=Dungeon Slime|id=2916}}
+|{{banner|enemy=Pinky|id=2960}}
+|{{banner|enemy=Jungle Slime|id=2940}}
+|{{banner|enemy=Spiked Jungle Slime|id=2981}}
+|{{banner|enemy=Ice Slime|id=2935}}
+|{{banner|enemy=Spiked Ice Slime|id=2980}}
+|{{banner|enemy=Sand Slime|id=3593}}
+|{{banner|enemy=Lava Slime|id=2944}}
+|{{banner|enemy=Shimmer Slime|id=5352}}
+}}
+{{infocard/mainheading|{{tr|Hardmode}}}}
+{{itemlist
+|{{banner|enemy=Toxic Sludge|id=1689}}
+|{{banner|enemy=Corrupt Slime|id=2908}}
+|{{banner|enemy=Slimer|id=2976}}
+|{{banner|enemy=Crimslime|id=2910}}
+|{{banner|enemy=Gastropod|id=1651}}
+|{{banner|enemy=Illuminant Slime|id=2938}}
+|{{banner|enemy=Rainbow Slime|id=2966}}
+}}
+}}
+
+== {{tr|Environments}} ==
+=== [[{{tr|Surface}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Bird|id=1622}}
+|{{banner|enemy=Bunny|id=1628}}
+|{{banner|enemy=Goldfish|id=1657}}
+|{{banner|enemy=Zombie|id=1701}}
+|{{banner|enemy=Demon Eye|id=1639}}
+|{{banner|enemy=Goblin Scout|id=1655}}
+|{{banner|enemy=Gnome|id=4688}}
+|{{banner|enemy=Harpy|id=1658}}
+}}
+{{infocard/mainheading|[[{{tr|Ocean}}]]}}
+{{itemlist
+|{{banner|enemy=Crab|id=1634}}
+|{{banner|enemy=Pink Jellyfish|id=3447}}
+|{{banner|enemy=Sea Snail|id=3594}}
+|{{banner|enemy=Shark|id=1680}}
+|{{banner|enemy=Squid|id=2983}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Possessed Armor|id=2962}}
+|{{banner|enemy=Wandering Eye|id=4977}}
+|{{banner|enemy=Wraith|id=1699}}
+|{{banner|enemy=Werewolf|id=1695}}
+|{{banner|enemy=Wyvern|id=1700}}
+}}
+}}
+
+=== [[{{tr|Cavern}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Cave Bat|id=1621}}
+|{{banner|enemy=Cochineal Beetle|id=2906}}
+|{{banner|enemy=Crawdad|id=3393}}
+|{{banner|enemy=Giant Shelly|id=3392}}
+|{{banner|enemy=Giant Worm|Worm Banner|id=1698}}
+|{{banner|enemy=Nymph|id=1694}}
+|{{banner|enemy=Salamander|id=3391}}
+|{{banner|enemy=Skeleton|id=1681}}
+|{{banner|enemy=Tim|id=2986}}
+|{{banner|enemy=Undead Miner|id=2987}}
+|{{banner|enemy=Blue Jellyfish|id=1665}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Armored Skeleton|id=1620}}
+|{{banner|enemy=Giant Bat|id=2923}}
+|{{banner|enemy=Mimic|id=1630}}
+|{{banner|enemy=Rock Golem|id=4965}}
+|{{banner|enemy=Rune Wizard|id=2969}}
+|{{banner|enemy=Skeleton Archer|id=2973}}
+|{{banner|enemy=Angler Fish|id=1615}}
+|{{banner|enemy=Green Jellyfish|id=3448}}
+}}
+}}
+
+=== [[{{tr|Granite Cave}}]] ===
+{{exclusive|Granite Cave|section=y}}
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Granite Elemental|id=3407}}
+|{{banner|enemy=Granite Golem|id=3408}}
+}}
+
+=== [[{{tr|Marble Cave}}]] ===
+{{exclusive|Marble Cave|section=y}}
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Hoplite|id=3406}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Medusa|id=3405}}
+}}
+}}
+
+=== [[{{tr|Spider Nest}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Wall Creeper|id=1685}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Black Recluse|id=1623}}
+}}
+}}
+
+=== [[{{tr|Glowing Mushroom biome}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Anomura Fungus|id=1617}}
+|{{banner|enemy=Fungi Bulb|id=1649}}
+|{{banner|enemy=Mushi Ladybug|id=1672}}
+|{{banner|enemy=Spore Bat|id=4968}}
+|{{banner|enemy=Spore Skeleton|id=4967}}
+|{{banner|enemy=Spore Zombie|id=1686}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Fungo Fish|id=1650}}
+}}
+}}
+
+=== [[{{tr|Snow biome}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Cyan Beetle|id=2912}}
+|{{banner|enemy=Ice Bat|id=2933}}
+|{{banner|enemy=Penguin|id=2959}}
+|{{banner|enemy=Snow Flinx|id=1684}}
+|{{banner|enemy=Undead Viking|id=2988}}
+|{{banner|enemy=Frozen Zombie|id=1643}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Armored Viking|id=2898}}
+|{{banner|enemy=Ice Elemental|id=1662}}
+|{{banner|enemy=Ice Tortoise|id=3452}}
+|{{banner|enemy=Icy Merman|id=1663}}
+|{{banner|enemy=Pigron|id=1674}}
+|{{banner|enemy=Wolf|id=1696}}
+}}
+}}
+
+=== [[{{tr|Jungle}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Doctor Bones|id=2915}}
+|{{banner|enemy=Hornet|id=1661}}
+|{{banner|enemy=Jungle Bat|id=2939}}
+|{{banner|enemy=Lac Beetle|id=2942}}
+|{{banner|enemy=Man Eater|id=1668}}
+|{{banner|enemy=Snatcher|id=2977}}
+|{{banner|enemy=Piranha|id=1675}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Angry Trapper|id=2897}}
+|{{banner|enemy=Derpling|id=1640}}
+|{{banner|enemy=Giant Flying Fox|id=2925}}
+|{{banner|enemy=Giant Tortoise|id=1688}}
+|{{banner|enemy=Jungle Creeper|id=1666}}
+|{{banner|enemy=Moss Hornet|id=4976}}
+|{{banner|enemy=Moth|id=1670}}
+|{{banner|enemy=Arapaima|id=1619}}
+}}
+{{infocard/mainheading|[[{{tr|Temple}}]]}}
+{{itemlist
+|{{banner|enemy=Flying Snake|id=1647}}
+|{{banner|enemy=Lihzahrd|id=1667}}
+}}
+}}
+
+=== [[{{tr|Desert}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Antlion|id=1618}}
+|{{banner|enemy=Antlion Charger|id=3414}}
+|{{banner|enemy=Antlion Larva|id=4969}}
+|{{banner|enemy=Antlion Swarmer|id=3413}}
+|{{banner|enemy=Tomb Crawler|id=3411}}
+|{{banner|enemy=Vulture|id=1693}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Basilisk|id=3418}}
+|{{banner|enemy=Desert Spirit|id=3417}}
+|{{banner|enemy=Dune Splicer|id=3412}}
+|{{banner|enemy=Ghoul|id=3415}}
+|{{banner|enemy=Lamia|id=3416}}
+|{{banner|enemy=Mummy|id=1671}}
+|{{banner|enemy=Sand Poacher|id=3419}}
+}}
+}}
+
+=== [[{{tr|Underworld}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Bone Serpent|id=1627}}
+|{{banner|enemy=Demon|id=1638}}
+|{{banner|enemy=Fire Imp|id=1664}}
+|{{banner|enemy=Hellbat|id=1659}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Lava Bat|id=2943}}
+|{{banner|enemy=Red Devil|id=3446}}
+}}
+}}
+
+=== [[{{tr|Dungeon}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Angry Bones|id=3451}}
+|{{banner|enemy=Cursed Skull|id=2911}}
+|{{banner|enemy=Dark Caster|id=1682}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Blue Armored Bones|id=2900}}
+|{{banner|enemy=Rusty Armored Bones|id=2970}}
+|{{banner|enemy=Hell Armored Bones|id=2930}}
+|{{banner|enemy=Diabolist|id=2914}}
+|{{banner|enemy=Necromancer|id=2956}}
+|{{banner|enemy=Ragged Caster|id=2965}}
+|{{banner|enemy=Bone Lee|id=2904}}
+|{{banner|enemy=Skeleton Commando|id=2974}}
+|{{banner|enemy=Skeleton Sniper|id=2975}}
+|{{banner|enemy=Tactical Skeleton|id=2984}}
+|{{banner|enemy=Dungeon Spirit|id=2917}}
+|{{banner|enemy=Giant Cursed Skull|id=2924}}
+|{{banner|enemy=Paladin|id=2958}}
+}}
+}}
+
+=== [[{{tr|the Corruption}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Devourer|id=2913}}
+|{{banner|enemy=Eater of Souls|id=1641}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Clinger|id=2905}}
+|{{banner|enemy=Corrupt Mimic|id=4973}}
+|{{banner|enemy=Corruptor|id=2909}}
+|{{banner|enemy=Cursed Hammer|id=1637}}
+|{{banner|enemy=Dark Mummy|id=3449}}
+|{{banner|enemy=World Feeder|id=1697}}
+}}
+}}
+
+=== [[{{tr|the Crimson}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Blood Crawler|id=1626}}
+|{{banner|enemy=Crimera|id=1635}}
+|{{banner|enemy=Face Monster|id=1644}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Blood Feeder|id=1624}}
+|{{banner|enemy=Blood Jelly|id=1625}}
+|{{banner|enemy=Blood Mummy|id=4966}}
+|{{banner|enemy=Crimson Axe|id=1636}}
+|{{banner|enemy=Crimson Mimic|id=4974}}
+|{{banner|enemy=Floaty Gross|id=1645}}
+|{{banner|enemy=Herpling|id=1660}}
+|{{banner|enemy=Ichor Sticker|id=2936}}
+}}
+}}
+
+=== [[{{tr|the Hallow}}]] ===
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Chaos Elemental|id=1629}}
+|{{banner|enemy=Enchanted Sword (NPC)|Enchanted Sword Banner|id=1642}}
+|{{banner|enemy=Hallowed Mimic|id=4975}}
+|{{banner|enemy=Illuminant Bat|id=2937}}
+|{{banner|enemy=Light Mummy|id=3450}}
+|{{banner|enemy=Pixie|id=1677}}
+|{{banner|enemy=Unicorn|id=1691}}
+}}
+
+=== [[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]] ===
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Meteor Head|id=1669}}
+}}
+
+== [[{{tr|Events}}]] ==
+=== [[{{tr|Rain}}|{{tr|Rain}}/{{tr|Blizzard}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Flying Fish|id=1646}}
+|{{banner|enemy=Raincoat Zombie|id=1678}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Angry Nimbus|id=1616}}
+|{{banner|enemy=Ice Golem|id=2934}}
+}}
+}}
+
+=== [[{{tr|Windy Day}}]] ===
+{{exclusive|Windy Day|section=y}}
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Angry Dandelion|id=4687}}
+}}
+
+=== [[{{tr|Blood Moon}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Blood Zombie|id=3409}}
+|{{banner|enemy=Corrupt Bunny|id=1632}}
+|{{banner|enemy=Corrupt Goldfish|id=1633}}
+|{{banner|enemy=Corrupt Penguin|id=2907}}
+|{{banner|enemy=Drippler|id=3410}}
+|{{banner|enemy=The Groom|id=2985}}
+|{{banner|enemy=The Bride|id=4541}}
+|{{banner|enemy=Vicious Bunny|id=4970}}
+|{{banner|enemy=Vicious Goldfish|id=4971}}
+|{{banner|enemy=Vicious Penguin|id=4972}}
+|{{banner|enemy=Wandering Eye Fish|id=4543}}
+|{{banner|enemy=Zombie Merman|id=4542}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Clown|id=1631}}
+|{{banner|enemy=Blood Eel|id=4545}}
+|{{banner|enemy=Blood Squid|id=4544}}
+|{{banner|enemy=Hemogoblin Shark|id=4546}}
+|{{banner|enemy=Dreadnautilus|id=4602}}
+}}
+}}
+
+=== [[{{tr|Goblin Army}}]] ===
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Goblin Archer|id=2927}}
+|{{banner|enemy=Goblin Peon|id=1654}}
+|{{banner|enemy=Goblin Sorcerer|id=1653}}
+|{{banner|enemy=Goblin Thief|id=1652}}
+|{{banner|enemy=Goblin Warrior|id=1656}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Goblin Warlock|id=3390}}
+}}
+}}
+
+=== [[{{tr|Sandstorm}}]] ===
+{{exclusive|Sandstorm|section=y}}
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Angry Tumbler|id=3793}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Sand Elemental|id=3780}}
+|{{banner|enemy=Sand Shark|id=3789}}
+|{{banner|enemy=Crystal Thresher|id=3792}}
+|{{banner|enemy=Bone Biter|id=3790}}
+|{{banner|enemy=Flesh Reaver|id=3791}}
+}}
+}}
+
+=== [[{{tr|Halloween}}]] ===
+{{exclusive|1.3.0.1|section=y}}
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Raven|id=2967}}
+|{{banner|enemy=Ghost (NPC)|Ghost Banner|id=2922}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Hoppin' Jack|id=2932}}
+}}
+}}
+
+=== [[{{tr|Pirate Invasion}}]] ===
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Parrot|id=1673}}
+|{{banner|enemy=Pirate Captain|id=3441}}
+|{{banner|enemy=Pirate Corsair|id=3443}}
+|{{banner|enemy=Pirate Crossbower|id=3444}}
+|{{banner|enemy=Pirate Deadeye|id=3442}}
+|{{banner|enemy=Pirate Deckhand|id=1676}}
+}}
+
+=== [[{{tr|Solar Eclipse}}]] ===
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Butcher|id=3400}}
+|{{banner|enemy=Creature from the Deep|id=3395}}
+|{{banner|enemy=Deadly Sphere|id=3402}}
+|{{banner|enemy=Dr. Man Fly|id=3396}}
+|{{banner|enemy=Eyezor|id=2920}}
+|{{banner|enemy=Frankenstein|id=1648}}
+|{{banner|enemy=Fritz|id=3394}}
+|{{banner|enemy=Mothron|id=3397}}
+|{{banner|enemy=Nailhead|id=3403}}
+|{{banner|enemy=Psycho|id=3401}}
+|{{banner|enemy=Reaper|id=1679}}
+|{{banner|enemy=Swamp Thing|id=1687}}
+|{{banner|enemy=The Possessed|id=3399}}
+|{{banner|enemy=Vampire|id=1692}}
+}}
+
+=== [[{{tr|Frost Legion}}]] ===
+{{exclusive|1.3.0.1|section=y}}
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Mister Stabby|id=2954}}
+|{{banner|enemy=Snow Balla|id=2978}}
+|{{banner|enemy=Snowman Gangsta|id=2979}}
+}}
+
+=== [[{{tr|Pumpkin Moon}}]] ===
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Headless Horseman|id=2929}}
+|{{banner|enemy=Hellhound|id=2931}}
+|{{banner|enemy=Poltergeist|id=2961}}
+|{{banner|enemy=Scarecrow|id=2971}}
+|{{banner|enemy=Splinterling|id=2982}}
+}}
+
+=== [[{{tr|Frost Moon}}]] ===
+{{exclusive|1.3.0.1|3ds=y|section=y}}
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Elf Archer|id=2918}}
+|{{banner|enemy=Elf Copter|id=2919}}
+|{{banner|enemy=Flocko|id=2921}}
+|{{banner|enemy=Gingerbread Man|id=2926}}
+|{{banner|enemy=Krampus|id=2941}}
+|{{banner|enemy=Nutcracker|id=2957}}
+|{{banner|enemy=Present Mimic|id=2963}}
+|{{banner|enemy=Yeti|id=2993}}
+|{{banner|enemy=Zombie Elf|id=2994}}
+}}
+
+=== [[{{tr|Martian Madness}}]] ===
+{{exclusive|Martian Madness|section=y}}
+{{itemlist|class=terraria|boxstyle=padding-left:7px;
+|{{banner|enemy=Brain Scrambler|Martian Brainscrambler Banner|id=2945}}
+|{{banner|enemy=Martian Drone|id=2946}}
+|{{banner|enemy=Martian Engineer|id=2947}}
+|{{banner|enemy=Gigazapper|Martian Gigazapper Banner|id=2948}}
+|{{banner|enemy=Gray Grunt|Martian Gray Grunt Banner|id=2949}}
+|{{banner|enemy=Martian Officer|id=2950}}
+|{{banner|enemy=Ray Gunner|Martian Ray Gunner Banner|id=2951}}
+|{{banner|enemy=Scutlix Gunner|Martian Scutlix Gunner Banner|id=2952}}
+|{{banner|enemy=Tesla Turret|Martian Tesla Turret Banner|id=2953}}
+|{{banner|enemy=Martian Walker|id=3445}}
+|{{banner|enemy=Scutlix|id=2972}}
+}}
+
+=== [[{{tr|Lunar Events}}]] ===
+{{exclusive|Lunar Events|section=y}}
+<div class="terraria" style="padding-left:7px">
+{{itemlist|class=
+|{{banner|enemy=Blue Cultist Archer|id=2901}}
+|{{banner|enemy=Lunatic Devotee|id=2902}}
+}}
+{{itemlist|class=
+|{{banner|enemy=Alien Hornet|id=3438}}
+|{{banner|enemy=Alien Larva|id=3436}}
+|{{banner|enemy=Alien Queen|id=3437}}
+|{{banner|enemy=Storm Diver|id=3440}}
+|{{banner|enemy=Vortexian|id=3439}}
+}}
+{{itemlist|class=
+|{{banner|enemy=Brain Suckler|id=3433}}
+|{{banner|enemy=Evolution Beast|id=3435}}
+|{{banner|enemy=Nebula Floater|id=3434}}
+|{{banner|enemy=Predictor|id=3432}}
+}}
+{{itemlist|class=
+|{{banner|enemy=Flow Invader|id=3422}}
+|{{banner|enemy=Milkyway Weaver|id=3421}}
+|{{banner|Mini Star Cell Banner|link=Star Cell|id=3424}}
+|{{banner|enemy=Star Cell|id=3425}}
+|{{banner|enemy=Stargazer|id=3420}}
+|{{banner|enemy=Twinkle Popper|id=3423}}
+}}
+{{itemlist|class=
+|{{banner|enemy=Corite|id=3426}}
+|{{banner|enemy=Crawltipede|id=3428}}
+|{{banner|enemy=Drakomire|id=3430}}
+|{{banner|enemy=Drakomire Rider|id=3429}}
+|{{banner|enemy=Selenian|id=3431}}
+|{{banner|enemy=Sroller|id=3427}}
+}}
+</div>
+
+=== [[{{tr|Old One's Army}}]] ===
+{{exclusive|Old One's Army|section=y}}
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|enemy=Etherian Javelin Thrower|id=3845}}
+|{{banner|enemy=Etherian Goblin|id=3838}}
+|{{banner|enemy=Etherian Goblin Bomber|id=3837}}
+|{{banner|enemy=Etherian Wyvern|id=3844}}
+|{{banner|enemy=Old One's Skeleton|id=3839}}
+}}
+{{infocard/mainheading|[[{{tr|Hardmode}}]]}}
+{{itemlist
+|{{banner|enemy=Drakin|id=3840}}
+|{{banner|enemy=Etherian Lightning Bug|id=3846}}
+|{{banner|enemy=Kobold|id=3842}}
+|{{banner|enemy=Kobold Glider|id=3841}}
+|{{banner|enemy=Wither Beast|id=3843}}
+}}
+}}
+
+== 具有非默认击杀数的旗帜 ==
+{{exclusive|1.4.0.1|section=y}}
+默认情况下，会在击杀特定{{tr|enemy}}第 50 次（或此后每 50 次）时掉落其{{tr|banner}}。对于以下{{tr|banners}}，所需的这一击杀数量不同：{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;KillsToBanner}}
+{{options/set|item|showid=n|icons=no|mode=table}}
+{| class="terraria lined sortable mw-collapsible"
+! colspan=2 | {{tr|Banner}}
+! 击杀数
+{{#af_foreach:{{itemIdSet|KillsToBanner|sort=name}}|id|value|{{#ifeq:{{#af_show:{{{value}}}}}|50|<!--50 is the default, so skip-->|<nowiki/>
+{{!}}-
+{{!}} {{item|id={{{id}}}|link={{tr|link=y|{{#replace:{{itemNameFromId|{{{id}}}}}|Banner}}}}}}
+{{!}} {{#af_show:{{{value}}}}}
+}}}}
+|}{{options/reset|item}}
+
+== [[{{tr|Unobtainable}}]] ==
+<!-- a few banners need infobox for cargo storage. -->
+{{unobtainium|section=y|nocat=y}}
+{{infocard|class=terraria compact|text=
+{{itemlist
+|{{banner|Blue Cultist Fighter Banner|id=2903}}{{item infobox|view=void|auto=2903|buffid=147|type=Furniture|width=1|height=3|tags=drop/enemy banner}}
+|{{banner|enemy=White Cultist Archer|id=2989}}
+|{{banner|White Cultist Caster Banner|id=2990}}{{item infobox|view=void|auto=2990|buffid=147|type=Furniture|width=1|height=3|tags=drop/enemy banner}}
+|{{banner|White Cultist Fighter Banner|id=2991}}{{item infobox|view=void|auto=2991|buffid=147|type=Furniture|width=1|height=3|tags=drop/enemy banner}}
+|{{banner|Poisonous Spore Banner|id=3404}}{{item infobox|view=void|auto=3404|buffid=147|type=Furniture|width=1|height=3|tags=drop/enemy banner}}
+|{{banner|Severed Hand Banner|link=Solar Eclipse#Trivia|id=3398}}{{item infobox|view=void|auto=3398|buffid=147|type=Furniture|width=1|height=3|tags=drop/enemy banner}}
+}}
+}}<!--
+-->{{options/reset|itemlist}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=Crawdad Banner/Giant Shelly Banner/Salamander Banner|expectedrows=3}}
+
+== {{tr|Banner}}效果计算 ==
+{{main|{{tr|Damage}}#计算}}
+当对{{tr|enemies}}造成伤害时，{{tr|banners}}的伤害提升会施加在{{tr|base damage}}上，在被[[{{tr|defense}}]]降低、被{{tr|critical strike}}提高''之前''。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyDamageToNPC / Terraria.Player.ProcessHitAgainstNPC / Terraria.Projectile.Damage}}当从{{tr|enemies}}处受到伤害时，{{tr|banners}}的伤害降低也会施加在{{tr|base damage}}上，在被{{tr|defense}}和[[{{tr|damage reduction}}]]效果降低''之前''。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision / Terraria.Projectile.Damage}}因此，{{tr|banners}}的效果通常会比其他伤害提升/降低效果更加显著，尤其是在{{tr|banners}}更加有效的{{tr|Expert Mode}}下。
+
+下表显示了一些关于{{tr|banner}}效果的示例。
+{{options/set|item|icons=n|wrap=y|maxsize=35x35px}}
+{|class="terraria lined align-center"
+|+ 玩家造成的{{tr|Damage}}
+! colspan=2 rowspan=2 | {{tr|Weapon}}
+! colspan=2 rowspan=2 | 目标
+! rowspan=2 | 无{{tr|banner}}
+! colspan=2 | 有{{tr|banner}}
+|-
+! {{item|Classic Mode|Classic|link=}} !! {{item|Expert Mode|Expert|link=}}
+|-
+| {{item|mode=table|rowspan=3|Gold Broadsword|note2={{iteminfo|Gold Broadsword|damage}} {{tr|damage}}}}
+| {{item|mode=table|Zombie|note2={{npcinfo|Zombie|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*1.5-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 1.5 − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*2-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 2 − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Chaos Elemental|note2={{npcinfo|Chaos Elemental|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Chaos Elemental|defense}}/2)}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*1.5-{{npcinfo|Chaos Elemental|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 1.5 − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*2-{{npcinfo|Chaos Elemental|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 2 − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Etherian Lightning Bug|note2={{npcinfo|Etherian Lightning Bug|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*1.1-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 1.1 − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''1 {{note|small=y|paren=y|{{formatnum:{{#expr:floor({{iteminfo|Gold Broadsword|damage}}*1.2-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Gold Broadsword|damage}} × 1.2 − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|rowspan=3|Meowmere|note2={{iteminfo|Meowmere|damage}} {{tr|damage}}}}
+| {{item|mode=table|Zombie|note2={{npcinfo|Zombie|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*1.5-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 1.5 − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*2-{{npcinfo|Zombie|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 2 − {{npcinfo|Zombie|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Chaos Elemental|note2={{npcinfo|Chaos Elemental|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}-{{npcinfo|Chaos Elemental|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*1.5-{{npcinfo|Chaos Elemental|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 1.5 − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*2-{{npcinfo|Chaos Elemental|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 2 − {{npcinfo|Chaos Elemental|defense}} ÷ 2⌋ }}
+|-
+| {{item|mode=table|Etherian Lightning Bug|note2={{npcinfo|Etherian Lightning Bug|defense}} {{tr|defense}}}}
+|<!-- No banner	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|<!-- Classic	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*1.1-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 1.1 − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|<!-- Expert	--> '''{{formatnum:{{#expr:floor({{iteminfo|Meowmere|damage}}*1.2-{{npcinfo|Etherian Lightning Bug|defense}}/2)}}}}'''{{note|block=y|small=y| ⌊{{iteminfo|Meowmere|damage}} × 1.2 − {{npcinfo|Etherian Lightning Bug|defense}} ÷ 2⌋ }}
+|}
+{|class="terraria lined align-center"
+|+ 玩家受到的{{tr|Damage}}
+! rowspan=2 | 玩家{{tr|defense}}
+! colspan=2 rowspan=2 | {{tr|Enemy}}
+! colspan=3 | 无{{tr|banner}}
+! colspan=3 | 有{{tr|banner}}
+|-
+! {{item|Classic Mode|Classic|link=}} !! {{item|Expert Mode|Expert|link=}} !! {{item|Master Mode|Master|link=}}
+! {{item|Classic Mode|Classic|link=}} !! {{item|Expert Mode|Expert|link=}} !! {{item|Master Mode|Master|link=}}
+|-
+| rowspan=2 | 25
+| {{item|mode=table|Angry Trapper|note2={{npcinfo|Angry Trapper|damage_all}} {{tr|damage}}}}
+|<!-- No banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage}}-25*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage}} − 25 × 0.5⌋ }}
+|<!-- No banner Expert	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_e}}-25*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_e}} − 25 × 0.75⌋ }}
+|<!-- No banner Master	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_m}}-25*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_m}} − 25 × 1⌋ }}
+|<!-- Banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage}}*0.75-25*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage}}× 0.75 − 25 × 0.5⌋ }}
+|<!-- Banner Expert		--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_e}}*0.5-25*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_e}}× 0.5 − 25 × 0.75⌋ }}
+|<!-- Banner Master		--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_m}}*0.5-25*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_m}}× 0.5 − 25 × 1⌋ }}
+|-
+| {{item|mode=table|Etherian Wyvern|Etherian Wyvern (T2)|image=Etherian Wyvern 2.png|note2={{npcinfo|Etherian Wyvern (T2)|damage_all}} {{tr|damage}}}}
+|<!-- No banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage}}-25*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage}} − 25 × 0.5⌋ }}
+|<!-- No banner Expert	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_e}}-25*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_e}} − 25 × 0.75⌋ }}
+|<!-- No banner Master	-->'''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_m}}-25*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_m}} − 25 × 1⌋ }}
+|<!-- Banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage}}*11/12-25*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage}}× 11/12 − 25 × 0.5⌋ }}
+|<!-- Banner Expert		--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_e}}*5/6-25*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_e}}× 5/6 − 25 × 0.75⌋ }}
+|<!-- Banner Master		--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_m}}*5/6-25*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_m}}× 5/6 − 25 × 1⌋ }}
+|-
+| rowspan=2 | 100
+| {{item|mode=table|Angry Trapper|note2={{npcinfo|Angry Trapper|damage_all}} {{tr|damage}}}}
+|<!-- No banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage}}-100*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage}} − 100 × 0.5⌋ }}
+|<!-- No banner Expert	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_e}}-100*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_e}} − 100 × 0.75⌋ }}
+|<!-- No banner Master	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_m}}-100*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_m}} − 100 × 1⌋ }}
+|<!-- Banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage}}*0.75-100*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage}}× 0.75 − 100 × 0.5⌋ }}
+|<!-- Banner Expert		--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_e}}*0.5-100*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_e}}× 0.5 − 100 × 0.75⌋ }}
+|<!-- Banner Master		--> '''{{formatnum:{{#expr:floor({{npcinfo|Angry Trapper|damage_m}}*0.5-100*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Angry Trapper|damage_m}}× 0.5 − 100 × 1⌋ }}
+|-
+| {{item|mode=table|Etherian Wyvern|Etherian Wyvern (T2)|image=Etherian Wyvern 2.png|note2={{npcinfo|Etherian Wyvern (T2)|damage_all}} {{tr|damage}}}}
+|<!-- No banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage}}-100*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage}} − 100 × 0.5⌋ }}
+|<!-- No banner Expert	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_e}}-100*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_e}} − 100 × 0.75⌋ }}
+|<!-- No banner Master	-->'''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_m}}-100*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_m}} − 100 × 1⌋ }}
+|<!-- Banner Classic	--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage}}*11/12-100*0.5)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage}}× 11/12 − 100 × 0.5⌋ }}
+|<!-- Banner Expert		--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_e}}*5/6-100*0.75)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_e}}× 5/6 − 100 × 0.75⌋ }}
+|<!-- Banner Master		--> '''{{formatnum:{{#expr:floor({{npcinfo|Etherian Wyvern (T2)|damage_m}}*5/6-100*1)}}}}'''{{note|block=y|small=y| ⌊{{npcinfo|Etherian Wyvern (T2)|damage_m}}× 5/6 − 100 × 1⌋ }}
+|}{{options/reset|item}}
+
+== 备注 ==
+* [[{{tr|Boss}}]] 没有旗帜，取而代之的是[[{{tr|Trophy}}]]。不过{{tr|Trophy}}''不会''给予任何{{tr|buff}}。
+* 如果一个本来该掉落{{tr|banner}}的{{tr|enemy}}被 [[{{tr|NPC}}]] 完成击杀，那么由最后一个击中此{{tr|enemy}}的玩家得到{{tr|banner}}。
+* {{tr|buff}}的作用范围是基于玩家的视野中心位置来计算的，而非玩家所在的位置。这一点可以通过[[{{tr|Binoculars}}]]或具有[[{{tr|Sniper Scope}}]]或其升级物的[[{{tr|gun}}]]来证明。
+
+== 花絮 ==
+* 每个{{tr|banner}}都能朝左或朝右放置，但所朝方向是根据其处于世界中哪一列{{tr|tile}}上来决定的。将{{tr|banner}}向左或向右挪动一格放置就会改变其所朝方向。
+* [[{{tr|Nymph Banner}}]]的左半边描绘的是[[{{tr|Lost Girl}}]]，右半边则是实际的[[{{tr|Nymph}}]]{{tr|enemy}}。
+* {{tr|The Nymph Banner}}的内部名字被错误拼写为 <code>NypmhBanner</code>。{{source code ref|v=1.4.4.9|constant=Terraria.ID.ItemID.NypmhBanner}}
+* [[{{tr|Digger}}]]和其{{tr|pre-Hardmode}}的{{tr|counterparts}}[[{{tr|Giant Worm}}]]共享{{tr|banner}}和击杀数。
+* [[{{tr|Tortured Soul}}]]没有{{tr|banner}}。
+* [[{{tr|Maggot Zombie}}]]没有自己的{{tr|banner}}；但是，[[{{tr|Zombie}}]]旗确实会提供对其有效的{{tr|buff}}。
+* {{tr|The Hoplite Banners}}和{{tr|Medusa Banners}}是仅有的不呈现{{tr|enemy}}图像的{{tr|banner}}，而是类似于有金色希腊图案的深绿色{{tr|banners}}，{{tr|the Hoplite Banners}}和{{tr|Medusa Banners}}上分别有头盔和蛇的图案。
+* [[{{tr|Bunny}}]]、[[{{tr|Bird}}]]、[[{{tr|Goldfish}}]]、和[[{{tr|Penguin}}]]是仅有的四种有自己的{{tr|banner}}的[[{{tr|Critters}}]]。尽管它们实际上根本不能伤到玩家，这四种{{tr|banners}}依然会给出增强对上述{{tr|critters}}的伤害和防御的{{tr|buff}}。
+* 虽然[[{{tr|player}}]]自身没有{{tr|banner}}，但当玩家在死亡至少 25 次，且少于 100 次（[[{{tr|PvP}}]] 中的除外）时和[[{{tr|Nurse}}]]对话时，她会提及假想的“玩家旗”。
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|{{tr|Goblin Summoner Banner}}重命名为{{tr|Goblin Warlock Banner}}。}}
+{{history|Desktop 1.4.4|
+** {{tr|Old One's Skeleton Banner}}所需的击杀数由 200 降低至 150。
+** {{tr|Splinterling Banner}}所需的击杀数由 100 提升至 150。
+** 以下{{tr|enemies}}的{{tr|banners}}所需的击杀数由 50 分别更改为：{{tr|Hellhound}}（100）、{{tr|Poltergeist}}（100）、{{tr|The Groom}}（10）、{{tr|The Bride}}（10）、{{tr|Rune Wizard}}（10）、{{tr|Tim}}（10）、{{tr|Doctor Bones}}（10）、{{tr|Dreadnautilus}}（10）、{{tr|Zombie Merman}}（25）、{{tr|Wandering Eye Fish}}（25）、{{tr|Hemogoblin Shark}}（25）、{{tr|Blood Eel}}（25）、{{tr|Blue Cultist Archer}}（25）、{{tr|Lunatic Devotee}}（25）、{{tr|Clown}}（25）、{{tr|Devourer}}（25）、{{tr|Gnome}}（25）、{{tr|Goblin Warlock}}（25）、{{tr|Corrupt Mimic}}（25）、{{tr|Crimson Mimic}}（25）、{{tr|Hallowed Mimic}}（25）、{{tr|Ice Golem}}（25）、{{tr|Moth}}（25）、{{tr|Nymph}}（25）、{{tr|Paladin}}（25）、{{tr|Pinky}}（25）、{{tr|Pirate Captain}}（25）、{{tr|Sand Elemental}}（25）、{{tr|Mothron}}（25）、{{tr|Nailhead}}（25)。
+** {{tr|Old One's Army}}{{tr|banners}}现在会为对应{{tr|enemies}}提供{{tr|Banner buff}}，但比正常的{{tr|Banner buff}}更弱。此前它们仅作{{tr|decorative}}用途。
+** 使得{{tr|Mini Star Cell Banner}}可获得。
+** {{tr|Salamander}}/{{tr|Giant Shelly}}/{{tr|Crawdad}}这三种{{tr|banners}}中的任意两种都可用于制作剩余的那种。}}
+{{history|Desktop 1.4.2|现在能提高对{{tr|enemy projectiles}}的防护；之前，它们仅适用于{{tr|contact damage}}。}}
+{{history|Desktop 1.4.0.4|修正了{{tr|Lunatic Devotee Banner}}没有[[{{tr|Journey Mode}}#{{tr|Research}}|{{tr|research value}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** 以下{{tr|enemies}}的{{tr|banners}}所需的击杀数由 50 分别更改为：{{tr|Scarecrow}}（200）、{{tr|Splinterling}}（100）、{{tr|Zombie Elf}}（100）。
+** {{tr|Blue Cultist Caster banner}}更名为{{tr|Lunatic Devotee banner}}并将其变得可获得。
+** 为{{tr|The Bride}}、{{tr|Moss Hornet}}{{tr|Wandering Eye}}、{{tr|Vicious Bunny}}、{{tr|Vicious Goldfish}}、{{tr|Vicious Penguin}}、{{tr|Corrupt Mimic}}、{{tr|Crimson Mimic}}、和{{tr|Hallowed Mimic}}添加了{{tr|banner}}。
+** 为新{{tr|enemies}}添加了十三种新{{tr|banners}}。}}
+{{history|Desktop 1.3.5|
+** 更新了{{tr|Ice Bat banners}}、{{tr|Lava Bat banners}}、和{{tr|Giant Flying Fox banners}}的外观。旧的外观分别是 [[File:Ice Bat Banner (pre-1.3.5).png|link=]] [[File:Ice Bat Banner (placed) (pre-1.3.5).png|link=]]、[[File:Lava Bat Banner (pre-1.3.5).png|link=]] [[File:Lava Bat Banner (placed) (pre-1.3.5).png|link=]]、和 [[File:Giant Flying Fox Bat Banner (pre-1.3.5).png|link=]] [[File:Giant Flying Fox Bat Banner (placed) (pre-1.3.5).png|link=]]。
+** 修复了{{tr|Sand Poacher}}和{{tr|Granite Golem}}与相应{{tr|banners}}名字上的不一致。}}
+{{history|Desktop 1.3.4|随[[{{tr|Old One's Army}}]]{{tr|event}}加入了十个新{{tr|banners}}。}}
+{{history|Desktop 1.3.3|随着[[{{tr|Sandstorm}}]]{{tr|event}}添加了六个新{{tr|banners}}。}}
+{{history|Desktop 1.3.1|修复了{{tr|Crawltipede Banner}}无法获得的问题。}}
+{{history|Desktop 1.3.0.5|将以下{{tr|banners}}重命名{{note|small=y|paren=y|译注：此处维持使用英文原名以反映实际更改情况}}：Bat banner 重命名为 Cave Bat Banner、Jellyfish Banner 重命名为 Blue Jellyfish Banner、Pirate Banner 重命名为 Pirate Deckhand Banner、Tortoise Banner 重命名为 Giant Tortoise Banner、Martian Raygunner Banner 重命名为 Martian Ray Gunner Banner、Stardust Soldier Banner 重命名为 Stargazer Banner 、Solar Solenian Banner 重命名为 Selenian Banner、Nebula Soldier Banner 重命名为 Predictor Banner、Nebula Headcrab Banner 重命名为 Brain Suckler Banner、Nebula Beast Banner 重命名为 Evolution Beast Banner、Vortex Soldier Banner 重命名为 Vortexian Banner、以及 Vortex Rifleman Banner 重命名为 Storm Diver Banner。}}
+{{history|Desktop 1.3.0.4|
+** {{tr|Banners}}现在会给最后击中{{tr|enemies}}的玩家，而非距离最近的玩家。
+** 骷髅法师旗（Skeleton Mage Banner）和蜘蛛旗（Spider Banner）已重新命名，以准确反映它们在战斗中为玩家提供的{{tr|buff}}是针对哪种{{tr|enemies}}。（现在的名字是{{tr|Dark Caster Banner}}和{{tr|Wall Creeper Banner}}。）
+** 死前未被任何玩家击中的{{tr|enemies}}不再计入计数（即，死于{{tr|Lava}}池的{{tr|enemy}}不计）。
+** 修正{{tr|banners}}对{{tr|melee}}击打（{{tr|swords}}、{{tr|flails}}、{{tr|axes}}、{{tr|pickaxes}}，等等）不生效的问题
+** 修正在{{tr|multiplayer}}中放置{{tr|banners}}时某些{{tr|banners}}会变成其他{{tr|banners}}的问题。
+** 修正了{{tr|Goblin Archer}}以及大量变种 {{tr|NPC}} 不掉落{{tr|banners}}/不计入计数的问题。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Banners}}不再以 0.5% 几率掉落，而是改为每击杀 50 个同种{{tr|enemies}}即掉落一个。不需要捡{{tr|banner}}，它会直接进入杀掉此{{tr|enemies}}的玩家{{tr|inventory}}中。（除非玩家的{{tr|inventory}}已满，在这种情况下{{tr|banner}}会掉落到地上。）
+** 现在{{tr|Enemy Banners}}能让附近的玩家面对相应种类的{{tr|enemy}}时更强力。玩家的{{tr|damage and defense}}会提升。
+** 加入了大量新{{tr|banners}}，包括[[{{tr|Lava Bat Banner}}]]、[[{{tr|Jungle Bat Banner}}]]、[[{{tr|Lava Slime Banner}}]]等等。}}
+{{history|Desktop 1.2.0.3|引入了 87 个新{{tr|banners}}，均由相应{{tr|enemies}}掉落。}}
+{{history|Console 1.02|加入了 10 个新{{tr|banners}}，均由{{tr|console}}/{{tr|mobile}}独有的{{tr|enemies}}掉落。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+{{Master Template Furniture
+| show-other = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Banners (enemy)}}

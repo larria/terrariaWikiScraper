@@ -1,0 +1,36 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| auto = 2215
+| tooltip = @@@@ {{eicons|1.4.0.1|small=y}}<br/>增加触及范围{{eicons|Extendo Grip|not=1.4.0.1|small=y}}
+| tags = buyable / construction / vendor:Traveling Merchant
+}}
+
+'''{{tr|Extendo Grip}}'''是一个可以增加挖掘与放置[[{{tr|block}}]]范围的[[{{tr|accessory}}]]，它可以增加水平方向 3 格、垂直方向 2 格的距离。{{tr|player}}可以用 {{iteminfo|Extendo Grip|buy}} 从[[{{tr|Traveling Merchant}}]]购买它。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Extendo Grip|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Extendo Grip}}的效果可以与[[{{tr|Toolbelt}}]]的 +1 格范围、以及[[{{tr|Toolbox}}]] +1 格范围相互叠加。不过，{{tr|Toolbelt}}只能增加{{tr|block}}的''放置''范围，而不能增加挖掘范围；而{{tr|the Extendo Grip and Toolbox}}会同时影响二者。因此，同时装备{{tr|Extendo Grip}}与{{tr|Toolbelt}}，放置的范围要比挖掘的范围大一格。
+* 配合[[{{tr|Toolbox}}]]与[[{{tr|Laser Drill}}]]，总共可以得到 +15 的范围。
+* 装备此{{tr|item}}亦可增加与 [[{{tr|NPC}}]] 对话的距离与激活{{tr|levers}}等机关的距离。[[{{tr|Architect Gizmo Pack}}]]也有一样的效果，保留了{{tr|Extendo Grip}}的功能。这允让玩家可以与用于{{tr|wiring}}的隐藏{{tr|switches}}以及安全地关在火柴盒房子里的 {{tr|NPC}} 互动。
+*{{tr|This item}}搭配[[{{tr|Shroomite Digging Claw}}|{{tr|Shroomite Digging Claws}}]]会非常有用，可以延长其较短的范围。
+
+== 小贴士 ==
+* 装备{{tr|This item}}可以安全地从远处挖掘[[{{tr|Hellstone}}]]而不必担心危险的[[{{tr|lava}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Tooltip}}从“Increases tile reach”变成了“Increases block placement & tool range by 3”。}}
+{{history|Desktop 1.3.0.1|现在用于{{tr|craft}}[[{{tr|Architect Gizmo Pack}}]]。}}
+{{history|Desktop 1.2.3.1|修复了{{tr|Extendo Grip}}开{{tr|chests}}时{{tr|chests}}会立刻关闭的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Extendo Grip}}

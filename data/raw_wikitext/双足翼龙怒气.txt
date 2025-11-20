@@ -1,0 +1,56 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| auto = 3870
+| debuff = Betsy's Curse / 10
+| sound1 = Dd2 betsy fireball impact 0.wav, Dd2 betsy fireball impact 1.wav, Dd2 betsy fireball impact 2.wav
+| soundcaption1 = 碰撞
+| tags = drop / bag loot / hardmode
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Betsy's Wrath}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Golem}}]]后的[[{{tr|wand}}]]，有 {{chance|1/4}} 几率掉落自 3 级[[{{tr|Old One's Army}}]][[{{tr|event}}]]中的[[{{tr|Betsy}}]]。使用时，它会发射三发以弧线飞行的{{tr|fireballs}}。{{tr|fireballs}}碰到[[{{tr|enemy}}]][[{{tr|block}}]]时爆炸，并施加 10 {{tr|seconds}}'''{{tr|Betsy's Curse}}'''[[{{tr|debuff}}]]，对受影响的实体增加 40 点[[{{tr|armor penetration}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|Betsy's Curse debuff}}不能施加给{{tr|other players}}。
+* {{tr|Betsy's Wrath}}可以视为[[{{tr|Golden Shower}}]]的升级版。{{tr|Ichor}}还能和{{tr|Betsy's Curse}}叠加，总计有 55 点{{tr|armor penetration}}。
+* 在内部，{{tr|Betsy's Wrath}}具有 {{iteminfo|Betsy's Wrath|reuseDelay}} 的 <code>[[reuseDelay]]</code>，在每次开火间添加了 {{iteminfo|Betsy's Wrath|reuseDelay}} {{tr|tick}}{{tick}}（{{duration|{{iteminfo|Betsy's Wrath|reuseDelay}} ticks}}）的冷却。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults4}}
+* {{tr|The explosion}}覆盖以{{tr|Betsy's Wrath projectile}}为中心的 8.75×8.75-{{tr|tile}}的方形区域。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* {{tr|Betsy}}自身亦不免疫此{{tr|debuff}}。
+
+[[File:Betsy's Wrath (demo).gif|frame|none|{{tr|Betsy's Wrath}}攻击[[{{tr|Target Dummies}}]]。注意在{{tr|Target Dummies}}上的特殊粒子效果。]]<!-- huge image, putting it here should ensure that it doesn't interfere with any other content on all devices -->
+
+{{-}}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities|Betsy's Curse}}
+
+== 花絮 ==
+* 和其他{{tr|Old One's Army weapons}}一样，{{tr|Betsy's Wrath}}直接参考了《[[{{tr|Dungeon Defenders 2}}]]》中的同名武器，因为它的实现是[[{{tr|crossover content}}|{{tr|crossover event}}]]的一部分。
+
+== 另见 ==
+* {{dd2 link|Magic Staffs#Legendary|Betsy's Wrath}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Debuff}}机制从降低[[{{tr|defense}}]]改为增加[[{{tr|armor penetration}}]]。}}
+{{history|Desktop 1.4.1.2|{{tr|Damage}}由 110 降低至 100。}}
+{{history|Desktop 1.4.1|{{tr|Damage}}由 65 提升至 110。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Betsy}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Betsy's Wrath}}

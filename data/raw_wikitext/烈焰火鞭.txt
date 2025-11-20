@@ -1,0 +1,94 @@
+{{legacy nav tab}}
+{{item infobox|boxwidth=22em
+| auto = 218
+| debuff = On Fire! / {{duration|rawseconds=4–8}} / 50%
+| listcat = wands
+| tags = Loot / Bag loot
+| sound1 = Item 10.wav
+| soundcaption1 = 碰撞
+}}
+{{drop infobox|style=clear:right}}
+[[File:Flamelash (demo).gif|frame|{{tr|The Flamelash}}攻击[[{{tr|Target Dummies}}]]。注意它如何跟随光标并造成穿透{{tr|blocks}}的溅射伤害。]]
+
+'''{{tr|Flamelash}}'''是一个[[{{tr|pre-Hardmode}}]]，[[{{tr|Skeletron}}]]后的[[{{tr|wand}}]]。使用时，它会发射一枚{{tr|fireball}}，当按住 {{key|use}} 键时可随{{tr|cursor}}移动。若拖拽时松开 {{key|use}} 键，{{tr|the fireball}}将会沿此方向发射。若{{tr|cursor}}释放时固定不动，它会直线远离{{tr|player}}发射。释放后，{{tr|fireball}}自动追踪附近的[[{{tr|enemies}}]]且可穿透一次，当接触第二个{{tr|enemy}}或[[{{tr|solid block}}]]时，它会产生小型爆炸。它还有 {{chance|1/2}} 的几率造成 4–8 秒的[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。{{tr|Flamelash}}有 {{chance|1/5}} 的概率获得自[[{{tr|Underworld}}]]的[[{{tr|Shadow Chest}}]]中，并且有 {{chance|1/5}} 的概率获得自{{eil|Obsidian Crate|s}}和{{eil|Hellstone Crate|s}}掉落的{{eil|Obsidian Lock Box|s}}中。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|fireball}}持续一分钟后消失。
+* 其爆炸会对以{{tr|projectile}}为中心的 6×6-{{tr|tile}}<!-- 96×96 pixels-->方形区域造成{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* 尽管{{tr|projectile}}的大小在穿透第一个{{tr|enemy}}后会明显增大，但二次击中时并不会造成额外{{tr|damage}}。
+* [[{{tr|mana}}]]{{tr|cost}}仅用于初始施法。维持和导向{{tr|the projectile}}没有额外的{{tr|mana cost}}，玩家在控制它时就会再生{{tr|mana}}。
+* {{tr|Flamelash}}发射的{{tr|projectile}}不能进入[[{{tr|water}}]]和[[{{tr|honey}}]]，一旦与它接触就会立即消散，而进入[[{{tr|lava}}]]不会。
+** {{tr|player}}不能浸入在任何[[{{tr|liquid}}]]中时使用{{tr|the Flamelash}}，包括在{{tr|lava}}中。
+
+== 小贴士 ==
+* 因为{{tr|the fireball}}可发光且可控，此{{tr|weapon}}是一个优秀的探索工具。
+* 如果有足够大的空间，其{{tr|projectile}}可以击中同一目标两次：当其穿透{{tr|enemy}}后转一圈可再次击中{{tr|enemy}}。
+* {{tr|projectile}}的爆炸可以波及到位于薄的{{tr|walls}}和[[{{tr|doors}}]]另一侧的{{tr|enemies}}。
+* 使用[[{{tr|Teleporter}}]]让{{tr|enemy}}快速移动（比如，通过[[{{tr|Statues}}]]生成一只），可以使得{{tr|projectile}}追踪着目标在一定范围内来回飞行。可以在召唤 {{tr|boss}} 前这样做，“囤积”大量的{{tr|projectile}}，以造成巨额的爆发{{tr|damage}}。
+
+== 图库 ==
+<gallery>
+File:Journey's End Flamelash.png|穿透一个{{tr|enemy}}后的{{tr|Flamelash}}。
+</gallery>
+
+== 另见 ==
+* [[{{tr|Magic Missile}}]]
+* [[{{tr|Rainbow Rod}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 36 降低至 32。
+** {{tr|Mana cost}}由 18 提升至 21。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|The item}}被重做：
+*** {{tr|Projectile}}{{tr|Sprite updated}}。
+*** {{tr|Projectile}}的移动速度快得多了。
+*** 释放后{{tr|Projectile}}会{{tr|homes}}导向{{tr|enemies}}。
+*** {{tr|Projectile}}现在会穿透一次。
+*** {{tr|Projectile}}撞击时会产生小范围的爆炸。
+*** {{tr|Damage}}由 40 降低至 36。
+*** {{tr|Use time}}由 20 提升至 30
+*** {{tr|Mana usage}}由 12 提升至 18。
+*** 现在可从[[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]里的[[{{tr|Obsidian Lock Box}}]]中获得。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Damage}}由 34 提升至 40。
+** {{tr|Mana}}消耗由 16 降低至 12。}}
+{{history|Desktop 1.2.0.3.1|{{tr|Weapon}}速度增大，使其更加实用。}}
+{{history|Desktop 1.2|不再极端稀有。}}
+{{history|Desktop 1.0.6.1|不再能在水下使用。}}
+{{history|Desktop 1.0.6|
+** 得到了若干游玩上的变化：
+*** 使用时会发出新的声音。
+*** {{tr|Damage}}由 41 降低至 34。
+*** 施法所需的[[{{tr|Mana}}]]由 20 降低至 16。
+*** 现在每次攻击只能击中一次而非两次。
+*** 鼠标按键放开后{{tr|Projectile}}会继续移动，而非消失。
+*** 现在会造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+*** 现在只会出现在[[{{tr|Shadow Chest}}]]中而不再掉落自[[{{tr|Bone Serpent}}]]。}}
+{{history|Desktop 1.0.5|{{tr|Damage}}由 47 降低至 41。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Damage}}由 34 提升至 40。
+** {{tr|Mana cost}}由 16 降低至 12。}}
+{{history|Console 1.02|
+** 不再极端稀有。
+** {{tr|Weapon}}速度增大，使其更加实用。}}
+{{history|Console-Release|Introduced=y|伴随着{{tr|Desktop}} 1.0.6.1 的相应机制引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|
+** 不再极端稀有。
+** {{tr|Weapon}}速度增大，使其更加实用。}}
+{{history|Mobile-Release|Introduced=y|伴随着{{tr|Desktop}} 1.0.6.1 的相应机制引入。}}
+{{history|3DS-Release|Introduced=y|伴随着{{tr|Desktop}} 1.2.0.3 的相应机制引入。}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Flamelash}}

@@ -1,0 +1,41 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3095
+| tags = informational / drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Tally Counter}}'''是一个[[{{tr|Informational Accessories}}|{{tr|informational accessory}}]]，能够显示一类[[{{tr|enemies}}]]被击杀的数量。{{tr|The Tally Counter}}会首先在[[{{tr|Minimap}}|{{tr|map}}]]/[[{{tr|health}}]]区域下方显示''“{{gameText|GameUI.NoKillCount}}”''，在有{{tr|enemy}}被攻击后，这一文本会显示那个{{tr|enemy}}在这个{{tr|world}}中被所有玩家击杀的总数。击杀计数仅会显示最后由玩家或其[[{{tr|minions}}]]击中的{{tr|enemy}}。它会统计自从{{tr|world}}创建以来的击杀数，而非从装备它开始。
+
+它有 {{chance|249/25000}} 几率掉落自[[{{tr|Angry Bones}}]]、[[{{tr|Cursed Skull}}]]、和[[{{tr|Dark Caster}}]]，所有这些都在[[{{tr|Dungeon}}]]中找到。
+
+{{tr|The Tally Counter}}是制作 [[{{tr|R.E.K. 3000}}]] 所需的三个组件之一，其他两个是[[{{tr|Lifeform Analyzer}}]]和[[{{tr|Radar}}]]，因此是制作[[{{tr|Cell Phone}}]]所必需的组件。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Tally Counter|expectedrows=1}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* 即使是在获得{{tr|Tally Counter}}之前，每个{{tr|enemy}}的击杀计数也都会被记录。
+* {{tr|The Tally Counter}}对于许多不同的{{tr|enemies}}会显示“{{gameText|GameUI.NoKillCount}}”：
+** 没有对应{{tr|banner}}的{{tr|Enemies}}，例如 [[{{tr|bosses}}]]。
+** 部分仆从、可摧毁的{{tr|projectiles}}、或其他{{tr|enemies}}，例如[[{{tr|Baby Slime}}]]。
+* 部分[[{{tr|pre-Hardmode}}]][[{{tr|enemies}}]]的[[{{tr|Hardmode}}]]版本没有击杀计数，而是和{{tr|pre-Hardmode counterpart}}共享击杀计数和{{tr|banner}}，例如[[{{tr|Giant Worm}}]]和[[{{tr|Digger}}]]。
+* {{tr|Tally Counter}}显示的击杀计数和[[{{tr|Bestiary}}]]所用的击杀计数不同。
+
+== 小贴士 ==
+* 在尝试获得根据{{tr|enemy}}的稀有度而有不同增量的击杀数掉落的[[{{tr|Banners (enemy)}}|{{tr|enemy banner}}]]时，{{tr|The Tally Counter}}会很有用。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-acc=yes
+}}
+
+{{language info|en=Tally Counter}}

@@ -1,0 +1,49 @@
+[[File:Megashark (demo).gif|thumb|right|200px|使用[[{{tr|Megashark}}]]攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Guns}}'''指使用[[{{tr|bullets}}]]或[[{{tr|Candy Corn}}]]作为[[{{tr|ammunition}}]]的[[{{tr|ranged weapons}}]]。
+
+除了各种{{tr|ranged damage}}加成以外，{{tr|Guns}}的伤害可以被[[{{tr|Shroomite Mask}}]]加成，并可以使用[[{{tr|Rifle Scope}}]]。拥有下面的任何一把发射{{tr|bullet}}的{{tr|Guns}}或{{tr|bullet}}都能满足[[{{tr|Arms Dealer}}]][[{{tr|NPC}}]]出现的条件，参阅[[{{tr|Arms Dealer}}#生成条件|此处]]获取详细信息。
+
+[[{{tr|Flare Gun}}]]使用{{tr|ammo}}，但不造成[[{{tr|ranged damage}}]]。一些物品名字里也有“{{tr|gun}}”这个字（比如[[{{tr|Piranha Gun}}]]、[[{{tr|Space Gun}}]]或[[{{tr|Water Gun}}]]），但是都无需{{tr|ammo}}，也不被[[{{tr|Shroomite Mask}}]]加成，并不可以使用[[{{tr|Rifle Scope}}]]，所以在这个 {{tr|wiki}} 上，它们不被视为“{{tr|gun}}”。
+
+{{tr|Guns}}类的最佳[[{{tr|modifier}}]]是'''{{tr|Unreal}}'''，但要除去不造成[[{{tr|knockback}}]]的{{tr|gun}}。
+
+== 种类 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{tr|ammo}}类型
+! [[File:Auto icon.png|16px|{{tr|Autoswing}}|link=]]
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖价
+! class=unsortable | 来源
+|-
+{{#cargo_query:tables=Items
+|fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|where={{#var:wtcount:where_total}}
+|group by=itemid
+|no html
+|format=template
+|template=:{{PAGENAME}}/row
+|named args=yes
+}}
+|}
+
+== 另见 ==
+* [[{{tr|Bows}}]]
+* [[{{tr|Repeaters}}]]
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+[[Category:{{tr|Guns}}| ]]
+{{language info|en=Guns}}

@@ -1,0 +1,39 @@
+{{item infobox
+| auto = 1931
+| tags = hardmode /drop
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Blizzard Staff (demo).gif|frame|使用中的{{tr|Blizzard Staff}}。]]
+
+'''{{tr|Blizzard Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|wand}}]]，有 4.44% – 7.78%（{{expert|15.56% – 31.11%}}）的概率掉落自[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间的[[{{tr|Ice Queen}}]]，具体概率取决于当前波数。<ref>{{tr|Frost Moon}}的各个波次所对应的具体{{tr|drop rates}}：{{frost moon item drop rates|14/15 * 1/3|fromwave=11|towave=20}}更多信息见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]。</ref> 使用时，它会使大片{{tr|icicles}}从天而降，指向{{tr|cursor}}。它每次使用可召唤四枚{{tr|icicles}}，{{tr|icicles}}不可穿透[[{{tr|enemies}}]]或穿过[[{{tr|blocks}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* 在{{mobile version}}中，打开{{tr|inventory}}会将玩家的屏幕向上移动数个{{tr|tiles}}。如果玩家在这种情况下点击屏幕顶部中心来使用{{tr|Blizzard Staff}}，生成的冰刺会向随机方向飞行，因为“{{tr|cursor}}”位置被{{tr|projectiles}}的生成位置所环绕。
+* {{tr|projectiles}}的[[{{tr|velocity}}]]在穿过[[{{tr|liquid}}]]时会降低。
+* 在内部，{{tr|Blizzard Staff}}具有 {{iteminfo|Blizzard Staff|useTime}} <code>[[useTime]]</code>，以及 {{iteminfo|Blizzard Staff|useAnimation}} <code>[[useAnimation]]</code>。它每次可发射 2 枚{{tr|icicles}}，这使得每次按下 {{key|use}} 键会发射 {{#expr:{{iteminfo|Blizzard Staff|useAnimation}}/{{iteminfo|Blizzard Staff|useTime}}*2}} 枚{{tr|icicle}}。
+<!--
+Verify: These are most probably outdated as the Console version updates along with the Desktop version now.
+
+* On the {{console version}}, the Blizzard Staff's icicles fall over a slightly larger area, rendering it less effective against smaller targets.
+* On the {{console version}}, due to the inability to bring the cursor farther than a few tiles away from the character, the icicles will go a lot farther in any given direction, and can make the icicles travel horizontally.-->
+== 小贴士 ==
+* {{tr|Blizzard Staff}}可视为升级版的[[{{tr|Meteor Staff}}]]，但{{tr|Blizzard Staff}}的{{tr|projectiles}}不能穿透或爆炸。{{eil|Lunar Flare}}则可以视为是{{tr|Blizzard Staff}}的升级版，因为它的{{tr|projectiles}}可以穿过{{tr|blocks}}、更精确、且拥有更高的{{DPS}}。
+
+== 历史 ==
+{{history|Desktop 1.2.3|
+** {{tr|Mana cost}}由 5 提升至 9。
+** 修复了玩家站在[[{{tr|The Underworld}}]]底部时，{{tr|Blizzard Staff}}可以向上射击的 {{tr|bug}}。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Blizzard Staff}}

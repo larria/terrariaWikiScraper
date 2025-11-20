@@ -1,0 +1,77 @@
+{{infobox wrapper|
+{{item infobox
+| type = Miscellaneous
+| auto = 58
+| hheal = 20
+}}
+|{{item infobox
+| type = Miscellaneous
+| auto = 1734
+| hheal = 20
+}}
+|{{item infobox
+| type = Miscellaneous
+| auto = 1867
+| hheal = 20
+| tags = drop
+}}
+}}
+{{distinguish|Crimson Heart|Life Crystal|Demon Heart}}
+{{dablink|"{{tr|Candy Cane}}"重定向至此。对于其他用途，参见[[{{tr|Candy Cane Block}}]]、[[{{tr|Candy Cane Sword}}]]或[[{{tr|Candy Cane Hook}}]]。}}
+{{see also|{{tr|Apple (disambiguation)}}}}
+
+'''{{tr|Hearts}}'''（或[[{{tr|Halloween}}]]期间的'''{{tr|Candy Apple}}'''和[[{{tr|Christmas}}]]期间的'''{{tr|Candy Canes}}'''）是一种常见强化，会在击杀[[{{tr|enemies}}]]、打破[[{{tr|pot}}]]时掉落，或是作为[[{{tr|slimes}}]]的[[{{tr|bonus drops}}]]。它不是[[{{tr|inventory}}]][[{{tr|item}}]]，拾取时它会立即被消耗并且{{tr|restores}} 20 点[[{{tr|Health}}]]。它们会发出黯淡的红光。
+
+如果玩家的{{tr|health}}未满但[[{{tr|mana}}]]满，{{tr|enemy}}掉落{{tr|Heart}}的几率为 {{chance|1/12}}。如果玩家的{{tr|mana}}也未满，则这一几率变为 {{chance|1/24}}，因为{{tr|Hearts}}和[[{{tr|Star}}]]不会同时掉落。{{source code ref|v=1.4.3.6|method=Terraria.NPC.NPCLoot_DropCommonLifeAndMana}}参见[[#{{tr|Notes}}|{{tr|Notes}}]]获取更多细节。对于{{tr|pots}}掉落{{tr|Heart}}的几率，见[[{{tr|Pot}}#打破后|{{tr|Pot}} § 打破后]]。
+
+也可以通过[[{{tr|Heart Statue}}]]来{{tr|spawn}}{{tr|Hearts}}（及其季节性{{tr|counterparts}}）。
+
+{{tr|Hearts}}的收集范围为 2.625 {{tr|tile}}，这可以通过使用[[{{tr|Heartreach Potion}}]]来增加到 18.25 {{tr|tiles}}。
+
+== 备注 ==
+* 在杀死{{tr|enemy}}时（[[{{tr|Mother Slime}}]]、[[{{tr|Corrupt Slime}}]]和有翅膀的[[{{tr|Slimer}}]]除外），有 {{chance|1/6}} 的几率（受{{eil|luck}}影响）触发一次掉落尝试。
+** 如果掉落尝试成功，则检查玩家是否拥有满{{tr|mana}}；若否，则{{tr|enemy}}有 {{chance|1/2}} 的几率（不受{{tr|luck}}影响）掉落{{tr|Star}}。
+** 如果玩家具有满{{tr|mana}}，或{{tr|Star}}的掉落尝试失败，则{{tr|enemy}}有 {{chance|1/2}} 的几率（不受{{tr|luck}}影响）掉落{{tr|Heart}}。
+*** 在结束以上掉落尝试后，若玩家的{{tr|mana}}未满，则又有 {{chance|1/2}} 的几率（受{{tr|luck}}影响）掉落{{tr|Star}}。
+* 除了普通掉落以外，下列{{tr|enemies}}在死亡时有额外的{{tr|Heart}}掉落：{{source code ref|v=1.4.3.6|method=Terraria.NPC.NPCLoot_DropHeals}}
+** [[{{tr|Creeper}}]]：{{chance|1/2}} 几率，若玩家{{tr|health}}未满。
+** [[{{tr|Eater of Worlds}}]]的{{tr|Segments}}：{{chance|1/4}} 几率，若玩家{{tr|health}}未满。
+** [[{{tr|The Hungry}}]]和[[{{tr|Leech}}]]：{{chance|1/1}} / {{expert|{{chance|1/5}}}} 几率。
+** [[{{tr|Probe}}]]：{{chance|1/2}} 几率。
+** [[{{tr|Gingerbread Man}}]]：{{chance|1/3}} 几率。
+** [[{{tr|Scarecrow}}]]、[[{{tr|Hellhound}}]]、和[[{{tr|Poltergeist}}]]：{{chance|1/4}} 几率。
+** [[{{tr|Zombie Elf}}]]：{{chance|1/5}} 几率。
+** [[{{tr|Splinterling}}]]：{{chance|1/6}} 几率。
+** [[{{tr|Headless Horseman}}]]：掉落 1 个{{tr|Heart}}。
+** [[{{tr|Present Mimic}}]]：掉落 5-10 个{{tr|Hearts}}。
+** [[{{tr|Mourning Wood}}]]、[[{{tr|Pumpking}}]]、[[{{tr|Everscream}}]]、[[{{tr|Santa-NK1}}]]、和[[{{tr|Ice Queen}}]]：掉落 6-11 个{{tr|Hearts}}。
+** 所有非{{tr|event}} [[{{tr|Bosses}}]]：掉落 5-9 个{{tr|Hearts}}。{{source code ref|v=1.4.3.6|method=Terraria.NPC.DoDeathEvents_DropBossPotionsAndHearts}}
+
+== 花絮 ==
+[[File:Heart cloud.png|thumb|right|{{eicons|1.4.0.1}} {{tr|Heart}}形的{{tr|cloud}}。]]
+
+* 尽管{{tr|Hearts}}在拾取时会立即被消耗，但是通过使用编辑器也能够将{{tr|Hearts}}放入{{tr|inventory}}。这些{{tr|hearts}}仍然和{{tr|normal}}的{{tr|hearts}}一样起作用，并且把它们扔到地上后仍然会在拾取时被消耗。
+** 以此种方式获得的{{tr|Hearts}}不能在{{eil|Journey Mode}}中被复制，它的研究需求显示为 X。
+* {{eicons|1.4.0.1}} {{tr|heart}}形的[[{{tr|Ambient entities}}#{{tr|Clouds}}列表|{{tr|cloud}}]]偶尔在{{tr|background}}中可见。
+* 在 {{eil|Celebrationmk10}} {{tr|worlds}}中，所有{{tr|Hearts}}有 {{chance|1/3}} 几率被替换为{{tr|Candy Apples}}，有 {{chance|1/3}} 几率被替换为{{tr|Candy Canes}}，无论季节。
+
+== 另见 ==
+* [[{{tr|Star}}]]，一种相似的{{tr|mana}}恢复{{tr|item}}。
+
+== 历史 ==
+{{history|Desktop 1.2.3|修正了没有真正死亡的 {{tr|NPC}}（{{tr|Mother Slime}}、{{tr|Slimer}}、{{tr|Corrupt Slime}}）在变形（死亡）时会掉落{{tr|hearts}}和{{tr|mana stars}}的{{tr|bug}}。}}
+{{history|Desktop 1.2.2|又{{tr|introduced}}{{tr|Candy Cane}}。}}
+{{history|Desktop 1.2.1|又{{tr|introduced}}{{tr|Candy Apple}}。}}
+{{history|Desktop-Release|{{tr|introduced}}}}
+{{history|Console-Release|{{tr|introduced}}}}
+{{history|Mobile-Release|{{tr|introduced}}}}
+{{history|3DS-Release|{{tr|introduced}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Heart}}

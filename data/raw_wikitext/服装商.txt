@@ -1,0 +1,264 @@
+{{npc infobox | tabs=y | boxwidth=18em
+| auto = 54
+| type = NPC
+| environment = Valid house
+| damage = {{modes|16|24|28}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ProjectileName.ClothiersCurse}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| Red Hat|1|100%
+| imageother = Map Icon Clothier.png
+| imageothercaption = Map Icon
+| idprojectile = 585
+}}
+{{quotation|'''{{tr|Clothier}}'''|{{gameText|LegacyDialog.114}}}}
+
+'''{{tr|Clothier}}'''是个主要出售[[{{tr|vanity items}}]]的 [[{{tr|NPC}}]] 商贩，一旦满足以下条件就会生成：
+* 有一间空[[{{tr|house}}]]。
+* [[{{tr|Skeletron}}]]已被打败。
+
+他和[[{{tr|Skeletron}}]]被打败前守在[[{{tr|Dungeon}}]]入口的[[{{tr|Old Man}}]]是同一人。在打败{{tr|Skeletron}}后，{{tr|the Old Man}}从诅咒中解放了出来，从{{tr|the Dungeon}}入口消失。他的衣服不再是破破烂烂的，眼睛也变为蓝色（之前是红色），并且还戴上了[[{{tr|Red Hat}}]]。
+
+装备[[{{tr|Clothier Voodoo Doll}}]]后玩家就能攻击并杀死{{tr|the Clothier}}（类似于[[{{tr|Guide Voodoo Doll}}]]）。在[[{{tr|night}}]]这么干会再次召唤出{{tr|Skeletron}}。但若玩家在不装备{{tr|Clothier Voodoo Doll}}的情况下杀死{{tr|Clothier}}（例如，使用{{tr|Flymeal}}），将不会召唤出{{tr|Boss}}。
+
+在{{eversions|1.3.0.1}}中，受到威胁时，{{tr|the Clothier}}发射类似于[[{{tr|Book of Skulls}}]]发射的{{tr|shadowflame skull projectiles}}。它们会对{{tr|enemies}}造成[[{{tr|Shadowflame}}]][[{{tr|debuff}}]]，持续 5–10 {{tr|seconds}}{{source code ref|v=1.4.0.5|method=Terraria.Projectile.StatusNPC}}并在游戏开始时造成 16 / {{expert|24}} / {{master|28}} {{tr|damage}}，{{eicons|1.4.0.1}} 但随着玩家的进展，{{tr|the Clothier}}会得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Black Thread}}
+|{{shop row|Pink Thread}}
+|{{shop row|r/Terraria}}
+|{{shop row|Summer Hat|在[[白天]]。}}
+|{{shop row|Plumber's Shirt|在[[{{tr|Moon phase}}|{{tr|full moon}}]]（{{moons|1}}）期间。}}
+|{{shop row|Plumber's Pants|在[[{{tr|Moon phase}}|{{tr|full moon}}]]（{{moons|1}}）期间。}}
+|{{shop row|White Tuxedo Shirt|在[[{{tr|Moon phase}}|{{tr|full moon}}]]的{{tr|night}}（{{moons|1}}）期间。}}
+|{{shop row|White Tuxedo Pants|在[[{{tr|Moon phase}}|{{tr|full moon}}]]的{{tr|night}}（{{moons|1}}）期间。}}
+|{{shop row|The Doctor's Shirt|在[[{{tr|Moon phase}}|{{tr|Waning Gibbous}}]]（{{moons|2}}）期间。}}
+|{{shop row|The Doctor's Pants|在[[{{tr|Moon phase}}|{{tr|Waning Gibbous}}]]（{{moons|2}}）期间。}}
+|{{shop row|Familiar Shirt}}
+|{{shop row|Familiar Pants}}
+|{{shop row|Familiar Wig}}
+|{{shop row|Clown Hat|如果已打败[[{{tr|Clown}}]]。}}
+|{{shop row|Clown Shirt|如果已打败[[{{tr|Clown}}]]。}}
+|{{shop row|Clown Pants|如果已打败[[{{tr|Clown}}]]。}}
+|{{shop row|Mime Mask|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Fallen Tuxedo Shirt|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Fallen Tuxedo Pants|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Solar Cultist Hood|白天，如果已打败[[{{tr|Lunatic Cultist}}]]。}}
+|{{shop row|Solar Cultist Robe|白天，如果已打败[[{{tr|Lunatic Cultist}}]]。}}
+|{{shop row|Lunar Cultist Hood|夜晚，如果已打败[[{{tr|Lunatic Cultist}}]]。}}
+|{{shop row|Lunar Cultist Robe|夜晚，如果已打败[[{{tr|Lunatic Cultist}}]]。}}
+|{{shop row|Tax Collector's Hat|若[[{{tr|Tax Collector}}]]在场。}}
+|{{shop row|Tax Collector's Suit|若[[{{tr|Tax Collector}}]]在场。}}
+|{{shop row|Tax Collector's Pants|若[[{{tr|Tax Collector}}]]在场。}}
+|{{shop row|Gravedigger Hat|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Gravedigger Coat|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Funeral Hat|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Funeral Coat|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Funeral Pants|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Tragic Umbrella|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Victorian Goth Hat|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Victorian Goth Dress|如果在[[{{tr|Graveyard}}]]中与其交谈。}}
+|{{shop row|Beanie|如果在[[{{tr|Snow biome}}]]中与其交谈。}}
+|{{shop row|Guy Fawkes Mask|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Tam O' Shanter|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|third-quarter moon}}]]（{{moons|3}}）期间。}}
+|{{shop row|Blue Graduation Cap|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waning crescent}}]]（{{moons|4}}）期间。}}
+|{{shop row|Blue Graduation Gown|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waning crescent}}]]（{{moons|4}}）期间。}}
+|{{shop row|Tiara|在[[{{tr|Hardmode}}]]，中[[{{tr|Moon phase}}|{{tr|new moon}}]] ({{moons|5}})期间。}}
+|{{shop row|Princess Dress (Clothier)|value={{iteminfo|865|buy}}|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|new moon}}]] （{{moons|5}}）期间。}}
+|{{shop row|Maroon Graduation Cap|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waxing crescent}}]]（{{moons|6}}）期间。}}
+|{{shop row|Maroon Graduation Gown|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waxing crescent}}]]（{{moons|6}}）期间。}}
+|{{shop row|Cowboy Hat|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|first-quarter moon}}]]（{{moons|7}}）期间。}}
+|{{shop row|Cowboy Jacket|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|first-quarter moon}}]]（{{moons|7}}）期间。}}
+|{{shop row|Cowboy Pants|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|first-quarter moon}}]]（{{moons|7}}）期间。}}
+|{{shop row|Black Graduation Cap|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waxing gibbous}}]]（{{moons|8}}）期间。}}
+|{{shop row|Black Graduation Gown|在[[{{tr|Hardmode}}]]中，[[{{tr|Moon phase}}|{{tr|waxing gibbous}}]]（{{moons|8}}）期间。}}
+|{{shop row|Balla Hat|如果已打败[[{{tr|Frost Legion}}]]。}}
+|{{shop row|Gangsta Hat|如果已打败[[{{tr|Frost Legion}}]]。}}
+|{{shop row|Clothier's Jacket|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Clothier's Pants|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Bundled Party Balloons|[[{{tr|Party}}]]期间。}}
+|{{shop row|Balloon Animal|[[{{tr|Party}}]]期间。}}
+|{{shop row|Silly Sunflower Petals|[[{{tr|Party}}]]期间。}}
+|{{shop row|Silly Sunflower Tops|[[{{tr|Party}}]]期间。}}
+|{{shop row|Silly Sunflower Bottoms|[[{{tr|Party}}]]期间。}}
+|{{shop row|Hunter Cloak|玩家累计[[{{tr|golf}}]]得分达到 2000 或以上。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+|{{shop row|Old Walking Stick|value={{pc|1}}}}
+|{{shop row|George's Hat|value={{gc|1}}|[[{{tr|Blood Moon}}]]期间，男性人物。}}
+|{{shop row|George's Suit|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间，男性人物。}}
+|{{shop row|George's Pants|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间，男性人物。}}
+|{{shop row|Fabulous Ribbon|value={{gc|1}}|[[{{tr|Blood Moon}}]]期间，女性人物。}}
+|{{shop row|Fabulous Dress|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间，女性人物。}}
+|{{shop row|Fabulous Slippers|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间，女性人物。}}
+|{{shop row|Oktober Locks|value={{sc|80}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Dirndl Blouse|value={{gc|1}} {{sc|20}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Dirndl Skirt|value={{gc|1}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Alpine Hat|value={{sc|80}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Lederweste|value={{gc|1}} {{sc|20}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Lederhosen|value={{gc|1}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Festive top hat|value={{gc|1}}| [[{{tr|Christmas}}]]期间。}}
+|{{shop row|Toro's Head|value={{gc|10}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Toro's Body|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Toro's Legs|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Monomi Head|value={{gc|10}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Monomi Body|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Monomi Legs|value={{gc|25}}|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Shiren Shirt|value={{gc|25}}|[[{{tr|Moon phase}}|{{tr|full moon}}]]（{{moons|1}}）期间。}}
+|{{shop row|Shiren Pants|value={{gc|25}}|[[{{tr|Moon phase}}|{{tr|full moon}}]]（{{moons|1}}）期间。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== 微光形态{{eicons|Shimmer}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Clothier|male}}
+{{-}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.114}}”（参考 1994 年美国喜剧电影《''{{wikipedia|Forrest Gump|阿甘正传（Forrest Gump）}}》''）
+* “{{gameText|LegacyDialog.115}}”（参考《''阿甘正传（Forrest Gump）''》）
+* “{{gameText|LegacyDialog.116}}”（参考《''阿甘正传（Forrest Gump）''》）
+* “{{gameText|LegacyDialog.117}}”（模仿了 1992 年的美国运动喜剧电影《''{{wikipedia|A League of Their Own|红粉联盟（A League of Their Own）}}''》中的一句台词）
+* “{{gameText|LegacyDialog.118}}”（参考《''阿甘正传（Forrest Gump）''》）
+* “{{gameText|LegacyDialog.119}}”（参考 2000 年美国生存剧情电影《''{{wikipedia|Cast Away|浩劫余生（Cast Away）}}''》）
+
+'''当玩家戴着[[{{tr|Red Hat}}]]时：'''
+* “{{gameText|LegacyDialog.113}}”
+
+'''[[{{tr|Nurse}}]]存在时：'''
+* “{{gameText|LegacyDialog.112|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”（参考 1955 年英国黑人喜剧犯罪电影《''{{wikipedia|The Ladykillers|老妇杀手（The Ladykillers）}}''》）
+
+'''[[{{tr|Mechanic}}]]不存在时：'''
+* “{{gameText|LegacyDialog.110}}”
+
+'''[[{{tr|Truffle}}]]存在时：'''
+* “{{gameText|LegacyDialog.237|x_Truffle=&lt;{{tr|Truffle}}的名字&gt;}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.111}}” {{sic}}（参考 1995 年美国太空纪录片电影《''{{wikipedia|Apollo 13|阿波罗 13 号（Apollo 13）}}''》）
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|ClothierSpecialText.Party}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|ClothierSpecialText.Rain1}}”（参考了《''阿甘正传（Forrest Gump）''》）
+* “{{gameText|ClothierSpecialText.Rain2}}”（参考了《''阿甘正传（Forrest Gump）''》）
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|ClothierSpecialText.Windy1}}”
+* “{{gameText|ClothierSpecialText.Windy2}}”
+
+'''{{eil|Storm}}期间：'''
+* “{{gameText|ClothierSpecialText.Storm1}}”
+* “{{gameText|ClothierSpecialText.Storm2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|ClothierSpecialText.Graveyard1}}”
+* “{{gameText|ClothierSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Clothier.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Clothier.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Clothier.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Clothier.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Clothier.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Clothier.HateCrowded}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_Clothier.LikeBiome|x_BiomeName={{tr|the Underground}}}}”（参考了 2004 年美国圣诞电影《''{{wikipedia|The Polar Express（film）|极地快车（The Polar Express）}}''》）
+
+'''在[[{{tr|the Hallow}}]]中时：'''
+* “{{gameText|TownNPCMood_Clothier.DislikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Clothier.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/the Dungeon}}}}”
+
+'''靠近[[{{tr|Truffle}}]]时：'''
+* “{{gameText|TownNPCMood_Clothier.LoveNPC|x_NPCName=&lt;{{tr|Truffle}}的名字&gt;}}”
+
+'''靠近[[{{tr|Tax Collector}}]]时：'''
+* “{{gameText|TownNPCMood_Clothier.LikeNPC|x_NPCName=&lt;{{tr|Tax Collector}}的名字&gt;}}”
+
+'''靠近[[{{tr|Nurse}}]]时：'''
+* “{{gameText|TownNPCMood_Clothier.DislikeNPC|x_NPCName=&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''靠近[[{{tr|Mechanic}}]]时：'''
+* “{{gameText|TownNPCMood_Clothier.HateNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Clothier.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 小贴士 ==
+* 在{{tr|the Clothier}}的{{tr|house}}地板上放一个浅[[{{tr|Lava}}]]坑（比如，将一个[[{{tr|Lava Bucket}}]]倒到 8 或 9 格长、一格高的水平凹坑中）会使{{tr|the Clothier}}经常死亡又重生，每次都会留下[[{{tr|Red Hat}}]]，每个能卖 {{iteminfo|Red Hat|sell}}。
+** 但是，在夜间用[[{{tr|Clothier Voodoo Doll}}]]杀死{{tr|Clothier}}（这会导致生成[[{{tr|Skeletron}}]]）来与{{tr|Skeletron}}战斗更有利可图。{{tr|Skeletron}}被打败后会掉落 {{npcinfo|Skeletron Head|value}}，这尚未考虑其他可以卖掉的掉落物。
+
+== 名字 ==
+{{npc names}}
+
+== 花絮 ==
+* {{tr|the Clothier}}的对话大多数引用了美国演员及制片人{{维基百科|Tom Hanks|汤姆·汉克斯（Tom Hanks）}}主演的电影。有{{维基百科|b=y|Cast Away|t=浩劫余生}}、{{维基百科|b=y|Forrest Gump|t=阿甘正传}}、{{维基百科|b=y|The Ladykillers|t=老妇杀手}}、{{维基百科|b=y|Apollo 13 (film)|Apollo 13|t=阿波罗 13 号}}、{{维基百科|b=y|A League of Their Own|t=红粉联盟}}、和{{维基百科|b=y|The Polar Express (film)|The Polar Express|t=极地快车}}。
+* {{tr|the Clothier}}可能的名字之一是 James。这指的是''[[{{tr|Terraria}}]]'' YouTube 主播  James Bennett，他更广为人知的名字是[https://www.youtube.com/user/ChippyGaming ChippyGaming]，并且他还用{{tr|the Clothier}}做头像。
+* {{tr|The Clothier}}似乎想要吃掉[[{{tr|Truffle}}]]。这可以从{{tr|Truffle}}的话“{{gameText|LegacyDialog.236}}”和{{tr|the Clothier}}的话“{{gameText|LegacyDialog.237|x_Truffle=&lt;{{tr|Truffle}}的名字&gt;}}”中看出。
+** {{tr|the Clothier}}喜欢住在{{tr|the Truffle}}附近，而{{tr|the Truffle}}并反感成为{{tr|the Clothier}}的邻居可以进一步证实这一点。
+** 由于 {{tr|NPC}} 在他所喜欢的 {{tr|NPC}} 附近时收费较低，这意味着如果玩家遵从他的要求，{{tr|Clothier}}就会信守承诺。
+* 话语“{{gameText|LegacyDialog.110}}”指的是{{tr|dungeon}}中会发现[[{{tr|the bound mechanic}}]]的事。这意味着虽然他被{{tr|Skeletron}}所附身，但依然对这一行为负有责任。
+** {{tr|Clothier}}对[[{{tr|Mechanic}}]]的仇恨的困惑进一步证实了这点，他对之前发生的事情几乎没有记忆。
+* 话语“{{gameText|LegacyDialog.113}}”是指玩家为了帽子而谋杀他，因为这是得到帽子的唯一正规途径。此外，只要戴着帽子，那么这条话语就会覆盖掉所有其他话语。
+** 这大概也暗示着{{tr|the Clothier}}可能对过往的自己有所了解，因为他是仅有的 2 个有类似说法的 {{tr|npc}}之一，另一个是[[{{tr|Guide}}]]，他说“{{gameText|GuideChatter.Chatter_2}}”。类似地，这两个 {{tr|NPCs}} 也是仅有的 2 个被杀后可以召唤 {{tr|boss}} 并有自己的[[{{tr|Voodoo Doll}}|{{tr|Voodoo Dolls}}]]的 {{tr|NPC}}。
+* 名字 Pip 可能参考了 {{wikipedia|Philip Pirrip}}，他被叫做 Pip，是 1861 年 {{wikipedia|Charles Dickens|查尔斯·狄更斯（Charles Dickens）}}的小说《''{{wikipedia|Great Expectations|远大前程（Great Expectations）}}''》中的主人公。Pip 经历了多次不同的职业转变，最终成为了一个负责任的人。{{tr|The Clothier}}一开始是{{tr|old man}}，然后变成一个有稳定工作和收入的人，这可能是暗喻了 Pip 在书中的经历。
+{{float file box|[[File:Clothier (Shimmered).png]] [[File:Old Man (Shimmered).png]] [[File:Old Man.png]] [[File:Clothier.png]]| {{tr|Clothier}}与{{tr|Old Man}}的各种形态。}}
+* {{tr|Clothier}}和{{tr|Old Man}}（以及他们的{{tr|Shimmer}}形态）刚好是青年到老年的变化。而{{tr|Clothier}}谈论过自己年轻时迷倒过很多女人，因此他的{{tr|Shimmer}}形态很可能就是他年轻时的模样。
+* {{tr|Clothier}}的话语大都出自{{维基百科|b=y|Forrest Gump|t=阿甘正传}}，可能是在暗指{{tr|Clothier}}与阿甘一样跌宕的人生；以及与常人有些不同的行为和思考方式。
+** {{tr|Princess}}的话语可能也暗示了这一点：“{{gameText|TownNPCMood_Princess.LoveNPC_Clothier|x_NPCName=&lt;{{tr|Clothier}}的名字&gt;}}”
+** {{tr|Clothier}}的{{tr|Bestiary}}条目也表达过他的说话方式很随意：“''{{gameText|Bestiary_FlavorText.npc_Clothier}}''”
+* 虽然{{tr|Clothier}}话语中说“{{gameText|LegacyDialog.112|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”，但[[{{tr|Nurse}}]]作为他邻居后时反而会令{{tr|Clothier}}反感：“{{gameText|TownNPCMood_Clothier.DislikeNPC|x_NPCName=&lt;{{tr|Nurse}}的名字&gt;}}”
+** 此外，除了{{tr|Clothier}}认为{{tr|Truffle}}好吃外，他都不清楚自己是因什么而对其他{{tr|town NPC}} 产生了喜好和厌恶。
+* 其话语：“{{gameText|LegacyDialog.119}}”可能指向了可在{{tr|Dungeon}}{{tr|enemies}}的掉落物中获取到{{tr|Clothier Voodoo Doll}}的事实。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在出售一副新的{{tr|paintings}}。}}
+{{history|Desktop 1.4.0.1|现在在[[{{tr|Graveyard}}]][[{{tr|Biomes|link=y}}#{{tr|mini-biomes}}|{{tr|mini-biome}}]]中时会出售多个独有物品。}}
+{{history|Desktop 1.3.5|现在有几率名为“James”。}}
+{{history|Desktop 1.3.2|现在出售一些{{tr|party}}物品：[[{{tr|Bundled Party Balloons}}]]、[[{{tr|Balloon Animal}}]]、[[{{tr|Silly Sunflower set}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Cultist clothes}}|日耀和月亮{{tr|Cultist clothes}}]]和[[{{tr|White Tuxedo set}}]]。
+** 外观更新。}}
+{{history|Desktop 1.2.3|修正了即使装备了[[{{tr|Clothier Voodoo Doll}}]]，{{tr|Clothier}}也不会被{{tr|projectiles}}击中的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|现在使用{{tr|Clothier Voodoo Doll}}时，[[{{tr|Skeletron}}]]会在{{tr|the Clothier}}身上重生。}}
+{{history|Desktop 1.2.1|为[[{{tr|Halloween}}]]事件出售[[{{tr|Guy Fawkes Mask}}]]。}}
+{{history|Desktop 1.2.0.3|现在装备{{tr|Clothier Voodoo Doll}}时可以攻击{{tr|The Clothier}}。}}
+{{history|Desktop 1.2|
+** 现在在{{tr|Hardmode}}中出售更多独特的{{tr|vanity}}套装，以及[[{{tr|Balla Hat}}]]和[[{{tr|Gangsta Hat}}]]。
+** 现在可以在夜间借助{{tr|Clothier Voodoo Doll}}将其杀死来召唤{{tr|Skeletron}}。}}
+{{history|Desktop 1.1|现在在他生成时会随机赋予名字。他的死亡会用其名字报告。其他 {{tr|NPC}} 也会在他们各自的对话中使用此名字。}}
+{{history|Desktop 1.0.5|[[{{tr|Familiar clothes}}]]、[[{{tr|The Doctor's clothes}}]]和[[{{tr|Mime Mask}}]]添加到{{tr|inventory}}。商品的选择变为取决于一天中的时间和事件。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Clothier}}

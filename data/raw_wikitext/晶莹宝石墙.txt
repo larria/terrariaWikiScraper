@@ -1,0 +1,35 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| imagealt = <p>[[File:Amethyst Gemspark Wall.png|link=]] [[File:Topaz Gemspark Wall.png|link=]] [[File:Sapphire Gemspark Wall.png|link=]] [[File:Emerald Gemspark Wall.png|link=]]</p><p>[[File:Ruby Gemspark Wall.png|link=]] [[File:Diamond Gemspark Wall.png|link=]] [[File:Amber Gemspark Wall.png|link=]]</p><li><p>[[File:Amethyst Gemspark Wall (placed).png|link=]] [[File:Topaz Gemspark Wall (placed).png|link=]] [[File:Sapphire Gemspark Wall (placed).png|link=]]</p><p>[[File:Emerald Gemspark Wall (placed).png|link=]] [[File:Ruby Gemspark Wall (placed).png|link=]] [[File:Diamond Gemspark Wall (placed).png|link=]]</p><p>[[File:Amber Gemspark Wall (placed).png|link=]]</p></li>
+| imagebreak = yes
+| type = Wall/Crafting material
+| rare = {{iteminfo|2677|rare}}
+| stack = {{iteminfo|2677|stack}}
+| placeable = yes
+| use = {{iteminfo|2677|use time}}
+| autoswing = {{iteminfo|2677|autoswing}}
+| idwall = 153–156, 164–166
+| cargo = no
+}}
+{{float file box|width=270px|[[File:Diamond wall light up mud.png|250px]]<hr/>[[File:Diamond Gemspark Wall 2.png|250px]]|对前景{{tr|blocks}}的发光效果：{{tr|Ash Block}}（上）和{{tr|Gray Brick}}（下）有{{tr|Diamond Gemspark Walls}}位于其后（左）对比没有墙（右）的情况。}}
+
+'''{{tr|Gemspark Walls}}'''是[[{{tr|Gemspark Block}}]]的[[{{tr|Background walls}}|{{tr|wall}}]]等价物，分为普通和[[{{tr|Offline Gemspark Walls}}|黯淡]]版本。和{{tr|Gemspark Blocks}}一样，普通{{tr|Gemspark Walls}}会发光但对于 {{tr|NPC housing}}不算有效光源。和{{tr|Gemspark Blocks}}不同的是，{{tr|Gemspark Walls}}并不充当[[{{tr|Mechanisms}}]]，其普通和黯淡状态在放置之后无法切换。放置在{{tr|block}}后面的普通{{tr|Gemspark Walls}}会让此{{tr|block}}呈现为完全照亮的状态，类似于[[{{tr|Paints}}|{{tr|Illuminant Coating}}]]的效果。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|showresultid=y|link=no|result=LIKE %Gemspark Wall|resultnot=LIKE Offline %Gemspark Wall|expectedrows=7|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 用于 ===
+{{recipes|ingredient= Amber Gemspark Wall/Amethyst Gemspark Wall/Diamond Gemspark Wall/Emerald Gemspark Wall/Ruby Gemspark Wall/Sapphire Gemspark Wall/Topaz Gemspark Wall|expectedrows=7}}
+
+== 小贴士 ==
+* {{tr|Gemspark Walls}}是纯色的，因此{{tr|Emerald Gemspark Walls}}可以用作{{维基百科|Chroma key|green screen|t=绿幕}}。
+
+== 历史 ==
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Gemspark Walls}}

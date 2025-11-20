@@ -1,0 +1,287 @@
+{| class="terraria" style="float:right; margin:0 0 0 15px; padding:5px;"
+! 0 !! 1 !! 2 !! 3
+|-
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-full.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.FullMoon}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-2.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.WaningGibbous}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-3.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.ThirdQuarter}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-4.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.WaningCrescent}}</p>
+|-
+|
+|-
+! 4 !! 5 !! 6 !! 7
+|-
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-new.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.NewMoon}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-6.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.WaxingCrescent}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-7.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.FirstQuarter}}</p>
+| valign=top align=center width=50 style="margin:0;padding:0" | [[File:Moon-8.png]] <br/> <p style="font-size:75%;line-height: 120%;">{{gameText|GameUI.WaxingGibbous}}</p>
+|}
+{{redirect|{{tr|Moon}}}}
+{{for|《{{tr|Terraria}}》中的一般时间周期|{{tr|Day and night cycle}}}}
+
+[[《{{tr|Terraria}}》]]中的'''{{tr|moon}}'''以八个不同的'''{{tr|moon phase}}'''为周期循环变化，每个[[{{tr|night}}]]都会推移循环中的下一个{{tr|moon phase}}。当前的{{tr|moon phase}}由当晚{{tr|moon}}可见部分比例表示。{{tr|moon phase}}会影响许多事情，例如某些 [[{{tr|NPCs}}]] 的商店库存、某些[[{{tr|enemy}}]]的[[{{tr|spawn rate}}]]、和玩家的[[{{tr|Fishing Power}}]]。
+
+需要八个游戏内的{{tr|night}}来历经所有{{tr|moon phases}}。在世界创建时，周期以{{tr|full moon}}开始，整个{{tr|moon}}圆面都可见。四个{{tr|nights}}之后，经过了三个亏相后来到了{{tr|new moon}}，此时{{tr|moon}}完全不可见。再过四个{{tr|nights}}，经过三个盈相后又回到{{tr|full moon}}。
+
+每个{{tr|moon phase}}都是从{{tr|dawn}}开始的{{source code ref|v=1.4.0.5|method=Terraria.Main.UpdateTime_StartDay}}（{{time|4:30 AM}}）并持续到下一个{{tr|dawn}}。因此，一个{{tr|moon phase}}还包括了呈现此{{tr|moon phase}}的那个{{tr|night}}之前的那个{{tr|daytime}}。这一点很重要，因为大多数取决于{{tr|moon phase}}的内容和效果并不仅限于{{tr|night}}。
+
+可以用[[{{tr|Sextant}}]]或其任意升级物来确定当前的{{tr|moon phase}}。{{tr|Sextant}}是一种[[{{tr|Informational Accessories}}|{{tr|informational accessory}}]]，可以作为[[{{tr|fishing}}]]任务奖励从[[{{tr|Angler}}]] [[{{tr|NPCs}}|{{tr|NPC}}]] 处得到。
+
+[[{{tr|Blood Moon}}]]可能在除{{tr|new moon}}外的任何{{tr|moon phase}}时发生。[[{{tr|Pumpkin Moon}}]]或[[{{tr|Frost Moon}}]]则可以由玩家在任意{{tr|night}}召唤。
+
+== 月相相关内容 ==
+以下表格详细列出了依赖于特定{{tr|moon phase}}的物品和事件。除非另有说明，否则它们都指的是所述{{tr|moon phase}}的那个{{tr|day}}和那个{{tr|night}}。<!--
+-->{{options/set|item|class=allblock align-center|icons=no}}<!--
+
+-->{{#vardefine:moons-header| !! [[File:Moon-full.png|25px|link=]]<br/>{{gameText|GameUI.FullMoon}} !! [[File:Moon-2.png|25px|link=]]<br/>{{gameText|GameUI.WaningGibbous}} !! [[File:Moon-3.png|25px|link=]]<br/>{{gameText|GameUI.ThirdQuarter}} !! [[File:Moon-4.png|25px|link=]]<br/>{{gameText|GameUI.WaningCrescent}} !! [[File:Moon-new.png|25px|link=]]<br/>{{gameText|GameUI.NewMoon}} !! [[File:Moon-6.png|25px|link=]]<br/>{{gameText|GameUI.WaxingCrescent}} !! [[File:Moon-7.png|25px|link=]]<br/>{{gameText|GameUI.FirstQuarter}} !! [[File:Moon-8.png|25px|link=]]<br/>{{gameText|GameUI.WaxingGibbous}}}}<!--
+-->{{#vardefine:hm-note|（<abbr title="仅限困难模式">困难模式</abbr>）}}<!--
+
+-->
+=== 普遍效果 ===
+{| class="terraria align-center moon-phase-table"
+! {{#var:moons-header}}
+|- class=borderbottom
+! [[{{tr|Fishing Power}}]]
+| +10%
+| +5%
+| class=blankcell |
+| −5%
+| −10%
+| −5%
+| class=blankcell |
+| +5%
+|-
+! rowspan=3 | [[{{tr|Surface}}]]
+| {{item|Deathweed}}开花{{footnote|name=night}}{{eicons|1.3.0.1}}
+| rowspan=3 colspan=3 class="blankcell borderbottom" |
+| rowspan=3 class=borderbottom style="text-align:left;" | 更高的[[{{tr|NPC spawning}}|{{tr|spawn rate}}]]：
+{{item|class=|Demon Eye|s}}
+
+{{item|class=|Wandering Eye|s|note2={{#var:hm-note}}|image=Wandering Eye 1.png|size=25px}}
+
+{{item|class=|Wraith|s|note2={{#var:hm-note}}|size=15px}}
+
+{{item|class=|Firefly|s}}
+
+{{item|class=|Lightning Bug|s|note2={{#var:hm-note}}}}
+
+{{item|class=|Fairy|s|note2=（来自[[{{tr|Fallen Log}}]]）|image=Pink Fairy.png}}
+| rowspan=3 colspan=3 class="blankcell borderbottom" |
+|-
+| {{item|Werewolf|s|size=20px}}生成{{note|{{#var:hm-note}}}}
+|- class=borderbottom
+| 更高的[[{{tr|NPC spawning}}|{{tr|spawn rate}}]]:
+
+{{item|class=|Fairy|s|note2=（来自[[{{tr|Fallen Log}}]]）|image=Pink Fairy.png}}
+|-
+! [[{{tr|Luminite Brick}}|{{tr|Luminite Brick}}<br/>{{tr|Shimmer Transmutations}}]] <!-- "&shy;" is a soft hyphen; it allows the browser to hyphenate the long word if there's not enough space -->
+| {{item|Heavenforge Brick}}
+| {{item|Lunar Rust Brick}}
+| {{item|Astra Brick}}
+| {{item|Dark Celestial Brick}}
+| {{item|Mercury Brick}}
+| {{item|Star Royale Brick}}
+| {{item|Cryocore Brick}}
+| {{item|Cosmic Ember Brick}}
+|}
+
+=== 出售物品 ===
+{| class="terraria align-center moon-phase-table"
+! {{#var:moons-header}}
+|- class=borderbottom
+! [[{{tr|Dye Trader}}]]
+| {{item|class=|Negative Dye|size=15px}}
+
+{{item|class=|Shadow Dye|size=15px}}
+| colspan=7 class=blankcell |
+|- class=borderbottom
+! [[{{tr|Painter}}]]
+| colspan=2 | {{item|First Encounter|size=x22px}}
+| colspan=2 | {{item|Good Morning|size=x22px}}
+| colspan=2 | {{item|Underground Reward|size=x22px}}
+| colspan=2 | {{item|Through the Window|size=x22px}}
+|- class=borderbottom
+! [[{{tr|Steampunker}}]]
+| colspan=4 | {{item|Steampunk set|size=x24px}}
+| colspan=4 | {{item|Jetpack|size=20px}}
+|- class=borderbottom
+! [[{{tr|Mechanic}}]]
+| class=blankcell |
+| {{item|Mechanic's Rod|size=24px|note={{footnote|name=angler}}|class={{options/get|item|class}} notesize}}{{eicons|1.4.1}}
+| class=blankcell |
+| {{item|Mechanic's Rod|size=24px|note={{footnote|name=angler-hm}}|class={{options/get|item|class}} notesize}}
+| class=blankcell |
+| {{item|Mechanic's Rod|size=24px|note={{footnote|name=angler}}|class={{options/get|item|class}} notesize}}{{eicons|1.4.1}}
+| class=blankcell |
+| {{item|Mechanic's Rod|size=24px|note={{footnote|name=angler}}|class={{options/get|item|class}} notesize}}{{eicons|1.4.1}}
+|- class=borderbottom
+! [[{{tr|Clothier}}]]
+| {{item|Plumber's set|size=x24px|note={{footnote|name=shirt-pants}}|class={{options/get|item|class}} notesize}}{{item|White Tuxedo|size=x24px|note={{footnote|name=night}}|class={{options/get|item|class}} notesize}}
+| {{item|The Doctor's set|size=x24px|class={{options/get|item|class}} notesize}}
+| {{item|Tam O' Shanter|size=20px|note2={{#var:hm-note}}}}
+| {{item|Blue Graduation set|size=x24px|note2={{#var:hm-note}}}}
+| {{item|Princess set (Clothier)|Princess set|size=x24px|note2={{#var:hm-note}}}}
+| {{item|Maroon Graduation set|size=x24px|note2={{#var:hm-note}}}}
+| {{item|Cowboy set|size=x24px|note2={{#var:hm-note}}}}
+| {{item|Black Graduation set|size=x24px|note2={{#var:hm-note}}}}
+|- class=borderbottom
+! [[{{tr|Stylist}}]]
+| class=blankcell |
+| {{item|Time Hair Dye|size=15px|note={{footnote|name=day-and-night}}|class={{options/get|item|class}} notesize}}
+| class=blankcell |
+| {{item|Time Hair Dye|size=15px|note={{footnote|name=day-and-night}}|class={{options/get|item|class}} notesize}}
+| class=blankcell |
+| {{item|Time Hair Dye|size=15px|note={{footnote|name=day-and-night}}|class={{options/get|item|class}} notesize}}
+| class=blankcell |
+| {{item|Time Hair Dye|size=15px|note={{footnote|name=day-and-night}}|class={{options/get|item|class}} notesize}}
+|-
+! rowspan=2 | [[{{tr|Zoologist}}]]<br/>{{eicons|Zoologist}}
+| {{item|The Werewolf|size=15px|note={{footnote|name=night}}|class={{options/get|item|class}} notesize}}
+| colspan=7 class=blankcell |
+|- class=borderbottom
+| colspan=2 | {{item|Dog set|image=Dog Ears.png/Dog Tail.png}}
+| colspan=2 | {{item|Fox set (Zoologist)|Fox set|image=Fox Ears.png/Fox Tail.png}}
+| colspan=2 | {{item|Lizard set|image=Lizard Ears.png/Lizard Tail.png}}
+| colspan=2 | {{item|Bunny set|image=Bunny Ears.png/Bunny Tail.png}}
+|-
+! rowspan=3 | [[{{tr|Dryad}}]]
+| colspan=2 | {{item|Potted Forest Cedar|size=x24px|note2={{#var:hm-note}}}}
+| colspan=2 | {{item|Potted Forest Tree|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Forest Palm|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Forest Bamboo|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+|-
+| colspan=2 | {{item|Potted Jungle Cedar|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Jungle Tree|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Jungle Palm|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Jungle Bamboo|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+|- class=borderbottom
+| colspan=2 | {{item|Potted Hallow Cedar|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Hallow Tree|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Hallow Palm|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+| colspan=2 | {{item|Potted Hallow Bamboo|size=x24px|note2={{#var:hm-note}}}}{{eicons|1.4.1}}
+|- class=borderbottom
+! [[{{tr|Golfer}}]]<br/>{{eicons|Golfer}}
+| colspan=2 | {{item|The Rolling Greens|size=x22px|note={{footnote|name=golf-score}}|class={{options/get|item|class}} notesize}}
+| colspan=2 | {{item|Study of a Ball at Rest|size=x22px|note={{footnote|name=golf-score}}|class={{options/get|item|class}} notesize}}
+| colspan=2 | {{item|Fore!|size=x22px|note={{footnote|name=golf-score}}|class={{options/get|item|class}} notesize}}
+| colspan=2 | {{item|The Duplicity of Reflections|size=x22px|note={{footnote|name=golf-score}}|class={{options/get|item|class}} notesize}}
+|-
+! rowspan=7 | [[{{tr|Skeleton Merchant}}]]<br/>{{eicons|Skeleton Merchant}}
+| {{item|Wooden Boomerang|size=15px}}
+| {{item|Umbrella|size=15px}}
+| {{item|Wand of Sparking|note={{footnote|name=regular}}|class={{options/get|item|class}} notesize}}
+
+{{item|Magic Dagger|note={{footnote|name=remix}}|class={{options/get|item|class}} notesize}}
+| {{item|Step Stool|size=15px}}
+| {{item|Aglet|size=15px}}
+| {{item|Climbing Claws|size=15px}}
+| {{item|Guide to Plant Fiber Cordage|size=15px}}
+| {{item|Radar|size=15px}}
+|-
+| {{item|Strange Brew|size=15px}}
+| {{item|Lesser Healing Potion|size=15px}}
+
+{{item|Healing Potion|size=15px|note2={{#var:hm-note}}}}
+| {{item|Strange Brew|size=15px}}
+| {{item|Lesser Healing Potion|size=15px}}
+
+{{item|Healing Potion|size=15px|note2={{#var:hm-note}}}}
+| {{item|Strange Brew|size=15px}}
+| {{item|Lesser Healing Potion|size=15px}}
+
+{{item|Healing Potion|size=15px|note2={{#var:hm-note}}}}
+| {{item|Strange Brew|size=15px}}
+| {{item|Lesser Healing Potion|size=15px}}
+
+{{item|Healing Potion|size=15px|note2={{#var:hm-note}}}}
+|-
+| {{item|Blue Counterweight|size=18px}}
+| {{item|Red Counterweight|size=18px}}
+| {{item|Purple Counterweight|size=18px}}
+| {{item|Green Counterweight|size=18px}}
+| {{item|Blue Counterweight|size=18px}}
+| {{item|Red Counterweight|size=18px}}
+| {{item|Purple Counterweight|size=18px}}
+| {{item|Green Counterweight|size=18px}}
+|-
+| colspan=2 | {{item|Bone Arrow|size=10px}}
+| colspan=2 | {{item|Wooden Arrow|size=10px}}
+| colspan=2 | {{item|Bone Arrow|size=10px}}
+| colspan=2 | {{item|Wooden Arrow|size=10px}}
+|-
+| colspan=4 | {{item|Gradient|size=20px|note2={{#var:hm-note}}}}
+| colspan=4 | {{item|Format:C|size=20px|note2={{#var:hm-note}}}}
+|-
+| {{item|Magic Lantern|size=15px|note={{footnote|name=night}}|class={{options/get|item|class}} notesize}}
+
+{{item|Spelunker Glowstick|note={{footnote|name=night-only}}|class={{options/get|item|class}} notesize}}
+
+{{item|Spelunker Flare|note={{footnote|name=flare-gun}}{{footnote|name=night-only}}|class={{options/get|item|class}} notesize}}
+| colspan=7 | {{item|Glowstick|note={{footnote|name=night}}|class={{options/get|item|class}} notesize}}
+|-
+| colspan=3 class=blankcell |
+| colspan=3 | {{item|Artisan Loaf}}
+| colspan=2 class=blankcell |
+|-
+! {{#var:moons-header}}
+|}{{options/reset|item}}
+
+== 备注 ==
+{{float file box|title={{tr|Moon}}样式|width=unset|style=max-width:38em|{{anchor|月亮样式}}{{anchor|Moon styles}}
+<gallery widths=60px heights=60px mode="packed">
+File:Moon style 0.png|普通
+File:Moon style 1.png|黄色
+File:Moon style 2.png|带环
+File:Moon style 3.png|{{eicons|1.4.0.1|small=y}} {{tr|Mythril}}
+File:Moon style 4.png|{{eicons|1.4.0.1|small=y}} 亮蓝色
+File:Moon style 5.png|{{eicons|1.4.0.1|small=y}} 绿色
+File:Moon style 6.png|{{eicons|1.4.0.1|small=y}} 粉色
+File:Moon style 7.png|{{eicons|1.4.0.1|small=y}} 橙色
+File:Moon style 8.png|{{eicons|1.4.0.1|small=y}} 紫色
+File:Frost Moon (moon).png|[[{{tr|Frost Moon}}]]（{{tr|event}}）
+File:Pumpkin Moon (moon).png|[[{{tr|Pumpkin Moon}}]]（{{tr|event}}）
+File:Moon style smiley.png|{{eicons|1.4.0.1|small=y}} 微笑（特殊）
+</gallery>
+}}
+* 总共有{{eicons|1.4.0.1}}九 / {{eicons|1.4.0.1|invert=y}}三种不同基础样式的{{tr|moon}}。当世界生成时，会为其随机关联一种基础{{tr|moon}}样式。此外还有两种[[{{tr|event}}]]独有的样式，仅分别在[[{{tr|Frost Moon}}]]和[[{{tr|Pumpkin Moon}}]]期间出现。
+** {{eicons|1.4.0.1}}还有一种特殊的“微笑”{{tr|moon}}样式，很像一个笑脸，它仅在 [[{{tr|drunk world}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}}生成期间出现。
+** {{eicons|1.4.4}}{{tr|moon}}的基础样式可以用[[{{tr|Moon Globe}}]]更改。
+* 如果在非{{tr|a full moon}}时出现[[{{tr|Frost Moon}}]]或[[{{tr|Pumpkin Moon}}]]，月亮的图像会正确显示为所在的月相，但图像会被裁切以匹配其大小。
+* 在标题屏幕上{{tr|The moon}}会循环变换相位，通过它最容易看到这一点。
+
+== 小贴士 ==
+* 如果玩家拿不到{{eil|Sextant}}，可以通过观察[[{{tr|Painter}}]]在卖什么[[{{tr|painting}}]]来确定当前月相，或者，在[[{{tr|Hardmode}}]]中，可以看[[{{tr|Clothier}}]]在卖哪套衣服。
+
+== 花絮 ==
+* 所显示的月相暗示《{{tr|Terraria}}》地图设定在其世界的北半球：中间阶段的月相中，亮面对于盈月位于右侧，对于亏月位于左侧。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|添加了几个新的月亮外观。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Skeleton Merchant}}和{{tr|White Tuxedo set}}。}}
+{{history|Desktop 1.2.4|修正了当月亮[[{{tr|event}}]]{{note|small=y|paren=y|译注：原文为 moon events，指{{tr|Pumpkin Moon}}和{{tr|Frost Moon}}等}}发生时地下的{{tr|spawn rate}}也会升高的 {{tr|Bug}}。}}
+{{history|Desktop 1.2|改变了月亮的外观，添加两个额外的外观。新世界会在全部三个中随机选择其一。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist|refs=
+{{footnote|name=night|仅在指定{{tr|moon phase}}的{{tr|night}}可用。}}
+{{footnote|name=day-and-night|在指定{{tr|moon phase}}的{{tr|night}}和随后的那个{{tr|day}}可用。}}
+{{footnote|name=night-only|仅指的是指定{{tr|moon phase}}的{{tr|night}}。{{tr|daytime}}时此物品在所有{{tr|moon phase}}期间可用。}}
+{{footnote|name=angler|要求[[{{tr|Angler}}]]在场。}}
+{{footnote|name=angler-hm|要求[[{{tr|Angler}}]]在场，{{eicons|1.4.1|invert=y}}且仅限[[{{tr|Hardmode}}]]。}}
+{{footnote|name=shirt-pants|只有{{tr|Shirt}}和{{tr|pants}}。}}
+{{footnote|name=golf-score|[[{{tr|Golf score}}]]超过 2000。}}
+{{footnote|name=flare-gun|仅当玩家的{{tr|inventory}}中有[[{{tr|Flare Gun}}]]时。}}
+{{footnote|name=regular|仅限常规世界。}}
+{{footnote|name=remix|仅限 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}。}}
+}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Moon phase}}

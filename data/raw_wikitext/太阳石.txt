@@ -1,0 +1,44 @@
+{{item infobox
+| auto = 899
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Sun Stone}}'''是一种[[{{tr|Hardmode}}]][[{{tr|Golem}}]]后的[[{{tr|accessory}}]]，有 {{eicons|1.4.0.1}} {{chance|1/7}} / {{eicons|1.4.0.1|invert=y}} {{chance|1/8}} 的几率掉落于{{tr|Golem}}。它提供和[[{{tr|Moon Stone}}]]相同的属性奖励，但这些{{tr|bonuses}}仅在[[{{tr|day}}]]生效。
+
+属性奖励如下：{{source code ref|v=1.4.3.6|method=Terraria.Player.UpdateEquips}}
+* +10% {{tr|melee speed}}
+* +10% [[{{tr|damage}}]] (全部类型)
+* +2% [[{{tr|critical strike}}]]几率 <!-- magic, melee, and ranged, there's no such thing as "minion critical strike chance" -->
+* +1 HP/s [[{{tr|health regeneration}}]]<!-- Note that in the code, it says "lifeRegen += 2", but each point of the "lifeRegen" equals to 0.5 HP/s. -->
+* +4 [[{{tr|defense}}]]
+* +15% [[{{tr|mining speed}}]]
+* +0.5 [[{{tr|summon}}]][[{{tr|knockback}}]]
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Sun Stone|expectedrows=1}}
+
+== 花絮 ==
+* {{tr|Sun Stone}}和其对应物{{tr|Moon Stone}}可能是参考了平台冒险动作角色扮演游戏《{{wikipedia|Castlevania: Symphony of the Night|恶魔城X：月下夜想曲}}》。有两件物品和它们有相似的名字、外观、功能：[https://castlevania.fandom.com/wiki/Sunstone {{tr|Sun stone}}]和[https://castlevania.fandom.com/wiki/Moonstone {{tr|Moon stone}}]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|掉落率从 {{chance|1/8}} 提升至 {{chance|1/7}}，因为[[{{tr|Picksaw}}]]现在单独掉落。}}
+{{history|Desktop 1.3.2|装备时的{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Inventory sprite updated.}}旧的外观是[[File:Sun Stone (old).png|20px]]。}}
+{{history|Desktop 1.2.1.2|现在被用于制作[[{{tr|Celestial Stone}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Sun Stone}}

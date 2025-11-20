@@ -1,0 +1,67 @@
+{{item infobox
+| type = Furniture/Storage
+| auto = 680
+| width = 2 | height = 2
+| tags = plunder
+}}
+
+'''{{tr|Ivy Chest}}'''是一种[[{{tr|chest}}]]类[[{{tr|storage item}}]]，可发现于[[{{tr|Underground Jungle}}]]处的[[{{tr|Jungle Shrine}}]]和[[{{tr|Living Mahogany Tree}}]]中。
+
+== 拾取物 ==
+每个{{tr|Ivy Chest}}都总是会包含一件主要{{tr|item}}，可能有多个次要物品或一个都没有。除了此处列出的这些物品外其中还可能有一些常见物品，取决于{{tr|chest}}所处高度：[[{{tr|Gold Chest}}#{{tr|Underground}}|{{tr|Underground}}]]或[[{{tr|Gold Chest}}#{{tr|Cavern}}|{{tr|Caverns}}]]。
+{{flexstart|alignitems=top}}
+{{loot|title=@primary
+
+| Feral Claws|1|
+{{chance|mode=p|6517/30000}} {{eicons|1.4.1|small=y}}<br/>
+{{chance|mode=p|1421/6000}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Anklet of the Wind|1|
+{{chance|mode=p|6517/30000}} {{eicons|1.4.1|small=y}}<br/>
+{{chance|mode=p|1421/6000}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Staff of Regrowth|1|
+{{chance|mode=p|6517/30000}} {{eicons|1.4.1|small=y}}<br/>
+{{chance|mode=p|1421/6000}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Boomstick|1|
+{{chance|mode=p|6517/30000}} {{eicons|1.4.1|small=y}}<br/>
+{{chance|mode=p|1421/6000}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Flower Boots|1|{{chance|mode=p|343/7500}}
+| Fiberglass Fishing Pole|1|
+{{chance|mode=p|49/750}} {{eicons|1.4.1|small=y}}<br/>
+{{chance|mode=p|49/1500}} {{eicons|1.4.1|invert=y|small=y}}
+| Seaweed|1|{{chance|mode=p|1/50}}
+
+| cargo = <includeonly>n</includeonly><!-- to prevent duplicate cargo storage on the pages where this page is transcluded ([[Living Mahogany Tree]], [[Jungle Shrine]]) -->
+}}
+
+{{loot|title=@secondary
+
+|:custom:Living Mahogany Wand/Rich Mahogany Leaf Wand:{{item|Living Mahogany Wand|wrap=y}}<br/>+ {{item|Rich Mahogany Leaf Wand|wrap=y}}|1|1/6
+| Bee Minecart|1|1/10
+| Honey Dispenser|1|1/4
+| Wolf Fang|1|??
+| Vial of Blood|1|??
+
+| cargo = <includeonly>n</includeonly>
+}}
+{{flexend}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Ivy Chest|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.1|包含{{tr|Fiberglass Fishing Pole}}的几率从 3.27% 提升至 6.53%。}}
+{{history|Desktop 1.4.0.1|现在可以包含[[{{tr|Bee Minecart}}]]。}}
+{{history|Desktop 1.3.1|现在被用于制作[[{{tr|Trapped Ivy Chest}}]]。}}
+{{history|Desktop 1.2.3|放置的{{tr|storage items}}现在可以重命名了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Ivy Chest}}

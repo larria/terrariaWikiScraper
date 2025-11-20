@@ -1,0 +1,132 @@
+{{exclusive|1.4.0.1}}
+{{master mode only}}
+{{dablink|不要将其和由首次击败[[{{tr|Wall of Flesh}}]]而触发的[[{{tr|Hardmode}}]]混淆。}}
+{{redirect|{{tr|Master}}}}
+{{flavor text|{{#explode:{{GameText|UI.WorldDescriptionMaster}}|（}}}}
+
+'''{{tr|Master Mode}}'''是一个可以在创建[[{{tr|world}}]]时选择的选项。它会将游戏难度相比[[{{tr|Expert Mode}}]]进一步提高，同时提供给{{tr|player}}{{tr|Master Mode}}独有物品。与{{tr|Expert Mode}}类似，{{tr|Master Mode}}在{{tr|Master Mode}}世界创建之时就已开始，{{tr|player}}此后无法再更改难度。在[[{{tr|Journey Mode}}]]中，可以用{{tr|difficulty slider}}来开关{{tr|Master Mode}}。
+
+{{tr|Master Mode}}将包含所有{{tr|Expert Mode}}的改动，包括更高的掉落几率、更改过的 [[{{tr|AI}}]]，等等。所有{{tr|Expert}}独有内容也在{{tr|Master Mode}}下存在。
+
+== 总体 ==
+* 大多数{{tr|enemy}}的{{tr|health}}和{{tr|damage}}比[[{{tr|Expert Mode}}]]大约高 50%，且具有额外 10% 的[[{{tr|knockback}}]]抗性（即相较于{{tr|Classic Mode}}拥有三倍的{{tr|health and damage}}，和额外 20% {{tr|knockback resistance}}）。
+** 例如，[[{{tr|Blue Slime}}]]在不同模式下的属性是：
+
+::{| class="terraria align-center"
+! 属性 !! [[File:Classic mode icon.png|14px]] {{tr|Classic}} !! [[File:Expert mode icon.png|14px]] {{tr|Expert}} !! [[File:Master mode icon.png|14px]] {{tr|Master}}
+|-
+| align=left | {{tr|Max health}} || {{npcinfo|Blue Slime|hp}} || {{npcinfo|Blue Slime|hp|expert}} || {{npcinfo|Blue Slime|hp|master}}
+|-
+| align=left | {{tr|Damage}} || {{npcinfo|Blue Slime|damage}} || {{npcinfo|Blue Slime|damage|expert}} || {{npcinfo|Blue Slime|damage|master}}
+|-
+| align=left | [[{{tr|Knockback}}|{{tr|Knockback resistance}}]] || {{npcinfo|Blue Slime|kb}} || {{npcinfo|Blue Slime|kb|expert}} || {{npcinfo|Blue Slime|kb|master}}
+|}
+:* 和{{tr|Expert Mode}}一样，较弱的{{tr|enemies}}的上述属性会在进入{{tr|Hardmode}}时和击败{{tr|Plantera}}后获得额外的提升。
+
+== Boss ==
+* 相较于{{tr|Expert Mode}}，[[{{tr|Bosses}}]] 的{{tr|damage}}提高 50%，{{tr|health}}提高 27.5%，向上取整。和{{tr|Expert Mode}}相似，它们的{{tr|health}}在[[{{tr|multiplayer}}]]下会随玩家数量提高。
+** 因此，{{tr|singleplayer and multiplayer}}下 {{tr|boss}} 的{{tr|health}}可以通过其{{tr|Expert Mode health}}属性计算得出。参见[[{{tr|Expert Mode}}#{{tr|Bosses}}|{{tr|Expert Mode}} § {{tr|Bosses}}]] 获取{{tr|Expert Mode health}}计算。
+
+== 玩家 ==
+* {{tr|player}}将在死亡时掉落全部[[{{tr|coins}}]]，而不是 50% / {{expert|75%}}。
+* {{tr|player}}会获得一个额外的，仅在{{tr|Master Mode}}下才可使用的[[{{tr|accessory}}]]{{tr|slot}}。这可以和[[{{tr|Demon Heart}}]]叠加，使得最多可以拥有 7 个{{tr|accessory slot}}。
+* {{tr|player}}所受的伤害会减去[[{{tr|defense}}]]的 100%，而非 50% / {{expert|75%}}。
+* 以下[[{{tr|debuff}}]]被施加在{{tr|player}}身上时，持续时间增加 2.5 倍（而非[[{{tr|Expert Mode}}]]下的 2 倍）：{{transclude|Debuffs|section=expert_doubled|nobox=y}}
+
+== 大师独有物品 ==
+* 在{{tr|Master Mode}}下击败的 {{tr|Boss}} 会掉落对应的[[{{tr|Treasure Bag}}]]，其中包含对应 {{tr|Boss}} 的{{tr|Expert}}独有物品。此外，它们还会单独掉落{{tr|Master Mode}}独有物品，这些物品具有 {{rare|-13|cat=n}} [[{{tr|Rarity}}]]。
+** {{tr|Boss}} 必定掉落其对应的[[{{tr|Relic}}]]——一个形似 {{tr|Boss}} 的闪亮雕像。
+** 它们还有 25% 的几率掉落一个物品，能够用来召唤外观上类似于 {{tr|Boss}} 或与它们有着同样的风格的[[{{tr|Pet}}]]、[[{{tr|light pet}}]]、或[[{{tr|Mount}}]]。
+** 此外，[[{{tr|Eye of Cthulhu}}]]总是会掉落[[{{tr|0x33's Aviators}}]]。它在 [[1.4.0.1]] 之前只能通过使用[[{{tr|Hardcore}}]]{{tr|character}}在{{tr|Expert Mode}}世界中击败{{tr|Eye of Cthulhu}}来获得。
+{{options/set|item|icons=n}}
+{{flexstart}}
+{| class="terraria lined sortable"
+|+ {{tr|Pre-Hardmode}} {{tr|bosses}}
+! {{tr|Boss}} !! [[{{tr|Relic}}]] !! {{tr|Summoning item}} !! 召唤的实体
+|-
+| [[{{tr|King Slime}}]] || {{item|King Slime Relic}} || {{item|Royal Delight}} || {{item|Slime Prince|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Eye of Cthulhu}}]] || {{item|Eye of Cthulhu Relic}} || {{item|Suspicious Grinning Eye}} || {{item|Suspicious Eye|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Eater of Worlds}}]] || {{item|Eater of Worlds Relic}} || {{item|Writhing Remains}} || {{item|Eater of Worms|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Brain of Cthulhu}}]] || {{item|Brain of Cthulhu Relic}} || {{item|Brain in a Jar}} || {{item|Spider Brain|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Queen Bee}}]] || {{item|Queen Bee Relic}} || {{item|Sparkling Honey}} || {{item|Honey Bee|link={{tr|Sparkling Honey}}|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Skeletron}}]] || {{item|Skeletron Relic}} || {{item|Possessed Skull}} || {{item|Skeletron Jr.|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Deerclops}}]] || {{item|Deerclops Relic}} || {{item|Deerclops Eyeball}} || {{item|Deerclops (pet)|Deerclops|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Wall of Flesh}}]] || {{item|Wall of Flesh Relic}} || {{item|Goat Skull}} || {{item|Goat Mount|note2=（{{tr|mount}}）}}
+|}
+{| class="terraria lined sortable"
+|+ {{tr|Hardmode}} {{tr|bosses}}
+! {{tr|Boss}} !! [[{{tr|Relic}}]] !! {{tr|Summoning item}} !! 召唤的实体
+|-
+| [[{{tr|Queen Slime}}]] || {{item|Queen Slime Relic}} || {{item|Regal Delicacy}} || {{item|Slime Princess|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|The Twins}}]] || {{item|Twins Relic}} || {{item|Pair of Eyeballs}} || {{item|Rez and Spaz|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|The Destroyer}}]] || {{item|Destroyer Relic}} || {{item|Deactivated Probe}} || {{item|Destroyer-Lite|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Skeletron Prime}}]] || {{item|Skeletron Prime Relic}} || {{item|Robotic Skull}} || {{item|Mini Prime|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Plantera}}]] || {{item|Plantera Relic}} || {{item|Plantera Seedling}} || {{item|Plantera Seedling (pet)|Plantera Seedling|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Empress of Light}}]] || {{item|Empress of Light Relic}} || {{item|Jewel of Light}} || {{item|Fairy Princess|note2=（{{tr|light pet}}）}}
+|-
+| [[{{tr|Golem}}]] || {{item|Golem Relic}} || {{item|Guardian Golem}} || {{item|Toy Golem|note2=（{{tr|light pet}}）}}
+|-
+| [[{{tr|Duke Fishron}}]] || {{item|Duke Fishron Relic}} || {{item|Pork of the Sea}} || {{item|Tiny Fishron|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Lunatic Cultist}}]] || {{item|Lunatic Cultist Relic}} || {{item|Tablet Fragment}} || {{item|Phantasmal Dragon|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Moon Lord}}]] || {{item|Moon Lord Relic}} || {{item|Piece of Moon Squid}} || {{item|Moonling|note2=（{{tr|pet}}）}}
+|}
+{| class="terraria lined sortable"
+|+ {{tr|Event}}{{tr|mini-bosses}}
+! {{tr|Boss}} !! [[{{tr|Relic}}]] !! {{tr|Summoning item}} !! 召唤的实体
+|-
+| [[{{tr|Pumpking}}]] || {{item|Pumpking Relic}} || {{item|Pumpkin Scented Candle}} || {{item|Jack 'O Lantern (light pet)|Jack 'O Lantern|note2=（{{tr|light pet}}）}}
+|-
+| [[{{tr|Mourning Wood}}]] || {{item|Mourning Wood Relic}} || {{item|Hexxed Branch}} || {{item|Tree Mount|note2=（{{tr|mount}}）}}
+|-
+| [[{{tr|Everscream}}]] || {{item|Everscream Relic}} || {{item|Shrub Star}} || {{item|Everscream Sapling|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Santa-NK1}}]] || {{item|Santa-NK1 Relic}} || {{item|Toy Tank}} || {{item|Santank Mount|note2=（{{tr|mount}}）}}
+|-
+| [[{{tr|Ice Queen}}]] || {{item|Ice Queen Relic}} || {{item|Frozen Crown}} || {{item|Ice Queen (pet)|Ice Queen|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Dark Mage}}]] || {{item|Dark Mage Relic}} || {{item|Dark Mage's Tome}} || {{item|Book Mount|note2=（{{tr|mount}}）}}
+|-
+| [[{{tr|Ogre}}]] || {{item|Ogre Relic}} || {{item|Ogre's Club}} || {{item|Baby Ogre|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Betsy}}]] || {{item|Betsy Relic}} || {{item|Betsy's Egg}} || {{item|Itsy Betsy|note2=（{{tr|pet}}）}}
+|-
+| [[{{tr|Flying Dutchman}}]] || {{item|Flying Dutchman Relic}} || {{item|The Black Spot}} || {{item|Pirate Ship Mount|note2=（{{tr|mount}}）}}
+|-
+| [[{{tr|Martian Saucer}}]] || {{item|Martian Saucer Relic}} || {{item|Cosmic Skateboard}} || {{item|Alien Skater|note2=（{{tr|pet}}）}}
+|}
+{{flexend}}{{options/reset|item}}
+
+== 备注 ==
+* 在[[{{tr|multiplayer}}]]下，{{tr|Master Mode}}独有的{{tr|pet}}/{{tr|mount summon items}}会按各个玩家决定。在 {{tr|boss}} 被击败时，每个对 {{tr|boss}} 造成过伤害的玩家都可能会掉落。另一方面，[[{{tr|Relics}}]]一次只会掉落一个。
+
+== 花絮 ==
+* {{tr|Master Mode}}的描述文本“{{#explode:{{GameText|UI.WorldDescriptionMaster}}|（}}（{{#explode:{{GameText|UI.WorldDescriptionMaster|lang=en}}| (}}）”来自 1986 年的美国科幻动作电影《{{wikipedia|Aliens (film)|异形}}》（Aliens）。
+* {{tr|Master Mode}}的文本是红色的，{{tr|Journey Mode}}是粉色，{{tr|Classic Mode}}是白色，{{tr|Expert Mode}}是橙色。
+* {{tr|Master Mode}}原本打算是由通关{{tr|Expert Mode}}来解锁的，但之后决定为所有{{tr|player}}都能直接游玩。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Master Mode}}

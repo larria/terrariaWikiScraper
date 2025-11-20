@@ -1,0 +1,33 @@
+<includeonly>
+{{!-}}
+{{!}} {{item|{{{1|}}}}}
+{{!}} {{{2|}}}
+{{!}} align=center {{!}} {{#if:{{{hardmodeonly|}}}|{{no}}|{{yes}}}}
+{{!}} <!--
+-->{{#vardefine:imagestr|{{image|{{trim|{{{1|}}}}} (equipped).{{#if:{{{gif|}}}|gif|png}}}}}}<!-- try to get image
+-->{{#var:imagestr|{{#if:{{bool|{{{visible|}}}}}|{{yes}}|{{no}}}}}}<!-- fallback if no image available
+-->{{#if:{{{ref|}}}|{{#tag:ref||name="{{trim|{{{ref|}}}}}"}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Outputs a table row for the table of [[Vanity Accessories]].
+
+{| class=terraria lined
+! colspan=2 | Parameters
+|-
+| 1 || Item name
+|-
+| 2 || Source
+|-
+| hardmodeonly
+|-
+| visible || Displays a check mark in the "Visible" column even if no image could be generated automatically.
+|-
+| ref || Name of a <code>&lt;ref&gt;</code> tag for the "Visible" column.
+|}
+
+{{language info|en=Vanity Accessories/row}}
+</noinclude>

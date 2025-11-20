@@ -1,0 +1,104 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2699
+| type = Furniture
+| width = 3
+| height = 3
+| sell = @@@@ {{eicons|1.3.1|small=y}} / {{sc|10}} {{eicons|Weapon Rack|not=1.3.1|small=y}}
+| idtile = {{iteminfo|Weapon Rack|createTile}} {{eicons|1.4.0.1|small=y}} / 334 {{eicons|Weapon Rack|not=1.4.0.1|small=y}}
+| listcat = Storage items
+}}
+{{see also|{{tr|Item Frame}}}}
+
+'''{{tr|Weapon Rack}}'''是一种[[{{tr|furniture}}]]{{tr|item}}，可以放置在[[{{tr|background walls}}]]上。通过对其按下 {{key|open}} {{tr|button}}，玩家可以将任何[[{{tr|weapon}}]]类型的{{tr|item}}（包括一些可造成{{tr|damage}}的[[{{tr|tools}}]]）放置在上面以供展览。 
+
+展示{{tr|item}}的方向与放置{{tr|Weapon Rack}}的方向相同，一些大型的{{tr|item}}图的大小会被自动放缩，以便适应{{tr|Weapon Rack}}的大小。[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]会先移除展示物，再拆下{{tr|Weapon Rack}}本身。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Weapon Rack|expectedrows=1}}
+
+== 例外 ==
+{{options/set|item|wrap=y}}
+下列{{tr|weapons}}''不能''被放置于{{tr|Weapon Rack}}上：<ref>在内部，这些{{tr|items}}具有 <code>damage <= 0</code> 和/或 <code>useStyle = 0</code> 的属性。</ref>
+{{itemlist|class=terraria|width=12em
+|{{item|Snowball Launcher}}
+|{{item|Cannon}}
+|{{item|Bunny Cannon}}
+}}
+
+下列{{tr|items}}虽然并没有被分类为{{tr|weapons}}，但仍然''可以''放置在{{tr|Weapon Rack}}上：{{source code ref|name=weapons-defined-in-CanBePlacedOnWeaponRacks|v=1.4.4.9|method=Terraria.Item.SetDefaults/Terraria.GameContent.Tile_Entities.TEWeaponsRack.FitsWeaponFrame/Terraria.ID.ItemID.Sets|t=尽管[[{{tr|Explosives (class)}}]]和[[{{tr|Coin Gun}}]]被分类为{{tr|weapons}}，它们没有 <code>damage</code> 属性。不过[[{{tr|Coins}}]]确实拥有 <code>damage</code> 属性。}}
+{{itemlist|class=terraria|width=12em
+|{{item|Coins|image=Copper Coin.png/Silver Coin.png/Gold Coin.png/Platinum Coin.png}}
+|{{item|Cannonball}}
+|{{item|Explosive Bunny}}
+|{{item|Fishing poles|image=Wood Fishing Pole.png}}
+|{{item|Bomb Fish}}
+|{{item|Bomb|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Sticky Bomb|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Bouncy Bomb}}
+|{{item|Dynamite|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Sticky Dynamite}}
+|{{item|Bouncy Dynamite}}
+|{{item|Explosives|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Land Mine|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Scarab Bomb}}
+|{{item|Wet Bomb}}
+|{{item|Lava Bomb}}
+|{{item|Honey Bomb}}
+|{{item|Dry Bomb}}
+|{{item|Dirt Bomb}}
+|{{item|Sticky Dirt Bomb}}
+|{{item|Golf Clubs|image=Golf Club (Iron).png}}
+|{{item|Coin Gun}}<ref name="weapons-defined-in-CanBePlacedOnWeaponRacks"/>
+|{{item|Rod of Discord}}
+|{{item|Rod of Harmony}}
+|{{item|Balloon Pufferfish}}
+|{{item|Fishing catches|Fish|image=Bass.png|note=（包括[[{{tr|Jellyfish (bait)}}|{{tr|Jellyfish}}]]）|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Zephyr Fish|note2=（仅限{{eicons|1.4.0.1}}）}}
+|{{item|Angler/Quests|Quest Fish|image=Bunnyfish.png|note2=（仅限{{eicons|1.4.0.1}}）}}
+}}{{options/reset|item}}
+
+== 备注 ==
+* {{tr|Weapons}}的放置方向与{{tr|Weapon Rack}}木质纹理的走势方向相反。如果木质纹理的方向是从左上到右下，那么{{tr|weapon}}的放置方向就会是从右上到左下。
+* 对着已经放置有{{tr|weapon}}的{{tr|Weapon Rack}}按下 {{key|open}} {{tr|button}}时，会将该{{tr|weapon}}与{{tr|player}}的[[{{tr|hotbar}}]]中所选的{{tr|item}}互换。
+* {{eicons|Weapon Rack|not=1.4.0.1}}如果展示有{{tr|weapon}}的{{tr|Weapon Rack}}被[[{{tr|explosives (class)}}]]摧毁了，那么{{tr|the weapon}}会消失。
+* 与{{tr|item}}{{tr|size}}相关的[[{{tr|modifier}}]]会影响{{tr|the Weapon Rack}}上{{tr|item}}的{{tr|size}}。具有[[{{tr|Modifiers}}#{{tr|Melee}}|{{tr|Tiny}}]]{{tr|modifier}}的{{tr|weapon}}{{tr|size}}要比{{tr|modifier}}为{{tr|Massive}}的{{tr|weapon}}明显地小一些。
+* 被[[{{tr|Favorite}}]]的{{tr|items}}无法被放置在{{tr|Weapon Racks}}上。玩家必须先将{{tr|item}}取消收藏才能将其展示在{{tr|Weapon Rack}}上。
+
+== 小贴士 ==
+* {{eicons|Weapon Rack|not=1.3.1}}{{tr|Crafting}}{{tr|Weapon Rack}}是一个[[指南:赚钱|赚钱]]的好方法。{{tr|Crafting}}它只需要储量丰富且通常一文不值的[[{{tr|Wood}}]]，但一个{{tr|Weapon Rack}}却可以卖出 {{sc|10}}。
+
+== 花絮 ==
+* {{tr|The Weapon Rack}}是由于一名玩家的建议而引入的。<ref>“你现在可以把{{tr|weapons and tools}}放置在可制作的{{tr|Weapon Rack}}上了（谢谢 Goryō 的建议！）”<br/>{{archived link|http://web.archive.org/web/20160602200029/http://www.terrariaonline.com/threads/1-2-4-changelog.143548/|1.2.4 changelog}} {{small|{{date|2014|05|08}}}}</ref>
+* {{tr|Weapon Rack}}使用的纹理和[[{{tr|Trophies}}]]的背景纹理相同。
+* 尽管{{tr|Weapon Rack}}的[[{{tr|Tile IDs}}|{{tr|tile ID}}]] 在 [[1.4.0.1]] 中被修改了，其此前的{{tr|tile ID}} 和功能在源代码中仍然存在。其功能仍然通过添加[[{{tr|item IDs}}]] 来更新，但两种{{tr|tiles}}的功能不同。{{source code ref|v=1.4.4.9|method=Terraria.Player.TileInteractionsUse/Terraria.Player.ItemFitsWeaponRack}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.3.3|修复了[[{{tr|Honey Bomb}}]]和[[{{tr|Dry Bomb}}]]不能放置在{{tr|Weapon Rack}}上的问题。}}
+{{history|Desktop 1.4.0.1|
+** 现在可被刷上{{tr|paint}}。
+** 内部[[{{tr|Tile IDs}}|{{tr|tile ID}}]] 由 334 改为 471。<!-- this change probably fixed the following bug:
+** Fixed an issue where a Weapon Rack destroyed by an {{$|explosive|s|class}} would not drop placed weapons.-->}}
+{{history|Desktop 1.3.2|修复了如果将[[{{tr|Phasesabers}}]]放入{{tr|Weapon Rack}}中，会使{{tr|Weapon Racks}}无法被破坏的问题（但此次修复不具有追溯力）。}}
+{{history|Desktop 1.3.1|
+** {{tr|Inventory}}{{tr|Sprite updated}}。旧的{{tr|sprite}}是 [[File:Weapon Rack (old).png|link=]]。
+** {{tr|Sell price}}由 {{sc|10}} 降低至 {{cc|50}}。}}
+{{history|Desktop 1.2.4.1|现在可以将[[{{tr|Fishing Rod}}]]、[[{{tr|Rod of Discord}}]]、和[[{{tr|Coin Gun}}]]放置在{{tr|Weapon Rack}}上了。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|添加了所有来自{{tr|Desktop}} 1.3.1 的改动。}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|添加了所有来自{{tr|Desktop}} 1.3.1 的改动。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.2|添加了所有来自{{tr|Desktop}} 1.3.1 的改动。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Weapon Rack}}

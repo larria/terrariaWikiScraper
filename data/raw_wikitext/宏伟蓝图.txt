@@ -1,0 +1,95 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| type = Tool
+| auto = 3611
+| tags = Wiring
+}}
+[[File:The Grand Design (demo).gif|right|framed|使用中的{{tr|The Grand Design}}。]]
+
+'''{{tr|The Grand Design}}'''是一件[[{{tr|tool}}]]，用于和[[{{tr|wiring}}]]与[[{{tr|mechanisms}}]]相关的工作。它结合并拓展了其组成部件的能力：它提供可控制的{{tr|wiring}}视图（[[{{tr|Mechanical Lens}}]]），并允许玩家放置或移除任何颜色的[[{{tr|wire}}]]（[[{{tr|Multicolor Wrench}}]]）；和其组成部件不同的是，它也可以显示且作用于[[{{tr|Actuator}}]]。它还提供了[[{{tr|Mechanical Ruler}}]]的测量距离和相对位置的功能。
+
+制作{{tr|The Grand Design}}总计需要花费 {{buy expr|Red Wrench|+|Blue Wrench|+|Green Wrench|+|Yellow Wrench|+|Wire Cutter|+|Mechanical Lens|+|Wire|*60+|Mechanical Ruler}}。其组成部件均购买自[[{{tr|Mechanic}}]]，且需要在购买自[[{{tr|Goblin Tinkerer}}]]的[[{{tr|Tinkerer's Workshop}}]]制作。由于这些 {{tr|NPC}} 的生成需求，在[[{{tr|Skeletron}}]]和[[{{tr|Goblin Army}}]]被打败后才能制作{{tr|The Grand Design}}。
+
+{{tr|The Grand Design}}可以在屏幕上的任意位置使用，无论{{tr|block}}放置范围如何。 
+
+[[File:The Grand Design UI.gif|thumb|right|{{desktop version}}中的{{tr|The menu}}，以及{{tr|cursor icons}}。]]
+
+当手持{{tr|tool}}时按下{{key|open}}，会显示带有六个不同{{tr|buttons}}的菜单，五个用来选择{{tr|Actuator}}和四种颜色的{{tr|wires}}，一个用来切换放置或采集所选颜色的{{tr|wires}}和{{tr|Actuator}}。
+* {{icon|desktop|console}}{{tr|The menu}}会在{{tr|cursor}}位置弹出，{{tr|buttons}}以放射状排列。
+* {{icon|mobile}}{{tr|The menu}}会在{{key|open}}{{tr|button}}上方弹出，{{tr|button}}以两行的形式列出。
+{{tr|menu}}关闭时，五个小的彩色方形{{tr|icons}}会在{{tr|cursor}}附近出现，显示当前的模式（放置/采集）和所选的{{tr|wires}}/{{tr|actuator}}。
+
+此外，只要{{tr|The Grand Design}}位于{{tr|inventory}}中，它就会提供七个[[{{tr|toggles}}]]，用于控制[[{{tr|Mechanical Ruler}}]]和[[{{tr|Mechanical Lens}}]]的功能。
+
+{| class="terraria lined" style="text-align:center"
+! colspan=2 | [[{{tr|Toggles}}]]
+! 机械显示
+! {{tr|Actuators}}
+! {{tr|Mechanical Ruler}}
+! {{tr|Red Wires}}
+! {{tr|Blue Wires}}
+! {{tr|Green Wires}}
+! {{tr|Yellow Wires}}
+|-
+! rowspan=2 | {{tr|Icon}}
+! {{icon|desktop}}
+| [[File:Mechanical Display toggle.png|link=]]
+| [[File:Actuators toggle.png|link=]]
+| [[File:Mechanical Ruler toggle.png|link=]]
+| [[File:Red Wire toggle.png|link=]]
+| [[File:Blue Wire toggle.png|link=]]
+| [[File:Green Wire toggle.png|link=]]
+| [[File:Yellow Wire toggle.png|link=]]
+|-
+! {{icon|mobile}}
+| [[File:Mechanical Display toggle (mobile).png|link=]]
+| [[File:Actuators toggle (mobile).png|link=]]
+| [[File:Mechanical Ruler toggle (mobile).png|link=]]
+| [[File:Red Wire toggle (mobile).png|link=]]
+| [[File:Blue Wire toggle (mobile).png|link=]]
+| [[File:Green Wire toggle (mobile).png|link=]]
+| [[File:Yellow Wire toggle (mobile).png|link=]]
+|}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=The Grand Design|expectedrows=1}}
+
+=== 制作树 ===
+{{/Crafting tree}}
+
+== 备注 ==
+{{transclude|{{tr|Toggles}}|section=mechlens}}
+* {{tr|The Grand Design}}和作为其组件的{{tr|wiring tools}}之间存在一些差异：
+** 此{{tr|tool}}每次使用并不只影响一个单独的{{tr|block}}，而是通过按住{{key|use}}按钮绘制一条线（包括一个可选的角），当松开按钮时此{{tr|tool}}将放置/采集{{tr|wire}}。
+** 拖出一条线来放置或移除{{tr|wires}}时，可以通过更改{{tr|character}}的面向来控制路径的方向。如果{{tr|character}}面向右侧，则{{tr|The Grand Design}}选择的路径将从起点垂直移动，然后水平移动到{{tr|cursor}}。如果{{tr|character}}面向左侧，则{{tr|The Grand Design}}选择的路径将从起点水平移动，然后垂直移动到{{tr|cursor}}。
+** 它一次可放置约 1,000 格的{{tr|wire}}和/或{{tr|Actuators}}，且可以在移动时使用，使得长距离的布置（如[[{{tr|Teleporter}}]]）的建造更轻松。使用[[{{tr|UFO Mount}}]]将{{tr|wires}}在空中布置时尤其轻松。注意其“绘制模式”会在按住 {{key|use}} {{tr|button}}一分钟后取消，需要重新使用它才能再次生效。
+** 使用{{tr|The Grand Design}}没有范围限制，而多种{{tr|wrenches}}必须在玩家的建造范围内使用才能放置{{tr|wires}}。
+** 和{{tr|Wire Cutter}}不同，用{{tr|The Grand Design}}破坏{{tr|wire or Actuator}}会使其自动在玩家的脚部出现，无论距离和障碍。
+*** 如果玩家站在{{tr|lava}}中（也许还借助了[[{{tr|Lava Charm}}]]或相似物品），任何被破坏的{{tr|wire or Actuators}}都会丢失，因为{{tr|item}}会直接在玩家处生成，若玩家浸没于{{tr|lava}}中则会被摧毁。
+* 和[[{{tr|Multicolor Wrench}}]]一样，它会放置/采集已选择颜色的{{tr|wire}}，这意味着它能够同时放置/采集所有 4 种颜色的{{tr|wire}}。
+
+== 小贴士 ==
+* 这个物品是处理[[{{tr|trap}}]]的有效方法，例如[[{{tr|Explosives}}]]和[[{{tr|Boulder}}]]，并且是更紧凑的存储{{tr|wiring tools}}的方式。
+* 当拆解部分自然生成的[[{{tr|trap}}]]时（如[[{{tr|Dungeon}}]]中斜向放置的{{tr|trap}}），使用[[{{tr|Wire Cutter}}]]可能更好，因为{{tr|The Grand Design}}无法利用[[{{tr|smart cursor}}]]。不过，对于其他{{tr|traps}}，{{tr|the Grand Design}}通常是最佳{{tr|tool}}，因为它能够远程采集{{tr|wires}}。
+
+== 花絮 ==
+* {{tr|The Grand Design}}及其{{tr|projectiles}}的内部名称是 {{code|WireKite}}（电线风筝），这可能是幽默地指出了其{{tr|inventory icon}}很像是现实中的{{维基百科|kite|风筝}}。
+* {{tr|The Grand Design}}的英文名称“The Grand Design”可能参考自{{维基百科|Stephen Hawking|t=史蒂芬·霍金}}的同名作品{{维基百科|b=y|The Grand Design (book)|The Grand Design|t=大设计}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在用[[{{tr|Mechanical Ruler}}]]制作，而非[[{{tr|Ruler}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|sell price}}由 {{gc|3}} 提升至 {{gc|4}}。}}
+{{history|Desktop 1.3.2|{{tr|sell price}}由 {{gc|15}} 降低至 {{gc|3}}。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|sell price}}由 {{gc|15}} 降低至 {{gc|3}}。}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.3.2 至 1.4.0.1 的所有改动。}}
+
+{{Wiring}}
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=The Grand Design}}

@@ -1,0 +1,86 @@
+{{exclusive|1.3.4}}
+{{npc infobox |tabs = no
+| namenote =
+| environment = Old One's Army
+| auto = 558
+| imagealt = [[File:Etherian Wyvern.gif|link=]] [[File:Etherian Wyvern 2.gif|link=]] [[File:Etherian Wyvern 3.gif|link=]]
+| type = Etherian Enemy
+| type2 = Flying Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| sound1 = Dd2 wyvern scream 0.wav, Dd2 wyvern scream 1.wav, Dd2 wyvern scream 2.wav
+| soundcaption1 = 尖叫
+| sound2 = Dd2 wyvern dive down 0.wav, Dd2 wyvern dive down 1.wav, Dd2 wyvern dive down 2.wav
+| soundcaption2 = 俯冲
+}}
+
+'''{{tr|Etherian Wyvern}}'''是一种飞行[[{{tr|enemy}}]]，生成于[[{{tr|Old One's Army}}]][[{{tr|event}}]]。它生成于 T1 的 4–5 波，T2 的 3–7 波和 T3 的 3–4 波。
+
+{{tr|Etherian Wyvern}}可以穿过所有实体[[{{tr|block}}]]，并在{{tr|player}}或者[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]上方三格的位置飞行，然后向最近的目标俯冲。这令它可以下降到{{tr|block}}的表面以下，使得在没有可以穿过{{tr|block}}{{tr|attack}}的{{tr|weapon}}时，难以击中它。{{tr|Etherian Wyvern}}每 1.5 {{tr|seconds}}攻击一次，并会在俯冲目标时发出尖叫。此外，[[{{tr|Betsy}}]]可以在她的咆哮{{tr|attack}}期间召唤最多 9 只 T3 {{tr|Etherian Wyverns}}。
+
+{{tr|Etherian Wyverns}}需要 200 击杀来得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== {{tr|Variants}} ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[NPC IDs|NPC ID]]
+! colspan=2 | 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 558
+| image = Etherian Wyvern.gif
+| environment = Old One's Army
+| knockback = {{modes|30%|37%|44%}}<!-- this value comes from its AI function - the default value (i.e. in cargo) is NOT used --> <br/> 100% {{note|small=y|paren=y|俯冲时}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_108_DivingFlyer}}
+}}
+{{npc infobox
+| auto = 559
+| image = Etherian Wyvern 2.gif
+| environment = Old One's Army
+| knockback = {{modes|50%|55%|60%}}<!-- this value comes from its AI function - the default value (i.e. in cargo) is NOT used --> <br/> 100% {{note|small=y|paren=y|俯冲时}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_108_DivingFlyer}}
+}}
+{{npc infobox
+| auto = 560
+| image = Etherian Wyvern 3.gif
+| environment = Old One's Army
+| knockback = {{modes|80%|82%|84%}}<!-- this value comes from its AI function - the default value (i.e. in cargo) is NOT used --> <br/> 100% {{note|small=y|paren=y|俯冲时}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_108_DivingFlyer}}
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== {{tr|Notes}} ==
+* 和很多来自此{{tr|event}}的{{tr|enemies}}一样，它的外观和属性会变化，取决于激活的{{tr|event}}是哪个级别的''（级别详情参见[[{{tr|Old One's Army}}]]）''。
+* 不像[[{{tr|Wyvern}}]]和其变种，{{tr|the Etherian Wyvern}}不是多节的，且不使用{{tr|Worm AI}}。
+* 因为它能飞，它能躲开很多来自[[{{tr|Ballista sentry summons}}]]的射击，如果没有任何其他召唤物，或者如果玩家没有任何[[{{tr|Ranged weapons}}]]，则会对{{tr|crystal}}造成威胁。这使得{{tr|Etherian Wyvern}}在级别 1 的早期对{{tr|melee players}}构成严重的威胁，因为很少有{{tr|pre-hardmode}}的{{tr|melee weapons}}有{{tr|ranged attack}}能力。然而，[[{{tr|Ice Blade}}]]、[[{{tr|Yoyos}}]]、和[[{{tr|Boomerangs}}]]可以作为打败此{{tr|enemy}}的有效{{tr|melee weapons}}。
+
+== {{tr|Trivia}} ==
+* 尽管名称相似，{{tr|Etherian Wyvern}}有着与[[{{tr|Wyvern}}]]完全不同的外貌。
+{{bestiary}}
+
+== {{tr|See also}} ==
+* {{dd2 link|Wyverns}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|T3 的第 6 波现在会生成{{tr|Etherian Lightning Bugs}}而不是{{tr|Wyverns}}。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Etherian Wyvern}}

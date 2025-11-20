@@ -1,0 +1,49 @@
+{{exclusive|1.3.0.1}}<!-- The thing to the left of this text will update as different platforms get 1.3. -->
+{{item infobox
+| name = Luminite Hamaxes
+| imagealt = [[File:Solar Flare Hamaxe.png|{{tr|Solar Flare Hamaxe}}的{{tr|inventory sprite}}|link=]] [[File:Vortex Hamaxe.png|{{tr|Vortex Hamaxe}}的{{tr|inventory sprite}}|link=]]<br/>
+[[File:Nebula Hamaxe.png|{{tr|Nebula Hamaxe}}的物品栏外观|link=]] [[File:Stardust Hamaxe.png|{{tr|Stardust Hamaxe}}的物品栏外观|link=]]
+| auto = 3524<!-- Their stats are the same, use any one of their ids. -->
+| idshow = 3522, 3523, 3524, 3525
+| cargo = no<!-- don't store to cargo.-->
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 3522 | tags = hardmode}}<!--
+-->{{item infobox | view = void | auto = 3523 | tags = hardmode}}<!--
+-->{{item infobox | view = void | auto = 3524 | tags = hardmode}}<!--
+-->{{item infobox | view = void | auto = 3525 | tags = hardmode}}
+
+'''{{tr|Luminite Hamaxes}}'''是游戏中最强级别的[[{{tr|hamaxes}}]]，在打败{{tr|Moon Lord}}后可以得到。四个种类分别是'''{{tr|Solar Flare Hamaxe}}'''、'''{{tr|Vortex Hamaxe}}'''、'''{{tr|Nebula Hamaxe}}'''、和'''{{tr|Stardust Hamaxe}}'''。其属性全部一样。
+
+它们需要用[[{{tr|Luminite}}]]和[[{{tr|Lunar Fragments}}]]来制作，二者分别来自于{{tr|Moon Lord}}和[[{{tr|Celestial Tower}}]]。
+
+它们拥有游戏中最高的{{tr|hammer power}}，和[[{{tr|The Axe}}]]一样高。它们的{{tr|axe power}}仅次于{{tr|The Axe}}，是第二强的{{tr|axes}}。
+
+{{modifier|harvestalt|plural=1}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|showresultid=1|result=Solar Flare Hamaxe/Vortex Hamaxe/Nebula Hamaxe/Stardust Hamaxe|expectedrows=4}}
+
+== 成就 ==
+{{achievement|name=Stop! Hammer Time!}}
+
+== 小贴士 ==
+* 与[[{{tr|The Axe}}]]相比，夜明锤斧拥有额外 +3 范围，在移除[[{{tr|background Wall}}]]时会比较有优势。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Luminite
+|show-luminite = yes
+}}
+{{Master Template Tools
+| show-main = yes
+| show-tool = yes
+}}
+
+{{language info|en=Luminite Hamaxes}}

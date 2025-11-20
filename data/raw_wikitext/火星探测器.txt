@@ -1,0 +1,75 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 399
+| imagealt = [[File:Martian Probe.gif|link=]] [[File:Martian Probe2.gif|link=]]
+| imagecargo = [[File:Martian Probe.gif|link=]]
+| type = Flying Enemy
+| environment = Surface
+| environment2 = Space
+| hardmode = yes
+}}
+{{distinguish|{{tr|Probe}}|{{tr|Martian Drone}}}}
+[[File:Martian Probe beam.png|thumb|{{tr|A Martian Probe}}正在扫描探测玩家。一旦探测到玩家，它那绿色的扫描光束就会变为红色。]]
+[[File:Martian Probe Red Beam.png|thumb|探测到玩家后的{{tr|Martian Probe}}。]]
+
+'''{{tr|Martian Probe}}'''是一个罕见的[[{{tr|Hardmode}}]]，[[{{tr|Golem}}]]后的飞行[[{{tr|enemy}}]]，可在水平方向上{{tr|world}}两侧各三分之一的范围内于[[{{tr|surface}}]]以上生成，最常见于[[{{tr|Space}}]][[{{tr|layers}}]]。{{tr|Martian Probe}}初始出现时发出绿光。当它探测到玩家时，光线会变为红色，它获得穿过[[{{tr|blocks}}]]移动的能力并试图逃离。如果让它逃走，它就会启动[[{{tr|Martian Madness}}]][[{{tr|event}}]]。
+
+{{Lifeform Analyzer note}}
+
+== 备注 ==
+* 同一时间只能存在一个{{tr|Martian Probe}}。{{source code ref|name=spawnnpc|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+* {{tr|Martian Probes}}在[[{{tr|Space}}]]{{tr|layer}}生成更加频繁，因为只要玩家位于 [[{{tr|Space|link=y}}#{{tr|Notes}}|>55% 高度]]时，它们会拥有额外的生成尝试次数。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC|t=当玩家高于{{tr|surface}}时，有一次生成尝试，其生成几率为{{tr|Martian Madness}}之前 1/100，之后 1/400；当玩家在{{tr|Space}}中时，有另一次尝试，如果激活了{{tr|Water Candle}}则有第三次尝试。见下方备注获取这些尝试的生成几率。}}
+* 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，除了{{tr|Space layer}}，{{tr|Martian Probe}}也可以在{{tr|Cavern layer}}和{{tr|Glowing Mushroom layer}}生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC|t=确切范围开始于{{tr|Underground and Cavern layer}}的分界线向下 20 格，结束于{{tr|world}}底部向上 190 格。}}
+* 除了普通的提高{{tr|spawn rate}}的效果，[[{{tr|Water Candle}}]]还可以将{{tr|Martian Probe}}的生成概率提高至近 3 倍。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC|t={{tr|Water Candle}}会提高{{tr|Space}}中{{tr|Martian Probe}}的生成几率（从{{tr|Martian Madness}}之前 1/8 和之后 1/30 提升至之前 1/3 和之后 1/10），还会提供额外一次生成尝试。}}
+* 完成过{{tr|Martian Madness}}之后，{{tr|Martian Probe}}的{{tr|spawn rate}}会显著降低。
+* {{tr|Martian Probes}}在以下情况下不会生成：{{tr|world}}某处有 {{tr|boss}} 存活，或在特定[[{{tr|events}}]]期间。这包括[[{{tr|Goblin Army}}]]、[[{{tr|Frost Legion}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Martian Madness}}]]、[[{{tr|Lunar Events}}]]、[[{{tr|Old One's Army}}]]、[[{{tr|Pumpkin Moon}}]]、和[[{{tr|Frost Moon}}]]。
+* 站在大部分类型的{{tr|background}}[[{{tr|walls}}]]前也会阻止{{tr|Martian Probes}}生成。下列{{tr|walls}}仍然允许{{tr|Martian Probes}}生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC / Terraria.Main.Initialize_TileAndNPCData1}}
+{{collapse top simple|css=margin-left:1.6em}}
+{{options/set|item|icons=n}}
+{{itemlist/start|class=terraria|width=18em}}<!--
+-->{{#arraydefine:walls|21,73,106,107,138,140,141,139,145,150,152,168,245,315,317,318|,}}<!--
+-->{{#arrayprint:walls||@@@|
+{{itemlist/item|{{item|{{wallinfo|@@@|name}}|link={{wallinfo|@@@|page}}|image={{wallinfo|@@@|imagePlaced}}}}}}
+}}
+{{itemlist/end}}
+{{options/reset|item}}
+{{collapse bottom simple}}<!--All info above is from Terraria.NPC.SpawnNPC-->
+* [[{{tr|Minions}}]]不会主动攻击{{tr|Martian Probe}}，但造成{{tr|contact damage}}的{{tr|Minions}}仍然可能会意外接触并杀死它。
+* 如果玩家跟随{{tr|Martian Probe}}上升直到它逃脱，它会在到达地图顶部之前消失并且{{tr|Martian Madness event}}不会发生。
+* 若允许{{tr|Martian Probe}}逃离，其[[{{tr|Bestiary}}]]条目不会被解锁。必须杀死它 10 次才能完成条目。
+* {{tr|The Martian Probe}}除了{{tr|contact damage}}以外没有攻击方式。其仅有的作用是{{tr|event}}启动器。
+* 追踪{{tr|projectile}}会无视{{tr|Martian Probes}}。
+* {{tr|Martian Probes}}可在{{tr|world}}顶部边界外生成，意味着玩家还没看到它，它就已经能检测到玩家了。
+
+== 小贴士 ==
+* 提高{{tr|enemy}}{{tr|spawn rate}}的效果（比如使用{{tr|Water Candle}}和[[{{tr|Battle Potion}}]]，以及[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]等[[{{tr|events}}]]）也会提高{{tr|Martian Probe}}的生成几率。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.6|修复了一个在应当触发{{tr|Martian Madness}}和其他{{tr|invasions}}时，会阻止它们被触发的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.5|
+** 现在会被[[{{tr|Lifeform Analyzer}}]]和{{tr|its upgrades}}探测到。
+** [[{{tr|Space}}]]层的生成现在没那么频繁了，但依然高于[[{{tr|Surface}}]]的速度。
+** 生成不再被[[{{tr|Cultists}}]]阻碍。}}
+{{history|Desktop 1.3.0.4|
+** 降低生成几率。
+** 不再能在靠近{{tr|world}}中心处生成。
+** 不再会在[[{{tr|events}}]]或 [[{{tr|Boss}}]] 战时生成。
+** 修正了{{tr|Martian Probe}}会探测到它上方的玩家的问题。}}
+{{history|Desktop 1.3.0.3|{{tr|health}}由 150 提升至 500。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Martian Probe}}

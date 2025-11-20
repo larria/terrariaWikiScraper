@@ -1,0 +1,111 @@
+{{exclusive|Expert Mode}}
+{{expert mode only}}
+{{item infobox
+| auto = 3223
+| debuff = Cerebral Mindtrick / 4
+| idprojectile = 565
+| tags = bag loot / treasure bag loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Brain of Confusion}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|accessory}}]]。装备后，在受到伤害时，附近的{{tr|enemies}}有 {{chance|3/5}} 几率获得[[{{tr|Confused}}]][[{{tr|Debuffs}}|{{tr|debuff}}]]，持续至少 1.5 秒。{{tr|debuff}}的几率、持续时间、作用范围都取决于所承受的伤害量。
+
+此外，装备此{{tr|item}}的玩家有 {{chance|1/6}} 几率[[{{tr|Dodge}}]]一次攻击，这会在玩家身上造成'''{{tr|Cerebral Mindtrick}}'''[[{{tr|debuff}}]]，持续四秒。虽然这是{{tr|debuff}}，但它会让[[{{tr|critical strike chance}}]]和[[{{tr|summon damage}}]]提高 10%。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBuffs}}在{{tr|debuff}}激活时，玩家无法再次{{tr|dodge}}攻击。{{tr|The Brain of Confusion}}总是由[[{{tr|Expert Mode}}]]下[[{{tr|Brain of Cthulhu}}]]的[[{{tr|Treasure Bag|link=y}}#{{tr|Brain of Cthulhu}}|{{tr|Treasure Bag}}]]掉落。
+
+== 对{{tr|enemies}}造成{{tr|Confused}}  ==
+造成{{tr|Confused debuff}}的基础几率是 {{chance|3/5}}。每承受一点伤害就会提高 {{chance|1/250}}，因此承受 100 或更多伤害就能保证造成此{{tr|debuff}}。{{source code ref|v=1.4.1.2|name=hurt|method=Terraria.Player.Hurt}}
+
+{{tr|The debuff}}的持续时间是随机确定的，边界取决于所承受伤害量：<ref name="hurt"/>
+
+<math>\text{最短持续时间} = \frac{1}{60} \times \left( 90 + \left\lfloor \frac{\text{伤害}}{3} \right\rfloor \right)</math>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<math>\text{最长持续时间} = \frac{1}{60} \times \left( 300 + \left\lfloor \frac{\text{伤害}}{2} \right\rfloor \right)</math>
+
+这些值以秒为单位。
+
+多大范围内的{{tr|enemy}}会受影响也是随机决定的。有一些特定伤害阈值会影响具体使用哪个公式：<ref name="hurt"/>
+
+<math>\text{最小范围} = \begin{cases}
+\left\lfloor \dfrac{\text{伤害}}{2} \right\rfloor + 200 & \text{若} \  \text{伤害} \leq 600 \\
+& \\
+\dfrac{3}{4}  \times \left\lfloor \dfrac{\text{伤害}}{2} \right\rfloor + 275 & \text{若} \  600 < \text{伤害} \leq 1333 \\
+& \\
+\dfrac{3}{8}  \times \left\lfloor \dfrac{\text{伤害}}{2} \right\rfloor + 487.5 & \text{若} \  1333 < \text{伤害} \leq 2200 \\
+& \\
+\dfrac{3}{32} \times \left\lfloor \dfrac{\text{伤害}}{2} \right\rfloor + 796.875 & \text{若} \  2200 < \text{伤害} \\
+\end{cases}</math>
+
+
+<math>\text{最大范围} = \begin{cases}
+2\times \text{伤害}+300 & \text{若} \  \text{伤害}\leq 100 \\
+& \\
+\dfrac{3}{2} \times \text{伤害}+350 & \text{若} \  100< \text{伤害}\leq 233 \\
+& \\
+\dfrac{3}{4} \times \text{伤害}+525 & \text{若} \  233< \text{伤害}\leq 500 \\
+& \\
+\dfrac{3}{16} \times \text{伤害}+806.25 & \text{若} \  500< \text{伤害} \\
+\end{cases}</math>
+
+这些值以像素为单位，除以 16 即可得到格数。
+
+例如：
+{{options/set|chance|reduce=n}}
+{| class="terraria"
+! 承受伤害 !! {{tr|Debuff}}几率 !! {{tr|Debuff duration}} !! {{tr|Debuff}}范围
+|-
+| 1 || {{chance|151/250}} || 1.5–5 秒 || 12.5–18.88 格
+|-
+| 32 || {{chance|173/250}} || 1.67–5.27 秒 || 13.5–22.75 格
+|-
+| 50 || {{chance|200/250}} || 1.77–5.42 秒 || 14.06–25 格
+|-
+| 78 || {{chance|228/250}} || 1.93–5.65 秒 || 14.94–28.5 格
+|-
+| 100 || {{chance|250/250}} || 2.05–5.83 秒 || 15.63–31.25 格
+|-
+| 300 || {{chance|250/250}} || 3.17–7.5 秒 || 21.88–46.88 格
+|}{{options/reset|chance}}
+
+== 备注 ==
+{{for|关于{{tr|dodge}}机制的更多细节|{{tr|Dodge}}}}
+* 其效果可被任何形式的直接伤害激活，包括来自[[{{tr|traps}}]]和[[{{tr|thorny bushes}}]]的伤害。但并不会被随时间推移造成的伤害激活，例如[[{{tr|debuffs}}]]。
+* 每次触发效果都会生成一个飞行的{{tr|brain projectile}}。这纯粹只是视觉效果。
+* {{tr|The Brain of Confusion}}不受[[{{tr|dyes}}]]影响。
+* 其 {{chance|1/6}} 几率消除伤害的能力可以看作是不属于整个[[{{tr|defense}}]]系统的 16.7% 的动态[[{{tr|damage reduction}}]]。但是这不如诸如[[{{tr|Worm Scarf}}]]等其他手段所提供的固定{{tr|damage reduction}}加成或{{tr|defense}}加成那么可靠。
+* 对于其范围内的每个{{tr|enemy}}造成{{tr|Confused debuff}}的几率和持续时间是分别单独计算的。
+
+== 小贴士 ==
+* {{tr|Brain of Confusion}}所增加的{{tr|dodge}}几率和其[[{{tr|The Corruption}}|{{tr|Corruption}}]]对应物{{tr|Worm Scarf}}所抵抗的伤害百分比大体一致。这意味着这两个{{tr|accessories}}平均来说所抵抗的伤害量是相同的，但方式有所不同。这使得{{tr|the Brain of Confusion}}在一些情况下明显不那么糟糕，甚至可以说比{{tr|the Worm Scarf}}更好。通常在[[{{tr|Master Mode}}]]，承受伤害本身就可能会是极度危险的，因此在某些情况下有几率{{tr|dodge}}可能会更有用（因为{{tr|Worm Scarf}}减免了 17% 之后的伤害可能仍旧太高）。
+* 在成功{{tr|dodge}}之后所提高的{{tr|critical hit chance}}带来的短期{{DPS}}提升可以让玩家在短时间内对{{tr|enemies}}或 {{tr|bosses}} 造成更多伤害。有些人可能会认为这有助于巩固{{tr|the Brain of Confusion}}作为{{DPS}}版{{tr|the Worm Scarf}}的地位。
+** 但是，两全其美的做法是同时使用这两个{{tr|accessories}}，这大大增加了玩家的生存机会，同时也提高了{{DPS}}能力。
+* 由于{{tr|Cerebral Mindtrick}}是个{{tr|debuff}}，因此可以用[[{{tr|Nurse}}]]移除。虽然这移除了{{tr|the critical strike chance}}加成，但却允许立即躲避另一次攻击。
+* 由于{{tr|Cerebral Mindtrick}}同样提供了{{tr|summon damage bonus}}，因此它对于{{tr|summoners}}来说也是个可行的{{tr|accessory}}。
+
+== 花絮 ==
+* 在 [[1.4.0.1]] 加入{{tr|Cerebral Mindtrick}}之前，有时会认为{{tr|the Brain of Confusion}}和其[[{{tr|The Corruption}}|{{tr|Corruption}}]]对应物[[{{tr|Worm Scarf}}]]相比令人失望，因为它仅有的功能只是偶尔使{{tr|enemies}}[[{{tr|Confused}}]]。尽管如此，这一效果在某些时刻依然有用处，比如在[[{{tr|events}}]]中、或防止玩家被诸如[[{{tr|Cave Bat}}]]之类的大群{{tr|enemy}}所淹没。
+* 与[[{{tr|Worm Scarf}}]]不同，同时装备 6 个或者更多个{{tr|Brains of Confusion}}（例：通过[[{{tr|inventory editors}}]]）并不会让{{tr|dodge}}攻击的几率变成 100%。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** {{tr|Cerebral Mindtrick}}的{{tr|the critical chance and summon damage}}加成由 20% 减半至 10%。
+** {{tr|Cerebral Mindtrick}}的持续时间由 5 秒缩短至 4 秒。
+** 修正了被{{tr|dodge}}的攻击依然会对玩家造成{{tr|debuff}}的问题。}}
+{{history|Desktop 1.4.0.1|现在有几率{{tr|dodge}}攻击。成功的{{tr|dodge}}会使玩家获得{{tr|Cerebral Mindtrick}}，提供20% {{tr|critical strike chance and summon damage}}加成，持续 5 秒。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Brain of Confusion}}

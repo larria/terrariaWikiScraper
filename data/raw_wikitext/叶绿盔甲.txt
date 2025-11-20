@@ -1,0 +1,134 @@
+{{legacy nav tab}}
+{{item infobox
+| imagebreak = yes
+| type = Armor/Set
+| setbonus = @@@@ <br/>''减少受到的{{tr|damage}} 5%''（使用{{tr|Chlorophyte Mask}}）
+| buff = Leaf Crystal/ 当一整套{{tr|set}}被穿着时无限
+| hardmode = yes
+| idprojectile = 226, 227
+}}
+[[File:Chlorophyte armor (demo).gif|450px|thumb|right|用[[{{tr|The Undertaker}}]]触发全套{{tr|Chlorophyte armor}}的{{tr|Leaf Crystal bonus}}，并用其攻击[[{{tr|Shark}}]]。]]
+
+'''{{tr|Chlorophyte armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|mechanical bosses}}]]后的[[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Chlorophyte Plate Mail}}'''和'''{{tr|Chlorophyte Greaves}}'''，以及三种不同的{{tr|headpieces}}：'''{{tr|Chlorophyte Mask}}'''、'''{{tr|Chlorophyte Helmet}}'''和'''{{tr|Chlorophyte Headgear}}'''组成，分别提供{{tr|melee}}，{{tr|ranged}}和{{tr|magic}}类型加成。制作全套{{tr|set}}与一个{{tr|headpiece}}总计需要 54 块{{tr|Chlorophyte Bars}}（270 个[[{{tr|Chlorophyte Ore}}]]）。制作全部五个部件总计需要 78 块{{tr|Chlorophyte Bars}}（390 个{{tr|Chlorophyte Ore}}）。
+
+装备全套{{tr|set}}提供下列效果：
+<tabber>
+|-|{{tr|Mask}}=
+* +51 [[{{tr|defense}}]]
+* +5% [[{{tr|damage reduction}}]]
+* +21% [[{{tr|melee damage}}]]
+* +21% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +5% [[{{tr|movement speed}}]]
+* 召唤一颗'''{{tr|Leaf Crystal}}'''召唤物，悬浮于{{tr|player}}上方，周期性地向{{tr|enemy}}发射{{tr|projectile}}。
+** {{tr|The projectile}}是一束绿色的激光状能量脉冲，可立即命中目标并造成 100 {{tr|base damage}}{{source code ref|v=1.4.4.9|field=Terraria.Player.crystalLeafDamage}}和 {{kb|10|full=y|class=}}{{source code ref|v=1.4.4.9|field=Terraria.Player.crystalLeafKB}} [[{{tr|knockback}}]]。
+|-|{{tr|Helmet}}=
+* +44 [[{{tr|defense}}]]
+* +21% [[{{tr|ranged damage}}]]
+* +15% [[{{tr|critical strike chance}}]]
+* +20% [[{{tr|ammo conservation}}]]
+* +5% [[{{tr|movement speed}}]]
+* 召唤一颗'''{{tr|Leaf Crystal}}'''召唤物，悬浮于{{tr|player}}上方，周期性地向{{tr|enemy}}发射{{tr|projectile}}。
+** {{tr|The projectile}}是一束绿色的激光状能量脉冲，可立即命中目标并造成 100 {{tr|base damage}}和 {{kb|10|full=y|class=}} [[{{tr|knockback}}]]。
+|-|{{tr|Headgear}}=
+* +38 [[{{tr|defense}}]]
+* +21% [[{{tr|magic damage}}]]
+* +15% [[{{tr|critical strike chance}}]]
+* +80 最大[[{{tr|mana}}]]
+* -17% {{tr|mana cost}}
+* +5% [[{{tr|movement speed}}]]
+* 召唤一颗'''{{tr|Leaf Crystal}}'''召唤物，悬浮于{{tr|player}}上方，周期性地向{{tr|enemy}}发射{{tr|projectile}}。
+** {{tr|The projectile}}是一束绿色的激光状能量脉冲，可立即命中目标并造成 100 {{tr|base damage}}和 {{kb|10|full=y|class=}} [[{{tr|knockback}}]]。
+</tabber>
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| hardmode = yes
+| auto = 1004
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1005
+}}
+}}
+
+=== 头盔种类 ===
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| hardmode = yes
+| auto = 1001
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1002
+}}
+|{{item infobox
+| hardmode = yes
+| auto = 1003
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Chlorophyte Mask/Chlorophyte Helmet/Chlorophyte Headgear/Chlorophyte Plate Mail/Chlorophyte Greaves|expectedrows=5}}
+
+== 备注 ==
+* {{tr|The Leaf Crystal}}可以同时射击两类{{tr|projectile}}，且两类{{tr|projectile}}可以瞄准同一{{tr|enemy}}射击。
+** 第一类{{tr|projectile}}会自行向 43.75 格{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}内的任何[[{{tr|enemies}}]]射击。这要求一个不存在障碍的视线，但在未击中目标或是玩家在其发射前躲藏在掩体后时，它还会穿透[[{{tr|blocks}}]]。这一类{{tr|projectile}}的{{tr|cooldown}}为<!--
+--> {{duration|40 ticks}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}。
+** 第二类{{tr|projectile}}会在任何（仅在 135 个{{tr|tiles}}内时{{source code ref|v=1.4.4.9|method=Terraria.Player.OnHit}}）{{tr|enemy}}受到来自其他来源的伤害（如来自玩家攻击、或来自[[{{tr|lava}}]]、[[{{tr|minion}}]]、[[{{tr|trap}}]]等等）之后发射。它会瞄准{{tr|blocks}}后的{{tr|enemy}}，{{tr|projectile}}会穿过{{tr|blocks}}来攻击{{tr|enemy}}。这一类{{tr|projectile}}的{{tr|cooldown}}为<!--
+--> {{duration|50 ticks}}{{source code ref|v=1.4.4.9|method=Terraria.Player.OnHit}}。
+* {{tr|Leaf Crystal}}拥有下列独特特性：
+** 开火时，它会发射一个以直线运动，不会自动追踪目标的{{tr|projectile}}。
+** 在 [[{{tr|PvP}}]] 中，只有第二类{{tr|projectile}}能够以玩家为目标（即：玩家需要受到其他来源的伤害以使得{{tr|Leaf Crystal}}以其为目标）。
+** {{tr|The Leaf Crystal}}会散发出微弱的绿光。
+** 它不会受到增加{{tr|damage}}的{{tr|bonus}}影响（如[[{{tr|accessories}}]]），也不能造成[[{{tr|critical hit}}]]。
+** 它不能直接以[[{{tr|critters}}]]为目标，但{{tr|projectile}}击中它们时仍会杀死它们。
+** {{tr|The Leaf Crystal}}不受{{eil|Critter Shampoo}}或{{tr|pet slot}}的{{tr|dye}}影响，因此它无法被[[{{tr|Dyes}}|染色]]，这和其他由{{tr|set bonus}}召唤物（如{{eil|Stardust Guardian}}）不同。
+* 如果装备全套{{tr|Chlorophyte armor}}，它会产生黯淡的脉动效果。此效果只会在没有[[{{tr|vanity}}]]覆盖它，或是它本身就是{{tr|vanity}}时出现。
+
+== 小贴士 ==
+* {{tr|The Leaf Crystal}}在挂机刷特定{{tr|enemies}}时很有用，如寻找稀有掉落和[[{{tr|Biome Keys}}]]时。
+* {{tr|Chlorophyte armor}}拥有异常高的无职业属性加成，这仅低于[[{{tr|Crystal Assassin armor}}]]。因此，穿戴{{tr|Chlorophyte Mask}}使用{{tr|ranged}}和{{tr|magic weapons}}是可行的，这会提供比[[{{tr|Plantera}}]]前的{{tr|ranged}}和{{tr|magic armors}}更高的{{tr|defense}}。
+* 尽管{{tr|Chlorophyte armor}}优点很多，但不升级{{tr|player}}使用的早期{{tr|armor}}也可能会是有利的，这有很多原因：
+** 如果更倾向于防御性的游戏风格，[[{{tr|Hallowed armor}}]]被认为是一个更好的选择，因为相比之下，{{tr|Chlorophyte armor}}的{{tr|set bonus}}更具有进攻性。{{tr|Hallowed armor}}赋予的{{tr|Holy Protection buff}}可以使{{tr|player}}免疫来自{{tr|enemies}}的下一次攻击，而{{tr|Chlorophyte armor}}{{tr|set bonus}}则充当于一个{{tr|sentry}}为{{tr|player}}而战。
+** 在{{tr|player}}不使用{{tr|Hallowed armor}}时，若{{tr|player}}是法师那么坚持使用[[{{tr|Adamantite armor}}]]也可能更有利，若是{{tr|ranged}}或{{tr|melee}}则可以是[[{{tr|Frost armor}}]]。前者{{tr|mana}}消耗减少的加成可能会比{{tr|Leaf Crystal}}的额外{{tr|damage}}更有用，具体取决于所选的{{tr|weapon}}，相较之下，{{tr|set}}其他部分加成大致相同。对于其他两个职业，{{tr|Frost armor}}的[[{{tr|Frostbite}}]]相较于{{tr|Crystal}}的射击则是更可靠的额外{{tr|damage}}来源，{{tr|Frostbite}}可以传播到多个{{tr|enemy}}身上。{{tr|Frost armor}}增加更多的{{tr|damage}}且提供{{tr|melee attack speed}}加成。
+** {{tr|Melee players}}可以选择直接使用[[{{tr|Turtle armor}}]]，它是更具有进攻性的{{tr|Chlorophyte set}}的防御性替代品。
+* 此{{tr|armor}}后续可以被[[{{tr|Shimmer}}]]分解为{{tr|Chlorophyte Bars}}以制作[[Spectre armor|{{tr|Spectre}}]]、[[Shroomite armor|{{tr|Shroomite}}]]和[[Turtle armor|{{tr|Turtle armor}}]]{{tr|sets}}。
+
+== 花絮 ==
+* {{tr|Chlorophyte armor}}{{tr|set}}能够提供游戏中所有{{tr|armor set}}中最高的总体{{tr|critical strike chance}}{{tr|bonus}}。
+* 虽然其{{tr|set bonus}}和{{tr|summon weapons}}的作用很相似，但并没有供{{tr|summoner}}使用的{{tr|helmet}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|修复了{{tr|Leaf Crystal}}第一类{{tr|projectile}}的开火冷却在切换{{tr|armor}}时被无意地重置的问题。}}
+{{history|Desktop 1.4.4|
+** {{tr|Leaf Crystal}}的{{tr|projectile}}现在是即时命中的能量束，极大幅降低了它打空的几率。
+** 现在它在玩家击中目标时触发的那类开火有距离限制（此前它可能向远在屏幕外的位置开火）。}}
+{{history|Desktop 1.4.1|{{tr|Leaf Crystal}}第一类{{tr|projectile}}的冷却时间从 {{duration|50 ticks}} 降低至 {{duration|40 ticks}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Chlorophyte Mask}}{{tr|defense}}由 25 降低至 20。
+** {{tr|Chlorophyte set bonus}}现在会在玩家穿着{{tr|Chlorophyte Mask}}时给予额外的 5% [[{{tr|damage reduction}}]]。
+** {{tr|Chlorophyte Helmet}}的 1/5 [[{{tr|ammo conservation}}]]效果现在可与[[{{tr|Shroomite Breastplate}}]]、[[{{tr|Fossil armor}}]]、[[{{tr|Cobalt armor}}]]和[[{{tr|Mythril armor}}]]{{tr|set bonuses}}的 20% {{tr|ammo conservation}}效果叠加。
+** {{tr|Leaf Crystal}}{{tr|sprites updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Leaf Crystal}}造成的{{tr|damage}}从 50 提升至 100，{{tr|knockback}}从 5 提升至 10。}}
+{{history|Desktop 1.2.3|{{tr|Leaf Crystal}}的两类{{tr|projectile}}的冷却时间均从 {{duration|60 ticks}} 降低至 {{duration|50 ticks}}。其{{tr|damage}}从 40 提升至 50。}}
+{{history|Desktop 1.2.1|添加了女性人物的图像变体。}}
+{{history|Desktop 1.2.0.3|{{tr|Chlorophyte Mask}}{{tr|defense}}由 28 降低至 25。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Leaf Crystal}}{{tr|set bonus}}射击更快，造成更高{{tr|damage}}。}}
+{{history|Console 1.02|Introduced=yes|与女性版本一同引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Leaf Crystal}}{{tr|set bonus}}射击更快，造成更高{{tr|damage}}。}}
+{{history|Mobile 1.2.6508|Introduced=yes|与女性版本一同引入。}}
+{{history|3DS-Release|Introduced=yes|与女性版本一同引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Chlorophyte}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Chlorophyte armor}}

@@ -1,0 +1,151 @@
+{{collapse top|点击展开 {{tr|bug}} 修复列表|收起列表}}
+; {{tr|Multiplayer}} & 分屏修复
+* Fixed a bug where the game would become indefinitely unresponsive following an Xbox profile change during a multiplayer session
+* Resolved several instances of crashes that occurred when adding split-screen players
+* Fixed a crash that would occur when a non-host split-screen partner is navigating into the session after the primary player has rejoined the same session
+* Resolved a miscellaneous crash that occurred on Xbox One during multiplayer
+* Fixed a bug that would cause non-host players to be booted out of multiplayer while exploring the world
+* Resolved a crash that would cause a host or non-host player to crash during gameplay
+* Fixed a rare multiplayer instance where a non-host player failed to join a multiplayer session and received the message “A network error has occurred”
+* Resolved a bug where players were unable to join a multiplayer session after quitting it previously while that multiplayer session included the maximum number of players
+* Fixed a bug where the Buff Timer freezes when a non-host player rejoined a multiplayer session
+* Resolved a bug where using the Save and Exit function while dying in a split-screen game would cause the game to crash
+* Fixed a crash that would occur after 5-10 minutes with the maximum number of split-screen players with low bandwidth
+* Resolved a crash that would occur when hosting two different split-screen partners
+* Fixed a crash that would occur for the host when a non-host player joined a MP session via the ‘Play Together’ function while they were in their own hosted game
+* Resolved a bug where the host’s mini-map would appear corrupted after suspending and resuming the game while being in a split-screen game
+* Fixed a crash that would occur when the primary player in a split-screen game exited the game after disabling the map from the settings
+* Resolved a bug where split-screen players were unable to exit the session when both players had the map disabled and Autopause set to ON
+* Fixed a bug where enemies became invisible and invincible during multiplayer games for non-host players
+* Resolved dozens of instances of enemies, NPCs, and other content throughout the game flickering while in multiplayer
+* Fixed a bug where death animations of enemies fail to appear on non-host player screens when the host kills the enemy
+* Resolved a bug where players would get stuck while using Solar Eruption in a prolonged multiplayer session while having the minimum amount of players
+* Fixed a bug where certain trophies/achievements related to boss fights would fail to unlock for non-host players in a multiplayer session
+* Resolved several instances of players being unable to join a multiplayer session
+* Fixed several instances of freezing or crashes related to unforeseen internet disconnections
+* Resolved several Xbox One specific multiplayer crashes
+* Resolved several PS4 specific multiplayer crashes
+* Fixed several different multiplayer crashes that occurred during gameplay including places like the Underworld
+* Resolved a crash that would occur using the Drill Containment Unit in a split-screen game
+* Fixed a bug where a character took more than 30 seconds to respawn in multiplayer
+; 功能 & 设计/游玩修复
+* Resolved a bug that allowed 9 players to join multiplayer through split-screen
+* Fixed a bug where items by the player were not saved upon exiting via ‘Save & Exit’
+* Resolved a bug that would cause enemies to sometimes disappear and reappear during gameplay
+* Fixed a bug that would cause some menus to persist in circumstances where they shouldn’t be visible
+* Resolved a bug where the background would appear zoomed in after sign-in changes
+* Fixed a bug where an item engaged in build mode falls to the ground after getting slain
+* Resolved a bug where closing an object with either ‘B’ or ‘O’ would reopen that object
+* Fixed a bug where all potion durations would be a minute less than its intended duration
+* Resolved a bug that would not allow players to dismiss UI prompts
+* Fixed a bug that caused camera issues after returning from suspended console state in split-screen mode
+* Resolved a bug where the ‘Select’ button is not present for Direction Buttons Cursor Snap/Hotbar option within the ‘Controls’ menu
+* Fixed some exception errors related to the use of ‘Meowmere’
+* Resolved several other instances of bugs that occur in conjunction with Autopause set to ‘ON’
+* Fixed a bug where certain pet summoning items did not summon pets
+* Resolved a bug where the drop/throw animation was missing when the player dropped the item from the inventory
+* Fixed a bug where the crafting option failed to function via the Guide NPC
+* Resolved a bug where item names were not displayed for non-primary players in split-screen mode
+* Fixed a bug where the character preview failed to appear on character selection after controller disconnection
+* Resolved a bug where familiar clothes and the wig present in the Clothier NPC’s inventory did not update according to the player’s costume and wig color
+* Fixed dozens of player input bugs related to the D-Pad and inventory management
+* Resolved a bug where worlds could not be created immediately after committing sign-in changes and selecting a previously created world
+* Fixed a bug where a player was able to use two weapons at the same time
+* Resolved a few instances of duplicating doors being created
+* Fixed several bugs that were preventing players from switching between different menus immediately
+* Resolved an instance that prevented Skeletron from spawning after interacting with the Old Man NPC at night
+* Fixed a bug that prevented the player character from moving after interacting with any NPC multiple times
+* Resolved a bug where a secondary split-screen player was able to accept an invite
+; 保存数据修复
+* Resolved a bug that caused save data to become corrupted on adding a 3rd split-screen player after a prolonged session
+* Fixed a bug where save data would fail to appear after suspending and resuming the game
+* Resolved a bug where in certain circumstances the game did not save game progression when a player terminated the game in ‘Autosave’ mode
+* Made additional code changes to eliminate more issues related to save conversion from 1.0.7, 1.0.8, and 1.0.9
+; 一般崩溃修复
+* Fixed a softlock (and other related issues) that would occur when a player spent an extended time in the Ice Biome or Spider Cave minibiome while using endgame gear, even after exiting, that persisted until the game was closed and restarted. (Thanks to various community members including @Cyberra and @ED209 for their help in tracking down the root causes and reproduction steps on this!)
+* Fixed a crash that would occur if a player started the game in Turkish
+* Resolved a soft lock that would happen when players attempted to access their character Cloud Saves
+* Fixed a crash that would occur after idling in a fresh world
+* Resolved a bug where the game would become unresponsive after navigating to the main menu after performing a sign-in change while being in a multiplayer session previously
+* Fixed numerous other issues related to profile changes that caused instability during gameplay
+* Resolved a crash that would occur when a player stood idle in a house with many objects
+* Fixed a crash that would occur when toggling the D-Pad controls in Quick Navigation control settings
+* Resolved a random crash that would occur when invoking the inventory several times on Xbox One
+* Fixed a crash that would occur after mining continuously for 5-10 minutes with a high-speed pick or drill
+* Resolved a crash that occurred from mining and then immediately interacting with a tombstone
+* Fixed a crash that occurred when continuously creating new characters
+* Resolved a few crashes specific to the Stardust Dragon
+; 一般修复 & 添加
+* Fixed dozens of inconsistencies to bring console more in line with PC
+* 重新修复了若干其他 A.I 方面的 bug
+* 修复了许多{{tr|platform}}的特定 bug
+* Resolved a few instances where accomplishments would not trigger in certain circumstances
+* Added a transparency slider to help with inventory visibility for those struggling with that.
+; 性能修复 & 改进
+* Resolved a bug where random hitches/freezes were observed by the host and a crash occurred for other non-host players
+* Resolved a performance issue where the framerate would tank when many particle effects persisted on screen
+* Fixed a bug that increased the load time to the main menu while having max characters and worlds
+* Resolved a bug where the framerate would dip between 10 to 15 with the maximum players in a multiplayer session
+* Decreased the overall time it takes to generate a small, medium and large world
+* Fixed a bug where the framerate dropped below 45 frames-per-section during all events if they were equipped with the mechanical ruler
+* Resolved several other instances of performance decreases related to items and other content within the game
+; {{tr|Event}}修复
+* Fixed a bug where background assets unique to events would not appear
+* Resolved a crash that would occur for player ShpongledMind during the pirate invasion within their arena
+* Fixed multiple errors that would occur for the host during the Frost Moon event
+* Fixed multiple errors that would occur during the Martian Madness event
+; 艺术、界面、声音 & 文本修复
+* Resolved a bug that caused menu opacity to increase while zooming in
+* Added a tooltip that specifies the changes to the D-Pad and Custom Controls in 1.3
+* Fixed a bug where the block placement cursor grid was too faint
+* Resolved a bug where the inventory would only show an item as 1 instead of the current stack amount
+* Fixed a bug where all event filters show a white flash any time they start or stop
+* Resolved a bug where the animation of short swords appeared offset
+* Fixed a bug where reflective dyes were missing their reflective shine
+* Resolved other instances of UI text pulsating
+* Fixed background animations when generating small, medium, and large worlds
+* Resolved a bug where buff icons in the equipment sub-menu would overlap with the menu
+* Fixed a bug where the ‘Leaf Crystal’ animation would appear to jitter when the character is equipped with ‘Cholorophyte armor’
+* Resolved a bug where the Buff/Debuff icons are nearly invisible
+* Fixed a bug where the Blood Moon and Lunar event background filters appeared overlapped
+* Resolved a bug where Yoyos appear invisible while a familiar shirt is equipped
+* Fixed a bug where Moon Lord’s hand movement animation would stutter while in combat during a multiplayer session
+* Resolved a bug where the VFX was missing for most of the weapons & pet projectiles while using certain dyes
+* Fixed a bug where the Stardust Dragon would flicker in split-screen
+* Resolved a bug where the UI would overlap in certain circumstances after a sign-in change
+* Fixed a bug where the rocket effect did not change after applying any dye on ‘Yoraiz0r’s Spell’ wing
+* Resolved a bug where the flow animation pattern of a character’s head in the Map/Mini-Map isn’t smooth after applying dye.
+* Fixed a bug where text on the hotbar would persist in certain circumstances when it shouldn’t have
+* Resolved a bug where the Twilight dye stars all draw as one blob instead of smaller stars spread out
+* Fixed a bug where the Nebula pillar shader shows the static lightning sprite instead of light beams
+* Resolved a bug that caused flashing for a moment every time the character moved within the monolith’s range
+* Fixed many other instances of dyes being inconsistent with the PC version
+* Dozens of additional fixes to shaders and dyes
+* Fixed dozens of other instances of the UI overlapping throughout different parts of the game
+* Resolved a bug where placeholder text would be displayed when the Tax Collector arrives
+* Fixed a bug where inconsistent dye animations were observed for Pets/Mounts when Primary and Secondary players crossed each other after equipping gradient dye
+* Resolved several issues related to dyes in relation to mounts
+* Fixed a bug where some animations for dyes would get altered/corrupted within the character preview on the character selection screen
+* Resolved a bug that would cause accomplishments to be displayed twice after performing sign-in changes
+* Fixed a bug where the mine cart preview is not displayed while the cursor is place on the mine cart track
+* Resolved several instances were menu highlights states could be difficult to distinguish for the player
+* Fixed several instances of equipment stuttering or flickering during gameplay
+* Resolved several instances of firing animations appearing in the foreground over a player’s sprite
+* Fixed a bug where incomplete hint text was displayed
+* Resolved several instances of equipment appearing offset
+* Fixed a bug where a gap was observed between paintings went placed side-by-side
+* Resolved several graphical issues related to paintings
+* Fixed a bug where enemy stats were displayed passing through enemies while being in Ghost form
+* Resolved a bug where certain weather effects like rain would persist for secondary players in split-screen
+* Fixed several localization bugs across different languages and parts of the game
+* Resolved dozens of other art bugs relating to the UI, animation, VFX, and much more
+* Fixed a few different instances of certain SFX not triggering properly
+* Resolved a few instances of certain objects being bound to the character upon being slain
+* 修复了几个缺失 SFX 的情况
+* Resolved multiple layering issues encountered when the Wall of Flesh is spawned in the underworld
+* Resolved several other instances of incorrect layering throughout the game
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Pipeworks Studios/PS4 1.0.1147.9}}
+</noinclude>

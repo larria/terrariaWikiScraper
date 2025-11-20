@@ -1,0 +1,46 @@
+{{exclusive|1.3.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 3609
+| type = Mechanism / Block
+| tags = hardmode / vendor / vendor:Steampunker
+}}
+|{{item infobox
+| auto = 3610
+| type = Mechanism / Block
+| tags = hardmode / vendor / vendor:Steampunker
+}}
+}}
+
+'''{{tr|Conveyor Belt}}'''（顺时针和逆时针）是一个[[{{tr|Hardmode}}]]的[[{{tr|blocks}}]]，在[[{{tr|Steampunker}}]]以每个 {{iteminfo|Conveyor Belt (Clockwise)|buy}} 的价格购买。它具有在接触时能自动向对应方向移动{{tr|player}}、掉落的{{tr|item}}、放置的{{eil|Golf Ball}}、和 [[{{tr|Town NPC}}]]（但不能移动{{tr|enemy}}或[[{{tr|critters}}]]）的独特能力。
+
+{{tr|Conveyor Belt}}从放置时起将保持激活状态。虽然它不需要任何[[{{tr|Wire}}]]，但它可以通过{{tr|wired}}来反转方向（在顺时针和逆时针间切换）。像大多数{{tr|block}}一样，它们可以使用[[{{tr|Hammer}}]]塑造成半块和斜坡，允许对角线移动。
+
+== 备注 ==
+* {{tr|Conveyor Belts}}将实体以大约 {{mph|13}} 的速度移动。这是通过在走向实心物体时使用[[{{tr|Stopwatch}}]]得出的。
+* {{tr|Conveyor Belts}}能够穿过[[{{tr|water}}]]和[[{{tr|lava}}]]移动物品，前提是{{tr|lava}}不会摧毁那个{{tr|item}}。{{tr|Conveyor Belts}}也能移动不受{{tr|gravity}}影响的{{tr|items}}（如[[{{tr|souls}}]]），但这只会在它们掉落位置低到碰触到{{tr|Conveyor Belts}}的情况下发生。
+* {{tr|Enemies}}能够在{{tr|Conveyor Belts}}上生成。游戏会使用下方 30 {{tr|tile}}以内的首个非{{tr|Conveyor Belts}}{{tr|block}}来决定生成哪种{{tr|enemy}}。
+* 如果玩家使用[[{{tr|Gravitation Potion}}]]或[[{{tr|Gravity Globe}}]]，{{tr|Conveyor Belt}}的底部并不会移动玩家。
+
+== 小贴士 ==
+* {{tr|Conveyor Belt}}可用于将{{tr|Town NPC}} 推入[[{{tr|Trap}}]]。
+* {{tr|Conveyor Belts}}可以用于建造自动扶梯和跑步机。
+* 在移动{{tr|items}}或实体时，[[{{tr|hoik}}]] 可能会比{{tr|Conveyor Belts}}更好，因为 {{tr|hoiks}} 比{{tr|Conveyor Belts}}更快、更便宜。然而，{{tr|hoiks}} 的利用更加困难，因为玩家必须知道建造并使用 {{tr|hoiks}} 的正确技巧，而{{tr|Conveyor Belts}}的建造和理解更加简单。不使用复杂的设计的话，{{tr|Hoiks}} 只能向一个方向移动实体，而{{tr|Conveyor Belts}}的方向可以轻易地用{{tr|Wire}}切换。
+* 可以将{{tr|Conveyor Belts}}和战斗场地结合，并使用高 {{DPS}} 的{{tr|magic weapon}}高效地刷[[{{tr|event}}]]。首先，玩家需要大量的{{tr|Conveyor Belts}}来建造斜向上的扶梯，终点为玩家所站的位置。然后，建造一个能够持续产出{{tr|Star}}的[[{{tr|Star}}]]农场（从而无需使用[[{{tr|Mana Flower}}]]或担心[[{{tr|Mana Sickness}}]]{{tr|debuff}}）。玩家也可以从{{tr|enemies}}处获取{{tr|Stars}}来持续补充足量的{{tr|mana}}。接着，准备一套完整的{{tr|Magic}}配装，带有 [[{{tr|Menacing}}]]或[[{{tr|Lucky}}]]{{tr|accessory}}[[{{tr|modifiers}}]]，且最好有[[{{tr|Nebula armor}}]]。武器选择为具有[[{{tr|Demonic}}]]{{tr|modifier}}的[[{{tr|Last Prism}}]]。如果在击败[[{{tr|Moon Lord}}]]前需要这类战斗场地，可以使用带{{tr|Spectre Mask}}的[[{{tr|Spectre armor}}]]（或者可用的最好的{{tr|Magic damage}}{{tr|armor set}}），以及高 {{DPS}}、穿透、群体伤害武器，例如[[{{tr|Razorblade Typhoon}}]]或[[{{tr|Nebula Arcanum}}]]。
+* 用{{tr|Conveyor Belt}}造的天空桥可以高效收集[[{{tr|Fallen Star}}]]。不过，鉴于{{tr|Conveyor Belt}}速度较慢，不是所有的[[{{tr|Fallen Star}}]]都能及时到达{{tr|Conveyor Belt}}末端并被收集（尤其是在较大的世界中）。覆盖整个{{tr|large world}}，在世界中心结束的{{tr|Conveyor Belt}}应当每晚能收集 60% 的{{tr|Fallen Star}}。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|
+** 修复了驶向{{tr|Conveyor Belts}}的[[{{tr|Minecart Track}}]]会导致[[{{tr|Minecart}}]]脱轨的问题。
+** 修复了{{tr|Conveyor Belts}}会覆盖[[{{tr|biome}}]]生物生成的问题。
+** 修复了[[{{tr|Fallen Star}}]]会穿过{{tr|Conveyor Belts}}并最终卡在{{tr|blocks}}内的问题。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-functional = yes
+}}
+
+{{language info|en=Conveyor Belt}}

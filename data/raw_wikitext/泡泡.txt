@@ -1,0 +1,59 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Furniture/Block
+| auto = 3214
+| tags = Vendor / hardmode / vendor:Party Girl
+}}
+{{float file|[[File:Bubbleblock holding liquids.png|thumb|250px|用{{tr|Bubble blocks}}存放所有[[{{tr|liquids}}]]。与其他{{tr|solid blocks}}相同，{{tr|Bubble}}的最顶端一排在维持{{tr|liquids}}的位置方面是不必要的。]]}}
+
+'''{{tr|Bubbles}}'''是一种动画{{tr|background}}[[{{tr|furniture}}]][[{{tr|block}}]]，有与[[{{tr|liquids}}]]相关的特殊行为，后者会如同{{tr|Bubbles}}是{{tr|solid block}}一样与之互动。当{{tr|Bubbles}}被放置在一起时，它们会相互连接，构成更大的{{tr|Bubbles}}或更加复杂的结构。
+
+{{tr|Bubbles}}可在[[{{tr|hardmode}}]]中于[[{{tr|Party Girl}}]]处以每个 {{iteminfo|Bubble|buy}} 的价格购买。
+
+{{eil|Grate|s}}作用与{{tr|Bubbles}}相反，行为上是{{tr|solid blocks}}，但允许{{tr|liquids}}通过。
+
+== 行为 ==
+放置的{{tr|Bubbles}}在没有其它支持{{tr|tiles}}（如{{tr|background wall}}）时，只允许{{tr|Bubbles}}与之毗连放置。{{tr|Bubbles}}无法被[[{{tr|hammer}}]]击，因此也无法用于制造[[{{tr|Waterfall}}]]。[[{{tr|Actuator}}]]不影响{{tr|bubbles}}。
+
+{{tr|Liquids}}会像{{tr|Bubbles}}是{{tr|solid blocks}}一样与之相互作用。由{{tr|Bubbles}}构成的结构可用于像{{tr|blocks}}一样容纳{{tr|liquids}}。
+* 若{{tr|player}}使用{{tr|Bubbles}}建立了一座[[{{tr|Lava}}]]池，可被烧毁的{{tr|items}}（如[[{{tr|coins}}]]）在接触{{tr|lava}}时都会被烧毁，无论{{tr|Lava}}厚度如何。这是因为{{tr|items}}不会与{{tr|Bubbles}}碰撞，而是会穿过它们，其{{tr|sprite}}的中心点也因此会被浸没在{{tr|lava}}中，无论{{tr|sprite size}}如何。
+* 与将{{tr|blocks}}放在{{tr|Water}}上使其含{{tr|Water}}相似，{{tr|Bubbles}}可以容纳所有类型的[[{{tr|liquid}}]]。这并不会改变放置的{{tr|Bubbles}}的{{tr|sprite}}，但它们会有一些独特的相互作用：
+** 使用充满{{tr|liquid}}的[[{{tr|Buckets}}]]在空{{tr|Bubble}}上按下 {{key|use}} 会将{{tr|Bucket}}的内容物转移至{{tr|the Bubble}}中。{{tr|liquid}}可以使用[[{{tr|Empty Bucket}}]]再次移除。移除填充状态的{{tr|Bubble}}（例如，使用{{tr|pickaxe}}）将会释放{{tr|the liquid}}，使其掉落或与其他{{tr|liquids}}发生反应。
+** 每{{tr|tile}}的{{tr|Bubble}}都单独地保存{{tr|liquid}}，即使{{tr|Bubbles}}看上去是连在一起的，但{{tr|liquid}}其实并不会在它们之间流动，也不会与其他{{tr|Bubble tiles}}中的{{tr|liquid}}反应。2×2 的{{tr|Bubble}}正方形可能''看起来''像是一个大的{{tr|Bubble}}整体，但它可以同时在独立的{{tr|tile}}中容纳{{tr|Water, Lava, and Honey}}而不让它们发生反应。
+** 容纳有{{tr|liquid}}的{{tr|Bubble}}表现得会像对应的{{tr|liquid}}一样。例如，可以在填充有{{tr|water}}的{{tr|Bubble}}中游泳或[[{{tr|drown}}]]，也可使用来自[[{{tr|Water Walking Potion}}]]或[[{{tr|Water Walking Boots}}]]或其升级物的[[{{tr|Water Walking}}]]效果在填充有{{tr|liquid}}的{{tr|Bubble}}上行走。
+** {{tr|Bubbles}}中的{{tr|Liquid}}''可以''与其上方或旁边的流动形式的较缓慢的{{tr|liquid}}反应。这总是会消耗掉{{tr|Bubble tile}}中的全部内容物，不管其他{{tr|tile}}中{{tr|liquid}}量是多少都会如此。
+* 注意，在世界重新加载时，{{tr|Bubbles}}中的{{tr|liquid}}会在没有{{tr|blocks}}支撑它们时被释放，或者在它们受到支撑时被移除，就像被包含在其他{{tr|solid block}}中的{{tr|liquids}}一样。
+* 被{{tr|Bubbles}}支撑/围起（但不可像上面描述的那样容纳在{{tr|Bubble tiles}}中）的{{tr|liquid}}会留在原地。
+
+== {{tr|Notes}} ==
+* 尽管{{tr|Bubbles}}并非{{tr|solid blocks}}，但仍被算作[[{{tr|housing}}]]的有效{{tr|tiles}}框架。然而，它们是无效的[[{{tr|House}}#{{tr|Home tile}}判定|组成{{tr|home}}的{{tr|tiles}}]]。
+** {{eicons|1.4.0.1|invert=y}} [[{{tr|NPCs}}]]会偶尔从使用{{tr|Bubbles}}作为框架的{{tr|house}}中搬出来，使得这种{{tr|house}}对于安置 {{tr|NPC}} 来说是不可靠的。
+* 虽然{{tr|Town NPCs}} 在行走时会穿过空的{{tr|Bubbles}}和装有[[{{tr|Water}}]]或[[{{tr|Honey}}]]的{{tr|Bubbles}}，但绝不会走过盛有[[{{tr|Lava}}]]的{{tr|Bubbles}}。但{{tr|Critters and enemies}}则''会''走过装有{{tr|Lava}}的{{tr|Bubbles}}。
+* {{tr|Bubbles}}{{tr|rarity}}为白色，因此可被{{tr|Lava}}摧毁。
+* {{tr|Bubbles}}本质上是{{eil|Grate}}的反面，其中之一可通过实体而无法使得{{tr|liquids}}通过，另外一者则允许{{tr|liquids}}通过但不允许其他实体通过。但二者一个明显的区别是，与{{tr|Grates}}不同，{{tr|Bubbles}}无法被开启或关闭，即使用[[{{tr|Actuator}}]]也不行。
+
+== {{tr|Tips}} ==
+* 放置后，将其包围的[[{{tr|blocks}}]]和{{tr|background}}[[{{tr|walls}}]]就可以被移除，留下悬空的{{tr|Bubble}}。
+* 充满{{tr|liquid}}的{{tr|Bubble}}和[[{{tr|Liquid Sensor}}]]可被用作“重新加载探测器”，允许世界加载时重新启动一些复杂的过程或机械。然而，{{tr|the Bubble}}每次重新启用前都必须手动重新装载。
+* 盛有[[{{tr|Honey}}]]的{{tr|Bubbles}}是在战斗场地上使用[[{{tr|Honey (buff)}}|{{tr|Honey buff}}]]的绝佳方法。
+* 用{{tr|Bubbles}}作为房屋的框架可以使得进入房屋变得非常容易。这对于紧急进入[[{{tr|Nurse}}]]的{{tr|house}}进行治疗来说非常有用。
+* 在设置[[{{tr|Lava}}]]{{tr|traps}}处理{{tr|flying enemies}}时需要小心，因为{{tr|Lava}}也会杀死{{tr|flying}}[[{{tr|critters}}]]。
+* 由于[[{{tr|Water}}]]会触发{{eil|Cute Fishron}}{{tr|mount}}的加成，因此{{tr|Player}}可以在世界各处放置若干个充满[[{{tr|Water}}]]的{{tr|Bubbles}}，以便使用{{tr|mount}}高速旅行。
+* 在冒险主题的''[[{{tr|Terraria}}]]''地图中，{{tr|Bubbles}}可用作任意{{tr|liquid}}，包括[[{{tr|Lava}}]]的过滤器。这可以用于实现类似“{{tr|lava}}流逃脱”之类的方案。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.2.1|修复了{{tr|Bubble Blocks}}无法被用作{{tr|player}}生成所需的{{tr|houses}}{{tr|walls}}的问题。}}
+{{history|Desktop 1.4.0.1|修复了{{tr|Bubble Block houses}}有时不可靠，{{tr|NPC}} 会搬走的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1147.9|修复了表现为{{tr|solid blocks}}时的碰撞问题。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.895.9|修复了表现为{{tr|solid blocks}}时的碰撞问题。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Bubble}}

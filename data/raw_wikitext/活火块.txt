@@ -1,0 +1,74 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| name = Living Fire Blocks
+| type = Furniture / Block
+| imagealt = [[File:Living Fire Blocks.gif|link=]]
+| auto = 2701
+| id = 2701, 2751–2755
+| idtile = 336, 340–344
+| cargo = no
+}}
+{{float file|[[File:Living Fire Block placement.png|thumb|right|放置状态的{{tr|Living Fire Blocks}}的实例]]}}
+
+'''{{tr|Living Fire Blocks}}'''是一类动态的背景[[{{tr|furniture}}]][[{{tr|blocks}}]]，放置时就像小而具有动画效果的火焰，会发出黯淡的橙色光线。它们在接触时不会造成伤害，可以使用任意[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]挖掘。{{tr|Living Fire Blocks}}有 {{chance|1/50}} 的几率，在[[{{tr|Hardmode}}]]期间，掉落自任意在[[{{tr|Underworld}}]]中被杀死[[{{tr|enemy}}]]（包括[[{{tr|Wall of Flesh}}]]），每次掉落 20–50 个。{{source code ref|v=1.4.3.6|class=Terraria.GameContent.ItemDropRules.Conditions.LivingFlames}}
+
+虽然{{tr|Living Fire Blocks}}可以像普通的前景{{tr|blocks}}一样被放置，但它们实际上位于{{tr|background}}中（与{{tr|furniture}}类似），允许玩家直接在其前方行走。它们可以在水平方向上或竖直方向上互相连接，但是其他普通的前景{{tr|blocks}}不会与它们连上。
+
+普通的{{tr|Living Fire Block}}共有五种其他颜色的变体，并都由普通的{{tr|Living Fire Block}}制作而来。它们在功能上是一致的。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/imageplaced/idtile|imagemode=placed}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Item}}
+! 放置状态
+! [[{{tr|Tile IDs}}]]
+|-
+{{item infobox | auto = 2701 | type = Furniture / Block | tags = hardmode / drop }}
+{{item infobox | auto = 2751 | type = Furniture / Block | tags = hardmode }}
+{{item infobox | auto = 2752 | type = Furniture / Block | tags = hardmode }}
+{{item infobox | auto = 2753 | type = Furniture / Block | tags = hardmode }}
+{{item infobox | auto = 2754 | type = Furniture / Block | tags = hardmode }}
+{{item infobox | auto = 2755 | type = Furniture / Block | tags = hardmode }}
+|}<!--
+-->{{item infobox/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Living Ichor Block/LIKE Living % Fire Block|expectedrows=5}}
+
+== 备注 ==
+* 像[[{{tr|Fireblossom}}]]和[[{{tr|Obsidian}}]]一样，普通{{tr|Living Fire Blocks}}掉入[[{{tr|Lava}}]]不会被摧毁，虽然它只具有{{rare|0}}[[{{tr|rarity}}]]。
+** 然而，其他类型的{{tr|Living Fire Blocks}}则不免疫{{tr|lava}}。
+* 它们不能作为[[{{tr|house}}]]有效的[[{{tr|light sources}}]]或[[{{tr|background walls}}]]使用。
+* 它们的放置行为与[[{{tr|Wooden Beam}}]]类似，不过[[{{tr|Wooden Beam}}]]只能在竖直方向上互相连接，而{{tr|Living Fire Blocks}}也可以在水平方向上相互连接。另外，其他类型的{{tr|blocks}}和{{tr|furniture}}可以被放在{{tr|Wooden Beams}}上，但不能放在{{tr|Living Fire Blocks}}上（[[{{tr|platforms}}]]除外）。[[{{tr|Torch}}]]也不可以放置在{{tr|Living Fire Blocks}}上。
+* {{tr|Living Fire Blocks}}可以放置在被{{tr|lava}}浸没的区域中。
+* 虽然{{tr|Living Fire Blocks}}无法被正常锤击，但依然可以使用 TEdit 之类的世界编辑器得到正常锤击的、半砖形态的、以及斜坡形态的{{tr|Living Fire Blocks}}。
+
+== 小贴士 ==
+* {{tr|Living Fire Blocks}}比[[{{tr|torch}}]]更有用处，因为它们不仅更容易大量得到，而且可以被放在任何地方并且免疫[[{{tr|liquids}}]]。
+* 在{{tr|Underworld}}中召唤[[{{tr|King Slime}}]]是刷取{{tr|Living Fire Blocks}}的好方法。召唤出的{{tr|slimes}}掉落{{tr|Living Fire Blocks}}的几率与其他任何{{tr|enemy}}相同。
+
+== 花絮 ==
+* {{item|Moon Leech Clot|icons=n}}和{{item|Living Ultrabright Fire Block|icons=n|link=}}的{{tr|item sprites}}相同。
+* {{tr|Living Ichor Block}}（的对应英文 Living Ichor Block）不包含单词 “Fire”，这与其他{{tr|Living Fire Blocks}}不同。
+* {{tr|The Living Demon Fire Block}}与[[{{tr|Shroomite Plating}}]]并列具有{{tr|block}}中最长的{{tr|crafting tree}}。
+* [[{{tr|Wall of Flesh}}]]也可以掉落{{tr|Living Fire Blocks}}，几率似乎与普通{{tr|enemy}}相同。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|添加了{{tr|variants}}。|nocat=y}}
+{{history|Desktop 1.2.4.1|不再会被{{tr|lava}}摧毁。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|添加了{{tr|variants}}。（{{icon|xbox one}}）|nocat=y}}
+{{history|Console 1.0.750.0|添加了{{tr|variants}}。（{{icon|ps4}}）|nocat=y}}
+{{history|Console 1.07|{{tr|Introduced}}，不会被{{tr|lava}}摧毁。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，不会被{{tr|lava}}摧毁。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}，不会被{{tr|lava}}摧毁。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Living Fire Blocks}}

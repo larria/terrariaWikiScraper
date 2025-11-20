@@ -1,0 +1,51 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4758	
+| tags = Minion / drop / treasure bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Blade Staff (demo).gif|frame|right|召唤{{tr|Enchanted Daggers}}攻击[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Blade Staff}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Enchanted Dagger}}'''{{tr|minion}}。它会飞向[[{{tr|enemies}}]]并以快速地反复劈砍它们。它具有 25 [[{{tr|armor penetration}}]]。{{tr|Enchanted Daggers}}会围绕{{tr|player}}头部旋转排列，若周围没有{{tr|enemies}}则立刻返回{{tr|player}}位置。{{tr|Blade Staff}}由[[{{tr|Queen Slime}}]]以 {{chance|1/4}} / {{expert|{{chance|1/3}}}} 的几率掉落。
+
+其最佳[[{{tr|modifiers}}]]为'''{{tr|Demonic}}'''、'''{{tr|Deadly}}'''、'''{{tr|Mystic}}'''或'''{{tr|Hurtful}}'''。与大部分{{tr|minions}}不同，{{tr|the Enchanted Dagger}}无法造成[[{{tr|knockback}}]]，所以该{{tr|weapon}}无法获得{{tr|Ruthless modifier}}。由于其较低的{{tr|base damage}}，所有将伤害增加 10% 或更多的{{tr|modifiers}}都会以相同的数值提高其伤害。
+
+== 备注 ==
+* {{tr|The Enchanted Dagger}}击中{{tr|enemy}}时造成 10 {{tr|ticks}}[[{{tr|local invincibility frame}}]]，这意味着其每秒可击中 6 次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+** 实际上，当{{tr|Enchanted Daggers}}攻击时，它们并不能总是与{{tr|enemy}}碰撞，它们真正的命中频率接近每秒 4 次。
+* {{tr|The Enchanted Daggers}}最远可瞄准距离 50 格的目标，且当距离{{tr|player}}超过 56.25 格时会自动返回{{tr|player}}身旁。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_169_Smolstars}}
+* {{tr|The Enchanted Dagger}}仅能从[[{{tr|whip}}]]的{{tr|summon tag damage}}加成中获得 75% 的{{tr|damage}}加成。
+
+== 小贴士 ==
+* {{tr|The Enchanted Daggers}}从增加{{tr|minion damage}}的{{tr|whips}}处的收益极高，由于其低{{tr|base damage}}和高攻击频率，其中的大部分都能使其{{DPS}}上升两倍以上。
+** 例如，{{tr|The Enchanted Daggers}}和[[{{tr|Dark Harvest}}]]配合极佳，因为其{{tr|Dark energy}}机制可对多个目标造成极高的 DPS。不过，这也意味着它和[[{{tr|Firecracker}}]]配合不佳。
+** 然而，其较低的{{tr|base damage}}使其在搭配百分比伤害加成时收益不佳。
+* {{tr|Blade Staff}}的 25 点{{tr|armor penetration}}使其在{{tr|hardmode}}后期仍能发挥作用。但由于其{{tr|base damage}}较低，使其在对于{{tr|defenses}}超过 25 的{{tr|enemy}}时表现不佳。这可通过[[{{tr|Ichor (debuff)}}|{{tr|Ichor}}]][[{{tr|debuff}}]]或者当有[[{{tr|Sharpened}}]]{{tr|buff}}时手持{{tr|melee weapon}}来弥补。
+* 和[[{{tr|Sanguine Staff}}]]与[[{{tr|Terraprisma}}]]一样，{{tr|the Blade Staff}}的精准移动、追踪、和固定的闲置位置使得它是对抗高速 {{tr|bosses}} 和对群控制的理想选择。
+* 虽然{{tr|Blade Staff}}没有基础{{tr|knockback}}，但是它依然能够依靠诸如[[{{tr|Papyrus Scarab}}]]的[[{{tr|accessories}}]]或者类似[[{{tr|Well Fed}}]]的[[{{tr|buffs}}]]来造成{{tr|knockback}}。这能显著提升其应对可被的{{tr|knockback}}{{tr|enemy}}的能力，几把{{tr|Enchanted Dagger}}都能使敌人定在原地。
+* 由于其快速的攻击频率，它是击杀[[{{tr|Dungeon Guardian}}]]的高效的{{tr|minion}}。
+* {{tr|The Blade Staff}}对于战士也是不错的选择，他们可以通过{{tr|Sharpened}}和[[{{tr|Flask of Ichor}}]]来增加伤害输出。
+
+== 花絮 ==
+* {{tr|Blade Staff}}的内部名称为 <code>Smolstar</code>。
+* 与[[{{tr|Stardust Dragon Staff}}]]、[[{{tr|Desert Tiger Staff}}]]、和[[{{tr|Raven Staff}}]]一起，{{tr|Blade Staff}}是四个{{tr|buff tooltip}}不是“&lt;{{tr|minion}}的名称&gt;将为你而战”的{{tr|summon weapons}}之一。其{{tr|buff tooltip}}为“''{{getBuffInfo|271|tooltip}}''”。
+** “{{wikipedia|Death by a thousand cuts|Death by a thousand cuts（千刀万剐）}}”，即“凌迟”，是在约公元 900 年时在中国使用的刑罚方式，它在 1905 年被禁止。
+* {{tr|Blade Staff}}悬停在{{tr|player}}头顶的行为可能参考了{{wikipedia|Damocles}}的故事，Damocles是{{wikipedia|Dionysius I of Syracuse|Dionysius I}}的朝臣，他被允许拥有国王的权威和财富一天。然而，这是以在他的宝座上悬挂一把剑为代价的，象征着当权者所面临的迫在眉睫、无处不在的危险。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在只会从{{tr|whip}}的标记获得 75% 伤害奖励。}}
+{{history|Desktop 1.4.1|不再由[[{{tr|Enchanted Sword (NPC)}}|{{tr|Enchanted Swords}}]]掉落，现在由[[{{tr|Queen Slime}}]]掉落。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Summon weapons}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Blade Staff}}

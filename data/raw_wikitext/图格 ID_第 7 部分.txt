@@ -1,0 +1,490 @@
+{|class="terraria ajaxHide"
+|图格 ID: {{#dpl:category=数据 ID|titleregexp=图格 ID/第 . 部分$|skipthispage=no|ordermethod=titlewithoutnamespace|format=²{dotlist/start¦inline=y}²,²{dotlist/item¦[[%TITLE%¦²{#replace:%TITLE%¦图格 ID/¦}²]]}²,,²{dotlist/end}²}}
+|}
+{| class="terraria sortable border"
+! data-sort-type="number" | ID !! data-sort-type="number" | 子 ID<ref>对于物品，即其 <code>placeStyle</code> 属性。</ref> !! 图片 !! 物品 / 实体 !! 内部名称
+|-
+| 470 || 0 || [[File:Mannequin (placed).png|link=]] || {{item|Mannequin}} || rowspan=2 | <code>DisplayDoll</code>
+|-
+| 470 || 2 || [[File:Womannequin (placed).png|link=]] || {{item|Womannequin}}
+|-
+| 471 || 0 || [[File:Weapon Rack (placed).png|link=]] || {{item|Weapon Rack}} || <code>WeaponsRack2</code>
+|-
+| 472 || 0 || [[File:Iron Brick (placed).png|link=]] || {{item|Iron Brick}} || <code>IronBrick</code>
+|-
+| 473 || 0 || [[File:Lead Brick (placed).png|link=]] || {{item|Lead Brick}} || <code>LeadBrick</code>
+|-
+| 474 || 0 || [[File:Lesion Block (placed).png|link=]] || {{item|Lesion Block}} || <code>LesionBlock</code>
+|-
+| 475 || 0 || [[File:Hat Rack (placed).png|link=]] || {{item|Hat Rack}} || <code>HatRack</code>
+|-
+| 476 || 0 || [[File:Golf Cup (placed).png|link=]] || {{item|Golf Cup}} || <code>GolfHole</code>
+|-
+| 477 || 0 || [[File:Mowed grass.png|link=]] || {{item|Mowed grass}} || <code>GolfGrass</code>
+|-
+| 478 || 0 || [[File:Crimstone Brick (placed).png|link=]] || {{item|Crimstone Brick}} || <code>CrimstoneBrick</code>
+|-
+| 479 || 0 || [[File:Smooth Sandstone (placed).png|link=]] || {{item|Smooth Sandstone}} || <code>SmoothSandstone</code>
+|-
+| 480 || 0 || [[File:Blood Moon Monolith (placed).png|link=]] [[File:Blood Moon Monolith (placed) (active).gif|link=]] || {{item|Blood Moon Monolith}} || <code>BloodMoonMonolith</code>
+|-
+| 481 || 0 || [[File:Cracked Blue Brick (placed).png|link=]] || {{item|Cracked Blue Brick}} || <code>CrackedBlueDungeonBrick</code>
+|-
+| 482 || 0 || [[File:Cracked Green Brick (placed).png|link=]] || {{item|Cracked Green Brick}} || <code>CrackedGreenDungeonBrick</code>
+|-
+| 483 || 0 || [[File:Cracked Pink Brick (placed).png|link=]] || {{item|Cracked Pink Brick}} || <code>CrackedPinkDungeonBrick</code>
+|-
+| 484 || 0 || [[File:Rolling Cactus.png|link=]] || {{item|Rolling Cactus}} || <code>RollingCactus</code>
+|-
+| 485 || 0 || [[File:Antlion Eggs.gif|link=]] || {{item|Antlion Eggs|ext=gif}} || <code>AntlionLarva</code>
+|-
+| 486 || 0 || [[File:Drum Set (placed).png|link=]] || {{item|Drum Set}} || <code>DrumSet</code>
+|-
+| 487 || 0 || [[File:Picnic Table.png|link=]] || {{item|Picnic Table}} || rowspan=2 | <code>PicnicTable</code>
+|-
+| 487 || 1 || [[File:Fancy Picnic Table.png|link=]] || {{item|Fancy Picnic Table}}
+|-
+| 488 || 0 || [[File:Fallen Log.png|link=]] || {{item|Fallen Log}} || <code>FallenLog</code>
+|-
+| 489 || 0 || [[File:Pin Wheel (placed).gif|link=]] || {{item|Pin Wheel}} || <code>PinWheel</code>
+|-
+| 490 || 0 || [[File:Weather Vane (placed).gif|link=]] || {{item|Weather Vane}} || <code>WeatherVane</code>
+|-
+| 491 || 0 || [[File:Void Vault (placed).gif|link=]] || {{item|Void Vault}} || <code>VoidVault</code>
+|-
+| 492 || 0 || [[File:Mowed Hallowed grass.png|link=]] || {{item|Mowed Hallowed grass}} || <code>GolfGrassHallowed</code>
+|-
+| 493 || 0 || [[File:White Pin Flag.png|link=]] || {{item|White Pin Flag|link={{tr|Pin Flags|link=y}}}} || rowspan=6 | <code>GolfCupFlag</code>
+|-
+| 493 || 1 || [[File:Red Pin Flag.png|link=]] || {{item|Red Pin Flag|link={{tr|Pin Flags|link=y}}}}
+|-
+| 493 || 2 || [[File:Green Pin Flag.png|link=]] || {{item|Green Pin Flag|link={{tr|Pin Flags|link=y}}}}
+|-
+| 493 || 3 || [[File:Blue Pin Flag.png|link=]] || {{item|Blue Pin Flag|link={{tr|Pin Flags|link=y}}}}
+|-
+| 493 || 4 || [[File:Yellow Pin Flag.png|link=]] || {{item|Yellow Pin Flag|link={{tr|Pin Flags|link=y}}}}
+|-
+| 493 || 5 || [[File:Purple Pin Flag.png|link=]] || {{item|Purple Pin Flag|link={{tr|Pin Flags|link=y}}}}
+|-
+| 494 || 0 || [[File:Golf Tee (placed).png|link=]] || {{item|Golf Tee}} || <code>GolfTee</code>
+|-
+| 495 || 0 || [[File:Shell Pile (placed).png|link=]] || {{item|Shell Pile}} || <code>ShellPile</code>
+|-
+| 496 || 0 || [[File:Anti-Portal Block (placed).png|link=]] || {{item|Anti-Portal Block}} || <code>AntiPortalBlock</code>
+|-
+| 497 || 0 || [[File:Ebonwood Toilet.png|link=]] || {{item|Ebonwood Toilet}} || rowspan=40 | <code>Toilets</code>
+|-
+| 497 || 1 || [[File:Rich Mahogany Toilet.png|link=]] || {{item|Rich Mahogany Toilet}}
+|-
+| 497 || 2 || [[File:Pearlwood Toilet.png|link=]] || {{item|Pearlwood Toilet}}
+|-
+| 497 || 3 || [[File:Living Wood Toilet.png|link=]] || {{item|Living Wood Toilet}}
+|-
+| 497 || 4 || [[File:Cactus Toilet.png|link=]] || {{item|Cactus Toilet}}
+|-
+| 497 || 5 || [[File:Bone Toilet.png|link=]] || {{item|Bone Toilet}}
+|-
+| 497 || 6 || [[File:Flesh Toilet.png|link=]] || {{item|Flesh Toilet}}
+|-
+| 497 || 7 || [[File:Mushroom Toilet.png|link=]] || {{item|Mushroom Toilet}}
+|-
+| 497 || 8 || [[File:Skyware Toilet.png|link=]] || {{item|Skyware Toilet}}
+|-
+| 497 || 9 || [[File:Shadewood Toilet.png|link=]] || {{item|Shadewood Toilet}}
+|-
+| 497 || 10 || [[File:Lihzahrd Toilet.png|link=]] || {{item|Lihzahrd Toilet}}
+|-
+| 497 || 11 || [[File:Blue Dungeon Toilet.png|link=]] || {{item|Blue Dungeon Toilet}}
+|-
+| 497 || 12 || [[File:Green Dungeon Toilet.png|link=]] || {{item|Green Dungeon Toilet}}
+|-
+| 497 || 13 || [[File:Pink Dungeon Toilet.png|link=]] || {{item|Pink Dungeon Toilet}}
+|-
+| 497 || 14 || [[File:Obsidian Toilet.png|link=]] || {{item|Obsidian Toilet}}
+|-
+| 497 || 15 || [[File:Frozen Toilet.png|link=]] || {{item|Frozen Toilet}}
+|-
+| 497 || 16 || [[File:Glass Toilet.png|link=]] || {{item|Glass Toilet}}
+|-
+| 497 || 17 || [[File:Honey Toilet.png|link=]] || {{item|Honey Toilet}}
+|-
+| 497 || 18 || [[File:Steampunk Toilet.png|link=]] || {{item|Steampunk Toilet}}
+|-
+| 497 || 19 || [[File:Pumpkin Toilet.png|link=]] || {{item|Pumpkin Toilet}}
+|-
+| 497 || 20 || [[File:Spooky Toilet.png|link=]] || {{item|Spooky Toilet}}
+|-
+| 497 || 21 || [[File:Dynasty Toilet.png|link=]] || {{item|Dynasty Toilet}}
+|-
+| 497 || 22 || [[File:Palm Wood Toilet.png|link=]] || {{item|Palm Wood Toilet}}
+|-
+| 497 || 23 || [[File:Boreal Wood Toilet.png|link=]] || {{item|Boreal Wood Toilet}}
+|-
+| 497 || 24 || [[File:Slime Toilet.png|link=]] || {{item|Slime Toilet}}
+|-
+| 497 || 25 || [[File:Martian Toilet.png|link=]] || {{item|Martian Toilet}}
+|-
+| 497 || 26 || [[File:Granite Toilet.png|link=]] || {{item|Granite Toilet}}
+|-
+| 497 || 27 || [[File:Marble Toilet.png|link=]] || {{item|Marble Toilet}}
+|-
+| 497 || 28 || [[File:Crystal Toilet.png|link=]] || {{item|Crystal Toilet}}
+|-
+| 497 || 29 || [[File:Spider Toilet.png|link=]] || {{item|Spider Toilet}}
+|-
+| 497 || 30 || [[File:Lesion Toilet.png|link=]] || {{item|Lesion Toilet}}
+|-
+| 497 || 31 || [[File:Diamond Toilet.png|link=]] || {{item|Diamond Toilet}}
+|-
+| 497 || 32 || [[File:Meteor Toilet.png|link=]] || {{item|Meteor Toilet}}
+|-
+| 497 || 33 || [[File:Solar Toilet.png|link=]] || {{item|Solar Toilet}}
+|-
+| 497 || 34 || [[File:Vortex Toilet.png|link=]] || {{item|Vortex Toilet}}
+|-
+| 497 || 35 || [[File:Nebula Toilet.png|link=]] || {{item|Nebula Toilet}}
+|-
+| 497 || 36 || [[File:Stardust Toilet.png|link=]] || {{item|Stardust Toilet}}
+|-
+| 497 || 37 || [[File:Sandstone Toilet.png|link=]] || {{item|Sandstone Toilet}}
+|-
+| 497 || 38 || [[File:Bamboo Toilet.png|link=]] || {{item|Bamboo Toilet}}
+|-
+| 497 || 39 ||[[File:Terra Toilet.png|link=]] ||  {{item|Terra Toilet}}
+|-
+| 498 || 0 || [[File:Spider Nest Block (placed).png|link=]] || {{item|Spider Nest Block}} || <code>Spider</code>
+|-
+| 499 || 0 || [[File:Decay Chamber (placed).gif|link=]] || {{item|Decay Chamber}} || <code>LesionStation</code>
+|-
+| 500 || 0 || [[File:Solar Brick (placed).png|link=]] || {{item|Solar Brick}} || <code>SolarBrick</code>
+|-
+| 501 || 0 || [[File:Vortex Brick (placed).png|link=]] || {{item|Vortex Brick}} || <code>VortexBrick</code>
+|-
+| 502 || 0 || [[File:Nebula Brick (placed).png|link=]] || {{item|Nebula Brick}} || <code>NebulaBrick</code>
+|-
+| 503 || 0 || [[File:Stardust Brick (placed).png|link=]] || {{item|Stardust Brick}} || <code>StardustBrick</code>
+|-
+| 504 || 0 || [[File:Mystic Snake Coil.png|link=]] || {{item|Snake Charmer's Flute|Mystic Snake Coil}} || <code>MysticSnakeRope</code>
+|-
+| 505 || 0 || [[File:Gold Fish Bowl (placed).gif|link=]] || {{item|Gold Fish Bowl|link={{tr|Fish Bowls|link=y}}}} || <code>GoldGoldfishBowl</code>
+|-
+| 506 || 0 || [[File:Bast Statue (placed).png|link=]] || {{item|Bast Statue}} || <code>CatBast</code>
+|-
+| 507 || 0 || [[File:Gold Starry Block (placed).gif|link=]] || {{item|Gold Starry Block}} || <code>GoldStarryGlassBlock</code>
+|-
+| 508 || 0 || [[File:Blue Starry Block (placed).gif|link=]] || {{item|Blue Starry Block}} || <code>BlueStarryGlassBlock</code>
+|-
+| 509 || 0 || [[File:Void Monolith (placed).png|link=]] [[File:Void Monolith (placed) (active).gif|link=]] || {{item|Void Monolith}} || <code>VoidMonolith</code>
+|-
+| 510 || 0 || [[File:Arrow Sign.png|link=]] || {{item|Arrow Sign}} || <code>ArrowSign</code>
+|-
+| 511 || 0 || [[File:Painted Arrow Sign.png|link=]] || {{item|Painted Arrow Sign}} || <code>PaintedArrowSign</code>
+|-
+| 512 || 0 || [[File:Moss Bricks Green.png|link=]] || {{item|Green Moss|note=（{{tr|Gray Brick}}上）}} || <code>GreenMossBrick</code>
+|-
+| 513 || 0 || [[File:Moss Bricks Brown.png|link=]] || {{item|Brown Moss|note=（{{tr|Gray Brick}}上）}} || <code>BrownMossBrick</code>
+|-
+| 514 || 0 || [[File:Moss Bricks Red.png|link=]] || {{item|Red Moss|note=（{{tr|Gray Brick}}上）}} || <code>RedMossBrick</code>
+|-
+| 515 || 0 || [[File:Moss Bricks Blue.png|link=]] || {{item|Blue Moss|note=（{{tr|Gray Brick}}上）}} || <code>BlueMossBrick</code>
+|-
+| 516 || 0 || [[File:Moss Bricks Purple.png|link=]] || {{item|Purple Moss|note=（{{tr|Gray Brick}}上）}} || <code>PurpleMossBrick</code>
+|-
+| 517 || 0 || [[File:Moss Bricks Lava.png|link=]] || {{item|Lava Moss|note=（{{tr|Gray Brick}}上）}} || <code>LavaMossBrick</code>
+|-
+| 518 || 0 || [[File:All lilypad variants.png|link=]] || [[{{tr|Lily pads}}]] || <code>LilyPad</code>
+|-
+| 519 || 0 || [[File:Cattail.png|link=]] || [[{{tr|Cattail}}]] || <code>Cattail</code>
+|-
+| 520 || 0 || [[File:Plate (placed).png|link=]] || {{item|Plate}} || <code>FoodPlatter</code>
+|-
+| 521 || 0 || [[File:Black Dragonfly Jar.png|link=]] || {{item|Black Dragonfly Jar}} || <code>BlackDragonflyJar</code>
+|-
+| 522 || 0 || [[File:Blue Dragonfly Jar.png|link=]] || {{item|Blue Dragonfly Jar}} || <code>BlueDragonflyJar</code>
+|-
+| 523 || 0 || [[File:Green Dragonfly Jar.png|link=]] || {{item|Green Dragonfly Jar}} || <code>GreenDragonflyJar</code>
+|-
+| 524 || 0 || [[File:Orange Dragonfly Jar.png|link=]] || {{item|Orange Dragonfly Jar}} || <code>OrangeDragonflyJar</code>
+|-
+| 525 || 0 || [[File:Red Dragonfly Jar.png|link=]] || {{item|Red Dragonfly Jar}} || <code>RedDragonflyJar</code>
+|-
+| 526 || 0 || [[File:Yellow Dragonfly Jar.png|link=]] || {{item|Yellow Dragonfly Jar}} || <code>YellowDragonflyJar</code>
+|-
+| 527 || 0 || [[File:Gold Dragonfly Jar.png|link=]] || {{item|Gold Dragonfly Jar}} || <code>GoldDragonflyJar</code>
+|-
+| 528 || 0 || [[File:Mushroom vines.png|link=]] || [[{{tr|Plants|link=y}}#{{tr|Vines}}|{{tr|Mushroom Vine}}]] || <code>MushroomVines</code>
+|-
+| 529 || 0 || [[File:Sea Oats.png|link=]] || [[{{tr|Sea Oats}}]] || <code>SeaOats</code>
+|-
+| 530 || 0 || [[File:Oasis Plants.png|link=]] || [[{{tr|Oasis Plants}}]] || <code>OasisPlants</code>
+|-
+| 531 || 0 || [[File:Boulder Statue (placed).png|link=]] || {{item|Boulder Statue}} || <code>BoulderStatue</code>
+|-
+| 532 || 0 || [[File:Maggot Cage.png|link=]] || {{item|Maggot Cage}} || <code>MaggotCage</code>
+|-
+| 533 || 0 || [[File:Rat Cage.png|link=]] || {{item|Rat Cage}} || <code>RatCage</code>
+|-
+| 534 || 0 || [[File:Moss Krypton.png|link=]] || {{item|Krypton Moss|note=（{{tr|Stone Block}}上）}} || <code>KryptonMoss</code>
+|-
+| 535 || 0 || [[File:Moss Bricks Krypton.png|link=]] || {{item|Krypton Moss|note=（{{tr|Gray Brick}}上）}} || <code>KryptonMossBrick</code>
+|-
+| 536 || 0 || [[File:Moss Xenon.png|link=]] || {{item|Xenon Moss|note=（{{tr|Stone Block}}上）}} || <code>XenonMoss</code>
+|-
+| 537 || 0 || [[File:Moss Bricks Xenon.png|link=]] || {{item|Xenon Moss|note=（{{tr|Gray Brick}}上）}} || <code>XenonMossBrick</code>
+|-
+| 538 || 0 || [[File:Ladybug Cage.png|link=]] || {{item|Ladybug Cage}} || <code>LadybugCage</code>
+|-
+| 539 || 0 || [[File:Moss Argon.png|link=]] || {{item|Argon Moss|note=（{{tr|Stone Block}}上）}} || <code>ArgonMoss</code>
+|-
+| 540 || 0 || [[File:Moss Bricks Argon.png|link=]] || {{item|Argon Moss|note=（{{tr|Gray Brick}}上）}} || <code>ArgonMossBrick</code>
+|-
+| 541 || 0 || [[File:Echo Block (placed).png|link=]] || {{item|Echo Block}} || <code>EchoBlock</code>
+|-
+| 542 || 0 || [[File:Owl Cage.png|link=]] || {{item|Owl Cage}} || <code>OwlCage</code>
+|-
+| 543 || 0 || [[File:Pupfish Bowl.png|link=]] || {{item|Pupfish Bowl}} || <code>PupfishBowl</code>
+|-
+| 544 || 0 || [[File:Gold Ladybug Cage.png|link=]] || {{item|Gold Ladybug Cage}} || <code>GoldLadybugCage</code>
+|-
+| 545 || 0 || [[File:Lawn Flamingo (placed).png|link=]] || {{item|Lawn Flamingo}} || <code>LawnFlamingo</code>
+|-
+| 546 || 0 || [[File:Grate (placed).png|link=]] || {{item|Grate}} || <code>Grate</code>
+|-
+| 547 || 0 || [[File:Potted Forest Cedar.png|link=]] || {{item|Potted Forest Cedar|link={{tr|Potted Trees|link=y}}}} || rowspan=5 | <code>PottedPlants1</code>
+|-
+| 547 || 1 || [[File:Potted Jungle Cedar.png|link=]] || {{item|Potted Jungle Cedar|link={{tr|Potted Trees|link=y}}}}
+|-
+| 547 || 2 || [[File:Potted Hallow Cedar.png|link=]] || {{item|Potted Hallow Cedar|link={{tr|Potted Trees|link=y}}}}
+|-
+| 547 || 3 || [[File:Potted Forest Tree.png|link=]] || {{item|Potted Forest Tree|link={{tr|Potted Trees|link=y}}}}
+|-
+| 547 || 4 || [[File:Potted Jungle Tree.png|link=]] || {{item|Potted Jungle Tree|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 0 || [[File:Potted Hallow Tree.png|link=]] || {{item|Potted Hallow Tree|link={{tr|Potted Trees|link=y}}}} || rowspan=9 | <code>PottedPlants2</code>
+|-
+| 548 || 1 || [[File:Potted Forest Palm.png|link=]] || {{item|Potted Forest Palm|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 2 || [[File:Potted Jungle Palm.png|link=]] || {{item|Potted Jungle Palm|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 3 || [[File:Potted Hallow Palm.png|link=]] || {{item|Potted Hallow Palm|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 4 || [[File:Potted Forest Bamboo.png|link=]] || {{item|Potted Forest Bamboo|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 5 || [[File:Potted Jungle Bamboo.png|link=]] ||  {{item|Potted Jungle Bamboo|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 6 || [[File:Potted Hallow Bamboo.png|link=]] || {{item|Potted Hallow Bamboo|link={{tr|Potted Trees|link=y}}}}
+|-
+| 548 || 7 || [[File:Potted Magma Palm (placed).png|link=]] || {{item|Potted Magma Palm|link={{tr|Potted Lava Plants|link=y}}}}
+|-
+| 548 || 8 || [[File:Potted Brimstone Bush (placed).png|link=]] || {{item|Potted Brimstone Bush|link={{tr|Potted Lava Plants|link=y}}}}
+|-
+| 549 || 0 || [[File:Seaweeds.png|link=]] || [[{{tr|Seaweeds}}]] || <code>Seaweed</code>
+|-
+| 550 || 0 || [[File:Turtle Cage.png|link=]] || {{item|Turtle Cage}} || <code>TurtleCage</code>
+|-
+| 551 || 0 || [[File:Jungle Turtle Cage.png|link=]] || {{item|Jungle Turtle Cage}} || <code>TurtleJungleCage</code>
+|-
+| 552 || 0 || [[File:Sandcastles.png|link=]] || {{item|Sandcastle Bucket|Sandcastles}} || <code>Sandcastles</code>
+|-
+| 553 || 0 || [[File:Grebe Cage.png|link=]] || {{item|Grebe Cage}} || <code>GrebeCage</code>
+|-
+| 554 || 0 || [[File:Seagull Cage.png|link=]] || {{item|Seagull Cage}} || <code>SeagullCage</code>
+|-
+| 555 || 0 || [[File:Water Strider Cage.png|link=]] || {{item|Water Strider Cage}} || <code>WaterStriderCage</code>
+|-
+| 556 || 0 || [[File:Gold Water Strider Cage.png|link=]] || {{item|Gold Water Strider Cage}} || <code>GoldWaterStriderCage</code>
+|-
+| 557 || 0 || [[File:Grate (closed).png|link=]] || {{item|Grate}}（关）|| <code>GrateClosed</code>
+|-
+| 558 || 0 || [[File:Seahorse Cage.png|link=]] || {{item|Seahorse Cage}} || <code>SeahorseCage</code>
+|-
+| 559 || 0 || [[File:Gold Seahorse Cage.png|link=]] || {{item|Gold Seahorse Cage}} || <code>GoldSeahorseCage</code>
+|-
+| 560 || 0 || [[File:Bronze Golf Trophy (placed).png|link=]] || {{item|Bronze Golf Trophy}} || rowspan=3 | <code>GolfTrophies</code>
+|-
+| 560 || 1 || [[File:Silver Golf Trophy (placed).png|link=]] || {{item|Silver Golf Trophy}}
+|-
+| 560 || 2 || [[File:Gold Golf Trophy (placed).png|link=]] || {{item|Gold Golf Trophy}}
+|-
+| 561 || 0 || [[File:Marble Column (placed).png|link=]] || {{item|Marble Column}} || <code>MarbleColumn</code>
+|-
+| 562 || 0 || [[File:Bamboo (placed).png|link=]] || {{item|Bamboo}} || <code>BambooBlock</code>
+|-
+| 563 || 0 || [[File:Large Bamboo (placed).png|link=]] || {{item|Large Bamboo}} || <code>LargeBambooBlock</code>
+|-
+| 564 || 0 || [[File:Plasma Lamp (placed).gif|link=]] || {{item|Plasma Lamp}} || <code>PlasmaLamp</code>
+|-
+| 565 || 0 || [[File:Fog Machine (placed).gif|link=]] || {{item|Fog Machine}} || <code>FogMachine</code>
+|-
+| 566 || 0 || [[File:Amber Stone Block.png|link=]] || {{item|Amber Stone Block}} || <code>AmberStoneBlock</code> <!-- Needs a placed version -->
+|-
+| 567 || 0 || [[File:Garden Gnome (placed).png|link=]] || {{item|Garden Gnome}} || <code>GardenGnome</code>
+|-
+| 568 || 0 || [[File:Pink Fairy Jar.png|link=]] || {{item|Pink Fairy Jar}} || <code>PinkFairyJar</code>
+|-
+| 569 || 0 || [[File:Green Fairy Jar.png|link=]] || {{item|Green Fairy Jar}} || <code>GreenFairyJar</code>
+|-
+| 570 || 0 || [[File:Blue Fairy Jar.png|link=]] || {{item|Blue Fairy Jar}} || <code>BlueFairyJar</code>
+|-
+| 571 || 0 || [[File:Tree (Bamboo).png|link=]] || [[{{tr|Bamboo Tree}}]] || <code>Bamboo</code>
+|-
+| 572 || 0 || [[File:Soul of Light in a Bottle.png|link=]] || {{item|Soul of Light in a Bottle}} || rowspan=6 | <code>SoulBottles</code>
+|-
+| 572 || 1 || [[File:Soul of Night in a Bottle.png|link=]] || {{item|Soul of Night in a Bottle}}
+|-
+| 572 || 2 || [[File:Soul of Flight in a Bottle.png|link=]] || {{item|Soul of Flight in a Bottle}}
+|-
+| 572 || 3 || [[File:Soul of Sight in a Bottle.png|link=]] || {{item|Soul of Sight in a Bottle}}
+|-
+| 572 || 4 || [[File:Soul of Might in a Bottle.png|link=]] || {{item|Soul of Might in a Bottle}}
+|-
+| 572 || 5 || [[File:Soul of Fright in a Bottle.png|link=]] || {{item|Soul of Fright in a Bottle}}
+|-
+| 573 || 0 || [[File:Tattered Wood Sign (placed).png|link=]] || {{item|Tattered Wood Sign}} || <code>TatteredWoodSign</code>
+|-
+| 574 || 0 || [[File:Boreal Beam (placed).png|link=]] || {{item|Boreal Beam}} || <code>BorealBeam</code>
+|-
+| 575 || 0 || [[File:Rich Mahogany Beam (placed).png|link=]] || {{item|Rich Mahogany Beam}} || <code>RichMahoganyBeam</code>
+|-
+| 576 || 0 || [[File:Granite Column (placed).png|link=]] || {{item|Granite Column}} || <code>GraniteColumn</code>
+|-
+| 577 || 0 || [[File:Sandstone Column (placed).png|link=]] || {{item|Sandstone Column}} || <code>SandstoneColumn</code>
+|-
+| 578 || 0 || [[File:Mushroom Beam (placed).png|link=]] || {{item|Mushroom Beam}} || <code>MushroomBeam</code>
+|-
+| 579 || 0 || [[File:Rock Golem Head (placed).gif|link=]] || {{item|Rock Golem Head}} || <code>RockGolemHead</code>
+|-
+| 580 || 0 || [[File:Hell Butterfly Jar.png|link=]] || {{item|Hell Butterfly Jar}} || <code>HellButterflyJar</code>
+|-
+| 581 || 0 || [[File:Lavafly in a Bottle.png|link=]] || {{item|Lavafly in a Bottle}} || <code>LavaflyinaBottle</code>
+|-
+| 582 || 0 || [[File:Magma Snail Cage.png|link=]] || {{item|Magma Snail Cage}} || <code>MagmaSnailCage</code>
+|-
+| 583 || 0 || [[File:Tree (Topaz).png|link=]] || [[{{tr|Topaz Tree}}]] || <code>TreeTopaz</code>
+|-
+| 584 || 0 || [[File:Tree (Amethyst).png|link=]] || [[{{tr|Amethyst Tree}}]] || <code>TreeAmethyst</code>
+|-
+| 585 || 0 || [[File:Tree (Sapphire).png|link=]] || [[{{tr|Sapphire Tree}}]] || <code>TreeSapphire</code>
+|-
+| 586 || 0 || [[File:Tree (Emerald).png|link=]] || [[{{tr|Emerald Tree}}]] || <code>TreeEmerald</code>
+|-
+| 587 || 0 || [[File:Tree (Ruby).png|link=]] || [[{{tr|Ruby Tree}}]] || <code>TreeRuby</code>
+|-
+| 588 || 0 || [[File:Tree (Diamond).png|link=]] || [[{{tr|Diamond Tree}}]] || <code>TreeDiamond</code>
+|-
+| 589 || 0 || [[File:Tree (Amber).png|link=]] || [[{{tr|Amber Tree}}]] || <code>TreeAmber</code>
+|-
+| 590 || 0 || [[File:Gem Saplings.png|link=]] || [[{{tr|Gemcorns}}|{{tr|Gem Saplings}}]] || <code>GemSaplings</code>
+|-
+| 591 || 0 || [[File:Hanging Pot (placed).png|link=]] || {{item|Hanging Pot}} || rowspan=9 | <code>PotsSuspended</code>
+|-
+| 591 || 1 || [[File:Tiles 591 1.png|link=]] || {{item|Hanging Daybloom}}
+|-
+| 591 || 2 || [[File:Tiles 591 2.png|link=]] || {{item|Hanging Moonglow}}
+|-
+| 591 || 3 || [[File:Tiles 591 3.png|link=]] || {{item|Hanging Waterleaf}}
+|-
+| 591 || 4 || [[File:Tiles 591 4.png|link=]] || {{item|Hanging Shiverthorn}}
+|-
+| 591 || 5 || [[File:Tiles 591 5.png|link=]] || {{item|Hanging Blinkroot}}
+|-
+| 591 || 6 || [[File:Tiles 591 6.png|link=]] || {{item|Hanging Corrupt Deathweed}}
+|-
+| 591 || 7 || [[File:Tiles 591 7.png|link=]] || {{item|Hanging Crimson Deathweed}}
+|-
+| 591 || 8 || [[File:Tiles 591 8.png|link=]] || {{item|Hanging Fireblossom}}
+|-
+| 592 || 0 || [[File:Hanging Brazier (placed).gif|link=]] || {{item|Hanging Brazier}} || <code>BrazierSuspended</code>
+|-
+| 593 || 0 || [[File:Mini Volcano (placed).gif|link=]] ||{{item|Mini Volcano}} || <code>VolcanoSmall</code>
+|-
+| 594 || 0 || [[File:Large Volcano (placed).gif|link=]] ||{{item|Large Volcano}} || <code>VolcanoLarge</code>
+|-
+| 595 || 0 || [[File:Sakura Sapling (placed).png|link=]] || {{item|Sakura Sapling}} || <code>VanityTreeSakuraSaplings</code>
+|-
+| 596 || 0 || [[File:Tree (Sakura).png|link=]] || [[{{tr|Sakura Tree}}]] || <code>VanityTreeSakura</code>
+|-
+| 597 || 0 || [[File:Forest Pylon (placed).png|link=]] || {{item|Forest Pylon}} || rowspan=9 | <code>TeleportationPylon</code>
+|-
+| 597 || 1 || [[File:Jungle  Pylon (placed).png|link=]] || {{item|Jungle Pylon}}
+|-
+| 597 || 2 || [[File:Hallow Pylon (placed).png|link=]] || {{item|Hallow Pylon}}
+|-
+| 597 || 3 || [[File:Cavern Pylon (placed).png|link=]] || {{item|Cavern Pylon}}
+|-
+| 597 || 4 || [[File:Ocean Pylon (placed).png|link=]] || {{item|Ocean Pylon}}
+|-
+| 597 || 5 || [[File:Desert Pylon (placed).png|link=]] || {{item|Desert Pylon}}
+|-
+| 597 || 6 || [[File:Snow Pylon (placed).png|link=]] || {{item|Snow Pylon}}
+|-
+| 597 || 7 || [[File:Mushroom Pylon (placed).png|link=]] || {{item|Mushroom Pylon}}
+|-
+| 597 || 8 || [[File:Universal Pylon (placed).png|link=]] || {{item|Universal Pylon}}
+|-
+| 598 || 0 || [[File:Lava Serpent Bowl.png|link=]] || {{item|Lava Serpent Bowl}} || <code>LavafishBowl</code>
+|-
+| 599 || 0 || [[File:Amethyst Bunny Cage.png|link=]] || {{item|Amethyst Bunny Cage}} || <code>AmethystBunnyCage</code>
+|-
+| 600 || 0 || [[File:Topaz Bunny Cage.png|link=]] || {{item|Topaz Bunny Cage}} || <code>TopazBunnyCage</code>
+|-
+| 601 || 0 || [[File:Sapphire Bunny Cage.png|link=]] || {{item|Sapphire Bunny Cage}} || <code>SapphireBunnyCage</code>
+|-
+| 602 || 0 || [[File:Emerald Bunny Cage.png|link=]] || {{item|Emerald Bunny Cage}} || <code>EmeraldBunnyCage</code>
+|-
+| 603 || 0 || [[File:Ruby Bunny Cage.png|link=]] || {{item|Ruby Bunny Cage}} || <code>RubyBunnyCage</code>
+|-
+| 604 || 0 || [[File:Diamond Bunny Cage.png|link=]] || {{item|Diamond Bunny Cage}} || <code>DiamondBunnyCage</code>
+|-
+| 605 || 0 || [[File:Amber Bunny Cage.png|link=]] || {{item|Amber Bunny Cage}} || <code>AmberBunnyCage</code>
+|-
+| 606 || 0 || [[File:Amethyst Squirrel Cage.png|link=]] || {{item|Amethyst Squirrel Cage}} || <code>AmethystSquirrelCage</code>
+|-
+| 607 || 0 || [[File:Topaz Squirrel Cage.png|link=]] || {{item|Topaz Squirrel Cage}} || <code>TopazSquirrelCage</code>
+|-
+| 608 || 0 || [[File:Sapphire Squirrel Cage.png|link=]] || {{item|Sapphire Squirrel Cage}} || <code>SapphireSquirrelCage</code>
+|-
+| 609 || 0 || [[File:Emerald Squirrel Cage.png|link=]] || {{item|Emerald Squirrel Cage}} || <code>EmeraldSquirrelCage</code>
+|-
+| 610 || 0 || [[File:Ruby Squirrel Cage.png|link=]] || {{item|Ruby Squirrel Cage}} || <code>RubySquirrelCage</code>
+|-
+| 611 || 0 || [[File:Diamond Squirrel Cage.png|link=]] || {{item|Diamond Squirrel Cage}} || <code>DiamondSquirrelCage</code>
+|-
+| 612 || 0 || [[File:Amber Squirrel Cage.png|link=]] || {{item|Amber Squirrel Cage}} || <code>AmberSquirrelCage</code>
+|-
+| 613 || 0 || [[File:Potted Fire Brambles (placed).png|link=]] || {{item|Potted Fire Brambles|link={{tr|Potted Lava Plants|link=y}}}} || rowspan=2 | <code>PottedLavaPlants</code>
+|-
+| 613 || 1 || [[File:Potted Lava Bulb (placed).png|link=]] || {{item|Potted Lava Bulb|link={{tr|Potted Lava Plants|link=y}}}}
+|-
+| 614 || 0 || [[File:Potted Ember Tendrils (placed).gif|link=]] || {{item|Potted Ember Tendrils|link={{tr|Potted Lava Plants|link=y}}}} || <code>PottedLavaPlantTendrils</code>
+|-
+| 615 || 0 || [[File:Yellow Willow Sapling (placed).png|link=]] || {{item|Yellow Willow Sapling}} || <code>VanityTreeWillowSaplings</code>
+|-
+| 616 || 0 || [[File:Tree (Willow).png|link=]] || [[{{tr|Yellow Willow Tree}}]] || <code>VanityTreeYellowWillow</code>
+|-
+| 617 || 0 || [[File:Relic Base.png|link=]] || {{item|Relics|Relic Base|ext=gif}} || <code>MasterTrophyBase</code>
+|-
+| 618 || 0 || [[File:Stone Accent Slab (placed).png|link=]] || {{item|Stone Accent Slab}} || <code>AccentSlab</code>
+|-
+| 619 || 0 || [[File:Truffle Worm Cage.png|link=]] || {{item|Truffle Worm Cage}} || <code>TruffleWormCage</code>
+|-
+| 620 || 0 || [[File:Prismatic Lacewing Jar.png|link=]] || {{item|Prismatic Lacewing Jar}} || <code>EmpressButterflyJar</code>
+|-
+| 621 || 0 || [[File:Slice of Cake (placed).png|link=]] || {{item|Slice of Cake}} || <code>SliceOfCake</code>
+|-
+| 622 || 0 || [[File:Teapot.png|link=]] || {{item|Teapot}} || <code>TeaKettle</code>
+|-
+| 623 || 0 || [[File:Potted Crystal Fern (placed).png|link=]] || {{item|Potted Crystal Fern}} || rowspan=4 | <code>PottedCrystalPlants</code>
+|-
+| 623 || 1 || [[File:Potted Crystal Spiral (placed).png|link=]] || {{item|Potted Crystal Spiral}}
+|-
+| 623 || 2 || [[File:Potted Crystal Teardrop (placed).png|link=]] || {{item|Potted Crystal Teardrop}}
+|-
+| 623 || 3 || [[File:Potted Crystal Tree (placed).png|link=]] || {{item|Potted Crystal Tree}}
+|-
+| 624 || 0 || [[File:Abigail's Flower (placed).png|link=]] || {{item|Abigail's Flower}} || <code>AbigailsFlower</code>
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Tile IDs/Part7}}

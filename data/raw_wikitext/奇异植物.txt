@@ -1,0 +1,84 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3388
+| imagealt = [[File:Strange Plant (purple).png|link=]] [[File:Strange Plant (orange).png|link=]] [[File:Strange Plant (green).png|link=]] [[File:Strange Plant (red).png|link=]]
+| name = Strange Plants
+| type = Furniture
+| width = 1 | height = 1
+| id = 3385–3388
+| idtile = 227 (8–11)
+| cargo = no
+}}
+[[File:Strange Plants Map.png|right|thumb|在[[{{tr|minimap}}]]上显示的四种{{tr|Strange plants}}。]]
+
+'''{{tr|Strange Plants}}'''是一类[[{{tr|Hardmode}}]]{{tr|quest}}[[{{tr|plant}}]]{{tr|item}}，可在[[{{tr|Dye Trader}}]]处兑换为他的 33 种[[{{tr|dyes}}]]之一（除其中两种外，其余的都是[[{{tr|Dye Trader}}#奇异植物任务|任务专有的]]；{{tr|player}}将获得种类随机的 6 份同类{{tr|Dyes}}）。
+
+{{tr|Strange Plants}}可以在任何高度找到，并且可以在大部分{{tr|biome}}中生长，但有一些限制（见[[#备注|下文]]）。
+
+== 类型 ==
+{{options/set|item|mode=table|nolink=y|icons=n}}
+{{item infobox/options|view=table|imagemode=placed|cols=item2cells-nolink/imageplaced/idtile}}
+{| class="terraria lined align-center"
+|-
+! colspan=2 | {{tr|Item}}
+! 放置状态
+! [[{{tr|Tile IDs}}]]
+{{item infobox | auto = 3385 | namesub =（紫色）| image = Strange Plant (purple).png | imageplaced = Strange Plant (purple) (placed).png | type = Furniture | width = 1 | height = 1 | tags = plunder}}
+{{item infobox | auto = 3386 | namesub =（橙色）| image = Strange Plant (orange).png | imageplaced = Strange Plant (orange) (placed).png | type = Furniture | width = 1 | height = 1 | tags = plunder}}
+{{item infobox | auto = 3387 | namesub =（绿色）| image = Strange Plant (green).png | imageplaced = Strange Plant (green) (placed).png | type = Furniture | width = 1 | height = 1 | tags = plunder}}
+{{item infobox | auto = 3388 | namesub =（红色）| image = Strange Plant (red).png | imageplaced = Strange Plant (red) (placed).png | type = Furniture | width = 1 | height = 1 | tags = plunder}}
+|}
+
+== 备注 ==
+<!-- Do not add information about the Strange Plants resembling the Celestial Pillars! This is highly unlikely, especially since Stardust is not represented and the red plant does not resemble any Pillar.
+Any addition regarding this fact has been reverted multiple times and will be reverted again. -->
+* {{tr|Strange Plants}}可被[[{{tr|Metal Detector}}]]探测到。
+* {{tr|Strange Plants}}只能在特定情况下生长：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.plantDye}}
+** 它们需要生长在[[{{tr|Dirt Block}}]]、以{{tr|Dirt Block}}为{{tr|soil}}的[[{{tr|grasses}}]]、或被[[{{tr|moss}}]]覆盖的[[{{tr|Stone Block}}]]上。
+** 它们不能生长在相互之间 240 格的范围内。
+** 它们不能生长在距真正的{{tr|world}}边缘 95 格范围内（距离可见{{tr|world}}边缘约 44 格）。
+** 它们不能在[[{{tr|the Underworld}}]]生长。
+** 它们不能在[[{{tr|lava}}]]和[[{{tr|honey}}]]中生长。
+:: 此外，在{{tr|regular world}}中：
+:* 它们无法生长在{{tr|world}}中心横向五分之一的{{tr|surface and space layers}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_OvergroundTile}}
+:** 在[[{{tr|underground}}]]、[[{{tr|cavern}}]]、和[[{{tr|underworld}}]]{{tr|layers}}中，没有这一限制。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld_UndergroundTile}}
+:: 在 [[{{tr|don't dig up}}]] 或 [[{{tr|get fixed boi}}]] {{tr|world}}中：
+:* 它们可在{{tr|world}}中心横向五分之一内生长，但较为少见。
+* 与其他{{tr|dye plants}}一样，{{tr|Strange Plants}}会在[[{{tr|Spelunker Potion}}]]的作用下高亮显示。
+* 尽管每个植株看起来占用了 3×3 格，但从技术上讲它们只占用一个{{tr|tiles}}，这与它们在{{tr|map}}上的表示一致。它们只能通过挖掘底部中间的{{tr|tiles}}（唯一实际占用的{{tr|tiles}}）来收获。
+* 在[[{{tr|Journey Mode}}]]中，每种{{tr|Strange Plant}}都需要分别进行研究。
+* {{tr|Strange Plants}}可以在 [[1.3.0.1]] 之前创造的{{tr|world}}中生成，只是可能需要一些时间来让它们生长。
+* 多个{{tr|Strange Plants}}可以同时被兑换，不会损失奖励。
+* {{tr|Strange Plants}}不能放置在[[{{tr|Clay Pots}}]]中。
+* 尽管{{tr|Strange Plants}}看起来像是{{tr|biome-specific}}，但它们不受外观的限制，任何种类都可以出现在可能出现的地方。
+* 在[[{{tr|Dye Trader}}]]搬入前获取{{tr|Strange Plant}}可以满足其生成要求之一。
+
+== 小贴士 ==
+<!-- Do not add information about the Strange Plants resembling the Celestial Pillars! This is highly unlikely, especially since Stardust is not represented and the red plant does not resemble any Pillar.
+Any addition regarding this fact has been reverted multiple times and will be reverted again. -->
+* 由于{{tr|Strange Plants}}可以生长在裸露的、无{{tr|grass}}的{{tr|Dirt Block}}上，所以可以简单地建立一个农场来收集它们。地表上一个空而长的平坦平台是生成它们的有效方法。
+* 找寻{{tr|Strange Plants}}的一个简单方法是在[[{{tr|Spelunker Potion}}]]的效果下横穿{{tr|surface}}，因为{{tr|Strange Plants}}会被高亮显示。
+* {{tr|Strange Plants}}可以生长在[[{{tr|Floating Island}}]]上。由于这里不常被查看，因此探索它们往往有所收获。
+* 出售{{tr|Strange Plant}}交换来的{{tr|dyes}}比出售{{tr|plant}}本身更有利可图。单个{{tr|Strange Plants}}售价为 {{iteminfo|Strange Plant|sell}}，而任务独有的{{tr|Dyes}}每个至少可以卖到 {{iteminfo|Acid Dye|sell}}。
+* 建造一座横跨{{tr|sky}}的{{tr|dirt bridge}}，可以让{{tr|Strange Plants}}和[[{{tr|Blinkroot}}]]更容易地{{tr|spawn}}，因为使用{{tr|grass}}会生成{{tr|weed}}，这会降低{{tr|Strange Plants}}的{{tr|spawn}}概率。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在提交后会给予 6 份{{tr|dye}}而不是 3 份。}}
+{{history|Desktop 1.4.0.1|
+** 现在只在[[{{tr|Hardmode}}]]生成。
+** 现在可被[[{{tr|Metal Detector}}]]探测到。}}
+{{history|Desktop 1.3.0.4|现在可在常规[[{{tr|dye}}]]{{tr|plant}}附近生成，且更加常见。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Strange Plant}}

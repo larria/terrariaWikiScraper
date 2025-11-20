@@ -1,0 +1,53 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4359
+}}
+|{{npc infobox
+| auto = 602
+| id = 602（通常）, 603（飞行）
+| image = Seagull.gif
+| imageother = Seagull (flying).png
+| imageothercaption = 飞行状态
+| type = Critter
+| environment = Ocean
+| sound1 = Zombie 106.wav, Zombie 107.wav, Zombie 108.wav
+| soundcaption1 = Idle
+}}
+}}<!--
+Cargo storage:
+-->{{npc infobox | view = void
+| auto = 603
+| image2 = Seagull (flying).png
+| type = Critter
+| environment = Ocean
+| sound1 = Zombie 106.wav, Zombie 107.wav, Zombie 108.wav
+| soundcaption1 = Idle
+| cate = force
+}}<!--
+-->
+
+'''{{tr|Seagull}}'''是一个[[{{tr|Critters}}]]，会在[[{{tr|Ocean}}]]中生成。与[[{{tr|Bird}}]]不同，玩家接近时它不会飞走。它会发出典型的{{tr|seagull}}叫声，被动地在地面上走动、在水面上游动，直到它们掉落一定距离或有玩家在它们游动时接近后会飞走。在飞行时，它们在落地前会保持向一个方向飞行一段时间，然后再次以被动形态落地。虽然它们的生成条件是在{{tr|Ocean}}，但它们在落地时并不会优先落在水面上。
+
+{{critter info}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Seagull|expectedrows=3}}
+
+== 花絮 ==
+[[File:Ocean Splash.png|thumb|right|在{{tr|Ocean}}主题的启动屏幕中的{{tr|Seagull}}，最初在[[{{tr|Console}} 1.0.750.0]] 版本中引入，之后在 [[1.4.0.1]] 版本中引入。]]
+* 在{{eversions|1.4.0.1}}中被正式引入之前，{{tr|Seagull}}最初在[[{{tr|Console}} 1.0.750.0]] 更新中引入的{{tr|Ocean}}主题的[[{{tr|Logo}}|启动屏幕]]上出现。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Seagull}}

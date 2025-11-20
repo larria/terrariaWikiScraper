@@ -1,0 +1,52 @@
+{{exclusive|Eternia Crystal}}
+{{npc infobox
+| auto = 548 | boxwidth = 18em
+| image= Eternia Crystal (NPC).png
+| type = Background object
+| environment = Old One's Army
+| life = {{modes|1000 {{note|small=y|paren=y|T1}}<br/>3000 {{note|small=y|paren=y|T2}}<br/>5000 {{note|small=y|paren=y|T3}}|2000 {{note|small=y|paren=y|T1}}<br/>6000 {{note|small=y|paren=y|T2}}<br/>10000 {{note|small=y|paren=y|T3}}|3000 {{note|small=y|paren=y|T1}}<br/>9000 {{note|small=y|paren=y|T2}}<br/>15000 {{note|small=y|paren=y|T3}}}}
+| defense = 14 {{note|small=y|paren=y|T1}}<br/>18 {{note|small=y|paren=y|T2}}<br/>20 {{note|small=y|paren=y|T3}}
+| imageother = Map Icon Eternia Crystal.png
+| imageothercaption = 地图图标
+| idprojectile = 672, 713
+| sound1 = Dd2 defeat scene.wav
+| soundcaption1 = 失败
+| sound2 = Dd2 win scene.wav
+| soundcaption2 = 胜利
+}}
+{{about|{{tr|NPC}}|用于开始{{tr|event}}的{{tr|item}}|{{tr|Eternia Crystal}}}}
+{{quotation|[[File:Emote Town Bartender.gif|link=]][[{{tr|Tavernkeep}}]]|{{gameText|BartenderHelpText.Help_7}}}}
+[[File:Eternia Crystal (Old One's Army Event).png|thumb|{{tr|Eternia Crystal Stand}}中的{{tr|Eternia Crystal}}。]]
+
+'''{{tr|Eternia Crystal NPC}}'''是一个背景物体，是[[{{tr|Old One's Army}}]][[{{tr|event}}]]中的关键组件。
+
+当在{{tr|item}}栏中有[[{{tr|Eternia Crystal}}]]的情况下，对[[{{tr|Eternia Crystal Stand}}]]按下 {{key|use}} 会将{{tr|Eternia Crystal}}放置在它上面。要让{{tr|Eternia Crystal}}成功放置并召唤{{tr|event}}，需要长而平坦的区域；否则{{tr|Eternia Crystal}}将无法放置。在 5 秒钟倒计时后，必须从优先以{{tr|Eternia Crystal NPC}}为目标的{{tr|Old One's Army}}的一波波{{tr|enemy}}手中保护下它。如果{{tr|Eternia Crystal}}被摧毁，此{{tr|event}}就会失败。如果它完成所有波数后仍然“存活”，则此{{tr|event}}即以胜利告终。
+
+{{tr|Eternia Crystal}}可以从[[{{tr|Tavernkeep}}]]处购买，价格分别为 {{iteminfo|Eternia Crystal|buy}}（任意[[{{tr|mechanical bosses}}]] 前）/ {{gc|1}}（任意{{tr|mechanical bosses}} 后）/ {{gc|4}}（[[{{tr|Golem}}]]后）。
+
+== {{tr|Notes}} ==
+* {{tr|Eternia Crystal Stand}}的两侧都至少要有 61 个{{tr|tile}}的空间（从点击的一列开始测量）。
+** 如果{{tr|Eternia Crystal Stand}}的任一侧没有提供足够的空间，则将显示[[{{tr|status message}}]]：“{{gameText|DungeonDefenders2.BartenderWarning}}”
+* 在生成{{tr|Eternia Crystal NPC}} 之后，在整个[[{{tr|Old One's Army}}]]{{tr|event}}期间，{{tr|player}}将会受到[[{{tr|Creative Shock}}]][[{{tr|debuff}}]]的影响，这会阻止{{tr|player}}放置或破坏{{tr|blocks}}。在以{{tr|Eternia Crystal Stand}}为中心水平方向 180 个{{tr|tiles}}，竖直方向 55 个{{tr|tiles}}以内的区域的{{tr|player}}都会受到此{{tr|debuff}}的影响。[[{{tr|Ice Rod}}]]仍然可以使用，但它并不能阻挡{{tr|enemies}}，因为它们可以穿透{{tr|blocks}}。
+* {{tr|Eternia Crystal}}的[[{{tr|health}}]]和[[{{tr|defense}}]]取决于{{tr|world}}的{{tr|tier}}：任意[[{{tr|Mechanical bosses}}]] 前；任意{{tr|Mechanical bosses}} 后和[[{{tr|Golem}}]]后。需要注意的是，尽管{{tr|Eternia Crystal}}的{{tr|health}}和{{tr|defense}}在增加，但{{tr|enemy}}的{{tr|damage}}也在增加，因为每一{{tr|tier}}的{{tr|enemy}}会越来越困难。
+* 虽然{{tr|Eternia Crystal}}免疫[[{{tr|Explosives (class)}}]]伤害，{{tr|Eternia Crystal Stand}}和它下方的{{tr|blocks}}能够被爆炸摧毁。这会使得{{tr|Eternia Crystal NPC}} 向下坠落，直到它落到{{tr|solid block}}上。
+* {{tr|The Eternia Crystal NPC}}可以被 [[{{tr|Hoik}}]] 移动。如果正确利用的话，这会使得战斗更加简单。
+* {{tr|The Eternia Crystal NPC}}可以被[[{{tr|Rotten Egg}}]]伤害，因此如果在{{tr|event}}中使用它们当武器的话需要当心。
+
+== {{tr|Trivia}} ==
+* {{tr|The Eternia Crystal}}的{{tr|map icon}}和其{{tr|inventory sprite}}相同。
+* {{tr|The Eternia Crystal}}的{{tr|sprite}}会随着{{tr|health}}的降低出现裂痕。
+* {{tr|The Eternia Crystal}}有两个相关的{{tr|projectiles}}叫作"{{gameText|ProjectileName.DD2ElderWins}}" ([[Projectile IDs|ID]] 672)和"{{gameText|ProjectileName.DD2Win}}" ([[Projectile IDs|ID]] 713)。它们的唯一目的是在事件失败或胜利时创造视觉效果。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|{{tr|Eternia Crystal}}现在在{{tr|Expert}}模式拥有 2 倍{{tr|health}}，在{{tr|Master}}模式拥有 3 倍{{tr|health}}。}}
+{{history|Desktop 1.3.4.3|
+** {{tr|Tier 3}}的{{tr|health}}由 10000 降低至 5000。
+** {{tr|Tier 3}}的{{tr|defense}}由 45 降低至 20。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced}}，同步{{tr|Desktop}} 1.3.4.3 的更改。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.3.4.3 的更改。}}
+
+{{Master Template Characters}}
+
+{{language info|en=Eternia Crystal (NPC)}}

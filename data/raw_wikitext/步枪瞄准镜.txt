@@ -1,0 +1,56 @@
+{{item infobox
+| auto = 1300
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+{{redirect|瞄准镜|可使用{{tr|Rifle Scope}}{{tr|and its upgrades}}的{{tr|items}}|:Category:瞄准镜}}
+
+'''{{tr|Rifle Scope}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|accessory}}]]。它提供手持[[{{tr|Guns}}|{{tr|gun}}]]时按住 {{key|open}} 并移动{{tr|cursor}}来增加视野的能力。 
+
+{{tr|The Rifle Scope}}有 {{chance|1/12}} / {{expert|{{chance|23/144}}}} 几率由[[{{tr|Hardmode Dungeon}}|{{tr|Plantera}}后{{tr|Dungeon}}]]中的[[{{tr|Skeleton Sniper}}]]掉落。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Rifle Scope|expectedrows=1}}
+
+== 备注 ==
+[[File:Rifle Scope (demo).gif|thumb|1000px|none|{{tr|Rifle Scope}}使用常规{{tr|gun}}和[[{{tr|Sniper Rifle}}]]进行缩放。]]
+* {{tr|Rifle Scope}}会对使用[[{{tr|Bullets}}]]、[[{{tr|Candy Corn}}]]、[[{{tr|Gel}}]]、或[[{{tr|Stake}}]]作为{{tr|ammo}}的{{tr|guns and tools}}生效。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional}}它对其他{{tr|guns}}（如使用[[{{tr|Darts}}]]的[[{{tr|Dart Rifle}}]]）或是其他名字中带有“{{tr|gun}}”的武器（如不消耗{{tr|ammo}}的[[{{tr|Piranha Gun}}]]或[[{{tr|Rainbow Gun}}]]）无效。
+** 因此，{{tr|the Rifle Scope}}可对[[{{tr|Candy Corn Rifle}}]]、[[{{tr|Flamethrower}}]]、[[{{tr|Elf Melter}}]]、和[[{{tr|Stake Launcher}}]]生效。
+** {{eicons|1.4.4}}{{tr|Rifle Scope}}也会对使用[[{{tr|solutions}}]]作为{{tr|ammo}}的{{tr|tool}}（即[[{{tr|Clentaminator}}]]和[[{{tr|Terraformer}}]]）生效。
+* 其缩放效果和[[{{tr|Binoculars}}]]或[[{{tr|Sniper Rifle}}]]的类似，但{{tr|Rifle Scope}}可以和任何适合的{{tr|gun}}一同使用。
+** {{tr|Rifle Scope}}的缩放会与{{tr|Sniper Rifle}}略微叠加。{{source code ref|v=1.4.4.9|method=Terraria.Main.DoDraw_UpdateCameraPosition}}
+* {{tr|Rifle Scope}}在原版任天堂 3DS（O3DS）上运行的{{3DS version}}中无法生效。
+* {{tr|The Rifle Scope}}在{{mobile version}}中可能会很难用，因为使用{{tr|guns}}时视野范围会随着准星或摇杆的移动而四处晃动，这在战斗中可能会造成困扰。
+
+== 成就 ==
+{{achievement|name=Robbing the Grave}}
+
+== 花絮 ==
+* 如果向和玩家所在的[[{{tr|biome}}]]有不同{{tr|music}}的{{tr|biome}}缩放，{{tr|music}}会在缩放时变化。例如，玩家站在[[{{tr|Forest}}]]{{tr|biome}}中向[[{{tr|Glowing Mushroom biome}}]]缩放时，{{tr|the music}}会变为{{tr|Glowing Mushroom biome}}的{{tr|music}}。
+** {{eicons|1.4.0.1|invert=y}}如果向拥有范围{{tr|buff}}物品的区域缩放，那么即使不处于其范围内，玩家也会受到[[{{tr|buff}}]]的影响。如果玩家在范围内，向范围外缩放会导致玩家失去{{tr|buff}}。这适用于[[{{tr|Campfire}}]]、[[{{tr|Heart Lantern}}]]、[[{{tr|Star in a Bottle}}]]等等。
+* 装备{{tr|Sniper Scope}}后，即使并没有进行缩放，也会大大加大[[{{tr|NPC spawning}}|{{tr|enemy}}的生成矩形]]。这可能会有效地破坏玩家依赖于正常的生成矩形知识所制造的刷怪场。此区域的具体大小参见[[{{tr|NPC spawning}}#生成位置|{{tr|NPC spawning}} § 生成位置]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可搭配[[{{tr|Clentaminator}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.1.2|
+** 现在用于制作[[{{tr|Sniper Scope}}]]。
+** 现在可在[[{{tr|Candy Corn Rifle}}]]和[[{{tr|Stake Launcher}}]]上生效。
+** 在光标处于可交互物体上时不再进行缩放。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Sprite updated.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Rifle Scope}}

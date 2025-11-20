@@ -1,0 +1,58 @@
+{{npc infobox
+| image = Ice Elemental.gif
+| auto = 169
+| type = Flying Enemy
+| environment = Snow biome+Night
+| environment2 = Ice biome
+| damage2 = &#32;{{note|small=y|paren=y|接触}}<br/>{{modes|90|180|270}} {{note|small=y|paren=y|{{gameText|ProjectileName.FrostBlastHostile}}}}
+| debuff = Frostburn
+| debuffchance = 33.3% {{note|small=y|paren=y|{{gameText|ProjectileName.FrostBlastHostile}}}} {{eicons|1.4.1|small=y}}
+| debuffduration = {{modes|{{duration|6}}|{{duration|12}}|{{duration|15}}}}
+| Ice Sickle|1|{{eicons|1.4.4}} 1% / {{eicons|1.4.4|invert=y}} 0.56%
+| Frost Staff|1|2%
+| idprojectile = 128
+| sound1 = Item 28.wav
+| soundcaption1 = {{gameText|ProjectileName.FrostBlastHostile}}
+| hardmode = yes
+}}
+
+'''{{tr|Ice Elemental}}'''是个[[{{tr|Hardmode}}]]的[[{{tr|enemy}}]]，会悬浮在玩家上方并发射{{tr|Frost Blasts}}，它们在{{eversions|1.4.1|short=y}}中有几率造成[[{{tr|Frostburn}}]][[{{tr|debuff}}]]。它可以在任何时间出现在[[{{tr|Ice biome}}]]中，并且可以在[[{{tr|night}}]]出现在[[{{tr|Snow biome}}]]中。
+
+== 备注 ==
+* {{tr|Ice Elementals}}只能漂浮在离地八格的地方。
+* {{tr|Ice Elementals}}和它们的{{tr|projectiles}}都会发出大量的光芒。
+* {{tr|Frost Blasts}}与其他许多球状{{tr|projectiles}}不同，并不能通过击中的方式摧毁。
+* {{tr|Frost Blasts}}无法穿{{tr|walls}}。
+* {{tr|Ice Elementals}}无视[[{{tr|Shroomite armor}}]]/[[{{tr|Vortex armor}}]]的{{tr|set bonus}}，仍然可以朝着隐身/不可见的玩家发射。
+
+== 小贴士 ==
+* 虽然{{tr|Ice Elemental}}有很高的攻击距离，但它们的{{tr|projectiles}}飞行得很慢，可以很容易地闪避它们。
+
+== 花絮 ==
+* {{维基百科|Elemental|元素精灵（Elemental）}}是将自然力量具象化/拟人化后的魔法实体。历史上，元素精灵是经典四元素之一的化身：土、水、风、火（有时是植物，但绝不会是以太）。{{维基百科|Elemental (Dungeons & Dragons)|龙与地下城（Dungeons & Dragons）}}中引入了融合的元素精灵和其他非常规的元素精灵。
+* 与大多数以{{tr|ice}}为主题的{{tr|enemies}}不同，{{tr|Ice Elemental}}无法造成[[{{tr|Chilled}}]]或[[{{tr|Frozen}}]]{{tr|debuffs}}。
+** {{eicons|1.4.1}} 它们会造成[[{{tr|Frostburn}}]]{{tr|debuff}}，也是游戏中唯一一种能这么做的{{tr|enemy}}。
+{{bestiary}}
+
+== 另见 ==
+* {{item|Granite Elemental}}
+* {{item|Sand Elemental|scale=0.6}}
+* {{item|Chaos Elemental}}
+* {{item|Spectral Elemental}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Ice Sickle}}掉落几率由 1/180 提升至 1/100。}}
+{{history|Desktop 1.4.1|{{tr|Projectile attack}}现在可以造成{{tr|Frostburn}}。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}旧外观是 [[File:Ice Elemental (old).png|10px]]。}}
+{{history|Desktop 1.2.0.3|现在会掉落它的{{tr|banner}}了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Ice Elemental}}

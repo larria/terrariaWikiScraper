@@ -1,0 +1,775 @@
+{{legacy nav tab}}
+{{distinguish|{{tr|Summoning items}}}}
+{{for|所有{{tr|summon weapons}}并带有其属性可供比较的可排序列表|{{tr|List of summon weapons}}}}
+
+'''{{tr|Summon weapons}}'''是可造成[[{{tr|summon damage}}]]的[[{{tr|weapon}}]]。{{tr|summon weapon}}可分为[[{{tr|minion-summoning weapons}}]]、[[{{tr|sentry-summoning weapons}}]]和[[{{tr|whips}}]]。
+
+{{tr|Minion and sentry summon weapon}}可生成自动{{tr|attack enemies}}的附属角色。{{tr|Minions}}可跟随{{tr|player}}，而{{tr|sentries}}则保持静止。它们仅会在使用时消耗[[{{tr|mana}}]]，而不会再存在期间消耗。
+	
+{{tr|Whips}}会以弧线挥动而且不消耗{{tr|mana}}，虽然造成{{tr|summon damage}}，但其功能类似于[[{{tr|melee weapons}}]]。{{tr|Whips}}会将{{tr|minion and sentry}}的目标设置为它击中的{{tr|enemy}}并且通常可增加对该目标造成的{{tr|summon damage}}。
+
+目前总计有 {{#cargo_query:tables=Items|fields=count(distinct name)|where=damagetype LIKE '%summon%' AND unobtainable IS NULL AND type HOLDS 'weapon'|no html}} 个{{tr|summon weapons}}。
+
+__TOC__
+
+下方列表呈现出所有{{tr|summon weapons}}，包括其{{tr|damage}}和获取方式。这些{{tr|The weapons}}大致按照它们在游戏进程中的获取时期排序。
+
+== 困难模式之前 ==
+=== 仆从 ===
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Minion}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Abigail's Flower|minion=@@@@|在放置的[[{{tr|Tombstones}}]]附近的[[{{tr|grass}}]]上生成。|
+* {{tr|Abigail}}头上的花朵会在她每次被召唤时改变形状和/或颜色。}}
+{{/row|Finch Staff|minion=Finch|在[[{{tr|Living Wood Chest}}]]中找到。}}
+{{/row|Flinx Staff|minion=@@@@}}
+{{/row|Slime Staff|minion=@@@@|掉落自大部分[[{{tr|slime}}]]和[[{{tr|Slimed Zombie}}]]。}}
+{{/row|Vampire Frog Staff|minion=@@@@|掉落自[[{{tr|Zombie Merman}}]]和[[{{tr|Wandering Eye Fish}}]]。}}
+{{/row|Hornet Staff|minion=@@@@||
+* 造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。}}
+{{/row|Imp Staff|minion=@@@@||
+* 造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。}}
+|}
+
+=== 哨兵 ===
+==== 普通 ====
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Sentry}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Houndius Shootius|sentry=@@@@|sentryimage=Houndius Shootius (sentry).png|掉落自[[{{tr|Deerclops}}]]。}}
+|}
+
+==== 酒馆老板的哨兵 ====
+{{options/snap|item|snapshot}}{{options/set|item}}
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Sentry}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Lightning Aura Rod|sentry=@@@@|sentryimage=Lightning Aura.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Lightning Aura Rod|buy}}）。|
+* 无视其目标的所有{{tr|defense}}属性，具有高于 999 {{tr|defense}}的{{tr|enemies}}除外。
+}}
+{{/row|Flameburst Rod|sentry=@@@@|sentryimage=Flameburst Tower.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Flameburst Rod|buy}}）。|
+* 造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+}}
+{{/row|Explosive Trap Rod|sentry=@@@@|sentryimage=Explosive Trap.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Explosive Trap Rod|buy}}）。}}
+{{/row|Ballista Rod|sentry=@@@@|sentryimage=Ballista.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Ballista Rod|buy}}）。}}
+|}{{options/restore|item|snapshot}}
+
+=== 鞭 ===
+{| class="sortable terraria lined"
+! colspan=3 | {{tr|Item}} !! data-sort-type=number | {{tr|Damage}} !! 来源 !! 备注
+{{/row|Leather Whip|购买自[[{{tr|Zoologist}}]]（{{iteminfo|Leather Whip|buy}}）。|
+* 4 {{tr|summon tag damage}}。
+* 单次挥舞中，每击中一次伤害降低 50%。}}
+{{/row|Snapthorn||
+* 6 {{tr|summon tag damage}}。
+* 击中{{tr|enemies}}后获得[[{{tr|Jungle's Fury}}]][[{{tr|buff}}]]增加{{tr|attack speed}}。
+* 可能会造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。
+* 单次挥舞中，每击中一次伤害降低 40%。}}
+{{/row|Spinal Tap||
+* 7 {{tr|summon tag damage}}。
+* 单次挥舞中，每一次击中伤害降低 10%。}}
+|}
+
+== 困难模式 ==
+=== 仆从 ===
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Minion}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Spider Staff|minion=@@@@|minionimage=Venom Spider.png/Jumper Spider.png/Dangerous Spider.png||
+* 造成[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]。}}
+{{/row|Sanguine Staff|minion=@@@@|掉落自[[{{tr|Dreadnautilus}}]]。|
+* 停留在相对于{{tr|player}}的固定位置。}}
+{{/row|Pirate Staff|minion=@@@@|minionimage=One Eyed Pirate.png/Soulscourge Pirate.png/Pirate Captain (minion).png|掉落自[[{{tr|Pirates}}]]和[[{{tr|Flying Dutchman}}]]。}}
+{{/row|Blade Staff|minion=Enchanted Dagger|minionimage=Enchanted Dagger (minion).png|掉落自[[{{tr|Queen Slime}}]]。|
+* 无视 25 {{tr|defense}}。
+* 停留在相对于{{tr|player}}的固定位置，穿过{{tr|blocks}}飞行攻击{{tr|enemies}}。}}
+{{/row|Optic Staff|minion=@@@@|minionimage=Retanimini.png/Spazmamini.png||
+* 每对{{tr|The Twins}}算作 1 {{tr|minion}}。}}
+{{/row|Pygmy Staff|minion=Pygmy|minionimage=Pygmy 1.png/Pygmy 2.png/Pygmy 3.png/Pygmy 4.png|掉落自[[{{tr|Plantera}}]]。|
+* 造成[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]。}}
+{{/row|Desert Tiger Staff|minion=Desert Tiger|在[[{{tr|Desert Chest}}]]中找到。|
+* 在召唤 4 和 7 个{{tr|minions}}时变换形态。每次召唤增加老虎的{{tr|damage}}和速度，上限最多为 9 次{{tr|summons}}。会穿过{{tr|blocks}}攻击{{tr|enemies}}。}}
+{{/row|Deadly Sphere Staff|minion=@@@@|掉落自[[{{tr|Deadly Sphere}}]]。}}
+{{/row|Raven Staff|minion=Raven|掉落自[[{{tr|Pumpking}}]]。}}
+{{/row|Xeno Staff|minion=@@@@|掉落自[[{{tr|Martian Saucer}}]]。|
+* 攻击瞬发且必定命中。}}
+{{/row|Tempest Staff|minion=@@@@|掉落自[[{{tr|Duke Fishron}}]]。|
+* {{tr|Sharknado}}和{{tr|Mini Sharkrons}}都能击中{{tr|enemy}}。}}
+{{/row|Stardust Dragon Staff|minion=@@@@|minionimage=Stardust Dragon minion (2 summons).png||
+* 每生成一个额外{{tr|minion}}会为主{{tr|Dragon}}增加一个{{tr|segment}}，增加伤害。
+* 穿过{{tr|blocks}}飞行攻击{{tr|enemies}}。}}
+{{/row|Stardust Cell Staff|minion=@@@@||
+* 对玩家击中的{{tr|enemies}}额外发射{{tr|projectiles}}。}}
+{{/row|Terraprisma|minion=@@@@|minionimage=Terraprisma (projectile).png|掉落自[[{{tr|Empress of Light}}]]，如果所有伤害都在{{tr|day}}造成。|
+* 停留在相对于{{tr|player}}的固定位置，穿过{{tr|blocks}}飞行攻击{{tr|enemies}}。}}
+|}
+
+=== 哨兵 ===
+==== 普通 ====
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Sentry}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Queen Spider Staff|sentry=@@@@|sentryimage=Spider Turret.png||
+* {{tr|Spiders}}会累积，造成[[{{tr|Acid Venom}}]][[{{tr|debuff}}]]。}}
+{{/row|Staff of the Frost Hydra|sentry=@@@@|sentryimage=Frost Hydra.png|在[[{{tr|Biome Chest}}|{{tr|Ice Chest}}]]中找到。|
+*  造成[[{{tr|Frostbite}}]][[{{tr|debuff}}]]。}}
+{{/row|Lunar Portal Staff|sentry=@@@@|sentryimage=Lunar Portal.png|掉落自[[{{tr|Moon Lord}}]]。|
+* 无限穿透。}}
+{{/row|Rainbow Crystal Staff|sentry=@@@@|sentryimage=Rainbow Crystal %28sentry%29.gif|掉落自[[{{tr|Moon Lord}}]]。}}
+|}
+
+==== 酒馆老板的哨兵 ====
+{{options/snap|item|snapshot}}{{options/set|item}}
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! {{tr|Sentry}} !! {{tr|Damage}} !! {{tr|Source}} !! {{tr|Notes}}
+{{/row|Lightning Aura Cane|sentry=@@@@|sentryimage=Lightning Aura 2.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Lightning Aura Cane|buy}}）。|
+* 无视其目标的所有{{tr|defense}}属性，具有高于 999 {{tr|defense}}的{{tr|enemies}}除外。
+}}
+{{/row|Flameburst Cane|sentry=@@@@|sentryimage=Flameburst Tower 2.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Flameburst Cane|buy}}）。|
+* 造成[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。
+}}
+{{/row|Explosive Trap Cane|sentry=@@@@|sentryimage=Explosive Trap 2.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Explosive Trap Cane|buy}}）。}}
+{{/row|Ballista Cane|sentry=@@@@|sentryimage=Ballista 2.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Ballista Cane|buy}}）。}}
+{{/row|Lightning Aura Staff|sentry=@@@@|sentryimage=Lightning Aura 3.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Lightning Aura Staff|buy}}）。|
+* 无视其目标的所有{{tr|defense}}属性，具有高于 999 {{tr|defense}}的{{tr|enemies}}除外。
+}}
+{{/row|Flameburst Staff|sentry=@@@@|sentryimage=Flameburst Tower 3.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Flameburst Staff|buy}}）。|
+* 造成[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。
+}}
+{{/row|Explosive Trap Staff|sentry=@@@@|sentryimage=Explosive Trap 3.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Explosive Trap Staff|buy}}）。}}
+{{/row|Ballista Staff|sentry=@@@@|sentryimage=Ballista 3.png|购买自[[{{tr|Tavernkeep}}]]（{{iteminfo|Ballista Staff|buy}}）。}}
+|}{{options/restore|item|snapshot}}
+
+=== 鞭 ===
+{| class="sortable terraria lined"
+! colspan=3 | {{tr|Item}} !! data-sort-type=number | {{tr|Damage}} !! 来源 !! 备注
+{{/row|Firecracker|掉落自[[{{tr|Wall of Flesh}}]]。|
+* 不增加{{tr|minion damage}}，而是让被击中的{{tr|enemy}}环绕烈焰能量，在下次有{{tr|minion}}攻击它时爆炸，造成{{tr|minion}}伤害的 2.75 倍。
+* 造成[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。
+* 单次挥舞中，每击中一次伤害降低 33%。}}
+{{/row|Cool Whip||
+* 6 {{tr|summon tag damage}}。
+* 击中{{tr|enemies}}会召唤{{tr|snowflake minion}}，攻击任何附近的{{tr|enemies}}，造成 15 {{tr|damage}}。{{tr|snowflake}}具有 30 [[{{tr|armor penetration}}]]。
+* 造成[[{{tr|Frostbite}}]][[{{tr|debuff}}]]。
+* 单次挥舞中，每击中一次伤害降低 30%。}}
+{{/row|Durendal||
+* 9 {{tr|summon tag damage}}。
+* 击中{{tr|enemies}}获得[[{{tr|Durendal's Blessing}}]][[{{tr|buff}}]]增加{{tr|attack speed}}。
+* 单次挥舞中，每击中一次伤害降低 20%。}}
+{{/row|Dark Harvest|掉落自[[{{tr|Pumpking}}]]。|
+* 击中{{tr|enemy}}时对它施加{{tr|dark energy}}。当{{tr|minions}}攻击具有{{tr|dark energy}}的{{tr|enemy}}，{{tr|dark energy}}爆发并伤害附近的{{tr|enemies}}（原目标不受伤害），每击造成 10 伤害。{{tr|dark energy}}具有 50 [[{{tr|armor penetration}}]]。
+* 击中{{tr|enemies}}获得[[{{tr|Harvest Time}}]][[{{tr|buff}}]]增加{{tr|attack speed}}。
+* 单次挥舞中，每击中一次伤害降低 10%。}}
+{{/row|Morning Star|掉落自[[{{tr|Blue Armored Bones}}]]、[[{{tr|Hell Armored Bones}}]]、和[[{{tr|Rusty Armored Bones}}]]。|
+* 8 {{tr|summon tag damage}}。
+* 12% {{tr|summon tag critical strike chance}}。
+* 单次挥舞中，每击中一次伤害降低 5%。}}
+{{/row|Kaleidoscope|掉落自[[{{tr|Empress of Light}}]]。|
+* 20 {{tr|summon tag damage}}。
+* +10% {{tr|summon tag critical strike chance}}。
+* 单次挥舞中，每击中一次伤害降低 10%。}}
+|}
+
+== 盔甲召唤物 ==
+{{dablink|{{tr|See also}}[[{{tr|Chlorophyte armor}}]]，一套非{{tr|summoner armor set}}，能召唤自动攻击附近{{tr|enemies}}的{{tr|Leaf Crystal}}。}}
+某些{{tr|armor sets}}，当装备全套{{tr|set}}时，会召唤出一个独特的{{tr|minion}}：
+* {{tr|armor}}装备时每个玩家只能在同一时间激活一个{{tr|armor minion}}。
+* 它们不计入{{tr|minion}}或{{tr|sentry}}容量中。
+{{options/snap|item|snapshot}}{{options/set|item|small=y}}
+{| class="terraria" id="table-Armor-Summons"
+|-
+! {{tr|Item}} !! {{tr|Minion}} !! {{tr|Damage}} !! {{tr|Notes}} !! {{tr|Source}}
+|-
+| {{item|Forbidden armor|image=Forbidden armor.png/Forbidden armor female.png}}
+| {{item|Forbidden Sign|nolink=y}}
+| align=center | 20
+| 双击 {{key|down}}/{{key|up}} 来释放{{tr|Ancient Storm}}攻击{{tr|enemies}}。
+| 制作：3 {{item|mode=image|Forbidden Fragment}} + 46（{{item|mode=image|Adamantite Bar}} ''或'' {{item|mode=image|Titanium Bar}}）
+|-
+| {{item|Stardust armor|image=Stardust armor.png/Stardust armor female.png}}
+| {{item|Stardust Guardian|image=Stardust Guardian minion.png|nolink=y}}
+| align=center | 30
+| {{tr|Stardust Guardian}}会自动搜索{{tr|enemies}}并快速攻击它们。
+| 制作：36 {{item|mode=image|Luminite Bar}} + 45 {{item|mode=image|Stardust Fragment}}
+|}
+
+== 增强装备 ==
+下列物品可加强{{tr|summon weapon}}的属性。
+
+=== 盔甲套装 ===
+{| class="terraria lined sortable" style="text-align:center"
+|-
+! class="unsortable" rowspan=2 | 外观
+! rowspan=2 | {{tr|Set}}
+! colspan=4 | {{tr|Defense}}
+! class="unsortable" rowspan=2 | {{tr|Summon}}加成
+! class="unsortable" rowspan=2 | {{tr|Source}}
+|-
+! style="font-size:90%;" data-sort-type=number | {{tr|Head}}
+! style="font-size:90%;" data-sort-type=number | 胸部
+! style="font-size:90%;" data-sort-type=number | 腿部
+! style="font-size:95%;" data-sort-type=number | 总计
+|- 
+| {{item|Flinx Fur Coat|mode=table|image=Flinx Fur Coat (equipped).png/Flinx Fur Coat (equipped) female.png}}
+| {{na}}
+| 1
+| {{na}}
+| 1
+|  class="small" style="text-align:left"|
+* +1 {{tr|minion capacity}}
+* +5% {{tr|summon damage}}
+|  class="small" style="text-align:left"|
+* 10 {{item|Silk}}
+* 8 {{item|Flinx Fur}}
+* 8 {{item|Gold Bar}} / {{item|Platinum Bar}}
+* 在 {{item|Loom}} 制作
+|- class="topline"
+| {{item|Obsidian armor|mode=table|image=Obsidian armor.png/Obsidian armor female.png}}
+| 4
+| 6
+| 5
+| 15
+| class="small" style="text-align:left"|
+* +1 {{tr|minion capacity}}
+* +16% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：''' +15% {{tr|whip speed}}、+30% {{tr|whip range}}、+15% {{tr|summon damage}}（总计 +31%）
+| class="small" style="text-align:left"|
+* 60 {{item|Obsidian}} 
+* 30 {{item|Silk}}
+* 20 {{item|Shadow Scale}} / {{item|Tissue Sample}}
+* 在 {{item|Hellforge}} 制作
+|- class="topline"
+| {{item|Bee armor|mode=table|image=Bee armor.png/Bee armor female.png}}
+| 4
+| 5
+| 4
+| 13
+| class="small" style="text-align:left"|
+* +2 {{tr|minion capacity}}
+* +13% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：''' +10% {{tr|summon damage}}（总计 +23%）
+| class="small" style="text-align:left"|
+* 30 {{item|Bee Wax}}
+* 在 {{item|Iron Anvil}} / {{item|Lead Anvil}} 制作
+|- class="topline"
+| {{item|Forbidden armor|mode=table|image=Forbidden_armor.png/Forbidden_armor_female.png}}
+| 6
+| 12
+| 8
+| 26
+| class="small" style="text-align:left" |
+* +25% {{tr|magic damage}}
+* +25% {{tr|summon damage}}
+* +2 {{tr|minion slot}}
+* +40 {{tr|maximum mana}}
+* '''{{tr|Set Bonus}}：''' {{eicons|1.4.0.1}} {{gameText|ArmorSetBonus.Forbidden}}
+| class="small" style="text-align:left"|
+* 46 {{item|Adamantite Bar}} / {{item|Titanium Bar}}
+* 3 {{item|Forbidden Fragment}}
+* 在 {{item|Mythril Anvil}} / {{item|Orichalcum Anvil}} 制作
+|- class="topline"
+| {{item|Squire armor|mode=table|image=Squire armor.png/Squire armor female.png}}
+| 13
+| 27
+| 18
+| 58
+| class="small" style="text-align:left"|
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +15% {{tr|melee damage}}
+* +15% {{tr|melee critical strike chance}}
+* +20% {{tr|movement speed}}
+* 增加{{tr|life regeneration}}
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.SquireTier2}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>需  {{setinfo|Squire armor|buy}}
+|- class="topline"
+| {{item|Monk armor|mode=table|image=Monk armor.png/Monk armor female.png}}
+| 8
+| 22
+| 16
+| 46
+| class="small" style="text-align:left"|
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|melee damage}}
+* +20% {{tr|melee speed}}
+* +15% {{tr|melee critical strike chance}}
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.MonkTier2}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>for {{setinfo|Monk armor|buy}}
+|- class="topline"
+| {{item|Huntress armor|mode=table|image=Huntress armor.png/Huntress armor female.png}}
+| 7
+| 17
+| 12
+| 36
+| class="small" style="text-align:left"|
+* +1 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|ranged damage}}
+* +10% {{tr|ranged critical strike chance}}
+* +20% {{tr|movement speed}}
+* 10% 概率不消耗弹药
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.HuntressTier2}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>for {{setinfo|Huntress armor|buy}}
+|- class="topline"
+| {{item|Apprentice armor|mode=table|image=Apprentice_armor.png/Apprentice_armor_female.png}}
+| 7
+| 15
+| 10
+| 32
+| class="small" style="text-align:left"|
+* +2 {{tr|sentry capacity}}
+* +30% {{tr|summon damage}}
+* +20% {{tr|magic damage}}
+* +20% {{tr|magic critical strike chance}}
+* -10% {{tr|mana cost}}
+* '''{{tr|Set Bonus}}：''' {{gameText|ArmorSetBonus.ApprenticeTier2}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>for {{setinfo|Apprentice armor|buy}}
+|- class="topline"
+| {{item|Spider armor|mode=table|image=Spider armor.png/Spider armor female.png}}
+| 5
+| 8
+| 7
+| 20
+| class="small" style="text-align:left"|
+* +3 {{tr|minion capacity}}
+* +16% {{tr|summon damage}}
+* '''{{tr|Set Bonus}}：''' +12% {{tr|summon damage}}（总计 +28%）
+| class="small" style="text-align:left"|
+* 36 {{item|Spider Fang}}
+* 在 {{item|Iron Anvil}} / {{item|Lead Anvil}} 制作
+|- class="topline"
+|{{item|Hallowed armor|mode=table|image=Hallowed armor Hood.png|note2=（使用{{tr|Hood}}，可与[[{{tr|Ancient Hallowed armor}}]]互换）}}
+| 1
+| 15
+| 11
+| 27
+| class="small" style="text-align:left"|
+* +1 {{tr|minion capacity}}
+* +10% {{tr|summon damage}}
+* +7% {{tr|damage}}
+* '''{{tr|Set Bonus}}：''' +2 {{tr|minion capacity}}（总计 +3）
+| class="small" style="text-align:left"|
+* 54 {{item|Hallowed Bar}}
+* 在 {{item|Mythril Anvil}} / {{item|Orichalcum Anvil}} 制作
+|- class="topline"
+| {{item|Tiki armor|mode=table|image=Tiki armor.png/Tiki armor female.png}}
+| 6
+| 17
+| 12
+| 35
+| class="small" style="text-align:left"|
+* +3 {{tr|minion capacity}}
+* +30% {{tr|summon damage}}
+* +10% {{tr|whip range}}
+* '''{{tr|Set Bonus}}：''' +20% {{tr|whip range}}（总计 +30%），+1 {{tr|minion capacity}}（总计 +4）
+| class="small" style="text-align:left"|
+* [[{{tr|Plantera}}]]打败后由[[{{tr|Witch Doctor}}]]售卖。
+|- class="topline"
+| {{item|Spooky armor|mode=table|image=Spooky armor.png/Spooky armor female.png}}
+| 9
+| 11
+| 10
+| 30
+| class="small" style="text-align:left"|
+* +4 {{tr|minion capacity}}
+* +33% {{tr|summon damage}}
+* +20% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：''' +25% {{tr|summon damage}}（总计 +58%）
+| class="small" style="text-align:left"|
+* 750 {{item|Spooky Wood}}
+* 在 {{item|Work Bench}} 制作
+|- class = "topline"
+| {{item|Valhalla Knight armor|mode=table|image=Valhalla Knight armor.png/Valhalla Knight armor female.png}}
+| 20
+| 24
+| 24
+| 68
+| class="small" style="text-align:left"|
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +10% {{tr|melee damage}}
+* +20% {{tr|melee critical strike chance}}
+* +30% {{tr|movement speed}}
+* 大幅提升{{tr|life regeneration}}
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.SquireTier3}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>需 {{setinfo|Valhalla Knight armor|buy}}
+|- class = "topline"
+| {{item|Shinobi Infiltrator armor|mode=table|image=Shinobi Infiltrator armor.png/Shinobi Infiltrator armor female.png}}
+| 10
+| 26
+| 18
+| 54
+| class="small" style="text-align:left"|
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +20% {{tr|melee damage}}
+* +20% {{tr|melee speed}}
+* +25% {{tr|melee critical strike chance}}
+* +30% {{tr|movement speed}}
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.MonkTier3}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>需 {{setinfo|Shinobi Infiltrator armor|buy}}
+|- class="topline"
+| {{item|Red Riding armor|mode=table|image=Red Riding armor.png/Red Riding armor female.png}}
+| 8
+| 24
+| 16
+| 48
+| class="small" style="text-align:left" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +25% {{tr|ranged damage}}
+* +20% {{tr|ranged critical strike chance}}
+* +20% {{tr|movement speed}}
+* 20% 概率不消耗弹药
+* '''{{tr|Set Bonus}}：''' <br/>{{gameText|ArmorSetBonus.HuntressTier3}}
+| class="small" style="text-align:left"|
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>需 {{setinfo|Red Riding armor|buy}}
+|- class="topline"
+| {{item|Dark Artist armor|mode=table|image=Dark_Artist_armor.png/Dark_Artist_armor_female.png}}
+| 7
+| 21
+| 14
+| 42
+| class="small" style="text-align:left" |
+* +2 {{tr|sentry capacity}}
+* +60% {{tr|summon damage}}
+* +25% {{tr|magic damage}}
+* +25% {{tr|magic critical strike chance}}
+* +20% {{tr|movement speed}}
+* -15% {{tr|mana cost}}
+* '''{{tr|Set Bonus}}：''' {{gameText|ArmorSetBonus.ApprenticeTier3}}
+| class="small" style="text-align:left" |
+* 由[[{{tr|Tavernkeep}}]]售卖 <br/>需 {{setinfo|Dark Artist armor|buy}}
+|- class="topline"
+| {{item|Stardust armor|mode=table|image=Stardust armor.png/Stardust armor female.png}}
+| 10
+| 16
+| 12
+| 38
+| class="small" style="text-align:left"|
+* +5 {{tr|minion capacity}}
+* +1 {{tr|sentry capacity}}
+* +66% {{tr|summon damage}}
+* +30% {{tr|whip range}}
+* '''{{tr|Set Bonus}}：'''{{gameText|ArmorSetBonus.Stardust}}
+| class="small" style="text-align:left"|
+* 36 {{item|Luminite Bar}}
+* 45 {{item|Stardust Fragment}}
+* 在 {{item|Ancient Manipulator}} 制作
+|}
+
+=== 配饰 ===
+注意[[{{tr|melee speed}}]]也能增加[[{{tr|whips}}]]的攻击速度，但是其他{{tr|melee accessories}}的效果''不能''作用于{{tr|whips}}，如[[{{tr|Titan Glove}}]]增加尺寸。
+
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Item}} !! class="unsortable" | 加成 !! class="unsortable" | {{tr|Source}}
+|-
+| {{item|Feral Claws|mode=table}}
+|
+* +12% {{tr|melee speed}}
+* {{eicons|1.4.1}} 使[[{{tr|melee weapons}}]]和{{eil|whips}}能够[[{{tr|autoswing}}]]
+|
+* 可在[[{{tr|Ivy Chest}}]]、{{eil|Jungle Crate|Jungle}}和{{eil|Bramble Crate|s}}中找到
+|-
+| {{item|Pygmy Necklace|mode=table}}
+|
+* +1 {{tr|Minion capacity}}
+|
+* 由[[{{tr|Witch Doctor}}]]在[[{{tr|night}}]]出售
+|-
+| {{item|Squire's Shield|mode=table}}
+|
+* +1 {{tr|sentry capacity}}
+* +10% {{tr|summon damage}}
+|
+* 掉落自[[{{tr|Dark Mage}}]]。
+|-
+| {{item|Apprentice's Scarf|mode=table}}
+|
+* +1 {{tr|sentry capacity}}
+* +10% {{tr|summon damage}}
+|
+* 掉落自[[{{tr|Dark Mage}}]]。
+|-
+| {{item|Summoner Emblem|mode=table}}
+|
+* +15% {{tr|summon damage}}
+|
+* 掉落自[[{{tr|Wall of Flesh}}]]。
+|-
+| {{item|Power Glove|mode=table}}
+|
+* +12% {{tr|melee speed}}
+* {{eicons|1.4.1}} 使[[{{tr|melee weapons}}]]和{{eil|whips}}能够[[{{tr|autoswing}}]]
+|
+* {{item|Feral Claws}}
+* {{item|Titan Glove}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Moon Charm|mode=table}}
+|
+在[[{{tr|night}}]]（不在水下时）：
+* +5.1 {{tr|melee speed}}
+|
+* 掉落自[[{{tr|Werewolf}}]]
+|-
+| {{item|Putrid Scent|mode=table}}
+|
+* +5%（所有）{{tr|damage}}
+* -400 [[{{tr|aggro}}]]
+|
+* 掉落自[[{{tr|Corrupt Mimic}}]]
+|-
+| {{item|Berserker's Glove|mode=table}}
+|
+* +12% {{tr|melee speed}}
+* 使[[{{tr|melee weapons}}]]和{{eil|whips}}能够[[{{tr|autoswing}}]]
+* +8 {{tr|defense}}
+* +400 [[{{tr|aggro}}]]
+|
+* {{item|Power Glove}}
+* {{item|Flesh Knuckles}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Moon Stone|mode=table}}
+|
+在[[{{tr|night}}]]：
+* +10% {{tr|melee speed}}
+* +10% {{tr|damage}}
+* +0.5 {{tr|minion knockback}}
+|
+* 掉落自[[{{tr|Vampire}}]]
+|-
+| {{item|Monk's Belt|mode=table}}
+|
+* +1 {{tr|sentry capacity}}
+* +10% {{tr|summon damage}}
+| 掉落自[[{{tr|Ogre}}]]
+|-
+| {{item|Huntress's Buckler|mode=table}}
+|
+* +1 {{tr|sentry capacity}}
+* +10% {{tr|summon damage}}
+|
+* 掉落自[[{{tr|Ogre}}]]
+|-
+| {{item|Avenger Emblem|mode=table}}
+|
+* +12% {{tr|Damage}}
+|
+* {{item|Warrior Emblem}} ''或'' {{item|Ranger Emblem}} ''或'' {{item|Sorcerer Emblem}} ''或'' {{item|Summoner Emblem}}
+* 5 {{item|Soul of Might}}
+* 5 {{item|Soul of Sight}}
+* 5 {{item|Soul of Fright}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Mechanical Glove|mode=table}}
+|
+* +12% {{tr|melee speed}}
+* {{eicons|1.4.1}} 使[[{{tr|melee weapons}}]]和{{eil|whips}}能够[[{{tr|autoswing}}]]
+|
+* {{item|Power Glove}}
+* {{item|Avenger Emblem}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Fire Gauntlet|mode=table}}
+|
+* +12% {{tr|melee speed}}
+* {{eicons|1.4.1}} 使[[{{tr|melee weapons}}]]和{{eil|whips}}能够[[{{tr|autoswing}}]]
+|
+* {{item|Magma Stone}}
+* {{item|Mechanical Glove}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Hercules Beetle|mode=table}}
+|
+* +15% {{tr|summon damage}}
+* +2 {{tr|minion knockback}}
+|
+* [[{{tr|Plantera}}]]已被打败后在[[{{tr|Jungle}}]]中与[[{{tr|Witch Doctor}}]]对话会出售。
+|-
+| {{item|Necromantic Scroll|mode=table}}
+|
+* +1 {{tr|minion capacity}}
+* +10% {{tr|summon damage}}
+| 掉落自[[{{tr|Mourning Wood}}]]
+|-
+| {{item|Papyrus Scarab|mode=table}}
+|
+* +1 {{tr|minion capacity}}
+* +15% {{tr|summon damage}}
+* +2 {{tr|minion knockback}}
+|
+* {{item|Hercules Beetle}}
+* {{item|Necromantic Scroll}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Sun Stone|mode=table}}
+|
+在[[{{tr|daytime}}]]：
+* +10% {{tr|damage}}
+* +10% {{tr|melee speed}}
+* +0.5 {{tr|minion knockback}}
+|
+* 掉落自[[{{tr|Golem}}]]
+|-
+| {{item|Celestial Stone|mode=table}}
+|
+* +10% {{tr|damage}}
+* +10% {{tr|melee speed}}
+* +0.5 {{tr|minion knockback}}
+| 
+* {{item|Moon Stone}}
+* {{item|Sun Stone}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Celestial Shell|mode=table}}
+|
+* +10% {{tr|damage}}
+* +10% {{tr|melee speed}}
+* +0.5 {{tr|minion knockback}}
+在[[{{tr|night}}]]（不在水下时）：
+* +5.1% {{tr|melee speed}}
+|
+* {{item|Moon Shell}}
+* {{item|Celestial Stone}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|-
+| {{item|Destroyer Emblem|mode=table}}
+|
+* +10% {{tr|damage}}
+|
+* {{item|Avenger Emblem}}
+* {{item|Eye of the Golem}}
+* 在 {{item|Tinkerer's Workshop}} 制作
+|}
+
+=== {{tr|Buffs}} ===
+{{options/set|item|mode=table}}
+{| class="sortable terraria lined"
+! colspan=2 | {{tr|Buff}} !! class="unsortable" | 加成
+|-
+| {{item|Well Fed}}
+|
+* +5% {{tr|damage}}
+* +0.5 {{tr|minion knockback}}
+|-
+| {{item|Plenty Satisfied}}
+|
+* +7.5% {{tr|damage}}
+* +0.75 {{tr|minion knockback}}
+|-
+| {{item|Exquisitely Stuffed}}
+|
+* +10% {{tr|damage}}
+* +1 {{tr|minion knockback}}
+|-
+| {{item|Wrath}}
+|
+* +10% {{tr|damage}}
+|-
+| {{item|Cute Fishron Mount|image=Cute Fishron Mount (buff).png}}
+|
+* +15% {{tr|damage}}（{{tr|health}}低于 50% 时，下雨期间，在水中或离开水 6 {{tr|second}}）
+|-
+| {{item|Feral Bite|note2=（[[{{tr|Expert Mode}}]]独有）}}
+|
+* 降低{{tr|life regeneration}}
+* 可能施加[[{{tr|Darkness}}]]、[[{{tr|Cursed}}]]、[[{{tr|Confused}}]]、[[{{tr|Slow}}]]、[[{{tr|Weak}}]]、[[{{tr|Silenced}}]][[{{tr|debuffs}}]]
+* +20% {{tr|damage}}
+|-
+| {{item|Damage Nebula}}
+|
+* 最多 +45% {{tr|damage}}
+|-
+| {{item|Cerebral Mindtrick|note2=（[[{{tr|Expert Mode}}]]独有）}}
+|
+* +10% {{tr|summon damage}}
+|-
+| {{item|Bewitched}}
+|
+* +1 {{tr|Minion capacity}}
+|-
+| {{item|Strategist}}
+|
+* +1 {{tr|Sentry capacity}}
+|-
+| {{item|Summoning (buff)|Summoning}}
+|
+* +1 {{tr|Minion capacity}}
+|-
+| {{item|Weapon Imbue: Cursed Flames}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|Cursed Inferno}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Fire}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|On Fire!}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Gold}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|Midas}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Ichor}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|Ichor}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Nanites}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Poison}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|Poisoned}}]][[{{tr|debuff}}]]
+|-
+| {{item|Weapon Imbue: Venom}}
+|
+* [[{{tr|melee}}]]和[[{{tr|whip}}]]攻击对{{tr|enemies}}施加[[{{tr|Venom}}]][[{{tr|debuff}}]]
+|}
+{{options/reset|item}}
+
+== 备注 ==
+* 可以在手持[[{{tr|minion}}]]或[[{{tr|sentry-summoning weapon}}]]时按{{key|open}}，这会让相应{{tr|minion}}瞄准最接近{{tr|cursor}}的实体。只要目标处于{{tr|minions}}的视线内，它们就会专注攻击它。被瞄准的{{tr|enemy}}身上会显示旋转的白色曲线。
+
+<gallery>
+File:Minion Targeting Particles.png|[[1.4.0.1]] 后的标记图像。
+File:Minion Targeting Particles (old) 1.png|1.4.0.1 前的标记图像（目标移动时）。
+File:Minion Targeting Particles (old) 2.png|1.4.0.1 前的标记图像（目标静止时）。
+</gallery>
+
+* <section begin=modifier/>虽然所有{{tr|minion and sentry summon weapons}}均可获得'''{{tr|Mythical}}'''[[{{tr|modifier}}]]，但是'''{{tr|Ruthless}}'''{{tr|modifier}}通过增加{{tr|minion}}的{{tr|damage}}为{{tr|minion}}提供了更好的加成。{{tr|mythical}}所提供的[[{{tr|mana}}]]消耗降低，{{tr|speed}}、{{tr|critical strike chance}}和{{tr|knockback}}增加作用不大，因为{{tr|summon weapons}}仅需要使用一次{{tr|mana}}（在最初召唤时消耗而非{{tr|minion}}攻击时），{{tr|minions}}不能造成暴击，且即使有{{tr|modifiers}}也可以忽略它们的{{tr|knockback}}。但是，由于{{tr|damage}}取整，{{tr|Ruthless and Mythical modifiers}}对[[{{tr|Pre-Hardmode}}]]的{{tr|minion}}和{{tr|sentry}}提供相同的{{tr|damage}}加成。所以，除了[[{{tr|blade staff}}]]和[[{{tr|optic staff}}]]，只有才[[{{tr|hardmode}}]]{{tr|ruthless modifier}}才值得启用。<section end="modifier" />
+** 武器速度对于{{tr|minion}}或{{tr|sentry-summoning weapons}}来说不是很有用，因为这只会减少召唤{{tr|minion}}的时间。{{tr|Minions}}/{{tr|sentries}}并不会因为拥有增加速度的{{tr|modifier}}而攻击得更快。
+* 召唤后，{{tr|minion and sentry}}的属性会随着{{tr|player}}的{{tr|equipment}}/[[{{tr|buffs}}]]变化而变化。
+* {{tr|Minions and sentry}}从来不会{{tr|attack}}其它{{tr|players}}，这让它们在 [[PvP]] 中失去作用。一些{{tr|minion weapons}}可以在指定目标（[[{{tr|Frost Hydra}}]]、[[{{tr|Rainbow Crystal Staff}}]]等）, 或偶然造成{{tr|contact}}{{tr|damage}}（[[{{tr|Ravens}}]]、[[{{tr|Sharknados}}]]等）时{{tr|damage}}{{tr|players}}。
+* 所有可以{{tr|attack}}的[[{{tr|mounts}}]]都造成{{tr|summon damage}}。这包括以下坐骑:[[{{tr|Painted Horse Mount}}]]、[[{{tr|Majestic Horse Mount}}]]、[[{{tr|Dark Horse Mount}}]]、[[{{tr|Goat Mount}}]]、[[{{tr|Pirate Ship Mount}}]]、[[{{tr|Tree Mount}}]]、[[{{tr|Santank Mount}}]]、[[{{tr|Slime Mount}}]]、[[{{tr|Winged Slime Mount}}]]、[[{{tr|Basilisk Mount}}]]、[[{{tr|Unicorn Mount}}]]和[[{{tr|Scutlix Mount}}]]。
+* 注意，{{tr|minions and sentries}}即使是白天也会攻击{{tr|slimes}}，而名义上{{tr|slime}}此时是“中立”。
+* {{tr|Minions and sentries}}会在{{tr|player}}离开{{tr|world}}时消失，且不会在{{tr|player}}重新进入或进入其他{{tr|world}}时重新召唤。
+** 仅有的特例是[[{{tr|Finch Staff}}]]，当{{tr|player}}的{{tr|inventory}}中存有此法杖时，它会在进入{{tr|world}}时自动召唤一个{{tr|Baby Finch}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn / Terraria.Player.AutoFinchStaff}}
+
+== 小贴士 ==
+* 以{{tr|summon damage}}为目标则并不需要将[[{{tr|Avenger Emblem}}]]升级为[[{{tr|Destroyer Emblem}}]]，因为它们无法造成{{tr|critical hits}}。但是，如果{{tr|player}}正在使用非{{tr|summon weapon}}，{{tr|Destroyer Emblem}}则可加持他们。
+* 即使不是作为{{tr|summoner}}，也可在周围留下一个[[{{tr|minion}}]]或[[{{tr|sentry}}]]以助于清除弱小的{{tr|enemies}}。让{{tr|minion}}解决沿途的[[{{tr|bats}}]]、[[{{tr|slimes}}]]、[[{{tr|zombie}}]]等，可以显著提升{{tr|player}}在世界探索时的体验。当{{tr|player}}专注于建筑、[[{{tr|Fishing}}]]、收集[[{{tr|bait}}]]、砍伐[[{{tr|wood}}]]或者其他非战斗活动时，这种优势尤为明显——事实上，对于这些事项，十分值得去增加第二个{{tr|minion or sentry}}来抵御干扰。
+** {{tr|Minions and sentries}}可持续对{{tr|enemy}}造成{{tr|damage}}，且几乎不需要{{tr|player}}介入。这点[[{{tr|boss}}]]战期间尤为实用，可提供“被动”{{tr|damage}}来源。而{{tr|Sentries}}在此情况下则略逊于{{tr|minion}}，因为大部分{{tr|sentries}}（例如[[{{tr|Houndius Shootius}}]]、[[{{tr|Flameburst Tower}}]]或[[{{tr|Spider Turret}}]]）发射移速较慢的{{tr|projectiles}}，难以命中高速移动的{{tr|bosses}}，例如第二阶段的[[{{tr|Eye of Cthulhu}}]]。
+
+== 仆从最大化 ==
+=== 仆从数量 ===
+* 理论最大的{{tr|minion capacity}}是 11 个。这需要装备[[{{tr|Stardust armor}}]]（不计入其{{tr|Stardust Guardian}}），以及[[{{tr|Papyrus Scarab}}]]、[[{{tr|Necromantic Scroll}}]]、和[[{{tr|Pygmy Necklace}}]]{{tr|accessories}}，还需要来自[[{{tr|Summoning Potion}}]]和[[{{tr|Bewitching Table}}]]的暂时性[[{{tr|buff}}]]。
+
+=== 哨兵数量 ===
+* 除开[[{{tr|Old One's Army}}]][[{{tr|event}}]]期间[[{{tr|Tavernkeep}}]]的{{tr|sentries}}，理论最大{{tr|sentry}}数量为 5。这需要装备[[{{tr|Valhalla Knight armor}}]]、[[{{tr|Shinobi Infiltrator armor}}]]、[[{{tr|Red Riding armor}}]]或[[{{tr|Dark Artist armor}}]]，[[{{tr|Squire's Shield}}]]、[[{{tr|Apprentice's Scarf}}]]、[[{{tr|Monk's Belt}}]]或[[{{tr|Huntress's Buckler}}]]（它们的效果不会叠加）并且具有[[{{tr|War Table}}]]的效果。
+
+== 花絮 ==
+* 所有[[{{tr|minion-summoning weapons}}]]（除[[{{tr|Abigail's Flower}}]]、[[{{tr|Houndius Shootius}}]]和[[{{tr|Terraprisma}}]]之外)和[[{{tr|Tavernkeep}}]]的三级[[#{{tr|Tavernkeep's sentries}}|{{tr|sentry-summoning weapons}}]]的名称中都有“Staff（{{tr|Staff}}）”一词。
+** {{tr|Tavernkeep}}的二级{{tr|sentry-summoning weapons}}的名称中都有“Cane（{{tr|Cane}}）”一词。同样的，一级{{tr|weapons}}的名称中都有“Rod（{{tr|Rod}}）”一词。这可以用于区别各个哨兵武器。
+** 即使如此，许多魔法武器和工具也称为“{{tr|Staff}}”或“{{tr|Rod}}”，例如[[{{tr|Frost Staff}}]]和[[{{tr|Nimbus Rod}}]]。
+
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+[[Category:召唤武器| ]]
+
+{{language info|en=Summon weapons}}

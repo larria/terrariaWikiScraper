@@ -1,0 +1,66 @@
+{{npc infobox
+| auto = 66
+| idprojectile = 44
+| image = Voodoo Demon.gif
+| image2 = Voodoo Demon (old).png
+| type = Flying Enemy
+| environment = The Underworld
+| damage2 = &#32;{{note|small=y|({{tr|melee}})}}<br/>{{modes|42|84|126}} {{note|small=y|({{tr|ranged attack}})}}
+| debuff = Darkness
+| debuffduration = {{modes|15|30|45}} {{tr|seconds}}
+| Demon Scythe|1| 2.86%
+| Guide Voodoo Doll|1|100%
+| sound1 = Item 8.wav
+| soundcaption1 = {{tr|Demon Sickle}}
+| sound2 = Zombie 26.wav, Zombie 27.wav, Zombie 28.wav, Zombie 29.wav
+| soundcaption2 = 空闲
+}}
+'''{{tr|Voodoo Demon}}'''是一种出现在[[{{tr|The Underworld}}]]的稀有[[{{tr|Enemy}}]]。它的行为和[[{{tr|Demon}}]]完全一致，但外观上略有差异：它的一只爪子上头下脚上地抓着一个小[[{{tr|Guide Voodoo Doll}}]]，并且它没有{{tr|Demons}}所戴着的蓝色手镯和脚镯。
+
+{{tr|Voodoo Demons}}总是会掉落{{tr|Guide Voodoo Doll}}。注意由于{{tr|the Underworld}}的地形，如果娃娃掉进[[{{tr|lava}}]]{{tr|pools}}中，则打败{{tr|a Voodoo Demon}}可能会导致意外地召唤[[{{tr|Wall of Flesh}}]]。
+
+{{Lifeform Analyzer note}}
+
+== 备注 ==
+* 就像普通{{tr|Demons}}那样，{{tr|Voodoo Demons}}对{{tr|lava}}免疫。
+* 与{{tr|Demon}}和[[{{tr|Arch Demon}}]]相比，它们的{{tr|spawn rate}}相当低。
+* 仅当{{tr|the Guide Voodoo Doll}}掉落成为物品并被{{tr|Lava}}摧毁后（只要{{tr|guide}}还活着）才会召唤{{tr|The Wall of Flesh}}。因为{{tr|the Voodoo Demon}}整个就免疫{{tr|lava}}，所以当它接触{{tr|lava}}时并不会让娃娃被摧毁。
+
+== 小贴士 ==
+* 可能值得投入时间在{{tr|the Underworld}}中建造一座厚 1 格的横跨大片区域的桥。这样可以确保{{tr|Guide Voodoo Dolls}}不会意外落入{{tr|lava}}中，也使得与{{tr|Wall of Flesh}}的战斗更可控。
+** 为了高效地刷{{tr|Guide Voodoo Dolls}}，可能值得用 1 格厚的桥作为同时对抗多个{{tr|Demons}}的{{tr|arena}}，因为{{tr|Voodoo Demons}}的{{tr|spawn rate}}很低。
+** 但是，值得注意的是，在{{eversions|1.4.0.1}}中 刷{{tr|Guide Voodoo Doll}}并不那么有用，因为将{{tr|Guide}}自身丢进{{tr|lava}}也一样可以召唤{{tr|the Wall of Flesh}}。
+* 不建议在{{tr|Hardmode}}中且已有一个{{tr|mechanical boss}} 被打败之后来刷{{tr|Voodoo Demons}}，因为它们的生成会被[[{{tr|Red Devil}}]]和[[{{tr|Tortured Soul}}]]所覆盖，从而显著降低了其平均{{tr|spawn rate}}——更别提{{tr|Hellbats}}和{{tr|Lava Slimes}}的高{{tr|spawn rate}}。
+* {{eicons|1.4.4}} 使用[[{{tr|Secret world seeds}}|{{tr|Secret world seed}}]] <code>for the worthy</code> 会让刷的过程变得更加容易，因为其中大部分{{tr|demons}}都被替换为了{{tr|Voodoo Demons}}。
+
+== 花絮 ==
+* {{tr|Voodoo Demons}}被玩家伤害时所发出的声音在 {{eil|1.3.0.1}} 中没有随着常规{{tr|Demons}}一并更新。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可被{{tr|Lifeform Analyzer}}探测到。}}
+{{history|Desktop 1.4.0.1|
+** 外观更新。
+** 现在发出和普通{{tr|demons}}相同的声音。}}
+{{history|Desktop 1.3.0.1|提升{{tr|Spawn rate}}。}}
+{{history|Desktop 1.2.0.3|现在会掉落{{tr|the Demon Banner}}。}}
+{{history|Desktop 1.0.6|
+** 伤害由 50 降低至 32。
+** 生命值由 120 提升至 140。
+** {{tr|Spawn rate}}稍微提高。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Spawn rate}}提升。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Spawn rate}}提升。（{{icon/ps4}}）}}
+{{history|Console 1.02|现在会掉落{{tr|the Demon Banner}}。}}
+{{history|Console-Release|Introduced=y|伴随着{{tr|Desktop}} 1.0.6 的变更引入。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|{{tr|Spawn rate}}提升。}}
+{{history|Mobile 1.2.6508|现在会掉落{{tr|the Demon Banner}}。}}
+{{history|Mobile-Release|Introduced=y|伴随着{{tr|Desktop}} 1.0.6 的相应变更引入。}}
+{{history|3DS-Release|Introduced=y|随{{tr|Desktop}} 1.2.0.3 为止的更改引入。}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Voodoo Demon}}

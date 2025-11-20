@@ -1,0 +1,42 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3198
+| type = Furniture
+| width = 3 | height = 2
+| buff = Sharpened
+| sounduse = Item 37.wav
+| tags = plunder / plunder:Underground Jungle / vendor / vendor:Merchant
+}}
+{{redirect|{{tr|Sharpened}}|{{tr|modifier}}|{{tr|Modifiers}}#{{tr|Melee}}}}
+
+'''{{tr|Sharpening Station}}'''是一种[[{{tr|furniture}}]]{{tr|item}}。将其放置并对其按下 {{key|open}} 按键会提供'''{{tr|Sharpened}}'''[[{{tr|buff}}]]，会将所有[[{{tr|melee weapons}}]]的[[{{tr|armor penetration}}]]提高 12。它可以在[[{{tr|Underground Jungle}}]]中的[[{{tr|Underground Cabin}}]]内自然生成，且在[[{{tr|Hardmode}}]]期间由[[{{tr|Merchant}}]]以 {{iteminfo|Sharpening Station|buy}} 的价格出售。{{tr|Sharpened buff}}会持续至玩家[[{{tr|Death}}]]或离开世界，也可在任意时候{{buffduration|nomaintext=y}}来取消。
+
+与[[{{tr|Buffs}}#{{tr|Equipment}}|{{tr|equipment buff}}{{tr|items}}]]不同，激活{{tr|buff}}要求{{tr|Sharpening Station}}必须被放置。它可以被[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]挖掘以重新捡起，即使{{tr|buff}}已被激活，此行为也不会终止{{tr|buff}}。放置它需要 3×2 格的充足空间。
+
+== 备注 ==
+* {{tr|Sharpening Station}}可以被无限次激活，没有冷却。它永远不会被消耗，所有玩家都能用它来获得{{tr|buff}}。
+* {{tr|Sharpening Station}}的{{tr|armor penetration bonus}}实际上会检查玩家是否手持的是{{tr|melee weapon}}{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBuffs}}，因此它也可以通过切换所持物品的方式应用于[[{{tr|ranged weapons}}|{{tr|ranged}}]]、[[{{tr|magic weapons}}|{{tr|magic}}]]或[[{{tr|summon weapons}}]]造成的{{tr|damage}}、甚至于无{{tr|damage type}}的{{tr|damage}}。然而，由于{{tr|ranged}}和{{tr|magic weapons}}不像[[{{tr|minion}}]]/[[{{tr|sentry}}]]{{tr|summon weapons}}那样能持续造成伤害，所以通常只有{{tr|summon weapons}}以及{{tr|mounts}}适合实际使用。
+** 不过，这一{{tr|bonus}}不适用于{{eil|whips}}，这代表玩家需要放弃{{tr|whip bonuses}}来换取这额外的 12 {{tr|armor penetration}}。
+
+== 花絮 ==
+* 在现实生活中，利器站也被称为{{wikipedia|grindstone|磨石（grindstone）}}，用于使刀具更加锋利。
+
+== 历史 ==
+{{history|Desktop 1.4.4|移除了 10 分钟的{{tr|Buff duration}}。{{tr|buff}}现在会持续到玩家死亡或离开世界。}}
+{{history|Desktop 1.4.1|现在可从[[{{tr|Hardmode}}]]期间的[[{{tr|Merchant}}]]处购买。}}
+{{history|Desktop 1.4.0.1|[[{{tr|Armor penetration}}]]奖励提高到三倍，由 4 提升至 12。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Sharpening Station}}

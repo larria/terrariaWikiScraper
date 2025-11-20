@@ -1,0 +1,596 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 576
+| type = Accessory / Furniture
+| width = 2 | height = 2
+| tags = hardmode / buy / vendor:Wizard
+}}
+[[File:Placed Music Boxes.png|frame|放置的{{tr|Music Boxes}}，未激活与激活状态。点击图片查看各行的简介。]]
+
+'''{{tr|Music Box}}'''是[[{{tr|Hardmode}}]][[{{tr|Accessory}}]]，以 {{iteminfo|Music Box (Overworld Day)|buy}} 的价格自[[{{tr|Wizard}}]]处购买。当{{tr|Music Box}}装备在{{tr|accessory}}栏内时，它会在经过一段随机时长的延迟后录下当前正在播放的游戏[[音乐]]，{{eicons|1.4.0.1}}并通过一个{{sound|[[Media: Item 166.wav|录制成功音效]]|Item 166.wav|nofallback=y}}来提示玩家。这也包括由其他{{tr|Music Boxes}}播放的配乐。一旦录下音乐，它就会变为下面列出的那些{{tr|music boxes}}之一。
+
+录音后的{{tr|Music Box}}可以用以下两种方法之一来播放：
+* 将其作为{{tr|accessory}}来装备。
+* 将其作为[[{{tr|furniture}}]]放置并用 {{key|open}} 按钮或[[{{tr|wire}}|电路]]来激活之。
+
+在{{eversions|1.4.4.9}}中，可用[[{{tr|Shimmer Transmutation}}]]将录制好的{{tr|Music Box}}变为空的{{tr|Music Box}}。
+
+目前有 <!-- use static value, easier for translate.
+
+-->{{eicons|1.4.4}} 88<!--
+{{#vardefineecho:musicb-dsk|{{#dpl:titlematch=%Music Box_%|redirects=only|category=Desktop content|resultsheader=%PAGES%|format=,,,}}}}+1 （+1: "Music Box"(item ID 576) itself.）
+{{#vardefineecho:musicb-mbl|{{#dpl:titlematch=Music Box_%|redirects=only|category=Mobile content|resultsheader=%PAGES%|format=,,,}}}}+1
+--> / {{eicons|1.2.4|not=1.3.3}} 34<!--{{#vardefineecho:musicb-old|{{#dpl:titlematch=Music Box_%|redirects=only|category=Old-gen console content|resultsheader=%PAGES%|format=,,,}}}}+1
+--> 种不同的{{tr|Music Boxes}}。
+
+在{{3DS version}}上，{{tr|the Music Box}}因为不稳定而成为[[{{tr|Unobtainable features}}]]。
+
+== 录音后的{{tr|Music Boxes}} ==
+{{options/set|item|nolink=y|anchor=y}}
+{| class="terraria lined" style="text-align:left" id="music-boxes-table"
+! {{tr|Item}} !! style="width: -15em;" | 区域 !! 链接 !! style="width: 26em;" | 曲目
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=562|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Forest}}]]中<br/>（当不在播放《Alt Overworld Day》时）
+| class="small" | [http://re-logic.bandcamp.com/track/overworld-day Bandcamp]、[https://www.youtube.com/watch?v=dgjxF7pi0vU YouTube]
+|[[File:Music-Overworld Day.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1600|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Forest}}]]中<br/>（当不在播放《Overworld Day》时）
+| class="small" | [http://re-logic.bandcamp.com/track/alternate-day Bandcamp]、[https://www.youtube.com/watch?v=jobetLR0EXc YouTube]
+|[[File:Music-Alternate Day.mp3|400px]]
+|
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=564|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]期间在[[{{tr|Surface}}]]的[[{{tr|Forest}}]]和[[{{tr|The Hallow}}]]中
+| class="small" | [http://re-logic.bandcamp.com/track/overworld-night Bandcamp]、[https://www.youtube.com/watch?v=xyPFeUZrK8k YouTube]
+|[[File:Music-Overworld Night.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1601|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Rain}}|下雨]]时在[[{{tr|Forest}}|{{tr|Forest Biome}}]]中
+| class="small" | [http://re-logic.bandcamp.com/track/rain Bandcamp]、[https://www.youtube.com/watch?v=WKKFgOznXkI YouTube]
+|[[File:Music-Rain.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1596|tags=hardmode|imageinfo=no}}（{{eicons|1.3.0.1}}）
+| class="small" | [[{{tr|Snow Biome}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/ice Bandcamp]、[https://www.youtube.com/watch?v=HPjl7tIJfAE YouTube]
+|[[File:Music-Snow.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1602|tags=hardmode|imageinfo=no}}（{{eicons|1.3.0.1}}）
+| class="small" | {{tr|Ice Biome}}
+| class="small" | [https://www.youtube.com/watch?v=bq0XOMBAay8 YouTube]
+|[[File:Music-Ice_biome.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1603|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Desert}}]]
+| class="small" | [https://www.youtube.com/watch?v=uKeNbwturvk YouTube]
+|[[File:Music-Desert.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1604|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Ocean}}]]中 {{eicons|1.4.0.1}}，<br/> [[{{tr|Ocean}}]]中 {{eicons|1.4.0.1|invert=y|3ds=n}}
+| class="small" | [http://re-logic.bandcamp.com/track/ocean Bandcamp] {{eicons|1.3.0.1}}、[https://www.youtube.com/watch?v=R6j7Uc-Ifz4 YouTube] {{eicons|1.3.0.1}}、<br/>[https://www.youtube.com/watch?v=AfJiZx8e-gY YouTube] {{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}
+|[[File:Music-Ocean Day.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4077|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]在[[{{tr|Ocean}}]]中
+| class="small" |
+|[[File:Music-Ocean_Night.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4079|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Space}}]]
+| class="small" |
+|[[File:Music-Space Day.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1597|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]在[[{{tr|Space}}]]中 {{eicons|1.4.0.1}}，<br/> [[{{tr|Space}}]]中 {{eicons|1.4.0.1|invert=y|3ds=n}}
+| class="small" | [http://re-logic.bandcamp.com/track/space Bandcamp] {{eicons|1.3.0.1}}、[https://www.youtube.com/watch?v=hYvppnyi5uk YouTube] {{eicons|1.3.0.1}}、<br/>[https://www.youtube.com/watch?v=apLe5oypQyg YouTube] {{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}
+|[[File:Music-Space Night.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=566|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]<br/>（当不在播放《Alt Underground》时）
+| class="small" | [http://re-logic.bandcamp.com/track/underground-2 Bandcamp]、[https://www.youtube.com/watch?v=A36bXNKvuOw YouTube]
+|[[File:Music-Underground.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1964|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]<br/>（当不在播放《Underground》时）
+| class="small" | [https://re-logic.bandcamp.com/track/alternate-underground Bandcamp]、[https://www.youtube.com/watch?v=CkYcpVR_JLg YouTube]
+|[[File:Music-Alternate Underground.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1610|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Glowing Mushroom biome}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/mushrooms Bandcamp]、[https://www.youtube.com/watch?v=ZHUumfml2Ec YouTube]
+|[[File:Music-Mushrooms.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=568|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Jungle}}]]中 {{eicons|1.4.0.1}}，<br/>[[{{tr|Jungle}}]]中 {{eicons|1.4.0.1|invert=y|3ds=n}}，<br/>[[{{tr|Underground Jungle}}]]中 {{eicons|1.4.0.1|invert=y|3ds=n}}
+| class="small" | [http://re-logic.bandcamp.com/track/jungle Bandcamp]、[https://www.youtube.com/watch?v=xZTFRULQLlU YouTube]
+|[[File:Music-Jungle.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=569|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|The Corruption}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/corruption Bandcamp]、[https://www.youtube.com/watch?v=2AE6Shc6tV8 YouTube]
+|[[File:Music-Corruption.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=570|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Corruption}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/underground-corruption Bandcamp]、[https://www.youtube.com/watch?v=fiti2HI0Kk0 YouTube]
+|[[File:Music-Underground Corruption.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1598|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|The Crimson}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/crimson Bandcamp]、[https://www.youtube.com/watch?v=LcXDAONbaDE YouTube]
+|[[File:Music-Crimson.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=2742|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Crimson}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/underground-crimson Bandcamp]、[https://www.youtube.com/watch?v=DIK5MIUnBsM YouTube]
+|[[File:Music-Underground Crimson.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=571|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|The Hallow}}]]中
+| class="small" | [http://re-logic.bandcamp.com/track/the-hallow Bandcamp]、[https://www.youtube.com/watch?v=hNkr3-YNZaA YouTube]
+|[[File:Music-The Hallow.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=573|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Hallow}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/underground-hallow Bandcamp]、[https://www.youtube.com/watch?v=-1MhORswfHM YouTube]
+|[[File:Music-Underground Hallow.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3237|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|The Underworld}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/underworld Bandcamp]、[https://www.youtube.com/watch?v=CoPWPz3Kdrw YouTube]
+|[[File:Music-Underworld.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1605|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Dungeon}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/dungeon Bandcamp]、[https://www.youtube.com/watch?v=bGFBL_FYF9o Youtube]
+|[[File:Music-Dungeon.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1608|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Jungle Temple}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/lihzahrd Bandcamp]、[https://www.youtube.com/watch?v=yt0hnTAYWow YouTube]
+|[[File:Music-Lihzahrd.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=567|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|King Slime}}]]、[[{{tr|Eye of Cthulhu}}]] {{eicons|1.3.0.1}}、<br/>[[{{tr|Eater of Worlds}}]]、[[{{tr|Skeletron}}]]、[[{{tr|Skeletron Prime}}]]、<br/>[[{{tr|Duke Fishron}}]] {{eicons|1.4.0.1|invert=y|3ds=n}}、[[{{tr|Goblin Invasion}}]] {{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}
+| class="small" | [http://re-logic.bandcamp.com/track/boss-1 Bandcamp]
+|[[File:Music-Boss 1.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=572|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Wall of Flesh}}]]、[[{{tr|The Twins}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/boss-2 Bandcamp]
+|[[File:Music-Boss 2.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=574|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|The Destroyer}}]]、[[{{tr|Frost Legion}}]]、<br/>[[{{tr|Brain of Cthulhu}}]]、{{eil|The Torch God}}
+| class="small" | [http://re-logic.bandcamp.com/track/boss-3 Bandcamp]、[https://www.youtube.com/watch?v=SB37-6OWAYg YouTube]
+|[[File:Music-Boss 3.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1599|tags=hardmode|imageinfo=no}}（{{eicons|1.3.0.1}}）
+| class="small" | [[{{tr|Golem}}]]、[[{{tr|Lunatic Cultist}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/golem Bandcamp]、[https://www.youtube.com/watch?v=c7NRm46iqnY YouTube]
+|[[File:Music-Golem.mp3|400px]]
+|-
+|{{item infobox|view=void|type=Furniture|width=2|height=2|auto=1892|tags=hardmode|imageinfo=no}}{{item|nolink=y|Music Box (Boss 4)|id=1892 / 5026}}&ensp;({{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}<ref name="ConsoleSwitched" />)
+| class="small" | [[{{tr|Queen Bee}}]]、[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Ocram}}]]
+| class="small" | [https://www.youtube.com/watch?v=8jIwsUL54QY YouTube]
+|
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1607|tags=hardmode|imageinfo=no}}（{{eicons|1.3.0.1}}）
+| class="small" | [[{{tr|Queen Bee}}]]
+| class="small" | [https://www.youtube.com/watch?v=HSyCu3rNIuE YouTube]
+|[[File:Music-Boss 5.mp3|400px]]
+|-
+|{{item|nolink=y|Music Box (Boss 5)|id=1607}}&ensp;({{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}<ref name="ConsoleSwitched" />)
+| class="small" | [[{{tr|Golem}}]]、[[{{tr|Pirate Invasion}}]]
+| class="small" | [https://www.youtube.com/watch?v=c7NRm46iqnY YouTube]
+|
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5112|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Deerclops}}]]
+| class="small" |
+|[[File:Music-Deerclops.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4979|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Queen Slime}}]]
+| class="small" |
+|[[File:Music-Queen Slime.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1606|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Plantera}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/plantera Bandcamp]、[https://www.youtube.com/watch?v=c41AkfCgNcg YouTube]
+|[[File:Music-Plantera.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4985|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Empress of Light}}]]
+| class="small" |
+|[[File:Music-Empress of Light.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4990|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Duke Fishron}}]]
+| class="small" |
+|[[File:Music-Duke Fishron.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=563|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]]、[[{{tr|Blood Moon}}]]、[[{{tr|The Underworld}}]] {{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}
+| class="small" | [http://re-logic.bandcamp.com/track/eerie Bandcamp]、[https://www.youtube.com/watch?v=R7klIDwR8XA YouTube]
+|[[File:Music-Eerie.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1609|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Solar Eclipse}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/eclipse Bandcamp]、[https://www.youtube.com/watch?v=uyPnsB_0Tc8 YouTube]
+|[[File:Music-Eclipse.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3371|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Goblin Invasion}}]][[{{tr|Event}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/goblin-army Bandcamp]、[https://www.youtube.com/watch?v=tocVng5Mnfg YouTube]
+|[[File:Music-Goblin Army.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3236|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Pirate Invasion}}]][[{{tr|Event}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/pirate-invasion Bandcamp]、[https://www.youtube.com/watch?v=PufF-yq2ZQ8 YouTube]
+|[[File:Music-Pirate Invasion.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3235|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Martian Madness}}]][[{{tr|Event}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/martian-madness Bandcamp]、[https://youtube.com/watch?v=OB9Dceul7Sc YouTube]
+|[[File:Music-Martian Madness.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1963|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Pumpkin Moon}}]][[{{tr|Event}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/pumpkin-moon Bandcamp]、[https://www.youtube.com/watch?v=kqU5HXwlOWk YouTube]
+|[[File:Music-Pumpkin Moon.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=1965|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Frost Moon}}]][[{{tr|Event}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/frost-moon Bandcamp]、[https://www.youtube.com/watch?v=m7A1UhIgemE YouTube]
+|[[File:Music-Frost Moon.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3370|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Lunar Events}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/lunar-boss Bandcamp]、[https://www.youtube.com/watch?v=Inc-R5kdooE YouTube]
+|[[File:Music-Lunar Boss.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3044|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Moon Lord}}]]
+| class="small" | [https://re-logic.bandcamp.com/track/moon-lord Bandcamp]、[https://www.youtube.com/watch?v=uSFNAC4bqUA YouTube]
+|[[File:Music-Moon Lord.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3796|tags=hardmode|imageinfo=no}}
+| class="small" | 在[[{{tr|Desert}}]]中处于[[{{tr|sandstorm}}]]期间时
+| class="small" | [https://www.youtube.com/watch?v=bhyAn5qB-hY YouTube]
+|[[File:Music-Sandstorm.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=3869|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Old One's Army}}]][[{{tr|Event}}]]
+| class="small" | [https://www.youtube.com/watch?v=7XXIZhQnOdI YouTube]
+|[[File:Music-Old One's Army.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4078|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Slime Rain}}]]
+| class="small" |
+|[[File:Music-Slime Rain.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4080|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Towns}}|{{tr|Town}}]]中
+| class="small" |
+|[[File:Music-Town Day.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4081|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]在[[{{tr|Towns}}|{{tr|Town}}]]中
+| class="small" |
+|[[File:Music-Town Night.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4082|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Windy Day}}]]
+| class="small" |
+|[[File:Music-Windy Day.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4237|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Crafting}}]]
+| class="small" |
+|[[File:Music-Contest_Winner.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4356|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Crafting}}]]
+| class="small" |
+|[[File:Music-Journey's Beginning.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4357|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Thunderstorm}}]]
+| class="small" |
+|[[File:Music-Storm.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4358|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Graveyard}}]]
+| class="small" |
+|[[File:Music-Graveyard.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4421|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Jungle}}]]
+| class="small" |
+|[[File:Music-Underground_Jungle.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4606|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]在[[{{tr|Jungle}}]]中
+| class="small" |
+|[[File:Music-Surface_Night_Jungle.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4991|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Rain}}|下雨]]时在[[{{tr|Forest}}]]中，上午 4:30 到上午 7:30 之间
+| class="small" |
+|[[File:Music-Morning_Rain.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=4992|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Crafting}}]]
+| class="small" | [https://www.youtube.com/watch?v=yrRmVoN860s YouTube]
+|[[File:Music-Title (Console).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5006|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Desert}}]]
+| class="small" |
+|[[File:Music-Underground Desert.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5014|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Rain}}|下雨]]时在[[{{tr|Forest}}|{{tr|Forest Biome}}]]中<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Rain (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5015|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|Forest}}]]中<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Forest Day (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5016|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Night}}]]在[[{{tr|Surface}}]]、在[[{{tr|Forest}}]]和[[{{tr|The Hallow}}]]中<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Forest Night (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5017|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground}}]]、[[{{tr|Cavern}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Main_Theme_(Underground)_(Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5018|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Desert}}]]、[[{{tr|Underground Desert}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Desert (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5019|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Ocean}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Ocean (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5020|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Glowing Mushroom biome}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Crystal Caves (Mushrooms) (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5021|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Dungeon}}]]、[[{{tr|Temple}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Dungeon (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5022|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Space}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Space (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5023|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|The Underworld}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Underworld (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5024|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Snow biome}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Arctic (Snow) (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5025|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Corruption}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Corruption (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5026|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Corruption}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Underground Corruption (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5027|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Crimson}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Crimson (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5028|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Crimson}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Underground Crimson (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5029|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Ice biome}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Ice (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5030|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Underground Hallow}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Underground Hallow (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5031|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Meteorite}}]]、[[{{tr|Blood Moon}}]]、[[{{tr|Solar Eclipse}}]]、[[{{tr|Graveyard}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Eerie (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5032|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Duke Fishron}}]]、[[{{tr|Empress of Light}}]]、[[{{tr|Golem}}]]、[[{{tr|Lunatic Cultist}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Skeletron Prime}}]]、[[{{tr|The Destroyer}}]]、[[{{tr|The Twins}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Boss 2 (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5033|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Brain of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]、[[{{tr|Eye of Cthulhu}}]]、[[{{tr|King Slime}}]]、[[{{tr|Queen Bee}}]]、[[{{tr|Skeletron}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Boss 1 (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5034|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Goblin Army}}]]、[[{{tr|Old One's Army}}]]、[[{{tr|Frost Legion}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Martian Madness}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Invasion (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5035|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Lunar Events}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-The Towers (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5036|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Moon Lord}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Lunar Boss (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5037|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Plantera}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Plantera (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5038|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Jungle}}]]、[[{{tr|Underground Jungle}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Jungle (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5039|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Wall of Flesh}}]]<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Wall of Flesh (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5040|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Day and night cycle}}|{{tr|Day}}]]在[[{{tr|The Hallow}}]]中<ref name="OtherworldToggle" />
+| class="small" |
+|[[File:Music-Hallow (Otherworldly).mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5044|tags=hardmode/buy/vendor:Princess|imageinfo=no}}
+| class="small" | 购买自[[{{tr|Princess}}]] / 在播放[[{{tr|credits}}]]时
+| class="small" |
+|[[File:Music-Journey's End.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=5362|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Aether}}]]
+| class="small" |
+|[[File:Music-Aether.mp3|400px]]
+|-
+|{{item infobox|view=item|type=Furniture|width=2|height=2|auto=565|tags=hardmode|imageinfo=no}}
+| class="small" | [[{{tr|Crafting}}]]
+| class="small" | [http://re-logic.bandcamp.com/track/title-screen Bandcamp] {{eicons|1.3.0.1}}、[https://www.youtube.com/watch?v=8K-p86CHgHQ YouTube] {{eicons|1.3.0.1}}, <br/>
+[https://www.youtube.com/watch?v=yrRmVoN860s YouTube] {{eicons|1.3.0.1|invert=y|3ds=n|mobile=n}}
+|[[File:Music-Title Screen.mp3|400px]]
+|-
+|{{item infobox|view=void|type=Furniture|width=2|height=2|auto=1891|tags=hardmode|imageinfo=no}}{{item|nolink=y|Music Box (Tutorial)|id=1891 / 5025}}
+| class="small" | [[{{tr|Crafting}}]]
+| class="small" | [https://www.youtube.com/watch?v=HuINhsEizk8 YouTube]
+|[[File:Music-Tutorial.mp3|400px]]
+|}{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|ingredient=LIKE Music Box%|link=n|showresultid=y|expectedrows=5}}
+
+== 备注 ==
+* 在游戏的音乐音量设置为 0 时，{{tr|A Music Box}}不会录音。
+* {{tr|A Music Box}}的卖出价总是 {{iteminfo|Music Box (Overworld Day)|sell}}，无论它是否已经录了什么东西。
+* 激活放置的已录音{{tr|Music Box}}会使附近的所有玩家都听到其音乐。
+* {{tr|Music Boxes}}会录下其他放置的{{tr|Music Boxes}}播放的音乐。在需要多个{{tr|music boxes}}来覆盖大片区域时这一点会很有用。
+* {{tr|Music Box}}的实际范围和玩家的分辨率大小相关，只要它位于玩家屏幕边缘 30 {{tr|tiles}}以内，就可听见其{{tr|music}}。
+* 标题{{tr|Music Box}}要用“地表世界”制作，不能用“地表世界备选曲”。同样，它的制作要用“{{tr|Underground}}”，不能用“{{tr|Underground}}备选曲”。
+* 标题{{tr|Music Box}}在[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界中无法制作，因为其配方是在引入{{tr|the Crimson}}之前就定下的。不过，可以用同另一个有[[{{tr|The Corruption}}|{{tr|Corruption}}]]的世界来搞定，或者（{{eicons|1.4.0.1}}）在{{tr|Hardmode}}中让{{tr|Dryad}}住在{{tr|Graveyard}}中来从她那里购买{{tr|Corrupt Seeds}}。
+* 虽然《标题》、《旅程开始》、《标题备选曲》、和《白天混音》{{tr|Music Boxes}}一开始必须靠制作得来，但它们也可以被转录，和所有其他{{tr|Music Box}}一样。
+* 和大多数可装备{{tr|accessories}}不同，玩家身上装备着的{{tr|Music Box}}不可见。
+* {{icon/desktop}} 当{{tr|A Music Box}}装备在[[{{tr|vanity}}]]{{tr|accessory slot}}或当其位于{{tr|inventory slot}}中时不会录音。但是，如果已经录有声音，这种情况下依然可以收听。
+* {{icon/console}} {{tr|Music Box}}可能需要长达 10 分钟才能录下一首{{tr|music}}。
+* {{eicons|3DS=y}} {{tr|The Music Box}}目前是无法获得的。虽然可以通过{{tr|inventory}}编辑器添加它，但它的相关代码不完整（导致出现意料之外的外观），在将其装备上或离开世界时会消失。
+* {{icon/oldgen}} {{tr|Music Boxes}}实际上''可以''进行[[{{tr|reforge}}]]并拥有[[{{tr|modifiers}}]]。{{tr|Music Box}}也有可能（但相对罕见）在录音之后得到随机{{tr|modifier}}。
+* {{tr|The Journey's End}}{{tr|Music Box}}的行为取决于它是装备在{{tr|social slot}}还是{{tr|accessory slot}}。装备在{{tr|social slot}}只会播放音乐，而装备在{{tr|accessory slot}}则播放完整的{{tr|credits}}序列。
+
+== 小贴士 ==
+* {{tr|Event}}和 {{tr|boss}} 的音乐可能需要尝试很多次才能录下，因为需要的时间是随机的。最大限度地延长这些遭遇的时间能为成功录音提供更好的机会。
+
+== 花絮 ==
+* 要把全部{{tr|Music Box}}各买一个所需的[[钱|金钱]]总量是 <!--
+-->{{icon|desktop}} {{buy expr|Music Box (Overworld Day)|*({{#var:musicb-dsk}}-1)<!--minus craftable Music Box (Title)-->}} / <!--
+-->{{icon|console}} {{buy expr||100000*({{#var:musicb-cns}}-2)<!--minus craftable Music Box (Title) and (Tutorial)-->}} / <!--
+-->{{icon|mobile}} {{buy expr||100000*({{#var:musicb-mbl}}-1)<!--minus craftable Music Box (Title)-->}} / <!--
+-->{{icon|old-gen console}} {{buy expr||100000*({{#var:musicb-old}}-2)<!--minus craftable Music Box (Tutorial) and (Tutorial)-->}}<!--
+-->，加上可制作的那些需要的 <!--
+-->{{eicons|Music Box (Title)|not=Music Box (Tutorial)}} {{coin|{{#expr:100000*12<!--Music Box (Title) is crafted from 12 Music Boxes-->}}}} / <!--
+-->{{eicons|Music Box (Tutorial)}} {{coin|{{#expr:100000*(12+5)<!--Music Box (Title) is crafted from 12 Music Boxes; Music Box (Tutorial) is crafted from 5 Music Boxes-->}}}}<!--
+-->。
+* {{tr|Music Box (Tutorial)}}一开始是用主机版/移动版独有的{{tr|Music Boxes}}制作的。从 [[1.2]] 开始，除了{{tr|Music Box (Tutorial)}}本身之外，这些{{tr|Music Boxes}}都不再是独有的了。
+* 在{{eil|1.3.0.1}}之前，制作{{tr|the Music Box (Title)}}所要求的{{tr|ingredients}}数量是游戏内所有{{tr|crafting recipe}}中最多的。
+* 制作{{tr|Music Box (Title)}}所需要的十二个{{tr|music boxes}}包含截至 [[1.1]] 更新时所存在的十二首曲子——那时候是游戏的所有曲子。虽然 1.2 和更高版本添加了新的曲子，但其{{tr|recipe}}依然保持不变。
+** 制作{{tr|Music Box (Alt Title)}}所需的六个{{tr|music boxes}}指向原本{{tr|Terraria}}的{{tr|console}}独有的曲子。随着 1.2 更新，《The Desert》、《Ice》、和《Boss 5》主题曲被集成到{{tr|desktop version}}中，其他的则在 1.4 中集成。
+** 制作{{tr|Music Box (Journey's Beginning)}}所需的十二个{{tr|music boxes}}包含了为 1.4 更新所创作的十二首原创曲子。
+* 虽然和{{tr|Pirate Invasion event}}无关，但{{tr|the Music Box (Boss 4)}}和大多数{{tr|pirate enemies}}所掉落的[[{{tr|golden furniture}}]]外观相似。这是因为在 [[1.3]] 之前，《Boss 4》原本是{{tr|the Pirate Invasion}}的主题曲。
+* {{tr|The Music Box (Corruption)}}和{{tr|the Music Box (Eerie)}}有着完全相同的设计，只是颜色不同。{{tr|the Music Box (Martian Madness)}}和{{tr|the Music Box (Lunar Boss)}}是一样的情况，{{tr|Music Box (Boss 1)}}和{{tr|the Music Box (Dungeon)}}也是如此。
+* 在{{console version}}中，{{tr|the Music Box (Tutorial)}}被归类为{{tr|crafting material}}，这是前代独有物品中唯一的可制作物品。
+* {{icon|desktop}} {{tr|The Otherworldly music boxes}}是来自于被取消的《[[{{tr|Terraria: Otherworld}}]]》的曲子。
+* 《{{tc/music|Morning Rain}}》{{tr|Music box}}回收利用了{{tr|Console}}和 1.3 前的{{tr|Mobile versions}}中教程关用的音乐。你可以在{{tr|console version}}上得到原本的教程曲目，因为那边依然有相应{{tr|music box}}。同样的情况发生在《{{tc/music|Space Day}}》和《{{tc/music|Ocean Night}}》上，但{{tr|Console version}}上的{{tr|music boxes}}和普通的 1.3 之后的{{tr|Desktop}}/{{tr|Mobile}}的{{tr|Space}}和{{tr|Ocean}}{{tr|music boxes}}相同。
+* {{icon|desktop}} 从 [[1.4.0.1]] 开始，[[{{tr|Sandstorm}}]]{{tr|Music Box}}的外观已经过重新设计，与{{tr|Storm}}和{{tr|Windy Day}}的{{tr|music boxes}}的外观很相似。
+* {{icon|desktop}} 在 [[1.4.0.5]] 中，{{tr|the Journey's End}}{{tr|music box}}（播放 1.4.0.1 引入的标题界面音乐）被重命名为为旅程开始，而另一个无实际作用的{{tr|Journey's End}}{{tr|music box}}被引入。后者在 [[1.4.1]] 更新后具有实际功能，它现在播放{{tr|credits music}}。
+
+== 另见 ==
+* [[音乐]]，各种《{{tr|Terraria}}》音乐曲目的描述性列表。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|录制好的{{tr|Music Box}}可用[[{{tr|shimmer}}]]变为空的{{tr|Music Boxes}}。}}
+{{history|Desktop 1.4.4|添加了{{tr|Music Box (Aether)}}。}}
+{{history|Desktop 1.4.3|添加了{{tr|Music Box (Deerclops)}}。}}
+{{history|Desktop 1.4.1|{{tr|Music Box (Journey's End)}}放在{{tr|accessory slot}}中会在游戏内播放{{tr|Credits}}，用在{{tr|social slot}}中则只会播放音乐。}}
+{{history|Desktop 1.4.0.5|
+** 《{{tc/music|Journey's End}}》重命名为《{{tc/music|Journey's Beginning}}》。
+** 新添加了{{tr|Journey's End}}{{tr|music box}}，但不使用{{tr|inventory}}编辑器、{{tr|mod}}、或作弊手段是无法获得的。
+** {{tr|Music boxes}}现在每{{tr|tick}}录下{{tr|music}}的可能性是原本的 20 倍。}}
+{{history|Desktop 1.4.0.1|
+** 添加了以下{{tr|music}}：《Journey's End》、《Windy Day》、《Space Day》、《Ocean Night》、《Town Day》和《Town Night》、《Storm》、《Slime Rain》、《Graveyard》、《Underground Jungle》、《Surface Night Jungle》、《[[Duke Fishron]]》、《Morning Rain》、《Console Title》、《Underground Desert》、《[[Queen Slime]]》、《[[Empress of Light]]》，以及[[{{tr|Terraria: Otherworld}}]]的曲子。
+** 现在{{tr|Music Boxes}}录制成功时会发出声音作为指示。
+** 现在可以将{{tr|Music Boxes}}放置到{{tr|vanity slot}}中来聆听之。}}
+{{history|Desktop 1.3.4|添加了{{tr|Old One's Army music}}。}}
+{{history|Desktop 1.3.3|添加了{{tr|Sandstorm music}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprites updated.}}
+** 添加了以下音乐：地狱、{{tr|Goblin Invasion}}、{{tr|Pirate Invasion}}、{{tr|Martian Madness}}、神塔、和月亮 {{tr|Boss}}。}}
+{{history|Desktop 1.2.4.1|修正了电路系统不会正确激活[[{{tr|Doors}}]]、{{tr|Music Boxes}}和[[喷泉]]的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** 更新图形，每个{{tr|music box}}现在都有其独特的设计了。
+** 恢复到随机有机会录下音乐。
+** 恢复到随机有机会录下音乐。}}
+{{history|Desktop 1.2.2|
+** 现在一旦装备上就会录下音乐（之前是在装备着时有随机几率会如此）。
+** 不会在尝试录下[[{{tr|Pumpkin Moon}}]]音乐时变成[[{{tr|Ankh Charm}}]]了。
+** 在{{tr|tables}}上不会复制了。}}
+{{history|Desktop 1.2.1|你不再能{{tr|reforge}}{{tr|Music Boxes}}了。}}
+{{history|Desktop 1.2.0.3|修正了一个会导致{{tr|the music box}}立即录音的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.0.2|你不再能使用{{tr|the music box}}复制的漏洞了。}}
+{{history|Desktop 1.2|
+** 添加了更多音乐。
+** {{tr|Music box}}/{{tr|chest}}复制不再可行。}}
+{{history|Desktop 1.1.1|修正了一个将已录音的{{tr|Music Box}}放在{{tr|wood platforms}}上时能复制的 {{tr|Bug}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，但{{tr|unobtainable}}.}}
+
+== 脚注 ==
+{{reflist|refs=
+<ref name="ConsoleSwitched">在{{eversions|1.3.0.1|invert=y|3DS=n|mobile=n}}中，{{tr|Snow}}和{{tr|Ice biome}}（{{tr|ice}}）这两个种类互换了；Boss 4 和 Boss 5 一样。</ref>
+<ref name="OtherworldToggle">所有异界版曲子都只在玩家正在拜访 [[05162020]] {{tr|seed}}的世界、或已经[[{{tr|Party Girl}}#{{tr|Music}}切换|开启]]了''[[{{tr|Terraria: Otherworld}}]]''音乐后才会播放。</ref>
+}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-acc = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+[[Category:乐器| ]]
+
+{{language info|en=Music Boxes}}

@@ -1,0 +1,37 @@
+__NOTOC__
+{{item infobox
+| name = Stucco Walls
+| type = Wall
+| imagealt = <p>[[File:Red Stucco Wall.png]] [[File:Yellow Stucco Wall.png]] [[File:Green Stucco Wall.png]] [[File:Gray Stucco Wall.png]]</p><hr/><p>
+[[File:Red Stucco Wall (placed).png]] [[File:Yellow Stucco Wall (placed).png]]</p><p>[[File:Green Stucco Wall (placed).png]] [[File:Gray Stucco Wall (placed).png]]</p>
+| auto = 615
+| id = 615-618
+| idwall = 36-39
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 615 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 616 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 617 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 618 | type = Wall}}
+'''{{tr|Stucco Walls}}'''是用[[{{tr|Stucco}}]]制作的{{tr|background}}[[{{tr|Wall}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE %Stucco Wall|link=n|cate=force|expectedrows=4}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE %Stucco Wall|expectedrows=4}}
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-brickwalls = yes
+}}
+
+{{language info|en=Stucco Walls}}

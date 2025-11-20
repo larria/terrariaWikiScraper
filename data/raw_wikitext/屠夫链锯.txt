@@ -1,0 +1,53 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3098
+| debuff = Hellfire / {{duration|rawseconds=1–4}} / 50%
+| sounduse = Item 23.wav, Item 22.wav
+| idprojectile = 509, 504
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Butcher's Chainsaw (demo).gif|frame|{{tr|Butcher's Chainsaw}}攻击[[{{tr|Target Dummy}}]]。注意它的火花能够造成一半伤害并且引起''{{tr|Hellfire}}''减益。]]
+
+'''{{tr|Butcher's Chainsaw}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|chainsaw}}]]，击打[[{{tr|enemy}}]]或[[{{tr|critter}}]]时，其会发射 2-5 个类似于[[{{tr|Wand of Sparking}}]]的{{tr|projectile}}，并对周围的{{tr|enemy}}造成伤害。{{tr|Butcher's Chainsaw}}的火花会穿透两个{{tr|enemy}}，造成此{{tr|weapon}} 50% 的{{tr|damage}}（{{#expr:{{iteminfo|Butcher's Chainsaw|damage}}*0.5}} {{tr|base damage}}）和 20% 的[[{{tr|knockback}}]]（{{knockback|full=y|class=|{{#expr:{{iteminfo|Butcher's Chainsaw|knockback}}*0.2}}}} {{tr|base knockback}}）。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}{{tr|Sparks}}有 {{chance|1/2}} 的概率对伤害的{{tr|enemy}}造成 1–4 秒[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。{{tr|Butcher's Chainsaw}}有 {{chance|1/40}} / {{expert|{{chance|79/1600}}}} 的概率掉落自[[{{tr|Solar Eclipse}}]][[{{tr|event}}]]期间的[[{{tr|Butcher}}]]。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|Sparks}}会在45°扇形内随机发射，在任何方向移动上都不会超过 30 {{tr|tiles}}。
+* {{tr|The Butcher's Chainsaw}}每次使用会击打两次{{tr|enemy}}，每次击打约有 50% 的概率产生 1–2 {{tr|sparks}}。 
+* {{tr|The Butcher's Chainsaw}}{{tr|sparks}}造成[[{{tr|melee damage}}]]，意味着任意{{tr|melee}}{{tr|buff}}，[[{{tr|accessories}}]]或[[{{tr|armor}}]]将会相应地增强它。
+* {{tr|The sparks}}造成的{{tr|Hellfire}}{{tr|debuff}}的{{tr|duration}}如下：{{source code ref|v=1.4.4.2|method=Terraria.Projectile.StatusNPC}} {{chance|5/6}} 的概率为 1–2 秒，{{chance|1/6}} 的概率为 2–4 秒（平均{{tr|duration}}为 1.75 秒）。
+
+== 小贴士 ==
+* 因其每击的{{tr|high damage}}和快速连续多次击中{{tr|enemies}}的能力，{{tr|Butcher's Chainsaw}}有着很高的{{DPS}}。在高伤害加成的{{tr|modifiers}}/[[{{tr|accessories}}]]的作用下，它有着比其他[[{{tr|Plantera}}]]后的{{tr|the weapon}}更高的潜在{{DPS}}，包括[[{{tr|Terra Blade}}]]。
+* {{tr|Hellfire}}{{tr|debuff}}只作用于被{{tr|The sparks}}而非被{{tr|chainsaw}}本身命中的{{tr|enemies}}，因此充分发挥{{tr|the weapon}}的{{tr|damage}}潜能需要谨慎确定位置。
+
+== 花絮 ==
+* {{tr|Butcher}}和{{tr|Butcher's Chainsaw}}都是向 1974 年电影[[wikipedia:The Texas Chain Saw Massacre|德州电锯杀人狂]]致敬。<ref>https://twitter.com/CrownoO/status/558347401141161985</ref>
+* 在所有[[{{tr|Tool}}]]中，{{tr|Butcher's Chainsaw}}有着最高的基础{{tr|damage}}和[[{{tr|knockback}}]]，因为它主要是为战斗而设计的。
+* {{tr|immune}}[[{{tr|Hellfire}}]]{{tr|debuff}}的{{tr|Enemies}}并不能抵抗{{tr|The sparks}}的{{tr|damage}}。
+* 就和大多数{{tr|chainsaw}}一样，它在连续地使用一分钟后会停止工作，并不得不重新启动。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Spark projectiles}}现在造成[[{{tr|Hellfire}}]]而非[[{{tr|On Fire!}}]]。
+** {{tr|Chainsaw}}及其火花现在使用{{tr|static invincibility frame}}。作为这一改动的直接结果，现在使用{{tr|chainsaw}}击中目标时，产生的火花也能够击中同一目标。
+** 平均{{tr|debuff duration}}由 1.5 秒提升至 1.75 秒。}}
+{{history|Desktop 1.4.0.1|
+** 火花现在造成{{tr|melee damage}}。
+** 现在所有的{{tr|drills}}和{{tr|chainsaws}}都比其非机械对应物挖得快，但范围更小。
+** 另外，优化的挖掘装备搭配使用{{tr|pickaxes}}/{{tr|axes}}依然会表现更好，但{{tr|drills}}和{{tr|chainsaws}}在非优化的配装上会更快。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-tool = yes
+}}
+{{language info|en=Butcher's Chainsaw}}

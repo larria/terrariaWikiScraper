@@ -1,0 +1,87 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4838
+| name = Gem Bunnies
+| image = Gem Bunnies.gif
+| id = 4838–4844
+| cargo = no
+}}
+|{{npc infobox
+| auto = 646
+| name = Gem Bunnies
+| imagealt = [[File:Amethyst Bunny.gif|link=]] [[File:Topaz Bunny.gif|link=]] [[File:Sapphire Bunny.gif|link=]] [[File:Emerald Bunny.gif|link=]] [[File:Ruby Bunny.gif|link=]] [[File:Diamond Bunny.gif|link=]] [[File:Amber Bunny.gif|link=]]
+| type = Critter
+| environment = Cavern
+| id = 646–652
+| cargo = no
+}}
+}}<!--
+we need these infoboxes for cargo storage
+-->{{npc infobox/options|view=void}}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 646 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 647 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 648 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 649 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 650 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 651 }}<!--
+-->{{npc infobox | type = Critter | environment = Cavern | auto = 652 }}<!--
+-->{{npc infobox/options|reset}}
+
+'''{{tr|Gem Bunnies}}'''是一类无害的[[{{tr|critters}}]]，仅在[[{{tr|cavern}}]]{{tr|layer}}以下的[[{{tr|town}}]]环境中生成，且在[[{{tr|rain}}]]期间有更高的几率生成。{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}
+
+{{critter info|plural=y|nostatue=y
+|cagename=[[{{tr|Cages}}|{{tr|Gem Bunny Cages}}]]
+}}
+
+== 类型 ==
+{{options/set|item|nolink=y|mode=table}}<!--
+-->{{item infobox/options|view=table|cols=item/makenpcid}}
+{| class="terraria sortable lined align-center"
+! colspan= 2 | {{tr|Gem Bunny}}
+! [[{{tr|NPC IDs}}]]
+{{item infobox | auto = 4838}}
+{{item infobox | auto = 4839}}
+{{item infobox | auto = 4840}}
+{{item infobox | auto = 4841}}
+{{item infobox | auto = 4842}}
+{{item infobox | auto = 4843}}
+{{item infobox | auto = 4844}}
+|}<!--
+-->{{options/reset|item}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Amber Bunny/Amethyst Bunny/Diamond Bunny/Emerald Bunny/Ruby Bunny/Sapphire Bunny/Topaz Bunny|expectedrows=14}}
+
+== 备注 ==
+* 虽然代表着不同的{{tr|gem types}}，但它们都会卖出 {{iteminfo|Amethyst Bunny|sell}} 的价格。
+* 在[[{{tr|Party}}]]期间，生成的大部分{{tr|Gem Bunnies}}都会被替换为{{tr|party}}版本的普通{{tr|Bunnies}}。
+
+== 小贴士 ==
+* 生成{{tr|Gem Bunny}}的最好方法是在[[{{tr|cavern}}]]层里建一座[[{{tr|town}}]]。与其他{{tr|critters}}相同，它们在 [[{{tr|NPCs}}]] 身边也会生成得更加频繁。
+
+== 花絮 ==
+{{bestiary|Ruby Bunny|alias={{tr|Gem Bunnies}}|article=}}
+
+== 另见 ==
+* [[{{tr|Bunny}}]]
+* [[{{tr|Gem Squirrels}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Gem Critter}}现在有一套基于对应[[{{tr|gem}}]]的{{tr|rarity}}系统。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}} 
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+[[Category:宝石小动物 NPC]]
+
+{{language info|en=Gem Bunnies}}

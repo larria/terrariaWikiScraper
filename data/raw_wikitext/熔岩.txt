@@ -1,0 +1,194 @@
+[[File:Lava ingame.png|thumb|right|230px|洞穴中的一些{{tr|lava}}。]]
+{{float file box|[[File:Flame.png|center]]|免疫{{tr|lava}}时显示的{{tr|icon}}。|width=130px}}
+
+'''{{tr|Lava}}'''是一种橙红色的发光[[{{tr|liquid}}]]，出现在[[{{tr|Cavern}}]]{{tr|layer}}深处，直到[[{{tr|Underworld}}]]，在一定[[{{tr|layer}}|{{tr|depth}}]]下会取代[[{{tr|water}}]]，[[{{tr|World size}}|{{tr|small world}}]]中平均为 950 {{tr|feet}}（475 {{tr|tile}}），{{tr|medium world}}中平均为 1450 {{tr|feet}}（725 {{tr|tile}}），{{tr|large world}}中平均为 1950 {{tr|feet}}（975 {{tr|tile}}）。{{source code ref|v=1.4.3.6|name=depth|method=Terraria.GameContent.Biomes.TerrainPass.ApplyPass|t=通过考虑{{tr|layer depth}}的随机范围的期望值，并假设{{tr|underground}}和{{tr|cavern}}{{tr|layer}}分别开始于世界高度的 26% 和 35%（单位：{{tr|tile}}）得到近似值；将最终值四舍五入到最接近的 25 个{{tr|tile}}的倍数。}}在{{eil|Underground Desert}}的边缘地带也能发现微型{{tr|lava}}池，甚至可高达{{tr|surface}}下 200 {{tr|feet}}。
+
+与{{tr|lava}}{{tr|contact}}会受到[[{{tr|damage}}]]（不会受到通常的 ±15% 随机浮动影响，它对具有相同{{tr|defense}}的实体总是造成相同伤害）并被施加[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。{{tr|Player}}会受到 80 {{tr|damage}}和持续 7 / {{expert|14}} / {{master|17.5}} {{tr|second}}的{{tr|debuff}}{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}，而[[{{tr|enemy}}]]、[[{{tr|NPC}}]] 和[[{{tr|critter}}]]会受到 50 {{tr|damage}}和持续 7 {{tr|second}}的{{tr|debuff}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.Collision_LavaCollision}}。[[#lava immunity|一些{{tr|item}}]]可以使{{tr|player}}免疫此{{tr|damage}}，例如[[{{tr|Lava Charm}}]]及其衍生物。{{tr|Lava}}还会[[{{tr|Movement speed}}#介质{{tr|movement}}|减缓浸没在其中的实体的{{tr|movement}}]]，类似于{{tr|water}}。
+
+{{tr|Lava}}和{{tr|water}}一样会向下或水平流动，且会沉降并贴合其下方和左右的{{tr|block}}所成的形状。但是，{{tr|lava}}比{{tr|water}}更粘稠，流动更缓慢。在向一个方向流动 50 {{tr|tile}}远后，{{tr|lava}}会开始流失，致使源头消失。不同于{{tr|water}}，{{tr|lava}}的颜色不会因{{tr|player}}所处的{{tr|biome}}变化。它还会发出中等强度的闪烁光芒。
+
+绝大多数{{rare|0|cate=n}}[[{{tr|rarity}}]]的掉落物（这包括所有[[{{tr|coin}}]]）浸没在高于其垂直中点的{{tr|lava}}时会被摧毁。此外，许多{{tr|type}}的{{tr|placed}}的[[{{tr|furniture}}]]和几乎所有{{tr|placed}}的[[{{tr|platform}}]]会在与{{tr|lava}}{{tr|contact}}后被摧毁。[[{{tr|Block}}]]不能直接{{tr|placed}}在{{tr|lava}}中，但可下落的{{tr|block}}如[[{{tr|silt}}]]和[[{{tr|sand}}]]可以落入其中，从而放置在底部。{{tr|player}}可以通过[[{{tr|bucket}}]]和[[{{tr|pump}}]]移动{{tr|lava}}。
+
+除了自然生成外，{{tr|lava}}还可以通过以下几种方法产生。在{{tr|Underworld}}中采挖[[{{tr|Hellstone}}]]会产生半格体积的{{tr|lava}}（在{{eil|Expert Mode}}中为一整格体积）。在{{tr|Expert Mode}}中，[[{{tr|Lava Slime}}]]被杀死时会生成少量{{tr|lava}}（{{eil|Don't dig up}} 和 {{eil|Get fixed boi}} [[{{tr|secret world seed}}]]除外）。在 {{tr|Get fixed boi}} {{tr|secret world seed}}中，[[{{tr|Hellbat}}]]和[[{{tr|Lava Bat}}]]被杀死时会生成少量{{tr|lava}}。
+
+== 制作 ==
+[[File:Liquid Crafting Stations.png|thumb|放置{{tr|lava}}（同时有{{tr|water}}和{{tr|honey}}）作为{{tr|crafting station}}使用的例子。注意它们上方的[[{{tr|Crystal Ball}}]]。]]
+就像[[{{tr|Water}}#{{tr|Crafting}}|{{tr|water}}]]和[[{{tr|Honey}}#{{tr|Crafting}}|{{tr|honey}}]]那样，{{tr|lava}}可以作为副[[{{tr|crafting station}}]]来用。其运作方式和另外两个一样；玩家要使用它的话只需站在旁边即可。由{{tr|lava}}体中创造物品完全不会导致{{tr|lava}}液面下降。
+
+=== 用于制作 ===
+{{:Recipes/Lava}}
+{{tr|Lava}}同时用于制作以下物品，但不是以作为{{tr|crafting station}}的方式：
+{| class="terraria"
+! {{tr|Item}}
+! 与此物结合
+|-
+| {{item|Obsidian}}
+| {{item|Water}}
+|-
+| {{item|Crispy Honey Block}}
+| {{item|Honey}}
+|-
+| {{item|Aetherium Block}}
+| {{item|Shimmer}}
+|}
+
+== {{tr|Fishing}} ==
+{{see also|{{tr|Fishing}}#{{tr|Lava fishing}}}}
+在{{tr|lava}}中[[{{tr|fishing}}]]需要使用[[{{tr|Hotline Fishing Hook}}]]、{{eil|Lavaproof Fishing Hook}}{{tr|or its upgrades}}，亦或者{{eicons|1.4.0.1}}在{{tr|Underworld}}中找到的[[{{tr|bait}}]]。不可能获得其他通常在{{tr|water}}中获得的[[{{tr|Fishing}}#渔获|渔获]]。
+{{options/set|item infobox|view=table|cols=item2cells/col:type/sell/rarity/col:notes}}
+{| class="terraria"
+|+ 来自{{tr|lava}}的{{tr|fishing catch}}
+! colspan=2 | {{tr|Item}}
+! 类型
+! [[{{tr|Value}}|{{tr|Sell}}]]
+! [[{{tr|Rarity}}]]
+! 备注
+{{item infobox|auto=y|cargo=n
+| name = Flarefin Koi
+| col:type = [[{{tr|Fishing catches}}|{{tr|Fish}}]]
+| col:notes = 用于制作[[{{tr|Inferno Potion}}]]。}}
+{{item infobox|auto=y|cargo=n
+| name = Obsidifish
+| col:type = [[{{tr|Fishing catches}}|{{tr|Fish}}]]
+| col:notes = 用于制作[[{{tr|Inferno Potion}}]]和{{eil|Potion of Return}}。}}
+{{item infobox|auto=y|cargo=n
+| name = Obsidian Swordfish
+| col:type = [[{{tr|Spears}}]]
+| col:notes = 仅限[[{{tr|Hardmode}}]]。}}
+{{item infobox|auto=y|cargo=n
+| name = Bottomless Lava Bucket
+| col:type = [[{{tr|Tools}}|{{tr|Tool}}]]
+| col:notes = 允许无限量放置{{tr|lava}}。}}
+{{item infobox|auto=y|cargo=n
+| name = Lava Absorbant Sponge
+| col:type = [[{{tr|Tools}}|{{tr|Tool}}]]
+| col:notes = 允许无限量移除{{tr|lava}}。}}
+{{item infobox|auto=y|cargo=n
+| name = Demon Conch
+| col:type = [[{{tr|Tools}}|{{tr|Tool}}]]
+| col:notes = 将{{tr|player}}传送至{{tr|Underworld}}的中心。}}
+{{item infobox|auto=y|cargo=n
+| name = Obsidian Crate
+| col:type = [[{{tr|Crates}}|{{tr|Crate}}]]
+| col:notes = 仅限[[{{tr|Pre-Hardmode}}]]。}}
+{{item infobox|auto=y|cargo=n
+| name = Hellstone Crate
+| col:type = [[{{tr|Crates}}|{{tr|Crate}}]]
+| col:notes = 仅限[[{{tr|Hardmode}}]]。}}
+|}{{options/reset|item infobox}}
+
+== 备注 ==
+[[File:Lava (demo).gif|thumb|right|默认情况下，{{tr|player}}会因{{tr|lava}}受到 80 {{tr|damage}}并被点燃。]]
+* 许多[[{{tr|placed}}]]的[[{{tr|furniture}}]]{{tr|items}}和大部分[[{{tr|platforms}}]]会在接触{{tr|lava}}时掉落为{{tr|item}}。
+** 下列{{tr|placed items}}不会在接触{{tr|lava}}时掉落，但在作为{{tr|item}}落到{{tr|lava}}中时仍然会被摧毁：{{tr|Obsidian Platform}}、{{eil|nolink=y|Stone Platform}}、{{eil|nolink=y|Ash Wood Platform}}、[[{{tr|Web Rope}}]]、[[{{tr|Silk Rope}}]]、[[{{tr|Chain}}]]、放置的[[{{tr|statues}}]]、[[{{tr|pumps}}]]、[[{{tr|Obsidian furniture}}]]、{{eil|Ash Wood furniture}}、和{{eil|Planter Boxes}}。
+* 下列 {{rare|0|cate=no}} {{tr|rarity}}的{{tr|items}}不会被{{tr|lava}}摧毁。{{source code ref|v=1.4.4.9|method=Terraria.Item.CheckLavaDeath|field=Terraria.ID.ItemID&#46;Sets.IsLavaImmuneRegardlessOfRarity}}
+: {{itemlist/start|class=terraria|width=14em}}<!--
+-->{{#af_foreach:{{itemIdSet|IsLavaImmuneRegardlessOfRarity|list=y|sort=name}}||id|<!--
+	-->{{#ifeq:{{iteminfo|raw=y|id={{{id}}}|field=rare}}|0|<!-- skip items that don't have White rarity ("rare=0"); for example the set contains Hellstone and Hellstone Bar, which have Green rarity
+		-->{{itemlist/item|{{item|id={{{id}}}|showid=no|wrap=y}}}}<!--
+	-->}}<!--
+-->}}<!--
+-->{{itemlist/end}}
+* {{tr|lava}}开始取代{{tr|water}}的确切{{tr|depth}}对每个{{tr|world}}来说都是不同的，不同{{tr|world}}之间的差异可达数百{{tr|feet}}/{{tr|tile}}；上述的近似{{tr|depth}}''仅为平均值''。<ref name="depth"/>
+* {{tr|lava}}的伤害可以被[[{{tr|defense}}]]和[[{{tr|damage reduction}}]]降低。除此之外，下列物品能够减少或消除{{tr|lava damage}}：
+** {{item|Obsidian Skin Potion}}：当消耗时给予一个{{tr|buff}}，在其持续时间内提供{{tr|lava}}免疫。
+** {{item|small=y|Superheated Blood}}：召唤{{tr|Lava Shark Mount}}，提供无限的{{tr|lava}}免疫，以及在{{tr|liquid}}中的快速{{tr|movement}}。
+** {{item|Obsidian Rose|note={{tr|and its upgrades}}}}：使{{tr|lava}}的{{tr|base damage}}由 80 降低至 {{eicons|1.4.1}} 35 / {{eicons|1.4.1|invert=y}} 50；并使[[{{tr|On Fire!}}]][[{{tr|debuff}}]]的持续时间减半，由 7 / {{expert|14}} / {{master|17.5}} {{tr|second}} 降低至 3.5 / {{expert|7}} / {{master|8.75}} {{tr|second}}。
+** {{item|small=y|Ash Wood armor|maxsize=x34px|note=（{{tr|set bonus}}）}}：将{{tr|lava}}的{{tr|base damage}}减半，由 80 降低至 40；并将{{tr|On Fire!}}{{tr|debuff}}的持续时间减半，由 7 / {{expert|14}} / {{master|17.5}} {{tr|second}}降低至 3.5 / {{expert|7}} / {{master|8.75}} {{tr|second}}。
+** 同时装备{{tr|Ash Wood armor and the Obsidian Rose}}（{{tr|or its upgrades}}）提供无限的{{tr|lava}}免疫。
+*** 此种情况下，仍然会消耗下方物品的[[#lava immunity|{{tr|lava}}免疫时间]]。
+* {{anchor|lava immunity}}多种[[{{tr|accessories}}]]和一种[[{{tr|minecarts}}|{{tr|minecart}}]]可让玩家浸没在{{tr|lava}}中一段时间而不受伤害。这一免疫类似于在{{tr|water}}下时的[[{{tr|breath meter}}]]，但它有自己独立的计量槽、会在接触{{tr|lava}}时立即激活、且离开{{tr|lava}}后需要比{{tr|breath meter}}长得多的时间来重新补充。每一件{{tr|items}}会提供 7 秒的免疫。如果同时装备/使用多个{{tr|items}}，免疫的持续时间会叠加，最高为全部使用时的{{eicons|1.4.4}} 49 / {{eicons|1.4.0.1|invert=y}} 14 秒。
+{{options/set|item|wrap=y}}
+: {{itemlist|class=terraria|width=12em
+|{{item|Lava Charm}}
+|{{item|Molten Charm}}
+|{{item|Magma Skull}}
+|{{item|Molten Skull Rose}}
+|{{item|Lava Waders}}
+|{{item|Terraspark Boots}}
+|{{item|Demonic Hellcart|note=（使用时）}}
+}}{{options/reset|item}}
+* [[{{tr|Flipper}}]]（{{tr|and its upgrades}}）、[[{{tr|Flipper Potion}}]]、和[[{{tr|Water Walking Potion}}]]对所有{{tr|liquids}}有效，包括{{tr|lava}}。
+* 玩家无法在{{tr|lava}}中[[{{tr|drown}}]]，这和[[{{tr|water}}]]与[[{{tr|honey}}]]不同。
+* 飞行[[{{tr|enemy}}]]几乎不会进入{{tr|lava}}，但行走的{{tr|enemy}}会走进去。
+* [[{{tr|Rain}}]]不会使{{tr|lava}}变为[[{{tr|Obsidian}}]]。
+* {{tr|lava}}的存在会防止[[{{tr|grass}}]]扩散到大约两个{{tr|tile}}半径内的[[{{tr|dirt}}]]上。
+* 偶尔从天花板上“滴下”的{{tr|lava}}是一种特殊效果，不会造成{{tr|damage}}。{{tr|player}}可以使用{{eil|Magic Lava Dropper}}创造它们。
+* 从[[{{tr|lavafall}}]]中流出的{{tr|lava}}（从{{tr|half-block}}上像{{tr|waterfall}}一样流出）也是无害的。
+* 某些实体不会因{{tr|contact lava}}而受到任何{{tr|damage}}，包括：
+** 原生于[[{{tr|Underworld}}]]的[[{{tr|enemy}}]]和[[{{tr|critter}}]]。
+** [[{{tr|Boss}}]]（[[{{tr|King Slime}}]]和[[{{tr|Golem}}]]除外）。
+** 可以穿过{{tr|solid block}}的实体（例如，[[{{tr|Worm AI}}|{{tr|worm}}]]、[[{{tr|Snatcher}}]]、“践踏”{{tr|attack}}期间的[[{{tr|Biome Mimic}}]]，等等）。
+** {{eil|Tax Collector}}。
+** 无敌的实体（例如，[[{{tr|True Eye of Cthulhu}}]]、防御状态期间的[[{{tr|Granite Golem}}]]）。
+* [[{{tr|Beach Ball}}]]在{{tr|lava}}上会反弹。
+
+== 小贴士 ==
+* [[{{tr|Silt Block}}]]和[[{{tr|Sand Block}}]]可以叠放，直到到达{{tr|lava}}表面，以在其上搭建一座安全的桥。如果开采走了，它们就会变回{{tr|lava}}，除非退出再重新进入这个{{tr|world}}。
+* 在建筑物下方放个浅{{tr|lava}}坑可以伤害所有行走的[[{{tr|enemy}}]]，因为当玩家在{{tr|house}}中时，它们会试图朝玩家跳过来。此外，如果{{tr|lava}}足够浅，就能将它们的掉落物聚集在同一个地方以方便稍后搜集。可以用这种技术来升级常规的坑。站在坑下面会吸引大部分{{tr|enemy}}靠过来，甚至有一些{{tr|flying enemy}}也会一头扎进{{tr|lava}}。
+
+=== {{tr|Lava}}深度 ===
+''只要''{{tr|Lava}}的{{tr|depth}}足以浸没{{tr|item}}的中点，它就会摧毁包括[[{{tr|coin}}]]在内的任何{{rare|0|cate=n}}[[{{tr|rarity}}]]的{{tr|item}}（前述例外除外）。因此，拥有更大{{tr|sprite}}的{{tr|item}}可以在更深的{{tr|lava}}中存在。这允许用适当{{tr|depth}}的{{tr|lava}}坑摧毁[[{{tr|Copper Coin}}]]，但（几乎）不摧毁其他东西。要检查{{tr|lava}}护城河的{{tr|depth}}是否符合要求，玩家可以先投一枚{{tr|Copper Coin}}，然后投一枚{{tr|Silver Coin}}。{{tr|Copper Coin}}应当被摧毁，但略高一些的{{tr|Silver Coin}}不会。
+
+实践中，可以通过每 6 至 8 格长度的坑倒入 1 [[{{tr|Bucket}}|桶]]{{tr|lava}}来达成此种{{tr|lava}}深度。
+* 因此，6–8 格长的护城河应当放入 1 桶{{tr|lava}}，而 12–16 格长的护城河应当放入 2 桶{{tr|lava}}。
+* 这意味着应当避免无法达到这一区间的长度：1–5、9–11、17。长度为 18 格以上的护城河则始终可以填充到适当的{{tr|depth}}。
+* 当填充一条非常宽的护城河时，最好在整条护城河上均匀放入{{tr|lava bucket}}，而非在同一处，因为[[{{tr|liquid}}]]的物理效果并不可靠。
+
+如果{{tr|world}}上积累的{{tr|item}}过多（超过 400 个），其中最旧的将会消失。{{tr|Copper Coin}}是游戏中价值最低的东西之一<!-- They are *among* the least valuable objects, not *the* least valuable objects, because some items cannot be sold at all, and at least one item sells for 1 Copper. -->，但每一堆叠仍然算作一件{{tr|item}}。{{tr|event}}或刷怪场会产生大量{{tr|Copper Coin}}，因此，舍弃它们是值得的，这可以防止更有价值的{{tr|item}}消失。幸运的是，它们也是游戏中''最小''的{{tr|item}}之一（其{{tr|sprite}}高 {{iteminfo|Copper Coin|height}} {{tr|pixel}}）。
+
+* 一个值得注意的例外：更有价值的[[{{tr|Lihzahrd Power Cell}}]]也高 {{iteminfo|Lihzahrd Power Cell|height}} {{tr|pixel}}，会与{{tr|Copper Coin}}一同被摧毁。
+* 其他值得注意的高度：{{tr|Silver Coin}}和[[{{tr|Gel}}]]都高 {{iteminfo|Silver Coin|height}} {{tr|pixel}}，而{{tr|block item}}都高 {{iteminfo|Dirt Block|height}} {{tr|pixel}}。
+
+{{for|{{tr|all item}}的{{tr|sprite}}高度列表|{{tr|item sprite size}}列表}}
+
+== 花絮 ==
+* 在现实世界中，{{维基百科|lava|t={{tr|lava}}}}是熔融的石头，但这一术语通常只适用于火山爆发导致的{{tr|lava}}从地面喷出。发现于[[《{{tr|Terraria}}》]]{{tr|underground}}的{{tr|lava}}通常被称为''{{tr|magma}}''（''magma''）。
+* 在{{tr|lava}}中死亡将显示以下独特的[[{{tr|death message}}]]之一：
+** ''“{{gameText|DeathText.Lava_1|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Lava_2|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Lava_3|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Lava_4|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Lava_5|x_0=&lt;{{tr|Player name}}&gt;}}”''
+
+== 历史 ==
+{{history|Desktop 1.3.4|{{tr|Lava}}现在是动态的了，同时还有一个设置来调整其动态程度。}}
+{{history|Desktop 1.2.4|现在用于制作[[{{tr|Lavafall Block}}]]而非[[{{tr|Lavafall Wall}}]]。}}
+{{history|Desktop 1.2.3|
+** 靠近时{{tr|Lava}}会发出冒泡的声音。
+** 现在可作为[[{{tr|crafting station}}]]。
+** 现在于{{tr|water}}中接触{{tr|lava}}时会正确地在离开{{tr|lava}}时扑灭{{tr|fire}}。}}
+{{history|Desktop 1.2|
+** 现在当{{tr|lava}}紧邻着{{tr|half block}}时，会产生一个[[{{tr|lavafall}}]]。
+** {{tr|Lava}}不再会激活[[{{tr|breath meter}}]]。}}
+{{history|Desktop 1.1|现在作为{{tr|placed}}的{{tr|block}}后的次要“层”存在。因此，不再能通过落入[[{{tr|sand}}]]类{{tr|block}}将其移除。{{tr|block}}内的{{tr|liquid}}现在只会在重启{{tr|world}}后消失。}}
+{{history|Desktop 1.0.6|
+** {{tr|lava}}发出的光减少了。
+** 现在会在采挖[[{{tr|Hellstone}}]]时出现。
+** 浅{{tr|lava}}又能伤害{{tr|player and enemy}}了。
+** {{tr|Blocks}}不再能放置于{{tr|lava}}中。
+** 现在会造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Lava}}会移除{{tr|Dirt and Mud block}}上的{{tr|grass}}（包括[[{{tr|Jungle grass}}]]、{{tr|Mushroom grass}}和[[{{tr|The Corruption}}|{{tr|Corruption}}]]）
+** 不再会摧毁蓝色及以上{{tr|rarity}}的物品。
+** 非常浅的{{tr|lava}}不再会伤害{{tr|player and enemy}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Liquids}}
+
+{{category|Environments}}
+{{category|Light source items}}
+{{category|Crafting station items}}
+{{category|Liquids}}
+{{category|Lava|*}}
+{{category|Crystal Ball and Lava|*}}
+{{all versions}}
+
+{{language info|en=Lava}}

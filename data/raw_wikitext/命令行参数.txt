@@ -1,0 +1,57 @@
+{{exclusive|desktop=y}}
+{{stub}}
+
+'''命令行参数'''是《[[{{tr|Terraria}}]]》启动时提供给游戏的信息条目。它们会影响游戏的诸多方面。
+
+== 客户端 ==
+下列命令行参数对标准的《{{tr|Terraria}}》应用程序可用：
+
+* <code>-savedirectory</code>{{source code ref|v=1.4.4.9|method=Terraria.Program.LaunchGame}}
+* <code>-logfile</code>{{source code ref|name=setuplogging|v=1.4.4.9|method=Terraria.Program.SetupLogging}}
+* <code>-minidump</code><ref name="setuplogging"/>
+* <code>-logerrors</code><ref name="setuplogging"/>
+* <code>-fulldump</code><ref name="setuplogging"/>
+* <code>-disableannouncementbox</code>{{source code ref|name=announcementbox|v=1.4.4.9|method=Terraria.Main.FindAnnouncementBoxStatus}}
+* <code>-announcementboxrange</code><ref name="announcementbox"/>
+* <code>-forcepriority</code>{{source code ref|v=1.4.4.9|method=Terraria.Main.LoadDedConfig}}
+* <code>-localsteamid</code>{{source code ref|v=1.4.4.9|method=Terraria.Net.SteamAddress.IsLocalHost}}
+* <code>-localwegameid</code>{{source code ref|v=1.4.4.9|method=Terraria.Net.WeGameAddress.IsLocalHost}}
+* <code>-ip</code>{{source code ref|v=1.4.4.9|method=Terraria.Net.Sockets.TcpSocket.Terraria.Net.Sockets.ISocket.StartListening}}
+* <code>-j</code> / <code>-join</code>{{source code ref|name=loadclientparams|v=1.4.4.9|method=Terraria.Initializers.LaunchInitializer.LoadClientParameters}}
+* <code>-pass</code> / <code>-password</code><ref name="loadclientparams"/>
+* <code>-host</code><ref name="loadclientparams"/>
+* <code>-loadlib</code>{{source code ref|name=loadsharedparams|v=1.4.4.9|method=Terraria.Initializers.LaunchInitializer.LoadSharedParameters}}
+* <code>-p</code> / <code>-port</code><ref name="loadsharedparams"/>
+* <code>-steam</code>{{source code ref|v=1.4.4.9|method=Terraria.Social.SocialAPI.Initialize}}
+* <code>-lobby</code>{{source code ref|name=netserversocialmodule|v=1.4.4.9|method=Terraria.Social.WeGame.NetServerSocialModule.Initialize / Terraria.Social.Steam.NetServerSocialModule.Initialize}}
+* <code>-friendsoffriends</code><ref name="netserversocialmodule"/>
+* <code>+connect_lobby</code>{{source code ref|v=1.4.4.9|method=Terraria.Social.Steam.NetClientSocialModule.CheckParameters}}
+
+== 服务器 ==
+下列命令行参数对《{{tr|Terraria}}》的[[{{tr|server}}]]应用程序 <code>TerrariaServer</code> 可用：
+
+* <code>-config <文件路径></code> - 指定使用的配置文件（见[[{{tr|Server|link=y}}#{{tr|server}}配置文件|{{tr|Server}} § {{tr|server}}配置文件]]）。
+* <code>-port <数字></code> - 指定监听的端口号。
+* <code>-players <数字> / -maxplayers <数字></code> - 设定最大玩家数。
+* <code>-pass <密码> / -password <密码></code> - 设置{{tr|server}}密码。
+* <code>-motd <文本></code> - 设置{{tr|server}}的每日信息文本。
+* <code>-world <文件路径></code> - 加载{{tr|world}}并自动启动{{tr|server}}。
+* <code>-autocreate <数字></code> - 若 -world 指定的路径下未找到{{tr|world}}，则创建一个。{{tr|World size}}如下指定：1（小）、2（中）、3（大）。
+* <code>-banlist <文件路径></code> - 指定封禁列表的位置。默认为工作目录下的“banlist.txt”。
+* <code>-worldname <{{tr|world}}名></code> - 设置使用 -autocreate 时的{{tr|world}}名称。
+* <code>-secure</code> - 为{{tr|server}}添加额外的作弊保护。
+* <code>-noupnp</code> - 禁用自动的“通用即插即用”。
+* <code>-steam</code> - 启用 Steam 支持。
+* <code>-lobby friends / -lobby private</code> - 若 Steam 启用，仅允许好友加入{{tr|server}}或将{{tr|server}}设为私密。
+* <code>-ip <IP 地址></code> - 设置{{tr|server}}监听的 IP 地址。
+* <code>-forcepriority <优先级></code> - 设置该任务的处理优先级。如果使用了这一项，则下方的“优先级”设置会被无视。
+* <code>-disableannouncementbox</code> - 禁用[[{{tr|Announcement Box}}]]被{{tr|wire}}激活时的文本广播。
+* <code>-announcementboxrange <number></code> - 设置{{tr|Announcement Box}}文本的消息显示范围，单位为像素，设为 -1 即为全服广播。
+* <code>-seed <seed></code> - 设置使用 -autocreate 时的{{tr|world seed}}。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Command-line parameters}}

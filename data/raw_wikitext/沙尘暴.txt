@@ -1,0 +1,124 @@
+{{exclusive|1.3.3}}
+[[File:BiomeBannerSandstorm.png|center]]
+{{about|{{tr|the event}}|{{tr|the Items}}|{{tr|Sandstorm in a Balloon}}|and|{{tr|Sandstorm in a Bottle}}}}
+[[File:Sandstorm (demo).gif|thumb|{{tr|sandstorm}}中飞沙走石的效果。]]
+
+'''{{tr|Sandstorm}}'''是一个专属于[[{{tr|Desert}}]]的[[{{tr|event}}]]，会同时在所有的{{tr|Deserts}}中发生。在此{{tr|event}}激活时，会持续对玩家施加[[{{tr|Mighty Wind}}]][[{{tr|debuff}}]]，不过它可以通过站在{{$|background wall}}前抵消。发生{{tr|Sandstorm}}时，[[{{tr|Weather Radio}}]]{{tr|and its upgrades}}会在“{{gameText|GameUI.Sandstorm}}”和基础读数之间切换。
+
+在{{tr|Sandstorm}}期间，屏幕上可见飞扬的{{tr|sand}}粒子。这些粒子的颜色会随着{{tr|Desert}}是纯净、[[{{tr|Corrupt Desert}}|{{tr|Corrupt}}]]、[[{{tr|Crimson Desert}}|{{tr|Crimson}}]]、或[[{{tr|Hallowed Desert}}|{{tr|Hallow}}]]而改变。玩家的视野也会受限。该效果在彩色和白光[[{{tr|lighting mode}}]]下会增强，可能在某些设备上会较为消耗资源；使用复古或迷幻设置会移除大部分的效果。
+
+在{{tr|Sandstorm}}期间，常见于[[{{tr|Underground Desert}}]]中的{{tr|enemies}}和数个新的危险{{tr|enemies}}会在{{tr|surface}}生成。
+
+== 细节 ==
+要让{{tr|Sandstorm}}发生，{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.Sandstorm.UpdateTime}}[[{{tr|wind}}]]速必须超过 30 mph。一旦达成该条件，{{tr|Sandstorm}}每{{tr|tick}}{{tick}}有 {{chance|1/64800|4|comma=yes}} 的几率发生。这意味着当{{tr|wind speed}}到达（并保持高于） 30 mph 后，平均需要经过 {{duration|ln(0.5) / ln(1-(1/64800)) ticks}}才会发生{{tr|Sandstorm}}。在[[{{tr|Hardmode}}]]期间，{{tr|Sandstorm}}会的常见程度提高 50%：每{{tr|tick}}的几率提升至 {{chance|1/43200|4|comma=yes}}，使得{{tr|Sandstorm}}开始前平均需要经过 {{duration|ln(0.5) / ln(1-(1/43200)) ticks}}。
+
+{{tr|Sandstorm}}的持续时间在 {{duration|28800 ticks}}和 {{duration|86400 ticks}}之间。这一持续时间是随机的，会在{{tr|Sandstorm}}开始时决定。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.Sandstorm.StartSandstorm}}
+
+若{{tr|Sandstorm}}期间{{tr|wind speed}}降低到 30 mph 以下，{{tr|Sandstorm}}的剩余时间会除以 15。例如，若一场{{tr|Sandstorm}}还剩余 15 分钟，{{tr|wind speed}}降低至 30 {{tr|mph}} 以下并不再达到 30 {{tr|mph}}，{{tr|Sandstorm}}将会在 1 分钟后停止。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=打败[[{{tr|Eye of Cthulhu}}]]之前：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Angry Tumbler}}<!--
+			-->|{{item|Antlion}}<!--
+			-->|{{item|Vulture}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Angry Tumbler}}<!--
+			-->|{{item|Antlion Charger}}<!--
+			-->|{{item|Antlion Swarmer}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sand Elemental|size=*0.75}}<!--
+			-->|{{item|Dune Splicer|size=*0.5}}<!--
+			-->|{{item|Sand Shark|note2=（常规{{tr|desert}}）}}<!--
+			-->|{{item|Crystal Thresher|note2=（[[{{tr|Hallowed Desert}}]]）}}<!--
+			-->|{{item|Bone Biter|note2=（[[{{tr|Corrupt Desert}}]]）}}<!--
+			-->|{{item|Flesh Reaver|note2=（[[{{tr|Crimson Desert}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Angry Tumbler}}]]、[[{{tr|Sand Shark}}]]、[[{{tr|Crystal Thresher}}]]、[[{{tr|Bone Biter}}]]、和[[{{tr|Flesh Reaver}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Nachos}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Sand Shark}}]]、[[{{tr|Crystal Thresher}}]]、[[{{tr|Bone Biter}}]]、和[[{{tr|Flesh Reaver}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sand Shark Kite|note2=（在[[{{tr|Windy Day}}]]）}}<!--
+			-->|{{item|Shark Fin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Sand Elemental}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Forbidden Fragment}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Sandstorm)|mode=image}} {{sound|track=Sandstorm}}<!--
+			-->|{{item|Otherworldly Music Box (Desert)| {{sound|track=Desert (Otherworldly)}} |icons=n }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+[[File:Sand Spawn Check.png|thumb|right|游戏对是否能生成{{tr|Sandstorm enemy}}的检查。对于在顶部的{{tr|Torch}}处生成的{{tr|enemy}}，会统计蓝色的{{tr|Sand Blocks}}的数量，红色的{{tr|Sand Blocks}}由于被非{{tr|Sand Block}}阻挡而不计入统计。这一设置有 36 个有效的{{tr|Sand Blocks}}，因而不足以在该{{tr|Torch}}上生成{{tr|Sandstorm enemy}}。]]
+* {{tr|Sandstorm}}[[{{tr|enemies}}]]需要生成在[[{{tr|Sand Block}}]]（包括被侵染的{{tr|variants}}）上，{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}类似于{{tr|surface}}的[[{{tr|Antlion}}]]。此外，它们还需要在以所选{{tr|Sand Block}}为顶边中心的 9×9 格的正方形内有 40 个完全互相连接的任何{{tr|variant}}的{{tr|Sand Blocks}}（在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中为 10 个）。{{source code ref|v=1.4.4.9|method=Terraria.NPC.Spawning_SandstoneCheck|t=会按顺序检查 9×9 格区域内的所有{{tr|tiles}}。如果检查的{{tr|tile}}是{{tr|Sand Block}}（或被侵染的{{tr|variant}}），{{tr|Sand Block}}计数会增加 1（起始为 0）。检查顺序可分为四个步骤：第一步：中心的{{tr|Sand Block}}（起始于所选的{{tr|Sand Block}}）；第二步：{{tr|Sand Block}}右侧的 4 格，从左至右；第三步：{{tr|Sand Block}}左侧的 4 格，从右至左；第四步：移动到下方的一行，重复所有步骤。在第二步和第三步中，如果该格未被占用或不是{{tr|Sand Block}}<!-- !tile.active() || !TileID.Sets.Conversion.Sand[(int)tile.type] -->，立即跳到下一步；在第一步中，如果该格未被占用或不是{{tr|Sand Block}}，立即结束检查。}}参见图像获取可视化示例。
+* {{tr|Sandstorms}}永远无法被手动开始。
+* {{tr|Sandstorm}}开始和结束时不会显示[[{{tr|status message}}]]，因此若玩家想要经历一次完整的{{tr|Sandstorms}}，必须经常检查{{tr|desert}}。或者，玩家可以使用[[{{tr|Weather Radio}}]]及其升级来查看当前是否发生{{tr|Sandstorm}}。
+
+== 小贴士 ==
+* 因为{{tr|Sandstorm}}只会发生在{{tr|desert biome}}且仅限[[{{tr|surface}}]]{{tr|layer}}，所以玩家可以从{{tr|biome}}上方飞过或进入{{tr|underground}}来避开它。
+* 一种躲避诸如[[{{tr|Angry Tumbler}}]]的{{tr|enemies}}的攻击的方式是使用移动[[{{tr|accessories}}]]（如[[{{tr|Dunerider Boots}}]]或[[{{tr|Lightning Boots}}]]）。
+* [[{{tr|Ancient Horn}}|{{tr|Basilisk mount}}]]或类似的高速{{tr|mounts}}会在玩家移动时抵抗[[{{tr|Mighty Wind}}]]{{tr|debuff}}。这可以减轻玩家在此{{tr|event}}期间穿越{{tr|Desert}}的难度。但是，{{tr|Mighty Wind}}在玩家不移动时依然会推动玩家。
+* 在玩家所行走的位置的中间一格放置[[{{tr|walls}}]]可避免{{tr|Mighty Wind}}{{tr|debuff}}，让移动恢复正常。
+* {{tr|Mighty Wind}}的效果可能会让玩家掉到[[{{tr|Underground Desert}}]]的入口中并卡住。可以通过堵住所有入口（如用[[{{tr|platforms}}]]）的方式来避免这一点。
+
+== 花絮 ==
+* {{tr|The Sandstorm}}会降低可见度并生成{{tr|new enemies}}，这方面类似于[[{{tr|Blizzard}}]]{{tr|event}}。但和{{tr|the Blizzard}}（和一些现实中的{{tr|sandstorms}}）不同，它完全和[[{{tr|rain}}]]无关。{{tr|Sandstorm}}也在与另一{{tr|event}}同时发生的这一方面与{{tr|Blizzard}}类似（对于{{tr|Sandstorm}}来说，是[[{{tr|Windy Day}}]]）。
+* {{tr|Mighty Wind debuff}}的推动方向和{{tr|wind}}的方向有关。
+* 当{{tr|the Weather Radio}}指示{{tr|wind speed}}为 0 {{tr|mph}}时，{{tr|the sandstorm}}会将玩家向西（左侧）推。
+* 玩家处于{{tr|Sandstorm}}中时会眯起眼睛。
+
+== 历史 ==
+{{history|Desktop 1.4.4|当{{tr|Sandstorm}}处于活跃状态时，{{tr|Weather Radio}}{{tr|accessory}}会显示它。它会在普通的天气显示和{{tr|Sandstorm}}显示间切换。}}
+{{history|Desktop 1.4.1|{{tr|Sandstorm}}在{{tr|Hardmode}}中的几率提高 2 倍，{{tr|pre-Hardmode}}中的几率提高 1.33 倍。}}
+{{history|Desktop 1.4.0.5|修复了在{{tr|Sandstorm}}中使用[[{{tr|Magic Conch}}]]导致的罕见崩溃。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sandstorms}}只会在{{tr|wind speed}}高于 30 {{tr|mph}} 时发生。
+** {{tr|Sandstorms}}现在在{{tr|pre-Hardmode}}下显著更少见。}}
+{{history|Desktop 1.3.3.3|改善了部分设备上{{tr|Sandstorms}}期间的性能。}}
+{{history|Desktop 1.3.3.2|现在危险度降低，且在击败[[{{tr|Eye of Cthulhu}}]]前更少生成。}}
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|随 1.4.0.1 至 1.4.0.4 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+[[Category:随机事件]]
+
+{{language info|en=Sandstorm}}

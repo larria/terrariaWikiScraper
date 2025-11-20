@@ -1,0 +1,85 @@
+{{exclusive|1.4.0.1}}
+[[File:BiomeBannerLanternNight.png|center]]
+{{quotation|[[{{tr|Guide}}]]|{{gameText|GuideSpecialText.Lantern1}}}}
+
+'''{{tr|Lantern Night}}'''是一种和平的[[{{tr|event}}]]，通常在第一次击败 [[{{tr|Boss}}]] 或[[{{tr|event}}|入侵事件]]之后的晚上发生。 
+
+在{{tr|event}}期间，背景里会有许多灯笼不断飘上天。玩家的[[{{tr|Luck}}]]会增加 0.3，并且[[{{tr|Party Girl}}]]会售卖[[{{tr|Release Lantern}}]]。
+
+如果在{{tr|event}}期间召唤 [[{{tr|Boss}}]]，或开始另一场{{tr|event}}（[[{{tr|Blood Moon}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Pumpkin Moon}}]]等等），{{tr|event}}会终止，并且打败 {{tr|Boss}} 后{{tr|event}}也不会再继续。但是，如果{{tr|Lantern Night}}已经预定在晚上发生，却在当晚开始时刻有 {{tr|Boss}} 或{{tr|event}}仍在发生，那么{{tr|Lantern Night}}{{tr|event}}会推迟而非取消。请参考下述[[#{{tr|Notes}}|{{tr|Notes}}]]章节。
+
+除此之外，若同时发生[[{{tr|Meteor Shower}}]]，{{tr|Lantern Night}}也会满足[[{{tr|Enchanted Nightcrawler}}]]的自然生成条件。{{source code ref|v=1.4.2.3|method=Terraria.Main.UpdateTime|t=搜索 {{code|LanternNight.LanternsUp()}} 能得到相关信息；并且参考[[{{tr|Meteor Shower}}]]词条以了解[[{{tr|Enchanted Nightcrawler}}]]的生成条件。}}
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Critters}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Enchanted Nightcrawler|note2={{note|paren=y|仅当同时发生[[{{tr|Meteor Shower}}]]时}}}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Party Girl}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Release Lantern}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+=== {{tr|NPC}} 话语 ===
+{{options/set|item|class=mirror|wrap=y}}
+{| class = "terraria sortable lined
+! {{tr|NPC}}
+! 话语
+|-
+| {{item|image=Guide.png|Guide}}
+|
+“{{gameText|GuideSpecialText.Lantern1}}”{{note|small=y|paren=y|在击败[[{{tr|Moon Lord}}]]前}}
+
+“{{gameText|GuideSpecialText.Lantern2}}”{{note|small=y|paren=y|在击败{{tr|Moon Lord}}后}}
+|}{{options/reset|item}}
+
+
+== {{tr|Notes}} ==
+[[File:Lantern Night in Desert.png|thumb|500x500px|在[[{{tr|Desert}}]]所见到的{{tr|Lantern Night}}。]]
+[[File:Lantern Night (2).png|thumb|500x500px|在[[{{tr|Forest}}]]所见到的{{tr|Lantern Night}}。]]
+* [[{{tr|Lantern Night}}]]会在以下情况下发生：
+** 第一次击败任意 [[{{tr|Boss}}]]，但除了[[{{tr|Mourning Wood}}]]、[[{{tr|Santa-NK1}}]]、[[{{tr|Everscream}}]]。
+** 第一次完成任意[[{{tr|invasion}}]]，但除了[[{{tr|Frost Moon}}]]与[[{{tr|Pumpkin Moon}}]]。
+*** 不过，第一次击败[[{{tr|Pumpking}}]]或[[{{tr|Ice Queen}}]]会开始一场{{tr|Lantern Night}}。
+** 当击败[[{{tr|Moon Lord}}]]后，{{tr|Lantern Night}}会随机发生，几率为 {{chance|1/14}}。在随机的{{tr|Lantern Night}}发生后，下次随机的{{tr|Lantern Night}}要直到 5-10 天后才能发生。
+* 同一时间只会安排一次非随机的{{tr|Lantern Night}}。因此，如果在 24 小时内有两场{{tr|Lantern Nights}}被触发（从一天的夜晚降临到下一天的夜晚降临），只会实际安排一次{{tr|Lantern Night}}。
+* {{tr|Lantern Nights}}可以被其它的事件预先覆盖。若当晚本应是{{tr|Lantern Nights}}，但在夜晚降临时有 [[{{tr|Boss}}]] 存在，或是[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Blood Moon}}]]、或[[{{tr|Moon Lord}}|月亮末日]]正在发生，那么当晚则不会出现{{tr|Lantern Nights}}。{{source code ref|v=1.4.2.3|method=Terraria.GameContent.Events.LanternNight.NaturalAttempt / Terraria.GameContent.Events.LanternNight.LanternsCanStart}}
+** 当上述情况发生时，下一个夜晚将会是符合要求的{{tr|Lantern Night}}。因此，当{{tr|Lantern Night}}被预先覆盖时，它会被推迟，而非取消。
+** 类似地，{{tr|Moon Lord}}后的随机{{tr|Lantern Nights}}也可以预先覆盖非随机的{{tr|Lantern Nights}}：如果一个夜晚符合随机{{tr|Lantern Night}}的要求''并且''已经预先安排了一场非随机的{{tr|Lantern Night}}，若 {{chance|1/14}} 几率的随机成功，就会发生一场''随机''的{{tr|Lantern Night}}，非随机的{{tr|Lantern Night}}则会继续留在安排中，因而会在下一夜晚发生。
+* 激活的{{tr|Lantern Night}}会阻止[[{{tr|Eye of Cthulhu}}]]或任何[[{{tr|mechanical boss}}]] ''自然''生成，且持续到{{tr|dawn}}的{{tr|Lantern Night}}会阻止[[{{tr|Goblin Invasion}}]]、[[{{tr|Pirate Invasion}}]]、或[[{{tr|Solar Eclipse}}]]立即生成。{{source code ref|v=1.4.2.3|method=Terraria.Main.ShouldNormalEventsBeAbleToStart}}
+
+== {{tr|Tips}} ==
+* 由于会显著地提升[[{{tr|luck}}]]，这一{{tr|event}}最适合用于寻找稀有掉落。
+* [[{{tr|Enchanted Nightcrawler}}]]可以被捕捉，从而简单地获取[[{{tr|bait}}]]。
+
+== {{tr|Trivia}} ==
+* 在 [[1.4]] 版本开发过程中，开发者提到会“有一些直接与《{{wikipedia|Tangled|长发公主}}》（''Tangled''）有关的内容”；这是一个迪士尼电影，其中灯笼被放飞到天空，以纪念乐佩公主（Rapunzel）的诞生日。<ref>{{forums thread|terraria-state-of-the-game-april-2019.79069|Terraria State of the Game - April 2019}} {{small|{{date|2019|04|15}}}} ([https://forums.terraria.org/index.php?attachments/upload_2019-4-15_12-4-55-png.219581/ 预告文本])</ref>
+** 这一场景的灵感来自于中国传统节日{{wikipedia|Lantern Festival|元宵节}}，这是{{tr|Chinese New Year}}庆祝的最后一天。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+{{language info|en=Lantern Night}}

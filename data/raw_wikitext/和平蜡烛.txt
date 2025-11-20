@@ -1,0 +1,53 @@
+{{exclusive|1.3.0.1}}
+__NOTOC__{{item infobox
+| type = Furniture/ Light source/ Mechanism
+| auto = 3117
+| width = 1 | height = 1
+| buff = Peace Candle / 范围内无限
+}}
+{{for|{{tr|candles}}的完整列表|{{tr|Candle}}}}
+
+'''{{tr|Peace Candle}}'''是一种[[{{tr|furniture}}]]{{tr|item}}，可在放置和手持时降低范围内[[{{tr|enemy}}]]和[[{{tr|critter}}]]的[[{{tr|spawn rate}}]]，并且会发出少量的光。放置后，它会给予附近的玩家'''{{tr|Peace Candle}}'''[[{{tr|buff}}]]。手持{{tr|Peace Candle}}不会显示其{{tr|buff icon}}，但仍然会产生相同的效果。制作{{tr|Peace Candle}}需要[[{{tr|Torch}}#{{tr|Pink Torch}}|{{tr|Pink Torch}}]]和[[{{tr|Gold Bar}}]]或[[{{tr|Platinum Bar}}]]，因此{{tr|player}}至少击败过一次[[{{tr|Pinky}}]]才能{{tr|craft}}此物品。
+
+{{tr|Peace Candle buff}}会将范围内的{{tr|spawn rates}}降低 23%，并将屏幕内同时出现的最大{{tr|enemies}}数量降低 30%。{{tr|buff}}会施加于手持或以{{tr|Peace Candle}}为中心的{{buff area}}内所有的玩家。要“手持”{{tr|Peace Candle}}，它必须位于{{tr|player}}的[[{{tr|hotbar}}]]中且被选中；仅仅位于{{tr|inventory}}中是不够的。多个{{tr|Peace Candles}}造成的效果不会互相叠加，即使一个放置、一个手持亦是如此。{{tr|Peace Candles}}只能放置在[[{{tr|platforms}}]]和[[{{tr|Work Benches}}]]与[[{{tr|Tables}}]]之类的平面[[{{tr|furniture}}]]上。
+
+在{{tr|Peace Candles}}上按下 {{key|open}} 按键可将其熄灭，并且通过[[{{tr|wiring}}]]激活时也会切换其状态。熄灭的{{tr|Peace Candles}}不会激活{{tr|Peace Candle buff}}。
+
+与{{tr|Peace Candle}}相反的是[[{{tr|Water Candle}}]]，它能提高{{tr|enemy}}的{{tr|spawn rate}}。如果{{tr|Peace Candle}}和{{tr|Water Candle}}同时生效，那么它们的效果会相互抵消，导致{{tr|spawn rate}}不会发生任何变化。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Peace Candle|expectedrows=2}}
+
+== 备注 ==
+* {{tr|Peace Candle}}造成的[[{{tr|buff}}]]能够和[[{{tr|Sunflower}}]]的[[{{tr|Happy!}}]]以及[[{{tr|Calming Potion}}]]的[[{{tr|Calm}}]]{{tr|buff}}叠加，总共能减少大概 67% 的{{tr|enemy spawn rate}}。
+* {{tr|Peace Candle}}能够在[[{{tr|water}}]]下使用。
+* {{tr|The Peace Candle}}在[[{{tr|Space}}]]中无法完全抵消{{tr|Water Candle}}的效果，因为此{{tr|biome}}会极大地提高{{tr|Water Candle}}[[{{tr|debuff}}]]的效果。
+
+== 小贴士 ==
+* 由于{{tr|Peace Candle}}会将[[{{tr|Critter}}]]的{{tr|spawn rate}}以和{{tr|enemy}}相同的量降低，因此若玩家想要收集[[{{tr|Bait}}]]，附近最好不要有{{tr|Peace Candle}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** 右键点击不再使{{tr|Peace Candle}}掉落，现在必须使用{{tr|pickaxe}}。
+** 右键点击可以开启/关闭{{tr|Peace Candle}}。
+** 加大了作用范围。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-light = yes
+| show-other = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Peace Candle}}

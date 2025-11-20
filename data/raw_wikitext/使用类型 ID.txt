@@ -1,0 +1,138 @@
+<div class="ajaxHide">
+{{main|数据 ID}}
+此页面罗列了《《[[{{tr|Terraria}}]]》》中所有{{tr|item}}'''{{tr|use styles}}'''和'''{{tr|hold styles}}'''的 ID。二者都是内部变量，用于确定当一件物品在被使用或在{{tr|inventory}}中被选定时玩家应当如何握持它。
+</div>
+== {{tr|Use styles}} ==
+{| class="terraria lined"
+! width="45px" | ID
+! {{tr|Internal name}}
+! 用于
+! 示例
+|-
+| 0
+| <code>None</code>
+| 任何未定义 <code>useStyle</code> 的物品
+| align=center | {{na}}
+|-
+| 1
+| <code>Swing</code>
+| 大多数可使用的物品，包括[[{{tr|blocks}}]]、[[{{tr|background walls}}]]和[[{{tr|broadswords}}]]
+| align=center | [[File:Swing example.gif]]
+|-
+| 2
+| <code>EatFood</code>
+| [[{{tr|Food}}]]
+| align=center | [[File:EatFood example.gif]]
+|-
+| 3
+| <code>Thrust</code>
+| [[{{tr|Umbrella}}]]、[[{{tr|Tragic Umbrella}}]]
+| align=center | [[File:Thrust example.gif]]
+|-
+| 4
+| <code>HoldUp</code>
+| [[{{tr|Consumables|link=y}}#永久强化|永久强化]]、[[{{tr|summoning items}}]]、[[{{tr|Magic Mirrors}}]]
+| align=center | [[File:HoldUp example.gif]]
+|-
+| 5
+| <code>Shoot</code>
+| 大多数[[{{tr|Ranged weapons}}]]和[[{{tr|magic weapons}}]]、[[{{tr|yoyos}}]]、[[{{tr|spears}}]]、[[{{tr|Flails|link=y}}#发射|发射型{{tr|flails}}]]
+| align=center | [[File:Shoot example.gif]]
+|-
+| 6
+| <code>DrinkLong</code>
+| [[{{tr|Recall Potion}}]]、[[{{tr|Potion of Return}}]]
+| align=center | [[File:DrinkLong example.gif]]
+|-
+| 7
+| <code>DrinkOld</code>
+| {{na}} {{note|paren=y|未使用}}
+| align=center | [[File:DrinkOld example.gif]]
+|-
+| 8
+| <code>GolfPlay</code>
+| [[{{tr|Golf Clubs}}]]
+| align=center | [[File:GolfPlay example.gif]]
+|-
+| 9
+| <code>DrinkLiquid</code>
+| [[{{tr|Potions}}]]、[[{{tr|drink}}]]、[[{{tr|flasks}}]]、[[{{tr|Hair Dyes}}]]
+| align=center | [[File:DrinkLiquid example.gif]]
+|-
+| 10
+| <code>HiddenAnimation</code>
+| [[{{tr|Whoopie Cushion}}]]
+| align=center | {{na}}
+|-
+| 11
+| <code>MowTheLawn</code>
+| [[{{tr|Lawn Mower}}]]
+| align=center | [[File:MowTheLawn example.gif]]
+|-
+| 12
+| <code>Guitar</code>
+| [[{{tr|Stellar Tune}}]]、[[{{tr|Ivy}}]]、[[{{tr|Rain Song}}]]
+| align=center | [[File:Guitar example.gif]]
+|-
+| 13
+| <code>Rapier</code>
+| [[{{tr|Shortswords}}]]、[[{{tr|Starlight}}]]
+| align=center | [[File:Rapier example.gif]]
+|-
+| 14
+| <code>RaiseLamp</code>
+| [[{{tr|Nightglow}}]]
+| align=center | [[File:RaiseLamp example.gif]]
+|}
+
+== {{tr|Hold styles}} ==
+{| class="terraria lined"
+! width="45px" | ID
+! {{tr|Internal name}}
+! 用于
+! 示例
+|-
+| 0
+| <code>None</code>
+| 任何未定义 <code>holdStyle</code> 的物品
+| {{na}}
+|-
+| 1
+| <code>HoldFront</code>
+| [[{{tr|Torches}}]]、[[{{tr|Candles}}]]、[[{{tr|Glowsticks}}]]、[[{{tr|Flare Gun}}]]、[[{{tr|Food}}]]、[[{{tr|Unicorn on a Stick}}]]、[[{{tr|Nebula Arcanum}}]]、[[{{tr|Lawn Mower}}]]
+| [[File:HoldFront example.png]]
+|-
+| 2
+| <code>HoldUp</code>
+| [[{{tr|Breathing Reed}}]]、[[{{tr|Umbrella}}]]、[[{{tr|Tragic Umbrella}}]]
+| [[File:HoldUp example.png]]
+|-
+| 3
+| <code>HoldHeavy</code>
+| [[{{tr|Magical Harp}}]]
+| [[File:HoldHeavy example.png]]
+|-
+| 4
+| <code>HoldGolfClub</code>
+| [[{{tr|Golf Clubs}}]]
+| [[File:HoldGolfClub example.png]]
+|-
+| 5
+| <code>HoldGuitar</code>
+| [[{{tr|Stellar Tune}}]]、[[{{tr|Ivy}}]]、[[{{tr|Rain Song}}]]
+| [[File:HoldGuitar example.png]]
+|-
+| 6
+| <code>HoldLamp</code>
+| [[{{tr|Nightglow}}]]
+| [[File:HoldLamp example.png]]
+|-
+| 7
+| <code>HoldRadio</code>
+| [[{{tr|Kwad Racer Drone}}]]
+| [[File:HoldRadio example.png]]
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Use Style IDs}}

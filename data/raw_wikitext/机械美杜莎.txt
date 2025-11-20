@@ -1,0 +1,164 @@
+{{exclusive|1.4.4}}
+{{npc infobox
+| name = Mechdusa
+| imagesize = 200px
+| type = Boss
+| damage =
+| life = {{modes|256800|327420|436560}} {{note|small=y|paren=y|总计}}
+
+| Waffle's Iron|1|100%
+
+| hardmode = yes
+}}
+<!--
+Some suggestions:
+* Needs infobox (one for each boss, and one with boss drop)
+-->
+{{flavor text|{{gameText|LegacyMisc.108}}}}
+{{dablink|不要与[[{{tr|Medusa}}]]，一个{{tr|Hardmode}}[[{{tr|Marble Cave}}]]中的{{tr|enemy}}相混淆。}}
+
+'''{{tr|Mechdusa}}'''是一个[[{{tr|Hardmode}}]]早期的，[[{{tr|Get fixed boi}}]] {{tr|worlds}}独有的 [[{{tr|boss}}]]。技术上来说，它不被视为一个单独的 {{tr|boss}}，而只是全部三个[[{{tr|mechanical bosses}}]] 的结合。它很像一条由三个 {{tr|bosses}} 共同组成的长蛇状生物：[[{{tr|The Destroyer}}]]的头部被附着到[[{{tr|Skeletron Prime}}]]的头部，[[{{tr|The Twins}}]]则分别通过触须连接到{{tr|Skeletron Prime}}的眼窝上（而非彼此相连）。还有两个额外的[[{{tr|Probe}}]]附着在{{tr|The Destroyer}}的头部。
+
+{{tr|Mechdusa}}可以使用[[{{tr|Ocram's Razor}}]]在任何时间、任何地点手动召唤。在[[{{tr|Altars}}|{{tr|Demon Altar}}或{{tr|Crimson Altar}}]]被摧毁后，只要当前世界中尚未打败过它，它在黄昏（{{time|7:30 PM}}）时就有 {{chance|1/20}} 几率自然生成。如果以这种方式生成，它的到来会以[[{{tr|status message}}]]''“{{gameText|LegacyMisc.108}}”''来宣告。
+
+{{boss music|Boss 1 (Otherworldly)}}<!-- The music will not be changed when Otherworldly music option is active.-->
+<!--
+== 部位 ==
+=== [[{{tr|Skeletron Prime}}]] ===
+{{infobox wrapper | direction = row | float = none
+|{{npc infobox | boxwidth = 18em
+| auto = 127
+| image2 = 
+| type = Boss
+| environment = Surface+Night/Surface+Space
+| damage = 
+| life = 
+| defense = 
+
+| Greater Healing Potion|5-15|100%
+| Skeletron Prime Trophy|1|10%
+| Treasure Bag (Skeletron Prime)|1|100%
+  |:loot:start|------------------------------------|-
+  | Mechanical Battery Piece|1|100%
+  | Skeletron Prime Mask|1|14.29%
+  | Soul of Fright|25-40|100%
+  | Hallowed Bar|15-30|100%
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|12]]|100%
+  |:loot:end|---------------------------------------|-
+| Robotic Skull|1|{{master|25%}} #master
+| Skeletron Prime Relic|1|{{master|100%}} #master
+
+| hardmode = yes
+| imageother = Map Icon Skeletron Prime.png
+| imageothercaption = Map Icon
+| sound1 = Roar 0.wav
+| soundcaption1 = 进入旋转阶段
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 128
+| image2 = 
+| type = Boss Part
+| environment = Surface+Night / Space+Night
+| damage = 
+| damage2 = 
+| life = 
+| defense = 
+| sound1 = Item 10.wav
+| soundcaption1 = 炸弹发射
+| sound2 = Item 14.wav
+| soundcaption2 = 炸弹爆炸
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 129
+| image2 = 
+| type = Boss Part
+| environment = Surface+Night / Space+Night
+| damage = 
+| life = 
+| defense = 
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 130
+| image2 = 
+| type = Boss Part
+| environment = Surface+Night/ Space+Night
+| damage = 
+| life = 
+| defense = 
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 131
+| image2 = 
+| type = Boss Part
+| environment = Surface+Night/Space+Night
+| damage = 
+| damage2 = 
+| life = 
+| defense = 
+| sound1 = Item 33.wav
+| soundcaption1 = 攻击
+}}
+}}
+-->
+== 行为 ==
+{{tr|Mechdusa}}的行为是三只{{tr|mechanical bosses}}的混合版，继承了它们的所有能力：{{tr|Skeletron Prime}}使用手臂进行攻击，{{tr|The Twins}}使用它们各自的攻击方式进行攻击，{{tr|The Destroyer}}和{{tr|Probe}}能发射{{tr|lasers}}。每个{{tr|mechanical boss}} 都拥有单独的{{tr|health bar}}。
+
+{{tr|The Skeletron Prime}}被作为 {{tr|boss}} 的“主要”部分，限制其他部分的移动。它仍然每 10 秒向玩家冲刺，但其头部在此攻击期间不会旋转。击败{{tr|Skeletron Prime}}会将其他部位分离并使得它们能和正常一样自由移动：{{tr|The Twins}}跟随玩家，{{tr|The Destroyer}}开始钻地，额外的两个{{tr|Probes}}和普通{{tr|Probes}}一样飞行。
+
+{{tr|The Twins}}最初和{{tr|Skeletron Prime}}的头部相连。相连时，它们在其冲刺攻击和{{tr|Retinazer}}的连续激光攻击期间仍能自由移动，但在这些攻击之后它们会再次尝试停留在{{tr|Skeletron Prime}}的上方。
+
+{{tr|The Destroyer}}的头部{{tr|segment}}最初也和{{tr|Skeletron Prime}}的头部相连。相连时，{{tr|The Destroyer}}无法自主移动，而其{{tr|segments}}则是被{{tr|Skeletron Prime}}的头部牵拉着移动。相连时的{{tr|The Destroyer}}仍然偶尔会发射激光弹幕，并在受伤时放出{{tr|Probes}}。
+
+额外的两个{{tr|Probes}}最初是无敌的。当{{tr|the Destroyer or the Skeletron Prime}}被击败时它们将能自由移动并可受伤害。
+
+== 备注 ==
+* [[{{tr|The Twins}}]]、[[{{tr|Skeletron Prime}}]]的所有部位、和[[{{tr|Probe}}]]相比于正常 For the worthy {{tr|worlds}}仅具有 80% {{tr|maximum health}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.getZenithSeedAdjustmentsBeforeEverything}}
+* 当（与{{tr|Skeletron Prime}}）相连时，{{tr|The Destroyer}}的头部具有和其尾部{{tr|segment}}相同的外观。
+* {{tr|The Mechdusa}}总计需要 111 个{{tr|NPC slots}}。<ref>{{tr|Skeletron Prime}}及其手臂 5 个，{{tr|The Twins}} 2 个，{{tr|Probes}} 2 个，{{tr|The Destroyer}} 102 个。</ref>
+* {{tr|Mechdusa}}的组成部分的生成顺序为： {{tr|Skeletron Prime}}的头部、{{tr|Retinazer}}、{{tr|Spazmatism}}、{{tr|The Destroyer}}的头部{{tr|segment}}、两个{{tr|Probes}}（先右侧，再左侧）、[[{{tr|Prime Cannon}}]]、[[{{tr|Prime Saw}}]]、[[{{tr|Prime Vice}}]]、[[{{tr|Prime Laser}}]]、{{tr|The Destroyer}}的身体{{tr|segments}}、{{tr|The Destroyer}}的尾部{{tr|segment}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnMechQueen / Terraria.NPC.AI / Terraria.NPC.AI_037_Destroyer}}
+* {{tr|Mechdusa}}在 Get fixed boi {{tr|worlds}}中代替了{{tr|mechanical bosses}}，因为在这些{{tr|worlds}}中它们的{{tr|summoning items}}无法被使用，而召唤{{tr|Mechdusa}}是与这些 {{tr|bosses}} 进行战斗的唯一方法。
+* 由于 Get fixed boi {{tr|seed}}包含了 [[{{tr|For the worthy}}]] {{tr|seed}}的变化，因此应当将 {{tr|boss}} 各方面的变化纳入考虑之中（按比例变化的{{tr|Damage}}/{{tr|Health}}、体型{{tr|Size}}变化等等）。
+** 不过，{{tr|Prime Cannon}}的炸弹不会摧毁{{tr|tiles}}，这和 For the worthy {{tr|worlds}}中不同。
+* 击败{{tr|Mechdusa}}会掉落所有{{tr|mechanical bosses}} 的[[{{tr|Treasure Bags}}]]。
+** {{tr|The Treasure Bags and healing potions}}本身会在其对应 {{tr|boss}} 被击败后掉落。如果只想要某一个{{tr|Treasure Bag}}，那就没有必要击败其他 {{tr|bosses}}。
+** 由于 Get fixed boi {{tr|world}}在内部会将{{tr|world}}的{{tr|difficulty}}提高一级，因此在[[{{tr|Classic Mode}}]]下击败{{tr|Mechdusa}}仍然会掉落{{tr|Treasure Bags}}。
+* 当自然生成时，{{tr|Mechdusa}}会精确地在{{tr|the status message}}出现 81 秒后生成。位于比[[{{tr|surface}}]]更低的[[{{tr|layer}}]]中''无法''阻止 {{tr|boss}} 自然生成。{{source code ref|v=1.4.4.2|method=Terraria.Main.UpdateTime}}在{{tr|singleplayer}}中，在 81 秒的时间间隔中离开{{tr|the world}}仍能阻止其生成。
+
+== 成就 ==
+{{achievement|name=Buckets of Bolts}}
+{{achievement|name=Mecha Mayhem}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{see also|{{tr|Skeletron Prime}}#小贴士|{{tr|The Destroyer}}#小贴士|{{tr|The Twins}}#小贴士}}
+{{strategies}}
+* 一定要做好万全准备。因为很多区域的作战空间非常有限，这可能使得击败该 {{tr|boss}} 变得极为困难。
+* 建议最后再杀死{{tr|Skeletron Prime}}，这可以让其他 {{tr|bosses}} 连接在一起，而不会四散飞行。
+* 由于{{tr|the Twins}}在不冲刺时会试图停留在{{tr|Skeletron Prime}}上方，这会使得避开{{tr|Spazmatism}}第二阶段下的喷火攻击更加容易。
+* 和与{{tr|The Destroyer}}作战相类似，建议使用{{tr|piercing weapons}}，以便同时击中三个 {{tr|bosses}}。
+
+== 花絮 ==
+* {{tr|Mechdusa}}（Mechdusa）的名字是''{{wiktionary|lang=en|mech|机械（mech）}}''与''{{wikipedia|lang=en|Medusa|美杜莎（Medusa）}}''二者的结合。机械（mech）是 ''mechanical'' 的缩写（暗示它由三只 {{tr|bosses}} 组成）；而美杜莎（Medusa）则是来自希腊神话中的生物，能将看见其眼睛的任何事物石化。
+** 此 {{tr|the boss}} 和出现在[[{{tr|Marble Cave}}]]{{tr|biome}}中的[[{{tr|Medusa}}]]{{tr|enemy}}似乎没有任何联系。
+** 此 {{tr|the boss}} 的三重组合属性其实更接近于希腊神话中的另一种生物：{{wikipedia|Chimera|奇美拉（Chimera）}}。奇美拉通常被描绘为背部长着一颗山羊头，尾巴是一条蛇的狮子，一般来说，“{{wiktionary|Chimera}}”可以用于描述任何由完全不同的部位组成的东西。 
+* {{tr|Mechdusa}}和[[{{tr|Moon Lord}}]]，是[[《{{tr|Terraria}}》]]中仅有的{{tr|summoning item}}的{{tr|tooltips}}没有提到 {{tr|boss}} 的名字的两个 {{tr|boss}}。[[{{tr|Celestial Sigil}}]]（{{tr|the Moon Lord}}的{{tr|summoning item}}）的{{tr|tooltips}}为''“{{itemTooltip|3601}}”''。
+* 当{{tr|Mechdusa}}自然生成时，{{tr|status message}}“{{gameText|LegacyMisc.108}}”（"{{gameText|LegacyMisc.108|lang=en}}"）致敬了{{维基百科|Castlevania II: Simon's Quest|t=恶魔城II 诅咒的封印|b=y}}中每当夜幕降临时游戏显示的相同文本。
+** 此外，[[{{tr|Bloody Tear}}]]{{tr|tooltip}}和此{{tr|status message}}相同。
+* {{tr|Mechdusa}}在游戏源代码中的内部名称是 <code>mechQueen</code>（机械女王）。{{source code ref|v=1.4.4.2|method=Terraria.NPC.SpawnMechQueen}}
+* 由于{{tr|Mechdusa}}不被视为单独的 {{tr|boss}}，它没有单独的 [[{{tr|NPC ID}}]]。
+** 这使得{{tr|Mechdusa}}无法在 [[{{tr|Get fixed boi}}]] {{tr|seed}}以外被生成。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Mechdusa}}

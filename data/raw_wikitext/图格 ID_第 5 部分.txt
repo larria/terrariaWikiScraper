@@ -1,0 +1,908 @@
+{|class="terraria ajaxHide"
+|图格 ID: {{#dpl:category=数据 ID|titleregexp=图格 ID/第 . 部分$|skipthispage=no|ordermethod=titlewithoutnamespace|format=²{dotlist/start¦inline=y}²,²{dotlist/item¦[[%TITLE%¦²{#replace:%TITLE%¦图格 ID/¦}²]]}²,,²{dotlist/end}²}}
+|}
+{| class="terraria sortable border"
+! data-sort-type="number" | ID !! data-sort-type="number" | 子 ID<ref>对于物品，即其 <code>placeStyle</code> 属性。</ref> !! 图片 !! 物品 / 实体 !! 内部名称
+|-
+| 191 || 0 || [[File:Living Wood (placed).png]] || {{item|Living Wood}} || <code>LivingWood</code>
+|-
+| 192 || 0 || [[File:Leaf Block (placed).png]] || {{item|Leaf Block}} || <code>LeafBlock</code>
+|-
+| 193 || 0 || [[File:Slime Block (placed).png]] || {{item|Slime Block}} || <code>SlimeBlock</code>
+|-
+| 194 || 0 || [[File:Bone Block (placed).png]] || {{item|Bone Block}} || <code>BoneBlock</code>
+|-
+| 195 || 0 || [[File:Flesh Block (placed).png]] || {{item|Flesh Block}} || <code>FleshBlock</code>
+|-
+| 196 || 0 || [[File:Rain Cloud (placed).png]] || {{item|Rain Cloud}} || <code>RainCloud</code>
+|-
+| 197 || 0 || [[File:Frozen Slime Block (placed).png]] || {{item|Frozen Slime Block}} || <code>FrozenSlimeBlock</code>
+|-
+| 198 || 0 || [[File:Asphalt Block (placed).png]] || {{item|Asphalt Block}} || <code>Asphalt</code>
+|-
+| 199 || 0 || [[File:Crimson grass.png|link={{tr|Grass|link=y}}]] || [[{{tr|Grass}}|{{tr|Crimson grass}}]] || rowspan=2 | <code>CrimsonGrass</code>
+|-
+| 199 || gross || [[File:Crimson Grass (gross).png|link={{tr|Grass|link=y}}]] {{note|small=y|paren=y|未使用}} || {{tr|Crimson Grass}}（{{tr|gross}}，未使用）
+|-
+| 200 || 0 || [[File:Red Ice Block (placed).png]] || {{item|Red Ice Block}} || <code>FleshIce</code>
+|-
+| 201 || 0 || [[File:Tiles 201 0.png]] || rowspan=15 | 矮[[{{tr|wild Crimson plants}}]] || rowspan=23 | <code>CrimsonPlants</code>
+|-
+| 201 || 1 || [[File:Tiles 201 1.png]]
+|-
+| 201 || 2 || [[File:Tiles 201 2.png]]
+|-
+| 201 || 3 || [[File:Tiles 201 3.png]]
+|-
+| 201 || 4 || [[File:Tiles 201 4.png]]
+|-
+| 201 || 5 || [[File:Tiles 201 5.png]]
+|-
+| 201 || 6 || [[File:Tiles 201 6.png]]
+|-
+| 201 || 7 || [[File:Tiles 201 7.png]]
+|-
+| 201 || 8 || [[File:Tiles 201 8.png]]
+|-
+| 201 || 9 || [[File:Tiles 201 9.png]]
+|-
+| 201 || 10 || [[File:Tiles 201 10.png]]
+|-
+| 201 || 11 || [[File:Tiles 201 11.png]]
+|-
+| 201 || 12 || [[File:Tiles 201 12.png]]
+|-
+| 201 || 13 || [[File:Tiles 201 13.png]]
+|-
+| 201 || 14 || [[File:Tiles 201 14.png]]
+|-
+| 201 || 15 || [[File:Vicious Mushroom (placed).png|link={{tr|Vicious Mushroom|link=y}}]] || {{item|Vicious Mushroom}}
+|-
+| 201 || 16 || [[File:Tiles 201 16.png]] || rowspan=7 | 矮[[{{tr|wild Crimson plants}}]]
+|-
+| 201 || 17 || [[File:Tiles 201 17.png]]
+|-
+| 201 || 18 || [[File:Tiles 201 18.png]]
+|-
+| 201 || 19 || [[File:Tiles 201 19.png]]
+|-
+| 201 || 20 || [[File:Tiles 201 20.png]]
+|-
+| 201 || 21 || [[File:Tiles 201 21.png]]
+|-
+| 201 || 22 || [[File:Tiles 201 22.png]]
+|-
+| 202 || 0 || [[File:Sunplate Block (placed).png]] || {{item|Sunplate Block}} || <code>Sunplate</code>
+|-
+| 203 || 0 || [[File:Crimstone Block (placed).png]] || {{item|Crimstone Block}} || <code>Crimstone</code>
+|-
+| 204 || 0 || [[File:Crimtane Ore (placed).png]] || {{item|Crimtane Ore}} || <code>Crimtane</code>
+|-
+| 205 || 0 || [[File:Crimson vines.png]] || {{item|Crimson vines|Crimson Vines}} || <code>CrimsonVines</code>
+|-
+| 206 || 0 || [[File:Ice Brick (placed).png]] || {{item|Ice Brick}} || <code>IceBrick</code>
+|-
+| 207 || 0 || [[File:Pure Water Fountain (placed).png]] [[File:Pure Water Fountain (placed) (on).gif]] || {{item|Pure Water Fountain}} || rowspan=10 | <code>WaterFountain</code>
+|-
+| 207 || 1 || [[File:Desert Water Fountain (placed).png]] [[File:Desert Water Fountain (placed) (on).gif]] || {{item|Desert Water Fountain}}
+|-
+| 207 || 2 || [[File:Jungle Water Fountain (placed).png]] [[File:Jungle Water Fountain (placed) (on).gif]] || {{item|Jungle Water Fountain}}
+|-
+| 207 || 3 || [[File:Icy Water Fountain (placed).png]] [[File:Icy Water Fountain (placed) (on).gif]] || {{item|Icy Water Fountain}}
+|-
+| 207 || 4 || [[File:Corrupt Water Fountain (placed).png]] [[File:Corrupt Water Fountain (placed) (on).gif]] || {{item|Corrupt Water Fountain}}
+|-
+| 207 || 5 || [[File:Crimson Water Fountain (placed).png]] [[File:Crimson Water Fountain (placed) (on).gif]] || {{item|Crimson Water Fountain}}
+|-
+| 207 || 6 || [[File:Hallowed Water Fountain (placed).png]] [[File:Hallowed Water Fountain (placed) (on).gif]] || {{item|Hallowed Water Fountain}}
+|-
+| 207 || 7 || [[File:Blood Water Fountain (placed).png]] [[File:Blood Water Fountain (placed) (on).gif]] || {{item|Blood Water Fountain}}
+|-
+| 207 || 8 || [[File:Cavern Water Fountain (placed).png]] [[File:Cavern Water Fountain (placed) (on).gif]] || {{item|Cavern Water Fountain}}
+|-
+| 207 || 9 || [[File:Oasis Water Fountain (placed).png]] [[File:Oasis Water Fountain (placed) (on).gif]] || {{item|Oasis Water Fountain}}
+|-
+| 208 || 0 || [[File:Shadewood (placed).png]] || {{item|Shadewood}} || <code>Shadewood</code>
+|-
+| 209 || 0 || [[File:Cannon (placed).gif]] || {{item|Cannon}} || rowspan=5 | <code>Cannon</code>
+|-
+| 209 || 1 || [[File:Bunny Cannon (placed).gif]] || {{item|Bunny Cannon}}
+|-
+| 209 || 2 || [[File:Confetti Cannon (placed).gif]] || {{item|Confetti Cannon}}
+|-
+| 209 || 3 || [[File:Portal Gun Station (placed).gif]] || {{item|Portal Gun Station|Portal Gun Station (blue portal)}}
+|-
+| 209 || 4 || [[File:Portal Gun Station (placed).gif]] || {{item|Portal Gun Station|{{tr|Portal Gun Station}}（橙{{tr|portal}}）}}
+|-
+| 210 || 0 || [[File:Land Mine (placed).png]] || {{item|Land Mine}} || <code>LandMine</code>
+|-
+| 211 || 0 || [[File:Chlorophyte Ore (placed).png]] || {{item|Chlorophyte Ore}} || <code>Chlorophyte</code>
+|-
+| 212 || 0 || [[File:Snowball Launcher (placed).png]] || {{item|Snowball Launcher}} || <code>SnowballLauncher</code>
+|-
+| 213 || 0 || [[File:Rope (placed).png]] || {{item|Rope}} || <code>Rope</code>
+|-
+| 214 || 0 || [[File:Chain (placed).png]] || {{item|Chain}} || <code>Chain</code>
+|-
+| 215 || 0 || [[File:Campfire (placed) (off).png]] [[File:Campfire (placed).gif]] || {{item|Campfire}} || rowspan=16 | <code>Campfire</code>
+|-
+| 215 || 1 || [[File:Cursed Campfire (placed) (off).png]] [[File:Cursed Campfire (placed).gif]] || {{item|Cursed Campfire}}
+|-
+| 215 || 2 || [[File:Demon Campfire (placed) (off).png]] [[File:Demon Campfire (placed).gif]] || {{item|Demon Campfire}}
+|-
+| 215 || 3 || [[File:Frozen Campfire (placed) (off).png]] [[File:Frozen Campfire (placed).gif]] || {{item|Frozen Campfire}}
+|-
+| 215 || 4 || [[File:Ichor Campfire (placed) (off).png]] [[File:Ichor Campfire (placed).gif]] || {{item|Ichor Campfire}}
+|-
+| 215 || 5 || [[File:Rainbow Campfire (placed) (off).png]] [[File:Rainbow Campfire (placed).gif]] || {{item|Rainbow Campfire}}
+|-
+| 215 || 6 || [[File:Ultra Bright Campfire (placed) (off).png]] [[File:Ultra Bright Campfire (placed).gif]] || {{item|Ultra Bright Campfire}}
+|-
+| 215 || 7 || [[File:Bone Campfire (placed) (off).png]] [[File:Bone Campfire (placed).gif]] || {{item|Bone Campfire}}
+|-
+| 215 || 8 || [[File:Desert Campfire (placed) (off).png]] [[File:Desert Campfire (placed).gif]] || {{item|Desert Campfire}}
+|-
+| 215 || 9 || [[File:Coral Campfire (placed) (off).png]] [[File:Coral Campfire (placed).gif]] || {{item|Coral Campfire}}
+|-
+| 215 || 10 || [[File:Corrupt Campfire (placed) (off).png]] [[File:Corrupt Campfire (placed).gif]] || {{item|Corrupt Campfire}}
+|-
+| 215 || 11 || [[File:Crimson Campfire (placed) (off).png]] [[File:Crimson Campfire (placed).gif]] || {{item|Crimson Campfire}}
+|-
+| 215 || 12 || [[File:Hallowed Campfire (placed) (off).png]] [[File:Hallowed Campfire (placed).gif]] || {{item|Hallowed Campfire}}
+|-
+| 215 || 13 || [[File:Jungle Campfire (placed) (off).png]] [[File:Jungle Campfire (placed).gif]] || {{item|Jungle Campfire}}
+|-
+| 215 || 14 || [[File:Mushroom Campfire (placed) (off).png]] [[File:Mushroom Campfire (placed).gif]] || {{item|Mushroom Campfire}}
+|-
+| 215 || 15 || [[File:Aether Campfire (placed) (off).png]] [[File:Aether Campfire (placed).gif]] || {{item|Aether Campfire}}
+|-
+| 216 || 0 || [[File:Red Rocket.png]] || {{item|Red Rocket}} || rowspan=4 | <code>Firework</code>
+|-
+| 216 || 1 || [[File:Green Rocket.png]] || {{item|Green Rocket}}
+|-
+| 216 || 2 || [[File:Blue Rocket.png]] || {{item|Blue Rocket}}
+|-
+| 216 || 3 || [[File:Yellow Rocket.png]] || {{item|Yellow Rocket}}
+|-
+| 217 || 0 || [[File:Blend-O-Matic (placed).gif]] || {{item|Blend-O-Matic}} || <code>Blendomatic</code>
+|-
+| 218 || 0 || [[File:Meat Grinder (placed).gif]] || {{item|Meat Grinder}} || <code>MeatGrinder</code>
+|-
+| 219 || 0 || [[File:Extractinator (placed).gif]] || {{item|Extractinator}} || <code>Extractinator</code>
+|-
+| 220 || 0 || [[File:Solidifier (placed).gif]] || {{item|Solidifier}} || <code>Solidifer</code>
+|-
+| 221 || 0 || [[File:Palladium Ore (placed).png]] || {{item|Palladium Ore}} || <code>Palladium</code>
+|-
+| 222 || 0 || [[File:Orichalcum Ore (placed).png]] || {{item|Orichalcum Ore}} || <code>Orichalcum</code>
+|-
+| 223 || 0 || [[File:Titanium Ore (placed).png]] || {{item|Titanium Ore}} || <code>Titanium</code>
+|-
+| 224 || 0 || [[File:Slush Block (placed).png]] || {{item|Slush Block}} || <code>Slush</code>
+|-
+| 225 || 0 || [[File:Hive (placed).png]] || {{item|Hive}} || <code>Hive</code>
+|-
+| 226 || 0 || [[File:Lihzahrd Brick (placed).png]] || {{item|Lihzahrd Brick}} || <code>LihzahrdBrick</code>
+|-
+| 227 || 0 || [[File:Tiles 227 0.png]] || {{item|Teal Mushroom}} || rowspan=15 | <code>DyePlants</code>
+|-
+| 227 || 1 || [[File:Tiles 227 1.png]] || {{item|Green Mushroom}}
+|-
+| 227 || 2 || [[File:Tiles 227 2.png]] || {{item|Sky Blue Flower}}
+|-
+| 227 || 3 || [[File:Tiles 227 3.png]] || {{item|Yellow Marigold}}
+|-
+| 227 || 4 || [[File:Tiles 227 4.png]] || {{item|Blue Berries}}
+|-
+| 227 || 5 || [[File:Tiles 227 5.png]] || {{item|Lime Kelp}}
+|-
+| 227 || 6 || [[File:Tiles 227 6.png|link={{tr|Pink Prickly Pear|link=y}}]] || {{item|Pink Prickly Pear}}
+|-
+| 227 || 7 || [[File:Tiles 227 7.png]] || {{item|Orange Bloodroot}}
+|-
+| 227 || 8 || [[File:Tiles 227 8.png]] || rowspan=4 | {{item|Strange Plant}}
+|-
+| 227 || 9 || [[File:Tiles 227 9.png]]
+|-
+| 227 || 10 || [[File:Tiles 227 10.png]]
+|-
+| 227 || 11 || [[File:Tiles 227 11.png]]
+|-
+| 227 || 12 || [[File:Tiles 227 12.png|link={{tr|Pink Prickly Pear|link=y}}]] {{note|small=y|paren=y|{{tr|corruption}}、已弃用}} || rowspan=3 | {{item|Pink Prickly Pear}}
+|-
+| 227 || 13 || [[File:Tiles 227 13.png|link={{tr|Pink Prickly Pear|link=y}}]] {{note|small=y|paren=y|{{tr|hallow}}、已弃用}}
+|-
+| 227 || 14 || [[File:Tiles 227 14.png|link={{tr|Pink Prickly Pear|link=y}}]] {{note|small=y|paren=y|{{tr|crimson}}、已弃用}}
+|-
+| 228 || 0 || [[File:Dye Vat (placed).gif]] || {{item|Dye Vat}} || <code>DyeVat</code>
+|-
+| 229 || 0 || [[File:Honey Block (placed).png]] || {{item|Honey Block}} || <code>HoneyBlock</code>
+|-
+| 230 || 0 || [[File:Crispy Honey Block (placed).png]] || {{item|Crispy Honey Block}} || <code>CrispyHoneyBlock</code>
+|-
+| 231 || 0 || [[File:Queen Bee Larva.gif]] || {{item|Larva}} || <code>Larva</code>
+|-
+| 232 || 0 || [[File:Wooden Spike (placed).png]] || {{item|Wooden Spike}} || <code>WoodenSpikes</code>
+|-
+| 233 || 0 || [[File:Tiles 233 0.png]] ||rowspan=21 | 大[[{{tr|wild Jungle plants}}]] || rowspan=21 | <code>PlantDetritus</code>
+|-
+| 233 || 1 || [[File:Tiles 233 1.png]]
+|-
+| 233 || 2 || [[File:Tiles 233 2.png]]
+|-
+| 233 || 3 || [[File:Tiles 233 3.png]]
+|-
+| 233 || 4 || [[File:Tiles 233 4.png]]
+|-
+| 233 || 5 || [[File:Tiles 233 5.png]]
+|-
+| 233 || 6 || [[File:Tiles 233 6.png]]
+|-
+| 233 || 7 || [[File:Tiles 233 7.png]]
+|-
+| 233 || 8 || [[File:Tiles 233 8.png]]
+|-
+| 233 || 9 || [[File:Tiles 233 9.png]]
+|-
+| 233 || 10 || [[File:Tiles 233 10.png]]
+|-
+| 233 || 11 || [[File:Tiles 233 11.png]]
+|-
+| 233 || 12 || [[File:Tiles 233 12.png]]
+|-
+| 233 || 13 || [[File:Tiles 233 13.png]]
+|-
+| 233 || 14 || [[File:Tiles 233 14.png]]
+|-
+| 233 || 15 || [[File:Tiles 233 15.png]]
+|-
+| 233 || 16 || [[File:Tiles 233 16.png]]
+|-
+| 233 || 17 || [[File:Tiles 233 17.png]]
+|-
+| 233 || 18 || [[File:Tiles 233 18.png]]
+|-
+| 233 || 19 || [[File:Tiles 233 19.png]]
+|-
+| 233 || 20 || [[File:Tiles 233 20.png]]
+|-
+| 234 || 0 || [[File:Crimsand Block (placed).png]] || {{item|Crimsand Block}} || <code>Crimsand</code>
+|-
+| 235 || 0 || [[File:Teleporter (placed).gif]] || {{item|Teleporter}} || <code>Teleporter</code>
+|-
+| 236 || 0 || [[File:Tiles 236 0.png]] || rowspan=3 | {{item|Life Fruit}} || rowspan=3 | <code>LifeFruit</code>
+|-
+| 236 || 1 || [[File:Tiles 236 1.png]]
+|-
+| 236 || 2 || [[File:Tiles 236 2.png]]
+|-
+| 237 || 0 || [[File:Lihzahrd Altar.png]] || {{item|Lihzahrd Altar}} || <code>Lihzahrd</code>
+|-
+| 238 || 0 || [[File:Plantera's Bulb.gif]] || {{item|Plantera's Bulb}} || <code>PlanteraBulb</code>
+|-
+| 239 || 0 || [[File:Copper Bar (placed).png]] || {{item|Copper Bar}} || rowspan=23 | <code>MetalBars</code>
+|-
+| 239 || 1 || [[File:Tin Bar (placed).png]] || {{item|Tin Bar}}
+|-
+| 239 || 2 || [[File:Iron Bar (placed).png]] || {{item|Iron Bar}}
+|-
+| 239 || 3 || [[File:Lead Bar (placed).png]] || {{item|Lead Bar}}
+|-
+| 239 || 4 || [[File:Silver Bar (placed).png]] || {{item|Silver Bar}}
+|-
+| 239 || 5 || [[File:Tungsten Bar (placed).png]] || {{item|Tungsten Bar}}
+|-
+| 239 || 6 || [[File:Gold Bar (placed).png]] || {{item|Gold Bar}}
+|-
+| 239 || 7 || [[File:Platinum Bar (placed).png]] || {{item|Platinum Bar}}
+|-
+| 239 || 8 || [[File:Demonite Bar (placed).png]] || {{item|Demonite Bar}}
+|-
+| 239 || 9 || [[File:Meteorite Bar (placed).png]] || {{item|Meteorite Bar}}
+|-
+| 239 || 10 || [[File:Hellstone Bar (placed).png]] || {{item|Hellstone Bar}}
+|-
+| 239 || 11 || [[File:Cobalt Bar (placed).png]] || {{item|Cobalt Bar}}
+|-
+| 239 || 12 || [[File:Palladium Bar (placed).png]] || {{item|Palladium Bar}}
+|-
+| 239 || 13 || [[File:Mythril Bar (placed).png]] || {{item|Mythril Bar}}
+|-
+| 239 || 14 || [[File:Orichalcum Bar (placed).png]] || {{item|Orichalcum Bar}}
+|-
+| 239 || 15 || [[File:Adamantite Bar (placed).png]] || {{item|Adamantite Bar}}
+|-
+| 239 || 16 || [[File:Titanium Bar (placed).png]] || {{item|Titanium Bar}}
+|-
+| 239 || 17 || [[File:Chlorophyte Bar (placed).png]] || {{item|Chlorophyte Bar}}
+|-
+| 239 || 18 || [[File:Hallowed Bar (placed).png]] || {{item|Hallowed Bar}}
+|-
+| 239 || 19 || [[File:Crimtane Bar (placed).png]] || {{item|Crimtane Bar}}
+|-
+| 239 || 20 || [[File:Shroomite Bar (placed).png]] || {{item|Shroomite Bar}}
+|-
+| 239 || 21 || [[File:Spectre Bar (placed).png]] || {{item|Spectre Bar}}
+|-
+| 239 || 22 || [[File:Luminite Bar (placed).png]] || {{item|Luminite Bar}}
+|-
+| 240 || 0 || [[File:Tiles 240 0.png]] || {{item|Eye of Cthulhu Trophy}} || rowspan=93 | <code>Painting3X3</code>
+|-
+| 240 || 1 || [[File:Tiles 240 1.png]] || {{item|Eater of Worlds Trophy}}
+|-
+| 240 || 2 || [[File:Tiles 240 2.png]] || {{item|Brain of Cthulhu Trophy}}
+|-
+| 240 || 3 || [[File:Tiles 240 3.png]] || {{item|Skeletron Trophy}}
+|-
+| 240 || 4 || [[File:Tiles 240 4.png]] || {{item|Queen Bee Trophy}}
+|-
+| 240 || 5 || [[File:Tiles 240 5.png]] || {{item|Wall of Flesh Trophy}}
+|-
+| 240 || 6 || [[File:Tiles 240 6.png]] || {{item|Destroyer Trophy}}
+|-
+| 240 || 7 || [[File:Tiles 240 7.png]] || {{item|Skeletron Prime Trophy}}
+|-
+| 240 || 8 || [[File:Tiles 240 8.png]] || {{item|Retinazer Trophy}}
+|-
+| 240 || 9 || [[File:Tiles 240 9.png]] || {{item|Spazmatism Trophy}}
+|-
+| 240 || 10 || [[File:Tiles 240 10.png]] || {{item|Plantera Trophy}}
+|-
+| 240 || 11 || [[File:Tiles 240 11.png]] || {{item|Golem Trophy}}
+|-
+| 240 || 12 || [[File:Tiles 240 12.png]] || {{item|Blood Moon Rising}}
+|-
+| 240 || 13 || [[File:Tiles 240 13.png]] || {{item|The Hanged Man}}
+|-
+| 240 || 14 || [[File:Tiles 240 14.png]] || {{item|Glory of the Fire}}
+|-
+| 240 || 15 || [[File:Tiles 240 15.png]] || {{item|Bone Warp}}
+|-
+| 240 || 16 || [[File:Tiles 240 16.png]] || {{item|Wall Skeleton}}
+|-
+| 240 || 17 || [[File:Tiles 240 17.png]] || {{item|Hanging Skeleton}}
+|-
+| 240 || 18 || [[File:Tiles 240 18.png]] || {{item|Skellington J Skellingsworth}}
+|-
+| 240 || 19 || [[File:Tiles 240 19.png]] || {{item|The Cursed Man}}
+|-
+| 240 || 20 || [[File:Tiles 240 20.png]] || {{item|Sunflowers}}
+|-
+| 240 || 21 || [[File:Tiles 240 21.png]] || {{item|Terrarian Gothic}}
+|-
+| 240 || 22 || [[File:Tiles 240 22.png]] || {{item|Guide Picasso}}
+|-
+| 240 || 23 || [[File:Tiles 240 23.png]] || {{item|The Guardian's Gaze}}
+|-
+| 240 || 24 || [[File:Tiles 240 24.png]] || {{item|Father of Someone}}
+|-
+| 240 || 25 || [[File:Tiles 240 25.png]] || {{item|Nurse Lisa}}
+|-
+| 240 || 26 || [[File:Tiles 240 26.png]] || {{item|Discover}}
+|-
+| 240 || 27 || [[File:Tiles 240 27.png]] || {{item|Hand Earth}}
+|-
+| 240 || 28 || [[File:Tiles 240 28.png]] || {{item|Old Miner}}
+|-
+| 240 || 29 || [[File:Tiles 240 29.png]] || {{item|Skelehead}}
+|-
+| 240 || 30 || [[File:Tiles 240 30.png]] || {{item|Imp Face}}
+|-
+| 240 || 31 || [[File:Tiles 240 31.png]] || {{item|Ominous Presence}}
+|-
+| 240 || 32 || [[File:Tiles 240 32.png]] || {{item|Shining Moon}}
+|-
+| 240 || 33 || [[File:Tiles 240 33.png]] || {{item|The Merchant}}
+|-
+| 240 || 34 || [[File:Tiles 240 34.png]] || {{item|Crowno Devours His Lunch}}
+|-
+| 240 || 35 || [[File:Tiles 240 35.png]] || {{item|Rare Enchantment}}
+|-
+| 240 || 36 || [[File:Tiles 240 36.png]] || {{item|Mourning Wood Trophy}}
+|-
+| 240 || 37 || [[File:Tiles 240 37.png]] || {{item|Pumpking Trophy}}
+|-
+| 240 || 38 || [[File:Tiles 240 38.png]] || {{item|Ice Queen Trophy}}
+|-
+| 240 || 39 || [[File:Tiles 240 39.png]] || {{item|Santa-NK1 Trophy}}
+|-
+| 240 || 40 || [[File:Tiles 240 40.png]] || {{item|Everscream Trophy}}
+|-
+| 240 || 41 || [[File:Tiles 240 41.png]] || {{item|Blacksmith Rack}}
+|-
+| 240 || 42 || [[File:Tiles 240 42.png]] || {{item|Carpentry Rack}}
+|-
+| 240 || 43 || [[File:Tiles 240 43.png]] || {{item|Helmet Rack}}
+|-
+| 240 || 44 || [[File:Tiles 240 44.png]] || {{item|Spear Rack}}
+|-
+| 240 || 45 || [[File:Tiles 240 45.png]] || {{item|Sword Rack}}
+|-
+| 240 || 46 || [[File:Tiles 240 46.png]] || {{item|Life Preserver}}
+|-
+| 240 || 47 || [[File:Tiles 240 47.png]] || {{item|Ship's Wheel}}
+|-
+| 240 || 48 || [[File:Tiles 240 48.png]] || {{item|Compass Rose}}
+|-
+| 240 || 49 || [[File:Tiles 240 49.png]] || {{item|Wall Anchor}}
+|-
+| 240 || 50 || [[File:Tiles 240 50.png]] || {{item|Goldfish Trophy}}
+|-
+| 240 || 51 || [[File:Tiles 240 51.png]] || {{item|Bunnyfish Trophy}}
+|-
+| 240 || 52 || [[File:Tiles 240 52.png]] || {{item|Swordfish Trophy}}
+|-
+| 240 || 53 || [[File:Tiles 240 53.png]] || {{item|Sharkteeth Trophy}}
+|-
+| 240 || 54 || [[File:Tiles 240 54.png]] || {{item|King Slime Trophy}}
+|-
+| 240 || 55 || [[File:Tiles 240 55.png]] || {{item|Duke Fishron Trophy}}
+|-
+| 240 || 56 || [[File:Tiles 240 56.png]] || {{item|Lunatic Cultist Trophy}}
+|-
+| 240 || 57 || [[File:Tiles 240 57.png]] || {{item|Martian Saucer Trophy}}
+|-
+| 240 || 58 || [[File:Tiles 240 58.png]] || {{item|Flying Dutchman Trophy}}
+|-
+| 240 || 59 || [[File:Tiles 240 59.png]] || {{item|Moon Lord Trophy}}
+|-
+| 240 || 60 || [[File:Tiles 240 60.png]] || {{item|Dark Mage Trophy}}
+|-
+| 240 || 61 || [[File:Tiles 240 61.png]] || {{item|Betsy Trophy}}
+|-
+| 240 || 62 || [[File:Tiles 240 62.png]] || {{item|Ogre Trophy}}
+|-
+| 240 || 63 || [[File:Tiles 240 63.png]] || {{item|Andrew Sphinx}}
+|-
+| 240 || 64 || [[File:Tiles 240 64.png]] || {{item|Watchful Antlion}}
+|-
+| 240 || 65 || [[File:Tiles 240 65.png]] || {{item|Burning Spirit}}
+|-
+| 240 || 66 || [[File:Tiles 240 66.png]] || {{item|Jaws of Death}}
+|-
+| 240 || 67 || [[File:Tiles 240 67.png]] || {{item|The Sands of Slime}}
+|-
+| 240 || 68 || [[File:Tiles 240 68.png]] || {{item|Snakes, I Hate Snakes}}
+|-
+| 240 || 69 || [[File:Tiles 240 69.png]] || {{item|Fore!}}
+|-
+| 240 || 70 || [[File:Tiles 240 70.png]] || {{item|Nevermore}}
+|-
+| 240 || 71 || [[File:Tiles 240 71.png]] || {{item|Reborn}}
+|-
+| 240 || 72 || [[File:Tiles 240 72.png]] || {{item|Empress of Light Trophy}}
+|-
+| 240 || 73 || [[File:Tiles 240 73.png]] || {{item|Queen Slime Trophy}}
+|-
+| 240 || 74 || [[File:Tiles 240 74.png]] || {{item|Dark Side of the Hallow}}
+|-
+| 240 || 75 || [[File:Tiles 240 75.png]] || {{item|Deerclops Trophy}}
+|-
+| 240 || 76 || [[File:Outcast (placed).png]] || {{item|Outcast}}
+|-
+| 240 || 77 || [[File:Fairy Guides (placed).png]] || {{item|Fairy Guides}}
+|-
+| 240 || 78 || [[File:A Horrible Night for Alchemy (placed).png]] || {{item|A Horrible Night for Alchemy}}
+|-
+| 240 || 79 || [[File:Morning Hunt (placed).png]] || {{item|Morning Hunt}}
+|-
+| 240 || 80 || [[File:Suspiciously Sparkly (placed).png]] || {{item|Suspiciously Sparkly}}
+|-
+| 240 || 81 || [[File:Requiem (placed).png]] || {{item|Requiem}}
+|-
+| 240 || 82 || [[File:Cat Sword (placed).png]] || {{item|Cat Sword}}
+|-
+| 240 || 83 || [[File:Kargoh's Summon (placed).png]] || {{item|Kargoh's Summon}}
+|-
+| 240 || 84 || [[File:High Pitch (placed).png]] || {{item|High Pitch}}
+|-
+| 240 || 85 || [[File:A Machine for Terrarians (placed).png]] || {{item|A Machine for Terrarians}}
+|-
+| 240 || 86 || [[File:Terra Blade Chronicles (placed).png]] || {{item|Terra Blade Chronicles}}
+|-
+| 240 || 87 || [[File:Benny Warhol (placed).png]] || {{item|Benny Warhol}}
+|-
+| 240 || 88 || [[File:Lizard King (placed).png]] || {{item|Lizard King}}
+|-
+| 240 || 89 || [[File:My Son (placed).png]] || {{item|My Son}}
+|-
+| 240 || 90 || [[File:Duality (placed).png]] || {{item|Duality}}
+|-
+| 240 || 91 || [[File:Parsec Pals (placed).png]] || {{item|Parsec Pals}}
+|-
+| 240 || 92 || [[File:Eye of the Sun (placed).png]] || {{item|Eye of the Sun}}
+|-
+| 241 || 0 || [[File:Tiles 241 0.png]] || rowspan=9 | {{item|Catacomb}} || rowspan=9 | <code>Painting4X3</code>
+|-
+| 241 || 1 || [[File:Tiles 241 1.png]]
+|-
+| 241 || 2 || [[File:Tiles 241 2.png]]
+|-
+| 241 || 3 || [[File:Tiles 241 3.png]]
+|-
+| 241 || 4 || [[File:Tiles 241 4.png]]
+|-
+| 241 || 5 || [[File:Tiles 241 5.png]]
+|-
+| 241 || 6 || [[File:Tiles 241 6.png]]
+|-
+| 241 || 7 || [[File:Tiles 241 7.png]]
+|-
+| 241 || 8 || [[File:Tiles 241 8.png]]
+|-
+| 242 || 0 || [[File:Tiles 242 0.png]] || {{item|The Eye Sees the End}} || rowspan=66 | <code>Painting6X4</code>
+|-
+| 242 || 1 || [[File:Tiles 242 1.png]] || {{item|Something Evil is Watching You}}
+|-
+| 242 || 2 || [[File:Tiles 242 2.png]] || {{item|The Twins Have Awoken}}
+|-
+| 242 || 3 || [[File:Tiles 242 3.png]] || {{item|The Screamer}}
+|-
+| 242 || 4 || [[File:Tiles 242 4.png]] || {{item|Goblins Playing Poker}}
+|-
+| 242 || 5 || [[File:Tiles 242 5.png]] || {{item|Dryadisque}}
+|-
+| 242 || 6 || [[File:Tiles 242 6.png]] || {{item|Impact}}
+|-
+| 242 || 7 || [[File:Tiles 242 7.png]] || {{item|Powered by Birds}}
+|-
+| 242 || 8 || [[File:Tiles 242 8.png]] || {{item|The Destroyer (item)}}
+|-
+| 242 || 9 || [[File:Tiles 242 9.png]] || {{item|The Persistency of Eyes}}
+|-
+| 242 || 10 || [[File:Tiles 242 10.png]] || {{item|Unicorn Crossing the Hallows}}
+|-
+| 242 || 11 || [[File:Tiles 242 11.png]] || {{item|Great Wave}}
+|-
+| 242 || 12 || [[File:Tiles 242 12.png]] || {{item|Starry Night}}
+|-
+| 242 || 13 || [[File:Tiles 242 13.png]] || {{item|Facing the Cerebral Mastermind}}
+|-
+| 242 || 14 || [[File:Tiles 242 14.png]] || {{item|Lake of Fire}}
+|-
+| 242 || 15 || [[File:Tiles 242 15.png]] || {{item|Trio Super Heroes}}
+|-
+| 242 || 16 || [[File:Tiles 242 16.png]] || {{item|The Creation of the Guide}}
+|-
+| 242 || 17 || [[File:Tiles 242 17.png]] || {{item|Jacking Skeletron}}
+|-
+| 242 || 18 || [[File:Tiles 242 18.png]] || {{item|Bitter Harvest}}
+|-
+| 242 || 19 || [[File:Tiles 242 19.png]] || {{item|Blood Moon Countess}}
+|-
+| 242 || 20 || [[File:Tiles 242 20.png]] || {{item|Hallow's Eve}}
+|-
+| 242 || 21 || [[File:Tiles 242 21.png]] || {{item|Morbid Curiosity}}
+|-
+| 242 || 22 || [[File:Tiles 242 22.png]] || {{item|Tiger Skin}}
+|-
+| 242 || 23 || [[File:Tiles 242 23.png]] || {{item|Leopard Skin}}
+|-
+| 242 || 24 || [[File:Tiles 242 24.png]] || {{item|Zebra Skin}}
+|-
+| 242 || 25 || [[File:Tiles 242 25.png]] || {{item|Treasure Map}}
+|-
+| 242 || 26 || [[File:Tiles 242 26.png]] || {{item|Pillagin' Me Pixels}}
+|-
+| 242 || 27 || [[File:Tiles 242 27.png]] || {{item|Castle Marsberg}}
+|-
+| 242 || 28 || [[File:Tiles 242 28.png]] || {{item|Martia Lisa}}
+|-
+| 242 || 29 || [[File:Tiles 242 29.png]] || {{item|The Truth Is Up There}}
+|-
+| 242 || 30 || [[File:Tiles 242 30.png]] || {{item|Sparky}}
+|-
+| 242 || 31 || [[File:Tiles 242 31.png]] || {{item|Acorns}}
+|-
+| 242 || 32 || [[File:Tiles 242 32.png]] || {{item|Cold Snap}}
+|-
+| 242 || 33 || [[File:Tiles 242 33.png]] || {{item|Cursed Saint}}
+|-
+| 242 || 34 || [[File:Tiles 242 34.png]] || {{item|Snowfellas}}
+|-
+| 242 || 35 || [[File:Tiles 242 35.png]] || {{item|The Season}}
+|-
+| 242 || 36 || [[File:Tiles 242 36.png]] || {{item|Not a Kid, nor a Squid}}
+|-
+| 242 || 37 || [[File:Tiles 242 37.png]] || {{item|Life Above the Sand}}
+|-
+| 242 || 38 || [[File:Tiles 242 38.png]] || {{item|Oasis (item)}}
+|-
+| 242 || 39 || [[File:Tiles 242 39.png]] || {{item|Prehistory Preserved}}
+|-
+| 242 || 40 || [[File:Tiles 242 40.png]] || {{item|Ancient Tablet}}
+|-
+| 242 || 41 || [[File:Tiles 242 41.png]] || {{item|Uluru}}
+|-
+| 242 || 42 || [[File:Tiles 242 42.png]] || {{item|Visiting the Pyramids}}
+|-
+| 242 || 43 || [[File:Tiles 242 43.png]] || {{item|The Rolling Greens}}
+|-
+| 242 || 44 || [[File:Tiles 242 44.png]] || {{item|Graveyard (item)}}
+|-
+| 242 || 45 || [[File:Tiles 242 45.png]] || {{item|Princess 64}}
+|-
+| 242 || 46 || [[File:Tiles 242 46.png]] || {{item|The Gentleman Scientist}}
+|-
+| 242 || 47 || [[File:Tiles 242 47.png]] || {{item|The Firestarter}}
+|-
+| 242 || 48 || [[File:Tiles 242 48.png]] || {{item|The Bereaved}}
+|-
+| 242 || 49 || [[File:Tiles 242 49.png]] || {{item|The Strongman}}
+|-
+| 242 || 50 || [[File:Remnants of Devotion (placed).png]] || {{item|Remnants of Devotion}}
+|-
+| 242 || 51 || [[File:Not So Lost In Paradise (placed).png]] || {{item|Not So Lost In Paradise}}
+|-
+| 242 || 52 || [[File:Ocular Resonance (placed).png]] || {{item|Ocular Resonance}}
+|-
+| 242 || 53 || [[File:Wings of Evil (placed).png]] || {{item|Wings of Evil}}
+|-
+| 242 || 54 || [[File:Constellation (placed).png]] || {{item|Constellation}}
+|-
+| 242 || 55 || [[File:Eyezorhead (placed).png]] || {{item|Eyezorhead}}
+|-
+| 242 || 56 || [[File:Dread of the Red Sea (placed).png]] || {{item|Dread of the Red Sea}}
+|-
+| 242 || 57 || [[File:Do Not Eat the Vile Mushroom! (placed).png]] || {{item|Do Not Eat the Vile Mushroom!}}
+|-
+| 242 || 58 || [[File:Yuuma, The Blue Tiger (placed).png]] || {{item|Yuuma, The Blue Tiger}}
+|-
+| 242 || 59 || [[File:Moonman & Company (placed).png]] || {{item|Moonman & Company}}
+|-
+| 242 || 60 || [[File:Sunshine of Israpony (placed).png]] || {{item|Sunshine of Israpony}}
+|-
+| 242 || 61 || [[File:Purity (placed).png]] || {{item|Purity}}
+|-
+| 242 || 62 || [[File:Lady Of The Lake (placed).png]] || {{item|Lady Of The Lake}}
+|-
+| 242 || 63 || [[File:R-Terraria (placed).png]] || {{item|r/Terraria}}
+|-
+| 242 || 64 || [[File:Princess Style (placed).png]] || {{item|Princess Style}}
+|-
+| 242 || 65 || [[File:Cheesy Pizza Poster (placed).png]] || {{item|Cheesy Pizza Poster}}
+|-
+| 243 || 0 || [[File:Imbuing Station (placed).gif]] || {{item|Imbuing Station}} || <code>ImbuingStation</code>
+|-
+| 244 || 0 || [[File:Bubble Machine (placed).gif]] || {{item|Bubble Machine}} || <code>BubbleMachine</code>
+|-
+| 245 || 0 || [[File:Tiles 245 0.png]] || {{item|Waldo}} || rowspan=29 | <code>Painting2X3</code>
+|-
+| 245 || 1 || [[File:Tiles 245 1.png]] || {{item|Darkness (item)}}
+|-
+| 245 || 2 || [[File:Tiles 245 2.png]] || {{item|Dark Soul Reaper}}
+|-
+| 245 || 3 || [[File:Tiles 245 3.png]] || {{item|Land}}
+|-
+| 245 || 4 || [[File:Tiles 245 4.png]] || {{item|Trapped Ghost}}
+|-
+| 245 || 5 || [[File:Tiles 245 5.png]] || {{item|American Explosive}}
+|-
+| 245 || 6 || [[File:Tiles 245 6.png]] || {{item|Glorious Night}}
+|-
+| 245 || 7 || [[File:Tiles 245 7.png]] || {{item|Bandage Boy}}
+|-
+| 245 || 8 || [[File:Tiles 245 8.png]] || {{item|Divine Eye}}
+|-
+| 245 || 9 || [[File:Tiles 245 9.png]] || {{item|Study of a Ball at Rest}}
+|-
+| 245 || 10 || [[File:Tiles 245 10.png]] || {{item|Ghost Manifestation}}
+|-
+| 245 || 11 || [[File:Tiles 245 11.png]] || {{item|Wicked Undead}}
+|-
+| 245 || 12 || [[File:Tiles 245 12.png]] || {{item|Bloody Goblet}}
+|-
+| 245 || 13 || [[File:Tiles 245 13.png]] || {{item|Painting of a Lass}}
+|-
+| 245 || 14 || [[File:Sufficiently Advanced (placed).png]] || {{item|Sufficiently Advanced}}
+|-
+| 245 || 15 || [[File:Strange Growth 1 (placed).png]] || rowspan=4 | {{item|Strange Growth}}
+|-
+| 245 || 16 || [[File:Strange Growth 2 (placed).png]]
+|-
+| 245 || 17 || [[File:Strange Growth 3 (placed).png]]
+|-
+| 245 || 18 || [[File:Strange Growth 4 (placed).png]]
+|-
+| 245 || 19 || [[File:Happy Little Tree (placed).png]] || {{item|Happy Little Tree}}
+|-
+| 245 || 20 || [[File:Strange Dead Fellows (placed).png]] || {{item|Strange Dead Fellows}}
+|-
+| 245 || 21 || [[File:Secrets (placed).png]] || {{item|Secrets}}
+|-
+| 245 || 22 || [[File:Thunderbolt (placed).png]] || {{item|Thunderbolt}}
+|-
+| 245 || 23 || [[File:Crustography (placed).png]] || {{item|Crustography}}
+|-
+| 245 || 24 || [[File:The Werewolf (placed).png]] || {{item|The Werewolf}}
+|-
+| 245 || 25 || [[File:Blessing from the Heavens (placed).png]] || {{item|Blessing from the Heavens}}
+|-
+| 245 || 26 || [[File:Love is in the Trash Slot (placed).png]] || {{item|Love is in the Trash Slot}}
+|-
+| 245 || 27 || [[File:Fangs (placed).png]] || {{item|Fangs}}
+|-
+| 245 || 28 || [[File:Hail to the King (placed).png]] || {{item|Hail to the King}}
+|-
+| 246 || 0 || [[File:Tiles 246 0.png]] || {{item|Demon's Eye}} || rowspan=37 | <code>Painting3X2</code>
+|-
+| 246 || 1 || [[File:Tiles 246 1.png]] || {{item|Finding Gold}}
+|-
+| 246 || 2 || [[File:Tiles 246 2.png]] || {{item|First Encounter}}
+|-
+| 246 || 3 || [[File:Tiles 246 3.png]] || {{item|Good Morning}}
+|-
+| 246 || 4 || [[File:Tiles 246 4.png]] || {{item|Underground Reward}}
+|-
+| 246 || 5 || [[File:Tiles 246 5.png]] || {{item|Through the Window}}
+|-
+| 246 || 6 || [[File:Tiles 246 6.png]] || {{item|Place Above the Clouds}}
+|-
+| 246 || 7 || [[File:Tiles 246 7.png]] || {{item|Do Not Step on the Grass}}
+|-
+| 246 || 8 || [[File:Tiles 246 8.png]] || {{item|Cold Waters in the White Land}}
+|-
+| 246 || 9 || [[File:Tiles 246 9.png]] || {{item|Lightless Chasms}}
+|-
+| 246 || 10 || [[File:Tiles 246 10.png]] || {{item|The Land of Deceiving Looks}}
+|-
+| 246 || 11 || [[File:Tiles 246 11.png]] || {{item|Daylight}}
+|-
+| 246 || 12 || [[File:Tiles 246 12.png]] || {{item|Secret of the Sands}}
+|-
+| 246 || 13 || [[File:Tiles 246 13.png]] || {{item|Deadland Comes Alive}}
+|-
+| 246 || 14 || [[File:Tiles 246 14.png]] || {{item|Evil Presence}}
+|-
+| 246 || 15 || [[File:Tiles 246 15.png]] || {{item|Sky Guardian}}
+|-
+| 246 || 16 || [[File:Tiles 246 16.png]] || {{item|Living Gore}}
+|-
+| 246 || 17 || [[File:Tiles 246 17.png]] || {{item|Flowing Magma}}
+|-
+| 246 || 18 || [[File:Tiles 246 18.png]] || {{item|Holly}}
+|-
+| 246 || 19 || [[File:Tiles 246 19.png]] || {{item|The Duplicity of Reflections}}
+|-
+| 246 || 20 || [[File:Tiles 246 20.png]] || {{item|Still Life}}
+|-
+| 246 || 21 || [[File:See The World For What It Is (placed).png]] || {{item|See The World For What It Is}}
+|-
+| 246 || 22 || [[File:What Lurks Below (placed).png]] || {{item|What Lurks Below}}
+|-
+| 246 || 23 || [[File:This Is Getting Out Of Hand (placed).png]] || {{item|This Is Getting Out Of Hand}}
+|-
+| 246 || 24 || [[File:Buddies (placed).png]] || {{item|Buddies}}
+|-
+| 246 || 25 || [[File:Midnight Sun (placed).png]] || {{item|Midnight Sun}}
+|-
+| 246 || 26 || [[File:Couch Gag (placed).png]] || {{item|Couch Gag}}
+|-
+| 246 || 27 || [[File:Silent Fish (placed).png]] || {{item|Silent Fish}}
+|-
+| 246 || 28 || [[File:The Duke (placed).png]] || {{item|The Duke}}
+|-
+| 246 || 29 || [[File:Royal Romance (placed).png]] || {{item|Royal Romance}}
+|-
+| 246 || 30 || [[File:Bioluminescence (placed).png]] || {{item|Bioluminescence}}
+|-
+| 246 || 31 || [[File:Wildflowers (placed).png]] || {{item|Wildflowers}}
+|-
+| 246 || 32 || [[File:Viking Voyage (placed).png]] || {{item|Viking Voyage}}
+|-
+| 246 || 33 || [[File:Bifrost (placed).png]] || {{item|Bifrost}}
+|-
+| 246 || 34 || [[File:Heartlands (placed).png]] || {{item|Heartlands}}
+|-
+| 246 || 35 || [[File:Forest Troll (placed).png]] || {{item|Forest Troll}}
+|-
+| 246 || 36 || [[File:Aurora Borealis (placed).png]] || {{item|Aurora Borealis}}
+|-
+| 247 || 0 || [[File:Autohammer (placed).gif]] || {{item|Autohammer}} || <code>Autohammer</code>
+|-
+| 248 || 0 || [[File:Palladium Column (placed).png]] || {{item|Palladium Column}} || <code>PalladiumColumn</code>
+|-
+| 249 || 0 || [[File:Bubblegum Block (placed).png]] || {{item|Bubblegum Block}} || <code>BubblegumBlock</code>
+|-
+| 250 || 0 || [[File:Titanstone Block (placed).png]] || {{item|Titanstone Block}} || <code>Titanstone</code>
+|-
+| 251 || 0 || [[File:Pumpkin (placed).png]] || {{item|Pumpkin}} || <code>PumpkinBlock</code>
+|-
+| 252 || 0 || [[File:Hay (placed).png]] || {{item|Hay}} || <code>HayBlock</code>
+|-
+| 253 || 0 || [[File:Spooky Wood (placed).png]] || {{item|Spooky Wood}} || <code>SpookyWood</code>
+|-
+| 254 || 0 || [[File:Pumpkin Seed (placed).gif]] || {{item|Pumpkin Seed}} || <code>Pumpkins</code>
+|-
+| 255 || 0 || [[File:Offline Amethyst Gemspark Block (placed).png]] || {{item|Amethyst Gemspark Block}}（黯淡） || <code>AmethystGemsparkOff</code>
+|-
+| 256 || 0 || [[File:Offline Topaz Gemspark Block (placed).png]] || {{item|Topaz Gemspark Block}}（黯淡） || <code>TopazGemsparkOff</code>
+|-
+| 257 || 0 || [[File:Offline Sapphire Gemspark Block (placed).png]] || {{item|Sapphire Gemspark Block}}（黯淡） || <code>SapphireGemsparkOff</code>
+|-
+| 258 || 0 || [[File:Offline Emerald Gemspark Block (placed).png]] || {{item|Emerald Gemspark Block}}（黯淡） || <code>EmeraldGemsparkOff</code>
+|-
+| 259 || 0 || [[File:Offline Ruby Gemspark Block (placed).png]] || {{item|Ruby Gemspark Block}}（黯淡） || <code>RubyGemsparkOff</code>
+|-
+| 260 || 0 || [[File:Offline Diamond Gemspark Block (placed).png]] || {{item|Diamond Gemspark Block}}（黯淡） || <code>DiamondGemsparkOff</code>
+|-
+| 261 || 0 || [[File:Offline Amber Gemspark Block (placed).png]] || {{item|Amber Gemspark Block}}（黯淡） || <code>AmberGemsparkOff</code>
+|-
+| 262 || 0 || [[File:Amethyst Gemspark Block (placed).png]] || {{item|Amethyst Gemspark Block}}（激活） || <code>AmethystGemspark</code>
+|-
+| 263 || 0 || [[File:Topaz Gemspark Block (placed).png]] || {{item|Topaz Gemspark Block}}（激活） || <code>TopazGempsark</code>
+|-
+| 264 || 0 || [[File:Sapphire Gemspark Block (placed).png]] || {{item|Sapphire Gemspark Block}}（激活） || <code>SapphireGemspark</code>
+|-
+| 265 || 0 || [[File:Emerald Gemspark Block (placed).png]] || {{item|Emerald Gemspark Block}}（激活） || <code>EmeraldGemspark</code>
+|-
+| 266 || 0 || [[File:Ruby Gemspark Block (placed).png]] || {{item|Ruby Gemspark Block}}（激活） || <code>RubyGemspark</code>
+|-
+| 267 || 0 || [[File:Diamond Gemspark Block (placed).png]] || {{item|Diamond Gemspark Block}}（激活） || <code>DiamondGemspark</code>
+|-
+| 268 || 0 || [[File:Amber Gemspark Block (placed).png]] || {{item|Amber Gemspark Block}}（激活） || <code>AmberGemspark</code>
+|-
+| 269 || 0 || [[File:Womannequin (placed).png]] || {{item|Womannequin|note=（未使用，被 ID 470 替代）}} || <code>Womannequin</code>
+|-
+| 270 || 0 || [[File:Tiles 270.gif]] || {{item|Firefly in a Bottle}} || <code>FireflyinaBottle</code>
+|-
+| 271 || 0 || [[File:Tiles 271.gif]] || {{item|Lightning Bug in a Bottle}} || <code>LightningBuginaBottle</code>
+|-
+| 272 || 0 || [[File:Cog (placed).gif]] || {{item|Cog}} || <code>Cog</code>
+|-
+| 273 || 0 || [[File:Stone Slab (placed).png]] || {{item|Stone Slab}} || <code>StoneSlab</code>
+|-
+| 274 || 0 || [[File:Sandstone Slab (placed).png]] || {{item|Sandstone Slab}} || <code>SandstoneSlab</code>
+|-
+| 275 || 0 || [[File:Bunny Cage (placed).png]] || {{item|Bunny Cage}} || <code>BunnyCage</code>
+|-
+| 276 || 0 || [[File:Squirrel Cage (placed).png]] || {{item|Squirrel Cage}} || <code>SquirrelCage</code>
+|-
+| 277 || 0 || [[File:Mallard Duck Cage (placed).png]] || {{item|Mallard Duck Cage}} || <code>MallardDuckCage</code>
+|-
+| 278 || 0 || [[File:Duck Cage (placed).png]] || {{item|Duck Cage}} || <code>DuckCage</code>
+|-
+| 279 || 0 || [[File:Bird Cage (placed).png]] || {{item|Bird Cage}} || <code>BirdCage</code>
+|-
+| 280 || 0 || [[File:Blue Jay Cage (placed).png]] || {{item|Blue Jay Cage}} || <code>BlueJay</code>
+|-
+| 281 || 0 || [[File:Cardinal Cage (placed).png]] || {{item|Cardinal Cage}} || <code>CardinalCage</code>
+|-
+| 282 || 0 || [[File:Fish Bowl (placed).gif]] || {{item|Fish Bowl}} || <code>FishBowl</code>
+|-
+| 283 || 0 || [[File:Heavy Work Bench (placed).png]] || {{item|Heavy Work Bench}} || <code>HeavyWorkBench</code>
+|-
+| 284 || 0 || [[File:Copper Plating (placed).png]] || {{item|Copper Plating}} || <code>CopperPlating</code>
+|-
+| 285 || 0 || [[File:Snail Cage (placed).png]] || {{item|Snail Cage}} || <code>SnailCage</code>
+|-
+| 286 || 0 || [[File:Glowing Snail Cage (placed).png]] || {{item|Glowing Snail Cage}} || <code>GlowingSnailCage</code>
+|-
+| 287 || 0 || [[File:Ammo Box.png]] || {{item|Ammo Box}} || <code>AmmoBox</code>
+|-
+| 288 || 0 || [[File:Monarch Butterfly Jar (placed).png]] || {{item|Monarch Butterfly Jar}} || <code>MonarchButterflyJar</code>
+|-
+| 289 || 0 || [[File:Purple Emperor Butterfly Jar (placed).png]] || {{item|Purple Emperor Butterfly Jar}} || <code>PurpleEmporerButterflyJar</code>
+|-
+| 290 || 0 || [[File:Red Admiral Butterfly Jar (placed).png]] || {{item|Red Admiral Butterfly Jar}} || <code>RedAdmiralButterflyJar</code>
+|-
+| 291 || 0 || [[File:Ulysses Butterfly Jar (placed).png]] || {{item|Ulysses Butterfly Jar}} || <code>UlyssesButterflyJar</code>
+|-
+| 292 || 0 || [[File:Sulphur Butterfly Jar (placed).png]] || {{item|Sulphur Butterfly Jar}} || <code>SulphurButterflyJar</code>
+|-
+| 293 || 0 || [[File:Tree Nymph Butterfly Jar (placed).png]] || {{item|Tree Nymph Butterfly Jar}} || <code>TreeNymphButterflyJar</code>
+|-
+| 294 || 0 || [[File:Zebra Swallowtail Butterfly Jar (placed).png]] || {{item|Zebra Swallowtail Butterfly Jar}} || <code>ZebraSwallowtailButterflyJar</code>
+|-
+| 295 || 0 || [[File:Julia Butterfly Jar (placed).png]] || {{item|Julia Butterfly Jar}} || <code>JuliaButterflyJar</code>
+|-
+| 296 || 0 || [[File:Scorpion Cage (placed).png]] || {{item|Scorpion Cage}} || <code>ScorpionCage</code>
+|-
+| 297 || 0 || [[File:Black Scorpion Cage (placed).png]] || {{item|Black Scorpion Cage}} || <code>BlackScorpionCage</code>
+|-
+| 298 || 0 || [[File:Frog Cage (placed).png]] || {{item|Frog Cage}} || <code>FrogCage</code>
+|-
+| 299 || 0 || [[File:Mouse Cage (placed).png]] || {{item|Mouse Cage}} || <code>MouseCage</code>
+|}
+[[Category:数据 ID]]
+{{language info|en=Tile IDs/Part5}}

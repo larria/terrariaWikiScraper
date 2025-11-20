@@ -1,0 +1,27 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| auto = 2271
+| tag = buyable/vendor:Traveling Merchant
+}}
+
+'''{{tr|Arcane Rune Wall}}'''是一种[[{{tr|background Wall}}]]，从[[{{tr|Traveling Merchant}}]]处以每个 {{iteminfo|Arcane Rune Wall|buy}} 的价格购买。它是少数动画墙之一，显示的符文每几秒钟就变换一次。
+
+== 备注 ==
+* 符文本身不会拼出任何东西，也没办法更改以控制其“拼写”。
+* 符文的变化对于世界上所有放置的{{tr|Arcane Rune Walls}}是同步的。
+* 大片放置时，某些{{tr|tiles}}可能不会显示符文。
+** 这对于在大片其他类型的墙中间的单块{{tr|Arcane Rune Walls}}也适用。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.2.3.1|现在对于 [[{{tr|NPC}}]] [[{{tr|House}}|{{tr|Housings}}]]有效。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Arcane Rune Wall}}

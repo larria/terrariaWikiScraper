@@ -1,0 +1,31 @@
+{{item infobox
+| auto = 2374
+| tags = fishing / Quest rewards
+}}
+
+'''{{tr|Angler Earring}}'''是一件[[{{tr|accessory}}]]，装备时能为你的[[{{tr|Fishing}}|{{tr|Fishing power}}]]提供 10 点加成。它是作为完成 [[{{tr|Angler}}]] [[{{tr|NPC}}]] 的[[{{tr|Fishing}}]]{{tr|quest}}的奖励得到的，几率是 {{chance|1/40}}{{source code ref|v=1.4.3.6|name=angler|method=Terraria.Player.GetAnglerReward|t=注意，真实的基础掉落率实际上要略低于 {{chance|1/40}}，因为在此物品之前额外判定了许多其他奖励。真实的掉落率还会受其他因素的影响，相关的深入讨论参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]。}}，并与已经完成的任务数量和其他因素有关（细节参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]）。
+
+在{{eversions|1.4.0.1}}中，如果在{{tr|inventory}}或任何一个[[{{tr|Storage items}}#{{tr|Portable Storage}}|{{tr|Portable Storages}}]]中已经有{{tr|Angler Earring}}，{{tr|the Angler}}就不会将其作为奖励发给玩家。但是，如果玩家的{{tr|inventories}}中已经有了[[{{tr|High Test Fishing Line}}]]、{{tr|Angler Earring}}、'''和'''[[{{tr|Tackle Box}}]]（或者由它们所制作出来的{{tr|accessory}}之一，即{{tr|Angler Tackle Bag}}或{{tr|Lavaproof Tackle Bag}}），他就能再重复给予玩家{{tr|Angler Earrings}}。<ref name="angler"/>
+
+一次只能装备一个{{tr|Angler Earring}}，但是，{{tr|fishing power}}的提升和{{tr|the Angler Tackle Bag}}以及[[{{tr|Lavaproof Tackle Bag}}]]的可以叠加，如果三者全部装备上，会给予一共大小为 30 的加成。由于{{eversions|1.4.0.1|short=y}}中上述关于重复性的规则，将{{tr|Angler Earring}}放在{{tr|a chest}}中，即随身财物（{{tr|inventory}}或[[{{tr|Portable storage}}|{{tr|portable storages}}]]）'''之外'''，同时保留另外两个，这样会有好处，可以尽快拿到第二个{{tr|Angler Earring}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Angler Earring|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=Angler Earring|expectedrows=2}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Tooltip}}现在会显示提供的{{tr|fishing power}}的具体数值。}}
+{{history|Desktop 1.4.0.1|{{tr|The Angler}}不再会给你重复的{{tr|informational accessories}}，除非你已经全部拥有。}}
+{{history|Desktop 1.3.1|用于制作[[{{tr|Angler Tackle Bag}}]]。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Angler Earring}}

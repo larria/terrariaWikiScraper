@@ -1,0 +1,134 @@
+[[File:Terraria Forest 1.2.png|300px|thumb|出现在《{{tr|Terraria}}》{{tr|world}}（[[{{tr|Forest}}]]{{tr|biome}}）中的一个人物。]]
+[[File:Initial Hardmode map.png|300px|thumb|用[[{{tr|map viewer}}]]显示的一个[[{{tr|Hardmode}}]]一开始时的{{tr|world}}。]]
+{{about|{{tr|world}}的创建和结构|{{tr|world}}的尺寸大小和优势|{{tr|World size}}}}
+
+'''{{tr|world}}'''一词指的是[[《{{tr|Terraria}}》]]的{{wikipedia|lang=en|Virtual world|虚拟世界}}系统，游戏的一切皆发生于其中。{{tr|The world}}容纳着全部游戏内容，比如[[{{tr|item}}]]、[[{{tr|enemy}}]]、[[物体]]、等等。{{tr|Terraria worlds}}是{{wikipedia|lang=en|2D computer graphics|二维}}的，以类{{wikipedia|lang=en|Platform game|平台游戏}}的方式操纵。世界的外观取决于一些[[{{tr|settings}}]]。
+
+'''{{tr|map}}'''一词在一定程度上是{{tr|world}}的同义词，但也可以指游戏中的地图系统：[[{{tr|Minimap}}]]。
+
+== 选择 ==
+[[File:World menu.png|thumb|{{icon|desktop}}{{tr|The world}}选择菜单。]]
+
+选择要玩的[[{{tr|character}}]]后，玩家会进入{{tr|world}}选择菜单，在此处选择要进入的{{tr|world}}。
+
+在菜单中，列出了{{tr|world}}的以下数据和属性：名称、{{eicons|1.3.0.1}}[[#{{tr|World icons}}|{{tr|icon}}]]、[[{{tr|world difficulty}}|{{tr|difficulty}}]]、[[{{tr|world size}}|{{tr|size}}]]、和创建时间。
+
+若选择的是{{eil|Journey Mode}}{{tr|character}}，所有非{{tr|Journey Mode worlds}}会变得黯淡且被列在{{tr|world}}列表末尾，反之亦然。若执意选择这些{{tr|worlds}}会提示以下讯息：
+* {{tr|Journey Mode character}}选择非{{tr|Journey worlds}}：''“{{gameText|UI.PlayerIsCreativeAndWorldIsNotCreative}}”''
+* 非{{tr|Journey Mode character}}选择{{tr|Journey worlds}}：''“{{gameText|UI.PlayerIsNotCreativeAndWorldIsCreative}}”''
+
+对于已存在的{{tr|world}}，提供有数个选项：
+* [[File:Button play.png]] {{gameText|UI.Play}}：进入此{{tr|world}}游玩。
+* {{eicons|1.3.0.1}}[[File:Button unfavorite.png]] {{gameText|UI.Favorite}} / [[File:Button favorite.png]] {{gameText|UI.Unfavorite}}：将此{{tr|world}}标记/取消标记为收藏。收藏的{{tr|world}}会被列在{{tr|world}}列表最前面，且不能删除。
+* {{icon|desktop}}[[File:Button move to cloud.png]] {{gameText|UI.MoveToCloud}} / [[File:Button move off cloud.png]] {{gameText|UI.MoveOffCloud}}：将{{tr|world}}移入或移出 [https://support.steampowered.com/kb_article.php?ref=6736-QEIG-8941 Steam 云]。保存在 Steam 云中的{{tr|world}}可以在不同的设备上使用。
+* {{eicons|1.4.0.3}} [[File:Button copy seed.png]] 复制种子：查看并复制此{{tr|world}}的{{tr|seed}}。
+* {{eicons|1.4.2}}[[File:Button rename.png]] {{gameText|UI.Rename}}：更改{{tr|world}}名称。
+* [[File:Button delete.png]] {{gameText|UI.Delete}}：删除{{tr|world}}。
+
+== 世界图标 ==
+{{exclusive|1.3.0.1|section=y}}
+{{float file box|[[File:IconCompletion.png]]|[[{{tr|Moon Lord}}]]后{{tr|worlds}}的特殊金色边框。}}
+
+在世界选择菜单中，每个世界都会有一个代表着其内容与进程的树图标：其左半部分代表世界自然生成的[[{{tr|evil biome}}]]，而右半部分则是纯净[[{{tr|Forest}}]]树。在[[{{tr|Hardmode}}]]中，树冠右下角和左边分叉树枝的一部分会变为黄色，代表[[{{tr|The Hallow}}]]。<!--在{{eversions|1.4.4}}中，-->[[{{tr|Moon Lord}}]]已被打败的世界在世界图标周围会有特殊的金色边框，表明玩家已经完成全部进程。
+
+<gallery widths="80px" heights="80px">
+File:IconCorruption.png|{{tr|Corruption world icon}}。
+File:IconCrimson.png|{{tr|Crimson world icon}}。
+File:IconHallowCorruption.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimson.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+在一些[[{{tr|secret world seeds}}]]中，世界上天生就两种{{tr|evil biomes}}都有，这会导致树上{{tr|corrupt}}和{{tr|crimson}}都有而不呈现纯净部分。其他{{tr|secret world seeds}}则拥有十分独特的{{tr|world icons}}。
+
+== 创建和访问 ==
+[[File:Create World prompt.png|300px|thumb|{{desktop}} [[1.4.0.1]] 上的世界创建屏幕。]]
+[[File:Create world prompt mobile.png|300px|thumb|{{mobile}} [[Mobile 1.4.4.9.5|1.4.4.9.5]] 上的世界创建屏幕。]]
+
+=== 创建 ===
+在{{tr|world}}选择菜单中按下“{{gameText|UI.New}}”按钮可以进入{{tr|world}}创建功能。这里为玩家提供了大量定制选项：
+
+{| class="terraria"
+! 选项 !! 描述<small>（{{desktop}} [[1.4.0.1]]）</small>
+|-
+| [[File:Name icon.png|link=]] 世界名称 || {{gameText|UI.WorldDescriptionName}}<br/>{{note|{{gameText|UI.WorldCreationRandomizeNameDescription}}}}
+|- class="topline"
+| [[File:World seed icon.png|link=]] [[{{tr|World seed}}]] || {{gameText|UI.WorldDescriptionSeed}}<br/>{{note|{{gameText|UI.WorldCreationRandomizeSeedDescription}}}}
+|- class="topline"
+| [[{{tr|World size}}]] ||
+|-
+| style="padding-left:1.25em;" | 小 {{icon|small=y|3ds}} ||
+|-
+| style="padding-left:1.25em;" | [[File:Small world icon.png|link=]] 小 {{icon|small=y|desktop|console|oldgen|mobile}} / 扩展 {{icon|small=y|3ds}} || {{gameText|UI.WorldDescriptionSizeSmall}}
+|-
+| style="padding-left:1.25em;" | [[File:Medium world icon.png|link=]] 中 {{icon|small=y|desktop|console|oldgen|mobile}} || {{gameText|UI.WorldDescriptionSizeMedium}}
+|-
+| style="padding-left:1.25em;" | [[File:Large world icon.png|link=]] 大 {{icon|small=y|desktop|console|oldgen|mobile}} || {{gameText|UI.WorldDescriptionSizeLarge}}
+|- class="topline"
+| [[{{tr|Difficulty}}]] ||
+|-
+| style="padding-left:1.25em;" | [[File:Journey mode icon.png|link=]] {{eil|Journey}} || {{gameText|UI.WorldDescriptionCreative}}
+|-
+| style="padding-left:1.25em;" | [[File:Classic mode icon.png|link=]] [[{{tr|Classic}}]] || {{gameText|UI.WorldDescriptionNormal}}
+|-
+| style="padding-left:1.25em;" | [[File:Expert mode icon.png|link=]] {{eil|Expert}} || {{gameText|UI.WorldDescriptionExpert}}
+|-
+| style="padding-left:1.25em;" | [[File:Master mode icon.png|link=]] {{eil|Master}} || {{gameText|UI.WorldDescriptionMaster}}
+|- class="topline"
+| [[{{tr|Evil biome}}]] ||
+|-
+| style="padding-left:1.25em;" | [[File:Random world evil icon.png|link=]] 随机 || {{gameText|UI.WorldDescriptionEvilRandom}}
+|-
+| style="padding-left:1.25em;" | [[File:Corruption icon.png|link=]] [[{{tr|Corruption}}]] || {{gameText|UI.WorldDescriptionEvilCorrupt}}
+|-
+| style="padding-left:1.25em;" | [[File:Crimson icon.png|link=]] [[{{tr|Crimson}}]] || {{gameText|UI.WorldDescriptionEvilCrimson}}
+|}
+
+世界的名称和种子可以用带图标的按钮来随机化。
+
+按下“{{gameText|UI.Create}}”按钮时世界创建操作即告结束，接下来是一个自动化的过程，会生成一个随机世界（如果未使用[[{{tr|world seed}}]]）。这旨在确保没有两个世界是相同的，让每个新世界都多少是个新体验。不同世界间最大的差异可能是其中一些拥有[[{{tr|Corruption}}]]而其他的拥有[[{{tr|Crimson}}]]。这些[[{{tr|Evil Biome}}]]中的每一个都为玩家提供了一些独特的{{tr|materials}}、{{tr|enemies}}和掉落。
+
+=== 进入 ===
+在给定时间只能访问一个世界（与玩家一次只能控制一个{{tr|character}}的方式类似），但玩家可以自由创建任意数量的世界，只要他的设备或者电脑装的下。人物并不锁定于世界（{{tr|journey mode characters}}例外，只能进入{{tr|journey difficulty}}的世界），因此，举个例子，游戏末期的人物可以进入进展没这么深入的世界中玩，也可以将资源从一个世界带到另一个世界。
+
+由于玩家的[[{{tr|inventory}}]]、[[{{tr|Piggy Bank}}]]、[[{{tr|Safe}}]]、{{eil|Defender's Forge}}和{{eil|Void Vault}}中的内容是随同人物保存的，因此不管进入哪个世界，人物总是可以存取这些东西。
+
+一个世界既可以用于{{tr|single player}}也可以用于{{tr|multiplayer}}。在后者的情况下，此世界用于架设{{tr|server}}（参见[[指南:建立服务器]]）。
+
+进入新世界时，{{tr|character}}将出现在世界的[[{{tr|Spawn Point}}]]上，通常在{{tr|the surface}}靠近地图的水平中点处，并且游戏内的时间为 {{time|8:15 AM}}。可以用[[{{tr|bed}}]]来改变{{tr|character}}的个体{{tr|spawn point}}。如果玩家死亡、或用[[{{tr|Recall Potion}}]]、[[{{tr|Magic Mirror}}]]/{{eil|Ice Mirror}}、或{{eil|Cell Phone}}传送，就会回到其{{tr|spawn point}}。
+
+通常来说，通过{{tr|inventory}}打开时出现的设置选项（参见[[{{tr|game controls}}]]）即可退出{{tr|World}}，不过这取决于{{tr|game platform}}。
+
+== 生成 ==
+{{main|世界生成}}
+
+当生成新的随机世界时，加载进度条上方会出现各种文本，显示世界中正在生成的内容。
+
+== 结构和内容 ==
+世界被分为[[地层]]和[[{{tr|biome}}]]，以根据玩家的位置来提供不同的内容。世界内容同样通过一系列基于时间的{{tr|events}}来提供，比如[[{{tr|invasion}}]]、[[{{tr|night}}]]、[[{{tr|boss}}]] 战、等等。世界的[[{{tr|Pre-Hardmode}}]]和[[{{tr|Hardmode}}]]状态也同样决定了可用的内容。世界的{{tr|biomes}}和{{tr|layers}}、基于时间的{{tr|events}}、和{{tr|Hardmode}}都被设计为随着玩家变得更加熟练、人物变得更加强大而逐渐变得可进入。这种递进式的游戏玩法在[[{{tr|multiplayer}}]]构成了一种独特的挑战，因为一名玩家可能比其他玩家进步得更快，只会在困难的战斗中会发现自己处于一个弱团队中。
+
+世界的内容同样取决于[[{{tr|game platform}}]]。{{old-gen}}、和{{3DS}}有着其他平台上没有的独有内容，反之亦然。
+
+== 名称 ==
+{{exclusive|1.4.0.1|section=y}}
+
+在创建世界的过程中，玩家可以单击名称字段左边的标牌图标来让游戏为新世界生成随机名称。这会将名称字段中的内容替换为按以下方案创建的随机名称。名称的长度不会超过 27 个字符{{note|small=y|paren=y|译注：当游戏语言选择为英文时的英文随机世界名称}}。随机的世界名称有 {{chance|1/10000}} 的几率是 <code>{{gameText|SpecialWorldName.TheConstant}}</code>。{{source code ref|v=1.4.3.6|method=Terraria.GameContent.UI.States.UIWorldCreation.AssignRandomWorldName}}
+
+游戏将从下表中随机选择一个结构并随机选择形容词、地点和名词。前两种结构的被选中的几率是其他结构的两倍。
+
+{{transclude|世界/名称}}
+
+== 备注 ==
+* 世界可以通过称为[[地图查看器]]的第三方程序查看，有时还可以编辑。
+* 若玩家在打败[[{{tr|Wall of Flesh}}]]后、[[{{tr|Hardmode}}]]{{tr|biomes}}生成前（即在显示''“{{gameText|LegacyMisc.15}}”''前）试图退出{{tr|world}}，会出现加载说明''“{{gameText|LegacyWorldGen.48}}”''{{sic}}，玩家必须等待游戏完成对{{tr|Hardmode biomes}}的生成之后才能返回主菜单。
+* 和{{tr|characters}}类似，每个{{tr|Worlds}}都存储为单独的文件。{{tr|world}}的文件扩展名是 {{code|.wld}}。
+** 在 {{icon/windows}} Windows 中，它们可在 <code>%USERPROFILE%\Documents\My Games\Terraria\Worlds</code> 目录下找到。
+** 在 {{icon/android}} Android 中，它们可在 <code>Storage/emulated/0/Android/data/com.and.games505.TerrariaPaid/Worlds</code> 下找到，可以使用文件浏览器来访问。
+*** 注意：运行 Android 11 或更高版本的 Android 手机可能需要使用外部应用程序来访问 <code>Storage/emulated/0/Android/data/</code> 文件夹。或者，可以通过单独的设备（例如用一台电脑，通过 USB）来访问。
+** 对于 {{icon/windows}} Windows 上的 Steam 用户，如果已将{{tr|worlds}}移到 Steam 云上，默认情况下可以在诸如 <code>C:\Program Files (x86)\Steam\userdata\&lt;用户 ID&gt;\105600\remote\worlds</code> 的目录下找到它们。Mac 和 Linux 版游戏的世界位置可以参见[https://support.steampowered.com/kb_article.php?ref=6736-QEIG-8941 这篇 Steam 文章]。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=World}}

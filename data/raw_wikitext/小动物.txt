@@ -1,0 +1,288 @@
+{{npc infobox | boxwidth = 14em
+| type = Critter
+| name = Critters
+| imagealt = [[File:Squirrel.png|link=]] [[File:Bunny.png|link=]] [[File:Monarch Butterfly.png|link=]]
+| damage = 0
+| life = 5
+| defense = 0
+}}
+[[File:Bunny and Squirrel in a Forest.png|thumb|[[{{tr|Forest}}]]中{{tr|A Red Squirrel and a Bunny}}。]] 
+
+'''{{tr|Critters}}'''是无害的角色，除了可被玩家和{{tr|enemy}}杀死外，不会以任何方式与玩家互动。所有{{tr|critters}}都具有 5 生命值，作为环境实体。大多数{{tr|critters}}可以通过[[{{tr|statue}}]]召唤，除此之外，在任何支持它们的环境中也都会随机生成。
+
+除{{eil|Dolphin|s}}、{{eil|Mystic Frog|s}}和{{eil|Sea Turtle|s}}外，所有{{tr|critters}}都可以用[[{{tr|Bug Net}}]]捕捉。此外，来自[[{{tr|The Underworld}}]]的{{tr|critters}}只能用{{eil|Golden Bug Net}}或{{eil|Lavaproof Bug Net}}捕捉。捕捉后，{{tr|the critter}}可以放在玩家的{{tr|inventory}}中四处携带（或放置在收纳中），也可以通过像其他物品那般使用之从而将其再次释放。在{{eversions|1.3.1|short=y}}中，{{tr|statues}}生成的{{tr|critters}}不能捕捉；试图捕捉会导致{{tr|critter}}消失在一股烟雾中。
+
+大多数捕捉的{{tr|critters}}都可以用作{{tr|fishing}}[[{{tr|bait}}]]和制作成[[{{tr|Food and drink potions}}|{{tr|food}}]]。所有捕获的{{tr|critters}}都可以关起来创造出动态展示家具。一旦制作，{{tr|the critter}}就不再能释放。大多数{{tr|critters}}都是关在[[{{tr|Terrarium}}]]中的，但[[{{tr|Butterflies}}]]、[[{{tr|Fireflies}}]]和[[{{tr|Lightning Bug}}]]是关进[[{{tr|Bottle}}]]的，而[[{{tr|Goldfish}}]]和[[{{tr|Pupfish}}]]则是关进[[{{tr|Bottled Water}}]]中的。瓶子中的{{tr|Fireflies}}和{{tr|Lightning Bugs}}亦起到有效{{tr|light sources}}的作用。
+
+在{{eversions|1.3.0.1|short=y}}中，一些{{tr|critter}}种类具有稀有的金色变体品种，有 {{chance|1/400}} 几率取代普通版本生成，并且可被[[{{tr|Lifeform Analyzer}}]]探测到。它们出现在世界中时，其身上所发出的闪烁效果有助于在视觉上识别它们。
+
+{{eicons|1.4.0.1}} 为了填满[[{{tr|Bestiary}}]]条目的{{tr|critters}}部分，并不需要将这些{{tr|critters}}击杀。玩家只需要离{{tr|critter}}足够近（大约 15 格以内），它们就会被算进{{tr|bestiary entry}}中。
+
+在{{eversions|1.4.4|short=y}}中，在{{tr|tiles or trees}}上生成的大多数{{tr|critters}}在生成后都会有一个短暂的无敌时间，防止它们意外被击杀。
+
+目前有 {{eicons|1.4.0.1}} 86 / {{eicons|1.2.4|not=1.3.0.1}} 28 / {{eicons|1.2.3|invert=y}} 8 种不同的{{tr|critters}}。
+
+== 类型 ==
+{| class="terraria sortable lined align-center table-critters-types"
+! colspan=2 | {{tr|Critter}}
+! [[{{tr|Environment}}]]
+! [[{{tr|AI}}|{{tr|AI Type}}]]
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | [[{{tr|Value}}|卖出]]
+! [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! 备注
+{{/row|Bird|每 50 次击杀后会掉落{{item|Bird Banner}}。}}
+{{/row|Blue Jay}}
+{{/row|Buggy|通过破坏{{tr|background objects}}找到。}}
+{{/row|Bunny|每 50 次击杀后会掉落{{item|Bunny Banner}}。}}
+{{/row|Explosive Bunny|用{{tr|a Bunny}}和[[{{tr|Dynamite}}]]制作。不受{{eil|Guide To Critter Companionship}}影响。}}
+{{/row|Amethyst Bunny}}
+{{/row|Topaz Bunny}}
+{{/row|Sapphire Bunny}}
+{{/row|Emerald Bunny}}
+{{/row|Ruby Bunny}}
+{{/row|Diamond Bunny}}
+{{/row|Amber Bunny}}
+{{/row|Cardinal}}
+{{/row|Yellow Cockatiel}}
+{{/row|Gray Cockatiel}}
+{{/row|Dolphin|不能用[[{{tr|Bug Net}}]]捕捉。}}
+{{/row|Duck|npcid=364}}
+{{/row|Mallard Duck}}
+{{/row|Enchanted Nightcrawler|用{{item|Worm}}和{{item|Fallen Star}}制作。在[[{{tr|Meteor Shower}}]]期间和[[{{tr|Lantern Night}}]]期间取代{{tr|regular Worms}}生成。也可以通过打开[[{{tr|Can Of Worms}}]]得到。}}
+{{/row|Faeling|可以在大多数种类的{{tr|critters}}接触到[[{{tr|Shimmer}}]]时生成。}}
+{{/row|Blue Fairy|npcid=585|也能在{{tr|the surface}}[[{{tr|Fallen Log}}]]附近找到。只有{{tr|surface Fairies}}才能用{{tr|a Bug Net}}捕捉。{{tr|underground}}生成的{{tr|Fairies}}不能捕捉或伤害，并且可以引导玩家走向附近的{{tr|treasure}}。}}
+{{/row|Green Fairy|npcid=584|也能在{{tr|the surface}}[[{{tr|Fallen Log}}]]附近找到。只有{{tr|surface Fairies}}才能用{{tr|a Bug Net}}捕捉。{{tr|underground}}生成的{{tr|Fairies}}不能捕捉或伤害，并且可以引导玩家走向附近的{{tr|treasure}}。}}
+{{/row|Pink Fairy|npcid=583|也能在{{tr|the surface}}[[{{tr|Fallen Log}}]]附近找到。只有{{tr|surface Fairies}}才能用{{tr|a Bug Net}}捕捉。{{tr|underground}}生成的{{tr|Fairies}}不能捕捉或伤害，并且可以引导玩家走向附近的{{tr|treasure}}。}}
+{{/row|Firefly}}
+{{/row|Frog}}
+{{/row|Glowing Snail}}
+{{/row|Goldfish|每 50 次击杀后会掉落{{item|Goldfish Banner}}。下雨时在陆地上行走。}}
+{{/row|Grasshopper|通过破坏高草找到。}}
+{{/row|Grebe|ncpid=608}}
+{{/row|Grubby|通过破坏{{tr|Jungle grass}}和{{tr|bushes}}找到。}}
+{{/row|Ladybug|ncpid=604|触碰时提高幸运值，击杀时降低幸运值。}}
+{{/row|Lavafly|用[[{{tr|Lavaproof Bug Net}}]]或[[{{tr|Golden Bug Net}}]]捕捉。}}
+{{/row|Lightning Bug}}
+{{/row|Scarlet Macaw}}
+{{/row|Blue Macaw}}
+{{/row|Maggot|可掉落自[[{{tr|Maggot Zombie}}]]。}}
+{{/row|Magma Snail|用[[{{tr|Lavaproof Bug Net}}]]或[[{{tr|Golden Bug Net}}]]捕捉。}}
+{{/row|Mouse|不会被{{tr|enemies}}伤到。}}
+{{/row|Mystic Frog|使用[[{{tr|Purification Powder}}]]净化时会被转化为[[{{tr|Mystic Slime}}]][[{{tr|town pet}}]]。}}
+{{/row|Owl|在{{tr|night}}生成。}}
+{{/row|Penguin|每 50 次击杀后会掉落{{item|Penguin Banner}}。}}
+{{/row|Pupfish}}
+{{/row|Rat}}
+{{/row|Scorpion}}
+{{/row|Black Scorpion}}
+{{/row|Seagull}}
+{{/row|Seahorse}}
+{{/row|Sea Turtle|不能用[[{{tr|Bug Net}}]]捕捉。}}
+{{/row|Sluggy|通过破坏{{tr|Jungle grass}}和{{tr|bushes}}找到。}}
+{{/row|Snail}}
+{{/row|Squirrel}}
+{{/row|Red Squirrel}}
+{{/row|Amethyst Squirrel}}
+{{/row|Topaz Squirrel}}
+{{/row|Sapphire Squirrel}}
+{{/row|Emerald Squirrel}}
+{{/row|Ruby Squirrel}}
+{{/row|Diamond Squirrel}}
+{{/row|Amber Squirrel}}
+{{/row|Stinkbug}}
+{{/row|Toucan}}
+{{/row|Turtle}}
+{{/row|Jungle Turtle}}
+{{/row|Water Strider}}
+{{/row|Worm|也可以通过破坏{{tr|background objects}}或打开[[{{tr|Can Of Worms}}]]找到。}}
+|}
+
+=== {{tr|Butterflies}} ===
+{{main|{{tr|Butterflies}}}}
+
+{| class="terraria sortable lined align-center table-critters-types"
+! colspan=2 | {{tr|Butterfly}}
+! [[{{tr|Environment}}]]
+! [[{{tr|AI}}|{{tr|AI Type}}]]
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! 备注
+{{/row|Julia Butterfly|npcid=356}}
+{{/row|Monarch Butterfly|npcid=356}}
+{{/row|Purple Emperor Butterfly|npcid=356}}
+{{/row|Red Admiral Butterfly|npcid=356}}
+{{/row|Sulphur Butterfly|npcid=356}}
+{{/row|Tree Nymph Butterfly|极其稀有。|npcid=356}}
+{{/row|Ulysses Butterfly|npcid=356}}
+{{/row|Zebra Swallowtail Butterfly|npcid=356}}
+{{/row|Hell Butterfly|用[[{{tr|Lavaproof Bug Net}}]]或[[{{tr|Golden Bug Net}}]]捕捉。}}
+{{/row|Prismatic Lacewing|只在[[{{tr|Plantera}}]]已被打败后出现。被击杀时会召唤[[{{tr|Empress of Light}}]]。可被[[{{tr|Lifeform Analyzer}}]]探测到。}}
+|}
+
+=== {{tr|Dragonflies}} ===
+{{main|{{tr|Dragonflies}}}}
+
+{| class="terraria sortable lined align-center table-critters-types"
+! colspan=2 | {{tr|Dragonfly}}
+! [[{{tr|Environment}}]]
+! [[{{tr|AI}}|{{tr|AI Type}}]]
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! 备注
+{{/row|Yellow Dragonfly|ncpid=600}}
+{{/row|Red Dragonfly|ncpid=599}}
+{{/row|Black Dragonfly|ncpid=595}}
+{{/row|Blue Dragonfly|ncpid=596}}
+{{/row|Orange Dragonfly|ncpid=598}}
+{{/row|Green Dragonfly|ncpid=597}}
+|}
+
+=== {{tr|Gold critters}} ===
+{{Exclusive|1.3.0.1|Section=y}}
+{| class="terraria sortable lined align-center table-critters-types"
+! colspan=2 | {{tr|Critter}}
+! [[{{tr|Environment}}]]
+! [[{{tr|AI}}|{{tr|AI Type}}]]
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! 备注
+{{/row|Gold Bird|{{tr|Rare creature}}。}}
+{{/row|Gold Bunny|{{tr|Rare creature}}。}}
+{{/row|Gold Butterfly|{{tr|Rare creature}}。}}
+{{/row|Gold Dragonfly|ncpid=601|{{tr|Rare creature}}。}}
+{{/row|Gold Frog|{{tr|Rare creature}}。}}
+{{/row|Gold Goldfish|{{tr|Rare creature}}。}}
+{{/row|Gold Grasshopper|{{tr|Rare creature}}。通过破坏高草找到。}}
+{{/row|Gold Ladybug|ncpid=605|{{tr|Rare creature}}。触碰时提高幸运值，击杀时降低幸运值。}}
+{{/row|Gold Mouse|{{tr|Rare creature}}。不会被{{tr|enemies}}伤到。}}
+{{/row|Gold Seahorse|{{tr|Rare creature}}。}}
+{{/row|Gold Squirrel|{{tr|Rare creature}}。}}
+{{/row|Gold Water Strider|{{tr|Rare creature}}。}}
+{{/row|Gold Worm|{{tr|Rare creature}}。也可以通过破坏{{tr|background objects}}或打开[[{{tr|Can Of Worms}}]]找到。}}
+|}
+
+== {{tr|Boss summon critters}} ==
+{{tr|Boss summon critters}}指的是用来召唤特定 [[{{tr|boss}}|{{tr|bosses}}]] 的{{tr|critters}}。
+
+与大多数{{tr|critters}}类似，它们会受到提高总体生成速度的因素（例如[[{{tr|Blood Moon}}]]和[[{{tr|Water Candle}}]]）的影响，也不会成为[[{{tr|minion}}]]的目标（但有可能被它们意外杀死），且会受到{{tr|the Guide to Critter Companionship}}的影响。不过，与大多数{{tr|critters}}不同的是，它们免疫{{tr|enemies}}的攻击，在附近有居住的 {{tr|NPCs}} 时也不会生成得更多。
+
+{| class="terraria sortable lined align-center table-critters-types"
+! colspan=2 | {{tr|Critter}}
+! [[{{tr|Environment}}]]
+! [[{{tr|AI}}|{{tr|AI Type}}]]
+! [[{{tr|Rarity}}]]
+! data-sort-type="number" | 卖出
+! [[{{tr|Bait}}#{{tr|Bait Power}}|{{tr|Bait Power}}]]
+! 备注
+{{/row|Prismatic Lacewing|被击杀时会召唤[[{{tr|Empress of Light}}]]。}}
+{{/row|Truffle Worm|用作{{tr|bait}}时会召唤[[{{tr|Duke Fishron}}]]。}}
+|}
+
+== 图库 ==
+<gallery widths="202px" heights="116px" caption="放置状态下的[[{{tr|Terrarium}}]]或[[{{tr|Bottle}}]]中的小动物">
+File:Placed Birds.gif
+File:Placed Squirrels.gif
+File:Placed Bunnies.gif
+File:Placed Ducks.gif
+File:Placed Scorpions.gif
+File:Placed Butterflies.gif
+</gallery>
+<gallery widths="116px" heights="116px">
+File:Placed Penguin.gif
+File:Placed Worms.gif
+File:Placed Grasshoppers.gif
+File:Placed Jungle Bugs.gif
+File:Placed Snails.gif
+File:Placed Frogs.gif
+File:Placed Mice.gif
+</gallery>
+<gallery widths="40px" heights="40px">
+File:Fish Bowl (placed).gif
+File:Placed Fireflies.gif
+</gallery>
+
+== 备注 ==
+* 大多数{{tr|Critters}}在靠近 {{tr|NPC}} 的地方取代{{tr|enemies}}生成。但[[{{tr|Mice}}]]通常不会在靠近 {{tr|NPCs}} 的地方生成。
+* 影响{{tr|critter}}的{{tr|spawn rate}}和生成上限的因素有许多都和影响[[敌怪]]的相同，因此[[{{tr|Water Candle}}]]、{{eil|Peace Candle}}、[[{{tr|Battle Potion}}]]、在{{eil|Journey Mode}}种调整{{tr|Enemy Spawn Rate}}{{tr|slider}}、[[{{tr|Calming Potion}}]]、[[{{tr|Sunflower}}]]都会影响{{tr|critter}}的生成。
+* 当玩家[[{{tr|inventory}}]]已满时，用[[{{tr|Bug Net}}]]捕捉到的{{tr|Critters}}会以物品形式掉落在世界中，而非将其释放。
+* {{tr|Critters}}会再生生命，这点可以通过用诸如[[{{tr|Copper Axe}}|{{tr|Copper Axe}}]]、[[{{tr|Copper Pickaxe}}]]或[[{{tr|Wooden Hammer}}]]之类的低伤害的{{tr|weapon}}/{{tr|tool}}击打它们观察到。
+* {{icon/old-gen}} 试图释放[[{{tr|Goldfish}}]]会导致{{tr|goldfish}}被消耗掉。
+* 一旦{{tr|Critter}}放到[[{{tr|cage}}]]、[[{{tr|bottle}}]]、或罐子中，单独的{{tr|Critter}}就不再能释放出来，将永远留在那。一个替代方案是简单地将其释放到一个封闭区域中，不过若玩家跑开太远的话{{tr|Critter}}会消失。
+* {{eicons|1.4.0.1}} 试图用普通{{tr|Bug Net}}捕捉[[{{tr|Underworld}}]]{{tr|critter}}会导致玩家得到[[{{tr|On Fire!}}]]{{tr|debuff}}，持续 5 秒钟，且{{tr|critter}}并不会被拾取。
+* 很多看起来只有两格甚至一格高的{{tr|critters}}实际上需要有完整的三格高空间来移动。如果手工将其放在两格高的空间中，它们会无法移动。 
+** 三格高的{{tr|critters}}只有{{tr|Penguins}} {{Verify}}
+** 相比之下，{{tr|Worms}}、{{tr|Snails}}、{{tr|Mice}}、[[{{tr|Sluggy}}]]、[[{{tr|Grubby}}]]和[[{{tr|Buggy}}]]都可以在一格高的空间中爬行。
+** {{tr|Butterflies}}可以在一格高的空间中飞行。
+** {{tr|Grasshoppers}}，如果将其放在小空间中，它可以向下跳穿过下方的{{tr|blocks}}，直到进入开放空间。
+** 鸟在一格高的空间中可以向上飞行穿过至少其上方的{{tr|block}}。
+
+== 小贴士 ==
+* 获得了几个 [[{{tr|NPC}}]] 之后，在[[{{tr|House}}|{{tr|housing}}]]周围保持有一些[[{{tr|Water Candle}}]]会导致生成更多{{tr|Critters}}，同时不会生成{{tr|enemies}}。
+* 要想精确地知道一个{{tr|enemy}}能造成多少伤害，可以将一个{{tr|critter}}放置在{{tr|enemy}}上。{{tr|Critters}}拥有 0 防御力，{{tr|enemy}}对其造成的伤害不会像大多数造成伤害的情况那样变化。来自{{tr|enemy}}的{{tr|Projectiles}}会对{{tr|critters}}造成变化并降低过的伤害，因此不能用这种方法来测量{{tr|projectile damage}}。
+* 游戏早期，在玩家能够制造出足够多的{{tr|torches}}放在基地四周之前，玩家可以用{{tr|critters}}来在[[{{tr|enemy}}]]接近时发出警报。
+*对于合适的{{tr|critter}}种类，有 1/400 的生成会变成更有价值的{{tr|gold critter}}。但是，由于所有{{tr|critters}}都受{{tr|spawn}}上限的限制，除非你费神收集掉所有那些“无价值”{{tr|critters}}来加快周转，否则不会生成新的{{tr|critter}}。
+* 在[[{{tr|Blood Moon}}]]期间，[[{{tr|Bunnies}}]]、[[{{tr|Goldfish}}]]、和[[{{tr|Penguin}}]]会转变为敌对{{tr|enemies}}：在[[{{tr|The Corruption}}|{{tr|Corruption}}]]世界中是[[{{tr|Corrupt Bunnies}}]]、[[{{tr|Corrupt Goldfish}}]]和[[{{tr|Corrupt Penguin}}]]（({{eicons|Vicious Bunny}}在[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界中则是[[{{tr|Vicious Bunnies}}]]、[[{{tr|Vicious Goldfish}}]]和[[{{tr|Vicious Penguin}}]]）。因此建议装备不好或生命值较低的玩家在夜幕降临前杀死或捕捉附近的所有{{tr|bunny}}、{{tr|goldfish}}、或{{tr|penguin}}。已经放到{{tr|inventory}}、[[{{tr|storage}}]]、或{{tr|cages}}中的{{tr|Critters}}不受影响。同样的这些{{tr|critters}}可以通过朝它们抛撒[[{{tr|Vile Powder}}]]将其手工转变为其{{tr|corruption}}形态、抛撒{{eil|Vicious Powder}}则转变为{{tr|crimson}}形态。所有在{{tr|Blood Moon}}期间由[[{{tr|statues}}]]生成的{{tr|Bunnies}}、{{tr|Goldfish}}、和{{tr|Penguins}}会转变为{{tr|enemies}}。一旦这些{{tr|critters}}已经转变为敌对{{tr|enemies}}，它们就不再能用{{tr|Bug Net}}捕捉。
+* {{tr|inventory}}中有{{eil|Guide To Critter Companionship}}会防止玩家对除[[{{tr|Explosive Bunny}}]]外的所有{{tr|critters}}造成伤害。这包括玩家放置的{{tr|trap}}。
+* [[{{tr|Hell Butterfly}}]]、[[{{tr|Lavafly}}]]或[[{{tr|Magma Snail}}]]之类的{{tr|Lava critters}}对于想要用任意{{tr|fishing rod}}在{{tr|lava}}中钓鱼（在版本 1.4.0.1 或更高中）的玩家会很有用，但可能相当难以找到。{{tr|Critters}}在玩家移动不太多时会生成的更快些，从屏幕两侧进入。在[[{{tr|The Underworld}}]]中停留在同一个地方，击杀周围的各种{{tr|enemies}}，似乎是得到大量{{tr|lava critters}}的最佳方法。
+* 在有立体声的平台上，{{tr|critter}}的声音将指示{{tr|critter}}的方向（左或者右）。这对于各种{{tr|birds}}（包括{{tr|owls and ducks}}）和{{tr|frogs}}特别有用。
+
+== 花絮 ==
+[[File:Glowing Snail Cage Mobile confirmation.jpg|300px|thumb|{{tr|Glowing Snail Cage}}发出的光]]
+* 放置在[[{{tr|Terrarium}}]]中的鸟类啄食次数按照升序分布，[[{{tr|Blue Jay}}]]一次、[[{{tr|Bird}}]]两次、[[{{tr|Cardinal}}]]三次、[[{{tr|Gold Bird}}]]四次。
+* {{icon/mobile}} [[{{tr|The glowing snail cage}}]]会发出微弱的蓝光，类似于[[{{tr|Jellyfish necklace}}]]在水下时那样。
+* [[{{tr|Bunny}}]]、[[{{tr|Bird}}]]、[[{{tr|Goldfish}}]]、和[[{{tr|Penguin}}]]是仅有的四种有自己的[[{{tr|Banners (enemy)}}|{{tr|banners}}]]的{{tr|Critters}}。
+* 所有{{tr|the gem bunnies}}和{{tr|gem squirrels}}出售价格都是一样的，尽管相应种类的[[{{tr|gems}}]]通常价格要更高。
+{{bestiary|Gold Bunny|Gold Worm|Gold Bunny-alias={{tr|Gold critters}}|Gold Worm-alias={{tr|Gold bait}}}}
+* 在 1.4 之前，{{tr|the Gold Mouse}}可能是游戏中最稀有的非单一生物；从 1.4 开始，此宝座可能已经被{{tr|Gold Seahorse or the Gold Water Strider}}所占据。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了[[{{tr|Cockatiels}}]]、[[{{tr|Faeling}}]]、[[{{tr|Macaws}}]]、[[{{tr|Mystic Frog}}]]、[[{{tr|Stinkbug}}]]、和[[{{tr|Toucan}}]]。
+** {{tr|tiles or trees}}上生成的大多数{{tr|critters}}在生成后，在能被击杀前都会有一个短暂的延迟（与在{{tr|tiles}}上生成的{{tr|Worms}}受保护的情况相同）。}}
+{{history|Desktop 1.4.3.3|[[{{tr|Minions}}]]、[[{{tr|sentries}}]]、以及它们的{{tr|projectiles}}不再会伤害{{tr|critters}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Gem Critters}}]]、[[{{tr|Grebe}}]]、[[{{tr|Ladybug}}]]、[[{{tr|Maggot}}]]、[[{{tr|Owl}}]]、[[{{tr|Prismatic Lacewing}}]]、[[{{tr|Pupfish}}]]、[[{{tr|Rat}}]]、[[{{tr|Seagull}}]]、[[{{tr|Seahorse}}]]、[[{{tr|Turtle}}]]和[[{{tr|Jungle Turtle}}]]、和[[{{tr|Water Strider}}]]。
+** 添加了 6 种[[{{tr|Dragonflies}}]]（黄、红、黑、蓝、橙、绿）。
+** 添加了 3 种[[{{tr|Fairies}}]]（蓝、绿、粉）。
+** 添加了出现在[[{{tr|Underworld}}]]的{{tr|critters}}：[[{{tr|Lavafly}}]]、[[{{tr|Magma Snail}}]]、和[[{{tr|Hell Butterfly}}]]。它们全都只能用[[{{tr|Lavaproof Bug Net}}]]捕捉。
+** 添加了更多{{tr|gold critters}}：[[{{tr|Gold Dragonfly}}]]、[[{{tr|Gold Goldfish}}]]、[[{{tr|Gold Ladybug}}]]、[[{{tr|Gold Seahorse}}]]、和[[{{tr|Gold Water Strider}}]]。
+** 添加了[[{{tr|Sea Turtle}}]]和[[{{tr|Dolphin}}]]，它们无法捕捉。}}
+{{history|Desktop 1.3.1|
+** 通过[[{{tr|statues}}]]生成的{{tr|Critters}}不再能用[[{{tr|Bug Net}}]]捕捉。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Red Squirrel}}]]、[[{{tr|Buggy}}]]、[[{{tr|Grubby}}]]、和[[{{tr|Sluggy}}]]。
+** 添加了金变种：[[{{tr|Gold Bird}}]]、[[{{tr|Gold Bunny}}]]、[[{{tr|Gold Butterfly}}]]、[[{{tr|Gold Frog}}]]、[[{{tr|Gold Grasshopper}}]]、[[{{tr|Gold Mouse}}]]、[[{{tr|Gold Squirrel}}]]、和[[{{tr|Gold Worm}}]]。
+** {{tr|Critters}}现在有卖出价格了。
+** {{tr|Worms}}可用于制作[[{{tr|Enchanted Nightcrawler}}]]。}}
+{{history|Desktop 1.2.4|
+** 添加了[[{{tr|Grasshopper}}]]和[[{{tr|Truffle Worm}}]]。
+** 很多{{tr|critters}}现在可用作[[{{tr|bait}}]]。}}
+{{history|Desktop 1.2.3|
+** 现在有{{tr|critter}}的声音了。
+** 添加了[[{{tr|Duck}}]]和[[{{tr|Mallard Duck}}]]、[[{{tr|Firefly}}]]和[[{{tr|Lightning Bug}}]]、[[{{tr|Frog}}]]、[[{{tr|Snail}}]]和[[{{tr|Glowing Snail}}]]、[[{{tr|Scorpion}}]]和[[{{tr|Black Scorpion}}]]、[[{{tr|Worm}}]]、以及 8 种[[{{tr|Butterflies}}]]（{{tr|Monarch Butterfly}}、{{tr|Sulphur Butterfly}}、{{tr|Zebra Swallowtail Butterfly}}、{{tr|Ulysses Butterfly}}、{{tr|Julia Butterfly}}、{{tr|Red Admiral Butterfly}}、{{tr|Purple Emperor Butterfly}}、和{{tr|Tree Nymph Butterfly}}）。
+** 可以用[[{{tr|Bug Net}}]]捕捉所有{{tr|critters}}。
+** 你现在可以将{{tr|critters}}放在[[{{tr|cage}}]]中。
+** {{tr|Goldfish}}被杀掉时不再作为{{tr|items}}掉落。}}
+{{history|Desktop 1.2.1|{{tr|Mice}}不再会被{{tr|enemies}}杀死并且不会再生成在{{tr|the underworld}}中。}}
+{{history|Desktop 1.2.0.3|添加了新的友好{{tr|critters}}：[[{{tr|Blue Jay}}]]、[[{{tr|Cardinal}}]]、[[{{tr|Squirrel}}]]和[[{{tr|Mouse}}]]。}}
+{{history|Desktop 1.2|添加了[[{{tr|Penguin}}]]。}}
+{{history|Desktop 1.1|添加了[[{{tr|Bird}}]]。}}
+{{history|Desktop 1.0.4|引入了[[{{tr|Bunny}}]]和[[{{tr|Goldfish}}]]。}}
+{{history|Console 1.08|添加了{{tr|Mallard Duck}}、{{tr|Firefly}}、{{tr|Lightning Bug}}、和{{tr|Butterflies}}的{{tr|cage}}。}}
+{{history|Console 1.07|
+** 添加了：{{tr|Duck}}和{{tr|Mallard Duck}}、{{tr|Firefly}}和{{tr|Lightning Bug}}、{{tr|Frog}}、{{tr|Grasshopper}}、{{tr|Scorpion}}和{{tr|Black Scorpion}}、{{tr|Snail}}和{{tr|Glowing Snail}}、{{tr|Worm}}和{{tr|Truffle Worm}}、和{{tr|Butterflies}} （{{tr|Monarch Butterfly}}、{{tr|Sulphur Butterfly}}、{{tr|Zebra Swallowtail Butterfly}}、{{tr|Ulysses Butterfly}}、{{tr|Julia Butterfly}}、{{tr|Red Admiral Butterfly}}、{{tr|Purple Emperor Butterfly}}、和{{tr|Tree Nymph Butterfly}}）。
+** {{tr|Critters}}现在可以关进[[{{tr|cage}}]]了（除了{{tr|the Mallard Duck}}、{{tr|Firefly}}、{{tr|Lightning Bug}}、和{{tr|Butterflies}}）。
+** 所有其他{{tr|critter}}内容都和{{tr|Desktop}} 1.2.4 同步了。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Critters}}

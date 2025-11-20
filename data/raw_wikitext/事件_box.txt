@@ -1,0 +1,30 @@
+<div style="height: 0px;overflow:hidden">
+=== {{tr|{{{name|}}}}} ===
+</div><!-- invisible heading (anchor for linking/toc)
+
+-->{{infocard<!--
+	-->|name={{tr|{{{name|<code><nowiki>{{{name}}}</nowiki></code>}}}}} {{#iferror:{{eicons|{{{name|}}}}}}}<!--
+	-->|icon={{#if:{{{image|}}}|{{{image|}}}{{!}}275px|<noinclude><code><nowiki>{{{image}}}</nowiki></code>{{!}}275px</noinclude>}}<!--
+	-->|intro=<!--
+		-->{{#if:{{{statusmessage|}}}|<!--
+			-->{{infocard/box|css=padding:0 10px|<!--
+				-->{{#if:{{{icon|}}}|{{{icon|}}}&#32;}}<!--
+				-->''{{{statusmessage|}}}''<!--
+			-->}}<!--
+		-->}}<!--
+	-->|outro=<!--
+		--><div style="float:right"><!--
+			-->{{infocard/box|{{{summoned|<code><nowiki>{{{summoned}}}</nowiki></code>}}}|css=width:275px; padding:0.25em 0.5em 0.75em 1em; margin-left:1em;{{#if:{{{statusmessage|}}}||margin-top:2em;}}}}<!--
+		--></div><!--
+		-->{{{1|<code><nowiki>{{{1}}}</nowiki></code>}}}<!--
+-->}}<!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Template for displaying an event box; uses {{tl|infocard}}.
+
+Additional parameters (apart from the ones shown above) are <code>statusmessage</code> and <code>icon</code>, used for adding a [[status message]] box directly below the heading and for adding an icon in front of that message, respectively.
+
+{{language info|en=Events/box}}
+</noinclude>

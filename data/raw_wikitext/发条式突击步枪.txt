@@ -1,0 +1,41 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 434
+| listcat = Guns / Scope
+| tags = drop / treasure bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Clockwork Assault Rifle (demo).gif|frame|{{tr|The Clockwork Assault Rifle}}发射[[{{tr|Musket Balls}}]]。]]
+
+'''{{tr|Clockwork Assault Rifle}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|gun}}]]，有{{chance|1/4}}几率掉落自[[{{tr|Wall of Flesh}}]]。使用时，其会发射三连发，而且仅会消耗一颗[[{{tr|ammunition}}]]。
+
+{{modifier|rangednokb}}
+
+== 备注 ==
+* 在内部，{{tr|Clockwork Assault Rifle}}具有 {{iteminfo|Clockwork Assault Rifle|useTime}} 的 <code>[[useTime]]</code>，以及 {{iteminfo|Clockwork Assault Rifle|useAnimation}} 的 <code>[[useAnimation]]</code>，使得其每次 {{key|use}} 按键输入会发射 {{#expr:{{iteminfo|Clockwork Assault Rifle|useAnimation}}/{{iteminfo|Clockwork Assault Rifle|useTime}}}} 次。它还具有 {{iteminfo|Clockwork Assault Rifle|reuseDelay}} 的 <code>[[reuseDelay]]</code>，在每次开火间添加了 {{iteminfo|Clockwork Assault Rifle|reuseDelay}} {{tr|tick}}（{{duration|{{iteminfo|Clockwork Assault Rifle|reuseDelay}} ticks}}）的间隔。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults1}}
+
+== 小贴士 ==
+* {{tr|player}}使用此{{tr|weapon}}时应搭配[[{{tr|Ichor Bullet}}]]或其他可造成[[{{tr|Ichor}}]]{{tr|debuff}}的{{tr|weapon}}，因为其具有较低的{{tr|base damage}}与较高的攻击频率。
+* 当使用[[{{tr|Crystal Bullet}}]]时，由于{{tr|bullet}}和{{tr|shards}}的{{tr|base damage}}较低，搭配[[{{tr|Shark Tooth Necklace}}]]和[[{{tr|Stinger Necklace}}]]能显著提升{{tr|damage}}。
+* 使用[[{{tr|Rapid}}]]{{tr|modifier}}将同时减少每两发射击间的间隔和每两轮连射之间的间隔，使收益变得不成比例的大。这使它的平均射速和{{tr|Agile}}[[{{tr|Minishark}}]]一样快，但在应对有 30 或更多[[{{tr|defense}}]]的{{tr|enemy}}时，{{tr|Demonic}}依然是更好的。
+
+== 花絮 ==
+* {{tr|The Clockwork Assault Rifle}}可能参考了 {{wikipedia|lang=en|Heckler & Koch G11}} 突击步枪，这是一种现实中的原型步枪，以三发点射的方式发射，有发条式供弹系统，但 G11 的三发“超爆发”发射速率为每分钟 2,100 发。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Damage}}由 19 降低至 17。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Clockwork Assault Rifle}}

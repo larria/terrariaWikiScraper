@@ -1,0 +1,62 @@
+{{npc infobox | boxwidth=21.25em
+| auto = 75
+| image = Pixie.gif
+| type = Flying Enemy
+| environment = The Hallow
+| debuff = Silenced
+| debuffchance = 10%
+| debuffduration = {{modes|{{duration|7}}|{{duration|14}}|{{duration|17.5}}}}
+| debuff2 = Slow
+| debuffchance2 = 12.5%
+| debuffduration2 = {{modes|{{duration|15}}|{{duration|30}}|{{duration|37.5}}}}
+| Pixie Dust|1–3|100%
+| Fast Clock|1|{{modes|1%|2%}}
+| Megaphone|1|{{modes|1%|2%}}
+| sound1 = Pixie.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+
+[[File:Site-logo-hallowed.png|frame|right|{{tr|Official Terraria Forums}}上展示的{{tr|Wyvern}}和{{tr|Pixie}}（{{tr|Hallowed}}风格）]]
+
+'''{{tr|Pixie}}'''是一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，在[[{{tr|The Hallow}}]]的[[{{tr|Surface}}]]{{tr|layer}}频繁生成。{{tr|Pixie}}在地面上方有限的高度盘旋，发出大量闪烁的光，并能造成[[{{tr|Slow}}]]或[[{{tr|Silenced}}]][[{{tr|debuffs}}]]。 它们总是会掉落[[{{tr|Pixie Dust}}]]，这是一种常见的{{tr|Hardmode}}[[{{tr|crafting material}}]]。
+
+== 备注 ==
+* 尽管{{tr|Pixie}}看起来会“飞行”，但它们最多只能在地面上方大约四格的地方盘旋，将它们限制在与[[{{tr|Zombie}}]]相似的水平“跳跃”范围内。 但是，{{tr|Pixie}}也可以“攀爬”垂直墙壁以接触玩家，从而限制了陷阱的有效性。
+* {{tr|Pixie}}的移动模式使建造一个{{tr|Pixie}}刷怪场变得复杂，因为它们会漂浮在浅浅的[[{{tr|lava}}]]池上方，而且它们的上下摆动使得固定[[{{tr|traps}}]]难以击中它们。 具有近距离攻击能力的[[{{tr|Minion}}]]，例如[[{{tr|Spider Staff}}|{{tr|Spiders}}]]、[[{{tr|Raven Staff}}|{{tr|Ravens}}]]和[[{{tr|Deadly Sphere Staff}}|{{tr|Deadly Spheres}}]]，可以减轻这种困难。
+* {{tr|Pixies}}可以同时掉落[[{{tr|Megaphone}}]]和[[{{tr|Fast Clock}}]]。当其中之一掉落时（{{chance|1/100}} / {{expert|{{chance|1/50}}}} 几率），也有 {{chance|1/100}}（{{expert|{{chance|1/50}}}}）几率掉落另一个。{{source code ref|v=1.4.0.5|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterStatusImmunityItems}}因此，两者都掉落的几率为 {{chance|1/10000}}（{{expert|{{chance|1/2500}}}}）。
+
+== 花絮 ==
+* [[{{tr|Fairy Bell}}]]可以召唤一个看起来类似于{{tr|Pixie}}的[[{{tr|Fairy}}]]，并可作为玩家的{{tr|a light source}}。
+* {{tr|The Pixie}}的设计致敬了奇幻动作冒险游戏系列{{维基百科|The Legend of Zelda|t=塞尔达传说|b=y}}中<span class="plainlinks">[https://zelda.gamepedia.com/Fairy 仙灵（Fairy）]</span>的设计，在其中一些仙灵是带翅膀的彩色光球。
+* {{icon/old-gen}} 在较旧版本中，{{tr|Pixie}}的音效及其他部分音效在部分特定情况下会失真。{{verify}}
+* {{tr|the Pixie}}制造的声音有时在它被击杀后几秒钟还能听到。
+* 当{{tr|surface}}{{tr|Hallow}}并未在{{tr|world}}中生成时（如那一空间被{{tr|Jungle}}占用时），可能需要在另一个{{tr|world}}中刷取{{tr|Pixie}}掉落。另一种可行的方案是从树妖处购买神圣草种子并自己创建一块神圣区域。
+{{bestiary}}
+
+== 另见 ==
+* {{item|Blue Fairy}}
+* {{item|Green Fairy}}
+* {{item|Pink Fairy}}
+* {{item|Empress of Light|scale=0.1}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|不再有几率掉落[[{{tr|Blessed Apple}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|[[{{tr|Dark Mummy}}]]和{{tr|Pixie}}一般不再会同时掉落两个状态保护{{tr|accessories}}。99% 时间都是如此。}}
+{{history|Desktop 1.2.0.3|现在有几率掉落它自己的相应{{tr|Banner}}。}}
+{{history|Desktop 1.2|现在有几率掉落{{tr|Fast Clock}}和{{tr|the Megaphone}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}（但较难在{{tr|Corruption worlds}}中找到）{{verify}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Pixie}}

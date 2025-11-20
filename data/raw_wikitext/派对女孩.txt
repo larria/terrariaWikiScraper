@@ -1,0 +1,263 @@
+{{npc infobox | tabs=y | boxwidth=18em
+| auto = 208
+| idprojectile = 588
+| type = NPC
+| environment = Valid house
+| damage = {{modes|30|45|52}}
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|Happy Grenades}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| Happy Grenade|30–60|25%
+| imageother = Map Icon Party Girl.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+
+'''{{tr|Party Girl}}'''是个[[{{tr|pre-Hardmode}}]]的 [[{{tr|NPC}}]] 商贩，出售喜庆的[[:Category:{{tr|Novelty items}}|{{tr|novelty items}}]]和[[{{tr|furniture}}]]。
+
+和大多数其他{{tr|town NPCs}} 不同，在下方条件满足时，{{tr|the Party Girl}}每隔两分钟仅有 {{chance|1/40}} 几率随机生成，在这期间她受到通常的 {{tr|NPC spawn rate}}限制。换言之，平均来说她生成所需的时间比常规 {{tr|NPC}} 多 40 倍。前述条件为：
+
+* 有一间空[[{{tr|house}}]]。
+* {{eicons|1.3.0.1}} 14 / {{icon/3DS}} 12 / {{eicons|1.3.0.1|invert=y|3DS=n}} 8 名其他{{tr|town NPCs}}。注意[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]、和{{eil|town pets}}计入此数量中，但{{eil|Skeleton Merchant}}并不。{{source code ref|v=1.4.1.2|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+
+在{{eversions|1.4.4}}中，若{{tr|Party Girl}}被杀死，她会按照正常的生成几率重生，而不会更稀有。在{{eversions|1.4.4|invert=y}}中，她重生时仍然使用较低的几率。 
+
+在{{eversions|1.3.0.1}}中，{{tr|the Party Girl}}会朝附近的{{tr|enemies}}扔[[{{tr|Happy Grenade}}]]来自卫，在游戏开始时能造成 30 / {{expert|45}} / {{master|52}} 伤害，并且（在{{eversions|1.4.0.1}}中）随着玩家推进她会得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>她偶尔还会向玩家投掷{{tr|confetti}}。她死亡时有时候会掉落大量{{tr|Happy Grenades}}。
+
+在{{eversions|1.4.0.1}}中，若在自然发生的[[{{tr|Party}}]]期间和她交谈，她会给第一位与其交谈的玩家一块[[{{tr|Slice of Cake}}]]。
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Confetti Gun}}
+|{{shop row|Confetti}}
+|{{shop row|Smoke Bomb}}
+|{{shop row|Bubble Machine|{{eicons|1.4.0.1}} 白天 / {{eicons|1.4.0.1|invert=y}} 一直有售。}}
+|{{shop row|Fog Machine|夜间。}}
+|{{shop row|Bubble Wand}}
+|{{shop row|Beach Ball|一直有售。{{eicons|1.3.0.1}}}}
+|{{shop row|Lava Lamp}}
+|{{shop row|Plasma Lamp}}
+|{{shop row|Fireworks Box}}
+|{{shop row|Firework Fountain}}
+|{{shop row|Party Wagon}}
+|{{shop row|Spectrum Kite}}
+|{{shop row|Pogo Stick}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+|{{shop row|Red Rocket|在[[{{tr|Hardmode}}]]开始之后。}}
+|{{shop row|Green Rocket|在[[{{tr|Hardmode}}]]开始之后。}}
+|{{shop row|Blue Rocket|在[[{{tr|Hardmode}}]]开始之后。}}
+|{{shop row|Yellow Rocket|在[[{{tr|Hardmode}}]]开始之后。}}
+|{{shop row|Happy Grenade|如果玩家{{tr|inventory}}中有[[{{tr|Happy Grenade}}]]。}}
+|{{shop row|Confetti Cannon|[[{{tr|Pirate}}]]在场时。}}
+|{{shop row|Bubble|[[{{tr|Hardmode}}]]启动以后。}}
+|{{shop row|Smoke Block|在[[{{tr|Hardmode}}]]启动后。}}
+|{{shop row|Party Center}}
+|{{shop row|Party Hat}}
+|{{shop row|Silly Balloon Machine}}
+|{{shop row|Party Present|{{tr|party}}进行中时。}}
+|{{shop row|Pigronata|{{tr|party}}进行中时。}}
+|{{shop row|Blue Streamer|{{tr|party}}进行中时。}}
+|{{shop row|Green Streamer|{{tr|party}}进行中时。}}
+|{{shop row|Pink Streamer|{{tr|party}}进行中时。}}
+|{{shop row|Silly Purple Balloon|{{tr|party}}进行中时。}}
+|{{shop row|Silly Green Balloon|{{tr|party}}进行中时。}}
+|{{shop row|Silly Pink Balloon|{{tr|party}}进行中时。}}
+|{{shop row|Silly Tied Balloon (Green)|{{tr|party}}进行中时。}}
+|{{shop row|Silly Tied Balloon (Purple)|{{tr|party}}进行中时。}}
+|{{shop row|Silly Tied Balloon (Pink)|{{tr|party}}进行中时。}}
+|{{shop row|Celebration|[[{{tr|Golem}}]]被打败后。{{eicons|1.4.0.1}}}}
+|{{shop row|Release Doves|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Release Lantern|[[{{tr|Lantern Night}}]]期间。}}
+|{{shop row|Football|玩家累计[[{{tr|golf score}}]]得分达到至少 500。}}
+}}
+
+== 音乐切换 {{eicons|1.4.0.1}} ==
+在玩家进入过[[{{tr|drunk world}}]]后，游戏会解锁将默认[[配乐]]切换为''[[{{tr|Terraria: Otherworld}}]]''版配乐的选项，通过在{{tr|Party Girl}}处选择“{{gameText|GameUI.Music}}”选项来进行。一旦解锁，此选项就适用于所有玩家和所有世界。
+
+''{{tr|Terraria}}''版配乐中的每一首曲子都会被替换，在''{{tr|Terraria: Otherworld}}''中没有直接对应版本的那些曲子会使用相关度最高的那首；例如，[[{{tr|Underground Jungle}}]]会使用''{{tr|Terraria: Otherworld}}''的[[{{tr|Jungle}}]]主题曲，而非''{{tr|Terraria}}''的{{tr|Underground Jungle}}主题曲。
+
+在{{tr|multiplayer world}}中，只有自己使用过“音乐”选项的{{tr|players}}才会听到替换的曲目，而只有进入过种子为 [[05162020]] 世界的玩家才能看到那个选项。但是，在{{tr|multiplayer}}世界中{{tr|Otherworld music boxes}}是所有人都可以听的，无论他们之前是否已经切换过该选项。
+
+每首新歌都有对应的单独[[{{tr|Music Boxes}}|{{tr|Music Box}}]]，统称为“{{tr|Otherworldly Music Boxes}}”。
+
+离开世界后，音乐会恢复为默认设置。
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Party Girl (Shimmered).png]] [[File:Map Icon Party Girl (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Party Girl}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Party Girl}}会变形为她的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将她再次浸没在{{tr|Shimmer}}中的方式来将她变回经典外观。
+{{-}}
+== 备注 ==
+* 在{{eil|drunk world}}中，{{tr|Party Girl}}会代替[[{{tr|Guide}}]]作为起始{{tr|Town NPC}}。
+* {{icon/old-gen}} {{tr|The Party Girl}}是用[[{{tr|King Statue}}]]而非[[{{tr|Queen Statue}}]]召唤的。
+* 虽然{{tr|Party Girl}}大多被视为{{tr|novelty}}和{{tr|decorative items}}的来源，但她有一些物品相当有用：
+** 她售卖的[[{{tr|Bubble}}]]有着多种实际用途，例如将{{tr|honey}}和{{tr|water}}托在半空中来分别提供[[{{tr|health regeneration}}]]和激活[[{{tr|Shrimpy Truffle}}|{{tr|Cute Fishron}}]]的速度加成。
+** 她的[[{{tr|Firework Rockets}}]]通过精心设计也可以作为一种杀 {{tr|Boss}} 的方法。
+** {{eil|Pigronata|s}}提供了一种早期（且安全，但昂贵）的[[{{tr|Bacon}}]]来源。它们也会掉落比[[{{tr|Silver Bullet}}]]拥有更好属性的[[{{tr|Party Bullet}}]]。
+** 她给玩家的{{eil|Slice of Cake}}提供了对建造很有用的{{tr|buff}}。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.265}}”
+* “{{gameText|LegacyDialog.266}}”
+* “{{gameText|LegacyDialog.267}}”
+* “{{gameText|LegacyDialog.269}}”
+* “{{gameText|LegacyDialog.270}}”
+* “{{gameText|LegacyDialog.271|x_PartyGirl=&lt;{{tr|Party Girl}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.272}}”
+
+'''如果玩家人物是男性：'''
+* “{{gameText|LegacyDialog.268|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+
+'''[[{{tr|Stylist}}]]存在时：'''
+* “{{gameText|LegacyDialog.310}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|PartyGirlSpecialText.Party_1}}”
+* “{{gameText|PartyGirlSpecialText.Party_2}}”
+
+'''[[{{tr|Rain}}|下雨]]时 {{eicons|1.4.0.1|small=y}}：'''
+* “{{gameText|PartyGirlSpecialText.Rain1}}”
+* “{{gameText|PartyGirlSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|PartyGirlSpecialText.Storm1}}”
+* “{{gameText|PartyGirlSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|PartyGirlSpecialText.Windy1}}”
+* “{{gameText|PartyGirlSpecialText.Windy2}}”
+
+'''打败 1 级的[[{{tr|Old One's Army}}]]之后：'''
+* “{{gameText|PartyGirlSpecialText.AfterDD2Tier1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|PartyGirlSpecialText.Graveyard1}}”
+* “{{gameText|PartyGirlSpecialText.Graveyard2}}”
+
+'''{{eicons|1.4.0.1}} 分发蛋糕（在{{tr|Party}}期间第一次与其交谈时）：'''
+* “{{gameText|PartyGirlSpecialText.Cake1}}”
+* “{{gameText|PartyGirlSpecialText.Cake2}}”
+* “{{gameText|PartyGirlSpecialText.Cake3|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+
+'''{{eicons|1.4.0.1}} 按“{{tr|Music}}”选项时：'''
+* “{{gameText|PartyGirlSpecialText.Music1}}”
+* “{{gameText|PartyGirlSpecialText.Music2}}”
+* “{{gameText|PartyGirlSpecialText.Music3}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_PartyGirl.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_PartyGirl.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_PartyGirl.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_PartyGirl.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_PartyGirl.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_PartyGirl.HateCrowded}}”
+
+'''在[[{{tr|the Hallow}}]]中时：'''
+* “{{gameText|TownNPCMood_PartyGirl.LikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_PartyGirl.DislikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_PartyGirl.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Wizard}}]]时：'''
+* “{{gameText|TownNPCMood_PartyGirl.LoveNPC|x_NPCName=&lt;{{tr|Wizard}}的名字&gt;}}”
+
+'''靠近[[{{tr|Zoologist}}]]时：'''
+* “{{gameText|TownNPCMood_PartyGirl.LoveNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+
+* “{{gameText|TownNPCMood_PartyGirl.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Stylist}}]]时：'''
+* “{{gameText|TownNPCMood_PartyGirl.LikeNPC|x_NPCName=&lt;{{tr|Stylist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Merchant}}]]时：'''
+* “{{gameText|TownNPCMood_PartyGirl.DislikeNPC|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''靠近[[{{tr|Tax Collector}}]]时：'''
+* “{{gameText|TownNPCMood_PartyGirl.HateNPC|x_NPCName=&lt;{{tr|Tax Collector}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Party Girl}}和{{eil|Princess}}是仅有的不会在[[{{tr|Blood Moon}}]]期间显得生气或粗鲁的女性 [[{{tr|NPC}}]]。{{tr|The Party Girl}}是唯一不会对{{tr|Blood Moon}}发表任何评论的 {{tr|NPC}}。
+* [[Redigit]] 和 [[Cenx]] 表示，{{tr|Party Girl}}的灵感部分来自于加拿大-美国儿童动画奇幻电视连续剧《''{{wikipedia|My Little Pony: Friendship Is Magic|小马宝莉：友谊就是魔法（My Little Pony: Friendship Is Magic）}}''》中的角色{{wikipedia|Pinkie Pie|萍琪·派（碧琪）（Pinkie Pie）}}。<!--This statement has been sourced, do not remove it.--><ref>[https://web.archive.org/web/20160602194821/http://www.terrariaonline.com/attachments/capture-png.61612/ Redigit 的描述]，日期未知。[http://www.terrariaonline.com/attachments/capture-png.61612 存档页面]抓取于 2016 年 06 月 02 日。</ref>{{discord ref|postedby=Cenx|link=251072485095636994/251116850132287490/893287757064065084|date=09/30/2021}}
+** 名字 Sparkle 和 Trixy 可能来自于同一系列中的角色{{wikipedia|Princess Twilight Sparkle|暮光闪闪（紫悦）公主（Princess Twilight Sparkle）}}和[https://mlp.fandom.com/wiki/Trixie 崔克茜（特里克西）（Trixie）]。
+** {{tr|The Party Girl}}的{{tr|Shimmer}}形态很像同一系列中的角色[https://mlp.fandom.com/wiki/Rainbow_Dash 云宝黛茜（Rainbow Dash）]。
+** {{tr|Party Girl}}的{{tr|living preferences}}很大程度上引用了萍琪·派：在《小马宝莉》中，萍琪·派的朋友有擅长魔法的暮光闪闪和擅长与小动物相处的{{wikipedia|Fluttershy|小蝶（柔柔）（Fluttershy）}}，因此{{tr|Party Girl}}喜爱[[{{tr|Wizard}}]]和[[{{tr|Zoologist}}]]。
+* {{tr|The Party Girl}}的外形是由《''{{tr|Terraria}}''》前美工 [[Re-Logic#Waffles|Waffles]] 画的。
+* 名字 Bambi 可能来自 1942 年的美国动画电影《''{{wikipedia|Bambi|Bambi（小鹿斑比）}}''》及其{{wikipedia|Bambi (character)|同名角色}}。
+* {{tr|the Party Girl}}和[[{{tr|Dryad}}]]可能都叫 Isis。
+* 话语“{{gameText|PartyGirlSpecialText.Storm1}}”引用了美国流行摇滚乐队《{{wikipedia|Panic! at the Disco}}》。
+* 话语“{{gameText|LegacyDialog.265}}”参考了 Nedroid.com 中由 Anthony Clark 创作的漫画《[http://nedroid.com/2009/05/party-cat-full-series/ Party Cat]》。
+* 话语“{{gameText|PartyGirlSpecialText.Rain2}}”引用了美国创作歌手 {{wikipedia|Taylor Swift}} 的歌《{{wikipedia|Shake It Off}}》。
+* {{tr|The Party Girl}}说她讨厌{{tr|Tax Collector}}，因为显然是他让她的余兴派对停下了。但是，{{tr|Tax Collector}}却说他实际上喜欢{{tr|the Party Girl}}。
+** 这可能引用了两人的参考原型。《小马宝莉》中的萍琪·派是一位将欢乐与乐观分享给他人的角色，被否定这项行为时容易遭受挫败；而《圣诞颂歌》的主人公斯克鲁奇在剧中回顾了自己贫穷但快乐的过去、自己手下的小职员过着贫穷却与家人其乐融融的生活光景后逐渐转变了他原有固执且吝啬的内心。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在死亡的 [[{{tr|NPCs}}]] 会自由重生，无视首次生成它们时需满足的独特条件。}}
+{{history|Desktop 1.4.0.1|
+** 现在出售[[{{tr|Celebration}}]]。
+**现在在{{tr|Blood Moon}}期间出售{{tr|the Fog Machine}}。
+** 现在只在白天出售[[{{tr|Bubble Machine}}]]。
+** 现在必须她在场才会发生[[{{tr|Party}}]]。
+** 添加了“音乐”切换开关，切换会让所有用到的音乐换成[[{{tr|Terraria: Otherworld}}]]对应版本。对于种子为 05162020 的世界这是默认启用的。
+** 现在若在{{tr|party}}期间和她说话她会给[[{{tr|Slice of Cake}}]]。}}
+{{history|Desktop 1.3.2|现在出售[[{{tr|Party Center}}]]、[[{{tr|Party Hat}}]]和[[{{tr|Silly Balloon Machine}}]]，以及一些{{tr|party}}相关的{{tr|items}}。}}
+{{history|Desktop 1.3.0.6|生成几率由之前的 {{chance|1/50}} 提升到 {{chance|1/40}}}}
+{{history|Desktop 1.3.0.1|
+** 现在出售[[{{tr|Lava Lamp}}]]、[[{{tr|Confetti Cannon}}]]、[[{{tr|Bubble}}]]、和[[{{tr|Smoke Block}}]]。
+** 现在会向附近的{{tr|enemies}}投掷[[{{tr|Happy Grenade}}]]，并且在死亡时也会掉落一些。
+** 现在只在 14 个其他 NPC 入住后才会生成。
+** [[{{tr|Old Man}}]]和[[{{tr|Skeleton Merchant}}]]现在排除于入住要求的 NPC 总数中外。
+** 外观更新。}}
+{{history|Desktop 1.2.4|现在会出售{{tr|Fireworks Box}}和{{tr|Firework Fountain}}。}}
+{{history|Desktop 1.2.0.3|现在会出售{{tr|the Bubble Wand}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|进行了与 PS4 的 1.0.750.0 更新一样的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在出售{{tr|Lava Lamp}}、{{tr|Confetti Cannon}}、{{tr|Bubble}}、和{{tr|Smoke Block}}。
+** 现在会向附近的{{tr|enemies}}投掷{{tr|Happy Grenade}}，并且在死亡时也会掉落一些。
+** 生成几率由之前的 {{chance|1/50}} 提升到 {{chance|1/40}}。
+** 现在只在 14 个其他 NPC 入住后才会生成。
+** {{tr|Old Man}}和{{tr|Skeleton Merchant}}现在排除于入住要求的 NPC 总数中外。}}
+{{history|Console 1.07|现在会出售{{tr|Fireworks Box}}和{{tr|Firework Fountain}}。}}
+{{history|Console 1.02|{{tr|Introduced}}，会出售{{tr|the Bubble Wand}}。}}
+{{history|Switch 1.0.711.6|Introduced=y|随到{{tr|Desktop}} 1.3.0.6 为止的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** 现在出售{{tr|Lava Lamp}}、{{tr|Confetti Cannon}}、{{tr|Bubble}}、和{{tr|Smoke Block}}。
+** 现在会向附近的{{tr|enemies}}投掷{{tr|Happy Grenade}}，并且在死亡时也会掉落一些。
+** 生成几率由之前的 {{chance|1/50}} 提升到 {{chance|1/40}}。
+** 现在只在 14 个其他 NPC 入住后才会生成。
+** {{tr|Old Man}}和{{tr|Skeleton Merchant}}现在排除于入住要求的 NPC 总数中外。}}
+{{history|Mobile 1.2.11212|现在会出售{{tr|Fireworks Box}}和{{tr|Firework Fountain}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}，会出售{{tr|the Bubble Wand}}。}}
+{{history|3DS-Release|{{tr|Introduced}}，会出售{{tr|the Bubble Wand}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Party Girl}}

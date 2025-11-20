@@ -1,0 +1,350 @@
+{{legacy nav tab}}
+
+[[File:Katana (demo).gif|thumb|[[{{tr|Katana}}]]造成约 18 {{tr|damage}}的通常攻击，以及显眼的 36 {{tr|damage}}的{{tr|critical hit}}。]]
+
+'''{{tr|critical hit}}'''会在打击[[{{tr|enemies}}]]时随机发生。{{tr|Critical hits}}会造成双倍伤害以及 40% 额外[[{{tr|knockback}}]]。
+
+* 对于[[{{tr|melee}}]]、[[{{tr|ranged}}]]、和[[{{tr|magic}}]]伤害类型，默认有 4% 几率产生{{tr|critical hit}}。部分{{tr|weapons}}的具有高于默认的 4% 的{{tr|base critical strike chance}}。这一基础几率也可以进一步被某些[[{{tr|modifiers}}]]、[[{{tr|armor}}]]{{tr|bonuses}}、[[{{tr|accessories}}]]、和[[{{tr|buffs}}]]提升。
+* [[{{tr|Summon}}]]伤害类型正常无法造成{{tr|critical hits}}。仅有少量{{tr|items}}允许{{tr|summon weapons}}以固定的几率造成{{tr|critical strike}}（''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节''）。
+* 不被分类为以上四种伤害类型的伤害永远不会造成{{tr|critical hits}}。
+
+视觉上，{{tr|critical hits}}显示为略微夸张的、颜色更深的粗体伤害数字，移动得略高，并会比普通命中的伤害数字在屏幕上逗留更长时间。
+
+== 具有非标准基础{{tr|critical strike chance}}的{{tr|Weapons}} ==
+{{options/set|item|icons=no}}
+{| class="terraria sortable"
+! {{tr|Weapon}} !!  data-sort-type=number | 基础{{tr|Critical Chance}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, critical
+|q?where=critical and critical<>4
+|q?groupBy=itemid
+|q?orderBy=itemid
+|q?limit=2000
+|template=:{{BASEPAGENAME}}/row
+}}
+|}{{options/reset|item}}
+
+== 增强装备 ==
+{{options/set|item|icons=no}}
+{{flexstart|style=margin-top: -12px; column-gap: calc(var(--layout-gap)*4)}}
+{{flexstart|item}}
+
+=== 近战 ===
+{| class="terraria sortable"
+! {{tr|Item}} !! data-sort-type=number | {{tr|Critical Chance}}
+|-
+| {{item|Moon Charm}} || +2%（在[[{{tr|Day and night cycle}}|{{tr|night}}]]）
+|-
+| {{item|Ale}} || +2%
+|-
+| {{item|Molten Helmet}} || +7%
+|-
+| {{item|Mythril Helmet}} || +8%
+|-
+| {{item|Mythril armor|image=Mythril armor Helmet.png}}（{{tr|Set Bonus}}） || +10%
+|-
+| {{item|Adamantite Helmet}} || +7%
+|-
+| {{item|Titanium Mask}} || +9%
+|-
+| {{item|Frost Breastplate}} || +11%
+|-
+| {{item|Hallowed Mask}} || +10%
+|-
+| {{item|Squire's Greaves}} || +15%
+|-
+| {{item|Monk's Pants}} || +15%
+|-
+| {{item|Chlorophyte Mask}} || +6%
+|-
+| {{item|Turtle Scale Mail}} || +8%
+|-
+| {{item|Turtle Leggings}} || +4%
+|-
+| {{item|Beetle Scale Mail}} || +8%
+|-
+| {{item|Beetle Shell}} || +5%
+|-
+| {{item|Valhalla Knight's Greaves}} || +20%
+|-
+| {{item|Shinobi Infiltrator's Torso}} || +5%
+|-
+| {{item|Shinobi Infiltrator's Pants}} || +20%
+|-
+| {{item|Solar Flare Helmet}} || +26%
+|}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 远程 ===
+{| class="terraria sortable"
+! {{tr|Item}} !! data-sort-type=number | {{tr|Critical Chance}}
+|-
+| {{item|Fossil Helmet}} || +4%
+|-
+| {{item|Fossil Greaves}} || +4%
+|-
+| {{item|Necro armor}}（{{tr|Set Bonus}}） || +10%
+|-
+| {{item|Cobalt Mask}} || +10%
+|-
+| {{item|Palladium Helmet}} || +9%
+|-
+| {{item|Mythril Hat}} || +7%
+|-
+| {{item|Orichalcum Helmet}} || +15%
+|-
+| {{item|Adamantite Mask}} || +10%
+|-
+| {{item|Titanium Helmet}} || +7%
+|-
+| {{item|Frost Breastplate}} || +11%
+|-
+| {{item|Hallowed Helmet}} || +8%
+|-
+| {{item|Huntress's Wig}} || +10%
+|-
+| [[{{tr|Shroomite armor}}|{{tr|Shroomite}}头部件]]（所有{{tr|helmets}}）|| +5%
+|-
+| {{item|Shroomite Breastplate}} || +13%
+|-
+| {{item|Shroomite Leggings}} || +7%
+|-
+| 来自[[{{tr|Shroomite armor}}]]的[[{{tr|Stealth}}]] || 最高 +10%
+|-
+| {{item|Red Riding Hood}} || +10%
+|-
+| {{item|Red Riding Leggings}} || +10%
+|-
+| {{item|Vortex Helmet}} || +7%
+|-
+| {{item|Vortex Breastplate}} || +12%
+|-
+| {{item|Vortex Leggings}} || +8%
+|-
+| 来自[[{{tr|Vortex armor}}]]的[[{{tr|Stealth}}]] || 最高 +20%
+|-
+| {{item|Sniper Scope}} || +10%
+|-
+| {{item|Recon Scope}} || +10%
+|}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 魔法 ===
+{| class="terraria sortable"
+! {{tr|Item}} !! data-sort-type=number | {{tr|Critical Chance}}
+|-
+| {{item|Crystal Ball}} || +2%
+|-
+| {{item|Mystic Robe}} || +6%
+|-
+| {{item|Magic Hat}} || +6%
+|-
+| {{item|Wizard Hat}}加上[[{{tr|Robe}}]] || +10%
+|-
+| {{item|Jungle Hat}} || +6%
+|-
+| {{item|Jungle Pants}} || +6%
+|-
+| {{item|Cobalt Hat}} || +9%
+|-
+| {{item|Palladium Headgear}} || +9%
+|-
+| {{item|Orichalcum Headgear}} || +18%
+|-
+| {{item|Adamantite Headgear}} || +12%
+|-
+| {{item|Titanium Headgear}} || +7%
+|-
+| {{item|Hallowed Headgear}} || +12%
+|-
+| {{item|Apprentice's Trousers}} || +20%
+|-
+| {{item|Spectre Mask}} || +10%
+|-
+| {{item|Spectre Robe}} || +7%
+|-
+| {{item|Dark Artist's Leggings}} || +25%
+|-
+| {{item|Nebula Breastplate}} || +9%
+|}
+{{flexend|item}}
+{{flexstart|item}}
+
+=== 所有 ===
+{| class="terraria sortable"
+! {{tr|Item}} !! data-sort-type=number | {{tr|Critical Chance}}
+|-
+| {{item|Well Fed}} || +2%
+|-
+| {{item|Plenty Satisfied}} || +3%
+|-
+| {{item|Exquisitely Stuffed}} || +4%
+|-
+| {{item|Brain of Confusion|note2=（{{tr|Cerebral Mindtrick}}）}} || +10%
+|-
+| {{item|Rage Potion}} || +10%
+|-
+| {{item|Gi}} || +5%
+|-
+| {{item|Ninja Hood}} || +3%
+|-
+| {{item|Ninja Shirt}} || +3%
+|-
+| {{item|Ninja Pants}} || +3%
+|-
+| {{item|Shadow Helmet}} || +5%
+|-
+| {{item|Shadow Scalemail}} || +5%
+|-
+| {{item|Shadow Greaves}} || +5%
+|-
+| {{item|Cobalt Breastplate}} || +5%
+|-
+| {{item|Palladium Breastplate}} || +2%
+|-
+| {{item|Palladium Leggings}} || +1%
+|-
+| {{item|Mythril Greaves}} || +10%
+|-
+| {{item|Orichalcum Breastplate}} || +6%
+|-
+| {{item|Adamantite Leggings}} || +7%
+|-
+| {{item|Titanium Breastplate}} || +3%
+|-
+| {{item|Titanium Leggings}} || +3%
+|-
+| {{item|Crystal Assassin Hood}} || +5%
+|-
+| {{item|Crystal Assassin armor}}（{{tr|Set Bonus}}） || +10%
+|-
+| {{item|Hallowed Plate Mail}} || +7%
+|-
+| {{item|Chlorophyte Plate Mail}} || +7%
+|-
+| {{item|Chlorophyte Greaves}} || +8%
+|-
+| {{tr|Precise}}或{{tr|Lucky}}[[{{tr|modifier}}]]的[[{{tr|accessories}}]] || +2% 或 +4%
+|-
+| {{item|Destroyer Emblem}} || +8%
+|-
+| {{item|Eye of the Golem}} || +10%
+|-
+| {{item|Putrid Scent}} || +5%
+|-
+| {{item|Celestial Stone}} || +2%
+|-
+| {{item|Celestial Shell}} || +2%
+|-
+| {{item|Sun Stone}} || +2%
+|-
+| {{item|Moon Stone}} || +2%
+|-
+| [[{{tr|Reforge}}]]后的{{tr|weapons}} || 最高 +5%
+|-
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+== 备注 ==
+* 造成{{tr|summon damage}}的事物（如[[{{tr|Minions}}]]、[[{{tr|sentries}}]]、{{eil|whip|s}}）正常无法造成{{tr|critical hits}}，但有两个例外：
+** 若玩家穿着全套[[{{tr|Monk armor}}]]或[[{{tr|Shinobi Infiltrator armor}}]]，[[{{tr|Lightning Aura sentry summons}}]]能以固定的几率造成{{tr|critical hits}}（{{tr|Monk armor}}为 16.7%；{{tr|Shinobi Infiltrator armor}}为 25%）。
+** 被[[{{tr|Morning Star}}]]或[[{{tr|Kaleidoscope}}]]击中的{{tr|Enemies}}会被“标记”4 秒。所有{{tr|minions and sentries}}在攻击被这两个{{tr|whips}}标记的{{tr|Enemies}}时能以固定的几率造成{{tr|critical hits}}（{{tr|Morning Star}}为 12%；{{tr|Kaleidoscope}}为 25%）。
+: 此外，与其他{{tr|critical strike chance}}来源不同，这些来源的{{tr|critical strike chance}}不是加算的。它们均会被视为独立事件。
+* {{tr|critical hit}}的伤害翻倍会在经过[[{{tr|defense}}]]削减''之后''适用。
+** 例如，对于具有 {{npcinfo|Face Monster|defense}} {{tr|defense}}的[[{{tr|Face Monster}}]]，对其造成的{{tr|damage}}会降低 5。对{{tr|Face Monster}}造成非{{tr|critical hit}}的 50 {{tr|damage}}会使其受到 45 净{{tr|damage}}。如果此次为{{tr|critical hit}}，则{{tr|Face Monster}}会受到 90 净{{tr|damage}}而非 95。
+* 手持时，{{tr|weapon modifiers}}会影响所有具有其{{tr|damage type}}的{{tr|projectiles}}的{{tr|critical hits}}。未选中时，{{tr|Weapon modifiers}}会停止影响{{tr|critical strike chance}}。
+* [[{{tr|Ammunition items}}]]不受{{tr|critical strike chance bonuses}}影响。{{tr|ranged}}攻击的{{tr|The critical strike chance}}完全取决于{{tr|weapon}}。
+* 在[[{{tr|PvP}}]]中，玩家攻击其他玩家永远不会造成{{tr|critical hits}}。
+** 使用[[近战击打]]攻击玩家仍然会以固定的 {{chance|1/10}} 几率显示粗体的“{{tr|critical hit}}”{{tr|damage}}数字；使用{{tr|melee}}[[{{tr|projectiles}}]]攻击玩家会根据玩家的{{tr|melee critical strike chance}}显示“{{tr|critical hit}}”{{tr|damage}}数字。这两种情况均不会影响实际{{tr|damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_MeleeHitPVP / Terraria.Projectile.Damage / Terraria.Player.Hurt}}
+
+== 小贴士 ==
+* 一般来说最好能使[[{{tr|accessories}}]]、[[{{tr|armor}}]]、[[{{tr|buffs}}]]、和[[{{tr|modifiers}}]]的{{tr|critical strike chance and damage bonuses}}相等，这样能最大化整体{{tr|DPS}}。
+** 具体来说，对于每秒平均{{tr|damage}}，如果忽略{{tr|damage}}取正，在{{tr|critical strike chance}}低于 100% 时，{{tr|damage bonus}}等效于{{tr|critical strike chance bonus}}。但由于{{tr|critical hits}}的{{tr|bonus damage}}是在减去目标{{tr|defense}}''之后''计算的：
+** 对于{{tr|defense}}非零的目标，{{tr|damage bonus}}比{{tr|critical strike chance bonus}}更有效，且效果随{{tr|defense}}增加而线性提升。
+** 在{{tr|enemy}}的{{tr|defense}}足够高，足以抵消理论最高{{tr|damage}}的情况下（如与[[{{tr|Dungeon Guardian}}]]战斗时，它拥有 {{npcinfo|Dungeon Guardian|defense}} {{tr|defense}}），{{tr|critical strike chance bonus}}总是比{{tr|damage bonus}}更有效。所有非{{tr|critical hits}}只能造成 1 {{tr|damage}}，且此{{tr|damage}}无法被提高。更高的{{tr|critical strike chance}}意味着此{{tr|damage}}会更频繁地被翻倍为 2。
+*: 虽说如此，混合使用这两种{{tr|bonuses}}总是比只是用一种更有效，因为每秒平均{{tr|damage}}的增幅是{{tr|damage}}和{{tr|critical strike chance}}{{tr|bonuses}}的乘积。
+
+== {{tr|critical hits}}最大化 ==
+{{itemlist/options|class=terraria|width=20em}}{{options/set|item|icons=n}}
+
+=== 近战 ===
+最高{{tr|critical strike chance}}为 167%，通过以下组合达成：
+
+{{itemlist
+|{{item|Solar Flare Helmet}}
+|{{item|Frost Breastplate}}
+|{{item|Valhalla Knight's Greaves}}
+|{{item|Obsidian Swordfish|note2=({{tr|Godly}}/{{tr|Demonic}}/{{tr|Zealous}})|scale=0.7}}
+|{{item|Eye of the Golem|note2=({{tr|Lucky}})}}
+|{{item|Destroyer Emblem|note2=({{tr|Lucky}})}}
+|{{item|Putrid Scent|note2=({{tr|Lucky}})}}
+|{{item|Celestial Shell|note2=({{tr|Lucky}})}}
+|{{item|Brain of Confusion|note2=({{tr|Lucky}}，激活了{{tr|Cerebral Mindtrick}})}}
+|{{item|Rage Potion}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Ale}}
+}}
+
+* 任何具有{{tr|Lucky modifier}}的{{tr|accessory}}都可以装备在剩余的 2 个{{tr|accessory slots}}中。
+* 虽然{{item|Psycho Knife|scale=0.7}}在其[[{{tr|stealth}}]]模式下会增加 30% {{tr|critical strike chance}}，但当实际{{tr|critical strike chance}}高于 100% 时，它会将{{tr|critical strike chance}}设为 100%。
+
+=== 远程 ===
+最大{{tr|critical strike chance}}为 178%，通过以下组合达成：
+
+{{itemlist
+|{{item|Vortex armor|note2=(加上激活{{tr|set bonus}})}}
+|{{item|Sniper Rifle|note2=({{tr|Unreal}}/{{tr|Godly}}/{{tr|Demonic}}/{{tr|Zealous}})}}
+|{{item|Eye of the Golem|note2=({{tr|Lucky}})}}
+|{{item|Sniper Scope|note2=({{tr|Lucky}})}}
+|{{item|Recon Scope|note2=（{{tr|Lucky}}）}}
+|{{item|Destroyer Emblem|note2=({{tr|Lucky}})}}
+|{{item|Putrid Scent|note2=({{tr|Lucky}})}}
+|{{item|Celestial Stone|note2=({{tr|Lucky}})}}
+|{{item|Brain of Confusion|note2=({{tr|Lucky}}，激活了{{tr|Cerebral Mindtrick}})}}
+|{{item|Rage Potion}}
+|{{item|Exquisitely Stuffed}}
+}}
+
+=== 魔法 ===
+最大{{tr|critical strike chance}}为 160%，通过以下组合达成：
+
+{{itemlist
+|{{item|Orichalcum Headgear}}
+|{{item|Nebula Breastplate}}
+|{{item|Dark Artist's Leggings}}
+|{{item|Sky Fracture|note2=({{tr|Mythical}}/{{tr|Godly}}/{{tr|Demonic}}/{{tr|Zealous}})}}
+|{{item|Staff of Earth|note2=（{{tr|Mythical}}/{{tr|Godly}}/{{tr|Demonic}}/{{tr|Zealous}}）}}
+|{{item|Stellar Tune|note2=（{{tr|Mythical}}/{{tr|Godly}}/{{tr|Demonic}}/{{tr|Zealous}}）}}
+|{{item|Eye of the Golem|note2=({{tr|Lucky}})}}
+|{{item|Destroyer Emblem|note2=({{tr|Lucky}})}}
+|{{item|Putrid Scent|note2=({{tr|Lucky}})}}
+|{{item|Celestial Stone|note2=({{tr|Lucky}})}}
+|{{item|Brain of Confusion|note2=({{tr|Lucky}}，激活了{{tr|Cerebral Mindtrick}})}}
+|{{item|Rage Potion}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Crystal Ball}}
+}}
+
+* 任何具有{{tr|Lucky modifier}}的{{tr|accessory}}都可以装备在剩余的 2 个{{tr|accessory slots}}中。
+* 可以使用下列{{tr|weapons}}中的任一种：{{tr|Sky Fracture, Staff of Earth, or Stellar Tune}}。<!--
+
+-->{{itemlist/options|reset}}{{options/reset|item}}
+
+== 历史 ==
+{{history|Desktop 1.2.1.2|来自{{tr|accessory}}[[{{tr|modifiers}}]]的{{tr|Critical strike chance bonuses}}翻倍。例如：{{tr|Lucky modifier}}的效果由 2% 提升至 4%。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Critical hit}}

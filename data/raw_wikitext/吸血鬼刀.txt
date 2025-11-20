@@ -1,0 +1,75 @@
+{{item infobox
+| auto = 1569
+| listcat = projectile melee{{!}}+
+| tags = Loot / hardmode
+| idprojectile = 304, 305
+}}
+[[File:Vampire Knives (demo).gif|thumb|使用{{tr|Vampire Knives}}攻击[[{{tr|Target Dummy}}]]和一个[[{{tr|Unicorn}}]]。]]
+
+'''{{tr|Vampire Knives}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|melee weapon}}]]，可以快速发射 4 到 8 枚红色飞刀{{tr|projectiles}}，散射角度约为 45°。飞刀不受重力影响，但在移动 28 {{tr|tile}}后，它们会旋转并褪色，造成的{{tr|damage}}会逐渐衰减。当再行进 26 {{tr|tile}}后，它们就会消散，总计行进 54 {{tr|tile}}。击中{{tr|enemy}}后红色飞刀会触发[[{{tr|lifesteal}}]]效果，为{{tr|player}}恢复等同于伤害值 7.5%（四舍五入）的生命值。{{tr|The Vampire Knives}}总是在[[{{tr|Dungeon}}]]内的[[{{tr|Crimson Chest}}]]中找到，此宝箱只能在{{tr|plantera}}被打败后使用[[{{tr|Crimson Key}}]]解锁。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+{{for|{{tr|lifesteal}}效果的限制|{{tr|Lifesteal}}}}
+* [[{{tr|Melee speed}}]]不能影响{{tr|Vampire Knives}}的发射频率，而只能增加其{{tr|projectiles}}行进的{{tr|velocity}}和距离。
+* 由于{{tr|lifesteal}}效果是向下取整的，因此如果{{tr|the Vampire Knives}}造成的{{tr|damage}}小于 14，它就不会治疗{{tr|player}}。
+* 在全速状态（刚刚投出）时，{{tr|the projectiles}}的速度为 {{mph|56.25 tiles}}。
+** 由于其较高的速度，部分{{tr|Vampire Knives}}的{{tr|projectiles}}可能能够穿过 1 个{{tr|tile}}厚的墙壁。
+* {{tr|player}}会在造成伤害时立即被治疗，而非红色光束接触到{{tr|player}}时。
+* 在[[{{tr|The Corruption}}]]{{tr|worlds}}中无法获得{{tr|Vampire Knives}}，因为它们缺少{{tr|Crimson Chest}}。取而代之的是，{{tr|Dungeon}}中会有一个[[{{tr|Corruption Chest}}]]，其中包含[[{{tr|Scourge of the Corruptor}}]]。
+* [[反弹射弹列表|反弹]]的飞刀{{tr|projectiles}}（如旋转的{{eil|Selenian}}）在击中{{tr|player}}时不会触发治疗效果。
+* {{tr|The projectiles}}在实际失效之前可能会在视觉上提前几个{{tr|tile}}消失。
+* 其中一把红色飞刀总是瞄准{{tr|cursor}}位置。
+* 每次使用至少会投出 4 柄红色飞刀。总共有四个互相独立的几率（1/2、1/4、1/8、和 1/16）会将这个数值增加 1，{{source code ref|v=1.4.0.5|method=Terraria.Player.ItemCheck_Shoot}}使得最多一次投出 8 个{{tr|projectiles}}。以下表格显示{{tr|projectiles}}数量和对应几率：
+: {| class="terraria sortable align-center"
+! <abbr title="Number of projectiles">#</abbr> !! 概率
+|-
+| align=center | 4 || {{chance|315/1024}}
+|-
+| align=center | 5 || {{chance|486/1024|reduce=no}}
+|-
+| align=center | 6 || {{chance|196/1024|reduce=no}}
+|-
+| align=center | 7 || {{chance|26/1024|reduce=no}}
+|-
+| align=center | 8 || {{chance|1/1024}}
+|}
+: 平均每次投出的{{tr|projectiles}}数量为 4.94 个。
+* 由{{tr|debuffs}}造成的伤害（如[[{{tr|On Fire!}}]]）不会触发[[{{tr|lifesteal}}]]，仅有飞刀{{tr|projectiles}}本身才会。
+
+== 小贴士 ==
+* 虽然{{tr|Vampire Knives}}的伤害对于其所处阶段来说较低，它也是仅有的具有{{tr|lifesteal}}的物品之一，另一种为使用{{tr|Spectre Hood}}的[[{{tr|Spectre armor}}]]。{{tr|lifesteal}}效果使此{{tr|weapon}}可以作为副手{{tr|weapon}}（甚至在游戏末期）或与肉装一起使用。有了适当的准备，它可以使死亡接近于不可能。
+* {{tr|Vampire Knives}}在和{{eil|Moon Lord}}作战时用处较小，因为{{tr|Moon Lord}}能够对玩家施加{{eil|Moon Bite}}[[{{tr|debuff}}]]，使{{tr|lifesteal}}效果失效。
+* [[{{tr|Flask of Ichor}}]]会增加每一击的伤害，从而增加{{tr|lifesteal}}的治疗量。
+* 由于{{eil|Crawltipede}}受到任何{{tr|damage}}都会×10，所以{{tr|Vampire Knives}}也会恢复十倍的生命值。不过，由于[[{{tr|lifesteal}}]]的运作原理，这会导致两次治疗之间的间隔更长。
+
+== 花絮 ==
+<!-- Please ask devs for confirmation before adding any further Jojo references. Check the [[Trivia rules]] for further details. -- MurrayZero -->
+* {{tr|Vampire Knives}}是 [[Leinfors]] 最喜欢的{{tr|weapon}}。<ref>[https://www.reddit.com/r/Terraria/comments/nelbjw/terrarias_10th_anniversary_we_are_relogic_ask_us/gygs53e/?context=3 Leinfors on Reddit] {{small|{{date|2021|05|17}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|{{tr|Item}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.2.4|修正了{{tr|multiplayer}}中，其他玩家的[[{{tr|Death Sickle}}]]和{{tr|Vampire Knives}}的挥舞动画不正确的 {{tr|bug}}。}}
+{{history|Desktop 1.2.0.3|
+** {{tr|Use time}}从 12 提高至 16。
+** {{tr|Damage}}从 35 降低至 29。
+** {{tr|Knockback}}从 3.5 降低至 2.75。
+** {{tr|lifesteal}}从 10% 降低至 7.5%。}}
+{{history|Desktop 1.2.0.2|修复了此物品会在{{tr|pre-Hardmode}}的上层{{tr|dungeon}}出现的 {{tr|bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biome Chests}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Vampire Knives}}

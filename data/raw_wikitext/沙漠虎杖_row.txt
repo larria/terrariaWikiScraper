@@ -1,0 +1,15 @@
+<includeonly><!--
+
+-->{{{1|}}}
+| {{#expr:floor({{iteminfo|4607|damage}} * (1 + ({{{1|}}}-1) * 0.4))}}
+| {{#expr:floor({{iteminfo|4607|damage}} * (1.5 + ({{{1|}}}-1) * 0.4))}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+{{language info|en=Desert Tiger Staff/row}}
+</noinclude>

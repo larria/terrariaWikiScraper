@@ -1,0 +1,121 @@
+<onlyinclude><div class="crafting-tree">{{options/set|item|icons=no|class=multi-line}}{{diagram
+
+|_|PtBar |_|Chain|_|GdBar |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|#
+|_|_|_|`|v|-|'|_|`|-|v|'|_|_|_|  Radar  |_|DPSmeter |_|FishingPG|#
+|F|~|~|~|$|~|~|~|~|~|$|~|~|7|_|         |_|         |_|         |#
+|:|_|_| T&C |_|_|_| T&C |_|:|,|-|-|'|_|_|,|-|-|'|_|_|,|-|-|'|_|_|#
+|:|  PtWatch  |§| GdWatch |:|I|TyCounter|I|Stopwatch|I|  Radio  |#
+|L|~|~|~|~|~|y|~|~|~|~|~|~|J|I|         |I|         |I|         |#
+|_| DepMeter|I|  Compass  |_|)|-|-|'|_|_|)|-|-|'|_|_|)|-|-|'|_|_|#
+|_|         |I|           |_|I| LifeAnz |I|MetalDete|I| Sextant |#
+|_|         |I|           |_|I|         |I|         |I|         |#
+|_|_|_|`|-|-|+|-|-|'|_|_|_|_|)|-|-|'|_|_|)|-|-|'|_|_|)|-|-|'|_|_|#
+|_|_|_|_|_|_|@|_|_|_|_|_|_|_|@|_|_|_|_|_|@|_|_|_|_|_|@|_|_|_|_|_|#
+|_|_|_|_|   GPS   |_|_|_| REK3000 |_|GoblinTec|_| FFinder |_|_|_|#
+|_|_|_|_|_|_|`|-|-|-|-|-|-|-|^|-|v|-|-|-|^|-|-|-|-|-|'|_|_|_|_|_|#
+|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_| PDA |_|_|_|_|_|_|_|_|_|_|_|_|_|_|#
+
+
+|GdBar = {{item|Gold Bar}} × 10
+
+|Chain = {{item|Chain}}
+
+|PtBar_cols = 4
+|PtBar = {{item|Platinum Bar}} × 10
+
+|GdWatch_cols = 5
+|GdWatch = {{item|Gold Watch}}
+
+|§_class = no-border
+|§_cols = 1
+|§ = 或
+
+|PtWatch_cols = 6
+|PtWatch = {{item|Platinum Watch}}
+
+|T&C_class = craft-station
+|T&C = {{item|mode=image|Table}}和{{item|mode=image|Chair}}
+
+|DepMeter_cols = 5
+|DepMeter_rows = 3
+|DepMeter =
+{{item|Depth Meter}}<br/>
+( {{inline block|{{item|mode=image|Cave Bat|size=13px}} {{item|mode=image|Giant Bat|size=21px}} {{item|mode=image|Jungle Bat|size=13px}} {{item|mode=image|Ice Bat|size=14px}} {{item|mode=image|Salamander|size=15px}} {{item|mode=image|Giant Shelly|size=18px}} {{item|mode=image|Crawdad|size=19px}}<br/><span style{{=}}"font-size: 0.75em">在{{icon|oldgen}}中亦可制作</span>}} )
+
+|Compass_cols = 6
+|Compass_rows = 3
+|Compass =
+{{item|Compass}}<br/>
+( {{inline block|{{item|mode=image|Salamander|size=15px}} {{item|mode=image|Giant Shelly|size=18px}} {{item|mode=image|Crawdad|size=19px}} {{item|mode=image|Mother Slime|size=22px}} {{item|mode=image|Piranha|size=14px}} {{item|mode=image|Snow Flinx|size=17px}} {{item|mode=image|Undead Viking|size=15px}} {{item|mode=image|Armored Viking|size=16px}}<br/><span style{{=}}"font-size: 0.75em">在{{icon|oldgen}}中亦掉落自{{item|mode=image|Mimic|size=x22px}}</span>}} )
+
+|@_class = craft-station
+|@_cols = 1
+|@ = {{item|mode=image|Tinkerer's Workshop}}
+
+|GPS_cols = 5
+|GPS = {{item|GPS}}
+
+|Radar_cols = 5
+|Radar_rows = 2
+|Radar =
+{{item|Radar}}<br/>
+( {{item|mode=image|Chest|size=24px}} {{item|mode=image|Wooden Crate|size=26px}} {{item|mode=image|Pearlwood Crate|size=26px}} )
+
+|TyCounter_cols = 5
+|TyCounter_rows = 2
+|TyCounter =
+{{item|Tally Counter}}<br/>
+( {{item|mode=image|Angry Bones|image=Angry Bones 1.png|size=15px}} {{item|mode=image|Cursed Skull|size=13px}} {{item|mode=image|Dark Caster|size=15px}} )
+
+|LifeAnz_cols = 5
+|LifeAnz_rows = 2
+|LifeAnz =
+{{item|Lifeform Analyzer}}<br/>( {{item|mode=image|image=Map Icon Traveling Merchant.png|Traveling Merchant}} )
+
+|REK3000_cols = 5
+|REK3000 = {{item|R.E.K. 3000}}
+
+|DPSmeter_cols = 5
+|DPSmeter_rows = 2
+|DPSmeter =
+{{item|DPS Meter}}<br/>( {{item|mode=image|image=Map Icon Traveling Merchant.png|Traveling Merchant}} )
+
+|Stopwatch_cols = 5
+|Stopwatch_rows = 2
+|Stopwatch =
+{{item|Stopwatch}}<br/>( {{item|mode=image|image=Map Icon Traveling Merchant.png|Traveling Merchant}} )
+
+|MetalDete_cols = 5
+|MetalDete_rows = 2
+|MetalDete =
+{{item|Metal Detector }}<br/>( {{item|mode=image|Nymph|size=x33px}} )
+
+|GoblinTec_cols = 5
+|GoblinTec = {{item|Goblin Tech}}
+
+|FishingPG_cols = 5
+|FishingPG_rows = 2
+|FishingPG =
+{{item|Fisherman's Pocket Guide}}<br/>( {{item|mode=image|image=Map Icon Angler.png|Angler}} )
+
+|Radio_cols = 5
+|Radio_rows = 2
+|Radio =
+{{item|Weather Radio}}<br/>( {{item|mode=image|image=Map Icon Angler.png|Angler}} )
+
+|Sextant_cols = 5
+|Sextant_rows = 2
+|Sextant =
+{{item|Sextant}}<br/>( {{item|mode=image|image=Map Icon Angler.png|Angler}} )
+
+|FFinder_cols = 5
+|FFinder = {{item|Fish Finder}}
+
+|PDA = {{item|PDA}}
+
+
+}}{{options/reset|item}}</div></onlyinclude>
+
+{{category|Crafting tree subpages}}
+
+{{language info|en=PDA/Crafting tree}}

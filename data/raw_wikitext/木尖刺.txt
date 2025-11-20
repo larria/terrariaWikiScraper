@@ -1,0 +1,40 @@
+{{item infobox
+| type = Block
+| auto = 1150
+| tags = plunder / plunder:Jungle Temple
+| debuff = Bleeding
+| debuffduration = {{duration|rawseconds=10 / {{expert|20}} / {{master|25}}}}
+| debuffchance = 100% {{eicons|1.4.0.1|small=y}}
+}}
+
+'''{{tr|Wooden Spike}}'''是一种[[{{tr|trap}}]][[{{tr|block}}|块]]，会对接触到它的玩家造成伤害，它是常规的{{tr|metal}}[[{{tr|Spike}}]]的升级版。虽然从其名字和外观上看它是用较弱的材料制作成的，但它所造成伤害要高于其{{tr|metal}}版本。接触{{tr|The Wooden Spike}}会造成 {{eicons|1.4.0.1}} 80 / {{eicons|1.4.0.1|invert=y}} 60 伤害。在{{eversions|1.4.0.1}}中，他还会造成[[{{tr|Bleeding}}]]{{tr|debuff}}，持续 10 / {{expert|20}} / {{master|25}} {{tr|seconds}}。{{tr|Wooden Spikes}}只能在[[{{tr|Jungle Temple}}]]中得到有限数量，可以用任何[[{{tr|drill}}]]、[[{{tr|pickaxe}}]]、或[[{{tr|explosives (class)}}]]破坏之，这和旁边的[[{{tr|Lihzahrd Brick}}]]不同，后者需要有[[{{tr|Picksaw}}]]或更强的{{tr|mining tool}}才能破坏。
+
+== 备注 ==
+* [[{{tr|Lihzahrd Altar}}]]可以在{{tr|Wooden Spikes}}顶上生成。
+* 在[[{{tr|Dangersense}}]][[{{tr|Buff}}]]激活时{{tr|Wooden Spikes}}会变为鲜红色。
+* 只要玩家的任何部位接触到{{tr|Wooden Spikes}}，{{tr|Wooden Spikes}}就会对其造成伤害。
+* 和{{tr|Spike}}一样，{{tr|Wooden Spikes}}只会伤害玩家，它们并不会伤害[[{{tr|NPCs}}]]、[[{{tr|critters}}]]、或[[{{tr|enemies}}]]，因此不适合 [[{{tr|PvP}}]] 之外的[[{{tr|指南:基地}}|{{tr|基地防御}}]]。
+* {{tr|Wooden Spikes}}在所有模式中造成的基础伤害都是相同的。由于[[{{tr|defense}}|防御力]]在{{eil|Expert Mode|Expert}}和{{eil|Master Mode}}中更为有效，玩家从{{tr|Wooden Spikes}}受到的伤害几乎总是会比{{tr|Classic Mode}}中更少。
+* {{tr|Wooden Spikes}}对于 [[{{tr|House}}|{{tr|NPC housing}}]]来说是有效的外框{{tr|tile}}。
+* 在 {{eil|For the worthy}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，{{tr|Wooden Spikes}}无法被[[{{tr|Explosives (class)}}]]摧毁。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.CanExplodeTile}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|伤害从由 60 提升至 80，并且现在会造成{{tr|Bleeding debuff}}。}}
+{{history|Desktop 1.3.1|放置状态的外观更新。旧的外观是 [[File:Wooden Spike (placed) (old).png|32px]]。}}
+{{history|Desktop 1.3.0.5|在考虑免疫时，{{tr|Spike}}的{{tr|damage}}和其他伤害保持独立，以防滥用无敌帧。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Wooden Spike}}

@@ -1,0 +1,48 @@
+{{exclusive|1.4.4}}
+{{infobox wrapper
+|{{item infobox
+| auto = 5346
+| type = Miscellaneous
+| debuff = Poisoned
+| debuffduration = {{duration|49}} <br> {{expert|{{duration|{{#expr:49*2}}}}}} <br> {{master|{{duration|{{#expr:49*2.5 round 0}}}}}}
+| sounduse = Item 16.wav
+| idprojectile = 1007
+}}
+|{{item infobox
+| auto = 5356
+}}
+}}
+
+'''{{tr|Gas Trap}}'''是一种[[{{tr|trap}}]]{{tr|item}}，可以通过将[[{{tr|Whoopie Cushion}}]]扔进[[{{tr|Shimmer}}]]的方法获得。它也会出现在 [[{{tr|No traps}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}的[[{{tr|chests}}]]中，可以激活。
+
+在被放入[[{{tr|storage item}}]]之后，{{tr|the Gas Trap}}会在下一次这个{{tr|storage item}}打开时被激活，对小范围内的所有实体造成[[{{tr|Poisoned}}]]，持续 {{duration|49}} / {{expert|{{duration|{{#expr:49*2}}}}}} / {{master|{{duration|{{#expr:49*2.5 round 0}}}}}}。{{source code ref|name=ai|v=1.4.4.9|method=Terraria.Projectile.AI}}{{tr|The Gas Trap}}此后会变为'''{{tr|Used Gas Trap}}'''，只能通过将其丢进{{tr|Shimmer}}的方式将其“重新装填”，产生一个新的{{tr|Gas Trap}}。如果{{tr|storage item}}中有多个{{tr|Gas Trap}}，玩家每次开启{{tr|storage item}}时只会使用一个{{tr|Gas Trap}}。在{{tr|singleplayer}}下，[[{{tr|Autopause}}]]开启时打开{{tr|storage item}}不会激活{{tr|Gas Trap}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Gas Trap/Used Gas Trap|expectedrows=2}}
+
+== 备注 ==
+<!-- Gas Trap cannot actually deal damage as it directly leads to a return statement in Terraria.Projectile.Damage.
+
+* {{tr|The Gas Trap}}的毒云对附近的玩家造成 20 / {{expert|40}} / {{master|60}} 伤害，对附近的[[{{tr|enemies}}]]、[[{{tr|NPCs}}]]、和[[{{tr|critters}}]]造成 10 伤害。{{source code ref|v=1.4.4.5|method=Terraria.Projectile.GasTrapCheck}}所有位于矩形区域内的所有实体都会受到{{tr|damage}}。在激活后的 {{duration|80*0.95 ticks}}内，该矩形区域的大小会从 3.125×3.125 {{tr|tiles}}逐渐扩张至 18.75×18.75 {{tr|tiles}}；此区域在消失前再持续存在 {{duration|80*0.05 ticks}}。<ref name="ai"/>这意味着，其最大竖直和水平作用范围都是 9.375 {{tr|tiles}}。-->
+* {{tr|Gas Trap}}的毒云会对圆形区域内的所有实体造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。在激活后的 {{duration|80*0.2 ticks}}内，该圆形区域的半径会从 0 逐渐增加至 11.25 {{tr|tiles}}，然后此区域在消失前会再持续存在 {{duration|80*0.8 ticks}}。<ref name="ai"/>
+* {{tr|Gas Trap}}的毒云{{tr|projectiles}}与[[{{tr|Toxic Flask}}]]创造的毒云{{tr|projectile}}共用同一个外观。它的行为与这件{{tr|weapon}}也非常相似，但它能对{{tr|players, NPCs, and enemies}}造成伤害。
+
+== 花絮 ==
+* {{tr|The Used Gas Trap}}是仅有的具有 {{rare|-1}} [[{{tr|rarity}}]]的非垃圾/具有较差{{tr|modifier}}的{{tr|item}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Gas Trap}}

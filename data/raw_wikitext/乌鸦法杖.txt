@@ -1,0 +1,51 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1802
+| tags = Minion / drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Raven Staff (demo).gif|frame|使用中的{{tr|Raven Staff}}。]]
+
+'''{{tr|Raven Staff}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Plantera}}]]后的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Raven}}'''[[{{tr|minion}}]]。它会飞向并冲刺[[{{tr|enemies}}]]，。{{tr|The Raven Staff}}掉落自[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]期间的[[{{tr|Pumpking}}]]，掉落率为 2.5–12.5%（{{expert|6.25–12.5%}}）具体取决于当前波数。<ref>{{tr|pumpkin moon}}的各个波次所对应的具体掉落几率：{{pumpkin moon item drop rates|1/8|fromwave=10|towave=20}} 更多信息见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]。</ref>
+
+{{modifier|summon}}
+
+== 备注 ==
+* 当{{tr|Raven minion}}接触到一只{{tr|enemy}}时，它会对所有在这一{{tr|tick}}{{tick}}内接触到的所有{{tr|enemy}}造成伤害，但是会在接下来的 16 {{tr|tick}}（{{duration|16 ticks}}）内无法造成任何伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}
+** 正因如此，会使得{{tr|Raven minion}}在视觉上穿过一排{{tr|enemy}}，却仅能对其中一个造成伤害。
+* {{tr|Raven minion}}击中{{tr|enemy}}时造成 10 {{tr|ticks}}[[{{tr|local invincibility frame}}]]，不过在实际中由于上述的内部命中冷却使得这并未发挥作用。
+* {{tr|Raven minion}}最远可以锁定距离 56.25 {{tr|tiles}}的{{tr|enemy}}，且可以持续攻击它们当前锁定的目标直至距离{{tr|player}}超过 87.5 {{tr|tiles}}。在超过此范围后，它们会自动返回{{tr|player}}身旁。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Ravens}}现在会尝试依据玩家的移动速度来更快地返回玩家处。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 37 提升至 55。
+** 飞行速度翻倍。}}
+{{history|Desktop 1.2.4.1|现在需要 10 {{tr|mana}}。}}
+{{history|Desktop 1.2.4|{{tr|Summon damage}}由 34 提升至 37。}}
+{{history|Desktop 1.2.3|{{tr|Summon damage}}由 32 提升至 34。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.07|
+** {{tr|Summon damage}}由 34 提升至 37。
+** 现在需要 10 {{tr|mana}}。}}
+{{history|Console 1.04|{{tr|Summon damage}}由 32 提升至 34。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|
+** {{tr|Summon damage}}由 32 提升至 37。
+** 现在需要 10 {{tr|mana}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Raven Staff}}

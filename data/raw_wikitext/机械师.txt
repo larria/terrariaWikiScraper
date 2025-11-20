@@ -1,0 +1,233 @@
+{{infobox wrapper|
+{{npc infobox|tabs=y
+| auto = 124
+| type = NPC
+| environment = Dungeon/Valid house
+| damage = {{modes|11|16|19}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ProjectileName.MechanicWrench}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| Combat Wrench|1|12.5%
+| imageother = Map Icon Mechanic.png
+| imageothercaption = Map Icon
+| idprojectile = 582
+}}
+{{npc infobox
+| auto = 123
+| environment = Dungeon
+| type = NPC
+}}
+}}
+{{quotation|[[File:Emote Town Mechanic.gif|link=]] '''机械师'''|{{gameText|LegacyDialog.168}}}}
+
+'''{{tr|Mechanic}}'''是个 [[{{tr|NPC}}]]，出售各种[[{{tr|Mechanisms}}]]，还有[[{{tr|Wire Cutter}}]]和[[{{tr|Wrenches}}]]，让玩家能够建设和激活连接电路的设备，比如[[{{tr|traps}}]]和[[指南:电路#引擎|{{tr|critter engines}}]]。在击败[[{{tr|Skeletron}}]]后，可以在[[{{tr|Dungeon}}]]中[[{{tr|Cavern}}]]{{tr|layer}}及更深处找到她，她会作为静止的'''{{tr|Bound Mechanic}}'''随机生成。在这一状态下与她对话会将其释放。如果{{tr|the Bound Mechanic}}被杀死，她之后仍能重生；如果{{tr|Mechanic NPC}} 被杀死，只要有空余[[{{tr|house}}]]，她会在一段时间后再次入住。
+
+在{{eversions|1.3.0.1|short}}上，{{tr|the Mechanic}}会攻击附近的{{tr|enemies}}。她会把她的[[{{tr|Combat Wrench}}]]像[[{{tr|Boomerangs}}]]那样投掷出去来自卫，在游戏初期造成 11 / {{expert|16}} / {{master|19}} 伤害，并且随着玩家推进她会得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>她死亡时也可能会掉落这件武器。
+
+{{Lifeform Analyzer note|The Bound Mechanic}}
+
+== 出售物品 ==
+{{shop
+|{{shop row|Red Wrench}}
+|{{shop row|Blue Wrench}}
+|{{shop row|Green Wrench}}
+|{{shop row|Yellow Wrench}}
+|{{shop row|Wire Cutter}}
+|{{shop row|Wire}}
+|{{shop row|Lever}}
+|{{shop row|Switch}}
+|{{shop row|Red Pressure Plate}}
+|{{shop row|Green Pressure Plate}}
+|{{shop row|Gray Pressure Plate}}
+|{{shop row|Brown Pressure Plate}}
+|{{shop row|Blue Pressure Plate}}
+|{{shop row|Yellow Pressure Plate}}
+|{{shop row|Orange Pressure Plate}}
+|{{shop row|Teal Pressure Pad}}
+|{{shop row|Booster Track}}
+|{{shop row|Actuator}}
+|{{shop row|Teleporter|一直有售。{{eicons|1.4.4}}}}
+|{{shop row|Junction Box}}
+|{{shop row|Mechanical Ruler}}
+|{{shop row|Mechanical Lens}}
+|{{shop row|Engineering Helmet}}
+|{{shop row|Wire Bulb}}
+|{{shop row|Mechanic's Rod|在下列[[{{tr|Moon phase}}]]期间：{{moons|2|4|6|8}}，当[[{{tr|Angler}}]]在场时。}}
+|{{shop row|1 Second Timer|一直有售。{{eicons|1.4.1}} {{eicons|1.2.4.1|invert=y}}}}
+|{{shop row|3 Second Timer|一直有售。{{eicons|1.4.1}} {{eicons|1.2.4.1|invert=y}}}}
+|{{shop row|5 Second Timer|一直有售。{{eicons|1.4.1}} {{eicons|1.2.4.1|invert=y}}}}
+|{{shop row|1/2 Second Timer}}
+|{{shop row|1/4 Second Timer}}
+|{{shop row|Pixel Box|一直有售。{{eicons|1.4.4}}}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Mechanic (Shimmered).png]] [[File:Map Icon Mechanic (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Mechanic}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Mechanic}}会变形为她的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将她再次浸没在{{tr|Shimmer}}中的方式来将她变回经典外观。
+{{-}}
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.167}}”
+* “{{gameText|LegacyDialog.168}}”
+* “{{gameText|LegacyDialog.169}}”
+
+'''[[{{tr|Goblin Tinkerer}}]]存在时：'''
+
+* “{{gameText|LegacyDialog.165|x_PlayerName=&lt;{{tr|Player}}的名字&gt;|x_GoblinTinkerer=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|LegacyDialog.166|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''当{{eil|Tavernkeep}}存在时：'''
+* “{{gameText|MechanicChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''当在{{tr|Dungeon}}中找到她时：'''
+* “{{gameText|LegacyDialog.156}}”
+
+'''无家可归时：'''
+* “{{gameText|LegacyDialog.157}}”
+* “{{gameText|LegacyDialog.158}}”
+* “{{gameText|LegacyDialog.159}}”
+* “{{gameText|LegacyDialog.160}}”
+
+'''在[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.161}}”
+* “{{gameText|LegacyDialog.162}}”
+* “{{gameText|LegacyDialog.163}}”
+* “{{gameText|LegacyDialog.164}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|MechanicSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|MechanicSpecialText.Windy2}}”
+* “{{gameText|MechanicSpecialText.Windy1}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|MechanicSpecialText.Rain2}}”
+* “{{gameText|MechanicSpecialText.Rain1}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|MechanicSpecialText.Storm2}}”
+* “{{gameText|MechanicSpecialText.Storm1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|MechanicSpecialText.Graveyard1}}”
+* “{{gameText|MechanicSpecialText.Graveyard2}}”
+
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Mechanic.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Mechanic.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Mechanic.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Mechanic.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Mechanic.HateCrowded}}”
+
+'''在[[{{tr|Snow}}]]{{tr|biome}}中时：'''
+* “{{gameText|TownNPCMood_Mechanic.LikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_Mechanic.DislikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Mechanic.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Goblin Tinkerer}}]]时：'''
+* “{{gameText|TownNPCMood_Mechanic.LoveNPC|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Mechanic.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Cyborg}}]]时：'''
+* “{{gameText|TownNPCMood_Mechanic.LikeNPC|x_NPCName=&lt;{{tr|Cyborg}}的名字&gt;}}”
+
+'''靠近[[{{tr|Arms Dealer}}]]时：'''
+* “{{gameText|TownNPCMood_Mechanic.DislikeNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''靠近[[{{tr|Clothier}}]]时：'''
+* “{{gameText|TownNPCMood_Mechanic.HateNPC|x_NPCName=&lt;{{tr|Clothier}}的名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Mechanic.Content}}”
+{{collapse bottom}}
+
+== 备注 ==
+*虽然{{tr|Dungeon}}的最上面一部分可以在打败{{tr|Skeletron}}之前就进入，但{{tr|Bound Mechanic}}只会出现在{{tr|Cavern}}深度上，且只会在打败{{tr|Skeletron}}后生成。
+
+== 小贴士 ==
+* 由于计算[[{{tr|NPC Happiness}}]]时[[{{tr|Ice biome}}]]会覆盖{{tr|Underground}}，{{tr|Mechanic}}可以被放在{{tr|Ice biome}}中，不会受到{{tr|Happiness}}惩罚。
+
+== 花絮 ==
+* {{tr|The Mechanic}}暗恋着[[{{tr|Goblin Tinkerer}}]]，正如她的话语所指。同时，根据{{tr|the Goblin Tinkerer}}的一些话语判断，他也同样暗恋着她。
+** 她的快乐度话语“{{gameText|TownNPCMood_Mechanic.LoveNPC|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”亦可证明这点。
+** {{tr|The Mechanic}}的{{tr|Shimmered form}}也参考了这一点，这会将她转化为{{tr|Goblin}}。
+* 罕见情况下，{{tr|the Nurse}}和{{tr|Mechanic}}可能拥有相同的名字，Kayla 或 Amy。这可能导致{{tr|the Merchant}}在{{tr|a Blood Moon}}时说：“{{gameText|LegacyDialog.13|x_Mechanic=Kayla/Amy|x_Nurse=Kayla/Amy}}”
+* 话语“{{gameText|LegacyDialog.168}}”可能参考了[http://www.imdb.com/title/tt0487831/ 《IT狂人》（The IT Crowd）]，也可能引用了很多 IT 人碰到“故障”设备时常说的话。
+* 话语“{{gameText|MechanicChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”参考了一个数学笑话；数学上平方根（root）和平方（square）是互相抵消的，因此根汁饮料（Root Beer）倒进方形（square）的杯子就只剩下啤酒（Beer）。
+* 话语“{{gameText|LegacyDialog.160}}”玩了个英文双关：这里的“隐形眼镜”英文是“contact”，既可以指让电流通过的装置（{{维基百科|electrical contact|t=电触点}}），也可以指{{维基百科|contact lens|t=隐形眼镜}}。
+* 话语“{{gameText|LegacyDialog.163}}”可能参考了[http://www.imdb.com/title/tt0460649/ 《老爸老妈的浪漫史》（How I Met Your Mother）]。
+{{float file box|[[File:Mechanic (Party).png]]|[[{{tr|Party}}]]期间的{{tr|Mechanic}}}}
+* 在{{tr|a party}}期间，当{{tr|the Mechanic}}戴上{{tr|a party hat}}时，她的发型有所改变：她将其披下来而不是扎成圆发髻。这是有道理的，因为扎着圆发髻来戴{{tr|party hat}}很不方便。
+* 她那自卫时像投掷{{tr|boomerang}}一样投掷她的{{tr|wrench}}的能力可能参考了游戏《[http://ratchetandclank.wikia.com/wiki/Ratchet_%26_Clank_series Ratchet & Clank]》中的 Ratchet，他能做出相同的动作。
+* 她的话语“{{gameText|LegacyDialog.166|x_ArmsDealer=&lt;[[{{tr|Arms Dealer}}]]的名字&gt;}}”可能含糊地涉及到性。{{tr|The Arms Dealer}}显然是在用暗讽挑逗{{tr|the Mechanic}}，但是她并没明白这个委婉的说法，而是按字面去解读他的话。
+** {{tr|Mechanic}}对{{tr|Arms Dealer}}的反感能进一步证明这一点。在话语“{{gameText|TownNPCMood_Mechanic.DislikeNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”中提到，这是由于{{tr|Arms Dealer}}频繁打扰{{tr|Mechanic}}所导致的。
+<!-- Do not change this to orange, any hair color that ranges from light orange to dark red is generally referred to as "red", just like any shade between light and deep yellow is called "blonde". Terms describing hair color are bound to encompass multiple hues by nature. -->
+* 她的一些名字，“Autumn”、“Dawn”和“Ginger”都指的是橙色，也就是指她的{{wikipedia|red hair|红发}}。
+** 在历史文化和刻板印象中，有说法称{{wikipedia|Red hair#Beliefs concerning temperament|有红头发的人是“性欲旺盛”的}}。这可能就解释了为什么{{tr|Mechanic}}会受到{{tr|Arms Dealer}}骚扰。
+* 在{{tr|Blood Moon}}期间，{{tr|Mechanic}}和[[{{tr|Nurse}}]]之间似乎有冲突。在这个时候，[[{{tr|Merchant}}]]有几率会说：“{{gameText|LegacyDialog.13|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}
+** 从[[{{tr|Stylist}}]]的对话能得知二人其实是朋友: “{{gameText|LegacyDialog.307|x_PartyGirl=&lt;{{tr|Party Girl}}的名字&gt;|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+** 对有红发的女性的另一项刻板印象会称她们“脾气暴躁、舌头尖锐”，这可能是{{tr|Mechanic}}与{{tr|Nurse}}在{{tr|Blood Moon}}会发生争吵的原因，即便她们之间互不影响{{tr|happiness}}。
+** {{tr|Nurse}}暗恋{{tr|Arms Dealer}}也可能是{{tr|Nurse}}和{{tr|the Mechanic}}发生冲突的原因。
+* {{lore|{{tr|Cultists}}强迫{{tr|the Mechanic}}一块块地重建{{tr|Cthulhu}}，这就解释了全部{{tr|mechanical bosses}} 的存在。此外，她从未完成{{tr|Cthulhu}}的机械大脑，这就解释了为什么{{tr|Brain of Cthulhu}}没有机械版对应物。}}
+* {{tr|The Mechanic}}讨厌[[{{tr|Clothier}}]]，很可能是因为他就是那个把她捆起来丢在[[{{tr|Dungeon}}]]中的人，正如他的一句话语中所说。
+** 虽然她和[[{{tr|Clothier}}]]互相讨厌对方，但他们似乎并不知道原因，因为她只是含糊提到他“不懂得该如何对待女人”，而{{tr|Clothier}}只有关于被{{tr|Skeletron}}附身时将她丢进{{tr|Dungeon}}的模糊的记忆片段。
+** 她不喜欢[[{{tr|Cavern}}|{{tr|Caverns}}]]，因为“一次创伤经历”，这很可能也是指这件事。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在出售[[{{tr|Pixel Box}}]]和[[{{tr|Teleporter}}]]。
+** 现在{{tr|Bound Mechanic}}仅在打败[[{{tr|Skeletron}}]]后可生成。}}
+{{history|Desktop 1.4.1|
+** [[{{tr|Mechanic's Rod}}]]现在可在{{tr|pre-Hardmode}}的四种{{tr|moon phases}}期间购买。
+** 现在出售[[{{tr|1 Second Timer}}]]、[[{{tr|3 Second Timer}}]]、和[[{{tr|5 Second Timer}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 现在死亡时有几率掉落[[{{tr|Combat Wrench}}]]。
+** 现在出售[[{{tr|1/2 Second Timer}}]]、[[{{tr|1/4 Second Timer}}]]、和[[{{tr|Orange Pressure Plate}}]]。}}
+{{history|Desktop 1.3.1|添加了[[{{tr|Yellow Wrench}}]]、[[{{tr|Teal Pressure Pad}}]]、[[{{tr|Junction Box}}]]、[[{{tr|Mechanical Lens}}]]、[[{{tr|Engineering Helmet}}]]、和[[{{tr|Wire Bulb}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 添加了[[{{tr|Mechanical Ruler}}]]。
+** 现在会使用{{tr|Combat Wrench}}攻击{{tr|enemies}}来自卫。}}
+{{history|Desktop 1.2.4|添加了[[{{tr|Booster Track}}]]和[[{{tr|Mechanic's Rod}}]]。}}
+{{history|Desktop 1.1.1|现在能在启用自动暂停时解开。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Mechanic}}

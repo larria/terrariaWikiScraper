@@ -1,0 +1,94 @@
+{{infobox wrapper | direction = row
+|{{item infobox
+| name = Cactus plant
+| type = Background object
+| image = Growing cactus.png
+| stack =
+| placeable =
+| rare =
+| idtile = 80
+| cargo = no
+}}
+|{{item infobox
+| type = Block
+| auto = 276
+| tags = potion ingredients/plunder
+}}
+}}
+{{about|{{tr|surface plant}}|[[{{tr|Underground Desert}}]]中的球形{{tr|cactus}}|{{tr|Rolling Cactus}}}}
+
+'''{{tr|Cactus}}'''是一种[[{{tr|crafting material}}]]，通过使用[[{{tr|axe}}]]或[[{{tr|chainsaw}}]]如同砍伐[[{{tr|trees}}]]一样砍伐[[#{{tr|Plant}}|{{tr|Cactus plants}}]]获得。除了用于制作，{{tr|Cactus}}还能作为建筑材料放置。
+
+== 制作 ==
+制作所有{{tr|item}}总计需要 258 个{{tr|Cactus}}。
+
+=== 配方 ===
+{{recipes|result=Cactus|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Cactus|expectedrows=37}}
+
+== {{tr|Plant}} ==
+[[File:Cactus Types.png|185px|thumb|生长于[[{{tr|Sand}}]]、[[{{tr|Ebonsand}}]]、[[{{tr|Pearlsand}}]]和[[{{tr|Crimsand}}]]上的{{tr|Cacti}}。]]
+{{float file box|width=120px|style=clear:right|[[File:CactiSprite.jpg]]|[[1.4]] 前生长于{{tr|Corrupted cactus}}顶端的[[{{tr|Pink Prickly Pear}}]]。}}
+
+'''{{tr|cactus plant}}'''在[[{{tr|Desert}}]][[{{tr|biomes}}]]中的各种[[{{tr|Sand}}]]上生长。{{tr|cactus plant}}可以通过[[{{tr|axe}}]]或[[{{tr|chainsaw}}]]砍伐，并会掉落{{tr|Cactus items}}。在{{eversions|1.4.0.1|invert=1}}中，用[[{{tr|pickaxe}}]]挖掘{{tr|cactus}}下方的一个沙块可以迅速地摧毁整个{{tr|cactus}}，并生成所有可能的{{tr|cactus}}{{tr|item}}。砍伐[[{{tr|The Corruption}}|{{tr|Corruption}}]]、[[{{tr|The Crimson}}|{{tr|Crimson}}]]和[[{{tr|The Hallow}}|{{tr|Hallow}}]]{{tr|Cacti}}会掉落同样的{{tr|Cactus items}}。
+
+有时{{tr|Cacti}}的顶端会生长[[{{tr|Pink Prickly Pear}}]]。
+
+=== 条件 ===
+{{tr|Cactus plants}}无法种植，仅会在下列条件满足时才会生长在某个相应的{{tr|Sand Block}}上：{{source code ref|v=1.3.5.3|method=Terraria.WorldGen.UpdateWorld}}
+
+# 相应的{{tr|Sand Block}}位于 0{{nbsp}}[[{{tr|Depth Meter}}|英尺]]以上，并且没有被[[{{tr|Actuator}}|{{tr|actuate}}]]或以任何方法[[{{tr|Hammers}}|锤击]]。
+# 相应的{{tr|Sand Block}}离世界的边界多于 378 格<!-- 400 tiles away from the real edge, but 378 tiles away from the visible edge -->，也就是说，不能位于[[{{tr|Ocean}}]]{{tr|biome}}的通常位置中。
+# 相应的{{tr|Sand Block}}的上方和两侧（仅考虑毗连的区域）都是空地。
+# 相应的{{tr|Sand Block}}上方的{{tr|tile}}没有被任何[[{{tr|liquid}}]]填充。
+# 以相应的{{tr|Sand Block}}为中心的 13×5 格矩形范围内，有少于 4 个{{tr|tile}}的{{tr|Cactus}}，并有多于 10 个{{tr|Sand Blocks}}（或者{{tr|Ebonsand}}、{{tr|Crimsand}}或{{tr|Pearlsand Blocks}}，所有的这几种{{tr|Sand}}加到一起计算）。
+
+{{tr|world}}生成时产生的{{tr|Cacti}}最初总是只有一格高，并会在之后慢慢生长。
+
+== 小贴士 ==
+* 卖{{tr|Cactus}}最赚钱的方法是把{{tr|Cactus}}做成{{tr|Cactus Swords}}。
+* 因为很容易获得大量{{tr|Cacti}}，所以制作大量的{{tr|Cactus Swords}}来获得{{tr|Legendary}}[[{{tr|modifier}}]]的{{tr|Cactus Swords}}是游戏早期简单有效，并且还能获利的方法。
+* 与{{tr|trees}}不同，新生长的{{tr|cacti}}并不是完全长大的，而是只有 1 格高的{{tr|plants}}。砍伐{{tr|cactus}}（但留下{{tr|cactus}}的“树桩”）可以让{{tr|cactus}}继续生长。这在刷{{tr|cactus}}时特别有用。除此之外，新的{{tr|plants}}也会在原有的{{tr|cacti}}附近生长，实际上相当于提高了“生产效率”。
+* 由于[[{{tr|Copper Pickaxe}}]] -1 {{tr|range}}的属性，{{tr|Cactus Pickaxe}}成为游戏早期好用的替代品，因为它不仅没有负属性，而且容易获得（因为{{tr|cacti}}的易得性）。
+* 自然生长的{{tr|cactus plant}}浸没在{{tr|liquid}}中时会以随机间隔被摧毁
+
+== 花絮 ==
+* {{tr|Cactus plant}}来源于现实中的{{wikipedia|saguaro|萨瓜罗掌}}，它是一种生长在美国中部和北部的仙人掌，以它的“枝干”和整体独特的形状而闻名.
+* {{tr|plant}}本身和放置的{{tr|item}}都不会造成{{tr|contact damage}}，但在 [[1.1]] 前曾经可以。
+** 不过，[[{{tr|Constant}}]] {{tr|world}}中的{{tr|cactus plant}}则可以造成{{tr|contact damage}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.2|修正了在罕见情况下{{tr|Cacti}}紧挨着[[{{tr|Altars}}|{{tr|Demon Altars}}]]生成时会导致当{{tr|Demon Altars}}被击中时世界会崩溃的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Cactus Toilet}}]]和[[{{tr|Rolling Cactus}}]]。
+** {{tr|Cacti}}下方[[{{tr|Sand Block}}]]不再会掉落或被摧毁。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Cactus Sink}}]]。}}
+{{history|Desktop 1.2.4.1|添加了[[{{tr|Cactus Table}}]]和[[{{tr|Cactus Platform}}]]。}}
+{{history|Desktop 1.2.4|添加了[[{{tr|Cactus Chest}}]]、[[{{tr|Cactus Clock}}]]、[[{{tr|Cactus Dresser}}]]、[[{{tr|Cactus Piano}}]]和[[{{tr|Cactus Sofa}}]]。}}
+{{history|Desktop 1.2.3|
+** 添加了更多种类的{{tr|cactus}}。
+** 添加了[[{{tr|Cactus Bathtub}}]]、[[{{tr|Cactus Bed}}]]、[[{{tr|Cactus Bookcase}}]]、[[{{tr|Cactus Candle}}]]、[[{{tr|Cactus Candelabra}}]]、[[{{tr|Cactus Chandelier}}]]、[[{{tr|Cactus Lamp}}]]和[[{{tr|Cactus Lantern}}]]。}}
+{{history|Desktop 1.2|
+** 添加了[[{{tr|Cactus armor}}]]、[[{{tr|Cactus Pickaxe}}]]、[[{{tr|Cactus Sword}}]]、[[{{tr|Cactus Wall}}]]、[[{{tr|Cactus Work Bench}}]]、[[{{tr|Cactus Chair}}]]和[[{{tr|Cactus Door}}]]。
+** 新加入的[[{{tr|pink prickly pears}}]]会生成在{{tr|cacti}}顶端。
+** 现在可以放置，并能够作为{{tr|building material}}使用。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|不再会{{tr|damage}}{{tr|player}}（从前会造成 10 点{{tr|damage}}）。}}
+{{history|Desktop 1.0.6|当{{tr|damage}}{{tr|player}}时不再会造成[[{{tr|knockback}}]]，当生长时也不会破坏其上的{{tr|blocks}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}，作为[[{{tr|Swiftness Potion}}]]和[[{{tr|Thorns Potion}}]]{{tr|recipes}}的材料。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Cactus}}
+{{Master Template Consumables
+| show-material = yes
+}}
+{{Master Template Tiles
+| show-main = yes
+| show-blocks = yes
+}}
+
+{{language info|en=Cactus}}

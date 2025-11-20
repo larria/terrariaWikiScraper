@@ -1,0 +1,144 @@
+目前有 4 种'''{{tr|liquids}}'''：[[{{tr|water}}]]、[[{{tr|lava}}]]、[[{{tr|honey}}]]和[[{{tr|shimmer}}]]。尽管每种液体都有不同的特性，但所有液体都具有共同的“液体力学”，液体力学描述了它们如何移动并与周围的环境相互作用。例如，所有{{tr|liquids}}都会流动并填充它们所占据的区域，并且都可以用某些物品来移动。液体可能很危险，因为玩家会掉入其中，如果液体很深，玩家就会淹死（微光除外）。但是，所有液体都在某种程度上是有用的，因为它们可用于制作，而这又恰是不同液体之间的主要区别特征之一。
+
+== 所有{{tr|liquids}} ==
+=== 流动和移动 ===
+[[File:Inf any fluids.png|right|thumb|一个“分流”液体生成器的例子。]]
+{{tr|Liquids}}可以填充单个{{tr|tile}}的部分或全部，并且可以在{{tr|tiles}}之间流动。运动中的{{tr|Liquid}}视为“流动的”，并且可以在视觉上占据比它们静止时更多的{{tr|tile}}。不在移动中的{{tr|Liquids}}视为“稳定的”：在每次游戏启动时，所有流动的{{tr|liquids}}都会明确地稳定下来，将它们移动到其自然归宿。
+
+{{tr|Water}}流动得最快，{{tr|lava}}较慢，而{{tr|honey}}流动得最慢。如果{{tr|liquid block}}放置在下方是开放空间的地方，它将会向下流动。如果其下有{{tr|block}}，但任意一侧有开放空间，它就会流向开放的一侧或两侧，导致出现{{tr|liquid}}的不完全{{tr|tiles}}。但是，对于{{tr|liquid tiles}}有一个最小深度，如果{{tr|liquid}}流开变得太薄，就会完全消失。
+
+可以用[[{{tr|Buckets}}]]和[[{{tr|pumps}}]]来收集、移动和放置周围的液体。
+
+在液体上使用{{tr|bucket}}时，游戏会检查此{{tr|tile}}周围 3x3 的方形区域寻找更多同类液体。如果在此区域中找到了至少半格同类液体，{{tr|bucket}}就从此处收集，一次最多一整格。无论收集的是否是完整的一格液体，{{tr|bucket}}总是会完全填满，并且能够倒出一整格液体来。装满的{{tr|buckets}}可以堆叠到 {{iteminfo|Water Bucket|stack}} 个，并且和其他物品一样可以放置在{{tr|inventories}}、{{tr|chests}}等的内部。
+
+{{tr|Pumps}}是[[{{tr|mechanisms}}]]，和[[{{tr|wire}}]]和各种{{tr|triggers}}一起使用。当把{{tr|Inlet Pump and Outlet Pump}}用{{tr|wire}}连接到一起并同时触发后，它们就能将最多四格液体从{{tr|Inlet Pump}}出运送到{{tr|outlet Pump}}处。它们并不能复制液体，但可以用来维持液体持续流动。要移动大量液体时，可以一次性设置好{{tr|pumps}}之后放着让其完成工作（这也适用于填充大片区域）但是，设置工作可能很繁琐，还需要一个[[{{tr|timer}}]]，直接使用一整组 9999 个{{tr|buckets}}实际上可能会更有效率。
+
+{{Eicons|Dry Bomb|invert=1}} 在{{tr|version 1.4}} 之前，流动的液体往往会增加体积。可以有意将其倒在{{tr|block}}上来分割液流，最大限度地增加体积，并可以用{{tr|pumps}}来让其无限流动（并增加体积）细节参考下文。
+
+=== 和{{tr|blocks}}的交互 ===
+[[File:Waterfall.png|thumb|{{tr|waterfall}}在游戏里的图像。注意那个{{tr|half block}}。]]
+{{tr|Liquid}}不能放置在包含{{tr|block}}的{{tr|tile}}中，即使这个{{tr|the block}}已经用[[{{tr|锤}}]]敲成不完全块。如果{{tr|liquid tile}}与不完全块的空白部分相邻，那么它可能看起来填充了那部分空间，但并不会视为“在”那个{{tr|block}}的{{tr|tile}}中，并且不能从那里装取。{{tr|Blocks}}可以放在{{tr|liquid}}中（{{tr|lava}}除外）。在此{{tr|tile}}中的任何{{tr|liquid}}都会就此被困住，并且在移除此{{tr|block}}之前无法流出（或者以其他方式与之交互）。然而，作为“液体沉降”环节的一部分，这类被困住的液体在下一次开启游戏时会从{{tr|block}}中“掉”出来。随着液体的流动，它们的体积往往会有所增加。可以利用这一点来无限复制液体（参见下文的[[#无限{{tr|liquids}}|无限{{tr|Liquids}}]]）。 
+
+如果一块满{{tr|liquid}}{{tr|tile}}在{{tr|half block}}旁边，同时{{tr|half block}}的开放空间位于另一侧，它将会在视觉上漫过此{{tr|the block}}并继续以河流或瀑布的形式流淌（包括{{tr|lava}}或{{tr|honey}}）。这种瀑布纯粹只是个视觉效果，无法与之交互（ 这种“{{tr|lavafall}}”并不会灼烧玩家，而“{{tr|honeyfall}}”也不会治疗玩家）。如果{{tr|liquid}}是{{tr|water}}且{{tr|half-block}}是[[{{tr|Gemspark Block}}]]或[[{{tr|Rainbow Brick}}]]，{{tr|the waterfall}}会被染成{{tr|half-block}}的颜色。
+
+在世界上的各个不同地点都会发现从天花板滴落下来的{{tr|liquids}}。这种滴落效果是纯视觉的，没有任何功能用途。玩家可以用[[{{tr|Magic Dropper}}]]来创建此效果。自然生成的或玩家制造的“液滴”可以用{{tr|pickaxe}}或[[{{tr|drill}}]]打破（但无法收取)，只要瞄准紧挨着它们滴下的那个{{tr|the block}}下方的位置即可。
+
+{{tr|Liquids}}可以临时存储在[[{{tr|Bubble}}]]中，{{tr|Bubble}}平时类似于[[{{tr|furniture}}]]，但可以像{{tr|block}}般置换{{tr|liquids}}。在重新启动世界时，这些{{tr|liquid}}会被释放，让其下落（在退出世界时从{{tr|bubbles}}中移除[[{{tr|lava}}]]是个明智之举）。{{tr|Bubbles}}也可以用于将{{tr|liquids}}撑在半空中（同样，就像它们是{{tr|blocks}}一般）,并且这些液体在世界重启时不会落下。
+
+=== 和{{tr|player}}的交互 ===
+{{tr|Players}}通常不能在{{tr|liquids}}上行走，而是会摔落到{{tr|liquids}}中。落入{{tr|liquid}}中会抵消全部[[{{tr|fall damage}}]]，无论下落距离和液体池的深度是多少。玩家进入/离开{{tr|liquids}}会发出{{sound|[[Media:Splash 0.wav|溅水]]|Splash 0.wav|nofallback=y}}的声音，并且会显示恰当的动画。某些物品可以允许在{{tr|liquids}}上行走（见下文）；此种情况下，落到{{tr|liquid}}上时{{tr|the player}}依然不会受到{{tr|fall damage}}。在{{tr|liquids}}中是，玩家会发现他们的移动变慢了。减速效果和{{tr|liquid}}与流动速度相匹配：{{tr|Water}}的约束性最小、{{tr|lava}}居中、而{{tr|honey}}是约束性最大的。
+
+{{tr|Players}}并不是天生就会在{{tr|liquids}}中游泳的，但仍然可以按他们现有的装备跳跃或飞行。某些物品可以取消移动损失（仅适用于{{tr|water}}）和/或允许自由游泳，详见下文。[[{{tr|Flippers}}]]（或其升级品）让玩家能自由向任何方向游泳。不过，它并不能让玩家漂浮，一旦他们停止移动就会在{{tr|liquid}}中下沉。[[{{tr|Inner Tube}}]]会让玩家漂浮在液面上。[[{{tr|The Neptune's Shell}}]]和其升级品让玩家能自由在{{tr|water}}或{{tr|honey}}中有用，但{{tr|lava}}中不能。注意无论是落到{{tr|liquid}}中还是从{{tr|liquid}}中跳出（包括向上游穿过液面），都会重置各种[[{{tr|Wings}}]]或[[{{tr|Rocket Boots}}]]的飞行时间。
+
+==== {{tr|Drowning}} ====
+{{diving equipment}}
+浸没在{{tr|water}}或{{tr|honey}}中太长时间的玩家会开始[[{{tr|Drowning}}]]。当玩家进入{{tr|liquid}}第一次没过脖子时，[[{{tr|Breath meter}}]]就会出现，然后慢慢排空。当{{tr|Breath meter}}完全清空时，玩家会开始受到伤害（没有任何装备时大约每秒 17 生命值）。当玩家的头部浮出水面后，{{tr|breath meter}}会迅速重新填充然后消失。有各种装备可防溺水：{{tr|diving equipment}}将减缓{{tr|breath meter}}的排空速度。{{tr|The Breathing Reed}}也能其类似作用（并且可以和{{tr|the diving Helmet}}叠加）;它还会伸到玩家头部上方，当芦苇的末端伸入空气时，玩家就能重新填充{{tr|breath meter}}。{{tr|A Neptune's Shell}}（或其升级品）或[[{{tr|Gills Potion}}]]的效果会移除{{tr|breath meter}}并且彻底防止溺毙。
+
+=== 移除 ===
+有几种方法可以移除液体：
+
+* 在{{eversions|Dry Bomb}}中，可以用[[{{tr|Dry Bomb}}]]来轻松移除任何液体。但是，它需要在{{tr|lava}}中钓鱼才能获得。
+* 有一个特殊的技巧可以从下方排空水池（仅限于水）（参见下文的{{tr|Water}}部分）。
+* 如果将少量液体倒在另一种液体池中，即使只有一桶的量也可以固化更大数量（通常至少两三倍）的目标液体。
+* [[{{tr|Super Absorbant Sponge}}]]和[[{{tr|Lava Absorbant Sponge}}]]分别可用于破坏{{tr|water and lava}}。前者只能从{{tr|Hardmode}}中的{{tr|Angler}}得到，后者则需要在{{tr|lava}}中钓鱼。
+* 如果将量为一格左右的液体倒在一大片平坦空间内，它会扩散直到完全消失。
+
+=== 用{{tr|liquids}}{{tr|Crafting}} ===
+当不同{{tr|liquids}}相互接触时，会生成三种接触生成的{{tr|blocks}}之一：[[{{tr|Obsidian}}]]（{{tr|water}}+{{tr|lava}}）、[[{{tr|Honey Block}}]]（{{tr|water}}+{{tr|honey}}）、[[{{tr|Crispy Honey Block}}]]（{{tr|honey}}+{{tr|lava}}）和[[{{tr|Aetherium Block}}]]（{{tr|Shimmer}} + {{tr|Water/Lava/Honey}}）。当发生这种情况时，所需的每种{{tr|liquid}}都会消耗掉一个{{tr|tile}}，但相接触的{{tr|tiles}}其中之一或二者都可以是不完全/流动的{{tr|tiles}}——也就是说，创建这种{{tr|block}}并不要求参与的{{tr|liquid}}是“满”格。
+{{tr|liquid tiles}}是次要[[{{tr|Crafting station}}]]，只要玩家附近就可以启用一些{{tr|recipes}}。它们的{{tr|recipes}}不会用掉{{tr|liquid}}，哪怕是往[[{{tr|Bottle}}]]里装{{tr|water}}或{{tr|honey}}。
+{{see also|[[{{tr|Crafting Station}}#{{tr|Liquids}}]]}}
+
+=== {{tr|Fishing}} ===
+所有{{tr|liquids}}（除{{tr|Shimmer}}外）都可以在其中[[{{tr|fishing}}]]。对于每种{{tr|liquid}}，池子必须包含某个最小数量的{{tr|tiles}}才能用于{{tr|fishing}}（完整细节请参考[[{{tr|Fishing}}]]页面）。{{tr|Lava}}需要一根特殊的{{tr|fishing pole}}才能在其中钓鱼，即[[{{tr|Hotline Fishing Hook}}]]。在{{eversions|Lavaproof Fishing Hook}}中，可以用[[{{tr|Lavaproof Fishing Hook}}]]{{tr|accessory}}或{{tr|Underworld bait}}配合任意{{tr|fishing rod}}在{{tr|lava}}中钓鱼。{{tr|Lava}}和{{tr|Honey}}中只能捕获非常有限的几种鱼。
+
+== {{tr|Water}} ==
+{{main|{{tr|Water}}}}
+{{tr|Water}}目前是游戏中最常见的{{tr|liquid}}，出现在从[[{{tr|Space}}]]边缘的湖中一直到[[{{tr|Caverns}}]]深处。（在{{tr|caverns}}较深处，{{tr|lava}}会取代成为主要{{tr|liquid}}，但依然会出现一些水。）但是，如果{{tr|water}}进入或是放置在[[{{tr|Underworld}}]]中，它会迅速地蒸发掉。
+* {{tr|Water}}通常不提供任何[[{{tr|buffs}}]]或[[{{tr|debuffs}}]]，但进入水中会移除[[{{tr|On Fire!}}]]{{tr|debuff}}。在{{eil|Expert mode}}中，在[[{{tr|Snow biome}}]]中进入{{tr|water}}里会得到[[{{tr|Chilled}}]]{{tr|debuff}}。
+* {{tr|water}}池可以根据深度和{{tr|biome}}生成{{tr|critters}}（通常是[[{{tr|Goldfish}}]]）或{{tr|enemies}}。
+* {{tr|water}}的颜色随着玩家所处的[[{{tr|biome}}]]而各异；它可以通过使用[[{{tr|Water Fountain}}]]来手动改变。
+* [[{{tr|Water Walking Boots}}]]，或任意其升级品，可以让你在（非流动的）{{tr|water}}面上行走。
+* [[{{tr|A Neptune's Shell}}]]（或任何其升级品），或[[{{tr|Fishron Wings}}]]几乎可以完全消除{{tr|water}}的减速效果（仅限于{{tr|water}}）。
+* 如果大量的{{tr|water}}涌入[[{{tr|Underworld}}]]中（例如，将湖或{{tr|ocean}}改道来引水），最终所有{{tr|water}}都会蒸发，但这可能需要一些时间，并且它''会''将{{tr|the lava}}表面转化为{{tr|obsidian}}。
+* 没有办法让冰或者雪“化”成水，反过来也不行。因此，在单个世界中[[{{tr|Ice Block}}]]的总量是有限的。在{{tr|Snow biome}}中，水面上会生成危险的[[{{tr|Thin Ice}}]]，但无法以任何方式带走它。
+* 可以用{{eil|Bottomless Water Bucket}}无限生成水（或用下文的方法）。类似地，可以用{{eil|Super Absorbant Sponge}}来自由吸收水。
+* 有一个特殊的技巧可以用来从下方摧毁一个大水池（只对水有效）：在底部下隔一格的位置挖一个 2×2 的洞（也就是说，这个洞应该还是干的）。在洞里放一个[[{{tr|chest}}]]，然后在{{tr|chest}}上倒 3 到 4 桶{{tr|lava or honey}}。然后挖开{{tr|chest}}上方的{{tr|block}}让水流下来。由于没有地方让{{tr|Obsidian or honey block}}形成（也无法破坏掉{{tr|the chest}}），于是流下来的水就直接被摧毁掉了。
+
+== {{tr|Lava}} ==
+{{main|{{tr|Lava}}}}
+{{tr|Lava}}是游戏中第二常见的{{tr|liquid}}。它在[[{{tr|Cavern}}]]层下部经常出现，在[[{{tr|The Underworld}}]]中则有大量。它可以通过两种方式创造出来：
+* 如果是在{{tr|the Underworld}}中采[[{{tr|Hellstone}}]]，每一块会滴下半/{{expert|一整}}桶（格）{{tr|lava}}。可以通过反复放置和采挖{{tr|Hellstone}}来刷{{tr|Lava}}，但只限于在{{tr|Underworld}}中。
+* 如果是在{{eil|Expert Mode}}中，[[{{tr|Lava Slime}}]]死亡时会滴落{{tr|lava}}。
+
+{{tr|lava}}有两个独特的属性：它会造成伤害，以及能让物品弹出并摧毁之。在接触时，{{tr|Lava}}会对玩家造成直接伤害，并造成[[{{tr|On Fire!}}]]{{tr|debuff}}。但是，玩家在{{tr|lava}}中不会溺毙。[[{{tr|Obsidian Skin Potion}}]]或[[{{tr|Lava Charm}}]]/[[{{tr|Lava Waders}}]]将在其持续时间内防止接触伤害，而[[{{tr|Obsidian Rose}}]]会大幅减少此伤害。{{tr|Lava}}的接触伤害''会''因玩家的[[防御力]]而降低，因此高级[[{{tr|armor}}]]会有所助益。{{tr|Lava}}也会灼烧大多数{{tr|enemies}}，因此也可以用在陷阱中。
+* {{tr|Lava}}不透明，会隐藏物体和生物，包括玩家。
+* {{tr|Blocks}}不能放置在{{tr|lava}}中，但受重力影响的{{tr|block}}（[[{{tr|Sand}}]]、[[{{tr|Silt}}]]、和[[{{tr|Slush}}]]）可以落入其中从而放置在底部。这可以用于建造跨越{{tr|lava}}的大桥的桥墩。
+* {{tr|Lava}}只能摧毁[[{{tr|rarity}}]]为{{rare|0|cat=0}}的物品。如果这些物品被浸没于超过其外观图中心点的{{tr|lava}}中，它们就会被摧毁。有少数{{rare|0|cat=0}}{{tr|rarity}}的物品对{{tr|lava}}免疫：[[{{tr|Obsidian}}]]、[[{{tr|Fireblossom}}]]及其[[{{tr|Fireblossom Seeds}}|{{tr|seeds}}]]、和任何一种[[{{tr|Living Fire Blocks}}]]。
+* 流动的{{tr|lava}}会让大多数[[{{tr|platforms}}]]和[[{{tr|furniture}}]]脱离弹出，然后可能以物品形式被摧毁。[[{{tr|Pump}}|{{tr|Pumps}}]]、 [[{{tr|Statues}}]]、[[{{tr|Obsidian Platforms}}]]和[[{{tr|Obsidian furniture}}]]不受影响。
+* {{tr|Lava Waders}}允许在{{tr|lava}}上无限行走（如果表面已完全稳定），甚至允许在其中游泳 7 秒钟。
+* [[{{tr|Flippers}}]]及其升级品允许在{{tr|lava}}中游泳，但对{{tr|movement speed}}和{{tr|contact damage}}问题并无帮助。[[{{tr|The Neptune's Shell}}]]及其升级品在{{tr|lava}}中不起作用。
+* 可以用{{eil|Bottomless lava Bucket}}无限生成{{tr|lava}}。类似地，可以用{{eil|lava Absorbant Sponge}}来自由吸收{{tr|lava}}。
+
+== {{tr|Honey}} ==
+{{main|{{tr|Honey}}}}
+{{tr|Honey}}是游戏中第三常见的{{tr|liquid}}，只会自然出现在[[{{tr|Underground Jungle}}]]内的[[{{tr|Bee hive}}]]{{tr|Mini-Biomes}}之中和周围。它可以通过采挖[[{{tr|Hive}}|{{tr|Hive Blocks}}]]来创造，但如果生成了{{tr|honey}}，那就不会掉落{{tr|the Hive Block}}。{{tr|Honey}}会大大减慢{{tr|player}}的移动速度（通常还会在附近找到[[{{tr|Honey Block}}]]）。
+
+* {{tr|Honey}}几乎是不透明的，会隐藏没于其中的物品和生物。
+* {{tr|Honey}}池会给玩家提供一个特别的[[{{tr|Honey (buff)}}|{{tr|life regeneration buff}}]]。只要玩家站/游在{{tr|honey}}中，这个效果就会一直持续，在离开{{tr|honey}}后还会再持续 30 秒。玩家并不需要被淹没，但{{tr|the honey}}池必须至少有两格宽且不能太浅。还有一些治疗物品是在{{tr|honey}}池边制作的，即[[{{tr|Bottled Honey}}]]和[[{{tr|Honeyfin}}]]。
+* 和{{tr|water}}一样，玩家若淹没于{{tr|honey}}中太久就会溺水。能延缓或防止在水中{{tr|Drowning}}的物品在{{tr|honey}}中同样会起作用。
+* 能让你在水上行走（{{tr|Water Walking Boots}}或任意其升级品）或水中游泳（{{tr|Neptune's Shell}}或{{tr|Flippers}}，或它们各自的升级品）的物品在{{tr|honey}}中会同样起作用。不过，它们并不会防止{{tr|honey}}的减慢效果（但{{tr|Fishron Wings}}会）。
+
+== {{tr|Shimmer}} ==
+{{main|{{tr|Shimmer}}}}
+{{tr|Shimmer}}是目前为止{{tr|game}}中最稀有的{{tr|liquid}}，是一种有光泽的淡紫色珠光{{tr|liquid}}。有限的{{tr|Shimmer}}可以在[[{{tr|Aether}}]]中找到，后者是一个仅会在每个世界中的[[{{tr|Underground}}]]或[[{{tr|Cavern}}]]{{tr|layer}}中生成一个的罕见{{tr|biome}}，它总与[[{{tr|Jungle}}]]生成在世界的同一侧。它不能用[[{{tr|bucket}}]]盛起，只能手动移动，或在[[{{tr|Moon Lord}}]]后{{tr|craft}}或{{tr|transmute}}出[[{{tr|Bottomless Shimmer Bucket}}]]。{{tr|The Shimmer}}有着转化浸入其中的{{tr|items}}和实体的特殊能力。被转化后的{{tr|Items}}会向上浮起并离开{{tr|Shimmer}}，在被玩家拾取前会悬浮在半空并发出明亮的光，类似于[[{{tr|souls}}]]。任何无法被{{tr|Shimmer}}转化的物品都会沉到{{tr|Shimmer}}底部。{{tr|Shimmer}}的转化包括：
+* 将制作好的{{tr|items}}转化为其{{tr|crafting materials}}。
+* 将特定的{{tr|items}}转化为其他{{tr|item}}。某些物品只能通过这种转化获得，如[[{{tr|Vital Crystal}}]]、[[{{tr|Aegis Fruit}}]]、[[{{tr|Arcane Crystal}}]]、和[[{{tr|Ambrosia}}]]。某些{{tr|item}}的转化只能特定条件下实现。
+* 改变{{tr|town NPC}} 的{{tr|sprite}}。
+* 将特定种类的{{tr|enemies}}转化为其他{{tr|enemy}}。
+* 将大部分[[{{tr|Critters}}]]转化为[[{{tr|Faelings}}]]。
+
+== 无限液体 ==
+=== {{eversions|1.4.0.1|invert=y}} ===
+[[File:Compact liquid farm (block view).png|thumb|带混合室的液厂，{{tr|block}}视图。]]
+[[File:Compact liquid farm (wiring view).png|thumb|紧凑型液厂，布线视图。]]
+[[File:Liquid farm.png|thumb|带{{tr|block}}生产的无限液体生成器]]
+
+使用[[{{tr|pumps}}]]，玩家可以通过持续循环泵送液体来建立无限液体源。
+
+右边是两个紧凑型无限液厂的例子，也有生产接触块的布置。注意用的是封闭的存储空间以防止溢出，以及用了[[{{tr|1 second Timer}}]]来自动执行此过程。第一个使用了一个可以从发生室抽取液体的公共混合室，每次按压{{tr|switch}}可以得到四块成品。第二个则采用了另一种方法，让{{tr|blocks}}持续可用。
+
+第二个方案中的双重{{tr|outlet pumps}}并不会（像以前认为的那样）复制来自输入的{{tr|liquid}}。但是，它们依然有助于加快速度，当来自第一个{{tr|outlet pump}}的{{tr|liquid}}阻塞（即，在上一个循环中它所带来的{{tr|liquid}}还来不及流走）时，它可以带来更多{{tr|liquid}}。
+
+=== {{eversions|1.4.0.1}} ===
+上述形式的液体生成在这些版本中无法正常工作，还可能摧毁而非创造液体。但是，有下列替代方案：
+
+* 对于{{tr|Water, Lava, and Shimmer}}，有“{{tr|bottomless buckets}}”可用。[[{{tr|Bottomless Water Bucket}}]]及其反向物品[[{{tr|Super Absorbant Sponge}}]]是{{tr|Hardmode Angler}}奖励；而[[{{tr|Bottomless Lava Bucket}}]]及其反向物品[[{{tr|Lava Absorbant Sponge}}]]则可以直接在{{tr|lava}}中{{tr|fishing}}获得。[[{{tr|Bottomless Shimmer Bucket}}]]只能制作或在击败{{tr|Moon Lord}}后将{{tr|Bottomless Water Bucket}}浸入{{tr|Shimmer}}获得。
+* 另一种方式对全部三种液体都有效，同样涉及到在{{tr|lava}}中钓[[{{tr|Obsidian Crate}}|{{tr|Obsidian Crates}}]]或[[{{tr|Hellstone Crate}}|{{tr|Hellstone Crates}}]]；这些{{tr|crates}}中也会包含[[{{tr|Wet Bomb}}|{{tr|Wet Bombs}}]]。它们爆炸时会产生出{{tr|water}}，并且它们也可以用来徒手制作成爆炸时移除（任何）液体的[[{{tr|Dry Bomb}}|{{tr|Dry Bombs}}]]，而后者可以制作成''任意''一种{{tr|liquid bombs}}，只要玩家站在相应的液体附近（这并不会用掉这液体）。这可以提供[[{{tr|Lava Bomb}}|{{tr|Lava Bombs}}]]或[[{{tr|Honey Bomb}}|{{tr|Honey Bombs}}]]（并让{{tr|Dry Bomb}}转换回{{tr|Wet Bomb}}）。 
+* [[{{tr|Demolitionist}}]]会出售{{tr|Wet Bombs, Dry Bombs, Lava Bombs, and Honey Bombs}}，只要玩家的{{tr|inventory}}有相应类型；这样玩家能买多少就能造出多少液体。明智的做法是把四种炸弹各拿一个（或者至少拿一个{{tr|Dry Bomb}}）放在一边，以确保要购买更多的时候手头肯定有。
+* [[{{tr|Cyborg}}]]会出售[[{{tr|Dry Rocket}}]]，站在相应液体附近时可以制作成[[{{tr|Wet Rocket}}]]、[[{{tr|Lava Rocket}}]]、和[[{{tr|Honey Rocket}}]]（类似于[[{{tr|Dry Bomb}}]]）。需要注意的是这些[[{{tr|Liquid Rockets}}]]一旦接触到液体就会爆炸。
+
+=== 所有版本 ===
+[[File:Bucket liquid duplication (demo).gif|thumb|200px|使用[[{{tr|Bucket}}]]来复制{{tr|Liquid}}。]]
+
+一种缓慢但简单的获得无限{{tr|liquid}}的方法需要一个 U 型的结构，由 5 个{{tr|blocks}}和一个[[{{tr|Buckets}}|{{tr|Bucket}}]]组成。将{{tr|liquids}}倒在 U 型结构上部的任意一侧会将其分为两半，其中一半向下流动，而另一半会留在结构中并能重新收集并放置。这种方法在复制{{tr|water}}时使用最好，因为持续按住 {{key|use}} 就能进行复制。{{tr|Lava and honey}}的移动更加缓慢，使得效率较低。使用[[{{tr|Smart Cursor}}]]有助于收集{{tr|liquids}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了{{tr|shimmer}}，出现在[[{{tr|The Aether}}]]中。}}
+{{history|Desktop 1.4.0.1|更新钓鱼战利品，更新了诸如{{tr|crates}}和{{tr|lava}}钓鱼奖励等。}}
+{{history|Desktop 1.3.4|{{tr|Liquids}}的流动更加动态，并且现在有一个新的选项用于配置此行为。}}
+{{history|Desktop 1.3.3.1|修正了[[{{tr|Stopwatch}}]]未正确显示{{tr|liquids}}中的速度的问题。}}
+{{history|Desktop 1.3.3|修正了游戏窗口处于非活动状态时{{tr|liquid}}和[[{{tr|rain}}]]声会持续存在的问题。}}
+{{history|Desktop 1.2.4|引入钓鱼和相关物品。}}
+{{history|Desktop 1.2|添加了{{tr|honey}}，出现在[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]中。}}
+{{history|Desktop-Release|{{tr|Introduced}}{{tr|water and lava}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Liquids}}
+{{Game mechanics}}
+
+[[Category:液体| ]]
+
+{{language info|en=Liquids}}

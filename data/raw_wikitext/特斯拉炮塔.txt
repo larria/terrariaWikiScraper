@@ -1,0 +1,47 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| boxwidth = 22em <!-- to avoid cutting off the banner name -->
+| image = Tesla Turret.gif
+| auto = 387
+| environment = Martian Madness
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|70|112|168}} {{note|small=y|paren=y|{{gameText|ProjectileName.MartianTurretBolt}}}}
+| debuff = Electrified / 5
+| debuffchance = 66.67% {{note|small=y|paren=y|{{gameText|ProjectileName.MartianTurretBolt}}}}
+| sound1 = Item 12.wav
+| soundcaption1 = {{gameText|ProjectileName.MartianTurretBolt}}
+| hardmode = yes
+| idprojectile = 435
+}}
+
+'''{{tr|Tesla Turret}}'''是一种[[{{tr|Hardmode}}]]的[[{{tr|Enemies}}|{{tr|enemy}}]]，只会出现在[[{{tr|Martian Madness}}]][[{{tr|Events}}|{{tr|event}}]]期间。它是由[[{{tr|Martian Engineer}}]]建造的，并且完全不可移动。每三秒钟，{{source code ref|v=1.4.4.9|name=ai|method=Terraria.NPC.AI}}它就会向玩家发射{{tr|Electric Bolt}}，这有 {{chance|2/3}} 的几率造成 5 秒钟的[[{{tr|Electrified}}]][[{{tr|Debuffs}}|{{tr|debuff}}]]。{{tr|The Tesla Turret}}会持续停留在原地，直至被玩家摧毁。
+
+== 备注 ==
+* 摧毁{{tr|Tesla Turret}}不会推进{{tr|Martian Madness event}}的进度。{{source code ref|v=1.4.4.9|method=Terraria.NPC.checkDead}}
+* 对{{tr|Tesla Turret}}造成{{tr|damage}}，会使其下一次攻击推迟 1.5 秒。<ref name="ai"/>
+* {{tr|The Tesla Turret}}的瞄准能力不是很精准，它仅会粗略地瞄准玩家，其{{tr|projectiles}}速度则随机介于一定的速度区间中。玩家离得越近，它就越不准确。例如，如果玩家与它的距离少于 5 格，那么{{tr|projectiles}}的角度散布范围则会大于 200°，甚至有可能向玩家的相反方向发射。除此之外，如果玩家位于它的水平飞行或者竖直飞行，那么{{tr|Tesla Turret}}会更加精确；如果位于对角线方向则会更不精准。<ref name="ai"/>
+* 需要消耗两秒钟才能使{{tr|Tesla Turret}}生成并开始攻击，它在这段时间内是无敌的，但仍然会造成{{tr|contact damage}}。<ref name="ai"/>
+
+== 小贴士 ==
+* 在{{tr|event}}过程中，如果对{{tr|Martian Engineers}}处理不当，可能会出现大量{{tr|Tesla Turrets}}。要避免被它们的攻击淹没，玩家应当集中精力优先除掉{{tr|Martian Engineers}}。
+
+== 花絮 ==
+* 它看起来像是{{wikipedia|Tesla coil|特斯拉线圈}}被制成了武器，因此得名。
+{{bestiary}}
+:* 这也暗示了{{维基百科|Nikola Tesla|尼古拉·特斯拉（Nikola Tesla）}}也是《[[{{tr|Terraria}}]]》[[{{tr|lore}}]]中的一位人物。{{verify}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Martian Madness Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Tesla Turret}}

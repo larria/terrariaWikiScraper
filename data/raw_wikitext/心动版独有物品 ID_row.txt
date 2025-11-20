@@ -1,0 +1,39 @@
+<includeonly><!--
+
+-->{{#vardefine:_itemid|{{{id|{{#expr:{{#var:_itemid}}+1}}}}}}}<!--
+
+--><tr><!--
+	--><td>{{#expr:{{#var:_itemid}}+{{iteminfo/maxId}}}}</td><!--
+	--><td><!--
+		-->{{#if:{{{name|{{{1|}}}}}}<!--
+			-->|{{#if:{{bool|{{{nolink|}}}}}|{{{name|{{{1|}}}}}}|[[{{{name|{{{1|}}}}}}]]}}<!--
+			-->|{{na}}<br/>{{note|small=y|paren=y|未实现}}<!--
+		-->}}<!--
+		-->{{#if:{{bool|{{{unused|}}}}}|<br/>{{note|small=y|paren=y|未实现}}}}<!--
+	--></td><!--
+	--><td><code>{{{iname|{{{2|}}}}}}</code></td><!--
+--></tr><!--
+--></includeonly>
+<noinclude>
+{{formatting subpage}}
+
+{| class="wikitable"
+! 参数 !! 备注
+|-
+| {{code|id}}
+| 物品的 ID。默认为从 1 递增，然后加上 <code><nowiki>{{iteminfo/maxId}}</nowiki></code>
+|-
+| {{code|name}}<br/>未命名参数 1
+| 物品的名称。为空时输出 <code><nowiki>{{na}}<br/>{{note|small=y|paren=y|未实现}}</nowiki></code>
+|-
+| {{code|nolink}}
+| 设为{{code|y}}时，不为物品名称添加链接
+|-
+| {{code|unused}}
+| 设为{{code|y}}时，额外在名称后输出 <code><nowiki><br/>{{note|small=y|paren=y|未实现}}</nowiki></code>
+|-
+| {{code|iname}}<br/>未命名参数 2
+| 物品的内部名称。
+|}
+{{zh only}}
+</noinclude>

@@ -1,0 +1,489 @@
+{{npc infobox | tabs=y
+| auto = 22
+| idprojectile = 1,2
+| type = NPC
+| environment = Surface/Valid house/Forest
+| damage = {{modes|8|12|14}}
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|arrows}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+|custom:Green Cap|{{item|Green Cap}}{{note|block=y|small=y|{{icon|desktop|console|mobile|3DS|small=y}} (仅当名叫 Andrew 时)<br/>{{icon/old-gen|small=y}}（在除了 Xbox 360 以外的所有{{tr|console}}中必定掉落）}}|100%
+| imageother = Map Icon Guide.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+{{about|[[{{tr|NPC}}]]|指南文章|Terraria Wiki:项目/指南|<!-- other uses -->}}
+{{quotation|[[File:Emote Town Guide.gif|link=]]'''{{tr|Guide}}'''|{{gameText|LegacyDialog.175}}}}
+
+'''{{tr|Guide}}'''通常是{{tr|player}}见到的第一个 [[{{tr|NPC}}]]。他会在世界创建时在玩家附近生成。他提供主要针对新{{tr|player}}的提示，并可以显示所有用到给他看的{{tr|items}}的[[{{tr|crafting recipes}}]]（包括所需的[[{{tr|crafting station}}]]）。
+
+不同于绝大多数其他 NPC，{{tr|the Guide}}于{{tr|World creation}}时即生成，在有可用的[[{{tr|House}}]]之前。不过他还是会搬进第一座建好的{{tr|House}}。如果他被杀掉，就需要先建好合适的房屋之后他才会重生，但无需其他条件。
+
+在{{eversions|1.3.0.1|versions}}上，{{tr|the Guide}}会用[[{{tr|Wooden Bow}}]]和{{tr|arrow}}来防御靠近的敌人，一开始发射的是[[{{tr|Wooden Arrow}}]]，在[[{{tr|Hardmode}}]]中升级为[[{{tr|Flaming Arrow}}]]。他在游戏开始时造成 8 / {{expert|12}} / {{master|14}} 点伤害，随着玩家的进展，他会得到[[NPCs#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Guide (Shimmered).png]] [[File:Map Icon Guide (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Guide}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Guide}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 备注 ==
+* 在{{eversions|1.4.0.1|versions}}中，玩家可以让向导居住在世界上的任何地方而没有负面后果。向导最适合居住的地方是[[发光蘑菇生物群落]]，因为[[松露人]]一般居住在此，后者喜爱向导并且出售[[自动锤炼机]]等重要物品。
+* {{tr|The Guide}}的{{tr|crafting}}提示中对于[[{{tr|weapons}}]]所显示的伤害变化是基于{{tr|player}}目前所装备着的相关加成的，比如[[{{tr|Molten armor}}]]的{{tr|set bonus}}。要想看到基础伤害值的话请在和{{tr|the Guide}}对话时卸下伤害调整{{tr|items}}。这同样适用于[[暴击率]]。
+* {{tr|player}}通常不能直接攻击 NPC，但[[{{tr|Guide Voodoo Doll}}]]让{{tr|players}}能攻击{{tr|the Guide}}。
+* {{tr|The Guide}}，和其他友方 {{tr|NPC}} 一样，只有在[[{{tr|Day and night cycle}}|{{tr|day}}]]才会重生。
+* 在[[{{tr|Underworld}}]]中通过使用[[{{tr|Guide Voodoo Doll}}]]来杀死{{tr|the Guide}}，或者（在{{eversions|1.4.0.1|versions}}中）让{{tr|the Guide}}在接触{{tr|lava}}的情况下死在{{tr|the Underworld}}中{{source code ref|v=1.4.0.5|name=death|method=Terraria.NPC.DoDeathEvents}}，将会召唤出[[{{tr|Wall of Flesh}}]]。
+** 只有当向导活着时才能使用[[向导巫毒娃娃]]召唤[[血肉墙]]，否则不会召唤出[[boss]]。
+* 击杀{{tr|the Guide}}还会给玩家带来“{{tr|ladybug}}好运”，这会让[[运气]]小幅提升 4 分钟。如果玩家具有“{{tr|ladybug}}霉运”那就不会有，并且它也不会和触摸{{tr|ladybug}}得到的“{{tr|ladybug}}好运”叠加。
+* 除非在{{eversions|1.4.0.1|versions}}上，否则在解锁{{tr|Hardmode}}之后{{tr|The Guide}}就给不出太多有用的提示，除了有关于摧毁[[{{tr|Altar}}]]和去{{tr|underground}}寻找[[{{tr|Soul of Light}}|光明]]与[[{{tr|Soul of Night}}|黑暗]]之魂的提示。
+** 在{{eversions|1.4.0.1|versions}}上，{{tr|the Guide}}已经更新过，包含了和很多{{tr|Hardmode}}后的{{tr|events}}和 {{tr|NPCs}} 有关的建议。
+**由于不再受支持，{{Old-gen console version}}和{{3DS version}}会无限期的拥有 [[1.4.0.1]] 之前的{{tr|Guide}}提示，这使得他除了{{tr|crafting recipes}}和刷{{tr|the Wall of Flesh}}外在{{tr|Hardmode}}中绝大多数情况下都没有什么用处。
+* {{eicons|1.4.0.1}} 在[[{{tr|secret world seeds}}]]中，起始的{{tr|The Guide}}会被各种 {{tr|NPCs}} 替换：
+** 在 [[for the worthy]] {{tr|worlds}}中，[[{{tr|Demolitionist}}]]将是起始 {{tr|NPC}}。
+** 在[[{{tr|drunk worlds}}]]中，[[{{tr|Party Girl}}]]将是起始 {{tr|NPC}}。
+** 在 [[not the bees]] {{tr|worlds}}中，[[{{tr|Merchant}}]]将是起始 {{tr|NPC}}。
+** 在 [[don't dig up]] {{tr|worlds}}中，[[{{tr|Tax Collector}}]]将是起始 {{tr|NPC}}。
+* 对于那些经常使用其他来源的帮助而非{{tr|Guide}}的玩家来说，{{tr|Guide}}通常没有什么用途。否则，{{tr|the Guide}}就名副其实，他是游戏中各种提示和信息的主要来源。
+* 当{{tr|world}}中同时存在两种天然的[[{{tr|Evil biome}}]]时，玩家可以通过{{tr|Guide}}对话中提到的腐化/血腥来判断使用{{tr|Key of Night}}时召唤的是{{tr|Corrupt Mimic}}还是{{tr|Crimson Mimic}}。
+
+== 成就 ==
+{{achievement|name=Real Estate Agent}}
+{{achievement|name=No Hobo}}
+{{achievement|name=Home Sweet Home}}
+{{achievement|name=Appease the Volcano Gods}}
+{{achievement|name=Homicidal}}
+
+== 名字 ==
+{{npc names}}
+
+== 建议 ==
+部分话语可能有所不同，取决于玩的是哪个版本的''[[{{tr|Terraria}}]]''。
+
+{{collapse top}}
+'''如果玩家的{{tr|inventory}}中没有任何{{tr|tools}}{{#tag:ref|任何[[{{tr|pickaxe}}|{{tr|pickaxe power}}]]、[[{{tr|axe}}|{{tr|axe power}}]]、或[[{{tr|hammer}}|{{tr|hammer power}}]]大于 0 的物品（{{item|Copper Pickaxe|size=14px}}和{{item|Copper Axe|size=14px}}除外）。{{source code ref|v=1.4.0.5|name=help|method=Terraria.Main.HelpText}}|name=tools}}：'''
+* "{{gameText|LegacyDialog.177}}"
+* "{{gameText|LegacyDialog.178}}"
+* "{{gameText|LegacyDialog.179|x_InventoryKey={{key|esc}}}}"
+* "{{gameText|LegacyDialog.180}}"
+* "{{gameText|LegacyDialog.181}}"
+* "{{gameText|LegacyDialog.182}}"
+
+'''如果玩家的{{tr|inventory}}中没有{{tr|tools}}<ref name="tools" />、没有{{$|ore}}{{#tag:ref|[[{{tr|Copper Ore}}]]、[[{{tr|Iron Ore}}]]、[[{{tr|Silver Ore}}]]、或[[{{tr|Gold Ore}}]]，或者（在{{eversions|1.4.0.1|short=y}}上），[[{{tr|Tin Ore}}]]、[[{{tr|Lead Ore}}]]、[[{{tr|Tungsten Ore}}]]、或[[{{tr|Platinum Ore}}]]。<ref name="help"/>|name=ores}}并且没有[[{{tr|bars}}]]{{#tag:ref|[[{{tr|Copper Bar}}]]、[[{{tr|Iron Bar}}]]、[[{{tr|Silver Bar}}]]、或[[{{tr|Gold Bar}}]]，或者（在{{eversions|1.4.0.1|short=y}}上），[[{{tr|Tin Bar}}]]、[[{{tr|Lead Bar}}]]、[[{{tr|Tungsten Bar}}]]、或[[{{tr|Platinum Bar}}]]。<ref name="help"/>|name=bars}}：'''
+
+* “{{gameText|LegacyDialog.183}}”
+'''如果玩家的{{tr|inventory}}中没有{{tr|tools}}<ref name="tools" />、有至少一个{{tr|ore}}<ref name="ores" />、并且没有{{tr|bars}}<ref name="bars" />：'''
+* “{{gameText|LegacyDialog.184}}”
+* “{{gameText|LegacyDialog.185}}”
+
+'''如果玩家的{{tr|inventory}}没有{{tr|tools}}<ref name="tools" />并且有至少一个{{tr|bars}}<ref name="bars" />：'''
+* “{{gameText|LegacyDialog.186}}”
+* “{{gameText|LegacyDialog.187}}”
+
+{{eicons|1.4.0.1}} '''随时：'''
+* “{{gameText|GuideHelpText.Help_1064}}”
+
+'''如果玩家最大[[{{tr|health}}]]不超过 100：'''
+* “{{gameText|LegacyDialog.188}}”
+
+'''如果玩家最大[[{{tr|mana}}]] {{eicons|1.4.0.1}} 不超过 20 / {{eicons|1.4.0.1|invert=y}} 为 0：'''
+* “{{gameText|LegacyDialog.189}}”
+
+'''如果玩家最大[[{{tr|mana}}]] {{eicons|1.4.0.1}} 不超过 20 / {{eicons|1.4.0.1|invert=y}} 为 0，且{{tr|inventory}}中没有[[{{tr|Fallen Star}}]]：'''
+* “{{gameText|LegacyDialog.190}}”
+
+{{eicons|1.4.0.1}} '''如果存在[[{{tr|Tavernkeep}}]]：'''
+* “{{gameText|GuideHelpText.Help_1063|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''如果[[{{tr|Merchant}}]]和[[{{tr|Nurse}}]]都不存在：'''
+* "{{gameText|LegacyDialog.191}}"
+* "{{gameText|LegacyDialog.192}}"
+* "{{gameText|LegacyDialog.193}}"
+* "{{gameText|LegacyDialog.194}}"
+
+'''如果不存在{{tr|Merchant}}：'''
+* “{{gameText|LegacyDialog.195}}”
+
+'''如果不存在{{tr|Nurse}}：'''
+* “{{gameText|LegacyDialog.196}}”
+
+'''如果不存在[[{{tr|Arms Dealer}}]]：'''
+* “{{gameText|LegacyDialog.197}}”
+
+'''如果不存在[[{{tr|Dryad}}]]：'''
+* “{{gameText|LegacyDialog.198}}”
+
+'''如果不存在[[{{tr|Mechanic}}]]且已打败[[{{tr|Skeletron}}]]：'''
+* “{{gameText|LegacyDialog.199}}”
+
+'''如果不存在[[{{tr|Clothier}}]]且已打败{{tr|Skeletron}}：'''
+* “{{gameText|LegacyDialog.200}}”
+
+'''如果不存在[[{{tr|Demolitionist}}]]：'''
+* “{{gameText|LegacyDialog.201}}”
+
+'''如果不存在[[{{tr|Goblin Tinkerer}}]]且已打败[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]：'''
+* “{{gameText|LegacyDialog.202}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Witch Doctor}}]]且已打败{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1100}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Stylist}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1103}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Angler}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1104}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Dye Trader}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1107}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Golfer}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1109}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Painter}}]]且至少有 5 名{{tr|town NPCs}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1110}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Party Girl}}]]且至少有 11 名{{tr|town NPCs}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1111}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Tavernkeep}}]]且已打败{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1112}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Traveling Merchant}}]]且存在{{tr|the Merchant}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1113|x_Merchant=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Skeleton Merchant}}]]且世界处于[[{{tr|pre-Hardmode}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1114}}”
+
+{{eicons|1.4.0.1}} '''如果不存在[[{{tr|Zoologist}}]]且世界处于{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1115}}”
+
+'''如果玩家的{{tr|inventory}}中有至少一个[[{{tr|Lens}}]]：'''
+* "{{gameText|LegacyDialog.204}}" {{note|small=y|paren=y|{{eicons|1.4.0.1}} 仅限[[{{tr|Corrupt}}]]世界中}}
+* {{eicons|1.4.0.1}} "{{gameText|GuideHelpTextSpecific.Help_1159}}" {{note|small=y|paren=y|仅限[[{{tr|Crimson}}]]世界中}}
+
+'''如果玩家的{{tr|inventory}}中有至少一个[[{{tr|Rotten Chunk}}]]、[[{{tr|Worm Food}}]]、或[[{{tr|Vertebra}}]]（或，在{{eversions|1.4.0.1|short=y}}中，[[{{tr|Bloody Spine}}]]、[[{{tr|Vile Powder}}]]、或[[{{tr|Vicious Powder}}]]）：'''
+* “{{gameText|LegacyDialog.205}}” {{note|small=y|paren=y|仅限{{tr|Corrupt worlds}}中}}
+* “{{gameText|LegacyDialog.403}}” {{note|small=y|paren=y|仅限{{tr|Crimson worlds}}中}}
+
+'''如果玩家的{{tr|inventory}}中有至少一个{{tr|Lens}}、{{tr|Rotten Chunk}}、{{tr|Worm Food}}、或{{tr|Vertebra}}（或，在{{eversions|1.4.0.1|short=y}}上，{{tr|Bloody Spine}}、{{tr|Vile Powder}}、或{{tr|Vicious Powder}}）：'''
+* “{{gameText|LegacyDialog.206}}” {{note|small=y|paren=y|仅限在{{tr|Corrupt worlds}}中}}
+* “{{gameText|LegacyDialog.402}}” {{note|small=y|paren=y|仅限在{{tr|Crimson worlds}}中}}
+
+'''如果玩家的{{tr|inventory}}中没有[[{{tr|Grappling Hook}}]]{{#tag:ref|{{eicons|1.4.0.1}} 任何在[[{{tr|pre-Hardmode}}]]可获得的{{$|Hook}}都算数（[[{{tr|Squirrel Hook}}]]和[[{{tr|Amber Hook}}]]除外）。<br/>{{eicons|1.4.0.1|invert=y}} 只有真正的[[{{tr|Grappling Hook}}]]{{tr|item}}本身才算数——其他{{tr|hooks}}不计。<ref name="help"/>|name=hook}}（且，在{{eversions|1.4.0.1|short=y}}中，玩家[[{{tr|Inventory}}|{{tr|equipment menu}}]]中的{{tr|hook slot}}要是空的）、世界处于[[{{tr|pre-Hardmode}}]]、且{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}和{{tr|Skeletron}}都未被打败：'''
+* “{{gameText|LegacyDialog.207}}”
+
+{{eicons|1.4.0.1}} '''如果玩家有至少 140 的最大[[{{tr|health}}|生命值]]且世界处于{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1120}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Goblin Army}}]]尚未被打败、玩家有至少 200 最大生命值、且已经摧毁了至少一个[[{{tr|Shadow Orb}}]]/[[{{tr|Crimson Heart}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1122}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Eye of Cthulhu}}]]、{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}、或{{tr|Skeletron}}已被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1125}}”
+
+{{eicons|1.4.0.1}} '''如果{{tr|the world}}在{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1130}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1131}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1132}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1133}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1134}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1135}}”
+* “{{gameText|GuideHelpTextSpecific.Help_1138}}”
+
+{{eicons|1.4.0.1}} '''如果玩家的{{tr|inventory}}中有任意{{tr|ore}}<ref name="ores" />及{{tr|bars}}<ref name="bars" />，且世界在{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1136|x_WorldName=&lt;{{tr|world}}的名字&gt;}}”
+
+{{eicons|1.4.0.1}} '''如果玩家尚未完成任何{{tr|the Angler}}任务：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1137}}”
+
+'''如果{{tr|Eye of Cthulhu}}和{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}均尚未被打败：'''
+* “{{gameText|LegacyDialog.208}}”
+* “{{gameText|LegacyDialog.209}}”
+
+'''如果{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}尚未被打败：'''
+* "{{gameText|LegacyDialog.210}}" {{note|small=y|paren=y|仅限在{{tr|Corrupt worlds}}中}}
+* “{{gameText|LegacyDialog.331}}” {{note|small=y|paren=y|仅限在{{tr|Crimson worlds}}中}}
+
+'''如果{{tr|the Eye of Cthulhu}}尚未被打败且{{tr|player}}的最大生命值低于 200：'''
+* “{{gameText|LegacyDialog.211}}”
+
+'''如果{{tr|the Eye of Cthulhu}}尚未被打败且{{tr|player}}的[[防御力]]最多只有 10：'''
+* “{{gameText|LegacyDialog.212}}”
+
+'''如果{{tr|the Eye of Cthulhu}}尚未被打败且玩家最大生命值至少有 200 且防御力大于 10：'''
+* "{{gameText|LegacyDialog.213}}" {{note|small=y|paren=y|{{eicons|1.4.0.1}} 仅限{{tr|Corrupt}}世界}}
+* {{eicons|1.4.0.1}} "{{gameText|LegacyDialog.404}}" {{note|small=y|paren=y|仅限{{tr|Crimson}}世界}}
+
+'''如果{{tr|the Eye of Cthulhu}}已被打败、{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}尚未被打败、且玩家的生命值少于 300：'''
+* “{{gameText|LegacyDialog.214}}”
+
+'''如果{{tr|Eye of Cthulhu}}已被打败、{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}尚未被打败、且玩家生命值至少有 300：'''
+* "{{gameText|LegacyDialog.215}}" {{note|small=y|paren=y|{{eicons|1.4.0.1}} 仅限{{tr|Corrupt}}世界}}
+* "{{gameText|LegacyDialog.216}}" {{note|small=y|paren=y|{{eicons|1.4.0.1}} 仅限{{tr|Corrupt}}世界}}
+* {{eicons|1.4.0.1}} "{{gameText|GuideHelpTextSpecific.Help_1140}}" {{note|small=y|paren=y|仅限{{tr|Crimson}}世界}}
+* {{eicons|1.4.0.1}} "{{gameText|GuideHelpTextSpecific.Help_1141}}" {{note|small=y|paren=y|仅限{{tr|Crimson}}世界}}
+
+'''如果{{tr|the Eye of Cthulhu}}和{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}已被打败，但{{tr|Skeletron}}尚未被打败：'''
+* “{{gameText|LegacyDialog.217}}”
+
+'''如果{{tr|the Eye of Cthulhu}}、{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}、和{{tr|Skeletron}}均已被打败、世界处于{{tr|pre-Hardmode}}、且玩家最大生命值少于 400：'''
+* “{{gameText|LegacyDialog.218}}”
+
+'''如果{{tr|the Eye of Cthulhu}}、{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}、和{{tr|Skeletron}}均已被打败、世界处于{{tr|pre-Hardmode}}、且玩家最大生命值至少有 400：'''
+* “{{gameText|LegacyDialog.219}}”
+* “{{gameText|LegacyDialog.220}}”
+* “{{gameText|LegacyDialog.221}}”
+
+{{eicons|1.4.0.1}} '''如果{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}已被打败且世界在{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1142}}”
+
+{{eicons|1.4.0.1}} '''如果{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}已被打败、[[{{tr|Queen Bee}}]]尚未被打败、且玩家至少有 300 生命值：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1143}}”
+
+{{eicons|1.4.3.3}} '''如果{{tr|the Eater of Worlds}}/{{tr|Brain of Cthulhu}}已被打败，但[[{{tr|Deerclops}}]]未被打败：'''
+* "{{gameText|GuideHelpTextSpecific.Help_1160}}"
+
+{{eicons|1.4.0.1}} '''如果玩家的{{tr|inventory}}中有至少一个[[{{tr|Desert Fossil}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1144}}”
+
+{{eicons|1.4.0.1}} '''如果玩家的{{tr|inventory}}中有至少一个[[{{tr|Hellstone}}]]且世界处于{{tr|pre-Hardmode}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1145}}”
+
+'''如果世界在[[{{tr|Hardmode}}]]中（且，在{{eversions|1.4.0.1|short=y}}中，[[{{tr|Plantera}}]]尚未被打败）：'''
+* “{{gameText|LegacyDialog.222}}” {{note|small=y|paren=y|仅限在{{tr|Corrupt worlds}}中}}
+* “{{gameText|LegacyDialog.401}}” {{note|small=y|paren=y|仅限在{{tr|Crimson worlds}}中}}
+* "{{gameText|LegacyDialog.223}}"
+
+'''如果[[{{tr|Wizard}}]]不存在且世界已在[[{{tr|Hardmode}}]]：'''
+* “{{gameText|LegacyDialog.203}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Steampunker}}]]不存在且世界在已在[[{{tr|Hardmode}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1101}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Cyborg}}]]不存在且全部三个[[{{tr|Mechanical bosses}}]] 都已被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1102}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Tax Collector}}]]不存在且世界在已在[[{{tr|Hardmode}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1105}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Pirate}}]]不存在且世界在已在[[{{tr|Hardmode}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1106}}”
+
+{{eicons|1.4.0.1}} '''如果[[{{tr|Truffle}}]]不存在且世界在已在[[{{tr|Hardmode}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1108}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、[[{{tr|Pirate Invasion}}]]尚未被打败、且玩家有至少 200 最大生命值：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1123}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|the player}}没有装备[[{{tr|Wings}}]]且当前未骑乘{{tr|mount}}{{#tag:ref|只检查激活的''骑乘''{{tr|mount}}；玩家可以在{{tr|inventory}}中任何位置放着{{tr|mount}}（包括[[{{tr|Inventory}}|{{tr|equipment menu}}]]中的{{tr|mount slot}}内），只要没有激活骑乘之。<ref name="help"/>|name=mount}}、且{{tr|Plantera}}尚未被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1146}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、至少已有三个[[{{tr|Altars}}]]被摧毁{{#tag:ref|此条件仅当世界的第三级别{{tr|Hardmode ore}}''类型''已确定后才能满足——确定类型是在第三个（或者在{{eil|drunk world}}中，第一个）[[{{tr|Altar}}]]被摧毁时发生的。打开{{tr|Hardmode}}[[{{tr|Crates}}]]来得到[[{{tr|Adamantite Ore}}]]或[[{{tr|Titanium Ore}}]]并'''不能'''设置{{tr|world}}的{{tr|Hardmode ore}}类型标记，因此也并不满足此条件。<ref name="help"/>{{source code ref|v=1.4.0.5|noref=y|method=Terraria.WorldGen.SmashAltar}}|name=altars}}、且并未打败任何{{$|Mechanical boss}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1147}}” {{note|small=y|paren=y|只在[[{{tr|Adamantite Ore}}|{{tr|Adamantite}}]]{{tr|worlds}}中}}
+* “{{gameText|GuideHelpTextSpecific.Help_1148}}” {{note|small=y|paren=y|只在[[{{tr|Titanium Ore}}|{{tr|Titanium}}]]{{tr|worlds}}中}}
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中且已打败任意{{tr|Mechanical boss}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1121}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、已打败任意{{tr|Mechanical boss}}、且玩家的{{tr|maximum health}}低于 500：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1149}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、全部三个{{tr|Mechanical bosses}} 均已被打败、且{{tr|Plantera}}尚未被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1150}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Plantera}}已被打败、[[{{tr|Golem}}]]尚未被打败、且玩家的{{tr|inventory}}中有至少一把[[{{tr|Temple Key}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1151}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Plantera}}已被打败, {{tr|Golem}}尚未被打败、且玩家的{{tr|inventory}}中没有{{tr|Temple Keys}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1152}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中且玩家的{{tr|inventory}}中有至少一把任意类型的{{$|Biome Key}}：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1153}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Golem}}已被打败、且[[{{tr|Martian Madness}}]]尚未被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1124}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中且尚未打败[[{{tr|Duke Fishron}}]]：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1154}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Golem}}已被打败、且[[{{tr|Mourning Wood}}]]和[[{{tr|Pumpking}}]]都尚未被打败:'''
+* “{{gameText|GuideHelpTextSpecific.Help_1155}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Golem}}已被打败、且[[{{tr|Everscream}}]]和[[{{tr|Santa-NK1}}]]和[[{{tr|Ice Queen}}]]都尚未被打败:'''
+
+* “{{gameText|GuideHelpTextSpecific.Help_1156}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、{{tr|Golem}}已被打败、[[{{tr|Mysterious Tablet}}]]存在、且[[{{tr|Moon Lord}}]]尚未被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1157}}”
+
+{{eicons|1.4.0.1}} '''如果世界在{{tr|Hardmode}}中、[[{{tr|Lunar Events}}]]处于活动状态、且{{tr|the Moon Lord}}尚未被打败：'''
+* “{{gameText|GuideHelpTextSpecific.Help_1158}}”
+
+{{collapse bottom}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+在提示之外，{{tr|the Guide}}还有各种话语：
+* “{{gameText|LegacyDialog.174|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.175}}”
+* “{{gameText|LegacyDialog.176}}”
+
+'''在[[{{tr|night}}]]：'''
+* “{{gameText|LegacyDialog.173}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|GuideSpecialText.Rain1}}”
+* “{{gameText|GuideSpecialText.Rain2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|GuideSpecialText.Windy1}}”
+* “{{gameText|GuideSpecialText.Windy2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|GuideSpecialText.Storm1}}”
+* “{{gameText|GuideSpecialText.Storm2}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.171}}”
+* “{{gameText|LegacyDialog.172}}”
+* “{{gameText|LegacyDialog.170}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|GuideSpecialText.Party}}”
+
+'''{{eil|Lantern Night}}期间：'''
+* “{{gameText|GuideSpecialText.Lantern1}}”{{note|（如果[[{{tr|Moon Lord}}]]尚未被打败）}}
+* “{{gameText|GuideSpecialText.Lantern2}}”{{note|（如果{{tr|Moon Lord}}已被打败）}}
+
+'''[[{{tr|Solar Eclipse}}]]期间：'''
+* “{{gameText|GuideSpecialText.Eclipse}}”
+
+'''{{eil|Slime Rain}}期间：'''
+* “{{gameText|GuideSpecialText.SlimeRain}}”
+
+'''如果存在{{eil|Tavernkeep}}：'''
+* “{{gameText|GuideHelpText.Help_1063|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''如果[[{{tr|Wall of Flesh}}]]已被打败：'''
+* “{{gameText|GuideChatter.Chatter_2}}”
+
+'''如果{{eil|Tax Collector}}存在、在{{tr|Hardmode}}下：'''
+* “{{gameText|GuideChatter.Chatter_1|x_TaxCollector=&lt;{{tr|Tax Collector}}的名字&gt;}}”
+
+'''当在{{eil|Graveyard}}{{tr|biome}}中：'''
+* “{{gameText|GuideSpecialText.Graveyard1}}”
+* “{{gameText|GuideSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Guide.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Guide.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Guide.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Guide.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Guide.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Guide.HateCrowded}}”
+
+'''当在[[{{tr|Forest}}]]中时：'''
+* “{{gameText|TownNPCMood_Guide.LikeBiome|x_BiomeName={{tr|the Forest}}}}”
+
+'''当在[[{{tr|Ocean}}]]中：'''
+* “{{gameText|TownNPCMood_Guide.DislikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Guide.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Clothier}}]]时：'''
+* “{{gameText|TownNPCMood_Guide.LikeNPC|x_NPCName=&lt;{{tr|Clothier}}的名字&gt;}}”
+
+'''靠近[[{{tr|Zoologist}}]]时：'''
+* “{{gameText|TownNPCMood_Guide.LikeNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Steampunker}}]]时：'''
+* “{{gameText|TownNPCMood_Guide.DislikeNPC|x_NPCName=&lt;{{tr|Steampunker}}的名字&gt;}}”
+
+'''靠近[[{{tr|Painter}}]]时：'''
+* “{{gameText|TownNPCMood_Guide.HateNPC|x_NPCName=&lt;{{tr|Painter}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Guide.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|the Guide}}的名字之一是 Andrew，这名字来自 Andrew Spinks（又叫 [[Redigit]]），''{{tr|Terraria}}''的主开发人员。如果有这个名字（{{icon/old-gen}}任意名字）的{{tr|Guide}}被击杀，会掉落[[{{tr|Green Cap}}]]。
+** 他的{{tr|Shimmer}}形态也参考了 Redigit。<ref>https://forums.terraria.org/index.php?threads/shimmered-npcs-i-dont-get-all-references.116054/post-2807538</ref>
+* Redigit 在 Reddit 的一次 Ask Me Anything（问答活动）中说他创造[[{{tr|Guide Voodoo Doll}}]]是为了让{{tr|players}}能向他发起报复，以报他总是开门之仇。<ref>[http://www.reddit.com/r/IAmA/comments/1n9bmz/i_am_redigit_creator_of_terraria_ask_me_anything/ccgjlj0 I am Redigit - Creator of Terraria. Ask Me Anything!] {{small|{{date|2013|09|27}}}}</ref>
+* 有两幅[[{{tr|paintings}}]]描绘了{{tr|guide}}，《{{tr|Guide Picasso}}》和《{{tr|The Creation of the Guide}}》。
+* {{lore|有个名叫“向导社”的组织，其目的是传承古老的传说与知识。{{tr|the Guide}}很可能是此结社的成员。}}
+** 这在游戏中在打败{{tr|Wall of Flesh}}后也有所引用，这之后每个新生成的{{tr|Guides}}都会说其前任突然起火燃烧。
+* 在{{3ds version}}中，{{tr|the Guide}}提到了[[{{tr|St. Patrick's Day}}]]{{tr|event}}，虽然它实际上并未实现。
+* 根据 Redigit 的说法，{{tr|the Guide}}是{{tr|the Wall of Flesh}}本尊{{discord ref|postedby=Redigit|channel=#journeys-end-chat|imagelink=https://i.imgur.com/fjelKj6.png|link=251072485095636994/699332402887000064/709622948683710484}}、[[{{tr|King Slime}}]]体内那个忍者的兄弟{{discord ref|postedby=Redigit|imagelink=https://preview.redd.it/9hlaf44n1qy41.jpg?width=960&crop=smart&auto=webp&s=8186e015f7cee4d248dbdbe6971ee1edd8676321}}、[[{{tr|nymph}}]]的曾孙{{discord ref|postedby=Redigit|link=251072485095636994/699332402887000064/709241138204377129}}、[[{{tr|Moon Lord}}]]的儿子{{discord ref|postedby=Redigit|channel=#journeys-end-chat|link=251072485095636994/699332402887000064/708506622103912561|date=2020/05/08}}。目前尚不清楚这是正典还是笑话，但第一条关系要比其他的更可靠些，尽管它和官方{{tr|lore}}有冲突。
+* {{tr|The Guide}}说他和{{tr|the Zoologist}}以及{{tr|the Clothier}}有很多共同之处。这可能是指他们都身具诅咒，会不受自身控制地出现某种变形（如果{{tr|the Guide}}确实就是{{tr|Wall of Flesh}}）。
+* 根据[[{{tr|Voodoo Demon}}#{{tr|Trivia}}|{{tr|Voodoo Demon}}的{{tr|Bestiary}}条目]]，{{tr|the Guide}}被称为“天选者”，其“灵魂与世界的守卫者本身相连”。这可能指的是{{tr|Wall of Flesh}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|更新了一些过时的{{tr|Guide}}文本（例如和[[{{tr|Meteorite}}]]相关的）。}}
+{{history|Desktop 1.4.0.1|
+* 全面修改了{{tr|Guide}}的帮助对话，添加了到[[{{tr|Lunar Events}}]]为止一路上内容的提示和技巧、引见了从 1.1 开始所有新 {{tr|NPCs}}、替换了过时的信息、并将一些之前有错误的话带回正轨。
+** 修正了{{tr|Fallen Stars}}的帮助话语文本中的错别字（“usefull”改为“useful”）。
+** 现在如果{{tr|the Guide}}在接触[[{{tr|lava}}]]的情况下死在[[{{tr|the Underworld}}]]中也能召唤出[[{{tr|Wall of Flesh}}]]。}}
+{{history|Desktop 1.3.1.1|修正了{{tr|the Guide}}的帮助提示未能正确确认[[{{tr|Demolitionist}}]]和[[{{tr|Goblin Tinkerer}}]]的问题。}}
+{{history|Desktop 1.3.0.1|
+** 现在会向附近的{{tr|enemies}}射[[{{tr|Arrows}}]]。
+** 外观更新。}}
+{{history|Desktop 1.2.4|根据投诉改进了两条{{tr|the guide}}的提示的可读性。}}
+{{history|Desktop 1.2.3|
+** 修正了{{tr|guide}}在按键设置已改变的情况下他依然会告诉玩家按 ESC 打开{{tr|inventory}}的 Bug。
+** 修正{{tr|Guide}}可能在玩家没有任何[[{{tr|Lens}}]]时谈论其制作的 Bug。
+** 修正{{tr|Guide}}会在[[{{tr|The Crimson}}|{{tr|Crimson}}]]的世界里谈论[[{{tr|Shadow Orb}}]]和[[{{tr|The Corruption}}|{{tr|Corruption}}]]的 Bug。
+** 修正{{tr|Guide}}会一直谈论[[{{tr|Shadow Orb}}]]直到玩家打败[[{{tr|Skeletron}}]]（而非[[{{tr|Eater of Worlds}}]] / [[{{tr|Brain of Cthulhu}}]]）的 Bug。}}
+{{history|Desktop 1.2.0.2|
+**{{tr|The Guide}}不再说玩家需要[[{{tr|hammer}}]]来打破[[{{tr|Life Crystal}}]]了。
+** {{tr|The Guide}}不再说玩家需要 10 个[[{{tr|Fallen Star}}]]来制造[[{{tr|Mana Crystal}}]]。}}
+{{history|Desktop 1.2|如果名字为 Andrew 则死亡时会掉落[[{{tr|Green Cap}}]]。}}
+{{history|Desktop 1.1|现在在他生成时会随机赋予名字。他的死亡会用其名字报告。其他 {{tr|NPC}} 也会在他们各自的对话中使用此名字。}}
+{{history|Desktop 1.0.5|
+** 当向其展示[[{{tr|item}}]]时，{{tr|the Guide}}可以告诉玩家可以用此物品[[{{tr|craft}}]]出什么。
+** {{tr|Players}}现在装备上[[{{tr|Guide Voodoo Doll}}]]时可以攻击{{tr|Guide}}。}}
+{{history|Desktop 1.0.3|和所有其他 [[{{tr|NPC}}]] 一样，他现在会被[[{{tr|enemies}}]]杀死。}}
+{{history|Desktop 1.0.1|{{tr|Guide}}现在会解说[[{{tr|hammer}}]]的用法以及它与[[{{tr|wall}}]]和放置的物体之间的互动关系。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在会向附近的{{tr|enemies}}射{{tr|Arrows}}。
+** 现在只有名叫 Andrew 的{{tr|Guides}}才会掉落{{tr|the Green Cap}}。}}
+{{history|Console 1.07|根据投诉改进了两条{{tr|the guide}}的提示的可读性。}}
+{{history|Console 1.02|
+** 死亡时会掉落{{tr|the Green Cap}}。<!-- before 1.0.750.0 the Green Cap dropped from Guides with any name-->
+** {{tr|The Guide}}不再说玩家需要{{tr|hammer}}来打破{{tr|Life Crystal}}了。
+** {{tr|The Guide}}不再说玩家需要 10 个{{tr|Fallen Star}}来制造{{tr|Mana Crystal}}。}}
+{{history|Console-Release|Introduced=y|随{{tr|Desktop}} 1.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|现在会向附近的{{tr|enemies}}射{{tr|Arrows}}。}}
+{{history|Mobile 1.2.11212|根据投诉改进了两条{{tr|the guide}}的提示的可读性。}}
+{{history|Mobile 1.2.6508|
+** 如果名字为 Andrew 则死亡时会掉落{{tr|the Green Cap}}。
+** {{tr|The Guide}}不再说玩家需要{{tr|hammer}}来打破{{tr|Life Crystal}}了。
+** {{tr|The Guide}}不再说玩家需要 10 个{{tr|Fallen Star}}来制造{{tr|Mana Crystal}}。}}
+{{history|Mobile 1.1.5536|{{tr|The Guide}}死亡时会报道其名字，其他 {{tr|NPC}} 也会引用名字。}}
+{{history|Mobile-Release|Introduced=y|随{{tr|Desktop}} 1.0.5 的更改引入，且生成时会使用随机名字{{verify}}。}}
+{{history|3DS-Release|Introduced=y|随{{tr|Desktop}} 1.2{{verify}}的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Guide}}

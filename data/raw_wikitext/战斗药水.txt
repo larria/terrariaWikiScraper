@@ -1,0 +1,43 @@
+{{item infobox
+| type = Potion
+| auto = 300
+}}
+
+'''{{tr|Battle Potion}}'''是种喝下之后会给予'''{{tr|Battle}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。此{{tr|buff}}会让[[{{tr|enemies}}]]和[[{{tr|critter}}]]的[[{{tr|NPC spawning}}|{{tr|spawn rate}}]]翻倍，并让屏幕上同时能存在的最大{{tr|enemies}}数量翻倍。{{potionlength|7 分钟}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Battle Potion|expectedrows=2}}
+
+== 备注 ==
+* 此效果和其他诸如[[{{tr|Water Candle}}]]等允许手工更改{{tr|spawn rates}}的物品叠加。同样，像[[{{tr|Sunflower}}]]或[[{{tr|Calming Potion}}]]等物品也降低此效果。例如，同时使用{{tr|Battle Potion}}和{{tr|Calming Potion}}会导致{{tr|spawn rate}}只增加 54%（而非 100%，因为{{tr|Calming Potion}}的 -23%）<!-- 效果是乘算叠加的而非加算 -->并且屏幕上的最大{{tr|enemies}}数只会提升 40%（而非 100%，因为{{tr|the Calming Potion}}的 -30%）。
+* {{tr|Spawn rate}}效果，比如{{tr|Battle Potions}}（和{{tr|Water Candles}}）可用于提升没有预设{{tr|spawn rates}}的[[{{tr|event}}]]的{{tr|spawn rates}}，比如[[{{tr|Blood Moon}}]]和[[{{tr|Solar Eclipse}}]]。
+* {{tr|Battle Potions}}和{{tr|Water Candles}}''不能''用来提高诸如[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]等{{tr|events}}的{{tr|spawn rates}}。这些{{tr|events}}的{{tr|The spawn rates}}会覆盖{{tr|spawn rate}}效果。{{source code ref|v=1.4.0.5|method=Terraria.NPC.SpawnNPC}}
+* {{tr|Calming Potion}}具有和{{tr|Battle Potion}}相反的效果，但因为它们都是{{tr|potions}}，都视为[[{{tr|buffs}}]]，所以可以提前取消。相反，{{tr|Water Candle}}的效果归类为[[{{tr|debuff}}]]。
+* {{tr|The Battle Potion}}会提高 [[{{tr|NPCs}}]] 的{{tr|spawn rates}}，诸如[[{{tr|Skeleton Merchant}}]]和受缚[[{{tr|Goblin Tinkerer}}]]、受缚[[{{tr|Mechanic}}]]、和受缚[[{{tr|Wizard}}]]。
+* 效果在玩家之间也会叠加，因为每个玩家都会生成自己的 {{tr|NPCs}}。它还增加了可生成{{tr|enemies}}的最大数量，使得多名玩家可以喝掉它们并以比预期快得多的速度生成怪。
+
+== 小贴士 ==
+* 使用{{tr|potion}}时，在进入[[{{tr|Dungeon}}]]需要小心，进入[[{{tr|Hardmode Dungeon}}]]更甚。{{tr|Spawn rates}}可能会失控，即使是最优秀的玩家都难以应对。
+** {{tr|Battle Potions}}可用于在可受其影响的{{tr|events}}中刷稀有掉落物，比如来自[[{{tr|Blood Moon}}]]的[[{{tr|Money Trough}}]]、来自[[{{tr|Solar Eclipse}}]]的[[{{tr|Broken Hero Sword}}]]、和来自[[{{tr|Pirate Invasion}}]]的很多物品。
+* {{tr|The Battle Potion}}可用于增加某些稀有{{tr|enemies}}的生成几率，例如{{eil|Martian Probe}}、[[{{tr|Truffle Worm}}]]和{{eil|Prismatic Lacewing}}。
+* 不应在 {{tr|Boss}} 战期间使用{{tr|Battle Potions}}，因为在 {{tr|Boss}} 存在时数量显著提高的{{tr|enemies}}（或罕见但非常危险或恼人的{{tr|enemies}}）能轻松地淹没玩家。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|外观变化。}}
+{{history|Desktop 1.2.0.2|[[{{tr|Vertebra}}]]现在可以作为[[{{tr|Rotten Chunk}}]]的替代品。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-buff = yes
+}}
+
+{{language info|en=Battle Potion}}

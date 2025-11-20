@@ -1,0 +1,120 @@
+{{item infobox
+| pickreq = 200
+| type = Ore
+| auto = 947
+| width = 1 | height = 1
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} / {{cc|50}} {{eicons|1.3.0.1|invert=y|small=y}}
+| tags =  plunder / hardmode
+}}
+[[File:Site-logo-jungle.png|frame|right|在[[{{tr|Official Terraria Forums}}]]的《{{tr|Terraria}}》 [[{{tr|logo}}]]（{{tr|Jungle}}样式）中的{{tr|Chlorophyte Ore}}。]]
+
+'''{{tr|Chlorophyte Ore}}'''是一种[[{{tr|Hardmode}}]][[{{tr|ore}}]]，可在[[{{tr|Underground Jungle}}]]找到，用于制作[[{{tr|Chlorophyte Bar}}]]。{{tr|Hardmode}}开始后，在[[{{tr|Jungle grass}}]]附近的[[{{tr|Mud Block}}]]（即：通常为仅在{{tr|Underground Jungle}}中）会开始将自身转化为{{tr|Chlorophyte Ore}}。采挖它需要有至少 200% [[{{tr|pickaxe power}}]]的[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]，这意味着至少需要[[{{tr|Pickaxe Axe}}]]或[[{{tr|Drax}}]]，其{{tr|materials}}需要击败所有三个[[{{tr|mechanical bosses}}]] 才能获得（不过在{{eversions|1.3.0.1|invert=y|old-gen=n|short}}中，{{tr|the Drax}}有时可在[[{{tr|Shadow Chest}}]]中找到）。
+
+{{tr|Chlorophyte Ore}}自身会通过将相邻的{{tr|Mud block and Jungle grass}}转换为更多的{{tr|Chlorophyte Ore}}的方式缓慢地蔓延，随时间成长为较大的矿脉。[[{{tr|Chlorophyte Brick}}]]也具有此能力。这一生长特性使得{{tr|Chlorophyte Ore}}可被“重新种植”，以人工种植的方式获得近乎可再生的{{tr|Chlorophyte}}来源。在{{eversions|1.3.0.1}}中，{{tr|Chlorophyte}}也会通过将附近的[[{{tr|Dirt Block}}]]转化为{{tr|Mud Block}}的方式蔓延，以及将[[{{tr|Corrupt grass}}]]、[[{{tr|Crimson grass}}]]、[[{{tr|Hallowed grass}}]]、和普通的[[{{tr|grass}}]]块转化为{{tr|Jungle grass}}。
+
+只有（在常规{{tr|world}}中）在[[{{tr|Underground}}]]{{tr|layer}}的下半部分及以下的{{tr|Chlorophyte Ore}}会蔓延并转换{{tr|blocks}}。它只能向紧邻的{{tr|tiles}}蔓延（且需要附近没有[[#Limit|太多的]]{{tr|Chlorophyte}}），此外最多只能转换 5 格内的{{tr|tile}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chlorophyte Ore|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=Chlorophyte Ore|expectedrows=3}}
+
+== 备注 ==
+* {{tr|Chlorophyte}}只会在[[{{tr|Hardmode}}]]{{tr|world}}中蔓延。
+* {{anchor|Limit}}在一个给定{{tr|tile}}（天然生成时，那个随机的{{tr|Mud Block or Jungle Grass Block}}；或是在蔓延时作为源{{tr|block}}的{{tr|Chlorophyte Ore}}或[[{{tr|Chlorophyte Brick}}]]{{source code ref|name=hardUpdateWorld|v=1.4.4.9|method=Terraria.WorldGen.hardUpdateWorld}}）附近的{{tr|Chlorophyte}}上限检查包括两部分。每个部分中，游戏会检查以该给定{{tr|tile}}为中心的矩形区域内的{{tr|Chlorophyte}}''矿''。如果已存在的{{tr|Chlorophyte Ores}}数量不超过{{tr|ore}}上限，则检查被视为“通过”。如果两个检查都通过了，则视为附近没有“太多的”{{tr|Chlorophyte Ore}}，{{tr|Chlorophyte}}将能够蔓延到该给定{{tr|tile}}上。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.Chlorophyte}}
+{|class="terraria lined" style="text-align:center"
+! rowspan=3 | 检查
+! colspan=4 | 常规{{tr|world}}
+! rowspan=2 colspan=2 | {{eil|Don't dig up}} 或 {{eil|Get fixed boi}}<br/>{{note|paren=y|任何{{tr|layer}}}}
+|-
+! colspan=2 | [[{{tr|Cavern}}]]{{tr|layer}}以下
+! colspan=2 | [[{{tr|Cavern}}]]{{tr|layer}}以上
+|-
+! {{tr|Ore}}上限<br/>（格）
+! 区域大小<br/>(格²)
+! {{tr|Ore}}上限<br/>（格）
+! 区域大小<br/>(格²)
+! {{tr|Ore}}上限<br/>（格）
+! 区域大小<br/>(格²)
+|-
+! 第 1 部分<!--
+Regular - below cavern-->
+| 40
+| 71×71<!--
+Regular - above cavern-->
+| 20
+| 105×105<!--
+Remix - anywhere-->
+| 45
+| 63×63
+|-
+|-
+! 第 2 部分<!--
+Regular - below cavern-->
+| 130
+| 171×171<!--
+Regular - above cavern-->
+| 65
+| 255×255<!--
+Remix - anywhere-->
+| 1950
+| 155×155
+|}
+* {{tr|Chlorophyte Ore}}可以蔓延到[[{{tr|Hammers}}|被锤击]]、[[{{tr|Actuator}}|被致动]]、和[[{{tr|Paints}}|被涂{{tr|Paints}}]]的{{tr|blocks}}上。这会让{{tr|Chlorophyte Ore}}也变为被锤击、致动、涂{{tr|Paints}}的状态。
+* 对于自然生成''新''的{{tr|Chlorophyte Ore}}时，位于{{tr|Underground}}{{tr|layer}}的下半部分及以下（或者，{{tr|Don't dig up or Get fixed boi}} {{tr|world}}中，在任何{{tr|layer}}）的每格{{tr|Jungle grass}}会周期性地有几率将以该{{tr|Jungle grass}}格为中心，11×11 矩形范围内的一个随机{{tr|Mud Block}}转化为{{tr|Chlorophyte Ore}}，只要周围没有[[#Limit|太多的]]{{tr|Chlorophyte Ore}}，且那个{{tr|Mud Block}}正上方没有{{tr|tree}}、[[{{tr|Plantera's Bulb}}]]、或[[{{tr|Life Fruit}}]]。<ref name="hardUpdateWorld"/>
+* {{tr|Chlorophyte Ore}}的蔓延机制使得[[{{tr|Underground Jungle}}]]对[[{{tr|The Corruption}}]]和[[{{tr|The Crimson}}]]的破坏性效果有一定抵抗性，尤其在{{eversions|1.3.0.1}}中（见[[#Protection|此处]]）。然而，这些{{tr|biomes}}仍然会通过[[{{tr|Stone Block}}]]蔓延，且更重要的是，在{{eversions|1.3.0.1|invert=y}}中，{{tr|Chlorophyte Ore}}不会重新生长或转换其它{{tr|Jungle}}特性（如{{tr|grass}}或[[{{tr|trees}}]]）。
+* 虽然[[{{tr|Mushroom grass}}]]{{tr|blocks}}也基于{{tr|Mud Block}}，{{tr|Chlorophyte Ore}}并不能转换它们。
+* 虽然其{{tr|tooltip}}和{{tr|achievement}}中有对应表述，但它无需光照就能生长。然而，它在暴露在光照之下时确实会略微发绿。
+* {{tr|Chlorophyte Ore}}和[[{{tr|Chlorophyte Brick}}]]会限制它们附近的[[{{tr|evil biome}}]]的蔓延。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.nearbyChlorophyte}}见[[{{tr|Biome spread|link=y}}#{{tr|Notes}}|{{tr|biome spread}}]]获取更多信息。
+
+== 成就 ==
+{{achievement|name=Photosynthesis}}
+
+== 小贴士 ==
+<!--{{for|深入的种植技巧|指南:刷资源#{{tr|Chlorophyte ore}}|display=指南:种植{{tr|Chlorophyte ore}}}}-->
+* [[{{tr|Spelunker Potion}}]]可用于更快地寻找{{tr|Chlorophyte}}。
+* 当采掘{{tr|Chlorophyte ore}}时，建议忽略较小的矿脉。将它们留在原地继续生长可以带来长期内稳定、可再生的{{tr|Chlorophyte ore}}供应。当挖掘大矿脉时，建议留下 1–2 个{{tr|Chlorophyte}}不挖掘，以使其能够重新生长为更多的{{tr|Chlorophyte}}。
+* 在人工种植叶绿矿时可以使用[[{{tr|Chlorophyte Brick}}]]作为种子，叶绿砖具有同样的生长能力并且不会被矿石上限检查。
+* 如果出售{{tr|bars}}而非{{tr|ore}}，每块{{tr|bars}}会多产生 {{eicons|1.4.1.2}} {{sc|15}} / {{eicons|1.3.0.1|invert=y}} {{sc|87}}。
+
+== 花絮 ==
+* {{tr|Chlorophyte}}（Chlorophyte）这一名称派生于{{维基百科|chlorophyll}}（叶绿素），用于光合作用的色素；以及常见的岩石后缀 ''{{wiktionary|-ite}}''。
+** 后缀 ''{{wiktionary|-phyte}}'' 也表明了和有机物或植物成分的关联。
+* {{tr|Chlorophyte Ore}}在{{eversions|Dirt Bomb|short}}中完全可再生，这是由于[[{{tr|Dirt Bomb}}]]能够用来复制[[{{tr|Dirt Block}}]]（因此也能复制{{tr|Mud Blocks}}）。
+* {{维基百科|Chlorophyta|t=绿藻门}}是 green algae（绿藻类）的一个分支，非正式地被称为 chlorophytes（绿藻）。
+* 其放置时的外观很像某些植物细胞。
+
+== 历史 ==
+{{history|Desktop 1.4.4|对感染的保护能力稍微增强了。它现在可以净化更多种类的感染图格，例如[[{{tr|Sand}}]]和[[{{tr|Sandstone}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|sell value}}由 {{sc|6}} 提升至 {{sc|15}}。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Chlorophyte Ore}}现在能生长为更大矿脉。
+** {{anchor|Protection}}{{tr|Chlorophyte Ore}}现在能够将[[{{tr|The Crimson}}|{{tr|Crimson}}]]和[[{{tr|The Corruption}}|{{tr|Corruption}}]]{{tr|grass}}转换回普通[[{{tr|Grass}}]]，并将[[{{tr|Dirt}}]]转换为[[{{tr|Mud}}]]。
+** 放置时的{{tr|sprite updated.}}旧外观为 [[File:Chlorophyte Ore (placed) (old).png|link=]]
+** 现在可制作成[[{{tr|Chlorophyte Brick}}]]。
+** {{tr|Sell price}}由 {{cc|50}} 提升至 {{sc|6}}。}}
+{{history|Desktop 1.2.3|{{tr|stack limit}}由 99 提升至 999，但更加罕见且生长得更慢。}}
+{{history|Desktop 1.2.0.3|
+** [[{{tr|Chlorophyte Drill}}]]重新能够采挖{{tr|Chlorophyte Ore}}，因为其[[{{tr|pickaxe power}}]]由 190% 提升至 200%。
+** [[{{tr|Chlorophyte Pickaxe}}]]现在能够采挖{{tr|Chlorophyte Ore}}。}}
+{{history|Desktop 1.2.0.2|
+** 不再能被[[{{tr|Explosives (class)}}]]采挖。
+** 不再能被{{tr|Chlorophyte Drill}}采挖，其{{tr|pickaxe power}}由 210% 降低至 190%。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Chlorophyte}}
+{{Master Template Consumables
+| show-ore = yes
+}}
+
+{{language info|en=Chlorophyte Ore}}

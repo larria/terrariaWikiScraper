@@ -1,0 +1,34 @@
+{{legacy nav tab}}
+{{exclusive|1.2.4}}
+{{item infobox
+| type = Potion
+| auto = 2325
+| tags = loot
+}}
+
+'''{{tr|Builder Potion}}'''是一种[[{{tr|buff potion}}]]，使用后会给予'''{{tr|Builder}}'''[[{{tr|buff}}]]。此{{tr|buff}}会将{{tr|tile}}和{{tr|wall}}的放置速度提升 25%，并将放置范围增加 1 格。{{buffduration}}
+
+除了制作之外，{{tr|Builder Potions}}还可在[[{{tr|pot}}]]和[[{{tr|chests}}]]中找到。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Builder Potion|expectedrows=1}}
+
+== 备注 ==
+* {{tr|tile}}/{{tr|wall}}的放置速度的提高还能分别和来自[[{{tr|Brick Layer}}]]及[[{{tr|Portable Cement Mixer}}]]，或[[{{tr|Architect Gizmo Pack}}]]的奖励叠加，总共能提升 75%。
+* {{tr|The Builder buff}}的放置范围提升和[[{{tr|Toolbelt}}]]与[[{{tr|Toolbox}}]]都能叠加，总共能增加 3 格。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 30 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|the buff duration}}由 15 {{tr|minutes}}提升至 45 {{tr|minutes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Builder Potion}}

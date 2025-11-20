@@ -1,0 +1,94 @@
+'''{{tr|Knockback}}'''是[[《{{tr|Terraria}}》]]中的基本机制之一，玩家与{{tr|enemies}}会沿着攻击的相反方向被推开。大部分{{tr|weapons}}和会造成伤害的环境物体也会造成不同程度的{{tr|knockback}}。一些{{tr|enemies}}对{{tr|knockback}}免疫，特别是 [[{{tr|Boss}}]] 和其他能穿过{{tr|blocks}}的{{tr|enemies}}，比如[[:Category:{{tr|Worm AI NPCs}}|{{tr|Worms}}]]和[[{{tr|Man Eater}}]]。一些{{tr|enemies}}也有不同程度的{{tr|knockback resistance}}。
+
+装备[[{{tr|Cobalt Shield}}]]、[[{{tr|Paladin's Shield}}]]或其任何升级能让玩家免疫{{tr|knockback}}。用任意[[{{tr|Hooks}}]]抓在任意表面上也能让玩家免疫击退。{{eicons|1.4.1}}穿着全套[[{{tr|Gladiator armor}}]]也会为玩家提供{{tr|knockback}}免疫。
+
+玩家造成的{{tr|knockback}}可以被各种[[{{tr|modifiers}}]]、[[{{tr|Titan Glove}}]][[{{tr|accessory}}]]及其升级、[[{{tr|Titan Potion}}]]、和[[{{tr|Shroomite armor}}]]与{{eil|Vortex armor}}的潜行效果提高。[[{{tr|Critical hit}}]]会将造成的{{tr|knockback}}提高 40%。受[[{{tr|Cursed Inferno}}]]影响的{{tr|Enemies}}受到的{{tr|knockback}}增加 10%。
+
+== 击退值 ==
+{| class="terraria"
+! 值 !! 游戏内文本
+|-
+| align=center | 0 || {{gameText|LegacyTooltip.14}}
+|-
+| align=center | ≤ 1.5 || {{gameText|LegacyTooltip.15}}
+|-
+| align=center | ≤ 3 || {{gameText|LegacyTooltip.16}}
+|-
+| align=center | ≤ 4 || {{gameText|LegacyTooltip.17}}
+|-
+| align=center | ≤ 6 || {{gameText|LegacyTooltip.18}}
+|-
+| align=center | ≤ 7 || {{gameText|LegacyTooltip.19}}
+|-
+| align=center | ≤ 9 || {{gameText|LegacyTooltip.20}}
+|-
+| align=center | ≤ 11 || {{gameText|LegacyTooltip.21}}
+|-
+| align=center | > 11 || {{gameText|LegacyTooltip.22}}
+|}
+
+== 公式 ==
+{{tr|enemy}}被有{{tr|knockback}}的{{tr|weapon}}击中时，会进行下列步骤的计算。{{source code ref|v=1.4.3.6|method=Terraria.NPC.StrikeNPC}}
+
+首先，计算{{tr|knockback}}抗性：
+ {{tr|knockBack}} = {{tr|knockBack}} * (1 - {{tr|enemy Knockback Resistance}})
+
+然后若目标受到[[{{tr|Cursed Inferno}}]]影响，则将{{tr|knockback}}乘以 110%：
+ 如果 {{tr|Cursed Inferno}} 则 {{tr|knockBack}} = {{tr|knockBack}} * 1.1
+
+然后（若需要）为其施加上限：<ref>下面几行是逐行依次计算的。例如，用{{tr|Slap Hand}}攻击未受{{tr|Cursed Inferno}}影响的目标，且不造成{{tr|critical hit}}，最终{{tr|knockback}}为 14.9168。不考虑{{tr|enemy}}本身的属性，这一数值被降低了四次。</ref>
+ 如果 {{tr|knockBack}} > 8.0 则 {{tr|knockBack}} = 8 + ({{tr|knockBack}} - 8.0) * 0.9
+ 如果 {{tr|knockBack}} > 10.0 则 {{tr|knockBack}} = 10 + ({{tr|knockBack}} - 10.0) * 0.8
+ 如果 {{tr|knockBack}} > 12.0 则 {{tr|knockBack}} = 12 + ({{tr|knockBack}} - 12.0) * 0.7
+ 如果 {{tr|knockBack}} > 14.0 则 {{tr|knockBack}} = 14 + ({{tr|knockBack}} - 14.0) * 0.6
+ 如果 {{tr|knockBack}} > 16.0 则 {{tr|knockBack}} = 16
+
+然后，若是{{tr|critical hit}}，将{{tr|knockback}}乘以 140%：
+ 如果 暴击 则 {{tr|knockBack}} = {{tr|knockBack}} * 1.4
+
+最终，计算得出的{{tr|knockback}}数值被转化为速度。取决于此击造成的伤害是否大于{{tr|enemy}}的{{tr|maximum health}}的 10% / {{expert|15%}}，会有不同的修正系数，此外对于[[{{tr|Snow Flinx}}]]还有一个特殊的对于竖直速度的 1.5 倍的修正系数。
+
+== 免疫的敌怪 ==
+* 所有 [[{{tr|Bosses}}]] 及其{{tr|minions}}，第二阶段的[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Servant of Cthulhu}}]]、和{{eicons|1.4.4|invert=y}}[[{{tr|Golem}}]]的拳头除外。
+* 所有[[:Category:{{tr|Plant AI NPCs}}|{{tr|plants}}]]，[[{{tr|Angry Trapper}}]]和[[{{tr|Clinger}}]]除外。
+* 所有[[:Category:{{tr|Worm AI NPCs}}|{{tr|Worm AI}} 的{{tr|enemies}}]]。
+其他：
+* [[{{tr|Ancient Vision}}]]
+* [[{{tr|Antlion}}]]
+* [[{{tr|Blazing Wheel}}]]
+* [[{{tr|Desert Spirit}}]]
+* [[{{tr|Drakin}}]]（2 级 / 3 级）
+* [[{{tr|Dungeon Guardian}}]]
+* [[{{tr|Gray Grunt}}]]
+* [[{{tr|Headless Horseman}}]]
+* [[{{tr|Lihzahrd (NPC)}}|{{tr|Lihzahrd}}]]（第二形态）
+* [[{{tr|Lunatic Devote}}]]
+* [[{{tr|Martian Officer}}]]（{{tr|Bubble Shield}}）
+* [[{{tr|Martian Probe}}]]
+* [[{{tr|Martian Walker}}]]
+* [[{{tr|Paladin}}]]
+* [[{{tr|Pirate Captain}}]]
+* [[{{tr|Shadowflame Apparation}}]]
+* [[{{tr|Spike Ball}}]]
+* [[{{tr|Sroller}}]]
+* [[{{tr|The Possessed}}]]（在{{tr|walls}}上）
+* [[{{tr|Tesla Turret}}]]
+* [[{{tr|Wandering Eye Fish}}]]
+* [[{{tr|Yeti}}]]
+* [[{{tr|Zombie Merman}}]]
+
+== 造成最高击退的武器 ==
+[[{{tr|Slap Hand}}]]具有最高的''显示''{{tr|base knockback}}值({{iteminfo|Slap Hand|knockback}})，其次则是{{eil|Shadow Jousting Lance}}({{iteminfo|Shadow Jousting Lance|knockback}})，{{eil|Hallowed Jousting Lance}}({{iteminfo|Hallowed Jousting Lance|knockback}})，{{eil|Jousting Lance}}({{iteminfo|Jousting Lance|knockback}})，[[{{tr|Golem Fist}}]]({{iteminfo|Golem Fist|knockback}})，{{eil|Morning Star}}({{iteminfo|Morning Star|knockback}})，{{eil|Celebration Mk2}}({{iteminfo|Celebration Mk2|knockback}})和[[{{tr|Thorns Potion}}]]，它在效果触发时会造成 10 {{tr|knockback}}。
+
+{{tr|Jousting Lances}}有可能造成更多的{{tr|knockback}}，因为它们的{{tr|knockback}}决定自{{tr|player}}的{{tr|speed}}。
+
+[[{{tr|Gray Zapinator}}|灰]]和[[{{tr|Orange Zapinator}}]]能够成为造成游戏中最高{{tr|knockback}}的{{tr|weapon}}。它们的{{tr|laser beams}}在命中{{tr|enemy}}后，有几率将它们的{{tr|knockback}}乘以 9。<!-- actually 10, but knockback is also decreased by 10% upon every hit -->依靠着{{iteminfo|Gray Zapinator|knockback}}的{{tr|base knockback}}，在命中 1 次({{chance|1/20}}几率)后，可以达到{{#expr:{{iteminfo|Gray Zapinator|knockback}}*9}}{{tr|knockback}}，在命中 2 次（{{chance|1/400}}几率）后，可以达到{{#expr:{{iteminfo|Gray Zapinator|knockback}}*9*9}} {{tr|knockback}}，以此类推。{{tr|laser beam}}的最高可能击退值(使用未经加成的{{tr|base knockback}})为{{formatnum:{{#expr:{{iteminfo|Gray Zapinator|knockback}}*9^7}}}}，在命中 7 次后达到({{tr|Laser beam}}在第 8 次命中后消失)。然而，这种情况发生的几率非常低，为 {{formatnum:{{#expr:1/20^7}}}}。
+
+所有{{tr|weapons}}的{{tr|The knockback}}值可以在[[{{tr|list of weapons}}]]处查看。注意在计入{{tr|enemy}}的{{tr|knockback resistance}}后，{{tr|knockback}}的上限为 16（{{tr|critical hits}}则为 22.4）。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Knockback}}

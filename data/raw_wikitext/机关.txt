@@ -1,0 +1,257 @@
+'''{{tr|Traps}}'''是会对[[{{tr|player}}]]和[[{{tr|enemies}}]]造成伤害的可放置物品。它们大多是在[[{{tr|Underground}}]]及[[{{tr|Caverns}}]]自然产生的[[{{tr|mechanisms}}]]。最初发现它们时，它们[[{{tr|wired}}]]到触发器（如[[{{tr|Pressure Plate}}]]），会伤害无意间激活它们的玩家。{{tr|Trap}}可以由玩家收集并用于[[{{tr|arena}}]]，通常对于[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]这样的{{tr|events}}中的战斗至关重要。
+
+[[{{tr|Spike}}]]和[[{{tr|Wooden Spike}}]]是例外，因为它们并非{{tr|mechanism}}，而是会对接触者造成伤害的固定放置物。{{tr|Land Mine}}类似于{{tr|trap}}，但永远不会自然生成，而在[[{{tr|Hardmode}}]]中可以购买。
+
+所有{{tr|trap}}和它们的触发器都会在[[{{tr|Dangersense Potion}}|{{tr|Dangersense}}]]{{tr|buff}}下发光，这使得玩家可以避免并收集它们。如果玩家手里正拿着一个和[[{{tr|mechanism}}]]有关的物品，比如{{tr|Pressure Plate}}，那么{{tr|trap}}的{{tr|wire}}就能被看见。如果玩家{{tr|inventory}}中有{{eil|Mechanical Lens}}或{{eil|The Grand Design}}，甚至可以在黑暗中看见{{tr|wire}}。
+
+所有的伤害性{{tr|traps}}（[[{{tr|Land Mine}}]]除外）仅能对来自{{eil|Old One's Army}}[[{{tr|event}}]]的{{tr|enemies}}造成基础{{tr|damage}}的 50%。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+
+== 可重用的{{tr|Traps}} ==
+可重用的{{tr|traps}}通常会发射锐利的{{tr|projectile}}。它们在几秒钟的冷却后可以无限次触发。
+
+=== {{item|Skeleton Statue|image=Skeleton Statue.png|size=15px|link={{tr|Statue}}#{{tr|Enemy statues}}|{{tr|Statue Traps}}}} ===
+这些{{tr|Traps}}由连接至[[{{tr|Red Pressure Plate}}]]或[[{{tr|Green Pressure Plate}}]]的{{tr|enemy}}[[{{tr|statues}}]]构成的。由于这类{{tr|pressure plates}}可以被{{tr|enemies}}触发，从{{tr|statue}}生成的{{tr|enemies}}有可能再次触发{{tr|statue}}，从而不断地生成{{tr|enemies}}，直到达到[[{{tr|Statue|link=y}}#生成限制|{{tr|statue}}的生成限制]]。包含的{{tr|The statue}}会是[[{{tr|Slime Statue}}]]、[[{{tr|Bat Statue}}]]、[[{{tr|Skeleton Statue}}]]、或[[{{tr|Crab Statue}}]]中的一种。{{source code ref|v=1.4.4.9|field=Terraria.WorldBuilding.GenVars.StatuesWithTraps}}
+
+在罕见的情况下，自然生成的{{tr|statues}}可与其他{{tr|traps}}的{{tr|wires}}重叠，意外地形成{{tr|statue trap}}。
+
+=== {{item|Dart Trap|size=15px|Dart Traps}} ===
+{{tr|Dart Trap}}在被触发时会发射一支类似[[{{tr|Wooden Arrow}}]]的{{tr|dart}}，造成[[{{tr|poisoned}}]]。自然生成时，它们总会被连接至一个于其视野内的[[{{tr|Pressure Plate}}]]。{{tr|Pressure Plate}}有时候可以距离{{tr|Dart Trap}}很远。
+
+{{tr|Dart Trap}}是最常见的{{tr|trap}}，可以自然生成于[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]的任何位置，唯一的例外是[[{{tr|Jungle Temple}}]]内部。[[{{tr|Dungeon}}]]中也会生成不少{{tr|Dart Trap}}。
+
+=== {{item|Geyser|s|icons=n}} ===
+{{exclusive|1.4.0.1|section=y}}
+
+[[File:Natural Geyser.png|frame|right|自然放置的{{tr|Geyser}}。]]
+{{tr|Geyser}}在接触时会喷出火焰且将碰到的玩家向上推起。这种火焰可以穿透若干物块伤害玩家。{{tr|Geyser}}生成于洞穴层的较深处，往往临近于{{tr|lava}}。
+
+它们被玩家踩到时就会触发，也可以用{{tr|wire}}触发。自然生成的{{tr|Geyser}}会位于开放地带，且不包含任何{{tr|mechanism}}。
+
+=== {{item|Super Dart Trap|s|size=15px}} ===
+{{tr|Super Dart Trap}}和普通的{{tr|Dart Trap}}功能类似，但是伤害几乎是后者的两倍。它们的{{tr|projectile}}看上去类似[[{{tr|Poison Dart}}]]而不是{{tr|arrow}}。这种{{tr|trap}}只会生成于[[{{tr|Jungle Temple}}]]中，且是那儿第二常见的{{tr|trap}}。在{{eversions|1.4.0.1}}中，挖掘它们需要使用[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}。
+
+=== {{item|Spiky Ball Trap|s|size=15px}} ===
+{{tr|Spiky Ball Trap}}在被触发时会发射一个可弹跳且持续时间很久的尖球。尖球超长的持续时间令其能对它行进路线上的任何实体造成大量伤害。玩家可以以此防护{{tr|enemy}}经常游荡的地区。{{tr|Spiky Ball Trap}}只会生成于[[{{tr|Jungle Temple}}]]中，且是其中最常见的{{tr|trap}}。在{{eversions|1.4.0.1}}中，挖掘它们需要使用[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}。
+
+=== {{item|Spear Trap|s|size=15px}} ===
+{{tr|Spear Trap}}会从{{tr|block}}伸出一根矛。若没有物块阻挡，它可以不断延伸至令人意想不到的长度。这种{{tr|trap}}的冷却时间比其它{{tr|trap}}短些。{{tr|Spear Trap}}只会生成于[[{{tr|Jungle Temple}}]]中，且是其中第二罕见的{{tr|trap}}（仅被[[{{tr|Flame Trap}}]]超过）。在{{eversions|1.4.0.1}}中，挖掘它们需要使用[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}。
+
+=== {{item|Flame Trap|s|size=15px}} ===
+{{tr|Flame Trap}}类似水平方向的[[{{tr|Geyser|link=y}}|{{tr|Geyser}}]]，会喷出和[[{{tr|Flamethrower}}]]类似的火焰。火焰的范围可长达 23 {{tr|block}}，且包含了上面及下面各一行{{tr|block}}。{{tr|Flame Trap}}只会生成于[[{{tr|Jungle Temple}}]]，且是其中最罕见的{{tr|trap}}。不少时候，它们根本不会生成。在{{eversions|1.4.0.1}}中，挖掘它们需要使用[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}。
+
+=== {{item|Spike|size=15px|Spikes}} ===
+[[{{tr|Spike}}]]和[[{{tr|Wooden Spike}}]]不是机械，而是会对接触的玩家造成伤害。它们分别常见于[[{{tr|the Dungeon}}]]和[[{{tr|Jungle Temple}}]]中。
+
+== 结构 ==
+结构是一类由以特定方式排列来杀死[[{{tr|player}}]]的[[{{tr|Blocks}}]]组成的{{tr|trap}}。
+
+=== {{item|mode=image|size=16px|Boulder}} [[{{tr|Boulder trap}}]] ===
+{{tr|Boulder Trap}}包含一块{{tr|Pressure Plate}}、在其正上方且连接至它的一个 2×3 {{tr|tile}}的[[{{tr|Active Stone Block}}]]（或是带有[[{{tr|Actuator}}]]的{{tr|blocks}}）、以及一块放在顶部的{{tr|Boulder}}。当{{tr|Pressure Plate}}被触发时，{{tr|block}}会被关闭，导致{{tr|Boulder}}砸向下方区域。这种{{tr|trap}}在黑暗的区域特别危险，因为玩家很难看清{{tr|Pressure Plate}}和{{tr|Boulder}}的位置。由于这种{{tr|trap}}对所有实体都有效，如果善加利用，玩家可以用它来打败{{tr|enemy}}和 {{tr|bosses}}。
+
+{{eicons|1.4.4}} 在 [[Celebrationmk10]]、[[No traps]]、和 [[Get fixed boi]] {{tr|worlds}}中，此{{tr|trap}}有一种变体，其中的{{tr|Boulder}}被替换为{{item|size=16px|Bouncy Boulder|icons=no}}。
+
+=== {{item|Explosives|size=15px|Explosive Traps}} ===
+{{distinguish|{{tr|Explosive Trap}}}}
+{{tr|Explosives Trap}}有两种不同的形式，但都使用相同的手段来伤害玩家。比较常见的一种只会生成于{{eversions|1.3.0.1}}中，它们经常生成在大片矿脉的上方，包含了一个连接至[[{{tr|Explosives}}]]的[[{{tr|Detonator}}]]。比较罕见的一种是由[[{{tr|Pressure Plate}}]]和埋在附近的{{tr|Explosives}}组成的。不管哪种形式，{{tr|Detonator}}都会在{{tr|Explosives}}的范围内，使得玩家必定会被爆炸波及（虽然站在正确位置可以触发{{tr|Detonator}}而不被炸到）。该爆炸没有任何预警，且{{tr|Explosives}}造成的伤害往往都在 500 以上，使得该{{tr|trap}}就算对于[[{{tr|Hardmode}}]]后期的玩家都是非常危险的。有时候也会出现哑弹的情况：只有{{tr|detonator}}或{{tr|Pressure Plate}}而没有{{tr|Explosives}}；或触发装置没有正确连接至{{tr|Explosives}}。
+
+=== {{item|mode=image|Sand Block}} {{tr|Sand Traps}} ===
+{{exclusive|1.4.0.1|section=y}}
+
+{{tr|Sand traps}}包括一大块放置在含有[[{{tr|Actuator}}]]的[[{{tr|Hardened Sand Blocks}}]]或[[{{tr|Sandstone Blocks}}]]上的矩形{{tr|sand block}}群。若玩家触发了放置在其下的{{tr|Pressure Plate}}，便会被{{tr|sand block}}淹没并受到[[{{tr|suffocation}}]]的伤害。
+
+* 由于每个这种{{tr|trap}}往往都包含了 10 个或更多的[[{{tr|Actuator}}]]，通过使用[[{{tr|The Grand Design}}]]或[[{{tr|Wire Cutter}}]]，玩家可以从这种{{tr|trap}}中收集大量[[{{tr|Actuator}}]]。
+
+=== {{item|mode=image|Lava}} {{tr|Lava Traps}} ===
+{{exclusive|1.4.0.1|section=y}}
+
+{{tr|Lava traps}}类似于{{tr|Boulder Trap}}，具有一个[[{{tr|Pressure Plates}}]]，连接至一列含有[[{{tr|Actuator}}]]的{{tr|block}}，其上还有一片{{tr|lava}}池。当玩家触发{{tr|Pressure Plate}}时，{{tr|block}}会被关闭而{{tr|lava}}就会流出来。这种{{tr|trap}}常见于[[{{tr|Cavern}}]]层和[[{{tr|Dungeon}}]]。
+
+* 由于[[{{tr|Lava}}]]流速不快，玩家可以很容易地避免这种{{tr|trap}}。
+* 通过使用[[{{tr|The Grand Design}}]]，这些{{tr|traps}}可以成为免费的{{tr|Actuators}}与[[{{tr|Wire}}]]的良好来源，因为玩家可以从屏幕上任何地方回收该{{tr|trap}}内的{{tr|Actuator}}而不需要挖进{{tr|lava}}。也可以使用[[{{tr|Wire Cutter}}]]，但缺点是玩家必须非常靠近{{tr|lava}}才行。
+
+=== {{item|Pressure Plate Track|size=16px|{{tr|Pressure Plate Track}}{{tr|Traps}}}} ===
+{{exclusive|1.4.0.1|section=y}}
+
+{{tr|Pressure Plate Track}}{{tr|Traps}}会在[[{{tr|Abandoned Minecart Track}}]]与普通{{tr|trap}}重叠时生成，将普通的{{tr|Pressure Plate}}替换为{{tr|Pressure Plate Track}}。
+
+=== {{item|mode=image|Spike|size=15px}} {{tr|Spike}}坑 ===
+{{exclusive|1.4.0.1|section=y}}
+
+{{tr|Spike}}坑遍布[[{{tr|Dungeon}}]]，由很厚一层[[{{tr|Cracked Dungeon Bricks}}]]和其下的一个矩形坑组成。[[{{tr|spikes}}]]遍布坑的每一边，若不慎掉入，玩家很可能会一下遭受大量[[{{tr|fall damage}}]]。一部分坑中还含有水，使得其最初更加危险，但之后可用于[[{{tr|fishing}}]]。
+
+=== {{item|Dead Man's Chest|s|size=18px|icons=n}} ===
+{{exclusive|1.4.0.1|section=y}}
+
+{{tr|Dead Man's Chest}}是一个自然生成在地下、连接了多种不同{{tr|trap}}的[[{{tr|Gold Chest}}]]，旨在杀死试图打开它的玩家。箱子往往连接至 3-5 个{{tr|Boulder Trap}}、2-3 个{{tr|Dart Trap}}、和 0-3 个[[{{tr|Explosives}}]]。如果足够深，也可能包含 1-2 个[[{{tr|Geyser|link=y}}|{{tr|Geyser}}]]。{{tr|Boulder Trap}}会在箱子的上方，{{tr|Dart Trap}}会沿水平方向放置，而{{tr|Explosives}}会埋在下方。{{tr|Dead Man's Chest}}和[[{{tr|Trapped Chests}}]]功能类似，对它按下 {{key|use}} 时会向连接的[[{{tr|Wire}}]]发出信号。
+
+=== {{item|Gas Trap|s|size=18px|icons=n}} ===
+{{exclusive|1.4.4|section=y}}
+{{tr|Gas Traps}}仅在 [[{{tr|No traps}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}的{{tr|chests}}中自然生成。放置于[[{{tr|storage item}}]]内的{{tr|Gas Trap}}会在该{{tr|storage item}}下次被开启时激活，对附近所有{{tr|players}}、[[{{tr|enemies}}]]、和 [[{{tr|NPCs}}]] 造成持续时间较长的[[{{tr|Poisoned}}]]{{tr|debuff}}。
+
+=== {{item|TNT Barrel|s|size=18px|icons=n}} ===
+{{exclusive|1.4.4|section=y}}
+
+{{tr|TNT Barrels}}仅在 [[{{tr|No traps}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中自然生成，其中它们在[[{{tr|Jungle Temple}}]]中更常见。[[{{tr|TNT Barrel}}]]不被连接到{{tr|wire or pressure plates}}，而会在被击中时爆炸。
+
+=== {{item|Life Crystal Boulder|s|size=18px|icons=n}} ===
+{{exclusive|1.4.4|section=y}}
+{{tr|Life Crystal Boulders}}仅在 [[{{tr|No traps}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中自然生成。它们外观上和[[{{tr|Life Crystal}}]]相同，但被击中后会开始像{{tr|Boulders}}一样滚动并造成伤害。它们停止滚动时会掉落一个{{tr|Life Crystal}}。
+
+=== 图库 ===
+<gallery>
+File:Boulder trap.png|一个{{tr|Boulder trap}}。
+File:Explosives trap.png|两种{{tr|Explosive traps}}。
+File:Sand trap.png|一个{{tr|Sand trap}}。
+File:Lava trap.png|一个{{tr|Lava Trap}}。
+File:Pressure Plate Track Traps.png|{{tr|Pressure Plate Track}}{{tr|traps}}。
+File:Spike Pit.png|{{tr|Spike}}坑，[[{{tr|Dangersense}}]][[{{tr|buff}}]]处于激活状态。[[{{tr|torches}}]]是由玩家放置的。
+File:Dead Man's Chest trap.png|{{tr|Dead Man's Chest}}及其周边的{{tr|traps}}。
+</gallery>
+
+== 危险的{{tr|ambient objects}} ==
+虽然很难将它们定义为{{tr|trap}}，这些物体会自然生成，和其它{{tr|trap}}一样用于对玩家造成伤害。
+
+=== {{item|mode=image|Corruption Thorny Bush|size=16px}}{{item|mode=image|Crimson Thorny Bush|size=16px}}{{item|Jungle Thorny Bush|size=16px|Thorny Bushes}} ===
+这些灌木分别自然生长在{{tr|the Corruption}}、{{tr|the Crimson}}和{{tr|Underground Jungle}}中。接触它们会使玩家受伤并破坏灌木。
+
+=== {{item|Bee Hive|s|size=17px|icons=n}} ===
+{{exclusive|1.3.1|section=y}}
+{{tr|Bee Hive}}会在[[{{tr|Jungle grass}}]]下方自然生长，常见于{{tr|Jungle}}和{{tr|Underground Jungle}}。它们被破坏的时候会掉在地上并朝一边滚落。随后会破裂并释放会攻击玩家的[[{{tr|Bee}}]]。然而，当碰到水时它会直接消失，不放出{{tr|bee}}。
+
+=== {{item|Antlion Eggs|size=17px|icons=n}} ===
+{{exclusive|1.4.0.1|section=y}}
+{{tr|Antlion Eggs}}是常见于{{tr|Underground Desert}}的物体。它们在没被触碰时无害，但在它们被任何{{tr|tool}}、{{tr|weapon}}或{{tr|projectile}}击中时，会孵化出[[{{tr|Antlion Larva}}]]。在{{eversions|1.4.1}}中，{{tr|Antlion Eggs}}可以在[[{{tr|Surface}}]]{{tr|layer}}以下的[[{{tr|Sandstone Blocks}}]]上生长。
+
+=== {{item|Rolling Cactus|size=16px|icons=n}} ===
+{{exclusive|1.4.0.1|section=y}}
+{{tr|Rolling Cactus}}是一种自然生成于{{tr|Underground Desert}}的[[{{tr|plant}}]]且十分常见。静止时，它们只会对直接与其接触的玩家造成少量伤害。一旦被任何工具、武器、甚至是{{tr|projectile}}击中后，它们便会开始向某一方向滚动，类似于{{tr|Boulder}}。滚动时，它们会造成大量伤害且会在墙壁上反弹。由于这种{{tr|trap}}对所有实体都有效，如果善加利用，玩家可以用它来打败大群{{tr|enemy}}甚至是 {{tr|boss}}。
+
+== 人造 ==
+这些物品只能被玩家放置到世界中。它们永远不会自然生成。
+
+=== {{item|Venom Dart Trap|s|size=15px|icons=n}} ===
+{{exclusive|1.4.4|section=y}}
+{{tr|Venom Dart Traps}}功能上和普通{{tr|Dart Traps}}相似，但造成更高伤害并施加[[{{tr|Acid Venom}}]]而非[[{{tr|Poisoned}}]]。
+
+它们可用{{tr|Dart Trap}}和两个[[{{tr|Spider Fang}}]]制作。
+
+=== {{item|Land Mine|size=20px}} ===
+[[{{tr|Land Mine}}]]是一种可放置的[[{{tr|Hardmode}}]]物品，当有实体接触时爆炸，也可通过电线激活。它们可从[[{{tr|Demolitionist}}]]处以每个 {{iteminfo|Land Mine|buy}} 的价格购买。
+
+=== {{item|Trapped Chest|s|size=20px|icons=n}} ===
+{{exclusive|1.3.1|section=y}}
+{{tr|Trapped Chests}}是人造的{{tr|chest}}，开启时会发出信号。它们没有{{tr|storage slot}}，因此不能放置任何物品。它们可以用任意{{tr|chest}}和 10 个[[{{tr|wire}}]]制作。
+
+== 成就 ==
+{{achievement|name=Watch Your Step!}}
+{{achievement|name=Dead Men Tell No Tales}}
+
+=== 技术性信息 ===
+{{tr|Watch Your Step!}}{{tr|achievement}}可以通过下列方式获得：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Achievements.AchievementsHelper.HandleSpecialEvent / Terraria.Projectile.Damage / Terraria.Projectile.StatusPlayer}}
+* 被符合条件的{{tr|projectile}}杀死。
+** {{tr|The projectile}}并不需要是来自自然生成的{{tr|trap}}结构的。例如，玩家放置的[[{{tr|Boulder}}]]也能达成{{tr|achievement}}。
+* 在具有[[{{tr|Poisoned}}]]和/或[[{{tr|On Fire!}}]][[{{tr|debuff}}]]时，从任何符合条件的{{tr|projectile}}的伤害下存活后被杀死。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update|field=Terraria.Player.trapDebuffSource}}
+** {{tr|The debuff}}并不需要是由符合条件的{{tr|projectile}}造成的，[[{{tr|death}}]]也不需要是由{{tr|debuff}}造成的。不过，如果{{tr|debuff}}来自于其他来源，它需要在符合条件的{{tr|projectile}}伤害到玩家之前就施加在玩家身上才能获得{{tr|achievement}}。
+** {{tr|debuff}}结束后，获得{{tr|achievement}}的条件就会刷新，因此如果玩家从{{tr|projectile}}和{{tr|debuff}}伤害下存活，就需要再次被符合条件的{{tr|projectile}}击中以获得{{tr|achievement}}。
+*** 例如，通过接触[[{{tr|lava}}]]获得{{tr|On Fire! debuff}}，然后被[[{{tr|Spear Trap}}]]的{{tr|spear}}击中，然后在{{tr|debuff}}结束前被杀死（可以是任何东西导致的，例如触碰[[{{tr|Spike}}]]或受到[[{{tr|enemies}}]]的伤害）就会获得{{tr|achievement}}。
+
+{{tr|The achievement}}''不能''通过以下方式获得：
+* 被其他{{tr|projectiles}}或{{tr|traps}}杀死（包括本页面上列出的其他“{{tr|traps}}”）。
+** 例如，被[[#{{tr|Lava Traps}}|{{tr|lava trap}}]]的[[{{tr|lava}}]]杀死，或被[[#{{tr|Sand Traps}}|{{tr|sand trap}}]]的[[{{tr|Sand Blocks}}]]造成的[[{{tr|Suffocation}}]]伤害杀死不会获得{{tr|achievement}}。
+* 被[[{{tr|Venom Dart Trap}}]]造成的[[{{tr|Acid Venom}}]]杀死，且不具有{{tr|Poisoned}}和/或{{tr|On Fire! debuff}}。
+* 在具有[[{{tr|Poisoned}}]]和/或[[{{tr|On Fire!}}]][[{{tr|debuff}}]]时被杀死，但没有被符合条件的{{tr|projectiles}}击中过。
+
+下方为符合条件的{{tr|projectiles}}的列表。
+{{#arraydefine:projectiles|98,99,108,184,185,186,187,188,654,655,727,980,1002,1005,1007,1013,1014|,}}<!--
+-->{{options/set|item|icons=no}}<!--
+-->{{#dplvar:set<!--
+-->|source_98|{{item|Dart Trap}}<!--
+-->|note_98|被它造成的[[{{tr|Poisoned}}]]{{tr|debuff}}杀死也会获得{{tr|achievement}}。<!--
+-->|source_99|{{item|Boulder}}<br/>{{item|Rock Golem|size=20px|note2=（[[{{tr|For the worthy}}]] / [[{{tr|Get fixed boi}}]]）}}<!--
+-->|source_108|{{item|Explosives}}<!--
+-->|source_184|{{item|Super Dart Trap}}<!--
+-->|note_184|被它造成的[[{{tr|Poisoned}}]]{{tr|debuff}}杀死也会获得{{tr|achievement}}。<!--
+-->|source_185|{{item|Spiky Ball Trap}}<!--
+-->|source_186|{{item|Spear Trap}}<!--
+-->|source_187|{{item|Flame Trap}}<!--
+-->|source_188|{{item|Flame Trap}}<!--
+-->|source_654|{{item|Geyser}}<!--
+-->|source_655|{{item|Bee Hive}}<!--
+-->|note_655|虽然被分类为“{{tr|trap}}”，{{tr|the Bee Hive}}自身不造成任何伤害，<br/>被[[{{tr|Bee}}]]或{{tr|Bee}}造成的[[{{tr|Poisoned}}]]杀死不会获得{{tr|achievement}}。<br/>因此，''仅''使用{{tr|Bee Hives}}的情况下不可能获得{{tr|achievement}}。<!--
+-->|source_727|{{item|Rolling Cactus}}<!--
+-->|note_727|被{{item|Rolling Cactus Spike|nolink=y}}杀死不算。<!--
+-->|source_980|{{item|Venom Dart Trap}}<!--
+-->|note_980|被[[{{tr|Acid Venom}}]]{{tr|debuff}}杀死''不算''。<!--
+-->|source_1002|{{item|TNT Barrel}}<!--
+-->|source_1005|{{item|Boulder|note2=（[[{{tr|For the worthy}}]] / [[{{tr|Get fixed boi}}]]）}}<!--
+-->|note_1005|在常规[[{{tr|Boulder}}]]碎裂时生成。<!--
+-->|source_1007|{{item|Gas Trap}}<!--
+-->|note_1007|被它造成的[[{{tr|Poisoned}}]]{{tr|debuff}}杀死也会获得{{tr|achievement}}。<!--
+-->|source_1013|{{item|Bouncy Boulder}}<!--
+-->|source_1014|{{item|Life Crystal Boulder}}<!--
+-->}}
+{| class="terraria lined"
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]]
+! colspan=2 | {{tr|Projectile}}
+! 来源
+! 备注
+{{#arrayprint:projectiles||@@@|<!--
+--><tr><!--
+	--><td>@@@</td><!--
+	--><td>[[File:{{projectileinfo|@@@|image}}|link=]]</td><!--
+	--><td>{{projectileinfo|@@@|name}}</td><!--
+	--><td>{{#dplvar:source_@@@}}</td><!--
+	--><td>{{#dplvar:note_@@@}}</td><!--
+--></tr>}}
+|}{{options/reset|item}}
+
+== 小贴士 ==
+* {{tr|trap}}的{{tr|wire}}会和普通{{tr|wire}}一样显示在屏幕上，因此，玩家可以通过手持[[{{tr|Pressure Plates}}]]等物品来侦测地下的{{tr|Dart Trap}}和{{tr|Boulder Trap}}。
+* 一旦玩家取得了[[{{tr|Wire Cutter}}]]，随机生成于地下的{{tr|trap}}可作为获取[[{{tr|Wire}}]]和[[{{tr|Actuator}}]]的一个不错的来源。与从[[{{tr|Mechanic}}]]处购买相比，每收集一根{{tr|Wire}}便能节约 {{iteminfo|Wire|buy}}，每收集一个{{tr|Actuator}}便能节约 {{iteminfo|Actuator|buy}}。
+* 若高效设置，{{tr|trap}}可用于在[[{{tr|events}}]]中防卫。
+* 当多个{{tr|trap}}自然生成于一处时，它们的{{tr|wire}}可能会交叉，使得有多个{{tr|triggers}}可触发数个{{tr|trap}}。
+* （除了玩家平常就从{{tr|trap}}处受到的双倍伤害以外）大多数{{tr|trap}}在{{tr|Expert Mode}}中造成的伤害会再翻倍。
+* {{tr|explosives trap}}的矿脉通常比普通矿脉更大，且包括不常见的{{tr|ores}}，因此解除{{tr|explosives}}挖掘{{tr|ore}}会很有帮助。
+* {{tr|trap}}拥有很多种生成方式，因此并没有固定的方式来处理{{tr|trap}}。
+
+== 花絮 ==
+* {{eicons|1.4.0.1|invert=y}} 虽然似乎由{{tr|Lihzahrd bricks}}制作，挖掘{{tr|Jungle Temple}}中的{{tr|trap}}不需要{{tr|Picksaw}}或更高级的{{tr|pickaxe}}。
+* 在非常罕见的情况下，{{tr|Sand traps}}也会生成在其他结构中，包括[[{{tr|Pyramid}}]]和[[{{tr|Jungle Temple}}]]。
+
+<gallery widths=300px heights=250px>
+File:Pyramid Sand Trap.png|thumb|{{tr|Pyramid}}中的{{tr|A sand trap}}。
+File:Sand Trap in Jungle Temple.png|thumb|{{tr|sand trap}}和{{tr|Jungle Temple}}相交。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|加入了[[{{tr|Venom Dart Trap}}]]、[[{{tr|Gas Trap}}]]、[[{{tr|TNT Barrel}}]]、[[{{tr|Bouncy Boulder}}]]、和[[{{tr|Life Crystal Boulder}}]]。}}
+{{history|Desktop 1.4.1|[[{{tr|Antlion Egg}}]]现在会在[[{{tr|Sandstone Blocks}}]]自然生成。}}
+{{history|Desktop 1.4.0.5|
+** 修复了{{tr|Sand Traps}}在世界生成时于[[{{tr|furniture}}]]上方生成的 {{tr|bug}}。
+** [[{{tr|Jungle Temple}}]]中的[[{{tr|Flame Trap}}]]、[[{{tr|Spear Trap}}]]、[[{{tr|Spiky Ball Trap}}]]和[[{{tr|Super Dart Trap}}]]在击败[[{{tr|Golem}}]]前不再能用[[{{tr|Explosives (class)}}]]摧毁。}}
+{{history|Desktop 1.4.0.1|
+** 加入了[[#{{tr|Dead Man's Chest}}|{{tr|Dead Man's Chest}}{{tr|traps}}]]、[[#{{tr|Spike Pits}}|{{tr|Spike Pits}}]]、[[#{{tr|Sand Traps}}|{{tr|Sand Traps}}]]、[[#{{tr|Lava Traps}}|{{tr|Lava Traps}}]]、[[#{{tr|Pressure Plate Track Traps}}|{{tr|Pressure Plate Track Traps}}]]和[[{{tr|Rolling Cactus}}]]。
+* {{tr|Geyser}}{{tr|traps}}现在只要踩上就会触发。
+** 现在挖掘{{tr|Jungle Temple}}{{tr|traps}}需要[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}。}}
+{{history|Desktop 1.3.1|
+** 使用{{tr|hammer}}锤击{{tr|trap}}会更改其发射方向。
+** 加入了[[{{tr|Geyser}}]]{{tr|trap}}。}}
+{{history|Desktop 1.3.0.3|修复了{{tr|traps}}能造成{{tr|critical hit}}的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|加入了{{tr|Statue traps}}。}}
+{{history|Desktop 1.2.0.3|{{tr|Traps}}不再能触发[[{{tr|Spectre armor}}]]。}}
+{{history|Desktop 1.2|在世界生成时创建的{{tr|Traps}}不再会被{{tr|enemies}}触发（它们现在使用不同的[[{{tr|Pressure Plate}}]]）。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Wiring}}
+
+[[Category:机械物品|*]]
+[[Category:环境]]
+
+{{language info|en=Traps}}

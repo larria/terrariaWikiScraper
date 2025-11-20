@@ -1,0 +1,57 @@
+{{naturalgen only}}
+{{npc infobox | notabs=y<!-- Not an NPC; uses NPC infobox for drop info -->
+| imagealt = [[File:Shadow Orb.gif|link=|{{tr|Shadow Orb}}的放置外观]]
+| type = Background object
+|custom:Musket/Musket Ball | {{item|Musket}}
+: + {{item|Musket Ball}} (100) | 100% {{note|paren=y|初次摧毁时}}<br/>20% {{note|paren=y|其余的时候}}
+| Shadow Orb (item)|1|20%
+| Vilethorn|1|20%
+| Ball O' Hurt|1|20%
+| Band of Starpower|1|20%
+| cargo = no | cargodrops = yes
+| allversions = yes<!-- necessary because the infobox only adds this automatically if there is an NPC ID -->
+}}
+{{about|{{tr|background object}}|{{tr|the light pet summon item}}|{{tr|Shadow Orb (item)}}}}
+
+'''{{tr|Shadow Orb}}'''是一种漂浮的、紫色的、球形的[[{{tr|background object}}]]，可发现于[[{{tr|the Corruption}}]]的[[{{tr|chasms}}]]深处。带有{{tr|Corruption}}的{{tr|world}}会含有若干个{{tr|Shadow Orbs}}，摧毁至少三个（在同一个{{tr|world}}中）通常是推进游戏的关键步骤。这可以通过使用任意[[{{tr|hammer}}]]或[[{{tr|Explosives (class)}}]]来完成。{{tr|Shadow Orbs}}会发出紫色的闪烁光芒，和[[{{tr|Demon Altar}}]]发出的光很相似。它们是[[{{tr|the Crimson}}]]中[[{{tr|Crimson Heart}}]]的{{tr|Corruption}}对应物。
+
+{{tr|Shadow Orbs}}通常坐落于{{tr|chasm}}底部，被[[{{tr|Ebonstone Block}}]]环绕。为了靠近它们，{{tr|player}}可以使用[[{{tr|Nightmare Pickaxe}}]]或更好的{{tr|pickaxe}}，{{tr|explosives}}，或[[{{tr|Purification Powder}}]]。
+
+== 破坏的后果 ==
+* 每个{{tr|Shadow Orb}}都会在被摧毁时掉落物品。第一个总是会掉落[[{{tr|Musket}}]]和 100 发[[{{tr|Musket Ball}}]]，而携带{{tr|Musket}}和/或{{tr|Musket Balls}}将满足[[{{tr|Arms Dealer}}]]到达所需要的条件。
+* 摧毁至少一个{{tr|Shadow Orb}}将满足[[{{tr|Goblin Army}}]]前来攻击的两个条件之一（另一个要求是有至少 200 [[生命值]]）。
+* 第三个{{tr|Shadow Orb}}被摧毁会召唤[[{{tr|Eater of Worlds}}]]，它会立刻生成。每摧毁三个{{tr|Shadow Orb}}都会重复召唤{{tr|The Eater of Worlds}}。
+* {{eicons|1.4.0.2|invert=y}} 每个被摧毁的{{tr|Shadow Orb}}都提供了[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]]坠落的机会。每个在午夜（{{time|12:00 AM}}）至黎明（{{time|4:30 AM}}）之间被摧毁的{{tr|Shadow Orb}}都有单独的 50% 几率立刻导致一颗{{tr|Meteorite}}坠落。而在黎明到午夜之间摧毁任意数量的{{tr|Shadow Orbs}}都只会让{{tr|Meteorite}}有 50% 几率在紧随其后的那个午夜坠落。
+* 一旦{{tr|Shadow Orb}}被摧毁，{{eil|Traveling Merchant}}就有几率出售{{eil|Revolver}}。
+
+== 讯息 ==
+在{{tr|Shadow Orbs}}被破坏时会出现以下[[{{tr|status messages}}]]：
+* 第一个{{tr|Shadow Orbs}}：“{{gameText|LegacyMisc.10}}”
+* 第二个{{tr|Shadow Orbs}}：“{{gameText|LegacyMisc.11}}”
+* 第三个{{tr|Shadow Orbs}}：“{{gameText|Announcement.HasAwoken|x_0={{tr|Eater of Worlds}}}}”
+
+== 成就 ==
+{{achievement|name=Smashing, Poppet!}}
+
+== 花絮 ==
+* {{tr|The Shadow Orb}}可能参考了美国作家{{维基百科|H. P. Lovecraft|{{tr|H.P. Lovecraft}}}}的科幻/恐怖短篇小说{{维基百科|b=y|The Colour Out of Space|星之彩（The Color Out of Space）}}中出现在{{tr|meteorite}}中心的球形结构。这也解释了为什么砸碎它会导致{{tr|meteorite}}坠落。
+* {{tr|Crimson Hearts}}和{{tr|Shadow Orbs}}都会掉落[[{{tr|gun}}]]、[[{{tr|magic weapon}}]]、[[{{tr|melee weapon}}]]、[[{{tr|light pet}}]]、和[[{{tr|accessory}}]]。
+* {{tr|Shadow Orbs and Crimson Hearts}}在计算世界中被摧毁的个数时共用计数器，这意味着若某个世界中同时出现二者，比如在 {{eil|drunk world|s}} 中，每摧毁三个就会召唤出与最后摧毁的那一种相关的 {{tr|boss}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.2|{{tr|Meteorites}}在{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}被击败前不再掉落。}}
+{{history|Desktop 1.3.0.4|修正了{{tr|Shadow Orbs}}错误地在[[{{tr|The Crimson}}|{{tr|Crimson}}]]世界中生成的问题。}}
+{{history|Desktop 1.2.4|完全不摧毁{{tr|Shadow Orb}}不再会阻碍自然出现的[[{{tr|Pirate invasion}}]]。}}
+{{history|Desktop 1.1.2|修正了一个可能有时会导致砸碎了三个{{tr|shadow orbs}}之后不生成{{tr|Eater of Worlds}}的 {{tr|bug}}。}}
+{{history|Desktop 1.0.6.1|{{tr|Shadow Orbs}}不再会在世界创生过程中被砸碎。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Shadow Orb}}

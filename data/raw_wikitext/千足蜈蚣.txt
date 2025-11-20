@@ -1,0 +1,88 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox|boxwidth=300px
+| auto = 412
+| namesub =
+| imagealt = [[File:Crawltipede.png|236px|link=]]
+| type = Flying Enemy
+| type2 = Burrowing Enemy
+| environment = Lunar Events
+| damage =
+| defense =
+| knockback =
+| shownpcid = no
+| cargo = no
+}}
+
+'''{{tr|Crawltipede}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Lunatic Cultist}}]]后的[[{{tr|Worm AI}}|{{tr|worm}}]][[{{tr|enemy}}]]，在[[{{tr|Lunar Events}}]]期间的[[{{tr|Solar Pillar}}]]区域生成。它较为独特的一点在于没有{{tr|health bar}}，且它仅有的能受伤害的{{tr|segment}}为尾部，会受到 10 倍伤害。它会冲向位于空中的玩家并造成高额伤害，但会无视在地面上的玩家。
+
+{{tr|Crawltipedes}}的主要作用似乎是强迫玩家待在地面附近，让他们易被其他{{tr|Solar Pillar}}{{tr|enemies}}攻击到。
+
+== {{tr|Segments}} ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/damage/defense}}
+{| class="terraria align-center nowrap"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+{{npc infobox
+| auto = 412
+| hardmode = yes
+}}
+{{npc infobox
+| auto = 413
+| hardmode = yes
+}}
+{{npc infobox
+| auto = 414
+| hardmode = yes
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* {{tr|The Crawltipede}}会通过检查由玩家中心点向左、向右 2 个{{tr|tiles}}，向下 15 {{tr|tiles}}的长方形区域（4×15 或 5×15 的长方形，取决于玩家中心点的位置）内的“实心{{tr|tiles}}”来判断玩家是否处于空中。如果这个区域内没有“实心{{tr|tiles}}”，则玩家被视为处于空中。{{source code ref|v=1.4.3.6|method=Terraria.NPC.AI_006_Worms}}“实心{{tr|tiles}}”包括下列{{tr|tiles}}：
+** 没有被[[{{tr|hammer}}]]击过的[[{{tr|blocks}}|{{tr|solid blocks}}]]。
+** 除了被锤击成“底部”[[{{tr|Platforms}}#定位平台|位置]]的{{tr|platforms}}以外的所有[[{{tr|platforms}}]]。
+** [[{{tr|Planter Boxes}}]]。
+* 站在[[{{tr|liquid}}]]表面（如：使用[[{{tr|Water Walking Boots}}]]）不被视为站在地面上。
+
+== 小贴士 ==
+* {{tr|The Crawltipede}}将会快速接近飞行中的玩家并造成巨量伤害。它的移动迅速且能够快速地、尖锐地转弯；其移动力远超其他{{tr|worm}}类{{tr|enemies}}。即使使用高等级的[[{{tr|wings}}]]也难以躲避它的攻击。因此，玩家应当尽可能避开这一{{tr|enemy}}。
+** 不过，{{tr|wings}}与[[{{tr|Frog Leg}}]]和/或{{eil|Soaring Insignia}}结合使用可以超过{{tr|Crawltipede}}的速度。
+* 短暂地向空中跳跃通常是可行的，但快速落地很重要。
+* 能{{tr|Homing}}的以及快速攻击的{{tr|weapons}}（如[[{{tr|Razorblade Typhoon}}]]、[[{{tr|Possessed Hatchet}}]]、或[[{{tr|Chlorophyte Bullet}}]]）能让与{{tr|Crawltipede}}的战斗更加简单。相似的是，[[{{tr|minions}}]]处理此{{tr|enemy}}很快速，因为它们会自动以尾部为目标，无需玩家瞄准。
+* [[{{tr|Vampire Knives}}]]对于{{tr|Crawltipedes}}很有效，因为它会受到额外伤害。这一点就导致了更多的[[{{tr|lifesteal}}]]，因此玩家成功攻击一到两次就能恢复高达 40{{nbsp}}{{tr|HP}}。
+* 如果使用强力的{{tr|magic weapon}}，并穿着带{{tr|Spectre Hood}}的[[{{tr|Spectre armor}}]]，击中尾部能够一次恢复 600 以上的{{tr|HP}}，这是游戏中最高的单次自我治疗。
+** 不过，由于{{tr|lifesteal}}的机制运作方式，这会导致接下来的几秒内没有治疗。
+* 如果此前击败了{{tr|Solar Pillar}}，[[{{tr|Solar Eruption}}]]对于{{tr|Crawltipede}}很有效。其挥舞动作和长持续时间可以轻易地击中{{tr|Crawltipede}}的尾部。
+* 由于{{tr|Crawltipedes}}不会以站在[[{{tr|platforms}}]]的玩家为目标，在区域内放置大量{{tr|platforms}}可能有助于和{{tr|Crawltipedes}}战斗。
+* 一种不常见，且可能较为危险的和{{tr|Crawltipede}}战斗的方法是等它蜷缩起来，然后使用[[{{tr|Cosmic Car Key}}]]悬浮在其蜷缩处。{{tr|The Crawltipede}}无法大角度地转弯攻击玩家，而是会在玩家身边形成环状。此后就可以对它进行攻击。仅有的问题为不接触{{tr|Crawltipede}}的身体的情况下，玩家的移动空间很有限，这使得玩家在杀死{{tr|Crawltipede}}前易受[[{{tr|Corites}}]]的攻击。
+
+== 花絮 ==
+* {{tr|Crawltipede}}是仅有的没有{{tr|health bar}}，但可以被摧毁的{{tr|enemy}}。
+* {{tr|The Crawltipede}}可能是参考了奇幻动作冒险游戏系列《{{wikipedia|The Legend of Zelda|塞尔达传说}}》（The Legend of Zelda）中的 [https://zelda.gamepedia.com/Moldorm Moldorm]——更具体来说是《{{wikipedia|The Legend of Zelda: Link's Awakening|塞尔达传说：织梦岛}}》, 《{{wikipedia|The Legend of Zelda: A Link to the Past|塞尔达传说：众神的三角力量}}》、或《{{wikipedia|The Legend of Zelda: A Link Between Worlds|塞尔达传说：众神的三角力量 2}}》——其中 Moldorm 是一只黑黄色的巨型蜈蚣，只能通过击中它的尾部来对其造成伤害。它会尝试将林克击打到战斗场地周围的坑中，这和{{tr|Crawltipedes}}直接飞向空中的玩家的行为相似。
+* 它的名称是 ''crawl''（爬行）和 ''centipede''（蜈蚣）的复合词。
+* 它是[[{{tr|Lunar Events}}]]敌怪中唯一有属于它的[[{{tr|kite}}]]的。
+{{bestiary}}
+:* 虽然这里说{{tr|Crawltipede}}没有眼睛，但是它的头部有四只黑色的眼睛。
+
+== 历史 ==
+{{history|Desktop 1.4.4|头部伤害从 150 降低至 120，身体伤害从 100 降低至 80。}}
+{{history|Desktop 1.3.1|修复了{{tr|Crawltipede Banner}}不可获得的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Worms}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Crawltipede}}

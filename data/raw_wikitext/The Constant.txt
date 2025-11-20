@@ -1,0 +1,85 @@
+{{exclusive|1.4.3}}
+{{redirect|Eyeforaneye|名为“以眼还眼”（An Eye For An Eye）的更新|1.4.3}}
+[[File:Theconstant updated.png|thumb|450px|{{tr|The Constant}} [[{{tr|World size}}|{{tr|medium world}}]]的地图。注意{{tr|cave}}生成的有所不同。]]
+
+'''The Constant''' 是一个[[{{tr|Secret world seeds}}]]。它是和{{tr|Klei Entertainment}}公司开发的游戏《{{iwlink|dts|Don't Starve Together}}》的[[{{tr|Crossover content|link=y}}#《饥荒联机版》|{{tr|crossover}}]]。
+
+下列{{tr|seeds}}可用于生成 The Constant {{tr|world}}（不区分大小写）：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UIWorldCreation.ProcessSpecialWorldSeeds}}{{dotlist|inline=y|{{code|constant}}|{{code|theconstant}}|{{code|the constant}}|{{code|eye4aneye}}|{{code|eyeforaneye}}}}
+
+== 世界生成更改 ==
+=== 地表 ===
+* 小块的{{tr|Marble}}地将在地表偶尔生成，上面会有少数用[[{{tr|paint}}]]刷成白色的{{tr|statues}}。
+* {{tr|Spider Caves}}或小块{{tr|Spider walls}}常常在{{tr|surface}}或接近{{tr|surface}}处生成。
+
+=== 地下 ===
+* {{tr|world}}中会生成“Wavy Caves”（皱曲洞穴）。它们会生成为上下尖锐起伏的之字形，或者斜向下的曲线形状。
+* [[{{tr|Lead Ore}}]]和[[{{tr|Platinum Ore}}]]永远不会生成（即 The Constant 世界中只会出现{{tr|Iron}}和{{tr|Gold}}）。
+
+== 玩家 ==
+* {{tr|player}}拥有[[{{tr|Hunger}}]]系统。{{tr|player}}的{{tr|Hunger}}状态会随时间推移下降，可以通过使用[[{{tr|food}}]]{{tr|item}}来提高。当{{tr|player}}的{{tr|Hunger}}状态下降时，他们会做出[[{{tr|Emotes}}#常规|{{tr|Emote}}]]。
+** {{tr|player}}的{{tr|Hunger}}状态从[[{{tr|Peckish}}]]开始，将会持续五分钟。之后，{{tr|player}}的{{tr|Hunger}}状态将会变为[[{{tr|Hungry}}]]，持续五分钟，并且类似于[[{{tr|Weak}}]]{{tr|debuff}}降低{{tr|player}}的属性。
+** 最后，{{tr|player}}的{{tr|Hunger}}状态会变为[[{{tr|Starving}}]]，这会进一步降低{{tr|player}}的属性，且{{tr|player}}每秒会失去等同于最大{{tr|health}} 2% 的{{tr|health}}。
+** 食用任何{{tr|food}}将会立刻使{{tr|player}}的{{tr|Hunger}}{{tr|debuff}}变为对应的[[{{tr|Well Fed}}]]{{tr|buff}}。该{{tr|buff}}结束后，{{tr|player}}的{{tr|Hunger}}状态又将变为{{tr|Peckish}}。
+* {{tr|player}}会获得来自《{{tr|Don't Starve}}》角色的自定义受伤音效。{{tr|Male characters}}的音效和{{iwlink|dts|Wilson}}相同，{{tr|female characters}}的音效和{{iwlink|dts|Willow}}相同。
+
+== 其他更改 ==
+[[File:The Constant Effect.gif|thumb|300px|进入 The Constant {{tr|world}}后产生的{{tr|shader}}效果。]]
+
+* {{tr|The world}}拥有持续的{{tr|shader}}，会让{{tr|world}}显著变暗。在世界生成的过程中也能看到该效果。
+** 若玩家装备[[{{tr|Radio Thing}}]]，{{tr|The shader}}会变为正常。
+** {{tr|The shader}}在迷幻或复古[[{{tr|Lighting mode}}]]下不会生效。
+* 在普通{{tr|nights}}期间，{{tr|surface}}会完全变为黑暗。当[[{{tr|New Moon}}]]、[[{{tr|Full Moon}}]]、或[[{{tr|Blood Moon}}]]发生时，{{tr|player}}能够像在普通世界中一样看清{{tr|surface}}的事物。
+* 当{{tr|player}}进入完全黑暗的区域中 3 秒后，将会显示{{tr|status message}}“{{gameText|Game.DarknessDanger}}”，再经过 2 秒（总计进入黑暗区域中 5 秒）后，玩家将每秒固定受到 250 {{tr|base damage}}。这一持续性伤害将持续至玩家被任何光照亮，或玩家死亡。在{{tr|player}}被任何光照亮后，将停止受到伤害，上述的 5 秒伤害前计时会被重置，并显示{{tr|status message}}“{{gameText|Game.DarknessSafe}}”。{{source code ref|v=1.4.3.6|method=Terraria.GameContent.DontStarveDarknessDamageDealer.UpdateDarknessState / Terraria.GameContent.DontStarveDarknessDamageDealer.Update}}
+* 玩家接触或砍伐[[{{tr|Cactus}}|{{tr|Cacti}}]]时会受伤，其{{tr|base damage}}为 6。{{source code ref|v=1.4.3.6|method=Terraria.Player.ItemCheck_UseMiningTools_ActuallyUseMiningTool/Terraria.Collision.HurtTiles/Terraria.Player.Update}}
+* 暴露在天空下的[[{{tr|Torches}}]]、[[{{tr|Campfires}}]]、[[{{tr|Tiki Torch}}]]、和[[{{tr|Lamps}}]]会在下[[{{tr|Rain}}]]时“熄灭”。不过，其它似乎是基于火并产生光的{{tr|furniture}}（如[[{{tr|Candles}}]]、[[{{tr|Candelabras}}]]、[[{{tr|Furnace}}]]、[[{{tr|Fireplace}}]]、等等）将保持点亮。
+* 提高了《{{tr|Don't Starve}}》{{tr|item}}的掉落几率，这包括[[{{tr|Ham Bat}}]]、[[{{tr|Bat Bat}}]]、[[{{tr|Monster Meat}}]]、[[{{tr|Tentacle Spike}}]]、和[[{{tr|Glommer's Flower}}]]。[[{{tr|Abigail's Flower}}]]也拥有更高的生成几率。
+* 由[[{{tr|Traveling Merchant}}]]售卖的和《{{tr|Don't Starve}}》相关的[[{{tr|Paintings}}#来自旅商|{{tr|Paintings}}]]会更加常见。
+* 在[[{{tr|Expert}}]]{{tr|worlds}}中，拾取了掉落的[[{{tr|coins}}]]的[[{{tr|Spiders}}]]更容易消失。{{source code ref|v=1.4.3.6|method=Terraria.NPC.DespawnEncouragement_AIStyle3_Fighters_NotDiscouraged}}。
+* {{tr|background}}中的[[{{tr|Ambient entities|link=y}}#稀有{{tr|clouds}}|稀有{{tr|clouds}}]]会更加常见。
+** 在稀有{{tr|clouds}}中，和《{{tr|Don't Starve}}》相关的{{tr|clouds}}更加常见。
+
+== 世界图标 ==
+The Constant {{tr|World}}的{{tr|World icon}}是一棵源自{{tr|Don't Starve}}的{{iwlink|dts|Evergreen|常青树}}。
+
+<gallery>
+File:IconCorruptionDontStarve.png|{{tr|Pre-Hardmode Corruption world icon}}。
+File:IconCrimsonDontStarve.png|{{tr|Pre-Hardmode Crimson world icon}}。
+File:IconHallowCorruptionDontStarve.png|{{tr|Hardmode Corruption world icon}}。
+File:IconHallowCrimsonDontStarve.png|{{tr|Hardmode Crimson world icon}}。
+</gallery>
+
+== 小贴士 ==
+{{main|指南:The Constant}}
+* 早期的{{tr|food}}选择包括普通[[{{tr|Mushroom}}]]、[[{{tr|Trees}}#{{tr|Shaking}}|{{tr|shaking trees}}]]、将[[{{tr|Vertebra}}]]或[[{{tr|Rotten Chunk}}]]制作成[[{{tr|Monster Lasagna}}]]、和使[[{{tr|Merchant}}]]入住并购买[[{{tr|Bug Net}}]]（或者在他位于[[{{tr|Snow biome}}]]时购买[[{{tr|Marshmallow}}]]）。
+* [[{{tr|Mining armor}}|{{tr|Mining Helmet}}]]、[[{{tr|Jellyfish Necklace}}]]、和[[{{tr|Magiluminescence}}]]有助于在找到[[{{tr|light pets}}]]之前远离黑暗。
+* 若要在避免受到{{tr|cacti}}的伤害的同时保留{{tr|Desert enemy}}的生成，可在{{tr|Sand Block}}向上 2 格处放置[[{{tr|platforms}}]]。这样可以阻止{{tr|cacti}}生长，但仍然允许{{tr|enemies}}生成。
+
+== 花絮 ==
+* “The Constant”（永恒领域）直接参考了《{{tr|Don't Starve}}》中的{{iwlink|dts|The Constant|同名世界}}。
+* The Constant {{tr|seed}}中的一些世界生成机制参考了《{{tr|Don't Starve}}》中一些特定的{{iwlink|dts|Set Piece|布景}}或物品。
+** 小块的{{tr|Marble}}地复刻了{{tr|Don't Starve}}中的{{iwlink|dts|Set Piece#Marble Sculptures Set Piece|大理石雕像}}。
+** {{tr|surface}}上的{{tr|Spider Cave}}复刻了{{iwlink|dts|Spider Den|蜘蛛巢}}。
+* 在 {{tr|The Constant}} {{tr|seed}}中的部分游戏机制是基于《{{tr|Don't Starve}}》的游戏机制设计，这包括：
+** {{tr|The shader}}基于《{{tr|Don't Starve}}》中的{{tr|shader}}。
+** 世界中仅包含[[{{tr|Iron Ore}}]]和[[{{tr|Gold Ore}}]]的原因是《{{tr|Don't Starve}}》中只存在{{iwlink|dts|Iron Ore}}和{{iwlink|dts|Gold Nugget|金块}}。
+** [[{{tr|hunger}}]]机制基于《{{tr|Don't Starve}}》的{{iwlink|dts|Hunger}}机制。
+** 在《{{tr|Don't Starve}}》中，玩家也能够在{{iwlink|dts|Moon Cycle|Full Moon}}的{{tr|night}}期间正常地看清物体。
+*** 然而，在《{{tr|Don't Starve}}》中玩家不能在{{iwlink|dts|Moon Cycle|New Moons}}期间看清物体，这和''{{tr|Terraria}}''中的情况不同。
+** 玩家在黑暗的地方会受到伤害的机制基于《{{tr|Don't Starve}}》中的类似机制：处于完全黑暗中的生存者会被{{iwlink|dts|Charlie}}攻击。
+** 玩家会被[[{{tr|Cactus}}]]所伤害是基于《{{tr|Don't Starve}}》中的{{iwlink|dts|Cactus}}，后者会在玩家收获它时伤害玩家 6 {{tr|health}}。
+** 暴露的[[{{tr|Torches}}]]和[[{{tr|Campfires}}]]在下{{tr|Rain}}时熄灭，而在《{{tr|Don't Starve}}》中，{{iwlink|dts|Rain}}会让{{iwlink|dts|Torch}}和{{iwlink|dts|Campfire}}更快燃尽。
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|The Constant {{tr|Seeds}}中，[[{{tr|Cacti}}]]现在会被[[{{tr|Dangersense Potion}}]]高亮显示。}}
+{{history|Desktop 1.4.4|
+** 黑暗伤害由 50 提升至 250，且受伤前的等待时间由 8 秒降低至 4 秒。
+** 如果玩家处于{{tr|Peckish}}、{{tr|Hungry}}、或{{tr|Starving}}，食用普通的[[{{tr|Mushroom}}]]会将[[{{tr|hunger}}]]重置为完整持续时间的{{tr|Peckish}}。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Secret world seeds}}
+{{Game mechanics}}
+
+{{language info|en=The Constant}}

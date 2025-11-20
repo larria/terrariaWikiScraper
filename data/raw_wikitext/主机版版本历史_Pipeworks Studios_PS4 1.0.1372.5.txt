@@ -1,0 +1,47 @@
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.3.1]] 页面以查看添加的完整列表。下方是 {{tr|bug}} 修复列表。''
+
+; 稳定性/崩溃
+* Resolved a crash that would occur after a non-host player would exit a multiplayer session
+* Fixed a bug where a crash could occur during the generation of a 2nd world using a fresh profile
+* Resolved a crash that would trigger from signing in and out of player profiles on Xbox One
+* Fixed a bug where menu functionality would fail after performing a sign-in change
+* Fixed a bug where all the players would get kicked out of a session when one of them was exploring the Underworld biome
+* Resolved a bug where the player was unable to exit the game session via save & exit after resuming the title from connected standby
+* Fixed a bug where the game would crash after invoking a chest after re-hosting the same world
+* Resolved a multiplayer bug where the player would get kicked out of the session after stepping on a land mine
+* Resolved several other crash bugs around console profile usage
+* Fixed a bug where a player was unable to host or join a multiplayer session after previously exiting from that session when a secondary player was in the character selection screen
+* Resolved a bug where the game would crash during world generation after deleting save data
+* Fixed a few other crashes related to network connectivity on the world generation screen
+
+; 功能
+* Resolved a bug where the Wormhole potion lacked functionality for the player in a multiplayer or cooperative session
+* Fixed a bug where graphical corruption was observed occasionally when using spears
+* Resolved a bug where the players were able to fire an infinite number of rockets after placing them
+* Fixed a bug where accomplishments that have the criteria to defeat bosses/enemies failed to unlock in multiplayer after fulfilling the criteria
+* Resolved a bug where the grapple functionality of “Lunar Hook’ was divided between the players
+* Fixed a bug where a Hardcore character failed to navigate back to the spawn point set by the player
+* Resolved a bug where certain weapons and tools would stop functioning while using them continuously
+* Fixed a bug where incorrect game behavior could occur after performing a connected stand-buy during world loading
+* Resolved a bug where information stats were carried over to the main menu after a LAN ejection or force closing a multiplayer session
+* Fixed a bug where the ‘Lock on Priority’ mark carried forward to the full-screen map
+* Resolved a bug where certain debuffs didn’t apply for the player when inflicted by the host in PvP
+* Fixed a bug where in some rare instances the player was unable to create a new character
+* Resolved a bug where multiplayer session invitations were sent incorrectly
+
+; 艺术/图像/文本
+* Fixed a bug where graphical corruption was observed occasionally when using spears
+* Resolved a bug where Yoraizor’s spell became distorted over the character’s eyes while flying
+* Fixed a bug where the lava lamp caused highlighted doors to flicker
+* Resolved a bug where the avatars feet were missing from the dresser preview UI
+* Fixed a bug where multiple menus could be seen for a second after adding additional split-screen players
+* Resolved a bug where the Mushroom statue did not animate when activated
+* Fixed dozens of other art inconsistencies between the console and PC versions
+* Resolved a few instances of graphical corruption when zooming
+* 此次更新还包括了大量本地化修复
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Pipeworks Studios/PS4 1.0.1372.5}}
+</noinclude>

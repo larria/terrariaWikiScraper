@@ -1,0 +1,32 @@
+{{npc infobox
+| image = Detonating Bubble.gif
+| auto = 371
+| type = Projectile NPC
+| environment = Ocean
+| hardmode = yes
+| debuff = Wet
+| debuffchance = 100%
+| debuffduration = {{duration|rawseconds=3–8}}
+| sound1 = NPC Killed 19.wav
+| soundcaption1 = 被召唤
+}}
+
+'''{{tr|Detonating Bubble}}'''是一个[[{{tr|projectile NPC}}|{{tr|projectile enemy}}]]，由[[{{tr|Duke Fishron}}]]发射。它会以最近的玩家为目标，直接飞向他们，并在到达目标或移动一段距离后自我摧毁。也可以用任何[[{{tr|weapon}}]]或能造成[[{{tr|damage}}]]的[[{{tr|tool}}]]一击摧毁它。{{tr|Detonating Bubble}}的{{tr|The movement speed}}受到[[{{tr|wind}}]]的影响。{{tr|Detonating Bubble}}的{{tr|hitbox}}初始小于其外观，但{{tr|hitbox}}的大小在其被摧毁时会突然变大（从约 2×2 格矩形变为 6×6 格）{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 70</code> 代码段。}}，在更远的距离造成伤害。
+
+{{tr|Duke Fishron}}会召唤不同大小的{{tr|Detonating Bubbles}}，在第一阶段中为向玩家喷洒，而在第二阶段中会在转圈时召唤。
+
+== 历史 ==
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Detonating Bubble}}

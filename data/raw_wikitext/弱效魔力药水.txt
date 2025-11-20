@@ -1,0 +1,46 @@
+{{item infobox
+| auto = 110
+| type = Potion
+| buy = @@@@ {{eicons|1.3.0.1|small=y}} / {{sc|2}} {{eicons|Ocram|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|small=y}} / {{cc|40}} {{eicons|Ocram|small=y}}
+| listcat = Potion ingredients
+| tags = Loot/Plunder / vendor:Merchant
+}}
+
+'''{{tr|Lesser Mana Potion}}'''使用时回复 50 点[[{{tr|mana}}]]。它能够在[[{{tr|Merchant}}]]处以每个 {{eicons|1.3.0.1}} {{sc|1}} / {{eicons|Ocram}} {{sc|2}} 的价格买到。
+
+自然放置的{{tr|Lesser Mana Potion}}经常出现在[[{{tr|Dungeon}}]]中的[[{{tr|platform}}]]上（和[[{{tr|Lesser Healing Potions}}]]一起）。当以放置的形式遇到时，它们可以用作[[{{tr|Bottle (crafting station)}}|{{tr|Placed Bottle}}]][[{{tr|crafting station}}]]。它们在[[{{tr|Minimap}}|{{tr|map}}]]上还会显示“瓶子”[[{{tr|tooltip}}]]。它们可以用[[{{tr|pickaxe}}]]释放并收取，但不能由[[{{tr|player}}]]放置。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Lesser Mana Potion|expectedrows=3}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在用于制作[[{{tr|Decorative Mana Potion}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 堆叠数量由 25 提升至 50。
+** 买入价格由 {{sc|2}} 降至 {{sc|1}}。
+** 不能再用于制作[[{{tr|Lesser Restoration Potion}}]]。}}
+{{history|Desktop 1.2.4.1|堆叠上限由 15 提升至 25。}}
+{{history|Desktop 1.2.3|
+** 不再能制作，现在能在任何时候以 {{sc|2}} 的价格在{{tr|merchant}}处买到（之前只能在{{tr|mana}}达到最大值时买到）。
+**现在使用时会触发[[{{tr|Mana Sickness}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.2|
+** 堆叠上限由 20 降至 15。
+** 买入/卖出价格由 {{sc|1}} / {{cc|20}} 升至 {{sc|2}} / {{cc|40}}。}}
+{{history|Desktop 1.1|
+** 堆叠上限由 30 降至 20。
+** 买入/卖出价格由 {{sc|10}} / {{sc|2}} 降至 {{sc|1}} / {{cc|20}}。}}
+{{history|Desktop 1.0.6.1|{{tr|Mana}}回复量由 100 点降至 50 点。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Lesser Mana Potion}}

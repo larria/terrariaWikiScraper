@@ -1,0 +1,244 @@
+[[File:Fall damage (demo).gif|thumb|right|{{tr|fall damage}}示例。]]
+
+'''{{tr|Fall damage}}'''指的是玩家{{tr|character}}因长距离掉落而受到的伤害。它是基础[[{{tr|game mechanics}}]]之一。{{tr|Fall damage}}仅在掉落距离超过固定值后发生，这之后伤害量会随经过的距离线性增加。如果伤害大于等于玩家的当前生命值，玩家将会在落地时[[{{tr|Death}}]]。和所有其他{{tr|damage}}一样，它会提供[[{{tr|invincibility frames}}]]，且可以被玩家的[[{{tr|defense}}]]和[[{{tr|damage reduction}}]]降低。
+
+{{tr|Fall damage}}对于所有实心表面运作方式都相同，但它在浸没于[[{{tr|water}}]]、[[{{tr|lava}}]]、或[[{{tr|honey}}]]中''不会''发生，在特定情况下也不会发生（如装备了诸如[[{{tr|Lava Waders}}]]等{{tr|accessory}}时落在{{tr|liquid}}表面，或者乘坐[[{{tr|Minecart}}]]落在[[{{tr|Minecart Track}}]]上）。{{tr|Fall damage}}也会受到其他[[{{tr|buffs}}]]和[[{{tr|debuffs}}]]的影响，如{{eil|Stoned}}。见[[#交互|交互]]获取所有和{{tr|fall damage}}有交互的事物。
+
+== 公式 ==
+最简单的情况——穿过空气直接落在固体表面，不使用特殊{{tr|accessory}}或{{tr|buffs}}——此时{{tr|fall damage}}受掉落距离影响。当掉落距离小于等于“安全掉落距离”时，不会受到伤害。默认的安全掉落距离为 25 个{{tr|tiles}}，部分物品可以增加此距离（见[[#{{tr|Items}}|下方]]）。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}超过此安全掉落距离时，掉落距离每超过一格将受到 10 {{tr|damage}}。因此，在掉落距离大于安全掉落距离时，公式为：<code>''{{tr|fall damage}}'' = 10×(''掉落距离'' - ''安全掉落距离'')</code>。
+
+如果玩家受到{{eil|Stoned}}影响，{{tr|fall damage}}使用的是以下公式：<code>''{{tr|fall damage}}''= 20×(''掉落距离''- 2)</code>。不过，由于{{tr|Stoned}}会先对玩家造成一些伤害，在掉落短距离时其导致的{{tr|invincibility frame}}可能仍然会阻止{{tr|fall damage}}。
+
+最终所受伤害和提供的{{tr|invincibility frame}}会以和其他来源的伤害相同的方式受到[[{{tr|defense}}]]、[[{{tr|damage reduction}}]]、和[[{{tr|Cross Necklace}}]]的影响。
+
+== 交互 ==
+=== 物品 ===
+{{options/set|item|mode=table}}
+{| class="terraria lined"
+! colspan="2" | {{tr|Item}} !! {{tr|Effect}}
+|-
+| {{item|Grappling Hook|Hooks|link={{tr|Hooks}}}}
+| 在抓住一个{{tr|tile}}后重置{{tr|fall damage}}。
+|-
+| {{item|Umbrella}}
+| rowspan="2" | 手持时消除{{tr|fall damage}}。
+|-
+| {{item|Tragic Umbrella}}
+|-
+| {{item|Magic Mirror|note2=（及其升级/等价物）}}
+| rowspan="7" | 传送后重置{{tr|fall damage}}。
+|-
+| {{item|Recall Potion}}
+|-
+| {{item|Potion of Return}}
+|-
+| {{item|Teleportation Potion}}
+|-
+| {{item|Wormhole Potion}}
+|-
+| {{item|Magic Conch}}
+|-
+| {{item|Demon Conch}}
+|-
+| {{item|Djinn's Curse}}
+| 消除{{tr|fall damage}}。
+|-
+| {{item|Gravitation Potion}}
+| 在翻转重力时重置{{tr|fall damage}}。
+|}
+
+=== 配饰 ===
+{| class="terraria lined"
+! colspan="2" | {{tr|Accessory}} !! 效果{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional}}
+|-
+| {{item|Lucky Horseshoe|note2=（及其升级）}}
+| rowspan="2" | 消除{{tr|fall damage}}。
+|-
+| {{item|Wings|image=Angel Wings.png}}
+|-
+| {{item|Moon Lord Legs}}
+| 将最大安全掉落距离增加 10 格。
+{{#lstmap:{{equipinfo/list|extraFall|sep=&}}|&|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}}
+| 将最大安全掉落距离增加 {{equipinfo|id=@@@@|stat=extraFall}} 格。
+</esc>|}}
+|-
+| {{item|Climbing Claws}}
+| rowspan="4" | 在抓住{{tr|blocks}}侧面后重置{{tr|fall damage}}。
+|-
+| {{item|Shoe Spikes}}
+|-
+| {{item|Tiger Climbing Gear}}
+|-
+| {{item|Master Ninja Gear}}
+|-
+| {{item|Water Walking Boots}}
+| rowspan="2" | 落到[[{{tr|water}}]]、[[{{tr|honey}}]]、或{{eil|shimmer}}上时消除{{tr|fall damage}}。
+|-
+| {{item|Obsidian Water Walking Boots}}
+|-
+| {{item|Lava Waders}}
+| rowspan="2" | 落到[[{{tr|liquids}}]]上时消除{{tr|fall damage}}。
+|-
+| {{item|Terraspark Boots}}
+|-
+| {{item|Rocket Boots|note2=（及其升级）}}
+| 在激活飞行后重置{{tr|fall damage}}。
+|-
+| {{item|Flying Carpet}}
+| 在激活后重置{{tr|fall damage}}。
+|-
+| {{item|Cloud in a Bottle|Extra jump accessories|link={{tr|Extra jumps}}}}
+| 在跳跃后重置{{tr|fall damage}}。
+|-
+| {{item|Gravity Globe}}
+| 在翻转重力时重置{{tr|fall damage}}。
+|}
+
+=== 坐骑 ===
+{| class="terraria lined"
+! colspan="2" | {{tr|Item}}
+! colspan="2" | {{tr|Mount}}
+! 效果{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Mount.Initialize}}
+|-
+| {{item|Slimy Saddle}}
+| {{item|Slime Mount}}
+| {{tr|fall damage}}降低 50%。
+|-
+| {{item|Pogo Stick}}
+| {{item|Pogo Stick Mount}}
+| {{tr|fall damage}}降低 60%。
+|-
+| {{item|Golf Cart Keys}}
+| {{item|Golf Cart}}
+| rowspan="5" | {{tr|fall damage}}降低 80%。
+|-
+| {{item|Mollusk Whistle}}
+| {{item|Flamingo}}
+|-
+| {{item|Blessed Apple}}
+| {{item|Unicorn Mount}}
+|-
+| {{item|Ancient Horn}}
+| {{item|Basilisk Mount}}
+|-
+| {{item|Goat Skull}}
+| {{item|Goat Mount}}
+|-
+| {{item|Hexxed Branch}}
+| {{item|Tree Mount}}
+| rowspan="2" | {{tr|fall damage}}降低 90%。
+|-
+| {{item|Lilith's Necklace}}
+| {{item|Wolf Mount|image=Wolf (mount).png}}
+|-
+| {{item|Brain Scrambler (item)}}
+| {{item|Scutlix Mount}}
+| rowspan="3" | {{tr|fall damage}}降低至 1。<!-- These ones have mount.FallDamage set to 0 which originally made fall damage to be 0, however when calculating damage taken the damage is reset to 1 if the damage is less than 1.-->
+|-
+| {{item|Superheated Blood}}
+| {{item|Lava Shark Mount|ext=gif}}
+|-
+| {{item|Toy Tank}}
+| {{item|Santank Mount}}
+|-
+| {{item|Minecart|s|link={{tr|Minecarts}}}}
+| colspan="2" style="text-align:center" | {{note|small=y|paren=y|所有{{tr|minecarts}}}}
+| 落在[[{{tr|Minecart Track}}]]上时消除{{tr|fall damage}}。
+|-
+| {{item|Fuzzy Carrot}}
+| {{item|Bunny Mount}}
+| rowspan="10" | 消除{{tr|fall damage}}。
+|-
+| {{item|Honeyed Goggles}}
+| {{item|Bee Mount}}
+|-
+| {{item|Scaly Truffle}}
+| {{item|Pigron Mount}}
+|-
+| {{item|Gelatinous Pillion}}
+| {{item|Winged Slime Mount}}
+|-
+| {{item|Reindeer Bells}}
+| {{item|Rudolph}}
+|-
+| {{item|Dark Mage's Tome}}
+| {{item|Book Mount}}
+|-
+| {{item|Cosmic Car Key}}
+| {{item|UFO Mount}}
+|-
+| {{item|Drill Containment Unit}}
+| {{item|Drill Mount}}
+|-
+| {{item|The Black Spot}}
+| {{item|Pirate Ship Mount}}
+|-
+| {{item|Witch's Broom}}
+| {{item|Witch's Broom|image=Witch's Broom (mount).png}}
+|}
+
+=== {{tr|Tiles}} ===
+{| class="terraria lined"
+! colspan="2" | {{tr|Tile}} !! 效果
+|-
+| {{item|Cobweb}}
+| rowspan="9" | 落到其上时消除{{tr|fall damage}}。
+|-
+| {{item|Pink Slime Block}}
+|-
+| {{item|Silly Pink Balloon}}
+|-
+| {{item|Silly Purple Balloon}}
+|-
+| {{item|Silly Green Balloon}}
+|-
+| {{item|Cloud|note2=（{{eicons|1.4.0.1}}）}}
+|-
+| {{item|Rain Cloud|note2=（{{eicons|1.4.0.1}}）}}
+|-
+| {{item|Snow Cloud}}
+|-
+| {{item|Poo}}
+|-
+| {{item|Liquids|image=Water.png/Lava.png/Honey.png/Shimmer.gif|note2=（大于 1 格深）}}
+| 落到其中时消除{{tr|fall damage}}。
+|}
+
+=== {{tr|Buffs}}/{{tr|Debuffs}} ===
+{| class="terraria lined"
+! colspan="2" | {{tr|Buff}}/{{tr|Debuff}} !! 效果
+|-
+| {{item|Featherfall}}
+| 消除{{tr|fall damage}}。
+|-
+| {{item|Water Walking}}
+| 落到[[{{tr|liquids}}]]上时消除{{tr|fall damage}}。
+|-
+| {{item|Stoned}}
+| 提高{{tr|fall damage}}，且无视提供{{tr|fall damage}}免疫的{{tr|accessories}}的效果。
+|}{{options/restore|item|reset}}
+
+=== 敌怪 ===
+在{{eversions|1.4.0.1}}中，若玩家被{{tr|enemy}}[[{{tr|knockback}}]]或减速，{{tr|fall damage}}会被重置。
+
+在{{eversions|1.4.0.1|invert=y}}中，{{tr|enemies}}不会重置玩家的{{tr|fall damage}}。
+
+== 成就 ==
+{{achievement|name=Lucky Break}}
+{{achievement|name=Safe Fall}}
+
+== 小贴士 ==
+* 通过利用[[{{tr|hoik}}]]可以建造使用{{tr|fall damage}}的[[{{tr|invincibility frames}}]]机器。
+* {{eicons|1.4.0.1|invert=y}} 玩家在没有{{tr|fall damage}}或[[{{tr|knockback}}]]保护时，在较长的竖井（如[[{{tr|hellevators}}]]）中下落时应当小心，因为{{tr|enemies}}不会重置玩家的{{tr|fall damage}}。
+
+== 花絮 ==
+* 在{{tr|Small world}}中，具有 0 {{tr|defense}}玩家可以受到的最高{{tr|fall damage}}是 10090，从世界顶端掉落到[[{{tr|Underworld}}]]底部。在{{tr|Large world}}里，最高{{tr|fall damage}}则是 43620。
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Fall damage}}

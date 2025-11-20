@@ -1,0 +1,75 @@
+{{item infobox
+| imagealt = [[File:Cooked Fish.png]] [[File:Shucked Oyster.png]] [[File:Cooked Shrimp.png]] [[File:Sashimi.png]] [[File:Lobster Tail.png]] [[File:Seafood Dinner.png]]
+| type = Potion/Food
+| stack = {{iteminfo|Cooked Fish|stack}}
+| consumable = true
+| use = {{iteminfo|Cooked Fish|use time}}
+| sounduse = {{iteminfo|Cooked Fish|use sound|raw=y}}.wav
+| cargo = no
+}}
+{{quotation|[[{{tr|Angler}}]]|{{gameText|LegacyDialog.340|x_WorldName=世界}}}}
+{{see also|食物与饮料药水}}
+
+'''{{tr|Fishing foods}}'''是一种消耗性[[{{tr|potion}}]]类的物品，由在[[{{tr|fishing}}]]期间捕获的各种鱼类制成。它们在食用时会给予[[{{tr|Well Fed}}]]或[[{{tr|Plenty Satisfied}}]]的[[{{tr|buff}}]]。
+
+它们有六个 {{eicons|1.4.0.1}} / 三个 {{eicons|1.4.0.1|invert=y}} 变种：'''{{tr|Cooked Fish}}'''、'''{{tr|Cooked Shrimp}}'''、'''{{tr|Sashimi}}'''、'''{{eil|Shucked Oyster|nolink=yes}}'''、'''{{eil|Seafood Dinner|nolink=yes}}'''和'''{{eil|Lobster Tail|nolink=yes}}'''。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink\buff\rarity\sell\tooltip\col:notes|colsep=\|extargs=nolink}}
+{| class="terraria sortable lined"
+! colspan = 2 | {{tr|Fishing foods item}}
+! 所获{{tr|buff}}
+! {{tr|Rarity}}
+! 卖出价
+! {{tr|Tooltip}}
+! 备注
+{{item infobox | auto = 2425
+| col:notes =
+* {{eicons|1.3.0.1|invert=y}} 提供持续 3 分钟的{{tr|buff}}。
+}}
+{{item infobox | auto = 2426
+| col:notes =
+* {{eicons|1.3.0.1|invert=y}} 提供持续 3 分钟的[[{{tr|Well Fed}}]]。
+}}
+{{item infobox | auto = 2427
+| col:notes =
+* {{eicons|1.3.0.1|invert=y}} 提供持续 3 分钟的[[{{tr|Well Fed}}]]。
+}}
+{{item infobox | auto = 4403 }}
+{{item infobox | auto = 4034 }}
+{{item infobox | auto = 4411
+| col:notes =
+* 打开[[{{tr|Oyster}}]]得到。
+}}
+|}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|showresultid=y|link=no|result=Cooked Fish/Cooked Shrimp/Sashimi/Lobster Tail/Seafood Dinner|expectedrows=30}}
+
+== 花絮 ==
+* 尽管{{tr|Seafood Dinner}}描绘的是螃蟹，但只能用{{tr|fish}}来制作。
+* {{tr|Cooked Shrimp}}的{{tr|tooltip}}：''“烧烤，水煮，火烤，烘烤……”'' 是对 1994 年的美国喜剧电影《''{{wikipedia|Forrest Gump|阿甘正传（Forrest Gump）}}''》的引用。
+* {{tr|Cooked Fish}}的{{tr|tooltip}}：''“薯条在哪里！？” ''指的是一种叫做{{wikipedia|Fish and chips|炸鱼薯条（Fish and chips）}}的英国菜。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Seafood Dinner}}现在提供{{tr|Plenty Satisfied}}而不是{{tr|Exquisitely Stuffed}}。
+*** {{tr|Duration}}从 4 {{tr|minutes}}增加至 14 {{tr|minutes}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Seafood Dinner}}和{{tr|Lobster Tail}}。
+** 添加了[[{{tr|Plenty Satisfied}}]]和[[{{tr|Exquisitely Stuffed}}]]增益。
+** {{tr|Cooked Fish}}的[[{{tr|Well Fed}}]]增益持续时间从 20 分钟减少至 8 分钟
+** {{tr|Cooked Shrimp}}和{{tr|Sashimi}}现在会提供{{tr|Plenty Satisfied}}增益而不是{{tr|Well Fed}}。}}
+{{history|Desktop 1.3.0.1|增益持续时间从 3 分钟增加至 20 分钟。}}
+{{history|Desktop 1.2.4.1|{{tr|Cooked Fish}}和{{tr|Cooked Shrimp}}将在{{tr|Cooking Pot}}上制作而不是{{tr|Furnace}}。}}
+{{history|Desktop 1.2.4|引入{{tr|Cooked Fish}}、{{tr|Cooked Shrimp}}和{{tr|Sashimi}}。}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+[[Category:食物物品| ]]
+[[Category:{{tr|Potion items}}| ]]
+
+{{language info|en=Fishing foods}}

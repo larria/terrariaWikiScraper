@@ -1,0 +1,79 @@
+{{exclusive|Old One's Army}}
+{{npc infobox |tabs = no
+| namenote =
+| image = Kobold.gif
+| environment = Old One's Army
+| auto = 572
+| type = Etherian Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| hardmode = yes
+| sound1 = Dd2 kobold explosion 0.wav, Dd2 kobold explosion 1.wav, Dd2 kobold explosion 2.wav
+| soundcaption1 = 爆炸
+| sound2 = Dd2 kobold ignite.wav, Dd2 kobold ignite loop.wav
+| soundcaption2 = 点燃
+| sound3 = Dd2 kobold scream charge loop.wav
+| soundcaption3 = 冲锋
+}}
+
+'''{{tr|Kobold}}'''是一种出现在[[{{tr|Old One's Army}}]][[{{tr|event}}]]中的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。它生成于 T2 的 2–7 波和 T3 的 2–5 波。
+
+当它靠近{{tr|player}}或{{tr|Eternia Crystal}}时，它会显示一个带有感叹号的对话泡泡框、点燃导火索，然后开始朝着最近的目标猛冲。当它到达目标处或导火索燃尽时，它会爆炸，伤害爆炸波及的所有目标。爆炸不会摧毁{{tr|tiles}}，类似于[[{{tr|Grenade}}]]。
+
+像其他{{tr|Old One's Army}}的成员一样，如果{{tr|Kobold}}的目标距离太远或被阻挡，它会进入虚化状态，使其能够向上飘起并穿过{{tr|tiles}}。{{tr|Kobolds}}还不受[[{{tr|Teleporter}}]]或[[{{tr|Lava}}]]影响，并且只会受到一半[[{{tr|Trap}}]]伤害。
+
+{{tr|The Kobold}}需要 200 击杀才能得到它对应的{{tr|banner}}，而非通常的 50 击杀。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 572
+| image = Kobold.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{tr|explosion}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_107_ImprovedWalkers}}
+}}
+{{npc infobox
+| auto = 573
+| image = Kobold.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{tr|explosion}}}} <ref name="ai"/>
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 花絮 ==
+* {{tr|Kobold}}是唯一能使用[[{{tr|emote}}]]的{{tr|enemy}}。
+* {{维基百科|Kobold|Kobold（{{tr|Kobold}}的英文原名，其他中文翻译包括“狗头人”等）}}是源于日耳曼民间传说的虚构人形生物，通常认为它是矛盾的生物，会充当乐于助人的家务工作者，但也以顽皮恶毒的骗子而闻名，它们会在所居住的地方（比如地下矿井）搞恶作剧制造混乱。
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Kobold}}
+
+== 历史 ==
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Kobold}}

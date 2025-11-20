@@ -1,0 +1,78 @@
+{{third party disclaimer}}
+
+'''{{tr|Inventory editor}}'''是一种第三方程序，允许从本地人物的[[{{tr|inventory}}]]中添加或移除{{tr|items}}，并且在很多情况下，还可以编辑其他人物数据。
+
+{{tr|Inventory editors}}主要是为{{desktop version}}的''[[{{tr|Terraria}}]]''设计的。强烈建议在使用任何类型的{{tr|inventory editor}}之前备份{{tr|character files}}。
+
+== Terrasavr ==
+{{software infobox
+| name = Terrasavr
+| platform = 所有（基于 Web）
+| terrariaversion = 1.4.4.9
+| author = [http://yal.cc/ YellowAfterlife]
+| download =
+* [http://yal.cc/r/terrasavr/ yal.cc]
+* [http://yellowafterlife.itch.io/terrasavr itch.io]
+}}
+
+Terrasavr 是个基于 web 的{{tr|inventory}}和人物{{tr|editor}}，带有对用户友好的界面。它使用起来是完全安全的，因为它并不会以任何方式和本地''{{tr|Terraria}}''目录中的文件进行交互。注意当保存人物文件时，必须将其重命名为 <code>''&lt;选定的名字&gt;''.plr</code> 才能在游戏中使用。
+
+从{{mobile}} [[{{tr|Mobile 1.3.0.7}}|{{tr|1.3.0.7}}]] 开始，这个{{tr|inventory editor}}也能用于移动设备。人物文件应当位于：
+
+* {{icon/android}} <code>/sdcard/Android/data/com.and.games505.TerrariaPaid/Players</code> ''或'' <code>/storage/emulated/0/Android/data/com.and.games505.TerrariaPaid/Players</code>。
+* {{icon/ios}} <code>浏览 > 我的（设备名） > Terraria > Players</code>。{{note|small=y|paren=y|译注：使用“文件”App}}
+
+用户可能希望在移动设备上以横屏模式使用，这样界面元素就不会被切掉。
+
+[[File:Terrasavr screenshot.png|430px]]
+
+== TManager==
+{{software infobox
+| name = TManager
+| platform = {{icon/android}}
+| terrariaversion = 1.4.0.5
+| author = [https://jbro129.com/ Jbro129]
+| download =
+* [https://play.google.com/store/apps/details?id=com.jbro129.tmanager Google Play Store]
+|image=|version=}}
+
+TManager 是个免费的移动版{{tr|Terraria}}中心 app，用户在其中可以探索并下载{{tr|world and players}}。TManager 最近推出了一个功能齐全的物品栏编辑器，支持编辑人物的细节、{{tr|inventory}}、[[{{tr|Piggy Bank}}]]、[[{{tr|Safe}}]]、[[{{tr|Tools}}]]、[[{{tr|Defender's Forge}}]]、[[{{tr|Void Vault}}]]、和[[{{tr|Buffs}}]]。
+[[File:TManager Player Editor.png|alt=TManager 玩家编辑器|none|thumb|TManager 玩家编辑器]] 
+
+==Terraria InvEdit ==
+{{software infobox
+| name = Terraria InvEdit
+| platform = {{icon|windows}}
+| version = 7.0.0
+| terrariaversion = 1.3.5.3
+| author = [https://forums.terraria.org/index.php?members/shoot.554/ Shoot]
+| download = [https://mega.nz/#!I3ZiwQpD!lAPxzYwk12WyXOv2NvuDvE_CpZ-uKsKkJjgaw9K9dr0 Mega]
+}}
+
+Terraria InvEdit 是个基于 Windows 的{{tr|inventory}}和人物编辑器，旨在兼容 Steam。其作者似乎已经放弃它了。<ref>{{forums thread|1-3-5-3-terraria-inventory-editor-abandoned.368/page-14#post-1626458|&#91;1.3.5.3&#93; Terraria Inventory Editor (ABANDONED)}} {{small|2018 年 8 月 29 日}}</ref>
+
+该应用程序的[https://github.com/ChbShoot/tinvedit 源代码]已经向公众发布，如果有人想，可以用它来更新编辑器以使之可用于新版本的《''{{tr|Terraria}}''》。
+
+[[File:Terraria Inventory Editor screenshot buffs.png|472x472px]]
+
+== TR Save Editor==
+{{software infobox
+| name = TR Save Editor
+| platform = {{icon/android}}
+| terrariaversion = 1.4.4.9
+| author = aaa1115910
+| download =
+* [https://play.google.com/store/apps/details?id=top.juruo.terrariasaveeditor Google Play Store]
+* [https://www.coolapk.com/apk/top.juruo.terrariasaveconverter 酷安]
+|image=|version=}}
+
+TR Save Editor 是一个针对泰拉瑞亚移动版的免费存档编辑器，它支持几乎所有的人物编辑功能和一部分的世界编辑功能。
+
+[[File:TR Save Editor.png|none|thumb]]
+
+== 参考 ==
+{{reflist}}
+
+{{Software navigation}}
+
+{{language info|en=Inventory editors}}

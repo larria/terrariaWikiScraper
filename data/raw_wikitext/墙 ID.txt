@@ -1,0 +1,77 @@
+<div class="ajaxHide">
+__FORCETOC__
+{{Main|数据 ID}}
+此页面包含有《[[{{tr|Terraria}}]]》游戏代码内部用于引用[[{{tr|background walls}}]]的'''{{tr|wall ID}}''' 的可排序列表。此信息对于研究性目的或开发诸如[[{{tr|Mod}}]]和[[地图查看器]]之类的第三方软件会很有用。
+
+== ID 列表 ==
+</div>
+{| class="terraria sortable align-center" id="table-walls"
+! data-sort-type="number" | {{tr|ID}}
+! 名称
+! class="unsortable" | 放置后图像
+! {{tr|Internal name}}
+! [[{{tr|Safe wall}}]]{{footnote|在内部也被称为 <code>wallHouse</code>。}} <!--
+// reduced loop count, since default loop count limit is only 100
+-->{{#vardefine:i|0}}{{#while:| {{#ifexpr: {{#var:i}} < {{#expr:{{getWallInfo||count}}/5}} | true }} | {{#vardefine:i|{{#expr:{{#var:i}}+1}}}}<!-- for $i = 1 to ($maxID/5)
+-->{{#ifexpr:{{#vardefineecho:id|{{#expr:{{#var:i}}*5-4}}}}<={{getWallInfo||count}}|<nowiki/>
+{{!}}-
+{{!}} {{#var:id}}
+{{!}} {{eil|{{getWallInfo|{{#var:id}}|page}}|{{getWallInfo|{{#var:id}}|name}}}}
+{{!}} [[File:{{getWallInfo|{{#var:id}}|imagePlaced}}]]
+{{!}} <code>{{getWallInfo|{{#var:id}}|internalName}}</code>
+{{!}} {{#if:{{getWallInfo|{{#var:id}}|safe}}|{{yes}}|{{no}}}}
+}}{{#ifexpr:{{#vardefineecho:id|{{#expr:{{#var:i}}*5-3}}}}<={{getWallInfo||count}}|<nowiki/>
+{{!}}-
+{{!}} {{#var:id}}
+{{!}} {{eil|{{getWallInfo|{{#var:id}}|page}}|{{getWallInfo|{{#var:id}}|name}}}}
+{{!}} [[File:{{getWallInfo|{{#var:id}}|imagePlaced}}]]
+{{!}} <code>{{getWallInfo|{{#var:id}}|internalName}}</code>
+{{!}} {{#if:{{getWallInfo|{{#var:id}}|safe}}|{{yes}}|{{no}}}}
+}}{{#ifexpr:{{#vardefineecho:id|{{#expr:{{#var:i}}*5-2}}}}<={{getWallInfo||count}}|<nowiki/>
+{{!}}-
+{{!}} {{#var:id}}
+{{!}} {{eil|{{getWallInfo|{{#var:id}}|page}}|{{getWallInfo|{{#var:id}}|name}}}}
+{{!}} [[File:{{getWallInfo|{{#var:id}}|imagePlaced}}]]
+{{!}} <code>{{getWallInfo|{{#var:id}}|internalName}}</code>
+{{!}} {{#if:{{getWallInfo|{{#var:id}}|safe}}|{{yes}}|{{no}}}}
+}}{{#ifexpr:{{#vardefineecho:id|{{#expr:{{#var:i}}*5-1}}}}<={{getWallInfo||count}}|<nowiki/>
+{{!}}-
+{{!}} {{#var:id}}
+{{!}} {{eil|{{getWallInfo|{{#var:id}}|page}}|{{getWallInfo|{{#var:id}}|name}}}}
+{{!}} [[File:{{getWallInfo|{{#var:id}}|imagePlaced}}]]
+{{!}} <code>{{getWallInfo|{{#var:id}}|internalName}}</code>
+{{!}} {{#if:{{getWallInfo|{{#var:id}}|safe}}|{{yes}}|{{no}}}}
+}}{{#ifexpr:{{#vardefineecho:id|{{#expr:{{#var:i}}*5-0}}}}<={{getWallInfo||count}}|<nowiki/>
+{{!}}-
+{{!}} {{#var:id}}
+{{!}} {{eil|{{getWallInfo|{{#var:id}}|page}}|{{getWallInfo|{{#var:id}}|name}}}}
+{{!}} [[File:{{getWallInfo|{{#var:id}}|imagePlaced}}]]
+{{!}} <code>{{getWallInfo|{{#var:id}}|internalName}}</code>
+{{!}} {{#if:{{getWallInfo|{{#var:id}}|safe}}|{{yes}}|{{no}}}}
+}}}}
+|}
+<div class="ajaxHide">
+== 历史 ==
+{{history|Desktop 1.4.4|添加了 316–346 的 {{tr|IDs}}。}}
+{{history|Desktop 1.4.0.1|添加了 231–315 的 {{tr|IDs}}。}}
+{{history|Desktop 1.3.2|添加了 225–230 的 {{tr|IDs}}。}}
+{{history|Desktop 1.3.0.1|添加了 172–224 的 {{tr|IDs}}。}}
+{{history|Desktop 1.2.4|添加了 145–171 的 {{tr|IDs}}。}}
+{{history|Desktop 1.2.3|添加了 126–144 的 {{tr|IDs}}。}}
+{{history|Desktop 1.2.2|添加了 116–125 的 {{tr|IDs}}。}}
+{{history|Desktop 1.2.1|添加了 113–115 的 {{tr|IDs}}。}}
+{{history|Desktop 1.2.0.3|添加了 {{tr|IDs}} 112。}}
+{{history|Desktop 1.2|添加了 32–111 的 {{tr|IDs}}。}}
+{{history|Desktop 1.1.1|添加了 29–31 的 {{tr|IDs}}。}}
+{{history|Desktop 1.1|添加了 21–28 的 {{tr|IDs}}。}}
+{{history|Desktop 1.0.6|添加了 14–20 的 {{tr|IDs}}。}}
+{{history|Desktop-Release|{{tr|Introduced}} 0–13 的 {{tr|IDs}}。}}
+
+== 脚注 ==
+</div>
+{{footnotelist}}
+
+{{category|Data IDs}}
+{{category|Wall items| }}
+
+{{language info|en=Wall IDs}}

@@ -1,0 +1,63 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3540
+| hardmode = yes
+| listcat = Bows
+| idprojectile = 630, 631
+}}
+{{about|游戏末期的{{tr|bow}}}}
+[[File:Phantasm (demo).gif|frame|right|用{{tr|Phantasm}}攻击[[{{tr|Mimic}}]]。]]
+
+'''{{tr|Phantasm}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的可制作的[[{{tr|bow}}]]，一次发射四支[[{{tr|arrows}}]]，每次使用消耗一支{{tr|arrow}}。随着持续射击，{{tr|the Phantasm}}会逐渐提高发射速率。{{tr|Phantasm}}在命中目标后会额外射出三发{{tr| Phantasm Arrow projectiles}}，它们会自动导向一开始命中的目标，每发造成原本{{tr|projectile}}的 30% 伤害{{source code ref|name=damage|v=1.4.4.9|method=Terraria.Projectile.Damage}}。{{tr|Phantasm}}有 {{chance|2/3}} 几率[[{{tr|Ammo conservation}}|省下{{tr|ammunition}}]]。
+
+{{modifier|ranged}}因为它不会得益于{{tr|speed modifiers}}，'''{{tr|Godly}}'''和'''{{tr|Demonic}}'''提供了和{{tr|Unreal}}相同的{{DPS}}加成，然而{{tr|Unreal}}仍具有速度优势。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Phantasm|expectedrows=1}}
+
+== 备注 ==
+* 其{{tr|Arrows}}松散地分布，可以以不同的{{tr|velocity}}和射程发射。
+* 发射速率从每 24 {{tr|ticks}}{{tick}}一发开始提升至最快每 18 {{tr|ticks}}一发，与{{tr|use time}}无关，这意味着{{tr|Phantasm}}不会得益于{{tr|speed bonus}}。
+* {{tr|Phantasm}}在较低速阶段发射 2 次后，将会进入每 18 {{tr|tick}}发射一次的最大射速。这 6 次发射将比{{tr|Phantasm}}一直处于最大射速多消耗 24 {{tr|tick}}；因此，{{tr|Phantasm}}在停止{{tr|attack}}然后重新发射时会有 0.4 {{tr|seconds}}的{{DPS}}惩罚。
+* {{tr|Phantasm Arrows}}的射速取决于{{tr|Phantasm}}本身的射速。
+* 技术上来说，在使用{{tr|Phantasm}}时，它会生成一个{{tr|bow projectile}}，在接触时可造成 100% {{tr|weapon}}{{tr|damage}}（{{iteminfo|Phantasm|damage}} {{tr|base damage}}）。{{tr|bow projectile}}此后会（按照内置的发射频率）生成{{tr|arrows}}以及（在成功击中时生成）{{tr|Phantasm Arrows}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot / Terraria.Projectile.AI_075|field=Terraria.ID.ItemID.Sets&#46;gunProj}}
+
+== 小贴士 ==
+* {{tr|The Phantasm}}对单一目标最有效率，因为额外的{{tr|arrows}}并没有任何穿透能力。
+* 尽量不要使用穿透{{tr|arrows}}，因为这会给予{{tr|enemies}}短暂的[[{{tr|invincibility frame}}]]，许多{{tr|arrows}}会直接穿过去而不造成伤害。[[{{tr|Luminite Arrow}}]]是个例外。
+* 由于{{tr|Phantasm Arrows}}的高射速和低{{tr|base damage}}，推荐搭配[[{{tr|Ichor}}（{{tr|debuff}}）|{{tr|Ichor}}]]和[[{{tr|Betsy's Wrath}}]]以获取额外的[[{{tr|armor penetration}}]]。
+** [[{{tr|Ichor Arrow}}]]允许{{tr|player}}不交换{{tr|weapon}}就能利用{{tr|Ichor}}，以避免为{{tr|Phantasm}}充能，同时，其还有较高的{{tr|base damage}}。
+
+== 花絮 ==
+* {{tr|The Phantasm}}是游戏中使用{{tr|arrow}}的{{tr|weapon}}中唯一具有固有{{tr|ammo conservation}}几率的。
+* {{tr|The Phantasm}}是用[[{{tr|Lunar Fragments}}]]制作的{{tr|weapon}}中唯一没有特殊{{tr|tooltip}}的。
+* {{tr|The Phantasm}}和[[{{tr|Daybreak}}]]是用[[{{tr|Lunar Fragments}}]]制作的{{tr|weapon}}中唯一名字中不包含柱子名字的。（没有星旋）
+* ''{{wiktionary|phantasm|Phantasm}}'' （{{tr|The Phantasm}}的英文名）是单词 ''phantom''的另一种形式。
+
+== 历史 ==
+{{history|Desktop 1.3.0.5|
+** 从机制上轻微地强化了{{tr|Phantasm}}。
+** {{tr|damage}}由 60 降低至 50。}}
+{{history|Desktop 1.3.0.4|
+** {{tr|damage}}由 70 降低至 60。
+** 修正了导致意外高[[{{tr|damage}}]]的 {{tr|bug}}。
+** 在受到[[{{tr|Stoned}}]]、[[{{tr|Webbed}}]]或[[{{tr|Frozen}}]]之前就按住攻击按钮不再能在这些[[{{tr|debuff}}]]期间发射了。}}
+{{history|Desktop 1.3.0.3|修复了让玩家能够得到比用掉的更多的{{tr|arrows}}的漏洞。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|introduced=y|随着 1.3.0.5 的机制一并引入。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|随着 1.3.0.5 的机制一并引入。（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-vortex = yes
+}}
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Phantasm}}

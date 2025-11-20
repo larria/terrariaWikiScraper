@@ -1,0 +1,59 @@
+{{exclusive|1.3.1}}<!-- 左边的模板将随着不同平台更新 1.3.1 版本而更新 -->
+{{item infobox
+| type = Block
+| placeable = Yes
+| imagealt = [[File:Red Team Block.png|link=]] [[File:Green Team Block.png|link=]] [[File:Blue Team Block.png|link=]] [[File:Yellow Team Block.png|link=]] [[File:Pink Team Block.png|link=]] [[File:White Team Block.png|link=]]<hr/><p>[[File:Red Team Block (placed).png|link=]] [[File:Green Team Block (placed).png|link=]] [[File:Blue Team Block (placed).png|link=]]</p><p>[[File:Yellow Team Block (placed).png|link=]] [[File:Pink Team Block (placed).png|link=]] [[File:White Team Block (placed).png|link=]]</p>
+| stack = {{iteminfo|Red Team Block|stack}}
+| consumable = Yes
+| rare = {{iteminfo|Red Team Block|rare}}
+| use = {{iteminfo|Red Team Block|use}}
+| buy = {{iteminfo|Red Team Block|buy}} （{{eicons|Team Blocks|console=n|small=y}}）
+| sell = {{iteminfo|Red Team Block|sell}} （{{eicons|Team Blocks|console=n|small=y}}）
+| idtile = 426, 430-434
+| cargo = no
+}}
+
+'''{{tr|Team Blocks}}'''是可从[[{{tr|Traveling Merchant}}]]处以每个 {{iteminfo|Red Team Block|buy}} 的价格购买的{{tr|decorative}}性[[{{tr|blocks}}]]。{{tr|Team Blocks}}共有六种颜色，每一种都代表{{tr|player}}可选择的[[团队]]之一，包括代表中立团队的白色。
+
+与[[{{tr|Team Dye}}]]和[[{{tr|Team Hair Dye}}]]不同，这些{{tr|blocks}}没有其他功能，并且会保持原始的颜色。{{tr|Traveling Merchant}}只会同时出售一种颜色的{{tr|Team Block}}，以及对应颜色的[[{{tr|Team Platform}}]]。这意味着需要多次购买才能收集全部颜色的{{tr|Team Block}}。
+
+在{{console version}}中，{{tr|Team Blocks}}可免费买入，且没有卖出价值。对于{{switch version}}却不同，买入{{tr|Blocks}}和{{tr|platform}}需要花费银币，并具有卖出价值。
+
+== 类型 ==
+{{item/options|set|mode=table|nolink=y|class=block}}
+{| class="terraria lined"
+|-
+! colspan=2 | {{tr|Block}} !! {{tr|Notes}}
+|-
+| {{item infobox|view=item|auto=3621|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|-
+| {{item infobox|view=item|auto=3633|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|-
+| {{item infobox|view=item|auto=3634|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|-
+| {{item infobox|view=item|auto=3635|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|-
+| {{item infobox|view=item|auto=3636|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|-
+| {{item infobox|view=item|auto=3637|tags=buy / vendor:Traveling Merchant}} || 由[[{{tr|Traveling Merchant}}]]出售
+|}{{item/options|reset}}
+
+== {{tr|Trivia}} ==
+* 本地化文件中有一行未使用的文本：“{{gameText|LegacyMisc.84}}”{{source code ref|v=1.4.0.1|本地化文件{{code|Terraria.Localization.Content.zh-Hans.Legacy.json}}中的{{code|LegacyMisc[84]}}。}}这表明当玩家位于与其团队颜色相同的{{tr|team block}}区域内时，玩家无法更改团队。
+
+== 另见 ==
+* [[{{tr|Team Platform}}]]，由{{tr|Traveling Merchant}}出售的另一种基于团队颜色的物块。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+{{language info|en=Team Blocks}}

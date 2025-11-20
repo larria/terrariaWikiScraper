@@ -1,0 +1,35 @@
+{{item infobox
+| type = Potion
+| auto = 299
+| buffduration = {{etext|@@@@|e=1.4.0.1|small=y}}<br/>{{etext|{{duration|240}}|e=1.4.0.1|invert=y|small=y}}
+| tags = loot
+}}
+
+'''{{tr|Night Owl Potion}}'''是一种在喝下后会给予'''{{tr|Night Owl}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。此{{tr|buff}}可提升玩家的夜视力，并大大增加光源的光照范围。但此{{tr|potion}}对彻彻底底的黑暗不起作用。
+
+{{potionlength|{{etext|{{duration|600}}|e=1.4.0.1}} / {{etext|{{duration|240}}|e=1.4.0.1|invert=y}}}}
+
+药水的原料[[{{tr|Daybloom}}]]和[[{{tr|Blinkroot}}]]都极为常见，且可轻易的在[[{{tr|Clay Pot}}]]或[[{{tr|Planter Box}}]]中种植（也可在基地内自然种植）。
+
+若和[[{{tr|Shine Potion}}]]组合使用，可以在仅使用简简单单的原料的情况下照亮半个屏幕，这甚至都让[[{{tr|Shadow Orb (item)}}|{{tr|Shadow Orb}}]]和其他探索用的移动光源逊色不少。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Night Owl Potion|expectedrows=1}}
+
+== 备注 ==
+* 该{{tr|potion}}给予的夜视能力和[[{{tr|Night Vision Helmet}}]]提供的那一个完全一样，无法叠加。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Duration}}由 4 {{tr|minutes}}重新提升至 10 {{tr|minutes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.0.6|
+** 修复了{{tr|potion}}使用时完全无效果的 {{tr|bug}}。
+** {{tr|Duration}}由 10 降低至 4 {{tr|minutes}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}，但无效果。}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Night Owl Potion}}

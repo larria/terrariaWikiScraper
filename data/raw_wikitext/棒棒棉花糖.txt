@@ -1,0 +1,40 @@
+{{item infobox
+| type = Miscellaneous
+| auto = 968
+}}
+[[File:Crafting a Roasted Marshmallow.png|frame|用{{tr|Marshmallow on a Stick}}在{{tr|Campfire}}上制作{{tr|Cooked Marshmallow}}。]]
+
+'''{{tr|Marshmallow on a Stick}}'''是一种用来创造[[{{tr|Cooked Marshmallow}}]]的物品，方法是手持着它放在任何点燃的[[{{tr|Campfire}}]]上，即，{{tr|Marshmallow}}必须和{{tr|Campfire}}的 2×3 格矩形有所重叠。手持状态需要维持最长达现实中的 15 秒（游戏中的 15 分钟）。在{{tr|Campfire}}上时，玩家必须全程手持{{tr|The Marshmallow on a Stick}}——无论是在[[{{tr|inventory}}]]中将其放到光标上还是在{{tr|hotbar}}中选中它——才能将其烤熟。选中{{tr|hotbar}}中的另一件物品或者离开/背对/熄灭{{tr|Campfire}}都会重置计时器。
+
+确切的烹饪持续时间是随机的，在 {{duration|450 ticks}} 到 {{duration|900 ticks}} 之间。平均烹饪持续时间为 {{duration|750 ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_ApplyHoldStyle|t=计时器变量 <code>Terraria.Player.miscTimer</code> 每个{{tr|tick}}{{tick}} 都会递增直至 900。每个{{tr|tick}}它都会递增一次，同时有 {{chance|1/5}} 几率在同一{{tr|tick}}再次递增。因此，平均而言此变量每{{tr|tick}}增加 1.2。在最佳情况下，它每{{tr|tick}}增加 2，持续 450 {{tr|ticks}}（尽管这种情况极端罕见），而在最差情况下，它每{{tr|tick}}增加 1，持续 900 {{tr|ticks}}。}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Marshmallow on a Stick|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|result=Cooked Marshmallow|expectedrows=1}}
+
+== 备注 ==
+* 在{{eil|Journey Mode}}中修改时间流速不再会影响{{tr|marshmallow}}的烹饪速度。
+* [[{{tr|A Fireplace}}]]不能用于烹饪{{tr|Marshmallow}}。
+
+== 花絮 ==
+[[File:Site-logo-snow.png|frame|right|在{{tr|Official Terraria Forums}}（{{tr|Snow}}风格）中出现的正在烤{{tr|a Marshmallow on a Stick}}的[[{{tr|Snow Flinx}}]]和[[{{tr|Penguin}}]]]]
+* 在 {{eil|1.4.0.1}} 更新中，[[{{tr|Marshmallow}}]]和[[{{tr|Cooked Marshmallow}}]]的{{tr|sprites}}有所更新，让其看起来不那么单调，但是{{tr|the Marshmallow on a Stick}}用的还是之前的{{tr|sprite}}。
+
+== 历史 ==
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Marshmallow on a Stick}}

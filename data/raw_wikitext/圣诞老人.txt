@@ -1,0 +1,160 @@
+{{npc infobox
+| auto = 142
+| idprojectile = 589
+| type = NPC
+| environment = Valid house
+| imageother = Map Icon Santa Claus.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+{{christmas only}}
+
+'''{{tr|Santa Claus}}'''是个[[{{tr|Hardmode}}]]商贩 [[{{tr|NPC}}]]，在打败[[{{tr|Frost Legion}}]]后到达，但仅限于[[{{tr|Christmas}}]]季期间（{{eicons|1.3.0.1|old-gen=y}} 12 月 15 日 – 12 月 31 日 / {{eicons|1.3.0.1|invert=y|old-gen=n}} 12 月 1 日 – 1 月 15 日，{{eicons|1.4.0.1}} 在这些日期之外也可以通过完成[[{{tr|Frost Moon}}]]来解锁，持续游戏内的一天），在这之后他会死去。他在此期间出售很多圣诞主题的装饰品和时装物品。
+
+{{eicons|1.3.0.1}} {{tr|Santa Claus}}会向附近的[[{{tr|Enemies}}]]投掷[[{{tr|Christmas Decorations}}]]来自卫。
+
+== 出售物品 ==
+{{flexstart}}
+{{shop
+|{{shop row|Santa Hat}}
+|{{shop row|Santa Shirt}}
+|{{shop row|Santa Pants}}
+|{{shop row|Christmas Tree}}
+|{{shop row|Red Light}}
+|{{shop row|Green Light}}
+|{{shop row|Blue Light}}
+|{{shop row|Star Topper 1}}
+|{{shop row|Star Topper 2}}
+|{{shop row|Star Topper 3}}
+|{{shop row|505 Topper|value={{sc|5}}}}
+|{{shop row|Bow Topper}}
+|{{shop row|White Garland}}
+|{{shop row|White and Red Garland}}
+|{{shop row|Red Garland}}
+|{{shop row|Red and Green Garland}}
+|{{shop row|Green Garland}}
+|{{shop row|Green and White Garland}}
+|{{shop row|Multicolored Bulb}}
+|{{shop row|Red Bulb}}
+}}
+{{shop|nonote=y
+|{{shop row|Yellow Bulb}}
+|{{shop row|Green Bulb}}
+|{{shop row|Red and Green Bulb}}
+|{{shop row|Yellow and Green Bulb}}
+|{{shop row|Red and Yellow Bulb}}
+|{{shop row|White Bulb}}
+|{{shop row|White and Red Bulb}}
+|{{shop row|White and Yellow Bulb}}
+|{{shop row|White and Green Bulb}}
+|{{shop row|Multicolored Lights}}
+|{{shop row|Red Lights}}
+|{{shop row|Green Lights}}
+|{{shop row|Blue Lights}}
+|{{shop row|Yellow Lights}}
+|{{shop row|Red and Yellow Lights}}
+|{{shop row|Red and Green Lights}}
+|{{shop row|Yellow and Green Lights}}
+|{{shop row|Blue and Green Lights}}
+|{{shop row|Red and Blue Lights}}
+|{{shop row|Blue and Yellow Lights}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+{{flexend}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Santa Claus (Shimmered).png]] [[File:Map Icon Santa Claus (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Santa Claus}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Santa Claus}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.224}}”
+* “{{gameText|LegacyDialog.226}}”
+* “{{gameText|LegacyDialog.225}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|SantaSpecialText.Party}}”
+
+'''[[{{tr|Rain}}|下雨]]时：'''
+* “{{gameText|SantaSpecialText.Rain1}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|SantaSpecialText.Windy1}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|SantaSpecialText.Storm1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|SantaSpecialText.Graveyard1}}”
+* “{{gameText|SantaSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== 快乐话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_SantaClaus.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_SantaClaus.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_SantaClaus.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_SantaClaus.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_SantaClaus.HateCrowded}}”
+
+'''在{{tr|the Snow Biome}}中：'''
+* “{{gameText|TownNPCMood_SantaClaus.LoveBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在{{tr|the Desert}}中：'''
+* “{{gameText|TownNPCMood_SantaClaus.HateBiome|x_BiomeName={{tr|the Desert}}}}”
+
+'''靠近[[{{tr|Tax Collector}}]]时：'''
+* "{{gameText|TownNPCMood_SantaClaus.HateNPC|x_NPCName={{tr|Tax Collector}}[{{tr|Tax Collector}}的名字]}}"
+{{collapse bottom}}
+
+== 小贴士 ==
+{{transclude|{{tr|Christmas}}#{{tr|Tips}}}}
+* 将时间调回正常会导致他在下一次日出时死去。
+** 如果在非{{tr|Christmas}}时用 [[{{tr|TShock}}]] 或类似的第三方软件将其生成出来，他会立刻死去。
+* 一旦在此世界中{{tr|the Frost Legion}}被打败过一次，那么每次{{tr|Christmas}}内容活跃时他都会到来。并不需要每个{{tr|Christmas}}之前都要打败{{tr|the Frost Legion}}。
+
+== 花絮 ==
+* 如果获得了[[{{tr|Snow Globe}}]]并将其带到{{tr|pre-Hardmode}}的{{tr|world}}中，可以通过打败[[{{tr|Frost Legion}}]]并为其准备好可用{{tr|house}}的方式在{{tr|Hardmode}}之外召唤{{tr|Santa Claus}}。
+* {{tr|Santa Claus}}在任何时刻都同时出售 39个{{tr|items}}，比任何其他 {{tr|NPC}} 都多。
+** 有另外两个 {{tr|NPCs}} 在特定条件下出售更多物品。[[{{tr|Golfer}}]]只在玩家有 2000 或更高[[{{tr|golf}}]]得分时才出售 39 种物品。如果{{tr|the Golfer}}足够{{tr|happy}}，他就会额外多卖一个[[{{tr|Pylon}}]]，这样就将其供应量扩大到 40 个。此外，一旦[[{{tr|Golem}}]]已被打败，{{eil|Tavernkeep}}就会同时出售 40 个{{tr|items}}。
+** 无法回购卖给此 NPC 的物品，因为最后一个物品栏无法容纳卖掉的物品。
+* 在{{console version}}中，他在{{tr|housing}}部分的描述是“一个快乐的老家伙”。
+* “{{gameText|LegacyDialog.224}}”是对虚构的海洋之歌《{{wikipedia|Dead Man's Chest}}》的引用，该歌曲最初来自 {{wikipedia|Robert Louis Stevenson}} 的冒险小说《{{wikipedia|Treasure Island|金银岛（Treasure Island）}}》，于 1883 年首次发行。这首歌内有一句“Yo ho ho, and a bottle of rum（哟呵呵，还有一瓶……朗姆酒！）”。
+** [[{{tr|Pirate}}]]一样引用了这句话，说“{{gameText|LegacyDialog.274}}”
+* 他可能的名字数量是最少的，只有一个。
+* 在[[{{tr|housing menu}}]]中，他被称为“Santa Claus the Santa Claus（圣诞老人，圣诞老人）”。
+* 圣诞老人讨厌[[{{tr|Tax Collector}}]]可能是引用了 Charles Dickens（查尔斯·狄更斯）的《''{{wikipedia|A Christmas Carol|A Christmas Carol（圣诞颂歌）}}''》，其中主人公 Ebenezer Scrooge（{{tr|Tax Collector}}即基于他）鄙视一切和{{tr|Christmas}}相关的东西，因此圣诞老人讨厌他。
+* 这是目前唯一积极地喜爱或讨厌某个{{tr|biome}}的 {{tr|NPC}}——所有其他 {{tr|NPC}}都只是喜欢或者反感某些{{tr|biomes}}。
+* {{tr|Santa claus}}在{{tr|Storm}}期间的话语“{{gameText|SantaSpecialText.Storm1}}”参考了“Donner”是德语中的“雷电”，同时又是{{tr|Santa claus}}的驯鹿之一的名字。
+* {{tr|Santa Claus}}的{{tr|Shimmered form}}可能参考了{{wikipedia|Ded Moroz|严寒老人（Ded Moroz）}}，一位{{wikipedia|Slavic mythology|斯拉夫神话}}中类似{{tr|Santa Claus}}的传说人物。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|修正了{{tr|Santa Claus}}说[[{{tr|Traveling Merchant}}]]的[[{{tr|party}}]]言语而不是他自己的言语的问题。}}
+{{history|Desktop 1.3.0.1|
+** 现在投掷圣诞装饰攻击视野中的{{tr|enemies}}。
+** 外观更新。}}
+{{history|Desktop 1.2.2|现在出售[[{{tr|Christmas Tree}}]]和用于装饰它的物品。}}
+{{history|Desktop 1.1.1|{{tr|Introduced.}}出售[[{{tr|Santa Hat}}]]、[[{{tr|Santa Shirt}}]]、[[{{tr|Santa Pants}}]]、[[{{tr|Red Light}}]]、[[{{tr|Green Light}}]]、和[[{{tr|Blue Light}}]]。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.10061|现在要先打败{{tr|Frost Legion}}后{{tr|Santa Claus}}才会生成。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Santa Claus}}

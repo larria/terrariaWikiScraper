@@ -1,0 +1,96 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| type = Potion
+| auto = 2329
+| tags = loot
+}}
+
+'''{{tr|Dangersense Potion}}'''是种在喝下后会给予'''{{tr|Dangersense}}'''[[{{tr|buff}}]]的[[{{tr|buff potion}}]]。该{{tr|buff}}会显示危险的{{tr|blocks}}和可能伤害或阻碍玩家的物体，将它们用红色高亮标记，即使在完全黑暗中也是如此。{{potionlength|10 {{tr|minutes}}}}
+
+== 感知列表 ==
+{{tr|Dangersense buff}}会高亮下方列出的{{tr|block}}和物体。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Drawing.TileDrawing.IsTileDangerous}}如果玩家受{{tr|buff}}或装备影响而能防止此伤害，其中一些将不会被突出显示。
+{{options/set|item|maxsize=x30px|icons=no}}
+{{flexstart}}<!-- the flexbox prevents this {{itemlist}} from overlapping the {{item infobox}} on the right -->
+{{itemlist|class=terraria|width=16em
+|{{item|Thorny bushes|image=Corruption Thorny Bush.png/Crimson Thorny Bush.png/Jungle Thorny Bush.png}}<!-- typeCache == 32 || typeCache == 69 || typeCache == 352 -->
+|{{item|Spike}}<!-- typeCache == 48 -->
+|{{item|Wooden Spike}}<!-- typeCache == 232 -->
+|{{item|Cobweb}}<!-- typeCache == 51 -->
+|{{item|Meteorite}}<!-- typeCache == 37 -->{{footnote|name=firewalk}}
+|{{item|Hellstone}}<!-- typeCache == 58 -->{{footnote|name=firewalk}}
+|{{item|Hellstone Brick}}<!-- typeCache == 76 -->{{footnote|name=firewalk}}
+|{{item|Tombstone|s}}<!-- typeCache == 85 --> {{eicons|1.4.0.3}}
+|{{item|Pressure Plates}}<!-- typeCache == 135 -->
+|{{item|Teal Pressure Pad}}<!-- typeCache == 442 -->
+|{{item|Pressure Plate Track}}<!-- (typeCache == 314 && Minecart.IsPressurePlate(tileCache)) --> {{eicons|1.4.4.8}}
+|{{item|Detonator}}<!-- typeCache == 411 -->
+|{{item|Dart Trap}}<!-- typeCache == 137 -->
+|{{item|Venom Dart Trap}}<!-- typeCache == 137 -->
+|{{item|Super Dart Trap}}<!-- typeCache == 137 -->
+|{{item|Flame Trap}}<!-- typeCache == 137 -->
+|{{item|Spiky Ball Trap}}<!-- typeCache == 137 -->
+|{{item|Spear Trap}}<!-- typeCache == 137 -->
+|{{item|Boulder}}<!-- TileID.Sets.Boulders[typeCache] -->
+|{{item|Bouncy Boulder}}<!-- TileID.Sets.Boulders[typeCache] -->
+|{{item|Life Crystal Boulder}}<!-- TileID.Sets.Boulders[typeCache] -->
+|{{item|Explosives}}<!-- typeCache == 141 -->
+|{{item|Land Mine}}<!-- typeCache == 210 -->
+|{{item|Geyser}}<!-- typeCache == 443 -->
+|{{item|Bee Hive}}<!-- typeCache == 444 -->
+|{{item|Rolling Cactus}}<!-- TileID.Sets.Boulders[typeCache] -->
+|{{item|Antlion Eggs}}<!-- typeCache == 485 -->
+|{{item|Thin Ice}}<!-- typeCache == 162 -->{{footnote|name=iceskates}}
+|{{item|Honey Block}}<!-- typeCache == 229 -->
+|{{item|Trapped Chest|s}}<!-- typeCache == 441 -->
+|{{item|Cracked Dungeon Bricks|image=Cracked Blue Brick.png/Cracked Green Brick.png/Cracked Pink Brick.png}}<!-- typeCache == 483 || typeCache == 482 || typeCache == 481 -->
+|{{item|TNT Barrel}}<!-- typeCache == 654 -->
+|{{item|Crispy Honey Block}}<!-- typeCache == 230 -->{{footnote|name=getgoodworld}}
+|{{item|Cactus plant|image=Growing cactus.png}}<!-- typeCache == 80 -->{{footnote|name=dontstarveworld}}
+}}<!--
+-->{{flexend}}<!--
+-->{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Dangersense Potion|expectedrows=1}}
+
+== 备注 ==
+* {{eicons|1.2.4|not=1.4.0.1}} [[{{tr|Cobweb}}]]会用红色闪光粒子来标记，而不是像其他危险一样高亮显示。
+
+== 小贴士 ==
+*其定位[[{{tr|cobwebs}}]]的能力使得寻找[[{{tr|Spider cave}}]]变得更容易。
+* 除了[[{{tr|Spider Cave}}|{{tr|Spider Caves}}]]外，还可以用{{tr|Dangersense Potions}}顺着小块{{tr|cobweb}}来寻找洞穴。
+* 能够看到[[{{tr|trap}}]]，包括[[{{tr|pressure plate}}]]，使穿越[[{{tr|Dungeon}}]]和[[{{tr|Jungle Temple}}]]变得更容易。
+* {{tr|Dangersense Potions}}也能让为了个人目的收集{{tr|traps}}（例如{{tr|Jungle Temple traps}}或{{tr|caverns}}中的[[{{tr|Geyser|link=y}}|{{tr|Geyser}}]]）变得更容易。
+* {{tr|Dangersense Potions}}可以高亮标记{{tr|Dungeon}}中的[[{{tr|Cracked Dungeon Bricks}}]]，使得寻找隐藏通道变得轻而易举。
+* 当使用具有诸如{{tr|boulders}}之类{{tr|traps}}的 [[{{tr|boss}}]] {{tr|arena}}时，此{{tr|potion}}对于躲避它们同时还能专注于战斗很有用。
+
+== 花絮 ==
+* {{tr|The Dangersense Potion}}在内部命名为 {{code|{{iteminfo|Dangersense Potion|internalName}}}}。
+
+== 另见 ==
+* [[{{tr|Hunter Potion}}]]，类似的会高亮标记实体的消耗品。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|现在会高亮标记[[{{tr|Pressure Plate Track}}]]。}}
+{{history|Desktop 1.4.0.3|现在会高亮标记[[{{tr|Tombstones}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced}}，外形则与{{tr|Desktop 1.3.0.1}} 一致。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced}}，外形则与{{tr|Desktop 1.3.0.1}} 一致。}}
+
+== 脚注 ==
+{{reflist}}
+{{footnotelist|refs=
+{{footnote|name=firewalk|仅在{{tr|player}}没有[[{{tr|Obsidian Skin}}]][[{{tr|buff}}]]，亦或者没有装备上任一[[{{tr|Obsidian Skull}}]]及以其为材料制作的组合[[{{tr|accessory}}]]时（{{getEquipInfo/list|where=fireWalk IS TRUE AND itemid!={{itemIdFromName|Obsidian Skull}}|format=itemname-linked-pretty}}）。}}
+{{footnote|name=iceskates|仅在{{tr|player}}没有装备上任一[[{{tr|Ice Skates}}]]及以其为材料制作的组合{{tr|accessory}}时（{{getEquipInfo/list|where=iceSkate IS TRUE AND itemid!={{itemIdFromName|Ice Skates}}|format=itemname-linked-pretty}}）。}}
+{{footnote|name=getgoodworld|仅在 {{eil|For the worthy}} 和 {{eil|Get fixed boi}} {{tr|world}}。}}
+{{footnote|name=dontstarveworld|仅在 {{eil|Constant}} {{tr|world}}。}}
+}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Dangersense Potion}}

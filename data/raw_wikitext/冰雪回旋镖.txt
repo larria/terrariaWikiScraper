@@ -1,0 +1,65 @@
+{{item infobox | boxwidth = 22em
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 14 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.4|small=y}} /<br/>{{ut|15}} {{eicons|1.4.4|invert=y|small=y}}
+| critical = @@@@ {{eicons|1.3.0.1|small=y}} / 4% {{eicons|1.3.0.1|invert=y|small=y}}
+| debuff = Frostburn / 3
+| debuffchance = 50% {{eicons|1.4.4|small=y}}
+| auto = 670
+| listcat = boomerangs
+| tags = Loot / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Ice Boomerang (demo).gif|framed|{{tr|The Ice Boomerang}}的动画。]]
+
+'''{{tr|Ice Boomerang}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|boomerang}}]]，其行为类似常规的[[{{tr|Wooden Boomerang}}]]，但速度更快且会发光。在{{eversions|1.4.4|short=y}}中，它会造成持续 {{duration|3}}的[[{{tr|Frostburn}}]][[{{tr|Debuffs}}|{{tr|debuff}}]]，且具有 {{iteminfo|Ice Boomerang|crit}} 的基础[[{{tr|Critical hit}}|{{tr|critical strike chance}}]]而非通常的 4%。{{tr|Ice Boomerang}}有 {{chance|931/6000|mode=p}} 几率在[[{{tr|Ice biome}}]]中的[[{{tr|Frozen Chest}}]]内找到，也有 {{chance|1/6}} 几率从{{eil|Frozen Crate}}和{{eil|Boreal Crate|s}}中获得。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Ice Boomerang|expectedrows=1}}
+
+== 备注 == 
+* {{tr|Ice Boomerang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 26.38 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Ice Boomerang}}返回玩家时的最高速度为 {{mph|9 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+
+== 小贴士 ==
+* {{tr|The Ice Boomerang}}类似于[[{{tr|Enchanted Boomerang}}]]，造成略微更高的{{tr|damage and knockback}}，但没有像[[{{tr|Flamarang}}]]一样的升级物。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|damage}}由 16 提升至 21。
+** 现在有 50% 几率造成 3 秒的{{tr|Frostburn}}。
+** {{tr|Use time}}由 15 提升至 20。
+** 现在用于制作[[{{tr|Trimarang}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Item}}和{{tr|projectile}}{{tr|sprites updated}}。
+** 现在可从[[{{tr|Frozen Crate}}]]和[[{{tr|Boreal Crate}}]]中获得。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 14 提升至 16。
+** {{tr|Critical strike chance}}由 4% 提升至 6%。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 伤害由 14 提升至 16。
+** {{tr|Critical strike chance}}由 4% 提升至 6%。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，且伤害值为 16 而{{tr|critical strike chance}}为 6%。}}
+{{history|Mobile 1.3.0.7|
+** 伤害由 14 提升至 16。
+** {{tr|Critical strike chance}}由 4% 提升至 6%。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Ice Boomerang}}

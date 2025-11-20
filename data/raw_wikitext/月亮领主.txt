@@ -1,0 +1,272 @@
+{{exclusive|1.3.0.1}}{{options/set|item|icons=n}}
+<section begin="npc infobox" />{{npc infobox | boxwidth = 28em
+| name = Moon Lord<!-- needed for transcluding infobox-->
+| image = Moon Lord.gif
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| ai = Moon Lord AI
+| damage =<em>（随[[#部位|攻击]]而异）</em>
+| life = {{modes|{{#expr:{{npcinfo|396|hp}}+({{npcinfo|397|hp}}*2)+{{npcinfo|398|hp}}}}|{{#expr:{{npcinfo|396|hp|expert}}+({{npcinfo|397|hp|expert}}*2)+{{npcinfo|398|hp|expert}}}}|{{#expr:{{npcinfo|396|hp|master}}+({{npcinfo|397|hp|master}}*2)+{{npcinfo|398|hp|master}}}}}} (总共)
+| defense = <em>（随[[#部位|部位]]而异）</em>
+| knockback = 100%
+| debuff = Moon Bite
+| debuffduration = {{modes|{{duration|14}}|{{duration|16}}}}
+| immune1 = Confused
+| immune2 = Shimmering
+| money = {{modes|{{npcinfo|398|value}}|{{npcinfo|398|value|expert}}}}
+
+| Portal Gun|1|100% @normal
+| Luminite|70–90|100% @normal
+|:group:start|总是会掉落以下 9 件{{tr|items}}中的两件{{source code ref|v=1.4.0.5|name=drops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_MoonLord}}| @normal
+| Meowmere|1|22.2% @normal
+| Terrarian|1|22.2% @normal
+| Star Wrath|1|22.2% @normal
+| S.D.M.G.|1|22.2% @normal
+| Celebration Mk2|1|22.2% @normal
+| Last Prism|1|22.2% @normal
+| Lunar Flare|1|22.2% @normal
+| Rainbow Crystal Staff|1|22.2% @normal
+| Lunar Portal Staff|1|22.2% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Meowmere Minecart|1|10% @normal
+| Super Healing Potion|5–15|100%
+| Moon Lord Mask|1|14.29% @normal
+| Moon Lord Trophy|1|10%
+| Treasure Bag (Moon Lord)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Gravity Globe|1|100% #expert
+  | Suspicious Looking Tentacle|1|100% #expert
+  | Celestial Starboard|1|100% #expert
+  | Moon Lord Mask|1|14.29% #expert
+  |:group:start|总是会掉落以下 9 件{{tr|items}}中的两件| #expert
+  | Meowmere|1|22.2% #expert
+  | Terrarian|1|22.2% #expert
+  | Star Wrath|1|22.2% #expert
+  | S.D.M.G.|1|22.2% #expert
+  | Celebration Mk2|1|22.2% #expert
+  | Last Prism|1|22.2% #expert
+  | Lunar Flare|1|22.2% #expert
+  | Rainbow Crystal Staff|1|22.2% #expert
+  | Lunar Portal Staff|1|22.2% #expert
+  |:group:end|-----------------------------------|
+  |custom:Portal Gun|{{item|Portal Gun|note=(当{{tr|inventory}}中没有{{tr|Portal Gun}}时)|wrap=y}}|100% #expert
+  | Luminite|90–110|100% #expert
+  | Meowmere Minecart|1|10% #expert
+  |:loot:end|---------------------------------------|-
+| Piece of Moon Squid|1|{{master|25%}} @master
+| Moon Lord Relic|1|{{master|100%}} @master
+
+| soundhurt = NPC Hit 57.wav
+| soundkilled = NPC Killed 61.wav
+| sound3 = Zombie 92.wav
+| soundcaption3 = {{tr|Spawn}}
+| sound4 = NPC Killed 6.wav
+| soundcaption4 = {{gameText|ProjectileName.PhantasmalSphere}}
+| sound5 = Zombie 103.wav
+| soundcaption5 = {{gameText|ProjectileName.PhantasmalEye}}
+| sound6 = Item 124.wav, Item 125.wav
+| soundcaption6 = {{gameText|ProjectileName.PhantasmalBolt}}
+| sound7 = Zombie 104.wav
+| soundcaption7 = {{gameText|ProjectileName.PhantasmalDeathray}}
+| sound8 = Zombie 93.wav, Zombie 94.wav, Zombie 95.wav, Zombie 96.wav, Zombie 97.wav, Zombie 98.wav, Zombie 99.wav
+| soundcaption8 = 空闲
+| imageother = Map Icon Moon Lord.png
+| imageothercaption = {{tr|Map Icon}}
+}}<section end="npc infobox" />
+
+{{flavor text|{{gameText|LegacyMisc.52}}|image=Map Icon Moon Lord.png}}
+
+'''{{tr|Moon Lord}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的 [[{{tr|boss}}]]。它是{{eversions|1.3.0.1|short=y}}的[[《{{tr|Terraria}}》]]的最终 {{tr|boss}}。
+
+{{boss music|t={{tr|the Moon Lord}}|exclusive=1|pronoun=它|ow=Lunar Boss (Otherworldly)}}
+
+== 召唤和生成 ==
+{{tr|The Moon Lord}}会在摧毁四个[[{{tr|Celestial Pillars}}]]后生成，或者在任何已打败[[{{tr|Golem}}]]的{{tr|world}}中用[[{{tr|Celestial Sigil}}]]来手工召唤。[[{{tr|status message}}]]''“{{gameText|LegacyMisc.52}}”''提示{{tr|Moon Lord}}的生成倒计时的开始。在倒计时期间，屏幕会变得昏暗，所有物体、{{tr|tile}}、和{{tr|wall}}会来回抖动，然后恢复正常，且音量会逐渐降低，最终完全静音。如果通过摧毁{{tr|Celestial Pillars}}来召唤{{tr|Moon Lord}}，则它生成需要 60 秒，屏幕效果会出现 5 次，每次屏幕都会变得更暗、物体和{{tr|wall}}抖动更剧烈。如果使用{{tr|Celestial Sigil}}来召唤{{tr|Moon Lord}}，则它生成需要 12 秒，屏幕效果仅出现一次。
+
+== 行为 ==
+{{tr|Moon Lord}}的双手和额头上都各有一个眼睛，只有将这些眼睛杀死后才能攻击其胸部的心脏。每只眼睛的眼睑都会周期性地闭上和打开，且只在其“睁开”的状态下才会受到伤害。打败此 {{tr|boss}} 所必须摧毁的部位只有心脏，而只在所有眼状目标都被摧毁后才能对心脏造成伤害。 
+
+{{tr|The Moon Lord}}会使自身直接位于玩家前方，玩家会位于其头部下方，而它的双手会位于玩家两侧，和玩家保持一段距离。在{{tr|Moon Lord}}被召唤、消失、当前作为其目标的玩家死亡、或目标玩家移动到 150 格以外时，{{tr|Moon Lord}}会伴随一阵闪亮的白光传送到最近的玩家处。{{source code ref|v=1.4.2.1|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle {{=}}{{=}} 77</code> 代码段。}}<!--
+
+当{{tr|Moon Lord}}存在时，在距离{{tr|Moon Lord's Core}} 281.25 {{tr|tiles}}的范围之内的{{tr|player}}周围将不会[[{{tr|NPC spawning}}|生成]][[{{tr|enemies}}]]或[[{{tr|critters}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC|field=Terraria.NPC.MoonLordFightingDistance}}<!--
+-->{{options/reset|item}}
+
+=== 攻击 ===
+[[File:Moon Lord Phantasmal Deathray.gif|frame|{{tr|The Moon Lord}}在战斗中发射{{tr|Phantasmal Deathray}}。]]
+{{options/set|item|icons=n}}
+* {{tr|Moon Lord}}的一只手远离心脏，同时其眼睛会生成六个{{item|link=|Phantasmal Sphere|ext=gif|size=16px}}。在几秒钟后，手部的眼睛闭上，同时{{tr|Phantasmal Sphere}}爆炸，造成严重伤害。如果玩家距离足够远，在爆炸前它们会同时朝玩家冲锋，不过它们不能往两侧高于大约 30 度的角度行进。 
+* 手上的眼睛会旋转，并生成多个{{item|link=|Phantasmal Eye|size=12px}}，它们会向各个方向移动一小会儿，然后追踪玩家。就像{{tr|Phantasmal Spheres}}，它们不能以向上的角度行进，所以可以通过向上迂回来躲避。如果它们无法完成直接锁定且玩家处于射程内，那么它们将尝试匹配目标的轨迹来停留在其路径上。它们在与{{tr|block}}或{{tr|player}}接触时会爆炸。
+* 手上的眼睛还会偶尔看向玩家，然后快速连续发射两个高速的{{item|link=|Phantasmal Bolt|ext=gif|size=8px}}。这些{{tr|Phantasmal Bolt}}能穿透{{tr|blocks}}，且其瞄准方向会基于玩家的当前速度和方向有一定的预判。这意味着玩家可以通过在{{tr|Phantasmal Bolt}}发射后突然变换速度或方向来躲开它们。
+* {{anchor|{{tr|Phantasmal Deathray}}}}{{anchor|幻影致命光}}<!--游戏内原文本-->{{anchor|Phantasmal Deathray}}当附着于{{tr|Moon Lord}}的头时，头上的眼睛每 20–21 秒会睁开几秒钟，发射两个{{item|link=|Phantasmal Bolt|s|ext=gif|size=8px}}（类似于手发射的那些），充能数秒，然后发射出一束{{item|link=|Phantasmal Deathray|size=25px}}：一束向上跟随玩家玩家扫过约 60 度的巨大{{tr|laser}}。扫射方向取决于目标的方向：如果目标在{{tr|Moon Lord}}左侧，它会顺时针扫射，否则它会逆时针扫射。这是迄今为止{{tr|Moon Lord}}伤害最强的攻击，且它能够穿过阻挡它到达玩家的{{tr|solid blocks}}。之后，头部的眼睛会眨眼几次，再次发射两个{{item|link=|Phantasmal Bolt|ext=gif|size=8px|}}，然后闭上。
+** 在 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，在每次{{tr|Phantasmal Deathray}}攻击后，头上的眼睛会喷发出 30 个{{item|link=|Moon Boulder|s|scale=0.6}}。{{source code ref|v=1.4.4.9|name=headai|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle == 79</code> 代码段。}} 这些{{tr|boulder}}的行为和[[{{tr|Bouncy Boulder}}]]类似，它们可以在{{tr|solid blocks}}上反弹而且可以存在相对较长的时间。不过，它们的速度比{{tr|Bouncy Boulder}}更快。
+* 在{{tr|Deathray attack}}之后，{{tr|Moon Lord}}的嘴部会张开，并尝试将一根{{item|Moon Leech|触手|size=16px|ext=gif|link=}}连接到玩家身上。触手可以穿过{{tr|solid blocks}}。一旦连接，它就会生成多个{{item|Moon Leech Clot|s|size=16px}}，这是一种从玩家身上产生，花费 1.5 秒到达{{tr|Moon Lord}}的嘴部的{{tr|enemies}}。任何到达嘴中而未被击杀的{{tr|Moon Leech Clot}}都会给{{tr|Moon Lord}}的某个部位（未被击杀的部位之一）恢复 {{formatnum:1000}} {{tr|health}}。
+** 触手还会造成[[{{tr|Moon Bite}}]][[{{tr|debuff}}]]{{source code ref|v=1.4.3.6|method=Terraria.Projectile.AI}}，防止任何来自[[{{tr|Vampire Knives}}]]和[[{{tr|Spectre armor}}]]的[[{{tr|lifesteal}}]]效果，持续 14 / {{expert|16}} 秒。
+** 头部的眼睛被打败后，触手的攻击会变得更加频繁，两次攻击之间的间隔大约只有 2 秒钟。
+* 当手部或头部的眼睛被打败后，对应位置会变成长刺的缝隙，在接触时会造成伤害。
+* 此外，每当一个手部或头部的眼睛被打败时，会从中生成一个{{item|True Eye of Cthulhu|ext=gif|size=16px}}。它们是无敌的，仅当所有玩家都死亡或{{tr|Moon Lord}}被打败后才会消失。它们会从上方接近玩家，并在以下攻击之间循环切换：
+** {{tr|True Eye of Cthulhu}}向玩家发射两个{{item|link=|Phantasmal Bolt|ext=gif|size=8px}}，类似于手部的眼睛发射的那些。
+** {{tr|True Eye of Cthulhu}}生成六个{{item|link=|Phantasmal Sphere|ext=gif|size=16px}}，呈六边形围绕在它自身周围。这些{{tr|Phantasmal Sphere}}在几秒钟后会直接冲向玩家，造成大量伤害。这是第二阶段中到目前为止主要的伤害来源，应该通过转弯或猛冲来避开。
+** {{tr|True Eye of Cthulhu}}的瞳孔旋转，并生成多个{{item|link=|Phantasmal Eye|size=12px}}，其行为和{{tr|Moon Lord}}身上的眼睛被打败之前相似。
+** {{tr|True Eye of Cthulhu}}充能并发射次级{{item|Phantasmal Deathray|size=25px}}，它较小且造成的伤害明显更低。和{{tr|Moon Lord}}的{{tr|Deathray}}不同，它们的{{tr|Deathrays}}无法穿透{{tr|blocks}}。
+** 最后，{{tr|True Eye of Cthulhu}}会进行另一次{{item|link=|Phantasmal Sphere|ext=gif|size=16px}}攻击，然后重复循环。
+** 在施展大部分攻击期间，眼睛会保持静止。
+
+== 部位 ==
+{{see also|{{tr|True Eye of Cthulhu}}}}
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 396
+| image = Moon Lord's Head.gif
+| type = Boss Part
+| environment = Lunar Events
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+-->{{modes|150|300|450}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalDeathray}}}} <ref name="headai"/><br/><!--
+-->{{modes|60|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalBolt}}}} <ref name="headai"/><br/><!--
+-->{{modes|140|280|420}} {{note|small=y|paren=y|[[{{tr|Get fixed boi}}]] {{tr|worlds}}中的{{gameText|ProjectileName.MoonBoulder}}}} <ref name="headai"/>
+| idprojectile = 455, 456, 462, 1021//仅限[[{{tr|Get fixed boi}}]]
+}}
+|{{npc infobox
+| auto = 397
+| type = Boss Part
+| environment = Lunar Events
+| image = Moon Lord's Hand.gif
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>80 {{note|small=y|（{{tr|contact}}）（暴露的眼窝）}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalSphere}}}}<br/>{{modes|60|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalEye}}}}<br/>{{modes|60|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.PhantasmalBolt}}}} {{source code ref|v=1.4.4.9|name=handai|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle {{=}}{{=}} 78</code> 代码段。}}
+| idprojectile = 452, 454, 462
+}}
+|{{npc infobox
+| auto = 398
+| type = Boss Part
+| environment = Lunar Events
+| image = Moon Lord's Core.gif
+| soundkilled = NPC Killed 61.wav
+}}
+}}
+{{-}}
+
+== 后果 ==
+打败{{tr|Moon Lord}}后，会出现[[{{tr|Credits}}]]，同时播放{{tr|music}}《[[{{tr|Music|link=y}}#{{tr|Journey's End}}|{{tr|Journey's End}}]]》。除了其他{{tr|loot}}外，{{tr|Moon Lord}}还总是会掉落[[{{tr|Luminite}}]]，允许玩家制作游戏末期的[[{{tr|armor}}]]{{tr|sets}}、[[{{tr|tools}}]]、[[{{tr|furniture}}]]、和[[{{tr|accessories}}]]。
+
+另外：
+* [[{{tr|Princess}}]]开始出售[[{{tr|Music Boxes}}|{{tr|Music Box (Journey's End)}}]]。
+* [[{{tr|Steampunker}}]]开始出售[[{{tr|Clentaminator}}]]使用的[[{{tr|Yellow Solution}}]]、[[{{tr|White Solution}}]]、和[[{{tr|Brown Solution}}]]。
+* [[{{tr|Dye Trader}}]]开始用[[{{tr|Skiphs' Blood}}]]作为奖励向玩家交换[[{{tr|Strange Plant}}]]。
+* [[{{tr|Traveling Merchant}}]]开始出售[[{{tr|Not a Kid, nor a Squid}}]]和[[{{tr|Moonman & Company}}]][[{{tr|paintings}}]]。
+* [[{{tr|Rod of Harmony}}]]、[[{{tr|Terraformer}}]]、和[[{{tr|Bottomless Shimmer Bucket}}]]可通过[[{{tr|Shimmer}}|{{tr|Shimmer transmutation}}]]获得。
+* {{tr|world}}选择菜单中的{{tr|The world icon}}获得[[{{tr|World|link=y}}#{{tr|World icons}}|一圈特殊的边框]]。
+
+== 备注 ==
+* 所有由{{tr|Moon Lord}}的攻击造成的伤害都会无视其他[[{{tr|invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision}}
+* 如果玩家在讯息''“{{gameText|LegacyMisc.52}}”''出现之后离开世界，则{{tr|the Moon Lord}}不会生成。
+** 这对于还没有准备好或尚不想和{{tr|Moon Lord}}战斗的玩家，以及还没有足够[[{{tr|Lunar Fragments}}]]可用的玩家来说很有用。
+* 由于[[{{tr|projectiles}}]]对 [[{{tr|NPCs}}]] 造成的伤害比对玩家造成的伤害低，{{tr|NPCs}} 被{{tr|Moon Lord}}的{{tr|projectile}}攻击杀死的可能性较低。不过，{{tr|True Eyes of Cthulhu}}和空的眼窝仍然会造成{{tr|contact damage}}。
+* 当{{tr|the Moon Lord}}在屏幕上时，天空会完全变黑且{{tr|world}}会有模糊效果，显得朦胧且充满阴影。在{{tr|Multiplayer}}中，这只会对处于距离{{tr|Moon Lord}}的位置 130 格之内的玩家发生。可以用[[{{tr|Void Monolith}}]]来复现此效果。
+* 在[[{{tr|Expert mode}}]]中，当玩家的{{tr|inventory}}已经有[[{{tr|Portal Gun}}]]时，打开[[{{tr|Treasure Bags}}#{{tr|Moon Lord}}|{{tr|Treasure Bag}}]]不会掉落{{tr|Portal Gun}}。不过，在{{tr|Classic mode}}中它总是会掉落{{tr|Portal Gun}}。
+* {{tr|The Moon Lord}}是出现在所有{{tr|blocks and walls}}背后的，类似于[[{{tr|background object}}]]。
+
+== 成就 ==
+{{achievement|name=Champion of Terraria}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies}}
+<!-- This is not the right place to add strategies. Add them on the dedicated page, [[Guide:Moon Lord strategies]]. -->
+* 与{{tr|Moon Lord}}保持距离并躲闪攻击至关重要。特别地，应该不惜一切代价避开{{tr|Phantasmal Deathray}}。
+** 能增加玩家机动性的有用物品包括[[{{tr|Gravitation Potion}}]]、诸如[[{{tr|Fishron Wings}}]]、[[{{tr|Betsy's Wings}}]]、或[[{{tr|Empress Wings}}]]等快速{{tr|wings}}、[[{{tr|Rod of Discord}}]]、允许{{tr|dash}}的物品（例如[[{{tr|Tabi}}]]{{tr|or its upgrades}}，[[{{tr|Master Ninja Gear}}]]）、[[{{tr|Soaring Insignia}}]]、以及许多[[{{tr|mount}}]]{{tr|summoning items}}如[[{{tr|Gelatinous Pillion}}]]、[[{{tr|Shrimpy Truffle}}]]、[[{{tr|Cosmic Car Key}}]]、或[[{{tr|Witch's Broom}}]]。玩家也可以考虑用[[{{tr|Asphalt Block}}]]或[[{{tr|Minecart Track}}]]（搭配受[[{{tr|Minecart Upgrade Kit}}]]强化的[[{{tr|Minecarts}}|{{tr|minecart}}]]）造[[{{tr|skybridge}}]]。
+*** 提供较高水平速度的{{tr|item}}（受[[{{tr|Minecart Upgrade Kit}}]]强化的[[{{tr|Minecarts}}|{{tr|minecart}}]]、搭配可悬浮{{tr|wings}}的[[{{tr|Soaring Insignia}}]]、[[{{tr|Hexxed Branch}}]]，等等）可让玩家到达{{tr|True Eyes of Cthulhu}}的{{tr|Phantasmal Deathray}}攻击的范围之外。
+** 使用{{tr|homing weapons}}或[[{{tr|ammo}}]]（如[[{{tr|Chlorophyte Bullet}}]]）能让玩家专心于躲闪。
+** 待在{{tr|Moon Lord}}的头部附近，在头部的眼睛发射{{tr|deathray}}时向上并绕着它移动就可能躲开{{tr|deathray}}。由于旋转运动本身的特性，在{{tr|deathray}}的发射点其横扫的速度并不快，因此离发射点尽可能地近能让闪躲更加容易。
+* 传送离开{{tr|Moon Lord}}去找[[{{tr|Nurse}}]]治疗可能会导致她死掉，因为{{tr|the Moon Lord}}会立即直接传送到玩家处。
+** 在[[{{tr|multiplayer}}]]中，{{tr|Moon Lord}}会攻击最近的玩家。玩家可以轮流传送到家中去找{{tr|the Nurse}}治疗。
+* {{tr|The Moon Lord}}几乎什么[[{{tr|debuffs}}]]都吃，最明显的是{{$|Ichor||debuff}}和[[{{tr|Betsy's Curse}}]]，能显著加快战斗速度。不过，由于{{tr|the Moon Lord}}的眼睛闭上时就会移除所有{{tr|debuffs}}，玩家必须相应地重复施加{{tr|debuff}}。
+* 建议先干掉头部的眼睛。它是唯一能发射{{tr|Phantasmal Deathray}}的眼睛，并且维持闭合的时间要比手上的眼睛长的多。如果玩家把头上的眼睛放到最后去击杀，那么就可能需要应付两个[[{{tr|True Eye of Cthulhu}}|{{tr|True Eyes of Cthulhu}}]]更长时间。
+* 虽然频繁出现的[[{{tr|Moon Bite}}]]{{tr|debuff}}禁用了[[{{tr|Vampire Knives}}]]和[[{{tr|Spectre Hood}}]]的治疗效果，但它并不会禁用[[{{tr|health regeneration}}]]加成，因此[[{{tr|Nebula armor}}]]和[[{{tr|Life Drain}}]]的效果不受影响。
+* 可以用 200 个{{tr|NPC}} 的 [[{{tr|NPC spawning}}|{{tr|NPC spawn}}限制]]来避开{{tr|Moon Lord}}的一些攻击，且达到上限时可以阻止{{tr|the True Eyes of Cthulhu}}生成。
+* 由于{{tr|The Moon Lord}}的攻击无视普通的[[{{tr|invincibility frame}}]]，需要特殊的配置才能回避其攻击。
+* {{tr|Moon Leech Clots}}总是会用相同的时长到达{{tr|the Moon Lord}}的嘴部。它们会以可变速度向{{tr|Moon Lord}}移动，如果{{tr|Moon Lord}}位于玩家背后的默认位置，它们就会保持几乎完全静止。因此，尽管看起来可能很反直觉，但实际上靠近嘴部对于摧毁{{tr|Moon Leech Clots}}是有益的，因为它们不会很快移开。
+* {{tr|The Moon Lord}}的眼窝在其死亡动画期间依然会造成{{tr|contact damage}}，因此建议打败 {{tr|boss}} 后远离它。
+* 虽然{{tr|the Moon Lord}}射出的{{tr|Phantasmal Spheres}}会穿透所有 {{tr|NPCs}}，但{{tr|the Phantasmal Bolts}}接触到 {{tr|NPC}} 时却会被摧毁，这对于试图躲避{{tr|the Phantasmal Bolts}}的玩家来说可能是一个可行的选项。
+* 对于刷{{tr|Moon Lord}}来获取[[{{tr|Meowmere}}]]和[[{{tr|Star Wrath}}]]以制作[[{{tr|Zenith}}]]的玩家来说：每次击杀有 58.33% 的几率不获得任何一个，38.88% 几率获得其中一个，2.77% 几率两个都获得。
+
+== 花絮 ==
+<!--
+The comment by the developers that stated Moon Lord is Cthulhu's brother was confirmed to be a joke. Please do not add it to this section.
+References: [[Special:Diff/180878]], Multiple posts by EpicCriddle on Discord, Cenx's post on Terraria Discord: https://discordapp.com/channels/251072485095636994/251116850132287490/598974929828052992
+-->
+* 尽管在开发中 [[{{tr|Cenx}}]] 发表了一个评论说明并非如此，但{{tr|Moon Lord}}类似于{{维基百科|Cthulhu|t=克苏鲁}}的常见描绘，克苏鲁是{{维基百科|H. P. Lovecraft|t=霍华德·菲利普斯·洛夫克拉夫特}}在他于 1928 年创作的短篇故事{{维基百科|b=y|The Call of Cthulhu|t=克苏鲁的呼唤}}中首次想象出来的生物。在 [[1.3]] 版本发布之前，粉丝们普遍猜测[[{{tr|Cthulhu}}]]会成为《{{tr|Terraria}}》的最终 {{tr|boss}}（这一猜测部分归因于开发团队提出的[[:File:Cthulhu.png|早期概念设计]]）。
+* {{tr|Terraria}}的最终 {{tr|boss}} 本来是{{tr|Moon}}自身降临到世界上，但 Cenx 后来表示这个想法已被废弃。<ref>[http://web.archive.org/web/20160602200028/http://www.terrariaonline.com/threads/an-update-on-things.154239/ An update on things.] {{small|{{date|2014|06|30}}}}</ref><ref>[https://www.reddit.com/r/IAmA/comments/1n9bmz/i_am_redigit_creator_of_terraria_ask_me_anything/ccgk4vh I am Redigit - Creator of Terraria. Ask Me Anything!] {{small|{{date|2013|09|27}}}}</ref>
+* 鉴于 {{tr|boss}} 的颜色和它的一些{{tr|projectiles}}的名字，这个 {{tr|boss}} 可能受到了[[{{tr|Vortex Pillar}}]]的启发。
+* 虽然是最终 {{tr|boss}}，{{tr|Moon Lord}}所免疫的{{tr|debuff}}数量是 {{tr|bosses}} 中最少的，只免疫[[{{tr|Confused}}]]和[[{{tr|Shimmering}}]]。
+* {{lore|虽然最初的理论（并且工作人员也这么开玩笑）说{{tr|Moon Lord}}是{{tr|Cthulhu}}的兄弟，但他似乎就是{{tr|Cthulhu}}本身，或者至少包含着这种意味。这个实体对于生存是有害的，最终被古老的种族{{tr|Dryads}}（[[{{tr|Dryad}}]] {{tr|NPC}} 是该种族唯一的幸存者）所放逐，并割下了其器官，将其放逐到月亮上。更进一步，如直接描述所言，{{tr|Celestial Events}}及其最终的战斗似乎是他最后一次试图彻底征服。}}
+** 在同一个帖子中，开发者（具体来说是 [[{{tr|Arkhayla}}]]）还开玩笑说{{tr|Moon Lord}}是{{tr|Cthulhu}}的兄弟，并且名字是 Steve。但这已经被确认为不是真的。
+** {{tr|Moon Lord}}身体上的眼睛被称为''{{tr|True Eye of Cthulhu}}''，进一步证实了其真实身份。
+* [[{{tr|NPCs}}]]无法攻击{{tr|the Moon Lord}}。
+* 根据 Cenx 所说，绘制{{tr|the Moon Lord}}的外观花的时间超过一个月。{{discord ref|type=Cenx' message|channel=#terraria-chat-1|imagelink=https://cdn.discordapp.com/attachments/504236851654033422/563826300511322122/2019-04-05-21-42-33.png|date=04/05/2019}}
+* {{tr|The Moon Lord}}是唯一拥有独有死亡动画片段的 {{tr|boss}}。
+* {{tr|The Moon Lord's Core}}在其死亡动画期间仍然在跳动。
+* [[{{tr|Redigit}}]] 曾经开玩笑说，如果玩家社区集齐 10,000 个签名和 15 美金，他就会把{{tr|Moon Lord}}的下半身也做成个 {{tr|boss}}。
+** 这并没有被实现，但在 [[1.4.0.1]] 更新中，{{tr|the Moon Lord}}的腿部作为[[{{tr|Moon Lord Legs}}]]{{tr|item}}引入游戏中，可以从 [[{{tr|drunk world}}]] 中的{{tr|chests}}获得。
+* {{tr|The Moon Lord}}似乎共享了[[{{tr|pre-Hardmode}}]]的两个 {{tr|boss}} 的一些机制：[[{{tr|Skeletron}}]]，有多个可以单独摧毁的部位；[[{{tr|Brain of Cthulhu}}]]，需要玩家单独打败几个部位之后才能真正对 {{tr|boss}} 造成伤害。
+* {{tr|The Moon Lord}}是 7 个有独有音乐的 {{tr|boss}} 之一，其他的是[[{{tr|Queen Bee}}]]、[[{{tr|Deerclops}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Plantera}}]]、[[{{tr|Empress of Light}}]]、和[[{{tr|Duke Fishron}}]]。
+* {{tr|Moon Lord}}是唯一一个在其{{tr|Treasure Bag}}中掉落三个{{tr|Expert}}独有物品的 {{tr|boss}}。
+* {{tr|The Moon Lord}}掉落的[[{{tr|coins}}]]是游戏中所有 {{tr|boss}} 和所有{{tr|enemy}}中最多的。
+** 在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中，其{{tr|coin}}掉落量要高于游戏中所有其他{{tr|Hardmode bosses}} 的总和。
+* {{eicons|RGB}} 在与{{tr|the Moon Lord}}战斗时或在{{tr|Moon Lord}}生成前的那一段时间内，支持 [[{{tr|RGB}}]] 的键盘上会出现一只眼睛（很可能是{{tr|Moon Lord}}的一只手中的{{tr|True Eye of Cthulhu}}）。
+* Redigit 曾经说{{tr|the Moon Lord}}是[[{{tr|Guide}}]]的父亲。这一说法很大可能是个玩笑{{redigit lore ref|1}}且不会被视为官方{{tr|lore}}。{{redigit lore ref|2}}
+* 如果单独生成{{tr|the Moon Lord}}的身体部位，比如通过[[{{tr|mods}}]]或破解，那么就会播放{{tr|music}}《[[{{tr|Music|link=y}}#{{tr|Boss 1}}|{{tr|Boss 1}}]]》而非{{tr|Moon Lord}}的{{tr|music}}。为此需要启用[[{{tr|Autopause}}]]。
+* {{tr|Moon Lord}}的[[{{tr|Bestiary}}]]条目是最后一个条目，也是唯一一个没有{{tr|biome}}/{{tr|event}}筛选器或{{tr|background}}的条目。它拥有空的、黑色的{{tr|background}}。
+* {{tr|The Moon Lord}}的{{tr|Bestiary entry}}的其中一个搜索别名为 <code>cthulhu</code>。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Bestiary.BestiaryDatabaseNPCsPopulator.ModifyEntriesThatNeedIt}}
+{{bestiary|Moon Lord's Core|alias={{tr|Moon Lord}}}}
+* {{tr|The Moon Lord}}在电子游戏{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|crossover}}的一部分出现。
+
+== 图库 ==
+<gallery>
+File:Moon Lord Head (death).png|{{tr|Moon Lord}}的死亡动画中的头部。
+File:Moon Lord Shoulder (death).png|{{tr|Moon Lord}}的死亡动画中的肩部。
+File:Moon Lord Spine (death).png|{{tr|Moon Lord}}的死亡动画中的脊柱。
+File:Moon Lord Torso (death).png|{{tr|Moon Lord}}的死亡动画中的躯干。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Phantasmal Sphere}}的{{tr|damage}}降低了 20%。
+** {{tr|Phantasmal Sphere}}的{{tr|hitbox}}大小略微减小。
+** 现在总是会掉落 2 件不同的{{tr|weapons}}。
+** 使用[[{{tr|Celestial Sigil}}]]召唤 {{tr|boss}} 时的延迟从 60 秒降低至 12 秒。
+** {{tr|World Menu}}中，打败了{{tr|Moon Lord}}的{{tr|Worlds}}现在在其{{tr|icon}}周围有特殊边框。}}
+{{history|Desktop 1.4.0.1|
+** 略微增加了额头眼睛保持睁开的时间。
+** {{tr|Moon Lord}}的{{tr|Phantasmal Death Ray}}现在会穿透它和玩家之间的{{tr|blocks}}。
+** {{tr|Moon Lord}}的战斗期间应当不再会生成{{tr|Enemies}}，除非是在[[{{tr|multiplayer}}]]中在它半径之外生成。
+** {{tr|Moon Lord}}不再掉落[[{{tr|Celebration}}]]。它现在会掉落[[{{tr|Celebration Mk2}}]]。{{tr|Celebration}}现在是在打败[[{{tr|Golem}}]]后由[[{{tr|Party Girl}}]]出售。
+** {{tr|Moon Lord}}现在会掉落[[{{tr|Super Healing Potion}}]]而非[[{{tr|Greater Healing Potion}}]]。
+** 现在即使玩家在{{tr|Moon Lord}}的死亡动画期间死亡，它也会掉落战利品。
+** {{tr|Moon Lord}}现在会掉落[[{{tr|Meowmere Minecart}}]]。
+** {{tr|Moon Lord}}现在会掉落[[{{tr|Celestial Starboard}}]]作为[[{{tr|Expert Mode}}]]独有[[{{tr|accessory}}]]。
+** 添加了两种{{tr|Master Mode}}掉落物：[[{{tr|Piece of Moon Squid}}]]和[[{{tr|Moon Lord Relic}}]]。
+** {{tr|Moon Lord}}现在在{{tr|Expert Mode}}中会掉落{{tr|coins}}。}}
+{{history|Desktop 1.3.0.6|攻击现在遵循独立的免疫冷却。}}
+{{history|Desktop 1.3.0.5|现在可以用[[{{tr|Celestial Sigil}}]]来召唤。}}
+{{history|Desktop 1.3.0.4|
+** {{tr|The Moon Lord}}现在会在玩家距离太远时传送至玩家处。
+** 身体各部位现在能正确显示其名字了。
+** {{tr|Cultists}}现在不能在{{tr|Moon Lord}}活着或者正在生成时重生了。}}
+{{history|Desktop 1.3.0.3|
+** 大幅强化了{{tr|The Moon Lord}}的吸血效果。
+** 添加了{{tr|the Moon Bite debuff}}，它能阻止所有来自武器的治疗效果。}}
+{{history|Desktop 1.3.0.2|死亡讯息现在会正确显示“{{tr|Moon Lord}}已被打败！”，而非“{{tr|Moon Lord Core}}已被打败！”。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|introduced=y|随到{{tr|Desktop}} 1.3.0.6 为止的更改引入。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|随到{{tr|Desktop}} 1.3.0.6 为止的更改引入。（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|introduced=y|随到{{tr|Desktop}} 1.3.0.6 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|做了{{tr|Desktop 1.4.0.1}} 的更改。}}
+{{history|Mobile 1.3.0.7|introduced=y|随到{{tr|Desktop}} 1.3.0.6 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Moon Lord}}

@@ -1,0 +1,31 @@
+{{float file box|[[File:Breathe.png|一个气泡]]|呼吸|width=45}}
+'''{{tr|Breath Meter}}'''会在当玩家的头部处于[[{{tr|water}}]]或[[{{tr|honey}}]]时出现，代表玩家离溺水还需要多长时间。{{tr|Breath Meter}}由 {{icon|desktop|tmodloader|console|switch|old-gen|mobile}} 10 / {{icon/3ds}} 5 个气泡组成。只要将人物的头浸入水中，气泡就会逐渐淡出和消失。当{{tr|Breath Meter}}耗尽时，玩家开始溺水，生命值也逐渐减少。当{{tr|player}}脱离液体时，{{tr|Breath Meter}}会快速补充气泡。{{tr|breath meter}}需要{{duration|200/3 ticks}}重新充满(从零开始；剩余越多越快，例如从一半开始只需要{{duration|100/3 ticks}})一旦{{tr|player}}从液体中脱离。{{source code ref|v=1.4.4.9|method=Terraria.Player.CheckDrowning|t=玩家从液体中脱离后，内部变量{{code|breath}}每{{tr|tick}}增加3。直到{{code|breath}}达到200(即满{{tr|breath meter}})。这需要<code>200 / 3 = 66.67</code>{{tr|ticks}}({{duration|200/3 ticks}})来从零开始填满。如果{{tr|breath meter}}剩余一半，这需要<code>100 / 3 = 33.33</code>{{tr|ticks}}({{duration|100/3 ticks}})来填满。<br/>换句话说，每{{tr|tick}}补充{{tr|breath meter}}的1.5%(<code>200 / 3 = 100 / 1.5</code>)。}}
+
+当玩家眼睛正上方的像素在水下时，将其视为“在水下”而无法呼吸。如果玩家站在两层完整的水图格中，而占据的第三层水图格中有一块空气，则水平面大致与最终稳定状态水平面上方的一个像素相同。半物块可以使玩家溺水。在旧版本和{{tr|console version}}中，溺水高度实际上是头部的最高像素。这是为了防止玩家的头部撞到充满水的物块而被淹死作出的更改。
+
+== 呼吸时间 ==
+{{diving equipment}}
+{{tr|Breath Meter}}的持续时间根据所使用的呼吸设备或药水而变化。下面显示的时间是真实时间（而非游戏时间）： 
+
+* 如果没有设备，{{tr|Breath Meter}}将持续约 23.33 秒。
+* 使用[[{{tr|Breathing Reed}}]]，呼吸时间加倍至 46.67 秒。
+* 戴上[[{{tr|Diving Helmet}}]]时，{{tr|breath meter}}持续{{eicons|1.4.1}} {{duration|200*7*6 ticks|seconds}}（即{{duration|200*7*6 ticks}}）或{{eicons|1.4.1|invert=y}} {{duration|200*7*4 ticks|seconds}}（即{{duration|200*7*4 ticks}}）。
+* 当同时使用[[{{tr|Breathing Reed}}]]和[[{{tr|diving helmet}}]]时，{{tr|breath meter}}持续{{eicons|1.4.1}} {{duration|200*7*2*6 ticks|seconds}}（即{{duration|200*7*2*6 ticks}}）或{{eicons|1.4.1|invert=y}} {{duration|200*7*2*4 ticks|seconds}}（即{{duration|200*7*2*4 ticks}}）。
+* [[{{tr|Neptune's Shell}}]]及其制成的[[{{tr|Moon Shell}}]]与[[{{tr|Celestial Shell}}]]可以消除{{tr|Breath Meter}}，使水下呼吸时间不受限制。
+* 当增益生效时，[[{{tr|Gills Potion}}]]会消除在水下生成的{{tr|Breath Meter}}（共持续 2 分钟）。
+
+=== 机制解释 ===
+[[《{{tr|Terraria}}》]]中的每个{{tr|player}}都有两个属性：{{code|breath}} 和 {{code|breathCD}}。{{code|breath}} 初始值（换句话说，每次出生时）被设为常数值 200，而 {{code|breathCD}} 则设为 0。当{{tr|player}}被检测到浸入水中或{{tr|honey}}中，且{{tr|Gills buff}}与{{tr|Merfolk buff}}均未生效时，则给  {{code|breathCD}} 增加 1。这会在每个{{tr|tick}}{{tick}}时发生一次。当 {{code|breathCD}} 超过一特定{{code|阈值}}时，'''<code>breathCD</code>''' 被重置为 0，同时 <code>'''breath'''</code> 减少 1。'''<code>breathCD</code>''' 的{{code|阈值}}默认为 7，若持有{{tr|Breathing Reed}}则变为原来的 2 倍即 14，若持有{{tr|Breathing Reed}}且{{tr|diving equipment}}被装备则{{eicons|1.4.1}}翻 6 倍进而达到 42 或 84 / {{eicons|1.4.1|invert=y}}翻 4 倍进而达到 28 或 56 (同样每个{{tr|tick}}均检查和更新)。当 {{code|breathCD}} 达到 {{code|阈值}}，则给 {{code|breath}} 减少 1。这会不断重复直至 {{code|breath}} 达到 0，此时{{tr|player}}即开始溺水。最终，一共会花费 {{code|breath * 阈值}} {{tr|ticks}}以便使 {{code|breath}} 达到 0。{{source code ref|v=1.4.4.9|method=Terraria.Player.CheckDrowning|property=Terraria.Player.breathCDMax}}
+
+== 备注 ==
+* 如果{{tr|player}}在[[{{tr|equipment slot}}]]中装备了[[{{tr|Fish Bowl}}]]，{{tr|breath meter}}将会出现，因为从技术上来说此时{{tr|player}}的头在{{tr|water}}下。呼吸装备和[[{{tr|potions}}]]仍然可以用来抵消这种影响。
+* [[{{tr|Lava Charm}}]]和其他熔岩保护装备的熔岩计时器显示上优先于{{tr|breath meter}}。这代表着如果{{tr|player}}的头在{{tr|water}}里而脚在{{tr|lava}}里，{{tr|player}}将在看不到{{tr|breath meter}}的情况下失去呼吸。
+
+== 历史 ==
+{{history|Desktop 1.3.5.2|修复了{{tr|breath meter}}在使用[[{{tr|Binoculars}}]]、[[{{tr|Sniper Scope}}]]或[[{{tr|Settings}}|{{tr|zoom}}]]时意外移动的问题。}}
+{{history|Desktop 1.3.0.1|从地图下方移动到玩家的头顶上方。}}
+{{history|Desktop 1.2|[[{{tr|Lava}}]]不再激活{{tr|Breath Meter}}，允许玩家使用[[{{tr|Obsidian Skin}}]]或其他途径在其下无限期生存。}} 
+
+{{Game mechanics}}
+
+{{language info|en=Breath meter}}

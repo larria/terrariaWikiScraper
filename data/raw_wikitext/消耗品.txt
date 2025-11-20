@@ -1,0 +1,351 @@
+'''{{tr|Consumable}}'''是指那些在直接使用时会从玩家的{{tr|inventory}}中移除的物品。对于那些经由使用其他物品而被消耗掉的物品，参见[[{{tr|Ammunition}}]]。在{{eversions|1.4.0.1|invert=y}}中，一些{{tr|Consumable items}}，例如[[#{{tr|Consumable weapons}}|{{tr|consumable weapons}}]]，在特定情况下在消费后可能能够以掉落物品的形式回收。
+
+有一些{{tr|consumables}}只会产生美学效果，比如{{eil|Sparkle Slime Balloon}}。这些对游戏玩法没有影响。
+
+'''注意：'''这个术语不同于[[:Category:{{tr|Consumable items}}|分类:{{tr|Consumable items}}]]，后者是{{tr|Terraria}} Wiki 的一个分类，包括了所有{{tr|blocks}}和所有{{tr|furniture}}，它们能经由[[放置]]而离开玩家{{tr|inventory}}，但并不一定就因此用掉而化为乌有。
+__TOC__
+<!--
+TOC disappears due to cargo query (bug)
+-->{{options/snap|item|snapshot}}{{options/set|item|mode=table|class=alignleft|wrap=y}}
+
+== 爆炸{{tr|consumables}} ==
+{{main|{{tr|Explosives (class)}}}}
+{{transclude|{{tr|Explosives (class)}}#{{tr|Types}}}}
+
+== {{tr|Consumable weapons}} ==
+{{main|{{tr|Ranged weapons}}}}
+{{transclude|{{tr|Ranged weapons}}#{{tr|Consumables}}|clr=y}}
+
+=={{tr|Consumable tools}} ==
+{{main|{{tr|Tools}}}}
+{| class="terraria sortable"
+|+ {{tr|Consumable tools}}
+|-
+! colspan=2 | {{tr|Item}}
+! [[{{tr|Velocity}}]]
+! [[{{tr|Use time}}]]
+! class=unsortable | {{tr|Notes}}
+|-
+| {{item|Glowstick}}
+| align=center | {{iteminfo|Glowstick|velocity}}
+| {{iteminfo|Glowstick|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Glowstick|usetime}}}}}}
+| 会反弹和翻滚，提供光亮。
+|-
+| {{item|Sticky Glowstick}}
+| align=center | {{iteminfo|Sticky Glowstick|velocity}}
+| {{iteminfo|Sticky Glowstick|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Sticky Glowstick|usetime}}}}}}
+| 会粘住在接触到的{{tr|tiles}}上，使其能更精确地控制。提供光亮。
+|-
+| {{item|Bouncy Glowstick}}
+| align=center | {{iteminfo|Bouncy Glowstick|velocity}}
+| {{iteminfo|Bouncy Glowstick|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Bouncy Glowstick|usetime}}}}}}
+| 会从各种表面上反弹，这使其更难以控制。在水中会漂浮起来。提供光亮。
+|-
+| {{item|Spelunker Glowstick}}
+| align=center | {{iteminfo|Spelunker Glowstick|velocity}}
+| {{iteminfo|Spelunker Glowstick|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Spelunker Glowstick|usetime}}}}}}
+| 提供光亮并高亮标记附近的{{tr|treasures}}。
+|-
+| {{item|Fairy Glowstick}}
+| align=center | {{iteminfo|Fairy Glowstick|velocity}}
+| {{iteminfo|Fairy Glowstick|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Fairy Glowstick|usetime}}}}}}
+| 和普通{{tr|Glowstick}}一样，但落地时会在落地点上方盘旋。会发光。
+|-
+| {{item|Chum Bucket}}
+| align=center | {{iteminfo|Chum Bucket|velocity}}
+| {{iteminfo|Chum Bucket|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Chum Bucket|usetime}}}}}}
+| 投掷到液体中能增加[[{{tr|Fishing Power}}]]。
+|-
+| {{item|Fertilizer}}
+| align=center | {{iteminfo|Fertilizer|velocity}}
+| {{iteminfo|Fertilizer|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Fertilizer|usetime}}}}}}
+| 使[[{{tr|sapling}}]]立刻成长为[[{{tr|tree}}]]。
+|}
+
+== 永久性强化 ==
+一些{{tr|consumables}}会永久性提升[[{{tr|Player stats}}|人物的属性]]或造成其他永久性效果。这些升级永远不会消失，哪怕是[[{{tr|death}}]]后。
+{| class="terraria"
+|+ 永久性强化
+|-
+! colspan=2 | {{tr|Item}}
+! 效果
+|-
+| {{item|Life Crystal}}
+| 人物的最大生命值永久增加20（最多加到 400），并恢复相应量。
+|-
+| {{item|Life Fruit}}
+| 人物的最大生命值永久增加5（最多加到 500）。
+|-
+| {{item|Mana Crystal}}
+| 人物的最大魔力值永久增加20（最多加到 200），并恢复相应量。
+|-
+| {{item|Demon Heart}}
+| 人物的最大{{tr|accessories}}数永久增加 1。只能使用此物品一次，且此额外的{{tr|accessory}}只能用在[[{{tr|Expert mode}}]]和[[{{tr|Master Mode}}]]世界中。
+|-
+| {{item|Advanced Combat Techniques}}
+|[[{{tr|NPCs}}|{{tr|Town NPCs}}]] 的{{tr|defense}}永久提升 6、伤害永久提升 20%。该效果可以与[[{{tr|Advanced Combat Techniques: Volume Two}}]]的效果叠加。每个世界只能用一次。
+|-
+|{{item|Artisan Loaf}}
+|玩家的[[制作站#制作站范围 |制作站范围]]永久提升4个图格。
+|-
+|{{item|Torch God's Favor}}
+| 在人物{{tr|inventory}}旁边添加一个可切换按钮，它会导致{{tr|torches}}根据{{tr|biome}}改变。
+|-
+|{{item|Vital Crystal}}
+|人物的生命再生永久提升20%。每个角色只可使用一次。
+|-
+|{{item|Aegis Fruit}}
+|人物的防御永久提升4点。每个角色只可使用一次。
+|-
+|{{item|Arcane Crystal}}
+|永久提升玩家的[[{{tr|mana}}#恢复{{tr|mana}}|{{tr|mana regeneration}}]]，通过将使用{{tr|mana}}和{{tr|mana}}开始恢复之间的时间间隔降低 5%。每个角色只可使用一次
+|-
+|{{item|Ambrosia}}
+|角色的[[挖矿速度]]、物块和墙的放置速度永久提升5%。每个角色只可使用一次。
+|-
+|{{item|Gummy Worm}}
+|角色的{{tr|fishing power}}永久提升3点。每个角色只可使用一次。
+|-
+|{{item|Galaxy Pearl}}
+|角色的[[{{tr|Luck}}]]永久提升0.03。每个角色只可使用一次。
+|-
+|{{item|Advanced Combat Techniques: Volume Two}}
+|[[{{tr|NPCs}}|{{tr|Town NPCs}}]] 的{{tr|defense}}永久提升 6、伤害永久提升 20%。该效果可以与[[{{tr|Advanced Combat Techniques}}]]的效果叠加。每个世界只能用一次。
+|-
+|{{item|Peddler's Satchel}}
+|[[{{tr|Traveling Merchant}}]]出售的物品数量永久增加 1。每个{{tr|world}}中只能使用一次。
+|-
+|{{item|Minecart Upgrade Kit}}
+|永久提高矿车的速度并加装防御探测器。
+|-
+|}
+
+== 召唤物品 ==
+{{redirect|{{tr|Summoning items}}|仆从召唤物品|{{tr|Summon weapons}}}}
+{{dablink|本章节是关于''消耗性''{{tr|summoning items}}的。关于所有和{{tr|summoning bosses}} 或{{tr|events}}有关的物品列表，参见[[{{tr|Miscellaneous}}#{{tr|Summon}}|{{tr|Miscellaneous}} § {{tr|Summon}}]]。}}
+
+一些{{tr|consumable items}}在恰当条件下会召唤 [[{{tr|bosses}}]] 或[[{{tr|events}}]]。不过，如果在无效的条件下使用，大多数情况下不会消耗此物品。
+
+注意很多 {{tr|bosses}} 和{{tr|events}}也能通过以其他方式与环境互动来召唤，或者当满足特定约束后自然生成。
+{| class="terraria sortable"
+|+ 消耗性 {{tr|Boss-Summoning Items}}
+|-
+! colspan=2 | {{tr|Item}}
+! {{tr|Boss}}
+! class=unsortable | {{tr|Notes}}
+|-
+| {{item|Slime Crown}}
+| [[{{tr|King Slime}}]]
+| 任意时段都可以使用。
+|-
+| {{item|Suspicious Looking Eye}}
+| [[{{tr|Eye of Cthulhu}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Worm Food}}
+| [[{{tr|Eater of Worlds}}]]
+| 必须在[[{{tr|the Corruption}}]]中使用。
+|-
+| {{item|Bloody Spine}}
+| [[{{tr|Brain of Cthulhu}}]]
+| 必须在[[{{tr|the Crimson}}]]中使用。
+|-
+| {{item|Abeemination}}
+| [[{{tr|Queen Bee}}]]
+| 必须在[[{{tr|Jungle}}]]或[[{{tr|Underground Jungle}}]]中使用。
+|-
+| {{item|Deer Thing}}
+| [[{{tr|Deerclops}}]]
+| 必须在[[{{tr|Snow Biome}}]]或[[{{tr|Ice biome}}]]中使用。
+|-
+| {{item|Suspicious Looking Egg}}
+| [[{{tr|Lepus}}]]
+| 任意时段都可以使用。掉落自{{tr|Lepus}}。
+|-
+| {{item|Cursed stuffing}}
+| [[{{tr|Turkor the Ungrateful}}]]
+| 要求玩家有[[{{tr|Pet Turkey}}]]{{tr|buff}}。使用时，会消耗一根[[{{tr|Turkey Feather}}]]，不过可以把[[{{tr|Turkey Feather}}]]放在{{tr|chest}}里来避免这一点。
+|-
+| {{item|Gelatin Crystal}}
+| [[{{tr|Queen Slime}}]]
+| 仅可在[[{{tr|The Hallow}}]]中使用。
+|-
+| {{item|Mechanical Worm}}
+| [[{{tr|The Destroyer}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Mechanical Eye}}
+| [[{{tr|The Twins}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Mechanical Skull}}
+| [[{{tr|Skeletron Prime}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Ocram's Razor}}
+| [[{{tr|Mechdusa}}]]
+| 只能在[[{{tr|Get fixed boi}}]]{{tr|world}}中制作和使用。
+|-
+| {{item|Lihzahrd Power Cell}}
+| [[{{tr|Golem}}]]
+| 必须在[[{{tr|Lihzahrd Altar}}]]上使用。只能用在[[{{tr|Plantera}}]]已被打败的[[{{tr|Hardmode}}]]{{tr|worlds}}中。
+|-
+| {{item|Truffle Worm}}
+| [[{{tr|Duke Fishron}}]]
+| 用作[[{{tr|bait}}]]来在[[{{tr|Ocean}}]]{{tr|biome}}中钓鱼。总是会钓出那 {{tr|boss}}。
+|-
+| {{item|Suspicious Looking Skull}}
+| [[{{tr|Ocram}}]]
+| 必须在{{tr|night}}使用，且必须在[[{{tr|Hardmode}}]]世界中。
+|-
+| {{item|Celestial Sigil}}
+| [[{{tr|Moon Lord}}]]
+| 只能在[[{{tr|Golem}}]]已被打败的[[{{tr|Hardmode}}]]{{tr|worlds}}中使用。在使用物品和召唤 {{tr|boss}} 之间有个 12 秒的延迟。在有[[{{tr|Celestial Pillars}}]]处于激活状态或{{tr|cultists}}在屏幕上时无法使用。
+|}
+{| class="terraria sortable"
+|+ {{tr|Event Summoning Items}}
+|-
+! colspan=2 | {{tr|Item}}
+! {{tr|Event}}
+! class=unsortable | {{tr|Notes}}
+|-
+| {{item|Bloody Tear}}
+| [[{{tr|Blood Moon}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Goblin Battle Standard}}
+| [[{{tr|Goblin Army}}]]
+| 至少要有一名玩家拥有至少 200 最大[[生命值]]。
+|-
+| {{item|Pirate Map}}
+| [[{{tr|Pirate Invasion}}]]
+| 只能在[[{{tr|Hardmode}}]]{{tr|worlds}}中使用，并且至少要有一名玩家的生命值大于或等于 200。
+|-
+| {{item|Solar Tablet}}
+| [[{{tr|Solar Eclipse}}]]
+| 只能在{{tr|Hardmode world}}中在白天时使用。
+|-
+| {{item|Snow Globe}}
+| [[{{tr|Frost Legion}}]]
+| 只能在{{tr|Hardmode world}}中使用，并且至少要有一名玩家拥有至少 200 最大生命值。
+|-
+| {{item|Pumpkin Moon Medallion}}
+| [[{{tr|Pumpkin Moon}}]]
+| 仅可在{{tr|night}}使用。
+|-
+| {{item|Naughty Present}}
+| [[{{tr|Frost Moon}}]]
+| 仅可在{{tr|night}}使用。
+|}
+
+=== {{tr|Achievement}} ===
+{{achievement|name=Like a Boss}}
+
+== {{tr|Critters}} ==
+{{main|{{tr|Critters}}}}
+
+用[[{{tr|Bug Net}}]]、[[{{tr|Lavaproof Bug Net}}]]、或{{eil|Golden Bug Net}}捕捉到的{{tr|Critters}}会以物品形式掉落。使用此物品会生成活的{{tr|the critter}}。
+
+== {{tr|Potions}} ==
+{{main|{{tr|Potions}}}}
+
+有各种各样的{{tr|Potion}}物品可用。在受[[{{tr|Potion Sickness}}]]{{tr|debuff}}的效果影响时，不管是{{tr|healing potions}}还是{{eil|Wiesnbräu}}都无法使用。
+
+== {{eicons|Treasure Bag}} {{tr|Treasure Bag}} ==
+{{main|{{tr|Treasure Bags}}}}
+
+[[{{tr|bosses}}]]掉落的{{eil|Expert Mode}}独有物品，使用时会给予玩家独特的战利品。
+
+== 其他消耗品 ==
+{| class="terraria sortable"
+|+ 其他消耗品
+|-
+! colspan=2 | {{tr|Item}}
+! [[{{tr|Velocity}}]]
+! [[{{tr|Use time}}]]
+! class=unsortable | {{tr|Notes}}
+|-
+| {{item|Smoke Bomb}}
+| align=center | {{iteminfo|Smoke Bomb|velocity}}
+| {{iteminfo|Smoke Bomb|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Smoke Bomb|usetime}}}}}}
+| 造出一团烟，隐藏其后的实体。
+|-
+| {{item|Confetti Gun}}
+| align=center | {{iteminfo|Confetti Gun|velocity}}
+| {{iteminfo|Confetti Gun|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Confetti Gun|usetime}}}}}}
+| 爆成一团{{tr|confetti}}。虽然叫这个名字，但它却是{{tr|consumable}}，不造成伤害，且不使用{{tr|ammo}}。
+|-
+| {{item|Beach Ball}}
+| align=center | {{iteminfo|Beach Ball|velocity}}
+| {{iteminfo|Beach Ball|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Beach Ball|usetime}}}}}}
+| 可以被玩家击打反弹。
+|-
+| {{item|Football}}
+| align=center | {{iteminfo|Football|velocity}}
+| {{iteminfo|Football|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Football|usetime}}}}}}
+| 可以被玩家击打反弹。
+|-
+| {{item|Tree Globe}}
+| align=center | {{iteminfo|Tree Globe|velocity}}
+| {{iteminfo|Tree Globe|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Tree Globe|usetime}}}}}}
+| 改变当前生物群落中树的样式。
+|-
+| {{item|World Globe}}
+| align=center | {{iteminfo|World Globe|velocity}}
+| {{iteminfo|World Globe|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|World Globe|usetime}}}}}}
+| 改变当前所处生物群落的背景。
+|-
+| {{item|Release Lantern}}
+| align=center | {{iteminfo|Release Lantern|velocity}}
+| {{iteminfo|Release Lantern|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Release Lantern|usetime}}}}}}
+| 释放出一只飘向天空的灯笼。
+|-
+| {{item|Release Doves}}
+| align=center | {{iteminfo|Release Doves|velocity}}
+| {{iteminfo|Release Doves|usetime}} {{note|small=y|paren=y|{{use time|{{iteminfo|Release Doves|usetime}}}}}}
+| 释放出三只鸽子，在四周飞翔 5 秒后消失。
+|}
+
+== 备注 ==
+有一些物品，虽然是“消耗品”，但在游戏内并未携带此标签。
+{| class="terraria"
+|+ 明显的遗漏
+|-
+! colspan=2 | {{tr|Item}}
+! 类型
+! 备注
+|-
+| {{item|Golden Key}}
+| {{tr|Key}}
+| 打开一个[[{{tr|Gold Chest}}]]。
+|-
+| {{item|Temple Key}}
+| {{tr|Key}}
+| 开[[{{tr|Lihzahrd Door}}]]的锁。
+|-
+| {{item|Biome Key|image=Jungle Key.png/Corruption Key.png/Crimson Key.png/Hallowed Key.png/Frozen Key.png/Desert Key.png}}
+| {{tr|Key}}
+| 打开相应的[[{{tr|Biome Chest}}]]。
+|-
+| {{item|Desert Fossil}}
+| {{tr|Block}}
+| 必须在[[{{tr|Extractinator}}]]处消耗。
+|-
+| {{item|Silt Block}}
+| {{tr|Block}}
+| 必须在{{tr|Extractinator}}处使用。
+|-
+| {{item|Slush Block}}
+| {{tr|Block}}
+| 必须在{{tr|Extractinator}}处使用。
+|-
+| {{item|Snowball}}
+| {{tr|Ammunition}}
+| 用作[[{{tr|Snowball Cannon}}]]和[[{{tr|Snowball Launcher}}]]的{{tr|ammunition}}。
+|}<!--
+-->{{options/restore|item|snapshot}}
+
+{{Game mechanics}}
+{{Master Template Consumables}}
+
+{{language info|en=Consumables}}

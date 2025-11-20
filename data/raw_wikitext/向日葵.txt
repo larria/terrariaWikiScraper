@@ -1,0 +1,62 @@
+{{item infobox
+| imagebreak = yes
+| type = Furniture / Miscellaneous
+| width = 2 | height = 4
+| auto = 63
+| buff = Happy! / 在附近时无限
+| tags = vendor / plunder / vendor:Dryad
+}}
+{{float file|[[File:Sunflowers in Forest.png|right|thumb|[[{{tr|Forest}}]]中自然生成的{{tr|Sunflowers}}。]]}}
+
+'''{{tr|Sunflowers}}'''是大型的[[{{tr|plants}}]]，可以在[[{{tr|grass}}]]上自然生成，可以使用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]收集。它和许多其它{{tr|plant}}不同，不能用[[{{tr|seeds}}]]种植，而是放置时就完全长成，无论是自然生成的还是玩家放置的。在没有发生[[{{tr|Blood Moon}}]]时，它也能以每个 {{iteminfo|Sunflower|buy}} 的价格购买自[[{{tr|{{tr|Dryad}}}}]]。
+
+{{tr|Sunflowers}}只能被放置在纯净{{tr|grass}}、{{tr|Hallowed grass}}、{{eicons|1.4.0.1}}{{tr|Jungle grass}}或{{eicons|1.4.4}}{{tr|Ash grass}}上，高度不限。它们不能放置在{{tr|Corrupt grass}}、{{tr|Crimson grass}}、{{tr|Mushroom grass}}、裸露的[[{{tr|Dirt Block}}]]上，也不能放置在[[{{tr|Clay Pot}}]]或[[{{tr|Planter Boxes}}]]中。
+	
+{{tr|Sunflowers}}授予附近玩家'''{{tr|Happy!}}'''[[{{tr|buff}}]]，增加他们的{{tr|movement speed}}并降低[[{{tr|enemy}}]]{{tr|spawn}}。此外，它们还充当了防止[[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]和[[{{tr|Hallow}}]]蔓延的小屏障，抵消了{{tr|evil biomes}}的一些影响，并有助于防止{{eil|Graveyard}}{{tr|biomes}}形成。
+
+== 效果 ==
+放置的{{tr|Sunflowers}}会提供下列功能：
+* 在其正下方的两个{{tr|tiles}}不会蔓延[[{{tr|The Corruption}}|{{tr|Corrupted}}]]、[[{{tr|The Crimson}}|{{tr|Crimsoned}}]]或[[{{tr|The Hallow}}|{{tr|Hallowed}}]]，即使在[[{{tr|Hardmode}}]]下。在某些情况下，这可以阻止{{tr|Corrupted}}和{{tr|Crimson grass}}向侧面[[{{tr|Biome spread}}|蔓延]]。
+* 每个{{tr|Sunflower}}可将一片区域的{{tr|evil biome}}的[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|tile}}计数]]减少 80 {{tr|tiles}}。{{source code ref|v=1.4.4.9|method=Terraria.SceneMetrics.ExportTileCountsToMain|t=每个{{tr|tile}}将计数降低 10，每个{{tr|Sunflower}}占据 8 个{{tr|tiles}}。}}此外，在决定 [[{{tr|NPCs}}]] 是否会拒绝入住[[{{tr|House}}]]时，区域内的每个{{tr|Sunflower}}可以将[[{{tr|House}}#邪恶分值|邪恶分值]]减少 40 分。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GetTileTypeCountByCategory|t=每个{{tr|tile}}减少 5 分，每个{{tr|Sunflower}}占据 8 个{{tr|tiles}}。}}如果大量放置，{{tr|Sunflower}}可使 {{tr|NPCs}} 能够居住在{{tr|evil biomes}}附近。对于各个区域的具体大小，分别参见[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|{{tr|Biomes}} § {{tr|Biome}}的存在要求]]和[[{{tr|House}}]]。
+* {{eicons|Happy!}} 其会给予处于以{{tr|Sunflower}}为中心{{buff area|epage=1.3.0.1}}区域内{{tr|player}}{{tr|Happy!}}[[{{tr|buff}}]]，提供 +10% [[{{tr|movement speed}}]]{{tr|bonus}}，×1.1 {{tr|movement speed}}乘数作用于此{{tr|buff}}与{{tr|buff}}列表中位于其左侧的所有{{tr|movement speed}}{{tr|buff}}（使此{{tr|buff}}等效于提供 +{{percent|{{#expr:1.1*1.1-1}}}} {{tr|movement speed}}），以及降低 17% {{tr|enemy}}[[{{tr|spawn rate}}]]且降低 20% 最大生成数。
+* {{eicons|Graveyard}} 其能够帮助阻止[[{{tr|Graveyard}}]]{{tr|biomes}}生成，每朵{{tr|Sunflowers}}会取消一个[[{{tr|Tombstones}}]]的效果。
+
+== 备注 ==
+* {{tr|The Sunflower}}的{{tr|Happy!}}{{tr|buff}}会和{{eil|Peace Candle}}的降低{{tr|enemy}}[[{{tr|spawn rate}}]]效果叠加，也会和[[{{tr|Asphalt Block}}]]的{{tr|movement speed}}{{tr|buff}}叠加。
+** 这不会影响装备如[[{{tr|Hermes Boots}}]]及其升级等[[{{tr|Movement Accessories}}]]时的最高跑步速度。
+* {{tr|The buff}}会降低[[{{tr|critter}}]]的生成率，因此如果玩家想要收集[[{{tr|bait}}]]，最好移除附近的{{tr|Sunflowers}}。
+* {{eicons|1.3.0.1}} {{tr|Sunflowers}}会在暗处发光，不过它并不能照亮周围的区域，只会照亮它的花朵。
+* {{eicons|Graveyard}} 当放置在{{tr|Graveyard}}{{tr|biome}}中时，{{tr|Sunflowers}}不会为附近玩家提供{{tr|Happy!}}{{tr|buff}}。
+
+== 花絮 ==
+[[File:Special Sunflower.png|framed|right|发布预告片中的{{tr|The sunflower}}。]]
+[[File:Sunflower loading icon.gif|thumb|right|加载图标。]]
+
+* 在 [[1.3]] 的[https://www.youtube.com/watch?v=-nXdtDgpPeE 发布预告片]中，出现了与普通{{tr|sunflower}}不同、拥有金黄色内部的{{tr|sunflower}}（可在预告片开头看到）。它们没有在最终更新中出现，其具体作用也未知。
+* {{tr|Sunflowers}}抵抗{{tr|Corruption}}和{{tr|Crimson}}影响的能力可能参考了它们在现实生活中能够清洁核辐射的能力。<ref>[https://news.virginia.edu/content/uva-undergraduate-researcher-studies-sunflowers-power-clean-soil U.Va. Undergraduate Researcher Studies Sunflowers’ Power to Clean Up Soil] (accessed {{date|2020|05|25}})</ref>
+* {{tr|A sunflower}}被用作{{versions|desktop-console-mobile}}的加载图标。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 99 提升至 9999。
+** 现在向日葵在放置时可以{{tr|auto-swing}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sunflowers}}现在会阻止{{tr|Graveyard}}{{tr|mini-biome}}被创建。
+** {{tr|Sunflowers}}现在会阻止[[{{tr|Hallow}}]]的蔓延。
+** 作用范围增大。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Sunflowers}}现在会为玩家提供{{tr|Happy!}}{{tr|buff}}，并在{{tr|night}}发光。}}
+{{history|Desktop 1.2.1|{{tr|Sunflowers}}现在会降低{{tr|The Crimson}}的影响。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Sunflowers}}现在会为玩家提供{{tr|Happy!}}{{tr|buff}}，并在{{tr|night}}发光。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+{{language info|en=Sunflower}}

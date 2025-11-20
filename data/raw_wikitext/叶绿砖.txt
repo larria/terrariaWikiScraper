@@ -1,0 +1,41 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Brick
+| imageoldalt = <!-- hide "old" image because no version uses it -->
+| width = 1
+| height = 1
+| auto = 2792
+| hardmode = yes
+}}
+
+'''{{tr|Chlorophyte Bricks}}'''是用[[{{tr|Chlorophyte Ore}}]]和[[{{tr|Stone Block}}]]制作的[[{{tr|Hardmode}}]][[{{tr|brick}}]]。
+
+类似于[[{{tr|Chlorophyte Ore}}]]，{{tr|Chlorophyte Bricks}}能够将附近的[[{{tr|Mud Block}}]]或[[{{tr|Jungle grass}}]]转换为{{tr|Chlorophyte Ore}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.hardUpdateWorld}}细节见[[{{tr|Chlorophyte Ore|link=y}}#{{tr|Notes}}|{{tr|Chlorophyte Ore}} § {{tr|Notes}}]]。
+
+它们也能限制自身周围[[{{tr|evil biome}}]]的蔓延。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.nearbyChlorophyte}}见[[{{tr|Biome spread|link=y}}#{{tr|Notes}}|{{tr|biome spread}}]]获取更多信息。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chlorophyte Brick|expectedrows=2}}
+
+=== 用于 ===
+{{recipes|ingredient=Chlorophyte Brick|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|制作{{tr|Recipe}}现在需要 5 个[[{{tr|Stone Block}}]]而非 2 个，且产出 5 个{{tr|Chlorophyte Bricks}}而非 2 个。}}
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}旧外观为：[[File:Chlorophyte Brick (old).png]] [[File:Chlorophyte Brick (placed) (old).png|link=]]}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|introduced=y|和来自{{tr|Desktop}} 1.3.1 的外观一同引入。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|和来自{{tr|Desktop}} 1.3.1 的外观一同引入。（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Chlorophyte}}
+{{Master Template Tiles
+| show-bricks = yes
+}}
+
+{{language info|en=Chlorophyte Brick}}

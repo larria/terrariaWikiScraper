@@ -1,0 +1,60 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3006
+| buff = Life Drain / 直到所有{{tr|enemies}}被击杀或停止使用{{tr|Life Drain}}
+| listcat = Wands
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Life Drain (demo).gif|framed|{{tr|The Life Drain}}通过伤害[[{{tr|Werewolf}}]]提高{{tr|health regeneration}}。]]
+
+'''{{tr|Life Drain}}'''是一个[[{{tr|Hardmode}}]][[{{tr|wand}}]]，有 {{chance|1/5}} 的概率掉落自[[{{tr|Crimson Mimic}}]]。使用时，只要{{tr|player}}和{{tr|cursor}}之间未被阻碍，就可对{{tr|cursor}}位置附近的所有[[{{tr|enemies}}]]持续造成伤害。一股红色的粒子流会从每个受到攻击的{{tr|enemy}}处流向玩家。当使用此{{tr|weapon}}时，使用者会获得'''{{tr|Life Drain}}'''[[{{tr|buff}}]]，使当前已存在的[[{{tr|health regeneration}}]]提高每秒 1.5 {{tr|health}}，每击中两个额外的{{tr|enemies}}再提高每秒 0.5 {{tr|health}}{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateLifeRegen}}，并大幅提高天然再生的叠加速度。<ref>默认情况下，天然再生计数每{{tr|tick}}提高 1，但{{tr|Life Drain buff}}将每{{tr|tick}}的计数提高 5，并且每影响两个{{tr|enemies}}再提高 1。这使得{{tr|Life Drain}}会成倍提高再生速率。</ref>被{{tr|Life Drain}}伤害的{{tr|enemy}}每秒还会额外受到 25 伤害。{{source code ref|v=1.4.4.9|method=Terraria.NPC.UpdateNPC_BuffApplyDOTs}}
+
+其最佳[[{{tr|modifier}}]]对于伤害输出目的是'''{{tr|Mythical}}'''，对于节省{{tr|mana}}目的则是'''{{tr|Celestial}}'''。<!-- for healing: regen doesn't depend on damage, but lower speed = lower mana drain = more hp before mana runs out; slow & sluggish are similar but very slightly worse due to higher base cost -->
+
+== 备注 ==
+* 只要正在击中{{tr|enemies}}，{{tr|Life Drain}}{{tr|buff}}就会提高玩家的{{tr|health regeneration}}。它与红色粒子是否触碰到玩家无关，这些仅是纯粹的视觉效果。
+* 只要玩家到{{tr|cursor}}处的视线未被阻挡，该{{tr|weapon}}就能够攻击屏幕上的任何位置<!-- technically limited, but doesn't seem to make a difference in practice -->。
+* {{tr|The Life Drain}}会伤害位于{{tr|cursor}}水平和垂直方向 12.5 格<!-- projectile width and height: 200 pixels -->内的所有{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+** 虽然玩家必须瞄准视线内的区域，{{tr|the Life Drain}}如此攻击时偶尔也能穿过墙壁伤害{{tr|enemies}}。
+* 在内部，{{tr|enemies}}被击中时也会被施加{{tr|Life Drain buff}}。不过，它的行为会像[[{{tr|debuff}}]]一样，每秒造成 25 伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.StatusNPC <!-- projectile 476 adds buff 151 --> / Terraria.NPC.UpdateNPC_BuffSetFlags <!-- translated to the soulDrain flag --> / Terraria.NPC.UpdateNPC_BuffApplyDOTs <!-- soulDrain deals damage over time -->}}
+** 免疫所有{{tr|debuffs}}的{{tr|Enemies}}不能获得该{{tr|buff}}。因此，它们不会持续性受到伤害，也不会提高玩家的{{tr|health regeneration}}。
+
+== 小贴士 ==
+* 它对于群体控制来说是把非常高效的{{tr|weapon}}，在对抗[[{{tr|Goblin Army}}]]和[[{{tr|Pirate Invasion}}]]时更是如此。再者，{{tr|the Life Drain}}总是消耗一定量的{{tr|mana}},无论它在攻击多少{{tr|enemies}}。
+* 相较于[[{{tr|Vampire Knives}}]]（它有真正的{{tr|Lifesteal}}能力），{{tr|the Life Drain}}有更低的治疗效率，但是其攻击不会被单格墙壁阻碍。[[{{tr|Celestial Magnet}}]]以及[[{{tr|Treasure Magnet}}]]可以进一步地辅助，因为它们能增加拾取[[{{tr|star}}]]的半径，能让{{tr|player}}在{{tr|enemies}}掉落{{tr|stars}}或者附近有连接了[[{{tr|timer}}]]的[[{{tr|Star Statue}}]]的情况下持续使用{{tr|the Life Drain}}。
+* {{tr|The Life Drain}}在对抗[[{{tr|Worm enemies}}]]的时候十分有用，因为它会把每一段体节视为一个单独的目标。这可用于对抗[[{{tr|The Destroyer}}]]，但是，因为{{tr|The Destroyer}}和[[{{tr|Probe}}]]免疫所有{{tr|debuffs}}，因此{{tr|Life Drain}}不会增加{{tr|player}}的{{tr|life regeneration}}速度。
+* {{tr|The Life Drain}}会如影响普通{{tr|enemies}}一样对[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]生效。
+* 由于{{tr|Life Drain buff}}不是直接的治疗效果，因此[[{{tr|Moon Lord}}]]的[[{{tr|Moon Bite}}]]{{tr|debuff}}不会影响它。
+* 由于治疗和持续伤害不受[[{{tr|magic damage}}]]加成的影响，该{{tr|weapon}}对其他职业来说也有用，可以将用处不大的[[{{tr|mana}}]]转化为[[{{tr|health}}]]。
+
+== 花絮 ==
+* {{tr|The Life Drain}}可能是参考了 1997 年发行的第一人称射击游戏{{维基百科|b=y|Blood|t=血祭}}中的{{tr|weapon}} [https://blood-wiki.org/index.php/Life_Leech Life Leech]，因为它具有相似的外观，并且以相似的方式吸取生命。
+* [[{{tr|Hearty Meal}}]]{{tr|buff}}的{{tr|The icon}}和{{tr|Life Drain}}的{{tr|icon}}相同。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Projectile}}由“Soul Drain”（灵魂汲取）更名为“Life Drain”（夺命杖）。}}
+{{history|Desktop 1.4.2|不再仅向右边击退{{tr|enemies}}。}} 
+{{history|Desktop 1.4.1.2|现在在 [[{{tr|PvP}}]] 中会消耗{{tr|mana}}。}}   
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 30 提升至 35。
+** 使用时未击中东西的情况下不会消耗{{tr|mana}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+	
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Life Drain}}

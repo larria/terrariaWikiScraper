@@ -1,0 +1,59 @@
+{{item infobox
+| type = Weapon/Tool
+| auto = 946
+| damage = @@@@ {{eicons|1.4.0.1|small=y}}
+| tags = loot / vendor / vendor:Skeleton Merchant
+| listcat = shortswords
+}}
+{{drop infobox|style=clear:right}}
+{{forlist|[[{{tr|Umbrella Slime}}]]掉落的{{tr|the vanity item}}|{{tr|Umbrella Hat}}|在{{eil|Graveyard}}中出售的{{tr|the umbrella}}|{{tr|Tragic Umbrella}}}}
+[[File:Umbrella (demo).gif|frame|玩家使用{{tr|Umbrella}}下落并攻击一个[[{{tr|Target Dummy}}]]。注意在半空中攻击时，下落速度会提升。]]
+{{quotation|[[File:Emote Town Merchant.gif|link=]] [[{{tr|Merchant}}]]|{{gameText|MerchantSpecialText.Rain1}}}}
+
+'''{{tr|Umbrella}}'''是一件手持{{tr|item}}，在{{eversions|1.4.0.1|short}}中也是一件[[{{tr|melee weapon}}]]。它可以在{{tr|surface}}的[[{{tr|Chests}}]]和{{eicons|1.4.4|invert=y}}[[{{tr|Wooden Crate}}]]中获得。{{eicons|1.4.4}}它也可以在[[{{tr|Waning Gibbous}}]]期间从[[{{tr|Skeleton Merchant}}]]处以 {{iteminfo|Umbrella|buy}} 的价格购买。
+
+手持时，{{tr|Umbrella}}会出现在玩家{{tr|character}}上方，允许玩家以缓慢的速度下落，并防止[[{{tr|fall damage}}]]。玩家可以按住 {{key|down}} 来提高下落速度。
+
+{{eicons|1.4.0.1}} {{modifier|melee}}
+
+== 备注 ==
+* {{eicons|1.4.0.1}}在半空中使用{{tr|Umbrella}}攻击时，玩家的下落速度在攻击期间不会减慢。
+* 不需要在整段下落中都手持{{tr|Umbrella}}。在接触地面前的最后一瞬间拿出{{tr|Umbrella}}也能立即完全防止{{tr|fall damage}}。
+* 虽然{{tr|Umbrella}}的效果类似于[[{{tr|Featherfall}}]]的效果，它们并不是同一种效果，因此能互相叠加。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_ApplyHoldStyle}}不过，{{tr|Umbrella}}和{{tr|Featherfall}}效果相结合时，只能略微地改变下落速度。
+* 受[[{{tr|modifier}}]]和[[{{tr|melee speed}}]]的影响，{{tr|Umbrella}}可穿透1或2次，这取决于其最终的[[{{tr|use time}}]]。
+
+== 小贴士 ==
+* 在使用[[{{tr|Extra jump}}]]{{tr|accessory}}（如[[{{tr|Cloud in a Bottle}}]]）跳跃和其他增加跳跃高度的[[{{tr|accessory}}]]时，{{tr|The Umbrella}}很有用。
+* 将{{tr|Umbrella}}放置在[[{{tr|hotbar}}]]中以便快速使用可能会在意外的长段掉落中救下{{tr|player}}。
+* 若在具有较高的水平速度时（如[[{{tr|Minecart}}]]的最大速度）坠落，{{tr|The Umbrella}}会非常有效。手持{{tr|Umbrella}}从断头的[[{{tr|Minecart Track}}]]上飞下能够在水平方向上行进很远。如果{{tr|Minecart Track}}的位置足够高，甚至能行进半个{{tr|world}}。
+* 若使用{{eil|Shield of Cthulhu}}，就可以在向下坠落时攻击[[{{tr|enemies}}]]。
+* 如果玩家想要进一步加快下落，可以先切换到另一件{{tr|item}}，然后在接触地面前换回{{tr|Umbrella}}。{{eicons|1.4.0.1}}在空中攻击也可以达成这一点。
+* {{eicons|1.4.0.1}}在游戏早期，由于{{tr|The Umbrella}}的较大{{tr|hitbox}}，它可能会在战斗中有些用处，但应当小心其较弱的[[{{tr|knockback}}]]。
+
+== 花絮 ==
+* 使用{{tr|Umbrella}}代替降落伞来减缓从高处的下落是常见的喜剧性桥段。
+* 虽然是一把{{tr|umbrella}}，但它对[[{{tr|Angry Nimbus}}]]没有效果。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在由[[{{tr|Skeleton Merchant}}]]出售。
+** 不再出现在{{tr|Wooden Crates}}和{{tr|Pearlwood Crates}}中。}}
+{{history|Desktop 1.4.0.1|现在除了原有功能外还可以用作{{tr|weapon}}。}}
+{{history|Desktop 1.3.0.6|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|添加了{{tr|Desktop 1.4.0.1}}的新改动。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|Desktop 1.4.0.1}}的新改动。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+{{Master Template Tools
+}}
+
+{{language info|en=Umbrella}}

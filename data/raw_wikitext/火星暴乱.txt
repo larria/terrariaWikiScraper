@@ -1,0 +1,203 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerMartianMadness.png|center]]
+{{quotation|[[File:Emote Town Guide.gif|link=]] [[{{tr|Guide}}]]|{{gameText|GuideHelpTextSpecific.Help_1124}}}}
+{{flavor text|{{gameText|LegacyMisc.41}}|image=Bestiary Martian Madness.png}}
+{{float file box | width=200px | [[File:Martian Probe.png|30px|link={{tr|Martian Probe|link=y}}]] [[File:Martian Probe (alarmed).png|30px|link={{tr|Martian Probe|link=y}}]] | [[{{tr|Martian Probe}}]]侦察到[[{{tr|player}}]]之前（左）和之后（右）。如果{{tr|Martian Probe}}在检测到{{tr|player}}后成功逃走，{{tr|event}}就会开始。}}
+{{float file box | width=130px | css=clear:right;| [[File:Extra 10.png]] |进度条图标}}
+
+'''{{tr|Martian Madness}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|invasion}}]][[{{tr|event}}]]，会使得独特的外星人主题的{{tr|enemies}}代替常规{{tr|enemies}}生成。
+
+{{tr|Martian Madness}}由[[{{tr|Martian Probe}}]]触发，{{tr|Martian Probe}}会在整个地图左侧 1/3 和右侧 1/3 随机生成（在[[{{tr|Space}}]]{{tr|layer}}生成几率更高）。当{{tr|Martian Probe}}检测到玩家或是受到攻击时，会立即试图飞走并逃离。如果{{tr|Martian Probe}}成功逃离，{{tr|event}}就会开始。
+
+在{{tr|event}}开始后，会显示[[{{tr|status message}}]]''“{{gameText|LegacyMisc.41}}”''，{{tr|UFOs}} 会开始在{{tr|background}}中飞行（如上方横幅所示）。不过，{{tr|event enemies}}仅能在[[{{tr|world spawn point}}]]或{{tr|town}} [[{{tr|NPCs}}]] 附近生成。''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节。''
+
+{{tr|Martian Madness}}在击杀足够多来自它的{{tr|enemies}}后即完成。在{{eversions|1.3.0.1}}中，会显示进度条来展示{{tr|event}}进度。
+
+== 召唤 ==
+{{tr|The Martian Madness}}会在{{tr|Martian Probe}}逃离，且满足下列条件时发生：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 80</code> 代码段。}}
+* 没有其他[[{{tr|invasion}}]]{{tr|events}}激活。
+* {{tr|world}}中至少有一名{{tr|player}}拥有至少 200 最大[[{{tr|health}}]]。
+
+== 完成 ==
+{{tr|Martian Madness event}}在击杀足够多来自此{{tr|event}}的{{tr|enemies}}后即完成。{{tr|The status message}}''“{{gameText|LegacyMisc.42}}”''会在{{tr|event}}完成时显示。
+
+所需击杀数和{{tr|event}}开始时{{tr|world}}中具有至少 200 {{tr|maximum health}}的玩家数量成正比，可以通过下方公式计算：
+: <math>\text{击杀数}=160+40\times\text{玩家数量}</math>
+
+例如：
+* 在{{tr|singleplayer}}中，所需击杀数为 <math>160+40\times1=200</math>。
+* 在[[{{tr|multiplayer}}]]中有 8 个满足条件的玩家时，所需击杀数为 <math>160+40\times8=480</math>。
+* 一次{{tr|invasion}}的最高击杀数为 {{formatnum:{{#expr:160+40*255}}}}（255 个玩家）。
+
+大多数{{tr|enemies}}算作 1 次击杀，但某些{{tr|enemies}}可能算作更多或更少。{{source code ref|v=1.4.4.9|method=Terraria.NPC.checkDead}}详细见下表：{{options/set|item|mode=table|maxsize=50px}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Enemy}}
+! 击杀数
+|-
+| {{item|Brain Scrambler}}
+| 1
+|-
+| {{item|Ray Gunner}}
+| 1
+|-
+| {{item|Martian Officer}}
+| 1
+|-
+| {{item|Gray Grunt}}
+| 1
+|-
+| {{item|Martian Engineer}}
+| 1
+|-
+| {{item|Tesla Turret}}
+| 0
+|-
+| {{item|Martian Drone}}
+| 1
+|-
+| {{item|Gigazapper}}
+| 1
+|-
+| {{item|Scutlix Gunner}}
+| 1
+|-
+| {{item|Scutlix}}
+| 1
+|-
+| {{item|Martian Saucer}}
+| 10
+|-
+|}{{options/reset|item}}
+
+== 内容 ==
+{{options/set|item|small=y|icons=n|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Martian Saucer|size=*0.75}}<!--
+			-->|{{item|Scutlix}}<!--
+			-->|{{item|Martian Walker|size=*0.75}}<!--
+			-->|{{item|Martian Drone}}<!--
+			-->|{{item|Tesla Turret}}<!--
+			-->|{{item|Gigazapper}}<!--
+			-->|{{item|Martian Engineer}}<!--
+			-->|{{item|Martian Officer}}<!--
+			-->|{{item|Ray Gunner}}<!--
+			-->|{{item|Gray Grunt}}<!--
+			-->|{{item|Brain Scrambler}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自所有{{tr|enemies}}：{{note|small=y|paren=y|[[{{tr|Tesla Turret}}]]、[[{{tr|Martian Drone}}]]、[[{{tr|Scutlix}}]]、和[[{{tr|Martian Saucer}}]]除外}}|<!--
+			-->{{dotlist<!--
+			-->|{{item|Martian Conduit Plating}}<!--
+			-->|{{item|Laser Drill}}<!--
+			-->|{{item|Charged Blaster Cannon}}<!--
+			-->|{{item|Anti-Gravity Hook}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Gray Grunt}}]]、[[{{tr|Ray Gunner}}]]、和[[{{tr|Brain Scrambler}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Martian Costume Mask}}<!--
+			-->|{{item|Martian Costume Shirt}}<!--
+			-->|{{item|Martian Costume Pants}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Martian Officer}}]]、[[{{tr|Martian Engineer}}]]、和[[{{tr|Gigazapper}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Martian Uniform Helmet}}<!--
+			-->|{{item|Martian Uniform Torso}}<!--
+			-->|{{item|Martian Uniform Pants}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Scutlix Gunner}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Brain Scrambler (item)}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自 [[{{tr|Martian Saucer}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Laser Machinegun}}<!--
+			-->|{{item|Xenopopper}}<!--
+			-->|{{item|Xeno Staff}}<!--
+			-->|{{item|Cosmic Car Key}}<!--
+			-->|{{item|Electrosphere Launcher}}<!--
+			-->|{{item|Influx Waver}}<!--
+			-->|{{item|Martian Saucer Trophy}}<!--
+			-->|{{item|Martian Saucer Relic|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->|{{item|Cosmic Skateboard|note2=（仅限[[{{tr|Master mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Martian Madness)|{{sound|track=Martian Madness}}}}<!--
+			-->|{{item|Otherworldly Music Box (Invasion)|{{sound|track=Invasion (Otherworldly)}}}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}
+
+== 备注 ==
+* 在以下三种情况下，[[{{tr|Martian Probe}}]]不会生成：[[{{tr|Lunar Event}}]]正在进行；{{tr|Martian Madness}}{{tr|event}}已经开始；或者已有{{tr|Martian Probe}}存在。
+* 如果在{{tr|Martian Madness}}{{tr|event}}过程中退出{{tr|world}}，{{tr|main menu}}屏幕仍然会有 {{tr|UFO}} 在{{tr|background}}中飞行。
+* 在[[{{tr|Expert mode}}]]中游玩不会提高{{tr|Martian Madness}}{{tr|items}}的{{tr|drop rate}}。
+* 在{{tr|Martian Probe}}消失前退出{{tr|world}}会阻止{{tr|event}}发生。
+* [[{{tr|Martian Saucer}}]]仅能在{{tr|event}}进度达到 30% 后生成；进度达到 50% 之后，{{tr|Martian Saucer}}会更为常见。
+* {{tr|The Martian Madness}}和其他[[{{tr|invasion}}]]{{tr|events}}一样拥有下列特性：
+** [[{{tr|Death}}]]或退出{{tr|world}}不会结束{{tr|invasion}}，也不会影响{{tr|invasion}}的进度。
+** 当前{{tr|invasion}}的类型、进度、和所需击杀数会在退出{{tr|world}}时保存。
+*** 因此，当{{tr|invasion}}发生时没有阻止它的方法。
+** {{tr|Martian Madness}}激活时，{{tr|Town}} [[{{tr|NPCs}}]] 无法{{tr|respawn}}。
+** 和其他{{tr|invasions}}不同，{{tr|Martian Madness}}开始于{{tr|world spawn point}}，因此{{tr|enemies}}可能在{{tr|invasion}}开始后立即在{{tr|spawn point}}附近生成。
+** 玩家必须不低于{{tr|surface}}以下 67.5 格且位于{{tr|world spawn point}}的水平方向（两侧）187.5 格以内才能生成{{tr|invasion enemies}}。此种情况下，来自{{tr|Martian Madness}}的{{tr|enemies}}会完全覆盖当前环境中其他的[[{{tr|NPC spawning}}|{{tr|enemy}}生成]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+*** 当玩家位于任何{{tr|town NPC}} 水平方向（两侧）187.5 格以内时也可以通过水平范围检测。{{tr|The town NPC}} 的垂直位置不会被检测。此种情况下，来自{{tr|Martian Madness}}的{{tr|enemies}}只有 {{chance|2/3}} 几率覆盖其他{{tr|enemy}}生成。
+** {{tr|An invasion}}不会阻止大多数其他{{tr|events}}发生（如[[{{tr|Blood Moon}}]]、[[{{tr|Solar Eclipse}}]]、或{{tr|night}}的随机 [[{{tr|Boss}}]] 生成）。不过，非 {{tr|boss enemy}}的生成仍然可能被{{tr|invasion enemy}}生成覆盖。
+
+== 成就 ==
+{{achievement|name=Tin-Foil Hatter}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Martian Madness}}攻略}}
+* {{tr|Martian Madness}}是比较难发生的{{tr|events}}之一，因为它需要随机生成的[[{{tr|Martian Probe}}]]来触发。但是，如果有一个合适的刷怪平台，或者借助远离地图中间 1/3 的[[{{tr|Floating Island}}]]，就可以更简单地“召唤”此{{tr|event}}。
+* 虽然大多数[[{{tr|minions}}]]不会故意瞄准{{tr|Martian Probe}}，在接触时造成伤害的{{tr|minions}}仍然可能会在{{tr|Martian Probe}}有机会发现玩家并逃跑之前将其意外击杀，从而让{{tr|event}}无法触发。如果玩家尝试召唤入侵，应该解散{{tr|Minion}}。
+[[File:Martian Probe Portal Summon.gif|thumb|350px|使用{{tr|portals}}来快速让普通{{tr|invasion enemies}}消失以生成{{tr|Martian Saucers}}。]]
+* 由于在所有{{tr|enemies}}中，{{tr|Martian Saucers}}掉落的战利品价值最高，通常会希望它们生成得越多越好。前往距离地面足够高的小战斗场地可以更简单地确保没有地面{{tr|enemies}}生成，从而增加{{tr|Martian Saucers}}生成的几率。
+** 通过使用两个相距约 500 格的[[{{tr|Portal Gun}}|{{tr|portals}}]]或[[{{tr|Teleporter}}]]，可以快速地让普通{{tr|invasion enemies}}消失，而不推进{{tr|event}}进度，使得{{tr|Martian Saucer}}有更多生成机会。
+** [[{{tr|Magic Conch}}]]也可用于达成同样效果。
+
+== 花絮 ==
+* 与''[[{{tr|Terraria}}]]''中大多数其他{{tr|enemies}}不同，火星人被杀死时的血液是紫色的，而不是红色的。
+* 在 2015 年 2 月 25 日，Re-Logic 在 YouTube 上发布了{{tr|Martian Madness}}的[https://www.youtube.com/watch?v=OB9Dceul7Sc&t=24s {{tr|music}}]，此时距离 [[1.3.0.1]] 发布还有 124 天。
+* {{tr|Martian Madness}}是无法通过使用{{tr|item}}召唤的两个战斗相关的{{tr|events}}之一，另一个是[[{{tr|Slime Rain}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 添加了另一种{{tr|Martian Madness}}音乐，最初来自''[[{{tr|Terraria: Otherworld}}]]''，当玩家进入 [[05162020]] [[{{tr|secret world seed}}]]并选择[[{{tr|Party Girl}}]]菜单中的“{{tr|music}}”选项后，它就会播放。
+** 添加了来自[[{{tr|Martian Saucer}}]]的[[{{tr|Master Mode}}]]独有掉落，包括必定掉落的[[{{tr|Relics}}|{{tr|Martian Saucer Relic}}]]和 {{chance|1/4}} 几率掉落的[[{{tr|Cosmic Skateboard}}]]。
+** [[{{tr|Anti-Gravity Hook}}]]、[[{{tr|Charged Blaster Cannon}}]]、和[[{{tr|Laser Drill}}]]现在有 {{chance|1/800}} 几率掉落自任何{{tr|Martian Madness enemy}}，而非{{tr|Martian Saucer}}。因此，掉落自{{tr|the Martian Saucer}}的其他物品现在各自具有更高的掉落几率。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+[[Category:召唤的事件]]
+
+{{language info|en=Martian Madness}}

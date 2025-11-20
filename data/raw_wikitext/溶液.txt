@@ -1,0 +1,819 @@
+{{item infobox|boxwidth=20em
+| imagealt = [[File:Green Solution.png|link=]] [[File:Yellow Solution.png|link=]] [[File:White Solution.png|link=]] [[File:Brown Solution.png|link=]] [[File:Blue Solution.png|link=]] [[File:Purple Solution.png|link=]] [[File:Dark Blue Solution.png|link=]] [[File:Red Solution.png|link=]]
+| type = Ammunition
+| stack = {{iteminfo|Green Solution|stack}}
+| rare = {{iteminfo|Green Solution|rare}}
+| research = {{iteminfo|Green Solution|research}}
+| buy = {{iteminfo|Green Solution|buy}} {{eicons|1.4.4|small=y}} / {{sc|25}} {{eicons|1.4.4|invert=y|small=y}}
+| sell = {{iteminfo|Green Solution|sell}} {{eicons|1.4.4|small=y}} / {{sc|5}} {{eicons|1.4.4|invert=y|small=y}}
+| cargo = no
+| id =
+}}
+
+'''{{tr|Solutions}}'''是一类[[{{tr|ammunition}}]]，仅由[[{{tr|Clentaminator}}]]和{{eil|Terraformer}}使用。每种{{tr|solution}}会将特定的[[{{tr|blocks}}]]和[[{{tr|walls}}]]转化为其他的{{tr|blocks and walls}}，从而创造和/或摧毁不同的[[{{tr|biome}}]]。{{etext|7|e=1.4.4}} / {{etext|4|e=1.4.4|invert=y}}种{{tr|Solutions}}由[[{{tr|Steampunker}}]]出售，她会基于特定条件出售不同的{{tr|solutions}}；还有一种由[[{{tr|Truffle}}]]出售，且一直有售。
+
+在{{eil|Don't dig up}}和{{eil|Get fixed boi}} {{tr|worlds}}中无法购买{{tr|Solutions}}。
+
+== 类型 ==
+{{options/set|item|nolink=y}}
+{| class="terraria lined"
+! {{tr|Solution}} !! 何时有货 !! 效果 !! style="min-width:180px" | {{tr|Tooltip}}
+|-
+| {{item infobox | view = item | auto = 780 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 当在[[{{tr|The Hallow}}]]之外与[[{{tr|Steampunker}}]]说话时
+| 移除[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、和[[{{tr|Hallow}}]]。<br/>转化[[{{tr|Glowing Mushroom Biome}}]]为[[{{tr|Jungle}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Green Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|780}}''
+|-
+| {{item infobox | view = item | auto = 5392 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 击败[[{{tr|Moon Lord}}]]后
+| 蔓延[[{{tr|Desert}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Yellow Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|5392}}''
+|-
+| {{item infobox | view = item | auto = 5393 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 击败[[{{tr|Moon Lord}}]]后
+| 蔓延[[{{tr|Snow}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|White Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|5393}}''
+|-
+| {{item infobox | view = item | auto = 5394 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 击败[[{{tr|Moon Lord}}]]后
+| 蔓延[[{{tr|Forest}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Brown Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|5394}}''
+|-
+| {{item infobox | view = item | auto = 781 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 当在[[{{tr|Hallow}}]]内与[[{{tr|Steampunker}}]]说话时
+| 蔓延[[{{tr|Hallow}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Blue Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|781}}''
+|-
+| {{item infobox | view = item | auto = 782 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 在[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]期间，<br/>在[[{{tr|Corruption}}|{{tr|Corrupt}}]]{{tr|world}}中
+| 蔓延[[{{tr|Corruption}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Purple Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|782}}''
+|-
+| {{item infobox | view = item | auto = 783 | tags = buy/hardmode /vendor:Truffle |cargo=<includeonly>no</includeonly>}}
+| 由[[{{tr|Truffle}}]]出售，任意时间
+| 转化[[{{tr|Jungle}}]]为[[{{tr|Glowing Mushroom Biome}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Dark Blue Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|783}}''
+|-
+| {{item infobox | view = item | auto = 784 | tags = buy/hardmode /vendor:Steampunker |cargo=<includeonly>no</includeonly>}}
+| 在[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]期间，<br/>在[[{{tr|Crimson}}]]{{tr|world}}中
+| 蔓延[[{{tr|Crimson}}]]<br/>''见[[{{tr|Solutions|link=y}}#{{tr|Red Solution}}|下方]]获取完整列表''
+| ''{{itemTooltip|784}}''
+|}{{options/reset|item}}
+
+== 转化 ==
+{{tr|The solutions}}对{{tr|tiles}}的转化如下所示。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.Convert}}
+{{itemlist/options|width=17.5em}}{{options/set|item|scale=0.8}}
+=== 绿溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=477|type=tile|Mowed grass}}
+| {{item|id=492|type=tile|Mowed Hallowed grass}}
+|-
+| {{item|id=60|type=tile|Jungle grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.JungleGrass -->
+<!--|{{item|id=60|type=tile|Jungle grass}}-->
+|{{item|id=661|type=tile|Corrupt Jungle grass}}
+|{{item|id=662|type=tile|Crimson Jungle grass}}
+}}
+|-
+| {{item|id=2|type=tile|Grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+<!--|{{item|id=2|type=tile|Grass}}-->
+|{{item|id=23|type=tile|Corrupt grass}}
+|{{item|id=109|type=tile|Hallowed grass}}
+|{{item|id=199|type=tile|Crimson grass}}
+<!--|{{item|id=477|type=tile|Mowed grass}}-->
+<!--|{{item|id=492|type=tile|Mowed Hallowed grass}}-->
+}}
+|-
+| {{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+<!--|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}-->
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+}}
+|-
+| {{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sand -->
+<!--|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}-->
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+}}
+|-
+| {{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.HardenedSand -->
+<!--|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}-->
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+}}
+|-
+| {{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sandstone -->
+<!--|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}-->
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Ice -->
+<!--|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}-->
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+}}
+|-
+| {{item|id=60|type=tile|Jungle grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.MushroomGrass -->
+|{{item|id=70|type=tile|Mushroom grass}}
+}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=63}}{{footnote|name=grasswall|仅[[{{tr|surface}}]]以上。{{chance|9/10}} 几率产生{{tr|Grass Wall}}，{{chance|1/10}} 几率产生{{tr|Flower Wall}}。}}<br/>{{wall|id=65}}{{footnote|name=grasswall}}<br/>{{wall|id=64}}{{footnote|仅[[{{tr|surface}}]]以下。}}
+| {{itemlist
+|{{wall|id=69}}
+|{{wall|id=70}}
+|{{wall|id=81}}
+}}
+|-
+| {{wall|id=1}}
+| {{itemlist/start}}{{#lstmap:{{#listfilter:list={{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}|insep=,|outsep=,|remove=1, 262, 274, 61, 185|removesep=,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=61}}
+| {{wall|id=262}}
+|-
+| {{wall|id=185}}
+| {{wall|id=274}}
+|-
+| {{wall|id=212}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:212|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=213}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:213|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=214}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:214|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=215}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:215|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=15}}{{footnote|仅[[{{tr|surface}}]]以上、[[{{tr|Cavern}}]]的下半部分、以及[[{{tr|Underworld}}]]。}}<br/>{{wall|id=64}}{{footnote|上述情况以外}}
+| {{wall|id=80}}
+|-
+| {{wall|id=216}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:216|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=187}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:187|{{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 黄溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}{{footnote|Only if there is a solid block below.}}<br/>{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}{{footnote|仅当下方没有{{tr|block}}，或下方的{{tr|block}}被[[{{tr|Actuator}}|致动]]时。}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+|{{item|id=2|type=tile|Grass}}
+|{{item|id=23|type=tile|Corrupt grass}}
+|{{item|id=109|type=tile|Hallowed grass}}
+|{{item|id=199|type=tile|Crimson grass}}
+|{{item|id=477|type=tile|Mowed grass}}
+|{{item|id=492|type=tile|Mowed Hallowed grass}}
+<!-- TileID.Sets.Conversion.Sand -->
+<!--|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}-->
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+<!-- TileID.Sets.Conversion.Snow -->
+|{{item|id=147|type=tile|Snow Block|image=Snow Block (placed).png}}
+<!-- TileID.Sets.Conversion.Dirt -->
+|{{item|id=0|type=tile|Dirt Block|image=Dirt Block (placed).png}}
+}}
+|-
+| {{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.HardenedSand -->
+<!--|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}-->
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+}}
+|-
+| {{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+<!-- Main.tileMoss -->
+|{{item|id=179|type=tile|note=（在{{tr|Stone Block}}上）|Green Moss|image=Green Moss (placed).png}}
+|{{item|id=180|type=tile|note=（在{{tr|Stone Block}}上）|Brown Moss|image=Brown Moss (placed).png}}
+|{{item|id=181|type=tile|note=（在{{tr|Stone Block}}上）|Red Moss|image=Red Moss (placed).png}}
+|{{item|id=182|type=tile|note=（在{{tr|Stone Block}}上）|Blue Moss|image=Blue Moss (placed).png}}
+|{{item|id=183|type=tile|note=（在{{tr|Stone Block}}上）|Purple Moss|image=Purple Moss (placed).png}}
+|{{item|id=381|type=tile|note=（在{{tr|Stone Block}}上）|Lava Moss|image=Lava Moss (placed).png}}
+|{{item|id=534|type=tile|note=（在{{tr|Stone Block}}上）|Krypton Moss|image=Krypton Moss (placed).png}}
+|{{item|id=536|type=tile|note=（在{{tr|Stone Block}}上）|Xenon Moss|image=Xenon Moss (placed).png}}
+|{{item|id=539|type=tile|note=（在{{tr|Stone Block}}上）|Argon Moss|image=Argon Moss (placed).png}}
+|{{item|id=625|type=tile|note=（在{{tr|Stone Block}}上）|Neon Moss|image=Neon Moss (placed).png}}
+|{{item|id=627|type=tile|note=（在{{tr|Stone Block}}上）|Helium Moss|image=Helium Moss (placed).png}}
+<!-- TileID.Sets.Conversion.Ice -->
+|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+<!-- TileID.Sets.Conversion.Sandstone -->
+<!--|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}-->
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+<!--|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}-->
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=187}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:187|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Ice|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=216}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:216|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Dirt|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Snow|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 白溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=147|type=tile|Snow Block|image=Snow Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+|{{item|id=2|type=tile|Grass}}
+|{{item|id=23|type=tile|Corrupt grass}}
+|{{item|id=109|type=tile|Hallowed grass}}
+|{{item|id=199|type=tile|Crimson grass}}
+|{{item|id=477|type=tile|Mowed grass}}
+|{{item|id=492|type=tile|Mowed Hallowed grass}}
+<!-- TileID.Sets.Conversion.Sand -->
+|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+<!-- TileID.Sets.Conversion.HardenedSand -->
+|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+<!-- TileID.Sets.Conversion.Snow -->
+<!--|{{item|id=147|type=tile|Snow Block|image=Snow Block (placed).png}}-->
+<!-- TileID.Sets.Conversion.Dirt -->
+|{{item|id=0|type=tile|Dirt Block|image=Dirt Block (placed).png}}
+}}
+|-
+| {{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+<!-- Main.tileMoss -->
+|{{item|id=179|type=tile|note=（在{{tr|Stone Block}}上）|Green Moss|image=Green Moss (placed).png}}
+|{{item|id=180|type=tile|note=（在{{tr|Stone Block}}上）|Brown Moss|image=Brown Moss (placed).png}}
+|{{item|id=181|type=tile|note=（在{{tr|Stone Block}}上）|Red Moss|image=Red Moss (placed).png}}
+|{{item|id=182|type=tile|note=（在{{tr|Stone Block}}上）|Blue Moss|image=Blue Moss (placed).png}}
+|{{item|id=183|type=tile|note=（在{{tr|Stone Block}}上）|Purple Moss|image=Purple Moss (placed).png}}
+|{{item|id=381|type=tile|note=（在{{tr|Stone Block}}上）|Lava Moss|image=Lava Moss (placed).png}}
+|{{item|id=534|type=tile|note=（在{{tr|Stone Block}}上）|Krypton Moss|image=Krypton Moss (placed).png}}
+|{{item|id=536|type=tile|note=（在{{tr|Stone Block}}上）|Xenon Moss|image=Xenon Moss (placed).png}}
+|{{item|id=539|type=tile|note=（在{{tr|Stone Block}}上）|Argon Moss|image=Argon Moss (placed).png}}
+|{{item|id=625|type=tile|note=（在{{tr|Stone Block}}上）|Neon Moss|image=Neon Moss (placed).png}}
+|{{item|id=627|type=tile|note=（在{{tr|Stone Block}}上）|Helium Moss|image=Helium Moss (placed).png}}
+<!-- TileID.Sets.Conversion.Ice -->
+<!--|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}-->
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+<!-- TileID.Sets.Conversion.Sandstone -->
+|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+<!--|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}-->
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=71}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:71|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Ice|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=40}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:40|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Dirt|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Snow|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 棕溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+<!--|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}-->
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+<!-- TileID.Sets.Conversion.Ice -->
+|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+<!-- TileID.Sets.Conversion.Sandstone -->
+|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{item|id=477|type=tile|Mowed grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.GolfGrass -->
+<!--|{{item|id=477|type=tile|Mowed grass}}-->
+|{{item|id=492|type=tile|Mowed Hallowed grass}}
+}}
+|-
+| {{item|id=2|type=tile|Grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+<!--|{{item|id=2|type=tile|Grass}}-->
+|{{item|id=23|type=tile|Corrupt grass}}
+|{{item|id=109|type=tile|Hallowed grass}}
+|{{item|id=199|type=tile|Crimson grass}}
+<!--|{{item|id=477|type=tile|Mowed grass}}-->
+<!--|{{item|id=492|type=tile|Mowed Hallowed grass}}-->
+}}
+|-
+| {{item|id=0|type=tile|Dirt Block|image=Dirt Block (placed).png}}{{footnote|仅当相邻四格均是{{tr|solid block}}时。}}<br/>{{item|id=2|type=tile|Grass}}{{footnote|仅当相邻四格中至少有一个空{{tr|tile}}或一个被[[{{tr|Actuator}}|致动]]的{{tr|block}}时。}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sand -->
+|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+<!-- TileID.Sets.Conversion.HardenedSand -->
+|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+<!-- TileID.Sets.Conversion.Snow -->
+|{{item|id=147|type=tile|Snow Block|image=Snow Block (placed).png}}
+<!-- TileID.Sets.Conversion.Dirt -->
+<!--|{{item|id=0|type=tile|Dirt Block|image=Dirt Block (placed).png}}-->
+}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+<!--|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}-->
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=1}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:1|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Ice|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=2}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:2|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Snow|y}}, {{#invoke:Wallinfo/idSets|getSet|Conversion_Dirt|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=196}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:196|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=197}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:197|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=198}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:198|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=199}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:199|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 蓝溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+<!--|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}-->
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+<!-- Main.tileMoss -->
+|{{item|id=179|type=tile|note=（在{{tr|Stone Block}}上）|Green Moss|image=Green Moss (placed).png}}
+|{{item|id=180|type=tile|note=（在{{tr|Stone Block}}上）|Brown Moss|image=Brown Moss (placed).png}}
+|{{item|id=181|type=tile|note=（在{{tr|Stone Block}}上）|Red Moss|image=Red Moss (placed).png}}
+|{{item|id=182|type=tile|note=（在{{tr|Stone Block}}上）|Blue Moss|image=Blue Moss (placed).png}}
+|{{item|id=183|type=tile|note=（在{{tr|Stone Block}}上）|Purple Moss|image=Purple Moss (placed).png}}
+|{{item|id=381|type=tile|note=（在{{tr|Stone Block}}上）|Lava Moss|image=Lava Moss (placed).png}}
+|{{item|id=534|type=tile|note=（在{{tr|Stone Block}}上）|Krypton Moss|image=Krypton Moss (placed).png}}
+|{{item|id=536|type=tile|note=（在{{tr|Stone Block}}上）|Xenon Moss|image=Xenon Moss (placed).png}}
+|{{item|id=539|type=tile|note=（在{{tr|Stone Block}}上）|Argon Moss|image=Argon Moss (placed).png}}
+|{{item|id=625|type=tile|note=（在{{tr|Stone Block}}上）|Neon Moss|image=Neon Moss (placed).png}}
+|{{item|id=627|type=tile|note=（在{{tr|Stone Block}}上）|Helium Moss|image=Helium Moss (placed).png}}
+}}
+|-
+| {{item|id=492|type=tile|Mowed Hallowed grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.GolfGrass -->
+|{{item|id=477|type=tile|Mowed grass}}
+<!--|{{item|id=492|type=tile|Mowed Hallowed grass}}-->
+}}
+|-
+| {{item|id=109|type=tile|Hallowed grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+|{{item|id=2|type=tile|Grass}}
+|{{item|id=23|type=tile|Corrupt grass}}
+<!--|{{item|id=109|type=tile|Hallowed grass}}-->
+|{{item|id=199|type=tile|Crimson grass}}
+<!--|{{item|id=477|type=tile|Mowed grass}}-->
+<!--|{{item|id=492|type=tile|Mowed Hallowed grass}}-->
+}}
+|-
+| {{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Ice -->
+|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+<!--|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}-->
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+}}
+|-
+| {{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sand -->
+|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+<!--|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}-->
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+}}
+|-
+| {{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.HardenedSand -->
+|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+<!--|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}-->
+}}
+|-
+| {{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sandstone -->
+|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+<!--|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}-->
+}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{item|id=0|type=tile|Dirt Block|image=Dirt Block (placed).png}}
+| {{item|id=59|type=tile|Mud Block|image=Mud Block (placed).png}}{{note|block=y|paren=y|仅当周围四格均为{{tr|Hallowed grass}}时}}
+|-
+| {{wall|id=70}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:70|{{#invoke:Wallinfo/idSets|getSet|Conversion_Grass|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=28}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:28|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=219}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:219|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=222}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:222|{{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=200}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:200|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=201}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:201|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=202}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:202|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=203}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:203|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 紫溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+<!--|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}-->
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+<!-- Main.tileMoss -->
+|{{item|id=179|type=tile|note=（在{{tr|Stone Block}}上）|Green Moss|image=Green Moss (placed).png}}
+|{{item|id=180|type=tile|note=（在{{tr|Stone Block}}上）|Brown Moss|image=Brown Moss (placed).png}}
+|{{item|id=181|type=tile|note=（在{{tr|Stone Block}}上）|Red Moss|image=Red Moss (placed).png}}
+|{{item|id=182|type=tile|note=（在{{tr|Stone Block}}上）|Blue Moss|image=Blue Moss (placed).png}}
+|{{item|id=183|type=tile|note=（在{{tr|Stone Block}}上）|Purple Moss|image=Purple Moss (placed).png}}
+|{{item|id=381|type=tile|note=（在{{tr|Stone Block}}上）|Lava Moss|image=Lava Moss (placed).png}}
+|{{item|id=534|type=tile|note=（在{{tr|Stone Block}}上）|Krypton Moss|image=Krypton Moss (placed).png}}
+|{{item|id=536|type=tile|note=（在{{tr|Stone Block}}上）|Xenon Moss|image=Xenon Moss (placed).png}}
+|{{item|id=539|type=tile|note=（在{{tr|Stone Block}}上）|Argon Moss|image=Argon Moss (placed).png}}
+|{{item|id=625|type=tile|note=（在{{tr|Stone Block}}上）|Neon Moss|image=Neon Moss (placed).png}}
+|{{item|id=627|type=tile|note=（在{{tr|Stone Block}}上）|Helium Moss|image=Helium Moss (placed).png}}
+}}
+|-
+| {{item|id=661|type=tile|Corrupt Jungle grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.JungleGrass -->
+|{{item|id=60|type=tile|Jungle grass}}
+<!--|{{item|id=661|type=tile|Corrupt Jungle grass}}-->
+|{{item|id=662|type=tile|Crimson Jungle grass}}
+}}
+|-
+| {{item|id=23|type=tile|Corrupt grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+|{{item|id=2|type=tile|Grass}}
+<!--|{{item|id=23|type=tile|Corrupt grass}}-->
+|{{item|id=109|type=tile|Hallowed grass}}
+|{{item|id=199|type=tile|Crimson grass}}
+|{{item|id=477|type=tile|Mowed grass}}
+|{{item|id=492|type=tile|Mowed Hallowed grass}}
+}}
+|-
+| {{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Ice -->
+|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+<!--|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}-->
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+}}
+|-
+| {{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sand -->
+|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+<!--|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}-->
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+}}
+|-
+| {{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.HardenedSand -->
+|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+<!--|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}-->
+|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+}}
+|-
+| {{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sandstone -->
+|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+<!--|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}-->
+|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+<!--|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}-->
+|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=69}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:69|{{#invoke:Wallinfo/idSets|getSet|Conversion_Grass|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=3}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:3|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=217}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:217|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=220}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:220|{{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=188}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:188|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=189}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:189|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=190}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:190|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=191}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:191|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 深蓝溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=70|type=tile|Mushroom grass}}
+| {{item|id=60|type=tile|Jungle grass}}
+|-
+| {{na}}{{note|block=y|paren=y|被摧毁}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}
+|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=80}}
+| {{itemlist/start}}{{#lstmap:{{#invoke:Wallinfo/idSets|getSet|CanBeConvertedToGlowingMushroom|y}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}
+
+=== 红溶液 ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! 转化产生的{{tr|tile}} !! 原{{tr|tiles}}
+|-
+| {{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Stone -->
+|{{item|id=1|type=tile|Stone Block|image=Stone Block (placed).png}}
+|{{item|id=25|type=tile|Ebonstone Block|image=Ebonstone Block (placed).png}}
+|{{item|id=117|type=tile|Pearlstone Block|image=Pearlstone Block (placed).png}}
+<!--|{{item|id=203|type=tile|Crimstone Block|image=Crimstone Block (placed).png}}-->
+<!-- Main.tileMoss -->
+|{{item|id=179|type=tile|note=（在{{tr|Stone Block}}上）|Green Moss|image=Green Moss (placed).png}}
+|{{item|id=180|type=tile|note=（在{{tr|Stone Block}}上）|Brown Moss|image=Brown Moss (placed).png}}
+|{{item|id=181|type=tile|note=（在{{tr|Stone Block}}上）|Red Moss|image=Red Moss (placed).png}}
+|{{item|id=182|type=tile|note=（在{{tr|Stone Block}}上）|Blue Moss|image=Blue Moss (placed).png}}
+|{{item|id=183|type=tile|note=（在{{tr|Stone Block}}上）|Purple Moss|image=Purple Moss (placed).png}}
+|{{item|id=381|type=tile|note=（在{{tr|Stone Block}}上）|Lava Moss|image=Lava Moss (placed).png}}
+|{{item|id=534|type=tile|note=（在{{tr|Stone Block}}上）|Krypton Moss|image=Krypton Moss (placed).png}}
+|{{item|id=536|type=tile|note=（在{{tr|Stone Block}}上）|Xenon Moss|image=Xenon Moss (placed).png}}
+|{{item|id=539|type=tile|note=（在{{tr|Stone Block}}上）|Argon Moss|image=Argon Moss (placed).png}}
+|{{item|id=625|type=tile|note=（在{{tr|Stone Block}}上）|Neon Moss|image=Neon Moss (placed).png}}
+|{{item|id=627|type=tile|note=（在{{tr|Stone Block}}上）|Helium Moss|image=Helium Moss (placed).png}}
+}}
+|-
+| {{item|id=662|type=tile|Crimson Jungle grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.JungleGrass -->
+|{{item|id=60|type=tile|Jungle grass}}
+|{{item|id=661|type=tile|Corrupt Jungle grass}}
+<!--|{{item|id=662|type=tile|Crimson Jungle grass}}-->
+}}
+|-
+| {{item|id=199|type=tile|Crimson grass}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Grass -->
+|{{item|id=2|type=tile|Grass}}
+|{{item|id=23|type=tile|Corrupt grass}}
+|{{item|id=109|type=tile|Hallowed grass}}
+<!--|{{item|id=199|type=tile|Crimson grass}}-->
+|{{item|id=477|type=tile|Mowed grass}}
+|{{item|id=492|type=tile|Mowed Hallowed grass}}
+}}
+|-
+| {{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Ice -->
+|{{item|id=161|type=tile|Ice Block|image=Ice Block (placed).png}}
+|{{item|id=163|type=tile|Purple Ice Block|image=Purple Ice Block (placed).png}}
+|{{item|id=164|type=tile|Pink Ice Block|image=Pink Ice Block (placed).png}}
+<!--|{{item|id=200|type=tile|Red Ice Block|image=Red Ice Block (placed).png}}-->
+}}
+|-
+| {{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sand -->
+|{{item|id=53|type=tile|Sand Block|image=Sand Block (placed).png}}
+|{{item|id=112|type=tile|Ebonsand Block|image=Ebonsand Block (placed).png}}
+|{{item|id=116|type=tile|Pearlsand Block|image=Pearlsand Block (placed).png}}
+<!--|{{item|id=234|type=tile|Crimsand Block|image=Crimsand Block (placed).png}}-->
+}}
+|-
+| {{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.HardenedSand -->
+|{{item|id=397|type=tile|Hardened Sand Block|image=Hardened Sand Block (placed).png}}
+|{{item|id=398|type=tile|Hardened Ebonsand Block|image=Hardened Ebonsand Block (placed).png}}
+<!--|{{item|id=399|type=tile|Hardened Crimsand Block|image=Hardened Crimsand Block (placed).png}}-->
+|{{item|id=402|type=tile|Hardened Pearlsand Block|image=Hardened Pearlsand Block (placed).png}}
+}}
+|-
+| {{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Sandstone -->
+|{{item|id=396|type=tile|Sandstone Block|image=Sandstone Block (placed).png}}
+|{{item|id=400|type=tile|Ebonsandstone Block|image=Ebonsandstone Block (placed).png}}
+<!--|{{item|id=401|type=tile|Crimsandstone Block|image=Crimsandstone Block (placed).png}}-->
+|{{item|id=403|type=tile|Pearlsandstone Block|image=Pearlsandstone Block (placed).png}}
+}}
+|-
+| {{item|id=352|type=tile|Crimson thorny bushes|scale=1}}
+| {{itemlist
+<!-- TileID.Sets.Conversion.Thorn -->
+|{{item|id=32|type=tile|Corruption thorny bushes|scale=1}}
+|{{item|id=69|type=tile|Jungle thorny bushes|scale=1}}
+<!--|{{item|id=352|type=tile|Crimson thorny bushes|scale=1}}-->
+|{{item|id=655|type=tile|Plantera thorny bushes|scale=1}}
+}}
+|-
+| {{wall|id=81}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:81|{{#invoke:Wallinfo/idSets|getSet|Conversion_Grass|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=83}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:83|{{#invoke:Wallinfo/idSets|getSet|Conversion_Stone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=218}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:218|{{#invoke:Wallinfo/idSets|getSet|Conversion_HardenedSand|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=221}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:221|{{#invoke:Wallinfo/idSets|getSet|Conversion_Sandstone|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=192}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:192|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall1|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=193}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:193|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall2|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=194}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:194|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall3|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|-
+| {{wall|id=195}}
+| {{itemlist/start}}{{#lstmap:{{#lstrm:195|{{#invoke:Wallinfo/idSets|getSet|Conversion_NewWall4|y}}|,|,}}|,|@@|<esc>{{itemlist/item|{{wall|id=@@}}}}</esc>|}}{{itemlist/end}}
+|}{{itemlist/options|reset}}{{options/reset|item}}
+
+== 备注 ==
+* 当{{tr|Dark Blue Solution}}覆盖下的[[{{tr|Jungle}}]]{{tr|blocks}}转化为[[{{tr|Glowing Mushroom Biome}}]]{{tr|blocks}}时会打破[[{{tr|Plantera's Bulb}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Yellow Solutions, White Solutions, and Brown Solutions}}。
+** {{tr|solutions}}的买入/卖出价格由 {{sc|25}} / {{sc|5}} 降低至 {{sc|15}} / {{sc|3}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprites updated.}}旧外观为 [[File:Green Solution (old).png|link=]] [[File:Blue Solution (old).png|link=]] [[File:Purple Solution (old).png|link=]] [[File:Dark Blue Solution (old).png|link=]] [[File:Red Solution (old).png|link=]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|外观更新为与{{tr|Desktop 1.3.0.1}} 一致。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprites}}更新为与{{tr|Desktop 1.3.0.1}} 一致。（{{icon/ps4}}）}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|更新外观为与{{tr|Desktop}} 1.3.0.1 一致。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Solutions}}

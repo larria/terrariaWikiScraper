@@ -1,0 +1,16 @@
+<!--
+-->{{#vardefine:crates-loonote:cratename|{{{crate|{{pagename2en}}}}}}}<!--
+
+-->{{#ifeq:{{eversions|{{#var:crates-loonote:cratename}}|raw=y}}|{{eversions|1.4.0.1|raw=y}}||{{eicons|1.4.0.1}}&#32;}}<!--
+
+-->{{tr|{{#var:crates-loonote:cratename}}}}总是会包含上面掉落表中显示的前{{#vardefineecho:_trim|{{{1}}}}}组中（或者除最后{{#vardefineecho:_trim|{{{2}}}}}组外的）的''至少''一种物品。这意味着{{tr|{{#var:crates-loonote:cratename}}}}总是会开出下表中至少一种物品：
+: {{flexstart|style=float:left;}}<!--
+-->{{dotlist/start|space=xl|class=terraria}}<!--
+-->{{#fornumargs:k|v|{{#ifexpr:{{#var:k}}<3||{{dotlist/item|{{#lstmap:{{#var:v}}|/|@@@@|<esc>{{item|@@@@|mode=image|maxsize=28x28px}}</esc>|&#32;}}}}}}}}<!--
+-->{{flexend}}
+{{-}}<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Crates/lootnote}}
+</noinclude>

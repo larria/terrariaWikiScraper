@@ -1,0 +1,400 @@
+{{legacy nav tab}}
+{{infobox wrapper
+|{{npc infobox
+| auto = 262
+| namesub2 = 第一形态
+| type = Boss
+| environment = Underground Jungle
+| damage = <!--
+	-->{{modes|50|100|150}} {{note|small=y|paren=y|{{tr|contact}}}} {{source code ref|v=1.4.1.2|name=plantai|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle == 51</code> 代码段。注意{{tr|Plantera}}的若干属性数据，包括{{tr|damage and defense}}，都是硬编码在此处的。}}<br/><!--
+	-->{{modes|44|76|114}} {{note|small=y|paren=y|{{gameText|ProjectileName.SeedPlantera}}}}<br/><!--
+	-->{{modes|54|96|144}} {{note|small=y|paren=y|{{gameText|ProjectileName.PoisonSeedPlantera}}}}<br/><!--
+	-->{{modes|62|108|162}} {{note|small=y|paren=y|{{gameText|ProjectileName.ThornBall}}}}
+| life = {{modes|30000|42000|53550}}
+| image = Plantera (First form).gif
+| defense = 36<!-- hard-coded in Terraria.NPC.AI() --> <ref name="plantai"/>
+| debuff = Poisoned
+| debuffchance = {{modes|50%|100%}} {{note|small=y|paren=y|{{gameText|ProjectileName.PoisonSeedPlantera}}}} {{eicons|1.3.0.1|small=y}}
+| debuffduration = {{modes|{{duration|rawseconds=3–7}}|{{duration|rawseconds=4–18}}|{{duration|rawseconds=5–22.5}}}}<!-- Expert/Master has its own duration, separate from Classic -->
+| money =
+| imageother = Map Icon Plantera (first form).png
+| imageothercaption = Map Icon
+| idprojectile = 275, 276, 277
+| sound3 = Item 17.wav
+| soundcaption3 = 发射{{tr|projectile}}
+| hardmode = yes
+}}
+|{{npc infobox
+| name = Plantera
+| namesub = 第二形态
+| image = Plantera (Second form).gif
+| type = Boss
+| environment = Underground Jungle
+| ai = Plantera AI
+| damage = {{modes|70|140|210}}<!-- hard-coded in Terraria.NPC.AI() --> <ref name="plantai"/>
+| life = {{modes|15000/30000|21000/42000|26775/53550}}
+| defense = 10<!-- hard-coded in Terraria.NPC.AI() --> <ref name="plantai"/>
+| knockback = 100%
+| immune1 = Confused
+| immune2 = Poisoned
+| id = 262
+| money = {{modes|prefix=y|{{coin|15gc}}|{{coin|37gc50sc}}}}
+
+| Temple Key|1|100% @normal
+|:group:start|总是会掉落以下 7 件{{tr|items}}之一&nbsp;<ref name="gl">在给定世界中第一次打败{{tr|Plantera}}时，总是会从这七/六个物品中选择[[{{tr|Grenade Launcher}}]]。否则，每个选项的可能性是等同的。</ref>{{source code ref|v=1.4.0.5|name=plantdrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_Plantera / Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBossTrophies / Terraria.NPC.DoDeathEvents_DropBossPotionsAndHearts}}| @normal
+|custom:Grenade Launcher/Rocket I| {{item|Grenade Launcher}}
+: + {{item|Rocket I}} ( {{inline block|50–149 <br/>}} )
+{{note|small=y|block=y|paren=y|在非{{tr|Expert mode}}且非{{tr|Master Mode}}的{{tr|world}}中第一次打败{{tr|Plantera}}时总是会掉落}} | 14.29% <br/> 
+| Venus Magnum|1|14.29% @normal
+| Nettle Burst|1|14.29% @normal
+| Leaf Blower|1|14.29% @normal
+| Flower Pow|1|14.29% @normal
+| Wasp Gun|1|14.29% @normal
+| Seedler|1|14.29% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Pygmy Staff|1|25% @normal
+| Thorn Hook|1|10% @normal
+| The Axe|1|2% @normal
+| Seedling|1|5% @normal
+| Greater Healing Potion|5–15|100%
+| Plantera Mask|1|14.29% @normal
+| Plantera Trophy|1|10%
+| Treasure Bag (Plantera)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Spore Sac|1|100% #expert
+  | Plantera Mask|1|14.29% #expert
+  | Temple Key|1|100% #expert
+  |:group:start|总是会掉落以下 7 件{{tr|items}}之一| #expert
+  |custom:Grenade Launcher/Rocket I| {{item|Grenade Launcher}}
+: + {{item|Rocket I}} (50–149) | 14.29% #expert
+  | Venus Magnum|1|14.29% #expert
+  | Nettle Burst|1|14.29% #expert
+  | Leaf Blower|1|14.29% #expert
+  | Flower Pow|1|14.29% #expert
+  | Wasp Gun|1|14.29% #expert
+  | Seedler|1|14.29% #expert
+  |:group:end|-----------------------------------|
+  | Seedling|1|6.67% #expert
+  | The Axe|1|5% #expert
+  | Pygmy Staff|1|50% #expert
+  | Thorn Hook|1|10% #expert
+  | Gold Coin|[[{{tr|NPC drops|link=y}}#{{tr|Coin drops}}||15]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Plantera Seedling|1|{{master|25%}} @master
+| Plantera Relic|1|{{master|100%}} @master
+
+| sound1 = NPC Hit 1.wav
+| soundcaption1 = 受伤
+| sound2 = NPC Killed 1.wav
+| soundcaption2 = 死亡
+| sound3 = Item 17.wav
+| soundcaption3 = 发射{{tr|Spore}}
+| hardmode = yes
+| cargo = no | cargodrops = auto<!-- store drops only in main namespace and main page -->
+| imageother = Map Icon Plantera (second form).png
+| imageothercaption = Map Icon
+}}
+|{{npc infobox
+| auto = 263
+| type = Boss Part / Invincible
+| environment = Underground Jungle
+}}
+|{{npc infobox
+| image = Plantera's Tentacle.gif
+| auto = 264
+| type = Boss Part
+| environment = Underground Jungle
+}}
+|{{anchor|{{tr|Spore}}}}{{anchor|spore}}{{anchor|Spore}}{{npc infobox
+| auto = 265
+| type = Projectile NPC
+| environment = Underground Jungle
+}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.THE_GREAT_SOUTHERN_PLANTKILL_Description}}|是|1}}}}|image=Map Icon Plantera (first form).png}}
+
+'''{{tr|Plantera}}'''是一个[[{{tr|Hardmode}}]] [[{{tr|boss}}]]，在三个[[{{tr|Mechanical Bosses}}]]（[[{{tr|The Twins}}]]、[[{{tr|The Destroyer}}]]、和[[{{tr|Skeletron Prime}}]]）全部被打败后可以在[[{{tr|Underground Jungle}}]]中与之战斗。{{tr|Plantera}}被打败时会掉落一把[[{{tr|Temple Key}}]]，允许进入[[{{tr|Jungle Temple}}]]。
+
+{{boss music|exclusive=1|pronoun=她|ow=Plantera (Otherworldly)}}
+
+== 召唤 ==
+在打败所有三个{{tr|mechanical bosses}} 后，[[{{tr|Plantera's Bulb}}]]就会随机生成在{{tr|Underground Jungle}}中（由[[{{tr|status message}}]]''“{{gameText|LegacyMisc.32}}”''所指示）。这些{{tr|Bulb}}在黑暗区域会发出微弱的粉色光芒，并在被摧毁后就会立刻在附近召唤{{tr|Plantera}}，通常会召唤在屏幕外较远的距离上。
+
+== 行为 ==
+{{float file|[[File:Plantera in the Jungle.png|thumbnail|230px|{{tr|Plantera}}的第一形态。]]<br/>[[File:Plantera in the Jungle (second form).png|thumbnail|230px|{{tr|Plantera}}的第二形态。]]}}
+{{tr|Plantera}}使用三根长长的{{tr|vine}}抓住{{tr|solid blocks}}来缓慢地穿过{{tr|blocks}}移动，类似于[[{{tr|Hooks}}|多钩]]那样。在第二阶段，{{tr|Plantera}}能够抓住[[{{tr|Background Walls}}]]。其{{tr|vine}}的末端称为{{item|Plantera's Hook|s|nolink=y|size=25px}}，是无敌的且会造成{{tr|contact damage}}。
+
+=== 第一形态 ===
+{{tr|Plantera}}会在玩家后面缓慢行进，造成{{tr|contact damage}}，并会朝玩家发射下表所列{{tr|projectiles}}。她通常会与玩家保持距离，专注于频繁使用高速的{{tr|projectile}}攻击玩家。她只会在与{{tr|player}}之间存在清晰的视线时发射{{tr|projectiles}}。
+{{options/set|item|mode=table|nolink=y}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Projectile}} !! {{tr|Damage}}<ref name="plantai"/> !! 发射几率<ref name="plantai"/>
+|-
+| {{item|Seed|image=Plantera Seed (animated).gif}}
+| 44 / {{expert|76}} / {{master|114}}
+| {{chance|21/32}} / {{expert|{{chance|5/12}}}}{{note|block=y|paren=y|当{{tr|Plantera}}生命值 ≥80% 时是 100%}}
+|-
+| {{item|Poison Seed|image=Poison Seed (animated).gif}}
+| 54 / {{expert|96}} / {{master|144}}
+| {{chance|8/32|reduce=n}} / {{expert|{{chance|6/12|reduce=n}}}}
+|-
+| {{item|Thorn Ball}}
+| 62 / {{expert|108}} / {{master|162}}
+| {{chance|3/32}} / {{expert|{{chance|1/12}}}}
+|}{{options/reset|item}}
+
+{{tr|Seeds and Poison Seeds}}类似于[[{{tr|Hornet}}]]与[[{{tr|Queen Bee}}]]的{{tr|stingers}}和[[{{tr|Flower Pow}}]]的花瓣，但能够穿过{{tr|block}}。绿色的{{tr|Poison Seeds}}有 {{chance|1/2}} / {{expert|100%}} 几率造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]，持续 3–7 / {{expert|4–9}} 秒。{{tr|Thorn Balls}}类似于[[{{tr|Spiky Ball Trap}}]]释放的{{tr|projectiles}}，但从{{tr|solid blocks}}上更快、更不规则地反弹。它们会试图在水平方向上跟随玩家，如果玩家在同一区域停留太久，可能会被它们淹没。
+
+{{tr|Poison Seeds and Thorn Balls}}仅在{{tr|Plantera}}的生命值低于 80%（{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.8 round 0}}}} / {{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.8 round 0}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.8 round 0}}}}}}）时才会发射。在{{tr|projectile}}被发射后会有短暂的冷却，取决于{{tr|Plantera}}的当前{{tr|health}}以及{{tr|projectile}}的类型：
+{{options/set|item|mode=table|nolink=y}}
+{| class="terraria lined align-center"
+! rowspan=2 colspan=2 | {{tr|Projectile}} !! colspan=5 | 冷却时间（基于{{tr|Plantera}}的{{tr|health}}）{{source code ref|name=projectilecooldown|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle == 51</code> 代码段。在内部，一个起始为 0 的计数器用于决定{{tr|Plantera}}是否能发射{{tr|projectile}}。每{{tr|tick}}，计数器的值提高 1；这一增量在下列条件下会进一步提高：分别在{{tr|Plantera}}的{{tr|health}}低于 90%、80%、70%、和 60% 时 +1；在[[{{tr|Expert Mode}}]]下 +1；在 [[{{tr|For the worthy}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}} 中 +1 ；在{{tr|enrage}}时 +3。当计数器的值超过 80 时，会发射一个{{tr|projectile}}，然后计数器的值将基于发射的{{tr|projectile}}重置为不同的值：常规{{tr|Seed}}为 0、{{tr|Poison Seed}}为 -30、{{tr|Thorn Ball}}为 -120。}}
+|-
+! ≥ 90%<br/><ref name="hp100-90" group="hp"/>
+! 89%–80%<br/><ref name="hp90-80" group="hp"/>
+! 79%–70%<br/><ref name="hp80-70" group="hp"/>
+! 69%–60%<br/><ref name="hp70-60" group="hp"/>
+! 59%–50%<br/><ref name="hp60-50" group="hp"/>
+|-
+| {{item|Seed|image=Plantera Seed (animated).gif}}
+| {{duration|{{#expr:ceil(81/1)}}ticks}}
+| {{duration|{{#expr:ceil(81/2)}}ticks}}
+| {{duration|{{#expr:ceil(81/3)}}ticks}}
+| {{duration|{{#expr:ceil(81/4)}}ticks}}
+| {{duration|{{#expr:ceil(81/5)}}ticks}}
+|-
+| {{item|Poison Seed|image=Poison Seed (animated).gif}}
+| {{na}}
+| {{na}}
+| {{duration|{{#expr:ceil(111/3)}}ticks}}
+| {{duration|{{#expr:ceil(111/4)}}ticks}}
+| {{duration|{{#expr:ceil(111/5)}}ticks}}
+|-
+| {{item|Thorn Ball}}
+| {{na}}
+| {{na}}
+| {{duration|{{#expr:ceil(201/3)}}ticks}}
+| {{duration|{{#expr:ceil(201/4)}}ticks}}
+| {{duration|{{#expr:ceil(201/5)}}ticks}}
+|}{{options/reset|item}}
+
+=== 第二形态 ===
+一旦{{tr|Plantera}}降到其{{tr|maximum health}}的一半（{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.5 round 0}}}} / {{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.5 round 0}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.5 round 0}}}}}}），她就会变为其第二形态：粉红色的花瓣脱落，露出一张满是刺的嘴。在这种形态下，{{tr|Plantera}}停止发射之前的{{tr|projectiles}}，改为更具攻击性地移动，试图造成{{tr|contact damage}}。其{{tr|contact damage}}要比第一形态下更高，但其{{tr|defense}}会大幅降低到 10。
+
+变形后，{{tr|Plantera}}会额外长出八张嘴，称为{{item|Plantera's Tentacle|s|nolink=y|size=21px}}，这些嘴通过{{tr|vine}}连接到身体上。它们造成{{tr|contact damage}}并会妨碍玩家的攻击，但{{tr|health}}相对较低。被打败的{{tr|tentacles}}不会再长出来，一旦全部杀光，{{tr|Plantera}}就容易对付多了。
+
+{{tr|Plantera}}现在偶尔会释放出向玩家飘移的飘浮粉色[[#{{tr|Spore}}|{{tr|Spore}}]][[{{tr|projectile NPC}}|{{tr|projectile enemies}}]]，类似于[[{{tr|Giant Fungi Bulb}}]]释放的{{tr|spores}}。任何[[{{tr|weapon}}]]或[[{{tr|tool}}]]都可以一击干掉它们，但它们可以穿过{{tr|blocks}}并造成高伤害。类似于第一阶段，两次{{tr|spore}}释放之间的冷却时间取决于{{tr|Plantera}}的{{tr|health}}：
+{{options/set|item|mode=table}}
+{| class="terraria lined align-center"
+! rowspan=2 colspan=2 | [[{{tr|Projectile NPC}}|{{tr|Projectile enemy}}]] !! colspan=5 | 冷却时间（基于{{tr|Plantera}}的{{tr|health}}）{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分位于 <code>aiStyle == 51</code> 代码段。在内部，一个起始为 0 的计数器用于决定{{tr|Plantera}}是否能生成{{tr|Spore}}。每{{tr|tick}}，计数器的值提高 1；这一增量会在{{tr|Plantera}}的{{tr|health}}低于 40%、30%、20%、和 10% 时分别再提高 1。当计数器的值超过 350 时，会生成一个{{tr|Spore}}，然后计数器的值将重置为 0。}}
+|-
+! 50%–40%<ref name="hp50-40" group="hp"/>
+! 39%–30%<ref name="hp40-30" group="hp"/>
+! 29%–20%<ref name="hp30-20" group="hp"/>
+! 19%–10%<ref name="hp20-10" group="hp"/>
+! ≤10%<ref name="hp10-0" group="hp"/>
+|-
+| {{item|Spore|link=#{{tr|Spore}}}}
+| {{duration|{{#expr:ceil(351/1)}}ticks}}
+| {{duration|{{#expr:ceil(351/2)}}ticks}}
+| {{duration|{{#expr:ceil(351/3)}}ticks}}
+| {{duration|{{#expr:ceil(351/4)}}ticks}}
+| {{duration|{{#expr:ceil(351/5)}}ticks}}
+|}{{options/reset|item}}
+
+=== 暴怒行为 ===
+{{tr|Plantera}}会在跟随玩家离开[[{{tr|Underground Jungle}}]]时变得“{{tr|Enraged}}”，无论是来到{{tr|the surface}}、[[{{tr|Underworld}}]]、还是完全不同的一个{{tr|biome}}。只要附近有至少 140 个[[{{tr|Jungle grass}}]] / [[{{tr|Hive|link=y}}|{{tr|Hive}}]] / [[{{tr|Lihzahrd Brick}}]]{{tr|blocks}}，她在{{tr|Underground Jungle}}被[[{{tr|Corrupt}}]]/[[{{tr|Crimson}}]]化或[[{{tr|Hallow}}]]化的部分时就不会{{tr|Enraged}}。{{tr|Enraged}}会导致她的{{tr|damage}}翻倍、{{tr|defense}}翻倍（在第二形态下{{tr|defense}}为四倍）、并提高移动速度，还会改变其攻击模式并直接冲向玩家。其{{tr|projectiles}}同样造成双倍伤害并具有缩短的冷却时间。在重新进入{{tr|Underground Jungle biome}}时{{tr|Plantera}}的行为会恢复正常。
+
+=== 专家模式 ===
+在{{eil|expert mode}}中，除了默认的生命值和伤害提升外，{{tr|Plantera}}的攻击还有一些显著差异。
+
+在第一形态，其粉色种子可以穿透{{tr|blocks}}，并且所有{{tr|projectiles}}都有着有限{{tr|homing}}能力。冷却时间也缩短了：
+{{options/set|item|mode=table|nolink=y}}
+{| class="terraria lined align-center"
+! rowspan=2 colspan=2 | {{tr|Projectile}} !! colspan=5 | 冷却时间（基于{{tr|Plantera}}的{{tr|health}}）<ref name="projectilecooldown"/>
+|-
+! ≥ 90%<ref name="hp100-90" group="hp"/>
+! 89%–80%<ref name="hp90-80" group="hp"/>
+! 79%–70%<ref name="hp80-70" group="hp"/>
+! 69%–60%<ref name="hp70-60" group="hp"/>
+! 59%–50%<ref name="hp60-50" group="hp"/>
+|-
+| {{item|Seed|image=Plantera Seed (animated).gif}}
+| {{duration|{{#expr:ceil(81/2)}}ticks}}
+| {{duration|{{#expr:ceil(81/3)}}ticks}}
+| {{duration|{{#expr:ceil(81/4)}}ticks}}
+| {{duration|{{#expr:ceil(81/5)}}ticks}}
+| {{duration|{{#expr:ceil(81/6)}}ticks}}
+|-
+| {{item|Poison Seed|image=Poison Seed (animated).gif}}
+| {{na}}
+| {{na}}
+| {{duration|{{#expr:ceil(111/4)}}ticks}}
+| {{duration|{{#expr:ceil(111/5)}}ticks}}
+| {{duration|{{#expr:ceil(111/6)}}ticks}}
+|-
+| {{item|Thorn Ball}}
+| {{na}}
+| {{na}}
+| {{duration|{{#expr:ceil(201/4)}}ticks}}
+| {{duration|{{#expr:ceil(201/5)}}ticks}}
+| {{duration|{{#expr:ceil(201/6)}}ticks}}
+|}{{options/reset|item}}
+
+在其第二形态中，{{tr|Plantera and Plantera's Tentacles}}会比正常情况移动得更快。另外，还会多出九根{{tr|Plantera's Tentacles}}，三个一组地连接到{{tr|Plantera's Hooks}}上。此外，连接到{{tr|Plantera}}身体上的八根{{tr|tentacles}}在被击杀之后还能重生（这点不适用于连接在钩上的{{tr|tentacles}}）。重生速度是随机化的，但取决于存活{{tr|tentacles}}的数量——如果全部已死亡，平均来说，会在 5 秒后重生出一根新{{tr|tentacle}}。每根存活的{{tr|tentacle}}会将此数字提高 5 秒，因此八根{{tr|tentacle}}全部重生出来平均来说需要 180 秒。假设过程中另外七根{{tr|tentacle}}一直都存活着的话，打掉单根{{tr|tentacle}}后它平均需要 40 秒来重生。<ref name="plantai"/>
+
+== 后果 ==
+{{tr|Plantera}}总是会掉落[[{{tr|Temple Key}}]]，这允许进入[[{{tr|Jungle Temple}}]]，以及和[[{{tr|Golem}}]] [[{{tr|Bosses}}|{{tr|boss}}]] 战斗。
+
+{{tr|Plantera}}被打败时会出现一条[[{{tr|status message}}]]''“{{gameText|LegacyMisc.33}}”''，表明[[{{tr|Dungeon}}]]中开始生成新的、更难的[[{{tr|enemy}}]]类型（[[{{tr|Dungeon}}#{{tr|Hardmode}}{{tr|Plantera}}后的{{tr|Dungeon}}|参见详情]]）。这些{{tr|enemies}}会掉落强大的新{{tr|weapons}}、{{tr|accessories}}、和其他{{tr|items}}。在高于 100 {{tr|health}}的{{tr|Dungeon enemies}}死亡时会开始出现[[{{tr|Dungeon Spirit}}]]，它会掉落[[{{tr|Ectoplasm}}]]，这是一种新的[[{{tr|crafting material}}]]，使你能够接触到[[{{tr|Pumpkin Moon}}]]和[[{{tr|Frost Moon}}]]{{tr|events}}，以及{{eil|Spectre Bar|s}}。
+
+另外：
+* [[{{tr|the Corruption}}]]、[[{{tr|Crimson}}]]、和[[{{tr|Hallow}}]]的[[{{tr|Biome spread}}|{{tr|spread}}]]速度相比原来的减半。
+* [[{{tr|Biome Key}}]]现在可用于打开{{tr|Dungeon}}中的[[{{tr|Biome Chest}}]]。
+* [[{{tr|Cyborg}}]] [[{{tr|NPC}}]] 到来并会入住可用的空[[{{tr|house}}]]，从而也允许{{eil|Princess}} {{tr|NPC}} 到来。
+* [[{{tr|Truffle}}]]开始出售用于{{tr|craft}}[[{{tr|Shroomite Bar}}]]和升级{{tr|Cyborg}}出售的[[{{tr|rockets}}]]的[[{{tr|Autohammer}}]]。
+* {{eil|Zoologist}}开始出售{{eil|Mud Bud}}。
+* [[{{tr|Dye Trader}}]]开始用[[{{tr|Pixie Dye}}]]、[[{{tr|Wisp Dye}}]]、[[{{tr|Infernal Wisp Dye}}]]、和[[{{tr|Unicorn Wisp Dye}}]]作为奖励向玩家交换[[{{tr|Strange Plant}}]]。
+* [[{{tr|Witch Doctor}}]]开始出售多个和[[{{tr|Minion}}]]召唤相关的物品，还有[[{{tr|Vial of Venom}}]]。
+* [[{{tr|Solar Eclipse}}]]{{tr|event}}期间开始生成[[{{tr|Butcher}}]]、[[{{tr|Psycho}}]]、[[{{tr|Nailhead}}]]、[[{{tr|Deadly Sphere}}]]、[[{{tr|Dr. Man Fly}}]]、和[[{{tr|Mothron}}]]。
+* {{eil|Prismatic Lacewing}}开始在地上{{tr|the Hallow}}中生成，允许召唤{{eil|Empress of Light}}。
+
+== 备注 ==
+* 如果{{tr|Plantera}}目前已被召唤且又有另一个{{tr|Plantera's Bulb}}被破坏，并不会召唤出第二个{{tr|Plantera}}，但{{tr|bulb}}会被摧毁。
+* 如果{{tr|Plantera}}没有可以锚定的表面，她会慢慢向上漂浮，最终进入[[{{tr|space}}]]，或者直到她再次碰到可以锚定的地方。{{tr|Plantera's Hooks}}会穿过{{tr|blocks}}，因此试图关住它是不会成功的，{{tr|Plantera}}只会直接锚定在外面。
+* 如果三个[[{{tr|mechanical bosses}}]] 是在[[{{tr|Wall of Flesh}}]]之前就已被打败的，依然需要击杀{{tr|Wall of Flesh}}才能触发状态讯息''“{{gameText|LegacyMisc.32}}”''
+
+== 成就 ==
+{{achievement|name=The Great Southern Plantkill}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Plantera}}攻略}}
+<!-- If you are able to use spawnpoints to prevent Plantera from despawning, please list what version of Terraria you are playing on. So far doing so does not work on the PC or 3DS versions. -->
+* 在召唤{{tr|Plantera}}前挖掘一个够大的区域以便更容易躲避。可以用[[{{tr|Scarab Bomb}}]]来更快完成这一工作。
+** 扩建[[{{tr|Underground Jungle}}]]中的[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]是一种快速且有效的方式来打造与{{tr|Plantera}}战斗的{{tr|arena}}（但要注意[[{{tr|Larva}}]]）。
+** 确保此区域没有[[{{tr|background walls}}]]。这可以极大地降低{{tr|Plantera}}在第二形态中的机动性，因为没有墙可以让她钩住。
+** [[{{tr|Living Fire Blocks}}]]非常好用，因为能够代替{{tr|torches}}来照亮战斗场地；{{tr|Plantera}}并不能抓在它们上。
+* 用[[{{tr|Gravitation Potion}}]]可以帮助玩家避免被掉在地面上的{{tr|Thorn Balls}}伤到，因为{{tr|Thorn balls}}会服从重力并掉在地板上。或者，玩家可以使用底部有一个巨大空区域的{{tr|arena}}，以便{{tr|Thorn balls}}在其中弹跳，远低于玩家从而不受其伤害。
+* {{tr|Plantera's Bulb}}可以在玩家制造的[[{{tr|Jungle}}]]{{tr|Biome}}中生成，可以提供一种轻松的方法来与{{tr|Plantera}}战斗。
+* 狭窄的通道能延缓{{tr|Plantera}}，因为她需要更多的时间来抓住周围的地表。
+* 使用[[{{tr|Hellevator}}]]结合{{tr|wings}}可以让{{tr|Plantera}}的战斗变得非常容易，方法是让{{tr|Plantera}}在{{tr|the Underground Jungle}}的较高处生成，然后向下滑的同时用[[{{tr|Ranged weapons}}]]或[[{{tr|magic weapon}}]]。
+* 在{{tr|Plantera}}的第二形态中，其唯一的{{tr|ranged attack}}是由很容易杀死的{{tr|Spores}}形成的，这意味着保持距离是避免受伤害的关键。
+* 包含[[{{tr|Teleporter}}]]的{{tr|An arena}}可让玩家轻松逃离{{tr|Plantera}}的攻击。
+
+== 花絮 ==
+* 名字“{{tr|Plantera}}”（Plantera）是根据 20 世纪 90 年代的前美国蛊戮金属乐队 {{维基百科|Pantera}} 的名字改编的，这是 [[{{tr|Cenx}}]] 最喜欢的乐队。
+** {{tr|Plantera}}会掉落一把名叫“[[{{tr|The Axe}}]]”的{{tr|hamaxe}}，看起来像是一把 {{维基百科|Gibson Flying V}} 电吉他。{{tr|This boss}}及其掉落物是向 Pantera 的吉他手 {{维基百科|Dimebag Darrell}} 的致敬。
+** 此外，打败{{tr|Plantera}}的{{tr|achievement}}叫“[[{{tr|The Great Southern Plantkill}}]]”（The Great Southern Plantkill），引用了 Pantera 发布于 1996 年五月的第八张录音室专辑{{维基百科|b=y|The Great Southern Trendkill}}，以及其中的第一首和专辑同名的音乐。
+** {{tr|Plantera}}的 {{tr|boss}} [[{{tr|Music|link=y}}#{{tr|Plantera}}|{{tr|music}}]]也是金属主题的。
+* {{tr|Plantera}}拥有游戏中最多的掉落物数量，总计 16 种，甚至超过了[[{{tr|Queen Bee}}]]。
+* {{tr|Plantera}}是七个有专属 {{tr|boss music}}的 {{tr|bosses}}之一。其他的为[[{{tr|Queen Bee}}]]、{{eil|Deerclops}}、{{eil|Queen Slime}}、{{eil|Empress of Light}}、[[{{tr|Duke Fishron}}]]、和{{eil|Moon Lord}}。
+** {{tr|Plantera}}也是第一个有专属音乐的 {{tr|boss}}，从加入游戏以来就有她自己的音乐。
+** {{tr|Plantera}}的 {{tr|boss music}}中也可以听到 [[{{tr|Music|link=y}}#Jungle|Jungle Day]] 主题曲的片段。
+* {{tr|Plantera}}在第一阶段似乎是花瓣闭合的过度生长的{{维基百科|Antirrhinum|snapdragon|t=金鱼草}}花，而{{tr|Spores}}则是花瓣闭合的金鱼草。
+* 据 Cenx 所述，{{tr|Plantera}}是雌性。{{discord ref|screenshot=File:Plantera female.png|type=Cenx 的消息|channel=#terraria-chat-1|link=251072485095636994/251116850132287490/564068179534544896|date=04/06/2019}}
+* {{tr|Plantera and the Empress of Light}}拥有所有 {{tr|Boss}} 中仅有的乐器掉落物，是{{tr|The Axe}}和{{eil|Stellar Tune}}，二者掉落率也相同。
+** 巧合的是，二者都是带有暴怒形态的雌性 {{tr|bosses}}。
+* 如果算上{{eil|Mud Bud}}，{{tr|Plantera}}是所有 {{tr|boss}} 中能得到最多[[{{tr|Pets}}|{{tr|pet}}]]{{tr|summoning items}}的，其他的有[[{{tr|Seedling}}]]和{{eil|Plantera Seedling}}，这些都是{{tr|plants}}。
+* 用于{{tr|Plantera}}的[[{{tr|Party Girl|link=y}}#{{tr|Music}}切换|{{tr|Otherworldly music}}]]在[[《{{tr|Terraria: Otherworld}}》]]的官方配乐中名叫“Rage of Tarunnk”（Tarunnk 之怒）。
+{{bestiary|article=}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|增大了使得消失计时器快速降低的距离。}}
+{{history|Desktop 1.4.0.3|{{tr|Plantera's Hook}}、{{tr|Plantera's Tentacle}}、{{tr|Spore}}和{{tr|Plantera}}的{{tr|sprites updated}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Plantera's Tentacles}}现在在{{tr|Expert Multiplayer}}有生命值缩放了。
+** 添加了两个{{tr|Master Mode}}掉落物：[[{{tr|Plantera Seedling}}]]和[[{{tr|Plantera Relic}}]]。}}
+{{history|Desktop 1.3.0.4|修正了对于非英语用户，{{tr|Plantera}}的标示不会被触发的问题。}}
+{{history|Desktop 1.3.0.1|
+** 对{{tr|biome}}蔓延的降低程度由 2/3 降低至 1/2。
+** {{tr|Plantera}}掉落{{tr|The Axe}}的几率由 {{chance|1/200}} 提升到 {{chance|1/50}}。
+** [[{{tr|Biome Chest}}]]不再能够在{{tr|Plantera}}被打败前打开。
+** 添加了{{tr|Expert mode}}掉落物，[[{{tr|Spore Sac}}]]。
+** 现在有几率掉落[[{{tr|Seedler}}]]。
+** 现在会掉落 50–149 个{{tr|rockets}}，从 20–49 个提升而来。
+** {{tr|Poison Seeds}}现在能造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.2.4|修正了“丛林变得焦躁不安……”讯息会在[[{{tr|Wall of Flesh}}]]要被打败时出现的 {{tr|bug}}，这个 {{tr|bug}} 最常在在线服务器上出现。}}
+{{history|Desktop 1.2.3|
+** 现在掉落 {{gc|15}}。
+** 现在当所有玩家都被杀死时会消失。
+** 现在要求它被击杀后才能在[[{{tr|Lihzahrd Altar}}]]召唤[[{{tr|Golem}}]]。
+** 现在有几率掉落[[{{tr|Plantera Mask}}]]。
+** {{tr|Plantera's bulbs}}在 3 个{{tr|mechanical bosses}} 全被打败后才会生成。}}
+{{history|Desktop 1.2.1.2|
+** [[{{tr|Solar Eclipse}}]]的发生不再要求打败{{tr|Plantera}}。
+** 她的速度降低了。
+** {{tr|Plantera}}现在会在被带出{{tr|the Jungle}}或到{{tr|the surface}}上时变得暴怒。}}
+{{history|Desktop 1.2.1.1|第一次击杀时会显示讯息“地牢中回荡着尖叫声……”。}}
+{{history|Desktop 1.2.0.3.1|
+** 修正了打败{{tr|plantera}}会强制服务器端人物的问题。
+** {{tr|Solar Eclipse}}现在只会在{{tr|Plantera}}被打败后发生。}}
+{{history|Desktop 1.2.0.3|
+** 现在需要打败{{tr|Plantera}}才能让{{tr|Hardmode dungeon enemies}}生成。
+** {{tr|Hardmode}}的{{tr|Crimson}}、{{tr|Corruption}}、和{{tr|Hallow}}的蔓延速度现在会在杀死{{tr|Plantera}}后减缓，而非在击杀任意{{tr|Mechanical Boss}} 后。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{reflist|group=hp|refs=
+<ref name="hp100-90"><!--
+	-->{{formatnum:{{npcinfo|262|hp}}–{{#expr:{{npcinfo|262|hp}}*0.9 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{npcinfo|262|hp|expert}}–{{#expr:{{npcinfo|262|hp|expert}}*0.9 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{npcinfo|262|hp|master}}–{{#expr:{{npcinfo|262|hp|master}}*0.9 round 0}}}}}}<!--
+--></ref>
+<ref name="hp90-80"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.9-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.8 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.9-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.8 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.9-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.8 round 0}}}}}}<!--
+--></ref>
+<ref name="hp80-70"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.8-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.7 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.8-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.7 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.8-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.7 round 0}}}}}}<!--
+--></ref>
+<ref name="hp70-60"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.7-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.6 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.7-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.6 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.7-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.6 round 0}}}}}}<!--
+--></ref>
+<ref name="hp60-50"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.6-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.5+1 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.6-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.5+1 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.6-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.5+1 round 0}}}}}}<!--
+--></ref>
+<ref name="hp50-40"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.5 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.4 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.5 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.4 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.5 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.4 round 0}}}}}}<!--
+--></ref>
+<ref name="hp40-30"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.4-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.3 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.4-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.3 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.4-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.3 round 0}}}}}}<!--
+--></ref>
+<ref name="hp30-20"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.3-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.2 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.3-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.2 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.3-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.2 round 0}}}}}}<!--
+--></ref>
+<ref name="hp20-10"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.2-1 round 0}}–{{#expr:{{npcinfo|262|hp}}*0.1 round 0}}}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.2-1 round 0}}–{{#expr:{{npcinfo|262|hp|expert}}*0.1 round 0}}}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.2-1 round 0}}–{{#expr:{{npcinfo|262|hp|master}}*0.1 round 0}}}}}}<!--
+--></ref>
+<ref name="hp10-0"><!--
+	-->{{formatnum:{{#expr:{{npcinfo|262|hp}}*0.1-1 round 0}}–0}}<br/><!--
+	-->{{expert|{{formatnum:{{#expr:{{npcinfo|262|hp|expert}}*0.1-1 round 0}}–0}}}}<br/><!--
+	-->{{master|{{formatnum:{{#expr:{{npcinfo|262|hp|master}}*0.1-1 round 0}}–0}}}}<!--
+--></ref>
+}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Plantera}}

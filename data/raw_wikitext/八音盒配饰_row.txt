@@ -1,0 +1,24 @@
+<includeonly>
+{{!-}}
+{{!}} {{item|{{{1|}}}}} {{#if:{{{icon|}}}|({{{icon|}}})}}
+{{!}} {{trim|{{{2|{{#var:default_source}}}}}}}
+{{!}} {{trim|{{{3|{{#var:default_effect}}}}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Outputs a table row for the table of [[Music Box Accessories]].
+
+{| class=terraria lined
+! colspan=2 | Parameters
+|-
+| 1 || Item name
+|-
+| 2 || Source
+|-
+| 3 || Effect
+|}
+{{language info|en=Music Box Accessories/row}}
+</noinclude>

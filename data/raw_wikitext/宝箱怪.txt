@@ -1,0 +1,325 @@
+{{npc infobox | notabs=y
+| imagealt = [[File:Mimic.png|link=]]  [[File:Ice Mimic.png|link=]] <hr style="margin:10px 0;"/> [[File:Hallowed Mimic2.png|40px|link=]] [[File:Corrupt Mimic2.png|44px|link=]] [[File:Crimson Mimic2.png|40px|link=]] [[File:Jungle Mimic2.png|40px|link=]]
+| cargo = no
+}}
+{{for|在{{tr|pre-Hardmode}}于{{tr|underground}}出现的跳跃的{{tr|chest}}|{{tr|Old Shaking Chest}}}}
+
+'''{{tr|Mimic}}'''是稀有的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，它们伪装成[[{{tr|Chest}}]]，以与环境相适应的{{tr|Chest}}类型出现。
+
+{{tr|Mimics}}可以由玩家用[[{{tr|Chest Statue}}]]生成，即使在[[{{tr|pre-Hardmode}}]]也可以。但是，通过这种方式生成的{{tr|Mimics}}只掉落[[{{tr|Mimic Banner}}]]。
+
+稀有的[[{{tr|The Hallow}}|{{tr|Hallowed}}]]、[[{{tr|The Corruption}}|{{tr|Corrupt}}]]、和[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|Mimics}}也可以由玩家通过[[{{tr|Key of Light}}]]或[[{{tr|Key of Night}}]]手动生成（参见[[#特殊种类|下文的{{tr|the Biome Mimic}}章节]]）。
+
+它们是少数能被[[{{tr|Lifeform Analyzer}}]]或其升级物探测到的实体。{{tr|Biome Mimics}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 常见种类 ==
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 85
+| environment = Surface / Underground / Cavern / The Underworld
+|:group:start|总是会掉落以下 6 件{{tr|items}}之一{{source code ref|name=registerMimic|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterMimic}}|
+	| Dual Hook|1|16.67%
+	| Magic Dagger|1|16.67%
+	| Philosopher's Stone|1|16.67%
+	| Titan Glove|1|16.67%
+	| Star Cloak|1|16.67%
+	| Cross Necklace|1|16.67%
+|:group:end|---------|---------
+| hardmode = yes
+}}
+|{{npc infobox
+| auto = 629
+| environment = Ice biome
+|:group:start|总是会掉落以下 4 件{{tr|items}}之一<ref name="registerMimic"/>|
+	| Toy Sled|1|5%
+	| Frostbrand|1|31.67%
+	| Ice Bow|1|31.67%
+	| Flower of Frost|1|31.67%
+|:group:end|---------|---------
+| hardmode = yes
+}}
+}}
+
+普通的{{tr|Mimics}}在接近或被攻击之前看起来像是{{tr|Chests}}，在此之后它们才会起来跳着追逐玩家。在暴露之前，它们会采用它们所在的[[{{tr|biome}}]]中通常会碰到的{{tr|chests}}的外观：在[[{{tr|Underground}}]]层以上是常规[[{{tr|Chest}}]]、{{tr|Underground}}是[[{{tr|Gold Chest}}]]、在[[{{tr|The Underworld}}]]是加锁[[{{tr|Shadow Chest}}]]。
+
+[[{{tr|Snow biome}}]]中，在[[{{tr|Ice Block}}]]或[[{{tr|Snow Block}}]]上生成的{{tr|Mimics}}会采用[[{{tr|Frozen Chest}}]]的外观，并且也有自己独特的一套{{tr|ice}}主题掉落物。
+
+=== [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] ===
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| namesub = {{tr|Pre-Hardmode variant}}
+| auto = 85
+| environment = Surface / Underground / Cavern / The Underworld
+| damage = {{modes|30|60|90}}
+| defense = 12
+| life = {{modes|300|600|900}}
+|:group:start|总是会掉落以下 6 件{{tr|items}}之一<ref name="registerMimic"/>|
+	|Band of Regeneration|1|16.67%
+	|Magic Mirror|1|16.67%
+	|Cloud in a Bottle|1|16.67%
+	|Hermes Boots|1|16.67%
+	|Mace|1|16.67%
+	|Shoe Spikes|1|16.67%
+|:group:end|---------|---------
+| money = {{modes|{{coin|2gc}}|{{coin|5gc}}}}
+}}
+|{{npc infobox
+| namesub = {{tr|Pre-Hardmode variant}}
+| auto = 629
+| environment = Ice biome
+| damage = {{modes|30|60|90}}
+| defense = 12
+| life = {{modes|300|600|900}}
+|:group:start|总是会掉落以下 7 件{{tr|items}}之一<ref name="registerMimic"/>|
+	| Toy Sled|1|5%
+	|Ice Boomerang|1|15.83%
+	|Ice Blade|1|15.83%
+	|Ice Skates|1|15.83%
+	|Ice Bow|1|15.83%
+	|Blizzard in a Bottle|1|15.83%
+	|Flurry Boots|1|15.83%
+|:group:end|---------|---------
+| money = {{modes|{{coin|2gc}}|{{coin|5gc}}}}
+}}
+}}
+
+在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] [[{{tr|secret world seeds}}]]中，{{tr|Mimics and Ice Mimics}}在{{tr|pre-Hardmode}}期间可以生成，具有较低的属性和不同的{{tr|drop}}。
+
+它们的{{tr|drops}}在{{tr|Hardmode}}期间会变回正常。不过，由于[[{{tr|Don't dig up|link=y}}#武器进度调换|武器进度调换]]，{{tr|Mimics}}会掉落[[{{tr|Wand of Sparking}}]]而非{{tr|Magic Dagger}}；{{tr|Ice Mimics}}会掉落[[{{tr|Snowball Cannon}}]]而非{{tr|Ice Bow}}。
+
+== 特殊种类 ==
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 473
+| imagealt = [[File:Corrupt Mimic.png|link=]] [[File:Corrupt Mimic2.png|link=]]
+| imagecargo = [[File:Corrupt Mimic2.png|link=]]
+| environment = Underground Corruption
+|:group:start|总是会掉落以下 5 件{{tr|items}}之一{{source code ref|name=registerMisc|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterMiscDrops}}|
+	| Dart Rifle|1|20%
+	| Clinger Staff|1|20%
+	| Chain Guillotines|1|20%
+	| Putrid Scent|1|20%
+	| Worm Hook|1|20%
+|:group:end|---------|---------
+| Greater Healing Potion|5–10|100%
+| Greater Mana Potion|5–15|100%
+| sound1 = Item 150.wav
+| soundcaption1 = 反弹{{tr|projectile}}
+| hardmode = y
+}}
+|{{npc infobox
+| auto = 474
+| imagealt = [[File:Crimson Mimic.png|link=]] [[File:Crimson Mimic2.png|link=]]
+| imagecargo = [[File:Crimson Mimic2.png|link=]]
+| environment = Underground Crimson
+|:group:start|总是会掉落以下 5 件{{tr|items}}之一<ref name="registerMimic"/>|
+	| Life Drain|1|20%
+	| Dart Pistol|1|20%
+	| Fetid Baghnakhs|1|20%
+	| Flesh Knuckles|1|20%
+	| Tendon Hook|1|20%
+|:group:end|---------|---------
+| Greater Healing Potion|5–10|100%
+| Greater Mana Potion|5–15|100%
+| sound1 = Item 150.wav
+| soundcaption1 = 反弹{{tr|projectile}}
+| hardmode = y
+}}
+|{{npc infobox
+| auto = 475
+| imagealt = [[File:Hallowed Mimic.png|link=]] [[File:Hallowed Mimic2.png|link=]]
+| imagecargo = [[File:Hallowed Mimic2.png|link=]]
+| environment = Underground Hallow
+|:group:start|总是会掉落以下 4 件{{tr|items}}之一<ref name="registerMimic"/>|
+	| Daedalus Stormbow|1|25%
+	| Flying Knife|1|25%
+	| Crystal Vile Shard|1|25%
+	| Illuminant Hook|1|25%
+|:group:end|---------|---------
+| Greater Healing Potion|5–10|100%
+| Greater Mana Potion|5–15|100%
+| sound1 = Item 150.wav
+| soundcaption1 = 反弹{{tr|projectile}}
+| hardmode = y
+}}
+|{{npc infobox
+| auto = 476
+| imagealt = [[File:Jungle Mimic.png|link=]] [[File:Jungle Mimic2.png|link=]]
+| imagecargo = [[File:Jungle Mimic2.png|link=]]
+| environment = Underground Jungle
+| Angel Statue|1|33%
+| Fart in a Jar|1|33%
+| Stink Potion|5–10|33%
+| Coal|1|33%
+| Red Potion|3–5|33%
+| Golden Shower|1|33%
+| Master Bait|2–4|33%
+| Water Gun|1|33%
+| Poo|1|33%
+| Sparkle Slime Balloon|69|33%
+| sound1 = Item 150.wav
+| soundcaption1 = 反弹{{tr|projectile}}
+| hardmode = y
+}}
+}}
+
+'''{{tr|Biome Mimics}}'''比普通{{tr|Mimic}}更加稀有，也在各种方面上更强大。这些特殊{{tr|variants}}只会在对应[[{{tr|biome}}]]的附近生成。[[{{tr|Jungle}}]]{{tr|variant}}只会在 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|Worlds}}中生成。
+
+它们中的每一种都有一套独特的掉落，包括强大的早期[[{{tr|Hardmode}}]]{{tr|weapons}}、{{tr|accessories}}、和{{tr|tool}}。和普通{{tr|Mimic}}一样，它们只会在{{tr|Hardmode}}世界中生成。
+
+和普通{{tr|Mimic}}相似，这些特殊变种直到玩家接近或攻击它们前会伪装成“{{tr|chest}}”。不过，它们和目前游戏中的任何{{tr|chest}}都不一样，而且明显比普通{{tr|chest}}更大。
+
+仅在{{tr|Hardmode}}世界中，{{tr|Hallow}}、{{tr|Corrupt}}和{{tr|Crimson Mimic}}也可以由玩家通过将[[{{tr|Key of Light}}]]或[[{{tr|Key of Night}}]]放置在一个空的{{tr|chest}}中来手动召唤；一旦{{tr|chest}}关闭，它们就会变成一个{{tr|Mimic}}。当前{{tr|world}}中天然的[[{{tr|Evil biome}}]]会决定使用{{tr|Key of Night}}时召唤的是{{tr|Corrupt Mimic}}还是{{tr|Crimson Mimic}}。{{tr|Hallowed, Corrupt, and Crimson Mimics}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的{{tr|banner}}，而非通常的 50 击杀。
+
+所有四种{{tr|Mimic}}会有相同的攻击方式：
+* {{tr|The Mimic}}会跳向玩家，就像普通{{tr|Mimic}}那样。它会连续跳跃三次，之后进行下列三种动作中的一种，然后重复循环。
+** 它会进行三次快速猛冲，在此期间也能跳得超级高。
+** 它会暂时关闭并保持静止，这时它会无敌，无法被攻击。在[[{{tr|Expert Mode}}]]下，它会反弹射向它的{{tr|projectiles}}，{{tr|projectiles}}会对玩家造成伤害。它能够反弹[[{{tr|bullets}}]]，[[{{tr|arrows}}]]和[[{{tr|darts}}]]，但不能反弹[[{{tr|rockets}}]]以及很多其他武器的{{tr|projectiles}}。对于完整列表，见[[{{tr|List of reflected projectiles}}]]。
+** 它会施展一个“践踏”攻击，先跳跃到玩家上方再快速下落（类似于[[{{tr|Giant Tortoise}}]]和[[{{tr|Ice Tortoise}}]]）。在此攻击期间，（不同于{{tr|Giant Tortoise}}或{{tr|Ice Tortoise}}）它可以穿过[[{{tr|blocks}}]]。
+* 如果玩家试图逃离，{{tr|the Mimic}}会在玩家后面高速猛冲（略高于 {{mph|51}}）。在使用此攻击时它们能穿透{{tr|blocks}}移动。
+
+{{anchor|stuffcannon}} {{tr|The Jungle Mimic}}拥有一个叫作“stuff cannon”（物品大炮）的额外“攻击”。这会将以下{{tr|block}}中的 10 个（以“[[{{tr|Items}}|掉落物]]状态”)扔向{{tr|player}}：{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets.ItemsForStuffCannon}}
+{{options/set|item|icons=n}}
+{{collapse top}}
+{{itemlist/start|width=13em}}
+{{#listmap:<!--
+	-->|list={{#invoke:Iteminfo/idSets|getSet|ItemsForStuffCannon}}<!--
+	-->|insep=,|outsep=<!--
+	-->|token=@@<!--
+	-->|sortmode=presort<!--sort before mapping
+	-->|sortoptions=numeric<!--sort values as number (they're item IDs)
+	-->|pattern=<esc>{{itemlist/item|{{item|id=@@|showid=no}}}}</esc><!--
+-->}}
+{{itemlist/end}}
+{{collapse bottom}}{{options/reset|item}}
+
+== 备注 ==
+* {{tr|Biome Mimic}}不计入{{tr|Mimic Banner}}计数，且不受{{tr|Mimic Banner}}影响。除了{{tr|Jungle Mimic}}之外，它们都有自己的独特{{tr|banners}}。
+* 木{{tr|Mimic}}仅能在位于{{tr|surface}}的[[{{tr|Dirt Wall}}|不安全的{{tr|Dirt Walls}}]]前生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+* 在 {{eil|drunk world}} 中，生成的{{tr|evil Biome Mimic}}的类型每天都会变化。
+* 在伪装状态下的普通{{tr|variant}}的{{tr|Mimic}}受到[[{{tr|lava}}]]伤害后，它会开始攻击。
+** 在伪装状态下的{{tr|Biome Mimics}}受到{{tr|lava}}伤害后仍然会保持静止。
+* {{tr|The Corrupt and Crimson Mimics}}的掉落物各自支持了不同的游玩方式（{{tr|dart weapons and hooks}}除外）。在生成世界时选择{{tr|evil biome}}时应当考虑这一点。
+** 来自{{tr|Corrupt Mimic}}的物品辅助了远程作战策略：拥有高{{tr|knockback}}的{{tr|flail}}，一道用于阻挡{{tr|enemies}}的火墙，以及一个降低[[{{tr|aggro}}]]并增加伤害以补偿这种策略的低伤害输出的{{tr|accessory}}。
+** 来自{{tr|Crimson Mimic}}的物品辅助了激进的作战策略：游戏中最小的{{tr|melee weapons}}之一，一个能够提供[[{{tr|health regeneration}}]]以恢复失去的{{tr|health}}的武器，以及一个增加{{tr|aggro}}并提供{{tr|defense}}以补偿这种策略的高承受伤害的{{tr|accessory}}。
+
+== 小贴士 ==
+* 以{{tr|Mimic}}为目标探索可以帮助玩家度过早期{{tr|hardmode}}，因为它们会掉落高伤害武器和好用的防御配饰，和大约{{npcinfo|Mimic|value}}（{{expert|{{npcinfo|Mimic|value|expert}}}}），这能帮助应对{{tr|hardmode}}的更高价格。
+** [[{{tr|Midas}}]]{{tr|debuff}}能显著提高掉落的钱币数量。这一可通过[[{{tr|Golden Bullet}}]]或者[[{{tr|Flask of Gold}}]]施加。
+* 和所有{{tr|enemy}}一样，[[{{tr|Battle Potion}}]]和[[{{tr|Water Candle}}]]可以用来提高{{tr|Mimic}}的生成几率。
+* 如果在[[{{tr|the Underworld}}]]中建了桥来打败[[{{tr|Wall of Flesh}}]]，在其上来回行走并注意看{{eil|Lifeform Analyzer}}的话能很容易找到{{tr|Mimics}}。
+* 由于它们的跳跃高度较低，可以通过使用[[{{tr|Rope}}]]，站在高台上，或使用[[{{tr|Hooks}}]]来离开其攻击范围并用{{tr|ranged weapon}}轻松处理之。
+* {{eicons|Valentine's Day}}在 2 月期间，所有{{tr|enemy}}上都会冒出爱心。这使{{tr|Mimic}}和{{tr|chest}}间的区别极其明显。
+* {{icon/console}} 如果有 3 名或更多玩家，{{tr|Mimics}}永远不会停留在伪装状态。
+* 由于更高的刷怪率，[[{{tr|Underground Jungle}}]]是一个刷{{tr|Mimic}}的好地方。
+* 在[[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]]中，如果玩家在困难模式前刷出宝箱怪然后保留它直到击败血肉墙，那么这个宝箱怪的掉落物会变为困难模式后的，但其属性不会发生变化。
+
+=== {{tr|Biome Mimics}} ===
+[[File:Biome Mimic strategy.png|thumb|175px|杀死人工召唤的{{tr|Biome Mimic}}的安全方式。]]
+
+* 虽然明显比普通{{tr|Mimic}}更强大，掉落的钱币仅有{{npcinfo|Corrupt Mimic|value}} / {{expert|{{npcinfo|Corrupt Mimic|value|expert}}}}，{{tr|Biome Mimics}}的掉落物更有价值也更有用。除了更优秀的武器和工具，它们还会掉落[[{{tr|Greater Healing Potion}}]]和[[{{tr|Greater Mana Potion}}]]，这在早期[[{{tr|Hardmode}}]]中，玩家能自己制造这些{{tr|potion}}前很有用。
+* 玩家在{{tr|hardmode}}最早期时在[[{{tr|Underground Crimson}}]]/[[{{tr|Underground Corruption}}]]和[[{{tr|Underground Hallow}}]]{{tr|Biomes}}附近挖掘时应当小心，以免{{tr|Biome Mimic}}在毫不知情的情况下生成并抓住玩家。在{{tr|inventory}}中带上[[{{tr|Lifeform Analyzer}}]]或其升级物之一有助于向玩家示警。
+* {{tr|Biome Mimic}}在狭小的区域，机动性有限的情况下很难对付。它们的速度非常快，甚至比早期的{{tr|Hardmode}}[[{{tr|wings}}]]都快。它们可以穿透墙壁，所以在有限的空间中和它们近距离战斗是极其不利的，甚至是在困难模式中后期也是如此（尤其是在{{tr|Expert Mode}}和{{tr|Master Mode}}下）。在{{tr|Hardmode}}早期，建议只在空旷的、有足够空间来走位的地方对抗{{tr|Mimic}}，例如有很大空地的洞穴。
+* 在[[{{tr|Hardmode}}]]早期，可以在平坦地面上骑上[[{{tr|Basilisk Mount}}]]帮助玩家获得额外的速度来躲闪攻击，此外在两侧添加倾斜的{{tr|block}}朝左或朝右上升来给玩家一些时间来前往另一侧恢复[[{{tr|Health}}]]或[[{{tr|Mana}}]]，也有助于来回躲闪{{tr|Mimics}}的跳跃攻击、无敌/反弹状态和猛扑攻击。以此方法可以较为轻松地击败{{tr|Biome Mimics}}。
+* 人工召唤的{{tr|Biome Mimics}}靠空中非常高处的{{tr|platform}}能很轻松的打败，这种情况下{{tr|Mimics}}几乎够不着玩家。它们会不断从下面的地面上（通常会稍微在屏幕外一点）跳起，但这种情况下只要用最小量的移动就能非常非常轻松地躲闪它们。注意，它们能够做出扑击，并有可能跳上{{tr|platform}}。
+* 另一种安全杀死人工召唤的{{tr|Biome Mimic}}的方式为建立一个 2 格宽的坑洞，在最下面放上{{tr|lava}}，在坑洞上方放置 2 个{{tr|platform}}用来放置{{tr|chest}}，然后从最远可与{{tr|chest}}交互的距离开启并放入{{tr|key}}（见图）。只要玩家站在{{tr|chest}}下方 3 个{{tr|tile}}处，并且不靠近{{tr|Biome Mimics}}，{{tr|Biome Mimics}}就会自己落到{{tr|lava}}中，受到伤害，但并不会被激活。用这种方法也可以一次杀死多个{{tr|Biome Mimic}}。
+** 这一策略在 [[{{tr|Don't dig up}}]] 与 [[{{tr|Get fixed boi}}]] {{tr|world}}中不合适，因为这些世界中的{{tr|lava}}不会对{{tr|enemies}}造成{{tr|contact damage}}。
+* {{tr|Biome Mimics}}在其某些攻击的过程中是会穿过{{tr|blocks}}的，因此简单的[[{{tr|Hooks}}|钩]]在一个高点上并不会像对普通的{{tr|Mimic}}那样对它们起作用。
+* 在[[{{tr|Expert Mode}}]]下，应当避免使用单次攻击高伤害的武器（例如[[{{tr|Sniper Rifle}}]]）攻击{{tr|Biome Mimic}}。{{tr|Mimic}}突然关闭时，来自上述武器的被反弹的射弹可以轻易地杀死玩家。
+* 可以通过快速的直线移动来使{{tr|Biome Mimics}}无法追上玩家，例如：在[[{{tr|hellevator}}]]中，在[[{{tr|Minecart Track}}]]上，或使用速度快的[[{{tr|mount}}]]或[[{{tr|sprinting accessories}}]]（如[[{{tr|Sand Block}}]]上的[[{{tr|Dunerider Boots}}]]）于长平台上奔跑。这样的话，{{tr|The Biome Mimic}}会持续向玩家冲刺，但无法追上玩家。
+* 如果在开阔的环境中战斗，{{tr|wings}}对于躲避{{tr|Biome Mimic}}的攻击很有用。
+* 为了在另一种邪恶环境的世界中生成{{tr|Corrupt}}/{{tr|Crimson Mimic}}，可以在困难模式世界中，从位于{{eil|Graveyard}}的[[{{tr|Dryad}}]]处购买另一种邪恶环境的种子。这些种子可以和草地搭配来传播邪恶环境，也可以制作成[[{{tr|Thrown Water}}]]，用以人工建造一个{{tr|Underground Corrupt}}/{{tr|Crimson}}{{tr|biome}}。
+
+=== 识别 ===
+在伪装期间，当{{tr|cursor}}悬停在{{tr|Mimics}}身上时不会显示通常的{{tr|enemy}}提示信息。以下是一些帮助区分真正的{{tr|chests}}和{{tr|Mimics}}的技巧：
+* {{tr|Mimic}}在已经探索过的区域更容易识别，因为玩家可以很容易察觉到之前探索这一区域时并不在此地的{{tr|chest}}。
+* 用任何{{tr|weapon}}，包括[[{{tr|ranged weapons}}]]、{{tr|homing weapon}}、或[[{{tr|Minion}}]]，击中伪装中的{{tr|Mimic}}，都会使其激活。
+* 在{{desktop version}}或{{mobile version}}中开启[[光标模式#智能光标|智能光标]]时，{{tr|Mimic}}可以由靠近它们时缺失的（通常在{{tr|chest}}周围的）黄色边线来识别。 
+* 真正的{{tr|Chests}}会出现在[[{{tr|minimap}}]]上，但{{tr|Mimics}}不会。
+* [[{{tr|Spelunker Potion}}]]不会让{{tr|Mimic}}发光，但[[{{tr|Hunter Potion}}]]会。{{tr|Spelunker}}{{tr|buff}}只会让{{tr|normal Chest}}发光，而{{tr|Hunter}}{{tr|buff}}会将所有{{tr|enemies}}标为红色。
+* 伪装成[[{{tr|Gold Chest}}]]、[[{{tr|Frozen Chest}}]]、或[[{{tr|Shadow Chest}}]]的{{tr|Mimics}}不像真正的{{tr|Chests}}那样会产生它们平常有的动画闪光效果。这对于{{tr|Wooden Chests}}/{{tr|Mimics}}不起作用。
+** 这在看起来有两个{{tr|Chest}}互相挨着时特别明显，虽然这很少会发生。如果其中之一发光而另一个不会，那么不发光的那个是{{tr|Mimic}}。
+* [[{{tr|Lifeform Analyzer}}]]会探测到附近的{{tr|Mimics}}。只要附近实际上没有真的{{tr|chests}}的话，[[{{tr|Metal Detector}}]]也能揭露它们，因为不会出现“{{gameText|GameUI.OreDetected|x_0={{tr|Chest}}}}”的讯息。
+* {{tr|Mimics}}可能不会正确对齐{{tr|blocks}}，而普通{{tr|Chests}}会。它们也会生成在{{tr|blocks}}半当中、或从{{tr|block}}边上伸出部分悬空、或者在{{tr|background objects}}和其他{{tr|enemies}}前面，这些地方真正的{{tr|Chests}}都无法放置。
+* {{tr|Mimics}}不能将自身伪装成“已解锁的”{{tr|Shadow Chests}}或（在{{tr|the Dungeon}}中）的''锁住的''{{tr|Gold Chests}}。 
+* 在 [[1.3.0.1]] 和 [[1.4.0.1]] 之间生成的世界中，任何在[[{{tr|Underground Cabin}}]]外发现的{{tr|Gold Chest}}都是{{tr|Mimic}}。在这两个版本之间，{{tr|Gold Chest}}不会自然生成在{{tr|Underground Cabin}}外。然而，在罕见情况下，由于结构生成错误，{{tr|Gold Chest}}可能会生成在{{tr|Underground Cabin}}下方、旁边或上方。
+* 可以通过用{{tr|minion summoning item}}直接在{{tr|enemy}}身上按{{key|open}}来让[[{{tr|minions}}]]瞄准{{tr|enemy}}。如果它是个{{tr|Mimic}}，会出现[[{{tr|Summon weapons}}#{{tr|Minions}}|{{tr|minion}}目标指示器]]。
+
+== 花絮 ==
+* {{维基百科|Mimic (Dungeons & Dragons)|Mimics|t={{tr|Mimics}}}}最早在 1977 年出现于《{{维基百科|Advanced Dungeons & Dragons|高级龙与地下城}}{{维基百科|Monster Manual|怪物手册}}》（Advanced Dungeons & Dragons Monster Manual）中，这是奇幻角色扮演桌游{{维基百科|b=y|Dungeons & Dragons|t=龙与地下城}}中怪物的主要图鉴手册。{{tr|Mimics}}在此之后出现在无数的出版物中。
+* 在{{tr|Mimics}}刚被引入时，它们的外观可能会变成[[{{tr|Skeleton}}]]。这后来在某次未知更新后被修复了。{{verify}}
+* [[{{tr|Lost Girl}}]]行为类似于{{tr|Mimic}}；她们伪装自己，随后显露出[[{{tr|Nymph}}]]的真面目并试图杀掉玩家。
+* 虽然{{tr|Mimics}}在{{tr|Lifeform Analyzer}}中的稀有度为 4，它们相对于其他的稀有度为 4 的{{tr|enemy}}：[[{{tr|Tim}}]]和[[{{tr|Rune Wizard}}]]来说却是更常见的“稀有”{{tr|enemy}}之一。
+* {{tr|Biome Mimics}}是（除了能被[[{{tr|statue}}]]生成的{{tr|enemy}}外）三种可手动召唤的非 [[{{tr|boss}}]] {{tr|enemy}}之一。其它两种是通过敲碎[[{{tr|Altar}}]]生成的[[{{tr|Wraith}}]]和通过摧毁[[{{tr|Tombstones}}]]生成的[[{{tr|Ghost (enemy)}}|{{tr|Ghost}}]]。
+* 尽管它们的名字为{{tr|Mimic}}，{{tr|Biome Mimics}}并不像在[[{{tr|Dungeon}}]]中发现的[[{{tr|Biome Chests}}]]。事实上，它们和整个游戏中的任何{{tr|chest}}都不相似。
+** 常规{{tr|Mimics}}是游戏中非 [[{{tr|boss}}]] {{tr|enemy}}中掉落第二多{{tr|coins}}的{{tr|enemy}}，甚至比许多的{{tr|pre-Hardmode bosses}} 还多，仅被[[{{tr|Golden Slime}}]]超过。尽管如此，{{tr|the Mimic}}仍然是掉落最多{{tr|coins}}的非{{tr|seed}}特有{{tr|enemy}}。
+* 每种{{tr|Biome Mimics}}都会掉落一件{{tr|melee}}、{{tr|ranged}}、和{{tr|magic weapon}}，以及一个{{tr|grappling hook}}。相较于{{tr|Corrupt}}和{{tr|Crimson Mimics}}，{{tr|Hallowed Mimic}}缺少一件和{{tr|Putrid Scent}}与{{tr|Flesh Knuckles}}相对应的{{tr|equipment items}}。
+* {{tr|Jungle Mimic}}没有[[{{tr|Bestiary}}]]条目，因为它只能在 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|world}}中生成，且不能手动召唤。
+* {{tr|Jungle Mimics}}会掉落游戏中的许多“无用”或“玩笑”{{tr|item}}，例如[[{{tr|Stink Potion}}]]和[[{{tr|Coal}}]]。
+** [[{{tr|golden shower}}]]与[[{{tr|water gun}}]]的射弹形状类似一种现实中的事物，其中[[{{tr|golden shower}}]]甚至有着相同的颜色。
+**[[{{tr|master bait}}]]是一个英文谐音笑话。
+** [[{{tr|Sparkle Slime Balloon}}]]的数量是一个成人玩笑。
+* 虽然{{tr|Jungle Mimic}}是与其它{{tr|biome mimics}}一起于 [[1.3.0.1]] 引入的，它直到 [[1.4.2.3]] 前都未被使用。
+{{bestiary
+|Mimic
+|Corrupt Mimic
+|Crimson Mimic
+|Hallowed Mimic
+}}
+
+== 另见 ==
+* {{item|Present Mimic}}
+
+== 图库 ==
+<gallery>
+File:Mimic.gif|{{tr|Mimic}}从其伪装状态变形而出的动画。
+File:Mimic on slant.png|{{tr|Mimics}}可能不会正确对齐{{tr|blocks}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Jungle Mimics}}不再掉落[[{{tr|Terra Toilet}}]]，现在会掉落[[{{tr|Poo}}]]。}}
+{{history|Desktop 1.4.4|
+** 普通的{{tr|Mimics}}现在会生成在[[{{tr|pre-Hardmode}}]]的 [[{{tr|Don't dig up}}]] [[{{tr|secret world seed}}]]世界中，它们掉落{{tr|underground or cavern}}的战利品。}}
+{{history|Desktop 1.4.2.3|{{tr|Jungle Mimic}}现在会在 [[{{tr|Celebrationmk10}}]] {{tr|Secret world seed}}中的{{tr|Jungle}}生成。它们现在掉落一系列“无用”或“玩笑”{{tr|items}}。}}
+{{history|Desktop 1.4.1|
+** 修复了{{tr|surface}}木{{tr|Mimic}}无法自然生成的问题。
+** 修复了{{tr|Multiplayer}}下，导致{{tr|Biome Mimics}}的行为无规律的同步问题。}}
+{{history|Desktop 1.4.0.3|修复了{{tr|Corrupt, Crimson, and Hallowed Mimic}}会留下“幻影”{{tr|chest}}{{tr|tile}}的 {{tr|Bug}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Biome Mimics}}现在拥有它们自己的旗帜。
+** {{tr|Ice Mimic}}现在拥有自己的 {{tr|ID}}。
+** {{tr|Ice Mimic}}现在能被{{tr|Lifeform Analyzer}}探测到。
+** {{tr|Jungle Mimic}}不再掉落{{tr|Greater Healing Potions}}/{{tr|Greater Mana Potions}}。}}
+{{history|Desktop 1.3.5|常规/{{tr|Ice Mimic}}的外观更新。}}
+{{history|Desktop 1.3.0.1|introduced=y|patched=y|
+** 引入{{tr|Corrupt}}、{{tr|Crimson}}、和{{tr|Hallowed}}特殊种类，以及无法生成的{{tr|Jungle Mimic}}。
+** {{tr|Mimics}}不再掉落[[{{tr|Compass}}]]。}}
+{{history|Desktop 1.2|引入{{tr|Ice variant}}以及相应的掉落。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|introduced=y|patched=y|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|introduced=y|patched=y|（{{icon/ps4}}）
+** 引入{{tr|Corrupt}}、{{tr|Crimson}}、和{{tr|Hallowed}}特殊种类，以及无法生成的{{tr|Jungle Mimic}}。
+** {{tr|Mimics}}不再掉落{{tr|the Compass}}。}}
+{{history|Console 1.02|引入{{tr|Ice variant}}以及相应的掉落。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.4.0.5.0|
+** {{tr|Biome Mimics}}现在拥有它们自己的旗帜。
+** {{tr|Ice Mimic}}现在拥有自己的 {{tr|ID}}。
+** {{tr|Ice Mimic}}现在能被{{tr|Lifeform Analyzer}}探测到。
+** {{tr|Jungle Mimic}}不再掉落{{tr|Greater Healing Potions}}/{{tr|Greater Mana Potions}}。}}
+{{history|Mobile 1.3.0.7|introduced=y|patched=y|
+** 引入{{tr|Corrupt}}、{{tr|Crimson}}、和{{tr|Hallowed}}特殊种类，以及无法生成的{{tr|Jungle Mimic}}。
+** {{tr|Mimics}}不再掉落{{tr|the Compass}}。}}
+{{history|Mobile 1.2.6508|引入{{tr|Ice variant}}以及相应的掉落。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}{{verify}}}}<!-- Mimics may have been spawnable via Chest Statues in Mobile pre-1.1 -->
+{{history|3DS-Release|引入，同时引入了{{tr|Ice}}种类以及相应的掉落。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Mimics}}

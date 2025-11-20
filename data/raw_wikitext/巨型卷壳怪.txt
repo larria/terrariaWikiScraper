@@ -1,0 +1,72 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 496
+| id = 496, 497
+| imagealt = [[File:Giant Shelly.gif|link=]] [[File:Giant Shelly Orange.gif|link=]]
+| imageother = Giant Shelly (roll).png / Giant Shelly2 (roll).png
+| imageothercaption = 滚动状态
+| environment = Cavern
+| damage2 = &#32;/ {{modes|{{#expr:floor({{npcinfo|496|damage}}*1.5)}}|{{#expr:floor({{npcinfo|496|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|496|damage|master}}*1.35)}}}} {{note|paren=y|{{tr|spinning}}时}}
+| defense2 = &#32;/ {{#expr:{{npcinfo|496|defense}}*2}} {{note|paren=y|{{tr|spinning}}时}}
+| Potato Chips|1|1.33%
+| Depth Meter|1|1.25%
+| Compass|1|1.23%
+| Rally|1|{{chance|6241/160000|mode=p}}
+| sound1 = Zombie 57.wav, Zombie 58.wav
+| soundcaption1 = Idle
+| cargo = no | cargodrops = yes
+}}<!--
+
+Store information about 2 variants to Cargo:
+-->{{npc infobox | view = void
+| auto = 496
+| image = Giant Shelly.gif
+| environment = Cavern
+| damage2 = &#32;/ {{modes|{{#expr:floor({{npcinfo|497|damage}}*1.5)}}|{{#expr:floor({{npcinfo|497|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|497|damage|master}}*1.35)}}}} {{note|paren=y|{{tr|spinning}}时}}
+| defense2 = &#32;/ {{#expr:{{npcinfo|497|defense}}*2}} {{note|paren=y|{{tr|spinning}}时}}
+}}<!--
+-->{{npc infobox | view = void
+| auto = 497
+| image = Giant Shelly Orange.gif
+| environment = Cavern
+| damage2 = &#32;/ {{modes|{{#expr:floor({{npcinfo|497|damage}}*1.5)}}|{{#expr:floor({{npcinfo|497|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|497|damage|master}}*1.35)}}}} {{note|paren=y|{{tr|spinning}}时}}
+| defense2 = &#32;/ {{#expr:{{npcinfo|497|defense}}*2}} {{note|paren=y|{{tr|spinning}}时}}
+}}
+
+'''{{tr|Giant Shelly}}'''是一种[[{{tr|pre-hardmode}}]]的[[{{tr|enemy}}]]，可在[[{{tr|Cavern}}]][[{{tr|layer}}]]中生成。它具有两种不同颜色的{{tr|variants}}，它们都具有相同的属性和行为。{{tr|Giant Shelly}}会缓慢地移动，偶尔会蜷缩进壳中，而后它会开始{{tr|spinning}}并跃向玩家，获得更高的{{tr|defense}}并造成很高的{{tr|contact damage}}。相较于游戏同阶段的其他{{tr|enemy}}，{{tr|Giant Shelly}}攻击非常迅速，并且伤害很高。
+
+{{tr|Giant Shellies}}的生成非常独特，因为其生成与另外两个{{tr|enemies}}有关：[[{{tr|Crawdad}}]]和[[{{tr|Salamander}}]]。在这三个{{tr|enemies}}中，一个{{tr|world}}只会生成其中两种，使得最后一种不可获取。{{tr|Giant Shellies}}永远不会在一个既有{{tr|Crawdads}}又有{{tr|Salamanders}}的{{tr|world}}中生成。这一点已被[[{{tr|Bestiary}}]]的进度（在其中两种{{tr|enemy}}解锁后，缺失的那种{{tr|enemy}}也会解锁）和{{$|banner||enemy}}获取（三种{{tr|enemies}}的{{tr|banners}}中的任意两种可用于制作缺失的那种的{{tr|banners}}）考虑到。
+
+== 备注 ==
+* {{tr|Giant Shelly}}和[[{{tr|Giant Tortoise}}]]与[[{{tr|Ice Tortoise}}]]非常相似。其两次旋转攻击之间的冷却时间是 6.67 秒。如果{{tr|Giant Shelly}}受到伤害，冷却时间会重置。{{source code ref|name=ai|v=1.4.1.2|method=Terraria.NPC.AI}}
+** 如果{{tr|Giant Shelly}}距离玩家超过 12.5 格，并且它可以直接看到玩家，那么冷却时间会减少到 2.22 秒。
+** 如果距离超过 37.5 格，并且它可以直接看到玩家或在玩家上方 12.5 格内，那么冷却时间会进一步减少到 1.33 秒。
+* 每次旋转攻击过程中都包含 1 秒缩进壳内、1.5 秒旋转、减速直到停在固体表面、1 秒从壳中出来这些动作。在其中的任意时间攻击{{tr|Giant Shelly}}都会使旋转攻击中止。<ref name="ai" />
+* 若结束旋转攻击时与[[{{tr|water}}]]接触，{{tr|Giant Shelly}}会立即再次发起旋转攻击。
+* 虽然{{tr|Giant Shelly}}旋转攻击的轨迹是在它缩进壳内时的瞬间，基于玩家的位置决定的，但它仍会识别玩家当前的{{tr|position}}，并会在到达玩家上方时快速减速来试图下落。
+
+== 小贴士 ==
+* 任何能快速攻击的{{tr|weapon}}都很有效，因为这可阻止{{tr|Giant Shelly}}发起旋转攻击。
+* 只要玩家保持靠近{{tr|Giant Shelly}}，[[{{tr|Melee weapons}}]]会很有用。即使不持续攻击，距离近时旋转攻击的冷却时间也会很长。
+* {{tr|Giant Shelly}}不能穿过[[{{tr|platforms}}]]。因此放置几排长{{tr|platforms}}可以显著降低玩家受到旋转攻击的危险。
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Salamander}}/{{tr|Giant Shelly}}/{{tr|Crawdad}}这三种{{tr|banners}}中的任意两种都可用于制作剩余的那种。}}
+{{history|Desktop 1.4.0.1|现在有 {{chance|1/75}} 几率掉落[[{{tr|Potato Chips}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Giant Shelly}}

@@ -1,0 +1,23 @@
+<includeonly>
+|-
+| <!--
+	--><i>{{{t|{{gameText|GameTitle.{{#vardefineecho:titlemessages:id|<!--
+		-->{{{id|{{#expr:{{#var:titlemessages:id|-1}}+1}}<!-- start with id 0 -->}}}<!--
+	-->}}|lang=en}}}}}</i> <!--
+	-->{{#if:{{bool|{{{sic|}}}}}|{{sic}}}} <!--
+	-->{{#if:{{{icons|}}}|{{note|paren=y|{{{icons|}}}}}}}
+| <!--
+	--><i>{{{tzh|{{gameText|GameTitle.{{#vardefineecho:titlemessages:id|<!--
+		-->{{{id|{{#expr:{{#var:titlemessages:id|-1}}}}<!-- start with id 0 -->}}}<!--
+	-->}}}}}}}</i>
+| style="font-size:90%;" | {{{1|}}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+The first unnamed parameter will be displayed in the "Notes" column.
+
+The title message text is automatically taken from the game's source code via {{tl|code=y|gameText}} and an auto-incrementing index. This index can be set to a certain value in a certain row via the {{code|$id}} parameter. The {{code|$t}} parameter allows setting a completely custom title message; the index will not be incremented if this parameter is set. The {{code|$sic}} parameter can be set to display a {{tl|code=y|sic}} template after the title message. The {{code|$icons}} parameter takes custom {{tl|code=y|icon}}s which will be appended in parentheses.
+{{language info|en=Title messages/row}}
+</noinclude>

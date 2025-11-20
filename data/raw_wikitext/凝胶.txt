@@ -1,0 +1,59 @@
+{{item infobox
+| auto = 23
+| tags = drop / potion ingredients
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Gel}}'''是常见的[[{{tr|crafting material}}]]，大多数[[{{tr|slime}}]]和[[{{tr|Zombie}}|{{tr|Slimed Zombies}}]]都会掉落。{{tr|Gel}}是不可或缺的，因为它是制作[[{{tr|Torch}}]]的材料之一，并且从开始阶段到最终场景全程都经常要用到。它还作为[[{{tr|Flamethrower}}]]和[[{{tr|Elf Melter}}]]的[[{{tr|ammunition}}]]来使用，可以存放在玩家[[{{tr|inventory}}]]的{{tr|ammo}}栏。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Gel|expectedrows=13}}
+
+== 备注 ==
+{{float file box|[[File:Gel colors.png]]|{{tr|gel}}的各种颜色。}}
+* 虽然其提示信息写的是“既好吃，又易燃”，但{{tr|gel}}不可食用。用到它的物品中唯一可食用的是治疗药水。
+* {{eicons|1.3.0.1}}{{tr|Gel}}在玩家的物品栏中可能显示为不同的颜色，取决于这个{{tr|gel}}所在的这组{{tr|gel}}中第一个被玩家捡起来的是什么颜色。因此有可能比如说本来是蓝色的捡起来之后显示为绿色。
+** 如果把两组不同颜色的{{tr|gel}}放在一起，叠加后的这组{{tr|gel}}的颜色用的是“放进去”的那组的颜色，和两组的数量多少无关。
+** {{tr|Gel}}在[[{{tr|Item Frame}}]]中总是显示为蓝色。但是，将光标悬停在{{tr|Item Frame}}上会显示{{tr|unobtainable}}的{{item|Gel|image=Gel (old).png|mode=image|nolink=y}}灰色{{tr|Gel}}。
+** {{tr|Quick stack}}动画总是为蓝色{{tr|Gel}}。
+** 如果将{{tr|gel}}丢下再捡起，或者退出世界再重新进入，其颜色会恢复为蓝色。
+
+== 小贴士 ==
+* 玩家可以借助[[{{tr|Slime Statue}}]]、[[{{tr|Wire}}]]、[[{{tr|Timer}}]]、[[{{tr|Lava}}]]或[[{{tr|Trap}}]]来生产{{tr|gel}}。
+* 虽然它自身几乎毫无价值，但可以搭配[[{{tr|Solidifier}}]]来通过将每六个{{tr|gel}}和 1 块[[{{tr|Woods}}|{{tr|wood}}]]制作成{{tr|Slime}}[[{{tr|Candelabras}}]]从而更有效地将{{tr|gel}}货币化（大约每 1000 个 {{gc|5}}）。完整细节请参阅[[指南:赚钱#{{tr|Crafting}}|赚钱指南]]。
+
+== 花絮 ==
+* {{eicons|1.3.0.1}} [[{{tr|Black Slime}}]]并不掉落其自身颜色的{{tr|Gel}}，这与很多其他{{tr|Slimes}}不同。
+* 其提示信息中“美味”这部分可能指的是各种食物中常用到{{维基百科|gelatin|t=明胶}}{{note|small=y|paren=y|译注：{{tr|gel}}的英文原名是 Gel}}的事实。还可以参考它在制作[[{{tr|Lesser Healing Potion}}]]中的用途。
+* {{tr|Umbrella Slimes}}是唯一不能全程保证掉落的{{tr|Gel}}源，它只有 97.78% 几率掉落{{tr|gel}}而非 100%。但是，这依然足够高了，可以成功地刷{{tr|Gel}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在用于制作[[{{tr|Molotov Cocktail}}]]。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Sticky Dirt Bomb}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Gel}}现在会根据所击杀的{{tr|slime}}种类而呈现不同颜色。
+** 现在用于制作[[{{tr|Sticky Dynamite}}]]。}}
+{{history|Desktop 1.2.4|现在用于制作[[{{tr|Sticky Grenade}}]]。}}
+{{history|Desktop 1.2.3|不再用于制作[[{{tr|Lesser Mana Potion}}]]。}}
+{{history|Desktop 1.2.2|成为[[{{tr|Elf Melter}}]]的{{tr|ammunition}}。}}
+{{history|Desktop 1.2|
+** 堆叠上限由 250 提升至 999。
+** 现在用于制作[[{{tr|Slime Block}}]]和[[{{tr|Asphalt Block}}]]。}}
+{{history|Desktop 1.1|
+** 堆叠上限由 99 提升至 250。
+** 现在用于制作[[{{tr|Slime Crown}}]]。
+** 成为[[{{tr|Flamethrower}}]]的{{tr|ammunition}}。}}
+{{history|Desktop 1.0.2|现在用于制作[[{{tr|Sticky Bomb}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.08|现在用于制作{{tr|Sticky Grenades}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-drop = yes
+}}
+
+{{language info|en=Gel}}

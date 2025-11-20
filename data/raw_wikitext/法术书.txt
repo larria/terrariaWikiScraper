@@ -1,0 +1,41 @@
+'''{{tr|Spell Books}}'''是一类[[{{tr|magic weapons}}]]，它们消耗[[{{tr|mana}}]]发射{{tr|projectiles}}，而非[[{{tr|ammunition}}]]。{{tr|Spell Books}}功能上与[[{{tr|Magic Guns}}]]和[[{{tr|Wands}}]]相同，但它们看起来像{{tr|books}}。
+
+它们的最佳[[{{tr|modifier}}]]通常是'''{{tr|Mythical}}'''。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! [[File:Auto icon.png|16px|{{tr|Autoswing}}|link=]]
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | 来源
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 另见 ==
+* [[{{tr|Magic Guns}}]]
+* [[{{tr|Wands}}]]
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+[[Category:法术书| ]]
+
+{{language info|en=Spell books}}

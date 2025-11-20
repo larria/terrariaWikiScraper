@@ -1,0 +1,55 @@
+{{item infobox
+| auto = 1265
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} <br/> {{gc|1}} {{eicons|1.4.0.1|invert=y|small=y}}
+| listcat = guns
+| tags = hardmode /drop
+}}
+{{drop infobox|style=clear:right}}
+[[File:Uzi (demo).gif|frame|{{eicons|1.4.1}} {{tr|The Uzi}}被用于攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Uzi}}'''是一把[[{{tr|Hardmode}}]]中的[[{{tr|gun}}]]，可以高速发射[[{{tr|bullets}}]]，射速和伤害输出都极为可观。从此{{tr|weapon}}射出的[[{{tr|Musket Ball}}]]和{{eil|Tungsten Bullet}}（在{{eversions|short=y|1.4.4|invert=y}}中也包括[[{{tr|Silver Bullet}}]]）都可得到[[{{tr|High Velocity Bullet}}]]的效果（但得不到{{tr|damage}}）。{{tr|The Uzi}}有 {{eicons|1.3.0.1}} {{chance|1/100}} / {{eicons|1.3.0.1|invert=y}} {{chance|1/200}} 的几率由[[{{tr|Angry Trapper}}]]掉落。
+
+{{modifier|ranged}}
+
+== 备注 ==
+* [[{{tr|Venus Magnum}}]]可被看作{{tr|the Uzi}}的直接升级，因为它对其几乎所有属性都有小幅度的提升。然而，{{eversions|1.4.4|3ds=n|invert=y}}中的{{tr|Venus Magnum}}无法拥有{{tr|the Uzi}}的{{tr|auto-fire}}能力。这一能力的缺乏导致手动开火可能非常费劲。
+
+== 小贴士 ==
+* {{eicons|1.4.1}} 由于[[{{tr|Musket Ball}}]]从{{tr|the Uzi}}发射出来时会被转换为[[{{tr|High Velocity Bullet}}]]，因此它们能够获得穿透，最多击中 3 个{{tr|enemies}}且每击中一个{{tr|enemy}}就会有 15% 的伤害衰减。
+* 需要打败 {{eicons|1.3.0.1}} 230 / {{eicons|1.3.0.1|invert=y}} 460 只{{tr|Angry Trappers}}才能有 90% 的几率获得{{tr|Uzi}}（或 {{eicons|1.3.0.1}} 460 /  {{eicons|1.3.0.1|invert=y}} 920 只才能有 99% 的几率将其获得）。
+* 如果玩家幸运地从[[{{tr|Angry Trapper}}]]身上获得了{{tr|Uzi}}，那么{{tr|The Uzi}}可被看作[[{{tr|Megashark}}]]的替代品。二者的主要不同是：
+** {{tr|The Uzi}}可在打败任意[[{{tr|Hardmode bosses}}]] 前获得，而{{tr|the Megashark}}则需要先打败[[{{tr|The Destroyer}}]]才能获得。<!--
+-->{{#vardefine:kb-per-sec_uzi|{{#expr:(60/{{iteminfo|Uzi|use time}})*{{iteminfo|Uzi|knockback}} round3}}}}<!--
+-->{{#vardefine:kb-per-sec_mgs|{{#expr:(60/{{iteminfo|Megashark|use time}})*{{iteminfo|Megashark|knockback}} round3}}}}
+** {{tr|The Uzi}}的基础[[{{tr|knockback}}]]/{{tr|second}}比{{tr|the Megashark}}高 {{percent|{{#var:kb-per-sec_uzi}}/{{#var:kb-per-sec_mgs}}-1 round2}}（二者{{tr|knockback}}/{{tr|second}}分别是 {{#var:kb-per-sec_uzi}} 和 {{#var:kb-per-sec_mgs}}）。
+** {{tr|Uzi}}射速稍低但单发{{tr|damage}}更高。对于[[{{tr|defense}}]]超过 36 的{{tr|enemy}}，使用[[{{tr|Crystal Bullet}}]]的{{tr|Uzi}}的总输出比同样条件的{{tr|the Megashark}}高。
+** {{tr|Uzi}}没有{{tr|the Megashark}}的弹药消耗减免，因此它更适合配合[[{{tr|Endless Musket Pouch}}]]使用。子弹依旧会以[[{{tr|High Velocity Bullet}}]]的形式射出。
+** {{eicons|1.4.0.1|invert=y}} 重铸一次{{tr|Uzi}}的花费远远低于巨兽鲨，因此要想得到{{tr|Unreal}}{{tr|modifier}}，{{tr|Uzi}}更经济实惠。
+**  相较于{{tr|the Megashark}}，{{tr|The Uzi}}非常不准确，弹道可以偏离最多 15°。
+
+== 花絮 ==
+* {{guns sharing names}}它以{{wikipedia|Uzi|乌兹冲锋枪}}，一系列以色列制的冲锋枪来命名。
+** 其中，只有{{tr|Uzi}}和{{tr|Red Ryder}}使用了他们所引用的枪的商标。
+* 在 [[1.2]] 版本中，{{tr|Uzi}}是游戏中最为稀有的{{tr|item}}，掉落率仅为 {{chance|1/80000|5}}。但是，在随后的 [[1.2.0.3]] 补丁中，其掉落率就被大幅度提升了。
+*  [[{{tr|Sniper Rifle}}]]、{{tr|Uzi}}和[[{{tr|Venus Magnum}}]]的{{tr|tooltip}}全都是一样的。
+** 不同于其他二者的是，仅有{{tr|the Uzi}}可以在打败任何[[{{tr|mechanical bosses}}]] 前获得（其余两个都只能在{{tr|Plantera}}后获得，这进而需要所有三只{{tr|mechanical bosses}} 都已经被击败），这允许玩家在{{tr|High Velocity Bullets}}能够正式制作前就使用它们。
+
+== 历史 ==
+{{history|Desktop 1.4.4|不再会将[[{{tr|Silver Bullet}}]]转化成[[{{tr|High Velocity Bullet}}]]。<!-- The gun only converts bullets that have a projectile ID of 14. The projectile ID of Silver Bullets was changed from 14 to 981 in 1.4.4. -->}}
+{{history|Desktop 1.4.1|使用非特殊{{tr|ammo}}（[[{{tr|Musket Ball}}]]和{{tr|Silver}}/{{eil|Tungsten Bullet}}）时被间接加强了，因为它们能够获得[[{{tr|High Velocity Bullet}}]]的{{tr|buff}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** {{tr|Sell value}}由 {{gc|1}} 提升至 {{gc|7}}。}}
+{{history|Desktop 1.3.0.1|掉落率从 {{chance|1/200}} 提升到 {{chance|1/100}}。}}
+{{history|Desktop 1.2.0.3|掉落率从 {{chance|1/80000|5}} 修正为 {{chance|1/200}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Uzi}}

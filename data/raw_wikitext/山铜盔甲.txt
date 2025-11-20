@@ -1,0 +1,119 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Armor/Set
+| imagebreak = yes
+| hardmode = yes
+| idprojectile = 221
+}}
+[[File:Orichalcum armor (demo).gif|frame|{{tr|Orichalcum armor}}的{{tr|set bonus}}。]]
+
+'''{{tr|Orichalcum armor}}'''是一套[[{{tr|Hardmode}}]][[{{tr|armor}}]]，由'''{{tr|Orichalcum Breastplate}}'''和'''{{tr|Orichalcum Leggings}}'''，以及三种不同的{{tr|headpieces}}：'''{{tr|Orichalcum Mask}}'''、'''{{tr|Orichalcum Helmet}}'''、和'''{{tr|Orichalcum Headgear}}'''组成，分别提供对{{tr|melee}}、{{tr|ranged}}、和{{tr|magic damage}}类型的加成。制作一套完整的{{tr|Orichalcum armor}}（包括一个{{tr|headpieces}}）总共需要 54 个{{tr|Orichalcum Bars}}（216 个[[{{tr|Orichalcum Ore}}]]）。制作所有五个部件总共需要 78 个{{tr|Orichalcum Bars}}（312 个{{tr|Orichalcum Ore}}）。
+
+{{alt ore|Mythril armor}}
+
+装备全套{{tr|set}}时提供下列效果：
+<tabber>
+|-|使用{{tr|Mask}}=
+* +42 [[{{tr|defense}}]]
+* +19% [[{{tr|melee damage}}]]
+* +6% [[{{tr|critical strike chance}}]]
+* +11% [[{{tr|melee speed}}]]
+* +18% [[{{tr|movement speed}}]]
+|-|使用{{tr|Helmet}}=
+* +30 [[{{tr|defense}}]]
+* +8% {{tr|damage}}
+* +21% {{tr|ranged}}[[{{tr|critical strike chance}}]]
+* +19% [[{{tr|movement speed}}]]
+|-|使用{{tr|Headgear}}=
+* +27 [[{{tr|defense}}]]
+* +8% {{tr|damage}}
+* +24% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* +80 {{tr|maximum}}[[{{tr|mana}}]]
+* +11% [[{{tr|movement speed}}]]
+</tabber>
+* 击中{{tr|enemy}}时，会在屏幕边缘处召唤一片花瓣并射向目标，花瓣会移动到屏幕另一端并伤害路径上的所有{{tr|enemies}}。花瓣造成 36 {{tr|damage}}{{source code ref|v=1.4.4.9|method=Terraria.Player.OnHit|name=onhit}}。花瓣移动速度非常快（{{mph|24 pixels}}<ref name="onhit"/>），可以穿过[[{{tr|blocks}}]]和[[{{tr|liquids}}]]。在召唤另一片花瓣之前有 {{duration|20 ticks}} 的{{tr|cooldown}}，<ref name="onhit"/>这意味着此{{tr|Orichalcum armor}}的套装奖励大约增加 100 {{DPS}}。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 1213
+}}
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 1214
+}}
+}}
+{{-}}
+
+=== {{tr|Helmet}}种类 ===
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 1212
+}}
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 1210
+}}
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 1211
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=Orichalcum Breastplate/Orichalcum Leggings/Orichalcum Headgear/Orichalcum Helmet/Orichalcum Mask|expectedrows=5}}
+
+== 备注 ==
+* 花瓣会摧毁大多数[[{{tr|background object}}]]，如[[{{tr|Pot}}]]或[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]内的[[{{tr|Larva}}]]，后者可能导致意外召唤出[[{{tr|Queen Bee}}]]。
+* [[{{tr|minion}}]]攻击和[[{{tr|Star Cloak}}]]的星星可以触发{{tr|Orichalcum armor}}的花瓣效果。
+
+== 小贴士 ==
+{{float file box|width=200px
+|title=染色的{{tr|accessories}}配合{{tr|Orichalcum armor}}
+|<!--
+-->{{inline block|css=width:33.33%;line-height:2.5|[[File:Dye test on Orichalcum armor (no dye).png]]<br/>无[[{{tr|dye}}]]}}<!--
+-->{{inline block|css=width:33.33%;line-height:2.5|[[File:Dye test on Orichalcum armor (Pink Dye).png]]<br/>[[{{tr|Pink Dye}}]]}}<!--
+-->{{inline block|css=width:33.33%;line-height:2.5|[[File:Dye test on Orichalcum armor (Violet Dye).png]]<br/>[[{{tr|Violet Dye}}]]}}
+}}
+* 要使{{tr|items}}与{{tr|Orichalcum armor}}颜色匹配，应使用[[{{tr|Violet Dye}}]]而不是[[{{tr|Pink Dye}}]]。
+* {{tr|Orichalcum armor}}的{{tr|set bonus}}对[[{{tr|worm enemies}}]]非常有效，如[[{{tr|Wyvern}}]]或[[{{tr|The Destroyer}}]]，因为如果{{tr|petals }}以恰当的角度进入，它们可能击中其所有体节。
+* {{tr|Orichalcum armor}}与高射速{{tr|weapons}}（如[[{{tr|Clockwork Assault Rifle}}]]）配合使用效果很好，后者可以持续触发{{tr|Orichalcum armor}}的套装奖励。
+
+== 花絮 ==
+* {{维基百科|Orichalcum|t=山铜}}是一种在古代文献中提到的金属，但其性质和制作方法已失传，仅知其名。在奇幻作品中，它经常被用作比现实世界金属更有价值的材料，但在流行文化中，关于其特性的描述却很少有一致性。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Orichalcum Leggings}}现在提供 8% {{tr|damage bonus}}。}}
+{{history|Desktop 1.4.1|{{tr|Orichalcum Mask}}{{tr|melee damage bonus}}由 7% 提升至 11%。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2.3|
+** 每个头部部件所需{{tr|bars}}数量由 10 个提升至 12 个。
+** {{tr|Orichalcum Breastplate}}所需{{tr|bars}}数量由 20 个提升至 24 个。
+** {{tr|Orichalcum Leggings}}所需{{tr|bars}}数量由 15 个提升至 18 个。}}
+{{history|Desktop 1.2.1|女性版本的外观更新。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再用于制作[[{{tr|Dragon armor}}]]、[[{{tr|Spectral armor}}]]、和[[{{tr|Titan armor}}]]。}}
+{{history|Mobile 1.2.11964|{{tr|Dragon armor}}、{{tr|Spectral armor}}、和{{tr|Titan armor}}现在可以用{{tr|Orichalcum armor}}、[[{{tr|Palladium armor}}]]、或[[{{tr|Titanium armor}}]]的部件制作。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Orichalcum}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Orichalcum armor}}

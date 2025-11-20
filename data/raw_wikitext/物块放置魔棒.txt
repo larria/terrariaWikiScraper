@@ -1,0 +1,113 @@
+'''{{tr|Block-placing wands}}'''是一类特殊[[{{tr|Tools}}]]，使{{tr|the player}}能放置正常情况下无法放置的[[{{tr|Block}}|{{tr|Blocks}}]]。它们不消耗任何[[{{tr|Mana}}]]。每个{{tr|wand}}都从{{tr|player}}的{{tr|inventory}}中消耗一种特定的{{tr|material}}（详细列表见后文）。有 {{eicons|Living Mahogany Wand}} 6 / {{eicons|Living Mahogany Wand|invert=y}} 4 种不同的{{tr|Block-placing wands}}。
+
+== {{tr|Bone Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 932
+| tags = drop
+}}
+
+'''{{tr|Bone Wand}}'''以每块一[[{{tr|Bone}}]]的成本{{tr|places}}[[{{tr|Bone Block}}]]，可以挖掉变回{{tr|bones}} {{eicons|1.4.0.1}}。在{{eversions|1.4.0.1}}上，{{tr|the block}}挖掉会重新变回{{tr|bone}}，而在{{eversions|1.4.0.1|invert=yes}}中，放置的{{tr|Blocks}}即使后面采挖掉也依然维持为{{tr|Bone Blocks}}，不会恢复为普通的{{tr|bone}}。{{tr|The Bone Wand}}以 {{chance|1/250}} 的几率由[[{{tr|Dungeon}}]]中的[[{{tr|Angry Bones}}]]、[[{{tr|Dark Caster}}]]、和[[{{tr|Cursed Skull}}]]掉落。
+
+{{-}}
+
+== {{tr|Hive Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 1129
+| tags = drop
+}}
+
+'''{{tr|Hive Wand}}'''将[[{{tr|Hive|link=y}}|{{tr|Hive}}]]放置为{{tr|Blocks}}，否则是无法放置这种块的。{{tr|player}}的[[{{tr|Inventory}}]]必须有{{tr|hive}}才能放置。它有 {{chance|1/3}} 几率由[[{{tr|Queen Bee}}]]掉落。
+
+挖掉用{{tr|Hive Wand}}放置的{{tr|Hive block}}和采挖自然生成的那种是一样的，因此会生成[[{{tr|Bee}}]]或[[{{tr|honey}}]]。
+
+{{tr|The Hive Wand}}外观像蜂蜜棒，这是现实生活中用于盛取蜂蜜等粘稠液体的器具。
+
+{{-}}
+
+== {{tr|Living Wood Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 832
+| tags = loot
+}}
+
+'''{{tr|Living Wood Wand}}'''以每格一[[{{tr|Wood}}]]的成本放置[[{{tr|Living Wood}}]]块。放置的{{tr|Blocks}}和[[{{tr|Living Tree}}]]中的一样。它可以从{{tr|Living Trees}}中的[[{{tr|Living Wood Chest}}]]内找到，或通过{{eil|shaking}}[[{{tr|Forest tree}}]]得到。
+
+{{tr|the Living Wood Wand}}只能使用常规的{{tr|Wood}}。不能使用[[{{tr|Boreal Wood}}]]、[[{{tr|Palm Wood}}]]、[[{{tr|Rich Mahogany}}]]、[[{{tr|Shadewood}}]]、[[{{tr|Ebonwood}}]]、[[{{tr|Ash Wood}}]]、[[{{tr|Pearlwood}}]]、[[{{tr|Dynasty Wood}}]]、或[[{{tr|Spooky Wood}}]]。
+
+=== 制作 ===
+==== 用于 ====
+{{recipes|ingredient=Living Wood Wand|expectedrows=1}}
+
+{{-}}
+
+== {{tr|Leaf Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 933
+| tags = loot
+}}
+
+'''{{tr|Leaf Wand}}'''以每格一{{tr|Wood}}的成本放置[[{{tr|Leaf Block}}]]。放置的{{tr|Blocks}}和{{tr|Living Trees}}中的有相同的属性。它可以从出现在{{tr|Living Trees}}中的[[{{tr|Living Wood Chest}}]]内找到，或通过{{eil|shaking}}[[{{tr|Forest tree}}]]得到。
+
+和{{tr|the Living Wood Wand}}一样，{{tr|the Leaf Wand}}只能使用常规的{{tr|Wood}}。不能使用[[{{tr|Boreal Wood}}]]、[[{{tr|Palm Wood}}]]、[[{{tr|Rich Mahogany}}]]、[[{{tr|Shadewood}}]]、[[{{tr|Ebonwood}}]]、[[{{tr|Ash Wood}}]]、[[{{tr|Pearlwood}}]]、[[{{tr|Dynasty Wood}}]]、或[[{{tr|Spooky Wood}}]]。
+
+{{-}}
+
+== {{tr|Living Mahogany Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 3360
+| tags = loot
+}}
+{{exclusive|1.3.0.1|section=y}}
+
+'''{{tr|Living Mahogany Wand}}'''以每格一[[{{tr|Rich Mahogany}}]]的成本放置[[{{tr|Living Mahogany}}]]块。放置的{{tr|blocks}}和[[{{tr|Living Mahogany Tree}}]]中的一样。它可以从[[{{tr|Underground Jungle}}]][[{{tr|Biome}}]]里的{{tr|Living Mahogany Trees}}和{{tr|Jungle Shrines}}中的[[{{tr|Ivy Chest}}]]内找到，或（在 {{eicons|1.4.1}} 上）通过[[{{tr|shaking}}]][[{{tr|Jungle tree}}]]得到。
+
+{{tr|The Living Mahogany Wand}}只能使用{{tr|Rich Mahogany}}。它不能使用常规[[{{tr|Wood}}]]、[[{{tr|Boreal Wood}}]]、[[{{tr|Palm Wood}}]]、[[{{tr|Shadewood}}]]、[[{{tr|Ebonwood}}]]、[[{{tr|Ash Wood}}]]、[[{{tr|Pearlwood}}]]、[[{{tr|Dynasty Wood}}]]、或[[{{tr|Spooky Wood}}]]。
+
+{{-}}
+
+== {{tr|Rich Mahogany Leaf Wand}} ==
+{{item infobox
+| type = Tool
+| auto = 3361
+| tags = loot
+}}
+{{exclusive|1.3.0.1|section=y}}
+
+'''{{tr|Rich Mahogany Leaf Wand}}'''以每格一{{tr|Rich Mahogany}}的成本放置[[{{tr|Mahogany Leaf Block}}]]。放置的{{tr|blocks}}和{{tr|Living Mahogany Trees}}中的一样并拥有相同的属性。它可以从{{tr|the Underground Jungle}}{{tr|Biome}}里的{{tr|Living Mahogany Trees}}和{{tr|Jungle Shrines}}中的{{tr|Ivy Chests}}内找到，或（在 {{eicons|1.4.1}} 上）通过[[{{tr|shaking}}]][[{{tr|Jungle tree}}]]得到。
+
+和{{tr|The Living Mahogany Wand}}一样，{{tr|the Rich Mahogany Leaf Wand}}只能使用{{tr|Rich Mahogany}}。它不能使用常规[[{{tr|Wood}}]]、[[{{tr|Boreal Wood}}]]、[[{{tr|Palm Wood}}]]、[[{{tr|Shadewood}}]]、[[{{tr|Ebonwood}}]]、[[{{tr|Ash Wood}}]]、[[{{tr|Pearlwood}}]]、[[{{tr|Dynasty Wood}}]]、或[[{{tr|Spooky Wood}}]]。
+
+{{-}}
+
+== 另见 ==
+* {{item|Dirt Rod}}，能够移动{{tr|Dirt Blocks}}的{{tr|wand}}，不需要{{tr|mana}}或{{tr|ammunition}}。
+* {{item|Ice Rod}}，能创造临时性的{{tr|ice blocks}}的{{tr|wand}}，使用时需要消耗{{tr|mana}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Living Wood Wand}}现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Finch Staff}}]]。}}
+{{history|Desktop 1.4.1|{{tr|The Living Wood Wands}}和{{tr|Leaf Wands}}现在有几率掉落自{{tr|shaking Forest trees}}，{{tr|the Living Mahogany Wands}}和{{tr|Rich Mahogany Leaf Wands}}现在有几率掉落自{{tr|shaking Jungle trees}}。}}
+{{history|Desktop 1.3.2|{{tr|Bone Wand}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.0.1|引入了{{tr|Living Mahogany wand}}和{{tr|Rich Mahogany Leaf Wand}}。|nocat=1}}<!-- cat is already on separate redirect pages -->
+{{history|Desktop 1.2.4|修正了当你有很高的图格放置速度时{{tr|Block placing wands}}不消耗{{tr|items}}的 Bug。}}
+{{history|Desktop 1.2|引入了{{tr|Hive wand}}、{{tr|Leaf wand}}、{{tr|Living Wood wand}}、和{{tr|Bone Wand}}。}}
+{{history|Console 1.0.933.1|引入了{{tr|Living Mahogany wand}}和{{tr|Rich Mahogany Leaf Wand}}。（{{icon|xbox one}}）|nocat=1}}<!-- cat is already on separate redirect pages -->
+{{history|Console 1.0.750.0|引入了{{tr|Living Mahogany wand}}和{{tr|Rich Mahogany Leaf Wand}}。（{{icon|ps4}}）|nocat=1}}<!-- cat is already on separate redirect pages -->
+{{history|Console 1.02|引入了{{tr|Hive wand}}、{{tr|Leaf wand}}、{{tr|Living Wood wand}}、和{{tr|Bone Wand}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|引入了{{tr|Living Mahogany wand}}和{{tr|Rich Mahogany Leaf Wand}}。|nocat=1}}<!-- cat is already on separate redirect pages -->
+{{history|Mobile 1.2.6508|引入了{{tr|Hive wand}}、{{tr|Leaf wand}}、{{tr|Living Wood wand}}、和{{tr|Bone Wand}}。}}
+{{history|3DS-Release|引入了{{tr|Hive wand}}、{{tr|Leaf wand}}、{{tr|Living Wood wand}}、和{{tr|Bone Wand}}。}}
+
+{{Master Template Tools
+| show-main = yes
+| show-other = yes
+}}
+
+{{all versions}}
+
+{{language info|en=Block-placing wands}}

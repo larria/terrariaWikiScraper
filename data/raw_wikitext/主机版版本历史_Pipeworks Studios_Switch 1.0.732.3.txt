@@ -1,0 +1,46 @@
+{{collapse top|点击展开详细列表|收起列表}}
+; {{tr|Multiplayer}}修复
+* Fixed an exception error that occurred when trying to join a multiplayer session
+* Resolved a bug where Destroyer segments were desynced for non-host players after a respawn
+* Fixed a bug where infinite loading could occur when dismissing the connection lost prompt after enabling airplane or sleep mode on the system keyboard while renaming a chest
+
+; 游戏功能修复
+* Fixed a bug where a character could sometimes spawn in the Crimson biome in the newly created world
+* Resolved a bug where the “Lucky Break” accomplishment would unlock without fulfilling the given criteria
+* Fixed a bug that caused the grid cursor to not move along with the player character
+* Resolved a bug where the Mana and Damage Booster buffs appeared infinite along with a negative timer
+* Fixed a bug where the Tombstone dialogue box could be observed when toggling between inventory slots
+* Resolved a bug where the Sniper Scope accessory caused precision mode to behave erratically
+* Fixed a bug where the player was unable to dismiss the keyboard after accessing the crafting wheel via touch while renaming the chest
+* Resolved a bug where crafted items were being duplicated
+* Fixed a bug where Two King Slime were triggered for a few seconds on the map after summoning
+* Resolved a bug where using the last summoning item from a stack of 20 deleted the highlighted hotbar item
+* Fixed a bug where the world zoom would be zoomed all the way out after zooming all way in or out on the map
+* Resolved a bug where the world would not properly update for the players after any of the non-host players re-joined the session
+* Fixed a bug where the stats of hardmode enemies (zombies) were different from their PC counterpart
+
+; 崩溃修复
+* Fixed an application crash that would occur for the client while exploring in the underworld biome
+* Resolved an application stall on world generation that occurred when settling liquids.
+* Fixed an issue where placed training dummies and item frames would prevent a saved world from loading
+
+; 性能修复
+* Resolved a bug where a momentary freeze would occur while performing basic actions in a newly created large world.
+* Adjusted the liquid wave flow while using heavy weapons in a multiplayer session with maximum players to improve performance
+* Fixed a bug that would cause the game to hang for several seconds after defeating the wall of flesh for the first time in a world.
+
+; 艺术 & 文本修复
+* Fixed a bug where vanity that were equipped would appear naked for the bottom of the character
+* Resolved a bug where duplicate hair style icons were displayed after interacting with the Stylist NPC
+* Fixed a bug where the inventory could become enlarged after switching between handheld and docked mode during the interactive start-up screens
+* Resolved a bug where the health bar flickered after consuming a life potion
+* Fixed a bug where the wrong lighting effect would trigger when firing a Laser Rifle
+* Resolved a localization where the “Refresh” text on the Join Game screen was not properly localized for all supported languages
+* Fixed a couple of other miscellaneous text strings in the game
+* Made a few minor adjustments to different parts of the UI that were not scaled correctly
+* Resolved a bug where the text input would not display while renaming a chest in tabletop and handheld mode
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Pipeworks Studios/Switch 1.0.732.3}}
+</noinclude>

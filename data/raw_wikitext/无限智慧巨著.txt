@@ -1,0 +1,58 @@
+{{exclusive|Ogre}}
+{{item infobox
+| auto = 3852
+| sound1 = Dd2 book staff twister loop.wav
+| soundcaption1 = 旋风
+| idprojectile = 712, 704
+| listcat =  Wands
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Tome of Infinite Wisdom (demo).gif|frame|right|使用中的{{tr|Tome of Infinite Wisdom}}。]]
+
+'''{{tr|Tome of Infinite Wisdom}}'''是一个[[{{tr|Hardmode}}]]，单只[[{{tr|mechanical boss}}]]后的[[{{tr|wand}}]]，拥有两种不同的{{tr|attack}}方式。按 {{key|use}} 使用时，它会射出四波高速飞行的书页，它们会在接触到[[{{tr|enemies}}]]或[[{{tr|block}}]]时消散。按 {{key|open}} 使用时，它会召唤出一道体型大、速度快的龙卷风，造成{{tr|weapon}}{{tr|damage}}的 175%（即 {{#expr:{{iteminfo|Tome of Infinite Wisdom|damage}}*1.75}} 点{{tr|damage}}），可以无限穿透{{tr|enemies}}，沿着{{tr|blocks}}行进，还可以穿透一格厚的天花板，并会在 4 秒钟后或{{tr|solid block}}组成的墙阻挡后消散。{{tr|The Tome of Infinite Wisdom}}掉落自[[{{tr|Old One's Army}}]][[{{tr|event}}]]中的[[{{tr|Ogre}}]]，在 2 级中几率为 {{chance|1/10}} / {{expert|1/5 (20%)}}，在 3 级中几率为 {{chance|1/20}}。
+
+{{modifier|magic}}
+
+== 备注 == 
+* {{tr|The tornado projectile}}击中时造成 -1 {{tr|tick}}{{tick}}[[{{tr|local invincibility frame}}]]，这意味着其仅能{{tr|damage}}同一目标一次。{{source code ref|name=setdefaults|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The tornado projectile}}高 13.125 {{tr|tiles}}且宽 3.75 {{tr|tiles}}。<ref name="setdefaults"/>
+
+== 小贴士 ==
+* 其第一类攻击对付单体{{tr|enemies}}非常有效，而第二类攻击则可高效清理复数目标，包括{{tr|Old One's Army}}{{tr|event}}。
+* 其第二类攻击非常适合清除[[{{tr|Evil Biome}}]]和[[{{tr|Jungle}}]]中的{{tr|vegetation}}，这可以帮助收集花朵或寻找[[{{tr|Life Fruit}}]]。
+* 即使在[[{{tr|Master Mode}}]]中，此武器也可以轻松打败[[{{tr|The Destroyer}}]]。然而这首先需要打败[[{{tr|The Twins}}]]或[[{{tr|Skeletron Prime}}]]。
+
+== 花絮 ==
+* 和其他{{tr|Old One's Army weapons}}一样，{{tr|Tome of Infinite Wisdom}}直接参考了''[[{{tr|Dungeon Defenders 2}}]]''中的同名武器，因为{{tr|Old One's Army event}}是一个[[{{tr|Crossover content}}|{{tr|crossover event}}]]。
+** {{tr|The Tome of Infinite Wisdom}}的右键点击攻击很像《''{{tr|Dungeon Defenders 2}}（Dungeon Defenders 2）''》中{{iwlink|dd2|Apprentice|学徒}}的第二能力{{tr|Tornado}}。它也和[[{{tr|Forbidden armor}}]]的{{tr|set bonus}}与[[{{tr|Sand Elemental}}]]的“{{tr|Sandnado}}”攻击使用相同的动画。
+* 此{{tr|weapon}}、另一件{{tr|Old One's Army}}{{tr|event}}期间获得的掉落物[[{{tr|Sky Dragon's Fury}}]]、还有[[{{tr|Sergeant United Shield}}]]是《{{tr|Terraria}}》中仅有的左右键点击拥有不同攻击的武器。
+* “以其全部无限智慧（In all their infinite wisdom）”是一个固定表达，基本上专门用于在贬义或者讽刺语境中表示一个人或者一个管理机构做出的特别愚蠢的决策。其工具提示''“想知道是谁把一本无限智慧巨著戳在一根棍子上...”''显然是对此的搞怪模仿。
+
+== 另见 ==
+* {{dd2 link|Magic Staffs#Epic|{{tr|Tome of Infinite Wisdom}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 32 提升至 36。
+** {{tr|Tornado}}的伤害由{{tr|base damage}}的 2 倍降低至 1.75 倍。}}
+{{history|Desktop 1.4.0.5|
+** 修正了使用其右键点击功能时可能会消耗和浪费[[{{tr|mana}}]]的 {{tr|bug}}。
+** 现在会{{tr|auto-uses}}其右键点击功能。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 24 提升至 32。
+** {{tr|Use Time}}由 30 降低至 25。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+		
+== 参考 == 
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Tome of Infinite Wisdom}}

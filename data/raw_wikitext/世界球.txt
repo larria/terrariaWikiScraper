@@ -1,0 +1,64 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| autoimageold = no <!-- hide "old" image because no version uses it -->
+| type = Miscellaneous
+| auto = 4766
+| damage = -1
+| damagetype = ranged
+| sound1 = Item 107.wav
+| soundcaption1 = 碰撞
+| tags = vendor/vendor:Zoologist
+}}
+[[File:World Globe (demo).gif|frame|在{{tr|Forest biome}}中使用{{tr|World Globe}}。]]
+
+'''{{tr|World Globe}}'''是种{{tr|thrown consumable item}}，由[[{{tr|Zoologist}}]]在[[{{tr|Bestiary}}]]完成了 50%（{{b entries|50%|个条目}}）之后出售。一旦{{tr|World Globe}}被扔出并在地面上撞碎后，当前世界中当前[[{{tr|biome}}]]的[[{{tr|Biome backgrounds}}|{{tr|background}}]]就会随机地永久改变为该{{tr|biome}}的其他可用背景之一。这会持续到扔出另一个{{tr|World Globe}}为止。{{tr|The World Globe}}可以在任意{{tr|biome}}中使用。
+
+== 备注 ==
+* [[{{tr|Hallowed tree}}]]的样式受{{tr|Hallow biome}}的背景影响。因此，它们随{{tr|World Globes}}而非[[{{tr|Tree Globe}}]]改变。
+<!--
+-->{{card|class=aligncenter|heading={{tr|Hallowed trees}}|<!--
+	-->{{flexstart|gap=0.5em|justify=center|style=margin: 0.5em auto}}<!-- 
+	-->{{#vardefine:i|0}}{{#vardefine:j|1}}{{#vardefine:flag|true}}<!-- 
+	-->{{#vardefine:filename|Treetop Hallowed {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!-- 
+	-->{{#dowhile:|{{#var:flag}}|<!-- 
+		-->[[File:{{#var:filename}}|32x32px|link=]]<!-- output this file
+		-->{{#vardefine:j|{{#expr:{{#var:j}}+1}}}}<!-- j++
+		-->{{#vardefine:filename|Treetop Hallowed {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!--  new filename
+		-->{{#if:{{filepath:{{#var:filename}}}}||<!-- if not exist:
+			-->{{#vardefine:i|{{#expr:{{#var:i}}+1}}}}{{#vardefine:j|1}}<!-- go to next line (i++, j=0)
+			-->{{#vardefine:filename|Treetop Hallowed {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!-- new filename
+			-->{{#if:{{filepath:{{#var:filename}}}}<!-- if this file exists
+				-->|{{flexend}}{{flexstart|gap=0.5em|justify=center|style=margin: 0.5em auto}}<!-- start a new line
+				-->|{{#vardefine:flag|}}<!-- or break dowhile loop
+			-->}}<!-- 
+		-->}}<!--
+	-->}}<!-- 
+	-->{{flexend}}<!--
+-->}}<!--end of card-->
+* 在[[{{tr|Corrupt Desert}}]]、[[{{tr|Crimson Desert}}]]、和[[{{tr|Hallowed Desert}}]]中扔出时，{{tr|the World Globe}}只会影响普通[[{{tr|Desert}}]]{{tr|biome}}。
+* 在各{{tr|biomes}}的{{tr|underground}}变体中（诸如[[{{tr|Underground Jungle}}]]）扔出时，对应的地表变体会受{{tr|World Globe}}影响。
+* 在[[{{tr|Underworld}}]]中扔出时，{{tr|the World Globe}}会改变{{tr|the Underworld}}的动态背景，这点和其他{{tr|underground biome backgrounds}}不同。
+* {{tr|World Globe}}在内部被视为是[[{{tr|ranged}}]]伤害{{tr|item}}，因此受益于[[{{tr|ammo conservation}}]]。但是，仅限于[[{{tr|armor}}]]{{tr|items}}所提供的{{tr|ammo conservation}}奖励，[[{{tr|Magic Quiver}}]]、[[{{tr|Ammo Box}}]]和[[{{tr|Ammo Reservation Potion}}]]对{{tr|World Globe}}不起作用。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}<!-- The usual, "actual" ammo conservation check in Terraria.Player.PickAmmo() that includes the Ammo Box and other items is skipped because that method is only called for items with useAmmo > 0, which is not the case for the World Globe. -->
+
+== 另见 ==
+* [[{{tr|Tree Globe}}]]
+* [[{{tr|Moon Globe}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** {{tr|Sprite updated}}。旧的{{tr|sprite}}：[[File:World Globe (old).png|link=]]}}
+{{history|Desktop 1.4.2|修复了[[{{tr|Fossil Pickaxe}}]]、[[{{tr|Tree Globe}}]]、和{{tr|World Globe}}掉落时会穿过{{tr|blocks}}持续下落的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=World Globe}}

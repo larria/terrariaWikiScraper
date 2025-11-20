@@ -1,0 +1,84 @@
+'''{{tr|Grab bags}}'''是包含在开启时随机选定的{{tr|loot}}的{{tr|items}}。可以通过用 {{key|open}} 键点击其物品栏图标来在玩家的{{tr|inventory}}中开启它们。
+
+== 类型 ==
+{| class="terraria lined"
+! colspan=2 | {{tr|Grab bag}} !! 内容 !! 来源
+|-
+| {{item|mode=table|Crates|image=Wooden Crate.png}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw LIKE "%Crate"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Fishing}}]]
+|-
+| {{item|mode=table|Herb Bag}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Herb Bag"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Chest}}#{{tr|Surface Loot}}|{{tr|Surface Chests}}]]
+|-
+| {{item|mode=table|Can Of Worms}}
+| 
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Can Of Worms"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+| [[{{tr|Chest}}#{{tr|Surface Loot}}|{{tr|Surface Chests}}]]
+|-
+| {{item|mode=table|Goodie Bag}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Goodie Bag"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Halloween}}]]期间任意[[{{tr|enemy}}]]
+|-
+| {{item|mode=table|Present}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Present"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Christmas}}]]期间任意{{tr|enemy}}
+|-
+| {{item|mode=table|Treasure Bag|ext=gif}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw LIKE "Treasure Bag%"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| 在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中击败的[[{{tr|Bosses}}]]
+|-
+| {{item|mode=table|Golden Lock Box}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Golden Lock Box"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Dungeon Crate}}]]和[[{{tr|Stockade Crate}}]]
+|-
+| {{item|mode=table|Obsidian Lock Box}}
+| {{collapse top}}
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Obsidian Lock Box"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+{{collapse bottom}}
+| [[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]
+|-
+| {{item|mode=table|Oyster}}
+|
+{{#af_foreach:{{#invoke:CargoQuery|afExport|q?tables=Drops|q?fields=item|q?where=nameraw="Oyster"|q?groupBy=item|q?limit=5000|plainList=item}}|k|v|<nowiki/>
+* {{item|{{{v}}}}}
+}}
+| 在[[{{tr|Oasis}}]]中[[{{tr|Fishing}}]]
+|}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+[[Category:{{tr|Grab bag items}}| ]]
+
+{{language info|en=Grab bags}}

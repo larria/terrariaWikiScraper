@@ -1,0 +1,61 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4847
+}}
+|{{npc infobox
+| auto = 654
+| image = Lavafly.gif
+| type = Critter
+| environment = The Underworld
+}}
+}}
+
+'''{{tr|Lavafly}}'''是一种[[{{tr|critter}}]]，会偶尔在[[{{tr|night}}]]生成于[[{{tr|Underworld}}]]中。它也会在摧毁[[{{tr|wild grass plants}}|{{tr|wild Ash grass plants}}]]时生成。{{critter info|underworld=y|nostatue=y|cagename=[[{{tr|Lavafly in a Bottle}}]]}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Lavafly|expectedrows=1}}
+
+== 备注 ==
+* 试图用普通的[[{{tr|Bug Net}}]]捕捉{{tr|Lavafly}}会对玩家造成 1{{nbsp}}{{tr|damage}}并造成[[{{tr|On Fire!}}]]，持续 {{duration|5}} / {{expert|{{duration|{{#expr:5*2}}}}}} / {{master|{{duration|{{#expr:5*2.5 round 0}}}}}}。{{source code ref|v=1.4.4.6|method=Terraria.Player.ItemCheck_CatchCritters}}
+{{float file box|float=none|width=fit-content|title=可以生成{{tr|Hell Butterfly and Lavafly}}的植被
+| {{flexstart|style=column-gap: 5px; row-gap: 10px|justify=center|alignitems=bottom}}<!--
+-->[[File:Tiles 637 0.png|link=]]<!--
+-->[[File:Tiles 637 1.png|link=]]<!--
+-->[[File:Tiles 637 2.png|link=]]<!--
+-->[[File:Tiles 637 3.png|link=]]<!--
+-->[[File:Tiles 637 4.png|link=]]<!--
+-->[[File:Tiles 637 5.png|link=]]<!--
+-->[[File:Tiles 637 6.png|link=]]<!--
+-->[[File:Tiles 637 7.png|link=]]<!--
+-->[[File:Tiles 637 8.png|link=]]<!--
+-->[[File:Tiles 637 9.png|link=]]<!--
+-->[[File:Tiles 637 10.png|link=]]<!--
+-->{{flexend}}
+| {{tr|Ash grass plants}}{{note|paren=y|[[{{tr|Tile IDs}}|{{tr|tile ID}}]] 637}}
+}}
+* 摧毁{{tr|Ash grass plants}}时，有 {{chance|1/100}} 的几率生成[[{{tr|Hell Butterfly}}]]或{{tr|Lavafly}}。仅当附近总计存在不超过 7 只其他{{tr|Hell Butterflies and Lavaflies}}时才能生成。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.KillTile_DropBait}}
+
+== 花絮 ==
+* 和[[{{tr|Fireflies}}]]一样，高分辨率情况下{{tr|Lavaflies}}在{{tr|the Underworld}}中难以看见，它在屏幕上只会作为一个闪烁的小亮点出现。
+{{bestiary}}
+
+== 另见 ==
+* [[{{tr|Magma Snail}}]]，另一个{{tr|Underworld critter}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Lavafly}}

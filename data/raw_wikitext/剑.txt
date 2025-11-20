@@ -1,0 +1,42 @@
+{{quotation|[[{{tr|Merchant}}]]|{{gameText|LegacyDialog.4}}}}
+
+'''{{tr|Swords}}'''是玩家的基本[[{{tr|melee weapon}}]]。大多数{{tr|swords}}可以归类于'''{{tr|shortswords}}'''或'''{{tr|broadswords}}'''。在{{eversions|1.4.0.1}}中，{{tr|shortswords}}会朝着光标所在的任意方向戳刺，而在{{eversions|1.4.0.1|short=y|invert=y}}中，它们则只会朝玩家正前方水平戳刺。{{tr|Broadswords}}则从玩家头上挥过，一般会具备更长的攻击射程。一些{{tr|swords}}在挥舞时还会发射{{tr|projectiles}}，从而提供远程攻击。 
+
+新玩家出生时会带有一把[[{{tr|Copper Shortsword}}]]（{{3DS version}}上是[[{{tr|Wooden Sword}}]]；在{{eil|Journey Mode}}中则是[[{{tr|Iron Shortsword}}]]）。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+! class=unsortable | 来源
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=name
+|q?limit=200
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+{{Master Template Weapons
+| show-main = yes
+| show-melee = yes
+}}
+
+{{all versions}}
+[[Category:剑| ]]
+
+{{language info|en=Swords}}

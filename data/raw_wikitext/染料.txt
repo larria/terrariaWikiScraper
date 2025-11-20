@@ -1,0 +1,1002 @@
+{{exclusive|desktop=y|console=y|old-gen console=y|mobile=y|switch=y|tmodloader=y}}
+[[File:dye clothing.jpg|thumb|190px|使用{{tr|Dyes}}协调衣服颜色的例子。]]
+[[File:Normal-Wood-Armor-Dye.png|400px|right|thumb|所有可用的{{tr|dye}}染色后的[[{{tr|Wood armor}}]]的样子。]]
+{{quotation|[[{{tr|Dye Trader}}|{{tr|The Dye Trader}}]]|{{gameText|LegacyDialog.258}}}}
+
+'''{{tr|Dyes}}'''是一种装饰性的物品，可以放置在玩家[[{{tr|inventory}}]]的“{{tr|Dye}}栏”中来替换所装备的[[{{tr|Armor}}]]、[[{{tr|Vanity item}}]]和[[{{tr|Accessories}}]]的颜色及纹理。[[{{tr|Dye Trader}}]] [[{{tr|NPC}}]] 出售两种{{tr|dyes}}([[{{tr|Silver Dye}}]]和[[{{tr|Brown Dye}}]])和[[{{tr|Dye Vat}}]]（{{iteminfo|Dye Vat|buy}}）。其他{{tr|Dyes}}必须用{{tr|Dye Vat}}制作或者用[[{{tr|Strange Plant}}]]与{{tr|Dye Trader}} NPC 交换得到。制作出的初级{{tr|Dyes}}可以进一步组合以制作淡色、渐变、和复合{{tr|Dyes}}。游戏中一共有 {{eicons|1.4.0.1}} 119 / {{eicons|Dyes|not=1.3.0.1}} 68 种不同的{{tr|dyes}}（单人世界中是 118 / 67 种，因为[[{{tr|Team Dye}}]]在单人世界中不可用）。一些{{tr|dyes}}可以让外观在完全黑暗中亦可见，其中大多数都是{{tr|Strange Dyes}}。
+
+如果对{{eil|Critter Shampoo}}进行染色（通过将{{tr|dye}}放进相应的{{tr|accessory dye slot}}），则此{{tr|dye}}会应用于玩家的所有[[{{tr|minions}}]]。
+
+由于像素着色器不可用，因此{{3DS version}}中不提供{{tr|Dyes}}。
+__TOC__
+{{-}}
+
+== {{tr|Basic Dyes}} ==
+{{-}}
+{{item infobox
+| boxwidth=12em
+| name = Basic Dyes
+| imagealt = [[File:Red Dye.png|link=]] [[File:Green Dye.png|link=]] [[File:Blue Dye.png|link=]]
+| stack = {{iteminfo|Red Dye|stack}}
+| rare = {{iteminfo|Red Dye|rare}}
+| sell = {{iteminfo|Red Dye|sell}}
+| research = {{iteminfo|Red Dye|research}}
+| cargo = no
+}}
+
+所有{{tr|basic dyes}}都是在[[{{tr|Dye Vat}}]]制作的。它们的{{tr|crafting ingredients}}（不包括[[{{tr|Silver Dye}}]]和[[{{tr|Brown Dye}}]]）可能以[[{{tr|background object}}]]形式长在自然世界中，或保证掉落自特定{{tr|enemies}}。所有[[{{tr|Plants}}#{{tr|Dye Plants}}|{{tr|dye plants}}]]都会显示在地图上。所有{{tr|Basic Dyes}}在完全黑暗中都不可见。
+{{options/set|item|wrap=yes|class=multi-line}}
+{|class="terraria lined align-center" style="float:left"
+! rowspan=2 colspan=2 | {{tr|Basic Dye}}
+! rowspan=2 | {{tr|Ingredients}}
+! rowspan=2 | {{tr|Source}}
+! colspan=6 | {{tr|Crafts}}
+|-
+! {{tr|String}}
+! {{tr|Golf Ball}}
+! {{tr|Bright Dye}}<br/>(+ {{item|Silver Dye|icons=no}})
+! + {{/dye2|Black}}
+! + {{/dye2|Silver}}
+! 特殊
+|-
+| {{/dye|Red|ex=png}}
+| align=left | {{item|Red Husk}}
+| align=left | {{item|Cochineal Beetle}}
+| {{item|mode=image|Red String}}
+| {{item|mode=image|Red Golf Ball}}
+| {{/dye2|Bright Red}}
+| {{/dye2|Red and Black}}
+| {{/dye2|Red and Silver}}
+| {{/dye3|Flame}}
+|-
+| {{/dye|Orange|ex=png}}
+| align=left | {{item|Orange Bloodroot}}
+| align=left | {{item|Dirt Block|Dirt|note=(天花板)|wrap=}} <div style="font-size:90%">[[{{tr|Underground}}]]/[[{{tr|Cavern}}]]</div>
+| {{item|mode=image|Orange String}}
+| {{item|mode=image|Orange Golf Ball}}
+| {{/dye2|Bright Orange}}
+| {{/dye2|Orange and Black}}
+| {{/dye2|Orange and Silver}}
+| {{/dye3|Flame}} {{/dye3|Yellow Gradient}}
+|-
+| {{/dye|Yellow|ex=png}}
+| align=left | {{item|Yellow Marigold}}
+| align=left | {{item|Grass}} <div style="font-size:90%">[[{{tr|Surface}}]]</div>
+| {{item|mode=image|Yellow String}}
+| {{item|mode=image|Yellow Golf Ball}}
+| {{/dye2|Bright Yellow}}
+| {{/dye2|Yellow and Black}}
+| {{/dye2|Yellow and Silver}}
+| {{/dye3|Flame}} {{/dye3|Yellow Gradient}} {{/dye3|Green Flame}}
+|-
+| {{/dye|Lime|ex=png}}
+| align=left | {{item|Lime Kelp}}
+| align=left | {{item|Water}} <div style="font-size:90%">[[{{tr|Cavern}}]]</div>
+| {{item|mode=image|Lime String}}
+| {{item|mode=image|Lime Golf Ball}}
+| {{/dye2|Bright Lime}}
+| {{/dye2|Lime and Black}}
+| {{/dye2|Lime and Silver}}
+| {{/dye3|Yellow Gradient}} {{/dye3|Green Flame}}
+|-
+| {{/dye|Green|ex=png}}
+| align=left | {{item|Green Mushroom}}
+| align=left | {{item|Dirt Block|Dirt}}
+| {{item|mode=image|Green String}}
+| {{item|mode=image|Green Golf Ball}}
+| {{/dye2|Bright Green}}
+| {{/dye2|Green and Black}}
+| {{/dye2|Green and Silver}}
+| {{/dye3|Green Flame}}
+|-
+| {{/dye|Teal|ex=png}}
+| align=left | {{item|Teal Mushroom}}
+| align=left | {{item|Dirt Block|Dirt}} <div style="font-size:90%">[[{{tr|Underground}}]]/[[{{tr|Cavern}}]]</div>
+| {{item|mode=image|Teal String}}
+| {{item|mode=image|Teal Golf Ball}}
+| {{/dye2|Bright Teal}}
+| {{/dye2|Teal and Black}}
+| {{/dye2|Teal and Silver}}
+| {{/dye3|Cyan Gradient}}
+|-
+| {{/dye|Cyan|ex=png}}
+| align=left | {{item|Cyan Husk}}
+| align=left | {{item|Cyan Beetle|size=25px}} <div style="font-size:90%">[[{{tr|Ice biome}}]]</div>
+| {{item|mode=image|Cyan String}}
+| {{item|mode=image|Cyan Golf Ball}}
+| {{/dye2|Bright Cyan}}
+| {{/dye2|Cyan and Black}}
+| {{/dye2|Cyan and Silver}}
+| {{/dye3|Cyan Gradient}} {{/dye3|Blue Flame}}
+|-
+| {{/dye|Sky Blue|ex=png}}
+| align=left | {{item|Sky Blue Flower|size=25px}}
+| align=left | {{item|Jungle grass}}
+| {{item|mode=image|Sky Blue String}}
+| {{item|mode=image|Sky Blue Golf Ball}}
+| {{/dye2|Bright Sky Blue}}
+| {{/dye2|Sky Blue and Black}}
+| {{/dye2|Sky Blue and Silver}}
+| {{/dye3|Cyan Gradient}} {{/dye3|Blue Flame}}
+|-
+| {{/dye|Blue|ex=png}}
+| align=left | {{item|Blue Berries}}
+| align=left | {{item|Grass}}
+| {{item|mode=image|Blue String}}
+| {{item|mode=image|Blue Golf Ball}}
+| {{/dye2|Bright Blue}}
+| {{/dye2|Blue and Black}}
+| {{/dye2|Blue and Silver}}
+| {{/dye3|Blue Flame}}
+|-
+| {{/dye|Purple|ex=png}}
+| align=left | {{item|Purple Mucus}}
+| align=left | {{item|Sea Snail|size=25px}} <div style="font-size:90%">[[{{tr|Ocean}}]]</div>
+| {{item|mode=image|Purple String}}
+| {{item|mode=image|Purple Golf Ball}}
+| {{/dye2|Bright Purple}}
+| {{/dye2|Purple and Black}}
+| {{/dye2|Purple and Silver}}
+| {{/dye3|Violet Gradient}}
+|-
+| {{/dye|Violet|ex=png}}
+| align=left | {{item|Violet Husk}}
+| align=left | {{item|Lac Beetle|size=25px}} <div style="font-size:90%">[[{{tr|Underground Jungle}}]]</div>
+| {{item|mode=image|Violet String}}
+| {{item|mode=image|Violet Golf Ball}}
+| {{/dye2|Bright Violet}}
+| {{/dye2|Violet and Black}}
+| {{/dye2|Violet and Silver}}
+| {{/dye3|Violet Gradient}}
+|-
+| {{/dye|Pink|ex=png}}
+| align=left | {{item|Pink Prickly Pear}}
+| align=left | 长在[[{{tr|Cacti}}]]上 <div style="font-size:90%">[[{{tr|Desert}}]]</div>
+| {{item|mode=image|Pink String}}
+| {{item|mode=image|Pink Golf Ball}}
+| {{/dye2|Bright Pink}}
+| {{/dye2|Pink and Black}}
+| {{/dye2|Pink and Silver}}
+| {{/dye3|Violet Gradient}}
+|-
+| {{/dye|Black|ex=png}}
+| align=left | {{item|Black Ink}}
+| align=left | {{item|Squid|size=17px}} <div style="font-size:90%">[[{{tr|Ocean}}]][[{{tr|water}}]]</div>
+| {{item|mode=image|Black String}}
+| {{item|mode=image|Black Golf Ball}}
+| {{na}}
+| {{na}}
+| {{/dye2|Black and White}}
+| <span style="font-size:90%">''所有 [[#{{tr|Compound Dye}}|[...]黑染料]]''</span>
+|-
+| {{/dye|Brown|buy=yes}}
+| {{na}}
+| align=left | {{item|Dye Trader}} ({{iteminfo|Brown Dye|buy}})
+| {{item|mode=image|Brown String}}
+| {{item|mode=image|Brown Golf Ball}}
+| {{/dye2|Bright Brown}}
+| {{/dye2|Brown and Black}}
+| {{/dye2|Brown and Silver}}
+| {{na}}
+|-
+| {{/dye|Silver|ex=png|buy=yes}}
+| {{na}}
+| align=left | {{item|Dye Trader}} ({{iteminfo|Silver Dye|buy}})
+| {{na}}
+| {{na}}
+| {{/dye2|Bright Silver}}
+| {{/dye2|Silver and Black}}
+| {{na}}
+| <span style="font-size:90%">''所有[[#{{tr|Compound Dye}}|[...]银]]{{tr|Dyes}}''<br/></span> <span style="font-size:90%">''所有[[#{{tr|Bright Dye}}|{{tr|Bright Dyes}}]]''</span>
+|}
+{{options/reset|item}}
+{{-}}
+
+== {{tr|Bright Dye}} ==
+{{item infobox
+| boxwidth = 12em
+| name = Bright Dyes
+| imagealt = [[File:Bright Red Dye.png|link=]] [[File:Bright Green Dye.png|link=]] [[File:Bright Blue Dye.png|link=]]
+| stack = {{iteminfo|Bright Red Dye|stack}}
+| rare = {{iteminfo|Bright Red Dye|rare}}
+| sell = {{iteminfo|Bright Red Dye|sell}}
+| research = {{iteminfo|Bright Red Dye|research}}
+| cargo = no
+}}
+
+所有有色{{tr|basic dyes}}（除了黑色）都可以在[[{{tr|Dye Vat}}]]和{{tr|Silver Dye}}结合来制作{{tr|Bright Dyes}}。所有{{tr|the Bright Dyes}}在完全黑暗中都不可见。
+
+{| class="terraria lined align-center" style="float:left"
+! colspan=2 | {{tr|Dye}}
+! {{tr|Ingredients}}
+! {{tr|Crafts}}
+|-
+| {{/dye|Bright Red}}
+| {{/dye2|Red}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Orange}}
+| {{/dye2|Orange}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Yellow}}
+| {{/dye2|Yellow}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Lime}}
+| {{/dye2|Lime}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Green}}
+| {{/dye2|Green}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Teal}}
+| {{/dye2|Teal}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Cyan}}
+| {{/dye2|Cyan}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Sky Blue}}
+| {{/dye2|Sky Blue}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Blue}}
+| {{/dye2|Blue}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Purple}}
+| {{/dye2|Purple}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Violet}}
+| {{/dye2|Violet}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Pink}}
+| {{/dye2|Pink}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Brown}}
+| {{/dye2|Brown}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Bright Silver}}
+| {{/dye2|Silver|2}}
+| {{na}}
+|}
+{{-}}
+
+== {{tr|Gradient Dyes}} ==
+{{item infobox
+| boxwidth=12em
+| name = Gradient Dyes
+| imagealt = [[File:Flame Dye.png|link=]] [[File:Green Flame Dye.png|link=]] [[File:Blue Flame Dye.png|link=]]
+| stack = {{iteminfo|Flame Dye|stack}}
+| rare = {{iteminfo|Flame Dye|rare}}
+| sell = {{iteminfo|Flame Dye|sell}}
+| research = {{iteminfo|Flame Dye|research}}
+| cargo = no
+}}
+
+这些{{tr|dyes}}产生多个颜色之间的淡出入效果。它们在[[{{tr|Dye Vat}}]]制作。所有{{tr|Gradient Dyes}}在完全黑暗中都不可见。
+
+{| class="terraria lined align-center" style="float:left"
+|-
+! colspan=2 | {{tr|Dye}}
+! {{tr|Ingredients}}
+! {{tr|Crafts}}
+|-
+| {{/dye|Flame}}
+| {{/dye3|Red}} + {{/dye3|Orange}} + {{/dye3|Yellow}}
+| {{/dye3|Flame and Black}} {{/dye3|Flame and Silver}} {{/dye3|Intense Flame}}
+|-
+| {{/dye|Green Flame}}
+| {{/dye3|Green}} + {{/dye3|Lime}} + {{/dye3|Yellow}}
+| {{/dye3|Green Flame and Black}} {{/dye3|Green Flame and Silver}} {{/dye3|Intense Green Flame}}
+|-
+| {{/dye|Blue Flame}}
+| {{/dye3|Blue}} + {{/dye3|Sky Blue}} + {{/dye3|Cyan}}
+| {{/dye3|Blue Flame and Black}} {{/dye3|Blue Flame and Silver}} {{/dye3|Intense Blue Flame}}
+|-
+| {{/dye|Yellow Gradient}}
+| {{/dye3|Lime}} + {{/dye3|Yellow}} + {{/dye3|Orange}}
+| {{/dye3|Rainbow}}
+|-
+| {{/dye|Cyan Gradient}}
+| {{/dye3|Teal}} + {{/dye3|Cyan}} + {{/dye3|Sky Blue}}
+| {{/dye3|Rainbow}}
+|-
+| {{/dye|Violet Gradient}}
+| {{/dye3|Pink}} + {{/dye3|Violet}} + {{/dye3|Purple}}
+| {{/dye3|Rainbow}}
+|-
+| {{/dye|Rainbow}}
+| {{/dye3|Yellow Gradient}} + {{/dye3|Cyan Gradient}} + {{/dye3|Violet Gradient}}
+| {{/dye3|Intense Rainbow}} {{item|mode=image|Rainbow String}}
+|-
+| {{/dye|Intense Flame}}
+| {{/dye3|Flame|2}}
+| {{na}}
+|-
+| {{/dye|Intense Green Flame}}
+| {{/dye3|Green Flame|2}}
+| {{na}}
+|-
+| {{/dye|Intense Blue Flame}}
+| {{/dye3|Blue Flame|2}}
+| {{na}}
+|-
+| {{/dye|Intense Rainbow}}
+| {{/dye3|Rainbow|2}}
+| {{na}}
+|}
+{{-}}
+
+== {{tr|Compound Dye}} ==
+{{item infobox
+| boxwidth = 12em
+| name = Compound Dyes
+| imagealt = <div style="line-height:26px">[[File:Red and Black Dye.png|link=]] [[File:Green and Black Dye.png|link=]] [[File:Blue and Black Dye.png|link=]] <br/> [[File:Red and Silver Dye.png|link=]] [[File:Green and Silver Dye.png|link=]] [[File:Blue and Silver Dye.png|link=]]</div>
+| stack = {{iteminfo|Red and Black Dye|stack}}
+| rare = {{iteminfo|Red and Black Dye|rare}}
+| sell = {{iteminfo|Red and Black Dye|sell}}
+| research = {{iteminfo|Red and Black Dye|research}}
+| cargo = no
+}}
+
+这些{{tr|dyes}}形成多种颜色的图案，根据物品的形状染成单独的块。所有有色{{tr|basic dyes}}，和一些“焰”{{tr|gradient dyes}}，分别可以与{{tr|Black Dye}}或{{tr|Silver Dye}}结合来制作“&lt;颜色&gt;黑染料”或“&lt;颜色&gt;银染料”。它们在[[{{tr|Dye Vat}}]]制作。所有{{tr|the Compound Dyes}}在完全黑暗中都不可见。
+
+{{flexstart|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+! colspan=2 | {{tr|Dye}}
+! {{tr|Ingredients}}
+! {{tr|Crafts}}
+|-
+| {{/dye|Red and Black}}
+| {{/dye2|Red}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Orange and Black}}
+| {{/dye2|Orange}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Yellow and Black}}
+| {{/dye2|Yellow}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Lime and Black}}
+| {{/dye2|Lime}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Green and Black}}
+| {{/dye2|Green}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Teal and Black}}
+| {{/dye2|Teal}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Cyan and Black}}
+| {{/dye2|Cyan}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Sky Blue and Black}}
+| {{/dye2|Sky Blue}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Blue and Black}}
+| {{/dye2|Blue}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Purple and Black}}
+| {{/dye2|Purple}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Violet and Black}}
+| {{/dye2|Violet}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Pink and Black}}
+| {{/dye2|Pink}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Brown and Black}}
+| {{/dye2|Brown}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Silver and Black}}
+| {{/dye2|Silver}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Flame and Black}}
+| {{/dye2|Flame}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Green Flame and Black}}
+| {{/dye2|Green Flame}} + {{/dye2|Black}}
+| {{na}}
+|-
+| {{/dye|Blue Flame and Black}}
+| {{/dye2|Blue Flame}} + {{/dye2|Black}}
+| {{na}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+! colspan=2 | {{tr|Dye}}
+! {{tr|Ingredients}}
+! {{tr|Crafts}}
+|-
+| {{/dye|Red and Silver}}
+| {{/dye2|Red}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Orange and Silver}}
+| {{/dye2|Orange}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Yellow and Silver}}
+| {{/dye2|Yellow}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Lime and Silver}}
+| {{/dye2|Lime}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Green and Silver}}
+| {{/dye2|Green}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Teal and Silver}}
+| {{/dye2|Teal}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Cyan and Silver}}
+| {{/dye2|Cyan}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Sky Blue and Silver}}
+| {{/dye2|Sky Blue}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Blue and Silver}}
+| {{/dye2|Blue}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Purple and Silver}}
+| {{/dye2|Purple}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Violet and Silver}}
+| {{/dye2|Violet}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Pink and Silver}}
+| {{/dye2|Pink}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Brown and Silver}}
+| {{/dye2|Brown}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Black and White}}
+| {{/dye2|Black}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Flame and Silver}}
+| {{/dye2|Flame}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Green Flame and Silver}}
+| {{/dye2|Green Flame}} + {{/dye2|Silver}}
+| {{na}}
+|-
+| {{/dye|Blue Flame and Silver}}
+| {{/dye2|Blue Flame}} + {{/dye2|Silver}}
+| {{na}}
+|}
+{{flexend|item}}
+{{flexend}}
+{{-}}
+
+== {{tr|Strange Dyes}} ==
+{{exclusive|1.3.0.1}}
+{{item infobox
+| boxwidth = 12em
+| name = Strange Dyes
+| imagealt = [[File:Infernal Wisp Dye.png|link=]] [[File:Chlorophyte Dye.png|link=]] [[File:Glowing Mushroom Dye.png|link=]]
+| stack = {{iteminfo|Acid Dye|stack}}
+| rare =
+| research = {{iteminfo|Acid Dye|research}}
+| cargo = no
+}}
+
+这些{{tr|dye}}是[[{{tr|Dye Trader}}]]为了换取[[{{tr|Strange Plants}}]]而给予的{{tr|quest rewards}}。具有橙色和青色[[{{tr|rarity}}]]级别的{{tr|dyes}}只会在[[{{tr|Hardmode}}]]{{tr|world}}世界中给予。{{tr|Strange Dyes}}在完全黑暗中有不同程度的可见性。注意，[[{{tr|Strange Plant}}]]只在[[{{tr|Hardmode}}]]中可获得。
+
+{| class="terraria lined align-center" style="float:left"
+! colspan=2 | {{tr|Dye}}
+! {{tr|Crafts}}
+! 卖出价
+! {{tr|Rarity}}
+! 何时有货
+! 黑暗中的可见性
+|-
+| {{/dye|Acid|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Acid Dye|sell}}
+| {{iteminfo|Acid Dye|rare}}
+| {{note|总是有售}}
+| {{note|中}}
+|-
+| {{/dye|Blue Acid|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Blue Acid Dye|sell}}
+| {{iteminfo|Blue Acid Dye|rare}}
+| {{note|总是有售}}
+| {{note|中}}
+|-
+| {{/dye|Red Acid|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Red Acid Dye|sell}}
+| {{iteminfo|Red Acid Dye|rare}}
+| {{note|总是有售}}
+| {{note|中}}
+|-
+| {{/dye|Chlorophyte|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Chlorophyte Dye|sell}}
+| {{iteminfo|Chlorophyte Dye|rare}}
+| 打败任意[[{{tr|mechanical boss}}]] 后
+| {{note|低/无}}
+|-
+| {{/dye|Gel|link=yes|ex=gif}}
+| {{/dye2|Pink Gel}}
+| align=right | {{iteminfo|Gel Dye|sell}}
+| {{iteminfo|Gel Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|无}}
+|-
+| {{/dye|Glowing Mushroom|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Glowing Mushroom Dye|sell}}
+| {{iteminfo|Glowing Mushroom Dye|rare}}
+| {{note|总是有售}}
+| {{note|中}}
+|-
+| {{/dye|Grim|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Grim Dye|sell}}
+| {{iteminfo|Grim Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|中}}
+|-
+| {{/dye|Hades|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Hades Dye|sell}}
+| {{iteminfo|Hades Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|高}}
+|-
+| {{/dye|Burning Hades|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Burning Hades Dye|sell}}
+| {{iteminfo|Burning Hades Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|高}}
+|-
+| {{/dye|Shadowflame Hades|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Shadowflame Hades Dye|sell}}
+| {{iteminfo|Shadowflame Hades Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|高}}
+|-
+| {{/dye|Living Ocean|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Living Ocean Dye|sell}}
+| {{iteminfo|Living Ocean Dye|rare}}
+| 打败任意[[{{tr|Mechanical Bosses}}|{{tr|mechanical boss}}]] 后
+| {{note|高}}
+|-
+| {{/dye|Living Flame|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Living Flame Dye|sell}}
+| {{iteminfo|Living Flame Dye|rare}}
+| 打败任意[[{{tr|Mechanical Bosses}}|{{tr|mechanical boss}}]] 后
+| {{note|高}}
+|-
+| {{/dye|Living Rainbow|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Living Rainbow Dye|sell}}
+| {{iteminfo|Living Rainbow Dye|rare}}
+| 打败任意[[{{tr|Mechanical Bosses}}|{{tr|mechanical boss}}]] 后
+| {{note|中}}
+|-
+| {{/dye|Martian|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Martian Dye|sell}}
+| {{iteminfo|Martian Dye|rare}}
+| 打败[[{{tr|Martian Madness}}]]后：
+| {{note|高}}
+|-
+| {{/dye|Midnight Rainbow|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Midnight Rainbow Dye|sell}}
+| {{iteminfo|Midnight Rainbow Dye|rare}}
+| 打败[[{{tr|Martian Madness}}]]后：
+| {{note|无}}
+|-
+| {{/dye|Mirage|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Mirage Dye|sell}}
+| {{iteminfo|Mirage Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Negative|link=yes|note=<ref name="Dye Trader"/>}}
+| {{na}}
+| align=right | {{iteminfo|Negative Dye|sell}}
+| {{iteminfo|Negative Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Pixie|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Pixie Dye|sell}}
+| {{iteminfo|Pixie Dye|rare}}
+| 打败[[{{tr|Plantera}}]]后
+| {{note|高}}
+|-
+| {{/dye|Phase|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Phase Dye|sell}}
+| {{iteminfo|Phase Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|高}}
+|-
+| {{/dye|Purple Ooze|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Purple Ooze Dye|sell}}
+| {{iteminfo|Purple Ooze Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Dye|sell}}
+| {{iteminfo|Reflective Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective Copper|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Copper Dye|sell}}
+| {{iteminfo|Reflective Copper Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective Gold|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Gold Dye|sell}}
+| {{iteminfo|Reflective Gold Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective Obsidian|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Obsidian Dye|sell}}
+| {{iteminfo|Reflective Obsidian Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective Metal|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Metal Dye|sell}}
+| {{iteminfo|Reflective Metal Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Reflective Silver|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Reflective Silver Dye|sell}}
+| {{iteminfo|Reflective Silver Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Shadow|link=yes|note=<ref name="Dye Trader"/>}}
+| {{na}}
+| align=right | {{iteminfo|Shadow Dye|sell}}
+| {{iteminfo|Shadow Dye|rare}}
+| {{note|总是有售}}
+| {{note|无}}
+|-
+| {{/dye|Shifting Sands|link=yes|ex=gif}}
+| {{/dye2|Shifting Pearlsands}}
+| align=right | {{iteminfo|Shifting Sands Dye|sell}}
+| {{iteminfo|Shifting Sands Dye|rare}}
+| {{tr|Hardmode}}
+| {{note|低}}
+|-
+| {{/dye|t=Skiphs' Blood|link=yes|ex=gif|note=<ref>也偶尔能从[[{{tr|Hardmode}}]][[{{tr|Treasure Bag}}]]得到</ref>}}
+| {{na}}
+| align=right | {{iteminfo|Skiphs' Blood|sell}}
+| {{iteminfo|Skiphs' Blood|rare}}
+| 打败[[{{tr|Moon Lord}}]]后
+| {{note|无}}
+|-
+| {{/dye|Twilight|link=yes|ex=gif}}
+| {{na}}
+| align=right | {{iteminfo|Twilight Dye|sell}}
+| {{iteminfo|Twilight Dye|rare}}
+| [[{{tr|Hardmode}}]]
+| {{note|低}}
+|-
+| {{/dye|Wisp|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Wisp Dye|sell}}
+| {{iteminfo|Wisp Dye|rare}}
+| 打败[[{{tr|Plantera}}]]后
+| {{note|高}}
+|-
+| {{/dye|Infernal Wisp|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Infernal Wisp Dye|sell}}
+| {{iteminfo|Infernal Wisp Dye|rare}}
+| 打败[[{{tr|Plantera}}]]后
+| {{note|高}}
+|-
+| {{/dye|Unicorn Wisp|link=yes}}
+| {{na}}
+| align=right | {{iteminfo|Unicorn Wisp Dye|sell}}
+| {{iteminfo|Unicorn Wisp Dye|rare}}
+| 打败[[{{tr|Plantera}}]]后
+| {{note|高}}
+|}
+{{-}}
+
+== {{tr|Lunar Dyes}} ==
+{{item infobox
+| boxwidth = 12em
+| name = Lunar Dyes
+| imagealt = [[File:Solar Dye.png|link=]] [[File:Vortex Dye.png|link=]] [[File:Nebula Dye.png|link=]] [[File:Stardust Dye.png|link=]]
+| stack = {{iteminfo|Solar Dye|stack}}
+| rare = {{iteminfo|Solar Dye|rare}}
+| sell = {{iteminfo|Solar Dye|sell}}
+| research = {{iteminfo|Solar Dye|research}}
+| cargo = no
+}}
+
+这些动态{{tr|dyes}}是用[[{{tr|Lunar Fragments}}]]在[[{{tr|Dye Vat}}]]处制作出来的。{{tr|Solar Dye}}是唯一在完全黑暗中有一定可见性的{{tr|Lunar Dye}}。
+
+{|class="terraria lined align-center" style="float:left"
+! colspan=2 | {{tr|Dye}}
+! {{tr|Ingredients}}
+! {{tr|Crafts}}
+! 黑暗中的可见性
+|-
+| {{/dye|Nebula|link=yes|ex=gif}}
+| {{recipes/extract|result=Nebula Dye|nostation=y}}
+| {{na}}
+| {{note|无}}
+|-
+| {{/dye|Solar|link=yes|ex=gif}}
+| {{recipes/extract|result=Solar Dye|nostation=y}}
+| {{na}}
+| {{note|中}}
+|-
+| {{/dye|Stardust|link=yes|ex=gif}}
+| {{recipes/extract|result=Stardust Dye|nostation=y}}
+| {{na}}
+| {{note|无}}
+|-
+| {{/dye|Vortex|link=yes|ex=gif}}
+| {{recipes/extract|result=Vortex Dye|nostation=y}}
+| {{na}}
+| {{note|无}}
+|}
+{{-}}
+
+== {{tr|Other Dyes}} ==
+{{item infobox
+| boxwidth = 12em
+| name = Other Dyes
+| imagealt = [[File:Loki's Dye.png|link=]] [[File:Pink Gel Dye.png|link=]] [[File:Void Dye.png|link=]]
+| stack = {{iteminfo|Loki's Dye|stack}}
+| rare =
+| research = {{iteminfo|Loki's Dye|research}}
+| cargo = no
+}}
+
+{| class="terraria lined align-center" style="float:left"
+! colspan=2 | {{tr|Dye}}
+! 来源
+! {{tr|Crafts}}
+! 卖出价
+! {{tr|Rarity}}
+! 黑暗中的可见性
+|-
+| {{/dye|Loki's|link=yes|ex=gif}}
+| [[{{tr|Expert Mode}}]][[{{tr|Hardmode}}]][[{{tr|Treasure Bag}}]]
+| {{na}}
+| align=right | {{iteminfo|Loki's Dye|sell}}
+| {{iteminfo|Loki's Dye|rare}}
+| {{note|无}}
+|-
+| {{/dye|Pink Gel|link=yes|ex=gif}}
+| {{recipes/extract|result=Pink Gel Dye|nostation=y}}
+| {{na}}
+| align=right | {{iteminfo|Pink Gel Dye|sell}}
+| {{iteminfo|Pink Gel Dye|rare}}
+| {{note|无}}
+|-
+| {{/dye|Shifting Pearlsands|link=yes|ex=gif}}
+| {{recipes/extract|result=Shifting Pearlsands Dye|nostation=y}}
+| {{na}}
+| align=right | {{iteminfo|Shifting Pearlsands Dye|sell}}
+| {{iteminfo|Shifting Pearlsands Dye|rare}}
+| {{note|低}}
+|-
+| {{/dye|Team|link=yes|note=<ref>只影响[[{{tr|multiplayer}}]]，且只在{{tr|multiplayer games}}中可用。</ref>}}
+| [[{{tr|Dye Trader}}]]（每个 {{iteminfo|Team Dye|buy}}；仅限[[{{tr|multiplayer}}]]中）
+| {{na}}
+| align=right | {{iteminfo|Team Dye|sell}}
+| {{iteminfo|Team Dye|rare}}
+| {{note|无}}
+|-
+| {{/dye|Bloodbath|link=yes|ex=gif}}
+| [[{{tr|Dye Trader}}]]（每个 {{iteminfo|Bloodbath Dye|buy}}；只在[[{{tr|Blood Moon}}]]期间有售）
+| {{na}}
+| align=right | {{iteminfo|Bloodbath Dye|sell}}
+| {{iteminfo|Bloodbath Dye|rare}}
+| {{note|无}}
+|-
+| {{/dye|Fogbound|link=yes|ex=gif}}
+| [[{{tr|Dye Trader}}]]（每个 {{iteminfo|Fogbound Dye|buy}}；在{{eil|Graveyard}}中时）
+| {{na}}
+| align=right | {{iteminfo|Fogbound Dye|sell}}
+| {{iteminfo|Fogbound Dye|rare}}
+| {{note|中}}
+|-
+| {{/dye|Prismatic|link=yes|ex=gif}}
+| {{eil|Empress of Light}}（{{chance|1/4}}）
+| {{na}}
+| align=right | {{iteminfo|Prismatic Dye|sell}}
+| {{iteminfo|Prismatic Dye|rare}}
+| {{note|无}}
+|-
+| {{/dye|Void|link=yes|ex=gif}}
+| {{recipes/extract|result=Void Dye|nostation=y}}
+| {{na}}
+| align=right | {{iteminfo|Void Dye|sell}}
+| {{iteminfo|Void Dye|rare}}
+| {{note|无}}
+|}
+{{-}}
+
+== {{tr|Unobtainable}}的{{tr|Dyes}} ==
+{{item infobox
+| boxwidth = 12em
+| name = {{tr|Unobtainable}}的{{tr|Dyes}}
+| imagealt = [[File:Color Only Dye.png|link=]]
+| stack = {{iteminfo|3978|stack}}
+| rare =
+| cargo = no
+}}
+{{unobtainium|section=y}}
+
+{| class="terraria lined align-center" style="float:left"
+! colspan=2 | {{tr|Dye}}
+! 卖出价
+! {{tr|Rarity}}
+! 黑暗中的可见性
+! 备注
+|-
+| [[File:Color Only Dye (equipped).png]]
+| {{anchor|Color Only Dye}}{{item|Color Only Dye|id=3978|nolink=y|anchor=y}}{{item infobox | view = void | auto = 3978 | name = Color Only Dye | tags = unobtainable }}
+| {{iteminfo|3978|sell}}
+| {{iteminfo|3978|rare}}
+| {{note|高}}
+| align="left" |
+* 让[[{{tr|player}}]]完全变白。
+* 如果用[[{{tr|inventory editor}}]]生成，则一旦载入世界就会从{{tr|inventory}}中消失。
+* 它所关联的{{tr|shader}}，{{code|ColorOnly}}，在内部用于在[[{{tr|minimap}}]]上绘制玩家的外轮廓。
+* 其{{tr|sprite}}是[[{{tr|Unicorn Wisp Dye}}]]的副本。
+|}
+{{-}}
+
+== 备注 ==
+* 除了[[{{tr|Familiar set}}|{{tr|Familiar shirt and Familiar pants}}]]外，所有{{tr|vanity items}}都将得益于{{tr|dye}}。穿着{{tr|Familiar set}}时所显示的颜色可以改用[[{{tr|Dresser}}]]来改变。
+** 另一方面，[[{{tr|Familiar set}}|{{tr|Familiar Wig}}]]被染色时会改变玩家的头发外观。如果{{tr|the dye}}有其他效果，比如说[[{{tr|Bloodbath Dye}}]]，就会给予玩家特殊效果（对于{{tr|Bloodbath Dye}}而言，头发上会滴血）。这允许出现有趣的{{tr|dye}}/{{tr|hair dye}}颜色、效果及组合。
+* 当通过[[{{tr|Neptune's Shell}}]]、[[{{tr|Moon Charm}}]]、[[{{tr|Moon Shell}}]]、或[[{{tr|Celestial Shell}}]]变身为{{tr|werewolf}}或{{tr|a merfolk}}时，任何放置在{{tr|Dye Slots}}中的{{tr|dye}}都将{{tr|werewolf}}或{{tr|merfolk}}形态的头部、躯干和双腿着色，就像它们是[[{{tr|Vanity items}}]]那样。
+* 自然放置的{{tr|The dye crafting materials}}可以由玩家再次放置（例如，作为装饰），{{tr|the Pink Prickly Pear}}除外。{{tr|Green mushrooms}}和{{tr|Teal mushrooms}}，还有{{tr|the Sky Blue Flower}}，可以放置在任意[[{{tr|block}}]]上。{{tr|Orange Bloodroot}}必须吊挂在任意{{tr|block}}下方。{{tr|Lime Kelp}}必须浸在[[{{tr|liquid}}]]中。当它们被放置下来时，会占据一格空间，尽管它们中的大部分看起来都比一个{{tr|tile}}要更大或更高（[[{{tr|Strange Plant}}]]也是同样）。不能放置{{tr|Enemy}}掉落的{{tr|dye crafting materials}}（{{tr|Red Husks}}/{{tr|Cyan Husks}}/{{tr|Violet Husks}}、{{tr|Purple Mucus}}、{{tr|Black Ink}}）。
+* {{tr|Basic dyes}}和{{tr|Combined Dyes}}只会影响{{tr|armor}}颜色的色调，不影响饱和度（即，颜色的鲜明程度）。这意味着颜色暗淡的{{tr|armor}}和服装，比如[[{{tr|Ninja set}}]]、[[{{tr|Necro armor}}]]、和[[{{tr|Reaper set}}]]相对不受这些{{tr|dyes}}影响。然而，{{tr|Compound Dyes}}完全覆盖了{{tr|armor}}的颜色，因此它们没有同样的问题。
+* 一些白色/银色的服装{{tr|items}}，比如[[{{tr|Mrs. Claus Heels}}]]，用{{tr|basic dye}}不能正常染色，但用具有{{tr|Silver Dye}}的组合时可以得到所需的颜色。
+* {{eicons|1.3.0.1}} 其图标上有一个蓝色小球的{{tr|Dyes}}有独特的动画。
+* {{eicons|1.3.0.1}} {{tr|dye}}容器的盖子似乎表示一些和{{tr|dye}}类型有关的事情：
+** 深灰色的盖子表示{{tr|basic dyes}}
+** 银色的盖子表示{{tr|Bright dyes}}
+** 蓝灰色的盖子表示多色/{{tr|gradient dyes}}，其中的亮{{tr|dyes}}的盖子蓝色更深一些
+** 格子条纹的盖子表示{{tr|a compound dye}}，深色是“[...]黑染料”、浅色是“[...]银染料”、而蓝色是“[...]焰[...]染料”
+** 绿色盖子表示会发光
+** 金色盖子表示{{tr|dye}}是反光的
+** 紫色盖子表示是动态{{tr|dyes}}或有其他特殊效果
+*** 由于未知原因，{{tr|Black and White Dye}}被归于此类。
+** 红色盖子是保留给{{tr|Team dye}}的
+* {{tr|Dye}}还会改变地图上{{tr|player}}{{tr|helmet}}的外观。
+* 一些有动画效果的{{tr|dyes}}——比如{{tr|Living Flame dye}}或{{tr|Phase Dye}}——可能导致[[{{tr|mounts}}]]、[[矿车]]、[[{{tr|the Wisp in a Bottle}}]]看起来不可见。
+* 对于某些{{tr|armors}}（比如[[{{tr|meteor armor}}]]），其尾迹也会反映{{tr|the dyes}}的颜色。这意味着如果玩家给一套{{tr|armor}}用上{{tr|blue dye}}、{{tr|pink dye}}、和{{tr|yellow dye}}，显示尾迹的地方也会分成三种颜色。
+* 奇怪的是，没有“白{{tr|dye}}”，但有时{{tr|bright silver dye}}可以作为替代品。
+* {{tr|The compound dyes}}在{{eversions|Dyes|not=1.3.0.1}}上具有不同的{{tr|inventory sprite}}，显示为一个普通尺寸的彩色染料瓶加上旁边有一个小的黑染料或银染料瓶。
+
+== 成就 ==
+{{achievement|name=Dye Hard}}
+
+== 小贴士 ==
+* 所有{{tr|dyes}}和用来制作它们的{{tr|items}}都可以卖{{iteminfo|Red Husk|sell}}，所以哪怕对{{tr|dyes}}本身不感兴趣，刚起步的人物无论何时碰到它们都应当捡起来去卖掉。
+* 要每种{{tr|dye}}制作十三（{{eicons|1.3.0.1}}）/三（{{eicons|Dyes|not=1.3.0.1}}）份（每个{{tr|dye slot}}一份，包括{{tr|combined dye}}和{{tr|compound dyes}}），需要：
+** {{tr|Red Husks}}、{{tr|Green Mushrooms}}、{{tr|Teal Mushrooms}}、{{tr|Blue Berries}}、{{tr|Purple Mucuses}}、{{tr|Violet Husks}}和{{tr|Pink Prickly Pears}}各 104 {{eicons|1.3.0.1}} / 24 {{eicons|Dyes|not=1.3.0.1}} 个；
+** {{tr|Orange Bloodroots}}、{{tr|Lime Kelps}}、{{tr|Cyan Husks}}和{{tr|Sky Blue Flowers}}各 156 {{eicons|1.3.0.1}} / 36 {{eicons|Dyes|not=1.3.0.1}} 个；
+** 208 {{eicons|1.3.0.1}} / 48 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Yellow Marigolds}}；
+** 247 {{eicons|1.3.0.1}} / 48 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Black Inks}}；
+** 403 {{eicons|1.3.0.1}} / 75 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Silver Dyes}}（花费 {{buy expr|Silver Dye|*403}} {{eicons|1.3.0.1}} / {{gc|75}} {{eicons|Dyes|not=1.3.0.1}}）；
+** 13 {{eicons|1.3.0.1}} / 3 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Team Dyes}}（花费 {{buy expr|Team Dye|*13}} {{eicons|1.3.0.1}} / {{gc|3}} {{eicons|Dyes|not=1.3.0.1}}，[[{{tr|multiplayer}}]]独有）;
+** 52 {{eicons|1.3.0.1}} 个{{tr|Brown Dyes}}（花费 {{buy expr|Brown Dye|*52}}）；
+** 130 {{eicons|1.3.0.1}} 个[[{{tr|Pink Gel}}]]；
+** 260 {{eicons|1.3.0.1}} 个[[{{tr|Crystal Shards}}]]。
+* {{eicons|1.3.0.1}} 至少需要 170 株{{tr|Strange Plants}}才能每种奖品都{{tr|dye}}得到 15 个（每株植物 3 个{{tr|dye}}）来填满全部 13 个{{tr|dye slots}}。（可能要多得多，因为从{{tr|the Dye Trader}}那得到很多重复的奖品是很常见的）。
+* 如果玩家不打算重复，每种{{tr|Dye}}只制作一个，需要：
+** {{tr|Red Husks}}、{{tr|Green Mushrooms}}、{{tr|Teal Mushrooms}}、{{tr|Blue Berries}}、{{tr|Purple Mucuses}}、{{tr|Violet Husks}}和{{tr|Pink Prickly Pears}}各 8 个；
+** {{tr|Orange Bloodroots}}、{{tr|Lime Kelps}}、{{tr|Cyan Husks}}和{{tr|Sky Blue Flowers}}各 15 个；
+** 16 个{{tr|Yellow Marigolds}}；
+** 19 {{eicons|1.3.0.1}} / 16 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Black Inks}}；
+** 31 {{eicons|1.3.0.1}} / 25 {{eicons|Dyes|not=1.3.0.1}} 个{{tr|Silver Dyes}}（花费 {{buy expr|Silver Dye|*31}} {{eicons|1.3.0.1}} / {{gc|25}} {{eicons|Dyes|not=1.3.0.1}}）；
+** 1 个{{tr|Team Dye}}（花费 {{iteminfo|Team Dye|buy}}，[[{{tr|multiplayer}}]]独有）;
+** 4 {{eicons|1.3.0.1}} 个{{tr|Brown Dyes}}（花费 {{buy expr|Brown Dye|*4}}）;
+** 10 {{eicons|1.3.0.1}} 个{{tr|Pink Gel}}；
+** 20 {{eicons|1.3.0.1}} 个{{tr|Crystal Shards}}。
+
+== 花絮 ==
+* 曾经准备让{{tr|weapons}}也可以染色。但此功能后来被废弃，因为粒子系统和染色系统无法良好协作。<ref>{{forums thread|terrarias-8th-anniversary-ask-redigit-and-cenx.79731/page-7#post-1765746|Terraria's 8th Anniversary - Ask Redigit and Cenx!}} {{small|（2019 年 5 月 20 日）}}</ref>
+* 打败某个{{tr|mechanical boss}}后，如果不是特意去弄，由于{{tr|Rainbow Dye}}的制作树很复杂，更有可能在{{tr|Rainbow Dye}}之前先得到{{tr|Living Rainbow Dye}}。
+* {{tr|Rainbow Dye}}是用{{tr|Yellow, Cyan and Violet dye}}而非{{tr|Red, Green and Blue dye}}制成的，这可能是参考在印刷行业中广泛使用的 {{维基百科|CMYK 颜色模型}}。
+* {{tr|the Hades dyes}}的效果参考了迪士尼 1997 年的动画音乐幻想电影《''{{wikipedia|lang=en|Hercules (1997 film)|大力士（Hercules）}}''》中的角色冥王哈迪斯（Hades）的样子。
+
+== 另见 ==
+* [[{{tr|Hair Dye}}]]
+* [[{{tr|Paints}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Basic Dye materials}}现在制作时会得到 2 个那种{{tr|dye}}而非 1 个。
+** 引入了[[{{tr|Bloodbath Dye}}]]、[[{{tr|Fogbound Dye}}]]和[[{{tr|Prismatic Dye}}]]。
+** {{tr|Strange Dyes}}现在是[[{{tr|Hardmode}}]]的了。}}
+{{history|Desktop 1.3.4.4|微调了一些{{tr|dye items}}的{{tr|rarity}}颜色。}}
+{{history|Desktop 1.3.0.1|
+** 所有{{tr|dyes}}的图像更新。
+** 引入了[[{{tr|Brown Dye}}]]及其衍生类型。
+** 引入了[[{{tr|Bright Silver Dye}}]]、[[{{tr|Silver and Black Dye}}]]和[[{{tr|Black and White Dye}}]]。
+** 引入了动画{{tr|dye}}和特殊可制作{{tr|dyes}}。
+** {{tr|Dyes}}现在也会对粒子效果（比如从[[{{tr|Rocket Boots}}]]出来的那些）进行着色了}}
+{{history|Desktop 1.2.3|{{tr|Dyes}}现在可以堆叠了。它们也能用于[[{{tr|accessories}}]]了。引入了[[{{tr|Team Dye}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}
+** 之前用于制作的称为{{tr|dyes}}的物品改名为{{tr|thread}}。}}
+{{history|Switch 1.4.0.5.5|修正了大多数{{tr|dyes}}会导致其所装备的{{tr|the accessories, armor}}等变得不可见的问题。}}
+
+== 参考 ==
+{{reflist|refs=<ref name="Dye Trader">在[[{{tr|Moon phase}}|{{tr|full moon}}]]期间也可以从[[{{tr|Dye Trader}}]]处获得（{{iteminfo|Shadow Dye|buy}}）</ref>}}
+
+{{Master Template Equipables
+| show-dye = yes
+}}
+
+[[Category:{{tr|Dye items}}| ]]
+[[Category:染缸]]
+[[Category:可制作的物品]]
+[[Category:商贩物品]]
+[[Category:制作材料物品]]
+
+{{language info|en=Dyes}}

@@ -1,0 +1,530 @@
+<div class="ajaxHide">
+{{Main|数据 ID}}
+此页面列出了《[[{{tr|Terraria}}]]》中所有'''尘埃'''粒子的 {{tr|IDs}}。
+
+大多数尘埃粒子在游戏源代码中都有一个名称，用于在内部识别它们。对于没有内部名称的尘埃粒子，“来源”一列说明这些粒子是在哪里使用的。
+
+标记为不“安全”的尘埃在[[{{tr|Blood and Gore}}]]被禁用时会被替换为蓝云（[[{{tr|gore}}]] 11–13）。
+
+[[Category:数据 ID]]
+</div><!--
+
+
+-->{{source code ref|onlycate=y|v=1.4.4.2|field=Terraria.GameContent.ChildSafety.SafeDust}}<!--
+-->{{#dplvar:set<!--
+	-->|dustids:unsafe:5|y<!--
+	-->|dustids:unsafe:227|y<!--
+	-->|dustids:unsafe:273|y<!--
+-->}}<!--
+
+-->{{source code ref|onlycate=y|v=1.4.4.2|class=Terraria.ID.DustID.DustID}}<!--
+-->{{#dplvar:set<!--
+	-->|dustids:iname:0|Dirt<!--
+	-->|dustids:iname:1|Stone<!--
+	-->|dustids:iname:2|Grass<!--
+	-->|dustids:iname:3|GrassBlades<!--
+	-->|dustids:iname:4|TintableDust / t_Slime<!--
+	-->|dustids:iname:5|Blood / t_Flesh<!--
+	-->|dustids:iname:6|Torch<!--
+	-->|dustids:iname:8|Iron / t_SteampunkMetal<!--
+	-->|dustids:iname:9|Copper<!--
+	-->|dustids:iname:10|t_Golden / Gold<!--
+	-->|dustids:iname:11|Silver<!--
+	-->|dustids:iname:12|LifeCrystal<!--
+	-->|dustids:iname:16|Cloud<!--
+	-->|dustids:iname:17|CorruptPlants<!--
+	-->|dustids:iname:18|CorruptGibs<!--
+	-->|dustids:iname:26|Bone<!--
+	-->|dustids:iname:27|Shadowflame<!--
+	-->|dustids:iname:29|WaterCandle<!--
+	-->|dustids:iname:30|Web<!--
+	-->|dustids:iname:31|Smoke<!--
+	-->|dustids:iname:32|Sand<!--
+	-->|dustids:iname:35|Lava<!--
+	-->|dustids:iname:36|Ash<!--
+	-->|dustids:iname:40|JunglePlants / t_Cactus<!--
+	-->|dustids:iname:43|TintableDustLighted<!--
+	-->|dustids:iname:47|HallowedPlants<!--
+	-->|dustids:iname:59|BlueTorch<!--
+	-->|dustids:iname:60|RedTorch<!--
+	-->|dustids:iname:61|GreenTorch<!--
+	-->|dustids:iname:62|PurpleTorch<!--
+	-->|dustids:iname:63|WhiteTorch<!--
+	-->|dustids:iname:64|YellowTorch<!--
+	-->|dustids:iname:65|DemonTorch<!--
+	-->|dustids:iname:66|RainbowTorch<!--
+	-->|dustids:iname:68|BlueCrystalShard / t_Crystal<!--
+	-->|dustids:iname:69|PinkCrystalShard<!--
+	-->|dustids:iname:70|PurpleCrystalShard<!--
+	-->|dustids:iname:75|CursedTorch<!--
+	-->|dustids:iname:80|Ice / t_Frozen<!--
+	-->|dustids:iname:81|Tin<!--
+	-->|dustids:iname:82|Lead<!--
+	-->|dustids:iname:83|Tungsten<!--
+	-->|dustids:iname:84|Platinum<!--
+	-->|dustids:iname:93|GreenMoss<!--
+	-->|dustids:iname:94|BrownMoss<!--
+	-->|dustids:iname:95|RedMoss<!--
+	-->|dustids:iname:96|BlueMoss<!--
+	-->|dustids:iname:97|PurpleMoss<!--
+	-->|dustids:iname:107|Terra<!--
+	-->|dustids:iname:110|PureSpray<!--
+	-->|dustids:iname:111|HallowSpray<!--
+	-->|dustids:iname:112|CorruptSpray<!--
+	-->|dustids:iname:113|MushroomSpray<!--
+	-->|dustids:iname:114|CrimsonSpray<!--
+	-->|dustids:iname:115|Crimson<!--
+	-->|dustids:iname:125|CrimsonPlants<!--
+	-->|dustids:iname:127|Flare<!--
+	-->|dustids:iname:135|IceTorch<!--
+	-->|dustids:iname:139|Confetti<!--
+	-->|dustids:iname:143|TintablePaint<!--
+	-->|dustids:iname:152|Honey<!--
+	-->|dustids:iname:156|UltraBrightTorch<!--
+	-->|dustids:iname:158|OrangeTorch<!--
+	-->|dustids:iname:169|IchorTorch<!--
+	-->|dustids:iname:187|BlueFlare<!--
+	-->|dustids:iname:197|SnowflakeIce<!--
+	-->|dustids:iname:219|Fireworks<!--
+	-->|dustids:iname:226|Electric / t_Martian<!--
+	-->|dustids:iname:228|GoldFlame<!--
+	-->|dustids:iname:229|Vortex<!--
+	-->|dustids:iname:234|BoneTorch<!--
+	-->|dustids:iname:236|Marble / t_Marble<!--
+	-->|dustids:iname:237|Mothron<!--
+	-->|dustids:iname:238|MothronEgg<!--
+	-->|dustids:iname:239|Silk<!--
+	-->|dustids:iname:240|Granite / t_Granite<!--
+	-->|dustids:iname:241|MarblePot<!--
+	-->|dustids:iname:242|PinkTorch<!--
+	-->|dustids:iname:243|PinkSlime<!--
+	-->|dustids:iname:244|CopperCoin<!--
+	-->|dustids:iname:245|SilverCoin<!--
+	-->|dustids:iname:246|GoldCoin<!--
+	-->|dustids:iname:247|PlatinumCoin<!--
+	-->|dustids:iname:248|EnchantedNightcrawler<!--
+	-->|dustids:iname:249|Grubby<!--
+	-->|dustids:iname:250|Sluggy<!--
+	-->|dustids:iname:251|Buggy<!--
+	-->|dustids:iname:254|CrystalPulse<!--
+	-->|dustids:iname:255|CrystalPulse2<!--
+	-->|dustids:iname:256|ToxicBubble<!--
+	-->|dustids:iname:257|BubbleBlock<!--
+	-->|dustids:iname:258|LavaMoss<!--
+	-->|dustids:iname:259|SolarFlare<!--
+	-->|dustids:iname:260|SparksMech<!--
+	-->|dustids:iname:261|AncientLight<!--
+	-->|dustids:iname:262|AmberBolt<!--
+	-->|dustids:iname:263|PortalBolt<!--
+	-->|dustids:iname:264|PortalBoltTrail<!--
+	-->|dustids:iname:265|LunarOre<!--
+	-->|dustids:iname:266|SomethingRed<!--
+	-->|dustids:iname:267|RainbowMk2<!--
+	-->|dustids:iname:268|Sandstorm<!--
+	-->|dustids:iname:269|Sandnado<!--
+	-->|dustids:iname:270|FlameBurst<!--
+	-->|dustids:iname:271|HealingPlus<!--
+	-->|dustids:iname:272|WitherLightning<!--
+	-->|dustids:iname:273|GreenBlood<!--
+	-->|dustids:iname:274|ApprenticeStorm<!--
+	-->|dustids:iname:275|DungeonBlue<!--
+	-->|dustids:iname:276|DungeonGreen<!--
+	-->|dustids:iname:277|DungeonPink<!--
+	-->|dustids:iname:278|FireworksRGB<!--
+	-->|dustids:iname:279|SilverFlame<!--
+	-->|dustids:iname:280|BeachShell<!--
+	-->|dustids:iname:281|RedStarfish<!--
+	-->|dustids:iname:282|PinkStarfish<!--
+	-->|dustids:iname:283|YellowStarfish<!--
+	-->|dustids:iname:284|FoodPiece<!--
+	-->|dustids:iname:285|GolfPaticle<!--
+	-->|dustids:iname:286|OrangeStainedGlass<!--
+	-->|dustids:iname:287|DesertPot<!--
+	-->|dustids:iname:288|DesertWater2<!--
+	-->|dustids:iname:289|SeaOatsOasis<!--
+	-->|dustids:iname:290|SeaOatsBeach<!--
+	-->|dustids:iname:291|OasisCactus<!--
+	-->|dustids:iname:292|YellowStarDust<!--
+	-->|dustids:iname:293|DesertTorch<!--
+	-->|dustids:iname:294|CoralTorch<!--
+	-->|dustids:iname:295|CorruptTorch<!--
+	-->|dustids:iname:296|CrimsonTorch<!--
+	-->|dustids:iname:297|HallowedTorch<!--
+	-->|dustids:iname:298|JungleTorch<!--
+	-->|dustids:iname:299|KryptonMoss<!--
+	-->|dustids:iname:300|XenonMoss<!--
+	-->|dustids:iname:301|ArgonMoss<!--
+	-->|dustids:iname:302|Terragrim<!--
+	-->|dustids:iname:303|SteampunkSteam<!--
+	-->|dustids:iname:304|Firefly<!--
+	-->|dustids:iname:305|VioletMoss<!--
+	-->|dustids:iname:306|SparkForLightDisc<!--
+	-->|dustids:iname:307|MushroomTorch<!--
+	-->|dustids:iname:308|ShimmerSplash<!--
+	-->|dustids:iname:309|ShimmerSpark<!--
+	-->|dustids:iname:310|ShimmerTorch<!--
+	-->|dustids:iname:311|SandSpray<!--
+	-->|dustids:iname:312|SnowSpray<!--
+	-->|dustids:iname:313|DirtSpray<!--
+	-->|dustids:iname:314|LunarRust<!--
+	-->|dustids:iname:315|DarkCelestial<!--
+	-->|dustids:iname:316|Astra<!--
+	-->|dustids:iname:317|CosmicEmber<!--
+	-->|dustids:iname:318|Cryocore<!--
+	-->|dustids:iname:319|Mercury<!--
+	-->|dustids:iname:320|StarRoyale<!--
+	-->|dustids:iname:321|Heavenforge<!--
+	-->|dustids:iname:322|Poop<!--
+	-->|dustids:iname:323|MoonBoulder<!--
+	-->|dustids:iname:324|Count<!--
+	-->|dustids:iname:214|t_BorealWood<!--
+	-->|dustids:iname:78|t_LivingWood / t_PearlWood<!--
+	-->|dustids:iname:147|t_Honey<!--
+	-->|dustids:iname:23|t_Meteor<!--
+	-->|dustids:iname:148|t_Lihzahrd<!--
+	-->|dustids:iname:86|GemAmethyst<!--
+	-->|dustids:iname:87|GemTopaz<!--
+	-->|dustids:iname:88|GemSapphire<!--
+	-->|dustids:iname:89|GemEmerald<!--
+	-->|dustids:iname:90|GemRuby<!--
+	-->|dustids:iname:91|GemDiamond<!--
+	-->|dustids:iname:138|GemAmber<!--
+-->}}<!--
+
+-->
+{| class="terraria align-center lined sortable"
+! ID !! 图像 !! 内部名称 !! 来源  !! 安全
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Wood, Jungle Thorns}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Life Crystal}}
+{{/row|Glass, Cool Whip}}
+{{/row|Corruption}}
+{{/row|Fallen Star Trail, Magic Dust, Trident}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Sunflower, Gold Coin Projectile}}
+{{/row|Purification Powder}}
+{{/row|Vile Powder}}
+{{/row|Normal Pots, Clay Pots}}
+{{/row}}
+{{/row|Corrupt Thorns}}
+{{/row|Hellstone, Meteor Head}}
+{{/row}}
+{{/row}}
+{{/row|Clay}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Water}}
+{{/row|Breath Bubble}}
+{{/row}}
+{{/row|Ash, Crimsand}}
+{{/row|Obsidian, Corruption}}
+{{/row|Mud}}
+{{/row|Snapthorn}}
+{{/row}}
+{{/row|{{tr|Glowing Mushroom}}排放}}
+{{/row|Shroomite}}
+{{/row}}
+{{/row|{{tr|Jungle Spore}}排放}}
+{{/row|{{tr|Mana}}回复}}
+{{/row|Poisoned Debuff}}
+{{/row}}
+{{/row|Cobalt, Ice Biome Pots}}
+{{/row|Mythril}}
+<!-- ID 50 -->
+{{/row|Adamantite, Wire}}
+{{/row|Snow, Pearlsand}}
+{{/row|{{tr|Unholy Water}}飞溅}}
+{{/row|Silt}}
+{{/row|Wraith, Possessed Armor, Angry Tumbler}}
+{{/row|Shiny Stone, Betsy's Wrath, Sleepy Octopod}}
+{{/row|Slimy Saddle, Hardy Saddle}}
+{{/row|Fallen Star}}
+{{/row|Fallen Star}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Ice Weapons, Ice Enemies}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Nebula Blaze, Hallowed Enemies}}
+{{/row|Nebula Blaze}}
+{{/row|True Excalibur, Nebula Blaze}}
+{{/row}}
+{{/row}}
+{{/row|Snowflakes, Ice Enemies}}
+{{/row|Ebonwood}}
+{{/row}}
+{{/row|{{tr|Pearlwood}}（浅色）}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Jungle Pots}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Ice Weapons}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Corruption Water}}
+{{/row|Jungle Water}}
+<!-- ID 100 -->
+{{/row|Hallow Water}}
+{{/row|Ice Water}}
+{{/row|Desert Water}}
+{{/row|Cavern Water}}
+{{/row|Cavern Water}}
+{{/row|Blood Moon Water}}
+{{/row|Rune Wizard}}
+{{/row|Terra Blade, True Night's Edge}}
+{{/row|Snow Cloud, Storm Cloud}}
+{{/row|Asphalt, Anti-Portal Block}}
+{{/row|Green Solution}}
+{{/row|Blue Solution}}
+{{/row|Purple Solution}}
+{{/row|Dark Blue Solution}}
+{{/row|Red Solution, Crimson Rod}}
+{{/row|Crimtane Weapons}}
+{{/row|Skyware}}
+{{/row|Crimson}}
+{{/row|Purple Ice, Arcane Rune Wall}}
+{{/row|Pink Ice}}
+{{/row|Red Ice}}
+{{/row|Shadewood (Tree)}}
+{{/row|Boreal Wood (Tree)}}
+{{/row|Crimson Water}}
+{{/row|Sandstorm in a Bottle}}
+{{/row}}
+{{/row|Shadewood}}
+{{/row|Flare Trail}}
+{{/row|Chlorophyte}}
+{{/row|Rope}}
+{{/row|Red Rocket}}
+{{/row|Green Rocket}}
+{{/row|Blue Rocket}}
+{{/row|Yellow Rocket}}
+{{/row|Yellow Rocket, Xeno Staff}}
+{{/row}}
+{{/row|Crimslime}}
+{{/row|Icy Merman}}
+{{/row}}
+{{/row}}
+{{/row|Confetti (Green)}}
+{{/row|Confetti (Pink)}}
+{{/row|Confetti (Yellow)}}
+{{/row|{{tr|Paint}}着色}}
+{{/row|Palladium}}
+{{/row|Orichalcum}}
+{{/row|Titanium}}
+{{/row}}
+{{/row}}
+{{/row|Slush}}
+<!-- ID 150 -->
+{{/row|Bees}}
+{{/row|{{tr|Squid}}命中}}
+{{/row}}
+{{/row|Honey Block}}
+{{/row|Nimbus Rod}}
+{{/row|Lava Walls, Crimsandstone Wall, Hardened Crimsand Wall}}
+{{/row}}
+{{/row|Leaf Crystal, {{tr|Chlorophyte Claymore}}球体}}
+{{/row}}
+{{/row|Teleporter}}
+{{/row|Magnet Sphere, Xeno Staff}}
+{{/row|Vortex Alien Queen}}
+{{/row|Heat Ray}}
+{{/row|Poison Staff, Dryad's Blessing}}
+{{/row|Rod Of Discord}}
+{{/row|Shroomerang, {{tr|Mushroom Enemy}}命中}}
+{{/row|Plantera (Pink)}}
+{{/row|Plantera (Green)}}
+{{/row|{{tr|Plantera Bulb}}排放}}
+{{/row}}
+{{/row|Golden Shower}}
+{{/row|Venom Debuff}}
+{{/row|Dungeon Weapons}}
+{{/row|Shadowbeam Staff}}
+{{/row|Dungeon Inferno Enemies}}
+{{/row|Spectre Dust}}
+{{/row|Party Bubble (Blue), Blessed Apple}}
+{{/row|Party Bubble (Pink), Blessed Apple}}
+{{/row|Party Bubble (Yellow)}}
+{{/row|Party Bubble (Purple), Blessed Apple}}
+{{/row|Sky Fracture, Dungeon Spirit}}
+{{/row|Giant Cursed Skull}}
+{{/row|机械矿车尾迹, Vampire Knife}}
+{{/row|Vampire Heal (Vampire Knives)}}
+{{/row|Scourge of the Corruptor}}
+{{/row|Frost Hydra}}
+{{/row|Red's Wings}}
+{{/row|Blue Flare Trail}}
+{{/row|Fart Dust, Stinky debuff}}
+{{/row|Pumpkin}}
+{{/row|Hay}}
+{{/row|Spooky Wood}}
+{{/row|Poltergeist, Halloween Slime}}
+{{/row|Slimed Bunny}}
+{{/row|Scarecrow}}
+{{/row|Bat Scepter}}
+{{/row|Pine Tree, Razorpine}}
+{{/row|North Pole}}
+{{/row|Ladybug}}
+{{/row|Butterfly}}
+<!-- ID 200 -->
+{{/row|Worm}}
+{{/row|Snail}}
+{{/row|Glowing Snail}}
+{{/row|Scorpion}}
+{{/row|{{tr|Spelunker}}光晕}}
+{{/row|Venom Staff}}
+{{/row|Pulse Bow}}
+{{/row|Dynasty Wood}}
+{{/row|Red Dynasty Shingle}}
+{{/row|Blue Dynasty Shingle}}
+{{/row|Dynasty Wood Walls}}
+{{/row|Fart Kart, Terra Fart Kart}}
+{{/row|Sergeant United Shield}}
+{{/row|Minecart Sparks, Minecart Tracks}}
+{{/row}}
+{{/row|Palm Wood}}
+{{/row}}
+{{/row|Duke Fishron}}
+{{/row}}
+{{/row}}
+{{/row|Fireworks Fountain (Green)}}
+{{/row|Fireworks Fountain (Blue)}}
+{{/row|Fireworks Fountain (Yellow)}}
+{{/row|Fireworks Fountain (Pink)}}
+{{/row|Shiverthorn}}
+{{/row|Coralstone}}
+{{/row}}
+{{/row|Martian Blood}}
+{{/row}}
+{{/row}}
+{{/row|Drill Containment Unit}}
+{{/row|Vicious Powder}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row|Life Drain}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+<!-- ID 250 -->
+{{/row}}
+{{/row}}
+{{/row|Frost Daggerfish}}
+{{/row|Sailfish Boots (and upgrades), Tsunami in a Bottle (and upgrades)}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+<!-- ID 300 -->
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+{{/row}}
+<!-- total 324 -->
+|}
+
+{{language info|en=Dust IDs}}

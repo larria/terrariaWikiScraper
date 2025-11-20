@@ -1,0 +1,237 @@
+{{exclusive|1.4.1}}
+{{npc infobox
+| type = NPC
+| auto = 663
+| idprojectile = 950
+| imageother = Map Icon Princess.png
+| imageothercaption = {{tr|Map Icon}}
+| environment = Valid house
+| Resonance Scepter|1|12.5%
+}}
+{{about|{{tr|the town NPC}}}}
+
+'''{{tr|Princess}}'''是个商贩 [[{{tr|NPC}}]]，一旦满足以下条件就会生成：{{source code ref|v=1.4.1.1|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+* 有一间空[[{{tr|house}}]]。
+* 所有其他{{tr|town NPCs}}（不包括[[{{tr|Santa Claus}}]]或[[{{tr|town pets}}]]）都已在场，这意味着她只能在打败[[{{tr|Plantera}}]]后才能生成，因为那时候[[{{tr|Cyborg}}|{{tr|Cyborg NPC}}]] 才会入住。
+
+这些要求仅适用于初始生成。如果{{tr|Princess}}被杀死，她过一段时间会自动重生。
+
+{{tr|The Princess}}会用[[{{tr|Resonance Scepter}}]]攻击附近的{{tr|enemies}}来自卫。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Royal Tiara}}
+|{{shop row|Royal Blouse}}
+|{{shop row|Royal Dress}}
+|{{shop row|Royal Scepter}}
+|{{shop row|Glass Slipper}}
+|{{shop row|Prince Uniform}}
+|{{shop row|Prince Pants}}
+|{{shop row|Prince Cape}}
+|{{shop row|Potted Crystal Fern}}
+|{{shop row|Potted Crystal Spiral}}
+|{{shop row|Potted Crystal Teardrop}}
+|{{shop row|Potted Crystal Tree}}
+|{{shop row|Princess 64}}
+|{{shop row|Painting of a Lass}}
+|{{shop row|Dark Side of the Hallow}}
+|{{shop row|Princess Style}}
+|{{shop row|Suspiciously Sparkly}}
+|{{shop row|Terra Blade Chronicles}}
+|{{shop row|Bernie's Button}}
+|{{shop row|Royal Romance|当[[{{tr|King Slime}}]]和[[{{tr|Queen Slime}}]]都被击败后。}}
+|{{shop row|Music Box (Journey's End)|[[{{tr|Moon Lord}}]]已被打败且{{tr|world}}是在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Slime Staff|在 {{eil|Celebrationmk10}} {{tr|worlds}}中。}}
+|{{shop row|Heart Lantern|在 {{eil|Celebrationmk10}} {{tr|worlds}}中。}}
+|{{shop row|Flask of Party|在 {{eil|Celebrationmk10}} {{tr|worlds}}中。}}
+|{{shop row|Sandstorm in a Bottle|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，在[[{{tr|Desert}}]]内与其交谈。}}
+|{{shop row|Terragrim|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Pirate Staff|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，[[{{tr|Hardmode}}]]中，[[{{tr|Pirate Invasion}}]]已被打败，且在以下[[{{tr|moon phase}}]]期间：{{moons|1|2}}。}}
+|{{shop row|Discount Card|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，[[{{tr|Hardmode}}]]中，[[{{tr|Pirate Invasion}}]]已被打败，且在以下[[{{tr|moon phase}}]]期间：{{moons|3|4}}。}}
+|{{shop row|Lucky Coin|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，[[{{tr|Hardmode}}]]中，[[{{tr|Pirate Invasion}}]]已被打败，且在以下[[{{tr|moon phase}}]]期间：{{moons|5|6}}。}}
+|{{shop row|Coin Gun|在 {{eil|Celebrationmk10}} {{tr|worlds}}中，[[{{tr|Hardmode}}]]中，[[{{tr|Pirate Invasion}}]]已被打败，且在以下[[{{tr|moon phase}}]]期间：{{moons|7|8}}。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== {{tr|Living preferences}} ==
+{{tr|The Princess}}的独特之处在于她没有任何{{tr|biome}}或邻居偏好。她喜爱的是附近住着最多三个 [[{{tr|NPCs}}]]，并且所有 {{tr|NPC}} 在附近时都喜欢她。
+
+她也讨厌孤独，如果在 25 个范围内没有至少 2 个其他 {{tr|NPC}} 或者 25 到 120 格范围内没有另外 2 个 {{tr|NPC}}，那么她的不快乐程度就会达到最高值 150%。{{source code ref|v=1.4.1.2|method=Terraria.GameContent.ShopHelper.ProcessMood/Terraria.GameContent.ShopHelper.GetNearbyResidentNPCs}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Princess (Shimmered).png]] [[File:Map Icon Princess (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Princess}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Princess}}会变形为她的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将她再次浸没在{{tr|Shimmer}}中的方式来将她变回经典外观。
+{{-}}
+== 备注 ==
+* {{tr|The Princess}}是 [[Celebrationmk10]] 和 [[Get fixed boi]] {{tr|worlds}}中的起始 {{tr|NPCs}} 之一，且必定名为 Yorai。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|PrincessChatter.Chatter_1}}”
+* “{{gameText|PrincessChatter.Chatter_2}}”
+* “{{gameText|PrincessChatter.Chatter_5}}”
+* “{{gameText|PrincessChatter.Chatter_6}}”
+* “{{gameText|PrincessChatter.Chatter_11}}”
+* “{{gameText|PrincessChatter.Chatter_13}}”
+* “{{gameText|PrincessChatter.Chatter_14}}”
+* “{{gameText|PrincessChatter.Chatter_15}}”
+
+'''在[[{{tr|night}}]]：'''
+* “{{gameText|PrincessChatter.Chatter_17}}”
+
+'''[[{{tr|Pirate}}]]存在时：'''
+* “{{gameText|PrincessChatter.Chatter_8|x_Pirate=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''打败[[{{tr|Golem}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_3}}”
+
+'''打败[[{{tr|Duke Fishron}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_12}}”
+
+'''打败[[{{tr|Frost Legion}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_7}}”
+
+'''打败[[{{tr|Pumpking}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_10}}”
+
+'''打败[[{{tr|Ice Queen}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_9}}”
+
+'''打败[[{{tr|Martian Madness}}]]后：'''
+* “{{gameText|PrincessChatter.Chatter_4}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|PrincessChatter.Chatter_16}}”
+
+'''[[{{tr|Party}}]]期间：'''
+* “{{gameText|PrincessSpecialText.Party}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|PrincessSpecialText.Rain1}}”
+* “{{gameText|PrincessSpecialText.Rain2}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|PrincessSpecialText.Storm1}}”
+* “{{gameText|PrincessSpecialText.Storm2}}”
+
+'''[[{{tr|Windy Day}}]]期间：'''
+* “{{gameText|PrincessSpecialText.Windy1}}”
+* “{{gameText|PrincessSpecialText.Windy2}}”
+
+'''在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|PrincessSpecialText.Graveyard1}}”
+* “{{gameText|PrincessSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Princess.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Princess.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Princess.FarFromHome}}”
+
+'''孤独时：'''
+* “{{gameText|TownNPCMood_Princess.HateLonely}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Princess.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Princess.HateCrowded}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Princess.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''由于{{tr|The Princess}}特殊的{{tr|Living preferences}}，其{{tr|Happiness}}话语会评价至多3个邻近她的{{tr|NPCs}}:'''
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Merchant|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Nurse|x_NPCName=&lt;{{tr|Nurse}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_ArmsDealer|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Dryad|x_NPCName=&lt;{{tr|Dryad}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Guide|x_NPCName=&lt;{{tr|Guide}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Demolitionist|x_NPCName=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Clothier|x_NPCName=&lt;{{tr|Clothier}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_GoblinTinkerer|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Wizard|x_NPCName=&lt;{{tr|Wizard}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Mechanic|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_SantaClaus|x_NPCName={{tr|Santa Claus}}}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Truffle|x_NPCName=&lt;{{tr|Truffle}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Steampunker|x_NPCName=&lt;{{tr|Steampunker}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_DyeTrader|x_NPCName=&lt;{{tr|Dye Trader}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_PartyGirl|x_NPCName=&lt;{{tr|Party Girl}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Cyborg|x_NPCName=&lt;{{tr|Cyborg}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Painter|x_NPCName=&lt;{{tr|Painter}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_WitchDoctor|x_NPCName=&lt;{{tr|Witch Doctor}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Pirate|x_NPCName=&lt;{{tr|Pirate}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Stylist|x_NPCName=&lt;{{tr|Stylist}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Angler|x_NPCName=&lt;{{tr|Angler}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_TaxCollector|x_NPCName=&lt;{{tr|Tax Collector}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_DD2Bartender|x_NPCName=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_Golfer|x_NPCName=&lt;{{tr|Golfer}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_BestiaryGirl|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_TownCat|x_NPCName=&lt;{{tr|Cat}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_TownDog|x_NPCName=&lt;{{tr|Dog}}的名字&gt;}}”
+* “{{gameText|TownNPCMood_Princess.LoveNPC_TownBunny|x_NPCName=&lt;{{tr|Bunny}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+*{{tr|Princess}}的名字其中有五个是日文，各自有着不同的意思：
+** Ai 翻译过来是“爱”（愛）。
+** Hikari 翻译过来是“光”（光）。
+** Hime 翻译过来是“公主”（姫）。 
+**Momo 翻译过来是“桃子”（桃）。根据这个翻译，“Princess Momo”意思是“桃子公主”。
+** Yuuki 翻译过来是“勇气”或“勇敢”（勇気）。
+* “{{gameText|PrincessChatter.Chatter_5}}”参考了爱莉安娜·格兰德（Ariana Grande）的《{{wikipedia|7 Rings|七枚钻戒（7 Rings）}}）中的一句相似歌词。
+* {{tr|Princess}}的一些名字指向了流行文化中的公主们：
+**{{wikipedia|Alice (Alice's Adventures in Wonderland)|Alice}} 出自于 1865 的小说《''{{wikipedia|Alice's Adventures in Wonderland|Alice's Adventures in Wonderland（爱丽丝漫游仙境）}}''》
+** {{wikipedia|Ariel (The Little Mermaid)|Ariel}} 出自于 1989 年的音乐奇幻动画电影《''{{wikipedia|The Little Mermaid (1989 film)|The Little Mermaid（小美人鱼）}}''》
+** {{wikipedia|Belle (Beauty and the Beast)|Belle}} 出自于 1991 年的美国动画音乐浪漫奇幻电影《''{{wikipedia|Beauty and the Beast (1991 film)|Beauty and the Beast（美女与野兽）}}''》
+** Charlotte 出自于日本{{wikipedia|Seinen manga|青年漫画}}系列《{{wikipedia|Berserk (manga)|剑风传奇}}》。
+** Emilia 出自日本轻小说《{{wikipedia|Re:Zero − Starting Life in Another World|从零开始的异世界生活}}》系列。
+** {{wikipedia|Cure Flora|(Cure) Flora}} 出自 2015 年的日本{{wikipedia|magical girl|魔法少女}}动画连续剧《{{wikipedia|Go! Princess PreCure|GO! 光之美少女公主}}》
+**{{wikipedia|Princess Peach|Momo}}（桃子，见上文）和 Rosetta（{{wikipedia|Rosalina (Mario)|Rosalina（罗莎塔）}}的日文名）出自日本的《''{{wikipedia|Mario （franchise）|Mario（马力欧）}}''》系列。
+*** Rosetta 也可能参考了 2008 年的美国计算机动画电影《''{{wikipedia|Tinker Bell (film)|Tinker Bell（奇妙仙子）}}''》
+** Sofia 出自美国 CGI 动画片连续剧《''{{wikipedia|Sofia the First|Sofia the First（小公主苏菲亚）}}''》
+* {{tr|The Princess}}和[[{{tr|Dryad}}]]都有 Faye 这个名字。
+* {{tr|the Princess}}可能的名字之一是 Yorai，以''[[{{tr|Terraria}}]]''的首席开发成员之一 [[Yoraiz0r]] 命名。
+* 游戏暗示{{tr|The Princess}}是未成年人。与{{tr|the Angler}}类似，她的外观要比大多数其他 {{tr|NPCs}} 矮，并且她和{{tr|the Angler}}使用相同的{{tr|death message}}。
+* {{tr|The Princess}}对自己也有一句快乐度话语：“{{gameText|TownNPCMood_Princess.LoveNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”。这句话在游戏中正常是无法看到的，因为它要求两个同种 {{tr|npc}} 同时存活。
+* 她是在[[{{tr|Moon Lord}}]]后会出售新物品的一小群 {{tr|NPC}} 的一员，其他的是[[{{tr|Traveling Merchant}}]]、[[{{tr|Zoologist}}]]、[[{{tr|Steampunker}}]]和[[{{tr|Cyborg}}]]。{{tr|The Princess}}的物品是一个[[{{tr|Music Boxes}}|{{tr|Music Box}}]]（要求玩家在激活[[{{tr|Hardmode}}]]后打败{{tr|Moon Lord}}）。
+* {{tr|Princess}}的{{tr|Shimmer}}形态，可能指向其[[{{tr|night}}]]话语：“{{gameText|PrincessChatter.Chatter_17}}”
+* 其话语：“{{gameText|PrincessChatter.Chatter_15}}”可能指的是{{tr|Princess}}需要所有其他{{tr|town NPCs}}都已在场才能到达这件事。
+[[File:Credits cutscene WitchDoctorGoingToHisPeople.gif|thumb]]
+* 在[[{{tr|credits}}]]的过场动画中可以看到{{tr|Princess}}和{{tr|Witch Doctor}}与两个{{tr|Lihzahrds}}成为朋友。但事实上{{tr|Princess}}与{{tr|Lihzahrds}}的交互在{{tr|player}}游戏通关之前就在进行了。
+** 当{{tr|Princess}}成为{{tr|Witch Doctor}}的邻居时，{{tr|Witch Doctor}}会评价到："{{gameText|TownNPCMood_WitchDoctor.LikeNPC_Princess|x_NPCName={{tr|the Princess}}[{{tr|Princess}}的名字]}}"
+** 而每当{{tr|player}}击败一位{{tr|boss}}，{{tr|Princess}}都会去进行交涉尝试建立和平关系的对话。在击败{{tr|Golem}}后便与{{tr|Lihzahrds}}有所接触：“{{gameText|PrincessChatter.Chatter_3}}”
+** {{tr|Princess}}与{{tr|Lihzahrds}}产生交互的情节可能是在致敬{{tr|Lihzahrds}}的参考原型——{{wikipedia|Doctor Who|神秘博士（Doctor Who）}}中的 {{wikipedia|Silurian (Doctor Who)|Silurians}}篇章。剧情中博士一行人尝试通过与Silurians建立和平关系解决纷争。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在出售 4 幅新[[{{tr|paintings}}]]。}}
+{{history|Desktop 1.4.3|现在出售[[{{tr|Bernie's Button}}]]。}}
+{{history|Desktop 1.4.2.3|
+** 添加了“Yorai”作为可能的名字。
+** 假如通过某种方式在{{tr|pre-Hardmode}}之前就得到她，那么在{{tr|pre-Hardmode}}不再会掉落{{tr|Resonance Scepter}}。}}
+{{history|Desktop 1.4.1.2|修正了关于[[{{tr|Golfer}}]]的快乐度话语中的一处错别字。}}
+{{history|Desktop 1.4.1.1|
+** 修正了一个导致{{tr|Princess}}不能正确检测附近 {{tr|NPC}} 的问题，这导致即使她被邻居簇拥着也依然会觉得孤独。
+** 修正了{{tr|Princess}}关于[[{{tr|Santa Claus}}]]的一条有问题的对话。}}
+{{history|Desktop 1.4.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.1.1 至 1.4.3 的改动。}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.1.1 至 1.4.3 的改动。}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.1.1 至 1.4.3 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Princess}}

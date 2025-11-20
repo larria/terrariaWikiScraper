@@ -1,0 +1,20 @@
+<includeonly><!-- 
+
+-->{{#vardefine:ename|{{{1|}}} Dye}}<!-- english name
+-->{{#vardefine:lname|{{tr|{{#var:ename}}}}}}<!-- local language name
+
+--><span style="white-space:nowrap; display: inline-block;text-align:center;padding: 0 4px;vertical-align:middle;" class="dye-unit"><!-- 
+	--><span style="display: inline-block; vertical-align:middle;"><!-- 
+		-->[[File:{{#var:ename}}.png|{{#var:lname}}|link=#{{#var:lname}}]]<!-- 
+		--><br/><span style="font-size: 10px">[[#{{#var:lname}}|{{#var:lname}}]]</span><!--
+	--></span><!-- 
+	-->{{#if:{{{2|}}}|&nbsp;×&nbsp;{{{2|}}}}}<!--
+--></span><!-- 
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Dyes/dye3}}
+</noinclude>

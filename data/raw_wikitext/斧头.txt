@@ -1,0 +1,58 @@
+{{for|其他可以砍树的{{tr|tools}}|{{tr|chainsaws}}|{{tr|hamaxes}}}}
+
+'''{{tr|Axes}}'''是基础[[{{tr|tool}}]]，玩家可用它来砍伐[[{{tr|Tree}}]]和[[{{tr|Cacti}}]]，包括它们的各种变种。它们也可以作为[[{{tr|weapon}}]]使用。选择任何{{tr|Classic mode difficulty settings}}的新玩家（[[{{tr|Softcore mode}}|{{tr|Classic}}]]、[[{{tr|Mediumcore}}]]、[[{{tr|Hardcore}}]]）生成时总是带着[[{{tr|Copper Axe}}]]，而{{eil|Journey Mode}}{{tr|players}}则会以[[{{tr|Iron Axe}}]]开局。
+
+树有 500% HP，而仙人掌有 170% HP。斧头的劈砍速度只受速度[[{{tr|modifier}}]]影响，不受其他任何因素影响。
+
+对于[[{{tr|pre-Hardmode}}]]的{{tr|axes}}最佳[[{{tr|modifier}}]]是'''{{tr|Light}}'''而对于[[{{tr|Hardmode}}]]的{{tr|axes}}是'''{{tr|Legendary}}'''。例外是[[{{tr|Meteor Hamaxe}}]]，它在{{tr|Legendary}}{{tr|modifier}}和{{tr|Light}}{{tr|modifier}}下是一样的速度；以及[[{{tr|Shroomite Digging Claw}}]]，它重铸为{{tr|Light}}时能更快砍倒树。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! {{tr|Axe power}}
+! {{tr|Hammer Power}}
+! {{tr|Pickaxe Power}}
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Bonus}}
+! data-sort-type=number | {{tr|Use time}}
+! [[{{tr|Mining speed}}]]
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, axe, hammer, pick, bonus, usetime, toolspeed, knockback, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|q?orderBy=FLOOR(axe) ASC, FLOOR(hammer) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== {{tr|Achievement}} ==
+{{achievement|name=Timber!!}}
+
+== 小贴士 ==
+* {{tr|Axes}}可以通过[[{{tr|reforge}}]]来加快砍树速度，而[[{{tr|Chainsaw}}]]不行。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced Axe of Regrowth}}。}}
+{{history|Desktop 1.4.3|{{tr|Introduced Lucy the Axe}}。}}
+{{history|Desktop 1.3.0.1|加入了四个新的{{tr|hamaxes}}，需要用[[{{tr|Luminite Bar}}]]和[[{{tr|Celestial Fragment}}]]来制作。}}
+{{history|Desktop 1.2.3|{{tr|Pickaxe Axe}}和{{tr|Drax}}现在制作时需要来自三个[[{{tr|Mechanical boss}}]] 的魂各 1 个。}}
+{{history|Desktop 1.2|{{tr|Axes}}不再能摧毁放置的木材块，现在由[[{{tr|pickaxes}}]]来干这事。还加入了{{tr|Waraxes}}，作为面对{{tr|hardmode ores}}时除{{tr|chainsaws}}外的另一个选择。}}
+{{history|Desktop 1.0.6|{{tr|Axes}}现在能更快地摧毁{{tr|blocks}}。}}
+
+{{Master Template Tools
+| show-tool = yes
+}}
+
+[[Category:工具物品|*]]
+[[Category:斧头| ]]
+
+{{language info|en=Axes}}

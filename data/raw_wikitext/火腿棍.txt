@@ -1,0 +1,59 @@
+{{exclusive|1.4.3}}
+{{item infobox
+| auto = 5096
+| buff = Hearty Meal / 7
+| buffchance = 100% {{note|paren=y|在杀死{{tr|enemy}}时}}
+| listcat = broadswords
+| tags = drop / hardmode
+}}
+{{item/options|icons=n}}
+{| class="terraria" style="float:right; margin-left:1em"
+! {{tr|Buff}} !! {{tr|Base damage}}
+|-
+| {{note|无{{tr|food buff}}}} || {{iteminfo|Ham Bat|damage}}
+|-
+| {{buff|id=26}} || {{#expr:floor({{iteminfo|Ham Bat|damage}}*(1+0.05*1))}}
+|-
+| {{buff|id=206}} || {{#expr:floor({{iteminfo|Ham Bat|damage}}*(1+0.05*2))}}
+|-
+| {{buff|id=207}} || {{#expr:floor({{iteminfo|Ham Bat|damage}}*(1+0.05*3))}}
+|}
+{{item/options|reset}}
+{{drop infobox|style=clear:right}}
+[[File:Ham Bat (demo).gif|thumb|245px|玩家使用{{tr|Ham Bat}}攻击[[{{tr|Target Dummy}}]]，并使用了一个[[{{tr|Apple Pie}}]]以展示其能力。]]
+
+'''{{tr|Ham Bat}}'''是一把[[{{tr|Hardmode}}]]早期的[[{{tr|melee weapon}}]]，有 {{chance|1/25}} 的几率由[[{{tr|Pigron}}]]掉落。在[[{{tr|The Constant}}]]{{tr|world}}中，此几率增加至 {{chance|1/10}}。{{tr|Ham Bat}}的伤害在{{tr|food}}{{tr|buff}}存在时会略微提升；{{source code ref|v=1.4.4.9|method=Terraria.Player.ProcessHitAgainstNPC}}其效果见右表。
+
+使用{{tr|Ham Bat}}杀死{{tr|enemy}}会提供'''{{tr|Hearty Meal}}'''[[{{tr|buff}}]]，它会增加玩家的[[{{tr|health regeneration}}]]，增加量为每秒 3 点。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateLifeRegen}} {{buffduration|{{duration|7}}}} {{tr|Hearty Meal}}不会在杀死另一个{{tr|enemy}}后多次叠加，而只会重置其{{tr|duration}}。
+
+{{modifier|melee}}
+
+== 备注 ==
+* 玩家装备[[{{tr|Guide Voodoo Doll}}]]杀死[[{{tr|Guide}}]]，或是装备[[{{tr|Clothier Voodoo Doll}}]]杀死[[{{tr|Clothier}}]]时也会提供{{tr|The Hearty Meal buff}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.OnKillNPC}}
+
+== 花絮 ==
+* 其{{tr|tooltip}}引用了《{{iwlink|dts|Don't Starve: Hamlet|饥荒：猪镇}}》中，{{iwlink|dts|Wilba|薇尔芭}}对{{tr|Ham Bat}}的检查话语。
+* {{tr|Hearty Meal}}{{tr|buff}}的图标和[[{{tr|Life Drain}}]]一样。
+* 尽管它是一大块肉，但玩家不能吃它。
+
+== 另见 ==
+* {{dts link}}
+
+== 历史 ==
+{{history|Desktop 1.4.3.2|
+** 杀死{{tr|enemies}}现在会提供{{tr|Hearty Meal}}{{tr|buff}}，短暂增加{{tr|health regeneration}}。
+** {{tr|damage}}由 50 增加至 57。
+** {{tr|size}}增加 20%。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Ham Bat}}

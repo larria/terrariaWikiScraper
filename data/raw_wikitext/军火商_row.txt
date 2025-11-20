@@ -1,0 +1,14 @@
+<includeonly><!--
+
+-->{{#if:<!-- if
+	-->{{#ifeq:{{iteminfo|{{{name|}}}|useAmmo|raw=y}}|97|y}}<!-- item uses bullets as ammo, or
+	-->{{#ifeq:{{iteminfo|{{{name|}}}|ammo}}|97|y}}<!-- item is a bullet ammo
+-->|<!-- then
+	-->{{itemlist/item|{{item|{{{name|}}}|small=y|wrap=y}}}}<!--
+-->}}<!-- end
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Arms Dealer/row}}
+</noinclude>

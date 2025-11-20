@@ -1,0 +1,32 @@
+{{item infobox
+| type = Seeds
+| imageplaced = Pumpkin Plant.png
+| width = 1 | height = 1
+| auto = 1828
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = vendor / vendor:Dryad
+}}
+
+'''{{tr|Pumpkin Seeds}}'''是用于种植[[{{tr|Pumpkin}}]]的[[{{tr|Seeds|link=y}}|{{tr|Seeds}}]]。它们可以种在普通的绿[[{{tr|grass}}]]或[[{{tr|Hallowed grass}}]]上，并且最终会长成{{tr|Pumpkins}}。它们需要有 2 格宽 2 格高的空地才能生长，并且能在任何会长草的地方生长。
+
+{{tr|Pumpkin Seeds}}可从[[{{tr|Dryad}}]]处以每个 {{iteminfo|Pumpkin Seed|buy}} 的价格购买。
+
+== 备注 ==
+* {{tr|Pumpkin Seeds}}只能生长在世界的[[{{tr|Surface}}]]层上。
+* {{tr|Pumpkin Seeds}}不能种在{{eil|Planter Boxes}}上。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Stack limit}}由 99 提升至 999。}}
+{{history|Desktop 1.3.4.3|
+** 修正了[[{{tr|Cursor modes|link=y}}#{{tr|Smart Cursor}}|{{tr|Smart Cursor}}]]不会正确放置{{tr|Pumpkin Seeds}}的 {{tr|bug}}。
+** 修正了不先砍掉旧的那个就无法互相重叠放置的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.1.1|修正了它们不要钱的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+
+{{Pumpkin}}
+{{Master Template Consumables
+| show-seed = yes
+}}
+
+{{language info|en=Pumpkin Seed}}

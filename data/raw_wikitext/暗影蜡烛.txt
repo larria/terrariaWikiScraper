@@ -1,0 +1,35 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5322
+| type = Furniture / Light source
+| width = 1 | height = 1
+| buff = Shadow Candle / 在其附近时无限时间
+}}
+
+'''{{tr|Shadow Candle}}'''是一种[[{{tr|furniture}}]]{{tr|item}}，可以放置或手持来将区域内[[{{tr|town}}]]的降低{{tr|enemy}}生成的好处无效化。放置时，它会给附近的玩家'''{{tr|Shadow Candle}}'''[[{{tr|debuff}}]]。此{{tr|debuff}}会被施加给位于以{{tr|Shadow Candle}}为中心 {{buff area}}内的所有玩家。手持{{tr|Shadow Candle}}并不会导致{{tr|debuff icon}}显示出来，但依然会产生完全相同的效果。要“手持”{{tr|candle}}，它必须在玩家的[[{{tr|hotbar}}]]内并被选中；仅仅将其放置在{{tr|inventory}}中时不会有效果。
+
+对{{tr|Shadow Candle}}按下 {{key|open}} 会将其熄灭。熄灭的{{tr|Shadow Candles}}不会激活{{tr|Shadow Candle debuff}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Shadow Candle|expectedrows=2}}
+
+== 备注 ==
+* {{tr|Shadow Candles}}还会使得范围内的{{tr|the Town Day}}/{{tr|Town Night}}[[{{tr|music}}]]停止播放。
+* 当{{tr|Shadow Candle}}存在时，站在[[{{tr|safe wall}}]]前不会阻止[[{{tr|Wyvern}}]]、[[{{tr|Chaos Elemental}}]]以及其他生成条件相同的{{tr|enemies}}生成。
+* 由于[[{{tr|Skeleton Merchant}}]]在降低{{tr|enemy spawns}}方面不被算作[[{{tr|Town NPC}}]]，因此{{tr|candle}}对于他降低刷怪场生成率这一点没有效果。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+
+{{language info|en=Shadow Candle}}

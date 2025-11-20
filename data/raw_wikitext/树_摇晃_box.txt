@@ -1,0 +1,28 @@
+<includeonly><!--
+
+-->{{options/snap|item|treeshakingbox}}<!--
+-->{{options/set|item|small=y|scale=1|icons=n}}<!--
+-->{{dotlist/options|dot=no|space=l}}<!--
+
+-->{{infocard/start|class=compact|style=
+	--tree-width: {{{treewidth|}}};
+	--tree-height: {{{treeheight|}}};
+	--drops-width: {{{dropswidth|}}};
+	flex-basis: calc(var(--tree-width) + var(--layout-gap) + {{{columns|1}}}*(var(--drops-width) + 1em) + 16px);
+	margin-top: 0;
+}}<!--
+	--><div style="position:absolute; z-index:1">{{{tree}}}</div><!--
+	-->{{infocard/mainheading|name={{{heading}}}|style=padding-left:calc(var(--tree-width) + var(--infocard-padding) + var(--layout-gap));}}<!--
+	--><div style="float:left; width:var(--tree-width); height:calc(var(--tree-height) - (2*var(--infocard-padding) + 1em)); margin-right:var(--layout-gap);"></div><!--
+	-->{{itemlist/start|width=var(--drops-width)}}<!--
+		-->{{{drops}}}<!--
+	-->{{itemlist/end}}<!--
+-->{{infocard/end}}<!--
+
+-->{{options/restore|item|treeshakingbox}}<!--
+-->{{dotlist/options|reset}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+{{language info|en=Trees/Shaking/box}}
+</noinclude>

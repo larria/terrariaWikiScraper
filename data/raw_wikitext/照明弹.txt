@@ -1,0 +1,96 @@
+{{item infobox
+| auto = 931
+| imagealt = [[File:Flare.png|link]] [[File:Blue Flare.png|link=]] [[File:Shimmer Flare.png|link=]]
+| name = Flares
+| rare =
+| sell =
+| id =
+| idprojectile =
+| cargo = no
+}}
+
+'''{{tr|Flares}}'''是一类[[{{tr|ammunition}}]]，仅供[[{{tr|Flare Gun}}]]使用。由{{tr|Flare Gun}}发射的{{tr|Flares}}按曲度很小的弧线运动，并且会附着在物块上（类似于[[{{tr|Sticky Glowstick}}]]），但是有更好的{{tr|velocity and range}}。它们能在水下使用，并且可以发射进水中或从水中发射出来。发射后，{{tr|Flares}}会发出微弱的有色闪光，持续 10 分钟。它们会附着在击中的方块上并且在水下也会工作。{{tr|Flares}}在发射后就不能被回收。 
+
+全部类型的{{tr|Flares}}（{{tr|the Cursed Flare}}除外）都会造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。有 {{chance|2/3}} 的几率此{{tr|debuff}}会持续 5 {{tr|seconds}}，{{chance|1/3}} 的几率持续 10 {{tr|seconds}}。
+
+== 类型 ==
+共有 {{eicons|1.4.4}} 6 / {{eicons|1.4.4|invert=y}} 2 种不同类型的{{tr|Flares}}。
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/projectile2cells/col:source/col:notes/buy/sell/rarity}}
+{| class="terraria sortable lined"
+|-
+! colspan=2 | {{tr|Flare}}
+! colspan=2 | {{tr|Projectile}}
+! style="min-width: 240px;" | {{tr|Source}}
+! style="min-width: 240px;" | {{tr|Notes}}
+! 买入价
+! 卖出价
+! {{tr|Rarity}}
+{{item infobox | auto = 931 | tags = vendor / vendor:Merchant
+| col:source =
+* 当玩家的{{tr|inventory}}中带有[[{{tr|Flare Gun}}]]时，由[[{{tr|Merchant}}]]出售。
+* 可在[[{{tr|Gold Chest}}]]中，以 25–50 个一堆的形式与{{tr|Flare Gun}}一起出现。
+| col:notes =
+* 发出红色光。
+}}
+{{item infobox | auto = 1614 | tags = vendor / vendor:Merchant
+| col:source =
+* 当玩家的{{tr|inventory}}中带有{{tr|Flare Gun}}时，由[[{{tr|Merchant}}]]出售。
+| col:notes =
+* 发出蓝色光。
+}}
+{{item infobox | auto = 5377 | tags = vendor / vendor:Skeleton Merchant
+| col:source =
+* 当玩家的{{tr|inventory}}中带有[[{{tr|Flare Gun}}]]时，由[[{{tr|Skeleton Merchant}}]]在夜间出售、在[[{{tr|Full Moon}}]]期间全天出售。
+* 制作：{{recipes/extract|withresult=y|result=Spelunker Flare}}
+| col:notes =
+* 发出黄色光。
+* 高亮标记附近的宝藏，与[[{{tr|Spelunker Glowstick}}]]相似。
+}}
+{{item infobox | auto = 5378
+| col:source =
+* 制作：{{recipes/extract|withresult=y|result=Cursed Flare}}
+| col:notes =
+* 发出绿色光。
+* 施加 10 秒钟的[[{{tr|Cursed Inferno}}]][[{{tr|debuff}}]]。
+}}
+{{item infobox | auto = 5379
+| col:source =
+* 制作：{{recipes/extract|withresult=y|result=Rainbow Flare}}
+| col:notes =
+* 发出在整个彩虹光谱中循环的光。
+}}
+{{item infobox | auto = 5380
+| col:source =
+* 将{{tr|Flare or Blue Flare}}扔进[[{{tr|Shimmer}}]]中。
+}}
+|}
+
+== 备注 ==
+* 与[[{{tr|Glowstick}}]]相似，发射出去的{{tr|Flares}}并不会像[[{{tr|blocks}}]]那样真的被[[{{tr|placed}}]]在世界中。它们实际上是{{tr|projectiles}}，因而也不会与世界一起保存。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Spelunker Flare}}、{{tr|Cursed Flare}}、{{tr|Rainbow Flare}}和{{tr|Shimmer Flare}}。
+** {{tr|Flare}}{{tr|sprite updated.}}旧的{{tr|sprite}}是 [[File:Flare (pre-1.4.4).png|link=]]。
+** {{tr|Flare}}和{{tr|Blue Flare}}现在可通过[[{{tr|shimmer}}]]制作{{tr|Shimmer Flare}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Blue Flare}}{{tr|sprite updated.}}旧的{{tr|sprite}}是 [[File:Blue Flare (old).png|link=]]。}}
+{{history|Desktop 1.3.2|{{tr|Flare}}{{tr|sprite updated.}}旧的{{tr|sprite}}是 [[File:Flare (old).png|link=]]。}}
+{{history|Desktop 1.2.0.2|添加了{{tr|the Blue Flare}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|外观更新为与{{tr|Desktop}} 1.3.2 一致。}}
+{{history|Console 1.02|Introduced=y|和相应机制、{{tr|Blue Flare}}一起从{{tr|Desktop}} 1.2.0.2 引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|Introduced=y|和相应机制、{{tr|Blue Flare}}一起从{{tr|Desktop}} 1.2.0.2 引入。}}
+{{history|3DS-Release|Introduced=y|和相应机制、{{tr|Blue Flare}}一起从{{tr|Desktop}} 1.2.0.2 引入。}}
+
+{{Master Template Consumables
+|show-ammo=yes
+}}
+
+{{Shimmering Exclusive Items}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Flares}}

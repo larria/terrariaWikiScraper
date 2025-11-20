@@ -1,0 +1,45 @@
+{{exclusive|1.4.0.1}}
+[[File:BiomeBannerMeteorShower.png|center]]
+
+'''{{tr|Meteor Shower}}'''是一个[[{{tr|event}}]]，有 {{chance|1/10}} 的几率在每个[[{{tr|night}}]]随机发生。{{tr|event}}期间，[[{{tr|Fallen Star}}]]的频率会增加 200-400%，{{tr|background}}中会出现流星；若天空中的{{tr|cloud}}较少（如[[{{tr|Lantern Night}}]]期间），[[{{tr|Enchanted Nightcrawler}}]]会在{{tr|surface}}生成。 
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=在天气晴朗时：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Enchanted Nightcrawler}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 在 [[{{tr|Celebrationmk10}}]] {{tr|world}}中，{{tr|Meteor Shower}}每晚发生的几率增加到了 {{chance|1/5}}。
+* 不仅仅只有{{tr|Meteor Showers}}会提升[[{{tr|Fallen Star}}]]的出现频率。{{tr|Fallen Star}}的出现频率每天{{tr|night}}都有 {{chance|1/3}} 的几率（在 {{tr|Celebrationmk10}} {{tr|world}}中则是 {{chance|1/2}} 的几率）增加 0% 到 50%。不过这一略微增加的频率并不满足{{tr|Enchanted Nightcrawler}}的生成需求。{{source code ref|v=1.4.4.9|method=Terraria.Star.NightSetup / Terraria.NPC.SpawnNPC|field=Terraria.Star.starfallBoost}}
+
+== 花絮 ==
+* 现实中的{{维基百科|Meteor shower|流星雨}}是观测到大量陨星（或通俗来说，流星）在夜空中某些区域发光的天文现象。
+* 虽然其名称如此，它与[[{{tr|Meteorite (biome)}}|{{tr|Meteorite biomes}}]]或游戏中任何与[[{{tr|Meteorite}}]]相关的{{tr|items}}没有关系。它只会增加{{tr|Fallen Stars}}的生成率。
+
+== 另见 ==
+* [[{{tr|Lantern Night}}]]，会提升[[{{tr|Luck}}]]、降低{{tr|cloud}}量，并（若和{{tr|Meteor Shower}}一同发生）允许{{tr|Enchanted Nightcrawlers}}生成的{{tr|event}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+[[Category:环境]]
+[[Category:随机事件]]
+
+{{language info|en=Meteor Shower}}

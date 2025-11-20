@@ -1,0 +1,41 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 2880
+| listcat = Broadswords / Projectile melee
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Influx Waver (demo).gif|frame|用{{tr|the Influx Waver}}攻击[[{{tr|Mimic}}]]。注意{{tr|projectiles}}是如何跟随目标{{tr|enemy}}，而穿透只是视觉效果。]]
+
+'''{{tr|Influx Waver}}'''是把[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|sword}}]]，有 {{chance|1/6}} 几率掉落自[[{{tr|Martian Madness}}]][[{{tr|event}}]]期间的[[{{tr|Martian Saucer}}]]。它在挥舞时发射蓝色的{{tr|sword projectile}}。在{{tr|projectile}}接触[[{{tr|enemy}}]]时，{{tr|sword projectile}}将传送至附近的{{tr|enemy}}（优先考虑原始目标）两次，总共击中三次。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Influx Waver|expectedrows=1}}
+
+== 备注 ==
+* 其行进速度约为 {{mph|{{iteminfo|Influx Waver|velocity}} pixels}}，最大射程为 {{formatnum:{{#expr:({{iteminfo|Influx Waver|velocity}}*{{projectileinfo|451|timeLeft}})/16 round0}}}} 格。它的大小会波动，随着距离增加，它会变得小得多。
+* 在击中一个{{tr|enemy}}或另一个{{tr|projectile}}后，它会传送到三个附近的{{tr|enemies}}上（会优先考虑原本的目标）。它并不会追踪诸如[[{{tr|Necromancer}}]]这样的传送{{tr|enemies}}，也不会瞄准[[{{tr|critters}}]]。
+* 和所有{{tr|projectiles}}一样，它在[[{{tr|honey}}]]中会明显减速。但是，如果它在{{tr|honey}}中击中了{{tr|enemy}}，之后返回的{{tr|projectiles}}会以正常速度行进。
+* {{tr|projectiles}}不会受到[[{{tr|melee speed}}]]{{tr|bonuses}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 110 降低至 100。
+** {{tr|projectile}}成功命中之后生成的次生{{tr|projectiles}}现在会跟着其目标移动，大幅降低了未命中的几率。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Zenith}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|现在用于制作[[{{tr|Zenith}}]]。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Influx Waver}}

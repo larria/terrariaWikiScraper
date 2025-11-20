@@ -1,0 +1,351 @@
+{{for|{{tr|mounts}}叠加各种移动{{tr|accessories}}后的跳跃/飞行高度对比|跳跃高度对比#组合}}
+
+'''{{tr|Mounts}}'''是玩家可以用于运输或制造伤害的生物或物件，作用相当于载具。当使用了{{tr|mount}}召唤物品时，它会对玩家施加一个无限[[{{tr|buff}}]]，生成{{tr|the mount}}，并将玩家放于其上或其中。{{tr|Mount}}的移动可用玩家的常规移动键来控制。像[[{{tr|Pet}}]]和[[{{tr|Minion}}]]一样，{{tr|mounts}}可以无限使用，其{{tr|summoning items}}不会被消耗掉。一次只能有一个{{tr|Mount}}生效。当玩家[[死亡]]时{{tr|Mounts}}会自动卸掉。
+
+[[{{tr|Weapons}}]]和[[{{tr|tools}}]]（以及除了[[{{tr|Hooks}}]]外的任何其他物品）都可以在骑着{{eil|Drill Mount}}之外的任何{{tr|Mount}}时使用。
+
+所有{{tr|mount items}}都能放置在{{tr|mount}}栏中然后用{{key|mount}}即可召唤，也可以[[{{tr|Dye}}|染色]]。骑上{{tr|mount}}会提供短时间的光照（[[{{tr|Bee Mount}}|{{tr|Bee}}]]和[[{{tr|Brain Scrambler (item)}}|{{tr|Scutlix}}]]除外）。
+
+目前一共有 27 种{{tr|Mounts}}，每种都有不同的能力和移动属性。所有{{tr|mount summoning items}}都为{{iteminfo|Slimy Saddle|rare}}[[{{tr|rarity}}]]，除了[[{{tr|the Shrimpy Truffle}}]]和[[{{tr|Witch's Broom}}]]为{{rare|rainbow}}{{tr|rarity}}，以及那些[[{{tr|Master Mode}}]]独有{{tr|mounts}}，它们具有{{rare|-13}}{{tr|rarity}}。
+
+{{tr|Mount}}{{tr|summoning items}}没有[[{{tr|modifiers}}]]，因此也不能重铸。
+
+== 困难模式之前 ==
+{| class="sortable terraria lined" id="table-mounts-prehm"
+! {{tr|Mount}}
+! {{tr|Item}}
+! 描述
+! 高度（英尺）
+! 速度（[[mph]]）
+! 来源
+|- {{#vardefine:_m-id|3}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高，移动的更快
+* {{eicons|1.3.0.1}} 跳到{{tr|enemies}}头上会对{{tr|enemy}}造成{{tr|summon damage}}
+* 在水中会漂浮
+* 坠落速度加倍
+* {{tr|fall damage}}减半
+| 42
+| 21<br/>102 (坠落)
+| {{item|King Slime|size=100px}}
+|- {{#vardefine:_m-id|5}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 在陆地上很慢
+* 快速飞行、飞行时间有限、自动悬停
+* 消除掉落伤害
+* 在液体中会取消骑乘，除非能在液体上行走<br/>（例如，使用[[{{tr|Water Walking Potion}}]]或[[{{tr|Water Walking Boots}}]]）
+| 654
+| 10（走）<br/>31（飞）
+| {{item|size=100px|Queen Bee}}
+|- {{#vardefine:_m-id|4}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 在陆地上很慢
+* 在水中很快
+| 4
+| 10（走）<br/>36（游）
+| {{item|Golden Crate|s}}和{{item|Titanium Crate|s}}
+|- {{#vardefine:_m-id|1}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高
+* 随着跑动加速
+* 消除掉落伤害
+| 12
+| 39
+| {{item|Angler|note=(第 5 个任务后奖励)|wrap=y}}
+|- {{#vardefine:_m-id|43}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高
+* 降低{{tr|fall damage}}
+* 坠落速度大幅提高
+| 4 (正常)<br/>20 (高)
+| 29
+| {{item|Party Girl|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}})|wrap=y}}
+|- {{#vardefine:_m-id|17}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 全速时会对{{tr|enemies}}造成{{tr|summon damage}}
+* 向玩家面对的方向发出一道光锥
+* 降低{{tr|fall damage}}，跳的更高
+| 28
+| 41
+| {{item|Golfer|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}}，打败[[{{tr|Skeletron}}]]后 <br/>且{{tr|golf score}}达到 2000 或更高)|wrap=y}}
+|- {{#vardefine:_m-id|37}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount|link={{tr|Mollusk Whistle|link=y}}}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 在水中会漂浮
+* 在水中游泳
+* 降低{{tr|fall damage}}
+* 高加速度
+| 15
+| 31
+| {{item|Zoologist|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}}，{{tr|Bestiary}}填充了 25%/{{b entries|25%|entries}})|wrap=y}}
+|- {{#vardefine:_m-id|40}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高
+* 随着跑动加速
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+| 12
+| 46
+| {{item|Zoologist|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}}，{{tr|Bestiary}}填充了 30%/{{b entries|30%|entries}})|wrap=y}}
+|- {{#vardefine:_m-id|41}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高
+* 随着跑动加速
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+| 12
+| 46
+| {{item|Zoologist|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}}，{{tr|Bestiary}}填充了 30%/{{b entries|30%|entries}})|wrap=y}}
+|- {{#vardefine:_m-id|42}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 跳得更高
+* 随着跑动加速
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+| 12
+| 46
+| {{item|Zoologist|note=({{iteminfo|{{getMountInfo|{{#var:_m-id}}|summon}}|buy}}，{{tr|Bestiary}}填充了 30%/{{b entries|30%|entries}})|wrap=y}}
+|- {{#vardefine:_m-id|49}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 在{{tr|liquid}}中游得很快
+* 免疫{{tr|Lava}}
+* 在陆地上时减速
+* {{tr|fall damage}}降低到 1
+* 不会自动爬上{{tr|blocks}}（需要跳跃）
+|2
+|10 (走) <br/> 73 (游)
+| {{item|Obsidian Crate|s}}和{{item|Hellstone Crate|s}}
+|}
+
+== {{tr|Hardmode}} ==
+{| class="sortable terraria lined" id="table-mounts-hm"
+! {{tr|Mount}}
+! {{tr|Item}}
+! 描述
+! 高度（英尺）
+! 速度（[[mph]]）
+! 来源
+|- {{#vardefine:_m-id|14}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* {{tr|Movement Speed}}快
+* 加速度较快
+* {{tr|double-jump}}
+* 增加跳跃高度
+* 冲锋通过{{tr|enemies}}会对{{tr|enemies}}造成{{tr|summon damage}}
+* 掉落伤害降低 80%
+| 28
+| 41
+| {{item|Basilisk}}
+|- {{#vardefine:_m-id|52}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 将玩家转换成狼
+| 30
+| 49
+| {{item|Wolf}}<br/> 命名为"Wolfpet"或者"Wolf Pet"的[[{{tr|Journey Mode}}]]人物.
+|- {{#vardefine:_m-id|10}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 奔跑速度快
+* {{tr|double-jump}}
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+* 掉落伤害降低 80%
+| 39 (普通) <br/>48 ({{tr|Double-jump}})
+| 61
+| {{item|Unicorn}}
+|- {{#vardefine:_m-id|2}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 有限飞行时间
+* 奔跑速度快
+* 消除掉落伤害
+| 218
+| 46
+| 地下[[{{tr|Underground Hallow}}|{{tr|Hallowed}}]]/[[{{tr|Underground Corruption}}|{{tr|Corrupt}}]]/[[{{tr|Underground Crimson}}|{{tr|Crimson}}]]-[[{{tr|Underground Snow}}|{{tr|Snow}}]]中[[{{tr|Fishing}}]]
+|- {{#vardefine:_m-id|50}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 有限飞行时间
+* 跳得更高，移动得更快
+* 用[[{{tr|Game controls}}|<kbd>▼ 下</kbd>]]+ [[{{tr|Game controls}}|<kbd>↷ 跳</kbd>]]来水平悬停。
+* 跳到{{tr|enemies}}头上会对{{tr|enemy}}造成{{tr|summon damage}}
+* 消除掉落伤害
+* 在水中会漂浮
+| 146
+|33 (地面)<br/>56 (垂直上升)<br/>102 (坠落)<br/>34 (垂直悬停)<br/>58 (空中水平移动)
+| {{item|Queen Slime|size=100px}}
+|- {{#vardefine:_m-id|0}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 有限飞行时间
+* 奔跑与飞行都快
+* 消除掉落伤害
+| 194~582
+| 61
+| {{item|size=100px|Ice Queen}}
+|- {{#vardefine:_m-id|9}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* {{tr|Movement Speed}}快
+* 自动向{{tr|enemies}}发射激光
+* 掉落伤害降到 1
+| 40
+| 41
+| {{item|Scutlix|Scutlix Gunner}}
+|- {{#vardefine:_m-id|7}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 无限飞行
+* 在液体中会取消骑乘
+| {{infinity}}
+| 41（水平/垂直）<br/>58（对角线）
+| {{item|Martian Saucer|size=100px}}
+|- {{#vardefine:_m-id|23}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 无限飞行
+* 3 格高
+* 无法穿过某些{{tr|platforms}}下落
+| {{infinity}}
+|46 (水平)<br/>41 (垂直)
+62 (对角线)
+| {{item|size=100px|Mourning Wood|note=(仅限[[{{tr|Expert Mode}}]])|wrap=y}}
+|- {{#vardefine:_m-id|12}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 无限飞行
+* 在液体中有{{tr|Damage}}/{{tr|movement}}奖励
+* 在陆地上时减速
+| {{infinity}}
+| 33（水平）<br/>53（对角线）<br/>41（垂直）<br/>82（浸没于{{tr|liquid}}中）<br/>67（生命值 <50%，或离开{{tr|liquid}}后 6 秒钟内）<br/>5（如果与{{tr|blocks}}接触）
+| {{item|Duke Fishron|size=100px|note=(仅限[[{{tr|Expert Mode}}]])|wrap=y}}
+|- {{#vardefine:_m-id|8}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 无限飞行
+* 能挖掘地块（{{key|use}}）
+* 骑乘时无法使用物品
+| {{infinity}}
+| 31（水平）<br/>41（垂直）<br/>51（对角线）
+| 制作
+|}
+
+== 仅限{{tr|Master Mode}} ==
+=== {{tr|Pre-Hardmode}} ===
+{| class="terraria lined" id="table-mounts-prehm"
+! {{tr|Mount}}
+! {{tr|Item}}
+! 描述
+! 高度（英尺）
+! 速度（[[mph]]）
+! 来源
+|- {{#vardefine:_m-id|48}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 有限飞行；固定最大高度
+* 消除掉落伤害
+|
+| 41
+| {{item|Dark Mage}}
+|}
+
+=== {{tr|Hardmode}} ===
+{| class="sortable terraria lined" id="table-mounts-prehm"
+! {{tr|Mount}}
+! {{tr|Item}}
+! 描述
+! 高度（英尺）
+! 速度（[[mph]]）
+! 来源
+|- {{#vardefine:_m-id|47}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 奔跑速度快
+* {{tr|double-jump}}
+
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+
+* 掉落伤害降低 80%
+
+<br />
+|39
+|61
+| {{item|size=50px|Wall of Flesh}}
+|- {{#vardefine:_m-id|44}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 无限飞行
+* 全速飞行时会对{{tr|enemies}}造成{{tr|summon damage}}
+* 5 格高
+| {{infinity}}
+|36 (水平)
+41 (垂直)
+54 (对角线)
+| {{item|size=100px|Flying Dutchman}}
+|- {{#vardefine:_m-id|45}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 奔跑速度极快
+* 全速奔跑时会对{{tr|enemies}}造成{{tr|summon damage}}
+|
+|81
+| {{item|size=100px|Mourning Wood}}
+|- {{#vardefine:_m-id|46}}
+| {{item|{{getMountInfo|{{#var:_m-id}}|name}}|{{#replace:{{getMountInfo|{{#var:_m-id}}|name}}|Mount}}|image={{getMountInfo|{{#var:_m-id}}|image}}|id={{#var:_m-id}}|type=mount}} || {{item|{{getMountInfo|{{#var:_m-id}}|summon}}|wrap=y}}
+| style="font-size: 90%;" |
+* 自动向{{tr|enemies}}射击
+* {{tr|double-jump}}
+* {{tr|fall damage}}降低到 1
+| 12
+|41
+| {{item|size=80px|Santa-NK1}}
+|}
+
+== 备注 ==
+* 虽然{{tr|mounts}}不会改变{{tr|player}}的宽度，但骑上{{tr|mount}}会增加玩家的高度。比如说，[[{{tr|Pirate Ship Mount}}]]和[[{{tr|Unicorn Mount}}]]会将玩家的高度增加到 5 格，而大部分{{tr|mounts}}，比如[[{{tr|Slimy Saddle}}]]和[[{{tr|Ancient Horn}}]]会将玩家的高度增加到 4 格。
+* {{tr|Mounts}}也受[[{{tr|armor}}]]套装的{{tr|set Bonus}}效果影响，例如，如果穿着全套[[{{tr|hallowed armor}}]]骑上{{tr|unicorn mount}}，{{tr|the unicorn}}会具有脉动的外轮廓（不过，一些{{tr|dyes}}，比如[[{{tr|the Hades dyes}}]]，会使其难以辨认）。
+*用[[{{tr|Spectre Boots}}]]或任意其升级物飞行的时候开启骑乘可能会暂时将其粒子效果恢复为[[{{tr|Rocket Boots}}]]的效果。
+
+== {{tr|Achievement}} ==
+{{achievement|name=The Cavalry}}
+
+== 小贴士 ==
+* 可以用[[{{tr|mechanisms}}]]或 [[{{tr|Hoik|link=y}}#{{tr|Hoiks}} 的其他用法|{{tr|hoiks}}]] 实现与{{tr|mount}}兼容的门户，允许玩家骑着{{tr|mounts}}进出各个区域。用[[{{tr|Tall Gate}}]]亦可。
+* [[{{tr|Cosmic Car Key}}]]、[[{{tr|Witch's Broom}}]]、[[{{tr|Shrimpy Truffle}}]]、[[{{tr|Drill Containment Unit}}]]、和[[{{tr|The Black Spot}}]]都能给予玩家无限飞行能力。 
+
+== 花絮 ==
+* [[{{tr|Reindeer Bells}}|{{tr|Rudolph}}]]是第一个被引入[[《{{tr|Terraria}}》]]的{{tr|mount}}，也是游戏中唯一一个全平台可用的{{tr|mount}}。
+** [[{{tr|Bee Mount}}]]最为接近于此，只{{3DS version}}中没有。其他{{tr|mounts}}则仅限于某些版本。
+* [[{{tr|Mourning Wood}}]]是唯一可以同时掉落两个{{tr|mount}}{{tr|summoning items}}的{{tr|enemy}}。
+* [[{{tr|Unicorn Mount}}]]是唯一有自己[[{{tr|achievement}}]]的{{tr|mount}}，骑着它时发射[[{{tr|Rainbow Gun}}]]可以得到此{{tr|achievement}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了[[{{tr|Lilith's Necklace}}]]。}}
+{{history|Desktop 1.4.0.3|修正了[[{{tr|Difficulty}}#{{tr|Mediumcore}}|{{tr|Mediumcore}}]]模式下死亡后依然可以使用{{tr|mounts}}的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|添加了 14 个新{{tr|mounts}}。}}
+{{history|Desktop 1.3.3|添加了[[{{tr|Ancient Horn}}]]。}}
+{{history|Desktop 1.3.0.6|修正“允许骑乘”的检测没有考虑到玩家速度的问题，修正骑乘会顶破天花板的问题。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Brain Scrambler (item)}}]]、[[{{tr|Drill Containment Unit}}]]、[[{{tr|Cosmic Car Key}}]]、[[{{tr|Blessed Apple}}]]和[[{{tr|Shrimpy Truffle}}]]。添加了在{{tr|mount}}上也能使用{{tr|weapons}}和{{tr|items}}的能力。}}
+{{history|Desktop 1.2.4|添加了 5 个新{{tr|mounts}}。它们分别用[[{{tr|Slimy Saddle}}]]、[[{{tr|Honeyed Goggles}}]]、[[{{tr|Fuzzy Carrot}}]]、[[{{tr|Scaly Truffle}}]]和[[{{tr|Hardy Saddle}}]]召唤。还添加了{{tr|Minecart}}；虽然技术上说它并不是{{tr|mount}}，但可以右键点击[[{{tr|Minecart Track}}]]来乘上。}}
+{{history|Desktop 1.2.3.1|修正了玩家骑着{{tr|mount}}走向天花板时可能掉进{{tr|tiles}}中的 {{tr|bug}}。修正了骑乘{{tr|mount}}时[[{{tr|capes}}]]不能正确显示的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|修正了骑乘{{tr|mount}}时[[{{tr|wings}}]]出现的位置太高的 {{tr|bug}}，并让[[{{tr|hoverboard}}]]在骑乘{{tr|mount}}时不出现。}}
+{{history|Desktop 1.2.2|{{tr|Introduced}}[[{{tr|Reindeer Bells}}]]。}}
+{{history|Console 1.17|添加了{{tr|the Ancient Horn}}。}}
+{{history|Console 1.07|引入{{tr|Bunny Mount}}、{{tr|Pigron Mount}}、{{tr|Turtle Mount}}、和{{tr|Rudolph Mount}}。}}
+
+{{Master Template Tools
+| show-main = yes
+| show-summon = yes
+}}
+
+[[Category:游戏机制]]
+
+{{language info|en=Mounts}}

@@ -1,0 +1,59 @@
+<!--
+
+--><table class="terraria lined"><!--
+	--><tr><!--
+		--><th>结构</th><!--
+		--><th>随机示例<br/><small>（{{purge|清除缓存}}来生成新示例）</th><!--
+	--></tr><!--
+	-->{{#invoke:Random world names|go|count=5<!-- 
+		////// i18n info ///////
+		-->|lang=zh<!-- 
+		// some compositions are equal to each other, so we only use distinct compositions.
+		-->|compositions=1,5,7<!-- for zh.
+		/* i18n: strings that are used in the "generic" compositions in the left cell */
+		// default for all compositions
+		-->|adjective=形容词|location=地点|noun=名词<!-- 
+		// overwriting for specific compositions
+		// (format: "|<composition id>:<adjective/location/noun>=..." )
+		 
+	-->}}<!--
+--></table><!--
+
+
+-->{{-}}<!--
+
+-->{{flexstart|justify=justified|style=gap:var(--layout-gap); margin-top:var(--layout-gap);}}<!--
+
+	-->{{flexstart|item|basis=auto|grow=4}}<!--
+		-->{{collapse top|点击此处查看所有形容词|style=min-width:6.67em}}<!--
+		--><div style="text-align:center;">'''形容词'''</div><!--
+		-->{{mclist/start}}<!--
+		-->{{#af_foreach:{{gameText/section|RandomWorldName_Adjective}}|k|v|{{mclist/item|{{{v}}}}}}}<!--
+		-->{{mclist/end}}<!--
+		-->{{collapse bottom}}<!--
+	-->{{flexend}}<!--
+
+	-->{{flexstart|item|basis=auto|grow=3}}<!--
+		-->{{collapse top|点击此处查看所有地点|style=min-width:5em}}<!--
+		--><div style="text-align:center;">'''地点'''</div><!--
+		-->{{mclist/start}}<!--
+		-->{{#af_foreach:{{gameText/section|RandomWorldName_Location}}|k|v|{{mclist/item|{{{v}}}}}}}<!--
+		-->{{mclist/end}}<!--
+		-->{{collapse bottom}}<!--
+	-->{{flexend}}<!--
+
+	-->{{flexstart|item|basis=auto|grow=6}}<!--
+		-->{{collapse top|点击此处查看所有名词|style=min-width:10em}}<!--
+		--><div style="text-align:center;">'''名词'''</div><!--
+		-->{{mclist/start}}<!--
+		-->{{#af_foreach:{{gameText/section|RandomWorldName_Noun}}|k|v|{{mclist/item|{{{v}}}}}}}<!--
+		-->{{mclist/end}}<!--
+		-->{{collapse bottom}}<!--
+	-->{{flexend}}<!--
+
+-->{{flexend}}<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=World/Name}}
+</noinclude>

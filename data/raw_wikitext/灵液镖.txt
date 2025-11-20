@@ -1,0 +1,34 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3011
+| debuff = Ichor / 7–14 {{tr|seconds}} / 100%
+| hardmode = yes
+}}
+[[File:Ichor Dart (demo).gif|right|framed|从[[{{tr|Dart Rifle}}]]射出的{{tr|Dart Pistol}}。]]
+
+'''{{tr|Ichor Darts}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|dart}}]]。发射初始时，其可无限穿透。在随机飞行 {{duration|6ticks}}到 {{duration|30ticks}}后，{{tr|the Ichor Dart}}分裂为 3–5 个无穿透的{{tr|darts}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001|t=分裂时，最初的{{tr|projectile}}创造 2–3 个额外{{tr|projectiles}}，又有 {{chance|1/4}} 的概率再创造一个。}}{{tr|Ichor Darts}}造成 7-14 秒[[{{tr|Ichor debuff}}]]。
+
+它是[[{{tr|Corruption}}]]的[[{{tr|Cursed Dart}}]]的[[{{tr|Crimson}}]]对应物。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Ichor Dart|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** {{tr|Damage}}由 12 降低至 10。
+** 修正了导致{{tr|Ichor Dart}}在极近距离使用时迅速地在每帧都造成伤害，比预期造成更高伤害的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Damage}}由 10 提升至 12。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Damage}}由 10 提升至 12。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Ichor Dart}}

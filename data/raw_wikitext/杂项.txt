@@ -1,0 +1,95 @@
+{{itemlist/options|width=18em|css=margin: 3px auto|boxcss=margin: 0.5em auto;|class=terraria}}<!-- setting: Miscellaneous -->
+<!-- For non-dynamic, static lists (for language wikis which do not have an article for every item yet), see [[Miscellaneous/static]] -->
+== {{tr|Seeds}} ==
+{{main|{{tr|Seeds|link=y}}}}
+{{#dpl:
+|category={{tr|Seeds items}}
+|nottitlematch={{tr|Seeds|link=y}}¦{{tr|Flower Seeds|link=y}}¦{{tr|Gemcorns|link=y}}
+|ordermethod=title
+|format=²{itemlist,¦²{item¦²{tr2e¦%PAGE%}²¦wrap=y}²,,}²
+}}
+
+== {{tr|Materials}} ==
+以下物品仅用于[[{{tr|crafting}}]]且没有其他功能性用途。[[{{tr|Fishing}}渔获|{{tr|Fished items}}]]不包含在内。
+{{itemlist/start}}<!-- 
+Note:
+"|fields=CONCAT('{{itemlist/item|{{item|',name,'|wrap=y}}}}')" does not work as expected here, 
+since the substitution of placeholders with values from database occurs after the template code has been expanded.
+so, the result will look fine only on en wiki, and on other language wikis, it will still be English result, 
+because the {{tr}} inside {{item}} will not work.
+-->{{#arraydefine:list|{{#cargo_query:tables=Items
+|fields=name
+|where=type__full="crafting material"<!-- we only want pure crafting materials --> AND (tag__full IS NULL OR tag__full NOT LIKE "%fished%"<!-- HOLDS NOT behaves incorrectly -->) AND name NOT LIKE "Soul%"<!-- souls are separate in the next section --> AND placeable IS NULL AND consumable IS NULL AND unobtainable is NULL
+|group by=itemid, name<!-- grouping by itemid alone excludes the Purple Thread because it has the same item ID as Green Thread -->
+|order by=name
+|limit=200
+|delimiter=@@
+|no html
+}}|@@}}
+{{#arrayprint:list||@@@@|{{itemlist/item|{{item|@@@@|wrap=y}}}}}}
+{{itemlist/end}}
+
+== {{tr|Souls}} ==
+{{main|{{tr|Souls}}}}
+{{#dpl:
+|category={{tr|Souls}}
+|nottitlematch={{tr|Souls}}
+|ordermethod=title
+|format=²{itemlist,¦²{item¦²{tr2e¦%PAGE%}²¦wrap=y}²,,}²
+}}
+
+== 物体 ==
+{{main|物体}}
+{{options/snap|item|snap}}{{options/set|item|maxsize=x50px|wrap=y}}{{itemlist
+|{{item|Altars|image=Demon Altar.png/Crimson Altar.png}}
+|{{item|Antlion Eggs}}
+|{{item|Bee Hive}}
+|{{item|Cactus|image=Growing cactus.png}}
+|{{item|Coin Stashes|image=Small Stashes.png}}
+|{{item|Crimson Heart|image=Crimson Heart.gif}}
+|{{item|Crystal Heart}}
+|{{item|Fallen Log}}
+|{{item|Giant Glowing Mushroom}}
+|{{item|Larva}}
+|{{item|Plantera's Bulb}}
+|{{item|Pot}}
+|{{item|Shadow Orb|image=Shadow Orb.gif}}
+|{{item|Trees|image=Tree.png}}
+}}{{options/restore|item|snap}}
+<!--
+Generator for the above:
+<div style="white-space:pre">{{#dpl:category=Background object items|nottitleregexp=.*[Oo]bjects|ordermethod=title|format=,¦²{item<nowiki>|</nowiki>%PAGE%}²\n,,}}</div>
+-->
+
+== {{tr|Summon}} ==
+{{dablink|以下列表包括所有和召唤 [[{{tr|bosses}}]]、[[{{tr|events}}]]、[[{{tr|pets}}]]、或[[{{tr|mounts}}]]大致有关系的物品。更详细的只包含{{tr|consumable items}}的列表请参见[[{{tr|Summoning items}}]]。}}
+{{#dpl:
+|namespace=
+|category=*{{tr|Summoning items}}
+|notcategory={{tr|Summon weapons}}
+|nottitlematch={{tr|Other fishing catches}}{{!}}{{tr|Minecarts}}
+|ordermethod=title
+|format=²{itemlist,¦²{item¦²{tr2e¦%PAGE%}²¦wrap=y}²,,}²
+}}
+
+=== {{tr|Achievement}} ===
+{{achievement|name=Like a Boss}}
+
+== 其他 ==
+{{itemlist/start}}
+{{#arraydefine:list|{{#cargo_query:tables=Items
+|fields=name
+|where=type HOLDS "Miscellaneous"
+|group by=itemid
+|order by=name
+|delimiter=@@
+|no html
+}}|@@}}
+{{#arrayprint:list||@@@@|{{itemlist/item|{{item|@@@@|wrap=y}}}}}}
+{{itemlist/end}}<!--
+
+-->{{itemlist/options|reset}}
+
+[[Category:其他物品| ]]
+
+{{language info|en=Miscellaneous}}

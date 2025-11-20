@@ -1,0 +1,47 @@
+{{exclusive|Lunar Events}}
+{{npc infobox
+| auto = 420
+| image = Nebula Floater.gif
+| idprojectile = 574,576
+| type = Flying Enemy
+| environment = Lunar Events
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|130|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.NebulaLaser}}}}
+| sound1 = Item 12.wav
+| soundcaption1 = Attack
+| sound2 = Item 8.wav
+| soundcaption2 = Teleport
+| hardmode = yes
+}}
+
+'''{{tr|Nebula Floater}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Lunatic Cultist}}]]后的飞行[[{{tr|enemy}}]]，会在[[{{tr|Lunar Events}}]]期间于[[{{tr|Nebula Pillar}}]]附近生成。它会周期性地生成漂浮在它身边的{{tr|Nebula Eyes}}，最多生成三个。如果它与玩家间有清晰视线，它将会悬停在原地并开始用其中一个{{tr|Nebula Eye}}向玩家发射粉色{{tr|Nebula Laser}}，否则它将会穿过任何{{tr|tile}}向玩家移动。它也能够周期性地随机在玩家周围传送，且受到攻击时会更频繁地传送。
+
+== 小贴士 ==
+* {{tr|Nebula Floater}}是{{tr|Nebula Pillar}}生成的{{tr|enemies}}中必须处理的一个。它们较为常见，在成群的情况下会让玩家难以应付。
+* 群体控制优秀的[[{{tr|weapon}}]]在应对大量{{tr|Nebula Floaters}}时效果很好。如果已经击败了[[{{tr|Vortex Pillar}}]]，[[{{tr|Vortex Beater}}]]搭配[[{{tr|Chlorophyte Bullets}}]]将会是不错的选择。
+* 激光会留下轨迹，使得找到{{tr|Nebula Floaters}}的位置很容易。不过，这些激光也可能会与击杀{{tr|enemies}}时产生的飞向{{tr|Nebula Pillar}}的线所混淆，后者是红黄色的。
+* 由于{{tr|Nebula Floaters}}在受到伤害时有时会传送，使用高{{tr|damage}}的{{tr|weapon}}（如[[{{tr|Sniper Rifle}}]]）可能是更加可取的。
+** 此外，玩家也不应移动得太快，因为{{tr|Nebula Floaters}}的随机传送可能会将它们传送到距离玩家很近的位置，玩家可能来不及反应就会受到接触伤害。
+
+== 花絮 ==
+* {{tr|Nebula Floater}}的外观和[[{{tr|Brain of Cthulhu}}]]很相似。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 玩家身边的阻止它们直接传送到玩家身上的保护半径大大增加。
+** 游戏现在会在玩家移动时将速度和位置一并考虑，并预测玩家移动的意图，以此防止{{tr|Nebula Floaters}}生成在玩家移动的路径上时完全来不及反应。然而这套系统并不绝对，并且仅给予一些额外的距离，所以如果玩家不改变自己的路径或正在高速移动，就仍然有可能撞上一个刚传送的{{tr|enemies}}。
+** 现在在传送后有 0.5 秒的延迟，此段时间内它们无法开火。
+** 反制其传送的几率由 1/4 降低至 1/6。
+** 同一时间存在的{{tr|Nebula Floaters}}的最多数量由 2 提升至 3。
+** {{tr|Nebula Floaters}}的生成几率翻倍，但（数量）无法超过其生成数量限制。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Nebula Floater}}

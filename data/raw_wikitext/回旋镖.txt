@@ -1,0 +1,69 @@
+'''{{tr|Boomerangs}}'''是[[{{tr|melee weapons}}]]，使用时会向外抛出并在短时间后返回玩家处。它们的射程比大多数其他类型的{{tr|melee weapons}}要远得多，但由于并不需要[[{{tr|ammunition}}]]，因此不被视为是[[{{tr|ranged}}]]。
+
+{{tr|boomerangs}}的最佳[[{{tr|modifier}}]]通常是'''{{tr|Godly}}'''。{{eicons|1.4.4|invert=y}}两种可堆叠的{{tr|boomerangs}}则无法接受任何{{tr|modifiers}}。
+
+== 类型 ==
+{{weapon type count}}
+
+{| class="terraria sortable lined align-center"
+|-
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! {{tr|Velocity}}
+! data-sort-type=number | {{tr|Use time}}
+! data-sort-type=number | {{tr|Knockback}}
+! [[{{tr|Critical strike chance}}]]
+! {{auto icon|nl=y}}
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! data-sort-type=number | 卖出价
+! class=unsortable | {{tr|Source}}
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 备注 ==
+* 通过[[{{tr|accessories}}]]和/或[[{{tr|armor}}]]增加的{{tr|melee speed}}会同时增加{{tr|boomerangs}}的范围与飞行速度。
+* {{tr|Boomerangs}}在返回时具有无限穿透能力，并能穿过{{tr|blocks}}返回。
+* {{tr|Boomerangs}}只能拥有通用[[{{tr|modifier}}]]，因为它们的速度无法改变。
+* 由于{{tr|boomerangs}}视为是{{tr|melee weapons}}，因此它们既会受到诸如[[{{tr|Magma Stone}}]]等{{tr|accessories}}的影响，也会受诸如[[{{tr|Flasks}}]]等{{tr|buff items}}的影响。
+
+== 花絮 ==
+* 在特定一段时间后，如果用[[{{tr|Rod of Discord}}]]逃掉，{{tr|boomerang}}会在试图返回玩家时消失。
+
+== 另见 ==
+* [[{{tr|Flails}}]]
+* [[{{tr|Swords}}]]
+* [[{{tr|Spears}}]]
+* [[{{tr|Yoyos}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了{{tr|Trimarang}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Shroomerang}}、{{tr|Combat Wrench}}、和{{tr|Sergeant United Shield}}。
+** {{tr|Enchanted Boomerang}}现在可制作了。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Flying Knife}}。}}
+{{history|Desktop 1.2.2|添加了{{tr|Fruitcake Chakram}}。}}
+{{history|Desktop 1.2.1|添加了{{tr|Bloody Machete}}。}}
+{{history|Desktop 1.2|添加了{{tr|Bananarang}}、{{tr|Ice Boomerang}}、{{tr|Paladin's Hammer}}、和{{tr|Possessed Hatchet}}。}}
+{{history|Desktop 1.1|
+** {{tr|Boomerang}}类武器现在视为{{tr|melee}}而非{{tr|ranged}}。
+** 添加了{{tr|Light Disc}}。}}
+{{history|Desktop 1.0.6.1|现在即使在{{tr|Boomerangs}}还在飞行的时候使用[[{{tr|Magic Mirror}}]]，{{tr|Boomerangs}}也能正确复位。}}
+{{history|Desktop 1.0.5|添加了{{tr|Wooden Boomerang}}。}}
+{{history|Desktop-Release|添加了{{tr|Thorn Chakram}}、{{tr|Enchanted Boomerang}}、和{{tr|Flamarang}}。|introduced=1}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+[[Category:回旋镖| ]]
+
+{{language info|en=Boomerangs}}

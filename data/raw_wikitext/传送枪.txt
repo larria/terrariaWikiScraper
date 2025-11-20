@@ -1,0 +1,99 @@
+{{exclusive|Moon Lord}}
+{{item infobox
+| type = Tool
+| auto = 3384
+| idprojectile = 600, 601, 602
+| tags = hardmode /drop / bag loot
+| sounduse = Item 114.wav, Item 115.wav
+| sound1 = Item 8.wav
+| soundcaption1 = 传送
+}}
+{{drop infobox|style=clear:right}}
+[[File:Portals1 3.gif|right|frame|{{tr|developers}}在 [[1.3]] 发布前的{{tr|Portal}}演示。]]
+
+'''{{tr|Portal Gun}}'''是个[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|tool}}]]，它发出的{{tr|projectiles}}可以在碰到[[{{tr|blocks}}]]时创造出两个{{tr|portals}}（其中一个使用 {{key|use}} 发射，另一个则使用 {{key|open}} 发射）。这两个{{tr|portals}}是相连的，任何碰到其中一个的玩家都会被传送到另一个{{tr|portals}}处，而不会失去动力。虽然 [[{{tr|NPCs}}]] 可以使用{{tr|Portal Gun}}进行传送，但[[{{tr|enemies}}]]或{{tr|projectiles}}则不行。{{tr|The Portal Gun}}总会由[[{{tr|Moon Lord}}]]掉落。
+
+{{tr|The Portal Gun}}的最大发射范围是 675 格（1350 {{tr|feet}}）。{{tr|projectile}}需要大约 2 秒钟才能到达这个距离。
+
+被选中时，{{tr|Portal Gun}}还会改变玩家的物理运动特性：玩家的最大坠落速度会变为从前的 3.5 倍（从 {{mph|51}} 提升至 {{mph|179}}），水平的动量会被保留下来。如果影响玩家坠落的最后一个实体是{{tr|portal}}，那么动量也会被保留下来。极快的移动速度可能会导致某些游玩设备上的性能下降。
+
+== 备注 ==
+* {{tr|Portals}}可以朝向上下，左右，或斜对角等各个方向；它需要在任意表面上有至少 3 格长的平面。
+* 尽管是个[[{{tr|tool}}]]，但{{tr|the Portal Gun}}不能放置在[[{{tr|Weapon Rack}}]]上。
+* 在[[{{tr|multiplayer}}]]中，所有玩家都会有不同的{{tr|portal}}颜色，这样就可以区分彼此的{{tr|portal}}：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.PortalHelper.GetPortalColor}}
+: {| class="terraria lined sortable align-center mw-collapsible mw-collapsed" style="min-width: 220px;"
+|+ {{tr|Portal}}颜色
+! {{tr|Player}}序号
+! 第一个
+! 第二个
+|-
+| {{na}} {{note|paren=y|{{tr|singleplayer}}}}
+| {{color box|hsl(43.2deg, 100%, 50%)}}
+| {{color box|hsl(187.2deg, 100%, 60%)}}
+{{#loop:i|0|10|<!--
+	--><tr><!--
+		--><td>{{#var:i}}</td><!--
+		--><td>{{color box|hsl({{#expr:((0.5 + {{#var:i}} * (0.08 * 2) + 0 * 0.08) * 360) mod 360}}, 100%, 50%)}}</td><!--
+		--><td>{{color box|hsl({{#expr:((0.5 + {{#var:i}} * (0.08 * 2) + 1 * 0.08) * 360) mod 360}}, 100%, 50%)}}</td><!--
+	--></tr><!--
+-->}}
+|}
+* {{tr|Portal Gun}}本身并不会减少{{tr|fall damage}}，但是穿过{{tr|portal}}的时候会重置{{tr|fall damage}}。
+** 不过，穿过{{tr|portal}}时不会重置飞行时间，因此不能用来实现类似[[{{tr|Soaring Insignia}}]]的无限飞行。
+* 所有[[{{tr|hooks}}]]都会在传送时重置。
+* 如果传送目的地在视野范围内，在传送的时候会快速把视野滑动到目的地，而非立刻刷新目的地处的视野。
+* {{tr|Portals}}会在以下三种情况下消失：{{tr|player}}距离传送门远于 1600 英尺（800 格），{{tr|player}}死亡，{{tr|player}}离开了这个世界。
+* {{tr|player}}如果骑乘着[[{{tr|Mount}}]]，就不能通过{{tr|portal}}。
+** 这特点也适用于骑乘[[{{tr|Minecarts}}]]并且脱轨后的玩家。
+* 下落加速效果在{{tr|player}}骑着{{tr|mount}}的时候无效。
+* 如果{{tr|player}}在触碰{{tr|blocks}}时有某种效果的话，该种效果会先于{{tr|portal}}的传送事件而发生。放置在有伤害效果的{{tr|blocks}}上的{{tr|portal}}会伤害{{tr|player}}，而放置在[[{{tr|Pink Slime Block}}]]上的{{tr|portal}}会使得{{tr|player}}弹跳，减慢他们的坠落速度。
+* 因为两个{{tr|portal}}不能共享相同的图格，如果{{tr|player}}将两个{{tr|portal}}放置在同一个位置，新的那个将会覆盖原来的传送门。
+* [[{{tr|Actuator}}|致动]]或摧毁{{tr|portal}}所处的表面的任意{{tr|tile}}，都会将{{tr|portal}}移除。
+* {{tr|Portals}}可以放置在[[{{tr|Ice Rod}}]]创造出的{{tr|blocks}}上。不过，一旦支撑它们的{{tr|blocks}}消失，{{tr|Portals}}也会随之消失。
+* 玩家可以创造两个朝上的{{tr|portals}}，然后站在其中之一的上方，在两个{{tr|portals}}之间来回传送。
+* {{tr|portals}}可以放在[[{{tr|Liquids}}|{{tr|liquid}}]]中，但不会使得{{tr|liquid}}穿过{{tr|portal}}（即使{{tr|portal}}已经与其他{{tr|portal}}连接也不行）。
+* {{tr|player}}受[[{{tr|Old One's Army}}]]{{tr|event}}中的[[{{tr|Creative Shock}}]][[{{tr|debuff}}]]影响时不能放置{{tr|Portals}}。不过，它们''可以''在{{tr|event}}开始''前''放置。
+* 在{{tr|Expert mode}}中，当玩家的{{tr|inventory}}已经有{{tr|Portal Gun}}时，打开[[{{tr|Treasure Bags}}#{{tr|Moon Lord}}|{{tr|Moon Lord}}的{{tr|Treasure Bag}}]]不会掉落{{tr|Portal Gun}}。
+* {{tr|Portals}}不能放在[[{{tr|Anti-Portal Block}}]]上。
+
+== 小贴士 ==
+* 玩家可以通过将{{tr|Portals}}的“出口”水平放置，以便将坠落速度转换成{{tr|horizontal movement speed}}。以 {{mph|179}} 的速度落入{{tr|portal}}中，就会得到高达 {{mph|179}} 的水平速度（这种转换方式，也被称作“{{tr|Portal}}折叠”）。这可以通过装备高级[[{{tr|wings}}]]并将“出口”放置在水平开阔地带的方式来实现。
+** 玩家可以将[[{{tr|Inner Tube}}]]给予的极高速度从垂直速度转化为水平速度。配置正确时（造一条竖直的水道，在顶端放两个{{tr|portals}}，其中之一开口向左或向右，另一个则开口向下。然后，玩家需要以最大距离进入水道的底部，但不要太远以免{{tr|portals}}消失），玩家最高可以达到至少 {{mph|514}} 的水平速度。如果搭配[[{{tr|Celestial Starboard}}]]和[[{{tr|Soaring Insignia}}]]等{{tr|accessories}}，玩家就可以维持这一速度并躲过大部分障碍物。不过，由于{{tr|Portal Gun}}在击败{{tr|Moon Lord}}后才能获得，并且搭建场地也很费力气，因此玩家更好的选择可能是使用[[{{tr|Pylons}}]]（在游戏的这一阶段，玩家很可能已经拥有{{tr|Pylons}}了）而不是上述的“新奇方法”。
+* 更高的坠落速度可以用来更快地沿[[{{tr|hellevator}}]]下行。
+* 练习过足够多次后，玩家就可以使用{{tr|Portal Gun}}完全躲开{{tr|enemy}}或 {{tr|boss}} 的攻击，然后立刻回归战场继续与{{tr|enemy}}/{{tr|boss}} 战斗。
+* 使用{{tr|Grapple}}抓住{{tr|portal}}时，会让玩家向{{tr|portal}}的方向被发射出去，和[[{{tr|doors}}]]被{{tr|Grapple}}抓住的时候类似。
+
+== 花絮 ==
+* {{tr|The Portal Gun}}直接致敬了 2007 年的平台解密电子游戏{{维基百科|b=y|Portal (video game)|传送门（Portal）}}。其中，{{tr|The Portal Gun}}是游戏的主要机制，能够发射让玩家可以快速长距离移动的传送门。除此之外，{{tr|The Portal Gun}}还可以发射蓝色和橙色的{{tr|portals}}，这也是原版游戏中的{{tr|portals}}颜色。
+** {{tr|Portal Gun}}的{{tr|The flavor text}}直接引用了《传送门》中最重要的对手 {{wikipedia|GLaDOS}} 为玩家解释动量会在穿过{{tr|portals}}时保留时说的话：“用外行的话说，快进快出。（In layman's terms, speedy thing goes in, speedy thing comes out.）”
+** {{tr|The Portal Gun}}由{{tr|the Moon Lord}}掉落这一点，是参考了{{维基百科|b=y|Portal 2|t=传送门2}}，其中玩家必须向月亮发射一个传送门，来打败游戏中最重要的敌人 {{维基百科|Wheatley (Portal)|Wheatley}}，而{{tr|the Portal Gun}}随后就会被吸入太空中。
+** 玩家使用{{tr|Portal Gun}}能达到的最大速度，与《传送门》中的最大速度相同。
+* 尽管由{{tr|Moon Lord}}掉落，但它的[[{{tr|rarity}}]]只是{{iteminfo|Portal Gun|rare}}。
+* [[{{tr|multiplayer}}]]中的不同玩家有不同的{{tr|portal}}颜色，这参考了《传送门2》中的多人游戏设计，其中每名玩家的{{tr|portals}}都各不相同。
+
+== 另见 ==
+* {{item|Portal Gun Station|icons=n}}
+* {{item|Anti-Portal Block|icons=n}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|为{{tr|Portal Gun}}添加了{{tr|flavor text}}和信息文本。}}
+{{history|Desktop 1.3.3|修复第二次发射在手柄上与发射{{tr|Grappling Hooks}}相冲突的问题。}}
+{{history|Desktop 1.3.0.5|{{tr|Portal Gun}}的{{tr|Portal Bolt}}速度变为原来的四倍，这会阻止玩家比它移动得更快。}}
+{{history|Desktop 1.3.0.4|
+** 修复了{{tr|Portal Gun}}的右击可在[[{{tr|Camera Mode}}]]中生效的问题。
+** 如果终点位于同一屏幕区域，则传送不应再使屏幕变黑。
+** 根据所做的对传送和速度的若干修复，持有{{tr|Portal Gun}}时的最大掉落速度已经变为原来的三倍。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|为{{tr|Portal Gun}}添加了{{tr|flavor text}}和信息文本。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.4.4|为{{tr|Portal Gun}}添加了{{tr|flavor text}}和信息文本。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|为{{tr|Portal Gun}}添加了{{tr|flavor text}}和信息文本。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Portal Gun}}

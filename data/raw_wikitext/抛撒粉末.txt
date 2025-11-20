@@ -1,0 +1,89 @@
+{{quotation|[[{{tr|Dryad}}]]|{{gameText|LegacyDialog.69}}}}
+[[File:Thrown Powder (demo).gif|thumb|对{{tr|Grass Walls}}和{{tr|Stone Block}}使用{{tr|Thrown Powders}}的效果。注意只有距离{{tr|blocks}}/{{tr|platforms}} 1 个{{tr|tile}}范围内的{{tr|walls}}会受影响。]]
+[[File:Thrown Powder area of effect.png|thumb|{{tr|thrown powder}}的作用范围。]]
+
+'''{{tr|Thrown Powders}}'''是能够用来将[[{{tr|blocks}}]]和[[{{tr|Background walls}}|{{tr|walls}}]]在其[[{{tr|The Crimson}}|{{tr|Crimson}}]]、[[{{tr|The Corruption}}|{{tr|Corrupt}}]]、或{{eicons|1.4.0.1|invert=y}}[[{{tr|The Hallow}}|{{tr|Hallowed}}]]状态间转化的物品。被抛撒时，它们会放出距离很短的粉末（范围和[[{{tr|Broadsword}}]]的攻击范围相近），并产生一定量的光。{{tr|Thrown Powder}}有三个{{tr|variants}}：
+
+----'''{{tr|Purification Powder}}'''能将任何{{tr|Corrupted}}或{{tr|Crimson}}{{tr|Blocks}}转化为纯净状态（但不能转化{{tr|walls}}），如将[[{{tr|Ebonstone Block}}]]转化为[[{{tr|Stone Block}}]]或将[[{{tr|Crimsand Block}}]]转化为[[{{tr|Sand Block}}]]。在没有发生[[{{tr|Blood Moon}}]]时，它可以从[[{{tr|Dryad}}]]处以每个 {{iteminfo|Purification Powder|buy}} 的价格购买。
+
+{{eicons|1.4.0.1}} 将[[{{tr|Purification Powder}}]]撒向[[{{tr|Mystic Frog}}]]以将其变为[[{{tr|Mystic Slime}}]]
+
+{{eicons|Tortured Soul}} 在[[{{tr|Hardmode}}]]下，可以将{{tr|Purification Powder}}撒向[[{{tr|Tortured Soul}}]]以将其变为[[{{tr|Tax Collector}}]] [[{{tr|NPC}}]]。
+
+和[[{{tr|Holy Water}}]]和[[{{tr|Blue Solution}}]]不同，{{tr|Purification Powder}}不能散播或净化{{tr|Hallow}}。
+
+----'''{{tr|Vile Powder}}'''能将{{tr|block}}和{{tr|wall}}（包括{{tr|Crimson}}和{{tr|Hallowed}}的）转化为 {{eicons|1.4.0.1}} {{tr|Corrupted}}状态 / {{eicons|1.4.0.1|invert=y}} 纯净状态，如将[[{{tr|Pearlstone Block}}]]转化为 {{eicons|1.4.0.1}} {{tr|Ebonstone Block}} / {{eicons|1.4.0.1|invert=y}} {{tr|Stone Block}}。如果向[[{{tr|Bunny}}]]、[[{{tr|Penguin}}]]、或[[{{tr|Goldfish}}]]抛撒，它们会被转化为{{tr|Corrupted}}{{tr|variants}}，分别为：[[{{tr|Corrupt Bunny}}]]、[[{{tr|Corrupt Penguin}}]]、和[[{{tr|Corrupt Goldfish}}]]。它可以用[[{{tr|Vile Mushroom}}]]制作，或在{{tr|Corrupt}}{{tr|world}}中发生[[{{tr|Blood Moon}}]]时，从{{tr|Dryad}}处以每个 {{iteminfo|Vile Powder|buy}} 的价格购买。
+
+{{eicons|1.4.0.1}} {{tr|Vile Powder}}会将{{tr|Corruption}}散播到[[{{tr|Biome spread}}#{{tr|Hardmode}}的蔓延|可转化的{{tr|tiles}}]]上。
+
+{{eicons|1.4.0.1|invert=y}} 和[[{{tr|Unholy Water}}]]、[[{{tr|Purple Solution}}]]不同，{{tr|Vile Powder}}不能散播{{tr|Corruption}}。
+
+----'''{{eil|Vicious Powder|nl=y}}'''和其{{tr|counterpart}}：{{tr|Vile Powder}}在功能上相似，能将{{tr|block}}和{{tr|wall}}（包括{{tr|Corrupted}}和{{tr|Hallowed}}的）转化为 {{eicons|1.4.0.1}} {{tr|Crimson}}状态 / {{eicons|3ds=1}} 纯净状态。如果向{{tr|Bunny}}、{{tr|Penguin}}、或{{tr|Goldfish}}抛撒，它们会被转化为{{tr|Crimson}}{{tr|variants}}，分别为：[[{{tr|Vicious Bunny}}]]、[[{{tr|Vicious Penguin}}]]、和[[{{tr|Vicious Goldfish}}]]。它可以用[[{{tr|Vicious Mushroom}}]]制作，或在{{tr|Crimson}}{{tr|world}}中发生{{tr|Blood Moon}}时，从{{tr|Dryad}}处以每个 {{iteminfo|Vicious Powder|buy}} 的价格购买。
+
+{{eicons|1.4.0.1}} {{tr|Vicious Powder}}会将{{tr|Crimson}}散播到[[{{tr|Biome spread}}#{{tr|Hardmode}}的蔓延|可转化的{{tr|tiles}}]]上。
+
+{{eicons|3ds=1}} 和[[{{tr|Blood Water}}]]、[[{{tr|Red Solution}}]]不同，{{tr|Vicious Powder}}不能散播{{tr|Crimson}}。
+
+== 变体种类 ==
+{{infobox wrapper | direction = row | float = none
+|{{item infobox
+| type = Miscellaneous
+| tooltip = @@@@ {{eicons|1.2.4|small=y}}<br/>净化{{tr|the corruption}} {{eicons|1.2.4|invert=y|small=y}}
+| auto = 66
+| tags = vendor / vendor:Dryad
+}}
+|{{item infobox
+| auto = 67
+| type = Miscellaneous
+| tooltip = @@@@ {{eicons|1.4.0.1|small=y}}<br/>驱逐{{tr|the Hallow}}<br/>移除{{tr|the Hallow}} {{eicons|1.3.0.1|invert=y|small=y}}
+| tags = vendor / vendor:Dryad
+}}
+|{{item infobox
+| type = Miscellaneous
+| tags = vendor / vendor:Dryad
+| auto = 2886
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=LIKE % Powder|expectedrows=2}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE % Powder|resultnot=Exploding Bullet|expectedrows=5}}
+
+== 备注 ==
+* {{tr|Purification Powder}}无法清除{{tr|Corrupt}}或{{tr|Crimson}}[[{{tr|thorny bushes}}]]，玩家需要在它们使对应{{tr|biome}}蔓延前手动破坏它们。
+* 要使{{tr|walls}}受影响，被使用{{tr|Thrown Powder}}的{{tr|wall}}附近 1 个{{tr|tile}}范围内必须有{{tr|block}}。{{tr|Purification Powder}}无法将{{tr|Corrupted}}/{{tr|Crimson}}{{tr|walls}}转化为纯净状态。
+** [[{{tr|Clentaminator}}]]是转化{{tr|background walls}}的更简便替代品。
+
+== 小贴士 ==
+* {{tr|Purification Powder}}是少数[[{{tr|pre-Hardmode}}]]无需击败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]就能穿过[[{{tr|Ebonstone}}]]或[[{{tr|Crimstone}}]]来到达[[{{tr|Shadow Orbs}}]]/[[{{tr|Crimson Hearts}}]]的方法之一，其它方法包括使用[[{{tr|explosives (class)}}]]或 {{eicons|1.4.0.1|invert=y}} 使用[[{{tr|Reaver Shark}}]]。
+
+== 另见 ==
+* [[{{tr|Clentaminator}}]]
+* [[{{tr|Thrown Water}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Vile Powder}}和{{tr|Vicious Powder}}现在能够散播对应的{{tr|biome}}，并将{{tr|the Hallow}}直接转化为对应{{tr|biome}}而非净化。}}
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}{{tr|Purification Powder}}、{{tr|Vile Powder}}、和{{tr|Vicious Powder}}的旧外观分别为：[[File:Purification Powder (pre-1.3.1).png]]、[[File:Vile Powder (pre-1.3.1).png]]、和[[File:Vicious Powder (pre-1.3.1).png]]。}}
+{{history|Desktop 1.3.0.6|{{tr|Vicious Powder}}现在会由{{tr|Dryad}}出售。}}
+{{history|Desktop 1.3.0.4|{{tr|Vicious Powder}}现在被用于{{tr|the Bloody Spine}}的{{tr|crafting recipe}}。}}
+{{history|Desktop 1.3.0.1|
+** 引入{{tr|Vicious Powder}}。
+** {{tr|Vile Powder}}的{{tr|tooltip}}由“移除{{tr|the Hallow}}”改为“驱逐{{tr|the Hallow}}”。
+** {{tr|Purification Powder}}现在能净化{{tr|Tortured Souls}}。}}
+{{history|Desktop 1.2.4|{{tr|Purification Powder}}的{{tr|Tooltip}}由“净化{{tr|the corruption}}”改为“净化{{tr|evil}}”。}}
+{{history|Desktop 1.2.3|{{tr|Vile Powder}}不再在{{tr|Crimson worlds}}中出售。}}
+{{history|Desktop 1.2|{{tr|Purification Powder}}和{{tr|Vile Powder}}的{{tr|sprites updated.}}旧外观分别为：[[File:Purification Powder (old).png]] 和 [[File:Vile Powder (old).png]]。}}
+{{history|Desktop 1.1|{{tr|Vile Powder}}不再造成伤害，且现在会移除{{tr|Hallow}}。}}
+{{history|Desktop-Release|{{tr|Introduced}}{{tr|Purification Powder}}和{{tr|Vile Powder}}。}} <!--Introduced needs to be the first word-->
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+{{language info|en=Thrown Powder}}

@@ -1,0 +1,46 @@
+{{exclusive|Eternia Crystal (NPC)}}
+{{buff infobox
+| auto = 199
+| effects = 不能建造或破坏{{tr|blocks}}
+}}
+
+'''{{tr|Creative Shock}}'''是一种在[[{{tr|Old One's Army}}]][[{{tr|event}}]]期间受到的[[{{tr|debuff}}]]。被它影响的玩家不能放置或破坏{{tr|blocks}}。{{tr|debuff}}会在以下情况下取消：玩家打败{{tr|Old One's Army}}、[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]被摧毁或他们移动到{{tr|debuff}}作用区域的范围之外。{{tr|debuff}}作用区域的范围从[[{{tr|Eternia Crystal Stand}}]]最下方中心的方块开始测量（细节参见[[#物块|物块]]）。一旦玩家回到该范围，{{tr|debuff}}就会被重新附加。
+
+== 原因 ==
+=== 来自环境 ===
+{| class="terraria"
+! 来源
+! 持续时间
+! 几率
+|-
+| [[{{tr|Old One's Army}}]]
+| 整个{{tr|event}}期间，且在范围内
+| 100%
+|}
+
+== 备注 ==
+* {{tr|The Creative Shock}}的区域根据以下条件计算：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.Events.DD2Event.FindArenaHitbox}}
+** 首先，游戏会检查[[{{tr|Mysterious Portal}}]]和[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]所处的位置，并找到它们最左上角（<code>vector</code>）和最右下角（<code>vector2</code>）的坐标。例如，{{tr|Mysterious Portal}}位于最右侧，{{tr|Eternia Crystal}}是三者中最低的，那么 <code>vector2</code> 的坐标就是{{tr|the Mysterious Portal}}的横坐标以及{{tr|Eternia Crystal}}的纵坐标。
+** 此后，游戏会将 <code>vector</code> 的横纵坐标各减少 50 格，<code>vector2</code> 的横纵坐标各增加 50 格。
+** 最后，<code>vector</code> 以及 <code>vector2</code> 的坐标就是{{tr|Creative Shock}}的作用范围的边界。
+* 虽然在该{{tr|debuff}}下[[{{tr|torch}}]]不能被[[{{tr|pickaxes}}]]或[[{{tr|drill}}]]移除，但可以被 {{key|open}} 移除。
+* [[{{tr|Cobweb}}]]可以被[[{{tr|Tools}}]]或玩家身体破坏，但它们不可以被放置。
+* [[{{tr|explosives (class)}}]]''可以''摧毁容易受到影响的[[{{tr|block}}]]。
+* [[{{tr|Bucket}}]]不可以放置或移除[[{{tr|liquid}}]]。
+* [[{{tr|Wire}}]]和[[{{tr|Actuator}}]]仍然可以放置。
+
+== 历史 ==
+{{history|Desktop 1.3.4.2|修复了在{{tr|Creative Shock}}生效的情况下[[{{tr|Drill Containment Unit}}]]依然可用的 {{tr|bug}}。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Creative Shock}}

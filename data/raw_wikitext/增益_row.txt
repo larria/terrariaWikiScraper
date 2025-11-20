@@ -1,0 +1,37 @@
+<includeonly><!--
+
+-->
+{{!-}}
+{{!}} {{#if:{{{image|}}}|{{buff|{{{1|}}}|mode=table|image={{{image|}}}}}|{{buff|{{{1|}}}|mode=table}}}}
+{{!}} {{{source|{{item|{{{3|}}}|wrap=y}}}}}
+{{!}} {{{2|}}}
+{{!}} {{{tooltip|{{getBuffInfo|{{BuffIdFromName|{{{1|}}}}}|tooltip}}}}}
+{{!}} style="text-align:right" {{!}} {{{duration|{{getItemInfo|{{{3|}}}|buffduration}}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+create a row for "Consumables" table.
+
+; Unnamed parameter 1
+buff name.
+
+; Unnamed parameter 2
+Description of the buff's effect.
+
+; Unnamed parameter 3 (optional)
+source item name.
+
+;(optional) source =  
+Buff source, Will be <code><nowiki>{{eil|{{ItemNameFromId|<$3>}}}}</nowiki></code> if omitted.
+
+;(optional) tooltip = 
+Tooltip of the buff. Will be detected automatically if omitted.
+
+;(optional) duration = 
+Duration of the buff. Will be detected automatically if omitted.
+
+{{language info|en=Buffs/row}}
+</noinclude>

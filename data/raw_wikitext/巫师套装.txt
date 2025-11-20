@@ -1,0 +1,100 @@
+{{purge cargo}}
+{{item infobox
+| type = Armor/Set
+| rare =
+| setbonus = {{item|Magic Hat|mode=image|nolink=y|maxsize=20x16px}}&#8239;&#58;&nbsp;{{gameText|ArmorSetBonus.MagicHat}}<br/>{{item|Wizard Hat|mode=image|nolink=y|maxsize=20x16px}}&#8239;&#58;&nbsp;{{gameText|ArmorSetBonus.Wizard}}
+| cargo = no
+}}
+
+'''{{tr|Wizard set}}'''是一套由任意一件魔法头部装备和任意一件魔法长袍组成的套装。其中魔法长袍可以选择所有 6 种{{tr|Gem Robe}}之一，这由[[{{tr|gem}}]]和[[{{tr|robe}}]]制作，或从[[{{tr|Traveling Merchant}}]]处购买的{{eil|Mystic Robe}}。魔法头部装备则可以选择由[[{{tr|Tim}}]]掉落的[[{{tr|Wizard Hat}}]]，或者偶尔由{{tr|Traveling Merchant}}出售的{{eil|Magic Hat}}。可以任意选择其他腿部装备而不会影响获取套装奖励。
+
+
+== 套装部件 ==
+{| class="terraria sortable align-center lined Variants-table"
+|-
+! colspan = 2 | 物品
+! 装备后的外观
+! 身体部位
+! {{tr|Defense}}
+! {{tr|Bonus}}
+! {{tr|Rarity}}
+! data-sort-type=number | 购买
+! data-sort-type=number | 卖出
+{{#cargo_query:tables=Items
+|format=template
+|template=:Wizard set/row0
+|named args=yes
+|fields= _pageName=page, itemid, name, bodyslot, defense, buy, sell, rare, internalname
+|group by=itemid
+|order by=itemid
+|where= itemid in (2275, 238)
+|no html
+|limit=1000
+}}
+{{#cargo_query:tables=Items
+|format=template
+|template=:Wizard set/row0
+|named args=yes
+|fields= _pageName=page, itemid, name, bodyslot, defense, buy, sell, rare, internalname
+|group by=itemid
+|order by=rare
+|where= itemid in (2279, 1282, 1283, 1284, 1285, 1286, 1287, 4256)
+|no html
+|limit=1000
+}}
+|}
+
+== 套装 ==
+{{item/options|mode=image|icons=n|maxsize=x20px}}
+{| class="sortable terraria lined align-center"
+|-
+! rowspan=2 | {{tr|Set}}
+! rowspan=2 colspan=2 | 部件
+! rowspan=2 | {{tr|Defense}}
+! colspan=4 | {{tr|Bonus}}
+! rowspan=2 | {{tr|Set Bonus}}
+! rowspan=2 data-sort-type=number | 卖价
+|-
+! data-sort-type=number | {{tr|Magic damage}}
+! data-sort-type=number | 魔法[[{{tr|Critical strike chance}}]]
+! data-sort-type=number | 最大{{tr|mana}}
+! data-sort-type=number | {{tr|Mana}}消耗
+{{/row|type=Mystic|damage=6|crit=6|cost=10}}
+{{/row|type=Amethyst|mana=20|cost=5}}
+{{/row|type=Topaz|mana=40|cost=7}}
+{{/row|type=Sapphire|mana=40|cost=9}}
+{{/row|type=Emerald|mana=60|cost=11}}
+{{/row|type=Ruby|mana=60|cost=13}}
+{{/row|type=Amber|mana=60|cost=13}}
+{{/row|type=Diamond|mana=80|cost=15}}
+|}{{item/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=Amethyst Robe/Topaz Robe/Sapphire Robe/Emerald Robe/Ruby Robe/Diamond Robe/Amber Robe|expectedrows=7}}
+
+== 小贴士 ==
+* 玩家在游戏初期就能轻松获得该套装：可以使用[[{{tr|Extractinator}}]]从[[{{tr|Silt Block}}]]或[[{{tr|Slush Block}}]]中提取[[{{tr|Diamond}}]]，而穿着任意魔法长袍时[[{{tr|Tim}}]]的生成概率会大大提高，使得玩家能早早取得{{tr|Wizard Hat}}。
+* 对于不关心[[{{tr|defense}}]]的{{tr|magic}}玩家来说，{{tr|Mystic Robe}}配合{{tr|Wizard Hat}}可被视为[[{{tr|pre-Hardmode}}]]最强的{{tr|magic armor}}，因为它们的进攻性属性大大超过了[[{{tr|Jungle armor}}]]和[[{{tr|Meteor armor}}]]。由于此{{tr|set}}仅由两个部件组成，可以在{{tr|leggings slot}}穿着来自其他{{tr|armor set}}的另一件{{tr|armor}}，进一步增加奖励。
+
+== 花絮 ==
+* {{tr|Wizard set}}是目前游戏中仅有的两套由两个部件组成的{{tr|armor set}}之一，另一套是[[{{tr|Rain armor}}]]。
+
+== 另见 ==
+* [[{{tr|Wizard's Hat}}]]
+* [[{{tr|Rune set}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|将{{tr|Gypsy Robe}}重命名为[[{{tr|Mystic Robe}}]]。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Amber Robe}}。}}
+{{history|Desktop 1.2.3|
+** 添加了[[{{tr|Gypsy Robe}}]]和[[{{tr|Magic Hat}}]]。 
+** 为所有[[{{tr|Robe}}#{{tr|Used in}}|{{tr|Gem robes}}]]更新贴图。}}
+{{history|Desktop 1.2|添加了[[{{tr|Robe}}#{{tr|Used in}}|{{tr|Gem robes}}]]。}}
+{{history|Desktop 1.0.3|添加了{{tr|Wizard Hat}}。}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Wizard set}}

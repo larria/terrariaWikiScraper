@@ -1,0 +1,40 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| auto = 533
+| image = Desert Spirit.gif
+| environment = Underground Desert+Underground Corruption / Underground Desert+Underground Crimson
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/> {{modes|60|88|132}} {{note|small=y|paren=y|{{gameText|ProjectileName.DesertDjinnCurse}}}}
+|:group:start|一次只会掉落 2 个物品中的一个|
+| Desert Spirit Lamp|1|2.5%
+| Djinn's Curse|1|3.25% <!-- 39/40 * 1/30 -->
+|:group:end|--------------------------------------------------------|------------------------
+| sound1 = Item 8.wav
+| soundcaption1 = {{gameText|ProjectileName.DesertDjinnCurse}}
+| sound2 = Item 8.wav
+| soundcaption2 = Teleport
+| hardmode = yes
+| idprojectile = 596
+}}
+
+'''{{tr|Desert Spirit}}'''是一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，出现于[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]的[[{{tr|Underground Desert}}]]{{tr|biomes}}。
+相较于其他{{tr|enemies}}，{{tr|Desert Spirit}}有一种独特的攻击方式。当它接近{{tr|player}}的时候，{{tr|Desert Spirit}}会发射一种带颜色的追踪弹，这种追踪弹会逐渐加速靠近{{tr|player}}，并可以穿过[[{{tr|block}}]]。在飞行一段时间后追踪弹会产生小范围爆炸。{{tr|projectiles}}不造成{{tr|damage}}，但它们的爆炸会。和其他[[{{tr|Caster AI}}|{{tr|casters}}]]相同，{{tr|Desert Spirit}}在攻击后会传送位置，然后重复这一过程。
+
+== {{tr|Trivia}} ==
+* {{tr|Desert Spirits}}指的是{{wikipedia|jinn|灵怪}}(英文中称其为"genies")，这类看不见的心灵的神话生物通常与古代和现代的阿拉伯伊斯兰教神话有关。
+* {{tr|Desert Spirit}}和{{tr|Desert Spirit Lamp}}的联系是对《{{wikipedia|Aladdin|阿拉丁神灯}}》的引用，这个故事出自阿拉伯民间故事集《{{wikipedia|One Thousand and One Nights|一千零一夜}}》，故事中的主角通过摩擦{{wikipedia|oil lamp|油灯}}来召唤一个神灯精灵，精灵将实现拥有者的愿望。
+{{bestiary}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|{{tr|Desert Spirit's Curse}}的{{tr|damage}}从 80/{{expert|120}}/{{master|180}} 降低至 60/{{expert|88}}/{{master|132}}。}}
+{{history|Desktop 1.3.3|现在可以掉落[[{{tr|Djinn's Curse}}]]和[[{{tr|Desert Spirit Lamp}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|现在可以掉落{{tr|Djinn's Curse}}和{{tr|Desert Spirit Lamp}}。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+{{language info|en=Desert Spirit}}

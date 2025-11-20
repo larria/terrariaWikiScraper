@@ -1,0 +1,22 @@
+{{see also|{{tr|Coins}}|{{tr|NPCs}}#买入与卖出}}
+
+'''{{tr|Value}}'''以物品值多少货币来描述。如果由 [[{{tr|NPC}}]] 出售，它同时也就是 {{tr|NPC}} 出售此物品的售价。卖出时，物品总是卖得购买价格的 {{chance|1/5}}，向下取整。取整会导致对物品的确切价格产生混淆。物品所带有的[[{{tr|Modifier}}]]也会改变其价值。
+
+[[{{tr|Goblin Tinkerer}}]]收取物品当前价值的三分之一来[[{{tr|reforge}}]]，大约是其卖出价格的 1.67 倍。
+
+== 例子 ==
+[[{{tr|Musket Ball}}]]的{{tr|value}}为 {{iteminfo|Musket Ball|buy}}。
+*卖出单个{{tr|Musket Ball}}会得到 {{iteminfo|Musket Ball|sell}}。一颗{{tr|Musket Ball}}的价值是 {{iteminfo|Musket Ball|buy}}，而 {{iteminfo|Musket Ball|value|raw=y}} / 5 = {{buy expr|Musket Ball|/5}}。在取整后，结果是 {{buy expr||floor(|Musket Ball|/5)}}。
+
+== 备注 ==
+* 物品的价格可以通过装备[[{{tr|Discount Card}}]]或{{eil|Greedy Ring}}来降低，并且在{{eversions|Happiness|short=y}}中，价格还会基于 {{tr|NPC}} 的[[{{tr|Happiness}}|{{tr|happiness level}}]]而升高或降低。在本 {{tr|wiki}} 中，显示在{{tr|item}}的信息框（infobox）中的价值总是指基准价值，不受这两个因素影响。
+* {{eicons|Ruler|not=1.4.0.1}} [[{{tr|Ruler}}]]是个例外：它的卖出价为 {{sc|33}}，是其买价（{{gc|1}}）的三分之一而非五分之一。
+
+== 历史 ==
+{{history|Desktop 1.0.6.1|改变了成组物品的价值的取整方式，以修正卖出/买回不一致的问题。}}
+
+{{Game mechanics}}
+
+[[Category:物品|*]]
+
+{{language info|en=Value}}

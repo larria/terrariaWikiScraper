@@ -1,0 +1,120 @@
+{{exclusive|Old One's Army}}
+{{npc infobox|boxwidth=340px
+| auto = 551
+| image = Animated Betsy.gif
+| type = Boss
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|70|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2BetsyFireball}}}}<br/>{{modes|70|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2BetsyFlameBreath}}}} {{source code ref|v=1.4.4.9|name=betsyai|method=Terraria.NPC.AI_110_Betsy}}
+| debuff = On Fire!
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.DD2BetsyFlameBreath}}}}
+| debuffduration = {{modes|7–10 秒|14–20 秒|17.5-25 秒}} {{source code ref|v=1.4.0.5|name=breathai|method=Terraria.Projectile.StatusPlayer}}
+| :group:start|总是会掉落以下 4 件{{tr|items}}之一{{source code ref|v=1.4.0.5|name=betsydrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_Betsy}}|4 @normal
+| Aerial Bane|1|25% @normal
+| Sky Dragon's Fury|1|25% @normal
+| Betsy's Wrath|1|25% @normal
+| Flying Dragon|1|25% @normal
+|:group:end|----|----
+| Betsy's Wings|1|25% @normal
+| Betsy Mask|1|14.29% @normal
+| Betsy Trophy|1|10%
+| Treasure Bag (Betsy)|1|{{expert|100%}} #expert
+ |:loot:start|------------------------------------|- #expert
+  | Betsy Mask|1|14.29% #expert
+  | Betsy's Wings|1|25% #expert
+  | Defender Medal|30-49|100% #expert
+  |:group:start|总是会掉落以下 4 件{{tr|items}}之一| #expert
+  | Aerial Bane|1|25% #expert
+  | Sky Dragon's Fury|1|25% #expert
+  | Betsy's Wrath|1|25% #expert
+  | Flying Dragon|1|25% #expert
+  |:group:end|-----------------------------------|
+  |:loot:end|---------------------------------------|-
+| Betsy's Egg|1| {{master|25%}} @master
+| Betsy Relic|1| {{master|100%}} @master
+
+| hardmode = yes
+| imageother = Map Icon Betsy.png
+| imageothercaption = Map Icon
+
+| idprojectile = 686, 687
+| sound1 = Dd2 betsy wind attack 0.wav, Dd2 betsy wind attack 1.wav, Dd2 betsy wind attack 2.wav
+| soundcaption1 = 冲锋
+| sound2 = Dd2 betsy fireball shot 0.wav, Dd2 betsy fireball shot 1.wav, Dd2 betsy fireball shot 2.wav 
+| soundcaption2 = {{gameText|ProjectileName.DD2BetsyFireball}}
+| sound3 = Dd2 betsy fireball impact 0.wav, Dd2 betsy fireball impact 1.wav, Dd2 betsy fireball impact 2.wav
+| soundcaption3 = {{gameText|ProjectileName.DD2BetsyFireball}}碰撞
+| sound4 = Dd2 betsy flame breath.wav
+| soundcaption4 = {{gameText|ProjectileName.DD2BetsyFlameBreath}}
+| sound5 = Dd2 betsy flying circle attack.wav
+| soundcaption5 = 绕圈飞行
+| sound6 = Dd2 betsy scream.wav
+| soundcaption6 = 咆哮
+| sound7 = Dd2 betsy summon 0.wav, Dd2 betsy summon 1.wav, Dd2 betsy summon 2.wav
+| soundcaption7 = 召唤{{tr|Etherian Wyvern}}
+}}
+{{for|{{tr|Betsy}}主题的{{tr|pet}}|{{tr|Itsy Betsy}}}}
+
+'''{{tr|Betsy}}'''是个[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|mini boss}}]]，在 {{tr|Tier 3}}的[[{{tr|Old One's Army}}]][[{{tr|event}}]]的第七波，也是最后一波中生成。和所有{{tr|Old One's Army}}的{{tr|enemies}}一样，她会在{{tr|event}}完成或失败后消失。击败{{tr|Betsy}}是仅有的完成{{tr|event}}最后一波的方法。
+
+== 行为 ==
+被召唤后，{{tr|Betsy}}会以随机顺序施展下列攻击。如果和玩家的距离足够近，她会以玩家为目标而非[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]。
+* {{tr|Betsy}}绕大圈飞行。
+* {{tr|Betsy}}向玩家或{{tr|Eternia Crystal}}连续冲刺两次。
+* {{tr|Betsy}}悬停在原地并咆哮，在身边生成两只 {{tr|T3}}的[[{{tr|Etherian Wyvern}}]]，并在[[{{tr|Mysterious Portal}}]]处额外生成三只。
+** 如果{{tr|world}}中已存在至少 5 只{{tr|Etherian Wyverns}}，此攻击不会召唤{{tr|Etherian Wyverns}}。<ref name="betsyai"/>
+* {{tr|Betsy}}向前短距离冲刺，并发射六个小型的{{item|link=|Betsy's Fireball|s|scale=0.4}}，它们受重力影响并会在接触玩家、[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]、或实心块时爆炸。
+* {{tr|Betsy}}飞到屏幕边缘，然后水平直线飞行。飞行时，她会从嘴部向下喷出一束燃烧的{{item|link=|Betsy's Breath|ext=gif|size=40px}}，伤害玩家并造成 7–10 / {{expert|14–20}} / {{master|17.5–25}} 秒的[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+
+== 成就 ==
+{{achievement|name=Hero of Etheria}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Old One's Army}}攻略}}
+* [[{{tr|On Fire!}}]][[{{tr|debuff}}]]是主要的伤害来源，注意它会消除来自[[{{tr|Nebula armor}}]]的{{tr|set bonus}}的生命再生。——因此，如果玩家无法避开{{tr|Betsy}}的火焰吐息攻击，它可能会让此{{tr|armor}}变得很没效率。
+** [[{{tr|Obsidian Skin Potion}}]]可以防止此{{tr|debuff}}。
+** 可以用浮动[[{{tr|water}}]]池（利用 [[{{tr|Bubble}}]]）来取消{{tr|On Fire!}}{{tr|debuff}}。[[{{tr|Honey}}]]也会取消此{{tr|debuff}}并且还能提供额外的{{tr|life regeneration}}，但浸没其中时会减慢移动。
+** 这不适用于诸如使用{{tr|Spectre Hood}}时[[{{tr|Spectre armor}}]]的{{tr|set bonus}}或[[{{tr|Vampire Knives}}]]等的[[{{tr|lifesteal}}]]效果。它也不影响[[{{tr|Life Drain}}]]的生命再生{{tr|boost}}。
+
+== 花絮 ==
+{{float file|[[File:Betsy Crossover source.jpg|thumb|150x150px|《{{tr|Dungeon Defenders 2}}》中的{{tr|Betsy}}]]}}
+* {{iwlink|dd2|Betsy}}是来自[https://dungeondefenders.com/ 《{{tr|Dungeon Defenders 2}}》]的 {{tr|boss}}，[[1.3.4]] 更新带来了两个游戏之间的[[{{tr|crossover}}]]{{tr|event}}。
+* {{tr|Betsy}}的[[{{tr|Treasure Bag}}]]是仅有的不包含[[{{tr|Expert mode}}]]独有{{tr|item}}的可获得的{{tr|Treasure bag}}，也是仅有的可由[[{{tr|event}}]]独有[[{{tr|mini-boss}}]] 掉落的{{tr|Treasure Bag}}。
+* {{tr|Betsy}}的飞行和发射{{tr|projectiles}}的攻击行为与[[{{tr|Duke Fishron}}]]非常相似。不过，不像{{tr|Duke Fishron}}，她作为 {{tr|boss}} 并没有额外的阶段。
+* {{tr|Betsy}}，以及[[{{tr|Etherian Wyvern}}]]，不同于《{{tr|Terraria}}》的较长的、分节的[[{{tr|Wyvern}}]]且不具有[[{{tr|Worm AI}}]]。这是因为{{tr|Betsy and the Etherian Wyvern}}是典型的{{维基百科|wyvern|t=双足龙}}，而{{tr|Terraria}}的{{tr|Wyvern}}是{{维基百科|Chinese dragon|中国龙}}。 
+* {{tr|Betsy}}掉落的四件{{tr|weapon}}和在《[https://dungeondefenders.com {{tr|Dungeon Defenders 2}}]》中在“The Wyvern's Den”（双足龙巢穴）地图中击败她后掉落的{{tr|weapon}}相同，每一把都可以独有地由四个基础角色之一装备。
+** [[{{tr|Flying Dragon|link=y}}|{{tr|Flying Dragon}}]]是一把由 {{iwlink|dd2|Squire}}（侍卫）使用的{{tr|sword}}；
+** [[{{tr|Betsy's Wrath}}]]是一把由 {{iwlink|dd2|Apprentice}}（学徒）使用的{{tr|staff}}；
+** [[{{tr|Aerial Bane}}]]是一把由 {{iwlink|dd2|Huntress}}（女猎人）使用的{{tr|bow}}。
+** [[{{tr|Sky Dragon's Fury}}]]是一把由 {{iwlink|dd2|Monk}}（武僧）使用的长柄武器。
+{{bestiary|article=}}
+
+== 图库 ==
+<gallery widths=418px heights=382px>
+File:Betsy (Summon).gif|召唤{{tr|Etherian Wyverns}}的动画
+File:Betsy (Attack).gif|{{tr|Projectile attack}}的动画
+</gallery>
+
+== 另见 ==
+* {{dd2 link}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|
+** 修正了{{tr|Betsy}}的战利品的掉落几率仅为正确几率的一半的 {{tr|bug}}。
+** 现在首次被打败后会正确地像其他主要 {{tr|boss}} 一样填充其[[{{tr|Bestiary}}]]条目了。在[[{{tr|Dark Mage}}]]和[[{{tr|Ogre}}]]上尚未完成此修正。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Master Mode}}独有的掉落：[[{{tr|Relics}}|{{tr|Betsy Relic}}]]总是会在死亡时掉落，而会生成{{tr|Itsy Betsy pet}}的[[{{tr|Betsy's Egg}}]]也有 25% 几率掉落。}}
+{{history|Desktop 1.3.4.4|进度条更改。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.4.0.1 和 1.4.0.3 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Betsy}}
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Betsy}}

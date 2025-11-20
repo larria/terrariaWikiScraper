@@ -1,0 +1,42 @@
+{{item infobox
+| auto = 1866
+| tags = wings / hardmode
+}}
+
+'''{{tr|Hoverboard}}'''是一个[[{{tr|wing}}]]类的[[{{tr|accessory}}]]，和所有{{tr|wing}}一样，它允许玩家飞行和滑翔。它提供了一个额外能力：通过同时按住 {{key|jump}} 和 {{key|down}} 能够“悬浮”。悬浮提供水平速度提升，和[[{{tr|Flying Carpet}}]]类似，允许在空中的固定高度进行水平移动。悬浮会和飞行一样消耗飞行时间。
+
+{{tr|The Hoverboard}}具有 {{etext|94|e=1.4.0.1}} / {{etext|86|e=1.4.0.1|invert=y}} {{tr|tile}}的飞行高度，和 {{mph|52}} 的悬浮行进速度。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Hoverboard|expectedrows=1}}
+
+== {{tr|Notes}} ==
+* {{tr|Hoverboard}}的装备机制遵循所有[[{{tr|wings}}]]的规则，意味着装备其他{{tr|wings}}时无法再装备{{tr|Hoverboard}}。在{{tr|vanity slot}}中装备其他{{tr|wings}}也会替换{{tr|Hoverboard}}的外观。
+* 和大部分{{tr|accessories}}不同，使用[[{{tr|dye}}#复合染料|复合染料]]时，{{tr|Hoverboard}}会被[[{{tr|dye}}|染色]]为明亮的色彩（和[[{{tr|Shroomite armor}}]]类似）——搭配[[{{tr|Silver Dye}}]]的{{tr|dye}}（[[{{tr|Bright Dye}}]]除外）会将{{tr|Hoverboard}}的颜色反转。搭配[[{{tr|Black Dye}}]]的{{tr|dye}}会使得原本{{tr|sprite}}的银色边角变为黑色。其火焰也会改变颜色。
+* {{eicons|1.4.0.1|inver=y}} 虽然{{tr|Hoverboard}}并不在玩家的背上，它仍然会在可见时隐藏[[{{tr|capes}}]]。
+* 当在悬浮时使用在挥舞时无法更改玩家方向的[[{{tr|sword}}]]（如[[{{tr|Excalibur}}]]和[[{{tr|The Axe}}]]），{{tr|the Hoverboard}}的方向也不会改变。
+* {{tr|Tooltip}}中提示的悬浮可以通过“按下 {{key|down}} 开启，按下 {{key|up}} 关闭”仅在常规设置中的“悬停控制”被设置为“点击”时是正确的，否则玩家应当同时按住 {{key|down}} 和 {{key|jump}} 才能悬停。
+
+== {{tr|Tips}} ==
+* 在悬浮时，全套的[[{{tr|Shroomite armor}}]]仍然会提供隐形，只要玩家在悬浮状态下不移动。这允许玩家创造能够隐身几秒的暂时性的安全地点。
+* 在{{3DS version}}中，可以永久悬浮。这可以通过在装备[[{{tr|Blue Horseshoe Balloon}}]]或[[{{tr|Bundle of Balloons}}]]后，跳跃时不启用另一次跳跃，而是在正好跳跃到最高点之前按住 {{key|down}} 来悬浮来达成。这样可以永久悬停/移动，但无法永久上升。如果玩家进入悬浮状态太晚，他们将会悬浮并下降，类似于滑翔。
+
+== {{tr|Trivia}} ==
+* {{tr|Hoverboard}}的概念最初由美国科幻冒险喜剧电影系列《{{wikipedia|Back to the Future (franchise)|回到未来}}》（''Back to the Future''）普及，尤其是《{{wikipedia|Back to the Future Part II|回到未来 2}}》(''Back to the Future Part II'')
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2.4|修复了{{tr|Hoverboard}}无限悬停的漏洞。这曾是通过在由其他{{tr|accessories}}（比如[[{{tr|Bundle of Balloons}}]]）提供的数次“二段跳”之间开启悬停达成。}}
+{{history|Desktop 1.2.3|
+** {{tr|Hoverboard}}不再会出现在[[{{tr|mount}}]]上了。
+** 修复了在[[{{tr|Gravitation}}|{{tr|reverse gravity}}]]下悬空行走的{{tr|Hoverboard}} {{tr|Bug}}。}}
+{{history|Desktop 1.2.1.2|{{tr|Introduced.}}}}
+
+{{Shroomite}}
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Hoverboard}}

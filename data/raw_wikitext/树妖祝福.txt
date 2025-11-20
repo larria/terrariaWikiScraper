@@ -1,0 +1,59 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper|
+{{buff infobox
+| auto = 165
+| cause = [[{{tr|Dryad}}]]{{note|paren=y|block=y|仅对玩家和NPC}}
+| effects = +8 防御{{note|paren=y|small=y|仅对玩家}}<br/>+6 / {{expert|+10}} / {{master|+14}} 防御{{note|paren=y|small=y|仅对NPC}}<br/>增加生命再生<br/>给予荆棘效果
+| duration = 当在树妖祝福的范围内时{{verify|She stops casting and has to refresh eventually; the time it stays up should go here.}}
+}}|
+{{buff infobox
+| auto = 186
+| cause = [[{{tr|Dryad}}]]{{note|paren=y|block=y|仅对敌怪}}
+| effects = -4 至 -16 生命<small>每秒</small><br/>使其失去生命再生
+| duration = 当在树妖祝福的范围内时
+| nocat = yes
+}}
+}}
+[[File:Dryad's Blessing (demo).gif|thumb|right|正在进行祝福的树妖。]]
+[[File:Dryads Blessing Full.png|thumb|right|350px|树妖祝福的全景视图。]]
+
+'''{{tr|Dryad's Blessing}}'''和'''{{tr|Dryad's Bane}}'''是由[[{{tr|Dryad}}]][[{{tr|NPCs}}]]施加的一种[[{{tr|buff}}]]和[[{{tr|debuff}}]]。{{tr|Dryad}}不会直接攻击附近的[[{{tr|Enemies}}]]，而是在附近有{{tr|Enemies}}时释放树妖祝福，这会召唤两个树叶圆环，外环表示攻击的范围。当在树妖祝福的范围内时，所有的玩家和{{tr|NPCs}}都会获得{{tr|Dryad's Blessing}}{{tr|buff}}，而所有的{{tr|Enemies}}则会获得{{tr|Dryad's Bane}}{{tr|debuff}}。
+
+从召唤树叶圆环开始计算，在最初的 {{duration|100ticks}}内，树妖祝福的半径为 18.75 格（300 像素），然后半径通常会在 {{duration|200ticks}}内增加到 37.5 格（600 像素），并在另外的 {{duration|200ticks}}内保持不变，之后半径通常会在 {{duration|70ticks}}内增加到 75 格（1200 像素），接着树妖祝福会慢慢消散。在召唤树叶圆环 {{duration|30ticks}}后，树叶圆环半径内的实体会持续获得{{tr|Dryad's Blessing}}{{tr|buff}}和{{tr|Dryad's Bane}}{{tr|debuff}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_111_DryadsWard}}
+
+{{tr|Dryad's Blessing}}{{tr|buff}}会在所有受影响的玩家和{{tr|NPCs}}脚下显示出一条绿色的火花轨迹，并提供以下效果:
+* +8 玩家[[{{tr|Defense}}]]和 +6 / {{expert|+10}} / {{master|+14}} {{tr|NPCs}}防御。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_007_TownEntities}}
+* +50% 玩家荆棘效果（反弹 50% 所受伤害到攻击者身上）与 +33.33% {{tr|NPC}} 荆棘效果。{{source code ref|v=1.4.4.9|method=Terraria.NPC.BeHurtByOtherNPC}}
+** 玩家的荆棘效果会被[[{{tr|Thorns Potion}}]]和[[{{tr|Turtle armor}}]]的套装奖励所覆盖。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBuffs / Terraria.Player.Update_NPCCollision}}
+* +3 玩家[[{{tr|Health regeneration}}]]和 +3.33 {{tr|NPC}}{{tr|Health regeneration}}<ref>{{tr|NPC}}{{tr|Health regeneration}}比玩家[[{{tr|Defense}}]]要简单得多：城镇{{tr|NPC}}拥有独立的''再生计数器''，他们每{{tr|tick}}都会进行回复计算（每秒六十次）；当计数器达到或超过了 180，{{tr|NPC}}便会回复一点生命值且计数器归零。正常情况下计数器每{{tr|tick}}仅会增长 1 点，但是在{{tr|Dryad's Blessing}}的存在下每{{tr|tick}}会增长 11 点。{{source code ref|v=1.4.4.9|noref=y|method=Terraria.NPC.CheckLifeRegen}}</ref>
+
+{{tr|Dryad's Bane}}{{tr|debuff}}每秒会对{{tr|Enemies}}造成 4 点伤害。该{{tr|debuff}}效果的伤害会随着玩家的游戏的世界进程而增加。此外，增长倍率还会受到[[{{tr|Difficulty}}#{{tr|World}}模式|游戏模式]]的影响。有关于这些提升的具体细节，详细参见[[{{tr|NPCs}}#属性加成|属性加成]]。例如当前的进度加成总量为40%，且世界处于[[{{tr|Expert Mode}}]]时，则该{{tr|debuff}}的伤害会上升 (1.4 × 1.5) = 2.1 = +110%。 最终造成的伤害会向下取整，例如每秒 4 点伤害受到 2.1 倍增幅得到 8.4 每秒伤害，则会向下取整为 8 点伤害。{{source code ref|v=1.4.4.9|method=Terraria.NPC.UpdateNPC_BuffApplyDOTs}}
+* 在没有击败 {{tr|Boss}} 的情况下，伤害速率为 4 / {{expert|6}} / {{master|7}} {{DPS}}。
+* 在击败全部 {{tr|Boss}} 后，伤害速率为 10 / {{expert|16}} / {{master|18}} {{DPS}}。
+
+== 备注 ==
+* {{eversions|1.4.1}}{{tr|Dryad's Blessing}}的荆棘效果可以与[[{{tr|Cactus armor}}]]的套装效果相叠加。
+* {{eicons|1.4.0.1}}反弹伤害的最大值为 1000 点。
+
+== 花絮 ==
+* {{tr|Dryad's Bane}}的{{tr|tooltip}}参考了 1973 年超自然恐怖电影{{Wikipedia|The Exorcist (film)|《驱魔人（The Exorcist）》}}中的一句话，"The power of Christ compels you!" 。
+
+== {{tr|Immune NPCs}} ==
+{{immunities|Dryad's Bane}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.1|荆棘效果增强 20%，同时伤害效果增强 50%。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{-}}
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{language info|en=Dryad's Blessing}}

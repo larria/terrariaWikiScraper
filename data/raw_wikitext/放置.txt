@@ -1,0 +1,46 @@
+'''放置'''的[[{{tr|item}}]]是指那些已经变成世界固定部分、需要用[[{{tr|Tool}}]]才能释放并拾取的物品。这与[[{{tr|inventory}}]]{{tr|items}}或掉落的{{tr|items}}形成对比。{{tr|Items}}可以由游戏“天然放置”，这通常发生在世界一开始生成时。{{tr|Items}}也可以由{{tr|the player}}放置：当玩家建造建筑时，他们是在''放置''{{tr|items}}，诸如[[{{tr|Blocks}}]]和[[{{tr|Furniture}}]]。
+
+== 前景放置和背景放置 ==
+[[File:Solid tiles example.png|thumb|被放置的[[{{tr|Dirt}}|{{tr|dirt block}}]]和[[{{tr|Stone}}|{{tr|stone block}}]]（前景）所包围的人物。]]
+[[File:Background object example.png|thumb|{{tr|A character}}站在[[{{tr|Bookcase}}]]（背景）前。]]
+
+按照玩家的游玩体验，放置的物品会分为数“层”，互相略有重叠。最明显的区别为第一层是能够阻挡玩家移动的“前景”物体，而其它的是多个不同的“背景”层，对玩家的移动影响很小或完全没有效果。
+
+* 放置的'''{{tr|foreground objects}}'''：一个{{tr|foreground object}}是会和{{tr|character}}发生碰撞且阻碍移动的物体。它们中的大部分为[[{{tr|blocks}}]]，相对应地，大部分{{tr|blocks}}都被放置在前景层。有少数位于前景层的非{{tr|blocks}}（如[[{{tr|Boulder}}]]、[[{{tr|Teleporter}}]]）和能与此层和下一层交互的物体（如[[{{tr|Doors}}]]、[[{{tr|platforms}}]]）。[[{{tr|Thorny bushes}}]]及其{{tr|variants}}是数种前景[[{{tr|plants}}]]之一，但[[{{tr|Living Tree}}]]也由前景{{tr|blocks}}组成。
+**[[{{tr|Actuator}}]]可以将大部分{{tr|foreground objects}}变为背景物体（且能在两者转换），但是{{tr|Actuators}}不能将“源生”{{tr|background object}}变为前景物体。[[{{tr|Active Stone Block}}]]收到{{tr|wire}}信号时能够在前景和背景状态间切换。
+
+* '''[[物体|{{tr|background object}}]]'''：不会与{{tr|characters}}发生碰撞，但不能和前景物块共享{{tr|tile}}的物体。（这通常被称为“{{tr|furniture}}层”。）{{tr|Characters}}能够自由地在其中穿行。这包括大部分的[[{{tr|plants}}]]（[[{{tr|tree}}]]、[[{{tr|vines|link=y}}|{{tr|vines}}]]、高草，等等），和几乎所有[[{{tr|furniture}}]]。许多{{tr|background objects}}仅有视觉上的作用，但其中的一部分（如[[{{tr|crafting station}}]]和[[{{tr|Storage items}}]]）有可以被玩家使用的功能。 
+** 部分物体同时拥有前景和家具的特性。[[{{tr|Door}}]]在关闭时是{{tr|foreground objects}}，在开启时是背景物体。部分家具（尤其是[[{{tr|platforms}}]]）主要为背景物体，但人物可以站在上面。（按下 {{key|down}} 按键会让人物以穿过平台落下的形式“跳下”）除了平台之外，大部分有“平坦表面”的家具物品都如此运作：[[{{tr|Work Benches}}]]、[[{{tr|Tables}}]]之类的物品。[[{{tr|Bubble}}]]{{tr|blocks}}对于{{tr|liquid}}来说是{{tr|solid blocks}}，但对其它实体来说是家具物品。
+*'''[[{{tr|Liquids}}]]'''拥有它们专属的层：虽然它们通常会在物块周围流动，且不能被放置在物块中，但物块可以被放置在（除了{{tr|lava}}以外）的液体中，此时液体会被容纳在物块中而不是被摧毁。部分家具物品能够类似地困住液体（如{{tr|chest}}），但通常来说液体可以流过背景物体，有时还会在通过时破坏这些物体。液体会减缓人物和大部分[[射弹]]的移动。拥有了适当的[[{{tr|Water Walking Boots}}|{{tr|accessories}}]]或[[{{tr|Water Walking Potion}}|{{tr|buffs}}]]后，玩家就能如同在平台上一样在液体的表面行走。液体可以部分地或完全地遮挡家具层的物品，以及在其中的人物和敌怪。
+
+*'''[[{{tr|Background Walls}}|{{tr|Walls}}]]'''不会阻挡物体或任何其他层，但它们能够为放置前景或背景物体提供“支撑”。其它情况下它们不会和其它层的物体交互，且会在所有其它层的物体之后，[[{{tr|biome background}}]]之前显示。天然的{{tr|wall}}会影响[[{{tr|Biomes}}]]判定和生成的[[{{tr|Enemies}}]]。某些{{tr|wall}}会[[{{tr|Biome spread}}|将对应的{{tr|biome}}蔓延]]到附近的{{tr|wall}}上，但''永远不会''将{{tr|biome}}蔓延到{{tr|blocks}}上。
+* "'''[[{{tr|Wire}}]]层'''"包含[[{{tr|wire}}]]和[[{{tr|Actuator}}]]；它们会和前景或背景物体重叠并产生互动，但从不和人物或其它实体产生碰撞。它们是不可见的，除非玩家手持和{{tr|mechanism}}相关的物体，或携带了[[{{tr|Mechanical Lens}}]]或[[{{tr|The Grand Design}}]]。在这些物体''可见''时，它们不会被其它层的物体遮挡。注意大部分其它[[{{tr|mechanisms}}]]都是前景物体或背景家具。
+
+== 如何放置 ==
+有两种{{tr|place items}}的方法：
+
+* 如果[[{{tr|Autopause}}]]处于关闭状态且玩家的[[{{tr|Inventory}}]]处于打开状态，从{{tr|inventory}}中拿起{{tr|item}}并在要{{tr|place}}此{{tr|item}}的地方按{{key|use}}键。
+* 无论是否开启了{{tr|autopause}}，如果一件{{tr|item}}处于[[{{tr|Inventory}}]]的[[{{tr|Inventory}}#{{tr|Hotbar}}（10 栏位）|{{tr|Hotbar}}]]中，就像选择[[{{tr|Weapon}}]]或[[{{tr|Tool}}]]那样选择它，然后在要{{tr|place}}此{{tr|item}}的地方按{{key|use}}键。
+
+无论哪种情况下，都必须在光标放在放置指定物品的恰当位置时进行此操作，并且人物必须位于放置位置周围几个{{tr|tile}}距离内。
+
+例如，大多数[[{{tr|Furniture}}]]{{tr|items}}，比如[[{{tr|Work Bench}}]]，必须放置在至少数个[[{{tr|Blocks}}]]宽的平坦表面上。在{{tr|Hotbar}}中选择{{tr|Work Bench item}}后，将鼠标光标移动到相对较长、平坦、且已清除所有其他物品（包括{{tr|grass}}）的表面上方，然后按{{key|use}}键。
+
+要挖下一个物体并重新放置它，通常要使用[[{{tr|Pickaxe}}]]。作为特殊情况，[[{{tr|trees}}]]（包括[[{{tr|cactus}}]]和[[{{tr|Giant Glowing Mushroom}}]]）需要用[[{{tr|Axes}}]]来收集。要注意的是，使用{{tr|axe}}收集的物体''不能''被玩家直接放置。
+
+对于具有左/右方向的物品，比如[[{{tr|bed}}]]和[[{{tr|chair}}]]，放置时角色面朝的方向决定了物品的放置方式。
+
+== 放置要求 ==
+* 物品必须是“可放置”的。大多数（但并非全部）物品都是可放置的。物品是否可放置在游戏中通过其{{tr|tooltip}}指明；当将光标停留在物品上时显示“可放置”的物品即为可放置的。
+* 放置区域必须适合指定物品。[[{{tr|Blocks}}]]可以放置在和任意其他{{tr|Blocks}}相邻的空白空间中，[[{{tr|Furniture}}]]{{tr|items}}却通常会有更加严格的放置要求。大多数需要有坚固、平坦的表面，但有些要求更宽松（比如[[{{tr|Torch}}]]），或者会有更严苛（比如[[{{tr|Door}}]]或[[{{tr|Candle}}]]）。在 [[1.3.0.1]] 更新以后，用"界面"选项中的“放置预览”选项可以更轻松地找到合适的放置区域。
+
+== 放置的{{tr|furniture items}}的功能 ==
+{{See also|指南:入门#建造家园...}}
+* 放置的[[{{tr|crafting station}}]]，比如[[{{tr|Work Bench}}]]和[[{{tr|Anvil}}]]，当人物站在它们附近时能扩充玩家的{{tr|crafting menu}}。打开[[{{tr|inventory}}]]（{{key|inventory}}）后可以在屏幕左下角看到当前的{{tr|crafting}}选项。用鼠标滚轮滚动可制作的物品。根据当时角色附近有哪些{{tr|crafting station}}，会出现不同的制作选项。
+* 放置的[[{{tr|storage items}}]]允许玩家通过 {{key|open}} 键交互来存入或取出物品。[[{{tr|Dressers}}]]会提供改变角色菜单的界面。
+* 放置的[[{{tr|background walls}}]]将允许 [[{{tr|NPC}}]] 搬入建筑物中，并且在很多情况下，会防止[[{{tr|Enemies}}]]在建筑物中生成。''更多这方面的细节，参见 [[{{tr|NPC}}]] 和[[{{tr|House}}]]。''
+* 放置的{{tr|background walls}}也可以让一些{{tr|furniture}}放置其上，比如[[{{tr|Switch}}]]、[[{{tr|Lever}}]]和[[{{tr|Torch}}]]。
+* 放置的[[{{tr|Bed}}]]让玩家能够设置他们自己的[[{{tr|spawn point}}]]。
+
+{{game mechanics}}
+{{language info|en=Placement}}

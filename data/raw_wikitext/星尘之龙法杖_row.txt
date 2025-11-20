@@ -1,0 +1,12 @@
+<includeonly>
+|-
+| {{{1|}}}
+| {{#expr:floor({{iteminfo|3531|damage}} * (1 + 0.23 * (2*{{{1|}}} +2 -1)))}}<!-- each summon adds 2 segments; 2 segments at "0 summons"; 1 segment subtracted
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+
+{{language info|en=Stardust Dragon Staff/row}}
+</noinclude>

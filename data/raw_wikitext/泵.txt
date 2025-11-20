@@ -1,0 +1,58 @@
+{{infobox wrapper|direction=row|
+{{item infobox
+| type = Furniture/Mechanism
+| width = 2 | height = 2
+| auto = 581
+}}
+|{{item infobox
+| type = Furniture/ Mechanism
+| width = 2 | height = 2
+| auto = 582
+}}
+}}
+
+'''{{tr|Inlet Pumps}}'''和'''{{tr|Outlet Pumps}}'''是用于输送[[{{tr|Liquids}}]]（[[{{tr|Water}}]]、[[{{tr|Lava}}]]、[[{{tr|Honey}}]]和[[{{tr|Shimmer}}]]）的[[{{tr|mechanism}}]]，无需通过[[{{tr|Blocks}}]]构建通道或依靠重力。相反，{{tr|Inlet pump}}和{{tr|Outlet Pump}}只需要用[[{{tr|Wire}}]]互相连接起来并激活就能将流体从{{tr|Inlet pump}}输送到{{tr|Outlet pump}}。每次激活最多可传输四格{{tr|liquid}}。为了连续自动泵送，必须用[[{{tr|Timer}}]]。
+
+尽管其外观上看是有个管道从边上吸入液体，但实际上{{tr|Inlet Pump}}必须浸没于{{tr|liquid}}中，因为它移除的是直接位于其图形上方的{{tr|liquid}}，并且在整个 2×2 {{tr|tile}}空间中均匀地移除。类似地，{{tr|Outlet Pump}}直接在其图形上方生成{{tr|liquid}}，并且在整个 2×2 {{tr|tile}}空间中均匀地生成。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|cate=force|link=no|result=Inlet Pump/Outlet Pump|expectedrows=2}}
+
+== {{tr|Notes}} ==
+* 如果{{tr|Outlet Pump}}被完全淹没就会停止泵送。
+* 单路{{tr|wires}}最多可以连接 5 个{{tr|Inlet pumps}}和 5 个{{tr|Outlet pumps}}。流体输送速度会随之提升，而无须额外的[[{{tr|Wire}}]]作为“管道”。
+** 如果将超过 5 个{{tr|Inlet pumps}}连接到超过 5 个{{tr|Outlet pumps}}，那么沿着电线距离电源最近的 5 个{{tr|Inlet pumps}}会将液体输送至沿电线距离电源最近的 5 个{{tr|Outlet pumps}}。
+* {{tr|Inlet Pump}}只在连接到{{tr|Outlet Pump}}时才会吸入液体。
+* 可以将{{tr|liquid sensor}}直接放置在{{tr|outlet pump}}下方并如此连接，这样从{{tr|pump}}出来的{{tr|water}}就会激活{{tr|sensor}}，进而激活{{tr|pump}}，然后激活{{tr|sensor}}，如此往复。这使得{{tr|pumps}}可以无限继续，直至{{tr|inlet pump}}把水抽光，抑或{{tr|outlet pump}}被淹没。
+* {{eicons|1.4.0.1|invert=y}} 若{{tr|Inlet Pump}}被完全淹没，则{{tr|Outlet Pumps}}产生的{{tr|liquid}}会比{{tr|Inlet Pumps}}吸入的略微多一些。
+
+== {{tr|Tips}} ==
+* 在{{eversions|1.4.0.1|short=y|invert=y}}中，{{tr|Outlet Pump}}产生的{{tr|liquid}}比{{tr|Inlet Pump}}吸入的多这一特性可被利用如下：
+** 重复将{{tr|liquid}}通过{{tr|pump}}系统可以制造大量的{{tr|liquid}}。一开始所需要的仅仅是足以淹没{{tr|Inlet Pump}}的{{tr|liquid}}，在此之后就可以从{{tr|Outlet Pump}}中得到足以充满容器的{{tr|liquid}}。只要有一个容器的{{tr|liquid}}，就可以复制出无限的{{tr|liquid}}。
+*** 利用此技巧，[[{{tr|Obsidian}}]]/[[{{tr|Crispy Honey Block}}]]/[[{{tr|Honey Block}}]]也可以利用无限复制的{{tr|liquids}}大量制作。
+** 几池塘的水，如[[{{tr|fishing}}]]塘，可以利用一小点{{tr|liquid}}创造出来。
+* {{tr|Lava}}瀑布也可以利用{{tr|pumps}}制作，这可被作为 [[NPC]] 处死装置或保护房子不受{{tr|enemies}}入侵的设施。
+** 虽然与{{tr|lava}}瀑布相比作用很小，{{tr|pump}}也可以制造出美学意义上的瀑布。
+* 在{{tr|item}}状态时，{{tr|Pumps}}的{{tr|rarity}}仅有白色，浸没于{{tr|lava}}中会将其摧毁。虽然这对于其他{{tr|liquids}}来说不成问题，但要注意确保{{tr|pump}}不会在{{tr|lava}}存在时掉落，比如挖掘入口，或者是把出口放在了[[{{tr|platform}}]]上（因为{{tr|lava}}会移除所有{{tr|platforms}}}，除了{{tr|obsidian}}）记得在试图移除{{tr|pump}}前先排空{{tr|lava}}或是将其转化为实体{{tr|blocks}}。
+
+== {{tr|Trivia}} ==
+* 两种{{tr|pumps}}的{{tr|tooltips}}都错误地说它们只是用于进出[[{{tr|water}}]]的，但实际上它们可以进出任意[[{{tr|liquid}}]]。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|移除了{{tr|outlet pumps}}产生的{{tr|liquid}}比吸入的多的小毛病。}}
+{{history|Desktop 1.2.0.2|抽{{tr|honey}}时不再会将{{tr|honey}}变为{{tr|water}}。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999，最大距离由 1000 格电线提升至 2000 格。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Metal}}
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Pumps}}

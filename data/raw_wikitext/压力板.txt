@@ -1,0 +1,129 @@
+{{item infobox
+| imagealt = [[File:Red Pressure Plate.png]] [[File:Green Pressure Plate.png]] [[File:Gray Pressure Plate.png]] [[File:Brown Pressure Plate.png]] [[File:Blue Pressure Plate.png]] [[File:Yellow Pressure Plate.png]] [[File:Orange Pressure Plate.png]]<br/><br/>
+[[File:Pink Weighted Pressure Plate.png]] [[File:Orange Weighted Pressure Plate.png]] [[File:Purple Weighted Pressure Plate.png]] [[File:Cyan Weighted Pressure Plate.png]] [[File:Lihzahrd Pressure Plate.png]]
+| type = Furniture/Mechanism
+| placeable = yes
+| width = 1
+| height = 1
+| rare = {{iteminfo|Gray Pressure Plate|rare}}（灰色、棕色、蓝色、红色、绿色、黄色、橙色、蜥蜴）<br/>
+{{iteminfo|Pink Weighted Pressure Plate|rare}}（测重）
+| use = {{iteminfo|Gray Pressure Plate|use}}
+| tooltip = {{itemTooltip|529}}（红色、绿色）<br/>{{itemTooltip|542}}（灰色、棕色、蓝色、蜥蜴）<br/>{{itemTooltip|853}}（黄色）<br/>{{itemTooltip|4261}}（橙色）<br/>{{itemTooltip|3626}}（测重）
+| stack = {{iteminfo|Gray Pressure Plate|maxStack}}
+| buy = {{iteminfo|Gray Pressure Plate|buy}}
+| sell = {{iteminfo|Gray Pressure Plate|sell}}
+| idtile = {{iteminfo|Gray Pressure Plate|tile}}, {{iteminfo|Pink Weighted Pressure Plate|tile}}
+| consumable = yes
+| cargo = no
+}}
+{{item infobox
+| imagebreak = yes
+| type = Furniture / Mechanism
+| width = 1|height = 1
+| tags = buy / vendor:Mechanic
+| auto = 3707
+}}
+{{distinguish|{{tr|Pressure Plate Track}}}}
+
+'''{{tr|Pressure Plates}}'''是一类起动[[{{tr|mechanism}}]]，在{{tr|player}}踩上去可以触发[[{{tr|wire}}]]所连接的机关。{{tr|Pressure Plate}}的颜色决定了可以触发它的角色。
+
+{{tr|Pressure Plates}}可以从[[{{tr|Mechanic}}]]处购买，或者从地图中获取，在创建世界时，红、棕、灰、丛林蜥蜴（{{eicons|Orange Pressure Plate}} 和橙）{{tr|Pressure Plate}}会在地图中随机生成，作为[[{{tr|trap}}]]的触发器。{{tr|Pressure Plates}}部分隐藏在[[{{tr|block}}]]的顶部，因此可能难以发现。自然产生的{{tr|Pressure Plates}}的颜色取决于它在下部块的颜色。应谨慎对待它们，因为它们一般都被连接到[[{{tr|trap}}]]。
+
+[[{{tr|Mechanic}}]]销售所有种类的{{tr|Pressure Plates}}，除了{{tr|Lihzahrd Pressure Plate}}和{{tr|Weighted Pressure Plate}}：前者颜色比较特殊，是棕色和[[{{tr|Lihzahrd Brick}}]]的混色，而后者需要手动制造。
+
+'''{{tr|Teal Pressure Pad}}'''是一种特殊的{{tr|Pressure Plates}}，对触碰到它的{{tr|projectile}}或[[{{tr|Pets}}]]反应。与常规的{{tr|Pressure Plate}}不同，{{tr|Teal Pressure Pad}}可以被放置在地板上、天花板上、侧壁上、或{{tr|platform}}上。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink}}
+{|class="terraria"
+! colspan=2 | {{tr|Type}} !! 触发类型
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 542|tags = buy / vendor:Mechanic}} || rowspan="4" | 由{{tr|player}}触发。
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 543|tags = buy / vendor:Mechanic}}
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 852|tags = buy / vendor:Mechanic}}
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 1151}}
+|-
+| colspan=3 | <hr />
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 529|tags = buy / vendor:Mechanic}} || rowspan="2" | 由{{tr|player}}、[[NPC]]、和[[{{tr|enemy}}]]触发。
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 541|tags = buy / vendor:Mechanic}}
+|-
+| colspan=3 | <hr />
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 853|tags = buy / vendor:Mechanic}} || 由 [[NPC]] 和[[{{tr|enemy}}]]触发。
+|-
+| colspan=3 | <hr />
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 4261}} || 由{{tr|player}}触发，之后破碎。
+|-
+| colspan=3 | <hr />
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 3626}} || rowspan="4" | 由{{tr|player}}走上或走下触发。
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 3630}}
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 3631}}
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 3632}}
+|-
+| colspan=3 | <hr />
+{{item infobox|type=Mechanism/Furniture|width=1|height=1|auto = 3707}} || 由{{tr|projectile}}或[[{{tr|pet}}]]触发。
+|}
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+红色、绿色、灰色、棕色、蓝色和黄色{{tr|Pressure Plate}}可以在[[{{tr|Mechanic}}]]处以每个 {{iteminfo|Brown Pressure Plate|buy}} 的价格购买，{{tr|Teal Pressure Pad}}在 [[{{tr|Mechanic}}]]处以 {{iteminfo|Teal Pressure Pad|buy}} 每个的价格购买。
+
+{{recipes|cate=force|link=no|result=LIKE %Pressure Plate|expectedrows=4}}
+
+=== {{tr|Used in}} ===
+{{recipes|ingredient=LIKE %Pressure Plate|expectedrows=5}}
+
+== {{tr|Notes}} ==
+* [[{{tr|Dangersense}}]]{{tr|buff}}会高亮标记{{tr|Pressure Plate}}。
+* {{tr|Teal Pressure Pad}}不需要被直接击中才会激活，只要有{{tr|projectile}}穿过{{tr|Teal Pressure Pad}}所在的格子，它就会被激活。
+* 对于{{tr|Teal Pressure Pad}}而言，[[高尔夫球]]算作{{tr|projectile}}。
+* 如果将{{tr|Pressure Plate}}放置于物块上方，当{{tr|player}}在反转[[{{tr|Gravity}}]]下飞至{{tr|Pressure Plate}}上时，它们也会生效。
+
+== {{tr|Tips}} ==
+* 手持{{tr|Pressure Plate}}时能够看到电线。这可以帮助{{tr|player}}躲避陷阱。
+* {{tr|Pressure Plate}}可以被非{{tr|player}}实体或巨石触发。这可以用作延迟或连续触发的陷阱。
+* {{tr|Pressure Plate}}可以让{{tr|player}}无需点击即可开关门。但是。如果没有使用正确类型的{{tr|Pressure Plate}}，可能导致{{tr|NPC}}和{{tr|enemy}}在无意间触发它们。
+* [[{{tr|Paint}}]]可以使{{tr|Pressure Plate}}几乎完全隐藏，以用于 {{tr|PvP}} 等目的。
+* [[{{tr|Fallen Star}}]]属于常规的{{tr|projectile}}，它们可以激活{{tr|Teal Pressure Pad}}。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|引入{{tr|Orange Pressure Plate}}。}}
+{{history|Desktop 1.3.2.1|修复了{{tr|Weighted Pressure Plate}}无效的 {{tr|bug}}。}}
+{{history|Desktop 1.3.1|
+** 引入{{tr|Weighted Pressure Plate}}。
+** 引入{{tr|Teal Pressure Pad}}。}}
+{{history|Desktop 1.3.0.1|更新所有{{tr|Pressure Plate}}的贴图。}}
+{{history|Desktop 1.2.4|现在可以用于制作{{tr|Pressure Plate}}轨道。}}
+{{history|Desktop 1.2|
+** 现在不同颜色的{{tr|Pressure Plate}}有不同的激活条件。
+** 加入蓝色、黄色和丛林蜥蜴{{tr|Pressure Plate}}。
+** 最大叠堆数量由 250 升为 999。
+** {{tr|enemy}}不再会激活地下的天然陷阱的{{tr|Pressure Plate}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|
+** 引入{{tr|Weighted Pressure Plate}}。
+** 引入{{tr|Teal Pressure Pad}}。}}
+{{history|Console 1.0.933.1|{{tr|Sprites updated}}，以符合{{tr|Desktop}} 1.3.0.1。({{icon/xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Sprites updated}}，以符合{{tr|Desktop}} 1.3.0.1。({{icon/ps4}})}}
+{{history|Console 1.07|现在用于制作{{tr|Pressure Plate Tracks}}。}}
+{{history|Console-Release|{{tr|Introduced}}，并带有直至{{tr|Desktop}} 1.2 的改动。}}
+{{history|Switch 1.0.895.9|
+** 引入{{tr|Weighted Pressure Plate}}。
+** 引入{{tr|Teal Pressure Pad}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，并带有直至{{tr|Desktop}} 1.3.0.1 的改动。}}
+{{history|Mobile 1.4.0.5.0|
+** 引入{{tr|Orange Pressure Plate}}和{{tr|Weighted Pressure Plate}}。
+** 引入{{tr|Teal Pressure Pad}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Sprites updated}}，以符合{{tr|Desktop}} 1.3.0.1。}}
+{{history|Mobile 1.2.11212|现在用于制作{{tr|Pressure Plate Tracks}}。}}
+{{history|Mobile 1.2.6508|
+** 现在不同颜色的{{tr|Pressure Plate}}有不同的激活条件。
+** 加入蓝色、黄色和丛林蜥蜴{{tr|Pressure Plate}}。
+** 最大叠堆数量由 250 升为 999。
+** {{tr|Enemies}}不再激活{{tr|underground}}{{tr|pressure plates}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}{{verify}}}}<!-- usually, Desktop 1.1 additions were introduced in Mobile 1.1.5536 (with the exception of things like the Wall of Flesh and its drops), would like some verification on this -->
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Pressure Plates}}

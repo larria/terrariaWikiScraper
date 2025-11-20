@@ -1,0 +1,67 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3063
+| listcat = broadswords / projectile melee
+| tags = drop / hardmode
+| sound1 = Item_57.wav, Item_58.wav
+| soundcaption1 = 反弹
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Meowmere}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|sword}}]]，能够[[{{tr|autoswing}}]]，并可以发射一个类似猫头并具有彩虹尾迹的{{tr|projectile}}，不消耗[[{{tr|mana}}]]或[[{{tr|ammunition}}]]。猫头{{tr|projectiles}}造成{{tr|weapon}}{{tr|base damage}}的 {{percent|125%}}（{{#expr:{{iteminfo|Meowmere|damage}}*1.25}} {{tr|damage}}），受重力影响，且在（第五次命中{{tr|enemy}}或与{{tr|block}}碰撞后）消失前能够穿透[[{{tr|enemies}}]]或在实心[[{{tr|block}}]]表面反弹四次。{{tr|Meowmere}}的猫头{{tr|projectiles}}每次在{{tr|blocks}}上反弹时会产生彩虹色爆炸，伤害周围的{{tr|enemies}}，且每次反弹爆炸范围都会增大。{{tr|The Meowmere}}有 {{chance|2/9}} 几率掉落自[[{{tr|Moon Lord}}]]。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Meowmere|expectedrows=1}}
+
+== 备注 ==
+[[File:Meowmere (demo).gif|frame|{{tr|The Meowmere}}攻击[[{{tr|Target Dummy}}]]。]]<!-- this is down here because it is quite wide and can interfere with the crafting table on smaller screens -->
+* 猫{{tr|projectile}}没有影响{{tr|attack speed}}的{{tr|modifier}}时的发射冷却为 {{duration|{{iteminfo|Meowmere|useTime|raw=y}} ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults4}}
+* 猫{{tr|projectile}}每次反弹时会发出“喵”的声音并且产生小型彩虹爆炸。此爆炸会对以撞击点为中心的 3×3 格矩形范围内的所有{{tr|enemies}}造成伤害，并且此范围每次反弹都会加大半格，直到最后一次爆炸的 5×5 格的矩形。{{source code ref|v=1.4.2.2|method=Terraria.Projectile.HandleMovement}}
+* 猫{{tr|projectile}}在无[[{{tr|attack speed}}]]加成的情况下以 {{mph|{{iteminfo|Meowmere|velocity}} pixels}}的速度行进。
+
+== 小贴士 ==
+* 它在近身场合会非常有用，例如在[[{{tr|Hardmode Dungeon}}|{{tr|Hardmode}}{{tr|Plantera}}后的{{tr|Dungeon}}]]内。弹跳的带有范围伤害效果的{{tr|projectiles}}对于小房间内的大量{{tr|enemies}}极其有效。
+* 猫{{tr|projectiles}}可以被诸如[[{{tr|Selenian}}]]之类的{{tr|enemies}}[[{{tr|List of reflected projectiles}}|反射]]。在这类{{tr|enemies}}周围要小心，特别是在近距离时。
+* 如果玩家厌烦{{tr|the Meowmere}}的声音，可以更改游戏的声音文件来移除或者改变它：相关的文件是音效文件夹（<code>&lt;Steam 文件夹&gt;\steamapps\common\Terraria\Content\Sounds</code>）中的 <code>Item_57.xnb</code> 和 <code>Item_58.xnb</code>，可以删除掉或者用 <code>Item_8.xnb</code> 的副本来替换掉它们，这是一个{{sound|nofallback=y|[[Media:Item 8.wav|难以察觉的音效]]|Item 8.wav}}。
+
+== 花絮 ==
+* 猫形彩虹{{tr|projectiles}}是受{{维基百科|Nyan Cat|t=彩虹猫}}模因的启发，后者在 2011 年四月在 YouTube 上首次出现。
+* {{tr|The Meowmere}}的{{tr|base damage}}是游戏中除{{$|explosives||class}}外所有{{tr|weapons}}里最高的。但是，像[[{{tr|Zenith}}]]、[[{{tr|Terrarian}}]]、或[[{{tr|Star Wrath}}]]之类的游戏末期{{tr|weapons}}通常（如由于有未列出的奖励等原因）拥有更高的 {{DPS}}。
+* 它在发布之前被称为 ''Meowmur''。<ref>[[:File:Meowmere name trivia.png|Redigit 发在 IRC 上："There is a new sword called Meowmur"（有一把叫 Meowmur 的新剑）]] {{small|{{date|2013|08|29}}}}</ref>
+* 在{{Mobile version}}中，开发者在{{维基百科|April Fools' Day|愚人节}}时更改了{{tr|credits}}，提到会有一把新的{{tr|melee weapon}}发射猫{{tr|Projectiles}}，指的是{{tr|the Meowmere}}。{{verify|确切游戏版本，以及（若可能）相关的屏幕截图。}}
+* {{tr|The Meowmere}}通过[[{{tr|crossover}}]]{{tr|event}}也在游戏[[《{{tr|Dungeon Defenders 2}}》]]、[[《{{tr|Stardew Valley}}》]]、和{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|weapon}}出现。<!--它也在电子游戏《Pony Town》中作为背景装饰出现。{{verify|若可能，提供链接和/或截图。}}-->
+* 剑刃的外观与[[{{tr|Palladium Sword}}]]的外观有些像。
+* 猫叫音效和骑着[[{{tr|Meowmere Minecart}}]]跳跃时发出的音效是一样的。
+* {{tr|The Meowmere}}是 [[{{tr|Redigit}}]] 最喜欢的武器。<ref>[https://www.reddit.com/r/Terraria/comments/nelbjw/terrarias_10th_anniversary_we_are_relogic_ask_us/gygxbf3/?context=3 Reddit 上的 Redigit] {{small|{{date|2021|05|17}}}}</ref>
+* {{tr|The Meowmere}}也是许多游戏内[[{{tr|painting}}]]中反复出现的主题，如[[{{tr|Lady Of The Lake}}]]、[[{{tr|Cat Sword}}]]、和 [[{{tr|r/Terraria}}]]。
+* Re-Logic 给许多人赠送了实体版的{{tr|Meowmere}}，包括 [https://www.youtube.com/user/PedguinGames Pedguin]<ref>https://twitter.com/Pedguin/status/1501177987852640262</ref> 和 [[:en:User:ReedemtheD3ad!|ReedemtheD3ad!]]<ref>https://twitter.com/ReedemtheD3ad/status/1513923283602739205</ref>
+
+== 另见 ==
+* {{dd2 link|Swords#Legendary|{{tr|Meowmere}}}}
+* 《{{tr|Stardew Valley}}》 wiki 上的{{iwlink|stardew|Meowmere}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Use time}}由 16 降低至 14。
+** {{tr|Projectiles}}现在造成 1.25 倍的{{tr|sword}}的{{tr|base damage}}。
+** {{tr|Projectiles}}现在使用{{tr|local immunity}}：每个弹跳的猫{{tr|projectile}}现在都具有独自的伤害计时，因此它们永远不会互相冲突。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Zenith}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|现在用于制作{{tr|the Zenith}}。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Meowmere}}

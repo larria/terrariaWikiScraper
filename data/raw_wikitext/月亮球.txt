@@ -1,0 +1,47 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5285
+| type = Miscellaneous
+| damage = -1
+| damagetype = ranged
+| sound1 = Item 107.wav
+| soundcaption1 = 碰撞
+| tags = vendor / vendor:Zoologist
+}}
+{{float file box|title=可能出现的月亮样式|width=|style=max-width:35em|
+<gallery widths=40px heights=40px mode="packed">
+File:Moon style 0.png|普通
+File:Moon style 1.png|黄色
+File:Moon style 2.png|环纹
+File:Moon style 3.png|秘银
+File:Moon style 4.png|亮蓝
+File:Moon style 5.png|绿色
+File:Moon style 6.png|粉色
+File:Moon style 7.png|橙色
+File:Moon style 8.png|紫色
+</gallery>
+}}
+
+'''{{tr|Moon Globe}}'''是一种{{tr|thrown}}{{tr|consumable item}}，在完成[[{{tr|Bestiary}}]]的 50%（{{b entries|50%|entries}}）后由[[{{tr|Zoologist}}]]售卖。一旦月亮球被丢出并在一处表面上破裂后，此{{tr|world}}的[[{{tr|moon}}]]样式就会被随机更改为九种样式之一。
+
+== 备注 ==
+* {{tr|Moon Globe}}在内部被视为是[[{{tr|ranged}}]]伤害{{tr|item}}，因此受益于[[{{tr|ammo conservation}}]]。但是，仅限于[[{{tr|armor}}]]{{tr|items}}所提供的{{tr|ammo conservation}}奖励，[[{{tr|Magic Quiver}}]]、[[{{tr|Ammo Box}}]]和[[{{tr|Ammo Reservation Potion}}]]对{{tr|Moon Globe}}不起作用。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}<!-- The usual, "actual" ammo conservation check in Terraria.Player.PickAmmo() that includes the Ammo Box and other items is skipped because that method is only called for items with useAmmo > 0, which is not the case for the Moon Globe. -->
+
+== 另见 ==
+* [[{{tr|World Globe}}]]
+* [[{{tr|Tree Globe}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Moon Globe}}

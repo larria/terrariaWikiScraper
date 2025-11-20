@@ -1,0 +1,76 @@
+{{npc infobox
+| auto = 32
+| image2 =
+| type = Undead Enemy
+| environment = Dungeon
+| Clothier Voodoo Doll|1|0.33%
+| Ancient Necro Helmet|1|0.22%
+|:group:start| 总是会掉落以下四件物品之一 | @normal
+| Bone|1–3|97.09% <!-- 249/250 * 99/100 * 64/65  =  788832/812500 --> @normal
+| Golden Key|1|1.52% <!-- 249/250 * 99/100*1/65  =  24651/1625000 --> @normal
+| Tally Counter|1|1% <!-- 249/250 * 1/100  = 0.996% --> @normal
+| Bone Wand|1|0.4% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Bone|{{modes|expertonly=y|2–6}}|{{modes|expertonly=y|100%}} #expert
+| Golden Key|1|1.52% #expert
+| Tally Counter|1|1% #expert
+| Bone Wand|1|0.4% #expert
+| sound1 = Item 8.wav
+| soundcaption1 = 攻击
+| sound2 = Item 8.wav
+| soundcaption2 = 传送
+| cargodrops = no
+}}<!--
+
+The drops being grouped in Classic Mode but not in Expert and Bones having different rates
+and quantities is too convoluted for proper Cargo database storage. Therefore, the drops in
+the infobox above are only for display and we use the invisible infobox below for storing the
+drops to Cargo.
+-->{{npc infobox | view = void
+| auto = 32
+| cargo = no | cargodrops = yes
+| Clothier Voodoo Doll|1|0.33%
+| Ancient Necro Helmet|1|0.22%
+| Bone|{{modes|1–3|2–6}}|{{modes|97.09%|100%}}
+| Golden Key|1|1.52%
+| Tally Counter|1|1%
+| Bone Wand|1|0.4%
+}}
+
+'''{{tr|Dark Casters}}'''是种在[[{{tr|Dungeon}}]]中会碰到的[[{{tr|Enemy}}]]。它们遵循的是{{tr|Caster AI}}，发射三发{{tr|projectiles}}然后传送至屏幕上的另一个位置。它们的[[{{tr|Water Sphere}}]]{{tr|projectiles}}会穿过{{tr|walls}}，但可被任意{{tr|weapon}}一击摧毁。
+
+== 备注 ==
+* [[{{tr|Water Sphere}}]]的{{tr|damage}}在[[{{tr|Expert Mode}}]][[{{tr|Hardmode}}]]有巨大增幅，对游戏末期的人物能造成超过 100 {{tr|damage}}。
+
+== 小贴士 ==
+* {{tr|The Water Spheres}}在移动时会揭示出地图，即使是在穿过{{tr|solid blocks}}时也是如此。因此，{{tr|Dark Casters}}可用于绘制紧挨着{{tr|dungeon walls}}外的区域。
+* {{tr|Water Spheres}}看起来与[[{{tr|Water Bolt}}]]{{tr|spell}}几乎一模一样。在{{tr|Dungeon}}中使用{{tr|Water Bolt}}时要小心，以防将二者混淆。
+** {{tr|Water Spheres}}可以穿过{{tr|blocks}}，而{{tr|the Water Bolt projectiles}}不能。因此如果它穿过了{{tr|blocks}}，那就是个敌方的{{tr|projectile}}。
+
+== 花絮 ==
+* 除了[[{{tr|Wizard Hat}}]]外，{{tr|Dark Caster}}与[[{{tr|Tim}}]]几乎完全相同。
+* 如果玩家装备了[[{{tr|Skull}}]]和[[{{tr|Robe}}]]，就和{{tr|the Dark Caster}}非常像。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}之前是[[File:Dark Caster (old).png|link=]]。}}
+{{history|Desktop 1.3.0.1|现在会掉落[[{{tr|Tally Counter}}]]。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.1|不再对[[{{tr|On Fire!}}]]{{tr|debuff}}免疫。}}
+{{history|Desktop 1.0.6|{{tr|Dark Casters}}现在会掉落多于一个[[{{tr|Bone}}]]，以及偶尔会有[[{{tr|Golden Key}}]]。}}
+{{history|Desktop 1.0.5|在三连发和后继的传送中间添加了一个较长的延迟。}}
+{{history|Desktop 1.0.3|{{tr|Sprite updated}}。之前是 [[File:Dark Caster (pre-1.0.3).png]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Casters
+| show-main=yes
+}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Dark Caster}}

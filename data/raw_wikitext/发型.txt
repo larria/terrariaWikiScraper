@@ -1,0 +1,100 @@
+{{legacy nav tab}}
+{{quotation|[[File:Emote Town Stylist.gif|link=]] [[{{tr|Stylist}}]]|{{gameText|LegacyDialog.295}}}}
+{{for|{{tr|character}}的不同风格|{{tr|Character styles}}}}
+
+'''{{tr|Hairstyles}}'''会决定玩家的头发的外观。最初可在{{tr|character}}创建时选择{{tr|character}}的{{tr|hair}}的样式和颜色，在游戏内则可通过[[{{tr|Stylist}}]]随时更改。少数{{tr|Hairstyles}}仅在[[{{tr|Stylist}}]] [[{{tr|NPC}}]] 处可用（不可以在创建{{tr|character}}时选择）；这些{{tr|Hairstyles}}也被特定的游戏进度里程碑所锁定。
+
+== 风格 ==
+共有 165 种不同的{{tr|hairstyles}}。此处通过它们的内部识别符来称呼它们。{{source code ref|v=1.4.4.9|class=Terraria.GameContent.HairstyleUnlocksHelper|t=注意内部的{{tr|hairstyles}}列表是{{维基百科|Zero-based numbering|从 0 开始}}的，在本 wiki 上是从 1 开始的。}}<!--
+
+// Hairstyles at character creation, on all platforms
+-->{{#arraydefine:hairstyles:default|1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}}<!--
+// Hairstyles at character creation, not 3DS (52–123 are Stylist-exclusive on old-gen)
+-->{{#arraydefine:hairstyles:default-oldgen|37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123}}<!--
+// Hairstyles at character creation, not 3DS and old-gen
+-->{{#arraydefine:hairstyles:default-1.3-plus|135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162}}<!--
+// Hairstyles at Stylist, post-Plantera
+-->{{#arraydefine:hairstyles:post-plantera|146, 163, 164, 165}}<!--
+// Hairstyles at Stylist, post-Martians
+-->{{#arraydefine:hairstyles:post-martians|124, 125, 126, 127, 128, 129, 130, 131, 132, 133}}<!--
+// Hairstyles at Stylist, post-Martians and Moon Lord
+-->{{#arraydefine:hairstyles:post-martians-moon-lord|134}}
+
+=== {{tr|character}}创建时 ===
+{{itemlist/start|class=terraria|css=font-weight:bold;text-align:center;|width=7em}}
+{{#arrayprint:hairstyles:default||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@}}}}
+{{#arrayprint:hairstyles:default-oldgen||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@ {{eicons|1.2.3|small=y}}}}}}
+{{#arrayprint:hairstyles:default-1.3-plus||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@ {{eicons|1.4.4|small=y}}}}}}
+{{itemlist/end}}
+
+=== 击败[[{{tr|Plantera}}]]后 ===
+{{itemlist/start|class=terraria|css=font-weight:bold;text-align:center;|width=7em}}
+{{#arrayprint:hairstyles:post-plantera||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@ {{eicons|1.3.0.1|small=y}}}}}}
+{{itemlist/end}}
+
+=== 击败[[{{tr|Martian Madness}}]]后 ===
+{{itemlist/start|class=terraria|css=font-weight:bold;text-align:center;|width=7em}}
+{{#arrayprint:hairstyles:post-martians||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@}}}}
+{{itemlist/end}}
+
+=== 击败[[{{tr|Martian Madness}}]]和[[{{tr|Moon Lord}}]]后 ===
+{{itemlist/start|class=terraria|css=font-weight:bold;text-align:center;|width=5em}}
+{{#arrayprint:hairstyles:post-martians-moon-lord||@@@@|{{itemlist/item|[[File:Hairstyle @@@@.png]]<br/>@@@@}}}}
+{{itemlist/end}}
+
+== 备注 ==
+* 某些[[{{tr|vanity items}}]]也作为{{tr|hairstyles}}使用。部分可以在{{tr|head slot}}装备的{{tr|vanity items}}（例如[[{{tr|Witch Hat}}]]）仍然会显示玩家的{{tr|hair}}。
+* {{eicons|1.4.0.1}}当在{{tr|character}}创建时使用随机选项时，所选的{{tr|hairstyle}}会决定玩家的性别。69 种{{tr|hairstyles}}会将性别设为{{tr|female}}，其余的 81 种会将性别设为{{tr|male}}。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.States.UICharacterCreation.Click_RandomizePlayer}}
+
+== 花絮 ==
+* {{tr|Hairstyles}} 109 和 124 至 132 很像外星人样式和主题的{{tr|Hairstyles}}。
+* {{tr|Hairstyle}} 124 很像 1993 年的奇幻喜剧电影{{维基百科|b=y|Hocus Pocus (1993 film)|Hocus Pocus|t=女巫也疯狂}}中的玛莉‧山德斯（Mary Sanderson）的{{tr|Hairstyle}}。
+* {{tr|Hairstyle}} 7 很像[[{{tr|Dryad}}]]的{{tr|hairstyle}}。
+* {{tr|Hairstyle}} 4 很像来自{{维基百科|b=y|Street Fighter|t=街头霸王}}系列的{{维基百科|Guile (Street Fighter)|Guile|t=古烈}}的标志性宽平头{{tr|Hairstyle}}。
+* {{tr|Hairstyles}} 24 和 132 很像来自日本电视动画系列{{维基百科|b=y|Dragon Ball Z|龙珠Z}}的[https://dragonball.fandom.com/wiki/Super_Saiyan 超级赛亚人]的{{tr|Hairstyles}}。
+* {{tr|Hairstyles}} 26 和 20 看起来分别像{{维基百科|Princess Leia|t=莱娅公主}}和{{维基百科|Luke Skywalker|t=卢克·天行者}}的{{tr|Hairstyles}}，他们都来自美国史诗太空歌剧媒体系列{{维基百科|b=y|Star Wars|t=星球大战}}。
+* {{tr|Hairstyles}} 126 和 127 看起来像来自 2016 年的动作冒险沙盒游戏{{维基百科|b=y|Starbound|t=星界边境}}中的[https://starbounder.org/Floran 叶人（Floran）]的{{tr|Hairstyles}}。
+* {{tr|Hairstyles}} 82 和 84 很像来自日本{{维基百科|Shōjo manga|少女漫画}}系列{{维基百科|b=y|Sailor Moon|美少女战士}}的两个虚拟角色{{维基百科|Sailor Moon (character)|月野兔}}和{{维基百科|Chibiusa|小兔|lang=zh}}的{{tr|Hairstyles}}。
+* {{tr|Hairstyle}} 52、53、和 54 很像 {{维基百科|NES}} 和 {{维基百科|MSX}} 版本的 1987 年的奇幻角色扮演游戏{{维基百科|b=y|Final Fantasy (video game)|Final Fantasy|t=最终幻想}}中的{{tr|hairstyle}}，分别是[https://finalfantasy.fandom.com/wiki/White_Mage_(Final_Fantasy) 白魔法师（White Mage）]、[https://finalfantasy.fandom.com/wiki/Black_Mage_%28Final_Fantasy%29 黑魔法师（Black Mage）]、和[https://finalfantasy.fandom.com/wiki/Warrior_(Final_Fantasy) 战士（Fighter）]的{{tr|hairstyle}}。
+* {{tr|Hairstyle}} 78 很像奇幻小说系列{{维基百科|b=y|Harry Potter|t=哈利·波特}}中[https://harrypotter.fandom.com/wiki/Filius_Flitwick 菲利乌斯·弗利维（Filius Flitwick）]的{{tr|Hairstyle}}。
+* {{tr|Hairstyle}} 107 很像 2018 年的平台游戏{{维基百科|b=y|Celeste (video game)|Celeste|t=蔚蓝}}中的[https://celestegame.fandom.com/wiki/Madeline 玛德琳（Madeline）]的{{tr|Hairstyles}}。
+* {{tr|Hairstyle}} 44 很像格斗游戏系列{{维基百科|b=y|Tekken|铁拳}}中的[https://tekken.fandom.com/wiki/Jin_Kazama 风间仁]的{{tr|Hairstyles}}。
+* {{tr|Hairstyle}} 163 很像[[{{tr|Princess}}]]的{{tr|hairstyle}}。
+* {{tr|Hairstyle}} 135 很像 2007 年的 3D 平台游戏{{维基百科|b=y|Super Mario Galaxy|t=超级马力欧银河}}中的[https://www.mariowiki.com/Rosalina 罗莎塔（Rosalina）]的{{tr|Hairstyle}}。
+* {{tr|Hairstyles}} 53、77、和 110 会让玩家拥有可见的眉毛。
+* {{tr|Hairstyles}} 164 和 165 很像{{iwlink|dts|Wilson|{{tr|Wilson}}（Wilson）}}和{{iwlink|dts|Willow|{{tr|Willow}}（Willow）}}的{{tr|hairstyles}}，这两个是来自 2013 年的生存游戏{{iwlink|dts|Don't Starve|《饥荒》（Don't Starve）}}的角色。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Hairstyles}} 52–136、146–147、153–154、和 160–161 现在也在创建{{tr|character}}时可用。此前，这些{{tr|Hairstyles}}仅限[[{{tr|Stylist}}]]。
+** 当随机生成{{tr|character}}时，有更多的{{tr|hairstyles}}可以被选中。}}
+{{history|Desktop 1.4.3|添加了 2 种新的{{tr|hairstyles}}（164–165）。}}
+{{history|Desktop 1.4.1|添加了一种类似于[[{{tr|Princess}}]]的{{tr|Hairstyle}}（163）。}}
+{{history|Desktop 1.4.0.3|修复了仅限{{tr|Stylist}}的{{tr|Hairstyles}}在随机{{tr|character}}时会出现的问题。}}
+{{history|Desktop 1.4.0.1|添加了 28 种新{{tr|Hairstyles}}（135–162）。}}
+{{history|Desktop 1.3.0.1|
+** 添加了 11 种新{{tr|Hairstyles}}（124–134）。
+** 更新了{{tr|hairstyles}} 1–51 的外观。}}
+{{history|Desktop 1.2.3.1|修复了较长的{{tr|hairs}}在[[{{tr|reverse gravity}}]]下会将前端绘制在玩家的脚部处的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** 添加了 72 种新{{tr|Hairstyles}}（52–123）。
+** 添加了使用[[{{tr|Hair Dye}}]]允许玩家的{{tr|hair color}}变为动态效果的机制。
+** 玩家的{{tr|hair color}}现在可被{{tr|Stylist}}改变。}}
+{{history|Desktop 1.2|添加了 15 种新{{tr|Hairstyles}}（37–51）。}}
+{{history|Desktop 1.1.1|玩家的帽子下方现在会显示{{tr|hair}}。}}
+{{history|Desktop 1.0.6|
+** 添加了 19 种新{{tr|Hairstyles}}（18–36）。
+** 现在在选择{{tr|Hairstyle}}时，可以右击来反向循环选择。
+** 偏向{{tr|Female}}/{{tr|male}}的{{tr|Hairstyles}}不再会导致{{tr|female}}/{{tr|male}}的声音。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Hairstyles}}

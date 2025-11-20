@@ -1,0 +1,199 @@
+{{about|{{tr|enemy}}|可获得的鱼饵物品|{{tr|Jellyfish (bait)}}}}
+'''{{tr|Jellyfish}}'''是出现在[[{{tr|water}}]]中的[[{{tr|enemies}}]]。当在水下时，它们通过短时间喷发把自己推向玩家来攻击。出水后，他们无法以任何方式移动或追击玩家。{{tr|Jellyfish}}能够从水中跳出来攻击玩家，这经常让它们搁浅在地上。大多数品种的{{tr|Jellyfish}}都会发光，因此很容易在黑暗区域中发现。目前共有 5 种{{tr|Jellyfish}}，其中 3 种只在[[{{tr|Hardmode}}]]期间出现。
+
+在[[{{tr|Expert Mode}}]]中，{{tr|Jellyfish}}会周期性地“带电”（{{tr|Fungo Fish}}除外）。在这一带电状态下，它们是无敌的，且会保持其速度（除非接触到{{tr|solid block}}或{{tr|water}}面）。对这一状态下的{{tr|Jellyfish}}的某些攻击会让玩家受到等同于{{tr|Jellyfish}}{{tr|contact damage}} 1.3 倍的伤害（''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取详细信息''）。
+
+== 种类 ==
+=== {{tr|Pre-Hardmode}} ===
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 63
+| type = Aquatic
+| environment = Underground
+| environment2 = Cavern
+| Glowstick|1-4|100%
+| Jellyfish Necklace|1|1%
+|custom|{{item|Blue Jellyfish Kite|note=（在[[{{tr|Windy Day}}]]）|wrap=y}}|2%
+| sound1 = Zombie 34.wav, Zombie 35.wav
+| soundcaption1 = 空闲（湿）
+| image = Blue Jellyfish.gif
+| imageother = Blue Jellyfish2.gif
+| imageothercaption = 带电状态
+}}
+|{{npc infobox
+| auto = 64
+| type = Aquatic
+| environment = Ocean
+| Glowstick|1-4|100%
+| Jellyfish Necklace|1|1%
+|custom|{{item|Pink Jellyfish Kite|note=（在[[{{tr|Windy Day}}]]）|wrap=y}}|2%
+| sound1 = Zombie 34.wav, Zombie 35.wav
+| soundcaption1 = 空闲（湿）
+| image = Pink Jellyfish.gif
+| imageother = Pink Jellyfish2.gif
+| imageothercaption = 带电状态
+}}
+}}
+
+=== [[{{tr|Hardmode}}]] ===
+{{infobox wrapper|direction=row|float=none
+|{{npc infobox
+| auto = 103
+| type = Aquatic
+| environment = Underground
+| environment2 = Cavern
+| debuff = Silenced
+| debuffchance = 20%
+| debuffduration = {{modes|7|14}} {{tr|seconds}}
+| Glowstick|1-4| 100%
+| Megaphone|1|{{modes|1%|2%}}
+| Jellyfish Necklace|1|1%
+| sound1 = Zombie 34.wav, Zombie 35.wav
+| soundcaption1 = 空闲（湿）
+| image = Green Jellyfish.gif
+| imageother = Green Jellyfish2.gif
+| imageothercaption = 带电状态
+| hardmode = yes
+}}
+|{{npc infobox
+| auto = 242
+| name = Blood Jelly
+| type = Aquatic
+| environment = Underground Crimson
+| environment2 = Ocean+The Crimson
+| Monster Meat|1|0.07%
+| hardmode = yes
+| image = Blood Jelly.gif
+| imageother = Blood Jelly2.gif
+| imageothercaption = 带电状态
+}}
+|{{npc infobox
+| auto = 256
+| image = Fungo Fish.gif
+| type = Aquatic
+| environment = Glowing Mushroom biome
+| hardmode = yes
+}}
+}}
+
+== 备注 ==
+* 当{{tr|Jellyfish}}带电时，以下攻击会导致玩家受到伤害：
+** [[造成近战击打的物品列表|造成近战击打的物品]]的“近战击打”。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_MeleeHitNPCs}}
+** 用下列{{tr|projectile}}击中{{tr|Jellyfish}}：{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage|field=Terraria.ID.ProjectileID.Sets&#46;AllowsContactDamageFromJellyfish}}<!--
+
+-->{{#arraydefine:list|46, 47, 49, 64, 66, 97, 105, 130, 153, 212, 215, 218, 222, 342, 367, 368, 439, 445, 460, 595, 600, 611, 615, 630, 633, 697, 705, 707, 714, 730, 735, 802, 841, 842, 847, 848, 849, 877, 878, 879, 912, 913, 914, 915, 927, 938, 939, 940, 941, 942, 943, 944, 945, 952, 972, 982, 984, 997|,}}<!--
+
+-->{{#vardefine:source_46|{{eil|Dark Lance}}}}<!--
+-->{{#vardefine:source_47|{{eil|Trident}}}}<!--
+-->{{#vardefine:source_48|{{eil|Spear}}}}<!--
+-->{{#vardefine:source_49|{{eil|Dark Lance}}}}<!--
+-->{{#vardefine:source_64|{{eil|Mythril Halberd}}}}<!--
+-->{{#vardefine:source_66|{{eil|Adamantite Glaive}}}}<!--
+-->{{#vardefine:source_97|{{eil|Cobalt Naginata}}}}<!--
+-->{{#vardefine:source_105|{{eil|Gungnir}}}}<!--
+-->{{#vardefine:source_130|{{eil|Mushroom Spear}}}}<!--
+-->{{#vardefine:source_153|{{eil|The Rotted Fork}}}}<!--
+-->{{#vardefine:source_212|{{eil|Palladium Pike}}}}<!--
+-->{{#vardefine:source_215|{{eil|Orichalcum Halberd}}}}<!--
+-->{{#vardefine:source_218|{{eil|Titanium Trident}}}}<!--
+-->{{#vardefine:source_222|{{eil|Chlorophyte Partisan}}}}<!--
+-->{{#vardefine:source_342|{{eil|North Pole}}}}<!--
+-->{{#vardefine:source_367|{{eil|Obsidian Swordfish}}}}<!--
+-->{{#vardefine:source_368|{{eil|Swordfish}}}}<!--
+-->{{#vardefine:source_439|{{eil|Laser Machinegun}}}}<!--
+-->{{#vardefine:source_445|{{eil|Laser Drill}}}}<!--
+-->{{#vardefine:source_460|{{eil|Charged Blaster Cannon}}}}<!--
+-->{{#vardefine:source_595|{{eil|Arkhalis}}}}<!--
+-->{{#vardefine:source_600|{{eil|Portal Gun}}}}<!--
+-->{{#vardefine:source_611|{{eil|Solar Eruption}}}}<!--
+-->{{#vardefine:source_615|{{eil|Vortex Beater}}}}<!--
+-->{{#vardefine:source_630|{{eil|Phantasm}}}}<!--
+-->{{#vardefine:source_633|{{eil|Last Prism}}}}<!--
+-->{{#vardefine:source_697|{{eil|Sleepy Octopod}}}}<!--
+-->{{#vardefine:source_705|{{eil|Phantom Phoenix}}}}<!--
+-->{{#vardefine:source_707|{{eil|Sky Dragon's Fury}}}}<!--
+-->{{#vardefine:source_714|{{eil|Celebration Mk2}}}}<!--
+-->{{#vardefine:source_730|{{eil|Storm Spear}}}}<!--
+-->{{#vardefine:source_735|{{eil|Terragrim}}}}<!--
+-->{{#vardefine:source_802|{{eil|Gladius}}}}<!--
+-->{{#vardefine:source_841|{{eil|Leather Whip}}}}<!--
+-->{{#vardefine:source_842|{{eil|Ruler}}}}<!--
+-->{{#vardefine:source_847|{{eil|Durendal}}}}<!--
+-->{{#vardefine:source_848|{{eil|Morning Star}}}}<!--
+-->{{#vardefine:source_849|{{eil|Dark Harvest}}}}<!--
+-->{{#vardefine:source_877|{{eil|Jousting Lance}}}}<!--
+-->{{#vardefine:source_878|{{eil|Shadow Jousting Lance}}}}<!--
+-->{{#vardefine:source_879|{{eil|Hallowed Jousting Lance}}}}<!--
+-->{{#vardefine:source_912|{{eil|Cool Whip}}}}<!--
+-->{{#vardefine:source_913|{{eil|Firecracker}}}}<!--
+-->{{#vardefine:source_914|{{eil|Snapthorn}}}}<!--
+-->{{#vardefine:source_915|{{eil|Kaleidoscope}}}}<!--
+-->{{#vardefine:source_927|{{eil|Starlight}}}}<!--
+-->{{#vardefine:source_938|{{eil|Copper Shortsword}}}}<!--
+-->{{#vardefine:source_939|{{eil|Tin Shortsword}}}}<!--
+-->{{#vardefine:source_940|{{eil|Iron Shortsword}}}}<!--
+-->{{#vardefine:source_941|{{eil|Lead Shortsword}}}}<!--
+-->{{#vardefine:source_942|{{eil|Silver Shortsword}}}}<!--
+-->{{#vardefine:source_943|{{eil|Tungsten Shortsword}}}}<!--
+-->{{#vardefine:source_944|{{eil|Gold Shortsword}}}}<!--
+-->{{#vardefine:source_945|{{eil|Platinum Shortsword}}}}<!--
+-->{{#vardefine:source_952|{{eil|Spinal Tap}}}}<!--
+-->{{#vardefine:source_972|{{eil|Night's Edge}}、{{eil|True Night's Edge}}}}<!--
+-->{{#vardefine:source_982|{{eil|Excalibur}}、{{eil|True Excalibur}}}}<!--
+-->{{#vardefine:source_984|{{eil|Terra Blade}}}}<!--
+-->{{#vardefine:source_997|{{eil|The Horseman's Blade}}}}<!--
+-->
+{| class="terraria lined sortable mw-collapsible mw-collapsed" style="margin-left: 3.2em;"
+! colspan=4 | {{tr|Projectile}}
+|-
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]] !! 图像 !! {{tr|Name}} !! {{tr|Source}}
+{{#arrayprint:list|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]]</td>
+<td>{{projectileinfo|@@@@|name}}</td>
+<td>{{#var:source_@@@@|{{na}}}}</td>
+</tr>
+}}
+|}
+* 可以用[[{{tr|Wire}}]]使[[{{tr|Jellyfish Statue}}]]生成{{tr|Blue Jellyfish}}。
+* 如果被撞出{{tr|water}}面掉到干燥{{tr|blocks}}上，{{tr|Jellyfish}}会变得无法移动直到被撞回{{tr|water}}中或{{tr|water}}淹到它们为止。在{{tr|expert mode}}中，这也可以防止他们带电。
+* {{tr|Blue Jellyfish}}和{{tr|Green Jellyfish}}能够在[[{{tr|Underworld}}]]具有一定面积的{{tr|water}}中生成。
+
+== 花絮 ==
+{{bestiary|Blue Jellyfish|Blue Jellyfish-alias={{tr|Blue Jellyfish}}，{{tr|Green Jellyfish}}和{{tr|Pink Jellyfish}}|Blood Jelly|Fungo Fish}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.1|修复了被{{tr|Jellyfish}}的电击攻击杀死时，出现错误[[{{tr|death message}}]]的{{tr|bug}}。}}
+{{history|Desktop 1.4.4|
+** {{tr|Expert}}中电击攻击现在会对部分{{tr|projectile}}生效。
+** {{tr|Blood Jelly}}的{{tr|Monster Meat}}掉落几率由 1/1000 降低至 1/1500。在{{tr|Don't Starve seeds}}中，掉落几率由 1/200 降低至 1/500。}}
+{{history|Desktop 1.4.3|现在{{tr|Blood Jelly}}会掉落[[{{tr|Monster Meat}}]]。}}
+{{history|Desktop 1.4.0.5|{{tr|Blue Jellyfish}}现在有几率在{{tr|Hardmode}}中生成了。}}
+{{history|Desktop 1.4.0.3|{{tr|Fungo Fish}}的外观更新。}}
+{{history|Desktop 1.4.0.1|{{tr|Blue Jellyfish}}和{{tr|Pink Jellyfish}}现在有几率掉落它们对应的[[{{tr|kites}}]]了。}}
+{{history|Desktop 1.3.5|{{tr|Blue Jellyfish}}、{{tr|Pink Jellyfish}}、和{{tr|Green Jellyfish}}的外观更新。}}
+{{history|Desktop 1.3.0.6|修正了{{tr|expert mode}}中在玩家无法击中{{tr|jellyfish}}时，{{tr|jellyfish}}的反击会击中玩家的问题。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Introduced}}电击攻击。
+** {{tr|Blue Jellyfish}}的伤害由 20 增加至 25，{{tr|health}}由 30 增加至 34。
+** {{tr|Green Jellyfish}}和{{tr|Pink Jellyfish}}现在会掉落各自的旗帜了。}}
+{{history|Desktop 1.2.1|{{tr|Green Jellyfish}}现在会掉落[[{{tr|Megaphone}}]]。}}
+{{history|Desktop 1.2.0.3|{{tr|Blue Jellyfish}}、{{tr|Pink Jellyfish}}、{{tr|Green Jellyfish}}现在会掉落[[{{tr|Jellyfish Banner}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Blue Jellyfish}}、{{tr|Pink Jellyfish}}、{{tr|Green Jellyfish}}现在会掉落[[{{tr|Jellyfish Necklace}}]]。
+** {{tr|Introduced}}{{tr|Fungo Fish}}和{{tr|Blood Jelly}}。}}
+{{history|Desktop 1.1|{{tr|Introduced}}{{tr|Green Jellyfish}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Jellyfish}}

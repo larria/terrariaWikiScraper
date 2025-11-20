@@ -1,0 +1,85 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4607
+| idprojectile = 818, 831, 833, 834, 835
+| tags = minion / loot / hardmode
+}}
+
+'''{{tr|Desert Tiger Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|Summon weapons}}]]，可召唤'''{{tr|Desert Tiger}}'''[[{{tr|minion}}]]。它会跑向[[{{tr|enemies}}]]并造成接触伤害。每六秒{{source code ref|name=pounce_cooldown|v=1.4.4.9|method=Terraria.Projectile.AI_067_FreakingPirates}}会对附近{{tr|enemy}}施展一次猛扑攻击，造成 150% 伤害（{{#expr:floor({{iteminfo|4607|damage}}*1.5)}} {{tr|base damage}}），{{source code ref|name=dmg|v=1.4.4.9|method=Terraria.Projectile.Damage}}并且能够穿透[[{{tr|blocks}}]]到达{{tr|enemy}}所在处。
+
+当多次使用{{tr|Desert Tiger Staff}}并不会生成多只{{tr|Desert Tigers}}；而存在的{{tr|Desert Tiger}}每多召唤都会变得更强（+16/+17 伤害；40% 的面板{{tr|damage}}<ref name=dmg/>）且更快。召唤 1 至 3 次时，老虎会是一只幼崽，召唤 4 至 6 次后为成年虎，召唤 7 次及以上时为带装甲的成年虎。
+
+{{tr|The Desert Tiger Staff}}可在[[{{tr|Dungeon}}]]中的[[{{tr|Desert Chest}}]]里面发现，而{{tr|Desert Chest}}仅可在{{tr|Plantera}}被打败后使用[[{{tr|Desert Key}}]]解锁。
+
+{{modifier|summon}}
+
+== 备注 ==
+
+{| class="terraria align-center" style="float:right; margin-left:1em;"
+|+ {{tr|Desert Tiger}}{{tr|damage}}
+|- style="font-size:90%;"
+! !! {{ht|#|召唤次数，即{{tr|the desert tiger staff}}的使用次数}} !! 接触 !! 猛扑
+|-
+! rowspan=3 | [[File:Desert Tiger (tier 1).png]]<br/>{{tr|Tier 1}}
+| {{/row|1}}
+|-
+| {{/row|2}}
+|- class=bottomline
+| {{/row|3}}
+|-
+! rowspan=3 | [[File:Desert Tiger (tier 2).png]]<br/>{{tr|Tier 2}}
+| {{/row|4}}
+|-
+| {{/row|5}}
+|- class=bottomline
+| {{/row|6}}
+|-
+! rowspan=4 | [[File:Desert Tiger (tier 3).png]]<br/>{{tr|Tier 3}}
+| {{/row|7}}
+|-
+| {{/row|8}}
+|-
+| {{/row|9}}
+|-
+| colspan=3 | {{note|...}}
+|}
+
+* {{tr|The Desert Tiger}}击中时造成 10 {{tr|ticks}}{{tick}}[[{{tr|local invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|Tier 2}}{{tr|Desert Tiger}}的猛扑攻击的冷却时间会降低至五秒，{{tr|Tier 3}}则为四秒。<ref name=pounce_cooldown/>
+* {{tr|Desert Tiger}}只能向以玩家为中心 100×50 {{tr|tile}}的长方形内的{{tr|enemy}}猛扑。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_067_TigerSpecialAttack}}
+** 若多个{{tr|enemies}}存在于此范围内，{{tr|Desert Tiger}}会从其中一个跳向另一个，在一次猛扑攻击对多个{{tr|enemy}}造成伤害。每次猛扑攻击可攻击的最大{{tr|enemy}}数量取决于{{tr|Desert Tiger}}的召唤次数。
+
+== 小贴士 ==
+[[File:Desert Tiger Staff (demo).gif|frame|right|{{tr|The Desert Tiger}}向[[{{tr|Mimic}}]]猛扑并持续攻击。]] <!-- This GIF needs to be down here to avoid interference with the floating images and tables above. -->
+
+* 由于{{tr|the Desert Tiger}}在有其更高等级时具有很高伤害，[[{{tr|Firecracker}}]]的[[{{tr|tag damage}}|标记]]效果在与它搭配使用可在击中时造成大量伤害。然而，由于{{tr|Firecracker}}较短的范围，这样的风险会比较高。
+* 由于其{{tr|sell value}}，相比其它{{tr|summon weapon}}，此{{tr|weapon}}的[[{{tr|reforge}}]]成本非常高。
+
+== 花絮 ==
+* 共三种{{tr|summon weapons}}有这种特殊的召唤机制，分别是[[{{tr|Abigail's Flower}}]]、{{tr|Desert Tiger Staff}}和[[{{tr|Stardust Dragon Staff}}]]。
+* {{tr|The Desert Tiger}}和现实中的{{wikipedia|white tiger|白虎}}很像。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在在步行追逐{{tr|enemies}}的速度加快 25%。}}
+{{history|Desktop 1.4.3.3|修复了{{tr|Desert Tiger}}在[[{{tr|Journey Mode}}]]时间设置为暂停或加速时无法正确地在{{tr|enemies}}上弹跳的问题。}}
+{{history|Desktop 1.4.1.2|
+** 现在如果当前的目标处于空中，{{tr|Desert Tiger}}会在目标上“弹跳”，使其能更加稳定地追踪并造成伤害。
+** 略微增加了每个“{{tr|minion slot}}”提升的伤害（由基础伤害的 33% 增加至 40%）。}}
+{{history|Desktop 1.4.1|
+** {{tr|Base damage}}由 33 提升至 41。
+** 猛扑攻击时的碰撞箱增大。
+** 在猛扑时不再造成{{tr|critical hits}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+
+{{language info|en=Desert Tiger Staff}}

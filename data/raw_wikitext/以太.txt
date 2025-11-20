@@ -1,0 +1,259 @@
+{{exclusive|1.4.4}}
+[[File:BiomeBannerAether.png|center]]
+
+'''{{tr|Aether}}'''是一个[[{{tr|mini biome}}]]，可以在{{tr|world}}靠外五分之一{{tr|world}}宽度部分的[[{{tr|Underground}}]]或[[{{tr|Cavern}}]]{{tr|layers}}中找到。它在{{tr|world}}生成时只会生成一次，且总是和[[{{tr|Jungle}}]]生成在同一侧。此{{tr|The biome}}的中央处，有着一大池的[[{{tr|Shimmer}}]]，周围环绕着几棵[[{{tr|Gem Tree}}]]。有时候，可以看到[[{{tr|Faeling}}]]在{{tr|Shimmer}}池的上空飞舞。
+
+在[[{{tr|Underground}}]]或[[{{tr|Cavern}}]]{{tr|layers}}中，若一片区域有 300 格或以上的{{tr|Shimmer}}，则该区域被视为{{tr|Aether}}。
+
+在{{tr|Aether}}中时，会出现一种独特的、很像布满星星的[[{{tr|Space}}]]的{{tr|background effect}}。这种效果也会在处于完全黑暗之中的{{tr|tiles}}上显示。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Enemies}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Shimmer Slime|note2=（来自大部分进入[[{{tr|Shimmer}}]]的[[{{tr|slimes}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Critters}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Faeling}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Aether)| {{sound|track=Aether}} |icons={{eicons|1.4.4}} }}<!--
+			-->|{{item|Otherworldly Music Box (Snow)| {{sound|track=Snow (Otherworldly)|file=Music-Arctic (Snow) (Otherworldly).mp3}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 生成 ==
+[[File:Small aether generation.png|400px|thumb|{{tr|Small world}}中，{{tr|Aether}}可能的生成范围。游戏会首先尝试在绿色范围生成，若失败则在黄色范围生成。<br>此{{tr|world}}在 [[1.4.4.8.1]] 中生成，{{tr|seed}}为 1.1.2.436095035。]]
+[[File:Medium aether generation.png|400px|thumb|{{tr|Medium world}}中，{{tr|Aether}}可能的生成范围。游戏会首先尝试在绿色范围生成，若失败则在黄色范围生成。<br>此{{tr|world}}在 [[1.4.4.8.1]] 中生成，{{tr|seed}}为 2.1.1.748851262。]]
+[[File:Large aether generation.png|400px|thumb|{{tr|Large world}}中，{{tr|Aether}}可能的生成范围。游戏会首先尝试在绿色范围生成，若失败则在黄色范围生成。<br>此{{tr|world}}在 [[1.4.4.8.1]] 中生成，{{tr|seed}}为 3.1.1.870771933。]]
+
+{{tr|The Aether}}总是和[[{{tr|Jungle}}]]生成在{{tr|world}}的同一侧。
+
+要生成{{tr|Aether}}，游戏会通过在一片范围内（见下方获取有关这一范围的大小和范围中生成尝试次数的技术性信息）随机选择一个{{tr|tile}}，{{source code ref|v=1.4.4.5|name=generateWorld|method=Terraria.WorldGen.GenerateWorld}}，然后检查以此{{tr|tile}}为中心 211×211 至 249×249（大小随机）的长方形区域：{{source code ref|v=1.4.4.5|method=Terraria.WorldGen.ShimmerMakeBiome}}
+* 区域的边界必须至少离{{tr|world}}的边界 50 {{tr|tiles}}远。
+* 区域中必须没有[[{{tr|Ebonstone Block}}]]或[[{{tr|Crimstone Block}}]]（除非是在 [[{{tr|Don't dig up}}]] / [[{{tr|Get fixed boi}}]] {{tr|world}}中）。
+
+如果这一区域检查通过，则此{{tr|tile}}就是有效的，{{tr|Aether biome}}会以此格为中心生成。否则，则继续选择和检查随机{{tr|tile}}的流程。在内部，{{tr|the Aether biome}}被视为以有效图格为中心的 200×200 的长方形区域（中心四个{{tr|tile}}的右下角那格为中心），没有其他结构会与之重叠。<ref name="generateWorld"/>
+
+=== 范围 ===
+为了更好地描述范围的大小，首先设定描述世界中图格位置的坐标系（所有下方的数值以{{tr|tile}}为单位）：
+* 世界左上角那格的左边为 (0,0)，而世界右下角那格的坐标为 (<code>mX</code>,<code>mY</code>)，其中 <code>mX</code> 是世界宽度，<code>mY</code> 是世界高度（即 X、Y 轴的正方向分别为“从左向右”和“从上到下”）。
+* {{tr|Surface}}和{{tr|Underground layers}}之间的边界的高度为 <code>S</code>（Y = <code>S</code>）。
+* 相似地，{{tr|Underground and Cavern layers}}之间的边界的高度为 <code>C</code>（Y = <code>C</code>）。
+* 在选择随机图格 (X,Y) 时，对应坐标会是以下数值范围中的一个随机数：X = <code>[X1, X2)</code>；Y = <code>[Y1, Y2)</code>
+
+首个范围的大小由下决定：
+
+; 范围 A
+* Y 轴：
+** 最小深度为 Y1 = <code>(S + C) ÷ 2 + 50</code>，最大深度为 Y2 = <code>[(mY - 250) × 2 + C] ÷ 3</code>。
+** 若 Y2 大于 <code>mY - 460</code>，则 Y2 被设为 <code>mY - 460</code>。
+** 若 Y2 ≤ Y1，则 Y2 被设为 <code>Y1 + 50</code>。
+* X 轴：
+** 范围为 X1 = <code>200</code>，X2 = <code>mX × 0.11</code>；或 X1 = <code>mX × 0.89</code>，X2 = <code>mX - 200</code>；取决于在世界的哪一侧。
+*** 这等效地使得所选格位于世界两侧的 11% 区域内，且距离世界边缘至少 200 {{tr|tiles}}远。
+
+然后，随机在范围 A 中选择一格。如果它没有通过上述检查，则游戏会在另一个范围（范围 B）中尝试 20000 次以找到有效图格：
+
+; 范围 B
+* Y 轴：
+** Y1 被设为 <code>(S + C) ÷ 2 + 20</code>。Y2 不变。
+* X 轴：
+** X1 和 X2 不变。
+
+如果这些尝试全部失败，则游戏会继续在另一个范围（范围 C）中选择随机图格，直到找到有效图格：
+
+; 范围 C
+* Y 轴：
+** Y1 被设为 <code>S + 120</code>。Y2 不变。
+* X 轴：
+** 范围被设为 X1 = <code>200</code>，X2 = <code>mX × 0.2</code>；或 X1 = <code>mX × 0.8</code>，X2 = <code>mX - 200</code>；取决于在世界的哪一侧。
+
+; [[{{tr|Celebrationmk10}}]] 范围
+在 [[Celebrationmk10]] {{tr|worlds}}中，首个搜索范围和其他世界不同。此外，除了{{tr|Aether biome}}以外，范围内的绝大部分[[{{tr|water}}]]池被替换为{{tr|Shimmer}}池。
+
+Celebrationmk10 {{tr|world}}中的首个范围（范围 A）大小如下决定：
+
+* Y 轴：
+** 最小深度为 Y1 = <code>S + 150</code>，最大深度为 Y2 = <code>(C + S + 200) ÷ 2</code>。
+** 若 Y2 ≤ Y1，则 Y2 被设为 <code>Y1 + 50</code>。
+* X 轴：
+** 和其他世界中范围 A 的范围相同。
+
+; 进行生成
+
+在决定范围后，游戏会首先在范围 A 内进行 10000 次尝试。
+
+如果没有找到有效{{tr|tile}}，则在范围 B 中进行 10000 次尝试。
+
+如果仍然没有找到有效{{tr|tile}}，则继续在范围 C 中随机选择{{tr|tile}}。
+
+== 备注 ==
+* 由于[[《{{tr|Terraria}}》]]的{{tr|world}}不是动态更新的，在 [[1.4.4]] 前生成的{{tr|worlds}}不会具有{{tr|Aether biome}}。
+* 在击败[[{{tr|Moon Lord}}]]前，{{tr|Aether}}是仅有的[[{{tr|Shimmer}}]]来源。这意味着它是有限的，且不可再生。
+** 不过，一旦击败{{tr|Moon Lord}}，就能够获得[[{{tr|Bottomless Shimmer Bucket}}]]，可以用于制造无限量的{{tr|Shimmer}}。
+* {{tr|Aether}}没有独有的敌怪（除非某些敌怪掉进{{tr|Shimmer}}池）也不会影响敌怪刷新，因为{{tr|Aether}}地形的平坦和开阔性，频繁刷新的敌怪会造成不小的麻烦（特别是在困难模式期间）所以在利用{{tr|Shimmer}}时最好将自己围起来或使用水泵转移微光。
+
+== 小贴士 ==
+* {{tr|Aether}}的水平位置可以依靠{{tr|world}}创建时[[{{tr|Guide}}]]的名称来寻找。
+** 注意此方法并不总是有效，因为在常规{{tr|world}}中，{{tr|Aether}}不能与[[{{tr|Ebonstone Block}}]]或[[{{tr|Crimstone Block}}]]重叠，而此方法只能计算出第一个生成范围（范围 A）的位置。如果{{tr|Aether}}在范围 A 中生成失败了，它就会在其他范围中生成，导致此方法失效。
+** 如果最初的{{tr|Guide}}死了，可以创建一个具有相同[[{{tr|World Seed}}]]的{{tr|world}}来找到最初的{{tr|Guide}}的名称。
+** 首先，在下表中找到{{tr|Guide}}名称所对应的数字。
+::{| class="terraria"
+! {{tr|Guide name}} !! 数字（n）
+|-
+| Joe
+| 0.000
+|-
+| Connor
+| 0.0278
+|-
+| Tanner
+| 0.0566
+|-
+| Wyatt
+| 0.0833
+|-
+| Cody
+| 0.1111
+|-
+| Levi
+| 0.1389
+|-
+| Luke
+| 0.1667
+|-
+| Jack
+| 0.1944
+|-
+| Scott
+| 0.2222
+|-
+| Logan
+| 0.2500
+|-
+| Cole
+| 0.2778
+|-
+| Asher
+| 0.3056
+|-
+| Bradley
+| 0.3333
+|-
+| Jacob
+| 0.3611
+|-
+| Garrett
+| 0.3889
+|-
+| Dylan
+| 0.4167
+|-
+| Maxwell
+| 0.4444
+|-
+| Steve
+| 0.4722
+|-
+| Brett
+| 0.5000
+|-
+| Andrew
+| 0.5278
+|-
+| Harley
+| 0.5556
+|-
+| Kyle
+| 0.5833
+|-
+| Jake
+| 0.6111
+|-
+| Ryan
+| 0.6389
+|-
+| Jeffrey
+| 0.6667
+|-
+| Seth
+| 0.6944
+|-
+| Marty
+| 0.7222
+|-
+| Brandon
+| 0.7500
+|-
+| Zach
+| 0.7778
+|-
+| Jeff
+| 0.8056
+|-
+| Daniel
+| 0.8333
+|-
+| Trent
+| 0.8611
+|-
+| Kevin
+| 0.8889
+|-
+| Brian
+| 0.9167
+|-
+| Colin
+| 0.9444
+|-
+| Jan
+| 0.9722
+|}
+:* 然后，将数字 n 代入下表中的等式。这将解得{{tr|Aether biome}}所处的水平位置在[[{{tr|Compass}}]]上显示的数值（单位为英尺，1 {{tr|tile}}等于 2 {{tr|feet}}）。注意{{tr|Aether biome}}总是和[[{{tr|Jungle}}]]在{{tr|world}}的同一侧。
+::{| class="terraria"
+! !! {{item|World size|Small World|image=Small_world_icon.png}} !! {{item|World size|Medium World|image=Medium_world_icon.png}} !! {{item|World size|Large World|image=Large_world_icon.png}}
+|-
+! {{tr|Jungle}}在{{tr|world}}左侧
+|<code>3800-((3800-3276)×n)</code>
+|<code>6000-((6000-4992)×n)</code>
+|<code>8000-((8000-6552)×n)</code>
+|-
+! {{tr|Jungle}}在{{tr|world}}右侧
+|<code>3276+((3800-3276)×n)</code>
+|<code>4992+((6000-4992)×n)</code>
+|<code>6552+((8000-6552)×n)</code>
+|}
+
+== 花絮 ==
+* 在{{维基百科|Greek mythology|希腊神话}}中，{{维基百科|Aether (mythology)|Aether|t=埃忒耳}}是太空的拟人化神。
+* {{tr|The Aether}}（Aether）的名称使用了词语 ''{{wiktionary|æther}}'' 的古拼写，其中拉丁字符 ''æ'' 被分开了。在现代英语中，''{{wiktionary|aether}}'' 通常被拼写为 ''{{wiktionary|ether}}''。
+
+== 历史 ==
+{{history|Desktop 1.4.4.4|修复了{{tr|Shimmer}}在世界生成时可能生成在过高的位置，无法正常形成其视觉效果的问题。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{language info|en=The Aether}}

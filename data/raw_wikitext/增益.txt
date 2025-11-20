@@ -1,0 +1,568 @@
+'''{{tr|Buffs}}'''是在消耗、装备、或其他方式激活各种物品时给予玩家的正面状态效果。激活的{{tr|buffs}}以图标形式显示在[[{{tr|hotbar}}]]下方，伴随的还有其剩余持续时间。{{tr|Buffs}}是基本上普遍正面或至少良性的效果，与此相反的是[[{{tr|debuffs}}]]，在其影响下玩家的控制会变得更差。[[{{tr|Pets}}]]、[[{{tr|light pets}}]]、[[{{tr|minion}}]]、和[[{{tr|mounts}}]]在激活状态下也各有相应的{{tr|buffs}}。
+
+{{tr|Buffs}}能很方便地通过{{tr|buff}}[[热键]]（{{icon|desktop}} 默认是{{key|B}}）来激活，它会激活玩家{{tr|inventory}}中（从左上角开始）所有当前未激活的能给予{{tr|Buff}}的{{tr|consumables}}。玩家在同一时间点能激活的{{tr|buffs}}和{{tr|debuff}}上限是 {{etext|44|e=1.4.4}} / {{etext|22|e=1.4.4|invert=y|3ds=no}} / {{etext|10|3DS=y}} 个，如果在达到上限时又激活了一个新的，则{{tr|buff}}栏中最左边的那个{{tr|buff}}会被取消掉。大多数{{tr|Buffs}}可以通过{{buffduration|nomaintext=y}}提前取消掉。不过，那些经由接近某个实体而得到的{{tr|buff}}只会在玩家不再处于范围内时才会被取消掉。（''参见下文的[[#环境|环境]]部分''）。
+
+大部分激活的{{tr|buffs}}是绑定到人物的，当此人物穿行于不同的服务器和不同的世界之间时也会持续存在，而那些由装备提供的{{tr|buffs}}是例外，它们会在离开世界时消失。{{tr|buffs}}总是会在玩家[[{{tr|death}}]]时被取消掉，{{eicons|1.3.0.1}}由[[{{tr|Flasks}}]]给予的{{tr|buffs}}除外。
+{{options/set|item|small=y|wrap=y}}{{eicons/options|small=y}}
+== {{tr|Consumables}} ==
+这些{{tr|buffs}}由其来源（会在使用时消耗掉）提供，比如[[{{tr|potions}}]]、{{tr|flasks}}、和[[{{tr|food}}]]。
+{| class="terraria sortable lined"
+! width="34" | 图标
+! 名称
+! 来源
+! 效果
+! {{tr|Tooltip}}
+! data-sort-type="number" | 持续时间
+{{/row| Ammo Reservation
+| 任意[[{{tr|ammunition}}]]的消耗几率降低 20%。
+| Ammo Reservation Potion
+}}
+{{/row| Archery
+| [[{{tr|arrow}}]]的伤害和开火速度提高 20%。
+| Archery Potion
+}}
+{{/row| Battle
+| 提高{{tr|Enemy}}和[[{{tr|Critters}}]]的{{tr|spawn rate}}和屏幕上{{tr|enemies}}的最大数量
+| Battle Potion
+}}
+{{/row| Builder
+| 提高放置速度，放置范围扩展一格
+| Builder Potion
+}}
+{{/row| Biome Sight
+| 分别以{{tr|purple}}、{{tr|red}}、和{{tr|pink}}色高亮显示[[{{tr|The Corruption}}|{{tr|Corrupted}}]]、[[{{tr|Crimson}}]]、或[[{{tr|The Hallow}}|{{tr|Hallowed}}]]{{tr|tiles}}。
+| Biome Sight Potion
+}}
+{{/row| Calm
+| {{tr|enemy}}{{tr|spawn rate}}降低 17%。
+| Calming Potion
+}}
+{{/row| Crate
+| 钓到[[{{tr|Crate}}]]的几率翻倍。
+| Crate Potion
+}}
+{{/row| Dangersense
+| 高亮标记危险[[{{tr|blocks}}]]和物体，比如[[{{tr|traps}}]]。
+| Dangersense Potion
+}}
+{{/row| Endurance
+| 所受的所有伤害减少 10%。
+| Endurance Potion
+}}
+{{/row| Exquisitely Stuffed
+| 给予多个基础属性小幅提升，比如伤害、防御，等等。
+|source = 众多[[{{tr|food}}]]{{tr|item}}
+|duration = 4–48 分钟 {{nowrap|{{note|block=y|small=y|paren=y|取决于[[{{tr|food}}]]{{tr|item}}}}}}
+}}
+{{/row| Featherfall
+| 允许玩家控制下落速度，并抵消[[{{tr|fall damage}}]]。
+| Featherfall Potion
+}}
+{{/row| Fishing
+| [[{{tr|Fishing Power}}]]提高 15 点。
+| Fishing Potion
+}}
+{{/row| Flipper
+| [[{{tr|Liquids}}]]不再妨碍{{tr|movement speed}}，且让玩家能够游泳。
+| Flipper Potion
+}}
+{{/row| Gills
+| 让玩家可以在水底呼吸，防止[[{{tr|drowning}}]]。
+| Gills Potion
+|duration = {{iteminfo|Gills Potion|buffduration}} {{eicons|1.4.0.1|small=y}}<br/>{{duration|120}} {{eicons|1.4.0.1|invert=y|small=y}}
+}}
+{{/row| Gravitation
+| 让玩家能用{{key|up}}逆转重力。
+| Gravitation Potion
+}}
+{{/row| Heartreach
+| 增加[[{{tr|heart}}]]的拾取范围。
+| Heartreach Potion
+}}
+{{/row| Hunter
+| 高亮标记屏幕中的所有{{tr|enemies}}。
+| Hunter Potion
+}}
+{{/row| Drunk
+| 所承受的所有伤害和所造成的所有伤害都减半。
+| Wiesnbräu
+|tooltip = 使玩家对所受伤害麻木，但也同时降低造成的伤害。
+|duration = {{duration|30}}
+}}
+{{/row| Inferno
+| 在玩家周围投下一层造成伤害的火环。
+| Inferno Potion
+}}
+{{/row| Invisibility
+| 将玩家变得隐身。
+| Invisibility Potion
+}}
+{{/row| Ironskin
+| [[{{tr|defense}}]]提升 8。
+| Ironskin Potion
+}}
+{{/row| Lifeforce
+| 最大生命值提升 20%。
+| Lifeforce Potion
+}}
+{{/row| Lucky
+| 提高[[{{tr|luck}}]]。
+|source = {{item|Lesser Luck Potion}} <br/> {{item|Luck Potion}} <br/> {{item|Greater Luck Potion}}
+|duration = {{iteminfo|Lesser Luck Potion|buffduration}} <br/> {{iteminfo|Luck Potion|buffduration}} <br/> {{iteminfo|Greater Luck Potion|buffduration}}
+}}
+{{/row| Magic Power
+| {{tr|Magic damage}}提升 20%。
+| Magic Power Potion
+}}
+{{/row| Mana Regeneration
+| 提高{{tr|mana regeneration}}。
+| Mana Regeneration Potion
+|duration = {{iteminfo|Mana Regeneration Potion|buffduration}} {{eicons|1.3.0.1|small=y}}<br/>{{duration|120}} {{eicons|1.3.0.1|invert=y|small=y}}
+}}
+{{/row| Mining
+| 增加{{tr|mining speed}}。
+| Mining Potion
+}}
+{{/row| Night Owl
+| 改善玩家的夜间视野并增加所有[[{{tr|light source}}]]的光照半径。
+| Night Owl Potion
+}}
+{{/row| Obsidian Skin
+| 给予对来自{{tr|lava}}的伤害的抵抗力。
+| Obsidian Skin Potion
+}}
+{{/row| Plenty Satisfied
+| 给予多个基础属性中幅提升，比如伤害、防御，等等。
+|source = 众多[[{{tr|food}}]]{{tr|item}}
+|duration = 5–20 分钟{{nowrap|{{note|block=y|small=y|paren=y|取决于{{tr|food item}}}}}}
+}}
+{{/row| Rage
+| 暴击率增加 10%。
+| Rage Potion
+}}
+{{/row| Regeneration
+| {{tr|life regeneration}}每秒增加 2 点生命值。
+| Regeneration Potion
+}}
+{{/row| Shine
+| 使玩家发出明亮的光芒。
+| Shine Potion
+}}
+{{/row| Sonar
+| 在{{tr|fishing}}时显示渔获的名称。
+| Sonar Potion
+}}
+{{/row| Spelunker
+| 高亮标记[[{{tr|ore}}]]、[[{{tr|chests}}]]、和其他{{tr|treasure}}。
+| Spelunker Potion
+}}
+{{/row| Summoning
+| 仆从数量上限提高 1。
+| Summoning Potion
+}}
+{{/row| Swiftness
+| 移动速度提高25%。
+| Swiftness Potion
+}}
+{{/row| Thorns
+| 近战攻击者伤害玩家时也会承受少量伤害。
+| Thorns Potion
+}}
+{{/row| Titan
+| 提高所有武器的击退力。
+| Titan Potion
+}}
+{{/row| Warmth
+| 减少来自冷系{{tr|enemies}}的伤害。
+| Warmth Potion
+}}
+{{/row| Water Walking
+| 使玩家能在[[{{tr|liquids}}]]上行走。
+| Water Walking Potion
+}}
+{{/row| Wrath
+| 武器造成的伤害增加10%。
+| Wrath Potion
+}}
+{{/row| Well Fed
+| 给予多个基础属性小幅提升，比如伤害、防御，等等。
+|source = 众多[[{{tr|food}}]]{{tr|item}}
+|duration = 10–45 分钟{{nowrap|{{note|block=y|small=y|paren=y|取决于{{tr|food item}}}}}}
+}}
+{{/row| Weapon Imbue: Confetti
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击会喷出{{tr|confetti}}。
+| Flask of Party
+}}
+{{/row| Weapon Imbue: Cursed Flames
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Cursed Inferno}}]]{{tr|debuff}}。
+| Flask of Cursed Flames
+}}
+{{/row| Weapon Imbue: Fire
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|On Fire!}}]]{{tr|debuff}}。
+| Flask of Fire
+}}
+{{/row| Weapon Imbue: Gold
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Midas}}]]{{tr|debuff}}。
+| Flask of Gold
+}}
+{{/row| Weapon Imbue: Ichor
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Ichor debuff}}]]。
+| Flask of Ichor
+}}
+{{/row| Weapon Imbue: Nanites
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Confused}}]]{{tr|debuff}}。
+| Flask of Nanites
+}}
+{{/row| Weapon Imbue: Poison
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Poisoned}}]]{{tr|debuff}}。
+| Flask of Poison
+}}
+{{/row| Weapon Imbue: Acid Venom
+| {{tr|Melee}}和[[{{tr|whips}}]]攻击对{{tr|enemies}}造成[[{{tr|Acid Venom}}]]{{tr|debuff}}。
+| Flask of Venom
+}}
+|}
+
+== 装备 ==
+这些{{tr|buff}}由装备永久性或在某些条件下自然提供。
+{| class="terraria sortable lined"
+! width="102" | 图标
+! 名称
+! 来源
+! 效果
+! {{tr|Tooltip}}
+! data-sort-type="number" | 持续时间
+{{/row| A Nice Buff | image = A Nice Buff.png
+| 召唤临时的{{tr|flying snowflake minion}}攻击附近的{{tr|enemies}}
+|source = 用{{item|Cool Whip}}打击{{tr|enemy}}
+|tooltip = {{getBuffInfo|312|tooltip}}
+|duration = 3 秒
+}}
+{{/row| Ballista Panic! | image = Ballista Panic!.png
+| 将[[{{tr|Ballista sentry summons}}]]的{{tr|attack cooldown}}缩短到 1/0.5 {{tr|seconds}}
+|source = 穿着全套[[{{tr|Squire armor}}]]或[[{{tr|Valhalla Knight armor}}]]时被击中
+|tooltip = {{getBuffInfo|205|tooltip}}
+|duration = 5 秒
+}}
+{{/row| Beetle Endurance | image = Beetle Endurance.png
+| 所受的所有伤害减少 15%/30%/45%。
+|source = 穿着带有{{item|Beetle Shell}}的全套[[{{tr|Beetle armor}}]]时被集中
+|tooltip = {{getBuffInfo|95|tooltip}}<br/>{{getBuffInfo|96|tooltip}}<br/>{{getBuffInfo|97|tooltip}}
+|duration = 未受到伤害时
+}}
+{{/row| Beetle Might | image = Beetle Might.png
+| {{tr|melee damage}}和{{tr|speed}}各增加 10%/20%/30%。
+|source = 穿着带有{{item|Beetle Scale Mail}}的[[{{tr|Beetle armor}}]]套装时对{{tr|enemy}}造成伤害
+|tooltip = {{getBuffInfo|98|tooltip}}<br/>{{getBuffInfo|99|tooltip}}<br/>{{getBuffInfo|100|tooltip}}
+|duration = 当在战斗中
+}}
+{{/row| Damage Nebula | image = Damage Nebula.png
+| 伤害增加 15%/30%/45%。
+|source = 穿着全套{{eil|Nebula armor}}时打击{{tr|enemy}}
+|tooltip = {{getBuffInfo|179|tooltip}}<br/>{{getBuffInfo|180|tooltip}}<br/>{{getBuffInfo|181|tooltip}}
+|duration = {{duration|8}}
+}}
+{{/row| Durendal's Blessing | image = Durendal's Blessing.png
+| {{tr|whip speed}}提高 25%。
+|source = 用{{item|Durendal}}打击{{tr|enemy}}
+|duration = {{duration|3}}
+}}
+{{/row| Harvest Time | image = Harvest Time.png
+| {{tr|whip speed}}提高 35%。
+|source = 用{{item|Dark Harvest}}打击{{tr|enemy}}
+|duration = {{duration|3}}
+}}
+{{/row| Holy Protection
+| 让玩家能躲避{{tr|enemy}}的下一次攻击。
+|source = 穿着全套{{eil|Hallowed armor}}时打击{{tr|enemy}}
+|duration= {{duration|30}}（或直到躲避效果触发）
+}}
+{{/row| Ice Barrier
+| 给予 25% 伤害减免 {{eicons|1.3.0.1}} / 30 防御力 {{eicons|1.3.0.1|invert=y}}。<ref>这些{{tr|buffs}}是在特定条件下由装备着的{{tr|accessory}}自动给予的。它们不能通过右键点击取消，但可以通过移除此{{tr|accessory}}取消。</ref>
+| Frozen Turtle Shell
+|duration = 当低于 50% {{eicons|1.3.0.1|small=y}} / 25% {{eicons|1.3.0.1|invert=y|small=y}} 生命值时
+}}
+{{/row| Jungle's Fury | image = Jungle's Fury.png
+| {{tr|whip speed}}提高 12%。
+|source = 用{{item|Snapthorn}}打击{{tr|enemy}}
+|duration = {{duration|3}}
+}}
+{{/row| Leaf Crystal | image = Leaf Crystal.png
+| 在玩家上方召唤{{tr|leaf crystal}}攻击{{tr|enemies}}。
+|source = 穿着全套{{eil|Chlorophyte armor}}
+|duration = 无限
+}}
+{{/row| Life Drain
+| 提高生命再生速度。
+| Life Drain
+|duration = 攻击无法免疫其{{tr|debuff}}效果的{{tr|enemy}}时
+}}
+{{/row| Life Nebula | image = Life Nebula.png
+| 每秒{{tr|health regeneration}}增加 3/6/9。
+|source = 穿着全套{{eil|Nebula armor}}时打击{{tr|enemy}}
+|tooltip = {{getBuffInfo|173|tooltip}}
+|duration = {{duration|8}}
+}}
+{{/row| Mana Nebula | image = Mana Nebula.png
+| 每秒{{tr|mana regeneration}}增加 10/20/30。
+|source = 穿着全套{{eil|Nebula armor}}时打击{{tr|enemy}}
+|tooltip = {{getBuffInfo|176|tooltip}}
+|duration = {{duration|8}}
+}}
+{{/row| Merfolk
+| 在玩家入水时将玩家变为人鱼，使其能无限呼吸并改善游泳。
+|source = {{item|Neptune's Shell}} / {{item|Moon Shell}} / {{item|Celestial Shell}}
+|duration =  在水下时
+}}
+{{/row| Panic!
+| {{tr|movement speed}}提高 100%。
+|source =  当装备着{{item|Panic Necklace}} / {{item|Sweetheart Necklace}}时被打中。
+|duration = {{duration|5}}
+}}
+{{/row| Rapid Healing
+| 随着时间推移回复 15 生命值。
+|source = 穿着全套{{eil|Palladium armor}}时打击{{tr|enemy}}
+|duration = {{duration|5}}
+}}
+{{/row| Titanium Barrier
+| {{tr|Titanium shards}}会生成并围绕玩家旋转，对与之接触的{{tr|enemies}}造成伤害。
+|source = 穿着全套{{eil|Titanium armor}}时打击{{tr|enemy}}。
+|duration = {{duration|10}}
+}}
+{{/row| Solar Blaze | image = Solar Blaze.png/Solar Blaze2.png/Solar Blaze3.png
+| 所受所有伤害降低 20%。给予消耗充能来{{tr|dash}}的能力。承受伤害会消耗一次充能。
+|source = 穿戴全套{{eil|Solar Flare armor}}且不承受伤害时，最高可达 3 次“充能”
+|duration = 无限时，直到承受 3 次伤害。
+}}
+{{/row| Stardust Guardian
+| 会让一个独特的{{tr|Stardust Guardian minion}}跟随玩家。
+|source = 穿着全套{{eil|Stardust armor}}
+|duration = 无限
+}}
+{{/row| Striking Moment
+| 下次命中的近战攻击伤害乘以 5。
+|source = 拿着{{tr|shield}}使用{{item|Brand of the Inferno}}或使用{{item|Sergeant United Shield}}
+|duration = {{duration|5}}（或直到{{tr|melee}}攻击击中目标）
+}}
+{{/row| Werewolf
+| 让物理能力有所改善，并给玩家化装狼人皮肤。
+|source = {{item|Moon Charm}} / {{item|Moon Shell}} / {{item|Celestial Shell}}
+|duration = [[{{tr|night}}]]期间
+}}
+|}
+
+== 激活家具 ==
+这些{{tr|buffs}}在右键点击特定的放置家具之后提供。
+{| class="terraria sortable lined"
+! width="34" | 图标
+! 名称
+! 来源
+! 效果
+! {{tr|Tooltip}}
+! data-sort-type="number" | 持续时间
+{{/row| Ammo Box
+| 提供 20% 几率[[{{tr|Ammo conservation}}|不消耗{{tr|ammo}}]]。
+| Ammo Box
+| duration = 无限 {{eicons|1.4.4}}<br/>{{duration|600}} {{eicons|Ammo Box|not=1.4.4}}
+}}
+{{/row| Bewitched
+| 仆从数量上限提高 1。
+| Bewitching Table
+| duration = 无限
+}}
+{{/row| Clairvoyance
+| 提供 +20 最大{{tr|mana}}、+5% {{tr|magic damage}}、+2% {{tr|magic critical strike chance}}、和 −2% {{tr|mana usage}}。
+| Crystal Ball
+| duration = 无限 {{eicons|1.4.4}}<br/>{{duration|600}} {{eicons|1.4.4|invert=y}}
+}}
+{{/row| Sharpened
+| 增加 12 点{{tr|melee weapons armor}}穿透。
+| Sharpening Station
+| duration = 无限
+}}
+{{/row| Strategist
+| {{tr|sentries}}数量上限提高 1。
+| War Table
+|duration = 无限
+}}
+{{/row| Sugar Rush
+| 玩家的{{tr|movement speed}}和{{tr|mining speed}}提高 20%。
+| Slice of Cake
+| duration = {{duration|120}}
+}}
+|}
+
+== 环境 ==
+这些{{tr|buff}}通过站在的特定的放置{{tr|furniture}}、{{tr|blocks}}、或 {{tr|NPCs}} 的范围内而得到。[[{{tr|Banners (enemy)}}|{{tr|Banners}}]]以及诸如{{tr|Peace Candle}}之类物体的静态效果和{{tr|Happy!}}会影响以物体为中心 {{buff area}}。由于它们无法通过右键点击取消，移除{{tr|buff}}的唯一方法就是离开此作用区域（{{tr|honey}}例外）。
+{| class="terraria sortable lined"
+! width="34" | 图标
+! 名称
+! 来源
+! 效果
+! {{tr|Tooltip}}
+! data-sort-type="number" | 持续时间
+{{/row| Cozy Fire
+| {{tr|life regeneration}}提高 0.5 生命值/秒，并将当前治疗速率乘以 1.1。
+| source = {{nowrap|{{item|Campfire}}<br/>{{item|Fireplace}}}}
+| duration = 在{{tr|a Campfire}}或{{tr|Fireplace}}附近时无限时
+}}
+{{/row| Dryad's Blessing
+| 玩家的防御力提高 8，{{tr|life regeneration}}速度提高 3 生命值/秒。
+| Dryad
+|duration = 在{{tr|Dryad}}的树叶屏障内时无限时
+}}
+{{/row| Happy!
+| {{tr|movement speed}}提高 10%，{{tr|enemy spawns}}降低 17%。
+| Sunflower
+|duration = 在{{tr|a Sunflower}}附近时无限时
+}}
+{{/row| Heart Lamp
+| {{tr|life regeneration}}提高 1 生命值/秒。
+| Heart Lantern
+|duration = 在{{tr|Heart Lantern}}附近时无限时
+}}
+{{/row| Honey
+| {{tr|life regeneration}}提高 1 生命值/秒，自然{{tr|regeneration}}乘以 3。
+| Honey
+| duration = 在{{tr|honey}}中时无限，走出{{tr|honey}}后再持续 30 秒
+}}
+{{/row| Peace Candle
+| {{tr|enemy spawn rate}}降低 23%，屏幕上允许的最大{{tr|enemies}}降低 30%。
+| Peace Candle
+|duration = 在{{tr|Peace Candle}}附近时无限时
+}}
+{{/row| Star in a Bottle
+| {{tr|mana regeneration}}提升大约 2 魔力/秒。
+| Star in a Bottle
+|duration = 在{{tr|Star in a Bottle}}附近时无限时
+}}
+{{/row| The Bast Defense
+| {{tr|defense}}增加 5。
+| Bast Statue
+|duration = 在{{tr|Bast Statue}}附近时无限时
+}}
+|}
+
+== 召唤物 ==
+在普通{{tr|buff}}外，有些{{tr|buff}}会提供一个[[{{tr|minion}}]]。和其他{{tr|buff}}不同，它们一直持续到玩家死亡、取消{{tr|buff}}、或离开当前世界。
+{{#vardefine:buffs-cargorow:duration|无限}}
+{| class="terraria sortable lined"
+! width="34" | 图标
+! 名称
+! 来源
+! {{tr|Item tooltip}}
+! {{tr|Buff tooltip}}
+! 持续时间
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name, tooltip, buffs
+|q?where=listcat HOLDS "minion summon items"
+|q?orderBy=buffs
+|template=:{{BASEPAGENAME}}/cargorow
+}}
+|}
+
+== {{tr|Mounts}} ==
+{{#vardefine:buffs-cargorow:duration|无限}}
+{| class="terraria sortable lined"
+! width="34" | 图标
+! 名称
+! 来源
+! {{tr|Item tooltip}}
+! {{tr|Buff tooltip}}
+! 持续时间
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name, tooltip, buffs, imagefile
+|q?where=type HOLDS "mount summon" AND buffs__full IS NOT NULL AND buffs__full < "Minecart" <!-- all mount buffs that come before "Minecart" alphabetically -->
+|q?orderBy=buffs
+|template=:{{BASEPAGENAME}}/cargorow
+}}
+{{/row| Minecart
+| source = {{item|Minecarts|image=Minecart.png/Mechanical Cart.png/Digging Molecart.png}}
+| <i>{{note|paren=y|small=y|不同}}</i>
+| duration = 无限
+}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name, tooltip, buffs, imagefile
+|q?where=type HOLDS "mount summon" AND buffs__full IS NOT NULL AND buffs__full > "Minecart" AND buffs__full < "Scutlix Mount" <!-- all mount buffs that come between "Minecart" and "Scutlix Mount" alphabetically -->
+|q?orderBy=buffs
+|template=:{{BASEPAGENAME}}/cargorow
+}}
+{{/row| Scutlix Mount
+| source = {{item|Brain Scrambler (item)|Brain Scrambler}}
+| {{ItemTooltip|{{ItemIdFromName|Brain Scrambler}} }}
+| duration = 无限
+}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=name, tooltip, buffs, imagefile
+|q?where=type HOLDS "mount summon" AND buffs__full IS NOT NULL AND buffs__full > "Scutlix Mount" <!-- all mount buffs that come after "Scutlix Mount" alphabetically -->
+|q?orderBy=buffs
+|template=:{{BASEPAGENAME}}/cargorow
+}}
+|}{{options/reset|item}}{{eicons/options|reset}}
+
+== 备注 ==
+* {{eicons|1.4.0.1|invert=y}}显示{{tr|buff}}剩余{{tr|duration}}的计时器的起始时间比其所列{{tr|duration}}少一分钟/秒，且在最后一分钟/秒显示零。
+* {{icon/switch}} 玩家也可双击触摸屏上的{{tr|buff}}来提前结束它，但这仅在手持模式下有效。
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+{{achievement|name=You and What Army?}}
+{{achievement|name=Be Prepared}}
+
+== 另见 ==
+* [[{{tr|Pets}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了[[{{tr|Biome Sight}}]]{{tr|buff}}。
+** {{tr|Player}}的最大{{tr|buff}}/{{tr|debuff}}数量由 22 提升至 44。}}
+{{history|Desktop 1.4.0.5|
+** {{tr|Buff}}效果现在会正确跟随受 [[{{tr|NPC}}]] 平滑影响的{{tr|enemies}}。
+** 修正了{{tr|buff}}顺序在某些特定条件下未正确计算而导致中间有空位的 {{tr|bug}}。
+** 修正一些{{tr|buff icons}}空白位置有白块而非透明的问题。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Sugar Rush}}]]{{tr|buff}}。
+** {{tr|Buff}}持续时间计时器显示现在会向上取整而非向下取整。}}
+{{history|Desktop 1.3.2|修正了持续时间极长的{{tr|buffs}}在[[{{tr|Multiplayer}}]]中未正确更新的问题。}}
+{{history|Desktop 1.3.0.1|
+** 引入了[[{{tr|Happy!}}]]、[[{{tr|Star in a Bottle}}]]、[[{{tr|Peace Candle}}]]{{tr|buff}}。
+** [[{{tr|Dryad}}]]现在能施放防御{{tr|buff}}。
+** 武器灌注现在持续 20 分钟，并且死亡后不会消失。}}
+{{history|Desktop 1.2.4.1|修正了加载玩家后有时在其{{tr|buff}}之间有空白的 {{tr|bug}}。}}
+{{history|Desktop 1.2.2|{{tr|Player}}的最大{{tr|buff}}/{{tr|debuff}}数量由 10 提升至 22。}}
+{{history|Desktop 1.2.1.2|introduced=n|引入了[[{{tr|Heart Lamp (buff)}}]]和[[{{tr|Campfire (buff)}}]]。}}
+{{history|Desktop 1.2.1|[[{{tr|Pumpkin Pie}}]]也会给予[[{{tr|Well Fed}}]]了。}}
+{{history|Desktop 1.2|
+** 引入了[[{{tr|Honey (buff)}}|{{tr|Honey}}]]、[[{{tr|Panic!}}]]、[[{{tr|Shadow Dodge}}]]和[[{{tr|Rapid Healing}}]]。
+** [[Orb of Light (buff)|光之珠（Orb of Light）]]和相应的物品更名为[[{{tr|Shadow Orb (buff)}}|{{tr|Shadow Orb}}（Shadow Orb）]]。
+** [[{{tr|Fairy}}]]、[[{{tr|Shadow Orb (buff)}}]]现在具有无限的持续时间。
+** 引入了[[{{tr|Happy!}}]]、[[{{tr|Star in a Bottle}}]]、[[{{tr|Peace Candle}}]]{{tr|buff}}。}}
+{{history|Desktop 1.1|[[{{tr|Fairy}}]]、[[{{tr|Clairvoyance}}]]、[[{{tr|Merfolk}}]]、和[[{{tr|Werewolf (buff)}}|{{tr|Werewolf}}]]引入。}}
+{{history|Desktop 1.0.6|
+** 引入了[[Orb of Light (buff)|光之珠（Orb of Light）]]{{tr|buff}}来替代光之珠（Orb of Light）法术。
+** 添加了[[{{tr|Well Fed}}]]{{tr|buff}}。
+** 大量{{tr|buff}}的持续时间有所调整。}}
+{{history|Desktop 1.0.5|引入。添加了 18 个{{tr|buff}}。}}
+{{history|Console-Release|引入，包括有[[{{tr|Pet Slime}}]]、[[{{tr|Pet Guinea Pig}}]]、[[{{tr|Pet Bat}}]]、[[{{tr|Pet Zombie}}]]、[[{{tr|Pet Tiphia}}]]和[[{{tr|Pet Werewolf}}]]{{tr|buff}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|最大激活{{tr|buffs}}数由 10 提升至 22。}}
+{{history|Mobile-Release|引入，包括有[[{{tr|Pet Slime}}]]、[[{{tr|Pet Guinea Pig}}]]、[[{{tr|Pet Bat}}]]、[[{{tr|Pet Zombie}}]]、[[{{tr|Pet Tiphia}}]]和[[{{tr|Pet Werewolf}}]]{{tr|buff}}。}}
+{{history|3DS-Release|引入，包括有[[{{tr|Pet Slime}}]]、[[{{tr|Pet Guinea Pig}}]]、[[{{tr|Pet Bat}}]]、[[{{tr|Pet Zombie}}]]、[[{{tr|Pet Tiphia}}]]和[[{{tr|Pet Werewolf}}]]{{tr|buff}}。}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+[[Category:增益| ]]
+
+{{language info|en=Buffs}}

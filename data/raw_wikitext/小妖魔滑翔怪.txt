@@ -1,0 +1,85 @@
+{{exclusive|Old One's Army}}
+{{npc infobox |tabs = no
+| namenote =
+| image = Kobold Glider.gif
+| environment = Old One's Army
+| auto = 574
+| type = Etherian Enemy
+| type2 = Flying Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| hardmode = yes
+| sound1 = Dd2 kobold flyer charge scream 0.wav, Dd2 kobold flyer charge scream 1.wav, Dd2 kobold flyer charge scream 2.wav
+| soundcaption1 = 冲锋
+| sound2 = Item 14.wav
+| soundcaption2 = 爆炸
+}}
+
+'''{{tr|Kobold Glider}}'''是一种只出现在[[{{tr|Old One's Army}}]][[{{tr|event}}]]的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。它生成于 T2 的 5–7 波和 T3 的 4–5 波。
+
+当它接近或低于{{tr|player}}或[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]时，它会点燃引线，短暂地向上爬升，然后俯冲向最近的目标，将自己变成一发制导导弹。一旦接触到{{tr|player}}、{{tr|Eternia Crystal}}或实心[[{{tr|block}}]]，它将以类似[[{{tr|Grenade}}]]的半径爆炸。爆炸不能破坏{{tr|tiles}}。
+
+{{tr|Kobold Gliders}}需要 100 击杀才能得到相应的{{tr|banner}}，而非通常的 50 击杀。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 574
+| image = Kobold Glider.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{tr|detonation}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_108_DivingFlyer}}
+| knockback ={{modes|40%|46%|52%}}<!-- this value comes from its AI function - the default value (i.e. in cargo) is NOT used -->
+| knockback2 =<br/>100% {{note|small=y|paren=y|俯冲时}} <ref name="ai"/>
+}}
+{{npc infobox
+| auto = 575
+| image = Kobold Glider.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|爆炸}} <ref name="ai"/>
+| knockback ={{modes|60%|64%|68%}}<!-- this value comes from its AI function - the default value (i.e. in cargo) is NOT used -->
+| knockback2 =<br/>100% {{note|small=y|paren=y|俯冲时}} <ref name="ai"/>
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== {{tr|Notes}} ==
+* 当{{tr|Kobold Glider}}在追逐一个目标时，它将随时间以指数形式提升速度，这使得随着它存活时间变久，越来越难以逃脱它。渐渐地，它的移动速度将超越玩家的任何移动方式，使其无法避免。
+
+== 小贴士 ==
+* 它们在接触[[{{tr|Blocks}}]]时会爆炸，这使得在{{tr|Eternia Crystal}}上方造一个屋顶会是个有用的策略。
+
+== 花絮 ==
+* {{tr|The Kobold Glider}}可视为是[[{{tr|Etherian Wyvern}}]]和[[{{tr|Kobold}}]]的组合。
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Kobold Flier|飞行{{tr|Kobold}}（Kobold Flier）}}
+
+== 历史 ==
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Kobold Glider}}

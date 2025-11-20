@@ -1,0 +1,144 @@
+{{legacy nav tab}}
+
+'''{{tr|Ammo conservation}}'''是一种机制，能够阻止[[{{tr|ammunition items}}]]在发射时被消耗（即从玩家的{{tr|inventory}}中被移除）。默认情况下，每个被发射的{{tr|ammo item}}都会被消耗，但有特定的{{tr|item}}会添加一定的几率节约{{tr|ammo}}。
+
+== 具有弹药节约的物品 ==
+{{options/set|item|wrap=y|icons=n}}
+
+=== {{tr|Weapons and tools}} ===
+下列[[{{tr|weapons}}]]和[[{{tr|tools}}]]具有固有的几率不消耗发射的{{tr|ammunition}}。
+
+{| class="terraria lined sortable"
+! {{tr|Item}} !! 几率
+|-
+| {{item|Vortex Beater}} || {{chance|2/3}}
+|-
+| {{item|Celebration Mk2}} || {{chance|1/2}}
+|-
+| {{item|Phantasm}} || {{chance|2/3}}
+|-
+| {{item|Candy Corn Rifle}} || {{chance|1/3}}
+|-
+| {{item|Minishark}} || {{chance|1/3}}
+|-
+| {{item|Gatligator}} || {{chance|1/2}}
+|-
+| {{item|Megashark}} || {{chance|1/2}}
+|-
+| {{item|Chain Gun}} || {{chance|1/2}}
+|-
+| {{item|S.D.M.G.}} || {{chance|2/3}}
+|-
+| {{item|Terraformer}} || {{chance|1/3}}
+|}
+
+=== 其他物品 ===
+下列物品提供一定几率不消耗来自任何{{tr|weapon}}的{{tr|ammunition}}。
+
+{| class="terraria lined sortable"
+! {{tr|Item}} !! 几率
+|-
+| {{item|Magic Quiver|note=（仅针对[[{{tr|arrows}}]]和[[{{tr|Stake}}]]）}} || {{chance|1/5}}
+|-
+| {{item|Ammo Box}} || {{chance|1/5}}
+|-
+| {{item|Ammo Reservation Potion}} || {{chance|1/5}}
+|-
+| {{item|Chlorophyte Helmet}} || {{chance|1/5}}
+|-
+|
+* {{item|Shroomite Breastplate}}或
+* {{item|Red Riding Dress}}或
+* {{item|Fossil armor|note=({{tr|set bonus}})}}或
+* {{item|Cobalt armor|note=({{tr|set bonus}})|note2=用{{tr|Mask}}|image=Cobalt armor Mask.png}}或
+* {{item|Mythril armor|note=({{tr|set bonus}})|note2=用{{tr|Hat}}|image=Mythril armor Hat.png}}
+| {{chance|1/5}}
+|-
+|
+* {{item|Vortex Breastplate}}或
+* {{item|Adamantite armor|note=({{tr|set bonus}})|note2=用{{tr|Mask}}|image=Adamantite armor Mask.png}}
+| {{chance|1/4}}
+|-
+|
+* {{item|Crystal Assassin Shirt}}或
+* {{item|Huntress's Jerkin}}
+| {{chance|1/10}}
+|}{{options/reset|item}}
+
+=== 叠加 ===
+所有上述的{{tr|ammo conservation}}效果都能互相叠加（除非它们在上方表格的同一行中）。它们被视为{{维基百科|Inclusion–exclusion principle|独立事件}}，这意味着两个{{tr|ammo conservation}}几率不是简单地相加，而是由下列公式计算：{{source code ref|v=1.4.4.9|method=Terraria.Player.PickAmmo}}
+
+<math>p_{总} = p_1 + p_2 - p_1 \times p_2</math>
+
+换言之，{{tr|ammo}}''消耗''几率可由下列公式计算：
+
+<math>p^{\prime}_{总} = (1-p_1)\times(1-p_2)\times\ldots\times(1-p_n)</math>
+
+例如，使用[[{{tr|Minishark}}]]（<math>p_1 = \frac{1}{3}</math>）加上[[{{tr|Ammo Box}}]]（<math>p_2 = \frac{1}{5}</math>）得到的总节约几率为 <math>p_{总} = \frac{7}{15}</math>（{{percent|7/15}}），总消耗几率为<math>p^{\prime}_{总} = \frac{8}{15}</math>（{{percent|8/15}}）：
+
+<math>p_{总} = \frac{1}{3} + \frac{1}{5} - \frac{1}{3} \times \frac{1}{5} = \frac{7}{15}</math>
+
+<math>p^{\prime}_{总} = (1-\frac{1}{3})\times(1-\frac{1}{5}) = \frac{8}{15}</math>
+
+== 备注 ==
+* 尽管[[{{tr|bait}}]]和{{tr|ammunition}}有一些共有特征，但它不受{{tr|ammo conservation}}影响。仅有的对{{tr|bait}}消耗有影响的机制是[[{{tr|bait power}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_CheckFishingBobber_PickAndConsumeBait}}
+* [[{{tr|Consumable ranged weapon}}]]受益于{{tr|ammo conservation}}。但是，这仅限于[[{{tr|armor}}]]{{tr|items}}所提供的{{tr|ammo conservation}}{{tr|bonuses}}；[[{{tr|Magic Quiver}}]]、[[{{tr|Ammo Box}}]]、和[[{{tr|Ammo Reservation Potion}}]]对{{tr|consumable ranged weapons}}不起作用。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}
+
+== 小贴士 ==
+* {{tr|Ammo conservation}}在下述情况时非常有用：使用搭配昂贵的{{tr|ammo}}的{{tr|weapons}}时（如[[{{tr|Clentaminator}}]]或[[{{tr|Super Star Shooter}}]]），或者{{tr|ammo}}消耗量较大的{{tr|weapons}}（如[[{{tr|Hellwing Bow}}]]）。下述物品组合提供较高的{{tr|ammo conservation}}值：
+{{infocard
+|text=
+
+{{options/set|itemlist|width=14em}}
+{{options/set|item|wrap=y|icons=n}}
+
+{{infocard/box|title={{ammo conservation|<!-- Fossil armor: -->1/5|<!-- Ammo Reservation Potion: -->1/5|<!-- Minishark: -->1/3}} {{note|small=y|paren=y|[[{{tr|Pre-Hardmode}}]]，{{tr|Minishark}}}}|
+{{itemlist
+|{{item|Fossil armor|note=（{{tr|set bonus}}）}}
+|{{item|Ammo Reservation Potion}}
+|{{item|Minishark}}
+}}
+}}
+
+{{infocard/box|title={{ammo conservation|<!-- Ammo Box: -->1/5|<!-- Ammo Reservation Potion: -->1/5|<!-- Adamantite or Titanium armor: -->1/4|<!-- Gatligator: -->1/2}} {{note|small=y|paren=y|[[{{tr|Hardmode}}]]早期，{{tr|Gatligator}}}}|
+{{itemlist
+|{{item|Ammo Box}}
+|{{item|Ammo Reservation Potion}}
+|{{item|Adamantite armor|note=({{tr|set bonus}})|note2=用{{tr|Mask}}|image=Adamantite armor Mask.png}}
+|{{item|Gatligator}}
+
+}}
+}}
+
+{{infocard/box|title={{ammo conservation|<!-- Chlorophyte Helmet: -->1/5|<!-- Vortex Breastplate: -->1/4|<!-- Ammo Box: -->1/5|<!-- Ammo Reservation Potion: -->1/5}} {{note|small=y|paren=y|[[{{tr|Moon Lord}}]]后，任何{{tr|weapon}}}}|
+{{itemlist
+|{{item|Ammo Box}}
+|{{item|Ammo Reservation Potion}}
+|{{item|Chlorophyte Helmet}}
+|{{item|Vortex Breastplate}}
+}}
+}}
+
+{{infocard/box|title={{ammo conservation|<!-- Chlorophyte Helmet: -->1/5|<!-- Vortex Breastplate: -->1/4|<!-- Ammo Box: -->1/5|<!-- Ammo Reservation Potion: -->1/5|<!-- Phantasm: -->2/3|<!-- Magic Quiver: -->1/5}} {{note|small=y|paren=y|{{tr|Moon Lord}}后，{{tr|Phantasm}}}}|
+{{itemlist
+|{{item|Ammo Box}}
+|{{item|Ammo Reservation Potion}}
+|{{item|Chlorophyte Helmet}}
+|{{item|Vortex Breastplate}}
+|{{item|Phantasm}}
+|{{item|Magic Quiver}}
+}}
+这是最高的可能{{tr|ammo conservation}}。平均来说，每 1000 次射击只会消耗 {{#expr:(1-{{#var:ammoconservation_percentage}})*1000 round 0}} 支{{tr|arrow}}。
+}}
+
+{{options/reset|itemlist}}
+{{options/reset|item}}
+
+}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Ammo conservation}}

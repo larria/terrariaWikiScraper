@@ -1,0 +1,51 @@
+{{item infobox
+| imagebreak = yes
+| type = Furniture / Weapon
+| damage =<!-- Remove the -1 damage display -->
+| knockback =<!-- Remove 0 knockback display -->
+| width = 4 | height = 3
+| auto = 928
+| idprojectile = 162
+| sound1 = Item 14.wav
+| soundcaption1 = 使用
+| sound2 = Item 14.wav
+| soundcaption2 = 碰撞
+| tags = vendor / hardmode / vendor:Pirate
+}}
+[[File:Cannon (demo).gif|framed|{{tr|The Cannon}}发射{{tr|cannonball}}。]]
+
+'''{{tr|Cannon}}'''是一种可互动的[[{{tr|furniture}}]]{{tr|item}}，可以从[[{{tr|Pirate}}]]处花费 {{gc|25}} 购买。它可以被放置在地面上，由玩家（消耗[[{{tr|Cannonball}}]]）或通过{{tr|wire}}（{{eicons|1.3.1}}）触发，发射弧形轨道的{{tr|cannonball}}，在接触{{tr|solid block}}时或穿透四个[[{{tr|enemies}}]]后发生爆炸。如果是被{{tr|wires}}激活的，那么{{tr|the cannonballs}}就不会造成{{tr|damage}}。{{tr|The Cannon}}威力不俗，但不可移动，它作为一个固定的炮位发挥作用，适合基地防御等目的。
+
+当[[{{tr|Party Girl}}]]到来、并已经击败一个[[{{tr|Mechanical boss}}]] 后，就可以从{{tr|Pirate}}那里购买{{tr|Cannon}}的加强版本：[[{{tr|Bunny Cannon}}]]。
+
+== 使用 ==
+放置后，可以通过右键单击{{tr|Cannon}}的任一侧（{{icon|mobile}}或轻触大炮的侧面）使之沿该方向旋转以调整角度。一共有 9 种可能的角度，并且它不能向下射击（不过，{{tr|cannonballs}}的弧形轨迹可以用来命中炮台下面的目标）。每次点击/轻触都会使{{tr|Cannon}}旋转一次，即旋转 22.5°。
+
+通过手持{{tr|cannonball}}左键单击{{tr|Cannon}}、{{tr|Auto Select}}激活且{{tr|player}}的{{tr|inventory}}中有{{tr|cannonball}}时左键单击{{tr|Cannon}}、{{icon|mobile}}或手持{{tr|cannonball}}时轻触{{tr|Cannon}}，可以使{{tr|Cannon}}开火。无论哪种情况，都会消耗{{tr|cannonball}}。在{{eversions|1.3.1}}中，它也可以通过{{tr|wire}}触发。根据{{tr|wire}}的连接位置，它可以射击{{tr|cannonball}}或向{{tr|wire}}侧旋转。
+
+== 备注 ==
+* 通过电线激活大炮将发射纯粹观赏性的炮弹，不会对NPC或玩家造成伤害。
+*虽然比[[{{tr|Bunny Cannon}}]]弱，但是大炮可以被视为更好的家园防御选择，因为炮弹比[[{{tr|Explosive Bunny}}]]更容易获得。
+* 虽然它看起来只占用3 * 2的空间，但它需要附近的所有12个物块都处于空置，以提供旋转的空间。它在小地图上也显示为4 * 3个物块大小。
+* 如果快速使用大炮发射，炮弹在地面上爆炸的声音会导致炮弹发射的声音在完成之前停止，并发出较短的未完成的噪音。
+*在平坦表面上发射时：
+**0°时，炮弹撞击21格处的地面。
+**22.5°时，炮弹的最大高度达到8格，并在43格的范围内撞击地面。
+**45°时，炮弹的最大高度达到23格，并在45格的范围内撞击地面。
+**67.5°时，炮弹的最大高度为32格，并撞击29格处的地面。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.1|现在可以被电线所连接。}}
+{{history|Desktop 1.3.0.1|降低了炮弹的弧度。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-misc = yes
+}}{{Master Template Furniture
+| show-other = yes
+}}
+{{language info|en=Cannon}}

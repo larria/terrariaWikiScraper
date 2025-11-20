@@ -1,0 +1,77 @@
+{{item infobox
+| type = Armor / Set
+| tags = Drop
+| defense = @@@@ {{eicons|1.4.4|small=y}}<br/>3 {{note|paren=y|全套}} {{eicons|1.4.4|invert=y|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|3ds=y|small=y}}<br/>{{coin|1gc 80sc}} {{note|paren=y|全套}} {{eicons|1.3.0.1|invert=y|3ds=n|small=y}}
+}}
+{{drop infobox|Mining Helmet|style=clear:right|title=掉落 [[File:Mining Helmet.png|link=]] {{tr|Mining Helmet}}的实体}}
+{{drop infobox|Mining Shirt/Mining Pants|style=clear:right|title=掉落 [[File:Mining Shirt.png|link=]] {{tr|Mining Shirt}}和 [[File:Mining Pants.png|link=]] {{tr|Mining Pants}}的实体}}
+
+'''{{tr|Mining armor}}''' 是一套[[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Mining Helmet}}'''或'''{{eil|Ultrabright Helmet}}'''、'''{{tr|Mining Shirt}}'''、和'''{{tr|Mining Pants}}'''组成。{{tr|Helmet}}佩戴在{{tr|armor slot}}中时会发光，在{{tr|social slot}}中则不发光。全套{{tr|set}}提供{{eicons|1.4.4}} 4 / {{eicons|1.4.4|invert=y}} 3 {{tr|defense}}（使用{{tr|Ultrabright Helmet}}时为 6）以及 30% [[{{tr|mining speed}}]]。
+
+* {{tr|The Mining Shirt and Mining Pants}}由[[{{tr|Undead Miner}}]]以{{eicons|1.4.1}} {{chance|3/25}} / {{eicons|1.4.1|invert=y|old=n}} {{chance|3/125}} 几率掉落。
+* {{tr|The Mining Helmet}}可以在[[{{tr|Merchant}}]]处以{{eicons|1.3.0.1|3ds=y}} {{iteminfo|Mining Helmet|buy}} / {{eicons|1.3.0.1|invert=y|3ds=n}} {{gc|8}} 的价格购买。
+* 在{{eversions|1.3.0.1}}中，{{tr|The Mining Helmet}}也可由{{tr|Undead Miners}}以 {{chance|1/20}} 的几率掉落。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| auto = 410
+| tags = drop
+}}
+|{{item infobox
+| auto = 411
+| tags = drop
+}}
+}}
+
+=== {{tr|Helmet}}种类 ===
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| auto = 88
+| defense = @@@@ {{eicons|1.4.4|small=y}} / 1 {{eicons|1.4.4|invert=y|small=y}}
+| buy = @@@@ {{eicons|1.3.0.1|3ds=y|small=y}} / {{gc|8}} {{eicons|1.3.0.1|invert=y|3ds=n|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|3ds=y|small=y}} / {{coin|1gc 60sc}} {{eicons|1.3.0.1|invert=y|3ds=n|small=y}}
+| tags = light source / vendor:Merchant
+}}
+|{{item infobox
+| auto = 4008
+| cargo = no
+}}
+}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|link=no|cate=force|ingredient=Mining Helmet/Mining Shirt/Mining Pants|expectedrows=3}}
+
+== 小贴士 ==
+* {{tr|Mining armor}}在挖掘隧道（例如[[{{tr|hellevator}}]]）时很有价值。其效果可以使用下列装备进一步提升：
+** [[{{tr|Picksaw}}]]、[[{{tr|Shroomite Digging Claw}}]]、和{{eil|Luminite Pickaxes}}是最快的一些{{tr|pickaxes}}。{{tr|Light}}[[{{tr|modifier}}]]可以进一步提高其速度。
+** [[{{tr|Well Fed}}]]{{tr|buff}}（或其升级）、[[{{tr|Mining Potion}}]]的{{tr|buff}}、[[{{tr|Slice of Cake}}]]{{tr|buff}}和{{eil|Ancient Chisel}}（或其升级）的{{tr|The mining speed bonus}}可与{{tr|Mining armor}}的{{tr|bonus}}叠加。
+** [[{{tr|Smart Cursor}}]]也对挖掘隧道有帮助。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Mining Helmet}}{{tr|defense}}由 1 提升至 2。
+** {{tr|The Mining armor}}的 30% {{tr|mining speed set bonus}}现在在{{tr|Mining Shirt, Mining Pants, and the set bonus}}间平均分配，每个提供 10%。
+** {{tr|Mining Shirt and Mining Pants}}现在可通过[[{{tr|shimmer}}]]互相转化。}}
+{{history|Desktop 1.4.1|{{tr|Mining Shirt and Mining Pants}}的掉落几率由 {{chance|3/125}} 提升至 {{chance|3/25}}。}}
+{{history|Desktop 1.4.0.1|{{tr|The Mining Helmet}}现在用于制作[[{{tr|Ultrabright Helmet}}]]。}}
+{{history|Desktop 1.3.2|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Mining Helmet}}的价格由 {{gc|8}} 降低至 {{gc|4}}。
+** {{tr|Undead Miners}}现在有几率掉落{{tr|Mining Helmets}}。}}
+{{history|Desktop 1.2.1|添加了女性人物的图形变体。}}
+{{history|Desktop 1.2|穿着全套{{tr|set}}现在提供 30% {{tr|mining speed}}，而非 20%。}}
+{{history|Desktop 1.1|{{tr|Introduced Mining Pants and Mining Shirt}}。当和{{tr|Mining Helmet}}一同穿着时，会有提供 20% {{tr|mining speed}}的{{tr|set bonus}}。}}
+{{history|Desktop-Release|{{tr|Introduced Mining Helmet}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Mining armor}}

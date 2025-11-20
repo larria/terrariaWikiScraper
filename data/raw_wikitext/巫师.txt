@@ -1,0 +1,249 @@
+{{infobox wrapper
+|{{npc infobox|tabs=y|boxwidth=18em
+| auto = 108
+| idprojectile = 15
+| type = NPC
+| damage = {{modes|18|27|31}}
+| environment = Valid house
+| imageother = Map Icon Wizard.png
+| imageothercaption = {{tr|Map Icon}}
+| hardmode = yes
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 106
+| environment = Cavern
+| type = NPC
+}}
+}}
+
+'''{{tr|Wizard}}'''是个[[{{tr|Hardmode}}]] [[{{tr|NPC}}]] 商贩，出售[[{{tr|magic}}]]相关物品。一旦[[{{tr|Wall of Flesh}}]]被打败，他就会偶尔在[[{{tr|cavern}}]]{{tr|layer}}或更深处作为'''{{tr|Bound Wizard}}'''生成，与此状态下的他对话会将其释放。如果{{tr|Bound Wizard}}被杀死，他之后仍会重生；如果{{tr|Wizard NPC}} 被杀死，只要有空余[[{{tr|house}}]]，他会在一段时间后再次入住。
+
+{{eicons|1.3.0.1}} 当[[{{tr|enemies}}]]出现在他附近时，{{tr|the Wizard}}会向他们投掷类似于[[{{tr|Flower of Fire}}]]那样的火球，同时释放出一个华丽的魔法阵，造成 18 / {{expert|27}} / {{master|31}} 伤害。
+
+{{eicons|Luck}} 他偶尔会用关于玩家[[{{tr|luck}}]]的话语替代他的常规话语。这是游戏中唯一能评估玩家{{tr|luck}}值的方法。
+
+{{Lifeform Analyzer note|The Bound Wizard}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Crystal Ball}}
+|{{shop row|Ice Rod|value=@@@@ {{eicons|1.3.0.1}}<br/>{{pc|1}} {{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Greater Mana Potion}}
+|{{shop row|Bell}}
+|{{shop row|Harp}}
+|{{shop row|Spell Tome}}
+|{{shop row|Book|仅限{{eversions|1.4.1|short=y}}。}}
+|{{shop row|Music Box|value={{iteminfo|Music Box (Overworld Day)|buy}}}}
+|{{shop row|Empty Dropper}}
+|{{shop row|Wizard's Hat|[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== {{tr|Living preferences}} {{eicons|1.4.0.1}} ==
+{{living preferences}}
+
+== 微光形态{{eicons|Shimmer}} ==
+{{float file box|[[File:Wizard (Shimmered).png]] [[File:Map Icon Wizard (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Wizard}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Wizard}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没于{{tr|Shimmer}}中的方式来将他变回经典外观。
+
+== 名字 ==
+{{npc names}}
+
+== 小贴士 ==
+*[[{{tr|Dungeon}}]]包含有大量的开阔区域，可以为{{tr|the Wizard}}提供最高生成几率，在打败{{tr|Plantera}}之前，不会有新的{{tr|hardmode}}{{tr|enemies}}在这里生成，使得它成为安全又方便的寻找{{tr|wizard}}之处。
+*[[{{tr|Hunter Potion}}]]可用于定位{{tr|the Wizard}}。
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+''' 如果人物是男性且相应的 {{tr|NPC}} 在场：'''
+* “{{gameText|LegacyDialog.142|x_Guide=&lt;{{tr|Guide}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.143|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.144|x_GoblinTinkerer=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”
+
+''' 如果人物是女性且相应的 {{tr|NPC}} 在场：'''
+* “{{gameText|LegacyDialog.145|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.146|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.147|x_Dryad=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''在{{tr|Night}}：'''
+* “{{gameText|LegacyDialog.148}}”
+* “{{gameText|LegacyDialog.149}}”
+* “{{gameText|LegacyDialog.150}}”
+
+'''在白天：'''
+* “{{gameText|LegacyDialog.151}}”
+* “{{gameText|LegacyDialog.152}}”
+* “{{gameText|LegacyDialog.153}}”
+* “{{gameText|LegacyDialog.154}}”
+* “{{gameText|LegacyDialog.155}}”
+
+'''无家可归时：'''
+* “{{gameText|LegacyDialog.138}}”
+* “{{gameText|LegacyDialog.139}}”（如果人物是女性）
+* “{{gameText|LegacyDialog.140}}”（如果人物是男性）
+* “{{gameText|LegacyDialog.141}}”
+
+'''被救出来后：'''
+* “{{gameText|LegacyDialog.137}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|WizardSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|WizardSpecialText.Windy1}}”
+* “{{gameText|WizardSpecialText.Windy2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|WizardSpecialText.Rain1}}”
+* “{{gameText|WizardSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|WizardSpecialText.Storm2}}”
+* “{{gameText|WizardSpecialText.Storm1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|WizardSpecialText.Graveyard1}}”
+* “{{gameText|WizardSpecialText.Graveyard2}}”
+
+'''打败 1 级的{{eil|Old One's Army}}之后：'''
+* “{{gameText|WizardSpecialText.AfterDD2Tier1}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Wizard.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Wizard.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Wizard.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Wizard.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Wizard.HateCrowded}}”
+
+'''在{{tr|the Hallow}}中时：'''
+* “{{gameText|TownNPCMood_Wizard.LikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在{{tr|Ocean}}中：'''
+* “{{gameText|TownNPCMood_Wizard.DislikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Wizard.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''靠近[[{{tr|Golfer}}]]时：'''
+* “{{gameText|TownNPCMood_Wizard.LoveNPC|x_NPCName=&lt;{{tr|Golfer}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Wizard.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Merchant}}]]时：'''
+* “{{gameText|TownNPCMood_Wizard.LikeNPC|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''靠近[[{{tr|Witch Doctor}}]]时：'''
+* “{{gameText|TownNPCMood_Wizard.DislikeNPC|x_NPCName=&lt;{{tr|Witch Doctor}}的名字&gt;}}”
+
+'''靠近[[{{tr|Cyborg}}]]时：'''
+* “{{gameText|TownNPCMood_Wizard.HateNPC|x_NPCName=&lt;{{tr|Cyborg}}的名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Wizard.Content}}”
+
+{{collapse bottom}}
+
+=== {{tr|Wizard}}{{tr|luck}}状态话语 {{eicons|1.4.0.1}} ===
+{{main|{{tr|Luck}}}}
+<section begin=luckstatusquotes /><!-- for transclusion on [[Luck]], the {{eicons}} in the header make transclusion by section header (#lsth) impossible -->
+<!-- The inconsistent thresholds for negative luck are correct, because the Wizard uses a "normalized" version of the player's luck (he divides it by 0.7 if it's negative); Desktop 1.4.2.3 source code, Terraria.NPC.HasLuckTextForWizard. -->
+{{collapse top}}
+; 如果{{tr|Luck}} ≥ 0.75
+* “{{gameText|WizardSpecialText.LuckIsGodly1}}”
+* “{{gameText|WizardSpecialText.LuckIsGodly2}}”
+
+; 如果{{tr|Luck}} <0.75 且 ≥ 0.5
+* "{{gameText|WizardSpecialText.LuckIsAmazing1}}"
+* “{{gameText|WizardSpecialText.LuckIsAmazing2}}”
+
+; 如果{{tr|Luck}} <0.5 且 ≥ 0.25
+* “{{gameText|WizardSpecialText.LuckIsGreat1}}”
+* “{{gameText|WizardSpecialText.LuckIsGreat2}}”
+
+; 如果{{tr|Luck}} <0.25 且 > 0
+* “{{gameText|WizardSpecialText.LuckIsGood1}}”
+* “{{gameText|WizardSpecialText.LuckIsGood2}}”
+
+; 如果{{tr|luck}}是 0
+* {{note|paren=y|如果{{tr|luck}}是 0，{{tr|The Wizard}}不会使用这些话语中的任何一条。}}
+
+; 如果{{tr|Luck}} <0 且 ≥ −0.14
+* “{{gameText|WizardSpecialText.LuckIsBad1}}”
+* “{{gameText|WizardSpecialText.LuckIsBad2}}”
+
+; 如果{{tr|Luck}} <−0.14 且 ≥ −0.28
+* “{{gameText|WizardSpecialText.LuckIsPoor1}}”
+* “{{gameText|WizardSpecialText.LuckIsPoor2}}”
+
+; 如果{{tr|Luck}} <−0.28 且 ≥ −0.42
+* “{{gameText|WizardSpecialText.LuckIsTerrible1}}”
+* “{{gameText|WizardSpecialText.LuckIsTerrible2}}”
+
+; 如果{{tr|Luck}} < -0.42（实际上无法达成）
+* “{{gameText|WizardSpecialText.LuckIsCursed1}}”
+* “{{gameText|WizardSpecialText.LuckIsCursed2|x_WorldName=&lt;{{tr|world}}的名字&gt;}}”
+{{collapse bottom}}<section end=luckstatusquotes />
+
+== 花絮 ==
+* {{tr|The Wizard}}可能有点衰老或者有{{wikipedia|lang=en|prosopagnosia|失忆症}}，因为他会把玩家和已入住的同性别 {{tr|NPC}} 搞混，并且若在{{tr|Princess}}附近问他{{tr|happiness}}度情况时，他并未意识到在当前世界中有{{tr|Princess}}。
+** 他的{{tr|Bestiary}}也提到了记忆力衰减：{{gameText|Bestiary_FlavorText.npc_Wizard}}
+** 他的混淆也可能是因为年老而视力不佳。
+* {{tr|the Wizard}}的大多数名字都指向了流行文化中的{{tr|wizards}}：
+** Merlin 来自于《{{维基百科|Matter of Britain|t=亚瑟王传说}}》,
+** Michael Moorcock 的虚构人物 {{wikipedia|lang=en|Elric of Melniboné}}，
+** Ningauble 来自于两位剑与魔法英雄 {{wikipedia|lang=en|Fafhrd and the Gray Mouser|Fafhrd 和 the Gray Mouser}} 的冒险，以及
+** Leomund、Fizban、Magius、和 Dalamar 来自于《''{{wikipedia|lang=en|Dungeons & Dragons|龙与地下城（Dungeons & Dragons）}}''》的设定集 Greyhawk（灰鹰）和 Dragonlance（龙枪）。
+** 名字 Sargon 可能是指{{wikipedia|lang=en|Akkadian Empire|阿卡德帝国}}第一任统治者{{wikipedia|lang=en|Sargon of Akkad|阿卡德·萨贡（Sargon of Akkad）}}，或者是指 {{wikipedia|lang=en|Sargon the Sorcerer}}，这是在 {{wikipedia|lang=en|DC Comics|DC 漫画}}出版物中出现的虚构神秘主义者、超级英雄、和法师。
+** 名字 Xanadu 是指 {{wikipedia|lang=en|Shangdu|Shangdu（元上都）}}，又叫“Xanadu”，是中世纪时期中国蒙古统治的{{wikipedia|lang=en|Yuan dynasty|元朝}}的夏都。
+** 剩下那些，其中许多，包括 Hirael、Maelor、Arwyn、可能还有 Berwyn，都指向英国作家和学者 {{wikipedia|lang=en|J. R. R. Tolkien|（J. R. R. 托尔金）}}，大部分来自神话小说作品《''{{wikipedia|lang=en|The Silmarillion|The Silmarillion（精灵宝钻）}}''》和史诗古典奇幻小说《''{{wikipedia|lang=en|The Lord of the Rings|The Lord of the Rings（魔戒）}}''》。
+* 话语“{{gameText|LegacyDialog.152}}”引用了《[[{{tr|Terraria}}]]》的第一个[[{{tr|mod}}]]，它允许将[[{{tr|blocks}}]]转化为[[{{tr|enemies}}]]。
+* 话语“有人告诉我友谊是神奇的.[...]”引用了加拿大-美国动画幻想电视连续剧《''{{wikipedia|lang=en|My Little Pony: Friendship Is Magic|小马宝莉：友谊就是魔法（My Little Pony: Friendship is Magic）}}''》
+* 话语“{{gameText|LegacyDialog.155}}”可能是对于游戏中关于[[{{tr|Angel Statue}}]]彻底完全毫无用处的笑话的延续。
+* 话语“{{gameText|LegacyDialog.151}}”指的是{{tr|the Wizard}}出售[[{{tr|Crystal Ball}}]]。此外，{{wikipedia|lang=en|crystal ball|水晶球}}通常与巫术{{wikipedia|lang=en|clairvoyance|超视力（clairvoyance）}}相关联。
+* 话语“{{gameText|WizardSpecialText.AfterDD2Tier1}}”最有可能是对{{eil|Coin Portal|s}}的引用。
+* 话语“{{gameText|WizardSpecialText.Graveyard1}}”可能参考了 1992 年的美国动画音乐幻想喜剧电影《''{{wikipedia|lang=en|Aladdin (1992 Disney film)|Aladdin（阿拉丁）}}''》中的精灵。
+* 话语“{{gameText|TownNPCMood_Wizard.LoveSpace}}”可能引用了 J. R. R Tolkien（J. R. R 托尔金）的《''Lord of the Rings（魔戒）''》。
+* 话语“{{gameText|WizardSpecialText.LuckIsTerrible1}}”可能引用了动作冒险游戏《''{{wikipedia|lang=en|The Legend of Zelda: Majora's Mask|The Legend of Zelda: Majora's Mask（塞尔达传说：魔吉拉的面具）}}''》。
+* 话语“{{gameText|WizardSpecialText.Rain1}}”可能引用了美国儿童小说《''{{wikipedia|lang=en|The Wonderful Wizard of Oz|绿野仙踪（The Wonderful Wizard of Oz）}}''》。它也是唯一带脏话的{{tr|town NPC}} 话语。
+* 话语“{{gameText|WizardSpecialText.LuckIsPoor2}}”可能参考了常见的为了聚集人气或让更多人接龙而发出的{{wikipedia|Chain letter|连环信}}（例：“将这个帖子转发给 5 个朋友，否则你将在接下来 7 天内死去！”）。
+* {{tr|The Wizard}}的{{tr|Shimmered form}}可能参考了{{维基百科|Final Fantasy|t=最终幻想|b=y}}中的[https://finalfantasy.fandom.com/wiki/Black_Mage_(Final_Fantasy) {{译名|Black Mage|黑魔法师}}]。
+{{float file box| [[File:Wizard (no hat).png]] [[File:Merchant (no hat).png]]|去掉帽子的{{tr|Wizard}}和{{tr|Merchant}}}}
+* 去掉帽子后的{{tr|Wizard}}和{{tr|Merchant}}形象非常相似。这可能暗示着二人之间有着某种联系，这在{{tr|Wizard}}的对话上也有所体现：“{{gameText|TownNPCMood_Wizard.LikeNPC|x_NPCName=&lt;{{tr|Merchant}}的名字&gt;}}”
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在以 {{sc|15}} 的价格出售[[{{tr|Book}}]]。}}
+{{history|Desktop 1.4.0.1|修正了一个 {{tr|bug}}，即提到{{tr|the Guide}}的话语出现的条件是存在{{tr|Demon Eye}}（而非{{tr|the Guide}}）。}}
+{{history|Desktop 1.3.1|现在有可能名叫“Abram”。}}
+{{history|Desktop 1.3.0.1|
+** 现在出售{{tr|Empty Dropper}}。
+** {{tr|Ice Rod}}的价格从{{pc|1}}降到{{gc|50}}。
+** 外观更新。}}
+{{history|Desktop 1.1.1|现在能在启用自动暂停时解开。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|应用来自 PS4 的 1.0.750.0 更新的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 现在出售{{tr|Empty Dropper}}。
+** [[{{tr|Ice Rod}}]]的价格从{{pc|1}}降到{{gc|50}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Wizard}}

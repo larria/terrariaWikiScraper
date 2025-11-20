@@ -1,0 +1,141 @@
+{{legacy nav tab}}
+
+'''{{tr|Aggro}}'''（'''Aggro'''，'''aggression'''、或 '''aggravation''' 的缩写）是一个不可见的属性，决定了[[{{tr|enemies}}]]会将哪个玩家优先作为目标。在[[{{tr|multiplayer}}]]以外，{{tr|aggro}}的效果不多。 
+
+所有{{tr|enemies}}会按照其 [[{{tr|AI}}]] 中设定的条件来设定目标玩家。例如，某些类型的{{tr|enemies}}仅会以[[{{tr|water}}]]中的玩家为目标，而大部分{{tr|enemies}}会持续尝试寻找最近的目标。具有“{{tr|enemy}}更可能/不太可能以玩家为目标”效果的[[{{tr|Armor}}]]和其他{{tr|items}}会让{{tr|enemies}}将到玩家的距离视为比实际距离更近或更远。{{tr|Enemies}}通常没有最大搜索范围，如果没有其他目标可用则总是会以玩家为目标，无论距离或{{tr|aggro}}。
+
+如果存在{{eil|Eternia Crystal (NPC)|Eternia Crystal}}，[[{{tr|Old One's Army}}]]的{{tr|enemies}}会以它为目标，但取决于距离和{{tr|aggro}}也可能以玩家为目标。
+
+== 影响 ==
+{{tr|Aggro}}在{{tr|multiplayer}}下主要影响哪个玩家被大部分类型的{{tr|enemies}}作为目标。{{source code ref|v=1.4.4.9|method=Terraria.NPC.TargetClosest / Terraria.NPC.TryTrackingTarget / Terraria.NPC.SetTargetTrackingValues}}{{tr|aggro}}的副作用为大部分类型的{{tr|enemies}}是否会追逐目标玩家（在{{tr|multiplayer and singleplayer}}中均如此）。
+
+=== 目标选择 ===
+大部分{{tr|enemies}}优先攻击距离最近的玩家。它们会计算自身和{{tr|world}}中所有存活玩家之间的距离，然后选择距离最短的玩家作为目标。在此计算中，会从距离中减去每个玩家的{{tr|aggro}}属性：
+
+<math>\text{距离} = \text{真实距离} - \text{仇恨} + g</math>
+
+此公式中，<math display="inline">\text{真实距离}</math>是{{tr|enemy}}的{{tr|hitbox}}中心和玩家的{{tr|hitbox}}中心之间的实际{{维基百科|taxicab distance|t=曼哈顿距离}}，单位为像素。{{note|small=y|paren=y|译注：曼哈顿距离为两个点在标准坐标系上的绝对轴距总和：两点的水平距离加竖直距离之和。}}<!-- In the code: abs(targetPlayer.center.x - enemy.center.x) + abs(targetPlayer.center.y - enemy.center.y) -->常量 <math display="inline">g</math> 的值通常为 0，没有效果；如果目标玩家装备了[[{{tr|Royal Gel}}]]且{{tr|enemy}}是受其影响的[[{{tr|slimes}}]]的一种，则其值为 1000。
+
+如果{{tr|world}}中仅有一个存活的玩家（例如：{{tr|singleplayer}}下，或者{{tr|multiplayer}}下所有其他玩家死亡），则这些距离计算不再与目标选取相关。此种情况下，所有{{tr|enemies}}都会以这一仅有的存活玩家作为目标。
+
+==== 示例 ====
+[[File:Enemy target selection example.png|thumb|{{tr|Skeleton}}到每个玩家的<math display="inline">\text{真实距离}</math>（单位：像素）显示为红色。]]
+
+假设在一个[[{{tr|Skeleton}}]]的两侧均有一名玩家，他们的高度相同因此竖直距离为 0，如图所示。假设两名玩家的{{tr|aggro}}值均为 0（标准情况），{{tr|Skeleton}}会以左侧的玩家为目标，因为它和左侧玩家的曼哈顿距离为 128 像素（8 格），短于它和右侧玩家的曼哈顿距离（160 像素，或 10 格）。当右侧的玩家的{{tr|aggro}}值提高到 100 时，距离公式如下所示：
+
+<math>\text{距离} = 160 - 100 + 0</math>
+
+{{tr|The Skeleton}}现在会认为这名玩家仅有 <math display="inline">160 - 100 = 60</math> 像素远。因为这短于左侧玩家的 128 像素，{{tr|Skeleton}}会改为以右侧的玩家为目标。
+
+==== {{tr|Old One's Army}} ====
+{{eil|Old One's Army}}的{{tr|Enemies}}使用了略微不同的方法。{{source code ref|v=1.4.4.9|method=Terraria.Utilities.NPCUtils.TargetClosestOldOnesInvasion}}当计算与{{tr|world}}中存活玩家之间的距离时，这些{{tr|enemies}}{{footnote|[[{{tr|Betsy}}]]除外。它选择目标时总是会考虑{{tr|world}}中的所有玩家，无论距离。<br/>{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Utilities.NPCUtils.TargetClosestBetsy}}}}会无视距离自身超过 200 像素（12.5 格）远的玩家。{{tr|Aggro}}在这一计算中尚未被考虑：
+
+<math>\text{距离} = \text{真实距离}</math>
+
+然后，在 200 像素半径以内（<math display="inline">\text{距离} \le 200</math>）的剩余玩家会被考虑作为目标，使用通常的、包含{{tr|aggro}}的公式：
+
+<math>\text{距离} = \text{真实距离} - \text{仇恨}</math>
+
+在两个公式中，<math display="inline">\text{真实距离}</math>是{{tr|enemy}}的{{tr|hitbox}}中心和玩家的{{tr|hitbox}}中心之间的实际{{维基百科|Euclidean distance|t=欧几里得距离}}（注意不是此前的曼哈顿距离！）{{note|small=y|paren=y|译注：欧几里得距离为连接两点的线段的长度。}}，单位为像素。
+
+最终，<!-- In the code NPC distance is checked first before players, but that makes no difference and in text form this order is probably easier to follow. -->{{tr|Old One's Army enemy}}会计算其{{tr|hitbox}}的中心和[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]的{{tr|hitbox}}之间的欧几里得距离。两者之间（{{tr|Eternia Crystal}}或最近的玩家，后者的距离受到{{tr|aggro}}影响），距离较短的会被作为目标（除非该{{tr|enemy}}当前处于“鬼魂”状态）。
+
+=== 目标追逐 ===
+大部分[[{{tr|Fighter AI}}]] {{tr|enemies}}和行为相似的{{tr|enemies}}通常会在向前移动（向左或向右）追逐目标玩家时试图面对玩家。如果目标玩家具有负值的{{tr|aggro}}且没有使用任何[[{{tr|item}}]]，这一行为会被中止。例如，[[{{tr|Skeleton}}]]会从玩家身旁走过并向当前朝向继续前进，通常情况下它们会调转方向以保持朝向玩家。
+
+值得注意的是，玩家的{{tr|aggro}}属性只需要为负值即可激活这一机制。只要其值低于 0，无论具体值是多少都没有影响，这和上方的目标选择过程不同。
+
+尽管如此，由于有许多限制，此机制的影响相对较小：
+
+* 只会影响通常的追逐玩家的运动。除此之外的其他攻击（如[[{{tr|Giant Tortoise}}]]的跳跃，或任何[[{{tr|projectile}}]]的发射）仍然会照常执行。
+** 即使是{{tr|enemies}}的部分普通移动也不受影响——例如，如果玩家在{{tr|Fighter AI}} {{tr|enemies}}旁跳跃，它们也仍然会跳跃。
+* 没有“朝向左或右”这一概念的{{tr|Enemies}}不受影响，所有 [[{{tr|bosses}}]] 也如此。
+** 例子包括能够 360 度旋转以追逐玩家的{{tr|enemies}}（如{{tr|walls}}上的[[:Category:{{tr|Spider AI NPCs}}|{{tr|Spider AI enemies}}]]，或{{tr|water}}中的[[:Category:{{tr|Jellyfish AI NPCs}}|{{tr|Jellyfish AI enemies}}]]）、静止的{{tr|enemies}}（如[[{{tr|Caster AI}}]] {{tr|enemies}}或[[{{tr|Tesla Turret}}]]）、或钻地的[[{{tr|Worm AI}}]] {{tr|enemies}}。
+* 当目标玩家正在使用{{tr|item}}时（即{{tr|item}}动画的持续时间内），{{tr|enemies}}会恢复普通行为，再次追逐玩家。
+
+此外，当可受[[{{tr|Royal Gel}}]]影响的[[{{tr|slimes}}]]的目标玩家装备了{{tr|Royal Gel}}时，这一行为总是启用，无论{{tr|aggro}}或{{tr|item}}使用情况。
+
+== 影响{{tr|aggro}}的{{tr|item}} ==
+下列{{tr|items}}会降低或增加玩家的{{tr|aggro}}属性。较低的值意味着玩家相距{{tr|enemies}}的距离会被视为比实际距离更远，而较高的值意味着玩家相距{{tr|enemies}}的距离会被视为比实际距离更近。
+
+{| class="terraria lined sortable"
+|+ 可叠加的{{tr|item}}
+! 物品 !! 仇恨改变
+{{#lstmap:{{equipinfo/list|aggro|sep=\}}|\|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{signed number|{{equipinfo|id=@@@@|stat=aggro}}}}
+</esc>|}}
+|}
+所有上述{{tr|item}}均可互相叠加。
+
+来自[[{{tr|Invisibility Potion}}]]的{{tr|The Invisibility buff}}不会与上述{{tr|items}}叠加。在考虑了上述{{tr|items}}的效果后，此{{tr|buff}}会直接更改玩家的{{tr|aggro}}属性：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+* 如果玩家没有使用任何{{tr|item}}，且其{{tr|aggro}}高于 -750：将玩家的{{tr|aggro}}设为 −750。
+** 如果{{tr|The aggro}}属性已经不超过 -750，它不会被更改。
+* 如果玩家正在使用任何{{tr|item}}，且其{{tr|aggro}}高于 -250：将玩家的{{tr|aggro}}设为 −250。
+** 如果{{tr|The aggro}}属性已经不超过 -250，它不会被更改。
+
+''见[[#范例|下方]]获取示例。''
+
+{| class="terraria"
+|+ {{tr|Invisibility Potion}}
+! {{tr|Item}} !! {{tr|Aggro}}
+|-
+| rowspan=2 | {{item|Invisibility Potion}} || −750 {{note|paren=y|未在使用{{tr|item}}时}}
+|-
+| −250 {{note|paren=y|在使用{{tr|item}}时}}
+|}
+
+最后，会施加下列三种{{tr|items}}的{{tr|stealth mode}}的{{tr|aggro}}降低。{{footnote|name=stealthmode}}同一时间仅可激活三种{{tr|stealth mode}}之一；{{tr|Psycho Knife}}的效果优先级最高。
+
+{| class="terraria lined sortable"
+|+ {{tr|Stealth}}模式
+! 物品 !! 仇恨改变
+|-
+| {{item|Psycho Knife}} || −750 {{note|paren=y|{{tr|stealth mode}}下}}
+|-
+| {{item|Shroomite armor|note=(全套)|wrap=y}} || −750 {{note|paren=y|{{tr|stealth mode}}下}}
+|-
+| {{item|Vortex armor|note=(全套)|wrap=y}} || −1200 {{note|paren=y|{{tr|stealth mode}}下}}
+|}
+
+=== 范例 ===
+* 同时使用[[{{tr|Putrid Scent}}]]（{{signed number|{{equipinfo|Putrid Scent|aggro}}}} {{tr|aggro}}）和{{tr|Invisibility Potion}}（未使用 {{tr|item}}时 −750 {{tr|aggro}}）不会提供 {{signed number|{{#expr:{{equipinfo|Putrid Scent|aggro}}-750}}}} {{tr|aggro}}，因为{{tr|Invisibility Potion}}会重设高于 −750 的{{tr|aggro}}。这一组合仅会提供来自{{tr|Invisibility Potion}}的 −750 {{tr|aggro}}。
+** 再加上全套的[[{{tr|Shroomite armor}}]]（{{tr|stealth mode}}下 −750 {{tr|aggro}}）可以将{{tr|aggro}}叠加至 −1500，因为{{tr|Shroomite armor}}是最后考虑的。
+* 同时使用[[{{tr|Arcane Flower}}]]（{{signed number|{{equipinfo|Arcane Flower|aggro}}}} {{tr|aggro}}）、[[{{tr|Recon Scope}}]]（{{signed number|{{equipinfo|Recon Scope|aggro}}}} {{tr|aggro}}）、和[[{{tr|Stalker's Quiver}}]]（{{signed number|{{equipinfo|Stalker's Quiver|aggro}}}} {{tr|aggro}}）会导致{{tr|Invisibility Potion}}对{{tr|aggro}}没有效果，因为这三个{{tr|accessories}}总共提供 {{signed number|{{#expr:{{equipinfo|Arcane Flower|aggro}}+{{equipinfo|Recon Scope|aggro}}+{{equipinfo|Stalker's Quiver|aggro}}}}}} {{tr|aggro}}，低于{{tr|Invisibility Potion}}的阈值。{{tr|aggro}}降低的总和会保持有效，但{{tr|Invisibility Potion}}不会提供其 −750（或 −250）{{tr|aggro}}。
+* 来自全套[[{{tr|Solar Flare armor}}]]的 {{signed number|{{#expr:{{equipinfo|Solar Flare Helmet|aggro}}+{{equipinfo|Solar Flare Breastplate|aggro}}+{{equipinfo|Solar Flare Leggings|aggro}}}}}} {{tr|aggro}}提高会被{{tr|Invisibility Potion}}完全无效，后者会将{{tr|aggro}}重设为 -750。
+
+== 备注 ==
+* 在{{tr|singleplayer}}下，正值的{{tr|aggro}}（相较于基础的 0 {{tr|aggro}}值）没有任何效果。
+* [[{{tr|Vortex armor}}]]提供了游戏中的单种{{tr|item}}最高的{{tr|aggro}}减少。
+* 可达到的最低的{{tr|aggro}}为 −2800，通过结合[[{{tr|Putrid Scent}}]]、[[{{tr|Arcane Flower}}]]、[[{{tr|Recon Scope}}]]、[[{{tr|Stalker's Quiver}}]]、和{{tr|stealth mode}}下的{{tr|Vortex armor}}达成。
+** 由于[[{{tr|Invisibility Potion}}]]独特的、不可叠加的特性，它不会提供额外的{{tr|aggro}}降低。
+* 可达到的最高的{{tr|aggro}}为2200，通过结合[[{{tr|Solar Flare armor}}|{{tr|Solar Flare Helmet and Solar Flare Leggings}}]]、[[{{tr|Beetle Shell}}]]、[[{{tr|Flesh Knuckles}}]]、[[{{tr|Berserker's Glove}}]]、和[[{{tr|Hero Shield}}]]达成。
+* 受到[[{{tr|Confused}}]]{{tr|debuff}}影响的{{tr|An enemy}}会面向其当前方向的反方向。通常这意味着它会背朝其目标，但如果它当前没有在追逐其目标（如[[#目标追逐|上方]]所述），则{{tr|Confused debuff}}可能实际上会让它重新面对其目标。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|The Stardust Guardian}}现在会瞄准最接近的{{tr|enemy}}；它不再会转移{{tr|aggro}}，且玩家不再能影响其行动。}}
+{{history|Desktop 1.3.4|{{tr|NPCs}} 现在可以被作为目标了。}}
+{{history|Desktop 1.3.0.1|
+** 当玩家装备着[[{{tr|Royal Gel}}]]时{{tr|Slimes}}不会再把玩家作为目标。
+** 引入了{{tr|the Stardust Guardian}}，它能把{{tr|aggro}}从玩家身上转移走。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 {{tr|Console}} 1.0.750.0 一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 当玩家装备着{{tr|Royal Gel}}时{{tr|Slimes}}不会再把玩家作为目标。
+** 引入了{{tr|the Stardust Guardian}}，它能把{{tr|aggro}}从玩家身上转移走。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist|refs=
+{{footnote|name=stealthmode|{{tr|Stealth mode}}还会额外阻止[[{{tr|Fighter AI}}]] 和[[{{tr|Flying AI}}]] 的{{tr|enemies}}向玩家发射{{tr|projectiles}}。这一机制和{{tr|aggro}}无关。}}
+}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Aggro}}

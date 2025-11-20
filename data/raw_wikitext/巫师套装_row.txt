@@ -1,0 +1,109 @@
+<includeonly><!--
+
+-->{{#vardefine:ws_type|{{{type|}}}}}<!--
+
+-->{{#vardefine:ws_mhat-dmg|7}}<!--
+-->{{#vardefine:ws_mhat-crit|7}}<!--
+-->{{#vardefine:ws_mhat-mana|}}<!--
+-->{{#vardefine:ws_mhat-cost|}}<!--
+
+-->{{#vardefine:ws_what-dmg|5}}<!--
+-->{{#vardefine:ws_what-dmg-pre-141|15}}<!--
+-->{{#vardefine:ws_what-crit|}}<!--
+-->{{#vardefine:ws_what-mana|}}<!--
+-->{{#vardefine:ws_what-cost|}}<!--
+
+-->{{#vardefine:ws_robe-dmg|{{{damage|}}}}}<!--
+-->{{#vardefine:ws_robe-crit|{{{crit|}}}}}<!--
+-->{{#vardefine:ws_robe-mana|{{{mana|}}}}}<!--
+-->{{#vardefine:ws_robe-cost|{{{cost|}}}}}<!--
+
+-->{{#vardefine:ws_mhat-dmg_full|{{#expr:{{#var:ws_mhat-dmg|0}}+{{#var:ws_robe-dmg|0}}}}}}<!--
+-->{{#vardefine:ws_mhat-crit_full|{{#expr:{{#var:ws_mhat-crit|0}}+{{#var:ws_robe-crit|0}}}}}}<!--
+-->{{#vardefine:ws_mhat-mana_full|{{#expr:{{#var:ws_mhat-mana|0}}+{{#var:ws_robe-mana|0}}}}}}<!--
+-->{{#vardefine:ws_mhat-cost_full|{{#expr:{{#var:ws_mhat-cost|0}}+{{#var:ws_robe-cost|0}}}}}}<!--
+
+-->{{#vardefine:ws_what-dmg_full|{{#expr:{{#var:ws_what-dmg|0}}+{{#var:ws_robe-dmg|0}}}}}}<!--
+-->{{#vardefine:ws_what-crit_full|{{#expr:{{#var:ws_what-crit|0}}+{{#var:ws_robe-crit|0}}}}}}<!--
+-->{{#vardefine:ws_what-mana_full|{{#expr:{{#var:ws_what-mana|0}}+{{#var:ws_robe-mana|0}}}}}}<!--
+-->{{#vardefine:ws_what-cost_full|{{#expr:{{#var:ws_what-cost|0}}+{{#var:ws_robe-cost|0}}}}}}<!--
+
+
+-->{{#vardefine:ws_equal-dmg|{{#ifeq:{{#var:ws_mhat-dmg_full}}|{{#var:ws_what-dmg_full}}| rowspan=2 {{!}} }}}}<!--
+-->{{#vardefine:ws_equal-crit|{{#ifeq:{{#var:ws_mhat-crit_full}}|{{#var:ws_what-crit_full}}| rowspan=2 {{!}} }}}}<!--
+-->{{#vardefine:ws_equal-mana|{{#ifeq:{{#var:ws_mhat-mana_full}}|{{#var:ws_what-mana_full}}| rowspan=2 {{!}} }}}}<!--
+-->{{#vardefine:ws_equal-cost|{{#ifeq:{{#var:ws_mhat-cost_full}}|{{#var:ws_what-cost_full}}| rowspan=2 {{!}} }}}}<!--
+
+-->{{#vardefine:ws_newline-bonus|{{#pos:{{#var:ws_equal-dmg|y}}{{#var:ws_equal-crit|y}}{{#var:ws_equal-mana|y}}{{#var:ws_equal-cost|y}}|y}}}}<!--
+
+-->{{#vardefine:ws_equal-hatsdefense|{{#ifeq:{{iteminfo|Magic Hat|defense}}|{{iteminfo|Wizard Hat|defense}}| rowspan=2 {{!}} }}}}<!--
+-->{{#vardefine:ws_equal-hatsrare|{{#ifeq:{{iteminfo|Magic Hat|rare|raw=y}}|{{iteminfo|Wizard Hat|rare|raw=y}}| rowspan=2 {{!}} }}}}<!--
+
+
+-->{{#vardefine:ws_mhat-dmg_display|{{#ifexpr:{{#var:ws_mhat-dmg_full}}=0|{{na}}|+{{#var:ws_mhat-dmg_full}}%}}}}<!--
+-->{{#vardefine:ws_mhat-crit_display|{{#ifexpr:{{#var:ws_mhat-crit_full}}=0|{{na}}|+{{#var:ws_mhat-crit_full}}%}}}}<!--
+-->{{#vardefine:ws_mhat-mana_display|{{#ifexpr:{{#var:ws_mhat-mana_full}}=0|{{na}}|+{{#var:ws_mhat-mana_full}}}}}}<!--
+-->{{#vardefine:ws_mhat-cost_display|{{#ifexpr:{{#var:ws_mhat-cost_full}}=0|{{na}}|-{{#var:ws_mhat-cost_full}}%}}}}<!--
+
+-->{{#vardefine:ws_what-dmg_display|{{#ifexpr:{{#var:ws_what-dmg_full}}=0|{{na}}|+{{#var:ws_what-dmg_full}}%}}}}<!--
+-->{{#vardefine:ws_what-crit_display|{{#ifexpr:{{#var:ws_what-crit_full}}=0|{{na}}|+{{#var:ws_what-crit_full}}%}}}}<!--
+-->{{#vardefine:ws_what-mana_display|{{#ifexpr:{{#var:ws_what-mana_full}}=0|{{na}}|+{{#var:ws_what-mana_full}}}}}}<!--
+-->{{#vardefine:ws_what-cost_display|{{#ifexpr:{{#var:ws_what-cost_full}}=0|{{na}}|-{{#var:ws_what-cost_full}}%}}}}<!--
+
+
+-->
+|-
+| rowspan=2 align=left | <b>{{tr|{{#var:ws_type}} Wizard set}}</b>
+| {{item|{{#var:ws_type}} Robe}} || {{item|Magic Hat}}
+| {{#var:ws_equal-hatsdefense}} {{getSetInfo||head=Magic Hat|body={{#var:ws_type}} Robe|defense|note=n}}
+| {{#var:ws_equal-dmg}} {{#var:ws_mhat-dmg_display}}
+| {{#var:ws_equal-crit}} {{#var:ws_mhat-crit_display}}
+| {{#var:ws_equal-mana}} {{#var:ws_mhat-mana_display}}
+| {{#var:ws_equal-cost}} {{#var:ws_mhat-cost_display}}
+| align=left | <i>{{gameText|ArmorSetBonus.MagicHat}}</i>
+| align=right | {{getSetInfo||head=Magic Hat|body={{#var:ws_type}} Robe|sell|note=n}}
+|-
+| {{item|{{#var:ws_type}} Robe}} || {{item|Wizard Hat}}<!--
+-->{{#if:{{#var:ws_equal-hatsdefense}}||<nowiki/>
+{{!}} {{getSetInfo||head=Wizard Hat|body={{#var:ws_type}} Robe|defense|note=n}} }}<!--
+
+-->{{#if:{{#var:ws_equal-dmg}}||<nowiki/>
+{{!}} {{#var:ws_what-dmg_display}} }}<!--
+-->{{#if:{{#var:ws_equal-crit}}||<nowiki/>
+{{!}} {{#var:ws_what-crit_display}} }}<!--
+-->{{#if:{{#var:ws_equal-mana}}||<nowiki/>
+{{!}} {{#var:ws_what-mana_display}} }}<!--
+-->{{#if:{{#var:ws_equal-cost}}||<nowiki/>
+{{!}} {{#var:ws_what-cost_display}} }}
+| align=left | <i>{{gameText|ArmorSetBonus.Wizard}}</i>
+| align=right | {{getSetInfo||head=Wizard Hat|body={{#var:ws_type}} Robe|sell|note=n}}<!--
+
+// store set to cargo via hidden infobox
+-->{{#vardefine:ws_bonustext|'''{{#var:ws_type}} Robe:''' <!--
+	-->{{#lstmap:<!--
+		-->{{#if:{{#var:ws_robe-dmg}}|+{{#var:ws_robe-dmg}}% magic damage}}<!--
+		-->{{#ifeq:{{#var:ws_robe-dmg|foo}}|{{#var:ws_robe-crit|bar}}|<!-- if dmg and crit both exist and are equal
+			-->&#32;and critical strike chance<!--
+		-->|{{#if:{{#var:ws_robe-crit}}|<!--
+			-->§+{{#var:ws_robe-crit}}% magic critical strike chance<!--
+		-->}}}}§<!--
+		-->{{#if:{{#var:ws_robe-mana}}|§+{{#var:ws_robe-mana}} mana}}<!--
+		-->{{#if:{{#var:ws_robe-cost}}|§-{{#var:ws_robe-cost}}% mana costs}}<!--
+	-->|§}}<!--
+-->}}<!--
+
+-->{{item infobox | view=void
+| name = {{#var:ws_type}} Wizard set
+| imagealt = [[File:{{#var:ws_type}} Robe (equipped).png]] [[File:{{#var:ws_type}} Robe (equipped) female.png]]
+| type = Armor/Set
+| defense = {{getSetInfo||head=Magic Hat|body={{#var:ws_type}} Robe|defense}}
+| bonus = {{#var:ws_bonustext}}<br/>'''Magic Hat:''' +7% magic damage and critical strike chance<br/>'''Wizard Hat:''' +15% magic damage
+| setbonus = '''Magic Hat:''' {{gameText|ArmorSetBonus.MagicHat}}<br/>'''Wizard Hat:''' {{gameText|ArmorSetBonus.Wizard}}
+| sell = {{getSetInfo||head=Magic Hat|body={{#var:ws_type}} Robe|sell|note=n}} {{note|set with Magic Hat|paren=y}}<br/>{{getSetInfo||head=Wizard Hat|body={{#var:ws_type}} Robe|sell|note=n}} {{note|set with Wizard Hat|paren=y}}
+}}<!--
+
+--></includeonly>
+<noinclude>
+{{formatting subpage}}
+{{language info|en=Wizard set/row}}
+</noinclude>

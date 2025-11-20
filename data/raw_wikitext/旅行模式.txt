@@ -1,0 +1,259 @@
+{{exclusive|1.4.0.1}}
+{{journey mode only}}
+{{redirect|旅途|题为“{{tr|Journey's End}}（Journey's End）”的《{{tr|Terraria}}》更新|1.4.0.1}}
+{{redirect|创造|{{tr|Old One's Army}}{{tr|event}}的{{tr|debuff}}效果|{{tr|Creative Shock}}}}
+{{flavor text|{{#explode:{{GameText|UI.WorldDescriptionCreative}}|（}}}}
+
+'''{{tr|Journey Mode}}'''是创建新的{{tr|Characters}}和[[{{tr|world}}]]时的一个选项。它允许{{tr|player}}在{{tr|game}}中进行大量的自定义选项，包括复制{{tr|item}}、更改[[{{tr|time}}]]和{{tr|weather}}、以及[[{{tr|difficulty}}]]{{tr|slider}}。{{tr|Journey mode}}只能通过{{tr|Journey}}{{tr|character}}在{{tr|Journey}}{{tr|world}}中游玩（{{tr|Journey}}{{tr|world}}只能由{{tr|Journey}}{{tr|character}}进入，且{{tr|Journey}}{{tr|character}}也只能在{{tr|Journey}}{{tr|world}}中游玩）。 
+
+{{tr|Journey Mode}}旨在作为《{{tr|Terraria}}》的“创造”或“旅游”模式，使得相对容易地获取{{tr|item}}并探索《{{tr|Terraria}}》的各种元素和机制，而不必克服正常的挑战进程；不过，{{tr|Journey player}}确实能够即时调整{{tr|game}}{{tr|difficulty}}以挑战自己并测试不同的{{tr|difficulty}}等级。
+
+==  常规 ==
+* {{tr|Characters}}以常规{{tr|equipment}}的升级版以及新{{tr|Characters}}通常不提供的额外{{tr|equipment}}（包括[[{{tr|Fledgling Wings}}]]）开始。
+: {{itemlist|width=12em|class=terraria
+|{{item|Iron Shortsword}}
+|{{item|Iron Pickaxe}}
+|{{item|Iron Axe}}
+|{{item|Iron Hammer}}
+|{{item|Finch Staff|small=y}}
+|{{item|Torch|note=×100}}
+|{{item|Rope|note=×100}}
+|{{item|Magic Mirror}}
+|{{item|Grappling Hook}}
+|{{item|Fledgling Wings|note2=（18 {{tr|tiles}}的飞行高度）}}
+|{{item|Lilith's Necklace|note2=（仅当{{tr|character}}名为 Wolf Pet 或 Wolfpet 时）}}
+}}
+
+* [[{{tr|Enemies}}]]的{{tr|difficulty}}默认仅为（{{tr|Classic Mode}}的）一半；可在游玩期间用[[#{{tr|Enemy Difficulty Slider}}|{{tr|Enemy Difficulty Slider}}]]更改其{{tr|difficulty}}。
+* {{tr|Journey Mode}}允许{{tr|player}}访问[[#能力{{tr|menu}}|能力{{tr|menu}}]]，它可用来调整游玩体验。
+* [[{{tr|Town NPC}}]] 的[[{{tr|NPC}}#属性加成|{{tr|damage}}倍率]]在{{tr|difficulty}}低于{{tr|Expert}}时为 1×，在{{tr|difficulty}}大于等于{{tr|Expert}}时为 {{expert|2×}}，而不是通常情况下的 1× / {{expert|1.5×}} / {{master|1.75×}}。{{source code ref|v=1.4.4.9|class=Terraria.DataStructures.GameModeData}}
+
+== 能力{{tr|menu}} ==
+{{float file box|width=160px|{{flexbox|wrap=no|justify=space-evenly|alignitems=center|[[File:Power Menu Toggle.png]][[File:Power Menu.png|x180px]]}}|能力{{tr|menu}}切换按钮（左侧）和七个能力{{tr|menu}}功能（右侧）}}
+
+可以通过{{tr|crafting menu}}上方，主[[{{tr|Inventory}}]]下方的切换按钮访问'''能力{{tr|menu}}'''。打开后，其界面将替换{{tr|crafting menu}}。
+
+能力{{tr|menu}}包含七个不同的功能：{{tr|Duplication, Research, Time, Weather}}、个人能力{{tr|menu}}、感染{{tr|spread}}、和{{tr|Enemy Difficulty}}.
+
+=== [[File:Power Menu Duplication.png]] {{tr|Duplication}} ===
+[[File:Duplication Menu.png|thumb|160px|{{tr|Duplication menu}}]]
+该{{tr|menu}}允许{{tr|player}}即刻地、无限地复制任何此前{{tr|research}}过的{{tr|item}}。{{tr|menu}}中有十一个选项卡，每种代表不同的{{tr|item}}分类。
+
+{{icon|desktop}} 点击一个分类选项卡将仅显示该类型的{{tr|item}}；点击同一分类选项卡可以取消选中。
+
+{{icon|mobile}} 点击分类按钮将仅显示该类型的{{tr|item}}；选择“全部”分类以显示所有{{tr|item}}。
+
+{| class="terraria lined align-center"
+! rowspan=2 | 分类
+! colspan=2 | {{tr|Icon}}
+|-
+! {{icon|desktop}}
+! {{icon|mobile}}
+|-
+! style="text-align:left" | 全部
+| {{na}}
+| [[File:Power Menu Duplication All.png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Weapons}}]]
+| [[File:Power Menu Duplication Weapons.png|link=]]
+| [[File:Power Menu Duplication Weapons (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Armor}}]]
+| [[File:Power Menu Duplication Armor.png|link=]]
+| [[File:Power Menu Duplication Armor (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Vanity items}}|{{tr|Vanity}}]]
+| [[File:Power Menu Duplication Vanity.png|link=]]
+| [[File:Power Menu Duplication Vanity (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Blocks}}]]
+| [[File:Power Menu Duplication Blocks.png|link=]]
+| [[File:Power Menu Duplication Blocks (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Furniture}}]]
+| [[File:Power Menu Duplication Furniture.png|link=]]
+| [[File:Power Menu Duplication Furniture (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Accessories}}]]
+| [[File:Power Menu Duplication Accessories.png|link=]]
+| [[File:Power Menu Duplication Accessories (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Equipment slot}}|{{tr|Equipment}}]]
+| [[File:Power Menu Duplication Equipment.png|link=]]
+| [[File:Power Menu Duplication Equipment (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Consumables}}]]
+| [[File:Power Menu Duplication Consumables.png|link=]]
+| [[File:Power Menu Duplication Consumables (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Tools}}]]
+| [[File:Power Menu Duplication Tools.png|link=]]
+| [[File:Power Menu Duplication Tools (mobile).png|link=]]
+|-
+! style="text-align:left" | [[{{tr|Materials}}]]
+| [[File:Power Menu Duplication Materials.png|link=]]
+| [[File:Power Menu Duplication Materials (mobile).png|link=]]
+|-
+! style="text-align:left" | 其他
+| [[File:Power Menu Duplication Misc.png|link=]]
+| [[File:Power Menu Duplication Misc (mobile).png|link=]]
+|}
+
+{{icon|desktop}} [[File:Search icon.png|link=]] / {{icon|mobile}} [[File:Search icon (mobile).png|link=]] 搜索栏让{{tr|player}}可搜索特定的{{tr|item}}。这将会在{{tr|item name and tooltip}}中搜索匹配项。如果在一个分类选项卡开启时搜索，则只会在该分类中的{{tr|item}}之内搜索。搜索栏末端还有一个 [[File:SearchCancel.png|link=]] 按钮，用于清空搜索框中的文本。
+
+=== [[File:Power Menu Research.png]] {{tr|Research}} ===
+[[File:Research Menu Box.png|thumb|160px|{{tr|Research slot}}]]
+要复制一个{{tr|item}}，必须先对其进行“{{tr|research}}”特定次数，{{tr|research}}过程会删除该{{tr|item}}。用 {{key|Shift}} + {{key|use}}（{{icon|desktop}}）将{{tr|item}}送入{{tr|research slot}}会自动{{tr|research}}该{{tr|item}}。完成某个{{tr|item}}仍需该{{tr|item}}的个数的计数器会在{{tr|item}}的{{tr|tooltip}}中，或在{{tr|item}}被放入{{tr|research slot}}时显示。{{tr|Research}}计数是和{{tr|characters}}绑定的，这意味着新的{{tr|characters}}需要重新{{tr|research}}{{tr|item}}。 
+
+* {{tr|research}}一件{{tr|item}}的音效：{{sound||Research 1.wav}} {{sound||Research 2.wav}} {{sound||Research 3.wav}}
+* 填满一件{{tr|item}}的{{tr|research}}计数时的音效：{{sound||Research 0.wav}}
+
+所需{{tr|research}}{{tr|item}}的总数因{{tr|item}}类型而异：
+<div style="width:70%">
+{{collapse top|单击以按{{tr|item}}类型显示{{tr|research}}需求}}
+{| class="terraria"
+! {{tr|item}}种类 !! 所需数量
+|-
+| [[{{tr|Weapons}}]]、[[{{tr|tools}}]]、[[{{tr|armor}}]]、[[{{tr|accessories}}]]、[[{{tr|furniture}}]]、和[[永久性强化]] || 1
+|-
+| [[{{tr|Angler}}/{{tr|Quests}}|{{tr|Quest fish}}]]、[[{{tr|Tombstone}}]]、[[{{tr|Herb Bag}}]]、和[[{{tr|Can Of Worms}}]] || 2
+|-
+| [[{{tr|Treasure Bag}}]]、[[{{tr|summoning item}}|{{tr|Boss summoning item}}]]、[[{{tr|Dye}}]]、[[{{tr|Fishing}}#{{tr|Fish}}|{{tr|Fishing catches}}]]和[[{{tr|Gold Critters}}]] || 3
+|-
+| [[{{tr|Critters}}]]、[[{{tr|mechanisms}}]]、[[{{tr|fruits}}]]、罕见[[{{tr|crafting materials}}]]（如[[{{tr|Unicorn Horn}}]]）、{{tr|biome}}[[{{tr|crates}}]]、和[[{{tr|food}}]] || 5
+|-
+| [[{{tr|Crates}}]]、[[{{tr|Life Crystal}}]]、[[{{tr|Mana Crystal}}]]、和[[{{tr|Life Fruit}}]] || 10
+|-
+| [[{{tr|Gems}}]] || 15
+|-
+| [[{{tr|Potions}}]] || 20
+|-
+| [[{{tr|Bars}}|{{tr|Metal bars}}]]、[[{{tr|herbs}}]]、[[{{tr|seeds}}]]、和大部分[[{{tr|crafting materials}}]] || 25
+|-
+| [[{{tr|Recovery potions}}]] || 30
+|-
+| [[{{tr|Acorn}}]]、[[{{tr|Fallen Star}}]]、和[[梁柱]] || 50
+|-
+| [[{{tr|Ammunition items}}]]和[[{{tr|explosives (class)}}]] || 99
+|-
+| [[{{tr|Ores}}]]、[[{{tr|Blocks}}]]、[[{{tr|Torches}}]]、[[{{tr|Ropes}}]]、[[{{tr|Empty Bullet}}]]、和[[{{tr|coins}}]] || 100
+|-
+| [[{{tr|Platforms}}]]和[[{{tr|Extractinator}}|可提炼的{{tr|block}}]] || 200
+|-
+| [[{{tr|Background walls}}]] || 400
+|-
+| [[{{tr|Etherian Mana}}]]和所有[[{{tr|unobtainable items}}]] || {{na}} {{note|paren=y|无法被{{tr|research}}}}
+|}
+{{collapse bottom}}
+
+==== 完整列表 ====
+{{ajax|{{tr|Journey Mode}}/{{tr|research}}列表}}
+</div>
+
+=== [[File:Power Menu Time.png]] {{tr|Time}} ===
+{{tr|Time Menu}}中提供三个选项：
+
+* [[File:Power Menu Time Frozen.png|22px]] {{tr|time}}定格
+** [[{{tr|Fallen Star}}]]在{{tr|time}}定格期间不会坠落。
+* 将{{tr|time}}设置为四个预设之一：{{dotlist|inline=y|space=xl|[[File:Power Menu Time Dawn.png|24px]] {{tr|Dawn}}（{{time|04:30 AM}}）|[[File:Power Menu Time Noon.png|24px]] {{tr|Noon}}（{{time|12:00 PM}}）|[[File:Power Menu Time Dusk.png|24px]] {{tr|Dusk}}（{{time|07:30 PM}}）|[[File:Power Menu Time Midnight.png|24px]] {{tr|Midnight}}（{{time|12:00 AM}}）}}.
+** 在{{tr|day and night}}间交替可触发 [[{{tr|bosses}}]] 和[[{{tr|events}}]]的随机{{tr|spawn}}（若其条件已经达成），且会像已经过一天一样刷新[[{{tr|Fishing Quests}}|{{tr|fishing quest}}]]。
+** 通过重复地将{{tr|time}}前调或使用{{tr|time}}定格，可以无限期扩展部分[[{{tr|event}}]]。
+* [[File:Power Menu Time Speed Slider.png|22px]] 将{{tr|time}}速率设置为正常速率的 1× 至 24× 之间。
+
+=== [[File:Power Menu Weather.png]] {{tr|Weather}} ===
+{{tr|The Weather Menu}}为{{tr|player}}提供对当前{{tr|weather}}的完全控制权：
+
+* [[File:Power Menu Wind Control Slider.png|22px]] [[{{tr|wind}}]]控制{{tr|slider}}，用于设置{{tr|wind speed}}和{{tr|wind}}向。
+** [[File:Power Menu Wind Change.png|22px]] 禁止{{tr|wind speed}}/{{tr|wind}}向像在正常{{tr|game}}中那样随机改变。
+* [[File:Power Menu Rain Control Slider.png|22px]] [[{{tr|rain}}]]控制{{tr|slider}}，用于设置降雨量，范围为从{{tr|Clear Sky}}到{{tr|Monsoon}}。
+** [[File:Power Menu Rain Change.png|22px]] 禁止降雨量随正常{{tr|game}}过程而随机变化。
+
+=== [[File:Power Menu Personal Power Menu.png]] 个人能力{{tr|menu}} ===
+个人能力{{tr|menu}}包括与{{tr|player}}相关的三个选项：
+
+* [[File:Power Menu Godmode.png|22px]] {{tr|Godmode}}使{{tr|player}}免受所有{{tr|damage}}和[[{{tr|knockback}}]]，并获得无限[[{{tr|breath meter}}|呼吸]]和无限[[{{tr|mana}}]]。
+** [[{{tr|debuff}}]]仍然会被正常施加，但是{{tr|player}}不会受到任何{{tr|damage}}。
+** 严格来说[[{{tr|Mana}}]]并不是无限的，而是以比{{tr|player}}能够使用{{tr|Mana}}的{{tr|speed}}更快的{{tr|speed}}{{tr|regenerate}}，使得它看上去是无限的。
+* [[File:Power Menu Increased Placement Range.png|22px]] 增加{{tr|item}}拾取和{{tr|block}}{{tr|placement}}范围。此选项默认启用。
+* [[File:Power Menu Enemy Spawn Rate Slider.png|22px]] {{tr|Enemy Spawn Rate Slider}}：将[[{{tr|enemy}}]]和[[{{tr|Critters}}]]的[[{{tr|spawn rate}}]]设置为 0×（禁用{{tr|spawn}}）到正常速率的 10× 之间。当{{tr|spawn}}{{tr|slider}}设置为 0× 时，仍然可以{{tr|summon}}某些{{tr|enemies}}，例如 [[{{tr|Boss}}]]、[[{{tr|Old One's Army}}]]、和[[{{tr|statue}}]]中的{{tr|enemy}}；[[{{tr|tombstones}}]]被摧毁时仍然能导致[[{{tr|Ghost (enemy)}}|{{tr|Ghosts}}]]{{tr|spawn}}；{{tr|critters}}可从被摧毁的[[{{tr|plants}}]]和[[{{tr|Trees|link=y}}#{{tr|Shaking}}|被摇晃的{{tr|trees}}]]中{{tr|spawn}}；[[{{tr|Bee}}]]或[[{{tr|Antlion Larva}}]]仍会从[[{{tr|Bee Hive}}]]或[[{{tr|Antlion Eggs}}]]中{{tr|spawn}}。 
+
+=== [[File:Power Menu Infection Spread.png]] 感染{{tr|Spread}} ===
+* 此开关可以阻止[[{{tr|The Corruption}}]]、[[{{tr|The Crimson}}]]、和[[{{tr|The Hallow}}]]的[[{{tr|Biome spread}}|{{tr|spread}}]]。不过，它并不会将上述{{tr|biome}}恢复回初始的{{tr|biome}}。
+** 它也不能防止{{tr|player}}初次打败[[{{tr|Wall of Flesh}}]]时，{{tr|The Hallow}}和{{tr|The Corruption}}/{{tr|The Crimson}}斜向条带的{{tr|spawn}}。
+
+=== [[File:Power Menu Enemy Difficulty Slider.png]] {{tr|Enemy Difficulty Slider}} ===
+可以将{{tr|difficulty}}设置为 0.5× 到 3× 正常{{tr|difficulty}}的{{tr|slider}}。0.5× 为默认的{{tr|Journey Mode}}{{tr|difficulty}}，1× 为[[{{tr|Classic Mode}}]]，2× 为[[{{tr|Expert Mode}}]]，3× 为[[{{tr|Master Mode}}]]。移动{{tr|slider}}可启用在选定{{tr|difficulty}}下可获得的所有奖励，包括[[{{tr|Expert Mode}}#专家独有{{tr|item}}|{{tr|Expert Mode}}独有{{tr|item}}]]和[[{{tr|Master Mode}}#{{tr|Master Mode}}独有{{tr|item}}|{{tr|Master Mode}}独有{{tr|item}}]]。
+
+== 备注 ==
+* 在{{tr|Journey Mode}}中可以照常解锁所有[[{{tr|Achievement}}]]。
+* {{tr|sliders}}旁的{{tr|icon}}和文本均为可交互的按钮，允许{{tr|player}}将{{tr|slider}}定位到特定的点。
+<!-- 能力{{tr|menu}} 复制 -->
+* 复制{{tr|item}}时永远不会产生有[[{{tr|modifiers}}]]的{{tr|item}}。
+<!-- 能力{{tr|menu}} {{tr|research}} -->
+* 只会在一年中特定时期出现的{{tr|item}}（如[[{{tr|Goodie Bag}}]]）可以被{{tr|research}}。
+<!-- 能力{{tr|menu}} {{tr|time}} -->
+* 加快{{tr|time}}也会加速[[{{tr|Biome spread}}]]、[[{{tr|Plant}}]]的生长速率、和[[{{tr|Fallen Star}}]]的掉落频率。
+** 这不会影响某些{{tr|item}}，例如将[[{{tr|Marshmallow on a Stick}}]]烤成[[{{tr|Cooked Marshmallow}}]]所需的{{tr|time}}。
+* 定格{{tr|time}}可防止发生一些随机{{tr|event}}，例如[[{{tr|Slime Rain}}]]。
+** 即使{{tr|time}}定格，[[{{tr|Music Box}}]]仍会录制歌曲。
+<!-- 能力{{tr|menu}} 个人能力{{tr|menu}} -->
+* 若{{tr|world}}被第三方程序（如：[[{{tr|Map viewers}}|{{tr|TEdit}}]]）转换成另一{{tr|difficulty}}，部分会更改{{tr|world}}的{{tr|Journey Mode}}能力仍然会保留。 
+** {{tr|Rain and Wind}}更改：禁用了{{tr|wind}}况或{{tr|rain}}情变化的{{tr|world}}的{{tr|weather}}状态会永远定格在现有状态，允许{{tr|world}}拥有永久的{{tr|clear sky}}、[[{{tr|rain}}]]、[[{{tr|windy day}}]]、或[[{{tr|thunderstorm}}]]。
+** {{tr|Time}}改动，包括{{tr|time}}定格和{{tr|time}}加速。这可能会让{{tr|game}}的正常进度变得十分困难，因为有许多{{tr|events and bosses}} 是基于{{tr|time}}的。
+** {{tr|Biome Spread}}。这对于想要在正常{{tr|world}}游玩，但不想[[指南:维护世界的纯净度|维护纯净度]]的{{tr|player}}，以及要保留{{tr|time}}加速但不想让感染性{{tr|biomes}}大肆破坏{{tr|world}}时很有用。
+** {{tr|Difficulty}}和{{tr|spawn rate}}不会保留到正常{{tr|game}}中，但更改会被记住，并在{{tr|world}}被转换回{{tr|journey mode}}时保留。
+* 即使启用了{{tr|Godmode}}，每次使用需要的{{tr|mana}}大于{{tr|player}}当前总共有的{{tr|mana}}的{{tr|weapons}}仍然无法使用。例如，具有默认量的 20 {{tr|mana}}的{{tr|player}}不能使用[[{{tr|Nebula Arcanum}}]]。
+*若{{tr|enemy spawn rate}}被设为 0×，[[{{tr|Dungeon Guardian}}]]将不会{{tr|spawn}}。
+<!-- 能力{{tr|menu}} 敌怪{{tr|difficulty}}{{tr|slider}} -->
+* 更改{{tr|difficulties}}会导致{{tr|enemy}}和 {{tr|Boss}} 立即更改其 [[{{tr|AI}}]] 和掉落的{{tr|item}}。
+* 更改{{tr|difficulties}}不会影响现有{{tr|debuff}}的{{tr|duration}}。
+* 更改至[[{{tr|Expert Mode}}]]会激活由[[{{tr|Demon Heart}}]]启用的额外的[[{{tr|Accessories}}|{{tr|accessory}}]]栏；更改至[[{{tr|Master Mode}}]]会激活{{tr|Master Mode}}的额外{{tr|accessory slot}}（即在消耗{{tr|Demon Heart}}后的第 7 个栏位）。
+
+== 小贴士 ==
+* {{tr|enemy}}的属性取决于它{{tr|spawn}}时的{{tr|difficulty}}，而其掉落的{{tr|item}}取决于击败它时的{{tr|difficulty}}。这允许{{tr|player}}从{{tr|Journey Mode}}{{tr|difficulty}}的 {{tr|Boss}} 处获得[[{{tr|Expert Mode}}#专家独有{{tr|item}}|{{tr|Expert}}]]或[[{{tr|Master Mode}}#{{tr|Master}}独有{{tr|item}}|{{tr|Master Mode}}独有{{tr|item}}]]，只需要在召唤 {{tr|boss}} 后、击败 {{tr|boss}} 前更改{{tr|difficulty}}。
+* 启用{{tr|placement}}范围增加时，洞穴中的{{tr|player}}可以手持[[{{tr|torches}}]]并使用[[{{tr|smart cursor}}]]来以惊人的效率点亮附近的{{tr|caves}}。
+* 如果想要使[[{{tr|Traveling Merchant}}]]更快{{tr|spawn}}，{{tr|player}}可以在[[{{tr|bed}}]]上睡觉，并将{{tr|time}}{{tr|speed}}设为 24×。它们的加速是乘算的，这会让{{tr|time}}{{tr|speed}}变为 120×，使得每一天只有 12 秒。
+** 然而，在{{tr|Traveling Merchant}}{{tr|spawn}}时定格{{tr|time}}很重要，因为{{tr|time}}的流速极快，{{tr|Traveling Merchant}}可能会在{{tr|player}}前往他那里前就消失。
+* {{tr|The duplication menu}}可以用作{{tr|player}}的{{tr|inventory}}的拓展，几乎让{{tr|player}}无需担忧存储空间的问题。{{tr|player}}{{tr|inventory}}中的任何{{tr|item}}都可被{{tr|research}}，以腾出空间且不会浪费{{tr|item}}。如果{{tr|item}}已经被完全{{tr|research}}了，可以直接将其丢弃，在需要时进行复制即可。诸如{{tr|weapons and accessories}}之类的{{tr|item}}只需要一个即可完整{{tr|research}}，所以除非它拥有想要的[[{{tr|modifier}}]]，就可以通过{{tr|research}}将其“存储”起来以便随时使用。
+* [[{{tr|Coins}}]]只需要 100 个就能完整{{tr|research}}，无论其面值。这意味着 {{sc|1}} 即可变成无限的 {{pc}}：将其变为 {{cc|t=100}}，进行{{tr|research}}，复制 {{cc}} 并将其制作为 {{sc|t=100}}，重复步骤直至{{tr|player}}可{{tr|research}} {{pc|100}}。但由于{{tr|coins}}每次复制仅能复制出每叠 100 个，每一步需要拿出 100 叠{{tr|coins}}，因此通常来说直接复制{{tr|item}}并卖钱总体上更有效率。
+* 相比于直接{{tr|research}}部分{{tr|crafting materials}}，{{tr|research}}制作出的{{tr|items}}会更便宜，而制作出的{{tr|items}}可以在[[{{tr|Shimmer}}]]中{{tr|decraft}}。对于能制作成只需一个就能进行{{tr|research}}的{{tr|item}}的一类{{tr|item}}（如{{tr|furniture}}）这会很有用，例如：
+** 复制[[{{tr|Life Crystal}}]]需要{{tr|research}} 10 个，但解锁[[{{tr|Heart Lantern}}]]的复制仅需{{tr|research}} 1 个。
+** {{tr|Gold critters}}的{{tr|research}}需求量为 3，但[[{{tr|cages}}|{{tr|cage}}]]仅需{{tr|research}} 1 个。
+*** 这也适用于[[{{tr|Prismatic Lacewing}}]]和[[{{tr|Truffle Worm}}]]。
+** [[{{tr|Sand Blocks}}]]的{{tr|research}}需求量为 100，但 2 个{{tr|Sand Blocks}}可制作成一个[[{{tr|Glass}}]]，进而制作成仅需{{tr|research}} 1 个的[[{{tr|Mug}}]]。
+
+== 花絮 ==
+* {{tr|Journey Mode}}在《{{tr|Terraria}}》的部分{{tr|source code}}中被称为 {{code|Creative}}，这参考了 3D 沙盒{{tr|game}}《{{iwlink|mczh|我的世界}}》中的{{iwlink|mczh|创造模式}}。
+* {{tr|Journey Mode}}的描述性文字''“{{#explode:{{GameText|UI.WorldDescriptionCreative}}|（}}”''是 2002 年美国超级英雄电影{{维基百科|b=y|Spider-Man (2002 film)|Spider-Man|t=蜘蛛侠}}的一句台词。{{维基百科|With great power comes great responsibility#History|类似的话}}被使用至少可以追溯到 1793 年，其中可称是最著名的语句之一来自 1906 年的{{维基百科|Winston Churchill|t=温斯顿·丘吉尔}}所说：“Where there is great power there is great responsibility.”
+* {{tr|Quest Fish}}是仅有的需要 2 个{{tr|item}}才能{{tr|research}}的不可堆叠{{tr|item}}，而[[{{tr|Marshmallow on a Stick}}]]是仅有的需要 10 个{{tr|item}}才能{{tr|research}}的不可堆叠{{tr|item}}。
+* {{tr|Godmode}}的{{tr|icon}}参考了经典{{tr|game}}系列{{维基百科|b=y|Doom|t=毁灭战士}}，它有相似的[https://doom.fandom.com/wiki/Doom_Cheat_Codes {{tr|Godmode}}{{tr|icon}}]。
+* 能力{{tr|menu}}的切换按钮是一只戴安全帽的兔子，其名字是“建筑兔子本尼”。<ref>[https://forums.terraria.org/index.php?threads/with-great-power-comes-great-accessibility-introducing-terrarias-new-journey-mode.88233/ With Great Power Comes Great Accessibility - Introducing Terraria's New Journey Mode] {{small|{{date|2020|05|06}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将光标置于{{tr|crafting menu}}中的{{tr|item}}上时会显示它们完成{{tr|research}}所需的数量。这也适用于{{tr|Guide}}和{{tr|Goblin Tinkerer}}的界面栏位。
+** 按下 Shift 并点击{{tr|item}}将其放入{{tr|research slot}}时会自动{{tr|research}}它。
+** 当使用（{{tr|placement}}）范围增加功能时，也会增加{{tr|item}}拾取范围。
+** {{tr|Journey Mode}}{{tr|slider}}现在带有可交互的按键，可以将{{tr|slider}}定位到特定位置。}}
+{{history|Desktop 1.4.2|添加了可删除搜索栏中的文本的按钮。}}
+{{history|Desktop 1.4.1|
+** {{tr|Journey Mode}}{{tr|characters}}现在{{tr|spawn}}时带有[[{{tr|Grappling Hook}}]]。
+** 为{{tr|Duplication Menu}}添加了子分类。
+** 由于{{tr|Armed Zombie Statue}}和{{tr|Bone Skeleton Statues}}现在会在所有{{tr|world}}中{{tr|spawn}}，它们现在可以以正常方式{{tr|research}}，无需使用外部编辑器。
+** 修复了用{{tr|Journey Mode}}能力定格{{tr|time}}时{{tr|Traveling Merchant}}会{{tr|spawn}}的问题。}}
+{{history|Desktop 1.4.0.5|
+** 清理了{{tr|Duplication menu}}中[[{{tr|Christmas}}]]装饰的分组。
+** {{tr|Invasion}}警示信息应当不会在{{tr|time}}定格时刷屏。}}
+{{history|Desktop 1.4.0.4|修复了[[{{tr|Collector's Edition}}]]的[[{{tr|Carrot}}]]在{{tr|Journey Mode character}}上会覆盖[[{{tr|Magic Mirror}}]]的问题。}}
+{{history|Desktop 1.4.0.3|修复了在“{{tr|Journey Mode}}”中加速{{tr|time}}会产生一些不寻常的视觉效果的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Journey Mode}}

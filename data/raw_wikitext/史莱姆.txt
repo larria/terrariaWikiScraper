@@ -1,0 +1,442 @@
+{{legacy nav tab}}
+[[File:Terraria slimes.png|200px|thumb|right|[[{{tr|Forest}}]]中的[[{{tr|Green Slime}}]]（右）和[[{{tr|Blue Slime}}]]（左）。]]
+{{quotation|[[File:Emote Town Nurse.gif|link=]] [[{{tr|Nurse}}]]|{{gameText|LegacyDialog.47}}}}
+{{distinguish|{{tr|Town Slimes}}}}
+
+'''{{tr|Slimes}}'''是最常见的[[{{tr|enemy}}]]类型。它们几乎总会是[[{{tr|player}}]]在新世界中所遭遇的第一个{{tr|enemy}}。它们有多种大小和颜色，每种都有不同的{{tr|health, defense, and damage}}。{{tr|slimes}}通常遵循基本的[[{{tr|Slime AI}}]]：它们跳向玩家的方向，随后休息一小段时间。当{{tr|slime}}准备跳跃时，它会迅速上下摆动。{{tr|Slimes}}可以漂浮在[[{{tr|water}}]]上并且此时移动速度要快得多，但只有[[{{tr|Lava Slime}}]]可以漂浮在[[{{tr|lava}}]]上。
+
+在[[{{tr|surface}}]]之上或靠近{{tr|surface}}所生成的{{tr|Slimes}}通常是中立的，在[[{{tr|day}}]]不会追杀玩家，除非受到伤害。所有{{tr|slimes}}在{{tr|night}}会变为敌对，并且在[[{{tr|underground}}]]所生成的{{tr|Slimes}}总是敌对的。[[{{tr|Green Slime}}]]、[[{{tr|Blue Slime}}]]、[[{{tr|Red Slime}}]]、[[{{tr|Purple Slime}}]]和[[{{tr|Yellow Slime}}]]通常总是在{{tr|surface}}之上或靠近{{tr|surface}}之处生成，而[[{{tr|Mother Slime}}]]、[[{{tr|Baby Slime}}]]、和[[{{tr|Black Slime}}]]只出现在{{tr|underground}}。[[{{tr|Pinky}}]]可能出现在任何地方，但很稀有。和{{tr|Pinky}}类似，{{eil|Golden Slime}}在任何地方都会很罕见地出现，但仅限于在 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|world}}内。
+
+大多数类型的{{tr|slime}}掉落 1–2 个[[{{tr|gel}}]]，也有很小几率会掉落[[{{tr|Slime Staff}}]]，但有一些例外，记载于下表中。
+
+== 种类 ==
+{{#invoke:CargoQuery|main
+|q?tables=NPCs
+|q?fields= _pageName=page, npcid, nameraw, image, damage, life, defense, bannername, money
+|q?groupBy=npcid
+|q?where= ai="Slime AI" OR npcid IN (50, 121, 122, 594, 657, 660)
+|q?limit=1000
+|template=:{{BASEPAGENAME}}/row0
+}}{{options/set|item|maxsize=x100px}}{{npc infobox/options|view=custom|extargs=template/sortkey/image/nolink|cargobanner=n<!-- The Blue Slime variants from Halloween/Christmas have the identical Blue Slime Banner, which should not be stored to Cargo again. -->}}
+{{npc infobox/tablestart}}
+{| class="terraria sortable lined align-center"
+! 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! data-sort-type=number | {{tr|Coins}}
+! class="unsortable" | {{tr|Banner}}
+! [[#{{tr|Bonus drops}}|{{tr|Bonus drops}}]]
+! class="unsortable" | 额外信息
+|-
+| {{/row|id=-3|sortkey=a}}
+| align=left |
+* 主要在白天的[[{{tr|Forest}}|{{tr|Forest biome}}]]中生成。
+|-
+| {{/row|id=1|sortkey=b}}
+| align=left |
+* 主要在白天的[[{{tr|Forest}}|{{tr|Forest biome}}]]中生成。
+|-
+| {{/row|id=-8|sortkey=c}}
+| align=left |
+* 在[[{{tr|Underground}}]]层生成。
+|-
+| {{/row|id=-7|sortkey=d}}
+| align=left |
+* 主要在白天的[[{{tr|Forest}}|{{tr|Forest biome}}]]中生成。
+* 在世界[[{{tr|spawn point}}]] 400 格范围内不会生成（{{tr|Expert Mode}}除外）。
+|-
+| {{/row|id=-9|sortkey=e}}
+| align=left |
+* 在[[{{tr|Underground}}]]层生成。
+|-
+| {{/row|id=-6|sortkey=f}}
+| align=left |
+* 在[[{{tr|Cavern}}]]层生成。
+* 会造成[[{{tr|Darkness}}]][[{{tr|debuff}}]]。
+|-
+| {{/row|id=147|sortkey=r}}
+| align=left |
+* 在[[{{tr|Snow}}]]{{tr|biomes}}中生成。
+|-
+| {{/row|id=537|sortkey=r}}
+| align=left |
+* 在[[{{tr|Underground Desert}}]]中生成。
+|-
+| {{/row|id=-10|sortkey=j}}
+| align=left |
+* 在[[{{tr|Jungle}}]]中生成。
+|-
+| {{/row|id=184|sortkey=r|damage2=yes}}
+| align=left |
+* 在[[{{tr|Ice biome}}]]中生成。
+* 发射{{item|link=|Ice Spike}}{{tr|projectiles}}。
+* {{tr|the projectiles}}和{{tr|the slime}}自身都始终会造成[[{{tr|Chilled}}]][[{{tr|debuff}}]]，并且有几率造成[[{{tr|Frozen}}]]{{tr|debuff}}。
+|-
+| {{/row|id=204|sortkey=s|damage2=yes}}
+| align=left |
+* 在[[{{tr|Underground Jungle}}]]中生成。
+* 发射{{item|link=|Jungle Spike}}{{tr|projectiles}}，会造成[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。
+|-
+| {{/row|id=16|sortkey=g}}
+| align=left |
+* 在[[{{tr|Cavern}}]]层中生成，死亡时会生出三个{{tr|Baby Slimes}}。
+|-
+| {{/row|id=-5|sortkey=h}}
+| align=left |
+* 每当[[{{tr|Mother Slime}}]]被打败时就会一次生成三只。
+|-
+| {{/row|id=59|sortkey=k}}
+| align=left |
+* 在[[{{tr|Underworld}}]]中生成。
+* 可以跳的比绝大部分其他{{tr|slimes}}更高。
+* 免疫[[{{tr|lava}}]]，并且在{{eil|Expert mode}}中死亡时会留下一小点{{tr|lava}}。
+* 不掉落{{tr|Gel}}。
+* 散发出橙色的光。
+|-
+| {{/row|id=71|sortkey=k}}
+| align=left |
+* 在[[{{tr|Dungeon}}]]中生成。
+* 掉落它自己的[[{{tr|Golden Key}}]]，不要与{{tr|bonus drops}}相混淆。
+* 不掉落{{tr|Gel}}。
+|-
+| {{/row|id=-4|sortkey=i}}
+| align=left |
+* 最小的{{tr|slime}}，非常罕见地生成。
+* 掉落 25-50 个{{eil|Pink Gel}}。
+* 打败它会给予{{tr|Pretty in Pink}}[[{{tr|achievement}}]]。
+|-
+| {{/row|id=667|sortkey=i}}
+| align=left |
+* 仅在 [[{{tr|Celebrationmk10}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中生成。
+* 掉落大量[[{{tr|coins}}]]。
+* 不掉落{{tr|Gel}}。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{/row|id=50|sortkey=l|banner=King Slime Trophy}}
+| align=left |
+* {{tr|Slime}} [[{{tr|boss}}]]；罕见地生成在世界的外侧三分之一，或在[[{{tr|Slime Rain}}]]期间杀死 150 个{{tr|slimes}}后生成。也可以[[{{tr|Slime Crown}}|手工召唤]]。
+* 不遵循{{tr|Slime AI}}。
+* 被打败时掉落若干件[[{{tr|Ninja armor}}]]。
+* 不掉落{{tr|Gel}}。
+* 打败它会给予{{tr|Slippery Shinobi achievement}}。
+|-
+| {{/row|id=535|sortkey=l|expertonly=yes|damage2=yes}}
+| align=left |
+* [[{{tr|Expert Mode}}]]独有。
+* 在[[{{tr|Expert mode}}]]中由[[{{tr|King Slime}}]]召唤。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+* 发射{{item|link=|Slime Spike}}{{tr|projectiles}}。
+|-
+| {{/row|id=225|sortkey=s}}
+| align=left |
+* 在[[{{tr|rain}}|下雨]]时生成。
+* 掉落 2-5 个{{tr|Gel}}。
+* 比大多数{{tr|slimes}}要更大。
+* 少数的几种可以向下穿过{{tr|platforms}}的{{tr|slimes}}之一
+|-
+| {{/row|id=594|sortkey=s}}
+| align=left |
+* [[{{tr|Windy Day}}]]期间生成。
+* 总是带着一只绿、蓝或{{tr|Purple Slime}}。
+* 它带着的{{tr|slime}}可能会带有所有其他{{tr|slime}}都没有的掉落物。
+* {{tr|The balloon}}自身并不造成伤害。
+* 使用{{tr|Windy Balloon AI}}，除非{{tr|balloon}}爆了，这种情况下会变为{{tr|regular slime}}。
+|-
+| {{/row|id=676|sortkey=a}}
+| align=left |
+* 在大部分{{tr|slimes}}进入[[{{tr|Shimmer}}]]后产生。 
+* {{tr|Lava Slimes, Dungeon Slimes, King Slime, Spiked Slimes, Gastropods, Queen Slime, Crystal Slimes, Bouncy Slimes, Heavenly Slimes, and Gold Slimes}}不会变为{{tr|Shimmer Slime}}，而是会变得暂时隐形。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{npc infobox|template=/row1|auto=302|sortkey=r|nolink=y
+| image = Bunny Slime.png
+| type = Slime
+| environment = Surface+Day+Halloween
+| Gel|1–2|100%
+}}
+| align=right | {{no}}
+| align=left |
+* 在[[{{tr|Halloween}}]]期间在[[{{tr|Forest}}]]{{tr|biomes}}中生成。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{npc infobox|template=/row1|auto=333|sortkey=r|nolink=y
+| image = White Present Slime.png
+| type = Slime
+| environment = Surface+Day+Christmas
+| Gel|1–2|100%
+| Giant Bow|1|5%
+}}
+| align=right | {{no}}
+| align=left |
+* 在[[{{tr|Christmas}}]]期间在[[{{tr|Forest}}]]{{tr|biomes}}中生成。
+* 会掉落[[{{tr|Giant Bow}}]]。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{npc infobox|template=/row1|auto=334|sortkey=r|nolink=y
+| image = Yellow Present Slime.png
+| type = Slime
+| environment = Surface+Day+Christmas
+| Gel|1–2|100%
+| Giant Bow|1|5%
+}}
+| align=right | {{no}}
+| align=left |
+* 在{{tr|Christmas}}期间在[[{{tr|Forest}}]]{{tr|biomes}}中生成。
+* 会掉落{{tr|Giant Bow}}。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{npc infobox|template=/row1|auto=335|sortkey=r|nolink=y
+| image = Green Present Slime.png
+| type = Slime
+| environment = Surface+Day+Christmas
+| Gel|1–2|100%
+| Giant Bow|1|5%
+}}
+| align=right | {{no}}
+| align=left |
+* 在{{tr|Christmas}}期间在[[{{tr|Forest}}]]{{tr|biomes}}中生成。
+* 会掉落{{tr|Giant Bow}}。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{npc infobox|template=/row1|auto=336|sortkey=r|nolink=y
+| image = Red Present Slime.png
+| type = Slime
+| environment = Surface+Day+Christmas
+| Gel|1–2|100%
+| Giant Bow|1|5%
+}}
+| align=right | {{no}}
+| align=left |
+* 在{{tr|Christmas}}期间在[[{{tr|Forest}}]]{{tr|biomes}}中生成。
+* 会掉落{{tr|Giant Bow}}。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|}{{npc infobox/tableend}}{{npc infobox/options|reset}}
+
+=== 仅限{{tr|Hardmode}} ===
+{{npc infobox/tablestart}}
+{| class="terraria sortable lined align-center"
+! 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! data-sort-type=number | {{tr|Coins}}
+! class="unsortable" | {{tr|Banner}}
+! [[#{{tr|Bonus drops}}]]
+! class="unsortable" | 额外信息
+|-
+| {{/row|id=141|sortkey=p}}
+| align=left |
+* 在[[{{tr|Underground}}]]层和[[{{tr|Cavern}}]]层中生成。
+* 有几率造成[[{{tr|Poisoned}}]]{{tr|debuff}}。
+* 唯一一种可以看到脸的{{tr|Slime}}。
+|-
+| {{/row|id=81|sortkey=m}}
+| align=left |
+* 在[[{{tr|the Corruption}}]]中生成，在死亡时会生成 2-3 个[[{{tr|Slimeling}}]]。
+* 会造成[[{{tr|Darkness}}]][[{{tr|debuff}}]]。
+* 掉落 2-4 个{{tr|Gel}}。
+|-
+| {{/row|id=-1|sortkey=n}}
+| align=left |
+* 每当[[{{tr|Corrupt Slime}}]]被打败时就会生成 2-3 只。
+* 会造成[[{{tr|Darkness}}]][[{{tr|debuff}}]]。
+|-
+| {{/row|id=121|id2=-2|sortkey=o}}
+| align=left |
+* 在[[{{tr|the Corruption}}]]和[[{{tr|Underground Corruption}}]]中生成。
+* 第一形态中使用{{tr|Bat AI}}。
+* 耗光生命值时会失去翅膀，变为{{tr|regular Slime}}。
+|-
+| {{/row|id=183|sortkey=s}}
+| align=left |
+* 在[[{{tr|the Crimson}}]]中生成，大小半随机。
+* 会造成[[{{tr|Darkness}}]][[{{tr|debuff}}]]。
+* 掉落 2-4 个{{tr|Gel}}。
+|-
+| {{/row|id=122|sortkey=q|damage2=yes}}
+| align=left |
+* [[{{tr|night}}]]时在[[{{tr|the Hallow}}]]中生成。
+* 会从远处射出激光束。
+* 不遵循{{tr|Slime AI}}。
+* 掉落 5-10 个{{tr|Gel}}。
+|-
+| {{/row|id=138|sortkey=q}}
+| align=left |
+* 在[[{{tr|Underground Hallow}}]]中生成。
+* 会发光并有移动残影。
+|-
+| {{/row|id=244|sortkey=s|ext=gif}}
+| align=left |
+* 在下[[{{tr|rain}}]]期间于{{tr|Hallowed blocks}}上生成。
+* 掉落[[{{tr|Rainbow Brick}}]]。
+* 掉落 1-20 个{{tr|Gel}}。
+* 与其他{{tr|slimes}}相比体积非常大。
+|-
+| {{/row|id=657|sortkey=t1|banner=Queen Slime Trophy}}
+| align=left |
+* {{tr|Slime}} [[{{tr|boss}}]]；在[[{{tr|the Hallow}}]]中用[[{{tr|Gelatin Crystal}}]]召唤。
+* 不遵循{{tr|Slime AI}}。
+* 不掉落{{tr|Gel}}。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{/row|id=658|sortkey=t2}}
+| align=left |
+* 由[[{{tr|Queen Slime}}]]召唤。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{/row|id=659|sortkey=t2}}
+| align=left |
+* 由[[{{tr|Queen Slime}}]]召唤。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|-
+| {{/row|id=660|sortkey=t2}}
+| align=left |
+* 由[[{{tr|Queen Slime}}]]召唤。
+* {{tr|Gelatin World Tour achievement}}不需要它。
+|}{{npc infobox/tableend}}
+
+== {{tr|Bonus drops}} ==
+某些{{tr|slimes}}在自然生成时有 {{chance|1/20}} 几率携带额外{{tr|item}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_001_Slimes}}此{{tr|item}}可以在{{tr|slime}}的身体内看到，并会在它死亡时掉落。
+
+能带有额外掉落的{{tr|slime}}有：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.SlimeBodyItemDropRule.CanDrop|t=所有基础 [[{{tr|NPC ID}}]] 为 1 的 {{tr|NPCs}}。}}
+
+{{itemlist/options|class=terraria|width=12em}}<!--
+// list all NPCs whose "base" type is 1
+-->{{#af_template:itemlist|{{#af_map:{{npcinfo query|stat=type|value=1|sort=name}}|npc|{{item|{{{npc}}}|maxsize=40x40px}}}}}}<!--
+-->{{itemlist/options|reset}}
+
+[[{{tr|statues}}]]生成的{{tr|Slimes}}永远不会带有{{tr|bonus drop}}。
+
+可以携带的额外掉落包括：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_001_Slimes_GenerateItemInsideBody}}<!-- items and chances -->{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.SlimeBodyItemDropRule.TryDroppingItem / Terraria.GameContent.ItemDropRules.SlimeBodyItemDropRule.GetDropInfo}}<!-- quantities -->
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria sortable align-center"
+! colspan=2 | {{tr|Item}} !! 几率 !! 数量
+|-
+| {{item|Swiftness Potion}} || {{chance|1/28}} || 1
+|-
+| {{item|Ironskin Potion}} || {{chance|1/28}} || 1
+|-
+| {{item|Spelunker Potion}} || {{chance|1/28}} || 1
+|-
+| {{item|Mining Potion}} || {{chance|1/28}} || 1
+|-
+| {{item|Recall Potion}} || {{chance|3/56}} || 1
+|-
+| {{item|Wormhole Potion|bignote={{footnote|在{{tr|single player}}下，此{{tr|item}}会被[[{{tr|Recall Potion}}]]替代。}}}} || {{chance|3/56}} || 1
+|-
+| {{item|Torch}} || {{chance|1/16}} || 5–10
+|-
+| {{item|Bomb}} || {{chance|1/16}} || 2–6
+|-
+| {{item|Rope}} || {{chance|1/16}} || 20–45
+|-
+| {{item|Heart|bignote={{footnote|不计入所有{{tr|enemies}}的普通{{tr|Heart}}掉落率中。}}}} || {{chance|1/16}} || 1
+|-
+| {{item|Copper Ore|bignote={{footnote|name=ores|这些{{tr|ores}}中的任何一种都可以在{{tr|slime}}中生成，无论该种{{tr|ore}}是否生成在这个{{tr|world}}中。}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Tin Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Iron Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Lead Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Tungsten Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Silver Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Gold Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Platinum Ore|bignote={{footnote|name=ores}}}} || {{chance|1/32}} || 3–13
+|-
+| {{item|Copper Coin|bignote={{footnote|name=coins|不计入不同{{tr|slimes}}的正常{{tr|coins}}掉落中。}}}} || {{chance|1/12}} || 50–99
+|-
+| {{item|Silver Coin|bignote={{footnote|name=coins}}}} || {{chance|1/12}} || 20–99
+|-
+| {{item|Gold Coin|bignote={{footnote|name=coins}}}} || {{chance|1/12}} || 1–2
+|}{{options/reset|item}}
+
+其他{{tr|bonus drops}}：
+* 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，{{tr|slimes}}偶尔会携带[[{{tr|Fallen Star}}]]而非上方列出的其他{{tr|bonus drops}}。
+** 发生几率为 {{chance|1/3}}，会在其他{{tr|bonus drops}}之前判定。
+** 附着在[[{{tr|Windy Balloon}}]]上的{{tr|Slimes}}不会携带{{tr|Fallen Stars}}。
+* [[{{tr|Dungeon Slime}}]]总是会具有[[{{tr|Golden Key}}]]作为{{tr|bonus drop}}。
+
+== 备注 ==
+* 较小的{{tr|slimes}}有可能会穿过过墙壁和一格宽的洞。{{verify}}
+* {{eil|Royal Gel}}[[{{tr|accessory}}]]（在[[{{tr|Expert mode}}]]中掉落自[[{{tr|King Slime}}]]）会将所有{{tr|slimes}}变为被动（即，行为变为中立且不会造成伤害），例外的是{{tr|Hoppin' Jack}}、{{tr|King Slime}}、{{tr|Queen Slime}}及其独有{{tr|minions}}。
+
+== 成就 ==
+{{achievement|name=Gelatin World Tour}}
+{{achievement|name=Slippery Shinobi}}
+{{achievement|name=Pretty in Pink}}
+{{achievement|name=Just Desserts}}
+
+== 小贴士 ==
+* 由于大部分{{tr|Surface slimes}}在{{tr|day}}是被动的，可以通过站在{{tr|slime}}旁边并等待它从头上跳过的方式来避免与其战斗。
+* 由于{{tr|slimes}}的{{tr|hitbox}}较小，{{tr|Broadswords}}或其他弧线挥舞的{{tr|melee weapons}}通常比{{tr|projectile weapons}}更适合用来与其战斗。但也有例外，比如像[[{{tr|Flamelash}}]]或[[{{tr|Magic Missile}}]]这类可控制的{{tr|magic weapons}}。
+* 用[[{{tr|Slime Statue}}]]刷{{tr|Slimes}}可以产生无限量的[[{{tr|Gel}}]]。这是获得[[{{tr|Flamethrower}}]]和[[{{tr|Elf Melter}}]]的[[{{tr|ammunition}}]]较简单的方法。
+** 也可以用[[{{tr|Slime Statue}}]]来刷[[{{tr|Slime Staff}}]]。
+
+== 花絮 ==
+* 在[[{{tr|Nurse}}]]的对话中，她暗示{{tr|Slimes}}是由消化物质所构成的：“{{gameText|LegacyDialog.47}}”
+* 一般情况下玩家遭遇到的首个{{tr|enemy}}会是{{tr|Slimes}}，这个事实在{{tr|paintings}}《[[{{tr|First Encounter}}]]》中有所体现。
+* 根据[[{{tr|Collector's Edition}}]]的{{tr|the Blue Slime}}集换式卡牌，所有{{tr|slimes}}都来自于一个单一的源头，并且摧毁此源头会使{{tr|slimes}}从世界中消失。但是，游戏中并不存在这样的源头。
+* [[{{tr|Grasshopper}}]]使用和{{tr|slimes}}相同的 [[{{tr|AI}}]]，这使得它们白天向远离玩家的方向跳，而晚上朝着玩家跳。
+* 下列类型的{{tr|slimes}}在电子游戏{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|crossover}}的一部分出现：[[{{tr|Green Slime}}]]、[[{{tr|Blue Slime}}]]、[[{{tr|Red Slime}}]]、[[{{tr|Purple Slime}}]]、[[{{tr|Illuminant Slime}}]]、和[[{{tr|Rainbow Slime}}]]。
+{{bestiary
+|Bunny Slime
+|White Present Slime
+|White Present Slime-alias={{tr|Present Slimes}}
+}}
+
+== 另见 ==
+* {{item|Slime Mount}} – 可骑乘的{{tr|slime}}[[{{tr|mount}}]]。
+* {{item|Winged Slime Mount|image=Winged Slime Mount.gif}} – 有翅膀的可骑乘{{tr|slime}}[[{{tr|mount}}]]。
+* {{item|Baby Slime Minion|link={{tr|Slime Staff}}}} – 和{{tr|enemies}}战斗的{{tr|a slime}}[[{{tr|minion}}]]。
+* {{buff|Slime}} – {{tr|novelty}}{{tr|debuff}}。
+* [[{{tr|Solidifier}}]] – {{tr|slime}}主题[[{{tr|furniture}}]]的[[{{tr|crafting station}}]]。
+* {{eil|Slime Rain}} – 随机[[{{tr|event}}]]，{{tr|Green Slime, Blue Slime, and Purple Slimes}}会从天上如雨下，在击杀足够数量{{tr|slimes}}后会生成[[{{tr|King Slime}}]]。
+* {{item|Hoppin' Jack}} – [[{{tr|Halloween}}]]期间生成的一种类{{tr|slime}}{{tr|enemy}}。
+* {{item|Town Slimes}} - 一些{{tr|slime}}[[{{tr|town pet}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.2.3|{{tr|Golden Slime}}引入。}}
+{{history|Desktop 1.4.0.1|{{tr|Queen Slime}}、{{tr|Crystal Slime}}、{{tr|Bouncy Slime}}和{{tr|Heavenly Slime}}引入。}}
+{{history|Desktop 1.3.1|{{tr|Slimes}}现在不能穿过 1 格宽的间隙了。}}
+{{history|Desktop 1.3.0.1|
+** 在[[{{tr|Slime Rain}}]]{{tr|event}}中保证会生成{{tr|Slimes}}。
+** {{tr|King Slime}}现在能沿着[[{{tr|platform}}]]移动。
+** 现在可以在{{tr|Slimes}}颞部看到它们死亡时掉落的物品。
+** 一些{{tr|slimes}}现在死亡时会掉落它们独特的{{$|banner|s|enemy}}而非[[{{tr|Slime Banner}}]]。
+** {{tr|Sand Slime}}和{{tr|Spiked Slime}}引入。}}
+{{history|Desktop 1.2.2|引入了{{tr|Present Slime}}种类。}}
+{{history|Desktop 1.2.1|引入了{{tr|Bunny Slime}}。}}
+{{history|Desktop 1.2|引入了{{tr|Umbrella Slime}}、{{tr|Rainbow Slime}}、{{tr|Crimslime}}、{{tr|Spiked Jungle Slime}}、{{tr|Ice Slime}}、{{tr|Spiked Ice Slime}}、和{{tr|Slimed Zombie}}。}}
+{{history|Desktop 1.1|引入了{{tr|Corrupt Slime}}、{{tr|Slimeling}}、{{tr|Gastropod}}、{{tr|Slimer}}、{{tr|Toxic Sludge}}、和{{tr|Illuminant Slime}}。}}
+{{history|Desktop 1.0.6.1|当{{tr|Slimes}}不在进攻性模式时，它不再会追逐玩家进入水中。}}
+{{history|Desktop 1.0.6|引入了{{tr|Dungeon Slime}}。}}
+{{history|Desktop 1.0.5|
+** 引入了[[{{tr|Lava Slime}}]]。
+** 所有{{tr|slimes}}现在会漂浮在{{tr|liquids}}上（{{tr|water}}，以及对于{{tr|Lava Slime}}而言，[[{{tr|lava}}]]）并且在击中水面时不会发出溅水的声音。
+** 一次只会出现一个巨大{{tr|slime}}。}}
+{{history|Desktop 1.0.4|引入了{{tr|King Slime}}和{{tr|Jungle Slime}}。}}
+{{history|Desktop-Release|引入了所有有色{{tr|slimes}}种类、{{tr|Pinky}}、{{tr|Mother Slimes}}、和{{tr|Baby Slimes}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Slimes}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{all versions}}
+[[Category:{{tr|Slime NPCs}}| ]]
+
+{{language info|en=Slimes}}

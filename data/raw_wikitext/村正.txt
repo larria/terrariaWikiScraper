@@ -1,0 +1,80 @@
+{{item infobox | boxwidth = 22em
+| auto = 155
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 18 {{eicons|1.3.0.1|invert=y|small=y}}
+| knockback = @@@@ {{eicons|1.4.4|small=y}} /<br/>{{kb|1}} {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.3.0.1|small=y}} /<br/>{{ut|20}} {{eicons|1.3.0.1|invert=y|small=y}}
+| listcat = Broadswords
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} <br/> {{sc|54}} {{eicons|1.4.0.1|invert=y|small=y}}
+| idprojectile = 977
+| tags = loot / bag loot<!-- don't move this to type2, since it isn't a main aspect of the item -->
+}}
+{{drop infobox|style=clear:right}}
+[[File:Muramasa (demo).gif|frame|{{eicons|1.4.4}} {{tr|The Muramasa}}攻击[[{{tr|Skeleton}}]]。注意，蓝色的闪光可以造成额外{{tr|damage}}。]]
+[[File:Muramasa (demo) (old).gif|frame|{{eicons|1.4.4|invert=yes}} {{tr|The Muramasa}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Muramasa}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|swords}}|{{tr|sword}}]]，范围略大于[[{{tr|Phaseblade}}]]，并且具有更高的{{tr|attack speed}}。它也是[[{{tr|pre-Hardmode}}]]仅有的几把具有[[{{tr|autoswing}}]]能力的{{tr|swords}}之一。挥舞时，它会发出少量蓝色光线。在{{eversions|1.4.4}}中，{{tr|Muramasa}}在击中{{tr|enemy}}时还会生成一道蓝色的斩击{{tr|projectile}}，角度是随机的，会造成{{tr|weapon base damage}}的 {{percent|50%}}（{{#expr:floor({{iteminfo|Muramasa|damage}}/2)}} 点{{tr|damage}}）。{{source code ref|v=1.4.4.4|method=Terraria.Player.ApplyNPCOnHitEffects}}这些小斩击还具有 5 点[[{{tr|armor penetration}}]]。{{source code ref|v=1.4.4.4|method=Terraria.Projectile.Damage}}{{tr|The Muramasa}}有 {{chance|1/7}} 的几率在[[{{tr|Dungeon}}]]的[[{{tr|Gold Chest|link=y}}#{{tr|Dungeon}}|{{tr|Locked Gold Chests}}]]中找到，还有 {{chance|1/7}} 的几率从{{eil|Golden Lock Box|s}}中获得。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Muramasa|expectedrows=2}}
+
+== 小贴士 ==
+* 此{{tr|weapon}}在早期很有用，因为它的[[{{tr|autoswing}}]]能处理大群[[{{tr|enemies}}]]。
+* 它也许不是最强大的{{tr|weapons}}，但在跑动击杀[[{{tr|Slimes}}]]、击退{{tr|flying enemies}}、清除[[{{tr|Thorny Bush}}]]、割除{{tr|weeds}}和收割[[{{tr|Plants}}]]时会很高效。
+* {{tr|Muramasa}}的快速攻击速度可以通过装备[[{{tr|Feral Claws}}]]加上[[{{tr|Well Fed}}]]和[[{{tr|Tipsy}}]][[{{tr|buff}}]]来进一步提高，使其一直到[[{{tr|Hardmode}}]]都是非常有效的武器。{{eicons|1.4.4|invert=y}}还可以同时装备[[{{tr|Shadow armor}}]]，使其攻击速度更上一层楼。
+* 它的挥舞速度甚至超过了[[{{tr|Night's Edge}}]]，但如果没有{{tr|melee speed}}增强的支持，它相对较差的[[击退]]使其在对抗大多数{{tr|enemies}}时变成一个糟糕的选择。
+* 其长触及距离和{{tr|fast speed}}使其用于与诸如[[{{tr|Demon Eye}}]]、[[{{tr|Cave Bat}}]]、和[[{{tr|Demon}}]]这样的{{tr|flying enemies}}战斗非常高效。
+* 如果[[{{tr|Dungeon}}]]中的第一个生成的{{tr|chest}}不是{{tr|Wooden Chest}}，那么它必定会包含{{tr|Muramasa}}。<ref>参见[[Dungeon#Notes|{{tr|Dungeon}} § {{tr|Notes}}]]以获取详细信息。</ref>
+
+== 花絮 ==
+* {{tr|Muramasa}}是以 16 世纪日本的{{wikipedia|Muramasa|一位有名的同名铸剑师}}的名字命名的。在 18 世纪的传说和流行文化中，{{tr|Muramasa}}{{tr|swords}}经常被描绘成恶魔般的诅咒之刃，使那些挥舞它们的人产生嗜血欲望。
+* {{tr|Muramasa swords}}也出现在一些其他游戏中，例如{{wikipedia|Final Fantasy (video game)|《最终幻想》}}。
+* {{tr|The Muramasa}}是少数有[[{{tr|autoswing}}]]能力的[[{{tr|pre-Hardmode}}]]的[[{{tr|melee weapons}}]]之一。
+* 当《{{tr|Terraria}}》首次发布时，{{tr|Muramasa}}是游戏中最强的{{tr|weapon}}；它的高{{tr|attack speed}}搭配它的{{tr|knockback}}使{{tr|player}}面前的{{tr|enemy}}几乎不可能靠近。这持续到 [[{{tr|1.0.5}}]] (它的{{tr|damage}}和{{tr|knockback}}减少)或 [[{{tr|1.0.6}}]] ({{tr|equip}}多个[[{{tr|Feral Claws}}]]的能力被移除)。
+* 在 [[{{tr|1.4.1}}]] 的补丁备注中，{{tr|weapon}}部分后面有一句 “How ya doin' Muramasa?（{{tr|Muramasa}}，别来无恙？）”。<ref>{{forums thread|rounding-out-the-journey-terraria-1-4-1-is-here.98431|1.4.1 Summary and Changelog}}</ref>这致敬了油管主 Hectique 发布的同名视频。视频中，他批评了 [[#history Desktop 1.4.0.1|{{tr|1.4.0.1}}]] 中{{tr|muramasa}}的调整。<ref>[https://www.youtube.com/watch?v=V4F_zBKyMY0 How ya doin' Muramasa? - YouTube] {{small|{{date|2020|05|16}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了在击中{{tr|enemy}}后出现的{{tr|projectile}}。
+** {{tr|Damage}}由 26 降低至 24。
+** {{tr|Sprite updated}}。旧{{tr|sprite}}为：[[File:Muramasa (pre-1.4.4).png|link=]]。}}
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}由 21 提升至 26。
+** {{tr|Knockback}}由 2.5 提升至 3。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 19 提升至 21。
+** 出售价值由 {{sc|54}} 提升至 {{coin|1gc 75sc}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Muramasa (old).png|link=]]。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 18 提升至 19。
+** 击退由 1 提升至 2.5。
+** {{tr|Use time}}由 20 降低至 18。}}
+{{history|Desktop 1.2|{{tr|Sprite updated}}。旧{{tr|sprite}}为：[[File:Muramasa (pre-1.2).png|link=]]。}}
+{{history|Desktop 1.0.5|
+** 伤害由22 降低至 18。
+** 击退由 3 降低至 1。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Sprite updated}}为{{tr|Desktop}} 1.3.1 的外观。
+** 伤害由 18 提升至 19。
+** 击退由 1 提升至 2.5。
+** {{tr|Use time}}由 19 减少至 17。}}
+{{history|Console 1.02|{{tr|Sprite updated.}}}}
+{{history|Console-Release|引入，用的是{{tr|Desktop}} 1.05 的属性。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Sprite updated}}为{{tr|Desktop}} 1.2 的外观。}}
+{{history|Mobile-Release|引入，用的是{{tr|Desktop}} 1.0.5 的属性。}}
+{{history|3DS-Release|引入，用的是{{tr|Desktop}} 1.0.5 的属性和{{tr|Desktop}} 1.2 的外观。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Muramasa}}

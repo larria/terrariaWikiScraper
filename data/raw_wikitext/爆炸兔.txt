@@ -1,0 +1,58 @@
+{{infobox wrapper
+|{{item infobox
+| type = Ammunition
+| auto = 1338
+| idprojectile = 281
+}}
+|{{npc infobox
+| type = Critter
+| auto = 614
+| image = Explosive Bunny.gif
+| image2 =
+| idprojectile = 281
+}}
+}}
+
+'''{{tr|Explosive Bunny}}'''是种作为[[{{tr|Bunny Cannon}}]]{{tr|ammunition}}的物品。{{tr|craft}}它需要一只[[{{tr|Bunny}}]]，可以用任意[[{{tr|Bug Net}}]]捕捉。
+
+{{eicons|1.4.0.1}} 可以将其释放为[[{{tr|critter}}]]，会像其他{{tr|critters}}一样四处游荡。它在死亡时会爆炸，会造成伤害但不会摧毁{{tr|tiles}}。释放时它总是会放置在玩家脚下，而非像大多数其他{{tr|critters}}那样出现在{{tr|cursor}}处。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Explosive Bunny|expectedrows=1}}
+
+== 备注 ==
+* 不像{{tr|other critters}}，{{eil|Guide to Critter Companionship}}并不能让它免疫玩家造成的伤害。
+* 在{{tr|secret seed}} {{eil|For the worthy}} 中它会自然生成。另外，由玩家所释放或由[[{{tr|Bunny Statue}}]]生成的所有{{tr|Bunny}}（[[{{tr|Gold Bunny}}]]和[[{{tr|Gem Bunnies}}]]除外）都会变成{{tr|Explosive Bunny}}。但是，{{tr|Bunny Statue}}所生成的{{tr|Explosive Bunnies}}被击杀时不会造成伤害。
+* {{tr|Explosive Bunnies}}的爆炸能伤害 [[{{tr|NPCs}}]]。
+
+== 花絮 ==
+* 当从[[{{tr|Bunny Cannon}}]]发射时，{{tr|the Explosive Bunny}}有着{{eversions|Holy Hand Grenade|invert=y}}上所有武器中最高的基础伤害。它只输给{{eversions|Holy Hand Grenade|short=y}}独有的[[{{tr|Holy Hand Grenade}}]]，后者能造成 600 伤害。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 最大堆叠数由 999 提升至 9999。
+** 爆炸现在可穿透无限数量的目标。在此之前，它仅能对单一目标造成伤害。
+** 爆炸现在会对{{tr|enemy}}造成 10 {{tr|tick}}[[{{tr|Static immunity frame}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 外观更新。
+** 现在可以释放为{{tr|critter}}，并且死亡时会爆炸并造成伤害。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|不再由{{tr|Pirate NPC}} 出售，而是改为制作得到。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/ps4}}）}}
+{{history|Console 1.06|不再由{{tr|Pirate NPC}} 出售，而是改为制作得到。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.4.0.5.0|添加了{{tr|Desktop 1.4.0.1}} 的更改。}}
+{{history|Mobile 1.2.11212|不再由{{tr|Pirate NPC}} 出售，而是改为制作得到。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Explosive Bunny}}

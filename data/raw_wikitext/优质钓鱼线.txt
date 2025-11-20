@@ -1,0 +1,32 @@
+{{item infobox
+| auto = 2373
+| tags = fishing / quest rewards
+}}
+
+'''{{tr|High Test Fishing Line}}'''是一件[[{{tr|accessory}}]]，装备后能防止{{tr|fishing}}时钓鱼线断裂。它是作为完成 [[{{tr|Angler}}]] [[{{tr|NPC}}]] 的[[{{tr|Fishing}}]]{{tr|quest}}的奖励得到的，几率是 {{chance|1/40}}{{source code ref|v=1.4.0.5|name=angler|{{code|Terraria.Player.cs}} 中的 {{code|GetAnglerReward()}} 函数。注意，真实的基础掉落率实际上要略低于 {{chance|1/40}}，因为在此物品之前额外判定了许多其他奖励。真实的掉落率还会受其他因素的影响，相关的深入讨论参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]。}}，并与已经完成的任务数量和其他因素有关（细节参见[[{{tr|Angler|link=y}}#{{tr|Quest rewards}}|{{tr|Angler}}]]）。
+
+如果没装备{{tr|High Test Fishing Line}}，在任何会产生渔获的收杆中钓鱼线都有 {{chance|1/7}} 的几率断裂。
+
+在{{eversions|1.4.0.1}}中，如果在{{tr|inventory}}或任何一个[[{{tr|Portable Storages}}]]{{tr|item}}中已经有{{tr|High Test Fishing Line}}，{{tr|the Angler}}就不会将其作为奖励发给玩家。但是，如果玩家的{{tr|inventories}}中已经同时有了{{tr|High Test Fishing Line}}、[[{{tr|Angler Earring}}]]、''和''[[{{tr|Tackle Box}}]]（或者由它们所制作出来的{{tr|accessory}}之一，即{{eil|Angler Tackle Bag}}或{{eil|Lavaproof Tackle Bag}}），他就能再重复给你{{tr|High Test Fishing Line}}。<ref name="angler"/>
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=High Test Fishing Line|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=High Test Fishing Line|expectedrows=2}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|The Angler}}不再会给玩家重复的{{tr|informational accessories}}，除非玩家已经拥有所有此类{{tr|accessories}}。}}
+{{history|Desktop 1.3.1|用于制作[[{{tr|Angler Tackle Bag}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4.1|修正了一个导致装备{{tr|High Test Fishing Line}}时钓鱼线仍然会拉断的 Bug。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=High Test Fishing Line}}

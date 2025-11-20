@@ -1,0 +1,86 @@
+{{npc infobox
+| image = Mourning Wood.gif | boxwidth = 22.5em
+| auto = 325
+| idprojectile = 325,326,327,328
+| type = Boss
+| hardmode = yes
+| environment = Pumpkin Moon
+| damage2 = &#32;<!--
+	-->{{note|small=y|paren=y|{{tr|melee}}}} {{source code ref|v=1.4.0.5|name=mwai|method=Terraria.NPC.AI|t=有关部分在 <code>aiStyle == 57</code> 块内。}}<br/><!--
+	-->{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.FlamingWood}}、{{tr|health}} ≥ 25%}}<br/><!--
+	-->{{modes|150|300|450}} {{note|small=y|paren=y|{{gameText|ProjectileName.FlamingWood}}、{{tr|health}} < 25%}}<br/><!--
+	-->{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.GreekFire1}}、{{tr|health}} ≥ 25%}}<br/><!--
+	-->{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.GreekFire1}}、{{tr|health}} < 25%}}
+|:note:|在更高的波数中{{tr|item drop rate}}更高<ref name="pmdrops">{{tr|Pumpkin Moon}}{{tr|enemies}}在靠后的波数中掉率比靠前的波数中更大（除了固定掉率的[[{{tr|Spooky Wood}}]]，在{{eversions|1.4.4|invert=y}}中还要算上[[{{tr|Trophy}}]]，后者''仅''在且''必定''在第 15 波中掉落{{source code ref|v=1.4.0.5|noref=y|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_PumpkinMoon}}</ref>|
+| Spooky Wood|{{modes|15–30 {{eicons|1.4.4}} / 30–50 {{eicons|1.4.4|invert=y}}|25–40|30–50}}|100%
+|:group:start|可能会掉落以下 5 件{{tr|items}}之一<ref name="pmdrops"/>|-----
+| Spooky Hook|1|{{modes|2–20%|5–20%}}
+| Spooky Twig|1|{{modes|2–20%|5–20%}}
+| custom:Stake Launcher/Stake| {{item|Stake Launcher}}
+: + {{item|Stake}} (30–60)|{{modes|2–20%|5–20%}}
+| Cursed Sapling|1|{{modes|2–20%|5–20%}}
+| Necromantic Scroll|1|{{modes|2–20%|5–20%}}
+|:group:end|----|----
+| Mourning Wood Trophy // 在第 15 波及之后{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.Conditions.PumpkinMoonDropGateForTrophies}}|1|{{modes|25–50% {{eicons|1.4.4}}<br/>100% {{eicons|1.4.4|invert=y}}|27.77–67.77%}}
+| Witch's Broom|1|{{expert|5–20%}} #expert
+| Hexxed Branch|1|{{master|6.25–25%}} @master
+| Mourning Wood Relic|1|{{master|25–100%}} @master
+| imageother = Map Icon Mourning Wood.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+
+'''{{tr|Mourning Wood}}'''是个[[{{tr|Hardmode}}]]的小 [[{{tr|Boss}}]]，在[[{{tr|Pumpkin Moon}}]][[{{tr|Event}}]]中生成。此 {{tr|boss}} 是活树的形态，面部类似于杰克南瓜灯。击杀{{tr|the Mourning Wood}}会给{{tr|Pumpkin Moon event}}加上 75 / {{expert|150}} / {{master|187.5}} 点。它是[[{{tr|Everscream}}]]的{{tr|Pumpkin moon}}等价物，{{tr|Everscream}}的行为方式于{{tr|Mourning Wood}}几乎相同。
+
+== 行为 ==
+{{tr|Mourning Wood}}会在两种攻击方式之间交替切换：
+* 朝玩家发射一排“{{gameText|ProjectileName.FlamingWood}}”（烈焰{{tr|spikes}}）。这些会穿透[[{{tr|blocks}}]]。
+* 发射一股“{{gameText|ProjectileName.GreekFire1}}”（闪光的火焰）。这些不会穿透{{tr|blocks}}。它们受重力影响，并会停留在地面上一会儿，对接触到它们的玩家造成伤害。
+
+== 备注 ==
+* {{tr|Mourning Wood}}的{{tr|items}}掉落率随着其所在的波数线性增加（第 4 波中的掉落率最低，第 15 波最高）。在第 15 波时，它还会掉落[[{{tr|trophy}}]]同时掉落其他战利品。
+* 若{{tr|Mourning Wood}}一开始生成在{{tr|blocks}}中，它会穿越{{tr|block}}，飘向玩家，直到到达开放区域。这和[[{{tr|Wraith}}]]的行为类似。否则它们会在地表行走且无法跳跃。
+* 在{{mobile version}}中，当{{tr|Mourning Wood}}在屏幕上时，它们不会消失或逃离。
+* 它们杀掉所有玩家后也不会消失（但在{{3DS version}}中会）。
+* [[{{tr|Stake}}]]的掉落率在{{3DS version}}中有所降低。
+* {{tr|Mourning Wood}}距离死亡越近移动得就越快，这种特性一些{{tr|other enemies}}也有。
+
+== 小贴士 ==
+* 当{{tr|Mourning Wood}}停止行走时要小心。这意味着它要开始进行两种远程攻击之一。
+* 在和{{tr|Mourning Wood}}战斗时不建议进入小房间，因为它的“{{gameText|ProjectileName.FlamingWood}}”攻击可以穿墙。
+* {{tr|Mourning Wood}}的“{{gameText|ProjectileName.GreekFire1}}”攻击不能穿透[[{{tr|water}}]]，因此让{{tr|Mourning Wood}}淹没至少一半是一种更容易打败它的方法。注意“{{gameText|ProjectileName.FlamingWood}}”攻击会穿透水。
+* 通过将[[{{tr|North Pole}}]]瞄准{{tr|Mourning Wood}}上方可以相对容易、地打败{{tr|Mourning Wood}}，它会被若干个雪花{{tr|projectiles}}所击中。
+
+== 花絮 ==
+* {{wikipedia|Mourning}}{{note|small=y|paren=y|意为哀悼，{{tr|Mourning Wood}}的英文名是 Mourning Wood}}是对某人死亡的悲伤之意，与[[{{tr|Pumpkin Moon}}]]的{{tr|Halloween}}主题相吻合。
+* 其（英文）名字也双关了“{{维基百科|morning wood}}”，这是个俚语，指的是在快速眼动睡眠（REM）中的夜间勃起。在游戏中还有类似的影射双关，如[[{{tr|Golden Shower}}]]和[[{{tr|Master Bait}}]]{{tr|items}}。<!-- This is an admin-approved trivia note. Please see the Discussion page.-->
+* 现实世界中的{{维基百科|Greek fire|t=希腊火}}指的是{{维基百科|Byzantine Empire|拜占庭帝国}}在海战中使用的一种燃烧武器。一些历史学家认为，这种武器遇水即燃，这与其在游戏中的特性不符。
+* 根据[[{{tr|Splinterling}}]]的{{eil|Bestiary}}条目，{{tr|Mourning Wood}}通过从身上折下枝条并插入土壤中进行繁殖。插在土中的枝条最终会成长为{{tr|Splinterling}}。
+* {{tr|Mourning Wood}}是唯一一个会掉落{{tr|Expert Mode}}独有物品（[[{{tr|Witch's Broom}}]]）的事件小 Boss。
+** 此外，它是唯一可以同时掉落两个{{tr|mount}}{{tr|summoning items}}（{{tr|Witch's Broom}}和[[{{tr|Hexxed Branch}}]]）的{{tr|enemy}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 生命值由 12000 提升至 14000。
+** {{tr|Defense}}由 28 提升至 34。
+** 现在占用更多{{tr|enemy slots}}，以使其与{{tr|Frost Moon}}的 {{tr|bosses}} 更相似，这极大地减少了能同时生成的数量。
+** 减少了{{tr|Spooky Wood}}的基础掉落数量。但是，由于{{tr|Expert}}/{{tr|Master}}中分数的获取变快了，它们现在在{{tr|Expert and Master}}中具有更高的掉落数量。}}
+** {{tr|Master Mode}}中每次击杀时，给予的{{tr|Pumpkin Moons}}波次点数从 150 增加至 187.5。
+{{history|Desktop 1.4.0.1|
+** {{tr|Witch's Broom}}加入{{tr|Expert Mode}}的掉落列表。
+** 现在有[[{{tr|Master Mode}}]]掉落物：它死亡时总是会掉落{{tr|Mourning Wood}}[[{{tr|Relic}}]]，另外还有 25% 几率掉落[[{{tr|Hexxed Branch}}]][[{{tr|mount}}]]。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Pumpkin Moon Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Mourning Wood}}

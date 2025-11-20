@@ -1,0 +1,46 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| name = Jungle Walls (natural)
+| type = Wall
+| imagealt = <p></p>[[File:Lichen Stone Wall.png]] [[File:Leafy Jungle Wall.png]]  [[File:Ivy Stone Wall.png]] [[File:Jungle Vine Wall.png]]<hr/><p>[[File:Jungle Wall 1 (placed).png]] [[File:Jungle Wall 2 (placed).png]]<p>[[File:Jungle Wall 3 (placed).png]] [[File:Jungle Wall 4 (placed).png]]
+| auto = 4529
+| id = 4529-4532
+| idwall = 204-207 (天然) / 292-295 (制作)
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 4529| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4530| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4531| type = Wall}}<!--
+-->{{item infobox | view = void | auto = 4532| type = Wall}}
+
+{{for|购买或玩家放置的版本|{{tr|Jungle Wall}}}}
+
+'''{{tr|Jungle Walls}}'''是自然生成的[[{{tr|background walls}}]]，可以在[[{{tr|Underground Jungle}}]]的洞穴中找到。这些自然生成的墙可以用[[{{tr|Hammers}}]]破坏，但不会掉落任何东西。这些墙既不能阻止[[{{tr|enemies}}]]生成，也不能用于合格的房屋。
+
+在{{eversions|1.4.0.1}}上，这些墙可以由[[{{tr|Grass Seeds}}]]或[[{{tr|Jungle Grass Seeds}}]]制作，可以像其他[[{{tr|Background walls}}#{{tr|Crafted walls}}|{{tr|craftable walls}}]]一样使用。
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|link=no|result=Lichen Stone Wall/Leafy Jungle Wall/Ivy Stone Wall/Jungle Vine Wall|expectedrows=4}}
+
+=== {{tr|Used in}} ===
+{{recipes|ingredient=Lichen Stone Wall/Leafy Jungle Wall/Ivy Stone Wall/Jungle Vine Wall|expectedrows=4}}
+
+== {{tr|Notes}} ==
+* 当用[[{{tr|Dark Blue Solution}}]]喷洒时，{{tr|Jungle Walls (natural)}}会变成[[{{tr|Mushroom Wall (natural)}}]]
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|为所有的天然丛林墙添加配方。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon/xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon/ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|添加制造配方。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Jungle Walls (natural)}}

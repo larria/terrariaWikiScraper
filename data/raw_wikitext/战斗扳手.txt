@@ -1,0 +1,46 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 4818
+| listcat = Boomerangs
+| tags = drop
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Combat Wrench}}'''是一个[[{{tr|pre-Hardmode}}]]、[[{{tr|Skeletron}}]]后的[[{{tr|boomerang}}]]，有 {{chance|1/8}} 几率掉落自[[{{tr|Mechanic}}]]。它在返回前可穿透多个目标。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|The Combat Wrench}}击中时造成 7 {{tr|ticks}}{{tick}}的[[{{tr|global immunity frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{tr|Combat Wrench}}会先飞行 {{duration|15 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 17.9 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 和大部分会在击中{{tr|enemies}}后立即转向的其他{{tr|boomerangs}}不同，{{tr|Combat Wrench}}需要先开始减速。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Combat Wrench}}返回玩家时的最高速度为 {{mph|18 pixels}}，在消失前最多可存在 30 秒。如果它距离玩家超过 187.5 格，它也会消失。
+* {{transclude|{{tr|NPCs}}/掉落备注}}
+* 手持{{tr|Combat Wrench}}时，它会出现在玩家的背上，类似于{{tr|Mechanic}}背着的{{tr|wrench}}。
+* {{tr|The Mechanic}}使用{{tr|Combat Wrench}}来攻击{{tr|enemies}}。
+
+[[File:Combat Wrench (demo).gif|frame|right|使用{{tr|Combat Wrench}}攻击[[{{tr|Target Dummies}}]]。注意{{tr|Combat Wrench}}会在击中{{tr|blocks}}时立即返回。]]<!-- causes the {{transclude}} box to be too far down if placed before it -->
+
+== 小贴士 ==
+* {{tr|The Combat Wrench}}可以多次击中同一目标，使得它很适合用于[[{{tr|pre-Hardmode}}]]的 {{tr|boss}} 战。不过，其较短范围使得它不适合用于攻击空中的、快速的{{tr|enemies}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Combat Wrench}}

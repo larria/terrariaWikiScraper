@@ -1,0 +1,90 @@
+[[{{tr|Caster AI}}]]是{{tr|Caster}}[[{{tr|enemies}}]]拥有的 [[{{tr|AI}}]]。{{tr|Casters}}只能通过传送来移动，会发射慢速移动的、能够穿透[[{{tr|Block}}]]的{{tr|projectiles}}。
+
+== {{tr|Caster enemies}} ==
+{|class="terraria"
+! {{tr|Enemy}}
+! {{tr|Projectile}}
+! {{tr|Biome}}
+|-
+| {{item|Dark Caster|size=20px}}
+| {{item|Water Sphere}}
+| [[{{tr|Dungeon}}]]
+|-
+| {{item|Diabolist|size=40px}}
+| {{tr|Inferno}}
+| [[{{tr|Dungeon}}]]
+|-
+| {{item|Necromancer|size=40px}}
+| {{tr|Shadow Beam}}
+| [[{{tr|Dungeon}}]]
+|-
+| {{item|Ragged Caster|size=40px}}
+| {{tr|Lost Soul}}
+| [[{{tr|Dungeon}}]]
+|-
+| {{item|Fire Imp|size=25px}}
+| {{item|Burning Sphere}}
+| [[{{tr|Underworld}}]]
+|-
+| {{item|Goblin Sorcerer|size=20px}}
+| {{item|Chaos Ball}}
+| [[{{tr|Goblin Invasion}}]]
+|-
+| {{item|Tim|size=20px}}
+| {{item|Chaos Ball}}
+| [[{{tr|Cavern}}]]
+|-
+| {{item|Rune Wizard|size=20px}}
+| {{item|Rune Blast|image=Ice Bolt.png|link=}}
+| [[{{tr|Cavern}}]]
+|-
+| {{item|Desert Spirit|size=20px|small=y}}
+| {{item|Desert Spirit's Curse|image=Spirit Flame (projectile).gif|link=}}
+| [[{{tr|Underground Desert}}|{{tr|Corrupted}}/{{tr|Crimson Underground Desert}}]]
+|}
+
+== 行为 ==
+{{tr|Casters}}总是持续执行以下操作：
+
+# 检查要传送到的位置，该位置需要满足以下条件：
+#* 距玩家 20 格以内，但距离至少 4 格
+#* 包含一个至少有 4 格高、3 格宽的无实心块的空间
+#* 不含{{tr|lava}}
+# 传送至随机的有效位置（如果存在的话）
+# 连续向玩家发射 3 枚 {{tr|projectiles}}
+# 攻击完成之后暂停大约 3 秒
+# 传送到屏幕中不同的位置，循环上述操作
+
+* {{tr|Dungeon}}中的{{tr|Casters}}只能传送到包含自然放置的[[{{tr|Dungeon Brick Wall}}]]的任何变体的空间，这有效地阻止它们传送到地牢之外的任何地方。
+* 如果射击时受到伤害，{{tr|Casters}}将停止射击并立即暂停 3 秒钟，然后再次进行传送。
+* 如果在 3 秒钟的暂停过程中受到攻击，倒计时将重置为 3 秒，然后进行传送。若反复受到伤害将持续使计时器不断重置，这样可以阻止{{tr|Casters}}移动或射击。
+** {{tr|Necromancers}}和{{tr|Diabolists}}受到伤害后会立即传送，因此使用低伤害的{{tr|weapons}}击败这些{{tr|enemies}}可能很困难。
+** {{tr|Ragged Casters}}在被击中后不会立即传送，但是在传送和射击之间没有延迟。
+* {{tr|Casters}}永远不会走和跳。他们唯一的移动方式是传送（除了受攻击时造成的[[{{tr|Knockback}}]]）。
+* {{tr|Casters}}的{{tr|projectiles}}可以穿越所有{{tr|types}}的{{tr|block}}。除{{tr|Necromancers, Diabolists, and Ragged Casters}}外，其他{{tr|Casters}}发射的{{tr|projectiles}}都可以用挥舞任何[[{{tr|weapon}}]]或[[{{tr|tool}}]]的方式摧毁。
+
+== 小贴士 ==
+使用按住攻击按钮连续不断地攻击的快速武器，可以有效防御{{tr|Casters}}的{{tr|projectiles}}。像[[{{tr|Muramasa}}]]这样的武器效果会非常好（[[{{tr|pickaxes}}]]、[[{{tr|hammers}}]]、或者[[{{tr|axes}}]]也能很好地起作，因为挥舞它们不需要反复点击）。[[{{tr|Inferno Potion}}]]也会阻挡它们的{{tr|projectiles}}。
+
+[[{{tr|Death Sickle}}]]、[[{{tr|Mushroom Spear}}]]、[[{{tr|Chlorophyte Saber}}]]、{{eil|Crystal Vile Shard}}或[[{{tr|Nettle Burst}}]]对于摧毁{{tr|projectiles}}和攻击{{tr|Casters}}来说都很有效，因为它们作为{{tr|weapons}}来说相当强力，并且能够穿墙。它们能够非常早地摧毁这些{{tr|projectiles}}，即使当{{tr|projectiles}}穿墙射来时也是如此。它们穿墙的能力也使得它们能够很好地对付{{tr|Casters}}。
+
+{{tr|Casters}}发射 3 枚{{tr|projectile}}后，在传送前会间隔 3 秒钟，这也是攻击的理想时间。开始攻击后，就不要停止攻击太长时间，以防止它们传送走。持续攻击可以防止{{tr|Casters}}攻击或者传送走。
+
+有时，当它们离得太远或者位置难以到达时，最好先防御住它们的攻击，等到它们传送到攻击范围内时再攻击。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 玩家身边的阻止它们直接传送到玩家身上的保护半径大大增加
+** 游戏现在会在玩家移动时将速度和位置一并考虑，并预测玩家移动的意图，以此防止这些{{tr|enemies}}生成在玩家移动的路径上时完全来不及反应。然而这套系统并不绝对，并且仅给予一些额外的距离，所以如果玩家不改变自己的路径或正在高速移动，就仍然有可能撞上一个刚传送的{{tr|enemies}}。}}
+{{history|Desktop 1.4.0.5|修正了一个与{{tr|Caster AI enemies}}相关的 {{tr|NPC}} 平滑处理方面的问题。}}
+{{history|Desktop 1.0.5|在三连发和后继的传送中间添加了一个较长的延迟。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+[[Category:法师 AI NPC| ]]
+
+{{Casters}}
+
+{{language info|en=Caster AI}}

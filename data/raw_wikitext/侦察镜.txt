@@ -1,0 +1,43 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4005
+| tags = hardmode
+}}
+
+'''{{tr|Recon Scope}}'''是一件[[{{tr|hardmode}}]][[{{tr|accessory}}]]，组合了[[{{tr|Sniper Scope}}]]和[[{{tr|Putrid Scent}}]]的减少[[{{tr|aggro}}]]的效果。就像大多数结合{{tr|Putrid Scent}}的{{tr|accessories}}一样，{{tr|Recon Scope}}不会提供{{tr|Putrid Scent}}的{{tr|damage}}和暴击加成。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Recon Scope|expectedrows=1}}
+
+=== 制作树 ===
+{{/Crafting tree}}
+
+== 备注 ==
+* {{tr|Recon Scope}}的{{tr|zoom}}功能仅对{{tr|guns}}中使用[[{{tr|Bullets}}]]、[[{{tr|Candy Corn}}]]、[[{{tr|Gel}}]]或[[{{tr|Stake}}]]作为{{tr|ammo}}的有效。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional}}它不能与其他{{tr|gun}}配合使用，如[[{{tr|Dart Rifle}}]]（使用[[{{tr|Darts}}]]），也不能和其他名字里面有“枪”的{{tr|weapons}}配合使用，如[[{{tr|Piranha Gun}}]]或[[{{tr|Rainbow Gun}}]]（均不使用{{tr|ammo}})。
+** 因此，{{tr|Sniper Scope}}确实可以和[[{{tr|Candy Corn Rifle}}]]、[[{{tr|Flamethrower}}]]、[[{{tr|Elf Melter}}]]和[[{{tr|Stake Launcher}}]]相搭配。
+** {{tr|critical strike and damage bonuses}}仍适用于所有{{tr|ranged weapons}}。
+* 其{{tr|zoom}}效果和[[{{tr|the Binoculars}}]]或[[{{tr|the Sniper Rifle}}]]的相同，但{{tr|the Recon Scope}}可以和任意{{tr|gun}}同时使用。
+** {{tr|Recon Scope}}的{{tr|zoom}}可与{{tr|Sniper Rifle}}叠加。{{source code ref|v=1.4.4.9|method=Terraria.Main.DoDraw_UpdateCameraPosition}}
+* {{tr|bonus damage and critical strike chance}}可与来自[[{{tr|Sniper Scope}}]]的相叠加，总计获得 20% 的{{tr|ranged damage}}和 20% {{tr|critical strike chance}}奖励。
+
+== 花絮 ==
+* 工具提示参考了知名游戏{{wikipedia|Counter-Strike|《反恐精英（Counter-Strike）》}}里的语音指令。
+* 奇怪的是，{{tr|Recon Scope}}的两个原料{{tr|rarity}}均比{{tr|Recon Scope}}还要高。虽然其{{tr|rarity}}为{{iteminfo|Recon Scope|rare}}，但{{tr|Putrid Scent}}为{{iteminfo|Putrid Scent|rare}}，{{tr|the Sniper Scope}}则为{{iteminfo|Sniper Scope|rare}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在适用于[[{{tr|Clentaminator}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Recon Scope}}

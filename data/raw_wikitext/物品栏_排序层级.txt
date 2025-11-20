@@ -1,0 +1,93 @@
+<div class="ajaxHide">
+{{main|{{tr|Inventory}}#排序}}
+以下为{{tr|inventory}}或{{tr|chest}}排序时所使用的分类表。
+</div>
+{| class="terraria lined"
+! 层级
+! 条件
+! 顺序
+! 备注
+|-
+| {{tr|Weapons}} - {{tr|Melee}} || 没有{{tr|pickaxe power}}、{{tr|axe power}}、或{{tr|hammer power}}的[[{{tr|Melee weapons}}]] || 基础[[{{tr|rarity}}]]（由高到低），然后基础伤害（由高到低） || 顺序不定。<ref name="weaponorder"/>
+|-
+| {{tr|Weapons}} - {{tr|Ranged}} || [[{{tr|Ranged weapons}}]]（[[{{tr|consumable ranged weapons}}]]、{{tr|ammo}}、和[[{{tr|Coin Gun}}]]除外） || 基础{{tr|rarity}}（由高到低），然后基础伤害（由高到低）|| 顺序不定。<ref name="weaponorder"/>
+|-
+| {{tr|Weapons}} - {{tr|Magic}} || [[{{tr|Magic weapons}}]] || 基础{{tr|rarity}}（由高到低），然后基础伤害（由高到低）|| 顺序不定。<ref name="weaponorder"/>
+|-
+| {{tr|Weapons}} - {{tr|Summon}} || [[{{tr|Summon weapons}}]]和[[{{tr|whips}}]] || 基础{{tr|rarity}}（由高到低），然后基础伤害（由高到低）|| 顺序不定。<ref name="weaponorder"/>
+|-
+| {{tr|Weapons}} - 各种 || 其他具有{{tr|damage}}属性数值的非{{tr|ammo}}{{tr|items}} || 基础{{tr|rarity}}（由高到低），然后基础伤害（由高到低） || 包括[[{{tr|Flare Gun}}]]、消耗性{{tr|ranged weapons}}、[[{{tr|Grenade}}]]、和[[{{tr|Thrown Water}}]]。
+|-
+| {{tr|Weapons}} - {{tr|Ammo}} || 具有{{tr|damage}}属性数值的[[{{tr|Ammo}}]] || 基础{{tr|rarity}}（由高到低），然后基础伤害（由高到低） || 
+|-
+| {{tr|Tools}} - {{tr|Picksaws}} || 同时具有[[{{tr|pickaxe}}|{{tr|pickaxe power}}]]和[[{{tr|axe}}|{{tr|axe power}}]]的{{tr|Tools}} || [[{{tr|Pickaxe power}}]]（由高到低）||
+|-
+| {{tr|Tools}} - {{tr|Hamaxes}} || 同时具有{{tr|axe power}}和[[{{tr|hammer}}|{{tr|hammer power}}]]的{{tr|Tools}} || {{tr|Axe power}}（由高到低）||
+|-
+| {{tr|Tools}} - {{tr|Pickaxe}} || 具有{{tr|pickaxe power}}的{{tr|Tools}} || {{tr|Pickaxe power}}（由高到低） ||
+|-
+| {{tr|Tools}} - {{tr|Axes}} || 具有{{tr|pickaxe power}}的{{tr|Tools}} || {{tr|Axe power}}（由高到低） || 由于使用了错误的条件（{{tr|pickaxe power}}而非{{tr|axe power}}），此层级不匹配任何物品。
+|-
+| {{tr|Tools}} - {{tr|Hammers}} || 具有{{tr|hammer power}}的{{tr|Tools}} || {{tr|hammer power}}（由高到低） ||
+|-
+| {{tr|Tools}} - 地形 || colspan="3" | [[{{tr|Thrown Powder}}]]、[[{{tr|solutions}}]]、[[{{tr|Clentaminator}}]]、[[{{tr|Terraformer}}]]
+|-
+| {{tr|Weapons}} - 其他{{tr|Ammo}} || 没有{{tr|damage}}属性数值的{{tr|Ammo}} || {{tr|Rarity}}（由高到低），然后基础{{tr|damage}}（由高到低）|| 包括[[{{tr|Gel}}]]、[[{{tr|sand}}]]、[[{{tr|Ale}}]]、和[[{{tr|Fallen Star}}]]。
+|-
+| {{tr|Armor}} - {{tr|Combat}} || 非{{tr|vanity}}[[{{tr|armor}}]] || {{tr|Rarity}}（由高到低），然后{{tr|defense}}（由高到低），然后[[{{tr|item ID}}]] ||
+|-
+| {{tr|Armor}} - {{tr|Vanity}} || {{tr|Vanity armor}} || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Armor}} - {{tr|Accessories}} || [[{{tr|Accessories}}]] || {{tr|Base rarity}}（由高到低），然后{{tr|defense}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Equip}} - {{tr|Grapple}} || [[{{tr|Hooks}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Equip}} - {{tr|Mount}} || [[{{tr|Mounts}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Equip}} - 矿车 || [[{{tr|Minecarts}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Equip}} - {{tr|Light Pet}} || [[{{tr|Light pets}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Equip}} - {{tr|Vanity pet}} || [[{{tr|Pets}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|Potions}} - {{tr|Dyes}} || [[{{tr|Dyes}}]] || {{tr|Rarity}}（由高到低），然后{{tr|dye ID}} ||
+|-
+| {{tr|Potions}} - {{tr|Hair Dyes}} || [[{{tr|Hair Dyes}}]] || {{tr|Rarity}}（由高到低），然后{{tr|hair dye ID}} ||
+|-
+| {{tr|Potions}} - {{tr|Life}} || [[{{tr|Recovery potions}}|{{tr|Healing items}}]] || {{tr|Life}}回复量（由高到低），然后堆叠数（由高到低）||
+|-
+| {{tr|Potions}} - {{tr|Mana}} || [[{{tr|Recovery potions}}|{{tr|Mana potions}}]] || {{tr|Mana}}回复量（由高到低），然后堆叠数（由高到低）||
+|-
+| {{tr|Potions}} - 万灵药 || [[{{tr|Recovery potions}}|同时回复{{tr|Health and mana}}的{{tr|Items}}]] || {{tr|Life}}回复量（由高到低），然后堆叠数（由高到低）|| 在 [[1.4.4.9]] 中，此层级不匹配任何{{tr|items}}。
+|-
+| {{tr|Potions}} - {{tr|Buffs}} || [[{{tr|Buff potions}}]]和[[{{tr|food}}]] || {{tr|Rarity}}（由高到低），然后{{tr|item ID}} ||
+|-
+| {{tr|misc}} - 重要 || colspan="3" | [[{{tr|Consumables|link=y}}#{{tr|Summoning items}}|{{tr|Summoning items}}]]、[[{{tr|Life Crystal}}]]、[[{{tr|Mana Crystal}}]]、[[{{tr|Life Fruit}}]]、[[{{tr|Magic Conch}}]]、[[{{tr|Demon Conch}}]]、[[{{tr|Magic Mirror}}]]、[[{{tr|Ice Mirror}}]]，以及它们的升级物
+|-
+| {{tr|Misc}} - {{tr|Paint}} || [[{{tr|Paints}}]]和{{tr|painting tools}} || {{tr|Tools}}，然后[[{{tr|Paint IDs}}|{{tr|paint ID}}]]，然后[[{{tr|Coating IDs}}|{{tr|coating ID}}]] ||
+|-
+| {{tr|Misc}} - {{tr|Wiring}} || [[{{tr|Wiring}}]]{{tr|tools}}、{{tr|wire}}、和[[{{tr|mechanisms}}]] || ||
+|-
+| {{tr|Misc}} - {{tr|Materials}} || colspan="3" | [[{{tr|Ores}}]]、[[{{tr|bars}}]]、[[{{tr|gems}}]]、[[{{tr|souls}}]]、和某些其他{{tr|materials}}（[[{{tr|Shadow Scale}}]]、[[{{tr|Tissue Sample}}]]、[[{{tr|Sturdy Fossil}}]]、[[{{tr|Ectoplasm}}]]）
+|-
+| {{tr|Misc}} - {{tr|Ropes}} || [[{{tr|Ropes}}]]和[[{{tr|Chain}}]] || ||
+|-
+| {{tr|Misc}} - {{tr|Extractinator}} || 可以被[[{{tr|Extractinator}}|提炼]]的{{tr|Blocks}} || ||
+|-
+| 最后 - {{tr|Materials}} || [[{{tr|Axes}}]]、[[{{tr|Coin Gun}}]]、以及除{{tr|blocks, furniture, and walls}}之外的所有其他{{tr|item}} || {{tr|Base rarity}}（由高到低），然后价值（由高到低），然后堆叠大小（由高到低）||
+|-
+| 最后 - {{tr|Tiles}}（Frame Important{{note|small=y|注：这是{{tr|Tiles}}的内部属性}}）|| {{tr|Furniture}}，包括[[{{tr|banners}}]]、[[{{tr|statues}}]]、[[{{tr|paintings}}]]、和[[{{tr|platforms}}]] || 名称（由 A 到 Z），然后堆叠大小（由高到低）||
+|-
+| 最后 - {{tr|Tiles}}（常见）、{{tr|Walls}} || {{tr|Blocks and walls}} || 名称（由 A 到 Z），然后堆叠大小（由高到低） ||
+|-
+| 最后 - 非垃圾 || [[{{tr|rarity}}]]在白色以上的{{tr|item}} || {{tr|Rarity}}（由高到低），然后名称（由 A 到 Z），然后堆叠大小（由高到低） || 不匹配任何物品。<ref name="empty"/>
+|-
+| 最后 - 垃圾 || 所有其他东西 || {{tr|Rarity}}（由高到低），然后名称（由 A 到 Z），然后堆叠大小（由高到低） || 不匹配任何物品。<ref name="empty"/>
+|}
+{{reflist|refs=
+<ref name="weaponorder"> {{tr|weapon}}层级会按照玩家伤害加成的顺序由高到低进行排列。</ref>
+<ref name="empty">最下面的两个“最后”层级不匹配任何{{tr|items}}，因为所有{{tr|items}}都被分类中较高的层级覆盖掉了。</ref>
+}}
+
+{{category|Pages to transclude}}
+{{language info|en=Inventory/Sort layers}}

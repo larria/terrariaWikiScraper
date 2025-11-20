@@ -1,0 +1,59 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 5005
+| tags = minion / drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Terraprisma (demo).gif|frame|{{tr|Terraprisma}}攻击一只[[{{tr|Mimics}}]]。]]
+
+'''{{tr|Terraprisma}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Empress of Light}}]]后的[[{{tr|Summon weapons}}]]，可召唤'''{{tr|Terraprisma}}'''[[{{tr|minion}}]]。它会飞向[[{{tr|enemies}}]]，在快速的突刺后回旋或突刺攻击{{tr|enemy}}。{{tr|Terraprisma}}在晚间身后排布成螺旋状，且会在附近无{{tr|enemies}}时立即返回{{tr|player}}身旁。若对{{tr|Empress of Light}}的伤害均在[[{{tr|day and night cycle}}|{{tr|day}}]]时造成，{{tr|The Terraprisma}}必定由她掉落。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|The Terraprisma}}击中{{tr|enemy}}时造成 -1 {{tr|tick}}{{tick}}[[{{tr|local invincibility frame}}]]且在每次攻击时重置其{{tr|local invincibility frame}}，这意味着{{tr|Terraprisma}}不能在一次攻击内击中同一目标多次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.AI_156_StartAttack}}
+* {{tr|The Terraprisma}}每 {{duration|40 ticks}}攻击一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_156_Think}}
+* {{tr|The Terraprisma}}最远可瞄准距离 62.5 格的目标，且在当前目标距离{{tr|player}}超过 62.5 格时会自动返回{{tr|player}}身旁。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_156_TryAttackingNPCs}}
+* 一般情况下，{{tr|The Terraprisma}}不能穿过{{tr|block}}，但如果它攻击了一个有直接视线的{{tr|enemy}}，它们在返回{{tr|player}}处之前会无视{{tr|block}}进而攻击附近任何其他{{tr|enemy}}。
+* {{tr|The minions}}在移动时会留下彩虹色的尾迹。
+* 使用[[{{tr|Critter Shampoo}}]]时，剑本身已经具有的明亮颜色会导致基础、淡色、和渐变[[{{tr|dyes}}]]的效果并不明显。而复合{{tr|dyes}}和大部分{{tr|strange dyes}}可以正常作用。
+** 然而，{{tr|Terraprisma}}移动时留下的尾迹颜色不会改变。
+
+== 小贴士 ==
+* {{tr|The Terraprisma}}被广泛认为是最强的{{tr|summon weapon}}，因为它在任何情况下都有优秀的表现。而[[{{tr|Stardust Dragon Staff}}]]则有更高的伤害，但是在某些情况（如对抗[[{{tr|Lunar Events}}]]，[[{{tr|Duke Fishron}}]]或{{tr|the Empress of Light}}）下表现不佳。二者搭配使用则可以在大部分情况下获得更为优秀的性能。
+* 类似于[[{{tr|Blade Staff}}]]和[[{{tr|Sanguine Staff}}]]，{{tr|the Terraprisma}}精确的移动、跟踪、和固定的待机位置使其成为对抗高速的 {{tr|bosses}} 和对群控制的理想选择。
+* 如果{{tr|player}}背靠着[[{{tr|blocks}}]]，{{tr|Terraprisma}}可以穿过它们并攻击范围内的任何{{tr|enemy}}。
+
+== 花絮 ==
+* 虽然其{{tr|sprite}}看似像[[{{tr|Swords}}]]，但是它实际上是[[{{tr|Summon weapons}}]]。这类似于其他像{{tr|sword}}的武器，例如[[{{tr|Sky Fracture}}]]实际上是[[{{tr|Magic weapons}}]]，而[[{{tr|Durendal}}]]实际上是[[{{tr|Whips}}]]。
+* 尽管其{{tr|tooltip}}提到{{tr|enchanted sword}}，但召唤的{{tr|minions}}并不像[[{{tr|Enchanted Sword (item)}}|{{tr|Enchanted Sword}}]]或[[{{tr|Enchanted Sword (NPC)}}|{{tr|Enchanted Sword}}{{tr|enemy}}]]。
+* {{tr|The Terraprisma}}和[[{{tr|Abigail's Flower}}]]是仅有的两个名字中没有''{{tr|staff}}''（Staff）的{{tr|minion-summoning weapons}}。
+* {{tr|Terraprisma}}在电子游戏{{维基百科|b=y|Palworld|幻兽帕鲁}}中作为{{tr|crossover}}的一部分出现。
+* {{empress weapon tester colors}}
+
+== 图库 ==
+<gallery widths="240px">
+File:Terraprisma summoned 30 times.png|{{tr|Terraprisma}}召唤 30 次，使用第三方工具突破{{tr|minion}}限制。
+File:Terraprisma colors (demo).gif|{{tr|player}}名字为“Acamaeda”时，{{tr|Terraprisma}}的颜色变化。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|修复了{{tr|Terraprisma}}一次攻击时会多次对单个目标造成伤害的 {{tr|Bug}}。}}
+{{history|Desktop 1.4.0.5|{{tr|Buff sprite updated.}}}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Terraprisma}}

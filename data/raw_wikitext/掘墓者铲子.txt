@@ -1,0 +1,81 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4711
+| type = Weapon/Tool
+| toolspeed = {{iteminfo|4711|useTime}}
+}}
+[[File:Gravedigger's Shovel (demo).gif|frame|{{tr|The Gravedigger's Shovel}}采挖[[{{tr|Dirt}}]]并攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Gravedigger's Shovel}}'''是一件[[{{tr|tool}}]]，它能够比[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]更高效地挖掘“柔软”{{tr|block}}（见[[#受影响的{{tr|blocks}}|下方]]），其挖掘范围为以光标为中心 3×3 {{tr|tile}}的方形。
+
+{{modifier|harvest}}
+
+== 受影响的{{tr|blocks}} ==
+下列类型的{{tr|blocks}}可以被{{tr|Gravedigger's Shovel}}采挖。{{source code ref|v=1.4.4.9|method=Terraria.Player.DamageTileWithShovel|field=Terraria.ID.TileID.Sets&#46;CanBeDugByShovel}}注意在 [[{{tr|For the worthy}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，所有{{tr|blocks}}仅需一半的敲击数就能破坏。
+{{options/set|item|small=yes|wrap=yes}}
+{{flexstart}}
+{| class="terraria"
+! 需要 2 次敲击
+|-
+|{{itemlist|width=15em
+|{{item|Ash Block}}
+|{{item|Ash grass}}
+|{{item|Clay Block}}
+|{{item|Corrupt grass}}
+|{{item|Corrupt Jungle grass}}
+|{{item|Crimson grass}}
+|{{item|Crimson Jungle grass}}
+|{{item|Dirt Block}}
+|{{item|Grass}}
+|{{item|Hallowed grass}}
+|{{item|Jungle grass}}
+|{{item|Mud Block}}
+|{{item|Mowed grass}}
+|{{item|Mowed Hallowed grass}}
+|{{item|Mushroom grass}}
+|{{item|Sand Block}}
+|{{item|Silt Block}}
+|{{item|Slush Block}}
+|{{item|Snow Block}}
+}}
+|-
+! 需要 4 次敲击
+|-
+|{{itemlist|width=15em
+|{{item|Ebonsand Block}}
+|{{item|Crimsand Block}}
+|{{item|Pearlsand Block}}
+|{{item|Shell Pile}}
+|{{item|The Dirtiest Block}}
+}}
+|}
+{{flexend}}{{options/reset|item}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Gravedigger's Shovel|expectedrows=2}}
+
+== 备注 ==
+* 虽然没有列出其[[{{tr|pickaxe power}}]]，{{tr|Gravedigger's Shovel}}在内部具有 30% 的{{tr|pickaxe power}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.DamageTileWithShovel}}它也能受益于[[{{tr|mining speed}}]]{{tr|bonuses}}。
+
+== 小贴士 ==
+* {{tr|Gravedigger's Shovel}}的用途包括在[[{{tr|Snow biome}}]]、[[{{tr|Jungle}}]]和[[{{tr|Desert}}]]{{tr|biomes}}中的早期探索，它能够迅速挖掘[[{{tr|Snow Block}}]]、[[{{tr|Mud Block}}]]和[[{{tr|Sand Blocks}}]]；铲走[[{{tr|Ash Block}}]]以便更快地采掘[[{{tr|Hellstone}}]]；挖掘大量[[{{tr|Silt}}]]和[[{{tr|Slush}}]]用于[[{{tr|Extractinator}}]]；以及挖掘[[{{tr|Clay Block}}]]来批量制作[[{{tr|Red Brick}}]]。
+
+== 花絮 ==
+* 其{{tr|tooltip}} <i>{{#explode:{{itemTooltip|4711}}|<br/>|-1}}（Can you dig it?）</i>参考了经典的50、60年代的俚语，这句俚语在之后出现在许多作品中。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|修复了{{tr|Gravedigger's Shovel}}挖掘中心的{{tr|block}}的速度不一致的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop}} 1.4.0.5 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-tool = yes
+}}
+
+{{language info|en=Gravedigger's Shovel}}

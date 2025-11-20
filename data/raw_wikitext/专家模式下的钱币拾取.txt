@@ -1,0 +1,248 @@
+{{exclusive|1.3.0.1}}
+{{expert mode only}}
+在[[{{tr|Expert Mode}}]]中，大多数[[{{tr|enemies}}]]能够拾取[[{{tr|coins}}]]。它们这样做时会发出音效（{{sound||Coin 0.wav}}{{sound||Coin 1.wav}}{{sound||Coin 2.wav}}{{sound||Coin 3.wav}}{{sound||Coin 4.wav}}）。持有{{tr|coin}}的{{tr|enemies}}会根据它们所拥有的最高级的{{tr|coin}}来发出对应颜色的闪烁效果。
+
+== 细节 ==
+当{{tr|enemies}}的{{tr|hitbox}}与掉落状态下的一堆叠{{tr|coin}}的{{tr|hitbox}}接触时，{{tr|enemies}}会尝试从其中拾取部分{{tr|coin}}。一个{{tr|enemy}}仅会在下列条件满足时拾取{{tr|coin}}：{{source code ref|v=1.4.4.9|method=Terraria.Item.GetPickedUpByMonsters_Money}}
+* 该{{tr|enemy}}已持有的{{tr|coin}}的总价值低于这叠{{tr|coin}}的总价值。
+* 该{{tr|enemy}}已持有的{{tr|coin}}的总价值与这叠{{tr|coin}}的总价值的二者之和低于 999000000，即 {{coin|999000000}}。
+
+然后，通过将{{tr|coin}}的堆叠数量与一个系数相乘来计算{{tr|enemy}}所拾取的{{tr|coin}}数量，计算结果向下取整，最小值为 1，最大值为堆叠数量。该系数是一个落在 [0.5, 0.75] 范围内的随机值（增量为 0.01），并且在下列情况下增加：
+* 如果{{tr|coin}}类型是[[{{tr|Copper Coin}}]]：该系数增加一个在 [0, 0.5] 范围内的随机值（增量为 0.01）。
+* 如果{{tr|coin}}类型是[[{{tr|Silver Coin}}]]：该系数增加一个在 [0, 0.25] 范围内的随机值（增量为 0.01）。
+
+例如，如果掉落了一叠 {{sc|25}}，一个持有 {{sc|30}} 的{{tr|enemy}}将不会从中拾取{{tr|coin}}。一个未持有{{tr|coin}}的{{tr|enemy}}可以从中拾取 <math>[ 25\times(0.5+0), 25\times(0.75+0.25) ]</math> {{sc}}（取整后结果为 12–{{sc|25}}）。
+
+无敌的{{tr|enemy}}永远不会拾起{{tr|coin}}。对于其他永远不会拾起{{tr|coin}}的{{tr|enemy}}，见下表。{{source code ref|v=1.4.4.9|field=Terraria.ID.NPCID.Sets&#46;CantTakeLunchMoney}}
+{{collapse top|永远不会拾起{{tr|coin}}的{{tr|enemy}}列表}}<!--
+-->{{options/set|item|maxsize=50x30px|icons=no}}<!--
+-->{{#arraydefine:enemies_nopickup|{{#invoke:npcinfo/idSets|getSet|CantTakeLunchMoney}}|,}}<!--
+-->{{itemlist/start|class=terraria|width=20em}}
+{{#arrayprint:enemies_nopickup||@@@|
+{{#ifeq:@@@|default||{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}}}<!-- Remove the "default" in the array. -->
+}}{{options/reset|item}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+== {{tr|Enemy}}保存 ==
+[[File:Coin Loss Revenge System.png|thumb|400px|被保存在[[{{tr|minimap}}]]上的一些{{tr|enemies}}。]]
+游戏中还存在一种“复仇”机制，它会保存持有{{tr|coin}}的{{tr|enemy}}的相关信息，并且在玩家接近该地点时重新生成该{{tr|enemy}}。{{tr|enemy}}的{{tr|health}}百分比、位置、和持有的{{tr|coin}}的数量将会在该{{tr|enemy}}消失时保存。消失位置将会在[[{{tr|minimap}}]]上以{{tr|coin}}图标显示出来，且将{{tr|cursor}}悬停在图标上时可以显示{{tr|coin}}的数量。
+
+一个{{tr|enemy}}必须满足下列所有条件才会被保存。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.CoinLossRevengeSystem.CacheEnemy}}
+* 该{{tr|enemy}}拾起了超过 {{coin|0|0|10|0}}。{{source code ref|v=1.4.4.9|field=Terraria.GameContent.CoinLossRevengeSystem.MinimumCoinsForCaching}}
+* 该{{tr|enemy}}距离世界顶部与左侧的边界超过 41 格，且距离世界底部与右侧的边界超过 42 格。
+** 这些边界指的是游戏内看不到的实际世界边界，所以只要{{tr|enemy}}在可见的世界边界内，就可以被保存。
+* 该{{tr|enemy}}不是[[{{tr|boss}}]]。
+* 该{{tr|enemy}}的“[[{{tr|Lifeform Analyzer}}/所检测的生物列表|{{tr|rarity}}]]”''不超过'' 0 <ref>注意此{{tr|rarity}}属性是[[{{tr|Lifeform Analyzer}}]]使用的{{tr|rarity}}属性，而不是[[{{tr|Bestiary}}]]中的{{tr|rarity}}属性。总结而言，此规则对可被{{tr|Lifeform Analyzer}}检测到的{{tr|enemies}}不适用。</ref>。这使得保存规则对以下{{tr|enemies}}不适用。
+{{collapse top|不适用的{{tr|enemies}}列表}}<!--
+-->{{options/set|item|maxsize=50x30px|icons=no}}<!--
+-->{{#arraydefine:enemies_rare|<!--
+Get a list of rare enemies. Similar to Lifeform Analyzer, but we only need enemies here.
+	-->{{#sub:<!-- used to remove trailing comma
+		-->{{#loop:_nid<!-- start loop
+		Loop from min ID to max ID
+			-->|{{npcinfo/minId}}<!-- "-65" as of 1.4.4.9
+			-->|{{#expr:{{npcinfo/maxId}}-{{npcinfo/minId}}+1}}<!-- "688 + 65" as of 1.4.4.9
+			-->|{{#if:<!--
+			Conditions:
+		1. is friendly
+				-->{{#if:{{npcinfo|{{#var:_nid}}|friendly}}|true}}<!--
+		2. is boss
+				-->{{#if:{{npcinfo|{{#var:_nid}}|boss}}|true}}<!--
+		3. rarity<=0
+				-->{{#ifexpr:{{npcinfo|{{#var:_nid}}|rarity}}<=0|true}}<!--
+		4. is critter or something alike (Clumsy Balloon Slime)
+				-->{{#ifexpr:{{npcinfo|{{#var:_nid}}|hp}} <= 5|true}}<!--
+			-->|<!-- Output nothing if any condition is met
+			-->|{{#var:_nid}},<!-- Output an ID otherwise
+			-->}}<!--
+		-->}}<!--end loop
+	-->|0|-1}}<!-- remove trailing comma
+-->|,}}<!--
+-->{{itemlist/start|class=terraria|width=20em}}
+{{#arrayprint:enemies_rare||@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}
+}}
+{{itemlist/end}}{{options/reset|item}}
+{{collapse bottom}}
+
+=== {{tr|Enemy}}重生 ===
+当保存的位置处于以玩家为中心的 163×115 格的矩形区域内时，保存的{{tr|enemy}}将被重生。重新生成的{{tr|enemy}}的{{tr|health}}若低于 50%，则会恢复到 50%。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.CoinLossRevengeSystem.CheckRespawns / Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.SpawnEnemy|field=Terraria.GameContent.CoinLossRevengeSystem._playerBoxSizeOuter}}然而，在一些特殊情况下，{{tr|enemy}}可以或不可以重新生成。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.CoinLossRevengeSystem.CheckRespawns / Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.WouldNPCBeDiscouraged}}如果玩家接近保存的位置而{{tr|enemy}}无法重新生成时，该保存的{{tr|enemy}}将会被移除，该{{tr|enemy}}拾取的{{tr|coin}}将会永久丢失。
+* 当时间在[[{{tr|daytime}}]]，或保存的位置在[[{{tr|surface}}]]之上或不在[[{{tr|Graveyard}}]]中时，[[{{tr|Demon Eyes}}]]和[[{{tr|Wandering Eyes}}]]不会重新生成。
+* 如果保存的位置在{{tr|surface}}之上，某些蠕虫将不会重新生成。这包括[[{{tr|Giant Worm}}]]、[[{{tr|Bone Serpent}}]]、[[{{tr|Digger}}]]、[[{{tr|Leech}}]]、和[[{{tr|Dune Splicer}}]]。
+* 如果保存的位置不在[[{{tr|Underground Desert}}]]中，[[{{tr|Tomb Crawler}}]]将无法重新生成。
+* [[{{tr|Reaper}}]]仅能在[[{{tr|Solar Eclipse}}]]期间重新生成。
+* [[{{tr|Drippler}}]]无法在{{tr|daytime}}期间重新生成。
+* 在 [[{{tr|The Constant}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|world}}中，[[{{tr|Wall Creeper}}]]和[[{{tr|Black Recluse}}]]总是可以重新生成。
+* 如果保存的位置在{{tr|surface}}之上，某些使用[[{{tr|Fighter AI}}]] 的{{tr|enemies}}将无法在{{tr|daytime}}重新生成。
+** 此外，来自某些[[{{tr|event}}]]中的{{tr|Fighter AI}} {{tr|enemies}}只有在其对应的{{tr|event}}正在发生时才能重新生成。这包括[[{{tr|Frost Moon}}]]、[[{{tr|Goblin Army}}]]、[[{{tr|Pirate Invasion}}]]、和[[{{tr|Martian Madness}}]]。
+{{collapse top|使用{{tr|Fighter AI}} 的{{tr|enemies}}列表}}<!--
+-->{{options/set|item|maxsize=50x30px|icons=no}}<!--
+-->{{#arraydefine:enemies_fighter|<!--
+From (invasion) events -->343,350,26,27,28,111,212,213,214,215,381,382,383,385,386,389,391,520,<!--
+Other -->31,47,67,77,78,79,80,630,110,120,168,181,185,198,206,239,254,257,258,379,464,470,424,411,409,425,429,427,428,580,582,508,415,419,524,525,526,527,528,529,530,532<!--
+Excluded from the ID list in the method:
+Name					IDs													Reason
+Spider Nest spiders		163,164												Main.dontStaveWorld-exclusive rule.
+Lihzahrd (Crawler form) 199													Redundant; Lihzahrd already exists as 198
+Hat Spore Zombie		255													Redundant; Spore Zombies already exists as 254
+Angry Bones (variants)	294,295,296											Redundant; Angry Bones already exists as 31
+White Cultist Archer	380													NPC is unused
+Rare enemies			73,216,217,218,219,220,243,291,292,293,471,624		Inapplicable for saving
+Rock Golem				631													Requires npcinstance.ai[2]>0 while npcinstance is null
+-->|,}}<!--
+-->{{itemlist/start|class=terraria|width=20em}}
+{{#arrayprint:enemies_fighter||@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}
+}}{{options/reset|item}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+=== 保存移除 ===
+{{tr|Enemy}}保存不会永久存在。游戏会移除无效和过期的{{tr|enemy}}保存，{{tr|coins}}将会永久丢失。{{source code ref|v=1.4.4.9|method= Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.IsInvalid / Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.IsExpired}}
+
+某些类型的被保存的{{tr|enemies}}会在特定条件下变为无效：{{source code ref|v=1.4.4.9|method= Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.IsInvalid / Terraria.NPC.GetNPCInvasionGroup}}
+* 来自下列{{tr|events}}的{{tr|enemies}}会在其对应{{tr|event}}未激活时变为无效：[[{{tr|Goblin Army}}]]、[[{{tr|Frost Legion}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Martian Madness}}]]、和[[{{tr|Old One's Army}}]]。
+* 来自[[{{tr|Frost Moon}}]]和[[{{tr|Pumpkin Moon}}]]的{{tr|Enemies}}会在[[{{tr|day}}]]变为无效。
+* 来自[[{{tr|Solar Eclipse}}]]的{{tr|Enemies}}会在[[{{tr|night}}]]或{{tr|Solar Eclipse}}未激活时变为无效。
+
+{{collapse top|可变为无效的{{tr|enemies}}列表}}
+{{options/set|item|maxsize=50x30px|showid=no|icons=no}}<!--
+-->{{#arraydefine:GoblinArmy|26,27,28,29,111,<!--471 Goblin Warlock,-->472|,}}<!--
+-->{{#arraydefine:FrostLegion|143,144,145|,}}<!--
+-->{{#arraydefine:PirateInvasion|212,213,214,215<!--,216 Pirate Captain, 491 Flying Dutchman-->|,}}<!--
+-->{{#arraydefine:MartianMadness|381,382,383,385,386,<!--387 Tesla Turret,-->388,389,390,391<!--,395 Martian Saucer Core-->|,}}<!--
+-->{{#arraydefine:FrostMoon|338,339,340,341,342,343,344,345,346,347,348,<!--349 Spinning Nutcracker,-->350|,}}<!--
+-->{{#arraydefine:PumpkinMoon|305,<!--Scarecrow variants 306,307,308,309,310,311,312,313,314,-->315,325,326,327,329,330|,}}<!--
+-->{{#arraydefine:OldOnesArmy|<!--547 DD2AttackerTest,548 Eternia Crystal,549 Mysterious Portal, 550 Tavernkeep,-->551,<!--
+Tier variants of OOA enemies
+552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,-->578|,}}<!--
+-->{{#arraydefine:SolarEclipse|158,159,162,166,<!--251 Eyezor,-->253,460,461,462,463,466,467,468,469,<!--477 Mothron, 478 Mothron Egg, -->479|,}}
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Goblin Army}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:GoblinArmy||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Frost Legion}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:FrostLegion||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Pirate Invasion}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:PirateInvasion||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Martian Madness}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:MartianMadness||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Old One's Army}}]]
+! 包括来自任何{{tr|tier}}的{{tr|event}}的{{tr|variants}}
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:OldOnesArmy||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/item|{{item|Etherian Goblin}}}}
+{{itemlist/item|{{item|Etherian Goblin Bomber}}}}
+{{itemlist/item|{{item|Etherian Wyvern}}}}
+{{itemlist/item|{{item|Etherian Javelin Thrower}}}}
+{{itemlist/item|{{item|Dark Mage}}}}
+{{itemlist/item|{{item|Old One's Skeleton}}}}
+{{itemlist/item|{{item|Wither Beast}}}}
+{{itemlist/item|{{item|Drakin}}}}
+{{itemlist/item|{{item|Kobold}}}}
+{{itemlist/item|{{item|Kobold Glider}}}}
+{{itemlist/item|{{item|Ogre}}}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Frost Moon}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:FrostMoon||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Pumpkin Moon}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:PumpkinMoon||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+
+{| class="terraria" style="width:100%;"
+|+ [[{{tr|Solar Eclipse}}]]
+|-
+|{{itemlist/start|class=terraria|width=14em}}
+{{#arrayprint:SolarEclipse||@@@|
+{{itemlist/item|{{item|type=npc|id=@@@}}}}
+}}
+{{itemlist/end}}
+|}
+{{options/reset|item}}
+{{collapse bottom}}
+
+{{tr|Enemy}}保存会在一定时间后过期。被保存的{{tr|enemy}}的过期时间取决于{{tr|enemies}}拾取的{{tr|coin}}的数量。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.CoinLossRevengeSystem.RevengeMarker.CalculateExpirationTime}}注意在计算中{{tr|coin}}的价值将被转换为原始{{tr|Copper coin}}价值（下表中的 <code>v</code>）（例如，{{coin|1|2|3|4}} 被转换为{{#expr:1*100^3+2*100^2+3*100+4}}）。
+{| class="terraria lined"
+! 原始价值<br/>（<code>v</code>）
+! 过期时间<br/>（{{tr|ticks}}{{tick}}）<!--
+|-
+| <code>v</code><100
+| <math>18000+3600\times\frac{\text{原始价值}-{1}}{100-1}</math> -->
+|-
+| <!-- 100≤ --><code>v</code><10000
+| <math>54000+72000\times\frac{\text{原始价值}-{100}}{9900}</math>
+|-
+| 10000≤<code>v</code><1000000
+| <math>126000+108000\times\frac{\text{原始价值}-{100}}{9900}</math>
+|-
+| <code>v</code>≥1000000
+| 450000
+|}
+
+== 历史 ==
+{{history|Desktop 1.4.4.3|[[{{tr|Tortured Soul}}]]不再在{{tr|Expert Mode}}下拾取{{tr|coins}}。}}
+{{history|Desktop 1.4.0.1|在{{tr|Expert Mode}}中拾取了足够{{tr|coins}}的{{tr|enemies}}现在在其消失时会保存到某个位置。}}
+{{history|Desktop 1.3.0.4|修复{{tr|Expert mode}}中{{tr|enemies}}捡起{{tr|coins}}时会产生“空气{{tr|items}}”的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xb1}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Coin pickup in Expert Mode}}

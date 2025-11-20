@@ -1,0 +1,19 @@
+<includeonly><!--
+
+-->{{#vardefine:_id|{{{id|{{#expr:{{#var:_id|-1}}+1}}}}}}}<!--
+
+--><tr><!--
+	-->{{#if:{{#var:glowmasks:hideids}}|<!--nothing-->|<!--
+		--><td>{{#var:_id}}</td><!--
+	-->}}<!--
+	--><td align="center"><code>{{{1}}}</code></td><!--
+	--><td>{{{2|{{na}}}}}</td><!--
+--></tr><!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Glow Mask IDs/row}}
+</noinclude>

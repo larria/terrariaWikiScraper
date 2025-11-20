@@ -1,0 +1,226 @@
+{{npc infobox
+| auto = 209
+| idprojectile = 133,134,135
+| type = NPC
+| environment = Valid house
+| imageother = Map Icon Cyborg.png
+| imageothercaption = Map Icon
+| hardmode = yes
+}}
+
+'''{{tr|Cyborg}}'''是个[[{{tr|Hardmode}}]] [[{{tr|NPC}}]] 商贩，一旦当前世界中[[{{tr|Plantera}}]]被打败过至少一次且有空[[{{tr|house}}]]可用时他就会出现。他出售一些“高科技”物品，其中最吸引目光的是[[{{tr|launcher}}]]{{tr|weapons}}使用的[[{{tr|rocket}}]]{{tr|ammunition}}。
+
+在{{eversions|1.3.0.1}}中，{{tr|the Cyborg}}会用三种不同类型的{{tr|explosives}}攻击附近{{tr|enemies}}以自卫：榴弹、{{tr|rocket}}、和{{tr|proximity mine}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_007_TownEntities}}这些的攻击方式与[[{{tr|Grenade Launcher}}]]、[[{{tr|Rocket Launcher}}]]、和[[{{tr|Proximity Mine Launcher}}]]相同。来自{{tr|Cyborg}}的{{tr|Proximity mines}}在静止时也会造成三倍伤害。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Rocket I}}
+|{{shop row|Rocket II|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Rocket III|在[[{{tr|night}}]]或在[[{{tr|Solar Eclipse}}]]期间。}}
+|{{shop row|Rocket IV|在[[{{tr|Solar Eclipse}}]]期间。}}
+|{{shop row|Dry Rocket}}
+|{{shop row|Proximity Mine Launcher}}
+|{{shop row|Nanites}}
+|{{shop row|Cluster Rocket I|在打败了[[{{tr|Martian Madness}}]]事件后就一直有售。}}
+|{{shop row|Cluster Rocket II|在打败了{{tr|Martian Madness event}}后，{{tr|Blood Moon}}或{{tr|Solar Eclipse}}期间。}}
+|{{shop row|Cyborg Helmet|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Cyborg Shirt|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Cyborg Pants|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|HiTek Sunglasses|在打败了[[{{tr|Martian Madness}}]]事件后就一直有售。}}
+|{{shop row|Night Vision Helmet|在打败了[[{{tr|Martian Madness}}]]事件后就一直有售。}}
+|{{shop row|Portal Gun Station|当玩家的{{tr|inventory}}中有[[{{tr|Portal Gun}}]]或[[{{tr|Portal Gun Station}}]]时。}}
+|{{shop row|Echo Block|当在[[{{tr|Graveyard}}]]中与其交谈时。}}
+|{{shop row|Spectre Goggles|当在[[{{tr|Graveyard}}]]中与其交谈时。}}
+|{{shop row|Kwad Racer Drone}}
+|{{shop row|FPV Goggles}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Cyborg (Shimmered).png]] [[File:Map Icon Cyborg (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Cyborg}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Cyborg}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.280}}”
+* “{{gameText|LegacyDialog.281}}”
+* “{{gameText|LegacyDialog.282}}”
+* “{{gameText|LegacyDialog.285}}”
+* “{{gameText|LegacyDialog.286}}”
+
+'''[[{{tr|Pirate}}]]存在时：'''
+
+* “{{gameText|LegacyDialog.284|x_Pirate=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''[[{{tr|Steampunker}}]]存在时：'''
+
+* “{{gameText|LegacyDialog.283}}”
+
+'''[[{{tr|Tavernkeep}}]]存在时：'''
+
+* “{{gameText|CyborgChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''{{eil|Party}}期间：'''
+
+* “{{gameText|CyborgSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+
+* “{{gameText|CyborgSpecialText.Windy2}}”
+
+* “{{gameText|CyborgSpecialText.Windy1}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+
+* “{{gameText|CyborgSpecialText.Rain2}}”
+
+* “{{gameText|CyborgSpecialText.Rain1}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+
+* “{{gameText|CyborgSpecialText.Storm2}}”
+
+* “{{gameText|CyborgSpecialText.Storm1}}”
+
+'''在{{eil|Graveyard}}中：'''
+
+* “{{gameText|CyborgSpecialText.Graveyard2}}”
+
+* “{{gameText|CyborgSpecialText.Graveyard1}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.NoHome}}”
+
+'''离家很远时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.FarFromHome}}”
+
+'''在人少的区域时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LoveSpace}}”
+
+'''在拥挤区域时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.DislikeCrowded}}”
+
+* “{{gameText|TownNPCMood_Cyborg.HateCrowded}}”
+
+'''在{{tr|Snow biome}}中时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在{{tr|a Jungle}}中时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.DislikeBiome|x_BiomeName={{tr|the Jungle}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Pirate}}]]时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LikeNPC|x_NPCName=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''靠近[[{{tr|Steampunker}}]]时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LikeNPC|x_NPCName=&lt;{{tr|Steampunker}}的名字&gt;}}”
+
+'''靠近[[{{tr|Stylist}}]]时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.LikeNPC|x_NPCName=&lt;{{tr|Stylist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Zoologist}}]]时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.DislikeNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+
+'''靠近[[{{tr|Wizard}}]]时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.HateNPC|x_NPCName=&lt;{{tr|Wizard}}的名字&gt;}}”
+
+'''中性时：'''
+
+* “{{gameText|TownNPCMood_Cyborg.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+<!--Please do not add speculation about the meaning of individual Greek letters. They are all just Greek letters.-->
+{{float file box
+|title={{tr|Cyborg}}的各种外观<br/>攻击时的外观
+|[[File:Cyborg (attack).png]]
+|title2=[[{{tr|credits}}]]中被维修时的外观
+|[[File:Cyborg in credits.png]]
+|title3={{tr|Shimmered form}}攻击时的外观
+|[[File:Cyborg (Shimmered) (attack).png]]
+|title4={{tr|Party}}时的外观
+|[[File:Cyborg (no hat).png]]
+|title5={{tr|Shimmered form}}{{tr|Party}}时的外观
+|[[File:Cyborg (Shimmered) (no hat).png]]
+}}
+* 其（英文）名字 {{wikipedia|Cyborg}} 指的是同时具有有机物部分和机械部分的生物，特指通过机械装置来维持生命或强化自身的有机生命体。在{{tr|Cyborg}}的脸和手上可以看到皮肤（在其旧外观中更明显）。此外，{{tr|Cyborg}}攻击时会将手臂切换成武器；[[{{tr|credits}}]]中可看见{{tr|Cyborg}}有黑色的巩膜和黄色的瞳孔。
+** 虽然名称如此，但许多特征表明{{tr|Cyborg}}并不是经历了改造的人类，而是纯粹被制造出来的机械：
+*** [[{{tr|Guide}}]]的建议话语：“{{gameText|GuideHelpTextSpecific.Help_1102}}”
+*** {{tr|Cyborg}}的部分话语表明他不具备人类的常识（比如{{eil|Graveyard}}中的话语，他将人类遗骸理解为了损坏的元件：“{{gameText|CyborgSpecialText.Graveyard1}}”）。
+*** {{tr|Cyborg}}的{{tr|Bestiary entry}}直接表明了他是被制造出来的。
+** 虽然{{tr|Cyborg}}身体的大部分都覆盖有金属和/或被金属替换，他仍然具有常规 {{tr|NPC}} 受伤音效，而非机械的受伤音效。
+* {{tr|Cyborg}}的{{tr|Shimmered form}}具有[[{{tr|Moon Lord}}]]（或{{tr|lunar}}主题）的配色，在攻击时则有{{tr|solar}}主题的配色。
+* 在{{tr|Party}}期间，{{tr|the Cyborg}}戴上{{tr|party hat}}时头上的灯是灭掉的，{{tr|Shimmered form}}下的{{tr|the Cyborg}}则少了头上的“角”。
+* 他话语中提到的神经功能（Neural）可能指向{{wikipedia|Neural network (machine learning)|人工神经网络（Artificial Neural Network）}}，这是一种计算机架构，模仿生物的神经网络进行的演算方式。
+* {{eicons|Portal Gun Station}}和[[{{tr|Traveling Merchant}}]]、[[{{tr|Zoologist}}]]、和[[{{tr|Princess}}]]一起，{{tr|the Cyborg}}是仅有的出售[[{{tr|Moon Lord}}]]后{{tr|item}}（[[{{tr|Portal Gun Station}}]]）的 [[{{tr|NPC}}]] 之一。但是，和其他几个例子不同，可以通过从其他世界带{{tr|Portal Gun}}或{{tr|Portal Gun Station}}到有{{tr|Cyborg}}的这个世界来绕开这点。
+* {{tr|the Cyborg}}的名字几乎全部都是{{wikipedia|Greek alphabet|希腊字母表}}中的字母。用希腊字母给机器人和半机械人命名在科幻小说中很常见。
+* 名字 Syn-x 和 A.N.D.Y. 可能指的是 [[Re-Logic]] 的{{tr|Lead developer}} Whitney "[[Cenx]]" Spinks 和 Andrew "[[Redigit]]" Spinks。
+* 名字 T-3E0 很可能是参考了 {{维基百科|C-3PO}}，这是美国史诗太空歌剧{{维基百科|b=y|Star Wars|t=星球大战}}系列中的一个人形机器人角色。
+* 名字 Niner-7 可能参考了美国科幻电视连续剧{{维基百科|b=y|Star Trek: Voyager|t=星际旅行：航海家号}}中的人物{{维基百科|Seven of Nine|t=九之七}}。{{note|small=y|译注：中文译名依据[https://zh.wikipedia.org/wiki/%E6%98%9F%E8%89%A6%E5%A5%87%E8%88%AA%E8%A8%98%EF%BC%9A%E9%87%8D%E8%BF%94%E5%9C%B0%E7%90%83 维基百科相应页面]}}
+* {{tr|The Cyborg}}名为 Phi 的可能性是其他名字的两倍。{{source code ref|v=1.4.4.9|method=Terraria.NPC.getNewNPCNameInner}}
+* 其话语“{{gameText|LegacyDialog.281}}”引用了动作角色扮演电子游戏{{维基百科|b=y|The Elder Scrolls V：Skyrim|t=上古卷轴5：天际}}中著名的[http://knowyourmeme.com/memes/i-took-an-arrow-in-the-knee “膝盖中了一箭”那句话]，在其中守卫告诉玩家：“I used to be an adventurer like you, then I took an arrow in the knee.”（我以前和你一样也是个冒险者，直到我的膝盖中了一箭。）{{note|small=y|paren=y|译注：英语中“膝盖中了一箭”是指单膝跪下求婚，所以这话实际上应该翻译为“我结婚前和你一样也是个冒险者”}}
+** [[{{tr|Zoologist}}]]也有一句话也用了类似的引用：“{{gameText|BestiaryGirlChatter.Chatter_1}}”
+* 话语“{{gameText|LegacyDialog.282}}”引用了一个经常与机器人相关联的{{wikipedia|Liar paradox|常见逻辑悖论}}。
+* {{tr|Cyborg}}对他的喜好居民引用了相同的话语：“{{gameText|TownNPCMood_Cyborg.LikeNPC|x_NPCName=&lt;{{tr|NPC}} 的名字&gt;}}”。
+** 而在[[{{tr|Stylist}}]]的话语中可以得知：“{{gameText|LegacyDialog.308|x_Cyborg=&lt;{{tr|Cyborg}}的名字&gt;}}”。因此{{tr|Stylist}}会在{{tr|Cyborg}}的喜好名单中很有可能就是因为这次理发。
+* 其话语“{{gameText|CyborgChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”是参考了《{{tr|Dungeon Defenders 2}}》中的人物 {{iwlink|dd2|Series EV2|EV2}}。
+* 在{{old-gen console version}}中，他是用[[{{tr|Queen Statue}}]]召唤的，虽然他并非女性。
+* 其话语“{{gameText|LegacyDialog.283}}”可能表明他对{{tr|the Steampunker}}感兴趣。
+** 但这句话也表明他还不认识{{tr|Steampunker}}，这和背景故事冲突，因为{{tr|the Cyborg}}的{{tr|Bestiary}}条目说它是{{tr|the Mechanic}}和{{tr|the Steampunker}}''打造''的。
+** {{tr|the Cyborg}}入住也不需要{{tr|the Mechanic}}和{{tr|the Steampunker}}在场。
+{{bestiary}}
+<!--Unless you get a dev to confirm this is a reference to Futurama, please don't add any Futurama trivia-->
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在出售[[{{tr|Kwad Racer Drone}}]]和[[{{tr|FPV Goggles}}]]。
+** 添加了“Raynbro”作为可能的名字。}}
+{{history|Desktop 1.4.0.1|现在出售[[{{tr|Dry Rocket}}]]、[[{{tr|Echo Block}}]]和[[{{tr|Spectre Goggles}}]]。}}
+{{history|Desktop 1.3.1|现在出售[[{{tr|Portal Gun Station}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在出售[[{{tr|Night Vision Helmet}}]]和[[{{tr|HiTek Sunglasses}}]]。
+** 外观更新。}}
+{{history|Desktop 1.2.1|现在在[[{{tr|Halloween}}]]期间出售[[{{tr|Cyborg set}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Cyborg}}

@@ -1,0 +1,36 @@
+{{item infobox
+| auto = 223
+| idtile = 61 (10)
+}}
+[[File:Nature's Gift in Jungle.png|alt=出现在{{tr|Underground Jungle}}中的{{tr|Nature's Gift}}。|thumb|出现在{{tr|Underground Jungle}}中的{{tr|Nature's Gift}}。]]
+
+'''{{tr|Nature's Gift}}'''是一种能将使用[[{{tr|Magic Weapons}}]]和其他消耗{{tr|Mana}}的{{tr|items}}的[[{{tr|Mana}}]]{{tr|cost}}降低 6% 的[[{{tr|accessory}}]]。它是通过用任意[[{{tr|Weapon}}]]或[[{{tr|Tool}}]]收割长在[[{{tr|Underground Jungle}}]]中的[[{{tr|Jungle grass}}]]上的一种稀有花而得到。这种花看上去像是蓝色版本的[[{{tr|Jungle Rose}}]]。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Nature's Gift|expectedrows=1}}
+
+== 小贴士 ==
+* [[{{tr|Mana Flower}}]]可以卖 {{coin|{{#vardefineecho:result-sell|{{sell expr|raw=y|Mana Flower}}}}}}，而其{{tr|ingredients}}，一个{{tr|Nature's Gift}}和一个[[{{tr|Mana Potion}}]]，加起来只能卖 {{coin|{{#vardefineecho:ings-sell|{{recipes/extract|result=Mana Flower|mode=ingredients-sell}}}}}}。因此，先将{{tr|Nature's Gifts}}制作成{{tr|Mana Flower}}再出售能多赚 {{percent|{{#var:result-sell}}/{{#var:ings-sell}} -1}}。
+
+== 花絮 ==
+* [[{{tr|Jungle Rose}}]]{{tr|vanity accessory}}是以类似的方法得到，通过收割看着像红色版本的{{tr|Nature's Gift}}的花朵。
+
+== 历史 ==
+{{history|Desktop 1.4.4|社交栏物品的显示视觉效果现在绘制在{{tr|helmets}}/脸部{{tr|accessories}}之上，这样可以进行组合。}}
+{{history|Desktop 1.4.0.1|现在略微常见一些。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|现在略微常见了。}}
+{{history|Desktop 1.1|现在用于制作[[{{tr|Mana Flower}}]]。}}
+{{history|Desktop 1.0.6|功能从带着最大生命和{{tr|mana}}重生改为降低{{tr|mana usage}}。它也不再出现在{{tr|jungle shrine chests}}中。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Nature's Gift}}

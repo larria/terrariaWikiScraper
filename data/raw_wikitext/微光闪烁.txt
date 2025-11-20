@@ -1,0 +1,45 @@
+{{exclusive|Shimmer}}
+{{buff infobox
+| auto = 353
+| effects = 对玩家：向下穿过所有实心{{tr|tiles}}，并变为无敌<br/>对非玩家实体：先变得隐形，然后逐渐变得不透明
+| Chromatic Cloak
+}}
+
+'''{{tr|Shimmering}}'''是一种独特的[[{{tr|debuff}}]]。它会在实体浸没在[[{{tr|Shimmer}}]]中，或是玩家的[[{{tr|Fishing poles}}|{{tr|fishing pole}}的{{tr|bobber}}]]碰到{{tr|Shimmer}}时被施加。
+
+当非玩家实体被施加此{{tr|debuff}}时，它会开始变得透明，并变得完全隐形，然后变得越来越不透明。如果它具有任何[[{{tr|Shimmer}}#小动物和敌怪嬗变|特殊嬗变]]，它会在几乎隐形时转变为对应的实体/物品。
+
+当玩家被施加此{{tr|debuff}}时，他会进入{{tr|Shimmering}}状态，这会使他无法移动，也无法使用物品（除了[[{{tr|Wormhole Potion}}]]），不会受到非 {{tr|boss}} 攻击的伤害，并且会向下穿过所有和玩家相重合的实心{{tr|tiles}}，直到他到达一个 2×3 大小的空地或者[[{{tr|Underworld}}]]{{tr|layer}}。此外，还有一个脱离卡死机制，以防止玩家处于{{tr|Shimmering}}状态过长时间。
+
+参见[[#{{tr|Notes}}|{{tr|Notes}}]]以获取关于{{tr|Shimmering}}的效果的细节。
+
+装备[[{{tr|Chromatic Cloak}}]]会为玩家提供更加可控的{{tr|Shimmering}}。玩家在接触{{tr|Shimmer}}时不会被立即施加{{tr|Shimmering}}，而是可以在任何时间按住 {{key|down}} 来进入{{tr|Shimmering}}状态。不过，在进入{{tr|Shimmering}}状态后，就没有其他方法能中止它，即使重新装备{{tr|Chromatic Cloak}}也不行。
+
+== 免疫的 NPC ==
+{{immunities|Shimmering}}
+
+== 备注 ==
+* 被施加{{tr|Shimmering}}后，非玩家实体的不透明度每{{tr|tick}}{{tick}}减少 1%，导致其在 {{#expr:1/0.01<!--shimmerTransparency-->/60<!--ticks per second--> round 2}} 秒后变得完全隐形。对于有特殊嬗变的实体，它会在其具有 10% 不透明度（即 {{#expr:0.9/0.01/60 round 2}} 秒后）时被转化。当它离开{{tr|Shimmer}}后，其不透明度每{{tr|tick}}增加 0.1%，在 {{#expr:1/0.001/60 round 2}} 秒后完全不透明。伤害实体会将其不透明度增加 10%，即让总渐变时间减少 {{#expr:0.1/0.001/60 round 2}} 秒。{{source code ref|v=1.4.4.9|method=Terraria.NPC.UpdateNPC_BuffApplyVFX}}
+* 如果玩家处于{{tr|Shimmering}}状态中超过 20 秒，在按下任意移动按键（{{key|up}}、{{key|left}}、{{key|down}}、{{key|right}}）时，他会被传送到开阔空间。如果没有按下按键，则当玩家处于{{tr|Shimmering}}状态中超过 60 秒时，他会被强制传送到开阔空间。{{source code ref|v=1.4.4.9|method=Terraria.Player.TryToShimmerUnstuck}}
+* 以下{{tr|enemies}}的攻击仍然能对处于{{tr|Shimmering}}状态下的玩家造成伤害：{{source code ref|v=1.4.4.9|field=Terraria.ID.NPCID.Sets.CanHitPastShimmer / Terraria.ID.ProjectileID.Sets.CanHitPastShimmer}} [[{{tr|The Torch God}}]]（{{tr|projectiles}}）、[[{{tr|King Slime}}]]、[[{{tr|Spiked Slime}}]]、[[{{tr|Eye of Cthulhu}}]]、[[{{tr|Servant of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]、[[{{tr|Vile Spit}}]]、[[{{tr|Creeper}}]]、[[{{tr|Dark Mage}}]]（仅限{{tr|projectiles}}）、[[{{tr|Old One's Skeleton}}]]、[[{{tr|Queen Bee}}]]（仅限{{tr|projectiles}}）、[[{{tr|Bee}}]]、[[{{tr|Skeletron}}]]和其手臂、[[{{tr|Deerclops}}]]（仅限{{tr|projectiles}}）、[[{{tr|Wall of Flesh}}]]、[[{{tr|The Hungry}}]]、[[{{tr|Leech}}]]、[[{{tr|Queen Slime}}]]和其所有{{tr|minions}}、[[{{tr|The Destroyer}}]]、[[{{tr|Probe}}]]、[[{{tr|The Twins}}]]（仅限{{tr|projectiles}}）、[[{{tr|Skeletron Prime}}]]和其手臂、[[{{tr|Ogre}}]]（仅限{{tr|projectiles}}）、[[{{tr|Plantera}}]]、[[{{tr|Plantera's Tentacle}}]]、[[{{tr|Plantera's Hook}}]]、[[{{tr|Empress of Light}}]]（仅限{{tr|projectiles}}）、[[{{tr|Golem}}]]、[[{{tr|Duke Fishron}}]]、[[{{tr|Sharkron}}]]、[[{{tr|Betsy}}]]（仅限{{tr|projectiles}}）、[[{{tr|Lunatic Cultist}}]]、[[{{tr|Phantasm Dragon}}]]、[[{{tr|Ancient Vision}}]]、[[{{tr|Moon Lord}}]]、[[{{tr|True Eye of Cthulhu}}]]。
+* 玩家无法在反转[[{{tr|gravity}}]]下进入{{tr|Shimmering}}状态。{{tr|The gravity}}会在玩家接触{{tr|Shimmer}}的瞬间恢复正常。
+* 可以通过手持[[{{tr|Portal Gun}}]]来提高{{tr|Shimmering}}状态中的下降速度。
+
+== 小贴士 ==
+* {{tr|Shimmering}}可以用于[[Guide:向前跳进#丛林神庙|提前]]进入[[{{tr|Jungle Temple}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4.4|{{tr|Shimmering}}{{tr|debuff}}不再为玩家提供对 [[{{tr|bosses}}]] 的无敌。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Shimmering}}

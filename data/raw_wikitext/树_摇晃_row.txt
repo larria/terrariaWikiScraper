@@ -1,0 +1,184 @@
+<!--
+// preparation and localization is in [[Trees/Shaking]]
+
+-->{{#switch:{{{debug|}}}<!--
+	-->|on={{#dplvar:set|shakingrow:debug|y}}<!--
+	-->|off={{#dplvar:set|shakingrow:debug|}}<!--
+-->}}<!--
+
+
+-->{{#vardefine:shakingrow:n|{{#explode:{{{chance|}}}|/}}}}<!-- numerator
+-->{{#vardefine:shakingrow:d|{{#explode:{{{chance|}}}|/|1}}}}<!-- denominator
+-->{{#vardefine:shakingrow:isnocond|}}<!--
+-->{{#vardefine:shakingrow:conditions|<!--
+	-->{{#if:{{{conditions|}}}|{{{conditions|}}}|{{#dplvar:shakingrow:allconditions}}{{#vardefine:shakingrow:isnocond|y}}}}}}<!--
+-->{{#vardefine:shakingrow:treetypes|<!--
+	-->{{#ifeq:{{{treetypes|}}}|all|{{#dplvar:shakingrow:alltreetypes}}|{{{treetypes|}}}}}<!--
+-->}}<!--
+
+-->{{#vardefine:shakingrow:lootitem|{{{lootitem|}}}}}<!--
+-->{{#vardefine:shakingrow:lootitem:count|{{#lstcnt:{{#var:shakingrow:lootitem}}|/}}}}<!--
+-->{{#vardefine:shakingrow:lootquantity|{{{lootquantity|}}}}}<!--
+-->{{#vardefine:shakingrow:cargo|<!--
+	// store to cargo?
+	-->{{#ifexpr:{{#var:shakingrow:lootitem:count}}|<!-- only if the parameter has a valid value
+		-->{{#if:{{langList|isOnWiki|{{lang}}}}||<!-- and only if we're not on a language wiki
+			-->y<!--
+		-->}}<!--
+	-->}}<!--
+-->}}<!--
+
+// pre-display
+-->{{#lstmap:{{#var:shakingrow:treetypes}}|,|§§treetype§§|<esc><!--
+	-->{{#lstmap:{{#var:shakingrow:conditions}}|,|@@cond@@|<esc1><!--
+		-->{{#vardefine:shakingrow:mode:§§treetype§§_@@cond@@|<!--
+			-->{{#if:{{#var:shakingrow:isnocond}}|<!--
+				-->{{#ifeq:@@cond@@|_|<!--
+					-->default<!-- if nocond and thisisnocond
+				-->|<!--
+					-->{{#ifeq:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}|1||<!--
+						-->default<!-- if nocond and !thisisnocond and condusedbefore
+					-->}}<!--
+				-->}}<!--
+			-->|<!--
+				-->{{#ifeq:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}|1|<!--
+					-->cond-notusedyet<!-- if !nocond and !condusedbefore
+				-->|<!--
+					-->default<!-- if !nocond and condusedbefore
+				-->}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{#switch:{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}<!--
+			-->|default=<!-- regular: simply add to previous
+				-->{{#dplvar:set<!--
+					-->|shakingrow:n:§§treetype§§_@@cond@@|{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}*{{#var:shakingrow:n}}<!--
+					-->|shakingrow:d:§§treetype§§_@@cond@@|{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}*{{#var:shakingrow:d}}<!--
+				-->}}<!--
+			-->|cond-notusedyet=<!-- this cond has not been used yet, hence add to nocond
+				-->{{#dplvar:set<!--
+					-->|shakingrow:n:§§treetype§§_@@cond@@|{{#dplvar:shakingrow:n:§§treetype§§__}}*{{#var:shakingrow:n}}<!--
+					-->|shakingrow:d:§§treetype§§_@@cond@@|{{#dplvar:shakingrow:d:§§treetype§§__}}*{{#var:shakingrow:d}}<!--
+				-->}}<!--
+		-->}}<!--
+	--></esc1>|}}<!--
+	-->{{#if:{{#var:shakingrow:mode:§§treetype§§_day}}|{{#if:{{#var:shakingrow:mode:§§treetype§§_night}}|<!--
+		// if both day and night are printed, then "any other condition" makes no sense, so suppress it
+		-->{{#vardefine:shakingrow:mode:§§treetype§§__|}}<!--
+	-->}}}}<!--
+--></esc>|}}<!--
+
+
+-->{{#if:{{#dplvar:shakingrow:debug}}|<!--
+	--><tr><td colspan=99 style="{{#vardefineecho:shakingrow:debugstyle|border-bottom:2px dashed #0003}}">{{dotlist|space=xxxxl<!--
+		-->|treetypes: {{#var:shakingrow:treetypes}}<!--
+		-->|conds: {{#var:shakingrow:conditions}} {{#if:{{#var:shakingrow:isnocond}}|{{note|paren=y|isnocond{{=}}y}}}}<!--
+		-->|chance: {{#var:shakingrow:n}}/{{#var:shakingrow:d}}<!--
+	-->}}</td></tr><!--
+	--><tr><!--
+		--><td style="{{#var:shakingrow:debugstyle}}"></td><!--
+		-->{{#lstmap:{{#dplvar:shakingrow:alltreetypes}}|,|§§treetype§§|<esc><!--
+			--><td style="{{#var:shakingrow:debugstyle}}; font-size:75%"><!--
+			-->{{#vardefine:_hastreetype|{{#lstind:§§treetype§§|{{#var:shakingrow:treetypes}}|,}}}}<!--
+			-->{{#lstmap:{{#dplvar:shakingrow:allconditions}}|,|@@cond@@|<esc1><!--
+				-->{{#vardefine:_doprint|{{#if:{{#var:_hastreetype}}|{{#lstind:@@cond@@|{{#var:shakingrow:conditions}}|,}}}}}}<!--
+				--><u>''cond:@@cond@@'' mode: <code>{{#if:{{#var:_doprint}}|{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}}}</code></u><br/><!--
+				-->{{#or:{{#if:{{#var:_doprint}}|{{#if:{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}|<!--
+					-->set shakingrow:n:§§treetype§§_@@cond@@ to: {{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}} ('''*{{#var:shakingrow:n}}''') {{=}} {{#expr:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}}}<br/><!--
+					-->set shakingrow:d:§§treetype§§_@@cond@@ to: {{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}} ('''*{{#var:shakingrow:d}}''') {{=}} {{#expr:{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}}}<br/><!--
+					-->print: {{#vardefineecho:_chance|{{#expr:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}}}/{{#expr:{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}}}}} ({{chance|{{#var:_chance}}|4|mode=p}})<!--
+				-->}}}}|<!--
+					-->shakingrow:n:§§treetype§§_@@cond@@: {{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}} {{=}} {{#expr:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}}}<br/><!--
+					-->shakingrow:d:§§treetype§§_@@cond@@: {{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}} {{=}} {{#expr:{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}}}<!--
+				-->}}<!--
+			--></esc1>|<br/>}}<!--
+			--></td><!--
+		--></esc>|}}<!--
+	--></tr><!--
+-->}}<!--
+
+
+// display
+--><tr><!--
+	--><td>{{{item|}}}</td><!--
+	-->{{#lstmap:{{#dplvar:shakingrow:alltreetypes}}|,|§§treetype§§|<esc><!--
+		-->{{#if:{{#lstfnd:§§treetype§§|{{#var:shakingrow:treetypes}}|,}}|<!--
+			-->{{#vardefine:_sortvalue|<!--
+				-->{{#vardefine:_break|}}<!--
+				-->{{#lstmap:{{#var:shakingrow:conditions}}|,|@@cond@@|<esc1>{{#if:{{#var:_break}}||{{#if:{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}|<!--
+					-->{{#expr:<!--
+						-->({{#expr:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}}}/<!--
+						-->{{#expr:{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}}})*100 round 3<!--
+					-->}}<!--
+					-->{{#vardefine:_break|y}}<!--
+				-->}}}}</esc1>|}}<!--
+			-->}}<!--
+			--><td data-sort-value="{{#var:_sortvalue}}"><ul>{{#lstmap:{{#var:shakingrow:conditions}}|,|@@cond@@|<esc1><!--
+				-->{{#if:{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}|<!--
+					-->{{#vardefine:_displaychance|<!--
+						-->{{#expr:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}}}/<!--
+						-->{{#expr:{{#dplvar:shakingrow:d:§§treetype§§_@@cond@@}}}}<!--
+					-->}}<!--
+					--><li title="{{l10n|shakingrow|@@cond@@}}"><!--
+						-->{{#dplvar:shakingrow:condimage:@@cond@@}}&nbsp;{{chance|{{#var:_displaychance}}|4|mode=p}}<!--
+					--></li><!--
+					// cargo storage, if necessary
+					-->{{#if:{{#var:shakingrow:cargo}}|<!--
+						-->{{#vardefine:_rate|{{percent|{{#expr:(({{#var:_displaychance}})/{{#var:shakingrow:lootitem:count}})*100 round 4}} %}}}}<!--
+						-->{{#lstmap:{{#var:shakingrow:lootitem}}|/|@@@@|<esc2>{{cargoStore/Drops<!--
+							-->|name={{eil|{{#dplvar:shakingrow:cargo:treetype:§§treetype§§}}}}<span style="display:none">@@cond@@</span><!-- the output of {{drop infobox}} is grouped by name, so we must make the names unique here, using an invisible string
+							-->|nameraw=Shaking {{#dplvar:shakingrow:cargo:treetype:§§treetype§§}}<!--
+							-->|item=@@@@<!--
+							-->|quantity={{#var:shakingrow:lootquantity|1}}<!--
+							-->|rate={{#var:_rate}}{{#if:{{#dplvar:shakingrow:cargo:cond:@@cond@@}}|<br/>{{note|paren=y|{{eil|{{#dplvar:shakingrow:cargo:cond:@@cond@@}}}}}}}}<!--
+							-->|isfromnpc=no<!--
+							-->|normal=yes<!--
+							-->|expert=yes<!--
+							-->|master=yes<!--
+						-->}}</esc2>|}}<!--
+					-->}}<!--
+				-->}}<!--
+			--></esc1>|}}</ul></td><!--
+		-->|<!--
+			--><td data-sort-value=0>{{#var:na}}</td><!--
+		-->}}<!--
+	--></esc>|}}<!--
+--></tr><!--
+
+// post-display
+-->{{#vardefine:shakingrow:ntoadd|{{#expr:{{#var:shakingrow:d}}-{{#var:shakingrow:n}}}}}}<!--
+-->{{#lstmap:{{#var:shakingrow:conditions}}|,|@@cond@@|<esc>{{#lstmap:{{#var:shakingrow:treetypes}}|,|§§treetype§§|<esc1><!--
+	-->{{#if:{{#var:shakingrow:mode:§§treetype§§_@@cond@@}}|<!--
+		-->{{#vardefine:n-minus-last|<!--
+			-->{{#sub:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}||<!-- substring from n
+				-->{{#rpos:{{#dplvar:shakingrow:n:§§treetype§§_@@cond@@}}|*}}<!-- of everything until the last asterisk
+			-->}}<!--
+		-->}}<!-- i.e., we removed " *42 " from " 1*56*42 ", for example
+		-->{{#dplvar:set<!--
+			-->|shakingrow:n:§§treetype§§_@@cond@@|{{#var:n-minus-last}}*{{#var:shakingrow:ntoadd}}<!--
+		-->}}<!--
+	-->}}<!--
+--></esc1>|}}</esc>|}}<!--
+
+
+--><noinclude>
+{{formatting subpage}}
+
+It automatically calculates the correct chance from a given input taking into consideration all previous chances. This is necessary because it is not correct to claim that the line <code>else if (genRand.Next(35) == 0)</code> somewhere inside the if-else tree in <code>ShakeTree()</code> is identical to a flat 1/35 chance. (Instead, one must take into consideration all previous <code>if</code> and <code>else if</code> checks.) Typically, there are also other conditions aside from just the chance, such as [[Halloween]] being active or that it is [[day]]time. This subpage is capable of recognizing that and printing differentiated chances.
+
+Pass the tree drop as the parameter <code>item</code>, the chance as in the source code as the parameter <code>chance</code>, the tree type as the parameter <code>treetypes</code>, and the condition as the parameter <code>conditions</code>. The chance must be in a <code>&lt;numerator&gt;/&lt;denominator&gt;</code> format, e.g. <code>1/35</code> or <code>2/7</code>. Valid values for tree types and conditions are {{#lstmap:<!--
+
+// copied from [[Trees/Shaking]] (#dplvar:set |shakingrow:alltreetypes)
+-->forest,boreal,jungle,corrupt,crimson,hallowed,palm,corrupt palm,crimson palm,hallowed palm,ash,mushroom<!--
+
+-->|,|@@|<code>@@</code>}} and {{#lstmap:{{#lstrm:_|<!--
+
+// copied from [[Trees/Shaking]] (#dplvar:set |shakingrow:allconditions)
+-->_,day,night,halloween,notoasis,underworld<!--
+
+-->|,}}|,|@@|<code>@@</code>}}, respectively; separate multiple with a comma.
+
+The subpage facilitates storing information to the [[Special:CargoTables/Drops|Drops cargo table]] in a manner similar to {{tl|loot}}. Use the parameter <code>lootitem</code> with a slash-separated list of the raw names of the dropped items, e.g. <code>Coconut/Banana</code>. <code>$lootquantity</code> allows setting a quantity if it is different from the default of 1.
+
+{{note|For debugging, set <code>$debug</code> to <code>on</code>/<code>off</code>.}}
+{{language info|en=Trees/Shaking/row}}
+</noinclude>

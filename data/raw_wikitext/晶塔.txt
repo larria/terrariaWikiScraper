@@ -1,0 +1,250 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| name = Pylons
+| imagealt = <p>[[File:Forest Pylon.png|link=]] [[File:Snow Pylon.png|link=]] [[File:Desert Pylon.png|link=]] [[File:Cavern Pylon.png|link=]]</p><p>[[File:Ocean Pylon.png|link=]] [[File:Jungle Pylon.png|link=]] [[File:Hallow Pylon.png|link=]] [[File:Mushroom Pylon.png|link=]]</p><p>[[File:Universal Pylon.png|link=]]</p>
+| auto = 4876
+| placeable = yes
+| width = 3
+| height = 4
+| buy = @@@@ {{note|paren=y|{{tr|Universal Pylon}}：{{iteminfo|4951|buy}}}}
+| sell = @@@@ {{note|paren=y|{{tr|Universal Pylon}}：{{iteminfo|4951|sell}}}}
+| id = 4875, 4876, 4916–4921, 4951
+| sound1 = Item 6.wav
+| soundcaption1 = 传送
+| cargo = no
+}}
+[[File:Pylon Demonstration spoiler.gif|thumb|[[1.4.0.1]] 更新日志中展示的玩家使用两个{{tr|Pylons}}的动画。]]
+
+'''{{tr|Pylons}}'''是可放置的[[{{tr|furniture}}]]{{tr|items}}，外观为具有[[{{tr|biome}}]]主题的基座上悬浮着一块大水晶。当世界中有 2 个或以上的{{tr|Pylons}}时，玩家就可从一个{{tr|Pylon}}传送到其他{{tr|Pylon}}处。这些{{tr|Pylon}}形成的体系被称为'''{{tr|Pylon}}网络'''（'''Pylon Network'''）。
+
+当玩家位于一个{{tr|pylon}}附近时，可以通过下列任何方式传送到另一个{{tr|pylon}}：
+* 对{{tr|pylon}}按下 {{key|open}} 按键，这会打开[[{{tr|Minimap|link=y}}#{{tr|Modes}}|全屏{{tr|map}}]]，然后在{{tr|map}}上选择另一个{{tr|pylon}}。
+* 按下 {{key|map}} 按键来打开全屏{{tr|map}}，然后在{{tr|map}}上选择另一个{{tr|pylon}}。
+* {{icon|desktop}}在[[{{tr|Minimap|link=y}}#{{tr|Modes}}|叠加模式{{tr|minimap}}]]上选择另一个{{tr|pylon}}。
+
+不过，要让{{tr|pylons}}可以传送玩家，{{tr|pylons}}必须满足以下条件（[[{{tr|Universal Pylon}}]]除外）：{{source code ref|v=1.4.4.9|method=Terraria.GameContent.TeleportPylonsSystem.HandleTeleportRequest}}
+* 以两个{{tr|Pylons}}为中心，各自附近 169×124 格的长方形范围内有 2 个以上住在{{tr|house}}中的友方 [[{{tr|NPCs}}]]（包括[[{{tr|Old Man}}]]和[[{{tr|town pets}}]]）。
+** 更精确来说，{{tr|NPC}} 的[[{{tr|home tile}}]]（对于{{tr|Old Man}}则是[[{{tr|Dungeon}}点]]）必须位于此长方形范围内，且该 {{tr|NPC}} 距离{{tr|home tile}}必须少于 100 格。
+* {{tr|The pylons}}必须被放置在其对应{{tr|biome}}中。{{footnote|name=biomecheck|一个{{tr|pylon}}的{{tr|The biome}}通过执行[[{{tr|biome existence requirement}}]]检查决定，测量范围始于{{tr|pylon}}底部中间那格的中心而非玩家的中心。}}
+
+此外，所有{{tr|pylon}}（包括{{tr|Universal Pylon}}）都有以下限制：
+* {{tr|world}}中每种类型的{{tr|Pylon}}只能放置一个。
+* 当任何 [[{{tr|bosses}}]] 存在或某些[[{{tr|events}}]]启动或激活时无法使用{{tr|Pylons}}。''见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节。''
+* {{tr|Pylons}}仅在[[{{tr|Settings}}]]中[[{{tr|Settings}}#常规|{{tr|minimap}}]]启用时生效。
+* 玩家必须距离{{tr|pylon}} 60 格以内才能使用它。{{source code ref|v=1.4.4.9|struct=Terraria.DataStructures.TileReachCheckSettings&#46;Pylons}}。
+
+== 类型 ==
+{{options/set|item|icons=n}}
+{{options/set|item infobox|view=table|imagemode=full|cols=item2cells-anchor\imageplaced\idtile\:{{BASEPAGENAME}}/Map icon\buy\col:usable|colsep=\|item2cells:nolink=y|extargs=nolink}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Pylon}}
+! 放置时<ref>此处的图像并不完全符合游戏内外观：游戏内{{tr|pylon}}的“水晶”部分会以 4 个像素的幅度上下浮动。它以正弦波形式移动，即相对于此处展示的图像先向下 4 像素，然后向上 4 像素，再向上 4 像素，最后向下 4 像素。完成一次循环需要 5 秒，因此水晶每 312.5 毫秒移动 1 个像素。此外，水晶会发出微弱的光，光的强度也会以同样的正弦波形式增加和降低。{{source code ref|noref=y|v=1.4.0.5|method=Terraria.GameContent.Drawing.TileDrawing.DrawTeleportationPylons}}</ref>
+! [[{{tr|Tile IDs}}]]
+! [[{{tr|Minimap}}]]{{tr|icon}}
+! {{tr|Buy Price}}{{footnote|尽管列出的{{tr|biome pylons}}的买价均为 {{iteminfo|Forest Pylon|buy}}，它们只会在商贩 {{tr|NPC}} 的价格修正系数不超过 90% 时出售（由于[[{{tr|happiness}}]]等因素）。因此，实际买价会在 {{buy expr|Forest Pylon|*0.9}} 至 {{buy expr|Forest Pylon|*0.75}} 之间。}}
+! 使用条件{{footnote|name=biomecheck}}
+{{item infobox | auto = 4876 |tags=vendor|type=Furniture
+| col:usable = 高于[[{{tr|surface}}]][[{{tr|layer}}]]，且不处于其他{{tr|biome}}中。{{footnote|{{tr|The Forest Pylon}}仅在不位于{{tr|Ocean biome}}之内和上方，不位于{{tr|Jungle}}、雪原/{{tr|Ice biome}}、{{tr|Desert}}、{{tr|Glowing Mushroom}}、{{tr|Hallow}}、{{tr|Corruption}}、或{{tr|Crimson biomes}}之内，且不低于{{tr|Surface}}时才会生效。}}
+
+在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，它必须高于[[{{tr|Cavern}}]]{{tr|layer}}，且至少距离底部真正[[{{tr|world}}边界]] 350 格（大约距可见{{tr|world}}边界 310 格），且不处于其他{{tr|biome}}中。{{footnote|对于{{tr|biome}}需求，{{tr|Forest Pylon}}仅在位于左右真正[[世界边界]]至少 380 格远，且不位于{{tr|Jungle}}、雪原/{{tr|Ice biome}}、{{tr|Desert}}、{{tr|Glowing Mushroom}}、{{tr|Hallow}}、{{tr|Corruption}}、或{{tr|Crimson biomes}}之内时才会生效。}}{{source code ref|name=accepttp|v=1.4.4.9|method=Terraria.GameContent.TeleportPylonsSystem.DoesPylonAcceptTeleportation}}
+}}
+{{item infobox | auto = 4920 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Snow biome}}]]中。
+}}
+{{item infobox | auto = 4919 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Desert}}|{{tr|Desert biome}}]]中。
+}}
+{{item infobox | auto = 4917 |tags=vendor|type=Furniture
+| col:usable = 在低于{{tr|surface}}处（包括[[{{tr|The Underworld}}]]）。
+}}
+{{item infobox | auto = 4918 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Ocean}}|{{tr|Ocean biome}}]]中。
+
+在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，可以位于任何地方，只要满足下列条件即可：<ref name="accepttp"/>
+* 不在{{tr|world}}水平方向中部 14% 的区域内。
+* 不在[[{{tr|Space}}]]中（必须低于 65% 高度；见[[{{tr|Space|link=y}}#{{tr|Notes}}|{{tr|Space}} § {{tr|Notes}}]]）。
+* 不在[[{{tr|underground}}]]{{tr|layer}}。
+* 距离底部真正[[{{tr|world}}边界]]至少 350 格（距离可见{{tr|world}}边界约 310 格）。
+}}
+{{item infobox | auto = 4875 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Jungle}}|{{tr|Jungle biome}}]]中。
+}}
+{{item infobox | auto = 4916 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Hallow}}|{{tr|Hallow biome}}]]中。
+}}
+{{item infobox | auto = 4921 |tags=vendor|type=Furniture
+| col:usable = 在[[{{tr|Glowing Mushroom biome}}]]中。
+
+在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，不能在[[{{tr|the Underworld}}]]内。<ref name="accepttp"/>
+}}
+{{item infobox | auto = 4951 |nolink=false|buy=y|cate=no|cargo=no<!-- has its own page, Cargo data is stored there -->
+| col:usable = 任何位置。
+}}
+|}<!--
+-->{{options/reset|item}}<!--
+-->{{options/reset|item infobox}}
+
+== {{tr|Status messages}} ==
+一些[[{{tr|status messages}}]]会在{{tr|pylons}}不正常使用的情况下显示。
+
+{{transclude|clr=y|{{tr|Status messages}}#{{tr|Pylons}}|section=pylon-status-messages}}
+
+此外，如果玩家试图在一个{{tr|world}}中放置第二个同类型的{{tr|pylon}}，并不会有特殊的{{tr|status message}}，而仅仅是无法放置{{tr|pylon}}，且其[[放置预览]]将完全为红色。
+
+== 备注 ==
+* 任何非{{tr|event}}[[{{tr|boss}}]]或[[{{tr|Martian Probe}}]]存在于{{tr|world}}中时，或在下列[[{{tr|events}}]]期间时，无法使用{{tr|Pylons}}：[[{{tr|Frost Moon}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Old One's Army}}]]、和任何[[{{tr|invasion}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AnyDanger}}
+* {{tr|Pylons}}会发出对应其颜色的微弱的光。
+* 当从 {{tr|NPC}} 处购买大部分{{tr|pylons}}（[[{{tr|Universal Pylon}}]]除外）时，有以下限制：
+** {{tr|The NPC}} 必须是一名通常会出售物品的“{{tr|vendor}}”（[[{{tr|Traveling Merchant}}]]和[[{{tr|Skeleton Merchant}}]]除外）。这类 {{tr|NPC}} 包括：
+*: {{flexstart}}{{options|item|icons=no|maxsize=x35px}}{{itemlist|class=terraria|width=8em
+| {{item|Arms Dealer}}
+| {{item|Clothier}}
+| {{item|Cyborg}}
+| {{item|Demolitionist}}
+| {{item|Dryad}}
+| {{item|Dye Trader}}
+| {{item|Goblin Tinkerer}}
+| {{item|Golfer}}
+| {{item|Mechanic}}
+| {{item|Merchant}}
+| {{item|Painter}}
+| {{item|Party Girl}}
+| {{item|Pirate}}
+| {{item|Princess}}
+| {{item|Santa Claus}}
+| {{item|Steampunker}}
+| {{item|Stylist}}
+| {{item|Tavernkeep}}
+| {{item|Truffle}}
+| {{item|Witch Doctor}}
+| {{item|Wizard}}
+| {{item|Zoologist}}
+}}{{options/reset|item}}{{flexend}}
+** {{tr|vendor NPC}} 必须[[{{tr|NPCs}}#{{tr|Happiness}}|足够快乐]]，拥有 90% 或更低的价格修正系数。
+*** 在 [[{{tr|don't dig up}}]] 和 [[{{tr|get fixed boi}}]] {{tr|world}}中无视此限制，因为{{tr|happiness}}系统在这些{{tr|worlds}}中被禁用。
+** 在{{tr|vendor NPC}} 附近必须至少有一名其他 {{tr|NPC}}。
+** 玩家不处于[[{{tr|evil biome}}]]（[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]）中。
+* 注意 {{tr|NPC Happiness}}仅在''购买''{{tr|pylon}}时有关。在''使用''{{tr|pylon}}时，两位 {{tr|NPC}} 需居住在附近，但二者均无需为{{tr|pylon}}的出售者，且其{{tr|happiness}}与{{tr|Pylon}}网络的运转不相干。
+* [[{{tr|hybrid biome}}]]可能会导致 {{tr|NPC}} 的{{tr|inventory}}中出现多个{{tr|pylons}}，但[[{{tr|Forest}}]]和[[{{tr|Cavern}}]]除外。此二者彼此独立，且仅在不处于{{tr|Snow, Desert, Ocean, Jungle, Hallow}}或{{tr|Glowing Mushroom biomes}}时才有可能位于此。
+* 和所有[[{{tr|biome-specific}}售卖物品]]一样，{{tr|NPCs}} 会基于玩家所在的{{tr|biome}}售卖{{tr|pylons}}，而不是 {{tr|NPC}} 所在的{{tr|biome}}。
+** 相似地，{{tr|pylons}}会基于{{tr|pylon}}本身所在的{{tr|biome}}来判断是否生效，而不是允许它生效的 {{tr|NPCs}} 所在的{{tr|biome}}。
+* 居住在{{tr|Underworld}}的 {{tr|NPCs}} 会在此{{tr|biome}}中售卖{{tr|Cavern Pylon}}，虽然技术上来说它是完全不同的{{tr|biome}}。
+* {{tr|NPCs}} 不会在商店中没有可用空间的情况下售卖{{tr|pylons}}。一个例子为击败[[{{tr|Golem}}]]后的[[{{tr|Tavernkeep}}]]，由于他的商店栏被独特物品填满，他不再会售卖{{tr|pylons}}。
+* [[{{tr|Universal Pylon}}]]是一件[[{{tr|Moon Lord}}]]后{{tr|item}}，因为需要完整的[[{{tr|Bestiary}}]]才能获得它，这需要击败{{tr|Moon Lord}}。
+* 可以购买一个{{tr|pylon}}后不[[{{tr|place}}]]它。因此，可以将 {{tr|NPC}} 转移到一个位置来购买{{tr|pylon}}，然后再将其转移到其它地方。（这对于反感某个{{tr|biome}}却被另一个 {{tr|NPCs}} 所喜欢/喜爱的 {{tr|NPC}} 来说很有用）。
+* 由于悬浮的水晶并不是{{tr|tile}}，而仅仅是一个图像，它们不能被刷上[[{{tr|paint}}]]。{{tr|pylon}}的实际{{tr|tile}}只包括其（可以被刷上{{tr|paint}}的）底座。
+* 由于[[{{tr|Princess}}]]没有{{tr|biome}}偏好，可以从她那里购得所有{{tr|pylon}}，只要她在正确的{{tr|biome}}中。
+* 要使用{{tr|pylon}}并不严格需求与其交互。在有效的{{tr|pylon}}附近用任何方式打开{{tr|map}}也能够进行传送。
+
+== 小贴士 ==
+* {{tr|Pylons}}在[[{{tr|Lunar Event}}]]期间可以被用于在世界各个位置旅行并和多个{{tr|Celestial Pillar}}战斗，允许玩家轻松地选择对战{{tr|Celestial Pillar}}的顺序。这一例外并不包括{{tr|Moon Lord}}，此外它们也不能在其它{{tr|invasions}}/{{tr|boss}} 战中使用。
+* 只需要使用在击败 {{tr|boss}} 前就能获得的 {{tr|NPCs}} 的组合就可以在很早就得到所有[[{{tr|pre-hardmode}}]]的{{tr|pylons}}：{{tr|The Arms Dealer}}和{{tr|The Nurse}}，或{{tr|The Golfer}}和{{tr|The Angler}}。
+* {{tr|The Pylon}}网络可以被数种其它形式的传送或运输来补足，这些方法''全都''能在 {{tr|boss}} 战和{{tr|invasions}}期间生效（[[{{tr|Wall of Flesh}}]]除外，因为有[[{{tr|Horrified}}]]{{tr|debuff}}）：
+** 每名玩家都可以使用[[{{tr|Recall Potion}}]]、[[{{tr|Magic Mirrors}}]]{{tr|or its upgrades}}来传送到各自的[[{{tr|spawn point}}]]。
+** [[{{tr|Shellphone}}]]和[[{{tr|Magic Conch}}]]可以传送到两个[[{{tr|Ocean}}]]。
+** {{tr|Shellphone}}和[[{{tr|Demon Conch}}]]可以传送到{{tr|Underworld}}中心（可能需要在那里建造一个{{tr|platform}}，尤其是在 [[{{tr|drunk world}}]] 中）。
+** 每个{{tr|pylon}}和三个海螺传送点可以被用于各处[[{{tr|Minecart Track}}]]网络的枢纽；在营救了[[{{tr|Mechanic}}]]后，也可以用作[[{{tr|Teleporter}}]]的中心枢纽。
+* 由于能够使用{{tr|Cavern Pylon}}的区域非常广，它有很多种用法：
+** 在[[{{tr|Dungeon}}]]外放置{{tr|Cavern Pylon}}有不少好处，其中之一为击败[[{{tr|Skeletron}}]]后就能立即进入{{tr|Dungeon}}的较深处。
+*** 在击败{{tr|Skeletron}}前在{{tr|Dungeon}}旁建造[[{{tr|town}}]]是可行的，因为[[{{tr|Dungeon Guardian}}]]只会在玩家处于{{tr|Dungeon}}''内部''时生成（更具体来说，在玩家处于[[{{tr|Unsafe wall}}|不安全]]的[[{{tr|Dungeon Brick Wall}}]]前时）。
+*** 由于{{tr|Dungeon}}在{{tr|Ocean}}附近，这意味着两片{{tr|Oceans}}都能简单地到达，只要在另一片{{tr|Ocean}}放置{{tr|Ocean Pylon}}即可。
+*** 如果至少有三名 {{tr|NPCs}}，{{tr|Dungeon}}的一部分可能会被视作{{tr|town}}。虽然这部分不大，但它能提供一片相对安全的区域，处理{{tr|enemy}}时不会有其它{{tr|enemy}}立即生成（注意这一效果是由{{tr|town}}提供的，它并不必需{{tr|pylon}}）。
+*** 在游戏更后阶段，玩家无需担心不小心触发和[[{{tr|Lunatic Cultist}}]]的战斗，因为玩家更常用{{tr|pylon}}处的入口来进入{{tr|Dungeon}}，而非自然生成的那个入口。
+*** 除了实际的好处，它也会为{{tr|town}}和{{tr|Dungeon}}提供独特风景。
+*** 不建议在[[{{tr|multiplayer}}]]中使用此设置，因为有玩家处于{{tr|Dungeon}}中时可能会导致范围内的{{tr|Dungeon enemies}}传送到/攻击处于{{tr|town}}中的玩家。
+** 或者，在玩家的基地附近的[[{{tr|Underground}}]]{{tr|layer}}的顶部建造{{tr|Cavern Pylon}}可能会较为方便，尤其是{{tr|multiplayer}}下或所有玩家都获得{{tr|Magic Mirrors}}时。（如果想要的话，）这允许玩家将基地区域变为[[{{tr|The Hallow}}]]而无需更换{{tr|pylons}}。{{tr|Dungeon}}处的{{tr|town}}则可以使用它所在的[[{{tr|surface}}]]{{tr|biome}}的{{tr|pylon}}（通常为[[{{tr|Forest}}]]），能够更快地到达{{tr|Ocean}}而保留快速到达{{tr|Dungeon}}的方式。
+** {{tr|Cavern Pylon}}的另一种用处是将其放置在{{tr|Underworld}}中或附近，作为传统的[[{{tr|Hellevator}}]]的可选替代品。
+* {{icon|desktop}}当打开[[{{tr|Minimap|link=y}}#{{tr|Modes}}|叠加模式{{tr|minimap}}]]时，玩家可以通过手持[[{{tr|the Grand Design}}]]并在{{tr|pylon}}附近时点击{{tr|map}}上的{{tr|pylon icon}}来放置[[{{tr|wire}}]]。这会立即放下一条起始于和{{tr|map icon}}重合的{{tr|tile}}、结束于目的地{{tr|pylon}}处位于屏幕上同一位置的{{tr|tile}}的{{tr|wire}}。
+* {{tr|The Universal Pylon}}较为独特，它能够在任何地方生效，且不需要附近有 {{tr|NPC}}，使得它更加有用。携带它的玩家可以将其用作无限使用的[[{{tr|Potion of Return}}]]。
+* 第三方[[{{tr|Map viewers}}|世界编辑程序]]可以越过“每种{{tr|pylon}}仅限一个”的规则。只要有足够的 {{tr|NPC}}，额外的{{tr|pylons}}就能正常工作。
+
+=== 购买{{tr|pylons}} ===
+[[File:PylonsPals v1.png|thumb|一种允许购买{{tr|pylons}}的组合建议。]]
+[[File:Yeems420 Pylon Guide.png|thumb|另一种允许购买{{tr|pylons}}的组合建议。]]
+
+在购买{{tr|pylon}}时，以下{{tr|tips}}可能会派上用场：
+* {{tr|NPC}} 的关系并不总是双向对应的，但要获得{{tr|pylon}}只需要有其中''一名''{{tr|vendor}}足够快乐。他们喜欢的 {{tr|NPC}}（帮助他们达到足够快乐的那位）甚至并不需要是一名{{tr|vendor}}。
+* “空旷”奖励能够达到大部分的价格修正系数，这要求 25 格内最多只有两名其他 {{tr|NPC}}，而 25 到 120 格内最多只能再有其他三名。
+** 由于 {{tr|NPCs}} 仅会在附近有另一名 {{tr|NPC}} 的情况下售卖{{tr|pylons}}，仅仅将{{tr|vendor}}放置于其喜爱的{{tr|biome}}之中并''不会''让他售卖{{tr|pylon}}。
+* 在更拥挤的区域，{{tr|bonuses}}仍可叠加。举个例子，对于一名喜爱所在{{tr|biome}}，且喜欢其最近的邻居的 {{tr|NPC}}，就有可能在 120 格内有过多 {{tr|NPC}}因而无法获得“空旷”奖励的情况下保持足够快乐。
+
+下表显示了哪些 {{tr|NPC}} 可以安置在与{{tr|pylon}}相符的{{tr|biome}}中（与其他 {{tr|NPC}} 保持一定距离），以确保其中一个 {{tr|NPC}} 愿意出售{{tr|pylon}}。这些只是示例，并不是可用于获得{{tr|pylon}}的每个组合的完整列表。
+{{options/set|item|icons=n}}
+{| class="terraria lined"
+! colspan=2 rowspan=2 | {{tr|Pylon}}
+! colspan=2 | {{tr|NPC}} 组合示例
+|-
+! 商贩
+! 第二个 {{tr|NPC}}
+|-
+| {{item|mode=table|link=|Forest Pylon}}
+| {{item|Zoologist}}
+| {{dotlist| {{item|Witch Doctor}} | {{item|Golfer}} }}
+|-
+| {{item|mode=table|link=|Snow Pylon}}
+| {{item|Mechanic}}
+| {{dotlist| {{item|Goblin Tinkerer}} | {{item|Cyborg}} }}
+|-
+| {{item|mode=table|link=|Desert Pylon}}
+| {{item|Dye Trader}}
+| {{dotlist| {{item|Arms Dealer}} | {{item|Painter}} }}
+|-
+| {{item|mode=table|link=|Cavern Pylon}}
+| {{item|Tavernkeep}}
+| {{dotlist| {{item|Demolitionist}} | {{item|Clothier}} }}
+|-
+| {{item|mode=table|link=|Ocean Pylon}}
+| {{item|Pirate}}
+| {{dotlist| {{item|Angler}} | {{item|Tavernkeep}} }}
+|-
+| {{item|mode=table|link=|Jungle Pylon}}
+| {{item|Painter}}
+| {{dotlist| {{item|Dryad}} }}
+|-
+| {{item|mode=table|link=|Hallow Pylon}}
+| {{item|Wizard}}
+| {{dotlist| {{item|Party Girl}} | {{item|Dryad}} | {{item|Nurse}} }}
+|-
+| {{item|mode=table|link=|Mushroom Pylon}}
+| {{item|Truffle}}
+| {{dotlist| {{item|Dryad}} | {{item|Guide}} }}
+|}{{options/reset|item}}
+
+== 花絮 ==
+* 虽然{{tr|pylons}}的水晶在游戏暂停时仍然会悬浮并旋转，但在切离游戏界面（游戏失焦）后它们就只会悬浮而不会旋转。
+* {{tr|Pylons}}（Pylon）很像在 1998 年军事科幻实时战略游戏{{维基百科|b=y|StarCraft (video game)|StarCraft|t=-{zh-cn:星际争霸;zh-tw:星海爭霸}-}}中，由外星种族[https://starcraft.fandom.com/wiki/Protoss -{zh-cn:星灵;zh-tw:神族}-（Protoss）]建造的[https://starcraft.fandom.com/wiki/Pylon 水晶塔（Pylon）]。
+** [[{{tr|Universal Pylon}}]]的{{tr|tooltip}}也参考了该游戏。
+* 普通{{tr|Pylon}}的最高价格为 {{buy expr|Forest Pylon|*0.9}}。这是因为虽然所有普通{{tr|pylons}}的基础价格为 {{iteminfo|Forest Pylon|buy}}，但 {{tr|NPC}} 必须具有至少 90% 的价格修正系数（由[[{{tr|happiness}}]]导致）才会售卖{{tr|pylon}}，所以{{tr|pylon}}永远不能以其原基础价格购得。
+** 在 [[{{tr|Get fixed boi}}]] 和 [[{{tr|Don't dig up}}]] {{tr|worlds}}时除外，这些{{tr|world}}中禁用了{{tr|happiness}}。
+* 通过[[{{tr|minimap}}]]来访问{{tr|Pylons}}就可以在游戏暂停时使用{{tr|Pylons}}。
+* 在 2016 年的模拟角色扮演游戏[[《{{tr|Stardew Valley}}》]]中，一件称为{{iwlink|stardewzh|异界晶石}}的秘密{{tr|crossover item}}看上去和{{tr|Forest Pylon}}的水晶相同。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 增加了可使用{{tr|Pylons}}的最大距离（现在应该不可能出现能开启{{tr|pylon}}，却（因为距离被开启的{{tr|pylon}}较远而）无法使用它传送的情况）。
+** 现在可以在{{tr|Moon Lord}}正在被召唤的这段时间期间使用{{tr|Pylons}}。}}
+{{history|Desktop 1.4.3.3|
+** 现在{{tr|Pylons}}至少需要有 2 个 {{tr|NPC}} 待在一起时才会售卖。
+** {{tr|NPCs}} 能够售卖{{tr|Pylons}}的最低{{tr|happiness}}要求由 0.85 降低至 0.9（即所需价格修正系数由 85% 改为 90%）。这意味着让 {{tr|NPC}} 足够快乐到能够售卖{{tr|Pylon}}更加容易。}}
+{{history|Desktop 1.4.1|
+** 修复了{{tr|Pylon}}的 {{tr|NPC}} 探测仅检测 [[{{tr|NPC flag}}]]而不是 {{tr|NPCs}} 是否存在于家附近的问题。
+** 现在在[[{{tr|Lunar Events}}]]期间可用。}}
+{{history|Desktop 1.4.0.5|
+** 修复了[[{{tr|Ocean}}]]{{tr|Pylon}}可以在无法使用它的[[{{tr|underground}}]]售卖的 {{tr|bug}}。
+** {{tr|Tavernkeep}}不再会在其独特商店满时售卖{{tr|Pylons}}。
+** [[{{tr|Forest}}]]{{tr|Pylon}}现在也可以在{{tr|sky}}中使用。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步到{{tr|Desktop}} 1.4.0.5 的改动。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步直至{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Pylons}}

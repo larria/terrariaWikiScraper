@@ -1,0 +1,274 @@
+此页面专门计算{{tr|crate}}内容的价值。如果你不在乎各种小计，可以直接跳到末尾的[[#总结|总结]]。Wiki 编辑们可以检测源码中的公式。
+
+== {{tr|Crate}}内容 ==
+所有类型的宝匣中所含的物品的掉落几率都是随机的。尽管几乎不能确定里面所含的物品，不过当打开宝匣的数量足够多时，就可以知道宝匣中可收集的战利品究竟有什么。
+
+* 任何宝匣都会掉落钱币， 以及所有类型的宝匣所掉落的平均钱币数量，均大于所有其他物品的平均售价。<!-- Took me a while to realize that and break "cash" out of "misc".  I'm not always quick on the uptake ;-) -->
+* 金属矿和锭：    
+** 所有宝匣都包含锭，但只有木匣包含矿石。
+** 困难模式之前，只掉落困难模式之前的金属；在困难模式中，所有金属的掉率与掉落数量都会发生巨大变化，但是困难模式的金属不仅会出现，而且比困难模式之前的金属掉率高。<!-- Arguably even the Wooden rate favors the Hardmode metals, since equal numbers are split among fewer metals. -->这提高了困难模式宝匣中金属的平均价值。
+** 木匣与铁匣中包含任何金属，但较高等级的宝匣会略去较低等级的金属。生物群落的宝匣缺少铜/锡，而金色的宝匣不仅缺少铜/锡，还缺少铁/铅和钴/钯。这提高了它们的金属价值，尤其对困难模式中的金匣的提升。
+** 对于任何给定品阶的{{tr|crate}}，所有确实会出现的{{tr|pre-Hardmode metals}}，出现的几率和数目都是相等的，所有{{tr|Hardmode metals}}亦然。这包括了每个品阶的“代用”{{tr|metals}}。
+* {{tr|Buff potions}}。{{tr|potions}}的种类和数目是多样化的，但所有此类{{tr|buff potions}}售价均为 {{Sc|2}}。<!-- This took me way too long to figure out. ;-)  -->
+* {{tr|Wooden and biome crates}}可包含一个稀有特殊物品列表中的一样{{tr|item}}。若以{{tr|Dungeon crate}}为例，那么该{{tr|item}}为[[{{tr|Golden Lock Box}}]]，后者也可以提供更多的钱（大约是每个{{tr|crate}}半金币）和其他{{tr|items}}。这些{{tr|items}}大多与世界上放置的相应{{tr|chests}}所提供的物品相同；虽然它们中的许多对早期游戏进程很重要，但它们仍然是{{tr|pre-Hardmode}}的物品，并且没有太大的价值，甚至在按比例分配它们出现的机会之前。
+* 各种杂项物品，包括{{tr|Healing Potion, Mana potions}}和鱼饵，根据{{tr|crate}}等级分为不同等级。此小计还包括任何其他有自己掉落几率的“稀有”物品，而非将其列为“特殊”清单的一部分——这些物品仅对{{tr|iron and gold crates}}增加了重要价值，而后者完全没有“特殊”清单
+* 在{{tr|Hardmode}}中，除了{{tr|metals}}发生了变化，部分{{tr|crates}}会开始提供有独有掉率的额外{{tr|items}}。
+
+{{tr|ores}}、{{tr|bars}}和"特殊列表"中的{{tr|items}}的最初价值为列表中的简单平均，即列表中的每一个{{tr|item}}。同样，{{tr|Healing Potion}}/{{tr|mana potions}}不在主{{tr|potion}}列表中，但与“杂项”物品一起使用；同样，“特殊列表”只是{{tr|crate}}类型的主要列表，任何有单独几率出现的都会出现在“其他”中。“按比例”值根据几率和数量进行调整。{{tr|Crate values}}是每个{{tr|crate}}的平均值。<!--
+
+-->  {{#vardefine:_early-ore-avg|{{sell expr|raw=y||(|Copper Ore|+|Tin Ore|+|Iron Ore|+|Lead Ore|+|Silver Ore|+|Tungsten Ore|+|Gold Ore|+|Platinum Ore|)/8}} }} <!--
+--> {{#vardefine:_late-ore-avg|{{sell expr|raw=y||(|Cobalt Ore|+|Mythril Ore|+|Adamantite Ore|+|Palladium Ore|+|Orichalcum Ore|+|Titanium Ore|)/6}} }} <!--
+--> {{#vardefine:_early-bar-avg|{{sell expr|raw=y||(|Copper Bar|+|Tin Bar|+|Iron Bar|+|Lead Bar|+|Silver Bar|+|Tungsten Bar|+|Gold Bar|+|Platinum Bar|)/8}} }} <!--
+--> {{#vardefine:_late-bar-avg|{{sell expr|raw=y||(|Cobalt Bar|+|Mythril Bar|+|Adamantite Bar|+|Palladium Bar|+|Orichalcum Bar|+|Titanium Bar|)/6}} }}<!--
+--> 
+==[[{{tr|Wooden Crate}}]]==
+
+{{#vardefine:_wood-potion-avg|{{sell expr|raw=y||(|Obsidian Skin Potion|+|Swiftness Potion|+|Ironskin Potion|+|Night Owl Potion|+|Shine Potion|+|Hunter Potion|+
+    |Gills Potion|+|Mining Potion|+|Heartreach Potion|+|Dangersense Potion|)/10}} }} <!--
+--> {{#vardefine:_wood-special-avg|{{sell expr|raw=y||(|Aglet|+|Umbrella|+|Climbing Claws|+|Guide to Plant Fiber Cordage|+|Radar|)/5}} }} <!--
+
+--> {{#vardefine:_wood-misc-share|{{sell expr|raw=y|Sailfish Boots|/40 +|Tsunami in a Bottle|/40 +|Extractinator|/50 +
+   (|Lesser Healing Potion|+|Lesser Mana Potion|)/2 /3*10 <!-- Average of the two, 1 chance in 3, average count 10 --> + 
+    (|Apprentice Bait|*2 +|Journeyman Bait|)/3 *2.5 <!-- Weighted average of the two, average count 2.5 -->
+    }} }} <!--
+--> {{#vardefine:_wood-cash-share|{{sell expr|raw=y||(|Silver Coin|*55+|Gold Coin|*2.5)/3}} }} <!--
+--> {{#vardefine:_wood-hard-share|{{sell expr|raw=y|Enchanted Sundial|/200 +|Anchor|/25 }} }} <!--
+
+--> <!-- Totals -->
+{{#vardefine:_wood-crate-value-easy| {{#expr: {{#var:_early-ore-avg}}/7*14  + {{#var:_early-bar-avg}}/8*4.5 + {{#var:_wood-potion-avg}}/7.0*2 + ({{#var:_wood-special-avg}}/45) + {{#var:_wood-misc-share}} + {{#var:_wood-cash-share}} }} }} <!--
+--> {{#vardefine:_wood-crate-value-hard| {{#expr:{{#var:_early-ore-avg}}/14*14  + {{#var:_late-ore-avg}}/14*14+ {{#var:_early-bar-avg}}/14*14 + {{#var:_late-bar-avg}}/14*4 +  {{#var:_wood-potion-avg}}/7*2 + {{#var:_wood-special-avg}}/45 + {{#var:_wood-misc-share}} + {{#var:_wood-cash-share}} + {{#var:_wood-hard-share}} }} }} <!--
+--> 
+=== 部分总和 ===
+* 1 个{{tr|ore}}的平均获利，均为{{tr|pre-hardmode}}“基础”{{tr|metals}}：  {{coin|round=-2|{{#var:_early-ore-avg}} }}
+* 1 个{{tr|ore}}的平均获利，均为{{tr|hardmode}}“基础”{{tr|metals}}：  {{coin|round=-2|{{#var:_late-ore-avg}} }}
+* 1 个{{tr|bars}}的平均获利，均为{{tr|pre-hardmode}}“基础”{{tr|metals}}：  {{coin|round=-2|{{#var:_early-bar-avg}} }}
+* 1 个{{tr|bars}}的平均获利，均为{{tr|hardmode}}“基础”{{tr|metals}}：  {{coin|round=-2|{{#var:_late-bar-avg}} }}
+* 1 个 "特殊{{tr|item}}"的平均获利，{{tr|wooden crate}}列表：  {{coin|round=-2|{{#var:_wood-special-avg}} }}
+* {{tr|wooden crate}}现金，比例为：  {{coin|round=-2|{{#var:_wood-cash-share}} }}
+* {{tr|wooden crate}}其他{{tr|item}}，比例为：  {{coin|round=-2|{{#var:_wood-misc-share}} }}
+* {{tr|wooden crate}}{{tr|Hardmode}}独有{{tr|items}}(除去{{tr|ores}}/{{tr|bars}}) ，比例为：  {{coin|round=-2|{{#var:_wood-hard-share}} }}
+* {{tr|wooden crate}}的平均金属产出，{{tr|Pre-Hardmode}}：  {{#expr:14/7 round 2}} {{tr|ore}}和{{#expr:4.5/8 round 2}} {{tr|bars}}（8 种{{tr|metals}}）
+* {{tr|wooden crate}}的平均金属产出，{{tr|Hardmode}}：  {{#expr:14/14 round 2}} {{tr|ore}}和{{#expr:14/14 round 2}} {{tr|bars}}（8 种早期{{tr|metals}}）， {{#expr:14/14 round 2}} {{tr|ore}}和{{#expr:14/14 round 2}}{{tr|bars}}（6 种后期{{tr|metals}}）
+
+=== 最终{{tr|Values}} ===
+* {{tr|Wooden Crate}}，{{tr|pre-hardmode}}平均{{tr|value}}： {{coin|round=-2|{{#var:_wood-crate-value-easy}} }}
+* {{tr|Wooden Crate}}，{{tr|Hardmode}}平均{{tr|value}}： {{coin|round=-2|{{#var:_wood-crate-value-hard}} }}
+
+==[[{{tr|Iron Crate}}]]==
+=== 部分总和 ===
+{{#vardefine:_iron-potion-avg|{{sell expr|raw=y||(|Obsidian Skin Potion|+|Spelunker Potion|+|Hunter Potion|+|Gravitation Potion|+|Mining Potion|+|Heartreach Potion|+
+    |Calming Potion|+|Flipper Potion|)/8}} }} 
+{{#vardefine:_iron-cash-share|{{sell expr|raw=y|Gold Coin|*7.5/4 }} }} 
+{{#vardefine:_iron-misc-share|{{sell expr|raw=y|Sailfish Boots|/20 +|Tsunami in a Bottle|/20 +|Ginger Beard|/25 +
+    |Tartar Sauce|/21 + |Falcon Blade|/16 +
+   (|Healing Potion|+|Mana Potion|)/2 /2*10 <!-- Average of the two, 1 chance in 2, average count 10 --> + 
+    (|Journeyman Bait|*2 +|Master Bait|)/3 *2.5 <!-- Weighted average of the two, average count 2.5 --> 
+    }} }} 
+{{#vardefine:_iron-hard-share|{{sell expr|raw=y|Enchanted Sundial|/60 +|Anchor|/25 }} }} 
+
+* {{tr|Iron crate}}特殊：无列表{{tr|items}}
+* {{tr|Iron crate}}现金，比例为：  {{coin|{{#var:_iron-cash-share}} }}
+* {{tr|Iron crate}}其他，比例为：  {{coin|{{#var:_iron-misc-share}} }}
+* {{tr|Iron crate}}{{tr|hardmode}}，比例为：  {{coin|{{#var:_iron-hard-share}} }}
+* {{tr|Iron crate}}的平均金属产出，{{tr|Pre-Hardmode}}： {{#expr:4.5/8 round 2}} {{tr|bars}}(8 种{{tr|metals}}）
+* {{tr|Iron crate}}的平均金属产出，{{tr|Hardmode}}：  {{#expr:12/10 round 2}} {{tr|bars}}（8 种早期{{tr|metals}}）， {{#expr:9.5/6 round 2}} {{tr|bars}}（6 种后期{{tr|metals}}）
+=== 最终{{tr|Values}} ===
+
+{{#vardefine:_iron-crate-value-easy|{{#expr:{{#var:_early-bar-avg}}/8*4.5 + {{#var:_iron-potion-avg}}/7*2 + 
+    {{#var:_iron-misc-share}} +  {{#var:_iron-cash-share}} 
+}} }}
+{{#vardefine:_iron-crate-value-hard|{{#expr:{{#var:_early-bar-avg}}/10*12 + {{#var:_late-bar-avg}}/6*9.5 +  {{#var:_iron-potion-avg}}/4*2 + 
+    {{#var:_iron-misc-share}} + {{#var:_iron-cash-share}} + {{#var:_iron-hard-share}} }} }}
+
+* {{tr|Iron Crate}}{{tr|pre-Hardmode}}：  {{coin|{{#var:_iron-crate-value-easy}} }}
+* {{tr|Iron Crate}}{{tr|Hardmode}}：  {{coin|{{#var:_iron-crate-value-hard}} }}
+
+== {{tr|Biome Crates}} ==
+* [[{{tr|Jungle Crate}}]]
+* [[{{tr|Sky Crate}}]]
+* [[{{tr|Corrupt Crate}}]]
+* [[{{tr|Crimson Crate}}]]
+* [[{{tr|Hallowed Crate}}]]
+* [[{{tr|Dungeon Crate}}]]
+
+=== 部分总和 ===
+{{tr|Biome crates}}不含{{tr|Tin}}或{{tr|Copper}}。
+{{#vardefine:_early-bar-biome-avg|{{sell expr|raw=y||(|Iron Bar|+|Lead Bar|+|Silver Bar|+|Tungsten Bar|+|Gold Bar|+|Platinum Bar|)/6}} }} <!--
+--> 
+* 早期{{tr|bars }}(不含{{tr|Tin}}/{{tr|Copper}})： {{coin|{{#var:_early-bar-biome-avg}} }}
+* 后期{{tr|Bars}}：与{{tr|Wood/Iron}}相同
+* {{tr|Biome Potions}}：与{{tr|Iron}}的相同 
+* {{tr|Hardmode}}：除{{tr|bars}}外均不相同，部分{{tr|biomes}}有{{tr|hardmode bonuses}}（如下）。  <!--
+
+--> {{#vardefine:_biome-cash-share|{{sell expr|raw=y||
+    (|Gold Coin|*8.5)/4 
+    }} }} <!--
+--> {{#vardefine:_biome-misc-share|{{sell expr|raw=y||
+   (|Healing Potion|+|Mana Potion|)/2 /2*11 <!-- Average of the two, 1 chance in 2, average count 11 --> + 
+    (|Journeyman Bait|*2 +|Master Bait|)/3 *2.5 <!-- Weighted average of the two, average count 2.5 -->
+    }} }}<!--
+-->
+* {{tr|Biome}}(普通) 其他，比例为：  {{coin|{{#var:_biome-misc-share}} }}
+* {{tr|Biome}}(普通) 现金，比例为：  {{coin|{{#var:_biome-cash-share}} }} <!--
+--> {{#vardefine:_biome-crate-value-easy|{{#expr:  {{#var:_early-bar-biome-avg}}/4*15 + {{#var:_iron-potion-avg}}/4*3 + 
+    {{#var:_biome-misc-share}} + {{#var:_biome-cash-share}} 
+}} }} <!--
+--> {{#vardefine:_biome-crate-value-hard|{{#expr: {{#var:_early-bar-biome-avg}}/18*15 + {{#var:_late-bar-avg}}/9*14 + {{#var:_iron-potion-avg}}/4*3 + 
+    {{#var:_biome-misc-share}}  + {{#var:_biome-cash-share}}  
+}} }} <!--
+
+--> 
+* {{tr|Biome crate}}的平均金属产出，{{tr|Pre-Hardmode}}： {{#expr:15/4 round 2}} {{tr|bars}}（6 种{{tr|metals}}）
+* {{tr|Biome crate}}的平均金属产出，{{tr|Hardmode}}： {{#expr:15/18 round 2}} （6 种早期{{tr|metals}}）， {{#expr:14/9 round 2}} {{tr|bars}}（6 种后期{{tr|metals}}）
+
+* {{tr|Biome}}(普通) {{tr|Value}}，{{tr|pre-Hardmode}}：  {{coin|{{#var:_biome-crate-value-easy}} }}
+* {{tr|Biome}}(普通){{tr|Value}}，{{tr|Hardmode}}：  {{coin|{{#var:_biome-crate-value-hard}} }}
+
+{{#vardefine:_jungle-special-avg|{{sell expr|raw=y||(|Anklet of the Wind|+|Boomstick|+|Feral Claws|+|Staff of Regrowth|+|Fiberglass Fishing Pole|)/5}} }} <!--
+--> {{#vardefine:_sky-special-avg|{{sell expr|raw=y||(|Lucky Horseshoe|+|Starfury|+|Shiny Red Balloon|)/3}} }} <!--
+--> {{#vardefine:_corrupt-special-avg|{{sell expr|raw=y||(|Ball O' Hurt|+|Band of Starpower|+|Musket|+|Shadow Orb|+
+      |Vilethorn|)/5}} }} <!--
+--> {{#vardefine:_crimson-special-avg|{{sell expr|raw=y||(|The Undertaker|+|The Rotted Fork|+|Crimson Rod|+|Panic Necklace|+|Crimson Heart|)/5}} }}<!--
+-->
+* {{tr|Jungle}}特殊物品： {{coin| {{#var:_jungle-special-avg}}}}
+* {{tr|Sky}}特殊物品： {{coin| {{#var:_sky-special-avg}}}}
+* {{tr|Corrupt}}特殊物品： {{coin| {{#var:_corrupt-special-avg}}}}
+* {{tr|Crimson}}特殊物品： {{coin| {{#var:_crimson-special-avg}}}}
+* {{tr|Hallowed}}特殊物品： 无 
+{{#vardefine:_lockbox-special-avg|{{sell expr|raw=y||(|Magic Missile|+|Muramasa|+|Cobalt Shield|+|Aqua Scepter|+|Blue Moon|+|Handgun|+|Shadow Key|)/7}} }} <!--
+--> {{#vardefine:_lockbox-potion-avg|{{sell expr|raw=y||(|Spelunker Potion|+|Endurance Potion|+|Gravitation Potion|+|Heartreach Potion|+|Ironskin Potion|
+     +|Magic Power Potion|+|Obsidian Skin Potion|+|Wormhole Potion|)/8}} }}  <!-- Recall is same price as Wormhole --> <!--
+--> {{#vardefine:_lockbox-misc-share|{{sell expr|raw=y|Healing Potion|/3*3.5 }} }} <!--
+--> {{#vardefine:_lockbox-cash-share|{{sell expr|raw=y||(|Gold Coin|*4)*2/3 + (|Silver Coin|*54.5)/2 + 
+       (|Copper Coin|*54.5)/2 }} }} <!--
+--> {{#vardefine:_lockbox-value|{{#expr: {{#var:_lockbox-special-avg}} + {{#var:_lockbox-potion-avg}}*2/3*24 + 
+       {{#var:_lockbox-misc-share}} + {{#var:_lockbox-cash-share}} }} }} 
+* {{tr|Dungeon}}特殊物品： 通过锁盒。
+** 锁盒特殊物品 {{coin| {{#var:_lockbox-special-avg}}}}
+** 锁盒{{tr|Potions}}： {{coin| {{#var:_lockbox-potion-avg}}}}<!-- Recall is same price as Wormhole -->
+** 锁盒其它，比例为：  {{coin|{{#var:_lockbox-misc-share}} }}
+** 锁盒现金，比例为：  {{coin|{{#var:_lockbox-cash-share}} }}
+* 锁盒{{tr|value}}：  {{coin|{{#var:_lockbox-value}} }}
+{{#vardefine:_corrupt-hard-share|{{sell expr|raw=y|Soul of Night|/2*3.5 + |Cursed Flame|/2*3.5}} }} <!--
+--> {{#vardefine:_crimson-hard-share|{{sell expr|raw=y|Soul of Night|/2*3.5 + |Ichor|/2*3.5}} }} <!--
+--> {{#vardefine:_hallowed-hard-share|{{sell expr|raw=y|Soul of Light|/2*3.5 + |Crystal Shard|/2*7}} }}
+* {{tr|Corrupt}}{{tr|Hardmode}}，按比例：  {{coin|{{#var:_corrupt-hard-share}} }}
+* {{tr|Crimson}}{{tr|Hardmode}}，按比例：  {{coin|{{#var:_crimson-hard-share}} }}
+* {{tr|Hallowed}}{{tr|Hardmode}}，按比例： {{coin|{{#var:_hallowed-hard-share}} }}
+
+=== 最终{{tr|Values}} ===
+{{#vardefine:_jungle-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}} + {{#var:_jungle-special-avg}}/6 }} }}  <!--
+--> {{#vardefine:_jungle-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_jungle-special-avg}}/6 }} }}  <!--
+--> {{#vardefine:_sky-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}} + {{#var:_sky-special-avg}}/6 }} }} <!--
+--> {{#vardefine:_sky-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_sky-special-avg}}/6 }} }} <!--
+--> {{#vardefine:_dungeon-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}} + {{#var:_lockbox-value}}/6 }} }} <!--
+--> {{#vardefine:_dungeon-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_lockbox-value}}/6 }} }} <!--
+--> {{#vardefine:_corrupt-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}} + {{#var:_corrupt-special-avg}}/6 }} }} <!--
+--> {{#vardefine:_corrupt-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_corrupt-special-avg}}/6 +    
+      {{#var:_corrupt-hard-share}} }} }} <!--
+--> {{#vardefine:_crimson-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}} + {{#var:_crimson-special-avg}}/6 }} }} <!--
+--> {{#vardefine:_crimson-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_crimson-special-avg}}/6 +    {{#var:_crimson-hard-share}} }} }} <!--
+--> {{#vardefine:_hallowed-crate-value-easy|{{#expr:  {{#var:_biome-crate-value-easy}}  }} }} <!--
+--> {{#vardefine:_hallowed-crate-value-hard|{{#expr:  {{#var:_biome-crate-value-hard}} + {{#var:_hallowed-hard-share}} }} }} <!--
+--> 
+* {{tr|Jungle Value}}：  {{coin|{{#var:_jungle-crate-value-easy}} }} / {{coin|{{#var:_jungle-crate-value-hard}} }}
+* {{tr|Sky Value}}：  {{coin|{{#var:_sky-crate-value-easy}} }} / {{coin|{{#var:_sky-crate-value-hard}} }}
+* {{tr|Dungeon Value}}： {{coin|{{#var:_dungeon-crate-value-easy}} }} / {{coin|{{#var:_dungeon-crate-value-hard}} }}
+* {{tr|Corrupt Value}}： {{coin|{{#var:_corrupt-crate-value-easy}} }} / {{coin|{{#var:_corrupt-crate-value-hard}} }}
+* {{tr|Crimson Value}}： {{coin|{{#var:_crimson-crate-value-easy}} }} / {{coin|{{#var:_crimson-crate-value-hard}} }}
+* {{tr|Hallowed Value}}： {{coin|{{#var:_hallowed-crate-value-easy}} }} / {{coin|{{#var:_hallowed-crate-value-hard}} }}
+
+==[[{{tr|Golden Crate}}]]==
+=== 部分总和 ===
+{{tr|Golden crates}}仅提供上面的四种（两阶）{{tr|pre-Hardmode and Hardmode metals}}。
+{{#vardefine:_early-bar-gold-avg|{{sell expr|raw=y||(|Silver Bar|+|Tungsten Bar|+|Gold Bar|+|Platinum Bar|)/4}} }} <!--
+--> {{#vardefine:_late-bar-gold-avg|{{sell expr|raw=y||(|Adamantite Bar|+|Mythril Bar|+|Orichalcum Bar|+|Titanium Bar|)/4}} 
+}} <!--
+--> {{#vardefine:_gold-potion-avg|{{sell expr|raw=y||(|Obsidian Skin Potion|+|Spelunker Potion|+|Gravitation Potion|+|Mining Potion|+|Heartreach Potion|)/5}} }} <!--
+--> {{#vardefine:_gold-cash-share|{{sell expr|raw=y|Gold Coin|*14/3}} }} <!--
+--> {{#vardefine:_gold-misc-share|{{sell expr|raw=y|Hardy Saddle|/10 +
+   (|Greater Healing Potion|+|Greater Mana Potion|)/2 /2*12.5 <!-- Average of the two, 1 chance in 2, average count 12.5 --> + 
+    |Master Bait|*2/3 *5 <!-- 2/3 chance, average count 5 --> 
+}} }}  <!--
+--> {{#vardefine:_gold-hard-share|{{sell expr|raw=y|Enchanted Sundial|/20 }} }} <!--
+--> 
+* 1 个{{tr|bars}}的平均获利，均为{{tr|Gold Crate}}{{tr|pre-Hardmode bars}}： {{coin|{{#var:_early-bar-gold-avg}}}}
+* 1 个{{tr|bars}}的平均获利，均为{{tr|Gold Crate}}{{tr|Hardmode bars}}： {{coin|{{#var:_late-bar-gold-avg}}}}
+* {{tr|Golden crate}}特殊：无列表{{tr|items}}
+* {{tr|Golden crate}}现金，比例为：  {{coin|{{#var:_gold-cash-share}} }}
+* {{tr|Golden crate}}其他，比例为：  {{coin|{{#var:_gold-misc-share}} }}
+* {{tr|Golden crate}}{{tr|Hardmode}}，比例为：  {{coin|{{#var:_gold-hard-share}} }}
+* {{tr|Golden crate}}的平均金属产出，{{tr|Pre-Hardmode}}： {{#expr:22.5/3 round 2}}{{tr|bars}}（4 种早期{{tr|metals}}）
+* {{tr|Golden crate}}的平均金属产出，{{tr|Hardmode}}： {{#expr:22.5/9 round 2}} {{tr|bars}}（4 种早期{{tr|metals}}）， {{#expr:22.5*2/9 round 2}} {{tr|bars}}（4 种后期{{tr|metals}}）
+
+{{tr|Golden crates}}是仅有的可能随机为“空”的{{tr|crates}}，因为它们中并不含{{tr|bait}}。这样的{{tr|crates}}内容物会重新随机得出，这理论上讲给平均回报增加了约 4%。
+
+=== 最终{{tr|Values}} ===
+{{#vardefine:_gold-crate-value-easy|{{#expr:{{#var:_early-bar-gold-avg}}/3*22.5 + {{#var:_gold-potion-avg}}/3*3.5 + 
+    {{#var:_gold-misc-share}} + {{#var:_gold-cash-share}}}} }} <!--
+--> {{#vardefine:_gold-crate-value-hard|{{#expr:{{#var:_early-bar-gold-avg}}/9*22.5 + {{#var:_late-bar-gold-avg}}*2/9*22.5 +  {{#var:_gold-potion-avg}}/3*3.5 + 
+    {{#var:_gold-misc-share}} + {{#var:_gold-hard-share}} + {{#var:_gold-cash-share}} }} }}
+* {{tr|Golden Crate}}{{tr|pre-Hardmode}}： {{coin|{{#var:_gold-crate-value-easy}} }}
+* {{tr|Golden Crate}}{{tr|Hardmode}}： {{coin| {{#var:_gold-crate-value-hard}} }}
+
+== 总结 ==
+{{options/set|item|class=block alignleft}}
+{| class="terraria sortable align-center"
+! 类型
+!{{tr|Coin}}
+! 价值
+({{tr|pre-Hardmode}})
+! 价值 
+({{tr|Hardmode}})
+|-
+| {{item|Wooden Crate}}
+|{{coin|{{#var:_wood-cash-share}}|round=-2}}
+| {{coin|{{#var:_wood-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_wood-crate-value-hard}}|round=-2}}
+|-
+| {{item|Iron Crate|}}
+|{{coin|{{#var:_iron-cash-share}}|round=-2}}
+| {{coin|{{#var:_iron-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_iron-crate-value-hard}}|round=-2}}
+|-
+| {{item|Golden Crate}}
+|{{coin|{{#var:_gold-cash-share}}|round=-2}}
+| {{coin|{{#var:_gold-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_gold-crate-value-hard}}|round=-2}}
+|-
+| {{item|Jungle Crate|}}
+|{{coin|{{#var:_biome-cash-share}}|round=-2}}
+| {{coin|{{#var:_jungle-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_jungle-crate-value-hard}}|round=-2}}
+|-
+| {{item|Sky Crate}}
+|{{coin|{{#var:_biome-cash-share}}|round=-2}}
+| {{coin|{{#var:_sky-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_sky-crate-value-hard}}|round=-2}}
+|-
+| {{item|Dungeon Crate|}}
+|{{coin|{{#expr: {{#var:_biome-cash-share}} + {{#var:_lockbox-cash-share}}/6 round -2 }} }}
+| {{coin|{{#var:_dungeon-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_dungeon-crate-value-hard}}|round=-2}}
+|-
+| {{item|Corrupt Crate|}}
+|{{coin|{{#var:_biome-cash-share}}|round=-2}}
+| {{coin|{{#var:_corrupt-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_corrupt-crate-value-hard}}|round=-2}}
+|-
+| {{item|Crimson Crate|}}
+|{{coin|{{#var:_biome-cash-share}}|round=-2}}
+| {{coin|{{#var:_crimson-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_crimson-crate-value-hard}}|round=-2}}
+|-
+| {{item|Hallowed Crate|}}
+|{{coin|{{#var:_biome-cash-share}}|round=-2}}
+| {{coin|{{#var:_hallowed-crate-value-easy}}|round=-2}}
+| {{coin|{{#var:_hallowed-crate-value-hard}}|round=-2}}
+|}
+总结一下上面的表格：
+
+{{tr|Wooden crates}}价值大约 1&frac14;{{tr|gold}}，在{{tr|Hardmode}}中提升至 1&frac12;。{{tr|Gold crates}}从 6&frac34; 提升至 8&frac12;。{{tr|Biome and Iron crates}}每个大约 3 {{tr|gold}}，根据是否处于{{tr|Hardmode}}上下浮动 1/4 或 1/2 {{tr|gold}}。{{tr|Dungeon crates}}是可从锁盒中额外获取半{{tr|gold}}的{{tr|biome crates}}。  
+
+在所有情况中，{{tr|crate value}}的大头都在于{{tr|coin}}，仅{{tr|coin}}本身的价值就已经超过了未打开的{{tr|crates}}的售价。
+{{language info|en=Crates/Crate values}}

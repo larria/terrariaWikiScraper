@@ -1,0 +1,26 @@
+<includeonly><!--
+
+-->{{flexstart|justify=space-between|wrap=nowrap|class=title|style=margin-bottom:-1.75em}}<!-- wrapper, "title" styling from {{infocard/box}}
+	--><span>{{{1|}}}</span><!-- heading
+	-->{{flexstart|justify=flex-end}}<!-- images
+		-->{{#lstmap:{{{2|}}}|/|@@@@|<esc><!--
+			-->{{flexstart<!--
+				-->|justify=center|alignitems=center<!--
+				-->|class=terraria<!-- for correct border color, including Hydra Dark
+				-->|style=margin-left:0.25em; margin-bottom:0.25em; width:40px; height:40px; padding:0; border-radius:100px; right:-1.5em; top:-0.5em<!--
+			-->}}@@@@{{flexend}}<!--
+		--></esc>|}}<!--
+	-->{{flexend}}<!--
+-->{{flexend}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+This page is used for displaying a box in the [[Dye Trader#Rewards|Rewards]] section on the [[Dye Trader]] page.
+
+Use the first unnamed parameter to set the heading of the box, and the second unnamed parameter to set the image in the "bubble" displayed to the right of it. Use the full <code><nowiki>[[File:</nowiki></code> syntax and separate multiple images with a slash ({{code|/}}). Images should be set to 25×25px for best results.
+
+{{language info|en=Dye Trader/rewardsbox}}
+</noinclude>

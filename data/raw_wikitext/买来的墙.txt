@@ -1,0 +1,29 @@
+<div class="ajaxHide">
+{{main|{{tr|Background walls}}}}
+</div>
+{{#vardefine:gif|<!--items which use gif placed image -->
+Arcane Rune Wall
+}}
+{| class="terraria lined sortable"
+! {{tr|Wall}}
+! 购买于
+! 价格
+! 条件
+{{#cargo_query:tables=Items
+|fields=name, buy, tag
+|where=type HOLDS 'wall' AND buy <> ""
+|format=template|named args=yes|template=:{{FULLPAGENAME}}/row
+|group by=itemid
+|order by=itemid
+|no html|limit=1000
+}}
+|}
+<div class="ajaxHide">
+{{Master Template Tiles
+| show-main = yes
+| show-walls = yes
+}}</div>
+
+[[Category:{{tr|Wall items}}|*]]
+
+{{language info|en=Purchased walls}}

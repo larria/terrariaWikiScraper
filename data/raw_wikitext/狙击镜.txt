@@ -1,0 +1,55 @@
+{{item infobox
+| auto = 1858
+| hardmode = yes
+}}
+
+'''{{tr|Sniper Scope}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|accessory}}]]，能增加 10% {{tr|ranged damage}}和 10% [[{{tr|critical strike}}|{{tr|critical strike chance}}]]。此外，它还给予了手持发射[[{{tr|bullet}}]]的[[{{tr|gun}}]]时通过按住 {{key|open}} 并移动{{tr|cursor}}来增加视野的能力。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sniper Scope|expectedrows=1}}
+
+=== 制作树 ===
+{{/Crafting tree}}
+
+=== 用于 ===
+{{recipes|ingredient=Sniper Scope|expectedrows=1}}
+
+== 备注 ==
+[[File:Rifle Scope (demo).gif|thumb|1000px|none|用{{tr|Sniper Scope}}缩放。]]
+* {{tr|Sniper Scope}}的{{tr|zoom}}功能仅对{{tr|guns and tools}}中使用[[{{tr|Bullets}}]]、[[{{tr|Candy Corn}}]]、[[{{tr|Gel}}]]、[[{{tr|Stake}}]]或{{eicons|1.4.4}}[[{{tr|solutions}}]]作为{{tr|ammo}}的有效。{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional}}它不能与其他{{tr|gun}}配合使用，如[[{{tr|Dart Rifle}}]]（使用[[{{tr|Darts}}]]），也不能和其他名字里面有“枪”的{{tr|weapons}}配合使用，如[[{{tr|Piranha Gun}}]]或[[{{tr|Rainbow Gun}}]]（均不使用{{tr|ammo}})。
+** 因此，{{tr|Sniper Scope}}确实可以和[[{{tr|Candy Corn Rifle}}]]、[[{{tr|Flamethrower}}]]、[[{{tr|Elf Melter}}]]、[[{{tr|Stake Launcher}}]]、[[{{tr|Clentaminator}}]]和[[{{tr|Terraformer}}]]相搭配。
+** {{tr|critical strike and damage bonuses}}仍适用于所有{{tr|ranged weapons}}。
+* 其缩放效果和[[{{tr|Binoculars}}]]或[[{{tr|Sniper Rifle}}]]的相同，但{{tr|the Sniper Scope}}可以和任意{{tr|gun}}同时使用。
+** {{tr|Sniper Scope}}的{{tr|zoom}}可与{{tr|Sniper Rifle}}叠加。{{source code ref|v=1.4.4.9|method=Terraria.Main.DoDraw_UpdateCameraPosition}}
+
+== 小贴士 ==
+* {{tr|The Sniper Scope}}实际上有比[[{{tr|Destroyer Emblem}}]]更高的远程{{tr|critical hit}}加成。然而，此效果应当和其有限的{{tr|damage buff}}能力综合起来考虑；即使是一个专精于远程的角色也可从基本的{{tr|Destroyer Emblem}}得到更多好处，因为额外的{{tr|damage}}也适用于{{tr|minions}}。
+* {{tr|zoom}}效果可以与[[{{tr|Spelunker Potion}}]]或[[{{tr|Hunter Potion}}]]搭配得很好，这允许玩家在寻找[[{{tr|ore}}]]或受缚 [[{{tr|NPCs}}]] 时拥有更大的视野。
+* 移动版玩家可能要谨慎考虑合成{{tr|The Sniper Scope}}，因为其缩放功能相当的难用，[[{{tr|Destroyer Emblem}}]]则完全不会有视野上的影响。
+
+== 花絮 ==
+* 如果放大到和玩家所在处[[{{tr|music}}]]不同的[[{{tr|biome}}]]中，音乐会随着缩放而变化。例如，玩家站在[[{{tr|Forest}}]]{{tr|biome}}中，放大到[[{{tr|Glowing Mushroom biome}}]]中，音乐会变化为{{tr|the Glowing Mushroom biome music}}。
+** {{eicons|1.4.0.1|invert=y}} 若对焦于一个受区域{{tr|buff item}}影响的位置，则{{tr|player}}即使不在此区域内也会受益于[[{{tr|buff}}]]。相反，若身处此区域，但视野不在，则{{tr|player}}会失去{{tr|buff}}，这适用于[[{{tr|Campfire}}]]、[[{{tr|Heart Lantern}}]]、[[{{tr|Star in a Bottle}}]]甚至是{{$|banners||enemy}}。
+* 装备{{tr|Sniper Scope}}后，即使并没有缩小，也会大大加大{{tr|enemy}}的生成矩形。这可能会有效地破坏玩家依赖于正常的生成矩形知识所制造的刷怪场。生成矩形的具体大小，参见[[{{tr|NPC spawning}}#生成位置|{{tr|NPC spawning}} § 生成位置]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在适用于[[{{tr|Clentaminator}}]]。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Recon Scope}}]]。}}
+{{history|Desktop 1.3.5.2|修复了{{tr|player}}的[[{{tr|breath meter}}]]会在使用{{tr|Sniper Scope}}时意外移动的问题。}}
+{{history|Desktop 1.2.3|修正了在[[{{tr|reverse gravity}}]]时用{{tr|Sniper Scope}}/[[{{tr|Binoculars}}]]缩放垂直方向会相反的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Sniper Scope}}

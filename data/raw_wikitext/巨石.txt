@@ -1,0 +1,83 @@
+{{item infobox
+| type = Block
+| width = 2 | height = 2
+| auto = 540
+| idprojectile = 99
+| tags = plunder
+}}
+
+'''{{tr|Boulders}}'''是独特的[[可放置]] 2×2 前景物体，放置时静止。当失去支持时，它们会下落并开始滚动。它们会逐渐增加速度并伤害接触到的{{tr|players}}、[[{{tr|enemies}}]]和[[{{tr|NPCs}}]]。{{tr|Boulders}}也会在被[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]采掘时滚动，这意味着它们在被放置后就无法收回。
+
+{{tr|Boulders}}会在平面和斜坡上滚动，但会在碰到障碍物时破碎。接触时，它们对玩家造成 120–160 / {{expert|240–320}} / {{master|360–480}} 伤害（对 [[{{tr|NPCs}}]]、[[{{tr|enemies}}]]和[[{{tr|critters}}]]造成 60–80 伤害）。{{source code ref|v=1.4.0.5|method=Terraria.WorldGen.Check2x2}}{{tr|Boulders}}可以穿过无限数量的实体。
+
+[[{{tr|Traps}}#{{tr|Boulder traps}}|{{tr|Boulder traps}}]]会在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]{{tr|layers}}自然生成，它由顶部的一个{{tr|Boulder}}和下方六块（2×3）[[{{tr|wire}}]]到[[{{tr|Pressure Plate}}]]的[[{{tr|Active Stone Block}}]]组成。如果玩家走到{{tr|Pressure Plate}}上，{{tr|the Boulder}}就会落下并伤害玩家和击中的实体。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Boulder|expectedrows=2}}
+
+=== 用于 ===
+{{recipes|ingredient=Boulder|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Boulders}}滚向的方向取决于不同的因素：
+{{eicons|1.4.0.1|invert=y}} {{tr|Boulders}}总是向左滚动，仅在左侧没有空间时会向右滚动。
+{{eicons|1.4.0.1}} 因[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]而滚动的{{tr|Boulders}}会朝向滚动时间最长的方向滚动（例如，若两堵墙被放置在长{{tr|platform}}的两端，则将{{tr|Boulder}}放置在离一堵墙较近的地方会使其向另一个方向滚动）。
+* {{tr|The Boulder}}会在 2.18 秒内加速到 {{mph|36}}。{{source code ref|v=1.4.0.5|method=Terraria.Projectile.AI}}
+* 当滚动时，无论其速度大小为何，{{tr|Boulder}}都会造成相同的伤害。无论是被刚开始滚动的{{tr|Boulder}}击中的玩家/敌人或被快速移动的巨石击中时的玩家/敌人所受的伤害相同。这也意味着玩家在接触它并试图挖掘它时会被击中。
+* 与其他的{{tr|projectile}}一样，{{tr|Boulder}}会在滚动一分钟后被摧毁。
+** 如果沿着平坦的地面滚动，它可以达到 1559 格的最大距离。
+* {{eicons|1.4.4}} 在 [[For the worthy]] 世界中，{{tr|Boulder}}会在破碎时释放{{tr|Mini Boulders}}。它们与{{tr|Boulder projectile}}相似，但是更小。
+* {{tr|Boulder}}可以被放在有平整表面的[[{{tr|Furniture}}]]上，例如[[{{tr|Bookcase}}]]，并且可以相互堆叠。激活底部{{tr|Boulder}}会导致所有{{tr|Boulder}}坠落和滚动，而只激活顶部的{{tr|Boulder}}只会导致那个{{tr|Boulder}}滚落。
+* {{tr|Boulder}}可以通过滚过红色、绿色和黄色（NPC 探测）[[{{tr|Pressure Plate}}]]的方式激活它们。
+* 在{{console version}}里，{{tr|Boulder}}无法穿过 2 格高的空间。
+* {{tr|Boulder}}完全可以滚上山，只要每两个倾斜块之间有一个平坦的块。
+
+== 小贴士 ==
+* 在{{eil|Expert Mode}}和{{eil|Master Mode}}里，应不惜一切代价躲避{{tr|Boulder trap}}，因为它拥有致命的 {{expert|280}} / {{master|420}} 平均伤害。
+* [[{{tr|Grenade}}]]与{{tr|Boulder}}对于应对[[{{tr|Destroyer}}]]与[[{{tr|Eater of Worlds}}]]十分有效。
+* 如果想的话（例如想获取其独特掉落），使用{{tr|Boulders}}是高效的杀死 [[{{tr|NPCs}}]] 的方法。
+* 玩家可以通过手持[[{{tr|mechanism}}]]物品，比如[[{{tr|Pressure Plate}}]]（{{eicons|1.4.0.1|invert=y}}），装备{{eil|Mechanical Lens}}或者升级为{{eil|The Grand Design}}，或使用[[{{tr|Dangersense Potion}}]]。最后玩家可以检查生成的[[{{tr|wire}}]]，如果一条与地面垂直的电线顶部有非常独特的 2×3 矩形，那么它就是{{tr|Boulder}}机关。一旦发现，有一些基本的方法可以解除它们：
+** 如果从上方接近，玩家可以通过在陷阱顶部挖掘的方式，并使用镐从存储仓外打破{{tr|Boulder}}。
+** 如果从下方，玩家需确保左侧有一个向下的斜坡，然后从右侧触发机关并立即向右闪避。
+** 如果玩家拥有[[{{tr|The Grand Design}}]]（或者只是一个[[{{tr|Wire Cutter}}]]），玩家就可以通过切割电线的方式在远处轻松解除陷阱。
+* 在完全倾斜的斜坡上时，{{tr|Boulder}}比跑步的玩家滚动得更快，并会有几次速度提升。使用[[{{tr|Asphalt Block}}]]可以克服这一情况。
+* 打破压力板将阻止陷阱触发，但{{tr|Boulder}}将保持在上方，但稍后可能会遇到。
+** 与其他陷阱一样，玩家可以获得机械装置（但不包括{{tr|Boulder}}）以备后用。压力板和[[{{tr|Active Stone Block}}]]可以用镐取出，但收集电线线需要{{tr|Wire Cutter}}或更高级工具。
+*** {{eicons|1.4.0.1}}由于引入了[[{{tr|Pressure Plates}}]]，取代了以前使用的灰色和棕色压力板，因此无法获得压力板。
+* 在[[{{tr|Hardmode}}]]中，{{tr|Active Stone Blocks}}不会变成相应的{{tr|biome}}样貌。如此一来，发现并排险就容易多了。
+
+== 花絮 ==
+* {{eicons|1.4.0.1|invert=y}} {{tr|Boulders}}是四个在[[{{tr|Tinkerer's Workshop}}]]制作的非[[{{tr|accessories}}]]物品之一，其它三个为[[{{tr|Cell Phone}}]]、[[{{tr|Multicolor Wrench}}]]和[[{{tr|The Grand Design}}]]。
+* {{tr|Boulders}}是 {{eicons|Rolling Cactus|invert=y}} 仅有的 / {{eicons|Rolling Cactus}} 两个在放置后就无法回收的可放置物品之一（另一个为[[{{tr|Rolling Cactus}}]]），因为[[{{tr|hammers}}]]对它们无效，而用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]采掘会让它们开始滚动或者摧毁它们（如果无法移动的话）。
+* {{tr|Boulders}}能够对[[{{tr|Target Dummy}}]]造成伤害。
+* 一旦{{tr|Boulder}}达到最高速度，它大约每四分之一秒完成一次完整的旋转。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在用来制作[[{{tr|Bouncy Boulder}}]]和[[{{tr|Life Crystal Boulder}}]]。
+** 现在在[[For the worthy]]世界中会碎裂成为更小的{{tr|Mini Boulder}}。}}
+{{history|Desktop 1.4.0.1|
+** 现在在[[{{tr|Heavy Work Bench}}]]而不是[[{{tr|Tinkerer's Workshop}}]]制作。
+** 修复了放置时外观的切分错误。}}
+{{history|Desktop 1.3.2|放置时的{{tr|sprite updated.}}旧外观为：[[File:Boulder (placed) (old).png]]}}
+{{history|Desktop 1.3.1|{{tr|Item sprite updated.}}旧外观为：[[File:Boulder (old).png]]}}
+{{history|Desktop 1.3.0.1|{{tr|Boulders}}的伤害现在会被玩家的{{tr|defenses}}降低（{{tr|Boulder}}的伤害之前无视玩家{{tr|defense}}）。}}
+{{history|Desktop 1.2.4|修复了[[{{tr|Chest}}]]没有放置在{{tr|Boulder}}上面，而是正上方时使游戏崩溃的问题。}}
+{{history|Desktop 1.2.3|击中上方有{{tr|Chests}}的{{tr|Boulder}}不再会使游戏崩溃。}}
+{{history|Desktop 1.2|堆叠上限由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Boulder}}

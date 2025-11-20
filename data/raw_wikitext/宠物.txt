@@ -1,0 +1,800 @@
+{{dablink|不要与[[{{tr|NPCs}}#{{tr|Town pets}}|{{tr|Town pets}}]]相混淆，后者是通过[[{{tr|Zoologist}}]]得到的动物 [[{{tr|NPCs}}]]。}}
+
+'''{{tr|Pets}}'''是会跟随玩家行动的生物。它们完全不受伤害且没有持续时间限制。被召唤后，它们会给予玩家一个和{{tr|pet}}同名的[[{{tr|Buffs}}|{{tr|buff}}]]。{{tr|pet}}会一直跟随玩家直到玩家死亡、召唤另一个{{tr|pet}}、离开世界或取消相关联的{{tr|buff}}。在{{eversions|1.4.4}}中，装备的{{tr|pet}}在玩家选择菜单中与{{tr|character}}一同可见。
+
+大部分{{tr|Pets}}是纯装饰性的，{{eil|Chester}}和部分{{eversions|1.3.0.1|short|invert=y}}独有的能对{{tr|enemies}}造成极少伤害的{{tr|Pets}}除外。一些{{tr|Pets}}会发出少量光线，但在{{eversions|1.3.0.1}}上，有特殊的[[{{tr|Pets|link=y}}#{{tr|Light Pets}}|{{tr|Light Pets}}]]，并有其专用的栏位。
+
+召唤的[[{{tr|Minions}}]]以相似的方式运作，但主要是为了帮助战斗，而非装饰。{{tr|Pets}}并不计入玩家当前[[{{tr|minion}}]]限制。
+
+总共有 69 种{{tr|pets}}。在{{eversions|1.4.3}}中有 69 种，{{old-gen console version}}中有 27 种，{{3DS version}}中有 31 种。
+
+另外，在{{eversions|1.4.0.1}}上有 10 种{{tr|light pets}}，其中 3 种是{{eil|Master Mode}}独有的；在{{eversions|1.3.0.1|invert=y}}上有 4 种。
+
+== 召唤与解除 ==
+{{tr|Pets}}可通过将其{{tr|item}}放置到{{tr|hotbar}}上并使用它来召唤、或{{eicons|1.3.0.1}}通过装备它来召唤。在{{eversions|1.3.0.1|short|old-gen=y}}中，{{tr|pets}}可以通过在其相应{{tr|buff}}图标上按{{key|open}}或{{eicons|1.3.0.1}}通过关闭其可见性来解除。
+
+=== 装备{{tr|Pets}} ===
+{{exclusive|1.3.0.1|section=y}}
+[[{{tr|inventory}}]]中提供了两个专用的栏位以提供更复杂的行为：其中一个栏位是给“常规”{{tr|Pets}}的，另一个则是给{{tr|Light Pet}}的。{{tr|Light pets}}的行为类似于普通{{tr|pets}}，但在玩家周围提供了更加持续的照明，意图作为玩家的永久{{tr|light source}}。在任意时刻，玩家都只能激活每类{{tr|pet}}至多一个。
+* 每个{{tr|pet}}栏都有与之匹配的[[{{tr|dye}}]]栏，可以用于重新着色{{tr|pet}}。一些“高级”{{tr|dyes}}可能让某些{{tr|pets}}看起非常奇怪，甚至会让它们变得不可见。如果它们正常情况下会发光，那么光线不会受到任何{{tr|dye}}的影响。
+* 每个{{tr|pet}}栏还有 [[File:Visibility toggle (on).png|link=]] / [[File:Visibility toggle (off).png|link=]] 可见性[[{{tr|toggle}}]]，可点击以解除或重新召唤{{tr|pet}}。
+** 如果往设置为“隐藏”的栏位中放入{{tr|summoning item}}，并不会召唤出{{tr|the pet}}，直到此栏位重新切换回“可见”。
+* 从其栏位中移除{{tr|pet}}物品并''不会''解除{{tr|the pet}}，但往栏位中放入另一个不同的{{tr|pet item}}''会''替换掉{{tr|the pet}}。
+* 两种{{tr|pet}}也都可以通过从{{tr|hotbar}}使用其{{tr|item}}来召唤，但仅当''能''容纳它的栏位是空的或隐藏时才有效。
+* 玩家重生时，放在{{tr|pet slot}}中的{{tr|pet}}会自动被重新召唤出来。
+
+== {{tr|Pets}} ==
+{{options/set|item|wrap=y}}
+{| class="terraria sortable" id="table-Pets"
+|+ {{tr|Pets}}
+! {{tr|Buff}} 
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}} 
+! style="min-width: 200px;" | 来源 
+! 提供照明
+|-
+| align=center | {{buff|mode=image|Baby Dinosaur}}
+| {{item|Baby Dinosaur}}
+| {{item|Amber Mosquito}}
+| {{item|Extractinator}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Eater}}
+| {{item|Baby Eater}}
+| {{item|Eater's Bone}}
+| {{item|Eater of Worlds|image=Eater of Worlds Head.png|size=30px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Face Monster}}
+| {{item|Baby Face Monster}}
+| {{item|Bone Rattle}}
+| {{item|size=50px|Brain of Cthulhu}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Grinch}}
+| {{item|Baby Grinch|link=Grinch}}
+| {{item|Baby Grinch's Mischief Whistle}}
+| {{item|size=53px|Ice Queen}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Hornet}}
+| {{item|Baby Hornet}}
+| {{item|Nectar}}
+| {{item|size=50px|Queen Bee}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Imp}}
+| {{item|Baby Imp}}
+| {{item|Slice of Hell Cake}}
+| {{item|Shadow Chest}}、{{item|Obsidian Crate}}、{{item|Hellstone Crate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Penguin}}
+| {{item|Baby Penguin}}
+| {{item|Fish (item)|Fish}}
+| {{item|Frozen Chest}}、{{item|Frozen Crate}}、{{item|Boreal Crate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Red Panda}}
+| {{item|Baby Red Panda}}
+| {{item|Bamboo Leaf}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Skeletron Head}}
+| {{item|Baby Skeletron Head}}
+| {{item|Bone Key}}
+| {{item|size=35px|Dungeon Guardian}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Snowman}}
+| {{item|Baby Snowman}}
+| {{item|Toy Sled}}
+| {{item|Ice Mimic}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Truffle}}
+| {{item|Baby Truffle}}
+| {{item|Strange Glowing Mushroom}}
+| {{item|Truffle}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Baby Werewolf}}
+| {{item|Baby Werewolf}}
+| {{item|Full Moon Squeaky Toy}}
+| {{item|Zoologist}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Bernie (buff)}}
+| {{item|Bernie}}
+| {{item|Bernie's Button}}
+| {{item|Princess}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Black Cat}}
+| {{item|Black Cat}}
+| {{item|Unlucky Yarn}}
+| {{item|Goodie Bag}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Blue Chicken}}
+| {{item|Blue Chicken}}
+| {{item|Blue Chicken Egg}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center |{{item|mode=image|Pet Bunny}}
+| {{item|Bunny Pet|Bunny}}
+| {{item|Carrot}}
+| {{item|image=TerrariaCE.jpg|size=30px|png=no|典藏版|note2=（新玩家的{{tr|Inventory}}中）}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Caveling Gardener}}
+| {{item|Caveling Gardener}}
+| {{item|Glow Tulip}}
+| 作为{{tr|plant}}被发现（{{Item|Glow Tulip (placed)|mode=image|link=Glow Tulip}}）
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Chester (buff)}}
+| {{item|Chester}}
+| {{item|Eye Bone}}
+| {{item|size=45px|Deerclops}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Companion Cube}}
+| {{item|Companion Cube (pet)|Companion Cube}}
+| {{item|Companion Cube}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Cursed Sapling}}
+| {{item|Cursed Sapling (pet)|Cursed Sapling}}
+| {{item|Cursed Sapling}}
+| {{item|size=59px|Mourning Wood}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|The Dirtiest Block}}
+| {{item|The Dirtiest Block}}
+| {{item|The Dirtiest Block}}
+| 作为{{tr|block}}被发现
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Dynamite Kitten}}
+| {{item|Dynamite Kitten}}
+| {{item|Ball O' Fuse Wire}}
+| {{item|Zoologist}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Estee}}
+| {{item|Estee|ext=gif}}
+| {{item|Celestial Wand}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Eyeball Spring}}
+| {{item|Eyeball Spring|image=Eyeball Spring Pet.png|size=22px}}
+| {{item|Eye Spring}}
+| {{item|Eyezor}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Fennec Fox}}
+| {{item|Fennec Fox}}
+| {{item|Exotic Chew Toy}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Glittery Butterfly}}
+| {{item|Glittery Butterfly}}
+| {{item|Bedazzled Nectar}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Glommer (buff)}}
+| {{item|Glommer}}
+| {{item|Glommer's Flower}}
+| {{item|Derpling|size=50px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Hoardagron}}
+| {{item|Hoardagron}}
+| {{item|Dragon Egg}}
+| {{item|Dark Mage|size=54px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Junimo}}
+| {{item|Junimo}}
+| {{item|Stardrop}}
+| {{item|Dryad}}净化{{item|Joja Cola}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Lil' Harpy}}
+| {{item|Lil' Harpy}}
+| {{item|Birdie Rattle}}
+| {{item|Traveling Merchant}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Lizard}}
+| {{item|Pet Lizard|Lizard}}
+| {{item|Lizard Egg}}
+| {{item|Lihzahrd}}、{{item|Flying Snake|size=40}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Mini Minotaur}}
+| {{item|Mini Minotaur}}
+| {{item|Tartar Sauce}}
+| {{item|Iron Crate}}、{{item|Mythril Crate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Parrot}}
+| {{item|Parrot (pet)|Parrot|link={{tr|Parrot Cracker|link=y}}}}
+| {{item|Parrot Cracker}}
+| [[{{tr|Ocean}}]]{{tr|biome}}中的{{item|Pirate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pig (buff)}}
+| {{item|Pig Man}}
+| {{item|Monster Meat}}
+| 掉落自[[{{tr|Corruption}}]]和[[{{tr|Crimson}}]]{{tr|enemies}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Plantero}}
+| {{item|Plantero}}
+| {{item|Mud Bud}}
+| {{item|Zoologist}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Propeller Gato}}
+| {{item|Propeller Gato}}
+| {{item|Gato Egg}}
+| {{item|Dark Mage|size=54px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Puppy}}
+| {{item|Puppy}}
+| {{item|Dog Whistle}}
+| {{item|Present}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Sapling}}
+| {{item|Pet Sapling|Sapling}}
+| {{item|Seedling}}
+| {{item|Plantera|image=Plantera's First Form.png|size=34px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Spider}}
+| {{item|Pet Spider|Spider}}
+| {{item|Spider Egg}}
+| {{item|size=38px|Pumpking}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Shadow Mimic}}
+| {{item|Shadow Mimic (pet)|Shadow Mimic}}
+| {{item|Ornate Shadow Key}}
+| {{item|Shadow Chest}}、{{item|Obsidian Crate}}、{{item|Hellstone Crate}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Shark Pup}}
+| {{item|Shark Pup}}
+| {{item|Shark Bait}}
+| {{item|Water Chest}}、{{item|Ocean Crate}}、{{item|Seaside Crate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Spiffo}}
+| {{item|Spiffo}}
+| {{item|Spiffo Plush}}
+| {{item|Zombie}}
+| align=center| {{no}}
+|-
+| align=center | {{buff|mode=image|Squashling}}
+| {{item|Squashling}}
+| {{item|Magical Pumpkin Seed}}
+| {{item|Pumpkin}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Sugar Glider}}
+| {{item|Sugar Glider}}
+| {{item|Eucalyptus Sap}}
+| {{item|Tree|mode=image|size=24}} 罕见掉落自摇[[{{tr|Trees}}]]
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Tiki Spirit}}
+| {{item|Tiki Spirit}}
+| {{item|Tiki Totem}}
+| [[{{tr|Jungle}}]]{{tr|Biome}}中的{{item|Witch Doctor}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Turtle}}
+| {{item|Pet Turtle|Turtle}}
+| {{item|Seaweed}}
+| {{item|Ivy Chest}}、{{item|Jungle Crate}}、{{item|Bramble Crate}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Volt Bunny}}
+| {{item|Volt Bunny}}
+| {{item|Lightning Carrot}}
+| {{item|Zoologist}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Zephyr Fish}}
+| {{item|Zephyr Fish (pet)|Zephyr Fish}}
+| {{item|Zephyr Fish}}
+| [[File:Mechanic's Rod.png]] [[{{tr|Fishing}}]]
+| align=center | {{no}}
+|}
+
+=== 仅限[[{{tr|Master Mode}}]] ===
+这些{{tr|pets}}有 {{chance|1/4}} 几率掉落自[[{{tr|Master Mode}}]]下的对应 {{tr|bosses}}。它们可以在{{tr|Master Mode worlds}}之外装备。
+
+{| class="terraria sortable" id="table-Master-Mode-Pets"
+|+ {{tr|Pets}}
+! {{tr|Buff}} 
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}} 
+! style="min-width: 200px;" | 来源 
+! 提供照明
+|-
+| align=center | {{buff|mode=image|Alien Skater}}
+| {{item|Alien Skater}}
+| {{item|Cosmic Skateboard}}
+| {{item|size=100px|Martian Saucer}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Baby Ogre}}
+| {{item|Baby Ogre}}
+| {{item|Ogre's Club}}
+| {{item|size=52px|Ogre}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Destroyer-Lite}}
+| {{item|Destroyer-Lite|size=90px}}
+| {{item|Deactivated Probe}}
+| {{item|size=28px|image=The Destroyer Head.png|The Destroyer}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Eater of Worms}}
+| {{item|Eater of Worms|size=90px}}
+| {{item|Writhing Remains}}
+| {{item|size=30px|image=Eater of Worlds Head.png|Eater of Worlds}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Everscream Sapling}}
+| {{item|Everscream Sapling (pet)|Everscream Sapling|image=Everscream Sapling.png}}
+| {{item|Shrub Star}}
+| {{item|size=50px|Everscream}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Honey Bee}}
+| {{item|Honey Bee}}
+| {{item|Sparkling Honey}}
+| {{item|Queen Bee|size=50px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Ice Queen}}
+| {{item|Ice Queen (pet)|Ice Queen}}
+| {{item|Frozen Crown}}
+| {{item|size=50px|Ice Queen}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Itsy Betsy}}
+| {{item|Itsy Betsy}}
+| {{item|Betsy's Egg}}
+| {{item|size=83px|Betsy}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Mini Prime}}
+| {{item|Mini Prime|size=67px}}
+| {{item|Robotic Skull}}
+| {{item|Skeletron Prime|size=36px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Moonling}}
+| {{item|Moonling}}
+| {{item|Piece of Moon Squid}}
+| {{item|size=57px|Moon Lord|image=Moon Lord's Head.gif}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Phantasmal Dragon}}
+| {{item|Phantasmal Dragon|size=70px}}
+| {{item|Tablet Fragment}}
+| {{item|Lunatic Cultist|size=25px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Plantera Seedling}}
+| {{item|Plantera Seedling (pet)|Plantera Seedling|image=Plantera Seedling (pet).png}}
+| {{item|Plantera Seedling}}
+| {{item|Plantera|image=Plantera's First Form.png|size=34px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Rez and Spaz}}
+| {{item|Rez and Spaz}}
+| {{item|Pair of Eyeballs}}
+| {{item|The Twins|image=Retinazer (Second Form).png/Spazmatism (Second Form).png|size=40px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Skeletron Jr.}}
+| {{item|Skeletron Jr.}}
+| {{item|Possessed Skull}}
+| {{item|Skeletron|image=Skeletron Head.png|size=35px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Slime Prince}}
+| {{item|Slime Prince}}
+| {{item|Royal Delight}}
+| {{item|King Slime|size=50px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Slime Princess}}
+| {{item|Slime Princess}}
+| {{item|Regal Delicacy}}
+| {{item|Queen Slime|size=58px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Slime Royals}}
+| {{item|Slime Prince|mode=image}}{{item|Slime Princess|mode=image}}{{item|Resplendent Dessert|t=Slime Royals|mode=text}}
+| {{item|Resplendent Dessert}}
+| {{item|Royal Delight}} + {{item|Regal Delicacy}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Spider Brain}}
+| {{item|Spider Brain}}
+| {{item|Brain in a Jar}}
+| {{item|size=50px|Brain of Cthulhu}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Suspicious Eye}}
+| {{item|Suspicious Eye|link=Suspicious Grinning Eye}}
+| {{item|Suspicious Grinning Eye}}
+| {{item|Eye of Cthulhu|size=32px}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Tiny Deerclops}}
+| {{item|Deerclops (pet)|Tiny Deerclops}}
+| {{item|Deerclops Eyeball}}
+| {{item|size=45px|Deerclops}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Tiny Fishron}}
+| {{item|Tiny Fishron}}
+| {{item|Pork of the Sea}}
+| {{item|Duke Fishron|size=50px}}
+| align=center | {{no}}
+|}
+
+== {{tr|Light Pets}} ==
+'''{{tr|Light Pets}}'''是召唤出来漂浮在玩家旁边以提供移动光源的次要角色。它们不会引发任何[[{{tr|mana}}]]或其他花费，并且能无限期的维持，直到玩家取消其{{tr|buff}}、召唤替换的{{tr|light pet}}或死亡。一次只能存在一个{{tr|light pet}}。{{eversions|1.3.0.1}}，{{tr|Light Pets}}在玩家的装备区中有其专用的{{tr|inventory}}栏位以及相应的[[{{tr|Dyes}}]]栏位。
+{| class="terraria sortable" id="table-Light-Pets"
+|+ {{tr|Light Pets}}
+|-
+! {{tr|Buff}}
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}}
+! 亮度
+! style="min-width: 200px;" | 来源 
+! 备注
+|-
+| align=center | {{buff|mode=image|Shadow Orb}}
+| {{item|Shadow Orb (light pet)|Shadow Orb|image=Shadow Orb (light pet).png}}
+| {{item|Shadow Orb (item)|Shadow Orb}}
+| align=center | 65%
+| {{item|Shadow Orb|image=Shadow Orb (placed).png}}、{{item|Corrupt Crate}}、{{item|Defiled Crate}}
+| 可被控制。
+|-
+| align=center | {{buff|mode=image|Crimson Heart}}
+| {{item|Crimson Heart (light pet)|Crimson Heart|image=Crimson Heart (light pet).png}}
+| {{item|Crimson Heart (item)|Crimson Heart}}
+| align=center | 65%
+| {{item|Crimson Heart|image=Crimson Heart (placed).png}}、{{item|Crimson Crate}}、{{item|Hematic Crate}}
+|
+|-
+| align=center | {{buff|mode=image|Magic Lantern}}
+| {{item|Magic Lantern (light pet)|Magic Lantern}}
+| {{item|Magic Lantern}}
+| align=center | 65%
+| {{item|Skeleton Merchant|size=39px}}
+| 高亮标记宝藏。
+|-
+| align=center | {{buff|mode=image|Fairy}}
+| {{item|Fairy (light pet)|Fairy|image=Blue Fairy (pet).png/Green Fairy (pet).png/Pink Fairy (pet).png}}
+| {{item|Fairy Bell}} 
+| align=center | 80%
+| 用{{item|Bell|mode=image}}、{{item|Pixie Dust|mode=image}}、{{item|Soul of Light|mode=image}}、和{{item|Soul of Sight|mode=image}}制作
+|
+|-
+| align=center | {{buff|mode=image|Flickerwick}}
+| {{item|Flickerwick|image=Flickerwick.png}}
+| {{item|Creeper Egg}}
+| align=center | 80%
+| {{item|Ogre|size=52px}}
+|
+|-
+| align=center | {{buff|mode=image|Wisp}}
+| {{item|Wisp|image=Wisp (light pet).png}}
+| {{item|Wisp in a Bottle}}
+| align=center | 120%
+| {{item|image=Blue Armored Bones 2.png|size=33px|Armored Bones|mode=image}}{{item|image=Hell Armored Bones 1.png/Rusty Armored Bones 1.png|size=41px|Armored Bones}}
+| 可被控制。
+|-
+| align=center | {{buff|mode=image|Suspicious Looking Eye}}
+| {{item|Suspicious Looking Eye (light pet)|Suspicious Looking Eye|image=Suspicious Looking Eye (light pet).png}}
+| {{item|Suspicious Looking Tentacle}}
+| align=center | 120%
+| {{item|Treasure Bag (Moon Lord)|link={{tr|Treasure Bag}}#{{tr|Moon Lord}}}}
+| 高亮标记{{tr|treasure}}和{{tr|enemies}}。
+|}
+
+=== 仅限[[{{tr|Master Mode}}]] ===
+这些{{tr|light pets}}有 {{chance|1/4}} 几率掉落自[[{{tr|Master Mode}}]]下的对应 {{tr|bosses}}。它们可以在{{tr|Master Mode worlds}}之外装备。
+
+{| class="terraria sortable" id="table-Master-Mode-Light-Pets"
+|+ {{tr|Light Pets}}
+|-
+! {{tr|Buff}}
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}}
+! 亮度
+! style="min-width: 200px;" | 来源 
+! 备注
+|-
+| align=center | {{buff|mode=image|Jack 'O Lantern}}
+| {{item|Jack 'O Lantern (light pet)|Jack 'O Lantern|image=Jack 'O Lantern (light pet).png}}
+| {{item|Pumpkin Scented Candle}}
+| align=center | 80%
+| {{item|Pumpking|size=50px}}
+|
+|-
+| align=center | {{buff|mode=image|Toy Golem}}
+| {{item|Toy Golem|image=Toy Golem.png}}
+| {{item|Guardian Golem}}
+| align=center | 80%
+| {{item|Golem|size=46px}}
+|
+|-
+| align=center | {{buff|mode=image|Fairy Princess}}
+| {{item|Fairy Princess (light pet)|Fairy Princess|image=Fairy Princess.png}}
+| {{item|Jewel of Light}}
+| align=center | 120%
+| {{item|Empress of Light|size=46px}}
+|}{{options/reset|item}}
+
+== {{eversions|1.3.0.1|invert=y|nl=y}} ==
+{| class="terraria sortable" id="table-Exclusive-Pets"
+{{options/set|item|icons=no}}
+|+ {{eversions|1.3.0.1|invert=y}}独有{{tr|pet}}
+|-
+! {{tr|Buff}} 
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}} 
+! style="min-width: 200px;" | 来源 
+! 伤害{{tr|Enemies}}
+|-
+| align=center | {{buff|mode=image|Pet Bat}}
+| {{item|Bat Pet|Bat}}
+| {{item|Vial of Blood}}
+| {{item|Vampire Miner}}、{{item|Gold Chest}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Pet Guinea Pig}}
+| {{item|Guinea Pig}}
+| {{item|Cabbage}}
+| {{item|Dragon Snatcher}}、{{item|Gold Chest}}、{{item|Chest}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Slime}}
+| {{item|Slime Pet|Slime}}
+| {{item|Petri Dish}}
+| {{item|Shadow Slime|link={{tr|Corrupt Slime|link=y}}}}、{{item|Gold Chest}}、{{item|Chest}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Tiphia}}
+| {{item|Tiphia}}
+| {{item|Beeswax}}
+| {{item|Dragon Hornet}}、{{item|Gold Chest}}、{{item|Ivy Chest}}
+| align=center | {{yes}}
+|-
+| align=center |{{item|mode=image|Pet Werewolf}}
+| {{item|Werewolf Pet|Werewolf}}
+| {{item|Wolf Fang}}
+| {{item|Werewolf|image=Werewolf (old).png}}、{{item|Gold Chest}}、{{item|Ivy Chest}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Pet Zombie}}
+| {{item|Zombie Pet|Zombie}}
+| {{item|Brain}}
+| {{item|The Groom|image=The Groom (old).png}}、{{item|Gold Chest}}、{{item|Shadow Chest}}
+| align=center | {{yes}}
+|}
+
+== {{eversions|1.3.0.1|invert=y|old-gen=n|nl=y}} ==
+{| class="terraria sortable" id="table-mobile-Pets"
+|+ {{eversions|1.3.0.1|invert=y|old-gen=n}}独有{{tr|Pets}}
+|-
+! {{tr|Buff}} 
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}} 
+! style="min-width: 200px;" | 来源 
+! 伤害{{tr|Enemies}} 
+! 提供照明
+|-
+| align=center | {{buff|mode=image|Pet Elfa}}
+| {{item|Elfa}}
+| {{item|Holiday Bauble}}
+| [[{{tr|Christmas}}]]期间的{{item|size=25px|Tree}}
+| align=center | {{no}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Cupid|link={{tr|Cupid|link=y}}}}
+| {{item|Cupid}}
+| {{item|size=30px|Broken Heart}}
+| [[{{tr|Valentine's Day}}]]期间的{{item|Gem}}
+| align=center | {{no}}
+| align=center | {{yes}}
+|-
+| align=center | {{buff|mode=image|Pet Worm|link={{tr|Worm Pet|link=y}}}}
+| {{item|Worm Pet}}
+| {{item|Suspicious Looking Apple}}
+| {{item|mode=image|Giant Worm Head|link={{tr|Giant Worm|link=y}}}} {{item|mode=image|Digger Head|link={{tr|Digger|link=y}}}} {{item|mode=image|Devourer Head|link={{tr|Devourer|link=y}}}} {{item|mode=image|World Feeder Head|link={{tr|World Feeder|link=y}}}}
+| align=center | {{no}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Old Lady|link={{tr|Old Walking Stick|link=y}}}}
+| {{item|Old Lady|image=Old Lady Pet.png}}
+| {{item|Old Walking Stick}}
+| {{tr|day}}期间的{{item|Clothier|image=Clothier (old).png}}
+| align=center | {{no}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Turkey (buff)|link={{tr|Turkey feather|link=y}}}}
+| {{item|Pet Turkey}}
+| {{item|Turkey feather}}
+| [[{{tr|Thanksgiving}}]]期间的{{item|Merchant|image=Merchant (old).png}}
+| align=center | {{no}}
+| align=center | {{no}}
+|}{{options/reset|item}}
+
+== 已移除 ==
+{| class="terraria sortable" id="table-mobile-Pets"
+|+ 独有{{tr|Pets}}
+|-
+! {{tr|Buff}} 
+! style="min-width: 190px;" | {{tr|Pet}} 
+! {{tr|Item}} 
+! style="min-width: 200px;" | 来源 
+! 伤害{{tr|Enemies}} 
+! 提供照明
+|-
+| align=center | {{buff|mode=image|Pet Android|link=Shiny Black Slab}}
+| {{item|Android (pet)|Android|image=Android.png}}
+| {{item|Shiny Black Slab}}
+| {{item|Chest}}
+| align=center | {{no}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Golden Turtle|link=Golden Seaweed}}
+| {{item|Pet Golden Turtle|image=Pet Golden Turtle.png}}
+| {{item|Golden Seaweed}}
+| {{item|Chest}}
+| align=center | {{no}}
+| align=center | {{no}}
+|-
+| align=center | {{buff|mode=image|Pet Leprechaun o'Fyffe|link=Pot o' Gold}}
+| {{item|Leprechaun o'Fyffe|image=Leprechaun o'Fyffe.png}}
+| {{item|Pot o' Gold}}
+| 在[[{{tr|St. Patrick's Day}}]]{{tr|seasonal event}}期间用 5 个{{item|Rainbow Piece|Rainbow Pieces}}{{tr|craft}}。
+| align=center | {{no}}
+| align=center | {{no}}
+|}{{options/reset|item}}
+
+== 备注 ==
+* 所有{{tr|pets}}都会激活{{eil|Teal Pressure Pad|s}}。
+* 虽然可以用[[{{tr|dye}}]]改变{{tr|the light pet}}自身的颜色，但它们所发出的光的颜色会维持原样。
+* 所有{{tr|pet buffs}}的{{tr|duration}}为 5 分钟。这一{{tr|duration}}会持续被刷新且是隐藏的，对实际游玩没有影响。
+
+== 成就 ==
+{{achievement|name=Pet Hoarder}}
+
+== 小贴士 ==
+* 一些{{tr|Pets}}（如[[{{tr|Cursed Sapling}}]]和[[{{tr|Baby Truffle}}]]）会为玩家提供照明，在洞穴或黑暗区域中非常有用。
+* [[{{tr|Chester}}]]是（除了能提供光照的一些{{tr|pets}}以外）仅有的拥有实际功能的{{tr|pet}}。可用它访问[[{{tr|Piggy Bank}}]]，等效地加倍了玩家的{{tr|inventory}}空间。
+
+== 花絮 ==
+* 所召唤的{{tr|The pet}}实际上是跟随在玩家附近的长时间持续的[[{{tr|projectile}}]]。
+* 用{{tr|Mysterious Package}}召唤的[[{{tr|Pet Drone}}]]曾经被引入到 {{icon/amazon}} Amazon 版本中，但{{tr|unobtainable}}，并在后来被移除了。
+* {{eicons|1.3.0.1|desktop=n|tmodloader=n|switch=n}}在更新到 [[1.3]] 时，每个独有{{tr|pet}}都会被替换为一个[[{{tr|Gold Bunny}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了[[{{tr|Stardrop}}|{{tr|Junimo}}]]、[[{{tr|Blue Chicken Egg}}|{{tr|Blue Chicken}}]]、[[{{tr|Spiffo Plush}}|{{tr|Spiffo}}]]、[[{{tr|Glow Tulip}}|{{tr|Caveling Gardener}}]]、[[{{tr|The Dirtiest Block}}|{{tr|Dirt Block}}]]、和[[{{tr|Resplendent Dessert}}|{{tr|Slime Royals}}]]。
+** 装备的{{tr|pets}}可以在玩家选择菜单中与{{tr|character}}一起看到。}}
+{{history|Desktop 1.4.3|添加了[[{{tr|Eye Bone}}|{{tr|Chester}}]]、[[{{tr|Bernie's Button}}|{{tr|Bernie}}]]、[[{{tr|Glommer's Flower}}|{{tr|Glommer}}]]、[[{{tr|Monster Meat}}|{{tr|Pig Man}}]]、和[[{{tr|Deerclops Eyeball}}|{{tr|Tiny Deerclops}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了 13 种新{{tr|pets}}，可从{{tr|enemies}}、{{tr|chests}}、{{tr|NPCs}}、或{{tr|shaking trees}}获得。
+** 添加了[[{{tr|Master Mode}}]]独有的 19 种{{tr|new pets}}和 3 种{{tr|new light pets}}。}}
+{{history|Desktop 1.3.4|添加了[[ {{tr|Dragon Egg}}|{{tr|Hoardagron}}]]和[[{{tr|Gato Egg}}|{{tr|Propeller Gato}}]]{{tr|pets}}，还有[[{{tr|Creeper Egg}}|{{tr|Flickerwick}}]]{{tr|light pet}}。}}
+{{history|Desktop 1.3.1|
+** 添加了[[{{tr|Companion Cube}}]]。
+** 所有{{tr|pets}}都会激活[[{{tr|Teal Pressure Pad}}]]了。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Bone Rattle}}|{{tr|Baby Face Monster}}]]{{tr|pet}}。
+** 添加了[[{{tr|Crimson Heart (item)}}|{{tr|Crimson Heart}}]]、[[{{tr|Magic Lantern}}]]、和[[{{tr|Suspicious Looking Tentacle}}|{{tr|Suspicious Looking Eye}}]]{{tr|light pets}}。
+** 在装备选项卡中添加了{{tr|pet}}栏位。
+** 加入了专门的{{tr|light pet}}栏位。}}
+{{history|Desktop 1.2.4|
+** 添加了[[{{tr|Tartar Sauce}}|{{tr|Mini Minotaur}}]]和[[{{tr|Zephyr Fish}}]]。
+** 修复了在{{tr|multiplayer}}中可以用[[{{tr|Bug Net}}]]复制{{tr|pet}}的漏洞。
+** 修复了（{{tr|multiplayer}}中）其他玩家的{{tr|pets}}可能会在一段时间后消失的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.3.1|修正了玩家可以同时拥有[[{{tr|Fairy Bell}}]]和其他{{tr|light pets}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.2|添加了[[{{tr|Christmas}}]]的[[{{tr|Dog Whistle}}|{{tr|Puppy}}]]和[[{{tr|Frost Moon}}]]的[[{{tr|Baby Grinch's Mischief Whistle}}|{{tr|Baby Grinch}}]]。}}
+{{history|Desktop 1.2.1|添加了[[{{tr|Halloween}}]]的[[{{tr|Cursed Sapling}}]]和[[{{tr|Spider Egg}}|{{tr|Pet Spider}}]]。}}
+{{history|Desktop 1.2|
+** 有超过 15 种新{{tr|pets}}，可以在{{tr|chests}}中找到或稀有掉落自{{tr|enemies}}：
+*** [[{{tr|Amber Mosquito}}|{{tr|Baby Dinosaur}}]]、[[{{tr|Eater's Bone}}|{{tr|Baby Eater}}]]、[[{{tr|Nectar}}|{{tr|Baby Hornet}}]]、[[{{tr|Fish (item)}}|{{tr|Baby Penguin}}]]、[[{{tr|Bone Key}}|{{tr|Baby Skeletron Head}}]]、[[{{tr|Toy Sled}}|{{tr|Baby Snowman}}]]、[[{{tr|Strange Glowing Mushroom}}|{{tr|Baby Truffle}}]]、[[{{tr|Unlucky Yarn}}|{{tr|Black Cat}}]]、[[{{tr|Eye Spring}}|{{tr|Eyeball Spring}}]]、[[{{tr|Lizard Egg}}|{{tr|Pet Lizard}}]]、[[{{tr|Parrot Cracker}}|{{tr|Pet Parrot}}]]、[[{{tr|Seedling}}|{{tr|Pet Sapling}}]]、[[{{tr|Seaweed}}|{{tr|Pet Turtle}}]]、[[{{tr|Magical Pumpkin Seed}}|{{tr|Squashling}}]]、和[[{{tr|Tiki Totem}}|{{tr|Tiki Spirit}}]]
+** {{tr|Light Pets}}不再需要[[{{tr|mana}}]]。
+** 添加了[[{{tr|Wisp in a Bottle}}|{{tr|Wisp}}]]{{tr|light pet}}。
+** 将 Orb of Light（光之球）更名为[[{{tr|Shadow Orb}}]]。
+** {{tr|Buffs}}不再会过期了。}}
+{{history|Desktop 1.1.2|{{tr|Introduced}}[[{{tr|Carrot}}|{{tr|Pet Bunny}}]]，仅在[[{{tr|Collector's Edition}}]]可用。}}
+{{history|Desktop 1.1|{{tr|Introduced}}[[{{tr|Fairy Bell}}|{{tr|Fairy}}]]{{tr|light pet}}。}}
+{{history|Desktop-Release|{{tr|Introduced}} [[{{tr|Shadow Orb (item)}}|Orb of Light]]（光之球）{{tr|light pet}}。}}
+{{history|Console 1.0.933.1|（{{icon|xbox one}}）
+** 添加了[[{{tr|Bone Rattle}}|{{tr|Baby Face Monster}}]]{{tr|pet}}。
+** 添加了[[{{tr|Crimson Heart (item)}}|{{tr|Crimson Heart}}]]、[[{{tr|Magic Lantern}}]]、和[[{{tr|Suspicious Looking Tentacle}}|{{tr|Suspicious Looking Eye}}]]{{tr|light pets}}。
+** 移除了所有{{tr|console}}独有的{{tr|pets}}，替换为{{tr|Gold Bunny}}。}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 添加了[[{{tr|Bone Rattle}}|{{tr|Baby Face Monster}}]]{{tr|pet}}。
+** 添加了[[{{tr|Crimson Heart (item)}}|{{tr|Crimson Heart}}]]、[[{{tr|Magic Lantern}}]]、和[[{{tr|Suspicious Looking Tentacle}}|{{tr|Suspicious Looking Eye}}]]{{tr|light pets}}。
+** 移除了所有{{tr|console}}独有的{{tr|pets}}，替换为{{tr|Gold Bunny}}。}}
+{{history|Console 1.07|添加了{{tr|Desktop}} 1.2.4 的宠物：[[{{tr|Tartar Sauce}}|{{tr|Mini Minotaur}}]]和[[{{tr|Zephyr Fish}}]]。}}
+{{history|Console 1.05|添加了[[{{tr|Frost Moon}}]]的[[{{tr|Baby Grinch's Mischief Whistle}}|{{tr|Baby Grinch}}]]。}}
+{{history|Console 1.04|添加了[[{{tr|Christmas}}]]的[[{{tr|Dog Whistle}}|{{tr|Puppy}}]]。}}
+{{history|Console 1.02|
+** 添加了[[1.2|{{tr|Desktop}} 1.2]]的{{tr|pets}}（参见上文{{tr|Desktop}} 1.2 中所列）和[[{{tr|Halloween}}]]的[[{{tr|Cursed Sapling}}]]和[[{{tr|Spider Egg}}|{{tr|Pet Spider}}]]。
+** {{tr|Light Pets}}不再需要[[{{tr|mana}}]]。
+** 将 Orb of Light（光之球）更名为[[{{tr|Shadow Orb}}]]。
+** {{tr|Buffs}}不再会过期了。
+**“Honeycomb”更名为“Beeswax”（{{tr|Beeswax}}）。
+** [[{{tr|Vial of Blood}}|{{tr|Pet Bat}}]]、[[{{tr|Cabbage}}|{{tr|Pet Guinea Pig}}]]、[[{{tr|Petri Dish}}|{{tr|Pet Slime}}]]、[[{{tr|Beeswax}}|{{tr|Pet Tiphia}}]]、[[{{tr|Brain}}|{{tr|Pet Zombie}}]]现在分别掉落自[[{{tr|Vampire Miner}}]]、[[{{tr|Dragon Snatcher}}]]、[[{{tr|Shadow Slime}}]]、[[{{tr|Dragon Hornet}}]]、和[[{{tr|The Groom}}]]。
+** [[{{tr|Wolf Fang}}|{{tr|Pet Werewolf}}]]现在掉落自[[{{tr|Werewolves}}]]，也出现在[[{{tr|Gold Chest}}]]中。}}
+{{history|Console-Release|
+** {{tr|Introduced}}[[{{tr|Fairy Bell}}|{{tr|Fairy}}]]和 [[{{tr|Shadow Orb (item)}}|{{tr|Orb of Light}}]] {{tr|light pets}}。
+** 引入{{tr|console}}/{{tr|mobile}}/{{tr|3DS}}独有{{tr|pets}}：[[{{tr|Vial of Blood}}|{{tr|Pet Bat}}]]、[[{{tr|Cabbage}}|{{tr|Pet Guinea Pig}}]]、[[{{tr|Petri Dish}}|{{tr|Pet Slime}}]]、[[{{tr|Beeswax}}|{{tr|Pet Tiphia}}]]、[[{{tr|Wolf Fang}}|{{tr|Pet Werewolf}}]]、和[[{{tr|Brain}}|{{tr|Pet Zombie}}]]。}}
+{{history|Mobile 1.3.0.7|移除了所有{{tr|mobile}}独有的{{tr|pets}}，替换为{{tr|Gold Bunny}}。}}
+{{history|Mobile 1.2.12773|修正各类[[{{tr|Tartar Sauce}}]]无法召唤出{{tr|Mini Minotaur}}的 {{tr|bug}}。}}
+{{history|Mobile 1.2.11212|
+** 添加了{{tr|Desktop}} 1.2.2 {{tr|pets}}：[[{{tr|Christmas}}]]的[[{{tr|Dog Whistle}}|{{tr|Puppy}}]]和[[{{tr|Frost Moon}}]]的[[{{tr|Baby Grinch's Mischief Whistle}}|{{tr|Baby Grinch}}]]。
+** 添加了{{tr|Desktop}} 1.2.4 的{{tr|pets}}：[[{{tr|Tartar Sauce}}|{{tr|Mini Minotaur}}]] 和 [[{{tr|Zephyr Fish}}]]。}}
+{{history|Mobile 1.2.7642|{{tr|Mobile}}/{{tr|3DS}}的[[{{tr|Holiday Bauble}}|{{tr|Pet Elfa}}]]现在可以通过在[[{{tr|Christmas}}]]期间砍树获得。}}
+{{history|Mobile 1.2.6508|
+** 添加了[[1.2|{{tr|Desktop}} 1.2]]的{{tr|pets}}（参见上文{{tr|Desktop}} 1.2 中所列）和[[{{tr|Halloween}}]]的[[{{tr|Cursed Sapling}}]]和[[{{tr|Spider Egg}}|{{tr|Pet Spider}}]]。
+** {{tr|Light Pets}}不再需要[[{{tr|mana}}]]。
+** 将 Orb of Light（光之球）更名为[[{{tr|Shadow Orb}}]]。
+** {{tr|Buffs}}不再会过期了。
+** “Honeycomb”更名为“Beeswax”（[[{{tr|Beeswax}}]]）。
+** [[{{tr|Vial of Blood}}|{{tr|Pet Bat}}]]、[[{{tr|Cabbage}}|{{tr|Pet Guinea Pig}}]]、[[{{tr|Petri Dish}}|{{tr|Pet Slime}}]]、[[{{tr|Beeswax}}|{{tr|Pet Tiphia}}]]、[[{{tr|Brain}}|{{tr|Pet Zombie}}]]现在分别掉落自[[{{tr|Vampire Miner}}]]、[[{{tr|Dragon Snatcher}}]]、[[{{tr|Shadow Slime}}]]、[[{{tr|Dragon Hornet}}]]、和[[{{tr|The Groom}}]]。
+** [[{{tr|Wolf Fang}}|{{tr|Pet Werewolf}}]]现在掉落自[[{{tr|Werewolves}}]]，也出现在[[{{tr|Gold Chest}}]]中。}}
+{{history|Mobile 1.1.6255|{{tr|Introduced}}{{tr|mobile}}/{{tr|3DS}} 的[[{{tr|Turkey feather}}|{{tr|Pet Turkey}}]]。}}
+{{history|Mobile 1.1.5963|添加了[[{{tr|Golden Seaweed}}|{{tr|Pet Golden Turtle}}]]。{{icon|amazon}} Amazon Fire TV}}
+{{history|Mobile 1.1.5536|{{tr|Mobile}}/{{tr|3DS}}的[[{{tr|Suspicious Looking Apple}}|{{tr|Pet Worm}}]]和[[{{tr|Old Walking Stick}}|{{tr|Pet Old Lady}}]]现在可获得了。}}
+{{history|Mobile 1.1.933|添加了{{tr|mobile}}/{{tr|3DS}}的[[{{tr|Suspicious Looking Apple}}|{{tr|Pet Worm}}]]和[[{{tr|Old Walking Stick}}|{{tr|Pet Old Lady}}]]，但不可获得。}}
+{{history|Mobile 1.1.92|添加了{{tr|mobile}}独有的[[{{tr|Pot o' Gold}}|{{tr|Pet Leprechaun o'Fyffe}}]]。}}
+{{history|Mobile 1.1.8|添加了{{tr|mobile}}/{{tr|3DS}}的[[{{tr|Broken Heart}}|{{tr|Pet Cupid}}]]。}}
+{{history|Mobile 1.1.5|添加了{{tr|mobile}}/{{tr|3DS}}的[[{{tr|Holiday Bauble}}|{{tr|Pet Elfa}}]]，但不可获得。}}
+{{history|Mobile-Release|
+** {{tr|Introduced}}[[{{tr|Fairy Bell}}|{{tr|Fairy}}]]和 [[{{tr|Shadow Orb (item)}}|{{tr|Orb of Light}}]] {{tr|light pets}}。
+** {{tr|Introduced}}{{tr|console}}/{{tr|mobile}}/{{tr|3DS}}独有{{tr|pets}}：[[{{tr|Vial of Blood}}|{{tr|Pet Bat}}]]、[[{{tr|Cabbage}}|{{tr|Pet Guinea Pig}}]]、[[{{tr|Petri Dish}}|{{tr|Pet Slime}}]]、[[{{tr|Beeswax}}|{{tr|Pet Tiphia}}]]、[[{{tr|Wolf Fang}}|{{tr|Pet Werewolf}}]]、和[[{{tr|Brain}}|{{tr|Pet Zombie}}]]。
+** {{tr|Introduced}}[[{{tr|Shiny Black Slab}}|{{tr|Pet Android}}]] {{icon|google play}}。}}
+{{history|3DS-Release|
+** {{tr|Introduced}}[[1.2|{{tr|Desktop}} 1.2]]的{{tr|pets}}（参见上文{{tr|Desktop}} 1.2 中所列）和[[{{tr|Halloween}}]]{{tr|pet}}：[[{{tr|Cursed Sapling}}]]和[[{{tr|Spider Egg}}|{{tr|Pet Spider}}]]。
+** {{tr|Introduced}}{{tr|light pets}}[[{{tr|Fairy Bell}}|{{tr|Fairy}}]]、[[{{tr|Shadow Orb (item)}}|{{tr|Shadow Orb}}]]、和[[{{tr|Wisp in a Bottle}}|{{tr|Wisp}}]]。
+** {{tr|Introduced}}{{tr|console}}/{{tr|mobile}}/{{tr|3DS}}独有{{tr|pets}}：[[{{tr|Vial of Blood}}|{{tr|Pet Bat}}]]、[[{{tr|Cabbage}}|{{tr|Pet Guinea Pig}}]]、[[{{tr|Petri Dish}}|{{tr|Pet Slime}}]]、[[{{tr|Beeswax}}|{{tr|Pet Tiphia}}]]、[[{{tr|Wolf Fang}}|{{tr|Pet Werewolf}}]]、和[[{{tr|Brain}}|{{tr|Pet Zombie}}]]。
+** {{tr|Introduced}}{{tr|mobile}}/{{tr|3DS}}独有{{tr|pets}}：[[{{tr|Holiday Bauble}}|{{tr|Pet Elfa}}]]、[[{{tr|Broken Heart}}|{{tr|Pet Cupid}}]]、[[{{tr|Suspicious Looking Apple}}|{{tr|Pet Worm}}]]、[[{{tr|Old Walking Stick}}|{{tr|Pet Old Lady}}]]、[[{{tr|Turkey Feather}}|{{tr|Pet Turkey}}]]。}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{all versions}}
+
+{{language info|en=Pets}}

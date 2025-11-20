@@ -1,0 +1,61 @@
+<!--
+// register localization information:
+-->{{l10n/register|tree_globe/table|en<!--
+	-->|treetype:forest=[[Forest]]<!--
+	-->|treetype:boreal=[[Snow biome|Boreal]]<!--
+	-->|treetype:jungle=[[Jungle]]<!--
+-->}}<!--
+-->{{l10n/register|tree_globe/table|de<!--
+	-->|treetype:forest=[[Wald]]<!--
+	-->|treetype:boreal=[[Tundra]]<!--
+	-->|treetype:jungle=[[Dschungel]]<!--
+-->}}<!--
+-->{{l10n/register|tree_globe/table|fr<!--
+	-->|treetype:forest=[[Forêt]]<!--
+	-->|treetype:boreal=[[Toundra|Boréal]]<!--
+	-->|treetype:jungle=[[Jungle]]<!--
+-->}}<!--
+-->{{l10n/register|tree_globe/table|ru<!--
+	-->|treetype:forest=[[{{tr|Forest}}]]<!--
+	-->|treetype:boreal=[[{{tr|Snow biome}}|Северное дерево]]<!--
+	-->|treetype:jungle=[[{{tr|Jungle}}]]<!--
+-->}}<!--
+-->{{l10n/register|tree_globe/table|zh<!--
+	-->|treetype:forest=[[{{tr|Forest}}]]<!--
+	-->|treetype:boreal=[[{{tr|Snow biome}}|{{tr|Boreal}}]]<!--
+	-->|treetype:jungle=[[{{tr|Jungle}}]]<!--
+-->}}<!--
+
+
+-->{{clear|left}}<!-- needed for transclusion
+-->{{flexstart}}<!--
+-->{{#af_foreach:{{#af_list:Forest|Boreal|Jungle}}|key|value|<!--
+	-->{{flexstart|item}}<!--
+	-->{{card|class=aligncenter|heading={{l10n|tree_globe/table|treetype:{{lc:{{{value}}}}}}}|<!--
+		-->{{flexstart|gap=0.5em|justify=center|style=margin: 0.5em auto}}<!-- 
+		-->{{#vardefine:i|0}}{{#vardefine:j|1}}{{#vardefine:flag|true}}<!-- 
+		-->{{#vardefine:filename|Treetop {{{value}}} {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!-- 
+		-->{{#dowhile:|{{#var:flag}}|<!-- 
+			-->[[File:{{#var:filename}}|40x40px|link=]]<!-- output this file
+			-->{{#vardefine:j|{{#expr:{{#var:j}}+1}}}}<!-- j++
+			-->{{#vardefine:filename|Treetop {{{value}}} {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!--  new filename
+			-->{{#if:{{filepath:{{#var:filename}}}}||<!-- if not exist:
+				-->{{#vardefine:i|{{#expr:{{#var:i}}+1}}}}{{#vardefine:j|1}}<!-- go to next line (i++, j=0)
+				-->{{#vardefine:filename|Treetop {{{value}}} {{#ifeq:{{#var:i}}|0||Alt{{#var:i}}}} {{#var:j}}.png}}<!-- new filename
+                // Note: Surprisingly, {{filepath}} is NOT expensive, and it works with shared file repositories as well. So, it should be the best way to check for the existence of a file.
+				-->{{#if:{{filepath:{{#var:filename}}}}<!-- if this file exists
+					-->|{{flexend}}{{flexstart|gap=0.5em|justify=center|style=margin: 0.5em auto}}<!-- start a new line
+					-->|{{#vardefine:flag|}}<!-- or break dowhile loop
+				-->}}<!-- 
+			-->}}<!--
+		-->}}<!-- 
+		-->{{flexend}}<!--
+	-->}}<!--end of card
+	-->{{flexend|item}}<!--
+-->}}<!--
+-->{{flexend}}<!--
+
+--><noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Tree Globe/tree styles}}
+</noinclude>

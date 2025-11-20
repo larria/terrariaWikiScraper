@@ -1,0 +1,245 @@
+<div class="ajaxHide">{{main|{{tr|Potions}}}}</div>
+这里列出了所有能给予[[{{tr|buff}}]]的[[{{tr|potions}}]]。另外参见[[{{tr|Flask}}]]。
+
+{{recipes
+|result = Ammo Reservation Potion/Archery Potion/Battle Potion/Biome Sight Potion/Builder Potion/Calming Potion/Crate Potion/Dangersense Potion/Endurance Potion/Featherfall Potion/Fishing Potion/Flipper Potion/Gills Potion/Gravitation Potion/Greater Luck Potion/Heartreach Potion/Hunter Potion/Inferno Potion/Invisibility Potion/Ironskin Potion/Lesser Luck Potion/Lifeforce Potion/Love Potion/Luck Potion/Magic Power Potion/Mana Regeneration Potion/Mining Potion/Night Owl Potion/Obsidian Skin Potion/Rage Potion/Regeneration Potion/Shine Potion/Sonar Potion/Spelunker Potion/Stink Potion/Summoning Potion/Swiftness Potion/Thorns Potion/Titan Potion/Warmth Potion/Water Walking Potion/Wrath Potion | expectedrows = 47
+|nostation = y
+|sortable=y
+<!-- custom headers for crafting table. -->
+|header-result = {{tr|Potion}}
+<!-- add custom col -->
+|col-C-4 = {{tr|Type}}
+|col-C-1 = {{tr|Tooltip}}
+|col-C-2 = {{tr|Duration}}
+|col-C-3 = {{tr|Icon}}
+<!-- data for custom col -->
+|result-index-Ammo Reservation Potion = a
+|a-row-col-C-4 = {{tr|Battle}}
+|a-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Ammo Reservation Potion}}}}
+|a-row-col-C-2 = {{iteminfo|Ammo Reservation Potion|buff duration}}
+|a-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Ammo Reservation Potion|buff id}}|image}}|center|link=]]
+|result-index-Archery Potion = b
+|b-row-col-C-4 = {{tr|Battle}}
+|b-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Archery Potion}}}}
+|b-row-col-C-2 = {{iteminfo|Archery Potion|buff duration}}
+|b-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Archery Potion|buff id}}|image}}|center|link=]]
+|result-index-Battle Potion = c
+|c-row-col-C-4 = {{tr|Battle}}
+|c-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Battle Potion}}}}
+|c-row-col-C-2 = {{iteminfo|Battle Potion|buff duration}}
+|c-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Battle Potion|buff id}}|image}}|center|link=]]
+|result-index-Builder Potion = d
+|d-row-col-C-4 = 其他
+|d-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Builder Potion}}}}
+|d-row-col-C-2 = {{iteminfo|Builder Potion|buff duration}}
+|d-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Builder Potion|buff id}}|image}}|center|link=]]
+|result-index-Calming Potion = e
+|e-row-col-C-4 = {{tr|Battle}}
+|e-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Calming Potion}}}}
+|e-row-col-C-2 = {{iteminfo|Calming Potion|buff duration}}
+|e-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Calming Potion|buff id}}|image}}|center|link=]]
+|result-index-Crate Potion = f
+|f-row-col-C-4 = {{tr|Fishing}}
+|f-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Crate Potion}}}}
+|f-row-col-C-2 = {{iteminfo|Crate Potion|buff duration}}
+|f-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Crate Potion|buff id}}|image}}|center|link=]]
+|result-index-Dangersense Potion = g
+|g-row-col-C-4 = {{tr|Battle}}
+|g-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Dangersense Potion}}}}
+|g-row-col-C-2 = {{iteminfo|Dangersense Potion|buff duration}}
+|g-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Dangersense Potion|buff id}}|image}}|center|link=]]
+|result-index-Endurance Potion = h
+|h-row-col-C-4 = {{tr|Battle}}
+|h-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Endurance Potion}}}}
+|h-row-col-C-2 = {{iteminfo|Endurance Potion|buff duration}}
+|h-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Endurance Potion|buff id}}|image}}|center|link=]]
+|result-index-Featherfall Potion = i
+|i-row-col-C-4 = {{tr|Movement}}
+|i-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Featherfall Potion}}}}
+|i-row-col-C-2 = {{iteminfo|Featherfall Potion|buff duration}}
+|i-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Featherfall Potion|buff id}}|image}}|center|link=]]
+|result-index-Fishing Potion = j
+|j-row-col-C-4 = {{tr|Fishing}}
+|j-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Fishing Potion}}}}
+|j-row-col-C-2 = {{iteminfo|Fishing Potion|buff duration}}
+|j-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Fishing Potion|buff id}}|image}}|center|link=]]
+|result-index-Flipper Potion = k
+|k-row-col-C-4 = {{tr|Movement}}
+|k-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Flipper Potion}}}}
+|k-row-col-C-2 = {{iteminfo|Flipper Potion|buff duration}}
+|k-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Flipper Potion|buff id}}|image}}|center|link=]]
+|result-index-Gills Potion = l
+|l-row-col-C-4 = 其他
+|l-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Gills Potion}}}}
+|l-row-col-C-2 = {{iteminfo|Gills Potion|buff duration}}
+|l-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Gills Potion|buff id}}|image}}|center|link=]]
+|result-index-Gravitation Potion = m
+|m-row-col-C-4 = {{tr|Movement}}
+|m-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Gravitation Potion}}}}
+|m-row-col-C-2 = {{iteminfo|Gravitation Potion|buff duration}}
+|m-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Gravitation Potion|buff id}}|image}}|center|link=]]
+|result-index-Heartreach Potion = n
+|n-row-col-C-4 = {{tr|Battle}}
+|n-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Heartreach Potion}}}}
+|n-row-col-C-2 = {{iteminfo|Heartreach Potion|buff duration}}
+|n-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Heartreach Potion|buff id}}|image}}|center|link=]]
+|result-index-Hunter Potion = o
+|o-row-col-C-4 = {{tr|Battle}}
+|o-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Hunter Potion}}}}
+|o-row-col-C-2 = {{iteminfo|Hunter Potion|buff duration}}
+|o-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Hunter Potion|buff id}}|image}}|center|link=]]
+|result-index-Inferno Potion = p
+|p-row-col-C-4 = {{tr|Battle}}
+|p-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Inferno Potion}}}}
+|p-row-col-C-2 = {{iteminfo|Inferno Potion|buff duration}}
+|p-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Inferno Potion|buff id}}|image}}|center|link=]]
+|result-index-Invisibility Potion = q
+|q-row-col-C-4 = 其他
+|q-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Invisibility Potion}}}}
+|q-row-col-C-2 = {{iteminfo|Invisibility Potion|buff duration}}
+|q-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Invisibility Potion|buff id}}|image}}|center|link=]]
+|result-index-Ironskin Potion = r
+|r-row-col-C-4 = {{tr|Battle}}
+|r-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Ironskin Potion}}}}
+|r-row-col-C-2 = {{iteminfo|Ironskin Potion|buff duration}}
+|r-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Ironskin Potion|buff id}}|image}}|center|link=]]
+|result-index-Lifeforce Potion = s
+|s-row-col-C-4 = {{tr|Battle}}
+|s-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Lifeforce Potion}}}}
+|s-row-col-C-2 = {{iteminfo|Lifeforce Potion|buff duration}}
+|s-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Lifeforce Potion|buff id}}|image}}|center|link=]]
+|result-index-Love Potion = t
+|t-row-col-C-4 = 其他
+|t-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Love Potion}}}}
+|t-row-col-C-2 = {{duration|30}}
+|t-row-col-C-3 = [[File:Lovestruck.png|center|link=]]
+|result-index-Magic Power Potion = u
+|u-row-col-C-4 = {{tr|Battle}}
+|u-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Magic Power Potion}}}}
+|u-row-col-C-2 = {{iteminfo|Magic Power Potion|buff duration}}
+|u-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Magic Power Potion|buff id}}|image}}|center|link=]]
+|result-index-Mana Regeneration Potion = v
+|v-row-col-C-4 = {{tr|Battle}}
+|v-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Mana Regeneration Potion}}}}
+|v-row-col-C-2 = {{iteminfo|Mana Regeneration Potion|buff duration}}
+|v-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Mana Regeneration Potion|buff id}}|image}}|center|link=]]
+|result-index-Mining Potion = w
+|w-row-col-C-4 = {{tr|Mining}}
+|w-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Mining Potion}}}}
+|w-row-col-C-2 = {{iteminfo|Mining Potion|buff duration}}
+|w-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Mining Potion|buff id}}|image}}|center|link=]]
+|result-index-Night Owl Potion = x
+|x-row-col-C-4 = 其他
+|x-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Night Owl Potion}}}}
+|x-row-col-C-2 = {{iteminfo|Night Owl Potion|buff duration}}
+|x-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Night Owl Potion|buff id}}|image}}|center|link=]]
+|result-index-Obsidian Skin Potion = y
+|y-row-col-C-4 = 其他
+|y-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Obsidian Skin Potion}}}}
+|y-row-col-C-2 = {{iteminfo|Obsidian Skin Potion|buff duration}}
+|y-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Obsidian Skin Potion|buff id}}|image}}|center|link=]]
+|result-index-Rage Potion = z
+|z-row-col-C-4 = {{tr|Battle}}
+|z-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Rage Potion}}}}
+|z-row-col-C-2 = {{iteminfo|Rage Potion|buff duration}}
+|z-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Rage Potion|buff id}}|image}}|center|link=]]
+|result-index-Regeneration Potion = 0
+|0-row-col-C-4 = {{tr|Battle}}
+|0-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Regeneration Potion}}}}
+|0-row-col-C-2 = {{iteminfo|Regeneration Potion|buff duration}}
+|0-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Regeneration Potion|buff id}}|image}}|center|link=]]
+|result-index-Shine Potion = 1
+|1-row-col-C-4 = {{tr|Mining}}
+|1-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Shine Potion}}}}
+|1-row-col-C-2 = {{iteminfo|Shine Potion|buff duration}}
+|1-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Shine Potion|buff id}}|image}}|center|link=]]
+|result-index-Sonar Potion = 2
+|2-row-col-C-4 = {{tr|Fishing}}
+|2-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Sonar Potion}}}}
+|2-row-col-C-2 = {{iteminfo|Sonar Potion|buff duration}}
+|2-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Sonar Potion|buff id}}|image}}|center|link=]]
+|result-index-Spelunker Potion = 3
+|3-row-col-C-4 = {{tr|Mining}}
+|3-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Spelunker Potion}}}}
+|3-row-col-C-2 = {{iteminfo|Spelunker Potion|buff duration}}
+|3-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Spelunker Potion|buff id}}|image}}|center|link=]]
+|result-index-Stink Potion = 4
+|4-row-col-C-4 = 其他
+|4-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Stink Potion}}}}
+|4-row-col-C-2 = {{duration|30}}
+|4-row-col-C-3 = [[File:Stinky.png|center|link=]]
+|result-index-Summoning Potion = 5
+|5-row-col-C-4 = {{tr|Battle}}
+|5-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Summoning Potion}}}}
+|5-row-col-C-2 = {{iteminfo|Summoning Potion|buff duration}}
+|5-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Summoning Potion|buff id}}|image}}|center|link=]]
+|result-index-Swiftness Potion = 6
+|6-row-col-C-4 = {{tr|Movement}}
+|6-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Swiftness Potion}}}}
+|6-row-col-C-2 = {{iteminfo|Swiftness Potion|buff duration}}
+|6-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Swiftness Potion|buff id}}|image}}|center|link=]]
+|result-index-Thorns Potion = 7
+|7-row-col-C-4 = {{tr|Battle}}
+|7-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Thorns Potion}}}}
+|7-row-col-C-2 = {{iteminfo|Thorns Potion|buff duration}}
+|7-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Thorns Potion|buff id}}|image}}|center|link=]]
+|result-index-Titan Potion = 8
+|8-row-col-C-4 = {{tr|Battle}}
+|8-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Titan Potion}}}}
+|8-row-col-C-2 = {{iteminfo|Titan Potion|buff duration}}
+|8-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Titan Potion|buff id}}|image}}|center|link=]]
+|result-index-Warmth Potion = 9
+|9-row-col-C-4 = {{tr|Battle}}
+|9-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Warmth Potion}}}}
+|9-row-col-C-2 = {{iteminfo|Warmth Potion|buff duration}}
+|9-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Warmth Potion|buff id}}|image}}|center|link=]]
+|result-index-Water Walking Potion = aa
+|aa-row-col-C-4 = {{tr|Movement}}
+|aa-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Water Walking Potion}}}}
+|aa-row-col-C-2 = {{iteminfo|Water Walking Potion|buff duration}}
+|aa-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Water Walking Potion|buff id}}|image}}|center|link=]]
+|result-index-Wrath Potion = bb
+|bb-row-col-C-4 = {{tr|Battle}}
+|bb-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Wrath Potion}}}}
+|bb-row-col-C-2 = {{iteminfo|Wrath Potion|buff duration}}
+|bb-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Wrath Potion|buff id}}|image}}|center|link=]]
+|result-index-Lesser Luck Potion = luckl
+|luckl-row-col-C-4 = 其他
+|luckl-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Lesser Luck Potion}}}}
+|luckl-row-col-C-2 = {{iteminfo|Lesser Luck Potion|buff duration}}
+|luckl-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Lesser Luck Potion|buff id}}|image}}|center|link=]]
+|result-index-Luck Potion = luck
+|luck-row-col-C-4 = 其他
+|luck-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Luck Potion}}}}
+|luck-row-col-C-2 = {{iteminfo|Luck Potion|buff duration}}
+|luck-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Luck Potion|buff id}}|image}}|center|link=]]
+|result-index-Greater Luck Potion = luckg
+|luckg-row-col-C-4 = 其他
+|luckg-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Greater Luck Potion}}}}
+|luckg-row-col-C-2 = {{iteminfo|Greater Luck Potion|buff duration}}
+|luckg-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Greater Luck Potion|buff id}}|image}}|center|link=]]
+|result-index-Biome Sight Potion = biome
+|biome-row-col-C-4 = 其他
+|biome-row-col-C-1 = {{itemTooltip|{{itemIdFromName|Biome Sight Potion}}}}
+|biome-row-col-C-2 = {{iteminfo|Biome Sight Potion|buff duration}}
+|biome-row-col-C-3 = [[File:{{getBuffInfo|{{iteminfo|Biome Sight Potion|buff id}}|image}}|center|link=]]
+<!-- extra row aside from recipes query -->
+|extrow-1-col-result = {{item|Wiesnbräu}}
+|extrow-1-col-ingredients = [[{{tr|Oktoberfest}}]]期间<br/>以 {{sc|9}} {{cc|95}} 的价格<br/>购买自[[{{tr|Merchant}}]]。
+|extrow-1-col-C-4 = {{tr|Battle}}
+|extrow-1-col-C-1 = 受到伤害减半且造成的伤害也减半。
+|extrow-1-col-C-2 = 30 {{tr|seconds}}
+|extrow-1-col-C-3 = [[File:Drunk.png|center|link=]]
+}}
+
+
+<div class="ajaxHide">
+{{Master Template Consumables
+| show-buff = yes
+}}
+</div>
+
+[[Category:{{tr|Potion items}}| ]]
+
+
+{{language info|en=Buff potions}}

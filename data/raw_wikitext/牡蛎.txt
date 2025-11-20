@@ -1,0 +1,41 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4410
+| type = Grab bag
+| tags = fished
+}}
+
+'''{{tr|Oyster}}'''是一个消耗性[[{{tr|grab bag}}]]{{tr|item}}。在玩家[[{{tr|inventory}}]]中使用 {{key|open}} 键打开时，它总会掉落一个[[{{tr|Shucked Oyster}}]]，还有 {{chance|1/5}} 几率掉落[[{{tr|White Pearl}}]]、[[{{tr|Black Pearl}}]]或[[{{tr|Pink Pearl}}]]（获得几率从高到低）。{{tr|Oysters}}可以在[[{{tr|Desert}}]]{{tr|biome}}中通过[[{{tr|fishing}}]]获得，但{{tr|Desert}}不能与[[{{tr|The Corruption}}|{{tr|Corruption}}]]或[[{{tr|The Crimson}}|{{tr|Crimson}}]]重叠。
+
+== 掉落 ==
+{{loot
+
+| Shucked Oyster|1|100%
+
+|:group:start||
+  | White Pearl|1|28/225
+  | Black Pearl|1|14/225
+  | Pink Pearl|1|1/75
+|:group:end|-----------------|-
+
+}}
+
+== 小贴士 ==
+* 和其他{{tr|grab bags}}一样，打开{{tr|Oysters}}总是值得的。除了能够卖 {{iteminfo|Shucked Oyster|sell}} 的{{tr|Shucked Oyster}}以外，每个{{tr|Oyster}}中的{{tr|Pearls}}平均来说能卖出 {{sell expr|round=0| White Pearl|*28/225 + |Black Pearl|*14/225 + |Pink Pearl|*1/75}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.3.3|
+** {{tr|White Pearl}}的掉落几率由 {{chance|96/625}} 降低至 {{chance|28/225}}。
+** {{tr|Black Pearl}}的掉落几率由 {{chance|24/625}} 提升至 {{chance|14/225}}。
+** {{tr|Pink Pearl}}的掉落几率由 {{chance|1/125}} 提升至 {{chance|1/75}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Oyster}}

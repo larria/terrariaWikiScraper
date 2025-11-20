@@ -1,0 +1,50 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5298
+| listcat = Boomerangs
+}}
+[[File:Trimarang (demo).gif|right|frame|使用{{tr|the Trimarang}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Trimarang}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|boomerang}}]]，由三个其他的{{tr|pre-Hardmode}}的{{tr|boomerangs}}制作而来。和大部分其他{{tr|boomerangs}}不同，{{tr|Trimarang}}被丢出后玩家无需等待其返回即可继续丢出更多的{{tr|Trimarang}}，同时最多可丢出 3 个{{tr|Trimarang}}。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Trimarang|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Trimarang}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 26.38 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Trimarang}}返回玩家时的最高速度为 {{mph|9.5 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+* 与其原料之一[[{{tr|Ice Boomerang}}]]不同，{{tr|The Trimarang}}无法造成[[{{tr|Frostburn}}]][[{{tr|debuff}}]]。
+* {{tr|The Trimarang}}的{{tr|knockback}}比其{{tr|crafting material}}低得多。这样设计很可能是为了让扔出的三个{{tr|boomerangs}}都能击中目标。
+
+== 小贴士 ==
+* {{tr|The Trimarang}}可以用来照亮黑暗处，例如{{tr|caves}}。
+* {{tr|The Trimarang}}的 {{DPS}} 在距离 10 格时要低于[[{{tr|Thorn Chakram}}]]和[[{{tr|Flamarang}}]]。不过，在距离 25–27 格时其 {{DPS}} 会优于这两者，因为丢出的{{tr|boomerangs}}会在目标处停留。
+
+== 花絮 ==
+* 尽管{{tr|The Trimarang}}是由三种不同的{{tr|boomerang}}制成，其设计只和[[{{tr|Enchanted Boomerang}}]]相似。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|
+** {{tr|Knockback}}由 3 提升至 4.5。
+** {{tr|Use time}}由 22 降低至 20。
+** {{tr|Velocity}}由 11 提升至 11.5。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Trimarang}}

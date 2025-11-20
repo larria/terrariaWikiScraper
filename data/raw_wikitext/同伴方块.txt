@@ -1,0 +1,40 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| type = Pet summon
+| auto = 3628
+| tags = buy / vendor:Traveling Merchant
+}}
+
+'''{{tr|Companion Cube}}'''是一个[[{{tr|pet}}]]{{tr|summoning item}}。它有几率由[[{{tr|Traveling Merchant}}]]以 {{iteminfo|Companion Cube|buy}} 的价格售卖。它会召唤一个'''{{tr|Companion Cube}}'''{{tr|pet}}，会围绕着玩家跳动。
+
+当玩家和{{tr|Companion Cube}}位于完全的黑暗中，{{tr|Companion Cube}}会偶尔“捅刺”它的主人，造成 3 伤害。捅刺能够杀死主人，并显示独特的[[{{tr|death message}}]]：“''{{gameText|DeathText.Stabbed|x_0=&lt;{{tr|Player}}的名字&gt;}}''”便携[[{{tr|light sources}}]]，如[[{{tr|Torches}}]]或[[{{tr|light pet}}]]，会完全防止被{{tr|Companion Cube}}捅刺。
+
+当{{tr|Companion Cube}}落到[[{{tr|lava}}]]中时，它会发出[[{{tr|Lunatic Cultist}}]]的{{sound|[[Media:NPC Killed 59.wav|死亡音效]]|NPC Killed 59.wav|nofallback=y}}。当浸没在{{tr|lava}}中足够长时间时，它有几率发出[[{{tr|Moon Lord}}]]的{{sound|[[Media:NPC Killed 61.wav|死亡音效]]|NPC Killed 61.wav|nofallback=y}}。{{tr|Companion Cube}}也会偶尔发出通常由[[{{tr|Whoopie Cushion}}]]及其升级发出的{{sound|[[Media:Item 16.wav|胀气声]]|Item 16.wav|nofallback=y}}。
+
+== 备注 ==
+* [[{{tr|Lunatic Cultist}}]]的死亡音效一分钟最多只能播放一次，无论{{tr|Companion Cube}}接触了{{tr|lava}}多少次。
+* 若在完全的黑暗中，{{tr|The Companion Cube}}并不需要接触玩家就能够捅刺他们。
+* 如果玩家在大于 6 {{tr|tiles}}以外，{{tr|The Companion Cube}}会穿过{{tr|solid blocks}}移动和弹跳来接近玩家。
+* 当位于很薄的一层{{tr|lava}}中，且玩家静止不动时，{{tr|The Companion Cube}}（在位于{{tr|lava}}中时）会弹跳，消失，然后立即在玩家站立位置重新出现。
+* {{tr|The Companion Cube}}的攻击能用[[{{tr|Master Ninja Gear}}]]以及其他闪避效果闪避。
+
+== 花絮 ==
+{{float file|[[File:Companion Cube Stab.gif|thumb|{{tr|The Companion Cube}}捅刺其主人。注意这仅在完全黑暗中才能发生。]]}}
+
+* 它是整个游戏中最昂贵的单个物品。
+* 它是三个能发出声音的宠物之一，其他的为{{eil|Suspicious Looking Apple|Pet Worm}}和{{eil|Glommer's Flower|Glommer}}。
+* {{tr|The Companion Cube}}直接参考了来自 Valve 的《{{wikipedia|Portal (video game)|传送门}}》（''Portal''）游戏系列中的[http://combineoverwiki.net/wiki/Companion_Cube 光圈科技重量同伴方块（Aperture Science Weighted Companion Cube）]。
+** {{tr|The Companion Cube}}会对{{tr|lava}}起反应参考了{{tr|Companion Cube}}在《传送门》中被处理的方式（被丢入焚化炉中）。
+** {{tr|The Companion Cube}}捅刺玩家参考了《传送门》中 [http://combineoverwiki.net/wiki/GLaDOS GLaDOS] 的一句台词：“丰富学习中心提醒您，重量同伴方块永远不会威胁要刺伤你，而且，其实，不会说话。”这一台词也被{{tr|buff}}的{{tr|tooltip}}直接引用。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Companion Cube}}

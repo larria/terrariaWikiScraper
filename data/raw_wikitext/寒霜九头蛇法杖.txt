@@ -1,0 +1,76 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1572
+| idprojectile = 308, 309
+| debuff = Frostbite / 5
+| debuffchance = 100%
+| sound1 = Item 46.wav
+| soundcaption1 = 召唤
+| sound2 = Item 28.wav
+| soundcaption2 = {{gameText|ProjectileName.FrostBlastFriendly}}
+| sound3 = Item 27.wav
+| soundcaption3 = {{gameText|ProjectileName.FrostBlastFriendly}}击中
+| tags = hardmode / sentry / loot
+}}
+{{distinguish|Frost Staff}}
+[[File:Staff of the Frost Hydra (demo).gif|thumb|400px|{{tr|Frost Hydra}}攻击两只[[{{tr|Mimics}}]]。]]
+
+'''{{tr|Staff of the Frost Hydra}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|Summon weapons}}#{{tr|Sentries}}|{{tr|sentry summon weapon}}]]。{{sentry note}}{{tr|The Frost Hydra}}会向 60 {{tr|tiles}}内的{{tr|enemies}}发射冰弹。它会自动上下调整头部角度并左右转向以攻击任意方向的{{tr|enemies}}。其{{tr|projectiles}}能够穿透两次，最多击中 3 个{{tr|enemies}}，{{tr|projectile}}每穿透一个{{tr|enemy}}，其伤害会降低 15%，其还能够造成[[{{tr|Frostbite}}]]{{tr|debuff}}。
+
+{{tr|The Frost Hydra}}可以被召唤到可见屏幕上的任何地方，即使{{tr|player}}与召唤点击的点之间有[[{{tr|block}}]]。注意，它不能在空中召唤，而是出现在召唤点下面最近的{{tr|blocks}}或{{tr|platform}}上。 {{tr|Staff of the Frost Hydra}}只能在[[{{tr|Dungeon}}]]的[[{{tr|Ice Chest}}]]中找到，且必须使用相对应的[[{{tr|Frozen Key}}]]来解锁。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|The Frost Hydra}}以每秒一次的速率发射{{tr|frost blasts}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI}}
+* {{tr|The Frost Hydra}}不会对{{tr|enemies}}造成{{tr|contact damage}}。不过，如果在 [[{{tr|PvP}}]] 中有玩家接触了它，它会造成全额伤害并消失。
+* 召唤完成后，{{tr|player}}可以切换到其它武器，{{tr|The Frost Hydra}}仍会存在并造成{{tr|damage}}。
+* {{tr|Frost Hydra}}在最初出现时会产生一大片闪光。它攻击产生的{{tr|projectile}}也会产生适量的光。
+* {{tr|Frost Hydra}}可以被召唤在{{tr|solid blocks}}里，这可以用来寻找[[{{tr|Ore}}]]和洞穴。
+* {{tr|The Frost Hydra}}造成[[{{tr|summon damage}}]]，因此它只会受到{{tr|minion damage bonuses}}影响。不过，部分{{tr|magic bonuses}}仍然会对其最初召唤生效（如降低[[{{tr|mana}}]]消耗）。
+* {{tr|Frost Blast}}击中{{tr|enemy}}时会造成 10 {{tr|tick}}[[{{tr|static immunity frame}}|{{tr|static invincibility frame}}]]。由于并非[[{{tr|local immunity frame}}|{{tr|local invincibility frame}}]]，召唤多于一个将会导致他们相互影响。
+* 即使{{tr|player}}死亡，{{tr|Frost Hydra}}仍然会继续存在。
+
+== 小贴士 ==
+* 高{{tr|damage}}，各种场景下的远程放置能力和足够照明效果使此法杖成为有价值的辅助武器。
+* {{tr|Frost Hydra}}的远程能力使得它在战斗和入侵中非常有用，因为它可以在放置后留下不管，使其独自杀死{{tr|enemy}}，而{{tr|player}}可以做其他的事情，比如买卖，躲藏，或者在另一个地点与{{tr|enemy}}战斗。
+* 当{{tr|Frost Hydra}}下方的{{tr|blocks}}被移除时，它会掉落，这使得它能够在挖掘垂直隧道时保护{{tr|player}}。
+* {{tr|Frost Hydra}}在探索洞穴时也很有用，因为它可以被召唤到{{tr|block}}内部并提供光照。
+
+== 花絮 ==
+* 虽然其名称源自希腊神话中的 {{wikipedia|lang=en|Lernaean Hydra|Lernaean Hydra（水蛇许德拉）}}{{note|small=y|（译注：水蛇许德拉是希腊神话中的怪兽，传说有九个头，其中之一永生不死。许德拉最终被英雄赫拉克勒斯击败并杀死。）}}，但{{tr|Frost Hydra}}{{tr|sentry}}只有一个头。
+* {{tr|The Frost Hydra}}大约有 4 个{{tr|tiles}}宽，3 个{{tr|tiles}}高，且是半透明的。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|{{tr|Projectile}}现在使用{{tr|static immunity frames}}，而非{{tr|global immunity frames}}。}}
+{{history|Desktop 1.4.4|
+** {{tr|Projectile}}现在会造成{{tr|Frostbite}}。
+** {{tr|Projectile speed}}提升 50%。
+** 现在在被召唤出后，在开火前有一个短暂的延迟。}}
+{{history|Desktop 1.4.1|
+** {{tr|Projectile}}现在会穿透两次，最多可击中 3 个{{tr|enemies}}。
+** {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 15% {{tr|damage}}惩罚。}}
+{{history|Desktop 1.3.4.4|修复了在攻击[[{{tr|Worm AI}}|{{tr|Worm}}]]{{tr|enemies}}时不断变换目标的问题。}}
+{{history|Desktop 1.3.4|现在被视为[[{{tr|Sentry}}]]。}}
+{{history|Desktop 1.3.0.1|现在可以被召唤在{{tr|platforms}}上。}}
+{{history|Desktop 1.2.4.1|现在召唤需要 20 {{tr|mana}}。}}
+{{history|Desktop 1.2.3|修复了在[[{{tr|reverse gravity}}]]时的精准度问题。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Biome Chests}}
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Staff of the Frost Hydra}}

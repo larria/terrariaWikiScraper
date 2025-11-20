@@ -1,0 +1,43 @@
+{{item infobox
+| type = Furniture / Light source
+| width = 1 | height = 2
+| buff = Star in a Bottle/ 在其附近时无限时间
+| auto = 1431
+| tags = Mechanism
+}}
+{{main|{{tr|Lanterns}}}}
+
+'''{{tr|Star in a Bottle}}'''是一种[[{{tr|lantern}}]]的变体。在{{eversions|1.3.0.1}}中，它会为附近的玩家提供'''{{tr|Star in a Bottle}}'''[[{{tr|buff}}]]，让[[{{tr|mana}}]]再生速度提高 5 {{tr|mana}}/秒。其{{tr|buff}}会施加到站在以其为中心的 {{buff area|epage=1.3.0.3}}范围内的所有玩家，类似于[[{{tr|Campfire}}]]和[[{{tr|Heart Lantern}}]]。和其他{{tr|Lanterns}}一样，{{tr|the Star in a Bottle}}是个[[{{tr|mechanism}}]]，可以通过[[{{tr|wire}}|电路]]打开或关闭，不过这并不会影响其{{tr|buff}}。
+
+在{{eversions|1.4.4}}中，它每秒给予 5 {{tr|mana}}，减少使用[[{{tr|magic weapons}}]]后{{tr|mana regeneration}}的{{tr|cooldown}}时间。
+
+在{{eversions|1.3.0.1|invert=y}}中，它不提供任何{{tr|buff}}，仅作为装饰照明。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Star in a Bottle|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Star in a Bottle}}的{{tr|mana regeneration bonus}}由每秒 1 {{tr|mana}}提高到每秒 5 {{tr|mana}}。此外，现在它也会略微减少在使用{{tr|magic weapons}}后{{tr|mana}}在开始再生前的等待时间。}}
+{{history|Desktop 1.4.0.1|作用范围增大。}}
+{{history|Desktop 1.3.1|
+** {{tr|Inventory sprite updated.}}
+** 修正了{{tr|Star in a Bottle}}的{{tr|buff}}无效的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|现在会为附近的玩家提供{{tr|Star in a Bottle buff}}，能提高[[{{tr|mana regeneration}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Placed buff items}}
+{{Master Template Furniture
+| show-other = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Star in a Bottle}}

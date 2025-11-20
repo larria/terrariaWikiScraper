@@ -1,0 +1,400 @@
+{{exclusive|Lunar Events}}
+{{npc infobox | boxwidth = 340px | notabs = y
+| auto = 422
+| id = 517, 422, 507, 493
+| name = Celestial Pillars
+| imagealt = <!--
+--><div style="display:inline-block;text-align:center;margin: auto 5px;font-size:85%;vertical-align:top;">{{tr|Solar Pillar}}<br/>[[File:Solar Pillar.png|70px]]</div><!--
+--><div style="display:inline-block;text-align:center;margin: auto 5px;font-size:85%;vertical-align:top;">{{tr|Vortex Pillar}}<br/>[[File:Vortex Pillar.png|70px]]</div><!--
+--><div style="display:inline-block;text-align:center;margin: auto 5px;font-size:85%;vertical-align:top;">{{tr|Nebula Pillar}}<br/>[[File:Nebula Pillar.png|70px]]</div><!--
+--><div style="display:inline-block;text-align:center;margin: auto 5px;font-size:85%;vertical-align:top;">{{tr|Stardust Pillar}}<br/>[[File:Stardust Pillar.png|70px]]</div>
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| sound1 = Item 10.wav
+| soundcaption1 = {{tr|Released Energy}}
+| sound2 = NPC Killed 58.wav
+| soundcaption2 = 护盾被摧毁
+| cargo = no
+}}
+{{quotation|[[File:Emote Town Guide.gif|link=]] [[{{tr|Guide}}]]|{{gameText|GuideHelpTextSpecific.Help_1158}}}}
+{{redirect|Pillars|其他用途|柱（消歧义）}}
+
+'''{{tr|Celestial Pillars}}'''（又称为'''{{tr|Lunar Pillars}}'''、'''{{tr|Lunar Towers}}'''、或'''{{tr|Celestial Towers}}'''）是在[[{{tr|Lunar Events}}]]中当[[{{tr|Lunatic Cultist}}]]被打败后出现的四个 [[{{tr|boss}}]]。它们出现在地图各处四个等间距的位置上（参见下文的[[#{{tr|Pillar}}生成机制|{{tr|Pillar}}生成机制]]），并且除了会在原地缓慢上下飘动外，它们不会移动。每个{{tr|pillar}}都会控制周围半径 250 格（或者说 500 [[{{tr|Compass}}|英尺]]）的圆形地图区域。{{source code ref|v=1.4.0.5|method=Terraria.Player.UpdateBiomes}}当玩家在受影响的区域中时，背景会变为{{tr|pillar}}特定的那种，并且只有{{tr|pillar}}的专属{{tr|enemies}}会大量地生成。
+
+四个{{tr|Celestial Pillars}}是'''{{tr|Solar Pillar}}'''、'''{{tr|Vortex Pillar}}'''、'''{{tr|Nebula Pillar}}'''、和'''{{tr|Stardust Pillar}}'''。按照打败它们后掉落的[[{{tr|Lunar Fragments}}]]所能制作的装备来看，它们代表了[[《{{tr|Terraria}}》]]中四种主要[[{{tr|damage types}}]]：{{tr|Solar}}为[[{{tr|Melee weapons}}|{{tr|melee}}]]、{{tr|Vortex}}为[[{{tr|Ranged weapons}}|{{tr|ranged}}]]、{{tr|Nebula}}为[[{{tr|Magic weapons}}|{{tr|magic}}]]、而{{tr|Stardust}}为[[{{tr|Summon weapons}}|{{tr|summon}}]]。
+
+最初，{{tr|the Celestial Pillars}}周围有一个很大的护盾，可以防止它们受到任何伤害。为了消除护盾，玩家必须杀死 100 个对应于该特定{{tr|Pillar}}的{{tr|enemies}}；杀死的{{tr|enemies}}会释放出飞向该{{tr|Pillar}}的护盾的小型红色能量粒子以提示这一点。在护盾解除后，{{tr|Enemies}}会继续生成，直到此{{tr|Pillar}}被打败。如果玩家未摧毁{{tr|Pillar}}的情况下退出{{tr|world}}，所有已经造成的伤害会被重置，移除护盾所需要的击杀计数也会被重置。不过，玩家[[{{tr|death}}]]并不会重置这些计数。在击败[[{{tr|Moon Lord}}]]后，解除护盾要求击败的{{tr|Enemies}}将下降至 50。
+
+<div>{{anchor|dropcount}}被摧毁时，每个{{tr|Celestial Pillars}}都会掉落对应其类型的 12–20 叠[[{{tr|Lunar Fragments}}]]。在[[{{tr|Classic Mode}}]]中，每叠中的{{tr|Lunar Fragments}}数量会在 1–3 个之间随机选择；在[[{{tr|Expert Mode}}]]和以上，每叠中的{{tr|item}}数量会在 <math>1 + \text{当前玩家数}</math> 和 <math>4 + \text{当前玩家数}</math> 个之间随机选择。因此，掉落的{{tr|Lunar Fragments}}总数为 12–60 / {{expert|24–100}}，在[[{{tr|multiplayer}}]]下每有一个额外玩家会再增加 {{expert|12–20}} 个。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_LunarTowers / Terraria.GameContent.ItemDropRules.DropOneByOne.TryDroppingItem}}</div>
+
+{{tr|The Pillars}}自身相当容易被打败，每个都只有 {{formatnum:{{npcinfo|Solar Pillar|hp_all}}}} {{tr|health}}、非常巨大、不会移动、并且攻击很弱（或没有攻击）。直接威胁来自于它们所生成的大量{{tr|enemies}}；它们能造成大量伤害、能造成[[{{tr|debuffs}}]]、并且如果不快速处理掉会轻松地淹没[[{{tr|player}}]]。
+
+打败{{tr|Celestial Pillars}}并没有预设的固定顺序。以下[[{{tr|status messages}}]]会在第一、第二、第三、第四个{{tr|Pillars}}被干掉时出现，而具体是哪个{{tr|pillar}}并无关系：
+
+* 打败第一个{{tr|Pillar}}：''“{{gameText|LegacyMisc.44}}”''
+* 打败第二个{{tr|Pillar}}：''“{{gameText|LegacyMisc.45}}”''
+* 打败第三个{{tr|Pillar}}：''“{{gameText|LegacyMisc.46}}”''
+* 打败第四个{{tr|Pillar}}：''“{{gameText|LegacyMisc.52}}”''
+
+打败全部四个{{tr|Celestial Pillars}}后，屏幕将开始振动，[[{{tr|Music}}]]的音量也会逐渐降低直至最终完全静音。60 秒后，[[{{tr|Moon Lord}}]]就会生成。
+
+{{toc limit|3}}
+
+== {{tr|Solar Pillar}} ==
+<section begin=solar infobox />{{npc infobox
+| auto = 517
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| damage2 = <br/>{{modes|120|240|360}} {{note|small=y|paren=y|[[{{tr|Solar Fragment (NPC)}}|{{tr|Solar Fragment}}]]}}
+| Solar Fragment|{{modes|12–60|24–100}}|100%
+| idprojectile = 629
+| sound1 = Item 10.wav
+| soundcaption1 = {{tr|Released Energy}}
+| sound2 = NPC Killed 58.wav
+| soundcaption2 = 护盾被摧毁
+| imageother = Map Icon Solar Pillar.png
+| imageothercaption = {{tr|Map Icon}}
+}}<section end=solar infobox />
+
+'''{{tr|Solar Pillar}}'''是{{tr|melee}}主题的{{tr|Pillar}}，带着有强防御能力、能造成高接触伤害的{{tr|minion}}。在其附近时，世界笼罩着橙色，背景会显示伴随有流星雨坠落的巨大橙色星球。它被打败时会掉落 12–60（{{expert|24–100}}{{footnote|name=dropcount}}）个[[{{tr|Solar Fragment}}]]。
+
+{{tr|The Solar Pillar}}会持续射出[[{{tr|Solar Fragment (NPC)}}|{{tr|Solar Fragment}}]][[{{tr|projectile NPC}}]]，它们会从{{tr|pillar}}顶部射出并以较宽的弧形落向地面。这些碎片会在接触{{tr|solid blocks}}或玩家时爆炸，并造成大量伤害。
+
+来自此{{tr|pillar}}的大多数{{tr|enemies}}都被限制在地面上，无法威胁到空中的玩家；不过，[[{{tr|Crawltipede}}]]会主动攻击任何远离地面的玩家。{{tr|Crawltipedes}}和[[{{tr|Corite}}]]也是仅有的能穿过{{tr|blocks}}的{{tr|enemies}}，因此若玩家可以处理{{tr|Corites}}就能够使用建筑来控制住此{{tr|pillar}}。
+
+{{tr|Solar Pillar}}具有四个{{tr|pillars}}中种类最繁多的{{tr|enemies}}，共计七种不同的{{tr|enemies}}。
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Enemy}}
+! 生成几率<ref name="th-spawnchance"/>
+! 最大数量<ref name="th-maxno"/>
+|-
+| {{item|Corite|size=30px}} || {{chance|1/14}} || {{note|paren=y|无限}}
+|-
+| {{item|Crawltipede|size=80px}} || {{chance|1/7}} || 1
+|-
+| {{item|Drakanian|size=80px}} || {{chance|1/7}} || 2
+|-
+| {{item|Drakomire|size=x35px}} || {{chance|9/56}} || 2
+|-
+| {{item|Drakomire Rider|size=70px}} || {{chance|9/56}} || 1
+|-
+| {{item|Selenian|size=x45px}} || {{chance|9/56}} || {{note|paren=y|无限}}
+|-
+| {{item|Sroller|size=x45px}} || {{chance|9/56}} || {{note|paren=y|无限}}
+|}{{options/reset|item}}
+
+* [[{{tr|Corite}}]]是一种会穿过所有{{tr|blocks}}的{{tr|flying enemy}}，能将自己笼罩在火中并高速冲向玩家。它在冲向玩家时免疫{{tr|knockback}}，但需要靠近玩家上方才能开始冲锋。
+* [[{{tr|Crawltipede}}]]是种长长的快速移动的[[{{tr|Worm enemies}}|{{tr|worm}}]]类{{tr|enemy}}，只能通过尾部的球体才能对其造成伤害，但对其造成的伤害会乘以 10。虽然当玩家脚下有实心{{tr|blocks}}时它是被动的，但它会直接冲向空中的玩家，造成极高的接触伤害。对于{{tr|Crawltipede}}而言，{{tr|Platforms}}和[[{{tr|Planter Box}}]]均算作实心地面，勾在墙壁上或悬浮在地面上方 15 格以内也可以，且它会对返回地面的玩家立即失去兴趣。
+* [[{{tr|The Drakanian}}]]是有着中等速度和伤害的步兵，手持火焰长矛。它可以骑着{{tr|Drakomire}}生成为[[{{tr|Drakomire rider}}]]。
+* [[{{tr|Drakomire}}]]会向玩家冲锋，在距离玩家足够远时会从嘴里射出三个远程的火球飞向玩家。这些火球很像{{tr|Solar Pillar}}的火球，且和{{tr|Solar Pillar}}的火球一样可被任何{{tr|weapon}}或{{tr|projectile}}一击摧毁。
+* [[{{tr|Selenian}}]]是挥舞着两把火焰剑的地面{{tr|enemy}}。当冲向玩家时，它偶尔会进行高速的旋转斩切攻击。在这一旋转攻击时，它会[[{{tr|List of reflected projectiles}}|反弹]]玩家发射的某些{{tr|projectiles}}，但由其他途径对其造成的伤害会变为 3 倍。
+* [[{{tr|Sroller}}]]会笨拙地走向玩家，但能够蜷缩成球状并快速滚向玩家，在接触时可能会造成大量伤害。
+
+{{-}}
+
+== {{tr|Vortex Pillar}} ==
+<section begin=vortex infobox />{{npc infobox
+| auto = 422
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+-->{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.VortexLightning}}}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 108</code> 代码段。}}
+| Vortex Fragment| {{modes|12–60|24–100}}|100%
+| idprojectile = 578, 579, 580, 629
+| sound1 = Item 117.wav
+| soundcaption1 = 召唤{{tr|Vortex}}
+| sound2 = Item 113.wav
+| soundcaption2 = 召唤{{tr|Alien Hornet}}
+| sound3 = Item 10.wav
+| soundcaption3 = {{tr|Released Energy}}
+| sound4 = NPC Killed 58.wav
+| soundcaption4 = 护盾被摧毁
+| imageother = Map Icon Vortex Pillar.png
+| imageothercaption = {{tr|Map Icon}}
+}}<section end=vortex infobox />
+
+'''{{tr|Vortex Pillar}}'''是{{tr|ranged}}主题的{{tr|Pillar}}，拥有快速、机动性强、能够飞行、且有长距离{{tr|projectile}}攻击能力的{{tr|minions}}。在其附近时，世界会笼罩着蓝绿色，背景会显示一个蓝绿色星球且偶尔伴随着闪电。它被打败时会掉落 12–60 （{{expert|24–100}}{{footnote|name=dropcount}}）个[[{{tr|Vortex Fragment}}]]。
+
+{{anchor|Lightning Vortex}}{{anchor|{{tr|Lightning Vortex}}}}{{tr|The Vortex Pillar}}能够在玩家头上召唤一个传送门，会生成两个[[{{tr|Alien Hornet}}]]或一道闪电，和[[{{tr|Vortexian}}]]死亡时创造的传送门相同。这些传送门总是会在玩家上方的任何天花板下方产生，但{{tr|Vortex enemies}}无法通过传送门以外的方式穿过{{tr|blocks}}到达玩家处。
+
+{{tr|This pillar}}的配色类似于[[{{tr|Moon Lord}}]]的配色。
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Enemy}}
+! 生成几率<ref name="th-spawnchance"/>
+! 最大数量<ref name="th-maxno"/>
+|-
+| {{item|Alien Hornet}} || {{chance|2/9}} || {{note|paren=y|无限}}
+|-
+| {{item|Alien Larva}} || {{na}} || {{note|paren=y|无限}}
+|-
+| {{item|Alien Queen}} || {{chance|1/9}} || 3
+|-
+| {{item|Storm Diver}} || {{chance|2/9}} || 3
+|-
+| {{item|Vortexian}} || {{chance|4/9}} || 4
+|}{{options/reset|item}}
+
+* [[{{tr|Alien Queen}}]]能够飞行并悬停在空中，且向玩家发射毒性粘液团，有 50% / {{expert|100%}} 几率造成[[{{tr|Distorted}}]][[{{tr|debuff}}]]，使得玩家在持续时间内无法向上飞或向下掉落，只能进行水平移动，持续 6–12 / {{expert|5–9}} 秒。
+** {{tr|The Alien Queen}}被杀死时会生成三个[[{{tr|Alien Larva}}]]，如果时间和空间足够，它们会成长为[[{{tr|Alien Hornet}}]]，并进一步成长为更多的{{tr|Alien Queens}}。
+* [[{{tr|Storm Diver}}]]在半空中悬浮并用其{{tr|shotgun}}向玩家发射扩散较小的一束子弹，在远距离能造成较大伤害。
+* [[{{tr|Vortexian}}]]是在地面成群聚集的步兵，在被杀死时会召唤传送门，会从上方向玩家发射强力的闪电。
+{{-}}
+
+== {{tr|Nebula Pillar}} ==
+<section begin=nebula infobox />{{npc infobox
+| auto = 507
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| Nebula Fragment|{{modes|12–60|24–100}}|100%
+| idprojectile = 629
+| sound1 = Item 10.wav
+| soundcaption1 = {{tr|Released Energy}}
+| sound2 = NPC Killed 58.wav
+| soundcaption2 = 护盾被摧毁
+| imageother = Map Icon Nebula Pillar.png
+| imageothercaption = {{tr|Map Icon}}
+}}<section end=nebula infobox />
+
+'''{{tr|Nebula Pillar}}'''是{{tr|magic}}主题的{{tr|Pillar}}，其{{tr|minions}}拥有飞行能力、传送能力、和其他非常规的攻击和能力。在其附近时，世界会笼罩着粉色，背景会显示一个伴随着将碎片拉向天空的能量光束的粉紫色星球。它被打败时会掉落 12–60（{{expert|24–100}}{{footnote|name=dropcount}}）个[[{{tr|Nebula Fragment}}]]。
+
+{{tr|The Nebula Pillar}}是唯一自身没有任何攻击或能力的{{tr|pillar}}。此外，它的{{tr|enemies}}具有靛蓝色/紫色的脉动光环效果，使得它们更容易被看到。
+
+{{tr|Nebula enemies}}很擅长于穿过{{tr|blocks}}攻击玩家，仅有[[{{tr|Predictor}}]]无法这样做。
+
+{{tr|The Nebula Pillar}}也是四个{{tr|pillars}}中独特{{tr|enemy}}种类最少的，共计四种{{tr|enemy}}。
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Enemy}}
+! 生成几率<ref name="th-spawnchance"/>
+! 最大数量<ref name="th-maxno"/>
+|-
+| {{item|Brain Suckler}} || {{chance|3/11}} || {{note|paren=y|无限}}
+|-
+| {{item|Evolution Beast}} || {{chance|3/11}} || 3
+|-
+| {{item|Nebula Floater}} || {{chance|2/11}} || 3
+|-
+| {{item|Predictor}} || {{chance|3/11}} || 3
+|}{{options/reset|item}}
+
+* [[{{tr|Brain Suckler}}]]会穿过{{tr|blocks}}飞行，并将它们自身附着到玩家头上。附着到玩家后，它会造成[[{{tr|Obstructed}}]]{{tr|debuff}}，显著将玩家的屏幕变暗并持续以恒定频率造成大量伤害。
+* [[{{tr|Evolution Beast}}]]会在地面上向玩家冲锋，还会停下来并发射缓慢追逐玩家的紫色{{tr|nebula}}球体，它们可穿透{{tr|block}}并对玩家多次造成高额伤害。它们自身还能造成中等接触伤害。这些{{tr|nebula}}球体无法以任何方式阻止，且可能会难以看见，鼓励玩家持续移动。
+* [[{{tr|Nebula Floater}}]]会在它周围生成最多三个较小的{{tr|Nebula Eyes}}，并穿过{{tr|blocks}}飞向玩家，然后从每个眼睛处向玩家发射强大的高{{tr|velocity}}的激光（或者在被墙壁阻挡时直接冲撞玩家）。它还会间歇地在玩家周围传送，且有几率在受伤时进行传送。
+* [[{{tr|Predictor}}]]会直接瞄准玩家发射以直线飞行的五道{{tr|nebula}}能量爆破，扩散很小。
+{{-}}
+
+== {{tr|Stardust Pillar}} ==
+<section begin=stardust infobox />{{npc infobox
+| auto = 493
+| type = Boss
+| hardmode = yes
+| environment = Lunar Events
+| Stardust Fragment|{{modes|12–60|24–100}}|100%
+| idprojectile = 540, 629
+| sound1 = Item 10.wav
+| soundcaption1 = {{tr|Released Energy}}
+| sound2 = NPC Killed 58.wav
+| soundcaption2 = 护盾被摧毁
+| imageother = Map Icon Stardust Pillar.png
+| imageothercaption = {{tr|Map Icon}}
+}}<section end=stardust infobox />
+
+'''{{tr|Stardust Pillar}}'''是{{tr|summon}}主题的{{tr|Celestial Pillar}}，带有大群会生成较小、较弱的实体进行攻击的{{tr|enemies}}。在其附近时，世界笼罩着蓝色，背景会显示伴随着闪光效果的蓝色星球。它被打败时会掉落 12–60（{{expert|24–100}}{{footnote|name=dropcount}}）个[[{{tr|Stardust Fragment}}]]。
+
+{{tr|The Stardust Pillar}}能够在它上方从星座中召唤额外的{{tr|enemies}}。周期性地，{{footnote|这一能力的连续使用之间有 2.5–7.5 秒的冷却。}}会闪现出一个由互相连接的圆形“星星”组成的图案，由{{tr|pillar}}顶部开始并形成一个粗糙的“星座”。星座每次闪现一颗星星，然后从最后一颗星星中随机生成一个{{tr|enemy}}。
+{{options/set|item|mode=table|icons=n}}
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Enemy}}
+! 生成几率<ref name="th-spawnchance"/>
+! 最大数量<ref name="th-maxno"/>
+|-
+| {{item|Flow Invader}} || {{chance|1/8}} || {{note|paren=y|无限}}
+|-
+| {{item|Milkyway Weaver|size=60px}} || {{chance|1/8}} || {{note|paren=y|无限}}
+|-
+| {{item|Star Cell|size=35px}} || {{chance|1/8}} || {{note|paren=y|无限}}
+|-
+| {{item|Stargazer}} || {{chance|3/8}} || {{note|paren=y|无限}}
+|-
+| {{item|Twinkle}} || {{na}} || {{note|paren=y|无限}}
+|-
+| {{item|Twinkle Popper}} || {{chance|2/8}} || {{note|paren=y|无限}}
+|}{{options/reset|item}}
+
+* [[{{tr|Flow Invader}}]]会在身边召唤较小的生物，当它周围有三个生物之后，会将其作为{{tr|projectiles}}射向玩家（每次一至二个）。在{{tr|Flow Invader}}被击杀后，所有已召唤的小生物会立即射向玩家，可能造成大量伤害。
+* [[{{tr|Milkyway Weaver}}]]是一个小型的[[{{tr|Worm enemies}}|{{tr|worm}}]]类{{tr|enemy}}，只能从头部受到伤害（类似于[[{{tr|Crawltipede}}]]）。无论在空中还是地面，它都会迅速地飞行并冲向玩家，穿过所有{{tr|block}}。偶尔地，它会减速并停下来数秒以收集能量，然后从它的头部通过星座图案生成另一个{{tr|Stardust Pillar}}{{tr|enemy}}（类似于{{tr|Stardust Pillar}}自身）。
+* [[{{tr|Star Cell}}]]被杀死时会分裂为最多四个更小的版本，在数秒后会长成全尺寸版本，这可能会导致大量的{{tr|Star Cell}}塞满屏幕。
+* [[{{tr|Stargazer}}]]会向玩家缓慢地走动，并向玩家发射较细但强大的{{tr|stardust}}激光。
+* [[{{tr|Twinkle Popper}}]]会造成{{tr|contact damage}}，还能通过吐出称作[[{{tr|Twinkle}}]]的小{{tr|enemies}}进行攻击，{{tr|Twinkle}}会在地面上追逐玩家并爆炸以造成大量伤害。
+
+{{tr|The Stardust Pillar}}只能用其能力生成飞行{{tr|enemies}}中的一种：它能生成{{tr|Star Cell}}（除非已存在多于一个{{tr|Star Cell}}或{{tr|Mini Star Cell}})、{{tr|Milkyway Weaver}}（除非已存在两个或以上）、或{{tr|Flow Invader}}（除非已存在一个或以上）。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnStardustMark_StardustTower}}它永远无法用其能力生成{{tr|Stargazer or Twinkle Popper}}。
+{{-}}
+
+== {{tr|Pillar}}生成机制 ==
+一旦{{tr|Lunatic Cultist}}在当前{{tr|world}}，游戏会遵循以下步骤来决定四个{{tr|pillars}}的生成位置。{{source code ref|v=1.4.0.5|method=Terraria.WorldGen.TriggerLunarApocalypse}}所有座标以{{tr|tile}}为单位。
+# 随机排列四个{{tr|pillars}}的顺序。
+# 将世界的宽度乘以 0.2、0.4、0.6、和 0.8 来找到{{tr|pillars}}的大致生成位置，彼此之间和到世界边缘是等距的。<br/>（例如，[[{{tr|Map size}}|大]]{{tr|world}}的宽度是 8400 格，所以四个{{tr|pillars}}将在 x<sub>a</sub>=1680、x<sub>b</sub>=3360、x<sub>c</sub>=5040 和 x<sub>d</sub>=6720 附近某个地方生成。）
+# 对于每个{{tr|pillar}}：
+## 在区间 [ x<sub>0</sub> - 100, x<sub>0</sub> + 100 ] 内随机取一个 x<sub>1</sub> 坐标，其中 x<sub>0</sub> 代表之前分配给 (x<sub>a</sub>, x<sub>b</sub>, x<sub>c</sub>, or x<sub>d</sub>) 的此{{tr|Pillar}}的 x 坐标。
+## 尝试找到可能的 y<sub>1</sub> 来在 (x<sub>1</sub>, y<sub>1</sub>) 处生成{{tr|the pillar}}。y<sub>1u</sub> 的处理是从地表 0 高度处到其上 100 格处，从低到高。如果符合以下条件，则此处对{{tr|a pillar}}而言是有效的生成空间：
+##* 以 (x<sub>1</sub>, y<sub>1</sub>) 向上 2.5 格处为中心的 20×35 格矩形区域内没有固体[[{{tr|blocks}}]]（不包括[[{{tr|platforms}}]]和其他类似的{{tr|tiles}}），即，这个区域是顶点为 A B C D 的矩形，其中 A = (x<sub>1</sub> - 10, y<sub>1</sub> - 20)、B = (x<sub>1</sub> + 10, y<sub>1</sub> - 20)、C = (x<sub>1</sub> + 10, y<sub>1</sub> + 15)、D = (x<sub>1</sub> - 10, y<sub>1</sub> + 15)。
+##* 此处位于玩家屏幕再加 20% 边距之外，即，四个顶点 A B C D 都在以玩家为中心的宽 2304（1920×1.2）像素高 1296（1080×1.2）像素（144×81 格）的矩形之外。
+## 如果以上两条检查均成功（因此此处是有效的生成空间），则{{tr|pillar}}会在 (x<sub>1</sub>, y<sub>1</sub>) 处生成。
+## 如果没法找到有效的 y<sub>1</sub>，则回到第一步并新挑一个 x<sub>1</sub>。重复整个过程最多 30次。
+## 如果 30 次之后还是没法找到有效的坐标，则放弃并将{{tr|pillar}}生成在固定点： (x<sub>0</sub>, y<sub>0</sub> - 40)，即，一开始确定的 x<sub>0</sub> 位置处地表高度以上 40 格处。
+
+=== {{tr|Pillar}}相对位置 ===
+利用以上生成机制，每个{{tr|pillar}}相对于{{tr|world}}中心（[[{{tr|world spawn point}}]]通常位于该处附近）的大概水平位置可以轻松地计算得出。
+
+假设 S 是世界大小（英尺为单位）而 P<sub>X</sub> 是{{tr|pillar}} X 的位置因子（0.2、0.4、0.6、0.8）则相对位置 R<sub>X</sub> 可以计算如下：R<sub>X</sub> =(S × P<sub>X</sub>) − S ÷ 2。各个{{tr|pillar}}的精确位置可向左或向右随机变化最多 100 格（200 英尺）。
+
+这在下表中进行了直观呈现，它代表了一个世界的概况。要记住，{{tr|pillars}}的顺序是随机的，此处使用的只是一个示例。
+
+{| class="terraria lined align-center"
+|+ 水平位置（单位：英尺）
+! {{tr|World size}} !! {{tr|world}}西边界 !! [[File:Bestiary Solar Pillar.png|link=|{{tr|Pillar}} 1]] !! [[File:Bestiary Vortex Pillar.png|link=|{{tr|Pillar}} 2]] !! {{tr|world}}中心 !! [[File:Bestiary Nebula Pillar.png|link=|{{tr|Pillar}} 3]] !! [[File:Bestiary Stardust Pillar.png|link=|{{tr|Pillar}} 4]] !! {{tr|world}}东边界
+|-
+! style="font-weight:normal;" | 小
+| −4,200 || −2,520 || −840 || 0 || 840 || 2,520 || 4,200
+|-
+! style="font-weight:normal;" | 中
+| −6,400 || −3,840 || −1,280 || 0 || 1,280 || 3,840 || 6,400
+|-
+! style="font-weight:normal;" | 大
+| −8,400 || −5,040 || −1,680 || 0 || 1,680 || 5,040 || 8,400
+|}
+
+== 备注 ==
+* 类似于[[{{tr|Old One's Army}}]]，{{tr|celestial enemies}}不会掉落[[{{tr|coins}}]]。
+* [[{{tr|NPCs}}]] 不会试图攻击{{tr|pillars}}，即使在射程内也如此。
+* 在[[{{tr|Expert Mode}}]]或[[{{tr|Master Mode}}]]，{{tr|pillars}}会根据玩家数掉落额外的{{tr|fragments}}。
+* {{tr|The pillars}}和相应{{tr|enemies}}可以在[[{{tr|background walls}}]]上生成，这和大多数其他{{tr|enemies}}不同。
+* 如果还有{{tr|Celestial Pillar}}存活，玩家就无法在[[{{tr|Beds}}]]上[[{{tr|sleep}}]]来加速时间。
+* 如果通过[[{{tr|mods}}]]或其他外部软件来生成并杀死超过一个{{tr|Lunatic Cultist}}，每击杀一个{{tr|Lunatic Cultist}}就会生成额外的一组{{tr|pillars}}，每一组都会遵循上方描述的方法生成。
+
+== 成就 ==
+{{achievement|name=Star Destroyer}}
+
+== 小贴士 ==
+<!-- This section should be cleaned up to only include generic tips, without any specific strategies. These can be put on Guide:Lunar Event strategies-->{{strategies|指南:{{tr|Lunar Event}}攻略}}
+
+=== 所有{{tr|pillars}} ===
+* 玩家可以通过击杀{{tr|enemy}}是否有一条彩色线从尸体上飞向{{tr|Pillar}}来判断是否已达成所需击杀数。如果没有出现这些线，就表示击杀数已达标。另外，围绕着{{tr|Celestial Pillars}}的护盾也会变得越来越透明，因为它距离破裂越来越近。如果玩家使用的是“颜色”照明类型，他们可以注意查看{{tr|pillar}}在护盾破裂前向各个方向发出的冲击波。
+** 在添加了 [[{{tr|boss health bars}}]]后，{{tr|the Pillar}}的护盾以蓝色显示在常规的红色{{tr|health bar}}上，若开启了“{{tr|Boss Health Bar}}数值”选项还会显示摧毁护盾所需的总{{tr|enemies}}数。
+* 在开始{{tr|Lunar Events}}前，值得先布置好[[{{tr|Pylon}}]]网络或铺设一条横穿地图的[[{{tr|Teleporter}}]]线路，其上的站点应当足够多，让玩家至少能选择先接近哪个{{tr|pillar}}。
+* 一些{{tr|enemies}}可以穿过{{tr|blocks}}行进或攻击。
+** 因此，如果玩家拥有能穿墙造成伤害的有效武器（比如[[{{tr|Flying Dragon|link=y}}|{{tr|Flying Dragon}}]]或[[{{tr|Solar Eruption}}]]），则大部分情况下可以建一个地下掩体并攻击进来的{{tr|enemies}}。这种策略对于{{tr|the Nebula Pillar}}是最困难的，因为有[[{{tr|Evolution Beast}}]]的持续存在的追踪{{tr|projectiles}}和[[{{tr|Brain Suckler}}]]的{{tr|debuffs}}。
+*打败第一个{{tr|pillar}}所得到的{{tr|The weapons}}对于打败其他{{tr|pillar}}会非常有帮助。{{tr|The Solar Pillar}}会提供[[{{tr|Solar Eruption}}]]和[[{{tr|Daybreak}}]]、{{tr|the Vortex Pillar}}会提供[[{{tr|Phantasm}}]]和[[{{tr|Vortex Beater}}]]、{{tr|the Nebula Pillar}}提供[[{{tr|Nebula Arcanum}}]]和[[{{tr|Nebula Blaze}}]]、而{{tr|the Stardust Pillar}}则提供[[{{tr|Stardust Dragon Staff}}]]和[[{{tr|Stardust Cell Staff}}]]。
+** 最好只是简单地盯着和玩家首选职业相匹配的{{tr|pillar}}，从而获得至少一件此职业的强大武器。
+* 玩家可以用[[{{tr|GPS}}]]来了解{{tr|Pillar}}的[[高度]]，建造或扩建附近的建筑来在此高度上提供射击{{tr|platform}}，然后用[[{{tr|Rocket Launcher}}]]轰炸{{tr|Pillars}}，还可以用[[{{tr|Sniper Rifle}}]]提供支持。{{tr|the rocket}}到达{{tr|pillar}}处可能需要很长的时间：在{{tr|large map}}中，{{tr|a rocket}}需要约 1 分钟才能从地图中心行进到最远的{{tr|Pillar}}处。
+*如果玩家已经获得了[[{{tr|Vampire Knives}}]]，一旦{{tr|pillar}}的护盾被摧毁，玩家可以通过紧贴{{tr|pillar}}发射飞刀来极快地恢复{{tr|health}}。
+*干掉{{tr|Pillars}}的策略之一是站在{{tr|pillars}}生成区域的边缘附近，并在低生命值时撤退并恢复，直到其护盾被打破。
+
+=== {{tr|Solar Pillar}} ===
+*在与[[{{tr|Solar Pillar}}]]{{tr|enemies}}作战时，强烈建议保持接地。滞空玩家很容易被[[{{tr|Crawltipede}}]]{{tr|minions}}干掉，它们会造成超大量伤害但只会瞄准滞空玩家。
+* 如果玩家在他们的世界中建设了天桥，站在上面将让他们可以向下射击地面上的{{tr|enemies}}甚至是{{tr|the pillar}}而不会被[[{{tr|Crawltipede}}]]瞄准。注意[[{{tr|Sroller}}]]仍然可以跳到{{tr|platform}}上并团身冲向玩家。
+* 强烈建议不要用[[{{tr|bullets}}]]、[[{{tr|arrows}}]]、或大多数非[[{{tr|Rockets}}]]的{{tr|projectiles}}，至少不要对[[{{tr|Selenian}}]]用，因为它们会反射非{{tr|Rockets}}{{tr|projectiles}}，这些{{tr|projectiles}}会对玩家造成伤害，伤害量与它本应对{{tr|the Selenian}}造成的伤害等量。
+*如果玩家有[[{{tr|Neptune's Shell}}]]、或一个带有其效果的组合{{tr|accessory}}、或[[{{tr|Gills Potion}}]]，那么站在{{tr|the pillar}}下方或者附近的一大池水中就可以让玩家离地四处移动，而不会被{{tr|Crawltipedes}}所瞄准。此外，这样会导致除了[[{{tr|Corites}}]]之外的大多数{{tr|enemies}}移动得更慢，并且更容易瞄准它们。
+* 如果可以的话，[[{{tr|Scutlix Mount}}]]可以大大提高向前的火力和地面机动性，使战斗更容易。
+** 记住{{tr|Selenians}}可以反射{{tr|lasers}}。
+* 在与{{tr|Solar Pillar}}作战时，试着在{{tr|the Pillar}}开始生成{{tr|enemies}}的地方边缘建造一个两层楼高有{{tr|doors}}和{{tr|platforms}}的小建筑物来帮助阻挡一些{{tr|enemies}}蜂拥而至，并迫使它们进入一个小而易于防御的区域。只有{{tr|the Corites}}会穿墙飞行。
+* 奇怪的是，{{tr|the Solar Pillar}}所生成的{{tr|the enemies}}并不免疫[[{{tr|On Fire!}}]]或[[{{tr|Hellfire}}]]{{tr|debuff}}。
+* 诸如[[{{tr|Possessed Hatchet}}]]或[[{{tr|Stardust Dragon Staff}}]]这类的武器只会瞄准[[{{tr|Crawltipede}}]]的尾巴，而这样可以快速轻松地杀死它们，使战斗更加轻松。
+* 用{{tr|ranged weapon}}时，可以在{{tr|Corite}}冲锋时对其射击将其定在原地。
+* 有足够速度时，甩开{{tr|Crawltipede}}是可能的。虽然很反直觉，但击败{{tr|Solar Pillar}}的一种方法是使用有高竖直速度的[[{{tr|wings}}]]、[[{{tr|Frog Leg}}]]（{{tr|or its upgrades}}）、和[[{{tr|Soaring Insignia}}]]（若可用）并斜向飞行，用{{tr|homing weapons}}（如搭配[[{{tr|Chlorophyte Bullet}}]]的[[{{tr|Vortex Beater}}]]，或[[{{tr|Razorblade Typhoon}}]]）以攻击追逐玩家的{{tr|Crawltipedes}}的尾部。在杀死{{tr|Crawltipede}}后，玩家就可停留在空中一段时间，将{{tr|homing weapon}}瞄准地面上的{{tr|enemies}}。
+
+=== {{tr|Vortex Pillar}} ===
+* 如果玩家在半空中看到旋转的{{tr|portal}}，应该保持距离并快速移动。{{tr|portal}}会射出类似于[[{{tr|Lunatic Cultist}}]]的攻击那样的{{tr|lightning bolt}}或生成两只[[{{tr|Alien Hornet}}]]。{{tr|Portals}}大多数情况下会试图生成在玩家当前位置上方。
+** 当{{tr|portal}}射出闪电时，会有一个蓝色的漩涡标记指向闪电击向的方向。但它们通常只会向下射击。
+** 如果在屏幕上有能直线联通到玩家处的背景墙，则{{tr|The Vortex Pillar}}总是会将{{tr|Alien Hornets}}生成在这些背景墙上。否则，它会将{{tr|Alien Hornets}}生成在{{tr|Pillar}}周围大约 300 格范围内的任何地方。
+* {{tr|Alien Queens}}造成的{{tr|The Distorted debuff}}很可能让玩家停留在易受{{tr|Storm Diver}}的{{tr|shotgun}}攻击的地方。如果受到{{tr|Distorted}}，玩家应当移动到任何接近的{{tr|Storm Divers}}的上方或下方，并在它们到达和玩家同一水平高度前杀死它们，否则若当它们到达后玩家仍然受到{{tr|Distorted}}影响，就无法避开它们的子弹。
+* 因为大多数{{tr|enemies}}都会试图与玩家保持同样高度，因此停留在地面上能消除{{tr|Alien Hornets}}和{{tr|Storm Divers}}的大部分机动性。
+* 这是唯一一个{{tr|enemies}}或{{tr|projectiles}}不能穿过{{tr|block}}的{{tr|pillar}}，因此，寻找掩护会非常有效。然而，由于许多{{tr|enemies}}会保持距离，这样会有点慢。
+* 避免被{{tr|Alien Queens}}淹没，因为它们能很容易地从{{tr|Alien Larvae}}和{{tr|Alien Hornets}}成长而来并且{{tr|Distorted debuff}}会大大降低玩家的战斗能力和敏捷程度。
+* 如果{{tr|pillar}}在封闭的空间里生成{{tr|Alien Hornets}}且玩家拥有能穿过{{tr|block}}伤害{{tr|enemy}}的武器，那么就可以等待它们长成{{tr|Alien Queens}}，击杀之，等待{{tr|Larva}}再孵化成{{tr|Alien Hornets}}并重复此过程，这样就可以快速安全地干掉{{tr|Vortex Pillar}}的护盾。如果{{tr|Alien Hornets}}恰好在{{tr|the pillar}}的{{tr|enemy}}生成范围之外，那么这种技术就会特别有效。
+
+=== {{tr|Nebula Pillar}} ===
+* 战斗时，要小心避免被[[{{tr|Brain Suckler}}]]打到。它们会造成{{tr|Obstructed}}[[{{tr|debuff}}]]，这类似于{{tr|Darkness and Blackout}}，但会让除了玩家周围的一小圈区域以外的整个屏幕变黑，且不受任何[[{{tr|light sources}}]]影响。它会持续到玩家杀死附在身上的{{tr|the Brain Suckler}}之后再一会儿。
+* 要非常警惕[[{{tr|Nebula Floater}}]]。它们的激光造成高伤害，速度很快且很精准，并且它们传送的倾向（尤其是受伤时的传送）会让它们变得不可预测。
+** 它们也能传送到玩家正前方并在零距离下射击；如果玩家无法再挨下另一轮射击并且无法治疗，最好撤退。在直线飞行时要小心，如果{{tr|Nebula Floater}}传送到玩家面前，会造成可能致命的接触伤害。
+* 快速杀死[[{{tr|Evolution Beast}}]]，因为一旦它们进入射程就会发射缓慢但高伤害的能量球，会追踪玩家、穿墙、可以造成持续伤害、且要过若干秒才会消失。这些会迫使玩家移动而进入其他危险。
+* 留意[[{{tr|Predictor}}]]，因为它们将和保持距离，并不会试图接近玩家，并以类似于{{tr|Storm Divers}}发射{{tr|shotguns}}的方式射出若干个高速的{{tr|Nebula Piercers}}。
+
+=== {{tr|Stardust Pillar}} ===
+* 对[[{{tr|Star Cell}}]]使用溅射伤害武器可能是击杀它们的最简单的方法，因为它会破坏所有分裂的细胞和最初的细胞。
+* 一种快速且简单的打破护盾的方法是将一个{{tr|star cell}}从{{tr|the Pillar}}处引开，将它打破成小球体，然后让这些小球体长成完整的{{tr|star cells}}。这会创造出一个无限循环，而新生成的{{tr|star cells}}同样会计入计数中。
+* 在死亡时，[[{{tr|Flow Invader}}]]将直接向玩家投掷最多三枚{{tr|projectiles}}。当玩家杀死此{{tr|enemy}}的时候要做好躲闪的准备。
+* [[{{tr|Stargazer}}]]的{{tr|lasers}}造成非常高的伤害，但它们在没有直接视线的情况下难以瞄准玩家。无视地形或可以绕过地形的武器会非常有效，比如[[{{tr|yoyos}}]]、[[{{tr|minion}}]]、和[[{{tr|Chlorophyte Bullet}}]]。
+
+== 花絮 ==
+* 对应关系：
+** 如上所述，来自{{tr|Pillars}}的可制作装备和{{tr|enemies}}都对应于游戏中的四个主要职业：{{tr|Solar}}——[[{{tr|Melee weapons}}|{{tr|melee}}]]、{{tr|Vortex}}——[[{{tr|Ranged weapons}}|{{tr|ranged}}]]、{{tr|Nebula}}——[[{{tr|Magic weapons}}|{{tr|magic}}]]、{{tr|Stardust}}——[[{{tr|Summon weapons}}|{{tr|summon}}]]。
+**处于{{tr|Pillar}}的区域内时，附近的整个区域都会变为{{tr|pillar}}的颜色：{{tr|Solar}}——橙色、{{tr|Vortex}}——青绿色、{{tr|Nebula}}——紫色、{{tr|Stardust}}——蓝色)。仅当[[{{tr|lighting mode}}]]设置为“彩色”或“白光”时才会发生这种效果。
+** 这四个{{tr|pillars}}也可能是参考了{{维基百科|star|恒星}}的整个生命历程：{{tr|Solar}}——活着的恒星、{{tr|Vortex}}——坍缩中的死亡恒星、{{tr|Stardust}}——恒星的遗骸、{{tr|Nebula}}——新恒星的诞生。
+[[File:Scenery Mixup.png|thumb|364x364px|来自{{tr|Hallowed Forest}}和{{tr|Vortex Pillar}}的背景风景相结合。]]
+* 偶尔，{{tr|pillar}}所在的{{tr|biome}}的背景风景会与在{{tr|pillar}}附近出现的背景风景相叠加（见右边的图片）。
+* 所有{{tr|Celestial Pillars}}都有人形{{tr|enemy}}：
+{{options/set|item|icons=n|maxsize=x27px}}
+:* {{tr|Solar Pillar}}：{{item|Selenian}}和{{item|Drakanian}}
+:* {{tr|Vortex Pillar}}：{{item|Vortexian}}和{{item|Storm Diver}}
+:* {{tr|Stardust Pillar}}：{{item|Stargazer}}
+:* {{tr|Nebula Pillar}}：{{item|Predictor}}
+{{options/reset|item}}
+* {{tr|The Nebula Pillar}}是唯一没有直接伤害攻击的{{tr|pillar}}，{{tr|the Solar Pillar}}用{{tr|fireballs}}攻击、{{tr|the Vortex Pillar}}召唤会发射闪电或生成{{tr|Alien Hornets}}的{{tr|portals}}、而{{tr|the Stardust Pillar}}召唤生成任意{{tr|enemy}}的星座。
+*{{tr|The Celestial Pillars}}是游戏中仅有的不会造成任何接触伤害的 [[{{tr|boss}}]]。
+* 如果{{tr|Lighting mode}}设置为“彩色”或“白色”，护盾会有扭曲效果。当护盾消解时，它会像所有方向发出冲击波。在“复古”或“迷幻”模式下不会有这些效果。另外，会注意到，{{tr|Vortex Pillar}}的颜色似乎和{{tr|Moon Lord}}一样。
+* 在 [[1.4.0.1]] 之前，用[[{{tr|Gravitation Potion}}]]或[[{{tr|Gravity Globe}}]]反转[[{{tr|gravity}}]]会对{{tr|a pillar}}的护盾有奇怪的影响。它不像正常那样静止在{{tr|the pillar}}周围，其垂直位置会根据它和玩家之间的相对位置而改变。这只是装饰性效果，因为在护盾看起来已经移开时也并不能攻击{{tr|the pillar}}。
+*{{tr|celestial Enemy}}死亡时（在{{tr|Pillar}}的护盾消解之前）生成的{{tr|The projectile}}名叫“{{tr|Released Energy}}”，[[{{tr|Projectile IDs}}|{{tr|projectile ID}}]] 为 629。玩家可以用[[{{tr|Mod}}]]来生成此{{tr|projectile}}。如果在没有{{tr|pillars}}的时候生成，它会以[[{{tr|dungeon}}]]门口的[[{{tr|Old Man}}]]为目标。如果{{tr|Old Man}}不存在，{{tr|Released Energy}}会直接消失。
+* 退出并重新进入游戏会将{{tr|pillars}}放在其飘动移动的最高处，同时维持其位置不变，这导致它们会稍微下沉。
+* 所有{{tr|the Celestial Pillars}}都有着两个 [[{{tr|boss health bar}}]]，{{tr|the shield}}（蓝）和{{tr|the pillar}}自身（红）。这让{{tr|Celestial Pillars}}成为游戏中仅有的有两个单独生命条的 {{tr|boss}}。
+* 可以用[[{{tr|Ice Rod}}]]来竖直移动{{tr|the pillars}}。
+* 所有{{tr|Nebula pillar}}{{tr|enemies}}似乎都有外露的大脑。
+* 假设玩家高 {{real-life size|48|feet}}（{{real-life size|48|meters}} 米），{{tr|the Celestial Pillars}}将有 {{real-life size|360|feet}}（{{real-life size|360|meters}} 米）高。<!--{{npcinfo|Solar Pillar|height}} returns hitbox size, which is smaller than sprite-->
+{{bestiary|Solar Pillar|Vortex Pillar|Nebula Pillar|Stardust Pillar}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Expert/Master}}{{tr|worlds}}不再具有增加的{{tr|Celestial Pillar}}击杀数需求。此前在这些{{tr|difficulties}}下，解除护盾需要 150 次击杀。
+** 击败[[{{tr|Moon Lord}}]]后，{{tr|Lunar Pillars}}只需 50 次击杀即可解除护盾，无论难度。
+** {{tr|Vortex Pillar}}的{{tr|Hornet Portals and Vortexian Portals}}现在将在更远的地方生成，给玩家注意到它的时间。{{tr|Vortexian Portals}}在开火时也会发出更大的声音。}}
+{{history|Desktop 1.4.1|
+** {{tr|Vortex Lightning}}的伤害由 30 / {{expert|60}} / {{master|90}} 提升至 100 / {{expert|200}} / {{master|300}}。
+** 现在[[{{tr|Pylons}}]]在{{tr|event}}期间可以使用。}}
+{{history|Desktop 1.4.0.1|
+** 更改了[[{{tr|Lunar Fragment}}]]的掉落量，现在在[[{{tr|Expert Mode}}]]中掉落数量会随着玩家数量而缩放。
+*** 此前，每个{{tr|Celestial Pillar}}掉落 12–20 / {{expert|18–30}} 叠{{tr|Lunar Fragments}}，每叠中有 1–3 个{{tr|items}}（总计 12–60 / {{expert|18–90}} 个）。{{source code ref|old=y|v=1.3.5.3|method=Terraria.NPC.NPCLoot}}
+** {{tr|The Nebula Pillar}}的{{tr|shader}}现在不那么粉了，其{{tr|enemies}}也已经给予了脉动光环效果。
+** 所有背景星球的外观都更新了。
+** 所有{{tr|pillars}}现在背后有{{tr|blocks}}（无论是否已致动）时都会上升到顶部。
+** （再次）修正了{{tr|reverse gravity}}时{{tr|Celestial Pillar shields}}会飞上天的问题。}}
+{{history|Desktop 1.3.4.2|修正了{{tr|Pillars}}有时不能正常加载从而导致它立刻消失并触发[[{{tr|Moon Lord}}]]生成的问题。}}
+{{history|Desktop 1.3.0.4|{{tr|Vortex Pillar}}更快地召唤传送门。}}
+{{history|Desktop 1.3.0.2|{{tr|health}}由 15000 提高至 20000。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon/ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="th-spawnchance">描述的是''相对''生成几率，即，生成{{tr|this enemy}}而非其他{{tr|enemy}}之一的可能性。实际上，真正的生成几率可能有所不同。{{source code ref|noref=y|v=1.4.4.6|method=Terraria.NPC.SpawnNPC}}</ref>
+<ref name="th-maxno">此限制是在尝试生成新{{tr|enemy}}时检查的；如果已经有这么多此类{{tr|enemies}}存活，就不会再生成。“无限”并不意味着''实际上真无限''，只是说在生成{{tr|enemy}}时不会检查限制——常规的约束依然适用（参见 [[{{tr|NPC spawning}}]]）。{{source code ref|noref=y|v=1.4.4.6|method=Terraria.NPC.SpawnNPC}}</ref>
+}}
+{{footnotelist|refs=
+<ref name="dropcount">{{tr|Expert Mode}}及以上的值对应{{tr|singleplayer}}；见[[#dropcount|上方]]获取细节。</ref>}}
+
+{{Master Template Luminite
+| show-luminite = yes
+}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Celestial Pillars}}

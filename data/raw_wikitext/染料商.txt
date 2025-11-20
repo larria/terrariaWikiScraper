@@ -1,0 +1,252 @@
+{{exclusive|Dyes}}
+{{npc infobox | tabs=y
+| auto = 207 | boxwidth=18em
+| type = NPC
+| environment = Valid house
+| damage = {{modes|11|16|19}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ItemName.DyeTradersScimitar}}}}
+| Exotic Scimitar|1|12.5%
+| imageother = Map Icon Dye Trader.png
+| imageothercaption = Map Icon
+}}
+
+'''{{tr|Dye Trader}}'''是个出售[[{{tr|Dye Vat}}]]和其他与[[{{tr|dye}}]]有关的{{tr|items}}的 [[{{tr|NPC}}]]。一旦以下条件全部满足他就会搬进来：
+* 有一间空[[{{tr|house}}]]。
+* {{eicons|1.4.0.1}} 玩家的{{tr|inventory}}中有{{tr|dye}}、{{tr|dye ingredient}}、或[[{{tr|Strange Plant}}]]，并且世界中至少有四名其他{{tr|town NPCs}}。注意[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]、和[[{{tr|town pets}}]]计入此数量中，但[[{{tr|Skeleton Merchant}}]]并不。{{source code ref|v=1.4.1.2|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+* {{eicons|Dye Trader|not=1.3.0.1}} 玩家的{{tr|inventory}}中有{{tr|dye}}或{{tr|dye ingredient}}。
+
+在{{eversions|1.4.4}}中，这些要求只适用于其第一次生成。如果{{tr|the Dye Trader}}被杀死，他在一段时间后会自动重生。
+
+{{eicons|Strange Plant}} 除了出售与{{tr|dye}}有关的{{tr|items}}，一旦进入了[[{{tr|Hardmode}}]]，玩家还可以用{{tr|Strange Plants}}来交换无法制作或无法购买的动态{{tr|dyes}}。每个{{tr|Strange Plant}}可以交换一个此类染料，6 个一组进行交换。
+
+在{{eversions|1.3.0.1}}中，{{tr|the Dye Trader}}会用他的[[{{tr|Exotic Scimitar}}]]攻击附近的{{tr|enemies}}来自卫，在游戏开始时能造成 11 / {{expert|16}} / {{master|19}} {{tr|damage}}，并且随着玩家推进他会得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。他在死亡时也会掉落{{tr|this weapon}}。
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Dye Vat}}
+|{{shop row|Silver Dye}}
+|{{shop row|Team Dye|在[[{{tr|multiplayer}}]]服务器中。}}
+|{{shop row|Dye Trader Robe|[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Dye Trader's Turban|[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Shadow Dye|在[[{{tr|Moon phase}}|{{tr|full moon}}]]期间。}}
+|{{shop row|Negative Dye|在[[{{tr|Moon phase}}|{{tr|full moon}}]]期间。}}
+|{{shop row|Brown Dye}}
+|{{shop row|Fogbound Dye|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Bloodbath Dye|[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== {{tr|Strange Plant quests}} {{eicons|Strange Plant}} ==
+在[[{{tr|Hardmode}}]]中和{{tr|the Dye Trader}}说话会看到“[[{{tr|Strange Plant}}]]”任务，在其中{{tr|the Dye Trader}}要求玩家为他取来罕见的植物。作为回报，他会奖励给玩家 6 瓶其他方式无法获得的特殊{{tr|dye}}。随着游戏推进，会出现更多此类{{tr|dyes}}。
+
+=== 奖励 ===
+{{itemlist/options|width=12em}}{{options/set|item|icons=n}}
+{{infocard/start|class=terraria compact}}
+
+{{infocard/mainheading| {{tr|Hardmode}} | icon= Map Icon Wall of Flesh.png }}
+{{itemlist
+|{{item|Acid Dye}}
+|{{item|Red Acid Dye}}
+|{{item|Blue Acid Dye}}
+|{{item|Glowing Mushroom Dye}}
+|{{item|Purple Ooze Dye}}
+|{{item|Reflective Dye}}
+|{{item|Reflective Gold Dye}}
+|{{item|Reflective Silver Dye}}
+|{{item|Reflective Obsidian Dye}}
+|{{item|Reflective Copper Dye}}
+|{{item|Reflective Metal Dye}}
+|{{item|Negative Dye}}
+|{{item|Shadow Dye}}
+|{{item|Mirage Dye}}
+|{{item|Twilight Dye}}
+|{{item|Hades Dye}}
+|{{item|Burning Hades Dye}}
+|{{item|Shadowflame Hades Dye}}
+|{{item|Grim Dye}}
+|{{item|Phase Dye}}
+|{{item|Shifting Sands Dye}}
+|{{item|Gel Dye}}
+}}
+
+{{infocard/mainheading| 打败任意[[{{tr|Mechanical bosses}}]] 后 | iconalt = [[File:Map Icon The Destroyer.png|link=]]&nbsp;/&nbsp;[[File:Map Icon Spazmatism (first form).png|link=]]&nbsp;/&nbsp;[[File:Map Icon Skeletron Prime.png|link=]] }}
+{{itemlist
+|{{item|Chlorophyte Dye}}
+|{{item|Living Flame Dye}}
+|{{item|Living Rainbow Dye}}
+|{{item|Living Ocean Dye}}
+}}
+
+{{infocard/mainheading| 打败[[{{tr|Plantera}}]]后 | icon= Map Icon Plantera (first form).png }}
+{{itemlist
+|{{item|Wisp Dye}}
+|{{item|Pixie Dye}}
+|{{item|Unicorn Wisp Dye}}
+|{{item|Infernal Wisp Dye}}
+}}
+
+{{infocard/mainheading| 打败[[{{tr|Martian Madness}}]]后 | icon= Martian Madness Icon.png }}
+{{itemlist
+|{{item|Martian Dye}}
+|{{item|Midnight Rainbow Dye}}
+}}
+
+{{infocard/mainheading| 打败[[{{tr|Moon Lord}}]]后 | icon= Map Icon Moon Lord.png }}
+{{itemlist
+|{{item|Skiphs' Blood}}
+}}
+
+{{infocard/end}}{{itemlist/options|reset}}{{options/reset|item}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Dye Trader (Shimmered).png]] [[File:Map Icon Dye Trader (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Dye Trader}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Dye Trader}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 备注 ==
+*{{tr|The Dye Trader}}在{{3DS version}}中不可用，因为此平台无法渲染染料。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.257}}”
+* “{{gameText|LegacyDialog.258}}”
+* “{{gameText|LegacyDialog.259}}”
+
+'''[[{{tr|Pirate}}]]存在时：'''
+* “{{gameText|LegacyDialog.260|x_Pirate=&lt;{{tr|Pirate NPC}}的名字&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|DyeTraderSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|DyeTraderSpecialText.Windy2}}”
+* “{{gameText|DyeTraderSpecialText.Windy1}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|DyeTraderSpecialText.Rain2}}”
+* “{{gameText|DyeTraderSpecialText.Rain1}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|DyeTraderSpecialText.Storm2}}”
+* “{{gameText|DyeTraderSpecialText.Storm1}}”
+
+'''上交{{tr|Strange Plant}}时：'''
+* “{{gameText|DyeTraderSpecialText.HasPlant_0}}”
+* “{{gameText|DyeTraderSpecialText.HasPlant_1}}”
+* “{{gameText|DyeTraderSpecialText.HasPlant_2|x_WorldName=&lt;{{tr|world}}的名字&gt;}}”
+
+'''当玩家没有{{tr|strange plant}}时：'''
+* “{{gameText|DyeTraderSpecialText.NoPlant_0}}”
+* “{{gameText|DyeTraderSpecialText.NoPlant_1|x_DyeTrader=&lt;{{tr|Dye Trader}}的名字&gt;}}”
+* “{{gameText|DyeTraderSpecialText.NoPlant_2}}”
+
+'''{{eicons|1.4.0.1}} 当在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|DyeTraderSpecialText.Graveyard1}}”
+* “{{gameText|DyeTraderSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.NoHome}}”
+
+'''离家很远时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.FarFromHome}}”
+
+'''在人烟稀少的地区时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.LoveSpace}}”
+
+'''在拥挤区域时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_DyeTrader.HateCrowded}}”
+
+'''在{{tr|the Desert}}中：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.LikeBiome|x_BiomeName={{tr|the Desert}}}}”
+
+'''当在{{tr|the Forest}}中时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.DislikeBiome|x_BiomeName={{tr|the Forest}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Arms Dealer}}]]时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.LikeNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''靠近[[{{tr|Painter}}]]时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.LikeNPC|x_NPCName=&lt;{{tr|Painter}}的名字&gt;}}”
+
+'''靠近[[{{tr|Steampunker}}]]时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.DislikeNPC|x_NPCName=&lt;{{tr|Steampunker}}的名字&gt;}}”
+
+'''靠近[[{{tr|Pirate}}]]时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.HateNPC|x_NPCName=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''中性时：'''
+
+* “{{gameText|TownNPCMood_DyeTrader.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* Ahirom、 Abdosir、 Hiram、和 Batnoam 是古代腓尼基国王和王后的名字。{{wikipedia|Phoenicia|腓尼基}}是东地中海帝国，靠从浅海螺类中提取的紫色染料而变得富有。
+** 在{{tr|Dye Trader}}的[[{{tr|Bestiary}}]]中提到他有着“奢侈的爱好”。这是因为{{tr|Dye Trader}}的头巾与长袍上都有着紫色布料，而紫色是早期染料工艺里最难提取的颜色。随着紫色染料通过航海贸易出口后，它成为了贵族才能买得起的染料，并成为了贵族的代表与专用色。
+** 这也解释了为什么{{tr|Dye Trader}}嫌弃{{tr|player}}单调的衣服，并且{{tr|player}}无法用{{tr|coin}}交换{{tr|strange dye}}。因为在现实中，这些染料比金子还贵重。这同样在他的话语上有过体现：“{{gameText|DyeTraderSpecialText.NoPlant_0}}”
+* {{wikipedia|Hanno_the_Navigator|Hanno}} 是一位公元 5 世纪{{wikipedia|Ancient Carthage|迦太基}}探险家的名字，他以对非洲西海岸的航海探险而闻名。
+* 他的人设灵感很大程度上来自早期{{wikipedia|Middle East|中东}}和{{wikipedia|North Africa|北非}}文化的刻板印象，从其服装（头巾）、掉落物（[[{{tr|Exotic Scimitar}}]]）、和话语中提及{{wikipedia|sultan|苏丹}}可以看出。{{note|small=y|paren=y|译注：“苏丹”为穆斯林国家中统治者的头衔，类似于“国王、帝王”。}}
+** 苏丹指向的军事文明{{wikipedia|Ottoman Empire|奥斯曼帝国}}，以及以海上贸易出口紫色染料的{{wikipedia|Phoenicia|古代腓尼基}}，或许能解释他的{{tr|living preferences}}。他欣赏与自己有着相同喜好的[[{{tr|Arms Dealer}}]]和[[{{tr|Painter}}]]，反感复古且单调的{{wikipedia|Steampunk|蒸汽朋克亚文化}}（[[{{tr|Steampunker}}]]），厌恶在海上进行掠夺的[[{{tr|Pirate}}]]。
+* 他的一句话提到他出售“最丰富的色彩”；然而，他只出售 {{eicons|1.4.0.1}} 7 / {{eicons|Dye Trader|not=1.4.0.1}} 5 种{{tr|dyes}}，其中之一还仅在{{tr|Multiplayer}}中出售。
+* {{tr|The Dye Trader}}的外形是由前 [[Re-Logic]] 美工 [[Waffles]] 创造的。在 {{eil|1.3.0.1}} 中，由 [[Lazure]] 更新。
+* 就算玩家穿的是{{tr|the Dye Trader}}自己的服装，他还是会对其衣服评头论足。
+{{float file box|[[File:Dye Trader (no hat).png]] [[File:Dye Trader (Shimmered) (no hat).png]]|{{tr|Party}}期间的{{tr|Dye Trader}}}}
+* {{tr|Dye Trader}}会在{{tr|Party}}期间会摘下头巾，在{{tr|Shimmered form}}下还会进一步摘下发圈。 
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在在上交[[{{tr|Strange Plant}}]]后奖励 6 份{{tr|dyes}}，而非 3 份。
+** 现在死亡的 {{tr|NPCs}} 会自由重生，无视首次生成它们时需满足的独特条件。}}
+{{history|Desktop 1.4.0.1|
+** 用{{tr|Strange Plants}}交换{{tr|dyes}}的选项现在要求是[[{{tr|Hardmode}}]]。
+** 打败{{tr|pre-Hardmode}}的 {{tr|bosses}} 不再是生成要求的一部分了，改为总是需要至少四个{{tr|other town NPCs}}。}}
+{{history|Desktop 1.3.0.1|
+** 新的“{{tr|Strange Plants}}”{{tr|quest}}。
+** 用{{tr|Exotic Scimitar}}自卫。
+** 现在出售{{tr|Dye Trader's Turban}}、{{tr|Shadow Dye}}、{{tr|Negative Dye}}、和{{tr|Brown Dye}}。
+** {{tr|Sprite updated.}}
+** 现在只会在玩家的{{tr|inventory}}中有{{tr|Strange Plant}}，或{{tr|inventory}}中有{{tr|dye}}或{{tr|dye ingredient}}且已打败任意主要{{tr|pre-Hardmode}}（{{tr|Eye of Cthulhu}}、{{tr|Skeletron}}或{{tr|Eater of Worlds}}/{{tr|Brain of Cthulhu}}）的 {{tr|bosses}} 时才会生成。}}
+{{history|Desktop 1.2.3|现在还会在{{tr|multiplayer}}{{tr|server}}出售{{tr|Team Dye}}。}}
+{{history|Desktop 1.2.1|现在还会在{{tr|Halloween}}期间出售{{tr|the Dye Trader Robe}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Dye Trader}}

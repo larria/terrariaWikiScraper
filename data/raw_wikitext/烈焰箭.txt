@@ -1,0 +1,60 @@
+{{item infobox
+| auto = 41
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 6 {{eicons|1.3.0.1|invert=y|small=y}}
+| debuff = On Fire! / 3 / 33.3%
+| sell = @@@@ {{eicons|1.3.0.1|small=y}} / {{cc|3}} {{eicons|1.3.0.1|invert=y|small=y}}
+| tags = loot
+}}
+
+[[File:Flaming Arrow (demo).gif|thumb|{{tr|Flaming Arrows}}使用中。]]
+
+'''{{tr|Flaming Arrows}}'''是[[{{tr|arrow}}]]的一种。它是对[[{{tr|Wooden Arrow}}]]的升级，能制造稍微多点的伤害，并且有几率对[[{{tr|enemies}}]]造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。它在发射出去或掉落时会发光，因此在洞穴中作为临时照明非常有用。
+
+如果{{tr|a Flaming Arrow}}接触到[[{{tr|water}}]]、[[{{tr|honey}}]]、或{{eil|shimmer}}，它就不再会发光或造成{{tr|On Fire! debuff}}。其外观也会变为和{{tr|Wooden Arrow}}完全一样。
+
+{{eicons|1.4.0.1|invert=y}} {{tr|Flaming Arrows}}在击中某个表面或目标后有几率能够回收。如果它们依然燃着，那么有 {{chance|1/9}} 几率掉落为{{tr|Flaming Arrows}}、有 {{chance|2/9}} 几率掉落为{{tr|Wooden Arrows}}。否则，有 {{chance|1/3}} 几率掉落为{{tr|Wooden Arrows}}。{{source code ref|v=1.3.5.3|old=y|method=Terraria.Projectile.Kill}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Flaming Arrow|expectedrows=2}}
+
+== 备注 ==
+* 用大约 1000 支{{tr|Torches}}能将一整组 9999 支 {{tr|Wooden Arrows}}升级为{{tr|Flaming Arrows}}。
+* 虽然它们在水下会变为{{tr|normal arrows}}，但依然会维持其较高的{{tr|base damage}}，使得它们在这种情况下依然要强于{{tr|normal arrows}}。
+
+== 小贴士 ==
+* 其对于尚未拿到足够材料制作大量[[{{tr|Unholy Arrow}}]]或[[{{tr|Jester's Arrow}}]]的玩家来说很有用，但能够进入[[{{tr|Snow biome}}]]的玩家可能会更喜欢[[{{tr|Frostburn Arrow}}]]，后者造成的伤害要高于{{tr|Flaming Arrows}}而制作材料只多了[[{{tr|Ice Block}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|不再有几率作为物品掉落供重用。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 配方中{{tr|Wooden Arrows}}的数量由 5 改为 10。
+**伤害由 6 提升至 7。
+** 卖出价由 {{cc|3}} 降低至 {{cc|2}}。}}
+{{history|Desktop 1.2|
+** {{tr|Stack limit}}由 250 提升至 999。
+**配方中{{tr|Wooden Arrows}}的数量由 3 改为 5。}}
+{{history|Desktop 1.0.6|
+**配方中{{tr|Wooden Arrows}}的数量由 4 改为 3。
+**现在能造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Damage}}由 7 降低至 6。
+** 配方中{{tr|Wooden Arrows}}的数量由 5 改为 4。
+** 发射后，有可能以{{tr|Wooden Arrows}}形式回收（无正式说明）。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Arrows}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+{{language info|en=Flaming Arrow}}

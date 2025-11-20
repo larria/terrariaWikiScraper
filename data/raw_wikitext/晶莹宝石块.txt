@@ -1,0 +1,55 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| imagealt = <p>[[File:Amethyst Gemspark Block.png|link=]] [[File:Topaz Gemspark Block.png|link=]] [[File:Sapphire Gemspark Block.png|link=]] [[File:Emerald Gemspark Block.png|link=]]</p><p>[[File:Ruby Gemspark Block.png|link=]] [[File:Diamond Gemspark Block.png|link=]] [[File:Amber Gemspark Block.png|link=]]</p><hr/><p>[[File:Amethyst Gemspark Block (placed).png|link=]] [[File:Topaz Gemspark Block (placed).png|link=]] [[File:Sapphire Gemspark Block (placed).png|link=]] [[File:Emerald Gemspark Block (placed).png|link=]]</p><p>[[File:Ruby Gemspark Block (placed).png|link=]] [[File:Diamond Gemspark Block (placed).png|link=]] [[File:Amber Gemspark Block (placed).png|link=]]</p><p>[[File:Offline Amethyst Gemspark Block (placed).png|link=]] [[File:Offline Topaz Gemspark Block (placed).png|link=]] [[File:Offline Sapphire Gemspark Block (placed).png|link=]] [[File:Offline Emerald Gemspark Block (placed).png|link=]]</p><p>[[File:Offline Ruby Gemspark Block (placed).png|link=]] [[File:Offline Diamond Gemspark Block (placed).png|link=]] [[File:Offline Amber Gemspark Block (placed).png|link=]]</p>
+| type = Block/ Mechanism
+| rare = {{rare|0}}
+| stack = {{iteminfo|1976|stack}}
+| placeable = yes
+| use = {{iteminfo|1976|useTime}}
+| idtile = 255-268
+| cargo = no
+}}
+{{float file|[[File:Gemspark and Rainbow Waterfalls.gif|thumb|250px|用{{tr|Gemspark Blocks}}和[[{{tr|Rainbow Brick}}]]改变[[{{tr|Waterfall}}]]的颜色。注意黯淡的{{tr|Gemspark Blocks}}的效果是没有效果的。]]}}
+__NOTOC__
+'''{{tr|Gemspark Blocks}}'''是发光的[[{{tr|blocks}}]]。发出的光的颜色取决于用于制作此{{tr|block}}的[[{{tr|gem}}]]的颜色。它们也被视为[[{{tr|mechanism}}]]，因为可以用[[{{tr|wire}}]]将其连接到{{tr|triggers}}来切换其发光状态。{{tr|Gemspark Blocks}}是用[[{{tr|Gem}}]]和[[{{tr|Glass}}]]在[[{{tr|Work Bench}}]]处制作出来的。
+
+如果[[{{tr|waterfall}}]]经过了{{tr|Gemspark Block}}，后者就会给{{tr|waterfall}}上色并带来发光效果。当{{tr|Gemspark Block}}处于正常状态时，生成的{{tr|waterfall}}会带有{{tr|Gemspark Block}}的颜色，并且整条{{tr|waterfall}}会发光。发光的{{tr|waterfalls}}会发出非常微弱的光照向其他物体。{{tr|Gemspark Blocks}}'''不会'''改变[[{{tr|lavafall}}]]、[[{{tr|honeyfall}}]]、或{{eil|Shimmer|shimmerfalls|link={{tr|Shimmerfall|link=y}}}}的颜色。
+
+== 备注 ==
+* {{tr|Gemspark Blocks}}对于 [[{{tr|NPC}}]] [[{{tr|house}}]]而言不计为有效的光源。
+* 当两道（或更多）被{{tr|Gemspark}}染成不同颜色的{{tr|waterfalls}}互相接触时，这些颜色将结合在一起。
+* 由单块半{{tr|block}}所支撑的{{tr|water}}所形成的垂直瀑布的颜色不会被改变，即使这个{{tr|half block}}是{{tr|Gemspark Block}}。
+* [[{{tr|Actuator}}|{{tr|actuate}}]]的{{tr|Gemspark blocks}}依然能提供光亮。
+* 只有用深色漆才能改变{{tr|Diamond Gemspark Blocks}}或{{tr|Diamond Gemspark walls}}的主色，这不同于所有其他{{tr|gemspark blocks}}或{{tr|gemspark walls}}。同一种深色漆刷在除了{{tr|diamond}}外的所有{{tr|gemsparks}}上都会呈现出相同的颜色，而刷在{{tr|Diamond Gemspark Blocks}}则要显得浅一些。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=n|showresultid=y|result=LIKE % Gemspark Block|resultnot=Offline % Gemspark Block|expectedrows=21|grouping=no|resulttemplate=:{{PAGENAME}}/resultcell|orderbyid=yes}}
+
+=== 用于 ===
+{{recipes|ingredient=Amber Gemspark Block/Amethyst Gemspark Block/Diamond Gemspark Block/Emerald Gemspark Block/Ruby Gemspark Block/Sapphire Gemspark Block/Topaz Gemspark Block|orderbyid=y|expectedrows=14}}
+
+== 花絮 ==
+[[File:Naturally generated Sapphire Gemspark Block.png|thumb|right|由于支撑了[[{{tr|Life Crystal}}]]而没有在{{tr|world generation}}期间被移除的天然生成的{{tr|Sapphire Gemspark Block}}。]]
+* {{tr|Sapphire Gemspark Blocks}}可以在[[{{tr|world}}生成]]期间生成{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.oceanCave}}，但正常情况下它们会在生成过程中被移除。在罕见情况下，它可能会生成在诸如[[{{tr|chests}}]]或[[{{tr|Life Crystal}}]]之类的物体下方，这会阻止其被移除。
+* {{tr|Gemspark Blocks}}和一些其他物品以及机制有可能是取自 [[Yoraiz0r]] 开发的 TConfig {{tr|mod}} [http://web.archive.org/web/20151125200956/http://www.terrariaonline.com/threads/holo-the-everything-junkyard.93569/ holo the everything]。Yoraiz0r 曾是{{tr|mod}}开发者，现在是 Re-Logic 的程序员之一。
+
+== 历史 ==
+{{history|Desktop 1.2.4.1|{{tr|Topaz Gemspark Blocks}}现在发黄光而非紫光。}}
+{{history|Desktop 1.2.4|更新了{{tr|Gemspark}}的{{tr|tiles}}以让内边缘完整。修正了{{tr|Gemspark}}被促动之后不会良好融合的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|现在当{{tr|Gemspark Blocks}}作为物品掉落到世界中时会正确发光了。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Gems}}
+{{Wiring}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Gemspark Blocks}}

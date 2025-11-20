@@ -1,0 +1,19 @@
+<includeonly><!--
+
+-->@@@@<!--
+
+Heart Lantern (item ID 1859) and Star in a Bottle (item ID 1431) have their own articles with cargo storage; they must not be stored here a second time
+-->{{#switch:{{{resultid|}}}|1859|1431=|#default={{item infobox
+| auto = {{{resultid|}}}
+| type = Furniture /  Light Source
+| width = 1
+| height = 2
+| view = void
+| autoimageplaced = no <!-- There are too many items, turning on autoimageplaced will cause the expensive call limit to be exceeded -->
+}}}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Lanterns/resultcell}}
+</noinclude>

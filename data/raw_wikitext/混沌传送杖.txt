@@ -1,0 +1,89 @@
+{{item infobox
+| type = Tool
+| auto = 1326
+| tooltip = @@@@<br/>{{icon/mobile}} 将你传送至光标所在处
+| debuff = Chaos State
+| debuffduration = {{duration|6}} {{eicons|1.3.0.1|small=y}}<br/>{{duration|9}} {{eicons|1.3.0.1|invert=y|small=y}}
+| debuffchance = 100%
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+[[File:Rod of Discord (demo).gif|framed|使用中的{{tr|Rod of Discord}}。]]
+{{redirect|RoD|与{{tr|Rod}}（rod）相关的物品列表|{{tr|Rod (disambiguation)}}}}
+
+'''{{tr|Rod of Discord}}'''是一个[[{{tr|Hardmode}}]][[{{tr|tool}}]]，能够立即将玩家传送至{{tr|cursor}}处。使用{{tr|Rod of Discord}}不消耗[[{{tr|mana}}]]或[[{{tr|ammunition}}]]；不过，每次使用都会对玩家造成'''{{tr|Chaos State}}'''[[{{tr|debuff}}]]，持续{{eicons|1.3.0.1}} 6 / {{eicons|1.3.0.1|invert=y}} 9 秒。在激活此{{tr|debuff}}时使用{{tr|Rod of Discord}}会导致玩家失去等同于最大[[{{tr|health}}]]{{eicons|1.3.0.1}} 1/7 / {{eicons|1.3.0.1|invert=y}} 1/6 的{{tr|health}}。在{{eversions|1.4.1}}中，{{tr|the Rod of Discord}}的传送范围被限制到以玩家为中心水平方向 960 像素（60 格），竖直方向 600 像素（37.5 格）。{{tr|the Rod of Discord}}有 {{chance|1/500}} / {{expert|{{chance|1/400}}}} 几率掉落自[[{{tr|Chaos Elemental}}]]。
+
+可以通过在击败[[{{tr|Moon Lord}}]]后将其丢入[[{{tr|Shimmer}}]]来将其升级为{{eil|Rod of Harmony}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Rod of Discord|expectedrows=1}}
+
+== 备注 ==
+* 目标位置必须至少有 3 格高，2 格宽。按下 {{key|use}} 按键传送时将始终把玩家的脚放在{{tr|cursor}}位置。因此，要传送到一个 3 格高的开口，玩家必须把{{tr|cursor}}对准地板。不成功的传送会产生同样的音效，但不会造成{{tr|debuff}}。
+** 在骑乘[[{{tr|mount}}]]时，目标位置通常必须要更高，取决于{{tr|mount}}高度。例如，骑乘[[{{tr|Unicorn Mount}}]]时，所选位置必须要有 5 格高。
+* 在击败[[{{tr|Plantera}}]]之前，若{{tr|cursor}}位置的[[{{tr|background wall}}]]是[[{{tr|Unsafe wall}}|不安全的]][[{{tr|Lihzahrd Brick Wall}}]]，且{{tr|cursor}}位置低于[[{{tr|surface}}]]，{{tr|The Rod of Discord}}就不会传送玩家。在 {{eil|Don't dig up}} 和 {{eil|Get fixed boi}} {{tr|worlds}}中，无论[[{{tr|depth}}]]如何，这一效果总是会生效。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_UseTeleportRod}}这等同于阻止玩家在{{tr|Plantera}}前进入[[{{tr|Jungle Temple}}]]。
+* 虽然传送会重置[[{{tr|fall damage}}]]，但它不会重置[[{{tr|wing}}]]的飞行时间。
+* 尽管{{tr|Rod of Discord}}不会对[[{{tr|enemies}}]]造成伤害，但它还是可以放在[[{{tr|Weapon Rack}}]]上。
+* 在移动时使用{{tr|Rod of Discord}}会保持玩家的[[{{tr|movement speed}}]]。
+* 使用{{tr|Rod of Discord}}不会取消[[{{tr|Shroomite armor}}]]的潜行。
+* {{mobile version}}中，若玩家仅按下 {{key|use}} 按键来使用{{tr|Rod of Discord}}，他会被传送到其站立位置略微向右的位置（若右侧有{{tr|block}}阻挡则传送到上方）。若瞄准模式设为“瞄准及使用”（Aim & Use）而非“仅瞄准”（Aim Only），使用摇杆时会产生多种结果。
+* {{tr|Chaos State}}造成的伤害无法用[[{{tr|Black Belt}}]]/[[{{tr|Master Ninja Gear}}]]、[[{{tr|Hallowed armor}}|{{tr|Holy Protection}}]]或{{eil|Brain of Confusion}}闪避。
+** 它无视且不会触发[[{{tr|invincibility frame}}]]。
+** 和其他{{tr|damage}}一样，在{{eil|Godmode}}中它总是会被抵消。
+* 在 {{eil|Celebrationmk10}} 世界中，{{tr|Rod of Discord}}的{{tr|drop rate}}提升至 {{chance|1/100}}。
+
+== 小贴士 ==
+* 如果能够正确使用{{tr|the Rod of Discord}}，它就可以成为探索地图的最佳物品之一。例如，它对捕获[[{{tr|Truffle Worm}}]]非常有帮助，因为可以在它们出现时立即捕获它们。它也有助于保持高{{tr|movement speed}}（如在快速的[[{{tr|mounts}}]]上），可以直接越过会减慢速度的障碍。
+* {{tr|the Rod of Discord}}可以用于躲避 {{tr|Boss}} 的高伤害攻击，例如{{eil|Moon Lord}}的{{tr|Phantasmal Deathray}}、[[{{tr|Dungeon Guardian}}]]的{{tr|contact damage}}、亦或是{{eil|Empress of Light}}在{{tr|daytime}}“暴怒”状态下的{{tr|Ethereal Lance, Everlasting Rainbow, and Prismatic Bolts}}。
+* 尽管{{tr|Rod of Discord}}是游戏中最稀有的物品之一，但它却可以在[[{{tr|Hardmode}}]]刚开始就获得，而不用击败任何新增 {{tr|boss}}。
+* 因为{{tr|Rod of Discord}}是主动伤害自己的为数不多的方法之一，它可以与[[{{tr|Shrimpy Truffle}}]]或[[{{tr|Panic Necklace}}]]一起使用来激活速度提升效果。它可以用于容易地完成“{{tr|the Frequent Flyer}}”[[{{tr|Achievement}}]]。
+* {{eicons|1.4.1|invert=y}}使用其他物品增加玩家的视野，然后快速切换到{{tr|Rod of Discord}}并使用它将使得玩家传送更远的距离。这可以通过使用[[{{tr|Binoculars}}]]、[[{{tr|Rifle Scope}}]]或其升级来达成。
+
+== 花絮 ==
+* 玩家在{{tr|Chaos State}}期间死于传送时会显示独特的[[{{tr|death message}}]]：
+** ''“{{gameText|DeathText.Teleport_1|x_0=&lt;{{tr|Player name}}&gt;}}”''
+** ''“{{gameText|DeathText.Teleport_2_Male|x_0=&lt;{{tr|Player name}}&gt;}}”''
+*** 在{{eversions|1.4.4|invert=y}}中，这是仅有的会依据{{tr|character}}的性别而有变化的{{tr|death message}}。游戏会使用代词“他”和“她”。
+*** 在{{eversions|1.4.4}}中，仍然有分开的{{tr|death messages}}，但它们是完全相同的。
+* {{tr|The Chaos State debuff}}的加入是用来应对重复使用{{tr|Rod of Discord}}的问题，否则它会为玩家提供可说是过于强大的探索和躲闪方式。
+** 不过在{{eversions|1.4.4}}中，在[[{{tr|Moonlord}}]]后可以用[[{{tr|Rod of Harmony}}]]来无视这一点。
+* {{tr|Rod of Discord}}（Rod of Discord）的简称 ''RoD'' 和其首个单词 ''rod''（杖）相同。
+* 这是游戏中仅有的让玩家拥有负{{tr|health}}的方法之一。{{verify|23:46, 13 August 2020 (UTC)}}
+* 在早期{{tr|mobile versions}}中，使用{{tr|Rod of Discord}}会立即杀死使用者，{{tr|death message}}为“Structures”。
+<!-- Do NOT add that it is a reference to the "My Little Pony" character Discord. There is no evidence for this, and such notes have been removed multiple times in the past. -->
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Sprite updated.}}旧外观为 [[File:Rod of Discord (old).png]]
+** 现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Rod of Harmony}}]]。}}
+{{history|Desktop 1.4.1|传送范围现在被限制为以玩家中心起，水平方向 960 像素（60 格）、竖直方向 600 像素（37.5 格）。}}
+{{history|Desktop 1.4.0.1|
+** 现在在{{tr|Expert Mode}}下拥有 {{chance|1/400}} 的更高的{{tr|drop rate}}。
+** 现在在传送时会留下痕迹。}}
+{{history|Desktop 1.3.0.4|现在传送会迅速改变玩家的视角，而不是直接到达目标位置。}}
+{{history|Desktop 1.3.0.1|{{tr|Chaos State}}{{tr|damage}}由使用者{{tr|maximum health}}的 1/6 降低至 1/7，{{tr|duration}}由 8 秒降低至 6 秒。}}
+{{history|Desktop 1.2.4.1|现在可以将{{tr|Rod of Discord}}放在[[{{tr|Weapon Rack}}]]上。}}
+{{history|Desktop 1.2.3|
+** {{tr|Chaos State}}{{tr|damage}}由使用者{{tr|maximum health}}的 1/5 降低至 1/6，{{tr|duration}}由 10 秒降低至 8 秒。
+** {{tr|Rod of Discord}}在[[{{tr|Gravitation}}|反转{{tr|gravity}}]]下正常工作。
+** 使用{{tr|Rod of Discord}}会松开所有[[{{tr|hooks}}]]。}}
+{{history|Desktop 1.2.1.2|
+** 使用时造成[[{{tr|Chaos State}}]]，以防止滥用传送。
+** 不再能用于传送到{{tr|Jungle Temple}}中（除非目标地点的{{tr|Lihzahrd Walls}}被移除）。
+** 在地图尽头附近使用{{tr|Rod of Discord}}不再会导致崩溃。}}
+{{history|Desktop 1.2.0.3|{{tr|The Rod of Discord}}现在会正常掉落。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Rod of Discord}}

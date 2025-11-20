@@ -1,0 +1,15 @@
+<includeonly><!--
+
+-->{{#vardefine:name|{{{nameraw|}}}}}<!--
+
+-->{{#vardefine:_|{{npc infobox/namedb-{{lang|}}}}}}<!-- load name database; in a dummy #vardefine to avoid red links for languages where it doesn't exist
+-->{{#vardefine:namesub|{{tr|{{#dplvar:_npc_infobox:{{lang|}}:npcnamesub:{{{npcid|}}}}}}}}}<!--
+-->{{#vardefine:namenote|{{#dplvar:_npc_infobox:{{lang|}}:npcnamenote:{{{npcid|}}}}}}}<!--
+
+-->{{itemlist/item|{{flexbox|wrap=no|alignitems=center|style=gap:0.25em;|{{{image|}}} {{item|mode=text|{{#var:name}}|t={{#or:{{#var:namesub}}|{{tr|{{#var:name}}}}}}|note2={{#if:{{#var:namenote}}|({{#var:namenote}})}}|id={{{npcid|}}}|type=npc}}}}}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Fighter AI/npc}}
+</noinclude>

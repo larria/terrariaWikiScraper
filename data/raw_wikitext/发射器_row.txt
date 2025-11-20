@@ -1,0 +1,51 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars -->
+|-
+| {{item|{{{name|}}}|image={{{name|}}}.png|id={{{itemid|}}}|mode=table|class=alignleft block}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| <!-- damage with ammo
+	-->{{#vardefine:launchers-table-ammo|{{iteminfo|{{{name|}}}|useAmmo|raw=y}}}}<!--
+	-->{{#vardefine:launchers-table-ammoversion|{{#rmatch:{{{damage|}}}|/\d+ (.+?) \/ \d+.+/|$1}}}}<!-- extract version information for the first damage
+	-->{{#vardefine:launchers-table-ammodamage|{{#expr:0{{iteminfo|{{{name|}}}|damage}}+0{{iteminfo|{{#var:launchers-table-ammo}}|damage}}}}}}<!--
+	// start output
+	-->data-sort-value={{#var:launchers-table-ammodamage}}|<!--
+	-->{{item|mode=image|maxsize=x24px|id={{#var:launchers-table-ammo}}|showid=n}}&thinsp;: {{#var:launchers-table-ammodamage}}<!--
+	-->{{#if:{{#var:launchers-table-ammoversion}}|<br/>({{#var:launchers-table-ammoversion}})}}
+| {{formatnum:{{{velocity|}}}}}
+| {{#if:{{{usetime|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{usetime|}}}+1}}|<!-- if not is_number($usetime)
+		-->{{#dplreplace:{{{usetime|}}}|\(({{#dplvar:_uts}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "use time" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{usetime|}}}}}<br/>{{note|small=y|block=y|({{use time|{{{usetime|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#if:{{{knockback|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{knockback|}}}+1}}|<!-- if not is_number($knockback)
+		-->{{#dplreplace:{{{knockback|}}}|\(({{#dplvar:_kbs}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "knockback" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{knockback|}}}}}<br/>{{note|small=y|block=y|({{knockback|{{{knockback|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#if:{{{critical|}}}|<!--
+	-->{{percent|<!--
+		-->{{#dplreplace:{{{critical|}}}|/ \/ /|&#32;/<br/>}}<!--
+		-->{{#if:{{#pos:{{{critical|}}}|%}}||%}}<!--
+	-->}}<!--
+-->}}
+| {{#if:{{{autoswing|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{#if:{{{hardmode|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{{sell|}}}
+| align=left | {{#cargo_query:tables=Weapon_source|fields=source|where=weapon="{{{name|}}}"{{#ifeq:{{lang}}|en| AND lang="{{lang}}"}}|delimiter=<br/>|default={{#dplvar:_crafted}}{{recipes/extract|result={{{name|}}}}}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+The data for the "Source" column is taken from the launcher's [[Ranged weapons/row|table row]] on [[Ranged weapons]].
+
+{{language info|en=Launchers/row}}
+</noinclude>

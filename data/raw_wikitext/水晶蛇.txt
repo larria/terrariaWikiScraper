@@ -1,0 +1,36 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3209
+| sound1 = Item 110.wav, Item 118.wav
+| soundcaption1 = {{tr|Impact}}
+| tags = hardmode / fished
+| idprojectile = 521, 522
+| listcat = wands
+}}
+[[File:Crystal Serpent (demo).gif|right|framed|使用{{tr|Crystal Serpent}}攻击[[{{tr|Target Dummy}}]]。]]
+
+'''[[{{tr|Crystal Serpent}}]]'''是一个[[{{tr|Hardmode}}]]的[[{{tr|wand}}]]，可由在任意{{tr|layer}}的[[{{tr|The Hallow}}]]{{tr|biome}}中[[{{tr|fishing}}]]获得。使用时，其会发射出一枚魔法粉红色{{tr|projectile}}，在击中[[{{tr|Enemies}}]]或[[{{tr|Blocks}}|{{tr|solid block}}]]时，会分裂成 3-5 个较小的火花{{tr|projectile}}，每个{{tr|projectile}}造成 80% {{tr|base damage and knockback}}（{{#expr:{{iteminfo|Crystal Serpent|damage}}*0.8}} {{tr|base damage}}和 {{kb|{{#expr:{{iteminfo|Crystal Serpent|knockback|raw=y}}*0.8}}}} 的{{tr|knockback}}）。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Kill}}这些火花受到重力影响且可在{{tr|blocks}}上反弹，持续一秒钟后消失。
+
+它是[[{{tr|the Corruption}}]]的[[{{tr|Toxikarp}}]]和[[{{tr|the Crimson}}]]的[[{{tr|Bladetongue}}]]的[[{{tr|the Hallow}}]]对应物。
+
+{{modifier|magic}}
+
+== 小贴士 ==
+* 由于{{tr|Crystal Serpent}}是通过{{tr|fishing}}获得的，没有其他前置条件，所以它可以在{{tr|Hardmode}}刚开始时获得，而且不需要付出太多努力。
+* 由于其范围溅射伤害，它对群怪，[[{{tr|boss}}]] 和大型、缓慢的{{tr|enemies}}很有效。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Crystal Serpent}}

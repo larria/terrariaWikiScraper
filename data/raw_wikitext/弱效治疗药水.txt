@@ -1,0 +1,61 @@
+{{item infobox
+| type = Potion
+| auto = 28
+| tags = Vendor / Potion ingredients / Drop / Loot / Plunder / vendor:Merchant / vendor:Skeleton Merchant
+| debuff = Potion Sickness / 60
+}}
+{{drop infobox|style=clear:right}}
+{{quotation|[[{{tr|Merchant}}|{{tr|The Merchant}}]]|{{gameText|LegacyDialog.2}}}}
+
+'''{{tr| Lesser Healing Potion}}'''是一种治疗物品，使用时能恢复 50 [[{{tr|health}}|生命值]]并造成持续 60 秒的[[{{tr|Potion Sickness}}]]。此{{tr|duration}}可以通过[[{{tr|Philosopher's Stone}}]]或[[{{tr|Charm of Myths}}]]来缩短。正如其名称所暗示的那样，它所恢复的生命值量是所有{{tr|Healing Potions}}最少的。
+
+除了制作得到之外，{{tr|Lesser Healing Potions}}还会自然出现在[[{{tr|pot}}]]（仅在[[{{tr|Hardmode}}]]之前）或生成的[[{{tr|chest}}]]、[[{{tr|Wooden Crate}}]]和[[{{tr|Pearlwood Crate}}]]中，大部分{{tr|pre-Hardmode}}的 [[{{tr|Bosses}}]] 也会掉落。
+
+{{tr|Lesser Healing Potions}}也能以 {{iteminfo|Lesser Healing Potion|buy}} 的价格购买自[[{{tr|Merchant}}]]处，或在[[{{tr|Moon phase}}]] 2、4、6、 8（{{moons|2|4|6|8}}）期间购买自{{eil|Skeleton Merchant}}处。
+
+自然放置的{{tr|Lesser Healing Potions}}经常出现在[[{{tr|Dungeon}}]]中的[[{{tr|platform}}]]上（和[[{{tr|Lesser Mana Potion}}]]一起）。当以放置的形式遇到时，它们可以用作[[{{tr|Bottle (crafting station)}}|{{tr|Placed Bottle}}]][[{{tr|crafting station}}]]。它们在[[{{tr|Minimap}}|{{tr|map}}]]上还会显示“瓶子”[[{{tr|tooltip}}]]。它们可以用[[{{tr|pickaxe}}]]或{{key|open}}释放并收取，{{eicons|1.4.4}}并且可以通过制作成[[{{tr|Decorative Healing Potion}}]]来由[[{{tr|player}}]]所放置。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Lesser Healing Potion|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Lesser Healing Potion|expectedrows=3}}
+
+== 花絮 ==
+* {{tr|The Lesser Healing Potion}}是少数在其{{tr|crafting recipes}}中用的是[[{{tr|Bottle}}]]而非[[{{tr|Bottled Water}}]]的{{tr|potions}}之一。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在用于制作[[{{tr|Decorative Healing Potion}}]]。}}
+{{history|Desktop 1.4.0.1|现在不再用于制作[[{{tr|Lesser Restoration Potion}}]]，因为它已被移除。}}
+{{history|Desktop 1.3.0.1|
+** 现在可以在[[{{tr|moon phase}}]] 2、4、6、8 期间从[[{{tr|Skeleton Merchant}}]]处以 {{sc|3}} 购买。
+** {{tr|Sprite updated}}。旧的{{tr|sprite}}是：[[File:Lesser Healing Potion (old).png]]}}
+{{history|Desktop 1.2.4.1|[[{{tr|Duke Fishron}}]]不再掉落。}}
+{{history|Desktop 1.2|现在新的[[{{tr|Brain of Cthulhu}}]]和[[{{tr|Queen Bee}}]] {{tr|bosses}} 会掉落。}}
+{{history|Desktop 1.0.6|
+** 现在使用时会触发[[{{tr|Potion Sickness}}]]{{tr|debuff}}，持续一分钟。
+** 补充的{{tr|Health}}由 100 降低至 50。}}
+{{history|Desktop 1.0.5|购买价格由 {{sc|2}} 提升至 {{sc|3}}。}}
+{{history|Desktop 1.0.4|现在新的[[{{tr|King Slime}}]] {{tr|boss}}会掉落。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。（{{icon/ps4}}）}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** 不再掉落自{{tr|Ocram}}、{{tr|Turkor the Ungrateful}}、和{{tr|Lepus}}，因为它们已被移除。}}
+{{history|Mobile 1.2.10299|现在取代{{tr|Greater Healing Potions}}由{{tr|Turkor the Ungrateful}}掉落。}}
+{{history|Mobile 1.2.6508|现在取代{{tr|Greater Healing Potions}}由{{tr|Lepus}}掉落。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+
+{{language info|en=Lesser Healing Potion}}
+
+[[Category:制作站物品]]

@@ -1,0 +1,57 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3569
+| idprojectile = 641, 642
+| tags = hardmode / sentry / drop / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Lunar Portal Staff (demo).gif|framed|{{tr|Lunar Portal}}在发光的同时攻击[[{{tr|Mimic}}]]和[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Lunar Portal Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Moon Lord}}]]后的[[{{tr|Summon weapons|link=y}}#{{tr|Sentries}}|{{tr|sentry summon weapon}}]]。{{sentry note}}在被召唤后，{{tr|Lunar Portal Staff}}连续发射青色的激光扫过其 62.5 {{tr|tile}}范围内的{{tr|enemy}}，并且无限穿透{{tr|enemy}}，但无法穿过实体[[{{tr|block}}]]{{tr|Lunar Portal Staff}}有 {{chance|2/9}} 的概率由[[{{tr|Moon Lord}}]]掉落。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|Lunar Portal Laser}}击中{{tr|enemy}}时会造成 10 {{tr|tick}}[[{{tr|local immunity frame}}|{{tr|local invincibility frame}}]]。
+* {{tr|The Lunar Portal}}每 {{duration|29 ticks}} 发射一道激光。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>aiStyle == 123</code> 代码段。{{tr|The Lunar Portal}}的 ai[0] 在发射激光后被设为 -20。在此之后，它每{{tr|tick}}增加 1 直到达到 0，在同一{{tr|tick}}内增加到 1 ，因此最后一{{tr|tick}}会增加 2。然后继续增加 1 每{{tr|tick}}直到达到 10，此时{{tr|the Lunar Portal}}可以再次发射激光。这意味着{{tr|Lunar Portal}}每 29 {{tr|tick}}发射一次激光。}}
+** 考虑到其完美的追踪性能，每一个传送门的最低命中率是每秒命中单个目标两次。
+* 如果一个{{tr|portal}}恰好位于距离其目标十分接近的位置（最好是在其内部），那么每束激光都会立即与它接触。这种情况下，目标会每秒会受到十到十一次{{tr|portal}}的伤害。
+* {{tr|Lunar Portal}}不能穿过物块瞄准或攻击{{tr|enemy}}。
+* {{tr|The Lunar Portal Laser}}持续 {{duration|50 ticks}} 且在此期间扫过 60° 的弧线。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于 <code>Terraria.Projectile.AI</code> 中的 <code>aiStyle == 84</code> 代码段。}}
+** 激光会尝试从下方扫过其目标。
+* 若未被任何{{tr|solid block}}阻挡，{{tr|The Lunar Portal Laser}}最多可延伸至距离{{tr|Lunar Portal}} 150 {{tr|tile}}的位置。
+* {{tr|the Lunar Portal}}会发光且对放置位置没有限制，这使{{tr|player}}可以轻松找到{{tr|caves}}。
+
+== 小贴士 ==
+* {{tr|Lunar Portal}}会发射一束以大角度扫射敌怪的激光，如果放置在正确位置它能扫过很大一片地面以击中最大数量的敌怪，并可以对多体节的{{tr|enemies and bosses}}（如[[{{tr|The Destroyer}}]]）造成极高的{{DPS}}。一般来说，这意味着要尽可能把它放在高处，但还是要根据具体地形而定。
+
+== 花絮 ==
+* {{tr|Lunar Portal}}的外观很像[[{{tr|Nebula Arcanum}}]]发射的{{tr|projectiles}}、和[[{{tr|Vortex Pillar}}]]中生成的漩涡传送门。它发射的{{tr|laser}}很像{{tr|Moon Lord}}和它的[[{{tr|True Eye of Cthulhu}}]]发射的[[{{tr|Phantasmal Deathray}}]]。
+* {{tr|Lunar Portal Staff}}在内部被叫做<code>MoonlordTurretStaff</code>。
+* 它作为{{tr|crossover}}的一部分出现在游戏《[[{{tr|Dungeon Defenders 2}}]]》中。
+
+== 另见 ==
+* {{dd2 link|Magic Staffs#Legendary|Lunar Portal Staff}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 伤害由 50 提升至 100。
+** 两次激光之间的{{tr|Cooldown}}由 90 减少到 30。
+** 它现在可以同时发射三道{{tr|lasers}}而非一道。
+** {{tr|Lasers}}摆动更快，且摆动弧度更大。}}
+{{history|Desktop 1.3.4|现在被视作{{tr|sentry}}型{{tr|minion}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Lunar Portal Staff}}

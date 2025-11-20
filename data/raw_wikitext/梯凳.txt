@@ -1,0 +1,44 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4341
+| tags = loot / vendor / vendor:Skeleton Merchant
+}}
+{{drop infobox|style=clear:right}}
+[[File:Step Stool (demo).gif|frame|100px|{{tr| player}}借助{{tr|Step Stool}}可以跳得比原来更高。]]
+
+'''{{tr|Step Stool}}'''是一种[[{{tr|accessory}}]]。当玩家静止时，可以按下 {{key|up}} 使用，使用时，玩家会站在{{tr|Step Stool}}上，这会提高[[{{tr|跳跃高度}}]]。{{tr|Step Stool}}可以在地表的[[{{tr|Chest}}]]、[[{{tr|Wooden Crate}}]]、和[[{{tr|Pearlwood Crate}}]]中找到。{{eicons|1.4.4}}它也可以在[[{{tr|Waning Crescent}}]]期间以 {{iteminfo|Step Stool|buy}} 的价格购买自[[{{tr|Skeleton Merchant}}]] 。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Step Stool|expectedrows=1}}
+
+== 备注 ==
+* 使用时，{{tr|Step Stool}}会将玩家的跳跃高度提高到 {{#expr:1.625+{{jump reach|15+5}}}} 格（若无其他生效的[[{{tr|Jump|link=y}}#{{tr|Boosts}}|跳跃{{tr|boosts}}]]），即相较于默认的 {{jump reach}} 格跳跃高度提高了 {{percent|(({{jump reach|15+5}}+1.625)/{{jump reach}}-1)}}。这一{{tr|boost}}由高度提升 1.625 格{{source code ref|v=1.4.4.7|method=Terraria.Player.ApplyEquipFunctional}}和[[{{tr|jump duration}}]]提升 5 {{source code ref|v=1.4.4.7|method=Terraria.Player.UpdateJumpHeight}}组成。
+* {{tr|The Step Stool}}是玩家{{tr|hitbox}}的一部分。这意味着击中{{tr|Step Stool}}的{{tr|enemy projectiles}}会对玩家造成伤害。
+
+== 小贴士 ==
+* 通过将 {{key|jump}} 键和 {{key|up}} 键设定在同一个按键处，{{tr|the Step Stool}}可以让所有跳跃都默认为此高度，大大提升了其可用性。这仅在玩家静止时生效。
+* 既装备[[{{tr|Cloud in a Bottle}}]]（及其升级）又装备{{tr|Step Stool}}能让玩家跳得更加高。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在会出现在{{tr|Wooden Crates}}和{{tr|Pearlwood Crates}}中。
+** 现在由[[{{tr|Skeleton Merchant}}]]出售。
+** 现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Desktop 1.4.0.3|修复了只能在玩家使用[[{{tr|Hooks}}]]时生效的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.3 的改动。}}
+{{history|Switch 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.3 的改动。}}
+{{history|Mobile 1.4.4|现在用于制作[[{{tr|Hand of Creation}}]]。}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.3 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Step Stool}}

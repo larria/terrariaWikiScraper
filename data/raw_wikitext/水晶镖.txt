@@ -1,0 +1,38 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3009
+| hardmode = yes
+}}
+[[File:Crystal Dart (demo).gif|right|frame|{{tr|Crystal Dart}}的演示动画。]]
+
+'''{{tr|Crystal Darts}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|Darts}}]]。其可在[[{{tr|enemies}}]]和[[{{tr|blocks}}]]间反复反弹，自动瞄准附近{{tr|enemies}}。{{tr|The Crystal Dart}}能够在{{tr|block}}上反弹或者击中{{tr|enemy}}总计 7 次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.HandleMovement}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Crystal Dart|expectedrows=1}}
+
+== 备注 ==
+* 击中{{tr|enemy}}或实体{{tr|tile}}，{{tr|Crystal Dart}}可弹向视野内 1.25 到 43.75 {{tr|tile}}范围的{{tr|enemy}}，并保持原有的速度。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Projectile.HandleMovement}}
+** 若未检测到有效目标，{{tr|Crystal Dart}}将继续沿当前弹道行进，直至穿透{{tr|enemies}}或从{{tr|tiles}}上反弹。
+* {{tr|Crystal Dart}}击中时会造成 10 {{tr|tick}}{{tick}}[[{{tr|global invincibility frame}}]]。
+* 不同于其他{{tr|darts}}，{{tr|Crystal Darts}}不会受到重力影响。
+
+== 小贴士 ==
+* 由于{{tr|Crystal Darts}}的弹射能力，它在拥挤的空间里非常有效。它对于[[{{tr|Skeletron Prime}}]]等有多个部位的{{tr|enemies}}，[[{{tr|Queen Slime}}]]等拥有很多仆从的 [[{{tr|boss}}]]，和[[{{tr|worm|link=y}}#{{tr|enemy}}|{{tr|worm}}类{{tr|enemy}}]]等有多个体节的{{tr|enemy}}更加有效。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Damage}}由 15 降低至 14。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+{{language info|en=Crystal Dart}}

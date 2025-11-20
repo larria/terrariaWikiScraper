@@ -1,0 +1,204 @@
+'''{{tr|world size}}'''指的是单个《[[{{tr|Terraria}}]]》世界的大小。创建[[{{tr|World}}]]时，在{{eversions|1.3.0.1|old-gen=y}}中，玩家可以选择所要生成的{{tr|World}}大小为“小”、“中”、“大”之一，而在{{eversions|1.3.0.1|invert=y|old-gen=n}}中，可以选择“普通”或“扩大”。世界会小很多，因为可用的内存较少。{{eicons|1.3.0.1|invert=y|old-gen=n}}“扩大”世界等同于{{eicons|1.3.0.1|old-gen=y}}的“小”世界。
+
+{{tr|world size}}如下：（1 格 = 2 英尺）
+{| class="terraria align-center"
+! {{tr|World}}
+! 地图大小<br/>（格）!! 地图大小<br/>（英尺）!! 可到达区域<br/>（格）!! 可到达区域<br/>（英尺）!! 地图面积<br/>（格²）!! 地图容积<br/>（英尺²）
+|-
+! {{eicons|3ds=y}}普通<br/>{{icon|mobile}}微小{{footnote|name=tiny-mobile}}
+| 1750 × 900 || 3500 × 1800 || 1743 × 893 || 3486 × 1786 || 1,575,000 || 6,300,000
+|-
+! {{eicons|1.3.0.1|old-gen=y}}小<br/>{{eicons|3ds=y}}扩大{{footnote|name=expanded}}
+| 4200 × 1200 || 8400 × 2400 || 4117 × 1117 || 8234 × 2234 || 5,040,000 || 20,160,000
+|-
+! {{eicons|1.3.0.1|old-gen=y}}中
+| 6400 × 1800 || 12800 × 3600 || 6317 × 1717 || 12634 × 3434 || 11,520,000 || 46,080,000
+|-
+! {{eicons|1.3.0.1|old-gen=y}}大{{footnote|name=large-mobile}}
+| 8400 × 2400 || 16800 × 4800 || 8317 × 2317 || 16634 × 4634 || 20,160,000 || 80,640,000
+|}
+
+<div>{{anchor|世界边界}}{{anchor|world border}}{{anchor|world edge}}术语'''世界边界'''指的是{{tr|world}}的两种边界：可见世界边界，即玩家在游戏内可看见和到达的边界，上表中的“可到达区域”；以及真正世界边界，即一个《泰拉瑞亚》世界的空间边界。在所有{{tr|world sizes}}下，可见世界边界和真正世界边界之间有一段固定的距离。此距离取决于方向而有所不同：上方和左侧边界为 41 格，下方和右侧边界为 42 格。在为部分游戏机制计算距离时（例如[[{{tr|Space}}#{{tr|Notes}}|{{tr|Space}}高度]]），应当考虑到这一距离。可见世界边界之内的[[{{tr|Evil biomes}}|{{tr|Evil}}]]和[[{{tr|Hallow}}]]{{tr|tiles}}能够[[{{tr|spread}}]]到边界之外的{{tr|tiles}}，反之亦然。</div>
+
+== 世界生成限制 ==
+{{tr|World size}}对世界中可能生成多少特定建筑物有显著的影响。以下所列的是理论最大值，并不保证必有这么多。虽然不太可能，但一些大型建筑物和{{tr|biomes}}在未能找到合适放置位置的情况下会被跳过。此外，某些较小的建筑物有可能被其他建筑物覆盖，或者被附近的其他建筑物所阻塞。以下所列的范围是基于生成过程中的几率因素，而不是基于观察到的数据。
+
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ 放置的物品
+! colspan="2" rowspan="2" | 名称
+! colspan="4" | {{tr|World size}}
+|-
+! {{tr|Normal}} {{eicons|3ds=y}}<br/>微小 {{icon|mobile}}
+! 小 {{eicons|1.3.0.1|old-gen=y}}<br/>扩大 {{eicons|3ds=y}}
+! 中<br/>{{eicons|1.3.0.1|old-gen=y}}
+! 大<br/>{{eicons|1.3.0.1|old-gen=y}}
+|-
+! colspan="2" | [[{{tr|Life Crystal}}]]
+| 31 {{verify}} || 100 || 230 || 403
+|-
+! colspan="2" | {{tr|Surface}}[[{{tr|Chest}}]]
+| 8 {{verify}} || 21 || 32 || 42
+|-
+! colspan="2" | {{tr|Underground}}[[{{tr|Chest}}]]{{footnote|name=underground-chest}}{{eicons|1.4.0.1}}
+| {{na}} || 35–40 || 80–91 || 140–160
+|-
+! colspan="2" | {{eil|Dead Man's Chest|s}}
+| {{na}} || 10–20 || 15–30 || 20–40
+|-
+! rowspan="2" | [[{{tr|Shadow Chest}}]] !! {{eicons|1.4.0.1}}
+| {{na}} || 7–10 || 10–15 || 14–20
+|-
+! {{eicons|1.4.0.1|invert=y}}
+| 3–4 {{verify}} || 6–9 || 8–13 || 11–17
+|-
+! colspan="2" | [[{{tr|Statue}}]]乘数{{footnote|name=statue}}
+| 1 {{verify}} || 2 || 3 || 4
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ [[{{tr|Biomes|link=y}}#{{tr|Treasure rooms}}|{{tr|Treasure rooms}}]]
+! colspan="2" rowspan="2" | 名称
+! colspan="4" | {{tr|World size}}
+|-
+! {{tr|Normal}} {{eicons|3ds=y}}<br/>微小 {{icon|mobile}}
+! 小 {{eicons|1.3.0.1|old-gen=y}}<br/>扩大 {{eicons|3ds=y}}
+! 中<br/>{{eicons|1.3.0.1|old-gen=y}}
+! 大<br/>{{eicons|1.3.0.1|old-gen=y}}
+|-
+! colspan="2" | [[{{tr|Floating Island}}]]
+| 2–5 {{verify}} || 3 || 5 || 6
+|-
+! colspan="2" | {{eil|Floating Lake|s}}
+| {{na}} || 1 || 2 || 3
+|-
+! colspan="2" | {{eil|Living Mahogany Tree|s}}
+| {{na}} || 6–11 || 9–16 || 12–22
+|-
+! colspan="2" | {{eil|Enchanted Sword Shrine|s}}
+| {{na}} || 0–1 || 0–3 || 0–4
+|-
+! rowspan="2" | [[{{tr|Underground Cabin}}]] !! {{eicons|1.4.0.1}}
+| {{na}} || 35–40 || 80–91 || 140–160
+|-
+! {{eicons|1.4.0.1|invert=y}}
+| 21–22 {{verify}} || 71–74 || 171–176 || 305–311
+|-
+! colspan="2" | 额外的[[{{tr|Underground Desert}}]][[{{tr|Underground Cabin}}|小屋]]{{footnote|name=extra-cabin}}{{eicons|1.4.0.1}}
+| {{na}} || 2 || 4 || 8
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ [[{{tr|Mini-biome}}]]
+! colspan="2" rowspan="2" | 名称
+! colspan="4" | {{tr|World size}}
+|-
+! {{tr|Normal}} {{eicons|3ds=y}}<br/>微小 {{icon|mobile}}
+! 小 {{eicons|1.3.0.1|old-gen=y}}<br/>扩大 {{eicons|3ds=y}}
+! 中<br/>{{eicons|1.3.0.1|old-gen=y}}
+! 大<br/>{{eicons|1.3.0.1|old-gen=y}}
+|-
+! colspan="2" | [[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]
+| 3 || 6–8 || 8–12 || 11–16
+|-
+! colspan="2" | {{eil|Marble Cave|s}}
+| {{na}} || 4–8 || 9–18 || 16–32
+|-
+! colspan="2" | {{eil|Granite Cave|s}}
+| {{na}} || 4–8 || 6–12 || 8–16
+|-
+! colspan="2" | {{eil|Glowing moss biome|s}}
+| {{na}} || 2 || 3 || 4
+|-
+! colspan="2" | {{eil|Oasis|s}}
+| {{na}} || 0–3 || 0–4 || 0–5
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria lined align-center"
+|+ {{eil|Abandoned Mine Tracks}}
+! colspan="2" rowspan="2" | {{tr|Track}}长度
+! colspan="3" | {{tr|World size}}
+|-
+! {{tr|Small}} !! {{tr|Medium}} !! {{tr|Large}}
+|-
+! rowspan="2" | 标准 || 数量
+| 4–7 || 9–15 || 16–28
+|-
+! 长度
+| 150–300 || 225–450 || 300–600
+|-
+! rowspan="2" | 超长 || 数量
+| 1–2 || 1–3 || 2–4
+|-
+! 长度
+| 400–1,000 || 600–1,500 || 800–2,000
+|}
+{{flexend|item}}
+{{flexend}}
+
+== {{tr|World size}}比较 ==
+不同的世界大小更适合不同的目的。由于所需的内存量不同，玩家可能会发现创造许多个小世界可能比创建一个大世界更有效率。
+
+=== 小世界的优点 ===
+所有东西都更近也能更快到达：
+
+* 到达像[[{{tr|Dungeon}}]]、[[{{tr|Jungle}}]]和[[{{tr|Ocean}}]]这样的特定地点需要的路程更短。
+* 建造[[指南:Travel#Sky bridge|天桥]]、[[指南:Travel#Subway|地铁]]、[[指南:Travel#Teleporters|{{tr|teleporters}}]]、和[[指南:Travel#Hellevator|{{tr|hellevators}}]]更快且成本更低。
+* 到达[[{{tr|Underworld}}]]所需的挖掘量更少。
+* [[{{tr|Floating Island}}]]更低，因此更容易找到。
+* [[{{tr|Wyvern}}]]的生成位置更接近地面，刷起来更容易。
+** 注意这可能是双刃剑，因为只要在生命树树顶上就可能触发它们生成。 
+* [[{{tr|Ores}}]]可能会更容易找到。
+* [[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]/[[{{tr|Hallow}}]]更容易控制。
+* 更容易找到[[{{tr|Jungle Temple}}]]和[[{{tr|Aether}}]]。
+* 用[[{{tr|bucket}}]]或[[{{tr|pump}}]]装回[[{{tr|water}}]]和[[{{tr|lava}}]]等液体更快更容易。
+* [[{{tr|Meteor}}]]更容易确定位置。
+* 世界的生成、保存、读取都更快。
+
+=== 大世界的优点 ===
+有更多的空间供建造和探索：
+
+* [[{{tr|Layer}}]]和[[{{tr|biome}}]]的过渡会更为平缓。
+** [[{{tr|Wyvern}}]]的生成高度更高，使得地面上的房屋在低海拔高度上更安全。
+** 相反，有更多地面以下的空间被算作[[{{tr|surface}}]]，可以用于种植“仅限{{tr|surface}}”的{{tr|plants}}，比如{{tr|trees}}或{{tr|mushrooms}}。
+* 有更大几率有足够大的湖或者池塘来[[{{tr|fishing}}]]。
+* [[{{tr|The Underworld}}]]更长，可能会有更多时间来打败[[{{tr|Wall of Flesh}}]]。
+* [[{{tr|Celestial Tower}}]]更加分散，降低玩家的基地和 NPC 的家被侵占的可能性。
+* {{tr|The Evil Biome}}或{{tr|the hallow}}生成在{{tr|jungle}}附近的可能性更低，理由同上。
+* {{tr|surface}}地形往往更加多样和有趣。
+* {{eil|Abandoned Mine Tracks}}更长且更常见。
+
+{{tr|world}}有更多事物：
+
+* 每个世界地下的[[{{tr|chests}}]]和[[{{tr|pot}}]]总数更多。
+** 这包括了地形特征和结构，比如[[{{tr|Jungle Shrine}}]]、[[{{tr|Enchanted Sword Shrine}}]]、和[[{{tr|Floating Island}}]]，生成[[{{tr|Pyramid}}]]的几率也更大。
+* 还有更多材料，包括{{tr|ore}}和{{tr|wood}}。例如，会有更多已经长成的大树并且有更多空间可用于种树。
+* {{tr|The Dungeon}}有更大几率三种[[{{tr|Dungeon}}#{{tr|Hardmode}}中{{tr|Plantera}}后的{{tr|Dungeon}}|{{tr|Dungeon Wall}}]]齐备。
+* 有更多[[{{tr|Evil Biome}}]]{{tr|chasms}}。这意味着有更多[[{{tr|Shadow Orb}}]]/[[{{tr|Crimson Heart}}]]可摧毁，这会掉落独特且有价值的{{tr|items}}。还有更多[[{{tr|Demon Altar}}]]，这样就能生成更多[[{{tr|Hardmode}}]]{{tr|ores}}。
+* [[{{tr|Jungle Temple}}]]可能包含更多[[{{tr|traps}}]]和[[{{tr|Lihzahrd Power Cell}}]]。
+* 世界中一次可以有更多{{tr|meteorite}}坠落地。
+** 就像{{tr|Wyvern}}{{tr|spawn}}高度那样，这也可能会是双刃剑，因为这样世界中就需要有更多数量的{{tr|meteorite blocks}}才能防止继续生成{{tr|meteorites}}从而保护避免风景和玩家建造的建筑物被破坏。
+
+== 备注 ==
+* {{3ds version}}的数值很难得到，并且可能是由 [[1.3.0.1]] 的{{tr|source code}}经过错误的推断得出的。
+
+== 花絮 ==
+* 用[[{{tr|Server}}#命令行参数|命令行参数]]并指定 <code>autocreate</code> 参数时，中{{tr|worlds}}会生成为 6300 格宽而非 6400 格，这样就恰好是小世界的 1.5 倍大。
+
+== 脚注 ==
+{{footnotelist|refs=
+{{footnote|name=tiny-mobile|新的世界不能选这项。只用于在 1.3 {{tr|mobile}}更新之前生成的世界。}}
+{{footnote|name=expanded|在{{3DS version}} 上，扩大地图仅适用于 [[File:New Nintendo 3DS.svg|100px|New Nintendo 3DS]] 的西方版本（北美、欧洲）。}}
+{{footnote|name=large-mobile|在 {{mobile version}} 上，大世界只在有着 1.5 {{nbsp}}GB 以上 RAM 的设备上才能使用。}}
+{{footnote|name=extra-cabin|额外的{{tr|Underground Desert Cabins}}是指在{{tr|the Underground Desert}}被转化的{{tr|regular cabins}}之外另行生成的那些{{tr|cabin}}。}}
+{{footnote|name=underground-chest|{{tr|Underground Chests}}是在{{tr|the Underground layer}}和{{tr|Caverns layers}}中、{{tr|Cabins}}和{{tr|the Dungeon}}外生成的，并且会转化为适合所在{{tr|Biome}}的特定{{tr|chest}}。并且它们会进一步被{{tr|Dead Man's Chests}}的数量所减少。}}
+{{footnote|name=statue|{{tr|Statue}}乘数决定了每种{{tr|statue}}在{{tr|Underground Cabins}}之外能放置多少个。例如，{{tr|large worlds}}可以在{{tr|cabins}}之外生成最多 4 个[[{{tr|Crab Statue}}]]。}}
+}}
+
+{{Game mechanics}}
+
+{{language info|en=World size}}

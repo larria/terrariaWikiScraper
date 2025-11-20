@@ -1,0 +1,55 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Block
+| auto = 3347
+}}
+{{about|天然块|{{tr|the crafting material}}|{{tr|Sturdy Fossil}}}}
+
+'''{{tr|Desert Fossil}}'''是一种{{tr|block}}，可以中到大矿脉的形式在[[{{tr|Underground Desert}}]]{{tr|biome}}中发现。{{tr|Desert Fossils}}可以借由[[{{tr|Extractinator}}]]或[[{{tr|Chlorophyte Extractinator}}]]生产[[{{tr|Sturdy Fossil}}]]，另外亦可产生通常的{{tr|Extractinator}}掉落物。
+
+{{tr|Desert Fossil}}可被[[{{tr|Copper Pickaxe}}]]或同级及级别更高的镐子，或[[{{tr|Explosives (class)}}]]挖掘。然而，与之毗连的{{tr|fossil blocks}}有几率直接崩碎而什么也不掉落。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Desert Fossil|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Desert Fossil|expectedrows=1}}
+
+== {{tr|Extractinator items}} ==
+{{#section:Extractinator|fossil}}
+
+== {{tr|Chlorophyte Extractinator items}} ==
+{{#section:Chlorophyte Extractinator|fossil}}
+
+== 备注 ==
+* {{tr|Desert Fossils}}被挖掘时会随机地使得毗连的{{tr|tiles}}破碎（被挖掘时和一次就挖掘下来均是如此）。{{source code ref|v=1.4.0.1|method=Terraria.WorldGen.AttemptFossilShattering}}
+* 默认有 {{chance|1/15}} 的几率使得 8 块相邻{{tr|tiles}}中的{{tr|block}}被摧毁。在该 8 块{{tr|tiles}}中，若任一之下方无{{tr|block}}，则有 {{chance|1/4}} 的几率被摧毁。对于最初的{{tr|fossil}}被摧毁的{{tr|tick}}，下方的{{tr|block}}亦有 {{chance|1/4}} 的几率破碎。
+* 为了得到尽可能多的{{tr|fossils}}，{{tr|players}}应当试着从上到下一层一层挖掘并避免挖出孔洞，否则孔洞会很快扩散。可以用{{tr|Explosives (class)}}，特别是{{tr|Scarab Bombs}}，来获取整条矿脉，同时将损失最小化。
+*{{tr|Desert Fossils}}在[[{{tr|Spelunker Potion}}]]效果下会被高亮标记。
+
+== 小贴士 ==
+* 因为{{$|explosives||class}}可立刻摧毁{{tr|Desert Fossil}}，因此游戏早期的{{tr|players}}或许会使用它们，以避免较弱的{{tr|pickaxes}}在挖掘时毁坏邻近的{{tr|Desert Fossil}}。不过若没有这些，任何{{tr|pickaxe}}也都能挖掘。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在可被任何{{tr|pickaxe}}挖掘。
+** 现在可被{{tr|explosives}}摧毁和收集。
+** 现在挖掘时有几率使得毗连的{{tr|Desert Fossil blocks}}几率破碎。
+** 现在被放入[[{{tr|Extractinator}}]]时会更频繁地掉落[[{{tr|Amber}}]]。
+** 添加了[[{{tr|Desert Fossil Wall}}]]的{{tr|crafting}}{{tr|recipes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Fossils}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Desert Fossil}}

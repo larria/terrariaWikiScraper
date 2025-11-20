@@ -1,0 +1,56 @@
+{{npc infobox
+| image = Wraith.gif
+| auto = 82
+| type = Undead Enemy
+| environment = Surface+Night
+| immuneallnotwhips = yes | immuneallnote = <br/>{{note|paren=y|也不免疫{{item|Stunned|scale=0.5|small=y}}和{{item|Bleeding|scale=0.5}} {{eicons|Tizona|small=y}}}}
+| debuff = Slow
+| debuffchance = 12.5%
+| debuffduration = {{modes|{{duration|15}}|{{duration|30}}|{{duration|37.5}}}}
+| Fast Clock|1| {{modes|1%|2%}}
+| sound1 = Zombie 81.wav, Zombie 82.wav, Zombie 83.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+
+'''{{tr|Wraith}}'''是一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，在[[{{tr|night}}]]生成于[[{{tr|surface}}]]，可以穿过[[{{tr|block}}]]，接触玩家时有 {{chance|1/8}} 的几率施加持续 15 / {{expert|30}} / {{master|37.5}} {{tr|second}}的[[{{tr|Slow}}]][[{{tr|debuff}}]]。它们有幽灵般的漆黑身躯，导致它们在黑暗的地方几乎完全不可见，但它们有两只发光且在完全黑暗的地方也仍然可见的红眼睛。虽然{{tr|Wraith}}看起来可以自由飞行，但它们只能略微飘离地面。它们需要有可供“游动”的前景{{tr|block}}才能飞得高一些。
+
+== 备注 ==
+* 无论当前时间，在摧毁[[{{tr|Altars}}|{{tr|Demon Altar}}或{{tr|Crimson Altar}}]]时会生成一到两个{{tr|Wraith}}。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.SmashAltar}}
+* {{tr|Wraith}}在[[{{tr|new moon}}]]期间的{{tr|night}}更常见。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+* {{tr|Wraith}}不会触发[[{{tr|pressure plate}}]]，因为它们会直接穿过去。这使得它们无法激活任何类型的[[{{tr|trap}}]]。
+* 可以用[[{{tr|Wraith Statue}}]]在[[{{tr|pre-Hardmode}}]]生成{{tr|Wraith}}，但它们只会在{{tr|Hardmode}}下掉落战利品。
+* {{tr|Wraiths}}可被[[{{tr|Hunter Potion}}]]高亮显示，但由于它们是半透明的，其高亮相较于其他{{tr|enemies}}不那么明显。
+* {{tr|Wraith}}不能用[[{{tr|platforms}}]]向上飞，但可以悬停在它们上方。
+
+== 小贴士 ==
+* 用击中墙壁时攻击动画不会中止的[[{{tr|melee weapons}}]]或{{tr|any other weapons}}可以穿墙攻击{{tr|Wraiths}}。这让[[{{tr|spears}}]]特别有效。
+* 任何离地至少 6 格的建筑都能防止{{tr|Wraith}}向上飘起进入它。 
+* 破坏{{tr|altar}}是不使用{{tr|Wraith Statue}}获得[[{{tr|Wraith Banner}}]]和[[{{tr|Fast Clock}}]]的有效方法。
+* 如果玩家在[[{{tr|ocean}}]]中或者略高于{{tr|ocean}}，{{tr|wraith}}可以在玩家下方或者两侧生成，然后它就能飘向玩家并攻击。
+
+== 花絮 ==
+* 根据[[:File:Wraith (card).png|{{tr|Collector's Edition}}的交换式卡牌]]，被[[{{tr|Eater of Souls}}]]所吞噬的人会变为{{tr|Wraith}}。这应该不是创造{{tr|wraith}}的唯一方法，因为它们并非[[{{tr|The Corruption}}]]世界独有，在[[{{tr|The Crimson}}|{{tr|Crimson}}]]或纯净{{tr|world}}中也会{{tr|spawn}}{{tr|wraith}}。
+** 这张卡牌还有一处拼写错误：“devoured”被拼成“devour'''er'''ed”。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.0.3|现在有几率掉落它自己的相应{{tr|banner}}。}}
+{{history|Desktop 1.2|
+** {{tr|health}}、{{tr|damage}}和{{tr|defense}}分别由 200、75、和 18 降低至 160、65、和 16。
+** 现在有几率掉落{{tr|Fast Clock}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Wraith}}

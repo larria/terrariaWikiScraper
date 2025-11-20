@@ -1,0 +1,71 @@
+{{buff infobox
+| auto = 69
+| effects = {{eicons|1.4.4|small=y}}对玩家：{{tr|Defense}}降低 15<br/>对{{tr|enemies}}：{{tr|Armor penetration}}提高 15<br/>{{eicons|1.4.1|invert=y|small=y}}{{tr|Defense}}降低 20
+}}
+{{about|{{tr|the debuff}}|{{tr|the crafting material}}|{{tr|Ichor}}}}
+
+'''{{tr|Ichor}}'''是一个[[{{tr|debuff}}]]，可在[[{{tr|Hardmode}}]]下由[[{{tr|Underground Crimson}}]]中的[[{{tr|Ichor Sticker}}]]的远程攻击造成，或者由[[{{tr|Crimson}}]][[{{tr|Underground Desert}}]]中的[[{{tr|Tainted Ghoul}}]]造成。用[[{{tr|Ichor}}]]制作的{{tr|weapons and the ammo}}也能造成此{{tr|debuff}}。在{{eversions|1.4.4|short=y}}中，此{{tr|the debuff}}会将受影响的玩家的[[{{tr|defense}}]]降低 15，或在计算对受影响的{{tr|enemies}}造成的伤害时提高 15 [[{{tr|armor penetration}}]]。在{{eversions|1.4.4|invert=y|short=y}}中，它会将受影响的实体的{{tr|defense}}降低 20。
+
+== 原因 ==
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+|-
+{{debuff source|Golden Shower}}
+{{debuff source|Ichor Bullet}}
+{{debuff source|Ichor Arrow}}
+{{debuff source|Flask of Ichor|10–19 {{tr|seconds}}|100%}}
+{{debuff source|Ichor Dart}}
+{{debuff source|Bladetongue}}
+|}
+
+=== 来自敌怪 ===
+{| class="terraria"
+! 来源
+! 持续时间
+! 几率
+|-
+| {{item|Ichor Sticker}}
+| 15 / {{expert|30}} {{tr|seconds}}
+| {{chance|1/1}}
+|-
+| {{item|Tainted Ghoul}}
+| 7 / {{expert|14}} 秒
+| {{chance|1/1}}
+|}
+
+== 免疫的 NPC ==
+{{immunities|Ichor}}
+
+== 备注 ==
+* 受{{tr|Ichor}}影响的{{tr|Enemies}}和{{tr|player}}会泛出金黄色，它们会在黑暗中可见，但不会发光。
+* {{eicons|1.4.1|invert=y}}虽然[[{{tr|Ichor Sticker}}]]会造成{{tr|Ichor debuff}}，但它们并不免疫此{{tr|debuff}}。
+* {{eicons|1.4.4|invert=y}}此{{tr|debuff}}不会将{{tr|enemy}}的{{tr|defense}}降低至 0 以下。
+
+== 小贴士 ==
+* 由于{{tr|Ichor}}的效果，它在游戏末期也非常有用，因为几乎没有{{tr|enemy}}免疫它。它对于拥有高{{tr|defense}}的{{tr|enemy}}（如[[{{tr|Skeletron Prime}}]]（尤其是旋转时）、[[{{tr|Duke Fishron}}]]，等等）特别有用。
+* 常见的战术为先使用能够造成{{tr|Ichor}}的{{tr|weapon}}攻击一次{{tr|enemy}}，然后使用主要{{tr|weapon}}进行输出。
+
+== 花絮 ==
+* {{tr|Ichor}}导致的对{{tr|player}}的{{tr|damage}}提升会随{{tr|world}}[[{{tr|difficulty}}]]（{{eil|Expert Mode|Expert}}/{{eil|Master Mode}}）改变，这是因为{{tr|defense}}的有效性会随{{tr|difficulty}}改变。
+
+== 另见 ==
+* [[{{tr|Betsy's Curse}}]]，另一个能降低{{tr|defense}}的{{tr|debuff}}。
+* [[{{tr|Cursed Inferno}}]]，其{{tr|corruption counterpart}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|施加到{{tr|enemies}}上时的机制由降低[[{{tr|defense}}]]改为提高[[{{tr|armor penetration}}]]。}}
+{{history|Desktop 1.4.1|{{tr|Defense}}降低被削弱了 25%，由 20 降低至 15。}}
+{{history|Desktop 1.2.4|修复了[[{{tr|Flask of Gold}}]]会对{{tr|enemy}}施加{{tr|Ichor debuff}}而不是[[{{tr|Midas}}]]{{tr|debuff}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Ichor (debuff)}}

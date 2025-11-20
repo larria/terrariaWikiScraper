@@ -1,0 +1,513 @@
+{{collapse top|点击展开详细列表|收起列表}}
+
+基本更改
+* 更新了{{tr|console}}/{{tr|mobile}}独有{{tr|pet-summoning items}}的外观
+* 更新了一些{{tr|potion sprites}}
+* {{tr|Doors}}不再需要手动打开
+
+机制：
+
+* 可以用{{tr|Hammer}}将{{tr|Platform}}改造为{{tr|stairs}}
+* 更新{{tr|Music Box}}的图像（每个{{tr|music box}}现在都有其独特的设计了）
+* 为{{tr|Music Boxes}}添加了音符动画
+* 更新了{{tr|Robe}}的图像
+* 更新了{{tr|Cobalt Shield}}、{{tr|Obsidian Shield}}、{{tr|Paladin's Shield}}的图像
+* 自动开{{tr|doors}}
+* 添加了{{tr|Cactus}}的变体
+* 添加了{{tr|biome}}特有的石笋
+* 为{{tr|Waterfall}}和{{tr|Lavafall}}添加了音效
+* 为{{tr|critters}}添加了音效
+* 早上{{tr|bird}}的生成率提高
+* 为{{tr|birds}}添加了不同的歌曲 sfx（sound effects的缩写）
+* 添加了上下颠倒的斜坡（可通过{{tr|Hammer}}击实现，也可在世界生成时形成）
+* 可以放置{{tr|coins}}以创造{{tr|Coin}}堆
+* {{tr|Destroyer}} {{tr|boss}} 掉落物现在会在离玩家最近的{{tr|segment}}出现
+* 所有非{{tr|event}} {{tr|boss}} 现在都有几率掉落 [[{{tr|Boss Mask}}]]（见{{tr|items}}）
+* [{{tr|Dyes}}可以堆叠
+* {{tr|Rain}}现在在{{tr|Blood Moon}}期间会变红
+* 添加了{{tr|Shark Statue}}
+* 添加了{{tr|Underground Crimson}}{{tr|music}}
+* {{tr|Angler NPC}} 的{{tr|Quest}}系统
+* 更新了世界生成时的沙滩生成
+* {{tr|Fishing}}
+
+{{tr|NPC}}：
+* {{tr|Angler NPC}}
+* {{tr|Travelling Merchant}}
+
+{{tr|Enemies}}：
+
+* {{tr|Duke Fishron}}（{{tr|boss}}）
+* {{tr|Detonating Bubble}}（{{tr|Duke Fishron}}的{{tr|projectile}}）
+* {{tr|Sharkron}}
+
+{{tr|Critters}}：
+
+* {{tr|Frog}}
+* {{tr|Grasshopper}}
+* {{tr|Snail}}
+* {{tr|Glowing Snail}}
+* {{tr|Scorpion}}
+* {{tr|Black Scorpion}}
+* {{tr|Firefly}}
+* {{tr|Lightning Bug}}
+* {{tr|Monarch Butterfly}}
+* {{tr|Sulphur Butterfly}}
+* {{tr|Zebra Swallowtail Butterfly}}
+* {{tr|Ulysses Butterfly}}
+* {{tr|Julia Butterfly}}
+* {{tr|Red Admiral Butterfly}}
+* {{tr|Purple Emperor Butterfly}}
+* {{tr|Tree Nymph Butterfly}}
+* {{tr|Truffle Worm}}
+* {{tr|Duck}}
+* {{tr|Mallard Duck}}
+* {{tr|Worm}}
+
+{{tr|Mounts}}：
+
+* {{tr|Bunny Mount}}
+* {{tr|Pigron Mount}}
+* {{tr|Turtle Mount}}
+* {{tr|Rudolph Mount}}
+
+新{{tr|Items}}（来自{{tr|moon}}掉落）
+
+* {{tr|Reindeer Bells}} [{{tr|summon item}}/{{tr|mount}}]
+
+新{{tr|Items}}（{{tr|Boss}} 掉落物）
+
+* {{tr|Duke Fishron Mask}} [{{tr|vanity}}]
+* {{tr|Duke Fishron Trophy}} [{{tr|furniture}}]
+* {{tr|Bubble Gun}} [{{tr|weapon}}]
+* {{tr|Fishron Wings}} [{{tr|accessory}}]
+* {{tr|Flairon}} [{{tr|weapon}}]
+* {{tr|Tsunami}} [{{tr|weapon}}]
+* {{tr|Razorblade Typhoon}} [{{tr|weapon}}]
+* {{tr|Tempest Staff}} [{{tr|weapon}}]
+* {{tr|Reindeer Bells}} [{{tr|summon item}}/{{tr|mount}}]
+* {{tr|King Slime Mask}}
+* {{tr|King Slime Trophy}}
+* {{tr|Eye of Cthulhu Mask}}
+* {{tr|Brain of Cthulhu Mask}}
+* {{tr|Eater of Worlds Mask}}
+* {{tr|Queen Bee Mask}}
+* {{tr|Skeletron Mask}}
+* {{tr|Wall of Flesh Mask}}
+* {{tr|Destroyer Mask}}
+* {{tr|Horned God Robe}} [{{tr|vanity}}，由{{tr|Destroyer}}掉落，*{{tr|CONSOLE}}独有*]
+* {{tr|Twin Mask}}
+* {{tr|Horned God Boots}} [{{tr|vanity}}，由{{tr|the Twins}}掉落，*{{tr|CONSOLE}}独有*]
+* {{tr|Skeletron Prime Mask}}
+* 角神{{tr|Headpiece}} [{{tr|vanity}}，由{{tr|Skeletron Prime}}掉落，*{{tr|CONSOLE}}独有*]
+* {{tr|Ocram Mask}} *{{tr|CONSOLE}}独有*
+* {{tr|Plantera Mask}}
+* {{tr|Golem Mask}}
+* {{tr|Beetle Husks}} [由{{tr|Golem}}掉落 / {{tr|material}}]
+
+新{{tr|Items}}（{{tr|Quest rewards}}）
+
+* {{tr|Fuzzy Carrot}} [{{tr|mount summon}}]
+* {{tr|Angler Hat}} [{{tr|vanity}}]
+* {{tr|Angler Vest}} [{{tr|vanity}}]
+* {{tr|Angler Pants}} [{{tr|vanity}}]
+* {{tr|Golden Fishing Rod}} [{{tr|fishing pole}}]
+* {{tr|Hotline Fishing Hook}} [{{tr|fishing pole}}]
+* {{tr|Fin Wings}} [{{tr|accessory}}]
+* {{tr|Fish Hook}} [{{tr|grapple}}]
+* {{tr|High Test Fishing Line}} [{{tr|accessory}}]
+* {{tr|Angler Earring}} [{{tr|accessory}}]
+* {{tr|Tackle Box}} [{{tr|accessory}}]
+* 美人鱼发夹 [{{tr|vanity}}]<!--原文如此，即贝壳发夹-->
+* {{tr|Mermaid Adornment}} [{{tr|vanity}}]
+* {{tr|Mermaid Tail}} [{{tr|vanity}}]
+* {{tr|Fish Costume Mask}} [{{tr|vanity}}]
+* {{tr|Fish Costume Shirt}} [{{tr|vanity}}]
+* {{tr|Fish Costume Finskirt}} [{{tr|vanity}}]
+* {{tr|Coralstone Block}}
+* {{tr|Sonar Potion}} [{{tr|consumable}}]
+* {{tr|Fishing Potion}} [{{tr|consumable}}]
+* {{tr|Crate Potion}} [{{tr|consumable}}]
+* {{tr|Bunnyfish Trophy}} [{{tr|furniture}}]
+* {{tr|Goldfish Trophy}} [{{tr|furniture}}]
+* {{tr|Sharkteeth Trophy}} [{{tr|furniture}}]
+* {{tr|Swordfish Trophy}} [{{tr|furniture}}]
+* {{tr|Treasure Map}} [{{tr|furniture}}]
+* {{tr|Seaweed Planter}} [{{tr|furniture}}]
+* {{tr|Pillagin me Pixels}} [{{tr|painting}}]
+* {{tr|Compass Rose}} [{{tr|furniture}}]
+* {{tr|Ship's Wheel}} [{{tr|furniture}}]
+* {{tr|Life Preserver}} [{{tr|furniture}}]
+* {{tr|Wall Anchor}} [{{tr|furniture}}]
+* {{tr|Ship in a Bottle}} [{{tr|furniture}}]
+* {{tr|Apprentice Bait}} [{{tr|consumable}}]
+* {{tr|Journeyman Bait}} [{{tr|consumable}}]
+* {{tr|Master Bait}} [{{tr|consumable}}]
+
+新{{tr|Items}}（{{tr|Shops}}）
+
+* 机制
+** {{tr|Mechanic's Rod}} [{{tr|Fishing pole}}]
+
+* {{tr|Painter}}：
+** {{tr|Bubble Wallpaper}} [{{tr|wall}}]
+** {{tr|Copper Pipe wallpaper}} [{{tr|wall}}]
+** {{tr|Ducky Wallpaper}} [{{tr|wall}}]
+** {{tr|Fancy Grey Wallpaper}} [{{tr|wall}}]
+** {{tr|Ice Floe wallpaper}} [{{tr|wall}}]
+** {{tr|Music wallpaper}} [{{tr|wall}}]
+** {{tr|Purple Rain wallpaper}} [{{tr|wall}}]
+** {{tr|Rainbow wallpaper}} [{{tr|wall}}]
+** {{tr|Sparkle Stone wallpaper}} [{{tr|wall}}]
+** {{tr|Starlit heaven wallpaper}} [{{tr|wall}}]
+
+* {{tr|Merchant}}：
+** {{tr|Bug Net}} [{{tr|tool}}]
+
+* {{tr|Traveling Merchant}}：
+** {{tr|Ammo Box}}
+** {{tr|Brick Layer}} [{{tr|accessory}}]
+** {{tr|Celestial Magnet}} [{{tr|accessory}}]
+** {{tr|Paint Sprayer}} [{{tr|tool}}]
+** {{tr|Sake}} [{{tr|consumable}}]
+** {{tr|Extendo Grip}} [{{tr|accessory}}]
+** {{tr|Water Gun}} [{{tr|weapon}}]
+** {{tr|Gypsy Robe}} [{{tr|armor}}]
+** {{tr|Ultrabright Torch}} [{{tr|light source}}]
+** {{tr|Pho}} [{{tr|consumable}}]
+** {{tr|Pad Thai}} [{{tr|consumable}}]
+** {{tr|Chalice}} [{{tr|furniture}}]
+** {{tr|Gatligator}} [{{tr|weapon}}]
+** {{tr|Pulse Bow}} [{{tr|weapon}}]
+** {{tr|Arcane Rune Wall}} [{{tr|wall}}/动态]
+** {{tr|Gi}} [{{tr|armor}}]
+** {{tr|Magic Hat}} [{{tr|armor}}]
+** {{tr|Fancy Dishes}} [{{tr|furniture}}]
+** {{tr|Kimono}} [{{tr|vanity}}]
+** {{tr|Fez}} [{{tr|vanity}}]
+** {{tr|Katana}} [{{tr|weapon}}]
+** {{tr|Revolver}} [{{tr|weapon}}]
+** {{tr|Portable Cement Mixer}} [{{tr|accessory}}]
+** {{tr|Dynasty Wood}} [{{tr|material}}]
+** {{tr|Red Dynasty Shingles}}
+** {{tr|Blue Dynasty Shingles}}
+** {{tr|Zebra Skin}} [{{tr|furniture}}]
+** {{tr|Leopard Skin}} [{{tr|furniture}}]
+** {{tr|Tiger Skin}} [{{tr|furniture}}]
+** {{tr|Sitting Duck's Fishing Pole}} [{{tr|fishing pole}}]
+
+新{{tr|Items}}（{{tr|Fishing and Crate}}战利品）
+
+* {{tr|Armored Cave Fish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Atlantic Cod}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Bass}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Blue Jellyfish}} [制作用品和{{tr|bait}}，通过{{tr|fishing}}获得]
+* {{tr|Chaos Fish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Crimson Tiger Fish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Damselfish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Double Cod}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Ebonkoi}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Flarefin Koi}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Frost Minnow}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Golden Carp}} [用于赚钱的渔获，通过{{tr|fishing}}获得]
+* {{tr|Green Jellyfish}} [制作用品和{{tr|bait}}，通过{{tr|fishing}}获得]
+* {{tr|Hemopiranha}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Neon Tetra}} [通过{{tr|fishing}}获得]
+* {{tr|Obsidifish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Pink Jellyfish}} [制作用品和{{tr|bait}}，通过{{tr|fishing}}获得]
+* {{tr|Princess Fish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Prismite}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Red Snapper}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Salmon}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Shrimp}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Specular Fish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Stinkfish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Trout}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Tuna}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Variagated Lardfish}} [制作用品，通过{{tr|fishing}}获得]
+* {{tr|Old Shoe}} [垃圾，通过{{tr|fishing}}获得]
+* {{tr|Seaweed}} [垃圾，通过{{tr|fishing}}获得]
+* {{tr|Tin Can}} [垃圾，通过{{tr|fishing}}获得]
+* {{tr|Golden Crate}} [{{tr|consumable}}，通过{{tr|fishing}}获得]
+* {{tr|Iron Crate}} [{{tr|consumable}}，通过{{tr|fishing}}获得]
+* {{tr|Wooden Crate}} [{{tr|consumable}}，通过{{tr|fishing}}获得]
+* {{tr|Frog Leg}} [{{tr|accessory}}，通过{{tr|fishing}}获得]
+* {{tr|Honeyfin}} [{{tr|consumable}}，通过{{tr|fishing}}获得]
+* {{tr|Purple Clubberfish}} [{{tr|weapon}}，通过{{tr|fishing}}获得]
+* {{tr|Obsidian Swordfish}} [{{tr|weapon}}，通过{{tr|fishing}}获得]
+* {{tr|Reaver Shark}} [{{tr|tool}}，通过{{tr|fishing}}获得]
+* {{tr|Rockfish}} [{{tr|tool}}，通过{{tr|fishing}}获得]
+* {{tr|Sawtooth Shark}} [{{tr|tool}}，通过{{tr|fishing}}获得]
+* {{tr|Scaly Truffle}} [{{tr|mount summon}}，通过{{tr|fishing}}获得]
+* {{tr|Swordfish}} [{{tr|weapon}}，通过{{tr|fishing}}获得]
+* {{tr|Zephyr Fish}} [{{tr|mount summon}}，通过{{tr|fishing}}获得]
+* {{tr|Anchor}} [{{tr|weapon}}，可从{{tr|Wooden Crate}}中得到]
+* {{tr|Ginger Beard}} [{{tr|vanity}}，可从{{tr|Iron Crate}}中得到]
+* {{tr|Tartar Sauce}} [{{tr|pet summon}}，可从{{tr|Iron Crate}}中得到]
+* {{tr|Falcon Blade}} [{{tr|weapon}}，可从{{tr|Iron Crate}}中得到]
+* {{tr|Hardy Saddle}} [{{tr|mount summon}}，可从{{tr|Gold Crate}}中得到]
+
+新{{tr|Items}}（{{tr|Furniture}}）：
+
+* 许多{{tr|furniture items}}都在引入{{tr|Glass Kiln}}、{{tr|Flesh Cloning Vat}}、{{tr|Bone Welder}}、{{tr|Living Loom}}、{{tr|Sky Mill}}和{{tr|Steampunk Boiler}}等{{tr|crafting stations}}后更改了{{tr|recipes}}。
+* {{tr|Blue Dungeon Chest}}
+* {{tr|Blue Dungeon Lamp}}
+* {{tr|Blue Dungeon Bathtub}}
+* {{tr|Blue Dungeon Candelabra}}
+* {{tr|Blue Dungeon Sofa}}
+* {{tr|Blue Dungeon Dresser}}
+* {{tr|Blue Dungeon Piano}}
+* {{tr|Bone Welder}}
+* {{tr|Bone Bathtub}}
+* {{tr|Bone Bookcase}}
+* {{tr|Bone Bed}}
+* {{tr|Bone Lamp}}
+* {{tr|Bone Chandelier}}
+* {{tr|Bone Lantern}}
+* {{tr|Bone Candelabra}}
+* {{tr|Bone Piano}}
+* {{tr|Bone Dresser}}
+* {{tr|Bone Sofa}}
+* {{tr|Bone Chest}}
+* {{tr|Bone Clock}}
+* {{tr|Cactus Lantern}}
+* {{tr|Mushroom Sofa}}
+* {{tr|Obsidian Chandelier}}
+* {{tr|Obsidian Candle}}
+* {{tr|Obsidian Candelabra}}
+* {{tr|Obsidian Bathtub}}
+* {{tr|Obsidian Lantern}}
+* {{tr|Obsidian Lamp}}
+* {{tr|Obsidian Chest}}
+* {{tr|Obsidian Dresser}}
+* {{tr|Obsidian Piano}}
+* {{tr|Obsidian Sofa}}
+* {{tr|Obsidian Clock}}
+* {{tr|Pearlwood Lantern}}
+* {{tr|Pearlwood Candelabra}}
+* {{tr|Pearlwood Fence}}
+* {{tr|Pearlwood Sofa}}
+* {{tr|Pearlwood Clock}}
+* {{tr|Pearlwood Bookcase}}
+* {{tr|Pearlwood Lamp}}
+* {{tr|Pearlwood Candle}}
+* {{tr|Pearlwood Bathtub}}
+* {{tr|Pearlwood Chandelier}}
+* {{tr|Pink Dungeon Lamp}}
+* {{tr|Pink Dungeon Bathtub}}
+* {{tr|Pink Dungeon Chest}}
+* {{tr|Pink Dungeon Candelabra}}
+* {{tr|Pink Dungeon Sofa}}
+* {{tr|Pink Dungeon Dresser}}
+* {{tr|Pink Dungeon Piano}}
+* {{tr|Pumpkin Lamp}}
+* {{tr|Pumpkin Chandelier}}
+* {{tr|Pumpkin Bathtub}}
+* {{tr|Pumpkin Lantern}}
+* {{tr|Pumpkin Candelabra}}
+* {{tr|Pumpkin Bed}}
+* {{tr|Pumpkin Bookcase}}
+* {{tr|Pumpkin Piano}}
+* {{tr|Pumpkin Dresser}}
+* {{tr|Pumpkin Sofa}}
+* {{tr|Pumpkin Chest}}
+* {{tr|Pumpkin Clock}}
+* {{tr|Pumpkin Candle}}
+* {{tr|Rich Mahogany Lantern}}
+* {{tr|Rich Mahogany Candle}}
+* {{tr|Rich Mahogany Chandelier}}
+* {{tr|Rich Mahogany Bathtub}}
+* {{tr|Rich Mahogany Lamp}}
+* {{tr|Rich Mahogany Candelabra}}
+* {{tr|Rich Mahogany Clock}}
+* {{tr|Rich Mahogany Bookcase}}
+* {{tr|Rich Mahogany Sofa}}
+* {{tr|Rich Mahogany Fence}}
+* {{tr|Shadewood Bathtub}}
+* {{tr|Shadewood Lamp}}
+* {{tr|Shadewood Bookcase}}
+* {{tr|Shadewood Chandelier}}
+* {{tr|Shadewood Lantern}}
+* {{tr|Shadewood Candelabra}}
+* {{tr|Shadewood Candle}}
+* {{tr|Shadewood Fence}}
+* {{tr|Shadewood Sofa}}
+* {{tr|Shadewood Clock}}
+* {{tr|Sky Mill}}
+* {{tr|Skyware Workbench}}
+* {{tr|Skyware Platform}}
+* {{tr|Skyware Clock}}
+* {{tr|Skyware Bookcase}}
+* {{tr|Skyware Sofa}}
+* {{tr|Skyware Dresser}}
+* {{tr|Skyware Piano}}
+* {{tr|Skyware Lamp}}
+* {{tr|Skyware Bathtub}}
+* {{tr|Skyware Lantern}}
+* {{tr|Skyware Candle}}
+* {{tr|Skyware Chandelier}}
+* {{tr|Skyware Bed}}
+* {{tr|Skyware Candelabra}}
+* {{tr|Slime Bathtub}}
+* {{tr|Slime Bed}}
+* {{tr|Slime Bookcase}}
+* {{tr|Slime Candelabra}}
+* {{tr|Slime Candle}}
+* {{tr|Slime Chair}}
+* {{tr|Slime Chandelier}}
+* {{tr|Slime Chest}}
+* {{tr|Slime Clock}}
+* {{tr|Slime Door}}
+* {{tr|Slime Dresser}}
+* {{tr|Slime Lamp}}
+* {{tr|Slime Lantern}}
+* {{tr|Slime Piano}}
+* {{tr|Slime Platform}}
+* {{tr|Slime Sofa}}
+* {{tr|Slime Table}}
+* {{tr|Spooky Chest}}
+* {{tr|Spooky Candle}}
+* {{tr|Spooky Bookcase}}
+* {{tr|Spooky Clock}}
+* {{tr|Spooky Sofa}}
+* {{tr|Spooky Dresser}}
+* {{tr|Spooky Bathtub}}
+* {{tr|Spooky Chandelier}}
+* {{tr|Spooky Lantern}}
+* {{tr|Spooky Candelabra}}
+* {{tr|Spooky Piano}}
+* {{tr|Spooky Bed}}
+* {{tr|Spooky Lamp}}
+* {{tr|Steampunk Boiler}}
+* {{tr|Steampunk Candle}}
+* {{tr|Steampunk Chandelier}}
+* {{tr|Steampunk Platform}}
+* {{tr|Steampunk Piano}}
+* {{tr|Steampunk Workbench}}
+* {{tr|Steampunk Chest}}
+* {{tr|Steampunk Clock}}
+* {{tr|Steampunk Bathtub}}
+* {{tr|Steampunk Candelabra}}
+* {{tr|Steampunk Lantern}}
+* {{tr|Steampunk Lamp}}
+* {{tr|Steampunk Sofa}}
+* {{tr|Steampunk Dresser}}
+* {{tr|Steampunk Bookcase}}
+* {{tr|Sofa}}
+* {{tr|Iron Fence}}
+* {{tr|Womannequin}}
+* {{tr|Heavy Workbench}}
+* {{tr|Blacksmith Rack}}
+* {{tr|Carpentry Rack}}
+* {{tr|Helmet Rack}}
+* {{tr|Spear Rack}}
+* {{tr|Sword Rack}}
+* {{tr|'0' Statue}} - {{tr|'9' Statue}}以及 {{tr|'A' Statue}} - {{tr|'Z' Statue}}
+* {{tr|Wine Glass}} [{{tr|Furniture}}]
+* {{tr|Fishbowl}} [{{tr|Furniture}}]
+* {{tr|Terrarium}} [{{tr|Furniture}}]
+* {{tr|Squirrel Cage}} [{{tr|Furniture}}]
+* {{tr|Bird Cage}} [{{tr|Furniture}}]
+* {{tr|Black Scorpion Cage}} [{{tr|Furniture}}]
+* {{tr|Blue Jay Cage}} [{{tr|Furniture}}]
+* {{tr|Bunny Cage}} [{{tr|Furniture}}]
+* {{tr|Cardinal Cage}} [{{tr|Furniture}}]
+* {{tr|Frog Cage}} [{{tr|Furniture}}]
+* {{tr|Glowing Snail Cage}} [{{tr|Furniture}}]
+* {{tr|Grasshopper Cage}} [{{tr|Furniture}}]
+* {{tr|Mouse Cage}} [{{tr|Furniture}}]
+* {{tr|Penguin Cage}} [{{tr|Furniture}}]
+* {{tr|Scorpion Cage}} [{{tr|Furniture}}]
+* {{tr|Snail Cage}} [{{tr|Furniture}}]
+* {{tr|Worm Cage}} [{{tr|Furniture}}]
+* {{tr|Blue Jellyfish Jar}} [{{tr|Furniture}}]
+* {{tr|Green Jellyfish Jar}} [{{tr|Furniture}}]
+* {{tr|Pink Jellyfish Jar}} [{{tr|Furniture}}]
+
+新{{tr|Items}}（{{tr|Blocks}}）
+
+* {{tr|Lavafall Block}}
+* {{tr|Lavafall Wall}}
+* {{tr|Waterfall Block}}
+* {{tr|Waterfall Wall}}
+* {{tr|Copper Plating}}
+* {{tr|Copper Plating Wall}}
+* {{tr|Tin Plating}}
+* {{tr|Tin Plating Wall}}
+* {{tr|Stone Slab}}
+* {{tr|Stone Slab Wall}}
+* {{tr|Sandstone Slab}}
+* {{tr|Amethyst Gemspark Block}}
+* {{tr|Amethyst Gemspark Wall}}
+* {{tr|Offline Amethyst Gemspark Wall}}
+* {{tr|Topaz Gemspark Block}}
+* {{tr|Topaz Gemspark Wall}}
+* {{tr|Offline Topaz Gemspark Wall}}
+* {{tr|Sapphire Gemspark Block}}
+* {{tr|Sapphire Gemspark Wall}}
+* {{tr|Offline Sapphire Gemspark Wall}}
+* {{tr|Emerald Gemspark Block}}
+* {{tr|Emerald Gemspark Wall}}
+* {{tr|Offline Emerald Gemspark Wall}}
+* {{tr|Ruby Gemspark Block}}
+* {{tr|Ruby Gemspark Wall}}
+* {{tr|Offline Ruby Gemspark Wall}}
+* {{tr|Diamond Gemspark Block}}
+* {{tr|Diamond Gemspark Wall}}
+* {{tr|Offline Diamond Gemspark Wall}}
+* {{tr|Amber Gemspark Block}}
+* {{tr|Amber Gemspark Wall}}
+* {{tr|Offline Amber Gemspark Wall}}
+
+新{{tr|Items}}（炼金术和{{tr|Potions}}）
+
+* {{tr|Super Mana Potion}}
+* {{tr|Ammo Reservation Potion}}
+* {{tr|Builder Potion}}
+* {{tr|Calming Potion}}
+* {{tr|Crate Potion}}
+* {{tr|Dangersense Potion}}
+* {{tr|Endurance Potion}}
+* {{tr|Flipper Potion}}
+* {{tr|Heartreach Potion}}
+* {{tr|Inferno Potion}}
+* {{tr|Lifeforce Potion}}
+* {{tr|Love Potion}}
+* {{tr|Mining Potion}}
+* {{tr|Rage Potion}}
+* {{tr|Stink Potion}}
+* {{tr|Summoning Potion}}
+* {{tr|Warmth Potion}}
+* {{tr|Wrath Potion}}
+* {{tr|Teleportation Potion}}
+* {{tr|Titan Potion}}
+* {{tr|Shiverthorn Seeds}}
+* {{tr|Shiverthorn}}
+
+添加{{tr|Items}}：
+
+* {{tr|Fiberglass Fishing Pole}} [{{tr|fishing pole}}，可在{{tr|Jungle Shrines}}中找到]
+* {{tr|Wood Fishing Pole}}（{{tr|wood}} x8）
+* {{tr|Reinforced Fishing Pole}}（{{tr|Iron bar}} x8 或{{tr|Lead bar}} x8）
+* {{tr|Fisher of Souls}}（{{tr|Demonite Bar}} x8）
+* {{tr|Fleshcatcher}}（{{tr|Crimtane Bar}} x8）
+* {{tr|Beetle Helmet}} [{{tr|armor}}]
+* {{tr|Beetle Scale Mail}} [{{tr|armor}}]
+* {{tr|Beetle Shell}} [{{tr|armor}}]
+* {{tr|Beetle Leggings}} [{{tr|armor}}]
+* {{tr|Beetle Wings}} [{{tr|armor}}]
+* {{tr|Venom Staff}}
+* {{tr|Shroomite Digging Claw}}
+* {{tr|Celestial Emblem}}
+* {{tr|Celestial Cuffs}}
+* {{tr|Crimson Seeds}}
+* {{tr|Peddlers Hat}}
+* {{tr|Mine Carts}}
+* {{tr|Minecart Track}}
+* {{tr|Booster Track}}
+* {{tr|Pressure Track}}
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Engine Software/1.07}}
+</noinclude>

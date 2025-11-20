@@ -1,0 +1,22 @@
+<includeonly>
+|-
+| align=left | '''[[{{{link|{{tr|{{{1|}}} furniture|link=y}}}}}|{{{text|{{tr|{{{1|}}}}}}}}]]'''{{{refType|}}}
+| {{{sourcealt|{{item|{{#if:{{{source|}}}|{{#ifeq:{{#sub:{{{source|}}}|0|1}}|+|{{{1|}}} {{#sub:{{{source|}}}|1}}|{{{source|}}}}}|{{{1|}}}}}}}}}}<!--
+// one table cell for each of these:
+-->{{#af_foreach:{{#af_list:Bathtub|Bed|Bookcase|Candelabra|Candle|Chandelier|Chair|Chest|Clock|Door|Dresser|Lamp|Lantern|Piano|Platform|Sink|Sofa|Table|Toilet|Work Bench}}||item|<nowiki/>
+{{!}} <!--
+-->{{#ifeq:{{{ {{{item}}} |}}}|no|<!-- e.g. "|Bed=no"
+	-->{{no}}<!--
+-->|<!--
+	-->{{item|{{{ {{{item}}}Name | {{{1|}}} {{{item}}} }}}}}<!-- default is e.g. "Cactus Bed", can be overridden with "|BedName=..."
+	-->{{#if:{{{ {{{item}}}2 |}}}|<!-- e.g. "|Bed2=..."
+		-->&#32;{{#af_stringmap:{{{ {{{item}}}2 }}}|/|name|{{item|{{{name}}}}}|&#32;}}<!-- convert slash-separated list of item names to {{item}}s
+	-->}}<!--
+	-->{{{ ref{{{item}}} |}}}<!-- e.g. "|refBed=..."
+-->}}}}<!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Furniture sets/row}}
+</noinclude>

@@ -1,0 +1,48 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3196
+| damage = 100
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+| listcat = Explosives
+| tags = Fished
+}}
+[[File:Bomb Fish (demo).gif|frame|{{tr|A Bomb Fish}}爆炸，摧毁{{tr|blocks}}并伤害[[{{tr|Target Dummy}}]]。注意{{tr|Bomb Fish}}会按弧线飞行，而非直接飞向{{tr|cursor}}。]]
+
+'''{{tr|Bomb Fish}}'''是通过[[{{tr|Fishing}}]]获得的[[{{tr|Explosives (class)}}]]。通过[[{{tr|Fishing}}]]一次可钓上 1 至 21 个<!--Maximum Fishing Power in 1.4.4.9: 375-->{{tr|Bomb Fish}}（取决于玩家的最终[[{{tr|Fishing Power}}]]）。它们的表现和[[{{tr|Sticky Bomb}}]]一样，会粘在它们抛到的任何{{tr|blocks}}上。
+
+== 备注 ==
+* 不像常规[[{{tr|Bomb}}]]，{{tr|Bomb Fish}}在[[{{tr|water}}]]中不会减速。
+* 作为爆炸物，获得{{tr|Bomb Fish}}可以满足[[{{tr|Demolitionist}}]]的生成要求之一。
+* 游戏使用玩家的{{tr|Fishing Power}}来决定单次收杆可钓上的{{tr|Bomb Fish}}的最小和最大数量。然后，有四次独立的几率使最大数量增加 1（同样取决于{{tr|Fishing Power}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_061_FishingBobber_GiveItemToPlayer}}
+** 最小数量和最大数量取决于下方公式。小数总是会在每次除法计算后向下取整。
+*** 最小数量：<code>Min = ( {{tr|Fishing Power}} ÷ 20 + 3 ) ÷2</code>
+*** 最大数量：<code>Max = ( {{tr|Fishing Power}} ÷ 10 + 6 ) ÷2</code>
+** 然后，从以下区间随机出四个整数：[0, 49]、[0, 99]、[0, 149]、[0, 199]。对于每个小于玩家的{{tr|Fishing Power}}的整数，最大数量增加 1（例如，如果四个整数分别是 49、56、90、36，而{{tr|Fishing Power}}是 90，最大数量会增加 3）。
+** 最后，从此区间内随机出一个整数：<code>[Min, Max]</code>。这一整数将是钓上的{{tr|Bomb Fish}}的数量。
+
+== 小贴士 ==
+* 类似于{{tr|Sticky Bombs}}，{{tr|Bomb Fish}}在需要安全且精确的爆破时（例如摧毁[[{{tr|Shadow Orb}}]]或[[{{tr|Crimson Heart}}]]）时非常有用。
+
+== 花絮 ==
+* 尽管它的其余特性与{{tr|the Sticky Bomb}}完全相同，但{{tr|the Bomb Fish}}因为没有引线所以在抛出后不会发出微弱的光。
+* {{tr|The Bomb Fish}}是三种钓鱼得到的[[{{tr|consumables}}]]之一，另外两种是[[{{tr|Honeyfin}}]]和[[{{tr|Frost Daggerfish}}]]。
+* {{tr|The Bomb Fish}}可能参考了 2006 年的动作冒险游戏{{维基百科|b=y|Legend of Zelda: Twilight Princess|t=塞尔达传奇：暮光之城}}中的[https://zeldawiki.wiki/wiki/Water_Bomb {{译名|Water Bombs|水炸弹}}]和[https://zeldawiki.wiki/wiki/Bombfish {{译名|Bombfish|炸弹鱼}}]。
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Explosives}}
+{{Master Template Consumables}}
+{{Master Template Weapons
+| show-misc = yes
+}}
+
+{{language info|en=Bomb Fish}}

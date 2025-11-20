@@ -1,0 +1,70 @@
+{{item infobox
+| auto = 498
+| type = Furniture / Storage
+| width = 2 | height = 3
+}}
+
+'''{{tr|Mannequin}}'''是一种[[{{tr|decorative}}]][[{{tr|furniture}}]]{{tr|item}}，可以用于展示[[{{tr|armor}}]]和[[{{tr|vanity items}}]]、以及[[{{tr|accessories}}]]和[[{{tr|dyes}}]]。
+<section begin="description" /><!-- transcluded on [[Womannequin]] -->
+在{{eversions|1.4.0.1}}上，可以通过按 {{key|open}} 将物品放在{{PAGENAME}}上，这个操作会在玩家的主{{tr|inventory}}下方打开一小组类似[[{{tr|inventory}}]]的栏位。其中有三个栏位用于{{tr|helmet}}、{{tr|shirt}}、和{{tr|pants}}，以及五个栏位用于{{tr|accessories}}。此外，每个栏位下还有个对应的{{tr|dye slot}}。将物品放在这些栏位中会立即将其显示在{{PAGENAME}}上。
+
+在{{#or:{{#dplvar:_transclude_eversions}}<!-- Womannequin has different {{eversions}} -->|{{eversions|1.4.0.1|invert=y}}}}上，可以通过按 {{key|use}} 键将物品放在{{PAGENAME}}上，这个操作会将玩家当前持有的物品放到{{PAGENAME}}上。如果在{{PAGENAME}}的同一栏位上已经有了物品，它就会被替代并掉落下来。还可以用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]移除物品。
+
+仅当{{PAGENAME}}上没有放置物品时才能将其移除。但在在{{#or:{{#dplvar:_transclude_eversions_short}}|{{eversions|1.4.0.1|invert=y|short=y}}}}上，则总是可以用{{$|explosives||class}}将其摧毁。
+<section end="description" />
+{{tr|The Mannequin}}总是以男性外观形式展示{{tr|armor}}和服装。{{eil|Womannequin}}可用于以女性版本展示它们。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Mannequin|expectedrows=1}}
+
+== 备注 ==
+* {{eicons|1.4.0.1}} 始终只会有五个{{tr|accessory slots}}，即使玩家已经使用了[[{{tr|Demon Heart}}]]或者身处[[{{tr|Master}}]]{{tr|world}}中。
+* {{eicons|1.4.0.1|invert=y}} 如果将[[{{tr|Fish Bowl}}]]放到{{tr|Mannequin}}，它看起来似乎有眼睛。
+* 无法将[[{{tr|Familiar clothes}}]]放在{{tr|Mannequin}}上。
+* 在头部的左上角使用[[{{tr|Paints}}|{{tr|paint}}]]会给{{tr|Mannequin}}的整个身体都着色。依然可以在{{tr|mannequin}}的其他身体部位上使用{{tr|Paint}}，但不会有进一步的视觉效果（身体只会采用指定给头部左上角的颜色）。这么做了之后，依然可以用同样的颜色来给身体的其他部位“刷漆”，这依然会消耗{{tr|paint}}。尽管{{tr|paint}}只会影响身体，但使用[[{{tr|Illuminant Paint}}]]也会照亮放在{{tr|Mannequin}}上的物品。{{tr|paint}}的照亮效果和{{tr|dyes}}重叠。
+
+== 花絮 ==
+* {{eicons|1.4.4.9}} 要分别用{{tr|Mannequins}}显示所有[[{{tr|armor}}]]{{tr|sets}}（包括变体）一共需要 153 个{{tr|Mannequins}}（{{#expr:153*20}} {{tr|Wood}}）。
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|对{{tr|Mannequin}}进行了优化以降低性能损失。}}
+{{history|Desktop 1.4.0.1|
+** 现在有它自己的{{tr|inventory}}了，类似于{{tr|Chest}}那样。
+** 现在可以将{{tr|Accessories}}和{{tr|dyes}}用到{{tr|Mannequins}}上了。
+** 内部[[{{tr|Tile IDs}}|{{tr|tile ID}}]] 由 128 改为 470。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4.1|{{tr|Inventory}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.2.4|修正了可以用{{tr|Mannequins}}复制[[{{tr|Empty Bucket}}]]的漏洞。}}
+{{history|Desktop 1.2.3.1|
+** 修正了将{{tr|Empty Bucket}}放到{{tr|Mannequin}}上会消耗掉它的问题。
+** 修正了将东西放置到{{tr|Mannequin}}会开始使用玩家物品的变通延迟问题。}}
+{{history|Desktop 1.2.3|修正了{{tr|Mannequins}}上不会绘制{{tr|robe}}底部的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1|调整了{{tr|Mannequin}}的分层以正确绘制{{tr|armors}}。}}
+{{history|Desktop 1.2|
+** {{tr|Stack limit}}由 250 提升至 999。
+** 现在要用{{tr|pickaxe}}来从{{tr|Mannequin}}上移除{{tr|armor}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|外观更新为与{{tr|Desktop}} 1.3.1 一致。}}
+{{history|Console 1.07|{{tr|Inventory sprite updated}}为与{{tr|Desktop 1.2.4.1}} 一致。}}
+{{history|Console 1.02|
+** 调整了{{tr|Mannequin}}的分层以正确绘制{{tr|armors}}。
+** {{tr|Stack limit}}由 250 提升至 999。
+** 现在要用{{tr|pickaxe}}来从{{tr|Mannequin}}上移除{{tr|armor}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Sprite updated}}为与  1.3.1 一致。}}
+{{history|Switch 1.0.711.6|Introduced=y|随到{{tr|Desktop}} 1.2.4.1 为止的更改引入。}}
+{{history|Mobile 1.2.11212|{{tr|Inventory sprite updated}}为与{{tr|Desktop 1.2.4.1}} 一致。}}
+{{history|Mobile 1.2.6508|
+** 调整了{{tr|Mannequin}}的分层以正确绘制{{tr|armors}}。
+** {{tr|Stack limit}}由 250 提升至 999。
+** 现在要用{{tr|pickaxe}}来从{{tr|Mannequin}}上移除{{tr|armor}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+{{Wooden furniture}}
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Mannequin}}

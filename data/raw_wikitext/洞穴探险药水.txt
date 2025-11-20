@@ -1,0 +1,97 @@
+{{item infobox
+| type = Potion
+| auto = 296
+| tags = Bag loot / drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Spelunker Potion}}'''是一种[[{{tr|buff potion}}]]，使用时会给予玩家'''{{tr|Spelunker}}'''[[{{tr|buff}}]]，这会高亮显示玩家周围的有价值的物品，高亮显示的颜色在不同版本中有所差异。{{potionlength|{{duration|300}}}}
+
+{{eicons|Bonus drops}} 现在有小几率作为[[{{tr|Slime|link=y}}#{{tr|Bonus drops}}|{{tr|bonus drop}}]]掉落自[[{{tr|Slimes}}]]。
+
+{{tr|Spelunker}}{{tr|buff}}会显示以下物品：
+* [[{{tr|Ores}}]]
+* [[{{tr|Gems}}]]
+* [[{{tr|Pot}}]]
+* [[{{tr|Herbs}}]]
+* [[{{tr|Dye plants}}]]
+* [[{{tr|Chests}}]]
+* [[{{tr|Life Crystal}}]]
+* [[{{tr|Life Fruit}}]]
+* [[{{tr|Statues}}]] ({{eicons|1.4.4}})
+* [[{{tr|Paintings}}]] ({{eicons|1.4.4}})
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Spelunker Potion|expectedrows=2}}
+
+== 宝藏颜色 ==
+在除{{old-gen console version}}的版本中，{{tr|ore}}和其它{{tr|treasures}}会以黄色高亮显示。这会在一定程度上改变被高亮显示的{{tr|treasure}}的颜色，如让[[{{tr|Cobalt Ore}}|{{tr|Cobalt}}]]变成蓝绿色，让[[{{tr|Orichalcum Ore}}|{{tr|Orichalcum}}]]变成红色。部分{{tr|ores}}不会受此{{tr|potion}}影响，这包括[[{{tr|Crimtane Ore}}]]（与其对应物[[{{tr|Demonite}}]]不同）、[[{{tr|Meteorite}}]]、[[{{tr|Obsidian}}]]和[[{{tr|Hellstone}}]]。不过{{tr|Meteorite}}和{{tr|Crimtane}}自己本身就会发光。
+
+<gallery>
+File:Spelunker1.4.2orelighting.png|[[{{tr|Ores}}]]，[[{{tr|Luminite}}]]除外
+File:Spelunker_Potion_1.2.3_Gem_Lighting.png|[[{{tr|Gems}}]]
+File:Spelunker_Potion_1.2.3_Chest_Lighting.png|自然生成的[[{{tr|Chest}}#自然生成的{{tr|Chests}}|{{tr|chests}}]]
+File:Spelunker_Potion_1.2.3_Herb_Lighting.png|[[{{tr|Herbs}}]]
+File:Spelunker_Potion_1.2.3_Life_Lighting.png|[[{{tr|Life Crystal}}]]和[[{{tr|Life Fruit}}]]
+File:Spelunker_Potion_1.2.3_Pot_Lighting.png|[[{{tr|Pot}}]]
+</gallery>
+
+=== {{old-gen console version|nl=y}} ===
+在{{old-gen console version}}中，所有种类的{{tr|ore}}都会以不同的特定颜色发光并闪烁：
+* {{item|Copper Ore}}有红色光效。
+* {{item|Iron Ore}}是闪烁的红色与蓝色。
+* {{item|Silver Ore}}会蒙上一层蓝色。
+* {{item|Gold Ore}}和{{tr|copper}}类似，但多了一点黄色高光。
+* {{item|Demonite Ore}}很难与{{tr|silver}}区分。但是它总是会发光，不使用{{tr|Spelunker Potion}}也可以找到它。
+* {{item|Cobalt Ore}}是深蓝色，较为明显。
+* {{item|Mythril Ore}}和{{tr|silver}}类似，但略微发绿且有不同材质。
+* {{item|Adamantite Ore}}和{{tr|copper}}类似，但红色更深。
+
+<gallery>
+File:Terraria-spelunker-example-earlygame.png|游戏早期的{{tr|ores}}。
+File:Spelunker_reference.png|{{tr|Ores}}和{{tr|gems}}。<ref>不包括{{tr|Tin}}、{{tr|Lead}}、{{tr|Tungsten}}、{{tr|Platinum}}、{{tr|Meteorite}}、{{tr|Crimtane}}、{{tr|Obsidian}}、{{tr|Hellstone}}、{{tr|Palladium}}、{{tr|Orichalcum}}、{{tr|Titanium}}、{{tr|Chlorophyte}}和{{tr|Diamond}}。</ref>
+</gallery>
+
+== 备注 ==
+* {{eicons|1.3.1}} 闪烁效果在“复古”[[{{tr|Lighting mode}}]]下最明显。
+* {{eicons|1.3.0.1|invert=y}} {{tr|map}}上会极其明显地标明{{tr|ores}}，使得{{tr|Spelunker Potions}}的用处不大。
+* 使用{{tr|Spelunker Potion}}时，[[{{tr|Ruby}}]]很容易被错看成[[{{tr|Amethyst}}]]。
+
+== 小贴士 ==
+* [[{{tr|Metal Detector}}]]能为{{tr|player}}提供附近{{tr|treasure}}的信息。这可以帮助{{tr|player}}决定何时使用{{tr|Spelunker Potion}}来寻找附近有价值的{{tr|treasure}}。
+* [[{{tr|Spelunker Glowstick}}]]的效果与{{tr|Spelunker Potions}}相似，但使用后者时可以同时进行采掘和其它活动。
+* {{tr|Spelunker Potions}}在使用高分辨率设置游玩时效果更佳。
+* 它们在[[{{tr|Hardmode}}]]下寻找较稀有的{{tr|ores}}时很有用。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在会高亮标记{{tr|Statues and Paintings}}。}}
+{{history|Desktop 1.3.0.4|修复了[[{{tr|dye plants}}]]不会在{{tr|Spelunker}}效果下发光的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|
+** {{tr|Spelunker}}不再会发出光照。这会避免{{tr|ore}}被直接显示在{{tr|map}}上。
+** {{tr|Spelunker}}现在使{{tr|ore}}在屏幕上显示为金黄色。}}
+{{history|Desktop 1.2|现在会显示新的{{tr|treasure}}，添加了使用{{tr|Platinum Ore}}的{{tr|recipe}}版本。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Sprite updated.}}
+** 所有{{tr|Ores}}现在会和{{tr|Desktop}} 1.3.0.1 中一样的方式发光。}}
+{{history|Console 1.06|现在具有和{{tr|Desktop}} 1.2.3 相同的机制，但所有{{tr|Ores}}都有独特光效。}}
+{{history|Console 1.02|现在会显示新的{{tr|treasure}}，添加了使用{{tr|Platinum Ore}}的{{tr|recipe}}版本。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|现在具有和{{tr|Desktop}} 1.2.3 相同的机制。}}
+{{history|Mobile 1.2.6508|现在会显示新的{{tr|treasure}}，添加了使用{{tr|Platinum Ore}}的{{tr|recipe}}版本。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|伴随着{{tr|Desktop}} 1.2.3 的相应机制与{{tr|sprites}}引入。}}
+
+== 脚注 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-buff = yes
+}}
+
+{{language info|en=Spelunker Potion}}

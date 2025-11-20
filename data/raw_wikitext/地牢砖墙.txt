@@ -1,0 +1,203 @@
+{{item infobox
+| name = Dungeon Walls
+| imagealt = <p>[[File:Blue Brick Wall.png|link=]] [[File:Green Slab Wall.png|link=]] [[File:Pink Tiled Wall.png|link=]]</p><li><p>[[File:Blue Brick Wall (placed).png|link=]] [[File:Green Slab Wall (placed).png|link=]] [[File:Pink Tiled Wall (placed).png|link=]]</p></li>
+| imagebreak = yes
+| auto = 135
+| showids = no
+| cargo = no
+}}
+
+'''{{tr|Dungeon Brick Walls}}'''是一类背景[[{{tr|Wall}}]]，可在[[{{tr|Dungeon}}]]中天然生成；这些天然生成的{{tr|wall}}是[[{{tr|Unsafe wall}}|不安全]]的。它们在被摧毁时会掉落为物品，在{{eversions|1.4.0.1|short=y}}中可以通过制作获得。它们在被玩家放置时被视为[[{{tr|safe wall}}]]。
+
+总共有九种不同的{{tr|variants}}（三种颜色各三种{{tr|variants}}），但每个{{tr|Dungeon}}只能包含匹配其颜色的三种{{tr|wall types}}。一个{{tr|Dungeon}}通常会在不同区域内包含全部三种类型的{{tr|wall}}；在每个区域内能找到的[[{{tr|Faction Flag}}]]和{{tr|wall}}的{{tr|variant}}相对应。
+
+'''{{eil|nl=y|Cursed Dungeon Brick Walls|eicons={{eicons|Cursed Blue Brick Wall}}}}'''是能够放置不安全的{{tr|Dungeon Brick Walls}}的物品。它们在视觉上和其{{tr|counterparts}}相同，可以通过{{eil|Shimmer}}获得。
+
+== 类型 ==
+在{{tr|Dungeon}}的一个区域中存在的{{tr|Dungeon Brick Wall}}会影响在[[{{tr|Hardmode Dungeon}}|{{tr|Hardmode}}的{{tr|Plantera}}后{{tr|Dungeon}}]]中新的{{tr|enemies}}的生成。它决定了哪种{{tr|enemies}}最可能在这一区域内生成：对应{{tr|wall}}类型的{{tr|Enemies}}（在下方列出）生成的几率约为 90% ，其它类型的{{tr|enemies}}生成的几率仅约为 5%。仅有[[{{tr|unsafe wall}}]]具有这一效果，因为{{tr|safe walls}}根本不允许{{tr|enemies}}生成。
+{{options/set|item|small=y}}{{options/set|item infobox|view=table|cols=item2cells-anchor-nolink/imageplaced/col:idtile|imagemode=placed}}
+=== 砖墙 ===
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Wall}} !! 放置 !! [[{{tr|Wall IDs}}]]
+{{item infobox|auto=135|tags=plunder|col:idtile=7 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=135|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=138|tags=plunder|col:idtile=8 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=138|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=140|tags=plunder|col:idtile=9 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=140|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+<!-- for cargo storage
+-->{{item infobox|view=void|auto=5365}}<!--
+-->{{item infobox|view=void|auto=5368}}<!--
+-->{{item infobox|view=void|auto=5371}}
+|-
+! colspan=4 | {{tr|Faction flags}}
+|-
+| colspan=4 | {{item|Marching Bones Banner|image=Marching Bones Banner (placed).png}}
+|-
+| colspan=4 | {{item|Necromantic Sign|image=Necromantic Sign (placed).png}}
+|}
+{{flexend|item}}
+<section begin="enemies-brickwalls"/><!-- for transclusion on [[Dungeon]] -->
+{{flexstart|item}}
+{| class="terraria lined"
+! 对应{{tr|enemies}} !! 稀有掉落
+|-
+| {{item|Cursed Skull}}
+| {{item|Nazar}}
+|-
+| {{item|Blue Armored Bones|ext=gif|class=break}}
+| {{item|Bone Feather}}<br/>{{item|Keybrand}}<br/>{{item|Wisp in a Bottle}}<br/>{{item|Magnet Sphere}}<br/>{{item|Morning Star}}<br/>{{item|Armor Polish}}
+|-
+| {{item|Necromancer|image=Necromancer 1.png}}
+| {{item|Shadowbeam Staff}}
+|-
+| {{item|Skeleton Commando}}
+| {{item|Rocket Launcher}}
+|-
+| {{item|Paladin}}
+| {{item|Paladin's Hammer}}<br/>{{item|Paladin's Shield}}
+|-
+| {{item|Bone Lee}}
+| {{item|Tabi}}<br/>{{item|Black Belt}}
+|}
+{{flexend|item}}
+<section end="enemies-brickwalls"/>
+{{flexend}}
+
+=== 板墙 ===
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Wall}} !! 放置 !! [[{{tr|Wall IDs}}]]
+{{item infobox|auto=1378|tags=plunder|col:idtile=94 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1378|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=1382|tags=plunder|col:idtile=98 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1382|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=1380|tags=plunder|col:idtile=96 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1380|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+<!-- for cargo storage
+-->{{item infobox|view=void|auto=5366}}<!--
+-->{{item infobox|view=void|auto=5369}}<!--
+-->{{item infobox|view=void|auto=5372}}
+|-
+! colspan=4 | {{tr|Faction flags}}
+|-
+| colspan=4 | {{item|Rusted Company Standard|image=Rusted Company Standard (placed).png}}
+|-
+| colspan=4 | {{item|Ragged Brotherhood Sigil|image=Ragged Brotherhood Sigil (placed).png}}
+|}
+{{flexend|item}}
+<section begin="enemies-slabwalls"/><!-- for transclusion on [[Dungeon]] -->
+{{flexstart|item}}
+{| class="terraria lined"
+! 对应{{tr|enemies}} !! 稀有掉落
+|-
+| {{item|Spike Ball}}
+| {{na}}
+|-
+| {{item|Rusty Armored Bones|ext=gif|class=break}}
+| {{item|Bone Feather}}<br/>{{item|Keybrand}}<br/>{{item|Wisp in a Bottle}}<br/>{{item|Magnet Sphere}}<br/>{{item|Morning Star}}<br/>{{item|Adhesive Bandage}}
+|-
+| {{item|Ragged Caster|image=Ragged Caster 1.png|class=break}}
+| {{item|Spectre Staff}}
+|-
+| {{item|Skeleton Sniper}}
+| {{item|Rifle Scope}}<br/>{{item|Sniper Rifle}}
+|-
+| {{item|Giant Cursed Skull}}
+| {{item|Shadow Jousting Lance}}<br/>{{item|Nazar}}
+|-
+| {{item|Bone Lee}}
+| {{item|Tabi}}<br/>{{item|Black Belt}}
+|}
+{{flexend|item}}
+<section end="enemies-slabwalls"/>
+{{flexend}}
+
+=== 瓷砖墙 ===
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Wall}} !! 放置 !! [[{{tr|Wall IDs}}]]
+{{item infobox|auto=1379|tags=plunder|col:idtile=95 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1378|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=1383|tags=plunder|col:idtile=99 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1382|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+{{item infobox|auto=1381|tags=plunder|col:idtile=97 ([[{{tr|Unsafe wall}}|不安全]]) /<br/>{{iteminfo|id=1380|field=wall id}} ([[{{tr|Safe wall}}|安全]])}}
+<!-- for cargo storage
+-->{{item infobox|view=void|auto=5367}}<!--
+-->{{item infobox|view=void|auto=5370}}<!--
+-->{{item infobox|view=void|auto=5373}}
+|-
+! colspan=4 | {{tr|Faction flags}}
+|-
+| colspan=4 | {{item|Molten Legion Flag|image=Molten Legion Flag (placed).png}}
+|-
+| colspan=4 | {{item|Diabolic Sigil|image=Diabolic Sigil (placed).png}}
+|}
+{{flexend|item}}
+<section begin="enemies-tiledwalls"/><!-- for transclusion on [[Dungeon]] -->
+{{flexstart|item}}
+{| class="terraria lined"
+! 对应{{tr|enemies}} !! 稀有掉落
+|-
+| {{item|Blazing Wheel}}
+| {{na}}
+|-
+| {{item|Hell Armored Bones|ext=gif|class=break}}
+| {{item|Bone Feather}}<br/>{{item|Keybrand}}<br/>{{item|Wisp in a Bottle}}<br/>{{item|Magnet Sphere}}<br/>{{item|Morning Star}}
+|-
+| {{item|Diabolist|image=Red Diabolist.png}}
+| {{item|Inferno Fork}}
+|-
+| {{item|Tactical Skeleton}}
+| {{item|SWAT Helmet}}<br/>{{item|Tactical Shotgun}}
+|-
+| {{item|Giant Cursed Skull}}
+| {{item|Shadow Jousting Lance}}<br/>{{item|Nazar}}
+|-
+| {{item|Bone Lee}}
+| {{item|Tabi}}<br/>{{item|Black Belt}}
+|}
+{{flexend|item}}
+<section end="enemies-tiledwalls"/>
+{{flexend}}{{options/reset|item}}{{options/reset|item infobox}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Blue Brick Wall/Green Brick Wall/Pink Brick Wall/Blue Slab Wall/Green Slab Wall/Pink Slab Wall/Blue Tiled Wall/Green Tiled Wall/Pink Tiled Wall|expectedrows=9}}
+
+=== 用于 ===
+{{recipes|showresultid=y<!-- there's no other space on the page to display the Cursed Brick Walls' item IDs -->|ingredient=Blue Brick Wall/Green Brick Wall/Pink Brick Wall/Blue Slab Wall/Green Slab Wall/Pink Slab Wall/Blue Tiled Wall/Green Tiled Wall/Pink Tiled Wall|expectedrows=18}}
+
+== 备注 ==
+* 仅在击败[[{{tr|Skeletron}}]]后才能摧毁{{tr|Dungeon Brick Walls}}。
+
+== 小贴士 ==
+* 在{{eicons|Cursed Blue Brick Wall}}中，{{tr|The Cursed Dungeon Brick Walls}}让玩家能创造人工{{tr|Dungeon}}，因为它们能放置[[{{tr|Unsafe wall}}|不安全]]的{{tr|Dungeon Brick Walls}}。
+** 为了让游戏意识到{{tr|玩家}}身处{{tr|Dungeon}}中，玩家必须站在[[{{tr|underground}}]]的{{tr|Cursed Dungeon Walls}}前，附近需要有至少 250 个[[{{tr|Dungeon Bricks}}]]。
+** 身处{{tr|Dungeon}}中时，{{tr|enemies}}只能在上方有任意类型的{{tr|wall}}（可以不是{{tr|Dungeon}}独有的类型，例如{{tr|natural cave walls}}）的{{tr|Dungeon Bricks}}上生成。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Cursed Dungeon Brick Walls}}。
+** 为所有 9 种安全的{{tr|Dungeon Wall}}添加了{{tr|recipes}}
+** {{tr|Dungeon Brick Walls}}现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Cursed Dungeon Brick Walls}}]]。}}
+{{history|Desktop 1.3.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在一个{{tr|Hardmode Dungeon enemies}}有 1/7 的几率在任何种类的{{tr|Hardmode Dungeon background wall}}前生成。
+** {{tr|Blue Slab Walls}}现在可以作为[[{{tr|House}}]]的有效{{tr|wall}}。}}
+{{history|Desktop 1.2.4.1|现在{{tr|Walls}}只能在{{tr|world}}中已经击败{{tr|Skeletron}}后才能被移除。}}
+{{history|Desktop 1.2|{{tr|Sprite updated}}，堆叠上限由 250 提升至 999。}}
+{{history|Desktop 1.0.6|现在可以用于[[{{tr|House}}]]。}}
+{{history|Desktop 1.0.5|降低了{{tr|Dungeon Brick Wall}}{{tr|tiles}}的亮度。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Shimmering Exclusive Items}}
+
+{{Master Template Tiles
+| show-main = yes
+| show-brickwalls = yes
+}}
+
+[[Category:微光]]
+
+{{language info|en=Dungeon Brick Walls}}

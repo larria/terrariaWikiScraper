@@ -1,0 +1,49 @@
+{{item infobox
+| auto = 111
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} / {{gc|1}} {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = Loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Band of Starpower}}'''是个[[{{tr|Accessories}}|{{tr|accessory}}]]，可将玩家的最大[[{{tr|mana}}]]提升 20。它可以通过摧毁[[{{tr|Underground Corruption}}]]中的[[{{tr|Shadow Orb}}]]来得到，也可从{{eil|Corrupt Crate|Corrupt}}或{{eil|Defiled Crate|s}}中获得。 在{{eversions|1.4.1}}中，它还可以被制作；而在 {{3DS version}} 中，它可以被发现于[[{{tr|Living Tree}}]]中。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Band of Starpower|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Band of Starpower|expectedrows=2}}
+
+== 小贴士 ==
+* 推荐将其尽快升级为[[{{tr|Mana Regeneration Band}}]]，它会给予额外的{{tr|mana regeneration}}和额外的最大{{tr|mana}}。
+
+=== 猩红世界 ===
+<!-- This section is intended for transclusion into other pages.  Editing it will affect all pages where it is transcluded. -->
+{{#if:{{bool|{{#dplvar:_transclude_nofirstbullet}}}}||<nowiki/>
+*}}在{{tr|Crimson worlds}}获取{{#if:{{#dplvar:_transclude-istranscluding}}|[[{{tr|Band of Starpower}}]]<!-- on transcluded pages -->|{{tr|Band of Starpower}}<!-- on this page -->}}需要特殊的措施，因为它通常掉落于[[{{tr|Corruption}}]]所独有的[[{{tr|Shadow Orb}}]]。 
+:* {{tr|The Band of Starpower}}也可以通过[[{{tr|fishing}}]]从{{eil|Corrupt Crate}}或{{eil|Defiled Crate|s}}中获取。
+:* 在 {{eversions|1.4.1}} 中，{{tr|Band of Starpower}}可以在[[{{tr|Graveyard}}]]中由[[{{tr|Panic Necklace}}]]和[[{{tr|Mana Crystal}}]]制作而来。
+:* 在{{3DS version}}中，{{tr|the Band of Starpower}}会出现在[[{{tr|Living Wood Chest}}]]中，让{{tr|Crimson worlds}}中的玩家可以制作{{tr|the Magic Cuffs}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 现在可制作。
+** 现在用于制作[[{{tr|Panic Necklace}}]]。}}
+{{history|Desktop 1.4.0.1|调整了{{tr|sell value}}，由 {{gc|1}} 增加至 {{coin|1gc50sc}} 使其与所有{{tr|Shadow Orb}}/{{tr|Crimson Heart}}的战利品相同。}}
+{{history|Desktop 1.3.2|装备后的外观更新。}}
+{{history|Desktop 1.3.0.1|物品栏内{{tr|sprite updated.}}旧外观为 [[File:Band of Starpower (old).png|25px]]。}}
+{{history|Desktop 1.2|现在可以和[[{{tr|Band of Regeneration}}]]合成[[{{tr|Mana Regeneration Band}}]]。}}
+{{history|Desktop 1.0.6|
+** 功能从魔力再生改为增加 20 最大[[{{tr|mana}}]]。
+** {{tr|Inventory sprite updated.}}}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Band of Starpower}}

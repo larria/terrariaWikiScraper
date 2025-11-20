@@ -1,0 +1,79 @@
+{{item infobox
+| auto = 1947
+| damage = @@@@ {{eicons|1.4.4.8.1|small=y}} / 73 {{eicons|1.4.4.8.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.4|small=y}} /<br/>{{ut|25}} {{eicons|1.4.4|invert=y|small=y}}
+| sound1 = Item 27.wav
+| soundcaption1 = {{tr|North Pole spear}}碰撞
+| idprojectile = 342, 343, 344
+| listcat = spears
+| tags = Drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|North Pole}}'''是[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|Spears}}]]，它能发射一个{{tr|spear}}{{tr|projectile}}，不消耗任何[[{{tr|mana}}]]或[[{{tr|ammo}}]]。{{tr|spear projectile}}会先直线行进 0.5 秒，然后受到重力影响，能够穿透两个[[{{tr|enemies}}]]，在击中实心[[{{tr|block}}]]或第三个{{tr|enemy}}时消失。此外，冰{{tr|spear}}会沿路径留下伤害性的{{tr|snowflakes}}，它们会向下坠落，在击中{{tr|enemy}}或表面时消失。
+
+{{tr|North Pole}}掉落自[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间的[[{{tr|Ice Queen}}]]，几率为 5.19%–10.37%（{{expert|15.56%–31.11%}}），取决于当前波数。<ref>每一波的详细掉落率：{{frost moon item drop rates|14/15 * 1/3|fromwave=11|towave=20}}见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]获取更多信息。</ref>
+
+{{modifier|meleealt}}
+
+[[File:North Pole (demo).gif|frame|使用{{tr|North Pole}}攻击[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]。注意主{{tr|projectile}}会在接触{{tr|solid block}}或第三个{{tr|enemy}}时消失。]]
+
+== 备注 ==
+* {{eicons|1.4.4}}{{tr|North Pole Spear}}{{tr|projectile}}造成 100% 的{{tr|base damage}}({{iteminfo|North Pole|damage}} 点{{tr|damage}})和 85% 的基础[[{{tr|knockback}}]] ({{knockback|{{#expr:{{iteminfo|North Pole|knockback}}*0.85 round 3}}|full=y|class=}} 点{{tr|knockback}})。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_019_Spears}}{{tr|snowflake}}{{tr|projectiles}}造成 70% {{tr|base damage}}({{#expr:floor({{iteminfo|North Pole|damage}}*0.7)}} 点{{tr|damage}})和 46.75% {{tr|base knockback}}({{knockback|{{#expr:{{iteminfo|North Pole|knockback}}*0.85*0.55 round 3}}|full=y|class=}} 点{{tr|knockback}})。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为<code>aiStyle == 57</code>。}}
+* {{eicons|1.4.4|invert=y}}{{tr|North Pole Spear}}{{tr|projectile}}造成 80% {{tr|base damage}}({{#expr:floor(73*0.8)}} 点{{tr|damage}})和 85% {{tr|base knockback}}({{knockback|{{#expr:6.7*0.85 round 3}}|full=y|class=}} 点{{tr|knockback}})。{{source code ref|old=y|v=1.4.3.6|method=Terraria.Projectile.AI_019_Spears}}{{tr|snowflake}}{{tr|projectiles}}造成 64% {{tr|base damage}}({{#expr:floor(73*0.8*0.8)}})和 46.75% {{tr|base knockback}}({{knockback|{{#expr:6.7*0.85*0.55 round 3}}|full=y|class=}})。{{source code ref|old=y|v=1.4.3.6|method=Terraria.Projectile.AI|t=相关部分为<code>aiStyle == 57</code>。}}
+* 手持此{{tr|weapon}}会让{{tr|melee speed boost}}减半，从而降低{{tr|projectile}}从{{tr|melee speed boost}}中得到的[[{{tr|Velocity}}]]增幅。
+* 水平行进时，{{tr|projectiles}}以 {{mph|{{iteminfo|North Pole|velocity}}*2.4 pixels}} 的速度移动。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_019_Spears}}
+* {{eicons|1.4.4|invert=y}}在任意时刻，屏幕上只能有 187<!-- The spearProjectileDamage factor cutoff is at 0.1. With 187 projectiles it's 0.8*0.13 = 0.104, with 188 projectiles it's 0.8*0.12 = 0.096, which is below the threshold. -->个{{tr|snowflakes}}。达到此上限后，在{{tr|snowflakes}}开始消失之前，{{tr|spear projectiles}}无法再产生{{tr|snowflakes}}。{{source code ref|old=y|v=1.4.3.6|method=Terraria.Projectile.AI}}
+** 此外，超过 100 片{{tr|snowflake}}之后，每片{{tr|snowflake}}的伤害都会降低 1%。在将{{tr|spear projectiles}}发射到高空时，这会让{{tr|snowflake}}造成极其低的伤害。例如，第 100 片{{tr|snowflake}}仍然正常造成 64% {{tr|base damage}}（{{#expr:floor(73*0.8*0.8)}} {{tr|base damage}}），第 150 片{{tr|snowflake}}造成 32% {{tr|base damage}}（{{#expr:floor(73*0.8*0.8*0.5)}} {{tr|base damage}}），第 187 片{{tr|snowflake}}（可生成的最后一片）仅造成 8.32% {{tr|base damage}}（{{#expr:floor(73*0.8*0.8*0.13)}} {{tr|base damage}}）。
+** 较高数量的{{tr|projectiles}}可能会在某些[[{{tr|servers}}]]上触发反作弊系统。
+* {{eicons|1.4.4|invert=y}}{{tr|The snowflakes}}会受到[[{{tr|wind}}]]向的影响，因此需要调整瞄准以进行补偿。
+* {{eicons|1.3.0.1}}和大多数{{tr|spears}}一样，{{tr|the North Pole}}不能[[{{tr|autoswing}}]]。
+* {{tr|The projectiles}}受到[[{{tr|liquids}}]]影响；在水下使用时，它们在受到重力影响前行进距离只有正常的一半，并且飞行曲线非常急剧地向下弯曲。这不会减少每发{{tr|projectile}}所生成的{{tr|snowflakes}}数量，因而会导致{{tr|snowflakes}}更加密集。
+
+== 小贴士 ==
+* 在开放区域使用{{tr|North Pole}}与{{tr|enemies}}战斗会带来巨大的优势，尤其是在[[{{tr|events}}]]期间处理大量{{tr|enemies}}时。{{tr|North Pole}}的{{tr|snowflake projectiles}}能轻松地同时落向多个目标并击杀它们。
+* 将{{tr|North Pole}}瞄准正上方，将{{tr|spear}}向上发射可以让{{tr|snowflakes}}落下并对大型目标倾泻伤害。伤害速率甚至比[[{{tr|Solar Eruption}}]]或[[{{tr|Daybreak}}]]还要高，能轻松干掉较弱的 [[{{tr|bosses}}]] 或者[[{{tr|Celestial Pillars}}]]之类无法移动的目标。
+* {{tr|The North Pole}}可以轻松处理[[{{tr|Worm AI}}|{{tr|worm enemies}}]]，包括[[{{tr|the Destroyer}}]]。将它朝上向空中发射可以产生能同时伤害整个身体的{{tr|snowflakes}}。
+
+== 花絮 ==
+* {{维基百科|North Pole|t=北极}}是地球的最北端，传统上被视为[[{{tr|Santa Claus}}]]的家和工坊所在的位置。作为一把{{tr|spear}}，类似杆状（pole），因此用{{tr|North Pole}}（North Pole）这个名字是一个双关语。这是因为此{{tr|weapon}}是在[[{{tr|Christmas}}]]主题的[[{{tr|Frost Moon}}]]{{tr|event}}中掉落的。
+* {{tr|The North Pole}}是仅有的可从[[{{tr|Frost Moon}}]]{{tr|event}}获得的具有 {{rare|7|cate=no}} [[{{tr|rarity}}]]的{{tr|weapon}}，其他的则具有 {{rare|8|cate=no}} {{tr|rarity}}。
+* {{tr|North Pole}}有未使用且被禁用的代码，会给予它类似于[[{{tr|Gungnir}}]]的斩切效果。它在游戏中是蓝色的并且使用此效果的默认尺寸。
+
+[[File:North Pole slash.png|thumb|启用了未使用的斩切的{{tr|The North Pole}}。]]
+
+== 历史 ==
+{{history|Desktop 1.4.4.8.1|{{tr|Damage}}由 73 提升至 80。}}
+{{history|Desktop 1.4.4.8|互相间很接近的{{tr|snowflake}}现在会互相略微推开，使得{{tr|snowflake}}在下落时散开。}}
+{{history|Desktop 1.4.4|
+** {{tr|Use time}}由 25 提升至 30。
+** 现在生成的{{tr|projectiles}}数量减半，但{{tr|spear projectile}}现在造成全额{{tr|base damage}}，{{tr|snowflake}}造成 70% {{tr|base damage}}（之前为{{tr|spear projectile}} 80%，{{tr|snowflake}} 64%）。
+** 移除了{{tr|projectile}}上限。
+** 移除了风对{{tr|snowflake}}的影响。其生成位置现在半随机化，从而使得它们不会落在同一位置。
+** {{tr|Spear}}和{{tr|snowflake projectile}}的存在时间更短。}}
+{{history|Desktop 1.2.3|
+** {{tr|Damage}}由 75 降低至 73。
+** 添加了{{tr|projectile}}上限。
+** 修正了{{tr|the North Pole projectile}}可以获得足够的重力{{tr|velocity}}以穿过{{tr|blocks}}的 {{tr|bug}}。
+** 不再能穿墙发射了。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.06|
+** {{tr|Damage}}由 75 降低至 73。
+** 现在有{{tr|projectile}}上限。
+** 不再能穿墙发射了。}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.12773|修正了它会在进入世界时自动发射的 {{tr|bug}}。}}
+{{history|Mobile 1.2.11212|introduced=y|随着{{tr|Desktop}} 1.2.3 的相应机制引入。}}
+{{history|3DS 1.03|introduced=y|随着{{tr|Desktop}} 1.2.3 的相应机制引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spears}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=North Pole}}

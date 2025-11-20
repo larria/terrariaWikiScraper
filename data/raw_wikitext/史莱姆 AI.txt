@@ -1,0 +1,32 @@
+'''{{tr|Slime AI}}''' 是一种 [[{{tr|AI}}]]，由游戏中所有[[{{tr|slime}}]]（除了[[{{tr|King Slime}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Heavenly Slime}}]]、和[[{{tr|Gastropod}}]]），以及[[{{tr|Hoppin' Jack}}]]、{{eil|Old Shaking Chest}}、和[[{{tr|Grasshopper}}]]遵循。
+
+== 行为 ==
+遵循{{tr|Slime AI}} 的 {{tr|NPC}} 会表现出以下行为：
+* 以跳跃的方式追逐{{tr|player}}
+* 浮在{{tr|water}}上
+* 可跳上更高的[[{{tr|platforms}}]]，但无法跳下
+* 从[[{{tr|lava}}]]那里受到伤害，[[{{tr|Lava Slime}}]]除外
+* 会遭受[[{{tr|Knockback}}]]
+
+=== 例外 ===
+* {{tr|Slimes}}在{{tr|daytime}}的{{tr|surface}}上方不会追逐玩家，即使在击中玩家后也不会追击。不过，如果夜晚到来、或者它们受到了任何伤害，那么它们就会开始追逐玩家。
+* {{tr|Grasshoppers}}会以跳跃的方式远离而非追逐附近的玩家。
+* 玩家装备有{{eil|Royal Gel}}时，{{tr|Slimes}}会表现得就像位于地面以上、且时间是白天一样，并变得被动，即使被击中后也如此。
+
+== 小贴士 ==
+* {{tr|Slimes}}在跳跃之前会上下摇晃，且在将要跳起时会越来越快。因此，在它们落地后进行攻击会是个好主意，这样玩家在它们跳起前就有几秒钟的时间进行躲避。
+* 由于{{tr|slimes}}的跳跃高度是有限的，因此，推荐玩家前往不会被它们够到的地方。具体的高度与{{tr|slime}}的类型有关。
+
+== 具有{{tr|Slime AI}} 的 {{tr|NPC}} 列表 ==
+{{ai npcs list|width=14em|remove=Slime}}
+
+== 历史 ==
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+[[Category:{{tr|Slime AI NPCs}}| ]]
+
+{{language info|en=Slime AI}}

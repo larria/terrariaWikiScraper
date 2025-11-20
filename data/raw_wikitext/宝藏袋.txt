@@ -1,0 +1,815 @@
+{{expert mode only}}
+{{exclusive|Expert Mode}}
+{{item infobox
+| image = Treasure Bag.gif
+| type = Grab bag
+| rare = {{rare|rainbow}}
+| stack = 9999
+| tooltip =  {{icon/desktop|small=y}} {{itemTooltip|3318}} /<br/>{{icon/mobile|small=y}} 双击可打开
+| consumable = Yes
+| listcat = Drop items
+| cargo = no
+| research = 3
+}}<!--
+-->{{#vardefine:highlight_color|rgba(127,127,127, 0.5)}}<!-- Used for expert highlights below -->
+
+'''{{tr|Treasure Bags}}'''是{{tr|consumable items}}，可在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]下作为击败 [[{{tr|bosses}}]] 的战利品。其内容取决于掉落它的 {{tr|boss}}。它可以通过在[[{{tr|inventory}}]]中用 {{key|open}} 键开启，或是在[[{{tr|hotbar}}]]中选中时用 {{key|use}} 键开启。在[[{{tr|multiplayer}}]]下，每名对 {{tr|boss}} 造成过{{tr|damage}}的玩家在击败它时都能获得一个{{tr|Treasure Bag}}。{{tr|Treasure Bags}}被记录于客户端，会在离开{{tr|world}}时消失。见[[#{{tr|Notes}}|{{tr|Notes}}]]获取更多细节。
+
+每个{{tr|Treasure Bag}}包含 {{tr|boss}} 在[[{{tr|Classic Mode}}]]中的通常掉落，以及一件[[{{tr|Expert}}独有内容|{{tr|Expert Mode}}独有{{tr|item}}]]（下方<span style="background-color: {{#var:highlight_color}};">高亮显示的物品</span>）——但[[{{tr|Lunatic Cultist}}]]、[[{{tr|Dark Mage}}]]、[[{{tr|Betsy}}]]、和[[{{tr|Ogre}}]]除外，它们目前没有{{tr|Expert mode}}独有物品。此外，[[{{tr|Hardmode}}]] {{tr|bosses}}的{{tr|Treasure Bags}}（[[{{tr|Queen Slime}}]]的除外）还有 {{chance|1/16}} 几率包含随机一套[[{{tr|developer items}}]]。
+
+{{tr|Expert Mode}}独有物品均具有{{rare|rainbow}}[[{{tr|rarity}}]]，{{tr|developer items}}除外。
+__TOC__
+{{/nav}}
+
+== 类型 ==
+{{options/set|item|wrap=y|icons=n}}
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria" id="King Slime"
+! colspan=3 | {{item|Treasure Bag (King Slime)|King Slime|link={{tr|King Slime}}|id=3318}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Royal Gel}} || 100% || 1
+|- class="bottomline"
+| {{item|King Slime Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Slimy Saddle}} || 50% || 1
+|-
+| {{item|Ninja Hood}} || 66% || 1
+|-
+| {{item|Ninja Shirt}} || 66% || 1
+|- class="bottomline"
+| {{item|Ninja Pants}} || 66% || 1
+|-
+| {{item|Slime Gun}} || 50% || 1
+|- class="bottomline"
+| {{item|Slime Hook}} || 50% || 1
+|- class="bottomline"
+| {{item|Solidifier}} || 100% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|1]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Eye of Cthulhu"
+! colspan=3 | {{item|Treasure Bag (Eye of Cthulhu)|Eye of Cthulhu|link={{tr|Eye of Cthulhu}}|id=3319}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Shield of Cthulhu}} || 100% || 1
+|- class="bottomline"
+| {{item|Eye of Cthulhu Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Binoculars}} || 3.3% || 1
+|- class="bottomline"
+| {{item|Crimtane Ore|note2=（{{tr|Crimson world}}）}} || 100% || 30-87
+|- class="bottomline"
+| {{item|Crimson Seeds|note2=（{{tr|Crimson world}}）}} || 100% || 1-3
+|- class="bottomline"
+| {{item|Demonite Ore|note2=（{{tr|Corrupt world}}）}} || 100% || 30-87
+|- class="bottomline"
+| {{item|Corrupt Seeds|note2=（{{tr|Corrupt world}}）}} || 100% || 1-3
+|- class="bottomline"
+| {{item|Unholy Arrow|note2=（{{tr|Corrupt world}}）}} || 100% || 20-49
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|3]]
+|}
+{{flexend|item}}
+{{flexstart|_id=evilbosses|direction=column|wrap=no|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria" id="Eater of Worlds"
+! colspan=3 | {{item|Treasure Bag (Eater of Worlds)|Eater of Worlds|link={{tr|Eater of Worlds}}|id=3320}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Worm Scarf}} || 100% || 1
+|- class="bottomline"
+| {{item|Eater of Worlds Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Demonite Ore}} || 100% || 80–110 / {{master|110–135}}
+|- class="bottomline"
+| {{item|Shadow Scale}} || 100% || 20–40 / {{master|30–50}}
+|- class="bottomline"
+| {{item|Eater's Bone}} || 5% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|3]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Brain of Cthulhu"
+! colspan=3 | {{item|Treasure Bag (Brain of Cthulhu)|Brain of Cthulhu|link={{tr|Brain of Cthulhu}}|id=3321}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Brain of Confusion}} || 100% || 1
+|- class="bottomline"
+| {{item|Brain of Cthulhu Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Crimtane Ore}} || 100% || 80–110 / {{master|110–135}}
+|- class="bottomline"
+| {{item|Tissue Sample}} || 100% || 20–40 / {{master|30–50}}
+|- class="bottomline"
+| {{item|Bone Rattle}} || 5% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|1]]
+|}
+{{flexend|item}}
+{{flexend|_id=evilbosses}}
+{{flexstart|item}}
+{| class="terraria" id="Queen Bee"
+! colspan=3 | {{item|Treasure Bag (Queen Bee)|Queen Bee|link={{tr|Queen Bee}}|id=3322}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Hive Pack}} || 100% || 1
+|- class="bottomline"
+| {{item|Queen Bee Mask}} || 14.29% || 1
+|-
+| {{item|Bee Gun}} || 33% || 1
+|-
+| {{item|Bee Keeper}} || 33% || 1
+|- class="bottomline"
+| {{item|The Bee's Knees|size=25px}} || 33% || 1
+|- class="bottomline"
+| {{item|Honey Comb}} || 33% || 1
+|- class="bottomline"
+| {{item|Nectar}} || 11% || 1
+|- class="bottomline"
+| {{item|Honeyed Goggles}} || 11% || 1
+|- class="bottomline"
+| {{item|Hive Wand}} || 100% || 1
+|-
+| {{item|Bee Hat}} || 33% || 1
+|-
+| {{item|Bee Shirt}} || 33% || 1
+|- class="bottomline"
+| {{item|Bee Pants}} || 33% || 1
+|- class="bottomline"
+| {{item|Beenade}} || 100% || 10-29
+|- class="bottomline"
+| {{item|Bee Wax}} || 100% || 17-29
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|10]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Skeletron"
+! colspan=3 | {{item|Treasure Bag (Skeletron)|Skeletron|link={{tr|Skeletron}}|id=3323}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Bone Glove}} || 100% || 1
+|-
+| {{item|Skeletron Mask}} || 33% || 1
+|-
+| {{item|Skeletron Hand}} || 33% || 1
+|- class="bottomline"
+| {{item|Book of Skulls}} || 33% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|5]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Deerclops"
+! colspan=3 | {{item|Treasure Bag (Deerclops)|Deerclops|link={{tr|Deerclops}}|id=5111}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Bone Helm}} || 100% || 1
+|- class="bottomline"
+| {{item|Deerclops Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Eye Bone}} || 33.33% || 1
+|- class="bottomline"
+| {{item|Eyebrella}} || 33.33% || 1
+|- class="bottomline"
+| {{item|Radio Thing}} || 33.33% || 1
+|- class="bottomline"
+| {{item|Dizzy's Rare Gecko Chester}} || 7.14% || 1
+|-
+| {{item|Pew-matic Horn}} || 25% || 1
+|-
+| {{item|Weather Pain}} || 25% || 1
+|-
+| {{item|Houndius Shootius}} || 25% || 1
+|- class="bottomline"
+| {{item|Lucy the Axe}} || 25% || 1
+|- class="bottomline"
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|10]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Wall of Flesh"
+! colspan=3 | {{item|Treasure Bag (Wall of Flesh)|Wall of Flesh|link={{tr|Wall of Flesh}}|id=3324}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Demon Heart|note2=（当尚未使用{{tr|Demon Heart}}时）}} || 100% || 1
+|- class="bottomline"
+| {{item|Wall of Flesh Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Pwnhammer}} || 100% || 1
+|-
+| {{item|Summoner Emblem}} || 25% || 1
+|-
+| {{item|Sorcerer Emblem}} || 25% || 1
+|-
+| {{item|Warrior Emblem}} || 25% || 1
+|- class="bottomline"
+| {{item|Ranger Emblem}} || 25% || 1
+|-
+| {{item|Laser Rifle}} || 25% || 1
+|-
+| {{item|Breaker Blade|size=30px}} || 25% || 1
+|-
+| {{item|Clockwork Assault Rifle|size=45px}} || 25% || 1
+|- class="bottomline"
+| {{item|Firecracker|size=30px}}|| 25% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|8]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Queen Slime"
+! colspan=3 | {{item|Treasure Bag (Queen Slime)|Queen Slime|link={{tr|Queen Slime}}|id=4957}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Volatile Gelatin}} || 100% || 1
+|- class="bottomline"
+| {{item|Sparkle Slime Balloon}} || 100% || 25-74
+|- class="bottomline"
+| {{item|Queen Slime Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Gelatinous Pillion}} || 50% || 1
+|- class="bottomline"
+| {{item|Hook of Dissonance}} || 50% || 1
+|- class="bottomline"
+| {{item|Blade Staff}} || 33.33% || 1
+|-
+| {{item|Crystal Assassin Hood}} || 67% || 1
+|-
+| {{item|Crystal Assassin Shirt}} || 67% || 1
+|-
+| {{item|Crystal Assassin Pants}} || 67% || 1
+|}
+{{flexend|item}}
+{{flexstart|_id=mechbosses|direction=column|wrap=no|style=gap:var(--layout-gap);}}<!-- the three mech bosses can always be in a single column because they're so short -->
+{{flexstart|item}}
+{| class="terraria" style="width:100%" id="The Twins"
+! colspan=3 | {{item|Treasure Bag (The Twins)|The Twins|link={{tr|The Twins}}|id=3326}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Mechanical Wheel Piece}} || 100% || 1
+|- class="bottomline"
+| {{item|Twin Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Soul of Sight}} || 100% || 25-40
+|- class="bottomline"
+| {{item|Hallowed Bar}} || 100% || 20-35
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|12]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" style="width:100%" id="The Destroyer"
+! colspan=3 | {{item|Treasure Bag (The Destroyer)|The Destroyer|link={{tr|The Destroyer}}|id=3325}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Mechanical Wagon Piece}} || 100% || 1
+|- class="bottomline"
+| {{item|Destroyer Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Soul of Might}} || 100% || 25-40
+|- class="bottomline"
+| {{item|Hallowed Bar}} || 100% || 20-35
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|12]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" style="width:100%" id="Skeletron Prime"
+! colspan=3 | {{item|Treasure Bag (Skeletron Prime)|Skeletron Prime|link={{tr|Skeletron Prime}}|id=3327}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Mechanical Battery Piece}} || 100% || 1
+|- class="bottomline"
+| {{item|Skeletron Prime Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Soul of Fright}} || 100% || 25-40
+|- class="bottomline"
+| {{item|Hallowed Bar}} || 100% || 20-35
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|12]]
+|}
+{{flexend|item}}
+{{flexend|_id=mechbosses}}
+{{flexstart|item}}
+{| class="terraria" id="Plantera"
+! colspan=3 | {{item|Treasure Bag (Plantera)|Plantera|link={{tr|Plantera}}|id=3328}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Spore Sac}}
+| 100% || 1
+|- class="bottomline"
+| {{item|Plantera Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Temple Key}} || 100% || 1
+|- class="bottomline"
+| {{item|Seedling}} || 6.67% || 1
+|- class="bottomline"
+| {{item|The Axe}} || 5% || 1
+|- class="bottomline"
+| {{item|Pygmy Staff}} || 50% || 1
+|- class="bottomline"
+| {{item|Thorn Hook}} || 10% || 1
+|-
+| {{item|Grenade Launcher}}
+: + {{item|Rocket I}}
+| 14.29%
+| 1<br/>50-149
+|-
+| {{item|Venus Magnum}} || 14.29% || 1
+|-
+| {{item|Nettle Burst}} || 14.29% || 1
+|-
+| {{item|Leaf Blower}} || 14.29% || 1
+|-
+| {{item|Seedler}} || 14.29% || 1
+|-
+| {{item|Flower Pow}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Wasp Gun}} || 14.29% || 1
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|15]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Golem"
+! colspan=3 | {{item|Treasure Bag (Golem)|Golem|link={{tr|Golem}}|id=3329}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Shiny Stone}} || 100% || 1
+|- class="bottomline"
+| {{item|Golem Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Picksaw}} || 33.33% || 1
+|-
+| {{item|Stynger}}
+: + {{item|Stynger Bolt}}
+| 14.29%
+| 1<br/>60-99
+|-
+| {{item|Possessed Hatchet}} || 14.29% || 1
+|-
+| {{item|Sun Stone}} || 14.29% || 1
+|-
+| {{item|Eye of the Golem}} || 14.29% || 1
+|-
+| {{item|Heat Ray}} || 14.29% || 1
+|-
+| {{item|Staff of Earth}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Golem Fist|size=40px}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Beetle Husk}} || 100% || 18-23
+|-
+| {{item|Gold Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|12]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Duke Fishron"
+! colspan=3 | {{item|Treasure Bag (Duke Fishron)|Duke Fishron|link={{tr|Duke Fishron}}|id=3330}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Shrimpy Truffle}} || 100% || 1
+|- class="bottomline"
+| {{item|Duke Fishron Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Fishron Wings}} || 10% || 1
+|-
+| {{item|Flairon}} || 20% || 1
+|-
+| {{item|Tsunami}} || 20% || 1
+|-
+| {{item|Razorblade Typhoon}} || 20% || 1
+|-
+| {{item|Tempest Staff}} || 20% || 1
+|- class="bottomline"
+| {{item|Bubble Gun}} || 20% || 1
+|-
+| {{item|Silver Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|20]]
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Empress of Light"
+! colspan=3 | {{item|Treasure Bag (Empress of Light)|Empress of Light|link={{tr|Empress of Light}}|id=4782}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Soaring Insignia}} || 100% || 1
+|- class="bottomline"
+| {{item|Empress of Light Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Empress Wings}} || 10% || 1
+|- class="bottomline"
+| {{item|Stellar Tune}} || 5% || 1
+|- class="bottomline"
+| {{item|Prismatic Dye}} || 25% || 1
+|- class="bottomline"
+| {{item|Rainbow Cursor}} || 5% || 1
+|-
+| {{item|Starlight}} || 25% || 1
+|-
+| {{item|Nightglow}} || 25% || 1
+|-
+| {{item|Eventide}} || 25% || 1
+|-
+| {{item|Kaleidoscope}} || 25% || 1
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Betsy"
+! colspan=3 | {{item|Treasure Bag (Betsy)|Betsy|link={{tr|Betsy}}|id=3860}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline"
+| {{item|Betsy Mask}} || 14.29% || 1
+|-
+| {{item|Aerial Bane}} || 25% || 1
+|-
+| {{item|Flying Dragon}} || 25% || 1
+|-
+| {{item|Betsy's Wrath}} || 25% || 1
+|- class="bottomline"
+| {{item|Sky Dragon's Fury}} || 25% || 1
+|- class="bottomline"
+| {{item|Betsy's Wings}} || 25% || 1
+|-
+| {{item|Defender Medal}} || 100% || 30-49
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" id="Moon Lord"
+! colspan=3 | {{item|Treasure Bag (Moon Lord)|Moon Lord|link={{tr|Moon Lord}}|id=3332}}
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Gravity Globe}} || 100% || 1
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Suspicious Looking Tentacle}} || 100% || 1
+|- class="bottomline" style="background-color: {{#var:highlight_color}};"
+| {{item|Celestial Starboard}} || 100% || 1
+|- class="bottomline"
+| {{item|Moon Lord Mask}} || 14.29% || 1
+|- class="bottomline"
+| {{item|Luminite}} || 100% || 90-110
+|- class="bottomline"
+| {{item|Meowmere Minecart}} || 10% || 1
+|- class="bottomline"
+| {{item|Portal Gun|size=30px|note2=（当{{tr|inventory}}中没有{{tr|Portal Gun}}时）}} || 100% || 1
+|-
+| {{item|Meowmere|size=40px}} || 22.22% || 1
+|-
+| {{item|Terrarian}} || 22.22% || 1
+|-
+| {{item|Star Wrath|size=40px}} || 22.22% || 1
+|-
+| {{item|S.D.M.G.}} || 22.22% || 1
+|-
+| {{item|Celebration Mk2}} || 22.22% || 1
+|-
+| {{item|Last Prism}} || 22.22% || 1
+|-
+| {{item|Lunar Flare}} || 22.22% || 1
+|-
+| {{item|Rainbow Crystal Staff}} || 22.22% || 1
+|-
+| {{item|Lunar Portal Staff}} || 22.22% || 1
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+== 无法获取和未实现的类型 ==
+{{options/set|item|wrap=y|icons=n}}
+{{unobtainable|section=y}}
+{| class="terraria" id="Lunatic Cultist"
+! colspan=3 | {{item|Treasure Bag (Lunatic Cultist)|Lunatic Cultist|link={{tr|Lunatic Cultist}}|id=3331}}
+|-
+! colspan=3 | （{{red|⚠}}[[{{tr|unobtainable}}]]）
+|-
+! {{tr|Item}} !! 几率 !! 数量
+|- class="bottomline"
+| {{item|Lunatic Cultist Mask}} || 14.29% || 1
+|-
+| {{item|Silver Coin}} || 100% || [[{{tr|NPC drops}}#{{tr|Coin drops}}|20]]
+|}
+
+
+{{unimplemented|section=y}}
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria" style="width:100%" id="Dark Mage"
+! {{item|Treasure Bag (Dark Mage)|Dark Mage|link={{tr|Dark Mage}}|id=3862}}
+|-
+! （{{red|⚠}}[[{{tr|unobtainable}}]]）
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria" style="width:100%" id="Ogre"
+! {{item|Treasure Bag (Ogre)|Ogre|link={{tr|Ogre}}|id=3861}}
+|-
+! （{{red|⚠}}[[{{tr|unobtainable}}]]）
+|}
+{{flexend|item}}
+{{flexend}}{{options/reset|item}}
+
+== 内部稀有度 ==
+虽然{{tr|Treasure Bag}}是总是具有 {{rare|rainbow}} {{tr|rarity}}的{{tr|Expert items}}，每个{{tr|Treasure Bag}}都有一个内部[[{{tr|rarity}}]]。
+{{options/set|item|icons=no}}
+{{itemlist|class=terraria|width=11em
+|{{item|Treasure Bag (King Slime)|King Slime|link=#King Slime|note2={{rare|1}} }} 
+|{{item|Treasure Bag (Eye of Cthulhu)|Eye of Cthulhu|link=#Eye of Cthulhu|note2={{rare|1}} }}
+|{{item|Treasure Bag (Eater of Worlds)|Eater of Worlds|link=#Eater of Worlds|note2={{rare|2}} }}
+|{{item|Treasure Bag (Brain of Cthulhu)|Brain of Cthulhu|link=#Brain of Cthulhu|note2={{rare|2}} }}
+|{{item|Treasure Bag (Queen Bee)|Queen Bee|link=#Queen Bee|note2={{rare|3}} }}
+|{{item|Treasure Bag (Skeletron)|Skeletron|link=#Skeletron|note2={{rare|3}} }}
+|{{item|Treasure Bag (Ogre)|Ogre|link=#Ogre|note2={{rare|3}} }}
+|{{item|Treasure Bag (Deerclops)|Deerclops|link=#Deerclops|note2={{rare|3}} }}
+|{{item|Treasure Bag (Wall of Flesh)|Wall of Flesh|link=#Wall of Flesh|note2={{rare|4}} }}
+|{{item|Treasure Bag (Dark Mage)|Dark Mage|link=#Dark Mage|note2={{rare|5}} }}
+|{{item|Treasure Bag (The Destroyer)|The Destroyer|link=#The Destroyer|note2={{rare|5}} }}
+|{{item|Treasure Bag (The Twins)|The Twins|link=#The Twins|note2={{rare|5}} }}
+|{{item|Treasure Bag (Skeletron Prime)|Skeletron Prime|link=#Skeletron Prime|note2={{rare|5}} }}
+|{{item|Treasure Bag (Plantera)|Plantera|link=#Plantera|note2={{rare|6}} }}
+|{{item|Treasure Bag (Empress of Light)|Empress of Light|link=#Empress of Light|note2={{rare|6}} }}
+|{{item|Treasure Bag (Queen Slime)|Queen Slime|link=#Queen Slime|note2={{rare|6}} }}
+|{{item|Treasure Bag (Golem)|Golem|link=#Golem|note2={{rare|7}} }}
+|{{item|Treasure Bag (Duke Fishron)|Duke Fishron|link=#Duke Fishron|note2={{rare|7}} }}
+|{{item|Treasure Bag (Betsy)|Betsy|link=#Betsy|note2={{rare|8}} }}
+|{{item|Treasure Bag (Lunatic Cultist)|Lunatic Cultist|link=#Lunatic Cultist|note2={{rare|8}} }}
+|{{item|Treasure Bag (Moon Lord)|Moon Lord|link=#Moon Lord|note2={{rare|8}} }}
+}}{{options/reset|item}}
+
+== 开发者物品 ==
+除了以上内容，所有来自[[{{tr|Hardmode}}]] {{tr|bosses}} 的{{tr|Treasure Bags}}（[[{{tr|Queen Slime}}]]的除外）都有 {{chance|1/16}} 几率包含随机一套[[{{tr|developer items}}]]，意味着每套有 {{chance|1/288}} 的几率从{{tr|Hardmode}} {{tr|boss}} {{tr|Treasure Bag}}中获得。在{{tr|Expert world}}中获得{{tr|Treasure Bag}}，然后在{{tr|Classic world}}中开启它不会影响{{tr|Treasure Bag}}掉落{{tr|developer items}}的几率。
+{{options/set|item|small=y|wrap=y|icons=n}}{{itemlist/options|width=20em}}
+{{infocard|class=terraria compact|text=
+
+{{infocard/mainheading|{{tr|Red's set}}}}
+{{itemlist
+|{{item|Red's Helmet}}
+|{{item|Red's Breastplate}}
+|{{item|Red's Leggings}}
+|{{item|Red's Wings}}
+|{{item|Red's Throw}}
+}}
+
+{{infocard/mainheading|{{tr|Cenx's set}}}}
+{{itemlist
+|{{item|Cenx's Tiara}}
+|{{item|Cenx's Breastplate}}
+|{{item|Cenx's Leggings}}
+|{{item|Cenx's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Cenx's Dress set}}}}
+{{itemlist
+|{{item|Cenx's Tiara}}
+|{{item|Cenx's Dress}}
+|{{item|Cenx's Dress Pants}}
+|{{item|Cenx's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Crowno's set}}}}
+{{itemlist
+|{{item|Crowno's Mask}}
+|{{item|Crowno's Breastplate}}
+|{{item|Crowno's Leggings}}
+|{{item|Crowno's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Will's set}}}}
+{{itemlist
+|{{item|Will's Helmet}}
+|{{item|Will's Breastplate}}
+|{{item|Will's Leggings}}
+|{{item|Will's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Jim's set}}}}
+{{itemlist
+|{{item|Jim's Helmet}}
+|{{item|Jim's Breastplate}}
+|{{item|Jim's Leggings}}
+|{{item|Jim's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Aaron's set}}}}
+{{itemlist
+|{{item|Aaron's Helmet}}
+|{{item|Aaron's Breastplate}}
+|{{item|Aaron's Leggings}}
+}}
+
+{{infocard/mainheading|{{tr|D-Town's set}}}}
+{{itemlist
+|{{item|D-Town's Helmet}}
+|{{item|D-Town's Breastplate}}
+|{{item|D-Town's Leggings}}
+|{{item|D-Town's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Lazure's set}}}}
+{{itemlist
+|{{item|Lazure's Valkyrie Circlet}}
+|{{item|Lazure's Valkyrie Cloak}}
+|{{item|Lazure's Barrier Platform}}
+|{{item|Valkyrie Yoyo}}
+}}
+
+{{infocard/mainheading|{{tr|Yoraiz0r's set}}}}
+{{itemlist
+|{{item|Yoraiz0r's Uniform}}
+|{{item|Yoraiz0r's Skirt}}
+|{{item|Yoraiz0r's Spell}}
+|{{item|Yoraiz0r's Scowl}}
+|{{item|Yoraiz0r's Recolored Goggles}}
+}}
+
+{{infocard/mainheading|{{tr|Skiphs's set}}}}
+{{itemlist
+|{{item|Skiphs' Mask}}
+|{{item|Skiphs' Skin}}
+|{{item|Skiphs' Bear Butt}}
+|{{item|Skiphs' Blood}}
+|{{item|Skiphs' Paws}}
+}}
+
+{{infocard/mainheading|{{tr|Loki's set}}}}
+{{itemlist
+|{{item|Loki's Helmet}}
+|{{item|Loki's Breastplate}}
+|{{item|Loki's Greaves}}
+|{{item|Loki's Dye}}
+|{{item|Loki's Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Arkhalis's set}}}}
+{{itemlist
+|{{item|Arkhalis' Hood}}
+|{{item|Arkhalis' Bodice}}
+|{{item|Arkhalis' Tights}}
+|{{item|Arkhalis' Lightwings}}
+|{{item|Arkhalis}}
+}}
+
+{{infocard/mainheading|{{tr|Leinfors' set}}}}
+{{itemlist
+|{{item|Leinfors' Hair Protector}}
+|{{item|Leinfors' Excessive Style}}
+|{{item|Leinfors' Fancypants}}
+|{{item|Leinfors' Prehensile Cloak}}
+|{{item|Leinfors' Luxury Shampoo}}
+}}
+
+{{infocard/mainheading|{{tr|Ghostar's set}}}}
+{{itemlist
+|{{item|Ghostar's Soul Jar}}
+|{{item|Ghostar's Garb}}
+|{{item|Ghostar's Tights}}
+|{{item|Ghostar's Infinity Eight}}
+}}
+
+{{infocard/mainheading|{{tr|Safeman's set}}}}
+{{itemlist
+|{{item|Safeman's Sunny Day}}
+|{{item|Safeman's Sun Dress}}
+|{{item|Safeman's Pink Leggings}}
+|{{item|Safeman's Blanket Cape}}
+}}
+
+{{infocard/mainheading|{{tr|FoodBarbarian's set}}}}
+{{itemlist
+|{{item|FoodBarbarian's Horned Helm}}
+|{{item|FoodBarbarian's Wild Wolf Spaulders}}
+|{{item|FoodBarbarian's Savage Greaves}}
+|{{item|FoodBarbarian's Tattered Dragon Wings}}
+}}
+
+{{infocard/mainheading|{{tr|Grox The Great's set}}}}
+{{itemlist
+|{{item|Grox The Great's Horned Cowl}}
+|{{item|Grox The Great's Chestplate}}
+|{{item|Grox The Great's Greaves}}
+|{{item|Grox The Great's Wings}}
+}}
+
+}}<!--
+-->{{options/reset|item}}{{itemlist/options|reset}}
+
+== 专家独有物品细节 ==
+{{options/set|item|icons=n}}
+{| class="terraria lined" id="table-exclusives"
+! {{tr|Treasure Bag}} !! {{tr|Boss}} !! {{tr|Item}} !! 功能
+|-
+| [[File:Treasure Bag (King Slime).png]] || [[{{tr|King Slime}}]] || {{item|Royal Gel}} || [[{{tr|Slimes}}]]变得友好。
+|-
+| [[File:Treasure Bag (Eye of Cthulhu).png]] || [[{{tr|Eye of Cthulhu}}]] || {{item|Shield of Cthulhu}} || 双击以冲刺，并造成伤害。
+|-
+| [[File:Treasure Bag (Eater of Worlds).png]] || [[{{tr|Eater of Worlds}}]] || {{item|Worm Scarf}} || 所受伤害降低 17%。
+|-
+| [[File:Treasure Bag (Brain of Cthulhu).png]] || [[{{tr|Brain of Cthulhu}}]] || {{item|Brain of Confusion}} || 在被击中后可能会使附近{{tr|enemies}}[[{{tr|Confused}}]]。
+使玩家有 {{chance|1/6}} 几率闪避一次攻击，在成功闪避后使[[{{tr|critical strike chance}}]]和[[{{tr|summon damage}}]]增加 10%，持续 4 秒。
+|-
+| [[File:Treasure Bag (Queen Bee).png]] || [[{{tr|Queen Bee}}]] || {{item|Hive Pack}} || 强化友方{{tr|bees}}的力量。
+|-
+| [[File:Treasure Bag (Deerclops).png]] || [[{{tr|Deerclops}}]] || {{item|Bone Helm}} || 召唤{{tr|Shadow Hands}}{{tr|projectiles}}对{{tr|enemies}}造成{{tr|damage}}。
+|-
+| [[File:Treasure Bag (Skeletron).png]] || [[{{tr|Skeletron}}]] || {{item|Bone Glove}} || 在玩家攻击时投掷[[{{tr|Bone}}|{{tr|Crossbones}}]]。
+|-
+| [[File:Treasure Bag (Wall of Flesh).png]] || [[{{tr|Wall of Flesh}}]] || {{item|Demon Heart}} || 永久增加一个{{tr|accessory slots}}。<br/>只能使用一次，仅在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中有效。
+|-
+| [[File:Treasure Bag (Queen Slime).png]] || [[{{tr|Queen Slime}}]] || {{item|Volatile Gelatin}} || 装备时攻击玩家附近的{{tr|enemies}}。
+|-
+| [[File:Treasure Bag (The Destroyer).png]] || [[{{tr|The Destroyer}}]] || {{item|Mechanical Wagon Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[File:Treasure Bag (The Twins).png]] || [[{{tr|The Twins}}]] || {{item|Mechanical Wheel Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[File:Treasure Bag (Skeletron Prime).png]] || [[{{tr|Skeletron Prime}}]] || {{item|Mechanical Battery Piece}} || 用于制作[[{{tr|Minecart Upgrade Kit}}]]。
+|-
+| [[File:Treasure Bag (Plantera).png]] || [[{{tr|Plantera}}]] || {{item|Spore Sac}} || 随时间召唤能伤害{{tr|enemies}}的孢子。
+|-
+| [[File:Treasure Bag (Empress of Light).png]] || [[{{tr|Empress of Light}}]] || {{item|Soaring Insignia}} || 获得无限飞行时间，增加飞行和跳跃的机动性。
+|-
+| [[File:Treasure Bag (Golem).png]] || [[{{tr|Golem}}]] || {{item|Shiny Stone}} || 在不移动时大幅增加[[{{tr|health regeneration}}]]。
+|-
+| [[File:Treasure Bag (Duke Fishron).png]] || [[{{tr|Duke Fishron}}]] || {{item|Shrimpy Truffle}} || 可以无限飞行的{{tr|A mount}}，在{{tr|water}}中或骑乘者低于一半{{tr|health}}时非常快。
+|-
+| rowspan=3 | [[File:Treasure Bag (Moon Lord).png]] || rowspan=3 | [[{{tr|Moon Lord}}]] || {{item|Gravity Globe}} || 允许持有者反转{{tr|gravity}}（可以在空中激活）
+|-
+| {{item|Suspicious Looking Tentacle}} || [[{{tr|Light Pet}}]]，能探测附近的{{tr|enemies, treasure, and ores}}。
+|-
+| {{item|Celestial Starboard}} || [[{{tr|Wings}}]]，能够悬浮和加速上升。
+|-
+|}{{options/reset|item}}
+
+== 备注 ==
+* 在{{tr|singleplayer}}下，{{tr|Treasure Bag}}总是会在 {{tr|boss}} 被击败时掉落，无论玩家如何击败 {{tr|boss}}。
+* 在[[{{tr|multiplayer}}]]下，{{tr|Treasure Bag}}掉落取决于各个玩家。玩家是否能获得{{tr|Treasure Bag}}取决于他是否对 {{tr|boss}} 造成过伤害。没有对 {{tr|boss}} 造成过至少 1 点伤害的玩家不会获得{{tr|Treasure Bag}}。
+** 此外，[[{{tr|NPCs}}]] 的攻击、[[{{tr|Explosive Bunny}}]]、[[{{tr|traps}}]]、[[{{tr|Explosives}}]]、和[[{{tr|lava}}]]造成的伤害不会被记录给任何玩家。例如，如果服务器中仅有一名玩家，且他只用上述伤害击败了 {{tr|boss}}，{{tr|Treasure Bag}}不会掉落。
+** 不过，涉及到玩家交互的伤害性物品，例如[[{{tr|Bomb}}]]、[[{{tr|Cannon}}]]、[[{{tr|Inferno Potion}}]]、和[[{{tr|Spore Sac}}]]，等等， ''会''算作玩家造成的伤害。
+* 在{{tr|multiplayer}}下的战利品获得量会显著更多——会掉落多个{{tr|Treasure Bags}}，每个都包含击杀一次的全额奖励，且 {{tr|boss}} 掉落的独特物品的掉落几率常常会倍增。
+* [[{{tr|Trophy}}|{{tr|Trophies}}]]不是从{{tr|Treasure Bags}}中获得的。取而代之的是，它们是由 {{tr|boss}} 本身独立掉落的，在{{tr|multiplayer}}下一次只会掉落一个。
+* 在 [[Celebrationmk10]] {{tr|world}}中，{{tr|developer items}}的{{tr|the drop rate}}由 {{chance|1/16}} 提升至 {{chance|1/8}}。
+
+== 小贴士 ==
+* 在{{tr|multiplayer}}下，如果玩家的{{tr|inventory}}已满，最好在僻静的区域开启{{tr|Treasure Bags}}，因为拾取物品时的延迟可能会导致物品被其他玩家拾取。
+
+== 花絮 ==
+* 在{{tr|multiplayer}}下，如果玩家 A 在对 {{tr|boss}} 造成伤害后离开服务器，下一个连接到服务器的玩家（玩家 A 自己，或者是另一个玩家）会获得掉落{{tr|Treasure Bag}}的“资格”。例如，如果玩家 A 在玩家 B 连接后重新连接，且 A 之后没有对 {{tr|boss}} 造成伤害，玩家 A 将无法获得{{tr|Treasure Bag}}，而玩家 B 即使没有对 {{tr|boss}} 造成过伤害也能获得{{tr|Treasure Bag}}。
+* {{tr|The Moon Lord}}的{{tr|Treasure Bag}}是仅有的包含多个{{tr|Expert Mode}}{{tr|items}}的{{tr|Treasure Bag}}。
+* {{tr|Betsy}}的{{tr|Treasure Bag}}是仅有的（可获得的）不包含{{tr|Expert mode item}}的{{tr|Treasure bag}}。它也不包含{{tr|coins}}，而是包含[[{{tr|Defender Medal}}]]。
+* 虽然{{tr|The Lunatic Cultist, Ogre, and Dark Mage}}具有有外观图的{{tr|Treasure Bag}}，但它们并不会掉落。
+** {{tr|The Lunatic Cultist}}是仅有的在游戏进度中必须战斗，但不掉落{{tr|Treasure Bag}}的 {{tr|boss}}。
+** 和{{tr|Lunatic Cultist}}的{{tr|Treasure Bag}}不同，{{tr|the Ogre and Dark Mage}}的{{tr|Treasure Bag}}没有相关的数据，因而尝试修改出任何一种会导致它们从玩家的{{tr|inventory}}中立即消失。
+* {{tr|Queen Slime}}的{{tr|Treasure Bag}}是仅有的不掉落{{tr|developer items}}的{{tr|Hardmode Treasure Bag}}。
+* {{tr|Treasure Bags}}在其[[{{tr|Item IDs}}]] 中被称为“Boss Bag”（{{tr|Boss}} 袋）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|获得{{tr|developer set}}的几率由 1/20 提升至 1/16。}}
+{{history|Desktop 1.4.3|
+** 添加了{{tr|Deerclops}}的{{tr|Treasure Bag}}。
+** 所有{{tr|Treasure Bags}}的名称中现在会在括号中显示其所属 {{tr|boss}}（而非仅是“{{tr|Treasure Bag}}”）。}}
+{{history|Desktop 1.4.2.3|修复了{{tr|Queen Slime}}的{{tr|Treasure Bag}}缺失{{tr|tooltip}}的问题。}}
+{{history|Desktop 1.4.0.1|
+** 掉落的{{tr|Treasure Bags}}周围现在有特殊的光效以使其高亮显示。
+** 增加了{{tr|Queen Slime}}和{{tr|Empress of Light}}的{{tr|Treasure Bag}}。
+** {{tr|Sprites updated.}}
+** 掉落物中添加了 Ghostar，Safeman，FoodBarbarian 和 Grox the Great 的套装。
+** {{tr|Moon Lord}}的{{tr|Treasure Bag}}中添加了{{tr|Celestial Starboard}}。
+** [[{{tr|Arkhalis}}]]添加到{{tr|Arkhalis' set}}中。}}
+{{history|Desktop 1.3.5.1|修复了{{tr|Betsy}}的{{tr|Treasure Bag}}的错误名字。（旧名称为“ItemName.BossBagBetsy”）}}
+{{history|Desktop 1.3.5|{{tr|Treasure Bag}}的掉落物中添加了 Leinfors 和 Arkhalis 的套装。}}
+{{history|Desktop 1.3.2|现在如果玩家在游玩[[{{tr|Difficulty}}|{{tr|Hardcore}}]]{{tr|character}}，{{tr|Eye of Cthulhu}}{{tr|Treasure Bag}}中会包含 [[{{tr|0x33's Aviators}}]]。}}
+{{history|Desktop 1.3.1|现在{{tr|Plantera}}的{{tr|Treasure Bag}}中有可能含有[[{{tr|Seedler}}]]了。}}
+{{history|Desktop 1.3.0.4|修复了{{tr|Treasure Bag}}在死亡后消失的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Expert mode items}}
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Treasure Bag}}

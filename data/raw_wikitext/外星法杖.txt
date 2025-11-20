@@ -1,0 +1,53 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 2749
+| idprojectile = 423, 433
+| tags = Minion / drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+{{redirect|UFO|{{tr|the mount}}|{{tr|Cosmic Car Key}}}}
+[[File:Xeno Staff (demo).gif|frame|使用中的{{tr|Xeno Staff}}。注意 {{tr|UFO}} 瞬移到右侧的[[{{tr|Skeleton}}]]上方。]]
+
+'''{{tr|Xeno Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Golem}}]]后的[[{{tr|summon weapon}}]]，可生成 '''{{tr|UFO}}''' [[{{tr|minion}}]]。它悬浮在[[{{tr|enemies}}]]上方，发射蓝色激光并立即击中目标。若{{tr|enemy}}在 18.75 到 50 {{tr|tiles}}范围内，它将会立即传送至其上方。{{tr|The Xeno Staff}}有 {{chance|1/6}} 的概率掉落自[[{{tr|Martian Madness}}]][[{{tr|event}}]]期间的[[{{tr|Martian Saucer}}]]。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|UFO}}的{{tr|laser}}以平均每 {{duration|24 ticks}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_062|t={{tr|UFO}}的 AI[1] 每{{tr|tick}}加 1 并且有 2/3 几率再次加 1 。所以其每{{tr|tick}}平均加 5/3 。其阈值为 40，所以平均每两次攻击间的冷却为 40/(5/3)=24 {{tr|ticks}}}}一次的频率瞬间发射。
+* {{tr|UFO minions}}最远可以锁定距离{{tr|player}} 125 {{tr|tile}}远的{{tr|enemy}}，且当它们距离{{tr|player}}超过 125 {{tr|tile}}时会自动返回{{tr|player}}身侧。
+** 若{{tr|enemy}}被{{tr|player}}标记，则{{tr|UFO minions}}可持续攻击此{{tr|enemy}}直到它们距离{{tr|player}}超过 187.5 {{tr|tiles}}，此时{{tr|minion}}标记圈消失且{{tr|UFO minions}}的{{tr|aggro}}范围恢复正常，使它们传送回{{tr|player}}身侧。
+
+== 小贴士 ==
+* {{tr|The Xeno Staff}}的高速移动速度和完美的精准性使其是对高速 {{tr|boss}}（如[[{{tr|Duke Fishron}}]]和[[{{tr|Empress of Light}}]]）的绝佳选择。
+
+== 花絮 ==
+* 前缀''{{wiktionary|xeno-}}''意思是''foreign（外来的）''，''different in origin（起源不同的）''，且通常与外星人有关。
+* 在 [[1.3.5]] 版本前，{{tr|Xeno Staff}}的[[{{tr|value}}|售价]]极其低廉（仅有 {{sc|20}}），所以[[{{tr|reforge}}]]它变得非常便宜。
+* {{tr|Xeno Staff}}有所有[[1.3.0.1]]更新加入的物品中最低的[[{{tr|Item ID}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|两次攻击之间的平均{{tr|cooldown}}时间从 {{duration|36/(5/3)<!-- see Notes section for explanation --> ticks}} 增加至 {{duration|40/(5/3) ticks}}。}}
+{{history|Desktop 1.4.4|
+** 两次攻击之间的平均{{tr|cooldown}}时间从 {{duration|33/(5/3) ticks}} 增加至 {{duration|36/(5/3) ticks}}。
+** UFO 在传送并锁定新的{{tr|enemies}}前不再需要完全返回{{tr|player}}处。
+** UFO 现在会根据{{tr|player}}移动的速度，来试图提高返回{{tr|player}}身边的速度。}}
+{{history|Desktop 1.4.1|两次攻击之间的平均{{tr|cooldown}}时间从 {{duration|30/(5/3) ticks}} 增加至 {{duration|33/(5/3) ticks}}。}}
+{{history|Desktop 1.3.5|卖出价格由由 {{sc|20}} 提升至 {{gc|10}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Xeno Staff}}

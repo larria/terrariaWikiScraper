@@ -1,0 +1,54 @@
+{{npc infobox
+| boxwidth = 21.5em
+| image = Giant Cursed Skull.gif
+| image2 = Giant Cursed Skull (old).png
+| auto = 289
+| type = Undead Enemy
+| type2 = Flying Enemy
+| environment = Dungeon
+| debuff = Cursed
+| debuffchance = 33.33% {{note|small=y|paren=y|接触}} {{eicons|1.4.0.1|small=y}}<br/>100% {{note|small=y|paren=y|{{gameText|ProjectileName.Shadowflames}}}} {{eicons|1.4.0.1|small=y}}
+| debuffduration = {{modes|{{duration|240 ticks}}|{{duration|480 ticks}}|{{duration|600 ticks}}}}
+| damage2 = &#32;{{note|small=y|paren=y|接触}}<br/>{{modes|50|100|150}} {{note|small=y|paren=y|{{gameText|ProjectileName.Shadowflames}}}}
+| Cream Soda|1|2.86%
+| Nazar|1|{{modes|1%|2%}} {{eicons|1.4.0.1}}
+| Shadow Jousting Lance|1|{{modes|4%|7.84%}}
+| idprojectile = 299
+| sound1 = Item 8.wav
+| soundcaption1 = {{gameText|ProjectileName.Shadowflames}}
+| hardmode = yes
+}}
+{{distinguish|{{tr|Cursed Skull}}}}
+
+'''{{tr|Giant Cursed Skull}}'''是一种[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|enemy}}]]，出现在[[{{tr|Dungeon}}]]中，最常见于有着[[{{tr|Dungeon Brick Wall}}|{{tr|Tiled Walls}}或{{tr|Slab Walls}}]]的区域。它的飞行模式类似于[[{{tr|Cursed Skull}}]]，但它更大并且偶尔会射出能穿透{{tr|tiles}}的高速{{tr|blasts}}。在{{eversions|1.4.0.1}}中，它有几率通过接触和其{{tr|projectiles}}造成[[{{tr|Cursed}}]]{{tr|debuff}}。
+
+{{dungeon brick walls|Slab}}{{dungeon brick walls|Brick}}
+
+{{tr|Giant Cursed Skull}}往往生成在有[[{{tr|Dungeon Brick Wall}}|{{tr|Slab Wall}}或{{tr|Brick Wall}}]]的地牢区域。它们也会生成在地牢的其他区域，但几率大大降低。
+
+== 备注 ==
+* 它一般不会穿墙射击，除非它已经进入了开放空间或者被玩家伤到（用能穿墙的{{tr|weapons}}，比如[[{{tr|Nettle Burst}}]]）。在受伤害或进入开放空间后，它即使在墙里也会射击。
+* 它会在攻击前张开嘴，其攻击可被打断。
+* {{tr|Giant Cursed Skull}}在两次发射射弹之间会有 2 {{tr|seconds}}的间隔。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI}}
+
+== 花絮 ==
+* 它是[[{{tr|Cursed Skull}}]]在[[{{tr|Plantera}}]]后的一个更大型的{{tr|counterpart}}。根据[[{{tr|Bestiary}}]]，[[{{tr|Cursed Skull}}]]是{{tr|Giant Cursed Skull}}的小表弟。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.0.1|
+** 现在会掉落[[{{tr|Nazar}}]]、[[{{tr|Cream Soda}}]]、和[[{{tr|Shadow Jousting Lance}}]]。
+** 现在有 33% 几率造成[[{{tr|Cursed}}]]，持续 4 秒。}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Giant Cursed Skull}}

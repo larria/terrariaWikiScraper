@@ -1,0 +1,18 @@
+此页面列出了所有{{tr|item}}“[[{{tr|Item}}|掉落物]]”形式的'''{{tr|sprite size}}'''（以{{tr|pixel}}为单位）。这不同于[[{{tr|Placement}}|{{tr|placed}}]]和[[{{tr|inventory}}]]中的{{tr|item}}的{{tr|size}}。
+
+此信息与以下情况相关：
+* 该{{tr|item}}是否会被[[{{tr|Lava}}#{{tr|Lava depth}}|{{tr|lava}}]]破坏。
+* 该{{tr|item}}在[[{{tr|shimmer}}]]是否会嬗变/分解。
+* 在[[{{tr|Item}}#拾取|拾取过程]]中计算与{{tr|player}}的距离。
+* 计算与{{tr|enemy}}的距离（仅适用于[[{{tr|Expert Mode}}#{{tr|Coin pickup}}|{{tr|Expert Mode}}]]中[[{{tr|coin}}]]被拾取的情况）。
+* 在可能与其他{{tr|item}}合并时，计算与其他{{tr|item}}的距离。
+
+== 列表 ==
+{| class="terraria lined sortable"
+! [[{{tr|Item ID}}|{{tr|ID}}]] !! {{tr|Item}} !! 宽度 !! 高度
+{{#invoke:Item sprite sizes|go|lang={{lang}}}}
+|}
+
+{{category|Items}}
+
+{{language info|en=List of item sprite sizes}}

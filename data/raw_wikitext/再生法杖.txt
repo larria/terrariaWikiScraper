@@ -1,0 +1,67 @@
+{{item infobox
+| type = Weapon/Tool
+| auto = 213
+| tags = loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Staff of Regrowth (demo).gif|thumb|frame|right|玩家使用{{tr|Staff of Regrowth}}在{{tr|dirt}}上种{{tr|grass}}。]]
+[[File:Staff of Regrowth Weapon Rack.gif|thumb|玩家使用{{tr|Staff of regrowth}}提高{{tr|seed}}获取。]]
+
+'''{{tr|Staff of Regrowth}}'''是一个[[{{tr|tool}}]]，可在[[{{tr|Ivy Chest}}]]、{{eil|Jungle Crate|Jungle}}、和{{eil|Bramble Crate|s}}中找到。和其他{{tr|tools}}不同，它在挥舞时不会破坏大部分的植被，除非那一{{tr|tile}}被直接作为目标。它也可以提高收获时掉落的[[{{tr|herbs}}]]及其[[{{tr|seeds}}]]的数量，且能从[[{{tr|Herbs|link=y}}#生长|成熟但未开花的{{tr|herbs}}]]处获取{{tr|seeds}}，这无法用除{{eil|Axe of Regrowth}}外的其他{{tr|tools}}达成。此外，在[[{{tr|Dirt Block}}]]上使用{{tr|Staff of Regrowth}}会种下[[{{tr|grass}}]]，无需消耗{{tr|seeds}}。
+
+{{modifier|harvest}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Staff of Regrowth|expectedrows=2}}
+
+== 备注 ==
+* {{tr|The Staff of Regrowth}}在击中时不会摧毁下列{{tr|tiles}}，除非它被直接用于其上：<!-- list of tile IDs: 3, 24, 52, 61, 62, 71, 73, 74, 82, 83, 84, 110, 113, 115, 184, 205, 201, 519, 518, 528, 529, 530, 549 -->{{source code ref|v=1.4.3.6|method=Terraria.Player.ItemCheck_CutTiles / Terraria.Player.ItemCheck_GetTileCutIgnoreList}}
+** <!-- 3, 24, 61, 73, 74, 110, 113, 201, 530 -->{{tr|Flowers and weeds}}（包括[[{{tr|Nature's Gift}}]]和[[{{tr|Jungle Rose}}]]）
+** <!-- 3, 110 -->[[{{tr|Mushroom}}]]、<!-- 71 -->[[{{tr|Glowing Mushroom}}]]、<!-- 24 -->[[{{tr|Vile Mushroom}}]]、和<!-- 201 -->[[{{tr|Vicious Mushroom}}]]
+** <!-- 52 -->普通[[{{tr|vines|link=y}}|{{tr|vines}}]]、<!-- 62 -->{{tr|Jungle vines}}、<!-- 528 -->{{tr|Mushroom vines}}、<!-- 205 -->{{tr|Crimson vines}}、和<!-- 115 -->{{tr|Hallowed vines}}（{{tr|flower vines}}''会''被摧毁）
+** <!-- 61 -->[[{{tr|Jungle Spore}}]]
+** <!-- 82, 83, 84 -->所有生长阶段的{{tr|Herbs}}
+** <!-- 184 -->[[{{tr|Moss}}]]绒毛
+** <!-- 519 -->[[{{tr|Cattail}}]]、<!-- 518 -->[[{{tr|lily pads}}]]、<!-- 529 -->[[{{tr|Sea Oats}}]]、和<!-- 549 -->[[{{tr|seaweeds}}]]。
+* 通常来说，摧毁{{tr|herb}}会给予{{tr|herb item}}和 1–3 个对应{{tr|seeds}}。{{tr|Staff of Regrowth}}会将这一获得量提高到 1–2 个{{tr|herb item}}和 1–5 个{{tr|seeds}}。{{source code ref|v=1.4.3.6|method=Terraria.WorldGen.KillTile_GetItemDrops}}
+* 种植在[[{{tr|Clay Pot}}]]或{{eil|Planter Box}}中，且未开花的{{tr|Herbs}}无法被{{tr|Staff of Regrowth}}收获。
+* 虽然在[[{{tr|Jungle}}]]中找到，但{{tr|Staff of Regrowth}}并不能在[[{{tr|Mud Block}}]]上生成[[{{tr|Jungle Grass}}]]。
+* 如果在{{tr|lava}}附近种{{tr|grass}}，它在一小段时间后会变回{{tr|dirt}}。
+* 使用{{tr|Staff of Regrowth}}收集[[{{tr|Glowing Mushroom}}]]不会提供额外的{{tr|Glowing Mushrooms}}或[[{{tr|Mushroom Grass Seeds}}]]。
+* 在 0 [[{{tr|depth}}]]以下种植的{{tr|Grass}}和在 0 {{tr|depth}}以上种植的{{tr|moss}}不会天然蔓延，也不会长出{{tr|tall grass}}或绒毛。
+* {{icon|desktop}} 当在本地{{tr|server}}上从天然{{tr|blocks}}上收获{{tr|herb}}时，未开花的{{tr|herb}}会被摧毁且不会掉落任何物品。{{verify}}
+
+== 小贴士 ==
+* {{tr|Staff of Regrowth}}是增加{{tr|herb}}产量的首选工具，尤其是在[[指南:刷资源|刷资源时]]。
+** 在收获{{tr|Clay Pots}}或{{tr|Planter Boxes}}中的植物时，它会以出色速度收集已开花的{{tr|herb}}，其他生长阶段的{{tr|herb}}不受影响。这保证了{{tr|seed}}的产量，也避免了（使用{{tr|pickaxe}}收获时）意外浪费植物的风险。
+** 不过，在{{tr|block}}上时，{{tr|Staff of Regrowth}}会强制让完全长成的{{tr|herbs}}掉落{{tr|seeds}}。这对收集那些开花条件苛刻的植物的{{tr|seeds}}很有用，如[[{{tr|Deathweed}}]]。
+* {{tr|Staff of Regrowth}}可以在''任何''{{tr|Dirt Block}}上种{{tr|grass}}，无论它所处的深度。不幸的是，{{tr|grass}}在{{tr|underground}}的功能有限，因为在[[{{tr|underground}}]]{{tr|layer}}及以下的位置，{{tr|grass}}上就不会长出{{tr|weed}}和[[{{tr|Daybloom}}]]，[[{{tr|Acorn}}]]也无法成熟。
+* {{tr|Staff of Regrowth}}在[[{{tr|Underground}}]][[{{tr|layer}}]]中有很好的标记作用，因为草的绿色在灰色和褐色的环境中非常明显。
+* 通过在[[{{tr|Pearlstone Block}}]]、[[{{tr|Ebonstone Block}}]]、或[[{{tr|Crimstone Block}}]]的附近使用{{tr|Staff of Regrowth}}种{{tr|grass}}，可以间接地在{{tr|underground}}蔓延[[{{tr|Hallow grass}}]]、[[{{tr|Corrupt grass}}]]、或[[{{tr|Crimson grass}}]]。
+* 在战斗场地、家中等位置放置[[{{tr|Sunflower}}]]时{{tr|Staff of Regrowth}}也很有用。{{tr|Sunflower}}可以放置在任何有两个附草{{tr|Dirt Block}}且有足够竖直空间的区域。
+* {{tr|Staff of Regrowth}}种植{{tr|grass}}的速度可以被[[{{tr|Brick Layer}}]]提高。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|不再能在[[{{tr|Stone Block}}]]上种植[[{{tr|moss}}]]。}}
+{{history|Desktop 1.3.0.3|修复了{{tr|moss}}种植特性在[[{{tr|multiplayer}}]]中不起作用的问题。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 现在可以在{{tr|Stone Block}}上种植{{tr|moss}}了。
+** 现在用于收获[[{{tr|herb}}]]时会提高产量。}}
+{{history|Desktop 1.0.6|{{tr|damage}}由 20 降低至 7，让它用作[[{{tr|melee weapon}}]]时不那么有效。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons}}
+{{Master Template Tools
+| show-other = yes
+}}
+
+{{language info|en=Staff of Regrowth}}

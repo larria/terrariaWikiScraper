@@ -1,0 +1,175 @@
+{{npc infobox|boxwidth=28em
+| auto = 345
+| type = Boss
+| environment = Frost Moon
+| damage2 = <!--
+	-->&#32;{{modes|wrap=no<!--
+	-->|normal=<!--
+		-->{{eicons|Expert Mode|small=y}} {{note|small=y|paren=y|{{tr|contact}}}}<!--
+		--><br/>110 {{eicons|Expert Mode|invert=y|3ds=n}} {{note|small=y|paren=y|{{tr|contact}}}}<!--
+		--><br/>84 {{note|small=y|paren=y|{{gameText|ProjectileName.FrostWave}}}}<!--
+		--><br/>70–74 {{note|small=y|paren=y|{{gameText|ProjectileName.FrostShard}}}}<!--
+	-->|expert=<!--
+		-->{{note|small=y|paren=y|{{tr|contact}}}}<!--
+		--><br/>{{expert|168}} {{note|small=y|paren=y|{{gameText|ProjectileName.FrostWave}}}}<!--
+		--><br/>{{expert|140–148}} {{note|small=y|paren=y|{{gameText|ProjectileName.FrostShard}}}}<!--
+	-->|master=<!--
+		-->{{note|small=y|paren=y|{{tr|contact}}}}<!--
+		--><br/>{{master|252}} {{note|small=y|paren=y|{{gameText|ProjectileName.FrostWave}}}}<!--
+		--><br/>{{master|210–222}} {{note|small=y|paren=y|{{gameText|ProjectileName.FrostShard}}}}<!--
+	-->}}{{source code ref|v=1.4.0.5|name=iqai|method=Terraria.NPC.AI|t=相关部分为<code><nowiki>aiStyle == 60</nowiki></code>。}}
+| debuff = Chilled
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.FrostWave}}}}<br/>66.67% {{note|small=y|paren=y|{{gameText|ProjectileName.FrostShard}}}}
+| debuffduration = {{modes|5–10 {{tr|seconds}}|10–20 {{tr|seconds}}|12.5–25 {{tr|seconds}}}} {{note|small=y|paren=y|参见[[#{{tr|Notes}}|{{tr|Notes}}]]}}
+| debuff2 = Frozen
+| debuffchance2 = 16.54% {{note|small=y|paren=y|{{gameText|ProjectileName.FrostWave}}}}
+| debuffduration2 = {{modes|&le; {{duration|1}}|&le; {{duration|2}}|&le; {{duration|2.5}}}} {{note|small=y|paren=y|参见[[#{{tr|Notes}}|{{tr|Notes}}]]}}
+|:note:|在更高的波数中{{tr|item drop rate}}更高<ref>参见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]获取有关{{tr|loot}}掉落率的详细信息。</ref>|
+|:group:start|可能会掉落以下 4 件{{tr|items}}之一|----
+|:note:|在 14 波或更高波数时，总是会掉落其中之一|#expert
+| Blizzard Staff|1|{{modes|5.19–10.37%|15.56–31.11%}}
+| Snowman Cannon|1|{{modes|5.19–10.37%|15.56–31.11%}}
+| North Pole|1|{{modes|5.19–10.37%|15.56–31.11%}}
+| Baby Grinch's Mischief Whistle|1|{{modes|1.11–2.22%|3.33–6.67%}}
+|:group:end|----|----
+| Reindeer Bells // 只在第 15 及以上波|1|{{modes|1.33–2.22% {{eicons|1.4.4}}|6.67%}}<br/>{{modes|0.56–0.83% {{eicons|1.4.4|invert=y}}|&#32;}}
+| Ice Queen Trophy // 只在第 15 及以上波|1|{{modes|5–16.67% {{eicons|1.4.0.1}}|27.27–60%}}<br/>{{modes|25–50% {{eicons|1.4.0.1|invert=y}}|&#32;}}
+| Frozen Crown|1|{{master|12.5–25%}} @master
+| Ice Queen Relic|1|{{master|50–100%}} @master
+| imageother = Map Icon Ice Queen.png
+| imageothercaption = {{tr|Map Icon}}
+| hardmode = yes
+| sound1 = Item 8.wav
+| soundcaption1 = {{gameText|ProjectileName.FrostWave}}
+| sound2 = Item 27.wav
+| soundcaption2 = {{gameText|ProjectileName.FrostShard}}
+| idprojectile = 348, 349
+}}
+
+'''{{tr|Ice Queen}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Plantera}}]]后的[[{{tr|mini-boss}}]]，在[[{{tr|Frost Moon}}]][[{{tr|event}}]]中生成。她是{{tr|event}}的终极[[{{tr|enemy}}]]，可以自由地穿越[[{{tr|blocks}}]]。{{tr|Frost Moon}}期间，打败{{tr|Ice Queen}}会加 150 / {{expert|300}} / {{master|375}} 点分数。{{source code ref|v=1.4.0.5|name=fmprogress|method=Terraria.NPC.CheckProgressFrostMoon}}她是[[{{tr|Pumpkin Moon}}]]中的[[{{tr|Pumpking}}]]的等价物，是{{tr|the Frost Moon}}中最强大的{{tr|enemy}}，在{{tr|event}}的最后几波中到来，是{{tr|event}}中唯一的{{tr|flying boss}}。
+
+与[[{{tr|Everscream}}]]和[[{{tr|Santa-NK1}}]]类似，{{tr|Ice Queen}}在{{tr|Frost Moon}}在被击杀的波数越靠后，掉落物品的几率就越高。在第 20 波中，被击败的{{tr|Ice Queen}}必定掉落至少一件掉落列表中的{{tr|weapon}}。
+
+== 行为 ==
+{{tr|Ice Queen}}的行为特征为惊人的快速移动和回避动作，同时不断对玩家进行远程攻击。她会悬浮在空中，并试图保持在玩家上方，并随机在以下攻击中变换：
+* {{tr|Ice Queen}}会左右扫过屏幕，并向玩家发射{{item|nolink=y|image=Frost Wave.png|size=20px|{{tr|Frost Waves}}|}}。
+* {{tr|Ice Queen}}悬停在玩家上方同时向她下方倾泻{{item|nolink=y|image=Frost Shard.gif|size=10px|{{tr|Frost Shards}}|}}。这种攻击中的{{tr|The frost shards}}伤害会略大一点（74 / {{expert|148}} / {{master|222}}）。
+* {{tr|Ice Queen}}维持静止不动，然后在空中旋转并向各个方向发射{{tr|Frost Shards}}。此攻击发出的{{tr|frost shards}}会在空中划出长长的水平弧线，并会受{{tr|gravity}}影响，同时会造成略微更低的伤害（70 / {{expert|140}} / {{master|210}}）。
+
+随着{{tr|Ice Queen}}的{{tr|health}}降低，她的加速度和最高水平速度会增加。此外，她的攻击频率也会加快，详细信息在下表中列出。注意这些改变只会在{{tr|Ice Queen}}的{{tr|health}}经过列出阈值后发生，并非持续变化；因此，例如她具有 100% 的{{tr|health}}时，{{tr|frost wave}}发射频率为 2.07 次/秒，在 75% {{tr|health}}时''也将如此''，但一旦她的{{tr|health}}低于 75%，发射频率将立即变为 2.22 次/秒。
+{| class="terraria lined" style="text-align:center;"
+! {{tr|Health}}
+! {{gameText|ProjectileName.FrostWave}}<br/>发射频率<br/><small>（次/秒）</small>
+! {{gameText|ProjectileName.FrostShard}}{{tr|Rain}}<br/>发射频率<br/><small>（碎块/秒）</small>
+! 旋转攻击<br/>发射频率<br/><small>（碎块/秒）</small>
+|-
+| &ge; 75%<br/><small>({{#expr:floor({{npcinfo|345|hp}}*0.75)}} / {{expert|{{#expr:floor({{npcinfo|345|hp|expert}}*0.75)}}}} / {{master|{{#expr:floor({{npcinfo|345|hp|master}}*0.75)}}}})</small>
+| 2.07{{note|small=y|block=y|paren=y|每 29 {{tr|ticks}}发射 1 次}}
+| 3.33{{note|small=y|block=y|paren=y|每 18 {{tr|ticks}}发射 1 次}}
+| 7.5{{note|small=y|block=y|paren=y|每 8 {{tr|ticks}}发射 1 次}}
+|-
+| &ge; 50%<br/><small>({{#expr:floor({{npcinfo|345|hp}}*0.5)}} / {{expert|{{#expr:floor({{npcinfo|345|hp|expert}}*0.5)}}}} / {{master|{{#expr:floor({{npcinfo|345|hp|master}}*0.5)}}}})</small>
+| 2.22{{note|small=y|block=y|paren=y|每 27 {{tr|ticks}}发射 1 次}}
+| 3.53{{note|small=y|block=y|paren=y|每 17 {{tr|ticks}}发射 1 次}}
+| 8.57{{note|small=y|block=y|paren=y|每 7 {{tr|ticks}}发射 1 次}}
+|-
+| &ge; 25%<br/><small>({{#expr:floor({{npcinfo|345|hp}}*0.25)}} / {{expert|{{#expr:floor({{npcinfo|345|hp|expert}}*0.25)}}}} / {{master|{{#expr:floor({{npcinfo|345|hp|master}}*0.25)}}}})</small>
+| 2.4{{note|small=y|block=y|paren=y|每 25 {{tr|ticks}}发射 1 次}}
+| 4{{note|small=y|block=y|paren=y|每 25 {{tr|ticks}}发射 1 次}}
+| 12{{note|small=y|block=y|paren=y|每 5 {{tr|ticks}}发射 1 次}}
+|-
+| &ge; 10%<br/><small>({{#expr:floor({{npcinfo|345|hp}}*0.1)}} / {{expert|{{#expr:floor({{npcinfo|345|hp|expert}}*0.1)}}}} / {{master|{{#expr:floor({{npcinfo|345|hp|master}}*0.1)}}}})</small>
+| rowspan="2" style="border-bottom:0px;" | 2.61{{note|small=y|block=y|paren=y|每 23 {{tr|ticks}}发射 1 次}}
+| 4.62{{note|small=y|block=y|paren=y|每 13 {{tr|ticks}}发射 1 次}}
+| 30{{note|small=y|block=y|paren=y|每 2 {{tr|ticks}}发射 1 次}}
+|-
+| &lt; 10%
+| 5.46{{note|small=y|block=y|paren=y|每 11 {{tr|ticks}}发射 1 次}}
+| 60{{note|small=y|block=y|paren=y|每{{tr|ticks}}发射 1 次}}
+|}
+
+== 备注 ==
+* 在 {{tr|the Frost Moon}}的最后几波中屏幕上可能会同时有多个{{tr|Ice Queens}}。
+* {{tr|Ice Queen}}在靠后的波数中有更高的战利品掉落几率。更多细节，参见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}}]]。
+* {{tr|The Ice Queen}}的{{tr|projectiles}}会造成下列[[{{tr|debuffs}}]]：<ref>总体来说，造成{{tr|Chilled}}{{tr|debuff}}的几率：{{tr|Frost Wave}}为 100%，{{tr|Frost Shard}}为 {{chance|2/3}}。造成{{tr|The Frozen}}{{tr|debuff}}的总体几率为 {{chance|127/768}}。{{source code ref|v=1.4.0.5|noref=y|method=Terraria.Projectile.StatusPlayer / Terraria.Player.AddBuff / Terraria.Player.AddBuff_DetermineBuffTimeToAdd}}</ref>
+:{| class="terraria lined align-center"
+! rowspan="2" | {{tr|Debuff}}
+! rowspan="2" | 来自{{tr|projectile}}
+! colspan="3" | {{tr|Duration}}
+! rowspan="2" | 几率
+|-
+! {{tr|Classic}} !! {{eil|Expert Mode|Expert}} !! {{eil|Master Mode|Master}}
+|-
+| rowspan=4 | {{item|Chilled}}
+| rowspan=2 | {{item|Frost Wave|mode=image|nolink=y|size=55px}}<br/>{{gameText|ProjectileName.FrostWave}}
+| {{duration|300 ticks}} || {{expert|{{duration|600 ticks}}}} || {{master|{{duration|750 ticks}}}}
+| {{chance|1/2}}
+|-
+| {{duration|600 ticks}} || {{expert|{{duration|1200 ticks}}}} || {{master|{{duration|1500 ticks}}}}
+| {{chance|1/2}}
+|-
+| rowspan=2 | {{item|Frost Shard|mode=image|ext=gif|nolink=y}}<br/>{{gameText|ProjectileName.FrostShard}}
+| {{duration|300 ticks}} || {{expert|{{duration|600 ticks}}}} || {{master|{{duration|750 ticks}}}}
+| {{chance|1/3}}
+|-
+| {{duration|600 ticks}} || {{expert|{{duration|1200 ticks}}}} || {{master|{{duration|1500 ticks}}}}
+| {{chance|1/3}}
+|-
+| rowspan=3 style="border-bottom:0px" | {{item|Frozen}}
+| rowspan=3 style="border-bottom:0px;" | {{item|Frost Wave|mode=image|nolink=y|size=55px}}<br/>{{gameText|ProjectileName.FrostWave}}
+| {{duration|20 ticks}} || {{expert|{{duration|40 ticks}}}} || {{master|{{duration|50 ticks}}}}
+| {{chance|55/768}}
+|-
+| {{duration|40 ticks}} || {{expert|{{duration|80 ticks}}}} || {{master|{{duration|100 ticks}}}}
+| {{chance|5/96}}
+|-
+| {{duration|60 ticks}} || {{expert|{{duration|120 ticks}}}} || {{master|{{duration|150 ticks}}}}
+| {{chance|1/24}}
+|}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Frost Moon}}攻略}}
+* {{tr|Ice Queen}}的两种攻击会造成[[{{tr|Chilled}}]][[{{tr|debuff}}]]，这会延缓玩家的{{tr|movement speed}}，{{tr|Frost Wave}}有时候还会造成[[{{tr|Frozen}}]]{{tr|debuff}}，这会完全定住玩家。装备{{eil|Hand Warmer}}或[[{{tr|Ankh Shield}}]]会抵消这些效果，可能会让战斗不那么让人泄气。
+* 推荐饮用{{eil|Warmth Potion}}，这会大大降低{{tr|Ice Queen}}对玩家造成的{{tr|damage}}，并会持续整个{{tr|event}}。
+* {{tr|The Frozen debuff}}会导致玩家离开[[{{tr|mounts}}]]，若玩家位于足够高的高空且不免疫[[{{tr|fall damage}}]]，这可能会杀死玩家。
+* {{tr|The Ice Queen}}在执行“{{tr|Ice}}旋转”攻击时最容易受到攻击，当她开始原地快速旋转时，会向各个方向射击{{tr|Frost Shards}}。这也是她唯一停留在一处的时间。
+* {{tr|Ice Queen}}在旋转攻击时，她的{{tr|Frost Shards}}的发射分布是有加权的，因此射弹以近对角线方向发射的几率明显高于近垂直或近水平方向。因此，与站在斜对角方向上的玩家相比，站在与{{tr|Ice Queen}}大致同一方向上的玩家被击中的几率较小。{{#tag:ref|对于{{tr|this attack}}而言，{{tr|the frost shards}}的角度是这样确定的：首先生成一个均匀分布的随机变量作为水平速度，再生成一个均匀分布的随机变量作为竖直速度，然后对这两个速度向量进行归一化，得到一个长为 15.0 的速度向量，同时角度不变。因此，在极坐标下表示的速度向量的方向，并不是均匀分布的，而是与 <math>\frac{1}{8 \cos^2 \theta},\quad -\pi \leq \theta < \pi</math> 成正比。演示并解释了此机制的外部资源可以在[https://stats.stackexchange.com/questions/254425/how-is-theta-the-polar-coordinate-distributed-when-x-y-sim-u-1-1-tim 这里]找到。<ref name="iqai"/>|name=iqaidist}}
+* 为了减轻她的伤害，使用[[{{tr|Cross Necklace}}]]/[[{{tr|Star Veil}}]]和有[[{{tr|lifesteal}}]]作用的物品（[[{{tr|Spectre armor}}]]或[[{{tr|Vampire Knives}}]]），并装备[[{{tr|wings}}]]和可能的运动增强{{tr|accessory}}来追逐和躲避将会非常有效。
+
+== 花絮 ==
+* 在{{eversions|1.3.0.1|invert=y}}中，{{tr|Ice Queen}}被认为是游戏中第三强的{{tr|enemy}}，最强的是[[{{tr|Dungeon Guardian}}]]，第二强的是[[{{tr|Duke Fishron}}]]。
+{{bestiary}}
+:* {{tr|This Bestiary entry}}可能是参考了{{维基百科|b=y|Frozen (franchise)|冰雪奇缘}}中的 {{维基百科|Elsa (Frozen)|Elsa}}，因为 Elsa 唱过的最有名的歌是“{{维基百科|Let It Go}}”，而{{tr|Ice Queen}}的{{tr|bestiary entry}}提及了这首歌的名字。此外，Elsa 因其王族身份而被称为{{tr|Ice Queen}}，并且《冰雪奇缘》的故事是基于{{维基百科|Hans Christian Andersen|安徒生}}在 1844 写的一本叫做{{维基百科|b=y|The Snow Queen|冰雪女王}}的书改编而来的。
+:* 关于摄取灵魂这一说法，几乎可以肯定是从安徒生的故事中改编出来的。
+
+== 图库 ==
+<gallery>
+Ice Queen (1st attack).gif|{{tr|Frost Wave attack}}时的{{tr|Ice Queen}}。
+Ice Queen (2nd attack).gif|{{tr|Frost Shard attack}}时的{{tr|Ice Queen}}。
+Ice Queen (3rd attack).png|{{tr|spinning}}{{tr|Frost Shard attack}}时的{{tr|Ice Queen}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Master Mode}}中每次击杀时，给予的{{tr|Frost Moon}}波次点数从 300 增加至 375。
+** {{tr|Reindeer Bells}}的掉落率翻倍。}}
+{{history|Desktop 1.4.0.1|现在有[[{{tr|Master Mode}}]]掉落：它死亡时总是会掉落{{tr|Ice Queen}}[[{{tr|Relic}}]]，另外还有 25% 几率掉落[[{{tr|Frozen Crown}}]][[{{tr|mount}}]]。}}
+{{history|Desktop 1.3.0.1|伤害由 130 降低至 120。}}
+{{history|Desktop 1.2.3.1|
+** {{tr|Damage}}由 160 降低至 130。
+** 每次击杀时，给予的{{tr|Frost Moon}}波次点数从 120 增加至 150。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Frost Moon Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Ice Queen}}

@@ -1,0 +1,69 @@
+{{item infobox
+| imagebreak = yes
+| type = Furniture
+| auto = 502
+| width = 1 | height = 1
+| idtile = 129 (0–17)
+| tags = drop / plunder / plunder:Underground Hallow / bag loot / hardmode / Potion ingredients
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|{{tr|Crystal Vile Shard}}}}
+
+'''{{tr|Crystal Shards}}'''是一种常见的[[{{tr|Hardmode}}]][[{{tr|crafting material}}]]，可在[[{{tr|Underground Hallow}}]]中找到。它们可以天然在下列{{tr|block}}的左侧、右侧、和底部生长：[[{{tr|Pearlstone Block}}]]、[[{{tr|Pink Ice Block}}]]、{{eicons|1.4.4}}[[{{tr|Pearlsand Block}}]]、[[{{tr|Hardened Pearlsand Block}}]]、和[[{{tr|Pearlsandstone Block}}]]。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.hardUpdateWorld|field=Terraria.ID.TileID.Sets&#46;CanGrowCrystalShards|t=实际生长方位的几率为：{{chance|1/4}} 左侧，{{chance|1/4}} 右侧，{{chance|1/2}} 底部。这很可能是由于代码错误导致的。}}由于它们能持续地生长，可以建造[[{{tr|Crystal Shard|link=y}}#{{tr|Tips}}|农场]]来刷取它们。与[[{{tr|Demonite Ore}}]]和[[{{tr|Crimtane Ore}}]]类似，{{tr|Crystal Shards}}会发出微弱的光。它们不会[[{{tr|Biome spread}}|传播]][[{{tr|the Hallow}}]]。
+
+当{{tr|Crystal Shard}}将要长出时，它有 {{chance|1/50}} 几率被{{eil|Gelatin Crystal}}替代。
+
+{{tr|Crystal Shards}}有 {{chance|1/2}} 几率从{{eil|Divine Crate|s}}中获得，数量为 4–10 个。在{{eversions|1.3.0.1|invert=y|old-gen=n}}中，[[{{tr|Arch Demon}}]]必定掉落 3–4 个{{tr|Crystal Shards}}，使得它们可在[[{{tr|pre-Hardmode}}]]获得。
+
+{{tr|Crystal Shard}}能被[[{{tr|placeable}}|放置]]在几乎所有位置（包括墙上、地面上、天花板上），但它们的亮度通常不足以取代其他[[{{tr|light sources}}]]，放置它们也没有任何功能性的效果。尽管{{tr|Crystal Shard}}只能自然生成在与[[{{tr|the Hallow}}]]有关的{{tr|tile}}上，将它们收集后便可将其放置在任何地方。
+
+制作所有{{tr|items}}（包括一种颜色的[[{{tr|Phasesaber}}]]，且不包括{{tr|consumables and furniture}}）总计需要{{eicons|1.4.4|}} 90 / {{eicons|1.4.4|invert=y}} 135 个{{tr|Crystal Shards}}。制作每种{{tr|weapon}}和每种颜色的{{tr|Phasesaber}}则总计需要 {{eicons|1.4.4|}} 240 / {{eicons|1.4.4|invert=y}} 385 个{{tr|Crystal Shards}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Crystal Shard|expectedrows=28}}
+
+== 备注 ==
+* {{tr|Crystal Shard}}可在下列情况下生长：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.hardUpdateWorld}}
+** 作为生长源的{{tr|block}}位于[[{{tr|Cavern}}]]{{tr|layer}}及以下。它并不需要在[[{{tr|Underground Hallow}}]]{{tr|biome}}中。
+** 目标{{tr|tile}}（即{{tr|Crystal Shard}}将会生长在的{{tr|tile}}）未被其他实心物体占据。
+** 以目标{{tr|tile}}为中心，13×13 格的矩形区域内其他的{{tr|Crystal Shards}}数量少于 2 个。
+** {{tr|Crystal Shard}}可以在[[{{tr|liquids}}]]中和[[{{tr|background walls}}]]前生长。
+* {{tr|Crystal Shards}}在生长或放置时的颜色会随机为粉色、紫色或蓝色。不同颜色的{{tr|Crystal Shards}}之间没有功能上的差别。
+* {{tr|Crystal Shard}}的颜色可以被[[{{tr|paints}}]]改变，但它发出的光的颜色无法被改变。
+
+== 小贴士 ==
+* 相对于{{tr|Crystal Shards}}的稀有程度来说，它具有极高的售价。所以刷{{tr|Crystal Shards}}是在{{tr|Hardmode}}中最有效率的赚钱方法之一。1000 个{{tr|Crystal Shards}}的售价为 {{sell expr|Crystal Shard|*1000}}。
+* 若有多余的[[{{tr|Pixie Dust}}]]，制作[[{{tr|Greater Healing Potion}}]]并卖出可以使{{tr|sell value}}由每个{{tr|Crystal Shard}} {{sell expr|Crystal Shard|+|Pixie Dust|*3}}（直接卖出{{tr|ingredients}}）提升至 {{sell expr|Greater Healing Potion|*3}}。{{eicons|Alchemy Table}}[[{{tr|Alchemy Table}}]]所提供的{{tr|bonus}}能进一步提高收益至大约每个{{tr|Crystal Shard}} {{sell expr|Greater Healing Potion|*3*1.5}}。99 个{{tr|Pixie Dust}}搭配 33 个{{tr|Crystal Shards}}（以及用于制作[[{{tr|Bottled Water}}]]的 100 个[[{{tr|Sand Block}}]]），在{{tr|the Alchemy Table}}处制作后可以卖出大约 {{sell expr|Greater Healing Potion|*99 *1.5}}，比直接卖出原料多赚了 {{sell expr|Greater Healing Potion|*99 *1.5 / (|Pixie Dust|*99 +|Crystal Shard|*33) *100 -100 round 0|raw=y}}%。
+* 可以用合理设置的布局来刷{{tr|Crystal Shards}}。参见[[指南:刷资源#{{tr|Crystal Shards}}|指南:刷资源 § {{tr|Crystal Shards}}]]以获取更多细节。
+* 由于{{tr|Crystal Shards}}会发出光亮，去除{{tr|light sources}}将更容易发现它们。
+
+== 另见 ==
+* {{eil|Gelatin Crystal}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可在{{tr|Pearlsand Block, Hardened Pearlsand Block, and Pearlsandstone Blocks}}上天然生长。}}
+{{history|Desktop 1.3.0.1|
+** 现在用于制作[[{{tr|Chik}}]]、[[{{tr|Crystal Block}}]]、和[[{{tr|Crystal Dart}}]]。
+** {{tr|Item and placed}}的{{tr|sprites updated.}}}}
+{{history|Desktop 1.2.3|现在用于制作[[{{tr|Super Mana Potion}}]]。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1.1|现在在复古和白光的照明模式下会发光。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再能在{{tr|pre-Hardmode}}获得，因为{{tr|Arch Demons}}已被移除。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-material = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Crystal Shard}}

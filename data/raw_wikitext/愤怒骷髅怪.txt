@@ -1,0 +1,132 @@
+{{npc infobox
+| auto = 31
+| image = Angry Bones 1.gif
+| type = Undead Enemy
+| environment = Dungeon
+| damage =
+| defense =
+| life =
+| knockback =
+| money =
+| Clothier Voodoo Doll|1|0.33%
+| Ancient Necro Helmet|1|0.22%
+|:group:start| 总是会掉落以下四件物品之一 | @normal
+| Bone|1–3|97.09% <!-- 249/250 * 99/100 * 64/65  =  788832/812500 --> @normal
+| Golden Key|1|1.52% <!-- 249/250 * 99/100*1/65  =  24651/1625000 --> @normal
+| Tally Counter|1|1% <!-- 249/250 * 1/100  = 0.996% --> @normal
+| Bone Wand|1|0.4% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Bone|{{modes|expertonly=y|2–6}}|{{modes|expertonly=y|100%}} #expert
+| Golden Key|1|1.52% #expert
+| Tally Counter|1|1% #expert
+| Bone Wand|1|0.4% #expert
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲
+| shownpcid = no
+| cargo = no
+}}<!--
+
+The drops being grouped in Classic Mode but not in Expert and Bones having different rates
+and quantities is too convoluted for proper Cargo database storage. Therefore, the drops in
+the infobox above are only for display and we use the invisible infobox below for storing the
+drops to Cargo.
+-->{{npc infobox | view = void
+| auto = 31
+| cargo = no | cargodrops = yes
+| Clothier Voodoo Doll|1|0.33%
+| Ancient Necro Helmet|1|0.22%
+| Bone|{{modes|1–3|2–6}}|{{modes|97.09%|100%}}
+| Golden Key|1|1.52%
+| Tally Counter|1|1%
+| Bone Wand|1|0.4%
+}}
+
+'''{{tr|Angry Bones}}'''是一种出现在[[{{tr|Dungeon}}]]中的[[{{tr|Enemy}}|{{tr|enemies}}]]。它们遵循[[{{tr|Fighter AI}}]] 且能在一两次打击后打开关着的[[{{tr|door}}]]。当他们接近玩家、或玩家处于它们上方时，它们有时会跃向玩家。
+
+== 种类 ==
+{{npc infobox/tablestart}}
+{{npc infobox/options|view=table|cols=npcid/variant/healthBlock/damageBlock/defenseBlock/kbresist/moneyBlock}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+! {{tr|Coins}}
+{{npc infobox
+| auto = 31
+| image = Angry Bones 1.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = -13
+| imagealt = [[File:Angry Bones 1.gif|{{#expr:30*0.9 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = -14
+| imagealt = [[File:Angry Bones 1.gif|{{#expr:30*1.15 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 294
+| image = Angry Bones 2.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 295
+| image = Angry Bones 3.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+{{npc infobox
+| auto = 296
+| image = Angry Bones 4.gif
+| type = Undead Enemy
+| environment = Dungeon
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 小贴士 ==
+* [[{{tr|Dungeon}}]]中出现的大多数武器对抗{{tr|Angry Bones}}都很有效，比如[[{{tr|Water Bolt}}]]或[[{{tr|Blue Moon}}]]，这得感谢它们的穿透能力。
+* 如果玩家觉得对抗{{tr|Angry Bones}}有难处，抓住墙和天花板是一个脱离其攻击范围的好办法。
+* {{tr|the Angry Bones}}的两个品种有超过 100 的生命值，这让它们在[[{{tr|Plantera}}]]被打败后能够生成[[{{tr|Dungeon Spirit}}]]。
+
+== 花絮 ==
+* {{tr|Big Bones}}变体种类的内部名称是 <code>BigBoned</code>。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}之前的{{tr|sprite}}是[[File:Angry Bones 1 (pre-1.4.0.1).png|link=]] [[File:Angry Bones 2 (old).png|link=]] [[File:Angry Bones 3 (old).png|link=]] [[File:Angry Bones 4 (old).png|link=]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}之前的{{tr|sprite}}是[[File:Angry Bones 1 (old).png|link=]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在掉落[[{{tr|Tally Counter}}]]。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|
+** 引入了三种新的种类。
+** {{tr|Big Bones}}和{{tr|Short Bones}}版本不再拥有独特的名字，但维持了属性。
+** 掉落[[{{tr|Ancient Necro Helmet}}]]、[[{{tr|Clothier Voodoo Doll}}]]、和[[{{tr|Bone Wand}}]]。}}
+{{history|Desktop 1.1|
+** 不再免疫[[{{tr|On Fire!}}]]。
+** {{tr|Big Bones}}的生命值低了一点。}}
+{{history|Desktop 1.0.6|所有种类现在会掉落多于一个[[{{tr|Bone}}]]，以及偶尔会有[[{{tr|Golden Key}}]]。}}
+{{history|Desktop 1.0.5|引入了{{tr|Big Bones}}和{{tr|Short Bones}}种类。}}
+{{history|Desktop 1.0.3|{{tr|Sprite updated.}}之前的{{tr|sprite}}是 [[File:Angry Bones (pre-1.0.3).png]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Angry Bones}}

@@ -1,0 +1,201 @@
+{{see also|指南:物品栏管理}}
+
+'''{{tr|Inventory}}'''是玩家随身物品和装备的存放处，随时可使用。不像[[{{tr|Chest}}]]的内容物，{{tr|the inventory}}是绑定到玩家而非世界的，其内容物会跟随玩家穿行于多个世界间甚至是[[{{tr|Multiplayer}}]]服务器之间。可以通过按 {{key|inventory}} 键来存取{{tr|The inventory}}，具体绑定则随玩家所选的平台而异。
+
+当玩家拿起世界中找到的{{tr|items}}或从[[{{tr|Storage Items}}|{{tr|Storage Item}}]]中拿取{{tr|item}}时，{{tr|Items}}会被添加到{{tr|inventory}}中，并且可以用 {{key|use}} 键来拿起或放置{{tr|items}}，让它们可以在不同栏位间排序。通过这种方式在{{tr|cursor}}上持有的{{tr|item}}即视为玩家手持它；[[{{tr|weapons}}]]可用于攻击、[[{{tr|consumable}}|{{tr|consumable items}}]]可被使用、而[[可放置]]的{{tr|items}}可以在用{{tr|cursor}}持有时放置在世界中。但是，{{tr|cursor}}中持有的{{tr|item}}被视为已经从{{tr|inventory}}中移除——它所占据的空间可被其他物品所占用，当{{tr|the inventory}}关闭后，它会被扔掉。通过这种方式扔下物品，或者拖动物品并将其放在{{tr|inventory}}之外，会导致{{tr|item}}掉落到地上，这也可以通过按 {{key|throw}} 来实现；这样扔下的{{tr|items}}稍后可以再捡起来，并且在它们消失前会一直留存在世界上。
+
+{{tr|Inventories}}由多个栏位组成，每个栏位都能包含一种物品。虽然有些物品——比如大多数{{tr|weapons}}——每个都需要自己的栏位，但许多种类的物品可以将它们自身的多个“堆叠”到单个栏位中。在{{eversions|1.4.4|short}}中，所有可堆叠{{tr|items}}都能堆叠到每栏位最多 9999 个，但是，在{{eversions|1.4.4|invert=y|short}}中，物品能堆叠进单个栏位的最大数量取决于具体物品（参见[[{{tr|item|link=y}}#堆叠|物品§堆叠]]）；例如，大多数建筑[[{{tr|block}}]]和[[{{tr|wall}}]]可以堆叠到最多 999 个{{tr|items}}，但[[{{tr|potion}}]]就各有不同，大多数{{tr|health potions}}和{{tr|buff potions}}可以堆叠到 30 个，而{{tr|mana potions}}每个栏位可以放 50、75、或 99 个。当一个堆叠填满时，更多同种物品就会在{{tr|the inventory}}中占用一个新的栏位。{{key|open}} 键可以用于从堆叠的多个物品中拿起单个；通过这种方法，堆叠可以分割开来。
+
+{{tr|inventory}}的不同分区用于不同的目的，并且有可能限制其栏位中可以容纳的内容。它们的功能和可能的内容详述如下。
+
+== {{tr|Inventory}}分区 ==
+[[File:CondensedInventory.png|frame|300px|{{tr|inventory}}在使用中的各个分区。]]
+=== {{anchor|Main inventory}}{{anchor|{{tr|Main inventory}}}}{{tr|Main Inventory}}（40 栏位） ===
+{{tr|inventory}}的主要{{tr|storage}}分区包含四行、每行十个栏位，可以容纳任何物品。拾取的物品会被放在此区域以妥善保存，从右下角开始放起。将物品放在这里通常不会有任何效果。
+
+{{eicons|1.3.0.1}}游戏还提供了一些{{tr|inventory}}管理功能：
+* {{icon|desktop}} [[File:Quick Stack to Nearby Chests.png|20px|link=]] / {{icon|mobile}} [[File:Quick Stack to Nearby Chests (mobile).png|20px|link=]] '''[[{{#invoke:gameText|getRaw|GameUI.QuickStackToNearby}}]]'''：按下此按钮会将{{tr|inventory}}中的物品移动到附近内含相同物品的{{tr|storage items}}中。
+* {{icon|desktop}} [[File:Sort Inventory.png|20px|link=]] / {{icon|mobile}} [[File:Sort Inventory (mobile).png|20px|link=]] '''[[#排序|{{#invoke:gameText|getRaw|GameUI.SortInventory}}]]'''：按下此按钮会对{{tr|inventory}}中的物品进行排序。见[[#排序|下方]]获取细节。
+* {{icon|desktop}} '''快速{{tr|Trash}}'''：按住 {{key|shift}} 或 {{key|Ctrl}}（取决于[[{{tr|settings}}]]）会显示出 [[File:Cursor Trash.png|link=]] {{tr|trash cursor}}。然后，对物品按下 {{key|use}} 会将其送到[[{{tr|Trash Slot}}]]。
+* '''{{#invoke:gameText|getRaw|UI.Favorite}}'''：被{{tr|Favorite}}的物品无法被扔出、快速丢弃、或被“{{#invoke:gameText|getRaw|GameUI.QuickStackToNearby}}”或“{{#invoke:gameText|getRaw|GameUI.SortInventory}}”移动。不过，被{{tr|Favorite}}的物品仍然可以手动放置到{{tr|Trash Slot}}中，这时此物品会自动被取消{{tr|Favorite}}。
+** {{icon|desktop}}按住 {{key|alt}} 会显示 [[File:Cursor Favorite.png|link=]] {{tr|favorite cursor}}。然后，对物品按下 {{key|use}} 会切换其{{tr|favorite}}状态。
+** {{icon|mobile}}选中一件物品会让 [[File:Favorite Item.png|20px|link=]] {{tr|Favorite}} / [[File:Unfavorite Item.png|20px|link=]] 取消{{tr|favorite}}按钮高亮显示，这些按钮可以用于切换其{{tr|favorite}}状态。
+* {{icon|mobile}} [[File:Split Stack.png|20px|link=]] '''分堆'''：选择一叠物品后点击此按钮会显示用于调整从堆叠中分出多少件物品的界面。点击界面中高亮的物品图标会对堆叠进行拆分。
+
+=== {{anchor|Hotbar}}{{anchor|{{tr|Hotbar}}}}{{tr|Hotbar}}（10 栏位） ===
+单行，十个栏位，对应于{{key|0-9}}键。当{{tr|the inventory}}关闭时，这十个栏位中始终会有一个高亮显示，按 {{key|use}} 键会导致使用高亮的物品。按下栏位所对应的数字键会使其被高亮标记，另外高亮标记也能通过滚动鼠标滚轮来移动。没有用途的{{tr|Items}}依然可以存放在这里。
+
+{{icon|desktop}}默认情况下，点击{{tr|hotbar}}中的一件物品会选中它。这一行为可以用 [[File:Hotbar toggle (unlocked).png|link=]] [[File:Hotbar toggle (locked).png|link=]] {{tr|Hotbar}}锁[[{{tr|toggle}}]]来切换开关。
+
+=== {{tr|Crafting menu}} ===
+{{main|{{tr|Crafting}}}}
+玩家的主要物品生产方式，只要玩家的{{tr|inventory}}处于打开状态，包括玩家打开{{tr|chest}}或其他{{tr|storage item}}时，{{tr|crafting menu}}就会出现。它显示为可能可制作的物品列表，根据玩家恰当距离内的{{tr|crafting stations}}和{{tr|inventory}}内所拥有的所需{{tr|materials}}来显示。靠近{{tr|crafting station}}会将其{{tr|recipes}}添加到玩家的列表中；不过，若玩家不具备所有{{tr|ingredients}}，{{tr|recipes}}就不会显示。如果玩家打开了{{tr|chest}}（等），在{{tr|chest}}中的所有物品也会对{{tr|recipes}}计为“拥有”。
+
+当{{tr|the inventory}}打开时，{{tr|crafting menu}}处于 [[File:Crafting (scroll).png|20px|link=]] 滚动模式下：使用鼠标滚轮可以缓慢地在{{tr|crafting recipes}}间滚动。点击{{tr|hammer icon}}会将菜单切换为 [[File:Crafting (list).png|20px|link=]] 列表模式，这会开启一个包含所有目前可用{{tr|recipes}}的网格，选中其中一格会将其放在菜单中心。点击中心的物品会从玩家的{{tr|inventory}}中移除所需的{{tr|materials}}并{{tr|craft}}出此物品。虽然物品是一次一个地制作出来的，但{{tr|cursor}}会像从{{tr|the inventory}}拿起那样持有成品，并且可以反复{{tr|craft}}直到到达单个{{tr|item}}的堆叠上限。
+
+=== {{anchor|Coins}}{{anchor|{{tr|Coins}}}}{{tr|Coins}}（4 栏位） ===
+供四种[[{{tr|Coins}}]]使用的四个栏位。这些栏位通常只能容纳{{tr|coins}}，但在{{console version}}中，如果玩家的{{tr|inventory}}已满，装满的{{tr|buckets}}会放置在这些{{tr|slots}}中。
+
+=== {{anchor|Ammo}}{{anchor|{{tr|Ammo}}}}{{tr|Ammo}}（4 栏位） ===
+用于各种[[{{tr|Ammunition}}]]的四个栏位。当使用需要{{tr|ammo}}的武器时，在此区域中的{{tr|ammo}}{{tr|items}}会在主{{tr|inventory}}中{{tr|ammo}}{{tr|items}}之前被用掉，从顶上的那个栏位开始。只有[[{{tr|Bullets}}]]、[[{{tr|Arrows}}]]和[[{{tr|Rockets}}]]会自动移动到{{tr|the Ammo slots}}，但大多数可以用作{{tr|ammo}}的{{tr|item}}都可以手动放置在这里，包括[[{{tr|Endless Musket Pouch}}]]、[[{{tr|Endless Quiver}}]]、[[{{tr|Gel}}]]、[[{{tr|Fallen Star}}]]、[[{{tr|Ale}}]]和[[{{tr|Seed}}]]（参见[[{{tr|Ammunition}}#其他类型|{{tr|other ammunition}}]]以获取完整列表）；例外的是[[{{tr|Sand}}]]、[[{{tr|Coins}}]]。值得注意的是，由于[[{{tr|Wrench}}]]、[[{{tr|Fishing Rod}}]]、和[[{{tr|Clentaminator}}]]的运作方式，[[{{tr|Wire}}]]、[[{{tr|Bait}}]]、和[[{{tr|Solution}}]]也可以放在这些栏位中。
+
+=== {{anchor|Trash}}{{anchor|{{tr|Trash}}}}{{anchor|{{tr|trash slot}}}}{{tr|Trash}}（1 栏位） ===
+{{dablink|不要与[[{{tr|Trash Can}}]]物品相混淆。}}
+用于弃置物品的单个栏位。可以在此栏位中放置单个物品，它会保留在那直到玩家将其移除。物品随时都可以从{{tr|trash slot}}中取出而不会有任何影响。但是，当另一个物品放进{{tr|Trash slot}}时，当前处于{{tr|trash slot}}中的物品——即使是通常会堆叠的物品——就会被永久删除。被{{tr|trash slot}}所摧毁的物品无法以任何方式回收。当{{tr|character}}死亡或退出{{tr|world}}时，{{tr|The Trash slot}}也会被清空。
+
+如果适用，放在此处的物品将不再起作用，除非放回{{tr|inventory}}。例如，{{eil|Encumbering Stone}}不会阻止玩家拾取物品。{{eicons|1.3.1}}同样，[[{{tr|Paint Sprayer}}]]不会自动刷漆。
+
+=== {{anchor|Armor}}{{anchor|{{tr|Armor}}}}[[File:Extra 54 0.png|link=]] [[File:Extra 54 2.png|link=]] [[File:Extra 54 4.png|link=]] {{tr|Armor}}（3 栏位） ===
+针对玩家头部、躯干、和腿部的栏位。各个栏位上可以装备恰当类型的[[{{tr|Armor}}]]，这会将其效果——通常是增加[[{{tr|Defense}}]]——赋予玩家。穿戴的{{tr|armor}}会显示在玩家的外观上。
+
+=== {{anchor|Vanity armor}}{{anchor|{{tr|Vanity armor}}}}[[File:Extra 54 1.png|link=]] [[File:Extra 54 3.png|link=]] [[File:Extra 54 5.png|link=]] {{tr|Vanity Armor}}（3 栏位） ===
+又称为[[{{tr|Social Slot}}]]。<section begin=Vanity Armor/>这些栏位会改变玩家头部、躯干、和腿部的视觉外观。虽然这些栏位接受和{{tr|armor slots}}相同类型的物品，但放置在这里的物品是纯视觉的，不会改变玩家的属性或产生任何其他效果。不过，它们的外观会覆盖相应的{{tr|armor slot}}，使得玩家可以在他们的{{tr|armor}}不符合审美偏好时将其隐藏。
+
+对于不关心美学的玩家而言，这些栏位可以用于存放一套备用{{tr|armor}}。例如，一个人物可以穿着一套{{tr|melee armor}}同时在{{tr|vanity slots}}中装备一套法师{{tr|armor}}，以便在需要时能够切换到魔法强化{{tr|armor}}。<section end=Vanity Armor/>
+
+=== {{anchor|Armor dye}}{{anchor|{{tr|Armor dye}}}}[[File:Extra 54 6.png|link=]] {{tr|Armor Dye}}（3 栏位） ===
+另外一种针对{{tr|armor slots}}的美学调节器。放在这三个栏位中的[[{{tr|Dyes}}]]会给对应栏位中显示的物品重新着色，这意味着如果没有穿戴{{tr|vanity items}}，{{tr|Dyes}}将对玩家的{{tr|armor}}进行重新着色。
+
+=== {{anchor|Accessories}}{{anchor|{{tr|Accessories}}}}[[File:Extra 54 15.png|link=]] [[{{tr|Accessories}}]]（5 / {{master|6}} 栏位） ===
+五个（{{master|六个}}）用于[[{{tr|accessories}}]]的栏位。只有{{tr|accessories}}可以放置在这些栏位中，也只有在这里它们才能生效。不像{{tr|armor}}，任何{{tr|accessory}}都可以放在任何一个栏位中，即使是看似相互覆盖的物品——可以同时穿上[[{{tr|Hermes Boots}}]]和[[{{tr|Rocket Boots}}]]。其中许多物品会显示在玩家的外观上，按照从上到下的顺序。每个{{tr|Accessory slot}}的右上角都有 [[File:Visibility toggle (on).png|link=]][[File:Visibility toggle (off).png|link=]] 可见性[[{{tr|toggle}}]]；点击此{{tr|toggle}}会切换开关此栏位中{{tr|accessory}}的外观的显示。这纯粹是为了美观，对{{tr|accessory}}的功能没有影响；隐藏的{{tr|accessories}}依然会正常起作用，而诸如[[{{tr|Shield of Cthulhu}}]]这样激活的{{tr|accessories}}在使用时可能会重新出现。
+
+使用[[{{tr|Demon Heart}}]]会提供一个{{expert|额外的{{tr|accessory slot}}}}。这个栏位只在[[{{tr|Expert mode}}]]或[[{{tr|Master Mode}}]]中可用——进入{{tr|classic world}}会导致在此额外栏位中的物品停止生效，并且如果将其移除就无法再放回去，除非玩家返回{{tr|Expert or Master world}}。
+
+{{eicons|Master Mode}}玩家在[[{{tr|Master Mode}}]]世界中会拥有一个{{master|额外的{{tr|accessory slot}}}}。这个栏位只在{{tr|Master Mode}}中可用——进入{{tr|classic or Expert world}}会导致在此额外栏位中的物品停止生效，并且如果将其移除就无法再放回去，除非玩家返回{{tr|Master world}}。
+
+=== {{anchor|Vanity accessories}}{{anchor|Social accessories}}{{anchor|{{tr|Vanity accessories}}}}{{anchor|{{tr|Social accessories}}}}[[File:Extra 54 12.png|link=]] {{tr|Vanity accessories}} / {{eicons|1.4.0.1}} {{tr|Social accessories}}（5 / {{master|6}} 栏位）===
+与{{tr|vanity armor slots}}类似，这些{{tr|accessory slots}}纯粹是为了美观。
+
+由{{tr|Demon Heart}}所解锁的额外{{tr|accessory slot}}同样会解锁相应的{{tr|vanity slot}}。这个栏位和对应的那个功能栏位受同样的{{tr|Expert mode}}限制。
+
+对于不关心美学的玩家而言，这些栏位可以用来存放 5 / {{master|6}}（使用{{tr|Demon Heart}}后是 {{expert|6}} / {{master|7}}）个备用{{tr|accessories}}。{{tr|Accessories}}在{{tr|a vanity slot}}中时不会生效，但将偶尔会有用的{{tr|accessory}}放在{{tr|vanity slot}}中就可以在需要的时候轻松地将此{{tr|accessory}}切换到主栏位中。
+
+=== {{anchor|Accessory dye}}{{anchor|{{tr|Accessory dye}}}}[[File:Extra 54 6.png|link=]]{{tr|Accessory dye}}（5 / {{master|6}} 栏位） ===
+类似于{{tr|armor dyes}}，在这些栏位中装备{{tr|Dyes}}会将相邻栏位中显示的{{tr|accessories}}重新着色。
+
+同样，由{{tr|Demon Heart}}所解锁的第六个{{tr|accessory slot}}同样会解锁相应的{{tr|accessory dye slot}}。
+
+=== {{anchor|Equipment}}{{anchor|{{tr|Equipment}}}}[[File:Extra 54 8.png|link=]] [[File:Extra 54 17.png|link=]] [[File:Extra 54 9.png|link=]] [[File:Extra 54 10.png|link=]] [[File:Extra 54 7.png|link=]] {{tr|Equipment}}（5 栏位） ===
+{{exclusive|1.3.0.1|section=y}}
+单击{{tr|the armor slots}}上方的 [[File:Equipment menu (on).png|20px|link=]] {{tr|Grappling Hook icon}}可访问{{tr|The Equipment menu}}。它为{{tr|miscellaneous equipment}}提供了额外五个栏位：一只[[{{tr|Pet}}]]、一只[[{{tr|Light Pet}}]]、一辆[[{{tr|Minecart Track}}#{{tr|Minecart}}种类|{{tr|Minecart}}]]、一个[[{{tr|Mount}}]]和一个[[{{tr|Hooks}}]]。每个栏位都只能用于保存相应类型的物品，且只能保存一个。只有{{tr|Minecarts}}是明确要求放置在此栏位中才能运行的；{{tr|grappling hooks}}以及{{tr|mounts}}和{{tr|pets}}的激活物品都是正常可使用的物品，在{{tr|Hotbar}}中时甚至会响应它们对应的热键。
+
+{{tr|Pets}}和{{tr|Light Pets}}有类似于{{tr|accessory slots}}上的 [[File:Visibility toggle (on).png|link=]][[File:Visibility toggle (off).png|link=]] 可见性[[{{tr|toggles}}]]，当切换到关闭时，会阻止它们出现。但是，和{{tr|accessories}}上的{{tr|toggles}}的纯视觉效果不同，这些{{tr|pets}}实际上是被解散掉了，并且默认情况下直到此栏位再次被设为可见之前不会重新出现。
+
+=== {{anchor|Equipment dye}}{{anchor|{{tr|Equipment dye}}}}[[File:Extra 54 6.png|link=]] {{tr|Equipment dye}}（5 栏位） ===
+{{exclusive|1.3.0.1|section=y}}
+五个栏位，{{tr|Equipment slots}}中的{{tr|items}}可以通过它们来染色。这些{{tr|dyes}}只会应用到出现在相应栏位中的已装备物品。将{{tr|Dye}}应用到{{tr|light pet}}上可以改变其外观的颜色，但它所发出的光的颜色将始终不变。
+
+=== {{tr|Loadouts}} ===
+{{exclusive|1.4.4|section=y}}
+{{main|{{tr|Loadouts}}}}
+{| class="infobox" style="float:right; width:150px; text-align:center; margin:0 0 0.5em 0.5em;"
+! colspan=3 | {{tr|Loadout icons}}
+|-
+| [[File:Loadout 1 active.png]]
+| [[File:Loadout 2 active.png]]
+| [[File:Loadout 3 active.png]]
+|}
+在{{tr|the Armor and Accessory slots}}旁边有三个图标可以用于切换正在使用的{{tr|armor and accessory loadout}}。每套{{tr|loadout}}都有其自己的全套{{tr|armor, accessory, vanity, and dye}}{{tr|slots}}，即使不在使用中也可以放置物品，但只有正在使用的{{tr|loadout}}中的物品才会影响玩家的外观或属性。
+{{-}}
+
+== 其他物品栏 ==
+默认情况下每个玩家都能访问其默认{{tr|inventory}}，但与此同时也可以通过使用某些物品来访问另外四个{{tr|inventories}}。和主{{tr|inventory}}一样，这些都是跟随{{tr|character}}的，可以跟着{{tr|character}}来到他们所进入的任何一个世界。
+
+=== {{tr|Defender's Forge and Safe}}{{tr|inventories}} ===
+{{eil|Defender's Forge}}（以 {{dm|50}} 购买自[[{{tr|Tavernkeep}}]]）以及[[{{tr|Safe}}]]（在[[{{tr|Skeletron}}]]已被打败后以 {{iteminfo|Safe|buy}} 购买自[[{{tr|Merchant}}]]）都提供了各自的独有{{tr|inventory}}，可以通过世界中任何{{tr|Defender's Forge or Safe}}访问。除了这个功能外，它们和{{tr|chests}}是完全一样的。
+
+=== {{tr|Piggy bank inventory}} ===
+{{main|{{tr|Piggy Bank}}}}
+[[{{tr|Piggy Bank}}]]（以 {{iteminfo|Piggy Bank|buy}} 购买自{{tr|the Merchant}}）、{{eil|Money Trough}}（在[[{{tr|Blood Moon}}]]期间掉落自[[{{tr|Drippler}}]]）、和{{eil|Eye Bone}}（掉落自[[{{tr|Deerclops}}]]）都共享同一个{{tr|inventory}}。 
+
+此{{tr|inventory}}对于存钱特别有用，因为向 {{tr|NPC}} 购买时会提取里面的[[{{tr|Coins}}]]和[[{{tr|Defender Medal}}]]，商店界面中会显示{{tr|piggy bank inventory}}中有多少钱。{{tr|piggy bank inventory}}存钱的主要好处是在玩家死亡时它不会像玩家的{{tr|inventory}}中的钱那样丢失。
+
+=== {{tr|Void Vault}} ===
+{{exclusive|1.4.4|section=y}}
+{{main|{{tr|Void Vault}}}}
+[[{{tr|Void Vault}}]]和[[{{tr|Void Bag}}]]提供了对额外{{tr|inventory}}的访问，这一{{tr|inventory}}和玩家的主{{tr|inventory}}共享大部分特性。
+
+只要{{tr|the void bag}}在主{{tr|inventory}}中处于“打开”状态，一旦玩家的{{tr|inventory}}满了之后，物品就会装入其中，而其内的{{tr|consumables}}可以用于 {{key|{{tr|Quick Heal}}}}、{{key|{{tr|Quick Mana}}}}和{{key|{{tr|Quick Buff}}}}；[[{{tr|Quick Stack}}]]到附近的{{tr|chest}}也会从{{tr|void vault}}中提取物品，还有其他很多有用的功能。
+
+== 排序 ==
+{{exclusive|1.3.1|section=y}}
+
+使用{{tr|inventory}}中的“{{gameText|GameUI.SortInventory}}”或{{tr|Chest}}界面中的“{{gameText|LegacyInterface.122}}”按钮时，物品会按照特定顺序归类排序。{{tr|item}}栏位会短暂发光，不同类别以不同颜色表示。{{tr|The hotbar}}和标记为收藏的{{tr|items}}在排序时不受影响。
+
+用于排序的分类如下所示。
+
+{{ajax|{{tr|Inventory}}/排序层级}}
+
+== {{tr|Inventory}}子菜单 ==
+由于{{tr|the inventory}}为玩家提供了主要的平视显示（Heads-up display，HUD）服务，少数与物品无关的附加菜单也可以通过它来访问。
+
+=== {{tr|Camera Mode}} ===
+{{exclusive|Camera Mode|section=y}}
+{{main|{{tr|Camera Mode}}}}
+一种用于捕捉图像的特殊模式，可以通过点击{{tr|the armor slots}}上方的相机图标来访问。稍后可以在位于 Terraria 目录中的 captures 目录内存取所捕捉的图像。
+
+=== {{tr|Housing menu}} ===
+{{main|{{tr|House}}#{{tr|Housing Menu}}}}
+用于管理 {{tr|NPC}} 安排的菜单，可以通过点击{{tr|armor slots}}上方的小{{tr|house icon}}来访问。{{tr|NPC}} 列表在右侧向下排列并在需要时向左延伸，按照 {{tr|NPC}} 实现到游戏中的顺序排列。
+
+== 备注 ==
+* 如果所有{{tr|Hotbar}}和{{tr|Storage slots}}都已被占据，则不会捡起新物品，除非玩家携带有{{eil|Void Bag}}。
+* 只有出现在主{{tr|inventory}}中的物品才可用于[[{{tr|Crafting}}]]。不过，在{{versions|desktop|console}}中，也可以使用当前已经打开的[[{{tr|Storage item}}]]中的物品来{{tr|craft}}。
+* 在{{tr|inventory}}中的物件将带着转移到其他的{{tr|servers}}和{{tr|worlds}}。这也包括已装备的{{tr|armor}}、{{tr|coins slots}}中的{{tr|coins}}、和{{tr|ammo slots}}中的{{tr|ammo}}。
+* 在 {{icon|wiiu}} [[{{tr|Old-gen console version}}|{{tr|Wii U}}]] 中，如果点击关闭按钮，玩家的人物会跳起。
+
+== 小贴士 ==
+* {{tr|trash slot}}提供了一个额外的{{tr|inventory slot}}。可以将一件物品临时放在其中以腾出{{tr|main inventory}}空间。但要小心，因为如果将任何其他物品放入{{tr|trash slot}}、死亡、或退出游戏，都会删除该栏位中的东西。
+** 另一个增加{{tr|inventory}}{{tr|slots}}的方法是一直将[[{{tr|Piggy Bank}}]]、[[{{tr|Safe}}]]、及{{eil|Defender's Forge}}放在{{tr|main inventory}}中随身携带，因为这三个能同时带上放在其中的物品。要注意{{tr|Piggy Bank}}要求有一个平坦表面物品才能放下，比如[[{{tr|Work Bench}}]]、[[{{tr|Table}}]]、或[[{{tr|platform}}]]。而{{eil|Money Trough}}并无此限制。
+** {{icon|desktop}}当没有开启[[{{tr|Autopause}}]]时，可以将物品拿在{{tr|cursor}}上来增加一个{{tr|inventory}}{{tr|slot}}。
+* 将多余的物品卖给 [[{{tr|NPCs}}]] 而非直接丢掉是个{{nslink|Guide|赚钱}}的好办法。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了{{tr|Equipment Loadouts}}。将 {{key|F1}}-{{key|F3}} 按键改为切换{{tr|Loadout}}的默认绑定按键，{{tr|Camera mode}}的按键绑定改为 {{key|F4}}。
+** 最大堆叠数由 999 提升至 9999。}}
+{{history|Desktop 1.3.3.2|
+** {{tr|Gamepad}}的按键绑定菜单中现在有一个{{tr|slider}}，可以调整{{tr|inventory}}导航速度。
+** 默认的{{tr|Gamepad Menu}}/{{tr|Inventory Menu}}的速度也调快了，另外也可以通过更快速地点击来加快速度。}}
+{{history|Desktop 1.3.3.1|修正了在[[{{tr|Multiplayer}}]]中{{tr|inventory items}}“卡住”的问题。}}
+{{history|Desktop 1.3.1|添加了一个{{tr|inventory}}按钮来整理{{tr|inventory}}。}}
+{{history|Desktop 1.3.0.1|
+** 改造了人物选择菜单来显示额外的人物信息。
+** 现在可以通过按 {{key|F1}} 来切换屏幕截图模式。这使得可以在游戏中捕捉更大的屏幕截图。
+** 添加了[[{{tr|Minecart}}]]栏、[[{{tr|Mount}}]]栏、[[{{tr|Pet}}]]栏和[[{{tr|Grappling Hook}}]]栏。
+** 添加了按 Alt + 左键点击来收藏物品的能力。被收藏的物品不受快速丢弃、快速堆叠、或存放功能的影响。
+** 增加了一个{{tr|inventory}}按钮来快速堆叠至附近的宝箱上，让库存管理更加快捷。
+** 快速堆叠现在会在你的{{tr|chests}}中为你{{tr|inventory}}中所拥有的物品创建新的堆叠（如果适用）。
+** {{tr|Equipment slots}}现在会显示栏位目的相应的图片。
+** 在{{tr|Trash Slot}}中的物品现在会在人物死亡时删除。}}
+{{history|Desktop 1.2.4.1|修正了当你右键点击{{tr|inventory}}中的物品时的{{tr|crafting}}漏洞。}}
+{{history|Desktop 1.2.4|修正了异常的物品堆叠大小会导致游戏在保存时崩溃的 {{tr|bug}}。修正了可以通过购买与出售可堆叠{{tr|items}}获利的漏洞。}}
+{{history|Desktop 1.2|
+** {{tr|Storage Inventory}}栏位数提升至 40（之前是 30）。
+** 引入了{{tr|Dye Slots}}。
+** 很多物品的最大堆叠数由 250 提升到999。}}
+{{history|Desktop 1.1|
+** {{tr|Housing menu}}添加到{{tr|main inventory}}中了。
+** 现在，如果关闭{{tr|Autopause}}，位于{{tr|the main inventory}}中的物品可以正常使用而无需将其放置到{{tr|hotbar}}中。}}
+{{history|Desktop 1.0.6|
+** {{tr|Ammo slots}}和{{tr|Trash slot}}添加到{{tr|main inventory}}中了。
+** {{tr|Inventory}}栏位会根据正在查看哪个{{tr|inventory}}来给予独特的颜色。
+** {{tr|Hotbar}}{{tr|slots}}现在会显示相应的快捷键。
+** 放着{{tr|ranged weapon}}的{{tr|Hotbar}}{{tr|slots}}现在在上面会正确显示所用{{tr|ammo}}的数量了。
+** [[#{{tr|Hotbar}}|{{tr|Hotbar}}]]现在可以通过点击左边的挂锁来锁定。
+** 右键点击{{tr|inventory}}中的{{tr|accessory}}或{{tr|armor}}会自动装备它。
+** 不再能够通过{{tr|inventory}}各方框之间的空白位置来丢下物品了。
+** 新得到的{{tr|items}}现在会从{{tr|inventory}}的右下角开始放置而非左上角。}}
+{{history|Desktop 1.0.5|
+** {{tr|Hotbar}}现在会显示所选定物品的名称。
+** 现在在{{tr|inventory}}中会显示总防御力。}}
+{{history|Desktop 1.0.4|添加了一个新的选项，在单人游戏中当{{tr|inventory}}处于打开状态时会暂停游戏，称为{{tr|Autopause}}。此选项默认关闭。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+
+{{language info|en=Inventory}}

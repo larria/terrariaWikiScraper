@@ -1,0 +1,66 @@
+{{legacy nav tab|{{ns:11000}}:{{tr|Fiery Greatsword}}}}
+{{item infobox
+| auto = 121
+| debuff = On Fire! / 3 / 50%
+| sound1 = Dd2 explosive trap explode 0.wav, Dd2 explosive trap explode 1.wav, Dd2 explosive trap explode 2.wav
+| soundcaption1 = {{tr|Explosion}}
+| idprojectile = 978
+| listcat = broadswords
+}}
+{{dablink|不要与[[{{tr|Large Volcano}}]]和[[{{tr|Mini Volcano}}]]，两件{{tr|furniture items}}相混淆。}}
+[[File:Volcano (demo).gif|frame|{{tr|The Volcano}}攻击[[{{tr|Skeleton}}]]和[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]。由攻击[[{{tr|Skeleton}}]]产生的爆炸击中了上方的{{tr|Target Dummy}}。]]
+
+'''{{tr|Volcano}}'''是一把[[{{tr|pre-hardmode}}]]的[[{{tr|sword}}]]。挥舞时，它会在击中[[{{tr|enemy}}]]时产生爆炸，对该{{tr|enemy}}和它附近区域内的另外 2 个目标造成 75% {{tr|weapon}}{{tr|damage}}（{{#expr:floor({{iteminfo|Volcano|damage}}*0.75)}} {{tr|base damage}}）。{{source code ref|v=1.4.4.4|method=Terraria.Player.ApplyNPCOnHitEffects}}它还有 {{chance|1/2}} 几率造成[[{{tr|On Fire!}}]]{{tr|debuff}}，持续 3 秒。{{source code ref|v=1.4.4.4|method=Terraria.Projectile.StatusNPC}}
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Volcano|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Volcano|expectedrows=2}}
+
+== 花絮 ==
+* {{tr|Volcano}}产生的爆炸的外观和[[{{tr|Solar Eruption}}]]与[[{{tr|Daybreak}}]]的爆炸的外观相同。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Volcano (pre-1.4.4).png|35px|link=]]。
+** 由{{tr|Fiery Greatsword}}重命名为{{tr|Volcano}}。
+** {{tr|Use time}}由 30 提升至 40。
+** 添加了爆炸效果，在击中{{tr|enemy}}后出现。}}
+{{history|Desktop 1.4.1|{{tr|Damage}}由 36 提升至 40。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated}}。旧外观为：[[File:Volcano (pre-1.4.0.3).png|35px|link=]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Use time}}由 34 降低至 30。
+** {{tr|Sprite updated}}。旧外观为：[[File:Volcano (old).png|35px|link=]]。}}
+{{history|Desktop 1.2|
+** {{tr|Sprite updated.}}旧{{tr|sprite}}为：[[File:Volcano (pre-1.2).png|35px|link=]]
+** 制作它所需的[[{{tr|Hellstone Bar}}]]由 35 降低至 20。}}
+{{history|Desktop 1.0.6|现在能造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。}}
+{{history|Desktop 1.0.5|
+** {{tr|Damage}}由 34 提升至 36。
+** {{tr|Use time}}由 35 降低至 34。
+** （英文）{{tr|Tooltip}}现在包含在单引号内。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.02|
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.2 一致。
+** 制作它所需的{{tr|Hellstone Bars}}由 35 降低至 20。}}
+{{history|Console-Release|introduced=y|伴随着{{tr|Desktop}} 1.0.6 的机制引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.2 一致。
+** 制作它所需的{{tr|Hellstone Bars}}由 35 降低至 20。}}
+{{history|Mobile-Release|introduced=y|伴随着{{tr|Desktop}} 1.0.6 的机制引入。}}
+{{history|3DS-Release|introduced=y|伴随着{{tr|Desktop}} 1.2 的机制、{{tr|recipes}}、外观引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hellstone}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Volcano}}

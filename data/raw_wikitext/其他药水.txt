@@ -1,0 +1,30 @@
+<div class="ajaxHide">{{main|{{tr|Potion}}}}</div>
+{{recipes
+|result = Recall Potion/Teleportation Potion/Gender Change Potion/Wormhole Potion/Potion of Return | expectedrows = 7
+|nostation = y
+<!-- custom headers for crafting table. -->
+|header-result = {{tr|Potion}}
+|header-ingredients = {{tr|Source}} / {{tr|Ingredients}}
+<!-- add custom col -->
+|col-C-1 = {{tr|Effects}}
+<!-- data for custom col -->
+|result-index-Recall Potion = a | a-row-col-C-1 = 将玩家传送到其[[{{tr|spawn point}}]]。
+|result-index-Teleportation Potion = b | b-row-col-C-1 = 将玩家传送至世界中的随机位置。
+|result-index-Gender Change Potion = c | c-row-col-C-1 = 将玩家变成相反性别。
+|result-index-Wormhole Potion = d | d-row-col-C-1 = 当玩家在地图上点击[[{{tr|Multiplayer}}#{{tr|PvP}}|队友]]图标时将玩家传送至队友的位置处。
+|result-index-Potion of Return = e | e-row-col-C-1 = 将玩家传送到其[[出生点]]，并创建一个{{tr|portal}}来返回到之前的位置。
+<!-- extra row aside from recipes query -->
+|extrow-1-col-result = {{item|Red Potion}}
+|extrow-1-col-ingredients =  在种子为“[[05162020]]”、“[[{{tr|for the worthy}}]]”或“[[{{tr|get fixed boi}}]]”的世界中的各种箱子里可以得到。<br/>也掉落自种子为 {{eil|Celebrationmk10}} 的世界中的[[{{tr|Jungle Mimic}}]]。
+|extrow-1-col-C-1 = 使用后对玩家造成[[{{tr|Darkness}}]]、[[{{tr|Poisoned}}]]、[[{{tr|Cursed}}]]、[[{{tr|On Fire!}}]]、[[{{tr|Weak}}]]、[[{{tr|Confused}}]]、[[{{tr|Slow}}]]、[[{{tr|Silenced}}]]、[[{{tr|Broken Armor}}]]、[[{{tr|Bleeding}}]]、和[[{{tr|Suffocation}}]][[{{tr|debuff}}]]，如果在种子为“for the worthy”的世界中使用会随机造成 3 个持续 30 分钟的{{tr|buff}}。
+}}
+
+<div class="ajaxHide">
+{{Master Template Consumables
+| show-potion = yes
+}}
+</div>
+
+[[Category:药水物品]]
+
+{{language info|en=Other potions}}

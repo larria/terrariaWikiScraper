@@ -1,0 +1,47 @@
+{{npc infobox
+| image = Wandering Eye.gif
+| imageother = Wandering Eye2.gif
+| imageothercaption = 第二形态
+| image2 = 
+| auto = 133
+| type = Flying Enemy
+| environment = Surface+Night
+| Black Lens|1|1% {{eicons|1.3.0.1}}
+| Lens|1|33% {{eicons|1.3.0.1}}
+|custom|{{item|Wandering Eye Kite|note=(在[[{{tr|Windy Day}}]])|wrap=y}}|4%
+| hardmode = yes
+}}
+{{distinguish|{{tr|Wandering Eye Fish}}}}
+
+'''{{tr|Wandering Eye}}'''是[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，在[[{{tr|night}}]]生成，像[[{{tr|Demon Eye}}]]一样攻击。它一开始看起来像是个大一号的{{tr|Demon Eye}}，但在生命值只剩一半（{{#expr:floor({{npcinfo|Wandering Eye|lifeMax}}/2)}} / {{expert|{{#expr:floor({{npcinfo|Wandering Eye|lifeMax_e}}/2)}}}} / {{master|{{#expr:floor({{npcinfo|Wandering Eye|lifeMax_m}}/2)}}}}）时，其瞳孔会剥离，露出一张带牙齿的嘴，类似于[[{{tr|Eye of Cthulhu}}]]。它的攻击模式不会改变，但行动会变得更快。{{3DS version}}中，它能穿过{{tr|blocks}}并且在第二形态中完全免疫[[{{tr|knockback}}]]。
+
+{{tr|Wandering Eyes}}在太阳升起时会逃走。它们在[[{{tr|new moon}}]]期间出现的更多。{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}
+
+== 备注 ==
+* {{eicons|1.4.0.1|invert=y}} {{tr|The Wandering Eye}}计入[[{{tr|Demon Eye Banner}}]]的击杀计数。
+
+== 花絮 ==
+* {{tr|The Wandering Eye}}长得像[[{{tr|Eye of Cthulhu}}]]。
+{{bestiary}}
+:* {{tr|This Bestiary entry}}和[[{{tr|Demon Eye}}]]共用。在游戏文件中{{tr|the Wandering Eye}}有一个单独的条目，但未使用：''“Given time to mature, Demon Eyes will continue to grow in size and danger. These ones are old enough that their teeth have come in.”（如果有时间成长，恶魔眼的大小和危险程度都会持续变大。这些恶魔眼已经老到都长出牙齿了。）''{{source code ref|v=1.4.3.6|<code>Terraria.Localization.Content.en-US.Game.json</code> 中第一个 <code>Bestiary_FlavorText.npc_WanderingEye</code> 键<!-- overwritten by a second key with value "{$CommonBestiaryFlavor.DemonEye}" further down -->。}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会掉落它自己的相应旗帜和[[{{tr|Wandering Eye Kite}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated}}。旧的{{tr|sprite}}：[[File:Wandering Eye (old).png|link=]]
+** 现在会掉落{{tr|Lenses}}、{{tr|Black Lenses}}、和{{tr|Demon Eye Banners}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再会穿过{{tr|blocks}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Wandering Eye}}

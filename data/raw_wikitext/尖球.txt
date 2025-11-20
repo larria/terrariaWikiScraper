@@ -1,0 +1,54 @@
+{{item infobox
+| auto = 161
+| damage = @@@@ {{eicons|1.4.4|small=y}} / 15 {{eicons|1.4.4|invert=y|small=y}}
+| tags = drop / vendor / vendor:Goblin Tinkerer
+}}
+{{drop infobox|style=clear:right}}
+{{dablink|不要与出现在{{tr|Dungeon}}中的{{tr|invincible}}的[[{{tr|Spike Ball}}]]{{tr|enemy}}相混淆。}}
+{{quotation|[[File:Emote Town Goblin Tinkerer.gif|link=]][[{{tr|Goblin Tinkerer}}]]|{{gameText|LegacyDialog.134}}}}
+[[File:Spiky Ball (demo).gif|thumb|350x350px|{{tr|the Spiky Ball}}的动画。]]
+
+'''{{tr|Spiky Ball}}'''是一种[[{{tr|consumable ranged weapon}}]]，主要通过将其扔到地面上来作为被动[[{{tr|trap}}]]使用，穿过它们的[[{{tr|enemy}}]]会受到最多 {{eicons|1.4.4|invert=y}} 6 / {{eicons|1.4.4}} 7 次伤害（之后{{tr|Spiky Ball}}会消失）。如果未被摧毁，它们会在 1 分钟后消失。它们也可以直接投向{{tr|enemy}}，但其抛物线非常短，很快就会落到地面上。{{tr|Spiky Ball}}掉落自[[{{tr|Goblin Army}}]][[{{tr|event}}]]中的所有{{tr|Goblin}}（除了{{eil|Goblin Warlock}}），并且可以从[[{{tr|Goblin Tinkerer}}]]处以每个 {{iteminfo|Spiky Ball|buy}} 的价格购买。
+
+{{eicons|1.3.0.1}} {{tr|Goblin Tinkerer}}用{{tr|Spiky Ball}}对抗附近的{{tr|enemy}}以自卫。
+
+== 备注 ==
+*{{tr|Spiky Ball}}不会伤到丢出它们的玩家，也不会伤害 [[{{tr|NPC}}]]。但在 [[{{tr|PvP}}]] 中它们会伤害其他玩家。
+* 一旦抛出，{{tr|Spiky Ball}}就无法再次被捡起。
+* {{tr|Spiky Ball}}不会穿过[[{{tr|platform}}]]掉落。
+
+== 小贴士 ==
+* {{tr|Spiky Ball}}对于成群{{tr|enemy}}或[[{{tr|boss}}]]（例如[[{{tr|Eater of Worlds}}]]或[[{{tr|King Slime}}]]）很有用，尤其是因为它们可以预先设置。
+** 有点讽刺的是，它非常适合与[[{{tr|Goblin Army}}]]作战，而{{tr|Spiky Ball}}却首先是在这个{{tr|event}}中获得的。
+* 当穿着[[{{tr|Frost armor}}]]时，{{tr|Spiky Ball}}会因[[{{tr|Frostburn}}]]效果而发光，可以作为临时的[[{{tr|Glowstick}}]]使用。
+* 当扔在地上时，它们可以作为针对任何没有[[{{tr|knockback}}]]抗性的{{tr|enemy}}的防御装置。
+* 由于{{tr|Spiky Ball}}在{{tr|Goblin Army event}}期间是非常常见的掉落，而每个{{tr|Spiky Ball}}可以卖 {{iteminfo|Spiky Ball|sell}}，因此在早期它们是很可观的收入来源。
+
+== 另见 ==
+*[[{{tr|Spiky Ball Trap}}]]，一种发射更大、弹跳性更强的{{tr|Spiky Ball}}的{{tr|trap}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 15 提升至 16。
+** 穿透数量由 6 提升至 7。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|damage type}}由{{tr|Throwing}}改为{{tr|Ranged}}。
+** {{tr|Item}}和{{tr|projectile}}{{tr|sprites updated}}。}}
+{{history|Desktop 1.3.0.1|{{tr|damage type}}由{{tr|Ranged}}改为{{tr|Throwing}}。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|售卖价格由 {{cc|4}} 提升至 {{cc|16}}。现在可从{{tr|Goblin Tinkerer}}处购买。}}
+{{history|Desktop 1.0.6|{{tr|damage}}由 12 提升至 15。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Spiky Ball}}

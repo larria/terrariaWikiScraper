@@ -1,0 +1,70 @@
+{{npc infobox
+| auto = 109
+| image = Clown.gif
+| image2 = Clown (old).png
+| environment = Blood Moon
+| damage2 = &#32;<!--
+	-->{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|120 {{eicons|1.4.4|small=y}} / 160 {{eicons|1.4.4|invert=y|small=y}}|240|360}} {{note|small=y|paren=y|{{gameText|ProjectileName.HappyBomb}}}}
+| debuff = Confused
+| debuffchance = 7.14%
+| debuffduration = {{modes|{{duration|5}}|{{duration|10}}|{{duration|12.5}}}}
+| Trifold Map|1|{{modes|1%|2%}}
+| Bananarang|1|10% {{eicons|1.4.4|small=y}}
+| Bananarang|1–4|3.33% {{eicons|1.4.4|invert=y|small=y}} @normal
+| Bloody Tear|1|10%
+| KO Cannon|1|20% {{eicons|1.4.4|small=y}}
+| sound1 = Zombie 121.wav, Zombie 122.wav, Zombie 123.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+| idprojectile = 75
+}}
+
+'''{{tr|Clown}}'''是个不常见的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，只出现在[[{{tr|Blood Moon}}]]期间。{{tr|The clown}}的主要武器是高伤害的{{tr|Happy Bombs}}，但并不会摧毁{{tr|tiles}}。{{tr|the clown}}也会造成{{tr|contact damage}}，并有几率造成[[{{tr|Confused}}]][[{{tr|debuff}}]]。在{{eversions|1.4.0.1}}中，他还会投掷[[{{tr|Chattering Teeth Bomb}}]]。
+
+一旦玩家已经在世界中打败了至少一个{{tr|Clown}}，[[{{tr|Clothier}}]]就会开始出售[[{{tr|Clown set}}]]。
+
+{{Lifeform Analyzer note}}{{tr|Clown}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 备注 ==
+* 虽然{{tr|Blood Moon}}期间{{tr|spawn rates}}会显著提升，但并不能保证会生成{{tr|Clown}}。
+* {{eicons|1.4.4|invert=y}} 虽然[[{{tr|Bananarang}}]]是一种武器，但由于它具有可堆叠的性质（只有[[{{tr|Light Disc}}]]有同样的特性），{{tr|the Clown}}可能会一次掉落多个{{tr|Bananarangs}}。
+* 在[[{{tr|Get fixed boi}}]]和[[{{tr|Don't dig up}}]][[{{tr|Secret world seeds}}]]，{{tr|Clown}}将会掉落[[{{tr|Chain Knife}}]]而不是{{tr|KO Cannon}}
+
+== 花絮 ==
+* {{tr|This enemy}}是以{{wikipedia|evil clown|邪恶小丑}}为原型的，自 20 世纪初以来，这一直是在美国反复出现的都市传说。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Happy Bombs}}的{{tr|Damage}}由 160 降低至 120。
+** {{tr|Happy Bombs}}现在会发光，使得它们更容易被看见。
+** {{tr|Clowns}}现在有空闲音效。
+** {{tr|Clown}}的掉落池被大幅更改：
+*** 现在是[[{{tr|KO Cannon}}]]的唯一来源，有 1/5 几率掉落。
+*** [[{{tr|Bananarang}}]]的掉落几率从 1/30 提升至 1/10。
+*** [[{{tr|Bloody Tear}}]]的掉落几率从 1/100 提升至 1/10 （类似于其它不常见的{{tr|Blood Moon enemies}}）。}}
+{{history|Desktop 1.4.1|[[{{tr|Bloody Tear}}]]的掉落率由 1/200 提升至 1/100。}}
+{{history|Desktop 1.4.0.1|
+** 现在有几率掉落{{tr|Bloody Tear}}。
+** 现在可被{{tr|Lifeform Analyzer}}探测到。
+** 现在会投掷[[{{tr|Chattering Teeth Bomb}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.0.3|现在有几率掉落[[{{tr|Clown Banner}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Clowns}}不再摧毁{{tr|tiles}}。
+** 现在有几率掉落[[{{tr|Trifold Map}}]]或[[{{tr|Bananarang}}]]。}}
+{{history|Desktop 1.1.1|
+** {{tr|Clowns}}扔出的{{tr|Bomb}}现在在{{tr|multiplayer}}中会显示出墙已被摧毁。
+** 仅当玩家在射程内才会扔{{tr|bombs}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Clown}}

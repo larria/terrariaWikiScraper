@@ -1,0 +1,61 @@
+{{item infobox
+| type = Furniture / Crafting station
+| width = 3 | height = 2
+| auto = 398
+| tags = Vendor / vendor:Goblin Tinkerer
+}}
+
+'''{{tr|Tinkerer's Workshop}}'''是一个[[{{tr|crafting station}}]]，主要用于将多个[[{{tr|accessories}}]]组合成通常能提供全部能力的单个{{tr|items}}。例如，它可以将[[{{tr|Rocket Boots}}]]和[[{{tr|Hermes Boots}}]]组合成单个{{tr|item}}（[[{{tr|Spectre Boots}}]]），同样能提供各个{{tr|items}}所能提供的火箭跳跃和移动加速，而无需占用两个{{tr|accessory slots}}。{{tr|The Tinkerer's Workshop}}可从[[{{tr|Goblin Tinkerer}}]]处以 {{iteminfo|Tinkerer's Workshop|buy}} 购买。
+
+{{eicons|1.3.0.1|old-gen=y}}当组合{{tr|items}}时，{{tr|the Tinkerer's Workshop}}会给制作出来的{{tr|items}}赋予一个新的随机[[{{tr|modifier}}]]。各个物品之前具有的{{tr|The modifiers}}''不会''影响新组合物品的{{tr|modifier}}。
+
+{{eicons|1.3.0.1|invert=y|old-gen=n}} 在{{tr|Tinkerer's Workshop}}制作的物品'''不会'''被赋予{{tr|modifier}}。
+
+{{tr|The Tinkerer's Workshop}}也用于制作大部分不能被录制的[[{{tr|Music Boxes}}]]、{{eil|Shellphone}}、{{eil|The Grand Design}}，在{{eversions|1.4.0.1|invert=y}}中也用于制作[[{{tr|Boulder}}]] 。
+
+== 制作 ==
+=== 用于制作 ===
+{{:Recipes/Tinkerer's Workshop}}
+
+== 备注 ==
+* {{tr|The Tinkerer's Workshop}}具有三格宽的[[{{tr|Flat-surface items}}|平坦表面]]，可以用来放置其他{{tr|item}}。不过，它无法满足{{tr|house}}的“[[{{tr|House|link=y}}#{{tr|Flat-surface items}}|{{tr|flat-surface item}}]]”需求。
+** [[{{tr|Bottle}}]]（或类似物）可以放在它上面然后作为[[{{tr|Bottle (crafting station)}}|{{tr|Placed Bottle}}]]来制作[[{{tr|Potions}}]]。
+* 这个{{tr|crafting station}}提供了游戏中最复杂的制作链：{{eil|Shell Phone}}需要将四组、每组三个[[{{tr|informational accessories}}]]组合成四个中间物品，然后将它们组合成能提供“所有信息”的{{eil|PDA}}，最后再结合[[{{tr|Magic Mirrors}}|{{tr|Magic Mirror or Ice Mirror}}]]以及[[{{tr|Magic Conch}}]]和[[{{tr|Demon Conch}}]]来允许传送。类似地，[[{{tr|Ankh Shield}}]]将十一种不同的防护物品（大多数来自[[{{tr|Hardmode}}]]）组合成能防护大多数常见{{tr|debuff}}的单个{{tr|accessory}}。有其他几个制作链有两个或者三个层次的组合，比如，前面提到的{{tr|the Spectre Boots}}可以进一步升级为[[{{tr|Lightning Boots}}]]、[[{{tr|Frostspark Boots}}]]，然后再升级为[[{{tr|Terraspark Boots}}]]。
+* 它符合[[{{tr|Wooden furniture}}]]套装的视觉主题，尤其是和{{item|Bookcase}}对比。
+
+== 小贴士 ==
+* {{tr|The Tinkerer's Workshop}}在游戏推进中可说是关键一步，因为它能让有效地允许玩家同时启用更多{{tr|accessory}}提供的能力。
+* {{tr|Accessories}}经常分阶段组合。这里是一些著名的“最终目标”，也就是它们的制作树的终点物品：
+** {{eil|Shellphone}}：游戏中第二复杂的{{tr|crafting tree}}，组合了 12 个{{tr|informational accessories}}并有传送到{{tr|world}}中各种位置的功能。
+** [[{{tr|Terraspark Boots}}]]：速度、有限飞行、冰面稳定性、免疫{{tr|fire block}}、以及液面行走能力。
+** {{eil|The Grand Design}}：用于处理{{tr|mechanisms}}的一切。
+** {{eil|Bundle of Horseshoe Balloons}}：组合了[[{{tr|Bundle of Balloons}}]]，提供四段跳（组合了[[{{tr|Cloud in a Balloon}}]]、[[{{tr|Blizzard in a Balloon}}]]、和[[{{tr|Sandstorm in a Balloon}}]]的效果）；以及[[{{tr|Lucky Horseshoe}}]]，提供[[{{tr|fall damage}}]]免疫以及额外[[{{tr|luck}}]]。
+** [[{{tr|Arctic Diving Gear}}]]：延长呼吸时间、机动性、还有水下照明，而且还能进一步改善冰上的行动力。在{{tr|Expert mode}}中，它还能防护[[{{tr|Chilled}}]]{{tr|debuff}}。
+* 一些{{tr|Hardmode}}的终极物品：
+** [[{{tr|Ankh Shield}}]]：第三复杂的制作树，组合了 11 个防护{{tr|accessories}}来提供各种{{tr|enemies}}造成的常见{{tr|debuff}}的免疫力。还给予了{{tr|knockback}}抗性和一些额外{{tr|defense}}。
+** [[{{tr|Fire Gauntlet}}]]：提升{{tr|melee damage}}、{{tr|attack speed}}、和{{tr|knockback}}，并且所有{{tr|melee weapons}}会造成{{eicons|Hellfire}}[[{{tr|Hellfire}}]] / {{eicons|Hellfire|invert=y}}[[{{tr|On Fire!}}]]。
+** {{eil|Celestial Shell}}：属性提升和{{tr|Werewolf}}及{{tr|Merfolk}}变身。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.2|[[{{tr|Spectre Boots}}]]现在可以用[[{{tr|Dunerider Boots}}]]来制作。}}
+{{history|Desktop 1.4.0.1|
+** 添加了 29 个新的组合。
+** 不再用于制作{{tr|Boulders}}。}}
+{{history|Desktop 1.3.1|
+** {{tr|Sprite updated.}}
+** 添加了 7 个新的组合。}}
+{{history|Desktop 1.3.0.1|添加了 19 个新的组合。}}
+{{history|Desktop 1.2.1.2|添加了 7 个新的组合。}}
+{{history|Desktop 1.2|添加了 29 个新的组合。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+{{language info|en=Tinkerer's Workshop}}

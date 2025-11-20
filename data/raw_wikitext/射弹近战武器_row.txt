@@ -1,0 +1,42 @@
+<includeonly><!--
+-->{{#invoke:Iteminfo|getInfo|id={{itemIdFromName|{{{1|}}}}}|prefix=projweapon:info:}}<!-- get info, store in dplvars
+-->
+|-
+| {{item|{{{1|}}}|wrap=y|mode=table}}
+| {{#dplvar:projweapon:info:damage}}
+| style="line-height:15px" | {{#dplvar:projweapon:info:useAnimation}} <br/> {{note|small=y|block=y|paren=y|{{use time|{{#dplvar:projweapon:info:useAnimation}}}}}}
+| style="line-height:15px" | {{formatnum:{{#dplvar:projweapon:info:knockBack}}}} <br/>{{note|small=y|block=y|paren=y|{{knockback|{{#dplvar:projweapon:info:knockBack}}}}}}
+| {{#vardefine:projweapon_velocity|{{#dplvar:projweapon:info:shootSpeed}}}} {{formatnum:{{#ifexpr:{{#var:projweapon_velocity|0}}>0|{{#var:projweapon_velocity}}}}}}
+| align=left | <!--
+-->{{#vardefine:_proj|{{#dpl:title={{tr|{{{1|}}}|link=y}}|include={item infobox}:idprojectile}}}}<!-- get item infobox parameter
+-->{{#vardefine:_proj|{{#var:_proj|{{#dplvar:projweapon:info:shoot}}}}}}<!-- get source code info
+-->{{#lstmap:{{{removeprojectile|}}}|,|@@@@|<esc>{{#vardefine:_proj|{{#lstrm:@@@@|{{#var:_proj}}}}}}</esc>|}}<!-- manually remove projectiles
+-->{{#vardefine:_proj|{{#lstuniq:{{#lstapp:{{#var:_proj}}|,|{{{addprojectile|}}}}}|,|,}}}}<!-- manually add projectiles
+-->{{#vardefine:_proj|{{{idprojectile|{{#var:_proj}}}}}}}<!-- overwrite completely
+
+-->{{#vardefine:_projcount|{{#lstcnt:{{#var:_proj}}|,}}}}<!--
+
+output projectiles:
+-->{{#ifexpr:{{#var:_projcount|0}}>1|<nowiki />
+* }}{{#lstmap:{{#var:_proj}}|,|@@@@|<esc>{{item|nolink=y|{{getProjectileInfo|@@@@|name}}|image={{getProjectileInfo|@@@@|image}}|icons=n}}</esc>|<nowiki />
+* }}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+Projectile (and other) information is generated automatically, based on the weapons' base pages and {{tl|iteminfo}}.
+
+{| class=terraria
+! Parameter !! Description
+|-
+| First unnamed parameter || Weapon name
+|-
+| <code>idprojectile</code> || Overwrite automatic projectile information completely. Use [[projectile IDs]], separate multiple with commas.
+|-
+| <code>removeprojectile</code> || Projectile IDs to remove from the automatic generation. Separate multiple with commas. Has no effect if using <code>idprojectile</code>.
+|- 
+| <code>addprojectile</code> || Projectile IDs to add to the automatic generation (evaluated after <code>remove</code>). Separate multiple with commas. Has no effect if using <code>idprojectile</code>.
+|}
+{{language info|en=Projectile melee weapons/row}}
+</noinclude>

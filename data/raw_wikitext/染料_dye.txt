@@ -1,0 +1,78 @@
+<includeonly><!-- 
+
+-->{{#if:{{#var:dye1registered}}||<!-- 
+	//register localization info:
+	-->{{l10n/register|subpage:dye/dye|en<!--
+		-->|applied=$name$ applied<!-- 
+	-->}}<!-- 
+	-->{{l10n/register|subpage:dye/dye|de<!--
+		-->|applied=$name$ aufgetragen<!-- 
+	-->}}<!-- 
+	-->{{l10n/register|subpage:dye/dye|fr<!--
+		-->|applied=$name$ appliquée<!-- 
+	-->}}<!-- 
+	-->{{l10n/register|subpage:dye/dye|zh<!--
+		-->|applied=$name$使用后<!-- 
+	-->}}<!-- 
+	-->{{#vardefine:dye1registered|y}}<!-- 
+-->}}<!-- 
+
+-->{{#vardefine:ename|{{{t|{{{1|}}} Dye}}}}}<!-- English name
+-->{{#vardefine:dyeitemid|{{itemIdFromName|{{#var:ename}}}}}}<!-- item ID
+-->{{#vardefine:lname|{{tr|{{#var:ename}}}}}}<!-- local language name
+
+// output: equipped image
+-->align=right | [[File:{{#var:ename}} (equipped).{{{ex|png}}}|{{l10n|subpage:dye/dye|applied|$name$={{#var:lname}}}}|link=]] || <!--
+// output: item image and name
+-->{{#if:{{bool|{{{link|}}}}}|<!-- 
+	-->{{item|{{#var:ename}}|class=block alignleft|anchor=y|note={{{note|}}}|bignote={{{bignote|}}}|id={{{id|}}}}}<!-- 
+-->|<!-- 
+	-->{{item infobox
+		| view = item
+		| image = {{#var:ename}}.png
+		| auto = {{#var:dyeitemid}}
+		| class = block alignleft
+		| anchor = y
+		| nolink = y
+		| note = {{{note|}}}
+		| bignote = {{{bignote|}}}
+		| showid = y
+		| tags = {{#if:{{bool|{{{buy|}}}}}|vendor/vendor:Dye Trader}}
+	}}<!-- 
+-->}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+== Description ==
+This template is used to list a [[Dye]], primarily on the main [[Dye]] page. It displays a dye's inventory icon, an optional example image of the dye applied to a character, and creates an invisible anchor that can be linked using "[[#dye_name]]" (spaces in the dye name are automatically converted to underscores in the anchor).
+
+This template should only be used to display a dye that is the primary dye being listed. To display dyes in other areas of a dye list, eg. crafting ingredients or crafting results, use {{tl|:dyes/dye2}} instead, which excludes the anchor.
+
+Note that {{tl|:dyes/dye}} is intended for use in tables only. It places images in one cell and the item name in the next, so you will generally want to add <code>colspan=2</code> to the column header code. {{tl|:dyes/dye2}} does not do this, and can be used in a single cell or outside a table.
+
+== Usage ==
+; Unnamed param 1
+Item name, without the word "Dye". "Dye" is added automatically. For Dye items that do not end with "Dye" (eg. [[Skiphs's Blood]]), enter the item name using the t= parameter instead; no "Dye" will be added to names entered that way.
+
+; Unnamed param 2
+Optional: Quantity. Use this to enter a quantity number of a crafted Dye. The quantity number will be placed within parentheses following the dye name. Default is 1 which won't be displayed.
+
+; t
+Alternate method of entering the dye name. This method will not append "Dye" to the end of the name. If both an unnamed parameter and a t= parameter are entered, the name entered into this t= parameter will take precedence.
+
+; link
+Optional: Set link = '''yes''' to create a link to the dye's page.
+
+; ex
+Optional: Display an example image of the dye applied to a character. Example images must be uploaded with the name "[dye name] '''(equipped)'''". Set ex = '''png''' or '''gif''' to specify the extension of the image file.
+
+* Example: <code><nowiki>{{dye|Red|ex=png}}</nowiki></code> will display the file [[:File:Red Dye (equipped).png|File:Red Dye (equipped)'''.png''']].
+
+; id
+Optional: Use to display the [[Item IDs|Item ID]] of the dye item.
+
+{{language info|en=Dyes/dye}}
+</noinclude>

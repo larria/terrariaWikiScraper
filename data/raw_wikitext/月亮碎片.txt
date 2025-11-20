@@ -1,0 +1,68 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| imagealt = [[File:Lunar Fragments.gif|link=]]
+| type = Crafting material
+| stack = {{iteminfo|3456|stack}}
+| rare = {{iteminfo|3456|rare}}
+| sell = {{iteminfo|3456|sell}}
+| cargo = no
+}}
+{{drop infobox|
+| {{item|Solar Pillar|scale=0.2|wrap=y|note={{item|Solar Fragment|icons=no}}}} | {{modes|12-60|24-100}} | 100%
+| {{item|Vortex Pillar|scale=0.2|wrap=y|note={{item|Vortex Fragment|icons=no}}}} | {{modes|12-60|24-100}} | 100%
+| {{item|Nebula Pillar|scale=0.2|wrap=y|note={{item|Nebula Fragment|icons=no}}}} | {{modes|12-60|24-100}} | 100%
+| {{item|Stardust Pillar|scale=0.2|wrap=y|note={{item|Stardust Fragment|icons=no}}}} | {{modes|12-60|24-100}} | 100%
+| style = clear:right
+}}
+
+'''{{tr|Lunar Fragments}}'''是[[{{tr|Lunar Events}}]]时自[[{{tr|Celestial Towers}}]]掉落的[[{{tr|crafting material}}]]。月亮事件会在击败[[{{tr|Hardmode}}]]的[[{{tr|Lunatic Cultist}}]]之后发生。一共有 4 种{{tr|Lunar Fragments}}，掉落自对应的天界塔。它们主要用于在[[{{tr|Ancient Manipulator}}]]合成一些游戏后期的[[{{tr|armor}}]]、[[{{tr|weapons}}]]、[[{{tr|tools}}]]、[[{{tr|wings}}]]等等。
+
+除了掉落取得，可以在[[{{tr|Ancient Manipulator}}]]用其他三种碎片合成一个碎片。比如用各一个的[[{{tr|Vortex Fragment}}]]、[[{{tr|Nebula Fragment}}]]与[[{{tr|Stardust Fragment}}]]合成一个[[{{tr|Solar Fragment}}]]。
+
+== 类型 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| auto = 3458
+| tags = hardmode / drop
+}}
+|{{item infobox
+| auto = 3456
+| tags = hardmode / drop
+}}
+|{{item infobox
+| auto = 3457
+| tags = hardmode / drop
+}}
+|{{item infobox
+| auto = 3459
+| tags = hardmode / drop
+}}
+}}
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Solar Fragment/Vortex Fragment/Nebula Fragment/Stardust Fragment}}
+
+=== {{tr|Used in}} ===
+<!-- Recipes that use all four fragments: -->
+{{recipes|where=ings LIKE '%¦Solar Fragment¦%' AND ings LIKE '%¦Vortex Fragment¦%' AND ings LIKE '%¦Nebula Fragment¦%' AND ings LIKE '%¦Stardust Fragment¦%'}}
+
+== {{tr|Trivia}} ==
+* 碎片可以三合一可能是为了降低碎片的搜集难度。比如在合成日耀装时可能缺少一两个碎片，此时就可以用合成的，不用再打一次[[{{tr|Lunatic Cultist}}]]与日耀柱。
+* 每种碎片对应一种武器种类。日耀碎片对应[[{{tr|Melee weapon}}]]、星云碎片对应[[{{tr|Magic weapons}}]]、星旋碎片对应[[{{tr|Ranged weapon}}]]、星尘碎片对应[[{{tr|Summon weapons}}]]。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|可以制作为[[{{tr|Fragment Bricks}}]]。}}
+{{history|Desktop 1.3.0.5|现在可用来合成[[{{tr|Celestial Sigil}}]]。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-main = yes
+| show-drop = yes
+}}
+
+{{language info|en=Lunar Fragments}}

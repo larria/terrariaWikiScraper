@@ -1,0 +1,52 @@
+{{item infobox
+| imageplacedalt = <!-- Cancel the display of the Shadow Orb tile -->
+| type = Light pet
+| auto = 115
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} / {{sc|20}} {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = loot
+}}
+{{drop infobox|style=clear:right}}
+{{about|{{tr|the light pet}}{{tr|summon item}}|环境物体|{{tr|Shadow Orb}}}}
+[[File:Shadow Orb item (demo).gif|frame|{{tr|Shadow Orb}}在移动中的表现，通过使用 {{key|up}} 和 {{key|down}} 键可以控制它的高度。]]
+
+'''{{tr|Shadow Orb}}'''是个[[{{tr|light pet}}]]{{tr|item}}，可以召唤一个缓慢移动的'''{{tr|Shadow Orb}}'''，它会跟在玩家身边并且发出紫色的暗光。{{tr|Shadow Orb}}可以穿过{{tr|blocks}}和[[{{tr|liquid}}]]，但是移动非常缓慢，导致当玩家快速移动的时候会落后。如果它落后玩家足够远，它将会远距离传送到玩家的位置。它有 {{chance|1/5}} 的几率从被摧毁的[[{{tr|Shadow Orb}}]]中掉落，也可以通过打开在[[{{tr|Corruption}}]]中[[{{tr|fishing}}]]获得的{{eil|Corrupt Crate}}获得。
+
+其[[{{tr|The Crimson}}]]的对应物是[[{{tr|Crimson Heart (item)}}|{{tr|Crimson Heart}}]]。
+
+== 备注 ==
+* 玩家可以通过使用 {{key|up}} 和 {{key|down}} 键来控制{{tr|Shadow Orb}}的位置，使其位于玩家上方或下方。
+** 如果{{tr|Shadow Orb}}落后，这可以让它更快追上玩家。
+* 即使给{{tr|Shadow Orb}}染色，它也会发出紫色的光。
+
+== 小贴士 ==
+* 在搭配任意颜色的[[{{tr|Acid Dye}}]]时，{{tr|Shadow Orb}}会出现有颜色的条纹，但是这部分常常会出错，甚至整个{{tr|Shadow Orb}}本身，都会消失不见。
+* 可以搭配[[{{tr|Reflective Gold Dye}}]]来使{{tr|Shadow Orb}}看起来 [[1.2]] 前的长相。
+* [[{{tr|Twilight Dye}}]]可以使{{tr|Shadow Orb}}几乎看不见。
+
+== 历史 ==
+[[File:Orb of Light in use.png|thumb|仍然是光之珠时的{{tr|The Shadow Orb}}的外观。]]
+{{history|Desktop 1.4.0.1|调整了{{tr|sell value}}，由 {{sc|20}} 增加至 {{coin|1gc50sc}} 使其与所有{{tr|Shadow Orb}}/{{tr|Crimson Heart}}的战利品相同。}}
+{{history|Desktop 1.2.3.1|修复了可以同时使用[[{{tr|Fairy Bell}}]]和其他[[{{tr|light pet}}]]的错误。}}
+{{history|Desktop 1.2.0.2|{{tr|tooltip}}中不再显示“五分钟持续时间”。}}
+{{history|Desktop 1.2|
+** 名字由光之珠改为{{tr|Shadow Orb}}。
+** {{tr|Item}}{{tr|sprite updated}}，由 [[File:Orb of Light.png]] 改为 [[File:Shadow Orb (item).png]]
+** {{tr|Buff}}{{tr|sprite updated}}，由 [[File:Orb of Light (buff).png]] 改为 [[File:Shadow Orb (buff).png]]
+** {{tr|Projectile}}{{tr|sprite updated}}，由 [[File:Orb of Light (light pet).png]] 改为 [[File:Shadow Orb (light pet).png]]
+** 使用不再需要{{tr|mana}}（之前需要 40 {{tr|mana}}）。
+** {{tr|Buff}}不再具有有限时间。}}
+{{history|Desktop 1.0.6|
+** 降低了{{tr|Shadow Orb}}的运动速度。
+** 亮度从 100% 降低至 65%。
+** 现在使用它将给予玩家一个[[{{tr|Shadow Orb (buff)}}|{{tr|buff}}]]而不是看起来像个魔法效果。
+** 因此，这将导致玩家在按下快速增益[[{{tr|hotkey}}]]的时候自动使用{{tr|Shadow Orb}}。}}
+{{history|Desktop-Release|引入，名字为光之珠。}}
+
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Shadow Orb (item)}}

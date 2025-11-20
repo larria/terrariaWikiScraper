@@ -1,0 +1,212 @@
+{{exclusive|1.3.0.1}}
+[[File:Wooden Yoyo (demo).gif|frame|一名玩家正在使用{{tr|Wooden Yoyo}}。]]
+[[File:Yoyo (demo).gif|thumb|玩家引导一个{{tr|yoyo}}穿过迷宫。]]
+
+'''{{tr|Yoyos}}'''是一类[[{{tr|melee weapons}}]]，它们在使用时会被掷出并跟随玩家的{{tr|cursor}}。在放出后，{{tr|a yoyo}}能停留在空中一段时间，最大时间的长度取决于所使用的{{tr|yoyo}}类型。{{tr|Yoyos}}可以使用{{tr|cursor}}进行自由控制，但会在碰撞到[[{{tr|enemies}}]]身上后反弹。{{tr|Yoyos}}可以通过若干种不同方法获得，包括{{tr|crafting}}，作为{{tr|enemies}}的罕见掉落，以及来自某些 [[{{tr|NPC}}]] 的商品。目前有 21 种不同类型的{{tr|yoyos}}。
+
+对于所有{{tr|yoyos}}，若有至少一块{{tr|solid block}}阻隔在{{tr|yoyo}}和使用者之间，其{{tr|damage}}会减少 25%。检查{{tr|string}}是否横跨任何{{tr|blocks}}是判断{{tr|yoyo}}的{{tr|damage}}是否减少的好办法。{{tr|yoyo}}每次击中{{tr|enemy}}，剩余的飞行时间就会减少 1/3 {{tr|second}}。如果{{tr|yoyo}}由于处于玩家视线之外而导致其{{tr|damage}}降低，那么剩余飞行时间将减少整整一秒，而非三分之一秒。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage}}
+
+有几种[[{{tr|accessories}}]]会影响{{tr|yoyo}}的功能。可以装备[[{{tr|String}}]]以增加射程，可以装备[[{{tr|Counterweight}}]]，在用{{tr|yoyo}}击中{{tr|enemy}}后释放第二个{{tr|projectile}}，而[[{{tr|Yoyo Glove}}]]则允许使用两个{{tr|yoyo}}。还可以将这三个{{tr|accessories}}合成[[{{tr|Yoyo Bag}}]]，它包含了所有这些的效果。
+
+{{tr|Yoyo range}}由{{tr|melee attack speed}}决定。但{{tr|Yoyos}}无法获得{{tr|speed modifier}}，因此无法重铸为{{tr|Legendary}}[[{{tr|modifier}}]]。 '''{{tr|Godly}}'''的群体控制效果比'''{{tr|Demonic}}'''略好，但增加的击退效果可能会减少每秒的命中次数。这两种[[{{tr|modifier}}]]被认为是最好的。不像其他{{tr|Yoyos}}，[[{{tr|Terrarian}}]]可以得到'''{{tr|Legendary}}'''{{tr|modifier}}, 尽管数据略有不同。
+
+== 类型 ==
+{| class="terraria sortable align-center lined" id="yoyos-table"
+|- style="line-height: 1.25;"
+! colspan=2 | 名称
+! data-sort-type=number | {{tr|Damage}}
+! data-sort-type=number | {{tr|Use Time}}
+! 射程<br/><small>（{{tr|tiles}}）</small>
+! {{tr|Duration}}<br/><small>（{{tr|seconds}}）</small>
+! data-sort-type=number | {{tr|Knockback}}
+! data-sort-type=number | [[{{tr|Critical strike chance}}]]
+! [[{{tr|Hardmode}}]]
+! data-sort-type=number | {{tr|Rarity}}
+! 来源
+! <abbr title="一些{{tr|yoyos}}标记有 One Drop（一家现实生活中{{tr|Yoyo}}品牌）的 logo，它们有相应的实体{{tr|yoyo}}。">One Drop</abbr><br/>{{oneDrop|onlylogo=y}}
+! data-sort-type=number | {{tr|Sell value}}
+! class=unsortable | {{tr|Notes}}<!--
+
+
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Wooden Yoyo}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|8}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|3}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|用于制作{{tr|Chik}}，一个[[{{tr|Hardmode}}]]的{{tr|yoyo}}。}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Rally}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|10.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|5}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Malaise}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|12}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|7}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Artery}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|13}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|6}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Amazon}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|13.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|8}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Code 1}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|13.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|9}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Hive-Five}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|14}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|11}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|{{chance|1/3}} 几率在击中时放出{{tr|Bee projectiles}}。}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Valor}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|14}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|11}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|[[{{tr|Dungeon}}]]中的锁住的[[{{tr|Gold Chest}}]]。}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Cascade}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|14.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|13}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|在击败[[{{tr|Skeletron}}]]后有 {{chance|1/400}} 几率掉落自[[{{tr|Underworld}}]]中的{{tr|enemies}}，但仅限{{tr|pre-Hardmode}}。}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|{{chance|1/3}} 几率造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Format:C}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|14.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|8}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Gradient}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|15.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|10}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Chik}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|17}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|16}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Hel-Fire}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|17}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|12}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|[[{{tr|Hardmode}}]]下有 {{chance|1/400}} 的几率掉落自位于[[{{tr|Underworld}}]]和[[{{tr|Cavern}}]]{{tr|layer}}下半部分的{{tr|enemies}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|造成[[{{tr|Hellfire}}]][[{{tr|debuff}}]]}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Amarok}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|17}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|15}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|有 {{chance|1/300}} 的几率掉落自[[{{tr|Hardmode}}]]中、[[{{tr|Snow biome}}]]中的{{tr|enemies}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|{{chance|2/3}} 几率造成[[{{tr|Frostbite}}]][[{{tr|debuff}}]]}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Code 2}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|17.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Yelets}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|18}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|14}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|有 {{chance|1/200}} 的几率在打败任意[[{{tr|mechanical boss}}]] 后，掉落于任意[[{{tr|Hardmode}}]][[{{tr|Jungle}}]]中的任意{{tr|enemy}}。}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Red's Throw}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|23}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|作为[[{{tr|Expert Mode}}]][[{{tr|Treasure Bag}}]]中[[{{tr|Red's set}}]]的一部分掉落}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Valkyrie Yoyo}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|23}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|作为[[{{tr|Expert Mode}}]][[{{tr|Treasure Bag}}]]中[[{{tr|Lazure's set}}]]的一部分掉落}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Kraken}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|21}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_source_{{#var:_id}}|{{chance|1/400}} 几率掉落自[[{{tr|Plantera}}]]后的[[{{tr|Hardmode Dungeon}}]]{{tr|enemies}}。}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|The Eye of Cthulhu}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|22.5}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{no}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|}}<!--
+
+-->{{#vardefine:_id|{{itemIdFromName|lang=en|Terrarian}}}}<!--
+-->{{#vardefine:_reach_{{#var:_id}}|25}}<!--
+-->{{#vardefine:_duration_{{#var:_id}}|{{infinity}}}}<!--
+-->{{#vardefine:_onedrop_{{#var:_id}}|{{yes}}}}<!--
+-->{{#vardefine:_note_{{#var:_id}}|散发出自动追踪{{tr|projectiles}}}}<!--
+
+-->
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, image, name, damage, critical, usetime, knockback, hardmode, rare, sell
+|q?where=listcat HOLDS 'yoyos'
+|q?groupBy=itemid
+|q?orderBy=(damage+1)<!-- sort as number-->
+|template=:Yoyos/row
+}}
+|}
+
+== 备注 ==
+* 多数{{tr|yoyos}}的{{tr|projectile}}大小为 16×16 {{tr|pixels}}，但也有一些例外：[[{{tr|Valor}}]]、[[{{tr|Code 2}}]]、[[{{tr|Red's Throw}}]]和[[{{tr|Valkyrie Yoyo}}]]的{{tr|projectile}}大小为 17×17，[[{{tr|Terrarian}}]]和[[{{tr|The Eye of Cthulhu|link=y}}|{{tr|The Eye of Cthulhu}}]]的则是 18×18，而[[{{tr|Kraken}}]]的{{tr|projectile}}大小则是 19×19。
+
+== 成就 ==
+{{achievement|name=Throwing Lines}}
+{{achievement|name=Sick Throw}}
+
+== 小贴士 ==
+* 当使用{{tr|a yoyo}}攻击一群{{tr|enemies}}时，建议将{{tr|the yoyo}}移动到这群敌怪的中央，这样一来它就会在{{tr|enemies}}间弹跳。当它们不可避免地分散时，就攻击最前面的{{tr|enemy}}以使它们重新聚集在一起。
+* 在正在行走的{{tr|enemy}}身后攻击，将会使其向后反弹回{{tr|yoyo}}处，受到持续{{tr|damage}}并在转向玩家后立刻受到攻击。
+* 若玩家在激活[[{{tr|Teleporter}}]]时正在使用{{tr|yoyo}}攻击，则{{tr|yoyo}}会暂时留在原处，随即返回至{{tr|player}}处。
+
+== 花絮 ==
+* 在{{tr|tooltip}}中标有 {{oneDrop}} logo 的{{tr|Yoyos}}都有现实生活中的对应物。
+* 在现实生活中，[[Redigit]] 是悠悠球爱好者并且自己使用 One Drop {{tr|YoYos}}。<ref>{{forums thread|re-logic-game-developers-conference-blog.12848/#post-391106|Re-Logic Game Developers Conference Blog}} {{small|{{date|2015|02|23}}}}</ref>One Drop 除了将他们的设计引入{{tr|Terraria}}之外，他们还发布了{{tr|Kraken and Terrarian}}的真实世界版本。<ref>https://twitter.com/onedropdesign/status/667077120347140096</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了[[{{tr|Hive-Five}}]]。}}
+{{history|Desktop 1.3.0.4|{{tr|Red's Throw}}和{{tr|Valkyrie Yoyo}}现在均获取于 {{tr|Red's set}}和 {{tr|Lazure's sets}}中，其属性被重新平衡。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Yoyos}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+[[Category:悠悠球| ]]
+
+{{language info|en=Yoyos}}

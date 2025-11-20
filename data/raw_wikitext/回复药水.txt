@@ -1,0 +1,132 @@
+<div class="ajaxHide">{{main|{{tr|Potions}}}}</div>
+
+这里列出了能恢复[[{{tr|health}}]]、[[{{tr|mana}}]]、或同时恢复二者的{{tr|potions}}。
+{{options/set|item|small=y}}{{recipes|id=Recovery-Potions-table
+|result = LIKE Bottled % / LIKE %Healing Potion / LIKE %Mana Potion / LIKE %Restoration Potion 
+|resultnot = LIKE Decorative %
+|expectedrows = 13
+|header-result = {{tr|Potion}}
+|col-D-1 = {{tr|Other Source}}
+|col-D-2 = 回复{{tr|Health}}
+|col-D-3 = 回复{{tr|Mana}}
+|col-D-4 = {{tr|Notes}}
+
+|result-index-Bottled Water = a
+|a-row-col-D-2 = 恢复 20 生命值
+
+|result-index-Bottled Honey = b
+|b-row-col-D-1 = <div style="max-width: 450px;">
+* 也掉落自[[{{tr|Queen Bee}}]]
+</div>
+|b-row-col-D-2 = 恢复 80 生命值
+|b-row-col-D-4 = {{eicons|1.4.4}} 提供 15 秒的[[{{tr|Honey (buff)}}|{{tr|Honey}}]]{{tr|Buff}}
+
+|result-index-Lesser Healing Potion = c
+|c-row-col-D-1 = <div style="max-width: 450px;">
+* 购买自[[{{tr|Merchant}}]]（{{iteminfo|Lesser Healing Potion|buy}}）
+* 在[[{{tr|moon phase}}]] 2、4、6 和 8 期间（{{moons|2|4|6|8}}）购买自[[{{tr|Skeleton Merchant}}]]（{{iteminfo|Lesser Healing Potion|buy}}）
+* 出现在[[{{tr|chests}}]]和[[{{tr|pots}}]]中
+* 放置在[[{{tr|Dungeon}}]]中的[[{{tr|Platform}}]]上
+* 也掉落自游戏早期的 [[{{tr|Boss}}]]
+</div>
+|c-row-col-D-2 = 恢复 50 生命值
+
+|result-index-Healing Potion = d
+|d-row-col-D-1 = <div style="max-width: 450px;">
+* {{eicons|1.4.4}} 在[[{{tr|Hardmode}}]]中购买自[[{{tr|Merchant}}]]（{{iteminfo|Healing Potion|buy}}）
+* {{eicons|1.4.4}} 在[[{{tr|Hardmode}}]]的[[{{tr|moon phase}}]] 2、4、6 和 8 期间（{{moons|2|4|6|8}}）购买自[[{{tr|Skeleton Merchant}}]]（{{iteminfo|Healing Potion|buy}}）
+* [[{{tr|Hardmode}}]]期间出现在[[{{tr|pots}}]]里
+* 出现在[[{{tr|Underworld}}]]中的[[{{tr|pots}}]]里
+* 也掉落自[[{{tr|Wall of Flesh}}]]
+</div>
+|d-row-col-D-2 = 恢复 100 生命值
+
+|result-index-Greater Healing Potion = e
+|e-row-col-D-1 = <div style="max-width: 450px;">
+* 也掉落自[[{{tr|Mechanical Bosses}}]]、[[{{tr|Plantera}}]]、[[{{tr|Golem}}]]、[[{{tr|Duke Fishron}}]]、[[{{tr|Lunatic Cultist}}]]、[[{{tr|Martian Saucer}}]]、[[{{tr|Mimic}}|{{tr|Biome Mimics}}]]和[[{{tr|Queen Slime}}]]
+</div>
+|e-row-col-D-2 = 恢复 150 生命值
+
+|result-index-Super Healing Potion = f
+|f-row-col-D-1=也掉落自[[{{tr|Moon Lord}}]]
+|f-row-col-D-2 = 恢复 200 生命值
+
+|result-index-Mana Potion = g
+|g-row-col-D-1 = <div style="max-width: 450px;">
+* {{eicons|1.4.4}} 在[[{{tr|Hardmode}}]]中购买自[[{{tr|Merchant}}]]（{{iteminfo|Mana Potion|buy}}）
+* [[{{tr|Hardmode}}]]期间出现在[[{{tr|pots}}]]里
+</div>
+|g-row-col-D-3 = 恢复 100 {{tr|mana}}
+
+|result-index-Super Mana Potion = h
+|h-row-col-D-3 = 恢复 300 {{tr|mana}}
+
+|result-index-Lesser Restoration Potion = i
+|i-row-col-D-1 = <div style="max-width: 450px;">
+* {{eicons|1.3.0.1|invert=y}} 可于[[{{tr|The Underworld}}]]中的[[{{tr|Shadow Chest}}]]内找到。
+</div>
+|i-row-col-D-2 = 恢复 50 生命
+|i-row-col-D-3 = 恢复 50 {{tr|mana}}
+
+|result-index-Restoration Potion = j
+|j-row-col-D-2 = {{eicons|1.4.0.1}} 恢复 90 生命值<br/>{{eicons|1.3.0.1|invert=y}} 恢复 100 生命值和 100 {{tr|mana}}
+|j-row-col-D-4 = {{eicons|1.4.0.1}} {{tr|Potion cooldown}}仅持续 45 {{tr|seconds}}。
+
+|topextrow-1-col-result = {{item|Mushroom}}
+|topextrow-1-col-D-1 = <div style="max-width: 450px;">
+* 自然生长于{{tr|Grass}}上。
+</div>
+|topextrow-1-col-D-2 = 恢复 15 生命值
+|topextrow-1-col-D-4 = {{eicons|1.4.1}} {{tr|Potion cooldown}}仅持续 30 {{tr|seconds}}
+
+|extrow-1-col-result = {{item|Greater Mana Potion}}
+|extrow-1-col-D-1 = <div style="max-width: 450px;">
+* 购买自[[{{tr|Wizard}}]]（{{iteminfo|Greater Mana Potion|buy}}）
+* 也掉落自[[{{tr|Mimic}}#特殊种类|{{tr|Biome Mimics}}]]
+* 也出现在{{tr|fishing crates}}中
+</div>
+|extrow-1-col-D-3 = 恢复 200 {{tr|mana}}
+
+|extrow-2-col-result = {{item|Lesser Mana Potion}}
+|extrow-2-col-D-1 = <div style="max-width: 450px;">
+* 购买自[[{{tr|Merchant}}]]（{{iteminfo|Lesser Mana Potion|buy}}）
+* 也放置在[[{{tr|Dungeon}}]]中的[[{{tr|Platform}}]]上
+</div>
+|extrow-2-col-D-3 = 恢复 50 {{tr|mana}}
+
+|extrow-3-col-result = {{item|Eggnog}}
+|extrow-3-col-D-1 = <div style="max-width: 450px;">
+* 从[[{{tr|Present}}]]获得
+</div>
+|extrow-3-col-D-2 = 恢复 80 生命值
+
+|extrow-4-col-result = {{item|Honeyfin}}
+|extrow-4-col-D-1 = <div style="max-width: 450px;">
+* 得自[[{{tr|Fishing}}]]（仅限在{{item|Honey}}中）
+</div>
+|extrow-4-col-D-2 = 恢复 120 生命值
+
+|extrow-5-col-result = {{item|Horn o' plenty}}
+|extrow-5-col-D-1 = <div style="max-width: 450px;">
+* 掉落自[[{{tr|Turkor the Ungrateful}}]]
+</div>
+|extrow-5-col-D-2 = 恢复 120 生命值
+|extrow-5-col-D-4 = 可以无限使用
+
+|extrow-6-col-result = {{item|Strange Brew}}
+|extrow-6-col-D-1 = <div style="max-width: 450px;">
+* 购买自[[{{tr|Skeleton Merchant}}]]（{{iteminfo|Strange Brew|buy}}）
+</div>
+|extrow-6-col-D-2 = 恢复 70–120 生命值
+
+}}{{options/reset|item}}
+
+<div class="ajaxHide">{{Master Template Consumables
+| show-potion = yes
+}}
+</div>
+
+{{Category|药水物品}}
+{{category|Healing items|*}}
+
+{{language info|en=Recovery potions}}

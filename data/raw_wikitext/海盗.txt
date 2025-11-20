@@ -1,0 +1,173 @@
+{{npc infobox
+| auto = 229
+| type = NPC
+| environment = Valid house
+| imageother = Map Icon Pirate.png
+| imageothercaption = Map Icon
+| hardmode = yes
+| idprojectile = 14, 162
+| sound1 = NPC Killed 6.wav
+| soundcaption1 = 被击杀{{note|paren=y|small=y|{{tr|shimmered form}}}}
+}}
+{{about|{{tr|the town NPC}}|{{tr|Pirate Invasion}}期间生成的{{tr|the enemies}}|[[{{tr|Pirate Invasion|link=y}}#内容|{{tr|Pirates}}]]|}}
+{{quotation|[[File:Emote Town Pirate.gif|link=]] '''{{tr|Pirate}}'''|{{gameText|LegacyDialog.273}}}}
+
+'''{{tr|Pirate}}'''是一个[[{{tr|Hardmode}}]] [[{{tr|NPC}}]] {{tr|vendor}}，他的外观和来自[[{{tr|Pirate Invasion}}]]的[[{{tr|Pirate Captain}}]][[{{tr|enemies}}|{{tr|enemy}}]]几乎完全一样。一旦以下条件全部满足他就会入住：
+
+* 有一间空闲的[[{{tr|house}}]]。
+* 至少完成了一次[[{{tr|Pirate Invasion}}]][[{{tr|events}}|{{tr|event}}]]。
+
+在{{eversions|1.3.0.1}}中，他会用他的{{tr|gun}}来自卫，类似于{{tr|Pirate Captain enemy}}，这把{{tr|gun}}能发射{{tr|bullets and cannonballs}}。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Cannon}}
+|{{shop row|Cannonball}}
+|{{shop row|Pirate Hat}}
+|{{shop row|Pirate Shirt}}
+|{{shop row|Pirate Pants}}
+|{{shop row|Sail}}
+|{{shop row|Parrot Cracker|当在[[{{tr|Ocean}}]]{{tr|biome}}中与其交谈时。}}
+|{{shop row|Bunny Cannon|[[{{tr|Party Girl}}]]在场、世界处于[[{{tr|Hardmode}}]]中且已有[[{{tr|Mechanical Boss}}]] 被打败。}}
+|{{shop row|Explosive Bunny|{{tr|Party Girl}}在场、世界处于{{tr|Hardmode}}中且已有{{tr|mechanical boss}}被打败。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== {{tr|Living preferences}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Pirate|male}}
+{{-}}
+
+== 名字 ==
+{{npc names|width=11em}}<!-- the increased width is needed for the long name "Captain Stoney Dirt", which spans two columns with certain screen sizes -->
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.277}}”
+* “{{gameText|LegacyDialog.273}}”
+* “{{gameText|LegacyDialog.275}}”
+* “{{gameText|LegacyDialog.279}}”
+* “{{gameText|LegacyDialog.278}}”
+* “{{gameText|LegacyDialog.274}}”
+
+'''当{{eil|Tavernkeep}}存在时：'''
+* “{{gameText|PirateChatter.Chatter_1}}”
+
+'''如果玩家是女性{{eicons|1.3.0.1}}/任意性别{{eicons|1.3.0.1|invert=y}}：'''
+* “{{gameText|LegacyDialog.276|x_PlayerName=&lt;{{tr|player}}的名称&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|PirateSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|PirateSpecialText.Windy1}}”
+* “{{gameText|PirateSpecialText.Windy2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|PirateSpecialText.Rain2}}”
+* “{{gameText|PirateSpecialText.Rain1}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|PirateSpecialText.Storm1}}”
+* “{{gameText|PirateSpecialText.Storm2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|PirateSpecialText.Graveyard2}}”
+* “{{gameText|PirateSpecialText.Graveyard1}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Pirate.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Pirate.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Pirate.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Pirate.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Pirate.HateCrowded}}”
+
+'''在[[{{tr|Ocean}}]]中：'''
+* “{{gameText|TownNPCMood_Pirate.LikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_Pirate.DislikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Pirate.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''当在[[{{tr|Angler}}]]附近时：'''
+* “{{gameText|TownNPCMood_Pirate.LoveNPC|x_NPCName=&lt;{{tr|Angler}}的名称&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Pirate.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名称&gt;}}”
+
+'''靠近[[{{tr|Tavernkeep}}]]时：'''
+* “{{gameText|TownNPCMood_Pirate.LikeNPC|x_NPCName=&lt;{{tr|Tavernkeep}}的名称&gt;}}”
+
+'''靠近[[{{tr|Stylist}}]]时：'''
+* “{{gameText|TownNPCMood_Pirate.DislikeNPC|x_NPCName=&lt;{{tr|Stylist}}的名称&gt;}}”
+
+'''靠近[[{{tr|Guide}}]]时：'''
+* “{{gameText|TownNPCMood_Pirate.HateNPC|x_NPCName=&lt;{{tr|Guide}}的名称&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Pirate.Content}}”
+{{collapse bottom}}
+
+== 备注 ==
+* 就像[[{{tr|Steampunker}}]]和[[{{tr|Santa Claus}}]]，{{tr|the pirate}}的生成需求并不要求世界处于{{tr|Hardmode}}中，但至少需要有一个{{tr|Hardmode}}世界来取得事件召唤物品。
+* {{icon|old-gen}} 在[[{{tr|housing}}菜单]]中，他的描述是“我想他失去了船”。
+
+== 花絮 ==
+* {{tr|The pirate}}像是[[{{tr|Pirate Invasion}}]]中的[[{{tr|Pirate Captain}}]]（没了{{tr|enemy}}{{tr|sprite}}上的金手套）。
+* {{tr|The Pirate}}的[[{{tr|Pirate|link=y}}#{{tr|Shimmered form}}|{{tr|Shimmered form}}]]似乎是一个鬼魂，这参考了常常出现于媒体作品中的{{维基百科|Ghost ship|t=幽灵船}}。
+** {{tr|The Shimmered form}}和击败[[{{tr|Pirate Captain}}]]{{tr|enemy}}时出现的[[{{tr|Pirate's Curse}}]]有些相似。
+** {{tr|The Pirate}}在{{tr|Shimmered form}}下被杀死时会使用{{sound|[[{{tr|Media:NPC Killed 6.wav}}|鬼魂般的{{tr|death}}音效]]|NPC Killed 6.wav}}（而非通常的{{sound|[[{{tr|Media:NPC Killed 1.wav}}|{{tr|NPC death}}音效]]|NPC Killed 1.wav}}）。
+* {{tr|the Pirate}}可能的名称中有许多隐射了历史上的船长（虽然这些人中有很多的“{{tr|pirate}}”地位直到今天还有争议）：
+** Black Beard 是指英国海盗{{维基百科|Blackbeard|Edward "Blackbeard" Teach|t=“黑胡子”爱德华·蒂奇}}。
+** Red Beard 是指奥斯曼帝国海员{{维基百科|Oruç Reis|t=阿鲁吉·丁}}，他被称为 Baba Oruç，在欧洲又演变成了 Barbarossa（意大利语的 Redbeard）。
+** David 指的是俚语{{维基百科|Davy Jones' Locker|t=戴维·琼斯之箱}}。
+** Captain Morgan 指的是威尔士私掠船长{{维基百科|Sir Henry Morgan|t=亨利·摩根爵士}}。<!-- The rum-maker "Captain Morgan" doesn't need a note here, as it is named after Captain Henry Morgan and uses him as a mascot/logo. -->
+** James T. Beard 指的是美国媒体系列{{维基百科|b=y|Star Trek|t=星际迷航}}中的虚构的星舰船长{{维基百科|James T. Kirk|t=詹姆斯·泰比里厄斯·柯克}}（值得注意的是他并非海盗角色）。
+** Jack 指的是{{维基百科|b=y|Pirates of the Caribbean|t=加勒比海盗}}系列电影中的主人公：{{维基百科|Jack Sparrow|t=杰克·斯派罗}}船长。
+** 名称 Jake 可能参考了美国音乐与互动儿童动画电视连续剧{{维基百科|b=y|Jake and the Never Land Pirates|t=杰克与梦幻岛海盗}}。
+* 他的话语“{{gameText|LegacyDialog.273}}”参考了阿佛烈·丁尼生（Alfred Tennyson）的诗歌《{{维基百科|In Memoriam A.H.H.|t=悼念集}}中的一句：“It's better to have loved and lost than never to have loved at all”（爱过，又失去爱，好过从未爱过）
+* 他的话语“{{gameText|LegacyDialog.278}}”参考了 1851 年的小说{{维基百科|b=y|Moby-Dick|t=白鲸}}
+* 他的话语“{{gameText|LegacyDialog.274}}”参考了海歌{{维基百科|b=y|Dead Man's Chest}}
+* 他的{{tr|Thunderstorm}}话语：“{{gameText|PirateSpecialText.Storm2}}”中的{{wikipedia|Charybdis|卡律布狄斯（Charybdis）}}是希腊神话中的海怪，会通过吞吐水产生漩涡的方式摧毁船只。
+* 虽然[[{{tr|Cyborg}}]]说{{tr|the Pirate}}对他很好，但{{tr|the Cyborg}}似乎并不影响{{tr|Pirate}}的[[{{tr|Happiness}}]]情况。
+* 罕见地，{{tr|the Pirate}}和[[{{tr|Guide}}]]可能同名（Jake 或 Jack）。
+* {{eil|Party}}期间，他不止戴上了{{tr|a party hat}}，袖子也有所不同。
+* 来自[[{{tr|The Horseman's Blade}}]]的火焰{{tr|pumpkins}}会导向{{tr|Pirate}}，虽然他并非{{tr|enemy}}。
+* 显然，{{tr|the Pirate}}特别喜欢{{tr|the Angler}}，想教他成为海盗。
+* {{tr|The Pirate}}有时会排便，类似于[[{{tr|Pirate Staff}}|{{tr|Pirate minion}}]]。
+* 不知为何，{{tr|Pirate}}的像素图与{{tr|Demolitionist}}是同一套模板。（比其他{{tr|NPC}}像素图要矮半格）
+* 虽然{{tr|Pirate}}宣称解决掉了{{tr|Stylist}}，但技术层面上来说， {{tr|town NPCs}}之间是不会相互攻击的：“{{gameText|TownNPCMood_Pirate.DislikeNPC|x_NPCName=&lt;{{tr|Stylist}}的名称&gt;}}”。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4.1|添加了[[{{tr|Sail}}]]的价格。}}
+{{history|Desktop 1.2.4|现在出售[[{{tr|Sail}}]]。}}
+{{history|Desktop 1.2.3|不再出售[[{{tr|Explosive Bunny}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Pirate}}

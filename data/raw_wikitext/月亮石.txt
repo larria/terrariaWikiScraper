@@ -1,0 +1,56 @@
+{{item infobox
+| auto = 900
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Moon Charm}}
+
+'''{{tr|Moon Stone}}'''是一种[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，在[[{{tr|Solar Eclipse}}]][[{{tr|event}}]]中有 {{chance|1/35}} / {{expert|{{chance|69/1225}}}} 几率掉落自[[{{tr|Vampire}}]]。它提供与[[{{tr|Sun Stone}}]]相同的效果，但它只会在[[{{tr|night}}]]或{{tr|Solar Eclipse}}期间激活这些效果。
+
+属性加成为：{{source code ref|v=1.3.5.3|method=Terraria.Player.UpdateEquips}}
+* +10% [[{{tr|melee speed}}]]
+* +10% [[{{tr|damage}}]]（所有类型）
+* +2% [[{{tr|critical strike}}]]率
+* +1 HP/s [[{{tr|health regeneration}}]]<!-- Note that in the code, it says "lifeRegen += 2", but each point of the "lifeRegen" equals to 0.5 HP/s. -->
+* +4 [[{{tr|defense}}]]
+* +15% [[{{tr|mining speed}}]]
+* +0.5 [[{{tr|summon}}]][[{{tr|knockback}}]]
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Moon Stone|expectedrows=1}}
+
+== 备注 ==
+* 尽管{{tr|Solar Eclipse}}发生在白天，但{{tr|Moon Stone}}''可以''在这期间生效。
+** 这可能是因为在现实生活中，{{tr|solar eclipses}}期间月亮会挡住太阳。
+
+== 小贴士 ==
+* 此{{tr|accessory}}对于与[[{{tr|mechanical bosses}}]]的战斗可能十分有用，因为这些战斗发生在夜晚。
+* 有一种更容易/更快获得{{tr|Moon Stone}}的方法是放置[[{{tr|Water Candle}}]]或使用[[{{tr|Battle Potion}}]]，因为[[{{tr|Blood Moon}}]]和[[{{tr|Solar Eclipse}}]]并没有固定的{{tr|spawn rate}}。
+* 就平均伤害输出而言，{{tr|this accessory}}对除{{tr|summoner}}以外的职业来说数据上优于[[{{tr|Avenger Emblem}}]]，因为{{tr|summoning weapons}}不受玩家{{tr|critical strike chance}}的影响。不过，{{tr|summoners}}也只会损失大约 2% 的伤害，但可以得到更高的生存能力{{tr|minion knockback}}。
+
+== 花絮 ==
+* {{tr|The Moon Stone}}和其对应物{{tr|the Sun Stone}}可能是参考了平台冒险动作角色扮演游戏{{维基百科|b=y|Castlevania: Symphony of the Night|t=恶魔城X：月下夜想曲}}。有两件物品和它们有相似的名字、外观、功能：[https://castlevania.fandom.com/wiki/Sunstone {{tr|Sun stone}}]和[https://castlevania.fandom.com/wiki/Moonstone {{tr|Moon stone}}]。
+** 进一步的，游戏的主角[https://castlevania.fandom.com/wiki/Alucard 阿鲁卡多（Alucard）]，是一个半吸血鬼，后者是人类与吸血鬼的后代，而此{{tr|item}}掉落于[[{{tr|Vampire}}]]{{tr|enemy}}，后者可能是参考了 Alucard 的父亲[https://castlevania.fandom.com/wiki/Dracula 德古拉（Dracula）]。
+* 虽然此{{tr|item}}掉落于[[{{tr|Vampire}}]]{{tr|enemy}}，但其对应物[[{{tr|Sun Stone}}]]却需要从[[{{tr|Golem}}]] {{tr|boss}} 身上获取。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|不再与{{tr|Celestial Shell, Celestial Stone, and Sun Stone}}叠加。}}
+{{history|Desktop 1.3.2|装备后的外观更新。}}
+{{history|Desktop 1.3.0.1|{{tr|Inventory sprite updated.}}旧的外观是 [[File:Moon Stone (old).png|20px]]。}}
+{{history|Desktop 1.2.1.2|现在被用在[[{{tr|Celestial Stone}}]]的{{tr|crafting recipe}}中。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Moon Stone}}

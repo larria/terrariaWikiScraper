@@ -1,0 +1,66 @@
+{{naturalgen only}}
+{{item infobox
+| name = Plantera's Bulb<!--do not remove this line! It fixes an issue with the Cargo MediaWiki extension recognizing apostrophes in page names.-->
+| type = Background object
+| imagealt = [[File:Plantera's Bulb.gif|link=|Plantera's Bulb placed graphic]]
+| width = 2
+| height = 2
+| idtile = 238
+| hardmode = yes
+| listcat = Naturally generated
+| cargo = no
+}}
+[[File:PlanterasBulb.jpg|thumb|right|在暗处和明亮处的{{tr|Plantera's Bulb}}。]]
+
+'''{{tr|Plantera's Bulb}}'''是一种[[{{tr|Hardmode}}]]{{tr|background objects}}，被打破时会召唤[[{{tr|Plantera}}]]。在所有三个[[{{tr|mechanical bosses}}]]都被击败后（在{{3DS version}}中只需要击败一个），它们通常会在[[{{tr|Underground Jungle}}]]中的随机位置自然生成。[[{{tr|status message}}]]“''{{gameText|LegacyMisc.32}}''”会提示{{tr|Plantera's Bulbs}}开始生成了。在{{eversions|1.4.4}}中，在首次击败所有三个{{tr|mechanical bosses}} 时，会立即生成一个{{tr|Plantera's Bulb}}。
+
+必须用[[{{tr|pickaxe}}]]、[[{{tr|drill}}]]、[[{{tr|Blocks}}]]、使用除了{{tr|Green Solution}}以外的[[{{tr|solution}}]]的[[{{tr|Clentaminator}}]]、或{{$|explosives||class}}摧毁{{tr|Plantera's Bulbs}}，才能让{{tr|Plantera}}生成。
+
+{{tr|Plantera's Bulbs}}会散发较暗的光，会在[[{{tr|minimap}}]]中玩家已经探索过的区域上显示为粉色。它每次生成一个，每次生成间约有（游戏内）半天的延迟。如果不破坏它们，最终会存在许多{{tr|Plantera's Bulbs}}（[[{{tr|Map size}}|{{tr|large world}}]]的自然生成的{{tr|Underground Jungle}}中约 10–15 个）；如果它们被破坏，则会在同样的间隔后重新生成（但不一定在同一位置），允许玩家无限次地召唤{{tr|Plantera}}。{{tr|Plantera's Bulbs}}不会在[[{{tr|Metal Detector}}]]或其升级上显示。
+
+== 备注 ==
+[[File:Plantera's Bulb distribution.png|220px|thumb|最大密度的{{tr|Plantera's Bulbs}}分布。]]
+[[File:Plantera's Bulb on map.png|100px|thumb|{{tr|minimap}}中的{{tr|Plantera's Bulb}}。]]
+
+* {{tr|Plantera's Bulb}}可以在[[{{tr|surface}}]]以下的任何一块[[{{tr|Jungle grass}}]]（包括{{tr|player}}放置的）上生成，并不一定要在{{tr|Underground Jungle biome}}中。它们永远不会在（以{{tr|Plantera's Bulb}}为中心）的 302×302 图格的矩形范围内生成{{source code ref|v=1.3.5.3|method=Terraria.WorldGen.UpdateWorld}}，换言之，它们在最大密度下互相相距 150 格分布。
+* 如果{{tr|Plantera's Bulb}}下面的{{tr|blocks}}若被使用锤子锤成半{{tr|blocks}}或斜面、被用[[{{tr|Block Swap}}]]改变、变成[[{{tr|Chlorophyte Ore}}]]、或因[[{{tr|biome spread}}]]、[[{{tr|Clentaminator}}]]转化成[[{{tr|Dirt Block}}]]、或与[[{{tr|lava}}]]接触，{{tr|Plantera's Bulb}}就会被破坏。
+** {{tr|Plantera}}仅会在以被破坏的{{tr|Plantera's Bulb}}为中心，50 格长的菱形区域内有玩家时生成。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.CheckJunglePlant}}
+** 如果{{tr|Plantera}}还存活时破坏了另一个{{tr|Plantera's Bulb}}，不会生成第二个{{tr|Plantera}}。
+* {{tr|Plantera's Bulb}}很容易发现，因为它们会发出黯淡的粉红色光。在地图上，它们显示为粉色的，2*2大小的方形。{{icon|desktop|console|mobile}} 如果{{tr|cursor}}悬停其上，它们也会被标记为“{{gameText|MapObject.PlanterasBulb}}”。
+
+== 小贴士 ==
+* 如果准备刷{{tr|Plantera}}，一个可行的方法是在战斗场地附近挖一条长长的{{tr|Mud Blocks}}隧道，这样就可以很容易地找到并抵达任何{{tr|Plantera's Bulbs}}处。
+** 这可以使用{{eil|Gravedigger's Shovel}}来轻松达成。
+* 可以用成排的长有{{tr|Jungle grass}}的[[{{tr|Mud Blocks}}]]来种植{{tr|The Plantera's Bulbs}}。
+* {{eicons|1.4.0.1}} [[{{tr|Bed}}#睡觉|睡觉]]是让{{tr|Plantera's Bulbs}}生成的好方法。
+* {{eicons|1.4.0.1}} 在[[{{tr|Journey Mode}}]]中，可以将时间流速设为 24 倍，以提高{{tr|Plantera's Bulbs}}的生成频率。<!--
+
+If Plantera cannot be summoned when the bulb is destroyed by explosives in your world, PLEASE include what version of Terraria you are playing (e.g Console, Mobile, 3DS).
+
+-->
+
+== 花絮 ==
+* {{tr|Plantera's Bulbs}}和第一阶段的{{tr|Plantera}}的外观极其相似。
+* {{tr|The Plantera's Bulbs}}和[[{{tr|Larva}}]]很相似，它们都是{{tr|Underground Jungle}}中的{{tr|ambient objects}}，在被破坏时都会生成一个 {{tr|boss}}。
+** 此外，它们两者都粗略地和其 {{tr|bosses}} 的外观相似。
+* {{tr|Plantera's Bulb}}能够在深度为 0 的{{tr|block}}上生成，看上去就像生成在{{tr|surface layer}}一样。
+
+== 历史 ==
+{{history|Desktop 1.4.4|在首次击败所有[[{{tr|mechanical bosses}}]] 时，游戏现在会尝试立即生成一个{{tr|Plantera's Bulb}}。}}
+{{history|Desktop 1.2.3|在 3 个{{tr|mechanical bosses}} 全被打败后才会生成。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.06|在 3 个{{tr|mechanical bosses}} 全被打败后才会生成。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，仅在 3 个{{tr|mechanical bosses}} 全被打败后生成。}}
+{{history|Mobile 1.2.11212|在 3 个{{tr|mechanical bosses}} 全被打败后才会生成。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Plantera's Bulb}}

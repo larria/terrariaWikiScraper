@@ -1,0 +1,304 @@
+{{exclusive|desktop=y|console=y|mobile=y|nocat=y}}
+{{info request|
+和{{console version}}相关的信息，包括：
+* {{tr|toggles}}使用的 UI {{tr|icons}}/按钮及其位置（以帮助读者找到它们）。
+* 将{{tr|toggles}}设为开启/关闭的控制方式。}}
+[[File:Toggles.png|thumb|right|100px|{{icon|desktop}}玩家的主[[{{tr|inventory}}]]左侧的{{tr|Toggles}}。]]
+
+'''{{tr|Toggles}}'''是玩家的[[{{tr|inventory}}]]中的按钮，可以用于切换特定效果和能力的开/关。部分{{tr|toggles}}随时可用，而另一些需要特定的{{tr|items}}被放置于{{tr|inventory}}中，或放置于[[{{tr|Void Vault}}]]中且玩家拥有开启的[[{{tr|Void Bag}}]]。
+
+部分{{tr|toggles}}在关闭时有独特的{{tr|icons}}。没有独特的“关”状态{{tr|icons}}的{{tr|Toggles}}在关闭时会变得黯淡。
+
+在{{desktop version}}中，{{tr|toggles}}会显示为玩家的主{{tr|inventory}}左侧的小{{tr|icons}}。[[#{{tr|PDA}}|来自{{tr|PDA}}的{{tr|Toggles}}]]位于[[{{tr|minimap}}]]，或[[{{tr|armor slot}}]]的左侧（取决于用户界面尺寸和分辨率）。
+
+在{{mobile version}}中，{{tr|toggles}}会出现在{{tr|inventory}}下方的 [[File:BuilderToolsIcon.png|30px|link=]] {{tr|tools menu}}中。[[#{{tr|PDA}}|来自{{tr|PDA}}的{{tr|Toggles}}]]位于{{tr|armor slots}}下方的 [[File:PDA.png|link=]] {{tr|accessories menu}}中。 
+
+== 默认{{tr|toggles}} ==
+这些{{tr|toggles}}总是可用。
+
+=== {{tr|Block Swap}} ===
+[[File:Block Swap (demo).gif|thumb|使用中的{{tr|Block Swap}}。]]
+
+[[{{tr|Block Swap}}]]能力可用这些{{tr|icons}}开关。
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Block Swap off.png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Block Swap on.png|link=]]<br/>开}}<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Block Swap off (mobile).png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Block Swap on (mobile).png|link=]]<br/>开}}<!--
+-->}}<!--
+-->{{-}}
+
+=== {{tr|Hotbar}}锁 ===
+{{exclusive|desktop=y|section=y}}
+[[File:Hotbar Lock (demo).gif|thumb|{{tr|hotbar}}锁定和解锁的效果。]]
+
+{{tr|The Hotbar}}锁可设置点击[[{{tr|hotbar}}]]{{tr|slots}}时是否会更换手持的物品。
+
+当{{tr|hotbar}}解锁时，点击一个{{tr|hotbar}}的{{tr|slot}}会选中{{tr|slot}}中的物品。这可能会干扰其他行动，例如用[[{{tr|ranged weapon}}]]瞄准屏幕左上角。
+
+当{{tr|hotbar}}锁定时，在{{tr|hotbar}}上点击会和点击其他地方一样，除了向{{tr|cursor}}位置使用选中的物品以外没有效果。
+
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{tr|Hotbar}}锁{{tr|icons}}<!--
+	-->|{{inline block|css=width:50%;line-height:2|[[File:Hotbar toggle (unlocked).png|link=]]<br/>解锁}}<!--
+	-->{{inline block|css=width:50%;line-height:2|[[File:Hotbar toggle (locked).png|link=]]<br/>锁定}}<!--
+-->}}<!--
+-->{{-}}
+
+=== {{tr|Ruler}} ===
+[[File:Ruler (demo).png|thumb|200px|{{tr|Ruler}}测量。]]
+
+{{tr|The ruler toggle}}在开启时会显示由{{tr|character}}至{{tr|cursor}}位置的测量线。这可以用于辅助精确的{{tr|block}}放置。
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icon}}<!--
+		-->|[[File:Ruler toggle.png|link=]]<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icon}}<!--
+		-->|[[File:Ruler toggle (mobile).png|link=]]<!--
+-->}}<!--
+-->{{-}}
+
+=== {{tr|PvP and teams}}  ===
+[[{{tr|PvP}}]] 和[[{{tr|team}}]]{{tr|toggles}}仅在[[{{tr|multiplayer}}]]中可用。
+
+{{icon|desktop}}它们位于[[{{tr|armor slot}}]]的右侧。
+
+{{icon|console|mobile}}它们位于 [[File:Player menu (mobile).png|link=]] 玩家菜单中。
+
+{| class="terraria lined" style="text-align:center"
+! colspan=2 | {{tr|Type}}
+! 无
+! 红
+! 绿
+! 蓝
+! 黄
+! 粉
+|-
+! rowspan=2 | {{tr|Team icons}}
+! {{icon|desktop}}
+| [[File:No Team.png|link=]]
+| [[File:Red Team.png|link=]]
+| [[File:Green Team.png|link=]]
+| [[File:Blue Team.png|link=]]
+| [[File:Yellow Team.png|link=]]
+| [[File:Pink Team.png|link=]]
+|-
+! {{icon|console|mobile}}
+| [[File:No Team (mobile).png|link=]]
+| [[File:Red Team (mobile).png|link=]]
+| [[File:Green Team (mobile).png|link=]]
+| [[File:Blue Team (mobile).png|link=]]
+| [[File:Yellow Team (mobile).png|link=]]
+| [[File:Pink Team (mobile).png|link=]]
+|-
+! rowspan=2 | {{tr|PvP icons}}
+! 关闭
+| [[File:PvP (No Team) (off).png|link=]]
+| [[File:PvP (Red Team) (off).png|link=]]
+| [[File:PvP (Green Team) (off).png|link=]]
+| [[File:PvP (Blue Team) (off).png|link=]]
+| [[File:PvP (Yellow Team) (off).png|link=]]
+| [[File:PvP (Pink Team) (off).png|link=]]
+|-
+! 开启
+| [[File:PvP (No Team) (on).png|link=]]
+| [[File:PvP (Red Team) (on).png|link=]]
+| [[File:PvP (Green Team) (on).png|link=]]
+| [[File:PvP (Blue Team) (on).png|link=]]
+| [[File:PvP (Yellow Team) (on).png|link=]]
+| [[File:PvP (Pink Team) (on).png|link=]]
+|}
+
+=== 可见性 ===
+每个[[{{tr|accessory}}]]栏、[[{{tr|pet}}]]栏、和[[{{tr|light pet}}]]栏的右上角都有一个对应的“可见性”{{tr|toggle}}。当可见性为可见（开）时，{{tr|slot}}中的{{tr|accessory}}总是会在{{tr|character}}上显示；{{tr|slot}}中的{{tr|the pet}}会被召唤。当可见性为不可见（关）时，{{tr|accessory}}会被隐藏；{{tr|pet}}会被解除召唤。注意{{tr|vanity accessory slots}}中的{{tr|accessories}}总是会被显示，且不受可见性设置影响。
+
+{{icon|desktop}}点击{{tr|icon}}即可切换可见性设置。
+
+{{icon|mobile}}在选择一个{{tr|slot}}后，点击{{tr|armor slots}}下方的可见性按钮来切换可见性设置。
+
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}和{{console}}的可见性{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Visibility toggle (off).png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Visibility toggle (on).png|link=]]<br/>开}}<!--
+	-->|title2={{mobile}}按钮{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:EquipmentHidden.png|link=]]<br/>设为关闭}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:EquipmentShown.png|link=]]<br/>设为开启}}<!--
+-->}}<!--
+-->{{-}}
+
+== {{tr|Item toggles}} ==
+特定的{{tr|item}}和[[{{tr|accessories}}]]在被消耗、在玩家{{tr|inventory}}中、在[[{{tr|Void Vault}}]]中且玩家拥有开启的[[{{tr|Void Bag}}]]时、或装备在{{tr|accessory slots}}中时会提供一个可切换其功能的按钮。
+
+由数个其他{{tr|items}}结合而成的{{tr|items}}（如[[{{tr|The Grand Design}}]]、[[{{tr|Cell Phone}}]]）会提供所有其组成物的{{tr|toggles}}。
+
+=== [[{{tr|Mechanical Lens}}]] ===
+[[{{tr|Mechanical Lens}}]]提供了可配置的[[{{tr|Actuator}}]]和[[{{tr|Wire}}]]显示。
+<section begin="mechlens"/>
+* {{tr|Actuators and Wires}}的{{tr|Toggles}}有三种状态：
+** '''{{gameText|GameUI.Bright}}'''：{{tr|actuators}}/此颜色的{{tr|wires}}将总是以最大亮度显示。
+** '''{{gameText|GameUI.Normal}}'''：{{tr|actuators}}/此颜色的{{tr|wires}}将会被正常显示，其亮度受附近{{tr|light sources}}影响。
+** '''{{gameText|GameUI.Faded}}'''：亮度的决定方式和{{gameText|GameUI.Normal}}状态相同，但{{tr|actuators}}/此颜色的{{tr|wires}}也会是半透明的。
+* '''机械显示'''{{tr|toggle}}有两种状态：
+** '''始终显示'''：所有{{tr|Actuators and Wires}}都会被显示，无论手持的{{tr|item}}，其显示方式由对应{{tr|toggle}}决定。
+** '''正常'''：所有{{tr|Actuators and Wires}}只会在手持和[[{{tr|mechanism}}]]有关的{{tr|item}}时被显示。
+<section end="mechlens"/>
+{| class="terraria lined" style="text-align:center"
+! colspan=2 | 名字
+! 机械显示
+! {{tr|Actuators}}
+! {{tr|Red Wires}}
+! {{tr|Blue Wires}}
+! {{tr|Green Wires}}
+! {{tr|Yellow Wires}}
+|-
+! rowspan=2 | {{tr|Icon}}
+! {{icon|desktop}}
+| [[File:Mechanical Display toggle.png|link=]]
+| [[File:Actuators toggle.png|link=]]
+| [[File:Red Wire toggle.png|link=]]
+| [[File:Blue Wire toggle.png|link=]]
+| [[File:Green Wire toggle.png|link=]]
+| [[File:Yellow Wire toggle.png|link=]]
+|-
+! {{icon|console|mobile}}
+| [[File:Mechanical Display toggle (mobile).png|link=]]
+| [[File:Actuators toggle (mobile).png|link=]]
+| [[File:Red Wire toggle (mobile).png|link=]]
+| [[File:Blue Wire toggle (mobile).png|link=]]
+| [[File:Green Wire toggle (mobile).png|link=]]
+| [[File:Yellow Wire toggle (mobile).png|link=]]
+|}
+
+=== [[{{tr|Mechanical Ruler}}]] ===
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icon}}<!--
+		-->|[[File:Mechanical Ruler toggle.png|link=]]<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icon}}<!--
+		-->|[[File:Mechanical Ruler toggle (mobile).png|link=]]<!--
+-->}}<!--
+-->{{-}}
+
+=== [[{{tr|Minecart Upgrade Kit}}]] ===
+在使用[[{{tr|Minecart Upgrade Kit}}]]后，在{{tr|minecart slot}}处会出现一个{{tr|toggle}}。
+
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{tr|Minecart boost toggle}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Minecart Normal.png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Minecart Boosted.png|link=]]<br/>开}}<!--
+	-->|title2={{mobile}}按钮{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Minecart Disable (mobile).png|link=]]<br/>设为关闭}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Minecart Boost (mobile).png|link=]]<br/>设为开启}}<!--
+-->}}<!--
+-->{{-}}
+
+=== [[{{tr|Paint Sprayer}}]] ===
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icon}}<!--
+		-->|[[File:Paint Sprayer toggle.png|link=]]<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icon}}<!--
+		-->|[[File:Paint Sprayer toggle (mobile).png|link=]]<!--
+-->}}<!--
+-->{{-}}
+
+=== [[{{tr|PDA}}]] ===
+[[{{tr|PDA}}]]的每个基础组件都有一个用来切换其功能的{{tr|toggle}}。
+
+{{icon|mobile}}它们的开和关状态也会由[[#可见性|可见性{{tr|icons}}]]标示。<!--
+-->{{options/set|item|mode=image|icons=no}}
+{| class="terraria lined" style="text-align:center"
+! colspan=2 | {{tr|Item}}
+! {{item|Watches|image=Gold Watch.png/Platinum Watch.png}}
+! {{item|Weather Radio}}
+! {{item|Sextant}}
+! {{item|Fisherman's Pocket Guide}}
+! {{item|Metal Detector}}
+! {{item|Lifeform Analyzer}}
+! {{item|Radar}}
+! {{item|Tally Counter}}
+! {{item|DPS Meter}}
+! {{item|Stopwatch}}
+! {{item|Compass}}
+! {{item|Depth Meter}}
+|-
+! rowspan=2 | {{tr|Icons}}<ref group="i">{{desktop}}{{tr|icons}}在所有平台上也被用于读数{{tr|icons}}。</ref>
+! {{icon|desktop}}
+| [[File:Watch toggle.png|link=]]
+| [[File:Weather Radio toggle.png|link=]]
+| [[File:Sextant toggle.png|link=]]<ref group="i">[[{{tr|Blood Moon}}]]或[[{{tr|Solar Eclipse}}]]期间：[[File:Sextant toggle (Blood Moon).png|link=]]</ref>
+| [[File:Fisherman's Pocket Guide toggle.png|link=]]
+| [[File:Metal Detector toggle.png|link=]]
+| [[File:Lifeform Analyzer toggle.png|link=]]
+| [[File:Radar toggle.png|link=]]
+| [[File:Tally Counter toggle.png|link=]]
+| [[File:DPS Meter toggle.png|link=]]
+| [[File:Stopwatch toggle.png|link=]]
+| [[File:Compass toggle.png|link=]]
+| [[File:Depth Meter toggle.png|link=]]
+|-
+! {{icon|console|mobile}}
+| [[File:Watch toggle (mobile).png|link=]]
+| [[File:Weather Radio toggle (mobile).png|link=]]
+| [[File:Sextant toggle (mobile).png|link=]]
+| [[File:Fisherman's Pocket Guide toggle (mobile).png|link=]]
+| [[File:Metal Detector toggle (mobile).png|link=]]
+| [[File:Lifeform Analyzer toggle (mobile).png|link=]]
+| [[File:Radar toggle (mobile).png|link=]]
+| [[File:Tally Counter toggle (mobile).png|link=]]
+| [[File:DPS Meter toggle (mobile).png|link=]]
+| [[File:Stopwatch toggle (mobile).png|link=]]
+| [[File:Compass toggle (mobile).png|link=]]
+| [[File:Depth Meter toggle (mobile).png|link=]]
+|}{{options/reset|item}}
+{{reflist|group=i}}
+
+=== [[{{tr|Presserator}}]] ===
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icon}}<!--
+		-->|[[File:Presserator toggle.png|link=]]<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icon}}<!--
+		-->|[[File:Presserator toggle (mobile).png|link=]]<!--
+-->}}<!--
+-->{{-}}
+
+=== [[{{tr|Torch God's Favor}}]] ===
+在使用[[{{tr|Torch God's Favor}}]]后，这些{{tr|toggles}}将可用。
+
+{{float file box<!--
+	-->|float=left<!--
+	-->|title={{desktop}}{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap off.png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap on.png|link=]]<br/>开}}<!--
+	-->|title2={{console}}和{{mobile}}{{tr|icons}}<!--
+		-->|{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap off (mobile).png|link=]]<br/>关}}<!--
+		-->{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap on (mobile).png|link=]]<br/>开}}<!--
+-->}}<!--
+-->{{-}}
+
+== 花絮 ==
+[[File:Unused BuilderIcons.png|framed|未使用的{{tr|toggle icons}}。]]
+* 游戏文件中有数个未使用的{{tr|toggle icons}}，似乎是用于下列事物的{{tr|toggles}}：{{tr|Ruler}}、[[{{tr|Mechanical Ruler}}]]、[[{{tr|Presserator}}]]、[[{{tr|Paint Sprayer}}]]、和四种颜色的{{tr|wires}}。
+
+== 另见 ==
+部分特性也可以调整开/关，但它们不被视为“{{tr|toggles}}”。这些包括：
+
+* [[{{tr|Smart Cursor}}]]
+* 可切换物品，包括：
+** {{item|Encumbering Stone}}
+** {{item|Guide to Critter Companionship}}
+** {{item|Guide to Environmental Preservation}}
+** {{item|Guide to Peaceful Coexistence}}
+** {{item|Shellphone}}
+** {{item|Void Bag}}
+
+{{Game mechanics}}
+
+{{language info|en=Toggles}}

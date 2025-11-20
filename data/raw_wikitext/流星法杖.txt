@@ -1,0 +1,54 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 2750
+| sound1 = Item 89.wav
+| soundcaption1 = 碰撞
+| hardmode = yes
+| idprojectile = 424, 425, 426
+| listcat = wands
+}}
+
+'''{{tr|Meteor Staff}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|wand}}]]。使用时，它可从天上快速召唤{{tr|meteor}}落向{{tr|cursor}}位置，在碰到[[{{tr|enemies}}]]或[[{{tr|block}}]]时爆炸。
+
+{{modifier|magic}}
+
+[[File:Meteor Staff (demo).gif|framed|运作中的{{tr|Meteor Staff}}。]]
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Meteor Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Meteor projectiles}}击中时造成 5 {{tr|tick}}{{tick}}{{tr|global invincibility frame}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* {{tr|Meteor projectiles}}生成在{{tr|player}}中心上方 37.5 格处。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot}}
+* 在地下时，只要{{tr|Meteor projectiles}}位于{{tr|player}}上方 18.75 格高度以上，它们就能穿过物块。否则，它们会在与物块碰撞时爆炸。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001}}
+* {{tr|Meteor projectiles}}在击中{{tr|enemy}}或{{tr|block}}时会爆炸，在以撞击点为中心的矩形范围内造成伤害。此区域的大小是随机的，范围从 4×4 格到 6.375×6.375 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+
+== 小贴士 ==
+* {{tr|The Meteor Staff}}是游戏内魔力效率最低的{{tr|weapon}}之一，类似于[[{{tr|Lunar Flare}}]]，与它具有相同的{{tr|mana cost}}和相似的{{tr|attack}}。
+* {{tr|The Meteor Staff}}在照亮[[{{tr|minimap}}]]时很有用，因为它的{{tr|projectiles}}可以发出大量光线。
+
+
+== 花絮 ==
+* {{tr|The Meteor Staff}}可被认为是[[{{tr|Daedalus Stormbow}}]]的魔法对应物。
+* 在 {{mobile version}} 中，当{{tr|inventory}}处于开启状态时可以看到{{tr|Meteor projectiles}}的生成过程，因为开启{{tr|inventory}}时屏幕的顶部会上移。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Mana cost}}由 13 降低至 9。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+	
+== 参考==
+{{reflist}}
+
+{{Meteorite}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Meteor Staff}}

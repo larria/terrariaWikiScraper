@@ -1,0 +1,44 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4404
+| tags = loot / bag loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Inner Tube}}'''是一个[[{{tr|accessory}}]]，有 {{chance|9/40}} 几率在[[{{tr|Water Chest}}]]、[[{{tr|Ocean Crate}}]]、和[[{{tr|Seaside Crate}}]]中找到。装备后，它会使得玩家在[[{{tr|liquids}}]]表面漂浮而非沉到{{tr|liquids}}底部。这一效果可以通过按住 {{key|down}} 来暂时无效化。此外，当玩家位于任何{{tr|liquid}}中时，{{tr|Inner Tube}}还会为玩家提供[[{{tr|Flipper}}]]的效果（按下 {{key|jump}} 来向上游动）{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateEquips}}和 +5 [[{{tr|Fishing Power}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetFishingConditions}}
+
+== 备注 ==
+* {{tr|The Inner Tube}}的漂浮效果会在以下情况下禁用：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+** 在[[{{tr|water}}]]和[[{{tr|lava}}]]中手持[[{{tr|Trident}}]]。{{source code ref|v=1.4.4.9|field=Terraria.Player.trident}}
+** 在{{tr|water}}中拥有[[{{tr|Merfolk}}]][[{{tr|buff}}]]。{{source code ref|v=1.4.4.9|field=Terraria.Player.merman}}
+** 在{{tr|water, lava}}、和[[{{tr|honey}}]]中装备[[{{tr|Fishron Wings}}]]或拥有[[{{tr|Flipper Potion}}|{{tr|Flipper buff}}]]。{{source code ref|v=1.4.4.9|field=Terraria.Player.ignoreWater}}
+
+== 小贴士 ==
+* 在游戏早期，{{tr|The Inner Tube}}比{{tr|Flipper}}和[[{{tr|Water Walking Boots}}]]更有用，因为它提供的功能就像是两个{{tr|accessories}}之和。不过，与这些{{tr|accessories}}不同，{{tr|the Inner Tube}}不能升级，因此在玩家购入[[{{tr|Tinkerer's Workshop}}]]后很快就会被淘汰掉。
+* 只要玩家处于水下，此{{tr|accessory}}就会使玩家向上加速，没有最大速度限制。可以利用这一点使用很深的水柱让玩家加速到极高的速度。
+** 这也可以搭配[[{{tr|Jousting Lance}}]]被进一步利用以造成极高的伤害。通过这一方法，仅一击就有可能造成百万级的高额伤害。
+** 一旦玩家到达了约 {{mph|150}} 的速度，他们就会开始穿过{{tr|block}}并无视[[{{tr|Portal Gun}}]]的{{tr|portal}}，但[[{{tr|Teleporter}}]]仍然可用。
+* 如果与[[{{tr|Featherfall Potion}}]]搭配使用，沉入[[{{tr|Ocean}}]]的底端再浮上来，就会让{{tr|character}}“发射”上天，甚至有可能到达[[{{tr|Floating Island}}]]所在的高度。
+* 与[[{{tr|Psycho Knife}}]]、[[{{tr|Shroomite armor}}]]、或[[{{tr|Vortex armor}}]]的{{tr|stealth}}效果搭配使用时，{{tr|the Inner Tube}}仍然可见。因此，把它穿在{{tr|vanity slot}}是个定位玩家的好方法。不过，[[{{tr|Invisibility Potion}}]]仍然会正常地令其不可见。
+
+== 花絮 ==
+* 术语 {{维基百科|inner tube}}（内胎，即{{tr|Inner Tube}}对应的英文原文），指的是某些充气轮胎内部的充气环形区域。它有时也作为{{维基百科|swim ring|t=游泳圈}}的同义词使用，而这种可充气的水上玩具正是从内胎发展而来的。[[《{{tr|Terraria}}》]]中的此{{tr|item}}看起来就很像是游泳圈。
+
+== 另见 ==
+* [[{{tr|Movement Accessories}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Water Chests and Crates}}的掉落率由 {{chance|81/400}} 提升至 {{chance|9/40}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Inner Tube}}

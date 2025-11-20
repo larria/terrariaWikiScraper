@@ -1,0 +1,44 @@
+<includeonly><!--
+-->{{#if:{{#dplvar:wtrow:OK}}||{{weapon type row}}}}<!-- load dplvars -->
+|-
+| {{{image|}}}
+| {{item|{{{name|}}}|id={{{itemid|}}}|mode=text|class=alignleft block|icons=no}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| {{#if:{{{usetime|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{usetime|}}}+1}}|<!-- if not is_number($usetime)
+		-->{{#dplreplace:{{{usetime|}}}|\(({{#dplvar:_uts}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "use time" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{usetime|}}}}}<br/>{{note|small=y|block=y|({{use time|{{{usetime|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#var:_reach_{{{itemid|}}}}}
+| {{#ifeq:{{#var:_duration_{{{itemid|}}}}}|{{infinity}}|data-sort-value=100 {{!}}}}{{#var:_duration_{{{itemid|}}}}}
+| {{#if:{{{knockback|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{knockback|}}}+1}}|<!-- if not is_number($knockback)
+		-->{{#dplreplace:{{{knockback|}}}|\(({{#dplvar:_kbs}})\)|</span>{{note|small=y|($1)}}}}<!-- replace the "knockback" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{knockback|}}}}}<br/>{{note|small=y|block=y|({{knockback|{{{knockback|}}}}})}}<!-- 
+	-->}}<!--
+-->}}
+| {{#if:{{{critical|}}}|<!--
+	-->{{percent|<!--
+		-->{{#dplreplace:{{{critical|}}}|/ \/ /|&#32;/<br/>}}<!--
+		-->{{#if:{{#pos:{{{critical|}}}|%}}||%}}<!--
+	-->}}<!--
+-->}}
+| {{#if:{{{hardmode|}}}|{{#dplvar:_yes}}|{{#dplvar:_no}}}}
+| {{rare|{{{rare|}}}}}
+| align=left | <small>{{#var:_source_{{{itemid|}}}|{{itemsource|id={{{itemid|}}}|sep=<hr class{{=}}"incell-border"/>}}}}</small>
+| {{#var:_onedrop_{{{itemid|}}}}}
+| align=right | {{{sell|}}}
+| align=left | <small>{{#var:_note_{{{itemid|}}}}}</small><!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Yoyos/row}}
+</noinclude>

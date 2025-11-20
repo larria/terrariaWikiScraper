@@ -1,0 +1,108 @@
+{{item infobox
+| auto = 266
+| idprojectile = 42, 65, 68, 354
+}}
+
+'''{{tr|Sandgun}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|ranged weapon}}]]，使用[[{{tr|Sand Block}}]]、[[{{tr|Pearlsand Block}}]]、[[{{tr|Ebonsand Block}}]]或[[{{tr|Crimsand Block}}]]作为其[[{{tr|ammo}}]]，发射出受{{tr|gravity}}影响的{{tr|sand ball projectiles}}。在击中实体{{tr|block}}或{{tr|enemy}}时，如果击中的位置未被占用，{{tr|sand ball}}就会变为对应类型的{{tr|Sand Block}}，否则它会消失。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}当{{tr|Pearlsand Blocks, Ebonsand Blocks, or Crimsand Blocks}}被用作{{tr|ammo}}时，{{tr|sand ball}}的{{tr|base damage}}会提升 5，且它将能够穿透无限数量的目标。所有{{tr|Sand Blocks}}的{{tr|variants}}都具有默认的 −1 {{tr|damage}}值，这会将{{tr|Sandgun}}的实际{{tr|damage}}降低 1。
+
+{| class="terraria align-center float-right"
+! colspan=2 | {{tr|Ammo}}
+! {{tr|Damage}}
+|-
+| {{item|mode=table|Sand Block}}
+| {{#expr:{{iteminfo|Sandgun|damage}}-1}}
+|-
+| {{item|mode=table|Pearlsand Block}}
+| {{#expr:{{iteminfo|Sandgun|damage}}-1 +5}}
+|-
+| {{item|mode=table|Ebonsand Block}}
+| {{#expr:{{iteminfo|Sandgun|damage}}-1 +5}}
+|-
+| {{item|mode=table|Crimsand Block}}
+| {{#expr:{{iteminfo|Sandgun|damage}}-1 +5}}
+|}
+
+{{modifier|ranged}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sandgun|expectedrows=1}}
+
+== 备注 ==
+[[File:Sandgun (demo).gif|thumb|使用中的{{tr|The Sandgun}}。注意{{tr|the projectiles}}在击中时会变为{{tr|sand block}}，但在击中位置已经被占用时不会。]]
+* 如果{{tr|sand ball projectile}}落在已经被占用的{{tr|tile}}上，它会消失，不会变成{{tr|Sand Block}}。如果{{tr|projectile}}落在半空中的{{tr|tile}}上，它会变为下落的{{tr|sand ball}}。和常规的下落{{tr|sand ball}}一样，它不能落在部分事物上，例如[[{{tr|Acorn}}|{{tr|Saplings}}]]和[[{{tr|Minecart Track}}]]；这时{{tr|Sand Block}}将会{{eicons|1.4.0.1}}变为物体形态 / {{eicons|1.4.0.1|invert=y}} 消失。
+** {{eicons|1.4.0.1}}当{{tr|projectile}}落在[[{{tr|statue}}]]上时<ref>技术上来说，[[{{tr|Tile IDs}}/第 4 部分|{{tr|ID}}]] 为 105 的{{tr|tiles}}均包含在内，因此除了大部分{{tr|statues}}以外，[[{{tr|vases}}]]也包含在内。</ref>，它会变为{{tr|Sand Block}}，并将{{tr|statue}}变为物体形态。
+* {{eicons|1.4.4}}{{tr|The Sandgun}}会收到[[{{tr|Shroomite Helmet}}]]的特种加成。
+
+== 小贴士 ==
+* {{tr|Sandgun}}经常会创造出四处散落的{{tr|sand block}}，这也会阻挡玩家对{{tr|enemy}}的攻击。使用它和{{tr|enemies}}战斗可能会比较困难。
+** 一种有效的在战斗场地中使用{{tr|Sandgun}}而不造成混乱的方式是用{{tr|background object}}摧毁{{tr|Sand Blocks}}或使其变为物品，因而不会产生堆积的{{tr|sand}}且能轻松地回收它们。
+*** 对于此，最好的选择是[[{{tr|Minecart Track}}]]，它们制作便宜且比其他的{{tr|block}}放置速度更快。[[{{tr|Torches}}]]或{{eil|Coin Piles}}也是可选项。
+* {{tr|Sandgun}}在能获得它的游戏阶段十分强大，仅在净伤害和速度上略逊于[[{{tr|Handgun}}]]。不过，如果打偏的次数太多，它留下的{{tr|sand block}}会阻挡玩家。考虑使用[[{{tr|Featherfall Potion}}]]并向下射击来避开下落的{{tr|sand block}}。
+** 使用{{tr|Ebonsand or Crimsand}}作为{{tr|ammo}}时，{{tr|Sandgun}}的伤害比用[[{{tr|Meteor Shot}}]]的{{tr|Handgun}}高 1，代价为{{tr|use speed}}要慢 1 点。不过，如果要在探索中使用{{tr|Sandgun}}，要注意{{tr|sand}}在[[{{tr|Hardmode}}]]下会蔓延[[{{tr|evil biomes}}]]。
+* {{tr|Sandgun}}是应对[[{{tr|Skeletron}}]]和探索[[{{tr|Dungeon}}]]的好选择，因为[[{{tr|Dungeon Brick}}]]能避免{{tr|Hardmode}}下的{{tr|evil biome}}蔓延，而其伤害和[[{{tr|Molten Fury}}]]相当，但{{tr|projectile speed}}更快且能无限穿透。
+* 使用{{tr|Sandgun}}和[[{{tr|Wall of Flesh}}]]战斗会较为有效，因为 {{tr|boss}} 会迫使玩家持续移动，因而能避开留下的{{tr|sand}}。不过，掉落的{{tr|Sand Block}}可能会阻挡楼梯，这意味着可能需要在战后修理使用{{tr|platforms}}建造的{{tr|Underworld}}桥梁。
+** {{tr|biome}}{{tr|Sand Blocks}}的穿透能力也是同时攻击[[{{tr|The Hungry}}]]和{{tr|Wall of Flesh}}的理想选择。如果{{tr|Corruption or Crimson}}没有天然影响到{{tr|world}}中的一片{{tr|Desert}}，可以用[[{{tr|Vile Powder}}]]或[[{{tr|Vicious Powder}}]]来获取{{tr|ammo}}。
+* 虽然普通的{{tr|Sand Blocks}}只能击中一个{{tr|enemy}}，它产生的下落的{{tr|sand ball}}会对{{tr|enemy}}造成可观的伤害。
+* {{tr|Sandgun}}可以当作更加可靠（但蔓延更慢）的[[{{tr|Thrown Water}}]]使用，因为它能发射所有类型的{{tr|sand}}。
+* {{tr|Sandgun}}放置{{tr|Sand Block}}的能力在远距离封堵隧道或填满含有{{tr|lava}}的空隙时会很有用。
+* {{eil|Gravedigger's Shovel}}和{{tr|Sandgun}}配合很好。它们都是能够在游戏刚开始就能获得，无需前置条件（需要被{{tr|craft}}这一条件除外）的物品。{{tr|Gravedigger's Shovel}}能够挖取大量的{{tr|Sandgun}}的{{tr|ammo}}，且能够简单快捷地清理{{tr|Sand Block}}，无需依赖[[{{tr|explosives (class)}}]]或高级的{{tr|pickaxes}}。然而，它需要在{{eil|Graveyard}}{{tr|mini biome}}制作，这在早期对于[[{{tr|hardcore}}]]{{tr|characters}}来说很困难。
+
+=== 刷沙 ===
+在{{eversions|1.4.4|short=y}}中，一旦[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]已被打败，玩家就可以用[[{{tr|shimmer}}]]将购买自[[{{tr|Tavernkeep}}]]的[[{{tr|Ale}}]]转化为[[{{tr|Mug}}]]，然后转化为[[{{tr|Glass}}]]，最终转化为{{tr|sand}}，每 2 个[[{{tr|Sand Blocks}}]]需要花费 {{iteminfo|Ale|buy}}。不过，这只能购买纯净的{{tr|sand}}；{{tr|Ebonsand Block and Crimsand Blocks}}需要让[[{{tr|Corruption}}]]或[[{{tr|Crimson}}]]蔓延，或者使用{{tr|Sandgun}}。
+
+{{tr|Sandgun}}会受降低{{tr|ammo}}消耗的效果影响，这允许它创造比用作{{tr|ammo}}的{{tr|Sand Blocks}}更多的{{tr|Sand Blocks}}，如此便能够刷{{tr|sand}}。
+
+* {{tr|Sand Blocks}}的实质增加从使用[[{{tr|Ammo Box}}]]和/或[[{{tr|Ammo Reservation Potion}}]]开始，接下来再加上提供[[{{tr|ammo conservation}}]]的{{tr|armor}}。见下方[[#{{tr|ammo conservation}}|{{tr|ammo conservation}}]]获取更多细节。 
+* 发射大量的{{tr|Sand Blocks}}会消耗很长时间；取决于需要的{{tr|sand}}的数量，可能会需要额外的{{tr|potion}}（{{eicons|Ammo Box|not=1.4.4}}或再使用一次{{tr|Ammo Box}}）。由于取整，{{tr|Unreal}}[[{{tr|modifier}}]]和{{tr|Rapid}}或{{tr|Frenzying}}提供相同的{{tr|use time}}。
+* {{eicons|1.4.0.1}}玩家可以站在上方有屋顶或是旁边有墙壁的{{tr|torch}}旁，然后将{{tr|sand}}射向{{tr|blocks}}，使其掉到{{tr|torch}}上。下落的{{tr|Sand Blocks}}会变为物品并被立即拾取，玩家只需要按住开火键即可（注意直接朝{{tr|torch}}发射将会摧毁{{tr|sand block}}）。 
+** 使用{{tr|Fossil Armor}}、{{tr|an Ammo Box}}、且''没有其他干扰''，玩家可以在一瓶{{tr|Ammo Reservation Potion}}的{{tr|duration}}内刷出 999 个{{tr|Sand Blocks}}。
+** 这也适用于普通的[[{{tr|Antlion}}]]，它们发射更慢，但 2 只{{tr|Antlions}}就可以与拥有一个{{tr|ammo conservation bonus}}的{{tr|Sandgun}}以相同的速度生成{{tr|sand}}。这种{{tr|sand}}总是纯净的。
+* {{eicons|1.4.0.1|invert=y}}刷{{tr|Sand}}会需要更多工作，需要让{{tr|Sandgun}}将{{tr|Sand Blocks}}堆起来，然后采掘它们。获得一组{{tr|Sand Blocks}}将会填满屏幕上的大部分空间，且需要花费很长时间。
+** 在一片平坦区域上方的高处建立掉落点（如 30×70 格大小）以便收集{{tr|Sand Blocks}}可能是值得的。
+** 要收集{{tr|Sand Blocks}}，需要一把快速的{{tr|pickaxe}}（见[[{{tr|Mining speed}}]]页面获取详细信息）。
+*** 在[[{{tr|pre-Hardmode}}]]，最好的{{tr|pickaxe}}是[[{{tr|Bone Pickaxe}}]]。之后，使用{{tr|Hardmode ore pickaxes}}，直到[[{{tr|Plantera}}]]后换为[[{{tr|Shroomite Digging Claw}}]]。
+*** {{tr|Legendary}}、{{tr|Deadly}}、{{tr|Agile}}、{{tr|Nasty}}、或{{tr|Light}}中的任一[[{{tr|modifiers}}]]都能提供最佳的{{tr|mining speed}}。
+*** 任何对{{tr|mining speed}}的提升会加快{{tr|Sand Blocks}}的收集，例如[[{{tr|Mining Potion}}]]、[[{{tr|Mining armor}}]]、[[{{tr|Sun Stone}}]]/[[{{tr|Moon Stone}}]]/[[{{tr|Celestial Stone}}]]/[[{{tr|Celestial Shell}}]]、[[{{tr|Well Fed}}|{{tr|Food}}]]、和{{eil|Ancient Chisel}}。
+*** 使用[[{{tr|Bomb}}]]或[[{{tr|Dynamite}}]]来刷{{tr|Sand Blocks}}耗时较少，但较为昂贵且不精确。另一个选择为提前放置[[{{tr|Explosives}}]]，将它们接线到安全距离的开关，然后在它们周围堆积{{tr|Sand Blocks}}以待完美爆破。
+
+=== 弹药节约 ===
+{{tr|Ammo conservation}}是刷沙的关键，{{tr|Ammo conservation}}几率越高越好。
+
+要最大化{{tr|ammo conservation}}几率，首先使用[[{{tr|Ammo Box}}]]和[[{{tr|Ammo Reservation Potion}}]]，每个提供 20%，能够互相叠加和与{{tr|armor}}叠加。{{tr|The armor}}选择如下：
+
+* 仅有的{{tr|pre-Hardmode}}的选择为{{eicons|1.4.0.1}}[[{{tr|Fossil armor}}]]/{{eicons|1.4.0.1|invert=y}}[[{{tr|Necro armor}}]]（均为 20%）。
+* 在{{tr|Hardmode}}下，[[{{tr|Cobalt armor}}]]（使用{{tr|Mask}}）或[[{{tr|Mythril armor}}]]（使用{{tr|Hat}}）（均为 20%）。
+* [[{{tr|Adamantite armor}}]]（使用{{tr|Mask}}）的几率为 25%。{{eicons|1.4.0.1|invert=y}}[[{{tr|Hallowed armor}}]]（使用{{tr|Helmet}}）也具有相同数据。
+* 在击败[[{{tr|Plantera}}]]后，[[{{tr|Shroomite Breastplate}}]]和[[{{tr|Chlorophyte Helmet}}]]作为独立部件''各''提供 20%，因此同时使用它们即可超过任何{{tr|set bonus}}。
+* 在通关游戏后，[[{{tr|Vortex Breastplate}}]]（25%）可以替换掉{{tr|Shroomite Breastplate}}。
+
+== 花絮 ==
+* {{tr|Sandgun}}的{{tr|sprite}}很像用于制作它的[[{{tr|Illegal Gun Parts}}]]。
+** 这是由于在{{tr|Sandgun}}被{{tr|introduced}}时，它是仅有的{{tr|recipe}}中包含{{tr|Illegal Gun Parts}}的物品。
+* {{tr|Sandgun}}是唯一的在[[{{tr|Furnace}}]]制作的武器。
+* 虽然获得此武器的开销较大（{{tr|Illegal Gun Parts}}需要 {{iteminfo|Illegal Gun Parts|buy}} {{eicons|1.3.0.1}} / {{gc|25}} {{eicons|1.3.0.1|invert=y}}，且获得 10 个[[{{tr|Antlion Mandible}}]]也可能会由于其低掉落几率较为麻烦），其{{tr|sell price}}低得离谱（{{iteminfo|Sandgun|sell}}），降低了玩家为其{{tr|reforge}}出好[[{{tr|modifier}}]]的潜在花费。
+* 它是唯一的{{tr|ammo}}能够回收的[[{{tr|gun}}]]样式的{{tr|weapon}}。
+* {{tr|Sandgun}}和[[{{tr|Antlion}}]]的工作机制一样。这可能是[[{{tr|Antlion Mandible}}]]被用于制作它的原因。
+* 虽然[[{{tr|Amber}}]]只能在[[{{tr|Desert}}]]{{tr|biomes}}中找到，且和{{tr|sand}}的关系更近，{{tr|Sandgun}}的{{tr|crafting recipe}}中需要{{tr|Topaz}}。这很可能是因为{{tr|Sandgun}}是在{{tr|Amber}}{{tr|introduced}}之前{{tr|introduced}}的。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|现在能发射[[{{tr|Crimsand Block}}]]。}}
+{{history|Desktop 1.1|
+** {{tr|Damage}}由 10 提升至 30。
+** {{tr|Use time}}由 19 降低至 15。
+** 现在能发射[[{{tr|Pearlsand Block}}]]和[[{{tr|Ebonsand Block}}]]。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Sandgun}}

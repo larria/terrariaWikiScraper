@@ -1,0 +1,355 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper
+|{{npc infobox
+| imagealt = [[File:Lunatic Cultist.gif|link=]]
+| auto = 439
+| type = Boss
+| hardmode = yes
+| environment = Dungeon entrance
+| damage2 = &#32;<!--
+	-->{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|36|72|108}} {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossFireBallClone}}}}{{source code ref|name=projdmg|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist / Terraria.Projectile.Damage}}<br/><!--
+	-->{{modes|70|100|150}} {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossIceMist}}}}<ref name="projdmg"/><br/><!--
+	-->{{modes|60|80|120}} {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossFireBall}}}}<ref name="projdmg"/><br/><!--
+	-->{{modes|90|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossLightningOrb}}}}<ref name="projdmg"/><br/><!--
+	-->{{modes|120|180|270}} {{note|small=y|paren=y|{{gameText|NPCName.AncientLight}}}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.ScaleStats_ApplyMultiplayerStats}}<br/><!--
+	-->{{modes|expertonly=yes|wrap=no<!--|normal=30
+		-->|expert={{expert|45}} {{note|small=y|paren=y|{{gameText|NPCName.AncientDoom}}}}{{source code ref|name=ancient-doom|v=1.4.4.9|method=Terraria.NPC.ScaleStats / Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 101</code> 代码段。}}<br/><!--
+		-->|master={{master|67}} {{note|small=y|paren=y|{{gameText|NPCName.AncientDoom}}}}<ref name="ancient-doom"/><br/>}}<!--
+	-->{{modes|expertonly=yes|wrap=no<!--|60
+		-->|expert={{expert|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.AncientDoomProjectile}}}}<ref name="ancient-doom"/><!--
+		-->|master={{master|402}} {{note|small=y|paren=y|{{gameText|ProjectileName.AncientDoomProjectile}}}}<ref name="ancient-doom"/><!--
+	-->}}
+| defense2 = &#32;/ {{#expr:floor({{npcinfo|439|defense}}*0.65)}} {{note|small=y|paren=y|≤50% {{tr|health}}}}
+| life = {{modes|32000|48000|61000}}
+| debuff = On Fire!
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossFireBall}}}}
+| debuffduration = {{modes|{{duration|rawseconds=0.5–2.5}}|{{duration|rawseconds=1–5}}|{{duration|rawseconds=1.25–6.25}}}}
+| Ancient Manipulator|1|100%
+| Greater Healing Potion|5–15|100%
+| Lunatic Cultist Mask|1|14.29%
+| Lunatic Cultist Trophy|1|10%
+| Tablet Fragment|1|{{master|25%}} @master
+| Lunatic Cultist Relic|1|{{master|100%}} @master
+| imageother = Map Icon Lunatic Cultist.png
+| imageothercaption = Map Icon
+| idprojectile = 468<!--Shadow Fireball-->, 464<!--Ice Mist-->, 467<!--Fireball-->, 465<!--Lightning Orb-->, 466<!--Lightning Orb Arc-->, 490<!--Lightning Ritual-->
+| sound1 = Zombie 88.wav, Zombie 89.wav, Zombie 90.wav, Zombie 91.wav
+| soundcaption1 = 生成
+| sound2 = Zombie 105.wav
+| soundcaption2 = 大笑
+| sound3 = Item 34.wav, Item 14.wav
+| soundcaption3 = {{gameText|ProjectileName.CultistBossFireBall}}
+| sound4 = Item 120.wav
+| soundcaption4 = {{gameText|ProjectileName.CultistBossIceMist}}
+| sound5 = Item 121.wav
+| soundcaption5 = {{gameText|ProjectileName.CultistBossLightningOrb}}
+| sound6 = Item 123.wav
+| soundcaption6 = {{gameText|ProjectileName.CultistRitual}}
+| sound7 = Item 119.wav
+| soundcaption7 = {{tr|Summon}}<br/>{{tr|Phantasm Dragon}}
+}}
+|{{npc infobox
+| namesub = {{tr|Ancient Cultist}}
+| imagealt = [[File:Ancient Cultist.gif|link=]]
+| hardmode = y
+| auto = 440
+| type = Enemy / Invincible
+| environment = Dungeon entrance
+| damage2 = &#32;<!--
+	-->{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|36|72|108}} {{note|small=y|paren=y|{{gameText|ProjectileName.CultistBossFireBallClone}}}}<ref name="projdmg"/>
+| defense2 = &#32;/ {{#expr:floor({{npcinfo|440|defense}}*0.65)}} {{note|small=y|paren=y|≤50% {{tr|health}}}}
+| imageother = Map Icon Lunatic Cultist.png
+| imageothercaption = Map Icon
+| idprojectile = 468<!--Shadow Fireball-->
+| sound3 = Item 14.wav
+| soundcaption3 = {{gameText|ProjectileName.CultistBossFireBallClone}}
+}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.OBSESSIVE_DEVOTION_Description}}|是|1}}}}|image=Map Icon Lunatic Cultist.png}}
+{{distinguish|Cultists}}
+
+'''{{tr|Lunatic Cultist}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的 [[{{tr|bosses}}|{{tr|boss}}]]。击败它会开始[[{{tr|Lunar Events}}]]，还会让[[{{tr|Clothier}}]]按照{{tr|time}}来售卖[[{{tr|Cultist set}}|{{tr|Solar}}]]和[[{{tr|Cultist set}}|{{tr|Lunar}}]][[{{tr|Cultist set}}]]。
+
+与大多数[[{{tr|bosses}}]]不同，{{tr|Lunatic Cultist}}不掉落任何{{tr|weapons, accessories, or materials}}。不过，它会掉落[[{{tr|Ancient Manipulator}}]]——用于制作许多游戏末期物品的可放置[[{{tr|crafting station}}]]。
+
+{{boss music|t={{tr|the Lunatic Cultist}}|Golem|Boss 2 (Otherworldly)}}
+
+== 召唤 ==
+可通过杀死在[[{{tr|Skeletron}}]]和[[{{tr|Golem}}]]被打败后，于[[{{tr|Dungeon}}]]入口生成的[[{{tr|Cultists}}]]召唤{{tr|The Lunatic Cultist}}。
+
+== 行为 ==
+杀死全部四名[[{{tr|Cultists}}]]后，{{tr|The Lunatic Cultist}}会在[[{{tr|Mysterious Tablet}}]]初次短暂现身。{{tr|Lunatic Cultist}}在其召唤动画期间免疫[[{{tr|damage}}]]，此时它会开始从{{tr|Mysterious Tablet}}处吸取能量：发光粒子开始从{{tr|Mysterious Tablet}}处涌向它。之后，{{tr|Mysterious Tablet}}会破碎成片，{{tr|Lunatic Cultist}}升到空中，它的面具会向上倾斜并晃动，似乎在向玩家大笑。{{tr|Lunatic Cultist}}之后会传送到玩家在召唤它时所处的位置上方，然后开始以固定的攻击模式攻击。在每次攻击之间，{{tr|Lunatic Cultist}}都会传送到玩家当前位置上方。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist}}
+
+{{tr|The Lunatic Cultist}}拥有以下攻击：
+* 快速发射三个/{{expert|四个}}{{tr|homing}}、高速的{{item|link=|Fireball|s|ext=gif|size=20px}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 3f</code> 代码段。}}，会在击中玩家或{{tr|solid blocks}}时爆炸，造成 0.5–2.5 / {{expert|1–5}} / {{master|1.25–6.25}} 秒的[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+* 向玩家发射一个{{item|link=|Ice Mist|size=20px}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 2f</code> 代码段。}}，{{tr|Ice Mist}}会穿过{{tr|blocks}}旋转着飞行，每间隔半秒向六角方向发射六个{{item|link=|ice shards|image=Extra 35.gif|size=8px}}，共发射四次，然后消失。
+** {{tr|ice shards}}发射的角度会在初次发射时固定下来，且不随着{{tr|Ice Mist}}的旋转动画改变。
+* 在其上方召唤一个{{item|link=|Lightning Orb|ext=gif|size=20px}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 4f</code> 代码段。}}{{tr|Lightning Orb}}此后会向玩家的位置发射五道闪电。
+* 进行仪式来召唤额外的{{tr|enemies}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 5f</code> 代码段。}}在仪式开始时，{{tr|Lunatic Cultist}}会召唤两个半透明 / {{expert|几乎不透明}}的名为'''{{tr|Ancient Cultists}}'''的假身，围绕在一个名为{{item|link=|Lightning Ritual|size=20px|icons=no}}的大发光圆形符文周围。{{tr|Lunatic Cultist}}和其假身的位置每次执行仪式时都是随机的，击中一个假身会立即杀死它。如果一个假身被杀死，或{{tr|Lunatic Cultist}}及其假身在 5 秒内未受伤害{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 89</code> 代码段。}}，仪式被视为完成，{{tr|Lunatic Cultist}}和其假身会向玩家大笑，且一条{{item|Phantasm Dragon|image=Phantasm Dragon (Head).png|size=14px|icons=no}}会在符文中心被召唤出来。若已经存在{{tr|Phantasm Dragon}}，则会改为召唤一个{{item|Ancient Vision|size=20px|icons=no}}。在仪式期间未被杀死的假身会变为无敌，并在{{tr|Lunatic Cultist}}旁列队飞行，在{{tr|Lunatic Cultist}}执行通常的攻击时，每个假身会随之发射一个{{item|link=|Shadow Fireball|image=Shadow Fireball.gif|size=20px}}。这些假身也会在后续的仪式中出现。{{tr|Lunatic Cultist}}同时最多可召唤出六个假身，在仪式期间击中真正的{{tr|Lunatic Cultist}}可使全部 / {{expert|三个}}被召唤的假身立即消失。
+** 在仪式期间，{{tr|Lunatic Cultist}}下方的{{tr|health bar}}会暂时隐藏，且{{tr|homing projectiles and minions}}将无法自动以{{tr|Lunatic Cultist}}作为目标。
+** 如果通过让{{tr|Lunatic Cultist}}未受伤害的方式完成仪式，在{{tr|Lunatic Cultist}}传送以进行后续攻击前击中真正的{{tr|Lunatic Cultist}}也会让假身消失；不过，在这种情况下，{{tr|Phantasm Dragon}}或{{tr|Ancient Vision}}仍然会被召唤出来。
+
+{{tr|Lunatic Cultist}}的具体攻击模式：
+# {{tr|Fireball}}
+# {{tr|Ice Mist}}
+# {{tr|Lightning Orb}}
+# {{tr|Fireball}}
+# {{tr|Ice Mist}}
+# 仪式
+
+当{{tr|Lunatic Cultist}}低于 50% {{tr|maximum health}}时（{{formatnum:{{#expr:{{npcinfo|439|hp}}*0.5 round 0}}}} / {{expert|{{formatnum:{{#expr:{{npcinfo|439|hp|expert}}*0.5 round 0}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|439|hp|master}}*0.5 round 0}}}}}}），其{{tr|defense}}会降低至 27，它的攻击模式会改变，增加一个新的攻击：
+* 发射两次可被摧毁、能够穿过{{tr|blocks}}的{{item|Ancient Light|s|size=20px|icons=no}}，每次五个。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 7f</code> 代码段。}}{{tr|Ancient Light}}具有 {{formatnum:{{npcinfo|522|hp}}}} / {{expert|{{formatnum:{{npcinfo|522|hp|expert}}}}}} / {{master|{{formatnum:{{npcinfo|522|hp|master}}}}}} {{tr|health}}且会停留在空中，在接触玩家或经过较长时间后才会爆炸，使其可能被{{tr|homing projectiles}}和[[{{tr|minion}}]]作为目标。
+** 假身在此攻击期间不会发射{{tr|Shadow Fireballs}}。{{verify|假身在{{tr|Ancient Light attack}}期间拥有进行{{tr|Shadow Fireball attack}}的代码，但实际游戏中似乎没有触发这一代码段。}}
+
+{{tr|Lunatic Cultist}}低于 50% {{tr|maximum health}}时的具体攻击模式：
+# {{tr|Fireball}}
+# {{tr|Ancient Light}}
+# {{tr|Lightning Orb}}
+# {{tr|Ancient Light}}
+# {{tr|Ice Mist}}
+# {{tr|Lightning Orb}}
+# 仪式
+
+在[[{{tr|Expert Mode}}]]中，当{{tr|Lunatic Cultist}}低于 50% {{tr|maximum health}}时，其攻击模式中的{{tr|Fireball, Ancient Light, and Lightning Orb}}攻击有 {{chance|1/6}} 几率被替换为{{tr|Ancient Doom attack}}：
+* 在玩家周围的空区域内召唤可被摧毁的{{item|Ancient Doom|s|size=20px|icons=no}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_084_LunaticCultist|t=相关部分为 <code>this.ai[0] == 8f</code> 代码段。}}如果{{tr|Ancient Doom}}没有被玩家摧毁，则会在 {{duration|420ticks}}后分裂为四个以十字方向飞行的紫色{{item|link=|Prophecy's End|ext=gif|size=14px}}{{tr|projectiles}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI|t=相关部分为 <code>aiStyle == 101</code> 代码段。}}，造成极高的伤害（尤其是在[[{{tr|Master Mode}}]]下）。
+** 此攻击中至少会召唤 3 个{{tr|Ancient Dooms}}，每存在一个假身额外再召唤 3 个，上限为每次攻击召唤 9 个{{tr|Ancient Dooms}}。
+** {{tr|Ancient Dooms}}会在以玩家为中心 41×41 格正方形区域内被召唤，且它们无法被召唤在{{tr|solid blocks}}中。
+** 该攻击替换基础{{tr|attacks}}的几率在{{tr|Lunatic Cultist}}到达 33% {{tr|maximum health}}（{{expert|{{formatnum:{{#expr:{{npcinfo|439|hp|expert}}/3 round 0}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|439|hp|master}}/3 round 0}}}}}}）后会提升至 {{chance|1/4}}，在到达 25% {{tr|maximum health}}（{{expert|{{formatnum:{{#expr:{{npcinfo|439|hp|expert}}/4 round 0}}}}}} / {{master|{{formatnum:{{#expr:{{npcinfo|439|hp|master}}/4 round 0}}}}}}）后进一步提升至 {{chance|1/3}}。
+** 如果{{tr|world}}中已存在至少 10 个{{tr|Ancient Dooms}}，或目标玩家距离{{tr|Lunatic Cultist}}超过 125 格，则不会进行此攻击。
+** {{tr|The Lunatic Cultist}}进行攻击时会向玩家大笑。
+
+== {{tr|Homing projectile}}抗性 ==
+{{tr|homing projectiles}}对{{tr|The Lunatic Cultist}}仅能造成 75% 的{{tr|damage}}。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.Damage / Terraria.ID.ProjectileID.Sets}}下方为对{{tr|Lunatic Cultist}}造成的伤害降低的{{tr|homing projectiles}}列表。<!--
+
+-->{{#arraydefine:list|16,34,79,181,182,189,190,195,207,221,225,227,248,255,266,285,297,307,309,316,317,321,338,339,340,341,356,374,376,378,379,388,389,390,391,392,393,394,395,405,407,408,409,433,477,484,535,536,566,567,568,569,570,571,606,613,614,616,617,618,619,620,625,626,627,628,634,635,640,642,644,659,664,666,668,680,700,755,758,759,803,804,805,806,807,808,809,810,832,833,834,835,837,856,864,916,917,930,931,937,946,951,963,967|,}}<!--
+
+List of projectiles as of 1.4.3.6, Terraria.ID.ProjectileID.Sets, field CultistIsResistantTo[]
+
+As of 1.3.5.3, some of the projectiles are minions instead of their respective projectiles, or non-damaging projectiles, thus has no actual effect. These projectiles are excluded from the following list:
+
+-->{{#vardefine:source_16|[[{{tr|Magic Missile}}]]}}<!--
+-->{{#vardefine:source_34|[[{{tr|Flamelash}}]]}}<!--
+-->{{#vardefine:source_79|[[{{tr|Rainbow Rod}}]]}}<!--
+-->{{#vardefine:source_181|[[{{tr|Bee Gun}}]]、[[{{tr|Bee Keeper}}]]}}<!--
+-->{{#vardefine:source_182|[[{{tr|Possessed Hatchet}}]]}}<!--
+-->{{#vardefine:source_189|[[{{tr|Wasp Gun}}]]}}<!--
+-->{{#vardefine:source_190|[[{{tr|Piranha Gun}}]]}}<!--
+Pygmies from the Pygmy Staff
+{{#vardefine:source_191|[[{{tr|Pygmy Staff}}]]}}<!--
+{{#vardefine:source_192|[[{{tr|Pygmy Staff}}]]}}<!--
+{{#vardefine:source_193|[[{{tr|Pygmy Staff}}]]}}<!--
+{{#vardefine:source_194|[[{{tr|Pygmy Staff}}]]}}<!--
+-->{{#vardefine:source_195|[[{{tr|Pygmy Staff}}]]}}<!--
+-->{{#vardefine:source_207|[[{{tr|Chlorophyte Bullet}}]]}}<!--
+-->{{#vardefine:source_221|[[{{tr|Orichalcum armor}}]]{{tr|set bonus}}}}<!--
+-->{{#vardefine:source_225|[[{{tr|Chlorophyte Arrow}}]]}}<!--
+Crystal Leaf from Chlorophyte armor
+{{#vardefine:source_226|[[{{tr|Chlorophyte armor}}]]{{tr|set bonus}}}}<!--
+-->{{#vardefine:source_227|[[{{tr|Chlorophyte armor}}]]{{tr|set bonus}}}}<!--
+-->{{#vardefine:source_247|[[{{tr|Flower Pow}}]]}}<!--
+-->{{#vardefine:source_248|[[{{tr|Flower Pow}}]]}}<!--
+Magnet Sphere Ball from Magnet Sphere
+{{#vardefine:source_254|[[{{tr|Magnet Sphere}}]]}}<!--
+-->{{#vardefine:source_255|[[{{tr|Magnet Sphere}}]]}}<!--
+-->{{#vardefine:source_266|[[{{tr|Slime Staff}}]]}}<!--
+-->{{#vardefine:source_285|[[{{tr|Nano Bullet}}]]}}<!--
+-->{{#vardefine:source_297|[[{{tr|Spectre Staff}}]]}}<!--
+-->{{#vardefine:source_307|[[{{tr|Scourge of the Corruptor}}]]}}<!--
+Frost Hydra from Staff of the Frost Hydra
+{{#vardefine:source_308|[[{{tr|Staff of the Frost Hydra}}]]}}<!--
+-->{{#vardefine:source_309|[[{{tr|Frost Hydra}}]]}}<!--
+-->{{#vardefine:source_316|[[{{tr|Bat Scepter}}]]}}<!--
+-->{{#vardefine:source_317|[[{{tr|Raven Staff}}]]}}<!--
+-->{{#vardefine:source_321|[[{{tr|The Horseman's Blade}}]]}}<!--
+-->{{#vardefine:source_338|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Rocket I}}]]}}<!--
+-->{{#vardefine:source_339|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Rocket II}}]]}}<!--
+-->{{#vardefine:source_340|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Rocket III}}]]}}<!--
+-->{{#vardefine:source_341|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Rocket IV}}]]}}<!--
+-->{{#vardefine:source_356|[[{{tr|Spectre armor}}]]{{tr|set bonus}}（使用[[{{tr|Spectre Mask}}]]）}}<!--
+Hornet from the Hornet Staff
+{{#vardefine:source_373|[[{{tr|Hornet Staff}}]]}}<!--
+-->{{#vardefine:source_374|[[{{tr|Hornet Staff}}|{{tr|Hornet (minion)}}]]}}<!--
+Flying Imp from Imp Staff
+{{#vardefine:source_375|[[{{tr|Imp Staff}}]]}}<!--
+-->{{#vardefine:source_376|[[{{tr|Imp Staff}}|{{tr|Flying Imp (minion)}}]]}}<!--
+-->{{#vardefine:source_378|[[{{tr|Queen Spider Staff}}|{{tr|Spider Turret}}]]}}<!--
+-->{{#vardefine:source_379|[[{{tr|Queen Spider Staff}}|{{tr|Spider Turret}}]]}}<!--
+Retanimini from Optic Staff
+{{#vardefine:source_387|[[{{tr|Optic Staff}}]]}}<!--
+-->{{#vardefine:source_388|[[{{tr|Optic Staff}}]]}}<!--
+-->{{#vardefine:source_389|[[{{tr|Optic Staff}}|{{tr|Retanimini}}]]}}<!--
+-->{{#vardefine:source_390|[[{{tr|Spider Staff}}]]}}<!--
+-->{{#vardefine:source_391|[[{{tr|Spider Staff}}]]}}<!--
+-->{{#vardefine:source_392|[[{{tr|Spider Staff}}]]}}<!--
+-->{{#vardefine:source_393|[[{{tr|Pirate Staff}}]]}}<!--
+-->{{#vardefine:source_394|[[{{tr|Pirate Staff}}]]}}<!--
+-->{{#vardefine:source_395|[[{{tr|Pirate Staff}}]]}}<!--
+-->{{#vardefine:source_405|[[{{tr|Flairon}}]]}}<!--
+-->{{#vardefine:source_407|[[{{tr|Tempest Staff}}]]}}<!--
+-->{{#vardefine:source_408|[[{{tr|Tempest Staff}}|{{tr|Tempest}}]]}}<!--
+-->{{#vardefine:source_409|[[{{tr|Razorblade Typhoon}}]]}}<!--
+UFO from Xeno Staff
+{{#vardefine:source_423|[[{{tr|Xeno Staff}}]]}}<!--
+-->{{#vardefine:source_433|[[{{tr|Xeno Staff}}|{{tr|UFO (minion)}}]]}}<!--
+-->{{#vardefine:source_451|[[{{tr|Influx Waver}}]]}}<!--
+-->{{#vardefine:source_477|[[{{tr|Crystal Dart}}]]}}<!--
+-->{{#vardefine:source_483|[[{{tr|Seedler}}]]}}<!--
+-->{{#vardefine:source_484|[[{{tr|Seedler}}]]}}<!--
+-->{{#vardefine:source_535|[[{{tr|Medusa Head}}]]}}<!--
+-->{{#vardefine:source_536|[[{{tr|Medusa Head}}]]}}<!--
+-->{{#vardefine:source_566|[[{{tr|Hive Pack}}]]}}<!--
+-->{{#vardefine:source_567|[[{{tr|Spore Sac}}]]}}<!--
+-->{{#vardefine:source_568|[[{{tr|Spore Sac}}]]}}<!--
+-->{{#vardefine:source_569|[[{{tr|Spore Sac}}]]}}<!--
+-->{{#vardefine:source_570|[[{{tr|Spore Sac}}]]}}<!--
+-->{{#vardefine:source_571|[[{{tr|Spore Sac}}]]}}<!--
+-->{{#vardefine:source_606|[[{{tr|Scutlix Mount}}]]}}<!--
+-->{{#vardefine:source_613|[[{{tr|Stardust Cell Staff}}]]}}<!--
+-->{{#vardefine:source_614|[[{{tr|Stardust Cell Staff}}|{{tr|Stardust Cell}}]]}}<!--
+-->{{#vardefine:source_616|[[{{tr|Vortex Beater}}]]}}<!--
+-->{{#vardefine:source_617|[[{{tr|Nebula Arcanum}}]]}}<!--
+-->{{#vardefine:source_618|[[{{tr|Nebula Arcanum}}]]}}<!--
+-->{{#vardefine:source_619|[[{{tr|Nebula Arcanum}}]]}}<!--
+-->{{#vardefine:source_620|[[{{tr|Nebula Arcanum}}]]}}<!--
+-->{{#vardefine:source_625|[[{{tr|Stardust Dragon Staff}}]]}}<!--
+-->{{#vardefine:source_626|[[{{tr|Stardust Dragon Staff}}]]}}<!--
+-->{{#vardefine:source_627|[[{{tr|Stardust Dragon Staff}}]]}}<!--
+-->{{#vardefine:source_628|[[{{tr|Stardust Dragon Staff}}]]}}<!--
+-->{{#vardefine:source_634|[[{{tr|Nebula Blaze}}]]}}<!--
+-->{{#vardefine:source_635|[[{{tr|Nebula Blaze}}]]}}<!--
+-->{{#vardefine:source_640|[[{{tr|Luminite Arrow}}]]}}<!--
+-->{{#vardefine:source_642|[[{{tr|Lunar Portal}}]]}}<!--
+-->{{#vardefine:source_644|[[{{tr|Rainbow Crystal}}]]}}<!--
+-->{{#vardefine:source_659|[[{{tr|Spirit Flame}}]]}}<!--
+-->{{#vardefine:source_664|[[{{tr|Flameburst Rod}}]]}}<!--
+-->{{#vardefine:source_666|[[{{tr|Flameburst Cane}}]]}}<!--
+-->{{#vardefine:source_668|[[{{tr|Flameburst Staff}}]]}}<!--
+-->{{#vardefine:source_680|[[{{tr|Ballista Rod}}]]、[[{{tr|Ballista Cane}}]]、[[{{tr|Ballista Staff}}]]}}<!--
+-->{{#vardefine:source_700|[[{{tr|Ghastly Glaive}}]]}}<!--
+-->{{#vardefine:source_755|[[{{tr|Sanguine Staff}}]]}}<!--
+-->{{#vardefine:source_758|[[{{tr|Vampire Frog Staff}}]]}}<!--
+-->{{#vardefine:source_759|[[{{tr|Finch Staff}}]]}}<!--
+-->{{#vardefine:source_803|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Cluster Rocket I}}]]}}<!--
+-->{{#vardefine:source_804|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Cluster Rocket II}}]]}}<!--
+-->{{#vardefine:source_805|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Wet Rocket}}]]}}<!--
+-->{{#vardefine:source_806|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Lava Rocket}}]]}}<!--
+-->{{#vardefine:source_807|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Honey Rocket}}]]}}<!--
+-->{{#vardefine:source_808|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Mini Nuke I}}]]}}<!--
+-->{{#vardefine:source_809|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Mini Nuke II}}]]}}<!--
+-->{{#vardefine:source_810|[[{{tr|Snowman Cannon}}]]，使用[[{{tr|Dry Rocket}}]]}}<!--
+-->{{#vardefine:source_832|[[{{tr|Desert Tiger}}]]}}<!--
+-->{{#vardefine:source_833|[[{{tr|Desert Tiger Staff}}]]，召唤 1-3 次}}<!--
+-->{{#vardefine:source_834|[[{{tr|Desert Tiger Staff}}]]，召唤 4-6 次}}<!--
+-->{{#vardefine:source_835|[[{{tr|Desert Tiger Staff}}]] ，召唤7次及以上}}<!--
+-->{{#vardefine:source_837|[[{{tr|Book of Skulls}}]]}}<!--
+-->{{#vardefine:source_856|[[{{tr|Stellar Tune}}]]}}<!--
+-->{{#vardefine:source_864|[[{{tr|Blade Staff}}]]}}<!--
+-->{{#vardefine:source_916|[[{{tr|Dark Harvest}}]]}}<!--
+-->{{#vardefine:source_917|[[{{tr|Cool Whip}}]]}}<!--
+-->{{#vardefine:source_930|[[{{tr|Santank Mount}}]]}}<!--
+-->{{#vardefine:source_931|[[{{tr|Nightglow}}]]}}<!--
+-->{{#vardefine:source_937|[[{{tr|Volatile Gelatin}}]]}}<!--
+-->{{#vardefine:source_946|[[{{tr|Terraprisma}}]]}}<!--
+-->{{#vardefine:source_951|[[{{tr|Flinx Staff}}]]}}<!--
+-->{{#vardefine:source_963|[[{{tr|Abigail's Flower}}]]}}<!--
+-->{{#vardefine:source_967|[[{{tr|Houndius Shootius}}]]}}<!--
+- ->{{options/set|item|icons=no|mode=table|nolink=y|class=block aligncenter}}<!--
+-->{{flexstart}}<!-- this flexbox ensures that the table is displayed next to the {{item infobox}} on wider screens (instead of below it) -->
+{| class="terraria sortable mw-collapsible mw-collapsed" style="width:100%"
+|-
+! colspan=4 | {{tr|Projectile}}
+|-
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]] !! 图像 !! {{tr|Name}} !! {{tr|Source}}
+{{#arrayprint:list|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]]</td>
+<td>{{projectileinfo|@@@@|name}}</td>
+<td>{{#var:source_@@@@|{{na}}}}</td>
+</tr>
+}}
+|}<!--{{options/reset|item}}-->
+{{flexend}}
+
+== 备注 ==
+* 击败{{tr|Lunatic Cultist}}也会完全解锁[[{{tr|Phantasm Dragon}}]]和[[{{tr|Ancient Vision}}]]的[[{{tr|Bestiary}}]]条目，即使并没有在战斗中遭遇过它们。
+* {{tr|The Lunatic Cultist}}会以每名玩家作为目标，因此如果有玩家距其太远（如使用[[{{tr|Magic Mirror}}]]或[[{{tr|Recall Potion}}]]），它就会消失。
+** 如果有玩家在{{tr|Lunatic Cultist}}的生成动画结束前传送走，{{tr|Mysterious Tablet}}的动画会继续播放完毕，而{{tr|Lunatic Cultist}}会消失。
+* 如果玩家被{{tr|Lunatic Cultist}}击败或者它消失，无法立即再次与其战斗。玩家需要等待[[{{tr|Lunatic Devote}}]]和[[{{tr|Blue Cultist Archer}}|{{tr|Cultist Archers}}]]在{{tr|Dungeon}}处重生，从[[{{tr|Mysterious Tablet}}]]被摧毁起共需等待 12 分钟（12 游戏内小时）。
+* 如果[[{{tr|Skeletron}}]]在当前世界没有被击败，{{tr|The Cultists}}就永远不会生成，因为[[{{tr|Old Man}}]]的生成优先度高于{{tr|Cultists}}。
+* 大部分{{tr|homing projectiles and minions}}在{{tr|Lunatic Cultist}}进行仪式时不会追踪其真身，不过能造成{{tr|contact damage}}的{{tr|minions}}仍然可能意外地伤害到它。部分例外包括由击中效果产生的{{tr|projectile}}，例如[[{{tr|The Horseman's Blade}}]]的{{tr|Flaming Jack projectiles}}和[[{{tr|Spectre armor}}|{{tr|Spectre Mask}}]]的伤害球，它们仍然会以真正的{{tr|Lunatic Cultist}}为目标。
+* {{tr|The Lunatic Cultist}}总是会在{{tr|Dungeon}}入口的原位置生成，无论（地形的）修改（类似于四个[[{{tr|Cultists}}]]）。这意味着如果四个{{tr|Cultists}}被传送走或用其他方法移走，然后在那里被杀死，{{tr|Lunatic Cultist}}仍然会生成，且如果玩家离{{tr|Dungeon}}入口足够远的话，它就会立即消失。
+** 移除{{tr|Dungeon}}入口处（{{tr|Old Man}}的生成位置）的地板会阻止{{tr|Cultists}}生成。
+
+== 成就 ==
+{{achievement|name=Obsessive Devotion}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{float file box|[[File:Lunatic Cultist.png]]   [[File:Ancient Cultist.png]] | 真正的{{tr|Lunatic Cultist}}（左）和假身（右）}} 
+{{strategies|t={{tr|the Lunatic Cultist}}}}
+* 如果还没准备好对付[[{{tr|Lunar Events}}]]，应当避免击败{{tr|Lunatic Cultist}}。击败{{tr|Lunatic Cultist}}会导致{{tr|Lunar Events}}立即开始，且此后（除了击败全部{{tr|Celestial Pillars}}以外）无法取消召唤它们。
+* 真正的{{tr|Lunatic Cultist}}可以通过多种方式区别于其假身：
+** 真正的{{tr|Lunatic Cultist}}有点状的、愤怒的眼睛，而假身的眼睛是圆形的。
+** 真正的{{tr|Lunatic Cultist}}的兜帽上有一条线，而假身没有。
+** 真正的{{tr|Lunatic Cultist}}不会发光，而假身会；不过，这一点可能只在{{tr|night}}期间战斗时较为明显。
+** 当仪式开始时，真正的{{tr|Lunatic Cultist}}是距离玩家最远的那个。
+* [[{{tr|Autopause}}]]可以提供辨认真正的{{tr|Lunatic Cultist}}所需的时间。
+* 如果玩家使用[[{{tr|Vampire Knives}}]]，攻击{{tr|Lunatic Cultist}}的假身并不是一个坏主意。由此产生的[[{{tr|Phantasm Dragon}}]]很长，可能很容易成为恢复{{tr|life}}的目标。
+* 许多{{tr|Lunatic Cultist}}的攻击（包括其闪电和{{tr|fireballs}}）可以通过在{{tr|solid blocks}}后躲避来阻挡。能够穿过{{tr|blocks}}攻击的武器或者[[{{tr|yoyo}}]]可以用于造成伤害。
+* 刷{{tr|Lunatic Cultist}}本身几乎没有任何用处，因为它仅有的非{{tr|vanity}}掉落是[[{{tr|Greater Healing Potion}}]]和{{tr|Ancient Manipulator}}，后者仅需要获得一个即可。不过，击败它是唯一的开始{{tr|Lunar Events}}并获取[[{{tr|Lunar Fragments}}]]的方式。
+* 如果[[{{tr|lock on}}]]机制将{{tr|Lunatic Cultist}}选为目标，锁定将在它每次传送后取消。
+* 取决于{{tr|world size}}和生成情况，击败{{tr|Lunatic Cultist}}时[[{{tr|Celestial Pillars}}]]之一通常会立即生成在玩家附近。如果玩家没有为此做好准备，而{{tr|background}}已经改变，预示着{{tr|Celestial Pillar}}已在玩家附近生成时，推荐立即拾取{{tr|Lunatic Cultist}}的掉落物，然后用[[{{tr|Magic Mirror}}]]或[[{{tr|Recall Potion}}]]返回安全的基地，以防被{{tr|Lunar Events}}的危险{{tr|enemies}}伏击。
+
+== 花絮 ==
+{{float file box|[[File:Lunatic Cultist laugh.gif]]   [[File:Ancient Cultist laugh.gif]] |{{tr|The Lunatic Cultist and Ancient Cultist}}的大笑动画。}}
+* {{tr|The Lunatic Cultist}}是游戏中最小的 {{tr|Boss}}，也是唯一一个没有生成信息的 {{tr|Boss}}。
+* {{tr|Lunatic Cultist}}的攻击似乎是基于[[{{tr|Lunar Event}}]]的四个[[{{tr|Celestial Pillars}}]]和/或其[[职业]]{{tr|counterparts}}。
+** {{tr|The fireball}}攻击模仿了[[{{tr|Solar Pillar}}]]的陨石喷射和烈焰主题。
+** 闪电攻击参考了[[{{tr|Vortex Pillar}}]]的雷电{{tr|background}}和[[{{tr|Vortexian}}]]的闪电攻击。
+** {{tr|ice}}攻击和[[{{tr|Ancient Doom}}]]虽然在外观上并不能直接令人联想到[[{{tr|Nebula Pillar}}]]，但具有和许多[[{{tr|Magic weapons}}|{{tr|magic weapons}}]]类似的独特{{tr|projectile}}机制。
+** 召唤阵通过创建复制和召唤额外{{tr|enemies}}对应了[[{{tr|Summon weapons}}|{{tr|summoner}}]]，且[[{{tr|Phantasm Dragon}}]]和[[{{tr|Stardust Dragon Staff}}|{{tr|Stardust Dragon}}]]有相似之处。[[{{tr|Ancient Light}}]]也和[[{{tr|Stardust Pillar}}]]的色调与图案相似。
+* [[{{tr|Crowno's set}}]]视觉上和{{tr|Lunatic Cultist}}的外观相似且加入游戏的时间比{{tr|Lunatic Cultist}}早得多，暗示了{{tr|Lunatic Cultist}}的设计灵感可能源自它。然而，根据 [[{{tr|Crowno}}]] 所述<ref>[https://forums.terraria.org/index.php?profile-posts/113956 Post on Crowno's forums profile] {{small|{{date|2015|06|25}}}}</ref>，{{tr|Lunatic Cultist}}是先设计出来的。
+* {{tr|Lunatic Cultist}}的外表类似于{{维基百科|Plague doctor costume|瘟疫医生服装}}，这是一种曾在 16 至 17 世纪欧洲{{维基百科|bubonic plague|腺鼠疫}}疫情期间由瘟疫医生所穿的服装，意图用于保护他们免受空气传播疾病。
+* {{anchor|Insane Cultist}}根据一个[[{{tr|Achievements|link=y}}#{{tr|Notes}}|未实现的{{tr|achievement}}]]，{{tr|The Lunatic Cultist}}在开发期间曾经名为“Insane Cultist”（疯狂邪教徒）。
+* ''[[{{tr|Terraria}}]]''的游戏文件中存在{{tr|The Lunatic Cultist}}的[[{{tr|Expert Mode}}]][[{{tr|Treasure Bag}}]]，但它[[{{tr|Unobtainable items}}|{{tr|unobtainable}}]]，因为{{tr|Lunatic Cultist}}从来不会掉落它。
+** 这样的原因可能只是因为{{tr|Lunatic Cultist}}总体上除了[[{{tr|Ancient Manipulator}}]]以外缺少独特的掉落物。
+* 假身和真正的{{tr|Lunatic Cultist}}的{{tr|map icons}}相同。
+* 它是仅有的使用另一个 {{tr|Boss}} 的主题音乐：[[{{tr|Golem}}]]的音乐的 {{tr|boss}}，也是唯一一个在生成之前就开始音乐的 {{tr|Boss}}，这使得获得[[{{tr|Music Box (Boss 4)}}|{{tr|Music Box}}]]更加简单。
+* 术语 ''{{wiktionary|lunatic}}''（疯狂的、精神错乱的）现在通常用作 ''insane'', ''mentally ill'' 等词语的非正式同义词。不过，这个词本身起源于历史上认为疾病由月亮导致的这一事实，这和此 {{tr|boss}} 之后紧随的月亮主题的{{tr|events}}紧密相关。
+* {{tr|The Lunatic Cultist}}、[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Moon Lord}}]]、[[{{tr|King Slime}}]]、{{eil|Queen Slime}}、[[{{tr|Empress of Light}}]]、和（{{tr|Expert Mode}}下的）[[{{tr|Duke Fishron}}]]是仅有的能传送的{{tr|bosses}}。
+* 在{{tr|Lunatic Cultist}}被杀死时，[[{{tr|status messages}}]]''“{{gameText|LegacyMisc.43}}”''会在''“{{gameText|Announcement.HasBeenDefeated_Single|x_0={{tr|Lunatic Cultist}}}}”''之前出现，可能暗示着召唤仪式在{{tr|Lunatic Cultist}}死亡前完成了。
+* 当{{tr|Lunatic Cultist}}因玩家从它身边传送走而消失时，它会播放其死亡动画。
+* 穿着[[{{tr|Lunatic Cultist Mask}}]]和[[{{tr|Lunar Cultist Robe}}]]会让玩家看上去很像{{tr|Lunatic Cultist}}，不过 {{tr|boss}} 仍然比玩家略高一些，因而还是能互相分辨的。
+* {{tr|The Lunatic Cultist}}是少数在[[{{tr|Master Mode}}]]下，除了{{tr|contact damage}}以外的所有攻击造成的伤害都不线性提升的 {{tr|bosses}} 之一。
+* 它是仅有的没有[[{{tr|Expert Mode}}]]独有掉落的非{{tr|event boss}}。
+* {{tr|The Lunatic Cultist}}拥有的“仆从”种类是所有 {{tr|bosses}} 中最多的，总计四个。
+* {{lore|{{tr|the Lunatic Cultist}}和其邪教崇奉克苏鲁并希图复活他们的主人。}}最终，他们强迫[[{{tr|Mechanic}}]]创造了用于替换克苏鲁缺失器官的[[{{tr|Mechanical Bosses}}]]；然而，机械大脑从未在游戏事件前完工，而此计划也最终搁浅。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 在{{tr|Expert}}/{{tr|Master}}模式中，{{tr|Health}}缩放倍率从 1.25 倍提升至 1.5 倍
+** 最终生命从 32000/{{expert|40000}}/{{master|51000}} 提升至 32000/{{expert|48000}}/{{master|61000}}。}}
+{{history|Desktop 1.4.0.1|
+** 在{{tr|Master mode}}中，现在可掉落[[{{tr|Relics}}|{{tr|Lunatic Cultist Relic}}]]，且有 25% 的几率掉落其独有{{tr|pet}}，[[{{tr|Tablet Fragment}}]]。
+** 大多数{{tr|homing}}的[[{{tr|bullets}}]]和[[{{tr|Summon weapons}}|{{tr|minions}}]]在{{tr|Lunatic Cultist}}的仪式期间不再会追踪真正的{{tr|Lunatic Cultist}}。}}
+{{history|Desktop 1.3.0.4|
+** 不再会在[[{{tr|Moon Lord}}]]正在生成时重新生成。
+** 不会在重要事件（如入侵或 {{tr|Boss}} 战）时生成。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Lunatic Cultist}}

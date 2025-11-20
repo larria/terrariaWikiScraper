@@ -1,0 +1,43 @@
+{{exclusive|Goblin Summoner}}
+{{item infobox
+| auto = 3053
+| debuff = Shadowflame / 4–8 {{tr|seconds}} / 100%
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+[[File:Shadowflame Hex Doll (demo).gif|frame|right|使用中的{{tr|Shadowflame Hex Doll}}。]]
+
+'''{{tr|Shadowflame Hex Doll}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|magic weapon}}]]，可发射弯曲的紫色触须状{{tr|projectiles}}扫过一大片范围，可造成 1 - 3 秒的[[{{tr|Shadowflame}}]][[{{tr|debuff}}]]。此{{tr|weapon}}每使用一次都会发射 3 枚{{tr|projectiles}}，但可以通过快速使用它以同时发射最多 9 枚{{tr|projectiles}}。它有 {{chance|1/6}} / {{expert|{{chance|1/3}}}} 的几率掉落自[[{{tr|Hardmode}}]][[{{tr|Goblin Invasion}}]]期间的[[{{tr|Goblin Warlock}}]]。
+
+{{modifier|magic}}能将{{tr|speed}}提高 10% 或以上的[[{{tr|Modifiers}}]]能使其每次使用发射 4 根触须。
+
+== 备注 ==
+* {{tr|Shadowflame tentacle}}会随机表现为从实心表面弹开。这种现象最常发生在触手已经向远离或平行于其表面的方向弯曲时（技术上来说，触手能够弹跳，但这种现象很少见；最简单地见到此情况的方法为直接将此武器向{{tr|block}}发射，或者使用[[{{tr|mods}}]]来生成不会弯曲的触手）。
+* 在内部，{{tr|Shadowflame Hex Doll}}具有 {{iteminfo|Shadowflame Hex Doll|useTime}} 的 <code>[[useTime]]</code>，以及 {{iteminfo|Shadowflame Hex Doll|useAnimation}} 的 <code>[[useAnimation]]</code>，使得其每次按下 {{key|use}} 键会发射 {{#expr:{{iteminfo|Shadowflame Hex Doll|useAnimation}}/{{iteminfo|Shadowflame Hex Doll|useTime}}}} 根触手。{{source code ref|v=1.4.4.9|method=Terraria.Item.SetDefaults4}}
+* 和很多{{tr|projectiles}}一样，触手会被[[{{tr|liquids}}]]减速。在{{tr|liquid}}中使用时行进的也不那么远。
+
+== 小贴士 ==
+* 考虑到触手在远处就会随机地分散开来，因此{{tr|Shadowflame Hex Doll}}在最大射程处对抗小型敌怪时不那么有效。
+* {{tr|Shadowflame Hex Doll}}如果能在早期{{tr|Hardmode}}获得的话则十分优秀，尤其是在狭窄的{{tr|caverns}}中时。
+* {{tr|tentacles}}的穿透和群伤效果{{tr|damage}}在对抗[[{{tr|worms}}]]（如[[{{tr|The Destroyer}}]]）和成群[[{{tr|enemies}}]]（例如[[{{tr|Plantera's Tentacle}}]]）方面十分有效。
+* [[{{tr|local invincibility frame}}]]使得这个武器在近距离时效果极佳，它的 {{DPS}} 比同时期的大部分{{tr|weapon}}都要高。
+
+== 另见 ==
+* [[{{tr|Shadowflame Knife}}]]
+* [[{{tr|Shadowflame Bow}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 伤害由 40 降低至 32。
+** 现在{{tr|projectiles}}使用[[{{tr|local immunity frames}}]]。
+** 现在总有一条触手瞄准射向光标位置，不过其他的触手在远距离的情况下歪斜程度依旧很大。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Weapons
+}}
+
+{{language info|en=Shadowflame Hex Doll}}

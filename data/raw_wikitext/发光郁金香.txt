@@ -1,0 +1,50 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5333
+| type = Pet summon
+| placeable = no
+| idtile = 656
+| tags = plunder
+}}
+{{float file box|width=12em|[[File:Caveling Gardener (flying).gif|link=]]|{{tr|The Caveling Gardener}}与一朵[[ck:Snare Plant|陷阱植物（Snare Plant）]]一起飞行。}}
+
+'''{{tr|Glow Tulip}}'''是一个[[{{tr|Pets}}|{{tr|pet-summoning}}]]{{tr|item}}，会召唤一只跟随在玩家身边的'''{{tr|Caveling Gardener}}'''。当玩家离它足够远或是位于半空中时，它会手持一朵[[ck:Snare Plant|陷阱植物（Snare Plant）]]并可以飞过物块以便跟上玩家。它可以罕见地在{{tr|world}}左右侧[[{{tr|Surface}}]]下方作为[[{{tr|plant}}]]找到。取决于[[{{tr|world size}}]]，固定数量的{{tr|Glow Tulips}}会在世界生成时生成，{{tr|small worlds}} 2 个、{{tr|medium worlds}} 4 个、{{tr|large worlds}} 6 个，通常半数生成在世界左侧，另一半生成在右侧。
+
+它可以被[[{{tr|Metal Detector}}]]探测到。
+
+== 备注 ==
+* {{tr|Glow Tulips}}只会在世界初始生成时生成。它们不会在游戏过程中生成，也不会在被收获后再次长出。
+* {{tr|Glow Tulip}}的生成尝试会在一个长方形区域内进行：
+** 其水平范围为 200 格，起始于距离世界左右边缘 100 格远的位置。
+** 其竖直范围为从{{tr|Surface}}和[[{{tr|Underground}}]]{{tr|layers}}的边界至距世界底部 200 格（[[don't dig up]] {{tr|worlds}}为距底部 350 格）。{{source code ref|v=1.4.4.7|method=Terraria.WorldGen.GenerateWorld}}
+: 游戏会在这第一个区域中选择一个随机{{tr|tile}}，然后以此{{tr|tile}}为中心 21×21 的矩形区域内再随机选择一个{{tr|tile}}。{{source code ref|v=1.4.4.7|method=Terraria.WorldGen.TryGrowingGlowTulip}}所选的{{tr|tile}}必须满足下列所有条件才能让一朵{{tr|Glow Tulip}}生成：
+::* 以所选{{tr|tile}}为中心，241×241 的矩形区域内没有其他{{tr|Glow Tulips}}。{{source code ref|v=1.4.4.5|method=Terraria.WorldGen.NoNearbyGlowTulips}}
+::* 所选{{tr|tile}}不是{{tr|solid block}}、不包含[[{{tr|liquid}}]]、且不被[[{{tr|ambient objects}}]]、[[{{tr|dye plant}}]]、或[[{{tr|Fallen Log}}]]占用。<!--[[Coral]]s, [[Seashell]]s, [[Antlion Egg]]s or [[Abigail's Flower]]s are also not allowed, but these things are impossible to generate on the valid tiles below.-->{{source code ref|v=1.4.4.7|method=Terraria.WorldGen.PlaceTile}}
+::* 所选{{tr|tile}}正下方的那个{{tr|tile}}是[[{{tr|Dirt Block}}]]、任何[[{{tr|grasses}}|{{tr|grass block}}]]（<!--包括{{tr|mowed grass}}，但 -->不包括{{tr|Jungle Grass}}）、[[{{tr|Mud Block}}]]、[[{{tr|Hive}}（物块）|{{tr|Hive}}]]、[[{{tr|Stone Block}}]]、[[{{tr|Ebonstone Block}}]]、[[{{tr|Crimstone Block}}]]、<!--[[{{tr|Pearlstone Block}}]]、-->或上方长了任何类型[[{{tr|moss}}]]的{{tr|Stone Block}}。{{source code ref|v=1.4.4.7|method=Terraria.WorldGen.HasValidGroundForGlowTulipBelowSpot}}
+:* 如果所选{{tr|tile}}不符要求，则再在这个 21×21 区域内选择一个随机{{tr|tile}}。算上第一个被检查的随机{{tr|tile}}，在这个区域内最多进行 5 次尝试以找出有效{{tr|tile}}。
+:* 若所有尝试失败，则游戏会重新在第一个区域中选择一个随机{{tr|tile}}，然后进行上述操作。生成过程会在总共生成 2/4/6 朵{{tr|Glow Tulips}}，或是第一个区域内随机选择{{tr|tile}}的操作共进行了超过 10000 次后停止。
+* 就像其名称所暗示的那样，{{tr|Glow Tulip}}会在黑暗中发光，使其非常容易发现。
+** 它发出的光的颜色与[[{{tr|Moss}}|{{tr|Xenon Moss}}]]相同，让它在{{tr|Xenon Moss}}旁边非常难以发现。
+
+== 花絮 ==
+* {{tr|The Glow Tulip and Caveling Gardener}}是与[[{{tr|Core Keeper}}|与《{{tr|Core Keeper}}》的联动]]的一部分，后者是一款生存向的沙盒游戏。在{{维基百科|b=y|Core Keeper}}中，[[ck:Glow Tulip|{{tr|Glow Tulip}}]]是一种常见的农作物，而[[ck:Caveling Gardener|{{tr|Caveling Gardener}}]]则是一种会通过种植[[ck:Snare Plant|陷阱植物（Snare Plant）]]进行攻击的{{tr|enemy}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|修复了在 [[1.4.4.3]] 及之后版本生成的大多数{{tr|world}}中不会有{{tr|Glow Tulips}}的问题。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+[[Category:地心护核者联动内容]]
+{{language info|en=Glow Tulip}}

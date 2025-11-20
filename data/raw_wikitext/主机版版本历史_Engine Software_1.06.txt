@@ -1,0 +1,145 @@
+{{collapse top|点击展开详细列表|收起列表}}
+
+* 增大了 [[{{tr|NPC}}]] 名字在网络讯息中的大小
+* 为实心和非实心块创造了单独的纹理
+* 允许所有{{tr|consoles}}（除 PSVita 外）交换 L1R1/L2R2 或 LTRT/LBRB 的功能
+* 重新为{{tr|console}}独有的[[{{tr|armor}}]]分配了{{tr|head}}和{{tr|body}}部位的 {{tr|IDs}}
+* [[{{tr|Ice Queen}}]]{{tr|projectile}}不在影响可被摧毁的{{tr|tiles}}（还修复了[[{{tr|Frost Moon}}]]的战利品 {{tr|bug}} 以及[[{{tr|Queen Bee}}]]的生成）
+* 将{{tr|controller}}映射中的“丢弃”功能改为“{{tr|Quick Buff}}”功能
+
+'''{{tr|Mechanics}}：'''
+* 可以用[[{{tr|Hammer}}]]将[[{{tr|Platform}}]]改造为{{tr|stairs}}
+* 更新[[{{tr|Music Box}}]]的图像（每个{{tr|music box}}现在都有其独特的设计了）
+* 为{{tr|Music Boxes}}添加了音符动画
+* 更新了[[{{tr|Robe}}]]的图像
+* 更新了[[{{tr|Cobalt Shield}}]]、[[{{tr|Obsidian Shield}}]]、[[{{tr|Paladin's Shield}}]]的图像
+* 添加了[[{{tr|Cactus}}]]的变体
+* 添加了{{tr|biome}}特有的石笋
+* 为[[{{tr|Waterfall}}]]和[[{{tr|Lavafall}}]]添加了音效
+* 为[[{{tr|Critter}}]]添加了音效
+* 早上{{tr|bird}}的生成率提高
+* 为{{tr|birds}}添加了不同的歌曲 sfx（sound effects的缩写）
+* 添加了上下颠倒的斜坡（可通过[[{{tr|Hammer}}]]击实现，也可在世界生成时形成）
+* 可以放置{{tr|coins}}以创造{{tr|Coin Piles}}
+* [[{{tr|Destroyer}}]] {{tr|boss}} 掉落物现在会在离玩家最近的{{tr|segment}}出现
+* 所有非[[{{tr|event}}]] {{tr|boss}} 现在都有几率掉落[[{{tr|Boss Mask}}]]（见{{tr|items}}）
+* [[{{tr|Dyes}}]]可以堆叠
+* [[{{tr|Rain}}]]现在在[[{{tr|Blood Moon}}]]期间会变红。
+* 添加了[[{{tr|Shark Statue}}]]
+* 添加了{{tr|critters}}的捕捉和制作的[[{{tr|Cage}}]]
+* 添加了[[{{tr|Underground Crimson}}]][[{{tr|music}}]]
+
+'''新{{tr|Critters}}：'''
+* [[{{tr|Duck}}]]
+* [[{{tr|Mallard Duck}}]]
+* [[{{tr|Worm}}]]
+
+'''新 NPC：'''
+* [[{{tr|Traveling merchant}}]]
+
+'''新{{tr|Items}}（和[[{{tr|Item IDs}}]]）：'''
+* 2158 [[{{tr|Bubble Wallpaper}}]]
+* 2159 [[{{tr|Copper Pipe Wallpaper}}]]
+* 2160 [[{{tr|Ducky Wallpaper}}]]
+* 2008 [[{{tr|Fancy Grey Wallpaper}}]]
+* 2009 [[{{tr|Ice Floe Wallpaper}}]]
+* 2010 [[{{tr|Music Wallpaper}}]]
+* 2011 [[{{tr|Purple Rain Wallpaper}}]]
+* 2012 [[{{tr|Rainbow Wallpaper}}]]
+* 2013 [[{{tr|Sparkle Stone Wallpaper}}]]
+* 2014 [[{{tr|Starlit Heaven Wallpaper}}]]
+* 1991 [[{{tr|Bug Net}}]]
+* 2177 [[{{tr|Ammo Box}}]]
+* 2214 [[{{tr|Brick Layer}}]]
+* 2215 [[{{tr|Extendo Grip}}]]
+* 2216 [[{{tr|Paint Sprayer}}]]
+* 2217 [[{{tr|Portable Cement Mixer}}]]
+* 2219 [[{{tr|Celestial Magnet}}]]
+* 2266 [[{{tr|Sake}}]]
+* 2272 [[{{tr|Water Gun}}]]
+* 2279 [[{{tr|Gypsy Robe}}]]
+* 2274 [[{{tr|Ultrabright Torch}}]]
+* 2268 [[{{tr|Pho}}]]
+* 2267 [[{{tr|Pad Thai}}]]
+* 2258 [[{{tr|Chalice}}]]
+* 2270 [[{{tr|Gatligator}}]]
+* 2223 [[{{tr|Pulse Bow}}]]
+* 2271 [[{{tr|Arcane Rune Wall}}]]
+* 2277 [[{{tr|Gi}}]]
+* 2275 [[{{tr|Magic Hat}}]]
+* 2242 [[{{tr|Fancy Dishes}}]]
+* 2243 [[{{tr|Glass Bowl}}]]
+* 2278 [[{{tr|Kimono}}]]
+* 1988 [[{{tr|Fez}}]]
+* 2273 [[{{tr|Katana}}]]
+* 2269 [[{{tr|Revolver}}]]
+* 2260 [[{{tr|Dynasty Wood}}]]
+* 2261 [[{{tr|Red Dynasty Shingles}}]]
+* 2262 [[{{tr|Blue Dynasty Shingles}}]]
+* 2283 [[{{tr|Zebra Skin}}]]
+* 2282 [[{{tr|Leopard Skin}}]]
+* 2281 [[{{tr|Tiger Skin}}]]
+* 2493 [[{{tr|King Slime Mask}}]]
+* 2112 [[{{tr|Eye of Cthulhu Mask}}]]
+* 2104 [[{{tr|Brain of Cthulhu Mask}}]]
+* 2111 [[{{tr|Eater of Worlds Mask}}]]
+* 2108 [[{{tr|Queen Bee Mask}}]]
+* 1281 [[{{tr|Skeletron Mask}}]]
+* 2105 [[{{tr|Wall of Flesh Mask}}]]
+* 2113 [[{{tr|Destroyer Mask}}]]
+* 2792 [[{{tr|Horned God Robe}}]]
+* 2106 [[{{tr|Twin Mask}}]]
+* 2794 [[{{tr|Horned God Boots}}]]
+* 2107 [[{{tr|Skeletron Prime Mask}}]]
+* 2793 [[{{tr|Horned God Headpiece}}]]
+* 2791 [[{{tr|Ocram Mask}}]]
+* 2109 [[{{tr|Plantera Mask}}]]
+* 2110 [[{{tr|Golem Mask}}]]
+* 2218 [[{{tr|Beetle Husk}}]]
+* 2199 [[{{tr|Beetle Helmet}}]]
+* 2200 [[{{tr|Beetle Scale Mail}}]]
+* 2201 [[{{tr|Beetle Shell}}]]
+* 2202 [[{{tr|Beetle Leggings}}]]
+* 2280 [[{{tr|Beetle Wings}}]]
+* 2229 [[{{tr|Dynasty Work Bench}}]]
+* 2263 [[{{tr|White Dynasty Wall}}]]
+* 2264 [[{{tr|Blue Dynasty Wall}}]]
+* 2265 [[{{tr|Dynasty Door}}]]
+* 2228 [[{{tr|Dynasty Chair}}]]
+* 2230 [[{{tr|Dynasty Chest}}]]
+* 2259 [[{{tr|Dynasty Table}}]]
+* 2226 [[{{tr|Dynasty Lantern}}]]
+* 2224 [[{{tr|Large Dynasty Lantern}}]]
+* 2236 [[{{tr|Dynasty Candle}}]]
+* 2227 [[{{tr|Large Dynasty Candle}}]]
+* 2225 [[{{tr|Dynasty Lamp}}]]
+* 2235 [[{{tr|Dynasty Bowl}}]]
+* 2234 [[{{tr|Dynasty Cup}}]]
+* 2231 [[{{tr|Dynasty Bed}}]]
+* 2237 [[{{tr|Dynasty Clock}}]]
+* 2233 [[{{tr|Dynasty Bookcase}}]]
+* 2232 [[{{tr|Dynasty Bathtub}}]]
+* 2244 [[{{tr|Wine Glass}}]]
+* 2208 [[{{tr|Terrarium}}]]
+* 2162 [[{{tr|Bunny Cage}}]]
+* 2163 [[{{tr|Squirrel Cage}}]]
+* 2206 [[{{tr|Penguin Cage}}]]
+* 2166 [[{{tr|Bird Cage}}]]
+* 2167 [[{{tr|Blue Jay Cage}}]]
+* 2168 [[{{tr|Cardinal Cage}}]]
+* 2191 [[{{tr|Mouse Cage}}]]
+* 2207 [[{{tr|Worm Cage}}]]
+* 0250 [[{{tr|Fishbowl}}]]
+* 2019 [[{{tr|Bunny}}]]
+* 2018 [[{{tr|Squirrel}}]]
+* 2205 [[{{tr|Penguin}}]]
+* 2105 [[{{tr|Bird}}]]
+* 2016 [[{{tr|Blue Jay}}]]
+* 2017 [[{{tr|Cardinal}}]]
+* 2003 [[{{tr|Mouse}}]]
+* 2002 [[{{tr|Worm}}]]
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Engine Software/1.06}}
+</noinclude>

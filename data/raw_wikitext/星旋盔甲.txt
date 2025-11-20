@@ -1,0 +1,92 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Armor/Set
+| hardmode = yes
+}}
+[[File:Vortex armor (demo).gif|frame|玩家进入和退出{{tr|Vortex armor}}的{{tr|stealth mode}}。]]
+[[File:Vortex armor movement (demo).gif|frame|{{tr|The Vortex armor}}的拖影效果。]]
+
+'''{{tr|Vortex armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的{{tr|ranged}}[[{{tr|armor}}]]套装，由'''{{tr|Vortex Helmet}}'''、'''{{tr|Vortex Breastplate}}'''、和'''{{tr|Vortex Leggings}}'''。制作全套{{tr|set}}总共需要 36 个[[{{tr|Luminite Bar}}]]（144 个[[{{tr|Luminite}}]]）和 45 个[[{{tr|Vortex Fragment}}]]。
+
+装备全套{{tr|set}}时提供如下效果：
+* +62 [[{{tr|defense}}]]
+* +36% [[{{tr|ranged damage}}]]
+* +27% {{tr|ranged}}[[{{tr|critical strike chance}}]]
+* +25% [[{{tr|ammo conservation}}]]
+* +10% [[{{tr|movement speed}}]]
+* 双击 {{key|down}} 键切换[[{{tr|stealth}}]]的能力，这会使玩家变得几乎不可见，且在玩家不使用任何{{tr|item}}时阻止[[{{tr|Fighter AI}}]] 和[[{{tr|Flying AI}}]] 的{{tr|enemies}}向玩家发射[[{{tr|projectiles}}]]。{{tr|Stealth}}是逐渐激活的，这一过程需要 {{duration|{{#expr:1/0.04}}ticks}}，在这期间玩家会获得数项线性提升至以下值的属性变化：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.GetWeaponKnockback}}
+** +80% {{tr|ranged damage}}
+** +20% {{tr|ranged critical strike chance}}
+** −1200 [[{{tr|aggro}}]]
+** +50% {{tr|ranged}}[[{{tr|knockback}}]]
+* 进入{{tr|stealth}}还会额外施加 0.3 倍的{{tr|movement speed}}倍率{{footnote|{{tr|move speed}}和{{tr|sprint speed}}均会受影响。}}
+
+移动或使用[[{{tr|Hooks}}]]不会取消{{tr|stealth mode}}，但[[{{tr|dash}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.DashMovement}}或骑乘[[{{tr|Mounts}}|{{tr|mount}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}会。受到伤害会使得玩家变为可见并失去{{tr|stealth mode bonuses}}，需要再经过 {{duration|{{#expr:1/0.04}}ticks}} 来完全进入{{tr|stealth mode}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 2757
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2758
+| hardmode = yes
+}}
+|{{item infobox
+| auto = 2759
+| hardmode = yes
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Vortex Helmet/Vortex Breastplate/Vortex Leggings|expectedrows=3}}
+
+== 备注 ==
+* [[{{tr|Settings|link=y}}#{{tr|Controls}}|{{tr|Settings}}]]可以将{{tr|set bonus}}触发按键由 {{key|down}} 切换为 {{key|up}}。
+* {{tr|stealth mode}}下，玩家在地面的{{tr|movement speed}}会被极大地降低。不过，在飞行时它只会降低加速度，最高飞行速度不会被改变。
+* {{tr|Vortex armor}}的{{tr|stealth mode}}无法与[[{{tr|Psycho Knife}}]]的{{tr|stealth mode}}叠加。如果同时使用这些{{tr|items}}，玩家仅能获得{{tr|Psycho Knife}}的{{tr|stealth mode}}带来的属性变化，因为它的优先级最高。
+** 仅有的例外为{{tr|knockback bonus}}，只要在{{tr|stealth mode}}下就总是会获得它。例如，使用{{tr|Psycho Knife}}和{{tr|Vortex armor}}时，玩家在{{tr|stealth mode}}下会同时具有 +100% {{tr|melee knockback}}和 +50% {{tr|ranged knockback bonus}}。尽管如此，这在实际战斗中用处不大。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetWeaponKnockback}}
+* [[{{tr|NPCs}}]] 不会尝试与{{tr|stealth mode}}下的玩家“对话”（即发出[[{{tr|emotes}}]]）。{{source code ref|v=1.4.4.9|property=Terraria.Player.CanBeTalkedTo}}
+* 和所有使用{{tr|Luminite}}制作的{{tr|armor}}一样，装备{{tr|Vortex armor}}会让玩家发光（{{tr|Vortex armor}}为青色光）。装备的部件越多，光就会越亮。在{{tr|stealth mode}}下，则不会发出任何光。
+
+== 小贴士 ==
+* 装备[[{{tr|Familiar set}}]]或使用[[{{tr|Shadow Dye}}]]时，玩家在{{tr|stealth mode}}下会完全不可见。
+* 在首次击败[[{{tr|Moon Lord}}]]后制作{{tr|Vortex armor}}时，最好先制作{{tr|Vortex Leggings}}。这是由于在不考虑潜行时，{{tr|Vortex Helmet}}和{{tr|Vortex Breastplate}}要比[[{{tr|Shroomite armor}}]]的相应部件差。虽然{{tr|Vortex Helmet}}似乎比{{tr|Shroomite armor}}的头部装备提供更多伤害加成，{{tr|Shroomite armor}}的头部装备的{{tr|damage boost}}会和其它伤害加成乘算加，因此它们与其他增加伤害的装备和{{tr|buffs}}叠加时拥有更高的伤害潜力。{{tr|Shroomite Breastplate}}比{{tr|Vortex Breastplate}}提供更高的{{tr|ranged damage}}和{{tr|critical chance}}，代价为较低的{{tr|ammo conservation}}。此外，[[{{tr|Red Riding armor}}|{{tr|Red Riding Dress}}]]也可以作为{{tr|Shroomite Breastplate}}的有效替代。
+* {{tr|Stealth mode}}不会被使用[[{{tr|wings}}]]禁用，这包括使用{{tr|wing}}的高速悬浮能力（[[{{tr|Hoverboard}}]]、{{eil|Betsy's Wings}}、[[{{tr|Nebula Mantle}}]]、[[{{tr|Vortex Booster}}]]、和{{eil|Celestial Starboard}}）。装备其中之一能够在{{tr|stealth mode}}中提供较高的移动力。
+* 使用{{eil|Soaring Insignia}}以及任何{{tr|wings}}就能够完全忽略{{tr|set bonus}}的负面效果，因为{{tr|stealth mode}}只会降低地面移动力。
+* 在{{tr|stealth mode}}下受到伤害不会禁用它，但短时间内{{tr|bonuses}}会重置。这可能意味着持续地重复受伤会降低总体伤害输出。由于[[{{tr|Cross Necklace}}]]或[[{{tr|Star Veil}}]]等{{tr|accessories}}能够增加玩家的无敌时间，装备它们能够缓解这一问题。
+
+== 花絮 ==
+* 全套{{tr|Vortex armor}}很像[[{{tr|Storm Diver}}]]，一个由[[{{tr|Lunar Event}}]]中的[[{{tr|Vortex Pillar}}]]召唤的{{tr|enemy}}，它类似于穿着宇航服的类人生物。
+* {{tr|Vortex armor}}的{{tr|sprite}}和预告片中的早期设计有所不同：[[File:Early Vortex Armor.png]]
+* 在所有{{tr|Luminite}}制作的四套{{tr|armor sets}}中，{{tr|Vortex armor}}是仅有的没有相关的{{tr|buff}}的{{tr|armor sets}}。
+
+== 另见 ==
+* [[{{tr|Solar Flare armor}}]]
+* [[{{tr|Nebula armor}}]]
+* [[{{tr|Stardust armor}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|sell value}}由{{tr|no value}}提升至 {{coin|31gc 50sc}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Master Template Luminite
+| show-luminite = yes
+| show-vortex = yes
+}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+
+{{language info|en=Vortex armor}}

@@ -1,0 +1,56 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 272
+| tags = drop
+| listcat = magic weapons / spell books
+}}
+{{drop infobox|style=clear:right}}
+[[File:Demon Scythe (demo).gif|framed|{{tr|The Demon Scythe}}攻击[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]。注意{{tr|projectile}}是如何在对任意数目的{{tr|enemies}}造成五次{{tr|damage}}后消失的。]]
+
+'''{{tr|Demon Scythe}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|spell book}}]]，其有 {{chance|1/35}} 的概率掉落自[[{{tr|Demon}}]]和[[{{tr|Voodoo Demon}}]]。使用时，其发射一个初始静止然后逐渐加速的镰刀{{tr|projectile}}。{{tr|sickles}}在消散前最多可击中 5 次，且它们不能穿透[[{{tr|blocks}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The Demon Scythe}}的{{tr|projectiles}}发出相当量的光线，并且根据其撞击表面时具有的动量，会生成持续在同一轨迹上运行的照明火花，甚至可以穿过很厚的墙。
+* 虽然{{tr|Demon Scythe}}不能穿透{{tr|blocks}}，但如果{{tr|enemy}}紧挨着站在{{tr|block}}的另一侧，则在{{tr|projectile}}击中{{tr|the block}}时会对它造成伤害。
+* {{tr|projectile}}在发射之初的半秒内以 {{mph|{{iteminfo|Demon Scythe|shootSpeed}} pixels|mode=tiles_text}} 的速度前进，之后每{{tr|tick}}{{tick}}速度会增加 6%，持续 70 {{tr|ticks}}。发射后 {{duration|100<!-- 30 initially + 70 accelerating --> ticks}}，它将达到最高速度 {{mph|{{#expr:({{iteminfo|Demon Scythe|shootSpeed}}<!-- initial velocity -->*1.06^70<!-- acceleration -->) round2}} pixels}}。{{source code ref|v=1.4.1.1|method=Terraria.Projectile.AI}}
+
+== 小贴士 ==
+* {{tr|The Demon Scythe}}在进入[[{{tr|Hardmode}}]]后依然有用，因为它的伤害速率可以与许多{{tr|Hardmode weapons}}相媲美，尤其是靠近发射让{{tr|projectile}}在加速阶段来造成持续伤害。
+* 它的[[{{tr|reforge}}]]成本相对较低。
+* {{tr|The Demon Scythe}}在与[[{{tr|Wall of Flesh}}]]对战时很有用，因为它的攻击可以穿透 {{tr|boss}} 所召唤的[[{{tr|The Hungry}}]]和[[{{tr|Leech}}]]。 
+* 类似地，穿透性的持续攻击对抗[[{{tr|Eater of Worlds}}]]非常有用，使得玩家即使尚未为打败它而准备好装备也能更有可能完成战斗。
+* {{tr|Demon Scythe}}是一件可以在游戏早期获取的强力武器，如果玩家愿意和{{tr|Demons}}作战的话。
+** 纵然获取难度取决于玩家的技术，{{tr|Demon Scythe}}技术上说可以在游戏的任意阶段获取，因为{{tr|Demons}}总会自然生成。
+* 与大多数{{tr|magic weapons}}不同，相较于[[{{tr|Mana Potion}}]]，{{tr|the Demon Scythe}}从[[{{tr|Mana Regeneration Potion}}]]中受益更多，因为它发射一个持续{{tr|projectile}}可在你的{{tr|mana}}再生时造成{{tr|damage}}，{{tr|Mana Potions}}无法维持其高额的{{tr|mana cost}}，并且由于[[{{tr|Mana Sickness}}]]叠加会使整体输出伤害降低。
+
+== 花絮 ==
+* 虽然与此{{tr|weapon}}的{{tr|projectile}}外观相同，但[[{{tr|demon}}]]发射的{{tr|projectile}}被称为''{{tr|Demon Sickle}}（Demon Sickle）''，与此不同''（Demon Scythe）''。
+* {{tr|The Demon Scythe}}可能会被赋予{{tr|Demonic}}[[{{tr|modifier}}]]，于是名字就变成了“{{tr|Demonic}} {{tr|Demon Scythe}}”。
+*其{{tr|sprite}}是重新上色的[[{{tr|Water Bolt}}]]。
+* {{tr|Demon Scythe}}在电子游戏[[《{{tr|Dungeon Defenders 2}}》]]中作为{{tr|crossover}}的一部分。
+
+== 另见 ==
+* {{dd2 link|Tomes#Legendary|Demon Scythe}}
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Mana usage}}由 10 提高至 14。}}
+{{history|Desktop 1.2|{{tr|Mana usage}}由 14 降低至 10。}}
+{{history|Desktop 1.1|{{tr|Mana usage}}由 18 降低至 14。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Spell books}}
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Demon Scythe}}

@@ -1,0 +1,171 @@
+[[File:Terraria Multiplayer screen 1.3.png|thumb|300px|在{{desktop}} Steam 版的《{{tr|Terraria}}》中点击了“{{gameText|LegacyMenu.13}}”选项后出现的界面。]]
+
+'''{{tr|Multiplayer}}'''是[[《{{tr|Terraria}}》]]的一种游戏模式，在其中可以与其他远程玩家一起玩或互相对抗。{{tr|Multiplayer}}{{tr|worlds}}默认是{{维基百科|Cooperative gameplay|合作}}模式的，一旦进入{{tr|multiplayer}}游戏，就可以激活{{维基百科|player versus player|玩家对玩家}}（PvP）。
+
+== 类型 ==
+{{see also|指南:建立泰拉瑞亚服务器|指南:建立 Steam 多人游戏}}
+
+=== {{icon|desktop|console}} {{tr|Desktop}}/{{tr|Console}} ===
+有两种类型的{{tr|multiplayer}}环境：[[{{tr|Server}}]]和“{{gameText|LegacyMenu.88}}（{{gameText|LegacyMenu.88|lang=en}}）”。
+* '''{{gameText|LegacyMenu.88}}'''的游戏是通过常规的《{{tr|Terraria}}》应用程序启动的。第一个玩家选择“{{gameText|LegacyMenu.88}}”，选择各种选项，并开启世界，就成为了主机。其它局域网或互连网玩家可以加入，通过选择{{tr|multiplayer}}菜单中的“{{gameText|LegacyMenu.87}}”，或者，如果是 Steam 好友，也可以用“{{gameText|LegacyMenu.145}}”。当初始玩家离开{{tr|world}}时{{tr|world}}就会关闭。这个选项通常用于较小的局域网游戏或者小型在线游戏。
+* {{icon|desktop}}'''{{tr|Servers}}'''：更大规模的互连网{{tr|multiplayer}}游戏运行在[[{{tr|server}}]]上。{{tr|Servers}}是通过每个 Windows 《{{tr|Terraria}}》安装中都包含的 {{code|TerrariaServer.exe}} 文件启动的，或者通过第三方{{tr|server}}软件启动——''细节请参见[[{{tr|server}}]]''。{{tr|A server}}允许游戏世界运行在一台独立的电脑上，没有任何图形需求，也不要求任何特定玩家保持连接。玩家可以通过从《{{tr|Terraria}}》的{{tr|Multiplayer}}菜单中选择“{{gameText|LegacyMenu.146}}”，然后输入{{tr|server}}信息来加入{{tr|server}}游戏。本页面上的[[#{{tr|Server}}列表|“{{tr|Server}}列表”章节]]中可以找到{{tr|server}}列表。在{{tr|server multiplayer}}游戏中，主机{{tr|server}}提供{{tr|world}}文件，并且具有与玩家通信、保存地图、关闭{{tr|server}}、设置一天中的时间、和踢出或封禁玩家的能力。
+
+=== {{mobile}} ===
+{{for|心动移动版独有的{{tr|Multiplayer}}功能|移动中国版#联机房间}}
+* 玩家需要按“{{tr|Multiplayer}}”，然后选择想要使用的{{tr|character}}。有两类{{tr|multiplayer}}游戏可用：'''本地'''（'''Local'''）和'''在线'''（'''Online'''）。
+** 在 [[File:Multiplayer Local.png|20px|link=]] “本地”菜单中，会先显示搜索讯息“正在寻找本地主机……”（Searching for local hosts...），然后会显示找到的局域网游戏。在一个本地{{tr|multiplayer}}游戏中最多容纳 8 名玩家。存在第三方应用程序来将这些游戏转发到互连网上而非仅限于单一网络，比如 Multi Terraria 或 Terraria MP，但这些程序并不受支持且没有任何保障。
+** 在 [[File:Multiplayer Online.png|20px|link=]] “在线”菜单中，玩家可以通过输入{{tr|server}}的 IP 和端口号来添加一个{{tr|server}}，或者加入此前添加的{{tr|server}}。
+* 要作为主机来托管一个局域网世界，设备必须至少有 1{{nbsp}}GB 内存。
+
+=== {{3DS}} ===
+* 在选择人物之后，玩家可以选择“{{tr|Multiplayer}}”和“开始游戏”来在本地为世界建立主机。要加入世界的玩家可以选择“加入世界”并在列表中选择想要的世界。一个世界可以同时加入多达4名玩家。
+* 注意，由新任天堂 3DS 或 2DS 系统做主机的扩大世界会阻止用原始 3DS 或 2DS 的玩家加入，因为那些系统不支持扩大世界这个功能。
+
+== {{tr|PvP and teams}} ==
+{| class="terraria lined" style="text-align:center;float:right"
+! colspan=2 | {{tr|Type}}
+! 无
+! 红
+! 绿
+! 蓝
+! 黄
+! 粉
+|-
+! rowspan=2 | {{tr|Team icons}}
+! {{icon|desktop}}
+| [[File:No Team.png|link=]]
+| [[File:Red Team.png|link=]]
+| [[File:Green Team.png|link=]]
+| [[File:Blue Team.png|link=]]
+| [[File:Yellow Team.png|link=]]
+| [[File:Pink Team.png|link=]]
+|-
+! {{icon|mobile}}
+| [[File:No Team (mobile).png|link=]]
+| [[File:Red Team (mobile).png|link=]]
+| [[File:Green Team (mobile).png|link=]]
+| [[File:Blue Team (mobile).png|link=]]
+| [[File:Yellow Team (mobile).png|link=]]
+| [[File:Pink Team (mobile).png|link=]]
+|-
+! rowspan=2 | {{tr|PvP icons}}
+! 关闭
+| [[File:PvP (No Team) (off).png|link=]]
+| [[File:PvP (Red Team) (off).png|link=]]
+| [[File:PvP (Green Team) (off).png|link=]]
+| [[File:PvP (Blue Team) (off).png|link=]]
+| [[File:PvP (Yellow Team) (off).png|link=]]
+| [[File:PvP (Pink Team) (off).png|link=]]
+|-
+! 开启
+| [[File:PvP (No Team) (on).png|link=]]
+| [[File:PvP (Red Team) (on).png|link=]]
+| [[File:PvP (Green Team) (on).png|link=]]
+| [[File:PvP (Blue Team) (on).png|link=]]
+| [[File:PvP (Yellow Team) (on).png|link=]]
+| [[File:PvP (Pink Team) (on).png|link=]]
+|}
+{{redirect|{{tr|Team}}}}
+
+'''{{tr|玩家对玩家（PvP）}}'''是一种{{tr|multiplayer}}模式，允许玩家或玩家团队互相攻击。{{tr|PvP}} 可通过加入{{tr|multiplayer}}世界并启用 PvP [[{{tr|toggle}}]]（{{icon|desktop}}点击{{tr|armor}}和{{tr|accessory}}栏附近的交叉剑按钮/{{icon|mobile}}按下{{tr|inventory}}中 {{tr|PvP menu}}内的交叉剑按键）来激活。在{{versions|desktop-mobile}}中，玩家伤害另一个玩家的唯一途径是两个玩家都开启了 {{tr|PvP}} 选项，或通过[[{{tr|Boulder}}]]、[[{{tr|Land Mine}}]]、或[[{{tr|Lava}}]]等{{tr|traps}}。
+
+{{anchor|team}}{{anchor|{{tr|team}}}}也可以选择加入团队，方法为选择{{icon|desktop}}在{{tr|armor and accessory slots}}附近的/{{icon|mobile}}在 {{tr|PvP menu}}中的彩色的{{tr|shield}}{{tr|toggle}}之一。一旦选择一个{{tr|team}}，屏幕上就会显示队友距离（与方向）和[[{{tr|health}}]]的相关信息。同一{{tr|team}}中的 {{tr|PvP players}}可以在[[{{tr|minimap}}]]上看到彼此，而其他 {{tr|PvP players}}不能。有五个不同的{{tr|teams}}可用：红、绿、蓝、黄、和粉。选择白色{{tr|shield}}会将玩家从当前{{tr|team}}中移除。
+
+{{eicons|1.3.0.1}}如果玩家装备或者持有[[{{tr|Informational Accessories}}|{{tr|informational item}}]]（如{{eil|PDA}}）任何在玩家 50 格内的团队成员也可以看见来自它的数据读数。此外，在 50 格以内的团队成员也会获得该玩家的[[{{tr|Luck|link=y}}#{{tr|Accessories}}|{{tr|accessory luck}}]]提升。不过，（多名玩家的）{{tr|luck}}提升不会叠加。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateEquips / Terraria.Player.RefreshInfoAccsFromTeamPlayers}}
+
+=== 夺取宝石 ===
+{{tr|PvP}} 玩家可以玩'''夺取宝石'''，其操作类似于{{wikipedia|Capture the Flag|夺旗}}。夺取宝石需要[[{{tr|Large Gem}}]]，每个团队都需要一个，可以用 15 个 [[{{tr|Amethyst}}]]、[[{{tr|Topaz}}]]、[[{{tr|Sapphire}}]]、[[{{tr|Emerald}}]]、[[{{tr|Ruby}}]]、[[{{tr|Amber}}]]、或[[{{tr|Diamond}}]]制作。团队要试图盗取对手的宝石并将其带回自己的基地。{{tr|Large Gems}}以悬停图像的方式显示在任何携带它的玩家上方，并且无论玩家人物的[[{{tr|difficulty}}]]设置成什么，它们总是掉落在被击杀的玩家旁边。
+
+{{eicons|Gem Lock}}{{tr|The Large Gems}}可以放在它们的[[{{tr|Gem Lock}}|相应基座]]上，而不必非让玩家拿着。
+
+=== PvP 游戏的独特之处 ===
+* 若伤害来自另一个玩家，受伤后的[[{{tr|invincibility frame}}]]会大大减小：正常情况下，玩家会获得 {{duration|40 ticks}}的无敌。在 {{tr|PvP}} 中，则只会获得 {{duration|8 ticks}}。这可能会让[[{{tr|use time}}]]低于 8 的{{tr|weapons}}更弱。
+* 被其他玩家杀死的玩家不会掉落[[{{tr|coins}}]]。此外，被自己的[[{{tr|explosives (class)}}]]杀死的玩家也不会掉落{{tr|coins}}，即使是在{{tr|singleplayer worlds}}中也是如此。
+* 当玩家重生时，会拥有全部{{tr|health}}，而非一半（{{eicons|1.3.0.1|invert=y}} 100 {{tr|health}}），但如果玩家是被其他玩家的武器所造成的[[{{tr|debuff}}]]杀死的则这条无效。
+* [[{{tr|Critical hits}}]]和独特的[[{{tr|knockback}}]]值不适用于 {{tr|PVP}}。因此，专门用于 {{tr|PVP}} 且无法修改速度的{{tr|weapons}}的最佳[[{{tr|modifier}}]]一般是{{tr|Ruthless}}，它只是简单地最大化每一击的原始伤害。
+
+== {{tr|Multiplayer}}独有的物品 ==
+这些物品只能在{{tr|multiplayer}}中获得，不过，一旦获得这些物品，它们就可以转移到{{tr|singleplayer world}}去。
+
+{{flexstart}}{{options/set|item|wrap=y}}
+{{itemlist|class=terraria
+|{{item|Team Dye}}
+|{{item|Team Hair Dye}}
+}}
+{{options/reset|item}}{{flexend}}
+
+虽然[[{{tr|Wormhole Potion}}]]仅当游戏处于{{tr|multiplayer}}时（即使玩家是当时唯一在玩的人）才会从[[{{tr|Pot}}]]中掉落，但它一直都可制作，即使在{{tr|singleplayer}}亦如此。但是，一个人玩时它们是无法使用的，因此可以认为其''可使用性''是{{tr|multiplayer}}独有的，并且取决于是否有其他玩家在同一{{tr|team}}中。
+
+== 服务器列表 ==
+{{server lists}}
+* [https://dark-gaming.com Dark-Gaming]
+* [https://www.penguingames.fun Penguin Games]
+
+== 备注 ==
+* 很少有{{tr|accessories}}是专为{{tr|multiplayer}}战斗设计的，案例之一是[[{{tr|Paladin's Shield}}]]。
+* {{tr|Multiplayer}}游戏不能由参与的玩家暂停。
+** {{icon/console}} 除了主机之外的所有玩家全部退出后暂停的能力会恢复。
+* 在{{tr|Classic Mode}}中，在{{tr|multiplayer}}下游玩不会增加除了[[{{tr|events}}|{{tr|invasion}}]]以外的游戏难度，这使得{{tr|multiplayer}}有助于打败较困难的 {{tr|boss}} 或{{tr|events}}。
+** 在{{eil|Expert Mode}}和{{eil|Master Mode}}中，[[{{tr|bosses}}]] 的{{tr|health}}和完成{{tr|invasion event}}所需的击杀数会随玩家的数量增加而上升。这会导致即使算上了额外的玩家，部分战斗也会比{{tr|singleplayer}}下更困难。
+* 在{{tr|multiplayer}}中，{{tr|Expert}}和更高难度下会使用特殊的 {{tr|boss}} 战利品掉落机制。在{{tr|Classic Mode}}下，{{tr|boss}} 只会掉落标准数量的战利品，无论参战的玩家数量。在{{tr|Expert and Master Mode}}下，[[{{tr|Treasure Bag}}]]和{{tr|Master Mode}}独有的{{tr|pet}}/{{tr|mount summon items}}会在 {{tr|boss}} 被击败时给予每个对 {{tr|boss}} 造成过伤害的玩家，从而增加了战利品的总量。
+** 此外，游戏会使用动态的玩家列表来记录参与 {{tr|boss}} 战的玩家。第一个进入{{tr|server}}的玩家会占用列表的 {{code|0}} {{tr|slot}}，第二个玩家会占用 {{code|1}} {{tr|slot}}，以此类推。当玩家对 {{tr|boss}} 造成伤害后，其对应{{tr|slot}}会被标记为“参战”。当 {{tr|boss}} 被击败后，游戏会检查所有活跃玩家（即在线的玩家）和其{{tr|slot}}，并为每个{{tr|slot}}状态为“参战”的对应玩家掉落{{tr|Treasure Bag}}。
+*** 如果 {{code|0}} {{tr|slot}}的玩家从{{tr|server}}断开连接，下一个进入{{tr|server}}的玩家会占用 {{code|0}} {{tr|slot}}。因此，如果玩家 A 对 {{tr|boss}} 造成伤害后断开连接，然后玩家 B 立即连入服务器，那么 B 就能获得{{tr|Treasure Bag}}，即使他没有对 {{tr|boss}} 造成过伤害。
+*** 另一个例子：如果{{tr|server}}中包含以如下顺序连接的玩家：玩家 A、玩家 B、玩家 C，且只有玩家 B 对{{tr|boss}}造成了伤害，而后 B 和 C 断开连接。如果他们以玩家 C、玩家 B 的顺序重新连接（不再对 {{tr|boss}} 造成伤害），在他们连入{{tr|server}}后玩家 A 杀死 {{tr|boss}}，只有玩家 A 和 C 能获得{{tr|Treasure Bag}}。
+* 不同平台（{{icon/desktop}}/{{icon/ps}}/{{icon/xbox one}}/{{icon/xbox360}}/{{icon/mobile}}）的用户不能一起玩{{tr|multiplayer}}游戏。只有{{icon|android}} {{tr|Android}}和 {{icon|ios}} iOS 的用户可以互相跨平台联机。
+** [[移动中国版]]的用户也无法和其他版本的用户进行{{tr|multiplayer}}游戏。
+** 由于完美的同等性，通过专用服务器可以达成{{Desktop}}和{{Mobile}}的跨平台游玩，不过这一行为很可能不是有意为之的。
+* 在 {{icon/wiiu}} Wii U 版中，玩家可以用 GamePad 更换团队。
+* 在{{tr|console version}}中，分屏合作也视为{{tr|multiplayer}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|
+** 修正了 {{tr|PvP}} 中的骑枪未考虑动量伤害的问题。
+** {{tr|The Multiplayer server}}现在对于虚假链接尝试更加严格对待。}}
+{{history|Desktop 1.4.0.4|
+** 修正了允许玩家加入运行损坏的世界文件的服务器的 {{tr|bug}}。
+** 修正了团队名牌未显示在正确位置的 {{tr|bug}}。
+** 修正了即使队友已受伤害其团队名牌也不显示生命条的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.3|{{tr|Team nameplate}}在成员生命值全满时不显示个人生命以提高性能。}}
+{{history|Desktop 1.3.4.4|
+** 修正了加入时地图未正确加载的问题。
+** 修正了多个{{tr|multiplayer}}客户端崩溃问题。
+** 修正了[[{{tr|Old One's Army}}]]{{tr|enemies}}在{{tr|multiplayer}}中如果距离玩家过远时会隐身生成的情况。}}
+{{history|Desktop 1.3.4.3|修正了[[{{tr|Sand Slime}}]]危险的不同步问题。}}
+{{history|Desktop 1.3.4.1|
+** 修正了[[{{tr|Defender Medal}}]]在{{tr|Multiplayer}}中只会掉落一个而非预期数量的问题。
+** 修正了使用[[{{tr|Last Prism}}]]时的静默崩溃问题。
+** 修正了[[{{tr|Old One's Army}}]]期间一些{{tr|enemies}}生成时隐身的问题。}}
+{{history|Desktop 1.3.3.1|
+** 修正了[[{{tr|inventory}}]]{{tr|items}}在{{tr|Multiplayer}}中“卡住”的问题。
+** 修正了很多网络断开/{{tr|Multiplayer}}情况的 {{tr|bugs}}。}}
+{{history|Desktop 1.3.3|改进了{{tr|Multiplayer}}性能并修正了很多 {{tr|bug}}。}}
+{{history|Desktop 1.3.2.1|修正了 [[{{tr|NPCs}}|{{tr|NPC}}]] 发起的[[{{tr|party}}|{{tr|parties}}]]只会对服务器中的随机 1 名玩家生效的问题。}}
+{{history|Desktop 1.3.2|
+** 修正了持续时间极长的[[{{tr|buffs}}]]在{{tr|Multiplayer}}中未正确更新的问题。
+** 大大减少不必要的玩家同步调用次数，这种调用会妨碍高玩家人数的服务器。}}
+{{history|Desktop 1.3.0.1|
+** 添加了 Steam 集成。
+** 添加了新的粉色{{tr|team}}。
+** {{tr|PVP}} 和{{tr|team icons}}有所改变。
+** 添加了{{tr|Wormhole Potion}}。}}
+{{history|Desktop 1.2.3|
+** 添加了{{tr|Team dye}}。
+** 添加了{{tr|Team hair dye}}。}}
+{{history|Desktop 1.2|
+** {{tr|PvP damage}}不再翻倍。
+** 任何开启了 {{tr|pvp}} 的玩家不再在[[{{tr|Minimap}}]]上可见，团队成员除外。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|极大地改变了机制，变得与{{tr|Desktop 1.3.0.1}} 非常接近。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{all versions}}
+
+{{language info|en=Multiplayer}}

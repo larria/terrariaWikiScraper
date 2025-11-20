@@ -1,0 +1,73 @@
+{{legacy nav tab}}
+{{item infobox | boxwidth = 22em
+| auto = 165
+| idtile = 50
+| imageplaced = Tiles 50 5.png
+| placeable = no
+| listcat = magic weapons / spell books
+| tags = plunder
+}}
+{{distinguish|Water Sphere}}
+[[File:WaterBolt.png|thumb|right|{{tr|Dungeon shelf}}上高亮的{{tr|Water Bolt}}。]]
+[[File:Water Bolt (demo).gif|framed|运作中的{{tr|Water Bolt}}。]]
+
+'''{{tr|Water Bolt}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|spell book}}]]，仅能在[[{{tr|Dungeon}}]]中的{{tr|shelves}}上找到。使用时，其发射一枚低速移动的水球{{tr|projectile}}。水球在[[{{tr|blocks}}]]上反弹五次，穿透九个{{tr|enemy}}或经过 30 {{tr|second}}后消散。
+
+{{modifier|magic}}
+
+== 位置 ==
+{{tr|Water Bolt}}被隐藏在{{tr|Dungeon}}{{tr|shelves}}上的[[{{tr|Book}}]]之间，且位于[[{{tr|Underground}}]]{{tr|layer}}竖直方向上中线以下。{{source code ref|name=makedungeon|v=1.4.4.9|method=Terraria.WorldGen.MakeDungeon}}尽管它在[[{{tr|inventory}}]]中有一个红色的外观，但放在书架上的{{tr|Water Bolt}}总是一本蓝色的、有黄色带子的书。{{tr|Dungeon}}{{tr|enemy}}会频繁的攻击，因此在{{tr|Dungeon}}中进行仔细的目视检查并不总是可行的，所以下面的方法也可以用来定位{{tr|Water Bolt}}：
+
+* 拿走遇到的所有{{tr|Books}}（例如，可以使用[[{{tr|pickaxe}}]]）。
+* {{icon|desktop}} 右键点击所有看到的书。只有{{tr|Water Bolt}}会因为右键而掉落。
+* {{icon|desktop}} 把光标悬停在{{tr|Dungeon}}的{{tr|shelves}}上。当定位时，{{tr|Water Bolt}}会使得{{tr|cursor}}旁出现{{tr|tooltip}}。其他{{tr|Books}}则不会。
+
+如果玩家站得太远，{{tr|tooltip}}就不会显示，也不能右击让{{tr|Water Bolt}}掉下。所需的距离与看[[{{tr|Chest}}]]里有什么或者和 [[{{tr|NPC}}]] 对话的距离相同。
+
+== 备注 ==
+* 一旦{{tr|Water Bolt}}从书架上被拿下，就再也无法被放回去。
+* {{tr|Water Bolt}}的{{tr|projectile}}并不会在[[{{tr|lava}}]]中消散。
+* 虽然可以找到自然放置的{{tr|Water Bolt}}，但是其不能通过{{eil|Rubblemaker}}放置在[[{{tr|platforms}}]]上。
+* 一个地牢可能包含多个{{tr|Water Bolt}}，也可能根本不包含。在{{tr|world}}生成期间，{{tr|Dungeon}}中的每个平台都有 {{chance|1/2}} 的概率放置一本书，有 {{chance|1/50}} 的概率将其变成{{tr|Water Bolt}}。<ref name="makedungeon"/>因此，较大的{{tr|world}}比较小的{{tr|world}}有更高的概率包含更多的{{tr|water bolt}}，因为它的{{tr|Dungeon}}更大，平台数量更多。
+
+== 小贴士 ==
+* {{tr|projectiles}}消散时释放的发光粒子可能对探索有所帮助。
+* 在打败{{tr|skeletron}}前是有可能获得{{tr|Water Bolt}}的，虽然这十分危险。如果在{{tr|Dungeon}}周边发现，可以利用[[{{tr|hoik}}]]进入{{tr|Dungeon}}并获取{{tr|Water Bolt}}。[[{{tr|Recall Potion}}]]可以在不死亡的情况下撤退，而[[{{tr|autopause}}]]对于把握时机很有用。
+* {{tr|Water Bolt}}{{tr|projectile}}的持久性，加上它能弹射和打击多个敌人，使它非常适合被用来与成群的敌人战斗，特别是在平坦的山谷和笔直且封闭的通道中。 其有{{mph|{{iteminfo|Water Bolt|velocity}} pixels}}的{{tr|velocity}}，即使没有反弹，其速度也足够慢到击中一名{{tr|enemy}}多次。
+* 在封闭场地中使用{{tr|Water Bolt}}是打败许多困难模式前的[[{{tr|bosses}}]]的有效方法。尤其是那些有许多部位或{{tr|segments}}的{{tr|boss}}，例如[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]。
+* {{tr|Water Bolt}}可用于在探索时轻松安全地清理和照明未知区域，例如困难模式前的[[{{tr|Spider Cave}}]]。
+* 由于{{tr|Water Bolt}}的{{tr|projectile}}会反弹的特性，其可以通过在{{tr|surface}}向{{tr|sky}}发射从而定位[[{{tr|Floating Island}}]]。但是，{{tr|projectiles}}移动相当慢，这里有更多高效的方法定位{{tr|Floating Islands}}——见[[{{tr|Floating Island}}#{{tr|Tips}}|{{tr|Floating Island}} § {{tr|Tips}}]]。
+
+== 花絮 ==
+* 在[[《{{tr|Terraria}}》]]的预发布版中，放在书架上的{{tr|Water Bolt}}和物品栏中的{{tr|Water Bolt}}外观都是蓝色的。随后物品栏中的{{tr|Water Bolt}}外观被更改为红色，但放在书架上的{{tr|Water Bolt}}的颜色却没有被更改。
+* 一些[[{{tr|bookcase}}]]的{{tr|sprites}}中描绘了{{tr|the Water Bolt}}。
+* 在[[{{tr|Blood Moon}}]]期间，蓝色的{{tr|projectiles}}在世界的中部和上部会是粉红色，类似于{{tr|water}}在该世界中的变化。当在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]层之间发射并向上移动时，可以看到{{tr|projectiles}}逐渐从蓝色变为粉红色。在{{tr|Underground}}中，会保持原本的蓝色。
+* {{tr|Water Bolt}}是为数不多的游戏内有实体物品的{{tr|weapon}}，其他的则是[[{{tr|Enchanted Sword}}]]和[[{{tr|Terragrim}}]]。
+
+== 历史 ==
+{{History|Desktop 1.4.0.1|现在仅能在{{tr|Surface}}以下生成。}}
+{{History|Desktop 1.3.1|外观更新.}}
+{{History|Desktop 1.3.0.1|伤害从17增加到了19。}}
+{{History|Desktop 1.2|
+** 射弹材质更新。 
+** [[{{tr|Mana}}]]消耗从14减少到了10。 
+** 光效更新。}}
+{{History|Desktop 1.1.1|现在可以被[[{{tr|reforge}}]]。}}
+{{History|Desktop 1.1|售价提升。}}
+{{History|Desktop 1.0.6|
+** 现在使用时会发出新的声音。
+** 伤害从15增加到了17。
+**  [[{{tr|Mana}}]]消耗从20减少到了14。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+{{language info|en=Water Bolt}}

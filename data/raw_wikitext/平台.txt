@@ -1,0 +1,156 @@
+{{item infobox
+| imagealt = [[File:Wood Platform.png|{{tr|Wood platform item sprite}}|link=]]
+| type = Furniture
+| rare = {{rare|0}}
+| placeable = Yes
+| width = 1
+| height = 1
+| stack = {{iteminfo|94|stack}} {{eicons|1.4.4|small=y}} / 99 {{eicons|1.3.0.1|invert=y|small=y}}
+| consumable = True
+| use = {{iteminfo|94|useTime}}
+| idtile = 19
+| allversions = yes
+| cargo=no
+}}
+{{tocright}}
+{{about|[[{{tr|furniture}}]]{{tr|item}}|可以运行{{tr|Terraria}}的系统|游戏平台}}
+
+'''{{tr|Platforms}}'''是可以行走的[[{{tr|blocks}}]]的替代方案，但同时允许在其所占据的空间中移动。玩家通常就像在普通的{{tr|block}}上一样在{{tr|platforms}}上站立与行走。当站在{{tr|platform}}上时，玩家站在其上时，可以通过按{{key|down}}键穿过{{tr|platform}}向下移动。玩家也可以横向走过或跳过{{tr|platforms}}所占据的空间，仅当从上方落到其上时{{tr|platform}}才会被视为“实体”。
+
+类似地，行走[[{{tr|enemies}}]]也能在{{tr|platforms}}上行走或穿过{{tr|platforms}}。{{tr|Flying enemies}}，比如[[{{tr|bat}}]]，可以向上飞行穿过{{tr|platform}}，但不能向下穿过。其他{{tr|enemies}}，包括[[{{tr|Harpy}}|{{tr|Harpies}}]]，会完全忽略{{tr|platforms}}。[[{{tr|NPC}}]] 则总是会爬到{{tr|platforms}}上。
+
+[[{{tr|Weapons}}]]和他们的{{tr|projectiles}}会穿过{{tr|Platforms}}。[[{{tr|Liquids}}]]流动时会穿过{{tr|platforms}}，而[[{{tr|lava}}]]会在接触时摧毁除{{tr|Obsidian Platforms}}、{{tr|Stone Platforms}}、和{{tr|Ash Wood platforms}}外的所有{{tr|platforms}}。[[{{tr|Sand}}]]会被{{tr|platforms}}支撑住。
+
+由于玩家在其上有高机动性，{{tr|platforms}}可以多种不同方式使用：作为穿过裂隙的桥，玩家无需破坏它即可下降；作为屋顶出入口，让一些{{tr|enemies}}无法穿过；或者在大多数{{tr|enemies}}上方创建战斗区域，让玩家可以向下穿透射击同时让[[{{tr|enemies}}]]或 [[{{tr|Boss}}]] 够不着。另外，由于[[{{tr|Piggy Bank}}]]、[[{{tr|Chests}}]]、[[{{tr|Crafting station}}]]和大多数其他[[{{tr|Furniture}}]]都能放置于其上（例外包括[[{{tr|gems}}]]、和[[{{tr|Crystal Shard}}]]），它们可以作为搁架，将{{tr|furniture}}塞进狭窄的空间而不会限制玩家的移动。
+
+== 定位{{tr|Platforms}} ==
+{{tr|Platforms}}有四种不同的位置状态，可以通过用[[{{tr|Hammers}}|{{tr|Hammer}}]]敲击来循环切换：
+# 在默认的“顶部”位置，它们占据{{tr|block}}的上半部分。只有在这个位置时{{tr|furniture}}才能放置其上。这也包括[[{{tr|Bottle}}]]（或类似的东西），这会被计为用来制作[[{{tr|Potions}}]]的[[{{tr|Placed Bottle}}]]。
+# 一次锤击之后，它们将变为倾斜的{{tr|stairs}}形态，朝向玩家。根据相邻的{{tr|block}}不同，还可能会在倾斜的部分下方显示出“支柱”，但这是纯视觉的。
+# 第二次锤击会将它们切换到朝向另一方向的{{tr|stairs}}。
+# 第三次锤击会将它们移到其“底部”位置，同样是水平的但下降到块的下半部分。{{eicons|1.4.4|invert=y}}只有在这个状态下，[[{{tr|banners}}]]（也许还有一些其他悬挂物品）才能挂到其下方（假设下方有空间）。不过，[[{{tr|chandeliers}}]]或[[{{tr|lanterns}}]]不能挂在这里。
+
+第四次锤击将使{{tr|platform}}循环回到其默认位置。单个块空间只能由一块{{tr|platform}}占用，所以你不能将顶部和底部{{tr|platforms}}安放到同一空间中。
+
+=== 楼梯 ===
+[[File:Craftable Platforms.png|right|frame|放置的{{tr|craftable platforms}}。点击图片查看各行的简介。]]
+'''{{tr|stairs}}'''可以朝向任何方向，无所谓它依附在{{tr|block}}的哪一面。沿着它们面对的方向走上{{tr|stairs}}将按预期提升玩家，但走上背向玩家的{{tr|stairs}}不会有任何效果。与普通的{{tr|Platforms}}一样，按{{key|down}}会导致{{tr|stairs}}被忽略掉。{{tr|stairs}}上无法放置任何{{tr|item}}。可以用{{tr|Smart cursor}}来放置{{tr|stairs}}而不需要另外将{{tr|platforms}}锤到正确的状态。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|showresultid=y|result=LIKE %Platform|expectedrows=45|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE %Platform|expectedrows=45}}
+
+在{{3DS version}}上，{{tr|platforms}}只用''一''个相应类型的{{tr|block}}来制作。
+
+== 不可制作的{{tr|Platforms}} ==
+[[File:Noncraftable Platforms.png|right|frame|放置的{{tr|noncraftable platforms}}。点击图片查看各行的简介。]]
+
+[[{{tr|Team Platform}}]]是[[{{tr|Traveling Merchant}}]]所出售的。{{tr|Golden Platforms}}是在[[{{tr|Pirate Invasion}}]]期间掉落的。所有其他不可制作的{{tr|platforms}}都出现在[[{{tr|Dungeon}}]]中。
+{{item/options|set|mode=table|nolink=y|class=block|showid=y}}
+{| class="terraria lined" style="float:left"
+|-
+! colspan= 2 | {{tr|Platform}}
+! 备注
+|-
+| {{item infobox| auto = 1418 | type = Block/Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox| auto = 1389 | type = Block/Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox| auto = 1387 | type = Block/Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox| auto = 1388 | type = Block/Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox | auto = 1384| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox | auto = 1385| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox | auto = 1386| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = plunder}}
+| 出现在{{tr|Dungeon}}中。<br/>({{eicons|1.4.4|invert=y}} 不可制作)
+|-
+| {{item infobox | auto = 3622| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由[[{{tr|Traveling Merchant}}]]出售。
+|-
+| {{item infobox | auto = 3638| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由{{tr|Traveling Merchant}}出售。
+|-
+| {{item infobox | auto = 3639| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由{{tr|Traveling Merchant}}出售。
+|-
+| {{item infobox | auto = 3640| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由{{tr|Traveling Merchant}}出售。
+|-
+| {{item infobox | auto = 3641| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由{{tr|Traveling Merchant}}出售。
+|-
+| {{item infobox | auto = 3642| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = buy/vendor:Traveling Merchant}}
+| 由{{tr|Traveling Merchant}}出售。
+|-
+| {{item infobox | auto = 3904| type = Block / Furniture |  width = 1 | height = 1 | stack = @@@@ {{eicons|1.3.0.1|old-gen=y|small=y}} / 99 {{eicons|1.3.0.1|invert=y|old-gen=n|small=y}} |view=item |tags = drop}}
+| 掉落自[[{{tr|Pirates}}]]。
+|}{{item/options|reset}}
+{{-}}
+
+== 备注 ==
+* 几乎所有种类的{{tr|platform}}在功能上都是相同的，只在外观和{{tr|crafting recipes}}上不同。{{tr|Obsidian Platforms}}、{{eicons|1.4.1}} {{tr|Stone Platforms}}和{{eicons|1.4.4}}{{tr|Ash Wood Platform}}是例外，因为它不像大多数{{tr|platforms}}那样在与[[{{tr|lava}}]]接触时被破坏，尽管其掉入或者被扔进其中时仍会分解。
+**{{tr|Team platforms}}会被{{tr|lava}}破坏掉，但由于其[[{{tr|Rarity}}]]，它们并不会被烧掉。
+** {{tr|Meteorite Platforms}}的光斑在任意亮度下都会显示出来。这使得它们在{{tr|light source}}附近的黑暗中也可见。
+** {{tr|Echo Platforms}}放置后完全隐形，玩家只有在装备[[{{tr|Spectre Goggles}}]]或在[[{{tr|Echo Chamber}}]]附近时才可见。
+* [[{{tr|Hooks}}]]可以抓住{{tr|platforms}}。在 {{eversions|1.4.0.1|invert=y}} 中，抓住{{tr|platform}}时无论往哪个方向发射{{tr|hook}}，都无法抓住任何东西。在 {{eversions|1.4.0.1}} 中，{{tr|hook}}会忽视所有被玩家身体遮盖的{{tr|platforms}}。
+* 正确放置的话，玩家可以奔向{{tr|platform}}并按“下”键来穿过锁住的[[{{tr|Jungle Temple}}]]门。
+* {{tr|The player}}在[[{{tr|Minecart}}]]中时下落会直接穿过{{tr|platforms}}。
+* [[{{tr|Wraith}}]]不能用{{tr|platforms}}向上飞，但可以悬停在它们上方。
+* 在{{eversions|1.4.4}}中，{{tr|dungeon}}的{{tr|wood shelves}}、{{tr|brass shelves}}和{{tr|metal shelves}}可以用[[{{tr|Ecto Mist}}]]在[[{{tr|Bone Welder}}]]制作。
+
+== 小贴士 ==
+[[File:Merchant walking.gif|right|frame|防 {{tr|NPC}} 门。{{tr|stairs}}（及下面的{{tr|platforms}}）充当了分割每个“[[{{tr|House}}]]单元”的隔断。一切都能通过这个入口通道，但 {{tr|NPCs}} 将其视为实心的墙，所以他们会回头。]]
+[[File:Elevator.gif|right|thumb|{{tr|stairs}}电梯。走进去，按住{{key|up}}和{{key|jump}}就能使用它。]]
+* {{tr|stairs}}是许多高级移动技术的关键部分，比如 [[{{tr|hoik}}]]、防 {{tr|NPC}} 门、电梯、{{tr|enemy}}陷阱、等等。
+* 与普通{{tr|blocks}}类似。在一排{{tr|platform}}中间隔移除{{tr|platforms}}，不会影响{{tr|movement}}，因为玩家宽两{{tr|tiles}}，不会掉下去。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在可与[[{{tr|Ropes}}]]相交。
+** {{tr|Banners}}、{{tr|Hanging Bottles}}和{{tr|Lanterns}}现在可以在未锤击的{{tr|platforms}}和所有锤击到其他位置的{{tr|platform}}下悬挂。
+** 添加了{{tr|worldgen}}中生成的所有{{tr|Dungeon}}{{tr|platforms}}的{{tr|recipes}}。}}
+{{history|Desktop 1.4.1|{{tr|Stone Platforms}}现在不会被{{tr|lava}}摧毁。}}
+{{history|Desktop 1.4.0.4|修正了如果[[{{tr|world}}]]的顶部完全被{{tr|platforms}}覆盖就会阻止[[{{tr|meteor}}]]生成的问题。}}
+{{history|Desktop 1.4.0.1|添加了{{tr|Spider Platforms}}、{{tr|Lesion Platforms}}、{{tr|Sandstone Platforms}}、{{tr|Stone Platforms}}、{{tr|Bamboo Platforms}}、{{tr|Nebula Platforms}}、{{tr|Solar Platforms}}、{{tr|Stardust Platforms}}、和{{tr|Vortex Platforms}}。}}
+{{history|Desktop 1.3.5|添加了{{tr|Crystal Platforms}}、{{tr|Golden Platforms}}、{{tr|Lihzahrd Platforms}}、{{tr|Flesh Platforms}}、{{tr|Frozen Platforms}}和{{tr|Dynasty Platforms}}。}}
+{{history|Desktop 1.3.2|更新了{{tr|Martian Platform}}的物品外观。}}
+{{history|Desktop 1.3.1|
+** 添加了{{tr|Team Platforms}}。
+** 添加了{{tr|Crystal Platforms}}、{{tr|Golden Platforms}}、{{tr|Lihzahrd Platforms}}、{{tr|Flesh Platforms}}、{{tr|Frozen Platforms}}和{{tr|Dynasty Platforms}}，但未实现。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Granite Platforms}}、{{tr|Marble Platforms}}、{{tr|Meteorite Platforms}}、和{{tr|Martian Platforms}}。
+** 堆叠数量由 99 提升至 999。
+** 制作的输出数量翻倍，同时让逆向制作成为可能。
+** 为{{tr|Obsidian Platforms}}和{{tr|Bone Platforms}}添加了配方。
+** 现在可以将{{tr|torches}}放置在{{tr|platforms}}上。}}
+{{history|Desktop 1.2.4.1|添加了{{tr|Cactus Platform}}。}}
+{{history|Desktop 1.2.4|添加了{{tr|Palm Wood Platforms}}、{{tr|Mushroom Platforms}}、{{tr|Boreal Wood Platforms}}、{{tr|Slime Platforms}}、{{tr|Steampunk Platforms}}、{{tr|Skyware Platforms}}、{{tr|Living Wood Platforms}}和{{tr|Honey Platforms}}。}}
+{{history|Desktop 1.2.3|添加了由斜面{{tr|Platforms}}所创建的{{tr|stairs}}。}}
+{{history|Desktop 1.2.1.2|你现在可以正确地登上所有类型的{{tr|platforms}}了。}}
+{{history|Desktop 1.2.1|添加了{{tr|Pumpkin Platforms}}和{{tr|Spooky Platforms}}。}}
+{{history|Desktop 1.2.0.3|添加了{{tr|Glass Platform}}。}}
+{{history|Desktop 1.2.0.2|[[{{tr|Dungeon}}]]{{tr|platform}}{{tr|item icons}}现在会以正确的颜色显示了。}}
+{{history|Desktop 1.2|添加了{{tr|Pearlwood Platforms}}、{{tr|Ebonwood Platforms}}、{{tr|Shadewood Platforms}}、{{tr|Dungeon Shelf Platforms}}、{{tr|Metal Shelf Platforms}}、{{tr|Brass Shelf Platforms}}、{{tr|Wood Shelf Platforms}}、{{tr|Pink Brick Platforms}}、{{tr|Green Brick Platforms}}、和{{tr|Blue Brick Platforms}}。}}
+{{history|Desktop 1.0.1|现在{{tr|Torches}}放置在{{tr|wooden platforms}}上时能正确工作了。}}
+{{history|Desktop-Release|Introduced=y|以{{tr|Wood Platform}}引入。}}<!-- 第一个词应该是“Introduced”-->
+
+{{Master Template Furniture
+| show-main = yes
+| show-other = yes
+}}
+{{Master Template Tiles
+| show-blocks = yes
+}}
+{{language info|en=Platforms}}

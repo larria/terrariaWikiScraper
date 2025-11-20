@@ -1,0 +1,103 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| auto = 618
+| idprojectile = 813,814
+| image = Dreadnautilus.gif
+| environment = Blood Moon
+| type = Aquatic
+| damage2 = &#32;{{note|small=y|paren=y|近战}}<br/>{{modes|60|100|150}} {{note|{{gameText|ProjectileName.BloodNautilusShot}}|small=y|paren=y}}
+| Sanguine Staff|1|{{modes|wrap=n|50%|{{expert|100%}}}}
+| Chum Bucket|7–10|50%
+| Blood Moon Monolith|1|11.11%
+| Bloody Tear|1|{{modes|wrap=n|50%|{{expert|100%}}}}
+| sound1 = Item 170.wav
+| soundcaption1 = 蓄力
+| sound2 = Item 172.wav
+| soundcaption2 = 冲刺
+| sound3 = Item 171.wav
+| soundcaption3 = 发射{{tr|projectiles}}
+| sound4 = Item 150.wav
+| soundcaption4 = 反弹{{tr|projectiles}}
+| sound5 = Item 8.wav
+| soundcaption5 = 召唤{{tr|Blood Squid}}
+| hardmode = yes
+}}
+
+'''{{tr|Dreadnautilus}}'''是一种可在[[{{tr|Hardmode}}]]下的[[{{tr|Blood Moon}}]]期间通过[[{{tr|Fishing}}]]召唤的[[{{tr|enemy}}]]。它是五种可通过在{{tr|Blood Moon}}期间钓鱼生成的{{tr|enemy}}之一，其他四种分别是[[{{tr|Wandering Eye Fish}}]]、[[{{tr|Zombie Merman}}]]（前两者在[[{{tr|pre-Hardmode}}]]也能生成）与[[{{tr|Blood Eel}}]]和[[{{tr|Hemogoblin Shark}}]]。{{tr|Dreadnautilus}}比上述四种{{tr|enemy}}稀有，所有生成尝试中只有 {{chance|1/10}} 的几率生成它。而且在这五种{{tr|enemy}}当中，它常常被认为是最难对付的一种。若{{tr|Dreadnautilus}}在[[{{tr|dawn}}]]（上午{{nbsp}}4:30）还未被击败，它会飞走消失。
+
+{{Lifeform Analyzer note}}{{tr|The Dreadnautilus}}需要 10 击杀就能得到它对应的{{tr|banner}}，而非通常的 50 击杀。
+
+== 攻击 ==
+{{tr|Dreadnautilus}}会使用下列攻击{{source code ref|v=1.4.3.6|method=Terraria.NPC.AI_117_BloodNautilus}}：
+
+1. 背朝玩家蓄力 1.5 秒，然后直接向玩家冲刺。当它距离玩家足够近后，它会环绕玩家旋转。冲刺攻击总共持续 3 秒，在 3 秒后它会停止冲刺/旋转。
+:* 在所有[[{{tr|difficulties}}]]下，它在这一蓄力阶段能够反弹大部分{{tr|projectiles}}。对于完整列表，参见[[{{tr|List of reflected projectiles}}]]。
+
+2. 面朝玩家蓄力 1.5 秒，然后向玩家喷出 3 波红色{{tr|projectile}}，每次发射后都会因后坐力后退。
+:* 在这一蓄力阶段下它''不会''反弹{{tr|projectiles}}。
+
+3. 短暂发出血红色光芒，然后召唤最多 3 个“{{tr|Blood Tears}}”。在 1.5 秒后，每个{{tr|Blood Tears}}会召唤一只[[{{tr|Blood Squid}}]]，此后{{tr|Blood Tears}}会在 1.5 秒后消失。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.AI}}对于此攻击的更多细节，见[[#{{tr|Notes}}|{{tr|Notes}}]]。
+
+{{tr|The Dreadnautilus}}会以下列顺序使用上述攻击{{source code ref|v=1.4.3.6|method=Terraria.NPC.AI_117_BloodNautilus}}：
+
+* 在生成后：2、1、2、3。
+* 然后，重复下列顺序：2、1、2、1、2、1、3、1、2、1、2、1、2、3。
+
+== 备注 ==
+* “{{tr|Blood Tears}}”召唤的技术性细节如下{{source code ref|v=1.4.3.6|method=Terraria.NPC.BloodNautilus_CallForHelp}}：
+** {{tr|The Dreadnautilus}}只会在它离玩家少于 125 个{{tr|tiles}}时才会使用此攻击。
+** {{tr|Blood Tears}}会在以{{tr|Dreadnautilus}}为中心 40×40 {{tr|tile}}，除去此范围中心的 16×16 {{tr|tile}}的环状矩形区域生成。
+** {{tr|Blood Tears}}只能在空中、[[{{tr|water}}]]中或[[{{tr|honey}}]]中，和玩家之间没有阻碍，并且存在的{{tr|Blood Squid}}（无论是否是它自己召唤的）少于 3 只时生成。此外，生成位置周围 4×4 {{tr|tiles}}的区域内不能有[[{{tr|Blocks}}|{{tr|solid blocks}}]]。
+** 如果当前存在的[[{{tr|Blood Squid}}]]数量少于 3 只，就会生成 3 个{{tr|Blood Tears}}，从而召唤 3 只{{tr|Blood Squids}}。
+*** 因此，和一个{{tr|Dreadnautilus}}战斗时，同时最多能存在 5 只{{tr|Blood Squids}}。
+* 同时可存在的{{tr|Dreadnautilus}}数量没有上限。在一个{{tr|Dreadnautilus}}存活时，有可能再钓上一个。
+
+== 成就 ==
+{{achievement|name=Don't Dread on Me}}
+
+== 小贴士 ==
+* [[{{tr|Sonar Potion}}]]能够探测到{{tr|Dreadnautilus}}是否即将上钩（它会以红色文本显示{{tr|enemy}}），并给予玩家时间退后并喝下[[{{tr|potions}}]]。
+* 使用[[{{tr|Chum Caster}}]]可以提升钓上{{tr|Dreadnautilus}}和其它{{tr|Blood Moon}}{{tr|enemy}}的几率。使用{{tr|Sonar Potion}}可以让玩家略过其它能钓上的{{tr|Blood Moon enemy}}和不相关的渔获，留下{{tr|night}}的更多时间和{{tr|Dreadnautilus}}对战。
+* 当玩家集中注意应对{{tr|Dreadnautilus}}时，[[{{tr|Summon weapons}}]]对于处理{{tr|Blood Squids}}很有用。由于[[{{tr|Blade Staff}}]]的无视{{tr|defense}}的能力，它是一个优秀的选择，而且它能无视{{tr|Dreadnautilus}}的所有{{tr|defense}}。
+* 造成[[{{tr|Ichor (debuff)}}]]的{{tr|item}}（如[[{{tr|Golden Shower}}]]）可以帮助降低{{tr|Dreadnautilus}}较高的{{tr|defense}}。
+* 由于战斗发生在夜间，且可能伴随着[[{{tr|rain}}]]，战斗时的视野是个问题。和{{tr|projectile}}颜色相似的血红色雨可能会让{{tr|projectile}}难以辨识。使用[[{{tr|Hunter Potion}}]]、[[{{tr|Night Owl Potion}}]]和[[{{tr|Shine Potion}}]]能够帮助增加可见性。
+* 如果在[[{{tr|Settings}}]]关闭了[[{{tr|Blood and Gore}}]]，血弹{{tr|projectiles}}会被厚厚的白色云雾覆盖和跟随，使{{tr|projectile}}在云中可能会难以辨认。不过，白色的云雾可以让{{tr|projectiles}}在{{tr|night}}期间更加显眼。
+*如果玩家在恐惧鹦鹉螺冲刺之前过于靠近它，它会停留在原地且不会发动任何攻击。在这期间，玩家可以使用高频率的近战武器来攻击它，这可能会使得战斗略微简单些，但是往往靠近时可能会触碰到它，因此不建议使用这种方法。
+
+== 花絮 ==
+{{float file box|[[File:Scrapped Dreadnautilus Trophy.png]]|放置状态下的{{tr|Dreadnautilus Trophy}}废案。{{discord ref|name=trophysprite|imagelink=https://i.imgur.com/j32GawW.png|type=Leinfors' message|channel=#terraria-chat|link=251072485095636994/251116850132287490/888551791061504050|date=09/17/2021}}}}
+
+* 如果多个{{tr|Dreadnautilus}}同步其攻击顺序，并同时召唤“{{tr|Blood Tears}}”的话，同时最多能存在的{{tr|Blood Squids}}数量会上升，可用此公式计算：<code>最多存在的{{tr|Blood Squids}}的数量 = 2 + 3 × {{tr|Dreadnautilus}}的数量</code>。
+* 与[[{{tr|Ice Golem}}]]、[[{{tr|Sand Elemental}}]]和[[{{tr|Mothron}}]]相似，{{tr|Dreadnautilus}}不是一个 {{tr|boss}} 或{{tr|mini-boss}}，尽管它比普通的{{tr|mini-bosses}} 更难被击败，有能够让人联想到 {{tr|boss}} 的复杂行为模式，包括会生成{{tr|enemy}}，甚至它拥有自己的{{tr|achievement}}。这可以从它没有[[{{tr|boss health bar}}]]，它掉落的是[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而不是[[{{tr|trophy}}]]，和它在[[{{tr|Master Mode}}]]不会掉落[[{{tr|relic}}]]中知道。
+** [[Leinfors]] 在官方{{tr|Terraria}} Discord 中也提到了此事，称 [[Re-Logic]] 难以决定{{tr|Dreadnautilus}}应当成为一个{{tr|event boss}} 还是只是普通的{{tr|mini boss}}，甚至还为其制作了[[{{tr|trophy}}]]。{{discord ref|imagelink=https://i.imgur.com/ODxgFJF.png|type=Leinfors' message|channel=#terraria-chat|link=251072485095636994/251116850132287490/888550722784878642|date=09/17/2021}}<ref name="trophysprite"/>
+*** 类似于其他[[{{tr|Trophies}}]]展示所击杀的 {{tr|boss}} 的部位，{{tr|the Dreadnautilus}}的未使用的{{tr|trophy}}很像其嘴部。
+** 尽管如此，[[{{tr|Redigit}}]]将{{tr|Dreadnautilus}}称为{{tr|mini-boss}}。<ref>[https://forums.terraria.org/index.php?threads/redigit-has-deleted-twitter-to-hide-from-me-i%E2%80%99m-dissapointed-and-offended-sir-we-need-a-dreadnautilus-master-mode-pet.119526/post-2985378 It’s not a boss though. It’s a miniboss] {{small|{{date|2023|07|04}}}}</ref>
+* 它很像{{wikipedia|chambered nautilus|珍珠鹦鹉螺（chambered nautilus）}}，这也是它名称的由来。
+* 它的名称（Dreadnautilus）结合了''{{wikipedia|dreadnought|无畏舰（dreadnought）}}''，一种 20 世纪早期的战舰；以及''{{wikipedia|nautilus|鹦鹉螺（nautilus）}}''，一种鹦鹉螺科的软体动物。
+* 在[[{{tr|Journey's End}}]]预告片中，可见其原名称为 ''Blood Nautilus（鲜血鹦鹉螺）''。<ref>[https://youtu.be/H77Zfzy4LWw?t=50 Terraria: Journey's End (0:50)] {{small|{{date|2019|6|10}}}}</ref>
+* [[Re-Logic]] 在游戏中加入水生有壳动物 {{tr|boss}} 的想法可能来自 [[Cenx]] 的一条{{wikipedia|April Fools|愚人节}}推特。此条推特说一个叫“Conch of Fish（螺壳鱼）”的 {{tr|boss}} 将会被加入游戏。此名称也是关于[[{{tr|Wall of Flesh}}]]（Wall of Flesh）名称缩略词 WoF 的玩笑。<ref>{{archived link|https://www.terrariaonline.com/threads/duke-fishron-and-the-aquarian-horde.137907|archive-url=https://archive.is/Oi4qa|Duke Fishron and The Aquarian Horde!}} {{small|{{date|2014|4|1}}}}</ref>
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 冲刺{{tr|attack}}的追踪性降低，并且转弯半径也更大了，使其变得更容易躲避。
+** {{tr|Projectiles}}不再会被{{tr|tiles}}挡住。
+** {{tr|Projectiles}}现在在{{tr|night}}更亮/可见度更高。}}
+{{history|Desktop 1.4.1|
+** 掉落{{tr|Sanguine Staff}}的几率从 20% 增加至 50% / {{expert|100%}}。
+** 掉落{{tr|Bloody Tear}}的几率从 11.11% 增加至 50% / {{expert|100%}}。
+** 现在会给予一个{{tr|achievement}}。}}
+{{history|Desktop 1.4.0.5|现在在[[{{tr|Multiplayer}}]]中当当前瞄准的玩家死亡或传送走时应当会正确瞄准另一个玩家。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|随到{{tr|Desktop}} 1.4.0.5 为止的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Dreadnautilus}}

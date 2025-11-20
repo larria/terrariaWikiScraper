@@ -1,0 +1,56 @@
+{{exclusive|1.4.3}}
+{{item infobox
+| auto = 5118
+| sound1 = Dd2 book staff twister loop.wav
+| soundcaption1 = {{gameText|ProjectileName.WeatherPainShot}}
+| tags = drop / bag loot
+| listcat = magic weapons / wands
+}}
+{{drop infobox|style=clear:right}}
+{{distinguish|Weather Vane}}
+[[File:Weather Pain (demo).gif|frame|对[[{{tr|Skeleton}}]]使用{{tr|The Weather Pain}}。注意{{tr|Hurtnado}}会在{{tr|blocks}}上弹跳，且会追踪{{tr|enemies}}。]]
+
+'''{{tr|Weather Pain}}'''是一件[[{{tr|pre-Hardmode}}]]的[[{{tr|wand}}]]，有 {{chance|1/4}} 的概率掉落自[[{{tr|Deerclops}}]]。使用时，它会发射出一个{{tr|Hurtnado}}，在持续 {{duration|570 ticks}}或击中 15 个[[{{tr|enemies}}]]后消散。{{source code ref|name=icewhipslicer|v=1.4.4.9|method=Terraria.Projectile.AI_177_IceWhipSlicer}} {{tr|The Hurtnado}}具有 10 [[{{tr|armor penetration}}]]，可在[[{{tr|blocks}}]]上反弹，而且会自动追踪附近{{tr|enemy}}，试图悬停在它们身上以造成持续{{tr|damage}}。同一时间仅能存在一个{{tr|The Hurtnado}}，如果在一个{{tr|Hurtnado}}仍存在时使用{{tr|Weather Pain}}，一旦召唤出新的{{tr|Hurtnado}}，现有的{{tr|Hurtnado}}就会在 {{duration|15 ticks}}内消散。
+
+{{modifier|magic}}
+	
+== 备注 ==
+* {{tr|The Hurtnado}}可追踪 25 {{tr|tiles}}半径内的{{tr|enemy}}。<ref name="icewhipslicer"/>
+* {{tr|The Hurtnado}}击中时造成 25 {{tr|ticks}}{{tick}}[[{{tr|static invincibility frame}}]]，这意味着其每秒最多可击中 2.4 次。{{source code ref|v1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The Hurtnado}}最大移动速度为 {{mph|8 pixels}}。<ref name="icewhipslicer"/>
+
+== 小贴士 ==
+* 由于同时只能存在一个{{tr|Hurtnado}}，因此{{tr|player}}可以在{{tr|Hurtnado}}存在期间时使用另一把{{tr|magic weapon}}。
+
+== 花絮 ==
+* {{tr|Weather Pain}}可以被视作{{tr|pre-Hardmode}}版本的[[{{tr|Magnet Sphere}}]]。
+* 其英文名称“Weather Pain”中的“Pain（痛苦，疼痛）”与“Weather Vane（{{tr|Weather Vane}}）”当中的“Vane”读音相似，这也是该武器名字的来源。
+* 在现实生活中，[[wikipedia:Weather pains|weather pain（气象病/天气痛）]]是由于大气压或湿度变化而引起的关节疼痛。
+* 它的使用音效和[[{{tr|Nimbus Rod}}]]的相同。
+* 其{{tr|The tooltip}}参考了《''[[dts:Don't Starve Together|{{tr|Don't Starve Together}}]]''》中，[[dts:Walter|沃尔特]]对{{tr|Weather Pain}}的检查话语。
+
+== 另见 ==
+* {{dts link}}（天气风向标）
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 击中数由 12 增加至 15。
+** 造成的{{tr|invincibility frames}}从 20 {{tr|tick}}增加至 25 {{tr|tick}}。
+** {{tr|projectile}}{{tr|duration}}增加 2 秒。}}
+{{history|Desktop 1.4.3.2|
+** {{tr|projectile}}{{tr|duration}}增加 50%。
+** 击中由 10 增加至 12。
+** {{tr|velocity}}由 7 增加至 8。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.2 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Weather Pain}}

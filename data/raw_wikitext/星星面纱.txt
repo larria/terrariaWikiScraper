@@ -1,0 +1,46 @@
+{{item infobox
+| hardmode = yes
+| auto = 862
+| idprojectile = 725
+}}
+
+'''{{tr|Star Veil}}'''是一种结合了[[{{tr|Star Cloak}}]]和[[{{tr|Cross Necklace}}]]功能的[[{{tr|Hardmode}}]][[{{tr|Accessory}}]]。当玩家受伤时，它会使{{tr|stars}}落下，并增加玩家获得的[[{{tr|invincibility frames}}]]长度。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Star Veil|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|Star Cloak}}]]、[[{{tr|Bee Cloak}}]]、[[{{tr|Mana Cloak}}]]、和{{tr|Star Veil}}的{{tr|star}}坠落效果不会叠加。无论装备了这些物品中的多少个，每次只会落下三颗{{tr|stars}}，且始终以[[{{tr|Mana Cloak}}]]先于[[{{tr|Bee Cloak}}]]先于{{tr|Star Veil}}先于[[{{tr|Star Cloak}}]]的优先级触发。
+* {{tr|The Star Veil}}的{{tr|invincibility frame}}延长效果不与[[{{tr|Cross Necklace}}]]叠加。
+* {{tr|invincibility frame}}的延长量在不同情况下有所不同：
+** 默认情况下，{{tr|invincibility frame}}延长量为 {{duration|40 ticks}}（2/3 秒）到 {{duration|80 ticks}}（4/3 秒）。
+*** 如果受到恰好 1 点{{tr|damage}}，那么{{tr|invincibility frame}}的延长量为 {{duration|20 ticks}}（1/3 秒）到 {{duration|40 ticks}}（2/3 秒）。
+** 与[[{{tr|Black Belt}}]]、[[{{tr|Master Ninja Gear}}]]、{{eil|Brain of Confusion}}和{{eil|Holy Protection}}{{tr|buff}}叠加时，闪避所得的无敌时间会延长 {{duration|40 ticks}}（2/3 {{tr|second}}），达到完整的 2 {{tr|seconds}}。
+** 参见[[{{tr|Invincibility frames}}#{{tr|Invincibility frame}}长度|{{tr|Invincibility frames}} § {{tr|Invincibility frame}}长度]]以获取完整列表。
+* 它的两种组件都是[[{{tr|Mimics}}]]的独特掉落物。
+
+== 小贴士 ==
+* [[{{tr|melee}}]]{{tr|players}}推荐使用{{tr|The Star Veil}}，因为战士比[[{{tr|ranged}}]]或[[{{tr|magic}}]]职业更有可能受伤害。
+
+== 花絮 ==
+* [[{{tr|Star Cloak}}]]、[[{{tr|Bee Cloak}}]]以及{{tr|Star Veil}}的{{tr|projectiles}}叫做“{{tr|Hallow Stars}}”。
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|现在只在承受会造成[[{{tr|Invincibility frame}}分组]]中第二组与第四组{{tr|invincibility frame}}的{{tr|damage}}时才会生成{{tr|stars}}。}}
+{{history|Desktop 1.4.1|
+** {{tr|Stars}}现在造成 75 {{tr|damage}}并且拥有 25 点[[{{tr|armor penetration}}]]。
+*** 这一伤害在{{tr|Expert mode}}中变为 2 倍，在{{tr|Master mode}}中变为 3 倍（{{tr|armor penetration}}不变）。
+** 现在使用[[{{tr|local immunity frame}}]]，不会干扰{{tr|other piercing projectiles}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Star Veil}}

@@ -1,0 +1,110 @@
+{{infobox wrapper
+|{{buff infobox
+| auto = 26
+| cause = {{item|image=Bowl of Soup.png|Potions#Food and drink|Food items}} (见[[食物与饮料药水|表]])
+| effects = 所有属性小幅提升
+| duration = 多种时间
+| tooltip = 所有属性小幅提升<br>{{expert|生命再生速度提高}}
+}}
+|{{buff infobox
+| auto = 206
+| cause = {{item|image=Bowl of Soup.png|Potions#Food and drink|Food items}} (见[[食物与饮料药水|表]])
+| effects = 所有属性中幅提升
+| duration = 多种时间
+| tooltip = 所有属性中幅提升<br>{{expert|生命再生速度提高}}
+}}
+|{{buff infobox
+| auto = 207
+| cause = {{item|image=Bowl of Soup.png|Potions#Food and drink|Food items}} (见[[食物与饮料药水|表]])
+| effects = 所有属性大幅提升
+| duration = 多种时间
+| tooltip = 所有属性大幅提升<br>{{expert|生命再生速度提高}}
+}}
+}}
+
+'''{{tr|Well Fed}}、{{tr|Plenty Satisfied}}'''和'''{{tr|Exquisitely Stuffed}}'''是依据玩家吃掉的[[{{tr|Food and drink potions}}|{{tr|food}}]]给予玩家的[[{{tr|buff}}]]。此类{{tr|buff}}将提升所有能力（如下所列）。{{tr|buff}}持续 1 至 48 分钟不等（取决于所吃的食物），但可以通过右键单击{{tr|buff}}图标来随时取消。此外，在[[{{tr|Expert Mode}}]]中，生命再生只有在玩家拥有此{{tr|buff}}时才会完全有效。（详见[[生命再生]]）
+
+== {{tr|Well Fed}} ==
+'''{{tr|Well Fed}}'''给予以下效果：{{source code ref|v=1.4.0.1|{{code|Terraria.Player.cs}}中的{{code|UpdateBuffs()}}方法，具体为{{code|(this.buffType[index1] {{=}}{{=}} 26)}} （{{tr|Well Fed}}的{{tr|buff}}编号是 26)}}
+* + 2 [[{{tr|defense}}]]
+* + 2％ 所有{{tr|damage}}的[[{{tr|critical hit chance}}]]（[[{{tr|summon}}]]{{tr|damage}}除外）
+* + 5％ [[{{tr|melee speed}}]]和[[{{tr|mining speed}}]]
+* + 5％ 所有{{tr|damage}}（包括{{tr|summon}}{{tr|damage}}）
+* + 0.5 {{tr|minion}}[[{{tr|knockback}}]]
+* + 20％ [[{{tr|movement speed}}]]
+其{{tr|buff icon}}包括一只[[{{tr|Roasted Bird}}]]和一颗星星。
+
+== {{tr|Plenty Satisfied}} {{Eicons|1.4.0.1}}==
+'''{{tr|Plenty Satisfied}}'''给予以下效果：{{source code ref|v=1.4.0.1|{{code|Terraria.Player.cs}}中的{{code|UpdateBuffs()}}方法，具体为{{code|(this.buffType[index1] {{=}}{{=}} 206)}}（{{tr|Plenty Satisfied}}的{{tr|buff}}编号是 206）}}
+* + 3 [[{{tr|defense}}]]
+* + 3％ 所有{{tr|damage}}的[[{{tr|critical hit chance}}]]（[[{{tr|summon}}]]{{tr|damage}}除外）
+* + 7.5％ [[{{tr|melee speed}}]]
+* + 7.5％ 所有{{tr|damage}}（包括{{tr|summon}}{{tr|damage}}）
+* + 0.75 {{tr|minion}}[[{{tr|knockback}}]]
+* + 30％ [[{{tr|movement speed}}]]
+* + 10％ [[{{tr|mining speed}}]]
+其{{tr|buff icon}}包括一只[[{{tr|Seafood Dinner}}|{{tr|crab}}]]和两颗星星。
+
+== {{tr|Exquisitely Stuffed}} {{Eicons|1.4.0.1}}==
+'''{{tr|Exquisitely Stuffed}}'''给予以下效果：{{source code ref|v=1.3.5.3|{{code|Terraria.Player.cs}}中的{{code|UpdateBuffs()}}方法，具体为{{code|(this.buffType[index1] {{=}}{{=}} 207)}} （{{tr|Exquisitely Stuffed}}的{{tr|buff}}编号是 207）}}
+* + 4 [[{{tr|defense}}]]
+* + 4％ 所有{{tr|damage}}的[[{{tr|critical hit chance}}]]（[[{{tr|summon}}]]{{tr|damage}}除外）
+* + 10％ [[{{tr|melee speed}}]]
+* + 10％ 所有{{tr|damage}}（包括{{tr|summon}}{{tr|damage}}）
+* + 1 {{tr|minion}}[[{{tr|knockback}}]]
+* + 40％ [[{{tr|movement speed}}]]
+* + 15％ [[{{tr|mining speed}}]]
+其{{tr|buff icon}}包括一只[[{{tr|Roasted Duck}}]]和三颗星星。
+
+== 来源 ==
+可以提供此类{{tr|buff}}的完整食物列表参见[[{{tr|Food and drink potions}}|此处]]。
+
+== {{tr|Notes}} ==
+* 在{{eversions|1.4.0.1}}中，虽然更加强大的{{tr|buff}}版本持续时间较短，但获取也并不难。
+** 对于提供{{tr|Exquisitely Stuffed}}的{{tr|Food items}}，最容易获得的包括：从{{tr|enemy}}掉落的：由[[{{tr|Crimera}}]]和[[{{tr|Eater of Souls}}]]掉落的[[{{tr|Burger}}]]；由{{tr|gold critters}}制作的[[{{tr|Golden Delight}}]]能提供 48 分钟的{{tr|Exquisitely Stuffed}}，所有{{tr|Well Fed tiers}}中持续时间最长的{{tr|buff}}。
+** 提供{{tr|Plenty Satisfied buff}}的{{tr|Food items}}会更常见地掉落，尤其是[[{{tr|Banana Split}}]]，会由大部分{{tr|pre-Hardmode}}[[{{tr|Underground Desert}}]]{{tr|enemies}}掉落。[[{{tr|Bowl of Soup}}]]、[[{{tr|Pumpkin Pie}}]]、和{{eil|Froggle Bunwich}}可以简单地由常见材料制作。
+*** [[{{tr|Neon Tetra}}]]、[[{{tr|Princess Fish}}]]、和[[{{tr|Stinkfish}}]]应当被制作成{{tr|Seafood Dinners}}，即使卖出{{tr|Seafood Dinners}}获利比直接卖出{{tr|fish}}要少。其他同品质的{{tr|fish}}都能被制作成{{tr|buff potion}}。
+** 提供{{tr|Well Fed buff}}的{{tr|Food items}}最容易获得，例如由[[{{tr|Fishing}}#渔获品质|丰富渔获]]制作的{{tr|Cooked Fish}}，以及由[[{{tr|Bunny}}]]制作的[[{{tr|Bunny Stew}}]]。
+* 在{{eversions|1.4.0.1|invert=y}}中，这个{{tr|Buff}}很简单，但非常有用，因其获取容易、用途广泛、持续时间长。
+** 在[[{{tr|Halloween}}]]期间，用于制作[[{{tr|Pumpkin Pie}}]]的[[{{tr|Pumpkin}}]]十分充裕，即使在其他时间也可以从[[{{tr|Dryad}}]]处购买[[{{tr|Pumpkin Seed}}]]来种植。其他食物物品可以从多种来源制造和获取。
+** 作为替代，为了其他用途[[{{tr|fishing}}]]而获得的鱼也足够使玩家保持{{tr|Well Fed}}{{tr|Buff}}，即使持续时间较短。
+* 玩家在大多时候应当携带一些食物，始终保持{{tr|Well Fed}}{{tr|Buff}}生效。单纯移速{{tr|buff}}就能带来足够的回报，{{eil|Expert Mode}}下这会更加重要，因为这样可以恢复正常的[[{{tr|Health regeneration}}]]速度。无论什么模式，得到的广泛{{tr|buff}}终归是有用的。
+** 在{{eil|Constant}}中这会更加有用，因为这样可以防止玩家死于[[{{tr|Hunger}}|饥饿]]。
+* 在[[{{tr|Boss}}]]战前或进入危险区域前获取此{{tr|buff}}可以轻易得到优势。移速{{tr|buff}}使之在探索和采矿时也很有用。
+
+== {{tr|Trivia}} ==
+* [[{{tr|Cooked Marshmallow}}]]是唯一在全平台上都有着相同持续时间的食物。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.3|修复了{{tr|Exquisitely Stuffed}}{{tr|buff}}没有增加[[{{tr|Damage}}#{{tr|Ranged}}|{{tr|Ranged damage}}]]的{{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Well Fed}}的{{tr|sprite updated.}}旧外观为 [[File: Well Fed (old).png]]
+** 添加{{tr|Plenty Satisfied}}和{{tr|Exquisitely Stuffed}}{{tr|buff}}。
+** 引入许多食物物品。完整列表见[[{{tr|Food and drink potions}}|此处]]。
+** 持续时间改变： 
+*** [[{{tr|Pumpkin Pie}}]]现在会提供 8 分钟的{{tr|Plenty Satisfied}}{{tr|buff}}。}}
+{{history|Desktop 1.3.0.1|
+** 加入[[{{tr|Grub Soup}}]]和[[{{tr|Bacon}}]]，它们都提供{{tr|Well Fed}}{{tr|buff}}。
+** 在新加入的[[{{tr|Expert Mode}}]]中，此{{tr|buff}}可以使生命回复变回正常水平。
+** 持续时间改变：
+*** [[{{tr|Pumpkin Pie}}]]提供的{{tr|buff}}从 15 分钟增至 45 分钟。
+*** [[{{tr|Christmas Pudding}}]]提供的{{tr|buff}}从 15 分钟增至 35 分钟。
+*** [[{{tr|Sugar Cookie}}]]和[[{{tr|Gingerbread Cookie}}]]提供的{{tr|buff}}从 15 分钟增至 30 分钟。
+*** [[{{tr|Bowl of Soup}}]]提供的{{tr|buff}}从 10 分钟增至 30 分钟。
+*** [[{{tr|Cooked Fish}}]]，[[{{tr|Cooked Shrimp}}]]，和[[{{tr|Sashimi}}]]提供的{{tr|buff}}从 3 分钟增至 20 分钟。
+*** [[{{tr|Pho}}]]提供的{{tr|buff}}从 7 分钟增至 15 分钟。
+*** [[{{tr|Pad Thai}}]]提供的{{tr|buff}}从 4 分钟增至 10 分钟。}}
+{{history|Desktop 1.2.4|
+** 加入[[{{tr|Cooked Fish}}]]，[[{{tr|Cooked Shrimp}}]]和[[{{tr|Sashimi}}]]，它们都提供{{tr|Well Fed}}{{tr|buff}}。
+** 修复了{{tr|Well Fed}}{{tr|buff}}增加 10% 魔法{{tr|damage}}且不增加远程{{tr|damage}}的漏洞。（应为所有{{tr|damage}}增加 5%）}}
+{{history|Desktop 1.2.3|加入[[{{tr|Pad Thai}}]]和[[{{tr|Pho}}]]，它们都提供{{tr|Well Fed}}{{tr|buff}}。}}
+{{history|Desktop 1.2.2|加入[[{{tr|Sugar Cookie}}]]，[[{{tr|Gingerbread Cookie}}]]和[[{{tr|Christmas Pudding}}]]，它们都提供{{tr|Well Fed}}{{tr|buff}}。}}
+{{history|Desktop 1.2.1|加入[[{{tr|Pumpkin Pie}}]]，提供{{tr|Well Fed}}{{tr|buff}}。}}
+{{history|Desktop 1.2|加入[[{{tr|Cooked Marshmallow}}]]，提供{{tr|Well Fed}}{{tr|buff}}。}}
+{{history|Desktop 1.0.6|与[[{{tr|Bowl of Soup}}]]同时引入了游戏。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs}}
+{{language info|en=Well Fed}}

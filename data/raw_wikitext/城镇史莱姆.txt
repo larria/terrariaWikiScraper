@@ -1,0 +1,176 @@
+{{exclusive|1.4.4}}
+{{npc infobox
+| auto = 670
+| name = Town Slimes
+| type = NPC / Slime
+| id = 670, 678–684
+| cargo = no
+}}
+
+'''{{tr|Town Slimes}}'''是一类[[{{tr|town pet}}]]。目前共有 8 种不同的{{tr|Town Slimes}}；与[[{{tr|Town Bunny}}]]、[[{{tr|Town Cat}}]]、和[[{{tr|Town Dog}}]]不同，各种各样的{{tr|Town Slimes}}可以同时存在，每种{{tr|Slime}}有着不同的入住条件。和大部分其他 {{tr|NPCs}} 一样，这一条件仅需达成一次；若{{tr|Town Slimes}}被杀死，它们会自行重生。
+
+== 类型 ==
+{{npc infobox/options|view=item<noinclude>|cargo=no<!--Transcluded on [[NPCs]]--></noinclude>}}{{options/set|item|mode=table|icons=n|nolink=y}}
+{| class="terraria lined"
+!图像 !! {{tr|Name}} !! 条件 !! {{tr|Map Icon}}
+|-
+| {{npc infobox|auto=670|type=NPC}}
+| 会在击败[[{{tr|King Slime}}]]时入住。
+| [[File:Map Icon Nerdy Slime.png|link=]]
+|-
+| {{npc infobox|auto=678|type=NPC}}
+| 在天然的[[{{tr|Party}}]]激活期间入住。
+| [[File:Map Icon Cool Slime.png|link=]]
+|-
+| {{npc infobox|auto=679|type=NPC}}
+| 会在用[[{{tr|Golden Key}}]]解锁[[{{tr|Cavern Layer}}]]中的[[{{tr|Old Shaking Chest}}]]后入住。
+| [[File:Map Icon Elder Slime.png|link=]]
+|-
+| {{npc infobox|auto=680|type=NPC}}
+| 会在打破[[{{tr|Space}}|{{tr|Space Layer}}]]中的[[{{tr|Clumsy Balloon Slime}}]]的气球后入住。
+| [[File:Map Icon Clumsy Slime.png|link=]]
+|-
+| {{npc infobox|auto=681|type=NPC}}
+| 会在将[[{{tr|Sparkle Slime Balloon}}]]扔进[[{{tr|Shimmer}}]]后入住。
+| [[File:Map Icon Diva Slime.png|link=]]
+|-
+| {{npc infobox|auto=682|type=NPC}}
+| 可以在[[{{tr|Blood Moon}}]]时钓到。
+| [[File:Map Icon Surly Slime.png|link=]]
+|-
+| {{npc infobox|auto=683|type=NPC}}
+| 会在于[[{{tr|Jungle}}]]中将[[{{tr|Purification Powder}}]]用在[[{{tr|Mystic Frog}}]]上后搬进来。
+| [[File:Map Icon Mystic Slime.png|link=]]
+|-
+| {{npc infobox|auto=684|type=NPC}}
+| 会在将[[{{tr|Copper Helmet}}]]或[[{{tr|Copper Shortsword}}]]扔给[[{{tr|Slime}}]]后入住。
+| [[File:Map Icon Squire Slime.png|link=]]
+|}{{npc infobox/options|reset}}{{options/reset|item}}
+
+== 备注 ==
+* [[{{tr|Sonar Potion}}]]可以辨识出{{tr|the Surly Slime}}。它的名字会显示为红色，就像其他可以钓上来的[[{{tr|Blood Moon}}]]{{tr|enemies}}一样，但并不敌对玩家。
+* 仅有以下类型的{{tr|slimes}}可以被转化为{{tr|Squire Slime}}：{{source code ref|v=1.4.4.6|method=Terraria.Item.GetPickedUpByMonsters_Special}}
+: {{itemlist/start|class=terraria|width=12em}}{{options/set|item|showid=n}}<!--
+-->{{#vardefine:types|{{#invoke:Npcinfo/idSets|getSet|CanConvertIntoCopperSlimeTownNPC}}}}<!-- list of eligible "base" types
+-->{{#loop:i|-65|65|<!-- find the "sub-types" that are part of each "base" type
+	-->{{#if:{{#lstfnd:{{npcinfo|{{#var:i}}|type}}|{{#var:types}}|,}}|<!-- get "base" type of this NPC and check if it's among the eligible types
+		-->{{itemlist/item|{{item|type=npc|id={{#var:i}}}}}}<!--
+	-->}}<!--
+-->}}<!--
+-->{{#lstmap:{{#lstrm:default|{{#var:types}}|,|,}}|,|@@@@|<esc>{{itemlist/item|{{item|type=npc|id=@@@@}}}}</esc>|}}<!-- list the "base" types
+-->{{itemlist/end}}{{options/reset|item}}
+* [[{{tr|Diva Slime}}]]是 [[Get fixed boi]] {{tr|world}}中的起始 {{tr|NPCs}} 之一。
+
+== 成就 ==
+{{achievement|name=The Great Slime Mitosis}}
+
+== 名字 ==
+{{npc names|id=670}}
+
+== 话语 ==
+=== 书呆子史莱姆 ===
+* “{{gameText|SlimeBlueChatter.Chatter_1}}”
+* “{{gameText|SlimeBlueChatter.Chatter_2}}”
+* “{{gameText|SlimeBlueChatter.Chatter_3}}”
+
+=== 酷酷史莱姆 ===
+* “{{gameText|SlimeGreenChatter.Chatter_1}}”
+* “{{gameText|SlimeGreenChatter.Chatter_2}}”
+* “{{gameText|SlimeGreenChatter.Chatter_3}}”
+
+=== 长者史莱姆 ===
+* “{{gameText|SlimeOldChatter.Chatter_1}}”
+* “{{gameText|SlimeOldChatter.Chatter_2}}”
+* “{{gameText|SlimeOldChatter.Chatter_3}}”
+
+=== 笨拙史莱姆 ===
+* “{{gameText|SlimePurpleChatter.Chatter_1}}”
+* “{{gameText|SlimePurpleChatter.Chatter_2}}”
+* “{{gameText|SlimePurpleChatter.Chatter_3}}”
+
+=== 天后史莱姆 ===
+* “{{gameText|SlimeRainbowChatter.Chatter_1}}”
+* “{{gameText|SlimeRainbowChatter.Chatter_2}}”
+* “{{gameText|SlimeRainbowChatter.Chatter_3}}”
+
+=== 暴躁史莱姆 ===
+* “{{gameText|SlimeRedChatter.Chatter_1}}”
+* “{{gameText|SlimeRedChatter.Chatter_2}}”
+* “{{gameText|SlimeRedChatter.Chatter_3}}”
+
+=== 神秘史莱姆 ===
+* “{{gameText|SlimeYellowChatter.Chatter_1}}”
+* “{{gameText|SlimeYellowChatter.Chatter_2}}”
+* “{{gameText|SlimeYellowChatter.Chatter_3}}”
+
+=== 侍卫史莱姆 ===
+* “{{gameText|SlimeCopperChatter.Chatter_1}}”
+* “{{gameText|SlimeCopperChatter.Chatter_2}}”
+* “{{gameText|SlimeCopperChatter.Chatter_3}}”
+
+== 花絮 ==
+* {{tr|The Town Slimes}}是基于两个[[{{tr|Master Mode}}]]独有的，分别掉落自[[{{tr|King Slime}}]]和[[{{tr|Queen Slime}}]]的[[{{tr|pets}}]]：[[{{tr|Slime Prince}}]]和[[{{tr|Slime Princess}}]]。它们中的大多数都和{{tr|pet}}有相同的身体形状，而有不同的颜色、装饰、和面部表情。
+** {{tr|The Cool Slime}}和{{tr|Slime Prince}}具有完全相同的面部表情。
+* 在游戏文件中有一句未使用的文本：“{{gameText|Misc.LicenseSlimeUsed}}”这表明{{tr|Town Slimes}}原本计划为像其他{{tr|town pets}}通过许可证解锁。{{source code ref|v=1.4.4.2|{{code|Misc.LicenseSlimeUsed}} in the localization file {{code|Terraria.Localization.Content.en-US.json}}}}
+* 神秘史莱姆的台词“泡泡泡泡！吹泡泡！”(Bubble bubble! Boil glubble!)参考了莎士比亚悲剧《{{wikipedia|zh:麦克白|麦克白}}》中{{wikipedia|Three Witches|三位女巫}}的唱词“不惮辛劳不惮烦，釜中沸沫已成澜。”(“Double, double toil and trouble; Fire burn and cauldron bubble.”，第四幕第一场)。此句经常误传为“不惮泡沫不惮烦”，因为美国动画片{{wikipedia|DuckTales|《唐老鸭俱乐部》(DuckTales）}}而广为人知。在“Much Ado About Scrooge”一集中岛上的女巫有唱词“孩子孩子，你有麻烦，想要离开，绝不可能。”（“Bubble, bubble, toil and trouble. Leave this island on the double.”）<!-- 小神龙版和粤语翻译待补 -->
+* {{tr|Town slimes}}的所有名字都以字母“S”开头。
+* 部分{{tr|Nerdy Slime}}的可能名字参考了其他内容：
+** “Sine”参考了正弦曲线。
+** “Sheldon”参考了来自美国电视情景喜剧{{wikipedia|The Big Bang Theory|《-{zh-cn:生活大爆炸;zh-tw:生活大爆炸;zh-hk:囧男大爆炸}-》(The Big Bang Theory）}}中的主要角色{{wikipedia|Sheldon Cooper|谢尔顿·库珀（Sheldon Cooper）}}。
+** “Sherman”参考了美国加拿大动画电视系列{{wikipedia|The Mr. Peabody & Sherman Show|《天才眼镜狗》（The Mr. Peabody & Sherman Show）}}。
+** “Shibboleet”参考了网络漫画{{wikipedia|xkcd}}[https://xkcd.com/806/ 第806集]。
+** “Sonic”参考了日本电子游戏和媒体系列中的同名主角{{wikipedia|Sonic the Hedgehog (character)|刺猬索尼克（Sonic the Hedgehog）}}。
+** “Spock”参考了美国科幻媒体系列{{wikipedia|Star Trek|《-{zh-cn:星际迷航;zh-tw:星艦迷航記;zh-hk:星空奇遇記}-》（Star Trek）}}中的同名角色。
+** “Sputnik”参考了太空竞赛期间由苏联发射的卫星。
+** “Stiltskin”参考了德国的童话故事{{wikipedia|Rumpelstiltskin|《名字古怪的小妖精灵》（Rumpelstiltskin）}}。
+* 部分{{tr|Cool Slime}}的可能名字参考了其他内容：
+** “School”很可能参考了“too cool for school”（自以为很酷）。
+** “Slimer”可能参考了[[{{tr|Slimer}}|同名{{tr|enemy}}]]。
+** “Slurm”很可能参考了美国动画科幻情景剧{{wikipedia|Futurama|《-{zh-cn:飞出个未来;zh-tw:飛出個未來;zh-hk:乃出個未來}-》（Futurama）}}中的同名饮料。
+** “Swiggity Swooty”参考了古早的网络用语“Swiggity swooty, I'm comin' for that booty”。
+* 部分{{tr|Elder Slime}}的可能名字参考了其他内容：
+** “Scrooge”参考了 1843 年的中篇小说{{wikipedia|A Christmas Carol|《圣诞欢歌》（A Christmas Carol）}}中的{{wikipedia|Ebenezer Scrooge|艾比尼泽·斯克鲁奇（Ebenezer Scrooge）}}
+** “Slimdalf”参考了奇幻小说{{wikipedia|The Hobbit|《-{zh-cn:霍比特人;zh-tw:哈比人}-》（The Hobbit）}}和{{wikipedia|The Lord of the Rings|《指环王》（The Lord of the Rings）}}中的主人公{{wikipedia|Gandalf|甘道夫（Gandalf）}}。
+** “Slumbledore”参考了幻想小说系列{{wikipedia|Harry Potter|《哈利·波特》（Harry Potter）}}中的{{wikipedia|Albus Dumbledore|-{zh-cn:阿不思·邓布利多;zh-tw:阿不思·鄧不利多
+}-（Albus Dumbledore）}}。
+** “Smithers”很可能参考了美国动画情景喜剧{{wikipedia|The Simpsons|《-{zh-cn:辛普森一家;zh-tw:辛普森家族;zh-hk:阿森一族}-》（The Simpsons）}}中的{{wikipedia|Waylon Smithers|韦伦·史密瑟斯（Waylon Smithers）}}。
+** “Spinkerton”是 [[Redigit]] 的昵称之一。
+** “Stanford”很可能参考了美国悬疑动画电视系列{{wikipedia|Gravity Falls|《-{zh-cn:怪诞小镇;zh-tw:神秘小鎮大冒險}-》（Gravity Falls）}}中的{{wikipedia|Stanford Pines|史坦霍特·派尔斯（Stanford Pines）}}。
+** “Stonks”参考了“[https://knowyourmeme.com/memes/stonks stonks]”模因，它是单词“{{wiktionary|stock}}”（股票）的有意错拼。
+* 部分{{tr|Diva Slime}}的可能名字参考了其他内容：
+** “Shimmer”和“Sparkle”很可能参考了获得{{tr|Diva Slime}}的方式。
+** “Stardew”很可能参考了农场游戏{{wikipedia|Stardew Valley|《星露谷物语》（Stardew Valley）}}。
+* 部分{{tr|Surly Slime}}的可能名字参考了其他内容：
+** “Scarface”参考了美国黑帮份子和商人{{wikipedia|Al Capone|阿尔·卡彭（Al Capone）}}的一个绰号。
+** “Slickfather”参考了 1972 年的美国犯罪电影{{wikipedia|The Godfather|《教父》（The Godfather）}}。
+** “Slimeballa”参考了{{tr|enemy}}[[{{tr|Snow Balla}}]]。
+** “Slippery Sal”可能参考了电视系列{{wikipedia|Breaking Bad|《绝命毒师》（Breaking Bad）}}和{{wikipedia|Better Call Saul|《-{zh-cn:风骚律师;zh-tw:絕命律師}-》（Better Call Saul）}}中的{{wikipedia|Saul Goodman|萨尔·古德曼（Saul Goodman）}}这一角色及其昵称“Slippin' Jimmy”。
+** “Slurpee”参考了通常由加油站和便利店出售的碳酸{{wikipedia|slushy|冰沙}}。
+** “Smeagol”参考了奇幻小说{{wikipedia|The Hobbit|《-{zh-cn:霍比特人;zh-tw:哈比人}-》（The Hobbit）}}和{{wikipedia|The Lord of the Rings|《指环王》（The Lord of the Rings）}}中的{{wikipedia|Sméagol|斯米戈尔（Sméagol）}}，后称古鲁姆（Gollum）。
+** “Stressball”参考了{{tr|Surly Slime}}总是精神紧绷，以及现实生活中的一种玩具——{{wikipedia|stress ball|压力球}}。
+* 部分{{tr|Mystic Slime}}的可能名字参考了其他内容：
+** “Sabrina”很可能参考了 1996 年的美国电视情景喜剧{{wikipedia|Sabrina the Teenage Witch (1996 TV series)|《魔法少女萨琳娜》（Sabrina the Teenage Witch）}}。
+** “Salem”参考了现实生活中位于{{wikipedia|Massachusetts|马萨诸塞州}}的{{wikipedia|Salem, Massachusetts|同名的历史悠久的沿海都市-{zh-cn:塞勒姆;zh-tw:賽勒姆}-}}，后者因 1692 年的臭名昭著的{{wikipedia|Salem witch trials|-{zh-cn:塞勒姆审巫案;zh-tw:賽勒姆巫審}-}}而广为人知。
+* 部分{{tr|Squire Slime}}的可能名字参考了其他内容：
+** “Scout”可能参考了 2007 年的多人第一人称射击游戏{{wikipedia|Team Fortress 2|《-{zh-cn:军团要塞 2;zh-tw:絕地要塞 2}-》（Team Fortress 2）}}中的角色。
+** “Semper Serus”是{{wikipedia|Latin|拉丁语}}，意为“总是迟到”（always late）。
+** “Sigfried”参考了{{wikipedia|Sigurd|齐格弗里德（Siegfried）}}，{{wikipedia|Germanic heroic legend|日耳曼英雄传说}}中的传奇英雄。
+* {{tr|Elder Slime}}的可能名字之一：“Scooby”以及{{tr|Squire Slime}}的可能名字之一：“Scrappy”，可能分别参考了美国动画媒体系列{{wikipedia|Scooby-Doo|《叔比狗》（Scooby-Doo）}}（又译史酷比）中的{{wikipedia|Scooby-Doo (character)|叔比狗（Scooby-Doo）}}和{{wikipedia|Scrappy-Doo|小皮（Scrappy-Doo）}}。
+{{bestiary|Nerdy Slime|Cool Slime|Elder Slime|Clumsy Slime|Diva Slime|Surly Slime|Mystic Slime|Squire Slime}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|将[[{{tr|Sparkle Slime Balloon}}]]以物品形式丢入{{tr|Shimmer}}也能生成{{tr|Diva Slime}}。}}
+{{history|Desktop 1.4.4.6|{{tr|The Squire Slime}}现在也可以由下列类型的{{tr|slimes}}产生：{{tr|White Present Slime, Green Present Slime, Red Present Slime, Bunny Slime, and Yellow Present Slime}}。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Town Slimes}}

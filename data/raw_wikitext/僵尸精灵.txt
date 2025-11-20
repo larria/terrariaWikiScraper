@@ -1,0 +1,79 @@
+{{npc infobox
+| image = Zombie Elves.png
+| environment = Frost Moon
+| auto = 338
+| type = Undead Enemy
+| hardmode = yes
+| damage =
+| defense =
+| life =
+| knockback =
+|:group:start|会掉落以下 3 个物品之一&nbsp;{{source code ref|v=1.4.0.5|name=fmdrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon}}|----------
+| Elf Hat|1|0.17%
+| Elf Shirt|1|0.17%
+| Elf Pants|1|0.17%
+|:group:end|----------|-----------------
+| Heart|1|20%
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+
+'''{{tr|Zombie Elves}}'''是[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|enemies}}]]，是在[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间生成的基本的{{tr|fighter}}类{{tr|enemies}}。它们虽然相对容易抵挡，但依然能造成大量伤害。
+
+在{{tr|Frost Moon event}}期间打败{{tr|a Zombie Elf}}会加上 1 / {{expert|2}} / {{master|2.5}} 点点数。{{source code ref|v=1.4.4.9|method=Terraria.NPC.CheckProgressFrostMoon}}
+
+{{tr|Zombie Elf}}及其变体需要 100 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 338
+| image = Zombie Elf.gif
+| environment = Frost Moon
+}}
+{{npc infobox
+| auto = 339
+| image = Zombie Elf Beard.gif
+| environment = Frost Moon
+}}
+{{npc infobox
+| auto = 340
+| image = Zombie Elf Girl.gif
+| environment = Frost Moon
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 花絮 ==
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|在{{tr|Master Mode}}中每次击杀的{{tr|Frost Moon}}波次点数由 2 提升至 2.5。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2.4.1|现在能正确掉落{{tr|Elf vanity set}}。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Frost Moon Enemies
+| show-main=yes
+}}
+{{Master Template Characters
+| show-event=yes
+}}
+
+{{language info|en=Zombie Elf}}

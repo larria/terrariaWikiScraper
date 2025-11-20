@@ -1,0 +1,50 @@
+{{exclusive|1.3.4}}
+{{buff infobox
+| auto = 198
+| effects = 下次命中的{{tr|melee}}攻击伤害乘以 5
+| duration = {{duration|5}}（或直到{{tr|melee}}攻击击中目标）
+}}
+
+'''{{tr|Striking Moment}}'''是一种[[{{tr|buff}}]]，当装备有[[{{tr|Shields}}|{{tr|shield}}]][[{{tr|Accessories}}|{{tr|accessory}}]]的情况下手持[[{{tr|Brand of the Inferno}}]]或[[{{tr|Sergeant United Shield}}]]时在承受伤害之前按下{{key|open}}来成功地格挡[[{{tr|Enemies}}|{{tr|enemy}}]]的攻击后会得到。{{tr|buff}}激活时，用[[{{tr|Melee weapons}}|{{tr|melee weapon}}]]攻击{{tr|enemy}}会造成五倍于通常的伤害，此后此{{tr|buff}}会被移除。此加成可以用于任意{{tr|melee weapon}}。
+
+== 备注 ==
+* 对于能造成“近战击打”的{{tr|item}}（''见[[造成近战击打的物品列表]]获取完整列表''），如果在使用动画期间任何实体被{{tr|item}}本身击中，{{tr|the damage bonus}}会适用于所有这些实体。如果{{tr|item}}在击中时还能产生{{tr|projectiles}}（这包括[[{{tr|Muramasa}}]]、[[{{tr|Volcano}}]]、[[{{tr|Bladetongue}}]]、和[[{{tr|Bee Keeper}}]]），产生的{{tr|projectiles}}也会继承这一{{tr|damage bonus}}。
+* 对于通过{{tr|projectile}}造成伤害的{{tr|items}}，只有第一个被{{tr|projectile}}击中的实体会获得{{tr|damage bonus}}。这也包括用能造成“近战击打”且能发射{{tr|projectile}}的{{tr|item}}攻击，但在使用动画期间没有实体被{{tr|item}}本身击中的情况。
+* 下列{{tr|projectiles}}不会被此{{tr|buff}}影响，以防止滞留的{{tr|projectiles}}重复地触发{{tr|bonus}}。{{source code ref|v=1.4.4.9|field=Terraria.ID.ProjectileID.Sets&#46;DontApplyParryDamageBuff}}
+{{options/set|item|mode=table|nolink=y}}
+{| class="terraria lined"
+! colspan="2" | {{tr|Projectile}}
+! 受影响的{{tr|item}}
+|-
+| {{item|id=181|image={{getProjectileInfo|181|image}}|type=projectile}}
+| [[{{tr|Bee Keeper}}]]、[[{{tr|Hive-Five}}]]
+|-
+| {{item|id=566|image={{getProjectileInfo|566|image}}|type=projectile}}
+| {{tr|Bee Keeper}}、{{tr|Hive-Five}}（装备[[{{tr|Hive Pack}}]]）
+|-
+| {{item|id=321|image={{getProjectileInfo|321|image}}|type=projectile}}
+| [[{{tr|The Horseman's Blade}}]]
+|-
+| {{item|id=524|image={{getProjectileInfo|524|image}}|type=projectile}}
+| [[{{tr|Bladetongue}}]]
+|}{{options/reset|item}}
+
+== 小贴士 ==
+* 使用[[{{tr|Sergeant United Shield}}]]时，只要不扔出{{tr|shield}}，就并不需要{{tr|shield accessory}}就能格挡。否则，必须装备{{tr|shield accessory}}。
+
+== 历史 ==
+{{history|Desktop 1.4.2.1|修正了{{tr|tooltip}}错误地说增加 500% 伤害的问题，现在正确地说增加 400% 伤害（总共是 500%）。}}
+{{history|Desktop 1.4.0.1|不再使[[{{tr|The Horseman's Blade}}]]的{{tr|projectiles}}和其他命中时生成的{{tr|projectiles}}的伤害变为五倍。}}
+{{history|Desktop 1.3.4.1|修改{{tr|tooltip}}；原本是错误地说增加 300% 伤害，现在错误地说增加 500%。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|introduced=y|和{{tr|Desktop}} 1.3.4.1 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|和{{tr|Desktop 1.3.4.1}} 到{{tr|Desktop}} 1.4.0.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Striking Moment}}

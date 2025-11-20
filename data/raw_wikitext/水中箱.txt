@@ -1,0 +1,63 @@
+{{item infobox
+| type = Furniture / Storage
+| width = 2| height = 2
+| auto = 1298
+| tags = plunder 
+}}
+[[File:Water Chest underground.png|thumb|在{{tr|underground}}水塘中的{{tr|Water Chests}}]]
+
+'''{{tr|Water Chests}}'''是一种[[{{tr|chest}}]]，会出现在大于 250 格的[[{{tr|water}}]]塘中，在[[{{tr|Ocean}}]]中最常见，在[[{{tr|underground}}]]则少见地多，甚至在{{eil|Floating Lake|s}}也偶尔会出现。除了基于所在地的[[{{tr|Gold Chest}}#掉落|普通{{tr|chest}}{{tr|loot}}]]外，其中还会有只能在这些{{tr|chest}}中找到的特殊物品，如下所示。
+
+== 拾取物 ==
+{{flexstart|alignitems=top}}
+{{loot|title=@primary
+
+| Breathing Reed|1|<!--
+-->{{chance|9/40}} {{eicons|1.4.4|small=y}}<br/><!--
+-->{{chance|7/30}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Flipper|1|<!--
+-->{{chance|9/40}} {{eicons|1.4.4|small=y}}<br/><!--
+-->{{chance|7/30}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Trident|1|<!--
+-->{{chance|9/40}} {{eicons|1.4.4|small=y}}<br/><!--
+-->{{chance|7/30}} {{eicons|1.3.0.1|invert=y|small=y}}
+| Inner Tube|1|9/40
+| Water Walking Boots|1|<!--
+-->{{chance|1/10}} {{eicons|1.4.4|small=y}}<br/><!--
+-->{{chance|1/15}} {{eicons|1.4.0.1|invert=y|small=y}}
+|:custom::{{item|Beach Ball}}<!-- preventing cargo storage -->|1|{{chance|7/30}} {{eicons|1.3.0.1|invert=y|small=y}}
+
+}}
+
+{{loot|title=@secondary
+
+| Sandcastle Bucket|1|1/2
+| Shark Bait|1|1/2
+
+}}
+{{flexend}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Water Chest|expectedrows=1}}
+
+== 备注 ==
+* 无论生成在哪种{{tr|biome}}中，{{tr|Water Chests}}的可能掉落物都是一样的。
+** {{eil|Ocean cave}}中生成的{{tr|Water Chests}}内出现各种主要物品的几率是均等的。
+* {{tr|Water Chests}}唯一能在{{tr|water}}之外生成的时候是在[[{{tr|Secret world seeds}}|{{tr|secret world seed}}]]“[[{{tr|Secret world seeds}}#Not the bees|Not The Bees]]”中，在其中大部分{{tr|water}}都被替换成了[[{{tr|honey}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在会包含[[{{tr|Sandcastle Bucket}}]]、[[{{tr|Shark Bait}}]]、和[[{{tr|Inner Tube}}]]。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Trapped Water Chest}}]]。}}
+{{history|Desktop 1.2.3|放置的{{tr|storage items}}现在可以重命名了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Water Chest}}

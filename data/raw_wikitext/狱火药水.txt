@@ -1,0 +1,51 @@
+{{item infobox
+| auto = 2348
+| type = Potion
+| tags = loot
+}}
+[[File:Inferno Potion (demo).gif|thumb|{{tr|The Inferno Potion}}穿过{{tr|blocks}}伤害[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Inferno Potion}}'''是一个[[{{tr|Buff potions}}|{{tr|buff potion}}]]，使用后会给予'''{{tr|Inferno}}'''[[{{tr|buff}}]]。此{{tr|buff}}会在玩家周围施放一圈环形火焰，对范围内的所有[[{{tr|enemies}}]]每秒造成{{eicons|1.4.4}} 20 / {{eicons|1.4.4|invert=y}} 10 伤害，并施加 2 秒的{{eicons|1.4.4}}[[{{tr|Hellfire}}]] / {{eicons|1.4.4|invert=y}}[[{{tr|On Fire!}}]][[{{tr|Debuffs}}|{{tr|debuff}}]]，同时还会发光。不会对{{tr|Critters}}和其他{{tr|passive}} {{tr|NPC}} 造成伤害。{{potionlength}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Inferno Potion|expectedrows=1}}
+
+== 备注 ==
+* 免疫{{eicons|1.4.4}} [[{{tr|Hellfire}}]] / {{eicons|1.4.4|invert=y}} [[{{tr|On Fire!}}]]{{tr|debuff}}的{{tr|enemy}}也会免疫{{tr|Inferno Potion}}的火环伤害。
+* {{tr|Crafting}}该{{tr|potion}}需要[[{{tr|Hotline Fishing Hook}}]]、[[{{tr|Lavaproof Fishing Hook}}]]、或{{tr|lava critters}}，因为它所需的两种{{tr|fish}}{{tr|ingredients}}只能在[[{{tr|lava}}]]中抓到。
+* 在{{3DS version}}中，{{tr|inferno}}会在玩家进入[[{{tr|inventory}}]]的{{tr|armor}}页面时继续伤害{{tr|enemies}}。不过，{{tr|buff}}的持续时间仍然会降低。
+
+== 小贴士 ==
+* 尽管狱火环对大多数{{tr|Hardmode}}{{tr|enemies}}只能造成很低的{{tr|damage}}，它在与能发出可摧毁{{tr|projectile}}的{{tr|enemies}}战斗时很有用，因为它们会被火环轻松摧毁（例如，[[{{tr|Duke Fishron}}]]的[[{{tr|Detonating Bubble}}]]、某些[[{{tr|Caster AI}}]] {{tr|enemies}}的{{tr|projectiles}}和[[{{tr|Plantera}}]]的[[{{tr|Spore}}]]）。
+
+== 花絮 ==
+* 如果玩家在 [[{{tr|PvP}}]] 激活时死于{{tr|Inferno buff}}的火环，会显示独特的[[{{tr|death message}}]]：''“{{gameText|DeathText.Inferno|x_0=&lt;玩家名字&gt;}}”''
+
+== 图库 ==
+<gallery>
+File:Inferno AOE.jpg|使用{{tr|Inferno Potion}}时出现的火环。
+File:Inferno buff at night.png|{{tr|night}}时的火环。
+File:Inferno Ring.gif|火环的动画。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 30 提升至 9999。
+** {{tr|Damage}}由 10 提升至 20。
+** 现在会造成{{tr|Hellfire}}而非{{tr|On Fire!}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Item sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Inferno Potion}}

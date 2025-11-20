@@ -1,0 +1,44 @@
+{{item infobox
+| type = Furniture / storage
+| width = 2| height = 2
+| tags = buy / vendor:Merchant
+| auto = 346
+}}
+
+'''{{tr|Safe}}'''是一种便携式[[{{tr|storage item}}]]，有 40 个{{tr|slots}}可供存储{{tr|other items}}。{{tr|The Safe}}、[[{{tr|Piggy Bank}}]]、{{eil|Defender's Forge}}、和[[{{tr|Void Vault}}]]具有即使装有{{tr|items}}也可以被携带的特殊能力。在[[{{tr|Skeletron}}]]已被打败后，它可以在[[{{tr|Merchant}}]]处以 {{iteminfo|Safe|buy}} 的价格购买。
+
+{{tr|Safe}}在功能与{{tr|Piggy Bank}}相同，但除了可以放置在[[{{tr|platform}}]]与[[{{tr|furniture}}]]上之外，也可以直接放置在[[{{tr|Blocks}}]]上。
+
+== 与[[{{tr|Chest}}]]的不同之处 ==
+{{tr|The Safe}}（以及{{tr|Piggy Bank}}、{{tr|Defender's Forge}}和{{tr|Void Vault}}）功能与其他的{{tr|storage items}}相似，但有些重要的不同之处：
+* 在被同一个角色打开时，每个{{tr|Safe}}都储存着相同的物品，与它们放置在世界的哪个位置无关。
+* 购买多个{{tr|Safes}}不会给你带来更多的空间，但是能够让你在不同的地方访问{{tr|Safes}}。
+* {{tr|Safes}}能够在装有{{tr|item}}的情况下被拾起。这能够扩大角色[[{{tr|Inventory}}]]的格子数。它必须被放置才能添加或移除其中的{{tr|items}}，并可以用任意的[[{{tr|Pickaxe}}]]移除。
+* {{tr|Safe}}内的物品与角色数据而非{{tr|World}}数据一起保存。在不同世界、不同服务器中，里面的东西都是一样的。
+* {{tr|Safe}}中的物品是专属于每个玩家的，其他玩家不能使用你储存的物品。这能让玩家在允许盗窃的 [[{{tr|PvP}}|PvP 服务器]]中安全的储存物品。
+* 多人游戏时不同玩家可以使用同一个{{tr|Safe}}，每个玩家在使用{{tr|Safe}}时只会看到自己的物品。
+
+== 备注 ==
+* 储存在{{tr|Safe}}、[[{{tr|Piggy Bank}}]]、[[{{tr|Defender's Forge}}]]、或[[{{tr|Void Vault}}]]中的{{tr|Coins}}不会在玩家[[{{tr|death}}]]时掉落，即使相应的容器在死亡时在{{tr|character}}的{{tr|inventory}}中也不会。
+* 添加{{tr|The Safe}}的可能原因是，许多玩家都会抱怨在探索[[{{tr|Dungeon}}]]时会用光{{tr|inventory}}的空间。这可能可以解释{{tr|The Safe}}只能在击败[[{{tr|Skeletron}}]]后才能购买。
+* 储存在{{tr|Piggy Bank}}、{{tr|Safe}}、{{tr|Defender's Forge}}和{{tr|Void Vault}}中的钱币可以在从 [[{{tr|NPCs}}]] 处购物时使用。四个存储空间内的总钱数，会作为存款显示在 NPC {{tr|shop}}窗口的右侧。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在可以用{{tr|Characters}}收纳中的所有钱来购买物品——包括[[{{tr|inventory}}]]、[[{{tr|Piggy Bank}}]]、和[[{{tr|Safe}}]]中的钱。}}
+{{history|Desktop 1.2.4.1|右击打开{{tr|chest}}、[[{{tr|Piggy Bank}}]]或{{tr|Safe}}时，不再会从光标处的堆叠中选中一件{{tr|item}}。}}
+{{history|Desktop 1.2.3|{{tr|Piggy Bank and Safe}}现在在{{tr|Quick Stack}}时可以正确堆叠{{tr|coins}}。}}
+{{history|Desktop 1.2|
+** 花费由 {{gc|50}} 降低至 {{gc|20}}，卖出价值由 {{gc|10}} 降低至 {{gc|4}}。
+** {{tr|Storage slots}}由 20 格提升至 40 格。}} <!-- If 1.2 doesn't have 40 slots (which it should), move the increase to later patch, because 1.2.0.3.1 DOES have 40 slots in Safe. -->
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Safe}}

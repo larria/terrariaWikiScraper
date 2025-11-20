@@ -1,0 +1,44 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{item infobox
+| type = Miscellaneous
+| auto = 4765
+| damage = -1
+| damagetype = ranged
+| sound1 = Item 107.wav
+| soundcaption1 = 碰撞
+| tags = buy / vendor:Zoologist
+}}
+|[[File:Tree Globe (demo).gif|frame|right|在{{tr|Jungle grass}}上使用{{tr|Tree Globe}}。]]
+}}
+
+'''{{tr|Tree Globe}}'''是一种可投掷[[{{tr|consumable}}]]，在完成 50% 的[[{{tr|Bestiary}}]]（{{b entries|50%|entries}}）后可以在[[{{tr|Zoologist}}]]处以 {{iteminfo|Tree Globe|buy}} 的价格购买。在投掷{{tr|Tree Globe}}后，当前[[{{tr|biome}}]]的[[{{tr|trees}}]]会随机变更为另一种样式。
+
+== 备注 ==
+* {{tr|Tree Globes}}仅会在投掷到{{tr|biome}}[[{{tr|grass}}]]或[[{{tr|snow}}]]上时生效。
+** 如果在一个{{tr|biome}}向另一个不同{{tr|biome}}投掷，则不会变更树的样式。
+* 仅有的会被{{tr|Tree Globe}}影响的{{tr|biomes}}有[[{{tr|Forest}}]]、[[{{tr|Jungle}}]]、和[[{{tr|Snow biome}}]]，因为只有这些{{tr|biomes}}拥有可更改样式的{{tr|trees}}。
+* {{tr|Trees}}在[[{{tr|The Hallow}}]]中的{{tr|Trees}}不会被{{tr|Tree Globe}}影响，因为它们的样式会对应特定的{{tr|Hallow}}{{tr|backgrounds}}。因此，只能用[[{{tr|World Globe}}]]更改{{tr|Hallowed trees}}的样式。
+{{/tree styles}}
+* {{tr|Tree Globe}}在内部被视为是[[{{tr|ranged}}]]伤害{{tr|item}}，因此受益于[[{{tr|ammo conservation}}]]。但是，仅限于[[{{tr|armor}}]]{{tr|items}}所提供的{{tr|ammo conservation}}奖励，[[{{tr|Magic Quiver}}]]、[[{{tr|Ammo Box}}]]和[[{{tr|Ammo Reservation Potion}}]]对{{tr|Tree Globe}}不起作用。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck}}<!-- The usual, "actual" ammo conservation check in Terraria.Player.PickAmmo() that includes the Ammo Box and other items is skipped because that method is only called for items with useAmmo > 0, which is not the case for the Tree Globe. -->
+
+== 另见 ==
+* [[{{tr|World Globe}}]]
+* [[{{tr|Moon Globe}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.2|修复了[[{{tr|Fossil Pickaxe}}]]、{{tr|Tree Globe}}、和[[{{tr|World Globe}}]]会穿过{{tr|block}}一直下落的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Tree Globe}}

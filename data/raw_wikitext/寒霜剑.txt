@@ -1,0 +1,57 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 676
+| sound1 = Item 28.wav
+| soundcaption1 = 寒霜矢
+| sound2 = Item 27.wav
+| soundcaption2 = 寒霜矢碰撞
+| sound3 = MaxMana.wav
+| soundcaption3 = 射弹冷却结束{{eicons|1.4.4|invert=y|small=y}}
+| debuff = Frostbite / 4 {{tr|seconds}}
+| debuffchance = 100% {{note|paren=y|寒霜矢}} {{eicons|1.4.4|small=y}}
+| listcat = broadswords
+| tags = Drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Frostbrand (demo).gif|framed|{{tr|Frostbrand}}被用于攻击[[{{tr|Target Dummies}}]]。注意可穿透的{{tr|projectile}}和{{tr|debuff}}。]]
+
+'''{{tr|Frostbrand}}'''是一把[[{{tr|Hardmode}}]]中的[[{{tr|Sword|sword}}]]，在挥舞时偶尔会发射{{tr|Frost Bolt projectile}}，{{eicons|1.4.4}}可造成[[{{tr|Frostbite}}]][[{{tr|Debuffs|debuff}}]]。发射{{tr|Frost Bolt projectile}}时不消耗[[{{tr|ammunition}}]]或[[{{tr|mana}}]]，发出少量光线，伤害与{{tr|sword}}的{{tr|damage}}相同，不受重力影响，且能够穿透两次，在击中第三个{{tr|enemy}}或实体[[{{tr|Blocks|block}}]]时消散。{{tr|Frostbrand}}以 {{chance|19/60}} 的几率掉落自[[{{tr|Ice Mimic}}]]。
+
+{{modifier|melee}}
+
+== 备注 ==
+* {{tr|Frost Bolt}}{{tr|projectile}}有 {{duration|{{iteminfo|Frostbrand|useTime|raw=y}} ticks}}的冷却时间。
+* [[{{tr|Melee speed}}]]会对{{tr|Frost Bolt}}的速度产生影响，但不会改变其{{tr|cooldown}}时间。
+
+== 小贴士 ==
+* {{tr|Frostbrand}}是{{tr|Hardmode}}中一把相当强大的{{tr|sword}}，即使与[[{{tr|Excalibur}}]]相比也是如此：前者更容易获取（因为不必打败任何{{tr|Hardmode boss}}），还增加了远程功能。在某些场景下，它也可能比[[{{tr|Beam Sword}}]]更有用，因为尽管{{tr|Beam Sword}}造成了稍多一些的{{tr|damage}}，{{tr|Frostbrand}}的{{tr|projectile}}可以穿透{{tr|enemy}}，能够多次击中某些 {{tr|boss}}。
+
+== 花絮 ==
+* {{tr|Frostbrand}}的{{tr|projectile}}和魔法武器[[{{tr|Frost Staff}}]]发出的相同，但{{tr|Frost Staff}}会花费[[{{tr|mana}}]]、能快速自动开火、速度稍快、并且造成的{{tr|damage}}略少。
+* {{tr|Frostbrand}}在游戏[[《{{tr|Dungeon Defenders 2}}》]]中也作为武器出现。
+* {{tr|Frostbrand}}可以看作是{{tr|Hardmode}}版本的[[{{tr|Ice Blade}}]]，因为两把{{tr|sword}}都出现在{{tr|Ice biome}}中，外表看起来较为相似，并且两把{{tr|swords}}都可以发射蓝色的{{tr|projectile}}，且两次发射之间有一段短暂的{{tr|cooldown}}时间。
+
+== 另见 ==
+* {{dd2 link|Swords#Legendary|{{tr|Frostbrand}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|{{tr|Sprite updated.}}旧的{{tr|sprite}}是 [[File:Frostbrand (pre-1.4.4.9).png|link=]]。}}
+{{history|Desktop 1.4.4|
+** {{tr|Projectile}}冷却时间由 55 {{tr|frames}}降低至 30 {{tr|frames}}。
+** 不再在冷却中使用“滴答”的提示音。
+** {{tr|Projectile}}现在会造成{{tr|Frostbite}}。
+** 穿透数由 2 提升至 3。
+** {{tr|Projectile}}现在使用静态无敌帧，不再会与其他{{tr|piercing damage}}造成的无敌帧相互干扰。}}
+{{history|Desktop 1.3.0.1|现在能够{{tr|autoswing}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Frostbrand}}

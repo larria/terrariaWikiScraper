@@ -1,0 +1,34 @@
+<div class="ajaxHide">
+{{main|{{tr|Tooltips}}}}
+本页面列出了《[[{{tr|Terraria}}]]》中各种{{tr|item}}的装饰{{tr|tooltips}}。
+</div>
+{| class="terraria lined sortable"
+! colspan=2 style="width:150px" | {{tr|Item}} !! {{tr|Tooltip}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, name, image, itemid, tooltip
+|q?where= tooltip <> "" AND internalname <> "None"
+|q?groupBy=itemid
+|q?orderBy=itemid
+|q?limit = 2500
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 独有{{tr|tooltips}}列表 ==
+{| class="terraria lined sortable"
+! colspan=2 style="width:150px" | {{tr|Item}} !! {{tr|Tooltip}}
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, name, image, itemid, tooltip
+|q?where= tooltip <> "" AND itemid IS NOT NULL AND (internalname IS NULL or internalname="None") AND unobtainable IS NULL
+|q?groupBy=itemid
+|q?orderBy=itemid
+|q?limit = 100
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+{{category|Game mechanics}}
+
+{{language info|en=List of tooltips}}

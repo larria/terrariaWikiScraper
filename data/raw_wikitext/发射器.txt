@@ -1,0 +1,61 @@
+'''{{tr|Launchers}}'''是一类[[{{tr|Hardmode}}]][[{{tr|ranged weapon}}]]，可发射[[{{tr|rockets}}]]与其他相近的[[{{tr|ammunition}}]]。{{tr|launchers}}所使用的{{tr|ammo}}通常会在与{{tr|enemy}}或实体[[{{tr|block}}]]接触时爆炸，在爆炸范围内造成大量伤害。如果开火时不小心，可能会伤害到{{tr|player}}。所有的发射器都会受到[[{{tr|Shroomite Helmet}}]]的{{tr|damage bonus}}和其他{{tr|ranged bonuses}}。它们仅能在[[{{tr|Plantera}}]]后获得。
+__FORCETOC__<!-- tall tables on this page -->
+== 类型 ==
+{{weapon type count}}
+<!--
+
+These brief launcher descriptions unfortunately do not have space in the table below, but are kept here in case they are of use at a later time.
+-->{{#dplvar:set<!--
+-->|launchers-notes_Grenade Launcher|Shots are affected by gravity and bounce against blocks, exploding on contact or after a set time.<!--
+-->|launchers-notes_Rocket Launcher|Rockets fire straight and explode on contact.<!--
+-->|launchers-notes_Proximity Mine Launcher|Shots are affected by gravity, quickly rolling to a stop and turning invisible. They explode when enemies are near or after one minute.<!--
+-->|launchers-notes_Snowman Cannon|Rockets home in on enemies. Explosions never damage the user.<!--
+-->|launchers-notes_Electrosphere Launcher|Rocket explodes at the cursor, creating a damaging field. Fields cannot overlap. Explosions never damage blocks.<!--
+-->|launchers-notes_Celebration|Fires two rockets at the cost of one. Rockets explode after contacting a block or traveling a fixed distance. Explosions damage neither the user nor the surrounding blocks.<!--
+-->|launchers-notes_Stynger|Bolts explode on contact, shattering into explosive shards that also explode. Explosions do not damage blocks.<!--
+-->|launchers-notes_Jack 'O Lantern Launcher|Shots bounce wildly, exploding on contact or after a set time. Explosions damage neither blocks nor the user.<!--
+-->|launchers-notes_Nail Gun|Nails deal low impact damage, but stick into targets and explode after a delay.<!--
+-->}}<!--
+
+-->
+{| class="terraria sortable lined align-center"
+|-
+! rowspan=2 colspan=2 | {{tr|Name}}
+! colspan=2 | {{tr|Damage}}
+! rowspan=2 | {{tr|Velocity}}
+! rowspan=2 data-sort-type=number | {{tr|Use time}}
+! rowspan=2 data-sort-type=number | {{tr|Knockback}}
+! rowspan=2 | [[Critical strike chance|<abbr title="{{tr|Critical strike chance}}">{{tr|Crit}}</abbr>]]
+! rowspan=2 | [[File:Auto icon.png|16px|{{tr|Autoswing}}|link=]]
+! rowspan=2 | [[Hardmode|{{tr|Hardmode}}]]
+! rowspan=2 data-sort-type=number | {{tr|Rarity}}
+! rowspan=2 data-sort-type=number | {{tr|Sell}}
+! rowspan=2 class=unsortable | 来源
+|- style="line-height:1.1;"
+! 基础 !! 加上{{tr|ammo}}
+|-
+{{#invoke:CargoQuery|main
+|q?tables=Items
+|q?fields=_pageName, itemid, name, damage, velocity, usetime, knockback, critical, autoswing, hardmode, rare, sell
+|q?where={{#var:wtcount:where_total}}
+|q?groupBy=itemid
+|template=:{{BASEPAGENAME}}/row
+}}
+|}
+
+== 火箭 ==
+{{transclude|{{tr|Rockets}}#{{tr|Types}}}}
+
+=== 行为 ===
+一些{{tr|launchers}}可以给予{{tr|rockets}}非常规功效，包括将{{tr|rockets}}转变为有非常规功效的不同类型{{tr|projectiles}}。下表展示了各种{{tr|rocket}}的一些基本属性如何受各种使用{{tr|rocket}}的{{tr|launchers}}影响。其他关于这些改变是如何以及为什么发生的信息可以在{{tr|launchers}}各自单独的页面上找到。
+{{transclude|火箭/行为}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-ranged = yes
+}}
+
+[[Category:发射器| ]]
+[[Category:困难模式独有物品]]
+
+{{language info|en=Launchers}}

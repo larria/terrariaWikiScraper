@@ -1,0 +1,92 @@
+{{item infobox
+| image = Soul of Night.gif
+| auto = 521
+| listcat = souls{{!}}Night
+| tags = hardmode/loot
+}}
+{{drop infobox|style=clear:right}}
+{{for|收集{{tr|souls}}的攻略|指南:收割魂}}
+
+'''{{tr|Soul of Night}}'''是一种[[{{tr|Hardmode}}]][[{{tr|crafting material}}]]。它会由大部分在[[{{tr|Underground Corruption}}]]或[[{{tr|Underground Crimson}}]]（[[{{tr|Cavern}}]]{{tr|layer}}）中杀死的[[{{tr|enemies}}]]掉落，几率为 {{chance|1/5}}。这也包括不专属于此[[{{tr|Biomes}}]]的{{tr|enemy}}（例如[[{{tr|Granite Elemental}}]]）。对于{{tr|enemies}}掉落{{tr|souls}}的细节，参见[[#{{tr|Notes}}|{{tr|Notes}}]]。
+
+要制作所有{{tr|items}}（[[{{tr|Boss}}]] {{tr|summoning items}}和{{eil|Key of Night}}除外），需要<!--
+1.4.1:		--> {{eicons|1.4.1}} 134 /<!--
+pre-1.3.0.1:	--> {{eicons|1.3.0.1|invert=y}} 89
+个{{tr|Soul of Night}}。制作每种 {{tr|Boss-summoning items}}各一个和一个{{tr|Key of Night}}额外需要 {{eicons|Suspicious Looking Skull|invert=y}} 24 / {{eicons|Suspicious Looking Skull}} 14 个{{tr|Soul of Night}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Soul of Night|expectedrows=22}}
+
+== 备注 ==
+* {{tr|Soul of Night}}的掉落条件如下：{{source code ref|v=1.4.4.9|method=Terraria.Content.ItemDropRules.Conditions.SoulOfWhateverConditionCanDrop}}{{source code ref|v=1.3.5.3|old=y|method=Terraria.NPC.NPCLoot}}
+** {{tr|The world}}在[[{{tr|Hardmode}}]]中。
+** 玩家在杀死{{tr|enemies}}时位于[[{{tr|Cavern}}]]{{tr|layer}}或更下方的一种{{tr|Corruption}}/{{tr|Crimson biome}}中。
+*** 在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中，玩家只需要位于一种{{tr|Corruption}}/{{tr|Crimson biome}}中。
+** {{tr|The enemy}}的{{tr|health}}大于 1（即不是[[:Category:{{tr|Spell AI NPCs}}|{{tr|spell}}]]、[[{{tr|Fungi Spore}}]]、[[{{tr|Plantera}}|{{tr|Spore}}]]，等等）。
+** {{tr|The enemy}}至少掉落 {{cc|1}}（即[[{{tr|Statue}}]]生成的{{tr|enemies}}、{{tr|Hardmode}}期间的[[{{tr|Meteor Head}}]]、{{tr|boss}} {{tr|minions}}等等{{tr|enemy}}都不会掉落{{tr|souls}}）。
+** {{tr|The enemy}}不是 [[{{tr|Bosses}}]]、有翅膀的[[{{tr|Slimer}}]]、{{eicons|1.4.0.1}}和特定的[[{{tr|slimes}}]]：{{#arraydefine:slimes|1,-3,-4,-5,-6,-7,-8,-9,-10,535|,}}
+{{collapse top|无法掉落{{tr|souls}}的{{tr|slimes}}列表}}
+{{itemlist/start|width=20em}}
+{{#arrayprint:slimes|
+|@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@}}}}}}
+}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+== 小贴士 ==
+* {{eicons|1.4.0.1|invert=y}}一个获取{{tr|Soul of Night}}的简单方式就是去{{tr|Underground Corruption}}/{{tr|Crimson}}用[[{{tr|Slime Crown}}]]召唤[[{{tr|King Slime}}]]。杀死它召唤的[[{{tr|Blue Slime}}]]有几率掉落{{tr|Soul of Night}}（这个方法对于刷 [[{{tr|Soul of Light}}]]同时适用）。
+
+== 花絮 ==
+* 虽然其{{tr|tooltip}}为''{{itemTooltip|521}}''，{{tr|Soul of Night}}可以由非专属于[[{{tr|Underground Corruption}}]]或[[{{tr|Underground Crimson}}]]的{{tr|enemies}}掉落。
+
+== 另见 ==
+* [[{{tr|Soul of Light}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Decay Chamber}}]]和[[{{tr|Flesh Cloning Vat}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 特定{{tr|Slime}}不再掉落{{tr|Souls of Night}}。
+** 现在用于制作[[{{tr|Soul of Night in a Bottle}}]]和[[{{tr|Cool Whip}}]]。
+** {{tr|expert mode}}，不再有额外掉落判定。}}
+{{history|Desktop 1.3.3|现在用于制作[[{{tr|Onyx Blaster}}]]和[[{{tr|Spirit Flame}}]]。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Logic Sensor (Night)}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated}}。旧{{tr|sprite}}是 [[File:Soul of Night (old).png]]。
+** [[{{tr|Expert Mode}}]]{{tr|worlds}}中的{{tr|Drop rate}}提升。
+** 不再用于制作[[{{tr|Neptune's Shell}}]]。
+** 现在用于制作[[{{tr|Key of Night}}]]。}}
+{{history|Desktop 1.2|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。
+** 现在用于制作[[{{tr|Golden Shower}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** {{tr|Expert Mode}}{{tr|worlds}}中的{{tr|Drop rate}}提升。}}
+{{history|Console 1.02|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.0.1 一致。
+** {{tr|Expert Mode}}{{tr|worlds}}中的{{tr|Drop rate}}提升。}}
+{{history|Mobile 1.2.6508|
+** {{tr|Drop rate}}由 {{chance|1/7}} 提升至 {{chance|1/5}}。
+** {{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Mobile 1.1.5536|现在可以获取。}}
+{{history|Mobile 1.1.8|{{tr|Introduced}}，但{{tr|unobtainable}}。}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Souls}}
+{{Master Template Consumables
+| show-drop = yes
+}}
+
+{{language info|en=Soul of Night}}

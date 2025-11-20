@@ -1,0 +1,61 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4267
+| type = Furniture / Storage
+| width = 2
+| height = 2
+| tags = plunder
+}}
+{{distinguish|{{tr|Desert Chest}}}}
+
+'''{{tr|Sandstone Chest}}'''是一种能在[[{{tr|Underground Desert}}]]找到的[[{{tr|storage item}}]]。它们通常可以在[[{{tr|Underground Cabin}}]]中发现，但也可能较少见地自己生成。{{tr|Sandstone Chest}}也可以被制作。
+
+== 掉落 ==
+每个自然生成的{{tr|Sandstone Chest}}都总是会包含一件主要{{tr|item}}和 1-2 件次要物品。除了此处列出的这些物品外其中还可能有一些常见物品，取决于{{tr|chest}}所处高度：[[{{tr|Gold Chest}}#{{tr|Underground}}|{{tr|Underground}}]]或[[{{tr|Gold Chest}}#{{tr|Cavern}}|{{tr|Caverns}}]]。
+
+{{flexstart|alignitems=top|style=gap:var(--layout-gap)}}
+{{flexstart|item}}
+{{loot|title=@primary
+|:group:start||
+  | Magic Conch|1|1/4
+  | Snake Charmer's Flute|1|1/4
+  | Ancient Chisel|1|1/4
+  | Dunerider Boots|1|1/4
+|:group:end|-----------------|-
+|:group:start||
+  | Storm Spear|1|1/3
+  | Thunder Zapper|1|1/3
+  | Bast Statue|1|1/3
+|:group:end|-----------------|-
+}}
+{{flexend|item}}
+{{flexstart|item}}
+{{loot|title=@secondary
+  | Desert Minecart|1|1/15
+  | Encumbering Stone|1|1/7
+}}
+{{flexend|item}}{{flexend}}
+* {{tr|biome}}顶部 4/7 的{{tr|chest}}会使用主要{{tr|loot}}表的第一部分，{{tr|biome}}底部 3/7 的{{tr|chest}}会使用第二部分。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Sandstone Chest|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Sandstone Chest|expectedrows=1}}
+
+== 备注 ==
+* 自然生成的{{tr|Sandstone Chest}}永远不会生成在能够包含[[{{tr|Shadow Chest}}]]中普通物品的海拔高度。
+* 自然生成的{{tr|Sandstone Chest}}会包含[[{{tr|Scarab Bomb}}]]而不是[[{{tr|Bomb}}]]，但是它们所包含的[[{{tr|torch}}]]是普通的{{tr|torch}}而不是{{tr|biome-specific}}[[{{tr|Desert Torch}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Sandstone Chest}}

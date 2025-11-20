@@ -1,0 +1,32 @@
+{{item infobox
+| type = Potion
+| auto = 289
+| buffduration = {{etext|@@@@|e=1.4.0.1|small=y}}<br/>{{etext|{{duration|300}}|e=1.4.0.1|invert=y|small=y}}
+| tags = loot
+}}
+
+'''{{tr|Regeneration Potion}}'''是种[[{{tr|buff potion}}]]，使用后能给予'''{{tr|Regeneration}}'''[[{{tr|buff}}]]。{{potionlength|{{etext|t={{iteminfo|Regeneration Potion|buffduration}}|e=1.4.0.1}} / {{etext|t={{duration|300}}|e=1.4.0.1|invert=y}}}}
+
+此{{tr|buff}}总共能恢复 {{etext|t=960 {{tr|health}}|e=1.4.0.1}} / {{etext|t=600 {{tr|health}}|e=1.4.0.1|invert=y}}（每秒 2 生命值）。{{tr|The buff}}的效果可以与[[{{tr|Band of Regeneration}}]]的叠加。该{{tr|buff}}理论上等价于装备 {{etext|t=2|e=1.4.1}} / {{etext|t=4|e=1.4.1|invert=y}} 个{{tr|Bands of Regeneration}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Regeneration Potion|expectedrows=1}}
+
+== 小贴士 ==
+* {{tr|Regeneration Potion}}在长时间战斗中非常有用，例如对付[[{{tr|Goblin Army}}]]、[[{{tr|Pirate Invasion}}]]或 [[{{tr|Boss}}]]。除了增加[[{{tr|Mushroom}}]]的治疗潜力外，它使用的{{tr|ingredients}}都是很常见且易于找到的，使其易于生产。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Duration}}由 5 {{tr|minutes}}提升至 8 {{tr|minutes}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Regeneration Potion}}

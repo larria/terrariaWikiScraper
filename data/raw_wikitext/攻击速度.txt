@@ -1,0 +1,245 @@
+{{distinguish|Mining speed}}
+
+《{{tr|Terraria}}》中的'''{{tr|Attack speed}}'''是指[[{{tr|weapon}}]]的攻击频率。虽然许多[[{{tr|modifiers}}]]和效果都指出会改变{{tr|attack speed}}或{{tr|melee speed}}，但{{tr|attack speed}}并不是一个游戏内属性，它是由其倒数——[[{{tr|use time}}]]决定的。{{tr|use time}}是物品挥舞（或攻击）时所需消耗的{{tr|ticks}}{{tick}}。若{{tr|use time}}提高，{{tr|attack speed}}就会降低，反之亦然。例如，具有 30 {{tr|use time}}的武器的{{tr|attack speed}}要慢于具有 10 {{tr|use time}}的武器（或开火速率更低）。因此，任何{{tr|attack speed}}加成实际上都会作为[[{{tr|Use time}}#计算|{{tr|use time}}公式]]中的一个变量。然而，如下方所示，对于许多{{tr|melee weapons}}，{{tr|attack speed}}的改变（因而，也改变{{tr|use time}}）会具有除了改变{{tr|use time}}以外的作用。 
+
+虽然几乎所有{{tr|weapons}}都能获得影响{{tr|attack speed}}的{{tr|modifiers}}（如{{tr|Quick or Legendary}}），{{tr|accessories}}目前只能提供{{tr|melee speed bonus}}。
+
+== 影响 ==
+{{tr|Melee speed bonus}}会对不同类型的[[{{tr|melee weapons}}]]和{{eil|whips}}以不同的方式起作用。对于大多数游戏末期的武器，它并不会提高 {{DPS}}，因为其中大多数都属于以下类别之一：
+
+=== 射弹近战武器 ===
+==== 射弹剑 ====
+对于{{tr|projectile swords}}，{{tr|melee speed}}主要影响{{tr|sword}}本身的实际挥舞动画。它也会影响其{{tr|projectiles}}的[[{{tr|velocity}}]]，等效地让{{tr|projectiles}}能触及更远，或更容易在远距离击中目标。它也会轻微影响{{tr|projectile}}的开火速率，且这一加成的效果各个武器间均有不同。
+
+在{{eversions|1.4.4}}中，除了{{tr|velocity}}提高以外，[[{{tr|Blade of Grass}}]]、[[{{tr|Night's Edge}}]]、[[{{tr|True Night's Edge}}]]和[[{{tr|Terra Blade}}]]每次挥舞时都会发射其{{tr|projectile}}，使得{{tr|melee speed bonuses}}在这些武器上获益更高。
+
+==== 仅射弹 ====
+对于只发射{{tr|projectiles}}的{{tr|melee weapons}}（包括{{eil|Shadowflame Knife}}、[[{{tr|Scourge of the Corruptor}}]]、[[{{tr|Vampire Knives}}]]、和{{eil|Daybreak}}），{{tr|melee speed}}只会提高其{{tr|projectiles}}的{{tr|velocity}}，让它们更容易在远距离击中目标。
+
+=== 悠悠球 ===
+{{tr|Melee speed bonuses}}会增加[[{{tr|Yoyo}}]]{{tr|string}}的长度和{{tr|velocity}}而非攻击速率。这在{{tr|yoyos}}很短、难以击中 {{tr|bosses}} 的早期，或者需要玩家与其保持距离的 {{tr|bosses}} 的情况下很有用。{{tr|yoyo}}{{tr|string}}的长度的具体计算为：<code>4÷(1+3×(1÷{{tr|melee speed}}))</code>，其中{{tr|melee speed}}在没有加成的情况下为 <code>1.0</code>。因此，如果玩家能通过加成来获得 2 倍{{tr|melee speed}}，{{tr|yoyo string}}会加长 60%。这个加长倍数在[[{{tr|String}}]]或[[{{tr|Yoyo Bag}}]]的效果之后计算。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_099_2}}
+
+=== 连枷 ===
+{{tr|melee speed}}加成会提高丢出和发射的[[{{tr|flails}}]]的{{tr|velocity}}。作为结果，它们等效地能触及更远，或者更频繁地击中，使得它们应对飞行目标的表现更好。
+
+{{eicons|1.4.0.1}} 有{{tr|melee speed}}加成时，丢出类{{tr|flails}}不会在按下 {{key|use}} 按键时更频繁地攻击。
+
+=== 矛 ===
+[[{{tr|Spears}}]]在有{{tr|melee speed}}加成时攻击地更快。它们也略微能触及更长距离，但这一提升通常可忽略不计。
+
+对于在攻击时产生{{tr|projectiles}}的{{tr|spears}}（[[{{tr|Mushroom Spear}}]]、[[{{tr|Chlorophyte Partisan}}]]、[[{{tr|North Pole}}]]、{{eil|Storm Spear}}、以及 {{eicons|1.4.4}} [[{{tr|The Rotted Fork}}]]、[[{{tr|Dark Lance}}]]、和[[{{tr|Gungnir}}]]），{{tr|melee speed}}会提高{{tr|projectiles}}的开火频率和{{tr|velocity}}，使得{{tr|projectiles}}飞行更远。
+
+=== 回旋镖 ===
+{{tr|Boomerang}}在有{{tr|melee speed}}加成时会提高{{tr|velocity}}，使得它们飞行更远。
+
+=== 其他近战武器 ===
+所有这些武器都是{{eversions|1.3.0.1|short}}独有的。
+
+对于[[{{tr|Terragrim}}]]、[[{{tr|Arkhalis}}]]、[[{{tr|Jousting Lance}}]]、[[{{tr|Hallowed Jousting Lance}}]]、[[{{tr|Shadow Jousting Lance}}]]、[[{{tr|Sleepy Octopod}}]]、[[{{tr|Starlight}}]]、[[{{tr|Sky Dragon's Fury}}]]的 {{key|use}} 按键攻击、[[{{tr|Solar Eruption}}]]、和[[{{tr|Zenith}}]]，{{tr|melee speed}}没有效果。不过，{{tr|Zenith}}在受到{{tr|melee speed}}影响时会具有一个视觉上的改变：每次攻击所召唤出的{{tr|sword}}的数量会在高{{tr|melee speed}}下降低。
+
+对于[[{{tr|Sky Dragon's Fury}}]]的 {{key|open}} 按键攻击，{{tr|melee speed}}会提高开火频率和{{tr|projectile}}的{{tr|velocity}}。
+
+=== 鞭 {{eicons|Whips}} ===
+虽然造成的是{{tr|summon damage}}，[[{{tr|whips}}]]也受到{{tr|melee speed}}影响。这会让它们更快地攻击。
+
+== 增强装备 ==
+=== 配饰 ===
+{| class="terraria sortable"
+! {{tr|Item}} !! {{tr|Attack speed bonus}}<!--
+
+items with a normal attack speed bonus:
+
+-->{{#lstmap:{{#cargo_query:tables=Items<!--
+	-->|fields=TRIM(itemid)<!-- TRIM() trick: treat this field as plain text.
+	-->|where=itemid IN ({{equipinfo/list|where=meleeSpeed>0 AND skyStoneEffects IS NULL AND wolfAcc IS NULL|sep=,}}) AND type HOLDS "accessory"<!--
+	-->|group by=itemid|no html<!--
+	-->|delimiter=,<!--
+-->}}|,|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{equipinfo|@@@@|meleeSpeed}}
+</esc>|}}<!--
+
+items with an attack speed bonus from Sun/Moon Stone:
+
+-->{{#vardefine:meleeSpeed|{{percent|{{#cargo_query:tables=Equipinfo|fields=meleeSpeed<!--
+	-->|where=itemid IS NULL AND skyStoneEffects IS NOT NULL<!--
+-->|delimiter=|no html}}}}}}<!--
+-->{{#lstmap:{{#cargo_query:tables=Items<!--
+	-->|fields=TRIM(itemid)<!--
+	-->|where=itemid IN ({{equipinfo/list|where=skyStoneEffects IS NOT NULL AND wolfAcc IS NULL|sep=,}}) AND type HOLDS "accessory"<!--
+	-->|group by=itemid|no html<!--
+	-->|delimiter=,<!--
+-->}}|,|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{#var:meleeSpeed}}
+</esc>|}}<!--
+
+items with an attack speed bonus from Werewolf buff:
+
+-->{{#vardefine:meleeSpeed|{{percent|{{#cargo_query:tables=Equipinfo|fields=meleeSpeed<!--
+	-->|where=itemid IS NULL AND wolfAcc IS NOT NULL<!--
+-->|delimiter=|no html}}}}}}<!--
+-->{{#lstmap:{{#cargo_query:tables=Items<!--
+	-->|fields=TRIM(itemid)<!--
+	-->|where=itemid IN ({{equipinfo/list|where=skyStoneEffects IS NULL AND wolfAcc IS NOT NULL|sep=,}}) AND type HOLDS "accessory"<!--
+	-->|group by=itemid|no html<!--
+	-->|delimiter=,<!--
+-->}}|,|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{#var:meleeSpeed}}
+</esc>|}}<!--
+
+items with an attack speed bonus from Sun/Moon Stone and Werewolf buff
+
+-->{{#vardefine:meleeSpeed|{{percent|{{#cargo_query:tables=Equipinfo|fields=meleeSpeed<!--
+	-->|where=itemid IS NULL AND (skyStoneEffects IS NOT NULL OR wolfAcc IS NOT NULL)<!--
+-->|delimiter=|no html}}}}}}<!--
+-->{{#lstmap:{{#cargo_query:tables=Items<!--
+	-->|fields=TRIM(itemid)<!--
+	-->|where=itemid IN ({{equipinfo/list|where=skyStoneEffects IS NOT NULL AND wolfAcc IS NOT NULL|sep=,}}) AND type HOLDS "accessory"<!--
+	-->|group by=itemid|no html<!--
+	-->|delimiter=,<!--
+-->}}|,|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{#var:meleeSpeed}}
+</esc>|}}
+|}
+
+=== {{tr|Armor}} ===
+{| class="terraria"
+! 物品 !! 攻击速度增幅
+{{#lstmap:{{#cargo_query:tables=Items|fields=TRIM(itemid)|where=itemid IN ({{equipinfo/list|meleeSpeed|sep=,}}) AND type HOLDS "armor"|order by=itemid|delimiter=,|no html}}|,|@@@@|<esc>
+|-
+| {{item|id=@@@@|showid=n}} || {{equipinfo|@@@@|meleeSpeed}}
+</esc>|}}
+|-
+| {{item|Cobalt armor|image=Cobalt armor Helmet.png|note=（用{{tr|Cobalt Helmet}}）}} || 15%
+|-
+| {{item|Adamantite armor|image=Adamantite armor Helmet.png|note=（用{{tr|Adamantite Helmet}}）}} || 20%
+|-
+| {{item|Beetle armor|image=Beetle armor Scale Mail.png|note=（用{{tr|Beetle Scale Mail}}）}} || 最高 30%
+|}
+
+== 备注 ==
+* {{eicons|1.4.0.1}} 最高（{{tr|melee}}）攻击速度的是 +158.1%，用[[{{tr|Monk's Bushy Brow Bald Cap}}]]（20%）、[[{{tr|Shinobi Infiltrator's Torso}}]]（20%）、[[{{tr|Solar Flare Leggings}}]]（15%）、[[{{tr|Exquisitely Stuffed}}]]（{{tr|buff}}）（10%）、[[{{tr|Tipsy}}]]（{{tr|buff}}）（10%）、以及五个{{tr|accessories}}：[[{{tr|Feral Claws}}]]（12%）、[[{{tr|Power Glove}}]]（12%）、[[{{tr|Mechanical Glove}}]]（12%）、[[{{tr|Celestial Shell}}]]（在{{tr|night}}是 15.1%）和[[{{tr|Berserker's Glove}}]]（12%），每个都重铸成[[{{tr|Violent}}]]（20%）。在[[{{tr|Expert Mode}}]]中可以戴上{{tr|Violent}}[[{{tr|Fire Gauntlet}}]]额外得到 16%，总共为 +174.1%；在[[{{tr|Master Mode}}]]中可以再加一个{{tr|Violent accessory}}多获得 4%，总共达到 +178.1%。
+* 各种{{tr|tools}}的[[{{tr|Mining speed}}]]不受到{{tr|melee speed bonuses}}的影响，它只会受到专门的{{tr|mining speed bonuses}}（如[[{{tr|Mining Potion}}]]和[[{{tr|Mining armor}}]]）和由{{tr|tool}}本身的[[{{tr|modifier}}]]提供的{{tr|speed bonuses}}（最好的为轻）影响。
+* 当处理{{tr|attack speed}}时，应当考虑{{tr|Enemies}}的{{tr|invincibility frames}}。一般来说，无穿透的{{tr|projectiles}}是不造成无敌时间的，而那些有穿透或爆炸效果的{{tr|projectiles}}则不然。这一时间通常是 1/6 秒（10 {{tr|tick}}），但也有一些例外，从 5 {{tr|tick}}到 20 {{tr|tick}}不等。
+* 以下{{tr|melee damage projectile}}的{{tr|velocity}}无法直接或间接受{{tr|melee speed}}影响：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot|field=Terraria.ID.ProjectileID.Sets&#46;NoMeleeSpeedVelocityScaling}}<!--
+
+-->{{#arraydefine:noEffectList|57,58,59,60,61,62,107,131,181,213,214,216,217,219,220,223,224,248,252,307,321,344,369,427,428,429,430,431,432,445,484,504,509,524,566,595,609,610,697,698,699,700,707,708,735,857,877,878,879,907,927,928,933,971,972,973,974,975,977,978,982,983,984,985,997|,}}<!--
+
+-->{{#vardefine:source_57|{{eil|Cobalt Chainsaw}}}}<!--
+-->{{#vardefine:source_58|{{eil|Mythril Chainsaw}}}}<!--
+-->{{#vardefine:source_59|{{eil|Cobalt Drill}}}}<!--
+-->{{#vardefine:source_60|{{eil|Mythril Drill}}}}<!--
+-->{{#vardefine:source_61|{{eil|Adamantite Chainsaw}}}}<!--
+-->{{#vardefine:source_62|{{eil|Adamantite Drill}}}}<!--
+-->{{#vardefine:source_107|{{eil|Drax}}}}<!--
+-->{{#vardefine:source_131|{{eil|Mushroom Spear}}、{{eil|Hammush}}}}<!--
+-->{{#vardefine:source_181|{{eil|Bee Keeper}}、{{eil|Hive-Five}}}}<!--
+-->{{#vardefine:source_213|{{eil|Palladium Drill}}}}<!--
+-->{{#vardefine:source_214|{{eil|Palladium Chainsaw}}}}<!--
+-->{{#vardefine:source_216|{{eil|Orichalcum Drill}}}}<!--
+-->{{#vardefine:source_217|{{eil|Orichalcum Chainsaw}}}}<!--
+-->{{#vardefine:source_219|{{eil|Titanium Drill}}}}<!--
+-->{{#vardefine:source_220|{{eil|Titanium Chainsaw}}}}<!--
+-->{{#vardefine:source_223|{{eil|Chlorophyte Drill}}}}<!--
+-->{{#vardefine:source_224|{{eil|Chlorophyte Chainsaw}}}}<!--
+-->{{#vardefine:source_248|{{eil|Flower Pow}}}}<!--
+-->{{#vardefine:source_252|{{eil|Chlorophyte Jackhammer}}}}<!--
+-->{{#vardefine:source_307|{{eil|Scourge of the Corruptor}}}}<!--
+-->{{#vardefine:source_321|{{eil|The Horseman's Blade}}}}<!--
+-->{{#vardefine:source_344|{{eil|North Pole}}}}<!--
+-->{{#vardefine:source_369|{{eil|Sawtooth Shark}}}}<!--
+-->{{#vardefine:source_427|{{eil|Vortex Chainsaw}}}}<!--
+-->{{#vardefine:source_428|{{eil|Vortex Drill}}}}<!--
+-->{{#vardefine:source_429|{{eil|Nebula Chainsaw}}}}<!--
+-->{{#vardefine:source_430|{{eil|Nebula Drill}}}}<!--
+-->{{#vardefine:source_431|{{eil|Solar Flare Chainsaw}}}}<!--
+-->{{#vardefine:source_432|{{eil|Solar Flare Drill}}}}<!--
+-->{{#vardefine:source_445|{{eil|Laser Drill}}}}<!--
+-->{{#vardefine:source_484|{{eil|Seedler}}}}<!--
+-->{{#vardefine:source_504|{{eil|Butcher's Chainsaw}}}}<!--
+-->{{#vardefine:source_509|{{eil|Butcher's Chainsaw}}}}<!--
+-->{{#vardefine:source_524|{{eil|Bladetongue}}}}<!--
+-->{{#vardefine:source_566|{{eil|Bee Keeper}}、{{eil|Hive-Five}}（装备{{eil|Hive Pack}}）}}<!--
+-->{{#vardefine:source_595|{{eil|The Arkhalis}}}}<!--
+-->{{#vardefine:source_609|{{eil|Stardust Drill}}}}<!--
+-->{{#vardefine:source_610|{{eil|Stardust Chainsaw}}}}<!--
+-->{{#vardefine:source_697|{{eil|Sleepy Octopod}}}}<!--
+-->{{#vardefine:source_698|{{eil|Sleepy Octopod}}}}<!--
+-->{{#vardefine:source_699|{{eil|Ghastly Glaive}}}}<!--
+-->{{#vardefine:source_700|{{eil|Ghastly Glaive}}}}<!--
+-->{{#vardefine:source_707|{{eil|Sky Dragon's Fury}}}}<!--
+-->{{#vardefine:source_708|{{eil|Sky Dragon's Fury}}}}<!--
+-->{{#vardefine:source_735|{{eil|Terragrim}}}}<!--
+-->{{#vardefine:source_857|{{eil|First Fractal}}}}<!--
+-->{{#vardefine:source_877|{{eil|Jousting Lance}}}}<!--
+-->{{#vardefine:source_878|{{eil|Shadow Jousting Lance}}}}<!--
+-->{{#vardefine:source_879|{{eil|Hallowed Jousting Lance}}}}<!--
+-->{{#vardefine:source_907|{{eil|Christmas Tree Sword}}}}<!--
+-->{{#vardefine:source_927|{{eil|Starlight}}}}<!--
+-->{{#vardefine:source_928|{{eil|Drippler Crippler}}}}<!--
+-->{{#vardefine:source_933|{{eil|Zenith}}}}<!--
+-->{{#vardefine:source_971|{{eil|Tentacle Spike}}}}<!--
+-->{{#vardefine:source_972|{{eil|Night's Edge}}、{{eil|True Night's Edge}}}}<!--
+-->{{#vardefine:source_973|{{eil|True Night's Edge}}}}<!--
+-->{{#vardefine:source_974|{{eil|Light's Bane}}}}<!--
+-->{{#vardefine:source_975|{{eil|Blood Butcherer}}}}<!--
+-->{{#vardefine:source_977|{{eil|Muramasa}}}}<!--
+-->{{#vardefine:source_978|{{eil|Volcano}}}}<!--
+-->{{#vardefine:source_982|{{eil|Excalibur}}、{{eil|True Excalibur}}}}<!--
+-->{{#vardefine:source_983|{{eil|True Excalibur}}}}<!--
+-->{{#vardefine:source_984|{{eil|Terra Blade}}}}<!--
+-->{{#vardefine:source_985|{{eil|Terra Blade}}}}<!--
+-->{{#vardefine:source_997|{{eil|The Horseman's Blade}}}}<!--
+- ->{{options/set|item|icons=no|mode=table|icons=no|nolink=y|maxsize=60px|class=block aligncenter}}<!--
+-->{{flexstart}}<!-- this flexbox ensures that the table is displayed next to the {{item infobox}} on wider screens (instead of below it) -->
+{| class="terraria sortable mw-collapsible mw-collapsed" style="width:100%"
+|-
+! colspan=4 | {{tr|Projectile}}
+|-
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]] !! 图像 !! {{tr|Name}} !! {{tr|Source}}
+{{#arrayprint:noEffectList|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]]</td>
+<td>{{projectileinfo|@@@@|name}}</td>
+<td>{{#var:source_@@@@|{{na}}}}</td>
+</tr>
+}}
+|}<!--{{options/reset|item}}-->
+{{flexend}}
+* 以下{{tr|melee damage projectile}}的{{tr|velocity}}无法直接或间接受{{tr|melee speed}}影响，但{{tr|melee speed}}仍有其他影响：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot|field=Terraria.ID.ProjectileID.Sets&#46;NoMeleeSpeedVelocityScaling}}<!--
+
+-->{{#arraydefine:otherEffectList|699,708|,}}<!--
+
+-->{{#vardefine:source_699|{{eil|Ghastly Glaive}}}}<!--
+-->{{#vardefine:source_708|{{eil|Sky Dragon's Fury}}}}<!--
+-->{{#vardefine:note_699|提高挥舞速率}}<!--
+-->{{#vardefine:note_708|提高挥舞速率并相应提高开火频率，提高发射{{tr|projectile}}的{{tr|velocity}}}}<!--
+- ->{{options/set|item|icons=no|mode=table|icons=no|nolink=y|maxsize=60px|class=block aligncenter}}<!--
+-->{{flexstart}}<!-- this flexbox ensures that the table is displayed next to the {{item infobox}} on wider screens (instead of below it) -->
+{| class="terraria sortable mw-collapsible mw-collapsed" style="width:100%"
+|-
+! colspan=5 | {{tr|Projectile}}
+|-
+! [[{{tr|Projectile IDs}}|{{tr|ID}}]] !! 图像 !! {{tr|Name}} !! {{tr|Source}} !! {{tr|Notes}}
+{{#arrayprint:otherEffectList|
+|@@@@|<tr>
+<td>@@@@</td>
+<td>[[File:{{projectileinfo|@@@@|image}}|link=]]</td>
+<td>{{projectileinfo|@@@@|name}}</td>
+<td>{{#var:source_@@@@|{{na}}}}</td>
+<td>{{#var:note_@@@@|{{na}}}}</td>
+</tr>
+}}
+|}<!--{{options/reset|item}}-->
+{{flexend}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Attack speed}}

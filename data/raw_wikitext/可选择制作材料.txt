@@ -1,0 +1,92 @@
+{{see also|{{tr|Recipes}}}}
+
+'''{{tr|alternative crafting ingredient}}'''是可用于替代{{tr|crafting}}[[{{tr|Recipes}}|{{tr|recipe}}]]中另一个{{tr|item}}的[[{{tr|item}}]]。在本 wiki 中，在{{tr|recipe}}章节，替代品会在{{tr|recipe}}中以“''任意&lt;组名&gt;''”的形式或在“''或''”之后列出所有可使用的替代{{tr|item}}。下文列出了所有可能的{{tr|alternative crafting ingredient}}。注意虽然这些物品在很多{{tr|recipes}}中是可替代的，但并非所有{{tr|recipes}}均如此。具体哪些{{tr|recipes}}中是可替代的请参考此物品的页面。
+
+== 编组的{{tr|Items}} ==
+有若干个物品组。{{source code ref|v=1.4.3.2|method=Terraria.Recipe.SetupRecipeGroups / Terraria.Recipe.useIronBar / Terraria.Recipe.usePressurePlate / Terraria.Recipe.useSand / Terraria.Recipe.useWood}}可以“混合”来自同一组的物品以节省{{tr|material}}。这意思是，比如，[[{{tr|Chest}}]]可以用 8 个{{tr|Wood}}、1 块{{tr|Iron Bar}}、和 1 块{{tr|Lead Bar}}来制作，尽管玩家并没有足够数量的单独的{{tr|Iron bar}}或{{tr|Lead bar}}。
+
+它们在{{tr|recipes}}的{{tr|ingredients}}表中以“任意&lt;组名&gt;”的形式列出。
+{{itemlist/options|width=20.5em}}<!--
+
+-->{{#arraydefine:groups|Wood, Torch, Iron Bar, Sand, Pressure Plate, Bird, Scorpion, Squirrel, Jungle Bug, Duck, Butterfly, Firefly, Snail, Turtle, Macaw, Cockatiel, Dragonfly, Fruit, Balloon, Cloud Balloon, Blizzard Balloon, Sandstorm Balloon, Guide to Critter Companionship, Guide to Environmental Preservation}}<!--
+
+-->{{#arraydefine:ids-Wood|9, 619, 620, 621, 911, 1729, 2504, 2503, 5215|,}}<!--
+-->{{#arraydefine:ids-Torch|8, 430, 432, 427, 429, 428, 1245, 431, 974, 3114, 3004, 2274, 433, 523, 1333, 3045, 4383, 4384, 4385, 4386, 4387, 4388, 5293|,}}<!--
+-->{{#arraydefine:ids-Iron Bar|22,704|,}}<!--
+-->{{#arraydefine:ids-Sand|169,408,1246,370,3272,3338,3274,3275|,}}<!--
+-->{{#arraydefine:ids-Pressure Plate|529,541,542,543,852,853,1151,4261|,}}<!--
+-->{{#arraydefine:ids-Bird|2015, 2016, 2017|,}}<!--
+-->{{#arraydefine:ids-Scorpion|2157, 2156|,}}<!--
+-->{{#arraydefine:ids-Squirrel|2018, 3563|,}}<!--
+-->{{#arraydefine:ids-Jungle Bug|3192, 3193, 3194|,}}<!--
+-->{{#arraydefine:ids-Duck|2123, 2122|,}}<!--
+-->{{#arraydefine:ids-Butterfly|1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001|,}}<!--
+-->{{#arraydefine:ids-Firefly|1992, 2004|,}}<!--
+-->{{#arraydefine:ids-Snail|2006, 2007|,}}<!--
+-->{{#arraydefine:ids-Turtle|4464, 4465|,}}<!--
+-->{{#arraydefine:ids-Macaw|5212, 5300|,}}<!--
+-->{{#arraydefine:ids-Cockatiel|5312, 5313|,}}<!--
+-->{{#arraydefine:ids-Dragonfly| 4334, 4335, 4336, 4337, 4338, 4339 |,}}<!--
+-->{{#arraydefine:ids-Fruit|4009, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4289, 4290, 4291, 4292, 4293, 4294, 4295, 4296, 4297, 5277, 5278|,}}<!--
+-->{{#arraydefine:ids-Cloud Balloon|399, 1250|,}}<!--
+-->{{#arraydefine:ids-Blizzard Balloon|1163, 1251|,}}<!--
+-->{{#arraydefine:ids-Sandstorm Balloon|983, 1252|,}}<!--
+-->{{#arraydefine:ids-Balloon|3736, 3737, 3738|,}}<!--
+-->{{#arraydefine:ids-Guide to Critter Companionship|4767, 5453|,}}<!--
+-->{{#arraydefine:ids-Guide to Environmental Preservation|5309, 5454|,}}<!--
+
+-->{{#dplvar:set|<!--
+-->|rows-Wood|109<!--
+-->|rows-Wood|1<!--
+-->|rows-Iron Bar|121<!--
+-->|rows-Sand|2<!--
+-->|rows-Pressure Plate|5<!--
+-->|rows-Bird|2<!--
+-->|rows-Scorpion|2<!--
+-->|rows-Squirrel|2<!--
+-->|rows-Jungle Bug|2<!--
+-->|rows-Duck|2<!--
+-->|rows-Butterfly|2<!--
+-->|rows-Firefly|2<!--
+-->|rows-Snail|2<!--
+-->|rows-Turtle|1<!--
+-->|rows-Dragonfly|1<!--
+-->|rows-Fruit|3<!--
+-->}}<!--
+
+-->{{#arrayprint:groups||
+@group@|<nowiki/>
+=== {{tr|Any @group@}} ===
+<div class="terraria">
+{{itemlist/start}}{{#arrayprint:ids-@group@||@id@|{{itemlist/item|{{item|id=@id@}}}}}}{{itemlist/end}}
+{{toggleBox/start|css=border-top: 1px solid var(--custom-accent-border-color);margin-top: 1em;padding-top: 0.5em;}}
+{{toggleBox/handle|class=center| 显示要求“{{tr|Any @group@}}”的{{tr|recipes}} | 隐藏此{{tr|recipes}}列表}}
+<div class="only-toggled">{{recipes|ingredient=#Any @group@|expectedrows={{#dplvar:rows-@group@}}|title=要求“{{tr|Any @group@}}”的{{tr|recipes}}}}</div>
+{{toggleBox/handle|class=center only-toggled| 显示要求“{{tr|Any @group@}}”的{{tr|recipes}} | 隐藏此{{tr|recipes}}列表}}
+{{toggleBox/end}}
+</div>
+}}<!-- end #arrayprint:groups 
+
+-->{{itemlist/options|reset}}
+
+== 可替代的{{tr|Ingredients}} ==
+一些{{tr|recipes}}包含可替代的{{tr|ingredients}}，比如[[{{tr|Night's Edge}}]]（可以用[[{{tr|Light's Bane}}]]或[[{{tr|Blood Butcherer}}]]制作）。大多数此类{{tr|recipes}}都保存为单独的配方。其余的（{{eversions|1.3.0.1|invert=y|short}}的{{tr|recipes}}）在{{tr|recipes}}的{{tr|ingredients}}表中以“&lt;物品A&gt;''或''&lt;物品B&gt;”的形式列出，这些{{tr|recipes}}罗列如下：
+{{recipes|where=ingredients HOLDS LIKE "¦%¦%¦"|expectedrows=13}}
+
+== 备注 ==
+* 替代{{tr|items}}不适用于名称特定于某种分类词组的[[{{tr|armor}}]]或[[{{tr|weapons}}]]。
+
+== 小贴士 ==
+* 当玩家没有大量补给时，在同一个{{tr|item}}上使用两种不同但等价的[[{{tr|bars}}]]有助于节省{{tr|bars}}。
+
+== 花絮 ==
+* [[{{tr|Dynasty Wood}}]]是唯一一种不能用于“{{tr|Any Wood}}”{{tr|recipes}}的{{tr|wood}}。
+* [[{{tr|Grapes}}]]是唯一不能用于“{{tr|Any Fruit}}”{{tr|recipes}}的{{tr|fruit}}。
+* 在游戏代码中还有一个“{{gameText|LegacyMisc.37}}{{gameText|LegacyMisc.51}}”分类，但并未被任何{{tr|recipe}}所使用。它包括四种[[{{tr|Lunar Fragments}}]]。{{source code ref|v=1.4.3.2|method=Terraria.Recipe.useFragment}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Alternative crafting ingredients}}

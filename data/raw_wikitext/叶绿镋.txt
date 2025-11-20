@@ -1,0 +1,47 @@
+{{item infobox
+| auto = 1228
+| idprojectile = 222, 228
+| listcat = spears
+| hardmode = yes
+}}
+[[File:Chlorophyte Partisan (demo).gif|frame|right|使用中的{{tr|Chlorophyte Partisan}}。注意能伤到{{tr|wall}}后{{tr|enemy}}的只有其{{tr|spores}}。]]
+
+'''{{tr|Chlorophyte Partisan}}'''是一种由[[{{tr|Chlorophyte Bar}}]]制造的[[{{tr|Hardmode}}]]中的[[{{tr|Spears}}]]。目前比所有“常规”{{tr|ore}}做的{{tr|spears}}都要强，比最好的常规[[{{tr|Hardmode ore}}]]长矛[[{{tr|Titanium Trident}}]]要多 {{#expr:{{iteminfo|Chlorophyte Partisan|damage}}-{{iteminfo|Titanium Trident|damage}}}} 点{{tr|damage}}。使用时，在突刺到最前方时矛尖会放出绿色孢子云，后者看起来与[[{{tr|Chlorophyte Saber}}]]的{{tr|projectile}}完全相同。消失前，孢子云会向矛刺出的方向行进一小段距离。孢子云可以穿透实体{{tr|block}}和多个{{tr|enemy}}，但不造成[[{{tr|knockback}}]]。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chlorophyte Partisan|expectedrows=1}}
+
+== 备注 ==
+* 与其{{tr|inventory sprite}}所暗示的不同的是，{{tr|Chlorophyte Partisan}}事实上非常长。因为其能向刺出方向释放出额外的{{tr|spore}}云，所以{{tr|Chlorophyte Partisan}}范围巨大，可能仅次于[[{{tr|North Pole}}]]（在所有{{tr|spear}}类型{{tr|weapons}}中）。
+* 当使用[[{{tr|Magma Stone}}]]或[[{{tr|Fire Gauntlet}}]]时，{{tr|spores}}不会有{{tr|flame}}粒子效果，但会造成[[{{tr|HellFire}}]]{{tr|debuff}}。
+
+== 小贴士 ==
+* 它是通过使{{tr|spore cloud}}穿过{{tr|blocks}}来{{tr|damage}}{{tr|enemies}}的，而并不是用其本体镋。因为这点，使用者必须在一个特定的距离来使{{tr|spore cloud}}造成接触。如果离{{tr|enemy}}太近了，孢子{{tr|cloud}}则不会与其接触，因为{{tr|spore cloud}}是在戳刺到最远距离时从{{tr|spear}}尖部位被释放的。
+* 它的{{tr|damage}}和{{tr|knockback}}使它成为对抗大群{{tr|enemies}}时有用的{{tr|weapon}}。它可以一次击退数个{{tr|enemies}}，这也使它在防御时很有用。
+
+== 花絮 ==
+* 其{{tr|spore cloud}}与[[{{tr|Chlorophyte Saber}}]]的完全相同。
+* {{eicons|1.3.0.1|desktop=n|tml=n|switch=n|}} [[1.3.0.1]] 对应版本[[{{tr|world}}]]中所有现存的[[{{tr|Tonbogiri}}]]升级后均被替换为{{tr|Chlorophyte Partisans}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|spore cloud}}现在使用静态{{tr|immunity frames}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Item}}和{{tr|projectile}}的{{tr|sprites updated}}。
+** {{tr|spore cloud}}现在造成{{tr|melee damage}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Chlorophyte}}
+{{Spears}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Chlorophyte Partisan}}

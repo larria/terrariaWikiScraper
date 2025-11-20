@@ -1,0 +1,177 @@
+{{npc infobox|tabs=y|boxwidth=18em
+| auto = 228
+| idprojectile = 267
+| type = NPC
+| environment = Valid house
+| damage ={{modes|20|30|35}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ItemName.PoisonDart}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| imageother = Map Icon Witch Doctor.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+
+'''{{tr|Witch Doctor}}'''是个商贩 [[{{tr|NPC}}]]，一旦以下条件全部满足就会出现：
+* 有一间空[[{{tr|house}}]]。
+* [[{{tr|Queen Bee}}]]已被打败。
+
+在{{eversions|1.3.0.1}}中，{{tr|the Witch Doctor}}会用[[{{tr|Blowgun}}]]向附近的[[{{tr|enemies}}]]发射[[{{tr|Poison Dart}}]]来自卫。他的{{tr|darts}}会让{{tr|enemies}}[[{{tr|poisoned}}|中毒]]，此外，在游戏开始{{tr|darts}}会造成 20 / {{expert|30}} / {{master|35}} 伤害，而（在{{eversions|1.4.0.1}}中）随着玩家的进展，他会得到[[{{tr|NPCs}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Imbuing Station}}
+|{{shop row|Blowgun}}
+|{{shop row|Stynger Bolt|当玩家有[[{{tr|Stynger}}]]时。}}
+|{{shop row|Stake|当玩家有[[{{tr|Stake Launcher}}]]时。}}
+|{{shop row|Cauldron|[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Tiki Totem|当在[[{{tr|Hardmode}}]][[{{tr|Jungle}}]]{{tr|biome}}中与其说话时。}}
+|{{shop row|Leaf Wings|击败[[{{tr|Plantera}}]]后，仅限[[{{tr|night}}]]，当在[[{{tr|Hardmode}}]]下的[[{{tr|Jungle}}]]{{tr|biome}}中与其对话时。{{eicons|1.4.4}}<br/>仅限[[{{tr|night}}]]，当在[[{{tr|Hardmode}}]]下的[[{{tr|Jungle}}]]{{tr|biome}}中与其对话时。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Vial of Venom|打败[[{{tr|Plantera}}]]后。}}
+|{{shop row|Tiki Mask|打败[[{{tr|Plantera}}]]后。{{eicons|1.4.0.1}}<br/>打败[[{{tr|Plantera}}]]后，并且要求玩家的{{tr|inventory}}中有[[{{tr|Pygmy Staff}}]]。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Tiki Shirt|打败[[{{tr|Plantera}}]]后。{{eicons|1.4.0.1}}<br/>打败[[{{tr|Plantera}}]]后，并且要求玩家的{{tr|inventory}}中有[[{{tr|Pygmy Staff}}]]。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Tiki Pants|打败[[{{tr|Plantera}}]]后。{{eicons|1.4.0.1}}<br/>打败[[{{tr|Plantera}}]]后，并且要求玩家的{{tr|inventory}}中有[[{{tr|Pygmy Staff}}]]。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Pygmy Necklace|仅限[[{{tr|night}}]]。{{eicons|1.4.1}}<br/>在击败[[{{tr|Plantera}}]]后，仅限{{tr|night}}，且玩家的{{tr|inventory}}中需要有[[{{tr|Pygmy Staff}}]]。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Hercules Beetle|打败[[{{tr|Plantera}}]]后，并且在[[{{tr|Jungle}}]]{{tr|biome}}中与其说话。{{eicons|1.4.0.1}}<br/>打败[[{{tr|Plantera}}]]后并在[[{{tr|Jungle}}]]{{tr|biome}}中与其说话，并且要求玩家的{{tr|inventory}}中有[[{{tr|Pygmy Staff}}]]。{{eicons|1.4.0.1|invert=y}}}}
+|{{shop row|Pure Water Fountain|value={{iteminfo|Pure Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Desert Water Fountain|value={{iteminfo|Desert Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Jungle Water Fountain|value={{iteminfo|Jungle Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Icy Water Fountain|value={{iteminfo|Icy Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Corrupt Water Fountain|value={{iteminfo|Corrupt Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Crimson Water Fountain|value={{iteminfo|Crimson Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Hallowed Water Fountain|value={{iteminfo|Hallowed Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Blood Water Fountain|value={{iteminfo|Blood Water Fountain|buy}} {{eicons|1.3.0.1}}<br/>无价值 {{eicons|1.3.0.1|invert=y}}|{{note|一直有售。}} {{eicons|1.3.0.1}}<br/>打败[[{{tr|Plantera}}]]后。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Cavern Water Fountain}}
+|{{shop row|Oasis Water Fountain}}
+|{{shop row|Bewitching Table|如果存在[[{{tr|Wizard}}]]。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Witch Doctor (Shimmered).png]] [[File:Map Icon Witch Doctor (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Witch Doctor}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Witch Doctor}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.261}}”
+* “{{gameText|LegacyDialog.264|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.262}}”
+* “{{gameText|WitchDoctorSpecialText.AfterDD2Tier1}}”
+
+'''[[{{tr|Nurse}}]]存在时：'''
+* “{{gameText|LegacyDialog.263|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''当[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.LikeNPC|x_NPCName=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|WitchDoctorSpecialText.Party}}”
+
+'''[[{{tr|Windy Day}}]]期间：'''
+* “{{gameText|WitchDoctorSpecialText.Windy1}}”
+* “{{gameText|WitchDoctorSpecialText.Windy2}}”
+
+'''{{eil|Storm}}期间：'''
+* “{{gameText|WitchDoctorSpecialText.Storm2}}”
+* “{{gameText|WitchDoctorSpecialText.Storm1}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|WitchDoctorSpecialText.Graveyard2}}”
+* “{{gameText|WitchDoctorSpecialText.Graveyard1}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_WitchDoctor.HateCrowded}}”
+
+'''在{{tr|the Jungle}}中时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.LikeBiome|x_BiomeName={{tr|the Jungle}}}}”
+
+'''在{{tr|the Hallow}}中时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.DislikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.HateBiome|x_BiomeName={{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* "{{gameText|TownNPCMood_WitchDoctor.LikeNPC_Princess|x_NPCName={{tr|the Princess}}[{{tr|Princess}}的名字]}}"
+
+'''靠近[[{{tr|Dryad}}]]时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.LikeNPC|x_NPCName={{tr|the Dryad}}[{{tr|Dryad}}的名字]}}”
+
+'''靠近[[{{tr|Guide}}]]时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.LikeNPC|x_NPCName={{tr|the Guide}}[{{tr|Guide}}的名字]}}”
+
+'''靠近[[{{tr|Nurse}}]]时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.DislikeNPC|x_NPCName={{tr|the Nurse}}[{{tr|Nurse}}的名字]}}”
+
+'''靠近[[{{tr|Truffle}}]]时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.HateNPC|x_NPCName={{tr|the Truffle}}[{{tr|Truffle}}的名字]}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_WitchDoctor.Content}}”
+{{collapse bottom}}
+
+== 备注 ==
+* {{tr|the Witch Doctor}}商店部分的{{tr|The biome}}要求是在''玩家与他对话时''决定的，而非以{{tr|the Witch Doctor}}自身而定。因此，技术上说，{{tr|Witch Doctor}}所处的{{tr|biome}}根本无所谓，只要与其互动的玩家身处正确的{{tr|biome}}（例如，{{tr|Jungle}}）内即可。
+
+== 小贴士 ==
+* 玩家也可以用[[{{tr|King Statue}}]]将{{tr|the Witch Doctor}}传送到{{tr|the Jungle}}。
+
+== 花絮 ==
+* “{{wikipedia|Witch doctor|{{tr|witch doctor}}（witch doctor）}}”是用来指代萨满和各种部落传统中的“智者”的术语，这包括欧洲的“witch doctor”、非洲的“sangoma”、和美洲原住民的“medicine man”{{note|small=y|paren=y|译注：这几个词在中文中一般均被译为“巫医”}}。它原本用来指代提供对巫术的保护的人，但现在指代任何民间医生。
+** 他身上的装束也证明了这一点。在民俗宗教里{{wikipedia|Mask|面具（Mask）}}通常是用于仪式的工具，使佩戴者与自然、神灵之间建立联系。
+** 虽然{{tr|witch doctor}}是一种民间治疗师，但游戏中{{tr|player}}并不能通过{{tr|witch doctor}}进行治疗。
+* 话语“{{gameText|LegacyDialog.261}}（{{gameText|LegacyDialog.261|lang=en}}）” 利用了{{wikipedia|homophone|同音词}}“which/witch”。两个句子听起来几乎是一样的但意思截然不同。
+* 话语“{{gameText|WitchDoctorSpecialText.Graveyard1}}（{{gameText|WitchDoctorSpecialText.Graveyard1|lang=en}}）”引用了卡通连续剧《Aqua Teen Hunger Force》中的知名模因“Chicken, Arise”，在这个片子中主角招募了一名有些可疑的巫医，不停的用类似的吟唱来试图复活一只鸡。
+* 他的许多话语都是在两个句子之间用同样的单词玩文字游戏。
+* {{tr|The Witch Doctor}}是个[[{{tr|Lihzahrd}}]]，可以看到他的绿皮肤和尾巴。他在{{tr|party}}时的话，“我想看看你们是怎么庆祝的”尤其证明了这点。[[Leinfors]] 在{{tr|Terraria}}论坛上确认了这事。<ref>{{forums thread|pc-1-3-2-changelog.46816/page-14#post-1042710|PC 1.3.2 Changelog}} {{small|2016 年 7 月 22 日}}</ref>
+** 他的{{tr|Shimmered form}}中可以看到他面具下的形象。
+** 他的{{tr|Bestiary}}条目中直接提到他来自{{tr|Jungle Temple}}：“{{gameText|Bestiary_FlavorText.npc_WitchDoctor}}”
+** 虽然他在[[{{tr|Princess}}]]附近时的快乐话语可看出{{tr|Witch Doctor}}与{{tr|Lihzahrds}}之间的关系并不坏：“{{gameText|TownNPCMood_WitchDoctor.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”但与[[{{tr|Skeleton Merchant}}]]不同，{{tr|Skeleton Merchant}}和[[{{tr|Skeleton}}]]之间互相不会攻击，但{{tr|Lihzahrds}}却依然会攻击{{tr|the Witch Doctor}}（反之亦然）。
+* {{tr|Witch Doctor}}与{{tr|Lihzahrds}}的原型可能是基于文学与影视作品中的{{wikipedia|Reptilian humanoid|蜥蜴人}}，它们通常和丛林、沼泽地、和其他热带环境相关联。而{{tr|Witch Doctor}}的着装、{{tr|Jungle Temple}}的建筑和其中{{tr|Enemies}}的风格十分接近中南美州的玛雅或阿兹特克古文化。
+* {{tr|the Witch Doctor}}所持的{{tr|The staff}}看起来可能很像[[{{tr|Pygmy Staff}}]]，但它实际上是“{{wikipedia|Dreamcatcher|Dreamcatcher（捕梦网）}}”，这是根顶端为木圈的棍子，上面挂有如同蜘蛛网般的绳子和羽毛。它起源于美洲原住民部落。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.1|不再需要击败[[{{tr|Plantera}}]]后才出售{{tr|Pygmy Necklace}}。}}
+{{history|Desktop 1.4.0.1|
+** 现在出售{{tr|the Oasis Water Fountains}}和{{tr|Cavern Water Fountains}}。
+** {{tr|Leaf Wings}}的价格从 {{coin|1pc}} 降低至 {{coin|75gc}}。
+** 出售{{tr|Tiki Armor Set}}、{{tr|Hercules Beetle}}、和{{tr|Pygmy Necklace}}不再要求玩家的{{tr|inventory}}中有{{tr|Pygmy Staff}}。}}
+{{history|Desktop 1.3.0.1|
+** 现在出售{{tr|the Bewitching Table}}。
+** {{tr|Fountains}}现在要花费 {{coin|4gc}} 购买。
+** 外观更新。}}
+{{history|Desktop 1.2.1.2|{{tr|Witch Doctor}}现在正确地在{{tr|Halloween}}期间出售{{tr|cauldrons}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+|show-npc = yes
+}}
+
+{{language info|en=Witch Doctor}}

@@ -1,0 +1,315 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper
+|{{npc infobox | boxwidth = 380px
+| namesub2 = 第一形态
+| image = Empress of Light.gif
+| type = Boss
+| environment = The Hallow
+| auto = 636
+| damage =<!--
+-->{{modes|80|110|248}} {{note|small=y|paren=y|{{tr|contact}}}}{{source code ref|name=contact|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss / Terraria.NPC.ScaleStats_ApplyMultiplayerStats / Terraria.NPC.GetAttackDamage_ScaledByStrength}}<br/><!--
+	defDamage (default damage) = 80×Mode damage multiplier
+	Mode damage multiplier = {{modes|1|2|3}}
+	Empress multiplier = {{modes|1|0.3}}
+	Classic: Actual damage = [ (defDamage) ×Empress multiplier ]×Mode damage multiplier = [ (80×1) ×1 ]×1
+	Expert+: Actual damage = [ (defDamage) ×Empress multiplier ]×Mode damage multiplier×1.15 (1.15 is from ScaleStats_ApplyMultiplayerStats)
+		Expert: Actual damage = [ (80×2) ×0.3 ]×2×1.15 = 110.4
+		Master: Actual damage = [ (80×3) ×0.3 ]×3×1.15 = 248.4
+-->{{modes|120|165|372}} {{note|small=y|paren=y|{{tr|dash}}}}{{source code ref|name=dash|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=相关部分为 <code>switch(this.ai[0]){ case 9: }</code> 代码段。}}<br/><!--
+	During dash: Empress multiplier is multiplied by 1.5
+	Classic: Actual damage = [ (defDamage) × (Empress multiplier) ]×Mode damage multiplier = [ (80×1) × (1×1.5) ]×1 = 120
+	Expert+: Actual damage = [ (defDamage) × (Empress multiplier) ]×Mode damage multiplier×1.15
+		Expert: Actual damage = [ (80×2) × (0.3×1.5) ]×2×1.15 = 165.6
+		Master: Actual damage = [ (80×3) × (0.3×1.5) ]×3×1.15 = 372.6
+-->{{modes|90|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.HallowBossRainbowStreak}} 1}}{{source code ref|name=prismatic-bolt|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=攻击的相关代码段：{{gameText|ProjectileName.HallowBossRainbowStreak}} 1：<code>switch(this.ai[0]){ case 2: }</code>；{{gameText|ProjectileName.HallowBossRainbowStreak}} 2：<code>switch(this.ai[0]){ case 16: }</code>}}<br/><!--
+-->{{modes|100|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.FairyQueenSunDance}}}}{{source code ref|name=sun-dance|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=攻击的相关代码段为 <code>switch(this.ai[0]){ case 6: }</code>。}}<br/><!--
+-->{{modes|90|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.HallowBossLastingRainbow}}}}{{source code ref|name=everlasting-rainbow|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=攻击的相关代码段为 <code>switch(this.ai[0]){ case 5: }</code>。}}<br/><!--
+-->{{modes|100|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.FairyQueenLance}} 1}}{{source code ref|name=ethereal-lance|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=攻击的相关代码段：{{gameText|ProjectileName.FairyQueenLance}} 1：<code>switch(this.ai[0]){ case 4: }</code>；{{gameText|ProjectileName.FairyQueenLance}} 2：<code>switch(this.ai[0]){ case 7: }</code>；{{gameText|ProjectileName.FairyQueenLance}} 3：<code>switch(this.ai[0]){ case 11: }</code>}}
+
+| idprojectile = 874//生成光效<!--Spawn effect (Death Aurora)-->, 873<!--Prismatic Bolt-->, 923<!--Sun Dance-->, 872<!--Everlasting Rainbow-->, 919<!--Ethereal Lance-->
+
+| sound1 = Item 161.wav
+| soundcaption1 = 生成
+| sound2 = Item 164.wav
+| soundcaption2 = {{gameText|ProjectileName.HallowBossRainbowStreak}} 1
+| sound 3 = Item 165.wav
+| soundcaption3 = {{gameText|ProjectileName.HallowBossRainbowStreak}} 2
+| sound4 = Item 159.wav
+| soundcaption4 = {{gameText|ProjectileName.FairyQueenSunDance}}
+| sound5 = Item 163.wav
+| soundcaption5 = {{gameText|ProjectileName.HallowBossLastingRainbow}}
+| sound6 = Item 162.wav
+| soundcaption6 = {{gameText|ProjectileName.FairyQueenLance}} 1/2/3
+| sound7 = Item 160.wav
+| soundcaption7 = {{tr|Dash}}
+| imageother = Map Icon Empress of Light.png
+| imageothercaption = Map Icon
+| hardmode = yes
+}}
+|{{npc infobox | boxwidth = 380px
+| namesub2 = 第二形态
+| imagealt = <Tabber>
+
+夜晚形态=[[File:Empress of Light (second form).gif|link=]]
+|-|
+白天（暴怒）形态=[[File:Empress of Light (second form) (enraged).gif|link=]]
+
+</Tabber>
+| type = Boss
+| environment = The Hallow
+| auto = 636
+| damage =<!--
+-->{{modes|80|110|248}} {{note|small=y|paren=y|{{tr|contact}}}}<ref name="contact"/><br/><!--
+-->{{modes|120|165|372}} {{note|small=y|paren=y|{{tr|dash}}}}<ref name="dash"/><br/><!--
+-->{{modes|100|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.HallowBossRainbowStreak}} 1/2}}<ref name="prismatic-bolt"/><br/><!--
+-->{{modes|120|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.FairyQueenSunDance}}}}<ref name="sun-dance"/><br/><!--
+-->{{modes|100|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.HallowBossLastingRainbow}}}}<ref name="everlasting-rainbow"/><br/><!--
+-->{{modes|120|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.FairyQueenLance}} 1/3}}<ref name="ethereal-lance"/><br/><!--
+-->{{modes|130|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.FairyQueenLance}} 2}}<ref name="ethereal-lance"/>
+| life = {{modes|{{#expr:floor({{npcinfo|636|hp}}*0.5)}}/{{npcinfo|636|hp}}|{{#expr:floor({{npcinfo|636|hp|expert}}*0.5)}}/{{npcinfo|636|hp|expert}}|{{#expr:floor({{npcinfo|636|hp|master}}*0.5)}}/{{npcinfo|636|hp|master}}}}
+| defense = 60<!-- defDefense * 1.2 -->
+
+|:group:start|总会掉落以下 4 件物品之一&nbsp;{{source code ref|v=1.4.4.9|name=hbdrops|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_HallowBoss}}| @normal
+| Nightglow|1|25% @normal
+| Starlight|1|25% @normal
+| Kaleidoscope|1|25% @normal
+| Eventide|1|25% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Empress Wings|1|6.67% @normal
+| Prismatic Dye|1|25% @normal
+| Stellar Tune |1|2% @normal
+| Rainbow Cursor |1|5% @normal
+|custom:Terraprisma|{{item|Terraprisma|note2=（若 100% 伤害都是在{{tr|daytime}}造成的）}}|100%
+| Greater Healing Potion|5–15|100%
+| Empress of Light Mask|1|14.29% @normal
+| Empress of Light Trophy|1|10%
+| Treasure Bag (Empress of Light)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  |:group:start|总会掉落以下 4 件物品之一| #expert
+  | Nightglow|1|25% #expert
+  | Starlight|1|25% #expert
+  | Kaleidoscope|1|25% #expert
+  | Eventide|1|25% #expert
+  |:group:end|-----------------------------------|
+  | Soaring Insignia|1|100% #expert
+  | Empress of Light Mask|1|14.29% #expert
+  | Empress Wings|1|{{expert|10%}} #expert
+  | Stellar Tune|1|{{expert|5%}} #expert
+  | Rainbow Cursor|1|5% #expert
+  | Prismatic Dye|1|25% #expert
+  | Gold Coin|[[{{tr|NPC drops|link=y}}#{{tr|Coin drops}}|25]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Jewel of Light|1|{{master|25%}} @master
+| Empress of Light Relic|1|{{master|100%}} @master
+
+| idprojectile = 873<!--Prismatic Bolt-->, 923<!--Sun Dance-->, 872<!--Everlasting Rainbow-->, 919<!--Ethereal Lance-->
+
+| sound1 = Item 161.wav
+| soundcaption1 = 生成
+| sound2 = Item 164.wav
+| soundcaption2 = {{gameText|ProjectileName.HallowBossRainbowStreak}} 1
+| sound 3 = Item 165.wav
+| soundcaption3 = {{gameText|ProjectileName.HallowBossRainbowStreak}} 2
+| sound4 = Item 159.wav
+| soundcaption4 = {{gameText|ProjectileName.FairyQueenSunDance}}
+| sound5 = Item 163.wav
+| soundcaption5 = {{gameText|ProjectileName.HallowBossLastingRainbow}}
+| sound6 = Item 162.wav
+| soundcaption6 = {{gameText|ProjectileName.FairyQueenLance}} 1/2/3
+| sound7 = Item 160.wav
+| soundcaption7 = {{tr|Dash}}
+| imageother = Map Icon Empress of Light.png
+| imageothercaption = Map Icon
+| hardmode = yes
+| cargo = no | cargodrops = auto<!-- store drops only in main namespace and main page -->
+}}
+}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.DEFEAT_EMPRESS_OF_LIGHT_Description}}|是|1}}}}|image=Map Icon Empress of Light.png}}
+
+'''{{tr|Empress of Light}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的 [[{{tr|bosses}}|{{tr|boss}}]]。通常在[[{{tr|Day and night cycle}}|{{tr|night}}]]与她战斗，因为她在{{tr|day}}期间会[[#{{tr|Enraged}}状态|{{tr|enraged}}]]，使得伤害极大提升。虽然击败了{{tr|Plantera}}后就可以与她战斗，她比大部分{{tr|Hardmode bosses}} 都显著更难，且通常需要[[{{tr|Golem}}]]后的装备。和{{tr|The Empress of Light}}的战斗是可选的，并非游戏进程所需，但只要玩家的技术足够击败她，她的{{tr|weapons}}就会给玩家带来极大帮助。
+
+{{boss music|t={{tr|the Empress of Light}}|exclusive=1|pronoun=她|ow=Boss 2 (Otherworldly)}}
+
+== 召唤 ==
+任何时间都可通过杀死[[{{tr|Prismatic Lacewing}}]]来召唤{{tr|The Empress of Light}}。
+
+在{{tr|world}}中已打败[[{{tr|Plantera}}]]后，{{tr|Prismatic Lacewings}}会在{{tr|dusk}}（{{time|7:30 PM}}）和{{tr|midnight}}（{{time|12:00 AM}}）期间于{{tr|surface}}[[{{tr|The Hallow}}]]生成。可以使用[[{{tr|Bug Net}}]]（{{tr|or its upgrades}}）来捕捉它，随后玩家可以在其他地方将其放出并杀死。如果在{{tr|the Hallow}}以外的地方放出，{{tr|Prismatic Lacewing}}几乎立即就会消失。
+
+召唤{{tr|The Empress of Light}}本身不需要先击败任何 {{tr|bosses}}，这意味着可以在预期的游戏阶段之前召唤她。带到新{{tr|world}}中的{{tr|Prismatic Lacewings}}仍可以召唤她。
+
+== 行为 ==
+=== 攻击 ===
+{{tr|The Empress of Light}}会进行多种复杂的、主要为{{tr|projectile}}的攻击。每种攻击将由执行攻击的时间和执行此攻击后的“等待时间”两部分组成。在她的第二阶段期间，攻击后的等待时间会缩短 {{duration|15ticks}}，在{{tr|Expert Mode}}下还会再缩短 {{duration|5ticks}}。{{source code ref|name=ai|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss}}相邻的两次攻击之间还会存在额外的一段间隔时间，见[[#攻击模式|攻击模式]]获取细节。
+
+; {{tr|Prismatic Bolts}} 1
+: {{tr|The Empress of Light}}在 {{duration|60ticks}}内于她当前的位置召唤 20 / {{expert|30}} 个{{item|nolink=y|image=Prismatic Bolt.png|size=20px|Prismatic Bolts|}}。<ref name="prismatic-bolt"/>{{tr|Prismatic Bolts}}最初召唤时会保留其动量，在短暂延迟后追踪玩家。这些{{tr|Prismatic Bolts}}不具有完美的跟踪能力，若玩家在它们接近时急转弯，它们就会打空。
+: 在[[{{tr|multiplayer}}]]下，可能会有数个额外的{{tr|Prismatic Bolts}}射向距离{{tr|Empress of Light}}不超过 150 格的玩家。
+: 此攻击后的等待时间为 {{duration|90ticks}}。
+
+; {{tr|Prismatic Bolts}} 2
+: {{tr|The Empress of Light}}在 {{duration|50ticks}}内以顺时针螺旋召唤出 8 / {{expert|12}} 个{{tr|Prismatic Bolts}}。<ref name="prismatic-bolt"/>这些{{tr|Prismatic Bolt}}的行为和此攻击的第一种变种召唤的那些相同。
+: 在[[{{tr|multiplayer}}]]下，可能会有数个额外的{{tr|Prismatic Bolts}}射向距离{{tr|Empress of Light}}不超过 150 格的玩家。
+: 此攻击后的等待时间为 {{duration|90ticks}}。
+
+; {{tr|Dash}}
+: 在 {{duration|90ticks}}内，{{tr|The Empress of Light}}会移动到玩家的左侧或右侧，然后水平向玩家的方向冲刺。<ref name="dash"/>此外，在她冲刺前会播放音效，以及数个多种颜色的环绕{{tr|Empress of Light}}的残影。她在冲刺前会短暂变为无敌。
+: 此攻击后的等待时间为 {{duration|20ticks}}。
+
+; {{tr|Sun Dance}}
+: {{tr|Empress of Light}}悬浮在玩家上方偏左处，然后放出 6 / {{expert|8}} 道大型的、持续存在的{{item|nolink=y|image=Sun Dance.png|size=20px|Sun Dance|}}{{tr|projectiles}}，缓慢地顺时针围绕她移动。每次攻击放出 3 组{{tr|projectiles}}，每组持续 {{duration|180ticks}}且位于上一组略微顺时针旋转后的位置。<ref name="sun-dance"/>
+: 此攻击后的等待时间为 {{duration|120ticks}}。
+
+; {{tr|Everlasting Rainbow}}
+: {{tr|Empress of Light}}在 {{duration|42ticks}}内释放出一圈 13 个{{item|nolink=y|image=Everlasting Rainbow.png|size=20px|Everlasting Rainbows|}}，<ref name="everlasting-rainbow"/>缓慢地从她的原位置处顺时针向外旋转，而后以相同方向旋转返回。{{tr|Everlasting Rainbow}}会停留共 {{duration|660ticks}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}，且会留下对玩家造成相同伤害的发光尾迹。
+: 此攻击后的等待时间为 {{duration|30ticks}}。
+
+; {{tr|Ethereal Lance}} 1
+: {{tr|The Empress of Light}}在 {{duration|100ticks}}内召唤 20 / {{expert|25}} 个{{item|nolink=y|image=Ethereal Lance.png|size=20px|Ethereal Lances|}}<ref name="ethereal-lance"/>，射向其被召唤时玩家的朝向，并有彩色光束预警。{{tr|Ethereal Lance}}会召唤在玩家当前移动方向后方的四个预设的位置，每个点位都有偏移，以在此方向上形成包围玩家的圆弧。若玩家静止不动，则{{tr|Ethereal Lances}}会默认出现在玩家上方。
+: 在{{tr|Expert Mode}}下，玩家的正后方会增加第五个位置。{{tr|Ethereal Lances}}还具有更高的[[{{tr|velocity}}]]。
+: {{tr|Ethereal Lances}}在发射前不会造成伤害。
+: 在[[{{tr|multiplayer}}]]下，可能会有数个额外的{{tr|Ethereal Lances}}被召唤，以距离{{tr|Empress of Light}}不超过 150 格的玩家为目标。
+: 此攻击后的等待时间为 {{duration|20ticks}}。
+
+; {{tr|Ethereal Lance}} 2
+: {{tr|The Empress of Light}}在 {{duration|240ticks}}内召唤 4 波均匀分布的{{tr|Ethereal Lances}}。<ref name="ethereal-lance"/>这些{{tr|Ethereal Lances}}会穿越屏幕，并有彩色光束预警。第一波从屏幕左侧向右侧行进，第二波从右向左，第三波从左上到右下，第四波从右上到左下。
+: 在{{tr|Expert Mode}}下，此攻击会在 {{duration|240ticks}}内召唤 6 波{{tr|Ethereal Lances}}。<ref name="ethereal-lance"/>这些{{tr|Ethereal Lances}}会以玩家周围特定的点为目标，并有彩色光束预警。第一波从屏幕的左侧向玩家右侧行进，第二波从右侧向玩家左侧，第三波从顶部向玩家右下，第四波从顶部向玩家左下，第五波从底部向玩家右上，第六波从底部向玩家左上。
+: {{tr|Ethereal Lances}}在发射前不会造成伤害。
+: 此攻击后的等待时间为 {{duration|20ticks}} / {{expert|{{duration|40ticks}}}}。
+
+; {{expert|{{tr|Ethereal Lance}} 3}}
+: {{tr|The Empress of Light}}在 {{duration|100ticks}}内召唤 16 个{{tr|Ethereal Lances}}。<ref name="ethereal-lance"/>这些{{tr|Ethereal Lances}}会以玩家的精确位置为目标，并有彩色光束预警。它们总是会被召唤在玩家身后。
+: {{tr|Ethereal Lances}}在发射前不会造成伤害。
+: 在[[{{tr|multiplayer}}]]下，可能会有数个额外的{{tr|Ethereal Lances}}被召唤，以距离{{tr|Empress of Light}}不超过 150 格的玩家为目标。
+: 此攻击后的等待时间为 {{duration|20ticks}}。
+
+=== 攻击模式 ===
+{{tr|The Empress of Light}}会以固定的模式使用她的攻击。每次攻击之间有固定的间隔，在她的第二阶段中此间隔更短，且在 [[{{tr|For the worthy}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}}中间隔会进一步缩短。
+
+==== 第一阶段 ====
+被召唤后，{{tr|Empress of Light}}会在原地悬浮 {{duration|180ticks}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=相关部分为 <code>switch(this.ai[0]){ case 0: }</code> 代码段。}}，然后按顺序执行以下攻击。
+# {{tr|Prismatic Bolts}} 1
+# {{tr|Dash}}
+# {{tr|Sun Dance}}
+# {{tr|Dash}}
+# {{tr|Everlasting Rainbow}}
+# {{tr|Prismatic Bolts}} 1
+# {{tr|Dash}}
+# {{tr|Ethereal Lance}} 1
+# {{tr|Dash}}
+# {{tr|Everlasting Rainbow}}
+攻击之间的间隔为 {{duration|45ticks}}（{{tr|For the worthy}} 或 {{tr|Get fixed boi}} {{tr|world}}中为 {{duration|23ticks}}）。{{source code ref|name=attack-interval|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=相关部分为 <code>switch(this.ai[0]){ case 1: }</code> 代码段。}}此攻击顺序会无限重复，直到第二阶段开始。
+
+==== 第二阶段 ====
+当{{tr|Empress of Light}}的{{tr|health}}低于一半时（{{formatnum:{{#expr:floor({{npcinfo|Empress of Light|hp}}*0.5)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|Empress of Light|hp|expert}}*0.5)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|Empress of Light|hp|master}}*0.5)}}}}}}），她会消失，然后在玩家的下个预计位置上方出现，进入她的第二阶段。她的背上会出现四根触须，并具有更亮的紫色调（{{tr|enrage}}时则是亮粉色）。这一阶段转换共需要 {{duration|180ticks}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=相关部分为 <code>switch(this.ai[0]){ case 10: }</code> 代码段。}}
+
+在第二阶段中，{{tr|Empress of Light}}的[[{{tr|defense}}]]提升至 60，她会使用一套新的攻击模式，攻击间隔略微缩短并具有更高伤害：
+# {{tr|Ethereal Lance}} 2
+# {{tr|Prismatic Bolts}} 1
+# {{tr|Dash}}
+# {{expert|{{tr|Ethereal Lance}} 3}}
+# {{tr|Everlasting Rainbow}}
+# {{tr|Prismatic Bolts}} 1
+# {{tr|Sun Dance}}
+# {{tr|Ethereal Lance}} 1
+# {{tr|Dash}}
+# {{tr|Prismatic Bolts}} 2
+攻击之间的间隔为 {{duration|20ticks}}（[[{{tr|For the worthy}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|world}}中为 {{duration|10ticks}}）。<ref name="attack-interval"/>此攻击顺序会无限重复，直到{{tr|Empress of Light}}被击败。
+
+=== {{tr|Enraged}}状态 ===
+可以在任何时间与{{tr|The Empress of Light}}战斗，但她会在[[{{tr|Day and night cycle}}|{{tr|daytime}}]]进入“{{tr|enraged}}”，由其攻击的颜色由彩虹色变为亮黄色指出。
+* 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，{{tr|the Empress of Light}}不会在{{tr|day}}进入{{tr|enrage}}，而是会在任何时间位于{{tr|Surface layer}}以上时{{tr|enraged}}。即使在{{tr|day}}，她在{{tr|surface layer}}以下时也不会{{tr|enraged}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.ShouldEmpressBeEnraged}}
+
+{{tr|enraged}}时，她具有略微不同的攻击模式，且她的所有攻击会造成极高的伤害<ref>{{tr|Contact and dash}}：{{formatnum:9999}} {{tr|base damage}}；{{tr|Projectiles}}：{{formatnum:19998 / {{expert|39996}} / {{master|59994}}}} {{tr|base damage}}</ref>，在正常游戏情况下总是会一击杀死玩家。
+
+在特定的条件下会无视[[{{tr|Dodge}}]]效果：{{source code ref|v=1.4.4.9|method=Terraria.NPC.IsDamageDodgeable / Terraria.Projectile.IsDamageDodgable}}
+* {{tr|contact and dash damage}}会在{{tr|daytime}}期间无视{{tr|dodge}}效果。<ref>在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，这会使得即使{{tr|Empress of Light}}没有{{tr|enraged}}，{{tr|contact damage}}也不可被闪避。</ref>
+* {{tr|projectiles}}会在具有至少 9999 {{tr|base damage}}时无视{{tr|dodge}}效果。
+
+在她的{{tr|enraged}}状态下，她的攻击总是遵循其{{tr|Expert Mode}}下的行为。
+
+如果玩家对{{tr|Empress of Light}}的所有伤害都是在{{tr|day}}造成的，她在被击败时会掉落[[{{tr|Terraprisma}}]]。
+
+== 备注 ==
+* 若{{tr|Empress of Light}}没有在{{tr|night}}受到过伤害（即：在其{{tr|enraged}}状态以外），她会在时间到达 {{time|ticks=53400|day=y}} 或更晚时消失{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|t=相关部分为 <code>switch(this.ai[0]){ case 13: }</code> 代码段。}}；否则，她会在{{tr|night}}降临时回到未{{tr|enraged}}的状态。这意味着如果玩家的目标是获得[[{{tr|Terraprisma}}]]，就只能用同一天的 {{time|4:30 AM}} 至 {{time|ticks=53400|day=y}} 的时间来击败她。
+** 这也意味着在 {{time|ticks=53400|day=y}} 和 {{time|7:30 PM}} 之间召唤{{tr|Empress of Light}}时，她会立即消失。
+** 在 [[{{tr|Don't dig up}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，这也意味着在{{tr|night}}期间于{{tr|surface}}以上召唤{{tr|the Empress of Light}}时，她会立即消失。
+* 所有由{{tr|Empress of Light}}的攻击造成的伤害都会无视其他[[{{tr|invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision}}
+* 虽然是{{tr|Hardmode boss}}，{{tr|Empress of Light}}可以在[[{{tr|pre-Hardmode}}]]{{tr|world}}中召唤。
+* {{tr|Ethereal Lance}}是{{tr|Empress of Light}}仅有的能无视距离攻击玩家的动作，因为{{tr|Ethereal Lances}}会在玩家附近出现，而非从{{tr|Empress of Light}}处向玩家行进。
+* 当{{tr|Empress of Light}}在第二阶段下于普通和{{tr|enraged}}攻击组间切换时，她可能会连续两次进行同一动作两次，或者跳转到另一次攻击顺序中的某一点。这是因为她的{{tr|enraged}}攻击中会添加{{tr|Ethereal Lance}}的一个变种。
+* 获得[[{{tr|Slayer of Worlds}}]]{{tr|achievement}}不需要击败{{tr|Empress of Light}}。
+
+== 成就 ==
+{{achievement|name=Fae Flayer}}
+
+== 小贴士 ==
+{{strategies}}
+* [[{{tr|Guide to Critter Companionship}}]]可以用于避免意外召唤 {{tr|boss}}，因为它能阻止玩家伤害[[{{tr|critters}}]]，包括[[{{tr|Prismatic Lacewing}}]]。
+* 用[[{{tr|Bug Net}}]]捕捉{{tr|Prismatic Lacewings}}，而非直接杀死它可让玩家在准备好后在恰当的时间和地点与{{tr|Empress of Light}}战斗。
+* 尽管{{tr|Prismatic Lacewing}}只能在{{tr|night}}生成，{{tr|Empress of Light}}可以在一天中的任何时间用捕捉的{{tr|Prismatic Lacewings}}生成。
+* 如果{{tr|Prismatic Lacewing}}在{{tr|the Hallow}}之外放出，它会很快消失。如果要保证能杀死它，玩家可以将该{{tr|critter}}直接放到静止的范围伤害{{tr|projectile}}中，例如[[{{tr|Clinger Staff}}]]的火墙和[[{{tr|Rainbow Gun}}]]的彩虹。
+* [[{{tr|Rod of Discord}}]]能帮助玩家避开{{tr|Empress of Light}}的一些攻击。
+* 如果试图在{{tr|day}}和{{tr|Empress of Light}}战斗以获得[[{{tr|Terraprisma}}]]，应当完全无视{{tr|defense}}和{{tr|damage reduction}}以换取{{tr|damage}}和机动性，因为无论如何，任何承受的伤害都是致命的。
+** [[{{tr|Shield of Cthulhu}}]]、[[{{tr|Master Ninja Gear}}]]、或[[{{tr|Solar Flare armor}}]]的{{tr|dash}}效果可增加机动性。
+** 能悬停或有加速能力的{{tr|Wings}}，如[[{{tr|Fishron Wings}}]]、[[{{tr|Betsy's Wings}}]]、或[[{{tr|Jetpack}}]]，对于躲避很有效。
+** [[{{tr|Holy Protection}}]]、[[{{tr|Black Belt}}]]{{tr|and its upgrades}}、和[[{{tr|Brain of Confusion}}]]的[[{{tr|Dodge}}]]不能保护玩家免于死亡，因此建议将它们换成提高伤害的{{tr|armor and accessories}}。
+** 如果在{{tr|daytime}}战斗中使用{{tr|Rod of Discord}}，应当直接无视{{tr|Chaos State debuff}}自由使用它。因{{tr|Chaos State}}失去一部分{{tr|health}}远比受到{{tr|Empress of Light}}的攻击而失去全部{{tr|health}}要好。
+** 风险较高的策略为使用飞行[[{{tr|mounts}}]]而非使用{{tr|wings or boots}}，这将能省下{{tr|accessory slot}}来获取更高的伤害输出。
+** {{tr|Arenas}}中不需要提高{{tr|defense}}或{{tr|health regeneration}}的结构（如[[{{tr|Campfires}}]]、[[{{tr|Heart Lantern}}]]、或[[{{tr|Bast Statue}}]]），因为任何承受的伤害都会立即杀死玩家。
+* 应使用能在长距离上可靠地造成伤害或具有追踪能力的{{tr|weapons}}（如[[{{tr|Blizzard Staff}}]]、[[{{tr|Possessed Hatchet}}]]、[[{{tr|Scourge of the Corruptor}}]]、[[{{tr|Tsunami}}]]、[[{{tr|Aerial Bane}}]]、[[{{tr|Snowman Cannon}}]]、用[[{{tr|Chlorophyte Bullet}}]]的[[{{tr|Chain Gun}}]]或[[{{tr|Tactical Shotgun}}]]）。
+* 建议使用由[[{{tr|Asphalt Block}}]]和数层{{tr|platforms}}建造的大型{{tr|arena}}，尤其是急需机动性的在{{tr|day}}与{{tr|Empress of Light}}的战斗。 
+* 她不免疫''任何''有实际效果的[[{{tr|debuffs}}]]。这会是很好的额外伤害来源，尤其是使用[[{{tr|Ichor (debuff)}}|{{tr|Ichor}}]]、[[{{tr|Betsy's Curse}}]]、或[[{{tr|Daybroken}}]]时。
+* 在和{{tr|Empress of Light}}战斗时最好待在和她同高度或以下的位置，因为她每次攻击后会传送到玩家上方，待在她上方会更可能让玩家在{{tr|day}}被{{tr|contact damage}}杀死，或在{{tr|night}}承受不必要的伤害。
+
+== 花絮 ==
+* 由于{{tr|Empress of Light}}的{{tr|contact and dash damage}}的缩放方式，在[[{{tr|Journey Mode}}]]中如果在她被召唤后调整{{tr|difficulty slider}}，她的{{tr|contact and dash damage}}会不正常地提升或降低。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_120_HallowBoss|field=Terraria.NPC.strengthMultiplier}}例如，在{{tr|Expert}}（2×）/ {{tr|Master}}（3×）下召唤她，然后将{{tr|difficulty}}降低至{{tr|Classic}}（1×）会分别将她的{{tr|contact damage}}提升至 368 / 828，{{tr|dash damage}}提升至 552 / 1242。<!--When spawned at 2× difficulty, strengthMultiplier=2 (Expert) and is unchanged even if difficulty slider is adjusted; defDamage=80×strengthMultiplier; actual contact damage=defDamage×1 (Empress multiplier in Classic)×strengthMultiplier×1.15=368. Dash damage is 1.5×contact damage = 552; Same logic applies to Master (3×)-->在{{tr|Journey}}（0.5×）下召唤她，然后将{{tr|difficulty}}提升至{{tr|Expert}}（2×）或{{tr|Master}}（3×）会将她的{{tr|contact and dash damage}}分别降低至仅仅 6 和 9。
+* {{tr|Empress of Light}}目前是游戏中最快的 {{tr|Boss}}，无论玩家在她完成攻击前移动多远，她总是会传送到玩家位置上方发起下一次攻击。她的速度胜过了{{tr|enraged}}的[[{{tr|Skeletron}}]]、[[{{tr|Skeletron Prime}}]]、和[[{{tr|Queen Bee}}]]。
+* 在开发期间，[[Cenx]] 将这个 {{tr|Boss}} 描述为“华丽的弹幕地狱”（a beautiful bullet hell）。{{discord ref|type=Cenx' message|screenshot=File:Empress of Light bullet hell.png|date=07/16/2019}}
+** [[{{tr|Crowno}}]] 确认了{{tr|Empress of Light}}的设计受到日本游戏系列{{维基百科|b=y|Touhou Project|东方Project}}和其他{{维基百科|bullet hell|弹幕射击游戏}}的启发。<ref>[https://twitter.com/CrownoO/status/1266827332083494913 Twitter 上的 Crowno] {{note|small=y|{{date|2020|05|30}}}}</ref>
+* 假设玩家高 {{real-life size|48|feet}}（{{real-life size|48|meters}} 米），算上{{tr|Empress of Light}}的翼展，她将有 {{real-life size|188|feet}}（{{real-life size|188|meters}} 米）高、{{real-life size|368|feet}}（{{real-life size|368|meters}} 米）宽。
+* {{tr|The Empress of Light}}是 7 个拥有专属{{tr|music}}的 {{tr|boss}} 之一，其它的为[[{{tr|Queen Bee}}]]、[[{{tr|Deerclops}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Plantera}}]]、[[{{tr|Duke Fishron}}]]、和[[{{tr|Moon Lord}}]]。
+* 在{{tr|enraged}}时，{{tr|Empress of Light}}造成 {{formatnum:9999}} {{tr|contact damage}}，且她的{{tr|projectiles}}造成 {{formatnum:19998 / {{expert|39996}} / {{master|59994}}}} {{tr|damage}}，是首个且目前仅有的在{{tr|attack damage}}上超过了{{tr|Dungeon Guardian}}和{{tr|enraged}}的{{tr|Skeletron and Skeletron Prime}}的{{tr|enemy}}。
+** 然而，{{tr|Dungeon Guardian}}仍然是游戏中最坚韧的{{tr|enemy}}，其 {{formatnum:{{npcinfo|Dungeon Guardian|defense}}}} {{tr|defense}}意味着所有非{{tr|critical strikes}}伤害只能对它造成 1 {{tr|damage}}。
+* {{tr|Empress of Light}}是三个对于游戏进程没有必要击败的非{{tr|event}}{{tr|Hardmode bosses}} 之一，其它的为[[{{tr|Queen Slime}}]]和[[{{tr|Duke Fishron}}]]。
+* 她是仅有的在{{tr|enraged}}时会使用升级版攻击，而不仅仅是一种攻击的夜间 {{tr|boss}}。
+** 此外，她是仅有的会在{{tr|day}}{{tr|enraged}}且会在{{tr|night}}变回未{{tr|enraged}}状态的 {{tr|boss}}，不过若她在之前的{{tr|night}}未受伤害，她就会消失。
+* {{tr|Empress of Light}}使用的若干音效似乎是 1986 年美国科幻电影{{维基百科|Star Trek IV: The Voyage Home|t=星际旅行 4：抢救未来|b=y}}中[https://www.youtube.com/watch?v=1-vREvJHH9Y “鲸鱼探测器”的讯号]。
+* {{tr|Empress of Light}}的内部名称为 <code>HallowBoss</code>（{{tr|Hallow Boss}}）。
+* 她生成时的光效的内部名称为 <code>DeathAurora</code>（死亡极光）。
+* {{tr|Crowno}} 称{{tr|Empress of Light}}眼睛下方被某些人认为是嘴的 V 型线条（因为它看起来很像是在微笑）实际上是她的鼻子。<ref>[https://twitter.com/CrownoO/status/1266593848572227585 Crowno on Twitter] {{note|small=y|{{date|2020|05|30}}}}</ref>
+* 被杀死时，{{tr|Empress of Light}}的[[{{tr|gore}}]]显示出她的血液是蓝色的，类似于{{tr|Duke Fishron}}。{{维基百科|Nobility#Other terms|Blue blood|t=蓝色血液}}是形容贵族出身或血统的习语，这和此 {{tr|boss}} {{维基百科|Empress|t=女皇}}的称号相符合。
+* {{tr|The Empress of Light}}是仅有的两个只包含一个可破坏的实体的 {{tr|boss}} 战之一，另一个是[[{{tr|Deerclops}}]]。
+** 所有其他 {{tr|boss}} 战的组成都是下列情况之一：多个 {{tr|bosses}}、多个{{tr|segments}}、或是有{{tr|minions}}被召唤出来参与战斗。
+{{bestiary}}
+:* 这说明{{tr|Empress of Light}}在玩家杀死[[{{tr|Prismatic Lacewing}}]]后就将玩家视为污秽。
+:** 她也可能是因为玩家杀死了世界的守护者——[[{{tr|Wall of Flesh}}]]而感到愤怒。
+:* 这也许意味着{{tr|Empress of Light}}就是官方[[{{tr|lore}}]]中提到的古老的光明之魂。
+{{collapse top|内含传说}}
+[[File:Hallow lore.png]]
+{{collapse bottom}}
+
+== 另见 ==
+* {{item|Blue Fairy}}
+* {{item|Green Fairy}}
+* {{item|Pink Fairy}}
+* {{item|Pixie}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 修复了{{tr|Empress of Light}}有时会在攻击后直接传送到玩家身上的问题。
+** 现在占用非常多的{{tr|enemy slots}}，以便在战斗中减少或完全阻止{{tr|enemy}}生成。
+** “一击必杀”的攻击不再能用闪避的方式避免（如[[{{tr|Holy Protection}}]]或[[{{tr|Master Ninja Gear}}]]）。}}
+{{history|Desktop 1.4.1|现在会掉落[[{{tr|Rainbow Cursor}}]]，且会提供一个{{tr|achievement}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Empress of Light}}

@@ -1,0 +1,119 @@
+{{npc infobox
+| auto = 68
+| type = Flying Enemy
+| type2 = Undead Enemy
+| damage = 1000<!-- Dungeon Guardian's AI sets damage to 1000. {{source code ref|v=1.4.3.6|method=Terraria.NPC.AI}} -->
+| environment = Dungeon
+| Bone Key|1|100%
+| imageother = Map Icon Skeletron.png
+| imageothercaption = Map Icon
+| sound1 = Roar 0.wav
+| soundcaption1 = 生成
+}}
+
+'''{{tr|Dungeon Guardian}}'''是一个[[{{tr|enemy}}]]，很像[[{{tr|Skeletron}}]]的头部。如果玩家在[[{{tr|Skeletron}}]]尚未被打败的[[{{tr|world}}]]中进入{{tr|Dungeon}}，并到达[[{{tr|Layer}}|低于零深度]]的位置（[[{{tr|surface}}]]和[[{{tr|underground}}]]的边界），一个或更多{{tr|Dungeon Guardians}}会快速地飞向玩家，每个都能造成 {{npcinfo|Dungeon Guardian|damage}} 的{{tr|damage}}，这将立即杀死未经准备的玩家。{{tr|Dungeon Guardians}}体型较大，速度很快（在所有方向上以 41 [[{{tr|mph}}]] 的速度行进），并且能穿过一切[[{{tr|blocks}}]]。
+
+由于{{tr|Dungeon Guardian}}的极高{{tr|defense}}（{{npcinfo|Dungeon Guardian|defense}}），无论玩家使用的是什么[[{{tr|weapon}}]]或{{tr|equipment}}（极少数例外），对{{tr|Dungeon Guardian}}也只能造成 1 {{tr|damage}}，若[[{{tr|critical hit}}]]则为 2。这意味着{{tr|Dungeon Guardian}}正常情况下平均每次只会受到 1.04 伤害。虽然杀死{{tr|Dungeon Guardian}}是可能的（并且会奖励[[{{tr|Bone Key}}]]{{tr|pet summoning item}}），但这需要谨慎的准备。见[[#{{tr|Tips}}|{{tr|Tips}}]]部分来获取装备配置。
+
+{{eicons|1.4.4}}{{tr|The Dungeon Guardian}}的伤害会无视闪避效果（包括[[{{tr|Brain of Confusion}}]]、[[{{tr|Hallowed armor}}]]、和[[{{tr|Tabi}}]]）。<!--{{eicons|1.4.0.3}}-->{{tr|The Dungeon Guardian}}的[[{{tr|Bestiary}}]]条目会在击败{{tr|Skeletron}}后自动获得。
+
+== 备注 ==
+* {{eicons|Tizona}}{{tr|The Dungeon Guardian}}仅免疫[[{{tr|Bleeding}}]]。<!--{{eicons|1.4.1|invert=y}}{{tr|The Dungeon Guardian}}可受到[[{{tr|Frostburn}}]]、[[{{tr|Stunned}}]]、和[[{{tr|Bleeding}}]][[{{tr|debuffs}}]]。-->
+* {{tr|Dungeon Guardian}}免疫{{eil|Lightning Aura sentry summons}}的无视{{tr|defense}}的效果。
+* 虽然其名称如此，击败{{tr|Dungeon Guardian}}不会允许进入{{tr|Dungeon}}。这意味着必须击败{{tr|Skeletron}}才能进入{{tr|Dungeon}}。
+* 以平均每次造成 1.04 {{tr|damage}}计算，平均需要击中 9614 次才能在[[{{tr|Classic Mode}}]]下击败{{tr|Dungeon Guardian}}。
+* 要在击败{{tr|Skeletron}}前进入{{tr|Dungeon}}并存活下来，可以在被{{tr|Dungeon Guardian}}击中前使用传送物品，如{{eil|Cell Phone}}、[[{{tr|Magic Mirrors}}|{{tr|Magic Mirror or Ice Mirror}}]]、或[[{{tr|Recall Potion}}]]，但如果玩家传送的距离不足以让{{tr|Dungeon Guardian}}[[{{tr|NPC despawning}}|消失]]，它仍然会继续追逐玩家。<!-- Hardmode methods of teleportation do not apply here. -->
+* 要被视为在{{tr|Dungeon}}中，除了附近有至少 250 个[[{{tr|Dungeon Brick}}]]以外，玩家还必须位于[[{{tr|unsafe wall}}|不安全]]的[[{{tr|Dungeon Wall}}]]前（包括天然生成的{{tr|Dungeon Walls}}和{{eil|Cursed Dungeon Brick Wall|s|eicons={{eicons|Cursed Blue Brick Wall}}}}），且完全处于{{tr|underground}}。
+* 在{{tr|Skeletron}}被击败前，所有{{tr|Dungeon}}生成都会被{{tr|Dungeon Guardian}}覆盖，因此即使玩家以某种方式承受住{{tr|Dungeon Guardian}}的攻击（如使用{{eil|Journey Mode}}的无敌模式），也不可能遇到[[{{tr|Mechanic}}|{{tr|Bound Mechanic}}]]、[[{{tr|Angry Bones}}]]或其他{{tr|Dungeon enemies}}。
+** 不过，在 {{eil|drunk world}} 中，可以在不触发{{tr|Dungeon Guardian}}的生成的情况下遇到{{tr|Dungeon}}生成。
+* 和所有普通{{tr|enemies}}一样，{{tr|The Dungeon Guardian}}能够掉落[[{{tr|Heart}}]]和[[{{tr|Star}}]]。
+* {{eicons|1.3.0.1}}{{tr|The Dungeon Guardian}}拥有{{tr|map icon}}。
+** {{icon/old-gen}}在{{tr|map}}上，{{tr|the Dungeon Guardian}}是普通的代表{{tr|enemy}}的红色点。
+* {{eicons|1.3.5}}在具有最高[[{{tr|Defense|link=y}}#最高{{tr|defense}}|{{tr|defense}}]]和[[{{tr|Damage reduction|link=y}}#最高{{tr|damage reduction}}|{{tr|damage reduction}}]]时，可以在[[{{tr|Expert Mode}}]]下承受{{tr|Dungeon Guardian}}的 1 到 2 次攻击（不使用闪避{{tr|damage}}的效果，如[[{{tr|Black Belt}}]]）。
+* {{tr|Dungeon Guardians}}和任何其他[[{{tr|enemy}}]]一样受[[{{tr|NPC spawning}}#生成速度|生成限制]]的影响：填满所有生成栏位，{{tr|Dungeon Guardians}}就无法生成。
+* 虽然{{tr|Dungeon Guardians}}可以说是比游戏中其他{{tr|enemy}}都更难击败（无敌{{tr|enemy}}除外），它在游戏中并不视为一个 [[{{tr|boss}}]]。这很可能是因为给予其 {{tr|boss}} 的地位可能会让一些玩家认为需要击败它以推动游戏进度。
+
+== 小贴士 ==
+{{strategies}}
+由于击败{{tr|Dungeon Guardian}}所需的付出很高，且其仅有的[[{{tr|Bone Key}}]]纯粹是外观物品，从实用的角度来说击败{{tr|Dungeon Guardian}}是没有意义的，不过在{{old-gen console version}}中，“{{tr|Pet Hoarder}}”[[{{tr|achievement}}]]需要{{tr|Bone Key}}。大部分下列{{tr|tips}}都假设玩家将游戏后期或末期的{{tr|character}}带入一个新的，仍然能召唤{{tr|Dungeon Guardian}}的世界中，因为它们涉及到只有击败{{tr|Skeletron}}（或者{{eil|Moon Lord}}）后才能获得的物品。
+
+要在{{tr|Dungeon Guardian}}生成后快速到达{{tr|surface}}，玩家可以挖一个通到{{tr|Dungeon}}内的竖直坑道，然后在达到零深度时立即向上飞行。要在可预知的情况下生成{{tr|Dungeon Guardian}}，[[{{tr|Depth Meter}}]]及其升级几乎是必需的。在[[{{tr|multiplayer}}]]，可以简单地让另一位玩家把它引出来。
+
+在{{eil|Expert Mode}}或{{eil|Master Mode}}中，{{tr|Dungeon Guardians}}没有模式独有的掉落，但它拥有{{expert|双倍}}/{{master|三倍}}的{{tr|health}}。因此，在{{tr|Classic world}}中和{{tr|Dungeon Guardian}}战斗最容易，也最节省时间、{{tr|coin}}，还能避免不必要的麻烦。
+
+拥有高攻击速度或多次伤害的[[{{tr|Weapons}}]]较为适合，以补偿极低的伤害。每击造成的伤害在战斗中几乎无关，因为一切武器造成的伤害都会被降低至 1 或 2。不过，高[[{{tr|Critical hit}}|{{tr|critical chance}}]]是关键的，因为{{tr|critical hits}}可以极大地加快战斗。可选的选项包括：
+
+* {{eil|Zenith}}，其攻击速度极快，且能攻击屏幕上的任何位置。使用恰当的{{tr|melee accessories and armor}}，它能造成约 40–50 的{{DPS}}。
+* {{eil|Phantasm}}，使用[[{{tr|Luminite Arrow}}]]或[[{{tr|Endless Quiver}}]]。
+* [[{{tr|Chain Gun}}]]、[[{{tr|Megashark}}]]、或{{eil|S.D.M.G.}}，使用[[{{tr|Crystal Bullets}}]]或{{eil|Endless Musket Pouch}}。
+* [[{{tr|Piranha Gun}}]]，其伤害频率良好（7 {{DPS}}）且无需瞄准。它也不消耗{{tr|ammo}}。
+
+由于{{tr|Dungeon Guardian}}以 {{mph|41}} 移动，具有高[[{{tr|Player stats|link=y}}#{{tr|Horizontal movement}}|移动性能]]是必要的。{{eil|Witch's Broom}}（{{mountinfo|Witch's Broom|max speed}}）、{{eil|UFO Mount}}（{{mountinfo|UFO Mount|max speed}}）、或[[{{tr|Unicorn Mount}}]]（{{mountinfo|Unicorn Mount|max speed}}）都很适合，此外许多类型的[[{{tr|wings}}]]都能达到超过 {{mph|41}} 的速度，尤其是可悬浮{{tr|wings}}搭配{{eil|Soaring Insignia}}后。[[{{tr|Rod of Discord}}]]或[[{{tr|Rod of Harmony}}]]有助于在世界边缘转向。
+
+{{eicons|1.4.1|invert=y}}对于{{tr|ranged and melee}}使用者，非常推荐[[{{tr|Frost armor}}]]，因为{{tr|Dungeon Guardian}}不免疫[[{{tr|Frostburn}}]]{{tr|debuff}}。
+
+{{eicons|1.4.0.1|invert=y}}装备全套[[{{tr|Titanium armor}}]]允许玩家偶尔[[{{tr|Shadow Dodge}}|闪避]]致命的攻击。提供闪避能力的{{tr|Accessories}}也有所帮助。
+
+另一种复杂而有效的杀死{{tr|Dungeon Guardian}}的方式为将其引入环形 [[{{tr|hoik}}]] 中，并投掷[[{{tr|boomerang}}]]。这会使得它无法追上玩家，并不断受到{{tr|boomerang}}的伤害。
+
+从{{eicons|1.4.4}}[[{{tr|Mechanic}}]]/{{eicons|1.4.4|invert=y}}[[{{tr|Steampunker}}]] {{tr|NPC}} 处购买[[{{tr|Teleporter}}]]，然后间隔较远距离放置它们也是一种可行的战术。类似地，{{eil|Portal Gun}}可以让玩家持续被传送，这会使得{{tr|Dungeon Guardian}}几乎无法击中玩家。
+
+== 花絮 ==
+* 最初，[[{{tr|Skeletron}}]]头部会在{{tr|day}}生成，且它们非常弱。此外，击败所有{{tr|Skeletron Head}}会允许玩家进入{{tr|Dungeon}}，直接跳过{{tr|Skeletron}}本身。{{tr|The Dungeon Guardian}}被{{tr|Introduced}}以阻止这一偏离原本设计的行为。<ref>[https://web.archive.org/web/20160604212247/http://www.terrariaonline.com/threads/1-0-5-changelog.33191 1.0.5 Patchlog]: “Entering the dungeon before defeating Skeletron now spawns a new NPC instead of Skeletron's head. This should fix several issues with that event.”（现在在击败{{tr|Skeletron}}前进入{{tr|dungeon}}时会生成一个新{{tr|NPC}}，而非{{tr|Skeletron}}的头部。这应当会修复和这一事件相关的数个问题。）</ref>
+* 虽然{{tr|Dungeon Guardian}}意图设计为无法被击败，它并不像[[{{tr|Spike Ball}}]]、[[{{tr|Blazing Wheel}}]]、和{{eil|True Eye of Cthulhu}}等等{{tr|enemy}}一样是无敌的。
+* {{tr|Dungeon Guardian}}在{{eversions|1.3.0.1|short|old-gen=y}}中没有[[{{tr|Gore ID}}|{{tr|Gore}}]]，但在{{eversions|1.3.0.1|invert=y|old-gen=n}}中，在它死亡时会出现{{tr|Skeletron}}的手的{{tr|Gore}}。
+* {{tr|Dungeon Guardian}}使用了[[{{tr|Skeletron}}]]在 [[1.3.5]] 前的旧外观。
+* 当玩家向左行进时，{{tr|Dungeon Guardian}}会顺时针旋转，向右行进时则逆时针旋转。
+* {{eil|Master Mode}}的{{tr|Dungeon Guardian}}在游戏中的非 {{tr|boss}}、非{{tr|event}}{{tr|enemy}}中具有最高的{{tr|health}}。
+* 在 2011 年，YouTube 创作者 Yrimir 上传了他在游戏版本约为 [[1.1]] 时杀死{{tr|Dungeon Guardian}}的视频。这使得开发者添加了{{tr|Bone Key}}作为击败{{tr|Dungeon Guardian}}的奖励，因为在当时{{tr|Dungeon Guardian}}什么都不会掉落。<ref name=video>https://www.youtube.com/watch?v=0I6J977n_2k Terraria - Dungeon Guardian Kill (Revenge of the Fallen Terrarians)</ref>
+{{bestiary}}
+:* {{tr|bestiary}}条目的最后一句：“没有资格的人将无法进入！”（Those who are deemed unworthy shall not pass!）可能参考了{{维基百科|b=y|The Lord of the Rings|t=指环王}}，其中角色{{维基百科|Gandalf|t=甘道夫}}的一句台词为“You shall not pass!”（你不得通过！）
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|The Dungeon Guardian}}现在无视提供闪避能力的物品，例如[[{{tr|Hallowed Armor}}]]或[[{{tr|Master Ninja Gear}}]]。}}
+{{history|Desktop 1.4.1|现在免疫所有{{tr|debuffs}}。之前和[[{{tr|Skeletron}}]]免疫相同的{{tr|debuff}}。}}
+{{history|Desktop 1.4.0.3|{{tr|The Dungeon Guardian}}的[[{{tr|Bestiary}}]]条目现在会在击败[[{{tr|Skeletron}}]]时获得。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Dungeon Guardians}}，以及任何其他使用{{tr|Dungeon Guardian AI}} 的{{tr|enemy}}（{{tr|day}}期间的{{tr|Skeletron}}和[[{{tr|Skeletron Prime}}]]）的速度被增强，它们在空旷空间飞行的速度会更快。
+** 如果{{tr|Dungeon Guardian}}正在穿过{{tr|blocks}}，其速度会变慢。
+** 当尝试使用[[{{tr|Asphalt Block}}]]甩开{{tr|Dungeon Guardian}}时，它会一直追逐玩家，并和玩家保持一定距离，直到玩家停下或者它穿过{{tr|blocks}}。}}
+{{history|Desktop 1.2.3|
+** {{tr|AI}} 重置的问题修复，不再会导致[[{{tr|Turtle armor}}]]造成巨额伤害。这一伤害现在会被降低到 1，和所有其他攻击一样。
+** {{tr|Defense}}由 9000 提升至 9999。}}
+{{history|Desktop 1.2.0.3|{{tr|Damage}}由 9000 降低至 1000，以防止{{tr|Turtle armor}}造成过量伤害。然而，这一漏洞仍然有效，因为{{tr|Dungeon Guardian}}的{{tr|AI}}会重置伤害。<ref>[http://web.archive.org/web/20160604213357/http://www.terrariaonline.com/threads/im-not-sure-if-the-devs-know.120197/ www.terrariaonline.com → Forums → Terraria → General Talk → PC → thread: I'm not sure if the devs know]</ref>}}
+{{history|Desktop 1.2|现在在死亡时会掉落[[{{tr|Bone Key}}]]。}}
+{{history|Desktop 1.0.5|{{tr|Introduced}}，代替[[{{tr|Skeletron}}|{{tr|Skeletron Heads}}]]作为{{tr|Dungeon}}的守卫者。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** {{tr|Dungeon Guardians}}，以及任何其他使用{{tr|Dungeon Guardian AI}} 的{{tr|enemy}}（{{tr|day}}期间的{{tr|Skeletron}}和{{tr|Skeletron Prime}}）的速度被增强，它们在空旷空间飞行的速度会更快。
+** 如果{{tr|Dungeon Guardian}}正在穿过{{tr|blocks}}，其速度会变慢。
+** 当尝试使用{{tr|Asphalt Block}}甩开{{tr|Dungeon Guardian}}时，它会一直追逐玩家，并和玩家保持一定距离，直到玩家停下或者它穿过{{tr|blocks}}。}}
+{{history|Console 1.06|
+** 现在{{tr|Turtle armor}}在对{{tr|Dungeon Guardian}}反伤时只会造成 1 {{tr|damage}}。
+** {{tr|Defense}}由 9000 提升至 9999。}}
+{{history|Console 1.02|
+** {{tr|damage}}由 9000 降低至 1000，以防止利用{{tr|Turtle armor}}。
+** 现在在死亡时会掉落{{tr|Bone Key}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.3.0.7|
+** {{tr|Dungeon Guardians}}，以及任何其他使用{{tr|Dungeon Guardian AI}} 的{{tr|enemy}}（{{tr|day}}期间的{{tr|Skeletron}}和{{tr|Skeletron Prime}}）的速度被增强，它们在空旷空间飞行的速度会更快。
+** 如果{{tr|Dungeon Guardian}}正在穿过{{tr|blocks}}，其速度会变慢。
+** 当尝试使用{{tr|Asphalt Block}}甩开{{tr|Dungeon Guardian}}时，它会一直追逐玩家，并和玩家保持一定距离，直到玩家停下或者它穿过{{tr|blocks}}。}}
+{{history|Mobile 1.2.11212|
+** 现在{{tr|Turtle armor}}在对{{tr|Dungeon Guardian}}反伤时只会造成 1 {{tr|damage}}。
+** {{tr|Defense}}由 9000 提升至 9999。}}
+{{history|Mobile 1.2.6508|
+** {{tr|damage}}由 9000 降低至 1000，以防止利用{{tr|Turtle armor}}。
+** 现在在死亡时会掉落{{tr|Bone Key}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，死亡时掉落{{tr|Bone Key}}且伤害属性为 1000。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Dungeon Guardian}}

@@ -1,0 +1,38 @@
+{{expert mode only}}
+{{exclusive|Expert Mode}}
+{{item infobox
+| type = Permanent booster
+| auto = 3335
+| tags = bag loot / treasure Bag loot
+| hardmode = yes
+}}
+{{drop infobox|style=clear:right}}
+{{about|{{tr|the Expert}}独有的{{tr|consumable}}|{{tr|the Crimson}}中找到的可破坏{{tr|background object}}|{{tr|Crimson Heart}}|{{tr|the Corruption}}中找到的可破坏{{tr|background object}}|{{tr|Shadow Orb}}}}
+
+'''{{tr|Demon Heart}}'''是一件[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]独有的[[{{tr|Consumables|link=y}}#{{tr|Permanent boosters}}|{{tr|permanent booster}}]]{{tr|item}}，可以在[[{{tr|Wall of Flesh}}]]的[[{{tr|Treasure Bag}}]]中找到。它会永久为玩家提供一个仅能在{{tr|Expert}}和{{tr|Master worlds}}中使用的[[{{tr|accessory}}]]栏。此效果不会叠加，每个{{tr|character}}只能使用一次。如果玩家在已经使用{{tr|Demon Heart}}的情况下打开{{tr|Wall of Flesh}}的{{tr|Treasure Bag}}，不会再次获得一个{{tr|Demon Heart}}。{{source code ref|v=1.4.1.1|{{code|Terraria.Player.cs}}中的{{code|OpenBossBag()}}函数。}}
+
+如果已经使用{{tr|Demon Heart}}的玩家进入一个[[{{tr|Classic Mode}}]]{{tr|world}}（一个非{{tr|Expert}}/{{tr|Master world}}），额外的{{tr|accessory slot}}会被暂时禁用，装备在其中的物品的功能性和视觉性效果会被移除，且栏位本身会变暗。在{{tr|Classic worlds}}中的玩家也无法将物品装备到第六/第七个栏位中，不过已经装备在栏位中的物品可以被移下。
+
+== {{tr|Notes}} ==
+* 如果玩家在{{tr|Expert}}/{{tr|Master Mode}}的额外栏位中装备了[[{{tr|wings}}]]，然后返回到{{tr|Classic world}}中，玩家仍然能够免疫[[{{tr|fall damage}}]]。
+
+== {{tr|Trivia}} ==
+* {{tr|The Demon Heart}}是数个无法被装备在任何{{tr|accessory}}或{{tr|equipment slot}}的{{tr|Expert Mode}}物品之一，其它的为[[{{tr|Mechanical Cart}}]]的三个部件。
+* 它也是{{tr|Expert}}/{{tr|Master}}独有物品中仅有的{{tr|consumable}}。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.0.4|修复了新{{tr|characters}}可能会直接解锁第 6 个{{tr|accessory slot}}的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Expert mode items}}
+{{Master Template Consumables
+| show-potion = yes
+}}
+{{language info|en=Demon Heart}}

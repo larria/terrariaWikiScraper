@@ -1,0 +1,237 @@
+{{exclusive|1.2.3}}
+{{infobox wrapper
+|{{npc infobox|tabs=y|boxwidth=18em
+| auto = 353
+| type = NPC
+| environment = Spider Nest/Valid house
+| damage ={{modes|10|15|17}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ItemName.StylistKilLaKillScissorsIWish}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| Stylish Scissors|1|12.5%
+| imageother = Map Icon Stylist.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+|{{npc infobox|boxwidth=18em
+| auto = 354
+| type = NPC
+| environment = Spider Nest
+}}
+}}
+
+'''{{tr|Stylist}}'''是一位能改变玩家[[{{tr|Hairstyles}}]]和发色的 [[{{tr|NPC}}]]。她也出售各种能为玩家的头发加上动态效果的[[{{tr|Hair Dye}}]]。
+
+{{tr|Hair Dyes}}的价格从 {{gc|5}} 到 {{gc|30}} 不等。换成另一种普通{{tr|hairstyle}}（仅限样式 [[{{tr|Hairstyles}}|#1 到 #51]]）需要花费 {{gc|2}} {{eicons|1.4.0.1}} / {{gc|1}} {{eicons|Stylist|not=1.4.0.1}}，而换成任何一种其他{{tr|hairstyles}}（包括所有{{tr|Stylist}}独家{{tr|hairstyles}}）需要花费 {{gc|20}} {{eicons|1.4.0.1}} / {{gc|5}} {{eicons|Stylist|not=1.4.0.1}}；改变头发颜色需要花费 {{gc|2}} {{eicons|1.4.0.1}} / {{gc|1}} {{eicons|Stylist|not=1.4.0.1}}。
+
+在{{eversions|1.4.0.1}}中，{{tr|the Stylist}}的价格会随着她的[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|Happiness}}]]程度不同而有所差异；这还会影响她更换{{tr|hairstyle}}及颜色的价格，具体如下：更换选定{{tr|hairstyle}}及{{tr|hair color}}的{{tr|cost}}要乘以她基于{{tr|happiness}}的价格乘数，然后四舍五入到最接近的整 {{gc|}}。因此，更换{{tr|hairstyles}}的{{tr|cost}}会是 {{gc|2}} - {{gc|3}}（对于基本发型）或 {{gc|15}} - {{gc|30}}（对于贵的发型）；更换{{tr|hair colors}}的{{tr|cost}}会是 {{gc|2}} - {{gc|3}}；而同时更换{{tr|hairstyle}}和{{tr|hair color}}的{{tr|cost}}会是 {{gc|3}} 到 {{gc|33}}。{{source code ref|v=1.4.0.5|name=prices|method=Terraria.Main.DrawHairWindow}}
+
+{{tr|The Stylist}}可在[[{{tr|Spider Cave}}]]中作为静止的'''{{tr|Webbed Stylist}}'''找到。和她对话会将其释放，随后她会在有空余[[{{tr|House}}]]可用时搬进去。和类似 {{tr|NPCs}} 一样，她会像{{tr|enemies}}一样[[{{tr|NPC spawning}}|{{tr|spawns}}]]——玩家应调整自己的位置，让{{tr|Spider Cave}}刚好处在屏幕之外，每隔一会就过去检查一下是否有生成，这样会很容易发现到她。如果{{tr|Webbed Stylist}}被杀死，她之后仍会重生；如果{{tr|Stylist NPC}} 被杀死，只要有空余[[{{tr|house}}]]，她会在一段时间后再次入住。
+
+在{{eversions|1.3.0.1}}上，当遇到{{tr|enemies}}时，{{tr|the Stylist}}会用[[{{tr|Stylish Scissors}}]]自卫，在游戏开始时造成 10 / {{expert|15}} / {{master|17}} {{tr|damage}}，并且（在{{eversions|1.4.0.1}}上）她会随着玩家的进程得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/> 注意，{{tr|Stylish scissors}}的{{tr|knockback}}完全保护她免受几乎所有{{tr|ghost}}类{{tr|enemy}}的伤害。在她死亡时也会掉落{{tr|Stylish scissors}}。注意她只在被释放后才会自卫，依然被网住时是不行的。
+
+{{Lifeform Analyzer note|The Webbed Stylist}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Gentleman's Beard}}
+|{{shop row|Hair Dye Remover}}
+|{{shop row|Depth Hair Dye}}
+|{{shop row|Life Hair Dye|如果玩家最大生命值至少有 400。}}
+|{{shop row|Mana Hair Dye|如果玩家最大魔力值至少有 200。}}
+|{{shop row|Money Hair Dye|如果玩家{{tr|inventory}}中有至少 {{pc|1}}。}}
+|{{shop row|Time Hair Dye|在[[{{tr|moon phase}}]] 2、4、6、和 8 的夜晚和随后的白天区间：{{moons|2|4|6|8}}。}}
+|{{shop row|Team Hair Dye|[[{{tr|Multiplayer}}]]中，当玩家在队伍中时。}}
+|{{shop row|Party Hair Dye|当世界中有[[{{tr|Party Girl}}]]时。}}
+|{{shop row|Biome Hair Dye|当世界处于[[{{tr|Hardmode}}]]时。}}
+|{{shop row|Speed Hair Dye|当世界处于[[{{tr|Hardmode}}]]且有任一[[{{tr|Mechanical Bosses}}|{{tr|Mechanical Boss}}]] 已被打败。}}
+|{{shop row|Rainbow Hair Dye|当世界处于[[{{tr|Hardmode}}]]且全部三个[[{{tr|Mechanical Bosses}}]] 都已被打败。}}
+|{{shop row|Martian Hair Dye|[[{{tr|Martian Madness}}]]后。}}
+|{{shop row|Twilight Hair Dye|[[{{tr|Martian Madness}}]]后。}}
+|{{shop row|Any Pylon|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。|value={{iteminfo|4876|buy}}}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Stylist (Shimmered).png]] [[File:Map Icon Stylist (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Stylist}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Stylist}}会变形为她的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将她再次浸没在{{tr|Shimmer}}中的方式来将她变回经典外观。
+{{-}}
+== 备注 ==
+* 由于[[{{tr|Spider Cave}}]]是在 [[1.2]] 补丁中加入的，因此在 1.2 之前所创建的世界中不通过第三方软件是无法取得{{tr|the Stylist}}的。
+** 尽管{{eil|Spider Wall|s}}在{{eversions|1.4.0.1}}中是可制作的，但制作出来的版本是[[{{tr|safe wall}}]]，并不算作{{tr|Spider Cave}}的一部分，因此依然无法让玩家得到{{tr|the Stylist}}。应当使用{{eil|Infested Spider Wall|s}}。
+
+== 小贴士 ==
+* 使用[[{{tr|Battle Potion}}]]和[[{{tr|Water Candle}}]]并跑进跑出{{tr|Spider Cave}}会让{{tr|Webbed Stylist}}更可能生成。
+* {{tr|A Webbed Stylist}}可被{{tr|spiders}}（{{tr|pre-hardmode}}的[[{{tr|Wall Creeper}}]]和{{tr|hardmode}}的[[{{tr|Black Recluse}}]]）伤害或杀死。因此寻找红色的伤害数字能更容易发现她。
+* 由于在{{tr|Hardmode}}早期难以对付{{tr|Black Recluses}}，因此推荐在{{tr|pre-Hardmode}}去寻找{{tr|Stylist}}。
+* 获得后，{{tr|the Stylist}}是最容易让其变得快乐的 {{tr|npc}} 之一。将其和[[{{tr|Dye Trader}}]]（很容易得到的 NPC）一起放在[[{{tr|Ocean}}]]（这是个只要到达了之后就能相对安全地在其中进行建造的{{tr|biome}}）中，就能以常规价格的 126% 将物品卖给她。
+** 这还能允许购买[[{{tr|Ocean Pylon}}]]，使得来往于生成点和{{tr|Ocean}}变得更加方便。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.299}}”
+* “{{gameText|LegacyDialog.301}}”
+* “{{gameText|LegacyDialog.313}}”
+* “{{gameText|LegacyDialog.314}}”
+* “{{gameText|LegacyDialog.287}}”
+* “{{gameText|LegacyDialog.288}}”
+* “{{gameText|LegacyDialog.289}}”
+* “{{gameText|LegacyDialog.290}}”
+* “{{gameText|LegacyDialog.294}}”
+* “{{gameText|LegacyDialog.295}}”
+* “{{gameText|LegacyDialog.296}}”
+* “{{gameText|LegacyDialog.297}}”
+* “{{gameText|LegacyDialog.298}}”
+
+'''首次见面时：'''
+* “{{gameText|LegacyDialog.315}}”
+* “{{gameText|LegacyDialog.316}}”
+* “{{gameText|LegacyDialog.317}}”
+
+'''如果玩家人物是男性：'''
+* “{{gameText|LegacyDialog.293}}”
+* “{{gameText|LegacyDialog.300|x_Stylist=&lt;{{tr|Stylist}}的名字&gt;}}”
+
+'''如果玩家人物是女性：'''
+* “{{gameText|LegacyDialog.291}}”
+* “{{gameText|LegacyDialog.292}}”
+* “{{gameText|LegacyDialog.312}}”
+
+'''在早晨：'''
+* “{{gameText|LegacyDialog.311}}”
+
+'''[[{{tr|Demolitionist}}]]存在时：'''
+* “{{gameText|LegacyDialog.303|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+'''[[{{tr|Mechanic}}]]、[[{{tr|Party Girl}}]]、和[[{{tr|Nurse}}]]在场时：'''
+* “{{gameText|LegacyDialog.307|x_PartyGirl=&lt;{{tr|Party Girl}}的名字&gt;|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''[[{{tr|Party Girl}}]]存在时：'''
+* “{{gameText|LegacyDialog.302|x_PartyGirl=&lt;{{tr|Party Girl}}的名字&gt;}}”
+
+'''[[{{tr|Cyborg}}]]存在时：'''
+* “{{gameText|LegacyDialog.308|x_Cyborg=&lt;{{tr|Cyborg}}的名字&gt;}}”
+
+'''当{{eil|Tavernkeep}}存在时：'''
+* “{{gameText|StylistChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.304}}”
+* “{{gameText|LegacyDialog.305}}”
+* “{{gameText|LegacyDialog.306}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|StylistSpecialText.Party}}”
+
+'''[[{{tr|Rain}}|下雨]]时 {{eicons|1.4.0.1|small=y}}：'''
+* “{{gameText|StylistSpecialText.Rain1}}”
+* “{{gameText|StylistSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|StylistSpecialText.Storm1}}”
+* “{{gameText|StylistSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|StylistSpecialText.Windy1}}”
+* “{{gameText|StylistSpecialText.Windy2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|StylistSpecialText.Graveyard1}}”
+* “{{gameText|StylistSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Stylist.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Stylist.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Stylist.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Stylist.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Stylist.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Stylist.HateCrowded}}”
+
+'''在[[{{tr|Ocean}}]]中：'''
+* “{{gameText|TownNPCMood_Stylist.LikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''在[[{{tr|Snow biome}}]]中时：'''
+* “{{gameText|TownNPCMood_Stylist.DislikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Stylist.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Dye Trader}}]]时：'''
+* “{{gameText|TownNPCMood_Stylist.LoveNPC|x_NPCName=&lt;{{tr|Dye Trader}}的名字&gt;}}”
+
+'''靠近[[{{tr|Pirate}}]]时：'''
+* “{{gameText|TownNPCMood_Stylist.LikeNPC|x_NPCName=&lt;{{tr|Pirate}}的名字&gt;}}”
+
+'''靠近[[{{tr|Tavernkeep}}]]时：'''
+* “{{gameText|TownNPCMood_Stylist.DislikeNPC|x_NPCName=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''靠近[[{{tr|Goblin Tinkerer}}]]时：'''
+* “{{gameText|TownNPCMood_Stylist.HateNPC|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Stylist.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+*{{tr|The Stylist}}是一个官方的 {{tr|NPC}} 设计大赛的结果，是 [https://web.archive.org/web/20160201132601/http://www.terrariaonline.com/threads/npc-design-contest.104368/page-67#post-2216742 Salonist]（美发师）的重度修改后的版本。在[https://web.archive.org/web/20160617225918/http://www.terrariaonline.com/threads/terraria-1-2-3.132539/ 1.2.3 变更日志]中记录及感谢了原始发布者、TerrariaOnline 用户 bwdy（也叫 avarisc 或 Ripsand），以及用户 Omnir，他贡献了多个{{tr|hairstyles}}。
+* 她的话“{{gameText|LegacyDialog.317}}”是 [http://knowyourmeme.com/memes/laundry-room-viking Laundry Room Viking] 模因的实例之一。
+** 虽然她这样说，但她一旦被释放后就会用{{tr|Stylish Scissors}}攻击{{tr|enemy}}。
+** 句式“X they said, it would be Y they said（他们说，X。他们说，会Y）”派生自法国漫画书《{{wikipedia|Asterix}}》（1959 年首次出版）。其中一句话翻译成英文是“Join up, they said! It's a man's life, they said!（他们说，入伍吧！他们说，这是男子汉的生活！）”
+* 有一句话里，她将{{tr|the Dye Trader}}称为“染发大师”（Dye Master）。
+* 尽管她会说“{{gameText|LegacyDialog.290}}”，但她既不卖[[{{tr|Teacup}}|{{tr|tea}}]]也不卖[[{{tr|coffee}}]]。此外，在游戏的任何版本中都不存在橙汁。
+* {{tr|The Stylist}}似乎被[[{{tr|Dye Trader}}]]所吸引，可从她的{{tr|happiness}}话语“{{gameText|TownNPCMood_Stylist.LoveNPC|x_NPCName=&lt;{{tr|Dye Trader}}的名字>}}”中看出。但是，他并没有话语表明类似的感受，所以这并不是相互的。
+* 她的话语“{{gameText|StylistSpecialText.Storm1}}”指的是物理学家{{wikipedia|Albert Einstein|阿尔伯特·爱因斯坦}}经常被描绘为拥有爆炸头发型的事情。此话语只会在{{tr|storms}}期间出现，这可进一步证明这点。
+* 她的话语“{{gameText|TownNPCMood_Stylist.DislikeCrowded}}”证明，{{tr|the Stylist}}应该有一些关于被困在{{tr|Spider Cave}}的挥之不去的创伤。尽管如此，她并不反感住在[[{{tr|Underground}}]]{{tr|biome}}中。
+{{float file box|style=clear:right|[[File:Gore 543.png]] [[File:Gore 544.png]]|{{tr|Stylist}}的头部和头发的血污碎块。}}
+* 在游戏文件中{{tr|Stylist}}的头部和头发有独立的“[[血污]]”图像。
+{{float file box|style=clear:right|[[File:Painter (no hat).png]] [[File:Demolitionist (no hat).png]]|不戴帽子的{{tr|Painter}}和{{tr|Demolitionist}}。}}
+* 从{{tr|Stylist}}对{{tr|Tavernkeep}}和{{tr|Goblin Tinkerer}}的评价可以得知，她讨厌光头。但{{tr|Stylist}}却不反感同样是光头的{{tr|Painter}}和{{tr|Demolitionist}}。
+** 她在话语中会单独评价到{{tr|Demolitionist}}的头皮：“{{gameText|LegacyDialog.303|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.3|现在出售[[{{tr|Gentleman's Beard}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落[[{{tr|Stylish Scissors}}]]。
+** 现在出售[[{{tr|Martian Hair Dyes}}]]和[[{{tr|Twilight Hair Dyes}}]]。}}
+{{history|Desktop 1.2.3.1|
+** 修正了当玩家未达到要求时，{{tr|Stylist}}的售卖列表中会有个空位的 {{tr|Bug}}。
+** 修正{{tr|the Stylist}}的名字“Esmeralda”，使其末尾没有空格。
+** 修正了[[{{tr|Queen Statue}}]]不传送{{tr|Stylist}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在会掉落{{tr|Stylish Scissors}}。
+** 现在出售{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}。}}
+{{history|Console 1.08|引入了{{tr|Stylist}}以及[[{{tr|Hair Dye}}]]（{{tr|Life Hair Dye}}、{{tr|Mana Hair Dye}}、{{tr|Depth Hair Dye}}、{{tr|Money Hair Dye}}、{{tr|Time Hair Dye}}、{{tr|Team Hair Dye}}、{{tr|Biome Hair Dye}}、{{tr|Party Hair Dye}}、{{tr|Rainbow Hair Dye}}、和{{tr|Speed Hair Dye}}）和{{tr|Hair Dye Remover}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 现在会掉落{{tr|Stylish Scissors}}。
+** 现在出售{{tr|Martian Hair Dyes}}和{{tr|Twilight Hair Dyes}}。
+** 商店机制更新为与{{tr|Desktop}} 1.3.0.1 一致。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Stylist}}

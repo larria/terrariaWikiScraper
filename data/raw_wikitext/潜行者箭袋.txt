@@ -1,0 +1,37 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4006
+| tags = hardmode
+}}
+
+'''{{tr|Stalker's Quiver}}'''是一个[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，结合了[[{{tr|Magic Quiver}}]]和[[{{tr|Putrid Scent}}]]的降低[[{{tr|aggro}}]]的效果。和常规的[[{{tr|ranged damage}}]]{{tr|bonuses}}不同，它只提高{{tr|weapons}}的伤害，而不会影响[[{{tr|ammo}}]]的伤害。
+
+和大多数用{{tr|Putrid Scent}}制作的{{tr|accessories}}一样，它''没有''继承{{tr|Putrid Scent}}的{{tr|damage}}和{{tr|critical strike chance bonus}}。它可以被视为[[{{tr|Berserker's Glove}}]]的{{tr|corruption counterpart}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Stalker's Quiver|expectedrows=1}}
+
+== 备注 ==
+* 由于{{tr|Stalker's Quiver}}不会提高{{tr|ammunition}}的伤害，其实际伤害提升少于 10%。
+* {{tr|Stalker's Quiver}}的提高 10% {{tr|arrow damage}}的效果可以和[[{{tr|Magic Quiver}}]]和[[{{tr|Molten Quiver}}]]叠加；不过，{{tr|arrow}}的[[{{tr|velocity}}]]和[[{{tr|ammo conservation}}]]几率不会叠加。
+* 额外的{{tr|arrow velocity}}通过将{{tr|arrow}}的 <code>[[extraUpdates]]</code> 值设为 1 来实现。这不会影响下列{{tr|projectiles}}，因为它们的 <code>extraUpdates</code> 值已经为 1（或更高）：[[{{tr|Jester's Arrow}}]]、[[{{tr|Ichor Arrow}}]]、[[{{tr|Venom Arrow}}]]、[[{{tr|Stake}}]]、[[{{tr|Blood Rain Bow}}]]的{{tr|Blood Rain}}、[[{{tr|Marrow}}]]的{{tr|Bone Arrow}}、[[{{tr|Ice Bow}}]]的{{tr|Frost Arrow}}、[[{{tr|Pulse Bow}}]]的{{tr|Pulse Bolt}}、[[{{tr|Aerial Bane}}]]的特殊{{tr|arrow}}、和[[{{tr|Phantasm}}]]的{{tr|Phantasm Arrow}}。
+
+== 小贴士 ==
+* 由于{{tr|Stalker's Quiver}}不会提高{{tr|ammunition}}的伤害，它可能比其{{tr|crafting material}}[[{{tr|Putrid Scent}}]]提供更少的 {{DPS}} 提升，{{tr|Putrid Scent}}能提高 5% {{tr|damage and critical strike chance}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage bonus}}现在和其他{{tr|ranged damage bonuses}}加算，而非乘算。
+** {{tr|Projectile speed bonus}}也会增加从{{tr|ammo}}处取得的速度了，之前，它仅提升{{tr|bow}}的{{tr|projectile}}的速度值。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Stalker's Quiver}}

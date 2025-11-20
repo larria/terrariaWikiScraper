@@ -1,0 +1,144 @@
+{{buff infobox
+| auto = 20
+| effects = 每秒 {{eicons|1.4.4}} −6 / {{eicons|1.4.4|invert=y}} −2 {{tr|health}}<br/>无{{tr|health regeneration}}
+|Bezoar|Medicated Bandage|Ankh Charm|Ankh Shield
+}}
+[[File:Dart Trap (demo).gif|thumb|right|由[[{{tr|Dart Trap}}]]造成的{{tr|Poisoned}}。]]
+
+'''{{tr|Poisoned}}'''是一个[[{{tr|Debuffs}}|{{tr|debuff}}]]，它会阻止{{tr|health regeneration}}并导致受影响的 {{tr|NPC or player}}在{{tr|debuff duration}}内每秒受到伤害。玩家在装备了[[{{tr|Bezoar}}]]或其升级物时对{{tr|Poisoned}}免疫。受{{tr|Debuff}}影响的实体色调发绿，且{{eicons|1.4.0.1}}玩家在{{tr|debuff duration}}内会眯起眼睛。其伤害随[[{{tr|Game platform}}|{{tr|platform}}]]而有所不同：
+
+* {{eicons|1.4.4}}对{{tr|enemies}}施加时每秒造成 6 伤害，对玩家施加时每秒造成 2 伤害。
+* {{eicons|1.4.4|invert=y}} 对任何实体都每秒造成 2 伤害。
+
+{{eicons|1.4.1|invert=y|short=y}} 免疫{{tr|Poisoned}}的{{tr|Enemies}}也同时免疫[[{{tr|Acid Venom}}|{{tr|Venom}}]]。
+
+== 原因 ==
+=== 来自玩家 ===
+{| class="terraria sortable"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+{{debuff source|Blade of Grass}} || {{eicons|1.4.4}} 42 / {{eicons|1.4.4|invert=y}} 14
+{{debuff source|Hornet Staff|4–7 {{tr|seconds}}|100%}} || {{eicons|1.4.4}} 24–42 / {{eicons|Hornet Staff|not=1.4.4}} 8–14
+{{debuff source|Thorn Chakram}} || {{eicons|1.4.4}} 42 / {{eicons|1.4.4|invert=y}} 14
+{{debuff source|Snapthorn}} || 18
+{{debuff source|Tonbogiri|?|?}} || ?
+{{debuff source|Toxikarp}} || 60–174
+{{debuff source|Poison Dart}} || {{eicons|1.4.4}} 180–360 / {{eicons|1.4.4|invert=y}} 60–120
+{{debuff source|Poisoned Knife}} || {{eicons|1.4.4}} 60 / {{eicons|1.4.4|invert=y}} 20
+{{debuff source|Poison Staff}} || {{eicons|1.4.4}} 180 / {{eicons|1.4.4|invert=y}} 60
+{{debuff source|Flask of Poison|5–10 {{tr|seconds}}|100%}} || {{eicons|1.4.4}} 30–60 / {{eicons|1.4.4|invert=y}} 10–20
+{{debuff source|Spore Sac}} || 30–60
+|}
+
+=== 来自敌怪 ===
+{| class="terraria sortable"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|mode=table|wrap=y|Hornet|note=（{{tr|Stinger attack}}）}}
+| 10 / {{expert|2–10 或 20}} {{tr|seconds}}
+| {{chance|1/3}} / {{expert|{{chance|1/1}}}}
+| 20 / {{expert|4–20 或 40}}
+|-
+| {{item|mode=table|wrap=y|Moss Hornet|note=（{{tr|Stinger attack}}）}}
+| 10 / {{expert|2–10 或 20}} {{tr|seconds}}
+| {{chance|1/3}} / {{expert|{{chance|1/1}}}}
+| 20 / {{expert|4–20 或 40}}
+|-
+| {{item|mode=table|Toxic Sludge}}
+| 10 / {{expert|20}} {{tr|seconds}}
+| {{chance|1/2}}
+| 20 / {{expert|40}}
+|-
+| rowspan=2 | {{item|mode=image|Queen Bee|size=100px}}
+| {{item|mode=text|wrap=y|Queen Bee|note=（{{tr|Stinger attack}}）}}
+| 10 / {{expert|2–10 或 20}} {{tr|seconds}}
+| {{chance|1/3}} / {{expert|{{chance|1/1}}}}
+| 20 / {{expert|4–20 或 40}}
+|-
+| {{item|mode=text|wrap=y|Queen Bee|note=（{{tr|melee}}）}}
+| {{expert|2–8}} {{tr|seconds}}
+| {{expert|{{chance|1/1}}}}
+| {{expert|4–16}}
+|-
+| {{item|mode=table|Bee}}
+| {{expert|2–6}} {{tr|seconds}}
+| {{expert|{{chance|1/1}}}}
+| {{expert|4–12}}
+|-
+| {{item|mode=table|wrap=y|Spiked Jungle Slime|note=（{{tr|Stinger attack}}）}}
+| 5 或 20 / {{expert|10 或 40}} {{tr|seconds}}
+| {{chance|5/8}}
+| 10 或 40 / {{expert|20 或 80}}
+|-
+| {{item|mode=table|wrap=y|Plantera|size=100px|note=（{{tr|Green Seed attack}}）}}
+| 3–7 / {{expert|4–18}} {{tr|seconds}}
+| {{chance|1/2}} / {{expert|{{chance|1/1}}}}
+| 6-14 / {{expert|8–36}}
+|-
+| {{item|mode=table|wrap=y|Salamander|note=（吐痰攻击）}}
+| 2–4 / {{expert|4–8}} {{tr|seconds}}
+| {{chance|2/3}}
+| 4-8 / {{expert|8–16}}
+|-
+| {{item|mode=table|Brain of Cthulhu|size=100px}}
+| {{expert|2.625–5.25}} {{tr|seconds}}
+| {{expert|{{chance|11/243}}}}
+| {{expert|5–10}}
+|-
+| {{item|mode=table|Creeper}}
+| {{expert|2.625–5.25}} {{tr|seconds}}
+| {{expert|{{chance|11/81}}}}
+| {{expert|5–10}}
+|}
+
+=== 其他 ===
+{| class="terraria sortable"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+| {{item|mode=table|Dart Trap}}
+| 10 / {{expert|20}} {{tr|seconds}}
+| {{chance|1/1}}
+| 20 / {{expert|40}}
+|-
+| {{item|mode=table|Super Dart Trap}}
+| 10 / {{expert|20}} {{tr|seconds}}
+| {{chance|1/1}}
+| 20 / {{expert|40}}
+|-
+| {{item|mode=table|Gas Trap}}
+| 49 / {{expert|98}} / {{master|123}} {{tr|seconds}}
+| {{chance|1/1}}
+| 98 / {{expert|196}} / {{master|246}}
+|-
+|{{item|mode=table|Red Potion}}
+| 1 / {{expert|2}} / {{master|3}} {{tr|hours}}
+| {{chance|1/1}}
+| 7200 / {{expert|14400}} / {{master|21600}}
+|}
+
+== 免疫的敌怪 ==
+{{immunities|Poisoned}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在施加于{{tr|enemies}}时，造成 6 {{DPS}} 而非 2。}}
+{{history|Desktop 1.0.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|不再造成基于百分比的伤害。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Poisoned}}

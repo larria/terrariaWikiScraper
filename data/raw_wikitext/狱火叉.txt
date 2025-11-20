@@ -1,0 +1,54 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1445
+| debuff = Hellfire / {{duration|rawseconds=8–15}}
+| debuffchance = 100%<!-- {{eicons|1.4.4|small=y}}--><!-- no need due debuff is dks/cns/mbl exclusive too -->
+| sound1 = Item 74.wav
+| soundcaption1 = {{gameText|ProjectileName.InfernoFriendlyBlast}}爆炸
+| idprojectile = 295, 296
+| tags = hardmode / drop
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Inferno Fork (demo).gif|frame|right|使用中的{{tr|Inferno Fork}}。注意随时间而造成{{tr|damage}}的持续{{tr|explosion}}。]]
+
+'''{{tr|Inferno Fork}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Plantera}}]]后的[[{{tr|wand}}]]，有 {{chance|1/20}} / {{expert|{{chance|39/400}}}} 的概率掉落自[[{{tr|Hardmode Dungeon}}]]中的[[{{tr|Diabolist}}]]。使用时，它会发射一枚{{tr|fireball}}，碰到[[{{tr|enemy}}]]或[[{{tr|block}}]]可产生持续滞留的爆炸。爆炸可反复击中，造成 75% 的{{tr|weapon damage}}（{{#expr:floor({{iteminfo|Inferno Fork|damage}}*3/4)}} {{tr|base damage}}）。{{tr|fireball}}与{{tr|explosion}}可施加 8–15 秒[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|The explosion}}持续 {{duration|135 ticks}}且对以碰撞点为中心 9.375×9.375 {{tr|tile}}方形区域造成伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.AI|t=相关部分位于 <code>Terraria.Projectile.AI</code> 方法中的 <code>aiStyle == 50</code> 代码段。}}
+* 与大部分火焰类武器不同，{{tr|Inferno Fork}}可以在[[{{tr|water}}]]下使用，但{{tr|projectiles}}的速度会降低。
+
+== 成就 ==
+{{achievement|name=Robbing the Grave}}
+
+== 小贴士 ==
+* {{tr|Inferno Fork}}的{{tr|fireballs}}创造的火焰云团，可以让它非常容易地击败大量{{tr|enemy}}。火焰云团在[[{{tr|events}}]]期间极为有用，在{{tr|the player}}被大量{{tr|enemies}}包围时同样如此。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 65 提升至 70。
+** 范围性{{tr|damage}}现在造成{{tr|base damage}}的 75%，而非 65%。
+** 爆破效果现在持续时间延长。
+** {{tr|Knockback}}由 8 降低至 5，以便限制{{tr|enemies}}被击退出{{tr|blast radius}}的距离。
+** 现在会造成{{tr|Hellfire}}而非{{tr|On Fire!}}。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 掉落几率由 2.5% 提升至 5%。
+** 现在有自己的使用声音了。}}
+{{history|Desktop 1.2.0.3|{{tr|Mana cost}}从 12 提高至 14。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+	
+== 参考 == 
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Inferno Fork}}

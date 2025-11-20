@@ -1,0 +1,91 @@
+{{npc infobox
+| idprojectile = 290
+| image = Necromancer.png
+| type = Undead Enemy
+| environment = Dungeon
+| damage =
+| defense =
+| life =
+| knockback =
+| debuff = Slow
+| debuffchance = 100%
+| debuffduration = {{modes|5–15|10–30|12.5–37.5}} {{tr|seconds}}
+| Shadowbeam Staff|1|{{modes|5%|9.75%}}
+| sound1 = Item 8.wav
+| soundcaption1 = 攻击
+| sound2 = Item 8.wav
+| soundcaption2 = 传送
+| hardmode = yes
+}}
+[[File:Necromancer attack.jpg|thumb|600px|一个正在攻击{{tr|player}}的{{tr|Necromancer}}，激光束的反弹方式正好使它成为一条直线。]]
+
+'''{{tr|Necromancer}}'''是个[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，可以在[[{{tr|Hardmode Dungeon}}]]中找到。{{tr|Necromancers}}的{{tr|attack}}方式是向玩家快速发射紫色激光束，这些激光束会在{{tr|walls}}上多次反弹。激光束行进速度极快，能够几乎在瞬间再次发射，并且会施加[[{{tr|Slow}}]][[{{tr|debuff}}]]。{{tr|Necromancers}}会在发射六次激光束或被击中后传送到{{tr|screen}}上不同的位置。
+
+{{dungeon brick walls|Brick}}
+
+{{tr|Necromancer}}往往生成在有[[{{tr|Dungeon Brick Wall}}|{{tr|Brick Wall}}]]的地牢区域。它们也会生成在地牢的其他区域，但几率大大降低。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}]]
+! colspan=2 | {{tr|Type}}
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! {{tr|Knockback Resistance}}
+{{npc infobox
+| auto = 283
+| imagealt = [[File:Necromancer 1.png|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|60|96|144}} {{note|small=y|paren=y|{{tr|ranged}}}}
+}}
+{{npc infobox
+| auto = 284
+| imagealt = [[File:Necromancer 2.png|link=]]
+| type = Undead Enemy
+| environment = Dungeon
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|60|96|144}} {{note|small=y|paren=y|{{tr|ranged}}}}
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 备注 ==
+* {{tr|Necromancers}}只能传送到{{tr|solid blocks}}上。如果没有可传送的位置，它们会保持在原地。
+* 它们只有在{{tr|solid block}}上停留时才会传送。
+* {{tr|Necromancer}}的{{tr|attack}}总是直接瞄准玩家，不论中间是否有障碍。
+
+== 小贴士 ==
+* 能粘在{{tr|enemies}}身上的{{tr|Weapons}}非常有用，因为它们能在传送后保持在{{tr|Necromancer}}身上。[[{{tr|Piranha Gun}}]]、{{eil|Daybreak}}和{{eil|Bone Javelin|s}}都是可行的选择。
+* 单次攻击{{tr|damage}}高的武器在对付{{tr|Necromancer}}时更为有效。一次发射多个投射物的武器也有可能可以在{{tr|Necromancer}}传送前对其造成多次{{tr|damage}}。
+* 具有自动制导能力的{{tr|Weapons}}和[[{{tr|minions}}]]可以在{{tr|Necromancer}}传送后继续追踪它们。[[{{tr|Sanguine Staff}}]]在这方面特别有效，常常可以使{{tr|Necromancer}}边迅速传送边受到伤害，直到死亡。
+
+== 花絮 ==
+* 尽管能施加[[{{tr|Slow}}]]{{tr|debuff}}，但它们并不会掉落[[{{tr|Fast Clock}}]]。
+* {{wikipedia|Necromancer|{{tr|Necromancer}}}}（Necromancer）是能够与亡灵沟通的法师，但在''[[{{tr|Terraria}}]]''中它们并不能如此。
+{{bestiary|Armored Necromancer|alias={{tr|Necromancer}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在在瞬移之后直到下一次攻击前会有超过 1 {{tr|seconds}}的间隔，就像[[{{tr|Diabolist}}]]一直以来的行为一样。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|
+** 现在在被攻击后不那么容易传送。
+** 现在会掉落它自己的相应旗帜了。
+** 掉落[[{{tr|Shadowbeam Staff}}]]的几率从 2.5% 提升到 5%。}}
+{{history|Desktop 1.2.4|激光束的长度降低。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Casters}}
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Necromancer}}

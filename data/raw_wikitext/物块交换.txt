@@ -1,0 +1,60 @@
+{{exclusive|1.4.0.1}}
+[[File:Block Swap (demo).gif|frame|right|使用中的{{tr|Block Swap}}。]]
+{{float file box
+|title={{tr|Block Swap}}[[{{tr|toggles}}]]
+----
+{{desktop}}{{tr|icons}}
+|{{inline block|css=width:50%;line-height:2|[[File:Block Swap off.png|link=]]<br/>关}}<!--
+-->{{inline block|css=width:50%;line-height:2|[[File:Block Swap on.png|link=]]<br/>开}}
+|title2={{mobile}}{{tr|icons}}
+|{{inline block|css=width:50%;line-height:2|[[File:Block Swap off (mobile).png|link=]]<br/>关}}<!--
+-->{{inline block|css=width:50%;line-height:2|[[File:Block Swap on (mobile).png|link=]]<br/>开}}
+}}
+
+'''{{tr|Block Swap}}'''是一种建造机制，它使得玩家能够一步到位地替换放置的[[{{tr|blocks}}]]，而无需先手动移除现有的{{tr|block}}。{{tr|Block Swap}}功能可以通过{{icon|desktop}}主[[{{tr|inventory}}]]左侧 / {{icon|mobile}}{{tr|inventory}}下方的工具菜单中的[[{{tr|toggle}}]]来激活或关闭。
+
+交换{{tr|blocks}}仍然需要玩家拥有[[{{tr|pickaxe power}}]]足够采掘目标{{tr|block}}的[[{{tr|tool}}]]，因为在{{tr|Block Swaps}}前游戏会检查玩家是否拥有足够强力的{{tr|tool}}。此外，部分{{tr|block}}永远无法被{{tr|Block Swap}}（[[#无法交换的{{tr|blocks}}|参见下方列表]]）。
+
+{{tr|Block Swap}}开启时，玩家可以在已经被放置的{{tr|block}}上方放置{{tr|block}}，新的{{tr|block}}会和已经被放置的{{tr|block}}进行交换。进行{{tr|Block Swap}}时，已经被放置的{{tr|block}}会被自动采掘并掉落，可供收集。
+
+== 备注 ==
+* 已放置的{{tr|block}}上的[[{{tr|Paints}}]]和[[{{tr|coatings}}]]会在{{tr|block swap}}时被移除。
+* 对未激活的{{tr|block}}（如用[[{{tr|Actuator}}]]产生）进行{{tr|block swap}}会让新放置的{{tr|block}}保持未激活。
+
+=== 无法交换的{{tr|blocks}} ===
+部分{{tr|blocks}}无法被交换：
+* 使用任何{{tr|pickaxe power}}低于 110%（弱于[[{{tr|Cobalt Pickaxe}}]]）的{{tr|tool}}时，受{{tr|gravity}}影响的{{tr|block}}（如[[{{tr|Sand Block}}]]、[[{{tr|Slush Block}}]]、和[[{{tr|Silt Block}}]]）只能从最上方的{{tr|block}}起由上到下交换。在使用任何至少有 110% {{tr|pickaxe power}}的{{tr|tool}}时，受{{tr|gravity}}影响的{{tr|block}}可以被自由地交换。
+** 受{{tr|Gravity}}影响的{{tr|blocks}}可以被自由地互相交换，无论{{tr|pickaxe power}}。
+* 大部分{{tr|types}}的[[{{tr|furniture}}]]{{tr|items}}无法被交换。只有下列{{tr|types}}的{{tr|furniture items}}可以被交换为相同类型的{{tr|item}}：
+** [[{{tr|Campfires}}]]。它们被交换后总是会变为开启。
+** 已解锁的[[{{tr|chests}}]]。它们被交换时会保留内容物。[[{{tr|Dead Man's Chest}}]]被交换时会发出[[{{tr|wire}}]]信号。
+** [[{{tr|Torches}}]]。它们被交换时会保留其开启/关闭状态。
+* 支撑[[{{tr|trees}}]]或[[{{tr|Fallen Logs}}]]的{{tr|Blocks}}无法被交换。
+* 任何{{tr|dirt}}上的[[{{tr|grass}}]]无法用[[{{tr|Dirt Block}}]]交换，这包括[[{{tr|The Corruption}}|{{tr|Corruption}}]]、[[{{tr|The Crimson}}|{{tr|Crimson}}]]、和[[{{tr|The Hallow}}|{{tr|Hallowed}}]]{{tr|variants}}。
+** 相似地，{{tr|mud}}上的{{tr|grass}}（如[[{{tr|Jungle grass}}]]或[[{{tr|Mushroom grass}}]]）无法用[[{{tr|Mud Block}}]]交换。
+* 接触[[{{tr|lava}}]]的{{tr|Blocks}}无法被交换。
+* [[{{tr|Hive|link=y}}|{{tr|Hive Blocks}}]]可以通过[[{{tr|Hive Wand}}]]来和其他{{tr|block}}交换，但它本身不能被其他{{tr|block}}交换。
+* [[{{tr|Bubble}}]]、[[{{tr|Hellstone}}]]、[[{{tr|Smoke Block}}]]、和[[{{tr|Living Fire Blocks}}]]无法被交换。
+* 单独的漂浮的[[{{tr|walls}}]]（没有连接到其他{{tr|walls or blocks}}的{{tr|walls}}）无法被交换。
+
+== 小贴士 ==
+* {{tr|Block Swap}}可以用于采掘在悬崖上的、被破坏时会导致玩家坠落的[[{{tr|ore}}]]脉。
+** 这不会使玩家获得[[{{tr|Ooo! Shiny!}}]]{{tr|achievement}}。
+* 可以用[[{{tr|mud block}}]]来交换[[{{tr|Chlorophyte Ore}}]]，在收集{{tr|Chlorophyte}}的同时允许它重新生长。
+** 这不会使玩家获得[[{{tr|Photosynthesis}}]]{{tr|achievement}}。
+* [[{{tr|Altars}}|{{tr|Demon Altar}}/{{tr|Crimson Altar}}]]下方的{{tr|block}}被交换时不会摧毁{{tr|Altar}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Torches and campfires}}现在可以被交换。
+* 如果{{tr|ropes}}一侧已有{{tr|platforms or minecart tracks}}，玩家现在可以将{{tr|ropes}}{{tr|Block Swap}}为{{tr|platforms or minecart tracks}}。}}
+{{history|Desktop 1.4.1|会受{{tr|Gravity}}影响的{{tr|blocks}}现在可以被从上到下交换。当拥有足够高{{tr|pickaxe power}}的{{tr|pickaxe}}时，它们可以像其它{{tr|block}}一样在任何位置被交换。}}
+{{history|Desktop 1.4.0.4|修复了{{tr|block swap}}后的{{tr|tile}}保留其裂痕材质的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|introduced=y|同步{{tr|Desktop}} 1.4.0.4 的改动引入。}}
+{{history|Switch 1.4.0.5.5|introduced=y|同步{{tr|Desktop}} 1.4.0.4 的改动引入。}}
+{{history|Mobile 1.4.0.5.0|introduced=y|同步{{tr|Desktop}} 1.4.0.4 的改动引入。}}
+
+{{Game mechanics}}
+
+{{language info|en=Block Swap}}

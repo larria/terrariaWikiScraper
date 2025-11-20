@@ -1,0 +1,27 @@
+<includeonly><!--
+
+-->{{#vardefine:modifiersrow:statnames|{{{1|{{#var:modifiersrow:statnames}}}}}}}<!--
+-->{{#vardefine:modifiersrow:modifiername|{{{2|}}}}}<!--
+
+--><td>{{tr|{{#replace:{{#var:modifiersrow:modifiername}}|2|}}}}</td><!-- modifier name (strip 2s, e.g. in "Deadly2")
+
+-->{{#af_foreach:{{#af_split:{{#var:modifiersrow:statnames}}|,}}||statname|<!-- 
+	--><td><!-- 
+		-->{{#or:<!-- modifier stats
+			-->{{#vardefine:modifiersrow:statvalue|{{{ {{{statname}}} |}}}}}<!--
+			-->{{getModifierInfo/format|{{{statname}}}|{{#var:modifiersrow:statvalue|{{modifierinfo|{{#var:modifiersrow:modifiername}}|{{{statname}}}}}}}}}<!-- attempt to print value of this stat, formatted
+		-->|<!-- if failed then
+			-->{{na|-}}<!-- this modifier has no effect on this stat; print {{na|-}}
+		-->}}<!-- 
+	--></td><!-- 
+-->}}<!-- end of #af_foreach
+
+--></includeonly><noinclude>
+{{formatting subpage|onlybox=y}}
+
+This page is used for displaying a dynamic table row of a modifier and its effects on the base page, [[Modifiers]].
+
+It takes two unnamed parameters: a comma-separated list of stat names (see {{tl|modifierinfo}}) and the modifier name. It will attempt to generate the values of all stats automatically, but this can be overridden by passing the value with the parameter of the stat name (e.g. <code>|damage=+4%</code>).
+
+{{language info|en=Modifiers/row0}}
+</noinclude>

@@ -1,0 +1,260 @@
+<section begin=npc infobox />{{npc infobox | boxwidth = 30em
+| auto = 125
+| name = The Twins
+| type = Boss
+| environment = Surface+Night/Space+Night
+| ai =
+| damage =
+| life = {{modes|{{#expr:{{npcinfo|125|hp}}+{{npcinfo|126|hp}}}}|{{#expr:{{npcinfo|125|hp|expert}}+{{npcinfo|126|hp|expert}}}}|{{#expr:{{npcinfo|125|hp|master}}+{{npcinfo|126|hp|master}}}}}} {{note|small=y|paren=y|总共}}
+
+| Soul of Sight|25-40| 100% @normal
+| Hallowed Bar|15–30|100% @normal
+| Horned God Boots|1|14.29% {{icon/old-gen|small=y}} @normal
+| Greater Healing Potion|5–15|100%
+| Twin Mask|1|14.29% @normal
+| Treasure Bag (The Twins)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Mechanical Wheel Piece|1|100% #expert
+  | Twin Mask|1|14.29% #expert
+  | Soul of Sight|25–40|100% #expert
+  | Hallowed Bar|20–35|100% #expert
+  | Gold Coin|[[NPC drops#Coin drops|12]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Pair of Eyeballs|1|{{master|25%}} @master
+| Twins Relic|1|{{master|100%}} @master
+
+| hardmode = yes
+| sound1 = NPC Hit 4.wav
+| soundcaption1 = 受伤害 <small>({{tr|Mechanical}})</small>
+| cargo = no | cargodrops = yes
+| shownpcid = no
+}}<section end=npc infobox />
+[[File:Retinazer Trophy.png|25px]] <big>''"{{gameText|LegacyMisc.29}}"''</big> [[File:Spazmatism Trophy.png|25px]]
+
+'''{{tr|The Twins}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Mechanical Boss}}]]，基本上是更困难版本的[[{{tr|Eye of Cthulhu}}]]。{{tr|The Twins}}是由卷须所连接起来的两个单独的飞行实体：'''{{tr|Retinazer}}'''和'''{{tr|Spazmatism}}'''，每个都有自己的攻击模式和生命计数。两个都必须杀掉才能打败此 {{tr|boss}}。
+
+可以用[[{{tr|Mechanical Eye}}]]在[[{{tr|night}}]]（{{time|7:30 PM}} 至 {{time|4:30 AM}}）手工召唤{{tr|The Twins}}。在[[{{tr|Altars}}|{{tr|Demon Altar}}或{{tr|Crimson Altar}}]]被摧毁后，只要当前世界中尚未打败过它们，它们在黄昏时就有 {{chance|1/10}} 几率自然生成，如果以这种方式生成，其到来并会以[[{{tr|status message}}]]''“{{gameText|LegacyMisc.29}}”''来宣告。
+
+{{tr|The Twins}}必须在清晨之前杀死，否则它们就会逃跑并消失。
+
+{{boss music|plural=1|Boss 2|Boss 2 (Otherworldly)}}
+
+== 眼睛 ==
+有两只眼睛：{{tr|Retinazer}}和{{tr|Spazmatism}}。{{tr|Retinazer}}有红色虹膜，会发射激光；{{tr|Spazmatism}}的纹理类似，但是有着{{tr|green}}虹膜，它会发射绿色的{{tr|Cursed Flames}}。
+{{infobox wrapper|direction=row|float=left
+|{{npc infobox
+| auto = 125
+| idprojectile = 83
+| type = Boss
+| environment = Surface+Night / Space+Night
+| namesub2 = 第一形态
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|40|76|114}} {{note|small=y|paren=y|{{gameText|ProjectileName.EyeLaser}}}} {{source code ref|v=1.4.0.5|name=rzai|method=Terraria.NPC.AI|t=相关部分为 <code><nowiki>aiStyle == 30</nowiki></code>。}}
+| imageother = Map Icon Retinazer (first form).png
+| imageothercaption = Map Icon
+| sound1 = Item 33.wav
+| soundcaption1 = {{tr|Eye Laser}}
+| soundhurt = NPC Hit 1.wav
+| sound2 = Roar 0.wav
+| soundcaption2 = 进入第二阶段
+}}
+|{{npc infobox
+| auto = 126
+| idprojectile = 96
+| type = Boss
+| environment = Surface+Night / Space+Night
+| namesub2 = 第一形态
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|50|88|132}} {{note|small=y|paren=y|{{gameText|ProjectileName.CursedFlameHostile}}}} {{source code ref|v=1.4.0.5|name=stai|method=Terraria.NPC.AI|t=相关部分为 <code><nowiki>aiStyle == 31</nowiki></code>。}}
+| debuff = Cursed Inferno
+| debuffchance = 68.75% {{source code ref|v=1.4.0.5|name=firestatus|method=Terraria.Projectile.StatusPlayer|t=相关部分为 <code><nowiki>type == 96 || type == 101</nowiki></code>。}}
+| debuffduration = {{modes|2–3 {{tr|seconds}} {{eicons|1.4.0.1|small=y}}<br/>3–8 {{tr|seconds}} {{eicons|1.4.0.1|invert=y|small=y}}|4–6 {{tr|seconds}}|5–7.5 {{tr|seconds}}}} <ref name="firestatus"/>
+| imageother = Map Icon Spazmatism (first form).png
+| imageothercaption = Map Icon
+| sound1 = Roar 0.wav
+| soundcaption1 = 进入第二阶段
+}}
+|{{infobox wrapper|direction=row|float=left
+|{{npc infobox
+| auto = 125
+| idprojectile = 100
+| name = Retinazer
+| namesub = 第二形态
+| type = Boss
+| image = Retinazer (Second Form).png
+| ai = Retinazer AI
+| environment = Surface+Night / Space+Night
+| damage = <!--
+	-->{{modes<!--
+		-->|{{#expr:floor({{npcinfo|125|damage}}*1.5)}}<!--
+		-->|{{#expr:floor({{npcinfo|125|damage|expert}}*1.5)}}<!--
+		-->|{{#expr:floor({{npcinfo|125|damage|master}}*1.5)}}<!--
+	-->}} {{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|50|92|138}} {{note|small=y|paren=y|{{gameText|ProjectileName.DeathLaser}}}}<br/><!--
+	-->{{modes|36|68|102}} {{note|small=y|paren=y|快速射击}} <ref name="rzai"/>
+| life = <!--
+	-->{{modes<!--
+		-->|{{#expr:floor({{npcinfo|125|hp}}*0.4)}}/{{npcinfo|125|hp}}<!--
+		-->|{{#expr:floor({{npcinfo|125|hp|expert}}*0.4)}}/{{npcinfo|125|hp|expert}}<!--
+		-->|{{#expr:floor({{npcinfo|125|hp|master}}*0.4)}}/{{npcinfo|125|hp|master}}<!--
+	-->}} <ref name="rzai"/>
+| defense = {{#expr:{{npcinfo|125|defense}}+10}} <ref name="rzai"/>
+| Retinazer Trophy|1|10%
+| sound1 = Item 33.wav
+| soundcaption1 = {{tr|Death Laser}}
+| soundhurt =
+| soundkilled =
+| imageother = Map Icon Retinazer (second form).png
+| imageothercaption = Map Icon
+| cargo = no | cargodrops = yes
+| shownpcid = no
+}}
+|{{npc infobox
+| auto = 126
+| idprojectile = 101
+| name = Spazmatism
+| namesub = 第二形态
+| type = Boss
+| image = Spazmatism (Second Form).png
+| ai = Spazmatism AI
+| environment = Surface+Night/Space+Night
+| damage = <!--
+	-->{{modes<!--
+		-->|{{#expr:floor({{npcinfo|126|damage}}*1.5)}}<!--
+		-->|{{#expr:floor({{npcinfo|126|damage|expert}}*1.5)}}<!--
+		-->|{{#expr:floor({{npcinfo|126|damage|master}}*1.5)}}<!--
+	-->}} {{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+	-->{{modes|60|108|162}} {{note|small=y|paren=y|{{gameText|ProjectileName.EyeFire}}}} <ref name="stai"/>
+| life = <!--
+	-->{{modes<!--
+		-->|{{#expr:floor({{npcinfo|126|hp}}*0.4)}}/{{npcinfo|126|hp}}<!--
+		-->|{{#expr:floor({{npcinfo|126|hp|expert}}*0.4)}}/{{npcinfo|126|hp|expert}}<!--
+		-->|{{#expr:floor({{npcinfo|126|hp|master}}*0.4)}}/{{npcinfo|126|hp|master}}<!--
+	-->}} <ref name="stai"/>
+| defense = {{#expr:{{npcinfo|126|defense}}+18}} <ref name="stai"/>
+| debuff = Cursed Inferno
+| debuffchance = 68.75% <ref name="firestatus"/>
+| debuffduration = <!--
+	-->{{modes|wrap=n<!--
+		-->|2–3 {{tr|seconds}} {{eicons|1.4.0.1|small=y}} <ref name="firestatus"/><br/>3–8 {{tr|seconds}} {{eicons|1.4.0.1|invert=y|small=y}}<!--
+		-->|{{expert|4–6 {{tr|seconds}}}} <ref name="firestatus"/><!--
+		-->|{{master|5–7.5 {{tr|seconds}}}} <ref name="firestatus"/><!--
+	-->}}
+| Spazmatism Trophy|1|10%
+| sound1 = Roar 0.wav
+| soundcaption1 = 冲锋
+| soundhurt =
+| soundkilled =
+| imageother = Map Icon Spazmatism (second form).png
+| imageothercaption = Map Icon
+| cargo = no | cargodrops = yes
+| shownpcid = no
+}}
+}}
+}}
+{{-}}
+
+== 攻击 ==
+=== 第一阶段 ===
+* 有红色虹膜的{{tr|Retinazer}}会发射紫色的高{{tr|velocity}}{{tr|Eye Lasers}}。它通常会试图维持在玩家斜上方。
+* 有绿色虹膜的{{tr|Spazmatism}}会发射中等{{tr|velocity}}的[[{{tr|Cursed Flame}}]]球。它通常会试图和玩家保持在同一水平线上。
+
+二者都会在其标志性远程攻击和冲锋攻击之间交替，就像[[{{tr|Eye of Cthulhu}}]]一样。{{tr|Retinazer}}的冲锋攻击速度较快但相比{{tr|Spazmatism}}而言两次冲锋之间的间隔较长，且进行的冲锋较少。
+
+=== 第二阶段 ===
+每只眼睛都有第二形态，在它们各自掉到 40% {{tr|health}}时触发。{{tr|Retinazer}}会在 {{formatnum:{{#expr:floor({{npcinfo|125|hp}}*0.4)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|125|hp|expert}}*0.4)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|125|hp|master}}*0.4)}}}}}} {{tr|health}}时变形而{{tr|Spazmatism}}在 {{formatnum:{{#expr:floor({{npcinfo|126|hp}}*0.4)}}}} / {{expert|{{formatnum:{{#expr:floor({{npcinfo|126|hp|expert}}*0.4)}}}}}} / {{master|{{formatnum:{{#expr:floor({{npcinfo|126|hp|master}}*0.4)}}}}}} {{tr|health}}时变形。
+* {{tr|Retinazer}}会变为一只机械眼球，在瞳孔中有一座{{tr|laser cannon}}，并只会发射红色{{tr|Death Laser}}{{tr|projectiles}}，停止撞击玩家（或试图斜角对齐玩家）。它会更快地发射，伤害也更高，并且会周期性地快速连续开火射出伤害明显减少的弹幕。随着{{tr|Retinazer}}受到的伤害越来越大，弹幕会变得越来越强烈和频繁，最终变得不间断发射。
+** {{eicons|1.3.0.1}} 不过，{{tr|Retinazer}}''会''在发射弹幕时与玩家水平对齐，但不像第一阶段的{{tr|Spazmatism}}那样凑的那么近。不在弹幕射击时，{{tr|Retinazer}}通常会与玩家垂直对齐。
+* {{tr|Spazmatism}}变为一张追逐玩家的机械大嘴（类似于{{tr|Eye of Cthulhu}}），以更快的速度和更大范围地冲锋，并周期性地从嘴中以类似于[[{{tr|Flamethrower}}]]的方式喷射{{tr|Eye Fire}}，即{{tr|Cursed Flame}}流。此火焰能造成[[{{tr|Cursed Inferno}}]][[{{tr|debuff}}]]并造成很高的伤害。它不再试图与玩家水平对齐。
+
+在{{eil|Expert mode}}中，随着生命值降低，{{tr|Retinazer}}会更快地发射激光，冲锋也会覆盖更长距离。{{tr|Spazmatism}}的火球造成的{{tr|Cursed Inferno}}持续时间则会变为 {{expert|2 倍}} / {{master|2.5 倍}}。{{tr|Spazmatism}}在第二形态中的冲锋速度也会更快。
+
+== 备注 ==
+{{transclude|{{tr|Mechanical bosses}}#备注}}
+* 两只眼睛在被杀死时都会掉落各自的[[{{tr|trophy}}]]，无论哪只先被击杀。有可能一次战斗就同时掉落两个{{tr|trophies}}。
+* 在{{eversions|1.3.0.1|invert=y}}中，如果在自然生成{{tr|The Twins}}的{{tr|night}}同时用{{tr|Mechanical Eye}}召唤{{tr|The Twins}}，两对眼睛都会出现，且四只眼睛会全部连接在一起。
+[[File:Multiple_Twins.png|thumb|250px|生成了两对{{tr|The Twins}}。]]
+
+== 成就 ==
+{{achievement|name=Buckets of Bolts}}
+{{achievement|name=Mecha Mayhem}}
+{{achievement|name=Ophthalmologist}}
+{{achievement|name=Back for Second}}
+
+== 小贴士 ==
+{{strategies}}
+* 集火先彻底干掉一只眼睛而不要对另一只造成太多伤害。在两只眼睛都处于第二形态时和{{tr|The Twins}}战斗会困难得多，在{{eil|Expert Mode}}中尤甚。
+* 先干掉{{tr|Spazmatism}}会比较好，因为如果没有合适的机动力装备和[[{{tr|buff}}]]，很难避开它第二阶段中的{{tr|cursed flames}}。{{tr|Retinazer}}不那么致命，因为它不能造成[[{{tr|debuff}}]]且在其第二阶段时不会冲锋，如果玩家是远程职业，这有助于拉开距离。
+*{{tr|The Twins}}只免疫[[{{tr|Confused}}]]和 {{eicons|1.4.1.2}} [[{{tr|Poisoned}}]]，因此战斗中使用能造成{{tr|debuff}}的{{tr|weapon}}可能会有用。
+* 针对此 {{tr|boss}} 很好用的一种战斗场地是一片长长的平面。使用[[{{tr|Lightning Boots}}]]（或更好）和[[{{tr|Ranged weapons}}]]或[[{{tr|magic weapon}}]]，玩家可以不断躲避{{tr|the twins}}的攻击同时向其回击。
+* 在第二阶段，{{tr|Retinazer}}仅当视线无阻碍时才会攻击玩家。躲在框内可以防止它造成任何伤害。
+* [[{{tr|Gravitation Potion}}]]是与{{tr|the Twins}}保持距离的绝佳方法，使得可以自由攻击它们。
+
+== 花絮 ==
+* {{tr|Retinazer}}（Retinazer）的名字是 {{维基百科|retina|t=视网膜}}（眼睛的一部分）和 {{维基百科|laser|t=激光}}的{{维基百科|混成词}}。{{tr|Spazmatism}}（Spazmatism）的名字是 {{维基百科|spasm|t=抽筋}}（即无法控制地抽搐）和 {{维基百科|astigmatism|t=散光}}（一种眼疾）的混成词。
+* {{tr|Spazmatism}}的第二形态左右两侧都可见到螺栓，而{{tr|Retinazer}}的第二形态只有一侧有。
+* {{tr|The Twins}}看起来有完全的{{维基百科|heterochromia iridum|虹膜异色症}}（两只眼睛颜色不同）。
+* 在其第二阶段中，{{tr|Spazmatism}}的{{tr|Eye Fire}}攻击功能几乎和[[{{tr|Flamethrower}}]]{{tr|weapon}}（{{eicons|1.4.4|invert=y}}）完全一样，有着类似的射程和伤害，但造成的是{{tr|Cursed Inferno}}{{tr|debuff}}而非[[{{tr|On Fire!}}]]。
+* {{tr|The Twins}}是唯一有两个{{tr|trophies}}的 {{tr|boss}}。并且是唯一分阶段的[[{{tr|mechanical boss}}]]。
+* 虽然{{tr|Spazmatism}}会造成{{tr|Cursed Inferno}}，但它却并不对此免疫。
+* 有三个 {{tr|Bosses}} 拥有相应的[[{{tr|Summon weapons}}|{{tr|minion}}]]，{{tr|The Twins}}是其中之一（[[{{tr|Optic Staff}}]]）。另外两个是{{eil|Martian Saucer}}（{{eil|Xeno Staff}}）、[[{{tr|Duke Fishron}}]]（[[{{tr|Tempest Staff}}]]）。
+* {{lore|{{tr|The Twins}}是三个机械再造{{tr|Cthulhu}}失踪器官之一。它们是{{tr|Cthulhu}}眼睛的再造。}}
+* {{tr|The Twins}}似乎是生物机械混合体，因为它们即使变形后也不免疫[[{{tr|On Fire!}}]]、[[{{tr|Cursed Inferno}}]]、{{eicons|1.4.1.2|invert=y}} [[{{tr|Poisoned}}]]或[[{{tr|Acid Venom}}]]等{{tr|debuff}}。
+{{bestiary|Retinazer|Spazmatism}}
+
+== 另见 ==
+* [[{{tr|The Destroyer}}]]
+* [[{{tr|Skeletron Prime}}]]
+* [[{{tr|Mechdusa}}]]
+* {{dts link|Twins of Terror|双子魔眼}}
+
+== 历史 ==
+{{for|关于影响所有{{tr|mechanical bosses}} 的变更|{{tr|mechanical bosses}} 历史|link1={{tr|Mechanical bosses}}#历史}}
+{{history|Desktop 1.4.1.2|现在对{{tr|Poisoned}}免疫。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|The Twins}}现在正确使用其{{tr|map icons}}了。在此之前，{{tr|Retinazer}}使用的是两个第一阶段的{{tr|icons}}而{{tr|Spazmatism}}用的是两个第二阶段的{{tr|icons}}。
+** 降低了{{tr|Spazmatism}}{{tr|Cursed Inferno}}的持续时间以补偿{{tr|Cursed Inferno}}{{DPS}}的提高。
+** 添加了[[{{tr|Pair of Eyeballs}}]]和[[{{tr|Twins Relic}}]]作为{{tr|Master Mode}}掉落物。}}
+{{history|Desktop 1.3.5|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Mechanical Wheel Piece}}]]作为{{tr|Expert Mode}}掉落物。}}
+{{history|Desktop 1.2.3|
+** {{tr|Spazmatism}}的生命值提升至 23,000，二者的伤害都降低了。
+** {{tr|The Twins}}现在会在 2/5 生命值时变换形态，而非一半生命值时。
+** 现在只会掉落 15–30 块[[{{tr|Hallowed Bar}}]]而非 20–35 块。
+** {{tr|the twins}}不再会在另一个还活跃时消失。}}
+{{history|Desktop 1.2|
+** 现在有几率在黄昏伴随着讯息：“这将是一个可怕的夜晚...”自然生成。
+** 现在会掉落 20–40 个[[{{tr|Soul of Sight}}|{{tr|Souls of Sight}}]]而非 20–30 个。
+** 二者的生命值和伤害分别由 24,000 和 50 降低至 20,000 和 40。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|添加了{{tr|Mechanical Wheel Piece}}作为{{tr|Expert mode}}掉落。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|the Mechanical Wheel Piece}}作为{{tr|Expert mode}}掉落。（{{icon/ps4}}）}}
+{{history|Console 1.06|
+** {{tr|Spazmatism}}的生命值提升至 23,000，二者的伤害都降低了。
+** {{tr|The Twins}}现在会在 2/5 生命值时变换形态，而非一半生命值时。
+** 现在只会掉落 15–30 块{{tr|Hallowed Bars}}而非 20–35 块。
+** {{tr|the twins}}不再会在另一个还活跃时消失。}}
+{{history|Console 1.02|
+** 现在有几率在黄昏自然生成。
+** 现在会掉落 20–40 个{{tr|Souls of Sight}}而非 20–30 个。
+** 二者的生命值和伤害分别由 24,000 和 50 降低至 20,000 和 40。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.2.11212|
+** {{tr|Spazmatism}}的生命值提升至 23,000，二者的伤害都降低了。
+** {{tr|The Twins}}现在会在 2/5 生命值时变换形态，而非一半生命值时。
+** 现在只会掉落 15–30 块{{tr|Hallowed Bars}}而非 20–35 块。
+** {{tr|the twins}}不再会在另一个还活跃时消失。}}
+{{history|Mobile 1.2.6508|
+** 现在有几率在黄昏自然生成。
+** 现在会掉落 20–40 个{{tr|Souls of Sight}}而非 20–30 个。
+** 二者的生命值和伤害分别由 24,000 和 50 降低至 20,000 和 40。}}
+{{history|Mobile 1.1.5536|{{tr|Introduced.}}}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=The Twins}}

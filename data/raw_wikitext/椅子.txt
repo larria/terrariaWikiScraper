@@ -1,0 +1,106 @@
+{{item infobox
+| imagealt = [[File:Any Chair.png|link=]]
+| type = Furniture
+| stack = {{iteminfo|34|stack}}
+| placeable = yes
+| width = 1| height = 2
+| consumable = true
+| use = {{iteminfo|34|useTime}}
+| idtile = 15
+| cargo = no
+| listcat = plunder items <!-- applies to regular wooden Chair -->
+}}
+
+'''{{tr|Chair}}'''是可以放置在地面上的[[{{tr|furniture}}]]{{tr|item}}，它们算作是舒适性物品，这是让[[{{tr|House}}]]适用于 {{tr|npc}} 的必要元素之一。结合[[{{tr|Work Bench}}]]或[[{{tr|Table}}]]时，也形成了次要{{tr|crafting stations}}。
+
+{{float file box|width=90px|[[File:Chair sitting.png]]|{{eicons|1.4.0.1}} 坐在{{tr|Wooden Chair}}上的玩家。}}
+[[File:Placed Chairs.png|framed|放置的{{tr|Chairs}}。点击图片查看各行的简介。]]
+
+{{eicons|1.4.0.1}} 玩家可以用 {{key|open}} 坐上{{tr|chairs}}并得到[[{{tr|health regeneration}}]]加成，类似于[[{{tr|beds}}]]和[[{{tr|sofas}}]]那样。{{tr|NPCs}} 也能坐在{{tr|chair}}上。
+
+所有{{tr|chairs}}都宽 1 格，高 2 格，并且必须放置在固体{{tr|blocks}}或[[{{tr|platform}}]]上面。
+
+另外请参阅{{item|Throne}}，它同样可以满足{{tr|House}}的{{tr|comfort item}}需求。包括{{tr|the Throne}}和{{tr|Bar Stool}}在内，一共有 {{eicons|1.4.4}} 47<!-- / {{eicons|1.4.0.1}} 44--> / {{eicons|1.2.3|not=1.3.0.1}} 28 / {{eicons|1.2.3|invert=y}} 25 种不同的{{tr|chairs}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|showresultid=y|result=Bar Stool/LIKE %Chair|expectedrows=39|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== {{tr|Noncraftable Chairs}} ==
+{{options/set|item|nolink=y|mode=table|anchor=y}}
+{| class="terraria lined"
+|-
+! colspan=2 | {{tr|Chair}} !! {{tr|Notes}}
+|-
+| {{item infobox |view=item| auto = 1509 | type = Furniture |  width = 1 | height = 2 | tags = plunder}}
+| 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+|-
+| {{item infobox |view=item| auto = 1396 | type = Furniture |  width = 1 | height = 2 | tags = plunder}}
+| 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+|-
+| {{item infobox |view=item| auto = 1399 | type = Furniture |  width = 1 | height = 2 | tags = plunder}}
+| 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+|-
+| {{item infobox |view=item| auto = 1402 | type = Furniture |  width = 1 | height = 2 | tags = plunder}}
+| 出现在[[{{tr|Dungeon}}]]中的[[{{tr|Dungeon Furniture}}|{{tr|Furniture}}]]。
+|-
+| {{item infobox |view=item| auto = 1459 | type = Furniture |  width = 1 | height = 2 | tags = plunder}}
+| 出现在[[{{tr|Ruined houses}}]]中，不会被[[{{tr|lava}}]]破坏。
+|-
+| {{item infobox |view=item| auto = 1704 | type = Furniture |  width = 1 | height = 2 | tags = drop}}
+| 掉落自[[{{tr|Pirate Invasion}}|{{tr|Pirates}}]]。可卖出{{iteminfo|1704|sell}}。
+|}{{options/reset|item}}
+
+== 用于制作 ==
+{{recipes|nostation=y|showresultid=y|station=Work Bench and Chair|title={{item|Work Bench|image=Any Work Bench.gif}} <span style{{=}}"vertical-align: middle">'''和'''</span> {{item|Chair|image=Any Chair.gif}}|expectedrows=2 }}
+* 在{{eversions|1.3.0.1|invert=y|old-gen=n}}上，制作{{tr|the Goggles}}和{{tr|Sunglasses}}并不需要{{tr|Chair}}。
+{{:Recipes/Table}}
+
+== 备注 ==
+* {{tr|Martian Hover Chair}}{{note|paren=y|small=y|英文原名 Martian Hover Chair，直译为火星悬浮椅}}虽然名字这么叫，但它并不能放置在半空中。
+* 坐在椅子上时，可以坐到水平距离 2 格之内的其他椅子上。
+* {{eicons|1.4.0.1}} {{tr|Chairs}}会在站立不动的加成基础上再度轻微提升[[{{tr|health regeneration}}]]，和睡在[[{{tr|bed}}]]上一样。通过比较站立不动、移动、坐在椅子上时的{{tr|health regeneration}}可以轻松看出这一点。
+* 虽然{{tr|the Dynasty Chair}}的外观看起来只有 1 格高，并且坐在上面时位置要比其他{{tr|chair}}低，但它放置下来依然是 2 格高，和其他椅子一样。
+* [[{{tr|Toilets}}|{{tr|Toilet}}]]和[[{{tr|Toilets}}|{{tr|Golden toilet}}]]也可以和[[{{tr|Work Benches}}|{{tr|Work Bench}}]]/[[{{tr|Tables}}|{{tr|Table}}]]联合用于制作，但其他{{tr|toilets}}似乎并不能。
+
+== 花絮 ==
+* {{tr|The Crystal Chair}}、{{tr|Sandstone Chair}}、和{{tr|the Martian Hover Chair}}似乎是仅有的具有“朝后”{{tr|inventory}}外观的{{tr|chair}}。
+* {{tr|The Gothic Chair}}是[[{{tr|Dungeon}}]]中出现的{{tr|chair}}里唯一不具备{{tr|dungeon}}颜色的。
+* 一个 {{tr|NPC}} 和一只{{eil|Town Cat}}可以同时坐在同一张{{tr|chair}}上。
+* {{tr|The Dynasty Chair}}是唯一 {{tr|NPC}} 不能坐的{{tr|chair}}，尽管在计算家的需求时它是有效的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced}}{{tr|Ash Wood Chairs, Balloon Chairs and Reef Chairs}}。}}
+{{history|Desktop 1.4.1.1|修正了{{tr|Town NPCs}} 会试图坐在{{tr|Dynasty Chairs}}上（他们不应当这样）的问题。}}
+{{history|Desktop 1.4.0.4|修正了 [[{{tr|NPCs}}]] 坐在{{tr|Dynasty Chairs}}上坐姿不正确的问题。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Skyware Chair}}的物品和放置外观都更新了。
+** {{tr|Players}}现在可以坐在{{tr|chairs}}上，这会为{{tr|health regeneration}}提供少量加成。
+** 添加了{{tr|Spider Chairs}}、{{tr|Lesion Chairs}}、{{tr|Bamboo Chairs}}、{{tr|Sandstone Chairs}}、{{tr|Solar Chairs}}、{{tr|Vortex Chairs}}、{{tr|Nebula Chairs}}和{{tr|Stardust Chairs}}。}}
+{{history|Desktop 1.3.5|添加了{{tr|Crystal Chair}}。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Meteorite Chair}}、{{tr|Granite Chairs}}、{{tr|Marble Chairs}}和{{tr|Martian Chairs}}。}}
+{{history|Desktop 1.2.4|添加了{{tr|Palm Wood Chairs}}、{{tr|Boreal Wood Chairs}}和{{tr|Slime Chairs}}。更新了{{tr|Chairs}}和高{{tr|Torches}}的图像以修正一些问题。}}
+{{history|Desktop 1.2.3|
+** {{tr|Living Wood chairs}}、{{tr|Lihzahrd chairs}}、和{{tr|Skyware chairs}}变成可制作了。
+** 老{{tr|chairs}}的{{tr|Crafting stations}}更改。
+** 添加了{{tr|Dynasty Chair}}、{{tr|Frozen Chair}}和其{{tr|crafting station}}。}}
+{{history|Desktop 1.2.2|添加了{{tr|Pine Chair}}。}}
+{{history|Desktop 1.2.1|添加了{{tr|Pumpkin Chair}}和{{tr|Spooky Chair}}。}}
+{{history|Desktop 1.2.0.3|添加了{{tr|Bar Stool}}、{{tr|Glass Chairs}}、{{tr|Golden Chairs}}、{{tr|Honey Chairs}}、和{{tr|Steampunk Chairs}}。}}
+{{history|Desktop 1.2|
+** 添加了{{tr|Ebonwood Chairs}}、{{tr|Pearlwood Chairs}}、{{tr|Shadewood Chairs}}、{{tr|Bone Chairs}}、{{tr|Cactus Chairs}}、{{tr|Flesh Chairs}}、{{tr|Gothic Chairs}}、{{tr|Mushroom Chairs}}、{{tr|Obsidian Chairs}}、{{tr|Rich Mahogany Chairs}}、{{tr|Blue Dungeon Chairs}}、{{tr|Green Dungeon Chairs}}和{{tr|Pink Dungeon Chairs}}。
+** 引入了{{tr|Lihzahrd Chairs}}、{{tr|Living Wood Chairs}}、和{{tr|Skyware Chairs}}，但不可制作。
+** [[{{tr|Depth Meter}}]]不再是可制作的。}}
+{{history|Desktop-Release|引入了{{tr|Wooden Chair}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Chairs}}
+
+[[Category:工作台和椅子]]
+[[Category:制作站物品]]

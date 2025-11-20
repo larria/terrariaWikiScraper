@@ -1,0 +1,11 @@
+<includeonly><!--
+
+-->[[File:{{{result|}}} (placed).{{#if:{{#af_search:{{#var:craftedwalls_usegif}}|{{{result|}}}}}|gif|png}}]]<!-- this array variable is defined at the top of the base page, [[Crafted walls]]
+-->&emsp;<!--
+--><div style="display:inline-block; vertical-align:middle">@@@@</div><!-- {{recipes}} outputs a <div> with the version exclusivity note if necessary, which is displayed in a new line, but we always want to display it next to the large placed image, hence the wrapper <div> here
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Crafted walls/resultcell}}
+</noinclude>

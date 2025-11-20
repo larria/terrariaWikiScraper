@@ -1,0 +1,201 @@
+{{infobox wrapper
+|{{npc infobox
+| auto = 266
+| namesub2 = 第一形态
+| type = Boss
+| environment = The Crimson
+| image = Brain_of_Cthulhu_(First_Phase).gif
+| environment2 = Underground Crimson
+| life2 = <br/><!--
+	-->{{modes<!--
+		-->|{{#expr:{{npcinfo|266|hp}}+(20*{{npcinfo|267|hp}})}}<!--
+		-->|{{#expr:{{npcinfo|266|hp|expert}}+(20*{{npcinfo|267|hp|expert}})}}<!--
+		-->|{{#expr:{{npcinfo|266|hp|master}}+(20*{{npcinfo|267|hp|master}})}}<!--
+	-->}} {{note|small=y|paren=y|计入{{tr|Creepers}}}}<!--
+	-->{{source code ref|v=1.4.0.5|method=Terraria.NPC.AI|t=相关部分位于 <code><nowiki>aiStyle == 54</nowiki></code> 代码段。}}<!--
+	-->{{source code ref|v=1.4.0.5|method=Terraria.NPC.GetBrainOfCthuluCreepersCount}}
+| knockback = {{modes|{{npcinfo|266|knockback}} {{eicons|1.4.4|small=y}} / 50% {{eicons|1.4.4|invert=y|small=y}}|{{npcinfo|266|knockback|expert}}|{{npcinfo|266|knockback|master}}}}
+| imageother = Map Icon Brain of Cthulhu.png
+| imageothercaption = Map Icon
+| sound1 = Item 8.wav
+| soundcaption1 = 传送
+| sound2 = Roar 0.wav
+| soundcaption2 = 进入第二阶段
+}}
+|{{npc infobox
+| auto = 266
+| namesub2 = 第二形态
+| image = Brain of Cthulhu (Second Phase).gif
+| type = Boss
+| environment = The Crimson
+| knockback = {{modes|55% {{eicons|1.4.4|small=y}} / 50% {{eicons|1.4.4|invert=y|small=y}}|60%|65%}}
+| Crimtane Ore|40–90|100% @normal
+| Bone Rattle|1|5% @normal
+| Lesser Healing Potion|5–15|100%
+| Brain of Cthulhu Mask|1|14.29% @normal
+| Brain of Cthulhu Trophy|1|10%
+| Treasure Bag (Brain of Cthulhu)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  | Brain of Confusion|1|100% #expert
+  | Brain of Cthulhu Mask|1|14.29% #expert
+  | Crimtane Ore|{{modes|wrap=no|expertonly=y|80–110|{{master|110–135}}}}|100% #expert
+  | Tissue Sample|{{modes|wrap=no|expertonly=y|20–40|{{master|30–50}}}}|100% #expert
+  | Bone Rattle|1|5% #expert
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|1]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Brain in a Jar|1|{{master|25%}} @master
+| Brain of Cthulhu Relic|1|{{master|100%}} @master
+
+| imageother = Map Icon Brain of Cthulhu.png
+| imageothercaption = Map Icon
+| cargo = no | cargodrops = yes
+| sound1 = Item 8.wav
+| soundcaption1 = 传送
+}}}}
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.MASTERMIND_Description}}|是|1}}}}|image=Map Icon Brain of Cthulhu.png}}
+{{for|{{eversions|1.3.0.1|short|invert=y}}的[[{{tr|pet}}]]召唤物|{{tr|Brain}}}}
+
+'''{{tr|Brain of Cthulhu}}'''是[[{{tr|Pre-Hardmode}}]]的[[{{tr|The Crimson}}|{{tr|Crimson}}]]主题的 [[{{tr|boss}}]]，像是一个巨大的飞行大脑。可以通过在{{tr|Crimson}}世界中摧毁 3 个[[{{tr|Crimson Heart}}]]、或者在{{tr|the Crimson}}或[[{{tr|Underground Crimson}}]][[{{tr|Biomes}}|{{tr|biome}}]]中任意位置使用[[{{tr|Bloody Spine}}]]来召唤它。
+
+打败{{tr|the Brain of Cthulhu}}及其伴随的{{tr|Creepers}}是唯一能得到[[{{tr|Tissue Sample}}]]的方法，并且是得到足够数量[[{{tr|Crimtane Ore}}]]的方法之一。首次打败{{tr|the Brain of Cthulhu}}还会让{{eil|Tavernkeep}} [[{{tr|NPC}}]] 以{{tr|Unconscious Man}}的形式生成，他可搬入可用的空[[{{tr|house}}]]；{{eicons|1.4.0.1}}此外，还能让[[{{tr|Meteorite (biome)}}|{{tr|meteorites}}]]落地。
+
+{{tr|The Brain of Cthulhu}}是[[{{tr|the Corruption}}]]的[[{{tr|Eater of Worlds}}]]的{{tr|Crimson}}[[{{tr|counterpart}}]]。不像其{{tr|corruption}}{{tr|counterpart}}，它在[[{{tr|Hardmode}}]]中没有相应的[[{{tr|Mechanical bosses}}|机械]]版本。
+
+{{boss music|t={{tr|the Brain of Cthulhu}}|Boss 3|Boss 1 (Otherworldly)}}
+
+== 行为 ==
+{{tr|The Brain of Cthulhu}}的战斗由两个阶段组成。在第一阶段，{{tr|The Brain of Cthulhu}}本身免疫[[{{tr|damage}}]]，并且会在玩家周围随机传送。会有 20 个[[{{tr|Creeper}}]]伴随{{tr|The Brain of Cthulhu}}生成，绕着它高速飞行。{{tr|Creepers}}被击杀后不会重生，在击杀所有 20 个{{tr|Creepers}}后{{tr|Brain of Cthulhu}}才会进入第二阶段，此时它才可受攻击并能被直接击杀。
+
+=== 第一阶段 ===
+{{tr|the Brain of Cthulhu}}自身一开始是无敌的，刚生成时为半透明。它会在玩家四周传送，缓慢向玩家靠近后又再次传送走到另一个随机的方向，与此同时它的 20 个{{item|Creeper|{{tr|Creeper}}{{tr|minions}}|size=23px}}会攻击玩家。在{{tr|Brain of Cthulhu}}未在传送时，{{tr|Creepers}}会以不规则的圆形轨道环绕{{tr|the Brain of Cthulhu}}，之后它们会快速冲向玩家，再重新被拉向{{tr|the Brain of Cthulhu}}处。{{tr|Creepers}}不会和{{tr|the Brain of Cthulhu}}一起传送，而是而是在玩家与{{tr|the Brain of Cthulhu}}之间拉出巨大的横扫一切的轨道，分成几组，且允许玩家同时对所有{{tr|the Creepers}}造成伤害。一旦全部 20 个{{tr|Creepers}}都被打败，{{tr|the Brain of Cthulhu}}就会进入第二阶段。
+
+=== 第二阶段 ===
+在第二阶段，{{tr|the Brain of Cthulhu}}变得完全可见，其前额叶破开，露出中心连接着血管的脉动的心脏。在第二阶段中，{{tr|the Brain of Cthulhu}}可受到[[{{tr|damage}}]]和[[{{tr|knockback}}]]，它会在玩家周围频繁传送并主动试图冲撞玩家。
+
+=== 专家模式 ===
+{{exclusive|section=y|Expert Mode}}
+在[[{{tr|Expert mode}}]]中，第二阶段中在玩家周围会出现三个{{tr|the Brain of Cthulhu}}的镜像，同步{{tr|the Brain of Cthulhu}}的移动并随着 {{tr|boss}} 失去{{tr|health}}而变得更加不透明。
+
+此外，（第一阶段的）{{tr|Creepers}}和（第二阶段的）{{tr|the Brain of Cthulhu}}都会在接触时对玩家造成随机的[[{{tr|debuffs}}]]。造成每个{{tr|debuff}}的可能性在下表中列出；注意{{tr|Creepers}}总是会造成{{tr|debuff}}，而{{tr|the Brain of Cthulhu}}只有 {{chance|1/3}} 几率造成{{tr|debuff}}。{{source code ref|v=1.4.0.5|name=debuffs|method=Terraria.Player.StatusFromNPC / Terraria.Player.AddBuff_DetermineBuffTimeToAdd}}
+
+{| class="terraria sortable"
+! rowspan=2 | {{tr|Debuff}} !! rowspan=2 | {{tr|Duration}}<ref name="debuffs"/><br/><small>（秒）</small> !! colspan=2 | 几率
+|-
+! {{tr|Brain of Cthulhu}} !! {{tr|Creepers}}
+|-
+| {{item|Poisoned}} || {{expert|5.25–10.5 秒}}<br>{{master|6.56–13.13 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Darkness}} || {{expert|3–6 秒}}<br>{{master|3.75–7.5 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Cursed}} || {{expert|0.75–1.5 秒}}<br>{{master|0.94–1.88 秒}} || {{chance|2/243}} || {{chance|2/81}}
+|-
+| {{item|Bleeding}} || {{expert|7.5–15 秒}}<br>{{master|9.38–18.75 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Confused}} || {{expert|1.5–3 秒}}<br>{{master|1.88–3.75 秒}} || {{chance|2/243}} || {{chance|2/81}}
+|-
+| {{item|Slow}} || {{expert|5.25–10.5 秒}}<br>{{master|6.56–13.13 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Weak}} || {{expert|11.25–22.5 秒}}<br>{{master|14.06–28.13 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Silenced}} || {{expert|1.5–3 秒}}<br>{{master|1.88–3.75 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|-
+| {{item|Broken Armor}} || {{expert|9.75–19.5 秒}}<br>{{master|12.19–24.38 秒}} || {{chance|11/243}} || {{chance|11/81}}
+|}
+
+== 备注 ==
+* [[{{tr|Creeper}}]]掉落[[{{tr|Heart}}]]的几率比大多数[[{{tr|enemies}}]]都高。
+* {{tr|Creepers}}并不会掉落[[{{tr|Souls of Night}}]]、{{eicons|Biome Key Molds|invert=y}}[[{{tr|Biome Keys}}]]、或{{eicons|Biome Key Molds}}[[{{tr|Biome Key Molds}}]]。
+* {{tr|Creepers}}在{{eil|Expert mode}}和{{eil|Master Mode}}会变得更加富有攻击性。
+* 如果玩家离开{{tr|the Crimson}}，{{tr|the Brain of Cthulhu}}会向下移动，并在此之后消失。
+** 但是，如果玩家在{{tr|Brain of Cthulhu}}消失之前回到{{tr|the Crimson}}，战斗将照常继续。
+* 可以通过砸掉[[{{tr|Crimson Heart}}]]来同时召唤两个{{tr|the Brain of Cthulhu}}。它们似乎共享{{tr|Creepers}}，并且会同时进入第二阶段。
+* 注意，实际上并不非要真正''打败''{{tr|the Brain of Cthulhu}}就能推进游戏进程，因为{{tr|the Creepers}}会掉落所需数量的{{tr|materials}}。
+** {{eicons|1.4.0.2}}不过，打败{{tr|the Brain of Cthulhu}}是获得[[{{tr|Tavernkeep}}]]和使[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]]坠落的唯一方法。
+** 在{{tr|Expert Mode}}下，击败{{tr|Brain of Cthulhu}}本身是获得[[{{tr|Brain of Confusion}}]]的唯一方法，这是一件强大的{{tr|accessory}}，即使在游戏进度后期也对玩家有很大好处。 
+** 这一仅需伤害 {{tr|boss}} 而非击败它即可获取和游戏进度相关的{{tr|items}}的特性也同样适用于其{{tr|Corruption counterpart}}：[[{{tr|Eater of Worlds}}]]。 
+* {{eicons|1.4.0.1|invert=y}}如果玩家已经得到了[[{{tr|Reaver Shark}}]]（通过[[{{tr|Fishing}}]]），那么制作[[{{tr|Deathbringer Pickaxe}}]]（用[[{{tr|Tissue Sample}}]]和[[{{tr|Crimtane Ore}}]]）就不是必要的了。
+* 由于在{{tr|Hardmode}}中可以用[[{{tr|explosives (class)}}]]摧毁[[{{tr|Hellstone}}]]，且可以通过[[{{tr|fishing}}]]得到{{tr|Hardmode ores}}，因此要取得那些物品并不非要打败{{tr|the Brain of Cthulhu}}。
+
+== 成就 ==
+{{achievement|name=Mastermind}}
+{{achievement|name=Slayer of Worlds}}
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Brain of Cthulhu}}攻略}}
+<!--
+Do not put specific strategies here. Instead, add them to [[Guide:Brain of Cthulhu strategies]].
+-->
+* 单个{{tr|Creepers}}的{{tr|health}}很低，并且很容易受[[{{tr|On Fire!}}]]和[[{{tr|Frostburn}}]][[{{tr|debuff}}]]影响，用能造成这些{{tr|debuff}}的武器能快速清理掉它们。
+* [[{{tr|Grenades}}]]和其他溅射伤害武器可以非常快速地击杀{{tr|the Creepers}}，因为它们经常聚集在一起。
+* 由于{{tr|the Brain of Cthulhu}}可被{{tr|knockback}}，因此诸如[[{{tr|The Rotted Fork}}]]这样有着高{{tr|knockback}}的{{tr|weapon}}可以在传送之间保持{{tr|Creepers}}和{{tr|Brain of Cthulhu}}不靠近。也可以使用诸如[[{{tr|Katana}}]]和[[{{tr|Zombie Arm}}]]之类的游戏早期的{{tr|melee weapons}}，只要它们没有负面的[[{{tr|Modifiers}}]]。这场战斗最好用{{tr|spears}}来进行，因为它们能造成更多击退，因此，推荐用[[{{tr|Trident}}]]或[[{{tr|The Rotted Fork}}]]。
+** 注意这在{{eil|Expert Mode}}和{{eil|Master Mode}}中可能不起作用，因为很难分辨出应当攻击幻影中的哪个{{tr|Brain}}。
+* [[{{tr|Jester's Arrows}}]]或者其他穿透敌人的武器极其有助于第一阶段的战斗，因为{{tr|Creepers}}经常聚集在一起，这让玩家瞄准好后一击就能击中大多数{{tr|Creepers}}。
+* 在第二阶段中，[[{{tr|Minishark}}]]能极其有效地维持{{tr|Brain of Cthulhu}}远离玩家。
+* {{eicons|Expert Mode}} 有几种方法可以在第二阶段揭示真正的{{tr|Brain of Cthulhu}}：
+** 真的{{tr|Brain of Cthulhu}}是唯一具有{{tr|health bar}}的。
+** [[{{tr|Bone Javelin}}]]只会钉在真的{{tr|Brain of Cthulhu}}上。
+** [[{{tr|On Fire!}}]]、[[{{tr|Frostburn}}]]、和[[{{tr|Poisoned}}]]{{tr|debuffs}}只会伤害真的{{tr|Brain of Cthulhu}}。
+** [[{{tr|Slime Gun}}]]和[[{{tr|Water Gun}}]]仅对真的{{tr|Brain of Cthulhu}}施加视觉效果，不过它们不能造成伤害。
+** [[{{tr|Slime Mount}}]]只会在真的{{tr|Brain of Cthulhu}}上弹起。
+** 幻影本身的位置是相对于玩家位置的。如果玩家走离真正的{{tr|brain}}，幻象会快速散开，但真正的{{tr|Brain of Cthulhu}}将继续以稳定的速度移动。
+** 使用手柄时，[[{{tr|lock on}}]]功能只会瞄准真的{{tr|Brain of Cthulhu}}。
+* 将从战斗中得到的{{tr|Crimtane Ore}}全部卖掉是{{tr|Pre-Hardmode}}中的一种非常有效的[[指南:赚钱|赚钱]]方式。
+
+== 花絮 ==
+[[File:Brain of Cthulhu cloud.png|thumb|right|{{eicons|1.4.0.1}} {{tr|The Brain of Cthulhu}}形状的云。]]
+* {{tr|The Brain of Cthulhu}}，以及多个其他 {{tr|bosses}}，都是基于[[{{tr|Cthulhu}}]]的，它最初是由{{维基百科|H. P. Lovecraft|{{tr|H. P. Lovecraft}}}}在他的短篇小说{{维基百科|b=y|The Call of Cthulhu|t=克苏鲁的呼唤}}中想象出来的生物。
+* 不像[[{{tr|Eater of Worlds}}]]和[[{{tr|The Destroyer}}]]之间的关联那样，{{tr|the Brain of Cthulhu}}并没有[[{{tr|Hardmode}}]]下的对应物，虽然{{tr|The Destroyer}}的[[{{tr|Probe}}]]在功能上类似于它的[[{{tr|Creeper}}]]。
+** {{lore|[[{{tr|Mechanic}}]]从未完成{{tr|Cthulhu}}的机械大脑。这解释了为什么它没有机械对应物。}}
+** 技术层面上说，{{tr|the Brain of Cthulhu}}没有机械版本是因为{{tr|mechanical bosses}} 是在{{tr|desktop 1.1}} 中引入的，而{{tr|the Brain of Cthulhu}}是在{{tr|desktop 1.2}}中引入的。
+* 假设玩家高 5 英尺 9½ 英寸（1.75 米），{{tr|Brain of Cthulhu}}将有约 16 英尺（4.9 米）高。{{tr|The Creepers}}的高和宽则是 4 英尺（1.2 米）。
+* {{tr|The Brain of Cthulhu}}的{{tr|health}}在所有 {{tr|boss}} 中是最少的，甚至比第二形态的[[{{tr|Eye of Cthulhu}}]]还少。不过，加上{{tr|Creeper}}的{{tr|health}}，其{{tr|health}}要高于[[{{tr|King Slime}}]]。
+* {{tr|The Brain of Cthulhu}}是唯一受[[{{tr|knockback}}]]作用的 [[{{tr|boss}}]]。
+* 它是仅有的三个进入第二阶段后{{tr|map icon}}不变的 {{tr|boss}} 之一，另两个是[[{{tr|Santa-NK1}}]]和[[{{tr|Queen Slime}}]]。
+* {{tr|The Brain of Cthulhu}}（Brain of Cthulhu）有时候被简称为“BoC”。{{note|small=y|paren=y|译注：中文社区常简称为“克脑”}}
+* {{tr|the Brain}}和{{tr|Creepers}}在{{tr|Expert Mode}}中所能造成的{{tr|debuffs}}列表恰好和[[{{tr|Ankh Charm}}]]所能免疫的{{tr|debuff}}列表完全一样。[[{{tr|Ankh Shield}}]]也能免疫这些{{tr|debuff}}，还额外多出了[[{{tr|Burning}}]]和[[{{tr|Chilled}}]]。当然，在游戏中已经可以得到{{tr|Ankh Charm}}的时间点时打败{{tr|the Brain of Cthulhu}}已经轻而易举了。
+* 在{{eversions|1.4.0.1}}中，{{tr|background}}中偶尔能看到{{tr|Brain of Cthulhu}}形状的[[{{tr|Ambient entities|link=y}}#稀有云|{{tr|cloud}}]]。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4.6|（再次）修复了{{tr|Brain of Cthulhu}}直接传送到玩家脸上的问题。}}
+{{history|Desktop 1.4.4|
+** 对 {{tr|boss}} 战做了若干改动：
+** {{tr|Health}}由 1000 提升至 1250。
+*** 为所有难度下的{{tr|Brain of Cthulhu}}都增加了 5% 的{{tr|Knockback resistance}}（从 50/55/60% 提升至 55/60/65%）。
+*** 在{{tr|Expert}}/{{tr|Master}}中其幻影会更快地变为不透明。
+*** 现在在第一阶段期间玩家周围有安全范围，用以防止{{tr|Brain of Cthulhu}}在传送时直接出现在玩家脸上（不过它仍然可能会离玩家非常近）。
+*** 第二阶段期间不再拥有{{tr|map icon}}。
+** 对其掉落物做了若干改动：
+*** {{tr|Brain of Cthulhu}}在{{tr|Expert}}/{{tr|Master}}下，{{tr|Crimtane Ore}}和{{tr|Tissue Samples}}的总体掉落率大大降低，从前掉落的量几乎是本应掉落的量的两倍。现在的掉落量和{{tr|Eater of Worlds}}掉落物的掉落量基本持平。
+*** 重新对{{tr|Expert and Master}}中{{tr|Crimtane Ore}}和{{tr|Tissue Samples}}的掉落量做了分配。总体来说，由{{tr|Creepers}}掉落的量减少，由{{tr|Treasure Bags}}掉落的量增加了。
+*** 在{{tr|Expert mode}}中，掉落物的量大致被平均分配。50% 的{{tr|Crimtane Ore}}和{{tr|Tissue Samples}}在击杀{{tr|Creepers}}时掉落，另外 50% 掉落自{{tr|Treasure Bags}}。
+*** 在{{tr|Master mode}}中，总的掉落率向{{tr|Treasure Bag}}高度倾斜，只有 25% 的掉落物来自{{tr|Creepers}}，其余 75% 都掉落自{{tr|Treasure Bags}}。
+** {{tr|Classic mode}}下的{{tr|drop rates}}和分配权重未被改动。}}
+{{history|Desktop 1.4.1.2|（英文）修正了{{tr|Bestiary}}描述中的一处语法错误：“... aids the Crimson ''to'' an attempt to avenge ...”更改为“... aids the Crimson ''in'' an attempt to avenge ...”。}}
+{{history|Desktop 1.4.0.3|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.4.0.2|现在打败{{tr|the Brain of Cthulhu}}才能让[[{{tr|Meteorite (biome)}}|{{tr|Meteorites}}]]落下，而非打破[[{{tr|Crimson Heart}}]]，另外，打败更多{{tr|Brains of Cthulhu}}会提高在接下来的夜晚中{{tr|Meteorite}}坠落的几率。}}
+{{history|Desktop 1.4.0.1|
+** 现在在{{tr|Master Mode}}中有 {{chance|1 in 4}} 几率掉落[[{{tr|Brain in a Jar}}]]，这是个能召唤{{tr|the Spider Brain}}[[{{tr|pet}}]]的物品。
+** 现在在{{tr|Master Mode}}中死亡时会掉落[[{{tr|Relics}}|{{tr|Brain of Cthulhu Relic}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在有几率掉落[[{{tr|Bone Rattle}}]]。
+** 现在在[[{{tr|Expert mode}}]]中会掉落{{tr|treasure bag}}。
+** 提高了{{tr|Classic Mode}}下{{tr|Crimtane Ore}}的掉落量，由 30–80 提升至 40–90。}}
+{{history|Desktop 1.2.3|
+** 击杀{{tr|the Brain of Cthulhu}}现在会允许[[{{tr|Dryad}}]]入住。
+** 现在有几率掉落[[{{tr|Brain of Cthulhu Mask}}]]。
+** 修正打败{{tr|Brain of Cthulhu}}不会让[[{{tr|Dryad}}]]停止谈论[[{{tr|chasms}}]]的 {{tr|Bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Brain of Cthulhu}}

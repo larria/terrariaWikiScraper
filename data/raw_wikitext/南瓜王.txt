@@ -1,0 +1,108 @@
+{{infobox wrapper
+|{{npc infobox|boxwidth=26.5em
+| auto = 327
+| image = Pumpking head.gif
+| type = Boss
+| hardmode = yes
+| environment = Pumpkin Moon
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}} {{source code ref|v=1.4.0.5|name=pkai|method=Terraria.NPC.AI|t=The relevant part is the {{code|aiStyle {{=}}{{=}} 58}} block.}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.GreekFire1}}}}
+|:note:|在更高的波数中{{tr|item drop rate}}更高<ref>更多掉落几率相关信息见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]</ref>|
+|:group:start|可能会掉落以下 {{eicons|1.4.0.1}} 8 / {{eicons|1.4.0.1|invert=y}} 7 件{{tr|items}}之一|-
+|:note:|在 20 波时，总是会掉落其中之一|@normal
+|:note:|在 12 波或更高波数时，总是会掉落其中之一|#expert
+| custom:Candy Corn Rifle/Candy Corn| {{item|Candy Corn Rifle}}
+: + {{item|Candy Corn}} (50–100)|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| custom:Jack 'O Lantern Launcher/Explosive Jack 'O Lantern| {{item|Jack 'O Lantern Launcher}}
+: + {{item|Explosive Jack 'O Lantern}} (25–50)|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| Black Fairy Dust|1|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| The Horseman's Blade|1|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| Bat Scepter|1|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| Raven Staff|1|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+| Dark Harvest|1|{{modes|2.5–12.5%|6.25–12.5%}}
+| Spider Egg|1|{{modes|2.5–12.5% {{eicons|1.4.0.1}}<br/>1.79–14.29% {{eicons|1.4.0.1|invert=y}}|6.25–12.5%}}
+|:group:end|----|----
+| Pumpking Trophy // 只在第 15 及以上波|1|{{modes|8.33–50% {{eicons|1.4.4}}<br>100% {{eicons|1.4.4|invert=y}}|27.27–60%}}
+| Pumpking Relic|1|{{master|50–100%}} @master
+| Pumpkin Scented Candle|1|{{master|12.5–25%}} @master
+| imageother = Map Icon Pumpking.png
+| imageothercaption = {{tr|Map Icon}}
+| sound1 = Item 13.wav
+| soundcaption1 = {{gameText|ProjectileName.GreekFire1}}
+| idprojectile = 326, 327, 328
+}}
+|{{anchor|Pumpking Blade}}{{anchor|{{tr|Pumpking Blade}}}}{{npc infobox|width=18em
+| auto = 328
+| type = Boss Part / Invincible
+| damage2 = <!--
+	-->&#32;{{note|small=y|paren=y|{{tr|contact}}}}
+	<br/>{{modes|120|240|360}} {{note|small=y|paren=y|{{gameText|ProjectileName.FlamingScythe}}}} {{source code ref|v=1.4.0.5|name=pkscai|method=Terraria.NPC.AI|t=The relevant part is the {{code|aiStyle {{=}}{{=}} 59}} block.}}
+| idprojectile = 329
+| environment = Pumpkin Moon
+}}
+}}
+{{quotation|[[File:Emote Town Princess.gif|link=]] [[{{tr|Princess}}]]|{{gameText|PrincessChatter.Chatter_10}}}}
+{{distinguish|{{tr|Pumpkin}}}}
+
+'''{{tr|Pumpking}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的小 [[{{tr|boss}}]]，在[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]期间生成。他是此{{tr|event}}中最终的[[{{tr|enemy}}]]，其可自由穿透[[{{tr|block}}]]。他相当于[[{{tr|frost moon}}]]的[[{{tr|Ice Queen}}]]，是{{tr|Pumpkin Moon}}最强的{{tr|enemy}}，在{{tr|event}}的末尾波数中出现，且是此{{tr|event}}中唯一的飞行{{tr|boss}}。
+
+击败{{tr|Pumpking}}会使{{tr|Pumpkin Moon event}}增加 150 / {{expert|300}} / {{master|375}} 分，是此{{tr|event}}中所有{{tr|enemy}}提供分数最多的。{{source code ref|v=1.4.4.9|method=Terraria.NPC.CheckProgressPumpkinMoon|name=pmprogress}}
+
+和[[{{tr|Mourning Wood}}]]一样，越往后的波数中被击杀的{{tr|Pumpking}}越有可能掉落物品。 在 15 波被击杀的{{tr|Pumpking}}保证有几率会掉落其标准掉落列表中至少一个物品。
+
+== 行为 ==
+<div style="float:right">[[File:Pumpking face.gif|thumb|{{tr|Pumpking}}的各种脸。]]</div>
+{{tr|Pumpking}}有两条手臂，称为'''{{tr|Pumpking Blade}}'''，他的行为与[[{{tr|Skeletron}}]]之手类似，向玩家挥舞以造成{{tr|melee damage}}。但与{{tr|Skeletron Hand}}不同，{{tr|Pumpking Blades}}完全免疫伤害。{{tr|Pumpking}}会反复在三种不同的攻击模式之间随机切换。他的当前攻击模式由其面部表情指示。当转换到下一个模式时，他的头部会旋转以显示不同的表情。
+
+* '''模式 1'''：脸部看起来像是个典型的杰克南瓜灯，带着阴险的笑容。他会试着直接朝向玩家，用拿着锄刀的手臂进行近战挥舞攻击。进入这个阶段大约 5 秒后，在这个阶段剩余时间内，他会高速向玩家移动。
+
+* '''模式 2'''：{{tr|Pumpking}}的嘴部分张开。他拿着{{tr|scythe}}的手臂会射出巨大的黄色镰刀形{{tr|projectiles}}，称为火焰锄刀。类似于[[{{tr|Demon Scythe}}]]，此{{tr|projectiles}}会停留几秒钟，然后逐渐开始旋转并开始不断加速飞向玩家，击中时造成大量伤害。
+
+* '''模式 3'''：脸部看起来很惊讶，嘴巴呈“O”形。{{tr|Pumpking}}会在更长距离外进行跟随，并吐出“{{gameText|ProjectileName.GreekFire1}}”{{tr|projectiles}}，这些{{tr|projectiles}}很容易躲避，因为它们只在很小的力量下坠落。它们会在地上停留一小会并在接触时造成{{tr|Damage}}。
+
+== 备注 ==
+* 在{{tr|Pumpkin Moon event}}第 10 波时，{{tr|Pumpking}}开始生成。
+* 如果在黎明前（{{time|4:30 AM}}）未被击杀，或者在{{tr|event}}时，当前{{tr|world}}所有活跃的{{tr|player}}都死亡，{{tr|Pumpkings}}会直接穿越地面撤退并消失。这个特性也由[[{{tr|Mourning Wood}}]]所共享。
+* {{tr|Pumpking}}所抛出的游离锄刀可以行进至{{tr|enemy}}生成边界之外很远，能够杀掉待在家中的 {{tr|NPCs}}。
+* {{eicons|1.4.4|invert=y}}在{{tr|event}}最后的第 15 波中，多达七个{{tr|Pumpkings}}（[[{{tr|multiplayer}}]]中更多）会一同进攻。
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Pumpkin Moon}}}}
+* [[{{tr|Flairon}}]]可以非常有效地对抗{{tr|Pumpking}}，他倾向于漂浮在玩家正上方（在{{tr|Flairon}}及其自动制导{{tr|bubbles}}的范围内），使得每一击的伤害非常高。
+* {{tr|Pumpking}}的{{tr|contact damage}}相对低于其{{tr|projectiles}}造成的{{tr|damage}}，尤其是他的{{tr|Flaming Scythes}}。使用[[{{tr|wings}}]]和其他飞行性{{tr|accessories}}，例如{{eil|Soaring Insignia}}， 向他头部飞得更近，同时凭借高[[{{tr|defense}}]]承受其{{tr|contact damage}}，可以帮助{{tr|player}}避免承受更高的{{tr|damage}}，特别是在同时受到大量{{tr|Pumpkings}}攻击的情况下。
+* 使用诸如[[{{tr|Anti-Gravity Hook}}]]、[[{{tr|Tabi}}]]及其升级物或{{eil|Shield of Cthulhu}}等高机动性物品，可以更轻松地处理{{tr|pumpking}}。
+
+== 花絮 ==
+<div style="float:right">[[File:Pumpking cloud.png|thumb|{{tr|The Pumpking}}形状的云。]]</div>
+* Pumpking（{{tr|Pumpking}}）是“Pumpkin（南瓜）”和“King（国王）”构成的混成词。
+* {{tr|Pumpking}}的 [[NPC ID]] 仅包含他的头，这是其主体中唯一可以受到和造成伤害的部分。依附在{{tr|Pumpking head}}{{tr|sprite}}上的斗篷则作为无害的，不可破坏的实体单独储存，名称为{{code|PumpkingCloak.xnb}}。
+* 虽然名称如此，但{{tr|the Horseman's Blade}}掉落自{{tr|Pumpking}}而'''非'''[[{{tr|Headless Horseman}}]]。
+* {{tr|Pumpking}}和[[{{tr|Poltergeist}}]]是仅有的两个主体可以始终穿透[[{{tr|block}}]]的{{tr|Pumpkin Moon enemies}}。
+* 虽然{{tr|Pumpking blade}}有生命值和防御，但它们却不会受到伤害。
+* 在{{eversions|1.4.0.1}}中，背景中有时会看到{{tr|Pumpking}}形状的云。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 生命由 22000 提升至 26000。
+** 防御由 36 提升至 40。
+** 现在占用更多的敌怪栏，为了和{{tr|Frost moon}}的 Boss 更相似，从而极大地减少了同时生成的数量。}}
+** 南瓜月纪念章现在使用霜月的掉落率，而不是第 15 波中击杀后必定掉落。
+** {{tr|Master Mode}}中每次击杀时，提供的{{tr|Pumpkin Moons}}波次分数从 300 增加至 375。
+{{history|Desktop 1.4.0.1|
+** 现在有几率掉落[[{{tr|Dark Harvest}}]][[{{tr|whip}}]]。
+** 现在有[[{{tr|Master Mode}}]]掉落：他死亡时总是会掉落{{tr|Pumpking}}[[{{tr|Relic}}]]，另外还有 25% 几率掉落[[{{tr|Pumpkin Scented Candle}}]][[{{tr|pet|link=y}}#{{tr|Light Pet}}|{{tr|light pet}}]]。}}
+{{history|Desktop 1.2.1.1|{{tr|Pumpking}}的锄刀攻击的持续时间缩短。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|引入，随同缩短的锄刀攻击持续时间。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|引入，随同缩短的锄刀攻击持续时间。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Pumpkin Moon Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+{{language info|en=Pumpking}}

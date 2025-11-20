@@ -1,0 +1,61 @@
+{{npc infobox
+| auto = 154
+| image = Ice Tortoise.gif
+| image2 = Ice Tortoise (old).png
+| imageother = Ice Tortoise2.png
+| imageothercaption = 滚动状态
+| environment = Ice biome
+| damage2 = &#32;/ {{modes|{{#expr:{{npcinfo|154|damage}}*2}}|{{#expr:{{npcinfo|154|damage|expert}}*1.8}}|{{#expr:{{npcinfo|154|damage|master}}*1.8}}}} {{note|paren=y|{{tr|spinning}}时}}
+| defense2 = &#32;/ {{#expr:{{npcinfo|154|defense}}*2}} {{note|paren=y|{{tr|spinning}}时}}
+| Milkshake|1|1.33%
+| Ice Sickle|1| 1% {{eicons|1.4.4}} <br/> 0.56% {{eicons|1.4.4|invert=y}}
+| Frozen Turtle Shell|1| 2% {{eicons|1.4.4}} <br/> 1% {{eicons|1.4.4|invert=y}}
+| hardmode = yes
+}}
+
+'''{{tr|Ice Tortoise}}'''是一种[[{{tr|Hardmode}}]][[{{tr|Enemies}}|{{tr|enemy}}]]，生成于[[{{tr|Ice biome}}]]中。它会缓慢地四处走动，偶尔会缩进壳内，然后开始旋转并跃向玩家，获得更高的{{tr|defense}}并造成高{{tr|contact damage}}。
+
+在[[{{tr|Jungle}}]]和[[{{tr|Underground Jungle}}]]中，会遇到与{{tr|Ice Tortoise}}行为相同的变体[[{{tr|Giant Tortoise}}]]。
+
+== 备注 ==
+* 默认情况下，两次旋转攻击之间的冷却时间是 6.67 秒。 如果{{tr|Ice Tortoise}}受到伤害，冷却时间会重置。{{source code ref|name=ai|v=1.4.1.2|method=Terraria.NPC.AI}}
+** 如果{{tr|Ice Tortoise}}距离玩家超过 12.5 格，并且它可以直接看到玩家，那么冷却时间会减少到 1.33 秒。
+** 如果距离超过 37.5 格，并且它可以直接看到玩家或在玩家上方 12.5 格内，那么冷却时间会进一步减少到 0.61 秒。
+* 当在[[{{tr|water}}]]中结束旋转攻击时，{{tr|Ice Tortoise}}会立即再次进行旋转攻击。
+* 每次旋转攻击过程中都包含 0.5 秒缩进壳内、1.5 秒旋转、减速直到停在固体表面、0.5 秒从壳中出来这些动作。在其中的任意时间攻击{{tr|Ice Tortoise}}都会使旋转攻击中止。<ref name="ai" />
+* 虽然{{tr|Ice Tortoise}}旋转攻击的轨迹是在它缩进壳内时的瞬间，基于玩家的位置决定的，但它仍会识别玩家当前的{{tr|position}}，并会在到达玩家上方时快速减速来试图下落。
+
+== 小贴士 ==
+* {{tr|Ice Tortoises}}会发出一定程度的光，所以很容易发现它们。这也有助于寻找未被探索过的{{tr|caves}}。
+* 任何能快速攻击的{{tr|weapon}}或[[{{tr|minions}}|召唤物]]都很有效，因为这可阻止{{tr|Ice Tortoise}}发起旋转攻击。例如可以使用[[{{tr|Megashark}}]]、{{eil|yoyo}}、或{{eil|Enchanted Dagger|s}}。
+* 如果玩家保持靠近{{tr|Ice Tortoise}}，[[{{tr|Melee weapons}}]]会很有用。即使不持续攻击，距离近时旋转攻击的冷却时间也会很长。
+* 应避开水池，因为它们会导致{{tr|Ice Tortoise}}立即尝试跃向玩家。
+* {{tr|Ice Tortoises}}不能穿过[[{{tr|platforms}}]]。因此放置几排长{{tr|platforms}}可以显著降低玩家受到旋转攻击的危险。
+* 和[[{{tr|Giant Tortoise}}]]不同，{{tr|Ice Tortoises}}仅会在[[{{tr|cavern}}]]{{tr|layer}}（[[{{tr|Ice biome}}]]）生成。刷怪时应当考虑这一点。
+
+== 花絮 ==
+* {{tr|The Ice Tortoise}}及其[[{{tr|Giant Tortoise}}]]变体可能参考了 [https://metroid.fandom.com/wiki/Tatori Tatori]，在 1994 年的动作冒险游戏{{维基百科|b=y|Super Metroid|t=超级银河战士}}中的一种相似的乌龟敌怪，它也以同样的旋转攻击方式攻击玩家。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Frozen Turtle Shell}}{{tr|drop rate}}由 1/100 提升至 1/50。
+** {{tr|Ice Sickle}}{{tr|drop rate}}由 1/180 提升至 1/100。}}
+{{history|Desktop 1.4.0.1|现在会掉落[[{{tr|Milkshake}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated}}。旧外观为 [[File:Ice Tortoise (old).png|40px]]}}
+{{history|Desktop 1.3.0.1|现在有几率掉落它自己的相应{{tr|banner}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|现在有几率掉落它自己的相应{{tr|banner}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|现在有几率掉落它自己的相应{{tr|banner}}。（{{icon|ps4}}）}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Ice Tortoise}}

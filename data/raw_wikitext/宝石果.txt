@@ -1,0 +1,100 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| imagealt = [[File:Gemcorns.gif|link=]]
+| type = Seeds
+| auto = 4851
+| name = Gemcorns
+| sell = {{iteminfo|Amethyst Gemcorn|sell}} ({{tr|Amethyst}})<br/>{{iteminfo|Topaz Gemcorn|sell}} ({{tr|Topaz}})<br/>{{iteminfo|Sapphire Gemcorn|sell}} ({{tr|Sapphire}})<br/>{{iteminfo|Emerald Gemcorn|sell}} ({{tr|Emerald}})<br/>{{iteminfo|Ruby Gemcorn|sell}} ({{tr|Ruby}})<br/>{{iteminfo|Diamond Gemcorn|sell}} ({{tr|Diamond}}/{{tr|Amber}})
+| id = 4851-4857
+| idtile = 583-589, 590
+| cargo = no
+}}
+[[File:Gem Saplings.png|frame|放置的{{tr|Gemcorns}}。]]
+
+'''{{tr|Gemcorns}}'''是一类[[{{tr|seeds|link=y}}|{{tr|seeds}}]]，由[[{{tr|Acorn}}]]和任何[[{{tr|gem}}]]制作而来。放置后，它们会成为能长成[[{{tr|gem trees}}]]的{{tr|saplings}}。天然的{{tr|gem trees}}偶尔会在[[{{tr|Underground}}]]和[[{{tr|Cavern}}]]{{tr|layers}}中生成。摧毁{{tr|gem tree}}后通常可获得 7–48 个[[{{tr|Stone Block}}]]、0–11 个与{{tr|tree}}的类型相对应的{{tr|Gemcorns}}、和 0–24 个与{{tr|tree}}的类型相对应的{{tr|gems}}（{{tr|tree}}的每一格都有 {{chance|1/10}} 几率掉落{{tr|gem}}，否则会掉落 1–2 个{{tr|Stone Blocks}}，且所有非光秃的树叶/树枝{{tr|tile}}额外有 {{chance|1/2}} 几率再掉落一个{{tr|Gemcorn}}{{source code ref|v=1.4.2.3|method=Terraria.WorldGen.SetGemTreeDrops}}。''见[[#生长条件|生长条件]]章节获取详细信息'')。
+
+{{tr|Gemcorns}}在放置后便无法回收。摧毁{{tr|sapling}}不会产出任何{{tr|items}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|cate=force|showresultid=1|result=LIKE %Gemcorn|expectedrows=7|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+== 生长条件 ==
+类似于常规的[[{{tr|saplings}}]]，{{tr|gem tree}}的{{tr|saplings}}也需要满足某些条件才能生长：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GrowTreeWithSettings}}
+* {{tr|The sapling}}必须放置在[[{{tr|surface}}]]{{tr|layer}}以下。
+* {{tr|The sapling}}只能被种植在任何[[{{tr|Stone Block}}]]上，包括{{tr|biome}}和长[[{{tr|moss}}]]的{{tr|variant}}。{{tr|sapling}}所在的{{tr|block}}的相邻{{tr|tile}}中至少需要有一格也是这些{{tr|blocks}}。
+{{collapse top|显示合适的{{tr|blocks}}列表|隐藏{{tr|blocks}}}}
+<!--{{#arraydefine:soil|1,25,117,203,182,180,179,381,183,181,534,536,539,625,627|,}}-->
+{{itemlist|width=15em
+|{{item|Stone Block}}
+|{{item|Ebonstone Block}}
+|{{item|Pearlstone Block}}
+|{{item|Crimstone Block}}
+|{{item|Moss|带{{tr|Green Moss}}的{{tr|Stone Block}}|image=Green Moss (placed).png}}
+|{{item|Moss|带{{tr|Brown Moss}}的{{tr|Stone Block}}|image=Brown Moss (placed).png}}
+|{{item|Moss|带{{tr|Red Moss}}的{{tr|Stone Block}}|image=Red Moss (placed).png}}
+|{{item|Moss|带{{tr|Blue Moss}}的{{tr|Stone Block}}|image=Blue Moss (placed).png}}
+|{{item|Moss|带{{tr|Purple Moss}}的{{tr|Stone Block}}|image=Purple Moss (placed).png}}
+|{{item|Moss|带{{tr|Lava Moss}}的{{tr|Stone Block}}|image=Lava Moss (placed).png}}
+|{{item|Moss|{{tr|Krypton Moss}}的{{tr|Stone Block}}|image=Krypton Moss (placed).png}}
+|{{item|Moss|带{{tr|Xenon Moss}}的{{tr|Stone Block}}|image=Xenon Moss (placed).png}}
+|{{item|Moss|带{{tr|Argon Moss}}的{{tr|Stone Block}}|image=Argon Moss (placed).png}}
+|{{item|Moss|带{{tr|Neon Moss}}的{{tr|Stone Block}}|image=Neon Moss (placed).png}}
+|{{item|Moss|带{{tr|Helium Moss}}的{{tr|Stone Block}}|image=Helium Moss (placed).gif}}
+}}
+{{collapse bottom}}
+* {{tr|sapling}}所占用的两格中下方那格必须没有{{tr|background walls}}，或有下列{{tr|walls}}中的一种。
+{{collapse top|显示合适的{{tr|walls}}列表|隐藏{{tr|walls}}}}
+{{#arraydefine:applicableWall|<!--
+field=Terraria.ID.WallID.Sets.AllowsPlantsToGrow --><!--0 (no wall),-->150,138,145,107,152,140,139,141,106,245,315,317,63,64,65,66,67,68,69,81,70,264,268,265,74,80,<!--
+method=Terraria.WorldGen.GemTreeWallTest -->2,54,55,56,57,58,59,61,185,196,197,198,199,208,209,210,211,212,213,214,215|,}}<!--
+-->{{itemlist/start|width=20em}}
+{{#arrayprint:applicableWall||@@@|{{itemlist/item|{{wall|id=@@@}}}}}}
+{{itemlist/end}}
+{{collapse bottom}}
+* {{tr|sapling}}所占用的两格中下方那格及其两侧的各一格必须不包含任何[[{{tr|liquid}}]]。
+* {{tr|The sapling}}还需要垂直空间才能生长。在以{{tr|sapling}}为底边中心的 5 格宽的长方形区域以内必须不存在除{{tr|sapling}}以外的其他{{tr|tile}}。
+** 长方形区域的高度为 11 格至 16 格。在这一范围内，较低的垂直空间会导致更慢的生长速度和更矮的{{tr|tree}}。
+*** 由于长成的{{tr|gem trees}}会产生树枝，在两棵{{tr|sapling}}之间留出三格空间可以让两棵{{tr|sapling}}都能长大。
+
+在正确生长条件下的{{tr|Saplings}}上使用[[{{tr|Fertilizer}}]]会使其立即长成{{tr|gem tree}}。
+
+[[{{tr|Light sources}}|光]]对{{tr|saplings}}的生长没有效果。
+
+=== 成树 ===
+{{tr|Gem trees}}生长平均需要 32 游戏内小时。{{source code ref|v=1.4.4.9|method=Terraria.Worldgen.UpdateWorld_UndergroundTile|t={{tr|Underground tile}}更新会在{{tr|surface}}分界线和{{tr|world}}的真正底部之间的任何位置发生，这个范围大约是{{tr|world}}总大小的 70%。每{{tr|tick}}的更新次数是{{tr|world}}总大小的 0.0015%，且{{tr|sapling}}的两格任意一格被更新时就会生长，生长几率为每次更新 20%。{{tr|sapling}}每{{tr|tick}}的生长几率约为 <math display="inline">\frac{0.0015\%\times\text{世界大小}}{70\%\times\text{世界大小}}\times20\%\times2=8.571\times10^{-6}</math><!-- No need to talk about the probability of multiple successful growth attempts occuring in a single tick. The probability is negligible and the final time estimate in ticks is rounded up, which is actually a bigger source of error. -->。这意味着{{tr|gem tree}}生长的平均时间将是 <math display="inline">\frac{1}{8.571×10^{-6}} = 116667</math> {{tr|ticks}}，或者说 <math display="inline">116667\div3600 = 32.4</math> 游戏内小时（真实世界分钟）。}}
+
+{{tr|Gem trees}}可以有 7–12 格高（不计算顶部非{{tr|tile}}的“树叶”占用的空间），由 6–11 个“树干”{{tr|tiles}}和顶部的一个“树叶”{{tr|tiles}}组成，树干旁有 0–20 个（取决于{{tr|tree}}高度）“树枝”{{tr|tiles}}（每个树枝占一格），总计为 6–11 个“树干”{{tr|tiles}}、1 个“树叶”{{tr|tiles}}、和 0–20 个“树枝”{{tr|tiles}}。
+
+树干长度是均匀分布的，树枝{{tr|tiles}}从顶部开始向下生成，每格高度有 30% 几率生成（左侧、右侧、两侧各 10%）。树枝{{tr|tiles}}不能从树叶{{tr|tiles}}或{{tr|tree}}的最底部那格生成，且如果树枝在上方的一格生成过且在当前格的同一侧再次尝试生成，游戏会重新生成一次树枝。树枝{{tr|tiles}}有 {{chance|2/3}} 几率有叶子，有 {{chance|1/3}} 几率是光秃的，而树叶{{tr|tiles}}有 {{chance|1/13}} 几率是光秃的。
+
+“树干”、“树叶”、和“树枝”{{tr|tiles}}会掉落 1 个{{tr|gem}}（10%  几率）或 1–2 个{{tr|Stone Blocks}}（剩余的 90% 几率）。如果“树叶”和“树枝”{{tr|tiles}}不是光秃的（光秃的树叶/树枝完全是石灰色，没有可见的“{{tr|gem}}树叶”），则还有 50% 几率掉落 1 个{{tr|Gemcorn}}。
+
+粗略估计下，一棵{{tr|gem tree}}会掉落 1.46 个{{tr|gems}}、19.7 个{{tr|Stone Block}}、和 2.15 个{{tr|Gemcorns}}<!-- Average trunk height: 9.5. Average branch number: 0.4 per tile of trunk, if the previous trunk tile had no branches. With a branch above the next tile, the odds of that next tile initially rolling a branch, then rolling no branch is 0.2 * 0.8 = 0.16, so to account for this I took the average branches per trunk tile to be 0.4 * (1 - 0.16) = 0.336. Then there's the edge case of the last tile that can have branches and a bug where if two branches occur on the same side in a row, the tile below that has a normal 20% chance of having a branch. My calculations for this part were rough and in practice the numbers above are likely only good to 2 significant figures. -->。这是多棵{{tr|gem trees}}的平均产出，单棵{{tr|gem trees}}的产出的方差很大。单棵{{tr|gem trees}}可能完全不会返还任何{{tr|gems or Gemcorns}}。<!-- The calculations for likelihood here are too complicated for me to just work out by hand, since the odds of not getting gems or Gemcorns depend exponentially on the number of tiles. Thus, I can't simply use average outcomes to simplify the math, and an actual answer here would require an enumeration of all tree configurations, their respective probabilities, and their odds of not giving a Gemcorn. That would be a lot of work. Should be approximately 1/5 but that approximation's too rough for me to list. -->
+
+== 小贴士 ==
+[[File:Example functioning Gemcorn farm.png|thumb|400px|有效的{{tr|gem tree}}农场。地板完全由{{tr|Stone Block}}构成，未涂{{tr|paint}}的{{tr|blocks}}之间有三个涂上{{tr|black paint}}的{{tr|blocks}}以标记最佳间隔与无{{tr|wall}}的位置。几乎所有{{tr|background}}都覆盖有{{tr|walls}}，除了{{tr|gem tree sapling}}占用的两格。<br/>注意缺少{{tr|light sources}}仅是风格上的喜好，因为光对{{tr|Gemcorns}}的生长完全没有影响。]]
+* 在{{tr|sapling}}下方使用不同颜色的[[{{tr|Torches}}|{{tr|gem torches}}]]或[[{{tr|Gemspark Blocks}}]]是指示所种的{{tr|tree}}的类型的好方法。也可以使用[[{{tr|Paint}}]]，不过种植在涂{{tr|paint}}的{{tr|block}}上的{{tr|Gemcorn}}会长出涂{{tr|paint}}的{{tr|gem tree}}（和其他类型的[[{{tr|trees}}]]一样），这反而可能会由于颜色而难以分辨{{tr|gem}}类型。
+** 在''种{{tr|gem trees}}的{{tr|blocks}}''上使用[[{{tr|Illuminant Coating}}]]有助于分辨{{tr|gems}}，因为它会使得{{tr|trees}}和其上的{{tr|gems}}颜色无论光照都完全可见。
+* 由于{{tr|gem trees}}通常种植在[[{{tr|underground}}]]和[[{{tr|cavern}}]]{{tr|layers}}中，使用{{tr|background walls}}阻止{{tr|enemies}}生成可能会有用。
+** 在{{tr|saplings}}后方使用[[{{tr|fences}}]]可以将农场完全用[[{{tr|safe wall}}]]覆盖，完全阻止{{tr|enemy}}生成。
+* 各种{{tr|Gemcorns}}可以以对应{{tr|gem}}的价格卖出。
+** 因此，[[{{tr|Shimmer}}]]{{tr|decraft Gemcorns}}可以分离{{tr|gems}}并卖出，保留{{tr|Acorns}}供以后使用。
+* 尽管{{tr|Gemcorns}}可以被种植在长[[{{tr|moss}}]]的{{tr|Stone Block}}上，{{tr|moss}}绒毛的自然生长可能会阻碍{{tr|sapling}}的生长。此外，如果{{tr|Stone Block}}上已经长有{{tr|gem tree}}，就无法移除其上的{{tr|moss}}。不过{{tr|sapling}}下方的{{tr|Moss}}仍是可移除的。
+* 种植{{tr|sapling}}所需的 3 格相邻的空{{tr|Stone Blocks}}可以被{{tr|hammer}}击以避免意外将{{tr|Gemcorns}}种植得过近产生的浪费，因为它们无法被种植在{{tr|hammer}}击过的{{tr|blocks}}上。也可以使用[[{{tr|Smart Cursor}}]]功能来避免这一点。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{gems}}
+{{Master Template Consumables
+| show-seed = yes
+}}
+
+{{language info|en=Gemcorns}}

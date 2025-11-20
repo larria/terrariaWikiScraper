@@ -1,0 +1,285 @@
+'''{{tr|invincibility frame}}'''（也被称为'''免伤帧'''）{{footnote|译注：英文名字包括 invincibility frame、immune frame、immunity frame、invulnerability frame；有时简写为 iframe 或 i-frame}}是一段短暂的时间，在这一时段中实体无法受到任何[[{{tr|damage}}]]。它通常是在受到伤害后立即获得的。
+
+{{tr|invincibility frames}}的通常目的是防止实体从持续性的或快速重复的伤害源处受到过多伤害。例如，如果没有{{tr|invincibility frames}}，浸没在[[{{tr|lava}}]]中的玩家就会每{{tr|tick}}{{tick}}受到一次伤害，即每秒 60 次。
+
+对于玩家来说，除了受到伤害以外，在一些其他情况下也会获得{{tr|invincibility frames}}。
+
+== 玩家无敌 ==
+玩家会在受到任何来源的伤害后得到{{tr|invincibility frame}}。{{tr|invincibility frames}}的长度根据情况会有所不同；特定的{{tr|items}}也会在其效果触发时提供{{tr|invincibility frames}}。见[[#{{tr|Invincibility frame}}长度|下方]]获取详细信息。
+
+=== {{tr|Invincibility frame}}分组 ===
+在{{eversions|Moon Lord}}中，一些伤害来源分组会提供单独的“类型”的{{tr|invincibility frames}}。这些不同类型的{{tr|invincibility frames}}不会互相干扰。绝大多数的伤害来源都被分类到同一组中（下方的“第 5 组”），但有四种其他分组：
+
+{{flexstart|style=gap:var(--layout-gap);}}<!--
+	-->{{options/set|infocard|class=compact}}<!--
+	-->{{#vardefine:boxwidth|25em}}<!--
+
+---hurtCooldown[0]---
+
+	-->{{infocard/start|css=max-width:{{#var:boxwidth}};flex:1 0 {{#var:boxwidth}};}}<!--
+		-->{{infocard/mainheading|第 1 组<!--（仅限{{eicons|1.3.0.5}}）-->}}<!--
+		-->[[{{tr|The Constant}}]] {{tr|world}}中黑暗造成的伤害{{source code ref|v=1.4.4.9|method=Terraria.GameContent.DontStarveDarknessDamageDealer.Update}}，以及这些{{tr|tiles}}造成的伤害：{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyTouchDamage}}<!--
+		-->{{infocard/box|css=margin:0.5em 0|{{itemlist|width=20em<!--
+			--><!--
+			-->|{{item|Thorny bushes|image=Corruption Thorny Bush.png/Crimson Thorny Bush.png/Jungle Thorny Bush.png/Plantera Thorny Bush.png}}<!--
+			-->|{{item|Spike|image=Spike (placed).png}}<!--
+			-->|{{item|Wooden Spike|image=Wooden Spike (placed).png}}<!--
+			-->|{{item|Rolling Cactus|note2=（仅限静止时的{{tr|contact damage}}）}}<!--
+			-->|{{item|Cactus|Cacti|image=Growing cactus.png/Growing Hallow cactus.png/Growing Corrupt cactus.png/Growing Crimson cactus.png|maxsize=x30px|note2=（仅在 [[{{tr|The Constant}}]]<br/>和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中）}}<!--
+		-->}}}}<!--
+	-->{{infocard/end}}<!--
+
+---hurtCooldown[1]---
+
+	-->{{flexstart|style=gap:var(--layout-gap); flex:1 0 {{#var:boxwidth}};}}<!--
+
+	-->{{infocard/start|css=max-width:{{#var:boxwidth}};flex:1 0 {{#var:boxwidth}};}}<!--
+		-->{{infocard/mainheading|第 2 组}}<!--
+		-->所有由这些 {{tr|bosses}} 造成的伤害：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision}}<!--
+		-->{{infocard/box|css=margin:0.5em 0|{{itemlist|width=15em<!--
+			-->|{{item|Moon Lord|maxsize=x40px|wrap=y}}<!--
+			-->|{{item|Empress of Light|maxsize=x40px|wrap=y}}<!--
+		-->}}}}<!--
+	-->{{infocard/end}}<!--
+
+	-->{{flexstart|style=gap:var(--layout-gap); flex:1 0 {{#var:boxwidth}};}}<!--
+
+---hurtCooldown[3]---
+
+	-->{{infocard/start|css=max-width:{{#var:boxwidth}};flex:1 0 {{#var:boxwidth}};}}<!--
+		-->{{infocard/mainheading|第 3 组}}<!--
+		-->用普通[[{{tr|Bug Net}}]]捕捉以下[[{{tr|Critter}}]]时受到的伤害：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_CatchCritters}}<!--
+		-->{{infocard/box|css=margin:0.5em 0|{{itemlist|width=15em<!--
+			-->|{{item|Lavafly|wrap=y}}<!--
+			-->|{{item|Magma Snail|wrap=y}}<!--
+			-->|{{item|Hell Butterfly|wrap=y}}<!--
+		-->}}}}<!--
+	-->{{infocard/end}}<!--
+
+	-->{{flexstart|style=gap:var(--layout-gap); flex:1 0 {{#var:boxwidth}};}}<!--
+
+---hurtCooldown[4]---
+
+	-->{{infocard/start|css=max-width:{{#var:boxwidth}};flex:1 0 {{#var:boxwidth}};}}<!--
+		-->{{infocard/mainheading|第 4 组<!--（仅限{{eicons|1.4.1.2}}）-->}}<!--
+		-->{{item|lava}}造成的伤害。{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}<!--
+	-->{{infocard/end}}<!--
+
+---hurtCooldown[-1]---
+
+	-->{{infocard/start|css=max-width:{{#var:boxwidth}};flex:1 0 {{#var:boxwidth}}; margin-top:0;}}<!--
+		-->{{infocard/mainheading|第 5 组}}<!--
+		-->所有其他伤害来源。<!--
+	-->{{infocard/end}}<!--
+
+	-->{{flexend}}<!--
+	-->{{flexend}}<!--
+	-->{{flexend}}<!--
+
+	-->{{options/reset|infocard}}<!--
+-->{{flexend}}
+
+例如，若玩家从{{tr|Spike}}（上方的“第 1 组”）受到伤害，他在这段{{tr|invincibility frame}}期间不会受到接触{{tr|Rolling Cactus}}（同样是“第 1 组”）的伤害，但他在这段时间内仍然会从[[{{tr|enemy}}]]处（“第 5 组”）受到伤害。
+
+在{{eversions|Moon Lord|invert=y}}中，没有不同的无敌分组。所有伤害来源都提供相同“类型”的{{tr|invincibility frame}}。
+
+=== {{tr|Invincibility frame}}长度 ===
+默认情况下，受到伤害通常会给予玩家 {{duration|40 ticks}} 的{{tr|invincibility frame}}。这一时间在受到的伤害为 1 时会减半，在 [[{{tr|PvP}}]] 中则会更低。[[{{tr|Cross Necklace}}]]和{{tr|its upgrades}}会增加{{tr|invincibility frame}}的长度{{footnote|{{tr|The Cross Necklace and its upgrades}}不会互相叠加。}}。许多其他效果也会提供{{tr|invincibility frame}}，例如重生、闪避、格挡、或用[[{{tr|mount}}]]造成伤害。见下表获取细节。
+{{options/set|item|mode=table|class=alignleft|maxsize=30px|wrap=y}}
+{| class="terraria lined align-center"
+! colspan=2 | 来源
+! 默认{{footnote|默认提供的{{tr|Invincibility frames}}。}}
+! [[{{tr|Cross Necklace}}]]{{footnote|装备{{tr|Cross Necklace or its upgrades}}时提供的{{tr|Invincibility frames}}。“{{na}}”意为不受{{tr|Cross Necklace}}影响。}}
+|-
+| colspan=2 align=left | 受伤时的默认{{tr|invincibility frames}}{{source code ref|name=player-hurt|v=1.4.4.9|method=Terraria.Player.Hurt}}
+| {{duration|40 ticks}}
+| {{duration|80 ticks}}
+|-
+| colspan=2 align=left | 若所受伤害为 1<ref name="player-hurt"/>
+| {{duration|20 ticks}}
+| {{duration|40 ticks}}
+|-
+| colspan=2 align=left| [[{{tr|PvP}}]]伤害{{footnote|包括来自另一玩家的伤害和自己造成的伤害，例如[[{{tr|Explosives (class)}}]]和{{eicons|1.4.4|invert=y}}[[{{tr|Exploding Bullet}}]]。}}
+| {{duration|8 ticks}}
+| {{na}}
+|-
+| colspan=2 align=left | 在 {{tr|PvP}} 中死亡后重生{{source code ref|name=spawning|v=1.4.4.9|method=Terraria.Player.Spawn}}
+| {{duration|300 ticks}}
+| {{na}}
+|-
+| colspan=2 align=left | 在非 {{tr|PvP}} 中死亡后重生<ref name="spawning"/>
+| {{duration|180 ticks}}
+| {{na}}
+|-
+| colspan=2 align=left | 在进入{{tr|world}}时，或被传送回[[{{tr|spawn point}}]]时<br/>（例：通过[[{{tr|Magic Mirror}}]]）<ref name="spawning"/>
+| {{duration|60 ticks}}
+| {{na}}
+|-
+| {{item|Holy Protection|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.ShadowDodge}}}}
+| rowspan=4 | {{duration|80 ticks}}{{footnote|name=alltypes|提供所有类型的{{tr|invincibility frames}}。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Player.SetImmuneTimeForAllTypes}}}}
+| rowspan=4 | {{duration|120 ticks}}{{footnote|name=alltypes}}
+|-
+| {{item|Shadow Dodge}}
+|-
+| {{item|Black Belt|note2=（{{tr|and its upgrades}}）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.NinjaDodge}}}}
+|-
+| {{item|Brain of Confusion|icons=no|note2=（闪避效果）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.BrainOfConfusionDodge}}}}
+|-
+| {{item|Brand of the Inferno|note2=（格挡）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision}}}}
+| rowspan=2 | {{duration|30 ticks}}
+| rowspan=2 | {{duration|60 ticks}}
+|-
+| {{item|Sergeant United Shield|note2=（格挡）}}
+|-
+| {{item|Strange Brew|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyLifeAndOrMana}}}}
+| style="text-align:left;" | 使用时以不同几率提供{{tr|invincibility frames}}：{{footnote|name=alltypes}}<br/>
+10%：{{duration|240 ticks}}<br/>
+20%：{{duration|120 ticks}}<br/>
+30%：{{duration|60 ticks}}<br/>
+40%：不提供
+| {{na}}
+|-
+| {{item|Companion Cube|image=Companion Cube (pet).png|note2=（捅刺）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_067_FreakingPirates}}}}
+| 不提供
+| {{na}}
+|-
+| {{item|Slime Mount|note2=（击中时）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.JumpMovement}}}}
+| rowspan=11 | {{duration|6 ticks}}
+| rowspan=11 | {{na}}
+|-
+| {{item|Winged Slime Mount|note2=（击中时）}}
+|-
+| {{item|Unicorn Mount|note2=（击中时）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.HorizontalMovement}}}}
+|-
+| {{item|Painted Horse Mount|note2=（击中时）}}
+|-
+| {{item|Majestic Horse Mount|note2=（击中时）}}
+|-
+| {{item|Dark Horse Mount|note2=（击中时）}}
+|-
+| {{item|Goat Mount|note2=（击中时）}}
+|-
+| {{item|Pirate Ship Mount|note2=（击中时）}}
+|-
+| {{item|Tree Mount|note2=（击中时）}}
+|-
+| {{item|Basilisk Mount|note2=（击中时）}}
+|-
+| {{item|Lawn Mower|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.MowTheLawn}}}}
+|-
+| {{item|Golf Cart|note2=（击中时）}}
+| {{duration|12 ticks}}
+| {{na}}
+|-
+| {{item|Shield of Cthulhu|note2=（{{tr|dash}}击中）|bignote={{source code ref|v=1.4.4.9|method=Terraria.Player.DashMovement}}}}
+| rowspan=2 | {{duration|4 ticks}}
+| rowspan=2 | {{na}}
+|-
+| {{item|Solar Flare armor|note2=（{{tr|dash}}击中）}}
+|}{{options/reset|item}}
+
+== 实体无敌 ==
+{{redirect|Piercing|已移除的{{mobile}}独有{{tr|modifier}}|{{tr|Modifiers}}#Piercing{{!}}{{tr|Modifiers}} § {{tr|History}}}}
+{{see also|{{forums thread|terraria-labor-of-love-is-out-now.114357/post-2765133|Leinfors 对{{tr|enemy}}无敌的介绍}}（位于“Spoiler: 1.4.4 Balance Changes”→“Spoiler: Glossary”）}}
+{{for|“穿透”{{tr|projectiles}}的完整列表|造成{{tr|invincibility frame}}的{{tr|projectiles}}列表}}
+
+非玩家实体（[[{{tr|enemies}}]]、[[{{tr|critters}}]]、和友好的 [[{{tr|NPCs}}]]）会从玩家的“穿透”或“持续性”攻击（即来自任何伤害来源、在击中实体后仍然还能造成伤害的攻击）获得{{tr|invincibility frame}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}这包括由玩家造成的伤害（如[[{{tr|Meteor Shot}}]]、[[{{tr|Unholy Arrow}}]]、[[{{tr|Vilethorn}}]]、或[[{{tr|Rainbow Gun}}]]），也包括危险物（如发射{{tr|projectile}}的[[{{tr|traps}}]]）。实体的{{tr|invincibility frame}}通常持续 {{duration|10 ticks}}。
+
+在内部，{{tr|projectile}}是否视为“穿透”是由其 <code>penetrate</code> 决定的。这一属性决定了单个{{tr|projectile}}能击中多少个目标。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.penetrate}}如果 <code>penetrate</code> 的值大于 <code>1</code>，{{tr|projectile}}就被视为“穿透”。在{{tr|projectile}}对目标造成伤害后，其 <code>penetrate</code> 属性会减少 1，{{tr|projectile}}会在 <code>penetrate</code> 到达 0 时消失。<code>penetrate</code> 的值为 <code>1</code> 的{{tr|Projectiles}}被视为“非穿透”——{{tr|projectile}}会在击中目标时消失，通常不为被击中的实体提供任何{{tr|invincibility frame}}，若使用{{tr|Global invincibility}}，则也不受{{tr|invincibility frame}}影响。
+* “穿透”{{tr|projectile}}在其 <code>penetrate</code> 到达 <code>1</code> 时（即在击中足够多的目标之后）会变为“非穿透”。
+
+伤害来源有三种不同的为实体提供无敌的方式：
+* ''{{tr|Global invincibility}}：''对来自一个玩家的所有穿透伤害无敌。
+* ''{{tr|Static invincibility}}：''对来自一个玩家的其他相同类型的{{tr|projectiles}}的伤害无敌。
+* ''{{tr|Local invincibility}}：''对那一特定的{{tr|projectile}}的伤害无敌。
+
+=== {{tr|Global invincibility}} ===
+如果一个玩家的{{tr|projectile}}提供'''{{tr|Global invincibility}}'''，在{{tr|invincibility frame}}持续时间内，受到伤害的实体会暂时对同一玩家的''所有''穿透伤害来源无敌，包括其他类型的攻击。它默认持续 {{duration|10 ticks}}，但对于某些{{tr|projectiles}}不同，以允许更频繁/更不频繁地击中。在[[{{tr|multiplayer}}]]下，这类无敌对于每个玩家是分别检查的，因此一个玩家对实体施加{{tr|global invincibility}}时不会阻止其他玩家的穿透伤害击中它。
+
+这是[[《{{tr|Terraria}}》]]的对实体的{{tr|invincibility frame}}系统的最初实现方式，因此大量的{{tr|projectiles}}（尤其是较旧的那些）使用的是{{tr|global invincibility}}。这一类无敌基本上来说“阻止”了玩家使用不同类型的穿透伤害来源造成伤害。许多提供{{tr|global invincibility}}的{{tr|projectiles}}都是基于这一限制平衡的，否则它们会造成过高的伤害。
+
+在{{eversions|1.3.0.1|invert=y}}中，{{tr|global invincibility}}适用于所有{{tr|piercing projectile}}。这会极大地限制作用于同一目标的其他{{tr|piercing weapons}}，以及发射多个{{tr|piercing projectiles}}的{{tr|weapons}}（如[[{{tr|Poison Staff}}]]）。大部分[[{{tr|minions}}]]也被视为具有{{tr|piercing attacks}}，这也会影响与其一同使用的{{tr|piercing weapons}}的效果。这一问题在[[{{tr|Spider Staff}}]]上极为显著。
+
+=== {{tr|Static invincibility}} ===
+如果一个{{tr|projectile}}提供'''{{tr|Static invincibility}}'''，受到伤害的实体会仅对那一特定类型的{{tr|projectile}}（即具有相同 [[{{tr|Projectile IDs}}|{{tr|ID}}]] 的{{tr|projectile}}）的伤害无敌，在{{tr|invincibility frame}}持续时间内，来自同一玩家的所有那一类型的{{tr|projectiles}}都无法对该实体造成伤害。来自其他玩家的那一类型的{{tr|Projectiles}}不受影响。
+
+使用这类无敌时，虽然在{{tr|invincibility frame}}持续时间内同一类型的穿透{{tr|projectiles}}不能重复造成伤害，任何其他类型的穿透{{tr|projectiles}}都能正常造成伤害。大多数提供{{tr|static invincibility}}的{{tr|projectiles}}都是基于这一点进行平衡的。
+
+例如，在[[{{tr|Wasp Gun}}]]的{{tr|Wasp}}（{{tr|projectile ID}} 189）伤害实体后，该实体会暂时对''所有''{{tr|Wasps}}变为无敌。在{{tr|invincibility frame}}的持续时间内，{{tr|Wasps}}会穿过实体而不造成伤害。不过，该实体在{{tr|Wasps}}的{{tr|invincibility frame}}期间仍然会受到任何其他类型{{tr|projectile}}的伤害，如[[{{tr|Nimbus Rod}}]]的雨滴（{{tr|projectile ID}} 239，和{{tr|Wasps}}的 {{tr|ID}} 189 不同）或[[{{tr|Raven Staff}}|{{tr|Raven minion}}]]（{{tr|projectile ID}} 317）。
+
+=== {{tr|Local invincibility}} ===
+如果一个{{tr|projectile}}提供'''{{tr|local invincibility}}'''，在{{tr|invincibility frame}}持续时间内，受到伤害的实体仅会对该{{tr|projectile}}本身（即造成伤害的那一特定{{tr|projectile}}实例）无敌。所有其他穿透{{tr|projectiles}}，包括同一类型的{{tr|projectiles}}，在{{tr|invincibility frame}}期间仍然能造成伤害。
+
+因此，发射大量造成{{tr|local invincibility}}的{{tr|projectiles}}的效率会比造成{{tr|static invincibility}}的{{tr|projectiles}}要高。由于这类无敌在《{{tr|Terraria}}》历史上大部分时间内都没有广泛使用，几乎所有{{tr|piercing weapons}}都没有依照它来平衡。
+
+例如，所有[[{{tr|Deadly Sphere Staff}}|{{tr|Deadly Sphere minions}}]]（造成{{tr|local invincibility}}）都遵循其自己独立的无敌计时器运作，完全不会互相冲突。如果一个{{tr|Deadly Sphere}}对实体造成了伤害，在它造成的{{tr|invincibility frame}}期间另一个{{tr|Deadly Sphere}}仍然能够造成伤害。在更高的召唤数时，相比造成{{tr|global or static invincibility}}，造成{{tr|local invincibility}}的{{tr|Deadly Sphere}}能显著造成更高的伤害。
+
+部分使用{{tr|Local invincibility}}的{{tr|projectile}}在生成时会继承其他{{tr|projectile}}的{{tr|invincibility frame}}，例如{{tr|Aerial Bane}}的分裂箭。
+
+=== 技术性信息 ===
+每种{{tr|invincibility frame}}在内部由不同方式实现。
+
+==== {{tr|Global invincibility}} ====
+每个实体会记录一个拥有 256 个元素的免伤时间{{维基百科|Array (data structure)|数组}}。{{source code ref|v=1.4.4.9|field=Terraria.NPC.immune}}这些元素中的前 255 个分别对应一个{{tr|player}}；最后的第 256 个元素不对应任何玩家（可以将其视为默认的伤害来源）。每个元素的值默认为 0。若它大于 0，则它每{{tr|tick}}会降低 1，且其对应伤害来源无法对实体造成伤害。
+
+当对实体施加{{tr|global invincibility}}时，{{tr|invincibility frame}}的长度会被加给列表中对应伤害来源的那个元素。在大部分情况下，伤害来源都是发射{{tr|projectile}}的那个玩家。不过，如果伤害和任何玩家都不相关，或者无法找到作为伤害来源的玩家，伤害就会被视为来自默认的伤害来源，{{tr|invincibility frame}}的长度会被加给第 256 个元素。
+
+{{tr|singleplayer}}下，所有友方{{tr|projectiles}}的伤害来源（即所有能对[[{{tr|enemies}}]]造成伤害的{{tr|projectiles}}，这包括来自[[{{tr|weapons}}]]、[[{{tr|NPC}}]]、[[{{tr|traps}}]]等等的{{tr|projectiles}}）都被视为玩家。
+
+在以下情况下，伤害来源被视为来自默认伤害来源：
+* 由“非玩家来源”对非玩家实体造成的伤害。''[[#来自非玩家来源的实体无敌|见下方]]获取细节。''
+* 在[[{{tr|multiplayer}}]]中：
+** 不是直接由玩家创建的{{tr|Projectiles}}，这通常是能创建{{tr|Projectiles}}的{{tr|tiles}}（如[[{{tr|Boulder}}]]、{{eil|TNT Barrel|s}}等等）。{{verify|它们是否都视为来自默认来源？在它们由玩家的采挖（如使用{{tr|pickaxe}}激活{{tr|Boulder}}）或{{tr|projectile}}击打（如{{tr|projectiles}}触发{{tr|TNT Barrel}}时）创建时是否不被视为来自默认来源？}}{{source code ref|v=1.4.4.9|field=Terraria.Main.myPlayer|method=Terraria.Netplay.InitializeServer}}
+** 由{{tr|traps}}创建的{{tr|Projectiles}}，如通过[[{{tr|trigger}}]]触发的[[{{tr|Dart Trap}}]]，但{{tr|trigger}}不直接被玩家激活。{{source code ref|v=1.4.4.9|field=Terraria.Wiring.CurrentUser|method=Terraria.Wiring.SetCurrentUser}}
+
+==== 静态无敌 ====
+游戏会记录一个 {{projectileinfo||count}} 行，200 列的{{维基百科|Array (data structure)#Multidimensional arrays|二维数组}} <code>perIDStaticNPCImmunity</code>（<code>perIDStaticNPCImmunity[{{projectileinfo||count}}][200]</code>）。{{source code ref|method=Terraria.Projectile.IsNPCIndexImmuneToProjectileType|field=Terraria.Projectile.perIDStaticNPCImmunity}}每行代表一类{{tr|projectile}}，每列代表一个 [[{{tr|NPC slot}}]]。
+
+当造成{{tr|static invincibility}}的{{tr|projectile}}伤害实体时，元素 <code>perIDStaticNPCImmunity[{{tr|projectile}}的[[{{tr|Projectile IDs}}|{{tr|ID}}]]][{{tr|NPC slot}}索引]</code> 的值会被设为 <code>当前游戏时间{{footnote|这一游戏时间是开始游戏会话后经过的时间（单位：{{tr|ticks}}）。它和由[[{{tr|watches}}]]记录的游戏内时间不相关。}} + {{tr|invincibility frame}}长度</code>。“{{tr|invincibility frame}}的长度”等于{{tr|projectile}}的 <code>idStaticNPCHitCooldown</code> 属性。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.idStaticNPCHitCooldown}}在{{tr|projectile}}伤害实体后，它还会将实体和对应伤害源相关的{{tr|global invincibility}}时间设为零。
+
+当造成{{tr|static invincibility}}的{{tr|projectile}}将要伤害实体时，游戏会检查元素 <code>perIDStaticNPCImmunity[{{tr|the projectile ID}}][{{tr|NPC slot}}索引]</code> 的值是否不超过当前游戏时间。如果它大于当前游戏时间，则{{tr|projectile}}将无法对实体造成伤害。<!--
+-->{{#vardefine:iframe-119|{{projectileinfo|119|idStaticNPCHitCooldown}}}}
+
+例如，玩家用[[{{tr|Frostbrand}}]]的{{tr|Frost Bolt projectile}}（{{tr|ID}} 119，造成 {{#var:iframe-119}} {{tr|ticks}}的静态{{tr|invincibility frame}}）攻击{{tr|NPC slot}}索引为 0 的实体会将元素 <code>perIDStaticNPCImmunity[119][0]</code> 的值设为<code>当前游戏时间 + {{#var:iframe-119}}</code>。因而，在接下来的 {{#var:iframe-119}} {{tr|ticks}}内，来自同一玩家的任何{{tr|Frost Bolt projectiles}}将无法对该实体造成伤害。
+
+==== {{tr|Local Invincibility}} ====
+每个{{tr|projectile}}会记录一个拥有 200 个元素的免伤时间数组{{source code ref|v=1.4.4.9|field=Terraria.Projectile.localNPCImmunity}}，每个元素对应一个 {{tr|NPC slot}}。每个元素的值默认为 0。当造成{{tr|local invincibility}}的{{tr|projectile}}伤害实体时，对应该实体所占用的 {{tr|NPC slot}}的元素将会被设置为{{tr|invincibility frame}}的长度。“{{tr|invincibility frame}}的长度”等于{{tr|projectile}}的 <code>localNPCHitCooldown</code> 属性。{{source code ref|v=1.4.4.9|field=Terraria.Projectile.localNPCHitCooldown}}当相关的元素的值不为 0 时，{{tr|The projectile}}无法对占用 {{tr|NPC slot}}的实体造成伤害。此外，若{{tr|projectile}}的 <code>localNPCHitCooldown</code> 不是 -2，在其伤害实体后，它还会将实体和对应伤害源相关的{{tr|global invincibility}}时间设为零。
+
+因为该值的降低基于{{tr|projectile}}更新，所以它会受到{{tr|projectile}}的 <code>[[{{tr|extraUpdates}}]]</code> 属性影响。{{tr|Projectile}}更新默认每{{tr|tick}}发生一次，而 <code>extraUpdates</code> 具有 <code>n</code> 的值意味着{{tr|projectile}}每{{tr|tick}}会额外进行 <code>n</code> 次更新。当值大于 0 时，它每次更新会降低 1。
+
+另外，<code>localNPCHitCooldown</code> 有两个特殊值：-1 和 -2。
+* 如果 <code>localNPCHitCooldown</code> 为 -1，就意味着被{{tr|projectile}}伤害的实体会对那个特定{{tr|projectile}}永久免疫；该实体永远无法再次被那个特定{{tr|projectile}}伤害。换言之，一个{{tr|projectile}}仅能伤害单个实体一次。
+* 如果 <code>localNPCHitCooldown</code> 是 -2，关于{{tr|local invincibility}}的机制会被无视。{{tr|local invincibility}}免伤时间数组中的所有值都不会改变；{{tr|projectile}}会改为遵循穿透{{tr|projectiles}}的通常行为，在{{tr|projectiles}}可穿透且伤害到实体时对其造成 10 {{tr|tick}}的{{tr|global invincibility frames}}。
+
+* 如果 <code>localNPCHitCooldown</code> 不是负值，{{tr|projectile}}的局部无敌的实际长度（单位为{{tr|tick}}）可以用下方公式计算：
+: <math>\text{无敌帧}=\left\lfloor\frac{\textit{localNPCHitCooldown}}{\textit{extraUpdates}+1}\right\rfloor + \textit{localNPCHitCooldown}\mod(\textit{extraUpdates}+1)</math><!--
+-->{{#vardefine:iframe-503|{{projectileinfo|503|localNPCHitCooldown}}}}<!--
+-->{{#vardefine:xupdates-503|{{projectileinfo|503|extraUpdates}}}}
+
+例如，用[[{{tr|Star Wrath}}]]的{{tr|projectile}}（{{tr|ID}} 503，造成 {{#var:iframe-503}} {{tr|ticks}}的{{tr|local invincibility frame}}，<code>extraUpdates</code> 值为 {{#var:xupdates-503}}）攻击 {{tr|NPC slot}}索引为 0 的实体会将列表中的第一个元素的值设为 {{#var:iframe-503}}。该值每{{tr|tick}}会减少 {{#expr:{{#var:xupdates-503}}+1}}，使得实际{{tr|invincibility frame}}长度为 {{#expr:floor({{#var:iframe-503}}/({{#var:xupdates-503}}+1))+{{#var:iframe-503}}mod({{#var:xupdates-503}}+1)}} {{tr|tick}}。
+
+== 来自非玩家来源的实体无敌 ==
+非玩家实体也会在受到[[{{tr|lava}}]]的伤害、或在受到其他非玩家实体的{{tr|contact damage}}后获得{{tr|invincibility frames}}。在{{tr|invincibility frame}}持续时间内，它们无法被{{tr|lava}}''和''其他非玩家实体再次伤害。这些伤害不被视为来自任何玩家，因而不会与[[#实体无敌|由玩家攻击造成的任何类型的{{tr|invincibility frame}}]]互相干扰。{{source code ref|v=1.4.4.9|method=Terraria.NPC.BeHurtByOtherNPC / Terraria.NPC.Collision_LavaCollision}}
+
+当受到{{tr|lava}}伤害时，所有实体都会获得 {{duration|30ticks}}的{{tr|invincibility frame}}。
+
+当受到{{tr|contact damage}}时，{{eil|Eternia Crystal (NPC)|Eternia Crystal}}会获得 {{duration|20ticks}}的{{tr|invincibility frame}}，所有其他实体会获得 {{duration|30ticks}}的{{tr|invincibility frame}}。
+
+仅有少数几种方式能让非玩家实体互相之间受到{{tr|contact damage}}，包括：
+* {{tr|Critters and town NPCs}} 从{{tr|enemies}}处受到{{tr|contact damage}}。
+* {{eicons|1.3.4}}{{tr|Eternia Crystal}}从{{tr|enemies}}处受到伤害。
+* {{eicons|1.4.0.1}}[[{{tr|Bee}}]]攻击{{tr|enemies}}。
+* {{eicons|1.4.0.1}}{{tr|Bees}}存在时，[[{{tr|Queen Bee}}]]造成和受到其他{{tr|enemies}}的伤害。
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|{{tr|lava}}对玩家的伤害现在和其他伤害来源分开，具有独自的{{tr|invincibility frame}}分组。}}
+{{history|Desktop 1.3.0.5|伤害性{{tr|tiles}}（{{tr|Thorny bushes, Spikes, and Wooden Spikes}}）对玩家的伤害现在和其他伤害来源分开，具有独自的{{tr|invincibility frame}}分组。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{language info|en=Invincibility frame}}

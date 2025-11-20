@@ -1,0 +1,80 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3531
+| tags = Minion/ hardmode
+| idprojectile = 625, 626, 627, 628
+}}
+{{float file box|width=180px|<div style{{=}}"text-align:left;line-height:3.5">[[File:Stardust Dragon minion (1 summon).png|link=]]<br/>[[File:Stardust Dragon minion (2 summons).png|link=]]</div>|召唤一次（上方）和两次（下方）的{{tr|Stardust Dragon minion}}。}}
+
+'''{{tr|Stardust Dragon Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Lunatic Cultist}}]]后的[[{{tr|summon weapon}}]]，可召唤{{tr|Stardust Dragon}}[[{{tr|minion}}]]。它飞向[[{{tr|enemies}}]]，造成{{tr|contact damage}}且冲上咬住其目标。它可以穿过[[{{tr|block}}]]瞄准{{tr|enemies}}。
+
+当多次使用{{tr|the Stardust Dragon Staff}}时，并不会生产多个{{tr|Stardust Dragons}}；而是每额外召唤一次，使已存在的{{tr|Stardust Dragons}}变得更长更强（+{{#expr:floor({{iteminfo|Stardust Dragon Staff|damage}}*0.46)}}/+{{#expr:floor({{iteminfo|Stardust Dragon Staff|damage}}*0.46)+1}} {{tr|damage}}；{{tr|weapon}}的面板{{tr|damage}}的 46% {{source code ref|name=damage|v=1.4.4.9|method=Terraria.Projectiles.Damage}}） 首次召唤生产的{{tr|Stardust Dragon}}会生成四个体节，每次额外召唤增加两个体节。
+
+{{modifier|summon}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Stardust Dragon Staff|expectedrows=1}}
+
+== 备注 ==
+{| class="terraria float-right align-center"
+|+ {{tr|Stardust Dragon damage}}
+|-
+! {{ht|#|召唤次数，即{{tr|Stardust Dragon Staff}}使用的次数}} !! {{tr|Damage}}
+{{/row|1}}
+{{/row|2}}
+{{/row|3}}
+{{/row|4}}
+{{/row|5}}
+{{/row|6}}
+{{/row|7}}
+{{/row|8}}
+|-
+| colspan=2 | {{note|...}}
+|}
+* 在内部，{{tr|the Stardust Dragon}}的{{tr|damage}}取决于其体节的数量，每个体节增加{{tr|weapon}}面板{{tr|damage}}的 23%：<ref name="damage"/>
+*: <math>\text{伤害} = \text{武器伤害} \times \left( 1 + 0.23 \times \left( \text{体节} - 1 \right) \right)</math>
+** 所以，首次召唤四个体节可造成 {{#expr:floor({{iteminfo|Stardust Dragon Staff|damage}}*(1+0.23*(4-1)))}} {{tr|base damage}}（{{iteminfo|Stardust Dragon Staff|damage}} {{tr|weapon base damage}}加上三个体节的伤害增加。）。
+* {{tr|Stardust Dragon}}的大小在每次额外召唤后都会略微增大。{{source code ref|v=1.4.4.9|method=Terraria.Projectiles.AI_121_StardustDragon}}
+* {{tr|Stardust Dragon}}击中{{tr|enemy}}时会造成 7 {{tr|tick}}[[{{tr|local invincibility frame}}|{{tr|local invincibility frame}}]]，这意味着它每秒可命中 8.6 次。{{source code ref|v=1.4.4.9|method=Terraria.Projectiles.SetDefaults}}
+** 所有{{tr|Stardust Dragon}}的{{tr|segments}}共用此{{tr|local invincibility frame}}，虽然它们在设定上是不同的{{tr|projectiles}}。这意味着无论{{tr|Stardust dragon}}有多少{{tr|segments}}与目标接触都会以相同的频率击中目标。
+* {{tr|The Stardust Dragon}}最远可以瞄准距离{{tr|player}} 62.5 格的{{tr|enemy}}。
+** 攻击{{tr|player}}标记的{{tr|enemy}}，此距离范围会增长至 87.5 格，且{{tr|Stardust Dragon}}可持续攻击此目标直至龙头距离{{tr|player}}超过 125 格。在超过此范围后，它会自动传送到{{tr|player}}的位置。
+* {{tr|The Stardust Dragon}}移动时会发出蓝色粒子轨迹，周期性产生亮光。
+
+== 小贴士 ==
+* 由于多{{tr|segments}}的{{tr|Stardust Dragon}}具有很高伤害，搭配[[{{tr|Firecracker}}]]的[[{{tr|tag damage}}|标记]]效果可以在一击中造成大量{{tr|damage}}。然而，由于{{tr|Firecracker}}较短的攻击距离，这样会很有风险。
+
+== 花絮 ==
+[[File:Stardust Dragon Staff (demo).gif|framed|使用中的{{tr|Stardust Dragon Staff}}。]] <!-- This GIF needs to be down here to avoid interference with the floating images and tables above. -->
+* 虽然正常游玩中不可能达到，但{{tr|Stardust Dragon}}的{{tr|segment}}{{tr|damage boost}}上限为 51 个{{tr|segment}}（{{#expr:floor({{iteminfo|Stardust Dragon Staff|damage}}*(1+0.23*50))}} {{tr|base damage}}）。<ref name="damage"/>
+* {{tr|The Stardust Dragon}}的{{tr|buff icon}}在内部也被用作[[{{tr|Daybroken}}]]{{tr|debuff}}的{{tr|icon}}。这一{{tr|icon}}仅用作占位符，因为{{tr|Daybroken}}无法施加到玩家上，游戏中永远无法看到该{{tr|icon}}。
+* 共三个{{tr|summon weapon}}有这种独特的召唤机制，分别是[[{{tr|Abigail's Flower}}]]、[[{{tr|Desert Tiger Staff}}]]和{{tr|Stardust Dragon Staff}}。
+* 其{{tr|buff tooltip}}和[[{{tr|Stardust Guardian}}]]的{{tr|buff tooltip}}很像，分别为''“{{buffinfo|187|tooltip}}”''和''“{{buffinfo|188|tooltip}}”''。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|改为使用{{tr|local invincibility frame}}。}}
+{{history|Desktop 1.3.0.6|
+** 修复了与{{tr|Stardust Dragon}}的伤害有关的特定问题，并对其做了平衡以与其他{{tr|minions}}更相一致。
+** {{tr|Damage}}由 60 降低至 40。}}
+{{history|Desktop 1.3.0.4|
+** 修复了{{tr|Stardust Dragon}}的大小 {{tr|bug}}。
+** {{tr|sell price}}由 {{sc|20}} 改为 {{gc|10}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Stardust Dragon Staff}}

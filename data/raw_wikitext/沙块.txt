@@ -1,0 +1,110 @@
+{{item infobox
+| name = Sand Blocks
+| imagealt = [[File:Sand Block.png|link=|Sand Block item sprite]] [[File:Ebonsand Block.png|link=|Ebonsand Block item sprite]] [[File:Crimsand Block.png|link=|Crimsand Block item sprite]] [[File:Pearlsand Block.png|link=|Pearlsand Block item sprite]]
+| type = Block
+| auto = 169
+| debuff = Suffocation / 直至{{tr|player}}从{{tr|Sand Blocks}}下面离开
+| id = 169, 370, 408, 1246
+| idtile = 53, 112, 116, 234
+| idprojectile = 31, 56, 241, 67
+| cargo = no
+}}
+{{quotation|加载界面[[{{tr|Tips}}]]|{{gameText|LoadingTips_Default.60}}}}
+{{dablink|不要和{{eil|Sandstone Block}}或{{eil|Hardened Sand Block}}混淆。（上述两种{{tr|item}}也都有[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]和[[{{tr|Hallow}}]]形态）。}}
+
+'''{{tr|Sand Blocks}}'''是一种[[{{tr|soil}}]][[{{tr|blocks}}]]，在[[{{tr|Desert}}]][[{{tr|biomes}}]]中、[[{{tr|Ocean}}]]的海滩或底部可以大量找到，且可以在[[{{tr|Underground}}]]{{tr|layer}}作为{{tr|micro biomes}}小片地找到。它也会由[[{{tr|Antlion}}]]射出。{{tr|Sand Blocks}}可以传播或被转化为[[{{tr|evil biome}}]]和[[{{tr|The Hallow}}]]（见[[#variants|下方]]）。
+
+{{tr|Sand Block}}会受重力影响，此独特特性也被[[{{tr|Slush Block}}]]、[[{{tr|Silt Block}}]]、{{eil|Shell Pile|s}}具有。{{tr|Sand Blocks}}会对砸到的任何玩家或[[{{tr|enemy}}]]造成伤害。如果落在玩家上的{{tr|Sand Block}}数量较大，玩家就会受到[[{{tr|Suffocation}}]][[{{tr|debuff}}]]，直到玩家设法逃离。{{tr|Sand Block}}被用于制作一些建筑用{{tr|blocks}}，以及直接用于制作其他{{tr|items}}，但它也是[[{{tr|Glass}}]]的原材料，后者用于一套{{tr|furniture set}}和部分其他{{tr|item}}。
+
+[[File:Sand Blocks (demo).gif|frame|right|{{tr|Sand Block, Ebonsand Block, and Pearlsand Block}}会在{{tr|players}}行走于或坠落于对应的{{tr|blocks}}上时发出粒子。]]
+
+{{anchor|variants}}'''{{tr|Ebonsand Block}}'''、'''{{tr|Crimsand Block}}'''和'''{{tr|Pearlsand Block}}'''是{{tr|Sand Blocks}}的{{tr|biome variants}}，分别对应[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、和[[{{tr|Hallow}}]]。它们在其对应{{tr|biomes}}中会替代普通{{tr|Sand Block}}出现，无论这些{{tr|biome}}是与{{tr|Desert}}还是{{tr|Ocean biome}}重叠。和任何其他{{tr|Corrupt, Crimson, or Hallow block}}一样，在[[{{tr|Hardmode}}]]开始后，它们会开始将最多 3 {{tr|tiles}}远范围内的可用的{{tr|blocks}}（包括普通{{tr|Sand Block}}）[[{{tr|Biome spread}}|转化]]为其对应{{tr|variants}}。这些{{tr|Sand Block}}{{tr|variants}}功能上和普通{{tr|Sand Block}}相似，但每种{{tr|variant}}能用于制作部分{{tr|biome}}相关物品。它们可以被[[{{tr|Thrown Powder}}]]、[[{{tr|Thrown Water}}]]、或使用[[{{tr|Green Solution}}]]的[[{{tr|Clentaminator}}]]重新转换成普通{{tr|Sand Block}}。正在下落的{{tr|Sand Block}}无法被转化。
+
+所有类型的{{tr|Sand Block}}都能用作[[{{tr|Sandgun}}]]的[[{{tr|ammunition}}]]，但它们无法被储存在[[{{tr|inventory}}]]中的[[{{tr|ammo slots}}]]。类似于[[{{tr|Antlion}}]]发射的{{tr|Sand Ball projectiles}}，如果有可用空间，射出的{{tr|Sand Block}}会变成{{tr|block}}被放置在地面上。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/imageplaced/idtile|imagemode=placed}}
+{| class="terraria sortable lined"
+! colspan=2 | {{tr|Item}}
+! 放置状态
+! [[{{tr|Tile IDs}}]]
+|-
+{{item infobox|type=Block|tags=plunder|auto=169}}
+{{item infobox|type=Block|tags=plunder|auto=370}}
+{{item infobox|type=Block|tags=plunder|auto=408}}
+{{item infobox|type=Block|tags=plunder|auto=1246}}
+|}{{item infobox/options|reset}}
+
+== 制作 ==
+=== 配方 ===
+
+{{recipes|result=Sand Block|expectedrows=5}}
+
+=== 用于 ===
+==== 沙块 ====
+{{recipes|ingredient=#Sand Block|expectedrows=4}}
+==== 黑檀沙块 ====
+{{recipes|ingredient=#Ebonsand Block|expectedrows=2}}
+==== 猩红沙块 ====
+{{recipes|ingredient=#Crimsand Block|expectedrows=1}}
+==== 珍珠沙块 ====
+{{recipes|ingredient=#Pearlsand Block|expectedrows=1}}
+==== 任何沙 ====
+{{recipes|ingredient=Any Sand|expectedrows=2}}
+
+== 备注 ==
+* {{tr|Sand Block}}和其他受重力影响的{{tr|block}}只能在使用至少具有 110% [[{{tr|pickaxe power}}]]的[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]（如[[{{tr|Cobalt Pickaxe}}]]）时被{{eil|Block Swap}}。{{source code ref|v=1.4.1.1|method=Terraria.Player.PlaceThing_CheckSpecificValidtyCaseForBlockSwap}} 在使用较弱的{{tr|pickaxes}}时，只有一列{{tr|Sand Block}}的最上方一个能够被{{tr|Block Swap}}为不会下落的{{tr|block}}。所有{{tr|pickaxe}}和{{tr|drill}}都可以将{{tr|Sand Block}}和其他受重力影响的{{tr|block}}进行{{tr|Block Swap}}。
+* 装备了{{eil|Dunerider Boots}}的玩家站立于任何{{tr|type}}{{tr|Sand Block}}上时能够跑得更快。
+* {{eicons|1.4.0.1}} 在落下后无法转化成{{tr|tiles}}的{{tr|Sand Blocks}}（以及其他受{{tr|gravity}}影响的{{tr|tiles}}）会掉落为物品。 
+
+== 小贴士 ==
+* 基于{{tr|Sand Block}}的机制，且它们总是能大量发现，{{tr|Sand Block}}特别容易开采。开采支撑其他{{tr|Sand Blocks}}的任何{{tr|Sand Blocks}}，会导致整列{{tr|Sand Blocks}}下落。因此，{{tr|player}}只需简单地按住 {{key|use}} 就可以收获一列{{tr|Sand Block}}。
+** {{eicons|1.4.0.1}} 玩家可以简单地在一列{{tr|Sand Block}}下方放置[[{{tr|torches}}]]，或是[[{{tr|Actuator}}|致动]]一列{{tr|Sand Blocks}}的最下方一排来快速地收集{{tr|Sand Blocks}}。注意下落的{{tr|Sand Blocks}}被视为[[{{tr|projectile}}]]，且同时最多只能存在 1000 个{{tr|projectiles}}，故超过此上限的下落的{{tr|Sand Blocks}}将会消失。
+* {{tr|Sand Blocks}}可以用于创造针对[[{{tr|enemies}}]]和{{tr|players}}的[[{{tr|traps}}]]。{{eicons|1.4.0.1|invert=y}} {{tr|Sand Blocks}}可以被放置在[[{{tr|Cobweb}}]]上，在{{tr|Cobweb}}被摧毁时{{tr|Sand Blocks}}就会落下。除了{{tr|Cobweb}}，许多其他物体也可以支撑{{tr|Sand Blocks}}，例如[[{{tr|trees}}|树冠]]或诸如[[{{tr|Torches}}]]等物品。
+* 和任何受重力影响的{{tr|blocks}}一样，{{tr|Sand Block}}在创建安全的挖矿坑洞时很有用。在向下挖掘时，它可以用于在进入{{tr|cave}}前建造保护性的墙壁。此外，{{tr|Sand Blocks}}也能用于在[[{{tr|lava}}]]中建造墙壁，这在建造[[{{tr|hellevator}}]]时可能会有用。
+* 通过使用搭配任何[[{{tr|ammo conservation}}]]{{tr|bonuses}}的[[{{tr|Sandgun}}]]（来自{{tr|armor}}、[[{{tr|Ammo Reservation Potion}}]]、和/或[[{{tr|Ammo Box}}]]，等等），发射的{{tr|Sand Block}}将高于使用数，玩家可以用此种方式来刷{{tr|Sand Blocks}}。见[[{{tr|Sandgun}}]]的页面获取更多细节。
+* 如果玩家有富余的{{tr|Sand Block}}（包括{{tr|biome variants}}），它们能够通过[[{{tr|Glass}}]]的方式来变现，无论是通过[[{{tr|Ale}}]]（每 1000 个{{tr|Sand Blocks}}价值 {{sell expr|Ale|*500}}）还是[[{{tr|Glass Candelabra}}]]（每 1000 个{{tr|Sand Blocks}}和 300 个{{tr|Torches}}价值{{sell expr|Glass Candelabra|*100}}，若从[[{{tr|Merchant}}]]购买{{tr|Torches}}则利润降低至 {{sell expr|Glass Candelabra|*100-{{buy expr|Torch|*300|raw=y}}}}）。{{eicons|1.4.3.3|invert=y}} {{tr|Glass}}也可以和大部分类型的[[{{tr|gems}}]]制作成[[{{tr|Stained Glass}}]]来变现：每 10 个{{tr|Sand Blocks}}（即 5 个{{tr|Glass}}）和一个{{tr|gem}}可制作出价值 {{gc|1}} 的{{tr|Stained Glass}}。见[[指南:赚钱]]获取完整细节和其他选择。
+* 玩家可以用{{eil|Digging Molecart}}轻易地获取大堆{{tr|Sand Blocks}}。放置[[{{tr|Minecart Track}}]]，乘上它，然后采掘它一侧的{{tr|Sand Block}}，并同时向这个方向移动。{{tr|Digging Molecart}}将在{{tr|Sand Blocks}}下落前放置{{tr|Minecart Track}}，{{tr|Sand Blocks}}将掉落为物品，不过玩家会承受少量伤害。由于{{tr|Digging Molecart}}无法采掘受重力影响的{{tr|blocks}}，玩家将需要手动移除{{tr|Digging Molecart}}一旁的 5 个{{tr|tile}}内阻止{{tr|Sand Blocks}}下落的{{tr|solid block}}。
+* 如果玩家找到了{{eil|The Aether}}和[[{{tr|Tavernkeep}}]]，可以通过大量购买[[{{tr|Ale}}]]并将其分解为{{tr|Sand Blocks}}来人造{{tr|Desert}}。这种方法在 {{eil|Get fixed boi}} {{tr|world}}中较为有用。
+
+== 花絮 ==
+* {{tr|Crimsand}}是{{tr|Sand Blocks}}的{{tr|variant}}中唯一的[[{{tr|inventory}}]]中{{tr|sprite}}边缘是参差不齐的，也是唯一的放置时的{{tr|sprite}}并非普通{{tr|Sand Blocks}}的{{tr|sprite}}的重新上色的{{tr|Sand Block}}{{tr|variant}}。
+* 在[[{{tr|Tips}}|加载界面]]中有一句玩笑为“沙子太强了”（Sand is overpowered），是因为{{tr|Sand Blocks}}因受重力影响而令人厌烦，且能够用{{tr|suffocation}}效果杀死玩家。
+** 相同的文字也作为一条{{eil|title messages}}出现。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** 修复了踩上{{tr|Crimsand Block}}时不产生微粒效果的问题。
+** 受重力影响的{{tr|blocks}}现在可以从顶端向下进行[[{{tr|Block Swap}}]]。拥有足够强的{{tr|pickaxe}}（不少于 110% [[{{tr|pickaxe power}}]]）后，就可以从任何位置进行{{tr|block swap}}，和其他{{tr|block}}一样。}}
+{{history|Desktop 1.4.0.1|掉落的{{tr|Sand Blocks}}和其他会下落的{{tr|tiles}}在落地后无法转变为{{tr|tiles}}时会变为可拾取的物品。}}
+{{history|Desktop 1.3.3.2|明显位于{{tr|underground}}的小片{{tr|Sand Blocks}}不再会产生[[{{tr|Desert}}]]的[[{{tr|heat distortion}}]]效果。}}
+{{history|Desktop 1.3.1|{{tr|Pearlsand Block}}的{{tr|inventory}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.2.4.1|{{tr|Crimsand Blocks}}现在可以被制作成[[{{tr|Glass}}]]。}}
+{{history|Desktop 1.2.3|
+** 修复了下落的{{tr|Sand Blocks}}不会消除{{tr|tiles}}的斜坡的 {{tr|bug}}。
+** {{tr|Crimsand Blocks}}现在可以正确地从{{tr|Sandgun}}中射出。}}
+{{history|Desktop 1.2|
+** {{tr|Crimsand Blocks}}{{tr|introduced.}}
+** 所有{{tr|Sand Block variants}}的堆叠上限由 250 增加至 999。}}
+{{history|Desktop 1.1|{{tr|Ebonsand Block and Pearlsand Block}}{{tr|introduced.}}}}
+{{history|Desktop 1.0.5|
+** 下落的{{tr|Sand Block}}不再会被[[{{tr|Flamelash}}]]和[[{{tr|Magic Missile}}]]的{{tr|projectiles}}带走。
+** 修改了世界生成时{{tr|Sand Block}}的创建方式。}}
+{{history|Desktop 1.0.2|
+** 修复了{{tr|Sand Block}}复制 {{tr|bug}}。
+** {{tr|Sand Block}}不再会在{{tr|spawn point}}附近生成。这将使得玩家不再会由于生成在[[{{tr|Desert}}]]而无[[{{tr|Wood}}]]可用。}}
+{{history|Desktop 1.0.1|在[[{{tr|chest}}]]下方的{{tr|Sand Block}}不再会由于重力而下落。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tiles
+| show-blocks = yes
+}}
+
+{{language info|en=Sand Blocks}}

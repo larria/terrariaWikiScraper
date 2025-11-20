@@ -1,0 +1,154 @@
+{{exclusive|1.4.0.1}}
+
+'''{{tr|Fruits}}'''是[[{{tr|Food and drink potions}}|{{tr|food}}]]的子分类。所有{{tr|fruits}}都通过在不同[[{{tr|Biomes}}]]中[[{{tr|shaking trees}}]]获得。
+
+== 树 ==
+{{options/set|item|small=y|scale=1|icons=n}}{{dotlist/options|dot=no|space=l}}
+{{flexstart|alignitems=top|style=gap:1em}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Forest tree}}]]|iconalt=[[File:Forest tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Apple}}<!--
+		-->|{{item|Apricot}}<!--
+		-->|{{item|Grapefruit}}<!--
+		-->|{{item|Lemon}}<!--
+		-->|{{item|Peach}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Boreal tree}}]]|iconalt=[[File:Boreal tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Cherry}}<!--
+		-->|{{item|Plum}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Ebonwood tree}}]]|iconalt=[[File:Ebonwood tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Blackcurrant}}<!--
+		-->|{{item|Elderberry}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Shadewood tree}}]]|iconalt=[[File:Shadewood tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Blood Orange}}<!--
+		-->|{{item|Rambutan}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Mahogany tree}}]]|iconalt=[[File:Mahogany tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Mango}}<!--
+		-->|{{item|Pineapple}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Palm tree}}]]（[[{{tr|Ocean}}]]）|iconalt=[[File:Palm tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Banana}}<!--
+		-->|{{item|Coconut}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Pearlwood tree}}]]|iconalt=[[File:Pearlwood tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Dragon Fruit}}<!--
+		-->|{{item|Star Fruit}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexstart|item}}<!--
+	-->{{infocard|style=width:unset|class=compact|name=[[{{tr|Ash tree}}]]|iconalt=[[File:Ash tree.png|x40px]]|text=<!--
+		-->{{dotlist|style=margin-top:1.5em<!--
+		-->|{{item|Pomegranate}}<!--
+		-->|{{item|Spicy Pepper}}<!--
+		-->}}<!--
+	-->}}<!--
+-->{{flexend|item}}<!--
+
+-->{{flexend}}{{options/reset|item}}{{dotlist/options|reset}}
+
+== 制作 ==
+=== 用于 ===
+{{#dplvar:set|minor|({{gameText|BuffDescription.WellFed}})|medium|({{gameText|BuffDescription.WellFed2}})|major|({{gameText|BuffDescription.WellFed3}})}}{{options/set|item|small=y|wrap=y|icons=n}}{{recipes
+|result = Star Fruit/Apple Juice/Lemonade/Frozen Banana Daiquiri/Peach Sangria/Pina Colada/Tropical Smoothie/Bloody Moscato/Smoothie of Darkness/Prismatic Punch/Fruit Juice/Fruit Salad/Ambrosia
+|expectedrows = 12
+|header-result = 食物 / 饮料
+|header-ingredients = {{tr|Ingredients}}
+|col-D-1 = {{tr|Effects}}
+|col-D-2 = {{tr|Duration}}
+|result-index-Prismatic Punch = q
+|q-row-col-D-1 = {{item| Plenty Satisfied | note2= {{#dplvar:medium}} }}
+|q-row-col-D-2 = {{nowrap|{{iteminfo|Prismatic Punch|buff duration}}}}
+|result-index-Apple Juice = l
+|l-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|l-row-col-D-2 = {{nowrap|{{iteminfo|Apple Juice|buff duration}}}}
+|result-index-Frozen Banana Daiquiri = r
+|r-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|r-row-col-D-2 = {{nowrap|{{iteminfo|Frozen Banana Daiquiri|buff duration}}}}
+|result-index-Bloody Moscato = s
+|s-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|s-row-col-D-2 = {{nowrap|{{iteminfo|Bloody Moscato|buff duration}}}}
+|result-index-Fruit Juice = t
+|t-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|t-row-col-D-2 = {{nowrap|{{iteminfo|Fruit Juice|buff duration}}}}
+|result-index-Fruit Salad = u
+|u-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|u-row-col-D-2 = {{nowrap|{{iteminfo|Fruit Salad|buff duration}}}}
+|result-index-Lemonade = w
+|w-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|w-row-col-D-2 = {{nowrap|{{iteminfo|Lemonade|buff duration}}}}
+|result-index-Peach Sangria = x
+|x-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|x-row-col-D-2 = {{nowrap|{{iteminfo|Peach Sangria|buff duration}}}}
+|result-index-Piña Colada = y
+|y-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|y-row-col-D-2 = {{nowrap|{{iteminfo|Piña Colada|buff duration}}}}
+|result-index-Smoothie of Darkness = z
+|z-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|z-row-col-D-2 = {{nowrap|{{iteminfo|Smoothie of Darkness|buff duration}}}}
+|result-index-Tropical Smoothie = aa
+|aa-row-col-D-1 = {{item| Well Fed | note2= {{#dplvar:minor}} }}
+|aa-row-col-D-2 = {{nowrap|{{iteminfo|Tropical Smoothie|buff duration}}}}
+|result-index-Ambrosia = ab
+|ab-row-col-D-1 = {{itemTooltip|5342}}
+|ab-row-col-D-2 = 无限
+}}{{options/reset|item}}
+
+== 备注 ==
+* 与其它{{tr|food items}}不同，在[[{{tr|Journey Mode}}]]中，所有{{tr|fruits}}都需要 5 份以完成{{tr|research}}。
+* 所有这些{{tr|fruits}}均可卖出 {{sc|20}}，无论是否被制作为{{tr|fruit juices}}、鸡尾酒和{{tr|fruit salad}}均是如此。{{tr|Hallow fruits}}卖价相同，尽管它们可以提供更好的{{tr|buff}}。
+* 虽然在现实世界中{{tr|grapes}}当然是一种水果，''{{tr|Terraria}}''中的[[{{tr|Grapes}}]]并不能分到此类——它由{{tr|enemies}}而不是{{tr|trees}}掉落，不算在使用“任意{{tr|Fruit}}”的{{tr|recipes}}中。它确实有制作{{tr|fruit juices}}的{{tr|recipe}}，但{{tr|Grapes}}和[[{{tr|Grape Juice}}]]分别会提供更强大的[[{{tr|Plenty Satisfied}}]]和[[{{tr|Exquisitely Stuffed}}]]{{tr|buffs}}。它和其{{tr|fruit juices}}的卖价是“普通”的{{tr|fruit}}与{{tr|fruit juices}}卖价的两倍。
+* [[{{tr|Blue Berries}}]]在''{{tr|Terraria}}''中也是一种不被算进{{tr|fruit}}类型的“{{tr|fruit}}”，因为它是一种用于制作[[{{tr|Blue Dye}}]]的{{tr|material}}，而非一种可食用的{{tr|item}}。
+* 虽然[[{{tr|Spicy Pepper}}]]在通常认知中是蔬菜或调味品，但在植物学上辣椒是一种水果。
+
+== 花絮 ==
+* [[{{tr|Apricot}}]]、[[{{tr|Cherry}}]]、[[{{tr|Grapefruit}}]]、[[{{tr|Plum}}]]、[[{{tr|Pomegranate}}]]和[[{{tr|Spicy Pepper}}]]是仅有的没有它们专属的独特{{tr|recipe}}的{{tr|fruits}}。它们只能被制作成[[{{tr|Fruit Juice}}]]或[[{{tr|Fruit Salad}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了{{tr|Pomegranate and Spicy Pepper}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-buff = yes
+}}
+
+{{language info|en=Fruits}}

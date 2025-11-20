@@ -1,0 +1,54 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| auto = 3613
+| name = {{tr|Sensors}}
+| imagealt = <p>[[File:Logic Sensor (Day).png]] [[File:Logic Sensor (Night).png]] [[File:Logic Sensor (Player Above).png]]</p><p>[[File:Liquid Sensor (Water).png]] [[File:Liquid Sensor (Lava).png]] [[File:Liquid Sensor (Honey).png]] [[File:Liquid Sensor (Any).png]]</p><li>[[File:Sensors (placed).gif|放置状态的{{tr|Sensors}}]]</li>
+| imagebreak = yes
+| type = Furniture/Mechanism
+| width = 1 | height = 1
+| tooltip =
+| idshow = 3613–3615, 3726–3729
+| cargo = no
+}}
+
+'''{{tr|Sensors}}'''是一类[[{{tr|Hardmode}}]][[{{tr|mechanism}}]]，它能在特定环境下发出信号。目前有 7 种不同类型的{{tr|Sensors}}。它们分为两小类，{{tr|Logic Sensors}}和{{tr|Liquid Sensors}}。 
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/tooltip}}
+{| class="terraria"
+! colspan=2 | {{tr|Sensor}}
+! {{tr|Tooltip}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3613}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3614}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3615}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3726}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3727}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3728}}
+{{item infobox | type = Mechanism/Furniture | width = 1 | height = 1 | auto = 3729}}
+|}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=n|result=LIKE Logic Sensor%/LIKE Liquid Sensor%|expectedrows=7}}
+
+== 备注 ==
+* {{tr|Logic Sensor (Player Above)}}会探测其上方 5×10 {{tr|tile}}范围内的玩家。在[[{{tr|multiplayer}}]]下，在已有玩家在此范围内而另一玩家进入其中时，它不会再次发出信号。
+** 因此，它是一种可应用在{{tr|multiplayer}}中的、用[[{{tr|Pressure Plates}}]]驱动的自动{{tr|doors}}门的可行替代方案。
+** 如果放置时玩家已经处于检测范围内，它不会触发，在玩家离开检测区域时才会触发。
+* {{tr|Logic Sensor (Player Above)}}无法正常激活[[{{tr|Teleporter}}]]，但这可以通过使用[[{{tr|Logic Gate}}]]进行规避：使用{{tr|Logic Gate (AND)}}和{{tr|Logic Gate (OR)}}门，以及一盏{{tr|Logic Gate Lamp (Off)}}，将{{tr|the sensor}}连接到{{tr|Logic Gate Lamp}}上，并将输出端连接到{{tr|teleporter}}网络上。
+* {{tr|The Water Sensor}}可以在与[[{{tr|Shimmer}}]]接触时激活。
+* [[{{tr|Rain}}]]''无法''激活{{tr|Water Sensors}}。
+
+== 历史 ==
+{{history|Desktop 1.4.2|死亡的玩家和{{tr|Hardcore Difficulty ghosts}}不再会触发{{tr|Logic Sensor (Player Above)}}。}}
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Sensors}}

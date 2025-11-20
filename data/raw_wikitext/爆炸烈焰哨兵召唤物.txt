@@ -1,0 +1,110 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| imagealt = [[File:Flameburst Rod.png]] [[File:Flameburst Cane.png]] [[File:Flameburst Staff.png]]
+| stack = 1
+| type = Weapon
+| damage = {{note|small=y|paren=y|每级各不相同}}
+| damagetype = Summon
+| knockback = {{iteminfo|3818|knockback}}
+| use = {{iteminfo|3818|use}}
+| velocity = {{iteminfo|3818|velocity}}
+| tooltip = {{itemTooltip|3818}}
+| research = {{iteminfo|3818|research}}
+| rare =
+| cargo = no
+}}
+
+'''{{tr|Flameburst Rod}}、{{tr|Flameburst Cane}}、{{tr|Flameburst Staff}}'''是特殊的[[{{tr|Tavernkeep's sentries}}|{{tr|sentry summon weapons}}]]。{{sentry note|name={{tr|Flameburst Tower}}|plural=y}}{{tr|Flameburst Tower}}会向接近的{{tr|enemies}}发射火球，这些火球是非穿透性的，但会在击中后造成溅射伤害且有概率造成[[{{tr|On Fire!}}]]或[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。与其它的{{tr|projectile}}{{tr|sentries}}不同，{{tr|Flameburst Tower}}无法以大于 45 度的角度向上瞄准和射击；因此，飞行{{tr|enemies}}在其上方飞过时会被忽略。在[[{{tr|Tavernkeep}}]]处，{{tr|Flameburst Rod}}的售价为 {{iteminfo|Flameburst Rod|buy}}，{{tr|Flameburst Cane}}的售价为 {{iteminfo|Flameburst Cane|buy}}，而{{tr|Flameburst Staff}}的售价为 {{iteminfo|Flameburst Staff|buy}}。
+
+{{tr|Flameburst Rod}}在任何时候都能购买，{{tr|Flameburst Cane}}在击败任意[[{{tr|Mechanical Boss}}]] 后可购买，{{tr|Flameburst Staff}}在击败[[{{tr|Golem}}]]后可购买。三个不同版本的武器的效果类似，但拥有不同的数据，其中{{tr|Flameburst Staff}}是最昂贵的也是最强大的。
+
+直到[[{{tr|Old One's Army}}]][[{{tr|event}}]]成功完成后才能在{{tr|event}}以外使用这些{{tr|weapons}}。在任意{{tr|difficulty}}下成功完成{{tr|event}}后就能允许玩家在{{tr|event}}之外使用{{tr|Rod}}、{{tr|Canes}}、和{{tr|Staves}}。
+
+在{{tr|Old One's Army}}{{tr|event}}持续期间，[[{{tr|Etherian Mana}}]]可被收集，其可用于放置多个{{tr|Flameburst Towers}}，{{tr|event}}结束之前会一直存在。{{tr|Etherian Mana}}无法在{{tr|event}}之外使用。
+
+{{tr|Flameburst Tower sentries}}可受[[{{tr|Apprentice armor}}]]和[[{{tr|Dark Artist armor}}]]的{{tr|set bonuses}}增益，这会大幅提升它们的射程、视野、和{{tr|projectile}}[[{{tr|velocity}}]]。{{tr|The Dark Artist armor}}也会增加{{tr|sentries}}的{{tr|projectiles}}的爆炸范围。
+
+{{modifier|summon|plural=y}}
+
+== 级别 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| namesub = {{tr|Tier 1}}
+| auto = 3818
+| debuff = On Fire! / 3–5 {{tr|seconds}} / 33.33%
+| sound1 = Dd2 flameburst tower shot 0.wav, Dd2 flameburst tower shot 1.wav, Dd2 flameburst tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/dd2/vendor:Tavernkeep
+| idprojectile = 663, 664
+}}
+|{{item infobox
+| namesub = {{tr|Tier 2}}
+| auto = 3819
+| debuff = Hellfire / 3–8 {{tr|seconds}} / 50%
+| sound1 = Dd2 flameburst tower shot 0.wav, Dd2 flameburst tower shot 1.wav, Dd2 flameburst tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 665, 666
+}}
+|{{item infobox
+| namesub = {{tr|Tier 3}}
+| auto = 3820
+| debuff = Hellfire / 6–8 {{tr|seconds}} / 66.67%
+| sound1 = Dd2 flameburst tower shot 0.wav, Dd2 flameburst tower shot 1.wav, Dd2 flameburst tower shot 2.wav
+| soundcaption1 = 射击
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 667, 668
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Flameburst Rod/Flameburst Cane/Flameburst Staff|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Flameburst Rod/Flameburst Cane/Flameburst Staff|expectedrows=3}}
+
+== 备注 ==
+* 在任何难度中完成[[{{tr|Old One's Army}}]]{{tr|event}}，会为世界以及完成{{tr|event}}的{{tr|character}}设置一个隐藏的属性。任何访问过该世界的{{tr|characters}}（包括新创建的{{tr|characters}}），就可以在任意世界中使用{{tr|Tavernkeep's sentry}}的{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。完成{{tr|event}}的{{tr|character}}同样也可以在任意世界中使用{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。
+* {{tr|The Flameburst Towers}}的{{tr|projectiles}}会在击中时爆炸，对以击中位置为中心 6×6 {{tr|tile}}的长方形区域内的{{tr|enemies}}造成伤害。当穿着[[{{tr|Dark Artist armor}}]]时，这一范围会增加至 13×13 {{tr|tile}}的长方形区域。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* {{tr|The Flameburst Tower}}在攻击后具有 {{duration|104 ticks}}（{{tr|Rod}}）/ {{duration|102 ticks}}（{{tr|Cane}}）/ {{duration|92 ticks}}（{{tr|Staff}}）的冷却。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_130_FlameBurstTower}}
+* {{tr|The Flameburst Towers}}只会向低于 56.25 {{tr|tiles}}远的{{tr|enemies}}开火，从射出{{tr|projectiles}}的“炮口”算起。如果玩家装备了[[{{tr|Apprentice armor}}]]或[[{{tr|Dark Artist armor}}]]，这一限制会增加到 84.375 {{tr|tiles}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_130_FlameBurstTower / Terraria.Projectile.AI_130_FlameBurstTower_FindTarget}}
+
+== 小贴士 ==
+* 由于{{tr|Flameburst Tower}}能造成[[{{tr|On Fire!}}]] / [[{{tr|Hellfire}}]]，它和装备[[{{tr|Huntress armor}}]]或[[{{tr|Red Riding armor}}]]时的[[{{tr|Explosive Trap}}]]搭配良好，因为后者会造成提高伤害的[[{{tr|Oiled}}]]{{tr|debuff}}。
+* 与{{tr|Tavernkeep}}出售的其他{{tr|sentries}}不同，此{{tr|sentry}}的作用范围不足以一次同时击中超过两三个{{tr|old one's army}}{{tr|enemy}}。当与{{tr|Apprentice armor}}或{{tr|Dark Artist armor}}搭配使用时，其也不能获得额外的伤害输出，尽管增加的视野范围使其能够放置在场地中心的同时仍可以积极地瞄准敌人。虽然它一般来说是四个{{tr|sentry}}中最弱的，但其总是能把攻击集中在{{tr|Old One's Army}}前排。
+* 将{{tr|Flameburst towers}}布置在距离地面有一定高度的平台上可以更精确地击中[[{{tr|Etherian Wyvern}}]]和[[{{tr|Kobold Glider}}]]。
+* {{tr|The Flameburst Tower}}会发光，因此它在探索洞穴时用来定位未探索的部分时很有用。
+
+== 图库 ==
+[[File:Flameburst Rod (demo).gif|none|frame|使用中的{{tr|The Flameburst Rod}}。]]
+[[File:Flameburst Cane (demo).gif|none|frame|使用中的{{tr|The Flameburst Cane}}。]]
+[[File:Flameburst Staff (demo).gif|none|frame|使用中的{{tr|The Flameburst Staff}}。]]
+
+== 另见 ==
+* {{dd2 link|Flamethrower Tower}}
+* [[{{tr|Lightning Aura sentry summons}}]]
+* [[{{tr|Explosive Trap sentry summons}}]]
+* [[{{tr|Ballista sentry summons}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 分别将{{tr|Cane}}和{{tr|Staff}}所需的[[{{tr|Defender Medal}}]]由 25 和 100 降低至 15 和 60。
+** {{tr|Cane}}和{{tr|Staff}}现在造成[[{{tr|Hellfire}}]]而非[[{{tr|On Fire!}}]]。
+** 现在在被召唤之后，在开火前有短暂的延迟。
+** {{tr|Flameburst sentry summons}}现在用于通过[[{{tr|shimmer}}]]制作各自级别的[[{{tr|Ballista sentry summons}}]]}}。
+{{history|Desktop 1.3.4.4|修复了[[{{tr|Apprentice armor}}]]会导致{{tr|Flameburst towers}}的可射击角度缩小而非扩大的问题。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Flameburst sentry summons}}

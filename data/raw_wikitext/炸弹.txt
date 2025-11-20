@@ -1,0 +1,67 @@
+{{item infobox
+| auto = 166
+| damage = 100
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+| listcat = explosives
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 100 {{eicons|1.3.0.1|invert=y|small=y}}
+| tags = Loot / Vendor / Drop / vendor:Demolitionist / vendor:Skeleton Merchant
+| cargo = force
+}}
+{{drop infobox|style=clear:right}}
+
+[[File:Bomb (demo).gif|frame|被扔出的{{tr|A Bomb}}，对[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]造成伤害同时摧毁{{tr|tiles and walls}}。]]
+
+'''{{tr|Bombs}}'''是种[[{{tr|Explosives (class)}}]]，可以从[[{{tr|Demolitionist}}]]和[[{{tr|Skeleton Merchant}}]]处以每个 {{iteminfo|Bomb|buy}} 的价格购买，或从[[{{tr|Pots}}]]、[[{{tr|Chests}}]]、[[{{tr|Slime}}]]、或通过给[[{{tr|Statue}}|{{tr|Bomb Statues}}]][[{{tr|Wire}}|通电]]而得到，或者以 {{chance|18/25}} 几率掉落自[[{{tr|Undead Miner}}]]。它可用作{{tr|mining tool}}或{{tr|a weapon}}，不过通常是前者。使用时，它会被抛到若干格外，如果地形允许，还会滚动。<section begin=bomb/>它会在 3 秒钟后爆炸，对附近的{{tr|enemies}}造成 100 点伤害并摧毁周围的多个{{tr|blocks}}。如果不小心，玩家也会伤到自己。
+
+[[防爆物品|除了一些例外]]，{{tr|Bombs}}可以摧毁几乎所有{{tr|block}}，随后可以收集之。它们也可以穿过一格厚的墙扔出，就像其他一些可投掷物那样。另外，{{tr|Bombs}}在水下也能使用。<section end="bomb" />
+
+现在有小几率作为{{eil|Bonus drops|bonus drop}}掉落自{{tr|slimes}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Bomb|expectedrows=4}}
+
+== 花絮 ==
+* 在{{eil|教程}}中，有个[[{{tr|Chest}}]]里包含一个带着 {{tr|Large}} [[{{tr|modifier}}]]的{{tr|bomb}}。这是合法获得重铸{{tr|bomb}}的唯一途径。
+** 不过，由于{{tr|bombs}}并非[[{{tr|melee weapons}}]]，{{tr|Large}} 这个{{tr|the modifier}}对它只有审美效果。
+
+== 另见 ==
+* {{eil|Bomb Fish}}，[[{{tr|Fishing}}]]获得的功能类似的{{tr|item}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprites updated.}}
+** 现在用于制作[[{{tr|Scarab Bomb}}]]和[[{{tr|Dirt Bomb}}]]。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprites updated.}}
+** 堆叠数量由 100 降低至 99。
+** 添加了{{tr|Bouncy Bomb}}。}}
+{{history|Desktop 1.2.0.2|{{tr|Bombs}}不再摧毁[[{{tr|Chlorophyte Ore}}]]。}}
+{{history|Desktop 1.2|
+** 卖出价格从 {{sc|5}} 降低至 {{sc|3}}。
+** 堆叠上限从 50 提升至 100。
+** {{tr|Sticky Bomb}}现在可以用 1 个{{tr|Gel}}和 1 个{{tr|Bomb}}制作了，而非 5 个{{tr|Gel}}。
+}}
+{{history|Desktop 1.1|
+** 堆叠上限从 20 提升至 50。
+** 现在能摧毁[[{{tr|Dynamite}}]]所能摧毁的所有东西，包括一些之前不能摧毁的{{tr|blocks}}，比如[[{{tr|Spike}}]]、[[{{tr|Ebonstone}}]]和[[{{tr|Obsidian}}]]。
+** 在[[{{tr|Wall of Flesh}}]]被打败后，它也能摧毁[[{{tr|Hellstone}}]]了
+}}
+{{history|Desktop 1.0.2|现在用于制作[[{{tr|Sticky Bomb}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-misc = yes
+}}
+
+{{language info|en=Bomb}}

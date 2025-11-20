@@ -1,0 +1,213 @@
+{{item infobox
+| auto = 997
+| type = Furniture
+| width = 3 | height = 3
+| sounduse = Grab.wav
+| tags = Loot / plunder
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Extractinator}}'''或'''{{tr|Silt Extractinator}}'''<ref>[[{{tr|minimap}}]]上的名称</ref>是一种将[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]与[[{{tr|Desert Fossil}}]]转换为更有价值的{{tr|item}}（例如[[{{tr|ores}}]]，[[{{tr|coins}}]]，和[[{{tr|gems}}]]）的{{tr|item}}。在{{eversions|1.4.4}}中，它也可以将[[{{tr|Glowing Moss}}]]交换为所有类型的普通[[{{tr|moss}}]]，以及将{{tr|fishing}}垃圾转换为低级{{tr|bait}}。
+
+它可以在[[{{tr|Wooden Crate}}]]、[[{{tr|Gold Chest}}]]、[[{{tr|Frozen Chest}}]]、和其它[[{{tr|Underground}}]]与[[{{tr|Caverns}}]]{{tr|layers}}的{{tr|chests}}中罕见地找到。{{eil|Underground Desert}}中的[[{{tr|Underground Cabin}}]]里也有几率生成一台{{tr|Extractinator}}。
+
+要使用{{tr|Extractinator}}，首先需要将它[[{{tr|placed}}]]在{{tr|world}}中。在此之后，需要在{{tr|Extractinator}} 3×3 的区域内使用合适的{{tr|blocks}}（使用 {{key|use}} 键）。按住 {{key|as}} 键，并点击{{tr|Extractinator}}时，会自动地将玩家{{tr|inventory}}中可提炼的{{tr|items}}自动消耗掉，而无需手动把它们挑选出来。
+
+使用{{tr|Extractinator}}是获取[[{{tr|Amber Mosquito}}]]的唯一途径；同时，使用{{tr|Extractinator}}与开启[[{{tr|crates}}]]也是获取世界中[[{{tr|Pre-Hardmode}}]]同等级替代矿物（如{{tr|Tin and Copper}}、{{tr|Iron and Lead}}等）仅有的可靠途径。这是在游戏早期是获取{{tr|ore and coins}}的不错方式。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Extractinator|expectedrows=1}}
+
+== 可能的转化 ==
+{{source code ref|onlycate=y|v=1.4.4.5|method=Terraria.Player.ExtractinatorUse}}
+{{flexstart|alignitems=start}}<section begin="silt-slush" />
+{| class="terraria sortable"
+|+ 使用{{item|Silt Block}} / {{item|Slush Block}}
+! {{tr|Item}} !! 几率 !! 数量 !! 平均数量 !! 每 1000 次提炼可获得的数量
+|-
+| {{item|Platinum Coin}} || 0.0073% || 1–11 || 1.2758 || {{#expr:(0.0073 * 1.2758 * 10) round 2}} ({{coin|{{#expr:(0.0073 * 1.2758 * 10) round 2}}pc}})
+|-
+| {{item|Gold Coin}} || 0.1017% || 1–100 || 10.3346 || {{#expr:(0.1017 * 10.3346 * 10) round 2}} ({{coin|{{#expr:(0.1017 * 10.3346 * 10) round 2}}gc}})
+|-
+| {{item|Silver Coin}} || 1.3534% || 1–100 || 17.7843 || {{#expr:(1.3534 * 17.7843 * 10) round 2}} (≈ {{coin|{{#expr:(1.3534 * 17.7843 * 10 * 100) round -2}}}})
+|-
+| {{item|Copper Coin}} || 64.2145% || 1–100 || 35.5588 || {{#expr:(64.2145 * 35.5588 * 10) round 2}} (≈ {{coin|{{#expr:(64.2145 * 35.5588 * 10) round -2}}}})
+|-
+| {{item|Amber Mosquito}} || 0.01% || 1 || 1 || {{#expr:(0.01 * 1 * 10) round 2}}
+|-
+| {{item|Amethyst}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Topaz}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Sapphire}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Emerald}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Ruby}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Diamond}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Amber}} || 0.9598% || 1–16 || 1.1775 || {{#expr:(0.9598 * 1.1775 * 10) round 2}}
+|-
+| {{item|Copper Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tin Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Iron Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Lead Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Silver Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tungsten Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Gold Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|-
+| {{item|Platinum Ore}} || 3.9192% || 1–16 || 1.1775 || {{#expr:(3.9192 * 1.1775 * 10) round 2}}
+|}<section end="silt-slush" /><section begin="fossil" />
+{| class="terraria sortable"
+|+ 使用{{item|Desert Fossil}}
+! {{tr|Item}} !! 几率 !! 数量 !! 平均数量 !! 每 1000 次提炼可获得的数量
+|-
+| {{item|Sturdy Fossil}} || 10% || 1–7 || 1.3 || {{#expr:(10 * 1.3 * 10) round 2}}
+|-
+| {{item|Platinum Coin}} || 0.0066% || 1–11 || 1.2758 || {{#expr:(0.0066 * 1.2758 * 10) round 2}} ({{coin|{{#expr:(0.0066 * 1.2758 * 10) round 2}}pc}})
+|-
+| {{item|Gold Coin}} || 0.0915% || 1–100 || 10.3345 || {{#expr:(0.0915 * 10.3345 * 10) round 2}} ({{coin|{{#expr:(0.0915 * 10.3345 * 10) round 2}}gc}})
+|-
+| {{item|Silver Coin}} || 1.2178% || 1–100 || 17.7839 || {{#expr:(1.2178 * 17.7839 * 10) round 2}} ({{coin|{{#expr:(1.2178 * 17.7839 * 10 * 100) round -2}}}})
+|-
+| {{item|Copper Coin}} || 57.7876% || 1–100 || 26.892 || {{#expr:(57.7876 * 26.892 * 10) round 2}} ({{coin|{{#expr:(57.7876 * 26.892 * 10) round -2}}}})
+|-
+| {{item|Amber Mosquito}} || 0.027% || 1 || 1 || {{#expr:(0.027 * 1 * 10) round 2}}
+|-
+| {{item|Amethyst}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Topaz}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Sapphire}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Emerald}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Ruby}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Diamond}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Amber}} || 1.7629% || 1–16 || 1.1775 || {{#expr:(1.7629 * 1.1775 * 10) round 2}}
+|-
+| {{item|Copper Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tin Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Iron Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Lead Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Silver Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tungsten Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Gold Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|-
+| {{item|Platinum Ore}} || 3.4892% || 1–16 || 1.1775 || {{#expr:(3.4892 * 1.1775 * 10) round 2}}
+|}<section end="fossil" /><section begin="moss" />
+{| class="terraria sortable"
+|+ {{eicons|1.4.4}} 使用{{item|Glowing Moss|image=Lava Moss.png/Krypton Moss.png/Xenon Moss.png/Argon Moss.png/Neon Moss.png/Helium Moss.png}}
+|-
+! {{tr|Item}} !!几率 !! 数量
+|-
+| {{item|Green Moss}} || 20% || 1
+|-
+| {{item|Brown Moss}} || 20% || 1
+|-
+| {{item|Red Moss}} || 20% || 1
+|-
+| {{item|Blue Moss}} || 20% || 1
+|-
+| {{item|Purple Moss}} || 20% || 1
+|}<section end="moss" /><section begin="junk" /><!-- Trascluded on [[Fishing]], nolink to prevent self-link-->
+{| class="terraria sortable"
+|+ {{eicons|1.4.4}} 使用{{item|Old Shoe|nolink=<includeonly>y</includeonly>}} / {{item|Seaweed (junk)|Seaweed|nolink=<includeonly>y</includeonly>}} / {{item|Tin Can|nolink=<includeonly>y</includeonly>}}
+! {{tr|Item}} !!几率 !! 数量
+|-
+| {{item|Snail}} || 16.67% || 1
+|-
+| {{item|Apprentice Bait}} || 75% || 1
+|-
+| {{item|Worm}} || 5.56% || 1
+|-
+| {{item|Journeyman Bait}} || 2.78% || 1
+|}<section end="junk" />
+{{flexend}}
+
+== 备注 ==
+* 虽然[[{{tr|Builder Potion}}]]、[[{{tr|Brick Layer}}]]和[[{{tr|Architect Gizmo Pack}}]]均可提高物块放置速度，但它们均不能让物块被处理的更快。处理速度仅仅与{{tr|block}}的[[{{tr|use time}}]]有关。{{source code ref|v=1.3.5.3|method=Terraria.Player.PlaceThing}}
+* 世界中生成的矿物和其对应物出现概率相等。举个例子，{{tr|Extractinator}}产出[[{{tr|Gold Ore}}]]和[[{{tr|Platinum Ore}}]]的概率相等，这与世界中{{tr|underground}}真正生成哪一种无关。
+* 不像[[{{tr|crates}}]]，{{tr|Extractinator}}即使在{{tr|Hardmode}}中也并不能产出{{tr|Hardmode}}{{tr|ores}}。它也不能产出高等级{{tr|pre-Hardmode}}{{tr|ores}}，比如说[[{{tr|Demonite}}]]。
+** {{eicons|1.4.4}} 可以通过将{{tr|Extractinator}}升级为[[{{tr|Chlorophyte Extractinator}}]]来解决这一问题。
+* 999 {{tr|Silt Block or Slush Blocks}}就能提炼出不少的{{tr|loot}}，下表对销售价格进行了细分、按比例分配并汇总了价格。
+** {{eicons|1.4.3.3|invert=y}} 大部分{{tr|gems}}被制作成[[{{tr|Stained Glass}}]]时价值要高得多：除了{{tr|Diamond}}之外，每颗{{tr|gems}}都可以制成价值 {{gc|1}} 的[[{{tr|Stained Glass}}]]。
+*** 这些{{tr|gems}}也可以制作成{{eil|Gemcorn}}，用于直接种植更多的{{tr|gems}}。
+*** {{tr|Diamonds}}不能被制成[[{{tr|Stained Glass}}]]，或者其他任何销售价格高于{{tr|gems}}的东西。
+*** {{tr|Amber}}可以被制作成[[{{tr|Crate Potion}}]]，用后者[[{{tr|fishing}}]]获取的{{tr|crate}}价值远远超过{{tr|Amber}}的{{tr|sell price}}。
+** 如果加工的是[[{{tr|Desert Fossil}}]]，由此产生的[[{{tr|Sturdy Fossil}}]]本身是无法销售的，但它用于许多{{tr|recipes}}，特别是{{eil|Scarab Bomb|s}}。此外富余的{{tr|Desert Fossil}}可以被制作成[[{{tr|Bone Throwing Knife}}]]然后出售。
+** 请注意，整体''平均''收益中，有相当部分来自于获得{{tr|Platinum Coins}}的微小几率。通常来说，总体产出只有 {{gc|8}} 或 {{gc|9}}，甚至更低。不过，1000 个{{tr|blocks}}大约有 6%-7% 的几率能够提炼出{{tr|Platinum Coins}}这一大奖。
+
+:: {| class="terraria sortable"
+|+ 每 1000 次{{tr|Extractinator}}产出的平均{{tr|sell value}}<!-- item counts taken from main table above -->
+! | {{tr|Items}} !! data-sort-type=number | {{tr|Silt Block}}/{{tr|Slush Block}} !! data-sort-type=number | {{tr|Desert Fossil}}
+|-
+| {{tr|Platinum Coins}} ||{{coin|9 gc}} || {{coin|8 gc}}
+|-
+| 其他{{tr|Coins}} || {{coin|15.20 gc}} || {{coin|13.18 gc}}
+|-
+| {{tr|Ores}} || {{coin|{{#expr:(46.15 * 1875 ) round -2}}}} || {{coin|{{#expr:(41.52 * 1875 ) round -2}}}} <!-- One each of the 8 ores totals to 18.75 silver -->
+|-
+| {{tr|Diamonds}} || {{sell expr|round=-2|Diamond|*3.92}} || {{sell expr|round=-2|Diamond|*1.77}}
+|-
+| {{tr|Amber Mosquito}} || {{sell expr|round=-2|Amber Mosquito|*0.1}} || {{sell expr|round=-2|Amber Mosquito|*0.27}}
+|-
+| {{tr|Amber}} || {{sell expr|round=-2|Amber|*11.3}} || {{sell expr|round=-2|Amber|*20.76}}
+|-
+| 其他{{tr|Gems}} || {{coin|{{#expr:(3.92 * 6000) round -2}}}} || {{coin|{{#expr:(1.77 * 6000) round -2}}}} <!-- 1 each of the 5 other gems totals to 60 silver... -->
+|-
+| {{eicons|1.4.3.3|invert=y}} 其他{{tr|Gems}}，制作成[[{{tr|Stained Glass}}]] || {{coin|{{#expr:3.92 * 5}} gc}} || {{coin|{{#expr:1.77 * 5 }} gc}} <!-- ... but any of them makes 1 gold worth of stained glass per gem -->
+<!-- 1 each of the 5 other gems totals to 60 silver, but any of them makes 1 gold worth of stained glass per gem -->
+|-
+| {{tr|Sturdy Fossils}}，制作成[[{{tr|Bone Throwing Knife}}]] || {{na}} || {{coin|{{#expr:(130 * 250) round -2}}}} <!-- each fossil yields 2.5 silver -->
+|- class="sortbottom topline"<!-- numbers below taken from output of previous rows (yes I'm lazy). "Crafting" means fossils-as-knives, stained glass instead of "other gems", and no amber. -->
+| 不制作的总价值 || {{coin|{{#expr:900 + 1520 + 865 + 118 +75 + 339 + 235}} sc}} || {{coin|{{#expr:800 + 1318 + 779 + 53 +203 + 623 + 106}} sc}}
+|- class=sortbottom
+| 制作后的总价值 || {{coin|{{#expr:900 + 1520 + 865 + 118 +75 + 1960}} sc}} || {{coin|{{#expr:800 + 1318 + 779 + 53 + 203 + 885 + 325}} sc}}
+|}
+
+== 小贴士 ==
+* 如果要提炼大量{{tr|blocks}}，将{{tr|inventory}}清理出一些空间（16 或 17 格）或许会很有帮助，这将使得所有提炼产物都不会掉落在地上。
+* 如果要寻找{{tr|Extractinator}}，不妨去{{eil|Underground Desert}}看看，这里的大多数{{tr|underground houses}}中都会生成一台{{tr|Extractinator}}。
+* 在{{switch version}}中，使用[[{{tr|Brick Layer}}]]或[[{{tr|Architect Gizmo Pack}}]]将会导致{{tr|Extractinator}}不消耗{{tr|silt}}，只需要一个{{tr|Silt Block}}就可以无限提炼。这提供了使用{{tr|Silt Block}}提炼出{{tr|item}}的无限来源。{{verify}}
+* 考虑到{{tr|Underground Desert}}的危险性、更低的获取{{tr|ores}}/{{tr|coins}}/{{tr|gems}}（除了{{tr|amber}}）的概率以及{{tr|Silt Block}}在其它{{tr|biomes}}的常见性，{{tr|Desert Fossil}}是获取{{tr|ores}}/{{tr|coins}}/{{tr|gems}}的一种次要的方式。
+
+== 花絮 ==
+* 每次{{tr|item}}生成时，都会播放{{sound||Grab.wav}}捡起物品的音效，即便产物并未被捡起。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在用于制作[[{{tr|Chlorophyte Extractinator}}]]。
+** 现在能处理[[垃圾]]物品和[[{{tr|Glowing Moss}}]]。}}
+{{history|Desktop 1.3.0.4|修复了在[[{{tr|Gravitation Potion}}|反转{{tr|gravity}}]]状态下{{tr|Extractinator}}的掉落物会很奇怪的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|
+** 现在可以从{{tr|fishing}}所得的[[{{tr|crates}}]]中获取。
+** 现在可以处理[[{{tr|Desert Fossils}}]]。}}
+{{history|Desktop 1.2.3|现在每次只消耗一块[[{{tr|Silt Block}}]]/[[{{tr|Slush Block}}]]，而不是两块。相应的，提炼出的[[{{tr|coin}}]]概率上数量更少。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+{{language info|en=Extractinator}}

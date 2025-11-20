@@ -1,0 +1,293 @@
+{{npc infobox | tabs=y
+| auto = 18
+| type = NPC
+| environment = Valid house
+| damage = {{modes|8|12|14}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ProjectileName.NurseSyringeHurt}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| imageother = Map Icon Nurse.png
+| imageothercaption = Map Icon
+| idprojectile = 583, 584
+}}
+{{quotation|[[File:Emote Town Nurse.gif|link=]] '''{{tr|Nurse}}'''|{{gameText|LegacyDialog.49}}}}
+
+'''{{tr|Nurse}}'''是一个 [[{{tr|NPCs}}|{{tr|NPC}}]]，一旦以下条件全部满足她就会入住：
+* 有一间空闲的[[{{tr|house}}]]。
+* {{tr|The player}}的永久最大[[{{tr|health}}]]大于 100。
+* 存在[[{{tr|Merchant}}]]。
+
+{{tr|Nurse}}收取[[{{tr|coins}}]]来恢复玩家的{{tr|health}}，同时治愈其身上的所有[[{{tr|debuffs}}]]（有一些例外，参见[[{{tr|Nurse}}#备注|备注]]和[[{{tr|Nurse}}#历史|历史]]）。
+
+在{{eversions|1.4.0.1|invert=y|old-gen=n}}中，治疗的价格从几[[{{tr|Copper Coin}}]]至几[[{{tr|Silver Coin}}]]不等，取决于玩家失去了多少{{tr|health}}。她按照所恢复{{tr|health}}的 75% 收取{{tr|Copper Coin}}（例如，恢复 100 {{tr|health}}收取 {{cc|75}}），玩家身上的每个{{tr|debuff}}需要再加 {{coin|7|50}}。
+
+在{{eversions|1.4.0.1}}上，治疗花费为每恢复一点{{tr|health}}需要 {{coin|1cc}}，加上玩家身上每个{{tr|debuff}} {{coin|1sc}}，然后全部乘以{{tr|the Nurse}}的当前[[{{tr|NPCs}}#{{tr|Happiness}}|{{tr|Happiness}}价格修正]]，然后，如果处于{{eil|Expert Mode}}下，再加倍。另外，随着游戏推进，{{tr|the Nurse}}会收取更多治疗费用；这部分具体增量在[[#价格增加|下方]]列出。因此，在游戏开始时，恢复 100 {{tr|health}}的花费从 {{coin|75cc}} / {{expert|{{coin|1.5sc}}}}（有最大{{tr|happiness}}）到 {{coin|1.5sc}} / {{expert|{{coin|3sc}}}}（有最大{{tr|unhappiness}}）不等，而到了游戏末期则可以从 {{coin|{{#expr:75*200}}}} / {{expert|{{coin|{{#expr:75*200*2}}}}}} 直至 {{coin|{{#expr:150*200}}}} / {{expert|{{coin|{{#expr:150*200*2}}}}}}。
+
+在{{eversions|1.3.0.1}}中，她会通过投掷 [[File:Poison Syringe.png|link=]] {{tr|syringes}}来与{{tr|enemy}}战斗，这会造成 8 / {{expert|12}} / {{master|14}} {{tr|damage}}（受各种[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|{{tr|stat boosts}}]]影响），并会让{{tr|enemy}}[[{{tr|Poisoned}}]] 3–5 秒。<ref name="ai"/> 她同时也会用 [[File:Healing Syringe.png|link=]] {{tr|healing syringes}}来治疗她自己和附近的其他 {{tr|NPCs}}，回复 20 {{tr|health}}。这些{{tr|healing syringes}}会自动导向目标。{{source code ref|v=1.4.0.5|name=healsyr|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 110</code> 代码段。}}
+
+== 价格增加 ==
+{{exclusive|1.4.1|section=y}}
+治疗的花费根据三个因素而变化：{{tr|The Nurse}}的当前[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|Happiness}}度]]、游戏的进度、和{{eil|Expert Mode}}。{{tr|Happiness}}度影响{{tr|the Nurse}}的价格的方式是将其升高或降低为基础价格 75% 到 150% 范围内的一个值（和其他 {{tr|NPC}} 的价格受快乐度影响的方式一样）。在{{tr|Expert mode}}（或{{eil|Master Mode}}）下会永久性地让价格翻倍，以此来进一步影响价格。基于游戏进度的价格提升则是基于当前世界中有哪些 {{tr|bosses}} 已被打败。这些提升都列在下表中了；只会选择并适用''最高可适用的提升''。
+
+{| class="terraria"
+|-
+! rowspan="3" | {{tr|Event}}
+! rowspan="3" | 价格修正{{source code ref|v=1.4.0.5|name=gui|method=Terraria.Main.GUIChatDrawInner}}
+! colspan="6" | 治疗 100 {{tr|HP}}的花费<ref name="healamt" group="cost">治疗 100 {{tr|health}}的{{tr|cost}}也等于治疗 1 个{{tr|debuff}}的花费。因此，治疗 100 {{tr|health}}和 1 个{{tr|debuff}}的花费即为此表中所示数值的 2 倍；100 {{tr|health}}和 2 个{{tr|debuffs}}则是所示数值的 3 倍；以此类推。</ref>
+|-
+! colspan="2" | 无{{tr|Happiness}}度倍率
+! colspan="2" | 最高{{tr|Happiness}}度
+! colspan="2" | 最低{{tr|Happiness}}度
+|-
+! {{tr|Classic}} !! {{tr|Expert}}
+! {{tr|Classic}} !! {{tr|Expert}}
+! {{tr|Classic}} !! {{tr|Expert}}
+|-
+| 已打败[[{{tr|Eye of Cthulhu}}]] || align=center | 3×
+| align=right | {{coin|{{#expr:100*3}}}}  || align=right | {{expert|{{coin|{{#expr:100*3*2}}}}}}
+| align=right | {{coin|{{#expr:75*3}}}}  || align=right | {{expert|{{coin|{{#expr:75*3*2}}}}}}
+| align=right | {{coin|{{#expr:150*3}}}} || align=right | {{expert|{{coin|{{#expr:150*3*2}}}}}}
+|-
+| 已打败[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]] || align=center | 10×
+| align=right | {{coin|{{#expr:100*10}}}}  || align=right | {{expert|{{coin|{{#expr:100*10*2}}}}}}
+| align=right | {{coin|{{#expr:75*10}}}}  || align=right | {{expert|{{coin|{{#expr:75*10*2}}}}}}
+| align=right | {{coin|{{#expr:150*10}}}} || align=right | {{expert|{{coin|{{#expr:150*10*2}}}}}}
+|-
+| 已打败[[{{tr|Skeletron}}]]或[[{{tr|Queen Bee}}]] || align=center | 25×
+| align=right | {{coin|{{#expr:100*25}}}}  || align=right | {{expert|{{coin|{{#expr:100*25*2}}}}}}
+| align=right | {{coin|{{#expr:75*25}}}}  || align=right | {{expert|{{coin|{{#expr:75*25*2}}}}}}
+| align=right | {{coin|{{#expr:150*25}}}} || align=right | {{expert|{{coin|{{#expr:150*25*2}}}}}}
+|-
+| 进入[[{{tr|Hardmode}}]] || align=center | 60×
+| align=right | {{coin|{{#expr:100*60}}}}  || align=right | {{expert|{{coin|{{#expr:100*60*2}}}}}}
+| align=right | {{coin|{{#expr:75*60}}}}  || align=right | {{expert|{{coin|{{#expr:75*60*2}}}}}}
+| align=right | {{coin|{{#expr:150*60}}}} || align=right | {{expert|{{coin|{{#expr:150*60*2}}}}}}
+|-
+| 已打败任意{{$|mechanical boss}} || align=center | 100×
+| align=right | {{coin|{{#expr:100*100}}}}  || align=right | {{expert|{{coin|{{#expr:100*100*2}}}}}}
+| align=right | {{coin|{{#expr:75*100}}}}  || align=right | {{expert|{{coin|{{#expr:75*100*2}}}}}}
+| align=right | {{coin|{{#expr:150*100}}}} || align=right | {{expert|{{coin|{{#expr:150*100*2}}}}}}
+|-
+| 已打败[[{{tr|Plantera}}]] || align=center | 150×
+| align=right | {{coin|{{#expr:100*150}}}}  || align=right | {{expert|{{coin|{{#expr:100*150*2}}}}}}
+| align=right | {{coin|{{#expr:75*150}}}}  || align=right | {{expert|{{coin|{{#expr:75*150*2}}}}}}
+| align=right | {{coin|{{#expr:150*150}}}} || align=right | {{expert|{{coin|{{#expr:150*150*2}}}}}}
+|-
+| 已打败[[{{tr|Golem}}]] || align=center | 200×
+| align=right | {{coin|{{#expr:100*200}}}}  || align=right | {{expert|{{coin|{{#expr:100*200*2}}}}}}
+| align=right | {{coin|{{#expr:75*200}}}}  || align=right | {{expert|{{coin|{{#expr:75*200*2}}}}}}
+| align=right | {{coin|{{#expr:150*200}}}} || align=right | {{expert|{{coin|{{#expr:150*200*2}}}}}}
+|}
+{{reflist|group=cost}}
+
+== {{tr|Living preferences}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Nurse|female}}
+{{-}}
+
+== 备注 ==
+* 如果玩家有活跃的[[{{tr|debuff}}]]且生命值全满，治疗选项同样可用。
+* 如果打算治疗又要喝[[{{tr|Ale}}]]，要确保在治疗之后再喝{{tr|Ale}}，因为[[{{tr|Tipsy}}]]技术上说是个{{tr|debuff}}，会被{{tr|Nurse}}治疗掉。
+* {{tr|Nurse}}永远淹不死，因为她能给自己治疗。
+* {{tr|The Nurse}}不能移除[[{{tr|Potion Sickness}}]]、[[{{tr|Water Candle}}]]、和[[{{tr|Creative Shock}}]]，她也不会为此额外收费。
+* 当玩家与其谈话时，{{tr|The Nurse}}无法治疗自身。
+* 如果{{tr|Nurse}}抛出的{{tr|healing syringe}}未击中其目标，它就会自动导向他们。
+
+== 成就 ==
+{{achievement|name=The Frequent Flyer}}
+
+== 小贴士 ==
+* 在 {{tr|boss}} 战期间低生命值时，可以通过传送回{{tr|Nurse}}所在的[[{{tr|spawn point}}]]（用[[{{tr|Magic Mirrors}}|{{tr|Magic Mirror}}/{{tr|Ice Mirror}}]]或其升级）来将{{tr|The Nurse}}当作“治疗站”使用。可以用[[{{tr|Autopause}}]]来得到更多时间。
+** 在{{eversions|1.4.0.1}}中，这一招远比在{{eversions|1.4.0.1|invert=y}}中难用，因为[[{{tr|Autopause}}]]不会对 {{tr|NPC}} 的对话菜单生效。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+'''[[{{tr|Blood Moon}}]]之外的任意时间：'''
+* “{{gameText|LegacyDialog.48}}”
+* “{{gameText|LegacyDialog.49}}”
+* “{{gameText|LegacyDialog.50}}”
+* “{{gameText|LegacyDialog.51}}”
+
+'''当 {{eicons|1.4.0.1}} [[{{tr|Guide}}]]在场时 / {{eicons|1.4.0.1|invert=y}} 有[[{{tr|Demon Eye}}]]存活时：{{source code ref|old=y|v=1.3.5.3|method=Terraria.NPC.GetChat|t=这是一个 {{tr|bug}}；见[[#history Desktop 1.4.0.1|{{tr|History}}]]。}}'''
+* “{{gameText|LegacyDialog.35|x_Guide=&lt;{{tr|Guide}}的名字&gt;}}”
+
+'''打败[[{{tr|Skeletron}}]]之前：'''
+* “{{gameText|LegacyDialog.32}}”
+
+'''[[{{tr|Demolitionist}}]]存在时：'''
+* “{{gameText|LegacyDialog.33|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|LegacyDialog.34|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''[[{{tr|Tavernkeep}}]]存在时：'''
+* “{{gameText|NurseChatter.Chatter_1|x_Bartender=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''当玩家中度受伤时''' {{note|paren=y|≥33% 生命值，但 <66% 生命值}}：
+* “{{gameText|LegacyDialog.41}}”
+* “{{gameText|LegacyDialog.42}}”
+* “{{gameText|LegacyDialog.43}}”
+* “{{gameText|LegacyDialog.44}}”
+* “{{gameText|LegacyDialog.45|x_PlayerName=&lt;{{tr|player}}的名称&gt;}}”
+* “{{gameText|LegacyDialog.46}}”
+* “{{gameText|LegacyDialog.47}}”
+
+'''当玩家严重受伤时''' {{note|paren=y|<33% 生命值}}：
+* “{{gameText|LegacyDialog.36}}”
+* “{{gameText|LegacyDialog.37}}”
+* “{{gameText|LegacyDialog.38}}”
+* “{{gameText|LegacyDialog.39}}”
+* “{{gameText|LegacyDialog.40}}”
+
+'''[[{{tr|Blood Moon}}]]期间：'''
+* 当玩家中度受伤时 {{note|paren=y|<66% 生命值}}：
+** “{{gameText|LegacyDialog.25}}”
+** “{{gameText|LegacyDialog.26}}”
+** “{{gameText|LegacyDialog.27}}”
+* 当玩家并未中度受伤时 {{note|paren=y|≥66% 生命值}}：
+** “{{gameText|LegacyDialog.28}}”
+** “{{gameText|LegacyDialog.29}}”
+** “{{gameText|LegacyDialog.30}}”
+** “{{gameText|LegacyDialog.31}}”
+
+'''当玩家点击治疗时：'''
+* 当玩家轻微受伤时 {{note|paren=y|≥75% 生命值}} 点击治疗：
+** “{{gameText|LegacyDialog.230}}”
+* 当玩家中度受伤时 {{note|paren=y|≥50% 生命值，但 <75% 生命值}} 点击治疗：
+** “{{gameText|LegacyDialog.229}}”
+* 当玩家严重受伤时 {{note|paren=y|≥25% 生命值，但 <50% 生命值}} 点击治疗：
+** “{{gameText|LegacyDialog.228}}”
+* 当玩家非常严重受伤时 {{note|paren=y|<25% 生命值}} 点击治疗：
+** “{{gameText|LegacyDialog.227}}”
+* 当玩家生命值全满时点击治疗：
+** “{{gameText|LegacyDialog.55}}”
+** “{{gameText|LegacyDialog.56}}”
+** “{{gameText|LegacyDialog.57}}”
+* 当玩家点击治疗却没有足够{{tr|coins}}时：
+** “{{gameText|LegacyDialog.52}}”
+** “{{gameText|LegacyDialog.53}}”
+** “{{gameText|LegacyDialog.54}}”
+
+'''{{eicons|1.4.4}} 当玩家（在 [[{{tr|PvP}}]] 以外）死亡 ≥1 次，但 <25 次：'''{{source code ref|v=1.4.4.9|method=Terraria.NPC.GetChat}}
+* “{{gameText|NurseSpecialText.DeathCountLow|x_TotalDeathsCount=&lt;非 PvP 死亡次数&gt;}}”
+
+'''{{eicons|1.4.4}} 当玩家（在 {{tr|PvP}} 以外）死亡 ≥25 次，但 <100 次：'''
+* "{{gameText|NurseSpecialText.DeathCountMedium|x_TotalDeathsCount=&lt;非 PvP 死亡次数&gt;|x_WorldName=&lt;{{tr|world name}}&gt;}}"
+
+'''{{eicons|1.4.4}} 当玩家（在 {{tr|PvP}} 以外）死亡 ≥100 次：'''
+* "{{gameText|NurseSpecialText.DeathCountHigh|x_TotalDeathsCount=&lt;非 PvP 死亡次数&gt;}}"
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|NurseSpecialText.Party}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|NurseSpecialText.Rain2}}”
+* “{{gameText|NurseSpecialText.Rain1}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|NurseSpecialText.Storm1}}”
+* “{{gameText|NurseSpecialText.Storm2}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|NurseSpecialText.Windy2}}”
+* “{{gameText|NurseSpecialText.Windy1}}”
+
+'''{{eicons|1.4.0.1}} 当在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|NurseSpecialText.Graveyard1}}”
+* “{{gameText|NurseSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== 快乐话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Nurse.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Nurse.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Nurse.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Nurse.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Nurse.HateCrowded}}”
+
+'''在{{tr|the Hallow}}中时：'''
+* “{{gameText|TownNPCMood_Nurse.LikeBiome|x_BiomeName={{tr|the Hallow}}}}”
+
+'''在{{tr|the Snow Biome}}中：'''
+* “{{gameText|TownNPCMood_Nurse.DislikeBiome|x_BiomeName={{tr|the Snow}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Nurse.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Arms Dealer}}]]时：'''
+* “{{gameText|TownNPCMood_Nurse.LoveNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Nurse.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Wizard}}]]时：'''
+* “{{gameText|TownNPCMood_Nurse.LikeNPC|x_NPCName=&lt;{{tr|Wizard}}的名字&gt;}}”
+
+'''靠近[[{{tr|Dryad}}]]时：'''
+* “{{gameText|TownNPCMood_Nurse.DislikeNPC|x_NPCName=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''靠近[[{{tr|Party Girl}}]]时：'''
+* “{{gameText|TownNPCMood_Nurse.DislikeNPC|x_NPCName=&lt;{{tr|Party Girl}}的名字&gt;}}”
+
+'''靠近[[{{tr|Zoologist}}]]时：'''
+* “{{gameText|TownNPCMood_Nurse.HateNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+
+'''快乐度是中性时：'''
+* “{{gameText|TownNPCMood_Nurse.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* 在[[{{tr|Blood Moon}}]]期间，{{tr|Nurse}}和[[{{tr|Mechanic}}]]之间似乎有冲突。在这个时候，[[{{tr|Merchant}}]]有几率会说：“{{gameText|LegacyDialog.13|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+* 根据{{tr|Nurse}}在场时的话语，[[{{tr|Arms Dealer}}]]似乎对{{tr|nurse}}有着浪漫的兴趣。{{tr|Nurse}}的话语也反映了这点：“{{gameText|LegacyDialog.34|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+** 其话语：“{{gameText|TownNPCMood_Nurse.LoveNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”中，{{tr|Nurse}}应该是在否认并隐瞒自己对{{tr|Arms Dealer}}的感情。而从{{tr|Arms Dealer}}与{{tr|Stylist}}的话语中可得知{{tr|Nurse}}与{{tr|Arms Dealer}}二人已经是男女朋友关系。
+* 有一副名叫《{{tr|Nurse Lisa}}》的[[{{tr|Paintings}}]]是描绘{{tr|Nurse}}的，参考了意大利文艺复兴时期艺术家{{维基百科|Leonardo da Vinci|t=列奥纳多·达·芬奇}}所作的著名油画{{维基百科|b=y|Mona Lisa|t=蒙娜丽莎}}。
+** 其名字 Lisa 可能也来源于此。
+* 名字 Helen 可能参考了在第一次世界大战中照料伤员的护士{{wikipedia|Helen Fairchild|海伦·费尔柴尔德（Helen Fairchild）}}
+* {{eicons|1.4.0.1}}在拥挤的地方和{{tr|the Nurse}}交谈时她会说“{{gameText|TownNPCMood_Nurse.DislikeCrowded}}”这指的是[[{{tr|Journey's End}}]]发布时正在发生的 {{维基百科|COVID-19 pandemic|COVID-19 疫情}}，此次更新中这句话语被引入；以及鼓励人们互相间在公共场合保持六英尺或者说两米远的“{{维基百科|social distancing|社交距离}}”的做法。
+{{float file box|[[File:Nurse (Party).png]]|[[{{tr|Party}}]]期间的{{tr|Nurse}}}}
+* 在{{eil|party}}期间，当{{tr|Nurse}}戴上{{tr|party hat}}时，她的发型有所改变。她将其披下来而不是扎成马尾辫。这是有道理的，因为扎着马尾辫来戴{{tr|party hat}}很不方便。
+* {{tr|The Nurse}}的话语“{{gameText|LegacyDialog.55}}”指的是按摩师在按摩结束时向客人提供性服务或者说“{{wiktionary|happy ending|快活收尾（happy ending）}}”来获取额外报酬的做法。
+** 当[[{{tr|Blood and Gore}}]]{{tr|settings}}关闭时，{{tr|The Nurse}}不会说出这句话语。<ref name="gui" />
+* 虽然{{tr|the Zoologist}}写的是被{{tr|the Nurse}}所讨厌，但她似乎并不真讨厌她。对话内容表明{{tr|the Nurse}}讨厌{{tr|Zoologist}}独特的解剖结构要多于讨厌{{tr|Zoologist}}本人：“{{gameText|TownNPCMood_Nurse.HateNPC|x_NPCName=&lt;{{tr|Zoologist}}的名字&gt;}}”
+** 但是，这类短语也经常被用来形容难以相处的人，例如：在接受注射时拒绝保持不动。
+* 她的话语“{{gameText|LegacyDialog.35|x_Guide=&lt;{{tr|Guide}}的名字&gt;}}”很可能是指[[{{tr|Guide Voodoo Doll}}]]被在[[{{tr|lava}}]]中献祭或是被[[{{tr|Voodoo Demon}}]]在[[{{tr|the Underworld}}]]中的{{tr|lava}}湖附近携带。
+* 虽然[[{{tr|Witch Doctor}}]]因{{tr|Nurse}}的现代医疗方式而反感她，但{{tr|Nurse}}却不反感有关巫术和魔法的事物。从她对[[{{tr|the Hallow}}]]与[[{{tr|Wizard}}]]的好感上便有体现。
+
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Nurse}}现在会在她的随机对话中对玩家最近的死亡频率作评论。}}
+{{history|Desktop 1.4.0.1|
+** 现在随着游戏进程会逐步提高治疗的价格。
+** 修正了关于[[{{tr|the Guide}}]]的话语出现的条件是存在[[{{tr|Demon Eye}}]]（而非{{tr|the Guide}}）的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|{{tr|Nurse}}不再会移除[[{{tr|Heart Lamp (buff)}}|{{tr|Heart Lantern}}]]和[[{{tr|Campfire (buff)}}|{{tr|Campfire}}]]{{tr|buff}}，也不会对此收费。这也适用于[[{{tr|Potion Sickness}}]]和[[{{tr|Water Candle}}]]{{tr|debuff}}。}}
+{{history|Desktop 1.1|现在在她生成时会随机赋予名字。她的死亡会用其名字报告。其他 {{tr|NPC}} 也会在他们各自的对话中使用此名字。在[[{{tr|Multiplayer}}]]中不会再生成第二个{{tr|Nurse}}。}}
+{{history|Desktop 1.0.3|和其他 {{tr|NPCs}} 一样，现在可被{{tr|enemies}}杀死。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Nurse}}

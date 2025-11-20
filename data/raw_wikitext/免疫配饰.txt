@@ -1,0 +1,20 @@
+'''{{tr|Immunity accessories}}'''是一系列装备时能够提供对特定[[{{tr|debuffs}}]]的免疫能力的[[{{tr|accessories}}]]。
+
+== 类型 ==
+{| class="terraria lined sortable"
+! colspan=2 | {{tr|Item}} !! 免疫 !! 来源
+|-
+{{#listmap:list={{equipinfo/list|where=buffImmune HOLDS LIKE "%"|sep=\}}\{{equipinfo/list|fireWalk|sep=\}}|insep=\|token=@@@@|pattern=<esc>
+| {{item|mode=table|id=@@@@|showid=n|wrap=y}}
+| <ul style="list-style:none; margin-left:0;"><!--
+	-->{{#lstmap:{{equipinfo|@@@@|buffImmune|raw=y}}{{#if:{{equipinfo|@@@@|fireWalk}}|¤67}}|¤|§§§§|<!--
+		--><li>{\{buff\!id=§§§§}\}</li><!--
+	-->|}}
+</ul>
+| {{itemsource|id=@@@@|sep=<hr class{{=}}"incell-border"/>}}
+</esc>|outsep={{!}}-|duplicates=strip}}
+|}
+
+[[Category:{{tr|Accessory items}}|*]]
+
+{{language info|en=Immunity accessories}}

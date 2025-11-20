@@ -1,0 +1,251 @@
+{{collapse top|点击展开详细列表|收起列表}}
+; 新机制
+* 可穿戴的[[{{tr|Accessories}}]]
+* [[{{tr|Chest}}]]命名
+* {{tr|Quick Stack}}
+* {{tr|Restock}}
+* 无限[[{{tr|Wiring}}]]
+* 可以在游戏中更改{{tr|Hair Style}}
+* 可在[[{{tr|dresser}}]]处更改默认衣服
+* {{tr|Vanity}}[[{{tr|Wings}}]]（可染色）
+* 可染色的{{tr|accessories}}
+* 可以将[[{{tr|Switch}}]]和[[{{tr|Lever}}]]放在{{tr|wall}}上
+* {{tr|Wall}}自动填充
+
+; 机制更改
+* 平衡
+** 重新引入了重生计时器
+** 重新引入了[[{{tr|Coin Gun}}]]
+
+* 改进
+** 用{{tr|Desktop}}自动挖掘的代码覆写了{{tr|console}}的相应代码
+
+; 修复 {{tr|Bug}}
+* 降低了[[{{tr|ore}}]]闪烁的亮度
+* [[{{tr|enemies}}]]在黑暗中时不再显示其名字。
+* 每次按下按钮只自动放置 1 个[[{{tr|torch}}]]
+* [[{{tr|Heart Crystal}}]]会在每次受击时播放破碎声，之前仅会在被挖掉时播放。
+* {{tr|tiles}}的敲击数会被保存下来
+* Fix [[minion]] sacrificing code (bug: The [[Tempest Staff]] would fail to summon Sharknado if another minion was already present.)
+
+; 艺术
+* 更新启动屏幕
+
+; {{tr|NPCs}}
+* [[{{tr|Stylist}}]]
+
+; {{tr|Items}}
+* {{tr|Critter}}容器
+** [[{{tr|Firefly in a Bottle}}]]
+** [[{{tr|Lightning Bug in a Bottle}}]]
+** [[{{tr|Mallard Duck}}]]{{tr|Cage}}
+** [[{{tr|Monarch Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Purple Emperor Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Red Admiral Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Ulysses Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Sulphur Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Tree Nymph Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Zebra Swallowtail Butterfly}}]]{{tr|Jar}}
+** [[{{tr|Julia Butterfly}}]]{{tr|Jar}}
+
+* {{tr|Armor}}
+** [[{{tr|Spectre Mask}}]]
+** [[{{tr|Bee Headgear}}]]
+** [[{{tr|Bee Breastplate}}]]
+** [[{{tr|Bee Greaves}}]]
+** [[{{tr|Spider Mask}}]]
+** [[{{tr|Spider Breastplate}}]]
+** [[{{tr|Spider Greaves}}]]
+
+* {{tr|Vanity}}
+** [[{{tr|Diamond Ring}}]]
+** [[{{tr|Crimson Cloak}}]]
+** [[{{tr|Mysterious Cape}}]]
+** [[{{tr|Red Cape}}]]
+** [[{{tr|Winter Cape}}]]
+
+* {{tr|Weapons}}
+** [[{{tr|Hornet Staff}}]]
+** [[{{tr|Imp Staff}}]]
+** [[{{tr|Queen Spider Staff}}]]
+** [[{{tr|Optic Staff}}]]
+** [[{{tr|Spider Staff}}]]
+** [[{{tr|Pirate Staff}}]]
+** [[{{tr|Sticky Grenade}}]]
+** [[{{tr|Molotov Cocktail}}]]
+** [[{{tr|Slime Gun}}]]
+
+* {{tr|Mounts}}
+** [[{{tr|Honeyed Goggles}}]]
+** [[{{tr|Slimy Saddle}}]]
+
+* {{tr|Materials}}
+** [[{{tr|Bee Wax}}]]
+** [[{{tr|Spider Fang}}]]
+
+* {{tr|Tools}}
+** [[{{tr|Slime Hook}}]]
+
+* 装饰
+** [[{{tr|Blue Dungeon Chandelier}}]]
+** [[{{tr|Green Dungeon Chandelier}}]]
+** [[{{tr|Pink Dungeon Chandelier}}]]
+** [[{{tr|Weapon Rack}}]]
+** [[{{tr|Fireworks Box}}]]
+** [[{{tr|Firework Fountain}}]]
+** [[{{tr|Seashell}}]]
+** [[{{tr|Starfish}}]]
+
+* [[{{tr|Music Box}}]]
+** {{tr|Music Box}} – {{tr|Pumpkin Moon}}
+** {{tr|Music Box}} – {{tr|Underground}}备选曲
+** {{tr|Music Box}} – {{tr|Frost Moon}}
+** {{tr|Music Box}} – {{tr|Underground Crimson}}
+
+* [[{{tr|Hair Dye}}]]
+** {{tr|Life Hair Dye}}
+** {{tr|Mana Hair Dye}}
+** {{tr|Depth Hair Dye}}
+** {{tr|Money Hair Dye}}
+** {{tr|Time Hair Dye}}
+** {{tr|Team Hair Dye}}
+** {{tr|Biome Hair Dye}}
+** {{tr|Party Hair Dye}}
+** {{tr|Rainbow Hair Dye}}
+** {{tr|Speed Hair Dye}}
+** {{tr|Hair Dye Remover}}
+
+* {{tr|Blocks and Walls}}
+** [[{{tr|Confetti Block}}]]
+** [[{{tr|Confetti Wall}}]]
+** [[{{tr|Midnight Confetti Block}}]]
+** [[{{tr|Midnight Confetti Wall}}]]
+** [[{{tr|Living Fire Block}}]]
+** [[{{tr|Sail}}]]
+** [[{{tr|Ducky Wallpaper}}]]
+{{collapse bottom}}
+{{collapse top|点击展开 {{tr|bug}} 修复列表|收起 {{tr|bug}} 修复列表}}
+; 图像
+* “{{tr|Arctic Diving Gear}}”现在可见。
+* {{tr|Jellyfish Jars}}的动画循环不再那么快，与其他保持一致。
+* 放置的{{tr|Crimson Axe Banner}}的图像现在是正确的。
+* 激活“{{tr|Slimy Saddle}}”现在会得到正确的 SFX。
+* 激活某些{{tr|Staves}}现在会得到正确的 SFX。
+* 在站立和飞行时{{tr|Cape}}的图像不会再和{{tr|wings}}一起出现了。
+* “{{tr|Firefly in a Bottle}}”中的{{tr|firefly}}动画不再循环过快，看起来也不再是绿的。
+* “{{tr|Lightning Bug in a Bottle}}”{{tr|item}}动画不再循环过快。
+* The hand of 'Ancient Shadow Scalemail' no longer appears on user's character after equipping 'Spider Breastplate' in the 'Equip' section.
+* 不同类型的{{tr|walls}}现在会在解封处相互融合
+* {{tr|Duke Fishron}}的眼睛，在第二阶段中不再是红色，而是黄色。
+* {{tr|Boreal tree}}的颜色不再显得太亮。
+* {{tr|Gemspark Blocks}}现在和它们所应该的一样亮
+* 摇晃的{{tr|trees}}不再在{{tr|the background}}中出现。
+* 已修复：{{tr|The water}}落下的 SFX 只会在 2 {{tr|minutes}}后才播放。
+* 所有已装备的{{tr|accessories}}现在在人物形象上都可见。
+* Items such as 'Flare Gun' and 'Umbrella' no longer appear as floating textures when held in a minecart.
+
+; {{tr|Multiplayer}}
+* 未被邀请的{{tr|players}}不再能够加入世界
+* {{tr|Chlorophyte armor}}的{{tr|The projectiles}}现在在 PVP 中会从{{tr|Leaf Crystal}}射出。
+* {{tr|The Dye Trader}}现在会在{{tr|multiplayer}}{{tr|server}}出售{{tr|Team Dye}}
+* 如果客户端满足了{{tr|The Nurse}}的生成条件，她也会生成。
+* 激活PVP时，不同团队的{{tr|Players}}不再显示在地图上。
+* 其他{{tr|players}}的{{tr|health}}现在在 PVP 中会显示正确的大小。
+* {{tr|The Flower of Frost}}现在在 PVP 场景下会造成{{tr|the Frostburn debuff}}。
+* The "Wall Of Flesh" will no longer be invisible to the client if the host summons the boss while the client is at a moderate distance.
+* On the Host's screen, 'Blocks' and 'Doors' placed by Host at default spawn point no longer follow the Client's character if Client joins the Host's game.
+* The love potion and stink potion now applies the buff and the visual effect on the client when thrown.
+* Players are now able to see other users on the map if they are situated in unrevealed parts of the map.
+* The Host is now able to see the explosion of the fireworks launched by the client.
+* The client no longer remains in an online game where the host crashed (this had lead to various issues and potential exploits).
+* The invitation button is now present in game when the a profile has chat/messaging restriction turned on.
+* The player will no longer get an infinite loading screen if they suspend the game while creating an online session.
+* “{{tr|Beetle Endurance}}”{{tr|buff}}在{{tr|multiplayer}}中不再需要静止就能激活。
+* The user will no longer continue into an Online world when a disconnection occurs in the loading (this had lead to a freeze when sending an invite).
+* Suspending the title during an online enabled world while having a splitscreen user no longer results in an error.
+* When two teams of 4 users are in-game simultaneously, the client's team will no longer lose connection to the game after a while.
+* {{tr|Debuffs}}现在在 PVP 中会影响其他{{tr|players}}。
+* 小怪/{{tr|bosses}} 不再对客户端玩家不可见/部分不可见。
+* Specific combinations of walls, blocks and objects no longer cause corrupt or missing textures for client users.
+
+; {{tr|Game mechanics}}
+* {{tr|The Pirate NPC}}现在出售“{{tr|Sail}}”{{tr|item}}。
+* {{tr|Cogs}}现在可以作为{{tr|blocks}}放置。
+* {{tr|Waterleaf}}现在会在下雨时开放。
+* {{tr|Weapon Racks}}现在被破坏时会掉落保持的{{tr|item}}。
+* {{tr|Silk}}最大堆叠不再是 99。
+* {{tr|Slimy Saddle}}召唤物不再沉入水中。
+* The paintings no longer appear to be floating in the air and now fall on the ground if the user destroys the background walls.
+* Players can no longer pass through the locked Jungle/Lihzahrd Temple door without the key.
+* {{tr|The Golem}}不再能在击杀{{tr|Plantera}}前生成。
+* 放置{{tr|torches}}时，{{tr|Tiles}}比{{tr|Walls}}优先级更高。
+* {{tr|The Ocean Biome}}不再与{{tr|the Desert}}。
+* {{tr|Acorns}}种在{{tr|sand}}现在会长成树
+* {{tr|The dresser}}现在可用于更改{{tr|the player}}的衣服。
+* 在{{tr|merchant}}处购物时现在可以看到你有多少钱。
+* 激活{{tr|the King's statue}}不再传送{{tr|the Party Girl}}。
+* 激活{{tr|the King's statue}}现在可以传送{{tr|the Traveling Merchant}}。
+* {{tr|Trees}}现在可以作为放置{{tr|platforms}}的表面。
+* {{tr|mining potion}}现在可以像{{tr|the Desktop version}}那样施加{{tr|buff}}。
+* 掉落的{{tr|Wires}}现在会自行堆叠起来。
+* {{tr|Lamps}}现在可以用{{tr|levers}}开关。
+* {{tr|Levers}}现在能控制多重{{tr|wires}}。
+* {{tr|The Spelunker potion}}现在会把{{tr|ores}}显示为金色，不再发光。
+
+; 机制
+* Rich presence information is now localized for all supported languages.
+* The sorting order of the entries in the leaderboard for all categories is now correct.
+* {{tr|Sticky Grenade}}的描述现在已经本地化。
+* {{tr|Molotov Cocktail}}的描述现在已经本地化。
+* {{tr|The Staves}}{{tr|summons}}的描述现在已经本地化。
+* 快速发射{{tr|Projectile}}的{{tr|Weapons}}，声音不再那么慢，以与开火速率匹配。
+* The wire cutters no longer only cut the wires in front of the character when in smart cursor.
+* 音乐不再随机停止。
+* The mini minotaur from the tartar sauce will now de-spawn when cancelling the buff.
+* The flames from the Flame Trap now extend 23 blocks instead of 46 blocks.
+* Actuators no longer leave areas deactivated after the actuator is removed and the blocks are replaced.
+* Switches, Levers, etc' no longer power the spaces surrounding them.
+* The "bomb", the "dynamite" and the "land mine" no longer deal almost twice the damage to players.
+* Platforms now consider spaces diagonal to valid surfaces to be legal locations for placement.
+* Auto Aim now functions with any (some?) form of minecart tracks.
+* {{tr|Wings}}现在在用户在{{tr|minecart}}中时也能防止{{tr|fall damage}}。
+* 颠倒的{{tr|slopes}}现在会在加载后正确存储。
+* Bushes no longer appear neon pink or purple on the map.
+* Necro Armor item descriptions now state they enhance ranged damage by 5% instead of 4%.
+* Up' and 'Down' no longer switch functionality with featherfall while the world is flipped.
+* Depressing the use button no longer causes seeds to be planted twice.
+* The cursor no longer becomes detached from the user when flipping gravity from falling into the sky.
+* Auto-aim now functions while upside down.
+* Auto placing walls no longer overshoot solid tiles. Can now make a wall inside a house without making a mess.
+* Tiles now save hits.
+* Subsequent waves after the first one are now localized when summoning the Frost Moon Event.
+* Fixed the misspelled tooltip when user kills The Twins.
+* The honey no longer appears pink on the map during day time.
+* Summoning the maximum amount of one type of minion when another type is active will no longer dismiss all the minions at once.
+* Demon Altar no longer shows in crafting menu instead of Crimson Altar while highlighting on the Demon altar item.
+
+; 平台特有
+* Vita - {{tr|Shop}}现在可以适配触摸屏。
+* Vita - The 2.25 version of the publishing tools is now used instead of using version 2.21.
+* Vita - The inventory prompts no longer overlap with the Quick Stack option.
+* Vita - switch category button prompt no longer missing in crafting (in tutorial).
+* PS - The activity feed post now has an icon.
+* PS - TUS size no longer needs to be increased to allow cross save to work for all worlds.
+* PS3 - The message displayed upon receiving an invitation no longer appears cutoff in French.
+* PS3 - Fixed: The title asks for 17 MB when there is not enough space for a new save data even though its maximum size is 20 MB on the Fishing update.
+* PS3 - The system no longer crashes when quitting the game while downloading or uploading a world from the cloud.
+* PS3 - The application now terminates correctly when quitting the game immediately after boot.
+* PS4 – The 2.11 version of the publishing tools is now used instead of version 1.84.
+* PS4 - When idling in the world selection screen, the Web API calls no longer exceed the rate limit, are no longer infinitely retried, and no longer prevent the user from joining online sessions.
+* XB360 - The title no longer displays a connection error message when a profile without Xbox Live Gold attempts to upload data.
+* XB360 - The title no longer crashes when the user signs in at the title screen after signing out during an upload.
+* XB360 - The title no longer crashes when the host of a local multiplayer game signs out after failing to join an online multiplayer game.
+* XB360 - The title no longer crashes if a guest profile with the same name as a previously added guest tries to join the game session.
+* XBOne - The title now displays the user's Display Name when leaving a game.
+* XBOne - The title no longer enters an infinite loading upon suspending the title during the loading of an online session.
+* XBOne - When a host quits an online game, a message stating "has left." no longer appears at the bottom-left of the screen.
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Engine Software/1.08}}
+</noinclude>

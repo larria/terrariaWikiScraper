@@ -1,0 +1,103 @@
+{{exclusive|1.4.0.5}}
+{{item infobox
+| auto = 5043
+| type = Permanent booster
+| tags = drop
+}}
+{{float file box
+|title={{tr|Torch God's Favor}}[[{{tr|toggles}}]]
+----
+{{desktop}}{{tr|icons}}
+|{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap off.png|link=]]<br/>关}}<!--
+-->{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap on.png|link=]]<br/>开}}
+|title2={{mobile}}{{tr|icons}}
+|{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap off (mobile).png|link=]]<br/>关}}<!--
+-->{{inline block|css=width:50%;line-height:2|[[File:Biome torch swap on (mobile).png|link=]]<br/>开}}
+}}
+[[File:Torch God's Favor (demo).gif|thumb|在{{tr|Jungle}}中关闭和开启{{tr|biome torch swap}}。]]
+
+'''{{tr|Torch God's Favor}}'''是一个[[{{tr|Consumables|link=y}}#{{tr|Permanent boosters}}|{{tr|permanent booster}}]]{{tr|item}}，会永久给予玩家自动将手中的常规[[{{tr|Torches}}]]和[[{{tr|Campfires}}]]转化为当前[[{{tr|biome}}]]{{tr|torch or campfire variant}}的能力，这样做会在大部分区域中提高玩家的[[{{tr|torch luck}}]]。{{tr|The Torch God's Favor}}只能通过在[[{{tr|The Torch God}}]][[{{tr|Events}}|{{tr|event}}]]中存活获得，需要有至少 95 个[[{{tr|Torches}}]]在{{tr|event}}中发射过。
+
+{{tr|Torch God's Favor}}是一个一次性的{{tr|consumable}}，效果不能叠加（类似于[[{{tr|Advanced Combat Techniques}}]]或[[{{tr|Demon Heart}}]]）。初次使用时，能力默认开启，可以用位于{{icon|desktop}}[[{{tr|inventory}}]]左侧 / {{icon|mobile}}{{tr|inventory}}下方的{{tr|tools menu}}中的[[{{tr|toggle}}]]来切换开关。
+
+在能力开启时放置的{{tr|Torches and campfires}}会永久地被转化为其{{tr|biome variant}}，即使被采集并拾取后也一样。
+
+== {{tr|Biome Torches and Campfires}} ==
+下方为{{tr|biome torches, biome campfires}}、和其对应的{{tr|biomes}}列表，按优先级排序。
+{{options/set|item|icons=n}}
+{| class="terraria lined"
+! {{tr|Biome}} !! {{tr|Torch}} !! {{tr|Campfire}}
+|-
+| {{item|The Underworld}}
+| {{item|Demon Torch}}
+| {{item|Demon Campfire}}
+|-
+| {{item|The Aether|image=Faeling.png}}
+| {{item|Aether Torch}}
+| {{item|Aether Campfire}}
+|-
+| {{item|Dungeon}}
+| {{item|Bone Torch}}
+| {{item|Bone Campfire}}
+|-
+| {{item|The Hallow}}
+| {{item|Hallowed Torch}}
+| {{item|Hallowed Campfire}}
+|-
+| {{item|The Corruption}}
+| {{item|Corrupt Torch}}
+| {{item|Corrupt Campfire}}
+|-
+| {{item|The Crimson}}
+| {{item|Crimson Torch}}
+| {{item|Crimson Campfire}}
+|-
+| {{item|Snow biome|Snow}}
+| {{item|Ice Torch}}
+| {{item|Frozen Campfire}}
+|-
+| {{item|Glowing Mushroom biome|Glowing Mushroom}}
+| {{item|Mushroom Torch}}
+| {{item|Mushroom Campfire}}
+|-
+| {{item|Jungle}}
+| {{item|Jungle Torch}}
+| {{item|Jungle Campfire}}
+|-
+| {{item|Desert}}
+| {{item|Desert Torch}}
+| {{item|Desert Campfire}}
+|}
+
+== 备注 ==
+* 当在[[{{tr|Dungeon}}]]、[[{{tr|The Underworld}}]]、和[[{{tr|The Aether}}]]放置{{tr|Torches}}时，会分别转化成[[{{tr|Bone Torch}}]]、{{tr|Demon Torches}}、和{{tr|Aether Torches}}，尽管在这些区域它们不影响[[{{tr|Torch Luck}}]]。
+** 因此，最好将{{tr|Bone Torches}}转移至其会影响{{tr|Torch luck}}的{{tr|the Underworld}}中。{{tr|Demon Torches}}完全不会对{{tr|luck}}产生影响。
+* [[{{tr|Ice Torch}}]]优先于[[{{tr|Jungle Torch}}]]和[[{{tr|Mushroom Torch}}]]，尽管在大部分其他情况下（如[[{{tr|fishing}}]]和[[{{tr|enemy}}]]生成）[[{{tr|Jungle}}]]和[[{{tr|Glowing Mushroom biome}}]]都优先于[[{{tr|Snow biome}}]]。
+* 虽然[[{{tr|Coral Torch}}]]是{{tr|biome-specific Torch}}，在[[{{tr|Ocean}}]]中时并不会交换出它。
+* 已经使用过或{{tr|inventory}}中有{{tr|Torch God's Favor}}的玩家无法再次开启[[{{tr|The Torch God}}]]{{tr|event}}。
+** 对于{{tr|The Torch God event}}，{{tr|The inventory}}的[[{{tr|trash slot}}]]不被视为{{tr|inventory}}的一部分，因此将{{tr|Torch God's Favor}}放在此处不会阻止{{tr|event}}开始。
+* 使用{{tr|Torch God's Favor}}会解锁{{tr|Torch God}}的[[{{tr|Bestiary}}]]条目。
+
+== 成就 ==
+{{achievement|name=Torch God}}
+
+== 小贴士 ==
+* 通过从[[{{tr|Merchant}}]]处（基础{{tr|happiness}}度）购买{{tr|Torch}}，将{{tr|regular Torches}}在{{tr|the Underworld}}转化为{{tr|Demon Torches}}，然后将其拾取并出售的方式，每根{{tr|Torch}}可以赚得 {{coin|10}}。然而，当游戏进行到玩家可以很从容地去{{tr|Underworld}}做这些事的阶段时，就已经有了其他更有利可图的赚钱手段了；参见[[指南:赚钱]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 99 提升至 9999。
+** 现在在使用时会给予一个{{tr|achievement}}。
+** 现在也能转换[[{{tr|Campfires}}]]。
+** 现在会在[[{{tr|Glowing Mushroom biome}}]]中将{{tr|Torches}}转化为[[{{tr|Mushroom Torch}}]]。
+}}
+{{history|Desktop 1.4.0.5|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+{{language info|en=Torch God's Favor}}

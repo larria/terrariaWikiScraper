@@ -1,0 +1,65 @@
+{{item infobox | boxwidth = 22em
+| auto = 164
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 15 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.0.1|small=y}} /<br/> {{ut|12}} {{eicons|1.4.0.1|invert=y|small=y}}
+| sell = @@@@ {{eicons|1.4.0.1|small=y}} /<br/> {{gc|1}} {{eicons|1.4.0.1|invert=y|small=y}}
+| listcat = guns
+| tags = bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Handgun (demo).gif|thumb|358px|{{tr|Handgun}}的动画。]]
+
+'''{{tr|Handgun}}'''是一把[[{{tr|pre-Hardmode}}]]的[[{{tr|gun}}]]，能够以相当快的速度发射[[{{tr|bullets}}]]，但不能[[{{tr|Autoswing}}|{{tr|autofire}}]]。它在{{tr|damage}}和射速上都强于[[{{tr|Flintlock Pistol}}]]。{{tr|Handgun}}有{{chance|1/7}}几率从[[{{tr|Dungeon}}]]中的[[{{tr|Locked Gold Chest}}]]里获得，在{{eversions|Golden Lock Box}}中，还能通过打开从[[{{tr|Dungeon Crate}}]]或[[{{tr|Stockade Crate}}]]中获取的[[{{tr|Golden Lock Box}}]]获得。
+
+{{modifier|ranged}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Handgun|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Dungeon}}通常包含 1-2 把{{tr|Handguns}}。
+* [[Talk:{{tr|Gold Chest}}#地牢金箱几率|生成{{tr|dungeon chests}}的内部代码]]依其与{{tr|Dungeon}}入口的相对顺序将{{tr|chests}}填入不同的{{tr|items}}，而{{tr|Handgun}}则是列表的最后一件{{tr|item}}。因此，如果{{tr|dungeon}}有多于 9 或 10 个{{tr|chests}}，就总会有一个包含{{tr|Handgun}}。
+
+== 小贴士 ==
+* 推荐将其尽快升级为[[{{tr|Phoenix Blaster}}]]，因为它可以造成{{eicons|1.4.4.8}}4 / {{eicons|1.3.0.1|invert=y}} 7 点额外{{tr|damage}}，{{tr|velocity}}也增加了 3。
+* {{eicons|1.4.0.1|invert=y}} 由于[[{{tr|Hellstone}}]]可在击败任意 [[{{tr|Bosses}}]] 前获得（如果早早便获得了[[{{tr|Reaver Shark}}]]），因此很容易就可以升级到{{tr|Phoenix Blaster}}。
+
+== 花絮 ==
+* {{tr|The Handgun}}的外形是按照 {{wikipedia|M1911|M1911 手枪}}绘制的。
+* {{guns sharing names}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 17 提升至 26。
+** {{tr|Use time}}由 10 提升至 15。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Use Time}}由 12 降低至 10。
+** {{tr|Sell price}}由 {{gc|1}} 提升至 {{coin|1gc 75sc}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Damage}}由 15 提升至 17。}}
+{{history|Desktop 1.2|
+** {{tr|Sprite updated.}}旧的外观是 [[File:Handgun (pre-1.2).png|35px]]。
+** {{tr|Damage}}由 14 提升至 15。}}
+{{history|Desktop 1.0.6|{{tr|Damage}}由 13 提升至 14。}}
+{{history|Desktop 1.0.5|开火动画缩减了大小。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Damage}}由 15 提升至 17。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Damage}}由 15 提升至 17。（{{icon|ps4}}）}}
+{{history|Console 1.02|
+** {{tr|Sprite updated.}}
+** {{tr|Damage}}由 14 提升至 15。}}
+{{history|Console-Release|Introduced=y|带着{{tr|desktop}} 1.0.6 的属性、图像、外观引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|
+** {{tr|Sprite updated.}}
+** {{tr|Damage}}由 14 提升至 15。}}
+{{history|Mobile-Release|Introduced=y|带着{{tr|desktop}} 1.0.6 的属性、图像、外观引入。}}
+{{history|3DS-Release|Introduced=y|带着{{tr|desktop}} 1.2 的属性、图像、和外观引入。}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-ranged = yes
+}}
+
+{{language info|en=Handgun}}

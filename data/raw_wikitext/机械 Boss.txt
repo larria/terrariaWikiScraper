@@ -1,0 +1,113 @@
+{{tocright}}
+{{main|{{tr|Bosses}}}}
+
+术语“'''{{tr|Mechanical Bosses}}'''”指三个[[{{tr|Hardmode}}]]中可以召唤的 [[{{tr|boss}}]]：[[{{tr|The Destroyer}}]]、[[{{tr|The Twins}}]]和[[{{tr|Skeletron Prime}}]]。它们被统称为该术语的原因为它们共有部分特性：它们可以使用“机械”物品召唤，外观上是钢铁化、机械化的，且很像{{tr|pre-Hardmode}}的 {{tr|boss}}：[[{{tr|Eater of Worlds}}]]、[[{{tr|Eye of Cthulhu}}]]和[[{{tr|Skeletron}}]]的机械版本。此外，在摧毁了第一个[[{{tr|Altar}}|{{tr|Demon Altar}}/{{tr|Crimson Altar}}]]后，它们有 {{chance|1/10}} 的几率在[[{{tr|dusk}}]]生成，且在至少被击败一次前都会继续随机生成。
+
+{{tr|mechanical bosses}} 的召唤物品可以使用[[{{tr|Hardmode Anvils}}|{{tr|Mythril}}或{{tr|Orichalcum Anvil}}]]制作。它们也会由所有{{tr|Hardmode}}下的[[{{tr|enemies}}]]（除了[[{{tr|statue}}]]生成的{{tr|enemies}}和[[{{tr|Meteor Head}}]]）以 {{chance|1/2500}} 的几率掉落，直到其相对应的 {{tr|boss}} 被击败。
+
+首次击败''任意''一个{{tr|mechanical boss}} 会导致以下事件发生：
+* [[{{tr|Steampunker}}]]将会入住（如果有可用空闲[[{{tr|house}}]]）。
+* [[{{tr|Truffle}}]]会开始售卖[[{{tr|Mushroom Spear}}]]和[[{{tr|Hammush}}]]。
+* [[{{tr|Solar Eclipse}}]]将能自然发生。
+* [[{{tr|Red Devil}}]]和[[{{tr|Lava Bat}}]]会在[[{{tr|Underworld}}]]中生成。
+* {{eil|Yelets}}会从[[{{tr|Jungle}}]]{{tr|biome}}中的任何{{tr|enemies}}掉落。
+* {{eicons|1.3.0.1}} [[{{tr|Life Fruit}}]]会开始在[[{{tr|Underground Jungle}}]]生长（在{{eversions|1.3.0.1|invert=y}}中，{{tr|Life Fruit}}会在{{tr|Hardmode}}开始后就开始生长；在击败一个{{tr|mechanical boss}} 后生长频率会加快）。
+* [[{{tr|Traveling Merchant}}]]会开始售卖{{eil|Code 2}}。
+* {{eil|Old One's Army}}会升级到{{tr|Tier 2}}，波次增加到 7 个（然而[[{{tr|Betsy}}]]或[[{{tr|Etherian Lightning Bug}}]]直到[[{{tr|Golem}}]]被击败才会生成）。
+* {{eicons|1.4.0.1}} [[{{tr|Moss Hornet}}]]和[[{{tr|Moth}}]]会开始掉落[[{{tr|Tattered Bee Wing}}]]和[[{{tr|Butterfly Dust}}]]。
+* {{eicons|1.2.3|invert=y}} [[{{tr|Plantera's Bulb}}]]开始在{{tr|Underground Jungle}}中生长，使得[[{{tr|Plantera}}]]可被召唤。
+
+击败所有三个{{tr|mechanical boss}} 会导致以下事件发生：
+* 出现[[{{tr|status message}}]]''“{{gameText|LegacyMisc.32}}”''。
+* {{eicons|1.2.3}} [[{{tr|Plantera's Bulb}}]]开始在{{tr|Underground Jungle}}中生长。
+* {{eicons|1.3.0.1}} [[{{tr|Reaper}}]]会在{{tr|Solar Eclipses}}中生成。
+* {{eicons|1.4.4}} [[{{tr|Traveling Merchant}}]]会开始出售[[{{tr|Pulse Bow}}]]。
+
+
+{| class="terraria lined"
+! colspan=2 | {{tr|Boss}}
+! 生成讯息
+! colspan=2 | {{tr|Summoning item}}
+! 掉落的{{tr|soul type}}
+|-
+| {{item|mode=table|class=block aligncenter textleft boldname|The Destroyer|size=80px}}
+| ''“{{gameText|LegacyMisc.28}}”''
+| {{item|mode=table|class=block aligncenter textleft|Mechanical Worm}}
+| {{item|Soul of Might}}
+|-
+| {{item|mode=table|class=block aligncenter textleft boldname|The Twins|size=50px}}
+| ''“{{gameText|LegacyMisc.29}}”''
+| {{item|mode=table|class=block aligncenter textleft|Mechanical Eye}}
+| {{item|Soul of Sight}}
+|-
+| {{item|mode=table|class=block aligncenter textleft boldname|Skeletron Prime|size=25px}}
+| ''“{{gameText|LegacyMisc.30}}”''
+| {{item|mode=table|class=block aligncenter textleft|Mechanical Skull}}
+| {{item|Soul of Fright}}
+|}
+
+== 制作 ==
+=== 召唤物品配方 ===
+{{recipes|result=Mechanical Worm/Mechanical Eye/Mechanical Skull|expectedrows=4}}
+
+== 备注 ==
+<!-- Note: This section is transcluded on the three mechanical bosses' pages. -->
+* 自然生成时，{{tr|mechanical boss}}会在{{tr|status message}}出现后 81 游戏内分钟后（在{{time|8:51 PM}}）生成。在那一刻时处于比[[{{tr|Surface}}]]低的{{tr|layer}}，或者（在{{tr|singleplayer}}中）在这一生成时段退出世界会阻止 {{tr|boss}} 生成。
+* 由于在{{tr|dusk}}时自然生成的几率为 {{chance|1/10}}，每个{{tr|mechanical boss}} 自然生成的几率为 {{chance|1/30}}。在击败其中一个后，剩余的两个自然生成的几率分别为 {{chance|1/20}}，击败第二个后，最后那个自然生成的几率即为 {{chance|1/10}}。
+* [[{{tr|Eye of Cthulhu}}]]的自然生成会覆盖{{tr|Mechanical Boss}} 的自然生成。{{source code ref|v=1.4.3.6|method=Terraria.Main.UpdateTime}}
+* {{eil|Lantern Night}}的发生会阻止{{tr|Mechanical Boss}} 自然生成。不过，使用召唤物品召唤{{tr|Mechanical Boss}} 会取消{{tr|Lantern Night}}，和其他 {{tr|Boss}} 召唤物一样。
+* 如果从另一个世界带来召唤物品，就可以在[[{{tr|pre-Hardmode}}]]召唤{{tr|mechanical boss}}。然而，如果[[{{tr|Wall of Flesh}}]]未被击败，[[{{tr|Plantera's Bulb}}]]就不会生成。
+
+== 成就 ==
+{{achievement|name=Buckets of Bolts}}
+{{achievement|name=Mecha Mayhem}}
+{{achievement|name=Back for Second}}
+
+== 小贴士 ==
+* 为了获取[[{{tr|Hardmode ores}}]]，并不需要摧毁[[{{tr|Altars}}]]从而导致需要承受{{tr|mechanical boss}} 意外地生成的风险。可以通过开启[[{{tr|crates}}]]来获得{{tr|Hardmode ores}}和{{tr|bars}}。在 {{eil|1.4.0.1}} 中，{{tr|pre-Hardmode}}获取的{{tr|crates}}无法开出{{tr|Hardmode}}战利品。
+* 在{{eversions|Lepus}}中，玩家可以在[[{{tr|Underworld}}]]的[[{{tr|Shadow Chest}}]]中找到[[{{tr|Drax}}]]，这允许玩家在击败任何{{tr|mechanical boss}} 之前获得[[{{tr|Turtle armor}}]]，使得击败{{tr|mechanical boss}} 更加容易。
+* 在{{eversions|1.3.0.1|invert=y}}中，可以在击败一个{{tr|mechanical boss}} 后获得[[{{tr|Terra Blade}}]]。要注意的是需要从[[{{tr|Solar Eclipse}}]]中获得三把[[{{tr|Broken Hero Sword}}]]（而非一把）。
+* 只要对应的{{tr|mechanical boss}} 未被击败，就可以在有大量{{tr|enemies}}生成的[[{{tr|events}}]]中刷取召唤物品，例如[[{{tr|Pirate Invasion}}]]或[[{{tr|Goblin Army}}]]。
+
+== 花絮 ==
+* 所有{{tr|mechanical bosses}} 都能够发射红色的{{tr|Death Laser}}：{{tr|Destroyer}}的体节、第二阶段的{{tr|Retinazer}}和{{tr|Prime Laser}}。
+* 它们是仅有的{{eil|Expert}}独有物品是[[{{tr|crafting materials}}]]的 [[{{tr|bosses}}]]。
+* {{lore|{{tr|mechanical bosses}}很可能是[[{{tr|Cthulhu}}]]的身体部分，是由[[{{tr|Mechanic}}]]被强迫建造的。这解释了缺少[[{{tr|Brain of Cthulhu}}]]的机械对应物的原因，因为机械{{tr|Cthulhu}}缺少大脑，{{tr|Mechanic}}没能完成它。}}
+
+== 另见 ==
+* {{eil|Mechdusa}}
+
+== 历史 ==
+{{dablink|参看每个{{tr|Mechanical Boss}}的页面以获取更多详细改动。}}
+{{history|Desktop 1.4.4|现在[[{{tr|Pulse Bow}}]]在击败所有{{tr|mechanical bosses}} 后出售。}}
+{{history|Desktop 1.3.0.1|
+** [[{{tr|Life Fruit}}]]现在在击败一个{{tr|mechanical boss}} 后生成。
+** 现在在[[{{tr|Expert Mode}}]]下掉落{{tr|Mechanical Cart}}部件。}}
+{{history|Desktop 1.2.4|修复了“{{gameText|LegacyMisc.32}}”信息会在所有三个{{tr|mechanical bosses}} 都被击败前出现的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|不再在其它 {{tr|boss}} 存活时自然生成。但仍然能手动生成多个 {{tr|boss}}。}}
+{{history|Desktop 1.2.3|
+** 难度略微增加。
+** [[{{tr|Plantera's Bulb}}]]现在只会在击败所有{{tr|mechanical bosses}}后生成。
+** [[{{tr|Mushroom Spear}}]]和[[{{tr|Hammush}}]]现在只会在击败任意一个{{tr|mechanical boss}} 后售卖。}}
+{{history|Desktop 1.2.1.1|不再会在[[{{tr|Pumpkin Moon}}]]期间生成。}}
+{{history|Desktop 1.2.1|{{tr|Hardmode}}下{{tr|mechanical boss}} 的{{tr|summoning item}}掉落几率降低。}}
+{{history|Desktop 1.2.0.3|
+** {{tr|Hardmode}}{{tr|Crimson}}、{{tr|Corruption}}和{{tr|Hallow}}的蔓延速度现在会在击败{{tr|Plantera}}后减缓，而不是任意一个{{tr|mechanical boss}} 后。
+** 略微增加了[[{{tr|Solar Eclipse}}]]发生的几率，但它现在只会在击败任意一个{{tr|mechanical boss}} 后发生。}}
+{{history|Desktop 1.2|现在有 {{chance|1/10}} 的几率在{{tr|dusk}}生成，直到首次被击败。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile 1.1.5822|启用并解锁了所有[[{{tr|Hardmode}}]]内容。}}
+{{history|Mobile 1.1.8|添加了[[{{tr|Hardmode}}]]内容，但无法获取。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+
+[[Category:Boss NPC|*]]
+
+{{language info|en=Mechanical bosses}}

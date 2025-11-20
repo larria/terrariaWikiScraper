@@ -1,0 +1,125 @@
+{{exclusive|1.4.0.1}}
+{{infobox wrapper|
+{{npc infobox
+| name = Fairies
+| imagealt = [[File:Blue Fairy.png|link=]]&ensp;[[File:Green Fairy.png|link=]]&ensp;[[File:Pink Fairy.png|link=]]
+| type = Critter
+| environment = Surface/Underground/Cavern
+| auto = 583
+| id = 583（粉），584（绿），585（蓝）
+| sound1 = Pixie.wav
+| soundcaption1 = 空闲
+| sound2 = Item 4.wav
+| soundcaption2 = 消隐
+| cargo = no
+}}
+{{item infobox
+| name = Fairies
+| imagealt = [[File:Blue Fairy.png|link=]]&ensp;[[File:Green Fairy.png|link=]]&ensp;[[File:Pink Fairy.png|link=]]
+| auto = 4068
+| id = 4068（粉），4069（绿），4070（蓝）
+| cargo = no
+}}
+}}<!--
+we need these infoboxes for cargo storage
+-->{{npc infobox/options|view=void}}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 583 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 584 }}<!--
+-->{{npc infobox | type = Critter | environment = Underground | auto = 585 }}<!--
+-->{{npc infobox/options|reset}}{{item infobox/options|view=void}}<!--
+-->{{item infobox | auto = 4068 }}<!--
+-->{{item infobox | auto = 4069 }}<!--
+-->{{item infobox | auto = 4070 }}<!--
+-->{{item infobox/options|reset}}
+{{distinguish|Fairy Bell|Fairy Boots|Fairy Wings|Pixie}}
+{{about|一类{{tr|critter}}|{{tr|the light pet}}|{{tr|Fairy Bell}}}}
+
+'''{{tr|Pink Fairy}}'''、'''{{tr|Green Fairy}}'''和'''{{tr|Blue Fairy}}'''是友好的[[{{tr|Critters}}]]。它们会带领玩家寻找有价值的宝藏，这包括[[{{tr|Life Crystals}}]]、[[{{tr|chests}}]]、[[{{tr|life fruits}}]]和[[{{tr|Ore}}|矿脉]]。它们会自然生成在{{tr|Underground layer}}的下半和{{tr|Cavern layer}}中。要通过这种方式生成{{tr|Fairies}}，世界上要至少存在在地表上一个[[{{tr|Fallen Log}}]]（参见[[{{tr|Fallen Log}}#备注|{{tr|Fallen Log}}§备注]]了解详细信息），否则它们不会自然生成。三种{{tr|Fairy}}的{{tr|variants}}的功能完全相同。
+
+在{{tr|Surface}}的[[{{tr|night}}]]，{{tr|Fairy}}也可以在{{tr|Fallen Logs}}处或通过[[{{tr|Trees}}#{{tr|Shaking}}|{{tr|Shaking}}]][[{{tr|Hallowed Tree}}]]生成，通过这种方式生成的{{tr|Fairy}}不会引导玩家发现宝藏，玩家接近时，它们会像{{tr|bird}}一样逃离玩家。和在{{tr|Underground}}生成的{{tr|Fairy}}不同，这样生成的{{tr|Fairy}}可以被[[{{tr|Bug Net}}]]捕捉，一旦被再次释放，它们就会像自然生成的{{tr|Fairy}}一样，试图引导玩家寻找宝藏。它们可以被制成动态的装饰性家具，即[[{{tr|Fairy Jars}}]]。制作后，其中的{{tr|fairies}}就不能再被释放，除非通过[[{{tr|Shimmer}}]]来分解这一{{tr|furniture item}}。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE % Fairy|expectedrows=3}}
+
+== 备注 ==
+* 在[[{{tr|Hardmode}}]]，{{tr|Fairies}}{{tr|Underground and Cavern}}{{tr|layer}}的生成几率降低。
+* 当{{tr|fairy}}在{{tr|Underground layer}}的下半部分和{{tr|Cavern layer}}自然生成或被人工释放时，它会飞往并跟随玩家。它不会受到任何[[{{tr|damage}}]]，可以穿过[[{{tr|blocks}}]]，并且不能被捕捉。
+** 只要它在宝藏（参见[[#可被探测的宝藏|下面]]）的一定范围内，它会在玩家周围快速地绕几圈，发出一段轻柔悦耳的声音，接着飞往宝藏的方向。它会和玩家保持一段特定的距离来鼓励玩家跟随它。一旦{{tr|fairy}}到达{{tr|loot}}的位置，它会在其周围快速地绕几圈，然后在一阵闪光中消失，并在消失前照亮周围的区域几秒钟。
+** {{tr|fairy}}最多会跟随玩家 5 分钟。到那时，即使它还在指引玩家找寻宝藏，它也会飞离屏幕并消失。{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_112_FairyCritter}}
+* 在 {{time|ticks=6480|day=n}} 和 {{time|ticks=25920|day=n}} 之间的每个游戏内分钟（现实世界的一秒），{{source code ref|v=1.4.3.6|method=Terraria.GameContent.Events.MysticLogFairiesEvent.IsAGoodTime}}{{tr|fairies}}有 {{chance|1/180}} 的几率在世界中随机一个{{tr|Fallen Log}}上方 3 {{tr|tile}}处生成，这一几率在[[{{tr|new moon}}]]和[[{{tr|full moon}}]]期间增加至 {{chance|1/60}}。{{source code ref|v=1.4.4.2|method=Terraria.GameContent.Events.MysticLogFairiesEvent.GetOneOverSpawnChance}}
+** 在 [[{{tr|Don't dig up}}]] {{tr|worlds}}中，它们可以在晚上（{{time|7:30 PM}} 至 {{time|4:30 AM}}）生成。
+** {{tr|Fairies}}在{{tr|Fallen Log}}处以 1-3 个为一组生成，且有 {{chance|1/7}} 的几率再额外生成一个。{{source code ref|name=tryspawning|v=1.4.4.2|method=Terraria.GameContent.Events.MysticLogFairiesEvent.TrySpawningFairies}}
+** 每个{{tr|night}}，{{tr|fairy}}只能在{{tr|Fallen Log}}处生成一次。<ref name="tryspawning"/>
+** 如果随机选中的{{tr|Fallen Log}}在任何玩家的屏幕上，{{tr|Fairies}}就无法在那里生成。它们也无法在下[[{{tr|rain}}]]时，[[{{tr|Moon Lord}}]]正在生成时，或下列任意{{tr|events}}发生时生成：[[{{tr|Blood Moon}}]]、[[{{tr|Frost Legion}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Goblin Army}}]]、[[{{tr|Martian Madness}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Pumpkin Moon}}]]。<ref name="tryspawning"/>
+* 在[[{{tr|Shaking}}]]{{tr|Hallow tree}}时有 1.39% 的概率生成一只{{tr|Fairy}}。通过这种方式，{{tr|fairy}}可以在世界上所有{{tr|Fallen Logs}}都被摧毁的情况下生成。
+* 如果有{{tr|fairy}}在玩家附近，就会降低[[{{tr|NPC spawning}}|{{tr|enemy}}生成率]]。这一降低效果和[[{{tr|Sunflower}}]]的[[{{tr|Happy!}}]]相同（且能互相叠加）。{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}
+* {{tr|fairy}}有可能引导玩家寻找位于世界边界外的宝藏，即使玩家不能看到或碰到上述的宝藏。
+* 在 [[Celebrationmk10]] 世界中，{{tr|fairies}}有 {{chance|5/6}} 的几率是{{tr|Pink Fairy}}，且{{tr|Cavern layer}}中{{tr|fairies}}的生成率更高。
+
+=== 探测宝藏 ===
+{{tr|Fairies}}会以它们自身为中心寻找 150×100 的矩形范围内的宝藏。{{source code ref|v=1.4.3.6|method=Terraria.NPC.GetFairyTreasureCoords}} 它们会探测以下{{tr|item}}：{{source code ref|v=1.4.3.6|field=Terraria.ID.TileID.Sets&#46;FriendlyFairyCanLureTo}} 
+{{options/set|item|icons=n}}
+{{itemlist|class=terraria|width=11em
+|{{item|Chest|s}}
+|{{item|Dead Man's Chest}}
+|{{item|Gold Ore}}
+|{{item|Platinum Ore}}
+|{{item|Cobalt Ore}}
+|{{item|Palladium Ore}}
+|{{item|Mythril Ore}}
+|{{item|Orichalcum Ore}}
+|{{item|Adamantite Ore}}
+|{{item|Titanium Ore}}
+|{{item|Chlorophyte Ore}}
+|{{item|Life Crystal|image=Life Crystal (placed).png}}
+|{{item|Life Fruit}}
+|{{item|Strange Plant|s|image=Strange Plant (purple).png}}
+}}{{options/reset|item}}
+
+* {{tr|Ores}}仅在 7×7 的范围内有 40 块同样的才会被考虑。{{source code ref|name=treasurecoords|v=1.4.3.6|method=Terraria.NPC.GetFairyTreasureCoords}}
+*如果附近有多个宝藏，{{tr|fairies}}会遵循和[[{{tr|Metal Detector}}]]完全相同的顺序来决定最有价值的一个。<ref name="treasurecoords"/>
+
+== 成就 ==
+{{achievement|name=Hey! Listen!}}
+
+== 小贴士 ==
+* 释放被捕捉的{{tr|fairy}}可以定位世界上任意位置的宝藏，而不仅仅是{{tr|surface}}之下的宝藏。 
+* {{tr|Metal Detector}}和{{tr|fairies}}配合得很好，它可以告诉玩家被指引的宝藏是什么。
+* 当{{tr|fairy}}带你找到一个[[{{tr|Gold Chest}}]]时，请检查四周，寻找[[{{tr|Traps}}]]，因为这可能是个[[{{tr|Dead Man's Chest}}]]。
+* 挖掉任何开启过的{{tr|chests}}会很有用，因为开启过的{{tr|chests}}也会被{{tr|fairies}}定位，因此有可能会浪费掉{{tr|fairy}}的一次寻宝。
+* 由于{{tr|Fallen Logs}}能让{{tr|fairies}}生成，因此不建议摧毁它。
+* 在[[{{tr|Journey Mode}}]]中，冻结时间会阻止{{tr|fairies}}在{{tr|Fallen Logs}}处生成。为了让{{tr|fairy}}在{{tr|Fallen Logs}}处生成，最好将时间流速设为 24 倍并不断跳过天数，直到{{tr|new moon}}或{{tr|full moon}}的{{tr|night}}。
+
+== 花絮 ==
+* 这些较小的{{tr|fairies}}很像[[{{tr|Fairy Bell}}]]召唤的{{tr|light pet}}的缩小版本。
+* 与[[{{tr|Pixie}}]]及{{tr|Fairy light pet}}相似，{{tr|the fairy critters}}也参考了奇幻动作冒险类电脑游戏{{维基百科|b=y|The Legend of Zelda}}系列中的[https://zeldawiki.wiki/Fairy {{tr|Fairies}}]。
+** 其{{tr|tooltip}}以及{{tr|Achievement}}“{{itemTooltip|4068}}（Hey! Listen!）”是{{维基百科|b=y|The Legend of Zelda: Ocarina of Time|t=塞尔达传说：时之笛}}中仙灵[https://zeldawiki.wiki/Navi 娜薇（Navi）]的话语。
+** 能够在{{tr|Fallen Log}}旁找到{{tr|fairy}}的机制致敬了{{维基百科|b=y|The Legend of Zelda: Majora's Mask|t=塞尔达传说：魔吉拉的面具}}；其中“[https://zeldawiki.wiki/wiki/Skull_Kid 骷髅小子“Skull Kid”]”在他于{{tr|Fallen Log}}中避难时遇到了他的仙灵妲多和特尔。
+{{bestiary|Pink Fairy|alias={{tr|Fairies}}}}
+
+== 图库 ==
+<gallery>
+File:Fairy Goes Poof.png|在带领玩家找到宝藏后，{{tr|Fairies}}在一阵闪光中消失。
+File:Fairies playing.png|在{{tr|surface}}的{{tr|Fallen Log}}附近的{{tr|Fairies}}。
+</gallery>
+
+== 另见 ==
+* {{item|Pixie}}
+* {{item|Empress of Light|scale=0.1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|[[{{tr|Hardmode}}]]下的生成几率降低了 2/5。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Fairies}}

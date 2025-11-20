@@ -1,0 +1,52 @@
+{{exclusive|Martian Madness}}
+{{item infobox
+| auto = 2797
+| sound1 = Item 96.wav
+| soundcaption1 = 冒泡泡
+| idprojectile = 444
+| tags = hardmode / drop
+| listcat = Guns / Scope
+}}
+{{drop infobox|style=clear:right}}
+[[File:Xenopopper (demo).gif|right|framed||运作中的{{tr|The Xenopopper}}。注意{{tr|the projectiles}}朝着{{tr|cursor}}方向移动。]]
+
+'''{{tr|Xenopopper}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|gun}}]]，用[[{{tr|bullet}}]]作为[[{{tr|ammunition}}]]，但发射是一开始是一小团同时出现的四到五个“泡泡”。泡泡自身不会造成任何伤害并且会在[[{{tr|block}}|{{tr|solid block}}]]上反弹。它们会在短暂的延迟后破裂，射出{{tr|bullets}}（每个{{tr|bubble}}一发），汇聚在光标的位置。每次发射只消耗一发{{tr|bullet}}但会产生四到五发{{tr|projectiles}}。
+
+{{tr|{{tr|The Xenopopper}}有 {{chance|1/6}} 几率掉落自[[{{tr|Martian Madness}}]][[{{tr|event}}]]期间的[[{{tr|Martian Saucer}}]]。}}
+
+{{modifier|ranged}}
+
+== 备注 ==
+* {{tr|The Xenopopper}}每次发射平均会射出 {{#vardefineecho:avg_bubbles|4.25}} 个{{tr|bubbles}}。{{source code ref|v=1.4.2|method=Terraria.Player.ItemCheck_Shoot}}这意味着，不考虑{{tr|modifiers}}，它每秒能发射略高于 {{#expr:60/{{iteminfo|Xenopopper|useTime}}*{{#var:avg_bubbles}} round 0}} 发{{tr|bullets}}，这相当于[[{{tr|use time}}]]是 {{#expr:{{iteminfo|Xenopopper|useTime}}/{{#var:avg_bubbles}} round 0}}。此外，发射的{{tr|bullets}}中有 {{percent|1-1/{{#var:avg_bubbles}} round 3}} 不会消耗{{tr|ammo}}。这使其整体属性上能与[[{{tr|Vortex Beater}}]]媲美。
+
+== 小贴士 ==
+* {{tr|The Xenopopper}}可以视为[[{{tr|shotgun}}]]类{{tr|guns}}的一种变体。在这种情况下，其增加的精确度是以发射延迟为代价的。这使得它可能更适合单体目标而非群体控制，这取决于玩家的瞄准技能。
+* 如果试图控制大群{{tr|enemies}}，不要直接用鼠标瞄着群体（一次只会命中一两个{{tr|enemies}}），应当将鼠标瞄准更远处以增加命中更多{{tr|enemies}}的几率。
+* 在泡泡破裂时，{{tr|Bullets}}只会瞄准光标的位置。结果，如果玩家在移动时瞄准身后，则在{{tr|bullet}}实际射击时光标有可能出现在玩家和泡泡之间，从而使得射击朝向玩家而非目标。这可以通过在移动时将光标尽量远离玩家来规避。
+** 持续使用[[{{tr|Rifle Scope}}]]可以持续增加玩家和屏幕边缘之间的距离，让此策略更加简单。
+* {{tr|The Xenopopper}}在[[{{tr|Lunar Events}}]]中很有用，因为[[{{tr|Celestial Pillars}}]]个头很大且不会移动，这使得它们很容易瞄准。
+* 如果仔细瞄准，{{tr|Xenopopper}}的{{tr|the bubbles}}可以透过 1 格宽的墙发射，使得这把{{tr|gun}}可以从掩体内发射。这要求枪口要紧挨着（但不能进入）墙。
+* 用[[{{tr|Chlorophyte Bullet}}]]配合{{tr|the Xenopopper}}能让玩家有快速消灭大群{{tr|enemies}}的能力，因为{{tr|Chlorophyte Bullets}}天生有自动追踪能力。
+
+== 花絮 ==
+* 前缀“{{wiktionary|xeno-}}”（此武器的英文原名是 Xenopopper）意思是“外来的”、“起源不同的”，经常用来表示与外星人有关。
+* 泡泡可以激活红和绿[[{{tr|Pressure Plate}}]]。
+* {{tr|The Xenopopper}}的功能与 2004 年的类银河战士恶魔城平台冒险游戏{{wikipedia|lang=en|Cave Story|《洞窟物语（Cave Story）》}}中满级的 [https://cavestory.fandom.com/wiki/Bubbline Bubbline/Bubbler] 极为相似。
+
+== 历史 ==
+{{history|Desktop 1.3.4.4|修正了无法检测{{tr|ammo}}的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-ranged = yes
+}}
+
+{{language info|en=Xenopopper}}

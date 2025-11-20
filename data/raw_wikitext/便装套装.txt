@@ -1,0 +1,61 @@
+{{item infobox
+| type = Vanity / Set
+| tags = vendor / vendor:Clothier
+}}
+
+'''{{tr|Familiar set}}'''是一套[[{{tr|vanity items}}]]，可显示玩家的[[{{tr|Character styles}}|{{tr|default clothes}}]]。它由'''{{tr|Familiar Wig}}'''、'''{{tr|Familiar Shirt}}'''和'''{{tr|Familiar Pants}}'''组成，可以用 {{setinfo|Familiar set|buy}} 购买自[[{{tr|{{tr|Clothier}}}}]]。
+
+当{{tr|Familiar set}}中的一件被装备在[[{{tr|Inventory}}#{{tr|Vanity_Armor}}|{{tr|vanity armor slot}}]]中时，它会取消任何穿戴于相应{{tr|armor slot}}中的任何{{tr|item}}的外观。也就是说，{{tr|the Familiar Wig}}会显示{{tr|character}}的[[{{tr|hairstyle}}]]，而{{tr|the Familiar Shirt and Familiar Pants}}则会分别显示出{{tr|character}}的{{tr|default shirt and pants}}。
+
+和所有{{tr|vanity items}}一样，{{tr|the Familiar set}}不提供除外观外的任何好处。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| auto = 271
+| tags = vendor / vendor:Clothier
+}}
+|{{item infobox
+| auto = 269
+| tags = vendor / vendor:Clothier
+}}
+|{{item infobox
+| auto = 270
+| tags = vendor / vendor:Clothier
+}}
+}}
+{{-}}
+
+== 备注 ==
+* [[{{tr|Dressers}}]]可用于更改{{tr|the character}}的{{tr|default clothes}}{{tr|colors}}，进而可以改变{{tr|Familiar set}}的外观。
+* {{eicons|1.3.0.1|invert=y}} 尽管[[{{tr|Invisibility Potion}}]]正常情况下无法隐藏{{tr|armor}}，而穿着一整套{{tr|the Familiar set}}可以完全隐藏玩家的{{tr|armor}}。然而，[[{{tr|enemies}}]]的行为不受此影响，仍会攻击玩家。
+* {{tr|The Familiar set}}无法被放置在[[{{tr|Mannequin}}]]、{{eil|Womannequin|s}}或{{eil|Hat Rack|s}}上，这很有可能是因为角色外观在[[{{tr|multiplayer}}]]中会发生冲突。
+* {{tr|The Familiar Shirt}}和{{tr|Pants}}不受[[{{tr|dyes}}]]影响，包括[[{{tr|Dyes|link=y}}#{{tr|Strange Dyes}}|{{tr|Strange Plant}}任务奖励的{{tr|dyes}}]]。
+* {{tr|The Familiar set}}不会保存其被购买时的性别或[[{{tr|character style}}]]。使用风格 2 的女性{{tr|player}}购买的{{tr|Familiar Shirt}}在使用风格 1 的女性{{tr|player}}身上并不会呈现为风格 2 的{{tr|Familiar Shirt}}，由使用风格 1 的女性角色购买的{{tr|Familiar Pants}}在使用风格 1 的男性角色身上也不会呈现为女性{{tr|Familiar Pants}}的样子。
+* {{tr|Familiar set items}}的{{tr|inventory sprites}}代表着{{tr|character}}的{{tr|default clothes}}。
+
+== 小贴士 ==
+* 穿戴{{tr|Familiar Wig}}时，{{tr|player}}会保持{{tr|hairstyle}}和购买自[[{{tr|Stylist}}]]的[[{{tr|Hair Dye}}]]可见。
+* {{tr|The Familiar Wig}}可用于穿戴特定的[[{{tr|accessories}}]]作为基本头部装备{{tr|item}}。例如，[[{{tr|Obsidian Skull}}]]通常会被其他头部装备隐藏，但{{tr|Familiar Wig}}会使其可见。
+* {{tr|The Familiar set}}可用在{{tr|multiplayer}}中，以假装成没有装备的新手玩家。
+** 这对于迷惑另一支队伍来说很有用。
+
+== 历史 ==
+{{history|Desktop 1.3.0.4|修复了{{tr|Familiar Wig}}需要{{tr|hair dye}}才能正常应用普通{{tr|dyes}}的问题。}}
+{{history|Desktop 1.2.3.1|修复了穿戴{{tr|Familiar Wig}}会使头发消失的问题。}}
+{{history|Desktop 1.2.1|
+** 女性版本的{{tr|Familiar set}}从 [[File:Familiar set female (pre-1.2.1).png]] 更改为 [[File:Familiar set female.png]]。
+** 男性版本的{{tr|Familiar set}}从 [[File:Familiar set (pre-1.2.1).png]] 更改为 [[File:Familiar set.png]]。{{verify|这是根据女性便装套装改动的时间做出的假设，可能有误。是否在 1.2.1 做出更新？前后有无另外的改动？}}}}
+{{history|Desktop 1.2|{{tr|Female Familiar Shirt}}略微改动。}}
+{{history|Desktop 1.1|添加了{{tr|female Familiar Shirt}}。}}
+{{history|Desktop 1.0.5|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Equipables
+| show-vanity = yes
+}}
+
+{{language info|en=Familiar set}}

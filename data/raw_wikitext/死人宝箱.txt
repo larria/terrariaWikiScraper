@@ -1,0 +1,58 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| type = Furniture / Storage / Mechanism
+| auto = 3988
+| tags = plunder
+}}
+{{dablink|不要与[[{{tr|Dead Man's Sweater}}]]，一件在{{tr|Dead Man's Chest}}中找到的{{tr|vanity}}混淆。}}
+[[File:Dead Man's Chest trap.png|thumb|right|用[[{{tr|Dangersense Potion}}]]高亮显示{{tr|The Dead Man's Chest}}附近的{{tr|traps}}。]]
+
+'''{{tr|Dead Man's Chest}}'''是一种自然生成的[[{{tr|Gold Chest}}]]，它被连接到多个[[{{tr|traps}}]]，意图杀死打开{{tr|chest}}的玩家。{{tr|traps}}通常包含 3-5 个[[{{tr|Boulder trap}}]]，2-6 个[[{{tr|Dart Trap}}]]和 0-3 个[[{{tr|Explosives}}]]，在{{tr|Cavern}}深处的{{tr|lava}}{{tr|layer}}还可能包含 1-2 个[[{{tr|Geyser}}]]。{{tr|Boulder traps}}布置在{{tr|chest}}上方，而{{tr|Dart Traps}}水平放置，{{tr|explosives}}隐藏在下方。
+
+{{tr|Dead Man's Chests}}总是会单独生成，且从不会在[[{{tr|Underground Cabin}}]]中生成（在 {{eil|no traps|s}} 中，死人宝箱可以生成在{{tr|Underground Cabin}}中）。
+
+{{tr|The Dead Man's Chest}}会基于其位置包含[[{{tr|Gold Chest}}]]的各种战利品，同时还有 {{chance|1/3}} 几率包含[[{{tr|Dead Man's Sweater}}]]。
+
+== 战利品 ==
+{{loot|title=@secondary
+| Dead Man's Sweater|1|1/3
+}}
+
+== 备注 ==
+* 连接到{{tr|Dead Man's Chest}}的{{tr|The Boulder traps}}使用的是[[{{tr|Actuator}}]]而不是[[{{tr|Active Stone Block}}]]。
+* {{tr|The Dead Man's Chest}}的功能类似于[[{{tr|Trapped Chest}}]]，它能向连接的[[{{tr|wire}}]]发出信号。然而，它们有两处不同，一处为{{tr|Dead Man's Chest}}拥有{{tr|storage slots}}，另一处为{{tr|Dead Man's Chest}}可以在世界中自然生成。
+* {{tr|The Dead Man's Chest}}在开启或（使用{{key|use}}）关闭时发出信号。
+* [[{{tr|Fairies}}]]会将玩家引向{{tr|Dead Man's Chest}}。
+* 即使{{tr|chest}}被重命名过，也仍然能获得{{tr|The achievement}}。
+* [[{{tr|Autopause}}]]开启时，人物打开{{tr|The Dead Man's Chest}}会立即受到来自{{tr|Explosives}}的爆炸伤害。若在爆炸中幸存，便可获取{{tr|chest}}中物品。其他所有{{tr|traps}}仅会在玩家关闭宝箱及{{tr|Inventory}}后触发。
+* 尝试使用[[{{tr|Block Swap}}]]来将{{tr|Dead Man's Chest}}换成{{tr|chests}}仍然''会''触发{{tr|traps}}。
+
+== 成就 ==
+{{achievement|name=Dead Men Tell No Tales}}
+
+== 小贴士 ==
+* 虽然{{tr|traps}}结合起来甚至对于拥有游戏末期装备的玩家是致命的，它们中的大部分都可以通过使用{{tr|solid blocks}}阻挡的方式来无效化，而[[{{tr|explosives}}]]可以被采掘。
+* {{tr|The Dead Man's Chest}}''不会''被[[{{tr|Dangersense Potion}}]]高亮显示，但其附近的{{tr|Explosives}}、{{tr|Dart Traps}}、{{tr|Boulder traps}}、和{{tr|Geysers}}会被标记出来。
+* 使用[[{{tr|Mechanical Lens}}]]或[[{{tr|The Grand Design}}]]可以简单地将{{tr|chest}}附近的所有{{tr|traps}}暴露出来，并收集大量的[[{{tr|wire}}]]和[[{{tr|actuator}}]]。
+* 最容易将{{tr|Dead Man's Chest}}暴露的是其上方的{{tr|Boulder traps}}，因为它们占地较大，且比 1×1 {{tr|tile}}大小的{{tr|Dart Traps}}与隐藏的{{tr|explosives}}相对更容易发现。
+* 由于它们只拥有{{tr|Gold Chests}}的外观，其它{{tr|biome}}中的{{tr|chests}}（如[[{{tr|Frozen Chest}}]]）总是可以放心开启。
+
+== 花絮 ==
+* “{{tr|Dead Man's Chest}}（Dead Man's Chest）”这一词出自罗伯特·路易斯·史蒂文森（Robert Louis Stevenson）的冒险小说《金银岛（Treasure Island）》中的一首海盗歌谣。其歌词为“Fifteen men on a Dead Man's Chest, yo ho ho and a bottle of rum”。
+** 这一词也被用作《加勒比海盗（Pirates of the Caribbean）》系列的一部电影标题。
+* {{tr|The achievements}}描述直接参考了《侏罗纪公园（Jurassic Park）》的一句台词，其中伊安·马尔科姆博士（Dr. Ian Malcolm）说“Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should（你们科学家总是想着自己能不能做到，而从来不去想应不应该做）”。
+* {{tr|Dead Man's Chest}}在大世界中更难发现，因为其生成数量仅随世界宽度线性增长（[[{{tr|World size}}|小世界]]中为 10–20 个，[[{{tr|World size}}|中世界]]中为 15–31 个，[[{{tr|World size}}|大世界]]中为 20–40 个）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 99 提升至 9999。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Traps}}
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Dead Man's Chest}}

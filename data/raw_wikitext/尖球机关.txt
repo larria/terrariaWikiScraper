@@ -1,0 +1,77 @@
+{{item infobox
+| auto = 1148
+| pickreq = 210% {{eicons|1.4.0.1|small=y}}
+| type = Block / Mechanism
+| width = 1 | height = 1
+| tags = hardmode / plunder
+| idprojectile = 185
+}}
+
+'''{{tr|Spiky Ball Trap}}'''是一个[[{{tr|trap}}]]，可以在[[{{tr|Jungle Temple}}]]中天然生成，也罕见地在{{tr|Jungle Temple}}的{{tr|door}}外出现。被激活时，它会放出能弹跳数次的橘色的{{tr|spiky balls}}。它在两次激活间有 {{eicons|1.3.0.1}} 5 / {{eicons|1.3.0.1|invert=y}} 4 秒的冷却。{{tr|The spiky balls}}对玩家造成 80 / {{expert|160}} / {{master|240}} 伤害（对 [[{{tr|NPCs}}]]、[[{{tr|enemies}}]]、和[[{{tr|critters}}]]造成 40 伤害）。{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle / Terraria.Projectile.Damage}}
+
+{{eicons|1.3.1}} 可以用[[{{tr|hammer}}]]将{{tr|Spiky Ball Traps}}旋转 90°。<!--{{eicons|1.3.0.5}}-->同时可生成的{{tr|spiky balls}}的总量是有限的，见[[#生成限制|下方]]获取细节。
+
+{{eicons|1.4.0.1|invert=y}} 和[[{{tr|Lihzahrd Brick}}]]不同，打破{{tr|Spiky Ball Traps}}''不''需要[[{{tr|Picksaw}}]]。
+
+== 备注 ==
+* {{tr|The Spiky Ball Trap}}可以穿过紧邻其前方的单个{{tr|block}}发射。
+* {{tr|Spiky balls}}只能在{{tr|solid blocks}}上弹跳，无法在{{tr|platforms}}上弹跳。
+
+=== 生成限制 ===
+{{exclusive|1.3.0.5|section=y}}
+在{{tr|the trap}}生成{{tr|a spiky ball}}前，游戏会加总{{tr|world}}中每个{{tr|spiky ball}}的“效果”，这些“效果”是基于{{tr|trap}}中心到{{tr|the spiky ball}}的中心的距离（以像素计，每个{{tr|tile}}为 16×16 像素大小）。每个{{tr|A spiky ball}}的“影响”为：{{source code ref|v=1.4.4.9|method=Terraria.Wiring.HitWireSingle}}
+
+{| class="terraria sortable align-center"
+! 效果
+! 距离（像素）
+|-
+| 50 || 0–50
+|-
+| 15 || 50–100
+|-
+| 10 || 100–200
+|-
+| 8 || 200–300
+|-
+| 6 || 300–400
+|-
+| 5 || 400–500
+|-
+| 4 || 500–700
+|-
+| 3 || 700–900
+|-
+| 2 || 900–1200
+|-
+| 1 || >1200
+|}
+
+若“效果”的总和小于 200，则可以生成新的{{tr|spiky ball}}。
+
+== 小贴士 ==
+* {{tr|Spiky Ball Traps}}可以有效地防御家园，尤其是配合仅由{{tr|enemy}}触发的[[{{tr|Pressure Plate}}]]使用时。
+* 虽然不如[[{{tr|Spear Trap}}]]那么有效，{{tr|Spiky Ball Traps}}在刷怪时仍然很有效。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Stack limit}}由 999 提升至 9999。}}
+{{history|Desktop 1.4.0.5|在击败[[{{tr|Golem}}]]前，{{tr|Spiky Ball Traps}}不再能用[[{{tr|Explosives (class)}}]]摧毁。}}
+{{history|Desktop 1.4.0.1|现在需要[[{{tr|Picksaw}}]]或更好的{{tr|pickaxe}}来挖掘。}}
+{{history|Desktop 1.3.1|
+** {{tr|Sprite updated}}。旧的{{tr|sprite}}是：[[File:Spiky Ball Trap (placed) (old).png]]
+** 现在每次{{tr|hammer}}击可将其旋转 90 度。}}
+{{history|Desktop 1.3.0.1|冷却时间由 4 秒提升至 5 秒。}}
+{{history|Desktop 1.2.3|穿戴[[{{tr|Frost Armor}}]]不再让{{tr|Spiky Ball Traps}}造成[[{{tr|Frostburn}}]]{{tr|debuffs}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Wiring}}
+{{Master Template Tiles}}
+
+{{language info|en=Spiky Ball Trap}}

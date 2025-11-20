@@ -1,0 +1,57 @@
+{{item infobox
+| auto = 854
+| tags = hardmode / drop
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Discount Card}}'''是一件稀有的[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，装备时 [[{{tr|NPC}}]] 所售卖的物品价格都会降低 {{chance|1/5}}，且打折效果同样适用于[[{{tr|Reforge}}]]。它有 {{eicons|1.4.4}} {{chance|1/1000}} / {{eicons|1.4.4|invert=y}} {{chance|1/2000}} 的几率由[[{{tr|Pirate Invasion}}]]中的{{tr|pirates}}掉落（[[{{tr|Parrot}}]]除外），有 {{eicons|1.4.4}} {{chance|1/250}} / {{eicons|1.4.4|invert=y}} {{chance|1/500}} 的几率由[[{{tr|Pirate Captain}}]]掉落。它还有 {{eicons|1.4.4}} {{chance|1/15}} / {{eicons|1.4.4|invert=y}} {{chance|1/100}} 的几率由{{eil|Flying Dutchman}}掉落。
+
+只有在和 NPC 对话''之前''装备上{{tr|Discount Card}}，才会触发打折效果。 
+
+{{tr|Discount Card}}''不会''影响的价格：
+* 售卖的价格（将商品卖给 NPC 时）。
+* 售卖后回购的价格（例如：卖出[[{{tr|Titan Glove}}]]的价格是 {{gc|2}} 时，回购时仍收回 {{gc|2}}）。
+* [[{{tr|Tavernkeep}}]]所卖的使用[[{{tr|Defender Medal}}]]的大部分商品，例如[[{{tr|Summon weapons}}#{{tr|Tavernkeep's sentries}}|{{tr|sentry}}{{tr|summon weapons}}]]。
+* [[{{tr|Nurse}}]]治疗所需费用。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Discount Card|expectedrows=1}}
+=== 用于 ===
+{{recipes|ingredient=Discount Card|expectedrows=2}}
+
+== 备注 ==
+* 这个物品相当稀有，平均需要打 16-17 次[[{{tr|Pirate Invasion}}]]才会掉落。
+* {{tr|Discount Card}}的 20% 打折效果与[[{{tr|Greedy Ring}}]]的另外 20% 不能叠加。
+* {{eicons|1.4.0.5|invert=y}} 在 NPC 的商店界面卸下{{tr|Discount Card}}并不会取消优惠，直至商店界面被关闭。但这并不适用于[[{{tr|Reforge}}]]：卸下{{tr|Discount Card}}或其升级物会立刻影响重铸价格。
+** 在{{eversions|1.4.0.5}}中，当 {{tr|NPC}} 窗口开启时，无法装上或卸下这件{{tr|accessory}}。
+* {{tr|Discount Card}}的效果可以与{{eil|Happiness|NPC happiness}}的效果相乘，这有效地使得玩家可以在购买物品时最多得到 40% 的折扣。{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawInventory}}
+* 在 {{eil|Celebrationmk10}} {{tr|worlds}}中，在打败了{{tr|Pirate Invasion}}之后，可以从[[{{tr|{{tr|Princess}}}}]]处以以 {{iteminfo|Discount Card|buy}} 购买{{tr|the Discount Card}}。
+
+== 小贴士 ==
+* 从[[{{tr|Flying Dutchman}}]]而非普通海盗处刷取[[{{tr|Lucky Coin}}]]/{{tr|Discount Card}}/[[{{tr|Gold Ring}}]]最为高效。在事件进程达到 50% 后，通过离地面足够高（通过使用小{{tr|platform or flying mount}}），每次事件都必定可以刷出 10 个{{tr|Flying Dutchman}}，但不要太高，如此一来生成的敌怪就会进入 [[NPC 消失|“活跃区域”]]，并在 12.5 {{tr|seconds}}后消失，并重新生成。直到{{tr|Flying Dutchman}}最终（通常需要花点时间）生成。这种情况下唯一能够到你的敌怪是{{tr|Parrot}}，后者并不会被算在事件进程中，可以安全的击杀。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 掉落几率翻倍。由{{tr|Pirate Captains}}掉落的几率同样翻倍。
+** {{tr|Flying Dutchman}}掉落该{{tr|item}}的几率大大增加，提高到 1/15。}}
+{{history|Desktop 1.4.2.3|现在在 Celebrationmk10 {{tr|worlds}}中可以购买自{{tr|the Princess}}。}}
+{{history|Desktop 1.4.0.5|修复了{{tr|player}}交易时卸下{{tr|Discount Card}}但价格不变的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|
+** 现在用于制作[[{{tr|Greedy Ring}}]]。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=Discount Card}}

@@ -1,0 +1,303 @@
+{{npc infobox | tabs=y | boxwidth = 18em
+| auto = 17
+| idprojectile = 48
+| type = NPC
+| environment = Valid house/Surface/Forest
+| damage = {{modes|12|18|21}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ItemName.ThrowingKnife}}}}
+| imageother = Map Icon Merchant.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+[[File:Merchant walking.gif|thumb|{{tr|Merchant}}正在行走。]]
+[[File:Merchant Walk.gif|frame|{{tr|Merchant}}的行走和交谈动画。]]
+{{about|通过拥有{{sc|50}}或更多而解锁的游戏早期 NPC |偶尔带着随机货品栏暂时前来的 NPC |{{tr|Traveling Merchant}}|[[{{tr|Underground}}]]的{{tr|skeleton}}状 {{tr|NPC}}|{{tr|Skeleton Merchant}}}}
+
+'''{{tr|Merchant}}'''是个商贩 [[{{tr|NPC}}]]，一旦以下条件全部满足就会出现：
+
+* 有一间空的[[{{tr|House}}]]。
+* 所有玩家的[[{{tr|inventory}}]]中有超过 {{sc|50}}。存放在[[{{tr|chests}}]]或是诸如[[{{tr|Piggy Bank}}]]等[[{{tr|portable storage}}]]中的{{tr|Coins}}不算入此要求。 
+
+在{{eversions|1.4.4}}中，这些要求仅适用于初始生成。如果{{tr|Merchant}}被杀死，他过一段时间会自动重生。
+
+在{{eversions|1.4.4|invert=y}}中，如果{{tr|Merchant}}被杀，他只会在以上条件再次满足时才会重生。
+
+在{{eversions|1.3.0.1}}中，{{tr|the Merchant}}会向附近的{{tr|enemies}}扔[[{{tr|Throwing Knife}}|{{tr|Throwing Knives}}]]来自卫，这在游戏开始时会造成 12 / {{expert|18}} / {{master|21}} 伤害，而随着玩家进程推进他会得到[[{{tr|NPCs}}#{{tr|Stat Boosts}}|各种属性提升]]。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Mining Helmet|value={{iteminfo|Mining Helmet|buy}} {{eicons|1.3.0.1|3DS=y}}<br/>{{gc|8}} {{eicons|1.3.0.1|3DS=n|invert=y}}}}
+|{{shop row|Piggy Bank}}
+|{{shop row|Iron Anvil}}
+|{{shop row|Bug Net|value={{iteminfo|Bug Net|buy}} {{eicons|1.3.0.1}}<br/>{{gc|1}} {{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Copper Pickaxe}}
+|{{shop row|Copper Axe}}
+|{{shop row|Torch}}
+|{{shop row|Lesser Healing Potion}}
+|{{shop row|Healing Potion|{{eicons|1.4.4}} 在{{tr|Hardmode}}}}
+|{{shop row|Lesser Mana Potion}}
+|{{shop row|Mana Potion|{{eicons|1.4.4}} 在{{tr|Hardmode}}}}
+|{{shop row|Wooden Arrow}}
+|{{shop row|Shuriken}}
+|{{shop row|Rope}}
+|{{shop row|Marshmallow|当在[[{{tr|Snow biome}}]]中与其说话时。}}
+|{{shop row|Furnace|当在[[{{tr|Jungle}}]]中与其对话时。{{eicons|1.4.0.1}}}}
+|{{shop row|Pin Wheel|在[[{{tr|Windy Day}}]]时。}}
+|{{shop row|Throwing Knife|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Glowstick|在{{tr|night}}期间。}}
+|{{shop row|Sharpening Station|在[[{{tr|Hardmode}}]]中 {{eicons|1.4.1}}。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+|{{shop row|Safe|当[[{{tr|Skeletron}}]]已被打败时。}}
+|{{shop row|Disco Ball|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Flare|当玩家的{{tr|inventory}}中带有[[{{tr|Flare Gun}}]]时。}}
+|{{shop row|Blue Flare|当玩家的{{tr|inventory}}中带有[[{{tr|Flare Gun}}]]时。}}
+|{{shop row|Sickle|一直有货。{{eicons|1.3.0.1}}<br/>在[[{{tr|Halloween}}]]期间。{{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Gold Dust|当[[{{tr|Wall of Flesh}}]]已被打败时。}}
+|{{shop row|Drum Set|当打败了[[{{tr|Eater of Worlds}}]]、[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Skeletron}}]]、或[[{{tr|Wall of Flesh}}]]之后。}}
+|{{shop row|Drumstick| 当打败了[[{{tr|Eater of Worlds}}]]、[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Skeletron}}]]、或[[{{tr|Wall of Flesh}}]]之后。}}
+|{{shop row|Nail|当玩家拥有{{eil|Nail Gun}}时。}}
+|{{shop row|Valentine Ring|value={{gc|1}}|[[{{tr|Valentine's Day}}]]期间。}}
+|{{shop row|Wiesnbräu|value={{coin|9|95}}|[[{{tr|Oktoberfest}}]]期间。}}
+|{{shop row|Turkey feather|value={{gc|10}}|[[{{tr|Thanksgiving}}]]期间。}}
+|{{shop row|Heart Arrow|value={{cc|50}}| [[{{tr|Valentine's Day}}]]期间。}}
+|{{shop row|Festive top hat|value={{gc|1}}| [[{{tr|Christmas}}]]期间。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态 {{eicons|Shimmer}} ==
+{{float file box|[[File:Merchant (Shimmered).png]] [[File:Map Icon Merchant (Shimmered).png]]|{{tr|Shimmer}}转化后的{{tr|Merchant}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|Merchant}}会变形为他的{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将他再次浸没在{{tr|Shimmer}}中的方式来将他变回经典外观。
+{{-}}
+== 小贴士 ==
+* {{tr|The Merchant}}会出售如[[{{tr|Piggy Bank}}]]或[[{{tr|Bug Net}}]]等有用物品，它们在整个游戏过程中经常能派上用场。
+* {{tr|The Merchant}}的话语“{{gameText|LegacyDialog.3}}”可以用来判断是否满足[[{{tr|Eye of Cthulhu}}]]自然生成的要求。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+'''早晨：'''
+*“{{gameText|LegacyDialog.4}}”
+*“{{gameText|LegacyDialog.5}}”
+*“{{gameText|LegacyDialog.6}}”
+
+'''下午：'''
+*“{{gameText|LegacyDialog.10}}”
+*“{{gameText|LegacyDialog.11}}”
+*“{{gameText|LegacyDialog.12}}”
+
+'''晚上：'''
+*“{{gameText|LegacyDialog.7}}”
+*“{{gameText|LegacyDialog.8}}”
+* “{{gameText|LegacyDialog.9|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+
+'''夜晚开始时：'''
+*“{{gameText|LegacyDialog.18}}”
+* “{{gameText|LegacyDialog.19|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+
+'''午夜：'''
+*“{{gameText|LegacyDialog.22}}”
+*“{{gameText|LegacyDialog.23}}”
+*“{{gameText|LegacyDialog.24}}”
+
+'''夜晚结束时：'''
+*“{{gameText|LegacyDialog.20}}”
+*“{{gameText|LegacyDialog.21}}”
+
+'''[[{{tr|Blood Moon}}]]：'''
+*“{{gameText|LegacyDialog.14}}”
+* “{{gameText|LegacyDialog.15|x_PlayerName=&lt;{{tr|player}}的名字&gt;}}”
+*“{{gameText|LegacyDialog.16}}”
+* “{{gameText|LegacyDialog.17}}”
+
+: '''[[{{tr|Nurse}}]]和[[{{tr|Mechanic}}]]存在时：'''
+:* “{{gameText|LegacyDialog.13|x_Mechanic=&lt;{{tr|[[Mechanic]]}}的名字&gt;|x_Nurse=&lt;{{tr|[[Nurse]]}}的名字&gt;}}”
+
+'''当[[{{tr|Eye of Cthulhu}}]]尚未被打败时：'''{{source code ref|v=1.4.3.6|method=Terraria.NPC.GetChat}}
+
+: '''当{{tr|The player}}的{{tr|max health}}少于 200：'''
+*“{{gameText|LegacyDialog.1}}”
+
+: '''当{{tr|The player}}的{{tr|defense}}高于 10：'''
+*“{{gameText|LegacyDialog.2}}”
+
+: '''当{{tr|Eye of Cthulhu}}自然生成的条件满足时：'''
+* “{{gameText|LegacyDialog.3}}”
+
+'''{{eil|Party}}期间：'''
+*“{{gameText|MerchantSpecialText.Party}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|MerchantSpecialText.Rain1}}”
+* “{{gameText|MerchantSpecialText.Rain2}}”
+
+'''[[{{tr|thunderstorm}}]]期间：'''
+* “{{gameText|MerchantSpecialText.Storm1}}”
+* “{{gameText|MerchantSpecialText.Storm2}}”
+
+''' {{eil|Windy Day}}期间：'''
+* “{{gameText|MerchantSpecialText.Windy1}}”
+* “{{gameText|MerchantSpecialText.Windy2}}”
+
+'''{{eicons|1.4.0.1}} 当在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|MerchantSpecialText.Graveyard1}}”
+* “{{gameText|MerchantSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== 快乐话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Merchant.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Merchant.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Merchant.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Merchant.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Merchant.HateCrowded}}”
+
+'''当在[[{{tr|Forest}}]]中时：'''
+* “{{gameText|TownNPCMood_Merchant.LikeBiome|x_BiomeName={{tr|Forest}}}}”
+
+'''当在[[{{tr|Desert}}]]中时：'''
+* “{{gameText|TownNPCMood_Merchant.DislikeBiome|x_BiomeName={{tr|the Desert}}}}。”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Merchant.HateBiome|x_BiomeName=&lt;{{tr|the Corruption}}/{{tr|the Crimson}}/{{tr|Dungeon}}&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Merchant.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''当在[[{{tr|Golfer}}]]附近时：'''
+* “{{gameText|TownNPCMood_Merchant.LikeNPC|x_NPCName=&lt;{{tr|Golfer}}的名字&gt;}}”
+
+'''当在[[{{tr|Nurse}}]]附近时：'''
+* “{{gameText|TownNPCMood_Merchant.LikeNPC|x_NPCName={{tr|the Nurse}}&lt;名字&gt;}}”
+
+'''当在[[{{tr|Tax Collector}}]]附近时：'''
+* “{{gameText|TownNPCMood_Merchant.DislikeNPC|x_NPCName=&lt;{{tr|Tax Collector}}的名字&gt;}}”
+
+'''当在[[{{tr|Angler}}]]附近时：'''
+* “{{gameText|TownNPCMood_Merchant.HateNPC|x_NPCName={{tr|the Angler}}&lt;名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Merchant.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Merchant}}在{{tr|Jungle}}会出售[[{{tr|Furnace}}]]是因为在 [[Not the bees]] {{tr|World Seed}}中没有制作{{tr|Furnace}}所需的[[{{tr|Stone Block}}]]。
+* {{tr|The Merchant}}在{{tr|Blood Moon}}无法读出“Cthulhu（克苏鲁）”，这引用了这么个事实：{{tr|Cthulhu}}的创造者美国作家{{wikipedia|H. P. Lovecraft|{{tr|H.P. Lovecraft}}}}想让这个名字无法发音读出。然而{{tr|The Merchant}}在另一句话语（“{{gameText|LegacyDialog.1}}”）里却能正确的发音出这个名字。
+* 在夜晚开始时，{{tr|the Merchant}}可能会说“{{gameText|LegacyDialog.18}}”，但“要么买，要么死”翻译成{{wikipedia|Klingon language|克林贡语}}实际上应该是<code>vay' Daje'be'chugh vaj bIHegh</code>。“Kosh, kapleck Mog”在克林贡语中毫无意义。
+* {{tr|The Merchant}}描绘于名叫《{{tr|The Merchant}}》和《{{tr|Father of Someone}}》的[[{{tr|paintings}}]]中。
+** 因为出现在《{{tr|Father of Someone}}》中，所以他似乎有后代。
+** 也有可能是在致敬{{wikipedia|The Son of Man|《人类之子（The Son of Man）》}}这副作品的命名格式。
+* 在极少数情况下，{{tr|the Merchant}}和[[{{tr|Clothier}}]]会共用名字“Alfred”或“Edmund”。
+* {{tr|The Merchant}}的话语“{{gameText|LegacyDialog.1}}”也被另一个 NPC 所使用，即不可生成的 {{eil|Mc MoneyPants}}。
+* 他有一些话语提到了他并不售卖的东西，例如盔甲和雨伞。另外，虽然他声称在海外卖的很贵，但他却不会出钱买下[[{{tr|dirt block}}]]。
+* 他那关于购买 99 支{{tr|torches}}的对话所指的是在 {{eil|1.4.0.1}} 更新之前，[[{{tr|Torch}}]]只能堆叠到 99。
+* 其话语：“{{gameText|TownNPCMood_Merchant.LikeNPC|x_NPCName={{tr|the Nurse/Golfer}}&lt;的名字&gt;}}”可能引用了历史文化中的刻板印象，{{wikipedia|Blond|金发}}常作为地位高权人物的描绘形象。而{{wikipedia|Golf|{{tr|Golf}}}}在过去被称为“贵族运动”。
+* 虽然{{tr|the Merchant}}因为[[{{tr|Golfer}}]]有钱而喜欢他，但{{tr|the Golfer}}却由于其贪婪行为而不喜欢{{tr|the Merchant}}。
+** 这可能是因为商人在推销上有宰客的行为，这在他的多个话语上有所体现：“{{gameText|LegacyDialog.24}}”。
+* 尽管{{tr|Merchant}}称“{{gameText|LegacyDialog.8}}”和“{{gameText|LegacyDialog.10}}”，他并不会为{{tr|Dirt Block}}付钱。
+** 这也可能参考了沙盒游戏{{wikipedia|Minecraft|Minecraft（我的世界）}}，它的 Logo 是一个长草的土块。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在在{{tr|Hardmode}}会出售[[{{tr|Healing Potion}}]]和[[{{tr|Mana Potion}}]]。
+** 现在死亡的 {{tr|NPCs}} 会自由重生，无视首次生成它们时需满足的独特条件。}}
+{{history|Desktop 1.4.1|现在在[[{{tr|Hardmode}}]]中会出现[[{{tr|Sharpening Station}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 现在拥有 {{tr|NPC}} 快乐度，喜欢生活在{{tr|the Forest}}中。
+** 现在当符合条件并且位于正确的{{tr|biomes}}时，会以 {{gc|10}} 的价格出售任何{{tr|Pylon}}。
+** 现在在{{tr|the Jungle biome}}中时出售[[{{tr|Furnace}}]]。
+** 现在在{{tr|a Windy Day}}会出售{{tr|the Pin Wheel}}。
+** 现在出售{{tr|the Drum Set}}和{{tr|Drumstick}}。
+** 不再出售[[{{tr|Tax Collector's set}}]]。
+** 现在有几率名为“Kristian”。
+** 可能的名字中移除了“Finn”。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated.}}
+** 现在出售[[{{tr|Nail}}]]和{{tr|Tax Collector's set}}。
+** [[{{tr|Sickle}}]]的价格由{{gc|1}}降至{{sc|60}}，且现在全年有售。
+** [[{{tr|Mining Helmet}}]]的价格从{{gc|8}}降至{{gc|4}}。
+** [[{{tr|Bug Net}}]]的价格从{{gc|1}}降至{{sc|25}}。
+** [[{{tr|Shuriken}}]]的价格由{{cc|20}}降至{{cc|15}}。
+** [[{{tr|Lesser Mana Potion}}]]的价格由{{sc|2}}降至{{sc|1}}。}}
+{{history|Desktop 1.2.4.1|修正{{tr|Merchant}}名字中的一个拼写错误（Isacc 现在是 Isaac）。}}
+{{history|Desktop 1.2.3|
+** 现在出售[[{{tr|Bug Net}}]]。
+** 现在一直出售[[{{tr|Lesser Mana Potion}}]]（没有{{tr|base mana}}要求）。
+** 修正当玩家拥有超过 21000{{pc}} 后{{tr|Merchant}}不会生成的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.1|现在正确地在[[{{tr|Halloween}}]]期间出售[[{{tr|Sickle}}]]。}}
+{{history|Desktop 1.2.1|现在在{{tr|Halloween}}期间会出售{{tr|the Sickle}}。但是，由于一个 {{tr|bug}}，并未能正确出售。}}
+{{history|Desktop 1.2.0.3|不能再通过{{tr|Merchant}}复制物品。}}
+{{history|Desktop 1.2|
+** 现在出售[[{{tr|Rope}}]]、[[{{tr|Marshmallow}}]]、[[{{tr|Flare}}]]、和[[{{tr|Gold Dust}}]]。
+** [[{{tr|Safe}}]]的价格由{{gc|50}}降至{{gc|20}}。
+** [[{{tr|Lesser Mana Potion}}]]的价格由{{sc|1}}升至{{sc|2}}。}}
+{{history|Desktop 1.1|
+** 现在在他生成时会随机赋予名字。他的死亡会用其名字报告。其他 [[{{tr|NPC}}]] 也会在他们各自的对话中使用此名字。
+** 激活[[{{tr|hardmode}}]]后会出售[[{{tr|Disco Ball}}]]。
+** [[{{tr|Lesser Mana Potion}}]]的价格由{{sc|10}}降至{{sc|1}}。
+** 在{{tr|multiplayer}}中不再会生成第二个和第三个{{tr|Merchants}}。}}
+{{history|Desktop 1.0.6|
+** 现在出售[[{{tr|Safe}}]]。
+** [[{{tr|Glowstick}}]]的价格由{{cc|20}}降至{{cc|10}}。}}
+{{history|Desktop 1.0.5|
+** 现在出售[[{{tr|Lesser Mana Potion}}]]（要求 200 {{tr|base mana}}）、[[{{tr|Glowstick}}]]、和[[{{tr|Throwing Knives}}]]。
+** 商品的选择变为取决于一天中的时间和[[事件]]。}}
+{{history|Desktop 1.0.3|和其他 {{tr|NPCs}} 一样，现在可被{{tr|enemies}}杀死。}}
+{{history|Desktop-Release|
+** {{tr|Introduced.}}
+** 出售[[{{tr|Mining Helmet}}]]、[[{{tr|Piggy Bank}}]]、[[{{tr|Iron Anvil}}]]、[[{{tr|Copper Pickaxe}}]]、[[{{tr|Copper Axe}}]]、[[{{tr|Torch}}]]、[[{{tr|Lesser Healing Potion}}]]、[[{{tr|Wooden Arrow}}]]、[[{{tr|Shuriken}}]]。}}
+{{history|Console 1.09|不再自动从{{tr|Merchant}}购买第一件{{tr|item}}。}}
+{{history|Console 1.08|向{{tr|merchant}}购物时现在可以看到您的货币。}}
+{{history|Console 1.07|修正{{tr|Merchant}}名字中的一个拼写错误（Isacc 现在写作 Isaac）。}}
+{{history|Console 1.06|
+** 现在出售[[{{tr|Bug Net}}]]。
+** 现在一直出售[[{{tr|Lesser Mana Potion}}]]（没有{{tr|base mana}}要求）。
+** 修正当玩家拥有超过 21000{{pc}} 后{{tr|Merchant}}不会生成的 {{tr|bug}}。}}
+{{history|Console 1.05|现在出售{{tr|Disco Ball}}。}}
+{{history|Console 1.02|
+** 现在出售[[{{tr|Rope}}]]、[[{{tr|Marshmallow}}]]、[[{{tr|Flare}}]]、和[[{{tr|Gold Dust}}]]。
+** [[{{tr|Safe}}]]的价格由{{gc|50}}降至{{gc|20}}。
+** [[{{tr|Lesser Mana Potion}}]]的价格由{{sc|1}}升至{{sc|2}}。
+** 你不再能将{{tr|gold}}卖给 {{tr|NPCs}}。
+** 购买堆叠物品的速度有所提升。
+** 不能再通过{{tr|Merchant}}复制物品。
+** 现在在{{tr|Halloween}}期间会出售{{tr|Sickle}}了。}}
+{{history|Console-Release|{{tr|Introduced.}}{{tr|Disco Ball}}是无法获取的。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|
+** 现在出售[[{{tr|Bug Net}}]]。
+** 现在一直出售[[{{tr|Lesser Mana Potion}}]]（没有{{tr|base mana}}要求）。
+** 修正当玩家拥有超过 21000{{pc}} 后{{tr|Merchant}}不会生成的 {{tr|bug}}。
+** 修正{{tr|Merchant}}名字中的一个拼写错误（Isacc 现在写作 Isaac）。}}
+{{history|Mobile 1.2.6508|
+** 现在出售[[{{tr|Rope}}]]、[[{{tr|Marshmallow}}]]、[[{{tr|Flare}}]]、和[[{{tr|Gold Dust}}]]。
+** [[{{tr|Safe}}]]的价格由{{gc|50}}降至{{gc|20}}。
+** [[{{tr|Lesser Mana Potion}}]]的价格由{{sc|1}}升至{{sc|2}}。}}
+{{history|Mobile 1.1.6255|现在在[[{{tr|Thanksgiving}}]]期间出售[[{{tr|Turkey Feather}}]]。}}
+{{history|Mobile 1.1.5933|现在在[[{{tr|Oktoberfest}}]]期间出售[[{{tr|Wiesnbräu}}]]。}}
+{{history|Mobile 1.1.8|现在在[[{{tr|Valentine's Day}}]]期间出售[[{{tr|Heart Arrow}}]]和[[{{tr|Valentine Ring}}]]。}}
+{{history|Mobile-Release|
+** {{tr|Introduced.}}
+** 出售其他{{tr|items}}，不过具体哪个更新中开始出售这些物品尚未知。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Merchant}}

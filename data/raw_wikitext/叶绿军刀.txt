@@ -1,0 +1,56 @@
+{{item infobox | boxwidth = 22em
+| auto = 1227
+| damage = @@@@ {{eicons|1.4.1.2|small=y}} / 43 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.3.0.1|small=y}}<br/>{{ut|17}} {{eicons|1.3.0.1|invert=y|small=y}}
+| sound1 = MaxMana.wav
+| soundcaption1 = {{tr|projectile}}冷却结束{{eicons|1.4.4|invert=y|small=y}}
+| listcat = broadswords / projectile melee
+| hardmode = yes
+}}
+[[File:Chlorophyte Saber (demo).gif|framed|{{tr|The Chlorophyte Saber}}攻击[[{{tr|Target Dummies}}]]。注意{{tr|projectile}}是如何穿透{{tr|walls}}的。]]
+
+'''{{tr|Chlorophyte Saber}}'''是一把[[{{tr|Hardmode}}]]的[[{{tr|sword}}]]，可在挥舞时发射{{tr|Spore Cloud}}{{tr|projectile}}。它不消耗[[{{tr|ammo}}]]或[[{{tr|mana}}]]，发光，并造成{{eicons|1.4.4}} 70% / {{eicons|1.4.4|invert=y}} 100% {{tr|sword damage}}，但不造成[[{{tr|knockback}}]]，不受{{tr|gravity}}影响，可穿透无数个[[{{tr|enemy}}]]。{{tr|Chlorophyte Saber}}是可用[[{{tr|Chlorophyte Bar}}]]制作的两把{{tr|sword}}中略不强力但较快的那把（另一把是[[{{tr|Chlorophyte Claymore}}]]）。
+
+{{modifier|melee}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chlorophyte Saber|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Spore Cloud}}{{tr|projectile}}有大约 {{eicons|1.4.4}} {{duration|{{iteminfo|Chlorophyte Saber|useTime|raw=y}} ticks}} / {{eicons|1.4.4|invert=y}} {{duration|42 ticks}} 的冷却时间。
+** {{eicons|1.4.4|invert=y}} 在冷却时间内，{{tr|player}}不能切换{{tr|item}}，不能改变面对的方向，也不能应用[[{{tr|Auto Select}}]]，但玩家可以继续挥舞这把{{tr|sword}}。
+** {{eicons|1.4.4|invert=y}} 在{{tr|Spore Cloud}}充能完毕后，会有微弱的粒子效果和{{sound|[[Media:MaxMana.wav|{{tr|mana}}恢复声]]|MaxMana.wav|nofallback=y}}提醒玩家。
+* [[{{tr|Melee speed}}]]会对{{tr|Spore Cloud}}的速度产生影响，但不会改变其{{tr|cooldown}}时间。
+* {{tr|Spore Cloud}}会慢慢减速，变为半透明。它会在 {{duration|{{#expr:255/4}}<!-- alpha is incremented by 4 each tick, projectile is killed when alpha>255 --> ticks}}（对于基础{{tr|melee speed}}值而言），因此{{tr|range}}为 11.12 {{tr|tiles}}。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.AI}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Projectile}}冷却时间由 42 {{tr|frames}}降低至 28 {{tr|frames}}。
+** 不再使用{{tr|mana}}恢复时“滴答”的提示音表示{{tr|projectile}}可以发射。
+** {{tr|Projectile damage}}由 100% {{tr|base damage}}降低至 70%。
+** {{tr|Projectiles}}存留时间增加 50%。
+** {{tr|Projectiles}}现在使用静态{{tr|immunity frames}}。}}
+{{history|Desktop 1.4.1.2|{{tr|damage}}由 48 提升至 57。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|projectile}}的{{tr|sprites updated}}。
+** {{tr|projectile}}现在造成{{tr|melee damage}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Damage}}由 43 提升至 48。
+** {{tr|Use time}}由 17 减少至 16。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Chlorophyte}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Chlorophyte Saber}}

@@ -1,0 +1,235 @@
+《[[{{tr|Terraria}}]]》'''{{tr|server}}'''为{{tr|player}}提供了通过互联网及其他网络进行多人游戏的平台。《{{tr|Terraria}}》的 Windows 安装版自带服务器软件。若要在 Linux 上运行，就需要单独下载服务器文件（参见下载部分）。
+
+服务器也可以被用于独立的单人游戏玩法，这提供了按需求调整游戏内[[{{tr|time}}]]的功能。
+
+== 开服之前 ==
+{{tr|server}}默认运行在 7777 端口，对使用 NAT（网络地址转换）的用户（例如普通居民）来说，必须经过[http://portforward.com/ 端口转发]才能让别的{{tr|player}}加入。如果某种限制导致你不能配置端口转发，可以试试使用 VPN 服务作为代替，如 [https://secure.logmein.com/products/hamachi/download.aspx Hamachi] 或 [https://www.radmin-vpn.com/ Radmin VPN]（这种情况下每个{{tr|player}}都需要安装 VPN 客户端）。服务器默认的最大{{tr|player}}数是 8（在 [[1.4.0.1]] 中则为 16）名，可以在服务器开启状态下修改，也可以修改服务器配置文件（serverconfig.txt）。不使用 NAT 的用户（例如商业用户、或数据中心的用户）则无需端口转发，但需要让端口可以通过防火墙。
+
+如果在 AWS 或 GCP 等云端游玩，就需要打开 TCP 与 UDP 的 7777 端口，才能允许其他用户连接至服务器。
+
+== 公共服务器 ==
+{{tr|Servers}}可以在下面的{{tr|server}}列表中进行查找：
+{{server lists}}
+
+=== 加入服务器 ===
+玩家可以通过选择{{tr|main menu}}上的{{tr|Multiplayer}}来加入服务器。在此之后，玩家需要选择{{tr|character}}，然后输入{{tr|server}}的 IP 地址和端口号。
+
+通常不同的{{tr|servers}}对{{tr|player}}加入有不同的要求。一些{{tr|servers}}需要{{tr|player}}拥有[[{{tr|Softcore}}]]或[[{{tr|Mediumcore}}]]角色，还有的需要{{tr|player}}在加入游戏之前达到一定的等级。通常一个公共{{tr|servers}}会有 /register 和 /login 系统，这需要{{tr|player}}有一个名称独一无二的{{tr|character}}和密码。
+
+公众服务器通常由一群管理员或协调者来运营，他们制定规则。通常这些规则不允许使用模组、破解和仿冒他人等。某些服务器可以让{{tr|player}}使用{{tr|singleplayer character}}进行在线游戏，而不丢失{{tr|singleplayer}}的{{tr|inventory}}。
+
+最近游玩的{{tr|servers}}会保存在{{tr|Multiplayer}}的“{{gameText|LegacyMenu.146}}”中。
+
+== 开服方法（Windows） ==
+默认情况下，在 32 位的 Windows 系统中，TerrariaServer.exe 可以在目录 <code>%programfiles%\Steam\steamapps\common\terraria</code> 中找到。
+* 64 位的 Windows 系统中，TerrariaServer.exe 可以在目录 <code>%programfiles(x86)%\Steam\steamapps\common\terraria</code> 中找到。
+* 如果无法在上面的路径中找到，那么就需要打开 Steam，右键单击“库”中的{{tr|Terraria}}，然后点击 “Properties” > “LOCAL FILES” > “BROWSE LOCAL FILES...” 以便打开相应的文件夹。
+* 如果没有 Steam，请查找 <code>%programfiles(x86)%\terraria 或 %programfiles%\terraria</code>
+* 如果使用的是 GOG，那么需要查找 <code>GOG Games\terraria</code>
+{{tr|player}}可以通过选择{{tr|game menu}}上的{{tr|Multiplayer}}选项来加入{{tr|server}}。
+
+== 开服方法（Linux） ==
+=== 预先配置 ===
+我们首先需要运行安装{{tr|server}}所需的工具。它们可能已经预先安装在了你的系统的分发版本中。
+
+对于基于 Debian 的系统（Ubuntu），请运行：<code>sudo apt update && sudo apt install -y wget tmux unzip</code>
+
+对于基于 Arch 的系统（Manjaro），请运行：<code>sudo pacman -Sy wget tmux unzip</code>
+
+=== 启动服务器 ===
+{{#vardefine:most_recent_version|{{#replace:{{#dpl:category=Patches|ordermethod=title|order=descending|count=1|format=,%PAGE%,,}}|.|}}}}
+# 下载文件：<code>wget https://terraria.org/api/download/pc-dedicated-server/terraria-server-{{#var:most_recent_version}}.zip</code>。参见[[{{tr|Server}}#下载|下载]]部分以获取其他版本的链接。
+# 解压文件：<code>unzip terraria-server-{{#var:most_recent_version}}.zip</code>
+# 进入刚刚的解压目录：<code>cd {{#var:most_recent_version}}</code>
+# 进入 Linux 目录：<code>cd Linux</code>
+# 为服务器的二进制程序添加可执行权限：<code>chmod +x TerrariaServer.bin.x86*</code>
+# 打开{{tr|server}}。64 位的版本是 TerrariaServer.bin.x86_64，而 32 位的版本是 TerrariaServer.bin.x86: <code>./TerrariaServer.bin.x86_64</code>
+# 将{{tr|world}}文件放置以下目录中，以便服务器进行读取：<code>~/.local/share/Terraria/Worlds/</code>
+为了使服务器启动并且在后台运行，你可以使用类似于'''tmux'''或'''screen'''的程序。
+
+默认情况下TerrariaServer.exe 可以在这里找到：
+<code>~/GOG\ Games/Terraria/game/</code>
+
+使用Steam的情况下：
+<code>~/.steam/steam/steamapps/common/Terraria/</code>{{verify}}
+
+Linux 下的二进制文件被称为'''TerrariaServer.bin.x86_64''' （ 64位） 或'''TerrariaServer.bin.x86'''（32位）。
+
+{{tr|player}}可以通过选择主菜单上的多人模式来加入服务器。
+
+如果你想使用 screen 命令， 只需要开启'''screen'''：
+
+<code>screen</code> 
+
+然后现在启动服务器。按下Ctrl + a + d可以在退出screen的情况下使服务器保持运行。恢复会话可以使用以下命令：
+
+<code>screen -r</code>
+
+== 下载 ==
+官方的{{tr|Terraria}}服务器软件包含在{{tr|Terraria}}安装包中，你也可以单独下载：
+* [http://terraria.org/server/terraria-server-1333.zip Terraria Server 1.3.3.3]
+* [http://terraria.org/server/terraria-server-1344.zip Terraria Server 1.3.4.4]
+* [http://terraria.org/server/terraria-server-1353.zip Terraria Server 1.3.5.3]
+* [https://terraria.org/server/terraria-server-1401.zip Terraria Server 1.4.0.1]
+* [https://terraria.org/system/dedicated_servers/archives/000/000/036/original/terraria-server-1402.zip?1589675482 Terraria Server 1.4.0.2]
+* [https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631 Terraria Server 1.4.0.3]
+* [https://terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip?1590253816 Terraria Server 1.4.0.4]
+* [https://terraria.org/system/dedicated_servers/archives/000/000/039/original/terraria-server-1405.zip?1591301368 Terraria Server 1.4.0.5]
+* [https://www.terraria.org/system/dedicated_servers/archives/000/000/040/original/terraria-server-1410.zip Terraria Server 1.4.1]
+* [https://www.terraria.org/system/dedicated_servers/archives/000/000/041/original/terraria-server-1411.zip Terraria Server 1.4.1.1]
+* [https://terraria.org/system/dedicated_servers/archives/000/000/042/original/terraria-server-1412.zip Terraria Server 1.4.1.2]<!--
+-->{{#dpl:|category=补丁|titlegt=1.4.2.2|ordermethod=title|format=,\n* [https://terraria.org/api/download/pc-dedicated-server/terraria-server-²{#dplreplace:%PAGE%¦\.}².zip Terraria Server %PAGE%]}}
+
+Dedicated Server GUI是官方服务器的第三方插件，提供了图形化的控制（服务器只是一个命令行程序）：
+* [https://github.com/oiisamiio/TerrariaDedicatedServerGui/releases Dedicated Server GUI].
+
+[http://tshock.co/xf/ Tshock] 和 TDSM 是添加了附加功能的第三方软件，比如游戏内命令，白名单，用户密码，和一个用于添加特性的插件接口（比如工会）：
+* [https://github.com/NyxStudios/TShock/releases Tshock]
+* [https://github.com/DeathCradle/Terraria-s-Dedicated-Server-Mod TDSM]（已停止维护，最后支持版本1.3.2.1)
+
+== 服务器文件 ==
+服务器包括以下三个文件：
+
+* '''TerrariaServer.exe''' - 主服务器文件，可以独立运行。
+* '''serverconfig.txt''' - 服务器配置文件，定义了服务器的所有参数（下述）。
+* '''start-server.bat''' - 一个Windows命令行程序，使用'''serverconfig.txt'''，还包含了一个循环，方便服务器崩溃时重启。
+
+== 控制台命令列表 ==
+只要专用服务器运行，就可以使用以下的命令：
+
+* '''help''' -              显示命令列表。
+* '''playing''' -           显示{{tr|player}}列表。可以在游戏内聊天输入/player来使用。
+* '''clear''' -             清空控制台。
+* '''exit''' -              关闭并保存服务器。
+* '''exit-nosave''' -       关闭并不保存服务器。
+* '''save''' -              保存游戏世界。
+* '''kick <player>''' -     踢人。
+* '''ban <player>''' -      禁止一个{{tr|player}}进入服务器。
+* '''password''' -          显示密码。
+* '''password <pass>''' -   更改密码。
+* '''version''' -           显示版本号。
+* '''time''' -              显示游戏时间。
+* '''port''' -              显示监听的端口。
+* '''maxplayers''' -        显示最大{{tr|player}}数目。
+* '''say <words>''' -       向全体成员发送消息，他们会在聊天框中看到以黄色前缀'''<Server>'''开头的全体消息。
+* '''motd''' -              显示 MOTD。
+* '''motd <words>''' -      更改 MOTD。
+* '''dawn''' -              调整时间为黎明 (4:30 AM)。
+* '''noon''' -              调整时间为中午 (12:00 PM)。
+* '''dusk''' -              调整时间为黄昏 (7:30 PM)。
+* '''midnight''' -          调整时间为午夜 (12:00 AM)。
+* '''settle''' -            使所有水平衡。
+
+注意：命令中不需要以正斜杠 {{key|/}} 作为前置，因为一些命令接口需要。对于 Tshock 命令列表，参考[https://tshock.readme.io/docs/permissions 这个文档].
+
+== 命令行参数 ==
+下面是一个参数列表，可以在初次运行{{tr|Terraria}}服务器时输入：
+
+* '''-config <config file>''' - 指定配置文件（详见[[#serverconfig|服务器配置文件]]）。
+* '''-port <port number>''' - 指定需要监听的端口。
+* '''-players <number> / -maxplayers <number>''' - 设置最大{{tr|player}}数。
+* '''-pass <password> / -password <password>''' - 设置服务器密码。
+* '''-motd <text>''' - 设置第二天的格言。
+* '''-world <world file>''' - 加载世界并自动启动服务器。
+* '''-autocreate <#>''' - 如果没有在 -world 参数指定的路径找到世界，那么创建一个新世界。世界大小分为：1(小)，2(中)，3(大）。
+* '''-banlist <path>''' - 指定封禁名单文件的路径。默认情况下为工作路径下的 '''banlist.txt''' 文件。
+* '''-worldname <world name>''' - 当使用 -autocreate 参数时设定世界名称。
+* '''-secure''' - 为服务器添加增强型作弊保护。
+* '''-noupnp''' - 关闭通用即插即用(UPNP)。
+* '''-steam''' - 开启 '''Steam''' 支持。
+* '''-lobby <friends> or <private> ''' - 允许朋友加入服务器或设为私人服务器（开启 Steam 情况下）。
+
+<span id="serverconfig"></span>
+
+== 服务器配置文件 ==
+使用一个写入了上述参数的配置文件来自动开启专用服务器时可行的。配置文件必须通过 -config 参数进行调用。配置文件的名称可以自定义，但是必须位于 '''TerrariaServer.exe''' 的同一文件夹下。在服务器启动时，如果定义了配置文件但是没有被服务器定位到，服务器会要求用户输入参数，这样服务器可以启动而无需配置文件。
+
+下面是可用的配置文件命令表：
+
+* '''maxplayers=8''' - 设置服务器的最大{{tr|player}}数，数值必须介于1到255。
+* '''world=C:\Users\Defaults\My Documents\My Games\Terraria\Worlds\world1.wld''' - 加载一个世界并自动启动服务器。
+* '''port=7777''' - 设置端口号，
+* '''password=p@55w0rd*''' - 设置服务器密码。
+* '''motd=Please don’t cut the purple trees!''' - 设置当日的消息。
+* '''worldpath=C:\Users\Defaults\My Documents\My Games\Terraria\Worlds\''' - 设置世界文件的存储位置。
+* '''autocreate=3''' - 如果没有在 -world 参数指定的路径找到世界，那么创建一个新世界。世界大小分为：1(小)，2(中)，3(大）。
+* '''difficulty=0''' - 设置在使用 -autocreate 参数下的难度。可选项： 0(普通)，1(专家)。1.4版本难度分为0(普通), 1(专家), 2(大师), 3(旅途)
+* '''worldname=World''' - 当使用 -autocreate 参数时设定世界名称。
+* '''banlist=banlist.txt''' - 指定封禁名单文件的路径。默认情况下为工作路径下的'''banlist.txt'''文件。
+* '''secure=1''' - 为服务器添加增强型作弊保护。
+* '''language''' - 通过语言码设置服务器语言。
+**可用的语言码：
+**en/US = 英语
+**de/DE = 德语
+**it/IT = 意大利语
+**fr/FR = 法语
+**es/ES = 西班牙语
+**ru/RU = 俄语
+**zh/Hans = 中文
+**pt/BR = 葡萄牙语
+**pl/PL = 波兰语
+
+可以使用 (#) 进行注释。以#开始的行会被完全跳过。
+
+== Ban 和 un-ban ==
+命令 <code>ban <player></code> 可以禁止指定{{tr|player}}进入服务器。被禁止进入的{{tr|player}}尝试登录时，服务器会显示消息：“你在【时间端】内被禁止进入：【理由】-【操作人】”。可以通过修改'''banlist.txt'''文件来恢复{{tr|player}}进入。这个文件包含当前被禁止进入的{{tr|player}}列表。要恢复某个{{tr|player}}进入，在列表中删除{{tr|player}}姓名和 IP 即可。 
+
+== 系统需求 ==
+* Windows 操作系统
+* 500 MB 空闲内存（仅小世界，所需内存取决于世界大小和{{tr|player}}数量）
+* .NET Framework 4.0
+* XNA Framework
+
+{{tr|Terraria}}客户端内置了 .NET 和 XNA，在安装客户端就的同时可以安装这两个运行库。 
+
+== {{tr|Notes}} ==
+* 服务器偶尔会自动保存世界，但只有使用退出命令，服务器才能在关闭时保存世界。也就是说，请优先考虑手动保存世界，而不是关闭服务器。
+* 当你启动服务器时，服务器会提示你是否要开启自动端口转发，不过这个有时不怎么奏效。
+* 通常我们使用 [https://secure.logmein.com/products/hamachi/ Hamachi]开服，它避免了端口转发，但是依赖于第三方程序。
+
+== LAN（局域网） ==
+下述是十分基础的局域网联机指南。一开始，所有电脑必须连接到相同的网络。如果你觉得这太简单的话，可以给这个服务器设置一个局域网静态 IP，这没什么必要。请注意，这份指南是面向那些几乎没有网络经验、仅仅是想玩游戏的人。 
+# 确保所有电脑连接到相同的网络。 
+#* 尽可能让电脑通过有线网络连接，因为有线网络比无线网络稳定的多。
+#* 如果你有一台常见的家用路由器，想要连接多人游戏，你可以使用交换机来连接更多电脑。只要把交换机的任意端口插入路由器，然后把其他电脑和服务器接入交换机就可以了。如果没有交换机，至少把服务器所在的电脑接入有线网络。如果这样也不行的话，只要确保所有电脑都接入了同一 WiFi 就可以了，只是可能延迟有点高。
+# 获取服务器信息
+#* 首先，确保服务器被连接到互联网，或者至少连接到路由器。可以通过访问路由器管理界面来测试路由器连通性。通常你可以在路由器的贴纸上找到登录信息。如果页面加载了，恭喜你！只要确保其他电脑都连接到同一网络即可。
+#* Windows:
+#** 打开命令提示符（cmd），运行<code>ipconfig</code>命令来得到网络信息。记录IP地址（一般在"IPV4 Address......"后面），格式是192.168.1.27, 172.16.0.55 10.0.0.42这种。如果IP地址是127开头，寻找下一个开头不是这个的。如果以169开头，那么你的网络配置可能有问题。
+#*Mac OS X
+#**打开系统偏好>网络，然后记录IP地址。
+#*GNU/Linux
+#**在终端窗口运行"ifconfig"或"ip address"命令来得到IP。 
+# 让客户端连接到服务器
+#* 打开{{tr|Terraria}}，点击多人游戏，然后连接到你第二步记录的IP地址。
+#* 应该能进入服务器了。
+# 疑难解答 (如果连接有问题)
+#* 确保计算机的防火墙已经关闭，或者至少放行7777端口。
+#* 如果IP地址是169开头，请先检查电脑能否上网。
+#* 服务器的IP地址可能会改变，尤其在路由器重启过的情况下。如果连接不到服务器，再做一遍步骤2看看IP有没有变。
+#** 如果这个问题经常复现，你应该了解一下如何"在【你的系统】上设置静态IP地址"。
+#*如果你设置的服务器端口不是7777，确保客户端连接的是你设置的端口。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.0.4|
+**现在可以使用 -forcepriority 启动专用服务器，来覆盖服务器设定文件的优先级。
+**现在恢复了使用 -ip 来设定专有服务器的本地 IP。}}
+{{history|Desktop 1.3.0.3|现在报告发生在服务器上的错误更加容易。}}
+{{history|Desktop 1.3.0.2|
+**现在你可以每次输入密码，在启动或进入服务器时。
+**解决了大部分专用服务器和它的配置文件的问题。
+**解决了用户在“仅能邀请”模式下不能互相邀请的问题。}}
+{{history|Desktop 1.2.3.1|修复了服务器以英语之外的语言启动时发生的崩溃。}}
+{{history|Desktop 1.0.2|
+**服务器现在监听宿主机的所有 IP，不论有多少连接是活跃的。
+**输入 "localhost" 而不是你的本地 IP 也会连接到相同的本地服务器。
+**服务器的默认端口 31337 变为 7777。
+**客户端可以把主机名解析为 IP。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Game mechanics}}
+{{Software navigation}}
+{{language info|en=Server}}

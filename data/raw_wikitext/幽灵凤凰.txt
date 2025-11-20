@@ -1,0 +1,55 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| auto = 3854
+| debuff = Hellfire / 8 / 100%
+| sound1 = Dd2 phantom phoenix shot 0.wav, Dd2 phantom phoenix shot 1.wav, Dd2 phantom phoenix shot 2.wav
+| soundcaption1 = 凤凰弹
+| listcat = bows
+| tags = drop /hardmode
+| idprojectile = 705, 706
+}}
+{{drop infobox|style=clear:right}}
+[[File:Phantom Phoenix (demo).gif|frame|对一组[[{{tr|Target Dummies}}]]使用{{tr|The Phantom Phoenix}}。]]
+
+'''{{tr|Phantom Phoenix}}'''是一个[[{{tr|Hardmode}}]][[{{tr|bow}}]]，一次发射两支{{tr|arrows}}，像[[{{tr|Chlorophyte Shotbow}}]]一样具有随机散布，且每三发会发射出一只大型的、以波浪状前进的凤凰{{tr|projectile}}。凤凰{{tr|projectile}}造成双倍{{tr|weapon}}{{tr|base damage}}（{{#expr:2*{{iteminfo|Phantom Phoenix|damage}}}} {{tr|base damage}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_075}}{{penetrate|name=凤凰|auto=706|p=5%}}{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage}}在击中实心{{tr|tiles}}时，凤凰会爆炸，在以碰撞点为中心的 6×6 格长方形区域中造成伤害。{{tr|Phantom Phoenix}}也会将常规的[[{{tr|Wooden Arrow}}]]转化为[[{{tr|Flaming Arrow}}]]，类似于[[{{tr|Molten Fury}}]]，而凤凰{{tr|projectile}}对伤害到的{{tr|enemies}}造成 8 秒的[[{{tr|Hellfire}}]][[{{tr|debuff}}]]。
+
+{{tr|The Phantom Phoenix}}掉落自[[{{tr|Old One's Army}}]][[{{tr|event}}]]期间的[[{{tr|Ogre}}]]，{{tr|Tier 2}}时几率为 {{chance|1/10}} / {{expert|{{chance|1/5}}}}，{{tr|Tier 3}}时几率为 {{chance|1/20}}。
+
+{{modifier|ranged}}
+
+== 备注 ==
+* 虽然没有写明，但在穿着[[{{tr|Dark Artist armor}}]]时，凤凰{{tr|projectile}}的爆炸范围会增加至 13×13 格的长方形区域。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* 技术上来说，在使用{{tr|Phantom Phoenix}}时，它会生成一个{{tr|bow projectile}}，在接触时可造成 100% {{tr|weapon}}{{tr|damage}}（{{iteminfo|Phantom Phoenix|damage}} {{tr|base damage}}）。{{tr|bow projectile}}此后会按照{{tr|use time}}生成{{tr|projectiles}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot / Terraria.Projectile.AI_075|field=Terraria.ID.ItemID.Sets&#46;gunProj}}
+* 凤凰{{tr|projectile}}会在接触[[{{tr|liquids}}]]时消失{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001}}，使得{{tr|Phantom Phoenix}}在水下的效果显著更差。
+
+== 小贴士 ==
+* {{tr|Phantom Phoenix}}的{{tr|base damage}}比{{tr|Hardmode}}早期的[[{{tr|repeaters}}]]更低。不过，它一次能发射两支{{tr|arrows}}，将造成的总伤害翻倍；并且能将普通{{tr|arrows}}转化为{{tr|Flaming Arrows}}，使得[[{{tr|Endless Quiver}}]]更加强大。这使得它使用普通{{tr|arrows}}时的 {{DPS}} 能和{{tr|repeaters}}相提并论，或超过它们。
+** 在玩家使用{{tr|Phantom Phoenix}}时，可能更推荐避免将[[{{tr|Magic Quiver}}]]升级为[[{{tr|Molten Quiver}}]]，因为发射的{{tr|wooden arrows}}已经被转化了，但两件{{tr|accessories}}具有相同的{{tr|damage bonuses}}。
+** 使用[[{{tr|Holy Arrow}}]]时，{{tr|Phantom Phoenix}}的双重射击会使得它类似于[[{{tr|Daedalus Stormbow}}]]，每次发射的{{tr|arrows}}更少，但更容易瞄准。
+** 另一方面，使用穿透性的{{tr|arrows}}，例如[[{{tr|Jester's Arrow}}]]或[[{{tr|Unholy Arrow}}]]会让{{tr|enemies}}仅能受到其中一支{{tr|arrows}}的伤害，从而使总伤害输出减半。
+
+== 花絮 ==
+* 与其余的[[{{tr|Old One's Army}}]]{{tr|weapons}}相同，{{tr|Phantom Phoenix}}直接参考了[[{{tr|Dungeon Defenders 2}}|《{{tr|Dungeon Defenders 2}}》]]中的同名{{tr|weapon}}，因为它是作为[[{{tr|crossover content}}|{{tr|crossover}}事件]]的一部分引入的。
+
+== 另见 ==
+* {{dd2 link|Bows#Legendary|{{tr|Phantom Phoenix}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|凤凰{{tr|projectile}}现在会造成{{tr|Hellfire}}而非{{tr|On Fire!}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 24 提升至 32。
+** {{tr|Use Time}}由 20 降低至 18。
+** 现在每 3 次射击就会发射凤凰{{tr|projectile}}而非 4 次。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Phantom Phoenix}}

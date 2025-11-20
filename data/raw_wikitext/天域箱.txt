@@ -1,0 +1,71 @@
+{{item infobox
+| type = Furniture / Storage
+| width = 2 | height = 2
+| auto = 838
+| tags = plunder
+}}
+
+'''{{tr|Skyware Chest}}'''是一种[[{{tr|storage item}}]]，只出现在[[{{tr|Floating Island}}]]上。
+
+== 拾取物 ==
+每个{{tr|Skyware Chest}}总是会包含一件主要物品，且可能包含多个次要物品，或者不包含次要物品。此外，它能包含一个或更多的一般物品。
+
+{{tr|Skyware chest}}中的主要{{tr|item}}比大多数其他{{tr|chests}}更具确定性。与[[{{tr|Golden Chest}}#{{tr|Dungeon}}|{{tr|Locked Golden Chests}}]]相似，第一个生成的{{tr|chest}}总是会包含第一个主要{{tr|item}}，第二个{{tr|chest}}将始终包含第二个主要{{tr|item}}，第三个{{tr|chest}}将始终包含第三个主要{{tr|item}}。所有在前{{eicons|1.4.4}}四个 / {{eicons|1.4.4|invert=y}}三个之后生成的{{tr|Floating Island houses}}将会包含一个随机的主要{{tr|item}}。因此，绝大多数{{tr|worlds}}都会至少生成 {{eicons|1.4.4}} 4 / {{eicons|1.4.4|invert=y}} 3 件物品各一个。
+
+此外，还有一些独有的次要物品，例如[[{{tr|Sky Mill}}]]和{{eicons|1.4.4}}[[{{tr|Fledgling Wings}}]]。除了这些独有物品外，{{tr|Skyware Chests}}具有和[[{{tr|Chest|link=y}}#{{tr|Surface loot}}|{{tr|Surface Chests}}]]相同的一般物品。
+
+{{flexstart|alignitems=top}}
+{{loot|title=@primary
+|:group:start|1|
+  | Shiny Red Balloon||{{chance|1/4}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}} {{eicons|1.4.4|invert=y|small=y}}
+  | Starfury||{{chance|1/4}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}} {{eicons|1.4.4|invert=y|small=y}}
+  | Lucky Horseshoe||{{chance|1/4}} {{eicons|1.4.4|small=y}}<br/>{{chance|1/3}} {{eicons|1.4.4|invert=y|small=y}}
+  | Celestial Magnet||{{chance|1/4}} {{eicons|1.4.4|small=y}}
+|:group:end|-----------------|-
+}}
+
+{{loot|title=@secondary
+  | Sky Mill|1|1/3
+  | Fledgling Wings|1|1/40
+
+  |:group:start|1|1/1
+    | High Pitch||
+    | Blessing from the Heavens||
+    | Constellation||
+    | See The World For What It Is||
+    | Love is in the Trash Slot||
+    | Eye of the Sun||
+  |:group:end|-----------------|-
+
+  | Cloud|50-100|{{chance|1/1}} {{eicons|1.4.4|small=y}}
+}}
+{{flexend}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Skyware Chest|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Skyware Chest|expectedrows=1}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在会包含[[{{tr|Celestial Magnet}}]]、[[{{tr|Cloud}}]]、多种[[{{tr|paintings}}]]，且重新包含[[{{tr|Lucky Horseshoe}}]]。
+** [[{{tr|Fledgling Wings}}]]现在被视为次要物品。}}
+{{history|Desktop 1.4.1|{{tr|Lucky Horseshoe}}被替换为{{tr|Fledgling Wings}}。}}
+{{history|Desktop 1.4.0.1|
+** 外观更新。
+** 现在可制作。}}
+{{history|Desktop 1.3.1|现在用于制作[[{{tr|Trapped Skyware Chest}}]]。}}
+{{history|Desktop 1.2.3|放置的{{tr|storage items}}现在可以重命名了。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+{{language info|en=Skyware Chest}}

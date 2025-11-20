@@ -1,0 +1,40 @@
+{{item infobox
+| type = Mechanism / Furniture
+| width = 2 | height = 2
+| tags = buy / vendor:Mechanic
+| auto = 513
+}}
+
+'''{{tr|Lever}}'''是一种 2×2 的启动[[{{tr|Mechanism}}]]。可以从[[{{tr|Mechanic}}]]处花费{{sc|30}}购买。它可以通过按下 {{key|open}} 来激活[[{{tr|Statue}}]]，灯等等{{tr|item}}。
+
+{{tr|Lever}}可以被放置于任何平坦的表面，包括[[{{tr|Wood Platform}}]]上，这一点和[[{{tr|furniture}}]]一样。另外，它也可以被放置于[[{{tr|background walls}}]]上。
+
+尽管{{tr|Lever}}视觉上为一个具有两种状态的开关，它并不像控制“开启/关闭”的{{tr|mechanism}}那样工作。例如，当{{tr|Lever}}被连接到[[{{tr|Dart Trap}}]]时，不论它目前是什么状态，激活它总是会触发机关，就像[[{{tr|Pressure Plate}}]]一样。
+
+== {{tr|Notes}} ==
+* {{tr|Lever}}在操作上与[[{{tr|Switch}}]]类似。
+** {{tr|Lever}}相对更容易看到和激活，因为它提供了更大的点击目标；而{{tr|Switch}}可能更难以发现和点击，因为只有一个{{tr|tile}}大小。
+** 另一方面，{{tr|Levers}}（和直觉上相反地）无法被放置在竖直{{tr|block}}的侧面，这和{{tr|Switch}}不同。
+* [[{{tr|Paint}}]]可用于识别{{tr|Lever}}的用途，以及每个状态的作用。通过对每一侧使用不同的颜色，{{tr|Lever}}的两种状态可以不同地着色；当{{tr|Lever}}执行比“开/关”功能更复杂的操作（例如切换[[{{tr|Minecart Track}}]]交叉点）时，这尤其有用。使用非深色涂料可以在使握把重新着色的同时对{{tr|Lever}}的杆部和基座的颜色产生最小的影响。
+
+== {{tr|Trivia}} ==
+* [[{{tr|inventory}}]]显示{{tr|Lever}}被切换到了左侧，但是当放置它时它默认切换在右侧。
+* 在{{tr|Lever}}的外观上，其底座似乎使用了[[{{tr|Pressure Plate}}]]的{{tr|sprite}}，但没有显示任何可以来自任何实际{{tr|Pressure Plate}}的颜色。
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.4|修复了当只有一条{{tr|wire}}连接到{{tr|Lever}}时，激活{{tr|Lever}}可以正常工作的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.3.1|修复了导致{{tr|Lever}}在放置时立即被破坏的 {{tr|Bug}}。}}
+{{history|Desktop 1.2.3|现在可以放置在{{tr|wall}}上。}}
+{{history|Desktop 1.2|最大堆叠上限由 250 变为 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Lever}}

@@ -1,0 +1,531 @@
+{{dablink|此页面列出了所有{{tr|enemy}}的名字和其图像，以便识别。如要比较{{tr|damage}}、{{tr|defense}}、生命值等属性，参见可排序的[[{{tr|enemy}}列表]]。}}
+
+'''{{tr|Enemies}}'''是试图对玩家造成[[{{tr|damage}}]]的角色。本页面列出了所有在[[《{{tr|Terraria}}》]]中可能遇到的{{tr|enemies}}。
+
+{{tr|Enemies}}不会受到[[{{tr|fall damage}}]]。参见 [[{{tr|NPC spawning}}]]和 [[{{tr|NPC despawning}}]]来详细了解游戏如何决定{{tr|enemy}}何时何地生成。
+
+<!--
+---- Enemy count ----
+individual variables (manually counted):
+-->{{#vardefine:_pre-hm|89}}<!--
+-->{{#vardefine:_hm|93}}<!--
+-->{{#vardefine:_pre-hm-event|26}}<!--
+-->{{#vardefine:_hm-event|95}}<!--
+-->{{#vardefine:_pre-hm-bosses|9}}<!--
+-->{{#vardefine:_hm-bosses|11}}<!--
+-->{{#vardefine:_pre-hm-event-bosses|1}}<!--
+-->{{#vardefine:_hm-event-bosses|13}}<!--
+-->{{#vardefine:_pre-hm-boss-servants|7}}<!--
+-->{{#vardefine:_hm-boss-servants|12}}<!--
+-->{{#vardefine:_pre-hm-exclusive|7}}<!--
+-->{{#vardefine:_hm-exclusive|7}}<!--
+-->{{#vardefine:_unspawnable|2}}<!--
+
+sums:
+-->{{#vardefine:_total-event|{{#expr:{{#var:_pre-hm-event}}+{{#var:_hm-event}}}}}}<!--
+-->{{#vardefine:_total-bosses|{{#expr:{{#var:_pre-hm-bosses}}+{{#var:_hm-bosses}}}}}}<!--
+-->{{#vardefine:_total-event-bosses|{{#expr:{{#var:_pre-hm-event-bosses}}+{{#var:_hm-event-bosses}}}}}}<!--
+-->{{#vardefine:_total-boss-servants|{{#expr:{{#var:_pre-hm-boss-servants}}+{{#var:_hm-boss-servants}}}}}}<!--
+-->{{#vardefine:_total-exclusive|{{#expr:{{#var:_pre-hm-exclusive}}+{{#var:_hm-exclusive}}}}}}<!--
+
+-->{{#vardefine:_total-pre-hm|{{#expr:{{#var:_pre-hm}}+{{#var:_pre-hm-event}}+{{#var:_pre-hm-bosses}}+{{#var:_pre-hm-event-bosses}}+{{#var:_pre-hm-boss-servants}}+{{#var:_pre-hm-exclusive}}}}}}<!--
+-->{{#vardefine:_total-hm|{{#expr:{{#var:_hm}}+{{#var:_hm-event}}+{{#var:_hm-bosses}}+{{#var:_hm-event-bosses}}+{{#var:_hm-boss-servants}}+{{#var:_hm-exclusive}}}}}}<!--
+
+-->{{#vardefine:_total|{{#expr:{{#var:_total-pre-hm}}+{{#var:_total-hm}}+{{#var:_unspawnable}}}}}}<!--
+
+output:
+-->一共有 {{#var:_total}} 种{{tr|enemies}}：{{#var:_total-pre-hm}} 种[[{{tr|pre-Hardmode}}]]的、{{#var:_total-hm}} 种[[{{tr|Hardmode}}]]的、以及 {{#var:_unspawnable}} 种无法生成的。其中，{{#var:_total-event}} 种是属于[[{{tr|events}}]]的（{{#var:_pre-hm-event}} 种{{tr|pre-Hardmode}}的、{{#var:_hm-event}} 种{{tr|Hardmode}}的）、{{#var:_total-bosses}} 种是 [[{{tr|bosses}}]]（{{#var:_pre-hm-bosses}} 种{{tr|pre-Hardmode}}的、{{#var:_hm-bosses}} 种{{tr|Hardmode}}的）、{{#var:_total-event-bosses}} 种是{{tr|event bosses}}（{{#var:_pre-hm-event-bosses}} 种{{tr|pre-Hardmode}}的、{{#var:_hm-event-bosses}} 种{{tr|Hardmode}}的）、{{#var:_total-boss-servants}} 是 {{tr|bosses}} 的小兵（{{#var:_pre-hm-boss-servants}} 种{{tr|pre-Hardmode}}的、{{#var:_hm-boss-servants}} 种{{tr|Hardmode}}的）、还有 {{#var:_total-exclusive}} 种是 {{eversions|Ocram}}独有的{{tr|enemy}}（{{#var:_pre-hm-exclusive}} 种是{{tr|pre-Hardmode}}的、{{#var:_hm-exclusive}} 种是{{tr|Hardmode}}的）。<!--
+
+-->{{options/set|item|small=y|wrap=y}}<!--
+-->{{itemlist/options|width=18em|css=margin: 3px auto|boxcss=margin: 0.5em auto;|class=terraria}}
+
+== [[{{tr|Pre-Hardmode}}]]的{{tr|enemies}} ==
+{{itemlist
+|{{item|image=Angry Bones 1.png|Angry Bones}}
+|{{item|Anomura Fungus}}
+|{{item|Antlion}}
+|{{item|Antlion Charger}}
+|{{item|Antlion Larva}}
+|{{item|Antlion Swarmer}}
+|{{item|Baby Slime}}
+|{{item|Bee}}
+|{{item|Black Slime}}
+|{{item|Blazing Wheel}}
+|{{item|Blood Crawler}}
+|{{item|Blue Jellyfish}}
+|{{item|Blue Slime}}
+|{{item|image=Bone Serpent Head.png|Bone Serpent}}
+|{{item|Cave Bat}}
+|{{item|Cochineal Beetle}}
+|{{item|Crab}}
+|{{item|Crawdad}}
+|{{item|Crimera}}
+|{{item|Cursed Skull}}
+|{{item|Cyan Beetle}}
+|{{item|Dark Caster}}
+|{{item|Demon}}
+|{{item|Demon Eye}}
+|{{item|image=Devourer Head.png|Devourer}}
+|{{item|Doctor Bones}}
+|{{item|Dungeon Guardian|scale=0.5}}
+|{{item|Dungeon Slime}}
+|{{item|Eater of Souls}}
+|{{item|Face Monster}}
+|{{item|Fire Imp}}
+|{{item|Frozen Zombie}}
+|{{item|Fungi Bulb}}
+|{{item|Ghost (enemy)|Ghost}}
+|{{item|Giant Antlion Charger}}
+|{{item|Giant Antlion Swarmer}}
+|{{item|Giant Shelly}}
+|{{item|image=Giant Worm Head.png|Giant Worm}}
+|{{item|Gnome}}
+|{{item|Goblin Scout}}
+|{{item|Granite Elemental}}
+|{{item|Granite Golem}}
+|{{item|Green Slime}}
+|{{item|Harpy}}
+|{{item|Hellbat}}
+|{{item|Hoplite}}
+|{{item|Hornet}}
+|{{item|Ice Bat}}
+|{{item|Ice Slime}}
+|{{item|Jungle Bat}}
+|{{item|Jungle Slime}}
+|{{item|Lac Beetle}}
+|{{item|Lava Slime}}
+|{{item|Maggot Zombie}}
+|{{item|Man Eater}}
+|{{item|Meteor Head}}
+|{{item|Mother Slime}}
+|{{item|Mushi Ladybug}}
+|{{item|Nymph}}
+|{{item|Pinky}}
+|{{item|Pink Jellyfish}}
+|{{item|Piranha}}
+|{{item|Purple Slime}}
+|{{item|Raven}}
+|{{item|Red Slime}}
+|{{item|Salamander}}
+|{{item|Sand Slime}}
+|{{item|Sea Snail}}
+|{{item|Shark}}
+|{{item|Skeleton}}
+|{{item|Snatcher}}
+|{{item|Snow Flinx}}
+|{{item|Spike Ball}}
+|{{item|Spiked Ice Slime}}
+|{{item|Spiked Jungle Slime}}
+|{{item|Spore Bat}}
+|{{item|Spore Skeleton}}
+|{{item|Spore Zombie}}
+|{{item|Squid}}
+|{{item|Tim}}
+|{{item|image=Tomb Crawler (Head).png|Tomb Crawler}}
+|{{item|Undead Miner}}
+|{{item|Undead Viking}}
+|{{item|Voodoo Demon}}
+|{{item|Vulture}}
+|{{item|Wall Creeper}}
+|{{item|Yellow Slime}}
+|{{item|Zombie}}
+}}
+
+== [[{{tr|Hardmode}}]]的{{tr|enemies}} ==
+{{itemlist
+|{{item|Angler Fish}}
+|{{item|Angry Trapper}}
+|{{item|Arapaima}}
+|{{item|Armored Skeleton}}
+|{{item|Armored Viking}}
+|{{item|Basilisk}}
+|{{item|Black Recluse}}
+|{{item|Blood Feeder}}
+|{{item|Blood Jelly}}
+|{{item|Blood Mummy}}
+|{{item|Blue Cultist Archer}}
+|{{item|image=Blue Armored Bones 1.png|Blue Armored Bones}}
+|{{item|Bone Lee}}
+|{{item|Chaos Elemental}}
+|{{item|Clinger}}
+|{{item|Corrupt Mimic}}
+|{{item|Corrupt Slime}}
+|{{item|Corruptor}}
+|{{item|Crimslime}}
+|{{item|Crimson Axe}}
+|{{item|Crimson Mimic}}
+|{{item|Cursed Hammer}}
+|{{item|Dark Mummy}}
+|{{item|Derpling}}
+|{{item|Desert Spirit}}
+|{{item|image=Diabolist 2.png|Diabolist}}
+|{{item|image=Digger Head.png|Digger}}
+|{{item|Dreamer Ghoul}}
+|{{item|image=Dune Splicer (Head).png|Dune Splicer}}
+|{{item|Dungeon Spirit}}
+|{{item|Enchanted Sword (NPC)|Enchanted Sword}}
+|{{item|Floaty Gross}}
+|{{item|Flying Snake}}
+|{{item|Fungo Fish}}
+|{{item|Gastropod}}
+|{{item|Ghoul}}
+|{{item|Giant Bat}}
+|{{item|Giant Cursed Skull}}
+|{{item|Giant Flying Fox}}
+|{{item|Giant Fungi Bulb}}
+|{{item|Giant Tortoise}}
+|{{item|Green Jellyfish}}
+|{{item|Hallowed Mimic}}
+|{{item|image=Hell Armored Bones 1.png|Hell Armored Bones}}
+|{{item|Herpling}}
+|{{item|Hoppin' Jack}}
+|{{item|Ice Elemental}}
+|{{item|Ice Mimic}}
+|{{item|Ice Tortoise}}
+|{{item|Ichor Sticker}}
+|{{item|Icy Merman}}
+|{{item|Illuminant Bat}}
+|{{item|Illuminant Slime}}
+|{{item|Jungle Creeper}}
+|{{item|Lamia}}
+|{{item|Lava Bat}}
+|{{item|Light Mummy}}
+|{{item|Lihzahrd}}
+|{{item|Lunatic Devote}}
+|{{item|Martian Probe}}
+|{{item|Medusa}}
+|{{item|Mimic}}
+|{{item|Moss Hornet}}
+|{{item|Moth}}
+|{{item|Mummy}}
+|{{item|image=Necromancer 2.png|Necromancer}}
+|{{item|Paladin}}
+|{{item|Pigron}}
+|{{item|Pixie}}
+|{{item|Possessed Armor}}
+|{{item|image=Ragged Caster 2.png|Ragged Caster}}
+|{{item|Red Devil}}
+|{{item|Rock Golem}}
+|{{item|Rune Wizard}}
+|{{item|image=Rusty Armored Bones 1.png|Rusty Armored Bones}}
+|{{item|Sand Poacher}}
+|{{item|Skeleton Archer}}
+|{{item|Skeleton Commando}}
+|{{item|Skeleton Sniper}}
+|{{item|Slimeling}}
+|{{item|Slimer}}
+|{{item|Tactical Skeleton}}
+|{{item|Tainted Ghoul}}
+|{{item|Tortured Soul}}
+|{{item|Toxic Sludge}}
+|{{item|Unicorn}}
+|{{item|Vile Ghoul}}
+|{{item|image=Wandering Eye 1.png/Wandering Eye 2.png|Wandering Eye}}
+|{{item|Werewolf}}
+|{{item|Wolf}}
+|{{item|image=World Feeder Head.png|World Feeder}}
+|{{item|Wraith}}
+|{{item|image=Wyvern Head Horizontal.png|Wyvern}}
+}}
+
+== [[{{tr|Event}}]]{{tr|enemies}} ==
+=== [[{{tr|Blood Moon}}]] ===
+{{itemlist
+|{{item|Blood Eel|image=Blood Eel Head.png}}
+|{{item|Blood Squid}}
+|{{item|Blood Zombie}}
+|{{item|Chattering Teeth Bomb}}
+|{{item|Clown|scale=0.75}}
+|{{item|Corrupt Bunny}}
+|{{item|Corrupt Goldfish}}
+|{{item|Corrupt Penguin}}
+|{{item|Dreadnautilus|scale=0.75}}
+|{{item|Drippler}}
+|{{item|Hemogoblin Shark}}
+|{{item|The Groom}}
+|{{item|The Bride}}
+|{{item|Vicious Bunny}}
+|{{item|Vicious Goldfish}}
+|{{item|Vicious Penguin}}
+|{{item|Wandering Eye Fish}}
+|{{item|Zombie Merman}}
+}}
+
+=== {{eil|Windy Day}} ===
+{{itemlist
+|{{item|Angry Dandelion}}
+|{{item|Windy Balloon}}
+}}
+
+=== [[{{tr|Rain}}]] ===
+{{itemlist
+|{{item|Angry Nimbus}}
+|{{item|Flying Fish}}
+|{{item|Ice Golem|scale=0.75}}
+|{{item|ext=gif|Rainbow Slime}}
+|{{item|Raincoat Zombie}}
+|{{item|Umbrella Slime}}
+}}
+
+=== {{eil|Sandstorm}} ===
+{{itemlist|width=18.5em
+|{{item|Angry Tumbler}}
+|{{item|Bone Biter}}
+|{{item|Crystal Thresher}}
+|{{item|Flesh Reaver}}
+|{{item|Sand Elemental|scale=0.75}}
+|{{item|Sand Shark}}
+}}
+
+=== [[{{tr|Goblin Army}}]] ===
+{{itemlist
+|{{item|Goblin Archer}}
+|{{item|Goblin Peon}}
+|{{item|Goblin Sorcerer}}
+|{{item|Goblin Warlock}}
+|{{item|Goblin Thief}}
+|{{item|Goblin Warrior}}
+|{{item|Shadowflame Apparition}}
+}}
+
+=== {{eil|Old One's Army}} ===
+{{itemlist|width=18em
+|{{item|Drakin}}
+|{{item|Etherian Javelin Thrower}}
+|{{item|Etherian Goblin}}
+|{{item|Etherian Goblin Bomber}}
+|{{item|Etherian Lightning Bug}}
+|{{item|Etherian Wyvern}}
+|{{item|Kobold}}
+|{{item|Kobold Glider}}
+|{{item|Wither Beast}}
+}}
+
+=== [[{{tr|Frost Legion}}]] ===
+{{itemlist
+|{{item|Mister Stabby}}
+|{{item|Snow Balla}}
+|{{item|Snowman Gangsta}}
+}}
+
+=== [[{{tr|Pirate Invasion}}]] ===
+{{itemlist
+|{{item|Parrot}}
+|{{item|Pirate Captain}}
+|{{item|Pirate Corsair}}
+|{{item|Pirate Crossbower}}
+|{{item|Pirate Deadeye}}
+|{{item|Pirate Deckhand}}
+|{{item|Pirate's Curse}}
+}}
+
+=== [[{{tr|Solar Eclipse}}]] ===
+{{itemlist
+|{{item|Baby Mothron}}
+|{{item|Butcher}}
+|{{item|Creature from the Deep}}
+|{{item|Deadly Sphere}}
+|{{item|Dr. Man Fly}}
+|{{item|Eyezor}}
+|{{item|Frankenstein}}
+|{{item|Fritz}}
+|{{item|Mothron|scale=0.75}}
+|{{item|Mothron Egg}}
+|{{item|Nailhead}}
+|{{item|Psycho}}
+|{{item|Reaper}}
+|{{item|Swamp Thing}}
+|{{item|The Possessed}}
+|{{item|Vampire}}
+}}
+
+=== {{eil|Martian Madness}} ===
+{{itemlist
+|{{item|Brain Scrambler}}
+|{{item|Gigazapper}}
+|{{item|Gray Grunt}}
+|{{item|Martian Drone}}
+|{{item|Martian Engineer}}
+|{{item|Martian Officer}}
+|{{item|Martian Walker|scale=0.75}}
+|{{item|Ray Gunner}}
+|{{item|image=Scutlix (creature).png|Scutlix}}
+|{{item|image=Scutlix.png|Scutlix Gunner}}
+|{{item|Tesla Turret}}
+}}
+
+=== [[{{tr|Pumpkin Moon}}]] ===
+{{itemlist
+|{{item|Headless Horseman|scale=0.75}}
+|{{item|Hellhound}}
+|{{item|Poltergeist}}
+|{{item|Scarecrow}}
+|{{item|Splinterling}}
+}}
+
+=== [[{{tr|Frost Moon}}]] ===
+{{itemlist
+|{{item|Elf Archer}}
+|{{item|Elf Copter}}
+|{{item|Flocko}}
+|{{item|Gingerbread Man}}
+|{{item|Krampus|scale=0.75}}
+|{{item|Nutcracker}}
+|{{item|Present Mimic}}
+|{{item|Yeti|scale=0.75}}
+|{{item|Zombie Elf}}
+}}
+
+=== {{eil|Lunar Events}} ===
+{{itemlist
+|{{item|Brain Suckler}}
+|{{item|Evolution Beast}}
+|{{item|Nebula Floater}}
+|{{item|Predictor}}
+|{{item|Corite}}
+|{{item|image=Crawltipede (Head).png|Crawltipede}}
+|{{item|Drakomire}}
+|{{item|Drakomire Rider|scale=0.67}}
+|{{item|Drakanian|scale=0.75}}
+|{{item|Selenian}}
+|{{item|Sroller}}
+|{{item|Flow Invader}}
+|{{item|image=Milkyway Weaver (Head).png|Milkyway Weaver}}
+|{{item|Stargazer}}
+|{{item|Star Cell}}
+|{{item|Twinkle}}
+|{{item|Twinkle Popper}}
+|{{item|Alien Hornet}}
+|{{item|Alien Larva}}
+|{{item|Alien Queen}}
+|{{item|Storm Diver}}
+|{{item|Vortexian}}
+}}
+
+== [[{{tr|Bosses}}]] ==
+{{itemlist|width=23em
+|{{item|Brain of Cthulhu|scale=0.33333}}
+|{{item|Deerclops|scale=0.5}}
+|{{item|Duke Fishron|scale=0.5}}
+|{{item|image=Eater of Worlds Head.png|Eater of Worlds}}
+|{{item|Empress of Light|scale=0.5}}
+|{{item|Eye of Cthulhu|scale=0.5}}
+|{{item|Golem|scale=0.5}}
+|{{item|King Slime|scale=0.5}}
+|{{item|Lepus}}
+|{{item|Lunatic Cultist}}
+|{{item|Moon Lord|scale=0.1}}
+|{{item|Ocram|scale=0.33333}}
+|{{item|image=Plantera's First Form.png|Plantera|scale=0.5}}
+|{{item|Queen Bee|scale=0.5}}
+|{{item|Queen Slime|scale=0.5}}
+|{{item|image=Skeletron Hand (NPC).png/Skeletron Head.png/Skeletron Hand (NPC).png|Skeletron|scale=0.75}}
+|{{item|image=Prime Cannon.png/Prime Saw.png/Skeletron Prime.png/Prime Vice.png/Prime Laser.png|Skeletron Prime|scale=0.75}}
+|{{item|image=The Destroyer Head.png|The Destroyer}}
+|{{item|image=Retinazer.png/Spazmatism.png|The Twins|scale=0.5}}
+|{{item|Turkor the Ungrateful|scale=0.5}}
+|{{item|Wall of Flesh|scale=0.25}}
+|{{item|Mechdusa|scale=0.25}}
+}}
+
+== {{tr|Event bosses}} ==
+=== {{eil|Old One's Army}} ===
+{{itemlist
+|{{item|Dark Mage}}
+|{{item|Ogre|scale=0.75}}
+|{{item|Betsy|scale=0.5}}
+}}
+
+=== [[{{tr|Pirate Invasion}}]] ===
+{{itemlist
+|{{item|Flying Dutchman|scale=0.2}}
+}}
+
+=== [[{{tr|Pumpkin Moon}}]] ===
+{{itemlist
+|{{item|Mourning Wood|scale=0.5}}
+|{{item|Pumpking|scale=0.5}}
+}}
+
+=== [[{{tr|Frost Moon}}]] ===
+{{itemlist
+|{{item|Everscream|scale=0.5}}
+|{{item|Ice Queen|scale=0.5}}
+|{{item|Santa-NK1|scale=0.5}}
+}}
+
+=== {{eil|Martian Madness}} ===
+{{itemlist
+|{{item|Martian Saucer|scale=0.5}}
+}}
+
+=== {{eil|Lunar Events}} ===
+{{itemlist
+|{{item|Nebula Pillar|scale=0.2}}
+|{{item|Solar Pillar|scale=0.2}}
+|{{item|Stardust Pillar|scale=0.2}}
+|{{item|Vortex Pillar|scale=0.2}}
+}}
+
+== {{tr|Bosses}} 的仆从 ==
+{{itemlist
+|{{item|Ancient Cultist|note2=(诱饵)|scale=0.8}}
+|{{item|Ancient Doom}}
+|{{item|Ancient Vision|scale=0.75}}
+|{{item|Bouncy Slime}}
+|{{item|Creeper}}
+|{{item|Crystal Slime}}
+|{{item|Diseaster Bunny}}
+|{{item|Heavenly Slime}}
+|{{item|image=Leech Head.png|Leech}}
+|{{item|Old One's Skeleton}}
+|{{item|image=Phantasm Dragon (Head).png|Phantasm Dragon}}
+|{{item|Plantera's Tentacle}}
+|{{item|Probe}}
+|{{item|Servant of Cthulhu}}
+|{{item|Servant of Ocram}}
+|{{item|Spiked Slime}}
+|{{item|Sharkron}}
+|{{item|The Hungry}}
+|{{item|True Eye of Cthulhu|scale=0.5}}
+}}
+
+== {{tr|Secret seed}}独有{{tr|enemies}} ==
+{{itemlist
+|{{item|Golden Slime}}
+|{{item|Jungle Mimic}}
+}}
+
+== {{eversions|Ocram|short|nolink=y}}独有{{tr|enemies}} ==
+{{exclusive|Ocram|section=y}}
+{{options/set|item|icons=n}}
+{{itemlist|width=22em
+|{{item|Albino Antlion}}
+|{{item|Arch Demon}}
+|{{item|image=Arch Wyvern Head Horizontal.png|Arch Wyvern}}
+|{{item|Dragon Hornet}}
+|{{item|Dragon Snatcher}}
+|{{item|Dragon Skull|size=*0.75}}
+|{{item|Orca}}
+|{{item|Shadow Hammer}}
+|{{item|Shadow Mummy}}
+|{{item|Shadow Slime}}
+|{{item|Spectral Elemental}}
+|{{item|Spectral Gastropod}}
+|{{item|Spectral Mummy}}
+|{{item|Vampire Miner}}
+}}
+{{options/set|item|icons=y}}
+
+== 无法生成的{{tr|enemies}} ==
+{{unspawnable|section}}
+{{itemlist
+|{{item|White Cultist Archer}}
+}}
+{{itemlist/options|reset}}
+
+{{Master Template Characters}}
+
+[[Category:{{tr|Enemy NPCs}}| ]]
+
+{{language info|en=Enemies}}

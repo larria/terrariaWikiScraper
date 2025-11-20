@@ -1,0 +1,77 @@
+{{exclusive|1.3.4}}
+{{quotation|[[{{tr|Goblin Tinkerer}}|{{tr|The Goblin Tinkerer}}]]|{{gameText|GoblinTinkererChatter.Chatter_1}}}}
+{{npc infobox |tabs = no
+| namenote =
+| environment = Old One's Army
+| auto = 552
+| imagealt = [[File:Etherian Goblin.gif|link=]] [[File:Etherian Goblin 2.gif|link=]] [[File:Etherian Goblin 3.gif|link=]]
+| type = Etherian Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| sound1 = Dd2 goblin scream 0.wav, Dd2 goblin scream 1.wav, Dd2 goblin scream 2.wav
+| soundcaption1 = 尖叫
+}}
+
+'''{{tr|Etherian Goblin}}'''是一种来自[[{{tr|Old One's Army}}]][[{{tr|event}}]]的{{tr|enemy}}，是大多数波数中最常见的。它通过慢慢接近目标进行攻击，在接触时用武器进行攻击。和{{tr|event}}中的很多其他{{tr|enemies}}一样，它的外观和属性也会变化，取决于玩家在游戏中到达了哪个点。
+
+如果{{tr|Etherian Goblin}}的目标距离太远或被阻挡，它会进入虚化状态，使其能够穿过{{tr|tiles}}。它也不受[[{{tr|Teleporter}}]]或[[{{tr|Lava}}]]影响。
+
+{{tr|The Etherian Goblin}}需要 1000 击杀才能得到其{{tr|banner}}，而非通常的 50 击杀。
+
+== 种类 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 552
+| image = Etherian Goblin.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{npc infobox/modestat|{{#expr:floor({{npcinfo|552|damage}}*1.35)}}|{{#expr:floor({{npcinfo|552|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|552|damage|expert_hardmode}}*1.35)}}||{{#expr:floor({{npcinfo|552|damage|master}}*1.35)}}|{{#expr:floor({{npcinfo|552|damage|master_hardmode}}*1.35)}}}} {{note|small=y|paren=y|{{tr|weapon attack}}}} {{source code ref|v=1.4.0.5|name=atk|method=Terraria.NPC.GetMeleeCollisionData}}
+}}
+{{npc infobox
+| auto = 553
+| image = Etherian Goblin 2.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|{{#expr:floor({{npcinfo|553|damage}}*1.35)}}|{{#expr:floor({{npcinfo|553|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|553|damage|master}}*1.35)}}}} {{note|small=y|paren=y|{{tr|weapon attack}}}} <ref name="atk"/>
+}}
+{{npc infobox
+| auto = 554
+| image = Etherian Goblin 3.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|{{#expr:floor({{npcinfo|554|damage}}*1.35)}}|{{#expr:floor({{npcinfo|554|damage|expert}}*1.35)}}|{{#expr:floor({{npcinfo|554|damage|master}}*1.35)}}}} {{note|small=y|paren=y|{{tr|weapon attack}}}} <ref name="atk"/>
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 花絮 ==
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Goblin}}
+
+== 历史 ==
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Etherian Goblin}}

@@ -1,0 +1,19 @@
+<includeonly><!--
+
+--><tr><!--
+	-->{{#if:{{{id|}}}|<!--
+		--><td align="center">{{{id}}}</td><!--
+	-->}}<!--
+	--><td><code>{{{name}}}</code></td><!--
+	--><td>{{#lstmap:{{{sounds|}}}|,|@@@@|<div>[[:File:@@@@|<esc>{{#rreplace:@@@@|(.)\.[^.]+$|\1}}</esc>]]</div>||}}</td><!-- remove the file extension (everything after the last "." in the name)
+	--><td>{{{source|{{na}}}}}</td><!--
+	--><td align="center">{{#if:{{bool|{{{ambient|}}}}}|{{yes}}|{{no}}}}</td><!--
+--></tr><!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Sound IDs/row}}
+</noinclude>

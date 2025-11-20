@@ -1,0 +1,56 @@
+{{exclusive|1.4.0.1}}
+[[File:BiomeBannerTown.png|center]]
+
+一个'''{{tr|town}}'''是由玩家创建的[[{{tr|mini-biome}}]]，其中存在大于等于 3 名 [[{{tr|NPCs}}]]（包括[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]和[[{{tr|town pets}}]]，但不包括[[{{tr|Skeleton Merchant}}]]）。{{tr|Towns}}会最大化对[[{{tr|enemies}}]][[{{tr|NPC spawning}}|{{tr|spawn}}]]的降低程度<!-- 生成速度和最大生成数量都会受影响。-->{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}，且在[[{{tr|Day and night cycle}}|{{tr|day}}和{{tr|night}}]]都会拥有独特[[{{tr|music}}]]{{source code ref|v=1.4.3.6|method=Terraria.Main.UpdateAudio_DecideOnNewMusic}}。但是，这一降低{{tr|enemy}}生成的效果在[[{{tr|Underworld}}]]中会变弱，且在部分[[{{tr|event}}]]发生时完全不生效。见[[#{{tr|Notes}}|{{tr|Notes}}]]获取详细列表。
+
+== 内容 ==
+{{item/options|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard|class=compact small|type=biome|text=<!--
+	-->{{infocard/mainheading|售卖}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em}}<!--
+		-->{{infocard/box|title=来自任何特定{{tr|biome}}且足够[[{{tr|Happiness}}|快乐]]的[[{{tr|NPC}}]]：|css=flex: 1 1 auto;margin: 0 0.25em 0.5em|<!--
+			-->{{dotlist<!--
+			-->|{{item|Any Pylon}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend|}}<!--
+	-->{{infocard/mainheading|{{tr|Music}}}}<!--
+	-->{{flexstart|css=margin: 0 -0.25em -0.5em;}}<!--
+		-->{{infocard/box|css=margin: 0 0.25em 0.5em;flex:1 1 auto;|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Town Day)|mode=image}} {{sound|[[{{tr|Music}}#{{tr|Town Day}}|{{tr|Town Day}}]]|Music-Town Day.mp3}} {{eicons|1.4.0.1}}<!--
+			-->|{{item|Music Box (Town Night)|mode=image}} {{sound|[[{{tr|Music}}#{{tr|Town Night}}|{{tr|Town Night}}]]|Music-Town Night.mp3}} {{eicons|1.4.0.1}}<!--
+			-->}}<!--
+		-->}}<!--
+	-->{{flexend}}<!--
+-->}}<!--
+-->{{item/options|reset}}{{dotlist/options|reset}}
+
+== 备注 ==
+* 只有在以玩家为中心 240×135 {{tr|tile}}的长方形区域内的 {{tr|NPCs}} 会被视为{{tr|town}}居民。{{source code ref|v=1.4.3.6|method=Terraria.NPC.AddIntoPlayersTownNPCSlots}}。
+* {{tr|town}}提供的{{tr|enemy spawn}}降低效果在以下任意一种情况下都不会生效{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}：
+** 以下任意{{tr|events}}正在发生：[[{{tr|Blood Moon}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Frost Moon}}]]、和[[{{tr|Solar Eclipse}}]]。
+** 以下任意{{tr|events}}正在发生，且玩家位于[[{{tr|surface}}]]及以上：[[{{tr|Goblin Army}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Frost Legion}}]]、和{{eil|Martian Madness}}。
+** 玩家在[[{{tr|Old One's Army}}]]{{tr|event}}的范围内。
+** 玩家在[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、[[{{tr|Dungeon}}]]、或[[{{tr|Meteorite (biome)}}|{{tr|Meteorite}}]]{{tr|biome}}。
+** 玩家在任何[[{{tr|Celestial Pillars}}]]范围内。
+* 虽然创建{{tr|town}}需要大于等于 3 名 {{tr|NPCs}}，[[{{tr|pylons}}]]只需要附近有 2 个 {{tr|NPC}}（包括[[{{tr|Old Man}}]]和[[{{tr|town pets}}]]，但不包括[[{{tr|Skeleton Merchant}}]]和[[{{tr|Traveling Merchant}}]]）即可正常运作。
+* 由于{{tr|town}}中包括多名 {{tr|NPCs}}，[[{{tr|critters}}]]的生成率会提高。
+
+== 图库 ==
+<gallery widths="260px" heights="200px">
+File:Jungle Town.png|[[{{tr|Jungle}}]]{{tr|town}}中住有 3 名 {{tr|NPCs}}：[[{{tr|Witch Doctor}}]]、[[{{tr|Dryad}}]]、[[{{tr|Painter}}]]。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Jungle critters}}在{{tr|Jungle}}{{tr|Town}}中的总体生成率降低。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{language info|en=Town}}

@@ -1,0 +1,140 @@
+'''{{tr|Storage items}}'''是一类[[{{tr|Furniture}}]]{{tr|items}}，放置后可以右键点击以显示四十个[[{{tr|Inventory}}|收纳]]栏位（四行十列），用于存放物品。这些物品让玩家可以卸下多余的物品，释放身上的{{tr|inventory}}空间。它们也可以用于归纳物品，例如，一个[[{{tr|Chest}}]]装[[{{tr|Ores}}]]、另一个装[[{{tr|Gems}}]]。固定式收纳可以重新命名，以进一步帮助归纳物品（参见下文的[[#重命名|重命名]]）。
+
+所有{{tr|Storage items}}都必须先[[{{tr|Placed}}]]才能存取其内容物或存放的物品。它们可以用[[{{tr|Pickaxe}}]]采集，但大多数都必须事先清空（参见下文[[#固定式与便携式收纳|固定式与便携式收纳]]）。{{eicons|Money Trough}} [[{{tr|Money Trough}}]]会召唤出一个{{tr|Flying Piggy Bank}}，让玩家无需放置{{tr|the Piggy Bank}}或任何供其放置于上的{{tr|furniture}}即可存取[[{{tr|Piggy Bank}}]]中所含之物。
+
+== 功能 ==
+[[File:Placed Chests.png|frame|放置的{{tr|storage items}}]]
+[[File:Placed Dressers.png|frame|只在{{eversions|1.3.0.1|short=y}}上{{tr|Dressers}}才是{{tr|storage items}}]]
+{{tr|Storage items}}有一些特别的功能，能改善管理、组织、及效率。
+
+=== 全部拿走 ===
+'''全部拿走'''从{{tr|storage item}}中移除全部物品（从左上角开始）并将它们放置在玩家的{{tr|inventory}}中（从右下角开始）。这方便在寻找宝藏时进行搜刮。
+
+=== 全部放入 ===
+'''全部放入'''的效果与全部拿走相反，将玩家{{tr|inventory}}中的全部物品（从右下角开始）放置到{{tr|storage item}}中（从左上角开始）。任何可以堆叠的物品都会堆叠。这是赶时间卸下大量物品的便捷方法。在[[{{tr|hotbar}}]]中的物品和[[游戏控制#{{tr|Inventory}}|用 Alt-点击或右扳机（主机版）进行收藏]]的物品不会被存入。
+
+=== 快速堆叠 ===
+'''快速堆叠'''会检测你的{{tr|inventory}}中所有能够和{{tr|the storage item}}中的相同物品堆叠的物品，并将其放进去。在必要时，所有物品都会被移动并在收纳中创建新的堆叠。
+快速堆叠还会自动转换你的{{tr|piggy bank}}或{{tr|safe}}中的[[{{tr|coins}}]]。
+
+在主{{tr|inventory}}屏幕上，有一个按钮（在{{tr|coins}}下面）用于“快速堆叠至附近的宝箱上”。这与你手工在每个[[{{tr|chest}}]]上点击快速堆叠几乎相同，但不会快速堆叠{{tr|hotbar}}上的物品，并且会移动不可堆叠的重复物品（例如{{tr|Clothier Voodoo Doll}}）。虽然提示信息说的是“{{tr|chest}}”，但它对于非{{tr|chest}}的{{tr|storage item}}同样有效。它的范围是以玩家为中心距离大约为 36 格的圆，远比正常能自然触及的范围远。
+
+=== 排列物品 {{icon|desktop|console}} ===
+'''排列物品'''将在{{tr|storage item}}内移动物品，将它们按类别排序，并且（大部分）在同一类别内按字母顺序排序。排序方式与玩家{{tr|inventory}}的排序相同（''对于更多细节，参见[[物品栏#排序|物品栏 § 排序]]''）。
+
+=== 重命名 {{eicons|1.3.0.1|console=y}} ===
+'''重命名'''让你能为{{tr|storage item}}输入新名称，这有助于整理大型收纳间。名称最长能有 20 字符（注：一个中文字或一个英文字母均视为一个字符）。此名称可见于功能列表上方，同时也会替换鼠标光标悬停时{{tr|storage item}}的图标显示。可以通过输入空名称来移除名称，恢复为图标和默认名称。在{{tr|console version}}中，你必须离线才能重命名{{tr|chests}}。
+
+=== 补货 {{eicons|1.3.0.1|console=y}} ===
+'''补货'''让你能用{{tr|chest}}中的物品补充{{tr|inventory}}中的所有可堆叠物品。这对于补充[[{{tr|Potions}}]]、建筑块、和其他可堆叠物品很有用。
+
+== 固定式与便携式收纳 ==
+{{tr|Stationary Storage}}是公共的物理收纳空间。{{tr|Portable Storage}}则是通往额外的私人收纳区的存取点，只要你有相应物品，就能在任何地方对其进行存取。
+=== 固定式收纳 ===
+像[[{{tr|Chest}}]]、[[{{tr|Barrel}}]]和[[{{tr|Trash Can}}]]这样的物品是{{tr|Stationary Storage}}的例子。他们有如下不同于{{tr|Portable Storage}}的特点：
+* 这些物品在其中包含物品时必须维持在原地，在清空前'''不能'''被释放或拾取。但若它们不是自然生成的，则会被{{tr|bombs}}炸掉。
+* 每个{{tr|Stationary Storage item}}都有单独的 40 个收纳栏位，可以放置不同物品；例如，2 个{{tr|Trash Cans}}和 3 个{{tr|Chests}}一共能让玩家有 240（加上{{tr|inventory}}）个收纳栏位。
+* {{tr|Stationary Storage}}内容是和世界数据而不是人物数据一起保存的，因此在访问其他世界或{{tr|multiplayer servers}}时对玩家不可用。若将物品放到{{tr|multiplayer World}}中的{{tr|Stationary Storage}}内，其他玩家将能看到并取走其中的东西。
+* 在{{tr|multiplayer servers}}中，当一名玩家正在存取某个{{tr|Stationary Storage item}}时，其他玩家都不能对它进行存取。
+* “快速堆叠至附近的宝箱上”会堆叠到两类{{tr|storage}}中。
+**你可以在{{tr|chest}}打开时从其中制作物品，而无需事先将其内容物放到玩家的{{tr|inventory}}中。
+
+=== 便携式收纳 ===
+{| class="terraria" style="margin-top: 0em; margin-bottom: 0.5em; margin-left: 1em; padding: 0.2em; float: right; clear: right;"
+! style="padding: 5px; font-size: 120%; " colspan="3" | 便携式收纳
+|-
+| {{item|Piggy Bank}}
+|-
+| {{item|Money Trough}}
+|-
+| {{item|Void Vault}}
+|-
+| {{item|Void Bag}}
+|-
+| {{item|Safe}}
+|-
+| {{item|Defender's Forge}}
+|-
+| {{item|Eye Bone}}
+|}
+[[{{tr|Piggy Bank}}]]、[[{{tr|Safe}}]]、{{eil|Defender's Forge}}、{{eil|Void Vault}}、{{eil|Void Bag}}、{{eil|Money Trough}}、和{{eil|Eye Bone}}是仅有的{{tr|Portable Storage}}实例。它们有如下不同于{{tr|Stationary Storage}}的特点：
+* 这些物品'''可以'''在它们内含物品时释放或拾取，这使得它们成为有效增加玩家{{tr|inventory}}栏位的宝贵工具。
+* 所有同类型的{{tr|Portable Storage items}}共享同一套收纳栏；例如，购买多个{{tr|Safes}}不会为玩家提供更多收纳栏位，因为各个{{tr|Safe}}存取的是同一套共享的 40 栏位{{tr|portable storage}}空间，但多个{{tr|Safes}}会为玩家提供更多存取{{tr|Safes}}的共享 40 栏位内容的地点。同样的规则适用于{{tr|Piggy Banks}}和{{tr|the Defender's Forge}}：每种类型的物品都有一个单独的 40 栏位收纳栏，由所有该类型的同种物品共享。如果玩家购买了{{tr|Defender's Forge}}、{{tr|Safe}}、{{tr|Piggy Bank}}、并制作了{{tr|Void Vault}}，将拥有共计 160 个{{tr|Portable Storage}}栏位，这是任何一个人物可以拥有的最大{{tr|Portable Storage}}空间。相比之下，如果玩家只是购买了四个{{tr|Piggy Banks}}，将只有 40 栏位的{{tr|portable storage}}空间，虽然可以从任意一个{{tr|Piggy Banks}}存取此空间。
+* {{tr|Portable Storage}}内容是和人物数据而非世界数据一起保存的。你可以带着其中的东西从一个世界到另一个世界、从一个服务器到另一个服务器。在{{tr|multiplayer servers}}中，其他玩家存取你所放置的{{tr|a piggy bank}}会看到'''他们自己的'''{{tr|Portable Storage}}，而非你的。其他玩家永远无法存取你的{{tr|Portable Storage}}中的物品。
+* 在{{tr|multiplayer servers}}中，多名{{tr|players}}可以同时存取同一个{{tr|Portable Storage}}。
+* 定期将你收集到的{{tr|coins}}转移到{{tr|Portable Storage}}非常有用，特别是在探索全新区域或者危险区域时。万一[[死亡]]，存放在那的{{tr|Coins}}不会丢失，哪怕内含这些{{tr|Coins}}的{{tr|Portable Storage}}设备当时是在你的人物的{{tr|inventory}}中。
+* {{tr|Portable Storage}}物品不能重命名。
+**可以用你的人物收纳中的所有钱来购买物品——包括你的[[{{tr|inventory}}]]、{{tr|Piggy Bank}}、{{tr|Safe}}、{{tr|Void Vault}}、和{{tr|Defender's Forge}}中的钱。
+* “快速堆叠至附近的宝箱上”会堆叠到两类{{tr|storage}}中。{{eicons|1.4.0.1}} 在快速堆叠时，{{tr|Portable storages}}始终优先。
+* {{tr|portable storage}}的栏位在颜色上略偏浅粉红色，与{{tr|stationary storage}}栏位的褐红色形成对照。这有助于快速识别你正在存取的收纳区的类型。
+* {{tr|Portable Storage items}}可以放置在其他类型的{{tr|storage}}中，包括放在其他{{tr|Portable Storage}}内。例如，{{tr|the Safe}}可以放在{{tr|the Piggy Bank}}内随身携带。但不允许在{{tr|Portable Storage}}处于收纳状态时使用它。在前面这个例子中，玩家如果要使用{{tr|the Safe}}，就必须将{{tr|the Piggy Bank}}放置下来（或者使用{{tr|a Money Trough}}）、从中取出{{tr|the Safe}}、再将{{tr|the Safe}}放下才能存取其内容。
+
+{{eicons|1.3.0.1}} {{tr|The Money Trough}}、{{tr|the Piggy Bank}}和{{tr|the Eye Bone}}共享同一套收纳空间。主要区别在于{{tr|the Money Trough}}不需要{{tr|solid block}}来供其放置其上，而当使用它时会召唤一个[[File:Flying Piggy Bank.png|30px]]{{tr|Flying Piggy Bank}}，后者能存在于任何{{tr|block}}上并能通过右键点击来存取，类似于{{tr|the piggy bank}}那样。{{tr|the Eye Bone}}会召唤名叫{{tr|Chester}}的{{tr|pet}}跟随玩家。{{tr|The Money Trough}}罕见掉落于[[{{tr|Blood Moon}}]]期间的[[{{tr|Drippler}}]]和[[{{tr|Blood Zombie}}]]，而{{tr|the Eye Bone}}则有几率掉落自[[{{tr|Deerclops}}]]。
+
+== 陈列式收纳 ==
+{| class="terraria" style="margin-top: 0em; margin-bottom: 0.5em; margin-left: 1em; padding: 0.2em; float: right; clear: right;"
+! style="padding: 5px; font-size: 120%; " colspan="4" | 陈列式收纳
+|-
+| {{item|Mannequin}}
+|-
+| {{item|Womannequin}}
+|-
+| {{item|Hat Rack}}
+|-
+| {{item|Weapon Rack}}
+|-
+| {{item|Item Frame}}
+|-
+| {{Item|Plate}}
+|}
+* [[{{tr|Armor}}]]、[[{{tr|Accessories}}]]、和[[{{tr|Vanity items}}]]（仅限 {{eicons|1.4.0.1}}）全都能放置到[[{{tr|Mannequin}}|{{tr|Mannequins}}]]和[[{{tr|Womannequin}}|{{tr|Womannequins}}]]上，并且也能对它们使用[[{{tr|Dyes}}]]。
+* 任何类型的{{tr|Hats and Helmets}}都能放置在[[{{tr|Hat Rack}}]]上。
+* [[{{tr|Weapons}}]]和很多[[{{tr|Tools}}]]可以放在[[{{tr|Weapon Rack}}]]上。
+* 所有类型的物品都能放在[[{{tr|Item Frame}}]]中。
+* 能够给予任何一种[[{{tr|Well Fed}}]]{{tr|buff}}或[[{{tr|Tipsy}}]]{{tr|debuff}}的[[{{tr|Food and drink potions}}|{{tr|Food and drink}}]]{{tr|items}}都能放置在[[{{tr|Plate}}]]上。
+
+== 备注 ==
+* 每个世界最多可容纳 8000 个{{tr|storage items}}（不包括便携式和陈列式{{tr|storage items}}）。试图放置更多{{tr|storage items}}会导致此{{tr|item}}立即以物品形式掉落到地面，而非被放置下来。
+
+== {{tr|Trivia}} ==
+* 四种用于{{tr|portable storage}}的{{tr|item}}中有两种可从[[{{tr|Merchant}}]]处购买：[[{{tr|Piggy Bank}}]]（{{iteminfo|Piggy Bank|buy}}）和[[{{tr|Safe}}]]（{{iteminfo|Safe|buy}}）。
+
+== 历史 ==
+{{history|Desktop 1.4.4.4|显著扩大了{{tr|Quick Stack}}至附近的便携式{{tr|storage items}}的范围。}}
+{{history|Desktop 1.4.4|
+** {{tr|Quick Stack}}至附近的{{tr|Chest}}现在有了视觉效果，可以显示被{{tr|Quick Stack}}的{{tr|Item}}移动至{{tr|Chest}}。
+** 显著扩大了{{tr|Quick Stack}}至附近的{{tr|Chest}}的范围}}
+{{history|Desktop 1.4.0.1|
+** 扩大了{{tr|Quick Stack}}的范围。
+** 添加了{{tr|Void Bag and Void Vault}}。}}
+{{history|Desktop 1.3.4|添加了[[{{tr|Defender's Forge}}]]{{tr|item}}。}}
+{{history|Desktop 1.3.0.4|修正了“快速堆叠至附近宝箱上”按钮在旧的或者装了 Mod 的世界中可能吞掉东西的问题。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Item Frame}}]]和新[[{{tr|Chests}}]]。
+** {{tr|Dressers}}现在可以充当{{tr|chests}}。
+** {{tr|Quick Stack}}现在会在{{tr|chests}}中为{{tr|inventory}}中所拥有的物品创建新的堆叠（如果适用）。
+** [[{{tr|NPC}}]]现在会避免坐在{{tr|chests}}附近。
+** {{tr|Chests}}打开/关上现在有动画了。
+** 添加了[[{{tr|Game controls}}#{{tr|Inventory}}|{{tr|favorite items}}]]，通过按住 Alt 然后点击物品实现。{{tr|Favorite}}的{{tr|items}}不能被快速丢弃、快速堆叠和出售。
+** 增加了一个{{tr|inventory}}按钮来快速堆叠至附近的宝箱上，让库存管理更加快捷。
+** 现在可以在[[{{tr|chest}}]]打开时从其中制作物品，而无需事先将其内容物放到玩家的{{tr|inventory}}中。
+** 现在可以用{{tr|Portable Storage}}中的所有钱来购买物品——包括[[{{tr|inventory}}]]、[[{{tr|Piggy Bank}}]]、和[[{{tr|Safe}}]]中的钱。
+}}
+{{history|Desktop 1.2.3.1|修正了{{tr|coins}}会在[[{{tr|Quick Stack}}]]中消失的问题。修正了一个可以借助快速堆叠复制{{tr|coins}}的漏洞。}}
+{{history|Desktop 1.2.3|放置的{{tr|storage items}}现在可以重命名了。}}
+{{history|Desktop 1.2|
+** 现在要用[[{{tr|Pickaxe}}]]来移除，取代了之前的[[{{tr|Hammer}}]]。
+** 收纳栏位从 20 个提升到 40 个。
+** 添加了多种新{{tr|chest}}。
+}}
+{{history|Desktop 1.0.6|添加了全部拿走、全部放入和{{tr|Quick Stack}}这几个功能。}}
+{{history|Console 1.08|添加了{{tr|Chest}}命名、快速堆叠、和补货。}}
+
+{{Game mechanics}}
+{{Master Template Furniture
+| show-storage = yes
+}}
+
+[[Category:收纳物品| ]]
+
+{{language info|en=Storage items}}

@@ -1,0 +1,47 @@
+<includeonly><!--
+
+-->{{#vardefine:_cr_itemid|{{{itemid|{{itemIdFromName|{{{1|}}}|lang=en}}}}}}}<!--
+-->{{#vardefine:_cr_npcid|{{{npcid|{{npcIdFromName|{{{1|}}}|lang=en}}}}}}}<!--
+
+-->
+|-
+| {{item|mode=table|{{{1|}}}|id={{#var:_cr_itemid}}}}
+| align=left | {{#or:<!--
+	-->{{#af_stringmap:<!--
+		// fetch environment info for the critter from Cargo
+		-->{{#af_get:{{#invoke:CargoQuery|afExport|q?tables=NPCs|q?fields=environment|plainList=environment|q?where=npcid={{#var:_cr_npcid|0}}|q?groupBy=npcid}}|1}}<!--
+	// the environment info looks e.g. like this: "The Hallow/Surface+Night/Space"
+	// split this into environment "groups", e.g. "The Hallow", "Surface+Night", and "Space"
+	-->|/|envgroup|<!--
+		// then link each of the environments in the "group" (separated by "+"), e.g. "[[The Hallow]]", "[[Surface]]+[[Night]]", and "[[Space]]"
+		-->{{#af_stringmap:{{{envgroup}}}|+|env|<!--
+			// only add a link if the page exists in the local language
+			-->{{ifexists|{{tr|{{{env}}}|link=y}}|[[{{tr|{{{env}}}|link=y}}|{{tr|{{{env}}}}}]]|{{tr|{{{env}}}}}}}<!--
+		-->|+}}<!--
+	-->|&thinsp;/&thinsp;<!--
+	-->}}<!--
+-->|<!--
+	-->{{na}}<!--
+-->}}
+| align=left | {{tr|{{npc infobox/AI|{{npcinfo|{{#var:_cr_npcid}}|ai}}}}}}<!--
+	// special cases: Ducks and the Truffle Worm exist as two NPCs, with two different AI types
+	-->{{#switch:{{#var:_cr_npcid}}<!--
+		// Ducks
+		-->|362|364=&#32;{{note|small=y|paren=y|ground}}<br/>{{tr|{{npc infobox/AI|{{npcinfo|363|aiStyle|raw=y}}}}}} {{note|small=y|paren=y|flying}}<!--
+		// Truffle Worm
+		-->|374=&#32;{{note|small=y|paren=y|regular}}<br/>{{tr|{{npc infobox/AI|{{npcinfo|375|aiStyle|raw=y}}}}}} {{note|small=y|paren=y|burrowing}}<!--
+	-->}}
+| {{#if:{{#var:_cr_itemid}}|{{rare|{{iteminfo|{{#var:_cr_itemid}}|rare|raw=yes}}|category=y}}|{{na}}}}
+| align=right | {{#if:{{#var:_cr_itemid}}|{{iteminfo|{{#var:_cr_itemid}}|sell}}|{{na}}}}
+| {{#ifexpr:{{iteminfo|{{#var:_cr_itemid}}|bait|raw=y}}>0|{{iteminfo|{{#var:_cr_itemid}}|bait}}|{{na}}}}
+| align=left style="max-width:400px" | {{{2|}}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Prints a row of the main table, automatically and dynamically generating all relevant data. Put the name of the critter as the first unnamed parameter and additional notes (last column) as the second. Use the <code>itemid</code> and <code>npcid</code> parameters to force the respective IDs (on which the data gathering is based), in case there are unexpected results.
+
+{{language info|en=Critters/row}}
+</noinclude>

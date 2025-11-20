@@ -1,0 +1,43 @@
+{{item infobox
+| type = Seeds
+| auto = 195
+| stack = @@@@ {{eicons|1.4.4|small=y}} / 99 {{eicons|1.4.0.1|invert=y|small=y}}
+| tags = plunder
+}}
+
+[[{{tr|Jungle Grass Seeds}}]]是一种[[{{tr|Seeds}}]]，可以种在[[{{tr|Mud Block}}]]上以令其长出{{tr|Jungle Grass}}。假如产生了足够多的{{tr|Jungle grass and plants}}，就可以通过这种方法创造出一片[[指南:人工生物群系|人工]]的[[{{tr|Jungle}}]]或[[{{tr|Underground Jungle}}]]（取决于深度）。{{tr|Jungle Grass Seeds}}可以使用任意{{tr|tool or weapon}}摧毁[[草#草上的野生植物|生长在{{tr|Jungle grass}}上的{{tr|plants}}]]得到。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Jungle Grass Seeds|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Jungle Grass Seeds|expectedrows=4}}
+
+== 备注 ==
+* {{tr|Jungle Grass Seeds}}会在摧毁任何[[草#草上的野生植物|生长在{{tr|Jungle grass}}上的{{tr|plants}}]]时以 {{chance|1/100}} 的几率掉落。
+* 仅仅将{{tr|Jungle grass}}种在海拔高度 0 以下，是''不会''创造出{{tr|Underground Jungle environment}}的。{{tr|Natural Underground Jungles}}在{{tr|small world}}中从 -60 {{tr|feet}}的海拔高度开始计算，在{{tr|medium world}}中则是 -90 {{tr|feet}}，在{{tr|large world}}中则为 -120 {{tr|feet}}。
+* {{tr|Jungle grass}}的生长速度与[[{{tr|Mushroom grass}}]]相当，比普通[[{{tr|grass}}]]的生长速度低得多。
+
+== 小贴士 ==
+{{for|刷取生长在{{tr|Jungle grass}}上的{{tr|items}}的{{tr|tips}}|指南:刷资源#鱼饵农场}}
+* 可以使用[[{{tr|Flower Boots}}]]快速创造野生的{{tr|Jungle plants}}，这可以让玩家获得大量的{{tr|Jungle Grass Seeds}}（但掉率较低）。
+* 可以使用[[{{tr|Mushroom Grass Seeds}}]]替代{{tr|Jungle Grass Seeds}}，因为{{tr|Mushroom grass}}可以使用[[{{tr|Clentaminator}}]]/{{eil|Terraformer}}和[[{{tr|Green Solution}}]]转化为{{tr|Jungle grass}}。{{tr|Mushroom Grass Seeds}}获取起来要容易得多，因为它们可以购买。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Leafy Jungle Wall}}]]和[[{{tr|Jungle Vine Wall}}]]的{{tr|crafting recipes}}。
+** {{tr|Stack limit}}从 99 提升至 999。}}
+{{history|Desktop 1.3.0.1|现在可以自动使用了。}}
+{{history|Desktop 1.0.3|修正了阻止{{tr|Jungle Grass Seeds}}掉落的 {{tr|bug}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-seed = yes
+}}
+
+{{language info|en=Jungle Grass Seeds}}

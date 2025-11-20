@@ -1,0 +1,81 @@
+__NOTOC__
+{{item infobox
+| imagealt = [[File:Wrench.png|Red Wrench|link=]] [[File:Green Wrench.png|Green Wrench|link=]] [[File:Blue Wrench.png|Blue Wrench|link=]] [[File:Yellow Wrench.png|Yellow Wrench|link=]]
+| name = Wrenches
+| auto = 509<!-- use its stats as base-->
+| type = Tool
+| tooltip = 
+| buy = yes
+| cargo = no
+| showids = no
+}}
+<div style="float:right">[[File:Multicolored wires.png|thumb|right|不同的线颜色用于构建独立的重叠电路。]]</div>
+
+'''{{tr|Wrench}}'''是一个用来放置[[{{tr|Wire}}]]的[[{{tr|tool}}]]。电线用于把多个[[{{tr|mechanisms}}]]连接在一起，例如一个[[{{tr|trap}}]]和[[{{tr|Pressure Plate}}]]。所有扳手从[[{{tr|Mechanic}}]]购买，每个{{gc|2}}。
+
+拿着扳手可以让玩家看到铺设的电线。导线存在于它们自己的层中，因此可以放置在[[{{tr|furniture}}]]、[[{{tr|blocks}}]]和[[{{tr|walls}}]]上。
+
+目前有四种不同的扳手：'''{{tr|Red Wrench}}'''、'''{{tr|Green Wrench}}'''、'''{{tr|Blue Wrench}}'''和[[{{tr|Desktop version}}]]专有的'''{{tr|Yellow Wrench}}'''，每个都放置各自颜色的电线。所有扳手使用与[[{{tr|ammunition}}]]相同的普通[[{{tr|Wire}}]]物品，但使用的扳手颜色将决定放置时的电线颜色。颜色都具有相同的功能，但可以放置成彼此重叠或相交而不会相互干扰。[[{{tr|Junction Box}}]]可以进一步用于保持相同颜色的相交电线路径不会相互干扰。
+
+所有四个扳手都可以组合成一个[[{{tr|Multicolored Wrench}}]]，这是一种可以放置任何颜色线材的工具。
+
+普通扳手不能用于移除已放置的电线。相反，需要[[{{tr|Wire Cutter}}]]或其衍生物品之一（{{eil|Multicolor Wrench}}、{{eil|Grand Design}}）。回收后，所有颜色的电线再次变成相同的普通导线物品。
+
+== 类型 ==
+{{Infobox wrapper|direction=row|float=none
+|{{Infobox wrapper|direction=row|float=none
+|{{item infobox | boxwidth = 17em
+| type = Tool
+| auto = 509
+| tags = Wiring / buyable / vendor:Mechanic
+}}
+|{{item infobox | boxwidth = 17em
+| type = Tool
+| auto = 850
+| tags = Wiring / buyable / vendor:Mechanic
+}}
+}}
+|{{Infobox wrapper|direction=row|float=none
+|{{item infobox | boxwidth = 17em
+| type = Tool
+| auto = 851
+| tags = Wiring / buyable / vendor:Mechanic
+}}
+|{{item infobox | boxwidth = 17em
+| type = Tool
+| auto = 3612
+| tags = Wiring / buyable / vendor:Mechanic
+}}
+}}
+}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE % Wrench|resultnot=The Grand Design|expectedrows=1}}
+
+== 备注 ==
+* 扳手不能放在[[{{tr|Weapon Rack}}]]上。
+* 在[[{{tr|multiplayer}}]]上为每个玩家配备不同颜色的扳手可能很有用，因为每个玩家都会获得自己独特的电线颜色。
+* 在探索时使用扳手或其它显示电线的工具非常有用，因为它会使隐藏的陷阱更容易看到。
+
+== 历史 ==
+{{history|Desktop 1.3.1|
+** 引入黄色扳手。
+** 现在用于制作[[{{tr|Multicolor Wrench}}]]。
+** 外观更新。}}
+{{history|Desktop 1.3.0.1|大幅增加范围。}}
+{{history|Desktop 1.2.0.3|增加范围。}}
+{{history|Desktop 1.2|引入不同颜色的扳手，用于不同颜色的电线。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+
+{{Wiring}}
+{{Master Template Tools
+| show-main = yes
+| show-other = yes
+}}
+
+{{language info|en=Wrenches}}

@@ -1,0 +1,22 @@
+<includeonly><!--
+
+--><tr><!--
+	--><td>{{{1|}}}</td><!--
+	--><td align="center">[[File:{{getMountInfo|{{{1|}}}|image}}]]</td><!--
+	--><td><!--
+		-->{{#vardefine:_mountname|{{getMountInfo|{{{1|}}}|name}}}}<!--
+		-->{{eil|{{#or:{{getMountInfo|{{{1|}}}|summon}}|{{#var:_mountname}}}}|<!--
+			-->{{trim|{{ucfirst:{{#rreplace:{{tr|{{#var:_mountname}}}}|[Mm]ount|}}}}}}<!-- strip "mount" from the name
+			-->{{#if:{{#vardefineecho:_mountnamesub|{{getMountInfo|{{{1|}}}|namesub}}}}|{{note|before={{nbsp}}|paren=y|{{tr|{{#var:_mountnamesub}}}}}}}}<!-- print namesub if available
+		-->}}<!--
+	--></td><!--
+	--><td><code>{{getMountInfo|{{{1|}}}|iname}}</code></td><!--
+--></tr><!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Mount IDs/row}}
+</noinclude>

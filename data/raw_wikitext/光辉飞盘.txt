@@ -1,0 +1,71 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 561
+| tags = hardmode / drop
+| listcat = Boomerangs
+}}
+[[File:Light Disc (demo).gif|framed|{{eicons|1.4.4}}{{tr|The Light Disc}}攻击[[{{tr|Target Dummy}}]]并从{{tr|blocks}}上反弹。]]
+
+'''{{tr|Light Disc}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|boomerang}}]]，它会在击中[[{{tr|enemy}}]]或到达最大范围后返回玩家。{{tr|Light Disc}}的物理效果类似[[{{tr|Thorn Chakram}}]]，能够在{{tr|solid blocks}}上反弹，不过{{tr|Light Discs}}的范围是后者的近两倍。和大部分其他{{tr|boomerangs}}不同，{{tr|Light Disc}}被丢出后玩家无需等待其返回即可继续丢出更多的{{tr|Light Disc}}，同时最多可丢出 6 个{{tr|Light Disc}}。{{tr|Light Discs}}也拥有发光的纹理，使得完全黑暗中也能看见它。它被投出时还会有蓝色的轨迹。
+
+{{modifier|meleealt}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Light Disc|expectedrows=1}}
+
+== 备注 ==
+* {{tr|Light Disc}}会先飞行 {{duration|30 ticks}}，然后开始减速并最终转向以返回玩家处。这使得其最大范围为约 32.85 格。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 3</code> 代码段。}}
+** [[{{tr|Melee speed}}]]{{tr|bonuses}}会提高{{tr|boomerang}}的{{tr|velocity}}，从而提高其范围。
+*** 相反地，[[{{tr|liquid}}]]会减慢{{tr|boomerang}}并降低其范围。
+** 一旦{{tr|boomerang}}开始减速，它将能无限地穿透并能够穿过实心{{tr|tile}}。这使得它在接近其最大范围时可多次击中{{tr|enemies}}并略微穿过{{tr|tiles}}。
+* {{tr|Light Disc}}返回玩家时的最高速度为 {{mph|16 pixels}}，在消失前最多可存在 1 分钟。如果它距离玩家超过 187.5 格，它也会消失。
+* 由于其无限反弹的能力，在很小的空间内以锐角反弹的{{tr|Light Discs}}会引发过多的反弹与粒子效果，可能会导致卡顿。
+* 将{{tr|Light Disc}}直接对着墙发射使其有能力穿透玩家身后的 1 格宽的墙。
+
+== 小贴士 ==
+* {{tr|Light Discs}}在小区域或小房间内与{{tr|enemies}}对战非常高效。
+* {{tr|The Light Discs}}对付[[{{tr|the Twins}}]]非常有效，因为它们通常会复制玩家的移动或者直接追逐玩家，因此很容易命中。
+
+== 花絮 ==
+* {{tr|Light Discs}}与 1982 年的美国科幻动作冒险电影{{维基百科|b=y|Tron|t=创}}中的身份盘（identity disc）很像。其{{tr|tooltip}}<i>{{itemTooltip|561}}</i>是电影中的一句台词。
+* {{tr|The Light Disc}}的{{tr|sprite}}在{{old-gen console version}}和 1.3 前的{{mobile version}}''[[{{tr|Terraria}}]]''中被用作地图的加载图标。
+* {{icon/mobile}} 在[[{{tr|Mobile 1.2.6508}}]]（等同于 [[1.2]]）之前，不管堆叠数量是多少，玩家都可以扔出无限数量的{{tr|Light Discs}}（不过它们仍会返回玩家处）。
+
+== 历史 ==
+{{history|Desktop 1.4.4.3|{{tr|Sell value}}由 {{gc|30}} 降低至 {{gc|15}}。}}
+{{history|Desktop 1.4.4|
+** 现在是单个物品，而非能堆叠 5 个的物品。因此，它现在能获得[[{{tr|modifiers}}]].
+** {{tr|Recipe}}消耗乘以 5（因为玩家现在只需要制作 1 个）：现在需要 20 个{{tr|Hallowed Bars}}而非 4 个、15 个{{tr|Souls of Light}}而非 3 个、和 25 个{{tr|Souls of Might}}而非 5 个。相似地，其售价提高到 5 倍（{{gc|30}} 而非 {{gc|6}}）。
+** {{tr|Damage}}由 57 提升至 60。
+** {{tr|Use time}}由 15 降低至 14。
+** 现在同时最多发射 6 个飞盘，而非 5 个。
+** {{tr|Projectile speed}}/距离由 13 增加至 16。}}
+{{history|Desktop 1.4.0.1|{{tr|Sell value}}由 {{gc|10}} 降低至 {{gc|6}}。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Damage}}由 35 提升至 57。}}
+{{history|Desktop 1.2|{{tr|Crafting recipe}}有所变更。现在用 4 个[[{{tr|Hallowed Bars}}]] 而非 10 个[[{{tr|Cobalt Bar}}]] 和 10 个[[{{tr|Mythril Bar}}]]制作。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|现在用{{tr|Hallowed Bars}}而非{{tr|Cobalt Bar and Mythril Bars}}制作。}}
+{{history|Console 1.01|不再能抛出无限数量的{{tr|Light Discs}}（即使{{tr|inventory}}中只有 1 个）。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|[[{{tr|Mimics}}]]不再掉落{{tr|Light Disc}}。}}
+{{history|Mobile 1.2.12773|移除了进入地图功能时的加载图标，此前会显示一个小的{{tr|Light Disc}}。{{verify|具体版本？}}{{icon|ios}}}}
+{{history|Mobile 1.2.6508|
+** 现在用{{tr|Hallowed Bars}}而非{{tr|Cobalt Bar and Mythril Bars}}制作。
+** 不再能抛出无限数量的{{tr|Light Discs}}（即使{{tr|inventory}}中只有 1 个）。{{verify|需要确认版本号。可能是 1.2.10061 更新？}}}}
+{{history|Mobile 1.1.5536|{{tr|Mimic}}有 {{chance|1/7}} 几率掉落{{tr|Light Disc}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}{{verify|页面历史中首次提及是在 1.1.5536 更新之后}}}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hallowed}}
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Light Disc}}

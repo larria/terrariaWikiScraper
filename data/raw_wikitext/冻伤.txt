@@ -1,0 +1,46 @@
+{{exclusive|1.4.1}}
+{{buff infobox
+| auto = 324
+| | effects = -8 {{tr|health}}<small>/秒（对玩家）</small><br/>-25 {{tr|health}}<small>/秒（对 NPC）</small><br/>停止{{tr|health regeneration}}
+}}
+
+'''{{tr|Frostbite}}'''是一个[[{{tr|debuff}}]]，会导致受影响的实体每秒损失 25 {{tr|health}}。它是[[{{tr|Frostburn}}]]的更强版本，只会在[[{{tr|Hardmode}}]]中出现。他会受到[[{{tr|Oiled}}]]{{tr|debuff}}的影响，使得受影响的实体每秒钟额外受到 25 点 {{tr|damage}}，每秒钟总计受到 50 {{tr|damage}}。
+
+== 原因 ==
+=== 来自玩家 ===
+{| class="terraria"
+! colspan=2 | 来源
+! 持续时间
+! 几率
+! 总伤害
+|-
+{{debuff source|Amarok}} || 50-125
+{{debuff source|Cool Whip}} || 100
+{{debuff source|Elf Melter}} || 500
+{{debuff source|Flower of Frost}} || 125-350
+|-
+| {{item|mode=table|Frostbrand|note2=({{eicons|1.4.4}} {{tr|frost bolt}})}} || 4 {{tr|seconds}} || 100% || 100
+|-
+{{debuff source|Frost Staff}} || 175
+{{debuff source|Staff of the Frost Hydra}} || 125
+|-
+| {{item|mode=table|Frost armor|note2=({{eicons|1.4.1}} {{tr|Ranged or melee}}攻击)}} || 5–14 {{tr|seconds}} || 100% || 125-350
+|-
+| {{item|mode=table|Wand of Frosting|note2=(在 [[{{tr|don't dig up}}]] / [[{{tr|getfixedboi}}]] {{tr|seeds}}中)}} || 2-3 {{tr|seconds}} || 50% || 50-75
+|}
+
+== 免疫的 {{tr|NPCs}} ==
+{{immunities|Frostbite}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|大部分造成[[{{tr|Frostburn}}]]的[[{{tr|Hardmode}}]]{{tr|items}}改为造成{{tr|Frostbite}}。}}
+{{history|Desktop 1.4.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced.}}}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+
+{{language info|en=Frostbite}}

@@ -1,0 +1,39 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4707
+| type = Weapon / Tool
+| tags = vendor / vendor:Clothier
+| listcat = shortswords
+}}
+[[File:Tragic Umbrella (demo).gif|frame|玩家使用{{tr|Tragic Umbrella}}下落并攻击一个[[{{tr|Target Dummy}}]]。注意在半空中攻击时，下落速度会提升。]]
+
+'''{{tr|Tragic Umbrella}}'''是一件手持{{tr|item}}和[[{{tr|melee weapon}}]]，在[[{{tr|Graveyard}}]]中时可以在[[{{tr|Clothier}}]]处以 {{iteminfo|Tragic Umbrella|buy}} 的价格购买。除了更高的{{tr|melee damage}}以外，它的功能和普通的[[{{tr|Umbrella}}]]完全相同。
+
+手持时，{{tr|Tragic Umbrella}}会出现在玩家{{tr|character}}上方，允许玩家以缓慢的速度下落，并防止[[{{tr|fall damage}}]]。玩家可以按住 {{key|down}} 来提高下落速度。
+
+{{modifier|melee}}
+
+== 备注 ==
+* {{tr|Tragic Umbrella}}比起[[{{tr|Umbrella}}]]毫无可取之处，只是[[{{tr|damage}}]]更高了。在可以获得它的时期（打败[[{{tr|Skeletron}}]]之后），玩家通常已经拥有了能够取消[[{{tr|fall damage}}]]的{{tr|accessory}}或是普通的[[{{tr|Umbrella}}]]，而且也有大量的{{tr|Skeletron}}之前的{{tr|weapon}}拥有比它高的[[{{tr|Damage}}]]。
+* 在半空中使用{{tr|Tragic Umbrella}}攻击时，玩家的下落速度在攻击期间不会减慢。
+* 虽然{{tr|Tragic Umbrella}}的效果类似于[[{{tr|Featherfall}}]]的效果，它们并不是同一种效果，因此能互相叠加。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_ApplyHoldStyle}}不过，{{tr|Tragic Umbrella}}和{{tr|Featherfall}}效果相结合时，只能略微地改变下落速度。
+
+== 花絮 ==
+* 根据其外观以及只能在{{tr|Graveyard}}中购买的事实，这件{{tr|item}}很可能是参考了“葬礼雨伞”：一种在下雨时，殡葬者用于遮盖葬礼参加者的伞。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+{{Master Template Tools
+}}
+
+{{language info|en=Tragic Umbrella}}

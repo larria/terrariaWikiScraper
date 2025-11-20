@@ -1,0 +1,64 @@
+{{exclusive|Psycho}}
+{{item infobox
+| auto = 3106
+| listcat = Broadswords
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Psycho Knife (demo).gif|frame|right|使用中的{{tr|The Psycho Knife}}。注意极快的使用速度，以及{{tr|stealth mode}}下更高的伤害。]]
+
+'''{{tr|Psycho Knife}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|Swords}}|{{tr|sword}}]]。手持{{tr|Psycho Knife}}且站定不动时{{source code ref|v=1.4.4.9|method=Terraria.Player.Update|t=实际条件为玩家的水平和垂直{{tr|movement speed}}低于 0.1 像素/{{tr|tick}}。}}，玩家会很快进入[[{{tr|stealth}}]]，使得他们变得几乎完全不可见、移动更慢、且不再会被某些[[{{tr|enemies}}]]的{{tr|projectile attacks}}作为目标。{{tr|The Psycho Knife}}有 {{chance|1/40}} / {{expert|{{chance|79/1600}}}} 几率掉落自[[{{tr|Solar Eclipse}}]][[{{tr|event}}]]期间的[[{{tr|Psycho}}]]。
+
+{{tr|Stealth}}是逐渐激活的，这一过程需要 {{duration|{{#expr:1/0.02}}ticks}}，在这期间玩家会获得数项线性提升至以下值的属性变化：{{source code ref|name=update|v=1.4.4.9|method=Terraria.Player.Update / Terraria.Player.ItemCheck_OwnerOnlyCode}}
+* +300% [[{{tr|melee}}]][[{{tr|damage}}]]（没有其他{{tr|melee bonuses}}时会将{{tr|weapon}}的{{tr|damage}}提升至 {{#expr:{{iteminfo|raw=y|Psycho Knife|damage}}*4}}）
+* +30% {{tr|melee}}[[{{tr|Critical hit}}|{{tr|critical chance}}]]（{{percent|34%}} 基础几率）
+* +100% {{tr|melee}}[[{{tr|knockback}}]]（{{knockback|{{#expr:{{iteminfo|raw=y|Psycho Knife|knockback}}*2}}|full=y|class=}}{{tr|base knockback}}）
+* -750 [[{{tr|aggro}}]]
+* -50% [[{{tr|movement speed}}]]；然后将{{tr|sprint speed}}设为与{{tr|move speed}}相等
+
+{{tr|stealth mode}}下，如果玩家没有在使用任何{{tr|item}}，[[{{tr|Fighter AI}}]] 和[[{{tr|Flying AI}}]] 的{{tr|enemies}}就不会向玩家发射[[{{tr|projectiles}}]]。
+
+{{tr|Stealth mode}}会在击中目标{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyNPCOnHitEffects / Terraria.Player.ItemCheck_MeleeHitPVP}}、切换到其他{{tr|item}}、骑乘[[{{tr|Mounts}}|{{tr|mount}}]]<ref name="update"/>、或受到伤害{{source code ref|v=1.4.4.9|method=Terraria.Player.Hurt}}时取消。仅挥舞{{tr|weapon}}或移动不会取消{{tr|stealth}}。不过，在{{tr|stealth mode}}完全激活前移动或挥舞{{tr|weapon}}会很快地取消{{tr|stealth}}。
+
+{{modifier|melee}}由于取整，{{tr|Light}}{{tr|modifier}}给出的{{tr|speed bonus}}和{{tr|Legendary}}一样，而其他奖励更少。
+
+== 备注 ==
+* {{tr|Psycho Knife}}只能获得 33% 的{{tr|melee speed bonus}}。{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;BonusMeleeSpeedMultiplier}}
+* 如果通过击中目标取消{{tr|stealth mode}}，玩家在接下来的 {{duration|15ticks}}内无法再次进入{{tr|stealth mode}}。
+* 如果在计算{{tr|Psycho Knife}}的{{tr|stealth mode bonus}}后，玩家的{{tr|melee critical strike chance}}高于 100%，它会被设为 100%。<ref name="update"/>
+* {{tr|The Psycho Knife}}的{{tr|stealth mode}}无法与[[{{tr|Shroomite armor}}]]或[[{{tr|Vortex armor}}]]的{{tr|stealth mode}}叠加。如果同时使用这些{{tr|items}}，玩家仅能获得{{tr|Psycho Knife}}的{{tr|stealth mode}}带来的属性变化，因为它的优先级最高。
+** 仅有的例外为{{tr|knockback bonus}}，只要在{{tr|stealth mode}}下就总是会获得它。例如，使用{{tr|Psycho Knife}}和{{tr|Shroomite armor}}时，玩家在{{tr|stealth mode}}下会同时具有 +100% {{tr|melee knockback}}和 +50% {{tr|ranged knockback bonus}}。尽管如此，这在实际战斗中用处不大。{{source code ref|v=1.4.4.9|method=Terraria.Player.GetWeaponKnockback}}
+* [[{{tr|NPCs}}]] 不会尝试与{{tr|stealth mode}}下的玩家“对话”（即发出[[{{tr|emotes}}]]）。{{source code ref|v=1.4.4.9|property=Terraria.Player.CanBeTalkedTo}}
+* 即使在使用[[{{tr|wings}}]]水平飞行时，{{tr|stealth mode}}的水平速度降低依然适用。垂直飞行速度并不受影响。
+* [[{{tr|Solar Flare armor}}]]和[[{{tr|Shield of Cthulhu}}]]的{{tr|dash}}可以获得{{tr|Psycho Knife}}的{{tr|stealth}}的{{tr|damage bonus}}。
+* 在[[{{tr|multiplayer}}]]下，玩家的{{tr|health bar}}会随其进入{{tr|stealth mode}}而淡化。
+
+== 小贴士 ==
+* 在获得[[{{tr|Brand of the Inferno}}]]的{{tr|Striking Moment buff}}后切换至{{tr|Psycho Knife}}，如果是{{tr|critical hit}}，一击造成的伤害可以轻松超过 2000。
+** 当在[[{{tr|Expert mode}}]]中使用[[{{tr|Banners (enemy)}}|{{tr|banners}}]]加上诸如{{tr|armor}}和{{tr|accessories}}等伤害强化装备时，这伤害还能大幅增加到一击超过 7,000，使得其是游戏中（单次）最高伤害的配置之一。
+* {{tr|stealth mode}}下仍然可以使用[[{{tr|Dash}}]]{{tr|items}}和[[{{tr|hooks}}]]，不会取消{{tr|stealth }}，这可以用来更快地移动。
+
+== 花絮 ==
+* 如果正确地进行强化，{{tr|the Psycho Knife}}可以达成比[[{{tr|Zenith}}]]更高的{{tr|stealth mode}}。
+* 所有{{tr|melee weapons}}都会被{{tr|stealth mode}}增加的属性所影响；但是，这在实际战斗中没有任何效果，因为切换{{tr|weapons}}会取消{{tr|stealth bonus}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 70 提升至 85。
+** {{tr|Use time}}由 20 降低至 8。
+** 现在只能从提升的{{tr|melee speed}}属性得到 33% 收益。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|获得了来自{{tr|Desktop 1.4.0.1}} 的更改。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Psycho Knife}}

@@ -1,0 +1,41 @@
+{{exclusive|1.3.0.1}}
+{{npc infobox
+| image = Sroller.gif
+| auto = 417
+| type = Enemy
+| environment = Lunar Events
+| damage2 = &#32;<br/>{{modes|{{#expr:{{npcinfo|Sroller|damage}}*1.8}}|{{#expr:{{npcinfo|Sroller|damage|expert}}*1.4}}|{{#expr:{{npcinfo|Sroller|damage|master}}*1.4}}}} {{note|small=y|paren=y|旋转时}}{{source code ref|name=AI|v=1.4.4.9|method=Terraria.NPC.AI}}<!--
+--><br/>{{modes|{{#expr:{{npcinfo|Sroller|damage}}*1.8*1.35 round 0}}|{{#expr:{{npcinfo|Sroller|damage|expert}}*1.4*1.35 round 0}}|{{#expr:{{npcinfo|Sroller|damage|master}}*1.4*1.35 round 0}}}} {{note|small=y|paren=y|爆炸}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI / Terraria.NPC.GetMeleeCollisionData}}
+| defense2 = &#32;<br/>{{#expr:{{npcinfo|Sroller|defense}}*2}} {{note|paren=y|旋转时}}<ref name="AI"/>
+| imageother = Sroller2.png
+| imageothercaption = 旋转状态
+| hardmode = yes
+}}
+
+'''{{tr|Sroller}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|Enemies}}|{{tr|enemy}}]]，在[[{{tr|Lunar Events}}]]期间于[[{{tr|Solar Pillar}}]]区域生成。它可以蜷缩成一个球，开始旋转并将自身掷向玩家，获得更高的{{tr|defense}}并造成高{{tr|contact damage}}，类似于[[{{tr|Giant Tortoise}}]]或[[{{tr|Ice Tortoise}}]]。{{tr|Sroller}}还能在碰撞{{tr|blocks}}时产生爆炸，造成更高的范围伤害。
+
+== 备注 ==
+* {{tr|Srollers}}的爆炸实际上是特殊的{{tr|contact damage}}而非[[{{tr|projectiles}}]]，因此它们可以与和{{tr|contact damage}}相关的效果交互（例如，它们可以被[[{{tr|Brand of the Inferno}}]]或[[{{tr|Sergeant United Shield}}]]格挡）。
+* 当淹没于[[{{tr|liquid}}]]中时，{{tr|Srollers}}会维持在蜷缩起来的状态，直到它们冲向玩家并接触到坚实的地面，然后它们会恢复到正常状态。
+* 虽然{{tr|Srollers}}视觉上有 4 格高，它们可以穿过 3 格高的空间。
+
+== 花絮 ==
+* 其英文名称 Sroller 是“solar”（日耀）和“roller”（滚动物）构成的混成词。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.0.3|修正了{{tr|Srollers}}会造成非预期的超高伤害的问题。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Sroller}}

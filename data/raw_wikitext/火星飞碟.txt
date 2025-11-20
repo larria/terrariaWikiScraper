@@ -1,0 +1,119 @@
+{{exclusive|1.3.0.1}}
+<section begin=npc infobox />
+{{npc infobox
+| auto = 392 | boxwidth = 26.5em
+| idprojectile = 433,447,450
+| type = Boss
+| environment = Martian Madness
+
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<!--
+--><br/>{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.SaucerDeathray}}}}<!--
+--><br/>{{modes|160|320|480}} {{note|small=y|paren=y|狂暴{{gameText|ProjectileName.SaucerDeathray}}}}<!--
+--><br/>{{modes|60|100|150}} {{note|small=y|paren=y|{{gameText|ProjectileName.SaucerScrap}}}}
+
+| life = {{modes|27000|54000|81000}} {{note|small=y|paren=y|所有部件}}
+|:group:start|总是会掉落以下 6 件{{tr|items}}之一|----
+| Xenopopper|1|16.66%
+| Xeno Staff|1|16.66%
+| Laser Machinegun|1|16.66%
+| Electrosphere Launcher|1|16.66%
+| Influx Waver|1|16.66%
+| Cosmic Car Key|1|16.66%
+|:group:end|----|------
+| Martian Saucer Trophy|1|10%
+| Greater Healing Potion|5-15|100%
+| Martian Saucer Relic|1|{{master|100%}} @master
+| Cosmic Skateboard|1|{{master|25%}} @master
+| listcat = Flying Enemy
+| hardmode = yes
+| imageother = Map Icon Martian Saucer.png
+| imageothercaption = Map Icon
+}}<section end=npc infobox />
+
+'''{{tr|Martian Saucer}}'''是个大型的[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的{{tr|flying}}[[{{tr|Mini boss}}]]，在[[{{tr|Martian Madness}}]][[{{tr|event}}]]期间生成。它只在{{tr|Martian Madness event}}完成了 30% 或更高时才会生成。它可以穿过[[{{tr|block}}]]。它有四个必须全部摧毁的有独立生命条的{{tr|turrets}}，包括两座{{tr|rocket launchers}}和两座{{tr|laser}}机枪。另外，{{tr|Martian Saucer}}自身会发射巨大的黄色光束（“{{gameText|ProjectileName.SaucerDeathray}}”），但只能向正下方发射，且（死亡射线的发射器）不能被独立摧毁。
+
+== 行为 ==
+{{tr|Martian Saucer}}一生成，就会按照以下顺序循环进行三种不同的攻击。在两次攻击之间，{{tr|Martian Saucer}}会向玩家移动一小段距离。
+# 如果至少有一个{{tr|Martian Saucer Turret}}仍处于激活状态，{{tr|Martian Saucer}}就会保持静止，同时它的{{tr|turrets}}会向玩家原处位置发射黄色激光。
+# 如果至少有一个{{tr|Martian Saucer Cannon}}仍处于激活状态，{{tr|Martian Saucer}}就会保持静止，同时它的炮会发射数枚自动制导导弹，在接触到玩家或{{tr|solid block}}时爆炸。
+# {{tr|Martian Saucer}}本身试图移动到玩家上方，然后从它下面发射{{tr|Martian Deathray}}，同时向玩家当前移动的方向移动。
+必须摧毁它的所有四个武器，才能打败{{tr|Martian Saucer}}。然而，在摧毁{{tr|Martian Saucer}}的每个{{tr|turrets}}后，被摧毁的部分会被无保护的裸露线路的缝隙所取代。对于任何被摧毁的{{tr|turrets}}，其通常{{tr|projectile attacks}}会改为在对应部位放出冒火花的{{tr|Saucer Scraps}}，它们会落到地面，在实心{{tr|tile}}上停留数秒，并伤害接触到它的玩家。
+
+在[[{{tr|Expert Mode}}]]和[[{{tr|Master Mode}}]]中，{{tr|Martian Saucer}}的四个{{tr|turrets}}被摧毁后不会立即被击败，而是进入第二阶段，此时其核心会暴露出来，并在继续追击和攻击玩家之前剧烈晃动几秒。在{{tr|Martian Saucer Core}}的{{tr|health}}耗尽后，{{tr|Martian Saucer}}才视为被打败。在第二阶段，{{tr|Martian Saucer}}会试图移动到玩家的左上方或右上方，然后发射{{tr|Martian Deathray}}并向玩家横扫。{{tr|Martian Deathray}}能穿过{{tr|Block}}并造成极高伤害。在两次{{tr|Martian Deathray}}攻击之间，{{tr|Martian Saucer}}会交替移动到玩家的左边或右边，同时它的四个裸露部分将不断地释放{{tr|Saucer Scraps}}{{tr|projectiles}}。
+
+== 部位 ==
+{{infobox wrapper|direction=row|float=left
+|{{npc infobox|boxwidth=17em
+| auto = 393
+| idprojectile = 449
+| type = Boss Part
+| environment = Martian Madness
+| image = Martian Saucer Turret.png
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|70|120|180}} {{note|small=y|paren=y|{{gameText|ProjectileName.SaucerLaser}}}}
+| sound1 = Item 12.wav
+| soundcaption1 = {{tr|Saucer Laser}}
+}}
+|{{npc infobox|boxwidth=17em
+| auto = 394
+| idprojectile = 448
+| type = Boss Part
+| environment = Martian Madness
+| image = Martian Saucer Cannon.png
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|100|148|222}} {{note|small=y|paren=y|{{gameText|ProjectileName.SaucerMissile}}}}
+| sound1 = Item 14.wav
+| soundcaption1 = {{tr|Martian Rocket}}
+}}
+|{{npc infobox|boxwidth=20em
+| auto = 395
+| idprojectile = 433,447,450
+| image = Martian Saucer Core.png
+| type = Flying Enemy
+| type2 = Boss Part
+| environment = Martian Madness
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}
+| sound1 = Item 12.wav
+| soundcaption1 = {{tr|Martian Deathray}}
+}}
+}}
+{{-}}
+
+== 备注 ==
+* 如果{{tr|Martian Saucer}}在其{{tr|deathray}}攻击期间转入第二阶段，{{tr|deathray}}会停留在一个地方直到转换完成。
+* 击杀一个{{tr|Martian Saucer}}可以增加 5% {{tr|the event}}完成度。
+* 不像其他{{tr|event bosses}}（除[[{{tr|Pumpking}}]]外），当所有玩家都被杀死后，{{tr|the Martian Saucer}}会离开。
+* [[{{tr|Radar}}]]会将{{tr|Martian Saucer}}算成 6 个{{tr|enemies}}：每个{{tr|turret}}/炮各算作一个、{{tr|Martian Saucer Core}}算作一个、剩下的大型无敌部份也算作一个。
+* {{tr|Martian Deathray}}看起来似乎并不能穿透{{tr|solid blocks}}（例如，它无法穿过地面），但它实际上可以穿透{{tr|solid blocks}}打到玩家。这一点和[[{{tr|Moon Lord}}]]的[[{{tr|Phantasmal Deathray}}]]行为相似。
+
+== 小贴士 ==
+{{strategies|指南:{{tr|Martian Madness}}攻略}}
+<!-- This is not a strategy page: do these in "Guide:Martian Madness strategies", or "Guide:Defending against events" instead of here. -->
+* 为了躲避{{tr|Martian Saucer}}的第一种攻击，要悬停在它的{{tr|lasers}}上方或者下方。为了躲避它的第二种攻击，要在{{tr|Martian Saucer}}射击时跑开，这样大多数{{tr|missiles}}都会打在玩家前面的地面上。
+* 若要避免被{{tr|deathray}}击中，可飞到{{tr|Martian Saucer}}上方、或冲刺离开、或使用[[{{tr|Rod of Discord}}]]/[[{{tr|Hook of Dissonance}}]]。在第二阶段中，在其{{tr|deathray}}暂停时和{{tr|Martian Saucer}}反方向移动。只要掐准时间冲刺，就可以完全避开{{tr|the deathray}}。
+* 如果激活了[[{{tr|Cute Fishron}}]]的“湿润”{{tr|bonus}}，玩家能够飞的比{{tr|the Martian Saucer}}略快一点。
+
+== 花絮 ==
+* 由于以下几点，{{tr|The Martian Saucer}}是一个独特的{{tr|mini-boss}}：
+** 它是唯一一个被打败时会在{{tr|chat}}中显示{{tr|status message}}的{{tr|mini-boss}}。
+** 它是唯一会掉落[[{{tr|recovery potions}}]]的{{tr|mini-boss}}。
+* {{anchor|Mothership}} 根据一个[[{{tr|Achievements|link=y}}#{{tr|Notes}}|未实现的{{tr|achievement}}]]，{{tr|The Martian Saucer}}在开发时曾经名叫“Mothership”（母舰）。
+{{bestiary|Martian Saucer Core|alias={{tr|Martian Saucer}}}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|增大了第二阶段中核心的{{tr|hitbox}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了两种{{tr|Master Mode}}掉落物：[[{{tr|Cosmic Skateboard}}]]和[[{{tr|Martian Saucer Relic}}]]。
+** 不再掉落[[{{tr|Laser Drill}}]]、[[{{tr|Anti-Gravity Hook}}]]、和[[{{tr|Charged Blaster Cannon}}]]。
+** 生成频率降低，在{{tr|Classic Mode}}下不再有第二阶段，且其{{tr|deathray}}现在会穿透{{tr|blocks}}。
+** 内部不再将其视为 [[{{tr|boss}}]]。}}
+{{history|Desktop 1.3.0.4|修复了[[{{tr|multiplayer}}]]中不可见、不受伤害的部件。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Martian Saucer}}

@@ -1,0 +1,1126 @@
+{|class="terraria ajaxHide"
+|图格 ID: {{#dpl:category=数据 ID|titleregexp=图格 ID/第 . 部分$|skipthispage=no|ordermethod=titlewithoutnamespace|format=²{dotlist/start¦inline=y}²,²{dotlist/item¦[[%TITLE%¦²{#replace:%TITLE%¦图格 ID/¦}²]]}²,,²{dotlist/end}²}}
+|}
+{| class="terraria sortable border"
+! data-sort-type="number" | ID !! data-sort-type="number" | 子 ID<ref>对于物品，即其 <code>placeStyle</code> 属性。</ref> !! 图片 !! 物品 / 实体 !! 内部名称
+|-
+| 31 || 0 || [[File:Shadow Orb.gif]] || {{item|Shadow Orb}} || rowspan=2 | <code>ShadowOrbs</code>
+|-
+| 31 || 1 || [[File:Crimson Heart.gif]] || {{item|Crimson Heart}}
+|-
+| 32 || - || [[File:Corruption Thorny Bush (Placed).png|link=]] || {{item|Corruption Thorny Bush}} || <code>CorruptThorns</code>
+|-
+| 33 || 0 || [[File:tiles_33_0_0.png|link=]] [[File:tiles_33_0_1.png|link=]] || {{item|Candle}} || rowspan=42 | <code>Candles</code>
+|-
+| 33 || 1 || [[File:tiles_33_1_0.png|link=]] [[File:tiles_33_1_1.png|link=]] || {{item|Blue Dungeon Candle}}
+|-
+| 33 || 2 || [[File:tiles_33_2_0.png|link=]] [[File:tiles_33_2_1.png|link=]] || {{item|Green Dungeon Candle}}
+|-
+| 33 || 3 || [[File:tiles_33_3_0.png|link=]] [[File:tiles_33_3_1.png|link=]] || {{item|Pink Dungeon Candle}}
+|-
+| 33 || 4 || [[File:tiles_33_4_0.png|link=]] [[File:tiles_33_4_1.png|link=]] || {{item|Cactus Candle}}
+|-
+| 33 || 5 || [[File:tiles_33_5_0.png|link=]] [[File:tiles_33_5_1.png|link=]] || {{item|Ebonwood Candle}}
+|-
+| 33 || 6 || [[File:tiles_33_6_0.png|link=]] [[File:tiles_33_6_1.png|link=]] || {{item|Flesh Candle}}
+|-
+| 33 || 7 || [[File:tiles_33_7_0.png|link=]] [[File:tiles_33_7_1.png|link=]] || {{item|Glass Candle}}
+|-
+| 33 || 8 || [[File:tiles_33_8_0.png|link=]] [[File:tiles_33_8_1.png|link=]] || {{item|Frozen Candle}}
+|-
+| 33 || 9 || [[File:tiles_33_9_0.png|link=]] [[File:tiles_33_9_1.png|link=]] || {{item|Rich Mahogany Candle}}
+|-
+| 33 || 10 || [[File:tiles_33_10_0.png|link=]] [[File:tiles_33_10_1.png|link=]] || {{item|Pearlwood Candle}}
+|-
+| 33 || 11 || [[File:tiles_33_11_0.png|link=]] [[File:tiles_33_11_1.png|link=]] || {{item|Lihzahrd Candle}}
+|-
+| 33 || 12 || [[File:tiles_33_12_0.png|link=]] [[File:tiles_33_12_1.png|link=]] || {{item|Skyware Candle}}
+|-
+| 33 || 13 || [[File:tiles_33_13_0.png|link=]] [[File:tiles_33_13_1.png|link=]] || {{item|Pumpkin Candle}}
+|-
+| 33 || 14 || [[File:tiles_33_14_0.png|link=]] [[File:tiles_33_14_1.png|link=]] || {{item|Living Wood Candle}}
+|-
+| 33 || 15 || [[File:tiles_33_15_0.png|link=]] [[File:tiles_33_15_1.png|link=]] || {{item|Shadewood Candle}}
+|-
+| 33 || 16 || [[File:tiles_33_16_0.png|link=]] [[File:tiles_33_16_1.png|link=]] || {{item|Golden Candle}}
+|-
+| 33 || 17 || [[File:tiles_33_17_0.png|link=]] [[File:tiles_33_17_1.png|link=]] || {{item|Dynasty Candle}}
+|-
+| 33 || 18 || [[File:tiles_33_18_0.png|link=]] [[File:tiles_33_18_1.png|link=]] || {{item|Palm Wood Candle}}
+|-
+| 33 || 19 || [[File:tiles_33_19_0.png|link=]] [[File:tiles_33_19_1.png|link=]] || {{item|Mushroom Candle}}
+|-
+| 33 || 20 || [[File:tiles_33_20_0.png|link=]] [[File:tiles_33_20_1.png|link=]] || {{item|Boreal Wood Candle}}
+|-
+| 33 || 21 || [[File:tiles_33_21_0.png|link=]] [[File:tiles_33_21_1.png|link=]] || {{item|Slime Candle}}
+|-
+| 33 || 22 || [[File:tiles_33_22_0.png|link=]] [[File:tiles_33_22_1.png|link=]] || {{item|Honey Candle}}
+|-
+| 33 || 23 || [[File:tiles_33_23_0.png|link=]] [[File:tiles_33_23_1.png|link=]] || {{item|Steampunk Candle}}
+|-
+| 33 || 24 || [[File:tiles_33_24_0.png|link=]] [[File:tiles_33_24_1.png|link=]] || {{item|Spooky Candle}}
+|-
+| 33 || 25 || [[File:tiles_33_25_0.png|link=]] [[File:tiles_33_25_1.png|link=]] || {{item|Obsidian Candle}}
+|-
+| 33 || 26 || [[File:tiles_33_26_0.png|link=]] [[File:tiles_33_26_1.png|link=]] || {{item|Martian Hover Candle}}
+|-
+| 33 || 27 || [[File:tiles_33_27_0.png|link=]] [[File:tiles_33_27_1.png|link=]] || {{item|Meteorite Candle}}
+|-
+| 33 || 28 || [[File:tiles_33_28_0.png|link=]] [[File:tiles_33_28_1.png|link=]] || {{item|Granite Candle}}
+|-
+| 33 || 29 || [[File:tiles_33_29_0.png|link=]] [[File:tiles_33_29_1.png|link=]] || {{item|Marble Candle}}
+|-
+| 33 || 30 || [[File:tiles_33_30_0.png|link=]] [[File:tiles_33_30_1.png|link=]] || {{item|Crystal Candle}}
+|-
+| 33 || 31 || [[File:tiles_33_31_0.png|link=]] [[File:tiles_33_31_1.png|link=]] || {{item|Spider Candle}}
+|-
+| 33 || 32 || [[File:tiles_33_32_0.png|link=]] [[File:tiles_33_32_1.png|link=]] || {{item|Lesion Candle}}
+|-
+| 33 || 33 || [[File:tiles_33_33_0.png|link=]] [[File:tiles_33_33_1.png|link=]] || {{item|Solar Candle}}
+|-
+| 33 || 34 || [[File:tiles_33_34_0.png|link=]] [[File:tiles_33_34_1.png|link=]] || {{item|Vortex Candle}}
+|-
+| 33 || 35 || [[File:tiles_33_35_0.png|link=]] [[File:tiles_33_35_1.png|link=]] || {{item|Nebula Candle}}
+|-
+| 33 || 36 || [[File:tiles_33_36_0.png|link=]] [[File:tiles_33_36_1.png|link=]] || {{item|Stardust Candle}}
+|-
+| 33 || 37 || [[File:tiles_33_37_0.png|link=]] [[File:tiles_33_37_1.png|link=]] || {{item|Sandstone Candle}}
+|-
+| 33 || 38 || [[File:tiles_33_38_0.png|link=]] [[File:tiles_33_38_1.png|link=]] || {{item|Bamboo Candle}}
+|-
+| 33 || 39 || [[File:tiles_33_39_0.png|link=]] [[File:tiles_33_39_1.png|link=]] || {{item|Reef Candle}}
+|-
+| 33 || 40 || [[File:tiles_33_40_0.png|link=]] [[File:tiles_33_40_1.png|link=]] || {{item|Balloon Candle}}
+|-
+| 33 || 41 || [[File:tiles_33_41_0.png|link=]] [[File:tiles_33_41_1.png|link=]] || {{item|Ash Wood Candle}}
+|-
+| 34 || 0 || [[File:tiles_34_0_0.png|link=]] [[File:tiles_34_0_1.png|link=]] || {{item|Copper Chandelier}} || rowspan=49 | <code>Chandeliers</code>
+|-
+| 34 || 1 || [[File:tiles_34_1_0.png|link=]] [[File:tiles_34_1_1.png|link=]] || {{item|Silver Chandelier}}
+|-
+| 34 || 2 || [[File:tiles_34_2_0.png|link=]] [[File:tiles_34_2_1.png|link=]] || {{item|Gold Chandelier}}
+|-
+| 34 || 3 || [[File:tiles_34_3_0.png|link=]] [[File:tiles_34_3_1.png|link=]] || {{item|Tin Chandelier}}
+|-
+| 34 || 4 || [[File:tiles_34_4_0.png|link=]] [[File:tiles_34_4_1.png|link=]] || {{item|Tungsten Chandelier}}
+|-
+| 34 || 5 || [[File:tiles_34_5_0.png|link=]] [[File:tiles_34_5_1.png|link=]] || {{item|Platinum Chandelier}}
+|-
+| 34 || 6 || [[File:tiles_34_6_0.png|link=]] [[File:tiles_34_6_1.png|link=]] || {{item|Jackelier}}
+|-
+| 34 || 7 || [[File:tiles_34_7_0.png|link=]] [[File:tiles_34_7_1.png|link=]] || {{item|Cactus Chandelier}}
+|-
+| 34 || 8 || [[File:tiles_34_8_0.png|link=]] [[File:tiles_34_8_1.png|link=]] || {{item|Ebonwood Chandelier}}
+|-
+| 34 || 9 || [[File:tiles_34_9_0.png|link=]] [[File:tiles_34_9_1.png|link=]] || {{item|Flesh Chandelier}}
+|-
+| 34 || 10 || [[File:tiles_34_10_0.png|link=]] [[File:tiles_34_10_1.png|link=]] || {{item|Honey Chandelier}}
+|-
+| 34 || 11 || [[File:tiles_34_11_0.png|link=]] [[File:tiles_34_11_1.png|link=]] || {{item|Frozen Chandelier}}
+|-
+| 34 || 12 || [[File:tiles_34_12_0.png|link=]] [[File:tiles_34_12_1.png|link=]] || {{item|Rich Mahogany Chandelier}}
+|-
+| 34 || 13 || [[File:tiles_34_13_0.png|link=]] [[File:tiles_34_13_1.png|link=]] || {{item|Pearlwood Chandelier}}
+|-
+| 34 || 14 || [[File:tiles_34_14_0.png|link=]] [[File:tiles_34_14_1.png|link=]] || {{item|Lihzahrd Chandelier}}
+|-
+| 34 || 15 || [[File:tiles_34_15_0.png|link=]] [[File:tiles_34_15_1.png|link=]] || {{item|Skyware Chandelier}}
+|-
+| 34 || 16 || [[File:tiles_34_16_0.png|link=]] [[File:tiles_34_16_1.png|link=]] || {{item|Spooky Chandelier}}
+|-
+| 34 || 17 || [[File:tiles_34_17_0.png|link=]] [[File:tiles_34_17_1.png|link=]] || {{item|Glass Chandelier}}
+|-
+| 34 || 18 || [[File:tiles_34_18_0.png|link=]] [[File:tiles_34_18_1.png|link=]] || {{item|Living Wood Chandelier}}
+|-
+| 34 || 19 || [[File:tiles_34_19_0.png|link=]] [[File:tiles_34_19_1.png|link=]] || {{item|Shadewood Chandelier}}
+|-
+| 34 || 20 || [[File:tiles_34_20_0.png|link=]] [[File:tiles_34_20_1.png|link=]] || {{item|Golden Chandelier}}
+|-
+| 34 || 21 || [[File:tiles_34_21_0.png|link=]] [[File:tiles_34_21_1.png|link=]] || {{item|Bone Chandelier}}
+|-
+| 34 || 22 || [[File:tiles_34_22_0.png|link=]] [[File:tiles_34_22_1.png|link=]] || {{item|Large Dynasty Lantern}}
+|-
+| 34 || 23 || [[File:tiles_34_23_0.png|link=]] [[File:tiles_34_23_1.png|link=]] || {{item|Palm Wood Chandelier}}
+|-
+| 34 || 24 || [[File:tiles_34_24_0.png|link=]] [[File:tiles_34_24_1.png|link=]] || {{item|Mushroom Chandelier}}
+|-
+| 34 || 25 || [[File:tiles_34_25_0.png|link=]] [[File:tiles_34_25_1.png|link=]] || {{item|Boreal Wood Chandelier}}
+|-
+| 34 || 26 || [[File:tiles_34_26_0.png|link=]] [[File:tiles_34_26_1.png|link=]] || {{item|Slime Chandelier}}
+|-
+| 34 || 27 || [[File:tiles_34_27_0.png|link=]] [[File:tiles_34_27_1.png|link=]] || {{item|Blue Dungeon Chandelier}}
+|-
+| 34 || 28 || [[File:tiles_34_28_0.png|link=]] [[File:tiles_34_28_1.png|link=]] || {{item|Green Dungeon Chandelier}}
+|-
+| 34 || 29 || [[File:tiles_34_29_0.png|link=]] [[File:tiles_34_29_1.png|link=]] || {{item|Pink Dungeon Chandelier}}
+|-
+| 34 || 30 || [[File:tiles_34_30_0.png|link=]] [[File:tiles_34_30_1.png|link=]] || {{item|Steampunk Chandelier}}
+|-
+| 34 || 31 || [[File:tiles_34_31_0.png|link=]] [[File:tiles_34_31_1.png|link=]] || {{item|Pumpkin Chandelier}}
+|-
+| 34 || 32 || [[File:tiles_34_32_0.png|link=]] [[File:tiles_34_32_1.png|link=]] || {{item|Obsidian Chandelier}}
+|-
+| 34 || 33 || [[File:tiles_34_33_0.png|link=]] [[File:tiles_34_33_1.png|link=]] || {{item|Martian Chandelier}}
+|-
+| 34 || 34 || [[File:tiles_34_34_0.png|link=]] [[File:tiles_34_34_1.png|link=]] || {{item|Meteorite Chandelier}}
+|-
+| 34 || 35 || [[File:tiles_34_35_0.png|link=]] [[File:tiles_34_35_1.png|link=]] || {{item|Granite Chandelier}}
+|-
+| 34 || 36 || [[File:tiles_34_36_0.png|link=]] [[File:tiles_34_36_1.png|link=]] || {{item|Marble Chandelier}}
+|-
+| 34 || 37 || [[File:tiles_34_37_0.png|link=]] [[File:tiles_34_37_1.png|link=]] || {{item|Crystal Chandelier}}
+|-
+| 34 || 38 || [[File:tiles_34_38_0.png|link=]] [[File:tiles_34_38_1.png|link=]] || {{item|Spider Chandelier}}
+|-
+| 34 || 39 || [[File:tiles_34_39_0.png|link=]] [[File:tiles_34_39_1.png|link=]] || {{item|Lesion Chandelier}}
+|-
+| 34 || 40 || [[File:tiles_34_40_0.png|link=]] [[File:tiles_34_40_1.png|link=]] || {{item|Solar Chandelier}}
+|-
+| 34 || 41 || [[File:tiles_34_41_0.png|link=]] [[File:tiles_34_41_1.png|link=]] || {{item|Vortex Chandelier}}
+|-
+| 34 || 42 || [[File:tiles_34_42_0.png|link=]] [[File:tiles_34_42_1.png|link=]] || {{item|Nebula Chandelier}}
+|-
+| 34 || 43 || [[File:tiles_34_43_0.png|link=]] [[File:tiles_34_43_1.png|link=]] || {{item|Stardust Chandelier}}
+|-
+| 34 || 44 || [[File:tiles_34_44_0.png|link=]] [[File:tiles_34_44_1.png|link=]] || {{item|Sandstone Chandelier}}
+|-
+| 34 || 45 || [[File:tiles_34_45_0.png|link=]] [[File:tiles_34_45_1.png|link=]] || {{item|Bamboo Chandelier}}
+|-
+| 34 || 46 || [[File:tiles_34_46_0.png|link=]] [[File:tiles_34_46_1.png|link=]] || {{item|Reef Chandelier}}
+|-
+| 34 || 47 || [[File:tiles_34_47_0.png|link=]] [[File:tiles_34_47_1.png|link=]] || {{item|Balloon Chandelier}}
+|-
+| 34 || 48 || [[File:tiles_34_48_0.png|link=]] [[File:tiles_34_48_1.png|link=]] || {{item|Ash Wood Chandelier}}
+|-
+| 35 || 0 || [[File:tiles_35_0_0.png|link=]] [[File:tiles_35_0_1.png|link=]] || rowspan=9 | {{item|Jack 'O Lantern}} || rowspan=9 | <code>Jackolanterns</code>
+|-
+| 35 || 1 || [[File:tiles_35_1_0.png|link=]] [[File:tiles_35_1_1.png|link=]]
+|-
+| 35 || 2 || [[File:tiles_35_2_0.png|link=]] [[File:tiles_35_2_1.png|link=]]
+|-
+| 35 || 3 || [[File:tiles_35_3_0.png|link=]] [[File:tiles_35_3_1.png|link=]]
+|-
+| 35 || 4 || [[File:tiles_35_4_0.png|link=]] [[File:tiles_35_4_1.png|link=]]
+|-
+| 35 || 5 || [[File:tiles_35_5_0.png|link=]] [[File:tiles_35_5_1.png|link=]]
+|-
+| 35 || 6 || [[File:tiles_35_6_0.png|link=]] [[File:tiles_35_6_1.png|link=]]
+|-
+| 35 || 7 || [[File:tiles_35_7_0.png|link=]] [[File:tiles_35_7_1.png|link=]]
+|-
+| 35 || 8 || [[File:tiles_35_8_0.png|link=]] [[File:tiles_35_8_1.png|link=]]
+|-
+| 36 || 0 || [[File:tiles_36_0.png|link=]] || rowspan=8 | {{item|Present}} || rowspan=8 | <code>Presents</code>
+|-
+| 36 || 1 || [[File:tiles_36_1.png|link=]]
+|-
+| 36 || 2 || [[File:tiles_36_2.png|link=]]
+|-
+| 36 || 3 || [[File:tiles_36_3.png|link=]]
+|-
+| 36 || 4 || [[File:tiles_36_4.png|link=]]
+|-
+| 36 || 5 || [[File:tiles_36_5.png|link=]]
+|-
+| 36 || 6 || [[File:tiles_36_6.png|link=]]
+|-
+| 36 || 7 || [[File:tiles_36_7.png|link=]]
+|-
+| 37 || 0 || [[File:Meteorite (placed).png|link=]] || {{item|Meteorite}} || <code>Meteorite</code>
+|-
+| 38 || 0 || [[File:Gray Brick (placed).png|link=]] || {{item|Gray Brick}} || <code>GrayBrick</code>
+|-
+| 39 || 0 || [[File:Red Brick (placed).png|link=]] || {{item|Red Brick}} || <code>RedBrick</code>
+|-
+| 40 || 0 || [[File:Clay Block (placed).png|link=]] || {{item|Clay Block}} || <code>ClayBlock</code>
+|-
+| 41 || 0 || [[File:Blue Brick (placed).png|link=]] || {{item|Blue Brick}} || <code>BlueDungeonBrick</code>
+|-
+| 42 || 0 || [[File:tiles_42_0_0.png|link=]] [[File:tiles_42_0_1.png|link=]] || {{item|Chain Lantern}} || rowspan=49 | <code>HangingLanterns</code>
+|-
+| 42 || 1 || [[File:tiles_42_1_0.png|link=]] [[File:tiles_42_1_1.png|link=]] || {{item|Brass Lantern}}
+|-
+| 42 || 2 || [[File:tiles_42_2_0.png|link=]] [[File:tiles_42_2_1.png|link=]] || {{item|Caged Lantern}}
+|-
+| 42 || 3 || [[File:tiles_42_3_0.png|link=]] [[File:tiles_42_3_1.png|link=]] || {{item|Carriage Lantern}}
+|-
+| 42 || 4 || [[File:tiles_42_4_0.png|link=]] [[File:tiles_42_4_1.png|link=]] || {{item|Alchemy Lantern}}
+|-
+| 42 || 5 || [[File:tiles_42_5_0.png|link=]] [[File:tiles_42_5_1.png|link=]] || {{item|Diabolist Lamp}}
+|-
+| 42 || 6 || [[File:tiles_42_6_0.png|link=]] [[File:tiles_42_6_1.png|link=]] || {{item|Oil Rag Sconce}}
+|-
+| 42 || 7 || [[File:tiles_42_7_0.png|link=]] [[File:tiles_42_7_1.png|link=]] || {{item|Star in a Bottle}}
+|-
+| 42 || 8 || [[File:tiles_42_8_0.png|link=]] [[File:tiles_42_8_1.png|link=]] || {{item|Hanging Jack 'O Lantern}}
+|-
+| 42 || 9 || [[File:tiles_42_9_0.png|link=]] [[File:tiles_42_9_1.png|link=]] || {{item|Heart Lantern}}
+|-
+| 42 || 10 || [[File:tiles_42_10_0.png|link=]] [[File:tiles_42_10_1.png|link=]] || {{item|Cactus Lantern}}
+|-
+| 42 || 11 || [[File:tiles_42_11_0.png|link=]] [[File:tiles_42_11_1.png|link=]] || {{item|Ebonwood Lantern}}
+|-
+| 42 || 12 || [[File:tiles_42_12_0.png|link=]] [[File:tiles_42_12_1.png|link=]] || {{item|Flesh Lantern}}
+|-
+| 42 || 13 || [[File:tiles_42_13_0.png|link=]] [[File:tiles_42_13_1.png|link=]] || {{item|Honey Lantern}}
+|-
+| 42 || 14 || [[File:tiles_42_14_0.png|link=]] [[File:tiles_42_14_1.png|link=]] || {{item|Steampunk Lantern}}
+|-
+| 42 || 15 || [[File:tiles_42_15_0.png|link=]] [[File:tiles_42_15_1.png|link=]] || {{item|Glass Lantern}}
+|-
+| 42 || 16 || [[File:tiles_42_16_0.png|link=]] [[File:tiles_42_16_1.png|link=]] || {{item|Rich Mahogany Lantern}}
+|-
+| 42 || 17 || [[File:tiles_42_17_0.png|link=]] [[File:tiles_42_17_1.png|link=]] || {{item|Pearlwood Lantern}}
+|-
+| 42 || 18 || [[File:tiles_42_18_0.png|link=]] [[File:tiles_42_18_1.png|link=]] || {{item|Frozen Lantern}}
+|-
+| 42 || 19 || [[File:tiles_42_19_0.png|link=]] [[File:tiles_42_19_1.png|link=]] || {{item|Lihzahrd Lantern}}
+|-
+| 42 || 20 || [[File:tiles_42_20_0.png|link=]] [[File:tiles_42_20_1.png|link=]] || {{item|Skyware Lantern}}
+|-
+| 42 || 21 || [[File:tiles_42_21_0.png|link=]] [[File:tiles_42_21_1.png|link=]] || {{item|Spooky Lantern}}
+|-
+| 42 || 22 || [[File:tiles_42_22_0.png|link=]] [[File:tiles_42_22_1.png|link=]] || {{item|Living Wood Lantern}}
+|-
+| 42 || 23 || [[File:tiles_42_23_0.png|link=]] [[File:tiles_42_23_1.png|link=]] || {{item|Shadewood Lantern}}
+|-
+| 42 || 24 || [[File:tiles_42_24_0.png|link=]] [[File:tiles_42_24_1.png|link=]] || {{item|Golden Lantern}}
+|-
+| 42 || 25 || [[File:tiles_42_25_0.png|link=]] [[File:tiles_42_25_1.png|link=]] || {{item|Bone Lantern}}
+|-
+| 42 || 26 || [[File:tiles_42_26_0.png|link=]] [[File:tiles_42_26_1.png|link=]] || {{item|Dynasty Lantern}}
+|-
+| 42 || 27 || [[File:tiles_42_27_0.png|link=]] [[File:tiles_42_27_1.png|link=]] || {{item|Palm Wood Lantern}}
+|-
+| 42 || 28 || [[File:tiles_42_28_0.png|link=]] [[File:tiles_42_28_1.png|link=]] || {{item|Mushroom Lantern}}
+|-
+| 42 || 29 || [[File:tiles_42_29_0.png|link=]] [[File:tiles_42_29_1.png|link=]] || {{item|Boreal Wood Lantern}}
+|-
+| 42 || 30 || [[File:tiles_42_30_0.png|link=]] [[File:tiles_42_30_1.png|link=]] || {{item|Slime Lantern}}
+|-
+| 42 || 31 || [[File:tiles_42_31_0.png|link=]] [[File:tiles_42_31_1.png|link=]] || {{item|Pumpkin Lantern}}
+|-
+| 42 || 32 || [[File:tiles_42_32_0.png|link=]] [[File:tiles_42_32_1.png|link=]] || {{item|Obsidian Lantern}}
+|-
+| 42 || 33 || [[File:tiles_42_33_0.png|link=]] [[File:tiles_42_33_1.png|link=]] || {{item|Martian Lantern}}
+|-
+| 42 || 34 || [[File:tiles_42_34_0.png|link=]] [[File:tiles_42_34_1.png|link=]] || {{item|Meteorite Lantern}}
+|-
+| 42 || 35 || [[File:tiles_42_35_0.png|link=]] [[File:tiles_42_35_1.png|link=]] || {{item|Granite Lantern}}
+|-
+| 42 || 36 || [[File:tiles_42_36_0.png|link=]] [[File:tiles_42_36_1.png|link=]] || {{item|Marble Lantern}}
+|-
+| 42 || 37 || [[File:tiles_42_37_0.png|link=]] [[File:tiles_42_37_1.png|link=]] || {{item|Crystal Lantern}}
+|-
+| 42 || 38 || [[File:tiles_42_38_0.png|link=]] [[File:tiles_42_38_1.png|link=]] || {{item|Spider Lantern}}
+|-
+| 42 || 39 || [[File:tiles_42_39_0.png|link=]] [[File:tiles_42_39_1.png|link=]] || {{item|Lesion Lantern}}
+|-
+| 42 || 40 || [[File:tiles_42_40_0.png|link=]] [[File:tiles_42_40_1.png|link=]] || {{item|Solar Lantern}}
+|-
+| 42 || 41 || [[File:tiles_42_41_0.png|link=]] [[File:tiles_42_41_1.png|link=]] || {{item|Vortex Lantern}}
+|-
+| 42 || 42 || [[File:tiles_42_42_0.png|link=]] [[File:tiles_42_42_1.png|link=]] || {{item|Nebula Lantern}}
+|-
+| 42 || 43 || [[File:tiles_42_43_0.png|link=]] [[File:tiles_42_43_1.png|link=]] || {{item|Stardust Lantern}}
+|-
+| 42 || 44 || [[File:tiles_42_44_0.png|link=]] [[File:tiles_42_44_1.png|link=]] || {{item|Sandstone Lantern}}
+|-
+| 42 || 45 || [[File:tiles_42_45_0.png|link=]] [[File:tiles_42_45_1.png|link=]] || {{item|Bamboo Lantern}}
+|-
+| 42 || 46 || [[File:tiles_42_46_0.png|link=]] [[File:tiles_42_46_1.png|link=]] || {{item|Reef Lantern}}
+|-
+| 42 || 47 || [[File:tiles_42_47_0.png|link=]] [[File:tiles_42_47_1.png|link=]] || {{item|Balloon Lantern}}
+|-
+| 42 || 48 || [[File:tiles_42_48_0.png|link=]] [[File:tiles_42_48_1.png|link=]] || {{item|Ash Wood Lantern}}
+|-
+| 43 || 0 || [[File:Green Brick (placed).png|link=]] || {{item|Green Brick}} || <code>GreenDungeonBrick</code>
+|-
+| 44 || 0 || [[File:Pink Brick (placed).png|link=]] || {{item|Pink Brick}} || <code>PinkDungeonBrick</code>
+|-
+| 45 || 0 || [[File:Gold Brick (placed).png|link=]] || {{item|Gold Brick}} || <code>GoldBrick</code>
+|-
+| 46 || 0 || [[File:Silver Brick (placed).png|link=]] || {{item|Silver Brick}} || <code>SilverBrick</code>
+|-
+| 47 || 0 || [[File:Copper Brick (placed).png|link=]] || {{item|Copper Brick}} || <code>CopperBrick</code>
+|-
+| 48 || 0 || [[File:Spike (placed).png|link=]] || {{item|Spike}} || <code>Spikes</code>
+|-
+| 49 || 0 || [[File:tiles_49_0.png|link=]] [[File:tiles_49_1.png|link=]] || {{item|Water Candle}} || <code>WaterCandle</code>
+|-
+| 50 || 0 || [[File:tiles_50_0.png|link=]] || rowspan=5 | {{item|Book}} || rowspan=6 | <code>Books</code>
+|-
+| 50 || 1 || [[File:tiles_50_1.png|link=]]
+|-
+| 50 || 2 || [[File:tiles_50_2.png|link=]]
+|-
+| 50 || 3 || [[File:tiles_50_3.png|link=]]
+|-
+| 50 || 4 || [[File:tiles_50_4.png|link=]]
+|-
+| 50 || 5 || [[File:tiles_50_5.png|link=]] || {{item|Water Bolt|note=（放置的）}}
+|-
+| 51 || 0 || [[File:Cobweb (placed).png|link=]] || {{item|Cobweb}} || <code>Cobweb</code>
+|-
+| 52 || 0 || {{item|Vines|Regular vine|mode=table|class=alignleft}} || <code>Vines</code>
+|-
+| 53 || 0 || [[File:Sand Block (placed).png|link=]] || {{item|Sand Block}} || <code>Sand</code>
+|-
+| 54 || 0 || [[File:Glass (placed).png|link=]] || {{item|Glass}} || <code>Glass</code>
+|-
+| 55 || 0 || [[File:tiles_55_0.png|link=]] || rowspan=5 | {{item|Sign}} || rowspan=5 | <code>Signs</code>
+|-
+| 55 || 1 || [[File:tiles_55_1.png|link=]]
+|-
+| 55 || 2 || [[File:tiles_55_2.png|link=]]
+|-
+| 55 || 3 || [[File:tiles_55_3.png|link=]]
+|-
+| 55 || 4 || [[File:tiles_55_4.png|link=]]
+|-
+| 56 || 0 || [[File:Obsidian (placed).png|link=]] || {{item|Obsidian}} || <code>Obsidian</code>
+|-
+| 57 || 0 || [[File:Ash Block (placed).png|link=]] || {{item|Ash Block}} || <code>Ash</code>
+|-
+| 58 || 0 || [[File:Hellstone (placed).png|link=]] || {{item|Hellstone}} || <code>Hellstone</code>
+|-
+| 59 || 0 || [[File:Mud Block (placed).png|link=]] || {{item|Mud Block}} || <code>Mud</code>
+|-
+| 60 || 0 || {{item|Jungle grass|Jungle Grass|mode=table|class=alignleft}} || <code>JungleGrass</code>
+|-
+| 61 || 0 || [[File:tiles_61_0.png|link=]] || rowspan=19 | 矮[[{{tr|wild Jungle plants}}]] || rowspan=23 | <code>JunglePlants</code>
+|-
+| 61 || 1 || [[File:tiles_61_1.png|link=]]
+|-
+| 61 || 2 || [[File:tiles_61_2.png|link=]]
+|-
+| 61 || 3 || [[File:tiles_61_3.png|link=]]
+|-
+| 61 || 4 || [[File:tiles_61_4.png|link=]]
+|-
+| 61 || 5 || [[File:tiles_61_5.png|link=]]
+|-
+| 61 || 10 || [[File:tiles_61_10.png|link=]]
+|-
+| 61 || 11 || [[File:tiles_61_11.png|link=]]
+|-
+| 61 || 12 || [[File:tiles_61_12.png|link=]]
+|-
+| 61 || 13 || [[File:tiles_61_13.png|link=]]
+|-
+| 61 || 14 || [[File:tiles_61_14.png|link=]]
+|-
+| 61 || 15 || [[File:tiles_61_15.png|link=]]
+|-
+| 61 || 16 || [[File:tiles_61_16.png|link=]]
+|-
+| 61 || 17 || [[File:tiles_61_17.png|link=]]
+|-
+| 61 || 18 || [[File:tiles_61_18.png|link=]]
+|-
+| 61 || 19 || [[File:tiles_61_19.png|link=]]
+|-
+| 61 || 20 || [[File:tiles_61_20.png|link=]]
+|-
+| 61 || 21 || [[File:tiles_61_21.png|link=]]
+|-
+| 61 || 22 || [[File:tiles_61_22.png|link=]]
+|-
+| 61 || 6 || [[File:tiles_61_6.png|link=]] || rowspan=2 | {{item|Jungle Rose}}
+|-
+| 61 || 7 || [[File:tiles_61_7.png|link=]]
+|-
+| 61 || 8 || [[File:Jungle Spores (placed).png|link=]] || {{item|Jungle Spores|Jungle Spore}}
+|-
+| 61 || 9 || [[File:Nature's Gift (placed).png|link=]] || {{item|Nature's Gift}}
+|-
+| 62 || 0 || {{item|Jungle vines|Jungle Vine|mode=table|class=alignleft}} || <code>JungleVines</code>
+|-
+| 63 || 0 || [[File:Sapphire (placed).png|link=]] || {{item|Sapphire Stone Block}} || <code>Sapphire</code>
+|-
+| 64 || 0 || [[File:Ruby (placed).png|link=]] || {{item|Ruby Stone Block}} || <code>Ruby</code>
+|-
+| 65 || 0 || [[File:Emerald (placed).png|link=]] || {{item|Emerald Stone Block}} || <code>Emerald</code>
+|-
+| 66 || 0 || [[File:Topaz (placed).png|link=]] || {{item|Topaz Stone Block}} || <code>Topaz</code>
+|-
+| 67 || 0 || [[File:Amethyst (placed).png|link=]] || {{item|Amethyst Stone Block}} || <code>Amethyst</code>
+|-
+| 68 || 0 || [[File:Diamond (placed).png|link=]] || {{item|Diamond Stone Block}} || <code>Diamond</code>
+|-
+| 69 || 0 || [[File:Jungle Thorny Bush (placed).png|link=]] || [[{{tr|Jungle Thorny Bush}}]] || <code>JungleThorns</code>
+|-
+| 70 || 0 || {{item|Mushroom grass|Mushroom Grass|mode=table|class=alignleft}} || <code>MushroomGrass</code>
+|-
+| 71 || 0 || [[File:tiles_71_0.png|link=]] || rowspan=5 | {{item|Glowing Mushroom|note=（生长）}} || rowspan=5 | <code>MushroomPlants</code>
+|-
+| 71 || 1 || [[File:tiles_71_1.png|link=]]
+|-
+| 71 || 2 || [[File:tiles_71_2.png|link=]]
+|-
+| 71 || 3 || [[File:tiles_71_3.png|link=]]
+|-
+| 71 || 4 || [[File:tiles_71_4.png|link=]]
+|-
+| 72 || 0 || {{item|Giant Glowing Mushroom|mode=table|class=alignleft|note=（{{tr|underground}}）}} || <code>MushroomTrees</code>
+|-
+| 73 || 0 || [[File:tiles_73_0.png|link=]] || rowspan=45 | [[{{tr|Wild grass plants}}|{{tr|Tall Grass Plants}}]] || rowspan=45 | <code>Plants2</code>
+|-
+| 73 || 1 || [[File:tiles_73_1.png|link=]]
+|-
+| 73 || 2 || [[File:tiles_73_2.png|link=]]
+|-
+| 73 || 3 || [[File:tiles_73_3.png|link=]]
+|-
+| 73 || 4 || [[File:tiles_73_4.png|link=]]
+|-
+| 73 || 5 || [[File:tiles_73_5.png|link=]]
+|-
+| 73 || 6 || [[File:tiles_73_6.png|link=]]
+|-
+| 73 || 7 || [[File:tiles_73_7.png|link=]]
+|-
+| 73 || 8 || {{note|small=y|paren=y|空白图像}}
+|-
+| 73 || 9 || [[File:tiles_73_9.png|link=]]
+|-
+| 73 || 10 || [[File:tiles_73_10.png|link=]]
+|-
+| 73 || 11 || [[File:tiles_73_11.png|link=]]
+|-
+| 73 || 12 || [[File:tiles_73_12.png|link=]]
+|-
+| 73 || 13 || [[File:tiles_73_13.png|link=]]
+|-
+| 73 || 14 || [[File:tiles_73_14.png|link=]]
+|-
+| 73 || 15 || [[File:tiles_73_15.png|link=]]
+|-
+| 73 || 16 || [[File:tiles_73_16.png|link=]]
+|-
+| 73 || 17 || [[File:tiles_73_17.png|link=]]
+|-
+| 73 || 18 || [[File:tiles_73_18.png|link=]]
+|-
+| 73 || 19 || [[File:tiles_73_19.png|link=]]
+|-
+| 73 || 20 || [[File:tiles_73_20.png|link=]]
+|-
+| 73 || 21 || [[File:tiles_73_21.png|link=]]
+|-
+| 73 || 22 || [[File:tiles_73_22.png|link=]]
+|-
+| 73 || 23 || [[File:tiles_73_23.png|link=]]
+|-
+| 73 || 24 || [[File:tiles_73_24.png|link=]]
+|-
+| 73 || 25 || [[File:tiles_73_25.png|link=]]
+|-
+| 73 || 26 || [[File:tiles_73_26.png|link=]]
+|-
+| 73 || 27 || [[File:tiles_73_27.png|link=]]
+|-
+| 73 || 28 || [[File:tiles_73_28.png|link=]]
+|-
+| 73 || 29 || [[File:tiles_73_29.png|link=]]
+|-
+| 73 || 30 || [[File:tiles_73_30.png|link=]]
+|-
+| 73 || 31 || [[File:tiles_73_31.png|link=]]
+|-
+| 73 || 32 || [[File:tiles_73_32.png|link=]]
+|-
+| 73 || 33 || [[File:tiles_73_33.png|link=]]
+|-
+| 73 || 34 || [[File:tiles_73_34.png|link=]]
+|-
+| 73 || 35 || [[File:tiles_73_35.png|link=]]
+|-
+| 73 || 36 || [[File:tiles_73_36.png|link=]]
+|-
+| 73 || 37 || [[File:tiles_73_37.png|link=]]
+|-
+| 73 || 38 || [[File:tiles_73_38.png|link=]]
+|-
+| 73 || 39 || [[File:tiles_73_39.png|link=]]
+|-
+| 73 || 40 || [[File:tiles_73_40.png|link=]]
+|-
+| 73 || 41 || [[File:tiles_73_41.png|link=]]
+|-
+| 73 || 42 || [[File:tiles_73_42.png|link=]]
+|-
+| 73 || 43 || [[File:tiles_73_43.png|link=]]
+|-
+| 73 || 44 || [[File:tiles_73_44.png|link=]]
+|-
+| 74 || 0 || [[File:tiles_74_0.png|link=]] || rowspan=17 | 高[[{{tr|wild Jungle plants}}]] || rowspan=17 | <code>JunglePlants2</code>
+|-
+| 74 || 1 || [[File:tiles_74_1.png|link=]]
+|-
+| 74 || 2 || [[File:tiles_74_2.png|link=]]
+|-
+| 74 || 3 || [[File:tiles_74_3.png|link=]]
+|-
+| 74 || 4 || [[File:tiles_74_4.png|link=]]
+|-
+| 74 || 5 || [[File:tiles_74_5.png|link=]]
+|-
+| 74 || 6 || [[File:tiles_74_6.png|link=]]
+|-
+| 74 || 7 || [[File:tiles_74_7.png|link=]]
+|-
+| 74 || 8 || {{note|small=y|paren=y|空白图像}}
+|-
+| 74 || 9 || [[File:tiles_74_9.png|link=]]
+|-
+| 74 || 10 || [[File:tiles_74_10.png|link=]]
+|-
+| 74 || 11 || [[File:tiles_74_11.png|link=]]
+|-
+| 74 || 12 || [[File:tiles_74_12.png|link=]]
+|-
+| 74 || 13 || [[File:tiles_74_13.png|link=]]
+|-
+| 74 || 14 || [[File:tiles_74_14.png|link=]]
+|-
+| 74 || 15 || [[File:tiles_74_15.png|link=]]
+|-
+| 74 || 16 || [[File:tiles_74_16.png|link=]]
+|-
+| 75 || 0 || [[File:Obsidian Brick (placed).png|link=]] || {{item|Obsidian Brick}} || <code>ObsidianBrick</code>
+|-
+| 76 || 0 || [[File:Hellstone Brick (placed).png|link=]] || {{item|Hellstone Brick}} || <code>HellstoneBrick</code>
+|-
+| 77 || 0 || [[File:Hellforge (placed).gif|link=]] || {{item|Hellforge}} || <code>Hellforge</code>
+|-
+| 78 || 0 || [[File:Clay Pot (placed).png|link=]] || {{item|Clay Pot}} || <code>ClayPot</code>
+|-
+| 79 || 0 || [[File:tiles_79_0_0.png|link=]] [[File:tiles_79_0_1.png|link=]] || {{item|Bed}} || rowspan=43 | <code>Beds</code>
+|-
+| 79 || 1 || [[File:tiles_79_1_0.png|link=]] [[File:tiles_79_1_1.png|link=]] || {{item|Ebonwood Bed}}
+|-
+| 79 || 2 || [[File:tiles_79_2_0.png|link=]] [[File:tiles_79_2_1.png|link=]] || {{item|Rich Mahogany Bed}}
+|-
+| 79 || 3 || [[File:tiles_79_3_0.png|link=]] [[File:tiles_79_3_1.png|link=]] || {{item|Pearlwood Bed}}
+|-
+| 79 || 4 || [[File:tiles_79_4_0.png|link=]] [[File:tiles_79_4_1.png|link=]] || {{item|Shadewood Bed}}
+|-
+| 79 || 5 || [[File:tiles_79_5_0.png|link=]] [[File:tiles_79_5_1.png|link=]] || {{item|Blue Dungeon Bed}}
+|-
+| 79 || 6 || [[File:tiles_79_6_0.png|link=]] [[File:tiles_79_6_1.png|link=]] || {{item|Green Dungeon Bed}}
+|-
+| 79 || 7 || [[File:tiles_79_7_0.png|link=]] [[File:tiles_79_7_1.png|link=]] || {{item|Pink Dungeon Bed}}
+|-
+| 79 || 8 || [[File:tiles_79_8_0.png|link=]] [[File:tiles_79_8_1.png|link=]] || {{item|Obsidian Bed}}
+|-
+| 79 || 9 || [[File:tiles_79_9_0.png|link=]] [[File:tiles_79_9_1.png|link=]] || {{item|Glass Bed}}
+|-
+| 79 || 10 || [[File:tiles_79_10_0.png|link=]] [[File:tiles_79_10_1.png|link=]] || {{item|Golden Bed}}
+|-
+| 79 || 11 || [[File:tiles_79_11_0.png|link=]] [[File:tiles_79_11_1.png|link=]] || {{item|Honey Bed}}
+|-
+| 79 || 12 || [[File:tiles_79_12_0.png|link=]] [[File:tiles_79_12_1.png|link=]] || {{item|Steampunk Bed}}
+|-
+| 79 || 13 || [[File:tiles_79_13_0.png|link=]] [[File:tiles_79_13_1.png|link=]] || {{item|Cactus Bed}}
+|-
+| 79 || 14 || [[File:tiles_79_14_0.png|link=]] [[File:tiles_79_14_1.png|link=]] || {{item|Flesh Bed}}
+|-
+| 79 || 15 || [[File:tiles_79_15_0.png|link=]] [[File:tiles_79_15_1.png|link=]] || {{item|Frozen Bed}}
+|-
+| 79 || 16 || [[File:tiles_79_16_0.png|link=]] [[File:tiles_79_16_1.png|link=]] || {{item|Lihzahrd Bed}}
+|-
+| 79 || 17 || [[File:tiles_79_17_0.png|link=]] [[File:tiles_79_17_1.png|link=]] || {{item|Skyware Bed}}
+|-
+| 79 || 18 || [[File:tiles_79_18_0.png|link=]] [[File:tiles_79_18_1.png|link=]] || {{item|Spooky Bed}}
+|-
+| 79 || 19 || [[File:tiles_79_19_0.png|link=]] [[File:tiles_79_19_1.png|link=]] || {{item|Living Wood Bed}}
+|-
+| 79 || 20 || [[File:tiles_79_20_0.png|link=]] [[File:tiles_79_20_1.png|link=]] || {{item|Bone Bed}}
+|-
+| 79 || 21 || [[File:tiles_79_21_0.png|link=]] [[File:tiles_79_21_1.png|link=]] || {{item|Dynasty Bed}}
+|-
+| 79 || 22 || [[File:tiles_79_22_0.png|link=]] [[File:tiles_79_22_1.png|link=]] || {{item|Palm Wood Bed}}
+|-
+| 79 || 23 || [[File:tiles_79_23_0.png|link=]] [[File:tiles_79_23_1.png|link=]] || {{item|Mushroom Bed}}
+|-
+| 79 || 24 || [[File:tiles_79_24_0.png|link=]] [[File:tiles_79_24_1.png|link=]] || {{item|Boreal Wood Bed}}
+|-
+| 79 || 25 || [[File:tiles_79_25_0.png|link=]] [[File:tiles_79_25_1.png|link=]] || {{item|Slime Bed}}
+|-
+| 79 || 26 || [[File:tiles_79_26_0.png|link=]] [[File:tiles_79_26_1.png|link=]] || {{item|Pumpkin Bed}}
+|-
+| 79 || 27 || [[File:tiles_79_27_0.png|link=]] [[File:tiles_79_27_1.png|link=]] || {{item|Martian Bed}}
+|-
+| 79 || 28 || [[File:tiles_79_28_0.png|link=]] [[File:tiles_79_28_1.png|link=]] || {{item|Meteorite Bed}}
+|-
+| 79 || 29 || [[File:tiles_79_29_0.png|link=]] [[File:tiles_79_29_1.png|link=]] || {{item|Granite Bed}}
+|-
+| 79 || 30 || [[File:tiles_79_30_0.png|link=]] [[File:tiles_79_30_1.png|link=]] || {{item|Marble Bed}}
+|-
+| 79 || 31 || [[File:tiles_79_31_0.png|link=]] [[File:tiles_79_31_1.png|link=]] || {{item|Crystal Bed}}
+|-
+| 79 || 32 || [[File:tiles_79_32_0.png|link=]] [[File:tiles_79_32_1.png|link=]] || {{item|Spider Bed}}
+|-
+| 79 || 33 || [[File:tiles_79_33_0.png|link=]] [[File:tiles_79_33_1.png|link=]] || {{item|Lesion Bed}}
+|-
+| 79 || 34 || [[File:tiles_79_34_0.png|link=]] [[File:tiles_79_34_1.png|link=]] || {{item|Solar Bed}}
+|-
+| 79 || 35 || [[File:tiles_79_35_0.png|link=]] [[File:tiles_79_35_1.png|link=]] || {{item|Vortex Bed}}
+|-
+| 79 || 36 || [[File:tiles_79_36_0.png|link=]] [[File:tiles_79_36_1.png|link=]] || {{item|Nebula Bed}}
+|-
+| 79 || 37 || [[File:tiles_79_37_0.png|link=]] [[File:tiles_79_37_1.png|link=]] || {{item|Stardust Bed}}
+|-
+| 79 || 38 || [[File:tiles_79_38_0.png|link=]] [[File:tiles_79_38_1.png|link=]] || {{item|Sandstone Bed}}
+|-
+| 79 || 39 || [[File:tiles_79_39_0.png|link=]] [[File:tiles_79_39_1.png|link=]] || {{item|Bamboo Bed}}
+|-
+| 79 || 40 || [[File:tiles_79_40_0.png|link=]] [[File:tiles_79_40_1.png|link=]] || {{item|Reef Bed}}
+|-
+| 79 || 41 || [[File:tiles_79_41_0.png|link=]] [[File:tiles_79_41_1.png|link=]] || {{item|Balloon Bed}}
+|-
+| 79 || 42 || [[File:tiles_79_42_0.png|link=]] [[File:tiles_79_42_1.png|link=]] || {{item|Ash Wood Bed}}
+|-
+| 80 || 0 || [[File:Growing cactus.png|link=]] || rowspan=4 | {{item|Cactus|Cactus plant}} || rowspan=4 | <code>Cactus</code>
+|-
+| 80 || 1 || [[File:Growing Corrupt cactus.png|link=]]
+|-
+| 80 || 2 || [[File:Growing Hallow cactus.png|link=]]
+|-
+| 80 || 3 || [[File:Growing Crimson cactus.png|link=]]
+|-
+| 81 || 0 || [[File:tiles_81_0.png|link=]] || rowspan=6 | {{item|Coral}} || rowspan=6 | <code>Coral</code>
+|-
+| 81 || 1 || [[File:tiles_81_1.png|link=]]
+|-
+| 81 || 2 || [[File:tiles_81_2.png|link=]]
+|-
+| 81 || 3 || [[File:tiles_81_3.png|link=]]
+|-
+| 81 || 4 || [[File:tiles_81_4.png|link=]]
+|-
+| 81 || 5 || [[File:tiles_81_5.png|link=]]
+|-
+| 82 || 0 || [[File:Daybloom (placed) (sprout).png|link=]] || {{item|Daybloom|note=（生长）}} || rowspan=7 | <code>ImmatureHerbs</code>
+|-
+| 82 || 1 || [[File:Moonglow (placed) (sprout).png|link=]] || {{item|Moonglow|note=（生长）}}
+|-
+| 82 || 2 || [[File:Blinkroot (placed) (sprout).png|link=]] || {{item|Blinkroot|note=（生长）}}
+|-
+| 82 || 3 || [[File:Deathweed (placed) (sprout).png|link=]] || {{item|Deathweed|note=（生长）}}
+|-
+| 82 || 4 || [[File:Waterleaf (placed) (sprout).png|link=]] || {{item|Waterleaf|note=（生长）}}
+|-
+| 82 || 5 || [[File:Fireblossom (placed) (sprout).png|link=]] || {{item|Fireblossom|note=（生长）}}
+|-
+| 82 || 6 || [[File:Shiverthorn (placed) (sprout).png|link=]] || {{item|Shiverthorn|note=（生长）}}
+|-
+| 83 || 0 || [[File:Daybloom (placed) (mature).png|link=]] || {{item|Daybloom|note=（成熟）}} || rowspan=7 | <code>MatureHerbs</code>
+|-
+| 83 || 1 || [[File:Moonglow (placed) (mature).png|link=]] || {{item|Moonglow|note=（成熟）}}
+|-
+| 83 || 2 || [[File:Blinkroot (placed) (mature).png|link=]] || {{item|Blinkroot|note=（成熟）}}
+|-
+| 83 || 3 || [[File:Deathweed (placed) (mature).png|link=]] || {{item|Deathweed|note=（成熟）}}
+|-
+| 83 || 4 || [[File:Waterleaf (placed) (mature).png|link=]] || {{item|Waterleaf|note=（成熟）}}
+|-
+| 83 || 5 || [[File:Fireblossom (placed) (mature).png|link=]] || {{item|Fireblossom|note=（成熟）}}
+|-
+| 83 || 6 || [[File:Shiverthorn (placed) (mature).png|link=]] || {{item|Shiverthorn|note=（成熟）}}
+|-
+| 84 || 0 || [[File:tiles_84_0.png|link=]] || {{item|Daybloom|note=（开花）}} || rowspan=7 | <code>BloomingHerbs</code>
+|-
+| 84 || 1 || [[File:tiles_84_1.png|link=]] || {{item|Moonglow|note=（开花）}}
+|-
+| 84 || 2 || [[File:tiles_84_2.png|link=]] || {{item|Blinkroot|note=（开花）}}
+|-
+| 84 || 3 || [[File:tiles_84_3.png|link=]] || {{item|Deathweed|note=（开花）}}
+|-
+| 84 || 4 || [[File:tiles_84_4.png|link=]] || {{item|Waterleaf|note=（开花）}}
+|-
+| 84 || 5 || [[File:tiles_84_5.png|link=]] || {{item|Fireblossom|note=（开花）}}
+|-
+| 84 || 6 || [[File:tiles_84_6.png|link=]] || {{item|Shiverthorn|note=（开花）}}
+|-
+| 85 || 0 || [[File:tiles_85_0.png|link=]] || {{item|Tombstone}} || rowspan=11 | <code>Tombstones</code>
+|-
+| 85 || 1 || [[File:tiles_85_1.png|link=]] || {{item|Grave Marker}}
+|-
+| 85 || 2 || [[File:tiles_85_2.png|link=]] || {{item|Cross Grave Marker}}
+|-
+| 85 || 3 || [[File:tiles_85_3.png|link=]] || {{item|Headstone}}
+|-
+| 85 || 4 || [[File:tiles_85_4.png|link=]] || {{item|Gravestone}}
+|-
+| 85 || 5 || [[File:tiles_85_5.png|link=]] || {{item|Obelisk}}
+|-
+| 85 || 6 || [[File:tiles_85_6.png|link=]] || {{item|Golden Cross Grave Marker}}
+|-
+| 85 || 7 || [[File:tiles_85_7.png|link=]] || {{item|Golden Tombstone}}
+|-
+| 85 || 8 || [[File:tiles_85_8.png|link=]] || {{item|Golden Grave Marker}}
+|-
+| 85 || 9 || [[File:tiles_85_9.png|link=]] || {{item|Golden Gravestone}}
+|-
+| 85 || 10 || [[File:tiles_85_10.png|link=]] || {{item|Golden Headstone}}
+|-
+| 86 || 0 || [[File:Loom (placed).png|link=]] || {{item|Loom}} || <code>Loom</code>
+|-
+| 87 || 0 || [[File:tiles_87_0.png|link=]] || {{item|Piano}} || rowspan=43 | <code>Pianos</code>
+|-
+| 87 || 1 || [[File:tiles_87_1.png|link=]] || {{item|Ebonwood Piano}}
+|-
+| 87 || 2 || [[File:tiles_87_2.png|link=]] || {{item|Rich Mahogany Piano}}
+|-
+| 87 || 3 || [[File:tiles_87_3.png|link=]] || {{item|Pearlwood Piano}}
+|-
+| 87 || 4 || [[File:tiles_87_4.png|link=]] || {{item|Shadewood Piano}}
+|-
+| 87 || 5 || [[File:tiles_87_5.png|link=]] || {{item|Living Wood Piano}}
+|-
+| 87 || 6 || [[File:tiles_87_6.png|link=]] || {{item|Flesh Piano}}
+|-
+| 87 || 7 || [[File:tiles_87_7.png|link=]] || {{item|Frozen Piano}}
+|-
+| 87 || 8 || [[File:tiles_87_8.png|link=]] || {{item|Glass Piano}}
+|-
+| 87 || 9 || [[File:tiles_87_9.png|link=]] || {{item|Honey Piano}}
+|-
+| 87 || 10 || [[File:tiles_87_10.png|link=]] || {{item|Steampunk Piano}}
+|-
+| 87 || 11 || [[File:tiles_87_11.png|link=]] || {{item|Blue Dungeon Piano}}
+|-
+| 87 || 12 || [[File:tiles_87_12.png|link=]] || {{item|Green Dungeon Piano}}
+|-
+| 87 || 13 || [[File:tiles_87_13.png|link=]] || {{item|Pink Dungeon Piano}}
+|-
+| 87 || 14 || [[File:tiles_87_14.png|link=]] || {{item|Golden Piano}}
+|-
+| 87 || 15 || [[File:tiles_87_15.png|link=]] || {{item|Obsidian Piano}}
+|-
+| 87 || 16 || [[File:tiles_87_16.png|link=]] || {{item|Bone Piano}}
+|-
+| 87 || 17 || [[File:tiles_87_17.png|link=]] || {{item|Cactus Piano}}
+|-
+| 87 || 18 || [[File:tiles_87_18.png|link=]] || {{item|Spooky Piano}}
+|-
+| 87 || 19 || [[File:tiles_87_19.png|link=]] || {{item|Skyware Piano}}
+|-
+| 87 || 20 || [[File:tiles_87_20.png|link=]] || {{item|Lihzahrd Piano}}
+|-
+| 87 || 21 || [[File:tiles_87_21.png|link=]] || {{item|Palm Wood Piano}}
+|-
+| 87 || 22 || [[File:tiles_87_22.png|link=]] || {{item|Mushroom Piano}}
+|-
+| 87 || 23 || [[File:tiles_87_23.png|link=]] || {{item|Boreal Wood Piano}}
+|-
+| 87 || 24 || [[File:tiles_87_24.png|link=]] || {{item|Slime Piano}}
+|-
+| 87 || 25 || [[File:tiles_87_25.png|link=]] || {{item|Pumpkin Piano}}
+|-
+| 87 || 26 || [[File:tiles_87_26.png|link=]] || {{item|Martian Piano}}
+|-
+| 87 || 27 || [[File:tiles_87_27.png|link=]] || {{item|Meteorite Piano}}
+|-
+| 87 || 28 || [[File:tiles_87_28.png|link=]] || {{item|Granite Piano}}
+|-
+| 87 || 29 || [[File:tiles_87_29.png|link=]] || {{item|Marble Piano}}
+|-
+| 87 || 30 || [[File:tiles_87_30.png|link=]] || {{item|Crystal Piano}}
+|-
+| 87 || 31 || [[File:tiles_87_31.png|link=]] || {{item|Dynasty Piano}}
+|-
+| 87 || 32 || [[File:tiles_87_32.png|link=]] || {{item|Spider Piano}}
+|-
+| 87 || 33 || [[File:tiles_87_33.png|link=]] || {{item|Lesion Piano}}
+|-
+| 87 || 34 || [[File:tiles_87_34.png|link=]] || {{item|Solar Piano}}
+|-
+| 87 || 35 || [[File:tiles_87_35.png|link=]] || {{item|Vortex Piano}}
+|-
+| 87 || 36 || [[File:tiles_87_36.png|link=]] || {{item|Nebula Piano}}
+|-
+| 87 || 37 || [[File:tiles_87_37.png|link=]] || {{item|Stardust Piano}}
+|-
+| 87 || 38 || [[File:tiles_87_38.png|link=]] || {{item|Sandstone Piano}}
+|-
+| 87 || 39 || [[File:tiles_87_39.png|link=]] || {{item|Bamboo Piano}}
+|-
+| 87 || 40 || [[File:tiles_87_40.png|link=]] || {{item|Reef Piano}}
+|-
+| 87 || 41 || [[File:tiles_87_41.png|link=]] || {{item|Balloon Piano}}
+|-
+| 87 || 42 || [[File:tiles_87_42.png|link=]] || {{item|Ash Wood Piano}}
+|-
+| 88 || 0 || [[File:tiles_88_0.png|link=]] || {{item|Dresser}} || rowspan=43 | <code>Dressers</code>
+|-
+| 88 || 1 || [[File:tiles_88_1.png|link=]] || {{item|Ebonwood Dresser}}
+|-
+| 88 || 2 || [[File:tiles_88_2.png|link=]] || {{item|Rich Mahogany Dresser}}
+|-
+| 88 || 3 || [[File:tiles_88_3.png|link=]] || {{item|Pearlwood Dresser}}
+|-
+| 88 || 4 || [[File:tiles_88_4.png|link=]] || {{item|Shadewood Dresser}}
+|-
+| 88 || 5 || [[File:tiles_88_5.png|link=]] || {{item|Blue Dungeon Dresser}}
+|-
+| 88 || 6 || [[File:tiles_88_6.png|link=]] || {{item|Green Dungeon Dresser}}
+|-
+| 88 || 7 || [[File:tiles_88_7.png|link=]] || {{item|Pink Dungeon Dresser}}
+|-
+| 88 || 8 || [[File:tiles_88_8.png|link=]] || {{item|Golden Dresser}}
+|-
+| 88 || 9 || [[File:tiles_88_9.png|link=]] || {{item|Obsidian Dresser}}
+|-
+| 88 || 10 || [[File:tiles_88_10.png|link=]] || {{item|Bone Dresser}}
+|-
+| 88 || 11 || [[File:tiles_88_11.png|link=]] || {{item|Cactus Dresser}}
+|-
+| 88 || 12 || [[File:tiles_88_12.png|link=]] || {{item|Spooky Dresser}}
+|-
+| 88 || 13 || [[File:tiles_88_13.png|link=]] || {{item|Skyware Dresser}}
+|-
+| 88 || 14 || [[File:tiles_88_14.png|link=]] || {{item|Honey Dresser}}
+|-
+| 88 || 15 || [[File:tiles_88_15.png|link=]] || {{item|Lihzahrd Dresser}}
+|-
+| 88 || 16 || [[File:tiles_88_16.png|link=]] || {{item|Palm Wood Dresser}}
+|-
+| 88 || 17 || [[File:tiles_88_17.png|link=]] || {{item|Mushroom Dresser}}
+|-
+| 88 || 18 || [[File:tiles_88_18.png|link=]] || {{item|Boreal Wood Dresser}}
+|-
+| 88 || 19 || [[File:tiles_88_19.png|link=]] || {{item|Slime Dresser}}
+|-
+| 88 || 20 || [[File:tiles_88_20.png|link=]] || {{item|Pumpkin Dresser}}
+|-
+| 88 || 21 || [[File:tiles_88_21.png|link=]] || {{item|Steampunk Dresser}}
+|-
+| 88 || 22 || [[File:tiles_88_22.png|link=]] || {{item|Glass Dresser}}
+|-
+| 88 || 23 || [[File:tiles_88_23.png|link=]] || {{item|Flesh Dresser}}
+|-
+| 88 || 24 || [[File:tiles_88_24.png|link=]] || {{item|Martian Dresser}}
+|-
+| 88 || 25 || [[File:tiles_88_25.png|link=]] || {{item|Meteorite Dresser}}
+|-
+| 88 || 26 || [[File:tiles_88_26.png|link=]] || {{item|Granite Dresser}}
+|-
+| 88 || 27 || [[File:tiles_88_27.png|link=]] || {{item|Marble Dresser}}
+|-
+| 88 || 28 || [[File:tiles_88_28.png|link=]] || {{item|Crystal Dresser}}
+|-
+| 88 || 29 || [[File:tiles_88_29.png|link=]] || {{item|Dynasty Dresser}}
+|-
+| 88 || 30 || [[File:tiles_88_30.png|link=]] || {{item|Frozen Dresser}}
+|-
+| 88 || 31 || [[File:tiles_88_31.png|link=]] || {{item|Living Wood Dresser}}
+|-
+| 88 || 32 || [[File:tiles_88_32.png|link=]] || {{item|Spider Dresser}}
+|-
+| 88 || 33 || [[File:tiles_88_33.png|link=]] || {{item|Lesion Dresser}}
+|-
+| 88 || 34 || [[File:tiles_88_34.png|link=]] || {{item|Solar Dresser}}
+|-
+| 88 || 35 || [[File:tiles_88_35.png|link=]] || {{item|Vortex Dresser}}
+|-
+| 88 || 36 || [[File:tiles_88_36.png|link=]] || {{item|Nebula Dresser}}
+|-
+| 88 || 37 || [[File:tiles_88_37.png|link=]] || {{item|Stardust Dresser}}
+|-
+| 88 || 38 || [[File:tiles_88_38.png|link=]] || {{item|Sandstone Dresser}}
+|-
+| 88 || 39 || [[File:tiles_88_39.png|link=]] || {{item|Bamboo Dresser}}
+|-
+| 88 || 40 || [[File:tiles_88_40.png|link=]] || {{item|Reef Dresser}}
+|-
+| 88 || 41 || [[File:tiles_88_41.png|link=]] || {{item|Balloon Dresser}}
+|-
+| 88 || 42 || [[File:tiles_88_42.png|link=]] || {{item|Ash Wood Dresser}}
+|-
+| 89 || 0 || [[File:tiles_89_0.png|link=]] || {{item|Bench}} || rowspan=47 | <code>Benches</code>
+|-
+| 89 || 1 || [[File:tiles_89_1.png|link=]] || {{item|Sofa}}
+|-
+| 89 || 2 || [[File:tiles_89_2.png|link=]] || {{item|Ebonwood Sofa}}
+|-
+| 89 || 3 || [[File:tiles_89_3.png|link=]] || {{item|Rich Mahogany Sofa}}
+|-
+| 89 || 4 || [[File:tiles_89_4.png|link=]] || {{item|Pearlwood Sofa}}
+|-
+| 89 || 5 || [[File:tiles_89_5.png|link=]] || {{item|Shadewood Sofa}}
+|-
+| 89 || 6 || [[File:tiles_89_6.png|link=]] || {{item|Blue Dungeon Sofa}}
+|-
+| 89 || 7 || [[File:tiles_89_7.png|link=]] || {{item|Green Dungeon Sofa}}
+|-
+| 89 || 8 || [[File:tiles_89_8.png|link=]] || {{item|Pink Dungeon Sofa}}
+|-
+| 89 || 9 || [[File:tiles_89_9.png|link=]] || {{item|Golden Sofa}}
+|-
+| 89 || 10 || [[File:tiles_89_10.png|link=]] || {{item|Obsidian Sofa}}
+|-
+| 89 || 11 || [[File:tiles_89_11.png|link=]] || {{item|Bone Sofa}}
+|-
+| 89 || 12 || [[File:tiles_89_12.png|link=]] || {{item|Cactus Sofa}}
+|-
+| 89 || 13 || [[File:tiles_89_13.png|link=]] || {{item|Spooky Sofa}}
+|-
+| 89 || 14 || [[File:tiles_89_14.png|link=]] || {{item|Skyware Sofa}}
+|-
+| 89 || 15 || [[File:tiles_89_15.png|link=]] || {{item|Honey Sofa}}
+|-
+| 89 || 16 || [[File:tiles_89_16.png|link=]] || {{item|Steampunk Sofa}}
+|-
+| 89 || 17 || [[File:tiles_89_17.png|link=]] || {{item|Mushroom Sofa}}
+|-
+| 89 || 18 || [[File:tiles_89_18.png|link=]] || {{item|Glass Sofa}}
+|-
+| 89 || 19 || [[File:tiles_89_19.png|link=]] || {{item|Pumpkin Sofa}}
+|-
+| 89 || 20 || [[File:tiles_89_20.png|link=]] || {{item|Lihzahrd Sofa}}
+|-
+| 89 || 21 || [[File:tiles_89_21.png|link=]] || {{item|Palm Wood Bench}}
+|-
+| 89 || 22 || [[File:tiles_89_22.png|link=]] || {{item|Palm Wood Sofa}}
+|-
+| 89 || 23 || [[File:tiles_89_23.png|link=]] || {{item|Mushroom Bench}}
+|-
+| 89 || 24 || [[File:tiles_89_24.png|link=]] || {{item|Boreal Wood Sofa}}
+|-
+| 89 || 25 || [[File:tiles_89_25.png|link=]] || {{item|Slime Sofa}}
+|-
+| 89 || 26 || [[File:tiles_89_26.png|link=]] || {{item|Flesh Sofa}}
+|-
+| 89 || 27 || [[File:tiles_89_27.png|link=]] || {{item|Frozen Sofa}}
+|-
+| 89 || 28 || [[File:tiles_89_28.png|link=]] || {{item|Living Wood Sofa}}
+|-
+| 89 || 29 || [[File:tiles_89_29.png|link=]] || {{item|Martian Sofa}}
+|-
+| 89 || 30 || [[File:tiles_89_30.png|link=]] || {{item|Meteorite Sofa}}
+|-
+| 89 || 31 || [[File:tiles_89_31.png|link=]] || {{item|Granite Sofa}}
+|-
+| 89 || 32 || [[File:tiles_89_32.png|link=]] || {{item|Marble Sofa}}
+|-
+| 89 || 33 || [[File:tiles_89_33.png|link=]] || {{item|Crystal Sofa}}
+|-
+| 89 || 34 || [[File:tiles_89_34.png|link=]] || {{item|Dynasty Sofa}}
+|-
+| 89 || 35 || [[File:tiles_89_35.png|link=]] || {{item|Spider Sofa}}
+|-
+| 89 || 36 || [[File:tiles_89_36.png|link=]] || {{item|Lesion Sofa}}
+|-
+| 89 || 37 || [[File:tiles_89_37.png|link=]] || {{item|Solar Sofa}}
+|-
+| 89 || 38 || [[File:tiles_89_38.png|link=]] || {{item|Vortex Sofa}}
+|-
+| 89 || 39 || [[File:tiles_89_39.png|link=]] || {{item|Nebula Sofa}}
+|-
+| 89 || 40 || [[File:tiles_89_40.png|link=]] || {{item|Stardust Sofa}}
+|-
+| 89 || 41 || [[File:tiles_89_41.png|link=]] || {{item|Sandstone Sofa}}
+|-
+| 89 || 42 || [[File:tiles_89_42.png|link=]] || {{item|Bamboo Sofa}}
+|-
+| 89 || 43 || [[File:tiles_89_43.png|link=]] || {{item|Chippy's Couch}}
+|-
+| 89 || 44 || [[File:tiles_89_44.png|link=]] || {{item|Reef Sofa}}
+|-
+| 89 || 45 || [[File:tiles_89_45.png|link=]] || {{item|Balloon Sofa}}
+|-
+| 89 || 46 || [[File:tiles_89_46.png|link=]] || {{item|Ash Wood Sofa}}
+|-
+| 90 || 0 || [[File:tiles_90_0_0.png|link=]] [[File:tiles_90_0_1.png|link=]] || {{item|Bathtub}} || rowspan=43 | <code>Bathtubs</code>
+|-
+| 90 || 1 || [[File:tiles_90_1_0.png|link=]] [[File:tiles_90_1_1.png|link=]] || {{item|Cactus Bathtub}}
+|-
+| 90 || 2 || [[File:tiles_90_2_0.png|link=]] [[File:tiles_90_2_1.png|link=]] || {{item|Ebonwood Bathtub}}
+|-
+| 90 || 3 || [[File:tiles_90_3_0.png|link=]] [[File:tiles_90_3_1.png|link=]] || {{item|Flesh Bathtub}}
+|-
+| 90 || 4 || [[File:tiles_90_4_0.png|link=]] [[File:tiles_90_4_1.png|link=]] || {{item|Glass Bathtub}}
+|-
+| 90 || 5 || [[File:tiles_90_5_0.png|link=]] [[File:tiles_90_5_1.png|link=]] || {{item|Frozen Bathtub}}
+|-
+| 90 || 6 || [[File:tiles_90_6_0.png|link=]] [[File:tiles_90_6_1.png|link=]] || {{item|Rich Mahogany Bathtub}}
+|-
+| 90 || 7 || [[File:tiles_90_7_0.png|link=]] [[File:tiles_90_7_1.png|link=]] || {{item|Pearlwood Bathtub}}
+|-
+| 90 || 8 || [[File:tiles_90_8_0.png|link=]] [[File:tiles_90_8_1.png|link=]] || {{item|Lihzahrd Bathtub}}
+|-
+| 90 || 9 || [[File:tiles_90_9_0.png|link=]] [[File:tiles_90_9_1.png|link=]] || {{item|Skyware Bathtub}}
+|-
+| 90 || 10 || [[File:tiles_90_10_0.png|link=]] [[File:tiles_90_10_1.png|link=]] || {{item|Spooky Bathtub}}
+|-
+| 90 || 11 || [[File:tiles_90_11_0.png|link=]] [[File:tiles_90_11_1.png|link=]] || {{item|Honey Bathtub}}
+|-
+| 90 || 12 || [[File:tiles_90_12_0.png|link=]] [[File:tiles_90_12_1.png|link=]] || {{item|Steampunk Bathtub}}
+|-
+| 90 || 13 || [[File:tiles_90_13_0.png|link=]] [[File:tiles_90_13_1.png|link=]] || {{item|Living Wood Bathtub}}
+|-
+| 90 || 14 || [[File:tiles_90_14_0.png|link=]] [[File:tiles_90_14_1.png|link=]] || {{item|Shadewood Bathtub}}
+|-
+| 90 || 15 || [[File:tiles_90_15_0.png|link=]] [[File:tiles_90_15_1.png|link=]] || {{item|Bone Bathtub}}
+|-
+| 90 || 16 || [[File:tiles_90_16_0.png|link=]] [[File:tiles_90_16_1.png|link=]] || {{item|Dynasty Bathtub}}
+|-
+| 90 || 17 || [[File:tiles_90_17_0.png|link=]] [[File:tiles_90_17_1.png|link=]] || {{item|Palm Wood Bathtub}}
+|-
+| 90 || 18 || [[File:tiles_90_18_0.png|link=]] [[File:tiles_90_18_1.png|link=]] || {{item|Mushroom Bathtub}}
+|-
+| 90 || 19 || [[File:tiles_90_19_0.png|link=]] [[File:tiles_90_19_1.png|link=]] || {{item|Boreal Wood Bathtub}}
+|-
+| 90 || 20 || [[File:tiles_90_20_0.png|link=]] [[File:tiles_90_20_1.png|link=]] || {{item|Slime Bathtub}}
+|-
+| 90 || 21 || [[File:tiles_90_21_0.png|link=]] [[File:tiles_90_21_1.png|link=]] || {{item|Blue Dungeon Bathtub}}
+|-
+| 90 || 22 || [[File:tiles_90_22_0.png|link=]] [[File:tiles_90_22_1.png|link=]] || {{item|Green Dungeon Bathtub}}
+|-
+| 90 || 23 || [[File:tiles_90_23_0.png|link=]] [[File:tiles_90_23_1.png|link=]] || {{item|Pink Dungeon Bathtub}}
+|-
+| 90 || 24 || [[File:tiles_90_24_0.png|link=]] [[File:tiles_90_24_1.png|link=]] || {{item|Pumpkin Bathtub}}
+|-
+| 90 || 25 || [[File:tiles_90_25_0.png|link=]] [[File:tiles_90_25_1.png|link=]] || {{item|Obsidian Bathtub}}
+|-
+| 90 || 26 || [[File:tiles_90_26_0.png|link=]] [[File:tiles_90_26_1.png|link=]] || {{item|Golden Bathtub}}
+|-
+| 90 || 27 || [[File:tiles_90_27_0.png|link=]] [[File:tiles_90_27_1.png|link=]] || {{item|Martian Bathtub}}
+|-
+| 90 || 28 || [[File:tiles_90_28_0.png|link=]] [[File:tiles_90_28_1.png|link=]] || {{item|Meteorite Bathtub}}
+|-
+| 90 || 29 || [[File:tiles_90_29_0.png|link=]] [[File:tiles_90_29_1.png|link=]] || {{item|Granite Bathtub}}
+|-
+| 90 || 30 || [[File:tiles_90_30_0.png|link=]] [[File:tiles_90_30_1.png|link=]] || {{item|Marble Bathtub}}
+|-
+| 90 || 31 || [[File:tiles_90_31_0.png|link=]] [[File:tiles_90_31_1.png|link=]] || {{item|Crystal Bathtub}}
+|-
+| 90 || 32 || [[File:tiles_90_32_0.png|link=]] [[File:tiles_90_32_1.png|link=]] || {{item|Spider Bathtub}}
+|-
+| 90 || 33 || [[File:tiles_90_33_0.png|link=]] [[File:tiles_90_33_1.png|link=]] || {{item|Lesion Bathtub}}
+|-
+| 90 || 34 || [[File:tiles_90_34_0.png|link=]] [[File:tiles_90_34_1.png|link=]] || {{item|Solar Bathtub}}
+|-
+| 90 || 35 || [[File:tiles_90_35_0.png|link=]] [[File:tiles_90_35_1.png|link=]] || {{item|Vortex Bathtub}}
+|-
+| 90 || 36 || [[File:tiles_90_36_0.png|link=]] [[File:tiles_90_36_1.png|link=]] || {{item|Nebula Bathtub}}
+|-
+| 90 || 37 || [[File:tiles_90_37_0.png|link=]] [[File:tiles_90_37_1.png|link=]] || {{item|Stardust Bathtub}}
+|-
+| 90 || 38 || [[File:tiles_90_38_0.png|link=]] [[File:tiles_90_38_1.png|link=]] || {{item|Sandstone Bathtub}}
+|-
+| 90 || 39 || [[File:tiles_90_39_0.png|link=]] [[File:tiles_90_39_1.png|link=]] || {{item|Bamboo Bathtub}}
+|-
+| 90 || 40 || [[File:tiles_90_40_0.png|link=]] [[File:tiles_90_40_1.png|link=]] || {{item|Reef Bathtub}}
+|-
+| 90 || 41 || [[File:tiles_90_41_0.png|link=]] [[File:tiles_90_41_1.png|link=]] || {{item|Balloon Bathtub}}
+|-
+| 90 || 42 || [[File:tiles_90_42_0.png|link=]] [[File:tiles_90_42_1.png|link=]] || {{item|Ash Wood Bathtub}}
+|}
+
+[[Category:数据 ID]]
+
+{{language info|en=Tile IDs/Part2}}

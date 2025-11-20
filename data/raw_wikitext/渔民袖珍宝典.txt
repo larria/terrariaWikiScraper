@@ -1,0 +1,40 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| tags = Informational / quest rewards
+| auto = 3120
+}}
+
+'''{{tr|Fisherman's Pocket Guide}}'''是一种可以显示你目前[[{{tr|Fishing}}#影响因素|{{tr|Fishing Power}}]]的[[{{tr|Informational accessory}}]]。完成[[{{tr|Angler}}#任务奖励|{{tr|Angler}}]] [[{{tr|NPC}}]] 的[[{{tr|Fishing}}]]任务的后有 {{chance|1/30}} {{source code ref|v=1.4.0.5|name=angler|{{code|Terraria.Player.cs}} 中的 {{code|GetAnglerReward()}} 函数。注意真正的掉落率要略低于 1/30，因为在此{{tr|item}}之前要对大量其他{{tr|item}}进行掷骰判定。}}几率得到此{{tr|accessory}}作为奖励。
+
+在{{eversions|1.4.0.1}}中，如果在{{tr|inventory}}或任何一个[[{{tr|Storage items}}#{{tr|Portable Storage}}|{{tr|Portable Storages}}]]中已经有{{tr|Fisherman's Pocket Guide}}，{{tr|the Angler}}就不会将其作为奖励发给你。但是，如果你的{{tr|inventories}}中已经有了{{tr|Fisherman's Pocket Guide}}、[[{{tr|Weather Radio}}]]'''和'''[[{{tr|Sextant}}]]（或者由它们所制作出来的{{tr|accessory}}任意其一：[[{{tr|Fish Finder}}]]、[[{{tr|PDA}}]]、或{{eil|Cell Phone}}），他就能再重复给你{{tr|Fisherman's Pocket Guides}}。<ref name="angler"/>
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Fisherman's Pocket Guide|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Fisherman's Pocket Guide|expectedrows=2}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* 如果[[{{tr|松露虫}}]]被用于当前鱼饵，信息栏会显示“{{gameText|GameUI.FishingWarning}}”而不是通常的一个数字。
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在可以通过[[{{tr|Shimmer}}]]制作[[{{tr|Sextant}}]]。}}
+{{history|Desktop 1.4.0.5|修复了随机数生成器会让渔力显示大幅变化的{{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Angler quest reward}}几率提升。
+** {{tr|The Angler}}不再会给你重复的{{tr|informational accessories}}，除非你已经全部拥有。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}} ({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}} ({{icon|ps4}})}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+{{language info|en=Fisherman's Pocket Guide}}

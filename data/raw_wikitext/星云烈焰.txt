@@ -1,0 +1,64 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| hardmode = yes
+| auto = 3542
+| idprojectile = 634, 635
+| sound1 = Item 14.wav
+| soundcaption1 = {{tr|Impact}}
+}}
+[[File:Nebula Blaze (demo).gif|frame|right|{{tr|The Nebula Blaze}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Mimics}}]]。注意特殊攻击如何造成更高的伤害，以及{{tr|projectiles}}自动导向{{tr|enemies}}。]]
+
+'''{{tr|Nebula Blaze}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Lunatic Cultist}}]]后的[[{{tr|magic weapon}}]]，能不准确地发射出粉红色的、高速的{{tr|projectiles}}，追踪附近[[{{tr|enemies}}]]，并有 {{chance|1/5}} 几率改为发射更大的蓝色{{tr|projectile}}，造成 300% {{tr|weapon}}{{tr|base damage}}（{{#expr:floor({{iteminfo|Nebula Blaze|damage}}*3)}} 伤害）且移动速度增加 60%。
+	
+选中此{{tr|weapon}}时，会在{{tr|player}}手部出现粉红色光芒，它会发出少量的光，并在{{tr|player}}移动时留下粉红色的粒子轨迹。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Nebula Blaze|expectedrows=1}}
+
+== 备注 ==
+* 其{{tr|projectiles}}击中时造成 5 {{tr|ticks}}[[{{tr|global invincibility frame}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The Nebula Blaze projectiles}}可追踪半径 25 {{tr|tile}}内的{{tr|enemy}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001}}
+** {{tr|Nebula Blaze EX projectiles}}追踪范围会增加至 50 {{tr|tiles}}。
+** 选定目标后，{{tr|projectiles}}将会无视距离限制持续锁定其且不会转向其他{{tr|enemy}}直至当前目标死亡或消失。
+* 在碰撞到{{tr|solid block}}或当距离其目标低于 1.25 {{tr|tiles}}时，{{tr|the projectiles}}会爆炸并以弹着点为中心对 3.125×3.125 {{tr|tile}}方形区域内造成伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_001 / Terraria.Projectile.Kill}}
+* {{tr|The Nebula Blaze EX projectiles}}会被[[{{tr|liquids}}]]减速且可在[[{{tr|shimmer}}]]表面弹跳，然而常规的{{tr|Nebula blaze projectiles}}则不受影响。
+
+== 小贴士 ==
+* 由于其较高的[[{{tr|mana}}]]消耗和很快的[[{{tr|use time}}]]，{{tr|the Nebula Blaze}}消耗{{tr|mana}}非常快。使用此物品时，请务必准备好提供{{tr|mana}}的物品。
+* 由于此武器的不准确性，它最适合在开放空间战斗。在诸如[[{{tr|Dungeon}}]]中的狭窄通道中与{{tr|enemies}}战斗时，{{tr|projectiles}}通常会撞上墙壁。
+* {{tr|Nebula Blaze}}的[[{{tr|critical hit}}]]可以达到甚至超过 3000 {{tr|damage}}。
+* 当用来配合[[{{tr|Spectre armor}}]]进行治疗时，{{tr|Nebula Blaze}}可以一击恢复大量{{tr|health}}，但同时也会触发一个很长的冷却时间，然后才能再次激活治疗。这让它特别适合于在[[{{tr|Moon Bite}}]]消退后的那几秒钟内尽可能多地恢复生命。
+
+== 花絮 ==
+* {{tr|Nebula Blaze}}似乎是一个魔法手套或长手套。
+* {{tr|Nebula Blaze}}拥有所有{{tr|magic weapon}}中最高的{{tr|base damage}}。
+* 其{{tr|tooltip}}提到了{{维基百科|Orion's Belt|t=猎户腰带}}，这是{{维基百科|Orion (constellation)|Orion|t=猎户星座}}的一部分。
+** 这可能是参考自 2004 年的美国超级英雄电影{{维基百科|b=y|Spider-Man 2|t=蜘蛛侠 2}}中章鱼博士所说的一句话：“The power of the sun in the palm of my hand.”（太阳之力，在我掌中。）。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Knockback}}由 0 提升至 3，允许它获得更好的[[{{tr|modifiers}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Use time}}由 15 降低至 12。
+** {{tr|Mana cost}}由 18 降低至 12。}}
+{{history|Desktop 1.3.0.5|{{tr|Base damage}}由 120 提升至 130。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Master Template Luminite
+| show-nebula = yes
+}}
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Nebula Blaze}}

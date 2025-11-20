@@ -1,0 +1,26 @@
+<includeonly><!--
+-->{{#if:{{#var:wtrow:OK}}||{{weapon type row}}}}<!-- load vars -->
+|-
+| {{item|{{{name|}}}|image={{{name|}}}.png|id={{{itemid|}}}|mode=table|class=alignleft block}}
+| '''{{#dplreplace:{{{damage|}}}|/ \/ /|&#32;/<br/>}}'''
+| {{#or:{{#var:explosives:{{{name|}}}:radius}}|data-sort-type=0 {{!}} {{note|small=y|???}} }}
+| {{formatnum:{{{velocity|}}}}}
+| {{#if:{{{usetime|}}}|<!--
+	-->style="line-height:15px"{{!}}<!--
+	-->{{#iferror:{{#expr:0{{{usetime|}}}+1}}|<!-- if not is_number($usetime)
+		-->{{#dplreplace:{{{usetime|}}}|\(({{#var:_uts}})\)|</span>{{note|small=y|paren=y|$1}}}}<!-- replace the "use time" styling with {{note}}
+	-->|<!-- 
+		-->{{formatnum:{{{usetime|}}}}}<br/>{{note|small=y|block=y|paren=y|{{use time|{{{usetime|}}}}}}}<!-- 
+	-->}}<!--
+-->}}
+| {{rare|{{{rare|}}}}}
+| align=right | {{{sell|}}}
+| align=left | {{#var:explosives:{{{name|}}}:notes}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Explosives (class)/row}}
+</noinclude>

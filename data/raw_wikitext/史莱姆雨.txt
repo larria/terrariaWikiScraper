@@ -1,0 +1,187 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerSlimeRain.png|center]]
+{{flavor text|{{gameText|LegacyWorldGen.74}}|image = Bestiary Slime Rain}}
+[[File:Slime Rain King Slime.jpg|thumb|right|300px|{{tr|Slime Rain}}期间生成的[[{{tr|King Slime}}]]。注意背景中落下的{{tr|slimes}}。]]
+
+'''{{tr|Slime Rain}}'''是一个小型的[[{{tr|Events}}|{{tr|event}}]]，会让[[{{tr|Green Slime}}]]、[[{{tr|Blue Slime}}]]、[[{{tr|Purple Slime}}]]、以及稀有的[[{{tr|Pinky}}]]频繁生成。在{{tr|event}}期间，和天然生成的{{tr|slimes}}不同，所有生成的{{tr|slimes}}在生成时就会对玩家展现敌对行为；{{tr|Green Slime, Blue Slime, and Purple Slimes}}也会在{{tr|background}}中下落。{{tr|Slime Rain}}会随机发生，[[{{tr|status message}}]]''“{{gameText|LegacyWorldGen.74}}”''标志着其开始。在{{tr|event}}期间，[[{{tr|King Slime}}]]会在打败 150 个{{tr|slimes}}后生成。如果此前已经在{{tr|world}}中打败了{{tr|King Slime}}，则在打败 75 个{{tr|slimes}}后它就会生成。
+
+{{tr|Slime Rain}}不会在玩家离开{{tr|world}}时结束。不过，在{{tr|event}}期间击败{{tr|King Slime}}会立即结束{{tr|event}}。如果玩家在{{tr|Slime Rain}}结束时未能打败 150 / 75 个{{tr|slimes}}，{{tr|Slime Rain}}会自然结束，不生成{{tr|King Slime}}。{{tr|status message}}''“{{gameText|LegacyWorldGen.75}}”''会在{{tr|event}}结束时出现。
+
+== 细节 ==
+{{tr|Slime Rain}}的持续时间随游戏模式有所不同：{{source code ref|name=StartSlimeRain|v=1.4.4.9|method=Terraria.Main.StartSlimeRain}}
+* 在{{tr|singleplayer}}中，{{tr|a Slime Rain}}可持续 {{duration|32400ticks}}至 {{duration|53999ticks}}。
+* 在[[{{tr|multiplayer}}]]中，{{tr|a Slime Rain}}总是持续 {{duration|54000ticks}}。
+
+无法手动开始{{tr|A Slime Rain}}，因此必须满足下方条件才能让它发生：{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateTime}}
+* {{tr|world}}中至少一名玩家的最大[[{{tr|health}}]]高于 140 且[[{{tr|defense}}]]高于 8（在[[{{tr|Expert Mode}}]]中除外，这种情况下它可以在满足此条件前发生，但发生几率显著降低）。
+* 下列[[{{tr|events}}]]均未激活：[[{{tr|Rain}}]]、[[{{tr|Lantern Night}}]]、[[{{tr|Blood Moon}}]]、[[{{tr|Solar Eclipse}}]]、[[{{tr|Frost Moon}}]]、[[{{tr|Pumpkin Moon}}]]、[[{{tr|Goblin Army}}]]、[[{{tr|Frost Legion}}]]、[[{{tr|Pirate Invasion}}]]、[[{{tr|Martian Madness}}]]、和[[{{tr|Old One's Army}}]]。
+
+另外：
+* {{tr|Slime Rain}}永远不会在 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中发生。<ref name="StartSlimeRain"/>
+* 在新生成{{tr|world}}时，{{tr|Slime Rain}}在一段时间内不会发生，这一时长在 {{duration|86400ticks}}和 {{duration|172800ticks}}之间随机决定。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld / Terraria.NPC.BusyWithAnyInvasionOfSorts}}
+* 在{{tr|singleplayer}}中，{{tr|Slime Rain}}结束后，另一次{{tr|Slime Rain}}在一段时间内不会发生，这一时长在 {{duration|302400ticks}}和 {{duration|647999ticks}}之间随机决定。{{source code ref|v=1.4.4.9|method=Terraria.Main.StopSlimeRain / Terraria.NPC.BusyWithAnyInvasionOfSorts}}
+** 在{{tr|multiplayer}}中则没有限制。另一次{{tr|Slime Rain}}有可能会在{{tr|Slime Rain}}结束后立即发生。
+
+{{tr|A Slime Rain}}可以在 {{time|ticks=0|day=y}} 和 {{time|ticks=27000|day=y}}<!-- Main.dayTime && Main.time < 27000.0 --> 之间发生。在这段时间中，它每{{tr|tick}}{{tick}}有 1/225,000 的几率生成，即每天 {{chance|27000/225000}} 几率。这一几率在下列几种情况下会降低：[[{{tr|Hardmode}}]]中；{{tr|King Slime}}已被击败；未满足条件的{{tr|Expert Mode}}玩家。
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria"
+|+ 每天发生{{tr|Slime Rain}}的几率（{{tr|Pre-Hardmode}}）
+! rowspan=2 | !! colspan=2 | {{item|King Slime|image=Map Icon King Slime.png}}
+|-
+! 未击败 !! 已击败
+|-
+! [[{{tr|Classic Mode}}]]<br/>或{{expert|条件满足}}
+| {{chance|27000/{{#expr:450000/2}}}} || {{chance|27000/450000}}
+|-
+! {{expert|条件未满足}}
+| {{expert|{{chance|27000/{{#expr:(450000/2)*5}}}}}} || {{expert|{{chance|27000/{{#expr:450000*5}}}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria"
+|+ 每天发生{{tr|Slime Rain}}的几率（{{tr|Hardmode}}）
+! rowspan=2 | !! colspan=2 | {{item|King Slime|image=Map Icon King Slime.png}}
+|-
+! 未击败 !! 已击败
+|-
+! [[{{tr|Classic Mode}}]]<br/>或{{expert|条件满足}}
+| {{chance|27000/{{#expr:(450000/2)*1.5}}}} || {{chance|27000/{{#expr:450000*1.5}}}}
+|-
+! {{expert|条件未满足}}
+| {{expert|{{chance|27000/{{#expr:(450000/2)*1.5*5}}}}}} || {{expert|{{chance|27000/{{#expr:450000*1.5*5}}}}}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75|icons=n}}{{dotlist/options|dot=no|space=l}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Green Slime}}<!--
+			-->|{{item|Blue Slime}}<!--
+			-->|{{item|Purple Slime}}<!--
+			-->|{{item|Pinky}}<!--
+			-->|{{item|King Slime|note2=（{{tr|boss}}）|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Expert Mode}}]]下的{{tr|King Slime}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Spiked Slime}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|King Slime}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Solidifier}}<!--
+			-->|{{item|Ninja Hood}}<!--
+			-->|{{item|Ninja Shirt}}<!--
+			-->|{{item|Ninja Pants}}<!--
+			-->|{{item|Lesser Healing Potion}}<!--
+			-->|{{item|Slimy Saddle}}<!--
+			-->|{{item|Slime Gun}}<!--
+			-->|{{item|Slime Hook}}<!--
+			-->|{{item|King Slime Trophy}}<!--
+			-->|{{item|King Slime Mask}}<!--
+			-->|{{item|Treasure Bag (King Slime)|note2=（仅限[[{{tr|Expert Mode}}]]）}}<!--
+			-->|{{item|Royal Gel|note2=（仅限[[{{tr|Expert Mode}}]]）}}<!--
+			-->|{{item|King Slime Relic|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->|{{item|Royal Delight|note2=（仅限[[{{tr|Master Mode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Blue Slime}}]]、[[{{tr|Green Slime}}]]、和[[{{tr|Purple Slime}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Gel}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Pinky}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Pink Gel}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=罕见掉落：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Slime Staff}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Slime Rain)|{{sound|track=Slime Rain}}|icons=no}}<!--
+		-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}
+
+== 备注 ==
+* {{tr|The Slime Rain}}可以在 [[{{tr|boss}}]] 存活的时候发生。
+* 只有[[{{tr|Blue Slime}}]]（包括[[{{tr|Slime Statue}}]]所生成的）和任何与其共享主[[{{tr|NPC IDs}}]]值（1）的{{tr|variants}}计入{{tr|event}}的击杀数：{{comma/start}}<!--
+-->{{#loop:i|-65|65|<!--
+	-->{{#ifeq:{{npcinfo|id={{#var:i}}|2=type}}|1|<!-- has type=1?
+		-->{{comma/item|{{eil|{{npcNameFromId|{{#var:i}}}}}}}}<!--
+	-->}}<!--
+-->}}<!--
+-->{{comma/end}}。
+:* 可以用任何方式杀死{{tr|Slimes}}，包括[[{{tr|lava}}]]、[[{{tr|traps}}]]、和友方 [[{{tr|NPC}}]] 的攻击。
+* 可以通过手动召唤[[{{tr|King Slime}}]]（通过[[{{tr|Slime Crown}}]]）并杀死它的方式来结束此{{tr|event}}。
+* 如果{{tr|Slime Rain}}生成的{{tr|King Slime}}消失了，{{tr|the event}}将继续进行，在{{tr|event}}结束之前杀死足够的{{tr|slimes}}可以让{{tr|King Slime}}再次生成。不过，首个{{tr|King Slime}}生成后所需的击杀数会提高：玩家需要杀死 225 个{{tr|slimes}}（若此前打败了{{tr|King Slime}}则是 102 个{{tr|slimes}}<!-- 150+75 or 75+37 slimes-->）来让后续的{{tr|King Slimes}}生成。{{source code ref|v=1.4.4.9|method=Terraria.NPC.DoDeathEvents_AdvanceSlimeRain}}
+* 如果{{tr|event}}结束而没有打败{{tr|King Slime}}，则不会得到[[{{tr|Sticky Situation}}]][[{{tr|achievement}}]]。
+* 如果玩家位于具有特殊{{tr|variants}}的{{tr|slimes}}的{{tr|biome}}中，那些{{tr|slimes}}并不会从天而降，且它们的正常{{tr|spawn rate}}并不会受到影响。
+* {{tr|Slime Rain}}生成的{{tr|Slimes}}不受[[{{tr|Journey Mode}}]]的{{tr|enemy spawn rate}}滑条影响。
+
+== 成就 ==
+{{achievement|name=Sticky Situation}}
+{{achievement|name=Gelatin World Tour}}
+{{achievement|name=Pretty in Pink}}
+{{achievement|name=Slippery Shinobi}}
+
+== 小贴士 ==
+* 此{{tr|event}}可以通过停留在室内或[[{{tr|underground}}]]来整个避开，因为它在经过一定时间后会结束而无需任何玩家互动。
+* {{tr|Slime Rain}}期间{{tr|slime}}的高{{tr|spawn rate}}，包括[[{{tr|Pinky}}]]，极大的有利于刷[[{{tr|Gel}}]]、[[{{tr|Pink Gel}}]]、[[{{tr|Slime Staff}}]]、和{{tr|Slimes}}的[[{{tr|Banners (enemy)}}|{{tr|Banners}}]]。[[{{tr|King Slime}}]]也会提供对于游戏初期很有用的战利品。
+* 在封闭掩体墙上开个 1×1 的洞可让玩家能够相对安全地从这发射[[{{tr|arrows}}]]和使用[[{{tr|Yoyo}}]]。不过，一旦{{tr|King Slime}}生成，建议离开掩体，因为它可以传送到掩体内并困住玩家。
+* 可以用[[{{tr|Water Candle}}]]和[[{{tr|Battle Potion}}]]来提升[[{{tr|NPC spawning}}|{{tr|spawn rate}}]]。同样地，也可以用[[{{tr|Sunflower}}]]、[[{{tr|Calming Potion}}]]、和[[{{tr|Peace Candle}}]]来降低。
+* 建造一个至少有 2 层的{{tr|arena}}会有所帮助，因为{{tr|slimes}}会落在顶部而轻松被玩家杀死。一旦[[{{tr|King Slime}}]]生成，玩家就可以前往{{tr|arena}}的下层，掉落的{{tr|slimes}}仍会落在{{tr|arena}}顶部，不会影响和{{tr|King Slime}}的战斗。
+
+== 花絮 ==
+* 如果玩家跑到足够高的地方，可以在{{tr|event}}宣布之前就看到背景中的{{tr|The Slime Rain}}效果。
+* 一些{{tr|slimes}}似乎会在玩家上空{{tr|spawn}}，使得它们从天而降，从而产生字面意义上的“{{tr|rain}}”。
+* {{tr|Slime Rain}}是[[《{{tr|Terraria}}》]]中无法通过使用{{tr|item}}召唤的两个战斗相关的{{tr|events}}之一，另一个是[[{{tr|Martian Madness}}]]。
+
+== 图库 ==
+作为[[{{tr|Ambient entities}}|环境]]的一部分，在{{tr|event}}期间于{{tr|background}}中下落的{{tr|slimes}}。
+<gallery>
+File:Sky Slime 1.gif|[[{{tr|Green Slime}}]]。
+File:Sky Slime 2.gif|[[{{tr|Blue Slime}}]]。
+File:Sky Slime 3.gif|[[{{tr|King Slime}}]]。
+File:Sky Slime 4.gif|[[{{tr|Purple Slime}}]]。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|发生几率提高 20%。现在只能在 {{time|4:30 AM}} 和 {{time|12:00 PM}} 间发生。}}
+{{history|Desktop 1.4.0.1|现在有自己的[[{{tr|music}}]]了。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Events}}
+
+[[Category:随机事件]]
+
+{{language info|en=Slime Rain}}

@@ -1,0 +1,68 @@
+{{npc infobox
+| auto = 243
+| image = Ice Golem.gif
+| imagesize = 54 x 119px
+| image2 = Ice Golem (old).png
+| idprojectile = 257
+| environment = Snow biome+Rain
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|64|128|192}} {{note|small=y|paren=y|{{tr|ranged}}}}
+| debuff = Chilled
+| debuffchance = 100% {{note|paren=y|{{gameText|ProjectileName.FrostBeam}}}}
+| debuffduration = {{modes|{{duration|45}}|{{duration|90}}|{{duration|112.5}}}}
+| debuff2 = Frozen
+| debuffchance2 = 20% {{note|paren=y|{{gameText|ProjectileName.FrostBeam}}}}
+| debuffduration2 = {{modes|{{duration|1}}|{{duration|2}}|{{duration|2.5}}}}
+| Ice Feather|1|33.3%
+| Frost Core|1|100%
+|:group:start|必定掉落下列 3 件物品之一|@normal
+| Frost Helmet|1|33.3% {{eicons|1.2.3|invert=y|small=y}} @normal
+| Frost Breastplate|1|33.3% {{eicons|1.2.3|invert=y|small=y}} @normal
+| Frost Leggings|1|33.3% {{eicons|1.2.3|invert=y|small=y}} @normal
+|:group:end|--------------------------------------------------------|------------------------
+| hardmode = yes
+}}
+{{about|在{{tr|Snow biome}}出现的稀有强力{{tr|enemy}}||{{tr|Golem (disambiguation)}}}}
+
+'''{{tr|Ice Golem}}'''是一个稀有的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，会在[[{{tr|Blizzard}}]]期间于[[{{tr|Snow biome}}]]生成，无论时间。它会缓慢前进，发射蓝色的{{tr|Frost Beam}}{{tr|projectiles}}，能够造成[[{{tr|Chilled}}]]并偶尔[[{{tr|Frozen}}]]玩家。
+
+{{Lifeform Analyzer note}}{{tr|Ice Golem}}需要 25 击杀来完成[[{{tr|Bestiary}}]]条目和得到相应的[[{{tr|Banners (enemy)}}|{{tr|banner}}]]，而非通常的 50 击杀。
+
+== {{tr|Notes}} ==
+* 它发射{{tr|Frost Beams}}的冷却是随机的，{{source code ref|v=1.4.2.3|name=aifighters|function {{code|AI_003_Fighters()}} in {{code|Terraria.NPC.cs}}.}}在 1 秒到 15.48 秒之间。这些限制会受{{tr|Ice Golem}}的剩余生命值影响——剩余生命值越低，平均冷却时间会线性降低。例如，在 50% 生命值（{{formatnum:{{#expr:{{npcinfo|Ice Golem|hp}}*0.5}} / {{expert|{{#expr:{{npcinfo|Ice Golem|hp|expert}}*0.5}}}} / {{master|{{#expr:{{npcinfo|Ice Golem|hp|master}}*0.5}}}}}}）时，冷却时间在 0.75 秒至 7.99 秒之间。每次{{tr|Ice Golem}}受到伤害，就有 {{chance|1/3}} 的几率使冷却增加随机的时间，最多增加 0.5 秒。
+* 如果{{tr|Ice Golem}}与玩家之间有遮挡或玩家被{{tr|Frozen}}{{tr|debuff}}影响，{{tr|Frost Beam}}不会发射，并会进入冷却。<ref name="aifighters"/>
+
+== {{tr|Tips}} ==
+{{float file|
+[[File:IceGolemStrategy.png|thumb|172px|由于{{tr|Ice Golem}}是一个很高的{{tr|enemy}}，玩家可以利用地形的特点来阻挡它以及它的攻击，这使得在{{tr|Hardmode}}早期也能容易地击杀{{tr|Ice Golem}}。]]
+[[File:Ice Golem Blizzard filter.jpg|thumb|172px|在 {{eil|1.4.0.5}} 版本{{tr|Bestiary}}中留给{{tr|Ice Golem}}，但未使用的{{tr|Blizzard}}分类。]]
+}}
+* 虽然{{tr|Ice Golems}}能够被{{eil|Lifeform Analyzer}}探测到，到处飞行寻找它们并留意{{tr|Frost Beams}}往往更加有效。
+* 一旦{{tr|Ice Golem}}被困住，{{eil|yoyo}}很适合杀死它。[[{{tr|Hel-Fire}}]]比较适合，因为它能造成[[{{tr|On Fire!}}]][[{{tr|debuff}}]]。
+* 如果{{tr|player}}在{{tr|Ice Golem}}发射冰束前对其持续造成伤害，就可以阻止其发射冰束，即使{{tr|player}}直接在它的视野范围内。这可以用高攻击速度的{{tr|weapons}}如[[{{tr|Uzi}}]]、[[{{tr|Bananarang}}]]、[[{{tr|Chain Guillotines}}]]、[[{{tr|Fetid Baghnakhs}}]]、[[{{tr|Blood Thorn}}]]和一部分{{tr|Hardmode}}早期的[[{{tr|summon weapons}}]]如[[{{tr|Spider Staff}}]]或者[[{{tr|Blade Staff}}]]来完成。然而，{{tr|player}}需要注意{{tr|Blizzard}}中的其他敌人，以免在攻击{{tr|Ice Golem}}的时候被攻击。
+* {{tr|The Ice Golem}}离开屏幕后很容易消失，因此最好不要离它太远。
+
+== {{tr|Trivia}} ==
+* 与[[{{tr|Sand Elemental}}]]、[[{{tr|Mothron}}]]和[[{{tr|Dreadnautilus}}]]类似，{{tr|the Ice Golem}}虽然有能与 {{tr|boss}} 相比的属性，但不是 {{tr|boss}} 或{{tr|mini boss}}。这能被它缺少{{tr|health bar}} {{eicons|1.4.0.1}} ；它掉落[[{{tr|Banners (enemy)}}|{{tr|banner}}]]而不是[[{{tr|trophy}}]]；它在[[{{tr|Master Mode}}]]下不掉落[[{{tr|Relics}}]]的事实证明。
+* 在犹太的民间传说中，{{wikipedia|golem|石像（golem）}}（希伯来语：גולם‎）是一种用无生命的物质（通常为黏土或泥土）制作的有生命的拟人形象。此词语在圣咏和中世纪作品中曾意为不规则的、未成形的材料。
+{{bestiary}}
+
+== {{tr|See also}} ==
+* [[{{tr|Sand Elemental}}]]，它的[[{{tr|Desert}}]]对应物。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应{{tr|banner}}。}}
+{{history|Desktop 1.2.3|不再掉落{{tr|Frost armor set}}的部件，而是掉落用于制作此{{tr|set}}的{{tr|Frost Core}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+{{language info|en=Ice Golem}}

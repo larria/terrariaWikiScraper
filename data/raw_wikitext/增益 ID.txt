@@ -1,0 +1,50 @@
+<div class="ajaxHide">
+{{Main|数据 ID}}
+本页面列出了{{tr|Terraria}}中各种[[{{tr|Buff}}]]与[[{{tr|Debuff}}]]的 ID。
+</div>
+{| class="terraria sortable align-center" id="table-buffs"
+! data-sort-type="number" | ID !! class="unsortable" | 图像 !! 名称 !! 内部名称 !! 类型<!--
+-->{{#vardefine:total|{{getBuffInfo||count}}}}<!--
+-->{{#vardefine:i|0}}{{#while:| {{#ifexpr: {{#var:i}} < {{#var:total}} | true }} | {{#vardefine:i|{{#expr:{{#var:i}}+1}}}}<!-- for $i = 1 to count(buff) -->
+<nowiki/>
+{{/row|{{#var:i}}}}
+}}
+|}
+
+== {{tr|Old-gen console}}/{{tr|3DS Version}} ==
+<!-- Note: ID 200-205 conflicts with desktop version. -->
+{| class="terraria sortable align-center" id="table-buffs"
+! data-sort-type="number" | ID !! class="unsortable" | 图像 !! 名称 !! 类型<!--
+-->{{#vardefine:max|215}}<!--
+-->{{#vardefine:i|199}}{{#while:| {{#ifexpr: {{#var:i}} < {{#var:max}} | true }} | {{#vardefine:i|{{#expr:{{#var:i}}+1}}}}<!-- for $i = 200 to 215 -->
+<nowiki/>
+{{/row|{{#var:i}}|m}}
+}}
+|}
+
+<div class="ajaxHide">
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加 {{tr|IDs}} 338–354。}}
+{{history|Desktop 1.4.3|添加 {{tr|IDs}} 327–337。}}
+{{history|Desktop 1.4.1|添加 {{tr|IDs}} 323–326。}}
+{{history|Desktop 1.4.0.1|添加 {{tr|IDs}} 206–322。}}
+{{history|Desktop 1.3.4|添加 {{tr|IDs}} 195–205。}}
+{{history|Desktop 1.3.3|添加 {{tr|IDs}} 193–194。}}
+{{history|Desktop 1.3.2|添加 {{tr|ID}} 192。}}
+{{history|Desktop 1.3.1|添加 {{tr|ID}} 191。}}
+{{history|Desktop 1.3.0.1|添加 {{tr|IDs}} 140–190。}}
+{{history|Desktop 1.2.4|添加 {{tr|IDs}} 104–139。}}
+{{history|Desktop 1.2.3|添加 {{tr|IDs}} 93–103。}}
+{{history|Desktop 1.2.2|添加 {{tr|IDs}} 90–92。}}
+{{history|Desktop 1.2.1.2|添加 {{tr|IDs}} 86–89。}}
+{{history|Desktop 1.2.1|添加 {{tr|IDs}} 81–85。}}
+{{history|Desktop 1.2|添加 {{tr|IDs}} 41–80。}}
+{{history|Desktop 1.1.2|添加 {{tr|ID}} 40。}}
+{{history|Desktop 1.1|添加 {{tr|IDs}} 27–39。}}
+{{history|Desktop 1.0.6|添加 {{tr|IDs}} 19–26。}}
+{{history|Desktop 1.0.5|{{tr|Introduced IDs}} 1–18。}}
+</div>
+[[Category:数据 ID]]
+
+{{language info|en=Buff IDs}}

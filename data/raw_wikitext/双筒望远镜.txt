@@ -1,0 +1,46 @@
+{{infobox wrapper
+|{{item infobox
+| type = Miscellaneous / Tool
+| auto = 1299
+| tags = drop
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Binoculars}}'''是一件可以扩展玩家视野的物品。握持时，玩家的视野可以向鼠标方向延伸一小段距离。它必须被放置在[[热键栏]]并选中才能使用。使用{{tr|Binoculars}}时，玩家的“视野中心”不再是角色，而大致为角色和鼠标间连线的中点。
+
+{{tr|Binoculars}}有 {{chance|1/40}} / {{expert|{{chance|1/30}}}} 的几率由[[{{tr|Eye of Cthulhu}}]]掉落。
+
+== 备注 ==
+* {{tr|Binoculars}}的操作方式类似于[[{{tr|Rifle Scope}}]]，[[{{tr|Sniper Scope}}]]或[[{{tr|Sniper Rifle}}]]，但不同之处是不需要拿着枪用 {{key|open}} 键瞄准。
+* 用{{tr|Binoculars}}望向一个相邻的[[{{tr|biome}}]]会使[[{{tr|music}}]]和[[{{tr|Biome backgrounds}}|{{tr|background}}]]改变成此{{tr|biome}}的样式。
+{{eicons|1.4.0.1|invert=y}} 同样的效果也适用于范围性[[{{tr|buffs}}]]（如[[{{tr|Campfire}}]]或[[{{tr|Heart Lantern}}]]），玩家将屏幕视角移动到靠近它们处时，{{tr|buff}}会生效；以及[[{{tr|Metal Detector}}]]。移动视角也会移动并更新[[{{tr|minimap}}]]。
+* 手持{{tr|Binoculars}}会影响 [[{{tr|NPC spawning}}]]，增加生成范围和安全范围。换言之，手持{{tr|Binoculars}}时[[{{tr|enemies}}]]的生成位置离玩家更远。这一效果在此物品放置在{{tr|inventory}}中、未手持时，以及手持时将光标悬浮在{{tr|inventory slots}}上方时会自动取消，类似于[[{{tr|Magic Missile}}]]类的武器。
+* 在玩家停止手持{{tr|Binoculars}}时，他们有时可以在视角移动回玩家处的时候看到{{tr|enemies}}[[{{tr|NPC despawning}}|消失]]。
+* 在{{3DS version}}中，{{tr|Binoculars}}和{{tr|Rifle Scope}}可以获得，但没有功能。
+** 这意味着此版本中仅有的能够改变视角的物品是{{tr|Sniper Rifle}}和{{tr|Sniper Scope}}。注意这在{{mobile version}}的旧版本中也适用，但它现在在 [[{{tr|Mobile}} 1.3.0.7|1.3]] 版本更新之后能够正常使用了。
+** 然而，C 摇杆可以用于改变相机位置，使得这些物品在 New Nintendo 3DS 系统上没有什么用处。
+
+== 小贴士 ==
+* 如果玩家在使用[[{{tr|Magic Missile}}]]、[[{{tr|Flamelash}}]]或[[{{tr|Rainbow Rod}}]]的同时，保持按住 {{key|use}} 的同时快速切换到{{tr|Binoculars}}，玩家仍然控制他们所发射的{{tr|projectile}}，且能够四处移动视角，极大增加了{{tr|projectile}}的控制范围。
+* {{tr|Binoculars}}可以在游戏[[{{tr|autopause}}|暂停]]时使用。<!-- at least on Desktop, not sure about other versions -->
+* {{tr|Binoculars}}很适合用于寻找被[[{{tr|Lifeform Analyzer}}]]及其升级标出的稀有生物。
+
+== 花絮 ==
+* {{tr|Binoculars}}是五个可以调整屏幕位置的物品之一，另外四种是[[{{tr|Sniper Scope}}]]、[[{{tr|Rifle Scope}}]]、{{eil|Recon Scope}}和[[{{tr|Sniper Rifle}}]]。但是，{{tr|Binoculars}}是其中唯一和[[{{tr|Gun}}]]无关，且能在[[{{tr|pre-Hardmode}}]]获得的。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.5.2|修复了当玩家使用{{tr|Binoculars}}时[[{{tr|breath meter}}]]异常移动的问题。}}
+{{history|Desktop 1.2.4|修复了当玩家使用{{tr|Binoculars}}时由于视角移动而难以打开{{tr|chest}}的问题。}}
+{{history|Desktop 1.2.3|修复了[[{{tr|Sniper Scope}}]]/{{tr|Binoculars}}在[[{{tr|Gravitation}}|逆转重力]]时视角没有反转的 {{tr|bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Tools
+| show-other = yes
+}}
+{{language info|en=Binoculars}}

@@ -1,0 +1,46 @@
+{{item infobox | boxwidth = 22em
+| auto = 760
+| idprojectile = 135, 138, 141, 144, 778, 782, 786, 789, 792, 795, 798, 801
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 45 {{eicons|1.3.0.1|invert=y|small=y}}
+| use = @@@@ {{eicons|1.4.0.1|small=y}} /<br/> {{ut|30}} {{eicons|1.3.0.1|invert=y|small=y}}
+| sound1 = Item 14.wav
+| soundcaption1 = 地雷爆炸
+| listcat = launchers
+| tags = hardmode / vendor / vendor:Cyborg
+}}
+[[File:Proximity Mine Launcher (demo).gif|frame|使用{{tr|Proximity Mine Launcher}}攻击[[{{tr|Target Dummy}}]]和[[{{tr|Skeleton}}]]。注意静止的{{tr|Proximity Mine}}的三倍{{tr|damage}}，{{tr|Proximity Mine}}会逐渐淡化，且一次只爆炸一个。]]
+
+'''{{tr|Proximity Mine Launcher}}'''是一把[[{{tr|Hardmode}}]][[{{tr|Plantera}}]]后的[[{{tr|launcher}}]]，可以发射以短弧线飞行的{{tr|Proximity Mine}}，{{tr|Proximity Mine}}会保持静止和半透明状态，直至{{tr|player}}或[[{{tr|enemy}}]]接近时，或直到一分钟过去后爆炸。{{tr|Proximity Mine Launcher}}可从[[{{tr|Cyborg}}]]处以 {{iteminfo|Proximity Mine Launcher|buy}} 的价格购买。
+
+{{tr|Proximity Mine Launcher}}使用[[{{tr|rockets}}]]作为{{tr|ammunition}}。{{tr|Proximity Mine}}受{{tr|gravity}}影响程度极大，在掉落到地面之前只会行进一小段距离。发射{{tr|Proximity Mine}}的玩家并不会由于靠近{{tr|Proximity Mine}}而触发其爆炸，但其在爆炸的{{tr|Proximity Mine}}范围内时''会''收到伤害。在{{eversions|1.4.0.1|short=y}}中，静止的{{tr|Proximity Mine}}会造成三倍的{{tr|base damage}}（{{#expr:{{iteminfo|Proximity Mine Launcher|damage}}*3}} {{tr|damage}}）。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage|t={{tr|Proximity Mine}}的{{tr|velocity}}必须低于{{mph|0.5 pixels}}才会被视为静止。}}这不适用于仍在移动的{{tr|Proximity Mine}}，且只对{{tr|enemy}}生效。
+
+{{eicons|1.3.0.1}}{{tr|Cyborg}}使用{{tr|Proximity Mine Launcher}}来应对附近的{{tr|enemy}}。
+
+{{modifier|ranged}}
+
+== 备注 ==
+* 虽然{{tr|name}}如此，但它并不能发射[[{{tr|Land Mine}}]]，后者只是个不相干的物品。{{tr|Proximity Mine Launcher}}只能用{{tr|Rocket}}作为{{tr|ammo}}。
+* 如果多个{{tr|Proximity Mine}}互相堆叠在一起，单个{{tr|enemy}}会连续地触发它们（而非同时触发）。这是因为{{tr|Proximity Mine}}是[[{{tr|projectile}}]]，会对{{tr|enemy}}造成[[{{tr|invincibility frame}}]]。在{{tr|invincibility frame}}结束后（默认为 {{duration|10 ticks}} 后），{{tr|enemy}}才能再次受到伤害从而触发下一个{{tr|Proximity Mine}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在{{tr|Proximity Mine}}静止时造成 3 倍{{tr|damage}}，若还在移动则只会造成正常伤害。
+** {{tr|Use time}}由 40 提升至 50。
+** 降低了可同时存在的{{tr|Proximity Mine}}数量。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Damage}}由 45 提升至 80。
+** {{tr|use time}}从 30 提升至 40。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-ranged = yes
+}}
+
+{{language info|en=Proximity Mine Launcher}}

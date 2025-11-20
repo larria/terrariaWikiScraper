@@ -1,0 +1,37 @@
+{{exclusive|1.3.1}}
+{{item infobox
+| auto = 3617
+| imagebreak = yes
+| type = Mechanism / Furniture
+| width = 2 | height = 2
+}}
+
+'''{{tr|Announcement Box}}'''是一种特殊的{{tr|sign}}，通电后会（在[[{{tr|chat}}]]中）显示上面所写的内容。它们支持使用 [[{{tr|Chat}}#Tag|Tag]]，允许（举例来说）用不同颜色展示{{tr|messages}}。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Announcement Box|expectedrows=1}}
+
+== 备注 ==
+* 通过使用 <code>-disableannouncementbox</code> [[{{tr|command line parameter}}]]启动游戏，可以禁用{{tr|The Announcement Box}}的功能。
+* 如果{{tr|Announcement Box}}由[[{{tr|Sensors}}|{{tr|time sensor}}]]供电，任何和该时间相关的{{tr|message}}（比如自然发生的[[{{tr|Blood Moon}}]]的{{tr|message}}''“{{gameText|LegacyMisc.8}}”''）都将先于{{tr|Announcement Box}}的{{tr|message}}显示。
+
+== 小贴士 ==
+[[File:Moon animation in chat.gif|thumb|198x198px|使用{{tr|item}} Tag 创造的简单的{{tr|moon}}动画，含有 14 帧（即 14 个{{tr|Announcement Boxes}}），运行于一个[[{{tr|Timers}}|{{tr|1/4 Second Timer}}]]上。效果还使用了[[{{tr|Smooth Marble Wall}}]]和[[{{tr|Starlit Heaven Wallpaper}}]]。]]
+* 由于所有{{tr|item}} Tag 在聊天框中的高度和宽度都是一样的，并且聊天框中一次最多只能有 10 行，也就是说理论上可以使用[[{{tr|mechanisms}}]]做一个简陋的动画。{{tr|Walls}}很适合做这个，因为它们是大正方形。请注意，做动画时，这些{{tr|messages}}会在{{tr|chat}}内刷屏，这会让其他无法通过聊天交流的玩家不满。另外这也会导致漏看[[{{tr|status messages}}]]。
+
+== 花絮 ==
+* {{tr|Announcement Box}}是由 [http://forums.terraria.org/index.php?members/master-geass.10773/ Master Geass]，一位官方泰拉瑞亚论坛的用户建议的。原帖可以在[http://forums.terraria.org/index.php?threads/gem-locks-and-announcement-box.27551/ 这里]找到。
+
+== 历史 ==
+{{history|Desktop 1.3.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.1372.5|{{tr|Introduced.}}}}
+{{history|Switch 1.0.895.9|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Announcement Box}}

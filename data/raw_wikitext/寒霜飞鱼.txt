@@ -1,0 +1,44 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3197
+| tags = Fished
+| sound1 = Item 27.wav
+| soundcaption1 = 碰撞
+}}
+[[File:Frost Daggerfish (demo).gif|frame|right|400px|{{tr|Frost Daggerfish}}的动画。]]
+
+'''{{tr|Frost Daggerfish}}'''是一种[[{{tr|consumable ranged weapon}}]]。{{penetrate|3|name=It|article=}}一次可以从[[{{tr|Snow biome}}]]中的湖里[[{{tr|Fishing}}|钓]]到 7 到 137 个<!--Maximum Fishing Power in 1.4.4.9: 375-->{{tr|Frost Daggerfish}}，取决于{{tr|player}}最终的{{tr|Fishing Power}}。扔出后，{{tr|the Frost Daggerfish}}的表现类似于[[{{tr|Shuriken}}]]或[[{{tr|Throwing Knives}}]]，以弧线飞行然后旋转着落向地面，撞击时它们会破裂，无法回收。
+
+[[{{tr|Angler}}]]用{{tr|Frost Daggerfish}}来对抗附近的{{tr|enemies}}以自卫。
+
+== 备注 ==
+* 游戏用玩家的{{tr|Fishing Power}}来决定单次所能捕获{{tr|Frost Daggerfish}}的最小与最大数量。之后，最大数量还有四次互相独立的机会能够提高 6，同样基于{{tr|Fishing Power}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_061_FishingBobber_GiveItemToPlayer}}
+** 最小与最大数量由以下公式确定。每次除法之后都会舍去小数部分。
+*** 最小数量：<code>Min = ( {{tr|Fishing Power}} ÷ 4 + 15 ) ÷2</code>
+*** 最大数量：<code>Max = ( {{tr|Fishing Power}} ÷ 2 + 40 ) ÷2</code>
+** 之后，从以下区间中随机选出四个整数：[0, 49]、[0, 99]、[0, 149]、[0, 199]。这四个整数中每一个小于玩家{{tr|Fishing Power}}的整数都会让最大数量提高 6（例如，如果随机得到的四个整数是 49、56、90、36 而{{tr|Fishing Power}}是 90，那么最大数量会提高 18）。
+** 最后，在区间 <code>[Min, Max]</code> 中随机选出一个整数。此整数即为钓上来的{{tr|Frost Daggerfish}}数量。
+
+== 花絮 ==
+* {{tr|Frost Daggerfish}}是三种钓鱼得到的[[{{tr|consumables}}]]之一，另外两种是[[{{tr|Honeyfin}}]]和[[{{tr|Bomb Fish}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|提高了每次收杆得到的{{tr|Frost Daggerfish}}的最大数量。之前，最大数量通过 <code>( {{tr|Fishing Power}} ÷ 2 + 30 ) ÷2</code> 进行计算，并且每个小于{{tr|Fishing Power}}的整数只提升 4。{{source code ref|old=y|v=1.4.3.6|method=Terraria.Projectile.AI_061_FishingBobber_GiveItemToPlayer}}}}
+{{history|Desktop 1.4.0.1|{{tr|Damage type}}由{{tr|Throwing}}变为{{tr|Ranged}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Frost Daggerfish}}

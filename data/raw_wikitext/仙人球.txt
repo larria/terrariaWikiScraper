@@ -1,0 +1,50 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4390
+| width = 2 | height = 2
+| idprojectile = 727, 763
+}}
+[[File:Rolling Cactus (demo).gif|frame|right|用[[{{tr|Wooden Sword}}]]击打{{tr|Rolling Cactus}}，令其滚动起来。]]
+
+'''{{tr|Rolling Cactus}}'''是一个[[可放置]]的物体，行为与[[{{tr|Boulder}}]]类似。它放置时是静止的，当被[[{{tr|projectiles}}]]、[[{{tr|pickaxes}}]]或[[{{tr|drills}}]]击中时、或其下方的[[{{tr|blocks}}]]被采掘或被[[{{tr|hammer}}]]敲击后会开始滚动。它的滚动方向由它在{{tr|world}}中的水平坐标为奇数或偶数决定，与其所在表面的斜坡方向无关（除非它有一侧被{{tr|block}}阻挡，这种情况下它会向另一侧滚动）。
+
+当{{tr|Rolling Cactus}}下方的两个{{tr|block}}都被移除或锤击为半个{{tr|block}}，它会垂直下落，直到撞击一个表面，然后弹起并滚动。
+
+{{tr|Rolling Cactus}}{{tr|projectile}}可以穿透无限数量的实体。当已经开始滚动的{{tr|Rolling Cactus}}掉落到较低的表面时，它会维持原有的向前动能并向上弹起，放出 2–4 根向随机方向飞出的{{tr|Rolling Cactus Spikes}}。撞击垂直方向的障碍物时也会放出尖刺，但是这会摧毁{{tr|Rolling Cactus}}。{{tr|Rolling Cactus}}的移动会被[[{{tr|liquids}}]]影响，此外它也可以向上坡滚动。
+
+静止的{{tr|Rolling Cactus}}会对接触它的{{tr|player}}造成 25 {{tr|damage}}。{{source code ref|v=1.4.1.1|method=Terraria.Collision.HurtTiles}}{{tr|Rolling Cactus}}{{tr|projectile}}对接触到的{{tr|player}}造成 70 / {{expert|140}} / {{master|210}}（对[[{{tr|NPCs}}]]、[[{{tr|enemies}}]]和[[{{tr|critters}}]]造成 35 {{tr|damage}}）并造成 10 [[{{tr|knockback}}]]（{{knockback|10}}）。{{source code ref|v=1.4.1.1|method=Terraria.WorldGen.Check2x2}}{{tr|Rolling Cactus Spike}}对{{tr|players}}造成 60 / {{expert|120}} / {{master|180}} {{tr|damage}} （对{{tr|NPCs}}、{{tr|enemies}}和{{tr|critters}}造成 30 {{tr|damage}}）并造成 2 [[{{tr|knockback}}]]（{{lc:{{knockback|2}}}}），且会穿透实体，在接触{{tr|blocks}}时破碎。{{source code ref|name=ai|v=1.4.1.1|method=Terraria.Projectile.HandleMovement}}
+
+== 制作 ==
+{{recipes|result=Rolling Cactus}}
+
+== 备注 ==
+* {{tr|Rolling Cactus}}一旦放置就不能收回，因为使用{{tr|pickaxe}}或{{tr|drill}}敲击它时会让其开始滚动。
+* 和{{tr|Boulder}}类似，{{tr|Rolling Cactus}}可在 2.18 秒内加速到最高 {{mph|26.4375 tiles}} 的速度。<ref name=ai/>
+* 当滚动时，无论其速度大小为何，{{tr|Rolling Cactus}}都会造成相同的伤害。无论是被刚开始滚动的{{tr|Rolling Cactus}}击中的玩家/敌人或被快速移动的{{tr|Rolling Cactus}}击中时的玩家/敌人所受的伤害相同。
+* 和其它的{{tr|projectiles}}相同，{{tr|Rolling Cactus}}会在持续滚动一分钟后破碎。此种情况下它不会放出{{tr|Rolling Cactus Spikes}}。
+** 如果在很长的平整地面上滚动，它滚动的最大距离为 1559 {{tr|tiles}}。
+
+== 花絮 ==
+* {{tr|tooltip}}（''<nowiki>'They hatin'...'</nowiki>'')参考了美国说唱歌手 {{wikipedia|Chamillionaire}} 的歌曲 {{wikipedia|Ridin'}} 的第一句歌词：“They see me rollin', they hatin'...”
+* 当{{tr|Rolling Cactus}}达到最大速度时，它大约每四分之一秒会转过一整圈。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 90 降低到 70。}}
+{{history|Desktop 1.4.2|修复了再次出现的在[[{{tr|Altars}}]]上生成的{{tr|Rolling Cacti}}会导致崩溃的问题。}}
+{{history|Desktop 1.4.1|
+** {{tr|Rolling Cactus projectile}}的基础{{tr|damage}}由 70 降低至 45。
+** {{tr|Rolling Cactus Spike}}{{tr|projectile}}的基础{{tr|damage}}由 20 提升至 30。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Traps}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Rolling Cactus}}

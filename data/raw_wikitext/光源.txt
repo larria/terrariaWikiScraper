@@ -1,0 +1,718 @@
+{{info request|
+* The brightness values written as X%-Y% can be confusing to some people, so it should be clarified what situations the brightness changes in.
+* Brightness percentage is a bit vague, so this either needs to be clarified or replaced with tile distance.
+* Witch's Broom, Helium Moss, and Frost armor are all unknown. The Portable, Furniture, and Novelty lights sections under Primary light sources and the Furniture, Accessories, Blocks, and Pets sections under Secondary light sources all lack brightness percentages.
+}}
+{{quotation|一条加载屏幕上的[[{{tr|tips}}|{{tr|tip}}]]|{{gameText|LoadingTips_Default.11}}}}
+
+'''{{tr|Light sources}}'''是会产生光的物品。其中一些比其他的更亮，还会产生不同颜色的光。注意某些[[{{tr|weapons}}]]和[[{{tr|armor}}]]也会产生光，但并不列在此页上。
+
+== 主要{{tr|light sources}} ==
+这些物品旨在以提供光为主要功能。
+
+=== 便携式 ===
+以下物品是便携式{{tr|light sources}}，可以在携带时提供光线。{{tr|Torches}}和{{tr|Candles}}也可以作为[[{{tr|Furniture}}]]放置，而[[{{tr|Glowstick}}]]可以抛出。[[{{tr|Water Candle}}]]会提升附近的{{tr|enemy}}{{tr|spawn rates}}，与此同时[[{{tr|Peace Candle}}]]则起到相反的作用。
+
+{| class="terraria sortable lined align-center" id="table-portable-light-source"
+! {{tr|Item}}
+! 何时发光
+! 防水
+! [[{{tr|Mechanism}}]]
+! [[{{tr|House}}]]
+|-
+| {{item|Torch}}
+| 手持、掉落、放置
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Cursed Torch}}
+| 手持、掉落、放置
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Ichor Torch}}
+| 手持、掉落、放置
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Coral Torch}}
+| 手持、掉落、放置
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Candle}}
+| 手持、掉落、放置
+| {{yes}} {{note|paren=y|放置}}<br/>{{no}} {{note|paren=y|手持}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Glowstick}}
+| 手持、放置、抛出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Sticky Glowstick}}
+| 手持、放置、抛出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Bouncy Glowstick}}
+| 手持、放置、抛出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Fairy Glowstick}}
+| 手持、放置、抛出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Spelunker Glowstick}}
+| 手持、放置、抛出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Mining Helmet}}
+| 装备在{{tr|helmet slot}}中
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Jellyfish Necklace}}
+| 装备在{{tr|accessory slot}}中
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Magiluminescence}}
+| 装备在{{tr|accessory slot}}中
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Flare Gun}}
+| 手持，当[[{{tr|Flare}}]]可用时
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Flare}} / {{item|Blue Flare}}
+| 自[[{{tr|Flare Gun}}]]中射出
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Release Lantern}}
+| 抛出/使用（一段时间后消失）
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Nightglow}}
+| 手持
+| {{yes}}
+| {{no}}
+| {{no}}
+|}
+
+=== {{tr|Furniture}} ===
+以下主要作为[[放置]]的背景[[{{tr|Furniture}}]]提供光线。
+
+{| class="terraria sortable lined align-center" id="table-Furniture"
+! {{tr|Item}}
+! 防水
+! [[{{tr|Mechanism}}]]
+! [[{{tr|House}}]]
+|-
+| {{item|Fireplace}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Tiki Torch}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Lamp Post}}
+| {{yes}}
+| {{yes}}
+| {{yes}} {{eicons|1.4.0.1}}<br/>{{no}} {{eicons|1.4.0.1|invert=y}}
+|-
+| {{item|Blue Jellyfish Jar}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Pink Jellyfish Jar}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Green Jellyfish Jar}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Blue Fairy Jar}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Pink Fairy Jar}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Green Fairy Jar}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Candle}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Candelabra}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Chandelier|image=Copper Chandelier.png}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Lantern|image=Chain Lantern.png}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Heart Lantern}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Star in a Bottle}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Firefly in a Bottle}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Lightning Bug in a Bottle}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Lavafly in a Bottle}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Soul of Night in a Bottle|Souls in a Bottle}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Lamps|image=Mushroom Lamp.png}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Skull Lantern}}
+| {{no}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Jack 'O Lantern}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+|}
+
+=== {{tr|Novelty}}光源 ===
+这些可放置的物品提供少量有色光线，主要意图是作为装饰，而不是提供功能性的光线。
+
+{| class="terraria sortable lined align-center" id="table-Novelty-lights"
+! {{tr|Item}}
+! 来源
+! 防水
+! [[{{tr|Mechanism}}]]
+! [[{{tr|House}}]]
+|-
+| {{item|Disco Ball}}
+| {{itemsource|Disco Ball|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Lava Lamp}}
+| {{itemsource|Lava Lamp|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+| {{no}}
+|-
+| {{item|Christmas lights|image=Blue Light.png}}
+| {{itemsource|Blue Light|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+|-
+| {{item|Wire Bulb}}
+| {{itemsource|Wire Bulb|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{yes}}
+| {{no}}
+|-
+|}
+
+=== [[{{tr|Light Pet}}]] ===
+这些物品召唤跟随玩家的从属浮动发光角色。它们可无限重用、不消耗[[{{tr|mana}}]]、无限期持续、在[[液体]]中也可正常运作。{{tr|Light Pets}}在玩家的{{tr|inventory}}中有它们自己专属的装备栏位。
+
+{| class="terraria sortable lined align-center" id="table-Light-Pet"
+! {{tr|Item}} !! 亮度
+|-
+| {{item|Shadow Orb (item)}} || 65%
+|-
+| {{item|Crimson Heart (item)}} || 65%
+|-
+| {{item|Magic Lantern}} || 65%
+|-
+| {{item|Fairy Bell}} || 80%
+|-
+| {{item|Creeper Egg}} || 80%
+|-
+| {{item|Wisp in a Bottle}} || 120%
+|-
+| {{item|Suspicious Looking Tentacle}} || 120%
+|-
+| {{item|Pumpkin Scented Candle}} || 80%
+|-
+| {{item|Guardian Golem}} || 80%
+|-
+| {{item|Jewel of Light}} || 120%
+|}
+
+=== {{tr|Buffs}} ===
+以下[[{{tr|buffs}}]]提供光线。
+
+{| class="terraria sortable lined" id="table-buffs"
+! {{tr|Buff}}
+! 亮度
+! 来源物品
+! 持续时间
+! 防水
+|-
+| {{buff|Shine}}
+| 91%
+| {{item|Shine Potion}}
+| {{iteminfo|Shine Potion|buff duration}}
+| {{yes}}
+|-
+| {{buff|Basilisk Mount}}
+| 20%
+| {{item|Ancient Horn}}
+| 无限（当在地下 27 英尺以下时）
+| {{yes}}
+|-
+| {{buff|Rudolph}}
+| 20%
+| {{item|Reindeer Bells}}
+| 无限
+| {{yes}}
+|-
+| {{buff|Leaf Crystal}}
+| 10%
+| {{item|Chlorophyte armor|note2=({{tr|set bonus}})}}
+| 无限
+| {{yes}}
+|}
+
+== 附带{{tr|light sources}} ==
+以下物品产生不同数量的光线，虽然照明并非它们的主要功能（因此它们不算作 NPC 房屋的{{tr|light source}}）。
+
+=== {{tr|Furniture}} ===
+{| class="terraria sortable lined align-center" id="table-Furniture2"
+! {{tr|Item}}
+! 亮度
+! 来源
+! 防水
+! [[{{tr|Mechanism}}]]
+|-
+| {{item|Crystal Shard}}
+| 20%
+| {{itemsource|Crystal Shard|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Campfire|image=Campfire (placed).gif}}
+| 125%
+| {{itemsource|Campfire|sep=<hr class="incell-border"/>}}
+| {{no}}
+| {{yes}}
+|-
+| {{item|Furnace|image=Furnace (placed).gif}}
+| 80%
+| {{itemsource|Furnace|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Hellforge|image=Hellforge (placed).gif}}
+| 80%
+| {{itemsource|Hellforge|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Adamantite Forge|image=Adamantite Forge (placed).gif}}
+| 80%
+| {{itemsource|Adamantite Forge|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Titanium Forge|image=Titanium_Forge (placed).gif}}
+| 80%
+| {{itemsource|Titanium Forge|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Glass Kiln|image=Glass Kiln (placed).gif}}
+| 80%{{verify}}
+| {{itemsource|Glass Kiln|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Lihzahrd Furnace|image=Lihzahrd Furnace (placed).gif}}
+| 80%{{verify}}
+| {{itemsource|Lihzahrd Furnace|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|-
+| {{item|Lihzahrd Altar}}
+| 10% <ref name="lightsetting"/>
+| {{itemsource|Lihzahrd Altar|sep=<hr class="incell-border"/>}}
+| {{yes}}
+| {{no}}
+|}
+
+=== {{tr|Accessories}} ===
+{| class="terraria sortable lined" id="table-Accessories"
+! {{tr|Item}} !! 何时发光
+|-
+| {{item|Rocket Boots}}
+| 飞行时
+|-
+| {{dotlist|{{item|Jetpack}}|{{item|Vortex Booster}}|{{item|Lazure's Barrier Platform}}}}
+| 飞行时
+|-
+| {{dotlist|{{item|Butterfly Wings}}|{{item|Fairy Wings}}|{{item|Flame Wings}}|{{item|Frozen Wings}}}}
+| 飞行时
+|-
+| {{dotlist|{{item|Mothron Wings}}|{{item|Yoraiz0r's Spell}}}}
+| 空闲、飞行时
+|}
+
+=== {{tr|Blocks}} ===
+任何相应的[[{{tr|wall}}]]也会发光，[[{{tr|Offline Gemspark Wall}}]]除外。如果在同一区域中同时使用两者时这可能不明显，因为{{tr|blocks}}的光亮要强过{{tr|walls}}。
+
+{| class="terraria lined sortable" id="table-Blocks"
+! {{tr|Block}}
+! {{tr|Wall}}
+! 来源
+! 机械装置
+|-
+| {{item|Demonite Ore}}
+| {{na}}
+| {{itemsource|Demonite Ore|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Demonite Brick}}
+| {{item|Demonite Brick Wall}}
+| {{recipes/extract|result=Demonite Brick|ingredient=Demonite Ore|nostation=y}}
+{{itemsource|Demonite Brick|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Demonite Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Crimtane Ore}}
+| {{na}}
+| {{itemsource|Crimtane Ore|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Crimtane Brick}}
+| {{item|Crimtane Brick Wall}}
+| {{itemsource|Crimtane Brick|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Crimtane Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Meteorite}}
+| {{na}}
+| {{itemsource|Meteorite|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Meteorite Brick}}
+| {{item|Meteorite Brick Wall}}
+| {{itemsource|Meteorite Brick|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Meteorite Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Shroomite Plating}}
+| {{item|Shroomite Plating Wall}}
+| {{itemsource|Shroomite Plating|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Shroomite Plating' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Gemspark Block|image=Emerald Gemspark Block.png}}
+| {{item|Gemspark Wall|image=Emerald Gemspark Wall.png}} <br/> {{item|Offline Gemspark Wall|image=Offline Emerald Gemspark Wall.png}}
+| {{itemsource|Emerald Gemspark Block|sep=<hr class="incell-border"/>|crafting={{#dplreplace:{{recipes/extract|where=result='Emerald Gemspark Block' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}|Emerald|Any Gem}}}}
+| {{yes}} {{note|paren=y|{{tr|block}}}}<br/>{{no}} {{note|paren=y|{{tr|wall}}}}
+|-
+| {{item|Lavafall Block}}
+| {{item|Lavafall Wall}}
+| {{itemsource|Lavafall Block|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Lavafall Block' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Living Fire Block}}
+| {{na}}
+| 掉落自[[{{tr|The Underworld}}]]的所有{{tr|enemy}}
+| {{no}}
+|-
+| {{item|Rainbow Brick|note=<ref name="lightsetting"/>|wrap=y}}
+| {{item|Rainbow Brick Wall}}
+| {{itemsource|Rainbow Brick|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Rainbow Brick' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Martian Conduit Plating}}
+| {{item|Martian Conduit Wall}}
+| {{itemsource|Martian Conduit Plating|sep=<hr class="incell-border"/>|crafting={{recipes/extract|where=result='Martian Conduit Plating' AND ings NOT LIKE '%Wall¦%' AND ings NOT LIKE '%Platform¦%'}}}}
+| {{no}}
+|-
+| {{item|Solar Fragment Block}}
+| {{na}}
+| {{itemsource|Solar Fragment Block|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Vortex Fragment Block}}
+| {{na}}
+| {{itemsource|Vortex Fragment Block|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Nebula Fragment Block}}
+| {{na}}
+| {{itemsource|Nebula Fragment Block|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Stardust Fragment Block}}
+| {{na}}
+| {{itemsource|Stardust Fragment Block|sep=<hr class="incell-border"/>}}
+| {{no}}
+|-
+| {{item|Echo Block}}
+| {{na}}
+| {{itemsource|Echo Block|sep=<hr class="incell-border"/>}}
+| {{no}}
+|}
+
+=== 可生长 ===
+这些可以在恰当的条件下生成，这些条件可以自然发生也可以由玩家引发。
+
+{| class="terraria sortable lined" id="table-Growable"
+! {{tr|Item}}
+! 亮度
+! 生长在
+! 何时发光
+! 防水
+|-
+| {{item|Blinkroot}}
+| 0%–100%
+| [[{{tr|Dirt}}]]、[[{{tr|Mud}}]]、或在[[{{tr|Clay Pot}}]]内
+| 开花（随机）
+| {{yes}}
+|-
+| {{item|Fireblossom}}
+| 70%
+| [[{{tr|Ash}}]]、或在[[{{tr|Clay Pot}}]]内
+| 开花（在黄昏）
+| {{yes}}
+|-
+| {{item|Moonglow}}
+| 30%
+| [[{{tr|Jungle Grass}}]]、或在[[{{tr|Clay Pot}}]]内
+| 开花（在[[{{tr|night}}]]）
+| {{yes}}
+|-
+| {{item|Shiverthorn}}
+| 75%
+| [[{{tr|Snow}}]]、[[{{tr|Ice}}]]、或在[[{{tr|Clay Pot}}]]内
+| 开花（在一段时间后）
+| {{yes}}
+|-
+| {{item|Jungle Spores}}
+| 75%
+| [[{{tr|Underground Jungle}}]]中的[[{{tr|Jungle Grass}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Mushroom grass}}
+| 48%–52%
+| [[{{tr|Mud}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|image=Mushroom plants.png|Glowing Mushroom|s}}
+| 48%–52%
+| [[{{tr|Mushroom Grass}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Giant Glowing Mushroom}}
+| 48%–52%
+| [[{{tr|Mushroom Grass}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Lava Moss|image=Moss Lava.png}}
+| 35%
+| {{tr|lava layer}}中的[[{{tr|Stone}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Krypton Moss|image=Moss Krypton.png}}
+| 35%
+| [[{{tr|Stone Block}}|{{tr|Stone}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Xenon Moss|image=Moss Xenon.png}}
+| 35%
+| [[{{tr|Stone Block}}|{{tr|Stone}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Argon Moss|image=Moss Argon.png}}
+| 35%
+| [[{{tr|Stone Block}}|{{tr|Stone}}]]
+| 一直
+| {{yes}}
+|}
+
+=== [[{{tr|Pets}}]] ===
+这些是{{tr|normal pets}}，它们会偶尔发光，或者作为其运动的一部分而发光，但并非[[{{tr|Light Pet}}]]。
+
+{| class="terraria sortable" id="table-Pets"
+!{{tr|Pet}}
+!{{tr|Item}}
+!何时发光
+|-
+|{{item|Baby Truffle}}
+|{{item|Strange Glowing Mushroom}}
+|一直（和{{tr|Glowing Mushrooms}}一样亮度）
+|-
+|{{item|Cupid}}
+|{{item|Broken Heart}}
+|一直
+|-
+|{{item|Cursed Sapling (pet)|Cursed Sapling}}
+|{{item|Cursed Sapling}}
+|当快速行进或不在地面上时
+|-
+|{{item|Shadow Mimic (pet)|Shadow Mimic}}
+|{{item|Ornate Shadow Key}}
+|当快速行进或不在地面上时
+|-
+|{{item|Volt Bunny}}
+|{{item|Lightning Carrot}}
+|当快速行进或飞行时
+|-
+|{{item|Dynamite Kitten}}
+|{{item|Ball O' Fuse Wire}}
+|飞行时
+|-
+|}
+
+=== 其他 ===
+{| class="terraria sortable" id="table-other"
+! {{tr|Item}}
+! 亮度
+! 来源
+! 何时发光
+! 防水
+|-
+| {{item|Lava|image=Lava Bucket.png}}
+| 10%–50%
+| [[{{tr|Cavern}}]]层下部及以下
+| 作为{{tr|liquid}}
+| {{no}}（接触时生成[[{{tr|Obsidian}}]]）
+|-
+| {{item|Teleporter}}
+| 10%
+| {{itemsource|Teleporter|sep=<hr class="incell-border"/>}}
+| 传送时
+| {{yes}}
+|-
+| {{item|Plantera's Bulb}}
+| 20%–25%
+| [[{{tr|Underground Jungle}}]]
+| 一直
+| {{yes}}
+|-
+| {{item|Frost Armor|image=Frost Helmet.png}}
+| {{note|?}}
+| 制作
+| 让所有{{tr|melee}}和{{tr|ranged}}{{tr|weapons}}和{{tr|projectiles}}发光。
+| {{yes}}
+|-
+|}
+
+=== 仅在世界创生时 ===
+这些只在{{tr|World creation}}时产生，不能由玩家拾取、使用、或放置。
+
+{| class="terraria sortable align-center" id="table-world-generation"
+! {{tr|Item}}
+! 亮度
+! 出现在
+! 防水
+|-
+| {{item|Demon Altar}}
+| 0%–10%
+| [[{{tr|Corruption}}]]
+| {{yes}}
+|-
+| {{item|Crimson Altar}}
+| 0%–10%
+| [[{{tr|Crimson}}]]
+| {{yes}}
+|-
+| {{item|Shadow Orb}}
+| 0%–10%
+| [[{{tr|Corruption}}]]
+| {{yes}}
+|-
+| {{item|Crimson Heart}}
+| 0%–10%
+| [[{{tr|Crimson}}]]
+| {{yes}}
+|-
+|}
+
+== 脚注 ==
+{{reflist|refs=
+<ref name="lightsetting">在使用“复古”或“迷幻”照明设置时{{tr|Lihzahrd Altar}}和{{tr|Rainbow Brick}}看起来并不发光。</ref>
+}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-main = yes
+| show-light = yes
+}}
+
+[[Category:光源物品|*]]
+
+{{language info|en=Light sources}}

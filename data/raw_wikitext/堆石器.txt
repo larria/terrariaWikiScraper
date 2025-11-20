@@ -1,0 +1,244 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5324
+| name = Rubblemaker
+| imagealt = [[File:Rubblemaker.gif|link=]]
+| type = Tool
+| id = 5324, 5329-5330
+| idtile = 647-652, 653（未使用）
+| cargo = no
+}}
+
+'''{{tr|Rubblemaker}}'''是个用于将{{tr|player}}{{tr|inventory}}中的{{tr|items}}放置为[[{{tr|ambient objects}}]]（“石”）的[[{{tr|tool}}]]，由[[{{tr|Goblin Tinkerer}}]]以 {{iteminfo|Rubblemaker (Small)|buy}} 的价格出售。
+
+通过按下 {{key|open}} {{tr|button}}，{{tr|the Rubblemaker}}可以在三种放置大小之间切换：'''小'''、'''中'''和'''大'''。设置为小对应着一个{{tr|tile}}宽的{{tr|ambient objects}}，设置为中则对应着两个{{tr|tile}}的{{tr|ambient objects}}，设置为大则对应着三个{{tr|tiles}}宽的{{tr|ambient objects}}。每种设置所对应的{{tr|ambient objects}}的大小可以通过按 {{key|up}} 和 {{key|down}} 按钮循环切换。使用时，会优先使用、并且仅使用{{tr|player}}{{tr|inventory}}中最左上角处的{{tr|material}}，直到另一种{{tr|material}}将其取代。
+
+== {{tr|Settings}} ==
+
+{{item infobox/options|view=item}}{{options/set|item|mode=table|icons=n|nolink=y}}
+{| class="terraria lined"
+! colspan="2"| 设置
+! 状态条
+! {{tr|ambient objects}}大小
+|-
+| {{item infobox|auto=5324|type=Tool}}
+| [[File:Rubblemaker (Small) bar.png|link=]]
+| 1 x 1 {{tr|tiles}}
+|-
+| {{item infobox|auto=5329|type=Tool}}
+| [[File:Rubblemaker (Medium) bar.png|link=]]
+| 2 x 1 至 2 x 2 {{tr|tiles}}
+|-
+| {{item infobox|auto=5330|type=Tool}}
+| [[File:Rubblemaker (Large) bar.png|link=]]
+| 3 x 2 {{tr|tiles}}
+|}{{options/reset|item}}{{item infobox/options|reset}}
+
+== 可放置的{{tr|ambient objects}} ==
+
+{{tr|ambient objects}}按照游戏中切换的顺序列出。按下 {{key|down}} {{tr|button}}可以循环切换。{{source code ref|v=1.4.4.4|method=Player.UpdateControlHolds}}
+
+{| class="terraria lined"
+! rowspan="2"| {{tr|Item}}
+! colspan="3"| {{tr|ambient objects}}{{source code ref|v=1.4.4.4|method=FlexibleTileWand.CreateRubblePlacerSmall / FlexibleTileWand.CreateRubblePlacerMedium / FlexibleTileWand.CreateRubblePlacerLarge}}
+|-
+! 小
+! 中
+! 大
+|-
+| {{item|Dirt Block}}
+| {{item|image=Tiles 185 6.png/Tiles 185 7.png/Tiles 185 8.png/Tiles 185 9.png/Tiles 185 10.png/Tiles 185 11.png|link=Ambient objects}}
+| {{na}}
+| {{na}}
+|-
+| {{item|Stone Block}}
+| {{item|image=Tiles 185 0.png/Tiles 185 1.png/Tiles 185 2.png/Tiles 185 3.png/Tiles 185 4.png/Tiles 185 5.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 0.png/Tiles 185b 1.png/Tiles 185b 2.png/Tiles 185b 3.png/Tiles 185b 4.png/Tiles 185b 5.png/Tiles 185b 38.png/Tiles 185b 39.png/Tiles 185b 40.png|link=Ambient objects}}
+| {{item|image=Tiles 186 7.png/Tiles 186 8.png/Tiles 186 9.png/Tiles 186 10.png/Tiles 186 11.png/Tiles 186 12.png/Tiles 186 13.png/Tiles 186 14.png/Tiles 186 15.png/Tiles 187 14.png/Tiles 187 15.png/Tiles 187 16.png|link=Ambient objects}}
+|-
+| {{item|Wood}}
+| {{item|image=Tiles 185 28.png/Tiles 185 29.png/Tiles 185 30.png/Tiles 185 31.png/Tiles 185 32.png/Tiles 185 33.png/Tiles 185 34.png/Tiles 185 35.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 31.png/Tiles 185b 32.png/Tiles 185b 33.png|link=Ambient objects}}
+| {{item|image=Tiles 186 22.png/Tiles 186 23.png/Tiles 186 24.png/Tiles 186 25.png/Tiles 187 21.png/Tiles 187 22.png/Tiles 187 23.png/Tiles 187 24.png/Tiles 187 25.png/Tiles 187 26.png/Tiles 187 27.png/Tiles 187 28.png|link=Ambient objects}}
+|-
+| {{item|Grass Seeds}}
+| {{item|image=Tiles 185 72.png|link=Ambient objects}}
+| {{item|image=Tiles 233 12.png/Tiles 233 13.png/Tiles 233 14.png/Tiles 185b 59.png/Tiles 185b 60.png/Tiles 185b 61.png|link=Ambient objects}}
+| {{item|image=Tiles 187 47.png/Tiles 187 48.png/Tiles 187 49.png/Tiles 187 50.png/Tiles 187 51.png/Tiles 233 3.png/Tiles 233 4.png/Tiles 233 5.png|link=Ambient objects}}
+|-
+| {{item|Copper Coin}}
+| {{na}}
+| {{item|image=Tiles 185b 16.png|link=Coin Stashes}}
+| {{item|image=Tiles 186 16.png/Tiles 186 17.png|link=Coin Stashes}}
+|-
+| {{item|Silver Coin}}
+| {{na}}
+| {{item|image=Tiles 185b 17.png|link=Coin Stashes}}
+| {{item|image=Tiles 186 18.png/Tiles 186 19.png|link=Coin Stashes}}
+|-
+| {{item|Gold Coin}}
+| {{na}}
+| {{item|image=Tiles 185b 18.png|link=Coin Stashes}}
+| {{item|image=Tiles 186 20.png/Tiles 186 21.png|link=Coin Stashes}}
+|-
+| {{item|Cobweb}}
+| {{item|image=Tiles 185 48.png/Tiles 185 49.png/Tiles 185 50.png/Tiles 185 51.png/Tiles 185 52.png/Tiles 185 53.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 34.png/Tiles 185b 35.png/Tiles 185b 36.png/Tiles 185b 37.png|link=Ambient objects}}
+| {{item|image=Tiles 187 9.png/Tiles 187 10.png/Tiles 187 11.png/Tiles 187 12.png/Tiles 187 13.png|link=Ambient objects}}
+|-
+| {{item|Bone}}
+| {{item|image=Tiles 185 12.png/Tiles 185 13.png/Tiles 185 14.png/Tiles 185 15.png/Tiles 185 16.png/Tiles 185 17.png/Tiles 185 18.png/Tiles 185 19.png/Tiles 185 20.png/Tiles 185 21.png/Tiles 185 22.png/Tiles 185 23.png/Tiles 185 24.png/Tiles 185 25.png/Tiles 185 26.png/Tiles 185 27.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 6.png/Tiles 185b 7.png/Tiles 185b 8.png/Tiles 185b 9.png/Tiles 185b 10.png/Tiles 185b 11.png/Tiles 185b 12.png/Tiles 185b 13.png/Tiles 185b 14.png/Tiles 185b 15.png|link=Ambient objects}}
+| {{item|image=Tiles 186 0.png/Tiles 186 1.png/Tiles 186 2.png/Tiles 186 3.png/Tiles 186 4.png/Tiles 186 5.png/Tiles 186 6.png/Tiles 187 52.png/Tiles 187 53.png/Tiles 187 54.png|link=Ambient objects}}
+|-
+| {{item|Sand Block}}
+| {{item|image=Tiles 185 73.png/Tiles 185 74.png/Tiles 185 75.png/Tiles 185 76.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 62.png/Tiles 185b 63.png/Tiles 185b 64.png|link=Ambient objects}}
+| {{na}}
+|-
+| {{item|Hellstone}}
+| {{na}}
+| {{na}}
+| {{item|image=Tiles 187 6.png/Tiles 187 7.png/Tiles 187 8.png|link=Ambient objects}}
+|-
+| {{item|Sapphire}}
+| {{na}}
+| {{item|image=Tiles 185b 21.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Ruby}}
+| {{na}}
+| {{item|image=Tiles 185b 23.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Emerald}}
+| {{na}}
+| {{item|image=Tiles 185b 22.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Topaz}}
+| {{na}}
+| {{item|image=Tiles 185b 20.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Amethyst}}
+| {{na}}
+| {{item|image=Tiles 185b 19.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Diamond}}
+| {{na}}
+| {{item|image=Tiles 185b 24.png|link=Gems}}
+| {{na}}
+|-
+| {{item|Glowing Mushroom}}
+| {{na}}
+| {{na}}
+| {{item|image=Tiles 186 32.png/Tiles 186 33.png/Tiles 186 34.png|link=Ambient objects}}
+|-
+| {{item|Jungle Grass Seeds}}
+| {{na}}
+| {{item|image=Tiles 233 9.png/Tiles 233 10.png/Tiles 233 11.png|link=Ambient objects}}
+| {{item|image=Tiles 187 0.png/Tiles 187 1.png/Tiles 187 2.png/Tiles 187 3.png/Tiles 187 4.png/Tiles 187 5.png/Tiles 233 0.png/Tiles 233 1.png/Tiles 233 2.png|link=Ambient objects}}
+|-
+| {{item|Jungle Spores}}
+| {{na}}
+| {{item|image=Tiles 233 15.png/Tiles 233 16.png/Tiles 233 17.png/Tiles 233 18.png/Tiles 233 19.png/Tiles 233 20.png|link=Ambient objects}}
+| {{item|image=Tiles 233 6.png/Tiles 233 7.png/Tiles 233 8.png|link=Ambient objects}}
+|-
+| {{item|Snow Block}}
+| {{item|image=Tiles 185 36.png/Tiles 185 37.png/Tiles 185 38.png/Tiles 185 39.png/Tiles 185 40.png/Tiles 185 41.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 25.png/Tiles 185b 26.png/Tiles 185b 27.png/Tiles 185b 28.png/Tiles 185b 29.png/Tiles 185b 30.png|link=Ambient objects}}
+| {{item|image=Tiles 186 26.png/Tiles 186 27.png/Tiles 186 28.png/Tiles 186 29.png/Tiles 186 30.png/Tiles 186 31.png|link=Ambient objects}}
+|-
+| {{item|Ice Block}}
+| {{item|image=Tiles 185 42.png/Tiles 185 43.png/Tiles 185 44.png/Tiles 185 45.png/Tiles 185 46.png/Tiles 185 47.png|link=Ambient objects}}
+| {{na}}
+| {{na}}
+|-
+| {{item|Enchanted Sword}}
+| {{na}}
+| {{na}}
+| {{item|image=Tiles 187 17.png|link=Enchanted Sword}}
+|-
+| {{item|Lihzahrd Brick}}
+| {{na}}
+| {{na}}
+| {{item|image=Tiles 187 18.png/Tiles 187 19.png/Tiles 187 20.png|link=Ambient objects}}
+|-
+| {{item|Marble Block}}
+| {{item|image=Tiles 185 66.png/Tiles 185 67.png/Tiles 185 68.png/Tiles 185 69.png/Tiles 185 70.png/Tiles 185 71.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 53.png/Tiles 185b 54.png/Tiles 185b 55.png/Tiles 185b 56.png/Tiles 185b 57.png/Tiles 185b 58.png|link=Ambient objects}}
+| {{item|image=Tiles 187 41.png/Tiles 187 42.png/Tiles 187 43.png/Tiles 187 44.png/Tiles 187 45.png/Tiles 187 46.png|link=Ambient objects}}
+|-
+| {{item|Granite Block}}
+| {{item|image=Tiles 185 60.png/Tiles 185 61.png/Tiles 185 62.png/Tiles 185 63.png/Tiles 185 64.png/Tiles 185 65.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 47.png/Tiles 185b 48.png/Tiles 185b 49.png/Tiles 185b 50.png/Tiles 185b 51.png/Tiles 185b 52.png|link=Ambient objects}}
+| {{item|image=Tiles 187 35.png/Tiles 187 36.png/Tiles 187 37.png/Tiles 187 38.png/Tiles 187 39.png/Tiles 187 40.png|link=Ambient objects}}
+|-
+| {{item|Sandstone Block}}
+| {{item|image=Tiles 185 54.png/Tiles 185 55.png/Tiles 185 56.png/Tiles 185 57.png/Tiles 185 58.png/Tiles 185 59.png|link=Ambient objects}}
+| {{item|image=Tiles 185b 41.png/Tiles 185b 42.png/Tiles 185b 43.png/Tiles 185b 44.png/Tiles 185b 45.png/Tiles 185b 46.png|link=Ambient objects}}
+| {{item|image=Tiles 187 29.png/Tiles 187 30.png/Tiles 187 31.png/Tiles 187 32.png/Tiles 187 33.png/Tiles 187 34.png|link=Ambient objects}}
+|}
+
+=== 未实现 ===
+
+{{unimplemented|section=y}}
+一系列没有使用的、[[{{tr|Tile IDs}}]]为 653 的纹理，以及一系列{{tr|Rubblemaker}}可以消耗以进行放置的{{tr|items}}可以在游戏文件中找到。后者所存储的方法名为 {{code|ForModders_AddPotsToWand()}}，暗示了这些没有被使用的{{tr|recipes}}是留给模组制作者使用的。所有这些纹理和在{{tr|world}}中自然生成的各种类型的[[{{tr|pot}}]]完全相同，几乎每一种{{tr|pot}}都能通过消耗在对应{{tr|biome}}中可以找到的{{tr|item}}进行放置。{{source code ref|v=1.4.4.4|method=FlexibleTileWand.ForModders_AddPotsToWand}}
+
+{| class="terraria lined"
+! {{tr|Item}} !! Rubble
+|-
+| {{item|Ebonstone Block}}
+| {{item|image=Tiles 28 16 0.png/Tiles 28 16 1.png/Tiles 28 16 2.png/Tiles 28 17 0.png/Tiles 28 17 1.png/Tiles 28 17 2.png/Tiles 28 18 0.png/Tiles 28 18 1.png/Tiles 28 18 2.png|link=Pot}}
+|-
+| {{item|Clay Block}}
+| {{item|image=Tiles 28 0 0.png/Tiles 28 0 1.png/Tiles 28 0 2.png/Tiles 28 1 0.png/Tiles 28 1 1.png/Tiles 28 1 2.png/Tiles 28 2 0.png/Tiles 28 2 1.png/Tiles 28 2 2.png/Tiles 28 3 0.png/Tiles 28 3 1.png/Tiles 28 3 2.png|link=Pot}}
+|-
+| {{item|Cobweb}}
+| {{item|image=Tiles 28 19 0.png/Tiles 28 19 1.png/Tiles 28 19 2.png/Tiles 28 20 0.png/Tiles 28 20 1.png/Tiles 28 20 2.png/Tiles 28 21 0.png/Tiles 28 21 1.png/Tiles 28 21 2.png|link=Pot}}
+|-
+| {{item|Bone}}
+| {{item|image=Tiles 28 10 0.png/Tiles 28 10 1.png/Tiles 28 10 2.png/Tiles 28 11 0.png/Tiles 28 11 1.png/Tiles 28 11 2.png/Tiles 28 12 0.png/Tiles 28 12 1.png/Tiles 28 12 2.png|link=Pot}}
+|-
+| {{item|Obsidian}}
+| {{item|image=Tiles 28 13 0.png/Tiles 28 13 1.png/Tiles 28 13 2.png/Tiles 28 14 0.png/Tiles 28 14 1.png/Tiles 28 14 2.png/Tiles 28 15 0.png/Tiles 28 15 1.png/Tiles 28 15 2.png|link=Pot}}
+|-
+| {{item|Mud Block}}
+| {{item|image=Tiles 28 7 0.png/Tiles 28 7 1.png/Tiles 28 7 2.png/Tiles 28 8 0.png/Tiles 28 8 1.png/Tiles 28 8 2.png/Tiles 28 9 0.png/Tiles 28 9 1.png/Tiles 28 9 2.png|link=Pot}}
+|-
+| {{item|Sandstone Brick}}
+| {{item|image=Tiles 28 25 0.png/Tiles 28 26 0.png/Tiles 28 27 0.png/Tiles 28 34 0.png/Tiles 28 34 1.png/Tiles 28 34 2.png/Tiles 28 35 0.png/Tiles 28 35 1.png/Tiles 28 35 2.png/Tiles 28 36 0.png/Tiles 28 36 1.png/Tiles 28 36 2.png|link=Pot}}
+|-
+| {{item|Ice Block}}
+| {{item|image=Tiles 28 4 0.png/Tiles 28 4 1.png/Tiles 28 4 2.png/Tiles 28 5 0.png/Tiles 28 5 1.png/Tiles 28 5 2.png/Tiles 28 6 0.png/Tiles 28 6 1.png/Tiles 28 6 2.png|link=Pot}}
+|-
+| {{item|Crimstone Block}}
+| {{item|image=Tiles 28 22 0.png/Tiles 28 23 0.png/Tiles 28 24 0.png|link=Pot}}
+|-
+| {{item|Lihzahrd Brick}}
+| {{item|image=Tiles 28 28 0.png/Tiles 28 28 1.png/Tiles 28 29 0.png/Tiles 28 29 1.png/Tiles 28 30 0.png/Tiles 28 30 1.png|link=Pot}}
+|-
+| {{item|Marble Block}}
+| {{item|image=Tiles 28 31 0.png/Tiles 28 32 0.png/Tiles 28 33 0.png|link=Pot}}
+|}
+
+== 另见 ==
+* [[{{tr|Sandcastle Bucket}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-main = yes
+| show-other = yes
+}}
+
+{{language info|en=Rubblemaker}}

@@ -1,0 +1,74 @@
+{{npc infobox|boxwidth=24em
+| auto = 344
+| image = Everscream.gif
+| type = Boss
+| environment = Frost Moon
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|86|172|258}} {{note|small=y|paren=y|{{gameText|ProjectileName.PineNeedleHostile}}}}<br/>{{modes|114|228|342}} {{note|small=y|paren=y|{{gameText|ProjectileName.OrnamentHostile}}}}<br/>{{modes|80|160|240}} {{note|small=y|paren=y|{{gameText|ProjectileName.OrnamentHostile}}{{tr|Shrapnel}}}} {{source code ref|v=1.4.0.5|name=mwai|method=Terraria.NPC.AI|t=相关部分在代码段 <code>aiStyle {{=}}{{=}} 57</code> 中。}}
+|:note:|在更高的波数中{{tr|item drop rate}}更高&nbsp;<ref name="fmdrops">更多关于战利品掉落率的细节参见[[{{tr|Frost Moon}}#战利品|{{tr|Frost Moon}}]]。{{source code ref|v=1.4.0.5|noref=y|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGatingChance}}</ref>|
+|:group:start|可能会掉落以下 4 件{{tr|items}}之一&nbsp;<ref name="fmdrops"/>|-
+| Christmas Tree Sword|1|{{modes|3.11% - 7.78%|6.22% - 31.11%}}
+| Christmas Hook|1|{{modes|3.11% - 7.78%|6.22% - 31.11%}}
+| Razorpine|1|{{modes|3.11% - 7.78%|6.22% - 31.11%}}
+| Festive Wings|1|{{modes|0.67% - 1.67%|1.33% - 6.67%}}
+|:group:end|------------------------------------------------------------------------|-
+|:note:before|{{note|small=y|block=y|{{modes|wrap=n|第 15 波和之后|{{eicons|1.4.0.1}} 第 15 波和以后}}&nbsp;<ref name="fmtrophies">{{tr|Trophies}}的掉落率和其他来自{{tr|Frost Moon}}{{tr|mini-bosses}} 的战利品不同；关于这些战利品掉落率的详情，参见[[{{tr|Frost Moon}}#战利品|{{tr|Frost Moon}}]]。{{source code ref|v=1.4.0.5|noref=y|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGateForTrophies}}</ref><br/>{{modes|wrap=n||{{eicons|1.4.0.1|invert=y}} 第 8 波和以后}}}}|
+| Everscream Trophy|1|{{modes|4.17% - 12.5% {{eicons|1.4.0.1}}|27.27% - 60%}}<br/>{{modes|25% - 50% {{eicons|1.4.0.1|invert=y}}|&#32;}}
+| Shrub Star|1| {{master|5% - 25%}} @master
+| Everscream Relic | 1 | {{master|20% - 100%}} @master
+| imageother = Map Icon Everscream.png
+| imageothercaption = Map Icon
+| sound3 = Item 1.wav
+| soundcaption3 = {{tr|Pine Needle}}
+| sound4 = Item 27.wav
+| soundcaption4 = {{tr|Ornament}}
+| hardmode = yes
+| idprojectile = 345, 346, 347
+}}
+
+'''{{tr|Everscream}}'''是个[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|mini-boss}}]]，在[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间生成。{{tr|Frost Moon}}打败{{tr|Everscream}}会加上 50 / {{expert|100}} / {{master|125}} 点。{{source code ref|v=1.4.4.9|method=Terraria.NPC.CheckProgressFrostMoon}}它是[[{{tr|Mourning Wood}}]]的{{tr|Frost Moon}}等价物，后者的行为方式和{{tr|Everscream}}几乎完全相同。
+
+== 行为 ==
+{{tr|Everscream}}会在两种攻击方式之间交替切换：
+* 向玩家发射{{item|nolink=y|image=Pine Needle.png|scale=0.5x|pine needles}}齐射。这有点类似于{{tr|Mourning Wood}}的''{{tr|flaming wood}}''攻击，但{{tr|pine needles}}发射速度更快、造成的伤害更低、准确度更低、不会穿过{{tr|blocks}}、且受重力影响。
+* 释放多颗弹跳的{{item|nolink=y|image=Everscream Ornament.png|size=25px|ornaments}}，这些{{tr|ornaments}}受重力影响并在 5 秒后以类似于[[{{tr|Crystal Bullets}}]]的方式破碎，其[[File:Everscream Ornament Fragment.png|link=]]{{tr|shrapnel}}也一样会造成伤害。这些{{tr|ornaments}}以和{{tr|Mourning Wood}}的''{{tr|greek fire}}''类似的方式发射，但比较慢。
+
+== 备注 ==
+* {{tr|Everscream}}会悬浮穿过物块来接近远处的玩家。
+* {{tr|Everscream}}在靠后的波数中有更高的战利品掉落几率。更多细节，参见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}}]]。
+* 当[[{{tr|Frost Moon}}]]{{tr|event}}结束时，包括{{tr|Everscream}}在内的所有{{tr|enemies}}都会逃跑。不像其他{{tr|event}}{{tr|mini-bosses}}（比如[[{{tr|Mothron}}]]，它在[[{{tr|Solar Eclipse}}|{{tr|solar eclipse}}]]{{tr|event}}结束时将变得不受伤害），在{{tr|event}}结束后{{tr|Everscreams}}依然可被伤害及击杀，且几乎不会反击。这一点就让玩家能轻松打败{{tr|the Everscream}}，只要动作够快。[[{{tr|Mourning Wood}}]]也具有此特征。
+
+== 小贴士 ==
+* 注意{{tr|Everscream}}的大多数攻击都可以通过停留在离地足够高的{{tr|platforms}}上来避免，因为这些攻击的范围有限。在那用任意[[{{tr|ranged}}]]或长距离[[{{tr|melee weapon}}]]都可以让战斗变得不值一提。
+* {{tr|Everscream}}是少数的攻击可被屏蔽的{{tr|mini-bosses}} 之一，因为其{{tr|ornament}}和{{tr|pine needle}}攻击不会穿透{{tr|blocks}}。
+* 和{{tr|Mourning Wood}}不同，{{tr|Everscream}}的攻击在其生命值掉到 25% 以下后并不会造成更高伤害。
+* {{eicons|1.4.0.1|invert=y}} {{tr|Everscream}}会打破通过[[{{tr|Slimy Saddle}}]]和两个[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]得到的[[{{tr|Slimy Saddle}}#{{tr|Tips}}|无敌漏洞]]（有时在{{switch version}}上例外）。
+
+== 花絮 ==
+* {{tr|Everscream}}的{{tr|pine needle}}攻击很像它所掉落的[[{{tr|Razorpine}}]]。
+* 其英文原名 “Everscream” 是 “evergreen（常绿植物）”与 “scream（尖叫）”构成的混成词。
+* {{tr|Everscream}}和{{eil|Dark Mage}}是仅有的不会掉落[[{{tr|ranged weapon}}]]的{{tr|event}} {{tr|bosses}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Master Mode}}中每次击杀时，给予的{{tr|Frost Moon}}波次点数从 100 增加至 125。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}
+** 现在有[[{{tr|Master Mode}}]]掉落：它死亡时总是会掉落{{tr|Everscream}}[[{{tr|Relic}}]]，另外还有 25% 几率掉落[[{{tr|Shrub Star}}]][[{{tr|pet}}]]。}}
+{{history|Desktop 1.2.3.1|
+** {{tr|Damage}}由 124 降低至 110。
+** 每次击杀时，给予的{{tr|Frost Moon}}波次点数从 40 增加至 50。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Frost Moon Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Everscream}}

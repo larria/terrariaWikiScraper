@@ -1,0 +1,16 @@
+<includeonly>
+|-
+| [[File:{{{name|}}} (placed).{{#if:{{#lstfnd:{{{name|}}}|{{#var:gif}}|,}}|gif|png}}]]&emsp;{{item|{{{name|}}}|wrap=y}}
+| align=center | <!--
+	-->{{dotlist/start}}<!--
+	-->{{#listmap:list={{{tag|}}}|insep=^|outsep=|token=$1, $2|fieldsep=:|pattern=<esc>{{#ifeq:$1|vendor|{{#if:$2|{{dotlist/item|{{item|$2|wrap=y}}}}}}}}</esc>}}<!--
+	-->{{dotlist/end}}
+| align=right | {{{buy|}}}
+| {{#if:{{#lstfnd:during:Christmas|{{{tag|}}}|^}}|在[[{{tr|Christmas}}]]期间|{{#ifeq:{{{name|}}}|Jungle Wall|在[[{{tr|Hardmode}}]]中}}}}
+</includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Purchased walls/row}}
+</noinclude>

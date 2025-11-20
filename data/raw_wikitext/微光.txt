@@ -1,0 +1,875 @@
+{{exclusive|1.4.4}}
+[[File:Shimmer Transformation (demo).gif|frame|right|[[{{tr|Guide}}]]处于{{tr|Shimmer}}的转化过程之中。]]
+[[File:Item Shimmer (demo).gif|frame|right|用{{tr|Shimmer}}将[[{{tr|Life Crystal}}]]嬗变为[[{{tr|Vital Crystal}}]]，以及{{tr|decraft}}[[{{tr|Terra Blade}}]]。]]
+{{for|{{tr|Shimmer}}造成的{{tr|debuff}}|{{tr|Shimmering}}}}
+
+'''{{tr|Shimmer}}'''是一种有光泽的淡紫色珠光[[{{tr|liquid}}]]。在游戏的任何时期中，都可以在[[{{tr|Aether}}]]中找到它，后者是一个仅会在每个{{tr|world}}中的[[{{tr|Underground}}]]或[[{{tr|Cavern}}]][[{{tr|layer}}]]中生成一个的[[{{tr|mini biome}}]]，且总与[[{{tr|Jungle}}]]生成在世界的同一侧。在击败{{tr|Moon Lord}}后，可以通过使用[[{{tr|Bottomless Shimmer Bucket}}]]来无限地获得它。
+
+{{tr|The Shimmer}}有着转化（“嬗变”）浸入其中的{{tr|items}}和生物的特殊能力，这包括：
+* 大部分制作好的{{tr|items}}会被转化回（“{{tr|decraft}}”为）其{{tr|crafting materials}}。
+* 特定的{{tr|items}}会被转化为其他{{tr|item}}。某些物品只能通过这种转化获得，如[[{{tr|Ambrosia}}]]。某些{{tr|item}}的转化只能特定条件下实现。
+* {{tr|town NPC}} 的{{tr|sprite}}会被改变。
+* 特定种类的{{tr|enemies}}会被转化为其他{{tr|enemy}}。
+* 大部分[[{{tr|Critters}}]]会被转化为[[{{tr|Faelings}}]]。
+被转化后的{{tr|Items}}会向上浮起并离开{{tr|Shimmer}}，在被玩家拾取前会悬浮在半空并发出明亮的光，类似于[[{{tr|souls}}]]。任何无法被{{tr|Shimmer}}转化的物品都会遵循正常[[{{tr|gravity}}]]并沉到{{tr|Shimmer}}底部。
+
+除了其转换效果，{{tr|Shimmer}}对于进入它的其他事物也有效果：
+* 当玩家的头部浸没在{{tr|liquid}}中，或玩家的[[{{tr|fishing pole}}]]的{{tr|bobber}}碰到{{tr|liquid}}时，他会被施加[[{{tr|Shimmering}}]]{{tr|debuff}}，开始缓慢下降并穿过所有{{tr|blocks}}，直到到达开阔处。
+* 特定的[[{{tr|projectiles}}]]会在接触{{tr|Shimmer}}池时向上弹起（如下落的[[{{tr|Fallen Star}}]]）。
+* 当没有特殊嬗变，且不免疫[[{{tr|Shimmering}}]]{{tr|debuff}}的{{tr|enemies}}（例：[[{{tr|Werewolf}}]]）进入{{tr|Shimmer}}时，它们会先逐渐变得透明，直到完全隐形。然后它们会缓慢变得越来越不透明。攻击{{tr|enemies}}会让其更快变得不透明。{{source code ref|v=1.4.4.9|method=Terraria.NPC.UpdateNPC_BuffApplyVFX}}
+
+和其他{{tr|liquids}}不同，玩家无法在{{tr|Shimmer}}中[[{{tr|fishing}}]]或使用物品，也无法用[[{{tr|Empty Bucket}}]]盛起它。{{tr|Shimmer}}也没有相对应的[[{{tr|Liquid bombs}}|{{tr|liquid bomb}}]]{{tr|variant}}。不过，它仍然能被[[{{tr|pumps}}]]移动。
+
+在和任何其他[[{{tr|liquid}}]]接触时，{{tr|Shimmer}}会形成[[{{tr|Aetherium Block}}]]。
+
+== 物品嬗变 ==
+以下是特殊物品嬗变的列表。{{source code ref|v=1.4.4.9|method=Terraria.Item.GetShimmered|field=Terraria.ID.ItemID.Sets&#46;ShimmerTransformToItem}}普通的{{tr|decraft}}转化没有被包含在内。
+<!----------------------------------------------------------------->
+{{options/set|item|icons=no}}<!--
+-->{{#vardefine:excludeFromIDs|4009, 4282, 4283, 4284, 4285, 4286, 4287, 4288, 4289, 4290, 4291, 4292, 4293, 4294, 4295, 4296, 4297, 5277, 5278, 8, 430, 432, 427, 429, 428, 1245, 431, 974, 3114, 3004, 2274, 433, 523, 1333, 3045, 4383, 4384, 4385, 4386, 4387, 4388, 5293, 1102}}<!-- IDs of "from item" which should be excluded from Sets.ShimmerTransformToItem
+-->{{#vardefine:shimmered|<!-- 
+
+// All extra rows not from ShimmerTransformToItem -->
+-¦ Any Fruit ¦ Ambrosia ¦ 
+-¦ Any Torch ¦ Aether Torch ¦ 
+-¦ Rod of Discord ¦ Rod of Harmony ¦ 需要击败[[{{tr|Moon Lord}}]]
+-¦ Clentaminator  ¦ Terraformer    ¦ 需要击败[[{{tr|Moon Lord}}]]
+-¦ Bottomless Water Bucket   ¦ Bottomless Shimmer Bucket ¦ 需要击败[[{{tr|Moon Lord}}]]
+-¦ Bottomless Shimmer Bucket ¦ Bottomless Water Bucket   ¦ 需要击败[[{{tr|Moon Lord}}]]
+-¦ Luminite Brick ¦ Heavenforge Brick    ¦ 在[[{{tr|Full Moon}}]] {{moons|1}} 期间的任何时间
+-¦ Luminite Brick ¦ Lunar Rust Brick     ¦ 在[[{{tr|Waning Gibbous}}]] {{moons|2}} 期间的任何时间
+-¦ Luminite Brick ¦ Astra Brick          ¦ 在[[{{tr|Third Quarter}}]] {{moons|3}} 期间的任何时间
+-¦ Luminite Brick ¦ Dark Celestial Brick ¦ 在[[{{tr|Waning Crescent}}]] {{moons|4}} 期间的任何时间
+-¦ Luminite Brick ¦ Mercury Brick        ¦ 在[[{{tr|New Moon}}]] {{moons|5}} 期间的任何时间
+-¦ Luminite Brick ¦ Star Royale Brick    ¦ 在[[{{tr|Waxing Crescent}}]] {{moons|6}} 期间的任何时间
+-¦ Luminite Brick ¦ Cryocore Brick       ¦ 在[[{{tr|First Quarter}}]] {{moons|7}} 期间的任何时间
+-¦ Luminite Brick ¦ Cosmic Ember Brick   ¦ 在[[{{tr|Waxing Gibbous}}]] {{moons|8}} 期间的任何时间
+-¦ Lihzahrd Brick Wall ¦ Forbidden Lihzahrd Brick Wall   ¦ 需要击败[[{{tr|Golem}}]]
+-¦ Recorded Music Boxes ¦ Music Box ¦ 
+-¦ Copper Coin   ¦ n/a ¦ {{tr|Item}}被消耗，并提供 1 [[{{tr|Coin Luck}}|{{tr|Coin Luck}}计数]]。
+-¦ Silver Coin   ¦ n/a ¦ {{tr|Item}}被消耗，并提供 100 [[{{tr|Coin Luck}}|{{tr|Coin Luck}}计数]]。
+-¦ Gold Coin     ¦ n/a ¦ {{tr|Item}}被消耗，并提供 10000 [[{{tr|Coin Luck}}|{{tr|Coin Luck}}计数]]。
+-¦ Platinum Coin ¦ n/a ¦ {{tr|Item}}被消耗，完全充满[[{{tr|Coin Luck}}|{{tr|Coin Luck}}计数]]。
+-¦ Sparkle Slime Balloon ¦ Diva Slime ¦ 每个{{tr|world}}中仅限一次。
+
+}}{{#arraydefine:first|<!-- 
+
+// (input item) these items will appear first in the order they're in. If any changes are made to module:Iteminfo/idSets/data new additions will be added to the end of the list and old rows will be automatically removed. The order is roughly based on the categories of items on the wiki main page and the output, not the input. Note the ending comma for every line
+
+// Shimmer exclusive items first (with the exception of the Endless Water Bucket which is paired with the Endless Shimmer Bucket) -->
+
+Life Crystal, Mana Crystal, Life Fruit, Any Fruit, Gold Worm, Pink Pearl, Spell Tome, Peddler's Hat, Rod of Discord, Clentaminator, Bottomless Water Bucket, Bottomless Shimmer Bucket, Whoopie Cushion, Used Gas Trap, Wooden Arrow, Hellfire Arrow, Flare, Blue Flare, Any Torch, Campfire, Angel Statue, Enchanted Sundial, Star Cloak, Lava Moss, Krypton Moss, Xenon Moss, Argon Moss, Neon Moss, Copper Brick, Silver Brick, Gold Brick, Blue Brick, Green Brick, Pink Brick, Obsidian Brick, Hellstone Brick, Cobalt Brick, Mythril Brick, Luminite Brick, Spider Wall, Sandstone Wall, Hardened Sand Wall, Blue Brick Wall, Blue Slab Wall, Blue Tiled Wall, Green Brick Wall, Green Slab Wall, Green Tiled Wall, Pink Brick Wall, Pink Slab Wall, Pink Tiled Wall, Lihzahrd Brick Wall,<!--
+
+// Non-Shimmer Exclusive items, coins, and Diva Slime -->
+
+Honey Bucket, Water Bucket, Lava Bucket, Spear, Living Wood Wand, Flameburst Rod, Flameburst Cane, Flameburst Staff, Ballista Rod, Ballista Cane, Ballista Staff, Explosive Trap Rod, Explosive Trap Cane, Explosive Trap Staff, Lightning Aura Rod, Lightning Aura Cane, Lightning Aura Staff, Mining Shirt, Mining Shirt, Mining Pants, Iron Helmet, Ancient Iron Helmet, Gold Helmet, Ancient Gold Helmet, Jungle Hat, Jungle Shirt, Jungle Pants, Ancient Cobalt Helmet, Ancient Cobalt Breastplate, Ancient Cobalt Leggings, Necro Helmet, Ancient Necro Helmet, Shadow Helmet, Shadow Scalemail, Shadow Greaves, Ancient Shadow Helmet, Ancient Shadow Scalemail, Ancient Shadow Greaves, Alchemy Table, Bewitching Table, Corruption Key, Crimson Key, Hallowed Key, Frozen Key, Jungle Key, Desert Key, Pearlwood Crate, Mythril Crate, Titanium Crate, Bramble Crate, Azure Crate, Defiled Crate, Hematic Crate, Divine Crate, Stockade Crate, Boreal Crate, Mirage Crate, Hellstone Crate, Seaside Crate, Recorded Music Boxes, Herb Bag, Can Of Worms, Balloon Pufferfish, Pharaoh's Mask, Pharaoh's Robe, Sandstorm in a Bottle, Flying Carpet, Magma Stone, Lava Charm, Sextant, Weather Radio, Fisherman's Pocket Guide, Adhesive Bandage, Bezoar, Armor Polish, Vitamins, Blindfold, Pocket Mirror, Fast Clock, Trifold Map, Megaphone, Nazar, Summoner Emblem, Warrior Emblem, Ranger Emblem, Sorcerer Emblem, High Test Fishing Line, Angler Earring, Tackle Box, Lucky Coin, Gold Ring, Discount Card, Stone Block, Wood, Copper Ore, Amethyst, Marble Block, Granite Block, Sandstone Block, Hardened Sand Block, Ebonsandstone Block, Hardened Ebonsand Block, Crimsandstone Block, Hardened Crimsand Block, Pearlsandstone Block, Hardened Pearlsand Block, Ice Block, Honey Block, Crispy Honey Block, Rich Mahogany, Ebonwood, Shadewood, Pearlwood, Boreal Wood, Palm Wood, Dynasty Wood, Spooky Wood, Ash Wood, Cactus, Pumpkin, Tin Ore, Iron Ore, Lead Ore, Silver Ore, Tungsten Ore, Gold Ore, Platinum Ore, Cobalt Ore, Palladium Ore, Mythril Ore, Orichalcum Ore, Adamantite Ore, Titanium Ore, Chlorophyte Ore, Luminite, Topaz, Amethyst Bunny, Amethyst Squirrel, Sapphire, Topaz Bunny, Topaz Squirrel, Emerald, Sapphire Bunny, Sapphire Squirrel, Ruby, Emerald Bunny, Emerald Squirrel, Diamond, Ruby Bunny, Ruby Squirrel, Diamond Bunny, Diamond Squirrel, Amber Bunny, Amber Squirrel, Jungle Grass Seeds, Mushroom Grass Seeds, Vile Powder, Vicious Powder, Zombie Arm, Copper Coin, Silver Coin, Gold Coin, Platinum Coin, Sparkle Slime Balloon,
+
+|,}}{{#arrayunique:first}}<!--
+-----------------------------------------------------------------
+
+-->{{#vardefine:_C|0}}{{#vardefine:rows|}}<!-- 
+
+-->{{#arraydefine:shimmered|{{#var:shimmered}}|-¦}}{{#arrayunique:shimmered}}<!-- 
+-->{{#arrayprint:shimmered||@@|<!-- 
+	-->{{#arraydefine:s|@@|¦}}<!-- <from item name> ¦ <to item name> ¦ <note>
+	-->{{#vardefine:rows|{{#if:{{#var:rows}}|{{#var:rows}},}}{{#vardefineecho:_C|{{#expr:{{#var:_C}}+1}}}}}}<!-- 
+	-->{{#vardefine:row-{{#var:_C}}|<!-- 
+==<tr>============
+          -->{{!}}-
+<!-- from -->{{!}} {{item|{{#vardefineecho:_from|{{#arrayindex:s|0}}}}|wrap=y}}
+<!--  to  -->{{!}} {{#ifeq:{{#vardefineecho:_to|{{#arrayindex:s|1}}}}|n/a| {{na}} | {{item|{{#var:_to}}|wrap=y}} }}
+<!-- note -->{{!}} {{#arrayindex:s|2}}<!-- 
+==</tr>===========
+	-->}}<!-- 
+	-->{{#vardefine:index-{{#var:_from}}|{{#if:{{#var:index-{{#var:_from}}}}|{{#var:index-{{#var:_from}}}},}}{{#var:_C}}}}<!-- 
+-->}}<!-- 
+
+-->{{#arraydefine:x|{{#invoke:Iteminfo/idSets|getSet|ShimmerTransformToItem|y}}|,}}<!-- 
+-->{{#arraydefine:y|{{#var:excludeFromIDs}}|,}}<!-- 
+-->{{#arraydiff:x|x|y}}<!-- 
+-->{{#arrayprint:x||@@@|<!-- 
+	-->{{#vardefine:rows|{{#if:{{#var:rows}}|{{#var:rows}},}}{{#vardefineecho:_C|{{#expr:{{#var:_C}}+1}}}}}}<!-- 
+	-->{{#vardefine:row-{{#var:_C}}|<!-- 
+==<tr>============
+          -->{{!}}-
+<!-- from -->{{!}} {{item|{{#vardefineecho:_from|{{itemNameFromId|@@@|lang=en}}}}|wrap=y}}
+<!--  to  -->{{!}} {{item|id={{#invoke:Iteminfo/idSets|value|ShimmerTransformToItem|@@@}}|showid=no|wrap=y}}
+<!-- note -->{{!}} <!-- 
+==</tr>===========
+	-->}}<!-- 
+	-->{{#vardefine:index-{{#var:_from}}|{{#if:{{#var:index-{{#var:_from}}}}|{{#var:index-{{#var:_from}}}},}}{{#var:_C}}}}<!-- 
+-->}}<!-- 
+
+-->{{#vardefine:used|}}<!-- 
+
+-->{{options/set|item|icons=no}}
+{| class="terraria sortable lined mw-collapsible"
+! 放入 !! 产生 !! {{tr|Notes}}
+{{#arrayprint:first||@@@|<!-- 
+	-->{{#arraydefine:r|{{#var:index-@@@}}|,}}<!-- 
+	-->{{#arrayprint:r||@@|<nowiki/>
+<!--	-->{{#var:row-@@}}<!-- 
+		-->{{#vardefine:used|{{#if:{{#var:used}}|{{#var:used}},}}@@}}<!-- 
+	-->}}<!-- 
+-->}}<!-- 
+-->{{#arraydefine:rows|{{#var:rows}}|,}}<!-- 
+-->{{#arraydefine:used|{{#var:used}}|,}}<!-- 
+-->{{#arraydiff:rows|rows|used}}<!-- 
+-->{{#arrayprint:rows||@@|<nowiki/>
+<!--  -->{{#var:row-@@}}<!-- 
+-->}}
+|}
+
+== {{tr|decraft}}特例 ==
+除了普通的{{tr|decraft}}以外，许多{{tr|recipes}}拥有特殊的{{tr|decraft}}结果和规则，在此 wiki 上称为“{{tr|decraft}}特例”。{{tr|decraft}}特例包括：{{source code ref|v=1.4.4.9|method=Terraria.Recipe.SetupRecipes}}
+* 有多种{{tr|recipes}}的{{tr|item}}只会被{{tr|decraft}}为特定的一套{{tr|ingredients}}。<!--Technically, these items have multiple recipes registered, with some of the recipes being marked as "notDecraftable".{{source code ref|v=1.4.4.9|field=Terraria.Recipe.notDecraftable}}-->
+** 例如，[[{{tr|Frost armor}}]]可用[[{{tr|Adamantite Bar}}]]或[[{{tr|Titanium Bar}}]]制作，但它总是会被{{tr|decraft}}为{{tr|Adamantite Bars}}，即使是在有{{tr|Titanium}}的{{tr|worlds}}中也如此。
+* 拥有两种[[{{tr|evil biome}}]]{{tr|recipes}}的某些{{tr|items}}会基于当前{{tr|world}}的{{tr|evil biome}}被{{tr|decraft}}。{{source code ref|v=1.4.4.9|method=Terraria.Recipe.UpdateWhichItemsAreCrafted/Terraria.GameContent.ShimmerTransforms.GetDecraftingRecipeIndex|field=Terraria.Recipe.corruption/Terraria.Recipe.crimson}}
+** 例如，一个[[{{tr|Monster Lasagna}}]]在[[{{tr|Corruption}}]]{{tr|world}}中总是会被{{tr|decraft}}为 8 个[[{{tr|Rotten Chunk}}]]，在[[{{tr|Crimson}}]]{{tr|world}}中则是 8 个[[{{tr|Vertebra}}]]。此外，在 [[{{tr|drunk world}}]] 中，{{tr|decraft}}结果遵循当天的{{tr|evil biome}}。
+* 一些{{tr|items}}会被{{tr|decraft}}为独特的一套{{tr|item}}。{{source code ref|v=1.4.4.9|method=Terraria.Recipe.AddCustomShimmerResult}}
+** 例如，[[{{tr|Copper Pickaxe}}]]会被{{tr|decraft}}为[[{{tr|Wood}}]]和[[{{tr|Copper Ore}}]]，即使{{tr|Copper Ore}}不是其{{tr|crafting recipe}}的一部分。
+* 在[[{{tr|Placed Bottle}}]]或[[{{tr|Alchemy Table}}]]制作的{{tr|Items}}会被{{tr|decraft}}为其{{tr|ingredients}}的随机一部分。{{source code ref|v=1.4.4.9|method=Terraria.Item.GetShimmered/Terraria.Recipe.AddRecipe}}
+** 这一随机性是通过让{{tr|decraft}}结果中的每个单独的{{tr|item}}有 {{chance|1/3}} 几率消失来达成的。<ref>例如，当{{tr|decraft}} 1 个[[{{tr|Shine Potion}}]]时，[[{{tr|Bottled Water}}]]、[[{{tr|Daybloom}}]]、[[{{tr|Glowing Mushroom}}]]均有 {{chance|1/3}} 几率消失；{{tr|decraft}} 9999 个{{tr|Shine Potions}}时，{{tr|decraft}}结果包括一叠 9999 个{{tr|Dayblooms}}。不过，在这一叠{{tr|item}}被实际创建前，其中的每一个{{tr|Daybloom}}都有 {{chance|1/3}} 几率消失。</ref>因此，平均来说{{tr|decraft}}在{{tr|Placed Bottle or Alchemy Table}}制作的{{tr|items}}仅能获得 {{chance|2/3}} 的{{tr|ingredients}}。
+* 用[[{{tr|Bone}}]]制作的{{tr|Items}}在击败[[{{tr|Skeletron}}]]前无法被{{tr|decraft}}。{{source code ref|name=updateRecipeSets|v=1.4.4.9|method=Terraria.GameContent.ShimmerTransforms.UpdateRecipeSets}}
+* 用[[{{tr|Lihzahrd Bricks}}]]制作的{{tr|Items}}在击败[[{{tr|Golem}}]]前无法被{{tr|decraft}}。<ref name="updateRecipeSets"/>
+* 某些{{tr|items}}无法被{{tr|decraft}}，以防止不正当利用或不好的含义。{{source code ref|v=1.4.4.9|field=Terraria.Recipe.notDecraftable}}
+** 例如，{{tr|decraft}}[[{{tr|Blizzard in a Bottle}}]]（可以在[[{{tr|Ice biome}}]]中的[[{{tr|Chests}}]]内找到）会允许在[[{{tr|pre-Hardmode}}]]获得[[{{tr|Frost Core}}]]，{{tr|decraft}}[[{{tr|Bunny Stew}}]]则意味着让死掉的、已被烹饪的[[{{tr|Bunny}}]]重新活过来。
+
+以下为这些{{tr|decraft}}特例的列表。不包括已经有[[#物品嬗变|特殊物品嬗变]]的可制作的{{tr|item}}。
+{{options/set|item|icons=no}}
+{{flexstart|style=gap:var(--layout-gap); margin-bottom:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria sortable lined mw-collapsible"
+|+ {{nowrap|有多个{{tr|recipes}}的{{tr|Items}}}}
+! 放入 !! 产生
+|-
+| {{item|Sticky Dirt Bomb}}
+|
+* {{item|Dirt Bomb}}
+* {{item|Gel}}
+|-
+| {{item|Ironskin Potion}}
+|
+* {{item|Bottled Water}}
+* {{item|Daybloom}}
+* {{item|Iron Ore}}
+|-
+| {{item|Spelunker Potion}}
+|
+* {{item|Bottled Water}}
+* {{item|Blinkroot}}
+* {{item|Moonglow}}
+* {{item|Gold Ore}}
+|-
+| {{item|Flinx Fur Coat}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Flinx Fur|bignote={{note|×&thinsp;8}}}}
+* {{item|Gold Bar|bignote={{note|×&thinsp;8}}}}
+|-
+| {{item|Flinx Staff}}
+|
+* {{item|Flinx Fur|bignote={{note|×&thinsp;6}}}}
+* {{item|Gold Bar|bignote={{note|×&thinsp;10}}}}
+|-
+| {{item|Unholy Arrow|bignote={{note|×&thinsp;5}}}}
+|
+* {{item|Wooden Arrow|bignote={{note|×&thinsp;5}}}}
+* {{item|Worm Tooth}}
+|-
+| {{item|Shell Pile}}
+|
+* {{item|Seashell}}
+|-
+| {{item|Water Candle}}
+|
+* {{item|Candle}}
+|-
+| {{item|Axe of Regrowth}}
+|
+* {{item|Staff of Regrowth}}
+* {{item|Copper Axe}}
+* {{item|Jungle Spores|bignote={{note|×&thinsp;12}}}}
+* {{item|Vine|bignote={{note|×&thinsp;3}}}}
+|-
+| {{item|Peace Candle}}
+|
+* {{item|Gold Bar|bignote={{note|×&thinsp;2}}}}
+* {{item|Pink Torch}}
+|-
+| {{item|Throne}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;20}}}}
+* {{item|Gold Bar|bignote={{note|×&thinsp;30}}}}
+|-
+| {{item|Flymeal}}
+|
+* {{item|Gold Broadsword}}
+* {{item|Stinkbug|bignote={{note|×&thinsp;5}}}}
+|-
+| {{item|Frost Helmet}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;10}}}}
+* {{item|Frost Core}}
+|-
+| {{item|Frost Breastplate}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;20}}}}
+* {{item|Frost Core}}
+|-
+| {{item|Frost Leggings}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;16}}}}
+* {{item|Frost Core}}
+|-
+| {{item|Forbidden Mask}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;10}}}}
+* {{item|Forbidden Fragment}}
+|-
+| {{item|Forbidden Robes}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;20}}}}
+* {{item|Forbidden Fragment}}
+|-
+| {{item|Forbidden Treads}}
+|
+* {{item|Adamantite Bar|bignote={{note|×&thinsp;16}}}}
+* {{item|Forbidden Fragment}}
+|-
+| {{item|GPS}}
+|
+* {{item|Gold Watch}}
+* {{item|Depth Meter}}
+* {{item|Compass}}
+|-
+| {{item|Magic Mirror}}
+|
+* {{item|Glass|bignote={{note|×&thinsp;10}}}}
+* {{item|Gold Bar|bignote={{note|×&thinsp;8}}}}
+* {{item|Diamond|bignote={{note|×&thinsp;3}}}}
+|-
+| {{item|Cell Phone}}
+|
+* {{item|PDA}}
+* {{item|Magic Mirror}}
+|-
+| {{item|Frog Gear}}
+|
+* {{item|Frog Flipper}}
+* {{item|Tiger Climbing Gear}}
+|-
+| {{item|Bundle of Horseshoe Balloons}}
+|
+* {{item|Cloud in a Balloon}}
+* {{item|Blizzard in a Balloon}}
+* {{item|Sandstorm in a Balloon}}
+* {{item|Lucky Horseshoe}}
+|-
+| {{item|Spectre Boots}}
+|
+* {{item|Hermes Boots}}
+* {{item|Rocket Boots}}
+|-
+| {{item|Molten Skull Rose}}
+|
+* {{item|Magma Skull}}
+* {{item|Obsidian Rose}}
+|-
+| {{item|Lava Waders}}
+|
+* {{item|Obsidian Water Walking Boots}}
+* {{item|Lava Charm}}
+* {{item|Obsidian Rose}}
+|-
+| {{item|Avenger Emblem}}
+|
+* {{item|Warrior Emblem}}
+* {{item|Soul of Might|bignote={{note|×&thinsp;5}}}}
+* {{item|Soul of Sight|bignote={{note|×&thinsp;5}}}}
+* {{item|Soul of Fright|bignote={{note|×&thinsp;5}}}}
+|-
+| {{item|Yoyo Bag}}
+|
+* {{item|White String}}
+* {{item|Yoyo Glove}}
+* {{item|Yellow Counterweight}}
+|-
+| {{item|Slime Crown}}
+|
+* {{item|Gel|bignote={{note|×&thinsp;20}}}}
+* {{item|Gold Crown}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria sortable lined mw-collapsible"
+|+ {{nowrap|有两种{{tr|evil biome recipes}}的{{tr|item}}}}
+! 输入 !! [[{{tr|Corruption}}]]{{tr|world}}中的输出 !! [[{{tr|Crimson}}]]{{tr|world}}中的输出
+|-
+| {{item|Night's Edge}}
+|
+* {{item|Light's Bane}}
+* {{item|Blade of Grass}}
+* {{item|Muramasa}}
+* {{item|Volcano}}
+|
+* {{item|Blood Butcherer}}
+* {{item|Blade of Grass}}
+* {{item|Muramasa}}
+* {{item|Volcano}}
+|-
+| {{item|Poisoned Knife}}
+|
+* {{item|Throwing Knife|bignote={{note|×&thinsp;50}}}}
+* {{item|Vile Powder}}
+|
+* {{item|Throwing Knife|bignote={{note|×&thinsp;50}}}}
+* {{item|Vicious Powder}}
+|-
+| {{item|Obsidian Outlaw Hat}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Shadow Scale|bignote={{note|×&thinsp;5}}}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Tissue Sample|bignote={{note|×&thinsp;5}}}}
+|-
+| {{item|Obsidian Longcoat}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Shadow Scale|bignote={{note|×&thinsp;10}}}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Tissue Sample|bignote={{note|×&thinsp;10}}}}
+|-
+| {{item|Obsidian Pants}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Shadow Scale|bignote={{note|×&thinsp;5}}}}
+|
+* {{item|Silk|bignote={{note|×&thinsp;10}}}}
+* {{item|Obsidian|bignote={{note|×&thinsp;20}}}}
+* {{item|Tissue Sample|bignote={{note|×&thinsp;5}}}}
+|-
+| {{item|Void Vault}}
+|
+* {{item|Bone|bignote={{note|×&thinsp;30}}}}
+* {{item|Jungle Spores|bignote={{note|×&thinsp;15}}}}
+* {{item|Shadow Scale|bignote={{note|×&thinsp;30}}}}
+|
+* {{item|Bone|bignote={{note|×&thinsp;30}}}}
+* {{item|Jungle Spores|bignote={{note|×&thinsp;15}}}}
+* {{item|Tissue Sample|bignote={{note|×&thinsp;30}}}}
+|-
+| {{item|Void Bag}}
+|
+* {{item|Bone|bignote={{note|×&thinsp;15}}}}
+* {{item|Jungle Spores|bignote={{note|×&thinsp;8}}}}
+* {{item|Shadow Scale|bignote={{note|×&thinsp;15}}}}
+|
+* {{item|Bone|bignote={{note|×&thinsp;15}}}}
+* {{item|Jungle Spores|bignote={{note|×&thinsp;8}}}}
+* {{item|Tissue Sample|bignote={{note|×&thinsp;15}}}}
+|-
+| {{item|Coffin Minecart}}
+|
+* {{item|Iron Bar|bignote={{note|×&thinsp;5}}}}
+* {{item|Wood|bignote={{note|×&thinsp;10}}}}
+* {{item|Rotten Chunk|bignote={{note|×&thinsp;10}}}}
+|
+* {{item|Iron Bar|bignote={{note|×&thinsp;5}}}}
+* {{item|Wood|bignote={{note|×&thinsp;10}}}}
+* {{item|Vertebra|bignote={{note|×&thinsp;10}}}}
+|-
+| {{item|Monster Lasagna}}
+|
+* {{item|Rotten Chunk|bignote={{note|×&thinsp;8}}}}
+|
+* {{item|Vertebra|bignote={{note|×&thinsp;8}}}}
+|-
+| {{item|Magiluminescence}}
+|
+* {{item|Demonite Bar|bignote={{note|×&thinsp;12}}}}
+* {{item|Topaz|bignote={{note|×&thinsp;5}}}}
+|
+* {{item|Crimtane Bar|bignote={{note|×&thinsp;12}}}}
+* {{item|Topaz|bignote={{note|×&thinsp;5}}}}
+|-
+| {{item|Deer Thing}}
+|
+* {{item|Flinx Fur|bignote={{note|×&thinsp;3}}}}
+* {{item|Demonite Ore|bignote={{note|×&thinsp;5}}}}
+* {{item|Lens}}
+|
+* {{item|Flinx Fur|bignote={{note|×&thinsp;3}}}}
+* {{item|Crimtane Ore|bignote={{note|×&thinsp;5}}}}
+* {{item|Lens}}
+|-
+| {{item|Shadow Candle}}
+|
+* {{item|Demonite Bar|bignote={{note|×&thinsp;3}}}}
+* {{item|Torch}}
+|
+* {{item|Crimtane Bar|bignote={{note|×&thinsp;3}}}}
+* {{item|Torch}}
+|}
+{{flexend|item}}
+{{flexstart|item}}
+{| class="terraria sortable lined mw-collapsible"
+|+ {{nowrap|有独特{{tr|decraft}}的{{tr|Items}}}}
+! 放入 !! 产生
+|-
+| {{item|Silver Bullet|bignote={{note|×&thinsp;70}}}}
+|
+* {{item|Musket Ball|bignote={{note|×&thinsp;70}}}}
+* {{item|Silver Ore}}
+|-
+| {{item|Tungsten Bullet|bignote={{note|×&thinsp;70}}}}
+|
+* {{item|Musket Ball|bignote={{note|×&thinsp;70}}}}
+* {{item|Tungsten Ore}}
+|-
+| {{item|Copper Pickaxe}}
+|
+* {{item|Copper Ore}}
+* {{item|Wood}}
+|-
+| {{item|Copper Axe}}
+|
+* {{item|Copper Ore}}
+* {{item|Wood}}
+|-
+| {{item|Copper Shortsword}}
+|
+* {{item|Copper Ore}}
+|}
+{{flexend|item}}
+{{flexend}}
+{{options/set|item|class=break}}
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ {{tr|decraft}}为随机部分{{tr|ingredients}}的{{tr|Items}}
+| {{itemlist/start|width=14em}}<!--
+-->{{#af_foreach:<!-- 
+	-->{{#af_keysort:<!--// sort by name in the local language
+		-->{{#af_map:<!-- 
+			// list of items:
+			-->{{#invoke:CargoQuery|afExport|q?tables=Recipes|q?fields=result|q?groupBy=result|q?where=<!--
+				-->station="Placed Bottle" <!-- all items that are crafted at a Placed Bottle
+				-->AND (result NOT LIKE "%Powder") <!-- but not Vile/Vicious Powder (these already have a special transmutation: Purification Powder)
+				-->AND (result NOT LIKE "%Healing Potion") AND (result NOT LIKE "%Mana Potion") AND (result NOT LIKE "%Restoration Potion") <!-- and not these potions either (they are non-decraftable)
+				-->AND (version IS NULL OR version LIKE "%desktop%") <!--
+			-->|plainList=result}}<!-- 
+		-->|v|{{#af_object:name={{{v}}}|trname={{tr|{{{v}}}}}}} }}<!--
+	-->|trname}}<!-- 
+-->|k|v|<!-- 
+	// only display items that are available on Desktop
+	-->{{#if:{{#pos:{{#or:{{eversions|{{#af_get:{{{v}}}|name}}|raw=y}}|desktop}}|desktop}}|<!--
+		-->{{itemlist/item|{{item|{{#af_get:{{{v}}}|name}}}}}}<!--
+	-->}}<!--
+-->}}<!-- 
+-->{{itemlist/end}}
+|}
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ 直到[[{{tr|Skeletron}}]]被击败才可{{tr|decraft}}的物品<!-- all items where Bone is used to craft -->
+| {{itemlist/start|width=14em}}<!--
+-->{{#af_foreach:<!-- 
+	-->{{#af_keysort:<!--// sort by name in the local language
+		-->{{#af_map:<!-- 
+			// list of items:
+			-->{{#invoke:CargoQuery|afExport|q?tables=Recipes|q?fields=result|q?groupBy=result|q?where=<!--
+				-->ingredients__full LIKE "%¦Bone¦%" <!-- all items that include Bone in their list of ingredients
+				-->AND (version IS NULL OR version LIKE "%desktop%") <!--
+			-->|plainList=result}}<!-- 
+		-->|v|{{#af_object:name={{{v}}}|trname={{tr|{{{v}}}}}}} }}<!--
+	-->|trname}}<!-- 
+-->|k|v|<!-- 
+	// only display items that are available on Desktop
+	-->{{#if:{{#pos:{{#or:{{eversions|{{#af_get:{{{v}}}|name}}|raw=y}}|desktop}}|desktop}}|<!--
+		-->{{itemlist/item|{{item|{{#af_get:{{{v}}}|name}}}}}}<!--
+	-->}}<!--
+-->}}<!-- 
+-->{{itemlist/end}}
+|}
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ 直到[[{{tr|Golem}}]]被击败才可{{tr|decraft}}的物品<!-- all items where Lihzahrd Brick is used to craft -->
+| {{itemlist/start|width=14em}}<!--
+-->{{#af_foreach:<!-- 
+	-->{{#af_keysort:<!--// sort by name in the local language
+		-->{{#af_map:<!-- 
+			// list of items:
+			-->{{#invoke:CargoQuery|afExport|q?tables=Recipes|q?fields=result|q?groupBy=result|q?where=<!--
+				-->ingredients__full LIKE "%¦Lihzahrd Brick¦%" <!-- all items that include the Lihzahrd Brick in their list of ingredients
+				-->AND (result != "Lihzahrd Brick Wall") <!-- but not the Lihzahrd Brick Wall (it transmutes to Forbidden Wall instead, after Golem is defeated)
+				-->AND (version IS NULL OR version LIKE "%desktop%") <!--
+			-->|plainList=result}}<!-- 
+		-->|v|{{#af_object:name={{{v}}}|trname={{tr|{{{v}}}}}}} }}<!--
+	-->|trname}}<!-- 
+-->|k|v|<!-- 
+	// only display items that are available on Desktop
+	-->{{#if:{{#pos:{{#or:{{eversions|{{#af_get:{{{v}}}|name}}|raw=y}}|desktop}}|desktop}}|<!--
+		-->{{itemlist/item|{{item|{{#af_get:{{{v}}}|name}}}}}}<!--
+	-->}}<!--
+-->}}<!-- 
+-->{{itemlist/end}}
+|}
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ 不可{{tr|decraft}}的{{tr|items}}
+| {{itemlist|width=12em
+|{{item|Bowl of Soup}}
+|{{item|Grub Soup}}
+|{{item|Froggle Bunwich}}
+|{{item|Sauteed Frog Legs}}
+|{{item|Roasted Bird}}
+|{{item|Bunny Stew}}
+|{{item|Escargot}}
+|{{item|Golden Delight}}
+|{{item|Cooked Fish}}
+|{{item|Sashimi}}
+|{{item|Cooked Shrimp}}
+|{{item|Lobster Tail}}
+|{{item|Seafood Dinner}}
+|{{item|Lesser Healing Potion}}
+|{{item|Restoration Potion}}
+|{{item|Healing Potion}}
+|{{item|Greater Healing Potion}}
+|{{item|Super Healing Potion}}
+|{{item|Mana Potion}}
+|{{item|Greater Mana Potion}}
+|{{item|Super Mana Potion}}
+|{{item|Dry Rocket}}
+|{{item|Dry Bomb}}
+|{{item|Terra Toilet}}
+|{{item|Solar Fragment}}
+|{{item|Vortex Fragment}}
+|{{item|Nebula Fragment}}
+|{{item|Stardust Fragment}}
+|{{item|Blizzard in a Bottle}}
+|{{item|1 Second Timer}}
+|{{item|3 Second Timer}}
+|{{item|5 Second Timer}}
+|{{item|Crawdad Banner}}
+|{{item|Salamander Banner}}
+|{{item|Giant Shelly Banner}}
+|{{item|Panic Necklace}}
+|{{item|Band of Starpower}}
+|{{item|Flesh Cloning Vat}}
+|{{item|Decay Chamber}}
+}}
+|}{{options/reset|item}}
+
+== 小动物和敌怪嬗变 ==
+以下是{{tr|critter and enemy}}嬗变的列表。{{source code ref|v=1.4.4.9|field=Terraria.ID.NPCID.Sets&#46;ShimmerTransformToItem / Terraria.ID.NPCID.Sets&#46;ShimmerTransformToNPC}}任何不包含在其中的{{tr|critter or enemy}}不会被嬗变，而是暂时隐形。
+{{options/set|item|icons=no}}
+{{flexstart|style=gap:var(--layout-gap); margin-bottom:var(--layout-gap);}}
+{{flexstart|item}}
+{| class="terraria sortable lined mw-collapsible"
+|+ {{nowrap|{{tr|transmute}}为{{tr|item}}的{{tr|Critters}}}}
+! 放入 !! 产生
+|-
+| {{item|Gold Worm|image=Gold Worm.gif}}
+| {{item|Gummy Worm}}
+|-
+| {{item|Amethyst Squirrel}}
+| {{item|Amethyst}}
+|-
+| {{item|Topaz Squirrel}}
+| {{item|Topaz}}
+|-
+| {{item|Sapphire Squirrel}}
+| {{item|Sapphire}}
+|-
+| {{item|Emerald Squirrel}}
+| {{item|Emerald}}
+|-
+| {{item|Ruby Squirrel}}
+| {{item|Ruby}}
+|-
+| {{item|Diamond Squirrel}}
+| {{item|Diamond}}
+|-
+| {{item|Amber Squirrel}}
+| {{item|Amber}}
+|-
+| {{item|Amethyst Bunny}}
+| {{item|Amethyst}}
+|-
+| {{item|Topaz Bunny}}
+| {{item|Topaz}}
+|-
+| {{item|Sapphire Bunny}}
+| {{item|Sapphire}}
+|-
+| {{item|Emerald Bunny}}
+| {{item|Emerald}}
+|-
+| {{item|Ruby Bunny}}
+| {{item|Ruby}}
+|-
+| {{item|Diamond Bunny}}
+| {{item|Diamond}}
+|-
+| {{item|Amber Bunny}}
+| {{item|Amber}}
+|}
+{{flexend|item}}
+{{flexstart|item}}<!-- The rest key-value pairs in ShimmerTransformToNPC:
+3,21,132,202,186,201,187,21,188,21,189,202,200,203,590,21,591,449,430,449,436,452,432,450,433,449,434,449,435,451
+-->
+{| class="terraria sortable lined mw-collapsible"
+|+ {{nowrap|{{tr|Enemy transmutations}}}}
+! 放入 !! 产生
+|-
+| {{item|Zombie}}
+| {{item|Skeleton}}
+|-
+| {{item|Slimed Zombie}}
+| {{item|Skeleton}}
+|-
+| {{item|Swamp Zombie}}
+| {{item|Skeleton}}
+|-
+| {{item|Torch Zombie}}
+| {{item|Skeleton}}
+|-
+| {{item|Pincushion Zombie}}
+| {{item|Headache Skeleton}}
+|-
+| {{item|Bald Zombie}}
+| {{item|Misassembled Skeleton}}
+|-
+| {{item|Twiggy Zombie}}
+| {{item|Misassembled Skeleton}}
+|-
+| {{item|Female Zombie}}
+| {{item|Pantless Skeleton}}
+|-
+| {{item|Armed Zombie}}
+| {{item|Bone Throwing Skeleton|image=Skeleton.png|link={{tr|Skeleton}}}}
+|-
+| {{item|Armed Slimed Zombie}}
+| {{item|Bone Throwing Skeleton|image=Skeleton.png|link={{tr|Skeleton}}}}
+|-
+| {{item|Armed Swamp Zombie}}
+| {{item|Bone Throwing Skeleton|image=Skeleton.png|link={{tr|Skeleton}}}}
+|-
+| {{item|Armed Torch Zombie}}
+| {{item|Bone Throwing Skeleton|image=Skeleton.png|link={{tr|Skeleton}}}}
+|-
+| {{item|Armed Pincushion Zombie}}
+| {{item|Bone Throwing Headache Skeleton|image=Headache Skeleton.png|link={{tr|Headache Skeleton}}}}
+|-
+| {{item|Armed Twiggy Zombie}}
+| {{item|Bone Throwing Misassembled Skeleton|image=Misassembled Skeleton.png|link={{tr|Misassembled Skeleton}}}}
+|-
+| {{item|Armed Female Zombie}}
+| {{item|Bone Throwing Pantless Skeleton|image=Pantless Skeleton.png|link={{tr|Pantless Skeleton}}}}
+|}
+{{flexend|item}}
+{{flexstart|item}}<!--
+-->{{#arraydefine:toFaeling|614,74,297,298,673,672,671,675,674,362,<!--363,-->364,<!--365,-->608,<!--609,-->602,<!--603,-->611,148,<!--149,-->46,303,337,299,538,55,607,615,625,626,361,687,484,604,358,355,616,617,654,653,655,585,584,583,595,596,600,597,598,599,357,377,606,359,360,367,366,300,610,612,487,486,485,669,356,661,374,442,443,444,601,445,592,446,605,447,627,539,613}}<!-- IDs that are commented out: flying state critters and black Penguin.-->
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ {{nowrap|{{tr|transmute}}为{{item|Faeling}}的{{tr|Critters}}}}
+|-
+| {{itemlist/start|width=16em}}
+{{#arrayprint:toFaeling||@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@|lang=en}}}}}}
+}}
+{{itemlist/end}}
+|}
+{{flexend|item}}
+{{flexstart|item}}<!--
+-->{{#arraydefine:toShimmerSlime|1,302,335,336,334,333,225,141,16,147,184,537,204,81,183,138,121}}
+{| class="terraria mw-collapsible" style="width:100%;"
+|+ {{nowrap|{{tr|transmute}}为{{item|Shimmer Slime}}的{{tr|Slimes}}}}
+|-
+| {{itemlist/start|width=16em}}
+{{#arrayprint:toShimmerSlime||@@@|
+{{itemlist/item|{{item|{{npcNameFromId|@@@|lang=en}}}}}}
+}}
+{{itemlist/end}}
+|}
+{{flexend|item}}
+{{flexend}}
+
+== NPC 转化 ==
+在浸没在{{tr|Shimmer}}中后，任何 [[{{tr|NPCs}}]]（[[{{tr|town pets}}]]除外）会变为其{{tr|Shimmer}}形态。这对游戏玩法和对话没有影响，仅是视觉上的更改。可以通过将其再次浸没在{{tr|Shimmer}}中的方式来将其变回经典外观。
+{| class="terraria sortable lined mw-collapsible"
+! {{tr|NPC}} !! {{tr|Shimmered form}}
+|-
+| {{item|Guide}}
+| {{item|Guide|mode=image|image=Guide (Shimmered).png}}
+|-
+| {{item|Merchant}}
+| {{item|Merchant|mode=image|image=Merchant (Shimmered).png}}
+|-
+| {{item|Nurse}}
+| {{item|Nurse|mode=image|image=Nurse (Shimmered).png}}
+|-
+| {{item|Painter}}
+| {{item|Painter|mode=image|image=Painter (Shimmered).png}}
+|-
+| {{item|Dye Trader}}
+| {{item|Dye Trader|mode=image|image=Dye Trader (Shimmered).png}}
+|-
+| {{item|Zoologist|image=Zoologist.png/Zoologist Fox.png}}
+| {{item|Zoologist|mode=image|image=Zoologist (Shimmered).png/Zoologist Fox (Shimmered).png}}
+|-
+| {{item|Golfer}}
+| {{item|Golfer|mode=image|image=Golfer (Shimmered).png}}
+|-
+| {{item|Party Girl}}
+| {{item|Party Girl|mode=image|image=Party Girl (Shimmered).png}}
+|-
+| {{item|Angler}}
+| {{item|Angler|mode=image|image=Angler (Shimmered).png}}
+|-
+| {{item|Stylist}}
+| {{item|Stylist|mode=image|image=Stylist (Shimmered).png}}
+|-
+| {{item|Demolitionist}}
+| {{item|Demolitionist|mode=image|image=Demolitionist (Shimmered).png}}
+|-
+| {{item|Dryad}}
+| {{item|Dryad|mode=image|image=Dryad (Shimmered).png}}
+|-
+| {{item|Tavernkeep}}
+| {{item|Tavernkeep|mode=image|image=Tavernkeep (Shimmered).png}}
+|-
+| {{item|Arms Dealer}}
+| {{item|Arms Dealer|mode=image|image=Arms Dealer (Shimmered).png}}
+|-
+| {{item|Goblin Tinkerer}}
+| {{item|Goblin Tinkerer|mode=image|image=Goblin Tinkerer (Shimmered).png}}
+|-
+| {{item|Witch Doctor}}
+| {{item|Witch Doctor|mode=image|image=Witch Doctor (Shimmered).png}}
+|-
+| {{item|Clothier}}
+| {{item|Clothier|mode=image|image=Clothier (Shimmered).png}}
+|-
+| {{item|Mechanic}}
+| {{item|Mechanic|mode=image|image=Mechanic (Shimmered).png}}
+|-
+| {{item|Tax Collector}}
+| {{item|Tax Collector|mode=image|image=Tax Collector (Shimmered).png}}
+|-
+| {{item|Pirate}}
+| {{item|Pirate|mode=image|image=Pirate (Shimmered).png}}
+|-
+| {{item|Truffle}}
+| {{item|Truffle|mode=image|image=Truffle (Shimmered).png}}
+|-
+| {{item|Wizard}}
+| {{item|Wizard|mode=image|image=Wizard (Shimmered).png}}
+|-
+| {{item|Steampunker}}
+| {{item|Steampunker|mode=image|image=Steampunker (Shimmered).png}}
+|-
+| {{item|Cyborg}}
+| {{item|Cyborg|mode=image|image=Cyborg (Shimmered).png}}
+|-
+| {{item|Santa Claus}}
+| {{item|Santa Claus|mode=image|image=Santa Claus (Shimmered).png}}
+|-
+| {{item|Princess}}
+| {{item|Princess|mode=image|image=Princess (Shimmered).png}}
+|-
+| {{item|Traveling Merchant}}
+| {{item|Traveling Merchant|mode=image|image=Traveling Merchant (Shimmered).png}}
+|-
+| {{item|Old Man}}
+| {{item|Old Man|mode=image|image=Old Man (Shimmered).png}}
+|-
+| {{item|Skeleton Merchant}}
+| {{item|Skeleton Merchant|mode=image|image=Skeleton Merchant (Shimmered).png}}
+|}{{options/reset|item}}
+
+== 备注 ==
+* 在接触{{tr|Shimmer}}时会被反弹的{{tr|Projectiles}}仅会在它们接触{{tr|Shimmer}}池的上表面时被反弹。把它们射向{{tr|Shimmer}}池的侧面或底面（可通过使用[[{{tr|Bubble}}]]实现）会立即摧毁{{tr|projectile}}。
+* 由{{tr|Statue}}生成的生物不会在{{tr|Shimmer}}中被转化，而是会消失。
+* 被{{tr|Shimmer}}变得隐形的{{tr|enemies}}可以用[[{{tr|Hunter Potion}}]]看到。
+* 虽然本身是用在[[{{tr|water}}]]上的，[[{{tr|Super Absorbant Sponge}}]]也能吸收{{tr|Shimmer}}，而[[{{tr|Liquid Sensor (Water)}}]]也能探测{{tr|Shimmer}}。
+* 当{{tr|crafting recipe}}会产生一叠{{tr|items}}的{{tr|item}}（如[[{{tr|Crystal Bullets}}]]）被{{tr|decraft}}时，需要向{{tr|Shimmer}}中投入相同数量的该物品才能进行{{tr|decraft}}。多余的物品不会被转化。
+* 由{{tr|decraft}}产生的[[{{tr|Fallen Star}}]]不会在{{tr|daytime}}消失。然而，如果玩家拾取它们失败了（例：如果它们被吸向玩家，但最终没有被玩家拾取），它们仍然会消失。
+* 当装备了[[{{tr|Chromatic Cloak}}]]来避免[[{{tr|Shimmering}}]]时，浸没于{{tr|Shimmer}}和浸没于[[{{tr|water}}]]中相当：玩家的水平和垂直[[{{tr|movement speed}}]]会[[{{tr|Movement speed|link=y}}#{{tr|Medium movement}}|变慢]]相同的量，可以用诸如[[{{tr|Flippers}}]]的{{tr|accessories}} 在{{tr|the Shimmer}}中[[{{tr|Swimming}}]]，且玩家装备[[{{tr|Neptune's Shell}}]]{{tr|or its upgrades}}时会变形为[[{{tr|Merfolk}}]]。不过，玩家不会在{{tr|Shimmer}}中[[{{tr|drown}}]]；不会出现[[{{tr|breath meter}}]]。
+* 在[[{{tr|Expert Mode}}]]中，在[[{{tr|Snow biome}}]]或[[{{tr|Ice biome}}]]中接触{{tr|Shimmer}}会对玩家施加[[{{tr|Chilled}}]][[{{tr|debuff}}]]。
+
+== 成就 ==
+{{achievement|name=A Shimmer In The Dark}}
+
+== 小贴士 ==
+* 可以用多种方式来利用{{tr|Shimmer}}的{{tr|decraft}}特性：
+** 可以通过重复制作和{{tr|decraft}}装备来为装备刷出一个好的[[{{tr|modifiers}}]]。
+** {{tr|decraft}}多余的或较差的装备可取回{{tr|materials}}。
+** 在{{tr|world}}各处找到的{{tr|Items}}都可被拿来{{tr|decraft}}，包括[[{{tr|Underground Cabin}}]]的{{tr|furniture}}和[[{{tr|Magic Mirror}}]]。
+** 在[[{{tr|Multiplayer}}]]中，可以{{tr|decraft}}多余的[[{{tr|Recall Potion}}]]，可能获得[[{{tr|Specular Fish}}]]。{{tr|Specular Fish}}可以被制作为[[{{tr|Wormhole Potion}}]]。
+*** 类似地，在{{tr|singleplayer}}中，任何得到的{{tr|Wormhole Potions}}都可被{{tr|decraft}}，可能获得{{tr|Specular Fish}}。
+** 从 [[{{tr|NPCs}}]] 处购买{{tr|Items}}，然后将其{{tr|decraft}}可获得资源。
+*** 可在[[{{tr|Merchant}}]]处以 {{iteminfo|Iron Anvil|buy}} 的价格购买[[{{tr|Iron Anvil}}]]，然后{{tr|decraft}}为五个[[{{tr|Iron Bar}}]]。
+*** 可在[[{{tr|Jungle}}]]中与{{tr|Merchant}}对话，以 {{iteminfo|Furnace|buy}} 的价格购买[[{{tr|Furnace}}]]，然后{{tr|decraft}}为 20 个[[{{tr|Stone Block}}]]、4 个[[{{tr|Wood}}]]、和 3 个[[{{tr|Torch}}]]。
+*** 可在[[{{tr|Tavernkeep}}]]处以每个 {{iteminfo|Ale|buy}} 的价格购买[[{{tr|Ale}}]]，它们可被{{tr|decraft}}为[[{{tr|Mug}}]]，然后是一个[[{{tr|Glass}}]]，最后是两个[[{{tr|Sand Block}}]]。
+* 由于[[{{tr|pumps}}]]能够移动{{tr|Shimmer}}，在击败[[{{tr|Skeletron}}]]后就能从[[{{tr|the Aether}}]]{{tr|biome}}中移动{{tr|Shimmer}}。
+** 然而，因为[[{{tr|Teleporter}}]]由[[{{tr|Mechanic}}]]出售，在{{tr|Aether biome}}设置{{tr|Teleporters}}可能会比移动{{tr|Shimmer}}更方便。
+* 如果需要大量的特定[[{{tr|ore}}]]，可以将一种高级的{{tr|ore}}{{tr|transmute}}为所需的{{tr|ore}}。这在获得用于许多{{tr|recipes}}中的[[{{tr|Iron Ore}}]]/[[{{tr|Lead Ore}}]]时，或是收集[[{{tr|Drill Containment Unit}}]]的{{tr|material}}时很有用。
+* 通过互换其组成成分，{{tr|Shimmer}}会使得获得具有极其复杂的{{tr|crafting recipes}}的{{tr|item}}更加容易，这意味着玩家仅需要获得充足的任意物品，而非每种一个。
+** [[{{tr|Fish Finder}}]]
+** [[{{tr|Angler Tackle Bag}}]]
+** [[{{tr|Ankh Shield}}]]组成成分：
+*** [[{{tr|Reflective Shades}}]]
+*** [[{{tr|Armor Bracing}}]]
+*** [[{{tr|Medicated Bandage}}]]
+*** [[{{tr|Countercurse Mantra}}]]
+*** [[{{tr|The Plan}}]]
+** [[{{tr|Greedy Ring}}]]
+* 相似地，{{tr|Shimmer}}会让获得全套[[{{tr|Mining armor}}]]更容易，也让获得特定的{{tr|Wall of Flesh}}掉落的{{tr|emblem}}更容易。
+
+== {{tr|Trivia}} ==
+* {{tr|Shimmer}}（Shimmer）可能参考了媒体作品中具有相似属性的多种介质或地点：
+** 2018 年的科幻恐怖电影{{维基百科|b=y|Annihilation (film)|Annihilation|t=湮灭}}中，一种被称为“闪光”（the Shimmer）的不定形现象能够使生物转变并变异。
+** 1991 年的动作冒险游戏{{维基百科|b=y|The Legend of Zelda: A Link to the Past|t=塞尔达传说 众神的三角力量}}中，玩家可以在称作{{iwlink|zelda|Mysterious Pond|神秘池塘（Mysterious Pond）}}的区域中丢入物品来获得更强的物品。
+** 科幻电视系列{{维基百科|b=y|Doctor Who|t=神秘博士}}中，称作 shimmer 的隐形装置可以让其拥有者或他人改变外观。
+
+== 历史 ==
+{{history|Desktop 1.4.4.9|录制好的[[{{tr|Music Box}}]]可被嬗变为空的{{tr|Music Boxes}}。}}
+{{history|Desktop 1.4.4.8|
+** 将[[{{tr|Gold Worm}}]]以{{tr|critter}}形式丢入{{tr|Shimmer}}后也会变成[[{{tr|Gummy Worm}}]]，而非变成[[{{tr|Faeling}}]]。
+** 将[[{{tr|Sparkle Slime Balloon}}]]以{{tr|item}}形式丢入{{tr|Shimmer}}也会生成[[{{tr|Diva Slime}}]]。
+** [[{{tr|Hallowed armor}}]]和[[{{tr|Ancient Hallowed armor}}]]不再会在{{tr|Shimmer}}中互相转化。现在它们会被{{tr|decraft}}为[[{{tr|Hallowed Bar}}]]。}}
+{{history|Desktop 1.4.4.6|
+** [[{{tr|Sandstorm in a Bottle}}]]和[[{{tr|Flying Carpet}}]]现在可以{{tr|transmute}}为[[{{tr|Pharaoh's set}}]]。
+** [[{{tr|Lava Charm}}]]现在可以{{tr|transmute}}为[[{{tr|Magma Stone}}]]
+** [[{{tr|Silver Bullet}}]]和[[{{tr|Tungsten Bullet}}]]现在在{{tr|Shimmer}}中{{tr|decraft}}时会提供 1 个{{tr|ore}}，而非 1 个{{tr|bars}}
+** [[{{tr|Copper Shortsword}}]]、[[{{tr|Copper Axe}}]]、和[[{{tr|Copper Pickaxe}}]]现在在[[{{tr|Shimmer}}]]中{{tr|decraft}}时会提供 1 个[[{{tr|Copper Ore}}]]和 1 个[[{{tr|Wood}}]]（而非完全不能{{tr|decraft}}）。}}
+{{history|Desktop 1.4.4.5|
+** 所有[[{{tr|Torches}}]]现在在{{tr|Shimmer}}中都会被转化为[[{{tr|Aether Torch}}]]。
+** 不再能够在[[{{tr|Skeletron}}]]前通过{{tr|Shimmer}}{{tr|decraft}}来获得[[{{tr|bone}}]]。
+** 不再能够在[[{{tr|Golem}}]]前通过{{tr|Shimmer}}{{tr|decraft}}来获得[[{{tr|Lihzahrd Brick}}]]。
+** 修复了潜在的{{tr|Shimmer}}和弹性{{tr|blocks}}导致的软锁死问题。
+** 修复了[[{{tr|Shellphone}}]]无法在{{tr|Shimmer}}中{{tr|decraft}}的问题。
+** 修复了另一个能通过{{tr|Shimmer}}{{tr|decraft}}的方式被利用的物品。}}
+{{history|Desktop 1.4.4.3|
+** 通过{{tr|decraft}}产生的[[{{tr|Fallen Star}}]]不再会在{{tr|daytime}}立即消失。
+** 一些物品被设为不可被{{tr|Shimmer}}{{tr|decraft}}，以修复提供无限[[{{tr|coins}}]]的漏洞。}}
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Liquids}}
+{{Shimmering Exclusive Items}}
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+{{category|Liquids}}
+[[Category:微光]]
+[[Category:制作站物品]]
+{{language info|en=Shimmer}}

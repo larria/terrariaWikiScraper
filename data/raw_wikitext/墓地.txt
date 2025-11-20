@@ -1,0 +1,185 @@
+{{exclusive|1.4.0.1}}
+[[File:BiomeBannerGraveyard.png|center]]
+{{for|{{tr|the painting}}|{{tr|Graveyard (Painting)}}}}
+
+'''{{tr|Graveyard}}'''是一个[[{{tr|mini-biome}}]]，当玩家附近有五个及以上的[[{{tr|Tombstones}}]]时就会形成。此处[[{{tr|Day and night cycle}}|全天]]都会生成独特的{{tr|Graveyard}}[[{{tr|enemies}}]]以及{{tr|night}}的普通{{tr|enemy}}，且[[{{tr|spawn rate}}]]较高。[[{{tr|NPC}}]] 商贩会在此处售卖独特物品，地面上的[[{{tr|Ecto Mist}}]]可以使玩家获得[[{{tr|Ecto Mist}}#{{tr|Crafting}}|独特的{{tr|crafting recipes}}]]。这些功能性效果仅当附近有七个及以上{{tr|Tombstones}}时才会生效。{{source code ref|v=1.4.1.2|{{code|Terraria.SceneMetrics.cs}} 中的 {{code|EnoughTilesForGraveyard}} 特性。}}
+
+{{tr|Tombstone}}的数量越多，{{tr|Graveyard}}的视觉效果就会更明显：颜色饱和度逐渐降低，背景中偶尔会有闪电，{{tr|Ecto Mist}}会在地面上累积。
+
+[[{{tr|Sunflower}}]]对{{tr|Graveyard}}的效果有反作用：每个{{tr|Sunflower}}会消除一个{{tr|Tombstone}}的效果。{{source code ref|v=1.4.1.2|method=Terraria.SceneMetrics.ExportTileCountsToMain}}
+
+== 内容 ==
+{{for|在{{tr|Graveyard}}中制作的{{tr|item}}的信息|{{tr|Ecto Mist}}#{{tr|Crafting}}}}
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Maggot Zombie}}<!--
+			-->|{{item|Zombie}}<!--
+			-->|{{item|Raincoat Zombie|note2=（下{{tr|rain}}）}}<!--
+			-->|{{item|Frozen Zombie|note2=（[[{{tr|Snow biome}}]]）}}<!--
+			-->|{{item|The Groom|note2=（罕见）}}<!--
+			-->|{{item|The Bride|note2=（罕见）}}<!--
+			-->|{{item|Demon Eye}}<!--
+			-->|{{item|Raven}}<!--
+			-->|{{item|Ghost (enemy)|Ghost|note2=（不常见）}}<!--
+			-->|{{item|Spore Zombie|note2=（[[{{tr|Glowing Mushroom biome}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hoppin' Jack}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Critters}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rat}}<!--
+			-->|{{item|Maggot|note2=（{{tr|Maggot Zombies}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Raincoat Zombie}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rain Hat}}<!--
+			-->|{{item|Rain Coat}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Frozen Zombie}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Snow Hood}}<!--
+			-->|{{item|Snow Coat}}<!--
+			-->|{{item|Snow Pants}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|The Groom}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Top Hat}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|The Bride}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wedding Veil}}<!--
+			-->|{{item|Wedding Dress}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Arms Dealer}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Quad-Barrel Shotgun|note2=（[[{{tr|Skeletron}}]]后）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dye Trader}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Fogbound Dye}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Steampunker}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bone Welder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Cyborg}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Echo Block}}<!--
+			-->|{{item|Spectre Goggles}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Illuminant Coating}}<!--
+			-->|{{item|Echo Coating|note2=（[[{{tr|Plantera}}]]后）}}<!--
+			-->|{{item|Nevermore}}<!--
+			-->|{{item|Reborn}}<!--
+			-->|{{item|Graveyard (Painting)|Graveyard}}<!--
+			-->|{{item|Ghost Manifestation}}<!--
+			-->|{{item|Wicked Undead}}<!--
+			-->|{{item|Bloody Goblet}}<!--
+			-->|{{item|Still Life}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Clothier}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Gravedigger Hat}}<!--
+			-->|{{item|Gravedigger Coat}}<!--
+			-->|{{item|Funeral Hat}}<!--
+			-->|{{item|Funeral Coat}}<!--
+			-->|{{item|Funeral Pants}}<!--
+			-->|{{item|Tragic Umbrella}}<!--
+			-->|{{item|Victorian Goth Hat}}<!--
+			-->|{{item|Victorian Goth Dress}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dryad}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Corrupt Seeds|note2=（{{tr|Hardmode}}，带有[[{{tr|Crimson}}]]的{{tr|world}}）}}<!--
+			-->|{{item|Crimson Seeds|note2=（{{tr|Hardmode}}，带有[[{{tr|Corruption}}]]的{{tr|world}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Party Girl}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Release Doves}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Graveyard)| {{sound|track=Graveyard}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->|{{item|Otherworldly Music Box (Eerie)| {{sound|track=Eerie (Otherworldly)}} |icons={{eicons|1.4.0.1}} }} <!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 所有以玩家为中心{{buff area}}的区域内的{{tr|Tombstones}}会被计入{{tr|Graveyard biome}}的形成判定中。
+* 大量的[[{{tr|Ecto Mist}}]]会在{{tr|Graveyard biomes}}中覆盖住地面，可能会阻挡如[[{{tr|Pressure Plates}}]]之类的物品。这一点先前可以通过启用和关闭“{{tr|Blood and Gore}}”[[{{tr|Settings}}]]进行切换，但这一点现在已经被修复了。
+* 虽然仅在[[{{tr|night}}]]出现的[[{{tr|enemies}}]]能在{{tr|daytime}}于{{tr|Graveyard}}中生成，夜间的 [[{{tr|bosses}}]] 并不能在{{tr|day}}召唤。
+* 使用[[{{tr|Hardcore}}]]{{tr|characters}}时，[[{{tr|NPCs}}]] 被杀死时会掉落{{tr|Tombstones}}，允许玩家无需牺牲{{tr|character}}就能创造{{tr|Graveyard biome}}。
+* 虽然 {{tr|NPCs}} 在{{tr|Graveyard}}中时会抱怨，但是这并不会影响他们的[[{{tr|happiness}}]]。由于{{tr|Graveyard}}总是与另一个{{tr|biome}}结合出现，他们的{{tr|happiness}}会取决于该{{tr|biome}}。
+** 然而，[[{{tr|Painter}}]]在{{tr|Graveyard}}中不会出售[[{{tr|Daylight}}]]、[[{{tr|First Encounter}}]]、[[{{tr|Good Morning}}]]、[[{{tr|Underground Reward}}]]、[[{{tr|Through the Window}}]]、[[{{tr|Place Above the Clouds}}]]和[[{{tr|Sky Guardian}}]]。
+* 在这个{{tr|biome}}中，[[{{tr|Zombie}}]]等{{tr|enemy}}能够随机地打开[[{{tr|doors}}]]。[[{{tr|Maggot Zombie}}]]和[[{{tr|Werewolf}}]] （仅在{{tr|Full Moon}}{{tr|nights}}生成）能够立即打开{{tr|doors}}，类似于[[{{tr|Blood Moon}}]]{{tr|enemies}}。
+* [[{{tr|Happy!}}]] [[{{tr|buff}}]]在{{tr|Graveyard}}中无效。
+* 位于{{tr|underground}}的{{tr|Graveyard}}会生成{{tr|Ecto Mist}}，但不会生成独特{{tr|enemies}}。
+
+== 成就 ==
+{{achievement|name=Quiet Neighborhood}}
+
+== 小贴士 ==
+* 应当避免在游戏早期于基地/{{tr|spawn point}}处积累太多{{tr|Tombstones}}，因为{{tr|Graveyard}}中的{{tr|enemies}}生成量较大，包括较为强大的{{tr|Ghosts}}。
+** [[{{tr|Mediumcore}}]]{{tr|players}}来说尤其要注意这一点，因为在同一处积累太多{{tr|Tombstones}}，可能会导致陷入一种“循环”局面，因为很难在不受到攻击的情况下取回物品。
+* 建一处平坦、无{{tr|tree}}的{{tr|graveyard}}，是一个在早期刷取[[{{tr|Abigail's Flower}}]]的好方法，后者是一把强力的早期[[{{tr|summon}}|召唤武器]]。
+* 在诸如{{tr|arena}}等常见死亡地点放置一些[[{{tr|Sunflower}}]]可以帮助阻止{{tr|Graveyard}}形成，不需要持续地挖掉{{tr|Tombstones}}。另一种方法是在地面和{{tr|platform}}上挖出一个{{tr|tile}}宽的空隙，使得{{tr|Tombstones}}无法被放置。
+* 由于{{tr|Graveyard}}较高的生成率，用它来[[指南:赚钱|刷取{{tr|coins}}]]会很有用。
+* [[{{tr|Hardmode}}]]下，[[{{tr|Dryad}}]]会在[[{{tr|The Corruption}}|{{tr|Corrupt}}]]{{tr|world}}的{{tr|Graveyard biome}}中售卖[[{{tr|Crimson Seeds}}]]，在[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|world}}中售卖[[{{tr|Corrupt Seeds}}]]。这意味着可以在同一世界中拥有两种[[{{tr|evil biome}}]]，无需从其它世界带来物品。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** [[{{tr|Hoppin' Jack}}]]现在能在一年中任何时间在[[{{tr|Hardmode}}]]下的{{tr|Graveyard}}生成。
+** 形成{{tr|Graveyard}}所需的{{tr|Tombstones}}数量增加 1 个。
+** 加入了相关{{tr|achievement}}。}}
+{{history|Desktop 1.4.0.3|{{tr|Ecto Mist}}的云雾效果不再能通过关闭[[{{tr|Blood and Gore}}]]移除。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Switch 1.4.0.5.5|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.3 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{language info|en=Graveyard}}

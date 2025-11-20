@@ -1,0 +1,111 @@
+{{item infobox
+| type = Furniture/Mechanism
+| width = 3| height = 1
+| auto = 1263
+| tags = vendor/vendor:Mechanic/vendor:Steampunker
+}}
+[[File:Teleporter (demo).gif|framed|使用中的{{tr|A Teleporter}}。]]
+
+'''{{tr|Teleporter}}'''是一个旅行用[[{{tr|mechanism}}]]，可从 {{eicons|1.4.4}} [[{{tr|Mechanic}}]] / {{eicons|1.4.4|invert=y}} [[{{tr|Steampunker}}]] 处以 {{iteminfo|Teleporter|buy}} 的价格购买。当两个{{tr|Teleporter}}被[[{{tr|wire}}]]连接在同一个触发装置上时，启动触发装置可以瞬间交换两个{{tr|Teleporter}}上的{{tr|player}}、[[{{tr|NPC}}]]、和大多数[[{{tr|enemies}}]]。传送是瞬时的，没有等待时间和冷却时间，不需要消耗[[{{tr|Mana}}]]或[[{{tr|coin}}]]，也没有距离限制。
+
+与大多数[[{{tr|furniture}}]]不同，{{tr|Teleporter}}是[[{{tr|foreground object}}]]。它们是不可分割的3个[[{{tr|block}}]]，且像所有的{{tr|blocks}}一样，它们可以分别地被[[{{tr|hammer}}]]改变形状或者被[[{{tr|Actuator}}|致动]]。
+
+== 用法 ==
+要在两个{{tr|Teleporters}}间互相移动，它们必须放置{{tr|solid blocks}}或[[{{tr|platforms}}]]的表面，并且用{{tr|Wire}}互相连接，再接上诸如[[{{tr|Switch}}]]或[[{{tr|Pressure Plate}}]]之类的触发装置。当触发装置被激活时，在{{tr|Teleporter}}上方 3×3 格区域内的所有{{tr|players, NPCs}}、和大部分{{tr|enemies}}会被瞬间移动到另一个{{tr|Teleporter}}处。站在{{tr|Teleporter}}上方最多三格高位置的{{tr|character}}仍然能被传送，而将{{tr|Teleporter}}埋在两格深的位置也仍然能传送上方的玩家。类似地，将被致动的、锤击成半格高的{{tr|Teleporter}}放置在{{tr|platforms}}上，则站在{{tr|platforms}}下方一格的玩家也会被传送。实体在被传送时会保持他们在 3×3 区域中和{{tr|Teleporter}}的相对位置。例如，玩家站在{{tr|Teleporter}}上方两格处使用它后会到达目的地的{{tr|Teleporter}}的上方两格高处。参见[[#相对位置|下方图库]]获取示例图。
+
+传送总是双向的：当连接被激活时，只要是处于 3×3 区域内的{{tr|players, NPCs, and enemies}}都会在两端之间被''交换''。玩家在建造{{tr|Teleporter}}时应当记住这一点，例如{{tr|enemies}}可能会在无意中被带到玩家的基地。
+
+=== 限制 ===
+* 在{{eversions|1.3.1}}中，{{tr|wire}}长度或{{tr|Teleporters}}间的距离没有限制。 
+* 在{{eversions|1.3.1|invert=y}}中，实体能传送的距离有限。{{verify|范围大小？}}类似地，连接两个{{tr|Teleporters}}的{{tr|wires}}最多只能传输信号到 2000 格以外。
+* {{tr|Teleporter}}不会传送[[{{tr|Worm AI}}|{{tr|Worms}}]]、[[{{tr|Boss}}]]、其他能穿过{{tr|block}}的{{tr|enemies}}、[[{{tr|Critter}}]]、液体、掉落的{{tr|item}}、{{tr|projectiles}}（包括[[{{tr|pets}}]]和{{tr|light pets}}（即不会单独将{{tr|pet}}传送），以及[[{{tr|Boulder}}]]和{{eil|Rolling Cactus}}）、任何来自{{eil|Old One's Army}}的{{tr|enemy}}或放置的[[{{tr|furniture}}]]。
+* 如果{{tr|Teleporter}}被放置在[[{{tr|unsafe wall}}|不安全]]的[[{{tr|Lihzahrd Brick Wall}}]]前方，且[[{{tr|Plantera}}]]尚未被击败，它就不会工作。
+
+== 备注 ==
+[[File:Eight-pass Teleporter array.png|thumb|一种一对八的{{tr|Teleporter}}阵列，中心的{{tr|Teleporters}}用四种颜色的{{tr|wires}}连接到四个{{tr|Teleporters}}。]]
+
+* 单个{{tr|Teleporter}}可以被连接到多个目的地。如果只有一种颜色的{{tr|wires}}，{{tr|Teleporter}}两端各可以被接到一个地点，共两个可能地点（每个{{tr|wires}}都需要有属于其的触发装置）。如果使用全部四种颜色的{{tr|wire}}，{{tr|Teleporter}}的每端都各自能连接到四个地点，共八个可能地点（红色两个、蓝色两个、绿色两个、以及{{eicons|1.3.1}} 黄色两个）。
+** 在{{eversions|1.3.1|invert=y}}中，只有三种颜色的{{tr|wire}}，{{tr|Teleporter}}的每端各自能连接到三个地点，共六个不同地点（红色两个，蓝色两个，绿色两个）。
+** 如果使用不止一个{{tr|Teleporter}}，从一个位置可能前往的地点会变得更多。例如，七个{{tr|Teleporters}}共能连接到 36 个不同位置。见[[#图库|下方图库]]获取建造示例。
+* 组成{{tr|Teleporter}}的三个{{tr|block}}可以被[[{{tr|hammer}}]]改变形状。除了待传送和传送到的 3×3 区域中实体的位置和{{tr|Teleporter}}表面相关以外，这不会影响{{tr|Teleporter}}的功能。如果{{tr|Teleporter}}被锤击到半个{{tr|block}}高，这一区域就会向下移动半格（如果三个{{tr|blocks}}形状不同，传送高度由[[#决定目标传送机的算法|下述算法]]遇到的第一个{{tr|block}}决定。注意{{tr|pressure plates}}只能放置在完整的{{tr|block}}上。
+* 可以在{{tr|Teleporter}}上放置其他{{tr|blocks or furniture}}。它们不会被传送，且只要实体位于 3×3 的范围内，它们也不会阻挡上方的实体被传送。
+[[File:Wire length demo.gif|thumb|400px|由于{{tr|wire}}的长度，只有左侧和中间的{{tr|Teleporters}}会被激活。右侧的必定不被激活。]]
+* 如果三个或以上的{{tr|Teleporters}}被同一颜色的{{tr|wire}}连接，实体会被传送到距离最远的那个位置。这一距离由最直接的{{tr|wire}}的距离测量，而非物理上的距离（四处绕圈的{{tr|wire}}会比直接连接的{{tr|wire}}更长）。这一距离也是从触发装置（{{tr|Switch, Pressure Plate}}、等等）处开始计算的，而非待传送的实体的位置。如果有多个触发装置，某些{{tr|Teleporter}}的组合可能会导致传送失败。
+* {{eicons|1.3.0.1}} 传送时会松开所有[[{{tr|hooks}}]]。
+* 和大部分玩家移动的形式不同，{{tr|Teleporters}}是[[{{tr|server}}]]端的。这意味着它们在[[{{tr|Multiplayer}}]]{{tr|worlds}}中不是瞬间传送的。
+
+== 决定目标传送机的算法 ==
+当激活包含超过两个{{tr|Teleporters}}的（同一颜色）的{{tr|wire}}网络时，会用算法来决定哪一对{{tr|Teleporters}}会被激活。这一算法在 [[1.2.3]] 更新前较为朴素，此后则被改进过。下方会描述这两种版本。
+
+两种算法都具有{{wikipedia|deterministic|确定性}}（即其结果能提前预知），因此固定的接线布局必定会激活同一对{{tr|Teleporters}}。因此，接线布局经过设计可以将目的地指定到想要的{{tr|Teleporter}}上。
+
+=== 目前版本 ===
+* 从触发装置（如{{tr|Switch or Pressure Plate}}）所在的{{tr|tile}}开始，测量到每个{{tr|Teleporter}}的{{tr|wire}}的长度（使用的是{{wikipedia|Dijkstra's algorithm|戴克斯特拉算法}}的一个变种{{note|small=y|paren=y|译注：即算出两点间最短路径。参见[https://baike.baidu.com/item/%E8%BF%AA%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95 百度百科上的戴克斯特拉算法]}}）。
+* 距离起始点最近和最远（按总{{tr|wire}}长度判断）的{{tr|The Teleporter}}会被激活。所有其他{{tr|Teleporters}}都不会被激活，即使玩家站在这些{{tr|Teleporters}}处。
+* 当{{tr|wire}}长度正好相同时，则依次考虑{{tr|wire}}连接的方向（从最近到最远；第一个到最后一个）：下，上，右，左。
+* 这允许在同一根{{tr|wire}}上选择不同的目的地，通过使用各自具有不同的最远目的地的触发装置达成（这需要对{{tr|wire}}的精确计算）。
+
+=== 1.2.3 以前的版本 ===
+* 从触发装置所在的{{tr|tile}}开始，每次在{{tr|wire}}网络中探索一格；会优先向邻近的未探索的{{tr|wire}}移动，否则进行{{wikipedia|backtracking|回溯}}（换言之，进行的是{{wikipedia|depth-first search|深度优先搜索}} {{note|small=y|paren=y|译注：即优先选择一条路径走到头，而后再返回选择其他路径。参见[https://baike.baidu.com/item/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2 百度百科上的深度优先搜索]}}）。
+* 当附近有可探索的{{tr|wires}}时，会先探索左侧那格，而后则是右侧、上方、下方。
+* 记录在{{tr|wire}}网络中首次遇到某个{{tr|Teleporters}}的顺序（换言之，它们是按先序排序的）。
+* 这一顺序中的首个和最后一个{{tr|Teleporter}}会被激活。所有其他{{tr|Teleporters}}都不会被激活。
+
+== 小贴士 ==
+* 可以将[[{{tr|Pressure Plate}}]]直接放置在{{tr|Teleporter}}的上面，并用{{tr|wire}}连接，以作为触发装置，从而简单地走上{{tr|Teleporter}}就可激活它。
+* 如果{{tr|Pressure Plate}}被放置在起始{{tr|Teleporter}}的左侧/右侧，并在连接到的{{tr|Teleporter}}上放在相反位置，玩家就可以在两地点间走动，而不会（在传送后）立即触发目的地的{{tr|Pressure Plate}}。
+* {{tr|Teleporters}}在玩家乘坐[[{{tr|Minecart}}]]时也生效，使得互相断开（如绕开障碍）的轨道系统能被轻松连接上。上述的两点依然适用，但使用的是[[{{tr|Pressure Plate Track}}]]。
+* 可以用{{tr|Teleporters}}创造进入封闭基地的入口。如果使用{{tr|Pressure Plates}}，应当使用只能被玩家触发的那些，以此保证[[{{tr|enemies}}]]不会无意中激活它们并传送进来。
+* 用{{tr|Pressure Plate}}触发的{{tr|Teleporters}}在 [[{{tr|boss}}]] [[{{tr|arena}}]]中很有用，因为以此能立即传送到较远的位置进行躲避。玩家可以在发射[[{{tr|Ranged weapons}}|{{tr|ranged}}]]或[[{{tr|magic weapons}}]]时不断地在两点之间移动。
+* {{eicons|1.3.0.1}} 在[[{{tr|night}}]]传送到至少一个屏幕远的距离以外可以让没有进入其{{tr|house}}的 [[{{tr|NPCs}}]] 立即传送回去。
+* {{tr|Teleporters}}可以用来在半空中放置正常情况下下方需要地面的{{tr|furniture}}。将两个{{tr|Teleporters}}叠起来，将{{tr|furniture}}放置在上方的{{tr|Teleporter}}上，然后破坏下方的{{tr|Teleporter}}。下方的{{tr|Teleporter}}被破坏时会连带破坏上方的{{tr|Teleporter}}，但顶部的{{tr|furniture}}不会掉落。这对于建造美观的建筑作品时很有用，例如在{{tr|Pillar Statue}}上放置物品。注意在“漂浮”的{{tr|furniture}}相邻位置放置{{tr|block}}会将其破坏。
+** {{eicons|Echo Block}} 同样的“漂浮”效果可以用[[{{tr|Echo Block}}]]来合理地达成，后者可从[[{{tr|Graveyard}}]]中的[[{{tr|Cyborg}}]]处购买。
+
+== 花絮 ==
+* 激活{{tr|Teleporter}}时的 {{sound|[[Media:Item_6.wav|音效]]|Item_6.wav}} 和[[{{tr|Magic Mirrors}}]]使用的相同。
+
+== 图库 ==
+<gallery widths="200" heights="200">
+File:Teleporter-Multi-Choice-Basics.mp4|两分钟长的使用{{eil|Logic Gates}}创造基础四地点{{tr|Teleporter}}系统的视频指南。
+File:Teleporter-Multi-Choice-Overview.png|视频中的基础四地点{{tr|Teleporter}}系统
+File:28 different Teleporter destinations setup.png|使用 6 个{{tr|Teleporters}}前往 28 个不同地点。
+File:28 different Teleporter destinations setup (detailed).png|使用 5 个{{tr|Teleporters}}前往 28 个不同地点。其中一个未使用。
+File:36 different Teleporter destinations setup.png|使用 7 个{{tr|Teleporters}}前往 36 个不同地点。三个未使用。上方的两个{{tr|Teleporter}}被锤击到半格高。
+</gallery>
+
+=== 相对位置 ===
+下方图片展示了[[#用法|上方]]所述的{{tr|Teleporters}}的“保持相对位置”的性质.
+<gallery>
+File:Teleporter relative location (normal).png
+File:Teleporter relative location (left).png
+File:Teleporter relative locations (right).gif
+File:Teleporter relative location (above).png
+File:Teleporter relative location (below).png
+</gallery>
+
+== 另见 ==
+* [[指南:传送网络]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 不再产生闪烁的光。
+** 现在由[[{{tr|Mechanic}}]]出售，而非[[{{tr|Steampunker}}]]。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧外观为：[[File:Teleporter (placed) (old).gif]]}}
+{{history|Desktop 1.3.0.1|现在传送到同一屏幕内的位置时会平滑地移动屏幕，而非立即闪现到新位置。相距较远的{{tr|Teleporters}}仍然保持类似[[{{tr|Magic Mirror}}]]的闪现效果。}}
+{{history|Desktop 1.2.3|
+** 移除了{{tr|Teleporters}}间的距离限制。
+** 使用{{tr|Teleporter}}会松开所有[[{{tr|grappling hooks}}]]。
+** 修复了玩家摧毁上方有{{tr|chest}}的{{tr|Teleporter}}时产生的崩溃。}}
+{{history|Desktop 1.2.1.2|玩家不再能在击败[[{{tr|Plantera}}]]前传送进{{tr|Jungle Temple}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Wiring}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Teleporter}}

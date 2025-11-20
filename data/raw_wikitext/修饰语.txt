@@ -1,0 +1,428 @@
+{{redirect|Modifier|玩家所作的游戏增强功能|{{tr|Mods}}}}
+{{for|所有武器所能接收的可能{{tr|modifiers}}的完整列表|可能{{tr|modifiers}}列表}}
+{{tocright}}
+
+'''{{tr|Modifier}}'''，也称为'''{{tr|Prefix}}'''（不过，在某些语言中它会变成后缀），会对物品的属性施加永久性的改变。它会给物品的名字添加诸如“{{tr|Adept}}”、“{{tr|Godly}}”、或“{{tr|Broken}}”之类的前缀（例如“{{tr|Demonic}} [[{{tr|Minishark}}]]”）从而改变物品的名字（当在[[{{tr|hotbar}}]]中选定时以及在[[{{tr|tooltip}}]]中会显示）。全部 83 个{{tr|modifiers}}的完整列表见[[#通用|下文]]。将光标停留在[[{{tr|inventory}}]]栏位中带有{{tr|modifier}}的{{tr|item}}上将在{{tr|item}}的描述下方显示详细的改变信息。
+
+仅有功能性[[{{tr|accessories}}]]、不可堆叠的[[{{tr|weapons}}]]、和部分[[{{tr|tools}}]]能获得{{tr|modifiers}}。{{source code ref|v=1.4.4.9|method=Terraria.Item.CanHavePrefixes}}任何其他类型的{{tr|equipment}}（如[[{{tr|armor}}]]、[[{{tr|ammo}}]]）永远无法获得{{tr|modifiers}}。
+* {{tr|Accessory modifiers}}将会给玩家的某个属性给予奖励，比如[[{{tr|defense}}]]、[[{{tr|movement speed}}]]、或最大[[{{tr|Mana}}]]。只要{{tr|accessory}}被装备，{{tr|modifier}}就会生效。[[{{tr|Vanity Accessories}}]]、[[{{tr|Music Boxes}}]]、和[[{{tr|Guide Voodoo Doll}}]]/[[{{tr|Clothier Voodoo Doll}}]]无法获得{{tr|modifiers}}。{{source code ref|v=1.4.4.9|method=Terraria.Item.IsAPrefixableAccessory}}
+* {{tr|Weapon modifiers}}会更改该特定{{tr|weapon}}的属性，最多可以影响到五个属性。给定{{tr|modifier}}的效果可以是全为正面的、全为负面的、或相混合的。能伤害[[{{tr|enemies}}]]的[[{{tr|Tools}}]]（如[[{{tr|pickaxes}}]]和[[{{tr|hammers}}]]）也可能会拥有这些{{tr|modifiers}}。不会造成{{tr|damage}}的类{{tr|Weapon}}{{tr|items}}（如[[{{tr|Bug Net}}]]）和[[{{tr|consumable weapon}}]]（如[[{{tr|Shuriken}}]]）无法获得{{tr|modifiers}}。在{{eversions|1.4.4|invert=y|short=y}}中，[[{{tr|Bananarang}}]]和[[{{tr|Light Discs}}]]是可堆叠的，因而也无法获得{{tr|modifiers}}。
+
+大多数（但并非全部）{{tr|weapons}}和{{tr|accessories}}会在物品创生时会得到{{tr|a modifier}}。之后可以通过[[{{tr|Goblin Tinkerer}}]]的'''{{tr|Reforge}}'''功能添加或修改{{tr|Modifiers}}。
+
+== 初始{{tr|modifiers}} ==
+所有{{tr|weapons}}和{{tr|accessories}}都有最多 75%<!--Exactly 75% when giving random modifiers, but the "mercy" mechanic (see below) can remove the modifier-->{{source code ref|v=1.4.4.9|name=itemprefix|method=Terraria.Item.Prefix}}的几率在物品创建时得到一个随机{{tr|modifier}}：在[[{{tr|Chests}}|{{tr|Chest}}]]中自然生成时、[[{{tr|craft}}]]出来时、从[[{{tr|Grab bags}}|{{tr|grab bag}}]]（除了[[{{tr|Presents}}]]）中开出时、或掉落自被杀的[[{{tr|enemy}}]]时。[[{{tr|fishing}}]]生成的物品（例如[[{{tr|Rockfish}}]]或[[{{tr|Balloon Pufferfish}}]]）、打开{{tr|Presents}}得到的物品（例如[[{{tr|Candy Cane Sword}}]]）、和完成[[{{tr|Angler}}]]任务得到的物品（例如[[{{tr|Angler Earring}}]]）永远不会有初始{{tr|modifiers}}，但它们可以通过重铸得到{{tr|modifier}}。
+
+{{eicons|1.4.0.1}}购买自 {{tr|NPC}}的{{tr|Items}}永远不会有{{tr|modifiers}}，因为在 [[1.4.0.1]] 中引入了退款功能（在关闭菜单前可以全价将物品卖回去）。
+
+{{eicons|1.4.0.1|invert=y}}在 {{tr|NPC}} 的商店货架上看不到{{tr|modifiers}}，但购买商品时可能会带有（购买价格不受影响）。不过，玩家卖给 {{tr|NPC}} 的物品会保持其{{tr|modifier}}，如果在同一个交易会话中回购，则其{{tr|modifier}}不会改变。
+
+对于{{tr|weapon}}的初始{{tr|modifier}}，有一个减少惩罚几率的“仁慈”机制：<ref name="itemprefix"/>如果武器的初始{{tr|modifier}}在“坏”{{tr|modifiers}}列表中，则它有 {{chance|2/3}} 几率被消除，创建的物品将不带有{{tr|modifier}}。这会（通过消除坏{{tr|modifiers}}的方式）大大降低{{tr|item}}拥有{{tr|modifier}}的几率。对这个目的而言被视为“坏”的{{tr|modifier}}是：
+{{#af_pipeline:{{#af_list: 7 | 8 | 9 | 10 | 11 | 22 | 23 | 24 | 29 | 30 | 31 | 39 | 40 | 56 | 41 | 47 | 48 | 49 }} <!-- list of modifier IDs: directly from the source code -->
+| {{#af_map:{{{prev}}}|m|{{modifierNameFromId|{{{m}}}}}}}
+| {{#af_sort:{{{prev}}}}}
+| {{#af_template:comma|{{{prev}}}}}
+}}。
+注意有一些玩家通常不想获得的{{tr|modifiers}}''没有''被包括在这个“仁慈”列表中：
+{{#af_pipeline:{{#af_list: 13 | 32 | 50 | 58 }} <!-- Annoying, Shameful, Frenzying, Intense -->
+| {{#af_map:{{{prev}}}|m|{{modifierNameFromId|{{{m}}}}}}}
+| {{#af_sort:{{{prev}}}}}
+| {{#af_template:comma|{{{prev}}}}}
+}}。{{source code ref|v=1.4.4.9|field=Terraria.ID.PrefixID.Sets&#46;ReducedNaturalChance}}
+
+{{tr|Accessories}}没有任何“坏”的{{tr|modifiers}}，只有加成较少的。
+
+== {{tr|Reforging}} ==
+{{tr|Reforging}}是[[{{tr|Goblin Tinkerer}}]]所提供的服务，给物品施以新的随机{{tr|modifier}}，以换取[[{{tr|coins}}]]。它会给无{{tr|modifier}}的物品添加{{tr|modifier}}或者替换现有的{{tr|modifier}}。它绝不会让{{tr|item}}没有{{tr|modifier}}。所有符合条件的{{tr|modifiers}}拥有相同几率，没有初始{{tr|modifiers}}的“仁慈”过滤器。
+
+{{tr|The Goblin Tinkerer}}收费为该{{tr|item}}当前的购买[[{{tr|value}}|价格]]的三分之一，也就是其卖出价的 {{chance|5/3}} 倍，或者说是其{{tr|base value}}的 {{chance|1/3}}。[[{{tr|Discount Card}}]]及其升级物{{eil|Greedy Ring}}可以用来将{{tr|reforge}}的花费降低 20%。现有的{{tr|modifiers}}会影响{{tr|item}}的{{tr|value}}，因此拥有较差{{tr|modifiers}}的{{tr|item}}{{tr|reforge}}成本较低，而{{tr|reforging}}已经有很好的{{tr|modifier}}的{{tr|item}}则会更贵。{{eicons|Happiness}}该价格还会根据{{tr|Goblin Tinkerer}}当前的[[{{tr|NPCs|link=y}}#{{tr|Happiness}}|{{tr|happiness}}]]而改变。
+
+要使用{{tr|Reforging}}，可以与{{tr|Goblin Tinkerer}}交谈，并从选项中选择“{{gameText|LegacyInterface.19}}”，然后将要{{tr|reforge}}的物品放置在出现于{{tr|inventory}}下方的格子中。在列出的{{tr|cost}}下方有一个小的灰色{{tr|hammer}}[[File:Reforge.png]]，当点击时，即以所列价格{{tr|reforge}}此{{tr|item}}。
+
+在{{old-gen console version}}和{{Mobile version}}中，{{tr|items}}的{{tr|reforge}}是通过和{{tr|Goblin Tinkerer}}对话后点击{{tr|the reforge}}按钮完成的。这会弹出{{tr|inventory}}并高亮标记可以{{tr|reforge}}的{{tr|items}}（不能{{tr|reforge}}的会被阴影所隐藏）。将{{tr|cursor}}悬停在要{{tr|reforge}}的物品处然后按下{{tr|reforge}}键。
+
+== 备注 ==
+* {{tr|Modifiers}}可以提升或降低物品的[[{{tr|rarity}}]]最多两个{{tr|tiers}}。它们还能让物品的[[{{tr|value}}]]提高最多 210%（达到原价的三倍以上），或降低多达 69%（降低到原价的约三分之一）。
+** 对于{{tr|weapon modifiers}}，{{tr|the item value}}会乘以每项属性更改的平方（即 +10% {{tr|damage}}会将{{tr|value}}乘以 <math>1.1^2 = 1.21</math>，-10% 则会乘以 <math>0.9^2 = 0.81</math>）；{{tr|critical chance}}除外，其影响为其他属性的两倍（即 +2% {{tr|critical chance}}等同于 +4% 的另一项属性，会将{{tr|value}}乘以 <math>1.04^2 = 1.0816</math>）。
+** {{tr|Accessory modifiers}}和{{tr|weapon modifiers}}的运作方式类似，但修改方式类似于{{tr|critical chance}}：{{tr|max mana}}提升会乘以 0.75（即 +20 {{tr|max mana}}会将{{tr|value}}乘以 <math>1.15^2 = 1.3225</math>），任何其他属性均会乘以 5（即 +4% {{tr|melee speed}}会将{{tr|value}}乘以 <math>1.2^2 = 1.44</math>）。
+* 在游戏中的[[{{tr|tooltip}}]]内显示的百分比可能会根据物品的基准属性而有所不同，因为那些百分比是在取整之后才确定的。例如，{{tr|Murderous}}{{tr|modifier}}（{{modifierinfo|Murderous|damage}} 伤害）在[[{{tr|Handgun}}]]上会显示提升 {{percent|{{#expr:((({{iteminfo|Handgun|damage}}*(1+0.07) round 0 )/ {{iteminfo|Handgun|damage}}) round 2)-1}}}} 伤害，而在[[{{tr|Magic Missile}}]]上会显示提升 {{percent|{{#expr:((({{iteminfo|Magic Missile|damage}}*(1+0.07) round 0 )/ {{iteminfo|Magic Missile|damage}}) round 2)-1}}}}。
+** 物品属性总是会被取整至最近的整数。由于浮点数的精度问题，如果{{tr|modifier}}将会使得属性的小数部分为 .5，对于 0.9 倍和 1.15 倍的{{tr|modifiers}}（如 +10% {{tr|speed}}、+15% {{tr|damage}}）会向下取整，对于 0.85 倍和 1.1 倍的{{tr|modifiers}}会向上取整。<!-- You can see this with a Pew-matic Horn reforged to Unreal or some other +10% speed mod. 15 * 0.9 = 13.5; if it rounds to even, this would give 14, but due to floating point imprecision, this weapon actually has a use time of 13.4999996. -->
+* 制作中用到的物品的{{tr|modifiers}}不会影响到制作出来的物品。新制作出的物品被给予的{{tr|modifier}}都是彻底随机的。
+* 仅当{{tr|modifier}}影响到的所有属性在经过取整后对{{tr|weapon}}的属性产生了实际影响时，才能选中该{{tr|Modifiers}}。
+** 如果{{tr|weapons}}没有一种属性，该{{tr|weapons}}就无法获得会影响它的{{tr|modifiers}}。例如，只有{{tr|ranged weapons}}的{{tr|velocity}}能被修改，而只有{{tr|magic weapons}}和{{tr|summoning weapon}}的{{tr|mana cost}}能被修改。许多{{tr|melee weapons}}（如[[{{tr|flails}}]]或[[{{tr|yoyos}}]]）的{{tr|speed or size}}无法被修改。
+** 取整可能会导致属性改变被取整回 0，从而阻止{{tr|weapons}}获得影响这些属性的{{tr|modifiers}}。不造成[[{{tr|knockback}}]]的{{tr|Weapons}}无法获得影响{{tr|knockback}}的{{tr|modifiers}}，其他属性的数值过低的{{tr|weapons}}可获得的影响该属性的{{tr|modifiers}}会受限。例如，{{tr|base damage}}低于 10 的{{tr|Weapons}}无法获得{{tr|Nasty or Unpleasant}}，而[[{{tr|Chain Gun}}]]无法获得影响{{tr|speed}}低于 10 %的{{tr|modifiers}}。
+
+== {{tr|Accessory modifiers}} ==
+{{redirect|Hard}}
+{{redirect|{{tr|Lucky}}|{{tr|the buff}}|{{tr|Lucky (buff)}}|{{tr|the game mechanic}}|{{tr|Luck}}}}
+
+[[{{tr|Accessory}}]]{{tr|modifiers}}仅当{{tr|accessory}}装备到非{{tr|vanity}}栏位时才会激活。几乎所有{{tr|accessory item}}都可以{{tr|reforge}}，全部[[{{tr|Vanity Accessories}}]]、全部[[{{tr|Music Boxes}}]]、[[{{tr|Guide Voodoo Doll}}]]、和[[{{tr|Clothier Voodoo Doll}}]]除外。与[[{{tr|Weapons}}]]不同，{{tr|accessories}}只能得到有益{{tr|modifiers}}。{{tr|Accessories}}可以拥有以下 19 个{{tr|modifiers}}之一：
+
+{| class="terraria sortable lined align-center"
+! {{tr|Effect}} !! {{tr|Modifier}} !! 属性变化 !! {{tr|Tier}} !! {{tr|Value}}
+|-
+| rowspan=4 | [[{{tr|Defense}}]]
+{{/row0|change, tier, value|Hard|change=+1}}
+<tr>{{/row0|2=Guarding|change=+2}}</tr>
+<tr>{{/row0|2=Armored|change=+3}}</tr>
+<tr>{{/row0|2=Warding|change=+4}}</tr>
+|-
+| rowspan=2 | [[{{tr|Critical strike chance}}]]
+{{/row0|2=Precise|change=+2%}}
+<tr>{{/row0|2=Lucky|change=+4%}}</tr>
+|-
+| rowspan=4 | [[{{tr|Damage}}]]
+{{/row0|2=Jagged|change=+1%}}
+<tr>{{/row0|2=Spiked|change=+2%}}</tr>
+<tr>{{/row0|2=Angry|change=+3%}}</tr>
+<tr>{{/row0|2=Menacing|change=+4%}}</tr>
+|-
+| rowspan=4 | [[{{tr|Movement speed}}]]
+{{/row0|2=Brisk|change=+1%}}
+<tr>{{/row0|2=Fleeting|change=+2%}}</tr>
+<tr>{{/row0|2=Hasty2|change=+3%}}</tr>
+<tr>{{/row0|2=Quick2|change=+4%}}</tr>
+|-
+| rowspan=4 | [[{{tr|Melee speed}}]]
+{{/row0|2=Wild|change=+1%}}
+<tr>{{/row0|2=Rash|change=+2%}}</tr>
+<tr>{{/row0|2=Intrepid|change=+3%}}</tr>
+<tr>{{/row0|2=Violent|change=+4%}}</tr>
+|-
+| [[{{tr|Mana}}]]
+{{/row0|2=Arcane|change=+20}}
+|}
+
+所有{{tr|accessory modifiers}}的平均价值加成是 +27.75%。考虑到有 25% 物品初始时没有{{tr|modifier}}，平均值是 +20.81%。
+
+== {{tr|Weapon modifiers}} ==
+这些{{tr|modifiers}}仅在{{tr|weapon}}被使用时生效。没有击退值的{{tr|Weapons}}和{{tr|tools}}无法得到带有那些改变击退值的{{tr|modifiers}}；例如很多[[{{tr|guns}}]]（比如[[{{tr|Minishark}}]]）、{{eicons|1.4.4|invert=y}}[[{{tr|Drill}}]]、和[[{{tr|Magical Harp}}]]。
+
+{{eicons|1.4.4|invert=y}}可堆叠的{{tr|weapons}}[[{{tr|Light Disc}}]]和[[{{tr|Bananarang}}]]无法拥有{{tr|modifiers}}。
+
+=== 通用 ===
+{{redirect|{{tr|Damaged}}（Damaged）|{{tr|the game mechanic}}|{{tr|Damage}}}}
+
+[[{{tr|Flails}}]]、[[{{tr|Spears}}]]、{{eil|Yoyos}}、[[{{tr|Boomerangs}}]]、[[{{tr|Chainsaws}}]]、[[{{tr|Drills}}]]（包括[[{{tr|Drax}}]]）和[[{{tr|Chlorophyte Jackhammer}}]]只能拥有通用{{tr|prefixes}}，因为它们的速度无法改变。
+
+通用{{tr|modifiers}}也能在所有其他{{tr|weapon}}类型上出现。最好的通用{{tr|modifier}}是{{tr|Godly}}或{{tr|Demonic}}。这两个{{tr|modifiers}}只在{{tr|knockback}}上有差别，而这个属性在许多情况下都被认为是不太有用（甚至都不一定有益）。{{tr|knockback}}上的差别甚至都足以忽略不计，可以将{{tr|Godly}}和{{tr|Demonic}}视为相同的{{tr|modifier}}。
+
+{{eicons|1.4.4|invert=y}} 在{{tr|drills}}中，只有其中的一些能获得{{tr|Godly modifier}}，因为并不是所有{{tr|drills}}都有{{tr|knockback}}。对于所有的{{tr|drills}}，最佳的伤害增强{{tr|modifier}}是{{tr|Demonic}}，不过{{tr|drill}}不太可能在战斗中有多大用处。
+
+有 14 个通用{{tr|modifiers}}。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | 价值
+{{/table
+| damage, critical, knockback, tier, value
+| Keen, Superior, Forceful, Broken, Damaged, Shoddy, Hurtful, Strong, Unpleasant, Weak, Ruthless, Godly, Demonic, Zealous
+}}
+|}
+
+随机通用{{tr|accessory modifiers}}的平均价值加成是 +17.12%。考虑到有 25% 物品初始时没有{{tr|modifier}}以及负面{{tr|modifier}}的较低出现几率，平均值是 +19.05%。
+
+=== 公共 ===
+[[{{tr|Swords}}]]（包括[[{{tr|Shortsword}}]]）、可被修改[[{{tr|mining speed}}]]的[[{{tr|tools}}]]、和所有造成[[{{tr|ranged}}]]、[[{{tr|magic}}]]、或[[{{tr|Summon weapons}}|{{tr|summon}}]]{{tr|damage}}的{{tr|weapons}}都能拥有这些{{tr|modifiers}}。
+
+有 10 个公共{{tr|modifiers}}。
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Speed}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | 价值
+{{/table
+| damage, speed, critical, knockback, tier, value
+| Quick, Deadly2, Agile, Nimble, Murderous, Slow, Sluggish, Lazy, Annoying, Nasty
+}}
+|}
+
+所有通用和公共{{tr|modifiers}}一起的平均价值加成是 +14.75%。考虑到有 25% 物品初始时没有{{tr|modifier}}，那么平均值是 +11.06%。
+
+=== {{tr|Melee}} ===
+{{dablink|“大”和“小”重定向到此处。对于{{tr|world}}选项，参见[[{{tr|world size}}]]。}}
+{{redirect|{{tr|Light}}（Light）|能产生光的事物|{{tr|light sources}}}}
+{{redirect|{{tr|Legendary}}|同名的{{tr|world difficulty}}|{{tr|For the worthy}}#{{tr|Difficulty}}{{!}}{{tr|For the worthy}} § {{tr|Difficulty}}}}
+
+几乎所有挥舞过头顶的[[{{tr|melee weapons}}]]（[[{{tr|swords}}]]、[[{{tr|pickaxes}}]]、[[{{tr|hammers}}]]、[[{{tr|axes}}]]、和[[{{tr|hamaxes}}]]）以及[[{{tr|shortsword}}]]和{{eil|whips}}，都能{{tr|reforged}}为这些{{tr|modifiers}}（在公共和通用{{tr|modifiers}}外）。除了{{tr|shortswords}}（包括[[{{tr|Starlight}}]]）外，所有使用时并不挥舞的{{tr|melee weapons}}（诸如[[{{tr|spears}}]]、[[{{tr|flails}}]]、和{{eil|yoyos}}）则不能得到这些{{tr|modifiers}}。[[{{tr|Copper Axe}}]]和[[{{tr|Wooden Hammer}}]]可以得到这些{{tr|modifiers}}中不影响伤害的那些。[[{{tr|Terrarian}}]]无法得到任何{{tr|melee modifiers}}，但它可以得到一个特殊的提供不同属性的“{{tr|Legendary}}”{{tr|modifier}}。
+
+有 16 个{{tr|Melee modifiers}}。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Speed}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Size}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | {{tr|Value}}
+{{/table
+| damage, speed, critical, size, knockback, tier, value
+| Large, Massive, Dangerous, Savage, Sharp, Pointy, Tiny, Terrible, Small, Dull, Unhappy, Bulky, Shameful, Heavy, Light, Legendary
+}}
+|}
+
+算上通用和公共{{tr|modifiers}}，所有{{tr|melee modifiers}}的平均价值加成是 +13.13%。考虑到有 25% 物品初始时没有{{tr|modifier}}以及负面{{tr|modifier}}的较低出现几率，平均值是 +15.34%。
+
+=== 远程 ===
+几乎所有[[{{tr|ranged weapons}}]]都能{{tr|reforge}}为拥有以下{{tr|modifiers}}之一（在通用和公共{{tr|modifiers}}之外）。零{{tr|knockback}}的{{tr|Ranged weapons}}（诸如[[{{tr|Minishark}}]]或低级别的[[{{tr|bows}}]]）不能得到改变{{tr|knockback}}的{{tr|modifier}}，即使其{{tr|ammunition}}能造成{{tr|knockback}}也是如此。
+
+有 12 个{{tr|Ranged modifiers}}。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Speed}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Velocity}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | {{tr|Value}}
+{{/table
+| damage, speed, critical, velocity, knockback, tier, value
+| Sighted, Rapid, Hasty, Intimidating, Deadly, Staunch, Awful, Lethargic, Awkward, Powerful, Frenzying, Unreal
+}}
+|}
+
+算上通用和公共{{tr|modifiers}}，所有{{tr|ranged modifiers}}的平均价值加成是 +21.27%。考虑到有 25% 物品初始时没有{{tr|modifier}}，那么平均值是 +15.95%。
+
+=== {{tr|Magic}}和{{tr|summoning}} ===
+{{redirect|{{tr|Celestial}}}}
+几乎所有[[{{tr|magic weapons}}]]和[[{{tr|summon weapons}}]]（除了{{eil|whips}}）都能{{tr|reforge}}为拥有以下{{tr|modifiers}}之一（在通用和公共{{tr|modifiers}}之外）。零{{tr|knockback}}的{{tr|Magic}}或{{tr|summon weapons}}（诸如[[{{tr|Nimbus Rod}}]]或{{eil|Blade Staff}}）不能得到影响{{tr|knockback}}的{{tr|modifier}}。消耗 3 或者更少{{tr|mana}}的{{tr|Magic weapons}}无法得到降低{{tr|mana}}用量的{{tr|modifier}}。
+
+有 12 个{{tr|Magic modifiers}}。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Speed}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Mana Cost}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | {{tr|Value}}
+{{/table
+| damage, speed, critical, mana, knockback, tier, value
+| Mystic, Adept, Masterful, Inept, Ignorant, Deranged, Intense, Taboo, Celestial, Furious, Manic, Mythical
+}}
+|}
+
+算上通用和公共{{tr|modifiers}}，所有{{tr|magic modifiers}}的平均价值加成是 +20.20%。考虑到有 25% 物品初始时没有{{tr|modifier}}，那么平均值是 +15.15%。
+
+=== 完整列表 ===
+只有挥舞的{{tr|melee weapons}}和{{tr|shortswords}}可以被{{tr|modifier}}改变{{tr|size}}。只有{{tr|ranged weapons}}可以被{{tr|modifier}}改变{{tr|velocity}}。只有{{tr|magic and summon weapons}}可以被{{tr|modifier}}改变{{tr|mana}}{{tr|cost}}。某些{{tr|weapons}}的{{tr|speed, knockback, damage, or mana cost}}无法被改变。
+
+'''游戏内显示的值可能因为取整而有所不同。'''
+
+{| class="terraria lined sortable align-center"
+! {{tr|Modifier}} !! data-sort-type=number | {{tr|Damage}} !! data-sort-type=number | {{tr|Speed}} !! data-sort-type=number | {{tr|Critical strike chance}} !! data-sort-type=number | {{tr|Mana Cost}} !! data-sort-type=number | {{tr|Size}} !! data-sort-type=number | {{tr|Velocity}} !! data-sort-type=number | {{tr|Knockback}} !! data-sort-type=number | {{tr|Tier}} !! data-sort-type=number | {{tr|Value}}
+{{/table
+| damage, speed, critical, mana, size, velocity, knockback, tier, value
+| Large, Massive, Dangerous, Savage, Sharp, Pointy, Tiny, Terrible, Small, Dull, Unhappy, Bulky, Shameful, Heavy, Light, Sighted, Rapid, Hasty, Intimidating, Deadly, Staunch, Awful, Lethargic, Awkward, Powerful, Mystic, Adept, Masterful, Inept, Ignorant, Deranged, Intense, Taboo, Celestial, Furious, Keen, Superior, Forceful, Broken, Damaged, Shoddy, Quick, Deadly2, Agile, Nimble, Murderous, Slow, Sluggish, Lazy, Annoying, Nasty, Manic, Hurtful, Strong, Unpleasant, Weak, Ruthless, Frenzying, Godly, Demonic, Zealous, Legendary, Unreal, Mythical
+}}
+|}
+
+== 小贴士 ==
+{{dablink|关于每件武器或每种{{tr|weapon type}}的最佳可能{{tr|modifiers}}，参见[[#最佳{{tr|modifiers}}|下文]]。}}
+
+可以直截了当地（但有时会很贵）强制得到给定的{{tr|modifier}}，只要反复{{tr|reforging}}物品直到得到想要的{{tr|modifier}}。注意{{tr|Reforging}}是无“记忆”的：每次{{tr|reforge}}，得到该{{tr|item}}的任何一个可能{{tr|modifiers}}的机会都是均等的，包括它目前拥有的那一个。随意地猜测“需要多少次尝试”可能会产生误导，因为统计学是很棘手的：在实践中，最好考虑的是在任何给定时刻，需要尝试多少次才能有 50% 几率得到特定{{tr|modifier}}：
+
+* 对于只有 14 个通用{{tr|modifiers}}的{{tr|weapons}}是 10 次
+* 对于有 19 个{{tr|modifiers}}的{{tr|Accessories}}是 13 次
+* 对于还能得到公共{{tr|modifiers}}（总共 24 个{{tr|modifiers}}）的{{tr|weapons}}是 16 次
+* 对于有{{tr|Magic}}或{{tr|Ranged}}{{tr|modifiers}}（总共 36 个{{tr|modifiers}}）的{{tr|weapons}}是 25 次
+* 对于有{{tr|Melee}}{{tr|modifiers}}（总共 40 个{{tr|modifiers}}）的{{tr|weapons}}是 28 次
+
+愿意接受多个{{tr|modifier}}能大大加快速度。例如，如果玩家能接受{{tr|Lucky}}或{{tr|Menacing}}{{tr|modifier}}来强化进攻，那么相比于专门将{{tr|accessory}}{{tr|reforge}}为{{tr|Menacing}}，所需的时间将减半。类似地，如果对于{{tr|melee weapon}}有三个不同的{{tr|modifiers}}可接受，那么只要 10 次尝试就有 50% 几率得到其中之一。通常认为“足够好”的{{tr|Weapon modifiers}}有{{tr|Godly}}、{{tr|Demonic}}、{{tr|Ruthless}}、{{tr|Deadly}}、{{tr|Light}}、{{tr|Rapid}}、和{{tr|Masterful}}。
+
+不管之前已经做过多少次尝试，以上这些都适用。上面的这些数字并未考虑对于单个{{tr|weapons}}无法具有的{{tr|modifiers}}，但若考虑的话只会让进程加快。<!-- For the curious: log(0.5)÷log(1−(1÷N)), rounded up, where N is the number of modifiers. The 1−(1÷N) part is the chance that a "success" *will not* happen for each try. -->
+
+技术上说，如果一次就将{{tr|weapon}}由坏{{tr|modifier}}{{tr|reforge}}为好{{tr|modifier}}是可以获利的，但一般情况下，{{tr|reforging}}平均来说是会导致金钱损失的。
+
+当启用{{tr|autopause}}时，在取消暂停之前，{{tr|reforge}}的名字不会显示在玩家头上。但是，可以通过查看{{tr|reforge cost}}来了解{{tr|the modifier}}的价值，这可能能加快进程。只在{{tr|reforge cost}}贵到足以表明可能是好的{{tr|modifier}}时才查看{{tr|the modifier}}是个好主意。 
+
+例如，如果[[{{tr|Avenger Emblem}}]]是{{tr|Menacing}}、{{tr|Lucky}}、{{tr|Quick}}、{{tr|Violent}}、或{{tr|Warding}}，通常需要花费 {{coin|14gc 40sc}} {{tr|reforge}}。如果瞄准的这些{{tr|modifiers}}之一，则可以直接跳过{{tr|cost}}更低的{{tr|reforges}}，仅当显示的{{tr|cost}}是 {{coin|14gc 40sc}} 才检查。
+
+类似地，如果将{{tr|a sword}}{{tr|reforge}}为{{tr|Legendary}}，最好在脑中记住当{{tr|the weapon}}是{{tr|Godly}}/{{tr|Superior}}/{{tr|Demonic}}时的{{tr|reforge}}{{tr|costs}}，只在{{tr|cost}}超过此数量时才停止{{tr|reforge}}。
+
+== 最佳{{tr|Modifiers}} ==
+=== 武器 ===
+由于某些{{tr|weapon}}类别有各种限制，确定最佳可能{{tr|modifiers}}可能并不像对比属性那么简单，并且玩家有可能会将金钱浪费在试图为他们的{{tr|weapon}}获取这个{{tr|weapon}}所不可能达成的{{tr|modifiers}}。以下是大多数情况下每种{{tr|weapon}}或{{tr|weapon}}类型的最理想的可能{{tr|Modifiers}}的简单说明：
+
+{| class="terraria sortable lined align-center"
+! 类别 !! {{tr|Modifier}} !! {{tr|Damage}} !! {{tr|Speed}} !! {{tr|Critical Strike Chance}} !! {{tr|Mana Cost}} !! {{tr|Size}} !! {{tr|Velocity}} !! {{tr|Knockback}} !! {{tr|Tier}} !! {{tr|Value}}
+|-
+| align=left | 不是从头顶挥过去的[[{{tr|Melee weapons}}]] {{note|block=y|paren=y|{{eicons|1.4.0.1}} {{tr|shortswords}}和{{tr|the Terrarian}}除外}}
+{{/row0|damage, speed, critical, mana, size, velocity, knockback, tier, value|Godly}}
+|-
+| align=left | {{eil|Whips}}和所有{{tr|other melee weapons}}
+{{/row0|2=Legendary}}
+|-
+| align=left | [[{{tr|Tools}}]] {{note|paren=y|诸如{{tr|pickaxes}}、{{tr|axes}}、或{{tr|hammers}}}}
+{{/row0|2=Light}}
+|-
+| align=left | 没有{{tr|knockback}}的[[{{tr|Ranged}}]]和[[{{tr|magic weapons}}]]
+{{/row0|2=Demonic}}
+|-
+| align=left | 所有其他{{tr|ranged weapons}}
+{{/row0|2=Unreal}}
+|-
+| align=left | 所有其他{{tr|magic weapons}}
+{{/row0|2=Mythical}}
+|-
+| align=left | 所有其他[[{{tr|summon weapons}}]]
+{{/row0|2=Ruthless}}
+|}
+
+整体上最好的{{tr|melee modifier}}是{{tr|Legendary}}，但它只适用于{{tr|broadswords}}和[[{{tr|shortswords}}]]。对于所有{{tr|other melee weapons}}（诸如[[{{tr|spears}}]]、[[{{tr|flails}}]]、{{eil|yoyos}}、和[[{{tr|Scourge of the Corruptor}}]]之类的独特{{tr|melee weapons}}），最佳{{tr|modifier}}是{{tr|Godly}}或{{tr|Demonic}}。[[{{tr|Terrarian}}]]可以得到一个它独享的特殊版{{tr|Legendary modifier}}。
+
+整体上最好的{{tr|ranged modifier}}是{{tr|Unreal}}。对于没有基础{{tr|knockback}}的{{tr|ranged weapons}}（诸如[[{{tr|Minishark}}]]或低级别的[[{{tr|bows}}]]），最佳{{tr|modifier}}是{{tr|Demonic}}或{{tr|Deadly}}虽然[[{{tr|Harpoon}}]]亦归类为{{tr|ranged weapon}}，但它并不能得到{{tr|Unreal}}{{tr|modifier}}；其最佳{{tr|modifier}}是{{tr|Godly}}。[[{{tr|Chain Gun}}]]发射得太快，所以不能得到任何提高速度在 10% 或以下的{{tr|modifier}}。因此，其最佳{{tr|modifier}}是{{tr|Rapid}}，而{{tr|Godly}}和{{tr|Demonic}}则是更具{{tr|ammo}}效率的备选项。
+
+整体上最好的{{tr|magic modifier}}是{{tr|Mythical}}。对于无法造成{{tr|knockback}}的{{tr|magic weapons}}（如[[{{tr|Nimbus Rod}}]]），最佳{{tr|modifier}}是{{tr|Demonic}}。如果玩家的最大{{tr|mana}}较低，则{{tr|Masterful}}可能比{{tr|Mythical}}更好、{{tr|Mystic}}可能比{{tr|Demonic}}更好。一些{{tr|magic weapons}}，比如[[{{tr|Clinger Staff}}]]、[[{{tr|Magnet Sphere}}]]、和[[{{tr|Rainbow Gun}}]]，可以制造出在切换武器后依然有效的长效{{tr|projectile}}。这些武器的{{tr|critical strike chance}}是基于当前手持的{{tr|magic weapon}}计算的，意味着{{tr|base damage}}是唯一重要的属性，因此它们的最佳{{tr|modifier}}是{{tr|Ruthless}}。
+
+整体上最好的{{tr|summon modifier}}是{{tr|Ruthless}}。{{tr|Mythical}}所提供的{{tr|mana cost}}降低、速度提升、{{tr|critical strike chance}}提升、和{{tr|knockback}}提升没那么有用：{{tr|Summon weapons}}仅在一开始召唤时适用{{tr|mana}}，{{tr|minions}}无法造成{{tr|critical hits}}，并且即使加上{{tr|modifiers}}它们的{{tr|knockback}}也可以忽略不计。{{tr|Ruthless}}{{tr|modifier}}通过提高{{tr|Minion}}的每击伤害来提供最有效的{{tr|Minion boost}}。对{{tr|whips}}而言，最佳{{tr|modifier}}是{{tr|Legendary}}。
+
+对于采矿和资源收集的目的，诸如{{tr|pickaxes}}、{{tr|hammers}}、和{{tr|axes}}等{{tr|tools}}的最佳{{tr|modifier}}是{{tr|Light}}。注意对于很多{{tr|tools}}而言，由于{{tr|tool speed}}会被向下取整为整数（且{{tr|tool speeds}}常常会比挥舞速度低得多），因而{{tr|the Legendary modifier}}和{{tr|Light}}提供相同的{{tr|tool speed}}提升。严格来讲{{tr|The Legendary modifier}}在这些情况下会更好，因为它相比于{{tr|Light modifier}}还提供了对{{tr|damage, critical strike chance, size, and knockback}}的提升，不过考虑到{{tr|mining tools}}很少用于战斗，这方面的区别基本可以忽略不计。
+
+==== 使用{{tr|Lucky Coin}} ====
+如果装备了[[{{tr|Lucky Coin}}]]或任意其升级物，那么应当尽可能多击打{{tr|enemies}}，造成尽可能低的伤害，以最大化收入。以下{{tr|modifiers}}对{{tr|weapon damage}}降低得最多，能够让每个{{tr|enemy}}生成更多{{tr|coin}}：
+
+{| class="terraria sortable lined align-center"
+! {{tr|Damage type}} !! {{tr|Modifier}} !! {{tr|Damage}} !! {{tr|Speed}} !! {{tr|Mana cost}} !! {{tr|Knockback}} !! {{tr|Tier}} !! {{tr|Value}}
+|-
+| align=left | {{tr|Melee}}
+{{/row0|damage, speed, mana, knockback, tier, value|Damaged}}
+|-
+| align=left | {{tr|Ranged}}
+{{/row0|2=Frenzying}}
+|-
+| align=left | {{tr|Magic}}
+{{/row0|2=Manic}}
+|-
+| align=left | {{tr|Summon}}
+{{/row0|2=Broken}}
+|}
+
+=== 配饰 ===
+{| class="terraria sortable lined align-center"
+! {{tr|Effect}} !! {{tr|Modifier}} !! 属性变化 !! {{tr|Tier}} !! {{tr|Value}}
+|-
+| align=left | [[{{tr|Defense}}]]
+{{/row0|change, tier, value|Warding|change=+4}}
+|-
+| align=left | [[{{tr|Mana}}]]
+{{/row0|2=Arcane|change=+20}}
+|-
+| align=left | [[{{tr|Critical strike chance}}]]
+{{/row0|2=Lucky|change=+4%}}
+|-
+| align=left | [[{{tr|Damage}}]]
+{{/row0|2=Menacing|change=+4%}}
+|-
+| align=left | [[{{tr|Movement speed}}]]
+{{/row0|2=Quick2|change=+4%}}
+|-
+| align=left | [[{{tr|Melee speed}}]]
+{{/row0|2=Violent|change=+4%}}
+|}
+
+{{tr|Menacing, Lucky, and Warding}}通常被认为是各情况下最有用的{{tr|accessory modifiers}}。 
+
+* {{tr|Quick}}通常太弱了，不太有用。完全使用{{tr|Quick}}的一套{{tr|accessories}}提供的{{tr|speed boost}}仍然低于[[{{tr|Plenty Satisfied}}]]，且尽管它确实会提高加速度，[[{{tr|Hermes Boots}}]]、[[{{tr|Wings}}]]、[[{{tr|Mounts}}]]、和[[{{tr|Minecarts}}]]具有的最高速度均不受{{tr|Quick}}影响。
+** 没有{{tr|Hermes Boots}}时的{{tr|movement speed}}上限仍然会改善玩家达到{{tr|sprint speed}}前获得最大加速度的时间，并改善空中的最高速度。不过，{{tr|accessory}}{{tr|reforges}}有更好的使用方式。
+* {{tr|Violent}}对于{{tr|whips}}和特定{{tr|melee weapons}}（如[[{{tr|Terra Blade}}]]）是有用的{{tr|modifier}}，但大多数发射{{tr|projectile}}的{{tr|melee weapons}}实际上在具有更高的{{tr|melee speed}}时并不会以更快的频率攻击。由于[[{{tr|melee speed}}]]计算的处理方式，{{tr|Violent}}常常会要么影响极大，要么完全没有效果，两者之间的情况很少，且需要提前进行计算来了解{{tr|Violent}}何时有效果、效果有多强。
+* {{tr|Arcane}}可以帮助早期的{{tr|magic}}使用者应对低{{tr|maximum mana}}，但一旦玩家有足够{{tr|mana}}来获得当前使用的[[{{tr|Recovery potions}}|{{tr|mana potion}}]]的完整回复，{{tr|the modifier}}就只能提供可忽略不计的不攻击时的{{tr|mana}}再生速度。
+
+对于下方信息的简短总结如下：
+* {{tr|Warding}}在大多数情景下是最佳{{tr|modifier}}。它在[[{{tr|pre-Hardmode}}]]和高{{tr|defense}}配装中比{{tr|damage modifiers}}好许多。
+** 总体上，使用带有{{tr|Warding}}的进攻性{{tr|accessories}}比使用{{tr|Menacing or Lucky}}的防御性{{tr|accessories}}更好。
+** {{tr|Warding}}在玩家计算{{tr|defense}}后仍会受到上百伤害的场合不再重要，常见于[[{{tr|Duke Fishron}}]]和{{tr|daytime}}的[[{{tr|Empress of Light}}]]。
+* {{tr|Menacing and Lucky}}在净伤害是胜利的主要因素或死亡风险没有或很小的场合下会更加强力。
+** 在[[{{tr|Old One's Army}}]]中更倾向于使用{{tr|Menacing}}来提高{{tr|sentry damage}}。
+** 在[[{{tr|multiplayer}}]]游戏中若有人已经在当承伤位置，只要他仍然存活，其他玩家就可以专注打伤害而无需关注死亡的风险。
+* 在下列情况下，{{tr|Menacing}}要优于{{tr|Lucky}}：
+** 无法{{tr|critical strike}}的{{tr|Summon damage}}占据玩家的 {{DPS}} 的大部分。
+** 玩家使用低{{tr|base damage}}的{{tr|weapon}}，和/或{{tr|enemy}}具有高{{tr|defense}}。
+* 在下列情况下，{{tr|Lucky}}要优于{{tr|Menacing}}：
+** 玩家有非常高的{{tr|damage bonuses}}，但{{tr|critical chance bonuses}}较低（如进攻型的[[{{tr|Beetle armor}}]]）。
+** 玩家使用的是进攻性的[[{{tr|Spectre armor}}]]，其{{tr|set bonus}}平均总是造成 400 {{DPS}}，但能够造成{{tr|critical strike}}。
+
+为了提高{{DPS}}而在{{tr|Menacing}}（{{tr|damage}}）和{{tr|Lucky}}（{{tr|critical chance}}）间选择长久以来是玩家间激烈争论的主题。从数学上来说，将{{tr|damage and critical strike chance}}持平能带来最高的理论{{DPS}}：
+
+* 在具有多个相同{{tr|modifier}}时，{{tr|Menacing and Lucky}}都只是简单地将其{{tr|bonuses}}加算，但它们两者的效果是互相乘算的。
+** 仅靠五个{{tr|Menacing accessories}}可将{{DPS}}增加 1.20 × 1.04 = 24.8%。
+** 仅靠五个{{tr|Lucky accessories}}可将{{DPS}}增加 1.00 × 1.24 = 24%。
+** 三个{{tr|Menacing}}和两个{{tr|Lucky accessories}}可将{{DPS}}增加 1.12 × 1.12 = 25.44%。
+
+* 不过，以上逻辑并未考虑{{tr|enemy defense}}：
+** 对于具有非零{{tr|defense}}的{{tr|enemies}}，{{tr|damage bonuses}}会更强，因为它们能够降低由于{{tr|enemy defense}}而损失的伤害量。这意味着最佳{{DPS}}可通过增加足够多的{{tr|damage bonuses}}来抵消{{tr|enemy defense}}，然后将剩余的{{tr|bonuses}}平分给{{tr|damage and crit chance}}的方式达成。
+** 对于具有极高的{{tr|defense}}的{{tr|enemies}}，如[[{{tr|Dungeon Guardian}}]]，所有伤害都会被降低至 1，若是{{tr|critical hits}}则是 2 伤害，因此增加{{tr|crit chance}}是唯一的提高{{DPS}}的方法。
+
+若考虑以上的这些因素，在{{tr|Menacing and Lucky}}之间，对应玩家当前较低的那项属性的那个{{tr|modifier}}，同时还考虑到来自{{tr|accessories, armor, buffs}}的属性，以及{{tr|enemy}}的{{tr|defense}}带来的{{tr|damage reduction}}（可将其视为{{tr|weapon}}在计入其{{tr|modifiers}}后的{{tr|base damage}}的百分比）的{{tr|modifier}}才是最好的{{tr|modifier}}
+
+示例
+* {{tr|melee}}玩家，使用攻击型的[[{{tr|Beetle armor}}]]、[[{{tr|Fire Gauntlet}}]]、和[[{{tr|Warrior Emblem}}]]，使用{{tr|Legendary}}[[{{tr|Terra Blade}}]]，将具有 +71% {{tr|damage}}和 17% {{tr|crit chance}}。如果他和[[{{tr|Empress of Light}}]]战斗，其 50 {{tr|defense}}将使得等效的{{tr|bonuses}}降低 25 ÷ (85 × 1.15) = 25.6%，结果为 +45.4% {{tr|damage}}和 17% {{tr|crit chance}}。由于{{tr|damage bonuses}}远大于{{tr|crit bonuses}}，玩家应当使用{{tr|Lucky modifiers}}而非{{tr|Menacing}}。
+* {{tr|magic}}玩家，使用治疗型的[[{{tr|Spectre armor}}]]、[[{{tr|Celestial Emblem}}]]、和[[{{tr|Magic Power Potion}}]]，使用{{tr|Mythical}}[[{{tr|Razorblade Typhoon}}]]，将具有 +10% {{tr|damage}}和 17% {{tr|crit chance}}。如果他和[[{{tr|Empress of Light}}]]战斗，其 50 {{tr|defense}}将使得等效的{{tr|bonuses}}降低 25 ÷ (85 × 1.15) = 25.6%，结果为 -15.6% {{tr|damage}}和 +17% {{tr|crit chance}}。由于{{tr|crit bonuses}}远大于{{tr|damage bonuses}}，玩家应当使用{{tr|Menacing modifiers}}而非{{tr|Lucky}}。
+
+虽然没有能够在所有情境下提供最优的{{DPS}}的{{tr|Menacing and Lucky}}组合，通常玩家使用攻击型套装时最终的{{tr|damage bonuses}}都会显著高于{{tr|crit bonuses}}，这有可能抵消{{tr|enemies}}所具有的{{tr|defense}}的作用。大部分{{tr|melee, ranged, and magic}}的配装从两种{{tr|modifiers}}中的受益大致相等。不过，全部使用{{tr|Menacing}}对于纯{{tr|summoners}}和混合{{tr|summoners}}都是更优的选择，因为{{tr|summoning weapons}}不受{{tr|crit bonuses}}影响。出于同一原因，在玩家和[[{{tr|Old One's Army}}]]战斗时也推荐使用全{{tr|Menacing}}配置，因为总{{DPS}}中的大部分都来自于{{tr|sentries}}。
+
+{{tr|Menacing}}/{{tr|Lucky}}相比于{{tr|Warding}}的价值则无法那么直观地计算。前两种{{tr|modifier}}直接导致战斗能更快结束，而{{tr|Warding}}则导致玩家更慢死亡，或者最终达到玩家恢复的{{tr|health}}比失去的更多的状态。由于{{tr|defense}}会直接地降低遭受的{{tr|damage}}，每一点{{tr|defense}}都会等比地使玩家已有的{{tr|defense}}变得更强。玩家的自然{{tr|Health regeneration}}也可以视作等同于根据玩家保持存活的时间加长而增加的额外{{tr|health}}，这会使得{{tr|Health regeneration}}在防御型配装中要比其在进攻型配装中更加有价值。除开{{tr|enemies}}每击都造成高得离谱的伤害的场合（如 {{eil|get fixed boi}} {{tr|seed}}中），相较于进攻型的配装，防御型的配装总体上能够让 {{tr|boss}} 战变得更简单，因为使得所受伤害减半要比使得造成的伤害加倍更加容易一些。
+
+从经验上来说，如果所受的伤害能够被降低到每击 50 / {{expert|75}} / {{master|100}} 或更低，每一点额外的{{tr|defense}}要比提高 1% {{DPS}} 更有价值。
+
+例如，假设玩家有 100 点可用于{{tr|damage, critical chance, and defense bonus}}的组合之中，且他正在和一个假设有 0 {{tr|defense}}和 60 / {{expert|120}} / {{master|180}} {{tr|damage}}的{{tr|enemy}}战斗，全输出的配置和全{{tr|defense}}的配置根据{{tr|difficulty}}的有效性如下：
+
+* 无论{{tr|world difficulty}}，具有 50% {{tr|damage}}、50% {{tr|critical chance}}、和 0 {{tr|defense}}的最佳的输出配置杀死{{tr|enemy}}的速度是正常情况的 2.25 倍。
+* 0% {{tr|damage}}、0% {{tr|critical chance}}、和 100 {{tr|defense}}的最佳防御配置的生存时间是正常情况下的 6 / {{expert|2.67}} / {{master|2.25}} 倍。
+* 任何其他的属性组合最终的生存时间和击杀用时之比都要比防御配置的要更低（但在较低的{{tr|difficulties}}下可能比输出配置的更高）。
+
+在这种情况下，纯防御配置在除了{{tr|Master}}以外的所有{{tr|difficulties}}下都是较优的，这些情况下它们和输出配置持平。如果有更多属性可分配，或{{tr|enemy}}造成的伤害更低，则防御配置会变得更加有效。虽然属性分配显然不会如此简单，但应当考虑下述规则：当玩家具有很多属性可分配时，将这些属性分配到防御中（其收益是递增的）常常比将这些属性分配到{{tr|damage or critical chance}}中（其收益是递减的）要受益更多。
+
+不过，这基于{{tr|defense and damage}}/{{tr|critical chance}}在数值上是等同的假设，{{tr|modifiers}}似乎暗示了这一点，但实际上不是这样。相较于{{tr|damage}}/{{tr|critical chance}}，{{tr|Defense}}更加难以从{{tr|accessories}}中获取，因为提高{{tr|Defense}}的{{tr|accessories}}更少、其给予的属性也更低。仅有 9 个{{tr|accessories}}本身提供的{{tr|defense}}等同于或高于{{tr|Warding modifier}}的 +4 {{tr|defense}}，它们均为[[{{tr|Hardmode}}]]独有，且都需要刷些怪才能获得或专属于[[{{tr|Crimson}}]]{{tr|worlds}}：
+* 4 {{tr|defense}}：
+** [[{{tr|Ankh Shield}}]]，其拥有[[指南:制作{{tr|Ankh Shield}}|长而复杂的{{tr|crafting tree}}]]
+** [[{{tr|Moon Stone}}]]和[[{{tr|Sun Stone}}]]，分别仅适用于{{tr|night and day}}，且{{tr|Sun Stone}}需要杀死[[{{tr|Golem}}]]才能获得。
+** {{tr|daytime}}的[[{{tr|Celestial Shell}}]]；在{{tr|nighttime}}会提高至 7 {{tr|defense}}，也是{{tr|Golem}}后的
+* 6 {{tr|defense}}：
+** [[{{tr|Paladin Shield}}]]和[[{{tr|Frozen Shield}}]]，均是[[{{tr|Plantera}}]]后的
+* 8+ {{tr|defense}}：
+** [[{{tr|Flesh Knuckles}}]]及其升级物[[{{tr|Berserker's Glove}}]]，{{tr|Crimson worlds}}独有
+** [[{{tr|Hero Shield}}]]，仍然需要{{tr|Flesh Knuckles}}
+另一方面，提高{{tr|damage}}/{{tr|critical chance}}的{{tr|accessories}}要多得多，且单个就能提供等同于数个带{{tr|modifiers}}的{{tr|accessories}}的属性：一件进攻性{{tr|accessory}}提供的额外{{tr|damage, critical chance, or melee speed}}组合起来至少有 10%，至少等同于 2.5 个{{tr|Menacing}}/{{tr|Lucky modifiers}}，这还是在考虑玩家的最终{{tr|damage, critical chance}}、和（若适用）{{tr|melee speed}}互相乘起来提供的 {{DPS}} 提高之前。 
+
+因此，如果玩家想要用{{tr|accessory slots}}获得最高的总属性提升，按照单个栏位计算，使用{{tr|Warding modifiers}}（尤其是在进攻性{{tr|accessories}}上）要比在防御性{{tr|accessories}}上使用{{tr|Menacing modifiers}}更加有效。需要 5 个{{tr|Menacing or Lucky}}{{tr|modifiers}}才能与[[{{tr|Sniper Scope}}]]或[[{{tr|Recon Scope}}]]的提升相匹配（这两件{{tr|accessory}}分别提供的进攻性{{tr|bonus}}是{{tr|accessory}}中最高的且可以互相叠加），但仅需要两个半{{tr|Warding modifiers}}就能匹配{{tr|Hero Shield}}的{{tr|defense bonus}}。虽然相较于使用进攻性{{tr|reforges}}可能会略微降低纸面 {{DPS}}，{{tr|Warding reforges}}实际上可以通过让玩家更加专注于攻击而非躲避、无需那么小心地游玩来避免[[{{tr|death}}]]从而提高实际 {{DPS}}。在[[{{tr|Multiplayer}}]]中，来自{{tr|Warding}}的额外{{tr|defense}}搭配上提高[[{{tr|aggro}}]]的效果能让 {{tr|boss}} 远离其他玩家从而使他们能专注攻击而非躲避，也能让 {{tr|boss}} 的位置保持原地以简化瞄准、让攻击更容易命中，从而帮助其他玩家打出输出。
+
+== 花絮 ==
+* 有多个具有相同名称的{{tr|modifiers}}：
+** 两个{{tr|modifiers}}叫做“{{tr|Quick}}”，其中一个是提供 +4% {{tr|movement speed}}的{{tr|accessory modifier}}，另一个是提供 +10% {{tr|speed}}的公共{{tr|weapons modifier}}。
+** 两个{{tr|modifier}}叫做“{{tr|Deadly}}”，其中一个是提供 +10% {{tr|Damage}}和{{tr|Speed}}的公共{{tr|weapons}}{{tr|modifier}}，另一个是提供 +10% {{tr|Damage}}，+2% {{tr|Critical Strike Chance}}，+5% {{tr|Speed}}、{{tr|Velocity}}、和{{tr|Knockback}}的{{tr|ranged weapons}}{{tr|modifier}}。
+** 两个{{tr|modifiers}}叫做“{{tr|Hasty}}”，其中一个是提供 +3% {{tr|movement speed}}的{{tr|accessory modifier}}，另一个是提供 +10% {{tr|speed}}和 +15% {{tr|velocity}}的{{tr|ranged weapons modifier}}。
+* 有两个通用{{tr|modifiers}}有相同的效果但名字不同：{{tr|Forceful}}和{{tr|Strong}}。
+
+== 另见 ==
+* [[{{tr|Prefix IDs}}|{{tr|Modifier IDs}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了一个内部检查，会在{{tr|item}}无法获得其当前{{tr|modifier}}时从{{tr|item}}上移除{{tr|modifiers}}。{{source code ref|old=y|v=1.4.4|method=Terraria.Item.FixAgainstExploit}}}}
+{{history|Desktop 1.4.0.5|修复了[[{{tr|ranged weapons}}]]能得到两种不同的{{tr|Deadly modifiers}}的 {{tr|bug}}。}}
+{{history|Desktop 1.4.0.1|调整了确定带{{tr|modifier}}物品的价值变更的算法：现在只考虑对{{tr|critical strike chance}}的变更量，而非变更后的整体{{tr|critical strike}}值。总体而言，这略微提高了对价值的正面影响，减少了负面影响。}}
+{{history|Desktop 1.3.4.3|所有[[{{tr|Crossover content|link=y}}#{{tr|Dungeon Defenders 2}}|{{tr|Dungeon Defenders 2}}]] [[{{tr|summon weapons|link=y}}#{{tr|sentries}}|{{tr|sentry summons}}]]武器现在都能拥有{{tr|modifiers}}了。}}
+{{history|Desktop 1.3.3.1|修正了[[{{tr|Sky Fracture}}]]的出售和{{tr|reforge}}{{tr|costs}}。}}
+{{history|Desktop 1.2.3.1|
+** 修正了在载入世界时{{tr|modifiers}}没有正常设置的 {{tr|bug}}。
+** 修正了玩家用右击从商店购买{{tr|an item}}可能会丢失{{tr|modifiers}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** {{tr|reforging}}{{tr|cost}}由 1/2 降低至 1/3。
+** [[{{tr|Vanity Accessories}}]]不再能获得{{tr|modifiers}}。}}
+{{history|Desktop 1.2.1.2|{{tr|accessory}}{{tr|reforge}}所得到的{{tr|Critical Strike}}提升已翻倍。}}
+{{history|Desktop 1.2.1.1|所有新的[[{{tr|Halloween}}]]{{tr|weapons}}现在可以{{tr|reforge}}了。}}
+{{history|Desktop 1.2.1|[[{{tr|Music Box}}]]不再能被{{tr|reforged}}。}}
+{{history|Desktop 1.2.0.3|不再能通过{{tr|reforge}}复制物品。}}
+{{history|Desktop 1.2|
+** {{tr|Reforging items}}现在花费物品购买价的一半。之前，需要花费五倍物品价值。
+** 现在在所有语言中{{tr|reforge}}都可用了。}}
+{{history|Desktop 1.1.1|
+** {{tr|hardcore}}和{{tr|mediumcore}}人物死亡时掉落的{{tr|Items}}会维持其状况。
+** [[{{tr|Water Bolt}}]]和[[{{tr|Harpoon}}]]现在可以{{tr|reforge}}了。
+** [[{{tr|Space Gun}}]]不再以 {{cc|1}} {{tr|reforge}}。
+** [[{{tr|Spears}}]]不再能拥有任何增加{{tr|size}}的{{tr|modifier}}。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{anchor|Piercing}}移除了名叫 Piercing（穿透）的{{tr|modifier}}，它能提供 10% 的{{tr|damage}}和{{tr|critical strike chance bonus}}。它可应用于{{tr|melee}}和{{tr|magic}}{{tr|weapons}}。<ref>Mobile 1.2.12785 https://forums.terraria.org/index.php?threads/mobile-exclusive-prefixes.48089/</ref>}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+[[Category:{{tr|Modifiers}}| ]]
+
+{{language info|en=Modifiers}}

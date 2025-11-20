@@ -1,0 +1,185 @@
+'''{{tr|Furniture sets}}'''是成组的标准[[{{tr|Furniture}}]]{{tr|items}}，每一组都具有独特的主题，有相似外观和风格。大多数套装可以制作得到或以自然放置状态出现在世界中。其他的则可能掉落自[[{{tr|Enemy}}|{{tr|Enemies}}]]。
+
+游戏中一共有 43 组{{tr|Furniture sets}}可用。
+
+== 类型 ==
+下表显示了不同的{{tr|furniture sets}}：{{options/set|item|mode=image}}<!--
+-->{{#arraydefine:_f|Bathtub,Bed,Bookcase,Candelabra,Candle,Chandelier,Chair,Chest,Clock,Door,Dresser,Lamp,Lantern,Piano,Platform,Sink,Sofa,Table,Toilet,Work Bench|,}}<!--
+-->{{#dplvar:set
+|genericCandelabra|<nowiki/> {{item|Platinum Candelabra}}
+|genericCandle|<nowiki/> {{item|Platinum Candle}}
+|genericChandelier|<nowiki/> {{item|Platinum Chandelier}} <ref name=GenericChandelier/>
+|genericDoor|<nowiki/> <ref name=GenericDoor/>
+|genericSink|<nowiki/> {{item|Metal Sink}}
+|ref-bench|<ref name=benches/>
+|ref-vase|<ref name=vases/>
+|ref-onlycrafted|<ref name=onlycrafted/>
+}}
+{| class="terraria lined" style="text-align:center"
+! 类型
+! 来源
+! [[{{tr|Bathtub}}]]
+! [[{{tr|Bed}}]]
+! [[{{tr|Bookcase}}]]
+! [[{{tr|Candelabra}}]]
+! [[{{tr|Candle}}]]
+! [[{{tr|Chandelier}}]]
+! [[{{tr|Chair}}]]
+! [[{{tr|Chest}}]]
+! [[{{tr|Grandfather Clock}}|钟]]
+! [[{{tr|Door}}]]
+! [[{{tr|Dresser}}]]
+! [[{{tr|Lamp}}]]
+! [[{{tr|Lantern}}]]
+! [[{{tr|Piano}}]]
+! [[{{tr|Platform}}]]
+! [[{{tr|Sink}}]]
+! [[{{tr|Sofa}}]]
+! [[{{tr|Table}}]]
+! [[{{tr|Toilet}}]]
+! [[{{tr|Work Bench}}]]
+{{/row||link={{tr|Wooden furniture}}|text=普通|refType={{#dplvar:ref-bench}}|sourcealt={{item|Wood}}/{{item|Any Iron Bar}}/{{item|Gold Bar}}/{{item|Platinum Bar}}|Lantern=no|refCandelabra={{#dplvar:genericCandelabra}}|refCandle={{#dplvar:genericCandle}}|ChandelierName=Gold Chandelier|refChandelier={{#dplvar:genericChandelier}}|refDoor={{#dplvar:genericDoor}}|refSink={{#dplvar:genericSink}}|Lamp=no|DoorName=Wooden Door|SinkName=Wooden Sink|TableName=Wooden Table|ClockName=Grandfather Clock|PlatformName=Wood Platform}}
+{{/row|Boreal Wood}}
+{{/row|Rich Mahogany}}
+{{/row|Palm Wood|refType={{#dplvar:ref-bench}}}}
+{{/row|Ebonwood}}
+{{/row|Shadewood}}
+{{/row|Ash Wood}}
+{{/row|Pearlwood}}
+{{/row|Spooky|source=+Wood}}
+{{/row|Dynasty|source=+Wood|CandelabraName=Large Dynasty Candle|ChandelierName=Large Dynasty Lantern}}
+{{/row|Bamboo}}
+{{/row|Cactus}}
+{{/row|Pumpkin}}
+{{/row|Mushroom|source=Glowing Mushroom|refType={{#dplvar:ref-bench}}}}
+{{/row|Granite|source=Smooth Granite Block}}
+{{/row|Marble|source=Smooth Marble Block}}
+{{/row|Sandstone|source=Smooth Sandstone}}
+{{/row|Martian|source=+Conduit Plating|BookcaseName=Martian Holobookcase|CandelabraName=Martian Table Lamp|CandleName=Martian Hover Candle|ChairName=Martian Hover Chair|ClockName=Martian Astro Clock|LampName=Martian Lamppost}}
+{{/row|Skyware|source=Sunplate Block|Clock2=Sunplate Clock}}
+{{/row|Meteorite|source=+Brick|ToiletName=Meteor Toilet}}
+{{/row|Crystal|source=+Block}}
+{{/row|Glass}}
+{{/row|Frozen|source=Ice Block}}
+{{/row|Honey|source=+Block}}
+{{/row|Slime|source=+Block}}
+{{/row|Balloon|source=Silly Balloons}}
+{{/row|Reef|source=Reef Block}}
+{{/row|Spider|source=+Nest Block}}
+{{/row|Living Wood|source=Wood}}
+{{/row|Lesion|source=+Block}}
+{{/row|Flesh|source=+Block}}
+{{/row|Bone|Candle=no}}
+{{/row|Steampunk|source=Cog}}
+{{/row|Lihzahrd|source=+Brick}}
+{{/row|Solar|source=+Brick}}
+{{/row|Vortex|source=+Brick}}
+{{/row|Nebula|source=+Brick}}
+{{/row|Stardust|source=+Brick}}
+|-
+! colspan=22 | {{tr|Obsidian}}和{{tr|Dungeon furniture}}不能被制作（{{tr|chest}}、{{tr|sink}}和{{tr|toilet}}除外），必须寻找得到。
+{{/row|Obsidian|sourcealt={{item|Ruined House|image=Bestiary The Underworld.png}}/{{item|Obsidian Brick}}|refType={{#dplvar:ref-vase}}|refChest={{#dplvar:ref-onlycrafted}}|refSink={{#dplvar:ref-onlycrafted}}|refToilet={{#dplvar:ref-onlycrafted}}}}
+{{/row|Blue Dungeon|link={{tr|Dungeon Furniture}}|sourcealt={{item|Dungeon|image=Bestiary The Dungeon.png}}/{{item|Blue Brick}}|refType={{#dplvar:ref-vase}}|refChest={{#dplvar:ref-onlycrafted}}|refSink={{#dplvar:ref-onlycrafted}}|refToilet={{#dplvar:ref-onlycrafted}}|Lantern=no|PlatformName=Blue Brick Platform}}
+{{/row|Green Dungeon|link={{tr|Dungeon Furniture}}|sourcealt={{item|Dungeon|image=Bestiary The Dungeon.png}}/{{item|Green Brick}}|refType={{#dplvar:ref-vase}}|refChest={{#dplvar:ref-onlycrafted}}|refSink={{#dplvar:ref-onlycrafted}}|refToilet={{#dplvar:ref-onlycrafted}}|Lantern=no|PlatformName=Green Brick Platform}}
+{{/row|Pink Dungeon|link={{tr|Dungeon Furniture}}|sourcealt={{item|Dungeon|image=Bestiary The Dungeon.png}}/{{item|Pink Brick}}|refType={{#dplvar:ref-vase}}|refChest={{#dplvar:ref-onlycrafted}}|refSink={{#dplvar:ref-onlycrafted}}|refToilet={{#dplvar:ref-onlycrafted}}|Lantern=no|PlatformName=Pink Brick Platform}}
+|-
+! colspan=22 | {{tr|Golden furniture}}不能制造，只能通过{{tr|Pirate}}掉落获得
+{{/row|Golden|text=金|sourcealt={{item|Pirate Invasion|image=Bestiary Pirate Invasion.png}}}}
+|}<!--
+-->{{reflist|refs=
+<ref name=benches>普通{{tr|furniture sets}}、{{tr|Palm Wood furniture sets, and Mushroom furniture sets}}还包括[[{{tr|Benches}}|{{tr|Bench}}]]：{{item|Bench}} {{item|Palm Wood Bench}} {{item|Mushroom Bench}}</ref>
+<ref name=GenericChandelier>还有{{item|Copper Chandelier}}{{tr|Copper}}、{{item|Tin Chandelier}}{{tr|Tin}}、{{item|Silver Chandelier}}{{tr|Silver}}、和{{item|Tungsten Chandelier}}{{tr|Tungsten}}的版本。</ref>
+<ref name=GenericDoor>还有{{item|Iron Door}}{{tr|Iron}}和{{item|Lead Door}}{{tr|Lead}}版本。</ref>
+<ref name=onlycrafted>尽管是天然出现的套装的一部分，但{{tr|chest, sink, and toilet}}只能制作得到。</ref>
+<ref name=vases>{{tr|Obsidian furniture}}和{{tr|Dungeon furniture sets}}还包括[[{{tr|Vases}}|{{tr|Vase}}]]：{{item|Obsidian Vase}} {{item|Blue Dungeon Vase}} {{item|Green Dungeon Vase}} {{item|Pink Dungeon Vase}}。</ref>
+}}<!--
+-->{{options/reset|item}}
+
+== 部分套装 ==
+除了以上的完整套装外，还有一些只包含几个单件的套装：
+
+* '''{{tr|Bar}}'''：包含{{item|Bar|link={{tr|Table}}}}、{{item|Bar Stool}}；{{item|Banquet Table}}也可以认为是。可以用任意[[{{tr|Wood}}]]在[[{{tr|Sawmill}}]]处制作。
+* '''{{tr|Gothic}}'''：包含{{item|Gothic Bookcase}}、{{item|Gothic Chair}}、{{item|Gothic Table}}、和{{item|Gothic Work Bench}}。出现在[[{{tr|Dungeon}}]]中。
+* '''{{tr|Jack 'O Lantern}}'''：包含{{item|Jack 'O Lantern}}、{{item|Hanging Jack 'O Lantern}}、和{{item|Jackelier}}。用[[{{tr|Pumpkin}}]]在[[{{tr|Work Bench}}]]处制作。
+* '''松树'''：包含{{item|Pine Chair}}、{{item|Pine Table}}、和{{item|Pine Door}}。用[[{{tr|Pine Tree Block}}]]在[[{{tr|Work Bench}}]]处制作。
+* '''{{tr|Stone}}'''：包含用[[{{tr|Gray Brick}}]]{{tr|by hand}}制作的{{item|Stone Platform}}和用[[{{tr|Gray Brick}}]]在[[{{tr|Heavy Work Bench}}]]制作的{{item|Stone Door}}。
+
+==单独的{{tr|items}}==
+还有一些单独的物品不属于上述某个套装，但属于上述物品类型。
+
+* '''{{tr|Chests}}'''：除了列在以上套装中的{{tr|the chests}}，还有一些只会自然出现的{{tr|chests}}并且不是某个{{tr|Furniture set}}的一部分。大多数都包含相应类型的独特保障。
+** {{item|Gold Chest}}出现在[[{{tr|Underground}}]]的[[{{tr|Underground Cabin}}]]中，且还以加锁形态出现在[[{{tr|Dungeon}}]]中。
+** {{item|Ivy Chest}}出现在[[{{tr|Underground Jungle}}]]内的[[{{tr|Jungle Shrine}}]]和{{eil|Living Mahogany Tree|s}}中。
+** {{item|Water Chest}}出现在整个地图各处的水体中，尤其是[[{{tr|Ocean}}]]内。
+** {{item|Web Covered Chest}}出现在[[{{tr|Spider Nest}}]]中。
+** {{item|Shadow Chest}}出现在[[{{tr|Underworld}}]]中，通常以一开始加锁的形态出现在[[{{tr|Ruined houses}}]]内。
+** <span style="white-space:nowrap">{{item|mode=image|Jungle Chest}}{{item|mode=image|Corruption Chest}}{{item|mode=image|Crimson Chest}}{{item|mode=image|Hallowed Chest}}{{item|mode=image|Ice Chest}}{{item|mode=image|Desert Chest}}[[{{tr|Biome Chest}}]]</span>出现在{{tr|the Dungeon}}中。
+* '''[[{{tr|Dungeon}}]]'''：除了三个主要套装（每种颜色的{{tr|Dungeon}}内会出现其中一套）外，每个{{tr|Dungeon}}中还能包含其他{{tr|furniture}}。
+** '''{{tr|Doors}}'''：{{item|Dungeon Door}}。
+** '''{{tr|Platforms}}'''：{{item|Dungeon Shelf}}、{{item|Brass Shelf}}、{{item|Metal Shelf}}、和{{item|Wood Shelf}}。
+** '''{{tr|Lanterns}}'''：{{item|Chain Lantern}}、{{item|Brass Lantern}}、{{item|Caged Lantern}}、{{item|Carriage Lantern}}、{{item|Alchemy Lantern}}、{{item|Diabolist Lamp}}、和{{item|Oil Rag Sconse}}。
+* '''{{tr|Platforms}}'''：除了以上所列的{{tr|platforms}}和出现在{{tr|the Dungeon}}中的{{tr|platform}}外，还有 {{item|mode=image|id=3622}}{{item|mode=image|id=3638}}{{item|mode=image|id=3639}}{{item|mode=image|id=3640}}{{item|mode=image|id=3641}}{{item|mode=image|id=3642}} [[{{tr|Team Platforms}}]]，它由[[{{tr|Traveling Merchant}}]]随机以每个 {{iteminfo|3622|buy}} 的价格出售。
+* '''{{tr|Other Light Sources}}'''：这些{{tr|light sources}}不适合归入某个套装，但其中一些提供了独特的效果。其他的则是纯装饰的。
+** '''{{tr|Buff Lanterns}}'''：这些{{tr|lanterns}}在放置后会在其周围区域内提供{{tr|regeneration buffs}}。
+*** {{item|Heart Lantern}}提供了[[{{tr|health regeneration}}]]{{tr|buff}}，它是用[[{{tr|Life Crystal}}]]和 4 个[[{{tr|Chain}}]]制作的。
+*** {{item|Star in a Bottle}}提供了[[{{tr|Mana}}]]{{tr|regeneration buff}}，是用[[{{tr|Fallen Star}}]]和[[{{tr|Bottle}}]]制作的。
+** '''{{tr|Spawn rate candles}}'''：这些{{tr|candles}}在放置后或手持时会影响周围区域内的{{tr|enemy}}/{{tr|critter}}的{{tr|spawn rate}}。
+*** {{item|Water Candle}}能增加{{tr|enemy}}的生成，它出现在[[{{tr|Dungeon}}]]中，并且在{{eversions|1.3.0.1}}中可以制作得到。
+*** {{item|Peace Candle}}能减少{{tr|enemy}}的生成，它是用[[{{tr|Pink Torch}}]]和 2 块[[{{tr|Gold Bar}}]]或[[{{tr|Platinum Bar}}]]制作的。
+*** {{item|Shadow Candle}}能让{{tr|enemy}}在[[{{tr|town}}]]中生成，它是在[[{{tr|Graveyard}}]]中时用[[{{tr|Torch}}]]和 3 块[[{{tr|Demonite Bar}}]]或[[{{tr|Crimtane Bar}}]]制作的。
+** '''装饰性{{tr|light sources}}'''：这些是装饰性{{tr|light sources}}。有些不能作为{{tr|mechanisms}}。
+*** {{item|Tiki Torch}}用常规{{tr|Torch}}和 3 个[[{{tr|Any Wood}}]]制作。
+*** {{item|Lamp Post}}用 3 块[[{{tr|Any Iron Bar}}]]、2 块[[{{tr|Glass}}]]、和{{tr|Torch}}制作。
+*** {{item|Skull Lantern}}是用[[{{tr|Bone}}]]和{{tr|Torch}}制作的，也可以认为是其套装中的{{tr|Candle}}。
+*** {{item|Chinese Lantern}}是一种特大号的{{tr|lantern}}，用[[{{tr|Torch}}]]和 5 个[[{{tr|Silk}}]]制作。
+*** {{item|Lava Lamp}}和{{item|Plasma Lamp}}购买自[[{{tr|Party Girl}}]]。
+* '''{{tr|Tables}}'''：除了上方列出的{{tr|tables}}，还有[[{{tr|Tables}}|{{tr|Picnic Tables}}]]。
+** {{item|Picnic Table}}用 12 块{{tr|Any Wood}}制作。
+** {{item|Fancy Picnic Table}}用 12 块{{tr|Any Wood}}和 3 个{{tr|Silk}}制作。
+* '''{{tr|Toilets}}'''：在以上所列{{tr|toilets}}之外，还有另外两种并非任何套装一部分的{{tr|toilets}}。
+** {{item|Diamond Toilet}}使用 6 个[[{{tr|Diamond}}]]制作。
+** {{item|Terra Toilet}}使用一个{{tr|regular Toilet}}和一把[[{{tr|Broken Hero Sword}}]]制作。
+
+== 花絮 ==
+* {{tr|The Solar}}、{{tr|Nebula}}、{{tr|Vortex}}和{{tr|Stardust}}{{tr|sets}}的形态全都完全一样，只是颜色不同。
+
+== 图库 ==
+<gallery widths=690px heights=600px>
+File:Furniture sets.png|用{{tr|furniture sets}}建造的{{tr|Houses}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了[[{{tr|Ash Wood furniture}}|{{tr|Ash Wood}}]]、[[{{tr|Balloon furniture}}|{{tr|Balloon}}]]、和[[{{tr|Reef furniture}}|{{tr|Reef}}]]{{tr|furniture sets}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了[[{{tr|Spider Furniture}}|{{tr|Spider}}]]、[[{{tr|Lesion furniture}}|{{tr|Lesion}}]]、[[{{tr|Bamboo furniture}}|{{tr|Bamboo}}]]、[[{{tr|Sandstone furniture}}|{{tr|Sandstone}}]]、[[{{tr|Solar furniture}}|{{tr|Solar}}]]、[[{{tr|Vortex furniture}}|{{tr|Vortex}}]]、[[{{tr|Nebula furniture}}|{{tr|Nebula}}]]和[[{{tr|Stardust furniture}}|{{tr| Stardust}}]]{{tr|furniture sets}}。
+** 添加了更多[[{{tr|Toilet}}]]。}}
+{{history|Desktop 1.3.5|
+** 添加了[[{{tr|Crystal furniture}}]]{{tr|set}}。
+** 添加了[[{{tr|Dynasty Piano}}]]、[[{{tr|Dynasty Sofa}}]]、[[{{tr|Dynasty Dresser}}]]、和[[{{tr|Dynasty Platform}}]]。}}
+{{history|Desktop 1.3.0.1|添加了[[{{tr|Meteorite furniture}}|{{tr|Meteorite}}]]、[[{{tr|Granite furniture}}|{{tr|Granite}}]]、[[{{tr|Marble furniture}}|{{tr|Marble}}]]、和[[{{tr|Martian furniture}}|{{tr|Martian}}]]{{tr|furniture sets}}。}}
+{{history|Desktop 1.2.4|添加了[[{{tr|Sofas}}]]。}}
+{{history|Desktop 1.2.3|添加了[[{{tr|Dynasty furniture}}]]{{tr|set}}。}}
+{{history|Desktop 1.2|{{tr|Introduced}}[[{{tr|Flesh furniture}}]]{{tr|set}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|添加了{{tr|Meteorite}}、{{tr|Granite}}、{{tr|Marble}}、和{{tr|Martian}}{{tr|furniture sets}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|Meteorite}}、{{tr|Granite}}、{{tr|Marble}}、和{{tr|Martian}}{{tr|furniture sets}}。（{{icon/ps4}}）}}
+{{history|Console 1.07|添加了{{tr|Sofas}}。}}
+{{history|Console 1.06|添加了{{tr|the Dynasty furniture set}}。}}
+{{history|Console 1.02|添加了{{tr|the Flesh furniture set}}。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced}}，带有到{{tr|Desktop 1.3.0.1}} 为止的套装（和部件）。}}
+{{history|Mobile 1.3.0.7|添加了{{tr|Meteorite}}、{{tr|Granite}}、{{tr|Marble}}、和{{tr|Martian}}{{tr|furniture sets}}。}}
+{{history|Mobile 1.2.11212|
+** 添加了{{tr|Sofas}}。
+** 添加了{{tr|Dynasty}}{{tr|furniture set}}。}}
+{{history|Mobile 1.2.6508|添加了{{tr|the Flesh}}{{tr|furniture set}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，带有{{tr|Flesh furniture set}}。}}
+
+{{Furniture sets|nocate=y}}
+{{Master Template Furniture}}
+{{all versions}}
+[[Category:家具套装| ]]
+
+{{language info|en=Furniture sets}}

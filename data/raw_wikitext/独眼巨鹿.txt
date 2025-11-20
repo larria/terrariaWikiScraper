@@ -1,0 +1,178 @@
+{{exclusive|1.4.3}}
+{{npc infobox | boxwidth=22.5em
+| auto = 668
+| type = Boss
+| environment = Snow biome+Blizzard
+| damage = <!--
+    -->{{modes|20|40|60}} {{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+    -->{{modes|26|52|78}} {{note|small=y|paren=y|{{gameText|ProjectileName.DeerclopsIceSpike}}}}<br/><!--
+    -->{{modes|36|72|108}} {{note|small=y|paren=y|{{gameText|ProjectileName.DeerclopsRangedProjectile}}}}<br/><!--
+    -->{{modes|20|40|60}} {{note|small=y|paren=y|{{gameText|ProjectileName.InsanityShadowHostile}}}}
+| debuff = Slow
+| debuffchance = 100% {{note|small=y|paren=y|吼叫}}
+| debuffduration = {{modes|{{duration|12}}|{{duration|24}}|{{duration|30}}}}
+| debuff2 = Frozen
+| debuffchance2 = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.DeerclopsIceSpike}}}}
+| debuffduration2 = {{modes|{{duration|0.33}}|{{duration|0.67}}|{{duration|0.83}}}}
+
+| Eye Bone|1|33% @normal
+| Eyebrella|1|33% @normal
+| Radio Thing|1|33% @normal
+| Dizzy's Rare Gecko Chester|1|7.14% @normal
+|:group:start|总是会掉落以下 4 件{{tr|items}}之一| @normal
+| Pew-matic Horn|1|25% @normal
+| Weather Pain|1|25% @normal
+| Houndius Shootius|1|25% @normal
+| Lucy the Axe|1|25% @normal
+|:group:end|--------------------------------------------------------|------------------------
+| Healing Potion|5–15|100%
+| Deerclops Mask|1|14.29% @normal
+| Deerclops Trophy|1|10%
+| Treasure Bag (Deerclops)|1|{{expert|100%}} #expert
+  |:loot:start|------------------------------------|- #expert
+  |Bone Helm|1|100% #expert
+  | Deerclops Mask|1|14.29% #expert
+  | Eye Bone|1|33% #expert
+  | Eyebrella|1|33% #expert
+  | Radio Thing|1|33% #expert
+  | Dizzy's Rare Gecko Chester|1|7.14% #expert
+  |:group:start|总是会掉落以下 4 件{{tr|items}}之一| #expert
+  | Pew-matic Horn|1|25% #expert
+  | Weather Pain|1|25% #expert
+  | Houndius Shootius|1|25% #expert
+  | Lucy the Axe|1|25% #expert
+  |:group:end|--------------------------------------------------------|------------------------
+  | Gold Coin|[[{{tr|NPC drops}}#{{tr|Coin drops}}|10]]|100% #expert
+  |:loot:end|---------------------------------------|-
+| Deerclops Eyeball|1|{{master|25%}} @master
+| Deerclops Relic|1|{{master|100%}} @master
+| idprojectile = 961, 962, 965
+
+| sound1 = Deerclops step.wav
+| soundcaption1 = 行走
+| sound2 = Deerclops scream 0.wav, Deerclops scream 1.wav, Deerclops scream 2.wav
+| soundcaption2 = 咆哮
+| sound3 = Deerclops ice attack 0.wav, Deerclops ice attack 1.wav, Deerclops ice attack 2.wav
+| soundcaption3 = {{gameText|ProjectileName.DeerclopsIceSpike}}
+| sound4 = Deerclops rubble attack.wav
+| soundcaption4 = {{gameText|ProjectileName.DeerclopsRangedProjectile}}
+| imageother = Map Icon Deerclops.png
+| imageothercaption = Map Icon
+}}<!--
+
+// Deerclops Leg NPC was removed in the 1.4.4 update. Previously its NPC ID was 669.
+
+-->
+
+{{flavor text|{{ucfirst:{{#explode:{{#invoke:gameText|getRaw|Achievements.DEFEAT_DEERCLOPS_Description}}|是|1}}}}|image=Map Icon Deerclops.png|size=36px}}
+{{quotation|[[File:Emote Town Guide.gif|link=]] [[{{tr|Guide}}]]|{{gameText|GuideHelpTextSpecific.Help_1160}}}}
+{{for|{{tr|the Deerclops}}{{tr|pet}}|{{tr|Deerclops Eyeball}}}}
+
+'''{{tr|Deerclops}}'''是一个[[{{tr|pre-Hardmode}}]]的 [[{{tr|Bosses}}]]，可以在[[{{tr|Snow biome}}]]中遇到。与{{tr|Deerclops}}战斗不是推进游戏进程所必须的，但击败它会奖励玩家[[{{tr|coins}}]]和其他有用的物品。
+
+{{boss music|exclusive=1|pronoun=its|ow=Boss 2 (Otherworldly)}}
+
+== 召唤 ==
+可以通过在任意时间于[[{{tr|Snow biome}}]]中使用[[{{tr|Deer Thing}}]]来手动召唤{{tr|The Deerclops}}。
+
+{{tr|The Deerclops}}也可以在[[{{tr|Blizzard}}]]期间在{{ht|{{tr|midnight}}|{{time|12:00 AM}}}}于[[{{tr|surface}}]]{{tr|Snow biome}}自然生成，但需要满足以下条件：{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateTime}}
+* {{tr|world}}中至少一名玩家拥有至少 9 [[{{tr|defense}}]]或 200 [[{{tr|health}}]]。
+* 有一名玩家位于{{tr|surface}}{{tr|Snow biome}}中。
+** 以那名玩家为中心的 240×135 {{tr|tile}}的长方形区域内必须没有{{tr|town}} [[{{tr|NPCs}}]]。
+* 不存在其他 {{tr|bosses}} 或敌对{{tr|events}}（[[{{tr|Blood Moon}}]]除外）。
+* 若在 [[{{tr|Don't dig up}}]] 或 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，{{tr|Deerclops}}只会在{{tr|Surface layer}}的{{tr|Snow biomes}}自然生成，此处不会显示{{tr|Blizzard}}视觉效果。{{source code ref|v=1.4.4.9|method=Terraria.Player.UpdateBiomes}}
+** {{tr|Deerclops}}不会在（显示{{tr|Blizzard}}效果的）{{tr|Cavern layer}}生成。
+
+即使在[[{{tr|Journey Mode}}]]中将{{tr|enemy spawn rate}}滑条设为 0×，{{tr|Deerclops}}仍能自然生成。
+
+如果此前在{{tr|world}}中已经击败了{{tr|Deerclops}}，它将只有 {{chance|1/4}} 的几率自然生成。
+
+== 行为 ==
+{{float file box|[[File:Deerclops (invulnerable).gif|Deerclops (invulnerable).gif|link=]]|无敌状态的{{tr|The Deerclops}}。|width=167px}}
+
+* {{tr|The Deerclops}}有四/{{expert|五}}种攻击：
+** 如果{{tr|Deerclops}}离玩家很近，它会举起手臂猛砸地面，召唤出一波逐个升起并快速移向玩家的{{tr|Ice Spike}}。每连续的第三波{{tr|Ice Spike}}的移动距离会稍近，且改为向{{tr|Deerclops}}的两侧扩散。{{tr|Ice Spikes}}会使玩家[[{{tr|Frozen}}]] 0.33 / {{expert|0.67}} / {{master|0.83}} 秒。
+** 如果{{tr|Deerclops}}离玩家不够近，无法使用{{tr|ice spikes}}攻击，它会“铲”起大量的{{tr|debris}}，这些{{tr|debris}}会飞向空中，然后落回地面。{{tr|debris}}能够穿过[[{{tr|blocks}}]]。{{tr|Debris}}的外观会根据{{tr|Deerclops}}施展攻击时所站的{{tr|blocks}}决定。不过，这不会影响{{tr|Debris}}对玩家造成的伤害。
+** {{tr|Deerclops}}偶尔会停在原地并吼叫，对 50 格内的所有玩家{{source code ref|v=1.4.3.6|method=Terraria.NPC.AI_123_Deerclops}}造成 12 / {{expert|24}} / {{master|30}} 秒的[[{{tr|Slow}}]][[{{tr|debuff}}]]，已经受到此{{tr|debuff}}影响的玩家除外。
+** 如果玩家处于{{tr|Deerclops}}上方的时间过长，它会短暂站定，然后吼叫，并在玩家周围召唤出五个{{tr|Shadow Hands}}。
+* 在[[{{tr|Expert Mode}}]]中，{{tr|Shadow Hands}}会被周期性地召唤，它们拥有三种移动方式：缓慢地向玩家移动，快速地向玩家移动然后绕曲线，或是在原地旋转。{{tr|Shadow Hands}}能够预测玩家的移动，且随着{{tr|Deerclops}}的{{tr|health}}减少而更加频繁地被召唤。
+* 如果玩家距离{{tr|Deerclops}}超过 30 格远，{{tr|the Deerclops}}会被暗影般的光环覆盖，发出黑色烟雾粒子，变为暗紫色，其眼睛会变为红色，同时两个偏红、半透明的残像会在{{tr|Deerclops}}周围旋转。在这一状态下，{{tr|Deerclops}}完全对[[{{tr|damage}}]]免疫，直到玩家回到距离{{tr|Deerclops}} 30 格以内后才会回到原先的外观和行为。
+
+== 备注 ==
+* {{tr|Deerclops}}存活时，{{tr|Blizzard}}视觉效果的不透明度将会降低。
+* 如果所有玩家都死亡了或者附近没有玩家，{{tr|the Deerclops}}会前往它生成处的{{tr|Snow biome}}（若可能），并在那里四处游荡而非立即消失。当玩家接近它时，战斗会正常继续。从{{tr|Deerclops}}生成开始，经过了游戏内一天后（现实的 24 分钟），只要附近没有玩家，它就会消失。退出并重新进入世界后它也会消失。
+** 和所有其他 {{tr|bosses}} 一样，{{tr|Deerclops}}在世界中存活时无法使用[[{{tr|Pylons}}]]。
+* {{tr|The Deerclops}}不能穿过{{tr|solid blocks}}，但如果玩家在其上方足够远的地方，且{{tr|the Deerclops}}无法触及玩家，它就会迅速地穿过{{tr|blocks}}上升来到达玩家处。
+* 获得[[{{tr|Slayer of Worlds}}]]{{tr|achievement}}不需要击败{{tr|Deerclops}}。
+
+== 成就 ==
+{{achievement|name=An Eye For An Eye}}
+
+== 小贴士 ==
+{{strategies}}
+* 召唤此 {{tr|bosses}} 不需要击败其他的前置 {{tr|bosses}}。不过，鉴于{{tr|Deerclops}}的强度，可能需要等到击败[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]后才与其战斗。
+** 如果有足够的技巧，可以在更早的时期打败{{tr|Deerclops}}以帮助玩家度过[[{{tr|pre-Hardmode}}]]。
+* [[{{tr|Warmth Potion}}]]在和{{tr|Deerclops}}战斗时很有用，因为 {{tr|boss}} 会受到其{{tr|buff}}影响。此外，在战斗中带上[[{{tr|Hand Warmer}}]]可能会很有用，因为受到[[{{tr|Chilled}}]]和[[{{tr|Frozen}}]]{{tr|debuffs}}的影响很容易让玩家迅速死亡。
+* 用非{{tr|solid block}}在空中建造一个大约 6 格（两倍玩家高度）高的平台，并在两侧用{{tr|solid block}}建造{{tr|Deerclops}}能爬上来的楼梯，可以将其抬升到离地面足够高的地方，从而完全阻止 Boss 使用{{tr|ice debris}}攻击，战斗会更加容易。
+* 由于{{tr|Deerclops}}能够在极大的范围内造成{{tr|Slow}}，因此[[{{tr|Anklet of the Wind}}]]或[[{{tr|Magiluminescence}}]]等配饰以及[[{{tr|Swiftness Potions}}]]可以提供帮助，使战斗更容易解决。
+* 尽可能避免逗留在{{tr|Deerclops}}正上方，因为此种情况下它召唤的{{tr|Shadow Hand}}非常危险。
+* 玩家可以不受伤害地穿过{{tr|Deerclops}}的腿。这对于躲避前两次{{tr|ice spike}}攻击很有用，但最好不要留在附近迎接第三次攻击。
+* {{tr|Player}}应当把他们的{{tr|spawn point}}设置在离{{tr|Deerclops}}可游荡的区域较远的位置，因为{{tr|Deerclops}}可能会在{{tr|spawn}}区域附近停留。
+** 对于[[{{tr|Difficulty}}|{{tr|Mediumcore}}]]{{tr|player}}来说极其推荐这样做，因为如果他们在战斗中死亡的话，就会手无寸铁地被留在{{tr|Deerclops}}附近。
+* {{tr|Ice Spike}}攻击造成的[[{{tr|Frozen}}]]{{tr|debuff}}能够打断玩家正在使用的[[{{tr|Hooks}}|{{tr|grappling hook}}]]，导致他们落到地面。避免在较宽的空隙上方移动，以免受到不必要的伤害。
+
+== 花絮 ==
+{{float file box|[[File:Deerclops Leg.png|link=]]|被移除的{{tr|Deerclops Leg NPC}}。}}
+* {{iwlink|dts|Deerclops}}是[[{{tr|Don't Starve Together}}|《{{tr|Don't Starve Together}}》{{tr|crossover}}]]的一部分。此次{{tr|crossover}}的许多物品由它掉落。
+* [[《{{tr|Terraria}}》]]中紫色无敌状态下的{{tr|The Deerclops}}看上去很像《{{iwlink|dts|Don't Starve Together}}》中，{{tr|The Deerclops}}在{{iwlink|dts|Winter's Feast|冬季盛宴}}活动期间的形象。
+* ''Deerclops''（{{tr|Deerclops}}）是 ''{{wiktionary|deer}}''（鹿）和 ''{{wiktionary|cyclops}}''（独眼巨人）的复合词。
+* 它是[[《{{tr|Terraria}}》]]中仅有的在杀死玩家后不会消失的非{{tr|event}} {{tr|boss}}。
+* {{tr|The Deerclops}}的战斗是仅有的由单个可攻击的实体组成的两个 {{tr|boss}} 战之一，另一个为[[{{tr|Empress of Light}}]]。
+** 所有其他 {{tr|boss}} 战的组成都是下列情况之一：多个 {{tr|bosses}}、多个{{tr|segments}}、或是有{{tr|minions}}被召唤出来参与战斗。
+** {{anchor|DeerclopsLeg}}{{anchor|独眼巨鹿腿}}在 [[1.4.3]] 和 [[1.4.3.6]] 间的版本中，文件中有一个名为 <code>DeerclopsLeg</code> 的 [[{{tr|NPC IDs}}|{{tr|NPC}}]]，它并未在战斗中出现。它是无敌的{{source code ref|v=1.4.3.6|old=y|method=Terraria.NPC.SetDefaults}}且具有其独自的 [[{{tr|AI}}]]{{source code ref|v=1.4.3.6|old=y|method=Terraria.NPC.AI_124_DeerclopsLeg}}。它在 [[1.4.4]] 更新中被移除了，其 {{tr|NPC ID}} 被[[{{tr|Stinkbug}}]]的所替代。
+* {{tr|The Deerclops}}是首个非{{tr|event}}[[{{tr|crossover}}]] {{tr|boss}}，也是首个{{tr|pre-Hardmode crossover boss}}。
+* 它是七个有专属 {{tr|boss music}}的 {{tr|bosses}}之一。其它的为[[{{tr|Queen Bee}}]]、[[{{tr|Queen Slime}}]]、[[{{tr|Plantera}}]]、{{tr|Empress of Light}}、[[{{tr|Duke Fishron}}]]、和[[{{tr|Moon Lord}}]]。
+{{bestiary|article=}}
+
+== 图库 ==
+<gallery>
+Deerclops.gif|行走动画
+Deerclops Attack.gif|攻击动画
+Deerclops Roar.gif|吼叫动画
+</gallery>
+
+== 另见 ==
+* {{dts link}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在在击败时会给予一个{{tr|achievement}}。
+** 现在有几率掉落[[{{tr|Dizzy's Rare Gecko Chester}}]]。
+** 现在占用更多的{{tr|enemy slots}}，以便在战斗中减少甚至阻止{{tr|enemy}}生成。
+** 移除了未使用的{{tr|Deerclops Leg NPC}}。}}
+{{history|Desktop 1.4.3.3|
+** 在{{tr|Expert and Master Mode}}，{{tr|Deerclops}}的{{tr|health}}现在和其他 {{tr|bosses}} 一样根据修改过的系数增加。
+*** 这将其{{tr|health}}由 7000 / {{expert|14000}} / {{master|21000}} 降低至 7000 / {{expert|11900}} / {{master|15172}}。
+** 修复了{{tr|Deerclops}}的{{tr|health}}在{{tr|Expert}}/{{tr|Master}}{{tr|multiplayer}}游戏中不会按玩家数提高的问题。
+** 现在附近没有玩家时只会在{{tr|Snow biome}}中停留 1 天，而非 3 天。
+** {{tr|Deerclops}}的 [[{{tr|boss health bar}}]]现在会在距离远到 {{tr|boss}} 战不激活时消失。
+** {{tr|Defense}}由 0 提升至 10。
+** 在击败{{tr|Deerclops}}时，它在适当条件下只有 25% 的几率自然生成，而非之前的 100%。
+** 现在会掉落[[{{tr|Healing Potion}}]]。}}
+{{history|Desktop 1.4.3.1|
+** 添加了对[[{{tr|Confused}}]]的免疫。
+** 其伤害现在会受[[{{tr|Warmth Potion}}]]影响。
+** 现在会正确地掉落[[{{tr|coins}}]]。}}
+{{history|Desktop 1.4.3|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.1 的改动。}}
+{{history|Switch 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.1 的改动。}}
+{{history|Mobile 1.4.3.2.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.3.1 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Deerclops}}

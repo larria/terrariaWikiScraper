@@ -1,0 +1,54 @@
+{{exclusive|1.3.3}}
+{{npc infobox
+| auto = 541
+| image = Sand Elemental.gif
+| imageother = Sand Elemental2.gif
+| imageothercaption = 攻击状态
+| environment = Sandstorm
+| damage2 = &#32;{{note|paren=y|small=y|{{tr|contact}}}}<br/>{{modes|60|88|132}} {{note|paren=y|small=y|{{gameText|ProjectileName.SandnadoHostile}}}}
+| knockback2 = &#32;{{note|paren=y|small=y|当{{tr|health}} >50% }}<br/>100% {{note|paren=y|small=y|当{{tr|health}} ≤50% }}
+| sound1 = Item 60.wav
+| soundcaption1 = {{gameText|ProjectileName.SandnadoHostileMark}}标记
+| sound2 = Item 82.wav
+| soundcaption2 = {{gameText|ProjectileName.SandnadoHostile}}
+| Forbidden Fragment|1|100%
+| idprojectile = 657, 658
+| hardmode = yes
+}}
+{{about|{{tr|Sandstorm}}期间于{{tr|Desert}}中生成的稀有{{tr|enemy}}||{{tr|Elemental}}}}
+[[File:Sand Elemental (demo).gif|300px|thumb|{{tr|Sand Elemental}}的{{tr|Ancient Storm}}攻击。]]
+
+'''{{tr|Sand Elemental}}'''是个稀有的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，会在[[{{tr|Sandstorm}}]]期间的[[{{tr|Desert}}]]生成。{{tr|Sand Elementals}}通过在{{tr|player}}大致位置附近随机召唤三个{{tr|Ancient Storms}}来攻击，它们会持续存在 5 秒。它们的间距各有不同，且会在其持续时间内保持静止。{{tr|Sand Elementals}}可以穿过[[{{tr|blocks}}]]，并以非线性的轨迹飞行。她会尝试向{{tr|player}}移动，且速度会随着其{{tr|health}}降低而逐渐加快。她必定掉落[[{{tr|Forbidden Fragment}}]]，这是制作[[{{tr|Forbidden armor}}]]、[[{{tr|Spirit Flame}}]]、和[[{{tr|Sandstorm in a Bottle}}]]的主要材料。
+
+{{Lifeform Analyzer note|她}}{{tr|The Sand Elemental}}需要 25 次击杀以完成其[[{{tr|Bestiary}}]]条目并获得对应[[{{tr|Banners (enemy)}}#具有非默认击杀数的{{tr|Banners}}|{{tr|banner}}]]，而非通常的 50 次击杀。{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;KillsToBanner}}
+
+== 备注 ==
+* 和所有{{tr|Sandstorm enemies}}相同，{{tr|the Sand Elemental}}受到特定[[{{tr|Sandstorm|link=y}}#{{tr|Notes}}|生成限制]]的影响。她仅能在{{tr|Sand Blocks}}（任何{{tr|variant}}）上生成，且需要附近有足够的{{tr|Sand Blocks}}。
+
+== 小贴士 ==
+* {{tr|Ancient Storms}}不能穿过{{tr|blocks}}。站在由{{tr|solid blocks}}构成的平台下方可以让{{tr|Sand Elemental}}无法用{{tr|Ancient Storms}}攻击到{{tr|player}}。然而，这可能使{{tr|player}}容易受到{{tr|burrowing enemies}}的攻击（[[{{tr|Dune Splicer}}]]和[[{{tr|Sand Shark}}]]）。
+* 使用[[{{tr|Rod of Discord}}]]传送到{{tr|Ancient Storms}}的另一侧可能会很有用；不过它使用后会施加[[{{tr|Chaos State}}]][[{{tr|debuff}}]]，因此{{tr|player}}需要注意使用它的频率。
+* {{tr|Sand Elemental}}的{{tr|Ancient Storms}}的伤害远比接触伤害要高，可以利用这一点来用[[{{tr|invincibility frames}}]]躲避她大部分的伤害，或用高[[{{tr|defense}}]]来吸收伤害。
+* 将{{tr|Sand Elemental}}引出{{tr|Desert biome}}可能会是较好的选择，这样可以避开在{{tr|Sandstorm}}期间生成的其他强力{{tr|enemy}}，如{{tr|Dune Splicer}}和{{tr|Sand Shark}}。
+** 除此之外，能够提供无限飞行能力的[[{{tr|mount}}]]也可以用来避开这些{{tr|enemies}}。在[[{{tr|Master Mode}}]]中，在与任何主要的{{tr|Hardmode bosses}} 战斗之前，就可以从[[{{tr|Pirate Invasion}}]]那里获取[[{{tr|The Black Spot}}|{{tr|Pirate Ship Mount}}]]。
+
+== 花絮 ==
+* {{维基百科|Elemental|t=元素精灵}}是将自然力量具象化或拟人化后的魔法实体。历史上，元素精灵是四种{{维基百科|classical element|经典元素}}之一的拟人化身：土、水、风、火（有时是植物，晚些时候还包括以太）。奇幻角色扮演桌游{{维基百科|b=y|Dungeon & Dragons|t=龙与地下城}}中，引入了融合的{{维基百科|Elemental (Dungeons & Dragons)|元素精灵}}和其他非常规的元素精灵。
+* {{tr|Sand Elemental}}是唯一一个没有[[{{tr|Evil Biomes}}]]与[[{{tr|Hallow}}]]变种的{{tr|Hardmode surface Desert enemy}}。
+* 类似于[[{{tr|Biome Mimics}}]]、[[{{tr|Ice Golem}}]]、[[{{tr|Mothron}}]]、和[[{{tr|Dreadnautilus}}]]，{{tr|Sand Elemental}}不是 {{tr|boss}} 或{{tr|mini-boss}}（尽管它拥有能够与之相比的属性）。这可以由其缺少 [[{{tr|Boss health bar}}]]、掉落[[{{tr|Banners (enemy)}}|{{tr|banner}}]]而非[[{{tr|trophy}}]]、在[[{{tr|Master Mode}}]]下不掉落[[{{tr|Relics}}]]证明。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.3.3|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Sand Elemental}}

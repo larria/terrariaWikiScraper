@@ -1,0 +1,62 @@
+{{item infobox
+| auto = 227
+| type = Potion
+| hheal = @@@@ {{eicons|1.4.0.1|small=y}} / 100 {{eicons|1.3.0.1|invert=y|small=y}}
+| mheal = 100 {{eicons|1.3.0.1|invert=y|small=y}}
+| debuff = Potion Sickness
+| debuffduration = {{duration|45}} {{eicons|1.4.0.1|small=y}}<br/>{{duration|60}} {{eicons|1.3.0.1|invert=y|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|small=y}} / {{sc|8}} {{eicons|1.3.0.1|invert=y|small=y}}
+| tags = loot
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Restoration Potion}}'''是种[[{{tr|Recovery potions}}|{{tr|recovery potion}}]]，在使用后能恢复[[{{tr|health}}]]（{{eicons|1.4.0.1|invert=y}}和[[{{tr|mana}}]]）并造成[[{{tr|Potion Sickness}}]]。虽然其外观看着像，但它并非通过升级[[{{tr|Lesser Restoration Potion}}]]得到。
+
+服用{{tr|Restoration Potion}}有如下效果：
+* {{eicons|1.4.0.1}} 恢复 90 {{tr|health}}并造成仅持续 45 秒的[[{{tr|Potion Sickness}}]]（而非一般生命恢复{{tr|potion}}的 60 秒)。
+** {{tr|Potion Sickness}}的{{tr|duration}}可以通过[[{{tr|Philosopher's Stone}}]]或[[{{tr|Charm of Myths}}]]进一步缩短到 33.75 秒。
+* {{eicons|1.3.0.1|invert=y}} 恢复 100 {{tr|health}}和 100 {{tr|mana}}。{{tr|Potion Sickness}}持续整整 60 秒。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Restoration Potion|expectedrows=2}}
+
+== 小贴士 ==
+* {{eicons|1.4.0.1}} 新的{{tr|Restoration potion}}在{{tr|healing potions}}序列中的地位有点迷。与[[{{tr|Healing Potion}}]]相比，它的冷却时间更短但提供的生命值几乎相同。与[[{{tr|Honeyfin}}]]相比，它提供了 ¾ 治疗量同时冷却时间也只有 ¾。无论哪种方式，都需要考虑冷却期间的自然恢复/再生。
+** 数学上说，{{tr|the Restoration Potion}}是最好的{{tr|pre-Hardmode health potion}}，因为其生命冷却比和[[{{tr|Honeyfin}}]]齐平，由于能更频繁地得到生命值而略微胜出。
+
+== 花絮 ==
+* 尽管存在[[{{tr|Greater Healing potions}}]]和[[{{tr|Greater Mana Potions}}]]，但没有对应的“强效{{tr|Restoration Potion}}”。[[{{tr|Super Healing Potion}}]]和[[{{tr|Super Mana Potion}}]]亦是如此。
+* 在 {{eil|1.4.0.1}} 中，[[{{tr|Lesser Restoration Potion}}]]都被替换为{{tr|Restoration Potions}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** 现在恢复 90 {{tr|health}}。
+** 不再恢复{{tr|mana}}。
+** {{tr|Crafting recipe}}改变。现在需要 1 [[{{tr|Mushroom}}]]、1 [[{{tr|Glowing Mushroom}}]]、1 [[{{tr|Pink Gel}}]]和 1 [[{{tr|Bottle}}]]。
+** [[{{tr|Potion Sickness}}]]时间从 50 秒降到 45 秒。}}
+{{history|Desktop 1.3.0.1|
+** 外观更新。
+** {{tr|Mana and health}}的恢复量由 100 降低至 80。
+** 卖出价格由 {{sc|8}} 降至 {{sc|3}}。
+** 现在需要 1 个[[{{tr|Pink Gel}}]]、1 个[[{{tr|Mushroom}}]]、和 1 个[[{{tr|Bottle}}]]，而非 1 {{tr|Mana Potion}}和 1 {{tr|Healing Potion}}。
+** [[{{tr|Potion Sickness}}]]时间由 60 秒降至 50 秒。}}
+{{history|Desktop 1.2.3|
+** 修复了{{tr|Restoration Potion}}的[[{{tr|rarity}}]]（白色）比[[{{tr|Mana Potion}}]]和[[{{tr|Healing Potion}}]]的{{tr|rarity}}（蓝色）低的 {{tr|bug}}（尽管它们是同级的）。
+** 修复了世界生成中可能会生成单组数量超过 20 个的{{tr|Restoration potions}}的 {{tr|bug}}。}}
+{{history|Desktop 1.0.6.1|恢复能力由每个属性 200 点降至 100 点。}}
+{{history|Desktop 1.0.6|
+** 现在使用时会触发[[{{tr|Potion Sickness}}]]{{tr|debuff}}。
+** [[{{tr|Mana Potion}}]]和[[{{tr|Healing Potion}}]]的快捷键现在能够正常作用于{{tr|Restoration Potions}}了。}}
+{{history|Desktop 1.0.5|{{tr|Sprite updated.}}}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Consumables
+| show-potion = yes
+}}
+
+{{language info|en=Restoration Potion}}

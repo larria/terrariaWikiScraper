@@ -1,0 +1,94 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Armor/Set
+| debuff = Frostbite / {{duration|rawseconds=5–14}} / 100% {{eicons|1.4.1|small=y}}
+| tags = Drop / hardmode
+}}
+
+'''{{tr|Frost armor}}'''是一套[[{{tr|Hardmode}}]]{{tr|melee}}/{{tr|ranged}}[[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Frost Helmet}}'''、'''{{tr|Frost Breastplate}}'''和'''{{tr|Frost Leggings}}'''组成。制作全套{{tr|set}}总计需要 3 颗[[{{tr|Frost Core}}]]和 46 块[[{{tr|Adamantite Bar}}|{{tr|Adamantite}}]]或[[{{tr|Titanium Bar}}]]（184 个{{tr|ore}}）。
+
+装备全套{{tr|set}}提供下列效果：
+
+* +{{getSetInfo|Frost armor|defense|note=n}} [[{{tr|defense}}]]
+* +26% [[{{tr|melee}}{{tr|damage}}|{{tr|melee}}]]和[[{{tr|ranged}}{{tr|damage}}]]
+* +11% {{tr|melee}}和{{tr|ranged}}[[{{tr|critical strike chance}}]]
+* +10% [[{{tr|melee speed}}]]
+* +8% [[{{tr|movement speed}}]]
+* [[{{tr|Melee weapons}}|{{tr|Melee}}]]和[[{{tr|ranged weapons}}|{{tr|ranged}}]]{{tr|weapons}}散发蓝光粒子，击中{{tr|enemy}}时施加 5–14 秒[[{{tr|Frostbite}}]][[{{tr|debuff}}]]。
+* {{tr|The player}}行走时在身后留下视觉上的雪迹。{{tr|The player}}受击音效将被设置为[[{{tr|Thin Ice}}]]破碎{{sound||Item 27.wav}}。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 684
+}}
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 685
+}}
+|{{item infobox
+| type = Armor
+| hardmode = yes
+| auto = 686
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Frost Helmet/Frost Breastplate/Frost Leggings|expectedrows=9}}
+
+== 备注 ==
+* [[{{tr|Ice Golem}}]]总会掉落[[{{tr|Frost Core}}]]，可制作一件{{tr|Frost armor}}部件。
+
+== 小贴士 == 
+* 通过创建一个大的单侧沟槽，在其顶部造一个屋顶并留下一个一格宽的洞可以很容易地刷{{tr|Frost armor}}，因为[[{{tr|Ice Golem}}]]的激光在向上射击时不会在其正中间射出，它将无法攻击到玩家。[[{{tr|Water Candle}}]]和[[{{tr|Battle Potion}}]]可以增加其{{tr|spawn rate}}。
+* 对于{{tr|melee}}使用者，将此{{tr|armor}}与[[{{tr|Magma Stone}}]]/[[{{tr|Fire Gauntlet}}]]和[[{{tr|Flasks}}]]搭配会使{{tr|player}}一次造成三种不同的{{tr|debuff}}，当武器本身也造成{{tr|debuff}}时还要更多，例如[[{{tr|Shadowflame}}]]。
+* 对于使用[[{{tr|Adamantite armor}}]]的{{tr|ranged}}使用者，将{{tr|Adamantite Breastplate}}换成{{tr|Frost Breastplate}}可能会更好些，因为这样会以 8% {{tr|damage}}和仅提供降低 25% {{tr|ammo consumption}}的{{tr|set bonus}}的代价换取多 11% 的{{tr|critical strike chance}}和 4 {{tr|defense}}。
+
+== 花絮 ==
+[[File:Red's old armor.png|framed]]
+* {{icon/desktop}} 在 [[1.3]] 之前，如果装备了{{tr|Frost Breastplate}}、{{tr|Frost Leggings}}、和[[{{tr|Gold Helmet}}]]，且三个部件都用[[{{tr|Blue Flame and Black Dye}}]]染色，会产生残像和脉动光环，类似于{{tr|Hallowed armor}}。这曾是 [[Redigit|Red]] 在[[{{tr|Red's set}}|他的{{tr|set}}]]被引入前穿着的{{tr|armor}}。
+* {{tr|The Frost Breastplate}}和{{tr|Leggings}}与[[{{tr|Molten armor}}|{{tr|Molten Breastplate}}和{{tr|Greaves}}]]看起来极其相似。
+* {{tr|Frost armor}}是[[{{tr|Desert}}]]的{{eil|Forbidden armor}}在[[{{tr|Snow biome}}]]的对应物，因为它们获取方式相似。不过，{{tr|Forbidden armor}}会增强[[{{tr|Magic weapons}}|{{tr|magic}}]]和[[{{tr|summon weapon}}]]，而不是[[{{tr|Melee weapons}}|{{tr|melee}}]]和[[{{tr|ranged weapons}}]].
+* 穿着{{tr|Frost armor}}时玩家的受伤音效要优先于更改受伤音效的其它物体，如夜间的[[{{tr|Moon Charm}}]]。
+* 和其它{{tr|armors}}不同，{{tr|the Frost Leggings}}的（英文）{{tr|tooltip}}中增加的为{{tr|melee}}''攻击''{{tr|speed}}（melee ''attack'' speed）而非{{tr|melee speed}}（melee speed），但从游戏方面来说这两者的意思相同。
+
+== 历史 ==
+{{history|Desktop 1.4.2.3|修复了由{{tr|Frost armor}}的{{tr|set bonus}}造成的{{tr|debuff}}只造成 20 {{DPS}} 而非预期的 25 {{DPS}} 的问题。}}
+{{history|Desktop 1.4.2|修复了[[{{tr|Ale Tosser}}]]没有正确地从{{tr|Frost armor}}处获得{{tr|Frostburn}}效果的问题。}}
+{{history|Desktop 1.4.1|
+** {{tr|Frost Armor}}的{{tr|Set Bonus}}现在额外提供 10% 的{{tr|Melee}}/{{tr|Ranged Damage}}。
+** {{tr|Frost Armor}}的{{tr|Set Bonus}}现在造成特殊版本的{{tr|Frostburn}}，它造成 25 {{DPS}}，而非 8。}}
+{{history|Desktop 1.3.2|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.3.0.1|现在使用{{tr|Titanium}}、{{tr|Adamantite}}来制作，而不是使用{{tr|Hallowed Bar}}。}}
+{{history|Desktop 1.2.4.1|现在{{tr|Frost armor}}能正常播放特殊的受伤音效了。}}
+{{history|Desktop 1.2.3|
+** 现在使用{{tr|Frost Core}}和{{tr|Hallowed Bar}}来制作。
+** 穿戴{{tr|Frost armor}}不再会使{{tr|Spiky Ball Trap}}造成{{tr|Frostburn debuff}}。}}
+{{history|Desktop 1.2.1|新增了女性版的外观。}}
+{{history|Desktop 1.2.0.3|{{tr|Frost Breastplate}}现在可以根据套装奖励来正确给予奖励。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|同步 PS4 1.0.750.0 更新的改动。（{{icon/xboxone}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 现在使用{{tr|Titanium}}、{{tr|Adamantite}}来制作，而不是使用{{tr|Hallowed Bar}}。
+** {{tr|Sprite updated}}，与 {{tr|Desktop}} 1.3.2一致。}}
+{{history|Console 1.06|
+** 现在使用{{tr|Frost Core}}和{{tr|Hallowed Bar}}来制作。
+** 穿戴{{tr|Frost armor}}不再会使{{tr|Spiky Ball Trap}}造成{{tr|Frostburn debuff}}。}}
+{{history|Console 1.02|引入，包括女性版的外观。}}
+{{history|Switch 1.0.711.6|引入，同步 {{tr|Desktop}} 1.3.0.1。}}
+{{history|Mobile 1.3.0.7|现在使用{{tr|Titanium}}、{{tr|Adamantite}}来制作，而不是使用{{tr|Hallowed Bar}}。}}
+{{history|Mobile 1.2.11212|
+** 现在使用{{tr|Frost Core}}和{{tr|Hallowed Bar}}来制作。
+** 穿戴{{tr|Frost armor}}不再会使{{tr|Spiky Ball Trap}}造成{{tr|Frostburn debuff}}。}}
+{{history|Mobile 1.2.6508|引入，包括女性版的外观。}}
+{{history|3DS-Release|引入，包括女性版的外观。}}
+
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{language info|en=Frost armor}}

@@ -1,0 +1,59 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| type = Furniture / Crafting station
+| width = 3 | height = 3
+| auto = 3000
+| tags = plunder / fished
+}}
+{{distinguish|{{tr|Alchemy Station}}}}
+
+'''{{tr|Alchemy Table}}'''是一个[[{{tr|Skeletron}}]]后的[[{{tr|crafting station}}]]，用于{{tr|craft}}[[{{tr|Potion}}]]。在{{tr|crafting}}{{tr|potions}}时它与[[{{tr|Placed Bottle}}]]的作用几乎完全一样，唯一的区别是它有 {{chance|1/3}} 的几率不消耗材料。它随机出现于[[{{tr|Dungeon}}]]之中，也可以通过在{{tr|the Dungeon}}中[[{{tr|fishing}}]]得到。它也算作[[{{tr|flat surface item}}]]，后者是建造[[{{tr|house}}]]所必需的部分之一。
+
+当用{{tr|Alchemy Table}}制作{{tr|potion}}时，每项材料都有 {{chance|1/3}} 几率不会消耗。用于制作{{tr|potion}}的每个材料，包括同种材料中的每一个，都有一次单独的概率判定。{{source code ref|v=1.4.4.9|method=Terraria.Recipe.Create}}这有助于更有价值地使用炼药材料，尤其是那些难以得到的材料。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Alchemy Table|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Alchemy Table|expectedrows=1}}
+
+=== 用于制作 ===
+{{ajax|keepterraria=yes|配方/{{tr|Placed Bottle}}}}
+
+== 备注 ==
+* 对于制作[[{{tr|Watches}}]]来说，{{tr|The Alchemy Table}}也算作是[[{{tr|Table}}]]。
+* 只要{{tr|Alchemy Table}}位于[[{{tr|crafting station}}范围]]内，节省材料的效果就会生效，无论附近是否有其他的[[{{tr|Placed Bottle}}]]。
+* 平均而言，用{{tr|the Alchemy Table}}进行大量生产相较于用同等数量原料在[[{{tr|Placed Bottle}}]]生产可以多产出约 50% 的[[{{tr|potions}}]]。但是，这是非常随机的，并且，如果有一种{{tr|ingredient}}供不应求（例如：[[{{tr|Luck Potion}}]]所需的[[{{tr|pearls}}]]），则结果将会取决于该{{tr|ingredient}}恰好不被消耗的频率。同样，如果有两种或更多{{tr|ingredients}}短缺，则其中任何一种都可能“提早”耗尽（即并未完全达到 {{chance|1/3}} 几率）从而限制产出。
+* 不像{{tr|the Placed Bottle}}，{{tr|the Alchemy Table}}可以放在任何{{tr|block}}上，不仅限于平坦的[[{{tr|Furniture}}]]{{tr|item}}。
+* 所有能在{{tr|Alchemy Table}}或{{tr|Placed Bottle}}制作的{{tr|items}}在丢入[[{{tr|Shimmer}}]]时会被[[{{tr|decraft}}特例|{{tr|decraft}}]]为其材料的随机部分。
+
+== 小贴士 ==
+* {{tr|The Alchemy Table}}结合用[[{{tr|Staff of Regrowth}}]]收割{{tr|plants}}可以在相同的工作量下生产出明显更多的{{tr|potions}}。
+
+== 花絮 ==
+* {{tr|The Alchemy Table}}的{{tr|sprite}}中似乎描绘有[[{{tr|Lesser Restoration Potion}}]]或[[{{tr|Lesser Healing Potion}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Stack limit}}由 999 提升至 9999。
+** 现在用于通过[[{{tr|shimmer}}]]制作[[{{tr|Bewitching Table}}]]。
+** 修复了{{tr|players}}可以在{{tr|Skeletron}}被击败前钓上{{tr|Dungeon items}}的问题。}}
+{{history|Desktop 1.4.0.1|现在可以通过在{{tr|Dungeon}}中钓鱼得到。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|现在可以通过在{{tr|Dungeon}}中钓鱼得到。}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+[[Category:放置的瓶子或炼药桌]]
+
+{{language info|en=Alchemy Table}}

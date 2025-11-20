@@ -1,0 +1,48 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| auto = 631
+| image = Rock Golem.gif
+| imageother = Rock Golem2.gif
+| imageothercaption = 攻击状态
+| environment = Cavern
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/><!--
+-->{{modes|40|80|120}} {{note|small=y|paren=y|{{gameText|ProjectileName.RockGolemRock}}}}<br/><!--
+-->{{modes|140|280|420}} {{note|small=y|paren=y|{{gameText|ProjectileName.Boulder}}}}{{source code ref|v=1.4.4.9|method=Terraria.NPC.checkDead}}
+| Stone Block|10–20|100%
+| Rock Golem Head|1|10%
+| idprojectile = 909, 99//仅限 [[{{tr|For the worthy}}]] 和<br/>[[{{tr|Get fixed boi}}]]
+| hardmode = yes
+}}
+{{about|{{tr|Hardmode Cavern enemy}}||{{tr|Golem (disambiguation)}}}}
+
+'''{{tr|Rock Golem}}'''是一个[[{{tr|Hardmode}}]]的强力[[{{tr|enemies}}]]，在[[{{tr|Cavern}}]]{{tr|layer}}生成。当玩家在其视线内，但超出其可接触范围后，它会向玩家投掷岩石。被攻击时，它仍会攻击玩家，这意味着无法通过持续攻击来定住它。
+
+在 [[{{tr|For the worthy}}]] 和 [[{{tr|Get fixed boi}}]] {{tr|worlds}}中，{{tr|Rock Golems}}在死亡时会释放[[{{tr|Boulder}}]]{{tr|projectile}}。
+
+== 备注 ==
+* {{tr|Rock Golem}}只能生成在[[{{tr|Stone Block}}]]上，且永不会生成于[[{{tr|Ice biome}}]]，即使其中有{{tr|Stone Block}}存在。{{source code ref|v=1.4.1.2|method=Terraria.NPC.SpawnNPC_CheckToSpawnRockGolem}}
+
+== 花絮 ==
+* {{tr|Rock Golem}}与[[{{tr|Gem trees}}]]是仅有的在{{tr|world}}中再生[[{{tr|Stone Block}}]]的方法。
+** 另一种可行的再生{{tr|Stone Block}}的方式为[[{{tr|Shimmer}}]]{{tr|decraft}}（例如从位于[[{{tr|Jungle}}]]的处[[{{tr|Merchant}}]]购买[[{{tr|Furnace}}]]并{{tr|decraft}}它们）。
+* 在犹太传说中，{{维基百科|golem|t=魔像}}（{{ipa|ˈɡoʊləm|before=}}，''GOH-ləm''；希伯来语：גולם）是完全由无生命物质（通常为粘土和泥浆）创造出的拟人生命。在圣诗和中世纪的创作中，这个词被用来代指一种无定形或者未成形的材料。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在投掷石块的频率更低，石块的移动速度略微减慢。
+** 生成几率降低，基础{{tr|coin}}掉落由 {{coin|5 gc}} 降低至 {{coin|2.5 gc}}。[[{{tr|Rock Golem Head}}]]掉落几率翻倍（{{chance|1/10}} 几率而非 {{chance|1/20}}），以匹配稀有程度改动。}}
+{{history|Desktop 1.4.1|修复了{{tr|Rock Golem}}的{{tr|projectile damage}}被放大了两倍的问题，导致它们造成的伤害远大于应有值（特别是在{{tr|Expert}}/{{tr|Master}}模式中）。此前{{tr|projectile}}{{tr|damage}}为 42 / {{expert|170}} / {{master|382}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Rock Golem}}

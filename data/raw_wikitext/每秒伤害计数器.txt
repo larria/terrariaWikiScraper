@@ -1,0 +1,38 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3119
+| tags = informational / buyable / vendor:Traveling Merchant
+}}
+
+{{float file box|float=right|title={{tr|DPS Meter}}的[[{{tr|Toggles}}|{{tr|Toggle}}]]{{tr|icons}}|{{inline block|css=width:50%;line-height:2.5|{{icon|desktop}}<br/>[[File:DPS Meter toggle.png|link=]]}}{{inline block|css=width:50%;line-height:2|{{icon|mobile}}<br/>[[File:DPS Meter toggle (mobile).png|link=]]}}}}
+
+'''{{tr|DPS Meter}}'''是一个[[{{tr|Informational Accessories}}|{{tr|informational accessory}}]]，可显示{{tr|weapon}}对最后伤害到的任何实体（包括[[{{tr|enemies}}]]、[[{{tr|critters}}]]、[[{{tr|NPCs}}]]、[[{{tr|Target Dummy}}|{{tr|Target Dummies}}]]、和[[{{tr|Pvp}}|其他玩家]]）的{{DPS}}。{{tr|DPS Meter}}可从[[{{tr|Traveling Merchant}}]]处以 {{iteminfo|DPS Meter|buy}} 的价格购买。
+
+{{tr|The DPS Meter}}是制作[[{{tr|Goblin Tech}}]]所需的三个组件之一，其他两个是[[{{tr|Metal Detector}}]]和[[{{tr|Stopwatch}}]]，因此是制作[[指南:制作{{tr|Shellphone}}|制作]][[{{tr|Shellphone}}]]所必需的组件。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=DPS Meter|expectedrows=1}}
+
+== 备注 ==
+* {{Informational Accessories note}}
+* {{tr|The DPS Meter}}会将影响实际伤害的各个因素都纳入考量，诸如[[{{tr|critical strike chance}}]]、{{tr|enemy}}[[{{tr|defense}}]]、或来自[[{{tr|armor}}]]的{{tr|boosts}}、[[{{tr|accessories}}]]、[[{{tr|buffs}}]]等。{{source code ref|v=1.4.4.9|method=Terraria.Player.addDPS / Terraria.Player.ApplyDamageToNPC / Terraria.Projectile.Damage}}
+** {{tr|The DPS Meter}}无法考虑来自“近战击打”的{{tr|critical strikes}}（''见[[造成近战击打的物品列表]]获取详细信息''），它会记录原伤害（1×）而非{{tr|critical strike}}伤害（2×）。{{source code ref|v=1.4.4.9|method=Terraria.Player.ProcessHitAgainstNPC}}
+** {{tr|The DPS Meter}}也无法记录[[{{tr|debuffs}}]]造成的伤害（如[[{{tr|Daybroken}}]]）。
+* {{tr|The DPS Meter}}显示的是现实每一秒的伤害而非游戏中每一秒的伤害（60 {{tr|ticks}}）。这在帧率低于 60 且启用了[[跳帧]]时是非常明显的。<!-- This is not verified via source code, though it is easily proven through in-game experimentation. This fact is true for Desktop and has yet to be proven on other platforms. -->
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Equipables
+| show-acc = yes
+}}
+
+{{language info|en=DPS Meter}}

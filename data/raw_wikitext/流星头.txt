@@ -1,0 +1,66 @@
+{{npc infobox
+| auto = 23
+| image = Meteor Head.gif
+| type = Flying Enemy
+| environment = Meteorite (biome)
+| debuff = On Fire!
+| debuffchance = 33%
+| money = {{#invoke:Npcstat|format|prefix=y|lang={{lang|}}<!--
+		-->|{{npcinfo|Meteor Head|value}}<!-- 
+		-->|{{coin|{{npcinfo|Meteor Head|value_e}}}}<!-- 
+		-->|{{coin|0cc}}<!-- 
+		-->|{{coin|0cc}}<!-- 
+		-->|{{coin|{{npcinfo|Meteor Head|value_m}}}}<!-- 
+		-->|{{coin|0cc}}<!-- 
+		-->|{{coin|0cc}}<!-- 
+	-->}}
+| debuffduration = {{modes|{{duration|7}}|{{duration|14}}|{{duration|17.5}}}}
+| custom:Meteorite | {{item|Meteorite}}{{note|block=y|paren=y|仅限{{tr|pre-Hardmode}}}}| 2% {{eicons|1.2.3|3ds=n}}
+}}
+
+'''{{tr|Meteor Heads}}'''是{{tr|flying}}[[{{tr|enemies}}]]，只在[[{{tr|Meteorite biome}}]]中生成。它们会覆盖掉所有其他{{tr|biome}}的{{tr|enemy}}生成，除了[[{{tr|Ocean biome}}]]。一旦只剩下 {{eicons|1.4.0.1}} 74 / {{eicons|1.4.0.1|invert=y|3ds=n}} 49 / {{icon|3DS}} 22 块{{tr|Meteorite}}，此区域就不再视为{{tr|a Meteorite biome}}。因此，{{tr|Meteor Heads}}就不再会生成。
+
+{{tr|Meteor Heads}}遵循的是[[{{tr|AI}}|{{tr|Flying AI}}]]，唯一的区别是它们不会与固体{{tr|blocks}}发生碰撞而是可以直接穿过它们。
+
+== 备注 ==
+* {{eicons|1.2.3|3ds=n}} {{tr|Meteor Heads}}有非常小的几率掉落一块{{tr|Meteorite}}，让{{tr|Meteorite}}变成一种可再生资源。不过，在两三次坠落后玩家就应当能够把它们所能制造的东西全部制造出来。
+** 如果需要大量的{{tr|meteorite}}，可以持续 {{eicons|1.4.0.2}} 与[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]战斗 / {{eicons|1.4.0.2|invert=y}} 打破[[{{tr|Shadow Orb}}|{{tr|Shadow Orbs}}]]或[[{{tr|Crimson Heart}}|{{tr|Crimson Hearts}}]]，并在{{tr|meteorite}}落地后全部采挖，如此反复，理论上说，只要还有{{tr|blocks}}供{{tr|meteorite}}生成，就能无限量得到{{tr|meteorite}}。但是，由于一个世界中{{tr|Shadow Orbs and Crimson Hearts}}的数量有限，在{{3DS}}上{{tr|Meteorite}}并非可再生资源。
+* {{eicons|1.2.3|3ds=n}} 在[[{{tr|Hardmode}}]]中，{{tr|Meteor Heads}}不再掉落战利品。
+** 在{{3DS version}}上，{{tr|Meteor Heads}}从不掉落战利品。
+
+== 小贴士 ==
+* 打败{{tr|Meteor Heads}}的一种方法是用[[{{tr|pickaxe}}]]来保护自己。在采挖时，只要{{tr|Meteor Heads}}是从同一个方向接近，就能在它们飞来的时候击中它们。建议的物品是[[{{tr|Cobalt Shield}}]]，用于抵消击退，以及[[{{tr|Obsidian Skull}}]]，用于防止来自{{tr|Meteorite}}自身的伤害。通过[[{{tr|Tinkerer's Workshop}}]]，玩家可以将这两者组合成为[[{{tr|Obsidian Shield}}]]，能提供两种好处并只占用一个{{tr|accessory slot}}。或者，可以用任意[[{{tr|Grappling Hook}}]]将玩家固定在位置上。
+* 因为{{tr|Meteor Heads}}以较慢的速度移动，玩家可以在采挖{{tr|Meteorite}}和击杀屏幕上所有{{tr|Meteor Heads}}之间交替，让他们有时间进行另一轮采挖。
+* 强烈推荐用能够穿透{{tr|block}}攻击的{{tr|Weapons}}来与{{tr|Meteor Heads}}战斗。[[{{tr|Vilethorn}}]]是一个异常高效的选择，每次使用能够造成多次伤害，但诸如[[{{tr|Dark Lance}}]]这样的[[{{tr|spears}}]]也一样效果良好。高伤害的{{tr|weapons}}，比如[[{{tr|Night's Edge}}]]和[[{{tr|Musket}}]]可以一击干掉{{tr|Meteor Heads}}。[[{{tr|Minions}}]]或[[{{tr|Crimson Rod}}]]经常能够自行处理掉{{tr|Meteor Heads}}。
+* 在[[{{tr|multiplayer}}]]中，玩家可以分工处理采挖和抵挡{{tr|Meteor Heads}}的任务。
+* 鉴于一个区域被视为{{tr|Meteorite biome}}的条件，玩家可以在任意想要的地方放置 {{eicons|1.4.0.1}} 75 / {{eicons|1.4.0.1|invert=y|3ds=n}} 50 / {{icon|3DS}} 23 或更多块[[{{tr|Meteorite}}]]来禁止那个区域的普通生成物而改为生成{{tr|Meteor Heads}}。
+
+== 花絮 ==
+* 它们以及小[[{{tr|Bee}}]]和[[{{tr|Servant of Cthulhu}}]]是仅有的基础伤害值要高于自身最大生命值的{{tr|enemies}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Expert mode}}生命值降低至 52。
+** 现在需要 75 [[{{tr|Meteorite}}]]才会生成。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|一旦进入{{tr|Hardmode}}就不再掉落战利品。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.0.6|{{tr|Meteor Heads}}会造成{{tr|On Fire! debuff}}。}}
+{{history|Desktop 1.0.5|
+** 现在接触水面时不会发出溅水的声音。
+** 生命值由 50 降至 26、防御力由 10 降至 6、伤害由 25 提升至 40。
+** 速度降低。
+** 它们现在总是会面朝它们的目标玩家，而非面朝它们的移动方向。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Meteorite}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Meteor Head}}

@@ -1,0 +1,56 @@
+{{infobox wrapper|direction=row
+|{{item infobox
+| type = Weapon
+| auto = 1835
+| use = @@@@ {{eicons|1.4.1|small=y}} /<br/>{{ut|26}} {{eicons|1.4.1|small=y|invert=y}}
+| listcat = Repeaters / Scope
+| tags = hardmode / Drop
+}}
+|{{item infobox
+| auto = 1836
+| tags = vendor / drop / hardmode / vendor:Arms Dealer / vendor:Witch Doctor
+}}
+}}
+{{drop infobox|style=clear:right}}
+[[File:Stake Launcher (demo).gif|framed|{{tr|The Stake Launcher}}穿透九个[[{{tr|Target Dummy}}]]，在命中第 10 个时破裂。]]
+
+{{tr|Stake Launcher}}是一把[[{{tr|hardmode}}]]、[[{{tr|Plantera}}]]后的类[[{{tr|repeater}}]]武器，能[[{{tr|auto-fires}}]]，将'''{{tr|Stakes}}'''作为[[{{tr|ammunition}}]]。{{tr|Stake}}不受{{tr|Gravity}}影响，至多穿透 9 个{{tr|enemies}}，至多可攻击到 10 个{{tr|enemies}}，且比大多数[[{{tr|arrows}}]]具有更高的射速。在{{eversions|1.4.1}}中，{{tr|Stake}}每穿过一个敌人，下一次命中时伤害降低 10%。{{tr|Stake Launcher}}拥有 {{iteminfo|Stake Launcher|crit}} 的基础[[{{tr|critical strike chance}}]]，高于默认的 4%。另外，它对[[{{tr|Vampires}}]]造成的伤害提升 10 倍。
+
+{{tr|Stake Launcher}}在[[{{tr|Pumpkin Moon}}]][[{{tr|event}}]]中由[[{{tr|Mourning Wood}}]]掉落，掉落率为 2.86–20% ({{expert|5–20%}})，基于波次而定。<ref>每波的详细掉落率: {{pumpkin moon item drop rates|1/5|fromwave=6|towave=20}}参见[[{{tr|Pumpkin Moon}}#{{tr|Loot}}|{{tr|Pumpkin Moon}} § {{tr|Loot}}]]获取更多信息</ref>{{tr|Stake Launcher}}掉落时，总会同时掉落 30 至 60 个{{tr|Stake}}。它们的额外的{{tr|Stake}}可在玩家[[{{tr|inventory}}]]中存在{{tr|Stake Launcher}}时从[[{{tr|Witch Doctor}}]]或[[{{tr|Arms Dealer}}]]处以 {{iteminfo|Stake|buy}} 购买。 
+
+{{modifier|ranged}}
+
+== 备注 ==
+* {{tr|Stake Launcher}}被[[{{tr|Magic Quiver}}]]、[[{{tr|Shroomite armor}}]]{{eicons|1.4.0.1}}以及[[{{tr|Archery Potion}}]]视作箭类武器，且其发射的{{tr|Stake}}无法回收。然而，它被[[{{tr|Rifle Scope}}]]及其升级版视为枪，允许其使用瞄准功能。
+* 对于[[{{tr|Vampire}}]] 1000% 的{{tr|damage boost}}被应用于{{tr|Stake Launcher}}和{{tr|Stake}}的{{tr|damage}}总和，且在所有的{{tr|damage}}计算''后''（比如[[{{tr|armor}}]]、[[{{tr|accessories}}]]、[[{{tr|buffs}}]]和随机化等之后）。不过，却是在{{tr|damage}}被{{tr|enemy}}的{{tr|defense}}削减''前''。
+** 请注意，此{{tr|boost}}不影响{{eil|Vampire Miner|s}}。
+* 考虑到这种极为恐怖的对{{tr|Vampires}}{{tr|damage}}，{{tr|Stake Launcher}}在一些[[{{tr|multiplayer}}]]服务器中可能引发反作弊机制。
+
+== 小贴士 ==
+* {{tr|Stake Launcher}}是可轻易获得的一把强力{{tr|ranged weapons}}，这是鉴于其极高的{{tr|damage}}（与{{tr|stakes}}组合是{{#expr:{{iteminfo|Stake Launcher|damage}}+{{iteminfo|Stake|damage}}}}），强力的{{tr|knockback}}，高{{tr|velocity}}，自动使用，便宜的[[弹药物品|{{tr|ammunition}}]]和其{{tr|ammunition}}可最多穿过 9 个{{tr|enemy}}且不受重力影响。  
+**{{eicons|1.4.1|invert=y}} 唯一的美中不足就是其低开火速率，这个比其他高阶{{tr|ranged weapons}}（比如[[{{tr|Megashark}}]]）都要慢。
+* {{tr|The Stake Launcher}}针对多体节{{tr|enemy}}极为有效，比如[[{{tr|worms}}]]，因其穿透效果可同时打击多个体节。
+
+== 花絮 ==
+* {{tr|Stake Launcher}}的{{tr|damage bonus}}参考的是{{维基百科|vampire|吸血鬼}}的传说，在其中彻底{{维基百科|Vampire#Methods of destruction|杀死{{tr|vampire}}}}的唯一方法就是将木制尖桩穿过它的心脏。
+
+== 历史 ==
+{{history|Desktop 1.4.1|
+** {{tr|Use time}}由 26 降低至 12。
+** {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 10% {{tr|damage}}惩罚。}}
+{{history|Desktop 1.4.0.1|现在受{{tr|Archery potion}}效果影响。}}
+{{history|Desktop 1.2.1.2|{{tr|Rifle Scope}}现在可用于{{tr|Stake Launcher}}。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced}}，可使用{{tr|the Rifle Scope}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced}}，可使用{{tr|the Rifle Scope}}。}}
+{{history|3DS-Release|{{tr|Introduced}}，可使用{{tr|the Rifle Scope}}。{{verify}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Stake Launcher}}

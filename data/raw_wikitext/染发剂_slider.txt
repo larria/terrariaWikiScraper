@@ -1,0 +1,23 @@
+<includeonly><!--
+
+// set id to $id; if $id is empty use a page-wide counter of sliders and increment it by 1
+--><div id="{{#or:{{{id|}}}|sldr-{{#vardefineecho:_sliderid|{{#expr:{{#var:_sliderid}}+1}}}}}}" class="hair-dye-slider-wrapper" style="display:none;"><!--
+-->{{flexstart}}<!--
+	-->{{flexstart|item|class=output|style=margin-right:1em}}<!--
+		-->{{{outputlabel|颜色：}}}{{color box|#fff}}<!--
+	-->{{flexend|item}}<!--
+	-->{{#dplreplace:{{#dplreplace:{{{format|Value: $slider$ $value$%}}}<!--
+		-->|\$slider\$|{{flexstart|item|class=slider}}{{flexend}}}}<!--
+		-->|\$value\$|<span class="inputvalue">{{{defaultvalue|100}}}</span><!--
+	-->}}<!--
+-->{{flexend}}<!--
+--></div><!--
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+Using [[MediaWiki:Common.js|JavaScript]], it displays a {{tl|code=y|color box}} with a slider that can be used to adjust the color in the box. The algorithm used to determine the color is based on the {{code|$id}} parameter ({{code|health}}{{•}}{{code|mana}}{{•}}{{code|time}}{{•}}{{code|speed}}). The text in front of the color box can be adjusted via {{code|$outputlabel}}, it defaults to {{code|Color:}}. The {{code|$defaultvalue}} parameter can be used to set the initial value of the slider ({{code|0}}–{{code|100}}), the default is {{code|100}}. The {{code|$format}} parameter determines the overall format of the slider. The strings {{code|$slider$}} and {{code|$value$}} in the parameter value are replaced by the slider and the value of the slider (which might be modified, depending on {{code|$id}}), respectively. The default format is {{code|Value: $slider$ $value$%}}.
+
+This page will not display anything and will not take up any space if JavaScript is not enabled.
+{{language info|en=Hair Dyes/slider}}
+</noinclude>

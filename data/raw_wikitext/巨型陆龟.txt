@@ -1,0 +1,58 @@
+{{npc infobox
+| auto = 153
+| image = Giant Tortoise.gif
+| image2 = Giant Tortoise (old).png
+| imageother = Giant Tortoise2.png
+| imageothercaption = 滚动状态
+| environment = Jungle/Underground Jungle
+| damage2 = &#32;/ {{modes|{{#expr:{{npcinfo|153|damage}}*2}}|{{#expr:{{npcinfo|153|damage|expert}}*1.8}}|{{#expr:{{npcinfo|153|damage|master}}*1.8}}}} {{note|paren=y|{{tr|spinning}}时}}
+| defense2 = &#32;/ {{#expr:{{npcinfo|153|defense}}*2}} {{note|paren=y|{{tr|spinning}}时}}
+| Turtle Shell|1|{{eicons|1.4.4}} 8.33% / {{eicons|1.4.4|invert=y}} 5.88%
+| sound1 = Zombie 33.wav
+| soundcaption1 = 空闲
+| hardmode = yes
+}}
+
+'''{{tr|Giant Tortoise}}'''是一种出现在[[{{tr|Jungle}}]]中的[[{{tr|Hardmode}}]][[{{tr|enemy}}]]。它的移动速度很慢，并且偶尔会缩进壳内旋转并跃向玩家，获得更高的{{tr|defense}}并造成很高的{{tr|contact damage}}。它会掉落[[{{tr|Turtle Shell}}]]，它是制作[[{{tr|Turtle armor}}]]的必需材料。
+
+在[[{{tr|Ice biome}}]]中，会遇到与{{tr|Giant Tortoise}}行为相同的变体[[{{tr|Ice Tortoise}}]]。
+
+== 备注 ==
+* 默认情况下，两次旋转攻击之间的冷却时间是 6.67 秒。 如果{{tr|Giant Tortoise}}受到伤害，冷却时间会重置。{{source code ref|name=ai|v=1.4.1.2|method=Terraria.NPC.AI}}
+** 如果{{tr|Giant Tortoise}}距离玩家超过 12.5 格，并且它可以直接看到玩家，那么冷却时间会减少到 1.33 秒。
+** 如果距离超过 37.5 格，并且它可以直接看到玩家或在玩家上方 12.5 格内，那么冷却时间会进一步减少到 0.61 秒。
+* 若结束旋转攻击时与[[{{tr|water}}]]接触，{{tr|Giant Tortoise}}会立即再次发起旋转攻击。
+* 每次旋转攻击过程中都包含 0.5 秒缩进壳内、 1.5 秒旋转、减速直到停在固体表面、0.5 秒从壳中出来这些动作。在其中的任意时间攻击{{tr|Giant Tortoise}}都会使旋转攻击中止。<ref name="ai" />
+* 虽然{{tr|Giant Tortoise}}旋转攻击的轨迹是在它缩进壳内时的瞬间，基于玩家的位置决定的，但它仍会识别玩家当前的{{tr|position}}，并会在到达玩家上方时快速减速来试图下落。
+
+== 小贴士 ==
+* 任何能快速攻击的{{tr|weapon}}或[[{{tr|minions}}|召唤物]]都很有效，因为这可阻止{{tr|Giant Tortoise}}发起旋转攻击。例如可以使用[[{{tr|Megashark}}]]、{{eil|yoyo}}、或{{eil|Enchanted Dagger|s}}。
+* 只要玩家保持靠近{{tr|Giant Tortoise}}，[[{{tr|Melee weapons}}]]会很有用。即使不持续攻击，距离近时旋转攻击的冷却时间也会很长。
+* 应避开水池，因为它们会导致{{tr|Giant Tortoise}}立即尝试跃向玩家。
+* {{tr|Giant Tortoises}}不能穿过[[{{tr|platforms}}]]。因此放置几排长{{tr|platforms}}可以显著降低玩家受到旋转攻击的危险。
+* 由于旋转攻击会造成巨大的伤害，特别是在{{eil|Expert Mode}}和{{eil|Master Mode}}中，刷[[{{tr|Turtle Shell}}]]时推荐玩家具备高{{tr|defense}}或闪避效果（例如[[{{tr|Hallowed armor}}]]）。
+* 若要刷{{tr|Giant Tortoises}}，在{{tr|surface Jungle}}要比在[[{{tr|Underground Jungle}}]]中刷更简单，因为那里有更大的生成空间。或者也可以在{{tr|underground}}挖出一大片区域。[[{{tr|summon weapons}}]]（如[[{{tr|Pirate Staff}}]]）在任意位置都可以用来帮助刷{{tr|Giant Tortoises}}。
+
+== 花絮 ==
+* 这个{{tr|enemy}}和它的[[{{tr|Ice Tortoise}}]]变体可能参考了 [https://metroid.fandom.com/wiki/Tatori Tatori]，一种在动作冒险游戏{{维基百科|b=y|Super Metroid|t=超级银河战士}}中类似的乌龟敌怪，它也以同样的旋转攻击方式攻击玩家。
+* 虽然名字叫做巨型''陆龟''，它掉落的却是''海龟''壳。
+* {{tr|Giant Tortoise}}的眼睛在进入滚动状态时会短暂变成像它的壳一样的棕色。这可能是一个绘制错误。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Turtle Shells}}的{{tr|Drop rate}}由 1/17 提升至 1/12。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}旧外观是 [[File:Giant Tortoise (old).png|40px]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Giant Tortoise}}

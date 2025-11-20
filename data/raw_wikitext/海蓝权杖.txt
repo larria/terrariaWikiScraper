@@ -1,0 +1,89 @@
+{{legacy nav tab}}
+{{item infobox | boxwidth = 22em
+| auto = 157
+| listcat = magic weapons / wands
+| tags = loot / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Aqua Scepter (demo).gif|frame|right|{{tr|Aqua Scepter}}的水粒子穿透三个[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Aqua Scepter}}'''是一个[[{{tr|pre-Hardmode}}]]的[[{{tr|wand}}]]，可以快速发射弧形水流。每道水流{{lcfirst:{{penetrate|auto=22|name=\0}}}}{{tr|Aqua Scepter}}有 {{chance|1/7}} 的概率从[[{{tr|Dungeon}}]]内的[[{{tr|Gold Chest}}#{{tr|Dungeon}}|{{tr|Locked Gold Chests}}]]中找到，且有 {{chance|1/7}} 的概率从{{eil|Golden Lock Box}}中获得。
+	
+其最佳[[{{tr|modifier}}]]是'''{{tr|Mythical}}'''，具有最高的总体属性加成。由于[[{{tr|invincibility frames}}]]作用，'''{{tr|Sluggish}}'''可对少量小型{{tr|enemy}}造成更高的 {{DPS}}，但是在其他情况下较弱。
+
+== 备注 ==
+* 如果角度正确，水平{{tr|projectile}}外观上大约可达 64 {{tr|tiles}}。
+* {{tr|Aqua Scepter}}不能影响燃烧类{{tr|debuff}}（如[[{{tr|On Fire!}}]]）。
+* 在内部，{{tr|the Aqua Scepter}}具有 {{iteminfo|Aqua Scepter|useTime}} 的 <code>[[useTime]]</code> 和 {{iteminfo|Aqua Scepter|useAnimation}} 的 <code>[[useAnimation]]</code>，使其每按下一次 {{key|use}} 键可发射 {{#expr:{{iteminfo|Aqua Scepter|useAnimation}}/{{iteminfo|Aqua Scepter|useTime}}}} 道{{tr|water stream}}。
+* {{tr|The Water Stream}}击中时造成 10 {{tr|ticks}}{{tick}}[[{{tr|global invincibility frame}}]], 这意味着 2 道{{tr|water stream}}通常不能击中同一目标。
+** 但是，因为其仅能穿透 4 个目标，所以第一道{{tr|water stream}}不会对第五个目标造成{{tr|invincibility frames}}，这使得第五个目标会被两道{{tr|water stream}}各击中一次。
+** [[{{tr|Sluggish}}]]{{tr|Aqua Scepter}}每 10 {{tr|tick}}发射一次，这一定程度上避免了{{tr|invincibility frame}}的影响。
+* 在 {{eil|don't dig up}} 和 {{eil|Get fixed boi}} {{tr|seeds}}中，{{tr|Aqua Scepter}}会获得下列改动：
+** 和[[{{tr|Bubble Gun}}]]调换位置。因此，它可掉落自[[{{tr|Duke Fishron}}]]，而非在{{tr|Locked Gold Chests}}和{{tr|Golden Lock Boxes}}中找到。
+** {{tr|Damage}}由 27 提升至 90。
+** {{tr|Use time}}由 8 降低至 5。
+** {{tr|Sell value}}由 {{coin|1gc 75sc}} 提升至 {{gc|5}}。
+** 现在使用[[{{tr|local invincibility frames}}]]，每次击中施加 12 {{tr|tick}}{{tr|local invincibility frames}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+*** 由于{{tr|projectile}}的[[{{tr|extraUpdates}}]]值为 {{projectileinfo|22|extraUpdates}}，{{tr|invincibility frame}}的实际长度应为 {{#expr:floor(12/({{projectileinfo|22|extraUpdates}}+1))+12 mod ({{projectileinfo|22|extraUpdates}}+1)}} {{tr|tick}}。
+*** 这使得[[{{tr|Mythical}}]]在此{{tr|seed}}中成为毫无争议的最佳{{tr|modifier}}。
+
+== 小贴士 ==
+* 由于其强穿透能力和稳定输出，{{tr|the Aqua Scepter}}是对抗[[{{tr|Wall of Flesh}}]]的优秀{{tr|weapon}}。
+
+== 花絮 ==
+* [[{{tr|Golden Shower}}]]可被看做[[{{tr|Hardmode}}]]版本的{{tr|Aqua Scepter}}，虽然它是[[{{tr|spell book}}]]而非{{tr|wand}}。
+* 它会发出与[[{{tr|Rocket Boots}}]]相同的音效。
+
+== 历史 ==
+{{history|Desktop 1.4.4.8|击中数从无限减少至 5。}}
+{{history|Desktop 1.4.4|
+** {{tr|Damage}}由 16 提升至 27。
+** {{tr|Knockback}}由 5 提升至 7。
+** {{tr|Mana Cost}}由 6 提升至 7。
+** 范围大幅增加，下降角度的变化更柔和。}}
+{{history|Desktop 1.4.0.1|{{tr|Sell value}}由 {{sc|54}} 提升至 {{coin|1gc 75sc}}。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧外观为 [[File:Aqua Scepter (pre-1.3.5).png|link=]]}}
+{{history|Desktop 1.3.0.1|{{tr|Damage}}由 15 提升至 16。}}
+{{history|Desktop 1.2.3|{{tr|Mana cost}}由 4 提升至 6。}}
+{{history|Desktop 1.2|
+** {{tr|Sprite updated.}}旧外观为 [[File:Aqua Scepter (pre-1.2).png|link=]]
+** 现在以弧形发射。
+** {{tr|Damage}}由 14 提升至 15。
+** {{tr|Mana}}消耗进一步降低至 4。}}
+{{history|Desktop 1.0.6|
+** {{tr|Damage}}由 15 降低至 14。
+** {{tr|Mana cost}}由 10 降低至 7。
+** {{tr|Range}}增加。}}
+{{history|Desktop 1.0.5|
+** {{tr|Use time}}由 29 减少至 15。
+** {{tr|Mana cost}}由 12 降低至 10。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** {{tr|Damage}}由 15 提升至 16。
+** {{tr|Sprite updated}}为与{{tr|Desktop}} 1.3.5一致。}}
+{{history|Console 1.02|
+** {{tr|Sprite updated.}}
+** 现在以弧形发射。
+** {{tr|Damage}}由 14 提升至 15。
+** {{tr|Mana cost}}由 7 降低至 4。}}
+{{history|Console-Release|Introduced=y|与{{tr|Desktop}} 1.0.6 的属性一并引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Mana cost}}由 4 提升至 6。}}
+{{history|Mobile 1.2.6508|
+** {{tr|Sprite updated.}}
+** 现在以弧形发射。
+** {{tr|Damage}}由 14 提升至 15。
+** {{tr|Mana cost}}由 7 降低至 4。}}
+{{history|Mobile-Release|Introduced=y|与{{tr|Desktop}} 1.0.6 的属性一并引入。}}
+{{history|3DS-Release|Introduced=y|与 1.2.3 的属性一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Aqua Scepter}}

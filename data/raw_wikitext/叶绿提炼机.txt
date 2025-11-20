@@ -1,0 +1,343 @@
+{{exclusive|1.4.4}}
+{{item infobox
+| auto = 5296
+| type = Furniture
+| width = 3 | height = 3
+}}
+
+'''{{tr|Chlorophyte Extractinator}}'''是个[[{{tr|Mechanical Bosses}}]] 后、[[{{tr|Extractinator}}]]的升级版{{tr|item}}，能够将[[{{tr|Silt Block}}]]、[[{{tr|Slush Block}}]]、和[[{{tr|Desert Fossil}}]]转换为更加珍贵的物品，如[[{{tr|ores}}]]、[[{{tr|coins}}]]、和[[{{tr|gems}}]]，也能将{{tr|fishing}}垃圾转换为低级的{{tr|bait}}。{{tr|The Chlorophyte Extractinator}}能够更快地转换物品，且能产出[[{{tr|Hardmode ores}}]]；它还能将[[{{tr|Glowing Moss}}]]交换为所有类型的{{tr|mosses}}（[[{{tr|Helium Moss}}]]除外），而非仅限普通{{tr|moss}}。
+
+它还能将大部分[[{{tr|Corruption}}]]、[[{{tr|Crimson}}]]、和[[{{tr|Hallow}}]]{{tr|variants}}的{{tr|blocks}}转变为其普通种类。除此之外，它还能用来将{{tr|ores}}/{{tr|bars}}转换成其对应的{{tr|alternate ore types}}（如将[[{{tr|Tin}}]]转换为[[{{tr|Copper}}]]），以及将[[{{tr|Dungeon Brick}}]]变为另一种{{tr|variants}}。
+
+要使用{{tr|Chlorophyte Extractinator}}，首先需要将它[[{{tr|placed}}]]在{{tr|world}}中。在此之后，需要在{{tr|Chlorophyte Extractinator}} 3×3 的区域内使用合适的{{tr|blocks}}（使用 {{key|use}} 键）。按住 {{key|as}} 键，并点击{{tr|Chlorophyte Extractinator}}时，会自动地将玩家{{tr|inventory}}中可提炼的{{tr|items}}自动消耗掉，而无需手动把它们挑选出来。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Chlorophyte Extractinator|expectedrows=1}}
+
+== 可能的转化 ==
+{{source code ref|v=1.4.4.6|method=Terraria.Player.ExtractinatorUse|noref=y}}
+{{options/set|item|icons=no}}{{flexstart|alignitems=start}}<section begin="silt-slush" />
+{| class="terraria sortable"
+|+ 使用{{item|Silt Block}} / {{item|Slush Block}}
+! {{tr|Item}} !! 几率 !! 数量 !! 平均数量 !! 每 1000 次提炼可获得的数量
+|-
+| {{item|Platinum Coin}} || 0.0073% || 1–11 || 1.2758 || {{#expr:(0.0073 * 1.2758 * 10) round 2}} ({{coin|{{#expr:(0.0073 * 1.2758 * 10) round 2}}pc}})
+|-
+| {{item|Gold Coin}} || 0.1017% || 1–100 || 10.3346 || {{#expr:(0.1017 * 10.3346 * 10) round 2}} ({{coin|{{#expr:(0.1017 * 10.3346 * 10) round 2}}gc}})
+|-
+| {{item|Silver Coin}} || 1.3534% || 1–100 || 17.7843 || {{#expr:(1.3534 * 17.7843 * 10) round 2}} (≈ {{coin|{{#expr:(1.3534 * 17.7843 * 10 * 100) round -2}}}})
+|-
+| {{item|Copper Coin}} || 64.2145% || 1–100 || 35.5588 || {{#expr:(64.2145 * 35.5588 * 10) round 2}} (≈ {{coin|{{#expr:(64.2145 * 35.5588 * 10) round -2}}}})
+|-
+| {{item|Amber Mosquito}} || 0.01% || 1 || 1 || {{#expr:(0.01 * 1 * 10) round 2}}
+|-
+| {{item|Amethyst}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Topaz}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Sapphire}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Emerald}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Ruby}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Diamond}} || 0.3333% || 1–16 || 1.1775 || {{#expr:(0.3333 * 1.1775 * 10) round 2}}
+|-
+| {{item|Amber}} || 0.9598% || 1–16 || 1.1775 || {{#expr:(0.9598 * 1.1775 * 10) round 2}}
+|-
+| {{item|Copper Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tin Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Iron Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Lead Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Silver Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tungsten Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Gold Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Platinum Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Cobalt Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Palladium Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Mythril Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Orichalcum Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Adamantite Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|-
+| {{item|Titanium Ore}} || 2.239552% || 1–16 || 1.1775 || {{#expr:(2.239552 * 1.1775 * 10) round 2}}
+|}<section end="silt-slush" /><section begin="fossil" />
+{| class="terraria sortable"
+|+ 使用{{item|Desert Fossil}}
+! {{tr|Item}} !! 几率 !! 数量 !! 平均数量 !! 每 1000 次提炼可获得的数量
+|-
+| {{item|Sturdy Fossil}} || 10% || 1–7 || 1.3 || {{#expr:(10 * 1.3 * 10) round 2}}
+|-
+| {{item|Platinum Coin}} || 0.0066% || 1–11 || 1.2758 || {{#expr:(0.0066 * 1.2758 * 10) round 2}} ({{coin|{{#expr:(0.0066 * 1.2758 * 10) round 2}}pc}})
+|-
+| {{item|Gold Coin}} || 0.0915% || 1–100 || 10.3345 || {{#expr:(0.0915 * 10.3345 * 10) round 2}} ({{coin|{{#expr:(0.0915 * 10.3345 * 10) round 2}}gc}})
+|-
+| {{item|Silver Coin}} || 1.2178% || 1–100 || 17.7839 || {{#expr:(1.2178 * 17.7839 * 10) round 2}} ({{coin|{{#expr:(1.2178 * 17.7839 * 10 * 100) round -2}}}})
+|-
+| {{item|Copper Coin}} || 57.7876% || 1–100 || 26.892 || {{#expr:(57.7876 * 26.892 * 10) round 2}} ({{coin|{{#expr:(57.7876 * 26.892 * 10) round -2}}}})
+|-
+| {{item|Amber Mosquito}} || 0.027% || 1 || 1 || {{#expr:(0.027 * 1 * 10) round 2}}
+|-
+| {{item|Amethyst}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Topaz}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Sapphire}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Emerald}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Ruby}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Diamond}} || 0.15% || 1–16 || 1.1775 || {{#expr:(0.15 * 1.1775 * 10) round 2}}
+|-
+| {{item|Amber}} || 1.7629% || 1–16 || 1.1775 || {{#expr:(1.7629 * 1.1775 * 10) round 2}}
+|-
+| {{item|Copper Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tin Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Iron Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Lead Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Silver Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Tungsten Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Gold Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Platinum Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Cobalt Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Palladium Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Mythril Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Orichalcum Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Adamantite Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|-
+| {{item|Titanium Ore}} || 1.9938% || 1–16 || 1.1775 || {{#expr:(1.9938 * 1.1775 * 10) round 2}}
+|}<section end="fossil" /><section begin="moss" />
+{| class="terraria sortable"
+|+ 使用{{item|Glowing Moss|image=Lava Moss.png/Krypton Moss.png/Xenon Moss.png/Argon Moss.png/Neon Moss.png/Helium Moss.gif}}
+|-
+! {{tr|Item}} !!几率 !! 数量
+|-
+| {{item|Green Moss}} || 18% || 1
+|-
+| {{item|Brown Moss}} || 18% || 1
+|-
+| {{item|Red Moss}} || 18% || 1
+|-
+| {{item|Blue Moss}} || 18% || 1
+|-
+| {{item|Purple Moss}} || 18% || 1
+|-
+| {{item|Lava Moss}} || 2% || 1
+|-
+| {{item|Krypton Moss}} || 2% || 1
+|-
+| {{item|Xenon Moss}} || 2% || 1
+|-
+| {{item|Argon Moss}} || 2% || 1
+|-
+| {{item|Neon Moss}} || 2% || 1
+|}<section end="moss" />
+<section begin="junk" />
+{| class="terraria sortable"
+|+ 使用{{item|Old Shoe}} / {{item|Seaweed (junk)|Seaweed}} / {{item|Tin Can}}
+! {{tr|Item}} !!几率 !! 数量
+|-
+| {{item|Snail}} || 16.67% || 1
+|-
+| {{item|Apprentice Bait}} || 75% || 1
+|-
+| {{item|Worm}} || 5.56% || 1
+|-
+| {{item|Journeyman Bait}} || 2.78% || 1
+|}<section end="junk" />
+{{flexend}}
+
+== 特殊转化 ==
+下方是保证能通过{{tr|Chlorophyte Extractinator}}被交换为另一件物品的物品列表。{{source code ref|v=1.4.4.5|method=Terraria.GameContent.ItemTrader.CreateChlorophyteExtractinator}}
+{{options/set|item|showid=no|mode=table}}{{flexstart}}
+{| class="terraria lined sortable"
+! colspan=2 | 放入
+! colspan=2 | 产生
+|-
+| {{item|Copper Ore}}
+| {{item|Tin Ore}}
+|-
+| {{item|Tin Ore}}
+| {{item|Copper Ore}}
+|-
+| {{item|Iron Ore}}
+| {{item|Lead Ore}}
+|-
+| {{item|Lead Ore}}
+| {{item|Iron Ore}}
+|-
+| {{item|Silver Ore}}
+| {{item|Tungsten Ore}}
+|-
+| {{item|Tungsten Ore}}
+| {{item|Silver Ore}}
+|-
+| {{item|Gold Ore}}
+| {{item|Platinum Ore}}
+|-
+| {{item|Platinum Ore}}
+| {{item|Gold Ore}}
+|-
+| {{item|Demonite Ore}}
+| {{item|Crimtane Ore}}
+|-
+| {{item|Crimtane Ore}}
+| {{item|Demonite Ore}}
+|-
+| {{item|Cobalt Ore}}
+| {{item|Palladium Ore}}
+|-
+| {{item|Palladium Ore}}
+| {{item|Cobalt Ore}}
+|-
+| {{item|Mythril Ore}}
+| {{item|Orichalcum Ore}}
+|-
+| {{item|Orichalcum Ore}}
+| {{item|Mythril Ore}}
+|-
+| {{item|Adamantite Ore}}
+| {{item|Titanium Ore}}
+|-
+| {{item|Titanium Ore}}
+| {{item|Adamantite Ore}}
+|-
+| {{item|Copper Bar}}
+| {{item|Tin Bar}}
+|-
+| {{item|Tin Bar}}
+| {{item|Copper Bar}}
+|-
+| {{item|Iron Bar}}
+| {{item|Lead Bar}}
+|-
+| {{item|Lead Bar}}
+| {{item|Iron Bar}}
+|-
+| {{item|Silver Bar}}
+| {{item|Tungsten Bar}}
+|-
+| {{item|Tungsten Bar}}
+| {{item|Silver Bar}}
+|-
+| {{item|Gold Bar}}
+| {{item|Platinum Bar}}
+|-
+| {{item|Platinum Bar}}
+| {{item|Gold Bar}}
+|-
+| {{item|Demonite Bar}}
+| {{item|Crimtane Bar}}
+|-
+| {{item|Crimtane Bar}}
+| {{item|Demonite Bar}}
+|-
+| {{item|Cobalt Bar}}
+| {{item|Palladium Bar}}
+|-
+| {{item|Palladium Bar}}
+| {{item|Cobalt Bar}}
+|-
+| {{item|Mythril Bar}}
+| {{item|Orichalcum Bar}}
+|-
+| {{item|Orichalcum Bar}}
+| {{item|Mythril Bar}}
+|-
+| {{item|Adamantite Bar}}
+| {{item|Titanium Bar}}
+|-
+| {{item|Titanium Bar}}
+| {{item|Adamantite Bar}}
+|-
+| {{item|Shadow Scale}}
+| {{item|Tissue Sample}}
+|-
+| {{item|Tissue Sample}}
+| {{item|Shadow Scale}}
+|-
+| {{item|Ebonstone Block}}
+| {{item|Stone Block|rowspan=3}}
+|-
+| {{item|Crimstone Block}}
+|-
+| {{item|Pearlstone Block}}
+|-
+| {{item|Ebonsand Block}}
+| {{item|Sand Block|rowspan=3}}
+|-
+| {{item|Crimsand Block}}
+|-
+| {{item|Pearlsand Block}}
+|-
+| {{item|Ebonsandstone Block}}
+| {{item|Sandstone Block|rowspan=3}}
+|-
+| {{item|Crimsandstone Block}}
+|-
+| {{item|Pearlsandstone Block}}
+|-
+| {{item|Hardened Ebonsand Block}}
+| {{item|Hardened Sand Block|rowspan=3}}
+|-
+| {{item|Hardened Crimsand Block}}
+|-
+| {{item|Hardened Pearlsand Block}}
+|-
+| {{item|Purple Ice Block}}
+| {{item|Ice Block|rowspan=3}}
+|-
+| {{item|Red Ice Block}}
+|-
+| {{item|Pink Ice Block}}
+|-
+| {{item|Pink Brick}}
+| {{item|Blue Brick}}
+|-
+| {{item|Blue Brick}}
+| {{item|Green Brick}}
+|-
+| {{item|Green Brick}}
+| {{item|Pink Brick}}
+|}{{flexend}}
+{{options/reset|item}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Introduced.}}}}
+{{history|Console 1.4.4|{{tr|Introduced.}}}}
+{{history|Switch 1.4.4|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.4|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-craft = yes
+}}
+
+{{language info|en=Chlorophyte Extractinator}}

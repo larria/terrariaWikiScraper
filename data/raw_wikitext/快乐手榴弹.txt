@@ -1,0 +1,41 @@
+{{exclusive|1.3.0.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 3548
+| sound1 = Item 14.wav
+| soundcaption1 = 爆炸
+| tags = drop / vendor / vendor:Party Girl
+}}
+|{{drop infobox}}
+}}
+
+'''{{tr|Happy Grenades}}'''是一种爆炸类[[{{tr|consumable ranged weapon}}]]，造成普通[[{{tr|Grenade}}]]的一半伤害并显示{{tr|confetti}}效果。它们一开始是[[{{tr|Party Girl}}]]被杀时掉落的，但每次她被杀死都只有 {{chance|1/4}} 几率掉落。一旦{{tr|the party girl}}再次重生，在玩家的[[{{tr|inventory}}]]中有它的情况下，可以以每个 {{iteminfo|Happy Grenade|buy}} 的价格从她那购买之。
+
+== 备注 ==
+* {{transclude|{{tr|NPCs}}/掉落备注}}
+
+[[File:Happy Grenade (demo).gif|thumb|400x400px|{{tr|the Happy Grenade}}的动画。]]<!-- causes the {{transclude}} box to be too far down if placed before it -->
+
+== 小贴士 ==
+* {{tr|Happy Grenades}}更适合作为{{tr|novelty item}}使用，因为它们只有{{tr|normal Grenades}}的一半伤害且更难获得。如果自{{tr|Party Girl}}处购买，其成本是{{tr|normal grenade}}的 {{buy expr|Happy Grenade|/|Grenade|round 2|raw=y}} 倍。要购买两颗{{tr|happy grenades}}（加起来能造成相当于一颗{{tr|normal grenade}}的伤害）需要花费 {{buy expr|Happy Grenade|*2}}，大概 {{buy expr|Happy Grenade|*2/|Grenade|round 2|raw=y}} 倍于{{tr|normal grenade}}的成本。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|
+** 现在在[[{{tr|Multiplayer}}]]中能正确爆炸并造成伤害了。
+** {{tr|damage type}}由{{tr|Throwing}}改为{{tr|Ranged}}。}}
+{{history|Desktop 1.3.1|修复了{{tr|projectile}}没有{{tr|damage type}}而非{{tr|throwing}}的 {{tr|bug}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-weapon = yes
+}}
+{{Master Template Weapons
+| show-rangedother = yes
+}}
+
+{{language info|en=Happy Grenade}}

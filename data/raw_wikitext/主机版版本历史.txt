@@ -1,0 +1,804 @@
+{{exclusive|console=y|old-gen console=y|switch=y|nocat=y}}
+{{notice|{{old-gen console version|nl=y}}和{{tr|Console version}}共用{{tr|history}}。不过任何高于 1.09 版本的更新不适用于{{tr|Old-gen console version}}。<br/>{{switch version|nl=y}}通常被视为{{tr|Console version}}的一部分，但由于更新的不同在此 wiki 上{{tr|History}}章节中被单独区分。}}
+{{about|所有{{tr|console version}}和{{tr|old-gen console version}}{{tr|Terraria}}的更新列表|{{tr|desktop version}}的更新列表|{{tr|Desktop version history}}|所有{{tr|Mobile}}更新|{{tr|Mobile version history}}|所有{{tr|3DS}}更新|3DS版版本历史|未来的{{tr|Desktop}}更新|即将推出的新功能}}
+__FORCETOC__
+== 更新日志 ==
+=== DR Studios ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! {{tr|Version}}
+! 发布时间
+! 更改
+
+{{/row
+| v = 1.4.4.9.5 (Build 1081)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date = 2023/10/02
+| ref = {{forums thread|129594|Terraria 1.4.4.9.5 - Console & Mobile Fixes Out Today}} {{small|{{date|2023|10|02}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+* 修复了在 PlayStation 4 上游玩时，游戏有时会卡住的问题。
+* Fixed an issue where some Xbox players would not be able to access old save data after upgrading to 1.4.4.9.2.
+* Fixed an issue where map exploration progress would reset between sessions for some PlayStation players.
+* Fixed M+K Multiplayer crash when holding a Chest's item while moving away from a Chest while an item is held then swapping into inventory.
+* Fixed M+K crash when attempting to fill an inventory slot by right clicking to take one duplicated item only (as opposed to a stack), then placing it in the slot freed by an Item Frame.
+* Fixed a crash in Splitscreen when player 1 saves and quits while a second+ player displays Syncing Files.
+* Fixed a crash In Splitscreen, when two players both have an empty Chest open and one player knocks it down with a pickaxe.
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.9.4 (Build 1050)
+| platform = ps4
+| name = 修补程序
+| date = 2023/07/05
+| ref = {{forums thread|119388|Terraria State of the Game - June 2023}} {{small|{{date|2023|06|29}}}}
+| changes = 修复了若干崩溃问题。
+}}
+
+{{/row
+| v = 1.4.4.9.4 (Build 1035)
+| platform = xbox one
+| name = 修补程序
+| date = 2023/05/31
+| ref = {{forums thread|118892|Terraria State of the Game - May 2023}} {{small|{{date|2023|06|05}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+* 修复了将“您可以通过语音、文本或邀请进行通信”权限设置为“阻止”时，玩家无法在 Xbox 上使用多人游戏的问题。
+* 修复了{{tr|controller}}输入在游戏中反应延迟的 Xbox 问题。
+* 修复了某些鼠标输入会阻止键盘在 Xbox 上工作的问题。
+* 修复了在不确定的游戏量后键盘断开连接的 Xbox 问题。
+* 修复了游戏在长时间游玩后停止响应键盘输入的问题。
+* 修复了游戏加载{{tr|Multiplayer}}时崩溃的问题。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v-xbox one = 1.4.4.9.2 (Build 1026)
+| v-ps4 = 1.4.4.9.2 (Build 1016)
+| v-switch = 1.4.4.9.2 (Build 1015)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date = 2023/05/02
+| ref = {{forums thread|118217|Terraria State of the Game - March 2023}} {{small|{{date|2023|03|30}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+
+; Changes and additions
+* Improved the way backgrounds zoom in and out.
+* Massive internal systems upgrade in preparation for crossplay, bringing the latest APIs and a huge rework of the Xbox backend.
+
+; 修复
+* Fixed an issue where the game would crash after creating two small worlds consecutively.
+* Fixed an issue where the Aether Monolith was not giving off light.
+* Fixed an issue where the seaweed in ocean caverns would not be visible.
+* Fixed an issue where vanity accessories would disappear from the player selection screen when exiting a world immediately after death.
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.9 (Build 993)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date-xbox one-ps4 = 2022/11/30
+| date-switch = 2022/12/06
+| ref = {{forums thread|114357/post-2832196|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|11|30}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.4.6]]、[[1.4.4.7]]、[[1.4.4.8]]、[[1.4.4.8.1]] 和 [[1.4.4.9]] 页面以查看更改的完整列表。''
+
+; 增加/更改
+* 在{{tr|Settings}}中添加了调整鼠标滚轮灵敏度的选项。
+
+; 修复 Bug
+* Fixed a crash issue that would occur when player died in a "getfixedboi" seed world and an then tried to load a "theconstant" world
+* 修复了当玩家退出大世界后加载小世界会发生崩溃的问题
+* 修复了在{{tr|Multiplayer}}中，玩家可以在击败 {{tr|boss}} 后看到并拾取多个{{tr|Treasure Bags}}的问题
+* 修复了{{tr|Nurse}}不会治疗玩家的问题
+* 修复了{{tr|party hats}}有时会在{{tr|NPC}}所在图层的后面，而非前面的问题
+* Fixed a split-screen issue where player-1 could see player-2's block placement preview, but player-2 couldn't see their own
+* 修复了“{{tr|Helium Moss Fishing Bobber}}”不会在{{tr|Inventory}}中显示彩虹效果的问题
+* 修复了“{{tr|Slime gun}}”和“{{tr|Water gun}}”不会显示它们的射弹效果的问题
+* 修复了“{{tr|Extendo Grip}}”不会增加拾取/放置范围的问题
+* Fixed an issue where shimmerfalls would not display correctly
+* 修复了玩家在多人游戏中不能跳过{{tr|Old One's Army}}波次间的冷却时间的问题
+* 修复了 NPC 处于{{tr|Shimmer}}状态时，NPC 的页面图标不会更新的问题
+* 修复了{{tr|Town Slimes}}的派对帽在 NPC 的对话界面会偏离的问题
+* 修复了在多人游戏中，由{{tr|Axe of Regrowth}}重新种植的橡实不会正常显示的问题
+* 修复了“史莱姆大分裂”成就不会正确触发的问题。
+* 修复了切换输入方法时，一些{{tr|tooltips}}不会更新的问题。
+* 修复了{{tr|Nurse}}会治疗“{{tr|Peckish}}”{{tr|debuff}}的问题。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.5 (Build 977)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date-xbox one-ps4 = 2022/10/31
+| date-switch = 2022/11/09
+| ref = {{forums thread|114357/post-2807459|Terraria: Labor of Love is Out Now!}} {{small|{{date|2022|10|27}}}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.4.2]]、[[1.4.4.3]]、[[1.4.4.4]] 和 [[1.4.4.5]] 页面以查看更改的完整列表。''
+
+; 修复 Bug
+* 修复了在{{tr|Multiplayer}}{{tr|Expert mode}}中，使用{{tr|Solar Tablet}}无法召唤{{tr|the Solar Eclipse}}的问题
+* 修复了{{tr|Multiplayer}}进程中的本地服务器无法使用{{tr|Shellphone}}传送至出生点的问题
+* 修复了使用“精简”主题时，当在{{tr|inventory}}中使用{{tr|controller}}进行“研究”时，游戏会崩溃的问题
+* 修复了{{tr|Dreadnautilus}}无法生成{{tr|squids}}的问题
+* 修复了部分{{tr|materials}}在{{tr|Rubblemaker}}面板中会相互覆盖的问题
+* 修复了在{{tr|multiplayer}}中，使用{{tr|Peddler's Satchel}}时会召唤{{tr|the Goblin Army}}的问题
+* 修复了交叉的{{tr|rope}}会显示在交叉的{{tr|platforms}}前面的问题
+* 修复了{{tr|Light's Bane}}的视觉效果是绿色而不是紫色的问题
+* 修复了嵌入的{{tr|icons}}在 getfixedboi {{tr|world}}生成文本中缺失的问题
+* 修复了{{tr|Spectrum Kite}}的{{tr|tooltip}}在使用触摸或{{tr|Controller}}时不会更新的问题
+* 修复了{{tr|Guide books}}的{{tr|tooltip}}在使用触摸或{{tr|Controller}}时不会更新的问题
+* 修复了游戏有时会在{{tr|Hardmode}}转化中卡住的问题
+* 修复了{{tr|Don't Starve}}的遮罩对世界生成 UI 不起作用的问题
+* 修复了导致{{tr|Health bar}}遮住{{tr|the Mana tooltip}}的小问题
+* 修复了玩家无法{{tr|trash}}制作的、与制作的{{tr|items}}交换的和新拾取的{{tr|item}}的问题
+* 修复了{{tr|players}}在 PlayStation 上无法解锁“{{tr|Appease the Volcano Gods}}”{{tr|trophy}}的问题
+* 修复了特定情况下，玩家的地图数据无法保存的问题
+* 修复了{{tr|Player and World}}名称中如果带撇号，那么两次打开游戏之间无法保留收藏状态的问题
+* 修复了部分{{tr|world names}}包含撇号时，可能会产生视觉效果的瑕疵的问题
+* {{tr|Skeletron}}在 getfixedboi {{tr|seed}}中无法在白天召唤的问题
+* 修复了{{tr|info accessories}}的文本会在离按钮太近时改变位置的问题
+* 修复了{{tr|crafting}}时，如果按住“下”的按钮，会自动跳到下一个{{tr|item}}的问题
+* 修复了自然传播的{{tr|corruption}}会摧毁{{tr|jungle}}而非转化{{tr|grass}}的问题
+* 修复了{{tr|surface and underground layers}}之间的过渡是扭曲的黑条的问题
+* 修复了打开{{tr|chat}}时的铅笔{{tr|icon}}在 K&M 屏幕上悬浮的问题
+* 修复了{{tr|Rotten Fork}}、{{tr|Gungnir}}、和{{tr|Dark Lance}}在逆转重力下，外观会出现瑕疵的问题
+* 修复了 NPC 对话图标不能实时反应其嬗变状态的问题
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4.1 (Build 967)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date = 2022/10/19
+| ref = {{forums thread|114357/post-2786200}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.4.1]] 页面以查看更改的完整列表。''
+
+; 增加/更改
+* 添加了一个新{{tr|Achievements}}
+* “{{tr|Classic}}”现在是新{{tr|players}}的默认难度，而非“{{tr|Journey}}”
+
+; 修复 Bug
+* 修复了将{{tr|Guide Voodoo Doll}}丢进 “Celebrationmk10” 的{{tr|lava}}池，会杀死{{tr|the Guide}}但无法生成{{tr|the Wall of Flesh}}的问题
+* 修复了一些{{tr|critter cages}}的图像瑕疵
+* 修复了在{{tr|Multiplayer}}进程中，一些{{tr|items}}无法正常嬗变的问题
+* 修复了{{tr|Shellphone}}无法传送玩家，制作时也不显示{{tr|tooltip}}的问题
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.4 (Build 960)
+| platform = xbox one/ps4/switch
+| name = 爱的付出<br/>（等价于{{tr|Desktop}} [[1.4.4]]）
+| date = 2022/09/28
+| ref = {{forums thread|114357}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.4]] 页面以查看更改的完整列表。''
+
+; {{tr|Console}}独有更改
+* 为 Xbox 和 PlayStation添加了三种{{tr|trophies}}
+* 为{{tr|Inventory}}相机移动添加了新的设置，有三种位置设置：自动/总是/永不
+* 为{{tr|coin}} & {{tr|ammo slots}}添加了图标，以使其更清晰
+* 世界生成时的加载条，现在背景不再透明
+* 在使用{{tr|Controller}}时为{{tr|Auto Select}}添加了一个切换选项，以便与既有的触摸输入相一致
+* 更新了取消{{tr|mount}}和{{tr|Wiring}}的控制横幅
+* 更新了{{tr|Void Bag}}中新{{tr|item}}的高亮效果
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.3.2.3 (Build 887)
+| platform = xbox one/ps4/switch
+| name = 修补程序
+| date-xbox one-ps4 = 2022/05/23
+| date-switch = 2022/05/30
+| ref = {{forums thread|111809}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 更改
+* 将界面编辑器的布局变得更加用户友好。
+
+; 修复
+* 修复了 PS4 玩家无法解锁“{{tr|Appease the Volcano Gods}}”{{tr|achievement}}的问题。
+* 修复了玩家在{{tr|Multiplayer}}中无法打开{{tr|the Grand Design}}和{{tr|Multicolor Wrench}}的弹出菜单的问题。
+* 修复了{{tr|Settings}}中的 UI 比例{{tr|slider}}会在玩家有三个页面组（每个角上一个）的情况下变得不可见，并将 UI 比例设置到最小的问题。
+* Fixed an issue where the Safe Region settings on Nintendo Switch would reset to default every time the game went from handheld to docked and vice versa.
+* Fixed an issue where some users were unable to navigate to the trash slot in the inventory when using a controller, with a specific UI page setup.
+* Fixed an issue where the weather would lock in a certain state after updating the game to the latest 1.4.3.2 version.
+* 修复了{{tr|Princess NPC}} 生成时没有名字的问题。
+* Fixed an issue where the Spinal Tap whip wouldn’t hit enemies correctly, which was especially visible when the player was wearing the Obsidian Armor.
+* 修复了{{tr|Abigail's Flower}}不会对{{tr|enemies}}造成伤害（除非是撞向它们）的问题。
+* 修复了玩家无法从{{tr|the Dye Trader}}处购买{{tr|Team Dye}}的问题。
+* 修复了允许玩家利用{{tr|Mannequin}}/{{tr|Womanequin}}或{{tr|Hat Rack}}复制{{tr|item}}的漏洞。
+* 修复了允许玩家不消耗{{tr|material}}无限制作{{tr|items}}的漏洞。
+* 修复了部分玩家在利用{{tr|sleeping}}设置{{tr|World Spawn}}后无法加入{{tr|world}}的问题。
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.3.2.0 (Build 863)
+| platform = xbox one/ps4/switch
+| name = [[1.4.1]]–[[1.4.3]] 同步更新<br/>（等价于{{tr|Desktop}} [[1.4.3.2]]）
+| date = 2022/04/27
+| ref = {{forums thread|111809}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 常规
+* You can now customize the color of your cursor - including the often-requested Rainbow Cursor!
+* {{tr|Credits}}现在可以直接从主界面访问
+* 在{{tr|Settings}}中，您现在可以在 UI 页面的折叠，展开和关闭默认选项之间进行选择
+
+; 改进
+* 电路功能提升优化
+* We have improved the existing filter & search mechanics in Crafting and Duplication
+* Now you can reset settings on a tab level, without having to reset everything
+* World selection screen has been improved and displays some more info
+* Some UI pages such as the Reforge menu and some storage pets now have a dedicated icon
+* You can now toggle between Crafting and Duplication without having both menus associated to a page group
+* Expanded/Collapsed/Closed page statuses are saved between sessions
+
+; 修复
+* Fixed a crash issue when trying to open the Painter’s shop during Christmas
+* Fixed an issue where the game would crash during multiplayer when reopening a chest while the inventory was open
+* Fixed a crash issue when placing furniture while building from the inventory
+* Fixed issues where some world objects were incorrectly positioned when on reverse gravity
+* Fixed a minor issue where some text editing fields (such as Chest) would accept unlimited characters
+* Fixed an issue where the placement grid would disappear when cycling between non-grid to grid items
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.6 (Build 813)
+| platform = switch
+| name = 修补程序
+| date = 2022/02/02
+| ref = {{forums thread|109413/page-11#post-2599284}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 新特性
+* You can now control the sun and the moon on the frontend menu by holding ZR + right stick.
+
+; 改进
+* Based on player feedback we've fixed the hotbar navigation when a Dynamic Hotbar item is bound to a hotbar slot, making it easier to jump through the Hotbar
+
+; {{tr|Multiplayer}}和分屏修复
+* Fixed mannequins losing items when placed by the host and not being able to be seen by other players
+* Fixed an issue in multiplayer where an item was lost if held when a chest was closed
+* Fixed player 2+ in split screen being immune to projectiles
+* Fixed issues where open menus interfered with joining multiplayer games
+* Fixed the issue where users were unable to navigate through the Options menu during multiplayer if their network connection was lost when a menu was open
+* Fixed the delay in picking up items when the host threw an item to another player
+* 修复了大量崩溃问题
+* Fixed the crash when the Painter's house is in a hallowed-snow graveyard biome and trying to open his shop
+
+; 其他修复
+* Fixed the issue where player's couldn't quick equip an item from a chest, as long as there isn't a conflicting binding for Use Item bound in the Settings
+* Fixed the controller binding for Research! You can now open the Research menu directly from an item in the Inventory. You can find this in Settings >> Controller >> Controller Bindings: Edit >> Inventory and bind Research Item!
+* Fixed an issue where the player was prevented from continuing to play if they died while a text input box was open
+* Fixed issue where sometimes when using a crafting station items could appear at a locked-on enemy's location
+* Fixed item pickup range in Journey mode to match PC. It's now possible to throw items from the inventory without immediately picking them back up!
+* Fixed a bug where the frame rate would drop when the housing menu was open and you had a lot of NPCs
+* Fixed the issue where the summons tag on enemies could disappear if you got too far away from the enemy, making it hard to know who your summons were targeted on
+* Fixed the issue where the biome artwork behind the map was incorrectly scaled depending on UI zoom level and especially in split screen
+* Fixed a graphical glitch in the tutorial dialog boxes
+
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.5 (Build 810)
+| platform = switch
+| name = 修补程序
+| date = 2022/01/18
+| ref = {{forums thread|109413/page-8#post-2587719}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复问题
+* 保存在{{tr|mannequins}}上的{{tr|Armor items}}在升级至 1.4 后消失
+* 保存在{{tr|item frame}}中的{{tr|Items}}在升级至 1.4 后外观上有缺陷并消失
+* 名字中使用特定字符时游戏会在角色创建时崩溃
+* The game crashes if the player accesses the inventory while on a shop menu, then moves away from the shop range and then enters the inventory again.
+* World generated chandeliers (not placed by player) appear corrupted, but will show correctly if they are pickaxed and placed again.
+* The placement grid disappears if the player accesses the inventory and chooses a non-grid item and exits
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.5 (Build 787)
+| platform = switch
+| name = 重置+旅程结束<br/>（等价于{{tr|Desktop}} [[1.4.0.5]]）
+| date = 2022/01/04
+| ref = {{forums thread|109413}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.0.1]] 页面以查看更改的完整列表。''
+
+; Switch 独有更改
+* 一系列新{{tr|settings}}和选项，从图像质量到控制外观，还有更多更多！
+* 水平 vs 垂直方向分屏开关
+* Revised Gamepad mapping to account for the wide range of Journey's End controls - adjusted Defaults (Console Legacy, Advanced, Simplified) as well!
+* UI 更改以匹配{{tr|Journey's End}}特性
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.6 (Build 803)
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2021/12/7
+| ref = {{forums thread|109844}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 新特性
+* You can now control the sun and the moon on the frontend menu by holding RT/R2 + right stick.
+* It is again possible to use the Touch Pad on the PS4 Dualshock Controller to zoom in and out of the world and transition between the world and map!
+** In Settings >> Controller >> Pinch Zoom World and Pinch Zoom Map are now available
+
+; 改进
+* Based on player feedback we've fixed the hotbar navigation when a Dynamic Hotbar item is bound to a hotbar slot, making it easier to jump through the Hotbar
+* Improved mouse & keyboard support across the board. Keyboard bindings for inventory management are now closer to PC
+** Use Shift/Ctrl/Alt + click to quick deposit/sell, quick trash and favorite items
+** Press Alt + left click to toggle the vanity visibility on equipment (this differs from PC, pressing Alt changes the cursor to an eye and you can click anywhere in the slot)
+** In Settings >> Keyboard & Mouse >> Quick Trash can be set to Shift + click or Ctrl + click
+* 提高了世界生成速度！
+* Improved boot up time, the game now starts a little bit quicker!
+
+; {{tr|Multiplayer}}和分屏修复
+* Fixed mannequins losing items when placed by the host and not being able to be seen by other players
+* Fixed an issue in multiplayer where an item was lost if held when a chest was closed
+* Fixed player 2+ in split screen being immune to projectiles
+* Fixed a few issues where open menus caused navigation conflicts or problems navigating the game in split screen and multiplayer
+* Fixed issues where open menus interfered with joining multiplayer games
+* Fixed the issue where users were unable to navigate through the Options menu during multiplayer if their network connection was lost when a menu was open
+* Fixed the delay in picking up items when the host threw an item to another player
+* 修复了大量崩溃问题：
+** Fixed some player reported crashes when player encounters certain trees from their 1.3 worlds
+** Fixed the crash when the Painter's house is in a hallowed-snow graveyard biome and trying to open his shop
+** Fixed a bug on PS4 where some worlds are unable to be hosted, or cause a crash when they move to an area which was very built up (many items placed in one location).
+
+; 其他修复
+* 修复了一些玩家无法解锁{{tr|Pet Collector}}{{tr|achievement}}的问题。
+* Fixed! The housing menu should be easier to navigate/query/assign npcs now!
+* Fixed the issue where player's couldn't quick equip an item from a chest, as long as there isn't a conflicting binding for Use Item bound in the Settings
+* Fixed the controller binding for Research! You can now open the Research menu directly from an item in the Inventory. You can find this in Settings >> Controller >> Controller Bindings: Edit >> Inventory and bind Research Item!
+* 修复了大量 UI 视觉和图像问题
+* 修复了一种{{tr|hairstyle}}显示在{{tr|the hairstyle}}列表菜单之外的问题。
+* Fixed an issue where the player was prevented from continuing to play if they died while a text input box was open
+* Fixed issue where sometimes when using a crafting station items could appear at a locked-on enemy's location
+* Fixed item pickup range in Journey mode to match PC. It's now possible to throw items from the inventory without immediately picking them back up!
+* 修复了 PS4 中{{tr|signs and tombstones}}的多行输入
+* Fixed a bug where the frame rate would drop when the housing menu was open and you had a lot of NPCs
+* Fixed the issue where the summons tag on enemies could disappear if you got too far away from the enemy, making it hard to know who your summons were targeted on
+* Fixed the issue where the biome artwork behind the map was incorrectly scaled depending on UI zoom level and especially in split screen
+* Fixed a graphical glitch in the tutorial dialog boxes
+* Fixed a missing controller prompt on tutorial dialog boxes
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.4.4 (Build 765)
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2021/10/19
+| ref = {{forums thread|107151/post-2521733}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 更改
+* "Classic" scheme has been changed to be the closest match Red's Pick from the Console 1.3 Era (though it retains the ability to remap/add all of the new functions available with 1.4)
+* D-Pad Cursor Snap feature from RL/PW can be achieved by binding dpad to Grid Snap
+* D-Pad Hotbar feature from RL/PW can be achieved by binding the four dpad directions to Dynamic Hotbar 1-4
+* Grapple is now bound to B again, along with Interact - Interact may be bound to whatever button players have assigned for Secondary Fire or Grapple, but not any others in order to avoid numerous conflicts and edge case issues.
+
+; 修复 Bug
+* Fixed an issue where the system was wrongly capping the maximum number of worlds at 10, but the UI was not recognizing this cap. The world/map cap is now 30 as originally intended, and the UI will enforce this (no New button if you have 30 or more worlds)
+* Fixed an issue with not being able to add more offline players to splitscreen on PS4
+* Fixed the mouse scroll wheel issues on PS4 and Xbox
+* Fixed lag spikes caused by the growth of Pumpkins
+* Fixed Player 2+ in split screen not being able to see the Traveling Merchant's wares
+* Fixed Thunderstorms in splitscreen causing blocks to become invisible
+* Fixed time being frozen in non-journey worlds when joining a MP session from the tutorial
+* Fixed the Angler's quests not being updated for Clients in a MP session
+* Fixed treasure bags only being dropped for one person in MP or Split screen
+* Fixed Dungeon Casters and other Projectile weapons' VFX not showing in the left hand side of the world
+* Fixed Geodes not being able to be thrown on the ground to open them
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.4.3 (Build 759)
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2021/10/07
+| ref = {{forums thread|107151/post-2513747}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复 Bug
+* 修复了{{tr|autosave}} bug
+* 修复了黑屏同步 bug
+* 修复了与{{tr|Empress of Light and Moon Lord}}战斗时的一处崩溃
+* 修复了长时间游玩后的崩溃
+* 修复了保存旧世界时的崩溃
+* 修复了{{tr|hotbar}}导航影响玩家移动的问题。
+* Fixed housing query controller bindings ''(Players will have to go into settings and rechoose from Classic, Advanced or Simplified again or bind the Housing Query setting)''
+* 修复了{{tr|research}}不消耗选中的{{tr|item}}堆的问题
+* 修复了鼠标在分屏暂停菜单中的冲突问题
+* 修复了 PS4 屏幕外鼠标光标
+* 修复了 PS4 {{tr|Empress of Light}}的{{tr|trophy}}
+
+; 增加
+* 
+* 在屏幕上添加了更多{{tr|controller}}的绑定
+* 在游戏中添加了安全区的设置
+* 增加了对 PS4 触摸板按钮的支持
+{{collapse bottom}}
+}}
+
+{{/row
+| v = 1.4.0.5.4.2 (Build 756)
+| platform = xbox one
+| name = 修补程序
+| date = 2021/10/01
+| ref = {{forums thread|107151/post-2508289}}
+| changes =
+修复了与文件同步相关的一处问题
+}}
+
+{{/row
+| v = 1.4.0.5.4.1 (Build 753)
+| platform = xbox one/ps4
+| name = 重置+旅程结束<br/>（等价于{{tr|Desktop}} [[1.4.0.5]]）
+| date = 2021/09/30
+| ref = {{forums thread|107151}}
+| changes =
+{{collapse top|点击展开详细列表|收起列表}}
+''参见 [[1.4.0.1]] 页面以查看更改的完整列表。''
+
+; {{tr|Console}}独有更改
+* 一系列新{{tr|settings}}和选项，从图像质量到控制外观，还有更多更多！
+* 水平 vs 垂直方向分屏开关
+* Revised Gamepad mapping to account for the wide range of Journey's End controls - adjusted Defaults (Console Legacy, Advanced, Simplified) as well!
+* UI 更改以匹配{{tr|Journey's End}}特性
+{{collapse bottom}}
+}}
+
+|}
+
+=== Pipeworks Studios ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! {{tr|Version}}
+! 发布时间
+! 更改
+
+{{/row
+| v = 1.0.1168.9
+| platform = switch
+| name = 分屏更新
+| date = 2020/09/10
+| ref = {{forums thread|97788}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/Switch 1.0.1168.9|nobox=y}}
+}}
+
+{{/row
+| v = 1.21
+| platform = xbox one/ps4
+| name = 生活品质更新
+| date = 2020/08/13
+| ref = {{forums thread|96987}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.21|nobox=y}}
+}}
+
+{{/row
+| v = 1.20
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2020/05/21
+| ref = {{forums thread|89213}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.20|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.1096.2
+| platform = /switch
+| name = {{tr|Party, Desert}}、地牢守护者 2 更新<br/>（等价于{{tr|Desktop}} [[1.3.5]]）
+| date = 2020/05/21
+| ref = {{forums thread|89695}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/Switch 1.0.1096.2|nobox=y}}
+}}
+
+{{/row
+| anchor = Console 1.19
+| v-xbox one = 1.0.1479.5
+| v-ps4 = 1.19
+| name = 同步更新<br/>（等价于{{tr|Desktop}} [[1.3.5]]）
+| date = 2020/04/20
+| ref = {{forums thread|87007}}
+| note = 请注意本 wiki 仅一致使用“{{tr|Console}} 1.19 ”，这包括了“{{tr|Console}} 1.0.1479.5”。
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.19|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.895.9
+| platform = switch
+| name = {{tr|Wiring}} & {{tr|Mechanics}}更新<br/>（等价于{{tr|Desktop}} [[1.3.1]]）
+| date = 2019/12/10
+| ref = {{forums thread|84452}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/Switch 1.0.895.9|nobox=y}}
+}}
+
+{{/row
+| v = 1.18
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2019/11/25
+| ref = {{forums thread|84210}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.18|nobox=y}}
+}}
+
+{{/row
+| anchor = Console 1.17
+| v-xbox one = 1.0.1438.8
+| v-ps4 = 1.17
+| name = {{tr|Party, Desert}}、地牢守护者 2 更新<br/>（等价于{{tr|Desktop}} [[1.3.4]]）
+| date = 2019/11/05
+| ref = {{forums thread|83639}}
+| note = 请注意本 wiki 仅一致使用“{{tr|Console}} 1.17 ”，这包括了“{{tr|Console}} 1.0.1438.8”。
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.17|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.732.3
+| platform = switch
+| name = 修补程序
+| date = 2019/07/15
+| ref = {{forums thread|81233}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/Switch 1.0.732.3|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.711.6
+| platform = switch
+| name = 最初发布<br/>（等价于{{tr|Desktop}} 1.3.0.7）
+| date = 2019/06/27
+| ref = {{forums thread|80726}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/Switch 1.0.711.6|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.1372.7
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2019/06/04
+| ref = {{forums thread|80153}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.1372.7|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.1372.5
+| platform = xbox one/ps4
+| name = {{tr|Wiring}} & {{tr|Mechanics}}更新<br/>（等价于{{tr|Desktop}} [[1.3.1]]）
+| date-xbox one = 2019/05/11
+| date-ps4 = 2019/05/13
+| ref = {{forums thread|79555}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.1372.5|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.1229.15
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2018/12/11
+| ref = {{forums thread|74738}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.1229.15|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.1147.9
+| platform = xbox one/ps4
+| name = 修补程序
+| date = 2018/09/18
+| ref = {{forums thread|72505#post-1632148}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.1147.9|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.983.5
+| platform = xbox one/ps4
+| name = 修补程序
+| date-xbox one = 2018/03/28
+| date-ps4 = 2018/03/22
+| ref = {{forums thread|67891}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.983.5|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.933.1
+| platform = xbox one
+| date-xbox one = 2018/02/05
+| ref-xbox one = https://twitter.com/pipeworks/status/960577634244669441
+| date-ps4 = 2018/01/25
+| ref-ps4 = {{forums thread|65887}}
+| name = 重置 + 1.3 更新<br/>{{icon|ps4}}<br/>修补程序
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.933.1|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.756.0
+| platform = ps4
+| name = 修补程序
+| date = 2017/12/19
+| ref = {{forums thread|64478}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.756.0|nobox=y}}
+}}
+
+{{/row
+| v = 1.0.750.0
+| platform = ps4
+| name = 重置 + 1.3 更新<br/>（等价于{{tr|Desktop}} [[1.3.0.7]]）
+| date = 2017/12/14
+| ref = {{forums thread|64057}}
+| changes =
+{{transclude|主机版版本历史/Pipeworks Studios/PS4 1.0.750.0|nobox=y}}
+}}
+
+|}
+
+=== Engine Software ===
+{| class="terraria lined mw-collapsible" style="width:100%"
+! {{tr|Version}}
+! 发布时间
+! 更改
+
+{{/row
+| v = 1.09
+| platform = xbox360/xbox one/ps
+| name = 修补程序
+| date = 2016/8/26
+| ref = {{forums thread|48508}}
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.09|nobox=y}}
+}}
+
+{{/row
+| v = 1.08
+| platform = xbox360/xbox one/ps/wiiu
+| name = 增添更新
+| date-xbox360 = 2016/07/11
+| date-xbox one-ps = 2016/06/09
+| date-wiiu = 2016/06/28
+| rawref = <ref>{{forums thread|44858/page-25#post-1026910|Xbox One online multiplayer is broken}}</ref><ref>{{forums thread|44431|PS3, PS4, Vita: 17 June; Xbox: shortly after; Wii U: 28 June.}}</ref><ref>{{forums thread|42025}}</ref><ref name="missing">{{forums thread|37123|Missing from Holiday update}}</ref><ref>{{forums thread|44858}}</ref>
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.08|nobox=y}}
+}}
+
+{{/row
+| v = 1.07
+| platform = console
+| name = 节日更新<br/>（等价于{{tr|Desktop}} [[1.2.4]]）
+| date = 2015/12/15
+| rawref = <ref name="missing" /><ref>{{forums thread|40687}}</ref><ref>{{forums thread|37789}}</ref>
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.07|nobox=y}}
+}}
+
+{{/row
+| v = 1.06
+| platform = console
+| name = 增添更新<br/>（等价于{{tr|Desktop}} [[1.2.3]]）
+| date = 2015/06/04
+| ref = {{forums thread|19179}}
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.06|nobox=y}}
+}}
+
+{{/row
+| v = 1.05
+| platform = console
+| name = [[{{tr|Christmas}}]]更新<br/>（等价于{{tr|Desktop}} [[1.2.2]]）
+| date = 2015/02/19
+| ref = {{forums thread|10681}}
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.05|nobox=y}}
+}}
+
+{{/row
+| v = 1.04
+| platform = console
+| name = [[{{tr|Christmas}}]]更新<br/>（等价于{{tr|Desktop}} [[1.2.2]]，除了[[{{tr|Frost Moon}}]]）
+| date = 2014/12/15
+| ref = {{forums thread|6874}}
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.04|nobox=y}}
+}}
+
+{{/row
+| v = 1.03
+| platform = console
+| name = 修补程序
+| date = 2014/05/20
+| ref = http://web.archive.org/web/20160603021913/http://www.terrariaonline.com/threads/1-2-console-patch-notes.145322/
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.03|nobox=y}}
+}}
+
+{{/row
+| v = 1.02
+| platform = console
+| name = 1.2 更新<br/>（等价于{{tr|Desktop}} [[1.2.1.2]]）
+| date = 2014/04/17
+| ref = http://web.archive.org/web/20160603021918/http://www.terrariaonline.com/threads/1-2-for-consoles-change-log.137975/
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.02|nobox=y}}
+}}
+
+{{/row
+| v = 1.01
+| platform = console
+| name = 修补程序
+| date = 2013/05/11
+| changes =
+{{transclude|主机版版本历史/Engine Software/1.01|nobox=y}}
+}}
+
+{{/row
+| anchor = Xbox Patch 5-1-2013
+| v = 补丁
+| platform = xbox360
+| name = Xbox 360 补丁
+| date = 2013/05/01
+| changes =
+[[{{tr|Dragon armor}}]]在新生成的世界中不再生成于{{tr|Gold Chests}}中。
+}}
+
+{{/row
+| v = 1.00
+| platform = console
+| name = 最初发布<br/>（等价于{{tr|Desktop}} 1.1.2）
+| date = 2013/03/26
+}}
+
+|}
+
+== 参考 ==
+{{reflist}}
+
+{{#description2:{{tr|Version history}}和发布信息，来自 Terraria Wiki}}
+
+[[Category:历史]]
+
+{{language info|en=Console version history}}

@@ -1,0 +1,15 @@
+<includeonly>
+{{!}}-
+{{!}} {{{1|}}}
+{{!}} <!--
+-->{{#vardefine:_buffnamesub|{{getBuffInfo|{{{2|}}}{{{1|}}}|namesub}}}}<!--
+-->{{#vardefine:_buffnote|{{#if:{{#var:_buffnamesub}}|{{note|before={{nbsp}}|paren=y|{{#var:_buffnamesub}}}}}}}}<!--
+-->{{buff|mode=table|id={{{2|}}}{{{1|}}}|note={{#var:_buffnote}}}}<!--
+-->{{#if:{{{2|}}}|<!--nothing-->|<nowiki/>
+{{!}} <code>{{getBuffInfo|{{{1|}}}|iname}}</code>}}
+{{!}} {{tr|{{ucfirst:{{getBuffInfo|{{{2|}}}{{{1|}}}|type}}}}}}</includeonly>
+<noinclude>
+{{formatting subpage}}
+
+{{language info|en=Buff IDs/row}}
+</noinclude>

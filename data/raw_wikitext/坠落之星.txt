@@ -1,0 +1,90 @@
+{{item infobox
+| imageold = Fallen Star (pre-1.3.1).png
+| stack = @@@@ {{eicons|1.4.0.1|small=y}} / 100 {{eicons|1.4.0.1|invert=y|small=y}}
+| auto = 75
+| idprojectile = 12
+| listcat = Potion ingredients
+| sound1 = Item 9.wav
+| soundcaption1 = 坠落
+| sound2 = Item 10.wav
+| soundcaption2 = 撞击
+}}
+{{for|拾取时给予玩家[[{{tr|mana}}]]的蓝色星星|{{tr|Star}}}}
+{{quotation|[[File:Emote Town Guide.gif|link=]][[{{tr|Guide}}]]|{{gameText|LegacyDialog.190}}}}
+[[File:Falling Star Terraria.png|thumb|从天而降的{{tr|star}}。]]
+
+'''{{tr|Fallen Star}}'''是在[[{{tr|night}}]]从天空中掉落，并在{{tr|dawn}}时 ({{time|4:30 AM}}) 消失的物品。它可用于制作[[{{tr|Mana Crystal}}]]，后者会将玩家的最大[[{{tr|mana}}]]永久提升 20。它也用于一系列{{tr|crafting recipes}}中，还可作为[[{{tr|Star Cannon}}]]和{{eil|Super Star Shooter}}的[[{{tr|ammunition}}]]使用。因此，{{tr|Fallen Star}}可存储在[[{{tr|inventory}}|{{tr|ammo slots}}]]中。
+
+{{tr|Fallen Stars}}会在整个{{tr|nighttime}}期间随机生成，而其{{tr|spawn rate}}由两个因素决定：[[{{tr|world size}}]]，和在{{tr|night}}降临时随机设置的一个倍率。见[[#{{tr|Notes}}|{{tr|Notes}}]]获取细节。
+
+{{tr|Fallen Star}}在地上会发光，使其在夜晚中容易找到。玩家无法将其[[{{tr|placed}}]]为永久[[{{tr|light source}}]]，但是可以搭配[[{{tr|Bottle}}]]将其制作为[[{{tr|Star in a Bottle}}]]。{{tr|Fallen Star}}会在{{tr|day}}时消失，无论它们是否是玩家扔出的，但是可以一直保存在玩家的{{tr|inventory}}或是{{tr|storage item}}（如[[{{tr|chest}}]]）中。 
+
+虽然不常见，但{{tr|Fallen Star}}可以对击中的实体造成 1000 {{tr|base damage}}。{{source code ref|name=starspawner|v=1.4.4.9|method=Terraria.Projectile.AI_148_StarSpawner}}它们无法伤害玩家，除非是在 {{eil|don't dig up}} 或 {{eil|get fixed boi}} {{tr|world}}中。在这些{{tr|world}}中，从天而降的{{tr|Fallen Star}}不再在击中时掉落为{{tr|item}}，且只能通过[[{{tr|pot}}]]或[[{{tr|Slime}}]]作为其[[{{tr|bonus drop}}]]获得。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Fallen Star|expectedrows=20}}
+
+== 备注 ==
+* 默认的{{tr|Fallen Star}}倍率为 1。在每个{{tr|night}}，倍率会被随机增加。有 {{chance|1/10}} 的几率（在 {{eil|Celebrationmk10}} {{tr|worlds}}中是 {{chance|1/5}} 几率）开始一场[[{{tr|Meteor Shower}}]]，并选择 300 至 500 之间（闭区间）的一个随机值。如果这失败了，则有 {{chance|1/3}} 几率（在 Celebrationmk10 {{tr|world}}中是 {{chance|1/2}} 几率）选择 100 至 150 之间（闭区间）的一个随机值。倍率会被设置为 0.01×选定的值。{{source code ref|v=1.4.4.9|method=Terraria.Star.NightSetup}}
+** 这等同于{{tr|Meteor Shower}}期间提高 200%–400%，常规{{tr|night}}提高 0%–50%。
+: 然后，每个游戏内{{tr|tick}}{{tick}}都会决定是否有{{tr|Fallen Star}}生成。游戏会使用{{tr|world}}的总宽度（{{code|maxTilesX}}）和上述的倍率来决定生成几率。公式为：{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.UpdateWorld}}
+:* <math>\text{几率}=\frac{10\times\frac{\text{maxTilesX}}{4200}\times\text{倍率}}{8000}</math>
+:** 倍率为 1 时，每{{tr|tick}}的生成几率为：{{tr|small world}} {{chance|{{#expr:10*(4200<!--maxTilesX small-->/4200)}}/8000}} 几率，{{tr|medium world}} {{chance|{{#expr:10*(6400<!--maxTilesX medium-->/4200) round 0}}/8000}} 几率，以及{{tr|large world}} {{chance|{{#expr:10*(8400<!--maxTilesX large-->/4200)}}/8000}} 几率。
+:** 因此，（倍率为 1 时）每个{{tr|night}}的平均{{tr|Fallen Star}}数为{{tr|small world}} 40.5 个，{{tr|medium world}}约 61.71 个，以及{{tr|large world}} 81 个。
+* {{tr|Fallen Star}}会在{{tr|world}}上部 5% 范围内的任何地方生成（即{{tr|small world}} 60 格，{{tr|medium world}} 90 格，{{tr|large world}} 120 格）。
+* [[{{tr|moon phase}}]]以及地图的横向位置对{{tr|Fallen Star}}的出现频率没有影响。{{tr|Fallen Star}}的出现频率在每个夜晚的全部时候都是固定的。
+* 和大部分以掉落物形式收集的{{tr|item}}不同，{{tr|Fallen Star}}遍布于{{tr|night}}时的整个{{tr|world}}，即使在远离玩家的区域也是如此。 
+* 如果[[{{tr|enemy}}]]被{{tr|Fallen Star}}击杀，此次击杀将记入玩家名下{{eil|Tally Counter}}会更新其计数以反映此次击杀，并且{{$|banners||enemy}}也会正常掉落。{{tr|multiplayer}}时，击杀将记录给房主，{{tr|banner}}也会发放给他。
+** 如果（同样生成在{{tr|night}}的）{{eil|Prismatic Lacewing}}被击中，就会导致{{eil|Empress of Light}}生成。
+* 在{{eil|Journey Mode}}中，时间被冻结时，{{tr|Fallen Star}}不会坠落。
+
+== 小贴士 ==
+* 在{{eversions|1.4.0.1}}中，用[[{{tr|bed}}]]睡觉会加速时间，这将把{{tr|Fallen Star}}的坠落速率提升到和世界时间流速一样。这可被用于快速收集{{tr|Fallen Star}}，只要在夜晚的大部分时间睡觉，然后再快要进入第二天的时候起来收集{{tr|Fallen Star}}就可以了。{{tr|Journey Mode}}中的改变时间流速也是同理，设为 10 倍就能用来很快地刷取{{tr|Fallen Star}}。
+* 在{{tr|dawn}}前的几分钟做一次长途旅行将让玩家轻松地收集到大量的{{tr|Fallen Star}}。
+* 一个帮助玩家收集{{tr|Fallen Star}}的简单方法是在地上建造一个长而平整的区域，以便玩家在{{tr|night}}于其上奔跑。建造一座[[{{tr|skybridge}}]]效果也很好。注意，斜向的{{tr|platform}}不能拦截{{tr|Fallen Star}}。当建造较大的{{tr|skybridge}}时，用来捕捉{{tr|Fallen Star}}的平台应当建造在[[{{tr|Space}}]]的底部。
+* 在{{eversions|1.4.0.1|invert=y}}中，[[{{tr|hoik}}]] 可被用于快速将{{tr|Fallen Star}}堆叠到给定位置，因为二者接触时{{tr|Fallen Star}}会自动进入 {{tr|hoik}} 中。在{{eversions|1.4.0.1}}中，这也是可能的，但是{{tr|Fallen Star}}必须通过切换[[{{tr|Active Stone Block}}]]或[[{{tr|Actuator}}|被致动]]的{{tr|block}}开关以进入 {{tr|hoik}} 中，这使得整个装置更加昂贵了。
+* 要在{{tr|daytime}}把{{tr|Fallen Star}}交给另一名玩家，应当使用[[{{tr|storage item}}]]（如[[{{tr|Chest}}]]），因为在{{tr|day}}将{{tr|Fallen Star}}扔出{{tr|inventory}}会导致它消失。
+* 如果玩家的{{tr|inventory}}已满，可以把{{tr|Fallen Star}}移动到{{tr|ammo slot}}里以节省一个{{tr|inventory}}。
+* 如果[[{{tr|Floating Island}}]]处于坠落路径上，{{tr|Fallen Star}}可以坠落在其上。因此，如果有一个区域{{tr|Fallen Star}}从不出现或几乎不出现，有可能其上方存在{{tr|Floating Island}}。
+
+== 花絮 ==
+* 如果通过{{key|use}}使用之，玩家会将{{tr|Fallen Star}}放在头顶上并且会播放{{sound|[[Media:Item_4.wav|声音]]|Item_4.wav|nofallback=y}}，就和[[{{tr|Mana Crystal}}]]类似。然而，不像{{tr|Mana Crystal}}，它既不会被消耗也不会对玩家产生任何效果。这个效果是 [[1.1]] 之前的遗留操作，那时候{{tr|Fallen Star}}被用来回复{{tr|mana}}。
+* 在半黑暗中，{{tr|Fallen Star}}看起来会明亮得像是在白天一样，但它不会产生任何光，类似于[[{{tr|Angel Halo}}]]。
+* 有一个{{tr|projectile}}和{{tr|Fallen Star}}的生成相关，其 [[{{tr|Projectile ID}}|ID]] 是 720。<ref name="starspawner"/>技术上，在{{tr|Fallen Star}}将要被生成时，首先会生成此{{tr|projectile}}，然后它会创建一个{{tr|Fallen Star projectile}}。
+
+== 另见 ==
+* {{item|Fallen Starfish}}，一条据说是由{{tr|Fallen Star}}变成的{{tr|quest fish}}。
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在用于制作[[{{tr|Capricorn set}}]]。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Sprite updated.}}旧的{{tr|sprite}}是 [[File:Fallen Star (old).png]]。
+** 现在用于制作[[{{tr|Enchanted Boomerang}}]]。
+** 最大堆叠数由 99 提升至 999。
+** 现在具有不同的坠落动画。
+** {{tr|Fallen Star}}掉落率在[[{{tr|Meteor Shower}}]]期间大幅提高。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}旧的{{tr|sprite}}是 [[File:Fallen Star (pre-1.3.1).png]]。}}
+{{history|Desktop 1.3.0.1|
+** 最大堆叠数由 100 降低至 99。 
+** 单个售价由 {{sc|1}} 提升至 {{sc|5}}。
+** 现在用于制作[[{{tr|Enchanted Nightcrawler}}]]。
+** 不再用于制作[[{{tr|Space Gun}}]]。}}
+{{history|Desktop 1.2.3|现在用于制作[[{{tr|Super Mana Potion}}]]而非[[{{tr|Lesser Mana Potion}}]]。}}
+{{history|Desktop 1.2|现在用于制作[[{{tr|Star in a Bottle}}]]、[[{{tr|Jester's Arrow}}]]和[[{{tr|Sunplate Block}}]]。}}
+{{history|Desktop 1.1|不再可消耗以用于恢复 20 {{tr|mana}}。}}
+{{history|Desktop 1.0.6|现在使用{{tr|Fallen Star}}会造成[[{{tr|Potion Sickness}}]]{{tr|debuff}}。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-material = yes
+}}
+
+{{language info|en=Fallen Star}}

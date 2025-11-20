@@ -1,0 +1,29 @@
+<includeonly><!--
+
+-->{{#vardefine:modifierstable:statnames|{{{1|}}}}}<!--
+-->{{#vardefine:modifierstable:modifiernames|{{{2|}}}}}<!--
+-->{{#vardefine:_tr-start|{{#if:{{bool|{{{row|}}}}}||<tr>}}}}<!--
+-->{{#vardefine:_tr-end|{{#if:{{bool|{{{row|}}}}}||</tr>}}}}<!--
+
+-->{{#lstmap:{{#var:modifierstable:modifiernames}}|,|@@@@|<esc>{{#var:_tr-start}}<!--
+	--><td>{{tr|{{#replace:@@@@|2|}}}}</td><!-- modifier name (strip 2s, e.g. in "Deadly2")
+	-->{{#lstmap:{{#var:modifierstable:statnames}}|,|§§§§|<td>\{\{#or:<!-- modifier stats
+		-->\{\{getModifierInfo/format\!§§§§\!\{\{modifierinfo\!@@@@\!§§§§\}\}\}\}<!-- attempt to print value of this stat, formatted
+	-->\!<!-- if failed then
+		-->\{\{na\!-\}\}<!-- this modifier has no effect on this stat; print {{na|-}}
+	-->\}\}</td>|}}<!--
+-->{{#var:_tr-end}}</esc>|}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+This page is used for displaying the dynamic tables of modifiers and their effects on the base page, [[Modifiers]].
+
+It takes two unnamed parameters: a comma-separated list of stat names (see {{tl|modifierinfo}}) and a comma-separated list of modifier names.
+
+When only passing one modifier name, the <code>$row</code> parameter can be used to prevent the subpage from wrapping its output in a separate table row. This is useful for usage within a table row.
+
+{{language info|en=Modifiers/table}}
+</noinclude>

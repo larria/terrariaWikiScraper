@@ -1,0 +1,65 @@
+{{exclusive|Stardust Fragment}}
+{{item infobox
+| auto = 3474
+| debuff = Celled / 15 / 100%
+| idprojectile = 613, 614
+| tags = minion / hardmode
+}}
+{{dablink|不要与[[{{tr|Star Cell}}]]{{tr|enemy}}相混淆。}}
+[[File:Stardust Cell Staff (demo).gif|thumb|500px|使用中的{{tr|The Stardust Cell Staff}}。]]
+
+'''{{tr|Stardust Cell Staff}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|Lunatic Cultist}}]]后的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Stardust Cell}}'''[[{{tr|minion}}]]。它徘徊在[[{{tr|enemies}}]]周围，发射追踪的迷你细胞附着到目标上，施加 5 {{tr|seconds}}的'''{{tr|Celled}}''' [[{{tr|debuff}}]]，每秒造成 20 点{{tr|damage}}。{{source code ref|v=1.4.4.9|field=Terraria.Projectile._javelinsMax10|method=Terraria.Projectile.Damage / Terraria.Projectile.StatusNPC / Terraria.NPC.UpdateNPC_BuffApplyDOTs / Terraria.Projectile.AI / Terraria.Projectile.AI_062|t=相关部分位于 <code>Terraria.Projectile.AI</code> 中的 <code>aiStyle == 113</code> 代码段。}} 一个目标同时最多附着 10 个迷你细胞，总计每秒 200 点{{tr|damage}}。{{tr|The Stardust Cell}}会传送向范围外的{{tr|enemy}}。
+
+{{modifier|summon}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Stardust Cell Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|The Stardust Cell Shots}}的发射频率为平均每 {{duration|36 ticks}}一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_062|t={{tr|The Stardust Cell}}的 ai[1] 每{{tr|tick}}提高 1，然后有 2/3 几率再次提高 1。因此，平均来说每{{tr|tick}}它会提升 5/3。阈值为 60，因此攻击间的平均冷却为 60/(5/3)=36 {{tr|ticks}}。}}
+* 除了正常的攻击频率以外，{{tr|Stardust Cells}}有 50% 的概率额外向正在被{{tr|player}}攻击的{{tr|enemy}}射击。额外射击造成 33.33% 伤害（{{#expr:floor({{iteminfo|Stardust Cell Staff|damage}}/3)}} {{tr|base damage}}），在进行额外射击后，平均需冷却 {{duration|45 ticks}}后，才能再次进行此种射击。{{source code ref|v=1.4.4.9|method=Terraria.Player.OnHit}}
+** 这一额外发射无法被下列东西触发：其他{{tr|Stardust Cell}}的攻击，[[{{tr|Super Star Shooter}}]]或[[{{tr|Muramasa}}]]的次要斩切{{tr|projectiles}}，来自[[{{tr|Chlorophyte armor}}]]、[[{{tr|Titanium armor}}]]或[[{{tr|Orichalcum armor}}]]的{{tr|set bonus}}的{{tr|projectiles}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.TryDoingOnHitEffects}}
+* {{tr|The Stardust Cells}}可以锁定最远距离{{tr|player}} 125 格的{{tr|enemy}}。
+** 对于{{tr|player}}标记的{{tr|enemies}}，这个距离范围会增加至 187.5 格。
+** 若{{tr|The Stardust Cells}}距离{{tr|player}}超过 84.4 格，它们将会返回{{tr|player}}身侧，且同时中止它们的{{tr|attack}}。
+* {{tr|The Stardust Cells}}可以向距离 28.75 格至 53.75 格的目标传送。
+** 向{{tr|enemy}}传送后，{{tr|Stardust Cells}}会立刻发射一个迷你细胞。
+* {{tr|The Stardust Cells}}需要目标在 31.25 格范围内才能射击。
+* {{tr|The Stardust Cell}}的射击无法被[[{{tr|List of reflected projectiles}}|反弹]]。
+* 同一时间可以有任意数量的{{tr|Stardust Cells}}伤害同一个目标；它们彼此的攻击不会产生[[{{tr|invincibility frame}}]]。
+* {{tr|Stardust Cell Shots}}消失前可持续追踪其目标 5 秒，使其几乎不会失手。
+* {{tr|The Stardust Cell Shots}}在追踪目标时的最高速度为 {{mph|14 pixels}}。
+* 来自小细胞的持续伤害的频率总是恒定不变，无论额外的小细胞是什么时候附加的。
+* 尽管{{tr|Celled debuff}}会被施加 15 秒，但如果没有小细胞附着在{{tr|enemy}}上它就不会造成任何伤害，而小细胞{{tr|projectiles}}总计仅会持续存在 5 秒。
+
+== 免疫的 NPC ==
+{{immunities|Celled}}
+
+== 小贴士 ==
+* {{tr|Stardust Cell Staff}}通常可被视为是[[{{tr|Xeno Staff}}]]的升级版。但和[[{{tr|Xeno Staff}}]]的 {{tr|UFOs}} 不同，{{tr|Stardust Cell}}不会在{{tr|enemy}}被击败后立即重新瞄准。在特定情况下，这一较长的瞄准时间可能会让{{tr|Xeno Staff}}的表现与{{tr|Stardust Cell}}相当，例如在面对大量{{tr|enemy}}时。
+
+== 历史 ==
+{{history|Desktop 1.3.4.2|修复了{{tr|minions}}偶尔试图附着于{{tr|town}} [[{{tr|NPCs}}]] 和[[{{tr|Eternia Crystal (NPC)}}|{{tr|Eternia Crystal}}]]上的问题。}}
+{{history|Desktop 1.3.1|移除了外观中的一个多余像素。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Luminite
+| show-stardust = yes
+}}
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+{{Master Template Buffs
+| show-buffs = yes
+}}
+
+{{language info|en=Stardust Cell Staff}}

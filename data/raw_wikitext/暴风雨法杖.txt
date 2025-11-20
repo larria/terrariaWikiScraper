@@ -1,0 +1,62 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 2621
+| idprojectile = 407, 408
+| tags = Minion / drop / treasure bag loot / hardmode
+| sound1 = NPC Killed 19.wav
+| soundcaption1 = {{gameText|ProjectileName.MiniSharkron}}
+}}
+{{drop infobox|style=clear:right}}
+[[File:Tempest Staff (demo).gif|frame|使用中的{{tr|The Tempest Staff}}。]]
+
+'''{{tr|Tempest Staff}}'''是一个[[{{tr|Hardmode}}]]中的[[{{tr|summon weapon}}]]，可召唤'''{{tr|Sharknado}}'''[[{{tr|minion}}]]。它会徘徊在[[{{tr|enemies}}]]附近，造成{{tr|contact damage}}并发射{{tr|Mini Sharkron projectiles}}，会在接触到{{tr|enemy}}或[[{{tr|block}}]]时产生视觉上的飞溅。{{tr|The Tempest Staff}}有 {{chance|1/5}} 的几率掉落自[[{{tr|Duke Fishron}}]]。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|Mini Sharkron}}平均发射频率为每 {{duration|30 ticks}}一次。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_062|t={{tr|Tempest}}的 AI[1] 每{{tr|tick}}加 1 并且有 2/3 几率再次加 1 。所以其每{{tr|tick}}平均加 5/3 。其阈值为 50，所以平均每两次攻击间的冷却为 50/(5/3)=30 {{tr|ticks}}}}
+* {{tr|Sharknado}}的{{tr|contact damage}}会造成 10 {{tr|ticks}}[[{{tr|static invincibility frames}}]]。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|Sharknado minion}}可以瞄准最远距离{{tr|player}} 125 {{tr|tiles}}外的{{tr|enemy}}（优先距{{tr|player}}最近的{{tr|enemy}}），且如果它当前目标距离{{tr|player}}超过 125 {{tr|tiles}}，它将会自动返回{{tr|player}}身旁。{{source code ref|name=aistyle62|v=1.4.4.9|method=Terraria.Projectile.AI_062}}
+** 对于{{tr|player}}使用[[{{tr|whip}}]]或{{tr|Summon staff}}标记的{{tr|enemy}}其检测范围与仇恨范围都会增加到 187.5 {{tr|tiles}}。
+* {{tr|The Mini Sharkrons}}初始移动速度为 {{mph|20 pixels}}并逐渐受[[{{tr|gravity}}]]影响。如果没有击中{{tr|enemy}}或{{tr|solid block}}，它们也会在 {{duration|300 ticks}}后消失。<ref name="aistyle62"/>
+
+== 小贴士 ==
+* 虽然有不错的{{tr|damage}}，但是{{tr|the Mini Sharkron projectiles}}对高速 [[{{tr|boss}}]] 而言速度较慢且不准确。
+* {{tr|The Sharknado}}本体可以穿过{{tr|block}}，攻击{{tr|player}}视线外的{{tr|enemies}}。
+
+== 花絮 ==
+* {{tr|Tempest Staff}}参考了 2013 年的美国科幻灾难电影《{{维基百科|Sharknado|鲨卷风（Sharknado）}}》，里面有一个满是鲨鱼的龙卷风。
+* 召唤出来的{{tr|The Sharknadoes}}在穿过{{tr|blocks}}时会变得半透明，类似于{{tr|Duke Fishron}}和[[{{tr|Pigron}}]]的特征。
+* 这是唯一由{{tr|Duke Fishron}}掉落，且配色方案与之不同的{{tr|weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Tempests}}现在在飞回玩家时也可以向{{tr|enemies}}开火。
+** {{tr|Tempests}}现在会根据{{tr|player}}移动的速度，来提高返回{{tr|player}}身边的速度。
+** {{tr|Tempest Staff}}的{{tr|tornados}}（不是{{tr|shark projectiles}}）从前使用的是 20 帧{{tr|global immunity}}，现在改为使用仅 10 帧{{tr|static immunity}}。}}
+{{history|Desktop 1.4.1|
+** 开火的{{tr|cooldown}}从 60 {{tr|frames}}降低至 50 {{tr|frames}}。
+** {{tr|Sharkron projectile speed}}由 14 提升至 20。
+** {{tr|Tempest movement speed}}提升了 50%（它们现在会更快地追逐{{tr|enemies}}）。}}
+{{history|Desktop 1.2.4.1|
+** 现在需要 10 {{tr|mana}}。
+** {{tr|Sell price}}由 {{gc|1}} 提升至 {{gc|5}}。}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console  1.0.1372.5|移除了“1 {{tr|minute duration}}”的文本。}}
+{{history|Console 1.07|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.4.1 引入。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.4.1 引入。}}
+{{history|3DS-Release|Introduced=y|和相应机制一起从{{tr|Desktop}} 1.2.4.1 引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Characters
+| show-familiar = yes
+}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Tempest Staff}}

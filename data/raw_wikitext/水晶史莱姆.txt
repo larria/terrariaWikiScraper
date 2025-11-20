@@ -1,0 +1,42 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| auto = 658
+| image = Crystal Slime.gif
+| type = Slime
+| environment = The Hallow
+| damage2 = &#32;{{note|paren=y|{{tr|contact}}|small=y}}<br/>{{modes|30|68|120}} {{note|paren=y|{{gameText|ProjectileName.QueenSlimeMinionBlueSpike}}|small=y}}
+| Gel|1–2|100%
+| Slime Staff|1|{{modes|0.01%|0.014%}}
+| idprojectile = 920
+| sound1 = Item 154.wav
+| soundcaption1 = 水晶尖刺
+}}
+
+'''{{tr|Crystal Slime}}'''是一个[[{{tr|enemy}}]]，会随[[{{tr|Bouncy Slime}}]]和[[{{tr|Heavenly Slime}}]]一起被[[{{tr|Queen Slime}}]]频繁召唤。它每 0.83 秒会发射一根{{tr|Crystal Spike}}{{tr|projectile}}。在[[{{tr|Expert Mode}}]]下，如果其它存活的{{tr|Crystal Slimes}}数量少于四个，它每 0.42 秒会同时发射三个{{tr|projectiles}}。其它情况下，它会和{{tr|Classic Mode}}中一样行动。{{source code ref|v=1.4.1.2|method=Terraria.NPC.AI_001_Slimes}}
+
+在{{tr|Queen Slime}}到达第二阶段后，{{tr|Crystal Slimes}}会停止生成。
+
+== 花絮 ==
+* {{tr|Crystal Slimes}}可以被认为是{{tr|Expert Mode}}下的[[{{tr|King Slime}}]]召唤的[[{{tr|Spiked Slime}}]]的{{tr|Hardmode}}{{tr|counterpart}}，因为它们的射击模式类似。然而，{{tr|Crystal Slimes}}免疫[[{{tr|Confused}}]][[{{tr|debuff}}]]，且它们的{{tr|projectiles}}垂直射程较远，水平射程较近。
+* {{slimes without banners}}
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Queen Slime}}的仆从{{tr|projectile}}{{tr|damage}}从 30 / {{expert|80}} / {{master|150}} 减少至 30 / {{expert|68}} / {{master|120}}。
+** 这些射弹现在会发光从而在夜间更容易被看见。}}
+{{history|Desktop 1.4.1.2|现在会掉落[[{{tr|Gel}}]]和[[{{tr|Slime Staff}}]]。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Slimes}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Crystal Slime}}

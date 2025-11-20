@@ -1,0 +1,40 @@
+{{item infobox
+| auto = 535
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+
+'''{{tr|Philosopher's Stone}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|accessory}}]]，会将[[{{tr|Potion Sickness}}]][[{{tr|debuff}}]]的{{tr|duration}}减少 25%。因此，若在装备{{tr|Philosopher's Stone}}时使用{{$|recovery potion}}，45 秒后就可使用下一个。它有 {{eicons|1.3.0.1|3ds=y}} {{chance|1/6}} / {{eicons|1.3.0.1|invert=y|3ds=n}} {{chance|1/7}} 的几率由[[{{tr|Mimics}}]]掉落。
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Philosopher's Stone|expectedrows=1}}
+
+== 备注 ==
+* {{eicons|1.4.4}} 对{{tr|Potion Sickness debuff}}的{{tr|duration}}的减少是动态更新的，这意味着装备{{tr|Philosopher's Stone}}会等比降低{{tr|Potion Sickness}}的{{tr|duration}}，而卸下它则会等比增加{{tr|duration}}。
+* {{eicons|1.4.4|invert=y}} {{tr|Potion Sickness debuff}}的{{tr|duration}}的减少是在使用{{tr|potion}}时决定的。如果在使用{{tr|potion}}时装备了{{tr|Philosopher's Stone}}，{{tr|duration}}就会减少 25%，而在之后卸下它不会影响剩余的{{tr|duration}}。
+* {{eicons|1.3.0.1}} 减少效果对[[{{tr|Restoration Potion}}]]的 45 秒冷却一样起作用，将其缩短至 33.75 秒。
+* {{tr|The Philosopher's Stone}}的{{tr|duration}}降低效果不会和[[{{tr|Charm of Myths}}]]的叠加。
+
+== 小贴士 ==
+* {{eicons|1.4.4|invert=y}} 因为效果会在{{tr|recovery potion}}被使用时生效，将{{tr|Philosopher's Stone}}放置在{{tr|vanity slot}}中并仅在使用{{tr|recovery potion}}时将其换上可能会更理想。
+
+== 花絮 ==
+* {{wikipedia|philosopher's stone|Philosopher's Stone}}（{{tr|Philosopher's Stone}}/贤者之石）是一种在炼金学传说中的化学物质，它可以把常见的金属转变为金或银。它也被称为{{wikipedia |elixir of life|长生不老药}}，有助于恢复活力和实现不朽。根据炼金术文献，{{tr|Philosopher's Stone}}有两种：白色（用于制银）和红色（用于制金），白色的石头是红色石头的一个较不成熟的版本。有时，石头的固体形状的颜色被描述为介于红色和紫色、透明和玻璃状之间的中间颜色。虽然[[《{{tr|Terraria}}》]]中的{{tr|Philosopher's Stone}}不能转化金属，但它与“回春”有关，因为它允许更频繁地治疗。此外，它的外观与炼金术的描述是一致的。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Potion Sickness}}的减少不再在使用{{tr|potion}}时“提前加载好”。现在冷却会按照{{tr|accessory}}被装备的时刻动态计算。将其装备会等比例地降低剩余冷却，而将其移除会等比例增加剩余的冷却。}}
+{{history|Desktop 1.3.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2|现在用于制作[[{{tr|Charm of Myths}}]]。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Philosopher's Stone}}

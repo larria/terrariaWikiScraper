@@ -1,0 +1,215 @@
+{{legacy nav tab}}
+{{item infobox
+| name = {{tr|Crates}}
+| auto = 2334
+| imagealt = [[File:Wooden Crate.png|link={{tr|Wooden Crate|link=y}}]] [[File:Iron Crate.png|link={{tr|Iron Crate|link=y}}]] [[File:Golden Crate.png|link={{tr|Golden Crate|link=y}}]]
+| type = Grab bag/Furniture
+| width = 2 | height = 2
+| tooltip = {{icon/desktop|small=y}} @@@@ /<br/>{{icon/console|small=y}} 按 L2 可打开 ({{icon/ps|small=y}}) /<br/>按 LT 可打开 ({{icon/xb1|small=y}})/ ({{icon/switch}})按 ZL 可打开 /<br/>{{icon/mobile|small=y}} 双击可打开 /<br/>{{eicons|1.3.0.1|invert=y|small=y}} 使用以打开
+| sell = <!-- hide sell value because it is different per crate -->
+| rare = <!-- hide rarity level because it is different per crate -->
+| research = <!-- hide research because it is different per crate -->
+| idtile = 376
+| id = 2334–2336, 3203–3208, 3979–3987, 4405–4408, 4877, 4878, 5002, 5003
+| cargo = no
+}}
+
+'''{{tr|Crates}}'''是[[{{tr|fishing}}]]时有机会钓到的[[{{tr|grab bags}}]]类物品，包含着随机的战利品，比如[[{{tr|ores}}]]、[[{{tr|bars}}]]、[[{{tr|potions}}]]、[[{{tr|accessories}}]]和其他物品。此外，[[{{tr|Biomes}}]]特定的{{tr|crates}}中还可能包含{{tr|biome}}特定的战利品。可以用{{key|open}}来取出其中的内容物。它们也可以被放置。
+
+有三种标准类型的{{tr|crate}}（[[{{tr|Wooden Crate}}]]/[[Pearlwood Crate|{{tr|Pearlwood}}]], [[{{tr|Iron Crate}}]]/[[Mythril Crate|{{tr|Mythril}}]]、和[[{{tr|Golden Crate}}]]/[[Titanium Crate|{{tr|Titanium}}]]）可在任何地方钓到，{{tr|Wooden Crate}}/{{tr|Pearlwood Crate}}是最常见的，{{tr|Golden Crate}}/{{tr|Titanium Crate}}是最罕见的。一般而言，越罕见的{{tr|crate}}包含越有价值的战利品。 其它{{tr|crates}}都是特定{{tr|biome}}专有的，也就是说它们只能在各自的生物群落被捕到。（除了 [[Obsidian Crate|{{tr|Obsidian}}]]/[[{{tr|Hellstone Crate}}]]）。 它们比{{tr|Golden Crate}}/{{tr|Titanium Crates}}稍微常见一点。当在一个多种群落混杂的区域钓鱼时，只有一种群落{{tr|crate}}能被捕到，例如，如果[[{{tr|Floating Island}}]]被[[{{tr|Corrupt}}]]并变成了{{tr|the Corruption}}，[[{{tr|Sky Crate}}]]就不能再获取了。''参见[[{{tr|Fishing}}#{{tr|Biomes}}|钓鱼 § {{tr|Biomes}}]]了解哪些{{tr|biomes}}比其他更优先。''
+
+平均来说，{{tr|Crates}}每 10 次钓鱼会被捕到一次；使用[[{{tr|Crate Potion}}]]后，这个概率会增加到 25% 。玩家获取的{{tr|crate}}种类取决于他们的[[{{tr|Fishing Power}}]]，更高的{{tr|Fishing Power}}会提高捕到更稀有{{tr|crates}}的几率。 举个例子在{{tr|the Corruption}}，在一个拥有至少 300 有效水体的湖中以 100 {{tr|Fishing Power}}，会以下列概率捕到{{tr|crates}}：[[{{tr|Golden Crate}}]]: {{chance|1/150}}; [[{{tr|Corrupt Crate}}]]: {{chance|7/750}}; [[{{tr|Iron Crate}}]]: {{chance|7/250}}; [[{{tr|Wooden Crate}}]]: {{chance|7/125}}。{{tr|Crate Potion}}将概率增加到 2.5 倍。{{source code ref|v=1.4.0.5|name=cratechances|function {{code|FishingCheck_RollItemDrop()}} in {{code|Terraria.Projectile.cs}}；假定实际上的渔力为 100，并不是显示出的渔力，在{{eversions|1.4.0.1|short=y}}中，它们是[[{{tr|Fishing}}#{{tr|Hidden factors}}|不同]]的。}}
+
+== 类型 ==
+{{options/set|item|class=block alignleft}}
+{| class="terraria sortable align-center"
+! {{tr|Pre-Hardmode}}的类型
+! {{tr|Hardmode}}的{{tr|type}}
+! data-sort-type="number" | [[{{tr|Value}}|卖出]]
+! [[{{tr|Rarity}}]]
+! [[{{tr|Biome}}]]
+! [[{{tr|Fishing}}#渔获品质|渔获品质]]
+! [[{{tr|Chests}}|{{tr|Chest}}]]
+|-
+| {{item|Wooden Crate|id=2334}}
+| {{item|Pearlwood Crate|id=3979}}
+| {{iteminfo|Pearlwood Crate|sell}}
+| {{iteminfo|Pearlwood Crate|rare}}
+| align=left | 任意
+| 丰富
+| align=left | {{item|Chest|{{tr|Surface}}、{{tr|Underground}}}}
+|-
+| {{item|Iron Crate|id=2335}}
+| {{item|Mythril Crate|id=3980}}
+| {{iteminfo|Mythril Crate|sell}}
+| {{iteminfo|Mythril Crate|rare}}
+| align=left | 任意
+| 不常见
+| data-sort-value=_ | {{na}}
+|-
+| {{item|Golden Crate|id=2336}}
+| {{item|Titanium Crate|id=3981}}
+| {{iteminfo|Titanium Crate|sell}}
+| {{iteminfo|Titanium Crate|rare}}
+| align=left | 任意
+| 非常罕见 /<br/>极度罕见
+| data-sort-value=_ | {{na}}
+|-
+| {{item|Jungle Crate|id=3208}}
+| {{item|Bramble Crate|id=3987}}
+| {{iteminfo|Bramble Crate|sell}}
+| {{iteminfo|Bramble Crate|rare}}
+| {{item|Jungle}}
+| 罕见
+| align=left | {{item|Ivy Chest}}
+|-
+| {{item|Sky Crate|id=3206}}
+| {{item|Azure Crate|id=3985}}
+| {{iteminfo|Azure Crate|sell}}
+| {{iteminfo|Azure Crate|rare}}
+| {{item|Sky|link=Floating Island}}
+| 罕见
+| align=left | {{item|Skyware Chest}}
+|-
+| {{item|Corrupt Crate|id=3203}}
+| {{item|Defiled Crate|id=3982}}
+| {{iteminfo|Defiled Crate|sell}}
+| {{iteminfo|Defiled Crate|rare}}
+| {{item|The Corruption|Corruption}}
+| 罕见
+| align=left | {{item|Shadow Orb|image=Shadow Orb (placed).png}}
+|-
+| {{item|Crimson Crate|id=3204}}
+| {{item|Hematic Crate|id=3983}}
+| {{iteminfo|Hematic Crate|sell}}
+| {{iteminfo|Hematic Crate|rare}}
+| {{item|The Crimson|Crimson}}
+| 罕见
+| align=left | {{item|Crimson Heart|ext=gif}}
+|-
+| {{item|Hallowed Crate|id=3207}}
+| {{item|Divine Crate|id=3986}}
+| {{iteminfo|Divine Crate|sell}}
+| {{iteminfo|Divine Crate|rare}}
+| {{item|The Hallow|Hallow}}
+| 罕见
+| data-sort-value=_ | {{na}}
+|-
+| {{item|Dungeon Crate|id=3205}}
+| {{item|Stockade Crate|id=3984}}
+| {{iteminfo|Stockade Crate|sell}}
+| {{iteminfo|Stockade Crate|rare}}
+| {{item|Dungeon}}
+| 罕见
+| align=left | {{item|Locked Gold Chest|link={{tr|Gold Chest|link=y}}#{{tr|Dungeon}}}}
+|-
+| {{item|Frozen Crate|id=4405}}
+| {{item|Boreal Crate|id=4406}}
+| {{iteminfo|Boreal Crate|sell}}
+| {{iteminfo|Boreal Crate|rare}}
+| align=left | {{item|Snow biome|Snow|class=}} / {{item|Ice biome|Ice|class=}}
+| 罕见
+| align=left | {{item|Frozen Chest}}
+|-
+| {{item|Oasis Crate|id=4407}}
+| {{item|Mirage Crate|id=4408}}
+| {{iteminfo|Mirage Crate|sell}}
+| {{iteminfo|Mirage Crate|rare}}
+| {{item|Desert}}
+| 罕见
+| align=left | {{item|Sandstone Chest}}
+|-
+| {{item|Obsidian Crate|id=4877}}
+| {{item|Hellstone Crate|id=4878}}
+| {{iteminfo|Hellstone Crate|sell}}
+| {{iteminfo|Hellstone Crate|rare}}
+| 任意（捕获于{{item|Lava|class=}}）
+| 丰富 <ref name="lava">[[{{tr|Obsidian Crate}}]]和[[{{tr|Hellstone Crate}}]]实际上是稀有度为丰富的渔获，但只在 5 次成功的{{tr|crate}}钓获中出现一次。这使{{tr|lava}}中钓上的{{tr|crates}}比其他{{tr|crate}}稀有了 5 倍。但由于{{tr|lava}}钓鱼的渔获中没有稀有度为丰富、常见和不常见的渔获，{{tr|lava}}中钓上的{{tr|crates}}实际上并没有比其他对应{{tr|biome}}的{{tr|crate}}稀有（或者，按照玩家的[[{{tr|Fishing}}#因素|{{tr|Fishing Power}}]]，{{tr|lava}}中的{{tr|crate}}可能会''更加''常见）。</ref>
+| align=left | {{item|Shadow Chest}}
+|-
+| {{item|Ocean Crate|id=5002}}
+| {{item|Seaside Crate|id=5003}}
+| {{iteminfo|Seaside Crate|sell}}
+| {{iteminfo|Seaside Crate|rare}}
+| {{item|Ocean}}
+| 罕见
+| align=left | {{item|Water Chest}}
+|}{{options/reset|item}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=LIKE % Crate|expectedrows=13}}
+
+== 备注 ==
+* {{icon|xbox one}} 在 [[{{tr|Console version}}|{{tr|Xbox}}]] 上，按照{{tr|crates}}的提示信息所说，用 {{key|xb-lt}} 打开{{tr|crates}}（而非等价于 {{desktop}}的右键点击的 [[File:360 B.png|20px|link={{tr|Game controls|link=y}}]] 按钮）。
+* 有一些独有{{tr|items}}''只''在{{tr|crates}}中出现： 
+** [[{{tr|Sailfish Boots}}]]、[[{{tr|Tsunami in a Bottle}}]]（{{tr|Wooden Crate}}、{{tr|Iron Crate}}、{{tr|Pearlwood Crate}}、{{tr|Mythril Crate}}）{{note|（不过，两件{{tr|items}}和其他能在[[{{tr|chests}}]]中找到的物品较为相似）}}
+** [[{{tr|Falcon Blade}}]]、[[{{tr|Ginger Beard}}]]、[[{{tr|Tartar Sauce}}]]（{{tr|Iron Crate}}、{{tr|Mythril Crate}}）
+** [[{{tr|Hardy Saddle}}]]（{{tr|Golden Crate}}、{{tr|Titanium Crate}}）
+** [[{{tr|Scarab Fishing Rod}}]]（{{tr|Oasis Crate}}、{{tr|Mirage Crate}}）
+** {{tr|Hardmode}}：[[{{tr|Anchor}}]]（{{tr|Pearlwood Crate}}）
+** {{tr|Hardmode}}：[[{{tr|Enchanted Sundial}}]]（{{tr|Pearlwood Crate}}、{{tr|Mythril Crate}}、{{tr|Titanium Crate}}）
+* {{tr|Crates}}可以掉落{{tr|world}}中没有的[[{{tr|ore}}]]或[[{{tr|bars}}]]，因为{{tr|crate}}的掉落物是另一种方式生成的。例如，在生成{{tr|Tin}}的{{tr|world}}中，{{tr|Wooden Crate}}可能会含有[[{{tr|Copper Ore}}]]。
+** 在{{tr|Hardmode}}中，这同样适用于{{tr|Hardmode metals}}，无论是否已经破坏了[[{{tr|Altars}}]]来在世界中放置{{tr|ore}}。
+* {{tr|crate}}中含有的矿物的等级随{{tr|crate}}等级上升：{{tr|Wooden Crate}}和{{tr|Iron Crate}}含有最低级的矿物，{{tr| biome crates}}含有{{tr|Copper Bars}}或{{tr|Tin Bars}}（不含{{tr|ore}}），{{tr| Golden Crate}}和{{tr|Titanium Crate}}含有最高级的矿物。
+** {{tr|Crates}}不会含有[[{{tr|Meteorite}}]]或[[{{tr|Chlorophyte}}]]等“进阶”矿物。
+* {{tr|Crates}}总是至少会含有一种{{tr|item}}，因为空的{{tr|crate}}会被重新掷骰判定。举个例子，{{tr|Golden Crate}}有{{#expr: 14/15 * 9/10 * 49/50 * 4/5 * 1/2 * 2/3 * 1/2 * 1/3 * 2/3 * 100 round 2}}% 的概率需要重新掷骰判定。
+* [[{{tr|Hallowed Crate}}]]较为独特，因为它除了在人工的{{tr|pre-Hardmode}}{{tr|The Hallow}}中{{tr|fishing}}以外没有其他获得方式，因为所有的天然{{tr|Hallow biomes}}都是{{tr|Hardmode}}的，只会提供[[{{tr|Divine Crate}}]]。不过，{{tr|Hallowed Crate}}并不包含任何独有物品，因此获得它意义不大。
+* 玩家可以将[[{{tr|Hardmode}}]]的{{tr|Crates}}扔进[[{{tr|Shimmer}}]]使它们嬗变为[[{{tr|Pre-Hardmode}}]]的变种。
+** 这可用于获取[[{{tr|Hallowed Crate}}]]而不在[[{{tr|Pre-Hardmode}}]]的世界中创造人工[[{{tr|Hallow}}]]环境。
+
+== 小贴士 ==
+* {{tr|Crates}}也可以提供一些其他的{{tr|Hardmode items}}：
+** 同上所述，[[{{tr|Anchor}}]]和[[{{tr|Enchanted Sundial}}]]''只能''从{{tr|crates}}获得。
+** {{tr|Defiled Crate}}或{{tr|Hematic Crate}}中可以分别开出[[{{tr|Cursed Flames}}]]或[[{{tr|Ichor}}]]，且均可开出[[{{tr|Souls of Night}}]]。 
+** {{tr|Divine Crate}}可以开出[[{{tr|Crystal Shards}}]]和[[{{tr|Souls of Light}}]]。
+* 如果{{tr|player}}不在能够钓上{{tr|Biome Crate}}的{{tr|biome}}，钓上{{tr|Iron Crate}}或{{tr|Wooden Crate}}的概率会增加（即不处于{{tr|Corruption}}/{{tr|Crimson}}、{{tr|Hallow}}、{{tr|Dungeon}}或{{tr|Jungle}}，且低于{{tr|sky}}层——符合条件的例子为无{{tr|biome}}[[{{tr|cavern}}]]）。 如果拥有至少 300 格有效{{tr|water tiles}}的湖泊和高于 100 的{{tr|Fishing Power}}，{{tr|Iron Crates}}有 {{chance|7/225}} 的概率可以被钓上（而不是 7/250 或 2.8% ），{{tr|Wooden Crates}}有{{chance|14/225}}的概率被钓上（而不是 7/125 或 5.6% ）。<!-- because flag5 is then not checked, because the conditions fail due to the respective second part (the biome check) anyway --><ref name="cratechances"/>
+* 如果需要深入探索{{tr|crate}}内含物的出售价值，请[[{{tr|Crates}}/宝匣价值|参阅此处]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** [[{{tr|Crate Potion}}]]对钓上{{tr|Crate}}的几率的影响提升了 50%（这等同于使用{{tr|Crate Potion}}钓鱼时总体上获得的{{tr|crate}}多 25%）。
+** {{tr|Lava Crates}}（[[{{tr|Obsidian Crate}}]]/[[{{tr|Hellstone Crate}}]]）略微不那么常见了（1/5 几率降低至 1/6 几率）。
+** 当在能获得{{tr|Biome Crates}}的区域{{tr|fishing}}时，在（相对罕见的）可能获得{{tr|Biome Crate}}和[[{{tr|Gold Crate}}]]两者的情况下，游戏现在会优先提供{{tr|Biome Crate}}而非{{tr|Gold Crate}}。两者的实际获得几率未改动。
+** {{tr|fishing crates}}掉落{{tr|ore and bars}}的几率降低。
+*** 来自[[{{tr|Wooden Crate}}]]的{{tr|ore}}大约降低 40%。
+*** 来自[[{{tr|Iron Crate}}]]和{{tr|Biome Crates}}的{{tr|ore}}大约降低 30%。
+*** 来自[[{{tr|Gold Crate}}]]的{{tr|ore}}大约降低 20%}}
+{{history|Desktop 1.4.0.5|修复了在[[{{tr|Multiplayer}}]]中，{{tr|Crates}}里的一些新{{tr|items}}（大部分为[[{{tr|pets}}]]）不会掉落的漏洞。}}
+{{history|Desktop 1.4.0.1|
+** 引入了新的{{tr|biome crates}}：{{tr|Ocean Crates}}、{{tr|Desert Crates}}、{{tr|Snow Crates}}、和{{tr|Underworld Crates}}。
+** 所有{{tr|crates}}现在拥有{{tr|pre-Hardmode}}和{{tr|Hardmode}}的两种变种。{{tr|Pre-Hardmode}}的变种不含有{{tr|Hardmode Ores}}。
+** {{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}现在依据宝匣的等级掉落质量更高的{{tr|ore}}。
+** 对部分掉落概率和数量做了更改。}}
+{{history|Desktop 1.3.0.1|
+**引入新的{{tr|biome}}{{tr|crates}}：{{tr|Jungle Crate}}、{{tr|Sky Crate}}、{{tr|Corrupt Crate}}、{{tr|Crimson Crate}}、{{tr|Hallowed Crate}}、以及{{tr|Dungeon Crate}}。
+**现在可放置。}}
+{{history|Desktop 1.2.4|引入{{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+**引入新的{{tr|biome}}{{tr|crates}}：{{tr|Jungle Crate}}、{{tr|Sky Crate}}、{{tr|Corrupt Crate}}、{{tr|Crimson Crate}}、{{tr|Hallowed Crate}}、以及{{tr|Dungeon Crate}}。
+**现在可放置。}}
+{{history|Console 1.07|引入{{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|
+** 引入了新的{{tr|biome crates}}：{{tr|Ocean Crates}}、{{tr|Desert Crates}}、{{tr|Snow Crates}}、和{{tr|Underworld Crates}}。
+** 所有{{tr|crates}}现在拥有{{tr|pre-Hardmode}}和{{tr|Hardmode}}的两种变种。{{tr|Pre-Hardmode}}的变种不含有{{tr|Hardmode Ores}}。
+** {{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}现在依据宝匣的等级掉落质量更高的{{tr|ore}}。
+** 对部分掉落概率和数量做了更改。}}
+{{history|Mobile 1.3.0.7|
+**引入新的{{tr|biome}}{{tr|crates}}：{{tr|Jungle Crate}}、{{tr|Sky Crate}}、{{tr|Corrupt Crate}}、{{tr|Crimson Crate}}、{{tr|Hallowed Crate}}、以及{{tr|Dungeon Crate}}。
+**现在可放置。}}
+{{history|Mobile 1.2.11212|引入{{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}。}}
+{{history|3DS-Release|引入{{tr|Wooden Crate}}、{{tr|Iron Crate}}和{{tr|Golden Crate}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Consumables
+| show-other = yes
+}}
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Crates}}

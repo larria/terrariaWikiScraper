@@ -1,0 +1,76 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 495
+| tags = Drop / hardmode
+| listcat = wands
+| sound1 = Item 10.wav
+| soundcaption1 = {{tr|Impact}}
+}}
+{{distinguish|{{tr|Rainbow Gun}}}}
+[[File:Rainbow Rod (demo).gif|alt=|frame|{{eicons|1.4.0.1}} 对[[{{tr|Target Dummy}}]]和[[{{tr|Skeleton}}]]使用{{tr|Rainbow Rod}}。]]
+
+'''{{tr|Rainbow Rod}}'''是一个[[{{tr|Hardmode}}]]，[[{{tr|The Twins}}]]后的[[{{tr|wand}}]]。它会发射一枚{{tr|rainbow missile}}，按住 {{key|use}} 键时可随{{tr|cursor}}移动。若拖拽时松开 {{key|use}} 键，{{tr|missile}}会沿当前方向发射。若{{tr|cursor}}释放时固定不动，它会直线远离{{tr|player}}发射。释放后，{{tr|missile}}自动追踪附近的[[{{tr|enemies}}]]，当接触{{tr|enemy}}或[[{{tr|solid block}}]]时，它会产生小型爆炸。{{tr|The missile}}被控制时不会在接触到{{tr|block}}时消失，且不受[[{{tr|liquids}}]]影响。（不同于[[{{tr|Flamelash}}]]）。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Rainbow Rod|expectedrows=1}}
+
+== 备注 ==
+* [[{{tr|mana}}]]消耗仅适用于初始发射。维持并控制飞弹不需要消耗额外的{{tr|mana}}，且控制飞弹时玩家可以恢复{{tr|mana}}。
+* {{tr|projectile}}击中目标时造成 12 {{tr|tick}}{{tick}}{{tr|local invincibility frame}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* 释放后，该{{tr|projectile}}能够{{tr|homing}} 50 {{tr|tile}}半径内的目标。{{source code ref|name=magicmissiles|v=1.4.4.9|method=Terraria.Projectile.AI_009_MagicMissiles}}
+* 当该{{tr|projectile}}被摧毁时，其产生的{{tr|explosion}}会覆盖以撞击点为中心的 8×8-{{tr|tile}}矩形区域。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Kill}}
+* {{tr|Rainbow Rod}}的{{tr|projectile}}最高可以以 {{mph|32 pixels}} 的速度移动。<ref name="magicmissiles"/>
+** 该{{tr|projectile}}在[[{{tr|water}}]]或[[{{tr|lava}}]]中的速度会减半（{{mph|16 pixels}}），在[[{{tr|honey}}]]中会减至四分之一（{{mph|8 pixels}}）。
+* {{icon|desktop|console}} 将{{tr|projectile}}移动到{{tr|inventory}}的任何位置上（如果背包被打开）将会导致{{tr|projectile}}的失控，使其向{{tr|cursor}}最后的移动方向发射。
+** {{icon|mobile}} 打开背包将会使它向{{tr|player}}的手指的移动方向发射。
+
+== 成就 ==
+{{achievement|name=Prismancer}}
+
+== 小贴士 ==
+* 因为{{tr|the missile}}会发光且可控，此{{tr|weapon}}是不错的探索工具。
+* 由于{{tr|Rainbow Rod}}的高伤害输出和自动制导效果，它可以应对{{tr|Hardmode}} {{tr|bosses}}，例如[[{{tr|Skeletron Prime}}]]和[[{{tr|Plantera}}]]。
+
+== 图库 ==
+<gallery>
+File:Journey's End Rainbow Rod.png|鼠标{{tr|cursor}}引导下的{{tr|Rainbow Rod}}。
+</gallery>
+
+== 历史 ==
+{{History|Desktop 1.4.0.1|
+** 更新了{{tr|projectile}}外观。
+** {{tr|projectile}}移动的速度更快了。
+** 松开{{tr|cursor}}时{{tr|projectile}}会跟踪{{tr|enemy}}。
+** {{tr|projectile}}会在消失之前穿透三个{{tr|enemy}}并造成伤害。
+** {{tr|projectile}}现在会在撞击时产生小范围的爆炸效果。
+** 伤害从 74 降低至 50。
+** 使用时间从 18 增加至 25。
+** 魔力消耗从 18 增加至 25。
+** 现在碰到障碍物不会消失。}}
+{{history|version=desktop|Desktop 1.3.1|材质更新。旧的贴图是[[File:Rainbow Rod (old).png|20px]]。}}
+{{history|Desktop 1.3.0.1|
+** 减少制作材料：[[{{tr|Soul of Sight}}]] 20→15, [[{{tr|Soul of Light}}]] 10→8, [[{{tr|Pixie Dust}}]] 60→10, [[{{tr|Unicorn Horn}}]] 4→2, [[{{tr|Crystal Shard}}]] 30→10.
+** 使用时间从 18 降低至 17。
+** 伤害从 72 增加至 74。}}
+{{history|Desktop 1.2.3|
+** 基础伤害从 53 增加至 72。
+** 魔力消耗从 10 增加至 18。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|version=console|Console-Release|{{tr|Introduced.}}}}
+{{history|version=switch|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|version=mobile|Mobile-Release|{{tr|Introduced.}}}}
+{{history|version=3DS|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+		
+{{category|Wall-piercing weapons}}
+
+{{language info|en=Rainbow Rod}}

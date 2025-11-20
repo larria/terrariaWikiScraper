@@ -1,0 +1,92 @@
+{{npc infobox|boxwidth=25em
+| auto = 346
+| idprojectile = 180,350,351,352
+| imagealt = [[File:Santa-NK1 phase 1.gif|link=]] &nbsp;&nbsp;&nbsp; [[File:Santa-NK1 phase 2.gif|link=]]
+| imagecargo = [[File:Santa-NK1 phase 1.gif|link=]]
+| type = Boss
+| environment = Frost Moon
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|melee}}}}<br/>{{modes|72|144|216}} {{note|small=y|paren=y|{{gameText|ItemName.ChainGun}}}}<br/>{{modes|160|320|480}} {{note|small=y|paren=y|{{gameText|ProjectileName.SpikyBall}}}}<br/>{{modes|84|168|252}} {{note|small=y|paren=y|{{gameText|ProjectileName.Missile}}}}<br/>{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.Present}}}} {{source code ref|v=1.4.0.5|name=snk1ai|method=Terraria.NPC.AI|t=相关部分为 <code><nowiki>aiStyle == 61</nowiki></code> 代码段。}}
+|:note:|在更高的波数中{{tr|item drop rate}}更高&nbsp;<ref name="fmdrops">更多关于战利品掉落率的细节参见[[{{tr|Frost Moon}}#战利品|{{tr|Frost Moon}}]]。{{source code ref|v=1.4.0.5|noref=y|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGatingChance}}</ref>|
+|:group:start|可能会掉落以下 2 件{{tr|items}}之一&nbsp;<ref name="fmdrops"/>|----
+| Elf Melter|1|{{modes|5.55% - 12.5%|12.5% - 50%}}
+| Chain Gun|1|{{modes|5.55% - 12.5%|12.5% - 50%}}
+|:group:end|----|----
+| Santa-NK1 Trophy| 1 | {{modes|4.17% - 12.5% {{eicons|1.4.0.1}}|27.27% - 60%}}<br/>{{modes|25% - 50% {{eicons|1.4.0.1|invert=y}}|&#32;}}
+|:note:after|{{note|small=y|block=y|{{modes|wrap=n|第 15 波和之后|{{eicons|1.4.0.1}} 第 15 波和以后}}&nbsp;<ref name="fmtrophies">{{tr|Trophies}}的掉落率和其他来自{{tr|Frost Moon}}{{tr|mini-bosses}} 的战利品不同；关于这些战利品掉落率的详情，参见[[{{tr|Frost Moon}}#战利品|{{tr|Frost Moon}}]]。{{source code ref|v=1.4.0.5|noref=y|method=Terraria.GameContent.ItemDropRules.ItemDropDatabase.RegisterBoss_FrostMoon|class=Terraria.GameContent.ItemDropRules.Conditions.FrostMoonDropGateForTrophies}}</ref><br/>{{modes|wrap=n||{{eicons|1.4.0.1|invert=y}} 第 8 波和以后}}}}|
+| Toy Tank|1| {{master|6.25% - 25%}} @master
+| Santa-NK1 Relic | 1 | {{master|25% - 100%}} @master
+| imageother = Map Icon Santa-NK1.png
+| imageothercaption = Map Icon
+| hardmode = yes
+| sound1 = Item 11.wav
+| soundcaption1 = {{tr|Bullet}}
+| sound2 = Item 42.wav
+| soundcaption2 = {{tr|Missile}}
+}}
+{{redirect|{{tr|Santank}}|可召唤{{tr|Santank mount}}的{{tr|item}}|{{tr|Toy Tank}}}}
+
+'''{{tr|Santa-NK1}}'''是一个[[{{tr|Hardmode}}]][[{{tr|Plantera}}]]后的[[{{tr|mini-boss}}]]，会在[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间生成。在低于一半{{tr|health}}时，其面部和胡须会脱落，并露出下方骇人的机械{{tr|skull}}。
+
+{{tr|Frost Moon}}期间打败{{tr|Santa-NK1}}会加 100 / {{expert|200}} / {{master|250}} 点分数。{{source code ref|v=1.4.4.9|method=Terraria.NPC.CheckProgressFrostMoon}}
+
+== 行为 ==
+{{tr|Santa-NK1}}拥有四种不同的攻击，所有攻击都独立进行：
+* {{tr|Santa-NK1}}的{{tr|chain gun}}会周期性地向玩家发射{{item|nolink=y|image=Bullet (projectile).png|size=20px|{{tr|bullets}}|}}。其开火频率会随其{{tr|health}}降低而增加，从（最初的）3.75 发/秒 直到低于 25% {{tr|health}}时的 7.5 发/秒。
+* {{tr|Santa-NK1}}会在地上频繁丢下{{item|nolink=y|image=Santa-NK1 Spike.png|size=20px|{{tr|spiky balls}}|}}，造成极高伤害{{tr|damage}}。丢下{{tr|Spiky Ball}}的频率会随其{{tr|health}}降低而增加。
+* {{tr|Santa-NK1}}会随机发射{{item|nolink=y|image=Missile.png|size=10px|{{tr|missiles}}|}}弹幕，它们能穿过{{tr|blocks}}，发射频率恒定为 5 发/秒。此攻击会随{{tr|Santa-NK1}}的{{tr|health}}降低而变得更常见。
+* {{tr|Santa-NK1}}也会随机向高空发射大量{{item|nolink=y|image=Santa-NK1 Present.png|size=20px|{{tr|presents}}|}}，它们会带着降落伞缓慢下落，对玩家造成接触伤害。它们能够穿透{{tr|blocks}}，发射频率恒定为 6.67 发/秒。此攻击会随着{{tr|Santa-NK1}}的{{tr|health}}降低而变得更常见。
+
+随着{{tr|Santa-NK1}}的{{tr|health}}降低，它的所有攻击都会增加攻击频率或增加发生几率，见下方；具体效果在下表中列出。注意这些改变只会在{{tr|Santa-NK1}}的{{tr|health}}经过列出阈值后发生，并非持续变化；因此，例如它具有 100% {{tr|health}}时，其{{tr|chain gun}}的开火频率为 3.75 {{tr|bullets}}/秒，在75% {{tr|health}}时''也将如此''，但一旦它的{{tr|health}}低于 75%，开火频率将增加至 4.29 {{tr|bullets}}/秒。
+{| class="terraria lined" style="text-align:center;"
+! {{tr|Health}} !! {{tr|Chain Gun}}<br/>开火频率<br/><small>（{{tr|bullets}}/秒）</small> !! 平均{{tr|Spiky Ball}}间隔<br/><small>（秒）</small> !! 平均{{tr|Missile}}弹幕间隔<br/><small>（秒）</small> !! 平均{{tr|Present}}间隔<br/><small>（秒）</small>
+|-
+| &ge; 75%<br/><small>({{#expr:floor({{npcinfo|346|hp}}*0.75)}} / {{expert|{{#expr:floor({{npcinfo|346|hp|expert}}*0.75)}}}} / {{master|{{#expr:floor({{npcinfo|346|hp|master}}*0.75)}}}})</small> || 3.75 || 10 || 20 || 45
+|-
+| &ge; 50%<br/><small>({{#expr:floor({{npcinfo|346|hp}}*0.5)}} / {{expert|{{#expr:floor({{npcinfo|346|hp|expert}}*0.5)}}}} / {{master|{{#expr:floor({{npcinfo|346|hp|master}}*0.5)}}}})</small> || 4.29 || 9 || 18 || 40.5
+|-
+| &ge; 25%<br/><small>({{#expr:floor({{npcinfo|346|hp}}*0.25)}} / {{expert|{{#expr:floor({{npcinfo|346|hp|expert}}*0.25)}}}} / {{master|{{#expr:floor({{npcinfo|346|hp|master}}*0.25)}}}})</small> || 5.46 || 7.5 || 15 || 33.75
+|-
+| &lt; 25% || 7.5 || 5 || 10 || 22.5
+|}
+
+== 备注 ==
+* {{tr|Santa-NK1}}有游戏中最高的伤害速率之一。
+* {{tr|Santa-NK1}}在靠后的波数中有更高的战利品掉落几率。更多细节，参见[[{{tr|Frost Moon}}#{{tr|Loot}}|{{tr|Frost Moon}}]]。
+
+== 小贴士 ==
+* 玩家应当注意它的{{tr|Present}}发射和{{tr|rocket}}弹幕攻击非常不精确。
+* 使用[[{{tr|wings}}]]以来回飞跃它可以使得它的{{tr|chain gun}}和{{tr|missile}}更难击中玩家。
+* [[{{tr|Razorpine}}]]和[[{{tr|Golden Shower}}]]/{{eil|Betsy's Wrath}}对{{tr|Santa-NK1}}非常有效。先用{{tr|Golden Shower}}/{{tr|Betsy's Wrath}}来降低它的{{tr|defense}}，这可以提升{{tr|Razorpine}}的{{DPS}}。使用搭配[[{{tr|Spectre Hood}}]]的[[{{tr|Spectre armor}}]]时此方法非常有效，因为无论玩家的{{tr|health}}有多低，它都能将其恢复满。
+** 在{{3DS version}}中此方法更加有效，因为{{tr|Spectre Hood}}仍然拥有旧的数据，会增加{{tr|magic damage}}而非降低。
+
+== 花絮 ==
+* {{tr|Spiky Ball}}在{{eil|Master Mode}}中能几乎一击杀死玩家，因为其伤害为 480。这是目前整个{{tr|Frost Moon}}{{tr|event}}中一击能造成的最高伤害；它也比其他大多数 {{tr|bosses}} 的攻击要强，甚至高于[[{{tr|Moon Lord}}]]的{{tr|Phantasmal Deathray}}一击造成的伤害。
+* 其英文名字“Santa-NK1”是对 Santa（圣诞）和 Tank（坦克）的混成词“Santank”的玩笑，当此{{tr|enemy}}首次发布时曾经用过这个名字。
+** 游戏文件中用于脸部扯掉后的图像名为 <code>SantaTank.png</code>。
+* 它的手臂似乎是个大[[{{tr|Chain Gun}}]]，这是个它有时会掉落的物品。
+* 其面容和面具可能参考了系列电影{{维基百科|b=y|Terminator (franchise)|终结者}}。因为终结者有着金属框架并有外部的“皮肤”。
+* 它是仅有的三个进入第二阶段后地图图标不变的 {{tr|boss}} 之一，另两个是[[{{tr|Brain of Cthulhu}}]]和{{eil|Queen Slime}}。
+* {{tr|Santa-NK1}}在[[{{tr|Pumpkin Moon}}]]没有对应 {{tr|Boss}}，不像另外两个{{tr|Frost Moon Boss}}（[[{{tr|Everscream}}]]和[[{{tr|Ice Queen}}]]），它们在{{tr|Pumpkin Moon}}事件中都有对应（分别是[[{{tr|Mourning Wood}}]]和[[{{tr|Pumpking}}]]）。
+{{bestiary|article=}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Master Mode}}中每次击杀时，给予的{{tr|Frost Moon}}波次点数从 200 增加至 250。}}
+{{history|Desktop 1.4.0.1|现在有[[{{tr|Master Mode}}]]掉落：它死亡时总是会掉落[[{{tr|Santa-NK1 Relic}}]]，另外还有 25% 几率掉落[[{{tr|Toy Tank}}]][[{{tr|mount}}]]。}}
+{{history|Desktop 1.2.3.1|
+** 它的{{tr|projectiles}}现在发射的较慢些且造成的伤害更少。
+** 每次击杀时，给予的{{tr|Frost Moon}}波次点数从 80 增加至 100。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Frost Moon Enemies}}
+{{Master Template Characters
+| show-boss = yes
+}}
+
+{{language info|en=Santa-NK1}}

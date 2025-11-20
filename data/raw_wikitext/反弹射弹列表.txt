@@ -1,0 +1,55 @@
+{{exclusive|1.3.0.1}}
+此页面列出了所有'''可反弹{{tr|projectiles}}'''。[[{{tr|Selenian}}]]、[[{{tr|Expert Mode}}]]中的[[{{tr|Biome Mimic}}]]、[[{{tr|Dreadnautilus}}]]、和[[{{tr|Shimmer Slime}}]]在各自的{{tr|projectiles}}反弹阶段中在被这些{{tr|projectiles}}击中时会将之反弹。反弹的{{tr|projectiles}}不再对{{tr|enemies}}造成伤害，反而会伤害{{tr|player}}。它们总是造成原始伤害的 50% 伤害，不会穿透，且不会造成[[{{tr|debuffs}}]]。{{source code ref|v=1.4.4.9|method=Terraria.NPC.ReflectProjectile}}
+__FORCETOC__
+== 列表 ==
+<!--
+
+-->{{source code ref|onlycate=y|v=1.4.4.9|method=Terraria.Projectile.CanBeReflected}}<!--
+// gather list of projectile IDs
+-->{{#vardefine:ids|{{#loop:i|1|{{projectileinfo||count}}|<!-- iterate over all projectiles
+	-->{{#invoke:Projectileinfo|getInfo|id={{#var:i}}}}<!-- get information about projectile
+	-->{{#ifexpr:0{{#dplvar:_projectileinfo_friendly}} and not 0{{#dplvar:_projectileinfo_hostile}}|<!-- friendly && !hostile
+		-->{{#switch:{{#dplvar:_projectileinfo_type}}|728|955={{#var:i}},|#default=<!-- type == 728 || type == 955
+			-->{{#switch:{{#dplvar:_projectileinfo_aiStyle}}|1|2|8|21|24|28|29|131={{#var:i}},}}<!-- correct aiStyle
+		-->}}<!--
+	-->}}<!--
+-->}}}}<!--
+
+// manually remove projectiles which do not deal damage (damage>0)
+-->{{#vardefine:ids|{{#listfilter:list={{#var:ids}}|insep=,|outsep=,|removesep=,|remove=<!--
+	-->370, 371, 601, 772, 861, 868, 869, 936, 996<!--
+-->}}}}<!--
+
+// gather source and size information from [[Projectile IDs]]
+-->{{#vardefine:data_sources|{{#dplreplace:{{#dpl:title={{tr|Projectile ID}}|include={/row}:1|secseparators=¤}}|¤(?=¤)|¤{{na}}}}}}<!--
+-->{{#vardefine:data_sizes|{{#dplreplace:{{#dpl:title={{tr|Projectile ID}}|include={/row}:size|secseparators=¤}}|¤(?=¤)|¤-}}}}<!--
+
+// define source/size info for each projectile
+-->{{#listmap:list={{#var:data_sources}}|insep=¤|indextoken=####|token=@@@@|pattern=<esc>{{#vardefine:data_source:####|@@@@}}</esc>|outsep=}}<!--
+-->{{#listmap:list={{#var:data_sizes}}|insep=¤|indextoken=####|token=@@@@|pattern=<esc>{{#vardefine:data_size:####|@@@@}}</esc>|outsep=}}<!--
+
+// output, using [[Projectile IDs/row]]
+-->
+{| class="terraria sortable"
+! colspan=3 | {{tr|Projectile}} !! rowspan=2 | {{tr|Source}}
+|-
+! ID !! 图像 !! {{tr|Name}}
+{{#lstmap:{{#var:ids}}|,|@@@@|<esc>{{:{{tr|Projectile ID}}/row|id=@@@@|iname=n|{{#var:data_source:@@@@}}|size={{#var:data_size:@@@@}}}}</esc>|}}
+|}
+
+== 备注 ==
+* {{tr|projectile}}被反弹时会发出{{sound|[[Media:Item 150.wav|独特的音效]]|Item 150.wav}}。
+* [[{{tr|Electrosphere Launcher}}|{{tr|electrosphere rockets}}]]和[[{{tr|Sky Dragon's Fury}}]]的替换攻击在被反弹后所产生的电场''不会''对玩家造成伤害。
+* [[{{tr|Vampire Knives}}]]被反弹后击中玩家时不会治疗{{tr|enemy}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 反弹的{{tr|Projectiles}}现在仅对玩家造成 50% 原始伤害，而非 100%。
+** 反弹的{{tr|Projectiles}}不再在{{tr|Expert}}/{{tr|Master}}模式中缩放并增加伤害了。}}
+
+== 参考 ==
+{{reflist}}
+
+[[Category:NPC]]
+
+{{language info|en=List of reflected projectiles}}

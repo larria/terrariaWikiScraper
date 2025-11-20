@@ -1,0 +1,54 @@
+{{exclusive|1.4.0.1}}
+{{master mode only}}
+{{item infobox
+| auto = 4795
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Goat Skull (demo).gif|frame|right|{{tr|Goat Mount}}加速至最大速度，在身后留下一道火痕。]]
+
+'''{{tr|Goat Skull}}'''是个[[{{tr|Hardmode}}]]的[[{{tr|mount}}]]{{tr|summoning item}}，由[[{{tr|Wall of Flesh}}]]在[[{{tr|Master Mode}}]]中以 {{chance|1/4}} 的几率掉落。使用时，它会召唤出一只可骑乘的'''{{tr|Goat Mount}}'''，该坐骑允许玩家像装备有[[{{tr|Cloud in a Bottle}}]]一样进行二段跳。
+
+一旦达到足够高的速度，{{tr|Goat Mount}}就会在身后的{{tr|solid blocks}}上留下一道火痕（类似于[[{{tr|Flame Waker Boots}}]]），从此时开始它就能对接触到的[[{{tr|enemies}}]]造成伤害。当{{tr|player}}和{{tr|Goat Mount}}冲刺穿过一个{{tr|enemy}}时会获得十分之一秒的无敌时间，类似于受到伤害后的短暂无敌时间。
+
+== 备注 ==
+* {{tr|Goat Mount}}无法游泳，也无法防止来自[[{{tr|lava}}]]的{{tr|damage}}。
+** 如果玩家装备了[[{{tr|Water Walking Boots}}]]、[[{{tr|Obsidian Water Walking Boots}}]]或[[{{tr|Lava Waders}}]]，那么{{tr|Goat Mount}}也可在[[{{tr|water}}]]上行走。
+* {{tr|Goat Mount}}的最高速度为 {{mountinfo|Unicorn Mount|max speed}}，可在 {{mountinfo|Goat Mount|time till max speed}} 内达到。{{source code ref|v=1.4.1.2|method=Terraria.Mount.Initialize}}它的最高速度约为装备[[{{tr|Lightning Boots}}]]的{{tr|player}}的 2 倍速度，等于[[{{tr|Wisp in a Bottle}}]]的最高速度。然而，在达到最高速度后下落时，{{tr|Goat Mount}}的速度最多可以达到 {{mph|80}}。
+* 当超过 {{mph|{{#expr:{{mountinfo|Goat Mount|dashSpeed|raw=y}}-{{mountinfo|Goat Mount|runSpeed|raw=y}}/2}} tiles}} 后，{{tr|the Goat Mount}}会开始对它冲向的[[{{tr|enemies}}]]和[[{{tr|critters}}]]造成伤害，类似于[[{{tr|Unicorn Mount}}]]和{{eil|Saddles|horse mounts}}。它会造成 60 基础[[{{tr|summon damage}}]]并造成 10 的[[{{tr|knockback}}]]（{{knockback|10}}）。{{source code ref|v=1.4.1.2|method=Terraria.Player.HorizontalMovement}}
+* {{tr|Goat Mount}}不会受[[{{tr|Asphalt Block}}]]的效果影响，因此装备{{tr|Lightning Boots}}的{{tr|player}}在{{tr|Asphalt Block}}的跑步速度会略快一些（使用{{tr|Lightning Boots}}为 {{mph|64}}，使用{{tr|Goat Mount}}为 {{mph|61}}）。{{tr|The Goat Mount}}也不会受[[{{tr|Swiftness Potion}}]]的效果影响。
+* 当骑乘{{tr|Goat Mount}}时，{{tr|the player}}会被一{{tr|block}}深的[[{{tr|lava}}]]伤害到，但在一{{tr|block}}深的[[{{tr|honey}}]]中时并不会获得{{tr|buff}}或减速。
+* 当{{tr|the player}}骑乘{{tr|the Goat Mount}}时只会受到 20% 的[[{{tr|Fall damage}}]]，不过在装备任何无视{{tr|fall damage}}的[[{{tr|accessories}}]]（如[[{{tr|Lucky Horseshoe}}]]或[[{{tr|Wings}}]]）时仍然不会受到{{tr|fall damage}}，不管骑乘{{tr|the Goat Mount}}时掉落高度是多少。
+* {{tr|The Goat Mount}}会使{{tr|the player}}总共高 5 个{{tr|tiles}}，与大部分其它{{tr|mount}}不同。其它{{tr|mount}}只会将{{tr|player}}的高度增加到 4 个{{tr|tile}}。
+* 所有能够提供额外跳跃的{{tr|items}}（如[[{{tr|Cloud in a Bottle}}]]）会与该{{tr|mount}}叠加，允许三段跳。如果装备了[[{{tr|Bundle of Balloons}}]]，最多能够跳跃 5 次。
+** 再加上[[{{tr|Fart in a Jar}}]]和[[{{tr|Tsunami in a Bottle}}]]（或它们的升级）会让{{tr|the player}}最多能够跳跃 7 次。
+** 使用二段跳时，{{tr|the player}}会在轨迹上留下绿色和黄色的闪烁效果。双跳和冲刺时产生的粒子的颜色可被[[{{tr|dyes}}]]改变。
+* 如果在[[{{tr|Shield of Cthulhu}}]]的冲锋过程中召唤{{tr|Goat Mount}}，{{tr|enemies}}会同时受到护盾和{{tr|Unicorn}}的冲刺的伤害，且{{tr|Goat Mount}}会立即达到最高速度。
+
+== 成就 ==
+{{achievement|name=The Cavalry}}
+
+== 小贴士 ==
+* {{tr|The Goat}}、[[{{tr|Blessed Apple}}|{{tr|Unicorn}}]]、和[[{{tr|Basilisk Mount}}]]的冲刺能力和[[{{tr|Sprinting accessories}}]]的奔跑使用相同的动量机制。这意味着如果在奔跑时、在[[{{tr|Shield of Cthulhu}}]]或[[{{tr|Tabi}}]]冲锋时、通过取消[[{{tr|grapple}}]]快速移动时召唤坐骑会立即让{{tr|Goat Mount}}开始冲刺，即使经过的距离通常不足以触发冲刺效果。
+
+== 花絮 ==
+* 使用任意[[{{tr|Autoswing}}|{{tr|auto-fire}}]]{{tr|weapon}}，如[[{{tr|Terra Blade}}]]、[[{{tr|yoyos}}]]、或[[{{tr|Minishark}}]]，并向玩家移动的反方向开火，{{tr|Goat Mount}}就会走“太空步”。
+* 在平地上，{{tr|Goat Mount}}和无加成的{{tr|Terra Blade}}光束速度相同。
+* {{tr|The Goat Mount}}在功能性上和[[{{tr|Unicorn Mount}}]]相似，只不过召唤和解除坐骑时不会发出光照。
+* 此物品参考了第一人称射击游戏{{维基百科|b=y|Doom II|毁灭战士2（Doom II）}}的最终 {{tr|boss}} [https://doom.fandom.com/wiki/Icon_of_Sin/Doom_II 罪恶标记（Icon of Sin）]。{{tr|The boss}}的形态为一个悬挂在墙上的巨大的半生物、半机械山羊头，类似于[[{{tr|Wall of Flesh}}]]本身。
+** 其{{tr|buff}}的{{tr|tooltip}}“''{{buffinfo|282|tooltip}}''”参考了《毁灭战士》系列的许多游戏的原声音乐，它们大多为{{维基百科|metal music|金属乐（Metal music）}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Goat Skull}}

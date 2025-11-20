@@ -1,0 +1,83 @@
+{{exclusive|1.4.0.1}}
+
+'''{{tr|Liquid bombs}}'''是[[爆炸物]]类物品，爆炸后会产生或吸收[[{{tr|liquids}}]]而不是摧毁[[{{tr|blocks}}]]。共有四种不同的液体炸弹：'''{{tr|Dry Bomb}}'''，'''{{tr|Wet Bomb}}'''，'''{{tr|Lava Bomb}}'''，'''{{tr|Honey Bomb}}'''。
+
+液体炸弹被投掷到地上 3 秒后，或接触到任何液体会立即引爆会爆炸，产生特殊效果（见[[#effects|下方内容]]）。所有液体炸弹都会伤害附近的玩家，[[{{tr|enemies}}]]和[[{{tr|critters}}]]。
+
+{{tr|Wet Bomb}}可由开启[[{{tr|Obsidian Crate|Obsidian}}]]或[[{{tr|Hellstone Crate}}]]获得，在[[{{tr|Lava}}]]中钓鱼能获得这两种{{tr|Crate}}。如果玩家携带着{{tr|Wet Bomb}}，[[{{tr|Demolitionist}}]]就会售卖{{tr|Wet Bomb}}，单价为 {{iteminfo|Wet Bomb|buy}}。玩家可用{{tr|Wet Bomb}}来制作其它种类的{{tr|Liquid bombs}}（见[[#制作|下方内容]]）。{{tr|Demolitionist}}也会以同样价格售卖这些种类的液体炸弹。
+
+<div>{{anchor|effects}}
+* {{tr|Dry Bomb}}爆炸时吸收少许液体。
+* {{tr|Wet Bomb}}爆炸时放置少许[[{{tr|water}}]]。
+* {{tr|Lava Bomb}}爆炸时放置少许[[{{tr|lava}}]]。
+* {{tr|Honey Bomb}}爆炸时放置少许[[{{tr|honey}}]]。
+</div>
+
+== 种类 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| auto = 4827
+| damage = 100
+| type = Consumable
+| listcat = Explosives
+| tag = Vendor / vendor:Demolitionist
+}}
+|{{item infobox
+| auto = 4824
+| damage = 100
+| type = Consumable
+| listcat = Explosives
+| tag = Loot / Vendor / vendor:Demolitionist
+}}
+|{{item infobox
+| auto = 4825
+| damage = 100
+| type = Consumable
+| listcat = Explosives
+| tag = Vendor / vendor:Demolitionist
+}}
+|{{item infobox
+| auto = 4826
+| damage = 100
+| type = Consumable
+| listcat = Explosives
+| tag = Vendor / vendor:Demolitionist
+}}
+}}
+
+== {{tr|Crafting}} ==
+=== {{tr|Recipes}} ===
+{{recipes|result=Dry Bomb/Wet Bomb/Lava Bomb/Honey Bomb|expectedrows=6}}
+<!-- Please do not add a "Used In" section; it is completely redundant. -->
+
+== {{tr|Notes}} ==
+* 身处液体中投掷任何液体炸弹将导致其立刻爆炸，对玩家造成伤害。
+** 如果炸弹种类和玩家所潜入的液体种类相同，炸弹引爆后不会放置或回收任何东西。相对的，若炸弹种类和液体不同，则会立即相应固化成[[{{tr|Obsidian}}]]，[[{{tr|Honey Block}}]]或[[{{tr|Crispy Honey Block}}]]。
+* 在[[{{tr|Hardmode}}]]，[[{{tr|Cyborg}}]]将售卖[[{{tr|Dry Rocket}}]]，用于制作一系列的[[{{tr|liquid rockets}}]]。
+
+== {{tr|Tips}} ==
+* 玩家应至少保留一个任意种类的液体炸弹，因为如果所有液体炸弹都用完，玩家将不得不再去钓鱼获取它们。
+
+== {{tr|Trivia}} ==
+* {{tr|Wet Bomb}}没有被称为"水炸弹"，而其余的液体炸弹都直接以产生的液体命名。
+
+== 图库 ==
+<gallery>
+File:Dry Bomb (demo).gif|投掷{{tr|Dry Bomb}}
+File:Wet Bomb (demo).gif|投掷{{tr|Wet Bomb}}
+File:Lava Bomb (demo).gif|投掷{{tr|Lava Bomb}}
+File:Honey Bomb (demo).gif|投掷{{tr|Honey Bomb}}
+</gallery>
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.3.3|修复了{{tr|Honey Bomb}}和{{tr|Dry Bomb}}不能放置在[[{{tr|Weapon Rack}}]]上的问题。}}
+{{history|Desktop 1.4.0.5|修复了液体炸弹会破坏{{tr|tiles}}的问题。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步{{tr|Desktop}} 1.4.0.5 的更改。}}
+
+{{Explosives}}
+{{Master Template Tools
+| show-other=y
+}}
+
+{{language info|en=Liquid bombs}}

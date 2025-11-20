@@ -1,0 +1,165 @@
+{{third party disclaimer}}
+
+'''地图查看器'''是第三方程序，用于分析保存的地图并将其内容显示在一个易于查看的图形中。
+
+地图查看器可用于寻找[[{{tr|Floating Island}}]]和其他资源，并提供本来无法得到的全局世界视图。有些程序还提供高级工具来查看地图变量、查看[[{{tr|Chest}}]]内容、甚至能以各种方式更改地图。
+
+== TEdit ==
+{{software infobox
+| name = TEdit
+| type = Map Editor
+| version = 4.16.0
+| terrariaversion = 1.4.4.9
+| platform = {{icon|windows}}
+| author = [https://binaryconstruct.com BinaryConstruct]
+| authorlink = https://binaryconstruct.com
+| download =
+* [https://www.binaryconstruct.com/downloads/ binaryconstruct.com]
+* [https://github.com/TEdit/Terraria-Map-Editor/releases GitHub]
+}}
+
+适用于 Windows 的强大的{{tr|map editor}}和查看器。它的功能多得数不清，例如，可用于复制自然生成的结构或清理[[{{tr|Evil Biome}}]]。
+
+* [https://docs.binaryconstruct.com/ 文档]
+* [https://forums.terraria.org/index.php?threads/tedit-terraria-map-editor.43822/ 讨论贴]
+
+[[File:TEdit screenshot.png|600px]]
+
+{{-}}
+
+== TManager ==
+{{software infobox
+| name = TManager
+| type = Map Viewer
+| version = 1.5.1.1
+| platform = {{icon/android}}
+| terrariaversion = 1.4.4.9
+| author = [https://jbro129.com/ Jbro129]
+| download =
+* [https://play.google.com/store/apps/details?id=com.jbro129.tmanager Google Play Store]
+|image=}}
+
+TManager 是个免费的移动版{{tr|Terraria}}中心 app，用户在其中可以探索并下载{{tr|world and players}}。TManager 最近推出了 World Analyzer 功能，允许用户查看{{tr|Terraria}}世界的地图、在世界中搜索特定{{tr|tiles}}、以及寻找特定{{tr|biome}}。
+
+[[File:Tmworldanalyzer-updated1.png|left|thumb|TManager World Analyzer]]
+
+{{-}}
+
+== TerraMap ==
+{{software infobox
+| name = TerraMap
+| type = Map Viewer
+| version = 1.4.17
+| terrariaversion = 1.4.4.9
+| platform =
+<dt>原生</dt>
+{{icon|windows}}
+<dt>基于 Web</dt>
+{{icon|windows|mac|linux}}
+| author = [https://github.com/jasoncoon Jason Coon]
+| download =
+* [https://github.com/TerraMap/windows/releases GitHub]
+* [https://terramap.github.io/windows.html GitHub.io]
+}}
+
+TerraMap 允许你在交互式地图中平移和缩放并动态高亮物品、{{tr|chests}}中的物品、{{tr|dungeons}}、{{tr|NPCs}}、等等。它还支持从命令行生成无头像、无附加的世界地图图像，并具有完整的高亮标记功能。
+
+另一个版本，[https://terramap.github.io/ TerraMap Online]，是 TerraMap 的 Web 应用版本，允许你在一个浏览器内的界面中使用其所有功能。
+
+[[File:TerraMap screenshot.png|800px]]
+
+{{-}}
+
+== Terrafirma ==
+{{software infobox
+| name = TerraFirma
+| type = Map Viewer
+| version = 3.1.13
+| terrariaversion = 1.4.4.9
+| platform = {{icon|windows|mac|linux}}
+| author = mrkite
+| download = [http://seancode.com/terrafirma/ seancode.com]
+}}
+
+可平移和缩放具有完整游戏纹理和应用了光照的地图（纹理需要有本地{{tr|Terraria}}安装）。右键点击可以查看{{tr|chests}}和标志。快速跳转至{{tr|spawn point}}、{{tr|NPC houses}}、和包含特定物品的{{tr|Chests}}。还有各种保存选项来展示你的作品。
+
+如果纹理未能显示并且“视图（View）”菜单中的“使用纹理（Use Textures）”选项显示为灰色，可以点击 帮助（Help） -> 设置（Settings），取消选中“自动检测纹理文件夹（Autodetect Texture Folder）”，点击“浏览（Browse）...”，并定位到你所安装的{{tr|Terraria}}的 <code>\Content\Images</code> 文件夹。关闭并重新启动 Terrafirma 来让此设置生效。
+
+* [https://forums.terraria.org/index.php?threads/terrafirma-interactive-mapping.44883/ 讨论贴]
+
+[[File:Terrafirma screenshot.png]]
+
+{{-}}
+
+== Terraria Map Editor ==
+{{software infobox
+| name = Terraria Map Editor
+| type = Map Editor
+| version = 3.1.7
+| terrariaversion = 1.4.3
+| platform = {{icon|windows|mac|linux}}
+| author = [https://github.com/cokolele cokolele]
+| download =
+* [https://terraria-map-editor.com/ terraria-map-editor.com]
+* [https://github.com/cokolele/terraria-map-editor GitHub]
+}}
+
+跨平台的在线 Web 应用程序，让你能够编辑和查看{{tr|Terraria}}地图。
+
+[[File:Terraria-map-editor.png|600px]]
+{{-}}
+
+== MoreTerra ==
+{{software infobox
+| name = MoreTerra
+| type = Map Viewer
+| version = 1.16
+| terrariaversion = 1.3.5.3
+| platform = {{icon|windows}}
+| author =
+* UberJumper
+* noroom
+* Solsund（当前）
+| download = [https://github.com/mike-mo/MoreTerra/releases GitHub]
+}}
+
+生成 .PNG 的地图查看器，其上可以标记地图特征、物品位置、和包含特定[[{{tr|item}}]]的[[{{tr|Chest}}]]。
+
+* [http://www.terrariaonline.com/threads/moreterra-keeps-on-rolling-updated-for-1-1.68809/ 最新讨论帖]
+* [http://www.terrariaonline.com/threads/terraria-world-viewer.32519/ noroom 的讨论帖]
+* [http://www.terrariaonline.com/threads/terraria-map-viewer.4226/ UberJumper 的讨论帖]
+
+[[File:MoreTerra screenshot.png|500px]]
+{{-}}
+
+== Omnitool ==
+{{software infobox
+| name = Omnitool
+| type = 地图生成器/查看器
+| version = 18.5.1
+| terrariaversion = 1.3.4.3
+| platform = {{icon|windows|linux}}
+| author = [https://github.com/Berserker66/ Berserker66]
+| download =
+* [https://forums.terraria.org/index.php?threads/omnitool-world-creation-mapping-backups-and-more.14664/ {{tr|Official Terraria Forums}}]
+* [https://github.com/Berserker66/omnitool/releases GitHub]
+}}
+
+一个可扩展的开源工具集合，可将许多其他工具的便利性融合到一个图形界面中。Omnitool 提供了多语言，可在启动时创建世界的备份并绘制世界地图。它附带了若干插件以提供更多用途，TerrariaOnline 论坛上可以找到更多插件。
+
+功能：
+* 定制的世界生成器
+** 小行星
+** 平坦世界
+** {{tr|Dungeon}}竞技场
+** 从图像生成世界
+* 绘制世界地图
+** 将你的{{tr|terraria}}存档目录中的地图文件保存为 .png，以供图像查看器查看。
+** 点击列表中的世界也能用类似于 Terraria 或 Terrafirma 的方式渲染世界。
+* 提供十二种语言。
+* 可以用每{{tr|block}} 16x16 像素的方式来渲染地图，就像{{tr|Terraria}}一样。
+{{-}}
+
+{{Software navigation}}
+
+{{language info|en=Map viewers}}

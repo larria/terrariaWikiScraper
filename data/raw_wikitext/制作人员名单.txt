@@ -1,0 +1,80 @@
+{{exclusive|1.4.1}}
+{{tocright}}
+
+'''{{tr|credits}}'''包括了一系列场景，以及开发[[《{{tr|Terraria}}》]]或对它作出贡献的人的名单。{{tr|credits}}会在世界中第一次击败[[{{tr|Moon Lord}}]]之后，或是将[[{{tr|Music Box}}#{{tr|Music Box (Journey's End)}}|{{tr|Music Box (Journey's End)}}]]装备在{{tr|accessory slot}}中时播放。也可从{{tr|main menu}}进入它。
+
+播放期间会展示多个场景，而其中的一些似乎与游戏过程中的特定事件有关。
+
+{{tr|credits}}激活时，会播放{{tr|music}}《{{sound|[[Music#Journey's End|Journey's End]]|Music-Journey's End.mp3|nofallback=y}}》。
+
+{{tr|credits}}的最后一句文字是：''“{{gameText|CreditsRollCategory_EndingNotes.1}}”''
+
+== 场景 ==
+全部 15 个在{{tr|credits}}中展示的场景：
+<gallery mode=slideshow style="margin-top:0; margin-bottom:0">
+File:Credits cutscene GuideRunningFromZombie.gif|[[{{tr|Guide}}]]在把一只[[{{tr|Zombie}}]]不小心放进了[[{{tr|house}}]]中后逃离。
+File:Credits cutscene MerchantAndTravelingMerchantTryingToSellJunk.gif|[[{{tr|Merchant}}]]和[[{{tr|Traveling Merchant}}]]达成了一笔有关[[{{tr|Statue}}|{{tr|Angel Statue}}]]和[[{{tr|Dirt Block}}]]的交易。
+File:Credits cutscene DemolitionistAndArmsDealerArguingThenNurseComes.gif|[[{{tr|Demolitionist}}]]和[[{{tr|Arms Dealer}}]]争吵有关[[{{tr|guns}}]]和[[{{tr|Bomb}}]]的话题，之后[[{{tr|Nurse}}]]邀请他们一起喝酒。
+File:Credits cutscene TinkererAndMechanic.gif|[[{{tr|Goblin Tinkerer}}]]和[[{{tr|Mechanic}}]]在谈情说爱。
+File:Credits cutscene DryadSayingByeToTavernKeep.gif|[[{{tr|Tavernkeep}}]]在进入[[{{tr|Old One's Army}}]]传送门之前向[[{{tr|Dryad}}]]告别。
+File:Credits cutscene WizardPartyGirlDyeTraderAndPainterPartyWithBunnies.gif|[[{{tr|Wizard}}]]、[[{{tr|Painter}}]]、[[{{tr|Dye Trader}}]]、[[{{tr|Party Girl}}]]和两只[[{{tr|Bunny}}]]在[[{{tr|Party}}]]上准备去吃蛋糕。
+File:Credits cutscene ClothierChasingTruffle.gif|[[{{tr|Clothier}}]]笑着追逐[[{{tr|Truffle}}]]，而{{tr|Truffle}}感到惊慌。
+File:Credits cutscene AnglerAndPirateTalkAboutFish.gif|[[{{tr|Angler}}]]和[[{{tr|Pirate}}]]在[[{{tr|Campfire}}]]处交谈，互相展示他们的拥有物。最后，{{tr|Angler}}向{{tr|Pirate}}展示了一条[[{{tr|Truffle Worm}}]]然后走开了，{{tr|Pirate}}马上跟上他想要警告他用此物当{{tr|bait}}时会引来[[{{tr|Duke Fishron}}|危险]]，但没能成功。
+File:Credits cutscene ZoologistAndPetsAnnoyGolfer.gif|[[{{tr|Golfer}}]]、解开诅咒后<ref name="zoologist-cured"/>的[[{{tr|Zoologist}}]]、和[[{{tr|town pets}}]]跟随[[{{tr|Golf Ball}}]]。
+File:Credits cutscene SkeletonMerchantSearchesThroughBones.gif|[[{{tr|Skeleton Merchant}}]]在骨头堆里找到了[[{{tr|Slap Hand}}]]。
+File:Credits cutscene DryadTurningToTree.gif|{{tr|Dryad}}在[[{{tr|Forest}}]]中化身一棵[[{{tr|tree}}]]。
+File:Credits cutscene SteampunkerRepairingCyborg.gif|[[{{tr|Steampunker}}]]升级或修理[[{{tr|Cyborg}}]]时被电击了。
+File:Credits cutscene SantaAndTaxCollectorThrowingPresents.gif|[[{{tr|Santa Claus}}]]给了[[{{tr|Tax Collector}}]]一个礼物。
+File:Credits cutscene WitchDoctorGoingToHisPeople.gif|[[{{tr|Witch Doctor}}]]和[[{{tr|Princess}}]]与两只[[{{tr|Lihzahrd}}]]交朋友。
+File:Credits cutscene PrincessAndEveryoneThanksPlayer.gif|最后，所有 [[{{tr|NPC}}]] 和{{tr|player}}的{{tr|character}}在一处{{tr|marble}}展馆中以做{{维基百科|Wave (audience)|人浪}}的方式庆祝。
+</gallery>
+
+== {{tr|developers}}和贡献者名单 ==
+<!-- This list is generated automatically using [[Template:GameText]]. The relevant sections are CreditsRollCategory_Creator, CreditsRollCategory_ExecutiveProducer, ... as defined in the following list: -->
+{{#af_foreach:{{#af_list: Creator | ExecutiveProducer | Designer | Programming | Graphics | Music | Sound | Dialog | QualityAssurance | BusinessDevelopment | Marketing | PublicRelations | Webmaster | Playtesting | SpecialThanksto }}
+||category|
+<!-- For each of these sections, a heading is displayed: -->
+<nowiki/>
+=== {{gameText|CreditsRollCategory_{{{category}}}.1}} ===
+
+<!-- Then the contents of each section as a bullet list: -->
+{{#af_foreach:
+{{#af_unset:{{gameText/section|CreditsRollCategory_{{{category}}}}}|1}}<!-- skip element 1, it is the heading -->
+||name|<nowiki/>
+* {{{name}}}
+}}
+}}
+
+== 花絮 ==
+* 根据{{tr|Clothier}}的一些话语，{{tr|Clothier}}追逐{{tr|Truffle}}可能是因为他想要吃{{tr|Truffle}}。
+* {{tr|credits}}会在一个世界中第一次击败{{tr|Moon Lord}}后播放，所以在另一世界中已经击败此 {{tr|boss}} 的{{tr|character}}在新世界中也会触发{{tr|credits}}，但是新{{tr|character}}在已经播放过{{tr|credits}}的世界中击败{{tr|Moon Lord}}后不会再次播放。
+* {{tr|credits}}播放时文字总是基于世界下方。这意味着在反转[[{{tr|Gravity}}]]时，它是颠倒的。
+* {{tr|credits}}中的[[{{tr|Zoologist}}]]是一个普通人类，没有狐狸尾巴和耳朵，这是她的诅咒被解除后的样子。<ref name="zoologist-cured"/>与{{tr|Zoologist}}的一句话语中所述的一样，她此时有着棕色头发。
+* {{tr|Stylist}}是唯一的在{{tr|credits}}期间除了最终一幕之外没有出现的 {{tr|NPC}}。
+* 如果玩家使用[[{{tr|Enchanted Sundial}}]]加速了时间，那么{{tr|credits}}也会相应地加速并循环播放，直到这一天被完全跳过。
+* 如果在{{tr|credits}}仍在播放时退出{{tr|world}}，直到{{tr|world}}完成保存前它们仍然会留在屏幕上，类似于部分[[{{tr|Events}}]]的{{tr|backgrounds}}。
+* 在“{{gameText|CreditsRollCategory_SpecialThanksto.1}}”部分列出了一系列特殊的名字：
+** “[[{{tr|The Torch God}}]]”，在 [[1.4.0.5]] 更新中引入的内容。
+** “Lord Gaben”指{{维基百科|Gabe Newell|t=加布·纽维尔}}，Steam 平台的创始人。
+** “Markus ‘Notch’ Persson”指{{维基百科|Markus Persson|t=马库斯·佩尔松}}，他是 2011 年的沙盒游戏{{维基百科|b=y|Minecraft|t=我的世界}}的创始人。[[{{tr|Redigit}}]] 将 Persson 称为“huge inspiration”（巨大的灵感来源/激励）。<ref>{{archived link|https://web.archive.org/web/20221012193536/https://www.reddit.com/r/Terraria/comments/y2205a/comment/is1vp3e/|why is notch in the credits of terraria?}} {{small|{{date|2022|10|12}}}}</ref>
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将 “David 'Chicken Bones' Jakes” 添加到“程序设计”。
+** 将 “J Bame”、“Mikhail 'Nimbus' A.”、“qwerty3.14”、和“teiull”添加到“试玩测试”。}}
+{{history|Desktop 1.4.1.1|
+** 将“Peter ‘Pedguin’ Mann”从“试玩测试”改为“特别鸣谢”。
+** 将“Sarah ‘Waffles’ Data”添加到“图像”。}}
+{{history|Desktop 1.4.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.1.1 的更改一并引入。}}
+{{history|Switch 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.1.1 的更改一并引入。}}
+{{history|Mobile 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.1.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist|refs=
+{{discord ref|name=zoologist-cured|postedby=Leinfors|channel=#terraria-chat|screenshot=File:Zoologist credits trivia.png|link=251072485095636994/251116850132287490/900884733112774706|date=10/21/2021}}
+}}
+
+{{Game mechanics}}
+
+{{language info|en=Credits}}

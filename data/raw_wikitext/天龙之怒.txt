@@ -1,0 +1,64 @@
+{{exclusive|1.3.4}}
+{{item infobox
+| auto = 3858
+| name = Sky Dragon's Fury<!--do not remove this line. It fixes an issue with the Cargo MediaWiki extension recognizing apostrophes in page names.-->
+| sound1 = Dd2 sky dragons fury circle 0.wav, Dd2 sky dragons fury circle 1.wav, Dd2 sky dragons fury circle 2.wav
+| soundcaption1 = 旋转
+| sound2 = Dd2 sky dragons fury shot 0.wav, Dd2 sky dragons fury shot 1.wav, Dd2 sky dragons fury shot 2.wav
+| soundcaption2 = 射击
+| idprojectile = 707, 708, 709, 443
+| listcat = {{tr|projectile melee}}{{!}}+
+| tags = drop / bag loot / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Sky Dragon's Fury (demo).gif|thumb|right|475px|使用中的{{tr|The Sky Dragon's Fury}}。]]
+
+'''{{tr|Sky Dragon's Fury}}'''是一个[[{{tr|Hardmode}}]]、[[{{tr|Golem}}]]后的[[{{tr|Melee weapons}}|{{tr|melee weapon}}]]，拥有两种不同的可[[{{tr|autoswing}}]]的攻击。
+
+手持时按下 {{key|use}} 按键，{{tr|Sky Dragon's Fury}}会在玩家周围 360° 旋转，留下淡蓝色的能量轨迹，对任何在武器旋转时接触它的[[{{tr|Enemies}}|{{tr|enemy}}]]造成伤害和[[{{tr|knockback}}]]。
+
+手持时按下 {{key|open}} 按键，{{tr|Sky Dragon's Fury}}会施展副攻击：它会在玩家前方挥舞一次，挥舞时在 45° 角内以散射的形式发射三个蓝色的能量球。能量球会在飞行随机的距离（但最远必定不会超过 30 格）后，或是接触{{tr|enemy}}或实心{{tr|tile}}后爆发成伤害性的{{tr|Electrospheres}}。{{tr|Electrospheres}}会持续地伤害范围内的实体，在消失前最多持续 3 秒。这一攻击期间的{{tr|Sky Dragon's Fury}}本身、能量球、和{{tr|Electrosphere}}均造成{{tr|weapon damage}}的 50%（{{#expr:{{iteminfo|Sky Dragon's Fury|damage}}*0.5}} {{tr|damage}}）。{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck_Shoot / Terraria.Projectile.142_MonkStaffT2And3 / Terraria.Projectile.Kill}}此外，它们的[[{{tr|critical strike chance}}]]不同：{{tr|Sky Dragon's Fury}}本身和能量球会受[[{{tr|melee}}]]{{tr|critical strike bonuses}}影响，而{{tr|Electrospheres}}受[[{{tr|ranged}}]]{{tr|critical strike bonuses}}影响。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults / Terraria.Projectile.Damage}}
+
+{{tr|The Sky Dragon's Fury}}有 {{chance|1/4}} 几率掉落自 {{tr|Tier 3}}[[{{tr|Old One's Army}}]][[{{tr|Events}}|{{tr|event}}]]期间的[[{{tr|Betsy}}]]。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* {{tr|The Sky Dragon's Fury}}不能获得[[{{tr|melee speed}}]]{{tr|modifiers}}。
+* 如果{{tr|attack speed}}足够高，使用副攻击时只会产生两个能量球。
+* 副攻击产生的{{tr|The projectiles}}也能在使用诸如[[{{tr|flasks}}]]、[[{{tr|Frost armor}}]]、和[[{{tr|Fire Gauntlet}}]]之类的{{tr|items and equipment}}时造成[[{{tr|debuff}}]]。
+* 副攻击的能量球的生成位置离玩家有一定距离。这让此{{tr|weapon}}能穿过两至三格的墙发射。
+* {{tr|Sky Dragon's Fury}}的副攻击产生的{{tr|The Electrosphere}}和[[{{tr|Electrosphere Launcher}}]]产生的{{tr|The Electrosphere}}无法重叠。此前存在的电圈会在与新产生的电圈重叠时消失。
+
+== 花絮 ==
+* {{tr|The Sky Dragon's Fury}}的副攻击与[[{{tr|Electrosphere Launcher}}]]类似。不同点在于{{tr|Sky Dragon's Fury}}发射的电圈更多且不消耗弹药，而{{tr|Electrosphere Launcher}}的电圈造成更多伤害且持续时间更长。
+* [[{{tr|Brand of the Inferno}}]]、[[{{tr|Sergeant United Shield}}]]、{{tr|Sky Dragon's Fury}}和[[{{tr|Tome of Infinite Wisdom}}]]是[[《{{tr|Terraria}}》]]中仅有的拥有由两个不同按键触发的两种不同攻击方式的{{tr|weapons}}。
+* {{tr|Sky Dragon's Fury}}的副攻击生成的{{tr|projectiles}}的外观与[[{{tr|Charged Blaster Cannon}}]]的未充能攻击产生的{{tr|projectiles}}相同。
+* 与其余的[[{{tr|Old One's Army}}]]{{tr|weapons}}相同，{{tr|the Sky Dragon's Fury}}直接参考了[[{{tr|Dungeon Defenders 2}}|《{{tr|Dungeon Defenders 2}}》]]中的同名{{tr|weapon}}，因为它是作为[[{{tr|crossover content}}|{{tr|crossover}}事件]]的一部分引入的。
+
+== 另见 ==
+* {{dd2 link|Polearms#Legendary|Sky Dragon's Fury}}
+
+== 历史 ==
+{{history|Desktop 1.4.1.2|
+** 修正了{{tr|Sky Dragon's Fury}}扔到地上时没有动画的问题。
+** 修正了副攻击不会造成[[{{tr|Flasks}}|{{tr|Flask}}]]{{tr|debuffs}}的问题。}}
+{{history|Desktop 1.4.1| 
+** {{tr|Damage}}由 70 提升至 140。
+** {{tr|Projectile damage}}由{{tr|base damage}}的 75% 降低至{{tr|base damage}}的 50%。}} 
+{{history|Desktop 1.4.0.5|现在可{{tr|auto-uses}}其右键点击功能。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced}}，同步直至{{tr|Desktop}} 1.4.0.5 的改动。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Betsy}}
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Sky Dragon's Fury}}

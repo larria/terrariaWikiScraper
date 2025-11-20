@@ -1,0 +1,29 @@
+<includeonly><!--
+--> align=left | <span style="display:none;">{{{sortkey|}}}</span> <!--
+-->{{item|{{#dplvar:slime:{{{id|}}}:nameraw}}|id={{{id|}}}|type=npc|link={{{link|{{#dplvar:slime:{{{id|}}}:page}}}}}|ext={{{ext|png}}}}}<!-- 
+
+-->{{#if:{{{expertonly|}}}| {{!}}{{!}} colspan=4 class="m-normal" {{!}} {{note|small=y|paren=y|仅限{{tr|Expert Mode}}}} }}<!-- 
+-->|| style="white-space: nowrap;" {{#if:{{{expertonly|}}}|class="m-expert-master"}} | {{#dplvar:slime:{{{id|}}}:life}}<!-- 
+			-->{{#if:{{{id2|}}}|<!--  
+				-->&#32;{{note|small=y|paren=y|第一形态}}<br/><!-- 
+				-->{{#dplvar:slime:{{{id2|}}}:life}}<!-- 
+				-->&#32;{{note|small=y|paren=y|第二形态}}<!-- 
+			-->}}<!--
+
+--> || style="white-space: nowrap;" {{#if:{{{expertonly|}}}|class="m-expert-master"}} | {{#dplvar:slime:{{{id|}}}:damage}}<!--
+
+--> || style="white-space: nowrap;" {{#if:{{{expertonly|}}}|class="m-expert-master"}} | {{#dplvar:slime:{{{id|}}}:defense}}<!--
+
+--> || style="white-space: nowrap;" class="money" {{#if:{{{expertonly|}}}|class="m-expert-master"}} | {{#dplvar:slime:{{{id2|{{{id|}}}}}}:money}}<!--
+
+--> || {{#if:{{{banner|{{#dplvar:slime:{{{id|}}}:bannername}}}}}|{{item|mode=image|{{{banner|{{#dplvar:slime:{{{id|}}}:bannername}}}}}}}|{{na}}}}<!--
+
+-->{{#ifexpr:{{{id|1000}}}<1000<!-- bonus drops only for non-old-gen/3DS-exclusives -->| {{!}}{{!}} align=right {{!}} {{#ifeq:{{npcinfo|{{{id|}}}|type}}|1|{{yes}}|{{no}}}} }}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Slimes/row}}
+</noinclude>

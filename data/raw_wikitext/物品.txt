@@ -1,0 +1,98 @@
+{{for|完整的物品列表|物品 ID}}
+
+'''{{tr|Items}}'''是一些实体，是《[[{{tr|Terraria}}]]》的基本组件之一。玩家可以通过使用、消耗、或放置来与大多数{{tr|item}}互动。{{tr|Items}}总是处于两种形态之一：“掉落”，即，是[[{{tr|world}}]]世界的一部分；或在与玩家相关的、[[{{tr|NPCs}}|{{tr|NPC vendor}}]]的、或[[{{tr|storage item}}]]的[[{{tr|inventory}}]]中。掉落的{{tr|items}}通常可以被玩家拾取进入其{{tr|inventory}}中，并且通常可以再次从{{tr|inventory}}中丢弃出去。
+
+大多数{{tr|items}}可以根据某些共通的特征进行分组，例如[[{{tr|armor}}]]{{tr|items}}、[[{{tr|blocks}}]]、或[[{{tr|weapons}}]]。关于完整的分类，参见[[:分类:物品]]。
+
+== 获取 ==
+在《{{tr|Terraria}}》中，可以通过多种方式获得{{tr|items}}。包括
+* 在实体掉落它们（例如，打败[[{{tr|enemies}}]]、挖掉[[{{tr|blocks}}]]或[[{{tr|furniture}}]]）后拾取之；
+* 从另一个{{tr|inventory}}（例如，{{tr|NPC}} 商贩或[[{{tr|Chest}}]]）转移过来；
+* 作为其他流程的一部分直接放置在玩家的{{tr|inventory}}中（例如[[{{tr|crafting}}]]或被[[{{tr|Angler}}]]等 {{tr|NPCs}} 奖励）。
+
+== 拾取 ==
+当{{tr|item}}处于“掉落”状态时，任何接触到此{{tr|item}}的玩家都会拾取之，并自动放入其{{tr|inventory}}中（如果有足够空间，且{{tr|inventory}}中没有{{eil|Encumbering Stone}}）。另外，所有玩家都会将一定范围内的所有物品牵引（“拉”）向自身以制造接触。此范围称为''拾取范围''。默认情况下，它是一个以玩家为中心的 5.25×5.25 格的矩形区域（即向四方向都延伸 2.625 格）。某些效果会提升某些{{tr|item}}的拾取范围：{{source code ref|v=1.4.1.2|method=Terraria.Player.GetItemGrabRange}}
+
+{| class="terraria lined"
+! 效果 / 装备{{tr|item}} !! 影响{{tr|items}} !! 拾取范围提升
+|-
+| {{na}}
+| 所有{{tr|items}}和拾取
+| 0 {{note|block=y|总计：2.625 格}}
+|-
+| {{na}}
+| {{item|Etherian Mana}}
+| +3.125 格 {{note|block=y|总计：5.75 格}}
+|-
+| {{na}}
+| {{#lstmap:{{#invoke:Iteminfo/idSets|getSet|NebulaPickup}}|,|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| +6.25 格 {{note|block=y|总计：8.875 格}}
+|-
+| {{#lstmap:{{equipinfo/list|goldRing|sep=\}}|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| {{#lstmap:71\72\73\74|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| +21.875 格 {{note|block=y|总计：24.5 格}}
+|-
+| {{#lstmap:{{equipinfo/list|manaMagnet|sep=\}}|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| {{#lstmap:184\1735\1868|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| +18.75 格 {{note|block=y|总计：21.375 格}}
+|-
+| {{buff|id=105}}
+| {{#lstmap:58\1734\1867|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| +15.625 格 {{note|block=y|总计：18.25 格}}
+|-
+| {{#lstmap:{{equipinfo/list|treasureMagnet|sep=\}}|\|@@@@|<esc><p>{{item|id=@@@@|showid=n}}</p></esc>|}}
+| 所有{{tr|items}}和拾取
+| +9.375 格 {{note|block=y|总计：12 格}}
+|}
+{{note|同一行中的效果/装备{{tr|item}}不叠加。}}
+
+被“拉”的{{tr|items}}有加速度和最大速度，因此有可能会有物品并未被完全拉取，例如，如果玩家移动的非常快，导致接触到物品之前它们就已经超出了拾取范围。
+
+== 堆叠 ==
+在[[{{tr|inventory}}]]中，{{tr|items}}可以在单个栏位中堆叠至特定上限数量。
+
+在{{eversions|1.4.4|short=y}}中，大多数物品都可以堆叠至 9999 个，但有少数例外（如{{tr|equipment}}和[[{{tr|Quest fish}}]]）。
+
+在{{eversions|1.4.4|invert=y|short=y}}中，不同类型的物品有不同的上限，如下表所示。这只是一个整体概述，有例外情况。各个物品的最大堆叠大小请参阅物品的单独页面。
+
+{| class="terraria lined"
+! 类型
+! 最大堆叠
+|-
+| 装备<br/>（[[{{tr|weapons}}]]、[[{{tr|accessories}}]]、[[{{tr|armor}}]]等）
+| align=right | 1
+|-
+| [[{{tr|Summoning items}}|{{tr|Boss}}/{{tr|event}}{{tr|summoning items}}]]
+| align=right | 20
+|-
+| [[{{tr|Potions}}]]、[[{{tr|flasks}}]]、[[{{tr|food}}]]
+| align=right | 30
+|-
+| [[{{tr|Consumables}}]]<br/>（[[{{tr|furniture}}]]、{{$|explosives||class}}等）
+| align=right | 99
+|-
+| [[{{tr|Blocks}}]]、[[{{tr|ammunition}}]]、[[{{tr|crafting materials}}]]
+| align=right | 999
+|}
+
+== 消失 ==
+处于“掉落”状态的物品会在退出世界时消失。从那个时间点起就不可能再重新找回它们。如果世界中“掉落”状态的物品超过 400 个，则也会开始有物品消失。在这种情况下，新物品加到屏幕上时，掉落时间最久的物品会消失。
+
+== 另见 ==
+* [[{{tr|NPC drops}}]]
+
+== 参考 ==
+{{reflist}}
+
+{{options/set|item|icons=no}}<!--
+-->{{Master Template Tiles}}
+{{Master Template Weapons}}
+{{Master Template Tools}}
+{{Master Template Consumables}}
+{{Master Template Furniture}}
+{{Master Template Equipables}}<!--
+-->{{options/reset|item}}
+
+[[Category:物品| ]]
+
+{{language info|en=Items}}

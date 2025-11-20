@@ -1,0 +1,359 @@
+[[File:Death.png|thumb|摔死。]]
+{{float file box|width=7em|style=clear:right|{{sound||Player Killed.wav}}|玩家{{tr|death}}时的音效。}}
+{{quotation|[[File:Emote Town Demolitionist.gif|link=]] [[{{tr|Demolitionist}}]]|{{gameText|LegacyDialog.106}}}}
+
+当玩家的[[{{tr|health}}]]降至 0 时就会发生'''{{tr|Death}}'''。会根据玩家如何死亡显示一条{{tr|death message}}。例如，如果玩家死于{{tr|lava damage}}就会显示“{{gameText|DeathText.Lava_3|x_0=&lt;玩家名字&gt;}}”
+
+当玩家死亡时，在其死亡的位置会掉落一块[[{{tr|Tombstone}}]]。如果找到合适的空间，它会变为 2×2 的{{tr|tile}}。它以类似于[[{{tr|sign}}]]的方式保存文字，其中包括玩家的[[#{{tr|Death messages}}|{{tr|death message}}]]，{{eicons|1.4.0.1}}以及真实日期。
+
+{{eicons|1.3.0.1}}如果玩家死亡时持有超过 {{gc|10}}，生成的{{tr|tombstone}}会是以下五个{{tr|golden tombstones}}之一：{{nowrap|[[File:Golden Tombstone.png|18px]] [[File:Golden Headstone.png|18px]] [[File:Golden Gravestone.png|21px]] [[File:Golden Grave Marker.png|21px]] [[File:Golden Cross Grave Marker.png|21px]]}}
+
+{{eicons|1.3.0.1}}在[[{{tr|minimap}}]]上玩家最近一次{{tr|death}}的位置会显示一个 [[File:Map Death.png|link=]] 叉号标记。
+
+死亡时，屏幕中央会显示一行大红字：“{{gameText|LegacyInterface.38}}”。{{eicons|1.3.0.1}}其下方会显示掉落的[[{{tr|coins}}]]数量<!--{{eicons|1.4.0.1}}-->和一个显示玩家需要多长时间才能[[#{{tr|Respawn}}|{{tr|Respawn}}]]的{{tr|respawn timer}}。
+
+== {{tr|Respawn}} ==
+{{redirect|重生|{{tr|Painting}}|{{tr|Reborn|link=y}}}}
+[[{{tr|Difficulty|link=y}}#{{tr|Classic}}|{{tr|Classic}}]]（[[{{tr|Softcore}}]]）和[[{{tr|Mediumcore}}]]{{tr|character}}在不同情况下会在一段（现实世界）时间之后重生：{{source code ref|v=1.4.4.9|method=Terraria.Player.GetRespawnTime}}
+{| class="terraria lined"
+! 条件
+! {{item|Classic|image=Classic mode icon.png}}
+! {{item|Expert|note2=（及更高）|image=Expert mode icon.png}}
+|-
+|
+* 常规{{tr|respawn time}}
+| {{duration|{{#vardefineecho:base_time|600}}ticks}}
+| {{expert|{{duration|{{#expr:{{#var:base_time}}*1.5}}ticks}}}}
+|-
+|
+* 在[[{{tr|multiplayer}}]]中。
+* {{tr|death}}发生时距离玩家的位置 250 格以内存在 [[{{tr|boss}}]]。
+| {{duration|{{#expr:{{#var:base_time}}+600}}ticks}}
+| {{expert|{{duration|{{#expr:({{#var:base_time}}+600)*1.5}}ticks}}}}
+|-
+|
+* 在{{tr|multiplayer}}中。
+* {{tr|death}}发生时距离玩家的位置 250 格以内存在 {{tr|boss}}。
+* 在 {{eil|For the worthy}} 或 {{eil|Get fixed boi}} {{tr|worlds}}中。
+* {{tr|world}}中至少有 2 个玩家。
+| {{na}}<ref>没有{{tr|Classic Mode}}的 {{tr|For the worthy}} {{tr|worlds}}，因为该[[{{tr|secret seed}}]]会将{{tr|world}}{{tr|difficulty}}至少提高到{{tr|Expert}}。</ref>
+| {{expert|{{duration|{{#expr:({{#var:base_time}}+600)*1.5*2}}ticks}}}}
+|}
+如果玩家在{{tr|death}}发生后退出{{tr|world}}，{{tr|respawn time}}会被保存。当玩家用同一{{tr|character}}进入{{tr|world}}后，游戏会检查退出和进入{{tr|world}}之间经过了多少（现实世界的）秒，然后从{{tr|respawn time}}中减去这一时间。因此，经过足够时间后玩家会立即{{tr|respawn}}。{{source code ref|v=1.4.4.9|method=Terraria.Player.AdjustRespawnTimerForWorldJoining}}
+
+在{{tr|respawn}}时，玩家会被移动到{{item|Spawn|world spawn point|image=Map Spawn.png}}，或者最后被设为{{tr|spawn point}}的{{item|Beds|Bed|image=Map Bed.png}}。此外：
+* 玩家{{tr|respawns}}时具有一半[[{{tr|health}}]]（若一半{{tr|health}}少于 100 则是 100 {{tr|health}}）并继承{{tr|death}}前的剩余[[{{tr|mana}}]]（因为{{tr|mana}}在玩家死亡时会停止再生）。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn}}
+** [[{{tr|PvP}}]] {{tr|deaths}}则会让玩家以满{{tr|health and mana}}{{tr|respawn}}。这也应用于用诸如[[{{tr|Explosives (class)}}]]之类的{{tr|item}}对自己造成的{{tr|deaths}}。
+
+== 死亡原因 ==
+死亡可能是因为：
+* [[{{tr|enemies}}]]、[[{{tr|bosses}}]]，以及，在 [[{{tr|PvP}}]] 中，其他玩家，所造成的伤害
+* [[{{tr|Drowning}}]]
+* [[{{tr|Lava}}]]
+* [[{{tr|Traps}}]]、[[{{tr|explosives (class)}}]]，以及诸如[[{{tr|Grenade}}]]这样对玩家造成伤害的{{tr|explosive weapons}}
+* [[{{tr|Fall damage}}]]
+* [[{{tr|Debuffs}}]]，通常是{{tr|enemies}}造成的，并会随着时间推移造成伤害
+** [[{{tr|Suffocation}}]]（在[[{{tr|Silt}}]]/[[{{tr|Slush}}]]/[[{{tr|Sand}}]]之下）
+** [[{{tr|Burning}}]]（接触某些[[{{tr|blocks}}]]）
+** [[{{tr|Horrified}}]]（仅当试图逃离[[{{tr|Wall of Flesh}}]]时会造成{{tr|death}}）
+** [[{{tr|Chaos State}}]]（仅当在受此{{tr|debuff}}影响时又过于频繁地使用[[{{tr|Rod of Discord}}]]）
+* 伤害性[[{{tr|buffs}}]]：[[{{tr|Paladin's Shield}}]]和{{eil|Companion Cube}}
+* 在 1 {{tr|health}}时摧毁[[{{tr|Altar}}]]失败
+
+== 难度差异 ==
+[[{{tr|Difficulty|link=y}}#{{tr|Classic}}|{{tr|Classic}}]]（{{tr|Softcore}}{{eicons|1.4.0.1|invert=y|3ds=n}}）{{tr|character}}在死亡时会掉落玩家''携带''在[[{{tr|inventory}}]]各栏位中的每一叠[[{{tr|coins}}]]的一半、 {{expert|四分之三}}、或{{master|全部}}（总是向上取整）。{{source code ref|v=1.4.0.5|method=Terraria.Player.DropCoins}}存放在[[{{tr|storage items}}]]中的{{tr|Coins}}不受影响。
+
+{{eil|Mediumcore}}{{tr|character}}会掉落所携带的所有{{tr|items}}，包括{{tr|coin}}和[[{{tr|ammo}}]]。最大[[{{tr|health}}]]或[[{{tr|mana}}]]会得以保留，并不会恢复默认值。
+
+{{eil|Hardcore}}{{tr|character}}也会掉落携带的所有{{tr|items}}。此外，死亡时{{tr|character}}会被永久删除，玩家变成[[{{tr|ghost}}]]，无法与环境互动，但依然可以观察、四处移动、并可以与其他玩家聊天。
+
+== {{tr|Death messages}} ==
+当{{tr|player}}死亡时，会随机选择下列的{{tr|death messages}}之一。{{source code ref|v=1.4.4.9|method=Terraria.Lang.CreateDeathMessage}}
+{{options/set|mclist|type=list|width=28em}}{{#vardefine:pn|&lt;{{tr|Player}}名字&gt;}}{{#vardefine:wn|&lt;{{tr|world}}名字&gt;}}
+=== 默认死亡讯息 ===
+{{mclist
+| ''“{{gameText|DeathTextGeneric.Slain|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Eviscerated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Murdered|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.FaceTornOff|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.EntrailsRippedOut|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Destroyed|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.SkullCrushed|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Massacred|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Impaled|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.TornInHalf|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Decapitated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.ArmTornOff|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.InnardsBecameOutards|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Dissected|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.ExtremitiesDetached|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Mangled|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Ruptured|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.PileOfFlesh|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Removed|x_0={{#var:pn}}|x_1={{#var:wn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Snapped|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Cut|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Chopped|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Plead|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Ripped|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Flailing|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.HeadRemoved|x_0={{#var:pn}}}}。”''
+| ''“{{#var:pn}}失去了他/她的头。”''（{{icon/console}}）{{verify}}
+}}
+==== {{eil|1.4.4}} 添加的{{tr|death message}} ====
+{{mclist
+| ''“{{gameText|DeathTextGeneric.Unplugged|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.JourneysEnd|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Trashed|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Macerated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Exsanguinated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.BoneZone|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Lobotomy|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Pulp|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.SadMeat|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Shattered|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.MonsterFood|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Remodeled|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.LostBlood|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.PeeledCap|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.TopKnot|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Parts|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Sauce|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.SpineRip|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Streak|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Amputated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.NeckSnap|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Shredded|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.FatalInjury|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.ExpirationDate|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Incompetence|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Extractinated|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Euthanized|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.BottomUp|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Deboned|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Stolen|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Depravity|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Disc|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Science|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Brain|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.LongPig|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.TheFarm|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.PoppedClogs|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Ticker|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Whacked|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.RubbedOut|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Degloved|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Flayed|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Ganked|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Spanked|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.GotGot|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Murked|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.GlassCoffin|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.WrongGrass|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Forgotten|x_0={{#var:pn}}}}。”''
+| ''“{{gameText|DeathTextGeneric.Smote|x_0={{#var:pn}}}}。”''
+}}
+
+=== {{tr|PvP death messages}} ===
+[[{{tr|PvP}}]]死亡信息会使用以上默认死亡讯息，但会额外显示杀掉玩家的凶手名字以及造成死亡的那一击相应的[[{{tr|weapon}}]]或{{tr|projectile}}。
+
+例如：
+* ''“{{gameText|DeathSource.Player|x_0={{gameText|DeathTextGeneric.FaceTornOff|x_0=&lt;玩家名字{{nbsp}}1&gt;}}|x_1=&lt;玩家名字{{nbsp}}2&gt;|x_2=[[{{tr|Ball O' Hurt}}]]}}”''
+
+=== {{tr|Enemy death messages}} ===
+[[{{tr|Enemy}}]]死亡讯息运作方式和 {{tr|PvP death messages}}类似。
+
+例如：
+* ''"{{gameText|DeathSource.NPC|x_0={{gameText|DeathTextGeneric.Removed|x_0={{#var:pn}}|x_1={{#var:wn}}}}|x_1=[[{{tr|Hellbat}}]]}}"''
+* ''“{{gameText|DeathSource.Projectile|x_0={{gameText|DeathTextGeneric.EntrailsRippedOut|x_0={{#var:pn}}}}|x_1=[[{{tr|Phantasmal Deathray}}]]}}”''
+
+=== 掉落{{tr|death messages}} ===
+{{mclist
+| ''“{{gameText|DeathText.Fell_1|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Fell_2|x_0={{#var:pn}}}}”''
+| ''"{{gameText|DeathText.Fell_3|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_4|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_5|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_6|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_7|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_8|x_0={{#var:pn}}}}"''
+| ''"{{gameText|DeathText.Fell_9|x_0={{#var:pn}}}}"''
+}}
+
+=== {{tr|Drowning death messages}} ===
+{{mclist
+| ''“{{gameText|DeathText.Drowned_1|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_2|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_3|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_4|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_5|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_6|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Drowned_7|x_0={{#var:pn}}}}”''
+}}
+
+=== {{tr|Lava death messages}} ===
+{{mclist
+| ''“{{gameText|DeathText.Lava_1|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Lava_2|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Lava_3|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Lava_4|x_0={{#var:pn}}}}”''
+| ''“{{gameText|DeathText.Lava_5|x_0={{#var:pn}}}}”''
+}}
+
+=== {{tr|Debuff death messages}} ===
+{{options/snap|item|snap}}{{options/set|item|maxsize=20x20px|small=y}}
+{| class="terraria lined"
+! style="width: 17em" | {{tr|Buff}}/{{tr|Debuff}} !! {{tr|Messages}}
+|-
+| {{dotlist|{{buff|On Fire!}}|{{buff|Burning}}|{{buff|Cursed Inferno}}|{{buff|Frostburn}}}}
+|
+* ''“{{gameText|DeathText.Burned_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Burned_2|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Burned_3|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Burned_4|x_0={{#var:pn}}}}”''
+|-
+| {{item|Inferno|note2=（来自另一个 {{tr|PvP}} 状态下的玩家）|class=note2size}}
+|
+* ''“{{gameText|DeathText.Inferno|x_0={{#var:pn}}}}”''
+|-
+| {{dotlist|{{buff|Poisoned}}|{{buff|Acid Venom}}}}
+|
+* ''“{{gameText|DeathText.Poisoned|x_0={{#var:pn}}}}”''
+|-
+| {{item|Suffocation}}
+|
+* ''“{{gameText|DeathText.Suffocated_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Suffocated_2|x_0={{#var:pn}}}}”''
+|-
+| {{item|Electrified}}
+|
+* ''“{{gameText|DeathText.Electrocuted_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Electrocuted_2|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Electrocuted_3|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Electrocuted_4|x_0={{#var:pn}}}}”''
+|-
+| {{item|Stoned|note2=（{{tr|fall damage}})|class=note2size}}
+|
+* ''“{{gameText|DeathText.Petrified_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Petrified_2|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Petrified_3|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Petrified_4|x_0={{#var:pn}}}}”''
+|-
+| {{item|Chaos State|note2=（使用[[{{tr|Rod of Discord}}]])|class=note2size}}
+|
+* ''“{{gameText|DeathText.Teleport_2_Male|x_0={{#var:pn}}}}”''
+* ''“{{#var:pn}}的腿长到他的脑袋那儿了。”'' {{nowrap|{{note|paren=y|{{eicons|1.4.4|invert=y}}}}}} {{note|small=y|paren=y|{{tr|male character}}}}
+* ''“{{#var:pn}}的腿长到她的脑袋那儿了。”'' {{nowrap|{{note|paren=y|{{eicons|1.4.4|invert=y}}}}}} {{note|small=y|paren=y|{{tr|female character}}}}
+* ''“{{gameText|DeathText.Teleport_1|x_0={{#var:pn}}}}”''
+|-
+| {{item|Starving|note2=（在 [[The Constant]] {{tr|seed}}中)|class=note2size}}
+|
+* ''“{{gameText|DeathText.Starved_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Starved_2|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Starved_3|x_0={{#var:pn}}}}”''
+|}{{options/restore|item|snap}}
+
+=== {{tr|Other death messages}} ===
+当[[{{tr|Wall of Flesh}}]]到达{{tr|world}}边界且{{tr|player}}在{{tr|Underworld}}时：
+* ''“{{gameText|DeathText.WasLicked_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.WasLicked_2|x_0={{#var:pn}}}}”''
+
+尝试用[[{{tr|Magic Mirror}}|{{tr|Magic Mirror}}/{{tr|Ice Mirror}}]]、[[{{tr|Recall Potion}}]]、[[{{tr|Teleportation Potion}}]]、{{eil|Cell Phone}}、{{eil|Shellphone}}、或[[{{tr|Teleporter}}]]传送离开{{tr|the Wall of Flesh}}时：
+* ''“{{gameText|DeathText.TriedToEscape|x_0={{#var:pn}}}}”''
+
+因[[{{tr|Paladin's Shield}}]]而死时：
+* {{na}}<ref>不会显示{{tr|death message}}。{{source code ref|noref=y|v=1.4.4.9|method=Terraria.Player.Hurt / Terraria.DataStructures.PlayerDeathReason.LegacyEmpty}}</ref>
+
+由于无法摧毁[[{{tr|Altar}}]]而死、被{{tr|Wall of Flesh}}的身体击杀、或因{{expert|[[{{tr|Jellyfish}}]]的电击攻击|icons=y|nl=y}}而死：
+* ''“{{gameText|DeathText.Slain|x_0={{#var:pn}}}}”''
+
+被{{eil|Companion Cube}}捅死时：
+* ''“{{gameText|DeathText.Stabbed|x_0={{#var:pn}}}}”''
+
+在 {{eil|The Constant}} 或 {{eil|Get fixed boi}} {{tr|world}}中死于{{tr|darkness}}时：
+* ''“{{gameText|DeathText.DiedInTheDark|x_0={{#var:pn}}}}”''
+
+当在以下任意情况下由于到达{{tr|world}}顶部被杀死：
+:* 在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中。
+:* 在 {{eil|For the worthy}}<!--和 {{eil|Get fixed boi}}--> {{tr|world}}中，[[{{tr|Brain of Cthulhu}}]]的第二阶段期间。
+
+* ''“{{gameText|DeathText.Space_1|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Space_2|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Space_3|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Space_4|x_0={{#var:pn}}}}”''
+* ''“{{gameText|DeathText.Space_5|x_0={{#var:pn}}|x_1={{#var:wn}}}}”''{{options/reset|mclist}}
+
+== 备注 ==
+* 如果玩家死于{{tr|projectile}}，{{tr|death message}}中不会包含发射此{{tr|projectile}}的实体的名称，而是使用[[{{tr|Projectile IDs}}|{{tr|projectile}}]]名字，比如''“{{gameText|DeathSource.Projectile|x_0={{gameText|DeathTextGeneric.Slain|x_0={{#var:pn}}}}|x_1=[[{{tr|Mourning Wood}}|{{tr|greek fire}}]]}}”''
+* 因为{{tr|Softcore}}中掉落{{tr|coins}}的数量是针对每个[[{{tr|inventory}}]]栏位分别计算的，因此可能和{{tr|coin}}相加总数的 50% / {{expert|75%}}并不相等。例如，携带总计 {{cc|40}}，每个{{tr|inventory}}栏位放 {{cc|1}}，则会导致总是掉落 {{cc|40}}（因为 {{cc|1}} 的 50% / {{expert|75%}} 向上取整是 {{cc|1}}），而非 {{cc|20}} / {{expert|{{cc|30}}}}。
+* 如果没有平坦的 2 格空间供{{tr|Tombstone}}放置，它会卡住直到消失。
+* 在内部，可以将玩家传送至[[{{tr|spawn point}}]]的{{tr|items}}（例如[[{{tr|Magic Mirror}}]]、[[{{tr|Recall Potion}}]]等等）使用的代码与玩家的{{tr|respawn}}行为相同。{{source code ref|v=1.4.4.9|method=Terraria.Player.Spawn / Terraria.Player.UpdateDead / Terraria.Player.ItemCheck}}因此，如果在{{tr|death}}发生的同一{{tr|tick}}{{tick}}进行传送，玩家将可跳过{{tr|respawn}}计时器并立即{{tr|respawn}}。<!-- Hardcore behavior requires verification, as Terraria.Player.KillMeForGood resets player file data when death occurs?-->
+
+== 小贴士 ==
+* {{tr|The Tombstone}}在定位死亡后掉落的{{tr|items}}/{{tr|coins}}时会很有用，因为{{tr|the Tombstone}}通常落在玩家死亡之处附近。
+* {{eicons|1.3.0.1}}[[{{tr|minimap}}]]上玩家最近一次死亡的地方会显示 [[File:Map Death.png|link=]] 标记，让玩家能迅速再次找到地方。
+** 此外，在{{eversions|1.4.0.1}}中，至少拾取了 {{sc|10}} 的消失的{{tr|enemies}}的位置会在[[{{tr|minimap}}]]上用{{tr|coin icon}}标记，将{{tr|cursor}}悬浮于上/点击{{tr|icon}}会显示那一位置的确切{{tr|coins}}数量。''见[[{{tr|Expert Mode}}下的{{tr|coin}}拾取]]获取细节。''
+* 在[[{{tr|multiplayer}}]] [[{{tr|boss}}]] 战期间，最后一个活着的玩家应当防守以等到其他玩家重生后重返战斗。如果所有玩家都距离太远，{{tr|The boss}} 可能会消失。
+
+== 花絮 ==
+* 死亡后出现的“{{gameText|LegacyInterface.38}}”文字在游戏的 {{eversions|1.3.0.1|invert=y}}（PS3 除外）中不会出现。
+* 一些来自 {{eil|1.3.0.1}} 的实体的{{tr|death messages}}没有明确提及原因。
+* {{eicons|Suspicious Looking Apple}}如果[[{{tr|Worm Pet}}]]在死亡时处于激活状态，它会说“{{sound||Worms byebye.wav|nofallback=y}} [[Media:Worms byebye.wav|再见！]]”（Bye bye!），并且会掉落[[{{tr|Strange Looking Tombstone}}]]。
+* 死于{{eil|Stoned}}{{tr|debuff}}时的{{tr|death messages}}之一，''“{{gameText|DeathText.Petrified_2|x_0={{#var:pn}}}}（{{gameText|DeathText.Petrified_2|x_0={{#var:pn}}|lang=en}}）”''引用了童谣{{维基百科|b=y|Humpty Dumpty|t=矮胖子}}，其中有一句是：All the king's horses and all the king's men couldn't put Humpty Dumpty together again.（国王呀，齐兵马，破镜难圆没办法。）
+* 当玩家[[{{tr|hammer}}|{{tr|hammer power}}]]不足的情况下试图摧毁[[{{tr|Altars}}|{{tr|Demon Altar}}或{{tr|Crimson Altar}}]]而死亡时，曾经显示的是玩家被[[{{tr|Paladin's Shield}}]]所杀死的死亡讯息。
+* {{tr|death message}}''“{{gameText|DeathText.Fell_4|x_0={{#var:pn}}}}”''是指{{维基百科|defenestration|t=抛出窗户}}，一种将某物或某人从窗户扔出去的行为。
+* {{tr|death message}}''“{{gameText|DeathText.Fell_5|x_0={{#var:pn}}}}”''引用自{{维基百科|Tom Petty|t=汤姆·佩蒂}}的歌曲{{维基百科|b=y|Free Fallin'}}。
+* {{tr|death message}}''“{{gameText|DeathText.Fell_9|x_0={{#var:pn}}}}”''引用自{{维基百科|b=y|Peter Pan|t=彼得潘}}中提到飞行需要仙尘和绝妙的想法。
+* {{tr|death message}}''“{{gameText|DeathTextGeneric.Trashed|x_0={{#var:pn}}}}”''是一个关于 [[{{tr|Redigit}}]] 并不喜欢[[{{tr|Ocram}}]]的笑话，暗示它应当被放进垃圾桶里。在[[{{tr|Journey's End}}]]更新的开发途中，一个被命名为“{{tr|Ocram}}之家”，以{{tr|Ocram}}、[[{{tr|Lepus}}]]和[[{{tr|Turkor the Ungrateful}}]]为装饰的垃圾桶被用来回复有关重新加入{{tr|Ocram}}的请求。<ref name="TwitterOcramsHouse">[https://twitter.com/Demilogic/status/1560283999523815425 Hear me out] {{small|{{date|2022|08|18}}}}</ref>
+* {{tr|death message}}''“{{gameText|DeathText.Lava_5|x_0={{#var:pn}}}}”''参考了称为“{{维基百科|the floor is lava|地板是岩浆}}”的游戏，玩家必须假装地板是{{tr|lava}}构成的，并避免以任何方式接触地面。
+* {{tr|death message}}''“{{gameText|DeathText.WasLicked_2|x_0={{#var:pn}}}}”''指“{{维基百科|Baseball metaphors for sex|first base|t=一垒}}”，对接吻的一种隐喻。
+* {{tr|death message}}''“{{gameText|DeathText.Drowned_7|x_0={{#var:pn}}}}”''是对美国情景喜剧{{维基百科|b=y|South Park|t=南方公园}}第五季第八集{{维基百科|b=y|Towelie#Production|Towelie}}中反复出现的短语的引用。
+* PvE 情况下得到的大多数（英文）{{tr|death messages}}在语法上都不正确——在杀人{{tr|enemy}}或物体前面没有冠词（a、an、the）。
+
+== 另见 ==
+* [[{{tr|Coins}}#死亡时掉落|{{tr|Coins}} § 死亡时掉落]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了 76 条新的{{tr|death messages}}。
+*** 添加了 50 条新的{{tr|default death messages}}。
+*** 添加了 7 条新的掉落{{tr|death messages}}。
+*** 添加了 3 条新的{{tr|drowning death messages}}。
+*** 添加了 1 条新的{{tr|lava death message}}。
+*** 添加了 9 条新的{{tr|debuff death messages}}。
+*** 添加了 6 条新的{{tr|other death messages}}。
+** {{tr|Chaos State}}{{tr|death message}}不再会取决于玩家的性别而有所不同。
+** {{tr|death}}后的无敌时间由 1 秒提升至 3 {{tr|seconds}}。}}
+{{history|Desktop 1.4.0.5|修正了一条{{tr|message}}中的错别字：“&lt;玩家名字&gt;'s plead for death was answered”改为“&lt;玩家名字&gt;'s plea for death was answered”。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Tombstones}}现在会显示相关死亡的现实日期。
+** 修正了一条{{tr|message}}中的错别字：“&lt;玩家名字&gt; cant be put back together again.”改为“&lt;玩家名字&gt; can't be put back together again.”}}
+{{history|Desktop 1.3.5|
+** 修正了已经出错很长时间的[[{{tr|Stoned}}]]{{tr|death messages}}。
+** {{tr|Death screen}}现在有到玩家下次重生的计时器。}}
+{{history|Desktop 1.3.4.4|修正了错误提及[[{{tr|Glowstick}}]]和[[{{tr|Piggy Bank}}]]的{{tr|death messages}}。}}
+{{history|Desktop 1.3.4.1|修正了某些 [[1.3.4]] {{tr|weapons}}在玩家死亡时仍在使用的问题。}}
+{{history|Desktop 1.3.3.1|修正了某些条件下{{tr|death messages}}只显示玩家名字的问题。}}
+{{history|Desktop 1.3.0.1|现在会在“{{gameText|LegacyInterface.38}}”下面显示掉落的钱的数量。}}
+{{history|Desktop 1.2.4.1|[[{{tr|Mediumcore}}]]/{{tr|Hardcore}}模式下死亡时会正确掉落物品了。}}
+{{history|Desktop 1.2.4|修正了玩家可能在进入世界时死于{{tr|fall damage}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|修正了{{tr|Hardcore}}人物死亡后无法打开菜单的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+** 修正了由于{{tr|demon altar}}死亡时没有讯息的问题。
+** 在{{tr|multiplayer}}中，在有 {{tr|boss}} 存活时，玩家在非 {{tr|PVP}} 死亡后重生延迟会延长。}}
+{{history|Desktop 1.1.1|死亡时拿在光标上的[[{{tr|Coins}}]]也会正确掉落了。}}
+{{history|Desktop 1.0.5|
+** 添加了更具体的死亡讯息。
+** 玩家现在死亡时会掉落[[{{tr|Tombstones}}]]。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Death}}

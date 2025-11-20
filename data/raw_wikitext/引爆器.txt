@@ -1,0 +1,29 @@
+{{exclusive|1.3.0.1}}<!-- The thing to the left of this text will update as different platforms get 1.3. -->
+{{item infobox
+|type = Mechanism/Furniture
+|width = 2|height = 2
+|auto = 3545
+}}
+[[File:Detonator found Naturally.jpg|frame|在洞穴中自然生成的引爆器]]
+'''引爆器'''是[[{{tr|Mechanism}}]]的触发器之一，玩家可以在地底看到它作为[[{{tr|Trap}}]]连接着[[{{tr|Explosives}}]]，且常常设置在金属矿脉(如:[[银]])上方。
+
+与开关相同，引爆器透过与其相连的[[{{tr|Wire}}]]收发讯号。可以用右键触发引爆器。和[[{{tr|Pressure Plate}}]]一样，玩家落在引爆器上会触发引爆器，不过从1.5格高(与引爆器的活塞同高)走过时不会触发引爆器，从2格高或以上的高度就可以触发。因为引爆器较不容易被意外触发、也比较容易被发现，所以威胁较压力板低。
+
+当[[敌怪]]或[[NPC]]落在上方时引爆器'''不会'''被触发。
+
+当引爆器是被玩家触发时，它在1秒内会处于禁用状态。当被电线触发时，直到下次被电线触发前都会处于禁用。禁用时，引爆器上的活塞会被压住，并且无法被玩家触发。
+
+== {{tr|Trivia}} ==
+工具提示{{GameText|ItemTooltip.Detonator}}({{GameText|ItemTooltip.Detonator|lang=en}})出自[https://en.wikipedia.org/wiki/Frederick_C._Blesse Major General Frederick Corbin "Boots" Blesse]的''No Guts, No Glory''一书。
+
+== {{tr|History}} ==
+{{history|version=desktop|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|version=console|Console 1.0.933.1|{{tr|Introduced.}}({{icon|xbox one}})}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}({{icon|ps4}})}}
+{{history|version=switch|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|version=mobile|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+{{Wiring}}{{Master Template Furniture
+| show-other = yes
+}}
+{{language info|en=Detonator}}

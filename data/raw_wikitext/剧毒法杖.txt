@@ -1,0 +1,64 @@
+__NOTOC__
+{{item infobox
+| auto = 1308
+| debuff = Poisoned / 30 / 100%
+| tags = Drop / hardmode
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Poison Staff (demo).gif|frame|{{tr|The Poison Staff}}的{{tr|poison fangs}}穿透[[{{tr|Target Dummy}}]]。]]
+
+'''{{tr|Poison Staff}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|wand}}]]，有 {{chance|1/40}} 的概率掉落自[[{{tr|Black Recluse}}]]。使用时，它会以约 30°的角度发射 3-4 颗{{tr|Poison Fangs}}。每个{{tr|projectile}}可穿透两个[[{{tr|enemies}}]]并施加 30 秒[[{{tr|Poisoned}}]][[{{tr|debuff}}]]。
+
+{{modifier|magic}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Poison Staff|expectedrows=1}}
+
+== 备注 ==
+* {{tr|poison Fang}}击中{{tr|enemy}}时会造成 10 {{tr|tick}}{{tick}}[[{{tr|local invincibility frames}}]]。
+** {{eicons|1.2.3|not=1.4.0.1}} 其会造成[[{{tr|global invincibility frames}}]]，这意味着即使多个{{tr|projectiles}}击中同一目标，也仅有一个{{tr|projectile}}会造成{{tr|damage}}。
+* 每穿透一个目标，其会有 25% {{tr|damage}}衰减。该衰减是基于其''当前''{{tr|damage}}而非{{tr|base damage}}。因此，其第二次击中只会造成{{tr|base damage}}的 75%，第三次击中则会造成{{tr|base damage}}的 56.25%（0.75 * 75）。
+* 一次发射 3 枚{{tr|projectiles}}的概率为 {{chance|2/3}}，发射 4 枚{{tr|projectiles}}的概率为 {{chance|1/3}}。{{source code ref|v=1.4.1.1|method=Terraria.Player.ItemCheck_Shoot}}
+* {{eicons|1.4.0.1}} {{tr|Projectiles}}范围有限，不会一直存在。它们会在行进大约 37 个{{tr|tiles}}后消失。
+
+== 小贴士 ==
+* {{tr|The Poison Staff}}对于对抗[[{{tr|worm enemies}}]]，如[[{{tr|Wyvern}}]]、[[{{tr|The Destroyer}}]]和[[{{tr|Eater of Worlds}}]]来说十分有用，因为其{{tr|projectiles}}可穿透多个体节。
+
+== 历史 ==
+{{history|Desktop 1.4.1|射程轻微提升，从大约 30 格提升到 37 格。}}
+{{history|Desktop 1.4.0.1|
+** 引入了可使所有{{tr|projectiles}}都击中同一个目标的系统，以增强其类似{{tr|shotgun}}的功能。
+** {{tr|Damage}}由 48 降低至 43。
+** 每发{{tr|projectile}}所能击中的{{tr|enemies}}由 4 个降低到 3 个。
+** {{tr|projectile}}每穿透一个{{tr|enemy}}后下一次命中就会受到 25% {{tr|damage}}惩罚。
+** {{tr|Projectiles}}的射程现在是有限的了。
+** {{tr|Item}}和{{tr|projectile}}{{tr|sprites updated}}。}}
+{{history|Desktop 1.2.3|
+** {{tr|Damage}}由 59 降低至 48。
+** {{tr|Mana cost}}由 12 提升至 22。
+** 现在用于制作{{tr|the Venom Staff}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.06|
+** {{tr|Damage}}由 59 降低至 48。
+** {{tr|Mana cost}}由 12 提升至 22。
+** 现在用于制作{{tr|the Venom Staff}}。}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|
+** {{tr|Damage}}由 59 降低至 48。
+** {{tr|Mana cost}}由 12 提升至 22。
+** 现在用于制作{{tr|the Venom Staff}}。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|Introduced=y|伴随着{{tr|Desktop}} 1.2.3 的相应机制引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-magic = yes
+}}
+
+{{language info|en=Poison Staff}}

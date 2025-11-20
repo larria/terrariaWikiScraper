@@ -1,0 +1,46 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4002
+| tags = hardmode
+}}
+
+'''{{tr|Molten Quiver}}'''是一个[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，具有和[[{{tr|Magic Quiver}}]]相同的效果，此外还可使得[[{{tr|Wooden Arrow}}]]被射出时转化为[[{{tr|Flaming Arrow}}]]。和常规的[[{{tr|ranged damage}}]]{{tr|bonuses}}不同，它只提高{{tr|weapons}}的伤害，而不会影响[[{{tr|ammo}}]]的伤害。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Molten Quiver|expectedrows=1}}
+
+== 备注 ==
+* 由于{{tr|Molten Quiver}}不会提高{{tr|ammunition}}的伤害，其实际伤害提升少于 10%。
+* {{tr|Molten Quiver}}的提高 10% {{tr|arrow damage}}的效果可以和[[{{tr|Magic Quiver}}]]和[[{{tr|Stalker's Quiver}}]]叠加；不过，{{tr|arrow}}的[[{{tr|velocity}}]]和[[{{tr|ammo conservation}}]]几率不会叠加。
+* 额外的{{tr|arrow velocity}}通过将{{tr|arrow}}的 <code>[[extraUpdates]]</code> 值设为 1 来实现。这不会影响下列{{tr|projectiles}}，因为它们的 <code>extraUpdates</code> 值已经为 1（或更高）：[[{{tr|Jester's Arrow}}]]、[[{{tr|Ichor Arrow}}]]、[[{{tr|Venom Arrow}}]]、[[{{tr|Stake}}]]、[[{{tr|Blood Rain Bow}}]]的{{tr|Blood Rain}}、[[{{tr|Marrow}}]]的{{tr|Bone Arrow}}、[[{{tr|Ice Bow}}]]的{{tr|Frost Arrow}}、[[{{tr|Pulse Bow}}]]的{{tr|Pulse Bolt}}、[[{{tr|Aerial Bane}}]]的特殊{{tr|arrow}}、和[[{{tr|Phantasm}}]]的{{tr|Phantasm Arrow}}。
+* {{tr|Wooden Arrows}}（{{iteminfo|Wooden Arrow|damage}} {{tr|base damage}}）转化为{{tr|Flaming Arrows}}（{{iteminfo|Flaming Arrow|damage}} {{tr|base damage}}）会使得{{tr|base damage}} +2。
+** +2 伤害的加成不适用于[[{{tr|Eventide}}]]、[[{{tr|The Bee's Knees}}]]、或[[{{tr|Hellwing Bow}}]]，它们会将{{tr|Wooden Arrows}}转化为其特殊{{tr|projectiles}}。这是由于它们的转化会首先进行，{{tr|projectile}}在射出时不再被视为{{tr|Wooden Arrow}}，因而不会被{{tr|Molten Quiver}}识别出。{{source code ref|v=1.4.2.3|method=Terraria.Player.PickAmmo}}不过，+2 伤害的加成''会''适用于将任何类型的{{tr|arrow}}转化为特殊{{tr|projectiles}}的{{tr|bow}}（如[[{{tr|Aerial Bane}}]]、[[{{tr|Phantom Phoenix}}]]，等等），只要{{tr|Wooden Arrows}}被用作{{tr|ammunition}}即可。{{source code ref|v=1.4.2.3|method=Terraria.Player.ItemCheck_Shoot}}
+
+== 小贴士 ==
+* 此物品相较于{{tr|Magic Quiver}}的优势微乎其微，因为在[[{{tr|Hardmode}}]]时大多数玩家都有了比{{tr|Wooden Arrows}}更好的替代品。
+** 当搭配[[{{tr|Endless Quiver}}]]时它仍然会有用，不过这时[[{{tr|ammo conservation}}]]{{tr|bonus}}就被浪费了。
+
+== 花絮 ==
+* 制作{{tr|Molten Quiver}}需要[[{{tr|Magma Stone}}]]，这是一件[[{{tr|Melee damage}}|特定于{{tr|melee}}]]的{{tr|accessory}}，而{{tr|Molten Quiver}}是一个[[{{tr|Ranged damage}}|特定于{{tr|ranged}}]]的{{tr|accessory}}。
+* 其{{tr|tooltip}}''{{#explode:{{itemTooltip|4002}}|<br/>|-1}}''（{{#explode:{{itemTooltip|4002|lang=en}}|<br/>|-1}}）是将“quiver”（箭袋）用作动词（颤抖）的双关语。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** {{tr|Damage bonus}}现在和其他{{tr|ranged damage bonuses}}加算，而非乘算。
+** {{tr|Projectile speed bonus}}也会增加从{{tr|ammo}}处取得的速度了，之前，它仅提升{{tr|bow}}的{{tr|projectile}}的速度值。}}
+{{history|Desktop 1.4.1|使用此{{tr|accessory}}将{{tr|Wooden Arrows}}转化为{{tr|Flaming Arrows}}现在会正确地给予 {{tr|Flaming Arrows}}所应当拥有的 +2 {{tr|damage}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Molten Quiver}}

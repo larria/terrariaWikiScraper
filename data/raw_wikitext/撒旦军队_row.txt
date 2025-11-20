@@ -1,0 +1,50 @@
+<includeonly><!--
+
+// vars:
+-->{{#vardefine:c1|style="background:#{{#explode:{{{colors}}}|#|1}}"}}<!--
+-->{{#vardefine:c2|style="background:#{{#explode:{{{colors}}}|#|2}}"}}<!--
+-->{{#vardefine:c3|style="background:#{{#explode:{{{colors}}}|#|3}}"}}<!--
+-->{{#vardefine:vl|style="border-left:1px solid #{{#explode:{{{colors}}}|#|4}};"}}<!--
+-->{{#vardefine:none|{{#var:vl}}{{!}} {{!!}} {{!!}}}}<!--
+-->{{#vardefine:T1|{{#var:vl}} {{#var:c1}}{{!}} {{!!}} {{!!}}}}<!--
+-->{{#vardefine:T12|{{#var:vl}} {{#var:c1}}{{!}} {{!!}}{{#var:c2}}{{!}} {{!!}}}}<!--
+-->{{#vardefine:T2|{{#var:vl}}{{!}} {{!!}}{{#var:c2}}{{!}} {{!!}}}}<!--
+-->{{#vardefine:T23|{{#var:vl}}{{!}} {{!!}} {{#var:c2}}{{!}} {{!!}}{{#var:c3}}{{!}}}}<!--
+-->{{#vardefine:T3|{{#var:vl}}{{!}} {{!!}} {{!!}}{{#var:c3}}{{!}}}}<!--
+-->{{#vardefine:T13|{{#var:vl}} {{#var:c1}}{{!}} {{!!}} {{!!}}{{#var:c3}}{{!}}}}<!--
+-->{{#vardefine:T123|{{#var:vl}} {{#var:c1}}{{!}} {{!!}}{{#var:c2}}{{!}} {{!!}}{{#var:c3}}{{!}}}}<!--
+
+
+-->
+!{{#if:{{bool|{{{customrow|}}}}}<!--
+
+// Custom row
+	-->|{{#vardefine:a|{{{1}}}•{{{2}}}•{{{3}}}•{{{4}}}•{{{5}}}•{{{6}}}•{{{7}}}•{{{8}}}•{{{9}}}•{{{10}}}•{{{11}}}•{{{12}}}•{{{13}}}•{{{14}}}•{{{15}}}•{{{16}}}•{{{17}}}•{{{18}}}•{{{19}}}•{{{20}}}•{{{21}}} }}<!--
+	-->{{#vardefine:a|{{#replace:{{#var:a}}|none|0•0•0}} }}<!--
+	-->{{{custom|}}}
+{{/wave|1| {{#explode:{{#var:a}}|•|0}} | {{#explode:{{#var:a}}|•|1}} | {{#explode:{{#var:a}}|•|2}} | {{{colors}}} }}
+{{/wave|2| {{#explode:{{#var:a}}|•|3}} | {{#explode:{{#var:a}}|•|4}} | {{#explode:{{#var:a}}|•|5}} | {{{colors}}} }}
+{{/wave|3| {{#explode:{{#var:a}}|•|6}} | {{#explode:{{#var:a}}|•|7}} | {{#explode:{{#var:a}}|•|8}} | {{{colors}}} }}
+{{/wave|4| {{#explode:{{#var:a}}|•|9}} | {{#explode:{{#var:a}}|•|10}} | {{#explode:{{#var:a}}|•|11}} | {{{colors}}} }}
+{{/wave|5| {{#explode:{{#var:a}}|•|12}} | {{#explode:{{#var:a}}|•|13}} | {{#explode:{{#var:a}}|•|14}} | {{{colors}}} }}
+{{/wave|6| {{#explode:{{#var:a}}|•|15}} | {{#explode:{{#var:a}}|•|16}} | {{#explode:{{#var:a}}|•|17}} | {{{colors}}} }}
+{{/wave|7| {{#explode:{{#var:a}}|•|18}} | {{#explode:{{#var:a}}|•|19}} | {{#explode:{{#var:a}}|•|20}} | {{{colors}}} }}<!--
+
+// regular row
+	-->|{{{custom|{{item|{{trim|{{{1}}}}}|size={{{size|}}}}}}}} <!--
+	-->{{!!}} {{#var:{{{2}}}}} <!--
+	-->{{!!}} {{#var:{{{3}}}}} <!--
+	-->{{!!}} {{#var:{{{4}}}}} <!--
+	-->{{!!}} {{#var:{{{5}}}}} <!--
+	-->{{!!}} {{#var:{{{6}}}}} <!--
+	-->{{!!}} {{#var:{{{7}}}}} <!--
+	-->{{!!}} {{#var:{{{8}}}}}<!--
+-->}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Old One's Army/row}}
+</noinclude>

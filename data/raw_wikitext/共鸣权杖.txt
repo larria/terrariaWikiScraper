@@ -1,0 +1,46 @@
+{{exclusive|1.4.1}}
+{{infobox wrapper
+|{{item infobox
+| auto = 5065
+| tags = drop / hardmode
+| listcat = wands
+}}
+|{{drop infobox}}
+}}
+{{dablink|不要与[[{{tr|Royal Scepter}}]]，由{{tr|Princess}}出售的一种{{tr|vanity accessory}}相混淆。}}
+
+'''{{tr|Resonance Scepter}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|wand}}]]，有 {{chance|1/8}} 的概率掉落自[[{{tr|Princess}}]]。使用时，其会在{{tr|cursor}}位置创造一个粉色的圆形光环，光环会在 1 秒内扩大然后收缩化为闪光。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI_186_PrincessWeapon}}光环会快速造成{{tr|damage}}<ref>默认为每 {{duration|10ticks}}一次：见[[{{tr|Invincibility frame}}#{{tr|Piercing attacks against enemies}}|{{tr|Invincibility frame}} § {{tr|Piercing attacks against enemies}}。]]</ref> 与[[{{tr|knockback}}]]。
+
+虽然{{tr|projectile}}会立即出现在目标位置，但是在{{tr|cursor}}位置与{{tr|player}}之间必须存在清晰的视线；{{tr|projectile}}会被召唤在第一个碰到的[[{{tr|block}}]]的位置。
+
+{{modifier|magic}}
+
+== 备注 ==
+* 光环可连续攻击{{tr|enemies}}，但是每次攻击后其{{tr|damage}}会降低 2%。{{source code ref|name=damage|v=1.4.4.9|method=Terraria.Projectile.Damage}}
+* 光环对以{{tr|cursor}}位置为中心的 6.5×6.5 {{tr|tile}}方形区域造成伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* 光环总是直接将{{tr|enemy}}向远离{{tr|player}}的方向击退。<ref name="damage"/>
+* {{transclude|{{tr|NPCs}}/掉落备注}}
+* 虽然{{tr|Princess}}在 [[{{tr|Celebrationmk10}}]] {{tr|worlds}}中在{{tr|pre-Hardmode}}就可出现，但她仅会在[[{{tr|Wall of Flesh}}]]已被打败后掉落{{tr|Resonance Scepter}}。不过，与其他{{tr|worlds}}不同，此{{tr|item}}仍可在打败{{tr|Plantera}}前获取。
+
+[[File:Resonance Scepter (demo).gif|frame|right|{{tr|player}}使用{{tr|Resonance Scepter}}攻击[[{{tr|Target Dummy}}]]。]]<!-- causes the {{transclude}} box to be too far down if placed before it -->
+
+== 花絮 ==
+* {{tr|Princess}}对{{tr|enemies}}使用同样的{{tr|attack}}，虽然权杖并不会显示出来。
+* 其{{tr|projectile}}的属性类似于[[{{tr|Life Drain}}]]：它们在一定半径内攻击{{tr|enemies}}，且它们均会立即出现并被{{tr|block}}阻止。
+
+== 历史 ==
+{{history|Desktop 1.4.2.3|不会在{{tr|pre-Hardmode}}中掉落，即使{{tr|Princess}}通过某种方式在{{tr|pre-Hardmode}}时就被获得。}}
+{{history|Desktop 1.4.2|不会再仅向右边击退{{tr|enemies}}。}}
+{{history|Desktop 1.4.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.2 至 1.4.2.3的更改一并{{tr|Introduced}}。}}
+{{history|Switch 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.2 至 1.4.2.3的更改一并{{tr|Introduced}}。}}
+{{history|Mobile 1.4.3.2.0|introduced=y|和{{tr|Desktop}} 1.4.2 至 1.4.2.3的更改一并{{tr|Introduced}}。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Resonance Scepter}}

@@ -1,0 +1,416 @@
+{{npc infobox
+| auto = 20
+| idprojectile = 586,995
+| type = NPC
+| environment = Valid house
+| damage = 0
+| damage2 = &#32;{{note|small=y|paren=y|见[[#Damage|描述]]}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| buff = Dryad's Blessing
+| buffduration = 2 {{tr|seconds}}
+| imageother = Map Icon Dryad.png
+| imageothercaption = Map Icon
+}}
+{{float file|[[File:Dryad's Blessing (demo).gif|thumbnail|none|{{tr|Dryad's Blessing}}运作中。]]}}
+[[File:Dryads Blessing Full.png|thumb|350px|{{tr|Dryad's Blessing}}大一些的视图。]]
+
+'''{{tr|Dryad}}'''是个商贩 [[{{tr|NPC}}]]，一旦以下条件全部满足就会出现：
+
+* 有一间空[[{{tr|house}}]]。
+* [[{{tr|Eye of Cthulhu}}]]、[[{{tr|Eater of Worlds}}]]、[[{{tr|Brain of Cthulhu}}]]、[[{{tr|Skeletron}}]]、或{{eil|Lepus}}（其中的一个）已被打败。
+
+除了出售物品外，{{tr|the Dryad}}还能报告存在于当前世界中的[[{{tr|Corruption}}]]/[[{{tr|Crimson}}]]和[[{{tr|Hallow}}]]的百分比。
+
+{{anchor|Damage}}{{anchor|伤害}} 在{{eversions|1.3.0.1}}中，当附近有[[{{tr|enemies}}]]时，{{tr|the Dryad}}会周期性地基于附近的玩家和其他{{tr|town NPCs}} [[{{tr|Dryad's Blessing}}]][[{{tr|buff}}]]并显示树叶屏障效果。此{{tr|buff}}会给玩家 +8 [[{{tr|defense}}]]并给{{tr|town NPCs}} +6 / {{expert|+10}} / {{master|+14}} 防御力、提高{{tr|health regeneration}}、并给予玩家（{{tr|and town NPCs}}）[[{{tr|Thorns Potion}}|{{tr|Thorns effect}}]]。在树叶屏障内且{{tr|Dryad}}直视可见的{{tr|Enemies}}会收到[[{{tr|Dryad's Bane}}]][[{{tr|debuff}}]]，每秒造成 4+ 伤害（加上基于进展的[[{{tr|NPC Stat Boosts}}|{{tr|damage boosts}}]]，并且全部乘以 1× / {{expert|1.5×}} / {{master|1.75×}}）；{{tr|Dryad's Bane debuff}}造成的最低伤害是每秒 4 / {{expert|6}} / {{master|7}}。
+
+== 出售物品 ==
+{{shop
+|{{shop row|Purification Powder|当不在[[{{tr|Blood Moon}}]]期间，且不在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中。}}
+|{{shop row|Vile Powder|[[{{tr|The Corruption}}|{{tr|Corrupt}}]]{{tr|world}}的[[{{tr|Blood Moon}}]]期间，且不在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中。}}
+|{{shop row|Vicious Powder|[[{{tr|The Crimson}}|{{tr|Crimson}}]]{{tr|world}}的[[{{tr|Blood Moon}}]]期间，且不在 {{eil|Don't dig up}} 或 {{eil|Get fixed boi}} {{tr|world}}中。}}
+|{{shop row|Grass Seeds|当不在[[{{tr|Blood Moon}}]]期间时。}}
+|{{shop row|Ash Grass Seeds|在[[{{tr|Underworld}}]]中时。}}
+|{{shop row|Corrupt Seeds|在{{tr|Corrupt world}}的[[{{tr|Blood Moon}}]]期间，<br/>或在[[{{tr|Hardmode}}]]{{tr|Crimson world}}中在{{eil|Graveyard}}内。}}
+|{{shop row|Crimson Seeds|在{{tr|Crimson world}}的[[{{tr|Blood Moon}}]]期间，<br/>或在[[{{tr|Hardmode}}]]{{tr|Corrupt world}}中在{{eil|Graveyard}}内。}}
+|{{shop row|Sunflower|当不在[[{{tr|Blood Moon}}]]期间时。}}
+|{{shop row|Acorn}}
+|{{shop row|Dirt Rod|value=@@@@ {{eicons|1.3.0.1}}<br/>{{gc|20}} {{eicons|1.3.0.1|invert=y}}}}
+|{{shop row|Pumpkin Seed}}
+|{{shop row|Grass Wall|当不在[[{{tr|Blood Moon}}]]期间时。}}
+|{{shop row|Corrupt Grass Wall|{{eicons|1.4.0.1}}在{{tr|Corrupt world}}的[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Crimson Grass Wall|{{eicons|1.4.0.1}}在{{tr|Crimson world}}的[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Flower Wall}}
+|{{shop row|Jungle Wall|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Hallowed Seeds|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Hallowed Grass Wall|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Mushroom Grass Seeds|在[[{{tr|Glowing Mushroom biome}}]]中时。}}
+|{{shop row|Dryad Coverings|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Dryad Loincloth|在[[{{tr|Halloween}}]]期间。}}
+|{{shop row|Daybloom Planter Box|在[[{{tr|King Slime}}]]被打败后。}}
+|{{shop row|Moonglow Planter Box|在[[{{tr|Queen Bee}}]]被打败后。}}
+|{{shop row|Blinkroot Planter Box|在[[{{tr|Eye of Cthulhu}}]]被打败后。}}
+|{{shop row|Deathweed Planter Box|在[[{{tr|Corrupt}}]]{{tr|world}}中打败[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]后。}}
+|{{shop row|Deathweed Planter Box|在[[{{tr|Crimson}}]]{{tr|world}}中打败[[{{tr|Eater of Worlds}}]]/[[{{tr|Brain of Cthulhu}}]]后。|image=Crimsonweed Planter Box.png}}
+|{{shop row|Waterleaf Planter Box|在[[{{tr|Skeletron}}]]被打败后。}}
+|{{shop row|Shiverthorn Planter Box|在[[{{tr|Skeletron}}]]被打败后。}}
+|{{shop row|Fireblossom Planter Box|在[[{{tr|Wall of Flesh}}]]被打败后。}}
+|{{shop row|Guide to Environmental Preservation}}
+|{{shop row|White Flower Seeds}}
+|{{shop row|Yellow Flower Seeds}}
+|{{shop row|Red Flower Seeds}}
+|{{shop row|Pink Flower Seeds}}
+|{{shop row|Magenta Flower Seeds}}
+|{{shop row|Violet Flower Seeds}}
+|{{shop row|Blue Flower Seeds}}
+|{{shop row|Wild Flower Seeds}}
+|{{shop row|Tall Grass Seeds}}
+|{{shop row|Potted Forest Cedar|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 1 和 2 {{moons|1|2}}}}
+|{{shop row|Potted Jungle Cedar|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 1 和 2 {{moons|1|2}}}}
+|{{shop row|Potted Hallow Cedar|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 1 和 2 {{moons|1|2}}}}
+|{{shop row|Potted Forest Tree|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 3 和 4 {{moons|3|4}}}}
+|{{shop row|Potted Jungle Tree|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 3 和 4 {{moons|3|4}}}}
+|{{shop row|Potted Hallow Tree|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 3 和 4 {{moons|3|4}}}}
+|{{shop row|Potted Forest Palm|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 5 和 6 {{moons|5|6}}}}
+|{{shop row|Potted Jungle Palm|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 5 和 6 {{moons|5|6}}}}
+|{{shop row|Potted Hallow Palm|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 5 和 6 {{moons|5|6}}}}
+|{{shop row|Potted Forest Bamboo|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 7 和 8 {{moons|7|8}}}}
+|{{shop row|Potted Jungle Bamboo|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 7 和 8 {{moons|7|8}}}}
+|{{shop row|Potted Hallow Bamboo|[[{{tr|Hardmode}}]]，[[{{tr|Moon phase}}]] 7 和 8 {{moons|7|8}}}}
+|{{shop row|Sparkly Wings|value={{gc|40}}|在[[{{tr|Hardmode}}]]中、[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 世界状态 ==
+“{{gameText|LegacyInterface.49}}”选项会让{{tr|The Dryad}}报告当前{{tr|world}}中{{tr|Corruption}}/{{tr|Crimson}}/{{tr|Hallow}}的覆盖率百分比。如果{{tr|Corruption}}和{{tr|Crimson}}出现在同一个世界中，{{tr|The Dryad}}会区分二者，并分别列出它们的百分比，虽然在她的最终报告中这二者都对总体的{{tr|evil tile}}百分比有贡献。{{source code ref|v=1.4.4.9|method=Terraria.Lang.GetDryadWorldStatusDialog}}
+
+对应{{tr|biome}}的百分比由相关的{{tr|tile}}数计算得出，使用下列公式：
+* {{tr|Corruption}} = {{tr|Corruption tiles}} ÷ 实心{{tr|tile}} × 100%
+* {{tr|Crimson}} = {{tr|Crimson tiles}} ÷ 实心{{tr|tile}} × 100%
+* {{tr|Hallow}} = {{tr|Hallow tiles}} ÷ 实心{{tr|tile}} × 100%
+见[[#统计{{tr|tiles}}|下方]]获取被统计的{{tr|tiles}}列表。
+
+{{eicons|1.4.4}}如果世界中没有{{tr|Corruption, Crimson, or Hallow}}，选择此选项时会给予{{tr|And Good Riddance!}}[[{{tr|achievement}}]]。
+
+{| class="terraria lined"
+! 话语 !! 条件<ref>直接使用百分比进行计算</ref> !! 等效世界情况
+|-
+| “{{gameText|DryadSpecialText.WorldStatusPure|x_0=[{{tr|World}}的名字]}}”
+| {{tr|Hallow, Corruption, and Crimson}} = 0
+| {{tr|The world}}中没有{{tr|Corruption, Crimson, or Hallow}}。
+|-
+| “{{gameText|DryadSpecialText.WorldDescriptionBalanced}}”
+| {{tr|Hallow}} × 0.8 < ({{tr|Corruption}} + {{tr|Crimson}}) < {{tr|Hallow}} × 1.2
+| {{tr|Corruption}}/{{tr|Crimson and Hallow}}的百分比相近。
+|-
+| “{{gameText|DryadSpecialText.WorldDescriptionFairyTale}}”
+| {{tr|Hallow}} ≥ ({{tr|Corruption}} + {{tr|Crimson}})
+| {{tr|Corruption}}/{{tr|Crimson and Hallow}}的百分比不相近，且{{tr|world}}中的{{tr|Hallow}}比{{tr|Corruption}}/{{tr|Crimson}}多。
+|-
+| “{{gameText|DryadSpecialText.WorldDescriptionGrim}}”
+| {{tr|Hallow}} +20% < ({{tr|Corruption}} + {{tr|Crimson}})
+| {{tr|Corruption}}/{{tr|Crimson and Hallow}}百分比不相近，且{{tr|world}}中的{{tr|Corruption}}/{{tr|Crimson}}远高于{{tr|Hallow}}。
+|-
+| “{{gameText|DryadSpecialText.WorldDescriptionClose}}”
+| ({{tr|Corruption}} +{{tr|Crimson}}) ≤ 5%
+| {{tr|Corruption}}/{{tr|Crimson and Hallow}}的百分比并不相近，世界中的{{tr|Corruption}}/{{tr|Crimson}}比{{tr|Hallow}}多，且世界中的{{tr|Corruption}}/{{tr|Crimson}}很少。
+|-
+| “{{gameText|DryadSpecialText.WorldDescriptionWork}}”
+| ({{tr|Corruption}} + {{tr|Crimson}}) > 5%
+| {{tr|Corruption}}/{{tr|Crimson and Hallow}}的百分比并不相近，且世界中的{{tr|Corruption}}/{{tr|Crimson}}比{{tr|Hallow}}多，且世界中的{{tr|Corruption}}/{{tr|Crimson}}更多。
+|}
+
+=== 统计{{tr|tiles}} ===
+下列{{tr|tile}}会被计入{{tr|tile}}总数中。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.AddUpAlignmentCounts}}
+
+==== {{tr|Corruption}} ====
+<!--{{#arraydefine:corruption|23,24,25,32,112,163,398,400,636,661}}-->{{options/set|item|wrap=y}}
+{{collapse top}}
+{{itemlist|class=terraria|width=15em
+|{{item|Corrupt grass}}
+|{{item|Corrupt Jungle grass}}
+|{{item|Corrupt vines}}
+|{{item|Corruption thorny bushes}}
+|{{item|Wild Corrupt plants|image=Tiles 24 1.png/Tiles 24 6.png/Tiles 24 13.png}}
+|{{item|Vile Mushroom}}
+|{{item|Ebonstone Block}}
+|{{item|Ebonsand Block}}
+|{{item|Hardened Ebonsand Block}}
+|{{item|Ebonsandstone Block}}
+|{{item|Purple Ice Block}}
+}}{{collapse bottom}}
+
+==== {{tr|Crimson}} ====
+<!--{{#arraydefine:crimson|199,200,201,203,205,234,352,399,401,662}}-->
+{{collapse top}}
+{{itemlist|class=terraria|width=15em
+|{{item|Crimson grass}}
+|{{item|Crimson Jungle grass}}
+|{{item|Crimson vines}}
+|{{item|Crimson thorny bushes}}
+|{{item|Wild Crimson plants|image=Tiles 201 1.png/Tiles 201 6.png/Tiles 201 13.png}}
+|{{item|Vicious Mushroom}}
+|{{item|Crimstone Block}}
+|{{item|Crimsand Block}}
+|{{item|Hardened Crimsand Block}}
+|{{item|Crimsandstone Block}}
+|{{item|Red Ice Block}}
+}}{{collapse bottom}}
+
+==== {{tr|Hallow}} ====
+<!--{{#arraydefine:hallow|109,110,113,115,116,117,164,402,403}}-->
+{{collapse top}}
+{{itemlist|class=terraria|width=15em
+|{{item|Hallowed grass}}
+|{{item|Mowed Hallowed grass}}
+|{{item|Hallowed vines}}
+|{{item|Pearlstone Block}}
+|{{item|Pearlsand Block}}
+|{{item|Hardened Pearlsand Block}}
+|{{item|Pearlsandstone Block}}
+|{{item|Pink Ice Block}}
+}}{{collapse bottom}}
+
+==== 实心 ====
+<!--{{#arraydefine:solid|1,2,23,25,53,60,109,112,116,117,161,163,164,199,200,203,234,477,492,661,662}}-->
+{{collapse top}}
+{{itemlist|class=terraria|width=15em
+|{{item|Stone Block}}
+|{{item|Grass}}
+|{{item|Corrupt grass}}
+|{{item|Ebonstone Block}}
+|{{item|Jungle grass}}
+|{{item|Hallowed grass}}
+|{{item|Ebonsand Block}}
+|{{item|Pearlsand Block}}
+|{{item|Pearlstone Block}}
+|{{item|Ice Block}}
+|{{item|Purple Ice Block}}
+|{{item|Pink Ice Block}}
+|{{item|Crimson grass}}
+|{{item|Red Ice Block}}
+|{{item|Crimstone Block}}
+|{{item|Crimsand Block}}
+|{{item|Mowed grass}}
+|{{item|Mowed Hallowed grass}}
+|{{item|Corrupt Jungle grass}}
+|{{item|Crimson Jungle grass}}
+}}{{collapse bottom}}{{options/reset|item}}
+
+== {{tr|Joja Cola}} {{eicons|Joja Cola}} ==
+[[File:Dryad Purify Animation.gif|thumb|{{tr|The Dryad}}的“净化”动画。]]
+
+当玩家的[[{{tr|inventory}}]]中有[[{{tr|Joja Cola}}]]时，{{tr|Dryad}}会有特别的对话，提示玩家手持{{tr|Joja Cola}}。当在玩家手持{{tr|Joja Cola}}时，“{{gameText|LegacyInterface.49}}”选项会被“{{gameText|StardewTalk.GiveColaButtonText}}”替代。在选择此选项后，会消耗{{tr|Joja Cola}}，播放出一个{{tr|Junimo}}从星形传送门中跳出的动画。{{tr|Junimo}}会拿出一个可被玩家拾取的[[{{tr|Stardrop}}]]，然后消失。
+
+{|class="terraria lined"
+! 话语 !! 出现于
+|-
+| “{{gameText|StardewTalk.PlayerHasColaButIsNotHoldingIt}}” || 玩家{{tr|inventory}}中有{{tr|Joja Cola}}，但未手持它。
+|-
+| “{{gameText|StardewTalk.PlayerHasColaAndIsHoldingIt}}” || 玩家在[[{{tr|hotbar}}]]中选择了{{tr|Joja Cola}}。
+|-
+| “{{gameText|StardewTalk.PlayerGivesCola}}” || {{tr|Joja Cola}}被“净化”。
+|}
+
+== {{tr|Living preferences}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Dryad|female}}
+{{-}}
+
+== 成就 ==
+{{achievement|name=And Good Riddance!}}
+
+== 小贴士 ==
+* {{tr|Dryad's Blessing}}的圈子开始于距离{{tr|Dryad}}约 20 格的地方，扩展到半径大约 40 格，并且在结束前会短暂扩展到半径 60 格。
+* 对于那些为[[{{tr|Truffle}}]]而盖了房子的玩家，临时将{{tr|Dryad}}的房屋放到[[{{tr|Glowing Mushroom biome}}]]之内或附近会有好处，在那她会出售[[{{tr|Mushroom Seeds}}]]。
+** 并不非要建造房屋，可以用[[{{tr|Queen Statue}}]]将她传送到{{tr|Glowing Mushroom biome}}去。
+** 在{{old-gen}}上，另有一个将{{tr|the Dryad}}带到{{tr|Glowing Mushroom biome}}的方法是用[[{{tr|Boulder}}]]或[[{{tr|Land Mine}}]]杀掉她，同时让除了目标{{tr|biome}}中的房屋之外的所有空闲房屋无效化。
+* {{eicons|1.4.0.1}}玩家可以通过购买[[{{tr|Corrupt Seeds}}]]或[[{{tr|Crimson Seeds}}]]（在[[{{tr|Graveyard}}]]{{tr|minibiome}}中时）并制造人工{{tr|biome}}来得到两种邪恶{{tr|biome}}的物品而不需要使用另一个世界。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.78}}”
+* “{{gameText|LegacyDialog.79}}”
+* “{{gameText|LegacyDialog.80}}”
+* “{{gameText|LegacyDialog.81}}”
+
+'''打败[[{{tr|Old One's Army}}]]之后：'''
+:'''1 级：'''
+:*“{{gameText|DryadSpecialText.AfterDD2Tier1|x_WorldName=&lt;{{tr|World}}的名字&gt;}}”{{sic}}
+:'''2 级：'''
+:*“{{gameText|DryadSpecialText.AfterDD2Tier2}}”
+
+'''[[{{tr|Merchant}}]]存在时：'''
+* “{{gameText|LegacyDialog.71|x_Merchant=&lt;{{tr|Merchant}}的名字&gt;}}”
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|LegacyDialog.70|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''[[{{tr|Truffle}}]]存在时：'''
+* “{{gameText|LegacyDialog.238|x_Truffle=&lt;{{tr|Truffle}}的名字&gt;}}”
+
+'''[[{{tr|Skeletron}}]]被打败前：'''
+* “{{gameText|LegacyDialog.72}}”
+
+'''在[[{{tr|Corruption}}|{{tr|Corrupt}}]]世界中：'''
+* “{{gameText|LegacyDialog.77}}”
+:'''在打败[[{{tr|Eater of Worlds}}]]前'''
+:*“{{gameText|LegacyDialog.69}}”
+
+'''在[[{{tr|the Crimson}}|{{tr|Crimson}}]]世界中：'''
+* “{{gameText|LegacyDialog.333}}”
+:'''在打败[[{{tr|Brain of Cthulhu}}]]前：'''
+:*“{{gameText|LegacyDialog.332}}”
+
+'''仅限[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.73}}”
+* “{{gameText|LegacyDialog.76}}”
+* “{{gameText|LegacyDialog.75}}”
+* “{{gameText|LegacyDialog.74}}”
+
+'''当询问状态时：'''
+* “{{gameText|DryadSpecialText.WorldStatusAll|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|hallow}}百分比&gt;|x_2=&lt;{{tr|corruption}}百分比&gt;|x_3=&lt;{{tr|crimson}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusHallowCorrupt|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|hallow}}百分比&gt;|x_2=&lt;{{tr|corruption}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusHallowCrimson|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|hallow}}百分比&gt;|x_2=&lt;{{tr|crimson}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusCorruptCrimson|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|corruption}}百分比&gt;|x_2=&lt;{{tr|crimson}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusCorrupt|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|corruption}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusCrimson|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|crimson}}百分比&gt;}}”
+* “{{gameText|DryadSpecialText.WorldStatusHallow|x_0=&lt;{{tr|world}}的名字&gt;|x_1=&lt;{{tr|hallow}}百分比&gt;}}”
+（她会根据{{tr|Crimson or Corruption}}哪个存在来决定说哪句话，如果通过人工{{tr|biome}}让二者都存在那么她就会把{{tr|Crimson and Corruption}}的百分比都列出来。在[[{{tr|Hardmode}}]]中她还会加上{{tr|Hallow}}的百分比。）
+
+'''一旦世界完全纯净：'''
+* “{{gameText|DryadSpecialText.WorldStatusPure|x_0=&lt;{{tr|World}}的名字&gt;}}”
+
+'''[[{{tr|Party}}]]期间：'''
+* “{{gameText|DryadSpecialText.Party}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|DryadSpecialText.Windy1}}”
+* “{{gameText|DryadSpecialText.Windy2}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|DryadSpecialText.Rain1}}”{{sic}}
+* “{{gameText|DryadSpecialText.Rain2}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|DryadSpecialText.Storm1}}”
+* “{{gameText|DryadSpecialText.Storm2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|DryadSpecialText.Graveyard1}}”
+* “{{gameText|DryadSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== 快乐话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Dryad.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Dryad.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Dryad.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Dryad.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Dryad.HateCrowded}}”
+
+'''在{{tr|the Jungle}}中时：'''
+* “{{gameText|TownNPCMood_Dryad.LikeBiome|x_BiomeName={{tr|the Jungle}}}}”
+
+'''在{{tr|the Desert}}中：'''
+* “{{gameText|TownNPCMood_Dryad.DislikeBiome|x_BiomeName={{tr|the Desert}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Dryad.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Dryad.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Witch Doctor}}]]时：'''
+* “{{gameText|TownNPCMood_Dryad.LikeNPC|x_NPCName=&lt;{{tr|Witch Doctor}}的名字&gt;}}”
+
+'''靠近[[{{tr|Truffle}}]]时：'''
+* “{{gameText|TownNPCMood_Dryad.LikeNPC|x_NPCName=&lt;{{tr|Truffle}}的名字&gt;}}
+
+'''当在[[{{tr|Angler}}]]附近时：'''
+* “{{gameText|TownNPCMood_Dryad.DislikeNPC|x_NPCName=&lt;{{tr|Angler}}的名字&gt;}}”
+
+'''当在[[{{tr|Golfer}}]]附近时：'''
+* “{{gameText|TownNPCMood_Dryad.HateNPC|x_NPCName=&lt;{{tr|Golfer}}的名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Dryad.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+[[File:Credits cutscene DryadTurningToTree.gif|thumb|{{tr|Dryad}}在[[{{tr|Forest}}]]中化身一棵{{tr|tree}}。]]
+* 希腊神话中，{{wikipedia|nymph|{{tr|nymph}}（Nymph）}}是被描绘成美丽年轻女子的自然神灵，她们是自然的人格化象征与物理体现。{{wikipedia|Dryad|{{tr|Dryad}}（Dryad）}}是{{tr|nymph}}的一种，这个词指的是橡树精灵（也被称为橡树宁芙（oak tree nymph）），现今则通常是对树宁芙的统称。这在[[{{tr|credits}}]]的过场动画中有过类似画面。
+** [[《{{tr|Dungeon Defenders 2}}》]]中，{{iwlink|dd2|Dryad|{{tr|Dryad}}的角色介绍}}里称{{tr|Dryad}}是“{{tr|Terraria}}意志的物理体现”（a physical manifestation of the will of Terraria itself）。
+** 其话语：“{{gameText|LegacyDialog.70|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”透露树妖已经有 500 岁了，引用了希腊神话中，{{tr|the Dryad}}拥有超自然的长寿。
+** {{tr|nymph}}和“性吸引”有所关联（例如希腊神话中代表性欲的{{wikipedia|Satyr|萨提尔}}总会追逐着{{tr|nymph}}），这可能解释了为什么{{tr|Dryad}}会受到{{tr|Arms Dealer}}的纠缠与骚扰。
+* {{tr|the Dryad}}的许多名字是从古典文学（例如：{{wikipedia|Caelia}}、{{wikipedia|Elysian Fields|Elysia}}、{{wikipedia|Fae folk|Fae}}、{{wikipedia|A Midsummer Night's Dream|Titania}}）或女性名人中得到的灵感。
+* 名字 Celestia 来源于电视连续剧{{维基百科|b=y|My Little Pony: Friendship is Magic|t=小马宝莉：友谊就是魔法}}，剧中有一位同名的公主。
+* 名字 Nissa 来自集换式卡牌游戏{{维基百科|b=y|Magic: The Gathering|t=万智牌}}中的鹏洛客（planeswalker）妮莎瑞文（Nissa Revane）。{{note|paren=y|small=y|译注：称号与名字的中文翻译依照[https://deckmaster.info/card.php?multiverseid{{=}}204788 官方简体中文版牌面]文字}}
+* {{tr|The Dryad}}被描绘于一副名叫《{{tr|Dryadisque}}》（Dryadisque）的[[{{tr|painting}}]]中，这幅画的名字则是恶搞了现实中的油画作品{{维基百科|b=y|Grande Odalisque|t=大宫女}}。
+* 她的话语中将[[{{tr|Truffle}}]]称为“fun guy”（好人），这是利用了{{wikipedia|homophone|同音词}} "{{wikipedia|Fungi|Fungi（真菌）}}"。
+* 话语“{{gameText|LegacyDialog.80}}”可能是用{{tr|Dryad}}（曾）是一棵树的事情开玩笑。
+** 这也可能指的是她自己没有洗清世界上的邪恶，尽管她声称曾与{{tr|Old One's Army}}作战。
+* {{tr|Dryad}}有一句关于玩家安全的话说到“''{{tr|Terraria}}''需要你”而不是“&lt;世界的名称&gt;需要你”。和其他话语相比这是个怪异之处。
+* 她的话语“{{gameText|TownNPCMood_Dryad.LikeBiome|x_BiomeName={{tr|the Jungle}}}}”参考了 {{维基百科|Katy Perry}} 的歌《{{维基百科|I Kissed a Girl}}》。
+* 其话语：“{{gameText|TownNPCMood_Dryad.LikeNPC|x_NPCName=&lt;{{tr|Truffle/Witch Doctor}}的名字&gt;}}”都提到{{tr|Dryad}}与他们产生共鸣。可能是指向现实中真菌与植物之间的{{wikipedia|Mutualism (biology)|互利共生（Mutualism）}}关系。以及 {{wikipedia|Witch doctor|{{tr|witch doctor}}（witch doctor）}}在民俗宗教中，通常会佩戴{{wikipedia|Mask|面具（傩面）}}进行仪式来与自然和神灵建立联系。
+* 在[https://forums.terraria.org/index.php?threads/terraria-comic-book-from-dc-comics-is-here.40367/ 来自 DC 漫画的{{tr|Terraria}}漫画书]中有一个名叫 Calista 的{{tr|Dryad}}出场。
+* {{tr|The dryad}}的话语中提到了她在埃特尼亚的时间还有她用{{tr|the corruption}}对抗{{tr|Old One's Army}}，这提到了她在《{{tr|Dungeon Defenders 2}}》中的能力，在那她能变身成腐化之身来造成额外伤害。
+** {{iwlink|dd2|Dryad}}在《{{tr|Dungeon Defenders 2}}》中作为可玩角色出现。她的防御手段包括召唤[[{{tr|Moss Hornet}}]]、[[{{tr|Harpy}}]]、[[{{tr|Slimes}}]]和[[{{tr|Angry Nimbus}}]]。
+** {{tr|Dryad}}的[[#{{tr|Shimmered form}}|{{tr|Shimmered form}}]]很像她在《{{tr|Dungeon Defenders 2}}》中的{{tr|corrupt}}形态。
+* {{lore|有一个远古{{tr|Dryads}}种族曾与[[{{tr|Cthulhu}}]]进行过一场大战。由于无法打败这个坏蛋，他们设法挖出了它的眼睛、脊椎和大块大脑从而让它瘫痪。所有{{tr|Dryads}}都被杀死了，只有一个存活了下来，幸存者（就是游戏中碰到的这个 {{tr|NPC}}）依然隐藏了一段时间。}}
+** 尽管如此，和所有 {{tr|NPC}} 一样，如果她被杀死且又满足生成条件，那么她就会重生。[[{{tr|Re-Logic}}]] 的美工 [[{{tr|Jimmarn}}]] 推测她可能是会转世重生的。<ref>[https://www.reddit.com/r/Terraria/comments/nelbjw/terrarias_10th_anniversary_we_are_relogic_ask_us/gygsf24 Terraria's 10th Anniversary: We are Re-Logic, Ask Us Anything!] {{date|date=May 17, 2021}}</ref>
+** [[{{tr|Guide}}]]的{{tr|tips}}“You should prove yourself by defeating a strong monster. That will get the attention of '''a''' dryad.（你需要打败一只强大的怪物来证明自己。这样才能吸引（一名）树妖的注意。）”有可能是暗示依然有多个隐藏的{{tr|Dryads}}。
+* 根据 [[{{tr|Redigit}}]] 的说法，{{tr|the Dryad}}“实际上啥都没穿”（isn't actually wearing anything），“{{tr|vine}}是她身体的一部分”（the vines are a part of her body）。{{discord ref|postedby=Redigit|channel=#journeys-end-chat|link={{tr|251072485095636994/699332402887000064/712518128025731133|link=y}}}}
+* 比起其他{{tr|emote}}，{{tr|The Dryad}}更可能使用{{tr|Stylist}}{{tr|emote}}（[[File:Emote Town Stylist.gif]]）。为什么会如此暂时未知。
+** 此外，{{tr|the Stylist}}比起其他{{tr|emote}}也更可能使用{{tr|Dryad emote}}（[[File:Emote Town Dryad.gif]]）。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|现在出售{{tr|Corrupt Grass Walls and Crimson Grass Walls, Flower Seeds, and Potted Trees}}。在{{tr|Graveyard biome}}中时，若在{{tr|Corruption worlds}}中就会出售{{tr|Crimson Seeds}}，在{{tr|Crimson worlds}}中则会出售{{tr|Corrupt Seeds}}。}}
+{{history|Desktop 1.3.0.6|现在在{{tr|Crimson worlds}}{{tr|Blood Moon}}期间会出售{{tr|Vicious Powder}}。}}
+{{history|Desktop 1.3.0.5|现在能正确的为其他 [[{{tr|NPC}}]] 提高防御而非将其降低。}}
+{{history|Desktop 1.3.0.1|
+** 添加了[[{{tr|Planter Boxes}}]]。
+** 添加了{{tr|Dryad's Blessing}}[[{{tr|buff}}]]。
+** 外观更新。}}
+{{history|Desktop 1.2.3|现在如果是在[[{{tr|Crimson}}]]世界中，会在[[{{tr|Blood Moon}}]]期间出售[[{{tr|Crimson Seeds}}]]。
+** 现在对于内有{{tr|Crimson}}的世界有了{{tr|Crimson}}特有的对话。
+** 现在能随着打败[[{{tr|Brain of Cthulhu}}]]而到来。
+** 改进了{{tr|Dryad}}的世界状态对话。
+** 修正了[[{{tr|Brain of Cthulhu}}]]不会让{{tr|dryad}}生成或停止谈论{{tr|chasms}}的 {{tr|Bug}}。
+** 修正了{{tr|Dryad}}在[[{{tr|Crimson}}]]世界中会在[[{{tr|Purification Powder}}]]的建议中提到[[{{tr|the Corruption}}]]的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1|现在出售[[{{tr|Pumpkin seeds}}]]和她自己的[[{{tr|Dryad costume}}|衣服]]。}}
+{{history|Desktop 1.2|现在出售[[{{tr|Grass Wall}}]]和[[{{tr|Flower Wall}}]]。当处于[[{{tr|Glowing Mushroom Biome}}]]中时还出售[[{{tr|Mushroom Grass Seeds}}]]。}}
+{{history|Desktop 1.1.1|现在{{tr|Corruption}}和[[{{tr|The Hallow}}|{{tr|Hallow}}]]状态的数字是正确的了。}}
+{{history|Desktop 1.1|
+** 现在在她生成时会随机赋予名字。她的死亡会用其名字报告。其他 {{tr|NPC}} 也会在他们各自的对话中使用此名字。
+** {{tr|The Dryad}}现在会告诉玩家游戏世界中{{tr|Corruption}}和{{tr|Hallow}}的百分比。}}
+{{history|Desktop 1.0.5|[[{{tr|Vile Powder}}]]和[[{{tr|Corrupt Seeds}}]]添加到{{tr|inventory}}。商品的选择变为取决于一天中的时间和事件。}}
+{{history|Desktop 1.0.3|和所有其他 {{tr|NPCs}} 一样，现在可被{{tr|enemies}}杀死。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Dryad}}

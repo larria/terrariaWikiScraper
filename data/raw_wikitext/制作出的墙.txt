@@ -1,0 +1,40 @@
+<div class="ajaxHide">
+{{main|{{tr|Background walls}}}}
+</div><!--
+-->{{#vardefine:craftedwalls_usegif|{{#af_list:
+
+<!-- List walls that should use a .gif for their placed image here: -->
+  Cog Wall
+| Confetti Wall
+| Honeyfall Wall
+| Lavafall Wall
+| Midnight Confetti Wall
+| Rainbow Brick Wall
+| Sandfall Wall
+| Snowfall Wall
+| Waterfall Wall
+| Blue Starry Wall
+| Gold Starry Wall
+
+}}}}<!--
+-->{{#vardefine:wall_itemids|{{#cargo_query:tables=Items
+|fields=concat(itemid, "")<!-- force long values such as 2353 to display as-is instead of 2,353 -->
+|where=type HOLDS 'wall' AND listcat HOLDS 'craftable items'
+|format=list|delimiter=,|no html|limit=1000
+|default=<!-- if the table displays no rows, remove this line for debugging -->
+}}}}<!--
+-->{{#vardefine:wall_itemids|{{#var:wall_itemids|""}}}}<!-- if the table displays no rows, remove this line for debugging
+-->{{recipes|where=resultid in ({{#var:wall_itemids}})|expectedrows=192
+|stationgrouping=no
+|header-result={{tr|Wall}}
+|header-ingredients={{tr|Recipe}}
+|header-station={{tr|Crafting station}}
+|resulttemplate=:{{BASEPAGENAME}}/resultcell
+}}
+<div class="ajaxHide">
+{{Master Template Tiles
+| show-walls = yes
+}}</div>
+{{category|Wall items|*}}
+
+{{language info|en=Crafted walls}}

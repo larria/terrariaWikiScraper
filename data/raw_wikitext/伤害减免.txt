@@ -1,0 +1,98 @@
+'''{{tr|Damage reduction}}'''是一项隐藏的玩家属性数据，能降低所受到的伤害。所有这方面的{{tr|boosts}}（[[{{tr|Warmth Potion}}]]除外）都作用于计算了[[{{tr|defense}}]]''之后''的伤害。
+
+== 强化 ==
+{{options/set|item|wrap=y}}
+
+=== {{tr|Buffs}} ===
+{| class="terraria lined"
+! {{tr|Buff}}
+! 伤害减免奖励
+|-
+| {{item|Solar Blaze}}
+| {{percent|20%}}
+|-
+| {{item|Beetle Endurance}}
+| {{percent|15%}} / {{percent|30%}} / {{percent|45%}}
+|-
+| {{item|Paladin's Shield (buff)|Paladin's Shield}}
+| {{percent|25%}} {{note|paren=y|仅当装备者高于 {{percent|25%}} {{tr|health}}时}}
+|-
+| {{item|Endurance}}
+| {{percent|10%}}
+|-
+| {{item|Ice Barrier}}
+| {{eicons|1.3.0.1}} {{percent|25%}} {{note|paren=y|当低于 {{percent|50%}} {{tr|health}}时}}
+|-
+| {{item|Warmth}}
+| {{percent|30%}} {{note|paren=y|仅会降低来自{{tr|cold-themed}}{{tr|enemies}}的{{tr|damage}}}}
+|}
+
+=== {{tr|Items}} ===
+{| class="terraria lined"
+! {{tr|Item}}
+! 伤害减免奖励
+|-
+| {{item|Chlorophyte armor|image=Chlorophyte armor Mask.png|note2=（使用{{tr|Chlorophyte Mask}}）}}
+| {{eicons|1.4.0.1}} {{percent|5%}}
+|-
+| {{item|Turtle armor}}
+| {{eicons|1.4.0.1}} {{percent|15%}}
+|-
+| {{item|Solar Flare armor}}
+| {{percent|12%}}
+|-
+| {{item|Worm Scarf}}
+| {{percent|17%}}
+|}{{options/reset|item}}
+
+== 备注 ==
+* {{tr|Solar Blaze}}、{{tr|Beetle Endurance}}、{{tr|Warmth}}和{{tr|Paladin's Shield}}{{tr|buffs}}的{{tr|damage reduction}}是乘性的，所有其他效果为加性的。因此，{{tr|damage}}首先会被[[敌怪旗|{{tr|banner}}]]（25% / {{expert|50%}}减免）和{{tr|Warmth Potion}}（对于寒冷主题来源 30% 减免）的效果降低，而后剩余的{{tr|damage}}被{{tr|defense}}（50% / {{expert|75%}} / {{master|100%}}）降低，之后再剩余的{{tr|damage}}被所有加性的{{tr|damage reduction}}降低，然后被{{tr|Beetle}}和{{tr|Solar Flare armor}}的{{tr|buff}}降低，最后被{{tr|Paladin's Shield}}降低。（此外，每一步都会向下取整{{tr|damage}}值，但该数值不能低于 1。）{{source code ref|v=1.4.0.5|method=Terraria.Player.Hurt}}
+** 例如，在{{eil|Master Mode}}{{tr|world}}中，一个{{tr|cold-themed}}{{tr|enemy}}以某种方式对{{tr|player}}造成了 2000 {{tr|damage}}，而该{{tr|player}}装备了一整套{{tr|Solar Flare armor}}（已触发其{{tr|buff}}）、{{tr|Worm Scarf}}、{{tr|Frozen Turtle Shell}}（已触发其{{tr|buff}}），拥有{{tr|Endurance}}、{{tr|Warmth}}、该{{tr|enemy}}的{{tr|banner}}的{{tr|buff}}，还有一位装备了{{tr|Paladin's Shield}}的队友，以及 140 {{tr|defense}}。
+**# {{tr|banner}}将{{tr|damage}}减半为 1000。
+**# {{tr|Warmth}}{{tr|buff}}将其降低 30%，为 700。
+**# {{tr|defense}}将其降低 140，为 560；
+**# {{tr|Worm Scarf}}（17%）、{{tr|Endurance}}（10%）、{{tr|Solar Flare armor}}（12%）和{{tr|Frozen Turtle Shell}}（25%）以加性的方式降低{{tr|damage}}，所以它们会将{{tr|damage}}降低 64%，为 201.6，向下取整到 201。
+**# {{tr|Solar Flare armor}}的{{tr|buff}}将其降低 20%，为 160.8，向下取整到 160。
+**# 队友的{{tr|Paladin's Shield}}将其降低 25%，因此该{{tr|player}}最终受到 120 {{tr|damage}}。
+**# 队友会受到 40 {{tr|damage}}，而该伤害还会被此队友的属性值进一步降低（不过{{tr|banner}}和{{tr|Warmth}}{{tr|buff}}对此无效）。
+
+== 最高{{tr|damage reduction}} ==
+最高可能伤害减免是 73.6%（对于{{tr|cold-themed}}{{tr|enemies}}是 81.52%），使用如下设置：
+
+=== {{eversions|1.3.0.1}} ===
+* {{tr|Armor}}（乘算）
+** [[{{tr|Beetle armor}}]]，用{{tr|Beetle Shell}} – 45% 减免
+** [[{{tr|Warmth Potion}}]] – 对于{{tr|cold-themed}}{{tr|enemies}}有 30% 减免
+* {{tr|Accessories and potions}}（加性）
+** [[{{tr|Frozen Turtle Shell}}]] – 25% 减免
+** [[{{tr|Worm Scarf}}]] – 17% 减免
+** [[{{tr|Endurance Potion}}]] – 10% 减免
+** 如果有[[{{tr|Paladin's Shield}}]]{{tr|buff}}，可以额外降低 25% 防御后伤害。
+
+因此，最高{{tr|damage reduction}}为： <code>(1 - 0.45) × (1 - (0.25 + 0.17 + 0.1)) = 0.264 = 26.4% 所受伤害 = 73.6%</code>
+
+对于{{tr|cold-themed}}{{tr|enemies}}的最高{{tr|damage reduction}}为：<code>(1 - 0.45) × (1 - 0.3) × (1 - (0.25 + 0.17 + 0.1)) = 0.1848 = 18.48% 所受伤害 = 81.52%</code>（注意{{tr|Warmth Potion}}在{{tr|defense}}''之前''计算）。
+
+=== {{eversions|Warmth Potion|not=1.3.0.1}} ===
+* {{tr|Armor}}（乘算）
+** [[{{tr|Beetle armor}}]]，用{{tr|Beetle Shell}} – 45% 减免
+* {{tr|Accessories and potions}}（加性）
+** [[{{tr|Endurance Potion}}]] – 10% 减免
+** [[{{tr|Warmth Potion}}]] – 对于{{tr|cold-themed}}{{tr|enemies}}有 30% 减免
+** 这不包括[[{{tr|Paladin's Shield}}]]{{tr|buff}}，因为其伤害减免是发生在计算{{tr|defense}}之前，而其他都是在计算{{tr|defense}}之后发生的。
+
+因此，最高{{tr|damage reduction}}为：<code>(1 - 0.45) × (1 - 0.1) = 0.495 = 49.5% 所受伤害 = 50.5%</code>
+
+对于{{tr|cold-themed}}{{tr|enemies}}的最高{{tr|damage reduction}}为：<code>(1 - 0.45) × (1 - (0.1 + 0.3)) = 0.33 = 33% 所受伤害 = 66%</code>
+
+=== {{eversions|Warmth Potion|invert=y}} ===
+* {{tr|Armor}}（乘算）
+** [[{{tr|Beetle armor}}]]，用{{tr|Beetle Shell}} – 45% 减免
+* {{tr|Accessories}}和{{tr|Potions}}（加算）
+** [[{{tr|Endurance Potion}}]] – 10% 减免
+** 这不包括[[{{tr|Paladin's Shield}}]]{{tr|buff}}，因为其伤害减免是发生在计算{{tr|defense}}之前，而其他都是在计算{{tr|defense}}之后发生的。
+
+因此，最高{{tr|damage reduction}}为：<code>(1 - 0.45) × (1 - 0.1) = 0.495 = 49.5% 所受伤害 = 50.5%</code>
+
+{{Game mechanics}}
+{{language info|en=Damage reduction}}

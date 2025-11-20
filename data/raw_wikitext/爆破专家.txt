@@ -1,0 +1,229 @@
+{{npc infobox | tabs=y
+| auto = 38
+| type = NPC
+| environment = Valid house
+| damage = {{modes|20|30|35}}
+| damage2 = &#32;{{note|small=y|paren=y|{{gameText|ItemName.Grenade}}}}
+| imageother = Map Icon Demolitionist.png
+| imageothercaption = Map Icon
+| idprojectile = 30
+}}
+{{quotation|'''{{tr|Demolitionist}}'''|{{gameText|LegacyDialog.100}}}}
+
+'''{{tr|Demolitionist}}'''是个商贩 [[{{tr|NPC}}]]，一旦满足以下条件就会出现：{{source code ref|v=1.4.3.6|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+* 有一间空[[{{tr|house}}]]。
+* 玩家的[[{{tr|inventory}}]]中有[[{{tr|Explosives (class)}}]]（存放在诸如[[{{tr|chests}}]]等[[{{tr|storage items}}]]中，或是诸如[[{{tr|Piggy Bank}}]]等[[{{tr|portable storage}}]]中的物品不算）。
+* 存在[[{{tr|Merchant}}]]。
+
+{{eicons|1.4.4}} 这些要求仅适用于初始生成。如果{{tr|Demolitionist}}被杀死，他过一段时间会自动重生。
+
+{{eicons|1.4.4|invert=y}} 如果{{tr|Demolitionist}}被杀，他只会在以上条件再次满足时才会重生。
+
+在{{eversions|1.3.0.1}}中，{{tr|the Demolitionist}}会向附近的{{tr|enemies}}扔[[{{tr|Grenade}}]]来自卫，这在游戏开始时会造成 20 / {{expert|30}} / {{master|35}} 伤害。 
+
+此外，在{{eversions|1.3.0.1}}中，包括{{tr|Demolitionist}}在内的各个 [[{{tr|NPCs}}]] 会随着玩家的进展得到[[{{tr|NPCs|link=y}}#{{tr|Stat boosts}}|各种属性提升]]。
+
+== 生成条件 ==
+下方是有效的{{tr|explosives (class)}}。玩家的{{tr|inventory}}中必须至少有其中一个才能让{{tr|Demolitionist}}生成。{{source code ref|v=1.4.3.6|field=Terraria.ID.ItemID.Sets.ItemsThatCountAsBombsForDemolitionistToSpawn}}
+{{collapse top}}
+{{itemlist/start|width=15em}}
+{{#listmap:<!--
+	-->|list={{#invoke:Iteminfo/idSets|getSet|ItemsThatCountAsBombsForDemolitionistToSpawn}}<!--
+	-->|insep=,|outsep=<!--
+	-->|token=@@<!--
+	-->|sortmode=presort<!--sort before mapping
+	-->|sortoptions=numeric<!--sort values as number (they're item IDs)
+	-->|pattern=<esc>{{itemlist/item|{{item|id=@@|showid=no}}}}</esc><!--
+-->}}
+{{itemlist/end}}
+{{collapse bottom}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Grenade}}
+|{{shop row|Bomb}}
+|{{shop row|Dynamite}}
+|{{shop row|Hellfire Arrow|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Land Mine|打败[[{{tr|Plantera}}]]和[[{{tr|Pirate Invasion}}]]后。<br/>{{icon|oldgen}}打败{{tr|Plantera}}之前，在[[{{tr|night}}]]。}}
+|{{shop row|Explosive Powder|在{{tr|Hardmode}}中。}}
+|{{shop row|Stynger Bolt|value={{cc|10}}|{{eicons|1.3.0.1|invert=y}} 一旦[[{{tr|Golem}}]]被打败。}}
+|{{shop row|Roman candle|value={{gc|5}}|[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Dry Bomb|当玩家{{tr|inventory}}中有{{tr|Dry Bomb}}时。}}
+|{{shop row|Wet Bomb|当玩家{{tr|inventory}}中有{{tr|Wet Bomb}}时。}}
+|{{shop row|Lava Bomb|当玩家{{tr|inventory}}中有{{tr|Lava Bomb}}时。}}
+|{{shop row|Honey Bomb|当玩家{{tr|inventory}}中有{{tr|Honey Bomb}}时。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{exclusive|Happiness|section=y}}
+{{living preferences}}
+
+== {{tr|Shimmer}}形态 {{eicons|Shimmer}} ==
+{{exclusive|Shimmer|section=y}}
+{{NPC shimmered form|Demolitionist|male}}
+{{-}}
+
+== 备注 ==
+* {{eicons|1.4.0.1}} 在 [[For the worthy]] {{tr|world}}中，{{tr|The Demolitionist}}会代替[[{{tr|Guide}}]]作为起始 {{tr|NPC}} 生成。
+* {{tr|The Demolitionist}}的武器——[[{{tr|Grenades}}]]——惊人地强大，尤其考虑到在游戏中他能那么早期就出现。因此，在[[{{tr|Blood Moon}}]]期间他会是一大助力。
+* [[{{tr|Explosives}}]]这东西，尽管名字和{{tr|crafting recipe}}看着很符合，但它并不满足{{tr|demolitionist}}搬进来的要求。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.105}}”
+* “{{gameText|LegacyDialog.106}}”
+* “{{gameText|LegacyDialog.107}}”
+* “{{gameText|LegacyDialog.108}}”
+* “{{gameText|LegacyDialog.109}}”
+* {{eicons|1.4.1|invert=y}} “{{gameText|LegacyDialog.93|x_WorldEvilStone=黑檀岩}}”
+
+'''在[[{{tr|Corrupt}}]]的世界中：'''
+* {{eicons|1.4.1}} “{{gameText|LegacyDialog.93|x_WorldEvilStone={{gameText|Misc.Ebonstone}}}}”
+
+'''在[[{{tr|Crimson}}]]世界中：'''
+* {{eicons|1.4.1}} “{{gameText|LegacyDialog.93|x_WorldEvilStone={{gameText|Misc.Crimstone}}}}”
+
+'''[[{{tr|Dryad}}]]存在时：'''
+* “{{gameText|LegacyDialog.100}}”
+
+'''[[{{tr|Nurse}}]]存在时：'''
+* “{{gameText|LegacyDialog.99|x_Nurse=&lt;{{tr|Nurse}}的名字&gt;}}”
+
+'''[[{{tr|Arms Dealer}}]]存在时：'''
+* “{{gameText|LegacyDialog.97|x_ArmsDealer=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+* “{{gameText|LegacyDialog.98}}”
+
+'''仅在[[{{tr|night}}]]：'''
+* “{{gameText|LegacyDialog.101}}”
+* “{{gameText|LegacyDialog.102}}”
+* “{{gameText|LegacyDialog.103}}”
+* “{{gameText|LegacyDialog.104}}”
+
+'''仅限[[{{tr|Blood Moon}}]]期间：'''
+* “{{gameText|LegacyDialog.94}}”
+* “{{gameText|LegacyDialog.95}}”
+* “{{gameText|LegacyDialog.96}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|DemolitionistSpecialText.Party}}”
+
+'''打败 1 级的{{eil|Old One's Army}}之后：'''
+* “{{gameText|DemolitionistSpecialText.AfterDD2Start}}”
+
+'''{{eicons|1.4.0.1}} [[{{tr|Rain}}|下雨]]期间：'''
+* “{{gameText|DemolitionistSpecialText.Rain1}}”
+* “{{gameText|DemolitionistSpecialText.Rain2}}”
+
+'''{{eicons|1.4.0.1}} [[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|DemolitionistSpecialText.Storm2}}”
+* “{{gameText|DemolitionistSpecialText.Storm1}}”
+
+'''{{eil|Windy Day}}期间：'''
+
+* “{{gameText|DemolitionistSpecialText.Windy1}}”
+* “{{gameText|DemolitionistSpecialText.Windy2}}”
+
+'''{{eicons|1.4.0.1}} 当在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|DemolitionistSpecialText.Graveyard1}}”
+* “{{gameText|DemolitionistSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|Happiness}} ===
+{{collapse top}}
+'''无家可归时：'''
+
+* “{{gameText|TownNPCMood_Demolitionist.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Demolitionist.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Demolitionist.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Demolitionist.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Demolitionist.HateCrowded}}”
+
+'''当在[[{{tr|Caverns}}]]中时:'''
+* “{{gameText|TownNPCMood_Demolitionist.LikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在[[{{tr|Ocean}}]]中：'''
+* “{{gameText|TownNPCMood_Demolitionist.DislikeBiome|x_BiomeName={{tr|the Ocean}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Demolitionist.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Tavernkeep}}]]时：'''
+* “{{gameText|TownNPCMood_Demolitionist.LoveNPC|x_NPCName=&lt;{{tr|Tavernkeep}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Demolitionist.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''靠近[[{{tr|Mechanic}}]]时：'''
+* “{{gameText|TownNPCMood_Demolitionist.LikeNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+
+'''靠近[[{{tr|Goblin Tinkerer}}]]时：'''
+* “{{gameText|TownNPCMood_Demolitionist.DislikeNPC|x_NPCName=&lt;{{tr|Goblin Tinkerer}}的名字&gt;}}”
+
+'''靠近[[{{tr|Arms Dealer}}]]时：'''
+* “{{gameText|TownNPCMood_Demolitionist.DislikeNPC|x_NPCName=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Demolitionist.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+{{float file box|[[File: Demolitionist (Shimmered).png]][[File:Demolitionist (Shimmered) (no hat).png]]|{{tr|Demolitionist}}的{{tr|Shimmer}}形态与摘下头盔的造型。}}
+* 民俗中的{{wikipedia|Dwarf (mythology)|矮人（dwarf）}}概念来自北欧、条顿以及日耳曼神话，在如今以{{wikipedia|J.R.R. Tolkien|J.R.R 托尔金（J.R.R. Tolkien）}}编写的{{wikipedia|Middle-earth|中土世界观}}和奇幻题材桌游{{wikipedia|Dungeons & Dragons|龙与地下城（Dungeons & Dragons）}}的影响下，矮人多为头戴角盔、编有发髻的北欧维京人形象。{{tr|Demolitionist}}的{{tr|Shimmered form}}正是来源于此。
+* 与其他流行文化一样，{{tr|Demolitionist}}的设定很大程度上也来源于{{wikipedia|Dwarves in Middle-earth|中土世界矮人}}和{{wikipedia|Dungeons & Dragons|龙与地下城}}，这包括以下的特征：
+** 虽然矮人个子矮小但更加结实强壮、嗜酒如命，以矿工与锻造技术而闻名。这在{{tr|Demolitionist}}的形象、对话、和其他{{tr|town NPCs}} 的相关话语上均有表现：
+*** {{tr|Demolitionist}}的话语：“{{gameText|TownNPCMood_Demolitionist.LikeBiome|x_BiomeName={{tr|the Underground}}}}”
+*** [[{{tr|Tavernkeep}}]]的话语：“{{gameText|BartenderChatter.Chatter_11|x_Demolitionist=&lt;{{tr|Demolitionist}}的名称&gt;}}”
+*** [[{{tr|Nurse}}]]的话语：“{{gameText|LegacyDialog.33|x_Demolitionist=&lt;{{tr|Demolitionist}}的名字&gt;}}”
+** {{tr|Demolitionist}}反感{{tr|Goblin Tinkerer}}和{{tr|Arms Dealer}}。
+*** 矮人的性格往往是固执到极端的，他们重视自己的文化与荣誉，也重视与他人的恩惠与仇恨。所以他会主动与使用枪械的{{tr|Arms Dealer}}比较高下。例如：“{{gameText|LegacyDialog.62|x_Demolitionist=&lt;{{tr|Arms Dealer}}的名字&gt;}}”
+*** 矮人和{{tr|Goblin}}这两个种族是敌对关系。
+** 矮人的形象描写通常是红发蓝瞳，擅长矿采、锻造和机械工程。这解释了为什么他喜欢[[{{tr|Mechanic}}]]并将她视为朋友，因为{{tr|Mechanic}}身上有着类似的特点：“{{gameText|TownNPCMood_Demolitionist.LikeNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+* {{tr|The Demolitionist}}的多个名字也引用了小说中的矮人角色：
+** Beldin 来自五卷本奇幻史诗《''{{wikipedia|The Belgariad|圣石传奇（The Belgariad）}}''》。
+** Durim 是腐化的 Durin，这是英国作家 {{wikipedia|J.R.R. Tolkien|J.R.R 托尔金（J.R.R. Tolkien）}}的书里提到的一个矮人国王。
+** Fikod 和 Urist 都是独立电子游戏《''{{wikipedia|Dwarf Fortress}}''》中的通用矮人名字。
+** Gimli 参考了史诗深度奇幻小说《''{{wikipedia|The Lord of the Rings|指环王（The Lord of the Rings）}}''》
+** Morthal 是动作角色扮演电子游戏《''{{wikipedia|The Elder Scrolls V: Skyrim|上古卷轴V：天际（The Elder Scrolls V: Skyrim）}}''》中一个领（Hjaalmarch 领）中一座被沼泽包围的城市的名字。
+** Tordak（或 Tordek）是奇幻角色扮演桌游《''{{wikipedia|Dungeons & Dragons|龙与地下城（Dungeons & Dragons）}}''》中的通用矮人名字。
+* {{tr|The Demolitionist}}在{{tr|pre-release}}中曾经用的是现在{{tr|Arms Dealer}}的外观。
+* 虽然有一副名叫《{{tr|American Explosive}}》的[[{{tr|paintings}}]]描绘着他，但这{{tr|the paintings}}的名字和样子都是在恶搞名画《{{wikipedia|American Gothic|美国哥特式（American Gothic）}}》，而不是在表明他的来历。
+* {{eicons|1.4.1|invert=y}} 他在一句话语中将 [[{{tr|Ebonstone}}|Ebonstone（黑檀石）]]叫做“ebonrock”（黑檀岩）。
+* 话语“{{gameText|LegacyDialog.103}}”指的是用在线上多人游戏中的术语“{{wikipedia|griefing}}（恶意捣乱）”，这个词用于描述使用诸如摧毁建筑物等动作来惹恼其他玩家和破坏其他玩家游戏的行为。
+* 他的{{tr|Blood Moon}}话语间接地提及了[[{{tr|Clown}}]]携带有爆炸物的事情。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在死亡的 [[{{tr|NPCs}}]] 会自由重生，无视首次生成它们时需满足的独特条件。}}
+{{history|Desktop 1.4.1|将“Trying to get past that ebonrock, eh? Why not introduce it to one of these explosives!”改为说“Ebonstone”或“Crimstone”（取决于世界的{{tr|evil biome}}）而非“ebonrock”。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.1.2|购买{{tr|landmine}}的要求从打败[[{{tr|Golem}}]]和至少一次{{tr|Pirate Invasion}}降低到打败{{tr|Plantera}}和至少一次{{tr|Pirate Invasion}}。}}
+{{history|Desktop 1.2|现在出售{{tr|explosive powder}}和{{tr|landmines}}。}}
+{{history|Desktop 1.1|现在在他生成时会随机赋予名字。他的死亡会用其名字报告。其他 {{tr|NPC}} 也会在他们各自的对话中使用此名字。}}
+{{history|Desktop 1.0.3|
+** 现在玩家在{{tr|inventory}}中有[[{{tr|Sticky Bomb}}]]或{{tr|Grenade}}时会触发他到达。
+** 和其他 {{tr|NPCs}} 一样，现在可被{{tr|enemies}}杀死。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Demolitionist}}

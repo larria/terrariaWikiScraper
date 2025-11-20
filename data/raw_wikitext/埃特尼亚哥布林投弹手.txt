@@ -1,0 +1,80 @@
+{{exclusive|1.3.4}}
+{{npc infobox |tabs = no
+| namenote =
+| environment = Old One's Army
+| auto = 555
+| idprojectile = 681
+| imagealt = [[File:Etherian Goblin Bomber.gif|link=]] [[File:Etherian Goblin Bomber 2.gif|link=]] [[File:Etherian Goblin Bomber 3.gif|link=]]
+| type = Etherian Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| sound1 = Dd2 goblin bomber scream 0.wav, Dd2 goblin bomber scream 1.wav, Dd2 goblin bomber scream 2.wav
+| soundcaption1 = 尖叫
+| sound2 = Dd2 goblin bomber throw 0.wav, Dd2 goblin bomber throw 1.wav, Dd2 goblin bomber throw 2.wav
+| soundcaption2 = 投掷
+}}
+
+'''{{tr|Etherian Goblin Bomber}}'''是一种来自[[{{tr|Old One's Army}}]][[{{tr|event}}]]的{{tr|enemy}}。它生成于 T1 的 2–5 波，T2 的 3 和 5–7 波和 T3 的 1–2 和 5–7 波。
+
+顾名思义，它通过向目标投掷[[File:Goblin Bomb.png|link=]]'''{{tr|bombs}}'''进行攻击，类似于[[{{tr|Clown}}]]。虽然他们不会对拥有不错装备的玩家造成构成最大的威胁，但它们可以很容易地在面对游戏早期的防守者时占上风，特别是在打败了[[{{tr|Eater of Worlds}}]]或[[{{tr|Brain of Cthulhu}}]]后就立刻发现[[{{tr|Tavernkeep}}]]时。就像来自此{{tr|event}}的很多其他{{tr|enemies}}一样，它的外观和属性也会变化，取决于玩家在游戏中到达了哪个阶段。
+
+{{tr|The Etherian Goblin Bomber}}需要 500 击杀才能得到对应的{{tr|banner}}，而非通常的 50 击杀。
+
+== {{tr|Variants}} ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[NPC IDs|NPC ID]]
+! colspan=2 | 类型
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 555
+| image = Etherian Goblin Bomber.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|40|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2GoblinBomb}}}} {{source code ref|v=1.4.4.9|name=ai|method=Terraria.NPC.AI_107_ImprovedWalkers}}
+}}
+{{npc infobox
+| auto = 556
+| image = Etherian Goblin Bomber 2.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|60|100|150}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2GoblinBomb}}}} <ref name="ai"/>
+}}
+{{npc infobox
+| auto = 557
+| image = Etherian Goblin Bomber 3.gif
+| environment = Old One's Army
+| damage2 =&#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|80|140|210}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2GoblinBomb}}}} <ref name="ai"/>
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== 花絮 ==
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Bomb Goblin}}
+
+== {{tr|history}} ==
+{{history|Desktop 1.4.1|修复了错误应用 T1 和 T2 {{tr|Goblin Bomb}}{{tr|projectiles}}{{tr|damage}}数值的{{tr|bug}}。以前，{{tr|Goblin Bombs}}造成 60 / {{expert|100}} / {{master|150}} {{tr|damage}}于 T1，和 20 / {{expert|40}} / {{master|60}} {{tr|damage}}于 T2。{{source code ref|old=y|v=1.4.0.5|method=Terraria.NPC.AI_107_ImprovedWalkers}}}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Etherian Goblin Bomber}}

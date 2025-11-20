@@ -1,0 +1,53 @@
+{{item infobox
+| type = Furniture / Crafting station
+| width = 2 | height = 2
+| auto = 487
+| buff = Clairvoyance
+| sounduse = Item 4.wav
+| tags = vendor / hardmode /vendor:Wizard
+}}
+{{quotation|[[{{tr|Wizard}}|{{tr|The Wizard}}]]|{{gameText|LegacyDialog.151}}}}
+
+'''{{tr|Crystal Ball}}'''是个[[{{tr|furniture}}]]{{tr|item}}，其功能是作为[[{{tr|crafting station}}]]。放置状态下在其上按 {{key|open}} 可以得到'''{{tr|Clairvoyance}}'''[[{{tr|buff}}]]。它可从[[{{tr|Wizard}}]]处以 {{iteminfo|Crystal Ball|buy}} 购买。
+
+{{tr|The Clairvoyance buff}}对如下魔法相关属性有所加成：
+* +20 {{tr|maximum}}[[{{tr|mana}}]]
+* +5% {{tr|magic damage}}
+* +2% {{tr|magic}}[[{{tr|critical strike chance}}]]
+* −2% {{tr|mana usage}}
+
+在{{eversions|1.4.4}}中，{{tr|the Clairvoyance buff}}会持续到玩家[[{{tr|Death}}|死亡]]或退出此世界。在{{eversions|1.4.4|invert=y}}中，它持续 10 {{tr|minutes}}。在所有版本上，此{{tr|buff}}都可以在任何时候{{buffduration|nomaintext=y}}。
+
+不像[[{{tr|Buffs|link=y}}#{{tr|Equipment}}|{{tr|equipment buff items}}]]，为了激活{{tr|buff}}必须将{{tr|the Crystal Ball}}放置下来。它可以用[[{{tr|pickaxe}}]]或[[{{tr|drill}}]]再次挖掉并拿起，即使此{{tr|buff}}处于激活状态亦可，这并不会取消{{tr|buff}}。是否能放置只取决于是否有足够大的 2×2 格空间。
+
+== 制作 ==
+=== 用于制作 ===
+{{:Recipes/Crystal Ball}}
+
+== 备注 ==
+* {{tr|The Crystal Ball}}可以无限激活，没有冷却时间。它永远不会被消耗掉，并且所有玩家都能用他给自己加{{tr|buff}}。
+** {{eicons|1.4.4|invert=y}}当已经有{{tr|Clairvoyance buff}}时再次激活{{tr|the Crystal Ball}}会重置其{{tr|buff duration}}为 10 分钟。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 移除了 10 分钟的{{tr|Buff duration}}。{{tr|buff}}现在会持续到玩家死亡或离开世界。
+** 现在用于制作{{tr|the Blizzard in a Bottle}}和{{tr|the Sandstorm in a Bottle}}。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Sprite updated}}。旧的{{tr|buff sprite}}：[[File:Clairvoyance (old).png|link=]]
+** 现在用于制作{{tr|Endless Quiver}}、{{tr|Endless Musket Pouch}}、{{tr|Magic Water Droppers}}、{{tr|Magic Lava Droppers}}、{{tr|Magic Honey Droppers}}、{{tr|Living Cursed Fire Blocks}}、{{tr|Living Ichor Fire Blocks}}、{{tr|Living Demon Fire Blocks}}、{{tr|Living Frost Fire Blocks}}、{{tr|Living Ultrabright Fire Blocks}}、和{{tr|Water Candle}}。}}
+{{history|Desktop 1.2.4|现在用于制作{{tr|Waterfall Block}}和{{tr|Lavafall Block}}而非它们相应的墙。现在也能用于制作{{tr|Confetti Block}}和{{tr|Midnight Confetti Block}}。}}
+{{history|Desktop 1.2.3|现在可以用作[[{{tr|crafting station}}]]来制造[[{{tr|Waterfall Wall}}]]和[[{{tr|Lavafall Wall}}]]。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Placed buff items}}
+
+{{language info|en=Crystal Ball}}
+[[Category:水晶球|*]]
+[[Category:水晶球和水或水槽|*]]
+[[Category:水晶球和熔岩|*]]
+[[Category:水晶球和蜂蜜|*]]

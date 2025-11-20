@@ -1,0 +1,269 @@
+{{legacy nav tab}}
+{{npc infobox|tabs=y|boxwidth=18em
+| auto = 227
+| type = NPC
+| environment = Valid house
+| damage = {{hardmode|{{modes|8|12|14}}|{{modes|10|15|17}}}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ItemName.PainterPaintballGun}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+|custom:Paintball Gun|{{item|Paintball Gun |icons=n |wrap=y}}|10%
+|custom:Jim's Cap|{{item|Jim's Cap |icons=n |note=（仅当名字为 Jim 时）|wrap=y}}|100%
+| imageother = Map Icon Painter.png
+| imageothercaption = {{tr|Map Icon}}
+| idprojectile = 587
+}}
+{{quotation|[[File:Emote Town Painter.gif|link=]] '''{{tr|Painter}}'''|{{gameText|LegacyDialog.252}}}}
+
+'''{{tr|Painter}}'''是个 [[{{tr|NPC}}]] 商贩，出售{{eil|paint}}和[[{{tr|Tools}}#{{tr|Paint}}|{{tr|paint tools}}]]，还有[[{{tr|paintings}}]]和[[{{tr|wallpapers}}]]。一旦满足以下条件他就会入住：
+
+* 有一间空闲的[[{{tr|house}}]]。
+* 世界中至少有 8 名其他{{tr|town NPCs}}。注意[[{{tr|Old Man}}]]、[[{{tr|Traveling Merchant}}]]、和[[{{tr|town pets}}]]计入此数量中，但[[{{tr|Skeleton Merchant}}]]并不计入。{{source code ref|v=1.4.1.2|method=Terraria.Main.UpdateTime_SpawnTownNPCs}}
+
+{{tr|The Painter}}的商店库存根据外部因素而变化。谈话时他所在的{{tr|biome}}、[[{{tr|moon phase}}]]、和[[{{tr|seasonal events}}]]都会决定有哪些{{tr|paintings}}和{{tr|wallpapers}}可用。
+
+他拥有两个商店菜单：一个是默认的“{{gameText|LegacyInterface.28}}”，出售{{tr|paint}}和{{tr|paint tools}}；另一个是“{{gameText|GameUI.PainterDecor}}”，出售{{tr|paintings and wallpapers}}。如果有任何[[{{tr|pylon}}]]可用，两个商店菜单中都会出售它。
+
+{{tr|the Painter}}会用[[{{tr|Paintball Gun}}]]攻击附近的[[{{tr|enemies}}]]以自卫。他在[[{{tr|Pre-Hardmode}}]]造成 8 / {{expert|12}} / {{master|14}} 伤害，在[[{{tr|Hardmode}}]]中会提升到 10 / {{expert|15}} / {{master|17}}，且随着玩家的进展他会得到[[{{tr|NPCs|link=y}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>{{tr|The Painter}}死亡时还有 {{chance|1/10}} 几率掉落{{tr|Paintball Gun}}。 
+
+== 出售物品 ==
+=== {{tr|Shop}} ===
+{{item/options|set|icons=n}}
+{{shop
+|{{shop row|Paintbrush}}
+|{{shop row|Paint Roller}}
+|{{shop row|Paint Scraper}}
+|{{shop row|Red Paint}}
+|{{shop row|Orange Paint}}
+|{{shop row|Yellow Paint}}
+|{{shop row|Lime Paint}}
+|{{shop row|Green Paint}}
+|{{shop row|Teal Paint}}
+|{{shop row|Cyan Paint}}
+|{{shop row|Sky Blue Paint}}
+|{{shop row|Blue Paint}}
+|{{shop row|Purple Paint}}
+|{{shop row|Violet Paint}}
+|{{shop row|Pink Paint}}
+|{{shop row|Black Paint}}
+|{{shop row|Gray Paint}}
+|{{shop row|White Paint}}
+|{{shop row|Brown Paint}}
+|{{shop row|Shadow Paint|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Negative Paint|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Illuminant Coating|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Echo Coating|击败[[{{tr|Plantera}}]]后，在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+=== 装饰 ===
+'''备注：'''如果[[{{tr|pylon}}]]可用，它也会在此商店菜单中出售。
+{{flexstart|style=gap:var(--layout-gap);}}
+{{flexstart|item}}
+{{shop|nonote=y
+|{{shop row|Daylight}}
+|{{shop row|First Encounter|在以下{{tr|moon phases}}期间：{{moons|1|2}}}}
+|{{shop row|Good Morning|在以下{{tr|moon phases}}期间：{{moons|3|4}}}}
+|{{shop row|Underground Reward|在以下{{tr|moon phases}}期间：{{moons|5|6}}}}
+|{{shop row|Through the Window|在以下{{tr|moon phases}}期间：{{moons|7|8}}}}
+|{{shop row|Purity|在[[{{tr|Forest}}]]中。}}
+|{{shop row|Deadland Comes Alive|在[[{{tr|The Crimson}}]]中。}}
+|{{shop row|Lightless Chasms|在[[{{tr|The Corruption}}]]中。}}
+|{{shop row|The Land of Deceiving Looks|在[[{{tr|The Hallow}}]]中。}}
+|{{shop row|Do Not Step on the Grass|在[[{{tr|Jungle}}]]中。}}
+|{{shop row|Cold Waters in the White Land|在[[{{tr|Snow Biome}}]]中。}}
+|{{shop row|Secret of the Sands|在[[{{tr|Desert}}]]中。}}
+|{{shop row|Evil Presence|在[[{{tr|Blood Moon}}]]期间。}}
+|{{shop row|Place Above the Clouds|在[[{{tr|Space}}]]中。}}
+|{{shop row|Sky Guardian|{{tr|Hardmode}}，在[[{{tr|Space}}]]中。}}
+|{{shop row|Thunderbolt|在[[{{tr|Thunderstorm}}]]期间。}}
+|{{shop row|Nevermore|在[[{{tr|Graveyard}}]]中。}}
+|{{shop row|Reborn|在[[{{tr|Graveyard}}]]中。}}
+|{{shop row|Graveyard (item)|value={{iteminfo|Graveyard|buy}}|在[[{{tr|Graveyard}}]]中。}}
+|{{shop row|Ghost Manifestation|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Wicked Undead|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Hail to the King|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Bloody Goblet|在[[{{tr|Graveyard}}]]中时。}}
+|{{shop row|Still Life|在[[{{tr|Graveyard}}]]中时。}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+{{shop|nonote=y
+|{{shop row|Bubble Wallpaper}}
+|{{shop row|Copper Pipe Wallpaper}}
+|{{shop row|Ducky Wallpaper}}
+|{{shop row|Fancy Gray Wallpaper}}
+|{{shop row|Ice Floe Wallpaper}}
+|{{shop row|Music Wallpaper}}
+|{{shop row|Purple Rain Wallpaper}}
+|{{shop row|Rainbow Wallpaper}}
+|{{shop row|Sparkle Stone Wallpaper}}
+|{{shop row|Starlit Heaven Wallpaper}}
+}}
+{{flexend|item}}
+{{flexstart|item}}
+{{shop|nonote=y
+|{{shop row|Christmas Tree Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Candy Cane Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Stars Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Snowflake Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Bluegreen Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Ornament Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Festive Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Squiggles Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Krampus Horn Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+|{{shop row|Grinch Finger Wallpaper|仅限[[{{tr|Christmas}}]]期间。}}
+}}
+{{flexend|item}}
+{{flexend}}
+
+== {{tr|Living preferences}} ==
+{{living preferences}}
+
+== {{tr|Shimmered form}} ==
+{{NPC shimmered form|Painter|male}}
+{{-}}
+
+== 备注 ==
+* {{:{{tr|NPCs}}/name based drop}}
+* 由于{{tr|Painter}}拥有两个商店菜单，商品会分散在两个菜单中，以防止其商品由于商店内有太多{{tr|items}}而无法购买。
+* 如果在转化的[[{{tr|snow Biome}}]]或[[{{tr|Desert}}]]{{tr|Biome}}中与{{tr|the Painter}}谈话，他会同时出售两个{{tr|Biome}}独有的{{tr|paintings}}。例如：如果在在{{tr|Hallowed}}{{tr|Desert}}中与{{tr|the Painter}}谈话，他会同时出售{{tr|paintings}}“{{tr|The Land of Deceiving Looks}}”和“{{tr|Secret of the Sands}}”。
+
+== 小贴士 ==
+* 可以用[[{{tr|Teleporter}}]]或[[{{tr|King Statue}}]]将他传送到不同的{{tr|Biomes}}来获得他的所有{{tr|paintings}}。另外，可以[[{{tr|Biomes}}#{{tr|Biome}}的存在要求|改变他当前所在的{{tr|biome}}]]。
+* 另一种方法是在每个{{tr|biome}}中建个小[[{{tr|House}}]]并等到[[{{tr|night}}]]。在{{tr|night}}使 [[{{tr|NPCs}}]] 及其{{tr|house}}位于屏幕外会让 {{tr|NPCs}} 传送到{{tr|house}}中。然后就可以直接回到{{tr|house}}处，购买{{tr|the paintings}}，然后对所有需要的{{tr|biomes}}重复此过程。
+** 由于[[{{tr|House|link=y}}#{{tr|House}}有效性评估|{{tr|House}}有效性]]的要求，[[{{tr|The Crimson}}]]和[[{{tr|The Corruption}}]]会让这一点变得困难。最简单的办法是在{{tr|Dirt Block}}、{{tr|Stone Block}}或{{tr|Sand Block}}之类可腐化{{tr|block}}上建造{{tr|house}}，然后用[[{{tr|Clentaminator}}]]配合[[{{tr|Solutions}}]]喷洒{{tr|house}}周围的区域直到{{tr|Painter}}开始售卖相应的{{tr|the paintings}}。购买之后，就可以用{{tr|Green Solution}}再次净化此区域。在{{tr|pre-Hardmode}}也可以用{{tr|Evil}}[[{{tr|Thrown Powder}}]]这样做。
+*** 这一方法也可以用于其他有对应的{{tr|solutions}}的{{tr|biomes}}。
+
+== 名字 ==
+{{npc names}}
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+* “{{gameText|LegacyDialog.252}}”
+* “{{gameText|LegacyDialog.253}}”
+* “{{gameText|LegacyDialog.254}}”
+* “{{gameText|LegacyDialog.255}}”
+* “{{gameText|LegacyDialog.256}}”
+
+'''[[{{tr|Party Girl}}]]存在时：'''
+* “{{gameText|LegacyDialog.251|x_PartyGirl=&lt;{{tr|Party Girl}}的名字&gt;}}”
+
+'''[[{{tr|Hardmode}}]]期间：'''
+* “{{gameText|LegacyDialog.250}}”
+
+'''[[{{tr|Party}}]]期间：'''
+* “{{gameText|PainterSpecialText.Party}}”
+
+'''在[[{{tr|Rain}}|雨天]]：'''
+* “{{gameText|PainterSpecialText.Rain1}}”
+* “{{gameText|PainterSpecialText.Rain2}}”
+
+'''[[{{tr|Thunderstorm}}]]期间：'''
+* “{{gameText|PainterSpecialText.Storm1}}”
+* “{{gameText|PainterSpecialText.Storm2}}”
+
+'''[[{{tr|Windy Day}}]]期间：'''
+* “{{gameText|PainterSpecialText.Windy1}}”
+* “{{gameText|PainterSpecialText.Windy2}}”
+
+'''在[[{{tr|Graveyard}}]]中时：'''
+* “{{gameText|PainterSpecialText.Graveyard1}}”
+* “{{gameText|PainterSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_Painter.NoHome}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_Painter.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_Painter.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_Painter.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_Painter.HateCrowded}}”
+
+'''在[[{{tr|Jungle}}]]中时：'''
+* “{{gameText|TownNPCMood_Painter.LikeBiome|x_BiomeName={{tr|the Jungle}}}}”
+
+'''当在[[{{tr|Forest}}]]中时：'''
+* “{{gameText|TownNPCMood_Painter.DislikeBiome|x_BiomeName={{tr|the Forest}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_Painter.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}”
+
+'''靠近[[{{tr|Dryad}}]]时：'''
+* “{{gameText|TownNPCMood_Painter.LoveNPC|x_NPCName=&lt;{{tr|Dryad}}的名字&gt;}}”
+
+'''靠近[[{{tr|Party Girl}}]]时：'''
+* “{{gameText|TownNPCMood_Painter.LikeNPC|x_NPCName=&lt;{{tr|Party Girl}}的名字&gt;}}”
+
+'''靠近[[{{tr|Cyborg}}]]时：'''
+* “{{gameText|TownNPCMood_Painter.DislikeNPC|x_NPCName=&lt;{{tr|Cyborg}}的名字&gt;}}”
+
+'''靠近[[{{tr|Truffle}}]]时：'''
+* “{{gameText|TownNPCMood_Painter.DislikeNPC|x_NPCName=&lt;{{tr|Truffle}}的名字&gt;}}”
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_Painter.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_Painter.Content}}”
+{{collapse bottom}}
+
+== 花絮 ==
+* {{tr|The Painter}}的外观是由前[[《{{tr|Terraria}}》]]美工 [[Waffles]] 画的。
+* 考虑到{{tr|Painter}}的大部分名字是典型的意大利名字，他很可能有意大利血统。
+* {{tr|Painter}}的一些名字可能参考了意大利画家：
+** Guido：{{维基百科|Guido Reni|t=圭多·雷尼}}。
+** Leonardo：{{维基百科|Leonardo da Vinci|t=列奥纳多·达·芬奇}}。
+** Raphael：{{维基百科|Raphael|t=拉斐尔}}。
+* 名字 Jim 参考了《{{tr|Terraria}}》的外观美工之一，[[Jimmarn]]。
+*名字{{维基百科|Mario|t=马力欧}} 和 {{维基百科|Luigi|t=路易吉}}，是{{维基百科|Mario (franchise)|《马力欧》系列}}中的两个主角。
+* 名字 Darren 参考了发给 [[{{tr|Redigit}}]] 的一封信，发信人有一位名叫 Darren 的朋友去世了。{{tr|Redigit}} 随后添加了 Darren 作为{{tr|Painter}}的可能名字之一。{{verify|需要参考链接。}}
+* 话语“{{gameText|LegacyDialog.253}}”直接参考了美国画家、艺术指导、和电视节目主持人{{维基百科|Bob Ross|t=鲍勃·罗斯}}。
+* 话语“{{gameText|LegacyDialog.255}}”可能参考了小说{{维基百科|b=y|Fifty Shades of Grey|t=五十度灰}}。
+* 话语“{{gameText|PainterSpecialText.Storm1}}”可能参考了{{维基百科|Garth Brooks|t=加斯·布鲁克斯}}的歌曲{{维基百科|b=y|The Thunder Rolls}}。
+* 话语“{{gameText|LegacyDialog.250}}”指的是{{tr|painting}}[[{{tr|The Land of Deceiving Looks}}]]。
+* {{tr|Painter}}对[[{{tr|Dryad}}]]的{{tr|happiness}}话语可能表明他暗恋{{tr|Dryad}}，类似于[[{{tr|Arms Dealer}}]]。
+** 这一暗恋可能来源于{{wikipedia|Dryad|{{tr|Dryad}}}}（与{{wikipedia|nymph|{{tr|nymph}}}}）是古典主义绘画中常见的角色。
+{{float file box|[[File:Painter (no hat).png|link=]]|没有戴帽子的{{tr|The Painter}}。}}
+* 从源文件中没有头饰的 {{tr|NPC}} 可以看出{{tr|The Painter}}是彻底的光头。
+* 即使[[{{tr|Blood and Gore}}]]处于关闭状态，当{{tr|Painter}}死亡时，他的{{tr|paintbrush}}和{{tr|paint}}{{tr|bucket}}也总是会像身体部位一样掉落。
+* {{tr|The Painter}}的{{tr|Shimmered form}}很像后印象派画家{{维基百科|Vincent van Gogh|t=文森特·梵高}}，可能是对其的参考。
+
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 现在具有两个商店菜单：“商店”和“装饰”。
+*** 在“商店”菜单中，他出售{{tr|paint}}和{{tr|paint tools}}。
+*** 在“装饰”菜单中，他出售{{tr|wallpaper and paintings}}。
+** 现在出售 3 幅新的{{tr|paintings}}。
+** 现在有几率名为“Jim”。
+** 现在若名字叫 Jim，则死亡时掉落[[{{tr|Jim's Cap}}]]。}}
+{{history|Desktop 1.4.0.1|现在在[[{{tr|Graveyard}}]]中时出售{{tr|Illuminant Paint}}和若干新{{tr|paintings}}。}}
+{{history|Desktop 1.3.1|现在有可能名叫“Esreadel”。}}
+{{history|Desktop 1.3.0.1|
+** 现在用[[{{tr|Paintball Gun}}]]攻击{{tr|enemies}}，且被杀时有几率掉落{{tr|Paintball Gun}}。
+** {{tr|The Painter}}现在会在 8 个其他 [[{{tr|NPC}}]] 入住后出现，而非 4 个。[[{{tr|Skeleton Merchant}}]]不计入入住所需的 {{tr|NPC}} 计数中。
+** {{tr|Sprite updated.}}}}
+{{history|Desktop 1.2.3|现在出售{{tr|Brown Paint}}和各种{{tr|Wallpapers}}。在{{tr|Hardmode}}世界中出售{{tr|Shadow Paint}}和{{tr|Negative Paint}}。}}
+{{history|Desktop 1.2.2|现在在[[{{tr|Christmas}}]]期间出售{{tr|Christmas}}主题的[[{{tr|Wallpaper}}]]。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Painter}}

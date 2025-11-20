@@ -1,0 +1,181 @@
+{{collapse top|点击展开详细列表|收起列表}}
+; 修复 {{tr|Bug}}：
+* 你不再能通过将{{tr|item}}放入{{tr|trash}}的方式合成{{tr|item}}或钱了
+* 你不再能将金钱卖给 {{tr|NPCs}}
+* {{tr|Music box}}/{{tr|chest}}复制不再可行
+* 从{{tr|statues}}生成的{{tr|Bunnies}}/{{tr|Goldfish}}在{{tr|Blood Moon}}期间不再会掉钱
+* 当把{{tr|chest}}放在激活的{{tr|blocks}}上时，不再会将它们变为未激活状态
+* 修正了一个会导致合适的{{tr|house}}变为不合适的 {{tr|bug}}
+* 修正了{{tr|Queen Statue}}会使游戏崩溃的 {{tr|bug}}
+* 修正了阅读{{tr|sign or tombstone}}会使游戏崩溃的 {{tr|bug}}
+* 使用自动堆叠时不再会将{{tr|coins}}放入{{tr|chest}}
+* 修复了{{tr|vines}}不在{{tr|underground jungle biomes}}中生长的问题
+* 修复了{{tr|music boxes and timers}}的高亮 {{tr|bug}}
+* 修复了{{tr|Dirt Rod}}的 {{tr|bug}}
+* 修复了{{tr|Fairy Bell}}的{{tr|timer}}会显示为 59 秒的 {{tr|bug}}
+* 修复了{{tr|Death Messages}}只显示玩家姓名的 {{tr|bug}}
+* 你不再能够通过创造{{tr|ice blocks}}来制造无线的火柴盒
+* 修复了{{tr|Stained Glass}}不被算作 {{tr|NPC}} 房屋的有效墙的问题
+* 修复了与{{tr|Ocram}}的碰撞框有关的 {{tr|bug}}
+* {{tr|Ocram}}的{{tr|Souls of Blight}}不再落向地面
+* 修复了“隐藏”的{{tr|inventory slot}} {{tr|bug}}（仅限 Vita 版）
+* 触控现在会在使用{{tr|the Magic Mirror}}时禁用（仅 Vita）
+* 修复了 {{tr|NPC}} 旗帜不会在缩放时重新定位的 {{tr|bug}}（仅 Vita）
+* 修复了与“Back for Seconds”{{tr|Trophy}}/{{tr|Achievement}}相关的 {{tr|bug}}
+* 修复了 1.2 的{{tr|armors}}不被算作达成{{tr|trophy}}的一部分的问题
+* 修复了可以在教程期间获得{{tr|trophy}}的 {{tr|bug}}
+
+; 改进：
+* {{tr|Players}}现在可以选择{{tr|the Gravitation Potion}}效果的表现方式：反转世界、或反转玩家。
+* {{tr|Players}}现在可以选择关闭 back touch 键的功能（仅 Vita）
+* 访问{{tr|Multiplayer world}}时，地图数据现在保存在本地
+* 优化了{{tr|Multiplayer}}传输的包的大小
+* 提高了{{tr|Multiplayer}}稳定性
+* 优化了纹理的压缩
+
+; 机制和游玩：
+* 部分{{tr|items}}现在能堆叠到 999 或 99（包括{{tr|ores and buckets}}），与{{tr|Desktop}} 1.2.3 相对应
+* 修改了女性初始服装
+* 若干种新{{tr|hairstyles}}
+* {{tr|Chest}}容量翻倍
+* 你不再需要跳跃就能爬上单格{{tr|blocks}}了
+* {{tr|hammer}}现在仅用于创造斜坡、半砖、摧毁墙
+* {{tr|axe}}现在仅用于砍倒{{tr|trees and giant mushrooms}}
+* {{tr|Pickaxes}}现在用于移除{{tr|blocks}}、可放置的物体和{{tr|items}}，例如{{tr|Life Crystals}}和{{tr|chests}}
+* 你现在可以{{tr|paint}}任意实心{{tr|tile or item}}
+* 添加了{{tr|Dye slots}}
+* 你现在开局会有 10 {{tr|mana}}
+* 你现在可以制作游戏早期的{{tr|magic robes and staves}}
+* {{tr|Bricks}}、{{tr|wood}}、{{tr|stone}}和{{tr|glass}}现在全部会融合在一起
+* {{tr|Mana Crystals}}现在制作要求的{{tr|fallen stars}}从 10 个减少到 5 个
+* 如果水碰到了半砖，就会创造瀑布
+* 世界现在有几率生成{{tr|copper, iron, silver, and gold}}的{{tr|alternative ore}}
+* 你的世界现在可能会生成{{tr|the Corruption}}的替换
+* 世界现在有几率生成{{tr|Cobalt, Mythril, and Adamantite}}的{{tr|alternative ore}}
+* 世界现在在世界生成过程中有几率生成{{tr|pyramid}}或{{tr|Living Tree}}，包含它们独有的战利品
+* 有一座新的{{tr|hardmode jungle temple}}
+* {{tr|the jungle}}中现在可以找到{{tr|beehives}}
+* 世界中现在有几率生成若干种新{{tr|backgrounds}}和{{tr|tree}}种类
+* {{tr|Water}}现在会根据你所处的{{tr|biome}}和{{tr|underground}}的深度改变颜色
+* {{tr|Rope}}现在可以在游戏早期找到，并可用于制作{{tr|Rope Coil}}以探索世界
+* {{tr|Chains}}现在可以放置并作为{{tr|rope}}使用
+* {{tr|Mushroom grass}}/{{tr|seeds}}现在可以在地面上生长蔓延
+* {{tr|wires}}现在有 3 种颜色
+* 现在可以用{{tr|Actuators}}来使实心{{tr|tile}}在激活和致动状态之间切换
+* {{tr|the Jungle}}中现在可以找到一种{{tr|new liquid type}}
+* 新增了几种放置在附近时可以改变{{tr|water}}颜色的{{tr|fountains}}
+* {{tr|Pearlstone bricks}}不再传播{{tr|hallow}}
+* 添加了{{tr|Rain and blizzards}}
+* 新增{{tr|snow biome}}，在{{tr|hardmode}}前后都具有独特的{{tr|treasures and items}}
+* {{tr|Enemies}}不再激活{{tr|underground}}的{{tr|pressure plates}}
+* 一种新的{{tr|pressure plates}}，仅能被特定的事物触发（例如{{tr|player, enemies}}或二者）
+* {{tr|Clowns}}不再会炸毁{{tr|tiles}}
+* 若干种新{{tr|buffs and debuffs}}
+* 游戏现在加入了夺取宝石的小游戏。你可以制作{{tr|large gems}}，它们绘制持有它们的玩家上方绘制出相应的宝石标记，如果相应玩家被击杀，那么{{tr|large gems}}会掉落在死亡玩家身边
+* 有 2 种新的{{tr|hardmode events}}
+* {{tr|Werewolf}}形态被加强，每晚都可激活
+* {{tr|Broken armor debuff}}持续时间从 5 分钟缩短至 2 {{tr|minutes}}
+* 你现在可以用{{tr|a pickaxe}}从{{tr|mannequin}}上移除{{tr|armor}}
+* {{tr|Players}}在 pvp 中不再受到双倍伤害
+* 相同类型的{{tr|Items}}，在相邻时会堆叠在一起
+* 现在你接触火块时不再能变得无敌了
+* 购买堆叠物品的速度有所提升
+* 添加了{{tr|Halloween seasonal event}}
+* 添加了{{tr|Pumpkin Moon event}}
+* 对部分{{tr|weapon}}的{{tr|damage}}做了调整，以便与 {{tr|Desktop}} 1.2.3. {{tr|update}}保持一致
+* 对部分掉落率做了调整，以便与 {{tr|Desktop}} 1.2.3. {{tr|update}}保持一致（例如钥匙模具）
+* 对{{tr|reforging}}的花费做了调整，以便与 {{tr|Desktop}} 1.2.3. {{tr|update}}保持一致（价格更便宜）
+
+; 图像更改：
+* {{tr|The sun}}现在更亮了
+* 午夜现在更暗了
+* 天空现在具有渐变效果
+* 重制了许多{{tr|items}}的{{tr|sprite}}，包括{{tr|gems}}、有色{{tr|torches}}、{{tr|Minishark}}、{{tr|Muramasa}}、{{tr|Aqua Scepter}}和{{tr|Starfury}}等等……
+* 加入了石笋、冰柱、苔藓、植物、石堆和其他“堆”以增强环境效果
+* 新增了几种具有独特背景的迷你洞穴
+* 现在每种{{tr|biome}}都将拥有独特图像的{{tr|chests and pots}}
+* {{tr|The dungeon}}现在有 3 种独特的纹理/颜色和{{tr|furniture}}
+* 重制了地狱{{tr|houses}}
+* 重制了{{tr|Floating islands}}
+* 每种{{tr|biome}}现在都有独特的{{tr|textures and wood types}}：
+* {{tr|Corruption}}：{{tr|Ebonwood}}
+* {{tr|Jungle}}：{{tr|Rich Mahogany}}
+* {{tr|Crimson}}：{{tr|Shadewood}}
+* {{tr|Hallow}}：{{tr|Pearlwood}}
+* 每种{{tr|brick}}现在都有其独特的材质
+* 每种{{tr|brick wall}}现在都有其独特的材质
+* {{tr|Torches}}现在具有动画，可以被放置在{{tr|walls}}上
+* 若干种新{{tr|tombstones}}
+* {{tr|Titan armors}}、{{tr|Spectral armors}}和{{tr|Dragon armors}}现在有独特的{{tr|sprites}}
+* 大多数{{tr|console}}独有的{{tr|enemies}}现在都有独特的{{tr|sprites}}
+* {{tr|Tizona and Tonbogiri}}现在有独特的{{tr|sprites}}
+
+; {{tr|Recipes}}/{{tr|Items}}：
+* 总计超过 1,000 种新{{tr|items}}
+* 有 10 种新{{tr|ores}}
+* 有 4 种新{{tr|wood}}类型
+* 有 31 种新{{tr|brick}}。
+* 你现在可以灌注{{tr|melee weapons}}
+* 若干种新{{tr|arrow and bullet}}类型
+* 若干种新{{tr|crafting stations}}
+* 几种新的{{tr|wands}}，用于制作新的{{tr|bricks and brick walls}}
+* 你现在可以用几种新材料制作{{tr|bricks}}、{{tr|walls}}和{{tr|furniture}}：
+* {{tr|Slime, Bone, Mushroom}}、{{tr|Living wood}}、{{tr|Flesh}}、{{tr|Silt}}以及更多！
+* 现在你可以制作{{tr|Jester Arrows}}了
+* 有 12 种{{tr|wing}}类型
+* 若干种新{{tr|vanity sets}}
+* 为{{tr|enemies}}添加了大量新的稀有掉落物
+* 在{{tr|hardmode}}中，现在有一个{{tr|item}}能让你改变{{tr|biomes}}的类型
+* 在{{tr|hardmode}}中，现在有一个{{tr|item}}能让你提升最大{{tr|health}}
+* 有 29 种新的工匠作坊合成方案
+* 加入了若干种{{tr|items}}，用于制作{{tr|dyes}}
+* {{tr|Starfury}}现在是{{tr|melee weapon}}，且{{tr|damage}}提升
+* {{tr|Aqua Scepter}}被重置，造成的{{tr|damage}}略微增加，而消耗的{{tr|mana}}减少
+* {{tr|Water Bolt}}被重置，造成的{{tr|damage}}略微增加
+* {{tr|Vilethorn}}造成的{{tr|damage}}增加，而消耗的{{tr|mana}}减少
+* {{tr|Magic Daggers}}被加强
+* 所有的“经典”版本的盔甲可以作为{{tr|enemy}}的稀有掉落物获得，且与现在的版本具有相同的属性并可提供{{tr|set bonus}}
+* 之前用于制作的称为{{tr|dyes}}的物品改名为{{tr|thread}}。
+* {{tr|Chests}}现在有更多种{{tr|loot}}
+* 你现在可以使用后期矿物制作镐或斧而非钻或锯了
+* 提高了{{tr|souls}}的掉落率
+* {{tr|Ocram}}现在掉落更多{{tr|souls}}
+* 超过 50 幅可以在世界各地随机生成的{{tr|paintings}}
+* {{tr|Jungle armor}}不再需要{{tr|gems}}
+* {{tr|Ocram}}的生成{{tr|item}}的{{tr|recipe}}现在需要更少的材料
+* {{tr|Titan armor}}、{{tr|Spectral armor}}和{{tr|Dragon armor}}现在需要更少的材料
+* {{tr|Sparkly Wings}}现在制作起来容易得多
+* 用于制作的{{tr|meteorite}}的量减少
+* {{tr|Meteorite armor}}具有更多{{tr|defense}}，并可造成更多{{tr|damage}}
+* {{tr|Silt and slush}}可被提炼为有用的{{tr|materials, items}}和钱币
+* 每个 {{tr|Boss}} 都有罕见几率会掉落一个可放置的 {{tr|Boss}} {{tr|trophy}}
+* {{tr|Hooks}}现在可以用{{tr|gems}}制作
+* {{tr|Depth meter}}现在不可制作
+* {{tr|Stars}}现在可以与{{tr|bottles}}一起制成一样新的{{tr|light source}}
+* {{tr|Floating island chests}}不再需要{{tr|a key}}
+* {{tr|Gems and bars}}可以放置
+* 由{{tr|hellstone}}制成的{{tr|Items}}现在需要较少的{{tr|hellstone}}
+* 几乎所有{{tr|enemies}}（包括{{tr|console}}独有的{{tr|enemies}}）都有几率掉落{{tr|banner}}
+* {{tr|Console}}独有的{{tr|Pet items}}现在从{{tr|enemies}}处掉落
+
+; {{tr|NPCs}}：
+* 有 8 种新的{{tr|friendly NPCs}}
+* 有 4 种新 {{tr|bosses}}
+* 超过 100 种新{{tr|enemies}}
+* {{tr|Friendly NPCs}} 现在会根据一些条件，来出售不同的{{tr|items}}。这包括一天当中所处的时间，以及所居住的{{tr|biome}}
+* {{tr|Hardmode bosses}} 有机会自行生成，以帮助玩家推进游戏进程
+* 现有的{{tr|hardmode}} {{tr|bosses}} 现在制造的伤害轻微降低，它们的生命值也已调低
+* 在{{tr|blizzards}}期间会少见地在地表{{tr|ice biome}}生成一个{{tr|mini boss}}
+* 有超过 15 种新{{tr|pets}}，可以在{{tr|chests}}中找到或稀有掉落自{{tr|enemies}}
+* {{tr|hardmode}}早期的{{tr|enemies}}现在造成更少的伤害，并且生命值和防御力也更低。
+* {{tr|Skeletron}}现在可以被召唤，拥有一个较小的{{tr|loot}}列表
+
+; 差别：
+* {{tr|Console versions}}没有 10 个额外的{{tr|inventory slots}}
+* 引入了{{tr|Coin Gun}}，但未实现，因为{{tr|console}}中处理货币的方式有所不同导致{{tr|the Coin Gun}}随机发射各种面值的{{tr|coins}}。
+* 部分{{tr|console}}独有的{{tr|music}}被保留不变
+{{collapse bottom}}
+<noinclude>
+{{Category|Pages to transclude}}
+{{language info|en=Console version history/Engine Software/1.02}}
+</noinclude>

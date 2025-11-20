@@ -1,0 +1,203 @@
+{{infobox wrapper
+|{{npc infobox|tabs=y|boxwidth=18em
+| auto = 107
+| idprojectile = 24
+| type = NPC
+| type2 = Goblin
+| environment = Cavern/Valid house
+| damage ={{modes|15|22|26}}
+| damage2 =&#32;{{note|small=y|paren=y|{{gameText|ItemName.SpikyBall}}}} {{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_007_TownEntities}}
+| imageother = Map Icon Goblin Tinkerer.png
+| imageothercaption = {{tr|Map Icon}}
+}}
+|{{npc infobox|boxwidth=15em
+| auto = 105
+| environment = Cavern
+| type = NPC
+| type2 = Goblin
+}}
+}}
+
+'''{{tr|Goblin Tinkerer}}'''是个出售多种独特物品并提供[[{{tr|Reforge}}]]功能的 [[{{tr|NPC}}]]。在击败[[{{tr|Goblin Army}}]]之后能得到他，他会随机生成在[[{{tr|Cavern}}]]层的开放区域中。一开始，他以静止的'''{{tr|Bound Goblin}}'''状态出现，在此状态下与他谈话会将其释放。如果{{tr|Bound Goblin}}被击杀，他在之后依然会重新生成；如果{{tr|Goblin Tinkerer NPC}} 被击杀，只要有空余的[[{{tr|house}}]]，他就会在一段时间后再次入住。
+
+{{tr|The Goblin Tinkerer}}的{{tr|reforge}}选项使得玩家能够随机为[[{{tr|weapon}}]]或[[{{tr|accessory}}]]加诸[[{{tr|Modifier}}]]，这会使物品比原始状态更好或更差。{{tr|Reforges}}的成本是物品当前[[{{tr|value}}]]的三分之一，而这个数值同样受其当前{{tr|modifier}}的影响。{{tr|The reforge}}的{{tr|cost}}同样受{{tr|Goblin Tinkerer}}的{{eil|Happiness|快乐度}}影响，并且可以通过装备[[{{tr|Discount Card}}]]或[[{{tr|Greedy Ring}}]]来降低。{{source code ref|v=1.4.0.5|name=prices|{{code|Terraria.Main.cs}} 中的 {{code|DrawInventory()}} 方法（在 {{code|<nowiki>if (InReforgeMenu)</nowiki> 下}}）}}
+
+制作中用到的物品其{{tr|The modifiers}}不会影响到制作结果物品的{{tr|modifier}}。任何给予新制作出物品的{{tr|modifier}}都是彻底随机的。
+
+在{{eversions|1.3.0.1}}中，受到{{tr|enemy}}威胁时，{{tr|the Goblin Tinkerer}}会向附近的{{tr|enemies}}投掷[[{{tr|Spiky Ball}}]]来自卫，它和玩家投掷的版本行为差不多，在游戏初期会造成 15 / {{expert|22}} / {{master|26}} 伤害，（在{{eversions|1.4.0.1}}中）随着玩家的进程推进，他会得到[[{{tr|NPCs}}#{{tr|Stat Boosts}}|各种属性提升]]。<ref name="ai"/>
+
+{{tr|The Goblin Tinkerer}}喜欢待在[[{{tr|Cavern}}]]层中或者和[[{{tr|Mechanic}}]]在一起。
+
+{{Lifeform Analyzer note|The Bound Goblin}}
+
+== 出售{{tr|items}} ==
+{{shop
+|{{shop row|Rocket Boots}}
+|{{shop row|Ruler|value={{coin|10|0}} {{eicons|1.4.0.1|small=y}}<br/>{{coin|1|0|0}} {{eicons|Ruler|not=1.4.0.1|small=y}}}}
+|{{shop row|Tinkerer's Workshop}}
+|{{shop row|Grappling Hook}}
+|{{shop row|Toolbelt}}
+|{{shop row|Spiky Ball}}
+|{{shop row|Rubblemaker|value={{iteminfo|5324|buy}}|在[[{{tr|Hardmode}}]]中。}}
+|{{shop row|Any Pylon|value={{iteminfo|4876|buy}}|当在特定[[{{tr|Pylons}}#{{tr|Pylon shops}}|{{tr|biome}}]]中且足够[[{{tr|NPCs}}#{{tr|Happiness}}|快乐]]时。}}
+}}
+
+== 生活偏好 {{eicons|Happiness}} ==
+{{living preferences}}
+
+== 微光形态{{eicons|Shimmer}} ==
+{{float file box|[[File:Goblin Tinkerer (Shimmered).png]] [[File:Map Icon Goblin Tinkerer (Shimmered).png]]|微光转化后的{{tr|Goblin Tinkerer}}及其{{tr|Map Icon}}。}}
+
+当浸没在[[{{tr|Shimmer}}]]中后，{{tr|the Goblin Tinkerer}}会变为其微光形态。这对游戏玩法或对话没有影响，只是视觉上的改变。将其再次浸没于{{tr|Shimmer}}中可以将他变回经典外观。
+{{-}}
+== 名字 ==
+{{npc names}}
+
+== 小贴士 ==
+* 在{{tr|the Goblin Tinkerer}}被救出之前，当玩家在[[{{tr|Cavern}}]]层中移动时{{tr|the Bound Goblin}}会周期性地在玩家附近生成，而当距离太远时又会消失。因此，没必要花费大量时间去清理地图、搜索每个通道。
+* 使用[[{{tr|Hunter Potion}}]]会让{{tr|the Bound Goblin}}亮起来，使其更容易找到。
+* 虽然{{tr|the Bound Goblin}}可以在地下开放区域找到，不过在[[{{tr|Dungeon}}]]中寻找受缚 [[{{tr|NPC}}]] 对玩家而言可能会更容易，因为它是个宽阔且易于通行的地下空间。{{tr|NPCs}} 也可以在[[{{tr|Jungle Temple}}]]中找到。
+* {{eicons|Happiness}} 作为一种解决成本的措施，让{{tr|the Goblin Tinkerer}}尽量快乐是有益的，这样他的{{tr|Reforges cost}}就会低一些。
+
+== 话语 ==
+=== 互动话语 ===
+{{collapse top}}
+'''被救出来后：'''
+* “{{gameText|LegacyDialog.120}}”
+
+'''[[{{tr|Mechanic}}]]存在时：'''
+* “{{gameText|LegacyDialog.126|x_Mechanic=&lt;{{tr|Mechanic}}的名字&gt;}}”
+
+'''[[{{tr|Stylist}}]]存在时：'''
+* “{{gameText|LegacyDialog.309|x_Stylist=&lt;{{tr|Stylist}}的名字&gt;}}”
+
+'''无家可归时：'''
+* “{{gameText|LegacyDialog.121}}”
+* “{{gameText|LegacyDialog.122}}”
+* “{{gameText|LegacyDialog.123}}”
+* “{{gameText|LegacyDialog.124}}”
+* “{{gameText|LegacyDialog.125}}”
+
+'''在[[{{tr|day}}]]：'''
+* “{{gameText|LegacyDialog.132}}”
+* “{{gameText|LegacyDialog.133}}”
+* “{{gameText|LegacyDialog.134}}”
+* “{{gameText|LegacyDialog.135}}”
+* “{{gameText|LegacyDialog.136}}”
+
+'''在[[{{tr|night}}]]：'''
+* “{{gameText|LegacyDialog.127}}”
+* “{{gameText|LegacyDialog.128}}”（参见下面的[[#{{tr|Trivia}}|{{tr|Trivia}}]]）
+* “{{gameText|LegacyDialog.129}}”
+* “{{gameText|LegacyDialog.130}}”
+* “{{gameText|LegacyDialog.131}}”
+
+'''{{eil|Party}}期间：'''
+* “{{gameText|GoblinTinkererSpecialText.Party}}”
+
+'''当已打败一级的{{eil|Old One's Army}}时：'''
+* “{{gameText|GoblinTinkererChatter.Chatter_1}}”
+
+'''{{eil|Windy Day}}期间：'''
+* “{{gameText|GoblinTinkererSpecialText.Windy1}}”
+* “{{gameText|GoblinTinkererSpecialText.Windy2}}”
+
+'''[[{{tr|Rain}}]]期间 {{eicons|1.4.0.1}}：'''
+* “{{gameText|GoblinTinkererSpecialText.Rain1}}”
+* “{{gameText|GoblinTinkererSpecialText.Rain2}}”
+
+'''{{eil|Thunderstorm}}期间：'''
+* “{{gameText|GoblinTinkererSpecialText.Storm1}}”
+* “{{gameText|GoblinTinkererSpecialText.Storm2}}”
+
+'''在{{eil|Graveyard}}中：'''
+* “{{gameText|GoblinTinkererSpecialText.Graveyard1}}”
+* “{{gameText|GoblinTinkererSpecialText.Graveyard2}}”
+{{collapse bottom}}
+
+=== {{tr|Happiness}}话语 {{eicons|1.4.0.1}} ===
+{{collapse top}}
+'''无家可归时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.NoHome}}”
+
+'''中性时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.Content}}”
+
+'''离家很远时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.FarFromHome}}”
+
+'''在人少的区域时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.LoveSpace}}”
+
+'''在拥挤区域时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.DislikeCrowded}}”
+* “{{gameText|TownNPCMood_GoblinTinkerer.HateCrowded}}”
+
+'''当在{{tr|Caverns}}中时:'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.LikeBiome|x_BiomeName={{tr|the Underground}}}}”
+
+'''在{{tr|the Jungle}}中时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.DislikeBiome|x_BiomeName={{tr|the Jungle}}}}”
+
+'''在[[{{tr|Evil biome}}|{{tr|Evil Biome}}]]中或[[{{tr|Dungeon}}]]中时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.HateBiome|x_BiomeName={{tr|the Corruption/the Crimson/Dungeon}}}}” {{sic}}
+
+'''靠近[[{{tr|Mechanic}}]]时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.LoveNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”
+
+'''靠近[[{{tr|Dye Trader}}]]时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.LikeNPC|x_NPCName=&lt;{{tr|Dye Trader}}的名字&gt;}}”
+
+'''靠近[[{{tr|Clothier}}]]时：'''
+* {{gameText|TownNPCMood_GoblinTinkerer.DislikeNPC|x_NPCName=&lt;{{tr|Clothier}}的名字&gt;}}"
+
+'''靠近[[{{tr|Stylist}}]]时：'''
+* {{gameText|TownNPCMood_GoblinTinkerer.HateNPC|x_NPCName=&lt;{{tr|Stylist}}的名字&gt;}}"
+
+'''当在[[{{tr|Princess}}]]附近时：'''
+* “{{gameText|TownNPCMood_GoblinTinkerer.LikeNPC_Princess|x_NPCName=&lt;{{tr|Princess}}的名字&gt;}}”
+{{collapse bottom}}
+
+== 花絮 ==
+{{float file box|[[File:Goblin Tinkerer.png]] [[File:Goblin Tinkerer (Shimmered).png]] [[File:Goblin Peon.png]] [[File:Goblin Scout.png]]|{{tr|Goblin Tinkerer}}与他的{{tr|Shimmer}}形态和其他{{tr|Goblin}}的对比}}
+* {{tr|Goblin Tinkerer}}是唯一一个耳朵短但尖的{{tr|goblin}}。考虑到他被驱逐的身份，他的耳朵也有可能是断耳。
+* {{wikipedia|goblin|{{tr|goblin}}（Goblin）}}原型来自于欧洲各地的民俗传说，他们一般是一种带有恶意进行恶作剧和骚乱的妖精。与其他流行文化中一样，现代的{{tr|goblin}}采用了大量来自{{wikipedia|J.R.R. Tolkien|J.R.R 托尔金（J.R.R. Tolkien）}}和{{wikipedia|Dungeons & Dragons|龙与地下城（Dungeons & Dragons）}}的设定。
+** 其话语“{{gameText|LegacyDialog.132}}”既指[[{{tr|Goblin Battle Standard}}]]，也指{{tr|goblin}}个性易怒、利己的事实。
+** 其话语“{{gameText|LegacyDialog.136}}”可能参考了{{tr|Enemies}}并不能带走[[{{tr|chest}}]]中的{{tr|item}}的事实，也指{{tr|goblin}}擅长掠夺和盗窃的特点。
+*** 在{{tr|Goblin Scout}}的{{tr|Bestiary entry}}描述中也提到了{{tr|goblin}}的掠夺天性：“''{{gameText|Bestiary_FlavorText.npc_GoblinScout}}''”
+** {{tr|Goblin Tinkerer}}与{{tr|goblin}}的传统形象几乎完全相反，正如他的{{tr|Bestiary}}词条描述：“''{{gameText|Bestiary_FlavorText.npc_GoblinTinkerer}}''”
+* {{tr|the Goblin Tinkerer}}的一些话可以证明，他暗恋着[[{{tr|Mechanic}}]]，同时，根据她的一些话，她也暗恋着他。
+** 他的快乐度话语 “{{gameText|TownNPCMood_GoblinTinkerer.LoveNPC|x_NPCName=&lt;{{tr|Mechanic}}的名字&gt;}}”亦可证明此点。
+** 他反感{{tr|the clothier}}也可能指向这条，就像{{tr|mechanic}}也讨厌他一样。
+** 在[[{{tr|Terrarian Gothic}}]]这幅画中能同时看到{{tr|The Mechanic and the Goblin Tinkerer}}。
+* 话语“{{gameText|LegacyDialog.128}}”引用了 [http://knowyourmeme.com/memes/xzibit-yo-dawg “yo dawg” 模因]。它也提及了[[{{tr|Tinkerer's Workshop}}]]中是如何将[[{{tr|Rocket Boots}}]]和奔跑加成（[[{{tr|Hermes Boots}}]]、[[{{tr|Flurry Boots}}]]、{{eil|Dunerider Boots}}、或{{eil|Sailfish Boots}}）结合在一起的。
+* 他的话语“{{gameText|GoblinTinkererSpecialText.Graveyard1}}”很可能是来自于电影《''{{wikipedia|Ghostbusters|捉鬼敢死队（Ghostbusters）}}''》，电影中的主人公挥舞''质子包''诱捕{{tr|ghosts}}。
+* 他的名字之一，“Dalek”，参考英国电视剧《{{wikipedia|Doctor Who|神秘博士（Doctor Who）}}》。{{wikipedia|Dalek}} 是一个敌对种族，以其科技先进性而闻名，并想要消灭所有“劣等”生物。
+* 他的名字之一，“Gnudar”，可能参考了《{{wikipedia|Futurama|飞出个未来（Futurama）}}》，在其中一部电影里有一个同名的敌对外星人。
+* 他的名字之一，“Nuxatk”，是个有意为之的玩笑，它读起来听上去像是单词“nutsack”{{note|paren=y|small=y|译注：这个单词在俚语中有不雅含义}}。
+* 话语“{{gameText|LegacyDialog.130}}”参考了在{{tr|Terraria}}中[[{{tr|gold}}]]要比[[{{tr|iron}}]]更坚固的事实，但现实中是铁更坚固。
+<!-- This is not a Minecraft reference unless you find a quote from dev saying it -->
+* 不像{{tr|other goblins}}，{{tr|the goblin tinkerer}}死亡时并不会掉落他的武器（[[{{tr|spiky balls}}]]）。有讽刺意味的是，他也是唯一用{{tr|spiky balls}}作为武器的{{tr|goblin}}。
+* {{tr|Goblin Tinkerer}}的雨天话语：“{{gameText|GoblinTinkererSpecialText.Rain2}}”，以及[[{{tr|Princess}}]]的话语：“{{gameText|PrincessChatter.Chatter_2}}”都表示了{{tr|Goblin}}个子矮小，但实际上游戏中{{tr|Goblin}}与{{tr|town NPCs}} 的外观之间并没有高度区别。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|现在在[[{{tr|Hardmode}}]]中会出售[[{{tr|Rubblemaker}}]]。}}
+{{history|Desktop 1.3.5|修正了{{tr|Goblin Tinkerer}}比预期的小了一号的问题。}}
+{{history|Desktop 1.3.4|添加了关于{{tr|Etherian Goblins}}的话语。}}
+{{history|Desktop 1.3.0.1|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.1.1|现在能在启用自动暂停时解开。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Goblin Tinkerer}}

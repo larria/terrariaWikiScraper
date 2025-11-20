@@ -1,0 +1,55 @@
+{{exclusive|1.3.0.1}}
+{{item infobox
+| auto = 3571
+| idprojectile = 643, 644
+| tags = hardmode / sentry / drop / bag loot
+}}
+{{drop infobox|style=clear:right}}
+[[File:Rainbow Crystal Staff (demo).gif|frame|{{tr|The Rainbow Crystal}}伤害若干个[[{{tr|Skeleton}}]]。]]
+
+'''{{tr|Rainbow Crystal Staff}}'''是个[[{{tr|Hardmode}}]]、[[{{tr|Moon Lord}}]]后的[[{{tr|Summon weapons|link=y}}#{{tr|Sentries}}|{{tr|sentry summon weapon}}]]。{{sentry note}}{{tr|The Rainbow Crystal}}会提供发射三枚多彩光束弹幕的方式，攻击 62.5 格范围内的[[{{tr|enemies}}]]，并优先瞄准最近的{{tr|enemy}}。每束光束都会释放出一枚闪烁的星星，它们会在短暂延迟后制造一次可造成伤害的爆炸。不同于其他{{tr|sentry summons}}，{{tr|the Rainbow Crystal}}在被召唤时会悬浮在光标所在位置的空中（类似于[[{{tr|Lunar Portal Staff}}]]），而非落到地上。{{tr|The Rainbow Crystal Staff}}有 {{chance|2/9}} 的概率掉落自[[{{tr|Moon Lord}}]]。
+
+{{modifier|summon}}
+
+== 备注 ==
+* {{tr|The Rainbow Crystal}}每 {{duration|23 ticks}}发射一组 3 束光束。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分位于<code>aiStyle == 123</code>代码段。一旦发射光束，{{tr|The Rainbow Crystal}}的 ai[0] 被设为 -20。在此之后，它每{{tr|tick}}会增加 1 直至达到 0，然后在同一{{tr|tick}}它增加到 1 其后到 2，因此它在最后一{{tr|tick}}内会增加 3。然后它会继续每{{tr|tick}}增加 1 直至达到 5，此时{{tr|the Rainbow Crystal}}便可以再次发射光束。这意味着{{tr|the Rainbow Crystal}}每 23 {{tr|tick}}发射一次光束。}}
+* {{tr|The Rainbow explosions}}生成后经过 0.5 秒延迟造成一次伤害，在经过 0.5 秒延迟造成第二次伤害，最后消失。{{source code ref|name=kill&ai|v=1.4.4.9|method=Terraria.Projectile.Kill / Terraria.Projectile.AI|t=相关部分位于<code>Terraria.Projectile.AI</code>方法是<code>aiStyle == 112</code>代码段。}}
+** 每次{{tr|explosions}}{{tr|damage}}持续 1 {{tr|tick}}{{tick}}并且它们不会相互干扰，这意味着一只{{tr|enemy}}可同时被多个{{tr|explosions}}伤害。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.SetDefaults}}
+* {{tr|The Rainbow explosions}}对 3.75×3.75 {{tr|tile}}方形区域内造成伤害。<ref name="kill&ai"/>
+* {{tr|The Rainbow Crystal}}偶尔可能会穿过{{tr|block}}攻击，而这种情况并不常发生。
+* {{tr|light}}的光束会侦测到尚未出现在屏幕上的{{tr|enemies}}。这有助于提前知晓{{tr|enemies}}会在哪个方位出现。
+* 瞄准{{tr|enemy}}时按下 {{key|open}}，将会在那个{{tr|enemy}}死亡或切换目标前集火它。
+* 和所有的{{tr|sentry summons}}一样，当召唤一个{{tr|sentry}}就会导致另一个{{tr|sentry}}消失，除非{{tr|player}}具有足够的{{tr|sentry slots}}。
+
+== 小贴士 ==
+* {{tr|This weapon}}具有很大的范围，可以攻击远至到屏幕外的敌怪，但它更倾向攻击近处的目标。因此，建议将该{{tr|sentry}}设置于高空，以提供最广阔的攻击范围；即使它接近目标，其攻击精度也不会提高。
+
+== 花絮 ==
+* 与大多数以彩虹为主题的{{tr|weapons}}不同，{{tr|the Rainbow Crystal Staff}}并没有为开发者和测试者设计的秘密配色方案。
+* 它的{{tr|tooltip}}：“公爵，多么缤纷的颜色！”（“The colors, Duke, the colors!”）是对[https://www.youtube.com/watch?v=iavURrznqjQ 冰棒广告]的引用。
+* {{tr|Rainbow Crystal Staff}}有所有{{tr|sentry summon weapons}}中最高的{{tr|base damage}}。
+* 当使用{{tr|mods}}或第三方软件召唤时，其{{tr|projectile}}为红色。
+* 因为它在 [[PvP]] 中与玩家接触时会造成巨大的伤害，并且可以放置在半空中，大多数有管理的 PvP 服务器禁止使用{{tr|this weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Projectiles}}现在使用静态{{tr|immunity frames}}。}}
+{{history|Desktop 1.4.1.2|{{tr|Damage}}由 80 提升至 130。}}
+{{history|Desktop 1.4.0.1|
+** {{tr|Damage}}由 150 降低至 80。
+** 修正了精度问题，提高了闪光爆炸的速度。}}
+{{history|Desktop 1.3.4|现在被视作{{tr|sentry}}型{{tr|minion}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Rainbow Crystal Staff}}

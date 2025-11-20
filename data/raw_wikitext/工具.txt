@@ -1,0 +1,201 @@
+'''{{tr|Tools}}'''是一种物品类别定义，此类物品用于执行''{{tr|Terraria}}''游戏过程中所需的各种非战斗任务，比如建设和探索，等等。一般来说，当工具是当前活跃[[{{tr|hotbar}}]]物品时通过{{key|use}}键可以将其挥舞；但它们和[[{{tr|weapon}}]]有所不同，后者主要用于对{{tr|enemy}}造成伤害。工具也有别于[[{{tr|accessories}}]]，后者提供的是被动能力，而工具则需要主动使用。
+
+[[{{tr|Pickaxe}}]]、[[{{tr|axe}}]]、和[[{{tr|hammer}}]]是在游戏过程各个阶段都必不可少的工具，能精确的拆卸世界中的{{tr|tiles}}，比如放置的[[{{tr|Blocks}}]]、背景[[{{tr|Wall}}]]、[[{{tr|plant}}]]、或放置的[[{{tr|furniture}}]]，并将它们转化为可收集的[[{{tr|inventory}}]]物品以备重新放置于其他位置，或用于其他用途，如[[{{tr|crafting}}]]。它们还可兼作弱小的[[近战武器]]，造成的伤害通常远低于同级别的真正{{tr|weapons}}。
+
+其他重要工具包括：[[{{tr|Magic Mirror}}]]，将玩家传送回[[{{tr|spawn point}}]]；[[{{tr|hooks}}]]，有助于在地面之上之下穿行；[[{{tr|Bucket}}]]，运输[[{{tr|liquid}}]]；[[{{tr|Bug Net}}]]，用于捕捉[[{{tr|critters}}]]；[[{{tr|Wrench}}]]，用于建造[[{{tr|mechanisms}}]]。这些工具中有很多大体上在游戏各个阶段都会一直使用。
+<!--
+-->{{options/set|item|wrap=y}}<!--
+-->{{itemlist/options|width=19.5em|css=margin: 3px auto|boxcss=margin: 0.5em auto;|class=terraria}}<!-- setting: Tools
+-->
+== 多用途工具 ==
+一些工具拥有多种工具功能的组合：
+* [[{{tr|Hammer}}]] + [[{{tr|Axe}}]]: [[{{tr|Hamaxes}}]]
+* [[{{tr|Pickaxe}}]]/[[{{tr|Drill}}]] + {{tr|Axe}}：[[{{tr|Pickaxe Axe}}]]、[[{{tr|Drax}}]]、[[{{tr|Shroomite Digging Claw}}]]、和[[{{tr|Picksaw}}]]。
+
+== {{tr|Pickaxes}}和{{tr|drills}} ==
+[[{{tr|Pickaxes}}]]和[[{{tr|Drills}}]]用于移除/释放放置的[[{{tr|block}}]]、[[{{tr|Ambient objects}}|{{tr|background items}}]]、和[[{{tr|furniture}}]]以供收集。若用于{{tr|blocks}}，通常将其称为“采矿”或“挖掘”。它们的{{tr|tier}}决定了能采挖哪些类型的{{tr|blocks}}，以及移除每种{{tr|block}}类型所需的敲击次数。{{tr|Drills}}的功能和{{tr|Pickaxes}}完全一样，但是动画和音效有所不同。所有在[[{{tr|Cobalt Pickaxe}}]]右边和下面（包括它自身）的工具都是[[{{tr|Hardmode}}]]的，（{{3DS version}}中有一个例外：[[{{tr|Drax}}]]可以在{{tr|pre-hardmode}}得到）。玩家开启新人物时以[[{{tr|Copper Pickaxe}}]]开局，开启新{{eil|Journey Mode}}人物时则以[[{{tr|Iron Pickaxe}}]]开局。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (listcat HOLDS 'pickaxes' OR listcat HOLDS 'drills')
+|q?groupBy=itemid
+|q?orderBy=FLOOR(pick) ASC, FLOOR(axe) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Axes}}和{{tr|chainsaws}} ==
+[[{{tr|Axes}}]]和[[{{tr|Chainsaws}}]]用于收割背景[[{{tr|plant}}]]，比如[[{{tr|Tree}}]]、[[{{tr|Cacti}}]]、和[[{{tr|giant glowing mushroom}}]]（[[{{tr|Wood}}]]块则需要用{{tr|pickaxe}}/{{tr|drills}}来移除）。{{tr|Chainsaws}}的功能和{{tr|Axes}}完全一样，但动画和音效有所不同。[[{{tr|Hamaxe}}]]兼具{{tr|Axes}}和{{tr|Hammers}}的功能。当玩家新开启标准人物时，会以[[{{tr|Copper Axe}}]]开局，而新{{eil|Journey Mode}}人物则以[[{{tr|Iron Axe}}]]开局。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (listcat HOLDS 'axes' OR listcat HOLDS 'chainsaws' OR listcat HOLDS 'hamaxes')
+|q?groupBy=itemid
+|q?orderBy=FLOOR(axe) ASC, FLOOR(hammer) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Hammers}} ==
+[[{{tr|Hammers}}]]用于释放[[{{tr|background wall}}]]以供收集、用于摧毁无法收集的{{tr|background walls}}、用于给前景[[{{tr|block}}]]塑形以创建斜面和半图格、以及用于给[[{{tr|platform}}]]。它们还用于摧毁[[{{tr|Shadow Orb}}]]和[[{{tr|Crimson Heart}}]]。[[{{tr|Pwnhammer}}]]、{{eil|Haemorrhaxe}}、和[[{{tr|Hammush}}]]还能在[[{{tr|Hardmode}}]]中用于摧毁[[{{tr|Altar}}]]，这能触发新的[[{{tr|Hardmode Ore}}]]生成。{{eil|Journey Mode}}人物开局会带有一把[[{{tr|Iron Hammer}}]]。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (listcat HOLDS 'hammers' OR listcat HOLDS 'hamaxes')
+|q?groupBy=itemid
+|q?orderBy=FLOOR(hammer) ASC, FLOOR(axe) ASC, FLOOR(toolspeed) DESC, FLOOR(itemid) ASC
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Wiring}} ==
+这些物品帮助玩家放置或移除[[{{tr|Wire}}]]，以及操纵[[{{tr|Actuator}}]]。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (type HOLDS 'tool') AND (tag HOLDS 'wiring')
+|q?groupBy=itemid
+|q?orderBy=itemid
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Paint}} ==
+这些物品让玩家能放置或移除[[{{tr|paint}}]]。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (type HOLDS 'tool') AND (tag HOLDS 'painting')
+|q?groupBy=itemid
+|q?orderBy=itemid
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Hooks}} ==
+[[{{tr|Hooks}}]]用于征服高大的障碍、越过裂缝，方法是钩住远处并将玩家拉到远处的表面上。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (type HOLDS 'tool') AND (tag HOLDS 'hooks')
+|q?groupBy=itemid
+|q?orderBy=itemid
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== {{tr|Fishing poles}} ==
+[[{{tr|Fishing poles}}]]用于[[{{tr|fishing}}]]。
+
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NULL AND (type HOLDS 'tool') AND (tag HOLDS 'fishing poles')
+|q?groupBy=itemid
+|q?orderBy=itemid
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+== 其他工具 ==
+=== {{tr|Movement items}} ===
+{{itemlist
+|{{item|Ice Mirror}}
+|{{item|Magic Mirror}}
+|{{item|Cell Phone}}
+|{{item|Shellphone}}
+|{{item|Trident|size=30px}}（仅限{{eicons|1.4.0.1}}）
+|{{item|Rod of Discord}}
+|{{item|Rod of Harmony}}
+|{{item|Portal Gun|size=30px}}
+|{{item|Umbrella|size=30px}}
+|{{item|Tragic Umbrella|size=30px}}
+|{{item|Magic Conch|size=30px}}
+|{{item|Demon Conch|size=30px}}
+|{{item|Snake Charmer's Flute|size=30px}}
+}}
+
+=== [[{{tr|Block-placing wands}}]] ===
+{{itemlist
+|{{item|Leaf Wand}}
+|{{item|Living Wood Wand}}
+|{{item|Rich Mahogany Leaf Wand}}
+|{{item|Living Mahogany Wand}}
+|{{item|Hive Wand}}
+|{{item|Bone Wand|size=30px}}
+}}
+
+=== 其他 ===
+{{itemlist
+|{{item|Bucket}}
+|{{item|Bottomless Water Bucket}}
+|{{item|Bottomless Lava Bucket}}
+|{{item|Bottomless Honey Bucket}}
+|{{item|Bottomless Shimmer Bucket}}
+|{{item|Super Absorbant Sponge}}
+|{{item|Lava Absorbant Sponge}}
+|{{item|Honey Absorbant Sponge}}
+|{{item|Ultra Absorbant Sponge}}
+|{{item|Bug Net|size=30px}}
+|{{item|Golden Bug Net|size=28px}}
+|{{item|Lavaproof Bug Net|size=30px}}
+|{{item|Sickle|size=30px}}
+|{{item|Staff of Regrowth|size=30px}}
+|{{item|Clentaminator|size=30px}}
+|{{item|Terraformer|size=30px}}
+|{{item|Breathing Reed|size=30px}}
+|{{item|Binoculars}}
+|{{item|Golf Clubs|image=Golf Club (Iron).png}}
+|{{item|Golf Whistle}}
+|{{item|Keys|image=Golden Key.png/Hallowed Key.png/Temple Key.png}}
+|{{item|Guide to Critter Companionship}}
+|{{item|Guide to Environmental Preservation}}
+|{{item|Guide to Peaceful Coexistence}}
+|{{item|Chum Bucket}}
+|{{item|Gravedigger's Shovel}}
+|{{item|Encumbering Stone}}
+|{{item|Lawn Mower}}
+|{{item|Rubblemaker}}
+|{{item|Sandcastle Bucket}}
+|{{item|Ice Rod}}
+|{{item|Dirt Rod}}
+|{{item|Flare Gun}}
+}}
+
+== 无法获取的工具 ==
+{{exclusive|Lunar Fragments|section=y}}
+{{unobtainium|section=y}}
+以下物品不使用一些破解或作弊手段的话是{{tr|unobtainable}}的。
+{{itemlist/start}}
+{{#af_foreach:{{#invoke:cargoQuery|afExport
+|q?tables=Items
+|q?fields=name
+|q?where=unobtainable IS NOT NULL AND (type HOLDS 'tool')
+|q?groupBy=itemid
+|q?orderBy=itemid
+|plainList=name
+}}|k|v|{{itemlist/item|{{item|{{{v}}}}}}}}}
+{{itemlist/end}}
+
+<!--
+-->{{itemlist/options|reset}}<!--
+-->{{options/reset|item}}<!--
+-->
+{{Master Template Tools}}
+
+[[Category:工具物品| ]]
+
+{{language info|en=Tools}}

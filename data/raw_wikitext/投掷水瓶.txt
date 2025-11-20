@@ -1,0 +1,86 @@
+'''{{tr|Thrown Water}}'''指的是一套三种[[{{tr|consumable}}]][[{{tr|weapon}}]]，投掷后能将一小块区域转化为其他{{tr|biome}}（[[{{tr|Hallow}}]]、[[{{tr|The Corruption}}]]或[[{{tr|The Crimson}}]]，分别对应于'''{{tr|Holy Water}}'''、'''{{tr|Unholy Water}}'''、和'''{{tr|Blood Water}}'''）。这种转化作用于一个大致圆形的区域，半径大约四格。此范围内的[[{{tr|Enemies}}]]也会受到轻微伤害；此伤害不属于四种[[{{tr|damage types}}]]中的任何一种，因此不受任何[[{{tr|buffs}}]]或{{tr|equipment}}影响。
+
+{{tr|Holy Water}}仅在[[{{tr|Hardmode}}]]中可用。世界中有可能会自然生成有[[{{tr|Corrupted Desert}}]]或[[{{tr|Crimson Desert}}]]，这使得另外两种可投掷水瓶从游戏一开始就可用，但在{{tr|Hardmode}}开始之前，这些{{tr|biomes}}不会蔓延到[[{{tr|Sand}}]]上，因此，生成时没有{{tr|Corruption Deserts}}/{{tr|Crimson Deserts}}的世界在{{tr|Hardmode}}之前不会有[[{{tr|Ebonsand}}]]/[[{{tr|Crimsand}}]]。但是，在{{eversions|1.4.0.1}}上，可以使用[[{{tr|Vile Powder}}]]或[[{{tr|Vicious Powder}}]]将沙子转化为其{{tr|corrupt counterpart}}。
+
+[[File:Thrown Water (demo).gif|right|frame|{{tr|the Holy Water}}、{{tr|Blood Water}}、和{{tr|Unholy Water}}的动画。注意它们是如何将一小块地方转化为相应的[[{{tr|Biomes}}|{{tr|biome}}]]的。]]
+
+== 种类 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| auto = 422
+| type = Miscellaneous
+| tags = hardmode
+| sound1 = Shatter.wav
+| soundcaption1 = 碰撞
+}}
+{{item infobox
+| type = Miscellaneous
+| auto = 423
+| sound1 = Shatter.wav
+| soundcaption1 = 碰撞
+}}
+{{item infobox
+| type = Miscellaneous
+| auto = 3477
+| sound1 = Shatter.wav
+| soundcaption1 = 碰撞
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=LIKE % Water|station=By Hand|expectedrows=5}}
+
+== 转化 ==
+{{tr|Thrown water}}按下文所述转化[[{{tr|blocks}}]]和[[{{tr|walls}}]]。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.Convert}}
+{{itemlist/options|width=17.5em}}{{options/set|item|scale=0.8}}
+=== {{tr|Holy Water}} ===
+{{transclude|{{tr|Solutions}}#{{tr|Blue Solution}}}}
+
+=== {{tr|Unholy Water}} ===
+{{transclude|{{tr|Solutions}}#{{tr|Purple Solution}}}}
+
+=== {{tr|Blood Water}} ===
+{{transclude|{{tr|Solutions}}#{{tr|Red Solution}}}}
+{{itemlist/options|reset}}{{options/reset|item}}
+== 小贴士 ==
+[[File:Unholy Water aoe.png|thumb|作用范围]]
+* {{tr|Thrown Water}}的效果可以用[[{{tr|Thrown Powder}}]]逆转。
+* 如果要创造大面积的{{tr|Hallow}}、{{tr|Corruption}}或{{tr|Crimson}}，[[{{tr|Clentaminator}}]]（或其升级物{{eil|Terraformer}}）可能是更好的选择。它能发射射程约 60 格的[[{{tr|solution}}]]流。
+
+== 花絮 ==
+* {{tr|The Holy Water}}，包括其外观和投掷的方式，可能是参考了动作冒险电子游戏《''{{wikipedia|lang=en|Castlevania|恶魔城（Castlevania）}}''》系列中的[http://castlevania.wikia.com/wiki/Holy_Water 同名物品]。
+
+== 另见 ==
+* [[指南:人工{{tr|biomes}}]]
+
+== 历史 ==
+{{history|Desktop 1.3.0.1|
+** 更新了{{tr|Holy Water}}和{{tr|Unholy Water}}的外观。旧的{{tr|sprite}}是：[[File:Holy Water (old).png|link=]] [[File:Unholy Water (old).png|link=]]
+** {{tr|Holy Water}}的{{tr|crafting recipe}}从 5 个{{tr|Pixie Dust}}和 1 个{{tr|Bottled Water}}改为 10 个{{tr|Bottled Water}}和 2 个{{tr|Pixie Dust}}。
+** {{tr|Unholy Water}}的{{tr|crafting recipe}}现在需要 10 个{{tr|Bottled Water}}，并且一次会产出 10 个{{tr|Unholy Water}}。
+** 添加了{{tr|Blood Water}}。}}
+{{history|Desktop 1.2.0.3|{{tr|Holy Water}}现在将净化[[{{tr|the Crimson}}]]{{tr|biome}}。}}
+{{history|Desktop 1.2|{{tr|Stack limit}}由 250 提升至 999。}}
+{{history|Desktop 1.1|引入{{tr|Holy Waters}}和{{tr|Unholy Waters}}。}}
+{{history|Console 1.02|
+** {{tr|Stack limit}}由 250 提升至 999。
+** {{tr|Holy Water}}现在将净化[[{{tr|the Crimson}}]]{{tr|biome}}。}}
+{{history|Console-Release|引入{{tr|Holy Waters}}和{{tr|Unholy Waters}}。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.2.6508|
+** {{tr|Stack limit}}由 250 提升至 999。
+** {{tr|Holy Water}}现在将净化[[{{tr|the Crimson}}]]{{tr|biome}}。}}
+{{history|Mobile 1.1.5536|引入{{tr|Holy Waters}}和{{tr|Unholy Waters}}。}}
+{{history|3DS-Release|introduced=y|随{{tr|Desktop}} 1.2 的更改引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-main = yes
+| show-misc = yes
+}}
+{{Master Template Consumables}}
+
+{{language info|en=Thrown Water}}

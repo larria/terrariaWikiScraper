@@ -1,0 +1,33 @@
+<includeonly><!--
+
+-->
+{{!}}- <!-- new row
+
+-->{{#fornumargs:k|v|<!-- cycle through unnamed parameters
+
+--><nowiki/>
+{{!}} <!-- new cell. 
+
+-->{{#ifeq:{{#var:v}}|-|<!-- 
+	--> data-sort-value="0" {{!}} {{note|-}} <!-- "empty" cell
+-->|<!-- 
+	--> {{#switch:{{#sub:{{#var:v}}|0|1}}<!-- 
+		-->|+={{green|{{#var:v}}}}<!-- positive value
+		-->|-={{red|{{#var:v}}}}<!-- negative value
+		-->|#default={{#var:v}}<!-- normal text
+	-->}} <!-- 
+-->}}<!-- 
+
+-->}}<!-- end of fornumargs
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage|onlybox=y}}
+
+Create a row for the [[Modifiers]] tables.
+
+Automatically styles input and addresses sorting issues.
+
+{{language info|en=Modifiers/row}}
+</noinclude>

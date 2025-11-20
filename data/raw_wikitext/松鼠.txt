@@ -1,0 +1,75 @@
+{{infobox wrapper
+|{{item infobox
+| auto = 2018
+| id = 2018 (普通), 3563 (红色)
+| name = Squirrels
+| imagealt = [[File:Squirrel.png|link=]] [[File:Red Squirrel.png|link=]]
+| sell = @@@@ {{eicons|1.3.0.1|small=y}}<br/> 无价值 {{eicons|1.3.0.1|invert=y|small=y}}
+| cargo = no
+}}
+|{{npc infobox
+| auto = 299
+| id = 299 (普通), 538 (红色)
+| name = Squirrels
+| imagealt = [[File:Squirrel.gif|link=]] [[File:Red Squirrel.gif|link=]]
+| type = Critter
+| environment = Forest
+| cargo = no
+}}
+}}<!--
+
+Cargo storage:
+-->{{npc infobox | view=void
+| auto = 299
+| image = Squirrel.gif
+| type = Critter
+| environment = Forest
+}}<!--
+-->{{npc infobox | view=void
+| auto = 538
+| image = Red Squirrel.gif
+| type = Critter
+| environment = Forest
+}}<!--
+-->{{item infobox | view=void
+| auto = 2018
+}}<!--
+-->{{item infobox | view=void
+| auto = 3563
+}}
+
+'''{{tr|Squirrel}}'''和'''{{eil|Red Squirrel|nl=y}}'''是一类无害的[[{{tr|critters}}]]，会在[[{{tr|Forest}}]][[{{tr|biome}}]]中生成。
+
+{{critter info|name=Squirrels|plural=y|gold=y
+|cagename=[[{{tr|Squirrel Cage}}]]/[[{{tr|Red Squirrel Cage}}]]
+|statuename=[[{{tr|Squirrel Statue}}]]
+|goldname=[[{{tr|Gold Squirrel}}]]
+}}
+
+== 制作 ==
+=== 用于 ===
+{{recipes|ingredient=Squirrel/Red Squirrel|expectedrows=5}}
+
+== 花絮 ==
+* 在{{mobile version}}上，{{tr|squirrels}}曾经是灰色的并且在{{tr|night}}似乎会发暗蓝色的光。
+{{bestiary|Squirrel|Red Squirrel}}
+
+== 历史 ==
+{{history|Desktop 1.4.2.1|（英文）{{tr|Squirrel}}的{{tr|Bestiary}}描述中“greyish”改为“grayish”。}}
+{{history|Desktop 1.4.0.1|现在用于制作[[{{tr|Grilled Squirrel}}]]。}}
+{{history|Desktop 1.3.1|现在可用于制作[[{{tr|Squirrel Statue}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 添加了{{tr|Red Squirrel}}。
+** {{tr|Squirrels}}现在有 {{sc|5}} 的卖出价值。}}
+{{history|Desktop 1.2.3|现在可以用{{tr|Bug Net}}捕捉并放在{{tr|cages}}中。}}
+{{history|Desktop 1.2.0.3|{{tr|Introduced Squirrel}}。}}
+{{history|Console 1.0.933.1|添加了{{tr|Red Squirrel}}。（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|Red Squirrel}}。（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|添加了{{tr|Red Squirrel}}。}}
+{{history|Mobile 1.3.0.7|添加了{{tr|Red Squirrel}}。}}
+
+{{Master Template Characters
+| show-critter = yes
+}}
+
+{{language info|en=Squirrels}}

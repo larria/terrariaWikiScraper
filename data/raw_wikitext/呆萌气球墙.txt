@@ -1,0 +1,41 @@
+{{exclusive|1.3.2}}
+__NOTOC__
+{{item infobox
+| name = Silly Balloon Walls
+| type = Wall
+| imagealt = <p>[[File:Silly_Green_Balloon_Wall.png]] [[File:Silly_Pink_Balloon_Wall.png]] [[File:Silly_Purple_Balloon_Wall.png]]</p><hr/><p>
+[[File:Silly_Green_Balloon_Wall_(placed).png]] [[File:Silly_Pink_Balloon_Wall_(placed).png]] [[File:Silly_Purple_Balloon_Wall_(placed).png]]</p>
+| auto = 3760
+| id = 3760-3762
+| idwall = 228-230
+| tooltip = {{itemTooltip|3762}}&nbsp;{{note|绿|paren=y|small=y}}<br/>{{itemTooltip|3760}}&nbsp;{{note|粉|paren=y|small=y}}<br/>{{itemTooltip|3761}}&nbsp;{{note|紫|paren=y|small=y}}
+| cargo = no
+}}<!--
+separate infoboxes for cargo, using void view for no output.
+-->{{item infobox | view = void | auto = 3760 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 3761 | type = Wall}}<!--
+-->{{item infobox | view = void | auto = 3762 | type = Wall}}
+
+'''{{tr|Silly Balloon Walls}}'''是用[[{{tr|party}}]]期间购买自[[{{tr|Party Girl}}]]的[[{{tr|Silly Balloons}}]]制作的{{tr|background}}[[{{tr|Wall}}]]。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|link=no|cate=force|result=LIKE Silly % Balloon Wall|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=LIKE Silly % Balloon Wall|expectedrows=3}}
+
+== 备注 ==
+* {{tr|Silly Balloon Walls}}是圆的，像{{tr|Silly Balloons}}一样。当它放置在其他{{tr|background walls}}旁边时，它会与相邻的{{tr|background wall}}融合在一起，形成直线。
+
+== 历史 ==
+{{history|Desktop 1.3.2|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Tiles
+| show-walls = yes
+}}
+
+{{language info|en=Silly Balloon Walls}}

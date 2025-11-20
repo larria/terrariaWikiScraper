@@ -1,0 +1,207 @@
+[[File:Minimap.png|thumb|[[#{{tr|Modes}}|画框模式]]的{{tr|minimap}}。]]
+{{about|{{tr|minimap}}功能||{{tr|Map}}}}
+
+'''{{tr|minimap}}'''是{{tr|character}}周围的{{tr|world}}的一个按比例缩小的实时概貌。默认情况下，它显示在屏幕右上角的方框内。
+
+随着对世界的探索，角色已经看到过的区域会以最大亮度显示在{{tr|minimap}}上。即使这些{{tr|tiles}}回到黑暗状态，它们在{{tr|minimap}}上仍将保持可见。不过，探索时无光源的区域不会被记录在{{tr|map}}上。
+
+{{tr|minimap}}记录新数据的速率取决于当前的视频质量设置——视频质量越高，记录速率会越快。{{tr|character}}周围的{{tr|minimap}}更新区域的大小取决于玩家的缩放设置——放大缩放会使得这一区域变小。
+
+如果已探索区域中的{{tr|tiles}}被更新（例如：[[{{tr|Meteorite (biome)}}|{{tr|Meteor}}]]坠落在某处或[[{{tr|Hardmode}}]]期间的[[{{tr|biome spread}}]]），{{tr|minimap}}上的区域也会相应被更新。
+
+此外，{{tr|players}}、友方[[{{tr|NPC}}]]（除了[[{{tr|Skeleton Merchant}}]]和[[{{tr|Old Man}}]]）、和 [[{{tr|Boss}}]] 会以它们头像图标的形式显示在{{tr|minimap}}上，当光标移到头像上时会显示其名字。这样可以轻松找到 {{tr|NPCs}}、追踪{{tr|multiplayer}}中的其他玩家、并有助于定位 {{tr|Bosses}} 并与其战斗。在 [[{{tr|PvP}}]]，中，只有在同一个[[{{tr|team}}]]的玩家才能在{{tr|minimap}}上看见彼此。
+
+{{eicons|1.3.0.1}}{{options/set|item|icons=no}}有一些其他东西也会在{{tr|minimap}}上以{{tr|icons}}显示：
+* {{item|world spawn point|image=Map Spawn.png}}。
+* 用[[{{tr|beds}}]]设置的{{item|spawn point|image=Map Bed.png}}。
+* {{item|Pylons|image=Map icon Forest Pylon.png}}。
+* 来自[[{{tr|Potion of Return}}]]的{{item|入口|image=Map Return Portal Entrance.png|nolink=yes}}和{{item|出口|image=Map Return Portal Exit.png|nolink=yes}}。
+* {{item|Golf Balls|size=20px|image=Golf Ball Map Icon.png}}。
+* {{item|Death|最近一次的{{tr|death}}位置|image=Map Death.png}}。{{options/reset|item}}
+
+{{tr|Minimap}}数据是和{{tr|character}}数据而非{{tr|world}}数据一起保存的。这意味着如果一个{{tr|character}}探索了{{tr|world}}，其他{{tr|character}}并不会自动在他们的{{tr|map}}中看到。{{tr|Minimap}}数据保存在 <code>%USERPROFILE%\Documents\My Games\Terraria\Players</code> 文件夹内以{{tr|character}}名称为名的子文件夹中。
+
+可以在[[{{tr|Settings}}#常规|{{tr|Settings}}]]屏幕中禁用{{tr|The minimap}}。
+
+== 模式 ==
+{{exclusive|desktop=y|tmodloader=y|section=y|nocat=y}}
+{{tr|The minimap}}有四种模式：画框、叠加、隐藏、和全屏。见[[#{{tr|Controls}}|{{tr|Controls}}]]章节获取和{{tr|minimap}}相关的按键绑定的详细信息。
+
+* [[File:Map Button Portrait.png|25px|link=]] '''画框模式：'''{{tr|The minimap}}显示在屏幕的右上角，如屏幕截图所示。在边框上的 + 和 – 按钮可以放大和缩小地图；= 按钮则返回到默认比例。
+
+* [[File:Map Button Overlay.png|25px|link=]] '''叠加模式：'''{{tr|The minimap}}以透明叠加的方式显示在整个游戏屏幕上。此模式下仍然会显示{{tr|map icons}}，{{tr|minimap}}也可以缩小或放大。
+
+* [[File:Map Button Hidden.png|25px|link=]] '''隐藏模式：'''禁用{{tr|The minimap}}显示。在{{tr|minimap}}禁用时所探索的区域依然会被测绘，重新打开{{tr|minimap}}后，会显示这些区域。
+
+* [[File:Map Button Full-Screen.png|25px|link=]] '''全屏模式：'''一副不透明的地图会覆盖整个游戏屏幕。这种模式允许玩家在不实际移动{{tr|character}}的情况下移动{{tr|map}}，可以研究当前的整个{{tr|map}}。{{tr|map}}后方会有根据玩家所在{{tr|biome}}决定的[[#全屏{{tr|map backgrounds}}|独特{{tr|backgrounds}}]]。
+** {{eicons|1.4.0.1}}当玩家双击/点击{{tr|the map}}时，会出现一个 [[File:Map Ping.gif|link=]] 地图标记来指出位置。它是纯视觉效果，会持续 15 秒{{source code ref|v=1.4.4.9|method=Terraria.Map.PingMapLayer.Draw}}并显示给所有查看地图的玩家。此功能在{{tr|singleplayer}}中可以用来追踪相对较近的某个重要地点，在{{tr|multiplayer}}中可以用来更好地和其他玩家沟通。可以同时触发多个标记，且没有冷却时间。
+
+<gallery class="center" widths="220px" heihgts="220px">
+File:Minimap Icons.png|{{tr|The inventory}}屏幕上的{{tr|map}}模式按钮。
+File:Overlaying Map.png|叠加{{tr|map}}。
+File:Fullscreen Map.png|全屏{{tr|map}}。
+File:Map Ping (demo).gif|{{tr|minimap}}上的地图标记。
+</gallery>
+{{-}}
+
+== 控制 ==
+; {{desktop}}
+* 在画框、叠加、和全屏模式下，可以用键盘来控制{{tr|minimap}}。这里列出的控制都是默认值，可以在选项菜单中更改。
+* 小键盘上的{{key|+}}和{{key|–}}键可以缩放{{tr|the minimap}}，在全屏模式下也可以用鼠标滚轮。没有按键可以恢复默认比例，只能通过按下画框模式边框上的 '''=''' 按钮来恢复默认比例。
+* {{key|Page Up}}和{{key|Page Down}}键可以增加或减少{{tr|minimap}}的透明度。在全屏模式下不能这样做。在画框模式中，这只会影响地图本身，而不影响边框。
+* {{key|minimap}}键可以让地图在画框模式、叠加模式、和隐藏模式之间切换。
+* {{key|map}} 键会显示全屏地图。{{tr|The map}}可以通过按住 {{key|use}} 并拖动，或者使用 {{key|up}} {{key|down}} {{key|left}} {{key|right}} 按键的方式来移动。按下 {{key|map}} 按键或 {{key|inventory}} 按键，或者点击左下角的{{tr|map icon}}可以关闭全屏{{tr|map}}。 
+; {{console}}
+* 按下 {{key|xb-back}}（Xbox）、触摸板（PlayStation）、或 [[File:Switch Minus.png|30x30px|link=]]（Switch）时会显示{{tr|The minimap}}。在 PS4 触摸板或 Switch 触屏上捏合手指也可以打开它。
+; {{mobile}}
+* 默认开启画框模式的{{tr|minimap}}。可以通过 [[File:Minimap Button Default.png|20px|link=]] 画框模式{{tr|minimap}}按钮来切换开关。
+* 全屏{{tr|map}}可以通过 [[File:Settings Map.png|20px|link=]] 全屏{{tr|map}}按钮来切换开关。可以通过捏合或张开手指，或者屏幕下方的缩放按钮来放大和缩小{{tr|map}}。
+
+== {{mobile version|short}} 1.3 之前的{{tr|Minimap}} ==
+{{historical content|section=y}}
+
+游戏中仅存在全屏模式的{{tr|minimap}}。可以通过捏合手指来打开它。
+
+在{{tr|minimap}}上，{{tr|player}}{{tr|character}}、其他玩家、所有友方 [[{{tr|NPCs}}]] 会显示为该实体的头像，[[{{tr|Old Man}}]]除外。点击{{tr|player}}/{{tr|NPC}} 的头像{{tr|icon}}会显示其名字。
+
+每个{{tr|enemy and the Old Man}}都会显示为一个 [[File:Enemy icon.png|16px|link=]] {{tr|enemy icon}}（白色点）。{{tr|Worm}}类{{tr|enemies}}会显示为许多个略微大些的以线状排列的{{tr|enemy icon}}，因为每个{{tr|segment}}都被视为独立的{{tr|enemy}}。
+
+{{tr|Bosses}}会显示为 [[File:3DS Boss Icon.png|link=]] 较大的{{tr|skull icon}}，下列 {{tr|boss}} 除外：[[{{tr|Eater of Worlds}}]]显示为很多个{{tr|enemy icon}}；[[{{tr|The Destroyer}}]]显示为很多{{tr|enemy icon}}，其头部显示为{{tr|skull icon}}。
+
+在{{tr|singleplayer}}下，如果捏合手指但维持触碰屏幕，游戏将不会自动暂停，{{tr|enemies}}（及其{{tr|minimap}}上的{{tr|icons}}）仍然能够移动。
+
+* 若任何{{tr|player}}在{{tr|minimap}}打开的时候被攻击，屏幕上未绘制在{{tr|minimap}}内的部分会有红色闪烁。
+
+== 界面样式 ==
+可以打开{{tr|settings}}下的[[{{tr|Settings}}#界面|界面]]菜单来更改画框模式{{tr|minimap}}的边框（{{icon|mobile}} 和画框模式{{tr|minimap}}按钮）的样式。玩家可以在九个不同的装饰性样式中选择一种：{{comma/start}}{{#af_foreach:{{#af_list: Default | Valkyrie | Retro | Leaf | TwigLeaf | StoneGold | Sticks | Remix | Golden}}
+||mapstyle|{{comma/item|{{gameText|UI.MinimapFrame_{{{mapstyle}}}}}}}}}{{comma/end}}。
+
+也可以用界面菜单来更改{{tr|Health and mana}}条样式，但只有 3 种选项：{{gameText|UI.HealthManaStyle_Default}}、{{gameText|UI.HealthManaStyle_New}}、和{{gameText|UI.HealthManaStyle_HorizontalBars}}。
+
+== 图库 ==
+=== {{tr|Minimap}}边框{{eicons|1.4.0.1}} ===
+<!--{{#af_foreach:{{#af_list: Default | Valkyrie | Retro | Leaf | TwigLeaf | StoneGold | Sticks | Remix | Golden}}
+||mapstyle|<nowiki>File:Minimap Frame </nowiki>{{{mapstyle}}}<nowiki>.png|{{gameText|UI.MinimapFrame_</nowiki>{{{mapstyle}}}<nowiki>}}</nowiki><br/>}}
+--><gallery>
+File:Minimap Frame Default.png|{{gameText|UI.MinimapFrame_Default}}
+File:Minimap Frame Valkyrie.png|{{gameText|UI.MinimapFrame_Valkyrie}}
+File:Minimap Frame Retro.png|{{gameText|UI.MinimapFrame_Retro}}
+File:Minimap Frame Leaf.png|{{gameText|UI.MinimapFrame_Leaf}}
+File:Minimap Frame TwigLeaf.png|{{gameText|UI.MinimapFrame_TwigLeaf}}
+File:Minimap Frame StoneGold.png|{{gameText|UI.MinimapFrame_StoneGold}}
+File:Minimap Frame Sticks.png|{{gameText|UI.MinimapFrame_Sticks}}
+File:Minimap Frame Remix.png|{{gameText|UI.MinimapFrame_Remix}}
+File:Minimap Frame Golden.png|{{gameText|UI.MinimapFrame_Golden}}
+</gallery>
+
+=== {{tr|Minimap}}按钮{{icon|mobile}} ===
+<!--{{#af_foreach:{{#af_list: Default | Valkyrie | Retro | Leaf | TwigLeaf | StoneGold | Sticks | Remix | Golden}}
+||mapstyle|<nowiki>File:Minimap Button </nowiki>{{{mapstyle}}}<nowiki>.png|{{gameText|UI.MinimapFrame_</nowiki>{{{mapstyle}}}<nowiki>}}</nowiki><br/>}}
+--><gallery widths=48px heights=56px>
+File:Minimap Button Default.png|{{gameText|UI.MinimapFrame_Default}}
+File:Minimap Button Valkyrie.png|{{gameText|UI.MinimapFrame_Valkyrie}}
+File:Minimap Button Retro.png|{{gameText|UI.MinimapFrame_Retro}}
+File:Minimap Button Leaf.png|{{gameText|UI.MinimapFrame_Leaf}}
+File:Minimap Button TwigLeaf.png|{{gameText|UI.MinimapFrame_TwigLeaf}}
+File:Minimap Button StoneGold.png|{{gameText|UI.MinimapFrame_StoneGold}}
+File:Minimap Button Sticks.png|{{gameText|UI.MinimapFrame_Sticks}}
+File:Minimap Button Remix.png|{{gameText|UI.MinimapFrame_Remix}}
+File:Minimap Button Golden.png|{{gameText|UI.MinimapFrame_Golden}}
+</gallery>
+
+=== {{tr|Health and Mana}}条样式 ===
+{{transclude|{{tr|Health}}#{{tr{{!}}Health and mana}}条样式|clr=y}}
+
+=== 全屏{{tr|map backgrounds}} ===
+<gallery>
+File:Map Background Forest.png|[[{{tr|Forest}}]]
+File:Map Background Underground.png|[[{{tr|Underground}}]]
+File:Map Background The Underworld.png|[[{{tr|The Underworld}}]]
+File:Map Background Ice.png|[[{{tr|Ice biome}}]]
+File:Map Background Dungeon.png|[[{{tr|Dungeon}}]]
+File:Map Background The Corruption.png|[[{{tr|The Corruption}}]]
+File:Map Background The Crimson.png|[[{{tr|The Crimson}}]]
+File:Map Background The Hallow.png|[[{{tr|The Hallow}}]]
+File:Map Background Jungle.png|[[{{tr|Jungle}}]]
+File:Map Background Desert.png|[[{{tr|Desert}}]]
+File:Map Background Ocean.png|[[{{tr|Ocean}}]]
+File:Map Background Snow.png|[[{{tr|Snow}}]]
+File:Map Background Underground Jungle.png|[[{{tr|Underground Jungle}}]]
+File:Map Background Lihzahrd Temple.png|[[{{tr|Lihzahrd Temple}}]]
+File:Map Background Underground Desert.png|[[{{tr|Underground Desert}}]]
+File:Map Background Hive.png|[[{{tr|Bee Hive (biome)}}|{{tr|Bee Hive}}]]
+File:Map Background Granite Cave.png|[[{{tr|Granite Cave}}]] {{eicons|1.4.0.1}}
+File:Map Background Marble Cave.png|[[{{tr|Marble Cave}}]] {{eicons|1.4.0.1}}
+File:Map Background Spider Nest.png|[[{{tr|Spider Nest}}]] {{eicons|1.4.0.1}}
+File:Map Background Glowing Mushroom.png|[[{{tr|Glowing Mushroom biome}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Glowing Mushroom.png|[[{{tr|Glowing Mushroom biome}}|{{tr|Underground Glowing Mushroom biome}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Hallow.png|[[{{tr|Underground Hallow}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Corruption.png|[[{{tr|Underground Corruption}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Crimson.png|[[{{tr|Underground Crimson}}]] {{eicons|1.4.0.1}}
+File:Map Background Blood Moon.png|[[{{tr|Blood Moon}}]] {{eicons|1.4.0.1}}
+File:Map Background Graveyard.png|[[{{tr|Graveyard}}]] {{eicons|1.4.0.1}}
+File:Map Background Nebula Pillar.png|[[{{tr|Nebula Pillar}}]] {{eicons|1.4.0.1}}（不作为背景显示）
+File:Map Background Solar Pillar.png|[[{{tr|Solar Pillar}}]] {{eicons|1.4.0.1}}（不作为背景显示）
+File:Map Background Vortex Pillar.png|[[{{tr|Vortex Pillar}}]] {{eicons|1.4.0.1}}（不作为背景显示）
+File:Map Background Stardust Pillar.png|[[{{tr|Stardust Pillar}}]] {{eicons|1.4.0.1}}（不作为背景显示）
+File:Map Background Cavern.png|[[{{tr|Caverns}}]] {{eicons|1.4.0.1}}
+File:Map Background Space.png|[[{{tr|Space}}]] {{eicons|1.4.0.1}}
+File:Map Background Corrupt Ice.png|[[{{tr|Ice biome}}|{{tr|Corrupt Ice biome}}]] {{eicons|1.4.0.1}}
+File:Map Background Crimson Ice.png|[[{{tr|Ice biome}}|{{tr|Crimson Ice biome}}]] {{eicons|1.4.0.1}}
+File:Map Background Hallowed Ice.png|[[{{tr|Ice biome}}|{{tr|Hallowed Ice biome}}]] {{eicons|1.4.0.1}}
+File:Map Background Corrupt Desert.png|[[{{tr|Corrupt Desert}}]] {{eicons|1.4.0.1}}
+File:Map Background Crimson Desert.png|[[{{tr|Crimson Desert}}]] {{eicons|1.4.0.1}}
+File:Map Background Hallowed Desert.png|[[{{tr|Hallowed Desert}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Corrupt Desert.png|[[{{tr|Underground Desert}}|{{tr|Underground Corrupt Desert}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Crimson Desert.png|[[{{tr|Underground Desert}}|{{tr|Underground Crimson Desert}}]] {{eicons|1.4.0.1}}
+File:Map Background Underground Hallowed Desert.png|[[{{tr|Underground Desert}}|{{tr|Underground Hallowed Desert}}]] {{eicons|1.4.0.1}}
+</gallery>
+
+== 备注 ==
+* 用于 [[1.2]] 更新之前生成的世界时，{{tr|minimap}}只会显示在 1.2 或之后版本下玩的时候访问过的区域。
+* 如果启用了[[{{tr|Autopause}}]]，游戏在查看全屏地图时会取消暂停。
+* [[{{tr|Paint}}]]和[[{{tr|Coating}}]]会显示在地图上，允许玩家标记地图的各个部分（假设玩家使用了足够多足够显眼颜色的{{tr|paint}}）。
+* [[{{tr|Thunderstorm}}]]期间，{{tr|the minimap background}}会变得黑暗，偶尔还会有闪光，和外面世界的闪电同步。
+* 当{{tr|character}}移动到 Steam 云时，{{tr|minimap}}文件可能会丢失，使得{{tr|character}}在{{tr|worlds}}内的{{tr|minimap}}重置为初始状态。
+* 在{{old-gen console version}}中，{{tr|the minimap}}会处于已照亮状态，可以展示出距离玩家很远的东西。
+
+== 小贴士 ==
+* 叠加模式的{{tr|minimap}}可以放大到 1:1 比例，这对在{{tr|night}}或洞穴中的可见性有所帮助；或者可以缩小以看到屏幕外的 [[{{tr|bosses}}]] 的位置（甚至还能缩小到足以看到整个{{tr|world}}）。
+* 如果玩家没有任何{{tr|light sources}}，可以用放大后的叠加模式来查看要去的地方。注意{{tr|enemies}}不会显示在{{tr|minimap}}上。
+
+== 历史 ==
+{{history|Desktop 1.4.0.4|修复了{{tr|player}}{{tr|map}}边框无法正确调整边框颜色的问题。}}
+{{history|Desktop 1.4.0.1|
+** 添加了 27 种新的全屏{{tr|map backgrounds}}和 8 种新的{{tr|minimap}}边框。
+** {{tr|Players}}现在可以在{{tr|minimap}}的一部分上双击来创建地图标记以标记地点。}}
+{{history|Desktop 1.3.0.4|修正了导致地图变黑的问题以及一些与此相关的问题。}}
+{{history|Desktop 1.3.0.1|现在会显示 {{tr|boss}} 图标。}}
+{{history|Desktop 1.2.4|
+** 修复了一处可能导致{{tr|Minimap}}使得游戏崩溃的 {{tr|bug}}。
+** 修复了{{tr|buff tooltips}}在{{tr|map}}界面上依然可见的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3.1|
+** 修正了导致旧版本{{tr|maps}}被清空的 {{tr|bug}}。
+** 修正在某些{{tr|worlds}}中{{tr|maps}}未被保存的问题。
+** 修正了刷了{{tr|paint}}的{{tr|tiles}}未正确绘制在{{tr|map}}上的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|
+**当鼠标被移动到到{{tr|map}}上的黑暗{{tr|tiles}}上时，不再会显示它们是什么。
+** {{tr|map}}绘制更改为随着时间推移进行，而非在绘制时锁定机器。
+** {{tr|map}}绘制速度更快，保存的文件缩小了 60%。
+** 当全屏{{tr|map}}打开时，玩家不再能与{{tr|items}}互动。
+** 修复了一个会导致{{tr|Map}}重复绘制已绘制区域的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1.2|在 {{tr|PVP}} 中玩家不再能在{{tr|map}}上看到敌方玩家。}}
+{{history|Desktop 1.2.1|{{tr|Minimap}}现在绘制在{{tr|enemy}}生命条之上。}}
+{{history|Desktop 1.2.0.2|略为减少了大地图中地图所需的内存。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Enemies}}不再在{{tr|map}}上显示为白色点。}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Minimap}}

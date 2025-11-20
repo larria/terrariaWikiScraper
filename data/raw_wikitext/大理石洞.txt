@@ -1,0 +1,100 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerMarble.png|center]]
+
+'''{{tr|Marble Cave}}'''是一种出现在[[{{tr|Cavern}}]][[{{tr|layers}}|层]]的[[{{tr|mini-biome}}]]。它完全由[[{{tr|Marble Block}}]]和[[{{tr|Marble Wall}}]]构成，并且包含若干拥有此区域所独有设计的[[{{tr|Pot}}]]。它通常生成为长而奇特的水平通道，但其形状可能会被重叠的洞穴系统所影响。{{tr|Marble Caves}}中还会生成恰当主题的[[{{tr|Underground Cabin}}]]，这些小屋用[[{{tr|Smooth Marble Block}}]]建造，并配有[[{{tr|Marble Chest}}]]，{{tr|chest}}内有常规{{tr|underground}}宝藏。
+
+{{tr|Marble Caves}}可视为是游戏中最危险的区域之一，即使是对游戏终极角色而言也是如此。{{tr|Hoplites}}是对[[{{tr|pre-Hardmode}}]]的角色造成可观伤害的远程{{tr|enemies}}，而[[{{tr|Hardmode}}]]{{tr|enemy}}[[{{tr|Medusa}}]]会造成整个游戏中[[{{tr|Stoned}}]]，这是整个游戏中最致命的{{tr|debuffs}}之一，能够在很远的距离上就让玩家完全定住，造成严重膨胀的[[{{tr|fall damage}}]]，如果他们没死，在接下来的几秒钟内会让他们变得容易受到伤害。在{{tr|a Marble Cave}}附近时，即使是精心准备的角色也要小心，因为即使只是靠近，也会导致这些独特的{{tr|enemies}}在普通的{{tr|underground}}空间中生成。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hoplite}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Medusa}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Hoplite}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Gladius}}<!--
+			-->|{{item|Javelin}}<!--
+			-->|{{item|Gladiator Helmet}}<!--
+			-->|{{item|Gladiator Breastplate}}<!--
+			-->|{{item|Gladiator Leggings}}<!--
+			-->|{{item|Hook}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Medusa}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Medusa Head}}<!--
+			-->|{{item|Pocket Mirror}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Hoplite}}]]和[[{{tr|Medusa}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Pizza}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Marble Block}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 由于它只是一个{{tr|mini-biome}}，通常的 [[{{tr|NPC spawning}}]]规则并不适用于{{tr|the Marble Cave}}。取而代之的是，{{tr|Hoplites and Medusas}}需要在玩家的 [[{{tr|NPC spawning|link=y}}#基础|{{tr|spawn range}}]]中有一块{{tr|Marble Block}}让它们在其上生成；或者是距离玩家 30 到60 格之间的{{tr|Marble Block}}。只要单块{{tr|Marble Block}}就够了（但{{tr|Marble Blocks}}数量增加会提高几率），[[{{tr|Marble Wall}}]]并无任何影响。但是，如果玩家站在{{tr|Marble Block}}上，{{tr|Hoplites and Medusas}}的生成几率就会得到显著提高。在这种情况下，附近并不要求有更多{{tr|Marble Blocks}}。{{source code ref|v=1.3.5.3|method=Terraria.NPC.SpawnNPC}}
+* 如果它生成在足够深的深度上，洞穴可能会被[[{{tr|lava}}]]淹没。这可能是双刃剑：{{tr|lava}}可以处理掉{{tr|hoplites and Medusas}}之类致命{{tr|enemy}}，但又很容易落入{{tr|the lava}}本身中。用{{tr|lava}}填充突起之间的空隙可以成为一种有效的防御，如果处理得当，可以完全消除威胁。
+* 在 {{eil|drunk world}} 中，{{tr|Marble Caves}}的生成结构和{{tr|Granite Caves}}互换了。
+* 在 {{eil|The Constant}} 中，{{tr|Marble Caves}}可以在{{tr|surface}}生成。
+
+== 花絮 ==
+*{{tr|The pot}}的设计、{{tr|marble}}和{{tr|enemies}}的外观都参考的是{{维基百科|lang=en|ancient Greece|古希腊}}和{{维基百科|lang=en|ancient Rome|古罗马}}。
+
+== 另见 ==
+* [[{{tr|Granite Cave}}]]
+* [[{{tr|Underground}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.3|现在在 [[{{tr|The Constant}}]] 种子世界中可以在地面以上生成。}}
+{{history|Desktop 1.4.0.1|
+** 添加了多种来自{{tr|Marble Cave enemies}}的掉落：
+*** [[{{tr|Hoplite}}|{{tr|Hoplites}}]]有 2.5% 几率掉落新的[[{{tr|Gladius}}]][[{{tr|shortsword}}]]、2% 几率掉落新的[[{{tr|Pizza}}]][[{{tr|food}}]]{{tr|item}}。
+*** [[{{tr|Medusa}}]]现在有 2% 几率掉落{{tr|Pizza}}。
+** 添加了新的{{tr|Marble}}碎石堆。
+** 修正了世界生成过程中的一个问题，即生成在[[{{tr|Dungeon}}]]下面的[[{{tr|Granite Cave}}|{{tr|Granite}}]]和{{tr|marble biomes}}会让一些[[{{tr|Dungeon Bricks}}]]被锤击成在{{tr|the Dungeon}}生成之前相同的形状。
+** 改进了[[{{tr|Marble Wall}}|{{tr|Marble Walls}}]]的生成方式，这样它们就不会再生成为如此明显的“方”形。}}
+{{history|Desktop 1.3.3|[[{{tr|Medusa}}]]现在会掉落[[{{tr|Pocket Mirror}}]]。}}
+{{history|Desktop 1.3.1|{{tr|Medusas}}现在只会出现在{{tr|Hardmode}}中。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.17|[[{{tr|Medusa}}]]现在会掉落[[{{tr|Pocket Mirror}}]]。}}
+{{history|Console 1.0.1372.5|[[{{tr|Medusa}}]]现在只在[[{{tr|Hardmode}}]]中生成。}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.1096.2|[[{{tr|Medusa}}]]现在会掉落[[{{tr|Pocket Mirror}}]]。}}
+{{history|Switch 1.0.895.9|[[{{tr|Medusa}}]]现在只在[[{{tr|Hardmode}}]]中生成。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7.5|{{tr|Introduced.}}（{{icon|amazon}}）}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}（{{icon|ios}} {{icon|google play}}）}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{language info|en=Marble Cave}}

@@ -1,0 +1,77 @@
+{{npc infobox
+| environment = Jungle Temple
+| auto = 198
+| image = Lihzahrd.gif
+| type = Enemy
+| damage =
+| defense =
+| life =
+| knockback =
+| shownpcid = no
+| cargo = no | cargodrops = yes
+| Lihzahrd Power Cell|1|2%
+| Lizard Egg|1|0.1%
+| Solar Tablet Fragment|1–2|14.29%
+| sound1 = Zombie 36.wav, Zombie 37.wav
+| soundcaption1 = 空闲
+}}
+
+'''{{tr|Lihzahrds}}'''是一种出现在[[{{tr|Jungle Temple}}]]中的[[{{tr|enemies}}]]。它们最初会像[[{{tr|Fighter AI}}]] {{tr|enemies}}一样行动。当受到{{tr|damage}}导致{{tr|health}}低于 55% ({{#expr:floor({{npcinfo|198|hp}}*0.55)}} / {{expert|{{#expr:floor({{npcinfo|198|hp|expert}}*0.55)}}}} / {{master|{{#expr:floor({{npcinfo|198|hp|master}}*0.55)}}}})时，它们会进入第二形态，像真正的蜥蜴一样四脚爬行紧跟{{tr|player}}。在这种状态下，它们移动更快，{{tr|damage}}和{{tr|defense}}更高，而且{{tr|immune}}[[{{tr|knockback}}]]，但{{tr|jump height}}会降低。
+
+== 变体 ==
+{{npc infobox/tablestart|note=no}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist}}
+{| class="terraria align-center nowrap cellborder item-noborder"
+|-
+! [[NPC ID]]
+! colspan=2 | 种类
+! {{tr|Health}}
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+{{npc infobox
+| auto = 198
+| image = Lihzahrd.gif
+| environment = Jungle Temple
+}}
+{{npc infobox
+| auto = 199
+| image = Lihzahrd (crawler).gif
+| environment = Jungle Temple
+| life = {{modes|{{#expr:floor({{npcinfo|198|hp}}*0.55)}}|{{#expr:floor({{npcinfo|198|hp|expert}}*0.55)}}|{{#expr:floor({{npcinfo|198|hp|master}}*0.55)}}}}/{{modes|{{npcinfo|198|hp}}|{{npcinfo|198|hp|expert}}|{{npcinfo|198|hp|master}}}}
+}}
+|}{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+
+== {{tr|Notes}} ==
+* {{tr|Jungle Temple}}只有{{tr|player}}打败[[{{tr|Plantera}}]]后才会开启（尽管在此之前有一些非常规的方法来进入{{tr|Jungle Temple}}；参见[[Guide:向前跳进#丛林神庙]]），但如果{{tr|player}}在[[{{tr|Pre-Hardmode}}]]站在{{tr|Temple}}入口处{{tr|naturally generated}}[[{{tr|unsafe wall}}|不安全的]][[{{tr|Lihzahrd Brick Wall}}]]前方，同样会生成{{tr|Lihzahrds}}和[[{{tr|Flying Snake}}]]。
+* 如果被迫通过 2 格高的空间，它会四肢着地几秒钟然后远离{{tr|player}}。
+* 只要{{tr|player}}站在一块不安全的{{tr|Lihzahrd Brick Wall}}前（尤其当该{{tr|Background Wall}}在{{tr|player}}占据空间的中右侧的后方时），{{tr|Lihzahrds}}将会{{tr|spawn}}在任何{{tr|Lihzahrd Brick}}上。
+* 如果{{tr|Lihzahrds}}在靠近墙时进入第二形态，它们可以穿墙而过。
+
+== {{tr|Trivia}} ==
+{{float file box|[[File:Lihzahrd (transformation).gif]]|一只{{tr|Lihzahrds}}正在转变为第二形态。|width=100px}}
+* {{tr|Lihzahrds}}的英文名称 Lihzahrd 的发音与 ''{{维基百科|lizard|t=蜥蜴}}'' 相同。
+* {{tr|Lihzahrds}}看上去很像 {{维基百科|Silurian (Doctor Who)|Silurians}}，来自科幻电视剧 {{维基百科|Doctor Who|b=y}} 的爬行类人形生物。
+* [[{{tr|Witch Doctor}}]]也是一只{{tr|Lihzahrds}}，<ref>{{forums thread|pc-1-3-2-changelog.46816/page-14#post-1042710}}</ref>因为他也有蜥蜴般的绿皮肤和尾巴。这在他的[[{{tr|party}}]]话语中尤为明显：“{{gameText|WitchDoctorSpecialText.Party}}”（"I wanted to see how ''your kind'' celebrate."）。这表明他并非人类。
+** 虽然这使得他成为《[[{{tr|Terraria}}]]》中唯一没有敌意的{{tr|Lihzahrds}}，但在{{eil|credits}}的过场动画中可以看到他与两个{{tr|Lihzahrds}}成为朋友。
+{{bestiary}}
+
+== {{tr|History}} ==
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|可掉落[[{{tr|Solar Tablet Fragment}}]]。}}
+{{history|Desktop 1.2.4|[[{{tr|Lihzahrd Power Cell}}]]掉落率降低至 2%。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Lihzahrd}}

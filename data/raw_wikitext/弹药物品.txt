@@ -1,0 +1,120 @@
+'''{{tr|Ammunition items}}'''是由[[{{tr|ranged weapons}}]]发射的{{tr|Consumable items}}。要想用需要{{tr|ammunition}}的武器开火，玩家的[[{{tr|inventory}}]]中必须有兼容的{{tr|ammunition}}种类。{{tr|ammunition}}会从按如下顺序检查得到的第一个合适的{{tr|ammunition}}堆叠中消耗：{{tr|inventory}}中四个专用的{{tr|ammo}}栏位，从上到下；随后是主{{tr|inventory}}，从最上一排（{{tr|hotbar}}）到最下一排，同一排内则从左向右。
+
+弹药的[[{{tr|damage}}]]、[[{{tr|velocity}}]]和[[{{tr|knockback}}]]会合并至发射该弹药的{{tr|weapon}}的基础数值中。{{tr|damage}}加成也会作用于[[{{tr|bullets}}]]和[[{{tr|arrows}}]]上。部分[[{{tr|weapons}}]]、[[{{tr|armor}}]]、[[{{tr|accessories}}]]和[[{{tr|buffs}}]]提供每次射击时节省{{tr|ammo}}的几率，使{{tr|weapon}}能够正常发射弹药攻击却不消耗{{tr|ammunition}}。如果有多个此类{{tr|items}}和/或{{tr|buffs}}同时激活，它们各自的节省{{tr|ammo}}的几率会叠加在一起。
+
+== 照明弹 ==
+[[{{tr|Flares}}]]是用[[{{tr|Flare Gun}}]]发射的。
+{{transclude|{{tr|Flares}}#{{tr|Types}}}}
+
+== 子弹 ==
+[[{{tr|Bullets}}]]是用[[{{tr|guns}}]]发射的。
+{{transclude|{{tr|Bullets}}#{{tr|Types}}}}
+
+== 箭 ==
+[[{{tr|Arrows}}]]是用[[{{tr|bows}}]]和[[{{tr|repeaters}}]]发射的。
+{{transclude|{{tr|Arrows}}#{{tr|Types}}}}
+
+== 火箭 ==
+[[{{tr|Rockets}}]]是用[[{{tr|launchers}}]]发射的。
+{{transclude|{{tr|Rockets}}#{{tr|Types}}}}
+
+== 飞镖 ==
+[[{{tr|Darts}}]]由[[{{tr|Blowpipe}}]]、[[{{tr|Blowgun}}]]、{{eil|Dart Pistol}}、和{{eil|Dart Rifle}}发射。这些{{tr|weapons}}还都能发射[[{{tr|Seed|link=y}}|{{tr|Seed}}]]。
+{{transclude|{{tr|Darts}}#{{tr|Types}}}}
+
+== 其他类型 ==
+{| class="terraria"
+! [[{{tr|Ammo ID}}]] !! {{tr|Ammo Type}} !! [[{{tr|Shroomite armor}}]]{{tr|Bonus Type}} !! {{tr|Ammo}}变体 !! 使用该{{tr|ammo}}的{{tr|weapon}}
+|-
+| 15 || {{item|Fallen Star}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Fallen Star}}]] || [[{{tr|Star Cannon}}]]、[[{{tr|Super Star Shooter}}]]
+|-
+| 23 || {{item|Gel}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Gel}}]] || [[{{tr|Flamethrower}}]]、[[{{tr|Elf Melter}}]]
+|-
+| 42 || {{item|Sand}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Sand Block}}]]、[[{{tr|Ebonsand Block}}]]、[[{{tr|Pearlsand Block}}]]、[[{{tr|Crimsand Block}}]] || [[{{tr|Sandgun}}]]
+|-
+| 51 || {{item|Seed}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Seed}}]]、[[{{tr|Poison Dart}}]]、{{eil|Cursed Dart}}、{{eil|Ichor Dart}}、{{eil|Crystal Dart}} || [[{{tr|Blowpipe}}]]、[[{{tr|Blowgun}}]]、{{eil|Dart Pistol}}、{{eil|Dart Rifle}}
+|-
+| 71 || {{item|Coin|image=Copper Coin.png/Silver Coin.png/Gold Coin.png/Platinum Coin.png}} || {{tr|None}} || [[{{tr|Copper Coin}}]]、[[{{tr|Silver Coin}}]]、[[{{tr|Gold Coin}}]]、[[{{tr|Platinum Coin}}]] || [[{{tr|Coin Gun}}]]
+|-
+| 246 || {{item|Stynger Bolt}} || 特定 || [[{{tr|Stynger Bolt}}]] || [[{{tr|Stynger}}]]
+|-
+| 311 || {{item|Candy Corn}} || {{tr|Bullet}} || [[{{tr|Candy Corn}}]] || [[{{tr|Candy Corn Rifle}}]]
+|-
+| 312 || {{item|Explosive Jack 'O Lantern}} || 特定 || [[{{tr|Explosive Jack 'O Lantern}}]] || [[{{tr|Jack 'O Lantern Launcher}}]]
+|-
+| 323 || {{item|Stake}} || {{tr|Arrow}} || [[{{tr|Stake}}]] || [[{{tr|Stake Launcher}}]]
+|-
+| 353 || {{item|Ale}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Ale}}]] || {{eil|Ale Tosser}}
+|-
+| 949 || {{item|Snowball}} || {{eicons|1.4.4}}特定/{{eicons|1.4.4|invert=y}}{{tr|None}} || [[{{tr|Snowball}}]] || [[{{tr|Snowball Cannon}}]]
+|-
+| 3108 || {{item|Nail}} || 特定 || {{eil|Nail}} || {{eil|Nail Gun}}
+|}
+
+== 工具所用的弹药 ==
+=== 溶液 ===
+[[{{tr|Solutions}}]]由[[{{tr|Clentaminator}}]]或{{eil|Terraformer}}发射。它们可以改变或移除[[{{tr|biome}}]]。
+{{transclude|{{tr|Solutions}}#{{tr|Types}}}}
+
+=== 鱼饵 ===
+[[{{tr|Bait}}]]由[[{{tr|fishing pole}}]]使用，用来钓[[{{tr|Fishing}}#渔获|{{tr|fish}}]]。
+{{transclude|{{tr|Bait}}#{{tr|Types}}}}
+
+=== 电线 ===
+{{tr|wire}}用于将[[{{tr|mechanisms}}]]与{{tr|triggers}}连接在一起，并可以用多种工具放置或移除。放置的{{tr|wire}}将取决于所用的[[{{tr|Wrench}}]]的颜色，但在掉落或放置在{{tr|inventory}}或{{tr|ammo}}栏内时总是呈现为红色。''参阅[[{{tr|Wire}}]]获取更多信息和完整的可用工具列表。''
+
+{| class="terraria lined"
+! width="180" |放置的{{tr|wire}}的{{tr|color}} !! width="250" | {{tr|Tool}}
+|-
+|[[File:Red Wire toggle (mobile).png|link=]] {{tr|Red}}|| 由{{item|Red Wrench}}放置
+|-
+|[[File:Green Wire toggle (mobile).png|link=]] {{tr|Green}}|| 由{{item|Green Wrench}}放置
+|-
+|[[File:Blue Wire toggle (mobile).png|link=]] {{tr|Blue}}|| 由{{item|Blue Wrench}}放置
+|-
+|[[File:Yellow Wire toggle (mobile).png|link=]] {{tr|Yellow}}|| 由{{item|Yellow Wrench}}放置
+|-
+|[[File:Mechanical Display toggle (mobile).png|link=]] 所有{{tr|colors}}|| 由{{item|Multicolor Wrench}}和{{item|The Grand Design}}放置与移除
+|}
+
+=== 制动器 ===
+{{tr|Actuator}}需要用{{tr|Wire}}连接以生效，可以用多种工具放置、激活或移除。激活时，{{tr|Actuator}}所在的{{tr|tile}}会在激活与非激活状态切换，这会让任何{{tr|block}}都能够像[[{{tr|Active Stone Block}}|通电或{{tr|inactive stone blocks}}]]一样切换。''参阅[[{{tr|Actuator}}]]获取更多信息。''
+
+{| class="terraria lined"
+! width="180" |工具 !! width="250" | 交互
+|-
+| {{item|Wire Cutter}} || 可以移除{{tr|Actuator}}。
+|-
+| {{item|The Grand Design}} || 可以放置或移除{{tr|Actuator}}。
+|-
+| {{item|Presserator}} || 如果{{tr|player}}拥有{{tr|Actuator}}，{{tr|Presserator}}会自动将它们安装到放置的物体上。
+|-
+| {{item|Actuation Rod}} || 可以改变{{tr|Actuator}}的激活状态。
+|}
+
+== 弹药节约 ==
+{{main|{{tr|Ammo conservation}}}}
+
+默认情况下，每个被发射的{{tr|ammo}}都会被消耗，即将被发射的{{tr|ammo}}从{{tr|player}}的{{tr|ammo slot}}以及{{tr|main inventory}}中移除。不过，有特定的{{tr|item}}或{{tr|buff}}会增加几率防止消耗{{tr|ammo item}}，从而能偶尔节约{{tr|ammo}}。
+
+== 小贴士 ==
+* 以下{{tr|ammo items}}不会自动放入[[{{tr|ammo slot}}]]。如果玩家的{{tr|inventory}}空间不足而依然有{{tr|ammo slots}}空余，可以将这些{{tr|items}}放入其中以节省空间。
+{{flexstart}}
+{{itemlist|width=13em|class=terraria
+|{{item|Fallen Star}}
+|{{item|Ale}}
+|{{item|Gel}}
+|{{item|Actuator}}
+|{{tr|Any Bait}}
+}}
+{{flexend}}
+
+* {{tr|Coins}}和{{tr|Sand Blocks}}为例外，它们不可放在弹药栏，但钱币可以放在自己的栏位。
+
+{{Master Template Consumables
+| show-ammo = yes
+}}
+
+[[Category:{{tr|Ammunition}}{{tr|items}}| ]]
+
+{{language info|en=Ammunition items}}

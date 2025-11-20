@@ -1,0 +1,33 @@
+
+{{exclusive|1.4.0.1}}
+{{naturalgen only}}
+{{item infobox
+| type = Background object
+| width = 3
+| height = 2
+| idtile = 488
+| listcat = Naturally generated
+}}
+[[File:Fallen Log in forest.png|thumb|400px|right|{{tr|Forest}}中的{{tr|A Fallen Log}}。]]
+
+'''{{tr|Fallen Logs}}'''是自然生成的[[{{tr|background object}}]]，会在[[{{tr|Forest}}]][[{{tr|biome}}]]的[[{{tr|Surface}}]]出现。在[[{{tr|night}}]]，偶尔会有一个或更多[[{{tr|Fairies}}]]会在{{tr|Fallen Log}}处生成。[[{{tr|Fairies}}]]也会在[[{{tr|Underground}}]]自然生成，但是前提是世界上至少有一个{{tr|Fallen Logs}}存在。摧毁{{tr|world}}上所有的{{tr|Fallen Logs}}会永远阻止{{tr|Fairies}}自然生成，在[[{{tr|night}}]]期间[[{{tr|shaking}}]][[{{tr|Hallow Tree}}]]将是获得{{tr|Fairies}}的唯一方式。
+
+和大部分{{tr|background items}}不同，它只能被[[{{tr|Axe}}]]摧毁。它们会在下方的[[{{tr|grass}}]]被转化为[[{{tr|Corruption grass}}]]或[[{{tr|Crimson grass}}]]后被摧毁，但是转化为[[{{tr|Hallowed grass}}]]不会。它被摧毁后会掉落 10-20 个[[{{tr|Wood}}]]。若不摧毁{{tr|Fallen Log}}，其下方的{{tr|The blocks}}就无法被采掘，和[[{{tr|Trees}}]]相似。
+
+== 备注 ==
+* {{tr|game}}会检查一个特定区域来寻找{{tr|Fallen Logs}}。只要该区域内有存在{{tr|Fallen Log}}，就可以自然{{tr|spawn}}{{tr|fairies}}。该区域的具体边界见下：{{source code ref|v=1.4.4.2|method=Terraria.GameContent.Events.MysticLogFairiesEvent.ScanWholeOverworldForLogs}}
+** 对于{{tr|normal worlds}}，水平边界为{{tr|world}}两侧向内 100 {{tr|tiles}}。垂直边界为{{tr|Surface layer}}往下 10 {{tr|tiles}}（即{{tr|Surface layers}}与[[{{tr|Underground}}|{{tr|Underground layers}}]]交界向下 10 {{tr|tiles}}）至{{tr|world}}顶部边缘往下 100 {{tr|tiles}}。
+** 对于 [[{{tr|Remix Seed}}]] {{tr|worlds}}，水平边界不变，垂直边界变为{{tr|world}}底部往上 350 {{tr|tiles}}到{{tr|Underground layers}}与[[{{tr|Cavern}}|{{tr|Cavern layers}}]]交界处。
+* 通常情况下,所有自然生成的{{tr|Fallen Logs}}都会位于上述区域。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Fallen Log}}

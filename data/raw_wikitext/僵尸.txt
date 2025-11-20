@@ -1,0 +1,493 @@
+{{npc infobox | notab = y
+| auto = 3
+| image = Zombie.gif
+| type = Undead Enemy
+| environment = Surface+Night
+| damage =
+| defense =
+| life =
+| knockback =
+| money =
+| Shackle|1|2%
+| Zombie Arm|1|0.4%
+| Spiffo Plush|1|0.07%
+| sound1 = Zombie 0.wav, Zombie 1.wav, Zombie 2.wav
+| soundcaption1 = 空闲
+| shownpcid = no
+| cargo = no | cargodrops = yes
+}}
+
+'''{{tr|Zombies}}'''是常见的[[{{tr|surface}}]][[{{tr|enemies}}]]，出现于[[{{tr|night}}]]，是新手玩家在夜幕降临前要搭建庇护所的主要原因。加上[[{{tr|Demon Eye}}]]，它们通常是玩家遇到的第一种夜行{{tr|enemies}}，因为它们会出现在玩家的初始[[{{tr|spawn point}}]]附近的区域。
+
+{{tr|Zombies}}遵循{{tr|Fighter AI}}，向玩家走来并在接触时造成伤害。它们能跳起并沿着[[{{tr|Platforms}}]]行走。{{tr|Zombies}}会似乎反复击打出现在其路径上的关着的[[{{tr|Doors}}]]，但它们中的大多数都无法开门，除非是在[[{{tr|Blood Moon}}]]（此期间生成的任何常规{{tr|Zombies}}和[[{{tr|Blood Zombie}}]]都会开门）；[[{{tr|Spore Zombie}}]]则在任何时候都能开门。
+
+在{{eil|Expert mode}}中，会生成拿着掉下来的胳膊的'''{{tr|Armed Zombies}}'''。当它们接近玩家时，它们会停下来施展特殊的“爪子攻击”，这会扩大它们的攻击范围并对玩家造成更高伤害。这些带着胳膊的{{tr|zombies}}在任何时候都无法开门或与门进行其他互动。[[{{tr|Armed Zombie Statue}}]]可在任何{{tr|difficulty}}下生成常规{{tr|Armed Zombies}}。
+
+== 种类 ==
+{{npc infobox/tablestart}}
+{{npc infobox/options|view=table|cols=npcid/variant/health/damage/defense/kbresist/moneyBlock/drops}}
+{| class="terraria lined align-center nowrap cellborder item-noborder"
+|-
+! [[{{tr|NPC IDs}}|{{tr|NPC ID}}]]
+! colspan=2 | 类型
+! 生命值
+! {{tr|Damage}}
+! {{tr|Defense}}
+! 击退抗性
+! {{tr|Coins}}
+! 额外掉落
+{{npc infobox
+| auto = 3
+| image = Zombie.gif
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -26
+| imagealt = [[File:Zombie.gif|{{#expr:34*0.9 round 0}}px|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -27
+| imagealt = [[File:Zombie.gif|{{#expr:34*1.1 round 0}}px|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = 430
+| imagealt = [[File:Armed Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| damage2 = <br/>{{modes|wrap=no<!--
+	-->|{{#expr:floor({{npcinfo|id=430|2=damage}}*1.5*1.25)}}<!-- Classic (Spawned via Armed Zombie Statue)
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=430|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}{{source code ref|name=clawattack|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters / Terraria.NPC.GetMeleeCollisionData|t=爪子攻击持续 20 {{tr|ticks}}，且在攻击期间会扩大{{tr|enemy}}的{{tr|hitbox}}。在最初的 5 {{tr|ticks}}中，伤害为{{tr|base damage}}×1.5，但在此时段{{tr|enemy}}停下并开始爪子攻击动画，此时其{{tr|hitbox}}不变，因而玩家若没有极快地移动就应当无法碰到{{tr|enemy}}的{{tr|hitbox}}。在剩余的 15 {{tr|ticks}}中，{{tr|hitbox}}被扩大且伤害变为{{tr|base damage}}×1.5×1.25，即此处显示的伤害。}}
+}}
+{{npc infobox
+| auto = 132
+| imagealt = [[File:Bald Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -28
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Bald Zombie.gif|{{#expr:34*0.85 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -29
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Bald Zombie.gif|{{#expr:34*1.15 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = 186
+| imagealt = [[File:Pincushion Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| Wooden Arrow|1–9|100%
+}}
+{{npc infobox
+| auto = -30
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Pincushion Zombie.gif|{{#expr:34*0.93 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| Wooden Arrow|1–9|100%
+}}
+{{npc infobox
+| auto = -31
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Pincushion Zombie.gif|{{#expr:34*1.13 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| Wooden Arrow|1–9|100%
+}}
+{{npc infobox
+| auto = 432
+| image2 = <!-- to avoid too many expensive function call-->
+| expertonly = yes
+| type = Undead Enemy
+| imagealt = [[File:Armed Pincushion Zombie.gif|link=]]
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=432|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+| Wooden Arrow|1–9|100%
+}}
+{{npc infobox| boxwidth = 15.5em
+| auto = 187
+| imagealt = [[File:Slimed Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| Slime Staff|1|{{modes|0.01%|0.014%}}
+| Gel|1–2|100%
+}}
+{{npc infobox| boxwidth = 15.5em
+| auto = -32
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Slimed Zombie.gif|{{#expr:34*0.89 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| Slime Staff|1|{{modes|0.01%|0.014%}}
+| Gel|1–2|100%
+}}
+{{npc infobox| boxwidth = 15.5em
+| auto = -33
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Slimed Zombie.gif|{{#expr:34*1.11 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| Slime Staff|1|{{modes|0.01%|0.014%}}
+| Gel|1–2|100%
+}}
+{{npc infobox| boxwidth = 15.5em
+| expertonly = yes
+| auto = 433
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| imagealt = [[File:Armed Slimed Zombie.gif|link=]]
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=433|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+| Slime Staff|1|{{expert|0.014%}}
+| Gel|1–2|100%
+}}
+{{npc infobox
+| auto = 188
+| imagealt = [[File:Swamp Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -34
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Swamp Zombie.gif|{{#expr:34*0.87 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -35
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Swamp Zombie.gif|{{#expr:34*1.13 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| expertonly = yes
+| auto = 434
+| imagealt = [[File:Armed Swamp Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=434|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+}}
+{{npc infobox
+| auto = 189
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Twiggy Zombie.gif|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -36
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Twiggy Zombie.gif|{{#expr:34*0.92 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -37
+| image2 = <!-- to avoid too many expensive function call-->
+| imagealt = [[File:Twiggy Zombie.gif|{{#expr:34*1.08 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| expertonly = yes
+| auto = 435
+| imagealt = [[File:Armed Twiggy Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=435|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+}}
+{{npc infobox
+| auto = 200
+| imagealt = [[File:Female Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -44
+| imagealt = [[File:Female Zombie.gif|{{#expr:34*0.87 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| auto = -45
+| imagealt = [[File:Female Zombie.gif|{{#expr:34*1.05 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox
+| expertonly = yes
+| auto = 436
+| imagealt = [[File:Armed Female Zombie.gif|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=436|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+}}
+{{npc infobox
+| auto = 590
+| imagealt = [[File:Torch Zombie.gif|link=]]
+| image2 = <!-- to avoid too many expensive function call-->
+| type = Undead Enemy
+| environment = Surface+Night
+| Torch|5–20|100%
+}}
+<!--{{npc infobox
+| auto = -xx
+| imagealt = [[File:Torch Zombie.gif|{{#expr:34*0.87 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| cargo = no
+}}-->
+<!--{{npc infobox
+| auto = -xx
+| imagealt = [[File:Torch Zombie.gif|{{#expr:34*1.05 round 0}}px|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| cargo = no
+}}-->
+{{npc infobox
+| expertonly = yes
+| auto = 591
+| imagealt = [[File:Armed Torch Zombie.gif|link=]]
+| type = Undead Enemy
+| environment = Surface+Night
+| damage2 =<br/>{{modes|expertonly=yes|wrap=no<!--
+	-->|{{expert<!--
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_e}}*1.5*1.25)}}<!-- Expert Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_e_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_e_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+	-->|{{master<!--
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_m}}*1.5*1.25)}}<!-- Master Pre-Hardmode
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_m_hm}}*1.5*1.25)}}<!-- Hardmode
+		-->|{{#expr:floor({{npcinfo|id=591|2=damage_m_pp}}*1.5*1.25)}}<!-- Post-Plantera
+	-->}}<!--
+-->}} {{note|small=y|paren=y|爪子攻击}}<ref name="clawattack"/>
+| Torch|5–20|100%
+}}
+|-
+! colspan = 10 | [[{{tr|Halloween}}]]独有种类
+{{npc infobox | boxwidth = 20em
+| auto = 319
+| image = Nurse Zombie.gif
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox | boxwidth = 20em
+| auto = 320
+| image = Superman Zombie.gif
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox | boxwidth = 20em
+| type = Undead Enemy
+| auto = 321
+| image = Pixie Zombie.gif
+| environment = Surface+Night
+}}
+|-
+! colspan = 10 | [[{{tr|Christmas}}]]独有总体
+{{npc infobox | boxwidth = 20em
+| auto = 331
+| image = Xmas Zombie.gif
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+{{npc infobox | boxwidth = 20em
+| auto = 332
+| image = Sweater Zombie.gif
+| type = Undead Enemy
+| environment = Surface+Night
+}}
+|}
+{{npc infobox/options|reset}}
+{{npc infobox/tableend}}
+* {{tr|Pixie Zombie}}的名称是在这里确认的：http://forums.terraria.org/index.php?threads/what-is-this-halloween-zombie-suposed-to-be.5803/#post-156346
+
+== {{tr|Other Zombies}} ==
+* {{item|Raincoat Zombie}} – 夜晚[[{{tr|Rain}}|下雨]]时生成
+* {{item|Frozen Zombie}} – 夜晚在[[{{tr|Snow biome}}]]生成
+* {{item|Spore Zombie}} – 任何时间在[[{{tr|Glowing Mushroom biome}}]]生成
+* {{item|Doctor Bones}} – 夜晚在[[{{tr|Jungle}}]]生成
+* {{item|Blood Zombie}} – 在[[{{tr|Blood Moon}}]]期间生成
+* {{item|The Groom}} – 在[[{{tr|Blood Moon}}]]期间生成
+* {{item|The Bride}} – 在[[{{tr|Blood Moon}}]]期间生成
+* {{item|Maggot Zombie}} – 在[[{{tr|Graveyard}}]]中生成
+* {{item|Eyezor}} – 在[[{{tr|Solar Eclipse}}]]期间生成
+
+== 备注 ==
+* 仅当下列条件满足时{{tr|Armed Zombies}}才能施展爪子攻击：{{source code ref|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters}}
+** 它没有在竖直移动（即不在跳跃或下落）。
+** 其位置在[[{{tr|surface}}]]{{tr|layer}}以下。如果它在{{tr|surface layer}}以上，则它只能在{{tr|night}}施展爪子攻击。
+* {{tr|Zombies}}有时候会生的比正常更大或更小；更大的{{tr|zombies}}有更高的生命、伤害、防御、和击退抗性，而更小的{{tr|zombies}}有更快的速度和更小的碰撞框，可以挤进 1.5 格高度的缝隙。
+* {{tr|The Swamp Zombie}}是最快的{{tr|Zombie}}。
+* {{tr|Zombies}}在黎明时会试图离开屏幕，但终究还是会攻击玩家，尤其是他们离开屏幕的路被挡住的时候。一旦离开屏幕他们就会立即消失。
+* 和所有{{tr|Fighter AI enemies}}一样，如果{{tr|Zombie}}无法找到通向玩家的清晰路线，它就会离开。但它们不会将[[{{tr|Door}}]]视作挡路，即使不在[[{{tr|Blood Moon}}]]期间。
+
+== 小贴士 ==
+* 虽然{{tr|Zombies}}移动得慢，但是非常擅长跳。它们也有相当量的{{tr|health}}，并能对新手玩家造成显著伤害。新手玩家在夜晚最好留在室内，直到有了更好的[[{{tr|Weapons}}]]和更高的[[{{tr|Defense}}]]。
+* 通过在玩家身边盖个木框然后开个小洞用[[{{tr|Shortsword}}]]或[[{{tr|Bow}}]]打击{{tr|enemy}}的方式，可以随时随地安全地打{{tr|Zombies}}。
+* 在[[{{tr|Classic Mode}}]]中，一把简陋的[[{{tr|Wooden Sword}}]]不断挥舞就足以和一或二只{{tr|zombies}}僵持。三只或更多{{tr|Zombies}}可能能通过剑的攻击并造成伤害。能同时击中多个{{tr|enemies}}的{{tr|Weapons}}效果最好。要轻松杀死{{tr|zombies}}，可以建造个[[{{tr|Lava}}]]{{tr|traps}}。[[{{tr|Spear}}]]或[[{{tr|Vilethorn}}]]干这个也非常理想。{{tr|Ranged weapons}}效果也很好，比如[[{{tr|Bow}}]]；[[{{tr|Shuriken}}]]和[[{{tr|Throwing Knives}}]]是能穿透多个{{tr|enemy}}的{{tr|ranged weapons}}，这使得它们同样也是好选择。
+
+=== [[{{tr|Blood Moon}}]] ===
+* 如果想要在[[{{tr|Blood Moon}}]]期间彻底避开{{tr|Zombies}}，用任何类型的[[{{tr|Block}}]]挡住门就能阻止{{tr|Zombies}}进到{{tr|house}}中。在门内侧挨着门放置[[{{tr|Wood Platform}}]]、[[{{tr|Wooden Beam}}]]或[[{{tr|Furniture}}]]都能防止门向内打开，而这是{{tr|Zombies}}进入的唯一方法。
+* 将[[{{tr|door}}]]放置在高出地面的位置，或在门前挖个宽两格高两格的壕沟能迫使{{tr|Zombies}}在门前跳跃，而跳起中它们无法开门。
+* 另一个策略是并排放置两扇门，这样 {{tr|NPC}} 的行动不会受到封锁。[[{{tr|Blood Moon}}]]期间的{{tr|Zombies}}、任何{{tr|underground}}[[{{tr|Skeleton}}]]、或{{tr|hardmode}}的{{tr|enemies}}都无法将门打开，因为这种策略下外面那扇门向里开时会被里面那扇门挡住。如果外面的门已被打开，此方法就无效了。
+
+== 花絮 ==
+* 偶尔，{{tr|Pincushion Zombie}}受到伤害时，他的身上会掉下损坏的{{tr|Wooden Arrow}}，但其无法回收。
+* {{tr|The Bald Zombie}}是唯一不会在{{tr|expert mode}}中携带手臂的{{tr|regular zombie}}种类。
+* {{tr|the Armed Female Zombie}}对应的内部名称是 {{code|{{npcinfo|436|internal name}}}}，是对 [[Re-Logic#Cenx|Cenx]] 的引用。
+* {{tr|the Armed Pincushion Zombie}}（Armed Pincushion Zombie）的内部名字被拼作 {{code|{{npcinfo|432|internal name}}}}。
+{{bestiary
+|Zombie
+|Slimed Zombie
+|Torch Zombie
+|Doctor Zombie|Doctor Zombie-alias={{tr|Halloween Zombies}}|Doctor Zombie-article=n
+|Xmas Zombie|Xmas Zombie-alias={{tr|Christmas Zombies}}|Xmas Zombie-article=n
+}}
+
+== 另见 ==
+* {{item|Zombie Elf}} – 另一种在[[{{tr|Frost Moon}}]]{{tr|event}}期间生成的{{tr|undead enemy}}
+* {{item|Zombie Pet|small=y}} – 用{{eil|Brain}}召唤的{{tr|zombie pet}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|大部分{{tr|variants}}能够掉落[[{{tr|Spiffo Plush}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Maggot Zombie}}和{{tr|Torch Zombie}}。
+** {{tr|Zombie Eskimo}}重命名为{{tr|Frozen Zombie}}。
+** 修复了较大{{tr|zombies}}会略微陷入地面的视觉问题。}}
+{{history|Desktop 1.3.5|以下种类的{{tr|Sprites updated}}：
+** {{tr|Regular Zombie}}、{{tr|Pincushion Zombies}}、{{tr|Swamp Zombies}}、和{{tr|Twiggy Zombies}}
+** [[{{tr|Expert Mode}}]]{{tr|variants}}。
+** [[{{tr|Halloween}}]]和[[{{tr|Christmas}}]]{{tr|variants}}。}}
+{{history|Desktop 1.3.2|普通{{tr|Zombie}}、{{tr|Slimed Zombie}}、{{tr|Bald Zombie}}和{{tr|Swamp Zombie}}{{tr|sprites updated.}}}}
+{{history|Desktop 1.3.0.1|现在一些{{tr|zombies}}在[[{{tr|Expert mode}}]]中会挥舞[[{{tr|Zombie Arm}}]]。}}
+{{history|Desktop 1.2.2|添加了{{tr|Santa Zombie}}和{{tr|Sweater Zombie}}种类，仅在{{tr|Christmas}}期间生成。}}
+{{history|Desktop 1.2.1.2|非{{tr|Blood Moon}}时化装{{tr|Zombies}}不会开门了。}}
+{{history|Desktop 1.2.1|添加了{{tr|Nurse Zombie}}、{{tr|Superhero Zombie}}、和{{tr|Pixie Zombie}}这些种类，仅在{{tr|the Halloween}}期间生成。}}
+{{history|Desktop 1.2.0.3|现在会掉落它自己的相应旗帜了。}}
+{{history|Desktop 1.2|新种类引入：{{tr|Pincushion Zombie}}、{{tr|Slimed Zombie}}、{{tr|Swamp Zombie}}、{{tr|Twiggy Zombie}}、{{tr|Female Zombie}}、[[{{tr|Rain Coat Zombie}}]]、[[{{tr|Zombie Eskimo}}]]、[[{{tr|Spore Zombie}}]]、和[[{{tr|Mushroom Zombie}}]]。}}
+{{history|Desktop 1.1|添加了{{tr|Bald Zombie}}这个种类。}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console 1.19|各变体种类的{{tr|sprites updated}}为与{{tr|Desktop 1.3.5}} 一致。}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon/ps4}}）
+** 普通{{tr|Zombie}}、{{tr|Slimed Zombie}}、{{tr|Bald Zombie}}和{{tr|Swamp Zombie}}{{tr|sprites updated}}为与{{tr|Desktop 1.3.2}} 一致。
+** 现在一些{{tr|zombies}}在{{tr|Expert mode}}中会挥舞{{tr|Zombie Arm}}。}}
+{{history|Console 1.04|添加了{{tr|Santa Zombie}}和{{tr|Sweater Zombie}}种类，仅在{{tr|Christmas}}期间生成。}}
+{{history|Console 1.02|
+** 引入新的变体种类：{{tr|Pincushion Zombie, Slimed Zombie, Swamp Zombie, Twiggy Zombie, Female Zombie, Rain Coat Zombie, Zombie Eskimo, Spore Zombie, and Mushroom Zombie}}。还引入了{{tr|Nurse Zombie, Superhero Zombie, and Pixie Zombie}}这几种变体种类，只在{{tr|the Halloween}}季期间生成。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Console-Release|{{tr|Introduced}}，带有{{tr|Bald Zombie}}变体种类。}}
+{{history|Switch 1.0.1096.2|各变体种类的{{tr|sprites}}更新为与{{tr|Desktop 1.3.5}} 一致。}}
+{{history|Switch 1.0.711.6|Introduced=y|随{{tr|Desktop}} 1.3.0.1 的更改引入。}}
+{{history|Mobile 1.4.0.5.0|
+** 添加了{{tr|Maggot Zombie}}和{{tr|Torch Zombie}}。
+** {{tr|Zombie Eskimo}}重命名为{{tr|Frozen Zombie}}。
+** 各变体种类的{{tr|sprites}}更新为与{{tr|Desktop 1.3.5}} 一致。}}
+{{history|Mobile 1.3.0.7|现在一些{{tr|zombies}}在{{tr|Expert mode}}中会挥舞{{tr|Zombie Arm}}。}}
+{{history|Mobile 1.2.11212|添加了{{tr|Santa Zombie}}和{{tr|Sweater Zombie}}种类，仅在{{tr|Christmas}}期间生成。}}
+{{history|Mobile 1.2.6508|
+** 引入新的变体种类：{{tr|Pincushion Zombie, Slimed Zombie, Swamp Zombie, Twiggy Zombie, Female Zombie, Rain Coat Zombie, Zombie Eskimo, Spore Zombie, and Mushroom Zombie}}。还引入了{{tr|Nurse Zombie, Superhero Zombie, and Pixie Zombie}}这几种变体种类，只在{{tr|the Halloween}}季期间生成。
+** 现在会掉落它自己的相应旗帜了。}}
+{{history|Mobile-Release|{{tr|Introduced}}，带有{{tr|Bald Zombie}}变体种类。}}
+{{history|3DS-Release|Introduced=y|随到{{tr|Desktop 1.2.1}} 为止的更改引入。{{verify}}<!-- not sure if 3DS has a little more content regarding Christmas -->}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Zombie}}

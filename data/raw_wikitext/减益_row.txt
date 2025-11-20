@@ -1,0 +1,25 @@
+<includeonly>
+|-
+| {{options/set|item|showid=y}}{{buff|mode=table|id={{trim|{{{1|}}}}}}}{{options/reset|item}}
+| {{trim|{{{2|}}}}}
+| {{{tooltip|{{#vardefine:_tt|<i>{{getBuffInfo|{{trim|{{{1|}}}}}|tooltip}}</i>}}{{#var:_tt|{{na}}}}}}}
+| style="text-align:left" | {{trim|{{{3|}}}}}<!--
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+
+{| class=terraria
+! Parameter !! Description
+|-
+| First unnamed parameter || [[Buff IDs|Buff ID]]
+|-
+| Second unnamed parameter || Debuff description
+|-
+| Third unnamed parameter || Duration
+|-
+| <code>tooltip</code> || Custom tooltip. Is generated automatically by default; prints "{{na}}" if none available.
+|}
+
+{{language info|en=Debuffs/row}}
+</noinclude>

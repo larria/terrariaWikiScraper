@@ -1,0 +1,194 @@
+[[File:BiomeBannerSpace.png|center]]
+
+'''{{tr|Space}}'''是构成{{tr|world}}顶部的[[{{tr|layer}}]]，位于[[{{tr|Surface}}]]之上在{{tr|space}}中[[{{tr|重力}}]]有所降低，这意味着玩家能跳的更高、掉落的更慢，类似于[[{{tr|Featherfall}}]]的效果。天空是黑暗的，而且即使[[{{tr|sun}}]]正高挂在天空中也可以看见星星。在{{tr|space}}中没有自然存在的[[{{tr|blocks}}]]或物体，不过[[{{tr|Floating Island}}]]或[[{{tr|Living Tree}}]]可能有部分会延伸到其中。
+
+尽管处于如此高海拔，进入{{tr|space}}的玩家不会受到任何负面影响。不会产生[[{{tr|Suffocation}}]]{{tr|debuff}}，也不会出现[[{{tr|Breath meter}}]]。
+
+[[{{tr|Fallen Star}}]]生成在{{tr|Space}}中，并且可能出现在建在高海拔的建筑物内部。[[{{tr|Harpy}}|{{tr|Harpies}}]]和——在[[{{tr|Hardmode}}]]中——[[{{tr|Wyvern}}]]和{{eil|Arch Wyvern|s}}会在{{tr|Space}}中生成。此外，{{eil|Martian Probe|s}}更有可能生成在{{tr|Space}}中，且，只要有可行的生成区域，诸如[[{{tr|slimes}}]]和[[{{tr|Zombies}}]]之类的常见[[{{tr|enemies}}]]也能出现在{{tr|Space}}中。
+
+{{eil|Forest Pylon}}可以在{{tr|Space}}中使用。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Harpy}}<!--
+			-->|{{item|Clumsy Balloon Slime}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wyvern|size=*0.5}}<!--
+			-->|{{item|Arch Wyvern|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在击败[[{{tr|Golem}}]]后：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Martian Probe}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Harpy}}|{{tr|Harpies}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Chicken Nugget}}<!--
+			-->|{{item|Feather}}<!--
+			-->|{{item|Giant Harpy Feather}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Wyvern}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Soul of Flight}}<!--
+			-->|{{item|Wyvern Kite|note2=（在[[{{tr|Windy Day}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{eil|Arch Wyvern}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Soul of Flight}}<!--
+			-->|{{item|Shadow Key}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Angler|link=y}}#{{tr|Quest}}列表|{{tr|Angler Quests}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cloudfish}}<!--
+			-->|{{item|Angelfish}}<!--
+			-->|{{item|Wyverntail|note2=（仅限[[{{tr|Hardmode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+	-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|<!--
+		-->{{dotlist<!--
+		-->|{{item|Place Above the Clouds}}<!--
+		-->|{{item|Sky Guardian|note2=（仅限[[{{tr|Hardmode}}]]）}}<!--
+		-->}}<!--
+	-->}}<!--
+	-->{{infocard/box|title=来自[[{{tr|Steampunker}}]]：|<!--
+		-->{{dotlist<!--
+		-->|{{item|Sky Mill|note2=（仅限{{eicons|1.4.1}}）}}<!--
+		-->}}<!--
+	-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Space Day)| {{sound|track=Space Day}} |icons={{eicons|desktop=y|old-gen=y|mobile=y|3ds=y}} }}<!--
+			-->|{{item|Music Box (Space Night)| {{sound|track=Space Night}} |icons={{eicons|desktop=y|console=y|mobile=y}} }}<!--
+			-->|{{item|Otherworldly Music Box (Space)| {{sound|track=Space (Otherworldly)}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!-- 
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== 备注 ==
+* 需要[[{{tr|pure biomes}}|纯净]]的{{tr|Space biome}}以在{{tr|Space}}中[[{{tr|fishing}}]]，否则就无法获得{{tr|Space}}独有的{{tr|fishing catches}}。
+* [[{{tr|pre-Hardmode}}]]期间，{{tr|Space enemies}}无法在{{tr|world}}中心（水平方向）10% 宽度的区域内生成。{{source code ref|name=spawnnpc|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}
+** 例如，在[[{{tr|World size}}|{{tr|small world}}]]中（4200 格宽），{{tr|Space enemies}}在{{tr|pre-Hardmode}}只能在水平方向距离[[{{tr|World spawn point}}|{{tr|world}}中心]] 210 格（5%）以上时生成。它们无法在中心的 420 格范围内生成。
+* [[{{tr|Surface}}]]和{{tr|Space}}之间没有明确的边界。二者是平滑过渡的；下表中罗列了{{tr|biome}}的特征之间的不同阈值。这些阈值基于地表面和世界顶部之间的面积计算得出。由于随机化的世界生成过程，这二者之间的距离在不同世界中是不同的，因此无法给出这些高度的精确英尺数值。相反，用所述区域的百分比可以更精确地表达出阈值。
+: {| class="terraria lined" style="display:inline-block !important;"
+! 高度 !! 备注
+|-
+| 100%{{footnote|这指的是游戏内无法看见的真正[[世界边界]]。可见的世界边界比它低 41 格。}}
+{{space altitude calculator|altitude=1.0|output={{gameText|GameUI.Depth|x_0=$output$}}}}
+| 世界顶部
+|-
+| > 83.33%<!-- player.position.Y < Main.worldSurface / 6.0 -->{{footnote|实际阈值是略低于这一百分比的特定数量的{{tr|tiles}}，取决于[[{{tr|world size}}]]：
+* 小：（{{tr|world}}顶部）向下 70 格
+* 中：向下 83.22 格
+* 大：向下 100 格}}<!--player.position.Y - 60 - 10 * (Main.maxTilesX / 4200)^2-->
+{{space altitude calculator|altitude=0.8333333|output=> {{gameText|GameUI.Depth|x_0=$output$}} {{footnote|实际阈值是略低于这一百分比的特定数量的{{tr|tiles}}，取决于[[{{tr|world size}}]]：
+* 小：（{{tr|world}}顶部）向下 70 格
+* 中：向下 83.22 格
+* 大：向下 100 格}}}}
+| [[{{tr|Gravity}}]]降低；降低量和高度有关{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+|-
+| > 80%<!-- player.position.Y < Main.worldSurface / 5.0 -->{{footnote|实际阈值是略低于这一百分比的特定数量的{{tr|tiles}}，取决于[[{{tr|world size}}]]：
+* 小：（{{tr|world}}顶部）向下 75 格
+* 中：向下 88.22 格
+* 大：向下 105 格}}<!--player.position.Y - 65 - 10 * (Main.maxTilesX / 4200)^2-->
+{{space altitude calculator|altitude=0.8|output=> {{gameText|GameUI.Depth|x_0=$output$}} {{footnote|实际阈值是略低于这一百分比的特定数量的{{tr|tiles}}，取决于[[{{tr|world size}}]]：
+* 小：（{{tr|world}}顶部）向下 75 格
+* 中：向下 88.22 格
+* 大：向下 105 格}}}}
+| [[{{tr|Depth Meter}}]]称该区域为“{{gameText|GameUI.LayerSpace}}”{{source code ref|v=1.4.4.9|method=Terraria.Main.DrawInfoAccs}}；并且会播放{{tr|Space}}独有的{{tr|music}}{{source code ref|v=1.4.4.9|method=Terraria.Main.UpdateAudio_DecideOnNewMusic / Terraria.Main.UpdateAudio_DecideOnTOWMusic}}
+|-
+| > 65% <!-- targetSpawnTile.Y < Main.worldSurface * 0.34999999403953552  ;;  player.position.Y < Main.worldSurface * 0.3499999940395355 -->
+{{space altitude calculator|altitude=0.65|output=> {{gameText|GameUI.Depth|x_0=$output$}}}}
+| {{tr|Space}}独有的{{tr|enemies}}可生成<ref name="spawnnpc/>，且[[{{tr|Steampunker}}]]和[[{{tr|Painter}}]]出售{{tr|Space}}独有物品{{source code ref|v=1.4.4.9|method=Terraria.Chest.SetupShop}}
+|-
+| > 55% <!-- targetSpawnTile.Y < Main.worldSurface * 0.44999998807907104  ;;  player.Center < Main.worldSurface * 0.45 -->
+{{space altitude calculator|altitude=0.55|output=> {{gameText|GameUI.Depth|x_0=$output$}}}}
+| [[{{tr|Hardmode}}]]期间，{{tr|Space}}独有的{{tr|enemies}}以较低速度生成<ref name="spawnnpc/>；[[{{tr|Depth Hair Dye}}]]将玩家的{{tr|hair}}染成蓝色{{source code ref|v=1.4.4.9|method=Terraria.Initializers.DyeInitializer.LoadLegacyHairdyes}}，且{{tr|town NPCs}} 可使用一个独有的[[{{tr|emote}}]]{{source code ref|v=1.4.4.9|method=Terraria.GameContent.UI.EmoteBubble.ProbeBiomes}}
+|-
+| > 50% <!-- fishingBobber.position.Y < Main.worldSurface * 0.5 -->
+{{space altitude calculator|altitude=0.5|output=> {{gameText|GameUI.Depth|x_0=$output$}}}}
+| 可获得{{tr|Space}}独有的[[{{tr|fishing}}]]战利品{{source code ref|v=1.4.4.9|method=Terraria.Projectile.FishingCheck}}
+|-
+| 0%
+{{space altitude calculator|altitude=0.0|output={{gameText|GameUI.Depth|x_0=$output$}}}}
+| {{tr|Surface}}界线（0{{nbsp}}英尺，在[[{{tr|Depth Meter}}]]上的“{{gameText|GameUI.DepthLevel}}”），{{tr|Surface}}和[[{{tr|Underground}}]]的边界
+|}
+: 对于一个给定的{{tr|world}}，将{{tr|character}}移动到该{{tr|world}}最顶部（头部必须碰到可见世界边界）后，将[[{{tr|Depth Meter}}]]（或其升级物）的读数输入到下方，即可在上方表格中显示出精确的、绝对的高度：
+: {{space altitude calculator|input=[[File:Depth Meter toggle.png|link=]] {{gameText|GameUI.Depth|x_0=$input$}} {{gameText|GameUI.LayerSpace}} $nojsmessage$|nojsmessage={{note|paren=y|错误！可能禁用了 JavaScript。}}}}
+
+* 在{{eversions|1.3.0.1|invert=y}}中，总是会播放[[{{tr|Music|link=y}}#{{tr|Space Day}}|{{tr|Space Day}}]]{{tr|music}}，无论时间。
+
+== 成就 ==
+{{achievement|name=Into Orbit}}
+{{achievement|name=Icarus}}
+
+== 小贴士 ==
+* 有很多方法可以到达{{tr|Space}}：
+** 建造一根[[{{tr|blocks}}]]或任意类型[[{{tr|Rope}}]]的柱子。
+** 喝[[{{tr|Gravitation Potion}}]]或使用{{eil|Gravity Globe}}。
+** 装备[[{{tr|Wings}}]]、[[{{tr|Rocket Boots}}]]、或其升级物、或其他增强跳跃的[[{{tr|accessories}}]]来帮助到达更高的高度，尤其是从[[{{tr|Floating Island}}]]或其他高建筑物上起跳。
+** 用[[{{tr|Ice Rod}}]]作为上升的方法，或将其用来在半空中重置翅膀的飞行时间。
+** [[{{tr|hardcore}}]]人物死亡成为[[{{tr|ghost}}]]后以此形态向上飞。
+*** 在{{tr|Desktop}}上，这并不会给予{{tr|Into Orbit achievement}}。
+** 建造一条上升的[[{{tr|Minecart Track}}|铁路]]。
+** 用会飞的[[{{tr|Mount}}]]，比如[[{{tr|Bee Mount}}]]或[[{{tr|UFO Mount}}]]。
+
+== 花絮 ==
+* {{eversions|1.3.0.1|invert=y}}的{{tr|The Space}}音乐曾经是这些版本所独有的，但后来作为《{{tr|Space Day}}》主题曲纳入{{eversions|Music Box (Space Day)}}中。
+
+== 历史 ==
+{{history|Desktop 1.4.0.5|现在[[{{tr|Pylons}}|{{tr|Forest Pylon}}]]可以在{{tr|Space}}中使用。}}
+{{history|Desktop 1.4.0.1|添加了新的《{{tr|Space Day}}》曲目，此曲来源于{{tr|Terraria}}的{{tr|Old-gen console}}。原本 1.2 的曲目现在在{{tr|night}}播放。}}
+{{history|Desktop 1.3.4|{{tr|Space}}中不再下雨。}}
+{{history|Desktop 1.2|现在有自己的{{tr|music}}了。}}
+{{history|Desktop 1.1|
+** 在临近世界顶端时，玩家会离开大气层且重力的作用会减小。天空也会变为黑色。
+** 新{{tr|enemy}}：[[{{tr|Wyvern}}]]}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Space}}中不再下雨。}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Space}}中不再下雨。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|
+** 现在{{tr|night}}播放{{tr|Desktop 1.2}} 的普通{{tr|Space}}主题曲，但{{tr|day}}依然继续播放来自{{tr|the Old-gen console version}}的版本。
+** {{tr|space}}中不再会下雨。}}
+{{history|Mobile 1.1.5536|现在在{{tr|Hardmode}}中{{tr|Space}}中会生成{{tr|Wyverns}}。}}
+{{history|Mobile-Release|{{tr|Introduced.}}{{tr|Space}}有着来自{{tr|Old-gen console version}}的独特音乐，其行为和{{tr|Desktop 1.1}} 中一样，不同之处在于会生成{{tr|Wyverns}}。}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Biomes}}
+
+{{all versions}}
+[[Category:环境]]
+
+{{language info|en=Space}}

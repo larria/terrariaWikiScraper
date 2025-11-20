@@ -1,0 +1,91 @@
+{{item infobox
+| type = Furniture
+| imagealt = [[File:Any Table.png|Table item sprites|link=]]
+| placeable = yes
+| width = 3
+| height = 2
+| use = 14
+| rare = {{rare|0}}
+| stack = 99
+| sell = {{iteminfo|Wooden Table|sell}}<br/>{{iteminfo|Golden Table|sell}} ({{tr|Golden Table}})
+| idtile = 14, 469, 487
+| consumable = true
+| allversions = yes
+| listcat = plunder items
+| cargo = no
+}}
+{{dablink|{{tr|Bar}}（''Bar''）重定向到此处。对于用[[{{tr|Ores}}]]制作的金属物品，参见[[{{tr|Bars}}]]（''Bars''）。}}
+[[File:Placed Tables.png|frame|放置的桌子。点击图片来查看详细信息。]]
+
+'''桌子'''是一类可以被放置在地上的家具物品，它常常会与[[{{tr|chair}}]]一起使用。它算作一个平台物品，是为 [[{{tr|NPC}}]] 建造[[{{tr|House}}]]的必要条件之一。桌子结合[[{{tr|Chair}}]]也可以组成[[{{tr|crafting station}}]]。
+
+游戏中共有{{eicons|1.4.4}} 43 种{{tr|craftable table}}，和 6 种{{tr|noncraftable table}}。一些桌子也可以在[[{{tr|Underground Cabins}}]]中被找到，桌子类型会随着它所在小屋的主题而改变。
+
+== 配方 ==
+{{recipes|cate=force|showresultid=y|link=no|result=Picnic Table/Fancy Picnic Table/Bar/LIKE % Table|resultnot=Alchemy Table/Bewitching Table|expectedrows=45|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+* {{tr|Lihzahrd Tables}}也可以在[[{{tr|Jungle Temple}}]]中被找到，生命木桌也可以在[[{{tr|Living Tree}}]]中找到，天域桌也可以在[[{{tr|Floating Island}}]]中找到。
+
+== 不可被制作的桌子 ==
+{{item/options|set|nolink=y|mode=table}}<!-- 
+-->{{item infobox/options|view=table|cols=item2cells-anchor-nolink/col:notes}}
+{| class="terraria lined"
+|-
+! colspan=2 | 桌子 !! 备注
+{{item infobox | auto = 1510 | type = Furniture |  width = 3 | height = 2 | tags = plunder
+| col:notes = 在[[{{tr|Dungeon}}]]中找到的[[{{tr|Dungeon}}{{tr|Furniture}}|家具]]。
+}}
+{{item infobox | auto = 1397| type = Furniture |  width = 3 | height = 2 | tags = plunder
+| col:notes = 在[[{{tr|Dungeon}}]]中找到的[[{{tr|Dungeon}}{{tr|Furniture}}|家具]]。
+}}
+{{item infobox | auto = 1400| type = Furniture |  width = 3 | height = 2 | tags = plunder
+| col:notes = 在[[{{tr|Dungeon}}]]中找到的[[{{tr|Dungeon}}{{tr|Furniture}}|家具]]。
+}}
+{{item infobox | auto = 1403| type = Furniture |  width = 3 | height = 2 | tags = plunder
+| col:notes = 在[[{{tr|Dungeon}}]]中找到的[[{{tr|Dungeon}}{{tr|Furniture}}|家具]]。
+}}
+{{item infobox | auto = 1460| type = Furniture |  width = 3 | height = 2 | tags = plunder
+| col:notes = 在[[{{tr|Ruined houses}}]]中被发现，不会被[[{{tr|lava}}]]破坏。
+}}
+{{item infobox | auto = 1716| type = Furniture |  width = 3 | height = 2 | tags = drop
+| col:notes = 掉落自[[{{tr|Pirate Invasion}}|海盗]]。售价为{{iteminfo|1716|sell}}。
+}}
+|}<!--
+-->{{item/options|reset}}
+
+== 用于制作 ==
+{{:Recipes/Table}}
+
+== 备注 ==
+* 与其他所有桌子不同，王朝桌只有一格高。然而，它的搭档[[{{tr|Dynasty Chair}}]]，仍然是 2 格高。
+* {{tr|Picnic Table}}和{{tr|Fancy Picnic Table}}出于 [[{{tr|House}}|{{tr|NPC}} 的入住]]目的来说可以同时作为桌子和椅子，但出于制作的目的，它只是个桌子。{{source code ref|v=1.4.0.5|Class <code>RoomNeeds</code> in <code>Terraria.ID.TileID</code>}}
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|增加了{{tr|Fancy Picnic Table}}，{{tr|Picnic Table}}，蜘蛛，病变，竹子，沙岩，星云，日耀，星尘和星旋桌子。}}
+{{history|Desktop 1.3.5|水晶桌现在可以被获得。}}
+{{history|Desktop 1.3.1|加入了水晶桌，但玩家仍无法获得它。}}
+{{history|Desktop 1.3.0.1|加入陨石桌，花岗岩桌，大理石桌和火星桌。}}
+{{history|Desktop 1.2.4.1|加入仙人掌桌。}}
+{{history|Desktop 1.2.4|
+** 加入针叶木桌，棕榈木桌，蘑菇桌，仙人掌桌和史莱姆桌。宴会桌和吧台现在可以与其它桌子一样用作制作站(该更改也可能出现在1.2.3)。
+** 梳妆台，钢琴和桌子在敲击时不再会发出颗粒。}}
+{{history|Desktop 1.2.3|生命木桌，天域桌和丛林蜥蜴桌现在可以被制作，且所需制作站更改。加入了冰冻桌和王朝桌。}}
+{{history|Desktop 1.2.2|加入松树桌。}}
+{{history|Desktop 1.2.1|加入阴森桌和南瓜桌。}}
+{{history|Desktop 1.2.0.3|加入金桌，蜂蜜桌，蒸汽朋克桌以及玻璃桌。}}
+{{history|Desktop 1.2|加入乌木桌，珍珠木桌，暗影木桌，血肉桌，黑曜石桌，哥特桌，蓝地牢桌，绿地牢桌，粉地牢桌，骨头桌以及天域桌。}}
+{{history|Desktop 1.0.6|木桌的{{tr|sprites updated.}}}}
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Tables}}

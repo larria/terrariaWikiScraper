@@ -1,0 +1,55 @@
+{{legacy nav tab}}
+{{item infobox
+| auto = 1444
+| tags = hardmode / drop
+| listcat = wands
+}}
+{{drop infobox|style=clear:right}}
+[[File:Shadowbeam Staff (demo).gif|frame|right|使用中的{{tr|The Shadowbeam Staff}}。]]
+
+'''{{tr|Shadowbeam Staff}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|wand}}]]，其有{{chance|1/20}} / {{expert|{{chance|39/400}}}}的概率掉落自[[{{tr|Hardmode Dungeon}}]]中的[[{{tr|Necromancers}}]]。使用时，它会发射出一道紫色的光束，它能在瞬间行进至最大距离（112.5 {{tr|tiles}}），碰到[[{{tr|blocks}}]]时反弹。光束可无限穿透[[{{tr|enemies}}]]，但每击中一个{{tr|enemy}}，其伤害降低 10%。每个{{tr|enemy}}仅会被击中一次。
+
+{{modifier|magic}}
+
+== 备注 ==
+* {{tr|Shadowbeam Staff}}的光束并非瞬间传播的。其实际上需要少于三{{tr|ticks}}{{tick}}（{{duration|3 ticks}}）或 0.05 秒才能完全延伸。<ref>光束有 100 extraUpdates，所以其每{{tr|tick}}更新 101 次。它可以存在 300 次更新。这意味着光束能恰好存在 2.97 {{tr|ticks}}。（{{duration|2.97 ticks|round=4}}）</ref>
+* {{tr|Shadowbeam Staff}}的光束造成 10 {{tr|tick}}{{tick}}[[{{tr|global invincibility frame}}]]。由于其极高的{{tr|velocity}}，一道光束不能击中一名目标多次。
+
+== 成就 ==
+{{achievement|name=Robbing the Grave}}
+
+== 小贴士 ==
+* {{tr|The Shadowbeam Staff}}在{{tr|the Dungeon}}或其他封闭{{tr|underground}}区域中非常有效，在其中光束能多次反弹并压制住目标。它那快速照亮整个房间的能力也有助于探索这些区域。
+* 考虑到其无限穿透能力，它在对抗[[{{tr|Worm enemies}}]]，如[[{{tr|The Destroyer}}]]时十分有用，但因为其穿透衰减只有前几次击中会造成较高的{{tr|damage}}。
+* 当向[[{{tr|slope}}|斜坡]]物块发射时，光束会沿着斜坡向上前进，而非从其上弹开。这可以用于创建安全的战斗场地（如供[[{{tr|events}}]]使用的），玩家可以在其中不受伤害地攻击{{tr|enemies}}。
+
+== 花絮 ==
+* {{tr|Shadowbeam Staff}}的光束是''[[《{{tr|Terraria}}》]]''中最快的{{tr|projectiles}}，因为其有效[[{{tr|velocity}}]]为 606。这相当于 {{mph|606 pixels}} 。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.4|{{tr|Damage}}由 60 提升至 80。}}
+{{history|Desktop 1.4.1|
+** {{tr|Damage}}从 53 增加至 60。
+** {{tr|Use time}}从 16 降低至 15。
+** {{tr|Damage}}穿过每个{{tr|enemy}}后的{{tr|damage}}削减从 20% 降低至 10%。}}
+{{history|Desktop 1.4.0.1|{{tr|Sprite updated}}。}}
+{{history|Desktop 1.3.0.1|
+** 使用音效从 {{sound|"[[Media:Item 8.wav|{{tr|Item}} 8]]"|Item 8.wav|nofallback=y}} 更改为 {{sound|"[[Media:Item 72.wav|{{tr|Item}} 72]]"|Item 72.wav|nofallback=y}}。
+** 掉率从 2.5% 提升至 5%。}}
+{{history|Desktop 1.2.0.3|
+** {{tr|Damage}}从 55 降低至 53。
+** 光束现在伤害递减。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+	
+== 参考 ==
+{{reflist}}
+
+{{Master Template Weapons
+| show-magic = yes
+}}
+
+{{language info|en=Shadowbeam Staff}}

@@ -1,0 +1,62 @@
+{{exclusive|1.4.0.1}}
+
+'''{{tr|Liquid rockets}}'''是一种[[{{tr|rocket}}]][[{{tr|ammunition}}]]，不仅能造成一定伤害，还能产生或清除[[{{tr|liquids}}]]。总共有四种不同的{{tr|liquid rockets}}：'''{{tr|Dry Rocket}}'''，'''{{tr|Wet Rocket}}'''，'''{{tr|Lava Rocket}}'''和'''{{tr|Honey Rocket}}'''。
+
+{{tr|liquid rocket}}发射后，当它接触到[[{{tr|enemies}}]] 或[[{{tr|blocks}}]]时会产生和{{tr|normal rockets}}相似的爆炸并附加其特殊效果（见[[{{tr|Liquid rockets}}#effects|下文]]）。但是，如果{{tr|rocket}}在飞行过程中撞上任何{{tr|liquid}}，将会立即产生爆炸并附加其特殊效果。所有{{tr|liquid rockets}}都会对周围{{tr|players}}，{{tr|enemies}}和[[{{tr|critters}}]]造成伤害。
+
+{{tr|Dry Rockets}}在任何时候都可以从[[{{tr|Cyborg}}]]处以{{iteminfo|Dry Rocket|buy}}购买。它可以用来制作其他三种火箭（见[[Liquid rockets#Crafting|下文]]）。
+
+<div>{{anchor|effects}}
+* {{tr|Dry Rocket}}在爆炸时可以清除小范围内的液体。
+* {{tr|Wet Rocket}}在爆炸时可以产生小范围的[[{{tr|water}}]]。
+* {{tr|Lava Rocket}}在爆炸时可以产生小范围的[[{{tr|lava}}]]。
+* {{tr|Honey Rocket}}在爆炸时可以产生小范围的[[{{tr|honey}}]]。
+</div>
+
+== 类型 ==
+{{options/set|item infobox|view=table|cols=item2cells-anchor-nolink/tooltip}}
+{| class="terraria lined"
+! colspan=2 | {{tr|Type}}
+! {{tr|Tooltip}}
+{{item infobox | auto = 4459 | tag = hardmode / vendor / vendor:Cyborg }}
+{{item infobox | auto = 4447 | tag = hardmode }}
+{{item infobox | auto = 4448 | tag = hardmode }}
+{{item infobox | auto = 4449 | tag = hardmode }}
+|}{{options/reset|item infobox}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Dry Rocket/Wet Rocket/Lava Rocket/Honey Rocket|expectedrows=6}}
+
+== 备注 ==
+* 使用[[{{tr|Celebration}}]]，[[{{tr|Celebration Mk2}}]]或[[{{tr|Electrosphere Launcher}}]]发射{{tr|Liquid rockets}}时无法产生其效果。
+* 在{{tr|liquid}}中发射{{tr|liquid rocket}}会''立即''产生爆炸并伤害{{tr|players}}。
+** 如果{{tr|rocket}}产生的{{tr|liquid}}和{{tr|player}}所在的液体相同，则不会产生任何新的{{tr|liquid}}。反之，如果两者不同，根据其反应，将会变为[[{{tr|Obsidian}}]]，[[{{tr|Honey Block}}]]或[[{{tr|Crispy Honey Block}}]]中的一种。
+* 它们和[[{{tr|liquid bombs}}]]拥有相同的价格。后者可以通过打开[[Obsidian Crate|{{tr|Obsidian}}]]/[[{{tr|Hellstone Crate}}]]或从[[{{tr|Demolitionist}}]]处购买获得。
+
+== 小贴士 ==
+* 如果将{{tr|Liquid rockets}}发射到已有{{tr|liquid}}的水池中将会浪费一部分{{tr|Liquid rockets}}所产生的{{tr|liquid}}，如果{{tr|Liquid rockets}}撞上固体方块将会产生更多的{{tr|liquid}}。
+*因为[[{{tr|Snowman Cannon}}]]拥有{{tr|rocket launcher}}中最高的射速，所以当搭配上{{tr|Liquid rockets}}时会更高效的产生{{tr|liquid}}。
+
+== 花絮 ==
+* {{tr|Wet Rocket}}并没有被命名为“水火箭”，尽管其对应物都用了产生的液体的名称来命名。
+
+== 图库 ==
+<gallery>
+File:Dry Rocket (demo).gif|使用[[火箭发射器]]发射{{tr|dry rocket}}。
+File:Wet Rocket (demo).gif|使用[[{{tr|Rocket Launcher}}]]发射{{tr|wet rocket}}。
+File:Lava Rocket (demo).gif|使用[[{{tr|Rocket Launcher}}]]发射{{tr|lava rocket}}。
+File:Honey Rocket (demo).gif|使用[[{{tr|Rocket Launcher}}]]发射{{tr|honey rocket}}。
+</gallery>
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Switch 1.4.0.5.5|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+{{Explosives}}
+{{Master Template Consumables
+| show-ammo = yes
+}}
+{{language info|en=Liquid rockets}}

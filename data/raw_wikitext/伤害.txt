@@ -1,0 +1,495 @@
+__FORCETOC__
+'''{{tr|Damage}}'''是从某个实体的当前[[{{tr|health}}]]中所减去的{{tr|health}}值的数值。有众多实体都可以造成它，最显著的是[[{{tr|weapons}}]]、[[{{tr|enemies}}]]、和 [[{{tr|NPCs}}]]（以及所有相关的[[{{tr|projectiles}}]]）。此外，它也可能是由环境危险（例如[[{{tr|thorny bushes}}]]、[[{{tr|traps}}]]、或[[{{tr|lava}}]]）和[[{{tr|game mechanics}}]]（例如[[{{tr|fall damage}}]]、[[{{tr|drowning}}]]、或[[{{tr|debuffs}}]]）所造成的。通常只能对具有{{tr|health}}属性的实体造成{{tr|Damage}}，即[[{{tr|player}}]]、大多数{{tr|enemies}}、和 {{tr|NPCs}}。大多数{{tr|Damage}}还会对受{{tr|Damage}}的实体造成[[{{tr|knockback}}]]，并使实体变得短暂[[{{tr|Invincibility frame}}|无敌]]。
+
+当实体受到{{tr|Damage}}时，在{{tr|Damage}}实际应用于实体之前，会执行若干增减{{tr|Damage}}量的计算（取决于多个因素；参见[[#计算|下文]]）。因此，任何造成{{tr|Damage}}的实体的{{tr|Damage}}属性数据通常都只是其所造成的''平均''{{tr|Damage}}。大多数打击造成的实际{{tr|Damage}}会偏离此平均值。
+
+玩家所持的{{tr|weapons}}所造成的伤害分为四种：[[{{tr|melee}}]]、[[{{tr|ranged}}]]、[[{{tr|magic}}]]、和[[{{tr|Summon weapons}}|{{tr|summon}}]]。[[{{tr|Accessories}}]]、[[{{tr|buffs}}]]、和其他强化伤害或降低伤害的效果常常只会影响这些伤害类型其中之一。有几种武器以及所有其他伤害性实体未被归类为这四种类型中的任何一种。
+
+== 伤害类型 ==
+{{redirect|职业|使用特定职业游玩的攻略|指南:职业设置}}
+<!--
+// cargo queries:
+-->{{#vardefine:melee_count|<!--
+	-->{{#cargo_query:tables=Items|fields=count(distinct itemid)|no html|where=unobtainable IS NULL AND damagetype LIKE '%melee%' AND type HOLDS 'weapon'}}<!--
+-->}}<!--
+-->{{#vardefine:ranged_count|<!--
+	-->{{#cargo_query:tables=Items|fields=count(distinct itemid)|no html|where=unobtainable IS NULL AND damagetype LIKE '%ranged%' AND type HOLDS 'weapon'}}<!--
+-->}}<!--
+-->{{#vardefine:magic_count|<!--
+	-->{{#cargo_query:tables=Items|fields=count(distinct itemid)|no html|where=unobtainable IS NULL AND damagetype LIKE '%magic%'}}<!--
+-->}}<!--
+-->{{#vardefine:summon_count|<!--
+	-->{{#cargo_query:tables=Items|fields=count(distinct itemid)|no html|where=unobtainable IS NULL AND damagetype LIKE '%summon%'}}<!--
+-->}}<!--
+-->{{#vardefine:summon_count_whips|<!--
+	-->{{#cargo_query:tables=Items|fields=count(distinct itemid)|no html|where=unobtainable IS NULL AND listcat HOLDS 'whips'}}<!--
+-->}}<!--
+-->
+=== {{tr|Melee}} ===
+{{tr|Melee weapons}}用于近程至中程战斗。它们的主要特征是使用时不消耗[[{{tr|Ammunition items}}|{{tr|ammunition}}]]或[[{{tr|mana}}]]。它们大致分为[[{{tr|swords}}]]、[[{{tr|spears}}]]、[[{{tr|flails}}]]、[[{{tr|boomerangs}}]]、和{{eil|yoyos}}。还有其他几种{{tr|melee weapons}}无法被分类到上述类型中。
+
+总共有 {{#var:melee_count}} 种不同的{{tr|melee weapons}}。
+
+=== 远程 ===
+[[{{tr|Ranged weapons}}]]用于远距离战斗。它们的主要特征是需要有[[{{tr|ammunition}}]]才能使用此武器。它们大致可分为[[{{tr|bows}}]]、[[{{tr|repeaters}}]]、[[{{tr|guns}}]]、和[[{{tr|launchers}}]]。所有[[{{tr|consumable}}]]{{tr|weapons}}也被分类为{{tr|ranged weapons}}。虽然[[{{tr|boomerangs}}]]是丢出的，但[[《{{tr|Terraria}}》]]将它们归类为{{tr|melee weapons}}。
+
+总共有 {{#var:ranged_count}} 种不同的{{tr|ranged weapons}}。
+
+=== 魔法 ===
+[[{{tr|Magic weapons}}]]用于中程至远程战斗。它们的主要特征是每次使用时都会消耗[[{{tr|mana}}]]。由于它们有非同寻常的独特攻击形式，大部分{{tr|magic weapons}}都难以对其进行分类。
+
+总共有 {{#var:magic_count}} 种不同的{{tr|magic weapons}}。
+
+=== 召唤 ===
+[[{{tr|Summoning weapons}}]]包含{{tr|summon staffs}}和{{eil|whips}}。使用{{tr|summon staff}}会生成通过自动攻击{{tr|enemies}}来在战斗中帮助玩家的次要角色。被召唤的角色要么是可移动的，即跟随玩家移动（{{tr|minion}}），要么是静止的，即停在其被召唤的位置（{{tr|sentry}}）。{{tr|Whips}}是近程至中程{{tr|weapons}}，会提高{{tr|minion}}对被击中的{{tr|enemies}}的{{tr|damage}}，且会将其标记，使得{{tr|minions}}集中攻击这些{{tr|enemies}}。
+
+在 {{eil|1.4.4}} 前，{{tr|summon damage}}在大部分{{tr|tooltips}}中被称为“{{tr|minion damage}}”。
+
+总共有 {{#var:summon_count}} 种不同的{{tr|summon weapons}}。
+
+== 计算 ==
+=== 武器伤害===
+玩家所持的[[{{tr|weapon}}]]或伤害性的[[{{tr|consumables}}]]的{{tr|The damage}}按以下方式决定：{{source code ref|v=1.4.4.9|method=Terraria.Item.Prefix / Terraria.Player.GetWeaponDamage / Terraria.Player.GrantArmorBenefits / Terraria.Player.GrantPrefixBenefits / Terraria.Player.ItemCheck_Shoot / Terraria.Player.PickAmmo}}
+
+首先，应用{{tr|weapon}}的[[{{tr|modifier}}]]的效果：
+: <code>{{tr|Weapon damage}} = {{tr|Base weapon damage}} × {{tr|Modifier damage}}倍率</code>
+
+之后，所有{{tr|damage bonuses}}（来自[[{{tr|accessories}}]]、[[{{tr|armor}}]]、[[{{tr|buffs}}]]、{{tr|accessories}}的[[{{tr|modifiers}}]]、[[{{tr|mounts}}]]，等等）会被添加到对应伤害类型（{{tr|melee, ranged, magic, or summon}}）的伤害倍率中。 对于全体{{tr|damage bonuses}}（即“{{tr|damage}}提高x%”），{{tr|bonus}}数值会被增加到所有{{tr|damage}}类型中。默认伤害倍率为 1，意味着{{tr|weapon}}在没有任何{{tr|bonuses}}时造成 100% {{tr|base damage}}。{{source code ref|v=1.4.4.9|method=Terraria.Mount.UpdateEffects / Terraria.Player.ApplyEquipFunctional / Terraria.Player.GrantArmorBenefits / Terraria.Player.GrantPrefixBenefits}}
+
+注意来自[[{{tr|Archery Potion}}]]、[[{{tr|Magic Quiver}}]]{{tr|and its upgrades}}、和[[{{tr|Shroomite armor}}]]头部部件的{{tr|damage bonuses}}是单独处理的，不计入上方的伤害倍率。见下方的{{tr|ranged damage}}计算以获取相关细节。
+
+例如：
+* 装备[[{{tr|Ranger Emblem}}]]会使{{tr|ranged damage}}倍率增加 0.15；激活[[{{tr|Clairvoyance}}]]{{tr|buff}}会使{{tr|magic damage}}倍率增加 0.05。
+* 装备[[{{tr|Destroyer Emblem}}]]会使{{tr|melee, ranged, magic, and summon damage}}倍率均增加 0.1。
+
+{{tr|damage}}值随后使用下列公式计算，向下取整。
+
+* 对于{{tr|melee, magic, and summon weapons}}：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck / Terraria.Player.GetWeaponDamage / Terraria.Player.ItemCheck_OwnerOnlyCode}}
+: <code>最终{{tr|damage}} = {{tr|Weapon damage}} × 对应{{tr|damage}}倍率</code>
+
+* 对于{{tr|ranged weapons}}，{{tr|the weapon damage}}和{{tr|ammo damage}}伤害会分别计算：
+----
+{{exclusive|1.4.4|section=y}}
+在计算{{tr|weapon}}的{{tr|damage}}时，{{tr|ranged damage}}倍率会先被[[{{tr|Shroomite armor}}]]头盔和[[{{tr|Magic Quiver}}]]及其升级的{{tr|bonus}}更改：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck / Terraria.Player.GetWeaponDamage}}
+: 对于发射[[{{tr|arrows}}]]或[[{{tr|Stake}}]]的{{tr|weapons}}：<code>{{tr|Weapon}}{{tr|ranged}}倍率 = ({{tr|Ranged damage}}倍率 + 箭袋{{tr|bonus}}) × {{tr|Shroomite bonus}}</code>
+: 对于发射其他{{tr|ammos}}的{{tr|weapons}}：<code>{{tr|Weapon}}{{tr|ranged}}倍率 = {{tr|Ranged damage}}倍率 × {{tr|Shroomite bonus}}</code>
+* <code>{{tr|Shroomite bonus}}</code>为 1.15；[[{{tr|Magic Quiver}}]]、[[{{tr|Molten Quiver}}]]、和[[{{tr|Stalker's Quiver}}]]各会使<code>箭袋{{tr|bonus}}</code>增加 0.1。
+: 此后计算{{tr|weapon damage}}：<code>最终{{tr|weapon damage}} = {{tr|Weapon damage}} × {{tr|Weapon}}{{tr|ranged}}倍率</code>
+----
+{{exclusive|1.4.4|invert=y|section=y}}
+在计算{{tr|weapon}}的{{tr|damage}}时，首先会直接使用{{tr|ranged damage}}倍率：{{source code ref|old=y|v=1.4.3.6|method=Terraria.Player.ItemCheck / Terraria.Player.GetWeaponDamage}}
+: <code>提高后的{{tr|ranged damage}} = {{tr|Ranged weapon damage}} × {{tr|Ranged damage}}倍率</code>
+
+然后应用[[{{tr|Shroomite armor}}]]头盔和[[{{tr|Magic Quiver}}]]的{{tr|bonus}}：
+: 对于发射[[{{tr|arrows}}]]或[[{{tr|Stake}}]]的{{tr|weapons}}：<code>最终{{tr|weapon damage}} = 提高后的{{tr|ranged damage}} × (1 + {{tr|Shroomite bonus}} + 箭袋{{tr|bonus}})</code>
+: 对于发射其他{{tr|ammos}}的{{tr|weapons}}：<code>最终{{tr|weapon damage}} = 提高后的{{tr|ranged damage}} × (1 + {{tr|Shroomite bonus}})</code>
+* <code>{{tr|Shroomite bonus}}</code>为 0.15；[[{{tr|Magic Quiver}}]]会提供 0.1 的<code>箭袋{{tr|bonus}}</code>。
+----
+如果{{tr|weapon}}使用的{{tr|ammo item}}造成高于 0 {{tr|damage}}且造成{{tr|ranged damage}}，{{tr|ranged damage}}倍率会直接用于计算其{{tr|damage}}：{{source code ref|v=1.4.4.9|method=Terraria.Player.ItemCheck / Terraria.Player.GetWeaponDamage / Terraria.Player.ItemCheck_OwnerOnlyCode / Terraria.Player.ItemCheck_Shoot / Terraria.Player.PickAmmo}}
+: <code>{{tr|Ammo damage}} = {{tr|Base ammo damage}}× {{tr|Ranged damage}}倍率</code>
+
+如果{{tr|ammo}}造成 0 {{tr|damage}}或更低（即拥有默认为 -1 的伤害值{{source code ref|v=1.4.4.9|method=Terraria.Item.ResetStats}}）或不造成{{tr|ranged damage}}，<code>{{tr|Ammo damage}}</code>将直接为{{tr|ammo item}}的{{tr|damage}}值。因此，[[{{tr|Fallen Star}}]]、[[{{tr|Gel}}]]、和[[{{tr|Sand Block}}]]实际上会使最终伤害降低 1。
+
+在检查{{tr|ammo item}}的{{tr|damage}}时，部分效果会提供<code>额外{{tr|damage}}</code>，会直接加入{{tr|damage}}值中：{{source code ref|name=1449pickammo|v=1.4.4.9|method=Terraria.Player.PickAmmo}}
+* 对于[[{{tr|Sandgun}}]]，使用[[{{tr|Pearlsand Block}}]]、[[{{tr|Ebonsand Block}}]]、或[[{{tr|Crimsand Block}}]]提供 5 额外{{tr|damage}}。
+* 若装备了{{eil|Molten Quiver}}且{{tr|ammo}}是[[{{tr|Wooden Arrow}}]]，会提供 2 额外{{tr|damage}}。
+
+最终{{tr|damage}}将会是{{tr|weapon damage}}、{{tr|ammo damage}}、和额外{{tr|damage}}的总和。如果激活了[[{{tr|Archery}}]]{{tr|buff}}且{{tr|ammo}}是{{tr|arrows or Stake}}，最终{{tr|damage}}会被乘以 {{etext|1.1|e=1.4.4}} / {{etext|1.2|e=1.4.4|invert=y}}：<ref name="1449pickammo"/>
+: <code>最终{{tr|damage}} = (最终{{tr|weapon damage}} + {{tr|Ammo damage}} + 额外{{tr|damage}}) × {{tr|Archery buff}}</code>
+
+此外，{{tr|ranged weapon}}的{{tr|cursor}}悬停文本中所列出的{{tr|damage}}具有不同的公式：{{source code ref|v=1.4.4.9|method=Terraria.Main.MouseText_DrawItemTooltip_GetLinesInfo}}
+: {{eicons|1.4.4}} <code>悬停文本中的伤害 = {{tr|Weapon damage}} × {{tr|Weapon}}{{tr|ranged}}倍率 × {{tr|Archery buff}}</code>
+: {{eicons|1.4.4|invert=y}} <code>悬停文本中的伤害 = {{tr|Weapon damage}} × {{tr|Ranged damage}}倍率 × (1 + {{tr|Shroomite bonus}} + 箭袋{{tr|bonus}}) × {{tr|Archery buff}}</code>
+
+==== 示例 ====
+{{collapse top|显示{{tr|weapon damage}}计算示例|隐藏示例}}
+; 示例 1
+[[{{tr|Godly}}]]{{eil|Meowmere}}、[[{{tr|Turtle armor}}]]、[[{{tr|Menacing}}]][[{{tr|Warrior Emblem}}]]、{{tr|Menacing}}[[{{tr|Avenger Emblem}}]]、{{tr|Menacing}}[[{{tr|Destroyer Emblem}}]]、{{tr|Menacing}}[[{{tr|Mechanical Glove}}]]、{{tr|Menacing}}[[{{tr|Celestial Stone}}]]、和[[{{tr|Well Fed}}]]{{tr|buff}}。<!--
+-->{{#vardefine:basedmg_1|{{#expr:{{iteminfo|Meowmere|damage|raw=y}}*1.15 round 0}}}}<!--
+-->{{#vardefine:multiplier_1|{{#expr:1+0.14+0.2+0.15+0.12+0.1+0.12+0.1+0.05}}}}
+* {{tr|Meowmere}}的{{tr|base damage}}是 {{iteminfo|Meowmere|damage}}。{{tr|Godly modifier}}会将其提高至 {{#var:basedmg_1}}。
+* {{tr|Melee damage}}倍率 = {{ht|1|基础值}} + {{ht|0.14|{{tr|Turtle armor}}}} + {{ht|0.2|5 个{{tr|Menacing modifiers}}}} + {{ht|0.15|{{tr|Warrior Emblem}}}} + {{ht|0.12|{{tr|Avenger Emblem}}}} + {{ht|0.1|{{tr|Destroyer Emblem}}}} + {{ht|0.12|{{tr|Mechanical Glove}}}} + {{ht|0.1|{{tr|Celestial Stone}}}} + {{ht|0.05|{{tr|Well Fed}}}} = {{#var:multiplier_1}}
+* 最终{{tr|damage}} = {{ht|{{#var:basedmg_1}}|{{tr|Godly Meowmere}}}} × {{ht|{{#var:multiplier_1}}|{{tr|Melee damage}}倍率}} = {{#expr:floor({{#var:basedmg_1}}*{{#var:multiplier_1}})}}
+
+; 示例 2
+[[{{tr|Godly}}]][[{{tr|Chlorophyte Shotbow}}]]和[[{{tr|Wooden Arrow}}]]、使用[[{{tr|Shroomite Headgear}}]]的[[{{tr|Shroomite armor}}]]、[[{{tr|Menacing}}]][[{{tr|Ranger Emblem}}]]、{{tr|Menacing}}[[{{tr|Avenger Emblem}}]]、{{tr|Menacing}}[[{{tr|Destroyer Emblem}}]]、{{tr|Menacing}}[[{{tr|Magic Quiver}}]]、和[[{{tr|Archery}}]]{{tr|buff}}。<!--
+-->{{#vardefine:basedmg_2|{{#expr:{{iteminfo|Chlorophyte Shotbow|damage|raw=y}}*1.15 round 0}}}}<!--
+-->{{#vardefine:multiplier_2|{{#expr:1+0.13+0.6+0.16+0.15+0.12+0.1}}}}
+
+在{{eversions|1.4.4}}中：<!--
+-->{{#vardefine:weapondmg1449_2|{{#expr:floor({{#var:basedmg_2}}*({{#var:multiplier_2}}+0.1)*1.15)}}}}<!--
+-->{{#vardefine:ammodmg1449_2|{{#expr:floor({{iteminfo|Wooden Arrow|damage}}*{{#var:multiplier_2}})}}}}
+* {{tr|Chlorophyte Shotbow}}的{{tr|base damage}}是 {{iteminfo|Chlorophyte Shotbow|damage}}。{{tr|Godly modifier}}会将其提高至 {{#var:basedmg_2}}。
+* {{tr|Ranged damage}}倍率 = {{ht|1|基础值}} + {{ht|0.13|{{tr|Shroomite armor}}}} + {{ht|0.6|{{tr|Shroomite armor}}潜行效果}} + {{ht|0.16|4 个{{tr|Menacing modifiers}}}} + {{ht|0.15|{{tr|Ranger Emblem}}}} + {{ht|0.12|{{tr|Avenger Emblem}}}} + {{ht|0.1|{{tr|Destroyer Emblem}}}}= {{#var:multiplier_2}}
+* 最终{{tr|weapon damage}} = {{ht|{{#var:basedmg_2}}|{{tr|Godly Chlorophyte Shotbow}}}} × ({{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} + {{ht|0.1|箭袋{{tr|bonus}}}}) × {{ht|1.15|{{tr|Shroomite bonus}}}} = {{#var:weapondmg1449_2}}
+* {{tr|Ammo damage}} = {{ht|{{iteminfo|Wooden Arrow|damage}}|{{tr|Wooden Arrow base damage}}}} × {{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} = {{#var:ammodmg1449_2}}
+* {{tr|Chlorophyte Shotbow}}的悬停文本中的伤害值为 {{ht|{{#var:basedmg_2}}|{{tr|Godly Chlorophyte Shotbow}}}} × ({{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} + {{ht|0.1|箭袋{{tr|bonus}}}}) × {{ht|1.15|{{tr|Shroomite bonus}}}} × {{ht|1.1|{{tr|Archery buff}}}} = {{#expr:floor({{#var:basedmg_2}}*({{#var:multiplier_2}}+0.1)*1.15*1.1)}}
+* 最终{{tr|damage}} = ({{ht|{{#var:weapondmg1449_2}}|最终{{tr|weapon damage}}}} + {{ht|{{#var:ammodmg1449_2}}|{{tr|Ammo damage}}}}) ×{{ht|1.1|{{tr|Archery buff}}}} = {{#expr:floor(({{#var:weapondmg1449_2}}+{{#var:ammodmg1449_2}})*1.1)}}
+
+在{{eversions|1.4.4|invert=y}}中：<!--
+-->{{#vardefine:weapondmg1436_2|{{#expr:floor({{#var:basedmg_2}}*{{#var:multiplier_2}}*(1+0.15+0.1))}}}}<!--
+-->{{#vardefine:ammodmg1436_2|{{#expr:floor(4*{{#var:multiplier_2}})}}}}
+* {{tr|Chlorophyte Shotbow}}的{{tr|base damage}}是 {{iteminfo|Chlorophyte Shotbow|damage}}。{{tr|Godly modifier}}会将其提高至 {{#var:basedmg_2}}。
+* {{tr|Ranged damage}}倍率 = {{ht|1|基础值}} + {{ht|0.13|{{tr|Shroomite armor}}}} + {{ht|0.6|{{tr|Shroomite armor}}潜行效果}} + {{ht|0.16|4 个{{tr|Menacing modifiers}}}} + {{ht|0.15|{{tr|Ranger Emblem}}}} + {{ht|0.12|{{tr|Avenger Emblem}}}} + {{ht|0.1|{{tr|Destroyer Emblem}}}}= {{#var:multiplier_2}}
+* 最终{{tr|weapon damage}} = {{ht|{{#var:basedmg_2}}|{{tr|Godly Chlorophyte Shotbow}}}} × {{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} × ({{ht|1|基础值}} + {{ht|0.15|{{tr|Shroomite bonus}}}} + {{ht|0.1|箭袋{{tr|bonus}}}}) = {{#var:weapondmg1436_2}}
+* {{tr|Ammo damage}} = {{ht|4|{{tr|Wooden Arrow base damage}}}}<!--Wooden Arrrow damage pre-1.3.0.1--> × {{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} = {{#var:ammodmg1436_2}}
+* {{tr|Chlorophyte Shotbow}}的悬停文本中的伤害值为 {{ht|{{#var:basedmg_2}}|{{tr|Godly Chlorophyte Shotbow}}}} × {{ht|{{#var:multiplier_2}}|{{tr|Ranged damage}}倍率}} × ({{ht|1|基础值}} + {{ht|0.15|{{tr|Shroomite bonus}}}} + {{ht|0.1|箭袋{{tr|bonus}}}}) × {{ht|1.2|{{tr|Archery buff}}}} = {{#expr:floor({{#var:basedmg_2}}*{{#var:multiplier_2}}*(1+0.15+0.1)*1.2)}}
+* 最终{{tr|damage}} = ({{ht|{{#var:weapondmg1436_2}}|最终{{tr|weapon damage}}}} + {{ht|{{#var:ammodmg1436_2}}|{{tr|Ammo damage}}}}) ×{{ht|1.2|{{tr|Archery buff}}}} = {{#expr:floor(({{#var:weapondmg1436_2}}+{{#var:ammodmg1436_2}})*1.2)}}
+{{collapse bottom}}
+
+=== 对实体的{{tr|damage}} ===
+除了{{tr|weapon damage}}以外，对实体造成的伤害会被许多其他因素影响：附近是否有相关的[[{{tr|Banners (enemy)}}]]、玩家的[[{{tr|armor penetration}}]]、和目标的[[{{tr|defense}}]]，等等。下列公式被用于计算中：{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyDamageToNPC / Terraria.NPC.StrikeNPC}}
+* {{anchor|formula}}无{{tr|banner}}时的{{tr|Damage}}：<code>考虑{{tr|banner}}后的{{tr|Damage}} = 最终{{tr|Damage}}</code>；
+* 有{{tr|banner}}时的{{tr|Damage}}：<code>考虑{{tr|banner}}后的{{tr|Damage}} = 系数 × 最终{{tr|Damage}}</code>；
+** 在[[{{tr|Classic Mode}}]]下：系数对于普通{{tr|enemies}}为 1.5，对[[{{tr|Old One's Army}}]]{{tr|enemies}}为 1.1。
+** 在[[{{tr|Expert Mode}}]]下：系数对于普通{{tr|enemies}}为 2，对[[{{tr|Old One's Army}}]]{{tr|enemies}}为 1.2。
+* 计算伤害时，{{tr|defense}}的效果：<code>{{tr|Defense}}对{{tr|damage}}的减免量 = ⌈{{tr|Enemy defense}}/2⌉</code>
+* 计算随机的伤害浮动：<code>伤害浮动 = {{tr|Damage}} × 系数2</code>，其中<code>系数2</code>是 0.85 和 1.15 之间的随机值（闭区间）。
+** 结果取整到最近的整数。如果小数部分为 0.5，则改为取整到最近的偶数。
+
+游戏使用不同的方法来决定{{tr|melee weapons and projectiles}}的伤害。{{source code ref|v=1.4.4.9|method=Terraria.Player.ProcessHitAgainstNPC / Terraria.Projectile.Damage}}
+
+==== 近战武器 ====
+* 应用{{tr|banners}}的效果来获得<code>考虑{{tr|banner}}后的{{tr|Damage}}</code>。计算使用的是上方计算得到的<code>最终{{tr|damage}}</code>。
+* 应用[[{{tr|Striking Moment}}]]{{tr|buff}}的效果，将<code>考虑{{tr|banner}}后的{{tr|Damage}}</code>乘以 5。
+* 应用{{tr|weapon}}效果对{{tr|damage}}的影响（例：{{eicons|1.4.4}} [[{{tr|Breaker Blade}}]]的效果）。
+* 应用随机伤害浮动。
+* 应用[[{{tr|armor penetration}}]]的效果。
+* {{eicons|1.4.4|invert=y}}应用[[{{tr|Ichor (debuff)}}|{{tr|Ichor debuff}}]]的效果。
+* 应用{{tr|defense}}的效果，从伤害中减去<code>{{tr|Defense}}对{{tr|damage}}的减免量</code>。若结果少于 1，将伤害设为 1。
+* 若攻击是[[{{tr|critical strike}}]]，将伤害乘以 2。
+* 如果目标是旋转中的[[{{tr|Selenian}}]]，将伤害乘以 3。{{source code ref|name=fighters|v=1.4.4.9|method=Terraria.NPC.AI_003_Fighters}}
+
+==== 射弹 ====
+* 计算{{tr|projectile}}的{{tr|base damage}}，使用上方计算得到的<code>最终{{tr|damage}}</code>。默认情况下这等于<code>最终{{tr|damage}}</code>，但对于随着额外召唤来变强的{{tr|minions}}（例：[[{{tr|Stardust Dragon}}]]），伤害则由其对应页面上的公式计算得到。
+* 应用随机伤害浮动。
+* 应用{{tr|banners}}的效果来获得<code>考虑{{tr|banner}}后的{{tr|Damage}}</code>。
+* 若{{tr|projectile}}是{{tr|melee projectile}}，应用[[{{tr|Striking Moment}}]]{{tr|buff}}的效果，将<code>考虑{{tr|banner}}后的{{tr|Damage}}</code>乘以 5。
+* 应用{{tr|armor penetration}}的效果。
+* {{eicons|1.4.4|invert=y}}应用[[{{tr|Ichor (debuff)}}|{{tr|Ichor debuff}}]]的效果。
+* 应用{{tr|defense}}的效果，从伤害中减去<code>{{tr|Defense}}对{{tr|damage}}的减免量</code>。若结果少于 1，将伤害设为 1。
+* 若攻击是{{tr|critical strike}}，将伤害乘以 2。
+* 如果目标是旋转中的{{tr|Selenian}}，将伤害乘以 3。<ref name="fighters"/>
+
+=== 坐骑 ===
+部分[[{{tr|mounts}}]]拥有其自己的攻击方式（发射{{tr|projectiles}}）。其伤害计算和[[#{{tr|Projectiles}}|{{tr|projectiles}}的]]相同，但它们不受到{{tr|damage type boosts}}影响，且仅受到特定类型的{{tr|critical strike chance}}影响。没有设定{{tr|damage type}}的{{tr|Projectiles}}无法造成{{tr|critical hits}}。{{source code ref|v=1.4.4.9|method=Terraria.Projectile.Damage / Terraria.Mount.CastSuperCartLaser / Terraria.Mount.UseAbility}}
+{{options/set|item|mode=table|class=alignleft|wrap=y}}
+{| class="terraria lined" style="text-align:center;"
+! colspan=2 | {{tr|Mount}} !! {{tr|Base damage}} !! {{tr|Damage type}}
+|-
+| {{item|Minecart Upgrade Kit|note2=（任何{{tr|minecart}}）}}
+| 60
+| {{na}}
+|-
+| {{item|{{getMountInfo|9|name}}}}
+| 150
+| {{na}}
+|-
+| {{item|{{getMountInfo|46|name}}|note2=（{{tr|bullet}}）}}
+| 100
+| {{tr|Ranged}}
+|-
+| {{item|{{getMountInfo|46|name}}|note2=（{{tr|rocket}}）}}
+| 120
+| {{tr|Ranged}}
+|}{{options/reset|item}}
+
+特定的[[{{tr|mounts}}]]在接触时会对实体造成伤害。其伤害计算如下（部分公式和[[#formula|上方]]的相同）：{{source code ref|v=1.4.4.9|method=Terraria.Player.JumpMovement / Terraria.Player.HorizontalMovement}}
+* 若受[[{{tr|summon damage}}]]影响，则将<code>{{tr|Base damage}}</code>乘以玩家的{{tr|summon damage}}。
+* 应用{{tr|banners}}的效果。
+* {{eicons|1.4.0.1}}应用[[{{tr|armor penetration}}]]的效果。<!-- 在 1.4.0.1 前：盔甲穿透对坐骑的接触伤害没有效果 -->
+* {{eicons|1.4.4|invert=y}}应用[[{{tr|Ichor (debuff)}}|{{tr|Ichor debuff}}]]的效果。
+* 应用{{tr|defense}}的效果，从伤害中减去<code>{{tr|Defense}}对{{tr|damage}}的减免量</code>。若结果少于 1，将伤害设为 1。
+* 如果目标是旋转中的[[{{tr|Selenian}}]]，将伤害乘以 3。<ref name="fighters"/>
+* 注意没有伤害浮动，且这些伤害不能造成{{tr|critical strikes}}。
+{{options/set|item|mode=table|class=alignleft|wrap=y}}
+{| class="terraria lined" style="text-align:center;"
+! colspan=2 | {{tr|Mount}} !! {{tr|Base damage}} !! 受[[{{tr|summon damage}}]]影响
+|-
+| {{item|{{getMountInfo|3|name}}}}
+| rowspan=3 | 40
+| rowspan=3 | {{yes}}
+|-
+| {{item|{{getMountInfo|50|name}}}}
+|-
+| {{item|{{getMountInfo|17|name}}|note2=（撞上实体）}}
+|-
+| {{item|{{getMountInfo|17|name}}|note2=（落到实体上）}}
+| 40
+| {{no}}
+|-
+| {{item|{{getMountInfo|40|name}}}}
+| rowspan=3 | 30
+| rowspan=3 | {{yes}}
+|-
+| {{item|{{getMountInfo|41|name}}}}
+|-
+| {{item|{{getMountInfo|42|name}}}}
+|-
+| {{item|{{getMountInfo|10|name}}}}
+| rowspan=2 | 60
+| rowspan=2 | {{yes}}
+|-
+| {{item|{{getMountInfo|47|name}}}}
+|-
+| {{item|{{getMountInfo|44|name}}}}
+| 100
+| {{yes}}
+|-
+| {{item|{{getMountInfo|45|name}}}}
+| 120
+| {{yes}}
+|-
+| {{item|{{getMountInfo|14|name}}}}
+| 90
+| {{yes}}
+|}{{options/reset|item}}
+
+==== 矿车 ====
+[[{{tr|Minecarts|link=y}}|{{tr|Minecarts}}]]造成的{{tr|contact damage}}的计算如下：{{source code ref|v=1.4.4.9|method=Terraria.Player.Update}}
+* 通过[[{{tr|Minecarts|link＝y}}#{{tr|Damage and knockback}}|{{tr|Minecarts}} § {{tr|Damage and knockback}}]]中的公式计算{{tr|base damage}}。
+* 应用随机伤害浮动。
+* 应用{{tr|banners}}的效果。
+* {{eicons|1.4.0.1}} 应用[[{{tr|armor penetration}}]]的效果。<!-- 在 1.4.0.1 前：盔甲穿透对矿车的接触伤害没有效果 -->
+* {{eicons|1.4.4|invert=y}}应用[[{{tr|Ichor (debuff)}}|{{tr|Ichor debuff}}]]的效果。
+* 应用{{tr|defense}}的效果，从伤害中减去<code>{{tr|Defense}}对{{tr|damage}}的减免量</code>。若结果少于 1，将伤害设为 1。
+* 若攻击是{{tr|critical strike}}，将伤害乘以 2。
+* 如果目标是旋转中的[[{{tr|Selenian}}]]，将伤害乘以 3。<ref name="fighters"/>
+<!--
+An anomaly in the rounding of the min and max damage found by [[User:MiniHobbit]].
+======
+[[User:BadPiggy1024]]:
+This part maybe unnecessary, since this is related to the C# method Math.Round(Double). Maybe delete this part?
+
+Explanation: Terraria.Main.DamageVar() uses the Round(Double) method, which rounds double-precision floating-point number to the nearest integer. For values halfway between two integers, the even number is returned, so 25.5 rounds to 26 instead of 25.
+======
+Below is original info added by [[User:MiniHobbit]]
+======
+Note: The actual calculations for the damage can be inconsistent, for example:
+A Bee Keeper (30) or Nimbus Rod (30) should mathematically do the following damage:
+: Min: 30*0.85 = 25.5
+: Max: 30*1.15 = 34.5
+Rounded:
+: Min: 25.5 => 26    or    25.5 => 25
+: Max: 34.5 => 35          34.5 => 34
+However, they both do between 26-34 damage, an entire difference of 8 from the original sum.
+That means:
+: Min value is rounded UP.
+: Max value is rounded DOWN.
+This method is in itself very smart, because the average damage does not shift up or down.
+But if one was to apply this expression to a Tungsten Shortsword (10) you get the following results:
+: Min: 10*0.85 = 8.5
+: Max: 10*1.15 = 11.5
+Rounded:
+: Min:  8.5 => 8    or     8.5 => 9
+: Max: 11.5 => 12          11.5 => 11
+But it does between 8-12 damage, which is an entire difference of 4.
+That means:
+: Min value is rounded DOWN.
+: Max value is rounded UP.
+
+Even with the Tungsten Shortsword the theoretical average damage does not shift, but the methodology is inconsistent and not comprehensible. For one damage value the min value is rounded down for the other the max value.
+This inconsistency, however, is very niche and doesn't seem to have a significant impact on gameplay.
+
+One noticeable thing of these discrepancies is that their differences are a multiple of 4.-->
+
+== 最大伤害 ==
+{{info request|
+* 检查是否准确。
+* 更多章节。
+}}
+
+* 最大{{tr|damage}}公式为({{tr|damage boost}}) x ({{tr|crit chance}})，且{{tr|crit chance}}最高为 100。
+** 最大{{tr|summon damage}}公式为(({{tr|damage boost}}) x ({{tr|minion}}数) + ({{tr|damage boost}}) x ({{tr|sentry}}数)) x ({{tr|crit chance}})。{{tr|Summon}}{{tr|crit chance}}只来自于某些{{tr|whip}}。
+* 虽然{{tr|summon}}最大{{tr|damage boost}}看起来很高，但重要的是需要考虑到召唤师更多地依赖于他们装备的提升来获得力量。这意味着相比其他职业，他们的{{tr|damage boost}}只能带来低得多的 DPS 提升，以致于最终和射手或法师差不多。
+
+=== 近战 ===
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|melee damage boost}}为 276.1%，通过以下组合达成：
+: {{itemlist
+|{{item|Shinobi Infiltrator's Helmet}}
+|{{item|Solar Flare Breastplate}}
+|{{item|Orichalcum Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Menacing}}，在{{tr|night}}，未接触{{tr|water}}时）}}
+|{{item|Warrior Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Fire Gauntlet|note2=（{{tr|Menacing}}）}}
+|{{item|Mechanical Glove|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Tipsy}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+==== 最大伤害输出 ====
+最大{{tr|melee}}输出{{tr|boost}}为 452.2%，由 226.1% {{tr|melee damage}} × 100% {{tr|melee critical strike chance}}（+19% {{tr|base crit chance}}来自于{{tr|Legendary}}[[{{tr|Zenith}}]]）组成，通过以下组合达成：
+: {{itemlist
+|{{item|Solar Flare Helmet}}
+|{{item|Solar Flare Breastplate}}
+|{{item|Valhalla Knight's Greaves}}
+|{{item|Celestial Shell|note2=（{{tr|Lucky}}，在{{tr|night}}，未接触{{tr|water}}时）}}
+|{{item|Warrior Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Fire Gauntlet|note2=（{{tr|Menacing}}）}}
+|{{item|Mechanical Glove|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Rage}}
+|{{item|Tipsy}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+=== 远程 ===
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|ranged damage boost}}为 326%，通过以下组合达成：
+: {{itemlist
+|{{item|Vortex Helmet|note2=（使用{{tr|Stealth}}模式）}}
+|{{item|Vortex Breastplate}}
+|{{item|Vortex Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Menacing}}）}}
+|{{item|Ranger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Recon Scope|note2=（{{tr|Menacing}}）}}
+|{{item|Sniper Scope|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Archery}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+==== 最大伤害输出 ====
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|ranged}}输出{{tr|boost}}为 644%，由 322% {{tr|ranged damage}} × 100% {{tr|ranged critical strike chance}}（+9% {{tr|base crit chance}}来自于{{tr|Unreal}}[[{{tr|Phantasm}}]]）组成，通过以下组合达成：
+: {{itemlist
+|{{item|Vortex Helmet|note2=（使用{{tr|Stealth}}）}}
+|{{item|Vortex Breastplate}}
+|{{item|Vortex Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Menacing}}）}}
+|{{item|Ranger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Recon Scope|note2=（{{tr|Menacing}}）}}
+|{{item|Sniper Scope|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Rage}}
+|{{item|Archery}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+=== 魔法 ===
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|magic damage boost}}为 246%，通过以下组合达成：
+: {{itemlist
+|{{item|Chlorophyte Headgear}}
+|{{item|Dark Artist's Robes}}
+|{{item|Nebula Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Menacing}}）}}
+|{{item|Sorcerer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Celestial Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Spore Sac|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Magic Power}}
+|{{item|Clairvoyance}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+==== 最大伤害输出 ====
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|magic}}输出{{tr|boost}}为 446%，由 223% {{tr|magic damage}} × 100% {{tr|magic critical strike chance}}（+9% {{tr|base crit chance}}来自于{{tr|Mythical}}[[{{tr|Lunar Flare}}]]）组成，通过以下组合达成：
+: {{itemlist
+|{{item|Hallowed Headgear}}
+|{{item|Nebula Breastplate}}
+|{{item|Dark Artist's Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Lucky}}）}}
+|{{item|Sorcerer Emblem|note2=（{{tr|Lucky}}）}}
+|{{item|Celestial Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Eye of the Golem|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Destroyer Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Putrid Scent|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Rage}}
+|{{item|Magic Power}}
+|{{item|Clairvoyance}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+=== 召唤 ===
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|summon damage boost}}为 282%，通过以下组合达成：
+: {{itemlist
+|{{item|Stardust Helmet}}
+|{{item|Valhalla Knight's Breastplate}}
+|{{item|Red Riding Leggings}}
+|{{item|Celestial Shell|note2=（{{tr|Menacing}}）}}
+|{{item|Papyrus Scarab|note2=（{{tr|Menacing}}）}}
+|{{item|Hercules Beetle|note2=（{{tr|Menacing}}）}}
+|{{item|Summoner Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Squire's Shield|note2=（{{tr|Menacing}}）}}
+|{{item|Necromantic Scroll|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+==== 最大伤害输出 ====
+{{itemlist/options|class=terraria|width=60em}}{{options/set|item|icons=n}}
+最大{{tr|summon}}输出{{tr|boost}}为 4729.32%，由公式 (261% x 11 + 261% x 4) x 20.8% {{tr|crit chance}}{{tr|boost}}（来自[[{{tr|Morning Star}}]]和[[{{tr|Kaleidoscope}}]]）组成，通过以下组合达成：
+: {{itemlist
+|{{item|Stardust Helmet}}
+|{{item|Stardust Plate}}
+|{{item|Stardust Leggings}}
+|{{item|Pygmy Necklace|note2=（{{tr|Menacing}}）}}
+|{{item|Papyrus Scarab|note2=（{{tr|Menacing}}）}}
+|{{item|Hercules Beetle|note2=（{{tr|Menacing}}）}}
+|{{item|Summoner Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Avenger Emblem|note2=（{{tr|Menacing}}）}}
+|{{item|Squire's Shield|note2=（{{tr|Menacing}}）}}
+|{{item|Necromantic Scroll|note2=（{{tr|Menacing}}）}}
+|{{item|Exquisitely Stuffed}}
+|{{item|Wrath}}
+|{{item|Summoning Potion}}
+|{{item|Bewitched}}
+|{{item|Strategist}}
+|{{item|Cute Fishron Mount|note2=（下{{tr|rain}}或低于 50% {{tr|health}}时）}}
+|{{item|Feral Bite}}
+|{{item|Damage Nebula|note2=（3 堆叠）}}
+}}
+
+== 另见 ==
+* [[{{tr|Use time}}]]
+
+== 参考 ==
+{{reflist}}
+
+{{Game mechanics}}
+
+{{language info|en=Damage}}

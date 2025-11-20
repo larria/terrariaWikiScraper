@@ -1,0 +1,56 @@
+{{dablink|由于游戏官方中文将 velocity 译为“射速”，因此“射速”重定向到此处。对于通常理解中的射速（fire rate，开火频率），参见[[{{tr|use time}}]]和[[{{tr|attack speed}}]]。}}
+'''{{tr|Velocity}}'''是一个反映了[[武器]]发射{{tr|projectile}}的行进速度的隐藏属性，即每{{tr|tick}}{{tick}}沿其轨迹行进的像素数量。不要与[[{{tr|use time}}]]相混淆，后者反映的是连续两次使用物品之间的延迟长短（比如“快”、“普通”、“慢”等）。武器的{{tr|velocity}}越高，所发射{{tr|projectile}}的移动速度越快，玩家需要计算的提前量就越少。此一优势在与移动速度较快的敌人或远距离战斗时格外有效。
+
+== extraUpdates ==
+一个内部名称为 <code>extraUpdates</code> 的特殊隐藏{{tr|velocity}}乘数，适用于某些特定的{{tr|projectile}}。它确定{{tr|projectile}}在每帧中以列出的速度移动多少次。
+
+这些乘数不会在游戏中显示，在[[《{{tr|Terraria}}》]] Wiki上则会以以下两种方式体现：实际{{tr|velocity}}（用于自带{{tr|projectile}}的武器）或“速度乘数”（用于[[{{tr|ammo}}]]）。
+
+=== 实际{{tr|velocity}} ===
+自带{{tr|projectile}}的武器条目会直接显示包含该乘数的计算结果，显示为{{tr|velocity}} (实际)。
+
+=== {{tr|velocity}}乘数 ===
+对于[[{{tr|ammo}}]]物品，该乘数会单独列出为''{{tr|velocity}}乘数''。
+
+要确定使用某种武器和弹药组合时的总{{tr|velocity}}，将武器和弹药的{{tr|velocity}}相加，然后乘以该{{tr|velocity}}乘数即可。 
+
+例子：使用[[{{tr|Ice Bow}}]]发射[[{{tr|Ichor Arrow}}]]：
+
+* {{tr|Ice Bow}}{{tr|velocity}} = 20
+* {{tr|Ichor Arrow}} {{tr|velocity}} = 4.25
+* {{tr|Ichor Arrow}} {{tr|velocity}}乘数 = 2
+: <code>(20 + 4.25) * 2 = '''48.5'''</code>
+
+使用[[{{tr|Ice Bow}}]]发射[[{{tr|Ichor Arrow}}]]的总{{tr|velocity}}为 '''48.5'''。
+
+=== 内部实现 ===
+<code>extraUpdates</code>默认为 0，表示没有倍率（对于大部分{{tr|projectile}}都如此）。若为 1 则代表具有 ×2 倍率，2 则为 ×3，以此类推。
+
+总体而言，<code>extraUpdates</code> 会在考虑所有其他因素之后才纳入公式计算：
+
+<pre>总实际射速 = (武器射速 + 射弹射速) * (extraUpdates + 1)</pre>
+
+例如，[[{{tr|Chlorophyte Shotbow}}]]的{{tr|velocity}}为 11.5，发射{{tr|velocity}}为 3 的[[{{tr|Wooden Arrow}}]]，结果是{{tr|arrows}}以 14.5 的{{tr|velocity}}行进（<code>(11.5 + 3) * (0 + 1)</code>）。{{tr|A Chlorophyte Shotbow}}发射{{tr|velocity}}为 0.5 的[[{{tr|Jester's Arrow}}]]则总计为12，而{{tr|arrow}}的 <code>extraUpdates</code>（在此例中为 1 次）计入公式后则会将有效{{tr|velocity}}翻倍到 24（<code>(11.5 + 0.5) * (1 + 1)</code>）。
+
+[[{{tr|Magic Quiver}}]]会将 <code>extraUpdates</code> 不足 <code>1</code> 的[[{{tr|arrows}}]]变为 <code>1</code>，也就是将{{tr|velocity}}翻倍（如果原来为 <code>0</code> 的话），但对于[[{{tr|Venom Arrow}}]]之类的箭则不起作用，因为它们的 <code>extraUpdates</code> 本身就大于等于 <code>1</code>。
+
+对于光束类武器，如[[{{tr|Shadowbeam Staff}}]]，<code>extraUpdates</code> 还会影响到光束的长度。此处总长度等于{{tr|projectile}}{{tr|velocity}}乘以 <code>extraUpdates</code>。
+
+== 小贴士 ==
+* 使用[[{{tr|arrows}}]]的{{tr|weapon}}的{{tr|velocities}}通常要低于发射[[{{tr|bullet}}]]的{{tr|weapons}}。
+* 某些{{tr|ranged}}[[{{tr|modifiers}}]]会影响{{tr|weapon}}的{{tr|velocity}}。
+* 一些{{tr|weapons}}（通常是{{tr|magic weapons}}）没有固定的{{tr|velocity}}。
+** [[{{tr|Demon Scythe}}]]会发射{{tr|velocity}}逐渐增加的{{tr|projectile}}。
+** [[{{tr|Death Sickle}}]]的{{tr|projectile}}和{{tr|Demon Scythe}}相反——发射的{{tr|projectile}}{{tr|velocity}}以指数形式降低，直到消失前停在原地。
+** [[{{tr|Magical Harp}}]]的音符{{tr|projectiles}}的{{tr|velocity}}会根据玩家与{{tr|cursor}}之间的距离而增加，但其最大{{tr|velocity}}依然很低。
+** [[{{tr|Cursed Flames}}（武器）|{{tr|Cursed Flames}}]]的{{tr|projectiles}}每次反弹都会提高{{tr|velocity}}。
+* 发射{{tr|projectiles}}的{{tr|Magic weapons}}其{{tr|velocity}}''无法''改变。
+* {{tr|Melee speed bonuses}}会增加[[{{tr|Boomerangs}}]]等发射{{tr|projectiles}}的{{tr|melee weapons}}的{{tr|velocity}}。
+* {{tr|Velocity modifiers}}在{{tr|Flamethrower}}上会增加其射程。
+* 大多数{{tr|projectiles}}在进入[[{{tr|water}}]]等液体时会显著降低{{tr|velocity}}，一些{{tr|projectiles}}，尤其是和火焰有关的{{tr|projectiles}}，在进入水体后会立即被摧毁。很多{{tr|projectiles}}只能维持一定时间，这意味着液体会降低{{tr|weapon}}的有效射程，而受重力影响的{{tr|projectiles}}则会产生更加弯曲的曲线。
+
+== 脚注 ==
+{{reflist}}
+
+{{Game mechanics}}
+{{language info|en=Velocity}}

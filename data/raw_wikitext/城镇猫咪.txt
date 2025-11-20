@@ -1,0 +1,113 @@
+{{exclusive|1.4.0.1}}
+{{npc infobox
+| name = Town Cat
+| type = NPC
+| auto = 637
+}}
+{{redirect|{{tr|Cat}}|{{tr|the pet}}|{{tr|Unlucky Yarn}}}}
+
+{| class="terraria align-center" style="float:right; margin-right:0; margin-left:1em;"
+|+ {{tr|Cat}}品种
+! 图像 !! {{tr|Name}} !! {{tr|Map Icon}}
+|-
+| [[File:Siamese Cat.png|link=]] || 暹罗猫 || [[File:Map Icon Siamese Cat.png|link=]]
+|-
+| [[File:Black Cat (town).png|link=]] || 黑猫 || [[File:Map Icon Black Cat.png|link=]]
+|-
+| [[File:Orange Tabby Cat.png|link=]] || 橘虎斑猫 || [[File:Map Icon Orange Tabby Cat.png|link=]]
+|-
+| [[File:Russian Blue Cat.png|link=]] || 俄罗斯蓝猫 || [[File:Map Icon Russian Blue Cat.png|link=]]
+|-
+| [[File:Silver Cat.png|link=]] || 银猫 || [[File:Map Icon Silver Cat.png|link=]]
+|-
+| [[File:White Cat.png|link=]] || 白猫 || [[File:Map Icon White Cat.png|link=]]
+|}
+[[File:Cat and guide.png|thumb|{{tr|Cat}}（白猫品种）和[[{{tr|the Guide}}]]共用一间{{tr|house}}。]]
+
+'''{{tr|Cat}}'''是一种[[{{tr|Town pets}}]]。在玩家使用从[[{{tr|Zoologist}}]]处以 {{iteminfo|Cat License|buy}} 购买的[[{{tr|Cat License}}]]之后，它会在次日{{tr|dawn}}（{{tr|AM}} 4:30）入住。{{tr|Cat}}不会计入 [[{{tr|NPC}}]] 的“拥挤”上限，因此也不会影响 [[{{tr|Happiness}}|{{tr|NPC happiness}}]]，不过它在[[{{tr|Pylon}}]]网络中仍然算作一个普通的{{tr|town NPC}}。总共有六种品种的{{tr|Cat}}，入住时会随机选择一种。
+
+[[File:Cat Sleeping.png|thumb|熟睡的{{tr|Cat}}（白猫品种）。]]
+
+使{{tr|Cat}}出现的仅有需求是使用{{tr|Cat License}}且存在有效[[{{tr|house}}]]。和任何其他{{tr|town NPC}} 一样，{{tr|Cat}}的{{tr|house}}可以被更改，不过它也可以和另一个{{tr|town NPC}} 共住一间{{tr|house}}。和其他 {{tr|NPCs}}一样，{{tr|Cat}}也需要在{{tr|house}}中有一个有效的站立点（一个[[{{tr|home tile}}]]）。如果{{tr|house}}太小，它可能无法与另一名 {{tr|NPC}} 共用{{tr|house}}。
+
+和任何其他{{tr|town NPC}} 一样，按下 {{key|open}} 按键可以和{{tr|Cat}}对话。此时会提供“{{gameText|UI.PetTheAnimal}}”选项，选择后会让玩家站在{{tr|Cat}}面前抚摸它，这只是视觉上的动画效果。只有当{{tr|Cat}}前方的同一高度上有至少两个平坦的{{tr|tiles}}时，此选项才会生效。使用任何物品、受到伤害或关闭对话框会结束抚摸动作。
+
+与[[{{tr|Angler}}]]类似，{{tr|Cat}}被杀死时显示的[[{{tr|status message}}]]是“{{gameText|LegacyMisc.36|x_0=&lt;{{tr|Cat}}的名称&gt;}}”。它会在之后的白天期间重生，且可能会是不同品种。
+
+== 名称 ==
+{{npc names}}
+
+== 话语 ==
+* “{{gameText|CatChatter.Chatter_1}}”
+* “{{gameText|CatChatter.Chatter_2}}”
+* “{{gameText|CatChatter.Chatter_3}}”
+
+== 图库 ==
+<gallery>
+File:Cat and dog spoiler 2.gif|抚摸{{tr|Cat}}。
+File:Cat and dog spoiler.gif|抚摸{{tr|Cat}}和{{tr|Dog}}。
+</gallery>
+
+== 成就 ==
+{{achievement|name=Feeling Petty}}
+
+== 花絮 ==
+* {{tr|Town Cat}}的[[{{tr|Bestiary}}]]页面默认展示暹罗猫品种。
+* {{tr|Town Cat}}是仅有的一种能坐在[[{{tr|chairs}}]]上的{{tr|town pet}}。{{source code ref|v=1.4.3.6|method=Terraria.NPC.AI_007_TownEntities}}
+
+许多名称都参考了其他内容：
+
+* “Adol”可能是参考了动作角色扮演游戏{{维基百科|b=y|Ys (series)|伊苏}}系列的主角亚特鲁·克里斯汀（Adol Christin）。他最好的朋友的名字“Dogi”也是[[{{tr|Town Dog}}]]的可能名字之一。
+* “Arbus”和“Ater”可能是参考了由海底囚人制作的游戏《灰色庭园》中的同名角色。
+* “Bandit”可能是参考了电视情景喜剧{{维基百科|b=y|The Office (American TV series)|The Office|t=办公室}}系列中的 Angela 的猫。
+* “Blaze”参考了日本游戏系列{{维基百科|b=y|Sonic the Hedgehog|t=刺猬索尼克}}中的{{维基百科|List of Sonic the Hedgehog characters#Blaze the Cat|Blaze the Cat|t=布蕾兹}}。这个名字被安排给银猫可能是参考了布蕾兹的同伴——{{维基百科|List of Sonic the Hedgehog characters#Silver the Hedgehog|Silver the Hedgehog|t=希尔弗}}{{note|small=y|paren=y|译注：直译为刺猬“银色”}}。
+* “Bob”很可能是参考了英国作家{{维基百科|James Bowen (author)|James Bowen|t=詹姆士·伯恩}}的书{{维基百科|b=y|A Street Cat Named Bob|t=遇见街猫Bob}}，以及他的其他作品。
+* “By-Tor”参考了 Rush 乐队的歌曲[https://www.youtube.com/watch?v=2UU62UcP_BA 《By-Tor And The Snow Dog》]。
+* “Charlie”很有可能参考了{{维基百科|b=y|Charley Says}}，一部面向儿童的英国动画卡通公共信息电影短片系列，其中有一只名叫 Charley 的橘虎斑猫；或者是参考了德国动画工作室 {{维基百科|Dingo Pictures}}，它经常重复使用一个橘猫的角色模型，且通常将其命名为 Charlie。
+* “Cleo”参考了来自{{维基百科|The Catillac Cats|t=卡蒂拉克猫}}中的同名角色。
+* “Freya”和“Odin”可能分别是参考了北欧神话中同名的{{维基百科|Freya|女神}}和{{维基百科|Odin|主神}}。
+* “Garfield”参考了{{维基百科|Garfield|同名的美国连环漫画}}的主角。
+* “Hobbes”参考了美国连环漫画{{维基百科|b=y|Calvin and Hobbes|t=凯文的幻虎世界}}中的同名角色。
+* “Ichibi”可能参考了日本漫画系列{{维基百科|b=y|Naruto|火影忍者}}中的角色[https://naruto.fandom.com/wiki/Shukaku 守鹤]，它更常被称为“一尾”（Ichibi）。
+* “Jaspers”参考了网络漫画{{维基百科|b=y|Homestuck}}中 Rose Lalonde 的猫 。
+* “Jiji”参考了 1989 年的日本动画电影{{维基百科|b=y|Kiki's Delivery Service|魔女宅急便}}中的同名角色。
+* “Kanako”可能是参考了日本游戏系列{{维基百科|b=y|Touhou Project|东方Project}}中的[https://thwiki.cc/八坂神奈子 八坂神奈子]。
+* “Luna”参考了日本漫画系列{{维基百科|b=y|Sailor Moon|美少女战士}}中的{{维基百科|List of Sailor Moon characters#Luna|同名角色}}。
+* “Momo”可能参考了美国电视动画系列{{维基百科|b=y|Avatar: The Last Airbender|t=降世神通：最后的气宗}}中的同名角色。
+* “Mr. Cat”参考了 {{wikipedia|TomSka}} 制作的 YouTube 动画视频“[https://www.youtube.com/watch?v=rmuj7KJV-2w Mr. Cat]”。
+* “Salem”参考了美国系列漫画{{维基百科|b=y|Sabrina the Teenage Witch|t=小女巫萨布琳娜}}中的 {{维基百科|Salem Saberhagen}}。
+* “Sekhmet”参考了埃及神话中的{{维基百科|Sekhmet|同名女神}}，她被描绘为一头母狮。
+* “Snowball”作为黑猫的名字是参考了美国动画情景喜剧 {{维基百科|b=y|The Simpsons|t=辛普森一家}}中的{{维基百科|Snowball II|t=雪球二世}}。
+* “Tigger”参考了故事{{维基百科|b=y|Winnie-the-Pooh|t=小熊维尼}}中的{{维基百科|Tigger|同名角色}}（即跳跳虎）。
+* “Tony” 参考了 {{维基百科|Tony the Tiger}}，{{维基百科|Kellogg's|t=家乐氏}}的 {{维基百科|Frosted Flakes}} 麦片广告的卡通吉祥物。
+* “Pete”很可能参考了卡通图书系列{{维基百科|b=y|Pete the Cat}}的主角。
+* “Renne”很可能参考了玲·布莱特（Renne Bright），来自角色扮演游戏系列{{维基百科|b=y|Trails (series)|英雄传说 轨迹系列}}的角色。此外，“Estelle”和“Joshua”分别是{{tr|Town Dog}}和[[{{tr|Town Bunny}}]]的可能名称，这可能参考了同一系列的两名其他角色的名字。
+* “Valerie”很可能参考了角色扮演游戏{{维基百科|b=y|Off (video game)|OFF}}中的 [https://off.fandom.com/wiki/Valérie Valérie]。
+{{bestiary}}
+:* 游戏中没有这种“送礼物”机制。这一条目只是参考了家猫在现实生活中的行为：它们会把死的动物作为“礼物”送给主人。
+
+== 另见 ==
+* [[{{tr|Town Bunny}}]]
+* [[{{tr|Town Dog}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 添加了“Tarzan”作为俄罗斯蓝猫的可能名称。
+** 添加了“Miette”和“Tula”作为银猫的可能名称。
+** 添加了“Gemma”作为白猫的可能名称。}}
+{{history|Desktop 1.4.2.1|添加了“Esper”作为黑猫的可能名称。}}
+{{history|Desktop 1.4.1|
+** 从银猫的可能名称中移除了“By”和“Tor”。
+** 添加了“By-Tor”和“Merlin”作为银猫的可能名称。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.4.0.5.4.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Characters
+| show-npc = yes
+}}
+
+{{language info|en=Town Cat}}

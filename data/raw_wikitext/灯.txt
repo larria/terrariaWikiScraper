@@ -1,0 +1,76 @@
+{{exclusive|1.2.3}}
+{{item infobox
+| imagealt = [[File:Boreal Wood Lamp.png]] [[File:Mushroom Lamp.png]] [[File:Steampunk Lamp.png]]
+| type = Furniture/ Light source
+| rare = {{rare|0}}
+| placeable = Yes
+| width = 1 | height = 3
+| stack = 9999
+| consumable = true
+| use = 14
+| autoswing = yes
+| sell = {{sc|1}}<br/>{{gc|2}}（{{tr|Golden Lamp}}）
+| research = 1
+| idtile = 93
+| cargo = no
+}}
+[[File:Placed Lamps.png|frame|放置状态的{{tr|Lamps}}，同时呈现了开和关状态。]]
+
+{{dablink|不要与一种悬挂在天花板上的{{tr|light source}}[[{{tr|Lantern}}]]相混淆。}}
+
+'''{{tr|Lamps}}'''是种[[{{tr|Furniture}}]]和[[{{tr|Light sources}}|{{tr|light source}}]]。亦算作有效的[[{{tr|House}}]]照明，并且可以用[[{{tr|mechanism}}]]来打开或关闭。共有 {{eicons|1.4.4}} 37 种{{tr|craftable Lamps}}、三种出现在{{tr|Dungeon}}中（{{tr|Green Dungeon Lamp, Blue Dungeon Lamp, or Pink Dungeon Lamp}}）、一种出现在{{tr|Underworld houses}}中（{{tr|Obsidian Lamp}}）、一种掉落自[[{{tr|Pirate Invasion}}]]期间（{{tr|Golden Lamp}}）。它们的功能是完全一样的，只有外观不同。
+
+[[{{tr|Tiki Torch}}]]和其余的{{tr|Lamps}}共享同一个[[{{tr|Tile IDs}}|{{tr|Tile ID}}]]。
+
+另见[[{{tr|Lamp Post}}]]，{{eicons|1.4.0.1|invert=y}}它并''不''算作有效的[[{{tr|House}}]]照明。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=LIKE %Lamp/LIKE %Lamppost|resultnot=LIKE %Table%|link=n|showresultid=y|cate=force|expectedrows=34|resulttemplate=:{{PAGENAME}}/resultcell}}
+
+=== {{tr|Noncraftable Lamps}} ===
+{{options/set|item||mode=table|nolink=y|class=block}}
+{| class="terraria lined"
+|-
+! colspan=2 | {{tr|Lamp}} !! {{tr|Notes}}
+|-
+| {{item infobox | auto = 2645 | type = Furniture /  Light Source |  width = 1 | height = 3 | view = item | tags=plunder}} || 出现在[[{{tr|Dungeon}}]]中。
+|-
+| {{item infobox | auto = 2646 | type = Furniture /  Light Source |  width = 1 | height = 3 | view = item| tags=plunder}} || 出现在{{tr|the Dungeon}}中。
+|-
+| {{item infobox | auto = 2647 | type = Furniture /  Light Source |  width = 1 | height = 3 | view = item| tags=plunder}} || 出现在{{tr|the Dungeon}}中。
+|-
+| {{item infobox | auto = 2644 | type = Furniture /  Light Source |  width = 1 | height = 3 | view = item| tags=plunder}} || 出现在[[{{tr|Ruined houses}}]]中，不会被[[{{tr|lava}}]]所破坏。
+|-
+| {{item infobox | auto = 2133 | type = Furniture /  Light Source |  width = 1 | height = 3 | view = item| tags=drop}} || 掉落自[[{{tr|Pirate Invasion}}|{{tr|Pirates}}]]。
+|}
+{{options/reset|item}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|添加了{{tr|Ash Wood Lamps, Balloon Lamps and Reef Lamps}}。}}
+{{history|Desktop 1.4.0.1|
+** 添加了{{tr|Spider Lamps, Lesion Lamps, Bamboo Lamps, Sandstone Lamps, Nebula Lamps, Solar Lamps, Stardust Lamps and Vortex Lamps}}。
+** {{tr|Skyware Lamp}}的物品和放置外观都更新了。}}
+{{history|Desktop 1.3.5|添加了{{tr|the Crystal Lamp}}。}}
+{{history|Desktop 1.3.0.1|添加了{{tr|Meteorite Lamps, Granite Lamps, Marble Lamps, and Martian Lamps}}。}}
+{{history|Desktop 1.2.4|
+** 添加了{{tr|Palm Wood Lamp, Mushroom Lamp, Boreal Wood Lamp, Slime Lamp, Pumpkin Lamp, Obsidian Lamp, Blue Dungeon Lamp, Green Dungeon Lamp and Pink Dungeon Lamps}}。
+** 更新了{{tr|Chairs}}和高{{tr|Torches}}的图像以修正一些问题。}}
+{{history|Desktop 1.2.3|{{tr|Introduced.}}}}
+{{history|Console 1.19|添加了{{tr|Crystal Lamp}}。}}
+{{history|Console 1.0.933.1|添加了{{tr|Meteorite Lamps, Granite Lamps, Marble Lamps, and Martian Lamps}}。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|添加了{{tr|Meteorite Lamps, Granite Lamps, Marble Lamps, and Martian Lamps}}。（{{icon/ps4}}）}}
+{{history|Console 1.07|添加了{{tr|Palm Wood Lamp, Mushroom Lamp, Boreal Wood Lamp, Slime Lamp, Pumpkin Lamp, Obsidian Lamp, Blue Dungeon Lamp, Green Dungeon Lamp and Pink Dungeon Lamps}}。}}
+{{history|Console 1.06|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|添加了{{tr|the Crystal Lamp}}。}}
+{{history|Switch 1.0.711.6|引入，带有到{{tr|Desktop 1.3.0.1}} 为止的所有{{tr|lamp}}。}}
+{{history|Mobile 1.3.0.7|
+** 添加了{{tr|Meteorite Lamps, Granite Lamps, Marble Lamps, and Martian Lamps}}。
+** {{tr|Pearlwood Lamps}}不再会在[[{{tr|Jungle Sanctum}}]]中生成，因为此建筑已被移除了。}}
+{{history|Mobile 1.2.11212|引入，带有到{{tr|Desktop 1.2.4}} 为止的所有{{tr|lamp}}。{{tr|Pearlwood Lamps}}是可制作的，但也会在{{tr|Jungle Sanctums}}中生成。}}
+
+{{Master Template Furniture
+| show-light = yes
+}}
+
+{{language info|en=Lamps}}

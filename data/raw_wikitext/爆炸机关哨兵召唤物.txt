@@ -1,0 +1,110 @@
+{{exclusive|Tavernkeep}}
+{{item infobox
+| imagealt = [[File:Explosive Trap Rod.png|link=]] [[File:Explosive Trap Cane.png|link=]] [[File:Explosive Trap Staff.png|link=]]
+| stack = 1
+| type = Weapon
+| damage = {{note|small=y|paren=y|每级各不相同}}
+| damagetype = Summon
+| knockback = {{iteminfo|3832|knockback}}
+| use = {{iteminfo|3832|use}}
+| velocity = {{iteminfo|3832|velocity}}
+| tooltip = {{itemTooltip|3832}}
+| research = {{iteminfo|3832|research}}
+| rare =
+| cargo = no
+}}
+{{redirect|{{tr|Explosive Trap}}|出现在[[{{tr|Underground}}]]{{tr|traps}}中的爆炸{{tr|block}}|{{tr|Explosives}}|包含{{tr|Explosives}}的{{tr|trap}}|{{tr|Traps}}#{{tr|Explosives Trap}}{{!}}{{tr|Traps}} § {{tr|Explosives Trap}}}}
+
+'''{{tr|Explosive Trap Rod, Explosive Trap Cane, Explosive Trap Staff}}'''是特殊的[[{{tr|Tavernkeep's sentries}}|{{tr|sentry summon weapons}}]]。{{sentry note|name={{tr|Explosive Trap}}|plural=y}}每个{{tr|Explosive Trap sentry}}是一个放置于地面的设施，会在{{tr|enemy}}足够接近时爆炸。它在爆炸后不会消失，而是会保持在召唤位置重复爆炸直至召唤时间耗尽或[[{{tr|Old One's Army}}]]{{tr|event}}结束。在[[{{tr|Tavernkeep}}]]处，{{tr|Explosive Trap Rod}}的售价为 {{iteminfo|Explosive Trap Rod|buy}}，{{tr|Explosive Trap Cane}}的售价为 {{iteminfo|Explosive Trap Cane|buy}}，而{{tr|Explosive Trap Staff}}的售价为 {{iteminfo|Explosive Trap Staff|buy}}。
+
+{{tr|Explosive Trap Rod}}在任何时候都能购买，{{tr|Explosive Trap Cane}}在击败任意[[{{tr|Mechanical Boss}}]] 后可购买，{{tr|Explosive Trap Staff}}在击败[[{{tr|Golem}}]]后可购买。三个不同版本的武器的效果类似，但拥有不同的数据，其中{{tr|Explosive Trap Staff}}是最昂贵的也是最强大的。
+
+直到[[{{tr|Old One's Army}}]][[{{tr|event}}]]成功完成后才能在{{tr|event}}以外使用这些{{tr|weapons}}。在任意{{tr|difficulty}}下成功完成{{tr|event}}后就能允许玩家在{{tr|event}}之外使用{{tr|Rod}}、{{tr|Canes}}、和{{tr|Staves}}。
+
+在{{tr|Old One's Army}}{{tr|event}}持续期间，[[{{tr|Etherian Mana}}]]可被收集，其可用于放置多个{{tr|Explosive Trap}}，{{tr|event}}结束之前会一直存在。{{tr|Etherian Mana}}无法在{{tr|event}}之外使用。
+
+{{tr|Explosive Trap sentries}}可受[[{{tr|Huntress armor}}]]和[[{{tr|Red Riding armor}}]]的{{tr|set bonuses}}增益，这会增加其攻击频率，并使得它们对击中的{{tr|enemies}}造成[[{{tr|Oiled}}]]{{tr|debuff}}，持续 4–8.5 秒。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.StatusNPC}}
+
+{{modifier|summon|plural=y}}
+
+== 级别 ==
+{{infobox wrapper|direction=row|float=none
+|{{item infobox
+| namesub = {{tr|Tier 1}}
+| auto = 3832
+| sound1 = Dd2 explosive trap explode 0.wav, Dd2 explosive trap explode 1.wav, Dd2 explosive trap explode 2.wav
+| soundcaption1 = {{tr|Trap explosion}}
+| tags = buy/sentry/dd2/vendor:Tavernkeep
+| idprojectile = 691, 694
+}}
+|{{item infobox
+| namesub = {{tr|Tier 2}}
+| auto = 3833
+| sound1 = Dd2 explosive trap explode 0.wav, Dd2 explosive trap explode 1.wav, Dd2 explosive trap explode 2.wav
+| soundcaption1 = {{tr|Trap explosion}}
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 692, 695
+}}
+|{{item infobox
+| namesub = {{tr|Tier 3}}
+| auto = 3834
+| sound1 = Dd2 explosive trap explode 0.wav, Dd2 explosive trap explode 1.wav, Dd2 explosive trap explode 2.wav
+| soundcaption1 = {{tr|Trap explosion}}
+| tags = buy/sentry/hardmode/dd2/vendor:Tavernkeep
+| idprojectile = 693, 696
+}}
+}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|link=no|result=Explosive Trap Rod/Explosive Trap Cane/Explosive Trap Staff|expectedrows=3}}
+
+=== 用于 ===
+{{recipes|ingredient=Explosive Trap Rod/Explosive Trap Cane/Explosive Trap Staff|expectedrows=3}}
+
+== 备注 ==
+* 在任何难度中完成[[{{tr|Old One's Army}}]]{{tr|event}}，会为世界以及完成{{tr|event}}的{{tr|character}}设置一个隐藏的属性。任何访问过该世界的{{tr|characters}}（包括新创建的{{tr|characters}}），就可以在任意世界中使用{{tr|Tavernkeep's sentry}}的{{tr|Rods}}、{{tr|Canes}}、和{{tr|Staves}}。完成{{tr|event}}的{{tr|character}}同样也可以在任意世界中使用{{tr|Rods}}、{{tr|Canes}}和{{tr|Staves}}。
+* {{tr|Explosive Trap}}在攻击后具有 {{duration|90 ticks}} 的冷却。装备[[{{tr|Huntress armor}}]]后，这一冷却降低至 {{duration|60 ticks}}；装备[[{{tr|Red Riding armor}}]]后，这一冷却降低至 {{duration|30 ticks}}。
+* {{tr|sentry}}会探测以其上方第 3 个{{tr|tile}}为中心的 9×9 {{tr|tile}}矩形区域中的{{tr|enemy}}并对其造成伤害。{{source code ref|v=1.4.3.6|method=Terraria.Projectile.AI_138_ExplosiveTrap}}这意味着其范围为向上 7.5 {{tr|tiles}}，向下 1.5 {{tr|tiles}}，向两侧 4.5 {{tr|tiles}}。
+
+== 小贴士 ==
+* {{tr|Explosive trap}}会发出微弱的光芒，可用于查看附近周边的洞穴。
+* {{tr|Explosive trap}}发射缓慢，射程相对较小。当与[[{{tr|Huntress armor}}]]或[[{{tr|Red Riding armor}}]]结合使用时，它的发射速度会更快，并受益于这些套装的{{tr|summon damage}}提升。在[[{{tr|Old One's Army}}]]{{tr|event}}中，在每个传送门处紧凑放置 3 或 4 个{{tr|Explosive trap}}可以在{{tr|enemies}}离开伤害性区域之前杀死除了[[{{tr|Ogre}}]]以外的所有{{tr|enemies}}。
+
+== 图库 ==
+{{flexstart}}
+[[File:Explosive Trap Rod (demo).gif|none|frame|使用中的{{tr|The Explosive Trap Rod}}。]]
+[[File:Explosive Trap Cane (demo).gif|none|frame|使用中的{{tr|The Explosive Trap Cane}}。]]
+[[File:Explosive Trap Staff (demo).gif|none|frame|使用中的{{tr|The Explosive Trap Staff}}。]]
+{{flexend}}
+
+== 另见 ==
+* {{dd2 link|Explosive Trap}}
+* [[{{tr|Flameburst sentry summons}}]]
+* [[{{tr|Lightning Aura sentry summons}}]]
+* [[{{tr|Ballista sentry summons}}]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将{{tr|Cane}}和{{tr|Staff}}所需的{{tr|Defender Medal}}分别由 25 和 100 降低至 15 和 60。
+** 现在有象征性的{{tr|knockback}}属性，允许其获得更好的{{tr|modifiers}}。
+** 现在被召唤后，在开火前有短暂的延迟。
+** {{tr|Explosive Trap sentry summons}}现在用于通过[[{{tr|shimmer}}]]制作各自级别的[[{{tr|Lightning Aura sentry summons}}]]。}}
+{{history|Desktop 1.4.1|
+** 爆炸范围和检测范围由 6×6 {{tr|tiles}}增加至 9×9 {{tr|tiles}}。这一矩形范围的中心仍然位于{{tr|sentry}}上方 3 {{tr|tiles}}处。
+** 爆炸冷却由 {{duration|110 ticks}} / {{duration|74 ticks}}（使用{{tr|Huntress armor}}）/ {{duration|40 ticks}}（使用{{tr|Red Riding armor}}）降低至 {{duration|90 ticks}} / {{duration|60 ticks}} / {{duration|30 ticks}}。
+** （若装备{{tr|Huntress armor or Red Riding armor}}，）造成{{tr|Oiled}}的几率由 {{chance|1/2}} 增加至 {{chance|1/1}}。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Minions}}
+{{Master Template Weapons
+| show-summon = yes
+}}
+
+{{language info|en=Explosive Trap sentry summons}}

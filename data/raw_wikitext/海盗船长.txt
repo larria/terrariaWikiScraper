@@ -1,0 +1,72 @@
+{{npc infobox
+| auto = 216
+| image = Pirate Captain.gif
+| image2 = Pirate Captain (old).png
+| environment = Pirate Invasion
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|30|60|90}} {{note|small=y|paren=y|{{gameText|ProjectileName.BulletDeadeye}}}}<br/>{{modes|200|400|600}} {{note|small=y|paren=y|{{gameText|ProjectileName.CannonballHostile}}}}
+| life2 = &#32;{{eicons|1.3.0.1|small=y}}{{modes|<br/>2000 {{eicons|1.3.0.1|invert=y|small=y}}|<nowiki/><!--Do not display in Expert and above-->|<nowiki/>}}
+| defense2 = &#32;{{eicons|1.3.0.1|small=y}}<br/>28 {{eicons|1.3.0.1|invert=y|small=y}}
+| Coin Gun|1|0.1% {{eicons|1.4.4|small=y}} <br/> 0.05% {{eicons|1.4.4|invert=y|small=y}}
+| Lucky Coin|1|0.2% {{eicons|1.4.4|small=y}} <br/> 0.1% {{eicons|1.4.4|invert=y|small=y}}
+| Discount Card|1|0.4% {{eicons|1.4.4|small=y}} <br/> 0.2% {{eicons|1.4.4|invert=y|small=y}}
+| Pirate Staff|1|0.4% {{eicons|1.4.4|small=y}} <br/> 0.2% {{eicons|Pirate Staff|not=1.4.4|small=y}}
+| Gold Ring|1|0.8%
+| Cutlass|1|2%
+| hardmode = yes
+| idprojectile = 180, 240
+| sound1 = Item 11.wav
+| soundcaption1 = {{gameText|ProjectileName.BulletDeadeye}}
+| sound2 = Item 14.wav
+| soundcaption2 = {{gameText|ProjectileName.CannonballHostile}}
+}}
+{{about|[[{{tr|enemy}}]]|在击败{{tr|invasion}}后生成的 [[{{tr|NPC}}]]|{{tr|Pirate}}}}
+
+'''{{tr|Pirate Captain}}'''是一个[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，只在[[{{tr|Pirate Invasion}}]][[{{tr|Events}}|{{tr|event}}]]期间出现。当玩家在其视线中时，他会先使用类似突击步枪的枪械攻击，开火频率堪比[[{{tr|Minishark}}]]，然后再站定不动，用下挂的加农炮发射一颗炮弹。炮弹的射程较短，且会在撞击[[{{tr|block}}]]时爆炸（类似于由{{eil|Flying Dutchman}}发射的炮弹），且造成很高伤害。
+
+在{{eversions|1.4.0.1}}中，{{tr|Pirate Captain}}被杀死时会生成一个[[{{tr|Pirate's Curse}}]]。它能穿过墙壁缓慢地飘向玩家，类似于[[{{tr|Wraith}}]]。
+
+{{Lifeform Analyzer note|他}}{{tr|The Pirate Captain}}需要 25 次击杀以完成其[[{{tr|Bestiary}}]]条目并获得对应[[{{tr|Banners (enemy)}}#具有非默认击杀数的{{tr|Banners}}|{{tr|banner}}]]，而非通常的 50 次击杀。{{source code ref|v=1.4.4.9|field=Terraria.ID.ItemID.Sets&#46;KillsToBanner}}
+
+== 备注 ==
+* 同一时间只会存在一个{{tr|Pirate Captain}}，但在整次入侵期间可以生成多个{{tr|Pirate Captain}}。
+* 单人模式中，击杀一名{{tr|Pirate Captain}}会增加 2.78% 的{{tr|event}}进度值。
+
+== 小贴士 ==
+* 和{{tr|Flying Dutchman}}一样，{{tr|Pirate Captain}}有比其他{{tr|enemy}}明显更高的几率掉落稀有{{tr|item}}，因此专注于他有助于获得稀有{{tr|item}}。相比于其他{{tr|pirates}}，{{tr|Pirate Captains}}掉落稀有物品的几率会提高约 4 倍。
+* {{tr|player}}或许会想要先集中精力消灭其他{{tr|pirates}}，因为{{tr|Pirate Captains}}会在第一个被杀死后重新生成，且击杀他对事件进度的提升量和其他{{tr|pirate}}相同。
+* {{tr|The Pirate Captain}}在{{tr|Expert and Master Mode}}中会造成相对较高的伤害，因此诸如[[{{tr|wings}}]]或有[[{{tr|dash}}]]能力的机动性{{tr|item}}会有助于生存。也推荐通过长距离的{{tr|weapons}}攻击{{tr|Pirate Captain}}，因为其{{tr|bullets}}造成的伤害低于{{tr|cannonballs}}，后者的射程更短。
+
+== 花絮 ==
+* {{tr|The Pirate Captain}}掉落的[[{{tr|coins}}]]量是所有非 [[{{tr|boss}}]] {{tr|enemy}}中第三多的，和[[{{tr|Paladin}}]]持平。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|除了[[{{tr|Cutlass}}]]以外，{{tr|loot}}的{{tr|Drop rates}}翻倍。}}
+{{history|Desktop 1.4.0.2|现在被杀死时会生成[[{{tr|Pirate's Curse}}]]。}}
+{{history|Desktop 1.4.0.1|现在可被[[{{tr|Lifeform Analyzer}}]]探测到。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Health}}由 2000 提升至 3000。
+** {{tr|Defense}}由 28 提升至 30。
+** 现在会掉落它自己的相应[[{{tr|banner}}]]了。}}
+{{history|Desktop 1.2.4|
+** {{tr|loot}}的{{tr|Drop rates}}翻倍。
+** 现在会掉落[[{{tr|Pirate Staff}}]]。}}
+{{history|Desktop 1.2.3|
+** 现在免疫[[{{tr|Confused}}]]{{tr|debuff}}。
+** 修复了{{tr|Pirate Captain}}在被杀死时会掉下 5 个头作为[[{{tr|Gore IDs}}|尸体部分]]，而不会掉下手臂和腿的 {{tr|Bug}}。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Pirate Invasion Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Pirate Captain}}

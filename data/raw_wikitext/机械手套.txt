@@ -1,0 +1,49 @@
+{{item infobox
+| auto = 936
+| hardmode = yes
+}}
+
+'''{{tr|Mechanical Glove}}'''是个[[{{tr|Hardmode}}]][[{{tr|accessory}}]]，能够通过以下方式增强[[{{tr|melee weapons}}]]：
+* +100% [[{{tr|knockback}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional / Terraria.Player.GetWeaponKnockback / Terraria.Player.DashMovement}}
+* +12% [[{{tr|damage}}]]{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional}}
+* +12% [[{{tr|attack speed}}]]（对[[{{tr|whips}}]]同样有效）{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional / Terraria.Player.ApplyItemAnimation / Terraria.Player.CapAttackSpeeds}}
+* {{eicons|1.4.0.1}} 获得[[{{tr|autoswing}}]]能力（对{{tr|whips}}同样有效）{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional / Terraria.Player.TryAllowingItemReuse}}
+* {{eicons|1.4.1}} +10% {{tr|size}}{{source code ref|v=1.4.4.9|method=Terraria.Player.ApplyEquipFunctional / Terraria.Player.ApplyMeleeScale|t=仅适用于可接受{{tr|size bonuses}}的{{tr|melee weapons}}。}}
+
+在{{eversions|1.3.0.1|short=y}}中，它仅在打败所有[[{{tr|mechanical bosses}}]] 后可用。
+
+== 制作 ==
+=== 配方 ===
+{{recipes|result=Mechanical Glove|expectedrows=1}}
+
+=== 用于 ===
+{{recipes|ingredient=Mechanical Glove|expectedrows=1}}
+
+== 备注 ==
+* 它只会提高''{{tr|melee}}''{{tr|damage}}，尽管是用能提高所有伤害的[[{{tr|Avenger Emblem}}]]制作的。
+* {{tr|The Mechanical Glove}}提升[[{{tr|whips}}]]的{{tr|speed}}但不提升{{tr|knockback}}和{{tr|base damage}}。这可能是因为{{tr|whips}}是像{{tr|melee weapons}}那般使用但造成的却是[[{{tr|summon damage}}]]。
+
+== 小贴士 ==
+* {{eicons|1.4.1|invert=y}} 虽然它用在[[{{tr|Fire Gauntlet}}]]的{{tr|crafting recipe}}中，但{{tr|the Mechanical Glove}}依然被视为比{{tr|the Fire Gauntlet}}更好，因为它的属性更好且只少了造成[[{{tr|On Fire!}}]]的能力。但是，和损失的属性相比，这个额外福利并不值得，这让{{tr|the Mechanical Glove}}被广泛认为是更强大的{{tr|accessory}}。
+** 在{{eversions|1.4.1}}中，{{tr|the Fire Gauntlet}}提供与{{tr|Mechanical Glove}}相同的属性提升，可视为是其直接升级物。
+
+== 历史 ==
+{{history|Desktop 1.4.1|现在会增加 10% [[{{tr|melee weapons}}]]{{tr|size}}。}}
+{{history|Desktop 1.4.0.1|现在为{{tr|whips and all melee weapons}}提供{{tr|autoswing}}。}}
+{{history|Desktop 1.3.2|{{tr|Sprites updated.}}}}
+{{history|Desktop 1.2.4|现在只会产生{{tr|melee knockback}}而非所有类型。}}
+{{history|Desktop 1.2.3|现在只会增加{{tr|melee damage}}（之前还包括{{tr|ranged}}和{{tr|magic}}）。{{tr|Tooltip}}正确地写 12% 而非 10%.}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Hardmode accessories}}
+{{Master Template Equipables
+| show-combatacc = yes
+}}
+
+{{language info|en=Mechanical Glove}}

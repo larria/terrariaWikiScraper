@@ -1,0 +1,83 @@
+{{legacy nav tab}}
+{{item infobox
+| type = Armor/Set
+| hardmode = yes
+| setbonus = 攻击者也会承受双倍伤害 <br> 所受伤害降低15%
+}}
+
+'''{{tr|Turtle armor}}'''是一套[[{{tr|Hardmode}}]]、[[{{tr|mechanical bosses}}]]后的{{tr|melee}}[[{{tr|armor}}]]{{tr|set}}，由'''{{tr|Turtle Helmet}}'''、'''{{tr|Turtle Scale Mail}}'''和'''{{tr|Turtle Leggings}}'''组成。制作全套{{tr|set}}总计需要 54 块{{tr|Chlorophyte Bars}}（ 270 个[[{{tr|Chlorophyte Ore}}]]）和 3 块[[{{tr|Turtle Shell}}]]。
+
+装备全套{{tr|set}}提供下列效果：
+* +65 [[{{tr|defense}}]]
+* +15% [[{{tr|damage reduction}}]]
+* +14% [[{{tr|melee damage}}]]
+* +12% {{tr|melee}}[[{{tr|critical strike chance}}]]
+* +750 [[{{tr|aggro}}]]
+* 在受到{{tr|contact damage}}时，产生强大的[[{{tr|Thorns}}]]效果，可反弹 200% {{tr|the enemy}}{{tr|contact damage}}并造成 {{knockback|10|full=y|class=}}的[[{{tr|knockback}}]]{{source code ref|v=1.4.3.6|method=Terraria.Player.Update_NPCCollision}}。
+* 视觉上的{{tr|turtle shell}}出现在{{tr|player}}背后。
+
+== 套装 ==
+{{infobox wrapper|direction=row|float=left
+|{{item infobox
+| type = Armor
+| body slot = Helmet
+| hardmode = yes
+| auto = 1316
+}}
+|{{item infobox
+| type = Armor
+| body slot = Shirt
+| hardmode = yes
+| auto = 1317
+}}
+|{{item infobox
+| type = Armor
+| body slot = Pants
+| hardmode = yes
+| auto = 1318
+}}
+}}
+{{-}}
+
+== 制作 ==
+=== 配方 ===
+{{recipes|cate=force|result=Turtle Helmet/Turtle Scale Mail/Turtle Leggings|expectedrows=3}}
+=== 用于 ===
+{{recipes|ingredient=Turtle Helmet/Turtle Scale Mail/Turtle Leggings|expectedrows=4}}
+
+== 备注 ==
+* 虽然{{tr|Turtle armor}}提供了相当高的{{tr|defense}}，但是其给予的{{tr|melee damage}}与{{tr|critical strike chance}}加成只是比[[{{tr|Cobalt armor}}]]和[[{{tr|Molten armor}}]]略高一点。
+* 若要合成整套包含两种胸甲的[[{{tr|Beetle armor}}]]，则需要78个叶绿锭(468个叶绿矿)和4个海龟壳。
+* {{tr|Thorns}}效果无法通过[[{{tr|Thorns Potion}}]]或[[{{tr|Dryad's Blessing}}]]增强。{{tr|Turtle armor}}反弹的伤害是{{tr|Thorns Potion}}的两倍，其他效果则相同。
+* 反弹的伤害将会被[[{{tr|Banners (enemy)}}]]减少(25% / {{expert|50%}})，同样也受到[[{{tr|luck}}]]的影响（运气较低时有概率会增加受到的伤害，同时影响{{tr|Thorns}}反弹的伤害），反弹最高造成 1000 伤害
+
+== 小贴士 ==
+* {{tr|Thorns}}的被动效果通常意味着玩家可以忽略那些依赖{{tr|contact}}伤害的较弱的敌怪，特别是在装备可以免疫[[{{tr|knockback}}]]的[[{{tr|shield}}]]时。
+** 不过相对于大部分{{tr|Hardmode weapons}}，{{tr|Thorns}}效果造成的伤害并不明显，导致它在BOSS战的价值不大。{{tr|Thorns}}效果也不会在玩家被BOSS发射的{{tr|lasers}}和其他{{tr|projectile}}击中时触发。
+* {{tr|Turtle armor}}在[[{{tr|multiplayer}}]]中作用极佳，因为其可以吸引{{tr|enemy}}和 {{tr|boss}} 的[[{{tr|aggro}}]]。它和[[{{tr|Paladin's Shield}}]]及其两个{{tr|version}}配合很好，可以提高队友及{{tr|player}}自身的生存能力。
+* 与{{tr|Helmet}}和护腿不同，{{tr|Turtle Scale Mail}}有很好的攻击加成。它可以配合[[{{tr|Chlorophyte Mask}}]]或[[{{tr|Hallowed mask}}]]和[[{{tr|Squire's Greaves}}]]以获得更强的攻击属性，而这也意味着失去 15% {{tr|damage reduction}}和{{tr|Thorns}}效果。
+* {{tr|Turtle armor}}可视为是[[{{tr|Cactus armor}}]]在{{tr|hardmode}}的对应物。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Set bonus}}现在给予 15% {{tr|Damage Reduction}}。
+** {{tr|set bonus}}{{tr|Thorns}}现在反弹可造成两倍{{tr|damage}}。
+** {{tr|Sprites}}更新。}}
+{{history|version=desktop|Desktop 1.2.4.1|可以正常[[染料|染色]]了。}}
+{{history|Desktop 1.2.3|可用于合成甲虫套装。}}
+{{history|Desktop 1.2.1|女性外观更新。}}
+{{history|Desktop 1.2.0.3|整套防御从71降为65。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Chlorophyte}}
+{{Master Template Equipables
+| show-armor = yes
+}}
+{{language info|en=Turtle armor}}

@@ -1,0 +1,50 @@
+{{npc infobox
+| imagealt = [[File:Jungle Bat.gif|link=]]
+| auto = 51
+| type = Flying Enemy
+| environment = Jungle
+| environment2 = Underground Jungle
+| debuff = Feral Bite | debuffmode = expert
+| debuffchance = 10%
+| debuffduration = 30–90 {{tr|seconds}}
+| Depth Meter|1|1% {{eicons|1.3.0.1}}<br/>0.5% {{eicons|1.3.0.1|invert=y}}
+| Bat Bat|1|0.4%
+}}
+
+'''{{tr|Jungle Bat}}'''是一种常见的[[{{tr|Bats}}|{{tr|bat}}]][[{{tr|enemy}}]]，仅生成于[[{{tr|Jungle}}]]中，在[[{{tr|Underground Jungle}}]]中较不常见。在[[{{tr|Expert Mode}}]]下，它能造成[[{{tr|Feral Bite}}]][[{{tr|debuffs}}|{{tr|debuff}}]]。同大多数蝙蝠一样，它们不会进入[[{{tr|water}}]]中。
+
+== 备注 ==
+* {{tr|Jungle Bats}}和[[{{tr|Jungle Slime}}]]是少数不需要[[{{tr|Jungle grass}}]]{{tr|block}}就能生成的{{tr|Jungle enemies}}。它们只需要玩家位于{{tr|Jungle biome}}中。{{source code ref|v=1.4.3.6|method=Terraria.NPC.SpawnNPC}}
+
+== 小贴士 ==
+* 一群{{tr|Jungle Bats}}会让未准备好的玩家难以抵挡，因此进入{{tr|Jungle}}时应当多加小心。{{tr|Jungle}}中大量的{{tr|water}}池是不错的躲藏位置，因为{{tr|bats}}无法进入{{tr|water}}中。[[{{tr|Breathing Reed}}]]有助于避免{{tr|drowning}}。
+
+== 花絮 ==
+{{float file box|width=80px|[[File:Jungle Bat Unused Frame.png|link=]]|未使用的动画帧}}
+* {{tr|Jungle Bats}}以及[[{{tr|Cave Bat}}]]、[[{{tr|Hellbat}}]]、和[[{{tr|Spore Bat}}]]在动画中都有一个未使用的帧，看起来画的是倒挂着的{{tr|Jungle Bat}}。这可能意味着原本计划让{{tr|bats}}能够倒挂在天花板上，但后来又改变主意了。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.3|现在会掉落[[{{tr|Bat Bat}}]]。}}
+{{history|Desktop 1.3.0.1|
+** 现在会掉落它们自己的相应旗帜了。
+** 现在会掉落[[{{tr|Depth Meter}}]]。
+** 现在在[[{{tr|Expert Mode}}]]下能造成[[{{tr|Feral Bite}}]]{{tr|debuff}}。}}
+{{history|Desktop 1.0.6|{{tr|Health}}由 60 降低至 34。}}
+{{history|Desktop 1.0.5|
+** 不再能进入[[{{tr|water}}]]中，并且在触碰{{tr|water}}时不再会发出溅水的声音。
+** 现在有特别的死亡音效。}}
+{{history|Desktop 1.0.4|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Bats}}
+{{Master Template Characters
+| show-common = yes
+}}
+
+{{language info|en=Jungle Bat}}

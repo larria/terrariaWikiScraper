@@ -1,0 +1,57 @@
+{{exclusive|1.4.0.1}}
+{{item infobox
+| auto = 4760
+| buff = Striking Moment
+| sound1 = MaxMana.wav
+| soundcaption1 = 格挡冷却结束
+| listcat = Boomerangs
+| tags = hardmode / buy / vendor:Traveling Merchant
+}}
+[[File:Sergeant United Shield (demo).gif|frame|right|投掷出的{{tr|Sergeant United Shield}}在 3 个[[{{tr|Mimic}}]]间弹跳，然后用它格挡[[{{tr|Unicorn}}]]的攻击。]]
+
+'''{{tr|Sergeant United Shield}}'''是一个[[{{tr|Hardmode}}]]的[[{{tr|boomerang}}]]。它一次只能扔出一个。它会自动追踪附近的{{tr|enemies}}，并连锁攻击额外 4 个{{tr|enemies}}，但它每次投掷至多击中每个{{tr|enemy}}一次。
+
+当装备了任何[[{{tr|Shields}}]]（包括未掷出的{{tr|Sergeant United Shield}}）且手持此武器时，按下 {{key|open}} 键可以让{{tr|character}}准备承受下次攻击。如果时机准确，在承受伤害之前按下，[[{{tr|enemy}}]]的攻击将被格挡（见[[#{{tr|Notes}}|{{tr|Notes}}]]获取有关格挡的细节），这会对攻击者造成一些伤害并为玩家提供[[{{tr|Striking Moment}}]]{{tr|buff}}，持续 5 秒。它会导致下次{{tr|melee}}攻击造成 5 倍伤害。此外，当架起{{tr|shield}}时会暂时获得 20 [[{{tr|defense}}]]；此加成会持续到{{tr|shield}}被放下。
+
+它有小概率由[[{{tr|Traveling Merchant}}]]以 {{iteminfo|Sergeant United Shield|buy}} 的价格出售。
+
+{{modifier|meleealt}}
+
+== 备注 ==
+* 为了格挡攻击，{{tr|enemy}}必须在命中{{tr|player}}之前触碰到{{tr|shield}}。
+* 由于{{tr|Sergeant United Shield}}的高[[{{tr|velocity}}]]和慢[[{{tr|use time}}]]，通常在它返回玩家后还需等待一段时间才能将它重新掷出。
+* 格挡一次攻击会阻止它对玩家造成的{{tr|contact damage}}，对攻击的{{tr|enemy}}造成 200% {{tr|contact damage}}并造成 {{kb|5}} 的[[{{tr|knockback}}]]，并为玩家提供 30（装备[[{{tr|Cross Necklace}}]]时为 60）{{tr|immunity frames}}{{source code ref|v=1.4.4.9|method=Terraria.Player.Update_NPCCollision}}。
+** 因此，格挡造成的伤害会被[[{{tr|banners (enemy)}}]]''降低''（在[[{{tr|Classic Mode}}]]或以下降低 25%，在[[{{tr|Expert Mode}}]]或以上降低 50%），会被{{eil|Luck}}''反向''重新计算（具有负的{{tr|luck}}将有几率增加承受的伤害，因此增加格挡的伤害），且上限为 1000 伤害。
+* {{tr|Sergeant United Shield}}的格挡能力只能用于格挡{{tr|enemy}}（包括无视闪避的{{tr|enemy}}，如{{tr|Dungeon Guardian}}）的{{tr|contact damage}}。[[{{tr|Fall damage}}]]、[[{{tr|lava}}]]{{tr|damage}}、敌方{{tr|projectiles}}、[[{{tr|traps}}]]仍然会对玩家造成伤害。
+** 然而，它仍然能用按下{{key|open}}键时提供的 20 {{tr|defense}}降低这些来源的伤害。
+* 在{{eil|Journey Mode}}中，[[{{tr|Godmode}}]]启用时进行格挡不会有任何作用。
+
+== 小贴士 ==
+* 获得{{tr|Striking Moment}}{{tr|buff}}，然后切换到另一把更强的武器（如[[{{tr|Meowmere}}]]）就可能造成极高伤害。
+* 该武器会追踪[[Template:Worms|{{tr|Worm}}]]的各个{{tr|segment}}，这使其成为对抗{{tr|Worm}}的绝佳武器。
+
+== 花絮 ==
+* [[{{tr|Brand of the Inferno}}]]、{{tr|Sergeant United Shield}}、[[{{tr|Sky Dragon's Fury}}]]和[[{{tr|Tome of Infinite Wisdom}}]]是[[《{{tr|Terraria}}》]]中仅有的拥有由两个不同按键触发的两种不同攻击方式的{{tr|weapons}}。
+* {{tr|This weapon}}参考了由{{wikipedia|Marvel Comics|漫威漫画（Marvel Comics）}}出版的美国漫画中出现的虚构的超级英雄{{wikipedia|Captain America|美国队长（Captain America）}}的{{wikipedia|Captain America's shield|艾德曼合金盾牌}}。其{{tr|tooltip}}是美国队长在{{wikipedia|Marvel Cinematic Universe|漫威电影宇宙}}的电影中的最标志性的台词之一。
+
+== 另见 ==
+* {{Item|Brand of the Inferno}}，另一把能格挡攻击的{{tr|weapon}}。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Knockback}}从 0 提升至 2，这允许它拥有更好的{{tr|modifiers}}。}}
+{{history|Desktop 1.4.2|修复了{{tr|Sergeant United Shield}}虽然是一把武器，但会在某些情况下意外展示[[{{tr|accessory}}]][[{{tr|dyes}}]]的问题。}}
+{{history|Desktop 1.4.1|
+** 伤害从 60 增加至 80。
+** 击中每个目标的伤害衰减从 30% 减少至 20%。}}
+{{history|Desktop 1.4.0.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Boomerangs}}
+{{Master Template Weapons
+| show-meleeother = yes
+}}
+
+{{language info|en=Sergeant United Shield}}

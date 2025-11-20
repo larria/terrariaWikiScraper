@@ -1,0 +1,49 @@
+{{exclusive|Old One's Army}}
+{{npc infobox
+| image = Etherian Lightning Bug.gif
+| auto = 578
+| idprojectile = 682
+| type = Etherian Enemy
+| type2 = Flying Enemy
+| environment = Old One's Army
+| damage2 = &#32;<!--
+	-->{{note|small=y|paren=y|{{tr|melee}}}}<br/><!--
+	-->{{modes|100|200|300}} {{note|small=y|paren=y|{{gameText|ProjectileName.DD2LightningBugZap}}}}<!--
+	-->{{source code ref|v=1.4.0.5|name=ai|method=Terraria.NPC.AI_111_DD2LightningBug}}
+| debuff = Withered Weapon
+| debuffchance = 100% {{note|small=y|paren=y|{{gameText|ProjectileName.DD2LightningBugZap}}}}
+| debuffduration = {{duration|5}} <ref name="ai"/>
+| hardmode = yes
+| sound1 = Dd2 lightning bug zap 0.wav, Dd2 lightning bug zap 1.wav, Dd2 lightning bug zap 2.wav
+| soundcaption1 = 猛击
+}}
+
+'''{{tr|Etherian Lightning Bug}}'''是一种来自[[{{tr|Old One's Army}}]][[{{tr|Event}}]]的[[{{tr|enemy}}]]，只会在 3 级（[[{{tr|Golem}}]]后）中生成，出现在{{tr|event}}的第二和第六波。
+
+它发射{{item|image=Withering Bolt (animated).gif|nolink=y|Withering Bolt|s}}，能造成高伤害（100 / {{expert|200}} / {{master|300}}）<ref name="ai"/>并会造成'''{{tr|Withered Weapon}}'''[[{{tr|debuff}}]]，会将玩家造成的伤害减半{{source code ref|v=1.4.0.5|name=wither|method=Terraria.Projectile.StatusPlayer / Terraria.Player.Update}}。
+
+它是仅有的两种来自{{tr|Old One's Army}}却仅需通常的 50 击杀就能得到相应[[{{tr|enemy banner}}]]的{{tr|enemy}}之一，另一种是[[{{tr|Wither Beast}}]]（大多数来自此{{tr|event}}的其他{{tr|enemies}}需要更多的击杀数）。
+
+== 花絮 ==
+{{bestiary}}
+
+== 另见 ==
+* {{dd2 link|Lightning Bug}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Tier 3}}的第 6 波现在会生成{{tr|Etherian Lightning Bugs}}而非{{tr|Etherian Wyverns}}。}}
+{{history|Desktop 1.4.0.1|{{tr|Projectile}}{{tr|damage}}由 20 提升至 100。}}
+{{history|Desktop 1.3.4|{{tr|Introduced.}}}}
+{{history|Console 1.17|{{tr|Introduced.}}}}
+{{history|Switch 1.0.1096.2|{{tr|Introduced.}}}}
+{{history|Mobile 1.4.0.5.0|Introduced=y|和{{tr|Desktop}} 1.4.0.1 的更改一并引入。}}
+
+== 参考 ==
+{{reflist}}
+
+{{Old One's Army Enemies}}
+{{Master Template Characters
+| show-event = yes
+}}
+
+{{language info|en=Etherian Lightning Bug}}

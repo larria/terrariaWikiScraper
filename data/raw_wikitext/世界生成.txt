@@ -1,0 +1,459 @@
+{{stub}}<!-- Requires more info about each generation pass, including what is being generated and how these are generated -->
+
+一个新的随机[[{{tr|world}}]]的'''生成'''遵循本页所述流程。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld}}在此过程中，加载栏上会出现各种文本，显示{{tr|world}}上正在生成的内容。在 {{eil|Not the bees}} {{tr|world}}中，所有文本都会被替换为“{{gameText|UI.WorldGenEasterEgg_GeneratingBees}}”。
+
+== 生成过程 ==
+{| class="terraria lined mw-collapsible"
+! Generation pass{{footnote|在{{tr|world}}生成过程中，每个“generation pass”（生成步骤）都会处理{{tr|world}}结构的特定部分。此处显示的名称是 generation pass 的内部标识符。大部分 generation pass 会显示相对应的文本以表明正在生成的内容。没有对应文本的 generation pass 会被标记为{{na}}。}}
+! 文本
+! {{tr|Notes}}
+|-
+| <code>Reset</code>
+| {{na}}
+| 在每个世界的生成开始时初始化世界生成器。
+|-
+| <code>Terrain</code>
+| {{gameText|LegacyWorldGen.0}}
+|
+|-
+| <code>Dunes</code>
+| {{gameText|LegacyWorldGen.1}}
+|
+|-
+| <code>Ocean Sand</code>
+| {{gameText|WorldGeneration.OceanSand}}
+|
+|-
+| <code>Sand Patches</code>
+| {{na}}
+|
+|-
+| <code>Tunnels</code>
+| {{na}}
+|
+|-
+| <code>Mount Caves</code>
+| {{gameText|LegacyWorldGen.2}}
+|
+|-
+| <code>Dirt Wall Backgrounds</code>
+| {{gameText|LegacyWorldGen.3}}
+|
+|-
+| <code>Rocks In Dirt</code>
+| {{gameText|LegacyWorldGen.4}}
+|
+|-
+| <code>Dirt In Rocks</code>
+| {{gameText|LegacyWorldGen.5}}
+|
+|-
+| <code>Clay</code>
+| {{gameText|LegacyWorldGen.6}}
+|
+|-
+| <code>Small Holes</code>
+| {{gameText|LegacyWorldGen.7}}
+|
+|-
+| <code>Dirt Layer Caves</code>
+| {{gameText|LegacyWorldGen.8}}
+|
+|-
+| <code>Rock Layer Caves</code>
+| {{gameText|LegacyWorldGen.9}}
+|
+|-
+| <code>Surface Caves</code>
+| {{gameText|LegacyWorldGen.10}}
+|
+|-
+| <code>Wavy Caves</code>
+| {{gameText|WorldGeneration.WavyCaves}}
+| 仅在 {{eil|The Constant}} {{tr|world}}。
+|-
+| <code>Generate Ice Biome</code>
+| {{gameText|LegacyWorldGen.56}}
+| 
+|-
+| <code>Grass</code>
+| {{na}}
+|
+|-
+| <code>Jungle</code>
+| {{gameText|LegacyWorldGen.11}}
+|
+|-
+| <code>Mud Caves To Grass</code>
+| {{gameText|LegacyWorldGen.77}}
+|
+|-
+| <code>Full Desert</code>
+| {{gameText|LegacyWorldGen.78}}
+|
+|-
+| <code>Floating Islands</code>
+| {{gameText|LegacyWorldGen.12}}
+|
+|-
+| <code>Mushroom Patches</code>
+| {{gameText|LegacyWorldGen.13}}
+|
+|-
+| <code>Marble</code>
+| {{gameText|LegacyWorldGen.80}}
+|
+|-
+| <code>Granite</code>
+| {{gameText|LegacyWorldGen.81}}
+|
+|-
+| <code>Dirt To Mud</code>
+| {{gameText|LegacyWorldGen.14}}
+|
+|-
+| <code>Silt</code>
+| {{gameText|LegacyWorldGen.15}}
+|
+|-
+| <code>Shinies</code>
+| {{gameText|LegacyWorldGen.16}}
+|
+|-
+| <code>Webs</code>
+| {{gameText|LegacyWorldGen.17}}
+|
+|-
+| <code>Underworld</code>
+| {{gameText|LegacyWorldGen.18}}
+|
+|-
+| <code>Corruption</code>
+| {{gameText|LegacyWorldGen.20}}{{footnote|在[[{{tr|Corruption}}]]{{tr|world}}。}}<br/>{{gameText|LegacyWorldGen.72}}{{footnote|在[[{{tr|Crimson}}]]{{tr|world}}。}}
+|
+|-
+| <code>Lakes</code>
+| {{gameText|LegacyWorldGen.19}}
+|
+|-
+| <code>Dungeon</code>
+| {{na}}
+|
+|-
+| <code>Slush</code>
+| {{na}}
+|
+|-
+| <code>Mountain Caves</code>
+| {{gameText|LegacyWorldGen.21}}
+|
+|-
+| <code>Beaches</code>
+| {{gameText|LegacyWorldGen.22}}
+|
+|-
+| <code>Gems</code>
+| {{gameText|LegacyWorldGen.23}}
+|
+|-
+| <code>Gravitating Sand</code>
+| {{gameText|LegacyWorldGen.24}}
+|
+|-
+| <code>Create Ocean Caves</code>
+| {{gameText|LegacyWorldGen.90}}
+|
+|-
+| <code>Shimmer</code>
+| {{na}}
+|
+|-
+| <code>Clean Up Dirt</code>
+| {{gameText|LegacyWorldGen.25}}
+|
+|-
+| <code>Pyramids</code>
+| {{na}}
+| 参见[[{{tr|Pyramid}}#生成|{{tr|Pyramid}} § 生成]]获取细节。
+|-
+| <code>Dirt Rock Wall Runner</code>
+| {{na}}
+|
+|-
+| <code>Living Trees</code>
+| {{na}}
+| 参见[[{{tr|Living Tree}}#生成|{{tr|Living Tree}} § 生成]]获取细节。
+|-
+| <code>Wood Tree Walls</code>
+| {{na}}
+|
+|-
+| <code>Altars</code>
+| {{gameText|LegacyWorldGen.26}}
+|
+|-
+| <code>Wet Jungle</code>
+| {{na}}
+|
+|-
+| <code>Jungle Temple</code>
+| {{gameText|LegacyWorldGen.70}}
+|
+|-
+| <code>Hives</code>
+| {{gameText|LegacyWorldGen.71}}
+|
+|-
+| <code>Jungle Chests</code>
+| {{na}}
+|
+|-
+| <code>Settle Liquids</code>
+| {{gameText|LegacyWorldGen.27}}
+|
+|-
+| <code>Remove Water From Sand</code>
+| {{na}}
+|
+|-
+| <code>Oasis</code>
+| {{na}}
+|
+|-
+| <code>Shell Piles</code>
+| {{na}}
+|
+|-
+| <code>Smooth World</code>
+| {{gameText|LegacyWorldGen.60}}
+|
+|-
+| <code>Waterfalls</code>
+| {{gameText|LegacyWorldGen.69}}
+|
+|-
+| <code>Ice</code>
+| {{na}}
+|
+|-
+| <code>Wall Variety</code>
+| {{gameText|LegacyWorldGen.79}}
+|
+|-
+| <code>Life Crystals</code>
+| {{gameText|LegacyWorldGen.28}}
+|
+|-
+| <code>Statues</code>
+| {{gameText|LegacyWorldGen.29}}
+|
+|-
+| <code>Buried Chests</code>
+| {{gameText|LegacyWorldGen.30}}
+|
+|-
+| <code>Surface Chests</code>
+| {{gameText|LegacyWorldGen.31}}
+|
+|-
+| <code>Jungle Chests Placement</code>
+| {{gameText|LegacyWorldGen.32}}
+|
+|-
+| <code>Water Chests</code>
+| {{gameText|LegacyWorldGen.33}}
+|
+|-
+| <code>Spider Caves</code>
+| {{gameText|LegacyWorldGen.64}}
+|
+|-
+| <code>Gem Caves</code>
+| {{gameText|LegacyWorldGen.64}}
+|
+|-
+| <code>Moss</code>
+| {{gameText|LegacyWorldGen.61}}
+|
+|-
+| <code>Temple</code>
+| {{na}}
+| 
+|-
+| <code>Cave Walls</code>
+| {{gameText|LegacyWorldGen.63}}
+|
+|-
+| <code>Jungle Trees</code>
+| {{gameText|LegacyWorldGen.83}}
+|
+|-
+| <code>Floating Island Houses</code>
+| {{na}}
+|
+|-
+| <code>Quick Cleanup</code>
+| {{na}}
+|
+|-
+| <code>Pots</code>
+| {{gameText|LegacyWorldGen.35}}
+|
+|-
+| <code>Hellforge</code>
+| {{gameText|LegacyWorldGen.36}}
+|
+|-
+| <code>Spreading Grass</code>
+| {{gameText|LegacyWorldGen.37}}
+|
+|-
+| <code>Surface Ore and Stone</code>
+| {{na}}
+|
+|-
+| <code>Place Fallen Log</code>
+| {{gameText|LegacyWorldGen.85}}
+|
+|-
+| <code>Traps</code>
+| {{gameText|LegacyWorldGen.34}}
+| 在 {{eil|No traps}} {{tr|world}}中替换为“{{gameText|LegacyWorldGen.91}}”。
+|-
+| <code>Piles</code>
+| {{gameText|LegacyWorldGen.89}}
+|
+|-
+| <code>Spawn Point</code>
+| {{na}}
+|
+|-
+| <code>Grass Wall</code>
+| {{na}}
+|
+|-
+| <code>Guide</code>
+| {{na}}
+|
+|-
+| <code>Sunflowers</code>
+| {{gameText|LegacyWorldGen.39}}
+|
+|-
+| <code>Planting Trees</code>
+| {{gameText|LegacyWorldGen.40}}
+|
+|-
+| <code>Herbs</code>
+| {{gameText|LegacyWorldGen.41}}
+|
+|-
+| <code>Dye Plants</code>
+| {{na}}
+|
+|-
+| <code>Webs And Honey</code>
+| {{na}}
+|
+|-
+| <code>Weeds</code>
+| {{gameText|LegacyWorldGen.42}}
+|
+* {{tr|place}}[[{{tr|wild grass plant}}]]和[[{{tr|Mushroom}}]]/[[{{tr|Vile Mushroom}}]]/[[{{tr|Vicious Mushroom}}]]于纯净、{{tr|Corrupt}}、{{tr|Crimson}}和{{tr|Ash}}[[{{tr|grass}}]]。
+* 如果是[[{{tr|Halloween}}]]，{{tr|place}}[[{{tr|Pumpkin}}]]。
+|-
+| <code>Glowing Mushrooms and Jungle Plants</code>
+| {{na}}
+|
+|-
+| <code>Jungle Plants</code>
+| {{na}}
+|
+|-
+| <code>Vines</code>
+| {{gameText|LegacyWorldGen.43}}
+|
+|-
+| <code>Flowers</code>
+| {{gameText|LegacyWorldGen.44}}
+|
+|-
+| <code>Mushrooms</code>
+| {{gameText|LegacyWorldGen.45}}
+|
+|-
+| <code>Gems In Ice Biome</code>
+| {{na}}
+|
+|-
+| <code>Random Gems</code>
+| {{na}}
+|
+|-
+| <code>Moss Grass</code>
+| {{na}}
+|
+|-
+| <code>Muds Walls In Jungle</code>
+| {{na}}
+|
+|-
+| <code>Larva</code>
+| {{na}}
+|
+|-
+| <code>Settle Liquids Again</code>
+| {{gameText|LegacyWorldGen.27}}
+|
+|-
+| <code>Cactus, Palm Trees, & Coral</code>
+| {{gameText|LegacyWorldGen.38}}
+|
+|-
+| <code>Tile Cleanup</code>
+| {{gameText|LegacyWorldGen.84}}
+|
+|-
+| <code>Lihzahrd Altars</code>
+| {{na}}
+|
+|-
+| <code>Micro Biomes</code>
+| {{gameText|LegacyWorldGen.76}}
+|
+|-
+| <code>Water Plants</code>
+| {{gameText|LegacyWorldGen.88}}
+|
+|-
+| <code>Stalac</code>
+| {{na}}
+|
+|-
+| <code>Remove Broken Traps</code>
+| {{gameText|LegacyWorldGen.82}}
+|
+|-
+| <code>Final Cleanup</code>
+| {{gameText|LegacyWorldGen.86}}
+|
+|-
+|
+| {{gameText|LegacyWorldGen.87}}
+|
+|}
+
+== 历史 ==
+{{history|Desktop-Release|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+{{footnotelist}}
+
+{{Game mechanics}}
+
+{{language info|en=World generation}}

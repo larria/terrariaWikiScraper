@@ -1,0 +1,274 @@
+[[File:BiomeBannerCrimson.png|center]]
+[[File:Crimson Thorns.png|alt={{tr|the Crimson}}中的|thumb|长在{{tr|the grass}}中的[[{{tr|Thorny bushes}}]]。]]
+{{for|{{tr|this biome}}的{{tr|the underground hardmode}}变体|{{tr|Underground Crimson}}}}
+{{flavor text|{{gameText|LegacyWorldGen.72}}|image = Bestiary The Crimson.png| size = 20px|}}
+
+<!--
+Please make sure to apply any changes made to this page to [[The Corruption]] as well (as far as applicable), due to their analogous contents!
+-->
+'''{{tr|The Crimson}}'''是一种[[{{tr|evil biome}}]]，有着肉体感染的红色血腥主题，与其{{tr|counterpart}}[[{{tr|the Corruption}}]]的深紫色废土主题相反。每个世界只会包含二者之一，随机生成（二者均为 50% 几率），{{eicons|1.3.2}} 或由玩家在{{tr|world creation}}之时选择。二者都包含类似的危险并具有自己独特的[[{{tr|enemies}}]]、[[{{tr|items}}]]、和[[{{tr|blocks}}]]。由{{tr|Crimson}}{{tr|materials}}制作出来的[[{{tr|tools}}]]、[[{{tr|weapons}}]]和[[{{tr|armor}}]]要比由{{tr|Corruption}}{{tr|materials}}做出的稍有一点优势，但{{tr|Corruption tools}}要略快一点。{{tr|Crimson}}{{tr|enemies}}的属性也整体上稍微高一点，比如{{tr|health}}、{{tr|defense}}、{{tr|damage}}。
+
+{{tr|The Crimson surface}}包含红色的[[{{tr|Crimson grass}}]]、[[{{tr|Crimson Tree}}]]、和[[{{tr|Vicious Mushroom}}]]。红色的[[{{tr|Thorny bushes}}]]在{{tr|grass}}上生长，在玩家接触时会对其造成伤害。{{tr|the Crimson}}中的[[{{tr|Water}}]]也是红色的。{{tr|The Crimson}}也包含多个[[{{tr|chasms}}]]，将此{{tr|biome}}扩展到{{tr|underground}}。每个{{tr|chasm}}都有一个位于{{tr|the surface}}的入口，通向一个大的圆形空腔，然后分支成小的“手指”，末端是[[{{tr|Crimson Heart}}]]。[[{{tr|Crimson Altar}}]]通常会沿着{{tr|chasm}}的通道出现在其内部和四周。{{tr|Chasms}}由[[{{tr|Crimstone Block}}]]组成，可用[[{{tr|Explosives (class)}}]]炸掉、用[[{{tr|Nightmare Pickaxe}}]]/[[{{tr|Deathbringer Pickaxe}}]]及更高的{{tr|pickaxe}}挖掉、或用[[{{tr|Purification Powder}}]]净化成[[{{tr|Stone Block}}]]。
+
+{{tr|The Crimson}}会蔓延，意味着它会慢慢地将相邻的{{tr|tiles}}转化为其{{tr|Crimson}}版本。细节请参见[[#蔓延|下文]]。{{tr|Chasms}}、{{tr|Crimson Altars}}、和{{tr|Crimson Hearts}}只会在世界生成过程中出现，不会在通过蔓延而形成的{{tr|Crimson}}区域中生成。必须要存在至少 {{eicons|1.4.0.1}} 300 / {{eicons|1.4.0.1|invert=y}} 200 格[[{{tr|Crimson grass}}]]或{{tr|Crimson blocks}}才能让一个区域被视为{{tr|Crimson biome}}。
+
+== 内容 ==
+{{dablink|关于在{{tr|Hardmode}}中，于[[{{tr|cavern}}]]层及更下层的内容，请查看[[{{tr|Underground Crimson|link=y}}#内容|{{tr|Underground Crimson}}]]。}}
+<section begin=contents /><!--
+-->{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Crawler}}<!--
+			-->|{{item|Vicious Goldfish}}<!--
+			-->|{{item|Face Monster}}<!--
+			-->|{{item|Crimera}}<!--
+			-->|{{item|Brain of Cthulhu|note2=（{{tr|boss}}）|size=*0.5}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Herpling}}<!--
+			-->|{{item|Crimslime}}<!--
+			-->|{{item|Blood Jelly}}<!--
+			-->|{{item|Blood Feeder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title={{tr|Crimson}}[[{{tr|Desert}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Mummy}}<!--
+			-->|{{item|Dark Mummy|image=Dark Mummy (old).png}} {{eicons|1.4.0.1|invert=y|small=y}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特宝藏}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Crimson Heart}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|The Undertaker|note2=(会同时掉落 100 颗[[{{tr|Musket Balls}}]])}}<!--
+			-->|{{item|The Rotted Fork}}<!--
+			-->|{{item|Crimson Rod}}<!--
+			-->|{{item|Panic Necklace}}<!--
+			-->|{{item|Crimson Heart (item)}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Blood Crawler}}]]、[[{{tr|Crimera}}]]、和[[{{tr|Face Monster}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Vertebra}}<!--
+			-->|{{item|Tentacle Spike}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Blood Crawler}}]]、[[{{tr|Crimera}}]]、[[{{tr|Face Monster}}]]、[[{{tr|Blood Feeder}}]]、[[{{tr|Blood Jelly}}]]、[[{{tr|Herpling}}]]、和[[{{tr|Crimslime}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Monster Meat}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Crimera}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Burger}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Brain of Cthulhu}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimtane Ore}}<!--
+			-->|{{item|Tissue Sample}}<!--
+			-->|{{item|Bone Rattle}}<!--
+			-->|{{item|Brain of Cthulhu Trophy|note2=({{chance|1/10}} 几率)}}<!--
+			-->|{{item|Brain of Cthulhu Mask}}<!--
+			-->|{{item|Treasure Bag (Brain of Cthulhu)|Treasure Bag|note2=(在[[{{tr|Expert Mode}}]]中掉落，包含[[{{tr|Brain of Confusion}}]])}}<!--
+			-->|{{item|Brain of Cthulhu Relic|note2=(仅限[[{{tr|Master Mode}}]])}}<!--
+			-->|{{item|Brain in a Jar|note2=(在[[{{tr|Master Mode}}]]中 {{chance|1/4}} 几率掉落)}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Hardmode}}]]的任意[[{{tr|enemy}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Key|note2=({{chance|1/2500}} 几率，仅限{{eicons|Crimson Key Mold|invert=y|small=y}})}}<!--
+			-->|{{item|Crimson Key Mold|note2=({{chance|1/2500}} 几率)}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Herpling}}]]和[[{{tr|Crimslime}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Meat Grinder}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|Blood Mummy}}/[[{{tr|Dark Mummy}}|{{tr|Mummies}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Mummy set|note2=（罕见）}}<!--
+			-->|{{item|Blindfold}}<!--
+			-->|{{item|Dark Shard}}<!--
+			-->|{{item|Megaphone}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[植物]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Vicious Mushroom}}<!--
+			-->|{{item|Deathweed}}<!--
+			-->|{{item|Deathweed Seeds|note2=(在[[{{tr|Moon Phase}}|{{tr|Full Moon}}]]或[[{{tr|Blood Moon}}]]期间)}} <!--
+			-->|{{item|Shadewood|note2=(来自{{tr|trees}})}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimstone Block}}<!--
+			-->|{{item|Crimsand Block|note2=([[{{tr|Desert}}]])}}<!--
+			-->|{{item|Red Ice Block|note2=([[{{tr|Snow biome}}]])}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Fishing}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Crimson Tigerfish}}<!--
+			-->|{{item|Hemopiranha}}<!--
+			-->|{{item|Bladetongue|note2=（仅限[[{{tr|Hardmode}}]]）}}<!--
+			-->|{{item|Crimson Crate|note2=（仅限[[{{tr|Pre-Hardmode}}]]）}}<!--
+			-->|{{item|Hematic Crate|note2=（仅限[[{{tr|Hardmode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Angler}}#任务列表|{{tr|Angler Quest}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bloody Manowar}}<!--
+			-->|{{item|Ichorfish|note2=（仅限[[{{tr|Hardmode}}]]）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|shaking}}]][[{{tr|Shadewood tree}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Blood Orange}}<!--
+			-->|{{item|Rambutan}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Painter}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Deadland Comes Alive}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Crimson)| {{sound|track=Crimson}} |icons=no}}<!--
+			-->|{{item|Otherworldly Music Box (Crimson)| {{sound|track=Crimson (Otherworldly)}} |icons={{eicons|1.4.0.1}} }}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}<!--
+--><section end=contents />
+
+== 蔓延 ==
+{{main|{{tr|Biome spread}}}}
+{{tr|The Crimson}}会向外蔓延自身，类似于[[{{tr|the Corruption}}]]和[[{{tr|the Hallow}}]]。这意味着它会缓慢地转化现有的{{tr|Crimson blocks}}附近的某些易受影响的{{tr|tiles}}。虽然在{{tr|pre-Hardmode}}其蔓延能力非常有限，但在打败了[[{{tr|Wall of Flesh}}]]之后它会蔓延得更快更激进。第一次打败[[{{tr|Plantera}}]]会将{{tr|the Crimson}}的蔓延速度降低 {{chance|1/2}}。
+
+== {{tr|Crimson Desert}} ==
+[[File:Crimsoned Desert.png|thumb|{{tr|Crimson}}[[{{tr|Desert}}]]。]]
+
+在{{tr|Hardmode}}中，{{tr|Crimson}}能够通过[[{{tr|Desert}}]]蔓延，将其转化为{{tr|Crimson Desert}}。{{tr|Crimson Desert}}和常规的{{tr|Crimson biome}}相当相似：主题音乐和{{tr|enemies}}都一样的，另外多出来：
+* {{tr|Surface}}[[{{tr|Desert}}]]：
+** {{eil|Blood Mummy|Blood Mummies}}
+** [[{{tr|Dark Mummy}}|{{tr|Dark Mummies}}]] (仅限在{{eversions|1.4.0.1|invert=y}}中)
+* {{eil|Underground Desert}}：
+** {{eil|Lamia|Dark Lamias}}
+** {{eil|Tainted Ghoul|s}}
+** {{eil|Desert Spirit|s}}
+* {{eil|Sandstorm}}期间：
+** {{eil|Flesh Reaver|s}}
+
+[[{{tr|Sand}}]]会被[[{{tr|Crimsand}}]]取代。虽然{{tr|Cacti}}的颜色不同，但被砍下时依然会掉落普通的[[{{tr|cactus}}]]。[[{{tr|Waterleaf}}]]无法在{{tr|Crimson Deserts}}中生长。如果在世界生成过程中{{tr|Crimson biome}}与{{tr|Desert biome}}重叠，{{tr|Sand}}会转化为{{tr|Crimsand}}，但直到{{tr|Hardmode}}才会开始蔓延。
+
+== {{tr|Crimson Snow}} ==
+[[File:Crimson Chasms.png|thumb|200px|出现在[[{{tr|Ice biome}}]]中的[[{{tr|Chasms}}|{{tr|Crimson Chasms}}]]。]]
+
+和{{tr|the Crimson desert}}一样，{{tr|Crimson Snow biomes}}是在{{tr|Hardmode}}中当{{tr|Crimson}}蔓延至{{tr|Snow biome}}时生成的。[[{{tr|Snow Block}}]]是不可转化的，但[[{{tr|Ice Block}}]]可以转化为[[{{tr|Red Ice Block}}]]。如果在生成过程中{{tr|Crimson biome}}与{{tr|Snow biome}}重叠，则会创造出{{tr|Red Ice}}，但直到{{tr|Hardmode}}才会开始蔓延。
+{{-}}
+== 备注 ==
+{{float file box|[[File:IconCrimson.png|link=]] [[File:IconHallowCrimson.png|link=]]|{{eicons|1.3.0.1}} 世界选择界面上的树图标（右侧：{{tr|Hardmode world}}）}}
+
+* {{tr|Crimson}}可以用[[{{tr|Crimson Seeds}}]]、[[{{tr|Vicious Powder}}]]、[[{{tr|Blood Water}}]]、或[[{{tr|Clentaminator}}]]或{{eil|Terraformer}}加上[[{{tr|Red Solution}}]]来人工创建或蔓延，[[{{tr|Red Solution}}]]可在{{tr|Crimson}}世界中[[{{tr|Blood Moon}}]]时从[[{{tr|Steampunker}}]]处获得（她在{{tr|Corruption}}世界中则改为出售[[{{tr|Purple Solution}}]]）。
+* {{eicons|1.4.0.1}} 可以在{{tr|Crimson world}}中创建人造{{tr|Corrupt biome}}而无需使用另一个世界。为此，必须在[[{{tr|Hardmode}}]]中从位于[[{{tr|Graveyard}}]]的[[{{tr|Dryad}}]]那购买[[{{tr|Corrupt Seeds}}]]。
+* 人工建立新的{{tr|the Crimson biome}}要求至少 {{eicons|1.4.0.1}} 300 / {{eicons|1.4.0.1|invert=y}} 200 {{tr|Crimson tiles}}，虽然在世界生成之时{{tr|Corruption}}可能会取代{{tr|Crimson}}，但并未禁止在{{tr|Corruption}}世界中人工建立{{tr|the Crimson}}（反之亦然），也不会阻止{{tr|Crimson biome}}的蔓延。
+* 在[[{{tr|Hardmode}}]]期间，任何在{{tr|the Crimson}}或{{tr|Underground Crimson}}中的{{tr|enemy}}都有 {{chance|1/2500}} 几率掉落[[{{tr|Crimson Key}}]] {{eicons|Crimson Key Mold|invert=y}} / {{eil|Crimson Key Mold}}。
+* [[{{tr|Steampunker}}]]只会在自然带着{{tr|Crimson}}生成的世界中出售[[{{tr|Flesh Cloning Vat}}]]和{{tr|Red Solution}}。在{{tr|Corruption world}}中人工建立{{tr|the Crimson biome}}不会让她出售这些物品。
+* {{eicons|Secret world seeds}} {{tr|seed}}为 [[05162020]] 的{{tr|world}}中会同时有{{tr|Corruption and Crimson biome}}。
+*{{eicons|1.3.0.1|invert=y}}{{tr|the Crimson}}中的[[{{tr|Tree}}]]不会掉落[[{{tr|Acorn}}]]。
+
+== 小贴士 ==
+{{for|在{{tr|the Crimson}}中生存的详细策略，包括详细的装备建议|指南:在猩红之地生存}}
+
+* 在早期，可以通过以下方式确定世界是否包含{{tr|Crimson}}：
+** [[{{tr|Guide}}]]会告诉玩家去打破[[{{tr|Crimson Heart}}]]（在{{tr|Corruption worlds}}中则是[[{{tr|Shadow Orb}}]]）。
+** {{eicons|1.3.0.1}} 在{{tr|world}}生成时的进度条边框的左侧为红色（{{tr|Corruption}}为紫色）。另外，主进度条为淡黄色（{{tr|Corruption}}为亮绿色）。在世界生成过程中，生成{{tr|the Crimson}}的步骤被称为“{{gameText|LegacyWorldGen.72}}”（{{tr|Corruption}}为“{{gameText|LegacyWorldGen.20}}”）。此外，世界选择菜单中，{{tr|world}}的{{tr|tree icon}}会有一侧是红色（{{tr|Corruption}}为紫色）。
+
+== 花絮 ==
+[[File:Overlapping Crimson chasms.jpg|thumb|200px|两个{{tr|Crimson chasms}}互相重叠。]]
+[[File:Site-logo-crimson.png|frame|right|显示在{{tr|Official Terraria Forums}}和本 wiki（{{tr|Crimson}}风格）上的有[[{{tr|Blood Crawler}}]]的{{tr|Crimson}} {{tr|logo}}]]
+
+* 偶尔，两个{{tr|chasms}}会有所重叠， 出现一种“十字”或 “X” 图案，就像右图中可见到的那样。
+* 由于有巨大的圆形空腔、向外的分支、以及以锐角切入的入口通道，当和{{tr|Crimson}}的血腥相关主题相结合后，整个{{tr|chasm}}的形状有很多种解读：
+** 一只卡通化的手，手指张开。
+** 连着血管的心脏，因为其红色主题。
+** 这些{{tr|chasms}}可以代表神经元（大脑中的细胞）的主体，其相关 {{tr|boss}} [[{{tr|the Brain of Cthulhu}}]]可以佐证这一点。而{{tr|the Corruption}}中的{{tr|chasms}}像是{{tr|worm}}的孔洞并且有着{{tr|worm}}类 {{tr|boss}} [[{{tr|Eater of Worlds}}]]。
+** {{tr|the chasm}}的入口处有像是牙齿般的钟乳石和石笋，可以解读为入口是野兽的嘴巴。
+* 很多{{tr|Crimson}}{{tr|enemies}}有畸形的特征和类似癌变的水疱。这与许多{{tr|Corruption enemies}}的腐烂身体形成了鲜明对比，它们身上有时还会滴下绿色的脓液。
+* 在[[{{tr|Blood Moon}}]]期间，有三种[[{{tr|Critters}}]]会变为{{tr|Vicious}}的（[[{{tr|Vicious Bunny}}]]、{{eil|Vicious Goldfish}}和{{eil|Vicious Penguin}}），这是对{{tr|The Crimson}}的引用。也可以用[[{{tr|Vicious Powder}}]]将这些{{tr|critters}}变为{{tr|Vicious}}的。
+* {{lore|{{tr|the Crimson}}是一个想要平衡世界的生物，从其中出来的生物过去是崇拜{{tr|the Crimson}}的。它就像是连结所有世界的一个主脑，而其存在自身是不可见的。}}
+** 基于此，[[{{tr|Crimstone Block}}|{{tr|Crimstone}}]]似乎就是这个大家伙的肉。其外观可以支持这点，而用它来制作东西的物品名字叫做[[{{tr|Meat Grinder}}]]也可以作为支持。
+* {{eicons|1.3.0.1}} {{tr|Crimson worlds}}在{{tr|world}}生成过程中的进度条颜色为黄色可能是基于{{tr|Crimson biome}}的独有{{tr|material}}为[[{{tr|Ichor}}]]的事实。
+* {{icon/old-gen}} [[{{tr|Achievement}}]]“Corruptible”提到了[[{{tr|The Corruption}}]]。但是，{{tr|the Crimson}}看起来并没有对应的{{tr|Crimson}}版{{tr|achievement}}。
+* {{eicons|1.4.0.1}} [[{{tr|Crimera}}]]有时会作为[[{{tr|ambient entities}}]]出现在{{tr|surface Crimson biome}}的{{tr|background}}中。
+{{collapse top|内含传说}}
+[[File:Crimson_lore.png]]
+{{collapse bottom}}
+
+== 图库 ==
+=== {{tr|Backgrounds}} ===
+{{transclude|{{tr|Biome backgrounds}}#{{tr|The Crimson}}|clr=y}}
+
+== 另见 ==
+* [[{{tr|The Hallow}}]]
+* [[{{tr|The Corruption}}]]
+* [[{{tr|Music}}#Crimson|{{tr|the Crimson}}的音乐]]
+* [[指南:维护世界的纯净度]]
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+**{{tr|Crimson}}蔓延时不再摧毁[[{{tr|Jungle}}]]和[[{{tr|mud}}]]，而是将[[{{tr|Jungle grass}}]]转化为[[{{tr|Crimson Jungle grass}}]]。}}
+{{history|Desktop 1.4.1|
+** {{tr|Worldgen}}会尝试避免让{{tr|the Crimson}}和[[{{tr|Jungle}}]]在初始生成过程中重叠。
+** [[{{tr|Vicious Goldfish}}]]现在会在{{tr|Crimson water}}自然生成。}}
+{{history|Desktop 1.4.0.1|
+** 生成{{tr|Crimson biome}}所需的{{tr|Crimson tile}}数由 200 个{{tr|tile}}增加至 300 个。
+** 添加了三个新背景。
+** 添加了来自已取消的[[《{{tr|Terraria: Otherworld}}》]]的异界版{{tr|Crimson}}曲子。}}
+{{history|Desktop 1.3.0.1|
+** 现在可以从{{tr|the Crimson}}收获[[{{tr|Vicious Mushroom}}]]。
+** {{tr|Crimson}}怪不再掉落[[{{tr|Crimson Key Mold}}]]，但现在会掉落[[{{tr|Crimson Key}}]]。
+** {{tr|Crimson grass}}现在会长出{{tr|red thorny bushes}}。
+** {{tr|Shadewood Trees}}现在会掉落{{tr|Acorns}}。}}
+{{history|Desktop 1.2.3|{{tr|Crimson Deserts}}现在有正确的水体颜色了。添加了未实现的{{tr|crimson}}怪兽声音。}}
+{{history|Desktop 1.2.1|现在可被[[{{tr|Sunflower}}]]停止。{{tr|Crimson}}和{{tr|Hallow}}现在互相抵消。}}
+{{history|Desktop 1.2.0.3|
+** 现在可以用[[{{tr|Purification Powder}}]]和[[{{tr|Holy Water}}]]净化。
+** {{tr|Hardmode}}的{{tr|Crimson}}、{{tr|Corruption}}、和{{tr|Hallow}}的蔓延速度现在会在杀死[[{{tr|Plantera}}]]后减缓，而非在击杀任意[[{{tr|Mechanical Boss}}]] 后。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Biomes}}
+{{all versions}}
+
+{{language info|en=The Crimson}}

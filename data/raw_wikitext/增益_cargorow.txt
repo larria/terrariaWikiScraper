@@ -1,0 +1,16 @@
+<includeonly><!--
+
+-->
+{{!-}}
+{{!}} {{buff|{{{buffs}}}|mode=table}}
+{{!}} {{item|{{{name}}}|image={{{imagefile|}}}|wrap=y}}
+{{!}} <i>{{{tooltip|}}}</i>
+{{!}} {{getBuffInfo|{{buffIdFromName|{{{buffs}}}}}|tooltip}}
+{{!}} style="text-align:right" {{!}} {{#var:buffs-cargorow:duration}}<!--
+
+--></includeonly><!--
+
+--><noinclude>
+{{formatting subpage}}
+{{language info|en=Buffs/cargorow}}
+</noinclude>

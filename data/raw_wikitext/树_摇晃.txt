@@ -1,0 +1,542 @@
+<!--
+/**** init preparation, for {{Trees/Shaking/row}} ****/
+// register localization information for {{Trees/Shaking/row}}
+// since each language will have their own ''Trees/Shaking'' page, only one langage l10n info is needed here.
+// Each translated version of ''Trees/Shaking'' page should translate following l10n info into that language.
+-->{{l10n/register|shakingrow|zh<!--
+	-->|_=在任何其他条件下<!--
+	-->|day=在{{tr|day}}<!--
+	-->|night=在{{tr|night}}<!--
+	-->|halloween={{tr|Halloween}}期间<!--
+	-->|notoasis=仅限在{{tr|Ocean biomes}}中，不在{{tr|Deserts}}或{{tr|Oasis}}内<!--
+	-->|underworld=仅限{{tr|Underworld layer}}<!--
+-->}}<!--
+
+//cache
+-->{{#vardefine:na|{{na}}}}<!--
+// init vars
+-->{{#dplvar:set<!--
+	-->|shakingrow:condimage:_|<!--
+	-->|shakingrow:condimage:day|[[File:Bestiary Daytime.png|x20px|{{l10n|shakingrow|day}}|link={{tr|Day|link=y}}]]<!--
+	-->|shakingrow:condimage:night|[[File:Bestiary Nighttime.png|x20px|{{l10n|shakingrow|night}}|link={{tr|Night|link=y}}]]<!--
+	-->|shakingrow:condimage:halloween|[[File:Bestiary Halloween.png|x20px|{{l10n|shakingrow|halloween}}|link={{tr|Halloween|link=y}}]]<!--
+	-->|shakingrow:condimage:notoasis|[[File:Bestiary Ocean.png|x20px|{{l10n|shakingrow|notoasis}}|link={{tr|Ocean|link=y}}]]<!--
+	-->|shakingrow:condimage:underworld|[[File:Bestiary The Underworld.png|x20px|{{l10n|shakingrow|underworld}}|link={{tr|Underworld|link=y}}]]<!--
+
+	-->|shakingrow:cargo:cond:_|<!--
+	-->|shakingrow:cargo:cond:day|Day<!--
+	-->|shakingrow:cargo:cond:night|Night<!--
+	-->|shakingrow:cargo:cond:halloween|Halloween<!--
+	-->|shakingrow:cargo:cond:notoasis|Ocean<!--
+	-->|shakingrow:cargo:cond:underworld|Underworld<!--
+	-->|shakingrow:cargo:treetype:forest|Forest tree<!--
+	-->|shakingrow:cargo:treetype:boreal|Boreal tree<!--
+	-->|shakingrow:cargo:treetype:jungle|Mahogany tree<!--
+	-->|shakingrow:cargo:treetype:corrupt|Ebonwood tree<!--
+	-->|shakingrow:cargo:treetype:crimson|Shadewood tree<!--
+	-->|shakingrow:cargo:treetype:hallowed|Pearlwood tree<!--
+	-->|shakingrow:cargo:treetype:palm|Palm tree<!--
+	-->|shakingrow:cargo:treetype:corrupt palm|Ebonwood Palm tree<!--
+	-->|shakingrow:cargo:treetype:crimson palm|Shadewood Palm tree<!--
+	-->|shakingrow:cargo:treetype:hallowed palm|Pearlwood Palm tree<!--
+	-->|shakingrow:cargo:treetype:ash|Ash tree<!--
+	-->|shakingrow:cargo:treetype:mushroom|Giant Glowing Mushroom<!--
+
+	-->|shakingrow:n:forest__|1<!--
+	-->|shakingrow:n:forest_day|1<!--
+	-->|shakingrow:n:forest_night|1<!--
+	-->|shakingrow:n:forest_halloween|1<!--
+	-->|shakingrow:n:forest_notoasis|1<!--
+	-->|shakingrow:n:forest_underworld|1<!--
+	-->|shakingrow:d:forest__|1<!--
+	-->|shakingrow:d:forest_day|1<!--
+	-->|shakingrow:d:forest_night|1<!--
+	-->|shakingrow:d:forest_halloween|1<!--
+	-->|shakingrow:d:forest_notoasis|1<!--
+	-->|shakingrow:d:forest_underworld|1<!--
+	-->|shakingrow:n:boreal__|1<!--
+	-->|shakingrow:n:boreal_day|1<!--
+	-->|shakingrow:n:boreal_night|1<!--
+	-->|shakingrow:n:boreal_halloween|1<!--
+	-->|shakingrow:n:boreal_notoasis|1<!--
+	-->|shakingrow:n:boreal_underworld|1<!--
+	-->|shakingrow:d:boreal__|1<!--
+	-->|shakingrow:d:boreal_day|1<!--
+	-->|shakingrow:d:boreal_night|1<!--
+	-->|shakingrow:d:boreal_halloween|1<!--
+	-->|shakingrow:d:boreal_notoasis|1<!--
+	-->|shakingrow:d:boreal_underworld|1<!--
+	-->|shakingrow:n:jungle__|1<!--
+	-->|shakingrow:n:jungle_day|1<!--
+	-->|shakingrow:n:jungle_night|1<!--
+	-->|shakingrow:n:jungle_halloween|1<!--
+	-->|shakingrow:n:jungle_notoasis|1<!--
+	-->|shakingrow:n:jungle_underworld|1<!--
+	-->|shakingrow:d:jungle__|1<!--
+	-->|shakingrow:d:jungle_day|1<!--
+	-->|shakingrow:d:jungle_night|1<!--
+	-->|shakingrow:d:jungle_halloween|1<!--
+	-->|shakingrow:d:jungle_notoasis|1<!--
+	-->|shakingrow:d:jungle_underworld|1<!--
+	-->|shakingrow:n:corrupt__|1<!--
+	-->|shakingrow:n:corrupt_day|1<!--
+	-->|shakingrow:n:corrupt_night|1<!--
+	-->|shakingrow:n:corrupt_halloween|1<!--
+	-->|shakingrow:n:corrupt_notoasis|1<!--
+	-->|shakingrow:n:corrupt_underworld|1<!--
+	-->|shakingrow:d:corrupt__|1<!--
+	-->|shakingrow:d:corrupt_day|1<!--
+	-->|shakingrow:d:corrupt_night|1<!--
+	-->|shakingrow:d:corrupt_halloween|1<!--
+	-->|shakingrow:d:corrupt_notoasis|1<!--
+	-->|shakingrow:d:corrupt_underworld|1<!--
+	-->|shakingrow:n:crimson__|1<!--
+	-->|shakingrow:n:crimson_day|1<!--
+	-->|shakingrow:n:crimson_night|1<!--
+	-->|shakingrow:n:crimson_halloween|1<!--
+	-->|shakingrow:n:crimson_notoasis|1<!--
+	-->|shakingrow:n:crimson_underworld|1<!--
+	-->|shakingrow:d:crimson__|1<!--
+	-->|shakingrow:d:crimson_day|1<!--
+	-->|shakingrow:d:crimson_night|1<!--
+	-->|shakingrow:d:crimson_halloween|1<!--
+	-->|shakingrow:d:crimson_notoasis|1<!--
+	-->|shakingrow:d:crimson_underworld|1<!--
+	-->|shakingrow:n:hallowed__|1<!--
+	-->|shakingrow:n:hallowed_day|1<!--
+	-->|shakingrow:n:hallowed_night|1<!--
+	-->|shakingrow:n:hallowed_halloween|1<!--
+	-->|shakingrow:n:hallowed_notoasis|1<!--
+	-->|shakingrow:n:hallowed_underworld|1<!--
+	-->|shakingrow:d:hallowed__|1<!--
+	-->|shakingrow:d:hallowed_day|1<!--
+	-->|shakingrow:d:hallowed_night|1<!--
+	-->|shakingrow:d:hallowed_halloween|1<!--
+	-->|shakingrow:d:hallowed_notoasis|1<!--
+	-->|shakingrow:d:hallowed_underworld|1<!--
+	-->|shakingrow:n:palm__|1<!--
+	-->|shakingrow:n:palm_day|1<!--
+	-->|shakingrow:n:palm_night|1<!--
+	-->|shakingrow:n:palm_halloween|1<!--
+	-->|shakingrow:n:palm_notoasis|1<!--
+	-->|shakingrow:n:palm_underworld|1<!--
+	-->|shakingrow:d:palm__|1<!--
+	-->|shakingrow:d:palm_day|1<!--
+	-->|shakingrow:d:palm_night|1<!--
+	-->|shakingrow:d:palm_halloween|1<!--
+	-->|shakingrow:d:palm_notoasis|1<!--
+	-->|shakingrow:d:palm_underworld|1<!--
+	-->|shakingrow:n:corrupt palm__|1<!--
+	-->|shakingrow:n:corrupt palm_day|1<!--
+	-->|shakingrow:n:corrupt palm_night|1<!--
+	-->|shakingrow:n:corrupt palm_halloween|1<!--
+	-->|shakingrow:n:corrupt palm_notoasis|1<!--
+	-->|shakingrow:n:corrupt palm_underworld|1<!--
+	-->|shakingrow:d:corrupt palm__|1<!--
+	-->|shakingrow:d:corrupt palm_day|1<!--
+	-->|shakingrow:d:corrupt palm_night|1<!--
+	-->|shakingrow:d:corrupt palm_halloween|1<!--
+	-->|shakingrow:d:corrupt palm_notoasis|1<!--
+	-->|shakingrow:d:corrupt palm_underworld|1<!--
+	-->|shakingrow:n:crimson palm__|1<!--
+	-->|shakingrow:n:crimson palm_day|1<!--
+	-->|shakingrow:n:crimson palm_night|1<!--
+	-->|shakingrow:n:crimson palm_halloween|1<!--
+	-->|shakingrow:n:crimson palm_notoasis|1<!--
+	-->|shakingrow:n:crimson palm_underworld|1<!--
+	-->|shakingrow:d:crimson palm__|1<!--
+	-->|shakingrow:d:crimson palm_day|1<!--
+	-->|shakingrow:d:crimson palm_night|1<!--
+	-->|shakingrow:d:crimson palm_halloween|1<!--
+	-->|shakingrow:d:crimson palm_notoasis|1<!--
+	-->|shakingrow:d:crimson palm_underworld|1<!--
+	-->|shakingrow:n:hallowed palm__|1<!--
+	-->|shakingrow:n:hallowed palm_day|1<!--
+	-->|shakingrow:n:hallowed palm_night|1<!--
+	-->|shakingrow:n:hallowed palm_halloween|1<!--
+	-->|shakingrow:n:hallowed palm_notoasis|1<!--
+	-->|shakingrow:n:hallowed palm_underworld|1<!--
+	-->|shakingrow:d:hallowed palm__|1<!--
+	-->|shakingrow:d:hallowed palm_day|1<!--
+	-->|shakingrow:d:hallowed palm_night|1<!--
+	-->|shakingrow:d:hallowed palm_halloween|1<!--
+	-->|shakingrow:d:hallowed palm_notoasis|1<!--
+	-->|shakingrow:d:hallowed palm_underworld|1<!--
+	-->|shakingrow:n:ash__|1<!--
+	-->|shakingrow:n:ash_day|1<!--
+	-->|shakingrow:n:ash_night|1<!--
+	-->|shakingrow:n:ash_halloween|1<!--
+	-->|shakingrow:n:ash_notoasis|1<!--
+	-->|shakingrow:n:ash_underworld|1<!--
+	-->|shakingrow:d:ash__|1<!--
+	-->|shakingrow:d:ash_day|1<!--
+	-->|shakingrow:d:ash_night|1<!--
+	-->|shakingrow:d:ash_halloween|1<!--
+	-->|shakingrow:d:ash_notoasis|1<!--
+	-->|shakingrow:d:ash_underworld|1<!--
+	-->|shakingrow:n:mushroom__|1<!--
+	-->|shakingrow:n:mushroom_day|1<!--
+	-->|shakingrow:n:mushroom_night|1<!--
+	-->|shakingrow:n:mushroom_halloween|1<!--
+	-->|shakingrow:n:mushroom_notoasis|1<!--
+	-->|shakingrow:n:mushroom_underworld|1<!--
+	-->|shakingrow:d:mushroom__|1<!--
+	-->|shakingrow:d:mushroom_day|1<!--
+	-->|shakingrow:d:mushroom_night|1<!--
+	-->|shakingrow:d:mushroom_halloween|1<!--
+	-->|shakingrow:d:mushroom_notoasis|1<!--
+	-->|shakingrow:d:mushroom_underworld|1<!--
+
+	-->|shakingrow:alltreetypes|forest,boreal,jungle,corrupt,crimson,hallowed,palm,corrupt palm,crimson palm,hallowed palm,ash,mushroom<!--
+	-->|shakingrow:allconditions|_,day,night,halloween,notoasis,underworld<!--
+
+	-->|shakingrow:__OK__|OK<!--
+-->}}<!--
+
+
+/////////////// START ///////////////////////////
+
+-->具体的掉落率根据树的类型和某些条件会有所不同，列于下表。出现在某些几率前图标表示上述条件；如果这些条件中适用的那些全部不满足，则适用不带图标的几率。
+{{options/set|item|class=break|icons=n}}{{options/set|chance|mode=p}}
+{| class="terraria lined sortable mw-collapsible" id="treeshaking-table"
+! rowspan=2 | {{nowrap|{{tr|Item}} / {{tr|NPC}} / 物体}} !! colspan=99 | 几率，按树的类型{{source code ref|v=1.4.4.5|method=Terraria.WorldGen.ShakeTree}}
+|-
+{{#vardefineecho:shakingrow:tableheader-treetypes|
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Forest 1.png|x30px]]<br/>{{tr|Forest tree}}<ref>包括{{tr|Yellow Willow and Pink Sakura trees}}</ref>}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Boreal Alt1 2.png|x30px]]<br/>{{tr|Boreal tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Jungle 1.png|x30px]]<br/>{{tr|Mahogany tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Corrupt 1.png|x30px]]<br/>{{tr|Ebonwood tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Crimson 1.png|x30px]]<br/>{{tr|Shadewood tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Hallowed 1.png|x30px]]<br/>{{tr|Pearlwood tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Palm 1.png|x30px]]<br/>{{tr|Palm tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Corrupt Palm 1.png|x30px]]<br/>{{tr|Ebonwood Palm tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Crimson Palm 1.png|x30px]]<br/>{{tr|Shadewood Palm tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Hallowed Palm 1.png|x30px]]<br/>{{tr|Pearlwood Palm tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Ash 1.png|x30px]]<br/>{{tr|Ash tree}}}}
+! width=80px data-sort-type=number {{!}} {{inline block|[[File:Treetop Mushroom 1.png|x30px]]<br/>{{tr|Giant Glowing Mushroom}}}}
+}}
+|-
+
+{{:Trees/Shaking/row
+|item={{item|Living Wood Wand|note=({{eicons|1.4.1}})}}
+|lootitem=<noinclude>Living Wood Wand</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/300
+|treetypes=forest
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Leaf Wand|note=({{eicons|1.4.1}})}}
+|lootitem=<noinclude>Leaf Wand</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/300
+|treetypes=forest
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Living Mahogany Wand|note=({{eicons|1.4.1}})}}
+|lootitem=<noinclude>Living Mahogany Wand</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/200
+|treetypes=jungle
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Rich Mahogany Leaf Wand|note=({{eicons|1.4.1}})}}
+|lootitem=<noinclude>Rich Mahogany Leaf Wand</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/200
+|treetypes=jungle
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Eucalyptus Sap}}
+|lootitem=<noinclude>Eucalyptus Sap</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/1000
+|treetypes=forest
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Acorn|note2=1–2}}
+|lootitem=<noinclude>Acorn</noinclude><!-- prevent duplicate storage when transcluding -->
+|lootquantity=1–2
+|chance=1/7
+|treetypes=forest,boreal,hallowed,ash
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Mushroom Grass Seeds}}
+|lootitem=<noinclude>Mushroom Grass Seeds</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/8
+|treetypes=mushroom
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Rotten Egg|note2=1–2}}
+|lootitem=<noinclude>Rotten Egg</noinclude><!-- prevent duplicate storage when transcluding -->
+|lootquantity=1–2
+|chance=1/35
+|treetypes=all
+|conditions=halloween
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Woods|mode=text|note2=1–3}}<br/>（相应类型）<ref name=wood-mushroom/>
+|chance=1/12
+|treetypes=all
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* [[{{tr|Coins}}]]<ref name=coins/>
+* {{note|{{cc|50}} – {{gc|3}}}}
+* {{note|small=y|平均：{{coin|round=0|{{#expr:74.5*87/100 + 100*29/12000 + 200*4843/1404000 + 300*2519/702000 + 1250*42823/702000 + 3000*329/14040 + 5000*1/360 + 10000*3/125 + 20000*13/1500 + 30000*1/1500}}}}<!-- see reference below -->}}
+|chance=1/20
+|treetypes=all
+}}
+
+{{:Trees/Shaking/row
+|item=下列[[{{tr|critters}}]]中的任一个：<ref name=critters/><br/>{{item|Bird|mode=image}} {{item|Blue Jay|mode=image}} {{item|Cardinal|mode=image}} {{item|Squirrel|mode=image}} {{item|Red Squirrel|mode=image}}<br/>{{item|Gold Bird|mode=image}} {{item|Gold Squirrel|mode=image}}
+|chance=1/15
+|treetypes=forest, hallowed
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Fairy|image=Pink Fairy.png/Green Fairy.png/Blue Fairy.png}}
+|chance=1/50
+|treetypes=hallowed
+|conditions=night
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Owl}}
+|chance=1/50
+|treetypes=forest
+|conditions=night
+}}
+
+{{:Trees/Shaking/row
+|item=下列[[{{tr|critters}}]]中的任一个：<br/>{{item|Scarlet Macaw|mode=image}} {{item|Blue Macaw|mode=image}} {{item|Toucan|mode=image}} {{item|Yellow Cockatiel|mode=image}} {{item|Gray Cockatiel|mode=image}}
+|chance=1/50
+|treetypes=jungle
+|conditions=day
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Raven}}
+|chance=1/40
+|treetypes=forest
+|conditions=halloween
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Bird|mode=image|image=Bird.png/Blue Jay.png/Cardinal.png/Gold Bird.png|note=×5}}<br/>{{item|Bird|s|mode=text|note=×5}}<ref name=birds/>
+|chance=1/50
+|treetypes=forest, hallowed
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Bee|s|image=Bee.png/Bee 1.png|note=×5}}
+|chance=1/40
+|treetypes=jungle
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Seagull}}
+|chance=1/20
+|treetypes=palm, hallowed palm, corrupt palm, crimson palm
+|conditions=notoasis
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Crimera|Little Crimera|scale=0.85|class=multi-line}}
+|chance=1/30
+|treetypes=crimson, crimson palm
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Eater of Souls|Little Eater|scale=0.85|class=multi-line}}
+|chance=1/30
+|treetypes=corrupt, corrupt palm
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Jungle Bat}}
+|chance=1/30
+|treetypes=jungle
+|conditions=night
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Bee Hive|note=（{{tr|projectile}}）|wrap=y}}
+|chance=1/40
+|treetypes=jungle
+}}
+
+{{:Trees/Shaking/row
+|item={{item|Butterfly}}<ref name=butterfly/>
+|chance=1/20
+|treetypes=forest, hallowed
+|conditions=day
+}}
+
+{{:Trees/Shaking/row
+|item=下列[[{{tr|critters}}]]中的任一个：<br/>{{item|Hell Butterfly|mode=image}} {{item|Lavafly|mode=image}} {{item|Magma Snail|mode=image}}
+|chance=1/20
+|treetypes=ash
+|conditions=underworld
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Apple}}
+* {{item|Peach}}
+* {{item|Apricot}}
+* {{item|Grapefruit}}
+* {{item|Lemon}}
+|lootitem=<noinclude>Apple / Peach / Apricot / Grapefruit / Lemon</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=forest
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Plum}}
+* {{item|Cherry}}
+|lootitem=<noinclude>Plum / Cherry</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=boreal
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Mango}}
+* {{item|Pineapple}}
+|lootitem=<noinclude>Mango / Pineapple</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=jungle
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Coconut}}
+* {{item|Banana}}
+|lootitem=<noinclude>Coconut / Banana</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=palm, hallowed palm, corrupt palm, crimson palm
+|conditions=notoasis
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Elderberry}}
+* {{item|Blackcurrant}}
+|lootitem=<noinclude>Elderberry / Blackcurrant</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=corrupt, corrupt palm
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Dragon Fruit}}
+* {{item|Star Fruit}}
+|lootitem=<noinclude>Dragon Fruit / Star Fruit</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=hallowed, hallowed palm
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Blood Orange}}
+* {{item|Rambutan}}
+|lootitem=<noinclude>Blood Orange / Rambutan</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=crimson, crimson palm
+}}
+
+{{:Trees/Shaking/row
+|item=<nowiki/>
+* {{item|Spicy Pepper}}
+* {{item|Pomegranate}}
+|lootitem=<noinclude>Spicy Pepper / Pomegranate</noinclude><!-- prevent duplicate storage when transcluding -->
+|chance=1/12
+|treetypes=ash
+}}
+|-
+! !{{#var:shakingrow:tableheader-treetypes}}
+|}{{options/reset|item}}
+{{reflist|refs=
+<ref name=wood-mushroom>{{tr|Giant Glowing Mushrooms}}掉落[[{{tr|Glowing Mushroom}}]]。</ref>
+<ref name=coins>详细的掉落几率：<br/>
+{{chance|87/100}}: {{cc|t=50–99}}<br/>
+<!--
+
++++ Silver Coin drop rates, Desktop 1.4.0.5 +++
+
+From the source code, we can easily get the chances for "1-20sc", "2-40sc", and "3-60sc":
+P(1-20)=29/600; 	P(2-40)=29/720; 	P(3-60)=29/3600.
+
+However, this is not very useful for determining the drop chance of "14sc", for instance, because "14sc" is encompassed by all three of those chances.
+
+Therefore, we need to get P(1), P(2), P(3), P(4-20), P(21-40), and P(41-60).
+
+In order to do that, we express the chances above as P_a, P_b, and P_c, respectively, so we can work with them:
+P(1-20)=29/600=P_a 	// encompasses the coin amounts from "1sc" to "20sc", all of which have an equal chance
+P(2-40)=29/720=P_b 	// encompasses the coin amounts from "2sc" to "40sc", all of which have an equal chance
+P(3-60)=29/3600=P_c 	// encompasses the coin amounts from "3sc" to "60sc", all of which have an equal chance
+
+
+注：
+To get P for one coin amount from the values above, we multiply it by (1/<number of values>): P_a(1)=P_a*(1/20)=29/12000.
+We can safely say that P_a(1)=P_a(2)=...=P_a(20), P_b(2)=P_b(3)=..., or P_x(m)=P_x(n) in general, because all have the same chance. This also implies P_x(m-n)=P_x(o-p) where m-n=o-p (actual minuses in this last equation, not range hyphens), e.g. P_a(1-5)=P_a(2-6)=...=P_a(16-20). We will use this in the calculations below.
+We cannot say P_a(10)=P_b(10)=P_c(10), however, because P_a encompasses 20 values, P_b encompasses 39 values, and P_c encompasses 58 values.
+
+
+Start calculations:
+
+P(1) = P_a(1) = P_a*(1/20) 				// only P_a encompasses "1sc", so we can simply take a twentieth from it
+P(1) = 29/12000
+
+P(2) = P_a(2)+P_b(2) = P_a(1)+P_b*(1/39) 		// both P_a and P_b encompass "2sc", so we have to take one coin amount from each and add them
+P(2) = 4843/1404000
+
+P(3) = P_a(3)+P_b(3)+P_c(3) = P_a(1)+P_b(2)+P_c*(1/58) 	// all three encompass "3sc"
+P(3) = 2519/702000
+
+P(4-20) = P_a(4-20) + P_b(4-20) + P_c(4-20) 	// again, all three encompass "4-20sc"
+P_a(4-20) = P_a*(17/20) = 493/12000 		// P_a encompasses 20 values, 1-20; we want 4-20, so 17 values
+P_b(4-20) = P_b*(17/39) = 493/28080 		// P_a encompasses 39 values
+P_c(4-20) = P_c*(17/58) = 17/7200 		// P_c encompasses 58 values
+P(4-20) = (493/12000)+(493/28080)+(17/7200) = 42823/702000
+
+P(21-40) = P_b(21-40) + P_c(21-40) 	// P_b and P_c encompass "21-40sc"
+P_b(21-40) = P_b*(20/39) = 29/1404 	// P_b encompasses 39 values, 2-40; we want 21-40, so 20 values
+P_c(21-40) = P_c*(20/58) = 1/360 	// P_c encompasses 58 values
+P(21-40) = (29/1404)+(1/360) = 329/14040
+
+P(41-60) = P_c(41-60)		// only P_c encompasses "41-60sc"
+P_c(41-60) = P_c(21-40) 	// 41-60 is 20 values, the same as 21-40
+P(41-60) = 1/360
+
+Finished.
+
+-->
+{{chance|29/12000}}: {{sc|1}}<br/>
+{{chance|4843/1404000}}: {{sc|2}}<br/>
+{{chance|2519/702000}}: {{sc|3}}<br/>
+{{chance|42823/702000}}: {{sc|t=4–20}}<br/>
+{{chance|329/14040}}: {{sc|t=21–40}}<br/>
+{{chance|1/360}}: {{sc|t=41–60}}<br/><!--
+
+Please do not simply change the chances for the Silver Coin amounts above. Read through the calculations above them first, and post on the talk page if there are issues.
+
+-->
+{{chance|3/125}}: {{gc|1}}<br/>
+{{chance|13/1500}}: {{gc|2}}<br/>
+{{chance|1/1500}}: {{gc|3}}<br/>
+如果是区间，那么区间内的所有数量几率相同；例如，{{sc|34}} 的掉落几率是 {{chance|mode=p|329/14040}}/20 = {{chance|mode=p|329/14040/20}}。</ref>
+<ref name=critters>{{tr|The gold critters}}只有 {{chance|1/400|mode=full}} 几率取代其他的生成。</ref>
+<ref name=birds>五种鸟是随机选择的，有 {{chance|1/400|mode=full}} 几率选择{{tr|the Gold Bird}}。</ref>
+<ref name=butterfly>{{tr|The Gold Butterfly}}有 {{chance|1/400|mode=full}} 几率取代普通{{tr|Butterfly}}生成。</ref>
+}}
+{{options/reset|chance}}
+<noinclude>
+{{category|Pages to transclude}}
+{{language info|en=Trees/Shaking}}
+</noinclude>

@@ -1,0 +1,100 @@
+{{DISPLAYTITLE:tModLoader}}
+{{exclusive|dsk=y}}
+{{software infobox
+| name = tModLoader
+| image = TModLoader Logo.png
+| type = Modding Tool
+| version = {{v|tmodloader-1.4}} {{note|paren=y|1.4-stable}}<br/>{{v|tmodloader}} {{note|paren=y|1.3-legacy}}<!-- Version numbers are stored in Template:Current versions so they can be used across multiple pages. -->
+| platform = {{icon|windows|mac|linux}}
+| author = [https://www.tmodloader.net/ TML 开发团队]
+| download =
+* [https://store.steampowered.com/%61pp/1281930/tModLoader/ Steam]
+* [https://github.com/tModLoader/tModLoader/releases/ GitHub]
+}}
+
+'''tModLoader'''（'''TML'''）是一个免费的程序，允许使用[[{{tr|mods}}]]游玩[[《{{tr|Terraria}}》]]。其内置的{{tr|Mod}}浏览器能够下载并更新{{tr|Mod}}，也能上传自己制作的{{tr|Mod}}。tModLoader 由 TML 团队开发制作，并由其发布为独立程序，不过它也可在 Steam 上作为《{{tr|Terraria}}》的{{wikipedia|Downloadable content|可下载内容（DLC）}}获取。关于包含制作{{tr|mod}}和使用 tModLoader 的信息的官方 tModLoader Wiki 可以在 [https://github.com/tModLoader/tModLoader/wiki GitHub] 上找到。
+
+普通的、“{{wikipedia|Vanilla software|原版的}}”《{{tr|Terraria}}》和 tModLoader 是完全独立的，因为基础游戏被包含在 tModLoader 中，并被作了修改以允许添加{{tr|Mod}}。因此，tModLoader 版本的《{{tr|Terraria}}》的更新独立于原版游戏。由于在 [[1.4.0.1]]（{{tr|Journey's End}}）更新中的大量改动，需要对修改过的基础游戏做根本改变，目前存在两种“种类”的 tModLoader：其中一个是基于[[1.3.5.3|《{{tr|Terraria}}》 1.3.5.3]] 的（“1.3-legacy”），另一个是基于[[1.4.4.9|《{{tr|Terraria}}》 1.4.4.9]] 的（“1.4-stable”）。在其中一种上可用的{{tr|Mods}}可能在另一种上不可用。
+
+在本 wiki 上，1.4.4.9 的种类被视为{{desktop version}}的一部分，而旧的 1.3.5.3 的种类不被纳入考虑。
+
+尽管 tModLoader 得到了 [[Re-Logic]] 的认可，但是所有通过其下载的{{tr|mods}}都没有得到官方认可，因此应与其他第三方软件一样对待。
+
+== 运行 1.3 版本 ==
+* 右键单击 Steam 中的 tModLoader。
+* 选择“属性...”
+* 选择“测试版”。
+* 在顶部的下拉式菜单中选择“1.3-legacy”。
+* 关闭窗口。
+
+== 安装 ==
+* 安装 tModLoader
+** Steam 版本的《{{tr|Terraria}}》：从 https://store.steampowered.com/%61pp/1281930/tModLoader/ 处安装 TML。
+** GOG 版本的《{{tr|Terraria}}》，或 Steam 分享无法使用：在 https://github.com/tModLoader/tModLoader/wiki/tModLoader-guide-for-players#manual-installation 处人工安装。
+* 重装《{{tr|Terraria}}》游戏文件：
+** Steam：删除 C:/Program Files (x86)/Steam/steamapps/common 中的{{tr|Terraria}}文件夹。
+** 非 Windows 系统的电脑，或是将 Steam 安装在了别处的用户：在 botworld 中 键入 .findinstall 以到达 tModLoader 文件夹，然后进入父文件夹，就能到达上文提及的文件夹。
+** 卸载，随后在 Steam 重新安装 Terraria。
+* 重装 tModLoader 文件：
+** Steam：删除 C:/Program Files (x86)/Steam/steamapps/common 中的 tModLoader 文件夹。
+*** 为找到 Steam 上的安装目录，需要右键单击库中的 tModLoader，然后把光标移到“管理”上面，单击“浏览本地文件”。
+** 非 Windows 系统的电脑：在 botworld 中 键入 .findinstall 以到达此文件夹。
+** 卸载，随后在 Steam 重新安装 tModLoader。
+* 注意：{{tr|player and world}}存档存放在与上述文件夹完全独立的文件夹中。如果你删除了任何其他文件夹，那么开发者是无法为你的存档消失负责的。
+
+== 1.4 安装错误 ==
+; Windows 64 位用户
+: 如果你发现 dotnet 因为某种原因没有安装，比如遇到了网络问题或拥堵，下载 dotnet runtime。 
+: 将[https://cdn.discordapp.com/attachments/871289059396448337/978080649179193364/6.0.0.zip 该 .zip 文件]放入“dotnet”文件夹，后者在安装位置处。
+: 解压，不要更改名称——名称应该是 6.0.0。
+
+; Steam Linux 用户
+: 游戏无法运行？读一下这里评论区中的 bug 和工作环境指导：https://github.com/tModLoader/tModLoader/issues/2140 
+
+; 丢失了微软 directX 包中的 d3dcompiler_47
+: https://support.microsoft.com/en-us/topic/update-for-the-d3dcompiler-47-dll-component-on-windows-server-2012-windows-7-and-windows-server-2008-r2-769c6690-ed30-4dee-8bf8-dfa30e2f8088。 你也可以在此升级到最新的 windows 系统，如果这更容易的话便可以这样做。
+
+; 当前 1.4 alpha 版本的 bug 和问题可以在 tModLoader GitHub 网站上找到。
+: https://github.com/tModLoader/tModLoader/issues?q=is%3Aissue+is%3Aopen+label%3A%221.4+alpha+bug%22+sort%3Areactions-%2B1-desc
+: 如果你遇到了问题，那么请查看一下问题列表，看看该问题或 {{tr|bug}} 是否已经被记录。若是，请点击问题中的 👍 以告诉我们你受该问题的影响。若你想要添加更进一步的信息，请同时在问题下方评论。（列表可能尚不完全，因为它只展示具有特定标签的问题。你还应当通过点击“Clear current search query, filters, and sorts”按钮来查看全部问题，然后查找关键词）。
+
+== 实用链接 ==
+* 如何改回 1.3 的旧版本 tModLoader：https://gfycat.com/ConsiderateClutteredBorer
+* 降低版本至旧的 1.4：https://github.com/tModLoader/tModLoader/wiki/tModLoader-guide-for-players#downgrade-tmodloader
+* 移动{{tr|mods}}：https://github.com/tModLoader/tModLoader/wiki/tModLoader-guide-for-players#migrate-everything-from-13-to-14
+* 同时安装 1.3 和 1.4：https://github.com/tModLoader/tModLoader/wiki/tModLoader-guide-for-players#dual-install---have-13-and-14-tmodloader-installed-at-the-same-time
+* 如果意外将云端备份的{{tr|player or world}}在 1.4 版本下加载了，因此无法再在 1.3 上加载了：https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Usage-Guide#world-and-player-backups
+* 旧版本的 tModLoader：注意一些{{tr|Mods}}可能会在它们更新后停止运作。https://github.com/tModLoader/tModLoader/releases
+
+== 跨平台疑难解答 ==
+性能下降问题：在“属性-通用-启动选项”中填入“/gldevice:Vulkan”可使泰拉瑞亚和tModLoader在MacOS/Linux上获得极大的性能提升。
+
+== 文件位置 ==
+下面是一些有用的默认路径。
+* 存档<span id=saves/>
+** Windows：%UserProfile%\Documents\My Games\Terraria\tModLoader（通常位于 C:\Documents\）
+*** 1.3：%UserProfile%\Documents\My Games\Terraria\ModLoader
+** Linux：~/.local/share/Terraria/tModLoader/ or $XDG_DATA_HOME/Terraria/tModLoader/
+** Mac：~/Library/Application support/Terraria/tModLoader/
+
+* 安装
+** Windows：C:\Program Files (x86)\Steam\steamapps\common\tModLoader
+** Linux：~/.local/share/Steam/steamapps/common/tModLoader or ~/.steam/steam/steamapps/common/tModLoader
+** Mac：Library/Application Support/Steam/steamapps/common/tModLoader/tModLoader.app/Contents/MacOS
+
+* {{tr|Mod}}路径：人工安装的{{tr|mods}}被储存在名为 /Mods 的文件夹之子文件夹中。
+* 创意工坊{{tr|mods}}保存在 C:\Program Files (x86)\Steam\steamapps\workshop\content\1281930，但不应该动这个文件夹，而应在 steam 中取消订阅。
+* 日志路径：日志被储存在名为 /tModLoader-Logs 的安装文件夹之子文件夹中。
+
+== 物品 ==
+tModLoader 加入了一些杂项{{tr|items}}，不过它们都不会对游戏造成实际影响。
+
+* [[File:Unloaded Item.png|link=]] / [[File:Unloaded Item (1.3-Legacy).png|link=]] '''卸载物品'''（'''Unloaded Item'''），用于储存当前没有启用的{{tr|mod}}或已经从{{tr|mod}}中移除的{{tr|items}}的数据。
+* [[File:Terrarian.png|link=]] '''愚人节玩笑'''（'''April Fools Joke'''），其外观上和[[{{tr|Terrarian}}]]相同，但是使用时只会对{{tr|player}}造成[[{{tr|Wet}}]]、[[{{tr|Lovestruck}}]]、[[{{tr|Stinky}}]]和[[{{tr|Slime (debuff)}}|黏液]][[{{tr|debuffs}}]]。它仅能在愚人节当天被制作，此时其名称显示为'''{{tr|Terrarian}}...?'''（'''Terrarian...?'''），且可用 1 个[[{{tr|Dirt Block}}]]制作。
+* [[File:Starting Bag.png|link=]] / [[File:Starting Bag (1.3-Legacy).png|link=]] '''起始包'''（'''Starting Bag'''），用于储存{{tr|inventory}}中装不下的起始物品。
+* 各种 tModLoader 的[[{{tr|Developer items}}]]。
+
+{{Games}}
+{{Software navigation}}
+
+{{language info|en=TModLoader}}

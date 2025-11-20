@@ -1,0 +1,63 @@
+{{npc infobox
+| auto = 101
+| image = Clinger.gif
+| image2 = Clinger (old).png
+| environment = Underground Corruption
+| damage2 = &#32;{{note|small=y|paren=y|{{tr|contact}}}}<br/>{{modes|44|68|102}} {{note|small=y|paren=y|{{gameText|ProjectileName.CursedFlameHostile}}}}
+| debuff = Cursed Inferno
+| debuffchance = 68.75% {{note|paren=y|{{gameText|ProjectileName.CursedFlameHostile}}}}
+| debuffduration = {{modes|{{duration|rawseconds=2–3}} {{eicons|1.4.0.1|small=y}}<br/>{{duration|rawseconds=3–8}} {{eicons|1.4.0.1|invert=y|small=y}}|{{duration|rawseconds=4–6}}|{{duration|rawseconds=5–7.5}}}}
+| Meat Grinder|1|0.5% {{eicons|1.4.0.1|small=y}}
+| Cursed Flame|2–5|100%
+| Monster Meat|1|0.07%
+| idprojectile = 96
+| sound1 = Item 20.wav
+| soundcaption1 = {{gameText|ProjectileName.CursedFlameHostile}}
+| hardmode = yes
+}}
+
+'''{{tr|Clinger}}'''是一种[[{{tr|Hardmode}}]][[{{tr|enemy}}]]，在[[{{tr|Underground Corruption}}]][[{{tr|biome}}]]中出现。{{tr|Clinger}}在生成时会锚定在一个[[{{tr|blocks}}]]上，其头部与锚点之间用一种不会{{tr|damage}}{{tr|player}}的“杆”连接。它们通过向玩家发射{{tr|Cursed Flame}}球体的方式来攻击，能造成[[{{tr|Cursed Inferno}}]][[{{tr|debuff}}]]。
+
+== 备注 ==
+* {{tr|Clingers}}会在两种行为状态之间循环：{{source code ref|name=aistyle13|v=1.4.4.9|method=Terraria.Projectile.AI|t=相关部分为 <code>aiStyle == 13</code> 代码段。}}
+** “普通”状态，此时它最多可延伸至距离锚定{{tr|block}} 10.9 格的位置。这一状态持续 5 秒。
+** “延长”状态，此时其最大触及范围提升至 14.2 格。这一状态持续 2.5 秒。
+* 如果与玩家之间有视线，{{tr|Clingers}}每 {{duration|120 ticks}}发射一次{{tr|projectiles}}。<ref name="aistyle13"/>
+** 击中{{tr|Clingers}}会将其攻击冷却重设为 2 秒，这使得重复击中它即可轻松地阻止其攻击。
+** 如果{{tr|Clinger}}在攻击冷却结束时与玩家之间没有视线，冷却时间会被重设为 {{duration|100 ticks}}。
+* 和其他能够穿过{{tr|block}}的{{tr|enemies}}类似，{{tr|Clingers}}免疫[[{{tr|lava}}]]。
+
+== 小贴士 ==
+* {{tr|Clinger}}是三种会掉落[[{{tr|Cursed Flame}}]]的{{tr|enemy}}之一，其余两种是[[{{tr|World Feeder}}]]和[[{{tr|Vile Ghoul}}]]。虽然它在{{tr|underground}}比[[{{tr|World Feeder}}]]更常见，但是它不会在{{tr|surface}}生成。想要使用[[{{tr|Cursed Arrow}}]]、[[{{tr|Cursed Bullet}}]]、或[[{{tr|Cursed Darts}}]]的{{tr|player}}应当尽可能击杀它们。
+* {{eicons|1.3.3|invert=y}}挖掉{{tr|Clinger}}作为锚点的{{tr|block}}会立即杀死{{tr|Clinger}}，但是如此杀死{{tr|Clinger}}并不会掉落任何{{tr|coins or items}}。
+
+== 花絮 ==
+* {{eicons|1.4.1.2|invert=y}}虽然可以发射{{tr|Cursed Flames}}，但{{tr|Clinger}}并不免疫{{tr|Cursed Inferno debuff}}。
+* 鉴于其 {{tr|AI}} 和外表，{{tr|Clinger}}可能是{{tr|Corrupted}}版本的[[{{tr|Man Eater}}]]或[[{{tr|Angry Trapper}}]]。
+* {{tr|The Clinger}}是仅有的同时会使用和掉落{{tr|cursed flames}}的{{tr|enemy}}。
+{{bestiary}}
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Monster Meat}}掉落几率由 1/1000 降低至 1/1500。在{{tr|Don't Starve seeds}}中，掉落几率由 1/200 降低至 1/500。}}
+{{history|Desktop 1.4.3|现在会掉落[[{{tr|Monster Meat}}]]。}}
+{{history|Desktop 1.4.1.2|现在免疫[[{{tr|Cursed Inferno}}]]。}}
+{{history|Desktop 1.4.0.1|
+** 由{{tr|Clingers}}发射的{{tr|Cursed Flames}}不再能被{{tr|weapons or projectiles}}摧毁。
+** {{tr|Cursed Flames}}球体造成的{{tr|Cursed Inferno duration}}降低。{{tr|The debuff}}现在会持续 3 / {{expert|6}} / {{master|7.5}} 秒（{{chance|6/16|reduce=n}} 几率），2 / {{expert|4}} / {{master|5}} 秒（{{chance|5/16}} 几率），或不造成{{tr|debuff}}（{{chance|5/16}} 几率）。此前的{{tr|durations}}为 8 / {{expert|16}} 秒（{{chance|8/48|reduce=n}} 几率），5 / {{expert|10}} 秒（{{chance|10/48|reduce=n}} 几率），3 / {{expert|6}} 秒（{{chance|15/48|reduce=n}} 几率），或不造成{{tr|debuff}}（{{chance|15/48|reduce=n}} 几率）。<!-- No Master Mode durations pre-1.4.0.1 because Master Mode did not exist till then. -->
+** 现在会掉落[[{{tr|Meat Grinder}}]]。}}
+{{history|Desktop 1.3.5|{{tr|Sprite updated.}}}}
+{{history|Desktop 1.3.3|所附着的{{tr|block}}不再能被摧毁了。}}
+{{history|Desktop 1.3.0.1|现在会掉落它自己的相应{{tr|banner}}了。}}
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced.}}}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 == 
+{{reflist}}
+
+{{Master Template Characters
+| show-hardmode = yes
+}}
+
+{{language info|en=Clinger}}

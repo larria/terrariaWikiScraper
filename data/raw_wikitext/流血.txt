@@ -1,0 +1,93 @@
+{{buff infobox
+| auto = 30
+| effects = 无{{tr|health regeneration}}
+|Adhesive Bandage|Medicated Bandage|Ankh Charm|Ankh Shield}}
+
+'''{{tr|Bleeding}}'''是一个[[{{tr|debuff}}]]，会阻止玩家的自然[[{{tr|health regeneration}}]]。{{tr|player}}仍然能使用[[{{tr|Healing Potion}}]]和任何其它[[{{tr|Food and drink potions}}|{{tr|food}}]]，包括[[{{tr|Bottled Water}}]]。视觉上，受到此{{tr|debuff}}的{{tr|character}}会持续从身上滴出小血滴。
+
+若游戏[[{{tr|settings}}]]中{{tr|Blood and Gore}}被关闭，小血滴就不会出现。
+
+{{eicons|Tizona}} 当[[{{tr|enemy}}]]受到此{{tr|debuff}}影响时（仅可通过[[{{tr|Tizona}}]]造成），它们会持续失去{{tr|health}}，因为它们不会自然恢复{{tr|health}}。
+
+此{{tr|debuff}}可通过装备[[{{tr|Adhesive Bandage}}]]（及其升级）来免疫，或通过装备[[{{tr|Band of Regeneration}}]]或一整套[[{{tr|Palladium armor}}]]来抵消。
+
+== 来源 ==
+=== 来自{{tr|enemy}} ===
+{| class="terraria"
+! colspan=2 | 来自
+! {{tr|Duration}}
+! 几率
+|-
+| {{item|mode=table|class=block aligncenter textleft|Werewolf}}
+| 45 / {{expert|90}} / {{master|112.5}} {{tr|seconds}}
+| {{chance|1/8}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Vampire}}
+| 5-7/ {{expert|10-14}} / {{master|12.5-17.5}} {{tr|seconds}}
+| {{chance|1/1}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Angler Fish}}
+| 45 / {{expert|90}} / {{master|112.5}} {{tr|seconds}}
+| {{chance|1/8}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Rusty Armored Bones|size=50px}}
+| 10 / {{expert|20}} / {{master|25}} {{tr|seconds}}
+| {{chance|1/8}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Skeletron Head|size=50px}}
+| {{expert|6-10}} / {{master|7.5-12.5}} {{tr|seconds}}
+| {{expert|{{chance|1/1}}}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Duke Fishron|size=80px}}
+| {{expert|6-20}} / {{master|7.5-25}} {{tr|seconds}}
+| {{expert|{{chance|1/3}}}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Brain of Cthulhu|size=100px}}
+| {{expert|7.5-15}} / {{master|9.37-18.75}} {{tr|seconds}}
+| {{expert|{{chance|11/243}}}}
+|-
+| {{item|mode=table|class=block aligncenter textleft|Creeper}}
+| {{expert|7.5-15}} / {{master|9.37-18.75}} {{tr|seconds}}
+| {{expert|{{chance|11/81}}}}
+|}
+
+=== 来自{{tr|player}} ===
+{| class="terraria"
+! colspan=2 | 来自
+! {{tr|Duration}}
+! 几率
+|-
+| {{debuff source|Tizona}}
+|}
+
+=== 其它 ===
+{| class="terraria"
+! 来自
+! {{tr|Duration}}
+! 几率
+|-
+| {{item|Red Potion}}（[[{{tr|For the worthy}}]]以及[[{{tr|Get fixed boi}}]]除外）
+| 1 / {{expert|2}} / {{master|3}} 小时
+| {{chance|1/1}}
+|-
+| {{item|Spike}}
+| 10 / {{expert|20}} / {{master|25}} 秒
+| {{chance|1/1}}
+|-
+| {{item|Wooden Spike}}
+| 10 / {{expert|20}} / {{master|25}} 秒
+| {{chance|1/1}}
+|}
+
+== 历史 ==
+{{history|Desktop 1.1|{{tr|Introduced.}}}}
+{{history|Console-Release|{{tr|Introduced}}，可由[[{{tr|Tizona}}]]造成。}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.1.5536|现在可由{{tr|Tizona}}造成。}}
+{{history|Mobile-Release|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced}}，可由{{tr|Tizona}}造成。}}
+
+{{Master Template Buffs
+| show-debuffs = yes
+}}
+{{language info|en=Bleeding}}

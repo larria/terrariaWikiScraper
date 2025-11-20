@@ -1,0 +1,26 @@
+<includeonly><!--
+
+-->{{#vardefine:dustids:id|{{{id|{{#expr:{{#var:dustids:id|-1}}+1}}}}}}}<!-- if the ID variable is empty, start with 0
+
+-->
+|-
+| align=left | {{#var:dustids:id}}
+| [[File:Dust {{#var:dustids:id}}.png]]
+| {{#listmap: <!-- convert a list of slash-separated strings to a {{dotlist}}, with each item in <code> tags -->
+	| list = {{#var:dustids:iname:{{#var:dustids:id}}}} <!-- (this variable is defined on the base page, [[Dust IDs]]) -->
+	| insep = / | outsep = 
+	| token = @@@@
+	| intro = {{dotlist/start}}
+	| pattern = {{dotlist/item|<code>@@@@</code>}}
+	| outro = {{dotlist/end}}
+	<!-- fallback for if the list is empty: -->
+	| default = data-sort-value{{=}}"ZZZZZ" {{!}} {{na}}
+}}
+| align=left | {{#af_stringmap: {{{1|}}} | , | source | {{tr|{{{source}}}}} | ,\s }} <!-- apply {{tr}} to each source term in $1, separated by commas -->
+| {{#if:{{#var:dustids:unsafe:{{#var:dustids:id}}}} | {{no}} | {{yes}} }}<!-- (this variable is defined on the base page, [[Dust IDs]])
+
+--></includeonly><noinclude>
+{{formatting subpage}}
+
+{{language info|en=Dust IDs/row}}
+</noinclude>

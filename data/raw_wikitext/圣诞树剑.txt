@@ -1,0 +1,58 @@
+{{legacy nav tab}}
+{{item infobox
+| damage = @@@@ {{eicons|1.3.0.1|small=y}} / 73 {{eicons|1.3.0.1|invert=y|small=y}}
+| auto = 1928
+| idprojectile = 335, 907
+| sound1 = Item 27.wav
+| soundcaption1 = {{tr|Impact}}
+| listcat = Broadswords / Projectile melee
+| tags = drop / hardmode
+}}
+{{drop infobox|style=clear:right}}
+[[File:Christmas Tree Sword (demo).gif|frame|right|{{tr|the Christmas Tree Sword}}的动画。]]
+
+'''{{tr|Christmas Tree Sword}}'''是一把[[{{tr|Hardmode}}]]、[[{{tr|Plantera}}]]后的[[{{tr|sword}}]]，其掉落自[[{{tr|Frost Moon}}]][[{{tr|event}}]]期间的[[{{tr|Everscream}}]]，掉落率为 3.46% ~ 10.37%（{{expert|6.22% ~ 31.11%}}），具体取决于当前波数。<ref>每波的详细掉落率：{{frost moon item drop rates|14/15 * 1/3|fromwave=4|towave=20}}参见[[{{tr|Frost Moon#Loot}}|{{tr|Frost Moon}} § {{tr|Loot}}]]以获取详细信息。</ref> 挥舞时，它会发射一颗不受重力影响的{{tr|star ornament}}{{tr|projectile}}，此{{tr|projectile}}每 {{duration|10 ticks}}释放一个球形装饰。{{tr|star ornament}}在穿透一只[[{{tr|enemy}}]]或 {{duration|100 ticks}}后破碎。球形装饰在空中滞留 {{duration|50 ticks}}后下落。两种类型的{{tr|projectiles}}均不能穿透[[{{tr|blocks}}]]。
+
+{{modifier|melee}}
+
+== 备注 ==
+* 球形装饰造成 25% {{tr|weapon}}[[{{tr|knockback}}]]（{{knockback|full=y|class=|{{#expr:{{iteminfo|Christmas Tree Sword|knockback}}*0.25 round 3}}}}{{tr|base knockback}}）。{{source code ref|v=1.4.1.2|name=ai|method=Terraria.Projectile.AI}}
+* 若{{tr|weapon}}没有[[{{tr|modifier}}]]，{{tr|star ornament}}{{tr|projectile}}每 {{duration|{{iteminfo|Christmas Tree Sword|useTime}} ticks}}发射一次。
+
+== 花絮 ==
+* 在 [[1.3.5]] 前，{{tr|items}}有一个未使用的内部名称。{{tr|The Christmas Tree Sword}}的名称是 ''圣诞剑（Christmas Sword）''。{{source code ref|v=1.3.4.4|old=y|method=Terraria.Item.SetDefaults2}}
+
+== 另见 ==
+* [[{{tr|Christmas Tree}}]]，[[{{tr|Santa Claus}}]]所出售的[[{{tr|Decorative items}}|{{tr|decorative item}}]]。
+
+== 历史 ==
+{{history|Desktop 1.4.4|{{tr|Projectiles}}现在造成的伤害是{{tr|base damage}}的 {{tr|100%}} 而非 75%。}}
+{{history|Desktop 1.4.1.2|{{tr|Projectiles}}现在会造成 75% {{tr|base damage}}而非 50%。}}
+{{history|Desktop 1.4.0.1|
+** 现在发射几颗球形{{tr|ornaments}}和一颗星星{{tr|ornament}}而非只有一颗球形{{tr|ornament}}，它们会在原地悬浮停留几秒然后掉落到地面上。
+** 现在会{{tr|autoswings}}。}}
+{{history|Desktop 1.3.0.1|
+** 伤害由 73 提升至 86。
+** {{tr|Use time}}由 25 减少至 22。}}
+{{history|Desktop 1.2.2|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|与 PS4 的 1.0.750.0 更新相一致的更改。（{{icon/xbox one}}）}}
+{{history|Console 1.0.750.0|（{{icon|ps4}}）
+** 伤害由 73 提升至 86。
+** {{tr|Use time}}由 25 减少至 22。}}
+{{history|Console 1.05|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|
+** 伤害由 73 提升至 86。
+** {{tr|Use time}}由 25 减少至 22。}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+{{history|3DS 1.03|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Projectile melee weapons}}
+{{Master Template Weapons
+| show-melee = yes
+}}
+
+{{language info|en=Christmas Tree Sword}}

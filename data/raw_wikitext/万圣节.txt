@@ -1,0 +1,202 @@
+{{legacy nav tab}}
+{{halloween only}}
+[[File:Logo-6.png|thumb|{{tr|The Halloween}}主题的 [[{{tr|logo}}]]。]]
+{{tocright}}
+{{flavor text|{{gameText|Misc.StartedVictoryHalloween}}|image=Bestiary Halloween.png| size = 22px|}}
+{{dablink|不要与[[{{tr|Pumpkin Moon}}]]，一个{{tr|Halloween}}主题的{{tr|event}}相混淆。}}
+
+'''{{tr|Halloween}}'''是一种[[{{tr|seasonal event}}]]，会从十月中旬持续到十一月上旬。在{{tr|Halloween}}期间，[[{{tr|Goodie Bag}}]]有 {{chance|1/80}} 几率掉落自任何[[{{tr|Enemies}}|{{tr|enemy}}]]（[[{{tr|Statues}}|{{tr|statue}}生成的{{tr|enemies}}]]、[[{{tr|Meteor Head}}]]、和[[{{tr|Old One's Army}}]]{{tr|enemies}}除外）。{{source code ref|v=1.4.3.6|class=Terraria.GameContent.ItemDropRules.Conditions.HalloweenGoodieBagDrop}}[[{{tr|Heart}}]]会被替换为[[{{tr|Candy Apple}}]]，[[{{tr|Star}}]]会被替换为[[{{tr|Soul Cake}}]]。此外，部分[[{{tr|enemies}}]]将身着{{tr|costumes}}并改变外表，会生成一些独特的{{tr|enemies}}，还会有可从 [[{{tr|NPCs}}]] 处购买或从{{tr|enemies}}处罕见地掉落的新{{tr|item}}。{{tr|Halloween}}期间，[[{{tr|Pumpkin}}]]也会在[[{{tr|grass}}]]上自然生长。
+
+此{{tr|event}}的持续时间为 10 月 10 日至 11 月 1 日。
+
+在 {{time|4:30 AM}} 前到达[[{{tr|Pumpkin Moon}}]]的第 15 波，就会在下一天的{{tr|dawn}}显示[[{{tr|Status messages}}|{{tr|status message}}]]''“{{gameText|Misc.StartedVictoryHalloween}}”''，暂时性地无视日期激活一个游戏日的{{tr|Halloween}}{{tr|seasonal event}}。在下一天的 {{time|4:30 AM}}，会显示{{tr|status message}}''“{{gameText|Misc.EndedVictoryHalloween}}”''，所有和{{tr|Halloween}}相关的效果不再出现，除非{{tr|Halloween}}{{tr|seasonal event}}激活或再次到达{{tr|Pumpkin Moon}}的第 15 波。{{source code ref|v=1.4.0.5|name=season|method=Terraria.Main.CheckForMoonEventsStartingTemporarySeasons}}
+
+== 内容 ==
+{{item/options|set|icons=n}}
+{{options/set|item|small=y|scale=0.75}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=在[[{{tr|day}}]]期间的[[{{tr|surface}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bunny Slime}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|night}}]]期间的[[{{tr|surface}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|image=Zombie Halloween Variant 1.png|Doctor Zombie}}<!--
+			-->|{{item|image=Zombie Halloween Variant 2.png|Superhero Zombie}}<!--
+			-->|{{item|image=Zombie Halloween Variant 3.png|Pixie Zombie}}<!--
+			-->|{{item|image=Demon Eye Halloween Variant 1.png|Owl Demon Eye}}<!--
+			-->|{{item|image=Demon Eye Halloween Variant 2.png|Spaceship Demon Eye}}<!--
+			-->|{{item|Hoppin' Jack|note2=（{{tr|Hardmode}}）}}<!--
+			-->|{{item|Raven}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|shaking}}[[{{tr|forest}}]][[{{tr|trees}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Raven}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=在[[{{tr|cavern}}]]{{tr|layer}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|image=Skeleton Halloween Variant 1.png|Top Hat Skeleton}}<!--
+			-->|{{item|image=Skeleton Halloween Variant 2.png|Astronaut Skeleton}}<!--
+			-->|{{item|image=Skeleton Halloween Variant 3.png|Alien Skeleton}}<!--
+			-->|{{item|Ghost (enemy)|}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Critters}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Slime Bunny}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自任何[[{{tr|enemy}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Candy Apple|note2=（替换掉[[{{tr|Heart}}]]）}}<!--
+			-->|{{item|Soul Cake|note2=（替换掉[[{{tr|Mana Star}}]]）}}<!--
+			-->|{{item|Goodie Bag|note2=（{{chance|1/80}}几率）<ref name="notFromStatue"/>}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|weak enemies}}<br/>{{note|（详细解释见[[#{{tr|Weak enemies}}|下方表格]]）|small=y}}|<!--
+			-->{{dotlist<!--
+			-->|{{item|Bloody Machete|note2=（{{chance|1/2000}}几率）<ref name="notFromStatue"/>}}<!--
+			-->|{{item|Bladed Glove|note2=（{{chance|1/2000}}几率）<ref name="notFromStatue"/>}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Forest}}]]{{tr|grass}}：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Pumpkin}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自收获[[{{tr|Pumpkin}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Magical Pumpkin Seed|note2=（{{chance|1/200}}几率）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自{{tr|shaking}}[[{{tr|trees}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Rotten Egg}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|售卖}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Arms Dealer}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Nurse set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Clothier}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Guy Fawkes Mask}}<!--
+			-->|{{item|Clothier's Jacket}}<!--
+			-->|{{item|Clothier's Pants}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Cyborg}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cyborg set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dryad}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dryad set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dye Trader}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dye Trader's set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Steampunker}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Steampunk Goggles}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Witch Doctor}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cauldron}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Wizard}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Wizard's Hat}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+{{anchor|Weak enemies}}“{{tr|weak enemy}}”的定义如下：该{{tr|enemy}}至少掉落 {{cc|1}}，但在计算[[{{tr|difficulty}}]]系数前具有低于 40 {{tr|damage}}、低于 20 {{tr|defense}}、且掉落的{{tr|coin}}低于 {{coin|500}}。不同{{tr|difficulties}}下的实际属性需求见下表。{{source code ref|v=1.4.4.9|method=Terraria.GameContent.ItemDropRules.HalloweenWeapons.CanDrop}}
+{{options/set|item|icons=n}}
+{| class="terraria lined"
+!
+! {{item|Classic Mode|Classic}}<br/>{{item|Journey Mode|Journey}}
+! {{item|Expert Mode|Expert}}
+! {{item|Master Mode|Master}}
+|-
+! {{tr|Damage}}
+| < 40
+| < 80
+| < 120
+|-
+! {{tr|Defense}}
+| < 20
+| < 20
+| < 20
+|-
+! {{tr|Coins}}
+| < {{coin|500}}
+| < {{coin|1250}}
+| < {{coin|1250}}
+|}<!--
+-->{{options/reset|item}}
+
+注意这些值不受下列属性更改影响：
+* [[{{tr|Journey Mode}}]]的[[{{tr|Enemy Difficulty Slider}}]]。
+* [[{{tr|For the worthy}}]] 和 [[{{tr|Get fixed boi}}]] [[{{tr|secret seed}}]]中的额外属性提升。
+
+== 小贴士 ==
+* 可以通过将设备的日期设置为相应的{{tr|Halloween}}时间区间内的任意日期来“激活”{{tr|Halloween}}。
+** {{icon/desktop}} 将电脑的日期设为 10 月 10 日至 11 月 1 日间的任意一天。
+** {{icon/console}} 与 {{icon/xbox one}} Xbox Live / {{icon/ps4}} PSN 断开连接并更改主机时间。
+** {{icon/mobile}} 关闭自动日期/时间更新并手工更改时间。请注意，这在某些设备上无效。
+** {{icon/switch}} 进入“系统设置”（System Settings）然后进入“系统”（System），点击“日期与时间”（Date and Time）然后设置日期和时间。
+: 如果不希望更改设备时间，诸如“[http://www.nirsoft.net/utils/run_as_date.html RunAsDate]”之类的应用程序允许用更改过的时间和日期来启动[[《{{tr|Terraria}}》]]。
+
+== 花絮 ==
+* {{tr|Halloween}} {{tr|logo}} 中的{{tr|Tree}}似乎是[[{{tr|Spooky Wood}}]]，此{{tr|item}}会在类似主题的[[{{tr|Pumpkin Moon}}]]{{tr|event}}中大量掉落。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Halloween}}时期现在由 10 月 10 日开始，而非 10 月 20 日。
+** 到达[[{{tr|Pumpkin Moon}}]]的最后一波会触发一个游戏日的{{tr|Halloween}}{{tr|event}}。
+** [[{{tr|Merchant}}]]不再在{{tr|Halloween}}期间售卖[[{{tr|Tax Collector's set}}]]。
+** 弱{{tr|enemy}}的要求现在会随{{tr|difficulty}}缩放。}}
+{{history|Desktop 1.3.4|{{tr|Halloween}}时期现在在 11 月 1 日结束，而非 11 月 10 日。}}
+{{history|Desktop 1.3.0.1|
+** [[{{tr|Clothier}}]]现在售卖[[{{tr|Clothier's Pants}}]]和[[{{tr|Clothier's Jacket}}]]。
+** [[{{tr|Dye Trader}}]]现在售卖[[{{tr|Dye Trader's Turban}}]]，从而完成了整套[[{{tr|Dye Trader's set}}]]。
+** [[{{tr|Sickle}}]]现在总是由{{tr|Merchant}}售卖（而非仅在{{tr|Halloween}}期间）。}}
+{{history|Desktop 1.2.1.1|修复了导致游戏不在{{tr|multiplayer}}下检查{{tr|Halloween}}日期的 {{tr|bug}}。}}
+{{history|Desktop 1.2.1|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist|refs=
+<ref name="notFromStatue">不会由[[{{tr|statue}}]]生成的{{tr|enemies}}、[[{{tr|Meteor Head}}]]、或[[{{tr|Old One's Army}}]]{{tr|enemies}}掉落。</ref>
+}}
+
+{{Events}}
+
+[[Category:{{tr|Halloween}}| ]]
+
+{{language info|en=Halloween}}

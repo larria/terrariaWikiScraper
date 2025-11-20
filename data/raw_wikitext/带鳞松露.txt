@@ -1,0 +1,45 @@
+{{exclusive|1.2.4}}
+{{item infobox
+| auto = 2429
+| tags = hardmode / fished
+}}
+{{distinguish|Shrimpy Truffle}}
+
+'''{{tr|Scaly Truffle}}'''是一种[[{{tr|Hardmode}}]]下的[[{{tr|Mount}}]]{{tr|summon items}}。使用时，它会召唤一只'''{{tr|Pigron Mount}}'''，允许玩家有限地飞行并在陆地上跑得更快。它可以通过在[[{{tr|cavern}}]]{{tr|layer}}的与[[{{tr|Ice biome}}]]重叠的[[{{tr|Hallow}}]]、[[{{tr|Corruption}}]]、或[[{{tr|Crimson}}]][[{{tr|biome}}]]中[[{{tr|Fishing}}]]来获得。
+
+{{float file|[[File:Scaly Truffle fishing area.png|300px|thumb|right|高亮显示的地区是通过[[{{tr|Fishing}}]]能获得{{tr|Scaly Truffle}}的位置（[[{{tr|Snow}}]]+[[{{tr|Cavern}}]]+[[{{tr|Crimson}}]]）。]]}}
+
+== {{tr|Notes}} ==
+* {{tr|The Pigron Mount}}的最高飞行时间为 {{duration|{{mountinfo|Pigron Mount|flightTimeMax}}tick}}，与{{tr|Bee Wings}}/{{tr|Butterfly Wings}}/{{tr|Flame Wings}}等[[{{tr|Wings}}]]持平。
+* 在[[{{tr|liquids}}]]中时不会有{{tr|movement bonus}}。
+* {{tr|Pigron Mount}}的最高奔跑速度为{{mountinfo|Pigron Mount|max speed}}，在约 5.8 秒后达到<!--{{mountinfo|Pigron Mount|time till max speed}}返回值为 10.42 s，和实际游戏不符-->。{{source code ref|v=1.4.0.5|method=Terraria.Mount.Initialize}}
+
+== {{tr|Achievements}} ==
+{{achievement|name=The Cavalry}}
+
+== {{tr|Trivia}} ==
+[[File:Pigron Mount idle.gif|thumb|{{tr|Pigron Mount}}打哈欠的动画。]]
+
+* 虽然[[{{tr|Pigron}}]][[{{tr|enemy}}]]有不同颜色，但是{{tr|Pigron Mount}}是粉色的，且和[[{{tr|Pigron}}|{{tr|Hallow Pigron}}]]的颜色略有不同。
+** {{eicons|1.3.0.1}} {{tr|The Pigron Mount}}可以被{{tr|mount equipment slot}}中的[[{{tr|dye}}]]染色以迎合玩家喜好，且{{tr|biome}}特有的{{tr|Pigron enemy}}颜色可以通过不同{{tr|dye}}产生：[[{{tr|The Corruption}}|{{tr|Corruption}}]]为[[{{tr|Purple Dye}}]]，[[{{tr|The Crimson}}|{{tr|Crimson}}]]为[[{{tr|Red Dye}}]]。
+* 如果骑着{{tr|Pigron}}保持静止，它会在 15 到 25 {{tr|seconds}}后打哈欠。{{verify}}
+* [[{{tr|Pigron}}]]的{{tr|buff tooltip}}''“{{buffinfo|129|tooltip}}”（{{buffinfo|129|tooltip|lang=en}}）''参考了[[{{tr|Pigron}}]]能够变得几乎隐形。它也参考了常被使用的短语“Now you see me... now you don't.”（直译：你现在看到我了……而现在看不到了。）。
+* {{tr|Pigron Mount}}的{{tr|summon item}}是''{{tr|Scaly Truffle}}''的原因很可能是在现实世界中，{{wikipedia|Truffle hog|松露猪}}（一种被驯化的猪）被用于搜寻{{wikipedia|Truffle|松露}}。
+
+== {{tr|History}} ==
+{{history|Desktop 1.4.3|删去（英文）{{tr|buff tooltip}}的最后一个句号（"Now you see me...." to "Now you see me..."）。}}
+{{history|Desktop 1.3.1|{{tr|Item}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.3.0.1|{{tr|Mount}}{{tr|sprite updated.}}}}
+{{history|Desktop 1.2.4|{{tr|Introduced.}}}}
+{{history|Console 1.07|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.11212|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Master Template Tools
+| show-summon = yes
+}}
+
+{{language info|en=Scaly Truffle}}

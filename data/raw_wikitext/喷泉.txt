@@ -1,0 +1,100 @@
+{{item infobox
+| auto = 909
+| name = Water fountains
+| imagealt = [[File:Pure Water Fountain.png]] [[File:Desert Water Fountain.png]] [[File:Jungle Water Fountain.png]] [[File:Icy Water Fountain.png]] [[File:Corrupt Water Fountain.png]]<br/><br/>[[File:Crimson Water Fountain.png]] [[File:Hallowed Water Fountain.png]] [[File:Blood Water Fountain.png]] [[File:Cavern Water Fountain.png]] [[File:Oasis Water Fountain.png]]
+| type = Furniture / Mechanism
+| width = 2
+| height = 4
+| rare = @@@@ {{eicons|1.4.0.1|small=y}}<br/>{{rare|0}} {{eicons|1.4.0.1|invert=y|small=y}}
+| buy = @@@@ {{eicons|1.3.0.1|small=y}}
+| sell = @@@@ {{eicons|1.3.0.1|small=y}}
+| cargo = no
+}}
+{{for|在{{tr|Cavern}}生成的[[{{tr|Trap}}]]|{{tr|Geyser}}}}
+[[File:Water Fountains.gif|frame|{{eversions|1.3.0.1|short=y}}中每一种{{tr|water fountain}}的启用和关闭状态。]]
+[[File:Water Fountains (old).gif|frame|{{eversions|1.3.0.1|invert=y|short=y}}中每一种{{tr|water fountain}}的启用和关闭状态。下面的三种{{tr|fountains}}并未实现。]]
+
+'''{{tr|Water fountains}}'''是一种可以改变周围所有[[{{tr|Water}}]]的颜色的[[{{tr|mechanism}}]]。它们可以通过 {{key|open}} 或[[{{tr|wire}}]]来激活。总共有{{eicons|1.4.0.1}} 10 / {{eicons|1.4.0.1|invert=y}} 8 种可获得的不同{{tr|fountains}}，它们可以在[[{{tr|Witch Doctor}}]]处以 {{iteminfo|909|buy}} 的价格购买。在{{eversions|1.3.0.1|invert=y}}中，它们可以免费获得，但仅在击败[[{{tr|Plantera}}]]后可用。{{eicons|1.4.0.1}}{{tr|Fountain}}的作用范围是（从{{tr|sprite}}的边缘测量）向左 60 格，向上 53 格，向右 60 格，向下 53 格。
+
+== 类型 ==
+{{item infobox/options|view=table|cols=item2cells-anchor-nolink/col:color/col:colordesc}}
+{| class="terraria"
+! colspan=2 | {{tr|Fountain}}
+! colspan=2 | 水体颜色
+{{item infobox | auto = 909 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Water.png]]
+| col:colordesc = 和[[{{tr|Forest}}]]、[[{{tr|Ocean}}]]等相同的普通蓝色。
+}}
+{{item infobox | auto = 910 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Desert Water.png]]
+| col:colordesc = 与{{tr|surface}}[[{{tr|Desert}}]] {{eicons|1.4.0.1|invert=y}} / [[{{tr|Underground Desert}}]] {{eicons|1.4.0.1}}相同的黄色
+}}
+{{item infobox | auto = 940 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Jungle Water.png]]
+| col:colordesc = 与[[{{tr|Jungle}}]]相同的青绿色
+}}
+{{item infobox | auto = 941 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Icy Water.png]]
+| col:colordesc = 与[[{{tr|Snow biome}}]]相同的亮蓝色
+}}
+{{item infobox | auto = 942 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Corrupt Water.png]]
+| col:colordesc = 与[[{{tr|The Corruption}}]]相同的紫色
+}}
+{{item infobox | auto = 943 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Crimson Water.png]]
+| col:colordesc = 与[[{{tr|The Crimson}}]]相同的粉色
+}}
+{{item infobox | auto = 944 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Hallowed Water.png]]
+| col:colordesc = 与[[{{tr|The Hallow}}]]相同的洋红色
+}}
+{{item infobox | auto = 945 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ ({{eicons|1.3.0.1|small=y}}) | sell = @@@@ ({{eicons|1.3.0.1|small=y}}) | tags = vendor:Witch Doctor
+| col:color = [[File:Blood Moon Water.png]]
+| col:colordesc = 与[[{{tr|Blood Moon}}]]相同的红色
+}}
+{{item infobox | auto = 4922 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ | sell = @@@@ | tags = vendor:Witch Doctor
+| col:color = [[File:Cavern Water.png]]
+| col:colordesc = 与[[{{tr|Cavern}}]]相同的暗紫色
+}}
+{{item infobox | auto = 4417 | type = Furniture/Mechanism | width = 2 | height = 4 | buy = @@@@ | sell = @@@@ | tags = vendor:Witch Doctor
+| col:color = [[File:Oasis Water.png]]
+| col:colordesc = 与{{eil|Oasis|s}}相同的绿松石色
+}}
+|}
+
+== 备注 ==
+* {{tr|Fountains}}是以左低右高的优先级生效的。多个{{tr|Fountains}}同时激活时，最右边的{{tr|Fountains}}会决定被重复影响的水域颜色。
+* 当{{tr|player}}在{{tr|Water fountain}}约 100 格范围内时，{{tr|fountain}}会改变水的颜色。
+* 如果使用了从[[{{tr|Stylist}}]]那里购买的[[{{tr|Biome Hair Dye}}]]，{{tr|player}}的发色会根据{{tr|fountain}}所代表的[[{{tr|Biome}}]]发生变化。
+* {{tr|fountains}}的效果是纯粹装饰性的，对[[{{tr|Fishing}}]]等情况没有影响。
+* {{tr|Water Fountains}}''不会''对[[{{tr|Waterfall Block}}]]着色，也不会对相应的{{tr|wall}}着色。
+
+== 花絮 ==
+* 自 [[1.3.0.1]] 以来，{{tr|Cavern Water Fountain}}的{{tr|tile sprites}}与其他{{tr|water fountains}}被一同包括在文件中，但直到 [[1.4.0.1]] 才得到使用。
+* 通常来说{{tr|world}}只有一种类型的[[{{tr|Evil Biome}}|{{tr|world evil}}]]，但[[{{tr|Witch Doctor}}]]仍会同时出售两种类型的{{tr|Water Fountains}}。
+* 尽管[[{{tr|the Hallow}}]]是{{tr|Hardmode}}的象征，但{{tr|Witch Doctor}}在任何时候都会出售{{tr|Hallowed Fountain}}，甚至在[[{{tr|pre-Hardmode}}]]也是如此。
+* 在 1.3.0.1 版本{{tr|fountains}}外观更新后，{{tr|Icy Water Fountain}}就成为了唯一一个彩色外观的{{tr|fountain}}。
+
+== 历史 ==
+{{history|Desktop 1.4.0.1|
+** {{tr|Cavern and Oasis Water Fountains}}被{{tr|introduced}}。
+** {{tr|Rarity}}由 0 变为 1。}}
+{{history|Desktop 1.3.0.1|
+** {{tr|Water Fountains}}现在总会有售，即使[[{{tr|Plantera}}]]还未被打败也是如此。
+** 价格由无价值提升至 {{gc|4}}。
+** {{tr|All water fountains}}都有了新{{tr|sprites}}。}}
+{{history|Desktop 1.2.4.1|修复了{{tr|wiring}}系统不能正确激活[[{{tr|Door}}]]、[[{{tr|Music Box}}]]和{{tr|fountains}}的 {{tr|bug}}。}}
+{{history|Desktop 1.2.3|修正了{{tr|Water Fountain}}的图格表，以移除将其开启时消失的两个物块。（{{tr|Jungle}}/{{tr|Snow biomes}}）。}}
+{{history|Desktop 1.2.1.2|{{tr|Water fountains}}现在会在击败[[{{tr|Plantera}}]]后出售。}}
+{{history|Desktop 1.2|{{tr|Introduced.}}}}
+{{history|Console 1.02|{{tr|Introduced.}}}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.2.6508|{{tr|Introduced.}}}}
+{{history|3DS-Release|{{tr|Introduced.}}}}
+
+{{Master Template Furniture
+| show-other = yes
+}}
+
+{{language info|en=Water fountains}}

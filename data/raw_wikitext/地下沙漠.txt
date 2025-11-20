@@ -1,0 +1,239 @@
+{{exclusive|1.3.0.1}}
+[[File:BiomeBannerUndergroundDesert.png|center]]
+[[File:1.4 Underground Desert.png|thumb|200px|在 [[1.4.0.1]] 中生成的，带有一座[[{{tr|Pyramid}}]]和一片[[{{tr|Oasis}}]]的椭圆形{{tr|Underground Desert}}的{{tr|map}}视图。]]
+
+'''{{tr|Underground Desert}}'''是位于世界的主[[{{tr|Desert}}]]正下方的[[{{tr|biome}}]]。上方的{{tr|Desert}}可能会生成不同的特征从而表明下方有{{tr|Underground Desert}}''（细节参见下文[[#{{tr|Surface Desert}}|{{tr|Surface Desert}}]]）''。{{tr|The Desert}}/{{tr|Underground Desert}}的组合通常生成在{{tr|world}}中[[{{tr|Dungeon}}]]所在一侧的对侧，但如果未找到合适位置也能够生成在{{tr|Dungeon}}的同一侧。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.GenerateWorld|t=相关 generation pass 为 <code>Full Desert</code>。}}
+
+{{tr|Underground Desert}}的结构就像是现实中的蚁巢，有大量主要由[[{{tr|Sandstone Block}}]]和[[{{tr|Hardened Sand Block}}]]构成的小洞穴，互相之间不同程度地连接着。{{tr|Underground Desert}}的形状总是圆形或椭圆形，而且非常大，大小上甚至能和[[{{tr|Dungeon}}]]相媲美。{{tr|The Underground Desert}}中居住着多种{{tr|Antlion enemies}}，也布满了[[{{tr|traps}}]]（具体来说是[[{{tr|Antlion Eggs}}]]、[[{{tr|Rolling Cactus}}]]、和[[{{tr|sand trap}}]]），穿行其中极富挑战。
+
+当玩家在任何[[{{tr|Sandstone Walls}}]]或[[{{tr|Hardened Sand Walls}}]]前方，且附近有至少 1500 个[[{{tr|Sand Block}}]]、{{tr|Hardened Sand Blocks}}、或{{tr|Sandstone Blocks}}时，就被视为在{{tr|Underground Desert biome}}中。{{source code ref|v=1.4.4.9|method=Terraria.SceneMetrics.ExportTileCountsToMain / Terraria.Player.UpdateBiomes / Terraria.NPC.SpawnNPC |property=Terraria.SceneMetrics.EnoughTilesForDesert|field=Terraria.SceneMetrics.DesertTileThreshold}}''（另见[[#生成机制|生成机制]]章节获取{{tr|Underground Desert enemy}}生成的细节。）''
+
+在[[{{tr|Hardmode}}]]中，{{tr|the Underground Desert}}会变得明显更具挑战性。除了有更难的{{tr|enemies}}外，{{tr|the Underground Desert}}还极易被[[{{tr|the Corruption}}]]、[[{{tr|The Crimson}}]]、和[[{{tr|the Hallow}}]][[{{tr|Biome spread}}|转化]]，因为此{{tr|biome}}是由易受转化的[[{{tr|Hardened Sand}}]]和[[{{tr|Sandstone}}]]所构成的。转化进一步加强了{{tr|the Underground Desert}}的{{tr|enemies}}，并且在{{tr|Corruption Underground Deserts}}和{{tr|Crimson Underground Deserts}}中导致生成[[{{tr|Desert Spirit}}]]。不过，和大部分被侵染的{{tr|underground biomes}}不同，对应{{tr|evil biome}}/{{tr|Hallow}}的常规{{tr|underground enemies}}不会在被侵染的{{tr|underground desert}}中生成。
+
+== 内容 ==
+{{options/set|item|small=y|scale=0.75|icons=no}}{{dotlist/options|dot=no|space=l}}{{options/set|eicons|small=y}}<!--
+-->{{infocard/start|class=compact small biome}}<!--
+	-->{{infocard/mainheading|角色}}<!--
+	--><div><!--
+		-->{{infocard/box|title=[[{{tr|Pre-Hardmode}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Antlion}}<!--
+			-->|{{item|Antlion Charger}}<!--
+			-->|{{item|Antlion Larva}}<!--
+			-->|{{item|Antlion Swarmer}}<!--
+			-->|{{item|Golfer}}<!--
+			-->|{{item|Giant Antlion Swarmer}}<!--
+			-->|{{item|Giant Antlion Charger}}<!--
+			-->|{{item|Sand Slime}}<!--
+			-->|{{item|Tomb Crawler}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=[[{{tr|Hardmode}}]]期间：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Basilisk}}<!--
+			-->|{{item|Sand Poacher|note2=（常规、{{tr|Hallowed}}）}}<!--
+			-->|{{item|Light Lamia|note2=（常规、{{tr|Hallowed}}）}}<!--
+			-->|{{item|Dark Lamia|note2=（{{tr|Corrupt, Crimson}}）}}<!--
+			-->|{{item|Dune Splicer}}<!--
+			-->|{{item|Ghoul|note2=（常规）}}<!--
+			-->|{{item|Vile Ghoul|note2=（{{tr|Corrupt}}）}}<!--
+			-->|{{item|Tainted Ghoul|note2=（{{tr|Crimson}}）}}<!--
+			-->|{{item|Dreamer Ghoul|note2=（{{tr|Hallowed}}）}}<!--
+			-->|{{item|Desert Spirit|note2=（{{tr|Corrupt, Crimson}}）}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|独特掉落}}<!--
+	--><div><!--
+		-->{{infocard/box|title=来自[[{{tr|Antlion}}]]、[[{{tr|Antlion Swarmer}}]]、[[{{tr|Antlion Charger}}]]、和[[{{tr|Antlion Larva}}]]：|<!--
+			-->{{dotlist <!--
+			-->|{{item|Antlion Mandible}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Antlion Charger}}]]和[[{{tr|Antlion Swarmer}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Mandible Blade}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Antlion}}]]、[[{{tr|Antlion Charger}}]]、和[[{{tr|Antlion Swarmer}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Banana Split}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Sand Slime}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Slime Staff}}<!--
+			-->|{{item|Gel}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Tomb Crawler}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sturdy Fossil}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自所有[[{{tr|Ghoul}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ancient Cloth}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Vile Ghoul}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Cursed Flame}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Tainted Ghoul}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ichor}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Vile Ghoul}}]]和[[{{tr|Tainted Ghoul}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Dark Shard}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Dreamer Ghoul}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Light Shard}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Desert Spirit}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Desert Spirit Lamp}}<!--
+			-->|{{item|Djinn's Curse}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Basilisk}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Sturdy Fossil}}<!--
+			-->|{{item|Ancient Horn}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Lamia}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Moon Mask}}<!--
+			-->|{{item|Sun Mask}}<!--
+			-->|{{item|Lamia set}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Sand Poacher}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Fried Egg}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Hardmode}}]]下的[[{{tr|enemy}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Desert Key|note2=（1/2500 几率）}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自[[{{tr|Sandstone Chest}}]]：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Ancient Chisel}}<!--
+			-->|{{item|Dunerider Boots}}<!--
+			-->|{{item|Storm Spear}}<!--
+			-->|{{item|Thunder Zapper}}<!--
+			-->|{{item|Magic Conch}}<!--
+			-->|{{item|Encumbering Stone}}<!--
+			-->|{{item|Bast Statue}}<!--
+			-->|{{item|Snake Charmer's Flute}}<!--
+			-->|{{item|Desert Minecart}}<!--
+			-->}}<!--
+		-->}}<!--
+		-->{{infocard/box|title=来自地形：|<!--
+			-->{{dotlist<!--
+			-->|{{item|Hardened Sand Block}}<!--
+			-->|{{item|Sandstone Block}}<!--
+			-->|{{item|Desert Fossil}}<!--
+			-->|{{item|Sand Block}}<!--
+			-->|{{item|Amber}}<!--
+			-->|{{item|Ebonsand Block}}<!--
+			-->|{{item|Hardened Ebonsand Block}}<!--
+			-->|{{item|Ebonsandstone Block}}<!--
+			-->|{{item|Crimsand Block}}<!--
+			-->|{{item|Hardened Crimsand Block}}<!--
+			-->|{{item|Crimsandstone Block}}<!--
+			-->|{{item|Pearlsand Block}}<!--
+			-->|{{item|Hardened Pearlsand Block}}<!--
+			-->|{{item|Pearlsandstone Block}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+
+	-->{{infocard/mainheading|音乐}}<!--
+	--><div><!--
+		-->{{infocard/box|<!--
+			-->{{dotlist<!--
+			-->|{{item|Music Box (Underground Desert)| {{sound|track=Underground Desert}}}}<!--
+			-->|{{item|Otherworldly Music Box (Desert)| {{sound|track=Desert (Otherworldly)}}}}<!--
+			-->}}<!--
+		-->}}<!--
+	--></div><!--
+-->{{infocard/end}}<!--
+-->{{options/reset|item}}{{dotlist/options|reset}}{{options/reset|eicons}}
+
+== {{tr|Surface Desert}} ==
+[[File:Underground Desert with Pyramid.png|300px|thumb|[[1.3.0.1]] 中生成的{{tr|Underground Desert}}的地图视图，其中包括一座[[{{tr|Pyramid}}]]。注意其顶部的[[{{tr|Desert}}#{{tr|Underground Desert}}的入口|坑洞状入口]]。]]
+{{for|关于入口的更多细节|{{tr|Desert}}#{{tr|Underground Desert}}的入口}}
+
+{{tr|the Underground Desert}}上方的{{tr|The Desert}}可能会生成各种{{tr|surface}}特征，有助于从[[{{tr|surface}}]]定位和进入{{tr|Underground Desert}}。值得注意的是，它可能会包含直接通向{{tr|Underground Desert}}的[[{{tr|Desert|link=y}}#{{tr|Underground Desert}}的入口|入口]]。
+
+{{tr|surface Desert}}中也可能生成一个或更多的[[{{tr|Oasis}}]]{{tr|mini-biomes}}，以及一座或更多的[[{{tr|Pyramid}}]]。{{tr|Pyramid}}的隧道通常会向下延伸至{{tr|Underground Desert}}中，从而提供另一种简单的进入方式。不过，{{tr|Oasis or Pyramid}}的存在并不能保证下方有{{tr|Underground Desert}}，因为它们能生成在{{tr|world}}中的''任何''{{tr|Deserts}}，无论其中哪个包含{{tr|Underground Desert biome}}。
+
+== 备注 ==
+[[File:Corrupted underground desert.png|250px|right|thumb|被腐化的{{tr|Underground Desert}}]]
+[[File:Hallowed Underground Desert.png|300px|right|thumb|部分神圣化的{{tr|Underground Desert}}]]
+
+* 创建人工的{{tr|Underground Desert}}需要[[{{tr|Treacherous Hardened Sand Wall}}]]或[[{{tr|Treacherous Sandstone Wall}}]]，可通过[[{{tr|Shimmer}}]]{{tr|transmutation}}获得，用来放置对应{{tr|wall}}的[[{{tr|Unsafe wall}}|不安全]]版本。常规的{{tr|Hardened Sand Walls and Sandstone Walls}}放置时被视为[[{{tr|Safe wall}}]]，且会阻止{{tr|enemy}}生成。
+** 另一种方法是用[[{{tr|Clentaminator}}]]和[[{{tr|Terraformer}}]]将各种{{tr|safe walls}}转化为不安全的{{tr|Sandstone}}/{{tr|Hardened Sand Walls}}。例如，向安全的{{tr|Sandstone Walls}}喷洒{{tr|Blue Solution}}会将其转化为不安全的{{tr|Pearlsandstone Walls}}。还有许多其他方式，例如对安全的[[{{tr|Stone Wall}}]]使用{{tr|Yellow Solution}}或对安全的{{tr|Hardened Ebonsand Walls}}使用{{tr|Green Solution}}。见[[{{tr|Solutions|link=y}}#转化|{{tr|Solutions}} § 转化]]获取完整列表。
+* {{tr|Underground Desert}}和[[{{tr|Cavern}}]]{{tr|layer}}的边界处经常包括[[{{tr|lava}}]]池，它们的位置相比{{tr|lava}}通常生成的位置要更接近{{tr|surface}}。
+
+=== 生成机制 ===
+所有[[{{tr|Underground Desert|link=y}}#内容|{{tr|Underground Desert enemies}}]]的生成都不需要实际的[[{{tr|Biome}}的存在要求|{{tr|Desert biome}}]]，而是需要特定的{{tr|unsafe walls}}。不过，一些{{tr|enemies}}有额外的生成条件：
+* {{tr|The Ghoul}}{{tr|variants}}分别需要常规/{{tr|Corrupt}}/{{tr|Crimson}}/{{tr|Hallowed biomes}}。
+* [[{{tr|Light Lamia}}]]和[[{{tr|Sand Poacher}}]]需要常规或{{tr|Hallowed biomes}}。
+* [[{{tr|Dark Lamia}}]]和[[{{tr|Desert Spirit}}]]需要{{tr|Corrupt or Crimson biomes}}。
+* [[{{tr|Antlion Larva}}]]仅在[[{{tr|Antlion Eggs}}]]被打破时生成。
+
+要在选定的{{tr|tile}}上成功地生成{{tr|Underground Desert enemy}}，有以下的限制：
+* 选定的{{tr|tile}}可以是任何激活的（未被[[{{tr|Actuator}}|致动]]）{{tr|solid block}}，包括[[{{tr|platforms}}]]或任何有效的生成表面。
+* 选定的{{tr|tile}}必须在{{tr|surface}}以上 80 格的位置的下方，且必须在{{tr|surface}}和顶部的真正[[世界边界]]的中线以下。{{source code ref|v=1.4.4.9|method=Terraria.WorldGen.checkUnderground}}
+
+然后，会进行以下检查来寻找合适的{{tr|walls}}。{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnNPC}}合适的{{tr|walls}}包括任何{{tr|variant}}的[[{{tr|unsafe wall}}|不安全]]的[[{{tr|Sandstone Wall}}]]或[[{{tr|Hardened Sand Wall}}]]。{{source code ref|v=1.4.4.9|field=Terraria.ID.WallID.Sets&#46;AllowsUndergroundDesertEnemiesToSpawn}}
+* 如果所选{{tr|tile}}高于[[{{tr|cavern}}]]{{tr|layer}}，在顶部的真正世界边界以下 200 格的位置的下方，并且玩家不处于[[{{tr|Dungeon}}]]{{tr|biome}}中、不在[[{{tr|Celestial Pillars}}]]范围内、且玩家附近的{{tr|town}} [[{{tr|NPCs}}]] 没有[[友方城镇 NPC 对生成速度的效果|阻止{{tr|enemy spawn}}]]：
+** 有 {{chance|1/3}} 的几率进行该检查：随机选择 5 至 14 之间的一个整数 <code>n</code>，然后检查以所选{{tr|tile}}为中心的正方形区域内的{{tr|tiles}}，正方形的边长为 <code>2n+1</code> 格（即 11×11 格至 29×29 格的正方形区域）。如果此区域内的所有{{tr|tile}}都在{{tr|world}}内，且其中一个{{tr|tile}}有合适的{{tr|wall}}，则{{tr|Underground Desert enemies}}可以生成。
+** 如果未进行上述检查，则检查玩家正后方的{{tr|wall}}（包含玩家{{tr|hitbox}}左上角的那一{{tr|tile}}）。如果它是合适的{{tr|wall}}，则{{tr|Underground Desert enemies}}可以生成。
+* 如果上方条件未满足，则进行下列检查。如果满足下列条件，则{{tr|Underground Desert enemies}}可以生成：{{source code ref|v=1.4.4.9|method=Terraria.NPC.SpawnTileOrAboveHasAnyWallInSet}}
+** 所选{{tr|tile}}必须距离任何真正世界边界 2 格以上。
+** 所选{{tr|tile}}或所选{{tr|tile}}上方那格的后方的{{tr|wall}}必须是合适的{{tr|wall}}。
+
+== 小贴士 ==
+* {{tr|Underground Desert enemies}}在游戏早期非常危险，因此建议手头要有足够的[[{{tr|Grenade}}]]以及某些[[{{tr|Movement Accessories}}|增强{{tr|movement}}的{{tr|accessory}}]]来减少对付它们的难度。由于[[{{tr|Antlion Swarmer}}]]和[[{{tr|Antlion Charger}}]]造成的高伤害，建议使用[[{{tr|Gold armor}}]]/[[{{tr|Platinum armor}}]]。
+* 在{{tr|underground desert}}中，[[{{tr|Minions}}]]有很多其他{{tr|weapons}}没有的优势。{{tr|The underground desert}}的主要危险在于快速移动且有[[{{tr|knockback}}]]抗性的{{tr|enemies}}和[[{{tr|Rolling Cactus}}]]。{{tr|Minions}}则可以对抗这些问题，它们可以在墙的另一边召唤出来，对快速移动的{{tr|enemies}}作出反应而不需要玩家参与，又能独立于玩家的动作贡献{{tr|knockback}}，并且能远程触发{{tr|Rolling Cactus}}（这可能需要多次直接在{{tr|Rolling Cactus}}上召唤它们，或者等到{{tr|enemy}}经过时再召唤）。
+
+== 花絮 ==
+* 在现实世界中，{{维基百科|antlion|蚁狮}}幼虫会在地面上造出漏斗状的凹坑，并朝经过的猎物抛出沙子。{{tr|Underground Desert}}的漏斗和地道状入口可能受此启发。
+* 在 [[1.4.0.1]] 之前，{{tr|Underground Desert}}上方的{{tr|Desert}}总是会包含一个大型的坑洞状入口。这使得找到和进入{{tr|Underground Desert}}更容易。
+
+== 历史 ==
+{{history|Desktop 1.4.4|
+** 将{{tr|Underground Desert}}的最小尺寸由最大尺寸的 50% 提高到 75%。最大尺寸没有改变。
+** 将{{tr|Underground Desert enemy}}的生成条件由一列 50 格的{{tr|unsafe walls}}改为只需{{tr|spawn block}}后方的一个。}}
+{{history|Desktop 1.4.0.1|
+** 在世界生成过程中添加了{{tr|Sandstone Chests}}。
+** 生成过程有所改变，让此{{tr|biome}}能达到不同深度，使其比以往的版本要深得多。
+** 为{{tr|Underground Desert}}推出了全新的音乐曲目。
+** {{tr|Lava}}现在会在此{{tr|biome}}下部边缘处生成。
+** {{tr|Underground Desert}}上方的{{tr|Desert}}现在可能会生成漏斗状入口之外的其他特征，而漏斗状入口的设计也有所改变。}}
+{{history|Desktop 1.3.3|提高了此{{tr|biome}}中的{{tr|enemy spawn rate}}。}}
+{{history|Desktop 1.3.0.1|{{tr|Introduced.}}}}
+{{history|Console 1.0.933.1|{{tr|Introduced.}}（{{icon|xbox one}}）}}
+{{history|Console 1.0.750.0|{{tr|Introduced.}}（{{icon|ps4}}）}}
+{{history|Switch 1.0.711.6|{{tr|Introduced.}}}}
+{{history|Mobile 1.3.0.7|{{tr|Introduced.}}}}
+
+== 参考 ==
+{{reflist}}
+
+{{Biomes}}
+
+{{language info|en=Underground Desert}}
